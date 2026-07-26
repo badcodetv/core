@@ -39,9 +39,8 @@ export interface ResolvedPanel {
 const STORY_DIRS: Record<string, string | null> = {
   'gpom-short': 'docs/gpom-short',
   'magic-money-tree': 'docs/magic-money-tree',
-  // V1 storyteller imports with no panel records; camping-v2 is a from-scratch rework
-  // still in canon phase — its records link up when its comic ships.
-  camping: null,
+  camping: 'docs/camping',
+  // V1 storyteller import with no panel records yet.
   karen: null,
 }
 
@@ -59,9 +58,11 @@ export function parsePanelRecord(text: string): PanelRecord {
     .split(',')
     .map((s) => s.trim())
     .filter(Boolean)
-  // The exact prompt is the blockquote under "**Prompt (exact, sent to Flow):**".
+  // The prompt is the blockquote under the "**Prompt …:**" heading. Heading text
+  // varies by era: "Prompt (exact, sent to Flow):" (gpom-short/mmt),
+  // "Prompt (planned, for the image lane) …:" (camping recut, pre-generation).
   let prompt = ''
-  const promptHeading = /\*\*Prompt \(exact[^*]*\*\*\s*\n((?:>.*\n?)+)/.exec(text)
+  const promptHeading = /\*\*Prompt[^*]*\*\*\s*\n((?:>.*\n?)+)/.exec(text)
   if (promptHeading) {
     prompt = promptHeading[1]!
       .split('\n')

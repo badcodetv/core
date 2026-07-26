@@ -62,11 +62,54 @@ the character is **attached as a reference** — naming them in prose is not eno
   type + submit. Object-refs (a specific car, tent) can be Characters too, or
   described richly in prose where likeness matters less than a face.
 
+## Usage-policy blocks — write to pass on the first attempt
+
+**Over half of all Flow generations on the camping recut were blocked by the usage
+filter, not slow.** The block is visible in the Flow browser window but the MCP tools
+surface it as a generic timeout or a missing candidate — indistinguishable from a slow
+generation. So the natural instinct (retry) burns minutes on a prompt that can never
+pass. Writing compliant prompts up front is the single biggest time saver in this
+skill.
+
+**Diagnosis rule:** two failures with no candidates while the session is otherwise
+healthy (`flow_status` fine, project loads, other prompts working) = **policy block**.
+Rewrite the prompt; do not retry it. Glance at the Flow window to confirm.
+
+### The four triggers
+
+1. **Real brand names, prominent or repeated** — supermarket fascias, a named car
+   marque plus a specific number plate, branded tote bags. Asking for a **legible**
+   real logo or wordmark is the most reliable block there is.
+2. **Likeness phrasing for faces** — "use this only as a face reference — same face,
+   same bone structure" reads as reproducing a specific real person.
+3. **Stacked destitution** — burn barrels + tent city + collapsed figures + "gaunt" in
+   one prompt, especially alongside a real identifiable business.
+4. **Legible text attributed to real institutions** — invented headlines quoting a real
+   central bank, government body, or newspaper.
+
+### Rewrite rules — keep the meaning, drop the trigger
+
+| Instead of | Write |
+| --- | --- |
+| "Waitrose storefront, green signage" | "an upmarket supermarket fascia in green and white, lettering indistinct" |
+| "Waitrose Bag for Life totes, wordmark legible" | "heavy-duty reusable grocery totes in supermarket green" |
+| "black BMW X7, plate T4RQ 1N" | "a large black luxury SUV, private plate" |
+| "same face, same bone structure as the reference" | "keep this character's design consistent with the reference — same hairstyle, build, colouring and wardrobe" |
+| "gaunt, squalid, collapsed among rubbish" | "weary, worn, sitting among the debris" |
+| headline text quoting a real bank | describe the newspaper; put the actual line in a `NarrationBox`/overlay in the comic |
+
+**Load-bearing text belongs in the comic, not the image.** If a sign or headline has to
+be readable for the story to work, render it as a bubble/narration overlay in
+`@badcode/comic` — it will be sharper, editable, translatable, and it cannot be blocked.
+
+**Brand usage is also a publication question.** Panels already carrying real signage are
+a release decision for Kai, separate from whether they generate.
+
 ## The loop (per panel)
 
 1. **Plan** the prompt from the panel beat + canon (`docs/<story>/storyboard/`), in the
    BadCode house style. Shape: house-style preamble + specific scene description; for character panels **attach the character reference** (see "Casting characters") and describe their signals + the specific expression the beat requires.
-2. **Critique the prompt** before sending: does it name a motivated light source, or is it relying on the AI to invent one? Does it specify the class-coded environment, or leave it generic? Does it describe the character's actual physical signals (grey stubble, lanyard, cardigan), or just name them and hope? Does it read like THIS beat from THIS story, or like a generic dramatic comic panel? Revise; say what you changed and why.
+2. **Critique the prompt** before sending: does it name a motivated light source, or is it relying on the AI to invent one? Does it specify the class-coded environment, or leave it generic? Does it describe the character's actual physical signals (grey stubble, lanyard, cardigan), or just name them and hope? Does it read like THIS beat from THIS story, or like a generic dramatic comic panel? **Then run the policy pass above — real brands, likeness phrasing, stacked destitution, institutional text — and rewrite before sending, not after a block.** Revise; say what you changed and why.
 3. **Generate** → `flow_generate_image({ prompt, outPath: "<abs>/docs/<story>/storyboard/img/pNN.png" })`.
 4. **Look** at the returned file. Critique against the beat and the Calibration list: does the face have the right exhaustion/particularity? Is the lighting motivated or AI-invented? Is the framing observational or heroic? Is the palette muted, or has warmth crept in where it doesn't belong?
 5. **Refine or accept** → if weak on one axis, `flow_refine({ prompt: "<targeted correction>", outPath })` in the same session (keeps context; is cheaper than a fresh generation); else accept.

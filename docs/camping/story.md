@@ -14,6 +14,41 @@ media: [comic, song]
 > `apps/web/src/comics/camping/`; this file is the canon it derives from, not a
 > slide plan. (Re-narrated from scratch with Kai, Jun 2026.)
 
+## Recut (2026-07)
+
+The comic is now a **24-slide cut plus a stinger**, bookended on the tent-door POV
+and run in three movements:
+
+- **JUDGE (1–9)** — the winner, the car park, the verdict each man passes on the
+  other. Ends inside Bob's tent, in Bob's head.
+- **SEE (10–15)** — Wales, the circle, the trip. The vision is not a hallucination;
+  it is the story told straight to his face.
+- **BECOME (16–25)** — he wakes five years on into the life he sneered at, and the
+  man he judged is the one who shows him grace.
+
+**Locked ironies** — these carry the meaning; don't sand them off:
+
+- **Two parking spaces.** The X7 straddles two bays beside Bob's one tent
+  (*"Two parking spaces. For that."*). Five years on the same car sits dead and
+  clamped in the same spot. The mirror is the argument.
+- **"Let's circle back."** Boardroom filler in slide 2; the trip's exit line in
+  slide 14. The phrase he used to mean nothing is the only true thing said to him.
+- **The retreat delivers exactly what it advertised.** Three grand to meet
+  himself — and he does. *"He's been outside Waitrose the whole time."*
+- **The W-AI-trose sign.** After the collapse only the A and the I are still lit.
+  Nobody has to say who took the jobs.
+- **Bob's name.** Tarquin finally asks for help and calls him *"sir"*; Bob answers
+  *"Bob. My name's Bob, mate."* The vocative duel (sir → mate) is the whole class
+  distance closing in two words. The name beat gets its own slide.
+- **STAY PUT.** The stinger: an ATM card reading `EMPLOYMENT COLLAPSE SURVIVAL
+  MENU / ▸ STAY PUT`, footer *"THANK YOU FOR BANKING WITH US."*
+
+The **locked beat list is §3 of
+[`docs/superpowers/specs/2026-07-25-camping-recut-plan.md`](../superpowers/specs/2026-07-25-camping-recut-plan.md)**
+— 25 slides, one row each, with per-slide records under
+[`storyboard/`](./storyboard/). Canon still leads: change the story here, then the
+spec, then the comic.
+
 ## Key concept
 
 Automation does not stop at the bottom. The same logic that replaces the
@@ -43,6 +78,9 @@ anyone in the Shard is willing to believe.
   Waitrose car park. Weathered, Scouse — and, by the end, the one with grace.
 
 ## Beats
+
+> **Superseded by the recut** (see *Recut (2026-07)* above) — kept as the original
+> narration these movements were cut from.
 
 1. **The winner.** Tarquin in the Shard, closing deals, the spreadsheet line
    climbing, everyone envious of him. A friend asks his weekend plans; he's off

@@ -1,338 +1,238 @@
 import { ScrollComic, Page, ImageWidget, AnimationWidget, SpeechBubble, NarrationBox, createComic } from '@badcode/comic'
 import manifest from './assets.manifest.json'
 import { zoom } from '@badcode/comic/effects'
+import { fadeOutFadeIn } from '@badcode/comic/transitions'
 import { trip } from './effects'
-// Custom effects live in ./effects.ts. Built-ins: zoom, grayscale, pan, zoomInOut, scale |
-// transitions crossfade, iris, fadeOutFadeIn, slideOver, blur, wipe | text scrollIn, fadeIn,
-// fadeOut, pause. See packages/comic/AUTHORING.md.
+// Recut 2026-07 — 24 slides + stinger, three movements: JUDGE (1–9) · SEE (10–15) ·
+// BECOME (16–25). Locked beat list: docs/superpowers/specs/2026-07-25-camping-recut-plan.md §3.
+// Per-slide records (scene, prompt, bubble script): docs/camping/storyboard/pNN.md.
+// Custom effects live in ./effects.ts. See packages/comic/AUTHORING.md.
 
 const comic = createComic(manifest)
 
 export function CampingComic() {
   return (
     <ScrollComic progressBar pageIndicator scrollHint pageDefaults={{ background: '#0a0f1c' }}>
-      {/* Opener: the building clip plays once. transition={null} keeps the prior
-          no-transition cut into page 1 (library default is crossfade). */}
+      {/* ── JUDGE (1–9) ─────────────────────────────────────────────── */}
+
+      {/* 1 — The Shard. transition={null} keeps the hard cut into the opener. */}
       <Page hold={2.8} effect={zoom({ amount: 1.3 })} transition={null}>
         <AnimationWidget animation={comic.resolveAnimation('anim/a01')} />
       </Page>
 
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i02.png')} />
-        <SpeechBubble x={34.448160535117054} y={34.420205046580215} appearAt={[0, 1]} fade tail="none" fontSize={10}>
+      {/* 2 — Boardroom. The incantation he'll hear again on the trip. */}
+      <Page hold={1.6}>
+        <ImageWidget src={comic.resolve('img/i40.png')} />
+        <SpeechBubble x={34.45} y={34.42} appearAt={[0, 1]} fade tail="none" fontSize={14}>
           {'Let\'s circle back to synergise our bandwidth…'}
         </SpeechBubble>
       </Page>
 
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i03.png')} />
-        <SpeechBubble x={54.0956835284281} y={72.77046954730584} appearAt={[0, 0.6]} fade tail="none" fontSize={10}>
-          {'Tarquin, as per, you\'ve done it again, old boy.\n\nHow do you do it?'}
+      {/* 3 — Lift lobby, applause. */}
+      <Page hold={1.8}>
+        <ImageWidget src={comic.resolve('img/i41.png')} />
+        <SpeechBubble x={54.1} y={72.77} appearAt={[0, 0.5]} fade tail="none" fontSize={14}>
+          {'Tarquin, you\'ve done it again. How do you do it?'}
         </SpeechBubble>
-        <SpeechBubble x={50.48338210702341} y={21.75566105112801} appearAt={[0.5, 1]} fade tail="bottom" fontSize={10}>
-          {'Charles, it\'s easy!\n\nYou just have to have a "Winning Mentality" (tm)'}
+        <SpeechBubble x={50.48} y={21.76} appearAt={[0.45, 1]} fade tail="bottom" fontSize={14}>
+          {'Easy. You just have to have a "Winning Mentality" (tm)'}
         </SpeechBubble>
       </Page>
 
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i04.png')} />
-        <SpeechBubble x={64.76536371237458} y={19.680726557745423} appearAt={[0.65, 1]} fade type="thought" tail="none" fontSize={10}>
+      {/* 4 — The camping/glamping setup. Both halves detonate later. */}
+      <Page hold={2.8}>
+        <ImageWidget src={comic.resolve('img/i42.png')} />
+        <SpeechBubble x={18.48} y={55.44} appearAt={[0, 0.25]} fade tail="none" fontSize={14}>
+          {'What are you up to this weekend, mate?'}
+        </SpeechBubble>
+        <SpeechBubble x={48.48} y={72.06} appearAt={[0.2, 0.45]} fade tail="top" fontSize={14}>
+          {'A retreat in Wales.'}
+        </SpeechBubble>
+        <SpeechBubble x={18.48} y={40} appearAt={[0.45, 0.65]} fade tail="none" fontSize={14}>
+          {'What, camping?'}
+        </SpeechBubble>
+        <SpeechBubble x={48.48} y={25} appearAt={[0.6, 0.85]} fade tail="bottom" fontSize={14}>
+          {'Glamping. There\'s a difference of about £400 a night.'}
+        </SpeechBubble>
+        <SpeechBubble x={64.77} y={19.68} appearAt={[0.8, 1]} fade type="thought" tail="none" fontSize={14}>
           {'He is so cool...'}
         </SpeechBubble>
-        <SpeechBubble x={18.475647993311036} y={55.43747951874912} appearAt={[0, 0.4]} fade tail="none" fontSize={10}>
-          {'What are you up to this weekend mate?'}
-        </SpeechBubble>
-        <SpeechBubble x={48.4779995819398} y={72.06024450699492} appearAt={[0.4, 1]} fade tail="top" fontSize={10}>
-          {'I\'m off to an ayahuasca retreat in Wales!\nThere are parts of my personality I am keen to get to know more.'}
-        </SpeechBubble>
       </Page>
 
-      {/* Merged: a02 played once across two dialogue beats (was two consecutive pages → double-play). */}
+      {/* 5 — The chimp line (answered on slide 18) and the retreat's real price. */}
       <Page hold={2.8}>
         <AnimationWidget animation={comic.resolveAnimation('anim/a02')} />
-        {/* beat 1 (first half) */}
-        <SpeechBubble x={18.475647993311036} y={55.43747951874912} appearAt={[0, 0.2]} fade tail="none" fontSize={10}>
-          {'What are you up to this weekend mate?'}
+        <SpeechBubble x={35.79} y={52.55} appearAt={[0, 0.5]} fade type="thought" tail="none">
+          {'Another week of impressing these morons. A chimp could do what they do.'}
         </SpeechBubble>
-        <SpeechBubble x={48.4779995819398} y={72.06024450699492} appearAt={[0.2, 0.5]} fade tail="top" fontSize={10}>
-          {'I\'m off to an ayahuasca retreat in Wales!\nThere are parts of my personality I am keen to get to know more.'}
-        </SpeechBubble>
-        <SpeechBubble x={64.76536371237458} y={19.680726557745423} appearAt={[0.33, 0.5]} fade type="thought" tail="none" fontSize={10}>
-          {'He is so cool...'}
-        </SpeechBubble>
-        {/* beat 2 (second half) */}
-        <SpeechBubble x={35.785953177257525} y={52.54669725200131} appearAt={[0.5, 1]} fade type="thought" tail="none">
-          {'Another week of impressing these morons, a chimp could do what they do. This retreat cannot come soon enough. When will this end? Why is it always up to me?'}
+        <SpeechBubble x={60} y={30} appearAt={[0.5, 1]} fade type="thought" tail="none" fontSize={14}>
+          {'Three grand to meet myself this weekend. Worth every penny.'}
         </SpeechBubble>
       </Page>
 
-      <Page hold={1.4}>
-        <AnimationWidget animation={comic.resolveAnimation('anim/a03')} />
-      </Page>
-
-      <Page hold={1.4}>
+      {/* 6 — The car pulls in beside the tent. */}
+      <Page hold={1.6}>
         <AnimationWidget animation={comic.resolveAnimation('anim/a04')} />
       </Page>
 
-      <Page hold={1.4}>
+      {/* 7 — The sneer. His car straddles two bays; Bob calls it back on slide 20.
+           Eyeline goes off-frame left to the tent — slide 8 answers it from inside. */}
+      {/* Slow push toward his face: ends the page on the sneer rather than the car,
+          and eases the marque mismatch with slide 8's SUV (see record p07). */}
+      <Page hold={2} effect={zoom({ amount: 1.25, focal: [0.55, 0.3] })}>
+        <ImageWidget src={comic.resolve('img/i43.png')} />
+        <SpeechBubble x={30} y={25} appearAt={[0, 0.45]} fade type="thought" tail="none" fontSize={14}>
+          {'Two parking spaces. For that.'}
+        </SpeechBubble>
+        <SpeechBubble x={32} y={40} appearAt={[0.5, 0.9]} fade type="thought" tail="none" fontSize={14}>
+          {'Get a job, you piece of—'}
+        </SpeechBubble>
+      </Page>
+
+      {/* 8 — POV out of Bob's tent. The bookend; slide 16 rhymes with this. */}
+      <Page hold={2}>
         <ImageWidget src={comic.resolve('img/i05.png')} />
-        <SpeechBubble x={21.321070234113712} y={83.85609287954684} appearAt={[0.7, 1]} fade type="thought" tail="none" fontSize={10}>
-          {'Why make my day worse than it has to be…'}
+        <SpeechBubble x={69.9} y={47.15} appearAt={[0.1, 0.7]} fade type="thought" tail="none" fontSize={14}>
+          {'At least acknowledge we\'re getting rained on by the same shitty weather.'}
         </SpeechBubble>
       </Page>
 
-      <Page hold={1.4}>
-        <AnimationWidget animation={comic.resolveAnimation('anim/a05')} />
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i06.png')} />
-        <SpeechBubble x={60.1157504180602} y={20.91428303918356} appearAt={[0.1, 0.5]} fade type="thought" tail="none" fontSize={10}>
-          {'Thanks for taking up two parking spaces with that charming tattered tent. You should have gotten the tent I purchased; it even has a cigar holder.'}
-        </SpeechBubble>
-        <SpeechBubble x={56.77257525083612} y={80.26075558260382} appearAt={[0.5, 0.9]} fade type="thought" tail="top-left" fontSize={10}>
-          {'Why do people give their hard-earned cash to this putrid rat? He’ll just shoot it up his arm anyway. Get a job, you piece of…'}
-        </SpeechBubble>
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i05.png')} />
-        <SpeechBubble x={69.89835911371237} y={47.15369130658677} appearAt={[0, 0.5]} fade type="thought" tail="none" fontSize={10}>
-          {'Since day one of being here, the guilt of being in the way of real people never fades. That being said, at least acknowledge that we are both being rained on by the same shitty weather; you are not blind to the elements that we cannot control.'}
-        </SpeechBubble>
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i05.png')} />
-        <SpeechBubble x={24.99869356187291} y={41.31126819905435} appearAt={[0, 0.5]} fade type="thought" tail="none" fontSize={10}>
-          {'Luck, simulation theory or God, whatever your poison, mine is down the gullet of this bottleneck, it causes the interminable amount of throbbing guilt to fade to black. Plus, it\'s gluten-free.'}
-        </SpeechBubble>
-      </Page>
-
-      <Page hold={1.4}>
+      {/* 9 — Bob. One crash, two meanings. Slide 23 rhymes with this framing. */}
+      <Page hold={2.2}>
         <ImageWidget src={comic.resolve('img/i07.png')} />
-        <SpeechBubble x={18.893708193979933} y={39.06418238846496} appearAt={[0, 0.5]} fade type="thought" tail="none" fontSize={10}>
-          {'I remember 2008 like it was yesterday, the day of the car crash, I miss my wife so much I… I… I shudder every time I see those stupid wank tanks. Her face, those lifeless eyes… God let me forget these horrors. Amen.'}
+        <SpeechBubble x={18.89} y={39.06} appearAt={[0.1, 0.8]} fade type="thought" tail="none" fontSize={14}>
+          {'I remember 2008 like it was yesterday. The crash. Everyone lost something — I lost her.'}
         </SpeechBubble>
       </Page>
 
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i08.jpg')} />
-      </Page>
+      {/* ── SEE (10–15) ─────────────────────────────────────────────── */}
 
+      {/* 10 — Forest road. */}
       <Page hold={1.4}>
         <AnimationWidget animation={comic.resolveAnimation('anim/a06')} />
       </Page>
 
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i09.jpg')} />
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i10.png')} />
-      </Page>
-
-      <Page hold={1.4}>
+      {/* 11 — The retreat, in one page: Moonwhisper's pitch, his contempt for it,
+           and the promise the medicine actually keeps. (v1 split this across two
+           near-identical yurt frames — a scroll stall; merged in review.) */}
+      <Page hold={3}>
         <ImageWidget src={comic.resolve('img/i11.png')} />
-        <SpeechBubble x={63.54515050167224} y={22.2859416693975} fade tail="none" fontSize={10}>
+        <SpeechBubble x={63.55} y={22.29} appearAt={[0, 0.35]} fade tail="none" fontSize={14}>
           {'I\'m Moonwhisper Ascending. I am here to cleanse my soul, also to do research for my new book called "The Wound That Teaches."'}
         </SpeechBubble>
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i12.png')} />
-        <SpeechBubble x={36.2876254180602} y={21.986330227985583} appearAt={[0, 0.5]} fade type="thought" tail="none" fontSize={10}>
-          {'I should have brought Daddy’s hunting rifle…'}
+        <SpeechBubble x={44} y={40} appearAt={[0.35, 0.68]} fade type="thought" tail="none" fontSize={14}>
+          {'I should have brought Daddy\'s hunting rifle…'}
+        </SpeechBubble>
+        {/* off-frame facilitator — kept away from Moonwhisper's corner so it reads as a different voice */}
+        <SpeechBubble x={26} y={86} appearAt={[0.68, 1]} fade tail="none" fontSize={14}>
+          {'Drink deep. The medicine finds whatever you brought with you.'}
         </SpeechBubble>
       </Page>
 
-      <Page hold={1.4} effect={trip()}>
-        <ImageWidget src={comic.resolve('img/i13.png')} />
-        <SpeechBubble x={15.466920986622073} y={75.01755535789523} fade type="thought" tail="none" fontSize={10}>
-          {'Fuck me, that kicked in quick!'}
-        </SpeechBubble>
-      </Page>
-
-      <Page hold={1.4} effect={trip()}>
-        <AnimationWidget animation={comic.resolveAnimation('anim/a07')} />
-        <SpeechBubble x={15.466920986622073} y={75.01755535789523} fade type="thought" tail="none" fontSize={10}>
-          {'Fuck me, that kicked in quick!'}
-        </SpeechBubble>
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i13.png')} />
-      </Page>
-
-      <Page hold={1.4} effect={trip()}>
+      {/* 13 — It kicks in. */}
+      <Page hold={1.8} effect={trip()}>
         <AnimationWidget animation={comic.resolveAnimation('anim/a08')} />
-        <SpeechBubble x={15.466920986622073} y={75.01755535789523} fade type="thought" tail="none" fontSize={10}>
+        <SpeechBubble x={15.47} y={75.02} appearAt={[0.1, 0.8]} fade type="thought" tail="none" fontSize={14}>
           {'Fuck me, that kicked in quick!'}
         </SpeechBubble>
       </Page>
 
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i13.png')} />
+      {/* 14 — THE VISION. He meets himself, exactly as advertised. */}
+      <Page hold={3.2} effect={trip()}>
+        <ImageWidget src={comic.resolve('img/i35.png')} />
+        <NarrationBox x={80} y={20} appearAt={[0.15, 0.45]} fade>
+          {'You came here to meet yourself.'}
+        </NarrationBox>
+        <NarrationBox x={22} y={86} appearAt={[0.45, 0.75]} fade>
+          {'He\'s been outside Waitrose the whole time.'}
+        </NarrationBox>
+        <NarrationBox x={78} y={88} appearAt={[0.8, 1]} fade fontSize={14}>
+          {'Let\'s circle back.'}
+        </NarrationBox>
       </Page>
 
-      {/* Merged: a09 played once (was two consecutive pages → double-play). */}
-      <Page hold={2.8}>
-        <AnimationWidget animation={comic.resolveAnimation('anim/a09')} />
-        <SpeechBubble x={61.62207357859531} y={35.01942792940406} fade tail="none">
-          {'Tarquin, I\'ve come back here to warn you, you must change your ways, there is no time to fuck around, AI is coming, you fool! Unburden yourself from the judgment of your elbow-patch afflicted peers and take action. For our sake!'}
+      {/* 15 — Asleep on the forest floor, filed like a parking bay. */}
+      <Page hold={1.8}>
+        <ImageWidget src={comic.resolve('img/i36.png')} />
+      </Page>
+
+      {/* ── BECOME (16–25) ──────────────────────────────────────────── */}
+
+      {/* 16 — He wakes. Hard cut (transition={null}); slide 8's shot, dead car, W-AI-trose. */}
+      <Page hold={2.2} transition={null}>
+        <ImageWidget src={comic.resolve('img/i37.png')} />
+        <SpeechBubble x={25} y={20} appearAt={[0.5, 1]} fade type="thought" tail="none" fontSize={14}>
+          {'…Wales. I was in Wales.'}
         </SpeechBubble>
       </Page>
 
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i14.png')} />
-        <SpeechBubble x={30.434782608695656} y={24.083610317869013} fade type="thought" tail="none">
-          {'I came here to learn more about myself, not this nonsensical bullshit. Why have I lowered myself to such squalor?'}
+      {/* 17 — The mechanism, at his feet. */}
+      <Page hold={1.8}>
+        <ImageWidget src={comic.resolve('img/i18.png')} />
+      </Page>
+
+      {/* 18 — He was right about the chimp. That's the horror. */}
+      <Page hold={2}>
+        <ImageWidget src={comic.resolve('img/i19.png')} />
+        <SpeechBubble x={52.68} y={21.39} appearAt={[0.1, 0.5]} fade type="thought" tail="none" fontSize={14}>
+          {'I said a chimp could do it.'}
+        </SpeechBubble>
+        <SpeechBubble x={30} y={35} appearAt={[0.55, 1]} fade type="thought" tail="none" fontSize={14}>
+          {'It didn\'t even need the chimp.'}
         </SpeechBubble>
       </Page>
 
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i15.png')} />
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i16.png')} />
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i17.png')} />
-      </Page>
-
-      <Page hold={1.4}>
+      {/* 19 — The car park, now a city. */}
+      <Page hold={1.6}>
         <AnimationWidget animation={comic.resolveAnimation('anim/a10')} />
       </Page>
 
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i18.png')} />
-        <SpeechBubble x={14.715719063545151} y={52.24708581058939} fade tail="none">
-          {'Ouch! The fuck is happening...'}
-        </SpeechBubble>
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i19.png')} />
-        <SpeechBubble x={52.675585284280935} y={21.387107345161745} fade type="thought" tail="none">
-          {'The lake... the trip... it all...'}
-        </SpeechBubble>
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i20.png')} />
-        <SpeechBubble x={30.351170568561876} y={21.387107345161745} fade type="thought" tail="none">
-          {'I\'ve never been this cold. How do people live like this? It\'s preposterous!'}
-        </SpeechBubble>
-      </Page>
-
-      <Page hold={1.4}>
+      {/* 20 — Bob returns the two-spaces observation, without malice. */}
+      <Page hold={2.8}>
         <ImageWidget src={comic.resolve('img/i21.png')} />
-        <SpeechBubble x={17.892976588628763} y={24.98244464210477} fade tail="none">
-          {'Cold ain\'t it? What you doing here, havn\'t seen you in some time.'}
+        <SpeechBubble x={17.89} y={24.98} appearAt={[0, 0.35]} fade tail="none" fontSize={14}>
+          {'Cold ain\'t it? Haven\'t seen you in some time.'}
         </SpeechBubble>
-        <SpeechBubble x={80.68561872909699} y={34.57001076728618} fade tail="none">
-          {'I\'m frozen, wish I came more prepared. Look I really don\'t know what to do, probably for the first time in my life... um whatever your name is... cough... sir can you...'}
+        <SpeechBubble x={15.64} y={45.81} appearAt={[0.35, 0.65]} fade tail="none" fontSize={14}>
+          {'You parked next to me once, I think. Big black thing. Took two spaces.'}
+        </SpeechBubble>
+        <SpeechBubble x={80.69} y={34.57} appearAt={[0.65, 1]} fade tail="none" fontSize={14}>
+          {'I don\'t know what to do. For the first time in my life, I genuinely— …Sir. Can you help me?'}
         </SpeechBubble>
       </Page>
 
-      <Page hold={1.4}>
+      {/* 21 — The name beat. The whole story is built to land this line. */}
+      <Page hold={2.4}>
         <ImageWidget src={comic.resolve('img/i21.png')} />
-        <SpeechBubble x={15.635451505016723} y={45.80543982023313} fade tail="top-right">
-          {'Bob, my name\'s Bob mate, I\'m not sure what I can, in fact, do for you, really, unless you\'re hiding beer behind your silver spoon. On second thoughts, keep that one bud, looks like you need it.'}
-        </SpeechBubble>
-        <SpeechBubble x={78.17595108695652} y={28.12836477692992} fade tail="none">
-          {'Bob, please, I am literally begging you. Oh, no offence there, old boy, I am not quite used to lowering myself to such...'}
+        <SpeechBubble x={15.64} y={45.81} appearAt={[0.1, 0.6]} fade tail="top-right">
+          {'Bob. My name\'s Bob, mate.'}
         </SpeechBubble>
       </Page>
 
-      <Page hold={1.4}>
+      {/* 22 — Slide 5's "why is it always up to me?" gets its answer. */}
+      <Page hold={2.4}>
         <ImageWidget src={comic.resolve('img/i22.png')} />
-        <SpeechBubble x={15.635451505016723} y={55.24320022470858} fade tail="none">
-          {'Slow down, mate, don\'t make too much noise. If you kick off, I won\'t be able to stop these lot. Just don\'t show weakness like that; they can smell it a mile away. Sleep with both eyes open, take inventory, and keep your head down. Also, sleep with a blade under your pillow, this ain\'t Eton.'}
+        <SpeechBubble x={15.64} y={55.24} appearAt={[0, 0.5]} fade tail="none" fontSize={14}>
+          {'Don\'t show weakness — they can smell it. Blade under your pillow. This ain\'t Eton.'}
+        </SpeechBubble>
+        <SpeechBubble x={75} y={30} appearAt={[0.6, 1]} fade type="thought" tail="none" fontSize={14}>
+          {'Nothing\'s up to me anymore.'}
         </SpeechBubble>
       </Page>
 
-      <Page hold={1.4}>
-        <AnimationWidget animation={comic.resolveAnimation('anim/a11')} />
+      {/* 23 — He is slide 9. No text: the composition is the line. */}
+      <Page hold={2.6}>
+        <ImageWidget src={comic.resolve('img/i38.png')} />
       </Page>
 
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i23.png')} />
-        <SpeechBubble x={61.78799122073578} y={65.28018351200787} fade tail="top">
-          {'Well, what do I do now then?'}
-        </SpeechBubble>
-      </Page>
-
-      <Page hold={1.4}>
-        <AnimationWidget animation={comic.resolveAnimation('anim/a12')} />
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i24.png')} />
-        <SpeechBubble x={25.91973244147157} y={21.5369130658677} fade type="thought" tail="none">
-          {'Crazy bastards...'}
-        </SpeechBubble>
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i25.png')} />
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i26.jpeg')} />
-        <SpeechBubble x={30.68561872909699} y={16.743130003277003} fade type="thought" tail="none">
-          {'What was that?'}
-        </SpeechBubble>
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i27.jpeg')} />
-        <SpeechBubble x={79.26290760869566} y={22.43340667571743} fade tail="none">
-          {'Start shovelling or start fucking off!'}
-        </SpeechBubble>
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i28.jpeg')} />
-      </Page>
-
-      <Page hold={1.4}>
-        <AnimationWidget animation={comic.resolveAnimation('anim/a12')} />
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i29.png')} />
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i30.png')} />
-      </Page>
-
-      <Page hold={1.4}>
-        <AnimationWidget animation={comic.resolveAnimation('anim/a12')} />
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i31.png')} />
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i32.jpeg')} />
-      </Page>
-
-      <Page hold={1.4}>
-        <ImageWidget src={comic.resolve('img/i33.jpeg')} />
-      </Page>
-
-      <Page hold={1.4}>
+      {/* 24 — Badcode in the puddle. */}
+      <Page hold={2.4}>
         <AnimationWidget animation={comic.resolveAnimation('anim/a13')} />
       </Page>
 
-      <Page hold={1.4}>
-        {/* TODO: this page had no image/animation/text in Storyteller — replace this placeholder */}
-        <NarrationBox x={50} y={50} appearAt={[0, 1]} fade>{'TODO: empty page'}</NarrationBox>
+      {/* 25 — Stinger: the menu option he actually took, and the thanks for it. */}
+      <Page hold={2.4} transition={fadeOutFadeIn()}>
+        <ImageWidget src={comic.resolve('img/i39.png')} />
       </Page>
     </ScrollComic>
   )

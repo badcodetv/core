@@ -1,225 +1,98 @@
 {
   "p01": {
-    "kind": "image",
-    "key": "img/i01.jpg"
-  },
-  "p02": {
     "kind": "anim",
     "key": "anim/a01"
   },
+  "p02": {
+    "kind": "image",
+    "key": "img/i40.png"
+  },
   "p03": {
     "kind": "image",
-    "key": "img/i02.png"
+    "key": "img/i41.png"
   },
   "p04": {
     "kind": "image",
-    "key": "img/i03.png"
+    "key": "img/i42.png"
   },
   "p05": {
-    "kind": "image",
-    "key": "img/i04.png"
+    "kind": "anim",
+    "key": "anim/a02"
   },
   "p06": {
     "kind": "anim",
-    "key": "anim/a02"
-  },
-  "p07": {
-    "kind": "anim",
-    "key": "anim/a02"
-  },
-  "p08": {
-    "kind": "anim",
-    "key": "anim/a03"
-  },
-  "p09": {
-    "kind": "anim",
     "key": "anim/a04"
   },
-  "p10": {
+  "p07": {
+    "kind": "image",
+    "key": "img/i43.png"
+  },
+  "p08": {
     "kind": "image",
     "key": "img/i05.png"
   },
-  "p11": {
-    "kind": "anim",
-    "key": "anim/a05"
-  },
-  "p12": {
-    "kind": "image",
-    "key": "img/i06.png"
-  },
-  "p13": {
-    "kind": "image",
-    "key": "img/i05.png"
-  },
-  "p14": {
-    "kind": "image",
-    "key": "img/i05.png"
-  },
-  "p15": {
+  "p09": {
     "kind": "image",
     "key": "img/i07.png"
   },
-  "p16": {
-    "kind": "image",
-    "key": "img/i08.jpg"
-  },
-  "p17": {
+  "p10": {
     "kind": "anim",
     "key": "anim/a06"
   },
-  "p18": {
-    "kind": "image",
-    "key": "img/i09.jpg"
-  },
-  "p19": {
-    "kind": "image",
-    "key": "img/i10.png"
-  },
-  "p20": {
+  "p11": {
     "kind": "image",
     "key": "img/i11.png"
   },
-  "p21": {
-    "kind": "image",
-    "key": "img/i12.png"
-  },
-  "p22": {
-    "kind": "image",
-    "key": "img/i13.png"
-  },
-  "p23": {
-    "kind": "anim",
-    "key": "anim/a07"
-  },
-  "p24": {
-    "kind": "image",
-    "key": "img/i13.png"
-  },
-  "p25": {
+  "p12": {
     "kind": "anim",
     "key": "anim/a08"
   },
-  "p26": {
+  "p13": {
     "kind": "image",
-    "key": "img/i13.png"
+    "key": "img/i35.png"
   },
-  "p27": {
-    "kind": "anim",
-    "key": "anim/a09"
-  },
-  "p28": {
-    "kind": "anim",
-    "key": "anim/a09"
-  },
-  "p29": {
+  "p14": {
     "kind": "image",
-    "key": "img/i14.png"
+    "key": "img/i36.png"
   },
-  "p30": {
+  "p15": {
     "kind": "image",
-    "key": "img/i15.png"
+    "key": "img/i37.png"
   },
-  "p31": {
-    "kind": "image",
-    "key": "img/i16.png"
-  },
-  "p32": {
-    "kind": "image",
-    "key": "img/i17.png"
-  },
-  "p33": {
-    "kind": "anim",
-    "key": "anim/a10"
-  },
-  "p34": {
+  "p16": {
     "kind": "image",
     "key": "img/i18.png"
   },
-  "p35": {
+  "p17": {
     "kind": "image",
     "key": "img/i19.png"
   },
-  "p36": {
-    "kind": "image",
-    "key": "img/i20.png"
+  "p18": {
+    "kind": "anim",
+    "key": "anim/a10"
   },
-  "p37": {
-    "kind": "image",
-    "key": "img/i21.png"
-  },
-  "p38": {
+  "p19": {
     "kind": "image",
     "key": "img/i21.png"
   },
-  "p39": {
+  "p20": {
+    "kind": "image",
+    "key": "img/i21.png"
+  },
+  "p21": {
     "kind": "image",
     "key": "img/i22.png"
   },
-  "p40": {
-    "kind": "anim",
-    "key": "anim/a11"
-  },
-  "p41": {
+  "p22": {
     "kind": "image",
-    "key": "img/i23.png"
+    "key": "img/i38.png"
   },
-  "p42": {
-    "kind": "anim",
-    "key": "anim/a12"
-  },
-  "p43": {
-    "kind": "image",
-    "key": "img/i24.png"
-  },
-  "p44": {
-    "kind": "image",
-    "key": "img/i25.png"
-  },
-  "p45": {
-    "kind": "image",
-    "key": "img/i26.jpeg"
-  },
-  "p46": {
-    "kind": "image",
-    "key": "img/i27.jpeg"
-  },
-  "p47": {
-    "kind": "image",
-    "key": "img/i28.jpeg"
-  },
-  "p48": {
-    "kind": "anim",
-    "key": "anim/a12"
-  },
-  "p49": {
-    "kind": "image",
-    "key": "img/i29.png"
-  },
-  "p50": {
-    "kind": "image",
-    "key": "img/i30.png"
-  },
-  "p51": {
-    "kind": "anim",
-    "key": "anim/a12"
-  },
-  "p52": {
-    "kind": "image",
-    "key": "img/i31.png"
-  },
-  "p53": {
-    "kind": "image",
-    "key": "img/i32.jpeg"
-  },
-  "p54": {
-    "kind": "image",
-    "key": "img/i33.jpeg"
-  },
-  "p55": {
+  "p23": {
     "kind": "anim",
     "key": "anim/a13"
   },
-  "p56": {
-    "kind": "none"
+  "p24": {
+    "kind": "image",
+    "key": "img/i39.png"
   }
 }

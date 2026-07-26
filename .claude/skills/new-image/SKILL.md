@@ -109,6 +109,14 @@ Where the subject leaves an axis free, do NOT spend that freedom on these defaul
    source, or is the model free to invent lighting? Is darkness doing most of the
    work, or is the scene over-specified into busyness? Does it read like evidence
    from the bad branch, or like concept art? Revise; say what you changed and why.
+   **Then run the usage-policy pass** — real brand names or legible wordmarks,
+   likeness phrasing off a reference, stacked destitution vocabulary, legible text
+   attributed to real institutions. Flow blocks these silently: over CDP a block
+   looks exactly like a timeout (no candidates, generic error), so two failures on a
+   healthy session means rewrite, never retry. Rules + a rewrite table:
+   `.claude/skills/badcode-art-direction/SKILL.md` → "Usage-policy blocks". The
+   monolith register is mostly safe here — the risk arrives the moment a real
+   product, logo, or institution enters the frame.
 4. **Generate** → `flow_generate_image({ prompt, outPath: "<abs>/<dest>/<slug>.jpg" })`.
 5. **Look** at the returned file. Critique against the register and the
    Calibration list: is the frame dark enough? Is the light singular and

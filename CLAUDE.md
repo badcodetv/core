@@ -8,6 +8,9 @@ Read this first. It tells you what BadCode is, how it sounds, and where everythi
 
 ## What BadCode is
 
+BadCode is two people: **Kai** (main developer) and **Jack** (lead creative designer). Either
+of them may be the person driving a session here.
+
 BadCode is an art collective. It releases **stories** (presented as comics on this website) and
 **music** (drum & bass) to put political and economic ideas into people's heads. The bet is
 simple: people remember a *story* and absorb a *song* in a way they never absorb an essay.
@@ -40,6 +43,7 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
 | `docs/` | Vision, voice, story bible, method | …you need context |
 | `docs/ideas/` | The idea inbox — raw ideas (minimal prose) before they become stories | …you have a new idea to park, or want to develop one |
 | `docs/suno-gpt/` | Suno-prompting toolkit (operating procedure + reference files) | …you're turning a song idea into a Suno prompt |
+| `docs/marketing/` | The marketing plan: continuous-release strategy, platform playbooks, and its manifestation as an Agent Orange worker fleet | …you're promoting a release or working on marketing automation |
 | `.claude/skills/` | `new-idea`, `new-story`, `suno-prompt`, `make-comic`, `edit-panel`, `animate-slide`, `music-video-short`, `new-image` — orchestrators for parking an idea, story capture, Suno prompting, the full idea→comic pipeline, editing an existing panel image, animating a finished panel, the full idea→short-form music-video pipeline (Suno track + Flow clips + edit plan), and standalone brand imagery | …you're capturing an idea, developing a story, making a track, building a comic, editing a panel, animating a slide, making a short, or making a brand image |
 | `docs/<story>/` | Per-story canon (concept, characters, beats, songs) — source of truth | …you're capturing or producing a story's media |
 | `packages/comic` | `@badcode/comic` — code-first comic rendering library (authoring guide: [`AUTHORING.md`](./packages/comic/AUTHORING.md)) | …you're building the viewer |

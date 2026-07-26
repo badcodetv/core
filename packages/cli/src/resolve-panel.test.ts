@@ -44,6 +44,16 @@ describe('parsePanelRecord', () => {
     const r = parsePanelRecord(RECORD.replace('characters: []', 'characters: [dawn, tarquin]'))
     expect(r.characters).toEqual(['dawn', 'tarquin'])
   })
+
+  it('parses prompt-heading variants (camping recut planned records)', () => {
+    const planned = RECORD.replace(
+      '**Prompt (exact, sent to Flow):**',
+      '**Prompt (planned, for the image lane) — T-IMG-2 · `i34`:**',
+    )
+    expect(parsePanelRecord(planned).prompt).toContain('benefits office')
+    const bare = RECORD.replace('**Prompt (exact, sent to Flow):**', '**Prompt:**')
+    expect(parsePanelRecord(bare).prompt).toContain('benefits office')
+  })
 })
 
 describe('resolvePanel', () => {
@@ -67,6 +77,13 @@ describe('resolvePanel', () => {
     await mkdir(join(root, 'docs/magic-money-tree/storyboard/img'), { recursive: true })
     await writeFile(join(root, 'docs/magic-money-tree/storyboard/p04.md'), RECORD)
     await writeFile(join(root, 'docs/magic-money-tree/storyboard/img/p04.jpg'), 'x')
+    // camping: local-style comic wired to docs/camping records (fixtures only — the real
+    // docs/camping/storyboard/ is written elsewhere and must not be depended on here)
+    await mkdir(join(root, 'apps/web/public/comics/camping/img'), { recursive: true })
+    await writeFile(join(root, 'apps/web/public/comics/camping/img/i04.jpg'), 'x')
+    await mkdir(join(root, 'docs/camping/storyboard/img'), { recursive: true })
+    await writeFile(join(root, 'docs/camping/storyboard/p04.md'), RECORD)
+    await writeFile(join(root, 'docs/camping/storyboard/img/p04.jpg'), 'x')
   })
 
   afterAll(async () => {
@@ -90,8 +107,21 @@ describe('resolvePanel', () => {
     await expect(resolvePanel(root, 'magic-money-tree', 1)).rejects.toThrow(/PAGE_NOT_IMAGE/)
   })
 
+  it('resolves camping pages against docs/camping records', async () => {
+    const r = await resolvePanel(root, 'camping', 4)
+    expect(r.assetKey).toBe('img/i04.jpg')
+    expect(r.record).toBe(join(root, 'docs/camping/storyboard/p04.md'))
+    expect(r.golden).toBe(join(root, 'docs/camping/storyboard/img/p04.jpg'))
+    expect(r.storage).toBe('local')
+    expect(r.prompt).toContain('benefits office')
+  })
+
+  it('errors when a camping page has no matching record', async () => {
+    await expect(resolvePanel(root, 'camping', 9)).rejects.toThrow(/PAGE_NOT_FOUND/)
+  })
+
   it('errors cleanly on record-less V1 comics and unknown comics', async () => {
-    await expect(resolvePanel(root, 'camping', 1)).rejects.toThrow(/NO_RECORDS/)
+    await expect(resolvePanel(root, 'karen', 1)).rejects.toThrow(/NO_RECORDS/)
     await expect(resolvePanel(root, 'nope', 1)).rejects.toThrow(/UNKNOWN_COMIC/)
   })
 })

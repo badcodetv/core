@@ -64,6 +64,19 @@ flow_edit_image({
 - **The reference is ALWAYS the accepted golden original** — never a rejected
   candidate, never the chain tip. Exception: the user explicitly says "build on
   candidate B"; then B is that round's reference and you're on a chain (see §6).
+- **Pass ONE reference, and downscale it first.** Multi-reference calls time out in
+  the asset dialog, and a 7–10 MB golden blows the upload wait. Convert to a ~1600 px
+  JPEG before the call — `convert <golden> -resize 1600x1600\> -quality 88 <tmp>.jpg`
+  — and pass that. Output quality is unaffected. Full detail + recovery ladder:
+  `packages/flow-mcp/README.md`.
+- **A blocked prompt looks exactly like a timeout.** Flow's usage filter blocks
+  silently over CDP — no candidates, generic error. Two failures with a healthy session
+  means *rewrite*, not retry. The delta prompt is the usual culprit: naming a real
+  brand, demanding a legible wordmark, likeness phrasing ("same face, same bone
+  structure"), or piling on destitution vocabulary. Rewrite rules:
+  `.claude/skills/badcode-art-direction/SKILL.md` → "Usage-policy blocks". Edits are
+  especially exposed here because the golden often *contains* the brand you are then
+  describing — describe the change, not the logo.
 - `characters` in the record need no re-casting for edits — the character is already
   IN the golden reference. Pass `character` only when the edit *introduces* a canon
   character (create/verify it in the Flow project first via `flow_create_character`).

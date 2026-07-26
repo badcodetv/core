@@ -155,6 +155,16 @@ and records the prompt + revision in `docs/<story>/storyboard/pNN.md`.
 Prerequisite: `./scripts/flow-chrome.sh` running and logged in (see
 `packages/flow-mcp/README.md`). Do NOT puppeteer Flow via the Playwright MCP by hand.
 
+**Budget this stage for policy blocks.** Flow's usage filter silently blocks a large
+share of prompts, and over CDP a block is indistinguishable from a timeout — on the
+camping recut it was over half of all generations. Two no-candidate failures on a
+healthy session means **rewrite the prompt, never retry**. Better: avoid the triggers
+when *writing the storyboard*, not when generating — real brand names and legible
+wordmarks, likeness phrasing, stacked destitution, institutional text. If a sign or
+headline is load-bearing for a beat, plan it as a comic text overlay rather than baked
+into the image. Rules + rewrite table: **`badcode-art-direction`** → "Usage-policy
+blocks".
+
 For each `pNN.md` with `status: planned`: invoke **`badcode-art-direction`**, casting
 **every** character listed in `characters:` by name; generate, judge, and harvest to
 `docs/<story>/storyboard/img/pNN.jpg`. Then fill `flow_media_id`, set
