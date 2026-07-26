@@ -7,7 +7,7 @@ survive verification or weren't covered — they're drafted from general knowled
 `trend-scout` worker's standing job to verify and refresh (§11). Policies here are actively
 evolving; re-check before launch decisions.
 
-Strategy context: [`README.md`](./README.md). Confidence legend: ✅ Verified (cited) ·
+Strategy context: [`plan.md`](./plan.md). Confidence legend: ✅ Verified (cited) ·
 ◻ Provisional (verify before relying).
 
 ---

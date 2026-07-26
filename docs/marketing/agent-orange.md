@@ -2,7 +2,7 @@
 
 **Status:** v1, 2026-07-16. Designed against the Agent Orange product spec
 (`agent-orange/docs/17-product-spec.md`, drafted 2026-07-15 — "the great simplification").
-The plan itself is [`README.md`](./README.md); the seed prompt is
+The plan itself is [`plan.md`](./plan.md); the seed prompt is
 [`marketing-manager-prompt.md`](./marketing-manager-prompt.md); the worker container image is
 specified in [`badcode-image.md`](./badcode-image.md).
 

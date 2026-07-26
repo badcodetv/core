@@ -65,25 +65,18 @@ describe('resolvePanel', () => {
     await mkdir(join(root, 'apps/web/src/comics/gpom-short'), { recursive: true })
     await mkdir(join(root, 'apps/web/public/comics/gpom-short/img'), { recursive: true })
     await writeFile(join(root, 'apps/web/public/comics/gpom-short/img/i04.jpg'), 'x')
-    await mkdir(join(root, 'docs/gpom-short/storyboard/img'), { recursive: true })
-    await writeFile(join(root, 'docs/gpom-short/storyboard/p04.md'), RECORD)
-    await writeFile(join(root, 'docs/gpom-short/storyboard/img/p04.jpg'), 'x')
+    await mkdir(join(root, 'docs/stories/gpom-short/storyboard/img'), { recursive: true })
+    await writeFile(join(root, 'docs/stories/gpom-short/storyboard/p04.md'), RECORD)
+    await writeFile(join(root, 'docs/stories/gpom-short/storyboard/img/p04.jpg'), 'x')
     // bucket-style comic dir with an anim page, reusing the same story records
     await mkdir(join(root, 'apps/web/src/comics/magic-money-tree'), { recursive: true })
     await writeFile(
       join(root, 'apps/web/src/comics/magic-money-tree/page-map.json'),
       JSON.stringify({ p01: { kind: 'anim', key: 'anim/a01' }, p02: { kind: 'image', key: 'img/i04.jpg' } }),
     )
-    await mkdir(join(root, 'docs/magic-money-tree/storyboard/img'), { recursive: true })
-    await writeFile(join(root, 'docs/magic-money-tree/storyboard/p04.md'), RECORD)
-    await writeFile(join(root, 'docs/magic-money-tree/storyboard/img/p04.jpg'), 'x')
-    // camping: local-style comic wired to docs/camping records (fixtures only — the real
-    // docs/camping/storyboard/ is written elsewhere and must not be depended on here)
-    await mkdir(join(root, 'apps/web/public/comics/camping/img'), { recursive: true })
-    await writeFile(join(root, 'apps/web/public/comics/camping/img/i04.jpg'), 'x')
-    await mkdir(join(root, 'docs/camping/storyboard/img'), { recursive: true })
-    await writeFile(join(root, 'docs/camping/storyboard/p04.md'), RECORD)
-    await writeFile(join(root, 'docs/camping/storyboard/img/p04.jpg'), 'x')
+    await mkdir(join(root, 'docs/stories/magic-money-tree/storyboard/img'), { recursive: true })
+    await writeFile(join(root, 'docs/stories/magic-money-tree/storyboard/p04.md'), RECORD)
+    await writeFile(join(root, 'docs/stories/magic-money-tree/storyboard/img/p04.jpg'), 'x')
   })
 
   afterAll(async () => {
@@ -93,8 +86,8 @@ describe('resolvePanel', () => {
   it('resolves a local-style page to record + golden + web image', async () => {
     const r = await resolvePanel(root, 'gpom-short', 4)
     expect(r.assetKey).toBe('img/i04.jpg')
-    expect(r.record).toBe(join(root, 'docs/gpom-short/storyboard/p04.md'))
-    expect(r.golden).toBe(join(root, 'docs/gpom-short/storyboard/img/p04.jpg'))
+    expect(r.record).toBe(join(root, 'docs/stories/gpom-short/storyboard/p04.md'))
+    expect(r.golden).toBe(join(root, 'docs/stories/gpom-short/storyboard/img/p04.jpg'))
     expect(r.storage).toBe('local')
     expect(r.prompt).toContain('benefits office')
     expect(r.revisionCount).toBe(2)
@@ -107,20 +100,8 @@ describe('resolvePanel', () => {
     await expect(resolvePanel(root, 'magic-money-tree', 1)).rejects.toThrow(/PAGE_NOT_IMAGE/)
   })
 
-  it('resolves camping pages against docs/camping records', async () => {
-    const r = await resolvePanel(root, 'camping', 4)
-    expect(r.assetKey).toBe('img/i04.jpg')
-    expect(r.record).toBe(join(root, 'docs/camping/storyboard/p04.md'))
-    expect(r.golden).toBe(join(root, 'docs/camping/storyboard/img/p04.jpg'))
-    expect(r.storage).toBe('local')
-    expect(r.prompt).toContain('benefits office')
-  })
-
-  it('errors when a camping page has no matching record', async () => {
-    await expect(resolvePanel(root, 'camping', 9)).rejects.toThrow(/PAGE_NOT_FOUND/)
-  })
-
   it('errors cleanly on record-less V1 comics and unknown comics', async () => {
+    await expect(resolvePanel(root, 'camping', 1)).rejects.toThrow(/NO_RECORDS/)
     await expect(resolvePanel(root, 'karen', 1)).rejects.toThrow(/NO_RECORDS/)
     await expect(resolvePanel(root, 'nope', 1)).rejects.toThrow(/UNKNOWN_COMIC/)
   })
