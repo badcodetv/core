@@ -25,16 +25,23 @@ Status values: `reused` (Storyteller-era golden, prompt unrecorded) · `new`
 > rifle thought moved onto slide 11, removing a scroll stall. Everything after it
 > renumbered down by one, so page numbers here are one lower than the spec's §3 table
 > from slide 12 onward. Archived: `_cut/p12-cut-yurt-closeup.md`.
+>
+> **Tarquin fix, 2026-07-27.** The 07-25 regenerations (i40–i43) had produced a *third*
+> face — the `@Tarquin` Flow Character was never cast (wrong project, MCP-only lane,
+> policy-safe phrasing that binds wardrobe not face). All four panels regenerated in the
+> `camping-v2` Flow project with the Character cast via `flow_generate_image`'s
+> `character` param → `img/i44`–`i47`. p07's tent is back in frame beside the SUV
+> (the composition passes the usage filter once brand triggers are stripped).
 
 | # | Asset key | Status | Shot |
 | --- | --- | --- | --- |
 | p01 | `anim/a01` | reused | Shard, dusk drone push-in |
-| p02 | `img/i40.png` | regenerated (face continuity) | Boardroom, rising chart — "let's circle back" |
-| p03 | `img/i41.png` | regenerated (face continuity) | Lift lobby, applause — the Winning Mentality™ |
-| p04 | `img/i42.png` | regenerated (face continuity) | Lobby weekend chat — glamping, £400 a night |
+| p02 | `img/i44.png` | regenerated (@Tarquin cast) | Boardroom, rising chart — "let's circle back" |
+| p03 | `img/i45.png` | regenerated (@Tarquin cast) | Lift lobby, applause — the Winning Mentality™ |
+| p04 | `img/i46.png` | regenerated (@Tarquin cast) | Lobby weekend chat — glamping, £400 a night |
 | p05 | `anim/a02` | reused | His car on the night street, Shard behind — the chimp line |
 | p06 | `anim/a04` | reused | Aerial: the car pulls in beside the tatty tent |
-| p07 | `img/i43.png` | regenerated (face continuity) | Ground level: Tarquin's contempt; his car straddles two bays. Eyeline goes off-frame to the tent |
+| p07 | `img/i47.png` | regenerated (@Tarquin cast) | Ground level: Tarquin's contempt at Bob's tent beside his SUV, straddling two bays (tent restored to frame) |
 | p08 | `img/i05.png` | reused | POV inside Bob's tent, bottle in hand, the car in the doorway |
 | p09 | `img/i07.png` | reused | Bob in the tent, hat, bottle — 2008, the crash, her |
 | p10 | `anim/a06` | reused | Forest road, headlights through rain |

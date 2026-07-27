@@ -22,7 +22,7 @@ export function CampingComic() {
 
       {/* 2 — Boardroom. The incantation he'll hear again on the trip. */}
       <Page hold={1.6}>
-        <ImageWidget src={comic.resolve('img/i40.png')} />
+        <ImageWidget src={comic.resolve('img/i44.png')} />
         <SpeechBubble x={34.45} y={34.42} appearAt={[0, 1]} fade tail="none" fontSize={14}>
           {'Let\'s circle back to synergise our bandwidth…'}
         </SpeechBubble>
@@ -30,7 +30,7 @@ export function CampingComic() {
 
       {/* 3 — Lift lobby, applause. */}
       <Page hold={1.8}>
-        <ImageWidget src={comic.resolve('img/i41.png')} />
+        <ImageWidget src={comic.resolve('img/i45.png')} />
         <SpeechBubble x={54.1} y={72.77} appearAt={[0, 0.5]} fade tail="none" fontSize={14}>
           {'Tarquin, you\'ve done it again. How do you do it?'}
         </SpeechBubble>
@@ -41,7 +41,7 @@ export function CampingComic() {
 
       {/* 4 — The camping/glamping setup. Both halves detonate later. */}
       <Page hold={2.8}>
-        <ImageWidget src={comic.resolve('img/i42.png')} />
+        <ImageWidget src={comic.resolve('img/i46.png')} />
         <SpeechBubble x={18.48} y={55.44} appearAt={[0, 0.25]} fade tail="none" fontSize={14}>
           {'What are you up to this weekend, mate?'}
         </SpeechBubble>
@@ -80,7 +80,7 @@ export function CampingComic() {
       {/* Slow push toward his face: ends the page on the sneer rather than the car,
           and eases the marque mismatch with slide 8's SUV (see record p07). */}
       <Page hold={2} effect={zoom({ amount: 1.25, focal: [0.55, 0.3] })}>
-        <ImageWidget src={comic.resolve('img/i43.png')} />
+        <ImageWidget src={comic.resolve('img/i47.png')} />
         <SpeechBubble x={30} y={25} appearAt={[0, 0.45]} fade type="thought" tail="none" fontSize={14}>
           {'Two parking spaces. For that.'}
         </SpeechBubble>

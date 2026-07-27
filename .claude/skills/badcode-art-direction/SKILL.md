@@ -56,11 +56,25 @@ the character is **attached as a reference** — naming them in prose is not eno
 - **Plain `@Name` text does NOT bind the character.** Proven on camping-v2 p03:
   the first pass typed `@Tarquin` as text → a *generic* financier; only attaching
   the Character reference produced Tarquin's actual face.
-- **Tooling caveat:** `flow_generate_image` types text only — it does **not**
-  attach references. So character panels currently need the reference attached by
-  driving the Flow UI (Playwright MCP: `@` → pick Character → Add to Prompt), then
-  type + submit. Object-refs (a specific car, tent) can be Characters too, or
-  described richly in prose where likeness matters less than a face.
+- **Tooling:** `flow_generate_image` and `flow_edit_image` accept a
+  `character` parameter that casts a project Character directly — use it for
+  every character panel. (The old Playwright `@`-picker recipe is only a
+  fallback if the MCP cast fails.) Object-refs (a specific car, tent) can be
+  Characters too, or described richly in prose where likeness matters less
+  than a face.
+- **Characters are PROJECT-SCOPED.** A Character only exists inside the Flow
+  project it was created in. Before generating, confirm the current project
+  actually has the character (`@Tarquin` lives in `camping-v2`); if you're
+  working in another project, either open the owning project or create the
+  character there first with `flow_create_character` from the canon sheet.
+- **HARD RULE — never regenerate a face-bearing panel of a recurring
+  character without casting their Flow Character.** Prose descriptions plus
+  image references provably do NOT hold a face: the 2026-07-25 camping recut
+  regenerated i40–i43 that way (MCP-only lane, wrong project, policy-safe
+  phrasing that binds wardrobe not face) and produced a third face matching
+  neither city nor camp Tarquin. If the character can't be cast — wrong
+  project, MCP failure, whatever — STOP and fix that first; do not fall back
+  to prose + refs for a face.
 
 ## Usage-policy blocks — write to pass on the first attempt
 

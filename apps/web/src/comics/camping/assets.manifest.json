@@ -301,6 +301,34 @@
       "high": "derived/img/i43.high.webp",
       "width": 1376,
       "height": 768
+    },
+    "img/i44.png": {
+      "thumbhash": "4ecNBIB4d7Z/eZZ3dnMIZmlQdw==",
+      "low": "derived/img/i44.low.webp",
+      "high": "derived/img/i44.high.webp",
+      "width": 1376,
+      "height": 768
+    },
+    "img/i45.png": {
+      "thumbhash": "3/cNDIApOKd/h4d4dHf3jILfCA==",
+      "low": "derived/img/i45.low.webp",
+      "high": "derived/img/i45.high.webp",
+      "width": 1376,
+      "height": 768
+    },
+    "img/i46.png": {
+      "thumbhash": "ldcJHIQI1HhbeHeGiIV1gEgHhw==",
+      "low": "derived/img/i46.low.webp",
+      "high": "derived/img/i46.high.webp",
+      "width": 1376,
+      "height": 768
+    },
+    "img/i47.png": {
+      "thumbhash": "G/gNDIBvg4prhmhrl6tovP8cxg==",
+      "low": "derived/img/i47.low.webp",
+      "high": "derived/img/i47.high.webp",
+      "width": 1376,
+      "height": 768
     }
   },
   "animations": {
