@@ -2,7 +2,12 @@
 
 How Suno's prompt language actually works. This is the foundation reference for building prompts that produce predictable results.
 
-Last updated for Suno v5.5.
+Last updated for Suno v5.5. Corrected 2026-07-29 against practitioner testing — passages marked
+**Field note** or *(Corrected: …)* override the surrounding rule. See
+[`../README.md`](../README.md) for provenance and the list of known-unreliable claims.
+
+For the sliders, platform features and workflows *around* the prompt box, see
+[`suno-controls-and-workflows.md`](./suno-controls-and-workflows.md).
 
 ---
 
@@ -30,7 +35,13 @@ Before producing any prompt, identify which of the three contexts the user is ge
 - Studio is a separate Suno environment, not a song-generation mode. It generates one isolated element — a guitar tone, a drum pattern, a vocal performance — rather than a full song.
 - Style box character limit: 1,000 characters.
 - Has an exclude styles box. Use it; Studio often generates more instruments than requested.
-- Do not include genre tags in Studio prompts. Studio prompts describe sound, not songs.
+- **Do not describe a *song*.** Studio prompts describe one sound. *(Corrected: an earlier version of
+  this rule said "no genre tags." In practice working Studio prompts nearly always **lead with a
+  genre** — `house drums`, `boom bap hip hop drums`, `crunchy hard rock lead guitar solo` — because
+  the genre acts as tone shorthand. Genre is fine; song-level description is not.)*
+- Keep it short and front-load the instrument. Add the word `only` to suppress extras, and repeat the
+  restriction in different words (`vocals only, only rap vocals`; `just snare`).
+- Gear model numbers work as tone shorthand: `909 kick`, `MPC drums`, `Juno pad`.
 - Era and influence descriptors are allowed (e.g., "70s warm tube saturation," "vintage analog drum punch") because they describe sound, not genre.
 
 ---
@@ -191,9 +202,36 @@ I walk alone (in the night)
 
 Suno sings "I walk alone" as the lead vocal and "in the night" as a backing vocal or echo.
 
+**Exception — spoken word.** For narration, parentheses act as an *anchoring* device for the primary
+spoken line, not a backing-vocal marker. The working recipe is a redundant word-cluster in the
+bracket plus the line itself in parentheses beneath it:
+
+```
+[spoken word speech sad]
+(You know, I think we're in a simulation.)
+```
+
+The redundancy matters: `[spoken word]` → `[spoken word speech]` → `[spoken word speech talking]` is
+an escalation ladder for a tag that's being ignored. Emotion escalates reliably across consecutive
+cues (`[spoken word speech sad]` → `[angry voice]` → `[yelling]`). Pair it with `spoken word` plus a
+mood word in the **Style** box.
+
+*This is the mechanism for BadCode's superintelligence narration — and it composes with a saved
+Voice, so the narrator can speak in one track and sing in the next with the same identity.*
+
+**Meta-tags are probabilistic.** Suno publishes no tag list, so this entire vocabulary is folk
+knowledge discovered by trial. A cue that's ignored on one generation often lands on the next with an
+identical prompt. **Re-roll before concluding a tag doesn't work — and never promise a user that a
+meta-tag will fire.**
+
 ### Stacking production cues with the pipe `|`
 
-Combine multiple cues inside a single bracket using `|` as a separator. The pipe acts like an AND operator.
+Combine multiple cues inside a single bracket using `|` as a separator.
+
+**Field note:** the pipe is a *readability convention, not a mechanic.* Controlled testing (eight
+generations per condition across three tag types) found **no difference whatsoever** between pipes
+and commas. Keep using it for legible, consistent output — but never claim it changes the result,
+and never tell a user their commas are wrong.
 
 ```
 [Chorus | belted hard rock hook | full band | stacked harmonies]
@@ -240,11 +278,27 @@ This is the default format. The user may request variations (different spacing, 
 
 These typographic conventions modify how Suno performs specific words:
 
-- **ALL CAPS** = emphasis or shouted delivery
-- **Elongated vowels** ("lo-o-ove") = stretched notes
+- **Elongated vowels** ("lo-o-ove") = stretched notes. **The most reliable one** — confirmed
+  repeatedly, and it also works on ad-libs and invented syllables.
 - **Ellipsis** ("...") = pause, hesitation, slowdown
-- **Hyphenated words** ("d-a-s-h-e-s") = sung as one continuous flow
+- **Hyphenated words** ("d-a-s-h-e-s") = sung as one continuous flow; hyphen-stretching a word makes
+  the vocalist hold and bend the note, and stutter repetition ("d-d-don't") gives chopped delivery
 - **Em dashes** (`—`) = longer pauses than commas
+- **Phonetic respelling** = the fix for any mispronounced name, brand, acronym or coined term. Spell
+  it how it should sound. Essential for BadCode's invented vocabulary.
+- **ALL CAPS** = *unreliable.* Widely circulated as an emphasis/shout mechanic, but it failed a
+  direct A/B test by the practitioner who popularised much of this vocabulary; a separate test found
+  caps + `!` reading as shouted only some of the time. **Do not present it as a mechanic.** For
+  shouted delivery use a bracket cue (`[angry voice]`, `[yelling]`) instead.
+
+### Lyric-box typography is performance direction
+
+Layout controls delivery as much as any tag:
+
+- One line = words sung tight together; **broken across lines** = slower, more spaced delivery
+- **Commas** = pauses
+- **A blank line between blocks frequently makes Suno insert an instrumental passage.** This is the
+  usual hidden cause of "why did it put a random instrumental in my verse?"
 
 ---
 
@@ -316,6 +370,13 @@ Certain words trigger unintended effects in Suno's output regardless of context.
 
 ### The rule applies to compound forms and modifier variants
 
+**Field note — this rule is probably over-broad.** Working prompts from an experienced practitioner
+use `live drum kit` and `acoustic pop` as ordinary instrument/genre terms with no reported problem
+and no workaround. The trigger most likely fires on **venue and audience words** (`live`, `arena`,
+`crowd`, `stadium`, `concert`) rather than on `live` as a modifier of an instrument. Treat the
+compound ban as a *caution*, not a prohibition: if a compound is the natural term, use it and listen.
+Don't correct a user's `live drum kit` unprompted.
+
 If a word is on the list, all its compound forms and modifier variants are equally contaminated. The trigger fires on the root, not the exact phrasing.
 
 For `live`, this means avoiding: `live-style`, `live-tracked`, `live-sounding`, `live-feel`, `live-recorded`, `live-tracking`, `live-band`, `played live`, etc. All of these contain the trigger and produce the same live-recording effect.
@@ -358,6 +419,20 @@ Examples that cause problems:
 - `acoustic mix` may shift the entire arrangement toward acoustic instruments
 
 **Workaround for drums:** describe drums by tone or playing style instead. For rock drums, use `punchy drums`, `tight kick and snare`, `rock drum kit`, `studio-tracked drums`, `natural drum tone`, or `dynamic drums`. Or just `drums` — Suno will infer the appropriate kit from the genre context.
+
+### Scoped crowd/room sound: use the Lyrics box, not the Style box
+
+Contamination words in the **Style** box apply a whole-song live aesthetic. The same words in the
+**Lyrics** box fire at one specific moment — which is usually what you actually want:
+
+```
+[live crowd]
+[crowd shouting]
+[crowd clapping]
+```
+
+Stacked like this they produce cheering *and* clapping at that bar only. For a deliberate full live
+version, `live recording at a concert` in the Style box plus a crowd cue in the intro works well.
 
 ### When the user wants the live or acoustic sound
 

@@ -67,9 +67,13 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
   canon (skill-driven, on request) — edit the canon, not the artifact. See
   [`docs/stories/camping/README.md`](./docs/stories/camping/README.md).
 - **Make a Suno prompt:** type a song idea (a feeling, a reference, a GPOM beat) and the
-  **`suno-prompt`** skill (`.claude/skills/suno-prompt/`) turns it into a Suno style prompt,
-  exclude-styles list, and — on request — lyrics, in the BadCode voice. It runs on the toolkit in
-  [`docs/suno-gpt/`](./docs/suno-gpt/system-prompt.txt) and defaults to drum & bass.
+  **`suno-prompt`** skill (`.claude/skills/suno-prompt/`) runs a short **interview** — mode, purpose,
+  the vocal arc, what must survive — then produces a style prompt, exclude-styles list, slider
+  settings, and on request lyrics, in the BadCode voice, refining against what you actually hear. It
+  runs on the toolkit in [`docs/suno-gpt/`](./docs/suno-gpt/README.md) and defaults to drum & bass.
+  The toolkit also covers the **platform** beyond the prompt box — the three influence sliders, the
+  Voice/custom-model stack for a recurring narrator across a release, lyric editing, Studio, stems,
+  and the things Suno reliably gets wrong (half-time drums, niche D&B subgenres).
 - **Record an idea (the inbox):** run the **`new-idea`** skill
   (`.claude/skills/new-idea/`). It parks an idea the second it pops as a
   minimal-prose file under [`docs/ideas/`](./docs/ideas/README.md) and adds a

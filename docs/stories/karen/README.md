@@ -21,7 +21,7 @@ box to the President to the AI itself, and into the revolution history remembers
 | --- | --- | --- |
 | Story spine | [`story.md`](./story.md) | **solid — "send it" (2026-07-22)**; needs an edit + the expanded Karen↔President beat, nothing structural |
 | Comic | `apps/web/src/comics/karen/` (imported shell; canonical folder is `karen-jack-test` pending rename) | empty shell — 53 blank panels, no scenes yet |
-| Song — "All Day to Complain" (working) | — | direction decided 2026-07-22 (skit structure, funk-switch hook, AI Sean on the track — see story.md open threads); hand to `suno-prompt` |
+| Song — "All Day to Complain" (working) | [`songs/all-day-to-complain.md`](./songs/all-day-to-complain.md) | **drafting** — full lyrics + Suno style/exclude/sliders recorded; vocal-tone rewrite 2026-07-30 (annoyed Karen, not chill), awaiting a take |
 | Video | — | direction decided 2026-07-22: Ari freestyling with Karen, whole video |
 | Social posts | — | not started |
 
