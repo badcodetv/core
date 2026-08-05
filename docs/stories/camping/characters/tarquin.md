@@ -1,27 +1,66 @@
 ---
-name: Tarquin
+name: tarquin
 role: antagonist → fellow victim
 voice: "Posh London financier — sneering, clipped RP, mocking and dismissive"
-sheet: characters/tarquin/sheet.latest.png
-signals: middle-aged, slicked hair, smug, expensive overcoat, BMW X8 "wank tank", Châteauneuf-du-Pape, the Shard, executive ayahuasca retreat
+sheet: characters/img/tarquin-sheet.jpg
+signals: slicked-back hair, smug, expensive charcoal overcoat, no tie, good watch, BMW X8 "wank tank", the Shard, therapy, executive ayahuasca retreat
+flow_sheet_source:
+  project: 8970bef9-0c6d-47f7-9aa0-8e4ad462eda8
+  media: 3bfdc65f-743a-477e-8199-d6d14fc6abd9
+  url: https://labs.google/fx/tools/flow/project/8970bef9-0c6d-47f7-9aa0-8e4ad462eda8/edit/3bfdc65f-743a-477e-8199-d6d14fc6abd9
+  note: existing sheet in Flow Images; harvested as reference.
 ---
 
 # Tarquin
 
-A middle-aged City financier — pushes spreadsheets in the Shard, drives fast
-cars. Smug, slick, certain the system is fair because it has rewarded him. He
-believes the wealth gap is a fiction and poverty a character flaw — "if you
-worked hard then you could have plenty." His self-improvement is a status
-purchase: the edgy executive ayahuasca retreat in Wales, "to learn more about
-myself," which his friends find very cool.
+**2008:** up-and-coming star of the trading desk in the old NatWest Tower,
+betting heavily on leveraged ETFs — *he was the reason 2008 hit.* A plucky
+young prick with a great career ahead of him.
 
-He is the just-world fallacy with a haircut. The story's engine is that the same
-automation logic he profits from does not stop at the working class: it takes the
-managers and the C-suite too. The ayahuasca shows him the truth he'd never accept
-sober — five years on he is in Bob's tent in the car park, and Bob is the one who
-shows him grace. He is not a villain to be punished — he is us, mistaken.
+**2026:** runs the biggest private equity firm in the country. The play: buy up
+all the social housing available — often not even renting it out, because asset
+inflation beats rent. He's laid heavy bets on next week's interest-rate rise
+and can't wait for the bonus. King of the world.
 
-> Signifier note: the comic gives him the BMW X8 "wank tank"; the song lyric
-> still references an "M3". Minor inconsistency to reconcile before lock — the
-> wank tank is the load-bearing image (it's the disparaging name that makes the
-> point), so the song likely yields to it.
+He believes the system is fair because it has rewarded him — the just-world
+fallacy with a haircut. But he's **human underneath**: driving home past
+homeless people, his own joke curdles and the smile fades — he catches himself
+imagining how cold it is out there (his car heater broke last week). It's the
+first guilt of his life, and it confuses him enough to bring it to his
+therapist, whose verdict — *no amount of therapy can help you; you need the
+most powerful psychedelic known to man* — sends him to the Welsh retreat. Five
+years later he wakes up in Bob's tent, and the man he sneered at is the one who
+shows him kindness. He is not a villain to be punished — he is us, mistaken.
+
+## Visual (house style: hyper-realistic documentary photography)
+
+Anchor character — **every scene he appears in must read as the same man.** Lock
+these:
+
+- Late-40s white British man, City of London. Dark hair greying at the temples,
+  slicked straight back with product. A well-fed face that eats well and sleeps
+  badly: faint jowl beginning, a slight sheen, broken capillaries at the nose from
+  good wine — **not** a smooth, idealised leading-man face. Pale, indoor skin.
+- The modern City uniform, not the cliché pinstripe: a heavy charcoal wool
+  overcoat over an open-collar pale shirt, no tie; flat-front trousers; an
+  expensive understated watch; a plain heavy signet ring. Everything well cut and
+  a little soft from desk life.
+- Demeanour: chin slightly up, the resting expression of a man appraising and
+  finding wanting. Caught mid-sneer or mid-dismissal, never posed or heroic.
+- **The young-Tarquin variant (Scene 1, 2008):** the same bone structure in his
+  mid-20s — full dark hair, lean, cheap-slick suit and loud tie of a 2008
+  trading floor, cocksure grin. The audience must read Shard-Tarquin as this
+  kid, eighteen years fed.
+- **The ruined-Tarquin variant (Scenes 10–12):** the same man, five years
+  wrecked — the overcoat filthy and shapeless, stubble greying, the fed softness
+  gone to gaunt, the appraising look replaced by cold and fear. Same bone
+  structure, same receded hairline; the audience must recognise him as the Shard
+  man undone.
+
+Warmth touches him only as argument: the BMW's gold headlights, the Shard's
+glass catching a cold sky. In the car park and the ruins the palette goes muted,
+cool, unforgiving.
+
+**Flow Character:** id `29e97ae3-39ba-49b2-88d8-7a2250713f6b` · tag `@Tarquin` ·
+project `camping-v2` (`9b729074-da88-4668-a442-458e9a0f15ac`) · created from
+`img/tarquin-sheet.jpg` (the harvested multi-angle sheet) · model nano-banana-2.

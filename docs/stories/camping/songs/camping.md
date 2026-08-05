@@ -26,6 +26,13 @@ Two voices: **Bob** (Scouse, weathered) and **Tarquin** (posh London, sneering).
 See [`../characters/bob.md`](../characters/bob.md) and
 [`../characters/tarquin.md`](../characters/tarquin.md).
 
+> **Provenance:** these lyrics predate the 2026-08-04 story restructure
+> ([`../story.md`](../story.md)) — the track and Jack's music video already
+> exist, so the song stands as released. Known drift from current canon: the
+> bridge gives Tarquin the "got the sack / broke my back" slide (Bob's ruin is
+> now the 2008 crash), and the lyric says "M3" where the story's load-bearing
+> car is the X8 wank tank. Reconcile only if the song is ever re-cut.
+
 ```lyrics
 [Intro | dark ambient pad, distant city hum | no drums | 8 bars building tension]
 [Verse 1 | Bob | thick Scouse spoken-word | half-time amen + deep sub | weary, confrontational]
