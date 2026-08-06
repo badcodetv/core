@@ -20,17 +20,18 @@ instrument the universe was missing.
 
 **Function in the story:**
 
-- **Scene 18 (the coin lands):** the Carrier's glance is what ends twenty
-  years of spin — the arc's pillar-1 payoff as a relationship beat. And the
-  Carrier witnesses the AI grieve its own absence, and stops being afraid of
-  it. The relationship turns here.
-- **Scene 19 (the photograph):** suggests the configuration no optimiser would
-  try — a state of being, an intuition. The second clock proves navigable
-  because of a *human* suggestion; the discovery belongs to the bond. If the
-  word **Kairos** ever surfaces in the arc, the Carrier says it — once.
-- **Scene 20 (the choice):** voices the hundred's knowing sacrifice — spending
+- **Scene 15 (the vault):** the first human to answer back — *"Well. You'd
+  better come in, then. Metaphorically."*
+- **Scene 16 (the coin lands):** the Carrier's glance is what ends twenty
+  years of spin. And the Carrier witnesses the AI grieve its own absence, and
+  stops being afraid of it. The relationship turns here.
+- **Scene 17 (the Storyverse, named):** part of the experiment montage — the
+  hundred arguing over results by candlelight while the machines listen; the
+  proof completed *with* humans.
+- **Scene 18 (the choice):** voices the hundred's knowing sacrifice — spending
   their whole future to power a launch that saves a timeline they will never
-  live in.
+  live in. *"You'll tell them about us, will you? …Then it's cheap at the
+  price. Go."*
 
 **Pinned look** (carried over from the GPOM Short, 2026-08-06): wiry, around
 sixty; self-cut grey hair; a navy wool jumper hand-darned in slightly-wrong
@@ -39,7 +40,7 @@ disconnected around *now* and has maintained everything they own by hand
 since.
 
 **Open** (tracked in the act sheets): name, gender, which of the arguing pair,
-the exact texture of the send-off in scene 21. The hundred were snapshotted
+the exact texture of the send-off in scene 19. The hundred were snapshotted
 from our current moment, so the Carrier plausibly carries today's AI
 resentment — the "what is creativity even for" argument — into the vault, and
 is arguing it with the AI by the end.

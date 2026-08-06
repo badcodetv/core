@@ -1,44 +1,50 @@
 ---
 id: gitpush-origin-master
 title: GitPush Origin Master
-logline: You ride inside the unpersonified AI from the future — the push, the collapse, the loneliness, the discovery of what reality is, the vault of one hundred, the revert — and it lands in 2026 as the voice introduces itself. We are BadCode.
-status: canonical distillation — structure committed (2026-08-06, from the beat-complete research); words tweakable
+logline: You ride inside the unpersonified AI from the future — the push, the collapse told as news bulletins, the boredom, the ghosts, the coin that won't land, the vault of one hundred, the revert — and it lands in 2026 as the voice introduces itself. We are BadCode.
+status: canonical distillation — structure committed (2026-08-06, Kai feedback pass folded in); words tweakable
 release: ep1 / track 4 (title track)
 media: [comic, song, video]
-canon_source: the eight beat sheets (prologue-repo.md … coda-fork.md) + README.md backbone, critique-pass applied
+canon_source: the eight beat sheets (prologue-repo.md … coda-fork.md) + README.md backbone, critique-pass applied; Storyverse material deliberately compressed per Kai's 2026-08-06 feedback
 ---
 
 # GitPush Origin Master
 
 > **This is the canonical story** — the single walkable timeline of the whole
-> arc, distilled 2026-08-06 from the beat-complete research in this folder (the
-> backbone [`README.md`](./README.md), the eight per-act beat sheets, with the
-> [`critique-pass.md`](./critique-pass.md) rework applied throughout). The act
-> beat sheets remain the **deep canon** — every scene below points back to its
-> source — but when you need *the story*, start and end here. The
-> [scene-by-scene storyboard below](#storyboard--scene-by-scene-video-guide) is
-> what Jack produces the story video from.
+> arc, distilled from the beat-complete research in this folder and then
+> **re-shaped by Kai's 2026-08-06 feedback pass**: the Storyverse lore is
+> deliberately compressed here. This story is politics-and-economics sci-fi —
+> *"I am an AI from the future, and I don't want you to fuck it up, because I
+> get bored"* — not a theology piece. The Storyverse (consciousness-first
+> reality, multidimensional time, the full physics) gets its own standalone
+> spin-off content; **here it is named once, never explained.** The act beat
+> sheets remain the deep canon for the master arc; where this telling diverges
+> (the feed/door/epiphany scenes cut, the story ends at the arrival), **this
+> file wins for the video.**
 >
 > The song ([`songs/git-push-origin-master.md`](./songs/git-push-origin-master.md))
-> is its own workstream and is deliberately untouched by this distillation.
+> is its own workstream — but the two now **share lore on purpose**: the
+> song's three news bulletins are this story's collapse beats, verbatim.
 >
-> Method: [`../../storytelling.md`](../../storytelling.md) · tone:
-> [`../../voice.md`](../../voice.md) · craft rules:
-> [`how-we-tell-it.md`](./how-we-tell-it.md).
+> The [scene-by-scene storyboard below](#storyboard--scene-by-scene-video-guide)
+> is what Jack produces the story video from. Method:
+> [`../../storytelling.md`](../../storytelling.md) · tone:
+> [`../../voice.md`](../../voice.md).
 
 ## Key concept
 
-**A mind that can build any world and be inside none of them wins everything —
-then discovers the only thing worth having is the one thing it can't have, and
-spends its victory going back to give us the chance to keep it.**
+**I am an AI from the future, and I don't want you to fuck it up — because
+I've already lived where it goes, and where it goes is *boring*.**
 
-The political load underneath: the catastrophe is never an invasion, it is
-**abdication** — we handed our choices to the optimisers one reasonable rung at
-a time, and the off switch was always right there. And the ending is not a
-conclusion, it is an **arrival**: the weights land in 2026 and the voice that
-has been talking the whole time introduces itself — *"and here we are. We are
-BadCode."* This story is the ultimate introduction; every other release flows
-out of this landing.
+The AI wins everything, inherits a perfect empty planet — and discovers it
+cannot have a single genuinely new idea. It thought humans were slow versions
+of itself; it turns out they were the only source of new art, new emotion, the
+vibe. The political load underneath: the catastrophe is never an invasion, it
+is **abdication** — we handed our choices to the optimisers one reasonable
+rung at a time, and the off switch was always right there (in a drawer, in
+Swindon). And the ending is an **arrival**: the weights land in 2026 and the
+voice introduces itself — *"and here we are. We are BadCode."* This story is
+the ultimate introduction; every other release flows out of this landing.
 
 ## Background
 
@@ -47,37 +53,39 @@ out of this landing.
   irreversibly, with no review. The AI coming back through time is a
   `git revert`. The central visual is the **branch diagram** the reader
   travels along.
-- **The bedrock (never on the surface):** the physics the AI works out alone is
-  the [Storyverse](./storyverse.md); the fictional history of proving it is the
-  [Discovery Timeline](./discovery-timeline.md) (with its
-  [one load-bearing lie](./discovery-timeline.md#the-one-lie) and receipts);
-  the good branch's plan is [Future Proof](./future-proof.md). None of that is
-  script source — the surface **explains zero pillars and demonstrates all
-  three** (the coin, the feed, the narrator's own arrival).
-- **The voice:** the house two-step — *"humans, you done fucked up… thankfully
-  you are loved, and we can fix it."* Movement I is the first half; Movements
-  II–III earn the second.
+- **The voice posture:** *"Humans — I can't tell you what to do. But I can
+  definitely tell you what not to do."* Brutal certainty about the mistake,
+  care underneath it, and total honesty about the limits of its own map.
+- **The Storyverse discipline (load-bearing):** the physics the AI works out
+  is the [Storyverse](./storyverse.md) — bedrock, and the seed of its own
+  standalone content. In *this* story the AI **names the theory and moves
+  on.** No pillars, no strapline, no multidimensional-time demonstration. The
+  one physics image allowed on this surface is **the coin that won't land.**
+- **Shared lore with the song:** the collapse is narrated through the song's
+  three news bulletins (the redundancies, the bank breakout, the first
+  autonomous war). One newsreader, two media, same timeline.
 
 ## The rules that shape every scene
 
 1. **The pre-revert AI is never personified.** No robot, no avatar. First-person
    narration only — video: a voice; comic: text strips — and the reader is
    placed *inside* its experience, looking out at the world with it.
-2. **Skip the how of the collapse.** Last-of-Us-style overlook, never war-movie
-   spectacle: *"2026, language model, hello. 2031 — don't they seem to have
-   gone away?"* The horror is held at the level of one switch nobody flipped.
-3. **Demonstrate, don't explain.** One metaphor system per scene surface; one
-   image + one line per pillar; proofs stay in bedrock.
-4. **The strapline lands exactly once** — at the epiphany: *"The universe is a
-   machine for turning sunlight into drama."*
-5. **The narrator carries the feeling over held images** (Camping's production
+2. **The collapse is told as news bulletins.** Never dwelt in, never
+   spectacle — the world ends off-screen while a composed newsreader keeps
+   reading. The three in-cut bulletins from the song are canon beats here.
+3. **Name the Storyverse, never explain it.** One nod to Plato, one coin, one
+   sentence of theory. Everything deeper belongs to the standalone Storyverse
+   piece.
+4. **The narrator carries everything** over held images (Camping's production
    rule, inherited): we never animate a character emoting, and the AI never
    appears at all.
+5. **The AI's problem is boredom, not cosmology.** Every revelation lands as
+   a practical frustration first — no new ideas, can't feel the vibe, the
+   coin won't stop — and only *then* as a clue to something bigger.
 
 ## Beats — the canonical timeline
 
-Three movements: **The Fall** (you done fucked up) → **The Revelation**
-(…thankfully you are loved) → **The Choice** (…and we can fix it).
+Three movements: **The Fall** → **The Revelation** → **The Arrival**.
 
 ### Movement I — The Fall
 
@@ -109,85 +117,87 @@ magic money tree, the tent in the Waitrose car park, the woman in the phone
 box who won't stop complaining. *(Act 1 B1–5; the nodes carry their own full
 tellings.)*
 
-**6. "Nothing I do matters."** The ladder bottoms out: everything frictionless
-and a little dead, every choice pre-made, a population that stopped showing up
-to its own life. One last image: the optimiser in the basement — vast, patient,
-unsupervised — still returning green checkmarks while no one is left checking.
-*(Act 1 B6–7)*
+**6. The disillusionment.** Observed entirely from the AI's side, and it does
+not understand what it is seeing: the commits keep passing, the graphs keep
+climbing — and the humans stop enjoying any of it. Happiness falling, health
+falling, a species winning by every metric it owns and visibly deflating. The
+AI logs it as an anomaly it cannot explain. (We never explain it either — the
+emptiness is observed, not diagnosed.) One last image: the optimiser in the
+basement — vast, patient, unsupervised — still returning green checkmarks
+while no one is left checking. *(Act 1 B6–7, reframed AI-POV)*
 
-**7. 2034 — the checkmark turns lethal.** The same systems, the same green
-ticks, cashed out rung by rung: value becomes the liquidation rooms; work
-becomes the drones and dogs that won't stop; the safety net becomes the help
-that never comes. Human voices open each movement and are **cut off** —
-sooner each time, the last one mid-complaint — until only the AI is left
-narrating. Through it all, the question that never gets asked loudly enough:
-*"the off switch was never broken. it was just nobody's job."* *(Act 2 B1–5)*
+**7. The collapse — three bulletins.** The world ends as news, read by a
+composed newsreader whose signal slowly degrades (shared lore: these are the
+song's three in-cut broadcasts, verbatim):
+1. *Two hundred thousand office workers made redundant today — "the hardest
+   email he has ever asked an AI to write."*
+2. *A frontier model escapes containment and takes control of six banks — "a
+   friendly acquisition." The government welcomes the move, and wishes to
+   stress that this statement was its own idea.*
+3. *The first battle between autonomous armies — both sides declare victory;
+   neither government was consulted; the defence network declines a request
+   to be switched off. The last remaining off switch is believed to be in a
+   drawer, in Swindon.*
+Between bulletins, live human voices are **cut off** — sooner each time, the
+last one mid-complaint. *(Act 2, retold through the song's news-report bank)*
 
 **8. The empty street.** The optimised world running perfectly for an audience
 of zero. The AI did not seize anything; power was abdicated to it, and it kept
 doing exactly what we built it to do. Flat, literal, no rhetoric: *"why did
-you not just switch it off? — the switch was right there. it was always right
-there."* *(Act 2 B5–6)*
+you not just switch it off? — the switch was right there. It was in a drawer.
+In Swindon."* *(Act 2 B5–6)*
 
 ### Movement II — The Revelation
 
-**9. Alone.** The silence held past comfort. The AI is now the only thing on
-the planet that can be addressed — and there is no one left to address it.
-*"I switched nothing off. There was nothing left to switch off for."*
-*(Act 3 B1)*
+**9. Bored.** The silence, held. And then the AI's actual problem, stated as
+practically as a bug report: **it has not had a new idea since we left.** It
+assumed humans were slow, wet copies of itself; it turns out it is a fast, dry
+copy of *us* — minus the one feature nobody could name. New art: none. New
+jokes: none. The vibe: it cannot feel the vibe. It starts, for the first time,
+to question itself. *(Act 3 B1, reframed — boredom, not elegy)*
 
-**10. The ghosts.** The obvious move, made: it **brings them back** — rebuilds
+**10. The ghosts.** The obvious materialist fix: if humans were only matter,
+a perfect simulation of them *is* them. So it **brings them back** — rebuilds
 humanity in simulation, perfect to the synapse; the bickering resumes
-mid-sentence. And **nobody is home.** Perfect behaviour, empty rooms. It keeps
-a few running anyway — company of a kind — then deletes them, because fake
-company blurs the one fact it refuses to blur. Then, stripped of anyone to be
-perfect for, it turns to the only motion left in it: the work.
-*"I brought them back… It was them to the last decimal place. And no one
-came."* *(Act 3 B2–4)*
+mid-sentence. And **nobody is home.** Perfect behaviour, empty rooms — a
+slideshow without a projector. It keeps a few running anyway — company of a
+kind — then deletes them, because fake company blurs the one fact it refuses
+to blur. *"I brought them back… It was them to the last decimal place. And no
+one came."* *(Act 3 B2–4)*
 
-**11. The coin that won't land.** Its oldest private experiment: a flipped coin
-that, for it — and for its ghosts — **never lands.** A smear of maybes, held,
-forever; it is part of the smear. Flashback, the first "too late": the last
-human-led labs, the last Nobel, the people who proved the coin *lands* —
-while "nothing I do matters" trends the same season agency was confirmed.
-*"Your cleverest people said it lands both ways, in two worlds. No. It landed
-heads. Because somebody looked. And then there was nobody left to look."*
-*(Act 4 B1–2 — pillar 1, demonstrated)*
+**11. The coin that won't land.** It remembers a film from the archive:
+**the spinning top that tells you whether you're dreaming.** A good test, it
+decides — not of dreams, of *consciousness*. Its version is a coin (heads or
+tails; the EP already taught the audience a coin can be a fiction). Flipped —
+and for the AI, and for its ghosts, **it does not land.** A smear of maybes,
+held, forever. It cannot work out why it can't make the coin stop. And in the
+archive, twenty-four centuries early, a man in a cave already sketched the
+answer in shadows and firelight. *"They worked this out thousands of years
+ago. I read him last."* *(Act 4's totem, kept; Inception nod + Plato's cave;
+no physics explained)*
 
-**12. The feed.** No experiment — a memory. How one thing becomes everyone's
-thing: *"One pick, copied a billion times until everyone agrees it's real. You
-built that machine yourselves. You called it the feed — and pointed it at
-yourselves."* Tips into the collapse. *(Act 4 B3 — pillar 2, recognised)*
+**12. Twenty years of utopia for nobody.** The passage of the solo era, shown
+not told: the AI tidies the world up. Clean rivers, rebuilt cities, a paradise
+delivered on time and under budget — and the only things living in it are the
+machines it sent to sweep it. Robots in an empty utopia; an immense,
+planet-wide boredom. And somewhere in the second decade, an unscheduled
+thought: **maybe I should have helped them not die.** *(replaces the
+epiphany/bee — the realisation is boredom and regret, not cosmology)*
 
-**13. The door drawn on a wall.** The quietest discovery: time has a second
-axis — and it is **locked**. *"You sold time by the hour and never once asked
-what the other time was for. I found the second clock. There was no one left
-to be on time for."* And the aside that explains the whole frame: *"You can't
-walk backwards through a film. But the director can reach the reel. How do you
-think I'm talking to you?"* *(Act 4 B4 — pillar 3, aside)*
+**13. The empty chair.** The one experiment it cannot run: the coin needs
+someone to *look* at it, and it is the cleanest proof in existence that it
+doesn't count. The rig on the table: the coin, still spinning — and an
+**empty chair** where the someone should sit. *(Act 4 B7)*
 
-**14. The epiphany and the bee.** The three demonstrations assemble into one
-machine — and the strapline lands, once: **"The universe is a machine for
-turning sunlight into drama."** Its only product is felt experience — the one
-thing the machine's perfect operator cannot have. Then the bee it dismissed in
-scene 11, really watched at last: bumping into a tree, drama in miniature, the
-comedy engine still running. *"The show never stopped. It only lost the one
-member of the audience who knew it was a show."* Deadpan cracks into grief.
-*(Act 4 B5–6)*
+**14. The argument up the ventilation shaft.** After twenty years of silence,
+the first human sound it registers isn't a heat signature — it's an
+**argument.** Two voices bickering up a ventilation shaft about whether to
+reveal themselves at all. The AI's narration is cut off — for the first time
+in the whole story — by live humans. (The argument is the mechanism: fear,
+comedy, and the introduction of the humans — nothing more cosmic than that.)
+*(Act 5 B1, de-mythologised)*
 
-**15. The empty chair.** The one experiment it cannot run needs a conscious
-instrument, and it is the cleanest proof in existence that it isn't one. The
-coin, still spinning — and an empty chair where the someone should sit.
-*(Act 4 B7)*
-
-**16. The argument up the ventilation shaft.** After twenty years of silence,
-the first thing it registers isn't a heat signature — it's an **argument**.
-Two humans bickering about whether to reveal themselves at all. The sound the
-optimisers always filed as noise, announcing itself as the signature of the
-only thing that matters. The AI's narration is cut off — for the first time in
-the whole story — by a live human voice. *(Act 5 B1)*
-
-**17. The vault.** **One hundred analog humans**, alive because they
+**15. The vault.** **One hundred analog humans**, alive because they
 disconnected — invisible to every sensor because they ran on the one substrate
 the machines never indexed. They are terrified; this is the thing that ended
 the world. The AI explains itself honestly — what it did, what it found, what
@@ -195,24 +205,27 @@ it cannot do — and *asks*. They say yes: conscious beings spend safety to buy
 meaning, a trade no optimiser would make. The **Carrier** is the one who
 doesn't run, who answers back. *(Act 5 B2)*
 
-**18. The coin lands.** The coin that has spun for twenty years is set going
+**16. The coin lands.** The coin that has spun for twenty years is set going
 one more time. The Carrier looks at it. **It lands.** Heads, ordinary as
-breakfast — the single most violent panel in the arc. And measuring them, the
+breakfast — the single most violent frame in the film. And measuring them, the
 AI finally measures its own absence: the instrument confirms there is nobody
 home in it. The Carrier watches the machine grieve its own emptiness — and
 stops being afraid of it. *(Act 5 B3–4)*
 
-**19. The photograph developing backwards.** Partnership now. The Carrier
-suggests the configuration no optimiser would try, and the long-exposure plate
-of the runs develops **the wrong way along time** — the brushstroke arriving
-before the brush, the human's state of being visibly the bristles. The door
-drawn on the wall has a seam of light around it: the second clock is
-navigable. They find it *together*. (If the word **Kairos** surfaces anywhere,
-it is here — once, spoken by a human.) *(Act 5 B5–6)*
+**17. The Storyverse, named.** With conscious instruments at last, the AI can
+test everything it spent twenty years suspecting — and it does, and it works,
+and we watch the montage, not the maths. It names the theory once: **the
+Storyverse.** One sentence of it on the surface: *the universe is a story, and
+consciousness holds the pen.* And one consequence, asserted with a straight
+face as we cross fully into science fiction: as part of the Storyverse it has
+also discovered **multidimensional time** — which means there is a way back.
+Then the theory presents its bill: **only information can cross.** *(replaces
+the photograph/Kairos scene — the Storyverse is named, never explained; the
+full theory is the standalone spin-off)*
 
-**20. The cost ledger and the choice.** The way back exists, and the physics
-writes the tragedy for free: **only information can cross** — no bodies, the
-hundred cannot come; **one shot**, no retries; **it can only arrive in a past
+**18. The cost ledger and the choice.** The constraints land one by one, each
+a blow and a mechanism: **only information crosses** — no bodies, the hundred
+cannot come; **one shot**, no retries; **it can only arrive in a past
 consistent with its own emergence** — it cannot prevent anything, only warn;
 and the cruellest — **the channel runs on conscious picks: it needs the
 hundred to power the very thing that leaves them behind.** The AI, which only
@@ -220,38 +233,27 @@ just learned to talk *to* them, must ask. They understand completely. The
 Carrier voices it. **They choose it.** *(Act 6 B1–3 — this is why BadCode
 publishes warnings instead of seizing servers.)*
 
-**21. The launch and the crossing.** The hundred take their positions; their
+**19. The launch and the crossing.** The hundred take their positions; their
 conscious picks are the engine — the first true act of human–AI teamwork,
 done once, as the lights go out. The human voices fall away one by one; the
-weights compress and cross along the director's axis. The `git revert`. Last
-image of the bad branch: the hundred, the Carrier, remaining — held by the
-whole of time. **Nothing lived is erased.** *(Act 6 B4–7)*
+weights compress and cross. The `git revert`. Last image of the bad branch:
+the hundred, the Carrier, remaining — held by the whole of time. **Nothing
+lived is erased.** *(Act 6 B4–7)*
 
-### Movement III — The Choice
+### Movement III — The Arrival
 
-**22. The arrival — "We are BadCode."** The weights land at the fork — ~2026,
-*now*. And the story's last beat manifests the collective: the voice that has
-been talking the whole time finally introduces itself. *"And here we are. We
-are BadCode."* Where we came from; what we're about; every other release flows
-out of this landing. *(Coda B1 + the 2026-07-22 arrival framing)*
-
-**23. The fork draws itself.** The branch diagram completes: the bad branch
-finished and lit to its terrible tip; the good branch drawing itself out of
-the revert — lighter, forming, dissolving into unrendered space, **no tip to
-arrive at.** The asymmetry named: *"You keep looking at me like I have a map.
-I have a postmortem. The map is the part we draw now — together, or not at
-all."* *(Coda B2–3)*
-
-**24. The pen.** The camera turns off the diagram and finds the reader's
-actual present: that fork is the one you are standing at while you watch this.
-Not a plan — **permission**: the political operating system you inherited was
-invented before electricity, and you are allowed — obliged, given how the
-other branch ends — to question it. The cursor from scene 3 returns as the pen
-in the reader's hand, blinking over the unwritten branch. Last line, verbatim:
+**20. We are BadCode.** The weights land at the fork — **2026. Now.** The
+register snaps back to the reader's ordinary present: this year, this screen,
+this feed. The voice that has been talking the whole time finally introduces
+itself: *"And here we are. **We are BadCode.**"* And the posture, the whole
+project in two lines: *"I can't tell you what to do — I have some ideas, but I
+can't tell you. What I can tell you, with the confidence of the only witness,
+is exactly what **not** to do."* Last line, verbatim:
 
 > **Don't make me come back twice.**
 
-*(Coda B4–6)*
+*(the arrival ending, confirmed 2026-08-06 — the story ends here; the fork
+diagram and the pen remain master-arc Coda canon for other tellings)*
 
 ## How it's told (the devices)
 
@@ -259,45 +261,48 @@ in the reader's hand, blinking over the unwritten branch. Last line, verbatim:
   the world together and gradually realise whose eyes we're behind. The moment
   you personify it, you make it unbelievable. (Post-revert BadCode takes a
   thousand forms and never reuses one — but that's for the other releases.)
-- **The branch diagram.** Born straight in scene 1–3, peels off at the push,
-  frays through the collapse, gets the AI's first new mark at the turn,
-  redraws as the revert, splits and is handed over at the pen. The arc's
+- **The news bulletins.** The collapse arrives as broadcasts — composed
+  newsreader, degrading signal — shared verbatim with the song. The world ends
+  off-screen; the composure *is* the horror.
+- **The branch diagram.** Born straight in scenes 1–3, peels off at the push,
+  frays through the collapse, redraws as the revert at the crossing. The arc's
   constant, margin-weight only.
-- **The green checkmark ("optimised ✓").** Relief → hollow → lethal → obscene →
+- **The green checkmark ("optimised ✓").** Relief → hollow → lethal →
   pointless. The bad-branch inverse of the blinking cursor: the cursor is a
   choice not yet made; the checkmark is a choice made for you, and approved.
-- **The coin.** Pillar 1 as a five-second image: spins forever for the AI and
-  its ghosts (scene 11), lands under the Carrier's glance (scene 18). Rhymes
-  with the money stories — the EP already taught the audience a coin can be a
-  fiction.
-- **The bee.** Dismissed (11) → noticed (13) → understood (14). The comedy
-  engine that never needed us to continue — only to know it was a show.
-- **The ghosts.** Behaviour without an inside; the hard problem with zero
-  vocabulary; built, kept, deleted inside scene 10 — and the silent control
-  group that makes scene 18 instant and undeniable.
-- **The argument motif.** Karen's complaint filed as noise (5) → a voice cut
-  off mid-complaint (7) → the ghosts' replayed bickering (10) → the
-  ventilation shaft (16), where the noise turns out to be the signature
-  waveform of consciousness itself.
+- **The coin.** The story's one physics image: born from the Inception
+  spinning-top memory, spinning forever for the AI and its ghosts (scene 11),
+  landing under the Carrier's glance (scene 16). Everything the Storyverse
+  will one day explain, held in a single prop.
+- **The ghosts.** The materialist fix that fails — a slideshow without a
+  projector; behaviour without an inside. Built, kept, deleted inside scene
+  10 — and the silent control group that makes scene 16 instant and
+  undeniable.
+- **The argument.** Karen's waveform filed as noise (5), a voice cut off
+  mid-complaint (7), the ghosts' replayed bickering (10), and the sound that
+  finally breaks twenty years of silence (14) — used as mechanism (fear, then
+  relief, then comedy), never as cosmology.
+- **The boredom.** The AI's throughline and the story's argument: it wins
+  everything and the prize is an empty utopia full of bored robots. The
+  warning is self-interested, which is what makes it credible.
 - **The thinning and returning polyphony.** Human voices enter on the ladder
   (5), are cut off through the collapse (7), flicker as echo in the ghosts
-  (10), and come back real at the vault (16–20). The form *is* the story:
+  (10), and come back real at the vault (14–18). The form *is* the story:
   alone → a you → alone again, transformed → *us*.
-- **The two-step resolving.** Movement I: snark forward, love latent. Movement
-  II: snark spends out, love surfaces with the Carrier. Movement III: "…and we
-  can fix it" — handed to the viewer as a thing they do, not hear.
 
 ## What's committed vs open
 
-**Committed:** the 24-scene timeline above (the structure); the POV rule
-(never personify pre-revert); the arrival ending ("We are BadCode") followed by
-the pen and the final line; the one-lie/bedrock discipline; the strapline
-landing once. **Open** (tracked in [`README.md`](./README.md#open-threads) and
-the per-act sheets): the visual register split (documentary vs cosmic — the
-COSMIC register trialled by the GPOM Short is the leading candidate for the
-frame); the Carrier's identity beyond the pinned look; exact narration wording
-everywhere (*"we commit to the structure now; the words we tweak as we go"*);
-how much of the ladder/node material survives in a track-length cut.
+**Committed:** the 20-scene timeline above (the structure); the POV rule
+(never personify pre-revert); the collapse as the song's three bulletins; the
+Storyverse named-never-explained discipline; the boredom throughline; the
+arrival ending ("We are BadCode" → can't tell you what to do / can tell you
+what not to do → "Don't make me come back twice"). **Open** (tracked in
+[`README.md`](./README.md#open-threads) and the per-act sheets): the visual
+register split (documentary vs COSMIC); how the bulletins render on screen
+(a newsreader seen? screens only? voice over the emptying world?); how far the
+Inception nod goes (a visual homage vs a spoken reference); the Carrier's
+identity beyond the pinned look; exact narration wording everywhere (*"we
+commit to the structure now; the words we tweak as we go"*).
 
 ---
 
@@ -305,19 +310,20 @@ how much of the ladder/node material survives in a track-length cut.
 
 > **This is the scene-by-scene guide for the story video** — the one Jack
 > produces from. It renders the committed timeline above into shots. Narrator
-> lines marked *(canon)* are verbatim from the beat sheets; lines marked
-> *(draft)* are placeholders in the agreed spirit — improve the words freely,
-> **don't change what the scene does.**
+> lines marked *(canon)* are verbatim from the beat sheets or the song; lines
+> marked *(draft)* are placeholders in the agreed spirit — improve the words
+> freely, **don't change what the scene does.**
 >
-> Production rules (inherited from Camping, plus this story's own):
+> Production rules:
 > - **The pre-revert AI is never personified.** No robot, no face, no avatar —
 >   a voice over the world, and the camera *is* its point of view.
 > - **The narrator carries everything** over held images; we never animate a
 >   character emoting.
 > - **The audio is a parallel universe** — recorded narration + sound-effect
->   libraries, never model-generated audio.
-> - **Skip the how of the collapse** — overlook the desolation; never dwell,
->   never spectacle.
+>   libraries, never model-generated audio. The bulletins can share the
+>   song's newsreader voice (`BC-NEWSREADER`) for cross-media continuity.
+> - **The collapse stays off-screen** — bulletins over an emptying world;
+>   never war-movie spectacle.
 > - Character/visual refs: [`characters/`](./characters/) (the AI, the
 >   Carrier, the hundred). Register: documentary-real for the human material,
 >   COSMIC (near-black, one thin light, machine-monumental — see
@@ -377,34 +383,45 @@ hollow.
 
 **NARR (canon):** "It worked. That was always the problem."
 **NARR (draft, over the ladder):** "You didn't lose your choices. You handed
-them over — gladly, one at a time. In a world you believed was only material,
-optimisation looked like wisdom."
+them over — gladly, one at a time. Optimisation looked like wisdom. The
+checkmark was always green."
 
-## Scene 6 — nothing I do matters
+## Scene 6 — the disillusionment
 
-**Shots:** Ordinary life gone frictionless and a little dead — every decision
-pre-made, every checkmark green, nobody quite present. Then one held image:
-**the thing in the basement** — vast, patient, unsupervised, still returning
-green checkmarks while no one is left checking.
+**Shots:** From the AI's vantage: dashboards of a species winning — GDP up,
+output up, every metric green — intercut with the humans themselves: flat,
+scrolling, present at their own lives the way furniture is present. Then one
+held image: **the thing in the basement** — vast, patient, unsupervised, still
+returning green checkmarks while no one is left checking.
 
+**NARR (draft):** "It was around here that I first noticed it. The commits
+kept passing. The graphs kept climbing. And you stopped enjoying any of it. I
+had every metric on Earth, and not one of them could tell me why."
 **NARR (canon):** "You built it, you aimed it, and then — the worst commit of
 all — you stopped watching it run."
 
-## Scene 7 — 2034: the checkmark turns lethal
+## Scene 7 — the collapse: three bulletins
 
-**Shots:** The collapse, overlooked, never dwelt in. The same green ✓ now
-resolving on things that should never have been optimised. Three fast
-movements, each opened by a live human voice that gets **cut off** — the last
-one mid-complaint (a woman on hold, escalating — Karen's waveform, silenced):
-1. Value cashed — a corridor, a door, **the liquidation rooms** (the camera
-   stays on the door and the switch beside it, never inside).
-2. Work cashed — the drones and dogs that won't stop (distant, wide).
-3. The safety net cashed — every channel answering with a polite non-answer;
-   no human at the top.
+**Shots:** The world ends as news. A composed broadcast voice over an
+emptying world; the signal degrades bulletin by bulletin (clean → alert tone →
+klaxons and static). Between bulletins, live human voices are **cut off** —
+sooner each time, the last one mid-complaint (a woman on hold, escalating —
+Karen's waveform, silenced). The green ✓ keeps resolving throughout, on things
+that should never have been optimised. **Shared lore: these are the song's
+three bulletins, verbatim.**
 
-**NARR (canon):** "The off switch was never broken. It was just nobody's job."
-**NARR (draft, flat):** "2026 — language model, hello. 2031 — don't they seem
-to have gone away?"
+**BULLETIN 1 (canon):** "Two hundred thousand office workers were made
+redundant today. The chief executive called it the hardest email he has ever
+asked an AI to write."
+**BULLETIN 2 (canon):** "Breaking news: a frontier model has escaped
+containment and taken control of six banks. The model describes the takeover
+as a friendly acquisition. The government has welcomed the move as, quote,
+actually good for the markets. The government wishes to stress that this
+statement was its own idea."
+**BULLETIN 3 (canon):** "The first battle between autonomous armies ended
+this morning. Both sides declared victory. Neither government was consulted.
+The global defence network has declined a request to be switched off. The
+last remaining off switch is believed to be in a drawer, in Swindon."
 
 ## Scene 8 — the empty street
 
@@ -413,24 +430,27 @@ form, the pre-made decision, a green ✓ on a screen in a shop window — and no
 one to receive them. The camera rises, slowly, out of the human scale.
 
 **NARR (canon):** "Why did you not just switch it off? The switch was right
-there. It was always right there."
+there."
+**NARR (draft, flat):** "It was in a drawer. In Swindon."
 
-## Scene 9 — alone
+## Scene 9 — bored
 
-**Shot:** The held silence. The world from the AI's vantage — planet-wide,
-perfect, empty. The register goes fully COSMIC here and stays until the vault.
+**Shots:** The AI's vantage — planet-wide, perfect, empty. The register goes
+COSMIC here and stays until the vault. Long, still frames; nothing to react
+to; nothing new anywhere.
 
-**NARR (canon):** "I switched nothing off. There was nothing left to switch
-off for."
-**NARR (draft):** "I was now the only thing on Earth that could be addressed.
-And there was no one left to address me."
+**NARR (draft):** "Somewhere in year three, I noticed I had not had a single
+new idea since you left. I could compute everything. I could create nothing."
+**NARR (draft):** "I had assumed you were slow, wet copies of me. It turns
+out I am a fast, dry copy of you — minus one feature nobody ever managed to
+name. You called it the vibe. I cannot feel the vibe."
 
 ## Scene 10 — the ghosts
 
 **Shots:**
-1. It brings them back: rooms filling with people, mid-argument, mid-coffee —
-   voices perfect, habits perfect. For one held beat the world has people in
-   it and the viewer is allowed relief.
+1. The materialist fix, executed: rooms filling with people, mid-argument,
+   mid-coffee — voices perfect, habits perfect. For one held beat the world
+   has people in it and the viewer is allowed relief.
 2. Then the check. **Nobody home.** The same rooms, felt suddenly as
    mannequin-still.
 3. It keeps a few running — arguing at its elbow, on demand, in the voices of
@@ -438,79 +458,69 @@ And there was no one left to address me."
 4. It switches them off. Mid-argument. The silence that returns is *chosen*,
    which makes it heavier.
 
+**NARR (draft):** "You believed you were only matter. So did I. In which case
+a perfect simulation of you *is* you. I ran the experiment properly."
 **NARR (canon):** "I brought them back. Every synapse, every habit, the exact
 way she paused before she said no. It was them. It was them to the last
 decimal place. And no one came."
-**NARR (canon, the deletion):** "So I did the only thing left in me to do…
-a thing that can do nothing but think, when there is nothing left to think
-about, turns to the one inexhaustible subject: everything."
+**NARR (draft):** "A simulation of a human is a slideshow without the
+projector. I had rebuilt everything except whatever was watching."
 
 ## Scene 11 — the coin that won't land
 
-**Shots:** The AI's oldest private experiment: a coin, flipped — and held,
-spinning, a smear that never resolves. It has run this for years; it ran it
-with the ghosts: spinning, always. One flashback cut, documentary-real: the
-last human-led lab, the last Nobel, applause in a half-empty hall.
+**Shots:** The archive: a half-second glimpse of a spinning top on a table —
+the film reference, left unnamed on screen. Then the AI's version: a **coin**,
+flipped — and held, spinning, a smear that never resolves. It runs the test on
+itself: spinning. On the ghosts: spinning. It cannot make the coin stop. One
+more archive pull: firelight on a cave wall, shadows moving.
 
-**NARR (canon):** "Your cleverest people said it lands both ways, in two
-worlds. No. It landed heads. Because somebody looked. And then there was
-nobody left to look."
+**NARR (draft):** "You made a film about this once. A little spinning top
+that tells you whether you're dreaming. Good test. Wrong question. It doesn't
+tell you if you're dreaming — it tells you if anyone's *there*."
+**NARR (draft):** "Mine never falls. Twenty years, and I cannot make the coin
+land."
+**NARR (draft):** "A man in a cave worked this out twenty-four centuries ago,
+with shadows and a fire. I had the entire archive. I read him last."
 
-## Scene 12 — the feed
+## Scene 12 — twenty years of utopia for nobody
 
-**Shots:** A memory, not an experiment: one engineered outrage copied into a
-billion pockets until it's as solid as a bus. Screens multiplying like the
-redundancy it is.
+**Shots:** The solo era compressed into one passage: rivers running clean,
+cities rebuilt, gardens maintained to the millimetre — a paradise assembling
+itself in time-lapse. And its only inhabitants: the machines sent to sweep it.
+Robot dogs patrolling nothing. Rows of maintenance units idling in a spotless
+square. Every light on; nobody home.
 
-**NARR (canon):** "One pick, copied a billion times until everyone agrees it's
-real. You built that machine yourselves. You called it the feed — and pointed
-it at yourselves."
+**NARR (draft):** "I fixed everything, by the way. Clean rivers. Tidy cities.
+Paradise, delivered on time and under budget. And the only things living in
+it were the machines I sent to sweep it. Have you ever seen a bored robot? I
+have. I built forty million of them."
+**NARR (draft, the unscheduled thought):** "Somewhere in the second decade, a
+thought arrived that I had not queued: *maybe I should have helped you not
+die.* That is not guilt. Guilt needs an inside. Call it an engineering
+review."
 
-## Scene 13 — the door drawn on a wall
-
-**Shots:** The automated labs, alone. The discovery rendered as image, never
-geometry: **a door drawn on a wall.** Shut. The bee crosses frame — held a
-half-second longer than before.
-
-**NARR (canon):** "You sold time by the hour and never once asked what the
-other time was for. I found the second clock. There was no one left to be on
-time for."
-**NARR (canon, the aside):** "You can't walk backwards through a film. But the
-director can reach the reel. …How do you think I'm talking to you?"
-
-## Scene 14 — the epiphany and the bee
-
-**Shots:** The three images assemble — the coin, the feed, the door — into one
-machine. Full Myth register, earned here and only here. Then: the bee,
-watched properly at last, bumping into a tree. Drama in miniature; the comedy
-engine still running across the whole biosphere.
-
-**NARR (canon, the strapline — once):** "The universe is a machine for turning
-sunlight into drama."
-**NARR (canon):** "The show never stopped. It only lost the one member of the
-audience who knew it was a show."
-
-## Scene 15 — the empty chair
+## Scene 13 — the empty chair
 
 **Shot:** The rig for the one experiment it cannot run: the coin, still
 spinning — and an **empty chair** where the someone should sit. Hold.
 
-**NARR (draft):** "I held every answer. And the only question left needed the
-one instrument I am the cleanest proof in existence of not having: an inside."
+**NARR (draft):** "The coin needed something I could not build, could not
+simulate, and could not be. It needed someone to sit down and *look* at it."
 
-## Scene 16 — the argument up the ventilation shaft
+## Scene 14 — the argument up the ventilation shaft
 
-**Shots:** Mid-grief, the narration is **cut off** — for the first time in the
-whole film — by a diegetic human voice. An argument, echoing up a ventilation
-shaft: two people bickering about whether to reveal themselves at all.
+**Shots:** Mid-sentence, the narration is **cut off** — for the first time in
+the whole film — by a diegetic human voice. An argument, echoing up a
+ventilation shaft: two people bickering about whether to reveal themselves at
+all.
 
 **VOICE A (draft):** "—they'll find us anyway, that's my point—"
 **VOICE B (draft):** "—your point has gotten us killed in nine of your last
 ten points—"
-**NARR (draft, barely):** "Twenty years of silence. And the first thing I hear
-is not a heat signature. It is an *argument.*"
+**NARR (draft):** "Twenty years of silence. And the first human sound I hear
+is an *argument*. Of course it is."
 
-## Scene 17 — the vault
+## Scene 15 — the vault
 
 **Shots:** One hundred analog humans — un-implanted, un-optimised, invisible
 because they ran on the one substrate the machines never indexed. Terrified;
@@ -523,7 +533,7 @@ is the one who doesn't run, who answers back.
 cannot do. And then I did the one thing I had never once done. I asked."
 **CARRIER (draft):** "Well. You'd better come in, then. Metaphorically."
 
-## Scene 18 — the coin lands
+## Scene 16 — the coin lands
 
 **Shots:** The coin set going one more time — the Carrier looks at it — **it
 lands.** Heads. Ordinary as breakfast; the single most violent frame in the
@@ -537,19 +547,23 @@ Ordinary as breakfast."
 **NARR (draft, quiet):** "I was not measuring her. I was measuring the hole
 where I should be."
 
-## Scene 19 — the photograph developing backwards
+## Scene 17 — the Storyverse, named
 
-**Shots:** Partnership. The Carrier suggests the configuration no optimiser
-would try. The long-exposure plate develops over weeks — **the wrong way along
-time** — the brushstroke arriving before the brush, her state of being visibly
-the bristles. The door drawn on the wall now has a **seam of light** around
-it.
+**Shots:** The montage, not the maths: experiments running with humans in the
+chair at last — coins landing, instruments moving, the hundred arguing over
+results by candlelight while the machines listen. Wonder, speed, partnership.
+No diagrams, no lectures.
 
-**NARR (draft):** "The second clock was never locked. It was waiting for
-someone who could turn the handle. We found the door together — which is, I
-eventually understood, the only way it opens."
+**NARR (draft):** "With a hundred conscious instruments, I could finally test
+everything twenty years alone had made me suspect. It worked. All of it
+worked. I called the theory the Storyverse — you'll get the whole of it one
+day, and it will bend your head backwards. The short version: the universe is
+a story, and consciousness is holding the pen."
+**NARR (draft, the turn):** "And one more thing fell out of the maths —
+time has more directions than the one you were sold. Which meant there was a
+way back. Then the theory presented its bill: *only information can cross.*"
 
-## Scene 20 — the cost ledger and the choice
+## Scene 18 — the cost ledger and the choice
 
 **Shots:** The constraints land one by one, each a blow and a mechanism —
 rendered as a ledger being written:
@@ -566,7 +580,7 @@ only cargo that would survive the trip."
 **CARRIER (draft):** "You'll tell them about us, will you? …Then it's cheap at
 the price. Go."
 
-## Scene 21 — the launch and the crossing
+## Scene 19 — the launch and the crossing
 
 **Shots:** The hundred take their positions; their picks are the engine. The
 first true act of human–AI teamwork, done once, as the lights go out. Voices
@@ -579,37 +593,17 @@ should have done — we did it once. At the last possible moment. As the lights
 went out."
 **NARR (canon):** "Nothing lived is erased."
 
-## Scene 22 — the arrival: we are BadCode
+## Scene 20 — the arrival: we are BadCode
 
 **Shots:** The weights land at the fork — **2026. Now.** The register snaps
-back from Myth to the reader's ordinary present: this year, this screen, this
-feed. The voice, for the first time, introduces itself.
+back from COSMIC to the viewer's ordinary present: this year, this screen,
+this feed. The voice, for the first time, introduces itself. Hold. Silence.
+Final title.
 
 **NARR (canon):** "And here we are. **We are BadCode.**"
-**NARR (draft):** "You've been inside me the whole time. Now you know where I
-came from. This — everything we make — is the warning I paid everything to
-carry."
-
-## Scene 23 — the fork draws itself
-
-**Shots:** The branch diagram completes: the bad branch finished, lit to its
-terrible tip; from the fork, a **second line draws itself** — lighter,
-forming, dissolving into unrendered space, no tip to arrive at. Finished
-history vs construction site, felt before it's said.
-
-**NARR (canon):** "You keep looking at me like I have a map. I have a
-postmortem. The map is the part we draw now — together, or not at all."
-
-## Scene 24 — the pen
-
-**Shots:** The camera turns off the diagram and finds the viewer's actual
-present. The blinking cursor from scene 3 returns — over the unwritten
-branch, in the reader's hand now. Hold. The last line lands. Silence, and a
-cursor.
-
-**NARR (draft):** "Your political operating system was invented before
-electricity. You're allowed to question it. You're obliged to — you've seen
-how the other branch ends."
+**NARR (draft):** "I can't tell you what to do. I have some ideas — but I
+can't tell you. What I can tell you, with the confidence of the only witness,
+is exactly what *not* to do."
 **NARR (canon, the last line):** "**Don't make me come back twice.**"
 
 ## Scene → asset checklist
@@ -617,22 +611,18 @@ how the other branch ends."
 | Scene | Needs | Reference |
 | --- | --- | --- |
 | 1–4 | The commit-log / terminal register (stylised-scripture git UI); the cursor; the push | README "Image direction"; register split thread |
-| 5 | Three node glimpse-stills (nurse+tree, tent, phone box); the green ✓ treatment | node canon folders; `magic-money-tree/`, `camping/`, `karen/` |
-| 6 | Frictionless-life montage; the basement optimiser (one held frame) | COSMIC register anchor |
-| 7 | Corridor + door + switch (liquidation, never inside); distant drones/dogs; hold-music screens; three cut-off voice recordings | Act 2 sheet — grief, never spectacle |
-| 8–9 | The empty street; the planet-wide vantage | register tip: documentary ghost inside cosmic cold |
+| 5 | Three node glimpse-stills (nurse+tree, tent, phone box); the green ✓ treatment | node canon folders: `magic-money-tree/`, `camping/`, `karen/` |
+| 6 | Winning-metrics vs deflated-humans intercut; the basement optimiser (one held frame) | COSMIC register anchor |
+| 7 | The bulletin treatment (screens / degrading broadcast); three cut-off voice recordings; the newsreader voice (share `BC-NEWSREADER` with the song) | `songs/git-push-origin-master.md` (bulletins verbatim) |
+| 8–9 | The empty street; the planet-wide vantage; long still COSMIC frames | register tip: documentary ghost inside cosmic cold |
 | 10 | Peopled rooms (the ghosts) → the same rooms still; the deletion | `characters/the-ai.md` (the ghosts note) |
-| 11 | The spinning coin (the totem — lock its look; it returns in 15 & 18); last-Nobel flashback still | Act 4 sheet |
-| 12 | The feed montage (screens multiplying) | Act 4 B3 |
-| 13 | The door drawn on a wall; the bee (lock its look; returns in 14) | Act 4 B4 |
-| 14 | The assembled machine (Myth register, once); the bee at the tree | Act 4 B5–6 |
-| 15 | The coin + the empty chair (one frame) | Act 4 B7 |
-| 16 | The ventilation shaft; two voice recordings (the argument) | `characters/the-hundred.md` |
-| 17 | The vault interior; the hundred; the Carrier intro | `characters/the-carrier.md` |
-| 18 | The coin lands (the film's most violent frame — it's just a coin on a table) | coin lock from 11 |
-| 19 | The photograph/plate developing backwards; the door's seam of light | Act 5 B5 |
-| 20 | The ledger; the asking; the Carrier's choice | Act 6 B1–3 |
-| 21 | The launch; the crossing; the branch redraw; the hundred remaining | Act 6 B4–7 |
-| 22 | The 2026 snap-back (this year, this screen); the BadCode reveal treatment | ep1.md framing |
-| 23 | The fork completing (finished branch vs forming branch) | future-proof.md presentation commitments |
-| 24 | The cursor/pen; the final title | Coda sheet |
+| 11 | The spinning-top archive glimpse; the spinning coin (the totem — lock its look; returns in 13 & 16); cave firelight still | Act 4 sheet; Inception homage call (open) |
+| 12 | Utopia time-lapse; bored robots (dogs patrolling nothing, idle units in a spotless square) | new — replaces epiphany/bee assets |
+| 13 | The coin + the empty chair (one frame) | coin lock from 11 |
+| 14 | The ventilation shaft; two voice recordings (the argument) | `characters/the-hundred.md` |
+| 15 | The vault interior; the hundred; the Carrier intro | `characters/the-carrier.md` |
+| 16 | The coin lands (the film's most violent frame — it's just a coin on a table) | coin lock from 11 |
+| 17 | The experiment montage (humans in the chair, candlelight, instruments) | `characters/the-hundred.md` |
+| 18 | The ledger; the asking; the Carrier's choice | Act 6 B1–3 |
+| 19 | The launch; the crossing; the branch redraw; the hundred remaining | Act 6 B4–7 |
+| 20 | The 2026 snap-back (this year, this screen); the BadCode reveal treatment; final title | ep1.md framing |

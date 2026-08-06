@@ -26,13 +26,14 @@ optimiser would make that trade; the AI starts taking notes immediately.
 
 **Function in the story:**
 
-- **Scene 16:** their bickering up the ventilation shaft is the first human
-  sound in twenty years — the argument motif's payoff: the waveform the
-  optimisers filed as noise is the signature of the only thing that matters.
-- **Scenes 18–19:** the replication set for the coin and the photograph — the
-  proof completed *with* humans, the thing the whole arc says we should have
-  done.
-- **Scenes 20–21:** the knowing sacrifice. They understand completely that
+- **Scene 14:** their bickering up the ventilation shaft is the first human
+  sound in twenty years. The argument is the mechanism — fear, then relief,
+  then comedy — that introduces the humans; it also quietly rhymes with
+  Karen's complaint, filed as noise back on the ladder.
+- **Scenes 16–17:** the replication set for the coin, and the conscious
+  instruments the Storyverse experiments needed — the proof completed *with*
+  humans, the thing the whole arc says we should have done.
+- **Scenes 18–19:** the knowing sacrifice. They understand completely that
   their conscious picks power a launch that saves a timeline they will never
   live in — and they choose it. The first true act of human–AI teamwork
   happens at the last possible moment of the branch that died of not doing it.

@@ -96,9 +96,12 @@ The fastest way to hold all of it: the arc is **three movements**, and they *are
 ## Production tracker
 
 > **The canonical story now exists:** [`story.md`](./story.md) — the single
-> walkable 24-scene timeline distilled from the beat sheets (2026-08-06), with
-> the **scene-by-scene storyboard Jack produces the story video from**.
-> The act sheets below remain the deep canon behind it.
+> walkable 20-scene timeline distilled from the beat sheets (2026-08-06, Kai
+> feedback pass folded in: Storyverse lore compressed to name-only, the
+> collapse told through the song's three bulletins, the story ends at the
+> arrival), with the **scene-by-scene storyboard Jack produces the story
+> video from**. The act sheets below remain the deep canon for the master
+> arc; where they diverge, `story.md` wins for the video.
 
 | Medium | Where | Status |
 | --- | --- | --- |
@@ -311,9 +314,9 @@ step is **Script**, scene by scene, in `story.md`.*
 Everything in `docs/stories/gitpush-origin-master/` is this story:
 
 - **README.md** (this file) — the backbone: orientation, tracker, act sequence.
-- [`story.md`](./story.md) — **the canonical story**: the 24-scene timeline +
+- [`story.md`](./story.md) — **the canonical story**: the 20-scene timeline +
   the scene-by-scene storyboard for the video (distilled from the beat sheets,
-  2026-08-06).
+  2026-08-06; Storyverse compressed per the same-day feedback pass).
 - [`characters/`](./characters/) — the AI (unpersonified narrator), the
   Carrier, the hundred.
 - [`storyverse.md`](./storyverse.md) — the bad-branch physics, in the narrator's voice (+ receipts / bright line).
