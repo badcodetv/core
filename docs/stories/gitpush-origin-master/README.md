@@ -95,7 +95,23 @@ The fastest way to hold all of it: the arc is **three movements**, and they *are
 
 ## Production tracker
 
-The single source of truth for **where each act stands.** Maturity ladder:
+> **The canonical story now exists:** [`story.md`](./story.md) — the single
+> walkable 24-scene timeline distilled from the beat sheets (2026-08-06), with
+> the **scene-by-scene storyboard Jack produces the story video from**.
+> The act sheets below remain the deep canon behind it.
+
+| Medium | Where | Status |
+| --- | --- | --- |
+| Story spine | [`story.md`](./story.md) | **committed structure** (distilled 2026-08-06; words tweakable) |
+| Storyboard (video) | [`story.md`](./story.md#storyboard--scene-by-scene-video-guide) | drafted from the spine — Jack to produce from |
+| Characters | [`characters/`](./characters/) | the AI (unpersonified), the Carrier, the hundred — no image sheets yet |
+| Song — "git push origin master" | [`songs/git-push-origin-master.md`](./songs/git-push-origin-master.md) | drafting (Kai, separate workstream — not touched by the distillation) |
+| Video | Jack, from the storyboard section of `story.md` | next up |
+| Comic (full arc) | — | not started; the 16-panel **GPOM Short** teaser is live at `/comics/gpom-short` |
+
+### Act maturity
+
+The per-act ladder beneath the spine. Maturity ladder:
 
 - **Spine** — one paragraph in the [act sequence](#the-act-sequence) below.
 - **Beats** — scene-by-scene breakdown (its own section here, or a file in [`../../ideas/stories/`](../../ideas)).
@@ -286,14 +302,20 @@ documentary-real; the frame earns a distinct cosmic register, and the *contrast*
 *The whole arc is **beat-complete end-to-end** — all eight movements at **Beats**. The cross-arc
 cohesion read is recorded in [`stitch-pass.md`](./stitch-pass.md) (checklist, fixes, threads). A
 research-backed **critique pass** (2026-07) then reworked Acts 3–5, the Coda, and the craft rules —
-rationale and change log in [`critique-pass.md`](./critique-pass.md); next maturity step is
-**Beats → Script**.*
+rationale and change log in [`critique-pass.md`](./critique-pass.md). The canonical distillation
+of all of it — spine + video storyboard — is [`story.md`](./story.md) (2026-08-06); next maturity
+step is **Script**, scene by scene, in `story.md`.*
 
 ## The folder
 
 Everything in `docs/stories/gitpush-origin-master/` is this story:
 
 - **README.md** (this file) — the backbone: orientation, tracker, act sequence.
+- [`story.md`](./story.md) — **the canonical story**: the 24-scene timeline +
+  the scene-by-scene storyboard for the video (distilled from the beat sheets,
+  2026-08-06).
+- [`characters/`](./characters/) — the AI (unpersonified narrator), the
+  Carrier, the hundred.
 - [`storyverse.md`](./storyverse.md) — the bad-branch physics, in the narrator's voice (+ receipts / bright line).
 - [`discovery-timeline.md`](./discovery-timeline.md) — how the Storyverse got proven, 2026–2054 (the science behind Acts 3–6).
 - [`future-proof.md`](./future-proof.md) — the good branch, the Coda's destination.
