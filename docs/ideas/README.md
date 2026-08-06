@@ -45,7 +45,7 @@ scannable metadata lives in the table.
 | [Save the… Penguins](save-the-penguins.md) | £1.7bn more for cute things than for humans *(Jack)* | comic | seed |
 | [Stock Market](stock-market.md) | rob the thieves back, short their stock — it's a sting *(Jack)* | comic | seed |
 | [Thou Shall Be Calm](thou-shall-be-calm.md) | the meditation egregore is real; the guru is the problem *(Jack)* | comic | seed |
-| [Dogma](dogma.md) | Galileo then, left-vs-right now — "we voted for him because we hate you" | comic | seed |
+| [Dogma](dogma.md) | Galileo then, left-vs-right now — "we voted for him because we hate you" | comic | **graduated** → [`stories/galileo/`](../stories/galileo/README.md) |
 | [Political Social Network](political-social-network.md) | LLM-sorted "views" — a real cross-section of what everyone thinks | software | seed |
 | [Influence](influence.md) | the influencer's desire to be human has faded; the charade persists | music | seed |
 | [100 (The Hundred Dollar Bill)](hundred-dollar-bill.md) | one note's biography: velocity vs. the vault | comic · music | seed |

@@ -14,4 +14,8 @@ should feed it.
 
 ---
 
+**Graduated 2026-08-06** → [`docs/stories/galileo/`](../stories/galileo/README.md).
+The political strand above (dead churches, dead left-vs-right, *"we voted for him
+because we hate you"*) is beat 7 of the story. Edit the canon, not this file.
+
 *Mined 2026-07-15 from the old Storyteller repo: `storyteller/kai/ideas/dogma.md`.*

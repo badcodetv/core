@@ -208,7 +208,10 @@ Three commitments for presentation:
   Future Proof info-piece**: "the strongest dogma since the one Galileo broke is the one his
   victory built" *is* permission-to-question-a-fossilized-consensus — this epic's exact takeaway,
   aimed at science's stopping point instead of democracy's. Same bright lines apply (point at the
-  commonality, never found a church).
+  commonality, never found a church). **Update 2026-08-06:** the *story* form of this now exists as
+  its own canon — [`docs/stories/galileo/`](../galileo/README.md) — which inherits the bookends'
+  fact-checked do/don'ts verbatim. This thread is now specifically the **straight-register essay**;
+  open question is whether it ships as the click-through companion to that story.
 - **A receipts layer** — the Storyverse's receipts mark where settled science ends and the wager
   begins. Future Proof's would be the inverse, and stronger: the engineering claims (CI at scale,
   testing culture, composition) are *settled fact* — the only open experiment is their application
