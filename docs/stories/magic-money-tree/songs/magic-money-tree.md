@@ -1,18 +1,154 @@
+---
+title: There Is No Magic Money Tree
+status: rework proposed (2026-08-06) — pending Kai/Jack review against the re-founded story
+bpm: 172
+model: v5.5 (cue-heavy lyric sheet — stay on 5.5, see workflow)
+settings: style influence 75, weirdness 60; Cover experiment at audio influence 35–40
+voices: laid-back male London MC — candidate casting = the Tree's register (warm working-class sage); BadCode may take the final line
+---
+
 # There Is No Magic Money Tree (song)
 
-Status (2026-07-22, Kai + Jack session): **Suno takes exist — Jack has a couple of
-variations.** The first take was judged "a bit whack — we can do better." The second
-take is the keeper: *"save it, definitely save it"* — and the instinct in session was
-to **cut it hard right after "There is no magic money tree"** rather than let it run.
-Next step: refine via the `suno-prompt` skill (Suno Studio edit of the saved take,
-not a from-scratch regen).
+**Role in the release (re-founded story, 2026-08-06):** the ending of the YouTube
+video. The video is narration-led; the song enters at the grove reveal and the
+video ends on the track's hard cut — **"There is no magic money tree."** The song
+no longer has to teach the history (the video does that) — it's the recap that
+detonates.
 
-What works about it: the flow, and the register — *"I'm sarcastic and then fuck you."*
-The closing couplet is the thesis and ties straight into the
-[We Can Afford What We Can Create](../../../ideas/we-can-afford-what-we-can-create.md)
-idea: **"The limit's what we make — we can afford what we can create."**
+## Style direction — lighter, rolling, played straight
 
-## The saved take (lyrics as transcribed from session playback — rough, verify against the actual Suno file)
+Kai's steer: **intelligent/liquid drum & bass, not dark jungle.** Existing takes
+(rap D&B, boom-bap, orchestral prog-rock) all read darker/heavier than the
+re-founded story, which is elegiac underneath the sarcasm — a friendship, a
+death, a betrayal. The arrangement warms; the words keep the knife. (Satire
+played straight: the joke stays in the lyrics, never the music.)
+
+Suno craft note: **"liquid" and "intelligent D&B" are exactly the niche
+subgenre names Suno fails on** — so the prompt names the parent genre and then
+*describes* the sound design (rolling breaks, warm subs, Rhodes, pads) instead
+of trusting the label.
+
+**Casting idea (open):** the vocal could *be* the Tree — the canon voice is a
+warm working-class London sage, and the existing lyrics already half-read as
+the tree talking ("Where does it grow? You and me"). If we later build the
+Tree as a saved Voice for the video's dialogue, the same Voice fronts the song
+and story + song lock together.
+
+## Suno prompt (Advanced — paste all four, in order, every round)
+
+**My Taste** (swap in for this track; restore/replace after):
+
+```
+Laid-back male London MC vocals — conversational, half-spoken, warm and unhurried, hardening as the track builds, lifting into a plain-sung hook. Liquid rolling drum & bass: fast rolling breakbeats, deep warm sub bass, Rhodes chords, soft string pads, spacious mix, melancholy warmth, cinematic restraint, UK rap delivery over soulful electronic backing.
+```
+
+**Style:**
+
+```
+Drum and Bass, Liquid at 172 BPM, warm and melancholy. Rolling breakbeat, deep sub bass, lush Rhodes chords and soft string pads. Laid-back male London MC, conversational half-spoken flow that hardens verse by verse, lifting into a plain-sung hook. Dark satire played completely straight, no comedy, no novelty.
+```
+
+**Exclude Styles:**
+
+```
+comedy, novelty, parody, dark techstep, neurofunk growl bass, aggressive jump up, screamo, shouting, orchestral, prog rock, boom bap, trap hats, EDM festival drop, harsh distortion, gothic choir, ad-libs, whoop, autotune, lo-fi
+```
+
+**Settings:** style influence **75**, weirdness **60**. For the Cover experiment
+below, audio influence **35–40**.
+
+## Workflow — two experiments, cheapest first
+
+1. **Cover the saved take into the new register.** Jack's keeper take → Remix →
+   Cover with the Style/Exclude above, weirdness 0, audio influence ~35–40.
+   Keeps the flow and melody everyone already likes; swaps the clothes. If the
+   vocal drifts, raise audio influence toward 60.
+2. **Fresh generation** with the reworked lyric sheet below (all four boxes,
+   v5.5 — the sheet is cue-heavy and 4.5 shreds dense bracket structure).
+   Half-time drop cannot be prompted; if we want one before the hard cut, it's
+   a Studio splice.
+
+Either way the ending is non-negotiable: **cut hard immediately after "There is
+no magic money tree."**
+
+## Reworked lyrics (proposal, 2026-08-06 — Kai to curate)
+
+Changes against the saved take: **kept** the domestic verse ("Grandma freezing"
+now doubles as the freeze motif), the '71/Biggie/'08 history verse (trimmed of
+the uncertain transcription lines), and the closing thesis couplet + hard cut.
+**Added** a 1942/Keynes verse (the law) and a 2020/yacht verse (the betrayal) so
+the song now mirrors the video's spine. The paper-grows-on-a-tree joke stays —
+canon note: in the *story* the tree is a sage; the printer gag lives only here.
+
+```lyrics
+[Intro | spoken word speech, cold, clipped female authority]
+(I'm afraid there is no magic money tree.)
+[Verse 1 | laid-back male London MC, conversational half-spoken, dry sarcasm]
+They say you can't make money from a tree. Let's see.
+Work and get paid though. Earn that dough. Where does it go? Nobody knows.
+Standards bleeding. Landlords needing quantitative easing. Grandma freezing.
+Means of production. Means of reduction. Stimulus checks. Our necks get wrecked.
+Rent seeking. Just about eating. Sorry — did I interrupt your meeting?
+Where does it grow? You and me. Mother paper grows on a tree.
+[Verse 2 | warmer, unhurried, storyteller register]
+Rewind. '42. The city's burning.
+Broke little island, bombs above it, still turning.
+A quiet man in a park with sums that wouldn't come right,
+and the tree said: mate — you free tonight?
+You don't build houses out of money, son.
+Bricks and hands and steel — well, have we got some?
+Then we can afford it. Say it slow, no debate:
+anything we can actually do, we can create.
+Skint as we'd ever been, debt through the ceiling —
+built a health service free at the point of healing.
+Who paid? Not grandma. Follow the maths:
+the bondholders carried it. Cheers for that.
+[Verse 3 | flow hardens, tighter delivery]
+Then '71: Tricky Dicky sold the gold by the metric ton.
+The deal was very simple: buy oil in green. Propping up the dollar with guns and gasoline.
+It's '97 and Biggie said it clearly: don't get high off your own supply.
+Now we paying dearly — not very hard with six credit cards.
+This is '08, where we fucked up there mate. Locked in our fate with the low low rates.
+Can't pay it back, you know the crack. Printer go brrr making them stacks.
+It's the fiat system. It's insistent on the debt's existence. Don't be resistant, okay.
+[Verse 4 | quieter, colder, almost spoken]
+2020. Clap for the nurses on the doorstep.
+Four hundred and fifty billion. No sweat. No war chest.
+The tree got shook like it's autumn forever —
+wages held, fair play. That's the tree working, whatever the weather.
+Then a door marked VIP swings wide:
+gowns you can't use, and a friend inside.
+Nurse gets one percent for the year of the dead.
+The profit? Offshore. Frozen. A yacht instead.
+Money's meant to move, mate. That's the whole of the law.
+It froze on a deck off Monaco.
+[Outro | plain-sung hook rising, then dead stop]
+I know this money ain't free. But I do know paper comes from a tree.
+So don't believe them when they say the coffers run dry —
+now for the whopper: for the banks, funds multiplied.
+A tree makes the paper. The limit's what we make — say it with me now:
+we can afford what we can create.
+Where's it grow? On a tree. Brrr ain't free.
+They say there's none for you and me. But the paper grows on a tree.
+There is no magic money tree.
+[End]
+```
+
+## Open questions (for Kai + Jack)
+
+1. **Cover-the-keeper vs fresh gen** — which experiment first? (Recommend the
+   Cover: cheapest test of whether liquid suits the existing flow.)
+2. **Cast the Tree as the vocalist?** If yes, the Voice work for the video's
+   tree dialogue should come first, then front this track with it.
+3. **Verse 4 temperature** — as drafted it's the coldest thing in the song;
+   confirm it doesn't sink the energy before the outro hook (option: keep the
+   break rolling underneath it).
+4. **The intro line** — a female clipped-authority delivery of "I'm afraid
+   there is no magic money tree" mirrors the May clip that opens beat 7 of the
+   video. Alternative: drop the intro entirely and let the video's real clip do
+   it; song then opens straight on Verse 1.
+
+## Reference — the saved take (as transcribed 2026-07-22, keep until superseded)
 
 > I'm afraid there is no magic money tree.
 >
@@ -45,6 +181,8 @@ idea: **"The limit's what we make — we can afford what we can create."**
 >
 > *(← cut it there)*
 
-Transcription notes: several lines are phonetic best-guesses from the recording
-("Let's see each day, not three", "Plus 11") — reconcile against the actual Suno
-lyrics sheet before treating any line as canon.
+Transcription notes: several lines were phonetic best-guesses ("Let's see each
+day, not three", "Plus 11", "Plus plus '14, Alan Green on the scene") — the
+rework above drops the uncertain lines rather than guessing; reconcile against
+the actual Suno lyrics sheet if any are wanted back. What worked about the
+keeper: the flow, and the register — *"I'm sarcastic and then fuck you."*
