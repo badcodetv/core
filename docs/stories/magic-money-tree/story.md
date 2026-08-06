@@ -1,146 +1,187 @@
 ---
 id: magic-money-tree
 title: The Magic Money Tree
-logline: A nurse is told there's no money for her ward — then watches the same system conjure billions overnight for everyone but her.
+logline: In Britain's darkest year, John Maynard Keynes makes friends with a tree in a London park — and together they work out the system that saves the country. The friendship outlives him. The lesson doesn't.
 status: drafting
-release: spike / first auto-built comic
-media: [comic, song]
+release: standalone YouTube video (narrated) + song
+media: [video, song]
 ---
 
 # The Magic Money Tree
 
-> Spine per [`../../storytelling.md`](../../storytelling.md): the single idea, the
-> real-world grounding, then the beats. High-level — the comic derives from this.
-> (First story generated end-to-end through the Flow automation pipeline, Jun 2026.)
+> **Re-founded 2026-08-05/06 (Kai + Claude session)** from Kai's brain dump + four
+> deep-research briefs in [`research/`](./research/). This spine **replaces** the
+> 2026-07-22 "realist rework" (Question Time set-crumble → BoE vault) and the v1
+> Dawn comic spine — both preserved in git history and as the still-live v1 comic.
+> The paper-comes-from-a-tree joke is **demoted to the song**; the tree itself is
+> now a sage.
 
-## Rework decided — 2026-07-22 (Kai + Jack)
+## The story in one line
 
-**The story is now solved, and it's this.** The fable framings (the emperor who
-loves clothes, the dragon-and-genie version) are dropped — that territory belongs
-to [Emperor's New Coin](../emperors-coin/README.md). Magic Money Tree goes
-**realist and in-your-face**, told through real events, kept deliberately short —
-newspaper-cartoon economy: one idea, landed hard, done. Rule adopted in session:
-*don't overcomplicate initial stories.*
+**John Maynard Keynes talking to a tree. That's it.** The friendship and
+collaboration between Keynes and the Magic Money Tree — a sweet, patient thing
+operating against the most difficult problems in the world — is the vehicle that
+teaches the viewer how money actually works.
 
-The new spine:
+## Format
 
-1. **Question Time, 2017.** Lock in the real broadcast: a nurse asks Theresa May
-   about her pay, and May delivers the line — *"there is no magic money tree."*
-   Really anchor the date so the audience knows this is the day. *(Research: pin
-   the exact broadcast date before production.)*
-2. **The set crumbles.** The studio set literally falls apart — cardboard down.
-   The crumble **is** the transition from 2017 to 2020, and it *is* the argument:
-   it crumbles because the line isn't true. No narrator, nobody walks through it.
-   The set crumbles into Downing Street.
-3. **Downing Street, 2020. COVID.** Boris Johnson and Rishi Sunak: *"What the
-   fuck are we going to do? We've got to pay everyone's wages."* Smash the two
-   moments together — near split-screen: May still saying "there's no magic money
-   tree" while these two need £300bn out of nowhere (and run a VIP PPE lane on
-   the side).
-4. **The Bank of England.** The PM and Chancellor totter into Threadneedle Street
-   (the cityscape camera routine works perfectly outside the Bank). Inside, an
-   inner vault — and in it, **the magic money tree**: the tree that makes the
-   paper the money is printed on, with the tenner-printing machine (the one from
-   Camping) spitting money out. *"Right, boys."* Press the button.
-5. **End it there.** The whole point, landed: *there IS a magic money tree — it's
-   called the money printer, and the moment the government wants money, it prints
-   it.* "No magic money tree" is a psyop to make you picture a piggy bank; see
-   through it and you read all monetary policy differently. The key image is that
-   the money **came out of nowhere — it didn't exist**. There's no magic to it;
-   the paper literally comes from a tree.
-6. **Easter egg, not a plot point:** the final image after the story is told —
-   **Michelle Mone's boat in Monaco.** Nothing else. Weaving her into the plot
-   proper was considered and rejected (tries too hard, sullies the pure message);
-   small Easter eggs throughout (a painting on a wall) are fair game.
-   *(Research before use: Baroness Mone — House of Lords peer, lingerie
-   businesswoman; her husband's PPE contracts during COVID, recalled in session
-   as ~£270m awarded — verify names, figures, and legal status carefully.)*
-
-**Relationship to the built comic:** the Dawn version below (and the live comic
-derived from it) stands as the v1 reference — the pipeline spike. The rework
-replaces the fable reveal with the real-events telling; Dawn's Question Time
-grounding survives as beat 1's real nurse. Reconcile the storyboard against this
-spine when production restarts.
+**A narrated YouTube video.** Bernard Cornwell-style historically *inspired*
+fiction (not a documentary of Keynes) for the park scenes, intercut with
+documentary/news-register era sections that use **real archive footage** (May's
+Question Time clip, Nixon's address) under BadCode narration. UK footage usage is
+**fair dealing** (criticism/review/quotation): keep clips short and always
+surrounded by commentary. Narration-led; **the song enters for the final montage
+and the video ends on the track's hard cut — "There is no magic money tree."**
 
 ## Key concept
 
-Scarcity is manufactured. For a government that issues its own currency, "we
-can't afford it" is never a statement of fact — it is a statement of priorities,
-a decision about *who counts*. The money is always there. It appears, instantly
-and without debate, for bank bailouts, for quantitative easing, for war. It only
-becomes impossible to find when the person asking is a nurse, a carer, a
-teacher — someone whose labour keeps everyone else alive. The story's whole job
-is to collapse the lie of the empty purse: the tree was always real; it just
-never shook for her.
+Money is created out of thin air, and **that is fine — wise, even — when it
+builds real things.** The magic money tree is real, and it is good. The law it
+teaches (Keynes, verbatim, BBC radio, 2 April 1942): **"Anything we can actually
+do we can afford"** — and its counterpart from the same broadcast: inflation is
+*"a demand in excess of the physical possibilities of supply."* The crime is not
+printing; the crime is **where the money comes to rest**. Poured into wards,
+houses, bridges, it flows and everyone eats. Parked in assets, it freezes — the
+nurse's flat payslip and the yacht in Monaco are the same banknote at two
+addresses.
 
-## Background
+## Background (real grounding — full detail in [`research/`](./research/))
 
-Real grounding, all of it on the record:
-
-- **"There is no magic money tree."** The actual line, delivered to a nurse who
-  asked about her pay on BBC Question Time, 2017 — the cleanest distillation of
-  the scarcity story the state tells working people.
-- **£895bn of quantitative easing** created by the Bank of England — money
-  conjured into existence by keystroke, no tree required.
-- **The 2008 bank bailouts** — hundreds of billions found overnight for the
-  people who broke it, no means test, no "how will you pay for it?"
-- **Furlough, 2020** — billions that "didn't exist" materialised in a week when
-  the political will was there.
-- **Defence budgets** raised to applause while the case for a hospital ward is
-  "unaffordable."
-
-The economics underneath (a currency issuer is not a household; it cannot "run
-out" of its own currency the way Dawn runs out of coins) stays *under* the
-story. We never lecture it. We let the contrast do the work.
+- **Keynes, "How Much Does Finance Matter?", BBC, 2 April 1942** — the exact
+  quote, the architect exchange ("you don't build houses with money… won't there
+  be enough bricks?"), and inflation defined as the real constraint. See
+  [`research/economics-of-money-creation.md`](./research/economics-of-money-creation.md).
+- **1945–48:** UK debt ~250% of GDP, near-insolvent, rationed — and the NHS
+  opens 5 July 1948; 806,857 council houses by 1951; ~20% of the economy
+  nationalised. The debt was never repaid, it was outgrown (debt +137% over 30
+  years, GDP +1,200%) — with real rates held below inflation for 24 of 30 years:
+  **"they made the rentiers pay for the hospitals."** Keynes dies 21 April
+  1946 — two years before the NHS proves him right.
+- **Nixon, 15 August 1971** — off gold entirely; "your dollar will be worth just
+  as much tomorrow as it is today." (The "Britain demanded $3bn" trigger story
+  is a myth — don't use it.)
+- **2008** — bailouts and QE begin; QE is *designed* to raise asset prices
+  (BoE's own "hot potato" mechanism).
+- **2 June 2017** — a nurse of 26 years (real, unnamed; her 2009 payslip matched
+  her 2017 payslip) asks Theresa May about pay; May: *"there isn't a magic money
+  tree that we can shake…"* The line was Cameron's from 2013 and Amber Rudd's
+  scripted attack line two days earlier. 24 days later, £1bn for the DUP.
+  See [`research/theresa-may-question-time.md`](./research/theresa-may-question-time.md).
+- **2020–21** — £450bn conjured in ~3 months (vs ~£445bn for the whole
+  2009–2017 era); the VIP lane; March 2021, the same nurses offered 1%; the
+  £122m gowns judgment; the yacht bought May 2021.
+  **Guardrails in [`research/michelle-mone-ppe-medpro.md`](./research/michelle-mone-ppe-medpro.md)
+  are mandatory** (real figures — never "£270m"; civil judgment against the
+  company; no criminal conviction; her own BBC admission is the safe material).
+- **Flow vs freeze** (Ken Honda, verbatim): hoarded money isn't dammed, it
+  **freezes** — "when beliefs are too stuck… the flow of money can easily
+  freeze." Healthy money is a lake fed by streams; unhealthy money a stagnant
+  pond. Visual system, not lecture.
+  See [`research/ken-honda-happy-money.md`](./research/ken-honda-happy-money.md).
+- **2021–23 inflation guardrail:** the narrator must NOT claim printing caused
+  it (supply shocks + margins did most of it). Keynes's formulation is the one
+  that survives.
 
 ## Characters
 
-- [`characters/dawn.md`](./characters/dawn.md) — Dawn: NHS nurse, late 50s,
-  Midlands, widowed. Exhausted, decent, the one with grace. Our single visual
-  anchor — every panel she's in must read as the same woman.
+- [`characters/keynes.md`](./characters/keynes.md) — **John Maynard Keynes**,
+  and from 1946, his ghost, who keeps sitting on the same bench.
+- [`characters/the-tree.md`](./characters/the-tree.md) — **The Magic Money
+  Tree**: an anonymous tree in a London park. A sage — warm, informal, ancient,
+  nobody's ever thought to listen to it before. NOT the paper-tree gag (that
+  stays in the song). Its own personality; speaks sparingly.
+- **Archive figures** (real footage only, never fictionalised dialogue):
+  Theresa May, the unnamed nurse, Nixon.
+- **BadCode** — the narrator. Sarcastic future-AI, total authority, nurturing
+  underneath (per [`voice.md`](../../voice.md)).
 
 ## Beats
 
-The full panel plan lives in [`storyboard.md`](./storyboard.md). The spine:
+1. **Cold open — the war, black and white.** 1940–42 montage: Dunkirk, the
+   Battle of Britain, the Blitz. America not yet in the war. Churchill in real
+   trouble. It's fucked, and everyone knows it. Register: gritty, desperate,
+   the strain a nation unites around.
+2. **The bench.** A London park, 1942. Keynes sits wrestling with the impossible
+   sum: how does a broke country fight a total war? The tree speaks: *"Mate.
+   You need to speak to me."* — *"…Who the hell are you?"* — *"I'm the magic
+   money tree. Nobody knows about me. But you seem to be having a problem."*
+3. **The collaboration.** Keynes and the tree work it out together — the
+   principles: balance tax, inflation, wages and the money supply; focus on
+   productivity; government liquidity for *productive* ends is fine when
+   coordinated. Not gold-in-the-ground; capacity. The law, spoken: **"Anything
+   we can actually do we can afford."** Keynes takes it to the country — the
+   real 1942 broadcast, the architect exchange.
+4. **It works — the build.** Documentary register, the numbers playing over
+   archive: victory; then, at ~250% debt and near-insolvency, the NHS opens,
+   the houses go up, National Insurance arrives. In our darkest hour the tree
+   came through — because the money chased real work. And the honest dark
+   line: the rentiers paid for the hospitals.
+5. **The death — and the empty bench.** 21 April 1946: Keynes dies, worn out,
+   two years before the NHS opens and proves him right. Then 5 July 1948:
+   archive of the first NHS patients — and **the vindication scene plays to an
+   empty bench.** The tree in full leaf, nobody to tell. Then the ghost sits
+   down, unhurried — like he's late rather than dead. *"Did it work?"* —
+   *"Mate. You should've seen it."* The friendship resumes mid-sentence.
+6. **The ghost at the bench.** From here the friendship continues — the ghost
+   of Keynes and the tree, same bench, watching history arrive:
+   - **1971, Nixon.** Real footage / news register: off gold entirely ("your
+     dollar will be worth just as much tomorrow"). Back to the park — the
+     bancor in exactly one exchange: *"I told them in '44 this would happen.
+     They preferred to win the argument."* — *"How'd that go?"* — *"They're
+     about to find out."* No Bretton Woods scene; that line carries it. The
+     whole world now runs on trees, run by people who never spoke to one.
+   - **2008.** They finally learned to shake the tree at scale — for the
+     people who broke the machine, with the proceeds pointed at asset prices
+     by design.
+7. **The last conversation — chronological.** The 2017 May clip plays (real
+   Question Time footage — perhaps on a phone someone left on the bench); the
+   tree: *"…I'm literally right here."* Then the proof, blow by blow: 2020,
+   £450bn in three months — the tree *working*, furlough, the thing it was
+   born for — then the VIP-lane door held open, the gowns, the 1% for the
+   nurses in 2021, and the yacht: the money it grew, frozen solid on a deck
+   in the Med. The tree's saddest scene.
+8. **Ending — cold.** Pull back from the park to the final twist image: inside
+   every central bank on earth stands a tree, spitting cash — a worldwide
+   grove of magic money trees doing exactly what they're told. The wise one in
+   the park was just the only one anybody ever *talked* to. Song enters; the
+   video ends on the track's hard cut: **"There is no magic money tree."**
 
-1. **The work.** Dawn on a night shift, holding a dying stranger's hand. She
-   keeps people alive for a living.
-2. **The line.** She asks — for the ward, for herself. She's told the oldest
-   bedtime story in the country: *there's no magic money tree, Dawn.*
-3. **The same maths at home.** Coins on the kitchen table; a letter refusing to
-   fund her mother's care. No money. No money. No money.
-4. **The trick.** The telly flickers on.
-5. **Bailout.** 2008 — for the people who broke it, £500bn found instantly.
-6. **QE.** £895bn conjured from nothing. No tree required, apparently.
-7. **War.** For the things that end lives, a blank cheque, applauded.
-8. **The arithmetic.** Back on Dawn's face, lit by the TV — she sees it.
-9. **The reveal.** Dawn under an enormous tree heavy with gold, shaking in a
-   downpour of money — every coin falling on the towers behind her, none on her.
-10. **The warning.** BadCode, full authority: we let three little words decide
-    who got to live. It was never true. Don't make us say we told you so.
+## The device
+
+- **The friendship is the argument.** Every economic idea is delivered as
+  conversation between a dying genius (then his ghost) and a patient tree —
+  never as lecture. The viewer eavesdrops on a century.
+- **Register split:** park scenes = warm historically-inspired fiction; era
+  sections = documentary/news with real footage and BadCode narration; the two
+  registers alternate and finally collide when the song takes over.
+- **Flow vs freeze** as the visual grammar for money throughout (moving/warm
+  vs pooled/frozen).
+- **Emperor's New Coin: cameo only** — a background/easter-egg presence; the
+  real linkage is social (posts linking story ↔ coin), not plot.
 
 ## The twist
 
-There is no shortage — there never was. The audience spends the first half
-inside Dawn's scarcity, nodding along with the household logic ("of course
-there's no money, look at the deficit"). The montage detonates that: the same
-system that has "nothing" for her finds the impossible sum the instant it wants
-to. The reveal isn't that money is evil — it's that the empty purse was a
-*story*, told to some and never to others.
+The title is the lie told twice. The politicians say the tree doesn't exist —
+while standing in a forest of them. And the audience discovers the tree was
+never the printer gag they expected: it's the wisest character in the story,
+and the only one nobody in power ever listens to.
 
-## How it's told (the device)
+## Locked decisions (2026-08-06 interview)
 
-- **The turn on "found instantly."** Beats 1–4 are Dawn's world: small, cold,
-  short of everything, shot like observational documentary. Beats 5–7 are the
-  montage — bigger, golden, fast, obscene — same camera grammar so the contrast
-  is in the *content*, not the style. The reader feels the whiplash.
-- **The empty-handed downpour** (beat 9) is the single image the whole story
-  exists to land: abundance everywhere, none of it for her.
-- **Narration in BadCode's voice** — sarcastic, certain, nurturing underneath —
-  carries the future-tense warning without ever explaining the economics.
+- **Beat 7 is chronological**: 2017 clip → 2020 (£450bn, the tree working) →
+  VIP lane → 2021's 1% → the yacht → grove → song hard cut.
+- **Ghost arrival**: the empty-bench NHS scene; ghost arrives *after* the
+  vindication, "Did it work?" / "Mate. You should've seen it."
+- **Bancor**: one ghost exchange at Nixon '71, no Bretton Woods scene.
+- **Tree register**: warm working-class London sage — the class contrast with
+  Keynes is the double act (poshest man in England befriends the most common
+  voice in it).
 
-## Ending
+## Open questions
 
-Lands on the warning (beat 10), straight to camera. Provisional final line:
-*"It was never a tree. It was a choice, with a press release. You still have
-time to notice."* Reconcile against the song before lock.
+1. **Song lyrics** — the saved take's history-walkthrough verses ('71 Nixon,
+   2008…) now *align* with the story's beats; revisit whether they need the
+   rewrite Kai previously assumed, or just the hard cut. Hand off to
+   `suno-prompt` when ready.
+2. **Script** — next artifact: the full narration + dialogue script derived
+   from these beats (a `script.md` in this folder), before any visual work.
