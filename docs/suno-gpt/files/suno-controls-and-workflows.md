@@ -94,9 +94,16 @@ Suno Studio is the exception: **v5 outperformed v5.5 inside Studio** for voice�
 
 1. **One workspace per release/arc.** Generations pile up fast; an undifferentiated workspace with
    thousands of songs becomes unusable.
-2. **Turn OFF "My Taste"** (profile settings). It silently biases every generation toward what
-   you've made before — contamination for a deliberately-designed release, and a suspected cause of
-   v5.5 homogenisation.
+2. **Neutralise "My Taste"** — it silently biases every generation toward what you've made before:
+   contamination for a deliberately-designed release, and a suspected cause of v5.5 homogenisation.
+   *(Corrected 2026-08-05, verified against the live UI: there is **no off switch**. The dialog has
+   a 2,000-char free-text profile that **cannot be saved empty** — a profile can only be replaced,
+   never disabled — plus a "My Styles" toggle that governs only the magic-wand style-suggestion
+   button, not generation bias. Working procedure: swap in a per-track profile that pulls the same
+   way as the song, restore the house profile after. The written profile is only the explicit half —
+   Suno also learns from what you create, listen to, like and dislike, with no control surface;
+   mitigate by thumbs-downing every reject and keeping one workspace per arc. Full forensics:
+   [`../suno-voices.md`](../suno-voices.md) §8.)*
 3. **Plan tier before you generate anything.** Free-plan output **never** gains commercial rights,
    even retroactively after upgrading. Anything you might release must be generated on a paid plan.
    Studio requires the top tier; the Editor and stems require at least Pro.

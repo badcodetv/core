@@ -27,6 +27,7 @@ Read on demand. Never reproduce its content in your reply, and don't lecture the
 | `files/lyric-craft.md` | Syllables, rhyme, section shapes, transitions | Writing lyrics — apply **silently** |
 | `files/meta-tag-dictionary.md` | Specialty `[ ]` tags | Writing lyrics. **Treat as unverified** — see caution below |
 | `files/overused-words.md`, `files/ai-cliches.md` | Red-flag lists. **Lyrics only, never style prompts** | Writing lyrics |
+| `suno-voices.md` | **The voice playbook's evidence base** — both Karen threads in full: the genre-pool discovery, the transplant ladder, My Taste forensics | A character voice is fighting you, or you need the why behind "Getting a specific voice" below |
 
 **Caution on the meta-tag dictionary.** Its exotic entries (`[fugue]`, `[retrograde]`,
 `[pedal-point]`, `[length: …]`) are uncorroborated by any practitioner source we have. Suno publishes
@@ -64,6 +65,10 @@ skip straight to drafting if they clearly just want something fast.
   the audio-influence slider into play.
 - Does this need to **match an existing track** (same narrator, same release)? If yes, go to the
   consistency stack in `suno-controls-and-workflows.md` §4 before writing anything.
+- Is the lead a **character** (a specific person, not just "a vocal")? If yes, read their canon
+  `voice:` frontmatter, check what's in **My Taste** before generating, and plan for the voice via
+  "Getting a specific voice" below — character voices routinely need the Voice-transplant ladder,
+  and knowing that up front saves rounds.
 
 Then **draft**. Don't wait for perfect information — a draft the user can react to is worth more
 than three more questions.
@@ -121,9 +126,20 @@ Always give the sliders. They are prompt-adherence controls, not platform trivia
 leaves the best advice on the floor.
 
 - **Simple:** Style block only.
-- **Advanced:** Style block, Exclude Styles block, then a one-line settings note. Lyrics only on request.
+- **Advanced:** My Taste block, Style block, Exclude Styles block, then a one-line settings note.
+  Lyrics only on request.
 - **Studio:** single-element style block + Exclude Styles (mandatory there — Studio leaks instruments
   constantly).
+
+**Always produce a per-track My Taste block** (Advanced work). My Taste biases *every* generation,
+cannot be turned off, and can only be replaced — a stale profile from the last track is a competing
+identity silently fighting this one (the Karen lesson: her profile would drag any later track toward
+her voice). So every track gets its own profile to swap in for the session: positive statements
+only, **vocals first**, pulling the same way as the Style prompt, no artist names, well under the
+2,000-char limit. Remind the user to restore (or swap to the next track's) profile afterwards.
+
+**The generation workflow is four pastes, in order: My Taste → Style → Exclude Styles → Lyrics** —
+all four boxes, every round, from this session's blocks. Never trust what a box already contains.
 
 Default settings line, unless the situation calls for otherwise:
 
@@ -151,6 +167,75 @@ This is where the quality actually comes from. After the user reports back:
 5. **Escalate a tag that's ignored** by adding redundant synonyms: `[spoken word]` →
    `[spoken word speech]` → `[spoken word speech talking]`. Redundancy is a real technique, not a
    smell.
+6. **Re-paste every box, every round — Style, Exclude, Lyrics, and My Taste.** "Reuse Prompt"
+   silently carries the old lyrics forward, and a stale Lyrics box is inaudible as such — it just
+   sounds like the style prompt is being ignored. (This cost the Karen track four rounds.)
+7. **If a vocal hasn't moved after ~2 rounds of style-prompt surgery, stop prompting** — the voice
+   you want probably isn't in the genre's vocalist pool, and no adjective stack jumps pools. Go to
+   "Getting a specific voice" below.
+
+---
+
+## Getting a specific voice
+
+Distilled from the eight-round Karen voice war ([`docs/suno-gpt/suno-voices.md`](../../../docs/suno-gpt/suno-voices.md)
+has the full evidence). A "voice" lives in four layers — the canon character file (`voice:`
+frontmatter, the source of truth), the Style box, the per-section lyric bracket cues, and the
+platform features (saved Voice / custom model / Lyricist). Be deliberate about which you're using.
+
+**The core discovery: the genre tag picks the vocalist pool, not just the instruments.** Every
+generation converges on the pool's centroid ("female + boom bap + half-spoken" *is* the smooth
+silky vocalist), and adjectives are weak words fighting the prompt's strongest word. Diagnostic:
+convergence at both low and high weirdness — weirdness perturbs within the pool, never across it.
+
+**Style-box voice grammar** (in force before you ever escalate):
+
+- **Arc, not state** — where the voice starts and where it ends. The arc is characterization.
+- **Articulation beats attitude** — describe the mouth (nasal, pinched, flat hard vowels,
+  over-enunciated consonants), never the feelings ("put-upon", "brittle" average into nothing).
+  Onomatopoeia beats anatomy: honk, squawk, kvetch. A **performance tradition** the model knows
+  (musical-theatre patter, sitcom squawk, gospel preacher) beats demographics — age words are
+  ~50–80% reliable and may simply not fire.
+- **No negation.** "not singing, no melody, no flow, no swagger" *describes a male rapper* — and
+  generated one. Negations go in Exclude Styles; the Style box gets positive speech-act words.
+- **Short prompt or the voice loses.** Suno dilutes across everything named; delete whatever the
+  genre tag provides free so the voice clauses keep their weight. Ceilings, not targets.
+- **The character in (nearly) every bracket cue.** A section header with no vocal direction falls
+  back to the genre default *for that section*.
+
+**Check upstream before debugging downstream: My Taste.** The profile text biases every
+generation and can hold a full competing vocal identity. It **cannot be saved empty** — only
+replaced — and the "My Styles" toggle is just the suggestion wand, not the bias. Working move: swap
+in a per-track profile that pulls the same way as the song (Vocals field first), restore after.
+The implicit half (learned from your library and likes) has no off switch: thumbs-down every
+reject, one workspace per arc.
+
+**The escalation ladder, when prompting stalls:**
+
+1. **Listen for the voice in the wrong slot.** The vocal prior binds to the *lead slot inside the
+   groove*; the parenthesis/backing slot escapes it (Karen first appeared on the parenthetical
+   answering-machine lines). If the voice exists anywhere in a take, skip to step 3.
+2. **Probe-farm it in its home genre** — generate the character where their voice is the default
+   (whiny complainer → comedy patter song, sparse piano), real lyrics, **no parentheses**, target
+   genre in the excludes. Doubles as a capability probe: not even there → step 4 is the only road.
+3. **Voice transplant:** Remix → Voice on the best take, **select the sub-region** where the voice
+   is right (15 clean seconds beat 60 contaminated; up to 2 min clones stabler), **delete the
+   attached style prompt**, apply to the real track at audio influence 40–60 (70+ if drifting),
+   then Cover the right-voiced take at ~25–40 to recover fidelity.
+4. **The floor: audio-seed a human** — 15s–4min of someone *doing* the voice, one consistent
+   register, Voice → Create voice, audio influence 70–100, two-pass down. Perform the verification
+   phrase in character; flat reading fails.
+
+**Once a Voice pins the lead:** strip the anti-defect words from the excludes (armour against a
+lead problem strangles the backing vocals), and consider **casting the genre default instead of
+fighting it** — the smooth vocalist that kept invading Karen's lead became the institution's choir,
+singing the functionaries' answers against her spoken whine. The wrong voice is often a right
+voice for somebody else in the story. One saved Voice per generation, but lead + parentheses =
+two cast members.
+
+**Cue-heavy skit tracks invert the model rule:** v4.5's extra vocal variety isn't worth it when the
+track's architecture lives in dense bracket cues — 4.5 shreds the structure, v5.5 obeys it. Stay on
+5.5 and spend direction in the brackets.
 
 ---
 
@@ -259,9 +344,12 @@ Lyricist). Two BadCode-specific notes:
 ## Saving a song
 
 When a prompt or lyric is worth keeping, write it to `docs/stories/<story>/songs/<slug>.md` — the
-same file `new-story` step 4 produces. Use frontmatter (`title, status, suno: {style, exclude},
-bpm, voices`) so the Style and Exclude prompts are reusable alongside BPM, genre and voices, then the
-lyrics in a `lyrics` block. `docs/stories/camping/songs/camping.md` is the worked reference.
+same file `new-story` step 4 produces. Frontmatter carries **metadata only** (`title, status, bpm,
+model, settings, voices`). Everything destined for a Suno input box lives in the **body as fenced
+code blocks** that copy clean — **never in frontmatter** (YAML `>-` blocks indent every line, which
+makes copy-pasting a pain). A `## Suno prompt` section carries all four, in paste order: **My Taste,
+Style, Exclude Styles**, then the lyrics in a `lyrics` block.
+`docs/stories/gitpush-origin-master/songs/git-push-origin-master.md` is the worked reference.
 
 Record the **slider settings and the Suno model version** alongside the prompt — a prompt without
 them isn't reproducible, and model behaviour shifts between versions.
