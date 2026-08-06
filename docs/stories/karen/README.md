@@ -11,11 +11,11 @@ A hundred years later, there's a statue.
 
 ## Canon
 
-- **[`storyboard.md`](./storyboard.md) — the fixed, beat-by-beat, scene-by-scene
-  storyboard. Jack's production guide for the story video. If anything else
-  disagrees with it, the storyboard wins.**
-- [`story.md`](./story.md) — the spine: key concept, background, devices, twist,
-  message.
+- **[`story.md`](./story.md)** — the spine (key concept, background, devices, twist,
+  message) **plus the fixed, beat-by-beat, scene-by-scene
+  [storyboard](./story.md#storyboard--scene-by-scene-video-canon)** — Jack's
+  production guide for the story video. If anything else disagrees with the
+  storyboard section, the storyboard wins.
 - [`master-notes-2026-08-05.md`](./master-notes-2026-08-05.md) — the archived
   Kai + Jack session transcript the storyboard was distilled from.
 - [`characters/karen.md`](./characters/karen.md) — Karen Bell (stereotype → leader)
@@ -27,7 +27,7 @@ A hundred years later, there's a statue.
 
 | Medium | Where | Status |
 | --- | --- | --- |
-| Storyboard | [`storyboard.md`](./storyboard.md) | **locked 2026-08-05** — the canon Jack works from; per-scene keep/redo/new statuses inside |
+| Storyboard | [`story.md`](./story.md#storyboard--scene-by-scene-video-canon) | **locked 2026-08-05** — the canon Jack works from; per-scene keep/redo/new statuses inside |
 | Song — "All Day to Complain" | [`songs/all-day-to-complain.md`](./songs/all-day-to-complain.md) | **drafting, round 8** — Karen Voice landed; chorus flipped to the institution choir; awaiting a keeper take |
 | Story video | Jack, from the storyboard | **in production** — draft exists; rework per the storyboard's scene statuses |
 | Music video | — | direction decided 2026-07-22: Ari freestyling with Karen, whole video; separate artifact from the story video |

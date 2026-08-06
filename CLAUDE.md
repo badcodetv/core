@@ -113,7 +113,7 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
 - **Make a standalone brand image:** run the **`new-image`** skill
   (`.claude/skills/new-image/`). Give it a short description; it pads the prompt
   into the BadCode brand register (near-black, one thin light, monumental
-  machine architecture — anchored on `docs/images/gpom-short-opener.jpeg`),
+  machine architecture — anchored on `docs/images/register-anchor.jpg`),
   drives Flow to generate it, and records the exact prompt + revisions next to
   the image. Optionally animates the accepted still. Catalogue and convention:
   [`docs/images/README.md`](./docs/images/README.md). Comic panels stay with

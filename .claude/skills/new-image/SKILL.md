@@ -30,8 +30,8 @@ launch the browser yourself:
 
 ## Register — what a BadCode brand image looks like
 
-The anchor is [`docs/stories/gpom-short/storyboard/img/p01.jpg`](../../../docs/stories/gpom-short/storyboard/img/p01.jpg)
-(its exact Flow prompt is in [`p01.md`](../../../docs/stories/gpom-short/storyboard/p01.md)):
+The anchor is [`docs/images/register-anchor.jpg`](../../../docs/images/register-anchor.jpg)
+(its exact Flow prompt is in [`register-anchor.md`](../../../docs/images/register-anchor.md)):
 a data-center corridor in near-total darkness, racks receding to vanishing point,
 one thin vertical blade of white light, constellations of status LEDs. **Read the
 anchor image before your first generation of a session** — calibrate against it,

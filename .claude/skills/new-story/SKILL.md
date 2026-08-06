@@ -1,6 +1,6 @@
 ---
 name: new-story
-description: Use when starting, capturing, or developing a BadCode story — scaffolds docs/stories/<story>/ (concept, characters, beats, song) as the single source of truth and drives idea → media. Triggers on "new story", "capture this story", "let's develop <story>", "write the canon for <story>", or working on camping / Karen Will Lead the Revolution / The Emperor's New Coin / GitPush Origin Master.
+description: Use when starting, capturing, or developing a BadCode story — scaffolds docs/stories/<story>/ (concept, characters, beats, song) as the single source of truth and drives idea → media. Triggers on "new story", "capture this story", "let's develop <story>", "write the canon for <story>", or working on camping / Karen Will Lead the Revolution / The Magic Money Tree / GitPush Origin Master.
 ---
 
 # New Story (BadCode)

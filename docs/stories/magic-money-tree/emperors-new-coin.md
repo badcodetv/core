@@ -1,22 +1,25 @@
----
-id: emperors-coin
-title: Emperor's New Coin
-logline: A billionaire Emperor parades in a fortune of invisible cloth woven from nothing — and Dawn, a nurse told "there's no magic money tree," is the one who says the cloth was always invisible, and only ever woven for him.
-status: drafting
-release: ep1 / track 3
-media: [comic, song]
----
+# The Emperor's New Coin — folded into Magic Money Tree
 
-# Emperor's New Coin
+> **Status (2026-08-06, Kai):** Emperor's New Coin is **no longer its own story**.
+> It becomes a **cryptocurrency** that folds into the Magic Money Tree — the real
+> linkage is social-media cross-promotion (story ↔ coin), with at most a cameo
+> in-story (see [`story.md`](./story.md), "Emperor's New Coin: cameo only").
+> The old story folder (`docs/stories/emperors-coin/`) is deleted; everything
+> substantive from it is preserved below, so the fable machinery is here if the
+> coin (or a future story) ever wants it. The song that lived there — the jump-up
+> comedy "paper comes from trees" version — is preserved at
+> [`songs/magic-money-tree-jump-up.md`](./songs/magic-money-tree-jump-up.md).
 
-> The spine, per [`../../storytelling.md`](../../storytelling.md): the single idea, the
-> real-world grounding, then the beats. High-level — the comic lives in
-> `apps/web/src/comics/emperors-coin/`; this file is the canon it derives from,
-> not a slide plan. EP1 track 3, inside
-> [GitPush Origin Master](../gitpush-origin-master/README.md) (the bad-branch
-> "value" rung — see [`ep1.md`](../gitpush-origin-master/ep1.md#3-emperors-new-coin)
-> and [`act-1-push.md`](../gitpush-origin-master/act-1-push.md)).
-> (Developed from scratch with Kai, Jun 2026.)
+Provenance: developed from scratch with Kai, Jun 2026, as EP1 track 3 inside
+[GitPush Origin Master](../gitpush-origin-master/README.md) (the bad-branch
+"value" rung — see [`ep1.md`](../gitpush-origin-master/ep1.md) and
+[`act-1-push.md`](../gitpush-origin-master/act-1-push.md)). GPOM's EP1 still
+references "Emperor's New Coin" as a track slot; that reference now resolves
+here. Comic was never started.
+
+Original logline: *A billionaire Emperor parades in a fortune of invisible cloth
+woven from nothing — and Dawn, a nurse told "there's no magic money tree," is
+the one who says the cloth was always invisible, and only ever woven for him.*
 
 ## Key concept
 
@@ -42,32 +45,57 @@ What the metaphor must teach, encoded — never lectured:
   can service old debt by creating more — printing to repay by printing more. The
   loom never empties; the tailors simply weave more cloth to cover the last bolt.
   This is *the* point to land: sovereign debt is not household debt.
-- **The real limit is productivity, not a money-pot** *(the Keynes flag — plant
-  it even if lightly)*. "We can afford what we can create." How much money *should*
-  exist is a function of how much real value the available hands and resources can
-  make at a given moment. GDP is a blunt proxy. We don't actually know the right
-  quantity — and by the measure that matters (real things built), we may have
-  woven far too *little* into productive hands, not too much.
+- **The real limit is productivity, not a money-pot** *(the Keynes flag)*.
+  "We can afford what we can create." How much money *should* exist is a function
+  of how much real value the available hands and resources can make at a given
+  moment. GDP is a blunt proxy. We don't actually know the right quantity — and
+  by the measure that matters (real things built), we may have woven far too
+  *little* into productive hands, not too much. *(Now fully owned by the
+  re-founded [`story.md`](./story.md) — Keynes 1942 verbatim.)*
 - **Hoarding stifles.** Money parked in the accounts of rich investment firms, or
   sunk into assets, isn't being *used*. Worse, fresh printing flows to
   asset-holders first, so asset prices inflate and the rich get richer for
   *holding*, not making. The Emperor piles every bolt of cloth onto himself and
-  sits on it; it clothes nothing.
+  sits on it; it clothes nothing. *(Also owned by `story.md` — flow/freeze,
+  "where the money comes to rest".)*
 - **The lie is selective.** "There's no magic money tree," said to a nurse about
   her ward (Theresa May, 2017), in the same era trillions appeared for the banks
   (2008, 2020). The scarcity is applied to some and never to others.
 
-## Cast
+## Cast (fable roles)
 
-- [`characters/dawn.md`](./characters/dawn.md) — **Dawn**, the nurse: the child
-  who finally says the cloth is invisible. Our protagonist and moral centre.
-- [`characters/the-emperor.md`](./characters/the-emperor.md) — **the Emperor**: a
-  billionaire (read him as an asset-owning oligarch, not a central banker), vain,
-  who must always appear the most magnificently clothed.
-- **The Tailors** *(supporting — may get their own file)* — two swindler-
-  financiers who run the loom: the central bank / QE made flesh. They weave from
-  nothing and weave more to cover old debts, protected by the "only the fit can
-  see it" spell.
+- **Dawn, the nurse** — the child who finally says the cloth is invisible; the
+  moral centre. A ward nurse around her forties: warm, competent, exhausted — the
+  person who holds a failing system together with her own hands and is told,
+  again and again, that there's simply no money for what the sick need. She earns
+  the child's role through an arc, not a gimmick: (1) *complicit, like everyone*
+  — too tired to argue, she accepts "there's no magic money tree" because that's
+  just how the world is, and claps for the procession like the rest of the crowd;
+  (2) *the dissonance* — told there's nothing for her ward in the same breath the
+  looms roar endless thread for the Emperor, the lie stops fitting; she can *see*
+  the loom from where she stands; (3) *clarity, then voice* — she stops
+  pretending and says it plainly, without a speech. She does not "win" — the
+  parade marches on — but she is the one who stopped pretending, and the crowd
+  heard her. Sympathetic, never a mouthpiece. *(Note: a different Dawn from the
+  deprecated MMT-v1 Dawn — this one ~40s, arc-of-the-fable-child; signals: NHS
+  scrubs, lanyard, sensible shoes, kind tired eyes.)*
+- **The Emperor** — a billionaire; read him as an asset-owning oligarch, **not**
+  a central banker (the tailors are the bank). The figurehead of "the economy":
+  the kingdom's pride is measured by how magnificently *he* is dressed, so he
+  must always wear more. His wealth is presented as everyone's strength — "look
+  how well we're doing" — which is the trick that keeps the crowd cheering their
+  own austerity. Not a cartoon villain: he half-believes it himself — he cannot
+  quite see the cloth either, but to admit that is to admit he is unfit, so he
+  pretends hardest of all. He hoards every bolt, sits on it, makes nothing of it.
+  At the end he is exposed and **keeps marching anyway**, chin up — because by
+  then too much depends on the lie for the procession to stop. He is not
+  punished. *He is us, mistaken about what money is for.* (Voice: vain,
+  image-obsessed — speaks in strength, growth, markets. Signals: invisible
+  'finery', billionaire-oligarch energy — yacht/jet fused with imperial
+  procession — no literal crown needed.)
+- **The Tailors** — two swindler-financiers who run the loom: the central bank /
+  QE made flesh. They weave from nothing and weave more to cover old debts,
+  protected by the "only the fit can see it" spell.
 - **The Court** — ministers, economists, pundits who privately see nothing and
   publicly praise the robes. The priesthood of the fiction.
 - **The Crowd** — us, cheering the magnificent economy down the parade route.
@@ -118,16 +146,14 @@ value is a shared agreement with nothing underneath — and money hoarded, unuse
 is literally nothing. It becomes real only when it is made into something. The
 "unfit to see it" rule is simply how dissent is shamed into silence.
 
-## Open threads
+## Open threads carried over
 
-- **The song** (EP1 track 3). The track "tears through how money is made and
-  unmade." Hand off to the `suno-prompt` skill when ready; capture in
-  `songs/<slug>.md`. Candidate hooks: *"the cloth was always invisible,"* *"no
-  magic money tree."*
-- **The M2 device** — commit to the climbing money-supply motif, or keep it as
-  optional texture behind the fable?
-- **How hard to plant the Keynes flag** — a single line, or a whole beat? (Risk:
-  over-teaching a teaser meant to diagnose.)
+- **The coin itself** — what the cryptocurrency actually is and how it
+  cross-promotes with the Magic Money Tree release. (The new reason this file
+  exists.)
 - **Don't conflate with Billionaire Coin** — that's the *good-branch* solution
   node (cap real wealth, compete over status coins, real money builds hospitals).
   Emperor's New Coin is the bad-branch *diagnosis*. Keep them distinct.
+- The M2 / climbing money-supply scroll motif and the reader-is-the-child scroll
+  device are comic-specific craft — parked here in case the fable ever becomes a
+  comic after all.

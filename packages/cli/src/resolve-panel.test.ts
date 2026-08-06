@@ -61,14 +61,7 @@ describe('resolvePanel', () => {
 
   beforeAll(async () => {
     root = await mkdtemp(join(tmpdir(), 'resolve-panel-'))
-    // local-style comic: gpom-short lookalike
-    await mkdir(join(root, 'apps/web/src/comics/gpom-short'), { recursive: true })
-    await mkdir(join(root, 'apps/web/public/comics/gpom-short/img'), { recursive: true })
-    await writeFile(join(root, 'apps/web/public/comics/gpom-short/img/i04.jpg'), 'x')
-    await mkdir(join(root, 'docs/stories/gpom-short/storyboard/img'), { recursive: true })
-    await writeFile(join(root, 'docs/stories/gpom-short/storyboard/p04.md'), RECORD)
-    await writeFile(join(root, 'docs/stories/gpom-short/storyboard/img/p04.jpg'), 'x')
-    // bucket-style comic dir with an anim page, reusing the same story records
+    // bucket-style comic dir with an anim page
     await mkdir(join(root, 'apps/web/src/comics/magic-money-tree'), { recursive: true })
     await writeFile(
       join(root, 'apps/web/src/comics/magic-money-tree/page-map.json'),
@@ -83,16 +76,6 @@ describe('resolvePanel', () => {
     await rm(root, { recursive: true, force: true })
   })
 
-  it('resolves a local-style page to record + golden + web image', async () => {
-    const r = await resolvePanel(root, 'gpom-short', 4)
-    expect(r.assetKey).toBe('img/i04.jpg')
-    expect(r.record).toBe(join(root, 'docs/stories/gpom-short/storyboard/p04.md'))
-    expect(r.golden).toBe(join(root, 'docs/stories/gpom-short/storyboard/img/p04.jpg'))
-    expect(r.storage).toBe('local')
-    expect(r.prompt).toContain('benefits office')
-    expect(r.revisionCount).toBe(2)
-  })
-
   it('resolves a page-map comic and rejects anim pages', async () => {
     const r = await resolvePanel(root, 'magic-money-tree', 2)
     expect(r.assetKey).toBe('img/i04.jpg')
@@ -100,9 +83,10 @@ describe('resolvePanel', () => {
     await expect(resolvePanel(root, 'magic-money-tree', 1)).rejects.toThrow(/PAGE_NOT_IMAGE/)
   })
 
-  it('errors cleanly on record-less V1 comics and unknown comics', async () => {
+  it('errors cleanly on record-less comics and unknown comics', async () => {
     await expect(resolvePanel(root, 'camping', 1)).rejects.toThrow(/NO_RECORDS/)
     await expect(resolvePanel(root, 'karen', 1)).rejects.toThrow(/NO_RECORDS/)
+    await expect(resolvePanel(root, 'gpom-short', 1)).rejects.toThrow(/NO_RECORDS/)
     await expect(resolvePanel(root, 'nope', 1)).rejects.toThrow(/UNKNOWN_COMIC/)
   })
 })

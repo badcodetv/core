@@ -2,7 +2,7 @@
 
 > **Source of truth** for the Camping story — the single canonical folder,
 > consolidated 2026-08-05 from the Kai <-> Jack story conversation in
-> [`../camping-master-notes.md`](../camping-master-notes.md) (2026-08-04). That
+> [`./master-notes-2026-08-04.md`](./master-notes-2026-08-04.md) (2026-08-04). That
 > transcript outranks everything that came before it; the previous `camping`
 > and `camping-v2` folders are retired and live on in git history. Method:
 > [`../../storytelling.md`](../../storytelling.md); tone:
@@ -16,9 +16,12 @@ tent, after the AI has taken even his job.
 ## Canon
 
 - [`story.md`](./story.md) — the locked structure: concept, the twelve beats,
-  devices, decisions log, salvage list
-- [`storyboard.md`](./storyboard.md) — **the scene-by-scene guide Jack records
-  the story video from**: shots, draft narration/dialogue, asset checklist
+  devices, decisions log, salvage list — **plus the
+  [scene-by-scene storyboard](./story.md#storyboard--scene-by-scene-video-guide)
+  Jack records the story video from**: shots, draft narration/dialogue, asset
+  checklist
+- [`master-notes-2026-08-04.md`](./master-notes-2026-08-04.md) — the archived
+  Kai <-> Jack session transcript this canon was distilled from
 - [`characters/tarquin.md`](./characters/tarquin.md) — Tarquin (posh London,
   sneering; 2008 / 2026 / ruined variants) — Flow sheet + Character record
 - [`characters/bob.md`](./characters/bob.md) — Bob (Scouse, weathered; 2008
@@ -42,9 +45,9 @@ later). Change the story here first, then the media.
 | Medium | Where | Status |
 | --- | --- | --- |
 | Story spine | [`story.md`](./story.md) | **locked structure** (2026-08-04 master notes) |
-| Storyboard (video) | [`storyboard.md`](./storyboard.md) | drafted from the spine — Jack to shoot from |
+| Storyboard (video) | [`story.md`](./story.md#storyboard--scene-by-scene-video-guide) | drafted from the spine — Jack to shoot from |
 | Song — "Camping" | [`songs/camping.md`](./songs/camping.md) | exists; lyrics predate the restructure — revisit at cut time |
-| Video | Jack, from `storyboard.md` | next up |
+| Video | Jack, from the storyboard section of `story.md` | next up |
 | Comic | `apps/web/src/comics/camping/` | **tells the old spine** (v1 recut, 24 pages) — rebuild from this canon when the video has proven the telling |
 | Social posts | — | not started |
 

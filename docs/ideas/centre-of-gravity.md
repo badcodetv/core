@@ -13,7 +13,14 @@ gravity**: a broad, stable foundation that doesn't fall over.
 The punchline writes itself: trickle-down didn't just fail to trickle — it engineered the
 exact mass distribution that topples.
 
+The anchor is a pun on **Maradona**: why did he never fall over? Low centre of gravity.
+A healthy economy has one too — money distributed widely among many people. Trickle-up
+gives you the opposite: a sky-high centre of gravity, one shove from going down.
+
 ## Format thoughts
 
 Could be a single strong image (a teetering top-heavy tower of wealth vs. a low stable
 pyramid) or a short comic. Visual-first idea. May grow; may stay small.
+
+Could also be presented as a **webpage rather than a video** — a Three.js physics
+simulation you can push: the top-heavy economy topples, the low-slung one won't.

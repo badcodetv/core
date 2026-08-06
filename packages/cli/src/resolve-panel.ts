@@ -37,7 +37,9 @@ export interface ResolvedPanel {
 
 /** Comic id → story docs dir (repo-relative). Null = no per-panel records exist (yet). */
 const STORY_DIRS: Record<string, string | null> = {
-  'gpom-short': 'docs/stories/gpom-short',
+  // gpom-short's story folder (docs/stories/gpom-short) was deleted 2026-08-06;
+  // its panel records live on in git history only.
+  'gpom-short': null,
   'magic-money-tree': 'docs/stories/magic-money-tree',
   // V1 storyteller imports with no panel records; camping-v2 is a from-scratch rework
   // still in canon phase — its records link up when its comic ships.

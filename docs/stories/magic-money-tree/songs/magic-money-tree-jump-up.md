@@ -17,9 +17,13 @@ bpm: 172
 voices: [rapper, politician]
 ---
 
-# Magic Money Tree (song)
+# Magic Money Tree — jump-up version (song)
 
-EP1-pool track for [Emperor's New Coin](../story.md). A comedic jump-up D&B
+The original comedy version, from when [Emperor's New Coin](../emperors-new-coin.md)
+was its own story (EP1-pool track; the fable folded into Magic Money Tree
+2026-08-06). Sibling of [`magic-money-tree.md`](./magic-money-tree.md) — the
+liquid rework for the re-founded story; this file keeps the original cue-heavy
+lyric sheet and jump-up Suno style intact. A comedic jump-up D&B
 history of fiat money, told in the voice of 90s drug-dealer rap — money-printing
 *as* dealing, "don't get high on your own supply" as a warning to central banks.
 The dumb-genius payoff: the magic money tree is real, because paper money is
@@ -112,8 +116,9 @@ but the paper grows on a tree!
 
 ## Story sketch (Emperor's-New-Clothes frame)
 
-Kept from the original draft. The full canon lives in [`../story.md`](../story.md);
-this is the song's own earlier framing of the idea.
+Kept from the original draft. The fable canon lives in
+[`../emperors-new-coin.md`](../emperors-new-coin.md); this is the song's own
+earlier framing of the idea.
 
 - A prosperous kingdom; the king constantly spends state money on new clothes,
   insisting it's vital state business (taxes foot the bill).

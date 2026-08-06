@@ -12,7 +12,7 @@ A street-roaming YouTuber/producer who wanders New York making music with whoeve
 bumps into. (Touchstone: the real genre of roaming "make-a-beat-with-a-stranger"
 music creators.)
 
-**In the story video he gets roughly five seconds** ([`../storyboard.md`](../storyboard.md),
+**In the story video he gets roughly five seconds** ([`../story.md`](../story.md#storyboard--scene-by-scene-video-canon),
 §3.1), and that limit is deliberate — the believable version is the accidental one.
 He happens to pass the phone box, hears Karen's *"I've got all day to complain,"*
 stops, records a few seconds on his phone, and walks off. He cuts the tune that

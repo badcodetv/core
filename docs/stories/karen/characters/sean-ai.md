@@ -11,7 +11,7 @@ signals: 8-bit pixel-art moniker (Claude Code symbol parody), minimal fake UI, "
 The malevolent background force of the Karen story — the same role the machines play
 in Camping, and within the GPOM frame one of the thousand forms bad code takes. He
 has almost no screen time and is the biggest character in the film; **the camera work
-balances that discrepancy** ([`../storyboard.md`](../storyboard.md), §1.4 and §4.3).
+balances that discrepancy** ([`../story.md`](../story.md#storyboard--scene-by-scene-video-canon), §1.4 and §4.3).
 
 ## What he is on screen
 

@@ -28,4 +28,4 @@ with her name on it, and the statue of her â€” still in the box, still on hold â
 memorial to dedication and persistence. The point of her: channel this. Up your
 Karen game.
 
-Full arc: [`../storyboard.md`](../storyboard.md).
+Full arc: [`../story.md`](../story.md#storyboard--scene-by-scene-video-canon).

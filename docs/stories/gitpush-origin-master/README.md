@@ -302,5 +302,14 @@ Everything in `docs/stories/gitpush-origin-master/` is this story:
   changed, why, and the storytelling-craft evidence behind it.
 - [`ep1.md`](./ep1.md) — the three-track teaser; the Act 1 nodes.
 
+Related but no longer a folder: **the GPOM Short** — the 16-panel condensed teaser of this
+arc, **built & live at `/comics/gpom-short`**. Its story folder (`docs/stories/gpom-short/`)
+was deleted 2026-08-06 to keep this folder the single canon; the panel records live in git
+history, and its panel 1 became the brand register anchor at
+[`docs/images/register-anchor.md`](../../images/register-anchor.md). Two of its open threads
+fold back here: the Carrier's pinned look (wiry ~60, self-cut grey hair, navy wool jumper
+hand-darned in slightly-wrong green, glasses on a braided cord) and the COSMIC register it
+trialled for the [register split](#image-direction--the-register-to-resolve).
+
 General craft and project docs sit one level up: [`../../vision.md`](../../vision.md),
 [`../../voice.md`](../../voice.md), [`../../storytelling.md`](../../storytelling.md).

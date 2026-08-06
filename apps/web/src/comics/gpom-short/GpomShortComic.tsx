@@ -4,10 +4,11 @@ import { iris, fadeOutFadeIn, blur } from '@badcode/comic/transitions'
 import manifest from './assets.manifest.json'
 
 // The GPOM short — the whole master arc in sixteen panels. Frames live in
-// apps/web/public/comics/gpom-short/img (Flow pipeline). Canon + storyboard:
-// docs/stories/gpom-short/. The commit log / cursor overlays are v1 text renderings;
-// the scroll=collapse mechanics (fog resolve, coin lands on scroll) are the
-// noted Stage-6 follow-up in docs/stories/gpom-short/README.md.
+// apps/web/public/comics/gpom-short/img (Flow pipeline). The master canon is
+// docs/stories/gitpush-origin-master/; the short's own story folder was deleted
+// 2026-08-06 (panel records in git history at docs/stories/gpom-short/). The
+// commit log / cursor overlays are v1 text renderings; the scroll=collapse
+// mechanics (fog resolve, coin lands on scroll) are a noted Stage-6 follow-up.
 const comic = createComic(manifest, { baseUrl: '' })
 
 const NARR = 'rgba(6,10,20,0.82)'

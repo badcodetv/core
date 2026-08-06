@@ -16,6 +16,6 @@ that, but change X" is one cheap `flow_refine`. Brand images that live elsewhere
 
 | Image | Record | Note |
 | --- | --- | --- |
-| [`../stories/gpom-short/storyboard/img/p01.jpg`](../stories/gpom-short/storyboard/img/p01.jpg) | [`p01.md`](../stories/gpom-short/storyboard/p01.md) | **The register anchor.** Near-black server hall, one thin blade of light, LED constellations — gpom-short panel 1, with its exact Flow prompt in the record. This is the calibration reference the `new-image` skill reads before generating. |
-| [`gpom-short-opener.jpeg`](./gpom-short-opener.jpeg) | — (predates the skill) | A comic-viewer screenshot of the anchor above, with browser/UI chrome baked in. Kept for history; use the raw `p01.jpg` instead. |
+| [`register-anchor.jpg`](./register-anchor.jpg) | [`register-anchor.md`](./register-anchor.md) | **The register anchor.** Near-black server hall, one thin blade of light, LED constellations — originally gpom-short panel 1 (story folder deleted 2026-08-06; relocated here), with its exact Flow prompt in the record. This is the calibration reference the `new-image` skill reads before generating. |
+| [`gpom-short-opener.jpeg`](./gpom-short-opener.jpeg) | — (predates the skill) | A comic-viewer screenshot of the anchor above, with browser/UI chrome baked in. Kept for history; use the raw `register-anchor.jpg` instead. |
 | [`server-hall-monolith.jpg`](./server-hall-monolith.jpg) | [`server-hall-monolith.md`](./server-hall-monolith.md) | Anchor variant with the hall slightly more readable — door-slit light at the aisle's end, rack faces just catching the spill. First image produced by the `new-image` skill. |

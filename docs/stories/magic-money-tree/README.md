@@ -27,13 +27,18 @@ artifact, and git history preserves the old canon.
   flow/freeze metaphors, and the economics mega-brief (Keynes 1942 verbatim, BoE money-creation
   paper, post-war boom, gold standard, inflation guardrails)
 - [`songs/magic-money-tree.md`](./songs/magic-money-tree.md) — the track; ends the video on its hard cut
+- [`songs/magic-money-tree-jump-up.md`](./songs/magic-money-tree-jump-up.md) — the original
+  jump-up comedy version (was Emperor's New Coin's track), kept intact
+- [`emperors-new-coin.md`](./emperors-new-coin.md) — the folded Emperor's New Coin material:
+  the fable machinery, cast, beats — now a **cryptocurrency** cross-promoting this story,
+  not its own story (folded 2026-08-06)
 
 ### Deprecated (pre-refounding artifacts — do not derive new work from these)
 
 - [`characters/dawn.md`](./characters/dawn.md) — v1's fictional nurse; the nurse is now
   **real and unnamed** (archive footage)
-- [`storyboard.md`](./storyboard.md) + [`storyboard/`](./storyboard/) — the v1 10-panel
-  comic plan and Flow records
+- [`storyboard/`](./storyboard/) — the v1 Flow panel records, plus the v1 10-panel comic
+  plan archived as [`storyboard/v1-comic-plan.md`](./storyboard/v1-comic-plan.md)
 
 ## Production tracker
 
@@ -44,4 +49,4 @@ artifact, and git history preserves the old canon.
 | YouTube video | — | not started — next artifact; script derives from story.md beats |
 | Song | [`songs/magic-money-tree.md`](./songs/magic-money-tree.md) | Suno takes exist (Jack); best take saved — revisit lyrics against the new spine (the '71/2008 verses may now fit), keep the hard cut on "there is no magic money tree" |
 | Comic (v1, superseded) | `apps/web/src/comics/magic-money-tree/` | built & live at `/comics/magic-money-tree` — stands as the pipeline-spike reference; no further derivation |
-| Emperor's New Coin linkage | [`../emperors-coin/`](../emperors-coin/README.md) | cameo in-story only; real linkage is social-media cross-promotion (story ↔ coin) |
+| Emperor's New Coin linkage | [`emperors-new-coin.md`](./emperors-new-coin.md) | folded into this story 2026-08-06 — becomes a cryptocurrency; cameo in-story only; real linkage is social-media cross-promotion (story ↔ coin) |

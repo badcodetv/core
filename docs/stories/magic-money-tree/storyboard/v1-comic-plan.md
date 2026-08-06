@@ -1,9 +1,12 @@
-# The Magic Money Tree — storyboard (10 panels)
+# The Magic Money Tree — v1 comic plan (10 panels) — DEPRECATED
 
-> **Per-panel records now live in [`storyboard/`](./storyboard/) (`pNN.md`)** — they are the
-> source of truth for each panel's exact prompt, characters, and revision log (the
-> edit-panel loop reads them via `badcode panel magic-money-tree <N>`). This file stays as
-> the narrative overview.
+> **Deprecated (pre-refounding artifact).** This was the narrative overview for the v1
+> Dawn comic — superseded 2026-08-05/06 by the re-founded [`../story.md`](../story.md)
+> (Keynes and the tree; "the tree is real and it is good"). Kept because the v1 panel
+> narration copy exists nowhere else. Per-panel records live beside this file (`pNN.md`) —
+> they are the source of truth for each panel's exact prompt, characters, and revision log
+> (the edit-panel loop reads them via `badcode panel magic-money-tree <N>`), and they back
+> the live v1 comic at `/comics/magic-money-tree`.
 
 > Per-panel plan for the comic. Each panel: the **Flow scene prompt** (fed to the
 > Google Flow agent, with house style + Dawn as a reference character) and the

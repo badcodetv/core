@@ -59,6 +59,10 @@ scannable metadata lives in the table.
 | [Acted Sketches](acted-sketches.md) | Chris Kohler format — agent-written two-handers, humanly acted around Portsmouth | video | seed |
 | [Management Failure](management-failure.md) | the two-word catchphrase — England lost again: "management failure" | video | seed |
 | [Document the Process](document-the-process.md) | film the sessions — Big Lez / Midnight Gospel vibes, content that's nearly free | video | seed |
+| [The Parachute](parachute.md) | we already jumped — the parachute better work; a hope story about clean energy | comic · music | seed |
+| [Future Proof, Standalone](future-proof-standalone.md) | the good-branch epic gets its own front door + three tenet-failure stories | software · comic | seed |
+| [The BadCode Government](badcode-government.md) | a shadow cabinet of agents, rewriting its manifesto daily against the real one | software | seed |
+| [Agent Orange as Art](agent-orange-as-art.md) | show the machine — art as code, and how BadCode itself runs | video · software | seed |
 
 ## Graduated & canon (the rest of the map)
 
@@ -66,16 +70,19 @@ Ideas that already live beyond the inbox — listed here so this README doubles 
 central map of BadCode content. The linked folders are the source of truth; don't develop
 them from here.
 
-- [Camping](../stories/camping/README.md) — canon drafting; comic **built & live** (Storyteller
-  import); from-scratch rebuild underway at [camping-v2](../stories/camping-v2/README.md). EP1 track 1.
+- [Camping](../stories/camping/README.md) — canon consolidated 2026-08-05 (one canonical folder;
+  camping-v2 deleted); comic **built & live**. EP1 track 1.
 - [Karen Will Lead the Revolution](../stories/karen/README.md) — canon drafting; comic shell
   registered. EP1 track 2.
-- [The Emperor's New Coin](../stories/emperors-coin/README.md) — canon developed, drafting.
-  **Moved off EP1 (2026-07-22)** — its software/interactive ambitions deferred to after the EP.
+- [The Emperor's New Coin](../stories/magic-money-tree/emperors-new-coin.md) — **folded into
+  Magic Money Tree (2026-08-06)**: no longer its own story; becomes a cryptocurrency that
+  cross-promotes the MMT release. The fable machinery is preserved at that link.
 - [Magic Money Tree](../stories/magic-money-tree/README.md) — **reworked 2026-07-22** (Question Time
   2017 → set crumbles → COVID → Bank of England vault) and **now on EP1, track 3**; the Dawn comic
   stays live as the v1 pipeline reference. Solution twin: [We Can Afford What We Can Create](we-can-afford-what-we-can-create.md).
-- [GPOM Short](../stories/gpom-short/README.md) — 16-panel teaser of the master arc; in production.
+- GPOM Short — 16-panel teaser of the master arc; comic **built & live** at `/comics/gpom-short`.
+  Its story folder was deleted 2026-08-06 (the master canon is the source of truth; panel records
+  live in git history; its p01 became [the register anchor](../images/register-anchor.md)).
 - [GitPush Origin Master](../stories/gitpush-origin-master/README.md) — the master universe,
   beat-complete, and **on EP1 as the title track (2026-07-22)** — the release that ends "we are
   BadCode": Prologue → 6 acts → Coda, plus the two branch-tip epics

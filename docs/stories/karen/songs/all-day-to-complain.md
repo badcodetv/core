@@ -157,7 +157,7 @@ The Great Escalation as a phone call. Karen works the ladder from the front desk
 to the President, and every functionary who blocks her answers from *behind* the
 beat — muffled, telephone-EQ'd, one step further away each time.
 
-Canon: [`../storyboard.md`](../storyboard.md) (Act 2 — the Great Escalation is this
+Canon: [`../story.md`](../story.md#storyboard--scene-by-scene-video-canon) (Act 2 — the Great Escalation is this
 song made visual, rung for rung), character
 [`../characters/karen.md`](../characters/karen.md).
 
