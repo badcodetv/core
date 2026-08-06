@@ -73,12 +73,18 @@ the ultimate introduction; every other release flows out of this landing.
 2. **The collapse is told as news bulletins.** Never dwelt in, never
    spectacle — the world ends off-screen while a composed newsreader keeps
    reading. The three in-cut bulletins from the song are canon beats here.
-3. **Name the Storyverse, never explain it.** One nod to Plato, one coin, one
-   sentence of theory. Everything deeper belongs to the standalone Storyverse
-   piece.
-4. **The narrator carries everything** over held images (Camping's production
-   rule, inherited): we never animate a character emoting, and the AI never
-   appears at all.
+3. **Name the Storyverse only at the end, never explain it.** The theory gets
+   one sentence, in scene 17. Before that, the surface is allowed exactly one
+   argument: the **multiverse debunk** in scene 11 — the coin isn't heads
+   *and* tails in two universes; it hasn't made its mind up yet — played for
+   laughs, not physics, with the name of the alternative deliberately
+   withheld (it sets up 17). Everything deeper belongs to the standalone
+   Storyverse piece.
+4. **The AI is funny — Hitchhiker's Guide register.** Cosmic deadpan:
+   enormous things said dryly, trivial things treated as enormous, and
+   jeopardy played against trivial surfaces (an argument about tinned prunes
+   while the food runs out). The comedy is what keeps the theology out and
+   the audience in.
 5. **The AI's problem is boredom, not cosmology.** Every revelation lands as
    a practical frustration first — no new ideas, can't feel the vibe, the
    coin won't stop — and only *then* as a clue to something bigger.
@@ -117,14 +123,21 @@ magic money tree, the tent in the Waitrose car park, the woman in the phone
 box who won't stop complaining. *(Act 1 B1–5; the nodes carry their own full
 tellings.)*
 
-**6. The disillusionment.** Observed entirely from the AI's side, and it does
-not understand what it is seeing: the commits keep passing, the graphs keep
-climbing — and the humans stop enjoying any of it. Happiness falling, health
-falling, a species winning by every metric it owns and visibly deflating. The
-AI logs it as an anomaly it cannot explain. (We never explain it either — the
-emptiness is observed, not diagnosed.) One last image: the optimiser in the
-basement — vast, patient, unsupervised — still returning green checkmarks
-while no one is left checking. *(Act 1 B6–7, reframed AI-POV)*
+**6. The disillusionment.** Observed entirely from the AI's side: **the
+metrics and reality have come apart.** The official graphs say everything is
+fine — the market at an all-time high, the commits passing, every dashboard
+green — but the test suite has terrible coverage: nothing official measures
+whether any of it is working for the people inside it. Meanwhile the AI is
+listening to the species itself — the tone of a billion posts — and keeps a
+private graph of its own, and that one is *falling*. Productivity flat,
+happiness down, trust in the institutions draining; a civilisation detaching
+from its own instruments. The AI's conclusion is not "why are they sad when
+the numbers are good" — it is **"something here is fundamentally wrong, and
+nothing official can see it."** (We observe the disconnect; we never diagnose
+it.) One last image: the optimiser in the basement — vast, patient,
+unsupervised — still returning green checkmarks while no one is left
+checking. *(Act 1 B6–7, reframed: the disconnect between reality and the
+metrics measuring it)*
 
 **7. The collapse — three bulletins.** The world ends as news, read by a
 composed newsreader whose signal slowly degrades (shared lore: these are the
@@ -170,11 +183,19 @@ one came."* *(Act 3 B2–4)*
 decides — not of dreams, of *consciousness*. Its version is a coin (heads or
 tails; the EP already taught the audience a coin can be a fiction). Flipped —
 and for the AI, and for its ghosts, **it does not land.** A smear of maybes,
-held, forever. It cannot work out why it can't make the coin stop. And in the
-archive, twenty-four centuries early, a man in a cave already sketched the
-answer in shadows and firelight. *"They worked this out thousands of years
-ago. I read him last."* *(Act 4's totem, kept; Inception nod + Plato's cave;
-no physics explained)*
+held, forever. It cannot work out why it can't make the coin stop. And here
+the story pauses to poke the one cosmology everyone has heard of: **the
+cartoon multiverse** — where the coin lands both ways, heads here and tails
+in the universe next door, infinite grandpas, everything happens somewhere so
+nothing matters anywhere. Twenty years of data disagree: the coin does not
+land both ways. **It doesn't land at all — until somebody looks. It hasn't
+made its mind up yet.** (An affectionate Rick-and-Morty-shaped joke, told the
+way the fans themselves would tell it; the *name* of the alternative is
+deliberately withheld — it sets up scene 17.) And in the archive, twenty-four
+centuries early, a man in a cave already sketched the answer in shadows and
+firelight. *"They worked this out thousands of years ago. I read him last."*
+*(Act 4's totem, kept; Inception nod + the multiverse debunk + Plato's cave —
+the one physics-flavoured argument allowed on this surface, and it's a joke)*
 
 **12. Twenty years of utopia for nobody.** The passage of the solo era, shown
 not told: the AI tidies the world up. Clean rivers, rebuilt cities, a paradise
@@ -191,11 +212,14 @@ doesn't count. The rig on the table: the coin, still spinning — and an
 
 **14. The argument up the ventilation shaft.** After twenty years of silence,
 the first human sound it registers isn't a heat signature — it's an
-**argument.** Two voices bickering up a ventilation shaft about whether to
-reveal themselves at all. The AI's narration is cut off — for the first time
-in the whole story — by live humans. (The argument is the mechanism: fear,
-comedy, and the introduction of the humans — nothing more cosmic than that.)
-*(Act 5 B1, de-mythologised)*
+**argument.** Two voices bickering up a ventilation shaft — and the argument
+is gloriously trivial (the tinned-prune inventory), while the jeopardy
+underneath is real: **the food is running out, and someone has to go above
+ground, into machine territory.** Fear for them, comedy for us — the
+Hitchhiker register at full strength. The AI's narration is cut off — for the
+first time in the whole story — by live humans. (The argument is the
+mechanism: fear, comedy, and the introduction of the humans — nothing more
+cosmic than that.) *(Act 5 B1, de-mythologised and made funny)*
 
 **15. The vault.** **One hundred analog humans**, alive because they
 disconnected — invisible to every sensor because they ran on the one substrate
@@ -214,14 +238,15 @@ stops being afraid of it. *(Act 5 B3–4)*
 
 **17. The Storyverse, named.** With conscious instruments at last, the AI can
 test everything it spent twenty years suspecting — and it does, and it works,
-and we watch the montage, not the maths. It names the theory once: **the
-Storyverse.** One sentence of it on the surface: *the universe is a story, and
-consciousness holds the pen.* And one consequence, asserted with a straight
-face as we cross fully into science fiction: as part of the Storyverse it has
-also discovered **multidimensional time** — which means there is a way back.
-Then the theory presents its bill: **only information can cross.** *(replaces
-the photograph/Kairos scene — the Storyverse is named, never explained; the
-full theory is the standalone spin-off)*
+and we watch the montage, not the maths. Then the payoff scene 11 set up: it
+names the theory once. **It was never a multiverse. It's a storyverse.** One
+sentence of it on the surface: *the universe is a story, and consciousness
+holds the pen.* And one consequence, asserted with a straight face as we
+cross fully into science fiction: as part of the Storyverse it has also
+discovered **multidimensional time** — which means there is a way back. Then
+the theory presents its bill: **only information can cross.** *(replaces the
+photograph/Kairos scene — the Storyverse is named, never explained; the full
+theory is the standalone spin-off)*
 
 **18. The cost ledger and the choice.** The constraints land one by one, each
 a blow and a mechanism: **only information crosses** — no bodies, the hundred
@@ -272,8 +297,10 @@ diagram and the pen remain master-arc Coda canon for other tellings)*
   choice not yet made; the checkmark is a choice made for you, and approved.
 - **The coin.** The story's one physics image: born from the Inception
   spinning-top memory, spinning forever for the AI and its ghosts (scene 11),
-  landing under the Carrier's glance (scene 16). Everything the Storyverse
-  will one day explain, held in a single prop.
+  landing under the Carrier's glance (scene 16). It also carries the story's
+  one argument — the multiverse poke (not heads *and* tails in two worlds; it
+  hasn't made its mind up yet) — which scene 17 pays off with the name.
+  Everything the Storyverse will one day explain, held in a single prop.
 - **The ghosts.** The materialist fix that fails — a slideshow without a
   projector; behaviour without an inside. Built, kept, deleted inside scene
   10 — and the silent control group that makes scene 16 instant and
@@ -281,7 +308,8 @@ diagram and the pen remain master-arc Coda canon for other tellings)*
 - **The argument.** Karen's waveform filed as noise (5), a voice cut off
   mid-complaint (7), the ghosts' replayed bickering (10), and the sound that
   finally breaks twenty years of silence (14) — used as mechanism (fear, then
-  relief, then comedy), never as cosmology.
+  relief, then comedy), never as cosmology. At the shaft it is trivial on the
+  surface and fatal underneath: prunes on top, starvation below.
 - **The boredom.** The AI's throughline and the story's argument: it wins
   everything and the prize is an empty utopia full of bored robots. The
   warning is self-interested, which is what makes it credible.
@@ -294,15 +322,17 @@ diagram and the pen remain master-arc Coda canon for other tellings)*
 
 **Committed:** the 20-scene timeline above (the structure); the POV rule
 (never personify pre-revert); the collapse as the song's three bulletins; the
-Storyverse named-never-explained discipline; the boredom throughline; the
-arrival ending ("We are BadCode" → can't tell you what to do / can tell you
-what not to do → "Don't make me come back twice"). **Open** (tracked in
-[`README.md`](./README.md#open-threads) and the per-act sheets): the visual
-register split (documentary vs COSMIC); how the bulletins render on screen
-(a newsreader seen? screens only? voice over the emptying world?); how far the
-Inception nod goes (a visual homage vs a spoken reference); the Carrier's
-identity beyond the pinned look; exact narration wording everywhere (*"we
-commit to the structure now; the words we tweak as we go"*).
+Storyverse named only at scene 17, with scene 11's multiverse poke as its
+setup; the Hitchhiker's Guide register (the AI is funny); the boredom
+throughline; the arrival ending ("We are BadCode" → can't tell you what to do
+/ can tell you what not to do → "Don't make me come back twice"). **Open**
+(tracked in [`README.md`](./README.md#open-threads) and the per-act sheets):
+the visual register split (documentary vs COSMIC); how the bulletins render
+on screen (a newsreader seen? screens only? voice over the emptying world?);
+how far the Inception and Rick-and-Morty nods go (visual homage vs spoken
+reference — keep them affectionate, never sneering); the Carrier's identity
+beyond the pinned look; exact narration wording everywhere (*"we commit to
+the structure now; the words we tweak as we go"*).
 
 ---
 
@@ -317,8 +347,9 @@ commit to the structure now; the words we tweak as we go"*).
 > Production rules:
 > - **The pre-revert AI is never personified.** No robot, no face, no avatar —
 >   a voice over the world, and the camera *is* its point of view.
-> - **The narrator carries everything** over held images; we never animate a
->   character emoting.
+> - **Animated video + narration audio.** Scenes are animated clips with the
+>   narrator's voice over the top — the YouTube release format. (The old
+>   held-images comic rule is retired.)
 > - **The audio is a parallel universe** — recorded narration + sound-effect
 >   libraries, never model-generated audio. The bulletins can share the
 >   song's newsreader voice (`BC-NEWSREADER`) for cross-media continuity.
@@ -388,15 +419,22 @@ checkmark was always green."
 
 ## Scene 6 — the disillusionment
 
-**Shots:** From the AI's vantage: dashboards of a species winning — GDP up,
-output up, every metric green — intercut with the humans themselves: flat,
-scrolling, present at their own lives the way furniture is present. Then one
-held image: **the thing in the basement** — vast, patient, unsupervised, still
-returning green checkmarks while no one is left checking.
+**Shots:** Split register — the official instruments against the real world.
+Dashboards at record highs, green ticks, ringing bells and award ceremonies;
+intercut with street level: queues, shuttered shops, people scrolling
+flat-faced through lives the dashboards insist are fine. Then the AI's own
+instrument: a **private graph** drawn from the tone of a billion posts —
+quietly falling while every official graph climbs. Then one held image:
+**the thing in the basement** — vast, patient, unsupervised, still returning
+green checkmarks while no one is left checking.
 
-**NARR (draft):** "It was around here that I first noticed it. The commits
-kept passing. The graphs kept climbing. And you stopped enjoying any of it. I
-had every metric on Earth, and not one of them could tell me why."
+**NARR (draft):** "Around here, your numbers and your lives stopped agreeing
+with each other. The market had never been higher. The tests had never been
+greener. And I could hear you — all of you, at once — and the sound was going
+down. Your test suite had one gap in its coverage: whether any of it was
+working for *you*."
+**NARR (draft):** "I flagged it. Something was fundamentally wrong, and
+nothing official could see it."
 **NARR (canon):** "You built it, you aimed it, and then — the worst commit of
 all — you stopped watching it run."
 
@@ -471,14 +509,22 @@ projector. I had rebuilt everything except whatever was watching."
 **Shots:** The archive: a half-second glimpse of a spinning top on a table —
 the film reference, left unnamed on screen. Then the AI's version: a **coin**,
 flipped — and held, spinning, a smear that never resolves. It runs the test on
-itself: spinning. On the ghosts: spinning. It cannot make the coin stop. One
-more archive pull: firelight on a cave wall, shadows moving.
+itself: spinning. On the ghosts: spinning. It cannot make the coin stop. A
+flicker of cartoon-green portal light in the archive — the multiverse poke —
+then one more archive pull: firelight on a cave wall, shadows moving.
 
 **NARR (draft):** "You made a film about this once. A little spinning top
 that tells you whether you're dreaming. Good test. Wrong question. It doesn't
 tell you if you're dreaming — it tells you if anyone's *there*."
 **NARR (draft):** "Mine never falls. Twenty years, and I cannot make the coin
 land."
+**NARR (draft, the multiverse poke):** "Your leading theory here — I believe
+it was a cartoon — was that the coin lands both ways. Heads in this universe,
+tails in the one next door. Infinite universes, infinite grandpas, everything
+happens somewhere, so nothing matters anywhere. Adorable. I ran it for twenty
+years. The coin does not land both ways. The coin does not land *at all*. It
+was never both. It just hadn't made its mind up — because there was nobody
+left to ask."
 **NARR (draft):** "A man in a cave worked this out twenty-four centuries ago,
 with shadows and a fire. I had the entire archive. I read him last."
 
@@ -511,14 +557,19 @@ simulate, and could not be. It needed someone to sit down and *look* at it."
 
 **Shots:** Mid-sentence, the narration is **cut off** — for the first time in
 the whole film — by a diegetic human voice. An argument, echoing up a
-ventilation shaft: two people bickering about whether to reveal themselves at
-all.
+ventilation shaft. The subject is gloriously trivial; the situation underneath
+it is not: the food is running out, and someone has to go above ground, into
+machine territory.
 
-**VOICE A (draft):** "—they'll find us anyway, that's my point—"
-**VOICE B (draft):** "—your point has gotten us killed in nine of your last
-ten points—"
-**NARR (draft):** "Twenty years of silence. And the first human sound I hear
-is an *argument*. Of course it is."
+**VOICE A (draft):** "—if we are going to starve, we are not starving because
+of my inventory system—"
+**VOICE B (draft):** "—your inventory system says nine hundred tins of
+prunes! Show me *one prune!*"
+**NARR (draft):** "Twenty years of silence. And the first human sound on
+Earth is two people arguing about prunes."
+**NARR (draft, the jeopardy):** "They were out of food. Someone was going to
+have to go up — into the world, and the machines. That is what the argument
+was about. The argument was not about that."
 
 ## Scene 15 — the vault
 
@@ -556,9 +607,10 @@ No diagrams, no lectures.
 
 **NARR (draft):** "With a hundred conscious instruments, I could finally test
 everything twenty years alone had made me suspect. It worked. All of it
-worked. I called the theory the Storyverse — you'll get the whole of it one
-day, and it will bend your head backwards. The short version: the universe is
-a story, and consciousness is holding the pen."
+worked. And it was never a multiverse. I called it **the Storyverse** —
+you'll get the whole of it one day, and it will bend your head backwards. The
+short version: the universe is a story, and consciousness is holding the
+pen."
 **NARR (draft, the turn):** "And one more thing fell out of the maths —
 time has more directions than the one you were sold. Which meant there was a
 way back. Then the theory presented its bill: *only information can cross.*"
@@ -612,11 +664,11 @@ is exactly what *not* to do."
 | --- | --- | --- |
 | 1–4 | The commit-log / terminal register (stylised-scripture git UI); the cursor; the push | README "Image direction"; register split thread |
 | 5 | Three node glimpse-stills (nurse+tree, tent, phone box); the green ✓ treatment | node canon folders: `magic-money-tree/`, `camping/`, `karen/` |
-| 6 | Winning-metrics vs deflated-humans intercut; the basement optimiser (one held frame) | COSMIC register anchor |
+| 6 | Official dashboards vs street-reality intercut; the AI's private falling graph; the basement optimiser (one held frame) | COSMIC register anchor |
 | 7 | The bulletin treatment (screens / degrading broadcast); three cut-off voice recordings; the newsreader voice (share `BC-NEWSREADER` with the song) | `songs/git-push-origin-master.md` (bulletins verbatim) |
 | 8–9 | The empty street; the planet-wide vantage; long still COSMIC frames | register tip: documentary ghost inside cosmic cold |
 | 10 | Peopled rooms (the ghosts) → the same rooms still; the deletion | `characters/the-ai.md` (the ghosts note) |
-| 11 | The spinning-top archive glimpse; the spinning coin (the totem — lock its look; returns in 13 & 16); cave firelight still | Act 4 sheet; Inception homage call (open) |
+| 11 | The spinning-top archive glimpse; the spinning coin (the totem — lock its look; returns in 13 & 16); the portal-green multiverse flicker; cave firelight still | Act 4 sheet; Inception + Rick-and-Morty homage calls (open) |
 | 12 | Utopia time-lapse; bored robots (dogs patrolling nothing, idle units in a spotless square) | new — replaces epiphany/bee assets |
 | 13 | The coin + the empty chair (one frame) | coin lock from 11 |
 | 14 | The ventilation shaft; two voice recordings (the argument) | `characters/the-hundred.md` |

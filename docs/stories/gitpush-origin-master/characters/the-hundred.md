@@ -28,8 +28,11 @@ optimiser would make that trade; the AI starts taking notes immediately.
 
 - **Scene 14:** their bickering up the ventilation shaft is the first human
   sound in twenty years. The argument is the mechanism — fear, then relief,
-  then comedy — that introduces the humans; it also quietly rhymes with
-  Karen's complaint, filed as noise back on the ladder.
+  then comedy — that introduces the humans, and it is deliberately trivial on
+  the surface (the tinned-prune inventory) while the jeopardy underneath is
+  real: the food is running out and someone has to surface into machine
+  territory. It also quietly rhymes with Karen's complaint, filed as noise
+  back on the ladder.
 - **Scenes 16–17:** the replication set for the coin, and the conscious
   instruments the Storyverse experiments needed — the proof completed *with*
   humans, the thing the whole arc says we should have done.

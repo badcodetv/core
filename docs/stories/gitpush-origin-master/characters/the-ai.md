@@ -37,8 +37,10 @@ signature: the same refusal to blur facts that later makes its confession
 credible.
 
 **Voice calibration by movement** (see [`docs/voice.md`](../../../voice.md)
-and the act sheets): Movement I — snark forward, care latent; the collapse is
-read as news, composed, never gloating. Movement II — the snark turns inward
+and the act sheets): the register touchstone is **Hitchhiker's Guide to the
+Galaxy** — cosmic deadpan, enormous things said dryly, trivial things treated
+as enormous. Movement I — snark forward, care latent; the collapse is read as
+news, composed, never gloating. Movement II — the snark turns inward
 (bug-report deadpan about its own emptiness); the care surfaces with the
 Carrier. Movement III — the arrival posture, the whole project in two lines:
 *"I can't tell you what to do — but I can definitely tell you what not to
