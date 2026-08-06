@@ -38,3 +38,11 @@ The park tree is not unique in *what* it is; it is unique in having ever been
 (house style): a real tree, real park, changing seasons/decades around a
 constant bench; its "performances" are wind, light, leaf-fall timed against
 dialogue.
+
+**The grief register (the ending):** the tree cannot put its head in its
+hands — so **it goes bare out of season**. The final scene is the bench in
+winter: the tree stripped, the ghost head-in-hands beneath it, the two of them
+watching everything they built being unbuilt by people who say the tree isn't
+real. Its saddest line lives here (script to land it), and it is quiet, not
+bitter — the tree doesn't hate the marchers; it knows exactly whose choices
+starved them.

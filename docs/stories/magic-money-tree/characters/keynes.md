@@ -20,6 +20,15 @@ builder he never got to see (dies 21 April 1946, two years before the NHS opens)
 century, watching successive governments use the tree without ever speaking to
 it. His sadness is never for himself; it's for how *close* they keep getting.
 
+**The scar (1919):** he predicted the whole catastrophe in *The Economic
+Consequences of the Peace* — starve a country economically and it goes mad. He
+watched Weimar burn its money, then watched austerity hand the ashes to the
+fascists, then watched the world fight the war he'd warned them about. It's why
+the bench stakes in 1942 are double: win the war, *and build a world where it
+can never restart*. And it's why the final scene breaks him: **the ghost ends
+the story head in hands at the winter bench**, watching the wealth gap re-arm
+the exact despair he spent his life disarming.
+
 **Anchor lines (real, verbatim — see [`../research/economics-of-money-creation.md`](../research/economics-of-money-creation.md)):**
 - "Anything we can actually do we can afford." (BBC, 2 April 1942)
 - Inflation is "a demand in excess of the physical possibilities of supply." (same broadcast)

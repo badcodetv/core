@@ -45,6 +45,18 @@ houses, bridges, it flows and everyone eats. Parked in assets, it freezes — th
 nurse's flat payslip and the yacht in Monaco are the same banknote at two
 addresses.
 
+**And the stakes are not abstract (the 2026-08-06 conclusion):** get the money
+wrong and fascism comes back. Weimar Germany burned twice — once by printing
+without limit, once by refusing to print at all — and starved people went
+looking for someone to blame. The postwar settlement (the NHS, full employment,
+homes) was built *deliberately* as the machine that makes fascism unnecessary.
+Misusing the tree — money pooling in assets while working people can't eat —
+dismantles that machine and re-arms the despair. **The wealth gap is undoing
+what the WWII generation fought and died for.** That is the story's gut-punch,
+and it is a unification of left and right: the left gets the NHS and
+anti-austerity; the right gets the veterans and what they fought for; both get
+handed the same enemy — the misuse of the money system, not each other.
+
 ## Background (real grounding — full detail in [`research/`](./research/))
 
 - **Keynes, "How Much Does Finance Matter?", BBC, 2 April 1942** — the exact
@@ -81,6 +93,24 @@ addresses.
 - **2021–23 inflation guardrail:** the narrator must NOT claim printing caused
   it (supply shocks + margins did most of it). Keynes's formulation is the one
   that survives.
+- **The fascism-economics thread** (⚠️ pending verification — see
+  [`research/fascism-and-the-wealth-gap.md`](./research/fascism-and-the-wealth-gap.md)):
+  Keynes predicted it all in *The Economic Consequences of the Peace* (1919) —
+  crush a country economically and you breed catastrophe. Weimar's **double
+  burn**: the 1923 hyperinflation (the wheelbarrows) destroyed savings and
+  trust; but the Nazi *votes* came in the 1930–33 austerity-deflation years
+  (Nazi vote share 2.6% in 1928 → 37.3% July 1932, ~6m unemployed) — abusing
+  the tree AND denying the tree both fed the catastrophe. Scholarship to
+  anchor on: Galofré-Vilà et al., "Austerity and the Rise of the Nazi Party";
+  Funke/Schularick/Trebesch, "Going to Extremes" (far-right vote share rises
+  ~30% in the 5 years after financial crises, 1870–2014). The postwar
+  settlement (Beveridge, full employment) was explicitly designed to prevent
+  the return. **Modern guardrail: the UK is NOT in hyperinflation (2022 peak
+  ~11%) — the story says wealth gap / cost of living, never claims Weimar is
+  literally here. The rhyme is structural: economic despair → scapegoats.**
+- **Veteran material:** real WWII archive + real on-record veteran interviews
+  (candidate anchor: Harry Leslie Smith, RAF veteran, 1923–2018, "I don't want
+  my past to be your future") — sourcing and licensing in the research file.
 
 ## Characters
 
@@ -100,12 +130,19 @@ addresses.
 1. **Cold open — the war, black and white.** 1940–42 montage: Dunkirk, the
    Battle of Britain, the Blitz. America not yet in the war. Churchill in real
    trouble. It's fucked, and everyone knows it. Register: gritty, desperate,
-   the strain a nation unites around.
+   the strain a nation unites around. **Plant, without labouring it, what the
+   war is *against*: fascism** — the flags, the marches, the machine we are
+   fighting. The ending will collect this.
 2. **The bench.** A London park, 1942. Keynes sits wrestling with the impossible
    sum: how does a broke country fight a total war? The tree speaks: *"Mate.
    You need to speak to me."* — *"…Who the hell are you?"* — *"I'm the magic
    money tree. Nobody knows about me. But you seem to be having a problem."*
-3. **The collaboration.** Keynes and the tree work it out together — the
+3. **The collaboration — and the scar.** Keynes carries a wound the tree
+   recognises: **he predicted all of this in 1919** (*The Economic Consequences
+   of the Peace*) — starve a country economically and it goes mad; he watched
+   Germany burn its money in a wheelbarrow fire, then watched austerity hand
+   the ashes to the fascists. Nobody listened. So the stakes on the bench are
+   double: *win the war, and build a world where it can never restart.* The
    principles: balance tax, inflation, wages and the money supply; focus on
    productivity; government liquidity for *productive* ends is fine when
    coordinated. Not gold-in-the-ground; capacity. The law, spoken: **"Anything
@@ -115,7 +152,10 @@ addresses.
    archive: victory; then, at ~250% debt and near-insolvency, the NHS opens,
    the houses go up, National Insurance arrives. In our darkest hour the tree
    came through — because the money chased real work. And the honest dark
-   line: the rentiers paid for the hospitals.
+   line: the rentiers paid for the hospitals. **Frame it as what it was: the
+   anti-fascism machine** — jobs, homes, health, dignity; the deliberate
+   construction of a country where the recruiters of despair find no one to
+   recruit.
 5. **The death — and the empty bench.** 21 April 1946: Keynes dies, worn out,
    two years before the NHS opens and proves him right. Then 5 July 1948:
    archive of the first NHS patients — and **the vindication scene plays to an
@@ -128,23 +168,38 @@ addresses.
      dollar will be worth just as much tomorrow"). Back to the park — the
      bancor in exactly one exchange: *"I told them in '44 this would happen.
      They preferred to win the argument."* — *"How'd that go?"* — *"They're
-     about to find out."* No Bretton Woods scene; that line carries it. The
-     whole world now runs on trees, run by people who never spoke to one.
+     about to find out."* No Bretton Woods scene; that line carries it. **The
+     grove image lands here:** after '71 they planted them everywhere — pull
+     back to a tree inside every central bank on earth, spitting cash on
+     command — a worldwide grove, run by people who never *spoke* to one.
    - **2008.** They finally learned to shake the tree at scale — for the
      people who broke the machine, with the proceeds pointed at asset prices
      by design.
-7. **The last conversation — chronological.** The 2017 May clip plays (real
-   Question Time footage — perhaps on a phone someone left on the bench); the
-   tree: *"…I'm literally right here."* Then the proof, blow by blow: 2020,
-   £450bn in three months — the tree *working*, furlough, the thing it was
-   born for — then the VIP-lane door held open, the gowns, the 1% for the
-   nurses in 2021, and the yacht: the money it grew, frozen solid on a deck
-   in the Med. The tree's saddest scene.
-8. **Ending — cold.** Pull back from the park to the final twist image: inside
-   every central bank on earth stands a tree, spitting cash — a worldwide
-   grove of magic money trees doing exactly what they're told. The wise one in
-   the park was just the only one anybody ever *talked* to. Song enters; the
-   video ends on the track's hard cut: **"There is no magic money tree."**
+7. **The forgetting.** The 2017 May clip plays (real Question Time footage —
+   perhaps on a phone someone left on the bench); the tree: *"…I'm literally
+   right here."* But the clip is no longer the climax — **it's the nod: they
+   have forgotten.** Then the proof, blow by blow: 2020, £450bn in three
+   months — the tree *working*, furlough, the thing it was born for — then
+   the VIP-lane door held open, the gowns, the 1% for the nurses in 2021, and
+   the yacht: the money it grew, frozen solid on a deck in the Med. The
+   wealth gap climbing back toward where the century started.
+8. **The consequence — what grows in the cold.** Real footage: the flags and
+   the marches are back — here, across Europe, the same choreography the cold
+   open showed us in black and white. Intercut with **real WWII archive and
+   real veteran interviews** — old men who stormed the beaches asking what it
+   was for. The register is not mockery; it is grief. The story's claim, made
+   by juxtaposition, never lectured: *starve people of a future and someone
+   will sell them someone to blame — we have seen this film.* The despair is
+   manufactured by the misuse of the tree; the marchers are the recruited,
+   not the enemy.
+9. **The bench, in winter — cold ending.** The park. The tree bare out of
+   season — its grief. The ghost of Keynes beside it, head in his hands.
+   Everything they built — built precisely so this could never happen
+   again — being unbuilt by people who say the tree isn't real. A final
+   exchange (script to land it; candidate register: *"We didn't beat it,
+   mate. We just gave it a long winter."*). Song slams in over the closing
+   montage; the video ends on the track's hard cut: **"There is no magic
+   money tree."**
 
 ## The device
 
@@ -166,16 +221,35 @@ while standing in a forest of them. And the audience discovers the tree was
 never the printer gag they expected: it's the wisest character in the story,
 and the only one nobody in power ever listens to.
 
-## Locked decisions (2026-08-06 interview)
+**The deeper turn (the conclusion):** the story the viewer thought was about
+economics is revealed to be about the war. The cold open wasn't scene-setting —
+it was the stakes. What the tree and Keynes built in 1948 was the anti-fascism
+machine, and the wealth gap is dismantling it. *All of those people died for
+this — and we are giving it back.* Left and right walk out of the video with
+the same enemy.
+
+## Locked decisions
+
+**2026-08-06 interview:**
 
 - **Beat 7 is chronological**: 2017 clip → 2020 (£450bn, the tree working) →
-  VIP lane → 2021's 1% → the yacht → grove → song hard cut.
+  VIP lane → 2021's 1% → the yacht.
 - **Ghost arrival**: the empty-bench NHS scene; ghost arrives *after* the
   vindication, "Did it work?" / "Mate. You should've seen it."
 - **Bancor**: one ghost exchange at Nixon '71, no Bretton Woods scene.
 - **Tree register**: warm working-class London sage — the class contrast with
   Keynes is the double act (poshest man in England befriends the most common
   voice in it).
+
+**2026-08-06 conclusion rework (Kai):** the ending is now the fascism
+gut-punch — the far-right resurgence as the undoing of what the WWII
+generation fought for; May clip demoted to "the nod that they've forgotten";
+Keynes and the tree end heads-in-hands at the winter bench. **The grove image
+moves from the ending to the '71 stop** (it would dilute the new conclusion as
+a finale). Real WWII footage + real veteran interviews in beat 8. The register
+of beat 8 is grief, not mockery — the marchers are the recruited, not the
+enemy (voice.md: never punch down); the video is built to unify left and
+right against the misuse of the system.
 
 ## Open questions
 

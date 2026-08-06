@@ -1,19 +1,26 @@
 ---
 title: There Is No Magic Money Tree
-status: rework proposed (2026-08-06) — pending Kai/Jack review against the re-founded story
+status: rework proposed (2026-08-06, updated same day with the fascism conclusion) — pending Kai/Jack review
 bpm: 172
 model: v5.5 (cue-heavy lyric sheet — stay on 5.5, see workflow)
 settings: style influence 75, weirdness 60; Cover experiment at audio influence 35–40
 voices: laid-back male London MC — candidate casting = the Tree's register (warm working-class sage); BadCode may take the final line
 ---
 
+> **Two-versions policy (Kai, 2026-08-06):** this file carries BOTH lyric sheets,
+> permanently. **Version A** (below) evolves with the story — as the canon
+> changes, it changes. **Version B** (the original saved-take transcription at
+> the bottom) is **locked verbatim** — never edit it; it remains a live option
+> to return to.
+
 # There Is No Magic Money Tree (song)
 
 **Role in the release (re-founded story, 2026-08-06):** the ending of the YouTube
-video. The video is narration-led; the song enters at the grove reveal and the
-video ends on the track's hard cut — **"There is no magic money tree."** The song
-no longer has to teach the history (the video does that) — it's the recap that
-detonates.
+video. The video is narration-led; the song slams in after the winter-bench
+scene (the veterans/flags sequence plays quiet so the interviews can be heard)
+and the video ends on the track's hard cut — **"There is no magic money tree."**
+The song no longer has to teach the history (the video does that) — it's the
+recap that detonates.
 
 ## Style direction — lighter, rolling, played straight
 
@@ -71,14 +78,16 @@ below, audio influence **35–40**.
 Either way the ending is non-negotiable: **cut hard immediately after "There is
 no magic money tree."**
 
-## Reworked lyrics (proposal, 2026-08-06 — Kai to curate)
+## Version A — story-matched lyrics (proposal 2026-08-06, updated with the conclusion — Kai to curate)
 
 Changes against the saved take: **kept** the domestic verse ("Grandma freezing"
 now doubles as the freeze motif), the '71/Biggie/'08 history verse (trimmed of
-the uncertain transcription lines), and the closing thesis couplet + hard cut.
-**Added** a 1942/Keynes verse (the law) and a 2020/yacht verse (the betrayal) so
-the song now mirrors the video's spine. The paper-grows-on-a-tree joke stays —
-canon note: in the *story* the tree is a sage; the printer gag lives only here.
+the uncertain transcription lines, **wheelbarrow line restored** — it was always
+the Weimar line), and the closing thesis couplet + hard cut. **Added** a
+1942/Keynes verse (the law), a 2020/yacht verse (the betrayal), and — per the
+2026-08-06 conclusion rework — **a bridge**: the grandfathers, the flags coming
+back, the Weimar double burn. The paper-grows-on-a-tree joke stays — canon
+note: in the *story* the tree is a sage; the printer gag lives only here.
 
 ```lyrics
 [Intro | spoken word speech, cold, clipped female authority]
@@ -110,6 +119,7 @@ It's '97 and Biggie said it clearly: don't get high off your own supply.
 Now we paying dearly — not very hard with six credit cards.
 This is '08, where we fucked up there mate. Locked in our fate with the low low rates.
 Can't pay it back, you know the crack. Printer go brrr making them stacks.
+Print it with the ink on that paper. Filled up a wheelbarrow sometime later.
 It's the fiat system. It's insistent on the debt's existence. Don't be resistant, okay.
 [Verse 4 | quieter, colder, almost spoken]
 2020. Clap for the nurses on the doorstep.
@@ -122,6 +132,15 @@ Nurse gets one percent for the year of the dead.
 The profit? Offshore. Frozen. A yacht instead.
 Money's meant to move, mate. That's the whole of the law.
 It froze on a deck off Monaco.
+[Bridge | stripped back, quiet, grief not anger, half-spoken]
+My grandad didn't storm a beach for a hedge fund,
+didn't watch his mates go under so the rents could jump.
+They came home to rubble and they built the welfare state —
+no gold in the vault. Just the will to create.
+Now the flags are back out and the boots are on the street.
+Starve a man of a future and he'll march to any beat.
+Weimar burned the paper, then they froze the till,
+and a salesman sold them someone to blame. He always will.
 [Outro | plain-sung hook rising, then dead stop]
 I know this money ain't free. But I do know paper comes from a tree.
 So don't believe them when they say the coffers run dry —
@@ -147,8 +166,15 @@ There is no magic money tree.
    there is no magic money tree" mirrors the May clip that opens beat 7 of the
    video. Alternative: drop the intro entirely and let the video's real clip do
    it; song then opens straight on Verse 1.
+5. **Version A vs Version B** — Kai has flagged the live possibility of
+   returning to the original take wholesale. Both sheets stay in this file
+   (see the two-versions policy at the top); nothing about Version B may be
+   edited.
+6. **The bridge's weight** — it's the video's beat 8 (flags/veterans) in four
+   couplets; confirm it earns its place in a track that also has the cold
+   Verse 4, or whether one of the two quiet sections should go.
 
-## Reference — the saved take (as transcribed 2026-07-22, keep until superseded)
+## Version B — the original saved take (LOCKED — as transcribed 2026-07-22, never edit)
 
 > I'm afraid there is no magic money tree.
 >
