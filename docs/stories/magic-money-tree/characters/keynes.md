@@ -29,11 +29,18 @@ can never restart*. And it's why the final scene breaks him: **the ghost ends
 the story head in hands at the winter bench**, watching the wealth gap re-arm
 the exact despair he spent his life disarming.
 
-**Anchor lines (real, verbatim — see [`../research/economics-of-money-creation.md`](../research/economics-of-money-creation.md)):**
+**Anchor lines (real, verbatim — see [`../research/economics-of-money-creation.md`](../research/economics-of-money-creation.md)
+and [`../research/fascism-and-the-wealth-gap.md`](../research/fascism-and-the-wealth-gap.md)):**
 - "Anything we can actually do we can afford." (BBC, 2 April 1942)
 - Inflation is "a demand in excess of the physical possibilities of supply." (same broadcast)
 - "You don't build houses with money… Do you mean that there won't be enough
   bricks and mortar and steel and cement?" (the architect exchange)
+- "Vengeance, I dare predict, will not limp." (*The Economic Consequences of
+  the Peace*, 1919 — the prophecy)
+- "Men will not always die quietly." (same, 1919)
+- "There is no subtler, no surer means of overturning the existing basis of
+  society than to debauch the currency." (same, 1919 — his own voice; never
+  attribute the adjacent line to Lenin, which Keynes himself flags as hearsay)
 
 **Relationship with the tree:** genuine friendship — the tree gives him the
 permission ("you can grow as much as you need"), he gives it the discipline

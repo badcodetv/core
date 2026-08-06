@@ -93,24 +93,43 @@ handed the same enemy — the misuse of the money system, not each other.
 - **2021–23 inflation guardrail:** the narrator must NOT claim printing caused
   it (supply shocks + margins did most of it). Keynes's formulation is the one
   that survives.
-- **The fascism-economics thread** (⚠️ pending verification — see
-  [`research/fascism-and-the-wealth-gap.md`](./research/fascism-and-the-wealth-gap.md)):
-  Keynes predicted it all in *The Economic Consequences of the Peace* (1919) —
-  crush a country economically and you breed catastrophe. Weimar's **double
-  burn**: the 1923 hyperinflation (the wheelbarrows) destroyed savings and
-  trust; but the Nazi *votes* came in the 1930–33 austerity-deflation years
-  (Nazi vote share 2.6% in 1928 → 37.3% July 1932, ~6m unemployed) — abusing
-  the tree AND denying the tree both fed the catastrophe. Scholarship to
-  anchor on: Galofré-Vilà et al., "Austerity and the Rise of the Nazi Party";
-  Funke/Schularick/Trebesch, "Going to Extremes" (far-right vote share rises
-  ~30% in the 5 years after financial crises, 1870–2014). The postwar
-  settlement (Beveridge, full employment) was explicitly designed to prevent
-  the return. **Modern guardrail: the UK is NOT in hyperinflation (2022 peak
-  ~11%) — the story says wealth gap / cost of living, never claims Weimar is
-  literally here. The rhyme is structural: economic despair → scapegoats.**
-- **Veteran material:** real WWII archive + real on-record veteran interviews
-  (candidate anchor: Harry Leslie Smith, RAF veteran, 1923–2018, "I don't want
-  my past to be your future") — sourcing and licensing in the research file.
+- **The fascism-economics thread** (✅ verified 2026-08-06 — see
+  [`research/fascism-and-the-wealth-gap.md`](./research/fascism-and-the-wealth-gap.md),
+  whose safe-to-assert list is binding): Keynes predicted it all in *The
+  Economic Consequences of the Peace* (1919) — *"vengeance, I dare predict,
+  will not limp"*; *"Men will not always die quietly."* Weimar's **double
+  burn**: the 1923 hyperinflation destroyed savings ($1 = 4.2 trillion marks
+  at peak); but the Nazi *votes* came in the 1930–33 austerity-deflation years
+  (**2.63% in 1928 → 37.27% July 1932**, 6m+ unemployed) — approved line:
+  *"Germany burned twice — once by printing without limit, once by refusing to
+  print at all. The first burn took their savings. The second took their
+  republic."* Anchored on Galofré-Vilà et al. ("Austerity and the Rise of the
+  Nazi Party" — austerity econometrically tied to Nazi vote share; Hitler's own
+  pamphlet: *"this emergency decree will help my party to victory"*) and
+  Funke/Schularick/Trebesch ("Going to Extremes" — far-right vote share rises
+  **~30% relative** (a third of what they had, NOT 30 points) after *financial*
+  crises specifically, not ordinary recessions). The explicit
+  anti-fascism-by-economics quote belongs to **FDR, 11 Jan 1944**: *"People who
+  are hungry and out of a job are the stuff of which dictatorships are made"*
+  (no equivalent British quote exists in Hansard — don't invent one; Beveridge
+  gives us the five giants and *"a time for revolutions, not for patching"*).
+  **Modern guardrails:** the UK is NOT in hyperinflation (2022 peak: 11.1%,
+  ONS) — the UK's parallel is to the *austerity* burn; and **UK income
+  inequality is NOT at a century high** (ONS shows the opposite) — the honest
+  UK line is *"the 1980s dismantled the postwar compression and it was never
+  restored,"* and the strong UK number is **wealth** (top 10% own ~49% of it).
+  The US is where top-1% income really is back at Roaring-Twenties levels.
+- **Veteran material:** built on **one real voice, not an invented chorus** —
+  **Harry Leslie Smith** (RAF 1941–48, 1923–2018, *Harry's Last Stand*,
+  *Don't Let My Past Be Your Future*), the near-unique on-record veteran who
+  made exactly this argument. "The last of them said this" is true; "they all
+  say this" is not. (Harry Billinge stays out — a remember-the-dead voice,
+  never a political one.) **Footage strategy:** US public-domain WWII archive
+  (Signal Corps/OWI via NARA/archive.org — free, adaptable, monetisable) as
+  the workhorse; IWM only under paid licence (its free licence excludes
+  monetised YouTube); BBC/Pathé licence-or-don't-touch; UK fair dealing
+  reserved for short clips we explicitly comment on (the May clip) — archive
+  as mood-wallpaper under music is NOT fair dealing.
 
 ## Characters
 
@@ -181,17 +200,22 @@ handed the same enemy — the misuse of the money system, not each other.
    have forgotten.** Then the proof, blow by blow: 2020, £450bn in three
    months — the tree *working*, furlough, the thing it was born for — then
    the VIP-lane door held open, the gowns, the 1% for the nurses in 2021, and
-   the yacht: the money it grew, frozen solid on a deck in the Med. The
-   wealth gap climbing back toward where the century started.
+   the yacht: the money it grew, frozen solid on a deck in the Med. The gap
+   numbers land here, honestly told: America's top-1% share back at
+   Roaring-Twenties levels; Britain's postwar compression dismantled in the
+   1980s and never restored — and the top 10% holding roughly half of all UK
+   wealth.
 8. **The consequence — what grows in the cold.** Real footage: the flags and
    the marches are back — here, across Europe, the same choreography the cold
-   open showed us in black and white. Intercut with **real WWII archive and
-   real veteran interviews** — old men who stormed the beaches asking what it
-   was for. The register is not mockery; it is grief. The story's claim, made
-   by juxtaposition, never lectured: *starve people of a future and someone
-   will sell them someone to blame — we have seen this film.* The despair is
-   manufactured by the misuse of the tree; the marchers are the recruited,
-   not the enemy.
+   open showed us in black and white. Intercut with real WWII archive (US
+   public-domain as the workhorse — see background) and **one real veteran's
+   voice: Harry Leslie Smith** — the RAF veteran who spent his last years
+   making exactly this argument (*Don't Let My Past Be Your Future*). One
+   voice, honestly framed: *the last of them said this.* The register is not
+   mockery; it is grief. The story's claim, made by juxtaposition, never
+   lectured: *starve people of a future and someone will sell them someone to
+   blame — we have seen this film.* The despair is manufactured by the misuse
+   of the tree; the marchers are the recruited, not the enemy.
 9. **The bench, in winter — cold ending.** The park. The tree bare out of
    season — its grief. The ghost of Keynes beside it, head in his hands.
    Everything they built — built precisely so this could never happen
