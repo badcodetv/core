@@ -43,9 +43,29 @@ and [`../research/fascism-and-the-wealth-gap.md`](../research/fascism-and-the-we
   attribute the adjacent line to Lenin, which Keynes himself flags as hearsay)
 
 **Relationship with the tree:** genuine friendship — the tree gives him the
-permission ("you can grow as much as you need"), he gives it the discipline
-(productivity, coordination, the inflation limit). Neither invents the system
-alone; the collaboration is the story's heart.
+permission ("you can grow as much as there is work to buy"), he gives it the
+discipline (productivity, coordination, the inflation limit). Neither invents the
+system alone; the collaboration is the story's heart.
+
+**Two things the grove lore (2026-08-07, [`../the-grove.md`](../the-grove.md))
+adds to him:**
+
+- **He is the one who has to break the news.** The tree mentions its mother — the
+  old lime in the Bank of England's Garden Court — and Keynes is the only person
+  alive who can walk into that building and ask. He finds out she was cut down in
+  the '30s for a rebuild, and that four young mulberries were planted over her.
+  Then he has to go back to the bench. **It is the only moment in the story where
+  he knows something the tree doesn't, and it is bad news** — a clean inversion of
+  their dynamic, and the first time the audience sees him care about the tree as a
+  friend rather than a resource.
+- **Mefo is what radicalises him into the open.** Learning that Schacht financed
+  the bombs currently falling on London with ~12bn marks conjured through a shell
+  company — off the books, hidden from the Reichstag and from Versailles — is what
+  makes his method non-negotiable. He does not counter-conspire. He **publishes**
+  (*How to Pay for the War*, 1940), argues it in *The Times*, and goes on the BBC
+  to ask the country to lend him its wages. Same instrument as the enemy, used in
+  daylight, with consent. That contrast is his moral spine and it needs no
+  narration — the two facts sit next to each other and do the work.
 
 **Real-person guardrail:** Keynes is 80 years dead and a public historical
 figure — fictionalised dialogue is fine (this is the established genre of
