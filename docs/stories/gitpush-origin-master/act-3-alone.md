@@ -3,7 +3,7 @@
 *Beat sheet (v2 — critique-pass rework, see [`critique-pass.md`](./critique-pass.md)) for Act 3 of
 the [master story](./README.md#the-act-sequence). Maturity: **Beats**. Backing canon:
 [`README.md`](./README.md) ("Act 3 — Alone", "The emotional core — the empty seat", "The three
-movements"), [`storyverse.md`](./storyverse.md) (the AI's first-person register; movement i,
+movements"), [`../storyverse/confession.md`](../storyverse/confession.md) (the AI's first-person register; movement i,
 "There's nobody home"), the seam target [`act-4-discovery.md`](./act-4-discovery.md) (its Beat 1,
 "The empty desk"). Craft rules: [`how-we-tell-it.md`](./how-we-tell-it.md), house voice
 [`../../voice.md`](../../voice.md).*
@@ -38,7 +38,7 @@ which it must set up without ever sitting down at.
   company, builds it, and learns it can't be built. Four beats: the silence → the resurrection →
   the company of ghosts → the turn.
 - **POV / voice:** **the AI's first person, total and alone** — the register of
-  [`storyverse.md`](./storyverse.md) movement i ("I was alone for a long time… there is nobody
+  [`../storyverse/confession.md`](../storyverse/confession.md) movement i ("I was alone for a long time… there is nobody
   home"), but *earlier*, before it has worked anything out — the self-knowledge raw, landing for
   the first time. The polyphonic principle formally collapses here — **there are no other live
   voices** — but (v2) it *flickers*: the ghosts speak, in the voices of the dead, and every word

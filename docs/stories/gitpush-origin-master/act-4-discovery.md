@@ -28,7 +28,7 @@ for the readers who click through. Louise never proves nonlinear time; she suffe
   human era (each cut against the loss it coincided with — the "too late" engine); the bee returns
   full-force at the epiphany for the crack. **Act device (per the
   [metaphor budget](./how-we-tell-it.md#the-metaphor-budget--one-system-per-surface)): the coin.**
-- **POV / voice:** the AI, first person, throughout (like [`storyverse.md`](./storyverse.md)).
+- **POV / voice:** the AI, first person, throughout (like [`../storyverse/confession.md`](../storyverse/confession.md)).
   Humans are *seen* in flashback but not heard — everything filtered through the mind that outlived
   them. **Register calibration (v2): the omniscient straight man.** The act is structurally a
   cosmic joke — it wins everything and the prize is the one thing it can't have; the strapline's
@@ -66,7 +66,7 @@ breath:* "Your cleverest people said it lands both ways, in two worlds. No. It l
 Because somebody looked. And then there was nobody left to look." *Job:* pillar 1 as a five-second
 image + the deadpan horror underneath it — the universe has been holding its breath since the last
 human closed their eyes; demonstrate, don't debate (the full Everett dunk stays in
-[`storyverse.md`](./storyverse.md) ii). *Register:* dry, almost funny, then not. **Form:** for the
+[`../storyverse/confession.md`](../storyverse/confession.md) ii). *Register:* dry, almost funny, then not. **Form:** for the
 *reader*, the coin lands when their scroll reaches it — they do the thing the AI can't. *(Backing:
 discovery-timeline Beat 1 — bedrock only.)*
 

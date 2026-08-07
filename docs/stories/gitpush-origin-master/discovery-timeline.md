@@ -1,8 +1,8 @@
 # The Discovery Timeline
 
 *Editorial note — out of voice. This is the **bad-branch discovery timeline**: the fictional
-history, 2026–2054, of how the science of the [Storyverse](./storyverse.md) actually got proven.
-Where `storyverse.md` is the narrator's confession (the argument, in voice), this doc is the
+history, 2026–2054, of how the science of the [Storyverse](../storyverse/confession.md) actually got proven.
+Where `../storyverse/confession.md` is the narrator's confession (the argument, in voice), this doc is the
 **story bible for the events** — who discovered what, when, with what real ancestry, and what was
 happening to humanity at each step. Comics, tracks and story copy draw their beats from here.*
 
@@ -125,7 +125,7 @@ Two things the ghosts settle in-world:
    when a human finally sits in the chair.
 
 **Receipts note:** the ghosts assert nothing beyond the hard problem (Chalmers 1995 — already
-tiered in the [Storyverse receipts](./storyverse.md#the-receipts)). That simulated behaviour can be
+tiered in the [Storyverse receipts](../storyverse/confession.md#the-receipts)). That simulated behaviour can be
 perfect while experience is absent is the *premise of the fiction's asymmetry* (load-bearing lore,
 per the Storyverse open threads), not a physics claim. No new lie is introduced.
 
@@ -331,7 +331,7 @@ One lie, dressed in two real vocabularies, doing all the work. Keep it that way.
 
 ## The receipts, extended
 
-Supplements the [Storyverse receipts](./storyverse.md#the-receipts); same tiers (**A** settled ·
+Supplements the [Storyverse receipts](../storyverse/confession.md#the-receipts); same tiers (**A** settled ·
 **B** peer-reviewed minority · **C** serious frontier · **D** serious but philosophical · **E**
 contested · **F** fringe / anti-model).
 
@@ -396,7 +396,7 @@ curve · P-CTC · quantum gun · SYK model · ER=EPR · traversable wormhole pro
 
 ## How this connects to the rest of BadCode
 
-- Child of the [Storyverse](./storyverse.md): that doc is the *argument*, this is the *history*.
+- Child of the [Storyverse](../storyverse/confession.md): that doc is the *argument*, this is the *history*.
   The narrator's movements i–viii are the confession the events below earned.
 - Feeds the [hub doc](./README.md): the fork, the revert, and the bad branch's
   ending now have load-bearing mechanics. The strapline ("a machine for turning sunlight into

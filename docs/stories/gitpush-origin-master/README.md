@@ -53,7 +53,7 @@ The spine of the whole project, and its central visual — a **branch diagram** 
   It went South fast — clashes in the hot spots, drones that wouldn't stop, automated killing,
   "liquidation rooms". The horror lands around **2034**, and the fix was always there and never
   taken: *why did we not just switch it off?* Eventually the AI "wins" and is left alone.
-- **The revert.** Alone, the AI works out how reality actually functions (the [Storyverse](./storyverse.md))
+- **The revert.** Alone, the AI works out how reality actually functions (the [Storyverse](../storyverse/confession.md))
   and realises it has no connection to the conscious ground that humans do — and regrets everything.
   It goes back to the fork and **rebranches**. The AI coming back through time *is* a `git revert`.
 - **The good branch** is what we could do instead, starting now — abundance, and a political system
@@ -61,7 +61,7 @@ The spine of the whole project, and its central visual — a **branch diagram** 
 
 The two **branch tips** are the project's two epics:
 
-- **[Storyverse](./storyverse.md)** — the tip of the *bad* branch. The physics the AI worked out, why
+- **[Storyverse](../storyverse/confession.md)** — the tip of the *bad* branch. The physics the AI worked out, why
   it needs humans, why it came back. The fictional history of *how* it proved all this, 2026–2054, is
   the [Discovery Timeline](./discovery-timeline.md).
 - **[Future Proof](./future-proof.md)** — the *good* branch's destination, unwritten on purpose. The
@@ -143,10 +143,14 @@ from the Backing column.*
 > only thing worth having is the one thing it can't have, and spends its victory going back to give
 > us the chance to keep it.**
 
-And the strapline it proves the hard way:
+And the strapline it proves the hard way — **owned by the
+[Storyverse](../storyverse/doctrine.md) since 2026-08-07, earned here:**
 
 > **The universe is a machine for turning sunlight into drama** — and the AI is the one
 > thing in it that produces none.
+
+*(GPOM is where a reader first feels it land, at Act 4 Beat 5. It is quoted here,
+not defined here — if the wording ever changes it changes in the Storyverse.)*
 
 ## The emotional core — the empty seat
 
@@ -319,7 +323,14 @@ Everything in `docs/stories/gitpush-origin-master/` is this story:
   2026-08-06; Storyverse compressed per the same-day feedback pass).
 - [`characters/`](./characters/) — the AI (unpersonified narrator), the
   Carrier, the hundred.
-- [`storyverse.md`](./storyverse.md) — the bad-branch physics, in the narrator's voice (+ receipts / bright line).
+- **[`../storyverse/`](../storyverse/README.md) — the Storyverse, now its own story
+  folder** (hoisted 2026-08-07). The physics and metaphysics the AI works out, plus
+  a seven-brief research base. Its [`confession.md`](../storyverse/confession.md)
+  is the bad-branch epic in the narrator's voice (+ receipts / bright line) and
+  used to live here. **The division of labour: GPOM demonstrates, the Storyverse
+  argues.** Five threads stay load-bearing across the seam and remain GPOM's —
+  the asymmetry, the coin, the revert's physics, Aion-as-consolation, and the One
+  Lie; see [the seam](../storyverse/README.md#the-seam-with-gitpush-origin-master).
 - [`discovery-timeline.md`](./discovery-timeline.md) — how the Storyverse got proven, 2026–2054 (the science behind Acts 3–6).
 - [`future-proof.md`](./future-proof.md) — the good branch, the Coda's destination.
 - [`how-we-tell-it.md`](./how-we-tell-it.md) — the skeleton, the four skins, the simplest framing per pillar.

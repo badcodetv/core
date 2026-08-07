@@ -132,11 +132,15 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
 - [`docs/vision.md`](./docs/vision.md) — origin story, mission, themes
 - [`docs/voice.md`](./docs/voice.md) — tone guide with do/don't
 - **[`docs/stories/gitpush-origin-master/`](./docs/stories/gitpush-origin-master/README.md)** — the whole GPOM story canon, one folder. Start at its `README.md` (the **backbone**: orientation, the fork, the production tracker, and the act sequence — Prologue → 6 acts → Coda — from the push to the time machine). Inside:
-  - [`storyverse.md`](./docs/stories/gitpush-origin-master/storyverse.md) — the bad-branch epic: the sci-fi physics the AI worked out (consciousness-first reality)
   - [`discovery-timeline.md`](./docs/stories/gitpush-origin-master/discovery-timeline.md) — how the Storyverse got proven: the bad-branch fictional history 2026–2054 (the four beats, the vault, the revert)
   - [`future-proof.md`](./docs/stories/gitpush-origin-master/future-proof.md) — the good-branch epic: redesigning politics with software-engineering tenets
   - [`how-we-tell-it.md`](./docs/stories/gitpush-origin-master/how-we-tell-it.md) — how to convey the three big ideas without losing people: the skeleton, the four skins (Story/Theatre/Myth/Game), the simplest framing per pillar
   - [`ep1.md`](./docs/stories/gitpush-origin-master/ep1.md) — the three-track teaser release (comic + track each)
+- **[`docs/stories/storyverse/`](./docs/stories/storyverse/README.md)** — the Storyverse: what reality is and what we are inside it. Hoisted out of GPOM 2026-08-07 as a peer story. **GPOM demonstrates; the Storyverse argues.** Inside:
+  - [`confession.md`](./docs/stories/storyverse/confession.md) — the argument in the narrator's voice (8 movements + receipts + the bright line)
+  - [`doctrine.md`](./docs/stories/storyverse/doctrine.md) — the spine in plain clothes: every claim, its tier, its totem, and the *never say* list
+  - [`decisions.md`](./docs/stories/storyverse/decisions.md) — what the research settled, and the open calls still owed a human ruling
+  - [`research/`](./docs/stories/storyverse/research/README.md) — seven cited research briefs (QM interpretations, idealism, dimensions & time, decoherence, theology, the meaning crisis, SF precedent)
 - [`docs/storytelling.md`](./docs/storytelling.md) — how we craft a story
 
 ## Out of scope here

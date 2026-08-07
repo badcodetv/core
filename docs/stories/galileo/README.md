@@ -52,6 +52,24 @@ This is the **metaphor layer** of a thread GPOM already carries as essay:
 — and it's always the previous generation's correct answer, fossilised and
 defended by the people who make a living from it.
 
+## The sibling idea — The Founding Deletion (2026-08-07)
+
+This story owns the 1623 half of a two-part move the Storyverse now carries as
+canon: [**The Founding Deletion**](../storyverse/doctrine.md#the-founding-deletion).
+Galileo relocated the qualities out of the world to make nature mathematisable;
+the national accounts later relocated care, meaning and a habitable planet out of
+the ledger for the same reason. Both were declared, at the time, as
+*conveniences*. Both hardened into ontologies. Both are now defended with the
+same circular proof: **it doesn't show up in the numbers** — the numbers built by
+the instrument that excluded it.
+
+> Galileo's error and the economists' error are the same error.
+
+**This story keeps the metaphor; the Storyverse keeps the join.** Do not explain
+the second deletion here — that's the click-through, and per the scope guard
+below this story never explains the Storyverse. But the frontier beat may now
+*rhyme* with it, because it is the same shape as this story's own thesis.
+
 ## Scope guard (load-bearing)
 
 - **The target is fossilised consensus, not science.** Science is the honest part
@@ -59,7 +77,7 @@ defended by the people who make a living from it.
   assumptions. The villain is the priesthood that accretes on top of anything that
   works. Materialism wasn't wrong as science; it was wrong as a *stopping point*.
   Get this wrong and we lose exactly the audience we want.
-- **Adjacent to the [Storyverse](../gitpush-origin-master/storyverse.md), never an
+- **Adjacent to the [Storyverse](../storyverse/confession.md), never an
   explanation of it.** The frontier beat stops at *your physics goes quiet here.*
   No collapse mechanism, no multi-dimensional time, no hierarchical entanglement —
   that's a different story.

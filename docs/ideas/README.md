@@ -54,7 +54,7 @@ scannable metadata lives in the table.
 | [Camping: Choose Your Own Ending](camping-bandersnatch.md) | Bandersnatch the finished Camping comic — later, not now | comic · software | parked |
 | [Kill Bots, Stand Down](kill-bots-stand-down.md) | "STOP — they're the last ones!" — the GPOM cut scene as a 10-second meme | video | seed |
 | [The BadCode Future History](badcode-future-history.md) | "2047: this happened" — retelling the next 50 years, because only BadCode knows | video | seed |
-| [Storyverse, Standalone](storyverse-standalone.md) | the GPOM physics as its own art object / website — you matter, there's no copy of you | software · comic | seed |
+| [Storyverse, Standalone](storyverse-standalone.md) | the GPOM physics as its own art object / website — you matter, there's no copy of you | software · comic | **graduated** → [`stories/storyverse/`](../stories/storyverse/README.md) |
 | [Manifesting BadCode](manifesting-badcode.md) | making BadCode is the meta version of BadCode arriving — two idiots only | video | seed |
 | [Acted Sketches](acted-sketches.md) | Chris Kohler format — agent-written two-handers, humanly acted around Portsmouth | video | seed |
 | [Management Failure](management-failure.md) | the two-word catchphrase — England lost again: "management failure" | video | seed |
@@ -86,7 +86,7 @@ them from here.
 - [GitPush Origin Master](../stories/gitpush-origin-master/README.md) — the master universe,
   beat-complete, and **on EP1 as the title track (2026-07-22)** — the release that ends "we are
   BadCode": Prologue → 6 acts → Coda, plus the two branch-tip epics
-  ([Storyverse](../stories/gitpush-origin-master/storyverse.md),
+  ([Storyverse](../stories/storyverse/confession.md),
   [Future Proof](../stories/gitpush-origin-master/future-proof.md)) and named latent nodes
   (An Optimistic Lens, the Galileo piece, the Future Proof policy fleet — which claims
   [Billionaire Coin](billionaire-coin.md)).

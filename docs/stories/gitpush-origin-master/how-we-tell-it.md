@@ -2,7 +2,7 @@
 
 *Companion to [`storytelling.md`](../../storytelling.md). That doc is **how to craft any BadCode
 story** (concept + background, metaphor, beats, house image style). This doc is narrower and
-deeper: **how to convey the [Storyverse](./storyverse.md)'s three big ideas** — participatory
+deeper: **how to convey the [Storyverse](../storyverse/confession.md)'s three big ideas** — participatory
 reality, hierarchical entanglement, multi-dimensional time — without losing the audience in physics
 rabbit-holes, and without tripping the three wires that switch people off: woo, God, and elitism.*
 
@@ -10,7 +10,7 @@ Distilled from a research pass across science fiction, science communication, an
 science, then hardened by the **2026-07 critique pass** ([`critique-pass.md`](./critique-pass.md) —
 a second, adversarially-verified research round plus a close read of the whole arc; the v2
 additions below carry its findings). The receipts for the physics itself live in
-[`discovery-timeline.md`](./discovery-timeline.md) and [`storyverse.md`](./storyverse.md) —
+[`discovery-timeline.md`](./discovery-timeline.md) and [`../storyverse/confession.md`](../storyverse/confession.md) —
 **never put them on the surface of a piece.**
 
 ## The one rule
@@ -60,7 +60,7 @@ is forged just ahead of you, not pre-written.
   It also carries the sanctioned multiverse kill in one breath: *"Your cleverest people said it
   lands both ways, in two worlds. No. It landed heads. Because she looked."* That line is the
   **entire** anti-Everett polemic allowed on the surface — the full argument lives in
-  [`storyverse.md`](./storyverse.md) movement ii for the readers who go looking.
+  [`../storyverse/confession.md`](../storyverse/confession.md) movement ii for the readers who go looking.
 - **Keeper framing — the set built where you look / Wheeler's twenty questions.** The real,
   serious-physicist version (John Wheeler's "participatory universe") is a party game: the players
   never agreed on a secret word, only that every answer must stay *consistent* with the last. The
@@ -114,7 +114,7 @@ Time isn't only the forward tick. There's a second axis the story lives on.
   clock."** If one Greek word earns its keep it is **Kairos** (load-bearing, singular, beautiful) —
   the *only* one allowed on a surface, introduced late and by the director's-clock framing, never
   cold. Chronos and Aion never surface; they live in
-  [`storyverse.md`](./storyverse.md#the-three-names-for-time).
+  [`../storyverse/confession.md`](../storyverse/confession.md#the-three-names-for-time).
 - **Capstone quote (use sparingly):** Einstein — "the distinction between past, present and future
   is only a stubbornly persistent illusion."
 - **Never say:** "4+2 dimensions," "two-time physics," Sp(2,R), holography, "Chronos"/"Aion". Two
@@ -139,7 +139,7 @@ people who aren't in the room (insider baseball, the geekiest register we have).
 never argues the multiverse down; it *demonstrates* the single world — the coin lands **once**, the
 fork has **two** branches and one of them **costs everything** — and spends at most the one
 coin-line punchline (pillar 1) saying so out loud. The full, gorgeous dunk stays in
-[`storyverse.md`](./storyverse.md) movement ii, where it belongs: bedrock for the converted.
+[`../storyverse/confession.md`](../storyverse/confession.md) movement ii, where it belongs: bedrock for the converted.
 
 ## The skeleton (constant) and the skins (flexible)
 
@@ -163,7 +163,10 @@ and not a lecture:
 | **The Gods' Game** (myth) | cosmic play | The deep register you *earn your way to*: the watchers and the watched turn out to be one. Carries the strapline directly. | lower than "God" (gods-plural read as *story*, not worship), but elevated/grand. | Gods-moving-puppets kills pillar 1 (free will). Fix = the twist that the gods and the mortals are the same beings, dissociated. That's a payoff, not an entry. |
 | **The Game** (player & avatar) | cosmic play | The five-second device for participatory collapse — the open world that *renders where you look* (a real feature players know; also Hoffman's VR metaphor). | low but skews younger; courts the cold "just a simulation" read. | Nihilism. Counter it with "a rendered world is where magic becomes *possible*." |
 
-**The strapline sits above all four skins:**
+**The strapline sits above all four skins** — and as of 2026-08-07 it is **owned by
+the [Storyverse](../storyverse/doctrine.md), quoted here.** GPOM still *earns* it
+at Act 4 Beat 5; that is where a reader first feels it land. It is simply no
+longer GPOM's to redefine:
 
 > **The universe is a machine for turning sunlight into drama.**
 
@@ -217,11 +220,11 @@ trusts:
   spine, escalating into **Myth** for the deep reveal. **Game** dropped in as a device where a
   reader needs to *feel* participatory collapse fast.
 - **Earn it.** The metaphysics surfaces later and louder as the arc grows, never front-loaded. Same
-  doctrine as `storyverse.md` and `vision.md`.
+  doctrine as `../storyverse/confession.md` and `vision.md`.
 
 ## See also
 
-- [`storyverse.md`](./storyverse.md) — the argument (in voice) and the physics receipts / bright line.
+- [`../storyverse/confession.md`](../storyverse/confession.md) — the argument (in voice) and the physics receipts / bright line.
 - [`discovery-timeline.md`](./discovery-timeline.md) — how the three pillars get proven; the one lie.
 - [`README.md`](./README.md) — the master narrative (the backbone) these tools serve.
 - [`storytelling.md`](../../storytelling.md) — general craft and house image style.

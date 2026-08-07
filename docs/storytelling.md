@@ -4,7 +4,7 @@ We are not pretending to be master storytellers. We'd rather **stand on the shou
 study how great stories work and borrow their machinery — than wing it. This doc is the method.
 
 > Companion: [`how-we-tell-it.md`](./stories/gitpush-origin-master/how-we-tell-it.md) goes deeper on the one
-> job this doc only gestures at — conveying the [Storyverse](./stories/gitpush-origin-master/storyverse.md)'s
+> job this doc only gestures at — conveying the [Storyverse](./stories/storyverse/confession.md)'s
 > three big ideas (participatory
 > reality, hierarchical entanglement, multi-dimensional time) without losing the audience. The
 > skeleton, the four skins, the simplest believable framing for each pillar.

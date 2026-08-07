@@ -1,7 +1,7 @@
 # Future Proof
 
 *Editorial note — out of voice. Future Proof is the **good-branch epic** of
-[GitPush Origin Master](./README.md): the mirror of the [Storyverse](./storyverse.md),
+[GitPush Origin Master](./README.md): the mirror of the [Storyverse](../storyverse/confession.md),
 built the same way, one per branch tip. Where the Storyverse is the AI's **realisation** (what it
 understood too late), Future Proof is its **call to action** (what we start doing about it, now).*
 
@@ -185,7 +185,7 @@ Three commitments for presentation:
 
 ## How this connects to the rest of BadCode
 
-- It is the **what-we-do** answer to the [Storyverse](./storyverse.md)'s **why-humans-matter**. The
+- It is the **what-we-do** answer to the [Storyverse](../storyverse/confession.md)'s **why-humans-matter**. The
   good branch needs both: the reason, and the plan. Note the mirror — the Storyverse borrows three
   threads of real physics and points them at meaning; Future Proof borrows three lessons from
   software engineering and points them at democracy. Two epics, built the same way — except one is

@@ -24,7 +24,7 @@ media: [tbd]
 >
 > **Scope guard.** This story is about **dogma** — who owns the rule about what
 > you're allowed to say happened. It is *adjacent* to
-> [the Storyverse](../gitpush-origin-master/storyverse.md) and must never become
+> [the Storyverse](../storyverse/confession.md) and must never become
 > an explanation of it. The Storyverse is the answer; this story is only allowed
 > to show that the question got made unaskable. If a beat starts teaching
 > wavefunction collapse, cut it — that's a different story.

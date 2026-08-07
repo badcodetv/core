@@ -57,10 +57,43 @@ the ultimate introduction; every other release flows out of this landing.
   definitely tell you what not to do."* Brutal certainty about the mistake,
   care underneath it, and total honesty about the limits of its own map.
 - **The Storyverse discipline (load-bearing):** the physics the AI works out
-  is the [Storyverse](./storyverse.md) — bedrock, and the seed of its own
-  standalone content. In *this* story the AI **names the theory and moves
-  on.** No pillars, no strapline, no multidimensional-time demonstration. The
-  one physics image allowed on this surface is **the coin that won't land.**
+  is the **[Storyverse](../storyverse/README.md)** — since 2026-08-07 its own
+  story folder, not a file in this one. In *this* story the AI **names the theory
+  and moves on.** No pillars, no strapline, no multidimensional-time
+  demonstration. The one physics image allowed on this surface is **the coin that
+  won't land.** *(Division of labour: **GPOM demonstrates, the Storyverse
+  argues.** The full argument is [`confession.md`](../storyverse/confession.md);
+  the writers' reference is [`doctrine.md`](../storyverse/doctrine.md).)*
+
+### Binding accuracy rules — inherited from the Storyverse
+
+*Added 2026-08-07 after a ten-brief research pass. These bind every scene below;
+the reasoning lives in [`storyverse/decisions.md`](../storyverse/decisions.md).*
+
+1. **Undetermined, never unknown.** The coin has **no fact yet** — it is not
+   hiding an answer it already has. *"Hidden"* or *"we just don't know yet"*
+   makes it naive hidden variables, which Bell and Kochen–Specker killed. Scene
+   11's *"it hasn't made its mind up yet"* is correct — keep that wording.
+2. **The multiverse poke targets the *cartoon*, not Everett.** Scene 11 works
+   because the narrator names the *pop* multiverse (*"I believe you call it…"*,
+   the portal-green flicker, infinite grandpas). Never state it as what physicists
+   claim: Everett's actual move is **deleting** collapse, with no pre-existing
+   universes to land in. Keep it as a joke about a genre and we're safe; make it a
+   claim about physics and a physicist stops reading.
+3. **Nothing travels.** If any scene shows the collapse *spreading* — a wave
+   crossing the set, news racing outward — it is wrong. Settling is
+   **simultaneity of the record**, never transmission.
+4. **The observer is never "a mind" on the surface.** She looks and it lands;
+   we never explain the looking. The moment the text says consciousness *causes*
+   it, we've left physics.
+5. **Never "science has shown."** The narrator bets; it never cites.
+6. **No villains, and no living names.** Applies to the bulletins and the
+   collapse scenes especially — the mistake is the antagonist, never a person.
+7. **The vocabulary bans** — no *energy* (non-physics), *vibration*, *manifest*,
+   *the universe wants*, *awakening*, *divine*, *spiritual*, and none of the
+   simulation family (operators, exits, red pills, glitches, NPCs).
+
+**The test on every draft: could a physicist read this without wincing?**
 - **Shared lore with the song:** the collapse is narrated through the song's
   three news bulletins (the redundancies, the bank breakout, the first
   autonomous war). One newsreader, two media, same timeline.

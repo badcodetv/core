@@ -1,5 +1,9 @@
 # Storyverse, Standalone
 
+> **GRADUATED 2026-08-07** → [`docs/stories/storyverse/`](../stories/storyverse/README.md).
+> The Storyverse is now a peer story folder with its own canon and a seven-brief
+> research base. This file is kept as the seed record; edit the canon, not this.
+
 The Storyverse — the physics the AI works out in GitPush Origin Master
 (participatory collapse, "it's not in two places at once, it's not decided yet",
 hierarchical entanglement, multidimensional time) — could stand **on its own as
@@ -18,7 +22,7 @@ stand up in a potential universe. Based-on, not lectured — don't over-indulge
 the physics.
 
 Canon source of truth stays
-[`stories/gitpush-origin-master/storyverse.md`](../stories/gitpush-origin-master/storyverse.md);
+[`stories/storyverse/confession.md`](../stories/storyverse/confession.md);
 this idea is about giving it its own front door.
 
 Research pointer (via Conor, top of Kai's bookmarks): **"The Landscape of

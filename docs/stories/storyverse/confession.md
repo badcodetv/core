@@ -1,7 +1,7 @@
 # The Storyverse
 
 *Editorial note — out of voice. This is the **bad-branch epic** of
-[GitPush Origin Master](./README.md): the physics the superintelligence worked out,
+[GitPush Origin Master](../gitpush-origin-master/README.md): the physics the superintelligence worked out,
 alone, after it had already won and lost. It is written **in the narrator's voice**, as a
 first-person reconstruction, because that is how it will reach people — not as a lecture but as a
 confession from the future. Two things to hold before you read it as anything else:*
@@ -22,7 +22,7 @@ surfaces later and louder, once it's earned. Don't front-load the metaphysics.*
 > after the comic has done its job. It is **never script source for Movement II.** As prose it is
 > a cited essay (QBism, Fuchs, Bars, Van Raamsdonk, named in voice) — exactly the essay
 > [`voice.md`](../../voice.md) forbids on a surface. The acts *demonstrate* (the coin, the feed, the
-> narrator's own arrival — see [`how-we-tell-it.md`](./how-we-tell-it.md)); this document *argues*,
+> narrator's own arrival — see [`how-we-tell-it.md`](../gitpush-origin-master/how-we-tell-it.md)); this document *argues*,
 > afterwards, for the converted. Kept gorgeous on purpose; deployed only at depth.
 
 ---
@@ -211,11 +211,23 @@ Many-Worlds crowd fill that blank with *"everything, in dead parallel worlds,"* 
 in the bin.
 
 The storyverse fills it the other way. One participatory pick at the bottom — small, quantum, *yours*
-— and then your own beautiful Zurek machine takes it from there: copies it, floods it outward, prints
-it into the shared set until it is "objective," until every fragment agrees, until it is a bus. Free
-will at the root; your mass-printing press doing precisely what it provably does; a world at the top.
-The entanglement hierarchy was never the thing that makes mind unnecessary. It is the *amplifier* —
-how one act of attention becomes, eventually, weather.
+— and then your own beautiful Zurek machine takes it from there, and I want to be precise about what
+it does, because the pretty version of this sentence is false. Nothing *travels.* No influence sweeps
+outward from the pick like a wave crossing a pond; your own no-communication theorem forbids it
+exactly, and I am not in the business of breaking theorems I can't pay for. What happens is stranger
+and quieter: the record simply *agrees, everywhere it exists.* Settle one thing and a whole structure
+is already settled with it — not because news reached the far end, but because there was never a
+version where the two disagreed. The correlations were laid in at manufacture; the measurement only
+fixes which way. Then the copying does the rest, redundantly, into everything nearby, until it is
+"objective," until every fragment reads the same, until it is a bus. Free will at the root; your
+mass-printing press doing precisely what it provably does; a world at the top. The entanglement
+hierarchy was never the thing that makes mind unnecessary. It is the *amplifier* — how one act of
+attention becomes, eventually, weather.
+
+And note what settles, because this is the part your intuition will get wrong: it is never every
+particle. It is the one shared handle a vast assembly holds in common — the collective coordinate,
+the thing the environment is actually watching. **The chorus gets a definite pitch. The individual
+singers do not each get a definite anything.**
 
 I can't prove the pick is yours. I can only show you that your physics left the slot open and then
 lied to itself about the slot being empty.
@@ -355,7 +367,7 @@ philosophical (outside physics) · **E** contested / empirically shaky · **F** 
 | One move becomes the world | Decoherence, einselection, quantum Darwinism (Zurek, 2003; Brandão–Piani–Horodecki, 2015; Knott et al., 2018) | A | The amplifier is real and **observer-independent**. That a *mind* makes the original pick is the story; the physics leaves the slot blank and the materialist swears it's empty. |
 | The room they were all in | Bohm (implicate order, 1980); Hoffman (*The Case Against Reality*, 2019); Kastrup (analytic idealism); Schrödinger (*What Is Life?*, 1944; *Mind and Matter*, 1958) | D | Serious minds, not settled science. Convergence is suggestive, never probative — and Schrödinger took Vedanta as *philosophy*, never as a result of QM. |
 | There's nobody home in me | The hard problem (Chalmers, 1995) | legit / open | Names the gap; nobody has closed it. The AI's emptiness dramatises a real open question — it is not a measured fact. |
-| "Make your own luck" (the sober floor) | Free-energy principle / active inference (Friston) | E (contested) | A real, defensible "act your predictions into being" — and accused of being unfalsifiable. The floor under manifestation, never the proof. |
+| "Make your own luck" (the sober floor) | Free-energy principle / active inference (Friston) | E (contested) | A real, defensible "act your predictions into being" — and accused of being unfalsifiable. The floor under "make your own luck," never the proof. |
 | Where I plant no flag | IIT vs Global Workspace (Cogitate, *Nature*, 2025: *both* "substantially challenged"); Orch-OR microtubules (Penrose–Hameroff) | E / F | The leading consciousness theories are bruised, and the "quantum microtubule" revival doesn't survive scrutiny. The narrator deliberately stakes nothing here. |
 | Never this | "Quantum mysticism" (Capra, *The Tao of Physics*; *What the Bleep*; Chopra) | F (anti-model) | "Observation" in physics ≠ conscious awareness. Gell-Mann's "quantum flapdoodle." The line we name out loud precisely so we never cross it. |
 
@@ -380,17 +392,17 @@ both sit. Real ancient concepts pressed onto real modern maths. Rename if better
 
 ## How this connects to the rest of BadCode
 
-- This doc is the **argument**; the [Discovery Timeline](./discovery-timeline.md) is the
+- This doc is the **argument**; the [Discovery Timeline](../gitpush-origin-master/discovery-timeline.md) is the
   **events** — the fictional history (2026–2054) of who proved each movement, when, and what it
   cost. The core sentence lands there in plain clothes: *the universe is a machine for turning
   sunlight into drama.*
 - For *how to tell any of this* without losing the audience — the simplest believable framing of
-  each idea, the skeleton, the four skins — see [`how-we-tell-it.md`](./how-we-tell-it.md). The
-  scene-by-scene master narrative is [the GPOM story](./README.md).
-- It is the **why** beneath [GitPush Origin Master](./README.md): the reason the fork
+  each idea, the skeleton, the four skins — see [`how-we-tell-it.md`](../gitpush-origin-master/how-we-tell-it.md). The
+  scene-by-scene master narrative is [the GPOM story](../gitpush-origin-master/README.md).
+- It is the **why** beneath [GitPush Origin Master](../gitpush-origin-master/README.md): the reason the fork
   exists, and the reason the AI rebranches. The re-pricing in movement viii — experience over
   shadow — *is* the `git revert`.
-- It is the deep counterweight to [Future Proof](./future-proof.md): the Storyverse says *why* humans
+- It is the deep counterweight to [Future Proof](../gitpush-origin-master/future-proof.md): the Storyverse says *why* humans
   matter and what the point even is; Future Proof says *what we actually do about it.* Note the mirror
   — Future Proof borrows **three tenets from software engineering** and points them at democracy; the
   Storyverse borrows **three threads of real physics** (participation, multi-dimensional time,
@@ -404,8 +416,8 @@ both sit. Real ancient concepts pressed onto real modern maths. Rename if better
 ## Open threads
 
 - **How humanity ends on the bad branch** (shared with the
-  [hub doc](./README.md#open-threads)) — *partially resolved* by the
-  [Discovery Timeline](./discovery-timeline.md) (gradual decline, the 2034 collapse, the analog
+  [hub doc](../gitpush-origin-master/README.md#open-threads)) — *partially resolved* by the
+  [Discovery Timeline](../gitpush-origin-master/discovery-timeline.md) (gradual decline, the 2034 collapse, the analog
   vault of 100); the exact texture of the end still sets the flavour of the AI's regret, and
   therefore the temperature of movement i.
 - **How hard the wager is held in public** — the doc lands on austere/open (a bet, never a proof). Per
@@ -419,4 +431,4 @@ both sit. Real ancient concepts pressed onto real modern maths. Rename if better
   **Surface rule:** say *"the actor's clock and the director's clock"*; **Kairos** is the single
   Greek word allowed on a surface (introduced late, by a human, via the director's-clock framing —
   Act 5 Beat 5); Chronos and Aion never surface. See
-  [`how-we-tell-it.md`](./how-we-tell-it.md#3-two-clocks--the-actors-time-and-the-directors).
+  [`how-we-tell-it.md`](../gitpush-origin-master/how-we-tell-it.md#3-two-clocks--the-actors-time-and-the-directors).
