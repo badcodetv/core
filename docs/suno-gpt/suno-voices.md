@@ -318,3 +318,30 @@ Two rules that fall out:
   The children generated reliably — the casting was simply wrong. Adding `dark, flat, deadpan` to a
   wholesome prior buys very little; moving to a category whose default is already grave buys
   everything.
+
+### 8. The Exclude box is global — it cannot protect one section from another's voice
+
+The corollary to §6, and the thing that makes the parenthesis seam so valuable. Excludes have **no
+section scope**. On a track whose verses are a solo male narrator and whose chorus must be a crowd,
+you cannot ban `solo male vocal` to defend the chorus — it strips the verses too. The Exclude box
+can only ban things that appear *nowhere* in the track.
+
+So when two voices compete for one slot, the levers are, in order: re-roll; escalate the wanted
+voice in the section cue; push the two apart with **treatment and distance** (close/dry vs
+far/reverberant), which is per-section because it lives in the cue; and finally the parentheses,
+which are the only genuinely *mechanical* per-section vocal control the platform offers. Reaching
+for the excludes here is a category error that quietly damages the part of the song that was working.
+
+### 9. Weirdness follows the same rule as model choice: cue-heavy tracks want obedience
+
+The house default is weirdness 60–65, the "creative sweet spot". GPOM's D&B cut tested materially
+better at **30**. That isn't a contradiction of §10's model finding — it's the same finding:
+
+> When a track's architecture lives in dense per-section bracket cues, every control should be set
+> toward **obedience**, not variety. That's why v5.5 beats 4.5 on these tracks, and it's why low
+> weirdness beats the creative sweet spot.
+
+Weirdness perturbs *within* the pools the prompt selects (§1), so on a track where the prompt is
+doing precise structural work — this voice here, that voice there, this section drops cold — the
+perturbation has nothing to add and plenty to disturb. Reserve 60–65 for tracks where you're
+shopping for a feel rather than executing an arrangement.
