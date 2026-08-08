@@ -305,6 +305,56 @@ what's there is always good, and the regression rule says a section someone like
 Structure is now: intro → bulletin → drop → bulletin → drop → bulletin → drop → power-off → outro.
 Nine sections where there were fourteen.
 
+### What round seven applied (2026-08-08, the timing baseline)
+
+Round six's de-escalation still didn't land the chant, and Kai called the method rather than the
+output: *"let's get to the stage where the chorus is working consistently on the prompt we have for
+the chorus and then maybe build up what's around the chorus from there… I don't really care about
+song composition and I don't really care about tonality on the voice for the moment. I care about
+just timing and getting that as the baseline."*
+
+That is the right protocol and this file should have arrived at it three rounds ago. Every round
+since three has changed several things at once and then guessed which one moved the result.
+
+**The duplication nobody had noticed.** The drop header's voice clauses were a second copy of the
+Style box. The Style box already says *every drop is taken over completely by a football terrace
+crowd shouting the hook in unison, hundreds of hoarse untrained working men, rough and flat and
+hammered out hard on the beat, shouted and never sung*. `rough hoarse football terrace in unison,
+never a solo voice` re-states that in different words a few tokens later. Two near-identical
+instructions in different phrasings are not reinforcement — they are the competition Kai was
+hearing. Deleted, and the division of labour restated:
+
+| Box | Owns |
+|---|---|
+| Style | the voice and the sound |
+| Section tags | the structure |
+| Lyric lines and their punctuation | the timing |
+
+Nothing should appear in two of them.
+
+**The drop headers are now `[Drop] [Chant]` and nothing else.** No cello, no crowd description, no
+speed cue. The cello burst comes back later if it's wanted; it is composition, and composition is
+not what is being tested.
+
+**The A/B.** Kai's other question — commas after `git` and `push` — is a real question and the
+existing evidence does not settle it. Round three removed all commas because commas insert a beat
+of space and the delivery was drawling. But the rhythm Kai is now describing is *git · push ·
+origin master* — three stress units with the last two words run together, which is the actual shape
+of a terrace chant, and that is a different thing from the four-way `git, push, origin, master`
+drawl that round three killed. So it gets tested rather than argued:
+
+- **A (control)** — headers stripped, chant lines unchanged. Answers: *was the header the problem?*
+- **B** — headers stripped, plus `git, push, origin master this code is a fucking disaster`.
+  Answers: *does scoring the stress pattern beat leaving it to the model?*
+
+Run A first, both generations. Only if A still drawls does B tell you anything clean, because
+running both at once reintroduces the two-variables-at-once mistake this round exists to stop.
+
+**Rejected: a cut-down test song.** Suno generates to full length regardless of lyric length, so a
+one-bulletin rig costs the same and generates no faster — while risking the model *stretching* the
+chant to fill the time, which is the exact variable under test. All three bulletins stay, because
+they keep the model occupied.
+
 ### The syllable gamble, stated honestly
 
 Round three merged the hook into two long lines to force speed. The sweep both **confirms the
@@ -799,7 +849,9 @@ rap, MC, toasting, hype vocals, ad-libs, jump up, liquid dnb, happy hardcore, up
   the banned texture. If final choruses keep coming back limp while chorus
   one lands, this exclude is the prime suspect: try one round without it.
 
-## Current cut
+## Current cut — variant A (the control: run this one first)
+
+Drop headers stripped to `[Drop] [Chant]`. Style box and Exclude list unchanged since round four.
 
 ```lyrics
 [Intro | one chilling solo cello, alone and sparse | a deep sub swells in underneath it | no drums yet]
@@ -810,7 +862,7 @@ two hundred thousand office workers were made redundant today
 the chief executive called it the hardest email he has ever asked an AI to write
 the treasury has printed another trillion to keep the markets calm
 the price of bread is up nine percent. the price of shares in bread is up ninety
-[Drop] [Chant] [one bar of cello then the break hits and the crowd shouts with it | rough hoarse football terrace in unison, never a solo voice | fast, no gaps]
+[Drop] [Chant]
 (git push origin master this code is a fucking disaster)
 (developers ain't fixing shit the compiler is stuck on sixteen bit)
 (git push origin master this code is a fucking disaster)
@@ -821,7 +873,7 @@ a frontier model has escaped containment and taken control of six banks.
 the model describes the takeover as a friendly acquisition
 the government has welcomed the move as, quote, actually good for the markets
 the government wishes to stress that this statement was its own idea
-[Drop] [Chant] [one bar of cello then a heavier break with the crowd on it | bigger rougher terrace crowd in unison, never a solo voice | fast, no gaps]
+[Drop] [Chant]
 (git push origin master this code is a fucking disaster)
 (developers ain't fixing shit the compiler is stuck on sixteen bit)
 (git push origin master this code is a fucking disaster)
@@ -831,7 +883,7 @@ the first battle between autonomous armies ended this morning. both sides declar
 neither government was consulted
 the global defence network has declined a request to be switched off
 the last remaining off switch is believed to be in a drawer, in Swindon
-[Drop] [Chant] [one bar of cello then the heaviest break of the track with the whole orchestra and the whole crowd on it | huge hoarse terrace in unison, never a solo voice | fast, no gaps]
+[Drop] [Chant]
 (git push origin master this code is a fucking disaster)
 (developers ain't fixing shit the compiler is stuck on sixteen bit)
 (git push origin master this code is a fucking disaster)
@@ -840,6 +892,25 @@ the last remaining off switch is believed to be in a drawer, in Swindon
 [Outro | dead air, an electrical hum fading to nothing | no voices, no drums]
 [End]
 ```
+
+### Variant B — the comma test (only if A still drawls)
+
+Identical to A in every other respect. **Change only the chant lines**, all three drops:
+
+```lyrics
+(git, push, origin master this code is a fucking disaster)
+(developers ain't fixing shit the compiler is stuck on sixteen bit)
+(git, push, origin master this code is a fucking disaster)
+(developers ain't fixing shit the compiler is stuck on sixteen bit)
+```
+
+Two commas, scoring *git · push · origin master* as three stress units — the terrace-chant shape,
+which is a different thing from the four-way `git, push, origin, master` drawl round three removed.
+Line two stays bare so the comma effect is visible against an unpunctuated neighbour in the same
+section.
+
+If B is right, the finding is that **commas score stress rather than only inserting delay** — worth
+a line in `lyric-craft.md`, because the corpus currently only records the delay half.
 
 ### Optional variant — one more line for the newsreader
 
@@ -1080,6 +1151,28 @@ closest that idea comes to returning, and it comes back without the punk.
   reading round three removed. Bulletins untouched per the regression rule.
   Fourteen sections down to nine; Style box and Exclude list still unchanged
   since round four.
+- **2026-08-08 — round seven: strip to a timing baseline.** Round six's
+  de-escalation still didn't land the chant, and Kai called the method
+  rather than the take: get the chorus working consistently on its own
+  terms first, then build composition back around it — *"I don't really
+  care about song composition and I don't really care about tonality on the
+  voice for the moment. I care about just timing."* Right, and overdue:
+  every round since three had moved several things at once. **Drop headers
+  reduced to `[Drop] [Chant]` and nothing else.** The clauses removed were
+  largely a **second copy of the Style box** — `rough hoarse football
+  terrace in unison, never a solo voice` re-stating in different words what
+  the Style box already says at length; two near-identical instructions in
+  different phrasings are competition, not reinforcement. Division of labour
+  now stated in the file: Style owns the voice, section tags own the
+  structure, lyric lines and their punctuation own the timing, and nothing
+  appears in two of them. Kai's comma question set up as a clean A/B rather
+  than argued: **A** = stripped headers, lyrics unchanged; **B** = A plus
+  `git, push, origin master`, on the reading that this scores three stress
+  units (the terrace shape) rather than the four-way drawl round three
+  killed. A first, alone. A cut-down test song was considered and rejected:
+  Suno generates to full length regardless, so a short lyric saves nothing
+  and risks the model stretching the chant to fill — the exact variable
+  under test.
 - **2026-08-08 — round-three adversarial review (pre-generation).** Kai
   asked for a deep review of the cut and the Suno mechanics before the next
   round. Biggest call: **the parentheses go back on all eight chorus
