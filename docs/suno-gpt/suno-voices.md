@@ -266,3 +266,55 @@ delivery. A character asked to do two registers in one song (GPOM's narrator: sp
 a booming chant) is therefore a worse clone source than one who does a single register throughout.
 **Recasting the second register onto somebody else doesn't just fix the casting — it purifies the
 clone's source material.** Worth checking whenever a lead is being asked to do two things.
+
+### 6. The lead/backing seam is per *line* — punctuation is a casting tool
+
+Added 2026-08-08, from GPOM's D&B cut. §2 established that the parenthesis slot escapes the lead's
+vocal prior. Round one showed the boundary is finer than "sections": **leaving a single line of an
+otherwise-parenthesised chorus unbracketed hands that one line back to the lead slot.**
+
+It surfaced as an accident. The chorus was written entirely in parentheses for a crowd, but the
+fourth line — the longest and most syntactically complete of the four — kept coming back in the
+*lead* voice, because a massed unison prior can't sustain a full clause. Rather than fight it, it
+became the arrangement: three lines chanted by the crowd, the fourth answered by the narrator alone.
+
+So genuine call-and-response is available **inside one section, in one generation, with no second
+Voice** — you write it with brackets:
+
+```
+(slogan line — crowd)
+(slogan line — crowd)
+(slogan line — crowd)
+answer line — lead
+```
+
+Two practical corollaries:
+
+- **Give the lead the line that suits its register.** GPOM's lead line is the driest, most clinical
+  one in the hook, which is why the handoff reads as authorial rather than arbitrary.
+- **It's also a swearing valve.** Profanity assigned to the parenthesised crowd keeps a narrator's
+  composure intact while the song still swears — the fix for "that voice shouldn't be saying that"
+  is usually reassignment, not rewriting.
+
+### 7. An ironic vocal choice is the satire trap wearing a different hat
+
+GPOM's chorus was first cast as schoolchildren — kids deadpanning the news, the *Another Brick in
+the Wall* move. It read beautifully in the design doc and generated wrong: Suno has one dominant
+register for a children's choir and it is **school assembly** — sweet, thin, twee, well-behaved. It
+fought the dread instead of deepening it.
+
+The general lesson, and it's the vocal-casting twin of the satire trap in the skill: **a concept
+being funny or chilling *in description* is not evidence the model can render it that way.** Where a
+vocal category has one strong wholesome prior, irony is not reachable by stacking adjectives on it —
+the prior wins, exactly as the genre's vocalist pool wins over voice adjectives (§1).
+
+Two rules that fall out:
+
+- **Cast performance traditions, not demographics or concepts.** "Gospel choir", "cathedral choir",
+  "football-terrace chant" are traditions the model has heard performed and can play straight. "A
+  room of ordinary people", "a crowd of workers" have no prior to land on and average into nothing.
+  (This is §4's "name a performance tradition" rule, applied to groups rather than soloists.)
+- **When a cast choice fails on *tone* rather than identity, replace the category, don't adjust it.**
+  The children generated reliably — the casting was simply wrong. Adding `dark, flat, deadpan` to a
+  wholesome prior buys very little; moving to a category whose default is already grave buys
+  everything.
