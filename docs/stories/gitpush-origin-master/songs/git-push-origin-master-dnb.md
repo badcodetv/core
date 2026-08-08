@@ -15,6 +15,104 @@ The club sibling of
 Same story, same bulletins, same four-line hook. **The orchestral cut stays
 the canonical master and is not touched by this file.**
 
+## Start here — the running order
+
+You have one orchestral take with a narrator everyone likes, and no Voice
+built yet. Four stages, in this order.
+
+### Do we attach a Voice to this track or not? — build it, don't attach it yet
+
+The two halves of that question have different answers, and conflating them
+is the trap:
+
+- **Build `BC-NEWSREADER` now, before anything else.** Not for this song —
+  for the story videos, and as insurance. Right now the best vocal
+  performance we own exists as exactly one artifact in a Suno workspace.
+- **Don't attach it to round one of this track.** The orchestral cut landed
+  its narrator **prompt-only, first time, no saved Voice**. And a Voice has
+  no section scope: it's a whole-track vocal identity, so **every reason to
+  attach it is also a reason the children's chorus gets harder.** It is the
+  fallback for a specific failure, not the default setup.
+
+### Stage 0 — build `BC-NEWSREADER` off the orchestral take (~10 min, once)
+
+1. On the orchestral take: three dots → **Remix → Voice**.
+2. **Select a sub-region containing one bulletin only.** Spoken register,
+   never a chorus — a clip that switches between speaking and chanting makes
+   an unstable clone. 15 clean seconds beat 60 contaminated ones; up to ~2
+   min clones more stably.
+3. **Delete the attached style prompt.** Miss this and the Voice is welded
+   to the orchestra and won't travel to a D&B track. This is the one
+   irreversible-feeling mistake in the sequence.
+4. Name it `BC-NEWSREADER`. Done — it's now available to every future track
+   and video.
+
+*Why this route and not `Voice → Create voice` → upload:* that path runs
+Suno's ownership check (read a phrase aloud, matched against the reference),
+which is built for proving a **human** voice is yours — expect friction or a
+hard block on a synthetic one. Remix → Voice has no such check. If the clone
+comes out weak, upgrade the *source* rather than the route: three dots →
+**Get stems / MIDI** → **advanced split** (regenerates stems instead of
+spectrally carving them — much cleaner) → vocals → WAV → trim to a
+bulletins-only pass in a DAW → then clone from that.
+
+### Stage 1 — pre-flight (the step that silently ruins round one)
+
+1. **Swap My Taste.** Profile → My Taste → replace the whole box with this
+   file's block. If Camping's profile is still loaded you will get a Scouse
+   MC; if the orchestral cut's is still loaded you will get an orchestra with
+   no drums. It cannot be disabled, only replaced.
+2. Create → **Advanced Mode**, model **v5.5**.
+3. Separate workspace/folder for this cut if you can — and thumbs-down every
+   reject as you go. That's the only lever on the half of My Taste that
+   learns from your library without a control surface.
+
+### Stage 2 — round one, with the Voice selector untouched
+
+1. **Four pastes, in order: My Taste → Style → Exclude Styles → Lyrics.** All
+   four, from this file, every round. Never "Reuse Prompt" — it silently
+   carries stale boxes, and a stale Lyrics box is inaudible as such; it just
+   sounds like the Style box is being ignored.
+2. Style influence **75**, weirdness **60**. **Do not touch the Voice
+   selector.**
+3. Generate **3–4 takes**.
+4. Judge each on exactly four questions — conflating them is why AI-music
+   feedback is usually useless:
+
+   | # | Question | If it fails |
+   |---|---|---|
+   | 1 | Are the bulletins **spoken** by a calm RP newsreader — not rapped, not an MC, not sung? | Re-roll twice, then the spoken-word ladder, then Stage 3 |
+   | 2 | Does the chorus **drop** — full break, cold, no build? | Re-roll; check `[Chorus | THE DROP …]` cue survived |
+   | 3 | Is the chorus **fast** — the quatrain twice through, not drawled? | Run the quatrain three times instead of twice |
+   | 4 | Are the chorus voices **children**, with the newsreader absent? | **Check the parentheses survived the paste first** |
+
+   Question 4's fix is almost always mechanical, not creative: the `( )` are
+   the entire casting mechanism and they're the easiest thing to lose in a
+   copy-paste.
+
+5. **If question 1 passes, you're done with the Voice question for this
+   track.** Don't attach it. Keep `BC-NEWSREADER` for the videos and for
+   holding the character across EP1.
+
+### Stage 3 — only if the newsreader loses the lead slot
+
+Symptoms: rhythmic delivery, bars landing on the beat, swing nobody asked
+for, hype energy. That's the D&B vocalist pool asserting itself, and no
+adjective stack jumps pools.
+
+1. **+ on Voice** → `BC-NEWSREADER`. The audio-influence slider appears:
+   **40–60**. Re-paste all four boxes fresh.
+2. Drifting? Raise to **70+** and accept artifacts.
+3. **Expect the chorus to get harder from here.** That's the leak, and it's
+   the price of the fallback — which is exactly why Stage 2 comes first.
+4. Voice right but audio rough → **two-pass down**: Remix → **Cover**, same
+   style and lyrics, audio influence **~25–40**.
+5. Once the Voice pins the lead, **strip `rap, MC, ragga chat, toasting`
+   from the excludes** — that armour was protecting the lead slot the Voice
+   now owns, and it suppresses backing texture we want.
+
+When you move to another track, swap My Taste again.
+
 ## What this cut is fixing
 
 The orchestral master works, and the part that works hardest is the
