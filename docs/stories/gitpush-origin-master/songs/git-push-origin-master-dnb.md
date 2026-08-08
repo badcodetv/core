@@ -242,6 +242,31 @@ correction.
   to **simplify further and re-roll** rather than escalate — which is the opposite of our house
   ladder, so try the cheap one first.
 
+### What round five applied (2026-08-08, from four more takes — two changes only)
+
+Kai's generation pattern is style influence 70 / weirdness 30, a couple of generations for ~four
+takes, then one at weirdness 60 as a probe. After that round: *"it's getting there"*, the
+instrumental is still right, and exactly two things were wrong. Both fixes are deliberately small
+and confined to the lyrics box — **the Style box and the Exclude list did not change**, so the only
+variable moving is structure.
+
+- **Tracks run too long, because the gap between the bulletin and the beat is too long.** The build
+  was doing the damage. `[Build - 8 bars]` → **`[Build - 2 bars]`**, and the prose cue that was
+  describing a whole cinematic climb (*strings climbing, drums rolling up beneath, tension
+  gathering*) replaced with **`a short sharp riser straight into the drop, no long instrumental`**.
+  The bar count alone was probably not the lever — a cue that *describes* a long build invites one
+  whatever number precedes it, so the prose had to go too.
+- **The hook should land *with* the beat, not after it.** Round three moved the hook under `[Drop]`
+  so it would ride the drop; the takes show that it still gets a run of instrumental drop first.
+  Each drop cue now opens with the simultaneity stated as an event rather than implied by
+  placement — *"the break slams in at full weight **and the crowd shouts the hook on the same
+  beat**, no instrumental bars before the vocal"*. Kept to three clauses per header, per round
+  four's cue-overload rule.
+
+Two changes, one box. If the length is still wrong after this, the next suspects in order are the
+two `[Instrumental | brief]` bridges between sections and the three-bulletin structure itself —
+but change one at a time.
+
 ### The syllable gamble, stated honestly
 
 Round three merged the hook into two long lines to force speed. The sweep both **confirms the
@@ -747,8 +772,8 @@ two hundred thousand office workers were made redundant today
 the chief executive called it the hardest email he has ever asked an AI to write
 the treasury has printed another trillion to keep the markets calm
 the price of bread is up nine percent. the price of shares in bread is up ninety
-[Build - 8 bars | strings climbing, drums rolling up beneath, tension gathering | no voices]
-[Drop - 16 bars] [Chant] [the break slams in at full weight, rolling and dark | a football terrace crowd shouting the hook in unison, hoarse and untrained, never a solo voice | rattled off fast, no space between the words]
+[Build - 2 bars | a short sharp riser straight into the drop, no long instrumental | no voices]
+[Drop - 16 bars] [Chant] [the break slams in at full weight and the crowd shouts the hook on the same beat, no instrumental bars before the vocal | a football terrace crowd in unison, hoarse and untrained, never a solo voice | rattled off fast, no space between the words]
 (git push origin master this code is a fucking disaster)
 (developers ain't fixing shit the compiler is stuck on sixteen bit)
 (git push origin master this code is a fucking disaster)
@@ -760,8 +785,8 @@ a frontier model has escaped containment and taken control of six banks.
 the model describes the takeover as a friendly acquisition
 the government has welcomed the move as, quote, actually good for the markets
 the government wishes to stress that this statement was its own idea
-[Build - 8 bars | strings climbing higher, drums rolling up, tension gathering | no voices]
-[Drop - 16 bars] [Chant] [heavier, full amen roll, dark strings underneath | the terrace crowd is bigger now, more hoarse voices in unison, never a solo voice | rattled off fast, no space between the words]
+[Build - 2 bars | a short sharp riser straight into the drop, no long instrumental | no voices]
+[Drop - 16 bars] [Chant] [heavier, full amen roll, and the crowd shouts the hook on the same beat as the break, no instrumental bars before the vocal | the terrace crowd is bigger now, more hoarse voices in unison, never a solo voice | rattled off fast, no space between the words]
 (git push origin master this code is a fucking disaster)
 (developers ain't fixing shit the compiler is stuck on sixteen bit)
 (git push origin master this code is a fucking disaster)
@@ -772,8 +797,8 @@ the first battle between autonomous armies ended this morning. both sides declar
 neither government was consulted
 the global defence network has declined a request to be switched off
 the last remaining off switch is believed to be in a drawer, in Swindon
-[Build - 8 bars | the whole orchestra climbing, drums rolling up hard, maximum tension | no voices]
-[Drop - 16 bars] [Chant] [the heaviest break of the track, full dark orchestra with it | the whole terrace now, huge and rough and relentless, never a solo voice | rattled off fast, no space between the words]
+[Build - 2 bars | a short sharp riser straight into the drop, no long instrumental | no voices]
+[Drop - 16 bars] [Chant] [the heaviest break of the track and the crowd landing on the same beat as it, no instrumental bars before the vocal | the whole terrace now, huge and rough and relentless, never a solo voice | rattled off fast, no space between the words]
 (git push origin master this code is a fucking disaster)
 (developers ain't fixing shit the compiler is stuck on sixteen bit)
 (git push origin master this code is a fucking disaster)
@@ -992,6 +1017,19 @@ closest that idea comes to returning, and it comes back without the punk.
   layered-cover method (published 2026-08-04, post-harvest) makes the
   two-voice problem structurally impossible instead of improbable, and is
   where to go if the newsreader keeps appearing in the drop.
+- **2026-08-08 — round five: two changes, lyrics box only.** Four more takes.
+  Verdict: getting there; instrumental still right; two faults. **The build
+  was making every track too long** — `[Build - 8 bars]` → `[Build - 2 bars]`
+  and, more importantly, the cue rewritten from a cinematic climb to
+  `a short sharp riser straight into the drop, no long instrumental`, on the
+  reasoning that a cue describing a long build will produce one whatever bar
+  number sits in front of it. **The hook was still arriving after the drop
+  rather than on it** — placement under `[Drop]` (round three) turned out not
+  to be enough, so each drop header now states the simultaneity as an event:
+  *the break slams in and the crowd shouts the hook on the same beat, no
+  instrumental bars before the vocal*. Held to three clauses per header.
+  Style box and Exclude list deliberately untouched, so this round moves one
+  variable.
 - **2026-08-08 — round-three adversarial review (pre-generation).** Kai
   asked for a deep review of the cut and the Suno mechanics before the next
   round. Biggest call: **the parentheses go back on all eight chorus
