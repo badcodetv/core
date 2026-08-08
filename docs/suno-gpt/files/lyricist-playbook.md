@@ -29,6 +29,13 @@ Consequences, and they are load-bearing:
 - Ranges quoted as precise (`6–12 syllables`, `90% / 70% / 50% bracket compliance`) are folk
   numbers. Use them as directional, never as thresholds.
 
+**The regression rule — the most important line in this file.** *Never* apply anything here to a
+track that is already working, on the strength of this file alone. Assertion-grade advice is for
+sections that are **failing**; a section someone likes is evidence, and evidence outranks a blog
+post. Concretely: `songs/git-push-origin-master-orchestral.md` is a finished, liked track built on
+exactly the dense multi-clause bracket cues §3 warns against. It is not a bug to be fixed. If this
+file's advice and a take you like disagree, the take wins.
+
 ---
 
 ## 1. Delivery speed and timing
