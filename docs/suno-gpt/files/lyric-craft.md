@@ -211,6 +211,52 @@ Within lyrics, punctuation and typography modify how Suno performs specific word
 - Use exclamation points only when the line should be belted or shouted, and use them sparingly (overuse causes hallucination in some Suno versions)
 - Use parentheses to mark backing vocals, harmonies, or call-and-response parts
 
+### Punctuation is the brake — the timing table
+
+> **Added 2026-08-08** from the GPOM D&B chorus, which kept drawling. Consistent across four
+> independent practitioner sources. This is the single most useful thing in this file when a
+> delivery is the wrong speed.
+
+The governing mechanism:
+
+> **Suno allocates a musical phrase per lyric *line*, then fits that line's syllables into it.**
+> Delivery speed is a function of syllable density per line — not of any tempo instruction.
+
+| Written | Effect on delivery |
+|---|---|
+| **More syllables on one line** | **Faster** — compressed to fit the phrase |
+| Few syllables on one line | **Slower** — stretched across the phrase |
+| **Comma** | **A beat of inserted space** |
+| Full stop | A complete break — full breath, pitch reset |
+| Line break | A longer pause between phrases |
+| Ellipsis `...` | A slow trailing pause; the vocal drifts off |
+| Hyphen inside a word (`to-night`) | **Stretches** the note. A brake, not an accelerator |
+| No punctuation at all | A "wall of words" that gets **rushed** |
+
+**Read the rest of the internet backwards.** Nearly every guide on this subject is written to *fix*
+rushing — "four to six words per line maximum, short phrases, space to breathe." When you want a
+fast chant, patter, rap or terrace hook, that advice inverted is the recipe: **merge lines, strip
+all punctuation, push well past the 6–10 syllables per line that the guides call midtempo.**
+
+Two traps this exposes, both walked into on GPOM:
+
+- **Commas added for "even spacing" buy the spacing by inserting pauses.** A hook written
+  `git, push, origin, master` to stop the phrasing drifting produced *git — push — origin —
+  master*: the exact drawl being complained about.
+- **A cue describing the metre in words can ask for the wrong one.** `one word per beat, locked to
+  the grid` reads as precision but *is* a slow delivery at 174 BPM. Describe the density you want
+  (`rattled off fast, no space between the words`), never a beat count.
+
+**Casting corollary.** Merging short lines into long ones also reduces lead-slot leakage: a short
+standalone line containing a complete clause reads as a lead answer and gets claimed by the lead
+voice, while the same clause absorbed into the tail of a long rushed line does not. See
+[`../suno-voices.md`](../suno-voices.md) §6.
+
+*Recorded but untested:* `[Tempo: 140 BPM]` / `[Tempo Change: 140 BPM]` appear in two independent
+tag references as mid-song tempo controls. Unattested in the ChillPanic corpus, and tempo-*shape*
+tags (half-time/double-time) are exactly where Suno is documented to be weakest — treat density as
+the real lever and this as a long shot.
+
 ### The blank-line technique
 
 An extra blank line within a section creates a longer pause for instrumental fill or vocal reset. This is one of the strongest performance controls available. Use it deliberately to mark:

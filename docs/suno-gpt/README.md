@@ -39,6 +39,14 @@ scripts/fetch-youtube-transcripts.sh \
 Raw transcripts are research input and are deliberately **not committed** — the distilled guidance
 here is the artifact.
 
+**Post-harvest additions** (the channel keeps publishing; the harvest is a snapshot):
+
+| Added | Source | Landed in |
+|---|---|---|
+| 2026-08-08 | ChillPanic, *"Finally! Use TWO VOICES in ONE SUNO AI SONG"* (published 2026-08-04) | `files/suno-controls-and-workflows.md` §4a — the layered-cover method |
+
+Re-run the harvest script with a date filter to catch up on anything newer.
+
 ### Two things to know when weighing any of it
 
 **The original GPT and the video channel are the same author.** That makes the corrections unusually
@@ -49,6 +57,14 @@ failed.
 **Suno publishes no meta-tag list and no slider guidance.** This entire domain is folk knowledge
 discovered by trial. Treat confident claims — including ours — as testable, not settled. Where the
 corpus reports a controlled A/B test, that is noted inline.
+
+**The corpus has a shape, and it is a producer's.** ChillPanic is a working music producer, so the
+distillation is strong on sliders, model choice, Studio, stems, mixing and workflow — and thin on
+everything a *lyricist* controls. This was found the hard way on 2026-08-08: the single most useful
+discovery of a day's work on the GPOM chorus (that delivery speed is syllable density per line, and
+that commas insert beats of silence) appears nowhere in 184 transcripts, and came from
+songwriter-facing sources instead. When a lyric-side question comes up, assume this knowledge base
+may simply not cover it and search outward.
 
 ## Known-unreliable claims
 

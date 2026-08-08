@@ -358,47 +358,16 @@ doing precise structural work — this voice here, that voice there, this sectio
 perturbation has nothing to add and plenty to disturb. Reserve 60–65 for tracks where you're
 shopping for a feel rather than executing an arrangement.
 
-### 10. Delivery speed is syllable density per *line* — punctuation is the brake
+### 10. Delivery speed is syllable density per *line* — *moved*
 
-Researched 2026-08-08 for GPOM's D&B chorus, which kept drawling. The mechanism is consistent
-across every practitioner source found, and it is not what we assumed:
+**This finding now lives in [`files/lyric-craft.md`](./files/lyric-craft.md)** → "Punctuation is
+the brake — the timing table", which is where a lyricist will look for it. It is not a voice-identity
+finding; it is lyric delivery.
 
-> **Suno allocates a musical phrase per lyric line, then fits that line's syllables into it.**
-> Delivery speed is a function of syllable density per line — not of any tempo instruction.
-
-| Written | Effect |
-|---|---|
-| More syllables on one line | **Faster** — compressed to fit the phrase |
-| Few syllables on one line | **Slower** — stretched across the phrase |
-| Comma | A beat of inserted space |
-| Full stop | A complete break — breath, pitch reset |
-| Line break | A longer pause between phrases |
-| Ellipsis `...` | Slow trailing pause |
-| Hyphen (`to-night`) | **Stretches** the note — a brake, not an accelerator |
-| No punctuation | A "wall of words" that gets **rushed** |
-
-**Read the literature backwards.** Practically every guide on this is written to *fix* rushing —
-"four to six words per line maximum, short phrases, space to breathe." When you want a fast chant,
-rap, patter or terrace hook, that advice inverted is the recipe: merge lines, strip all punctuation,
-push well past the 6–10 syllables per line the guides call midtempo.
-
-Two traps this exposes, both of which we walked into:
-
-- **Commas added for "even spacing" buy the spacing by inserting pauses.** GPOM's hook was written
-  `git, push, origin, master` to stop the phrasing drifting; it produced *git — push — origin —
-  master*, the exact drawl being complained about.
-- **A cue that describes the metre in words can ask for the wrong one.** `one word per beat, locked
-  to the grid` reads as precision but *is* a slow delivery at 174. Describe the density you want
-  (`rattled off fast, no space between the words`), not a beat count.
-
-Corollary for casting (§6): merging short lines into long ones also **reduces lead-slot leakage**.
-A short standalone line containing a complete clause reads as a lead answer and gets claimed; the
-same clause absorbed into the tail of a long rushed line does not.
-
-Recorded but untested: `[Tempo: 140 BPM]` / `[Tempo Change: 140 BPM]` appear in two independent tag
-references as mid-song tempo controls. Unattested in the ChillPanic corpus, and tempo-*shape* tags
-(half-time/double-time) are where Suno is documented to be weakest — so treat density as the real
-lever and this as a long shot.
+One line of it belongs here, because it bears on casting: **merging short lines into long ones
+reduces lead-slot leakage.** A short standalone line containing a complete clause reads as a lead
+answer and gets claimed by the lead voice; the same clause absorbed into the tail of a long rushed
+line does not. See §6.
 
 ### 11. Two performance traditions in one clause do not average — the dominant one wins
 

@@ -186,6 +186,75 @@ no other Suno D&B track has.
 
 ---
 
+## 4a. Two voices in one song — the layered-cover method
+
+> **Added 2026-08-08** from ChillPanic, *"Finally! Use TWO VOICES in ONE SUNO AI SONG"*, published
+> **2026-08-04** — after the 2026-07-29 harvest, so it is not in the rest of this file. It is the
+> author's own answer to the problem §4 could only work around.
+
+**The premise: you do not get two voices out of one generation.** Every prompt-side trick (the
+parenthesis slot, section cues, one saved Voice per generation) is a way of *biasing* a single
+generation's vocal identity. This method stops fighting that and assembles the song instead — one
+generation per voice, stems, layered over a shared instrumental. The author is explicit that it is
+more work than prompting and argues that is the point: "this method requires a little bit more than
+just straight-up prompting, but by learning it, you will not only be able to use as many voices as
+you want."
+
+**The critical consequence for us: there is no leak, because the voices never share a generation.**
+Casting stops being probabilistic.
+
+### The procedure
+
+1. **Generate the instrumental first, alone.** Advanced tab (the author notes beats come out better
+   in Advanced than Simple), style prompt in the Styles box, **More options → Instrumental**.
+   Weirdness **0**, style influence **70**.
+2. **Read its BPM and write it down.** Open in the Editor or Studio to see it. This is the song's
+   "home base" — every later step is pinned to it.
+3. **Cover that instrumental once per voice.** Drag the instrumental into **remix/cover**, and pick
+   the saved Voice at the top if you have one.
+   - **Delete the style prompt entirely.** Replace it with *only the BPM*, optionally plus a
+     **vocal-delivery** description. `101 BPM, belted emotional chorus`.
+   - **Do not mention the instrumental at all** — that is the load-bearing instruction. You are
+     asking for a vocal performance, not a song.
+   - Lyrics box: real lyrics, or a prose description of what the singer sings.
+   - Sliders: **weirdness 0, style influence 100, audio influence 40** (40–60 whenever the result
+     must stick to the source).
+4. **Repeat for voice two against the *same instrumental*** — not against the take you just made
+   with voice one. The author corrects himself on camera specifically to say this.
+5. **Stem the lead vocal out of each cover.** Three dots → **Get stems / MIDI** → **advanced split**
+   → *lead vocal* → extract → download as **WAV**, **fixed tempo**. The zip is named with its BPM.
+6. **Open the original instrumental in Studio** (single track). Set BPM to **Manual** and type the
+   instrumental's BPM. This is the master tempo.
+7. **Drag each vocal stem onto its own track.**
+8. **Set every vocal track's tempo mode to `on beat`, not `original`.** (Click the clip, `4` opens
+   the sidebar.) **`on beat` time-stretches the vocal to the project BPM** — which is what
+   reconciles a vocal that generated at 102 against an instrumental at 101. Miss this and the
+   layers drift apart.
+9. Place, duplicate and treat freely — the author duplicates a rap vocal and EQs the copy into a
+   lo-fi radio effect for one section. Export as full song.
+
+### What it costs, and what it buys
+
+- **Expect the instrumental to change slightly on each cover, and expect extra vocals.** The author
+  says this repeatedly and says it does not matter: those covers exist only to be stemmed. The
+  instrumental you keep is the original from step 1.
+- **Each voice gets its own full style box and its own sliders** — so two voices can be described
+  in as much detail as one, instead of competing for one prompt's attention.
+- **"As many voices as you want"**, not two — the method has no ceiling. The single-generation limit
+  of 2–3 differentiated voices (§4, and `suno-voices.md` Thread 1) does not apply.
+- **Requires Pro or above** for stems, and a DAW or Studio. Any DAW works; Studio is used in the
+  video only because it is a Suno video.
+- **A saved Voice per character makes it stronger but is not required** — step 3 can carry the
+  voice in the style box as a delivery description instead.
+
+### When to reach for it
+
+Use prompting first: one generation that lands is cheaper than an assembly. Reach for this when the
+casting is the thing that keeps failing — two voices that must not blend, a voice that must be
+absent from one section, a chorus that keeps getting claimed by the lead. Those are exactly the
+failures that prompting cannot *guarantee* away, and this method makes them structurally impossible
+rather than improbable.
+
 ## 5. Building a track — the section-by-section loop
 
 Do **not** try to prompt a whole finished song in one shot.
