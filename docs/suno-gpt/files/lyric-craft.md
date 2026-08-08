@@ -238,11 +238,39 @@ rushing — "four to six words per line maximum, short phrases, space to breathe
 fast chant, patter, rap or terrace hook, that advice inverted is the recipe: **merge lines, strip
 all punctuation, push well past the 6–10 syllables per line that the guides call midtempo.**
 
+#### A comma marks a stress boundary — the delay is the side effect (**tested**, 2026-08-08)
+
+> This is the one finding in this file established by a controlled A/B rather than by reading
+> practitioners, and it **qualifies the table above**. Same song, same Style box, same everything
+> else; only the chant lines differed.
+
+The table says *comma = a beat of inserted space*, which is true and incomplete. What a comma
+actually does is **mark where one stress unit ends and the next begins**. The pause is how that
+boundary gets realised. So the number that matters is not how many commas you used — it is **how
+many stress units you carved the line into**.
+
+| Written | Units | Result |
+|---|---|---|
+| `git, push, origin, master` | 4 | *git — push — origin — master*. The drawl. **Failed** |
+| `git push origin master this code is a fucking disaster` | 1 | Even, but slack and unemphatic. **Failed** |
+| `git, push, origin master this code is a fucking disaster` | 3 | The terrace-chant shape. **Won** |
+
+Two commas beat zero commas *and* beat three commas, on the same line, in the same song. Which
+means the accelerator is not "strip all punctuation" — it is **match the number of stress units to
+the rhythm the phrase actually has when a human shouts it.** Say the line out loud as a crowd would
+and put a comma where the crowd takes a breath. For a chant that is usually two or three units, not
+one and not one-per-word.
+
+The general rule still holds — density accelerates, punctuation brakes — but "no punctuation at
+all" is a **wall of words that gets rushed**, and rushed is not the same as *driven*. A hook wants
+to be driven.
+
 Two traps this exposes, both walked into on GPOM:
 
 - **Commas added for "even spacing" buy the spacing by inserting pauses.** A hook written
   `git, push, origin, master` to stop the phrasing drifting produced *git — push — origin —
-  master*: the exact drawl being complained about.
+  master*: the exact drawl being complained about. Note that the fix was not *removing* the commas
+  (that line was slack) but **re-placing** them — see the tested finding above.
 - **A cue describing the metre in words can ask for the wrong one.** `one word per beat, locked to
   the grid` reads as precision but *is* a slow delivery at 174 BPM. Describe the density you want
   (`rattled off fast, no space between the words`), never a beat count.

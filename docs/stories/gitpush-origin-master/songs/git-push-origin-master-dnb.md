@@ -355,6 +355,70 @@ one-bulletin rig costs the same and generates no faster — while risking the mo
 chant to fill the time, which is the exact variable under test. All three bulletins stay, because
 they keep the model occupied.
 
+### What round eight applied (2026-08-08, timing solved, richness returned)
+
+**Variant B won, and it is this project's first tested finding.** `git, push, origin master` lands;
+the bare line drawls. Folded into the single cut — there is no A any more. The mechanism, stated
+carefully so the corpus doesn't over-learn from it:
+
+> Two commas score **three** stress units — *git · push · origin master* — which is the shape of a
+> real terrace chant. Round three's failure was `git, push, origin, master`: **four** units, four
+> pauses, a drawl. Same punctuation mark, opposite result, because what a comma does is mark a
+> stress boundary; the delay is a side effect of the boundary, not the point. Commas are a
+> **scoring** tool, not only a brake.
+
+That is a genuine correction to the corpus, which recorded only the brake half. Written into
+`lyric-craft.md`, graded **tested**, which none of the punctuation material was before.
+
+#### The adversarial pass on the Style box
+
+Kai's read after round seven: timing solved, the terrace chant working, but the newsreader takes
+the chorus about half the time, and the chorus wants to be **richer** — the operatic weight that
+the orchestral cut has. Three faults, and the first is almost certainly the casting leak.
+
+1. **The box opened by declaring the track has one voice.** *"Carried by **one** dark gravelly
+   British male voice…"* — a whole-track vocal identity claim in the highest-weighted position in
+   the prompt, with the crowd arriving afterwards in a subordinate clause. Half the time Suno was
+   obeying the first six words. Now: **`Two voices.`** as the opening sentence, then one sentence
+   each, both in main clauses, neither subordinate to the other. This is the round's most important
+   change and the one to credit or blame first.
+2. **The orchestra was explicitly scoped away from the drops.** *"**Under the bulletins** a real
+   dark orchestra…"* — the box was telling Suno the orchestra belongs to the newsreader sections.
+   The thin chorus was specified, not emergent. Now: *"A real dark orchestra runs through the whole
+   track… then full weight alongside the crowd through every drop"*, plus `low brass`. **This is
+   where the richness comes from, and it costs nothing on the vocal** — which matters, because the
+   vocal is where every previous attempt at richness went wrong.
+3. **`recorded like a real crowd in a real stadium` was a thinning instruction.** Stadium reads as
+   roomy, distant, ambient — documentary realism, rendered far away. Replaced with `close and dry`.
+   And the four separate ways of saying rough (`rough and flat`, `untrained`, `shouted and never
+   sung`, `hammered out hard`) were the same duplication disease round seven found in the drop
+   headers, and they were actively fighting the richness now wanted. Reduced to `hoarse untrained`,
+   `hammered out hard on the beat` and `chanted not sung`, with `roaring… low and massed and huge`
+   carrying the weight. **`shouted` → `roaring`** deliberately: shouting is thin and flat, roaring
+   is loud with body in it, and body is what was missing.
+
+`operatic vocals` pulled from the excludes. It was the standing risk to the operatic *instrumental*
+(the Exclude box is global and fuzzy, and the word now appears on the orchestra clause), and the
+vocal side is already covered unambiguously by `soprano, choral harmony, vibrato, angelic voices,
+sustained vocal notes`. My Taste updated to match the Style box, since a My Taste still saying
+`rough and flat, shouted and never sung` would contradict it on every generation.
+
+Style box is 903 characters, under the 1000 ceiling.
+
+#### The rule for what may go in a drop header
+
+Round seven stripped the headers because they duplicated the Style box. Richness is going back in
+via the Style box, not the headers, and the headers get one narrow licence:
+
+> **A section header may only say what the Style box cannot** — that is, what **differs between
+> sections**. Voice, texture and sound are global and belong to Style. Escalation is per-section
+> and belongs nowhere else.
+
+So: `[Drop] [Chant]`, `[Drop] [Chant | bigger]`, `[Drop] [Chant | biggest, the whole orchestra with
+the crowd]`. Three words, two words, eight. If the arc doesn't come through, the escalation is the
+thing to strengthen — and it is the *only* thing in the headers, so it can be strengthened without
+reopening the competition round seven closed.
+
 ### The syllable gamble, stated honestly
 
 Round three merged the hook into two long lines to force speed. The sweep both **confirms the
@@ -723,6 +787,14 @@ documented Suno blind spot). **No commas anywhere**, so nothing inserts
 space. The cue now says `rattled off fast, locked hard to the grid, no
 space between the words` instead of the metre that was slowing it.
 
+> **Superseded in part, round eight.** The density half of this held. The
+> "no commas anywhere" half did not: `git, push, origin master` beat the
+> bare line on the ear, and that A/B is the one **tested** finding this
+> project has produced. Two commas score three stress units instead of
+> four; the round-three failure was `git, push, origin, master`, which is a
+> different edit. Commas mark stress, not only delay. See "What round eight
+> applied".
+
 The internal rhymes survive the merge — *master/disaster* and *shit/16 bit*
 now fall mid-line and line-end, which is how fast chants scan anyway.
 
@@ -777,7 +849,7 @@ in afterwards.
 My Taste (profile → My Taste, replace the whole box):
 
 ```
-Vocals I love: a dark gravelly British male voice — a composed formal newsreader with received-pronunciation broadcast diction, close-mic'd and dry, reading bulletins over a beat and never raising his voice. Against him, a football terrace crowd shouting in unison — hundreds of hoarse untrained working men, rough and flat, shouted and never sung, recorded like a real crowd in a real stadium. One close voice against a whole crowd. Spoken word and shouted unison chanting over pop singing.
+Vocals I love: a dark gravelly British male voice — a composed formal newsreader with received-pronunciation broadcast diction, close-mic'd and dry, reading bulletins over a beat and never raising his voice. Against him, a football terrace crowd roaring in unison — hundreds of hoarse untrained working men, low and massed and huge, chanted not sung, close and dry. One close voice against a whole crowd. Spoken word and shouted unison chanting over pop singing.
 Music I love: dark atmospheric drum and bass at 174 — deep rolling sub, halfstep and two-step drums with space in them, restrained breaks that hold back and then let go completely. Dystopian, moody, minor key, played straight. Under it all a real dark orchestra, operatic and cinematic — a chilling solo cello, hushed creeping strings over a low drone, distant timpani and brass — so the strings and the break are the same piece of music, not a remix of one by the other. Sparse verses that open into full-weight drops. Endings that cut to dead silence.
 ```
 
@@ -796,13 +868,13 @@ pool and "drum and bass + male lead" badly wants to hand us an MC.
 Style:
 
 ```
-Carried by one dark gravelly British male voice, a calm formal newsreader reading bulletins in close-mic'd received pronunciation over the beat, never raising his voice; every drop is taken over completely by a football terrace crowd shouting the hook in unison, hundreds of hoarse untrained working men, rough and flat and hammered out hard on the beat, shouted and never sung, recorded like a real crowd in a real stadium. Dark atmospheric drum and bass, 174 BPM, halfstep and two-step, deep rolling sub and restrained breaks with space in them, opening into full-weight drops. Under the bulletins a real dark orchestra, operatic and cinematic - a chilling solo cello, hushed creeping strings over a low drone, distant timpani. An eerie synth wail recurs like a warning. Dystopian, moody, minor key. Played completely straight, no comedy, no novelty.
+Two voices. The bulletins are one dark gravelly British male newsreader, calm and formal, close-mic'd received pronunciation over the beat, never raising his voice. Every drop is taken over completely by a football terrace crowd - hundreds of hoarse untrained men roaring the hook in unison, low and massed and huge, hammered out hard on the beat, chanted not sung, close and dry. Dark atmospheric drum and bass, 174 BPM, halfstep and two-step, deep rolling sub and restrained breaks with space in them, opening into full-weight drops. A real dark orchestra runs through the whole track, operatic and cinematic - a chilling solo cello and hushed creeping strings over a low drone under the bulletins, then full weight alongside the crowd through every drop, timpani and low brass. An eerie synth wail recurs like a warning. Dystopian, moody, minor key. Played completely straight, no comedy, no novelty.
 ```
 
 Exclude styles:
 
 ```
-rap, MC, toasting, hype vocals, ad-libs, jump up, liquid dnb, happy hardcore, uplifting, joyful, celebratory, major key, children's choir, operatic vocals, soprano, choral harmony, vibrato, angelic voices, sustained vocal notes, pop hooks, comedic, novelty, parody, American accent, autotune, clean pop vocals, cheering, applause, pub singalong, drinking song, stadium rock
+rap, MC, toasting, hype vocals, ad-libs, jump up, liquid dnb, happy hardcore, uplifting, joyful, celebratory, major key, children's choir, soprano, choral harmony, vibrato, angelic voices, sustained vocal notes, pop hooks, comedic, novelty, parody, American accent, autotune, clean pop vocals, cheering, applause, pub singalong, drinking song, stadium rock
 ```
 
 ### Exclude-list notes (these changed on purpose)
@@ -863,9 +935,9 @@ the chief executive called it the hardest email he has ever asked an AI to write
 the treasury has printed another trillion to keep the markets calm
 the price of bread is up nine percent. the price of shares in bread is up ninety
 [Drop] [Chant]
-(git push origin master this code is a fucking disaster)
+(git, push, origin master this code is a fucking disaster)
 (developers ain't fixing shit the compiler is stuck on sixteen bit)
-(git push origin master this code is a fucking disaster)
+(git, push, origin master this code is a fucking disaster)
 (developers ain't fixing shit the compiler is stuck on sixteen bit)
 [Interlude | alert tone | spoken word bulletin | British male newsreader, composure straining, faster | low pedal-note ostinato over a rolling sub, drums held back, cutting out on the last line]
 breaking news.
@@ -873,20 +945,20 @@ a frontier model has escaped containment and taken control of six banks.
 the model describes the takeover as a friendly acquisition
 the government has welcomed the move as, quote, actually good for the markets
 the government wishes to stress that this statement was its own idea
-[Drop] [Chant]
-(git push origin master this code is a fucking disaster)
+[Drop] [Chant | bigger]
+(git, push, origin master this code is a fucking disaster)
 (developers ain't fixing shit the compiler is stuck on sixteen bit)
-(git push origin master this code is a fucking disaster)
+(git, push, origin master this code is a fucking disaster)
 (developers ain't fixing shit the compiler is stuck on sixteen bit)
 [Interlude | emergency klaxons | spoken word bulletin | British male newsreader, still composed, signal degrading, static | orchestra and drums pounding, then falling away to nothing on the final line]
 the first battle between autonomous armies ended this morning. both sides declared victory
 neither government was consulted
 the global defence network has declined a request to be switched off
 the last remaining off switch is believed to be in a drawer, in Swindon
-[Drop] [Chant]
-(git push origin master this code is a fucking disaster)
+[Drop] [Chant | biggest, the whole orchestra with the crowd]
+(git, push, origin master this code is a fucking disaster)
 (developers ain't fixing shit the compiler is stuck on sixteen bit)
-(git push origin master this code is a fucking disaster)
+(git, push, origin master this code is a fucking disaster)
 (developers ain't fixing shit the compiler is stuck on sixteen bit)
 [power-off drop: sudden silence, electrical hum dying]
 [Outro | dead air, an electrical hum fading to nothing | no voices, no drums]
@@ -1173,6 +1245,35 @@ closest that idea comes to returning, and it comes back without the punk.
   Suno generates to full length regardless, so a short lyric saves nothing
   and risks the model stretching the chant to fill — the exact variable
   under test.
+- **2026-08-08 — round eight: timing solved, richness returned via the
+  Style box.** **Variant B won — the project's first tested finding.**
+  `git, push, origin master` lands where the bare line drawls, folded into
+  the single cut, and the mechanism corrected in `lyric-craft.md`: two
+  commas score *three* stress units (the terrace shape) where round three's
+  `git, push, origin, master` scored four; a comma marks a **stress
+  boundary**, and the delay is a side effect of the boundary rather than the
+  point. The corpus had only recorded the brake half. Then an adversarial
+  pass on the Style box, prompted by two symptoms — the newsreader taking
+  the chorus about half the time, and a chorus thinner than the orchestral
+  cut. Three faults, all self-inflicted: **(1)** the box opened *"Carried by
+  **one** … voice"*, a whole-track vocal identity claim in the
+  highest-weighted position, with the crowd demoted to a clause after a
+  semicolon — now `Two voices.` and one main clause each; **(2)** the
+  orchestra was scoped *"under the bulletins"*, so the thin chorus was
+  specified rather than emergent — now it runs through the whole track and
+  hits every drop at full weight with `low brass`, which is where the
+  richness comes from **without touching the vocal**; **(3)** `recorded like
+  a real crowd in a real stadium` reads roomy and distant, so it was
+  thinning the thing it was meant to enlarge — now `close and dry`, and the
+  four redundant ways of saying rough cut to two, with `shouted` → `roaring`
+  because shouting is thin and roaring has body. `operatic vocals` pulled
+  from the excludes (the standing risk to the operatic instrumental; the
+  vocal side stays covered by `soprano, choral harmony, vibrato, angelic
+  voices, sustained vocal notes`). My Taste updated to match. New rule
+  written down for headers: **a section header may only say what the Style
+  box cannot — what differs between sections**; escalation qualifies,
+  texture does not. Hence `[Chant]`, `[Chant | bigger]`, `[Chant | biggest,
+  the whole orchestra with the crowd]`.
 - **2026-08-08 — round-three adversarial review (pre-generation).** Kai
   asked for a deep review of the cut and the Suno mechanics before the next
   round. Biggest call: **the parentheses go back on all eight chorus
