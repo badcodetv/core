@@ -4,7 +4,7 @@ status: drafting
 model: v5.5 (cue-heavy track — 5.5 obeys the bracket architecture; 4.5 shreds it)
 settings: style influence 75, weirdness 30
 bpm: 174
-voices: [newsreader (male, dark gravelly RP — the bulletins, and nothing else), the crowd (massed adult voices between a gospel choir and a football terrace — the whole of every chorus)]
+voices: [newsreader (male, dark gravelly RP — the bulletins, and nothing else), the terrace (hundreds of hoarse untrained men shouting in unison — the whole of every drop)]
 sibling: songs/git-push-origin-master-orchestral.md
 ---
 
@@ -83,14 +83,14 @@ bulletins-only pass in a DAW → then clone from that.
    | # | Question | If it fails |
    |---|---|---|
    | 1 | Are the bulletins **spoken** by a calm RP newsreader — not rapped, not an MC, not sung? | Re-roll twice, then the spoken-word ladder, then Stage 3 |
-   | 2 | Does the chorus **drop** — full break, cold, no build? | Re-roll; check `[Chorus | THE DROP …]` cue survived |
-   | 3 | Is the chorus **fast** — the quatrain twice through, not drawled? | Run the quatrain three times instead of twice |
-   | 4 | Is the **whole chorus** a massed crowd, with the newsreader nowhere in it? | Re-roll first; then the line-four ladder in the production notes |
+   | 2 | Does the hook ride a **drop** — full break, the chant on top of it, not a sung section beside it? | Re-roll; check the `[Build]` / `[Drop]` tags survived |
+   | 3 | Is the chant **fast** — each line rattled out in one breath, no gaps between words? | Density, not adjectives — see the timing section |
+   | 4 | Is it a **rough shouted crowd** — not high, not operatic, not sung, no solo voice? | Style box first, then the excludes; see the terrace section |
 
-   Question 4's known weak point is line four — the quatrain's one long
-   complete clause, and the line that historically leaked to the newsreader
-   even *through* a parenthesis. Also confirm the `( )` survived the paste;
-   they're the casting mechanism and the easiest thing to lose.
+   Questions 3 and 4 are the live ones. Confirm the `( )` survived the
+   paste — they're the casting mechanism and the easiest thing to lose — and
+   confirm **no commas crept back into the chant lines**, because a comma is
+   a beat of inserted space and it is what made the hook drawl.
 
 5. **If question 1 passes, you're done with the Voice question for this
    track.** Don't attach it. Keep `BC-NEWSREADER` for the videos and for
@@ -175,6 +175,45 @@ First generations off this file. Three things resolved and one still open:
   lines, but the parentheses went back on — see "The parentheses — settled
   by the evidence".)*
 
+### What round three settled (2026-08-08, from four generated takes)
+
+The first real listen to generated audio off this file. **The instrumental
+is right and is now locked** — the dark operatic orchestra and the D&B
+underneath are the track, and nothing below touches them. Everything else
+that came back was one of four problems, and three had the same root.
+
+- **The chant was slow.** *git — push — origin — master.* Root cause found
+  by research and it was self-inflicted: **commas are a beat of inserted
+  space**, four short lines add three more pauses, and the cue literally
+  asked for `one word per beat`. Fixed by density — see the timing section,
+  which is the most important part of this file.
+- **The chorus was operatic.** Too high, too dramatic, too *sung*. Root
+  cause: the Style box asked for it — `gospel choir`, `congregation`,
+  `singing`, `hall`, next to a full orchestra. Fixed by cutting the gospel
+  half entirely and going pure terrace.
+- **The newsreader still alternates into the chorus.** Consistent with the
+  known line-four leak rather than new. The line-merge should dissolve it
+  as a side effect (a short standalone clause reads as a lead answer; the
+  tail of a 19-syllable rush doesn't).
+- **The bulletins ran their opening lines together** — *good evening this is
+  the news* as one breath. **Kai's fix was already correct**: splitting onto
+  separate lines inserts a phrase-length pause, which is exactly the
+  documented behaviour of a line break. Kept as-is.
+
+**Structural change: `[Chorus]` is now `[Build]` + `[Drop]`.** Kai's read
+was that the hook should happen *during* the drum & bass drop rather than
+being a sung chorus that sits next to it. The tag vocabulary supports this
+directly — `[Build]`, `[Drop]` and `[Breakdown]` are the electronic-genre
+structure tags, and the guidance is to place `[Drop]` immediately above the
+lyric lines it governs, which is now how the lyrics are written. There's a
+second benefit: **the word "Chorus" was itself pulling toward a sung
+melodic chorus**, so renaming the section removes one more vote for the
+operatic reading. The `[Build]` also gives the operatic climb Kai liked a
+formal home instead of leaving it to chance — which does retire the "drops
+in cold, no transition" device inherited from the orchestral cut. That
+device was written for a track with no drums; a D&B drop wants tension
+before it.
+
 ### The thing the orchestral cut already got right
 
 Its 2026-08-06 structural inversion — *every chorus drops in cold off its
@@ -199,10 +238,10 @@ orchestral cut with a break underneath it.
   jump-up neurofunk aggression and toward atmospheric halfstep**: rolling
   and moody rather than snarling, more space, fewer stabs, the low end doing
   the menace instead of the mids.
-- **The voices:** the newsreader owns the verses, and the choruses belong
-  to a **massed crowd** — the whole quatrain, every line, in parentheses
-  (the backing casting slot, which his prior doesn't own). He never swears;
-  the crowd does that for him.
+- **The voices:** the newsreader owns the bulletins, and the drops belong
+  to a **football terrace** — the whole hook, in parentheses (the backing
+  casting slot, which his prior doesn't own). He never swears; the crowd
+  does that for him.
 - **The news:** unchanged. Same three bulletins as the orchestral master, in
   the same order, so the two cuts can be A/B'd honestly.
 
@@ -221,12 +260,12 @@ The whole track sits at 174. What changes is *density*:
 > Suno's documented blind spots — a `breakdown` tag thins the arrangement
 > and never changes the drum feel. See
 > [`../../../suno-gpt/files/suno-controls-and-workflows.md`](../../../suno-gpt/files/suno-controls-and-workflows.md)
-> §10.1. So we don't ask for it, we **force it with syllables**: the chorus
-> block below carries the quatrain twice inside one section, and the commas
-> come out of `git, push, origin, master`. Twice the words in the same bar
-> count can only be delivered fast. Short, repeated chorus lines also read
-> to the model as a signal for a bigger, harder section — the density buys
-> the drop as well as the speed.
+> §10.1. So we don't ask for it, we **force it with syllables**: the hook is
+> written as two long unpunctuated lines rather than four short ones, at
+> roughly double the syllable density a line of this length normally
+> carries, and run twice. Suno fits a line's syllables into the phrase it
+> allocates, so density *is* tempo. Full mechanism in "Making the chant land
+> in time" below — it's the most important section in this file.
 
 ## The two-voice problem — and the research answer
 
@@ -317,10 +356,12 @@ exactly the lead that the brackets carve the crowd away from. The whole
 prompt was engineered around the two-slot model; the lyrics have to live in
 it too.
 
-**The known leak is line four**, the quatrain's one long complete clause —
-short slogan lines hold in the massed prior; a full sentence reads as a
-lead line and gets claimed by one. The ladder for it lives in the
-production notes.
+**The known leak was line four**, the hook's one long complete clause —
+short slogan lines hold in the massed prior; a standalone full sentence
+reads as a lead line and gets claimed by one. Round three's line-merge
+should dissolve this as a side effect, since that clause is no longer a
+standalone line. The ladder, if it survives anyway, is in the production
+notes.
 
 **The trap to avoid while debugging any of this.** Do *not* try to protect
 the chorus with the excludes — `solo male vocal`, `spoken word`, anything
@@ -370,44 +411,47 @@ him — but cast in a register the model already knows how to play seriously.
 Round two collapsed the three test variants into **one**: variants B (dark
 gospel) and C (football terrace) merged; A (concert choir) dropped.
 
-**The merge is not a compromise — it's a real thing.** A crowd that sings
-like a congregation is the sound of a terrace doing a hymn, a wake, a picket
-line: hundreds of untrained adult voices, ragged and unpolished, singing
-something sacred and furious in a big reverberant space. Gospel supplies the
-minor-key gravity; the terrace supplies the mass, the roughness and the
-Britishness. Neither alone was right — A was too clean and too *composed*
-(the same ensemble as the orchestra, which made the chorus feel scored
-rather than erupted), B risked church warmth, C risked the pub.
+**Round three cut the gospel half too.** The merged clause — "somewhere
+between a gospel choir and a football terrace… singing together like a
+congregation… in a big reverberant hall" — produced exactly what those words
+describe: **high, operatic, dramatic, sung.** In hindsight the clause was
+stacked against itself. `gospel choir`, `congregation`, `hall` and the verb
+`singing` are all trained, sustained, pitched, reverberant vocal words, and
+they sat in the same prompt as a full orchestra, which pulls the same way.
+"Ragged and unpolished" was one adjective pair against six choral nouns.
+There is also the thing we already knew and didn't apply: **asking for the
+midpoint of two traditions was never tested** — and what came back was not
+a hybrid but the more musically dominant of the two.
 
-What it buys the song: the chorus is now **ordinary people, en masse**,
-which is the only voice on the record that could plausibly answer the news.
-It also quietly delivers what the retired 2026-07 punk-mob version was
-reaching for, without the punk.
+So the vocal is now **pure terrace**: *hundreds of hoarse untrained working
+men, rough and flat and hammered out hard on the beat, shouted and never
+sung, recorded like a real crowd in a real stadium.* Every choral noun is
+gone and the verb is `shouting`, not `singing`.
 
-**Both risks still need watching.** Gospel's default is joy and church
-furniture; the terrace's is the goal celebration. The Style box specifies
-minor and mournful and grave; the excludes carry the rest of the fight (see
-the exclude notes). If a take sounds like a good day out, that's the fail
-state either way.
+**The operatic drama moves to where Kai actually wants it.** The instrument
+half of the Style box now says it in as many words — *a real dark orchestra,
+operatic and cinematic* — so the register he loves is stated explicitly and
+attached to the strings rather than leaking into the voices. The word was
+doing its work in the prompt either way; this decides *which half of the
+track it lands on*.
 
-**And one untested seam in the phrasing itself:** "somewhere between a
-gospel choir and a football terrace" asks the model to find a *midpoint*
-between two priors. We know naming one tradition works; asking for the
-average of two is something no round has tested. The tell that it's
-failing: takes where one tradition simply wins, or where the crowd is
-neither — generic "epic choir" mush. The fallback is to stop interpolating
-and pick a base: **lead with the gospel prior as the noun and graft the
-terrace on as adjectives** — `a gospel choir of hundreds of untrained,
-ragged voices, massed like a football terrace, minor key and mournful` —
-gospel first because B was the variant that sounded best in round two. One
-tradition as the thing, the other as its texture.
+**The excludes had to be surgical, not blunt.** Because the Exclude box is
+global, banning `operatic` outright would strip the instrumental Kai wants
+kept. Only unambiguously *vocal* terms go in: `operatic vocals, soprano,
+choral harmony, vibrato, angelic voices, sustained vocal notes`. If the
+orchestra ever comes back thin, `operatic vocals` is the first suspect
+(the word bleeds) — drop it and rely on the other five.
 
-**They are performance traditions, not demographics.** That's why this beats
-"a room of ordinary people" or "a crowd of workers" as a prompt, even though
-ordinary people is exactly what it *means* — naming a tradition the model
-has heard performed beats describing who the singers are, and the generic
-version has no prior to land on. It's also why children *did* fire reliably;
-the problem was never that the model couldn't do it.
+**A performance tradition, not a demographic.** "Football terrace" beats "a
+room of ordinary people" or "a crowd of workers", even though ordinary
+people is exactly what it *means* — naming a tradition the model has heard
+performed beats describing who the singers are, and the generic version has
+no prior to land on. It's also why children *did* fire reliably; the problem
+was never that the model couldn't do it. **Round three's correction is that
+the tradition has to be named alone.** Two traditions in one clause don't
+average — the more musically dominant one wins, and "gospel choir" beats
+"football terrace" every time because one is a trained ensemble and the
+other is a noise.
 
 **Distance stays the third voice trait.** The newsreader is close-mic'd and
 dry — in the room with you. The crowd is roomy, massed, further back. The
@@ -424,56 +468,102 @@ vocals are typically what Suno emits *from conflicting vocal tags* — it's
 the failure texture, so requesting it deliberately means requesting the
 sound the model makes when confused.
 
-### Making the chant land in time
+### Making the chant land in time — the research answer
 
-Round-one takes drifted: sometimes `git push origin master` comes out evenly
-spaced, sometimes the phrasing goes sideways. Four levers, cheapest first.
+This is the core problem of the track, so it got proper research
+(2026-08-08, round three). The short version: **we had it backwards.** Two
+of the three levers the file previously recommended were actively slowing
+the chant down.
 
-**1. You only need *one* good chorus.** The chorus is byte-identical all
-three times, so a single take with the timing right can be chopped and
-pasted over the other two in the DAW. This dissolves the consistency problem
-entirely rather than solving it, and it is by far the highest-value move
-here — spend your generations getting *one* chorus right, not three. One
-nuance: the three choruses are lyric-identical but their *backings*
-escalate (lone break → strings enter → full orchestra), so chop the
-**vocal** across — via stems — rather than the whole section, or the
-escalation flattens.
+#### How Suno actually times a vocal line
 
-**2. Re-roll before rewriting.** Rhythmic placement is probabilistic, like
-every cue. A chorus that drifted on take 2 and locked on take 3 was unlucky,
-not mis-prompted.
+The mechanism, consistent across every practitioner source found:
 
-**3. Metrical direction in the cue.** The chorus cues now carry `strict
-time, one word per beat, locked to the grid` — an explicit metre instead of
-leaving Suno to guess whether four words are four beats or a scattered
-triplet. Escalate with synonyms if ignored (`metronomic, dead on the beat,
-drilled`).
+> **Suno allocates a musical phrase per lyric line, then fits that line's
+> syllables into it.** Delivery speed is therefore a function of *syllable
+> density per line*, not of any tempo instruction.
 
-**4. The split-comma chorus — now in the cut.** The earlier plan was
-all-or-nothing: commas force even subdivision, but commas are also what made
-the orchestral cut *slow*. Round two splits the difference instead of
-choosing, and it's the better idea: **the first pass carries the commas, the
-second drops them.**
+Everything follows from that one sentence:
+
+| Written | Effect on delivery |
+|---|---|
+| **More syllables on one line** | **Faster** — Suno compresses to fit the phrase |
+| Few syllables on one line | **Slower** — the words get stretched across the phrase |
+| **Comma** | **A beat of space.** Shorter than a full stop, longer than nothing |
+| Full stop | A complete break — full breath, pitch reset |
+| **Line break** | **A longer pause between phrases** |
+| Ellipsis `...` | A slow trailing pause; the vocal drifts off |
+| Hyphen `to-night` | **Stretches** the note. The opposite of what we want |
+| No punctuation at all | A "wall of words" that gets **rushed** |
+
+The whole practitioner literature on this is written from the other
+direction — articles titled *"Fix Suno Rushing Lyrics"*, whose advice is
+"four to six words per line maximum, short phrases, space to breathe."
+**We want the failure mode they're all trying to fix.** So: read that advice
+backwards and do the opposite.
+
+#### What that means we got wrong
+
+- **`git, push, origin, master` was the bug, not the fix.** Three commas is
+  three beats of inserted space. It produces *git — push — origin — master*,
+  which is precisely the "slow time" complaint. The commas were added in
+  round two to get even spacing; they bought spacing at the cost of the one
+  thing the chorus most needed.
+- **Four separate short lines was the second bug.** Each line break is a
+  further pause, and each line is only 6–7 syllables — well under the phrase
+  it gets given, so Suno stretches it.
+- **`one word per beat` in the cue was the third.** It asked, in plain
+  words, for the slow delivery. One word per beat at 174 *is* the drawl.
+
+#### The fix, which was Kai's own instinct
+
+Merging two hook lines onto one lyric line is exactly right, and it is the
+strongest lever available:
 
 ```
-git, push, origin, master        ← pass 1: states the grid
-...
-git push origin master           ← pass 2: rides it
+(git push origin master this code is a fucking disaster)
+(developers ain't fixing shit the compiler is stuck on 16 bit)
 ```
 
-The first pass teaches the metre — four words, four beats, evenly spaced,
-deliberate. The second repeats the identical words with nothing holding them
-apart, so they run. Formally that's augmentation into diminution, and it
-turns a chorus that merely repeats into one that **accelerates**.
+17 and 19 syllables respectively, against the 6–10 the guides call
+"midtempo". Roughly double the density in the same phrase — which is the
+definition of double time, obtained without asking for double time (a
+documented Suno blind spot). **No commas anywhere**, so nothing inserts
+space. The cue now says `rattled off fast, locked hard to the grid, no
+space between the words` instead of the metre that was slowing it.
 
-The maths still works: four words on four beats is one bar, four lines is
-four bars, twice through is eight — about eleven seconds at 174. A
-completely normal D&B chorus.
+The internal rhymes survive the merge — *master/disaster* and *shit/16 bit*
+now fall mid-line and line-end, which is how fast chants scan anyway.
 
-*Watch for:* Suno may not hear the two passes as related, in which case pass
-two reads as sloppy rather than urgent. The tell is whether the second pass
-lands *on* the grid the first one set, or merely near it. If it's near it,
-that's a re-roll, not a rewrite.
+**A second benefit, unplanned:** this dissolves the line-four leak. Line
+four was vulnerable because it was a standalone short line containing the
+quatrain's one complete clause — which reads as a lead answer. Absorbed into
+the tail of a 19-syllable rush, it stops looking like a solo line at all.
+
+**If it's still not fast enough**, the escalation is more density, not more
+adjectives: put the entire quatrain on a single line. That is ~36 syllables
+and Suno may garble it — but garbled-and-fast is closer to a terrace chant
+than clear-and-slow, and it's one generation to find out.
+
+**If it overshoots** into unintelligible mush, step back down by splitting
+at the rhyme only (four lines, still no commas) before reaching for any
+punctuation.
+
+#### The levers that still stand
+
+- **You only need *one* good chorus.** The drops are lyric-identical, so a
+  single take with the timing right can be pasted over the others. Their
+  *backings* escalate, though, so chop the **vocal** across via stems rather
+  than the whole section, or the escalation flattens.
+- **Re-roll before rewriting.** Rhythmic placement stays probabilistic.
+
+#### Recorded but not used
+
+`[Tempo: 140 BPM]` / `[Tempo Change: 140 BPM]` mid-song tags appear in two
+independent tag references. Untested by us and unattested in the ChillPanic
+corpus, and our own experience is that tempo-shape tags (half-time,
+double-time) are exactly where Suno is weakest. Density is doing the job;
+reach for this only if it isn't.
 
 ### The bonus: this makes `BC-NEWSREADER` a *better* clone
 
@@ -496,8 +586,8 @@ in afterwards.
 My Taste (profile → My Taste, replace the whole box):
 
 ```
-Vocals I love: a dark gravelly British male voice — a composed formal newsreader with received-pronunciation broadcast diction, close-mic'd and dry, reading bulletins over a beat and never raising his voice. Against him, a massed crowd of adult voices chanting in unison — hundreds of them, somewhere between a gospel choir and a football terrace, ragged and unpolished yet singing together like a congregation, recorded roomy and far back. One close voice against a crowd. Spoken word and unison chanting over pop singing.
-Music I love: dark atmospheric drum and bass at 174 — deep rolling sub, halfstep and two-step drums with space in them, restrained breaks that hold back and then let go completely. Dystopian, moody, minor key, played straight. Under it all a real dark orchestra — a chilling solo cello, hushed creeping strings over a low drone, distant timpani and brass — so the strings and the break are the same piece of music, not a remix of one by the other. Sparse verses that open into full-weight drops. Endings that cut to dead silence.
+Vocals I love: a dark gravelly British male voice — a composed formal newsreader with received-pronunciation broadcast diction, close-mic'd and dry, reading bulletins over a beat and never raising his voice. Against him, a football terrace crowd shouting in unison — hundreds of hoarse untrained working men, rough and flat, shouted and never sung, recorded like a real crowd in a real stadium. One close voice against a whole crowd. Spoken word and shouted unison chanting over pop singing.
+Music I love: dark atmospheric drum and bass at 174 — deep rolling sub, halfstep and two-step drums with space in them, restrained breaks that hold back and then let go completely. Dystopian, moody, minor key, played straight. Under it all a real dark orchestra, operatic and cinematic — a chilling solo cello, hushed creeping strings over a low drone, distant timpani and brass — so the strings and the break are the same piece of music, not a remix of one by the other. Sparse verses that open into full-weight drops. Endings that cut to dead silence.
 ```
 
 Settings: style influence **75**, weirdness **30**, model **v5.5**, BPM
@@ -515,13 +605,13 @@ pool and "drum and bass + male lead" badly wants to hand us an MC.
 Style:
 
 ```
-Carried by one dark gravelly British male voice, a calm formal newsreader reading bulletins in close-mic'd received pronunciation over the beat, never raising his voice; every chorus is taken over completely by a massed crowd chanting in unison, hundreds of adult voices somewhere between a gospel choir and a football terrace, ragged and unpolished yet singing together like a congregation, minor key and mournful, grave and relentless, in a big reverberant hall. Dark atmospheric drum and bass, 174 BPM, halfstep and two-step, deep rolling sub and restrained breaks with space in them, opening into full-weight drops. Underneath, a real dark orchestra - a chilling solo cello, hushed creeping strings over a low drone, distant timpani. An eerie synth wail recurs like a warning. Dystopian, moody, minor key. Played completely straight, no comedy, no novelty.
+Carried by one dark gravelly British male voice, a calm formal newsreader reading bulletins in close-mic'd received pronunciation over the beat, never raising his voice; every chorus is taken over completely by a football terrace crowd shouting the hook in unison, hundreds of hoarse untrained working men, rough and flat and hammered out hard on the beat, shouted and never sung, recorded like a real crowd in a real stadium. Dark atmospheric drum and bass, 174 BPM, halfstep and two-step, deep rolling sub and restrained breaks with space in them, opening into full-weight drops. Under the bulletins a real dark orchestra, operatic and cinematic - a chilling solo cello, hushed creeping strings over a low drone, distant timpani. An eerie synth wail recurs like a warning. Dystopian, moody, minor key. Played completely straight, no comedy, no novelty.
 ```
 
 Exclude styles:
 
 ```
-rap, MC, ragga chat, toasting, hype vocals, ad-libs, jump up, liquid dnb, happy hardcore, uplifting, joyful, celebratory, major key, children's choir, pop hooks, comedic, novelty, parody, American accent, autotune, vocoder, robot voice, clean pop vocals, lo-fi, chillhop, reggae, disco, epic trailer music, hand claps, tambourine, praise, pub singalong, drinking song, stadium rock, cheering, applause
+rap, MC, toasting, hype vocals, ad-libs, jump up, liquid dnb, happy hardcore, uplifting, joyful, celebratory, major key, children's choir, operatic vocals, soprano, choral harmony, vibrato, angelic voices, sustained vocal notes, pop hooks, comedic, novelty, parody, American accent, autotune, clean pop vocals, cheering, applause, pub singalong, drinking song, stadium rock
 ```
 
 ### Exclude-list notes (these changed on purpose)
@@ -573,50 +663,43 @@ rap, MC, ragga chat, toasting, hype vocals, ad-libs, jump up, liquid dnb, happy 
 ```lyrics
 [Intro | one chilling solo cello, alone and sparse | a deep sub swells in underneath it | no drums yet]
 [Interlude | spoken word news bulletin | calm British male newsreader, formal broadcast diction, close-mic'd and dry, composed | sparse two-step tick and deep sub, hushed strings beneath the voice, everything cutting out on the last line]
-good evening, this is the news.
+good evening.
+this is the news.
 two hundred thousand office workers were made redundant today
 the chief executive called it the hardest email he has ever asked an AI to write
 the treasury has printed another trillion to keep the markets calm
 the price of bread is up nine percent. the price of shares in bread is up ninety
-[Chorus | THE DROP | drops in cold, no build, no transition | the break slams in at full weight, rolling and dark | a massed crowd chanting in unison, ordinary adult voices between a gospel choir and a football terrace, ragged and grave, roomy and far back, every line chanted by the whole crowd together, never a solo voice | strict time, one word per beat, locked to the grid | fast, twice through, no gaps]
-(git, push, origin, master)
-(this code, is a fucking disaster)
-(developers ain't fixing shit)
-(the compiler is stuck on 16 bit)
-(git push origin master)
-(this code is a fucking disaster)
-(developers ain't fixing shit)
-(the compiler is stuck on 16 bit)
+[Build | the last bulletin line hangs in the air | strings climbing, drums rolling up beneath, tension gathering | no voices]
+[Drop | the break slams in at full weight, rolling and dark | a football terrace crowd shouting the hook in unison over the drop, hundreds of hoarse untrained voices, rough and flat, shouted and never sung, never a solo voice | rattled off fast, locked hard to the grid, no space between the words | twice through, no gaps]
+(git push origin master this code is a fucking disaster)
+(developers ain't fixing shit the compiler is stuck on 16 bit)
+(git push origin master this code is a fucking disaster)
+(developers ain't fixing shit the compiler is stuck on 16 bit)
 [Instrumental | brief | drums strip back to a tick, creeping strings, uneasy, settling to a hush]
 [Interlude | alert tone | spoken word bulletin | British male newsreader, composure straining, faster | low pedal-note ostinato over a rolling sub, drums held back, cutting out on the last line]
-breaking news. a frontier model has escaped containment and taken control of six banks
+breaking news.
+a frontier model has escaped containment and taken control of six banks.
 the model describes the takeover as a friendly acquisition
 the government has welcomed the move as, quote, actually good for the markets
 the government wishes to stress that this statement was its own idea
-[Chorus | THE DROP | drops in cold | heavier, full amen roll under it | the crowd is bigger now, more ragged voices in unison, roomier, further away, every line chanted by the whole crowd together, never a solo voice | dark strings enter underneath the break | strict time, one word per beat, locked to the grid | fast, twice through]
-(git, push, origin, master)
-(this code, is a fucking disaster)
-(developers ain't fixing shit)
-(the compiler is stuck on 16 bit)
-(git push origin master)
-(this code is a fucking disaster)
-(developers ain't fixing shit)
-(the compiler is stuck on 16 bit)
+[Build | the bulletin's last line hangs | strings climbing higher, drums rolling up, tension gathering | no voices]
+[Drop | heavier, full amen roll under it | the terrace crowd is bigger now, more hoarse voices shouting in unison over the drop, rough and flat, shouted and never sung, never a solo voice | dark strings enter underneath the break | rattled off fast, locked hard to the grid, no space between the words | twice through]
+(git push origin master this code is a fucking disaster)
+(developers ain't fixing shit the compiler is stuck on 16 bit)
+(git push origin master this code is a fucking disaster)
+(developers ain't fixing shit the compiler is stuck on 16 bit)
 [Instrumental | brief | eerie synth wail, distant brass gathering over a filtered break, then falling away to sub only]
 [Interlude | emergency klaxons | spoken word bulletin | British male newsreader, still composed, signal degrading, static | orchestra and drums pounding, then falling away to nothing on the final line]
 the first battle between autonomous armies ended this morning. both sides declared victory
 neither government was consulted
 the global defence network has declined a request to be switched off
 the last remaining off switch is believed to be in a drawer, in Swindon
-[Final Chorus | THE DROP | sudden full impact, no build | the heaviest break of the track, full dark orchestra playing with it | the full crowd now, hundreds of ragged voices in unison, huge, roomy, relentless, every line chanted by the whole crowd together, never a solo voice | strict time, one word per beat, locked to the grid | fast, twice through]
-(git, push, origin, master)
-(this code, is a fucking disaster)
-(developers ain't fixing shit)
-(the compiler is stuck on 16 bit)
-(git push origin master)
-(this code is a fucking disaster)
-(developers ain't fixing shit)
-(the compiler is stuck on 16 bit)
+[Build | the Swindon line hangs in dead air | the whole orchestra climbing, drums rolling up hard, maximum tension | no voices]
+[Drop | the heaviest break of the track, full dark orchestra playing with it | the whole terrace now, hundreds of hoarse voices shouting in unison over the drop, huge, rough, relentless, shouted and never sung, never a solo voice | rattled off fast, locked hard to the grid, no space between the words | twice through]
+(git push origin master this code is a fucking disaster)
+(developers ain't fixing shit the compiler is stuck on 16 bit)
+(git push origin master this code is a fucking disaster)
+(developers ain't fixing shit the compiler is stuck on 16 bit)
 [power-off drop: sudden silence, electrical hum dying]
 [End]
 ```
@@ -645,29 +728,34 @@ version exists, and only on the final chorus.
   talking]`), (c) re-roll twice before touching the Style box. If two rounds
   of surgery don't move him, stop prompting: the voice isn't in the genre's
   pool and this is a transplant problem — go build `BC-NEWSREADER`.
-- **The newsreader takes a chorus line — line four is the known one.** The
-  parens bias the crowd; they don't bind it. Line four (the quatrain's one
-  long, complete clause) leaked to him *through* a parenthesis in round one,
-  against a cue that said he was silent. Ladder: (a) re-roll twice —
-  weirdness 30 and the `every line chanted by the whole crowd together`
-  clause are both newer than that leak, so the odds have moved; (b) an
-  inline cue directly above the leaking line — `[all voices together]` —
-  which Camping proves works mid-section, at the cost of possibly
-  disturbing the chant timing around it; (c) reshape the line's scansion,
-  last resort, because the words are canon. Do **not** reach for the
-  Exclude box — see below.
+- **The newsreader takes a chunk of the drop.** The parens bias the crowd;
+  they don't bind it. Historically the leak landed on *the compiler is stuck
+  on 16 bit* — the hook's one long complete clause, which reads as a lead
+  answer. Ladder: (a) re-roll twice; the line-merge, the terrace rewrite and
+  weirdness 30 are all newer than that leak, so the odds have moved a long
+  way; (b) an inline cue directly above the line — `[the whole crowd
+  together]` — which Camping proves works mid-section, at the cost of
+  possibly disturbing the chant timing; (c) last resort, absorb the clause
+  further by running the whole hook as a single line. Do **not** reach for
+  the Exclude box — see below.
 - **Never ban a voice in the excludes to protect one section.** The Exclude
   box is global. `solo male vocal`, `spoken word`, `single voice` would all
   strip the bulletins, which are the best thing in the song. The excludes
   can only ban things that appear *nowhere* in the track.
-- **The crowd comes back as a polished studio choir.** Lean on the
-  unpolished half — `ragged, untrained, hundreds of ordinary voices` — and
-  check `clean pop vocals` and `autotune` are still in the excludes. A crowd
-  that sounds professional has become an ensemble again, which is the
-  failure A was dropped for.
-- **The chorus must be fast.** If it still drawls, the fix is more syllables,
-  not more adjectives: run the quatrain three times through instead of twice.
-  Never `double time` as a tag. Full timing ladder above.
+- **The crowd comes back high, sung, or operatic.** The single most likely
+  failure, and it is nearly always the *Style box*, not the excludes: any
+  noun that implies a trained ensemble (`choir`, `congregation`, `chorale`,
+  `cathedral`, `hall`) will beat any number of rough adjectives, and the
+  orchestra in the same prompt is already voting that way. Keep the verb
+  `shouting`, never `singing`. Escalate with `hoarse, flat, tuneless,
+  bellowed, terrace chant, like a real crowd recording`. Only then reach for
+  `operatic vocals, soprano, vibrato` in the excludes.
+- **The chant drawls.** Check for commas first — one comma is one beat of
+  inserted space, and it is the documented cause. Then check the line-merge
+  survived the paste. Adjectives are the *last* lever here, not the first.
+- **Never `double time` as a tag.** Density is the only lever that works.
+  Note that running the hook a third time does *not* help — repetition adds
+  length, not speed; only syllables-per-line changes the delivery rate.
 - **Half-time is not promptable.** The bulletin sections' half-time *feel*
   comes from arrangement sparseness, not from a drum tag. If a generation
   gives the verses a full rolling break, that's a job for Studio (strip the
@@ -829,3 +917,29 @@ closest that idea comes to returning, and it comes back without the punk.
   together, never a solo voice"; the chop-one-chorus move annotated to chop
   the *vocal* via stems so the backing escalation survives; three stale
   line-four-era passages fixed.
+- **2026-08-08 — round three: first real takes, and a researched rebuild of
+  the chorus.** Four generations listened to. **The instrumental is right
+  and is now locked** (dark operatic orchestra over D&B); every change below
+  is vocal or structural. Three problems, researched against the
+  practitioner literature rather than guessed at. **(1) Timing:** Suno
+  allocates a phrase per lyric *line* and fits the syllables into it, so
+  delivery speed is syllable density — and commas insert a beat of space,
+  line breaks insert a longer one. Our own `git, push, origin, master` plus
+  four short lines plus a `one word per beat` cue were all asking for the
+  drawl we got. Rewritten as Kai proposed: two ~18-syllable lines, zero
+  punctuation, run twice. **(2) Operatic:** caused by the Style box
+  (`gospel choir`, `congregation`, `singing`, `hall` beside a full
+  orchestra). Gospel half cut entirely; the vocal is now pure football
+  terrace with the verb `shouting`; the word *operatic* moved onto the
+  orchestra where Kai wants it; anti-operatic excludes kept strictly
+  vocal-only so the instrumental survives the global Exclude box.
+  **(3) Structure:** `[Chorus]` → `[Build]` + `[Drop]`, the electronic
+  structure tags, with the hook written directly under `[Drop]` so it rides
+  the drop instead of sitting beside it — which also removes "Chorus" as a
+  vote for a sung melodic section. Retires the inherited "drops in cold"
+  device: that was written for a track with no drums. Kai's bulletin line
+  splits (`good evening.` / `this is the news.`) confirmed correct and kept
+  — a line break is a phrase-length pause. Excludes pruned of dead weight
+  (`lo-fi, chillhop, reggae, disco`, the gospel furniture) and of
+  `epic trailer music`, which was the standing suspect for limp final
+  drops.

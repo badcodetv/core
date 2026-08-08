@@ -357,3 +357,59 @@ Weirdness perturbs *within* the pools the prompt selects (§1), so on a track wh
 doing precise structural work — this voice here, that voice there, this section drops cold — the
 perturbation has nothing to add and plenty to disturb. Reserve 60–65 for tracks where you're
 shopping for a feel rather than executing an arrangement.
+
+### 10. Delivery speed is syllable density per *line* — punctuation is the brake
+
+Researched 2026-08-08 for GPOM's D&B chorus, which kept drawling. The mechanism is consistent
+across every practitioner source found, and it is not what we assumed:
+
+> **Suno allocates a musical phrase per lyric line, then fits that line's syllables into it.**
+> Delivery speed is a function of syllable density per line — not of any tempo instruction.
+
+| Written | Effect |
+|---|---|
+| More syllables on one line | **Faster** — compressed to fit the phrase |
+| Few syllables on one line | **Slower** — stretched across the phrase |
+| Comma | A beat of inserted space |
+| Full stop | A complete break — breath, pitch reset |
+| Line break | A longer pause between phrases |
+| Ellipsis `...` | Slow trailing pause |
+| Hyphen (`to-night`) | **Stretches** the note — a brake, not an accelerator |
+| No punctuation | A "wall of words" that gets **rushed** |
+
+**Read the literature backwards.** Practically every guide on this is written to *fix* rushing —
+"four to six words per line maximum, short phrases, space to breathe." When you want a fast chant,
+rap, patter or terrace hook, that advice inverted is the recipe: merge lines, strip all punctuation,
+push well past the 6–10 syllables per line the guides call midtempo.
+
+Two traps this exposes, both of which we walked into:
+
+- **Commas added for "even spacing" buy the spacing by inserting pauses.** GPOM's hook was written
+  `git, push, origin, master` to stop the phrasing drifting; it produced *git — push — origin —
+  master*, the exact drawl being complained about.
+- **A cue that describes the metre in words can ask for the wrong one.** `one word per beat, locked
+  to the grid` reads as precision but *is* a slow delivery at 174. Describe the density you want
+  (`rattled off fast, no space between the words`), not a beat count.
+
+Corollary for casting (§6): merging short lines into long ones also **reduces lead-slot leakage**.
+A short standalone line containing a complete clause reads as a lead answer and gets claimed; the
+same clause absorbed into the tail of a long rushed line does not.
+
+Recorded but untested: `[Tempo: 140 BPM]` / `[Tempo Change: 140 BPM]` appear in two independent tag
+references as mid-song tempo controls. Unattested in the ChillPanic corpus, and tempo-*shape* tags
+(half-time/double-time) are where Suno is documented to be weakest — so treat density as the real
+lever and this as a long shot.
+
+### 11. Two performance traditions in one clause do not average — the dominant one wins
+
+GPOM asked for a crowd "somewhere between a gospel choir and a football terrace." What came back was
+a gospel choir: high, sung, operatic. §7 established that naming a *performance tradition* beats
+naming a demographic; the refinement is that **you get to name exactly one.** Where two are named,
+the more musically dominant — the trained ensemble over the untrained noise, the pitched over the
+shouted — takes the generation.
+
+If a hybrid is genuinely wanted, make one the noun and the other its adjectives (`a gospel choir of
+hundreds of untrained ragged voices, massed like a football terrace`) rather than asking for a
+midpoint. And count the nouns: a single choral noun (`choir`, `congregation`, `cathedral`, `hall`,
+or the verb `singing`) will out-vote several rough adjectives, especially when an orchestra elsewhere
+in the prompt is pulling the same way.
