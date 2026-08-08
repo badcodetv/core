@@ -2,7 +2,7 @@
 title: git push origin master (drum & bass)
 status: drafting
 model: v5.5 (cue-heavy track — 5.5 obeys the bracket architecture; 4.5 shreds it)
-settings: style influence 75, weirdness 30
+settings: style influence 72, weirdness 50
 bpm: 174
 voices: [newsreader (male, dark gravelly RP — the bulletins, and nothing else), the terrace (hundreds of hoarse untrained men shouting in unison — the whole of every drop)]
 sibling: songs/git-push-origin-master-orchestral.md
@@ -418,6 +418,33 @@ So: `[Drop] [Chant]`, `[Drop] [Chant | bigger]`, `[Drop] [Chant | biggest, the w
 the crowd]`. Three words, two words, eight. If the arc doesn't come through, the escalation is the
 thing to strengthen — and it is the *only* thing in the headers, so it can be strengthened without
 reopening the competition round seven closed.
+
+### Where round eight landed — read this before changing anything
+
+**Round eight worked, and the cut above is the one that produced a keeper.** Kai's verdict:
+*"this is really working now… I have a version right now that really sounds good to my ears."*
+Paused there deliberately, at eight rounds of listening — *"I can't see the wood from the trees"* —
+with six or so more generations rolled off the same settings, and feedback to come.
+
+Two things to record while they are still true:
+
+- **Settings drifted to style influence 72 / weirdness 50** on the takes that landed, and the
+  weirdness move matters more than the number suggests. See the settings note under
+  "Suno prompt" — the round-two argument for weirdness 30 was correct *for a prompt whose
+  architecture lived in bracket cues*, and rounds seven and eight moved that architecture into the
+  Style box, which is what made the headroom safe. Obedience is worth buying in proportion to how
+  much you are asking for.
+- **The keeper has a texture nobody prompted: a heavy choir across the first half of the drop and a
+  *robot newsreader* across the second.** That is the vocoder — twice rejected on this song by
+  deliberate decision — arriving on its own and being liked. It is not in any box. If it is wanted
+  reliably it has to be earned back deliberately, and the file's standing warning still applies:
+  asking for robotic vocals *by name* previously read to the model as a tag conflict and cost more
+  than it bought. The cheaper first move is to leave it as a dice-roll and pick the takes that have
+  it.
+
+**The next change to this file should be driven by Kai's feedback on those generations, not by
+another idea.** Eight rounds in, the failure mode has consistently been changing several things at
+once — and the last two rounds worked precisely because they stopped doing that.
 
 ### The syllable gamble, stated honestly
 
@@ -853,14 +880,18 @@ Vocals I love: a dark gravelly British male voice — a composed formal newsread
 Music I love: dark atmospheric drum and bass at 174 — deep rolling sub, halfstep and two-step drums with space in them, restrained breaks that hold back and then let go completely. Dystopian, moody, minor key, played straight. Under it all a real dark orchestra, operatic and cinematic — a chilling solo cello, hushed creeping strings over a low drone, distant timpani and brass — so the strings and the break are the same piece of music, not a remix of one by the other. Sparse verses that open into full-weight drops. Endings that cut to dead silence.
 ```
 
-Settings: style influence **75**, weirdness **30**, model **v5.5**, BPM
+Settings: style influence **72**, weirdness **50**, model **v5.5**, BPM
 **174**. No source audio, so no audio-influence slider.
 
-**Weirdness 30 is deliberate and overrules the house default of 60–65.** It
-tested better across the board. The reason is structural: this track's
-architecture lives in dense bracket cues, and cue-heavy tracks want
-obedience everywhere — it's the same logic that keeps us on v5.5 rather than
-4.5. Randomness has nothing to add here and plenty to break.
+**Weirdness moved 30 → 50 at round eight, and the reason is worth keeping.**
+Round two set it to 30 on Kai's ear, against the house default of 60–65, and
+the justification was structural: the track's architecture lived in dense
+bracket cues, and cue-heavy tracks want obedience everywhere. That reasoning
+was sound *and it expired*. Rounds seven and eight moved the architecture out
+of the brackets and into a clean Style box, so there is far less for
+randomness to break — and the headroom is now worth having. **Obedience is
+worth buying in proportion to how much you are asking for.** Style influence
+also eased 75 → 72 on the same takes.
 
 The newsreader clause front-loads, because the genre tag owns the vocalist
 pool and "drum and bass + male lead" badly wants to hand us an MC.
