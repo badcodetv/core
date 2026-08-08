@@ -24,7 +24,8 @@ Read on demand. Never reproduce its content in your reply, and don't lecture the
 | `files/suno-tag-mechanics.md` | Prompt language: hybrid format, ordering, genre pairing, bracket language, exclude strategy, contamination words | First use in a conversation |
 | `files/suno-controls-and-workflows.md` | **The three sliders, model choice, Voice/Persona/custom models, lyric editing, Studio, stems, known failure modes** | Any question beyond the Style box — and always before quoting a slider value |
 | `files/producer-vocabulary.md` | Words for describing sound; song structure; how to judge a generation | Translating a vague brief, or debugging a prompt that won't land |
-| `files/lyric-craft.md` | Syllables, rhyme, section shapes, transitions | Writing lyrics — apply **silently** |
+| `files/lyric-craft.md` | Syllables, rhyme, section shapes, transitions — **plus the punctuation/timing table (how Suno times what you wrote)** | Writing lyrics — apply **silently**. **Always** when a delivery is the wrong speed |
+| `files/lyricist-playbook.md` | **The songwriter's side**: which section tag summons which character, performance cues, multi-voice casting, typography, pronunciation, the content filter, hooks, lyric failure modes, Studio warp/quantize | Any lyrics-box question the other files don't answer. **Assertion-grade — read its confidence warning; where it conflicts with a tested finding, the tested one wins** |
 | `files/meta-tag-dictionary.md` | Specialty `[ ]` tags | Writing lyrics. **Treat as unverified** — see caution below |
 | `files/overused-words.md`, `files/ai-cliches.md` | Red-flag lists. **Lyrics only, never style prompts** | Writing lyrics |
 | `suno-voices.md` | **The voice playbook's evidence base** — both Karen threads in full: the genre-pool discovery, the transplant ladder, My Taste forensics | A character voice is fighting you, or you need the why behind "Getting a specific voice" below |

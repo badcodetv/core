@@ -11,7 +11,8 @@ the entry point — this is what it reads.
 | [`files/suno-tag-mechanics.md`](./files/suno-tag-mechanics.md) | The prompt language: hybrid format, information ordering, genre pairing, bracket language, exclude strategy, contamination words |
 | [`files/suno-controls-and-workflows.md`](./files/suno-controls-and-workflows.md) | **The control surface and the platform.** Sliders, model choice, the consistency stack (Voice / custom model / Lyricist), lyric editing, Studio, stems, known failure modes |
 | [`files/producer-vocabulary.md`](./files/producer-vocabulary.md) | Words for describing sound, by domain; song structure; how to judge a generation |
-| [`files/lyric-craft.md`](./files/lyric-craft.md) | Syllable counts, rhyme schemes, section shapes, engineered transitions |
+| [`files/lyric-craft.md`](./files/lyric-craft.md) | Syllable counts, rhyme schemes, section shapes, engineered transitions — **and the punctuation/timing table: how Suno times what you wrote** |
+| [`files/lyricist-playbook.md`](./files/lyricist-playbook.md) | **The songwriter's side**: section-tag character ([Chorus] vs [Drop] vs [Chant]), performance cues, multi-voice casting, typography, pronunciation, the content filter, hooks, lyric failure modes, Studio 1.2 warp/quantize. **Weaker evidence than the rest of this base — read its confidence warning first** |
 | [`files/meta-tag-dictionary.md`](./files/meta-tag-dictionary.md) | Specialty `[ ]` tags. **Largely unverified — see caveat below** |
 | [`files/overused-words.md`](./files/overused-words.md), [`files/ai-cliches.md`](./files/ai-cliches.md) | Red-flag lists for lyrics only, never style prompts |
 
@@ -44,6 +45,7 @@ here is the artifact.
 | Added | Source | Landed in |
 |---|---|---|
 | 2026-08-08 | ChillPanic, *"Finally! Use TWO VOICES in ONE SUNO AI SONG"* (published 2026-08-04) | `files/suno-controls-and-workflows.md` §4a — the layered-cover method |
+| 2026-08-08 | 11-agent web sweep, songwriter-side sources (non-ChillPanic) | `files/lyricist-playbook.md` (new) + `files/lyric-craft.md` timing table |
 
 Re-run the harvest script with a date filter to catch up on anything newer.
 
