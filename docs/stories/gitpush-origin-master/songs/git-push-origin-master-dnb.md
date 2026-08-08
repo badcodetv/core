@@ -296,9 +296,11 @@ category, irony is not reachable by adjective.
 What replaces it is the same categorical logic that made children the right
 *shape* — a massed group against one close-mic'd man cannot average into
 him — but cast in a register the model already knows how to play seriously.
-Three variants, all worth a few generations. Swap only the marked clause in
-the Style box and the matching chorus cue; **everything else in the file
-stays identical**, so the comparison is honest.
+Three variants, all worth a few generations. **The paste-ready Style and
+Exclude boxes for each are under [Suno prompt](#suno-prompt-advanced-mode)
+below** — complete, self-contained, nothing to edit. Everything else (My
+Taste, lyrics, settings) is identical across all three, so the comparison is
+honest. What follows is only the *why*.
 
 #### Variant A — the concert choir *(default; closest to the orchestral cut)*
 
@@ -308,22 +310,14 @@ choir reads as *the same ensemble* rather than a guest. A massed classical
 chorus intoning a git command over a 174 break is the whole joke played
 completely straight — sacred delivery, absurd text, no wink.
 
-```
-the choruses answered by a full classical choir in unison, massed adult voices in a cathedral space, dark and solemn, sung in strict time like a plainchant
-```
-
 #### Variant B — the dark gospel choir
 
 Your first instinct, and it brings something the others don't: **call and
 response is native to gospel**, which is exactly the structure the line-four
 device needs. The risk is the satire trap by another route — gospel's
-default is warm, major-key, uplifting, and *joyful* would kill this song
-stone dead. So the variant has to specify minor and mournful, and the
-excludes have to do real work (see the exclude note below).
-
-```
-the choruses answered by a gospel choir in unison, massed adult voices, minor key and mournful, call and response with the newsreader, hand-clap-free and unhurried
-```
+default is warm, major-key and joyful, which would kill this song stone
+dead. So the Style box specifies minor and mournful, and the excludes carry
+the rest of the fight.
 
 #### Variant C — the terrace crowd
 
@@ -333,10 +327,6 @@ it quietly resurrects the good idea from the retired 2026-07 punk-mob
 version without the punk. Risk: terrace chants code as celebratory, so it
 can tip laddish — if a take sounds like a goal was scored, that's the fail
 state.
-
-```
-the choruses answered by a massed football-terrace crowd chanting in unison, hundreds of male voices in a big reverberant stand, ragged and relentless, grim rather than celebratory
-```
 
 #### What all three share
 
@@ -415,17 +405,25 @@ Vocals I love: a dark gravelly British male voice — a composed formal newsread
 Music I love: dark atmospheric drum and bass at 174 — deep rolling sub, halfstep and two-step drums with space in them, restrained breaks that hold back and then let go completely. Dystopian, moody, minor key, played straight. Under it all a real dark orchestra — a chilling solo cello, hushed creeping strings over a low drone, distant timpani and brass — so the strings and the break are the same piece of music, not a remix of one by the other. Sparse verses that open into full-weight drops. Endings that cut to dead silence.
 ```
 
-Style (the newsreader clause front-loads, because the genre tag owns the
-vocalist pool and "drum and bass + male lead" wants to give us an MC):
+Settings for all three variants: style influence **75**, weirdness **60**,
+model **v5.5**, BPM **174**. No source audio, so no audio-influence slider.
+The **Lyrics box is identical for all three** — it's the single block under
+"Current cut" below.
+
+Each variant below is **complete and self-contained**. Paste its two boxes as
+they are; edit nothing.
+
+In all three, the newsreader clause front-loads, because the genre tag owns
+the vocalist pool and "drum and bass + male lead" badly wants to hand us an
+MC.
+
+### Variant A — the concert choir *(default)*
+
+Style:
 
 ```
-Carried by one dark gravelly British male voice, a calm formal newsreader reading bulletins in close-mic'd received pronunciation over the beat, never raising his voice; the choruses answered by a full classical choir in unison, massed adult voices in a cathedral space, dark and solemn, sung in strict time like a plainchant, roomy and far back, with the newsreader alone taking the last line of every chorus in answer. Dark atmospheric drum and bass, 174 BPM, halfstep and two-step, deep rolling sub and restrained breaks with space in them, opening into full-weight drops. Underneath, a real dark orchestra — a chilling solo cello, hushed creeping strings over a low drone, distant timpani. An eerie synth wail recurs like a warning. Dystopian, moody, minor key. Played completely straight, no comedy, no novelty.
+Carried by one dark gravelly British male voice, a calm formal newsreader reading bulletins in close-mic'd received pronunciation over the beat, never raising his voice; the choruses answered by a full classical choir in unison, massed adult voices in a cathedral space, dark and solemn, chanting in strict time like a plainchant, roomy and far back, with the newsreader alone taking the last line of every chorus in answer. Dark atmospheric drum and bass, 174 BPM, halfstep and two-step, deep rolling sub and restrained breaks with space in them, opening into full-weight drops. Underneath, a real dark orchestra - a chilling solo cello, hushed creeping strings over a low drone, distant timpani. An eerie synth wail recurs like a warning. Dystopian, moody, minor key. Played completely straight, no comedy, no novelty.
 ```
-
-**To test Variant B or C**, replace only the clause between the first
-semicolon and "Dark atmospheric drum and bass" with the variant's clause
-from above, then append `, with the newsreader alone taking the last line of
-every chorus in answer`. Change nothing else.
 
 Exclude styles:
 
@@ -433,12 +431,33 @@ Exclude styles:
 rap, MC, ragga chat, toasting, hype vocals, ad-libs, jump up, liquid dnb, happy hardcore, uplifting, joyful, celebratory, major key, children's choir, pop hooks, comedic, novelty, parody, American accent, autotune, vocoder, robot voice, clean pop vocals, sung lead vocal, lo-fi, chillhop, reggae, disco, epic trailer music
 ```
 
-**For Variant B (gospel) add:** `hand claps, tambourine, organ, worship,
-hymn, soul, praise`. Gospel's default pull is joy, and the excludes are
-where that gets fought — the Style box only gets positive words.
+### Variant B — the dark gospel choir
 
-Settings: style influence **75**, weirdness **60**, model **v5.5**, BPM
-**174**. No source audio until `BC-NEWSREADER` is attached — see below.
+Style:
+
+```
+Carried by one dark gravelly British male voice, a calm formal newsreader reading bulletins in close-mic'd received pronunciation over the beat, never raising his voice; the choruses answered by a gospel choir in unison, massed adult voices, minor key and mournful, grave and unhurried, roomy and far back, with the newsreader alone taking the last line of every chorus in answer. Dark atmospheric drum and bass, 174 BPM, halfstep and two-step, deep rolling sub and restrained breaks with space in them, opening into full-weight drops. Underneath, a real dark orchestra - a chilling solo cello, hushed creeping strings over a low drone, distant timpani. An eerie synth wail recurs like a warning. Dystopian, moody, minor key. Played completely straight, no comedy, no novelty.
+```
+
+Exclude styles:
+
+```
+rap, MC, ragga chat, toasting, hype vocals, ad-libs, jump up, liquid dnb, happy hardcore, uplifting, joyful, celebratory, major key, children's choir, pop hooks, comedic, novelty, parody, American accent, autotune, vocoder, robot voice, clean pop vocals, sung lead vocal, lo-fi, chillhop, reggae, disco, epic trailer music, hand claps, tambourine, organ, worship, hymn, soul, praise
+```
+
+### Variant C — the terrace crowd
+
+Style:
+
+```
+Carried by one dark gravelly British male voice, a calm formal newsreader reading bulletins in close-mic'd received pronunciation over the beat, never raising his voice; the choruses answered by a massed football-terrace crowd chanting in unison, hundreds of male voices in a big reverberant stand, ragged, grim and relentless, roomy and far back, with the newsreader alone taking the last line of every chorus in answer. Dark atmospheric drum and bass, 174 BPM, halfstep and two-step, deep rolling sub and restrained breaks with space in them, opening into full-weight drops. Underneath, a real dark orchestra - a chilling solo cello, hushed creeping strings over a low drone, distant timpani. An eerie synth wail recurs like a warning. Dystopian, moody, minor key. Played completely straight, no comedy, no novelty.
+```
+
+Exclude styles:
+
+```
+rap, MC, ragga chat, toasting, hype vocals, ad-libs, jump up, liquid dnb, happy hardcore, uplifting, joyful, celebratory, major key, children's choir, pop hooks, comedic, novelty, parody, American accent, autotune, vocoder, robot voice, clean pop vocals, sung lead vocal, lo-fi, chillhop, reggae, disco, epic trailer music, pub singalong, drinking song, stadium rock
+```
 
 ### Exclude-list notes (these changed on purpose)
 
@@ -460,6 +479,14 @@ Settings: style influence **75**, weirdness **60**, model **v5.5**, BPM
 - **`vocoder, robot voice` stay banned** now that the chorus is human.
 - **`ad-libs`** because the D&B/MC pool brings compulsive hype ad-libs with
   it.
+- **Variant B adds `hand claps, tambourine, organ, worship, hymn, soul,
+  praise`.** Gospel's default pull is joy and church furniture, and the
+  excludes are the only place that gets fought — the Style box takes
+  positive words only, because naming a thing there puts it in the prompt
+  whatever word sits in front of it.
+- **Variant C adds `pub singalong, drinking song, stadium rock`** — the
+  laddish/celebratory failure mode, which is the one way a terrace chant
+  goes wrong.
 
 ## Current cut
 
