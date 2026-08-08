@@ -214,6 +214,84 @@ in cold, no transition" device inherited from the orchestral cut. That
 device was written for a track with no drums; a D&B drop wants tension
 before it.
 
+### What round four applied (2026-08-08, from the songwriter research sweep)
+
+An 11-agent sweep of the songwriter-facing web
+([`../../../suno-gpt/files/lyricist-playbook.md`](../../../suno-gpt/files/lyricist-playbook.md))
+turned up five things that bear directly on this track. Caveat up front: **none of that material
+was gradeable as tested** — it is assertion-grade, so everything here is a cheap hypothesis, not a
+correction.
+
+- **`[Chant]` is a real tag, and it is what we have been describing in prose all along.** Reported
+  to produce "a rhythmic, monotonic, group-delivered near-spoken vocal with percussive timing
+  rather than a melodic line." Added to every drop, stacked with `[Drop]`. The same source notes
+  `[Post-Chorus]` and `[Chant]` exist *because* plain `[Chorus]` defaults to sung melody — which is
+  independent support for round three's rename.
+- **Bar counts work as duration control.** `[Build - 8 bars]`, `[Drop - 16 bars]`,
+  `[Outro - 4 bars]`. Applied throughout, which also pins the drop length rather than leaving it to
+  chance.
+- **Numerals should be spelled out** — Suno sounds words out from spelling. `16 bit` → **`sixteen
+  bit`**. (The one exception is number-words that collide with producer-tag aliases after Suno
+  strips spaces and hyphens; `sixteen` is not one.)
+- **An explicit `[Outro]` is worth having.** One source attributes "90% of abrupt cutoffs" to a
+  missing ending tag. Added after the power-off drop.
+- **Cue overload is now a named suspect.** Sources warn against stacking more than 3–4 directions
+  in close proximity. Our drop headers were running to seven or eight clauses. Trimmed to three
+  each, and the redundant ones (`shouted and never sung` alongside `[Chant]`; `twice through` when
+  the lyrics already show two passes) deleted. If a cue still gets ignored, the sweep's advice is
+  to **simplify further and re-roll** rather than escalate — which is the opposite of our house
+  ladder, so try the cheap one first.
+
+### The syllable gamble, stated honestly
+
+Round three merged the hook into two long lines to force speed. The sweep both **confirms the
+mechanism and flags the risk**:
+
+- Confirmed: density is the accelerator, and **short lines are not fast** — sources recommend short
+  lines for *slower, clearer* delivery and warn they can produce awkward pauses.
+- Flagged: the safe band is ~6–12 syllables, and **past ~15 the model compresses, smears consonants
+  and mumbles — with a *lower* ceiling at 170+ BPM**, because there is less time per bar.
+
+**Our two lines are 17 and 18 syllables at 174 BPM.** That is deliberately over the line. They are
+matched to within two syllables of each other, which matters because **the first line of a section
+sets the bar length and later lines get crammed into it** — a large mismatch is what produces
+glitchy, robotic delivery rather than clean speed.
+
+So this is a live gamble with a defined fail state and a defined ladder:
+
+| If the drop comes back… | Do this |
+|---|---|
+| Fast and rough | **Done.** Rough is a terrace chant; that is the target |
+| Mumbled, smeared, or words cut off | Too dense. Split at the rhyme into four lines, **keep zero commas**, keep `[Chant]` |
+| Still drawling | Density up: run the whole hook as one line, or three passes instead of two |
+| Right speed, loose against the grid | Stop prompting — **Studio 1.2 Warp Markers + Quantize** snap a vocal to the grid after the fact |
+
+There is a genuine tension underneath this worth naming: the sweep also reports that an authentic
+terrace chant caps its chantable line at **four words or fewer** — the "could a crowd shout this
+back" heuristic. `git push origin master` is exactly four words. So the merged long line buys speed
+at some cost to terrace authenticity, and the split-back fallback is not a defeat; it is the more
+idiomatic shape, with speed then coming from `[Chant]`, zero punctuation, and Quantize.
+
+### Plan B, if casting keeps failing: don't fight it in one generation
+
+The single biggest find of the research was not a prompt trick. ChillPanic published a method on
+**2026-08-04** — after our corpus was harvested — for putting two voices in one song, written up in
+[`../../../suno-gpt/files/suno-controls-and-workflows.md`](../../../suno-gpt/files/suno-controls-and-workflows.md)
+§4a. The premise is that **you do not get two voices out of one generation**, so you stop trying:
+generate the instrumental alone, cover it once per voice (style box deleted, replaced with the BPM
+only, never mentioning the instrumental), stem the lead vocal out of each, and layer them over the
+original instrumental with each vocal track set to `on beat`.
+
+**For this track that is decisive**, because it makes the newsreader-versus-crowd problem
+*structurally impossible* rather than merely improbable. No parentheses, no leak, no line-four
+gamble — the two voices never share a generation. Each also gets its own full style box, so the
+terrace crowd stops competing with the newsreader for one prompt's attention.
+
+The cost is a production job rather than a prompt: stems (Pro tier), a DAW or Studio, and an
+assembly pass. **Keep prompting first** — a single generation that lands is far cheaper. But if
+the drop keeps coming back with the newsreader in it after the changes above, stop re-rolling and
+go build it.
+
 ### The thing the orchestral cut already got right
 
 Its 2026-08-06 structural inversion — *every chorus drops in cold off its
@@ -522,7 +600,7 @@ strongest lever available:
 
 ```
 (git push origin master this code is a fucking disaster)
-(developers ain't fixing shit the compiler is stuck on 16 bit)
+(developers ain't fixing shit the compiler is stuck on sixteen bit)
 ```
 
 17 and 19 syllables respectively, against the 6–10 the guides call
@@ -669,12 +747,12 @@ two hundred thousand office workers were made redundant today
 the chief executive called it the hardest email he has ever asked an AI to write
 the treasury has printed another trillion to keep the markets calm
 the price of bread is up nine percent. the price of shares in bread is up ninety
-[Build | the last bulletin line hangs in the air | strings climbing, drums rolling up beneath, tension gathering | no voices]
-[Drop | the break slams in at full weight, rolling and dark | a football terrace crowd shouting the hook in unison over the drop, hundreds of hoarse untrained voices, rough and flat, shouted and never sung, never a solo voice | rattled off fast, locked hard to the grid, no space between the words | twice through, no gaps]
+[Build - 8 bars | strings climbing, drums rolling up beneath, tension gathering | no voices]
+[Drop - 16 bars] [Chant] [the break slams in at full weight, rolling and dark | a football terrace crowd shouting the hook in unison, hoarse and untrained, never a solo voice | rattled off fast, no space between the words]
 (git push origin master this code is a fucking disaster)
-(developers ain't fixing shit the compiler is stuck on 16 bit)
+(developers ain't fixing shit the compiler is stuck on sixteen bit)
 (git push origin master this code is a fucking disaster)
-(developers ain't fixing shit the compiler is stuck on 16 bit)
+(developers ain't fixing shit the compiler is stuck on sixteen bit)
 [Instrumental | brief | drums strip back to a tick, creeping strings, uneasy, settling to a hush]
 [Interlude | alert tone | spoken word bulletin | British male newsreader, composure straining, faster | low pedal-note ostinato over a rolling sub, drums held back, cutting out on the last line]
 breaking news.
@@ -682,25 +760,26 @@ a frontier model has escaped containment and taken control of six banks.
 the model describes the takeover as a friendly acquisition
 the government has welcomed the move as, quote, actually good for the markets
 the government wishes to stress that this statement was its own idea
-[Build | the bulletin's last line hangs | strings climbing higher, drums rolling up, tension gathering | no voices]
-[Drop | heavier, full amen roll under it | the terrace crowd is bigger now, more hoarse voices shouting in unison over the drop, rough and flat, shouted and never sung, never a solo voice | dark strings enter underneath the break | rattled off fast, locked hard to the grid, no space between the words | twice through]
+[Build - 8 bars | strings climbing higher, drums rolling up, tension gathering | no voices]
+[Drop - 16 bars] [Chant] [heavier, full amen roll, dark strings underneath | the terrace crowd is bigger now, more hoarse voices in unison, never a solo voice | rattled off fast, no space between the words]
 (git push origin master this code is a fucking disaster)
-(developers ain't fixing shit the compiler is stuck on 16 bit)
+(developers ain't fixing shit the compiler is stuck on sixteen bit)
 (git push origin master this code is a fucking disaster)
-(developers ain't fixing shit the compiler is stuck on 16 bit)
+(developers ain't fixing shit the compiler is stuck on sixteen bit)
 [Instrumental | brief | eerie synth wail, distant brass gathering over a filtered break, then falling away to sub only]
 [Interlude | emergency klaxons | spoken word bulletin | British male newsreader, still composed, signal degrading, static | orchestra and drums pounding, then falling away to nothing on the final line]
 the first battle between autonomous armies ended this morning. both sides declared victory
 neither government was consulted
 the global defence network has declined a request to be switched off
 the last remaining off switch is believed to be in a drawer, in Swindon
-[Build | the Swindon line hangs in dead air | the whole orchestra climbing, drums rolling up hard, maximum tension | no voices]
-[Drop | the heaviest break of the track, full dark orchestra playing with it | the whole terrace now, hundreds of hoarse voices shouting in unison over the drop, huge, rough, relentless, shouted and never sung, never a solo voice | rattled off fast, locked hard to the grid, no space between the words | twice through]
+[Build - 8 bars | the whole orchestra climbing, drums rolling up hard, maximum tension | no voices]
+[Drop - 16 bars] [Chant] [the heaviest break of the track, full dark orchestra with it | the whole terrace now, huge and rough and relentless, never a solo voice | rattled off fast, no space between the words]
 (git push origin master this code is a fucking disaster)
-(developers ain't fixing shit the compiler is stuck on 16 bit)
+(developers ain't fixing shit the compiler is stuck on sixteen bit)
 (git push origin master this code is a fucking disaster)
-(developers ain't fixing shit the compiler is stuck on 16 bit)
+(developers ain't fixing shit the compiler is stuck on sixteen bit)
 [power-off drop: sudden silence, electrical hum dying]
+[Outro - 4 bars | dead air, an electrical hum fading to nothing | no voices, no drums]
 [End]
 ```
 
@@ -893,6 +972,26 @@ closest that idea comes to returning, and it comes back without the punk.
   `sung lead vocal` dropped from the excludes now the crowd occupies the
   lead slot; gospel bans narrowed to `hand claps, tambourine, praise` so the
   sacred gravity survives.
+- **2026-08-08 — round four: applied the songwriter sweep.** An 11-agent web
+  sweep of songwriter-facing sources (all of it assertion-grade — see the
+  new `lyricist-playbook.md`) produced five applied changes: **`[Chant]`**
+  stacked onto every `[Drop]` (a real tag, reported to give exactly the
+  monotonic percussive group near-speech we had been describing in prose,
+  and its existence alongside `[Post-Chorus]` independently supports round
+  three's rename away from `[Chorus]`); **bar counts** as duration control
+  (`[Build - 8 bars]`, `[Drop - 16 bars]`, `[Outro - 4 bars]`); **`16 bit` →
+  `sixteen bit`** because Suno sounds numerals out from spelling; an
+  explicit **`[Outro]`**, one source blaming most abrupt cutoffs on its
+  absence; and **drop cues trimmed from seven or eight clauses to three**,
+  since cue overload is now a named suspect for ignored directions. The
+  syllable gamble is documented rather than resolved: our 17/18-syllable
+  lines sit deliberately past the ~15 ceiling that sources warn about at
+  170+ BPM, matched to within two of each other because the first line sets
+  the bar length, with a four-step fallback ladder ending at Studio 1.2's
+  Warp/Quantize. And **Plan B is now written down**: ChillPanic's
+  layered-cover method (published 2026-08-04, post-harvest) makes the
+  two-voice problem structurally impossible instead of improbable, and is
+  where to go if the newsreader keeps appearing in the drop.
 - **2026-08-08 — round-three adversarial review (pre-generation).** Kai
   asked for a deep review of the cut and the Suno mechanics before the next
   round. Biggest call: **the parentheses go back on all eight chorus
