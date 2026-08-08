@@ -330,14 +330,20 @@ Prepended verbatim to every asset prompt in §3.
 ## 3. Assets
 
 ### cover → `docs/images/covers/camping.jpg`
+
+**Metadata — none of this is pasted into Flow.**
 - **Cast:** @Tarquin, @Bob
 - **Light source:** flat overcast daylight
-- **Prompt:**
-  > <layer-2 text only; §1 is prepended at call time>
 - **Lint:** ✅ 2026-08-08 — no wordmarks · no likeness · no stacked destitution · no institutional text
 - **Flow media id:** <uuid>
 - **Revisions:**
   - v1 (2026-08-08) — …
+
+**Prompt.** Everything inside the fence is the prompt and nothing outside it is.
+
+```prompt
+<layer-2 text only, as ONE unwrapped line; §1 is prepended at call time>
+```
 ```
 
 Cast `Status` ∈ `cast` | `not-cast` | `needs-reconcile` | `none-by-design`.
@@ -423,7 +429,11 @@ logs aspect control as an open issue: real observed output is **1376×768
 - **Acceptance criteria:** the doc states all four layers; states that Layer 0
   lives only in the skill and is never copied; states the four lint triggers;
   states the "two failures = block, rewrite never retry" rule; states that
-  `numOutputs > 1` writes `-a`/`-b` and never the bare name.
+  `numOutputs > 1` writes `-a`/`-b` and never the bare name; and states the
+  **copy-paste rule** — every prompt is a ` ```prompt ` fenced block written as
+  one unwrapped line, everything outside the fence is metadata that is never
+  pasted into Flow, and no prompt is ever stored as a blockquote (the `>`
+  markers would be pasted verbatim into the prompt box).
 - **TDD:** no (docs)
 - **Validation:** `test -f docs/stories/PROMPT-LEDGER.md`;
   `grep -ic "rewrite, never retry" docs/stories/PROMPT-LEDGER.md` ≥ 1;
@@ -662,8 +672,10 @@ executor must not invent this copy unattended.**
 - **TDD:** no (copy)
 - **Validation:** `grep -c "### cover" docs/stories/*/prompts.md` returns `1`
   per file; `grep -L "Lint: ✅" docs/stories/*/prompts.md` returns nothing;
-  brand check — extract blockquotes only and search them:
-  `grep -h '^  *> ' docs/stories/*/prompts.md | grep -riE 'waitrose|natwest|bmw|x8|claude|keynes' || echo CLEAN`
+  brand check — extract the fenced prompt blocks only and search those:
+  `awk '/^```prompt$/{p=1;next} /^```$/{p=0} p' docs/stories/*/prompts.md | grep -iE 'waitrose|natwest|bmw|x8|spacex|starlink|claude' || echo CLEAN`
+  (note: **no `-r`** — with `-r` and no path argument grep recurses the whole
+  repo instead of reading stdin, and the check silently becomes meaningless)
   must print `CLEAN` (canon prose elsewhere in the file legitimately names these;
   only the prompts must be clean).
 - **Depends on:** T9

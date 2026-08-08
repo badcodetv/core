@@ -40,21 +40,18 @@ The AI is **never rendered** pre-revert. That is canon, not an omission.
 
 ### cover → `docs/images/covers/gitpush-origin-master.jpg`
 
+**Metadata — none of this is pasted into Flow.**
+
 - **Cast:** — (no people in this image)
 - **Light source:** earthlight down the aisle — the planet is the only
-  illumination in the hall
-- **Prompt (variant A — primary):**
-  > Hyper-realistic photograph, shot on 35mm film with fine natural grain, muted
-  > cool-neutral palette, no lens flares, calm observational tone, landscape
-  > orientation. The interior of a monumental server hall in orbit: two facing
-  > rows of tall dark equipment racks recede down a central aisle into deep clean
-  > black, their faces carrying tiny points of blue-white and amber status light.
-  > The far end of the aisle opens directly onto space — no window frame, no
-  > glass — and the Earth hangs there, the whole planet visible as a complete disc
-  > occupying roughly a quarter of the frame, its own soft blue light the only
-  > illumination in the hall, catching the nearest rack edges and falling away to
-  > nothing. Machine-precise geometry, vast still symmetrical composition, deep
-  > unlifted shadows. No people, no text, no fantasy effects.
+  illumination in the hall. Recorded so a later revision never adds a second
+  source; the instruction itself already lives in the prompt.
+**Prompt (variant A — primary).** Everything inside the fence is the prompt and
+nothing outside it is. Paste the whole block, unedited, into Flow.
+
+```prompt
+Hyper-realistic photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, no lens flares, calm observational tone, landscape orientation. The interior of a monumental server hall in orbit: two facing rows of tall dark equipment racks recede down a central aisle into deep clean black, their faces carrying tiny points of blue-white and amber status light. The far end of the aisle opens directly onto space — no window frame, no glass — and the Earth hangs there, the whole planet visible as a complete disc occupying roughly a quarter of the frame, its own soft blue light the only illumination in the hall, catching the nearest rack edges and falling away to nothing. Machine-precise geometry, vast still symmetrical composition, deep unlifted shadows. No people, no text, no fantasy effects.
+```
 
 - **Variant B — less symmetrical, more photographic:** replace *"vast still
   symmetrical composition"* with *"the aisle running off-axis so the planet sits
