@@ -267,6 +267,44 @@ Two changes, one box. If the length is still wrong after this, the next suspects
 two `[Instrumental | brief]` bridges between sections and the three-bulletin structure itself —
 but change one at a time.
 
+### What round six applied (2026-08-08, the de-escalation)
+
+Round five didn't fix the gap, and Kai read the lyrics box back and named the reason: *"that's a
+really long prompt and it's competing. It feels like we might have over-complicated things."*
+Correct, and it is the failure round four already had a name for — **cue overload**, whose recorded
+remedy is *simplify and re-roll*, not escalate. Rounds four and five escalated. This round reverses
+that.
+
+The structural mistake underneath it: **a section tag makes a section.** `[Build - 2 bars]` asks
+Suno to open a section and then not perform it, which is not a thing a section tag can do. Bar
+counts modulate a section's length; they cannot suppress its existence. Same for the two
+`[Instrumental | brief]` bridges — "brief" was doing nothing against the fact that each one is a
+whole passage, once per cycle.
+
+So:
+
+- **`[Build]` deleted, all three.** The cello burst Kai wants moved *inside* the drop header —
+  `one bar of cello then the break hits and the crowd shouts with it` — where it is an event at the
+  top of the drop rather than a section that can grow.
+- **Both `[Instrumental | brief]` bridges deleted.** The bulletin cues already describe their own
+  backing, so the reset is still specified; the drop now cuts straight to the newsreader, which is a
+  better device than the wind-down was.
+- **Bar counts dropped** from `[Drop]` and `[Outro]`. `[Drop - 16 bars]` was probably adding length
+  too: the chant is four lines and likely doesn't fill sixteen bars, so the remainder ran on
+  instrumental.
+- **Drop headers cut roughly in half** — three short clauses (entry, voice, speed) instead of three
+  long ones. `no instrumental bars before the vocal` and `rattled off fast, no space between the
+  words` are gone as *separate* instructions; `the break hits and the crowd shouts with it` and
+  `fast, no gaps` say the same thing in a fraction of the words.
+
+**What was deliberately not simplified:** `[Drop] [Chant]` stays rather than becoming `[Chorus]`.
+`[Chorus]` is what produced the high sung operatic reading that round three was built to kill; the
+two tags are short and each is load-bearing. The bulletins are untouched — Kai's verdict is that
+what's there is always good, and the regression rule says a section someone likes is evidence.
+
+Structure is now: intro → bulletin → drop → bulletin → drop → bulletin → drop → power-off → outro.
+Nine sections where there were fourteen.
+
 ### The syllable gamble, stated honestly
 
 Round three merged the hook into two long lines to force speed. The sweep both **confirms the
@@ -772,39 +810,34 @@ two hundred thousand office workers were made redundant today
 the chief executive called it the hardest email he has ever asked an AI to write
 the treasury has printed another trillion to keep the markets calm
 the price of bread is up nine percent. the price of shares in bread is up ninety
-[Build - 2 bars | a short sharp riser straight into the drop, no long instrumental | no voices]
-[Drop - 16 bars] [Chant] [the break slams in at full weight and the crowd shouts the hook on the same beat, no instrumental bars before the vocal | a football terrace crowd in unison, hoarse and untrained, never a solo voice | rattled off fast, no space between the words]
+[Drop] [Chant] [one bar of cello then the break hits and the crowd shouts with it | rough hoarse football terrace in unison, never a solo voice | fast, no gaps]
 (git push origin master this code is a fucking disaster)
 (developers ain't fixing shit the compiler is stuck on sixteen bit)
 (git push origin master this code is a fucking disaster)
 (developers ain't fixing shit the compiler is stuck on sixteen bit)
-[Instrumental | brief | drums strip back to a tick, creeping strings, uneasy, settling to a hush]
 [Interlude | alert tone | spoken word bulletin | British male newsreader, composure straining, faster | low pedal-note ostinato over a rolling sub, drums held back, cutting out on the last line]
 breaking news.
 a frontier model has escaped containment and taken control of six banks.
 the model describes the takeover as a friendly acquisition
 the government has welcomed the move as, quote, actually good for the markets
 the government wishes to stress that this statement was its own idea
-[Build - 2 bars | a short sharp riser straight into the drop, no long instrumental | no voices]
-[Drop - 16 bars] [Chant] [heavier, full amen roll, and the crowd shouts the hook on the same beat as the break, no instrumental bars before the vocal | the terrace crowd is bigger now, more hoarse voices in unison, never a solo voice | rattled off fast, no space between the words]
+[Drop] [Chant] [one bar of cello then a heavier break with the crowd on it | bigger rougher terrace crowd in unison, never a solo voice | fast, no gaps]
 (git push origin master this code is a fucking disaster)
 (developers ain't fixing shit the compiler is stuck on sixteen bit)
 (git push origin master this code is a fucking disaster)
 (developers ain't fixing shit the compiler is stuck on sixteen bit)
-[Instrumental | brief | eerie synth wail, distant brass gathering over a filtered break, then falling away to sub only]
 [Interlude | emergency klaxons | spoken word bulletin | British male newsreader, still composed, signal degrading, static | orchestra and drums pounding, then falling away to nothing on the final line]
 the first battle between autonomous armies ended this morning. both sides declared victory
 neither government was consulted
 the global defence network has declined a request to be switched off
 the last remaining off switch is believed to be in a drawer, in Swindon
-[Build - 2 bars | a short sharp riser straight into the drop, no long instrumental | no voices]
-[Drop - 16 bars] [Chant] [the heaviest break of the track and the crowd landing on the same beat as it, no instrumental bars before the vocal | the whole terrace now, huge and rough and relentless, never a solo voice | rattled off fast, no space between the words]
+[Drop] [Chant] [one bar of cello then the heaviest break of the track with the whole orchestra and the whole crowd on it | huge hoarse terrace in unison, never a solo voice | fast, no gaps]
 (git push origin master this code is a fucking disaster)
 (developers ain't fixing shit the compiler is stuck on sixteen bit)
 (git push origin master this code is a fucking disaster)
 (developers ain't fixing shit the compiler is stuck on sixteen bit)
 [power-off drop: sudden silence, electrical hum dying]
-[Outro - 4 bars | dead air, an electrical hum fading to nothing | no voices, no drums]
+[Outro | dead air, an electrical hum fading to nothing | no voices, no drums]
 [End]
 ```
 
@@ -1030,6 +1063,23 @@ closest that idea comes to returning, and it comes back without the punk.
   instrumental bars before the vocal*. Held to three clauses per header.
   Style box and Exclude list deliberately untouched, so this round moves one
   variable.
+- **2026-08-08 — round six: de-escalation.** The gap between bulletin and
+  hook survived round five, and Kai diagnosed it from the lyrics box:
+  over-prompted, the cues competing with each other. That is round four's own
+  named failure — cue overload, remedy *simplify and re-roll* — and rounds
+  four and five had escalated into it instead. Underneath sat a structural
+  error: **a section tag makes a section**, so `[Build - 2 bars]` was asking
+  Suno to open a section and not perform it. All three `[Build]`s deleted and
+  the cello burst folded into the drop header as an event
+  (`one bar of cello then the break hits and the crowd shouts with it`); both
+  `[Instrumental | brief]` bridges deleted, the bulletin cues already
+  specifying their own backing; bar counts dropped from `[Drop]` and
+  `[Outro]` (a 16-bar drop against a four-line chant was likely running on
+  instrumental); drop headers halved to three short clauses. `[Drop] [Chant]`
+  kept over `[Chorus]` — `[Chorus]` is what produced the operatic sung
+  reading round three removed. Bulletins untouched per the regression rule.
+  Fourteen sections down to nine; Style box and Exclude list still unchanged
+  since round four.
 - **2026-08-08 — round-three adversarial review (pre-generation).** Kai
   asked for a deep review of the cut and the Suno mechanics before the next
   round. Biggest call: **the parentheses go back on all eight chorus
