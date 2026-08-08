@@ -22,7 +22,9 @@ canon_source: the eight beat sheets (prologue-repo.md … coda-fork.md) + README
 > (the feed/door/epiphany scenes cut, the story ends at the arrival), **this
 > file wins for the video.**
 >
-> The song ([`songs/git-push-origin-master.md`](./songs/git-push-origin-master.md))
+> The song (two cuts sharing one bulletin bank:
+> [`songs/git-push-origin-master-orchestral.md`](./songs/git-push-origin-master-orchestral.md)
+> and [`songs/git-push-origin-master-dnb.md`](./songs/git-push-origin-master-dnb.md))
 > is its own workstream — but the two now **share lore on purpose**: the
 > song's three news bulletins are this story's collapse beats, verbatim.
 >
@@ -698,7 +700,7 @@ is exactly what *not* to do."
 | 1–4 | The commit-log / terminal register (stylised-scripture git UI); the cursor; the push | README "Image direction"; register split thread |
 | 5 | Three node glimpse-stills (nurse+tree, tent, phone box); the green ✓ treatment | node canon folders: `magic-money-tree/`, `camping/`, `karen/` |
 | 6 | Official dashboards vs street-reality intercut; the AI's private falling graph; the basement optimiser (one held frame) | COSMIC register anchor |
-| 7 | The bulletin treatment (screens / degrading broadcast); three cut-off voice recordings; the newsreader voice (share `BC-NEWSREADER` with the song) | `songs/git-push-origin-master.md` (bulletins verbatim) |
+| 7 | The bulletin treatment (screens / degrading broadcast); three cut-off voice recordings; the newsreader voice (share `BC-NEWSREADER` with the song) | `songs/git-push-origin-master-orchestral.md` (bulletins verbatim) |
 | 8–9 | The empty street; the planet-wide vantage; long still COSMIC frames | register tip: documentary ghost inside cosmic cold |
 | 10 | Peopled rooms (the ghosts) → the same rooms still; the deletion | `characters/the-ai.md` (the ghosts note) |
 | 11 | The spinning-top archive glimpse; the spinning coin (the totem — lock its look; returns in 13 & 16); the portal-green multiverse flicker; cave firelight still | Act 4 sheet; Inception + Rick-and-Morty homage calls (open) |

@@ -1,12 +1,24 @@
 ---
-title: git push origin master
+title: git push origin master (orchestral)
 status: drafting
+sibling: songs/git-push-origin-master-dnb.md
 model: v5.5 (cue-heavy track — 5.5 obeys the bracket architecture; 4.5 shreds it)
 settings: style influence 75, weirdness 60
 voices: [newsreader (male, dark gravelly RP — spoken verses, booming chant choruses, multiplying into a harmony of himself)]
 ---
 
-# git push origin master (song)
+# git push origin master — orchestral cut
+
+> **This is the canonical master.** It is deliberately frozen: the narrator's
+> entrance and the bulletins are the best thing we've made, and the take that
+> carries them is the source for the `BC-NEWSREADER` Voice. A drum & bass
+> sibling —
+> [`git-push-origin-master-dnb.md`](./git-push-origin-master-dnb.md) —
+> answers the one piece of first-listen feedback this cut couldn't (the
+> chorus: too slow, wrong voice swearing, no beat) by keeping the orchestra,
+> putting a break under it, and handing the chorus to a room of
+> schoolchildren. The two cuts share the news-report bank at the bottom of
+> this file; neither supersedes the other.
 
 The EP1 anthem, rebuilt on the *War of the Worlds* model (1978 Jeff Wayne):
 **spoken narration carries the plot; the orchestra does the screaming.** The

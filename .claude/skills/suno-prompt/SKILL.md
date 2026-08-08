@@ -349,7 +349,11 @@ model, settings, voices`). Everything destined for a Suno input box lives in the
 code blocks** that copy clean — **never in frontmatter** (YAML `>-` blocks indent every line, which
 makes copy-pasting a pain). A `## Suno prompt` section carries all four, in paste order: **My Taste,
 Style, Exclude Styles**, then the lyrics in a `lyrics` block.
-`docs/stories/gitpush-origin-master/songs/git-push-origin-master.md` is the worked reference.
+`docs/stories/gitpush-origin-master/songs/git-push-origin-master-orchestral.md` is the worked
+reference. Its D&B sibling (`…-dnb.md`) is the worked reference for **two cuts of one song**: when
+a track forks rather than iterates, give each cut its own file with a `sibling:` frontmatter key,
+keep the shared material (the lyric/bulletin bank) in one file only, and say in both headers which
+one is canonical.
 
 Record the **slider settings and the Suno model version** alongside the prompt — a prompt without
 them isn't reproducible, and model behaviour shifts between versions.

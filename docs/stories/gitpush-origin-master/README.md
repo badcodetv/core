@@ -108,7 +108,8 @@ The fastest way to hold all of it: the arc is **three movements**, and they *are
 | Story spine | [`story.md`](./story.md) | **committed structure** (distilled 2026-08-06; words tweakable) |
 | Storyboard (video) | [`story.md`](./story.md#storyboard--scene-by-scene-video-guide) | drafted from the spine — Jack to produce from |
 | Characters | [`characters/`](./characters/) | the AI (unpersonified), the Carrier, the hundred — no image sheets yet |
-| Song — "git push origin master" | [`songs/git-push-origin-master.md`](./songs/git-push-origin-master.md) | drafting (Kai, separate workstream — not touched by the distillation) |
+| Song — "git push origin master" (orchestral) | [`songs/git-push-origin-master-orchestral.md`](./songs/git-push-origin-master-orchestral.md) | **canonical master** — narrator + bulletins land; frozen, and the source for the `BC-NEWSREADER` Voice |
+| Song — "git push origin master" (drum & bass) | [`songs/git-push-origin-master-dnb.md`](./songs/git-push-origin-master-dnb.md) | drafting — same bulletins, orchestra kept, break underneath, chorus handed to a room of schoolchildren |
 | Video | Jack, from the storyboard section of `story.md` | next up |
 | Comic (full arc) | — | not started; the 16-panel **GPOM Short** teaser is live at `/comics/gpom-short` |
 

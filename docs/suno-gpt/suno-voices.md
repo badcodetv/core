@@ -196,3 +196,73 @@ The house move (generate on 4.5+ for vocal variety, Cover into 5.5 for sonics) f
 went haywire with the lyric structure; **v5.5 followed the bracket cues exactly**. For a track whose
 architecture lives in dense per-section cues, structure-obedience beats vocal variety — stay on
 5.5 and spend direction in the brackets, which it demonstrably honours.
+
+---
+
+## Thread 3 — the two-voice problem (GPOM drum & bass cut, 2026-08-08)
+
+Context: the GPOM song forked into two cuts. The orchestral master's narrator is the best voice
+we have and is about to become the saved Voice `BC-NEWSREADER`; the D&B sibling needs the *chorus*
+to be somebody else. The question — can one generation carry a saved Voice on the verses and a
+different voice on the chorus? — turns out to have a clean answer.
+
+### 1. A saved Voice has no section scope. There is no such control.
+
+Suno's Voices documentation says only that songs made with the feature "will use your voice instead
+of a default Suno singer." It does not expose lead-vs-backing scope, per-section attachment, or more
+than one Voice per generation, and it answers none of the three anywhere else. Practitioner guidance
+is blunter: a Persona/Voice carries "vocal character and general delivery" across the track, and
+stacking identity layers (Voice + custom model + My Taste + uploaded audio) "can create more
+conflict, not more control" — the standing advice being to use *the smallest identity tool that
+solves the problem*.
+
+**So: attaching a Voice and then asking for a second, different voice in the same take is not a
+supported operation.** Expect a blend. Plan around it rather than prompting at it.
+
+### 2. The lead/parenthesis boundary is the only in-generation casting seam we have
+
+This is Thread 2 §2 promoted from an observation to a working mechanism. The vocal prior — and, by
+extension, an attached Voice — binds to the **lead slot inside the groove**. The
+**parenthesis/backing slot escapes it**. That gives every generation exactly **two castable slots**:
+
+| Slot | How you write it | What it's for |
+|---|---|---|
+| Lead | unparenthesised lines in the groove | the saved Voice / the character you're pinning |
+| Backing | `( )` lines | the *other* voice — and the only place it can safely live |
+
+Corollary for song design: **whichever voice you are cloning goes in the lead; the other one goes
+in parentheses, whatever its narrative importance.** On Karen, that meant the sung hook moved to
+the parentheses so the institution's choir carried it and the lead never sang. On GPOM D&B it
+means the *chorus* — the title hook of the song — lives in parentheses, sung by schoolchildren,
+while the narrator holds the lead and never touches it.
+
+### 3. Cast across *categories*, not across adjectives
+
+The strongest predictor of whether two voices stay separate is how far apart they are in kind. Two
+descriptions of one solo adult male ("gravelly" vs "robotic", "calm" vs "furious") sit close enough
+in the space that the model will average them — which is exactly what happened when GPOM's chorus
+was a vocoded robot against a gravelly narrator, twice, both times retired.
+
+A **room of children** against **one close-mic'd adult man** cannot average — they are different
+vocal categories, not different adjectives on the same one. Reach for a category jump (solo → crowd,
+adult → child, human → instrument) before reaching for a stronger adjective.
+
+Related: robotic/vocoder vocals are a *bad* target for this, and there's a mechanistic reason.
+Practitioner guidance reports that robotic-sounding vocals are typically what Suno produces **from
+conflicting vocal tags** — it's the failure texture. Asking for it deliberately means asking for the
+thing the model emits when confused.
+
+### 4. Treatment and distance are casting, not mixing
+
+Cheap and reliable, and it works before any timbre argument lands: give each slot its own space.
+Close-mic'd and dry against roomy and distant reads as *two different people in two different
+rooms* even when the timbres are neighbours. (Karen used the same lever for plot — the phone-filter
+ladder, with AI Sean's reveal carried entirely by the absence of a filter.)
+
+### 5. Splitting a register out of a character makes their clone better
+
+Non-obvious payoff. The one-register rule says a Voice must be cloned from a single consistent
+delivery. A character asked to do two registers in one song (GPOM's narrator: spoken bulletins *and*
+a booming chant) is therefore a worse clone source than one who does a single register throughout.
+**Recasting the second register onto somebody else doesn't just fix the casting — it purifies the
+clone's source material.** Worth checking whenever a lead is being asked to do two things.
