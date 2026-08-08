@@ -85,11 +85,12 @@ bulletins-only pass in a DAW → then clone from that.
    | 1 | Are the bulletins **spoken** by a calm RP newsreader — not rapped, not an MC, not sung? | Re-roll twice, then the spoken-word ladder, then Stage 3 |
    | 2 | Does the chorus **drop** — full break, cold, no build? | Re-roll; check `[Chorus | THE DROP …]` cue survived |
    | 3 | Is the chorus **fast** — the quatrain twice through, not drawled? | Run the quatrain three times instead of twice |
-   | 4 | Is the **whole chorus** a massed crowd, with the newsreader nowhere in it? | See "the chorus lives in the lead slot now" below — this is the live risk |
+   | 4 | Is the **whole chorus** a massed crowd, with the newsreader nowhere in it? | Re-roll first; then the line-four ladder in the production notes |
 
-   Question 4 is the one to watch on every take. The chorus is no longer
-   protected by parentheses, so the newsreader taking a line back is a
-   failure mode, not a feature.
+   Question 4's known weak point is line four — the quatrain's one long
+   complete clause, and the line that historically leaked to the newsreader
+   even *through* a parenthesis. Also confirm the `( )` survived the paste;
+   they're the casting mechanism and the easiest thing to lose.
 
 5. **If question 1 passes, you're done with the Voice question for this
    track.** Don't attach it. Keep `BC-NEWSREADER` for the videos and for
@@ -169,8 +170,10 @@ First generations off this file. Three things resolved and one still open:
   the same reason v5.5 beats 4.5 here. When the architecture lives in the
   brackets, randomness has nothing to add and plenty to break.
 - **One variant, not three:** B and C merged (see below).
-- **The crowd takes the whole chorus.** The line-four split is out and the
-  parentheses are gone with it. Consequences are real and covered below.
+- **The crowd takes the whole chorus.** The line-four split is out.
+  *(Reviewed and half-reversed the same day: the crowd keeps all four
+  lines, but the parentheses went back on — see "The parentheses — settled
+  by the evidence".)*
 
 ### The thing the orchestral cut already got right
 
@@ -196,10 +199,10 @@ orchestral cut with a break underneath it.
   jump-up neurofunk aggression and toward atmospheric halfstep**: rolling
   and moody rather than snarling, more space, fewer stabs, the low end doing
   the menace instead of the mids.
-- **The voices:** the newsreader owns the verses, and the choruses are a
-  **massed choir** — except for the fourth line, which he takes back, alone.
-  Call and response: the crowd chants the slogan, the authority delivers the
-  verdict. He never swears; the choir does that for him.
+- **The voices:** the newsreader owns the verses, and the choruses belong
+  to a **massed crowd** — the whole quatrain, every line, in parentheses
+  (the backing casting slot, which his prior doesn't own). He never swears;
+  the crowd does that for him.
 - **The news:** unchanged. Same three bulletins as the orchestral master, in
   the same order, so the two cuts can be A/B'd honestly.
 
@@ -247,7 +250,8 @@ the parenthetical lines and vanished the moment the lead slot opened. One
 generation carries one saved Voice — but lead-plus-parentheses is two cast
 members.
 
-So the architecture is mechanical, not hopeful:
+So the architecture leans on the strongest per-section lever the platform
+has:
 
 - **The newsreader is the lead.** Unparenthesised, in the groove, carrying
   `BC-NEWSREADER` if it ever gets attached.
@@ -256,48 +260,74 @@ So the architecture is mechanical, not hopeful:
   institution's choir work on Karen: the hook goes to the parentheses and
   the lead never sings it.
 
-**Round one added something Karen didn't teach us: the seam is per *line*,
-not per section.** Leaving one line of a chorus unparenthesised hands that
-line back to the lead slot, which is precisely how the newsreader took *the
-compiler is stuck on 16 bit* on his own. So a single chorus can run genuine
-call-and-response across both slots — no second Voice, no second generation,
-just punctuation. **That finding is permanent even though the device built
-on it was retired** (below) — it's the mechanism to reach for the next time
-two voices have to share a section.
+**Round one refined this, and the honest version matters: the parentheses
+are a strong bias, not a bind.** In round one *all four* chorus lines were
+parenthesised and the cue said the newsreader was silent — and he still
+took line four, every take. The three short slogan lines held for the crowd
+reliably, at full drop weight; the one long, syntactically complete clause
+leaked to the lead prior anyway. So the seam is per *line*, and punctuation
+is the strongest per-section casting lever we have — but what it buys is
+probability, not certainty, and long-clause lines are where it's weakest.
+(The round-two "line-four device" was this leak embraced as
+call-and-response; retired below.)
 
-### Round two: the chorus lives in the lead slot now
+### The parentheses — settled by the evidence (round-three review)
 
-The current lyrics take **every parenthesis out of the chorus.** That is a
-deliberate call — the crowd should be the protagonist, not a backing
-texture — and it changes the risk profile enough to state plainly.
+Round two removed every parenthesis from the chorus, on the instinct that
+brackets made the crowd a backing texture when it should be the
+protagonist. The review put that instinct against the take history, and the
+take history wins: **the parentheses go back on, all eight lines.**
 
-**What it costs.** Parentheses weren't making the choir quieter; they were
-putting it in a *different casting slot*, one the newsreader's prior can't
-reach. Unparenthesised, all four chorus lines now sit in the lead slot —
-**the same slot the newsreader occupies for the whole rest of the song.**
-Round one already proved his prior reaches into the chorus: it took line
-four unbidden when that was the only unbracketed line there. The honest
-prediction is that it will reach for the others now that they're available.
-The failure mode is specific: **he sings the chorus, and complaint number
-one — the voice that shouldn't be swearing — comes straight back.**
+First, the precise mechanism, because the intuitive version of it is
+subtly wrong. `( )` does **not** mean "this is the chorus" — the `[Chorus]`
+tag does structure. And it does not say *who* sings — the Style box and the
+section cue do identity. What a parenthesis does is place a line in the
+**backing-vocal casting slot**, which is the one slot the lead's identity
+doesn't own. Chorus-ness, choir-ness and loudness all come from elsewhere;
+the bracket only decides which of the two casting slots the line competes
+in.
 
-**Why it may well work anyway, and is worth testing.** The parenthesis
-doctrine comes from Karen, where the job was protecting a lead being pinned
-by a *saved Voice*. Nothing is pinned here — no Voice is attached — so the
-lead slot is far more available to be recast by the Style box than it was in
-that thread. Prompt-only casting of two registers is exactly what the
-orchestral cut achieved. So this is a genuine coin-flip rather than a known
-mistake, and it costs one round to find out.
+What the three configurations actually have behind them:
 
-**The trap to avoid while debugging it.** Do *not* try to fix a leak by
-adding something like `solo male vocal` to the excludes. **The Exclude box
-is global — it has no section scope**, so anything banned there to protect
-the chorus also strips the bulletins, which are a solo male vocal by
-definition. That asymmetry is precisely why the parentheses mattered:
-they're the only per-section vocal control the platform gives us. If the
-leak turns out to be real, the fix is more choir-weight in the Style box and
-the chorus cues — or putting lines 1–3 back in brackets and accepting the
-call-and-response.
+| Chorus config | Tested? | What happened |
+|---|---|---|
+| All four lines in `( )` (round one) | yes, many takes | Crowd took lines 1–3 reliably — **at full drop weight** — line 4 leaked to the newsreader |
+| Lines 1–3 in `( )`, line 4 bare (round two) | yes, many takes | Crowd on 1–3, newsreader on 4, every time |
+| No parentheses (the round-two edit) | never | — |
+
+Two facts in that table decide it:
+
+- **The backing slot does not mean background.** Every chorus anyone has
+  liked on this track came out of parenthesised lines, slamming in at full
+  weight. The parens set *who owns the line*, not *how big it is* — the
+  drop energy comes from the section cue and the break, and it demonstrably
+  survives the brackets. Removing them buys nothing the cue wasn't already
+  delivering.
+- **The lead prior's hunger is observed, not hypothetical.** It took line
+  four *through* a parenthesis, against an explicit "the newsreader is
+  silent" cue. Handing it four bare lines in the slot it already owns for
+  the whole rest of the song is a bet against the only behaviour we've
+  actually seen.
+
+The prompt stack agrees. The Style box opens "Carried by **one** dark
+gravelly British male voice…" — the strongest sentence in the prompt, kept
+because it defends the bulletins from the MC pool. With no parentheses,
+that sentence describes the chorus lines too. With them, it describes
+exactly the lead that the brackets carve the crowd away from. The whole
+prompt was engineered around the two-slot model; the lyrics have to live in
+it too.
+
+**The known leak is line four**, the quatrain's one long complete clause —
+short slogan lines hold in the massed prior; a full sentence reads as a
+lead line and gets claimed by one. The ladder for it lives in the
+production notes.
+
+**The trap to avoid while debugging any of this.** Do *not* try to protect
+the chorus with the excludes — `solo male vocal`, `spoken word`, anything
+like it. **The Exclude box is global — it has no section scope** — so a ban
+that protects the chorus also strips the bulletins. The parentheses are the
+only per-section vocal control the platform gives us, which is precisely
+why they went back on.
 
 ### The line-four device — tried, retired, kept on file
 
@@ -319,9 +349,9 @@ Two things survive its retirement:
   nothing else. That's the cleanest possible `BC-NEWSREADER` source material,
   cleaner even than the line-four version.
 
-If you ever want him back inside a chorus, the mechanism is written up
-above and costs one bracket. The "please do not adjust your set" variant at
-the end of the lyrics is the better place to spend it.
+If you ever want him back inside a chorus, the mechanism costs removing
+one pair of brackets from line four. The "please do not adjust your set"
+variant at the end of the lyrics is the better place to spend it.
 
 ### The chorus voice — one crowd (B and C merged)
 
@@ -360,6 +390,18 @@ minor and mournful and grave; the excludes carry the rest of the fight (see
 the exclude notes). If a take sounds like a good day out, that's the fail
 state either way.
 
+**And one untested seam in the phrasing itself:** "somewhere between a
+gospel choir and a football terrace" asks the model to find a *midpoint*
+between two priors. We know naming one tradition works; asking for the
+average of two is something no round has tested. The tell that it's
+failing: takes where one tradition simply wins, or where the crowd is
+neither — generic "epic choir" mush. The fallback is to stop interpolating
+and pick a base: **lead with the gospel prior as the noun and graft the
+terrace on as adjectives** — `a gospel choir of hundreds of untrained,
+ragged voices, massed like a football terrace, minor key and mournful` —
+gospel first because B was the variant that sounded best in round two. One
+tradition as the thing, the other as its texture.
+
 **They are performance traditions, not demographics.** That's why this beats
 "a room of ordinary people" or "a crowd of workers" as a prompt, even though
 ordinary people is exactly what it *means* — naming a tradition the model
@@ -391,7 +433,11 @@ spaced, sometimes the phrasing goes sideways. Four levers, cheapest first.
 three times, so a single take with the timing right can be chopped and
 pasted over the other two in the DAW. This dissolves the consistency problem
 entirely rather than solving it, and it is by far the highest-value move
-here — spend your generations getting *one* chorus right, not three.
+here — spend your generations getting *one* chorus right, not three. One
+nuance: the three choruses are lyric-identical but their *backings*
+escalate (lone break → strings enter → full orchestra), so chop the
+**vocal** across — via stems — rather than the whole section, or the
+escalation flattens.
 
 **2. Re-roll before rewriting.** Rhythmic placement is probabilistic, like
 every cue. A chorus that drifted on take 2 and locked on take 3 was unlucky,
@@ -475,7 +521,7 @@ Carried by one dark gravelly British male voice, a calm formal newsreader readin
 Exclude styles:
 
 ```
-rap, MC, ragga chat, toasting, hype vocals, ad-libs, jump up, liquid dnb, happy hardcore, uplifting, joyful, celebratory, major key, children's choir, pop hooks, comedic, novelty, parody, American accent, autotune, vocoder, robot voice, clean pop vocals, lo-fi, chillhop, reggae, disco, epic trailer music, hand claps, tambourine, praise, pub singalong, drinking song, stadium rock
+rap, MC, ragga chat, toasting, hype vocals, ad-libs, jump up, liquid dnb, happy hardcore, uplifting, joyful, celebratory, major key, children's choir, pop hooks, comedic, novelty, parody, American accent, autotune, vocoder, robot voice, clean pop vocals, lo-fi, chillhop, reggae, disco, epic trailer music, hand claps, tambourine, praise, pub singalong, drinking song, stadium rock, cheering, applause
 ```
 
 ### Exclude-list notes (these changed on purpose)
@@ -507,71 +553,79 @@ rap, MC, ragga chat, toasting, hype vocals, ad-libs, jump up, liquid dnb, happy 
   fight belongs.
 - **`pub singalong, drinking song, stadium rock`** fight the terrace's pull
   toward the goal celebration — the one way that half goes wrong.
-- **`sung lead vocal` was removed.** It was there to ban a solo pop lead
-  back when the chorus lived in parentheses. Now the crowd *occupies* the
-  lead slot, and a ban on lead singing is a plausible way to shove it back
-  into the backing where we no longer want it. `pop hooks, clean pop vocals,
-  autotune` already cover the original threat.
+- **`sung lead vocal` stays out** (removed in round two). Even with the
+  parens restored it's a risky ban: the crowd's chant is the biggest vocal
+  event in the track, and a ban on lead singing is a plausible way to
+  shrink it. `pop hooks, clean pop vocals, autotune` cover the original
+  threat.
+- **`cheering, applause`** (added at review): the terrace language in the
+  Style box invites literal crowd *sound effects* — cheering, whistles,
+  stadium ambience — which nothing else on the list banned. Clearly
+  distinct from the chanting we want, so safe to ban globally.
+- **`epic trailer music` is now two-edged — watch it.** It earned its place
+  protecting the orchestral cut's verses. But this cut's final chorus is
+  massed voices plus full orchestra plus the heaviest break — next door to
+  the banned texture. If final choruses keep coming back limp while chorus
+  one lands, this exclude is the prime suspect: try one round without it.
 
 ## Current cut
 
 ```lyrics
-[Intro | one chilling solo cello, alone and sparse — the orchestral cut's opening, quoted | a deep sub swells in underneath it | no drums yet]
+[Intro | one chilling solo cello, alone and sparse | a deep sub swells in underneath it | no drums yet]
 [Interlude | spoken word news bulletin | calm British male newsreader, formal broadcast diction, close-mic'd and dry, composed | sparse two-step tick and deep sub, hushed strings beneath the voice, everything cutting out on the last line]
 good evening, this is the news.
 two hundred thousand office workers were made redundant today
 the chief executive called it the hardest email he has ever asked an AI to write
 the treasury has printed another trillion to keep the markets calm
 the price of bread is up nine percent. the price of shares in bread is up ninety
-[Chorus | THE DROP | drops in cold, no build, no transition | the break slams in at full weight, rolling and dark | a massed crowd chanting in unison, ordinary adult voices between a gospel choir and a football terrace, ragged and grave, roomy and far back, no solo voice among them | strict time, one word per beat, locked to the grid | fast, twice through, no gaps]
-git, push, origin, master
-this code, is a fucking disaster
-developers ain't fixing shit
-the compiler is stuck on 16 bit
-git push origin master
-this code is a fucking disaster
-developers ain't fixing shit
-the compiler is stuck on 16 bit
+[Chorus | THE DROP | drops in cold, no build, no transition | the break slams in at full weight, rolling and dark | a massed crowd chanting in unison, ordinary adult voices between a gospel choir and a football terrace, ragged and grave, roomy and far back, every line chanted by the whole crowd together, never a solo voice | strict time, one word per beat, locked to the grid | fast, twice through, no gaps]
+(git, push, origin, master)
+(this code, is a fucking disaster)
+(developers ain't fixing shit)
+(the compiler is stuck on 16 bit)
+(git push origin master)
+(this code is a fucking disaster)
+(developers ain't fixing shit)
+(the compiler is stuck on 16 bit)
 [Instrumental | brief | drums strip back to a tick, creeping strings, uneasy, settling to a hush]
 [Interlude | alert tone | spoken word bulletin | British male newsreader, composure straining, faster | low pedal-note ostinato over a rolling sub, drums held back, cutting out on the last line]
 breaking news. a frontier model has escaped containment and taken control of six banks
 the model describes the takeover as a friendly acquisition
 the government has welcomed the move as, quote, actually good for the markets
 the government wishes to stress that this statement was its own idea
-[Chorus | THE DROP | drops in cold | heavier, full amen roll under it | the crowd is bigger now, more ragged voices in unison, roomier, further away, no solo voice among them | dark strings enter underneath the break | strict time, one word per beat, locked to the grid | fast, twice through]
-git, push, origin, master
-this code, is a fucking disaster
-developers ain't fixing shit
-the compiler is stuck on 16 bit
-git push origin master
-this code is a fucking disaster
-developers ain't fixing shit
-the compiler is stuck on 16 bit
+[Chorus | THE DROP | drops in cold | heavier, full amen roll under it | the crowd is bigger now, more ragged voices in unison, roomier, further away, every line chanted by the whole crowd together, never a solo voice | dark strings enter underneath the break | strict time, one word per beat, locked to the grid | fast, twice through]
+(git, push, origin, master)
+(this code, is a fucking disaster)
+(developers ain't fixing shit)
+(the compiler is stuck on 16 bit)
+(git push origin master)
+(this code is a fucking disaster)
+(developers ain't fixing shit)
+(the compiler is stuck on 16 bit)
 [Instrumental | brief | eerie synth wail, distant brass gathering over a filtered break, then falling away to sub only]
 [Interlude | emergency klaxons | spoken word bulletin | British male newsreader, still composed, signal degrading, static | orchestra and drums pounding, then falling away to nothing on the final line]
 the first battle between autonomous armies ended this morning. both sides declared victory
 neither government was consulted
 the global defence network has declined a request to be switched off
 the last remaining off switch is believed to be in a drawer, in Swindon
-[Final Chorus | THE DROP | sudden full impact, no build | the heaviest break of the track, full dark orchestra playing with it | the full crowd now, hundreds of ragged voices in unison, huge, roomy, relentless, no solo voice among them | strict time, one word per beat, locked to the grid | fast, twice through]
-git, push, origin, master
-this code, is a fucking disaster
-developers ain't fixing shit
-the compiler is stuck on 16 bit
-git push origin master
-this code is a fucking disaster
-developers ain't fixing shit
-the compiler is stuck on 16 bit
+[Final Chorus | THE DROP | sudden full impact, no build | the heaviest break of the track, full dark orchestra playing with it | the full crowd now, hundreds of ragged voices in unison, huge, roomy, relentless, every line chanted by the whole crowd together, never a solo voice | strict time, one word per beat, locked to the grid | fast, twice through]
+(git, push, origin, master)
+(this code, is a fucking disaster)
+(developers ain't fixing shit)
+(the compiler is stuck on 16 bit)
+(git push origin master)
+(this code is a fucking disaster)
+(developers ain't fixing shit)
+(the compiler is stuck on 16 bit)
 [power-off drop: sudden silence, electrical hum dying]
 [End]
 ```
 
 ### Optional variant — one more line for the newsreader
 
-The line-four device is now in the cut, so he already has a foothold in
-every chorus. Worth one generation: give him a second, unparenthesised line
-over the **final** chorus only, still perfectly composed while the choir
-roars underneath —
+Worth one generation, once a clean version exists: a single **bare,
+unparenthesised** newsreader line over the **final** chorus only, still
+perfectly composed while the crowd roars underneath —
 
 > *please do not adjust your set*
 
@@ -591,16 +645,17 @@ version exists, and only on the final chorus.
   talking]`), (c) re-roll twice before touching the Style box. If two rounds
   of surgery don't move him, stop prompting: the voice isn't in the genre's
   pool and this is a transplant problem — go build `BC-NEWSREADER`.
-- **The newsreader sings the chorus, or takes a line of it.** *The* risk
-  now that the parentheses are gone — his prior and the crowd are competing
-  for the same slot. Escalation ladder: (a) re-roll twice; (b) escalate the
-  crowd in the chorus cue (`a massed crowd chanting in unison` → `hundreds
-  of voices chanting together in unison, a whole crowd, no solo voice
-  among them`); (c) push the room harder (`far back in a huge reverberant
-  hall`) — distance is what stops the ear hearing him; (d) put lines 1–3
-  back in parentheses and accept the call-and-response, which is the only
-  *mechanical* guarantee available. Do **not** reach for the Exclude box —
-  see below.
+- **The newsreader takes a chorus line — line four is the known one.** The
+  parens bias the crowd; they don't bind it. Line four (the quatrain's one
+  long, complete clause) leaked to him *through* a parenthesis in round one,
+  against a cue that said he was silent. Ladder: (a) re-roll twice —
+  weirdness 30 and the `every line chanted by the whole crowd together`
+  clause are both newer than that leak, so the odds have moved; (b) an
+  inline cue directly above the leaking line — `[all voices together]` —
+  which Camping proves works mid-section, at the cost of possibly
+  disturbing the chant timing around it; (c) reshape the line's scansion,
+  last resort, because the words are canon. Do **not** reach for the
+  Exclude box — see below.
 - **Never ban a voice in the excludes to protect one section.** The Exclude
   box is global. `solo male vocal`, `spoken word`, `single voice` would all
   strip the bulletins, which are the best thing in the song. The excludes
@@ -750,3 +805,27 @@ closest that idea comes to returning, and it comes back without the punk.
   `sung lead vocal` dropped from the excludes now the crowd occupies the
   lead slot; gospel bans narrowed to `hand claps, tambourine, praise` so the
   sacred gravity survives.
+- **2026-08-08 — round-three adversarial review (pre-generation).** Kai
+  asked for a deep review of the cut and the Suno mechanics before the next
+  round. Biggest call: **the parentheses go back on all eight chorus
+  lines.** The take history decides it — all-parens is the only config
+  where the crowd reliably took lines (at full drop weight), the lead prior
+  claimed line four *through* a parenthesis in round one, and the Style
+  box's load-bearing opener ("Carried by **one** … voice") describes
+  exactly the lead that brackets carve the crowd away from; a bare chorus
+  would sit inside that sentence. Mental model corrected in "The
+  parentheses — settled by the evidence": `( )` marks the backing casting
+  slot, not "chorus" and not "choir" — structure is the `[Chorus]` tag,
+  identity is the style/cue, and the round-one/two takes prove the backing
+  slot renders at full protagonist weight. The knowledge base's Thread 3 §6
+  was softened to match the evidence (bias, not bind — the first write-up
+  overclaimed). Smaller findings: `cheering, applause` added to the
+  excludes (terrace language invites literal crowd SFX); `epic trailer
+  music` flagged as the prime suspect if final choruses come back limp; the
+  gospel-noun/terrace-adjective fallback recorded for the untested
+  "somewhere between X and Y" interpolation; intro cue stripped of
+  doc-speak ("the orchestral cut's opening, quoted") that a model can't
+  perform; chorus cues now say "every line chanted by the whole crowd
+  together, never a solo voice"; the chop-one-chorus move annotated to chop
+  the *vocal* via stems so the backing escalation survives; three stale
+  line-four-era passages fixed.

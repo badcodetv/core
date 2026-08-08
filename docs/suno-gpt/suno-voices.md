@@ -267,26 +267,38 @@ a booming chant) is therefore a worse clone source than one who does a single re
 **Recasting the second register onto somebody else doesn't just fix the casting — it purifies the
 clone's source material.** Worth checking whenever a lead is being asked to do two things.
 
-### 6. The lead/backing seam is per *line* — punctuation is a casting tool
+### 6. The lead/backing seam is per *line* — and parentheses are a bias, not a bind
 
-Added 2026-08-08, from GPOM's D&B cut. §2 established that the parenthesis slot escapes the lead's
-vocal prior. Round one showed the boundary is finer than "sections": **leaving a single line of an
-otherwise-parenthesised chorus unbracketed hands that one line back to the lead slot.**
+Added 2026-08-08 from GPOM's D&B cut; **corrected the same day** after an adversarial review caught
+the first version overstating it.
 
-It surfaced as an accident. The chorus was written entirely in parentheses for a crowd, but the
-fourth line — the longest and most syntactically complete of the four — kept coming back in the
-*lead* voice, because a massed unison prior can't sustain a full clause. Rather than fight it, it
-became the arrangement: three lines chanted by the crowd, the fourth answered by the narrator alone.
+The observed facts, across many takes: with **all four** chorus lines parenthesised and a section
+cue explicitly silencing the lead, the crowd took the three short slogan lines reliably — and the
+fourth line, the only long syntactically-complete clause, went to the *lead* voice anyway, every
+take. Two findings follow, one of which corrects this entry's original claim:
 
-So genuine call-and-response is available **inside one section, in one generation, with no second
-Voice** — you write it with brackets:
+- **The seam is per line.** Casting is decided line by line, not per section, so genuine
+  call-and-response is available inside one section, in one generation, with no second Voice:
 
-```
-(slogan line — crowd)
-(slogan line — crowd)
-(slogan line — crowd)
-answer line — lead
-```
+  ```
+  (slogan line — crowd)
+  (slogan line — crowd)
+  (slogan line — crowd)
+  answer line — lead
+  ```
+
+- **But punctuation biases; it does not bind.** The original entry called this deterministic
+  ("just punctuation"). The observed leak went *through* a parenthesis. Parens are the strongest
+  per-section casting lever the platform has — short chant-shaped lines hold near-perfectly — but
+  a long complete clause reads as a lead line and gets claimed by one. **Line shape is itself
+  casting**: if a line must belong to the crowd, make it slogan-shaped; if it stays a sentence,
+  expect to re-roll for it, or drop an inline cue (`[all voices together]`) directly above it.
+
+A third observation worth as much as either: **the backing slot does not mean background.** GPOM's
+parenthesised choruses rendered as full-weight drops. The slot decides *who owns the line*; the
+section cue and arrangement decide how big it is. Don't strip parens to make a chorus "the
+protagonist" — that trades the casting mechanism for nothing the cue wasn't already providing.
+(GPOM tried exactly this in round two and reversed it on review before generating.)
 
 Two practical corollaries:
 
