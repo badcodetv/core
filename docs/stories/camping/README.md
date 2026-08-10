@@ -1,5 +1,20 @@
 # Camping
 
+> ## 🖐 Visuals are developed externally — do not regenerate
+>
+> **As of 2026-08-08, Camping's imagery is Jack's, made by hand in Flow outside
+> this repo.** Do not generate character sheets, panels or a cover for this
+> story, and do not try to reconstruct or replicate what already exists. The
+> prompt-ledger initiative
+> ([`design/2026-08-08-story-covers-and-prompt-ledger.md`](../../../design/2026-08-08-story-covers-and-prompt-ledger.md))
+> explicitly excludes Camping and Karen for this reason.
+>
+> The **written canon below is still ours and still authoritative** — story,
+> beats, characters, songs. It is only the image pipeline that lives elsewhere.
+> The two character sheets in `characters/img/` and the Flow Character IDs in
+> `characters/{tarquin,bob}.md` are kept as a historical record, not as a
+> pipeline to feed.
+
 > **Source of truth** for the Camping story — the single canonical folder,
 > consolidated 2026-08-05 from the Kai <-> Jack story conversation in
 > [`./master-notes-2026-08-04.md`](./master-notes-2026-08-04.md) (2026-08-04). That

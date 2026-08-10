@@ -1,5 +1,19 @@
 # Karen Will Lead the Revolution
 
+> ## 🖐 Visuals are developed externally — do not regenerate
+>
+> **As of 2026-08-08, Karen's imagery is Jack's, made by hand in Flow outside
+> this repo.** Do not generate character sheets, panels or a cover for this
+> story, and do not try to reconstruct or replicate what already exists. The
+> prompt-ledger initiative
+> ([`design/2026-08-08-story-covers-and-prompt-ledger.md`](../../../design/2026-08-08-story-covers-and-prompt-ledger.md))
+> explicitly excludes Camping and Karen for this reason.
+>
+> The **written canon below is still ours and still authoritative** — story,
+> beats, characters, songs. It is only the image pipeline that lives elsewhere.
+> The `sheet: # TODO — not yet generated` lines in `characters/{karen,ari}.md`
+> are **not a backlog item for us**; Jack's work is the reference.
+
 > **Source of truth** for the Karen story. The story video, the song and the comic
 > all derive from this folder. See [`../../storytelling.md`](../../storytelling.md)
 > for the method and [`../../voice.md`](../../voice.md) for tone.

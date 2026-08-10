@@ -13,6 +13,33 @@ Relates: [`design/2026-08-07-badcode-website-reset.md`](./2026-08-07-badcode-web
 
 ---
 
+## ⚠ SCOPE REVISION — 2026-08-08 (Kai). This overrides the tickets below.
+
+**Camping and Karen are out of the image pipeline.** Their visuals are Jack's,
+developed by hand in Flow outside this repo. We do not generate their character
+sheets, panels or covers, and we do not attempt to reconstruct or replicate what
+he has already made. Their **written canon remains ours and authoritative** —
+only the image pipeline moved. Both story READMEs now carry a banner saying so.
+
+**The image pipeline is now two stories: GitPush Origin Master (BC-000) and The
+Magic Money Tree (BC-003).** These are the ones we grow into full prompt ledgers
+ready to drive Flow.
+
+Applied to the tickets below:
+
+| Was | Now |
+| --- | --- |
+| Four prompt ledgers | **Two** — GPOM and MMT, both already hand-seeded with a cover prompt on 2026-08-08 |
+| Four covers | **Two.** Camping's and Karen's covers come from Jack |
+| Full roster, four stories | **GPOM + MMT only:** Keynes, the tree, the Carrier, the Hundred |
+| T6, T13, T14, T21 | **Cancelled** — see each ticket |
+| T3's `camping/style.md` absorption | **Cancelled.** Leave Camping's folder alone |
+| "four" in any count | Read as **two** (T2, T10, T17, T19, T20, T24) |
+
+The catalogue is still four rows — this only changes who produces the imagery.
+
+---
+
 ## Context
 
 BadCode has four stories heading out as an EP — GitPush Origin Master (BC-000),
@@ -572,7 +599,7 @@ logs aspect control as an open issue: real observed output is **1376×768
 executor must not invent this copy unattended.**
 ---
 
-### T6: Style prompts — Camping and Karen   [Status: pending | Model: opus]
+### T6: Style prompts — Camping and Karen   [Status: CANCELLED 2026-08-08 — visuals developed externally by Jack]
 - **Scope:** Author §1 of the Camping and Karen ledgers. Camping's derives from
   the absorbed `style.md` material (matched city pair, the wet car park, warmth
   permitted in exactly three named places, 35mm documentary). Karen's is written
@@ -722,7 +749,7 @@ before this gate clears.**
 - [ ] done
 - Notes:
 
-### T13: Character sheets — Camping objects   [Status: pending | Model: sonnet]
+### T13: Character sheets — Camping objects   [Status: CANCELLED 2026-08-08 — visuals developed externally by Jack]
 - **Scope:** Generate multi-angle object sheets for the tent and the SUV from
   their T9 prompts at `numOutputs: 2`, then **pick and promote**: choose the
   winner, `mv <name>-sheet-<x>.jpg <name>-sheet.jpg`, delete the loser. Write the
@@ -746,7 +773,7 @@ before this gate clears.**
 - [ ] done
 - Notes:
 
-### T14: Character sheets — Karen and Ari   [Status: pending | Model: sonnet]
+### T14: Character sheets — Karen and Ari   [Status: CANCELLED 2026-08-08 — visuals developed externally by Jack]
 - **Scope:** As T13, into `docs/stories/karen/characters/img/{karen,ari}-sheet.jpg`,
   including the pick-and-promote step. **If T11a found existing Karen or Ari
   imagery in Flow, use it as the reference** via `flow_edit_image` — exactly one
@@ -908,7 +935,7 @@ before this gate clears.**
 - [ ] done
 - Notes:
 
-### T21: Sean AI as SVG   [Status: pending | Model: sonnet]
+### T21: Sean AI as SVG   [Status: DEFERRED 2026-08-08 — Karen's visuals are Jack's; revisit only if he asks for it]
 - **Scope:** Build Sean AI's identity as vector art in-repo, not through Flow: an
   8-bit pixel-art moniker plus a `Sean AI` wordmark, and a gold variant for the
   §4.3 government takeover. A legible wordmark is trigger #1 and this is a vector
