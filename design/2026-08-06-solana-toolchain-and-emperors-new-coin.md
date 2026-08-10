@@ -158,6 +158,45 @@ encoding.
 **The toolchain's success test:** coin #2 writes a Rust program and a page
 component, and writes no plumbing.
 
+### Portability contract — the toolchain must survive leaving this repo
+
+A second, unrelated BadCode project (nothing to do with coins or tokens) will
+want to write a Solana program, test it, and build a frontend against it. So the
+generic layer must be liftable by copying folders, **without dragging any of
+ENC's strong opinions along**. That constrains the design now:
+
+```
+PORTABLE — zero ENC references, copy-paste to any project
+  chain/{Anchor.toml,Cargo.toml,rust-toolchain.toml,versions.json,scripts/install.sh}
+  packages/chain-kit/      clusters · RPC · explorer URLs · generic program
+                           registry · generic PDA derive
+  packages/chain-react/    provider · useProgram(idl, programId) · useAccount
+                           · useSendTransaction · ConnectWallet · ClusterBadge
+  packages/cli/src/chain/  doctor · up · down · build · deploy · idl · airdrop
+
+ENC-SPECIFIC — delete freely when lifting
+  chain/programs/emperors-new-coin/    the program
+  chain/feeds/ · chain/sim/            M2 feed + economic simulation
+  packages/enc/                        ENC accounts · instruction builders
+                                       · math mirror · IDL · program ID
+  packages/cli/src/chain/enc.ts        the `chain enc` sub-group
+  apps/web/src/coins/enc/              the page
+```
+
+Two rules that make this real, and both are testable:
+
+1. **No file under `packages/chain-kit`, `packages/chain-react`, or
+   `packages/cli/src/chain/` (excluding `enc.ts`) may reference ENC** — not by
+   import, not by name, not by a string literal like `'emperors-new-coin'`. The
+   program registry is a generic `name → address` map loaded from JSON; the
+   `chain` CLI commands take a program name as an argument.
+2. **`chain-react` is generic over the IDL.** `useProgram(idl, programId)` takes
+   them as parameters rather than looking up a hardcoded program, so the React
+   layer never imports a specific program's types. (This also removes any build
+   ordering coupling to a generated IDL.)
+
+T23 verifies this by grep, not by good intentions.
+
 ### The ENC machine
 
 ```
@@ -246,12 +285,22 @@ BadCode takes no allocation.
 fairly among a set that is still growing. So `claim()` does two things in one
 transaction: pays your share of the **previous** epoch's pot (`pot(N−1) /
 registrants(N−1)`), and registers you for the current one. `pot(N)` is
-snapshotted when epoch `N` opens, so outflow during any epoch is *exactly* one
-pot. *Rejected:* dividing the current pot by the previous epoch's headcount —
+snapshotted when `FaucetEpoch(N)` is created by its first claimer — computed from
+the vault balance *before* that caller's own payout — so outflow during any epoch
+is **at most** one pot (registrants who never return simply leave their share
+behind). *Rejected:* dividing the current pot by the previous epoch's headcount —
 10 registrants one day and 1,000 the next would drain 100× the pot, inverting
-the very property the design depends on. Welcome grants are separately capped at
-`grants_per_epoch` (first-come), so aggregate outflow stays bounded even against
-unlimited fresh wallets.
+the very property the design depends on.
+
+**The welcome grant is floor-gated too.** It is separately capped at
+`grants_per_epoch`, first-come, so aggregate outflow stays bounded against
+unlimited fresh wallets; but it is *also* refused whenever
+the vault sits below the floor. Otherwise fresh wallets would keep drawing
+`grants_per_epoch × welcome_grant` out of a depleted vault every epoch forever,
+which both breaks the floor's whole purpose and contradicts the story beat. Below
+the floor **nothing** is paid out: no share, no grant. If you arrive during the
+tightening, there is nothing for you until rent rebuilds the coffers — which is
+exactly what austerity is, and exactly what the coin is about.
 
 **Rent is the turnover engine.** ~5%/day of the current price, accrued lazily
 from a `last_touched` timestamp (computed on read — no crank, no iteration over
@@ -366,8 +415,15 @@ $2,500/month tier this month with Pythnet retiring).
 `tsc --noEmit` and `test`: `vitest run`, devDep `vitest`, dep
 `@solana/web3.js@^1.95` — matching the `packages/comic-meta/package.json`
 convention), `tsconfig.json`, and:
-`src/{index,clusters,registry,pda}.ts`, `src/idl/emperors_new_coin.ts`,
-`src/enc/{accounts,instructions,math}.ts`, `src/programs.json`, `src/*.test.ts`.
+`src/{index,clusters,registry,pda}.ts`, `src/programs.json`, `src/*.test.ts`.
+**Generic only** — no ENC file, no `'emperors-new-coin'` literal.
+
+### Create — `packages/enc/` (created at T14)
+
+`@badcode/enc` — everything ENC-specific that both the CLI and the web app need:
+`src/{index,accounts,instructions,math}.ts`, `src/idl/emperors_new_coin.ts`,
+`src/*.test.ts`. Depends on `@badcode/chain-kit`; nothing depends on it except
+the ENC page, the `chain enc` CLI sub-group, and the simulation harness.
 
 ### Create — `packages/chain-react/`
 
@@ -427,8 +483,12 @@ Epoch index is `unix_timestamp / 86_400`.
 export type Cluster = 'localnet' | 'devnet' | 'mainnet-beta'
 export function rpcEndpoint(cluster: Cluster): string
 export function explorerUrl(cluster: Cluster, kind: 'tx'|'address', id: string): string
-export function programId(name: 'emperors-new-coin', cluster: Cluster): PublicKey
+export function programId(name: string, cluster: Cluster): PublicKey
+// generic: reads src/programs.json, a plain { [name]: { [cluster]: address } } map.
+// NEVER hardcode a program name here — see the Portability contract.
 
+// ── Everything below this line is ENC-specific and lives in `@badcode/enc`,
+//    NOT in chain-kit. chain-kit exports only the generic `derive()` helper.
 export const SEEDS: {
   config: readonly [Buffer]
   printer: readonly [Buffer]
@@ -488,11 +548,11 @@ export const ENC_IX: {
 }
 ```
 
-### `@badcode/chain-react`
+### `@badcode/chain-react` — generic, never imports a specific program
 
 ```tsx
 <SolanaProvider cluster={Cluster}>{children}</SolanaProvider>
-function useProgram(name): Program | null
+function useProgram<T extends Idl>(idl: T, programId: PublicKey): Program<T> | null
 function useAccount<T>(pk: PublicKey | null, decode: (b: Buffer) => T):
   { data: T | null; loading: boolean; error: Error | null }
 function useSendTransaction():
@@ -551,6 +611,19 @@ upgrade authority is burned at T22.
 - **Scope:** Install script for the native WSL toolchain (Rust, agave/Solana CLI,
   Anchor via avm) with pinned versions in `chain/versions.json`, plus a `doctor`
   command verifying each and printing actionable remediation per failure.
+  **First task — choose and record the versions.** They are deliberately not
+  hardcoded here because Anchor/Agave/Rust compatibility moves; the executor must
+  resolve the current mutually-compatible set (check Anchor's release notes for
+  its required Solana CLI and Rust versions) and write the exact triple into
+  `chain/versions.json` before writing any install logic. Do not guess or use
+  "latest" — every later ticket builds against this pin.
+  **Command shape:** `badcode chain doctor` (and later `badcode chain enc crank`)
+  needs **two-level nesting**, which `packages/cli/src/bin.ts` does not currently
+  demonstrate — all eight existing commands are flat
+  `program.command('x').action(...)` (see `:38-48` for the shape). Build the group
+  with `new Command('chain')` + sub-commands + `program.addCommand(chain)`;
+  commander `^12.1.0` is already a dependency. Note `packages/cli/src/` is flat
+  today, so `src/chain/` is the first subdirectory.
 - **Files:** `chain/scripts/install.sh`, `chain/versions.json`,
   `packages/cli/src/chain/doctor.ts`, `packages/cli/src/bin.ts` (register `chain`).
 - **Acceptance criteria:** `install.sh` brings a bare machine to the pinned
@@ -591,7 +664,10 @@ upgrade authority is burned at T22.
   `src/{index,clusters,registry,pda}.ts`, `src/programs.json`, `src/*.test.ts`.
 - **Acceptance criteria:** PDA derivation is unit-tested against fixed expected
   addresses for known seeds (so T7's Rust must match these, not the reverse).
-  Importing the package pulls in no Node builtins.
+  Importing the package pulls in no Node builtins. **`grep -riE "enc|emperor|m2"
+  packages/chain-kit/src` finds no ENC reference** — the program registry is a
+  generic JSON map and `programId()` takes a `string`. ENC's own seeds, decoders
+  and IDL live in `@badcode/enc` (created at T14), never here.
 - **TDD:** yes
 - **Validation:** `npm run typecheck --workspace @badcode/chain-kit`;
   `npm run test --workspace @badcode/chain-kit`; root `npm run typecheck`.
@@ -603,13 +679,17 @@ upgrade authority is burned at T22.
 - **Scope:** `up`, `down`, `build`, `deploy --cluster`, `idl --out`, `airdrop`.
   `up` runs `solana-test-validator` detached with a gitignored ledger and polls
   until RPC answers. `idl` copies the generated IDL into
-  `packages/chain-kit/src/idl/`. Add `@badcode/chain-kit` to the CLI's deps.
+  a caller-specified directory (no hardcoded default naming a program — see the
+  Portability contract). Add `@badcode/chain-kit` to the CLI's deps.
 - **Files:** `packages/cli/src/chain/*.ts`, `packages/cli/src/bin.ts`,
   `packages/cli/package.json`, root `package.json` (scripts).
 - **Acceptance criteria:** Full lifecycle works from the repo root regardless of
   CWD. Note the pitfall at `.claude/skills/animate-slide/SKILL.md:210-213`:
-  `npm run --workspace` sets CWD to `packages/cli/`, so resolve repo paths from
-  the CLI's existing root-detection rather than relative paths.
+  `npm run --workspace` sets CWD to `packages/cli/`, so repo paths must not be
+  resolved relative to CWD. **There is no existing root-detection helper to
+  reuse** — `packages/cli/src/bin.ts` passes raw `process.cwd()` throughout, so
+  T4 must *write* one (walk up from `__dirname` until a `package.json` containing
+  a `workspaces` key is found) and use it for every repo-relative path.
 - **TDD:** yes for path/argument resolution; lifecycle itself is manual.
 - **Validation:** `npx tsx packages/cli/src/bin.ts chain up` then
   `solana cluster-version --url http://127.0.0.1:8899` succeeds; `chain down`;
@@ -622,11 +702,15 @@ upgrade authority is burned at T22.
 - **Scope:** Provider stack (connection + wallet-adapter with Phantom),
   `useProgram`, `useAccount` (websocket subscription with cleanup),
   `useSendTransaction`, `<ConnectWallet>`, `<ClusterBadge>`. Types against the
-  **smoke program's** IDL from T2; retyped when the real IDL lands at T10.
+  **generic over the IDL** — `useProgram<T extends Idl>(idl, programId)` takes both
+  as parameters, so this package never imports a specific program's types and has
+  no build-ordering dependency on any generated artifact. Test it against a
+  hand-written minimal `Idl` fixture, not a real program's output.
 - **Files:** `packages/chain-react/{package.json,tsconfig.json}`, `src/*.tsx`, `src/*.ts`, `src/*.test.ts`.
 - **Acceptance criteria:** `useAccount` re-renders on change and unsubscribes on
   unmount (tested with a fake connection). No import of `@badcode/chain-react`
-  from the CLI.
+  from the CLI. **`grep -ri "enc\|emperor" packages/chain-react/src` returns no
+  ENC reference** — this package must be liftable to an unrelated project.
 - **TDD:** yes for subscription lifecycle; no for UI primitives.
 - **Validation:** `npm run typecheck --workspace @badcode/chain-react`;
   `npm run test --workspace @badcode/chain-react`.
@@ -731,10 +815,13 @@ upgrade authority is burned at T22.
   `src/math.rs` (extend), `chain/tests/sync_m2.ts`.
 - **Acceptance criteria:** A rise mints exactly to target; a fall burns exactly
   to target; a repeat call with an unchanged release date **fails**; a change
-  beyond the sanity cap fails; a burn exceeding vault balance zeroes the vault,
-  and the **following** sync restores `supply == k × m2` in one step. After any
-  successful sync, `supply ≥ k × m2` always, with equality whenever the vault was
-  solvent. Prices scale by the same ratio and interpolate over 30 days.
+  beyond the sanity cap fails; a burn exceeding vault balance zeroes the vault and
+  leaves supply above target. The **following** sync then either mints to exact
+  target (if M2 rose) or burns as much as the vault then holds (if it fell again)
+  — it does **not** guarantee one-step restoration, because a second fall against
+  an empty vault cannot correct. The invariant to assert is `supply ≥ k × m2`
+  after every successful sync, with equality whenever the vault could absorb the
+  move. Prices scale by the same ratio and interpolate over 30 days.
 - **TDD:** yes
 - **Validation:** `cd chain && cargo test -p emperors-new-coin --lib && anchor run test-sync`.
 - **Depends on:** T9
@@ -785,19 +872,25 @@ upgrade authority is burned at T22.
   = caller, snapshotting `pot(N) = α × max(0, V − floor·S)`; (2) if the caller
   registered in `N−1`, pay `pot(N−1) / registrants(N−1)`; (3) if new, create the
   `Player` PDA and ENC ATA and pay the welcome grant, provided
-  `grants_issued(N) < grants_per_epoch`; (4) register for `N`. Reject a second
-  claim in the same epoch. Add `close_epoch(n)` (permissionless, `n ≤ current−2`)
+  `grants_issued(N) < grants_per_epoch` **and the vault is above the floor**;
+  (4) register for `N`. Reject a second claim in the same epoch.
+  **Snapshot timing:** `pot(N)` is computed from the vault balance at the moment
+  `FaucetEpoch(N)` is created, **before** that same caller's `pot(N−1)` payout and
+  welcome grant are deducted. Add `close_epoch(n)` (permissionless, `n ≤ current−2`)
   reclaiming the rent-exemption to the closer, so epoch accounts don't accumulate
   forever.
 - **Files:** `chain/programs/emperors-new-coin/src/instructions/{claim,close_epoch}.rs`,
   `src/state.rs` (extend), `chain/tests/faucet.ts`.
-- **Acceptance criteria:** **Total payout during any epoch `N` is exactly
-  `pot(N−1)` plus at most `grants_per_epoch × welcome_grant`, regardless of how
-  many wallets claim.** A simulated 1,000-wallet farm arriving in epoch `N+1`
-  after 10 claimants in `N` extracts `pot(N)` in total, not 100× it. Epoch 0 pays
-  no share (nothing registered before it) and does not divide by zero. Below the
-  floor the pot is zero and `claim` still succeeds. A second claim in one epoch
-  fails. `close_epoch` refuses `n > current−2`.
+- **Acceptance criteria:** **Total payout during any epoch `N` is at most
+  `pot(N−1)` plus `grants_per_epoch × welcome_grant`, regardless of how many
+  wallets claim.** (At most, not exactly — registrants who never return leave
+  their share in the vault.) A simulated 1,000-wallet farm arriving in epoch `N+1`
+  after 10 claimants in `N` extracts at most `pot(N)` in total, not 100× it.
+  Epoch 0 pays no share (nothing registered before it) and does not divide by
+  zero. **Below the floor, both the pot and the welcome grant are zero** and
+  `claim` still succeeds without reverting. If the vault cannot cover a computed
+  share, pay what remains and never underflow. A second claim in one epoch fails.
+  `close_epoch` refuses `n > current−2`.
 - **TDD:** yes
 - **Validation:** `cd chain && anchor run test-faucet`.
 - **Depends on:** T12
@@ -812,7 +905,9 @@ upgrade authority is burned at T22.
   Invariant M holds. Depends only on `math.rs`'s TS mirror, **not** on the
   oracle integration.
 - **Files:** `chain/sim/{index,players,report}.ts`, `chain/sim/m2-history.csv`,
-  `chain/sim/*.test.ts`, `packages/chain-kit/src/enc/math.ts`.
+  `chain/sim/*.test.ts`, and **create `packages/enc/`** (`@badcode/enc`:
+  `package.json`, `tsconfig.json`, `src/{index,math}.ts`) — the first ENC-specific
+  client package, kept out of `chain-kit` per the Portability contract.
 - **Acceptance criteria:** The TS math mirror is tested to agree with the Rust
   unit tests on the same fixed vectors. The harness runs the full history and
   emits a report without asserting any particular outcome (T15 judges).
@@ -839,7 +934,22 @@ upgrade authority is burned at T22.
 - [ ] done
 - Notes:
 
-### T16: Switchboard feed — author it and prove immutability   [Status: pending | Model: opus]
+### T16: Switchboard feed — author it and prove immutability   [Status: mostly done 2026-08-10 | Model: opus]
+
+> **DONE:** immutability proven live against Crossbar (one character → different
+> feed hash; re-store → identical hash), production job authored and stored, both
+> keyless sources verified to agree. Evidence and job committed at
+> `chain/feeds/README.md` + `chain/feeds/m2sl.job.json`. **The hard gate is
+> cleared — the artistic claim is safe to publish.**
+> **REMAINING:** add DBnomics as a median-aggregated second source (needs the
+> JSONPath-to-last-element shape tested; its `observations=1` does not limit the
+> response), and mint the mainnet-queue feed at launch.
+>
+> **Two findings that bind later tickets:**
+> 1. The job is **static forever** (its bytes are its identity), so it cannot take
+>    a rolling date parameter. It fetches the full series and extracts the last row.
+> 2. **The regex must be end-anchored.** A first-match pattern returns `286.6` —
+>    M2 in January 1959. Against an immutable program that is unrecoverable.
 - **Scope:** Author the keyless M2SL job (Fed Data Download Program CSV primary +
   `fredgraph.csv` as a second job, median-aggregated) using `regexExtractTask` —
   **all keyless government endpoints return CSV, not JSON**. Store via Crossbar to
@@ -860,22 +970,29 @@ upgrade authority is burned at T22.
 - **TDD:** yes for the CSV parsing / release-date extraction.
 - **Validation:** `cd chain && npx tsx scripts/fetch-m2.ts` prints matching values
   from both sources; `chain/feeds/README.md` records the two distinct feed IDs.
-- **Depends on:** T15
+- **Depends on:** T2 — **not** T15. This ticket needs only the `chain/` workspace,
+  nothing from the program or the parameter sweep. It carries the plan's hard gate
+  ("nothing artistic may be published until the immutability claim is verified"),
+  so **pull it forward and run it early**, in parallel with the toolchain track.
+  It is listed here only to keep the oracle tickets adjacent.
 - [ ] done
 - Notes:
 
 ### T17: Stand the M2SL feed up on devnet   [Status: pending | Model: opus]
 - **Scope:** Create the M2SL feed on **devnet**, where Switchboard runs real
   oracles that actually sign. Confirm it resolves and can be cranked by an
-  arbitrary keypair. **No local Switchboard.** Per the environment split below,
-  localnet uses the mock oracle exclusively and never talks to Switchboard.
+  arbitrary keypair. **No local Switchboard.** Per the environment split in
+  Architecture (above), localnet uses the mock oracle exclusively and never talks
+  to Switchboard. Ship **`chain enc feed-crank`** here — it posts a Switchboard
+  update and stops. (The full `chain enc crank`, which also calls `sync_m2`, needs
+  T18's on-chain read path and belongs there.)
 - **Files:** `chain/feeds/m2sl.devnet.json`, `packages/cli/src/chain/enc.ts`.
 - **Acceptance criteria:** The devnet feed exists, returns the current M2SL value
   and release date, and a freshly generated keypair with airdropped devnet SOL
-  can crank it — proving the feed is permissionless in practice, not just in
-  principle. Never substitute the mock oracle for T18's acceptance.
+  can post an update to it — proving the feed is permissionless in practice, not
+  just in principle. Never substitute the mock oracle for T18's acceptance.
 - **TDD:** no (environment)
-- **Validation:** `npx tsx packages/cli/src/bin.ts chain enc crank --cluster devnet`
+- **Validation:** `npx tsx packages/cli/src/bin.ts chain enc feed-crank --cluster devnet`
   succeeds using a fresh keypair.
 - **Depends on:** T16
 - [ ] done
@@ -890,7 +1007,12 @@ upgrade authority is burned at T22.
   which is hard-capped at ~512 slots (~3.5 min) by the `SlotHashes` sysvar and
   would silently fail for a monthly feed. Check the signature count against our
   own quorum (`min_oracle_samples` may not be enforced by the deployed program).
-  Add `chain enc crank` and the standalone published `crank.ts`.
+  Add `chain enc crank` (T17's `feed-crank` plus a `sync_m2` call) and the
+  standalone published `crank.ts`.
+  **Schedule note:** one acceptance criterion needs a quote that genuinely aged
+  on devnet, so budget a **calendar day** between cranking and asserting. T19–T23
+  sit behind this — it is a wall-clock stall in the critical path, not a work
+  estimate. Start the aging clock as soon as the read path compiles.
 - **Files:** `chain/programs/emperors-new-coin/src/oracle.rs` (real impl),
   `chain/scripts/crank.ts`, `packages/cli/src/chain/enc.ts`, `chain/tests/switchboard.ts`.
 - **Acceptance criteria:** **All of these must be proven against devnet**, where
@@ -915,7 +1037,7 @@ upgrade authority is burned at T22.
   assets with prices interpolating every slot. Works with no wallet connected.
   Add the account decoders and `currentPrice`/`rentOwed` to chain-kit.
 - **Files:** `apps/web/src/coins/enc/{Printer,AssetGrid}.tsx`, `enc.css`,
-  `packages/chain-kit/src/enc/accounts.ts`, `packages/chain-kit/src/idl/emperors_new_coin.ts`.
+  `packages/enc/src/accounts.ts`, `packages/enc/src/idl/emperors_new_coin.ts`.
 - **Acceptance criteria:** Prices visibly tick without a refresh; account changes
   push through the websocket subscription; the page renders with no wallet; the
   countdown is correct across a DST boundary.
@@ -967,8 +1089,8 @@ upgrade authority is burned at T22.
 - Notes:
 
 ### T22: Devnet deploy + burn the upgrade authority   [Status: pending | Model: opus]
-- **Scope:** Create the real feed on devnet, deploy, run `initialize` + ten
-  `init_asset` calls with the T15 parameters, then **burn the BPF upgrade
+- **Scope:** Deploy to devnet against the feed T17 already created, run
+  `initialize` + ten `init_asset` calls with the T15 parameters, then **burn the BPF upgrade
   authority to `None`**. Publish the feed hash, the raw job JSON, and the
   standalone crank script. Flip the timeline node to `live` and update
   `diorama.test.ts` accordingly.
@@ -1005,6 +1127,16 @@ upgrade authority is burned at T22.
   4. **Toolchain reuse check:** scaffold a throwaway second program and page from
      `chain/README.md`'s "add coin #2" section and confirm no plumbing had to be
      written — only a Rust program and a page component. Delete it afterwards.
+  5. **Portability check — enforce the contract by grep, not good intentions:**
+     `grep -riE "enc|emperor|m2" packages/chain-kit/src packages/chain-react/src`
+     and `grep -riE "enc|emperor|m2" packages/cli/src/chain --exclude=enc.ts`
+     return **no ENC references** (allow for false positives on substrings like
+     "encode"/"encrypt" — review, don't just count). Then prove it for real:
+     copy `chain/`'s scaffold files, `packages/chain-kit`, `packages/chain-react`
+     and `packages/cli/src/chain` (minus `enc.ts`) into a scratch directory
+     outside this repo, delete every ENC-specific path listed in the Portability
+     contract, and confirm the remainder typechecks with no dangling imports.
+     A second, non-token BadCode project will lift exactly this set.
 - **TDD:** no (verification)
 - **Validation:** All commands above pass; the browser walkthrough is completed and
   transaction signatures recorded in the Notes.
