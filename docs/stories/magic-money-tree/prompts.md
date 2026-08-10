@@ -48,9 +48,36 @@ financial district".
 
 ---
 
+## 0b. How to use this file
+
+**Every prompt in §3 is self-contained. Paste one block and nothing else.**
+Do not prepend §1 to it — the style is already folded in, and prepending it again
+just doubles the style instructions and dilutes the scene.
+
+§1 below is the **canonical source** of that style: it is what a prompt author
+copies from when writing a new asset, and what an audit checks existing prompts
+against. It is a specification, not a runtime concatenation.
+
+**The trade-off, stated honestly:** self-contained prompts are paste-ready but
+not DRY. If §1 ever changes, every prompt in §3 has to be revised to match. That
+is the price of the prompts being usable by a human with a browser, and it is
+worth it — but it means **§1 changes are expensive**, so settle it before writing
+many more assets.
+
+### Keeping things consistent across images — two different mechanisms
+
+| Subject | Mechanism | Why |
+| --- | --- | --- |
+| **People** (Keynes) | A **Flow Character**, cast via `flow_create_character` and attached with the `character` parameter | Characters bind a *face*. This is the only reliable way to get the same man in 1942, 1948, 1971 and now. A tag typed as prompt text does **not** bind anything. |
+| **Objects and places** (the tree, the bench, the collar, the hollow fruit) | A **golden reference image** fed to `flow_edit_image` — exactly one reference, downscaled first | They have no face for a Character to bind. Generate the totem once, accept it, and derive every later appearance from that image. |
+
+Whether Flow Characters can be made to work for objects is **untested** — the
+feature is built around people. Assume not; use golden references. If someone
+wants to spike it, do it on the bench, not on the tree.
+
 ## 1. Style prompt
 
-Prepended verbatim to every asset prompt in §3 unless a prompt says otherwise.
+The canonical style for this story. **Not concatenated at call time** — see §0b.
 
 ```prompt
 Hyper-realistic photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette with desaturated winter greens and browns, no lens flares, calm observational tone, landscape orientation, deep unlifted shadows with no lifted matte or shadow recovery, a single motivated light source that is a real thing in the scene, subject held small inside a large frame, no text, no signage, no lens vignette, no fantasy effects.
@@ -73,8 +100,21 @@ Period interior photography, higher contrast and colder grade, closer framing, l
 
 | Tag | Character file | Sheet | Flow Character id | Status |
 | --- | --- | --- | --- | --- |
-| @Keynes | characters/keynes.md | — | — | not-cast |
-| @TheTree | characters/the-tree.md | — | — | none-by-design (object; referenced by sheet) |
+| @Keynes | characters/keynes.md | — | — | **not-cast — must be cast** (see below) |
+| @TheTree | characters/the-tree.md | — | — | no-character-by-design — **consistency via golden reference**, not a Character |
+
+**Keynes must be cast.** He appears at four ages across eighty years — 1942 at
+the bench, 1948 as the arriving ghost, 1971 at Nixon, and the winter bench now —
+and he has to read as the same man every time. The scene prompts in §3 are
+deliberately written so he is always distant and face-not-readable, which means
+they will *survive* without casting; but "survives" is not "is consistent", and
+the moment any shot comes closer, the Character is the only thing holding him
+together.
+
+**The tree is not a Character and still needs to be one object.** It appears in
+six beats and visibly ages from 28 years old to 112. Generate its sheet once,
+accept it, and derive every appearance from that image via `flow_edit_image`.
+`none-by-design` here means *no Flow Character*, **not** *no consistency needed*.
 
 `characters/dawn.md` is **deprecated canon** — the 2026-08-05/06 re-founding
 replaced the Dawn spine with Keynes and the tree. Do not cast her.

@@ -57,9 +57,34 @@ warm, drains toward near-black machine-monumental as humanity leaves, bottoms ou
 in the solo years, and **the hundred's arrival in the vault reverses it** — the
 first warmth in twenty minutes, and the viewer feels it before they can name it.
 
-Every scene declares a band. Prepend the **base**, then append the **band line**.
+### How to use this — read before pasting anything
 
-**Base** (every scene in this story):
+**Every prompt in §3 is self-contained. Paste one block and nothing else.** Each
+already has its base *and* its band folded in. Do **not** prepend the base or
+append a band line to it — that would double the style instructions and dilute
+the scene.
+
+The base and the band table below are the **specification** a prompt author
+composes from when writing a new scene, and what an audit checks existing scenes
+against. They are not a runtime concatenation.
+
+**The trade-off:** self-contained prompts are paste-ready but not DRY — changing
+the base means revising every prompt in §3. That is the price of being usable by
+a human with a browser. **Treat base changes as expensive.**
+
+### Keeping things consistent across images — two different mechanisms
+
+| Subject | Mechanism | Why |
+| --- | --- | --- |
+| **People** (the Carrier) | A **Flow Character** via `flow_create_character`, attached with the `character` parameter | Characters bind a *face*. A tag typed as prompt text binds nothing. |
+| **Objects** (the coin, the empty chair, the shaft) | A **golden reference image** through `flow_edit_image` — exactly one reference, downscaled | No face to bind. Generate the totem once, accept it, derive the rest. |
+
+This story needs far less character work than most: the AI is never rendered, the
+Hundred are always a distant crowd, and only the Carrier has a face that matters.
+**The coin is the thing that must be identical**, and it is an object — so it is
+a golden reference, not a Character.
+
+**Base** (the specification — already folded into every §3 prompt):
 
 ```prompt
 Hyper-realistic photograph, shot on 35mm film with fine natural grain, no lens flares, no lens vignette, calm observational tone, landscape orientation, deep unlifted shadows with no shadow recovery, a single motivated light source that is a real thing in the scene, subject held small inside a large frame, no text, no signage, no fantasy effects.
@@ -85,9 +110,15 @@ the wrong band is wrong even if the image is beautiful.
 
 | Tag | Character file | Sheet | Flow Character id | Status |
 | --- | --- | --- | --- | --- |
-| @TheAI | characters/the-ai.md | — | — | none-by-design (never rendered) |
-| @Carrier | characters/the-carrier.md | characters/img/carrier-sheet.jpg (recover from git `7dd36c7^`) | — | not-cast |
-| @TheHundred | characters/the-hundred.md | — | — | not-cast (collective; wardrobe plate, not a portrait) |
+| @TheAI | characters/the-ai.md | — | — | **never rendered** — canon, not an omission |
+| @Carrier | characters/the-carrier.md | characters/img/carrier-sheet.jpg (recover from git `7dd36c7^`) | — | **not-cast — should be cast** |
+| @TheHundred | characters/the-hundred.md | — | — | no-character-by-design — a crowd, always distant; consistency is wardrobe and light, held by a golden reference plate |
+
+**Only the Carrier needs a Character.** She is the one human the AI ever
+addresses, and she carries scenes 15, 16, 18 and 19 — but note that even in
+`s16-coin-lands` she is deliberately an out-of-focus shoulder at the frame edge,
+because the coin is the subject. Cast her anyway: the moment the vault scenes get
+a closer shot, she is the only face that has to hold.
 
 ---
 

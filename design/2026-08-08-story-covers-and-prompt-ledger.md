@@ -136,17 +136,28 @@ LAYER 3 · CAST
                       │
                       ▼
    flow_generate_image({
-     prompt:    LAYER1 + "\n\n" + LAYER2,
+     prompt:    <the stored, pre-composed prompt — paste-ready, see note below>,
      character: "Tarquin",           // one per call; omit when the asset has no cast
      outPath:   "<ABSOLUTE path>",   // ledgers record repo-relative; the caller
      numOutputs: 2                   // absolutises at call time (server.ts:92)
    })
 ```
 
-**Rejected alternative:** storing a single fully-composed prompt string per
-asset. It is what the Magic Money Tree records do today, and it is why changing
-the house look there would mean hand-editing ten prompts. Layering makes a style
-change one edit.
+**Reversed 2026-08-08 — prompts are stored PRE-COMPOSED, not concatenated.**
+This plan originally rejected "a single fully-composed prompt string per asset"
+because a style change would mean hand-editing every prompt. Writing the two real
+ledgers reversed it, for one reason that outweighs the DRY argument: **the
+dominant use is a human copying a block into a browser.** A prompt you have to
+assemble from two places before pasting is a prompt that gets pasted wrong.
+
+So: every stored prompt is self-contained and paste-ready, and **Layer 1 is the
+specification a prompt author composes from**, not a runtime concatenation.
+Layers 0–3 still describe how a prompt is *built*; they no longer describe how it
+is *stored*. The cost is real and is stated at the top of each ledger — a Layer 1
+change is now expensive, so settle the style before writing many assets.
+
+Layer 3 is unaffected: cast is still attached via the `character` parameter and
+is never folded into the prompt text.
 
 ### Candidate files — the naming trap
 
