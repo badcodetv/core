@@ -7,7 +7,7 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: proposed
+Status: in progress — T1-T6 + T16 done (2026-08-10)
 Date: 2026-08-06
 Relates: `docs/stories/magic-money-tree/emperors-new-coin.md` (canon — the coin
 is a cryptocurrency folded into the Magic Money Tree story, cross-promoted with
@@ -614,7 +614,7 @@ upgrade authority is burned at T22.
 
 ## Tickets
 
-### T1: WSL toolchain install + `badcode chain doctor`   [Status: pending | Model: sonnet]
+### T1: WSL toolchain install + `badcode chain doctor`   [Status: DONE 2026-08-10 | Model: sonnet]
 - **Scope:** Install script for the native WSL toolchain (Rust, agave/Solana CLI,
   Anchor via avm) with pinned versions in `chain/versions.json`, plus a `doctor`
   command verifying each and printing actionable remediation per failure.
@@ -643,10 +643,10 @@ upgrade authority is burned at T22.
 - **Validation:** `npx tsx packages/cli/src/bin.ts chain doctor` exits 0;
   `anchor --version`, `solana --version`, `rustc --version` match `chain/versions.json`.
 - **Depends on:** —
-- [ ] done
+- [x] done
 - Notes:
 
-### T2: Anchor workspace scaffold + npm workspace membership   [Status: pending | Model: sonnet]
+### T2: Anchor workspace scaffold + npm workspace membership   [Status: DONE 2026-08-10 | Model: sonnet]
 - **Scope:** Create `chain/` as both a Cargo and an npm workspace member: add
   `"chain"` to the root `workspaces` array, write `chain/package.json` with the
   Anchor/mocha/vitest devDeps and `typecheck`/`test` scripts, and a program
@@ -662,10 +662,10 @@ upgrade authority is burned at T22.
 - **Validation:** `npm install` at root exits 0; `cd chain && anchor build && anchor test`;
   root `npm run typecheck` exits 0.
 - **Depends on:** T1
-- [ ] done
+- [x] done
 - Notes:
 
-### T3: `@badcode/chain-kit` foundation   [Status: pending | Model: sonnet]
+### T3: `@badcode/chain-kit` foundation   [Status: DONE 2026-08-10 | Model: sonnet]
 - **Scope:** Clusters, RPC endpoints, explorer URLs, program registry, and PDA
   derivation matching the byte-exact seed table in Interfaces. No React, no
   Node-only APIs. Declare `typecheck`/`test` scripts and the `vitest` devDep —
@@ -682,10 +682,10 @@ upgrade authority is burned at T22.
 - **Validation:** `npm run typecheck --workspace @badcode/chain-kit`;
   `npm run test --workspace @badcode/chain-kit`; root `npm run typecheck`.
 - **Depends on:** T2
-- [ ] done
+- [x] done
 - Notes:
 
-### T4: `badcode chain` lifecycle commands   [Status: pending | Model: sonnet]
+### T4: `badcode chain` lifecycle commands   [Status: DONE 2026-08-10 | Model: sonnet]
 - **Scope:** `up`, `down`, `build`, `deploy --cluster`, `idl --out`, `airdrop`.
   `up` runs `solana-test-validator` detached with a gitignored ledger and polls
   until RPC answers. `idl` copies the generated IDL into
@@ -705,10 +705,10 @@ upgrade authority is burned at T22.
   `solana cluster-version --url http://127.0.0.1:8899` succeeds; `chain down`;
   `npm run test --workspace @badcode/cli`.
 - **Depends on:** T3
-- [ ] done
+- [x] done
 - Notes:
 
-### T5: `@badcode/chain-react` foundation   [Status: pending | Model: sonnet]
+### T5: `@badcode/chain-react` foundation   [Status: DONE 2026-08-10 | Model: sonnet]
 - **Scope:** Provider stack (connection + wallet-adapter with Phantom),
   `useProgram`, `useAccount` (websocket subscription with cleanup),
   `useSendTransaction`, `<ConnectWallet>`, `<ClusterBadge>`. Types against the
@@ -725,10 +725,10 @@ upgrade authority is burned at T22.
 - **Validation:** `npm run typecheck --workspace @badcode/chain-react`;
   `npm run test --workspace @badcode/chain-react`.
 - **Depends on:** T3
-- [ ] done
+- [x] done
 - Notes:
 
-### T6: `/coins/:slug` route, ENC shell, and the tests it breaks   [Status: pending | Model: sonnet]
+### T6: `/coins/:slug` route, ENC shell, and the tests it breaks   [Status: DONE 2026-08-10 | Model: sonnet]
 - **Scope:** Add the lazy-loaded route (introducing `React.lazy` + `<Suspense>`,
   which `App.tsx` does not currently use), a slug registry, an ENC shell mounting
   `<SolanaProvider>` with cluster badge and connect button, and repoint the
@@ -748,7 +748,7 @@ upgrade authority is burned at T22.
 - **Validation:** `npm run test --workspace @badcode/web`; `npm run build`
   showing a separate coin chunk; root `npm run typecheck`.
 - **Depends on:** T5
-- [ ] done
+- [x] done
 - Notes:
 
 ### T7: Program state + math module + genesis params   [Status: pending | Model: opus]
