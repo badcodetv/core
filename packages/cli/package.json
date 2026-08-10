@@ -13,6 +13,7 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@badcode/chain-cli": "*",
     "@badcode/comic-manifest": "*",
     "@badcode/comic-meta": "*",
     "commander": "^12.1.0",

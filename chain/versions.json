@@ -1,0 +1,30 @@
+{
+  "$comment": [
+    "The pinned toolchain. Every ticket in the Solana plan builds against this set.",
+    "Resolved 2026-08-10. Do not bump casually - Anchor/Agave/Rust compatibility is",
+    "the most fragile part of a Solana setup, and the ENC program ships",
+    "non-upgradeable, so a build-time surprise is expensive.",
+    "",
+    "Why these:",
+    "  anchor 1.1.2  - latest; requires Rust >=1.89; built against solana-* 3.x crates.",
+    "  agave 4.1.2   - latest 4.1.x patch, shipped in the same window as Anchor 1.1.2.",
+    "                  Deliberately NOT 4.2.0 (released 2026-08-07): a validator three",
+    "                  days old is not what you want under a program you cannot upgrade.",
+    "  rust 1.90.0   - satisfies Anchor's >=1.89 floor.",
+    "",
+    "switchboard-on-demand 0.13.0 requires anchor-lang >=0.31.0, satisfied by 1.1.2."
+  ],
+  "rust": "1.90.0",
+  "agave": "4.1.2",
+  "anchor": "1.1.2",
+  "node": "22",
+  "crates": {
+    "anchor-lang": "1.1.2",
+    "switchboard-on-demand": "0.13.0"
+  },
+  "npm": {
+    "@switchboard-xyz/on-demand": "3.10.6",
+    "@switchboard-xyz/common": "5.8.5",
+    "@solana/web3.js": "^1.95"
+  }
+}

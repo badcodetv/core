@@ -1,6 +1,7 @@
 #!/usr/bin/env -S npx tsx
 import { Command } from 'commander'
 import { mkdir } from 'node:fs/promises'
+import { chainCommand } from '@badcode/chain-cli'
 import { loadComic } from './loadComic'
 import { buildPrompt } from './prompt'
 import { flowPrep } from './flow-prep'
@@ -158,6 +159,10 @@ program
       console.log(`uploaded manifest copy → ${manifest.basePath}/assets.manifest.json`)
     }
   })
+
+// Generic Solana toolchain commands. The group lives in @badcode/chain-cli so it
+// can be lifted into unrelated projects; only ENC-specific sub-commands belong here.
+program.addCommand(chainCommand())
 
 program.parseAsync(process.argv).catch((err: unknown) => {
   console.error(err instanceof Error ? err.message : String(err))

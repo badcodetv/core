@@ -172,24 +172,31 @@ PORTABLE — zero ENC references, copy-paste to any project
                            registry · generic PDA derive
   packages/chain-react/    provider · useProgram(idl, programId) · useAccount
                            · useSendTransaction · ConnectWallet · ClusterBadge
-  packages/cli/src/chain/  doctor · up · down · build · deploy · idl · airdrop
+  packages/chain-cli/      doctor · up · down · build · deploy · idl · airdrop
+                           — its OWN package with its own bin, NOT a subfolder
+                           of packages/cli (which drags in sharp + GCS + comic
+                           tooling and cannot be lifted)
 
 ENC-SPECIFIC — delete freely when lifting
   chain/programs/emperors-new-coin/    the program
   chain/feeds/ · chain/sim/            M2 feed + economic simulation
   packages/enc/                        ENC accounts · instruction builders
                                        · math mirror · IDL · program ID
-  packages/cli/src/chain/enc.ts        the `chain enc` sub-group
+  packages/cli/src/enc.ts              the `chain enc` sub-group
   apps/web/src/coins/enc/              the page
 ```
 
 Two rules that make this real, and both are testable:
 
 1. **No file under `packages/chain-kit`, `packages/chain-react`, or
-   `packages/cli/src/chain/` (excluding `enc.ts`) may reference ENC** — not by
-   import, not by name, not by a string literal like `'emperors-new-coin'`. The
-   program registry is a generic `name → address` map loaded from JSON; the
-   `chain` CLI commands take a program name as an argument.
+   `packages/chain-cli` may reference ENC** — not by import, not by name, not by
+   a string literal like `'emperors-new-coin'`. The program registry is a generic
+   `name → address` map loaded from JSON; the `chain` commands take a program
+   name as an argument. ENC's `chain enc` sub-group lives in `packages/cli`
+   (BadCode's own CLI), which *depends on* `chain-cli` — never the reverse.
+   `badcode chain up` still works: `packages/cli` registers `chain-cli`'s exported
+   commander group, so Kai keeps the ergonomics and the other project lifts
+   `chain-cli` whole and runs its bin directly.
 2. **`chain-react` is generic over the IDL.** `useProgram(idl, programId)` takes
    them as parameters rather than looking up a hardcoded program, so the React
    layer never imports a specific program's types. (This also removes any build
@@ -625,7 +632,10 @@ upgrade authority is burned at T22.
   commander `^12.1.0` is already a dependency. Note `packages/cli/src/` is flat
   today, so `src/chain/` is the first subdirectory.
 - **Files:** `chain/scripts/install.sh`, `chain/versions.json`,
-  `packages/cli/src/chain/doctor.ts`, `packages/cli/src/bin.ts` (register `chain`).
+  **`packages/chain-cli/`** (new package: `package.json` with a `chain` bin,
+  `tsconfig.json`, `src/index.ts` exporting a commander `Command` group,
+  `src/doctor.ts`), and `packages/cli/src/bin.ts` + `packages/cli/package.json`
+  to register that exported group as `badcode chain`.
 - **Acceptance criteria:** `install.sh` brings a bare machine to the pinned
   versions. `doctor` exits 0 when correct, non-zero with a named remediation
   otherwise.
@@ -681,7 +691,7 @@ upgrade authority is burned at T22.
   until RPC answers. `idl` copies the generated IDL into
   a caller-specified directory (no hardcoded default naming a program — see the
   Portability contract). Add `@badcode/chain-kit` to the CLI's deps.
-- **Files:** `packages/cli/src/chain/*.ts`, `packages/cli/src/bin.ts`,
+- **Files:** `packages/chain-cli/src/*.ts` (generic commands), `packages/cli/src/bin.ts`,
   `packages/cli/package.json`, root `package.json` (scripts).
 - **Acceptance criteria:** Full lifecycle works from the repo root regardless of
   CWD. Note the pitfall at `.claude/skills/animate-slide/SKILL.md:210-213`:
@@ -790,7 +800,7 @@ upgrade authority is burned at T22.
   (stubbed until T18) and `mock` implementations behind a Cargo feature. Add
   `badcode chain enc mock-m2`.
 - **Files:** `chain/programs/emperors-new-coin/src/oracle.rs`,
-  `src/instructions/set_mock_m2.rs`, `packages/cli/src/chain/enc.ts`, `chain/Anchor.toml`.
+  `src/instructions/set_mock_m2.rs`, `packages/cli/src/enc.ts`, `chain/Anchor.toml`.
 - **Acceptance criteria:** A default build does not compile `set_mock_m2` into
   the program at all; a `--features mock` build does. Anchor's `idl-build`
   feature must still be active in both.
@@ -986,7 +996,7 @@ upgrade authority is burned at T22.
   to Switchboard. Ship **`chain enc feed-crank`** here — it posts a Switchboard
   update and stops. (The full `chain enc crank`, which also calls `sync_m2`, needs
   T18's on-chain read path and belongs there.)
-- **Files:** `chain/feeds/m2sl.devnet.json`, `packages/cli/src/chain/enc.ts`.
+- **Files:** `chain/feeds/m2sl.devnet.json`, `packages/cli/src/enc.ts`.
 - **Acceptance criteria:** The devnet feed exists, returns the current M2SL value
   and release date, and a freshly generated keypair with airdropped devnet SOL
   can post an update to it — proving the feed is permissionless in practice, not
@@ -1014,7 +1024,7 @@ upgrade authority is burned at T22.
   sit behind this — it is a wall-clock stall in the critical path, not a work
   estimate. Start the aging clock as soon as the read path compiles.
 - **Files:** `chain/programs/emperors-new-coin/src/oracle.rs` (real impl),
-  `chain/scripts/crank.ts`, `packages/cli/src/chain/enc.ts`, `chain/tests/switchboard.ts`.
+  `chain/scripts/crank.ts`, `packages/cli/src/enc.ts`, `chain/tests/switchboard.ts`.
 - **Acceptance criteria:** **All of these must be proven against devnet**, where
   real oracles sign real quotes. The real read path executes end-to-end against a
   live devnet quote; a quote for the **wrong feed ID is rejected**; **a quote
@@ -1129,11 +1139,11 @@ upgrade authority is burned at T22.
      written — only a Rust program and a page component. Delete it afterwards.
   5. **Portability check — enforce the contract by grep, not good intentions:**
      `grep -riE "enc|emperor|m2" packages/chain-kit/src packages/chain-react/src`
-     and `grep -riE "enc|emperor|m2" packages/cli/src/chain --exclude=enc.ts`
+     and `grep -riE "enc|emperor|m2" packages/chain-cli/src`
      return **no ENC references** (allow for false positives on substrings like
      "encode"/"encrypt" — review, don't just count). Then prove it for real:
      copy `chain/`'s scaffold files, `packages/chain-kit`, `packages/chain-react`
-     and `packages/cli/src/chain` (minus `enc.ts`) into a scratch directory
+     and `packages/chain-cli` into a scratch directory
      outside this repo, delete every ENC-specific path listed in the Portability
      contract, and confirm the remainder typechecks with no dangling imports.
      A second, non-token BadCode project will lift exactly this set.
