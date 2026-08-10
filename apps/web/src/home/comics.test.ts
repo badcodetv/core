@@ -9,9 +9,15 @@ describe('resolveComic', () => {
   })
 
   it('resolves a known coming-soon comic to a stub with its title', () => {
-    const r = resolveComic('emperors-coin')
+    const r = resolveComic('optimistic-lens')
     expect(r.kind).toBe('stub')
-    if (r.kind === 'stub') expect(r.title).toContain('Emperor')
+    if (r.kind === 'stub') expect(r.title).toContain('Optimistic')
+  })
+
+  it('no longer treats emperors-coin as a comic — it is a coin at /coins/enc', () => {
+    // Canon moved it from a comic to a cryptocurrency; the timeline node now
+    // points at /coins/enc, so the comic resolver must not claim it.
+    expect(resolveComic('emperors-coin').kind).toBe('not-found')
   })
 
   it('resolves an unknown slug to not-found', () => {

@@ -1,0 +1,85 @@
+/* Emperor's New Coin. Uses the site palette from index.css. */
+
+.enc {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 6rem 1.5rem 6rem;
+}
+
+.enc-back {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid var(--cyan);
+  color: var(--cyan);
+  font: inherit;
+  font-size: 12px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.enc-back:hover { background: var(--cyan); color: var(--black); }
+
+.enc-header { margin-bottom: 3rem; }
+
+.enc-header h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0.5rem 0 1rem;
+}
+
+.enc-strap {
+  color: var(--grey);
+  max-width: 42rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* The cluster you are on. Loud on purpose: test tokens are worthless and
+   mainnet mistakes are permanent, and the two look identical otherwise. */
+.enc-cluster {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid var(--signal);
+  color: var(--signal);
+}
+.enc-cluster[data-live='true'] {
+  border-color: var(--cyan);
+  color: var(--black);
+  background: var(--cyan);
+}
+
+.enc-wallet { margin-bottom: 3rem; }
+
+.enc-hint {
+  color: var(--grey);
+  font-size: 0.85rem;
+  margin: 0.75rem 0 0;
+}
+
+.enc-pending {
+  border: 1px solid var(--grey);
+  padding: 2rem;
+  color: var(--grey);
+}
+.enc-pending p { margin: 0; }
+
+/* The adapter's button ships its own look; pull it back toward the site's. */
+.enc .wallet-adapter-button {
+  font-family: var(--mono);
+  background: transparent;
+  border: 1px solid var(--cyan);
+  color: var(--cyan);
+  border-radius: 0;
+  height: auto;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+}
+.enc .wallet-adapter-button:not([disabled]):hover {
+  background: var(--cyan);
+  color: var(--black);
+}
