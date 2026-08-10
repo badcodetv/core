@@ -29,6 +29,8 @@
     "switchboard-on-demand": "0.13.0"
   },
   "npm": {
+    "$comment": "@coral-xyz/anchor is the TS client and versions INDEPENDENTLY of the Rust CLI — the CLI is 1.1.2 while the client is still 0.32.x. Do not assume they match.",
+    "@coral-xyz/anchor": "^0.32.1",
     "@switchboard-xyz/on-demand": "3.10.6",
     "@switchboard-xyz/common": "5.8.5",
     "@solana/web3.js": "^1.95"

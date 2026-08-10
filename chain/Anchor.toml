@@ -1,0 +1,34 @@
+[toolchain]
+anchor_version = "1.1.2"
+solana_version = "3.1.10"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+emperors_new_coin = "5YSzNEzi1Hk9uTCq3SuYDtjYVUUTN9A69AxX2hy58XCT"
+
+[programs.devnet]
+emperors_new_coin = "5YSzNEzi1Hk9uTCq3SuYDtjYVUUTN9A69AxX2hy58XCT"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "~/.config/solana/id.json"
+
+# ALWAYS pass `--validator legacy`. Anchor 1.x defaults to surfpool, which is not
+# installed and is not something the toolchain should require; `legacy` is
+# solana-test-validator, which ships with Agave. Without the flag every test run
+# dies with "Failed to spawn `surfpool`".
+#
+#   anchor test --validator legacy                     # everything
+#   anchor test --validator legacy --script test-smoke  # one suite
+#
+# One entry per suite below. Note `anchor test -- --grep X` does NOT work: args
+# after -- go to `cargo build-sbf`, not to mocha. Use --script instead.
+[scripts]
+test = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+test-smoke = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/smoke.ts"

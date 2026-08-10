@@ -1,0 +1,26 @@
+[package]
+name = "emperors-new-coin"
+version = "0.1.0"
+description = "Emperor's New Coin — supply pegged to the Fed's M2 money supply."
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "emperors_new_coin"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build"]
+# Declared so the compiler stops warning that Anchor's macros reference a cfg
+# this crate never defines. Not used directly.
+anchor-debug = []
+# Compiles the mock oracle instruction. Localnet only — a default build must not
+# contain any way to set M2 by hand.
+mock = []
+
+[dependencies]
+anchor-lang = "1.1.2"

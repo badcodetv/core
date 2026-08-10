@@ -24,3 +24,8 @@ coverage/
 .claude/settings.local.json
 
 .playwright-mcp
+
+# Solana / Anchor
+chain/target/
+chain/.anchor/
+chain/test-ledger/
