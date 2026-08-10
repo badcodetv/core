@@ -42,6 +42,21 @@ describe('evaluate', () => {
     // The whole point of pinning: 1.1.3 is not 1.1.2.
     expect(evaluate('anchor', '1.1.2', 'anchor-cli 1.1.3', 'fix').ok).toBe(false)
   })
+
+  it('distinguishes "installed but will not run" from "not installed"', () => {
+    // Real case: Anchor's prebuilt binaries want glibc 2.39, Ubuntu 22.04 has 2.35.
+    // Reporting that as "not installed" sends you reinstalling it forever.
+    const glibc = "anchor-1.1.2: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.39' not found"
+    const c = evaluate('anchor', '1.1.2', { out: null, broken: glibc }, 'avm install 1.1.2')
+    expect(c.ok).toBe(false)
+    expect(c.broken).toBe(glibc)
+    expect(c.remedy).toContain('--from-source')
+  })
+
+  it('keeps the normal remedy when a broken binary is not a glibc problem', () => {
+    const c = evaluate('anchor', '1.1.2', { out: null, broken: 'permission denied' }, 'avm install 1.1.2')
+    expect(c.remedy).toBe('avm install 1.1.2')
+  })
 })
 
 describe('formatReport', () => {
