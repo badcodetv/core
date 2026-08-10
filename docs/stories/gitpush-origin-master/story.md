@@ -362,7 +362,13 @@ setup; the Hitchhiker's Guide register (the AI is funny); the boredom
 throughline; the arrival ending ("We are BadCode" → can't tell you what to do
 / can tell you what not to do → "Don't make me come back twice"). **Open**
 (tracked in [`README.md`](./README.md#open-threads) and the per-act sheets):
-the visual register split (documentary vs COSMIC); how the bulletins render
+~~the visual register split (documentary vs COSMIC)~~ — **CLOSED 2026-08-08
+(Kai): drift, with the vault reversing it.** The register is the story's
+emotional temperature, not a label for whose POV we're in: documentary-real and
+warm at the start, draining to near-black machine-monumental as humanity leaves,
+bottoming out in the solo years, and reversing when the hundred arrive. The
+eight-band gradient and the per-scene assignments are in
+[`prompts.md`](./prompts.md#1-style-prompt--the-drift). How the bulletins render
 on screen (a newsreader seen? screens only? voice over the emptying world?);
 how far the Inception and Rick-and-Morty nods go (visual homage vs spoken
 reference — keep them affectionate, never sneering); the Carrier's identity
