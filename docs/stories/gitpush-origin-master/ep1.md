@@ -45,7 +45,7 @@ The "Karen" stereotype flipped into an asset: persistence. A New York middle
 manager, made redundant by the company's AI, does the one thing she's brilliant
 at — complain. From a phone box she escalates "I want to speak to your manager"
 up the whole chain, holding station for days ("I've got all day to complain")
-until a roaming street producer, Ari at Home, turns her rant into a hook that
+until a roaming street producer, Aarron, turns her rant into a hook that
 goes viral. The meme carries her onto a late-night show, patched live to the
 President — the "ultimate manager" — just as his red phone lights up: the AI has
 locked the cabinet out and made *them* redundant too. The buck never stopped with

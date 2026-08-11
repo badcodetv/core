@@ -18,7 +18,7 @@ is to flip that judgement: her worst trait is the one society is about to need m
 
 When Sean AI fires her through her own laptop, she goes out, gets blackout drunk,
 loses her phone in the river — and wakes up with nothing but a hangover, a phone box
-and the one skill she was born with. Her friend aims her: *"If anyone can get on that
+and the one skill she was born with. Her friend [Susan](./susan.md) aims her: *"If anyone can get on that
 phone and not give up until she reaches whoever can fix this, it's you. What else are
 you doing today?"* Nine months of hold music later she's a viral hook, then a
 movement, then the reason the President takes a call on live TV.
@@ -123,9 +123,15 @@ Natural female slightly higher mid-range voice with a subtle smoky rasp and firm
 > video has to carry a woman you believe spent nine months in a phone box; the
 > song has to be funny in ninety seconds.
 
-### Personality
+### Personality — deliberately left empty
 
-```prompt
-TODO — not yet written. The prose above ("A middle manager at a big New York
-company…") is the source material; condense it for Flow's field.
-```
+**Ruled 2026-08-11 (Kai): we do not fill Flow's personality field, for any
+character.** A standing personality colours every shot the Character appears in,
+which fights per-scene direction and makes video prompts harder to write — and
+keeping those as easy as possible is the priority. It is the same logic as the
+casting rule above: anything baked into the Character competes with the scene
+instead of serving it.
+
+So the **scene prompt is the only place** that says what the character is doing
+or feeling. If a shot needs an attitude, put it in that shot. This is not a
+backlog item — do not fill it in.

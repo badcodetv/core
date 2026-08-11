@@ -16,11 +16,16 @@
 >
 > **Amended 2026-08-11 (Kai): prompts and references are kept here, generation
 > is still not ours.** Karen's Flow Character was created by hand in Flow, and
-> its **look / voice / personality prompts plus its portrait and full-body
-> reference images now live in [`characters/karen.md`](./characters/karen.md)**
-> — "so it is all together." That is a *record*, not a licence to regenerate:
-> the ledger holds what was typed into Flow so the Character can be rebuilt if
-> lost. Do not generate new Karen imagery from it.
+> its **look and voice prompts plus its portrait and full-body reference images
+> now live in [`characters/karen.md`](./characters/karen.md)** — "so it is all
+> together." That is a *record*, not a licence to regenerate: the ledger holds
+> what was typed into Flow so the Character can be rebuilt if lost. Do not
+> generate new Karen imagery from it.
+>
+> **Flow's third field, personality, is deliberately left empty on every
+> character** (ruled 2026-08-11, Kai) — a standing personality colours every
+> shot and fights per-scene direction, and video prompts need to stay easy.
+> Each character file says so; it is not a backlog item.
 
 > **Source of truth** for the Karen story. The story video, the song and the comic
 > all derive from this folder. See [`../../storytelling.md`](../../storytelling.md)
@@ -41,12 +46,23 @@ A hundred years later, there's a statue.
 - [`master-notes-2026-08-05.md`](./master-notes-2026-08-05.md) — the archived
   Kai + Jack session transcript the storyboard was distilled from.
 - [`characters/karen.md`](./characters/karen.md) — Karen Bell (stereotype → leader)
-  — **plus the Flow Character ledger**: look / voice (base voice Gacrux) /
-  personality prompts and the portrait + full-body references in
+  — **plus the Flow Character ledger**: look + voice prompts (base voice Gacrux)
+  and the portrait + full-body references in
   [`characters/img/`](./characters/img/)
 - [`characters/sean-ai.md`](./characters/sean-ai.md) — Sean AI (the screen that fires
   everyone)
-- [`characters/ari.md`](./characters/ari.md) — Ari at Home (the five-second catalyst)
+- [`characters/aarron.md`](./characters/aarron.md) — **Aarron** (the five-second
+  catalyst; real-life reference *Ari at Home*) — **plus his Flow Character
+  ledger**: look + voice prompts (base voice Zubenelgenubi) and references in
+  [`characters/img/`](./characters/img/)
+- **[`prompts.md`](./prompts.md)** — the **Flow image prompt ledger**: the exact
+  prompts Jack typed into Flow for the story's stills, verbatim, plus the shared
+  `STYLE LOCK` block they all open with. Same standing as the Character ledgers —
+  a restore point, **not** a licence to generate.
+- [`characters/susan.md`](./characters/susan.md) — **Susan** (Karen's friend; the
+  pep talk that starts the whole thing — named 2026-08-11) — **plus her Flow
+  Character ledger**: look + voice prompts (base voice Kore) and references in
+  [`characters/img/`](./characters/img/)
 
 ## Production tracker
 
@@ -55,7 +71,7 @@ A hundred years later, there's a statue.
 | Storyboard | [`story.md`](./story.md#storyboard--scene-by-scene-video-canon) | **locked 2026-08-05** — the canon Jack works from; per-scene keep/redo/new statuses inside |
 | Song — "All Day to Complain" | [`songs/all-day-to-complain.md`](./songs/all-day-to-complain.md) | **drafting, round 8** — Karen Voice landed; chorus flipped to the institution choir; awaiting a keeper take |
 | Story video | Jack, from the storyboard | **in production** — draft exists; rework per the storyboard's scene statuses |
-| Music video | — | direction decided 2026-07-22: Ari freestyling with Karen, whole video; separate artifact from the story video |
+| Music video | — | direction decided 2026-07-22: Aarron freestyling with Karen, whole video; separate artifact from the story video |
 | Comic | `apps/web/src/comics/karen/` | v1 live at `/comics/karen`; rebuild derives from this canon when scheduled |
 | Social posts | — | not started — farm short-form from the finished video |
 

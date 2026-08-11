@@ -46,7 +46,7 @@ Full detail in the [Storyboard below](#storyboard--scene-by-scene-video-canon):
    morning-after call that commits her to the phone box.
 2. **The Great Escalation** — nine months in one Midtown phone box, climbing the
    ladder rung by rung; the act is the song made visual.
-3. **Viral** — Ari's five-second cameo turns her hook into a hit; the train; the
+3. **Viral** — Aarron's five-second cameo turns her hook into a hit; the train; the
    crowd grows via the drone trick.
 4. **The Ultimate Manager** — TV executives escalate her to the President for
    content; two lines of phone call; Sean AI (gold now) hacks the broadcast and
@@ -63,10 +63,13 @@ Full detail in the [Storyboard below](#storyboard--scene-by-scene-video-canon):
 - [`characters/sean-ai.md`](./characters/sean-ai.md) — Sean AI: the malevolent
   background force; an 8-bit moniker on a screen, never a face; fires Karen at the
   start, fires the government at the end.
-- [`characters/ari.md`](./characters/ari.md) — Ari at Home: the accidental catalyst;
-  five seconds of screen time in the story video, the whole of the music video.
-- Supporting cast (no files yet): **the friend** (drinking buddy; delivers the
-  end-of-act-one pep talk that aims Karen at the phone box), **the manager** (calls
+- [`characters/aarron.md`](./characters/aarron.md) — **Aarron**: the accidental
+  catalyst; five seconds of screen time in the story video, the whole of the music
+  video. (Real-life reference: the roaming street producer *Ari at Home*.)
+- [`characters/susan.md`](./characters/susan.md) — **Susan**: Karen's friend and
+  drinking buddy; delivers the end-of-act-one pep talk that aims Karen at the phone
+  box. Named 2026-08-11; previously just "the friend".
+- Supporting cast (no files yet): **the manager** (calls
   Karen in knowing she's being fired, not knowing he's next), **the intern** (the
   only person in the TV studio on the pulse), **the President** (takes one viral
   phone call too many).
@@ -116,7 +119,7 @@ AI — not a victory.
   (Sean AI screen copy + icon, pep-talk wording, phone-box pin, aerial style).
 - The song: land the round-8 chorus flip and cut a keeper take
   ([`songs/all-day-to-complain.md`](./songs/all-day-to-complain.md)).
-- The music video (separate artifact from the story video): Ari roaming with Karen,
+- The music video (separate artifact from the story video): Aarron roaming with Karen,
   freestyling — decided 2026-07-22.
 - The comic: v1 remains live at `/comics/karen`; a rebuild derives from this canon
   when we get to it.
@@ -214,8 +217,8 @@ UI, same font, same icon.
 
 ### 1.5 The bar, in Polaroids — REDO (compress hard)
 
-- **On screen:** hard cut from the firing to nighttime — Karen and her friend already
-  in a bar, one or two drinks in, not gone yet. The friend consoling her. A couple of
+- **On screen:** hard cut from the firing to nighttime — Karen and Susan already
+  in a bar, one or two drinks in, not gone yet. Susan consoling her. A couple of
   seconds, no more.
 - **Narrator gag:** *"Karen sensibly decided to have just the one and get an early
   night."*
@@ -237,11 +240,11 @@ gave it room to be.
 
 - **Beat by beat:** Karen wakes, thumping hangover, no memory of last night. Narrator
   carries it. *"Where's my phone?"* — she can't even ring anyone to find out what
-  happened. Which is how she ends up at **the phone box**, calling her friend.
-- **Cut to the friend** waking up in bed — mirror of the shot we just did with Karen
+  happened. Which is how she ends up at **the phone box**, calling Susan.
+- **Cut to Susan** waking up in bed — mirror of the shot we just did with Karen
   (fun, cheap, works).
 - **The call:** Karen: *"What happened last night? I can't remember anything. And I'm
-  going to be late for work."* The friend cuts her off: *"Karen. Yesterday you got
+  going to be late for work."* Susan cuts her off: *"Karen. Yesterday you got
   sacked. By an AI. And you dropped your phone in the river."* (Whether Karen genuinely
   forgot the firing stays an open question — very common one-too-many experience;
   don't over-explain.)
@@ -303,19 +306,19 @@ structure rung for rung, we've pulled off something genuinely great.
   newspaper — ideally the same prop newspaper as Camping — with an AI-taking-jobs
   headline. Background, not foreground.
 
-## Act 3 — Viral (Ari, the train, the crowd)
+## Act 3 — Viral (Aarron, the train, the crowd)
 
-### 3.1 The Ari cameo — REDO (five seconds, total)
+### 3.1 The Aarron cameo — REDO (five seconds, total)
 
-- **On screen:** Ari at Home happens to wander past the phone box — he is not looking
+- **On screen:** Aarron happens to wander past the phone box — he is not looking
   for anything. Karen, mid-hold, shouts her line: *"I've got ALL DAY to complain — all
-  day to complain!"* Ari stops, gets his phone out, records a few seconds — *"oh
+  day to complain!"* Aarron stops, gets his phone out, records a few seconds — *"oh
   sh—"* — and walks off.
-- **Narrator:** *"Ari just heard a great sample."* That evening (he's *Ari at Home*)
-  he cuts the tune and releases it. It goes viral — 20 million views.
+- **Narrator:** *"Aarron just heard a great sample."* That evening he cuts the tune
+  at home and releases it. It goes viral — 20 million views.
 - **We never see him again.** He's off doing his next thing. Resist making him part of
   the attraction; the believable version is the accidental one. (His big outing is the
-  **music video**, not this film — see [`characters/ari.md`](./characters/ari.md).)
+  **music video**, not this film — see [`characters/aarron.md`](./characters/aarron.md).)
 
 ### 3.2 The train — KEEP (as-is; play the real tune)
 
@@ -428,7 +431,7 @@ structure rung for rung, we've pulled off something genuinely great.
 ## Open details (deliberately unlocked)
 
 - Exact on-screen copy for both Sean AI messages (§1.4, §4.3).
-- The friend's exact pep-talk wording (§1.7) — structure locked, words open.
+- Susan's exact pep-talk wording (§1.7) — structure locked, words open.
 - The Sean AI icon design (8-bit, Claude-Code-symbol parody; gold variant).
 - The phone-box pin (Jack, Google Maps).
 - Aerial style: photoreal Manhattan first; corkboard-map fallback if it doesn't land.
