@@ -32,5 +32,77 @@ export type EmperorsNewCoin = {
       "accounts": [],
       "args": []
     }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "mathOverflow",
+      "msg": "Arithmetic overflow or underflow"
+    },
+    {
+      "code": 6001,
+      "name": "invalidRate",
+      "msg": "A rate was given outside the range 0-10000 basis points"
+    },
+    {
+      "code": 6002,
+      "name": "wrongFeed",
+      "msg": "The quote is for a different feed than this program accepts"
+    },
+    {
+      "code": 6003,
+      "name": "staleRelease",
+      "msg": "That M2 release has already been applied"
+    },
+    {
+      "code": 6004,
+      "name": "changeTooLarge",
+      "msg": "M2 changed more in one release than the sanity cap allows"
+    },
+    {
+      "code": 6005,
+      "name": "mintTooLarge",
+      "msg": "That would mint more in one step than the cap allows"
+    },
+    {
+      "code": 6006,
+      "name": "notFullyInitialized",
+      "msg": "The ten assets are not all initialised yet"
+    },
+    {
+      "code": 6007,
+      "name": "invalidAssetIndex",
+      "msg": "Asset index out of range"
+    },
+    {
+      "code": 6008,
+      "name": "assetAlreadyInitialized",
+      "msg": "That asset already exists"
+    },
+    {
+      "code": 6009,
+      "name": "vaultHoldsAsset",
+      "msg": "The vault holds this asset, so no rent is owed"
+    },
+    {
+      "code": 6010,
+      "name": "notForeclosable",
+      "msg": "This asset is not foreclosable yet"
+    },
+    {
+      "code": 6011,
+      "name": "invalidInterpolationWindow",
+      "msg": "Invalid price interpolation window"
+    },
+    {
+      "code": 6012,
+      "name": "alreadyClaimedThisEpoch",
+      "msg": "You have already claimed this epoch"
+    },
+    {
+      "code": 6013,
+      "name": "epochNotSettled",
+      "msg": "That epoch is not settled yet"
+    }
   ]
 };
