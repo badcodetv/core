@@ -140,6 +140,23 @@ Keep them until your own program works, then delete them.
    landed. Then open `/dev/counter` and click the button.
 6. Rename `@badcode/*` to your own scope, and prune the examples out of this file
    and `keys/README.md`.
+7. Set `CHAIN_PROJECT` to something specific to that repo, or its containers and
+   this one's will fight over the name and the ports.
+
+**Do not pre-emptively add npm `overrides` / yarn `resolutions` for
+`@types/react`.** This repo needs them because its wallet-adapter tree pulls
+`@types/react` 19 alongside our 18, and the duplicate makes every provider fail
+as "cannot be used as a JSX component". That is not universal: adding the same
+constraint to a yarn project that did *not* have the duplicate **introduced**
+one — a second `@types/react` entry that MUI then nested, breaking an unrelated
+file's typecheck. Install first, and add the constraint only if you actually see
+the error. Check with:
+
+```bash
+find node_modules -path "*/node_modules/@types/react/package.json"
+```
+
+Anything listed is a nested duplicate; nothing listed means you need no override.
 
 **Verified**: this exact procedure was run into an empty directory on 2026-08-11.
 The counter built, deployed and passed its tests there, under both the Docker and

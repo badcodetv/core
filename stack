@@ -41,6 +41,11 @@ WEB_LOG="$RUN_DIR/web.log"
 # which is a confusing way to find out your workspace is not installed.
 CHAIN="$DIR/node_modules/.bin/chain"
 
+# Name the compose project after this repo. The default is a bare "chain", which
+# every checkout that copies this toolchain would also use — so starting one
+# validator silently recreates another repo's containers.
+export CHAIN_PROJECT="${CHAIN_PROJECT:-badcode-chain}"
+
 chain() {
   [[ -x "$CHAIN" ]] || { echo "Missing $CHAIN — run: npm install" >&2; exit 1; }
   "$CHAIN" "$@"

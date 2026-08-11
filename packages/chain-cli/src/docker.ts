@@ -94,6 +94,26 @@ export function composeCapture(cmd: string, args: string[], root?: string): stri
   return capture('docker', [...composeBase(root), 'run', '--rm', '-T', 'toolchain', cmd, ...args])
 }
 
+/** The compose project name, which namespaces this repo's containers. */
+export function projectName(env: NodeJS.ProcessEnv = process.env): string {
+  return env.CHAIN_PROJECT || 'chain'
+}
+
+/**
+ * A container from a *different* project holding one of our ports, if any.
+ *
+ * Only one validator can publish 8899, so a second checkout that copied this
+ * toolchain cannot run at the same time as the first. Docker's own message for
+ * that is "Bind for 127.0.0.1:8899 failed: port is already allocated", which
+ * names neither the culprit nor the repo it belongs to.
+ */
+export function foreignPortHolder(port = 8899, env: NodeJS.ProcessEnv = process.env): string | null {
+  const out = capture('docker', ['ps', '--filter', `publish=${port}`, '--format', '{{.Names}}'])
+  if (out === null) return null
+  const mine = `${projectName(env)}-`
+  return out.split('\n').map((s) => s.trim()).find((n) => n.length > 0 && !n.startsWith(mine)) ?? null
+}
+
 /** Start the validator service in the background. */
 export function composeUpValidator(root?: string): void {
   prepare(root)
