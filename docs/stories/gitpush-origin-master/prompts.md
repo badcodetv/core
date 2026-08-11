@@ -1,8 +1,8 @@
 ---
 story: gitpush-origin-master
-flow_project: TBD — set by T12
-flow_project_id: TBD — set by T11b
-updated: 2026-08-08
+flow_project: gpom-story
+flow_project_id: 1774dff0-02b0-45a7-9d53-ecc549bc60a5
+updated: 2026-08-11
 ---
 
 # GitPush Origin Master — prompt ledger

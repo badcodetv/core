@@ -67,29 +67,73 @@ export function build(opts: { programName?: string; root?: string } | string = {
 export interface DeployOptions {
   cluster: string
   programName?: string
+  /**
+   * Bytes to reserve for the program account.
+   *
+   * Only has any effect on a program's FIRST deploy, which is the only chance to
+   * ask for headroom — see the caller for why you want some.
+   */
+  maxLen?: number
   root?: string
 }
 
-export function deploy({ cluster, programName, root }: DeployOptions): void {
+export function deploy({ cluster, programName, maxLen, root }: DeployOptions): void {
   restoreKeys(root)
+  const args = [
+    'deploy',
+    '--provider.cluster', cluster,
+    ...(programName ? ['--program-name', programName] : []),
+    // Everything after `--` goes to `solana program deploy`.
+    ...(maxLen === undefined ? [] : ['--', '--max-len', String(maxLen)]),
+  ]
   try {
-    runInChain(
-      'anchor',
-      ['deploy', '--provider.cluster', cluster, ...(programName ? ['--program-name', programName] : [])],
-      root,
-    )
+    runInChain('anchor', args, root)
   } catch (err) {
     // Upgrading in place only works while the new binary still fits the space
-    // allocated at first deploy. Grow past it and Agave fails with "Auto-extend
-    // failed: ... invalid instruction data", which reads like a bug in the
-    // program rather than an allocation problem with a one-line fix.
+    // allocated at first deploy, and growing past it is currently unrecoverable:
+    // the CLI sends ExtendProgram, which this loader rejects as "superseded by
+    // ExtendProgramChecked". Hence the headroom reserved at first deploy.
     throw new Error(
       `${(err as Error).message}\n\n` +
-        'If that mentioned "Auto-extend failed", the program outgrew the space reserved for it ' +
-        'on the last deploy. On localnet the fix is `chain reset` — a fresh ledger allocates for ' +
-        'the current size. On devnet, extend it: `solana program extend <program-id> <bytes>`.',
+        'If that mentioned "Auto-extend failed" or "ExtendProgram was superseded", the program ' +
+        'outgrew the space reserved for it at first deploy, and this toolchain cannot extend it ' +
+        'in place. On localnet: `chain reset`, which redeploys with fresh headroom. On devnet: ' +
+        '`solana program extend <program-id> <bytes>`.',
     )
   }
+}
+
+/**
+ * Deploy one program straight through `solana program deploy`.
+ *
+ * Exists because `anchor deploy -- --max-len N` silently DROPS everything after
+ * the `--`, despite advertising it as "arguments to pass to the underlying
+ * `solana program deploy`". Verified: via Anchor the account is allocated at the
+ * binary's exact size; called directly, the requested size is honoured. Without
+ * this there is no way to reserve headroom, and no way to redeploy a program
+ * that grew.
+ *
+ * Paths are relative to the Anchor workspace so they mean the same thing on the
+ * host and inside the container.
+ */
+export function deployProgram(opts: {
+  name: string
+  url: string
+  maxLen?: number
+  root?: string
+}): void {
+  restoreKeys(opts.root)
+  runInChain(
+    'solana',
+    [
+      'program', 'deploy',
+      '--url', opts.url,
+      '--program-id', `target/deploy/${opts.name}-keypair.json`,
+      ...(opts.maxLen === undefined ? [] : ['--max-len', String(opts.maxLen)]),
+      `target/deploy/${opts.name}.so`,
+    ],
+    opts.root,
+  )
 }
 
 /**

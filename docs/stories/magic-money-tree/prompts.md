@@ -1,8 +1,8 @@
 ---
 story: magic-money-tree
-flow_project: TBD — set by T12
-flow_project_id: TBD — set by T11b
-updated: 2026-08-08
+flow_project: magic-money-tree-story
+flow_project_id: 0d2c496b-ef03-469b-af08-dd378bae153b
+updated: 2026-08-11
 ---
 
 # The Magic Money Tree — prompt ledger
