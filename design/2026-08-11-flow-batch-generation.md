@@ -57,10 +57,19 @@ prompts; they are linted and self-contained. Paste them verbatim.
 
 | Character | Route |
 | --- | --- |
-| GPOM @Carrier | Recover sheet from git (above) → Kai confirms face still canon → `flow_create_character("Carrier", [sheet])`. No generation needed. |
-| MMT @Keynes | No sheet exists (T15). Generate one via badcode-art-direction loop — 1940s build/era-dress/bearing, **never the name** (block trigger #2) — 2 candidates/round until Kai accepts → `flow_create_character("Keynes", [accepted])`. |
+| GPOM @Carrier | Recover sheet from git (above) → Kai confirms face still canon → `flow_create_character("Carrier", [sheet])` → **Create Body** (below). Done, 2026-08-11. |
+| MMT @Keynes | No sheet exists (T15). Generate one via badcode-art-direction loop — 1940s build/era-dress/bearing, **never the name** (block trigger #2) — 2 candidates/round until Kai accepts → `flow_create_character("Keynes", [accepted])` → **Create Body**. |
 | MMT @TheTree | **Not a Character** — the accepted MMT cover is the bench+tree golden reference. |
 | GPOM @TheAI / @TheHundred | Never cast, by canon. |
+
+**Every cast character gets a body pass, not just a portrait.** Flow's
+Character object isn't fed an external turnaround sheet — it's built natively:
+portrait, then the editor's **"Create Body"** button opens a second view and a
+"Describe body and outfit…" prompt; fill it from the character's canon file
+(build, clothing, signature details) and submit. The character then carries
+both a Portrait and a Body reference, and `@name` casting draws on both.
+Live-validated 2026-08-11 on Carrier (workshop full-body shot, correct navy
+jumper + green darn + glasses-on-cord, matched canon on the first try).
 
 Record Character ids/names in each prompts.md §2 table. **Gate: Kai approves
 both characters before Phase 2.** Present candidates as a private contact-sheet

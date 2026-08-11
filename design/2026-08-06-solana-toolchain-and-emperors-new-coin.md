@@ -7,12 +7,49 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: in progress — T1-T6, T16 done; T24-T27 (Docker, counter harness, ./stack) done 2026-08-11
+Status: in progress — **11 of 27 tickets done. Next: T7.**
 Date: 2026-08-06
 Relates: `docs/stories/magic-money-tree/emperors-new-coin.md` (canon — the coin
 is a cryptocurrency folded into the Magic Money Tree story, cross-promoted with
 it). Upstream reference repo: https://github.com/emperorsnewcoin/coin (design
 docs only; it never got as far as contracts).
+
+## Progress board
+
+Full detail per ticket under **Tickets**, below. The checkbox there is the record;
+this table is the map.
+
+| | Ticket | Track |
+|---|---|---|
+| ✅ | T1–T6 · toolchain, Anchor workspace, chain-kit / chain-react / chain-cli, `/coins/:slug` | toolchain |
+| ✅ | T24–T27 · Docker toolchain, counter harness, copy-out proof, `./stack` | toolchain |
+| ✅ | T16 · Switchboard feed authored, immutability **proven live** | oracle |
+| ⬜ | **T7 · program state + `math.rs` + placeholder genesis params** ← **you are here** | program |
+| ⬜ | T8 · `initialize` + `init_asset` ×10 | program |
+| ⬜ | T9 · oracle trait + MockOracle behind a Cargo feature | program |
+| ⬜ | T10 · `sync_m2` — supply targeting, the core | program |
+| ⬜ | T11 · rent accrual, `settle_rent`, `foreclose` | program |
+| ⬜ | T12 · `buy_asset` — the forced sale | program |
+| ⬜ | T13 · the faucet — register-now, collect-next-epoch | program |
+| ⬜ | T14 · economic simulation harness | economics |
+| ⬜ | T15 · choose the genesis parameters | economics |
+| ⬜ | T17 · stand the M2SL feed up on devnet | oracle |
+| ⬜ | T18 · Switchboard on-chain read + crank (**wall-clock stall: budget a day**) | oracle |
+| ⬜ | T19 · ENC page, read-only state | web |
+| ⬜ | T20 · ENC page, wallet actions + the melting balance | web |
+| ⬜ | T21 · documentation | docs |
+| ⬜ | T22 · devnet deploy + **burn the upgrade authority** | ship |
+| ⬜ | T23 · end-to-end verification | ship |
+
+**T7–T13 are one continuous run** — each builds on the last, all in Rust, all
+validated by `./stack cargo test …` and `./stack test test-…`. Nothing in that
+stretch needs devnet, Switchboard, or a browser.
+
+**Two schedule facts worth knowing before you start.** T18 needs a Switchboard
+quote that has genuinely *aged* on devnet, so it stalls a calendar day no matter
+how fast the code goes — start it the moment the read path compiles. And T15
+picks the real economic parameters, so T7's `params.genesis.json` values are
+deliberately placeholders; don't tune them by hand on the way past.
 
 ---
 
@@ -194,9 +231,9 @@ Two rules that make this real, and both are testable:
    `name → address` map loaded from JSON; the `chain` commands take a program
    name as an argument. ENC's `chain enc` sub-group lives in `packages/cli`
    (BadCode's own CLI), which *depends on* `chain-cli` — never the reverse.
-   `badcode chain up` still works: `packages/cli` registers `chain-cli`'s exported
-   commander group, so Kai keeps the ergonomics and the other project lifts
-   `chain-cli` whole and runs its bin directly.
+   `./stack` reaches both: it calls `chain-cli`'s bin by path, and ENC verbs
+   forward to `packages/cli`. The other project lifts `chain-cli` whole and runs
+   its bin directly, with `./stack` verbs of its own — proven in the forum repo.
 2. **`chain-react` is generic over the IDL.** `useProgram(idl, programId)` takes
    them as parameters rather than looking up a hardcoded program, so the React
    layer never imports a specific program's types. (This also removes any build
@@ -570,14 +607,23 @@ function useSendTransaction():
 
 ### CLI
 
+Everything is reached through **`./stack`** at the repo root. Neither `badcode`
+nor `chain` is on anyone's PATH — they exist only as `node_modules/.bin` symlinks,
+so never write them bare in docs, tickets or UI copy.
+
 ```
-badcode chain doctor                     # verify pinned toolchain versions
-badcode chain up                         # local validator (mock oracle only)
-badcode chain down · build · deploy --cluster <c> · idl --out <dir> · airdrop <pk>
-badcode chain enc init --cluster <c>
-badcode chain enc crank --cluster <c>    # post a Switchboard update + call sync_m2
-badcode chain enc mock-m2 <value>        # localnet, mock builds only
-badcode chain enc state --cluster <c>
+./stack start                       # image, validator, funded wallet, deploy, web app
+./stack stop · status · logs [web|validator]
+./stack build [prog] · deploy · redeploy [prog] · reset
+./stack test [suite]                # Anchor suites, against the running validator
+./stack cargo <args>                # cargo in the container — Rust unit tests
+./stack doctor · wallet · shell · image · fund <address>
+./stack check                       # typecheck + unit tests, repo-wide
+
+./stack enc init --cluster <c>      # ENC-specific, added from T9 onward
+./stack enc crank --cluster <c>     # post a Switchboard update + call sync_m2
+./stack enc mock-m2 <value>         # localnet, mock builds only
+./stack enc state --cluster <c>
 ```
 
 ### Program instructions
@@ -765,7 +811,7 @@ upgrade authority is burned at T22.
   boundaries and prove `k × m2` cannot wrap. Rust PDA seed constants match
   T3's fixed expected addresses.
 - **TDD:** yes
-- **Validation:** `cd chain && cargo test -p emperors-new-coin --lib`.
+- **Validation:** `./stack cargo test -p emperors-new-coin --lib`.
 - **Depends on:** T3, T2
 - [ ] done
 - Notes:
@@ -789,8 +835,9 @@ upgrade authority is burned at T22.
   index ≥ 10; all ten NFTs carry metadata a wallet can render; each call fits in
   one transaction under the CU limit.
 - **TDD:** yes
-- **Validation:** `cd chain && anchor run test-init` (Anchor.toml `[scripts]`
-  entry invoking ts-mocha on `tests/initialize.ts`).
+- **Validation:** `./stack test test-init` (add the Anchor.toml `[scripts]` entry
+  invoking ts-mocha on `tests/initialize.ts`; `./stack test <name>` passes it to
+  `anchor test --script`, which reuses the running validator).
 - **Depends on:** T7
 - [ ] done
 - Notes:
@@ -798,15 +845,18 @@ upgrade authority is burned at T22.
 ### T9: Oracle abstraction + MockOracle   [Status: pending | Model: sonnet]
 - **Scope:** A trait returning `(m2_value, release_date)`, with `switchboard`
   (stubbed until T18) and `mock` implementations behind a Cargo feature. Add
-  `badcode chain enc mock-m2`.
+  `./stack enc mock-m2`. **Also add `--features <list>` to `chain build`** — it
+  currently takes only `--program-name`, and without a way to pass Cargo features
+  through to `anchor build` the mock build cannot be produced at all.
 - **Files:** `chain/programs/emperors-new-coin/src/oracle.rs`,
-  `src/instructions/set_mock_m2.rs`, `packages/cli/src/enc.ts`, `chain/Anchor.toml`.
+  `src/instructions/set_mock_m2.rs`, `packages/chain-cli/src/{anchor,index}.ts`,
+  `packages/cli/src/enc.ts`, `stack`, `chain/Anchor.toml`.
 - **Acceptance criteria:** A default build does not compile `set_mock_m2` into
   the program at all; a `--features mock` build does. Anchor's `idl-build`
   feature must still be active in both.
 - **TDD:** no (plumbing); covered by T10.
-- **Validation:** `cd chain && anchor build && ! grep -q set_mock_m2 target/idl/emperors_new_coin.json`
-  then `anchor build -- --features mock && grep -q set_mock_m2 target/idl/emperors_new_coin.json`.
+- **Validation:** `./stack build && ! grep -q set_mock_m2 chain/idl/emperors_new_coin.json`
+  then `./stack build --features mock && grep -q set_mock_m2 chain/idl/emperors_new_coin.json`.
   (Note `grep -c` prints `0` but **exits 1**, so it cannot be used here.)
 - **Depends on:** T8
 - [ ] done
@@ -833,7 +883,7 @@ upgrade authority is burned at T22.
   after every successful sync, with equality whenever the vault could absorb the
   move. Prices scale by the same ratio and interpolate over 30 days.
 - **TDD:** yes
-- **Validation:** `cd chain && cargo test -p emperors-new-coin --lib && anchor run test-sync`.
+- **Validation:** `./stack cargo test -p emperors-new-coin --lib && ./stack test test-sync`.
 - **Depends on:** T9
 - [ ] done
 - Notes:
@@ -851,7 +901,7 @@ upgrade authority is burned at T22.
   A holder whose balance covers the debt cannot be foreclosed. Rent moves to the
   vault and **never** changes total supply. Assets held by the vault accrue no rent.
 - **TDD:** yes
-- **Validation:** `cd chain && cargo test -p emperors-new-coin --lib && anchor run test-rent`.
+- **Validation:** `./stack cargo test -p emperors-new-coin --lib && ./stack test test-rent`.
 - **Depends on:** T10
 - [ ] done
 - Notes:
@@ -872,7 +922,7 @@ upgrade authority is burned at T22.
   supply unchanged; rapid back-and-forth buying succeeds with rent correctly
   settled each way.
 - **TDD:** yes
-- **Validation:** `cd chain && anchor run test-buy`.
+- **Validation:** `./stack test test-buy`.
 - **Depends on:** T11
 - [ ] done
 - Notes:
@@ -902,7 +952,7 @@ upgrade authority is burned at T22.
   share, pay what remains and never underflow. A second claim in one epoch fails.
   `close_epoch` refuses `n > current−2`.
 - **TDD:** yes
-- **Validation:** `cd chain && anchor run test-faucet`.
+- **Validation:** `./stack test test-faucet`.
 - **Depends on:** T12
 - [ ] done
 - Notes:
@@ -922,7 +972,8 @@ upgrade authority is burned at T22.
   unit tests on the same fixed vectors. The harness runs the full history and
   emits a report without asserting any particular outcome (T15 judges).
 - **TDD:** yes
-- **Validation:** `cd chain && npx vitest run sim`.
+- **Validation:** `npm test --workspace @badcode/chain` (vitest; the sim is pure
+  TypeScript, so it needs no container).
 - **Depends on:** T13
 - [ ] done
 - Notes:
@@ -938,7 +989,7 @@ upgrade authority is burned at T22.
   grant; assets turn over at least once per week on average under a moderate
   population. Values are produced by the harness, not hand-written.
 - **TDD:** no (parameter selection); the invariants are asserted by T14's harness.
-- **Validation:** `cd chain && npx tsx sim/index.ts --report --params params.genesis.json`
+- **Validation:** `npx tsx chain/sim/index.ts --report --params chain/params.genesis.json`
   exits 0 with all invariants green.
 - **Depends on:** T14
 - [ ] done
@@ -978,7 +1029,7 @@ upgrade authority is burned at T22.
   verified.** The fetch script retrieves current M2SL and its release date from
   both sources and they agree.
 - **TDD:** yes for the CSV parsing / release-date extraction.
-- **Validation:** `cd chain && npx tsx scripts/fetch-m2.ts` prints matching values
+- **Validation:** `npx tsx chain/scripts/fetch-m2.ts` prints matching values
   from both sources; `chain/feeds/README.md` records the two distinct feed IDs.
 - **Depends on:** T2 — **not** T15. This ticket needs only the `chain/` workspace,
   nothing from the program or the parameter sweep. It carries the plan's hard gate
@@ -1002,8 +1053,7 @@ upgrade authority is burned at T22.
   can post an update to it — proving the feed is permissionless in practice, not
   just in principle. Never substitute the mock oracle for T18's acceptance.
 - **TDD:** no (environment)
-- **Validation:** `npx tsx packages/cli/src/bin.ts chain enc feed-crank --cluster devnet`
-  succeeds using a fresh keypair.
+- **Validation:** `./stack enc feed-crank --cluster devnet` succeeds using a fresh keypair.
 - **Depends on:** T16
 - [ ] done
 - Notes:
@@ -1033,10 +1083,10 @@ upgrade authority is burned at T22.
   devnet, so allow a day between cranking and asserting); a quote below our
   signature quorum is rejected.
 - **TDD:** yes
-- **Validation:** `cd chain && anchor run test-switchboard-devnet` (Anchor.toml
-  `[scripts]` entry running the suite with `--skip-local-validator` against
-  devnet — note plain `anchor test` spawns its own validator and would bypass
-  the cluster entirely).
+- **Validation:** `./stack test test-switchboard-devnet` (Anchor.toml `[scripts]`
+  entry running the suite against devnet — `./stack test` already passes
+  `--skip-local-validator`, which matters here because plain `anchor test` spawns
+  its own validator and would bypass the cluster entirely).
 - **Depends on:** T17
 - [ ] done
 - Notes:
@@ -1126,9 +1176,9 @@ upgrade authority is burned at T22.
   the toolchain is genuinely reusable.
 - **Files:** none (verification only); append findings to the Discovered Issues Log.
 - **Acceptance criteria:**
-  1. Full gates green: `npm install`, `npm run typecheck`, `npm run test`,
-     `npm run build` at repo root; `cd chain && cargo test -p emperors-new-coin --lib`
-     and every `anchor run test-*` suite.
+  1. Full gates green: `./stack check` (typecheck + unit tests) and `npm run build`
+     at repo root; `./stack cargo test -p emperors-new-coin --lib`; and every
+     `./stack test test-*` suite.
   2. Against **devnet**, through `/coins/enc` in a browser with Phantom: connect →
      claim → buy an asset → observe rent accruing → a second wallet force-buys it →
      settle rent → a third wallet forecloses a delinquent asset.

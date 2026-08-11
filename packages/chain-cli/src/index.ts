@@ -5,6 +5,7 @@ import { build, deploy, deployProgram, exportIdl, generatedDir, syncIdl, test } 
 import { chosenRunner, composeCapture, composeRun, dockerAvailable, imageBuild, imageExists } from './docker.js'
 import { VERSION_PROBE, checksFromCombined, formatReport, runChecks } from './doctor.js'
 import { repoRoot } from './paths.js'
+import { runInChain } from './runner.js'
 import { airdrop, down, isUp, up } from './validator.js'
 import { ensureWallet, walletAddress, walletBalance, walletPath } from './wallet.js'
 
@@ -295,6 +296,23 @@ export function chainCommand(): Command {
     .action(async (opts: { script?: string; skipBuild?: boolean; ownValidator?: boolean }) => {
       if (!opts.ownValidator) await up()
       test({ script: opts.script, skipBuild: opts.skipBuild, ownValidator: opts.ownValidator })
+    })
+
+  chain
+    .command('cargo')
+    // Rust unit tests (`cargo test -p <program> --lib`) need the pinned Rust
+    // toolchain, which under Docker only exists in the container. Without this
+    // there is no way to run them at all on a machine with no host Rust.
+    .description('Run cargo inside the toolchain, from the Anchor workspace.')
+    .argument('[args...]', 'arguments for cargo, e.g. test -p emperors-new-coin --lib')
+    // Read raw argv rather than commander's parse: cargo's flags (--lib, -p) are
+    // ours to forward, not ours to interpret, and commander's own pass-through
+    // mode would force positional-option parsing on the entire CLI.
+    .allowUnknownOption()
+    .helpOption(false)
+    .action(() => {
+      const at = process.argv.indexOf('cargo')
+      runInChain('cargo', at === -1 ? [] : process.argv.slice(at + 1))
     })
 
   chain

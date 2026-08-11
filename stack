@@ -16,6 +16,7 @@
 #   ./stack redeploy [prog]  build + deploy — the loop after editing a program
 #   ./stack reset          wipe the ledger and redeploy (after a struct change)
 #   ./stack test [suite]   Anchor tests against the running validator
+#   ./stack cargo <args>   cargo inside the toolchain (Rust unit tests)
 #
 #   ./stack fund <address>   give a browser wallet 100 local SOL
 #   ./stack wallet         show the deploy wallet
@@ -137,7 +138,7 @@ check() {
   npm test
 }
 
-help() { sed -n '3,26p' "$0" | sed 's/^# \{0,1\}//'; }
+help() { sed -n '3,27p' "$0" | sed 's/^# \{0,1\}//'; }
 
 # ── Dispatch ─────────────────────────────────────────────────────────────────
 cmd="${1:-help}"
@@ -148,6 +149,7 @@ case "$cmd" in
   deploy)  chain deploy --cluster localnet "$@" ;;
   reset)   chain reset "$@" ;;
   test)    if [[ $# -gt 0 ]]; then chain test --script "$1"; else chain test; fi ;;
-  wallet|doctor|image|shell|up|down|idl|airdrop) chain "$cmd" "$@" ;;
+  cargo)   chain cargo "$@" ;;
+  wallet|doctor|image|shell|up|down|idl|airdrop|enc) chain "$cmd" "$@" ;;
   *) echo "unknown command: $cmd" >&2; echo; help; exit 1 ;;
 esac

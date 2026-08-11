@@ -59,6 +59,23 @@ export class FlowClient {
     await this.page.waitForURL(/\/project\//, { timeout: TURN_TIMEOUT_MS })
   }
 
+  /**
+   * Like ensureProject(), but also recovers from a prior turn leaving the page on a
+   * sub-route (e.g. /characters, /character/<id>) that has neither the sidebar nor the
+   * create bar — both createCharacter() and the generate/edit turns need the canvas root.
+   * A failed createCharacter() attempt is the known way to strand the page there (mapped
+   * live 2026-08-11), so re-navigate to the bare project URL rather than trust ensureProject()'s
+   * looser "/project/" match.
+   */
+  private async ensureProjectRoot(): Promise<void> {
+    await this.ensureProject()
+    if (/\/project\/[0-9a-f-]+\/?$/.test(this.page.url())) return
+    const m = this.page.url().match(/\/project\/([0-9a-f-]+)/)
+    if (!m) throw new Error('NOT_IN_PROJECT')
+    await this.page.goto(`${FLOW_URL}/project/${m[1]}`, { waitUntil: 'domcontentloaded' })
+    await this.promptBox().waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+  }
+
   async openProject(name: string): Promise<void> {
     // Always start from the projects list so the name match is honoured even if a
     // different project is already open.
@@ -283,7 +300,7 @@ export class FlowClient {
     opts?: { character?: string; numOutputs?: number },
   ): Promise<ImageResult & { candidates?: ImageResult[]; partial?: boolean }> {
     const numOutputs = opts?.numOutputs ?? 1
-    await this.ensureProject()
+    await this.ensureProjectRoot()
     await this.ensureImageMode(numOutputs)
     const before = await this.snapshotMediaNames()
     if (opts?.character) await this.submitWithCharacter(opts.character, prompt)
@@ -307,7 +324,7 @@ export class FlowClient {
     opts?: { numOutputs?: number; character?: string },
   ): Promise<EditResult> {
     const numOutputs = opts?.numOutputs ?? 2
-    await this.ensureProject()
+    await this.ensureProjectRoot()
     await this.ensureImageMode(numOutputs)
     await this.attachReferences(referenceImages)
     if (opts?.character) await this.addCharacterToPrompt(opts.character)
@@ -432,7 +449,7 @@ export class FlowClient {
   }
 
   async generateBatch(prompts: string[], outDir: string): Promise<BatchItem[]> {
-    await this.ensureProject()
+    await this.ensureProjectRoot()
     await this.ensureImageMode()
     const items: BatchItem[] = []
     for (let i = 0; i < prompts.length; i++) {
@@ -458,14 +475,15 @@ export class FlowClient {
 
   /**
    * Create a reusable, castable Flow Character from one or more reference images.
-   * Mapped live 2026-06-30: Characters sidebar -> "New Character" card -> Upload (file chooser)
-   * -> fill "Character Name" -> Done. Returns once the character editor is left.
+   * Re-mapped live 2026-08-11: the Characters sidebar button now navigates STRAIGHT to a
+   * "New character" composer (upload / describe-from-scratch) — there is no intermediate
+   * list view or "New Character" card to click through on a project with zero characters,
+   * so that step is gone. Flow: Characters sidebar -> Upload (file chooser) -> fill
+   * "Character Name" -> Done. Returns once the character editor is left.
    */
   async createCharacter(name: string, refImages: string[]): Promise<CharacterRef> {
-    await this.ensureProject()
+    await this.ensureProjectRoot()
     await this.page.getByRole('button', { name: /accessibility_new\s*Characters/i }).click({ force: true })
-    // "New Character" is a clickable card (a div with an icon ligature), not a <button>.
-    await this.page.getByText('New Character', { exact: true }).first().click({ force: true })
     await this.page.waitForURL(/\/characters\b/, { timeout: TURN_TIMEOUT_MS })
     // Upload the reference(s); the file chooser accepts the array.
     const chooser = this.page.waitForEvent('filechooser')
@@ -473,7 +491,7 @@ export class FlowClient {
     await (await chooser).setFiles(refImages)
     // After upload the character editor opens with a "Character Name" field defaulting to
     // "Untitled Character"; set it, then finalize.
-    const nameInput = this.page.locator('input[placeholder="Character Name"]')
+    const nameInput = this.page.getByRole('textbox', { name: 'Character Name' })
     await nameInput.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     await nameInput.fill(name)
     await this.page.getByRole('button', { name: /^Done$/ }).click({ force: true })
