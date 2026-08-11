@@ -1,6 +1,6 @@
 ---
 title: All Day to Complain
-status: drafting
+status: round 16 endorsed by Kai (2026-08-11) — the four boxes below are the ones that made the track
 mode: advanced
 model: v5.5
 style_influence: 90
@@ -15,6 +15,14 @@ voices: [karen, front-desk clerk, official, government voice, president]
 production notes and the revision log follow them. Edit the blocks here — they are
 the source of truth; the frontmatter carries only settings.
 
+> **⭐ These four boxes are the endorsed take.** Kai confirmed on 2026-08-11 that
+> the round-16 Style / Exclude / Lyrics / My Taste below — exactly as they stand,
+> at 90/60 with no Voice attached — are what produced the version of this song we
+> like. They were handed back verbatim and verified byte-for-byte against this
+> file. **Do not "improve" them without a specific complaint to answer**, and if
+> you do, copy them into [the baseline](#the-takes-we-liked-the-baseline) as Take
+> C's replacement first. Sixteen rounds of this file are the argument for why.
+
 > **Re-paste all four every round: Style, Exclude, Lyrics, My Taste.** "Reuse
 > Prompt" silently carries the *old* lyrics forward, and a stale lyric box is
 > invisible — it just sounds like the style prompt is being ignored. This cost
@@ -23,8 +31,8 @@ the source of truth; the frontmatter carries only settings.
 ## Style
 
 974 chars, and **the band is round 8's again** — the take Kai and Jack liked.
-Rounds 9–14 are not the baseline; the two prompts recorded under
-[The two takes we liked](#the-two-takes-we-liked-the-baseline) are, and both of
+Rounds 9–14 are not the baseline; the prompts recorded under
+[The takes we liked](#the-takes-we-liked-the-baseline) are, and both of
 them are `Boom Bap` at **86 BPM** built on the hold-muzak conceit. Round 15
 changes exactly two things about that band: **the Bond, and the lead.**
 
@@ -272,8 +280,13 @@ goes first in the style prompt.
 
 ## Settings
 
-Advanced mode, model **v5.5**, style influence **90**, weirdness **60**, and for
-round 15 **no saved Voice attached**.
+Advanced mode, model **v5.5**, style influence **90**, weirdness **60**, and
+**no saved Voice attached**.
+
+> **⭐ This is the endorsed configuration, not a proposal.** 90 / 60 / Voice-off
+> is what round 16 ran and what Kai kept. The running order sketched below
+> (*"if it is still flat, three at 80/65"*) was never needed — the first rung
+> landed. Keep the sliders here unless a new complaint arrives.
 
 > ### Round 15: run it Voice-off, and turn the randomness on
 >
@@ -282,7 +295,7 @@ round 15 **no saved Voice attached**.
 > honk material in rounds 7–8 — it exists to pin a cartoon squawk in the lead
 > slot. Round 15 wants an expressive alto *performing* that squawk, and the two
 > liked reference takes were both produced **by prompting alone, with no Voice
-> attached** (see [the baseline](#the-two-takes-we-liked-the-baseline)).
+> attached** (see [the baseline](#the-takes-we-liked-the-baseline)).
 > Attaching it now would fight the box for the thing the box is finally being
 > asked to do.
 >
@@ -641,11 +654,42 @@ vocal phrasing — the whole-track source is 95% the Lauryn lead, and a trimmed
 15s source doesn't scale to a 4-minute song. Voice-with-sub-region is the
 designed mechanism for exactly this.
 
-## The two takes we liked (the baseline)
+## The takes we liked (the baseline)
 
-Handed over by Kai, 2026-08-11, as *"the direction we want to go in for this
-song"*. **These two prompts outrank every round in the log below.** Anything in
-this file that contradicts them is a later experiment, not a standard.
+**There are three now, and C is the destination.** A and B were handed over by
+Kai on 2026-08-11 as *"the direction we want to go in for this song"* — they are
+where this was heading. **Take C is round 16, and it arrived**: Kai confirmed the
+same day that it is the version of the song we like. **C outranks A and B, and
+all three outrank every round in the log below.** Anything in this file that
+contradicts C is a superseded experiment, not a standard.
+
+### Take C — round 16, the endorsed take ⭐
+
+**It is the top of this file, unchanged.** The Style, Exclude, Lyrics and My
+Taste boxes in the first four sections *are* Take C — Kai handed the four boxes
+back verbatim after the take landed, and they were diffed byte-for-byte against
+the file before this note was written. Nothing needed restoring.
+
+So this take, unlike B, is **fully reconstructible**: all four inputs are here,
+plus the settings (v5.5, style influence **90**, weirdness **60**, **no Voice
+attached**). That is the first time in sixteen rounds that has been true of a
+take Kai endorsed — round 8's My Taste had to be dug out of `git show`, and B's
+never was.
+
+**Do not edit the top four boxes in place without preserving C.** The moment
+someone answers a new complaint by rewriting the Style box, the endorsed take
+stops being reconstructible and this file is back to archaeology. Copy the four
+boxes down here first, then edit upward.
+
+**What C changed from A and B** — the short version, with the reasoning in the
+round-15 and round-16 log entries: the Bond moved *into* the beat rather than
+sitting next to it (minor-ninth muzak loop, prowling chromatic bass, brass and
+timpani only on the swell); the lead became an expressive alto *performing* the
+whine instead of a cartoon honk; and the chorus vocals came down — small choir,
+low in the mix, her level and dry against it — while the swell itself was left
+alone.
+
+### Takes A and B — where it was heading
 
 Both were tracked down rather than taken on trust:
 
@@ -661,7 +705,8 @@ Both were tracked down rather than taken on trust:
 
 **What Kai said about each:** A — *"we like the beat and overall structure, we
 just needed to change the beat and make it more James Bond like."* B — *"we liked
-the beat and vocals, it was just missing something and felt a bit flat."*
+the beat and vocals, it was just missing something and felt a bit flat."* C —
+*"here is the prompt that made the suno song i liked."*
 
 ### Take A — the round-8 boxes, verbatim
 
@@ -725,6 +770,23 @@ been prompt-dead in this file for rounds because `rock guitar` was excluded whil
 the box named no guitar at all.
 
 ## Revision log
+
+**2026-08-11 (round 16, outcome) — ⭐ it worked, and this one is the take.** Kai
+returned the four boxes with *"here is the prompt that made the suno song i
+liked."* Verified byte-for-byte against the top of this file: the Style, Exclude,
+Lyrics and My Taste boxes he ran are **exactly** the ones recorded here, with no
+drift in either direction. Round 16 is now [Take C](#the-takes-we-liked-the-baseline)
+and the standard this file is measured against.
+
+**Two things that are worth more than the result itself.** First, the fix held
+on the first rung — 90/60, Voice-off, no fallback to 80/65 — which means the
+diagnosis (*the excess is vocal, not orchestral*) was right and the swell was
+correctly left alone. Second, **this is the first endorsed take in sixteen rounds
+whose four inputs were all already in the file.** Round 8's My Taste had to be
+recovered from `git show 6d725b8`; Take B's never was and never will be. The
+process change proposed further down — re-paste all four, record all four —
+is what made that true, and it is the only reason "the prompt that made it" is
+a thing this repo can now hand back on demand.
 
 **2026-08-11 (round 16) — the chorus vocals come down; the swell does not.**
 Kai on the round-15 takes: **everything is right except the singing in the
