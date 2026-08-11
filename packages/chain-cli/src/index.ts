@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { join, resolve } from 'node:path'
 import { Command } from 'commander'
-import { build, deploy, exportIdl, generatedDir, syncIdl, test } from './anchor.js'
+import { build, deploy, deployProgram, exportIdl, generatedDir, syncIdl, test } from './anchor.js'
 import { chosenRunner, composeCapture, composeRun, dockerAvailable, imageBuild, imageExists } from './docker.js'
 import { VERSION_PROBE, checksFromCombined, formatReport, runChecks } from './doctor.js'
 import { repoRoot } from './paths.js'
@@ -19,7 +19,7 @@ export {
 } from './docker.js'
 export { walletPath, ensureWallet, walletAddress, walletBalance } from './wallet.js'
 export {
-  build, deploy, test, testArgs, exportIdl, syncIdl, restoreKeys, idlDir, typesDir, generatedDir,
+  build, deploy, deployProgram, test, testArgs, exportIdl, syncIdl, restoreKeys, idlDir, typesDir, generatedDir,
   keysDir, deployDir, LEGACY_VALIDATOR_ARGS, type DeployOptions, type TestOptions,
 } from './anchor.js'
 
@@ -32,6 +32,21 @@ const CLUSTER_URLS: Record<string, string> = {
 /** Enough SOL to deploy a program a few times over. */
 const TARGET_SOL = 100
 const LOW_SOL = 10
+
+/**
+ * Bytes reserved for each program on its first localnet deploy.
+ *
+ * Solana allocates exactly the program's current length by default, so the next
+ * build that is one byte larger has to grow the account — and growing it is
+ * currently broken: the CLI sends `ExtendProgram`, which the loader rejects as
+ * "superseded by ExtendProgramChecked". Reserving headroom up front is what
+ * keeps `redeploy` working after a change that makes the binary bigger, which is
+ * most changes.
+ *
+ * Localnet only. It costs rent proportional to the size (~3.5 SOL here), which
+ * is free where SOL is airdropped and rude where it is not.
+ */
+const LOCALNET_MAX_LEN = 500_000
 
 function reportRunner(): void {
   const runner = chosenRunner()
@@ -66,9 +81,60 @@ async function bringUp(opts: { reset?: boolean } = {}): Promise<void> {
   console.log(`Validator up at ${CLUSTER_URLS.localnet}`)
   ensureFundedWallet(CLUSTER_URLS.localnet)
   build()
-  deploy({ cluster: 'localnet' })
+  await deployLocalnet()
   console.log('\nDeployed:')
   for (const p of deployedPrograms()) console.log(`  ${p.name.padEnd(20)} ${p.address}`)
+}
+
+/** Is there an account at this address? Null when the cluster is unreachable. */
+async function accountExists(url: string, address: string): Promise<boolean | null> {
+  try {
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'getAccountInfo', params: [address, { encoding: 'base64' }] }),
+      signal: AbortSignal.timeout(5000),
+    })
+    const body = (await res.json()) as { result?: { value: unknown } }
+    return body.result?.value != null
+  } catch {
+    return null
+  }
+}
+
+/**
+ * How much space to ask for, or undefined to let Solana decide.
+ *
+ * Only on a first deploy: `--max-len` is rejected on an upgrade, and an upgrade
+ * is exactly when we no longer have a say.
+ */
+async function localnetHeadroom(cluster: string): Promise<number | undefined> {
+  if (cluster !== 'localnet') return undefined
+  const url = CLUSTER_URLS.localnet
+  const programs = deployedPrograms()
+  if (programs.length === 0) return LOCALNET_MAX_LEN
+  const present = await Promise.all(programs.map((p) => accountExists(url, p.address)))
+  return present.some((p) => p === true) ? undefined : LOCALNET_MAX_LEN
+}
+
+/**
+ * Deploy to localnet, reserving headroom the first time.
+ *
+ * The first deploy is the only chance to ask for space, so it goes through
+ * `solana program deploy` directly; upgrades go through Anchor as usual.
+ */
+async function deployLocalnet(programName?: string): Promise<void> {
+  const maxLen = await localnetHeadroom('localnet')
+  if (maxLen === undefined) {
+    deploy({ cluster: 'localnet', programName })
+    return
+  }
+  const url = CLUSTER_URLS.localnet
+  const programs = deployedPrograms().filter((p) => !programName || p.name === programName)
+  for (const p of programs) {
+    console.log(`Deploying ${p.name} with ${maxLen} bytes reserved…`)
+    deployProgram({ name: p.name, url, maxLen })
+  }
 }
 
 /** Program name -> address, read from the published IDLs. */
@@ -211,8 +277,13 @@ export function chainCommand(): Command {
     .description('Deploy programs to a cluster.')
     .requiredOption('--cluster <cluster>', 'localnet | devnet | mainnet-beta')
     .option('--program-name <name>', 'deploy only this program')
-    .action((opts: { cluster: string; programName?: string }) => {
-      deploy({ cluster: opts.cluster, programName: opts.programName })
+    .option('--max-len <bytes>', 'space to reserve; first deploy only')
+    .action(async (opts: { cluster: string; programName?: string; maxLen?: string }) => {
+      if (opts.cluster === 'localnet' && !opts.maxLen) {
+        await deployLocalnet(opts.programName)
+        return
+      }
+      deploy({ cluster: opts.cluster, programName: opts.programName, maxLen: opts.maxLen ? Number(opts.maxLen) : undefined })
     })
 
   chain
