@@ -69,7 +69,7 @@ A hundred years later, there's a statue.
 | Medium | Where | Status |
 | --- | --- | --- |
 | Storyboard | [`story.md`](./story.md#storyboard--scene-by-scene-video-canon) | **locked 2026-08-05** — the canon Jack works from; per-scene keep/redo/new statuses inside |
-| Song — "All Day to Complain" | [`songs/all-day-to-complain.md`](./songs/all-day-to-complain.md) | **drafting, round 8** — Karen Voice landed; chorus flipped to the institution choir; awaiting a keeper take |
+| Song — "All Day to Complain" | [`songs/all-day-to-complain.md`](./songs/all-day-to-complain.md) | **drafting, round 10** — Karen Voice landed; chorus flipped to the institution choir; round 9's spy band demoted to a chorus-only swell; awaiting a keeper take |
 | Story video | Jack, from the storyboard | **in production** — draft exists; rework per the storyboard's scene statuses |
 | Music video | — | direction decided 2026-07-22: Aarron freestyling with Karen, whole video; separate artifact from the story video |
 | Comic | `apps/web/src/comics/karen/` | v1 live at `/comics/karen`; rebuild derives from this canon when scheduled |

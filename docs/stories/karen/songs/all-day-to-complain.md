@@ -22,39 +22,56 @@ the source of truth; the frontmatter carries only settings.
 
 ## Style
 
-939 chars, of a 1,000 limit. Generate with the **Karen Voice attached** (audio
+926 chars, of a 1,000 limit. Generate with the **Karen Voice attached** (audio
 influence 40–60) — the lead identity now comes from the Voice, not from these
 words; the prompt's job is the band and the choir. Round 2's dilution warning
 still stands in general, but it applied when the vocal clause had to out-shout
-the genre tag; the Voice pins the lead now, which is what buys the extra ~170
-chars the spy-band clause costs.
+the genre tag; the Voice pins the lead now.
 
-**Never write "James Bond" or "007" in any box.** Trademarked terms trip Suno's
-moderation, and even when they pass they're a weaker pointer than the era plus
-the instruments. Say *1960s Cold War spy-thriller* and name the twang.
+**Never write "James Bond", "007" or "Skyfall" in any box.** Trademarked terms
+trip Suno's moderation, and even when they pass they're a weaker pointer than
+the sound itself. Say *grand as a film title sequence* and name the instruments.
+
+**Boom bap is the genre head, and must stay there.** Round 9's mistake was
+promoting the spy band *to* the genre slot — the strongest word in the box —
+which is why it ate the track. The cinematic material is now an **arrangement
+layer that appears on the chorus only**, and it must never be written as a
+genre. If a future round wants more grandeur, make the chorus clause bigger;
+do not touch the first four words after *Under her*.
 
 ```
-A whining, honking, nagging New York woman mid-complaint, kvetching over a beat — comedy character actress delivery, musical-theatre patter, sitcom squawk. Sharp nasal honk right through the nose, pinched and shrill, bratty and cartoonish, flat hard vowels, over-enunciated consonants, every line curling up into an exaggerated whine. She scolds, she huffs, she sighs through her teeth. Under her, a 1960s Cold War spy-thriller big band crossed with 86 BPM boom bap: twangy tremolo surf guitar, brooding and stabbing brass stingers, sustained minor-key strings, walking upright bass, brushed drums, unresolved minor-ninth tension. A cheap on-hold muzak loop of telephone-EQ'd Rhodes and muted trumpet. Touch-tone beeps as percussion. On the chorus a lush, smooth, polished group choir sings the answers — sweeping and cinematic, pretty as hold music, never her. Muffled telephone-filtered clerks answer from behind the beat. Vinyl crackle.
+A whining, honking, nagging New York woman mid-complaint, kvetching over a beat — comedy character actress delivery, musical-theatre patter, sitcom squawk. Sharp nasal honk right through the nose, pinched and shrill, bratty and cartoonish, flat hard vowels, over-enunciated consonants, every line curling up into an exaggerated whine. She scolds, she huffs, she sighs through her teeth. Under her, Boom Bap Hip Hop at 86 BPM, warm and unhurried: a cheap on-hold muzak loop of telephone-EQ'd Rhodes and muted trumpet, walking upright bass, brushed drums. Touch-tone beeps as percussion. On the chorus everything swells — a lush, smooth, polished group choir sings the answers over sustained minor-key strings, low brass and timpani, unresolved minor-ninth tension, huge and cinematic, grand as a film title sequence, pretty as hold music, never her. Muffled telephone-filtered clerks answer from behind the beat. Vinyl crackle.
 ```
 
 ## Exclude styles
 
-333 chars. **Smooth-vocal words removed** as of round 8 — the Voice pins the
+392 chars. **Smooth-vocal words removed** as of round 8 — the Voice pins the
 lead now, and the excludes were strangling the choir we *want* on the chorus.
-**`orchestral` and `rock guitar` removed round 9** — they were vetoing the two
-things the spy band is built on (sweeping strings, twangy surf guitar). The
-`kazoo / slide whistle / circus / honky tonk piano` novelty block stays and now
-does double duty: it is the only thing standing between a spy-thriller
-arrangement and a comedy pastiche.
+
+**`orchestral` stays out** (removed round 9, and it matters more now, not less):
+the chorus swell is built from strings, low brass and timpani, and that word
+vetoes all three. **`rock guitar` comes back in round 10**, along with `surf
+rock`, `spaghetti western` and `big band swing` — these are the pastiche guards.
+Round 9 dropped `rock guitar` specifically to permit twangy surf guitar; round
+10 doesn't want it, so the veto returns and brings friends. `big band swing`
+guards the other half of the same failure: the ensemble growing until it *is*
+the track.
+
+The `kazoo / slide whistle / circus / honky tonk piano` novelty block stays.
+
+> **If the chorus won't get big enough, `gospel choir` is the first thing to
+> drop.** It is guarding a flavour (gospel) rather than a size, and it is the
+> only word in this list that could be capping the swell. Try it before touching
+> the style box.
 
 ```
-soulful, r&b, neo-soul, melodic rap, warm alto, sultry, breezy, laid-back, chill, cool, swagger, charismatic, confident rapper, relaxed delivery, kazoo, slide whistle, circus, honky tonk piano, drum and bass, jungle, trap hi-hats, drill, shouted vocals, screaming, autotune, edm, dubstep, uptempo, dance, gospel choir, whisper vocals
+soulful, r&b, neo-soul, melodic rap, warm alto, sultry, breezy, laid-back, chill, cool, swagger, charismatic, confident rapper, relaxed delivery, kazoo, slide whistle, circus, honky tonk piano, surf rock, spaghetti western, big band swing, rock guitar, drum and bass, jungle, trap hi-hats, drill, shouted vocals, screaming, autotune, edm, dubstep, uptempo, dance, gospel choir, whisper vocals
 ```
 
 ## Lyrics
 
 ```lyrics
-[Intro | dial tone into a cheap hold-muzak loop | twangy tremolo guitar and a brass sting | touch-tone beeps as percussion]
+[Intro | dial tone into a cheap hold-muzak loop | warm and unhurried | touch-tone beeps as percussion]
 (Thank you for calling. Your call is important to us.)
 (Press one for claims. Press two for appeals.)
 (Press three to speak to an adviser.)
@@ -71,7 +88,7 @@ Three's fine. I'm free at three. Three is lo-o-ovely to me.
 Sweeeetheart. There is always a level above the level.
 [Pre-Chorus | whiny nasal honk, flat and patronising | drums thin to rimshot | Rhodes holds one chord]
 So put down the script, and pick up the phone
-[Chorus | call-and-response | smooth polished group choir sings the answers, sweet as hold music | lead stays spoken, whiny, unmoved]
+[Chorus | call-and-response | the band swells — sustained minor-key strings rise underneath | smooth polished group choir sings the answers, sweet as hold music | lead stays spoken, whiny, unmoved]
 (I'm sorry, I can't help you)
 That's OK.
 (You'll have to wait in line)
@@ -85,13 +102,13 @@ Regional office, Thursday. Rain on the glass.
 (Ms Bell, I've escalated it, that's all I can pass)
 Borough office, Tuesday, and they gave me a code.
 (A caseworker will call you) — nobody phoned.
-Week three, a councilman's assistant, very nice boy,
-(He's in session, he's in session) — well. hoooney. So am I.
+Week three, a councilman's assistant, weak constitution but will do for now.
+(Hold, Ma'am, give me a second) — he thinks I'll just throw in the towel.
 State house, Friday, and they put me on the good hold:
 Vivaldi. Second movement. I know where it folds.
 [Pre-Chorus | whiny honk, flatter, losing patience | drums thin to rimshot]
 So put down the script, and pick up the phone
-[Chorus | lush stacked choir on the answers, sweeter than before | lead whinier and more nasal against it | wah wider]
+[Chorus | bigger swell — strings and low brass together, timpani underneath | lush stacked choir on the answers, sweeter than before | lead whinier and more nasal against it | wah wider]
 (I'm sorry, I can't help you)
 That's OK.
 (You'll have to wait in line)
@@ -113,12 +130,12 @@ every system you ever built
 runs on people hanging up.
 [drums ease back in, soft]
 So don't.
-[Verse 3 | shrill strained nasal whine, at the end of her patience | fatter drums | strings enter]
+[Verse 3 | shrill strained nasal whine, at the end of her patience | fatter drums | low strings creep in underneath, building]
 Deputy Secretary. Somebody's aide's aide.
 (Ma'am, this line is for emergencies) — well. Look what I made.
 Chief of Staff at midnight, sounding tired and small,
 (Who IS this woman?) — Karen. From the payphone. That's all.
-[Final Chorus | full choir, biggest and smoothest, sweeping cinematic swell | brass stabs behind her | lead at her most nasal, shrill and strained | wah wide open]
+[Final Chorus | the full swell — huge sustained strings, low brass and timpani, grand as a film title sequence | full choir, biggest and smoothest | lead at her most nasal, shrill and strained, refusing to be impressed | wah wide open]
 (I'm sorry, I can't help you)
 That's OK.
 (There is nobody above me)
@@ -146,8 +163,9 @@ of the house profile before overwriting, and restore it afterwards.** Also toggl
 
 ```
 Vocals: Whining, honking, nagging American women — comedy character actresses, not vocalists, kvetching and complaining over the beat. Sharp nasal squawk right through the nose, pinched and shrill, bratty cartoonish sitcom delivery, flat hard vowels, over-enunciated consonants, lines curling up into an exaggerated whine. Scolding, huffing, impatient, sighing through the teeth. Musical-theatre patter and comic-monologue delivery. Backing: muffled telephone-filtered clerks answering from behind the beat, low in the mix.
-Core sound: Dusty 86 BPM boom bap crossed with 1960s Cold War spy-thriller big band, built out of telephone hold-muzak, touch-tone beeps and dial tone. Twangy tremolo surf guitar, brooding and stabbing brass, sustained minor-key strings, unresolved minor-ninth tension. Played dead straight and sincere — the comedy lives entirely in the voice and the words, never in the music.
+Core sound: Dusty 86 BPM boom bap, warm and unhurried, built out of telephone hold-muzak, touch-tone beeps and dial tone. Played dead straight and sincere — the comedy lives entirely in the voice and the words, never in the music.
 Production: Cheap on-hold loops that never resolve, telephone-EQ'd Rhodes and muted trumpet, brushed drums, walking upright bass, vinyl crackle, band-passed phone-line tone on the background voices.
+Choruses only: everything swells into a huge cinematic film-title-sequence arrangement — sustained minor-key strings, low brass, timpani, unresolved minor-ninth tension — under a lush polished group choir. The verses never do this; the size is the chorus's alone.
 Lyrics & mood: Bureaucratic escalation, hold queues, benefits offices, being passed up a ladder of functionaries. Dry sarcasm, weaponised politeness, American working-class grievance.
 Structure: Call-and-response choruses, a fixed hook answered by a functionary, one spoken bridge where the voice drops its edge.
 ```
@@ -160,6 +178,27 @@ goes first in the style prompt.
 
 Advanced mode, model **v5.5**, style influence **90**, weirdness **50**. No audio
 influence — generate fresh, don't cover.
+
+> **Hold the sliders at 90/50 for round 10.** Kai raised moving style influence
+> and weirdness (2026-08-11). Worth doing — but not in the same round as a
+> rewritten style box, or the A/B teaches nothing. Round 9's problem was not
+> adherence; the box was obeyed exactly, it just said the wrong thing.
+>
+> When the prompt is settled and you do want to experiment, this is what the two
+> actually do here:
+>
+> - **Style influence** trades adherence against musicality. At **90** Suno
+>   follows the box hard, which is what a dense cue-driven track wants — and
+>   which is why round 9 landed as full pastiche rather than a hint of it.
+>   Dropping to **70–75** loosens the grip and lets the arrangement breathe;
+>   it is the right lever if round 10 comes back feeling *stiff* or over-stuffed.
+>   It is the wrong lever for "the wrong thing is in the track."
+> - **Weirdness** perturbs *within* the genre's pool, never across it (proven on
+>   this track at rounds 5–6). It will not remove a genre or fetch a voice.
+>   At **50** it is doing useful variation. Push to **65–70** only to shake loose
+>   a chorus arrangement that keeps landing the same predictable way.
+>
+> Move one at a time, three rolls each.
 
 ---
 
@@ -187,11 +226,18 @@ the bridge, and it's the whole political point of the story in four lines.
   record — the joke is audible without the arrangement playing it for laughs.
 - **The arrangement stays sincere; only the voice is annoyed.** Every comedic
   word was deliberately stripped from the style prompt (see revision log) —
-  "comedic deadpan" summons vaudeville. **Round 9 amended what "sincere" means
-  here**: it used to also mean *warm and unhurried* soul-jazz; it now means
-  *dead straight* — the spy band plays menace with a completely straight face.
-  Sincerity is the guard against novelty, and it survives the change. Warmth was
-  never the guard, and it was fighting the brass stabs.
+  "comedic deadpan" summons vaudeville. Round 9 tried redefining *sincere* from
+  "warm and unhurried" to "dead straight menace", and **round 10 put the warmth
+  back**: warm is what the *verses* are, and it is half of why the chorus lands.
+  Sincerity and warmth are both guards against novelty, and neither was the
+  thing fighting the grandeur.
+- **The grandeur is a chorus event, not a setting.** The cinematic swell exists
+  in exactly three places and gets bigger each time — strings on chorus 1,
+  strings + brass + timpani on chorus 2, the full thing on the final chorus.
+  It reads as *impact* only because the verses stay small, warm and dusty. The
+  moment the swell is present everywhere it stops being an arrival and becomes
+  the genre, which is precisely what round 9 did wrong. **Verses small is not a
+  compromise on the grandeur — it is the mechanism that produces it.**
 - **The vocal is an arc, not a state.** Brittle and put-upon in Verse 1, sighing
   and exasperated in Verse 2, thin and strained by Verse 3. She never raises her
   voice — the tightening *is* the escalation. The one place she's genuinely
@@ -269,6 +315,122 @@ vocal phrasing — the whole-track source is 95% the Lauryn lead, and a trimmed
 designed mechanism for exactly this.
 
 ## Revision log
+
+**2026-08-11 (round 10, lyric edit) — the councilman's assistant.** Kai swapped
+the Verse 2 third couplet. Was:
+
+> Week three, a councilman's assistant, very nice boy,
+> (He's in session, he's in session) — well. hoooney. So am I.
+
+Now:
+
+> Week three, a councilman's assistant, weak constitution but will do for now.
+> (Hold, Ma'am, give me a second) — he thinks I'll just throw in the towel.
+
+Better joke, and a more BadCode one: the old line was a straight pun on *in
+session*, the new one is **a councilman's assistant with a weak constitution** —
+the pun does political work instead of just being a pun.
+
+**And the clerk's reply proves the insult.** She calls him weak; he immediately
+asks for a second. `give me a second` is a *stall*, not a block, which also
+makes him a distinct rung on the ladder — the front desk refuses, the supervisor
+is unavailable, this one just buys time. Her comeback never addresses him at
+all; she is reading his mind while he flounders.
+
+**It also plants the bridge.** *He thinks I'll just throw in the towel* is the
+song's thesis — *every system you ever built runs on people hanging up* — said
+early, in her voice, as a throwaway. The bridge then says it straight. Throwing
+in the towel and hanging up are the same act in different clothes, so the verse
+now sets the bridge up instead of the bridge arriving cold.
+
+Three typos fixed in passing, flagged rather than silent: **`consitution` →
+`constitution`** and **`thow` → `throw`** (Suno sings a misspelling), plus
+**`mam` → `Ma'am`** to match the other four functionary lines in the track.
+
+Knock-ons worth knowing:
+
+- **The rhyme is back, and so is the device.** `now` / `towel` is a slant rhyme
+  on the /aʊ/ — the same grade as `code`/`phoned` — and it lands **after the
+  dash**, so Karen again closes her own couplet *over* the clerk's interruption.
+  That mid-couplet reach-over is the skit-track device; an intermediate draft of
+  this edit had lost it.
+- **The line length came back in range.** An intermediate draft of this couplet
+  ran ~22 syllables against the 12–14 the rest of Verse 2 sits at, which at 86
+  BPM would have rushed or spilled the bar. Trimming the clerk to `give me a
+  second` and dropping Karen's `see what I mean,` brought it to ~16 — still the
+  longest line in the verse, but patter can carry that. **If it still crowds,
+  cut `just`**: one syllable, no meaning lost.
+- **Verse 2 lost its elongated vowel.** `hoooney` was one of the three
+  sing-song-sarcasm stretches added 2026-07-30 (with `Sweeeetheart` and
+  `lo-o-ovely`, both in Verse 1). Verse 2 now has none, so the device is
+  concentrated in Verse 1 and the final chorus's `ti-i-ime`.
+
+**2026-08-11 (round 10) — demote the spy band to a layer; the grandeur moves to
+the chorus.** Kai, on the round-9 takes: the Bond elements *haven't worked*. The
+round-8 version had more of the jazz and the right voice and was closer to what
+we wanted. Keep something like **Skyfall** — but as a **layer**, not the song —
+and make it **heavy in the chorus**: grand, and it should make an impact.
+
+**The diagnosis is one line: round 9 changed the genre.** The band clause went
+from `Boom Bap Hip Hop at 86 BPM underneath her` to `a 1960s Cold War
+spy-thriller big band crossed with 86 BPM boom bap`. Per this project's own most
+expensive lesson (rounds 3–6), **the genre tag is the strongest word in the box
+and it picks the whole arrangement**, so naming spy-thriller big band *as the
+genre* meant it could only take over. It was never going to sit as a layer,
+because a layer is not what it was written as. Boom bap is restored as the head
+and the cinematic material is now explicitly an arrangement event.
+
+**Round 9's stated fix was wrong, and the Skyfall reference is why.** It
+predicted: *if it reads as pastiche, keep the twang and drop the brass
+stingers.* That guess was anchored on the **gun-barrel instrumental** — Vic
+Flick's twangy surf guitar, the *Dr. No* sound. Kai's reference is **Skyfall**,
+which is the other lineage entirely: the **title-song swell** — slow, minor-key,
+huge sustained strings, low brass, timpani, an orchestra arriving all at once.
+There is no surf guitar anywhere in it. So the fix is the **inverse** of the
+prediction: the twang goes, the swell stays and gets bigger. The twangy tremolo
+guitar was also the single loudest pastiche tell in the box *and* the one
+element playing in every verse — it was the takeover, not the victim of it.
+
+Changes:
+
+- **Style box:** `1960s Cold War spy-thriller big band`, `twangy tremolo surf
+  guitar` and `brooding and stabbing brass stingers` all deleted. `Boom Bap Hip
+  Hop at 86 BPM, warm and unhurried` restored as the genre head — round 8's
+  words, which is the take Kai says was closest. The chorus clause absorbs all
+  the cinematic material (`everything swells … sustained minor-key strings, low
+  brass and timpani, unresolved minor-ninth tension, huge and cinematic, grand
+  as a film title sequence`). 939 → 926 chars. **Fixed by deleting, and the box
+  got shorter** — the standing round-2 rule.
+- **The minor-ninth survives the cull.** It is the one genuinely Bond thing that
+  is *harmony* rather than *costume*, so it can't read as pastiche. It moved
+  from the band clause to the chorus clause with everything else.
+- **Excludes:** `rock guitar` returns (round 9 dropped it purely to permit surf
+  guitar), joined by `surf rock`, `spaghetti western` and `big band swing`.
+  `orchestral` stays out and now matters more — it would veto the strings, brass
+  and timpani the chorus is built from. 333 → 392 chars.
+- **Lyric cues:** the intro loses the twang and the sting; the three choruses
+  now carry an **escalating swell** (strings → strings + brass + timpani → the
+  full thing), which is where "heavy in the chorus" is actually implemented;
+  Verse 3's `strings enter` became `low strings creep in underneath, building`
+  so the last verse ramps rather than pre-empting; the final chorus swapped
+  `brass stabs behind her` for the full swell and gained `refusing to be
+  impressed` on the lead.
+- **My Taste realigned** — round 4 proved it sits upstream as a competing spec.
+  Core sound is boom bap and warm again, and the swell is stated as a separate
+  **Choruses only** line that says the verses never do it.
+- **Sliders held at 90/50** deliberately, with a note in Settings on what to
+  move once the box is settled. Changing the prompt and the sliders in the same
+  round makes the A/B unreadable, and round 9 was not an adherence failure.
+
+**What round 9 got right and this keeps:** the choir as the institution
+(round 8's idea) is still the payoff — the bureaucracy gets the big cinematic
+sound and Karen refuses to be soothed by it. Round 9 was correct that the
+*chorus* was where the grandeur belonged. Its error was spending it everywhere
+else too.
+
+**A/B this against a round-8 take.** If the chorus still isn't big enough, drop
+`gospel choir` from the excludes before touching anything else — it is the only
+word left that could be capping the size.
 
 **2026-08-11 (round 9) — the institution gets a villain's theme.** Kai: the tune
 is landing, but it wants to feel like a sixties spy-thriller title sequence. Not
