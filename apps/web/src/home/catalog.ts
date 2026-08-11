@@ -71,8 +71,9 @@ export const stories: Transmission[] = [
     route: '/comics/magic-money-tree',
     blurb: 'There is no magic money tree. Except the one they shook for the banks.',
   },
-  // BC-004 (gpom-short) and BC-005 (emperors-coin) stay live at their routes
-  // but are deliberately not indexed here.
+  // BC-004 (gpom-short) stays live at its route but is deliberately not indexed
+  // here. BC-005 (emperors-coin) is no longer a comic at all — it became a
+  // cryptocurrency and lives at /coins/enc.
 ]
 
 export const music: Transmission[] = [

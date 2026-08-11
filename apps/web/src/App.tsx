@@ -6,6 +6,8 @@ import { About } from './routes/About'
 import { Storyverse } from './routes/Storyverse'
 import { FutureProof } from './routes/FutureProof'
 import { NotFound } from './routes/NotFound'
+import { CoinPage } from './routes/CoinPage'
+import { DevCounter } from './routes/DevCounter'
 
 /** The Atlas used to live at /gitpush-origin-master; keep old links (and their
  *  #node deep links) working. */
@@ -22,6 +24,8 @@ export function App() {
         <Route path="/comics/gitpush-origin-master" element={<Home />} />
         <Route path="/gitpush-origin-master" element={<LegacyAtlasRedirect />} />
         <Route path="/comics/:slug" element={<ComicPage />} />
+        <Route path="/coins/:slug" element={<CoinPage />} />
+        <Route path="/dev/counter" element={<DevCounter />} />
         <Route path="/about" element={<About />} />
         <Route path="/storyverse" element={<Storyverse />} />
         <Route path="/future-proof" element={<FutureProof />} />

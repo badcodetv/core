@@ -17,7 +17,11 @@
     "verbatimModuleSyntax": true,
     "baseUrl": ".",
     "paths": {
-      "@badcode/*": ["packages/*/src"]
+      "@badcode/*": ["packages/*/src"],
+      // Generated program interfaces (IDL + types), published by `chain build`.
+      // Kept out of packages/ deliberately: they belong to the Anchor workspace,
+      // which is the folder that gets copied into another project wholesale.
+      "@chain/*": ["chain/*"]
     }
   }
 }

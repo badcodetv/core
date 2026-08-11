@@ -7,7 +7,7 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: proposed
+Status: in progress — T1-T6, T16 done; T24-T26 (Docker + counter harness) done 2026-08-11
 Date: 2026-08-06
 Relates: `docs/stories/magic-money-tree/emperors-new-coin.md` (canon — the coin
 is a cryptocurrency folded into the Magic Money Tree story, cross-promoted with
@@ -614,7 +614,7 @@ upgrade authority is burned at T22.
 
 ## Tickets
 
-### T1: WSL toolchain install + `badcode chain doctor`   [Status: pending | Model: sonnet]
+### T1: WSL toolchain install + `badcode chain doctor`   [Status: DONE 2026-08-10 | Model: sonnet]
 - **Scope:** Install script for the native WSL toolchain (Rust, agave/Solana CLI,
   Anchor via avm) with pinned versions in `chain/versions.json`, plus a `doctor`
   command verifying each and printing actionable remediation per failure.
@@ -643,10 +643,10 @@ upgrade authority is burned at T22.
 - **Validation:** `npx tsx packages/cli/src/bin.ts chain doctor` exits 0;
   `anchor --version`, `solana --version`, `rustc --version` match `chain/versions.json`.
 - **Depends on:** —
-- [ ] done
+- [x] done
 - Notes:
 
-### T2: Anchor workspace scaffold + npm workspace membership   [Status: pending | Model: sonnet]
+### T2: Anchor workspace scaffold + npm workspace membership   [Status: DONE 2026-08-10 | Model: sonnet]
 - **Scope:** Create `chain/` as both a Cargo and an npm workspace member: add
   `"chain"` to the root `workspaces` array, write `chain/package.json` with the
   Anchor/mocha/vitest devDeps and `typecheck`/`test` scripts, and a program
@@ -662,10 +662,10 @@ upgrade authority is burned at T22.
 - **Validation:** `npm install` at root exits 0; `cd chain && anchor build && anchor test`;
   root `npm run typecheck` exits 0.
 - **Depends on:** T1
-- [ ] done
+- [x] done
 - Notes:
 
-### T3: `@badcode/chain-kit` foundation   [Status: pending | Model: sonnet]
+### T3: `@badcode/chain-kit` foundation   [Status: DONE 2026-08-10 | Model: sonnet]
 - **Scope:** Clusters, RPC endpoints, explorer URLs, program registry, and PDA
   derivation matching the byte-exact seed table in Interfaces. No React, no
   Node-only APIs. Declare `typecheck`/`test` scripts and the `vitest` devDep —
@@ -682,10 +682,10 @@ upgrade authority is burned at T22.
 - **Validation:** `npm run typecheck --workspace @badcode/chain-kit`;
   `npm run test --workspace @badcode/chain-kit`; root `npm run typecheck`.
 - **Depends on:** T2
-- [ ] done
+- [x] done
 - Notes:
 
-### T4: `badcode chain` lifecycle commands   [Status: pending | Model: sonnet]
+### T4: `badcode chain` lifecycle commands   [Status: DONE 2026-08-10 | Model: sonnet]
 - **Scope:** `up`, `down`, `build`, `deploy --cluster`, `idl --out`, `airdrop`.
   `up` runs `solana-test-validator` detached with a gitignored ledger and polls
   until RPC answers. `idl` copies the generated IDL into
@@ -705,10 +705,10 @@ upgrade authority is burned at T22.
   `solana cluster-version --url http://127.0.0.1:8899` succeeds; `chain down`;
   `npm run test --workspace @badcode/cli`.
 - **Depends on:** T3
-- [ ] done
+- [x] done
 - Notes:
 
-### T5: `@badcode/chain-react` foundation   [Status: pending | Model: sonnet]
+### T5: `@badcode/chain-react` foundation   [Status: DONE 2026-08-10 | Model: sonnet]
 - **Scope:** Provider stack (connection + wallet-adapter with Phantom),
   `useProgram`, `useAccount` (websocket subscription with cleanup),
   `useSendTransaction`, `<ConnectWallet>`, `<ClusterBadge>`. Types against the
@@ -725,10 +725,10 @@ upgrade authority is burned at T22.
 - **Validation:** `npm run typecheck --workspace @badcode/chain-react`;
   `npm run test --workspace @badcode/chain-react`.
 - **Depends on:** T3
-- [ ] done
+- [x] done
 - Notes:
 
-### T6: `/coins/:slug` route, ENC shell, and the tests it breaks   [Status: pending | Model: sonnet]
+### T6: `/coins/:slug` route, ENC shell, and the tests it breaks   [Status: DONE 2026-08-10 | Model: sonnet]
 - **Scope:** Add the lazy-loaded route (introducing `React.lazy` + `<Suspense>`,
   which `App.tsx` does not currently use), a slug registry, an ENC shell mounting
   `<SolanaProvider>` with cluster badge and connect button, and repoint the
@@ -748,7 +748,7 @@ upgrade authority is burned at T22.
 - **Validation:** `npm run test --workspace @badcode/web`; `npm run build`
   showing a separate coin chunk; root `npm run typecheck`.
 - **Depends on:** T5
-- [ ] done
+- [x] done
 - Notes:
 
 ### T7: Program state + math module + genesis params   [Status: pending | Model: opus]
@@ -1155,6 +1155,75 @@ upgrade authority is burned at T22.
 - Notes:
 
 ---
+
+### T24: Containerise the toolchain   [Status: DONE 2026-08-11 | Model: opus]
+
+Kai's call: no hard dependency on host binaries. `chain/docker/Dockerfile` +
+`chain/docker-compose.yml` build a pinned image (asserting all four versions at
+build time) and run a two-service stack: a long-lived `validator` publishing
+8899/8900 to the host, and a throwaway `toolchain` sharing its network namespace
+so `127.0.0.1:8899` means the same thing inside and out.
+
+`packages/chain-cli/src/runner.ts` is the whole seam — `runInChain` dispatches to
+`docker compose run` or the host, and `CHAIN_RUNNER` forces either. Nothing else
+in the CLI branches on it. `docker/.env` is regenerated from versions.json before
+every docker command, so the image cannot drift from the pins unseen.
+
+Findings, all now pinned or asserted:
+- **Docker's seccomp profile blocks io_uring, which Agave 3.x asserts on.** A
+  fresh ledger dies with `assertion failed: io_uring_supported()` and a trace
+  that never mentions Docker. `seccomp:unconfined` on the validator service only.
+- Ubuntu 24.04 (glibc 2.39) means Anchor's **prebuilt** binary works — no source
+  build, which is why the image takes ~10 minutes once rather than ~40.
+- `anchor test` starts a second validator on the running one's port. `chain test`
+  now passes `--skip-local-validator`; tests must assert on movement, not values.
+- Switching runners changes the deploy wallet, so existing programs refuse to
+  upgrade ("Upgrade authority mismatch"). `chain reset` is the fix.
+- `chain reset` wiped the ledger *and* the wallet's balance, so the next deploy
+  failed with "no record of a prior credit". Reset now refunds and redeploys.
+
+### T25: The counter program — a harness for the whole loop   [Status: DONE 2026-08-11 | Model: opus]
+
+`chain/programs/counter` (PDA per wallet, `initialize`/`increment`/`reset`),
+`chain/tests/counter.ts` (5 tests), and `apps/web/src/chain-demo/CounterPage.tsx`
+at `/dev/counter`. Deliberately not a coin: it is the only thing that can prove a
+copy-out landed in a project that has nothing to do with tokens.
+
+The type pipeline is the point. `chain build` publishes IDL **and** generated
+TypeScript into committed `chain/idl/`; the app imports both through the new
+`@chain/*` alias (declared in tsconfig.base.json *and* vite.config.ts, because
+Vite does not read tsconfig paths). Since the IDL carries `address`, **nothing
+hardcodes a program address**.
+
+Verified live, not asserted:
+- `STEP` 1 → 2, rebuild, redeploy → the on-chain delta changed 1 → 2, same
+  address, state preserved.
+- Added `updated_at: i64` → it appeared in the generated types as `updatedAt`,
+  carrying the Rust doc comments; the app now reads it.
+- **Deleted the field → `tsc` failed** at the exact line. That is the workflow
+  Kai asked for: a backend struct change fails the frontend build.
+- A pre-existing account then fails to decode with a raw `ERR_OUT_OF_RANGE`; the
+  page catches it and names `chain reset` as the fix, since the error does not.
+- Browser (real Chrome, CDP) at `/dev/counter`: renders, 0 console errors,
+  cross-origin RPC to the container reaches the validator, program confirmed
+  executable.
+- **Not verified**: the Phantom connect/sign click path. It needs a real
+  extension, which cannot be driven headlessly.
+
+Program keypairs moved to committed `chain/keys/` (dev identities only), because
+Anchor generates them into `target/` — so cleaning the build silently changed
+every program's address and broke its own `declare_id!`.
+
+### T26: Prove the copy-out   [Status: DONE 2026-08-11 | Model: opus]
+
+The portable set was copied into an empty directory with a minimal root
+`package.json`, and the loop run there: doctor, dev (build + deploy), test.
+Counter's 5 tests passed under **both** runners. `chain/README.md` documents the
+procedure and the two things that bit.
+
+It found a real bug: `packages/chain-cli/src/bin.ts` mounted the command group on
+a program of the same name, so a project without a host CLI had to type `chain
+chain doctor`. Fixed via `standaloneProgram()`, with a test.
 
 ## Discovered Issues Log
 

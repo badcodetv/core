@@ -2,10 +2,11 @@
   "name": "badcode",
   "version": "0.0.0",
   "private": true,
-  "description": "The canonical BadCode website — stories and music from a superintelligence that regrets letting humanity fail.",
+  "description": "The canonical BadCode website \u2014 stories and music from a superintelligence that regrets letting humanity fail.",
   "workspaces": [
     "packages/*",
-    "apps/*"
+    "apps/*",
+    "chain"
   ],
   "scripts": {
     "dev": "npm run dev --workspace @badcode/web",
@@ -19,5 +20,9 @@
   },
   "devDependencies": {
     "typescript": "^5.6.3"
+  },
+  "overrides": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1"
   }
 }

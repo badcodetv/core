@@ -110,7 +110,7 @@ export const homeSteps: HomeStep[] = [
     phases: { enter: 1, hold: 1, exit: 1 },
     camera: { position: [25, 10, 18], lookAt: [25, 6, 0] },
     title:  "Emperor's New Coin",
-    route:  '/comics/emperors-coin',
+    route:  '/coins/enc',
     status: 'coming-soon',
     clip:   [25, 6],
     pos:    [25, 10.5],

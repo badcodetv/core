@@ -43,19 +43,12 @@ else
   rustup default "$RUST_V"
 fi
 
-say "Agave / Solana CLI $AGAVE_V"
-if command -v solana >/dev/null 2>&1 \
-   && solana --version 2>/dev/null | grep -q "$AGAVE_V" \
-   && [ "$FORCE" != "--force" ]; then
-  skip "$AGAVE_V"
-else
-  sh -c "$(curl -sSfL "https://release.anza.xyz/v$AGAVE_V/install")"
-  export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
-fi
-
+# Anchor MUST come before Solana: `avm install` pulls down its own Solana CLI and
+# will silently overwrite whatever is already there. Install Solana first and you
+# just watch your pinned version get clobbered.
 say "Anchor $ANCHOR_V (via avm)"
 if ! command -v avm >/dev/null 2>&1; then
-  echo "    installing avm (builds from source, this takes a while)"
+  echo "    installing avm (builds from source, ~1 min)"
   cargo install --git https://github.com/solana-foundation/anchor avm --locked --force
 fi
 if command -v anchor >/dev/null 2>&1 \
@@ -63,9 +56,25 @@ if command -v anchor >/dev/null 2>&1 \
    && [ "$FORCE" != "--force" ]; then
   skip "$ANCHOR_V"
 else
-  echo "    building anchor $ANCHOR_V from source, this takes a while"
-  avm install "$ANCHOR_V"
+  # --from-source is not optional on older distros. Anchor's prebuilt binaries are
+  # linked against GLIBC 2.39 (Ubuntu 24.04+); on 22.04 (GLIBC 2.35) the download
+  # succeeds and then every invocation dies with a "version GLIBC_2.39 not found"
+  # error that looks nothing like a packaging problem.
+  echo "    building anchor $ANCHOR_V from source, this takes several minutes"
+  avm install "$ANCHOR_V" --from-source --force
   avm use "$ANCHOR_V"
+fi
+
+say "Agave / Solana CLI $AGAVE_V"
+if command -v solana >/dev/null 2>&1 \
+   && solana --version 2>/dev/null | grep -q "$AGAVE_V" \
+   && [ "$FORCE" != "--force" ]; then
+  skip "$AGAVE_V"
+else
+  # Normally a no-op: avm has just installed exactly this version. Kept so the
+  # pin is enforced rather than assumed, and so a drifted install self-heals.
+  sh -c "$(curl -sSfL "https://release.anza.xyz/v$AGAVE_V/install")"
+  export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
 fi
 
 say "Done"
