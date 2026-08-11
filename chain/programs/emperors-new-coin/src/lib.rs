@@ -51,6 +51,13 @@ pub mod emperors_new_coin {
         instructions::init_asset::handler(ctx, index, name, symbol, uri, genesis_price)
     }
 
+    /// Read the oracle and move the supply to `k × M2`. **Anyone may call
+    /// this.** The ten Asset PDAs go in `remaining_accounts`, writable, in
+    /// index order.
+    pub fn sync_m2(ctx: Context<SyncM2>) -> Result<()> {
+        instructions::sync_m2::handler(ctx)
+    }
+
     /// Set M2 by hand. **Compiled only under `--features mock`** — a default
     /// build has no such instruction at all.
     #[cfg(feature = "mock")]

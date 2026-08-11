@@ -43,10 +43,7 @@ pub struct Quote {
 /// `QuoteVerifier::verify_account`, which is hard-capped near 512 slots by the
 /// `SlotHashes` sysvar and would reject every quote of a monthly series.
 #[cfg(not(feature = "mock"))]
-pub fn read_quote<'info>(
-    _oracle: &'info AccountInfo<'info>,
-    _expected_feed_id: &[u8; 32],
-) -> Result<Quote> {
+pub fn read_quote(_oracle: &AccountInfo<'_>, _expected_feed_id: &[u8; 32]) -> Result<Quote> {
     err!(EncError::OracleUnavailable)
 }
 
@@ -74,11 +71,15 @@ pub const MOCK_ORACLE_SEED: &[u8] = b"mock_oracle";
 /// wrong about, and taking the same argument keeps the two implementations
 /// interchangeable so `sync_m2` has no idea which one it is talking to.
 #[cfg(feature = "mock")]
-pub fn read_quote<'info>(
-    oracle: &'info AccountInfo<'info>,
-    _expected_feed_id: &[u8; 32],
-) -> Result<Quote> {
-    let account = Account::<MockOracle>::try_from(oracle)?;
+pub fn read_quote(oracle: &AccountInfo<'_>, _expected_feed_id: &[u8; 32]) -> Result<Quote> {
+    // Deserialized by hand rather than through `Account`, whose lifetime bound
+    // (`&'info AccountInfo<'info>`) does not survive being called with a
+    // borrow of the accounts struct. Nothing is lost: the owner check below is
+    // the only thing `Account` would have added, and the discriminator check
+    // comes free with `try_deserialize`.
+    require_keys_eq!(*oracle.owner, crate::ID, EncError::WrongFeed);
+    let data = oracle.try_borrow_data()?;
+    let account = MockOracle::try_deserialize(&mut &data[..])?;
     Ok(Quote {
         m2_value: account.m2_value,
         release_date: account.release_date,

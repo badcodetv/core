@@ -161,7 +161,18 @@ case "$cmd" in
   deploy)  chain deploy --cluster localnet "$@" ;;
   reset)   chain reset "$@" ;;
   # Same shape: `./stack test test-init --features mock`.
-  test)    if [[ $# -gt 0 && "$1" != -* ]]; then t="$1"; shift; chain test --script "$t" "$@"; else chain test "$@"; fi ;;
+  # Localnet is mock-oracle-only by design (see chain/README.md), so the ENC
+  # program is built with --features mock before the suites run. It has to be a
+  # separate build: cargo features are per-package, and `anchor test` would
+  # rebuild the whole workspace — where `counter` has no `mock` feature and the
+  # build fails. Then --skip-build so anchor deploys what we just made.
+  test)    args=(); if [[ $# -gt 0 && "$1" != -* ]]; then args+=(--script "$1"); shift; fi
+           if [[ "$*" != *--features* && "$*" != *--skip-build* ]]; then
+             chain build
+             chain build --program-name emperors_new_coin --features mock
+             args+=(--skip-build)
+           fi
+           chain test "${args[@]}" "$@" ;;
   cargo)   chain cargo "$@" ;;
   enc)     badcode enc "$@" ;;
   wallet|doctor|image|shell|up|down|idl|airdrop) chain "$cmd" "$@" ;;

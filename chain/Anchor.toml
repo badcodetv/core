@@ -34,8 +34,13 @@ wallet = "~/.config/solana/id.json"
 #
 # One entry per suite below. Note `anchor test -- --grep X` does NOT work: args
 # after -- go to `cargo build-sbf`, not to mocha. Use --script instead.
+# Run through mocha with tsx as the loader, not ts-mocha. ts-mocha cannot
+# resolve a TypeScript file importing another TypeScript file as an ES module,
+# which is what these are — so the shared tests/enc-harness.ts is unreachable
+# under it. tsx resolves both extensionless and .js-to-.ts specifiers.
 [scripts]
-test = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
-test-smoke = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/smoke.ts"
-test-counter = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/counter.ts"
-test-init = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/initialize.ts"
+test = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 'tests/**/*.ts'"
+test-smoke = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/smoke.ts"
+test-counter = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/counter.ts"
+test-init = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/initialize.ts"
+test-sync = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/sync_m2.ts"

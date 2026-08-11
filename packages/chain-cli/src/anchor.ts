@@ -64,6 +64,15 @@ export function build(
     typeof opts === 'string' ? { programName: undefined, features: undefined, root: opts } : opts
   restoreKeys(root)
   runInChain('anchor', ['build', ...buildArgs({ programName, features })], root)
+
+  // A feature build is a variant, not the artifact that ships, so it does not
+  // overwrite the committed interface. Without this the checked-in IDL would
+  // flip depending on which build you happened to run last, and a local test
+  // run would leave the repo describing a program nobody releases.
+  if (features?.length) {
+    console.log(`Built with features [${features.join(', ')}] — committed IDL left unchanged.`)
+    return
+  }
   syncIdl(root)
 }
 

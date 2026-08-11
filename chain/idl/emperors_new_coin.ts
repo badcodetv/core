@@ -500,6 +500,190 @@ export type EmperorsNewCoin = {
           "type": "i64"
         }
       ]
+    },
+    {
+      "name": "syncM2",
+      "docs": [
+        "Read the oracle and move the supply to `k × M2`. **Anyone may call",
+        "this.** The ten Asset PDAs go in `remaining_accounts`, writable, in",
+        "index order."
+      ],
+      "discriminator": [
+        183,
+        4,
+        78,
+        180,
+        186,
+        237,
+        229,
+        237
+      ],
+      "accounts": [
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "printer",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  114,
+                  105,
+                  110,
+                  116,
+                  101,
+                  114
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "oracle",
+          "docs": [
+            "knows what shape this account has — a Switchboard feed in a real build,",
+            "a mock in a mock one."
+          ]
+        },
+        {
+          "name": "mint",
+          "writable": true
+        },
+        {
+          "name": "vault",
+          "docs": [
+            "tokens this instruction may burn."
+          ],
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  118,
+                  97,
+                  117,
+                  108,
+                  116
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "vaultTokenAccount",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "vault"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            }
+          }
+        },
+        {
+          "name": "tokenProgram",
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+        }
+      ],
+      "args": []
     }
   ],
   "accounts": [
@@ -553,6 +737,21 @@ export type EmperorsNewCoin = {
         3,
         241,
         112
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "synced",
+      "discriminator": [
+        114,
+        244,
+        163,
+        97,
+        99,
+        80,
+        164,
+        70
       ]
     }
   ],
@@ -988,6 +1187,49 @@ export type EmperorsNewCoin = {
           {
             "name": "bump",
             "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "synced",
+      "docs": [
+        "Emitted on every successful sync, so the website and any indexer can show",
+        "what the printer did without replaying the whole chain."
+      ],
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "m2Value",
+            "type": "u64"
+          },
+          {
+            "name": "m2ReleaseDate",
+            "type": "i64"
+          },
+          {
+            "name": "targetSupply",
+            "type": "u64"
+          },
+          {
+            "name": "supplyDelta",
+            "docs": [
+              "Positive when minted, negative when burned."
+            ],
+            "type": "i128"
+          },
+          {
+            "name": "uncoveredBurn",
+            "docs": [
+              "How much of a burn the vault could not cover. Non-zero means supply is",
+              "left above target on purpose."
+            ],
+            "type": "u64"
+          },
+          {
+            "name": "slot",
+            "type": "u64"
           }
         ]
       }
