@@ -19,8 +19,10 @@ idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
 # this crate never defines. Not used directly.
 anchor-debug = []
 # Compiles the mock oracle instruction. Localnet only — a default build must not
-# contain any way to set M2 by hand.
-mock = []
+# contain any way to set M2 by hand. It also turns on Anchor's init-if-needed,
+# which the mock uses to overwrite itself; scoping it to this feature means a
+# default build cannot use that pattern anywhere.
+mock = ["anchor-lang/init-if-needed"]
 
 [dependencies]
 anchor-lang = "1.1.2"

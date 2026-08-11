@@ -21,6 +21,13 @@ pub enum EncError {
     InvalidRate,
 
     // ── Oracle / supply ─────────────────────────────────────────────────────
+    /// This build has no working oracle.
+    ///
+    /// A default build cannot read M2 until T18 lands the real Switchboard
+    /// path. Refusing loudly beats falling back to something weaker.
+    #[msg("This build cannot read the oracle")]
+    OracleUnavailable,
+
     /// The quote came from a feed other than the one `Config` pins.
     #[msg("The quote is for a different feed than this program accepts")]
     WrongFeed,

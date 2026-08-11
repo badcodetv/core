@@ -11,12 +11,14 @@
 #   ./stack status         what is up, which programs, which wallet
 #   ./stack logs [web|validator]   follow logs
 #
-#   ./stack build [prog]   build + publish IDL and TypeScript types
+#   ./stack build [--features mock] [--program-name <p>]
+#                          build + publish IDL and TypeScript types
 #   ./stack deploy         deploy to the local validator
 #   ./stack redeploy [prog]  build + deploy — the loop after editing a program
 #   ./stack reset          wipe the ledger and redeploy (after a struct change)
-#   ./stack test [suite]   Anchor tests against the running validator
+#   ./stack test [suite] [--features mock]   Anchor tests, running validator
 #   ./stack cargo <args>   cargo inside the toolchain (Rust unit tests)
+#   ./stack enc <cmd>      Emperor's New Coin commands
 #
 #   ./stack fund <address>   give a browser wallet 100 local SOL
 #   ./stack wallet         show the deploy wallet
@@ -41,6 +43,9 @@ WEB_LOG="$RUN_DIR/web.log"
 # install some unrelated package from the registry if the local one is missing,
 # which is a confusing way to find out your workspace is not installed.
 CHAIN="$DIR/node_modules/.bin/chain"
+# The BadCode CLI, which hosts the ENC-specific commands. Same reasoning as
+# CHAIN: by path, never via npx.
+BADCODE="$DIR/node_modules/.bin/badcode"
 
 # Name the compose project after this repo. The default is a bare "chain", which
 # every checkout that copies this toolchain would also use — so starting one
@@ -50,6 +55,11 @@ export CHAIN_PROJECT="${CHAIN_PROJECT:-badcode-chain}"
 chain() {
   [[ -x "$CHAIN" ]] || { echo "Missing $CHAIN — run: npm install" >&2; exit 1; }
   "$CHAIN" "$@"
+}
+
+badcode() {
+  [[ -x "$BADCODE" ]] || { echo "Missing $BADCODE — run: npm install" >&2; exit 1; }
+  "$BADCODE" "$@"
 }
 
 up_web()  { curl -sf -o /dev/null -m 2 "http://127.0.0.1:${WEB_PORT}"; }
@@ -138,18 +148,22 @@ check() {
   npm test
 }
 
-help() { sed -n '3,27p' "$0" | sed 's/^# \{0,1\}//'; }
+help() { sed -n '3,29p' "$0" | sed 's/^# \{0,1\}//'; }
 
 # ── Dispatch ─────────────────────────────────────────────────────────────────
 cmd="${1:-help}"
 shift || true
 case "$cmd" in
   start|stop|status|logs|web|redeploy|fund|check|help) "$cmd" "$@" ;;
-  build)   if [[ $# -gt 0 ]]; then chain build --program-name "$1"; else chain build; fi ;;
+  # A bare first word is the program name, so `./stack build counter` still
+  # works; anything starting with a dash is passed straight through.
+  build)   if [[ $# -gt 0 && "$1" != -* ]]; then p="$1"; shift; chain build --program-name "$p" "$@"; else chain build "$@"; fi ;;
   deploy)  chain deploy --cluster localnet "$@" ;;
   reset)   chain reset "$@" ;;
-  test)    if [[ $# -gt 0 ]]; then chain test --script "$1"; else chain test; fi ;;
+  # Same shape: `./stack test test-init --features mock`.
+  test)    if [[ $# -gt 0 && "$1" != -* ]]; then t="$1"; shift; chain test --script "$t" "$@"; else chain test "$@"; fi ;;
   cargo)   chain cargo "$@" ;;
-  wallet|doctor|image|shell|up|down|idl|airdrop|enc) chain "$cmd" "$@" ;;
+  enc)     badcode enc "$@" ;;
+  wallet|doctor|image|shell|up|down|idl|airdrop) chain "$cmd" "$@" ;;
   *) echo "unknown command: $cmd" >&2; echo; help; exit 1 ;;
 esac

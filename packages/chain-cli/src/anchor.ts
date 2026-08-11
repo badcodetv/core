@@ -56,12 +56,29 @@ export function restoreKeys(root?: string): string[] {
  * program costs the whole workspace. Naming it turns a 90-second loop into a
  * 25-second one.
  */
-export function build(opts: { programName?: string; root?: string } | string = {}): void {
+export function build(
+  opts: { programName?: string; features?: string[]; root?: string } | string = {},
+): void {
   // Accept a bare root for the original call shape.
-  const { programName, root } = typeof opts === 'string' ? { programName: undefined, root: opts } : opts
+  const { programName, features, root } =
+    typeof opts === 'string' ? { programName: undefined, features: undefined, root: opts } : opts
   restoreKeys(root)
-  runInChain('anchor', ['build', ...(programName ? ['--program-name', programName] : [])], root)
+  runInChain('anchor', ['build', ...buildArgs({ programName, features })], root)
   syncIdl(root)
+}
+
+/**
+ * Split out so the flag logic is testable without running Anchor.
+ *
+ * Cargo features go after `--`, which for `anchor build` really does forward
+ * them (unlike `anchor deploy`, where everything after `--` is silently
+ * dropped — see deployProgram).
+ */
+export function buildArgs(opts: { programName?: string; features?: string[] }): string[] {
+  return [
+    ...(opts.programName ? ['--program-name', opts.programName] : []),
+    ...(opts.features?.length ? ['--', '--features', opts.features.join(',')] : []),
+  ]
 }
 
 export interface DeployOptions {
@@ -153,6 +170,8 @@ export interface TestOptions {
   skipBuild?: boolean
   /** Let Anchor start its own validator instead of reusing the running one. */
   ownValidator?: boolean
+  /** Cargo features for the build this test run performs. */
+  features?: string[]
   root?: string
 }
 
@@ -163,6 +182,7 @@ export function testArgs(opts: TestOptions): string[] {
     ...(opts.ownValidator ? LEGACY_VALIDATOR_ARGS : ['--skip-local-validator']),
     ...(opts.script ? ['--script', opts.script] : []),
     ...(opts.skipBuild ? ['--skip-build'] : []),
+    ...(opts.features?.length ? ['--', '--features', opts.features.join(',')] : []),
   ]
 }
 

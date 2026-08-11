@@ -2,7 +2,7 @@ import { existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, 
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { LEGACY_VALIDATOR_ARGS, exportIdl, generatedDir, idlDir, restoreKeys, syncIdl, testArgs } from './anchor.js'
+import { LEGACY_VALIDATOR_ARGS, buildArgs, exportIdl, generatedDir, idlDir, restoreKeys, syncIdl, testArgs } from './anchor.js'
 
 describe('LEGACY_VALIDATOR_ARGS', () => {
   it('asks for the legacy validator, because Anchor 1.x defaults to surfpool', () => {
@@ -95,5 +95,32 @@ describe('test arguments', () => {
   it('asks for the legacy validator only when Anchor starts its own', () => {
     expect(testArgs({ ownValidator: true })).toEqual(expect.arrayContaining(['--validator', 'legacy']))
     expect(testArgs({ ownValidator: true })).not.toContain('--skip-local-validator')
+  })
+})
+
+describe('cargo features', () => {
+  it('passes features after `--`, which anchor build does forward', () => {
+    // Unlike `anchor deploy`, where everything after `--` is silently dropped
+    // — proven the hard way, see deployProgram.
+    expect(buildArgs({ features: ['mock'] })).toEqual(['--', '--features', 'mock'])
+    expect(buildArgs({ features: ['mock', 'other'] })).toEqual(['--', '--features', 'mock,other'])
+  })
+
+  it('adds no `--` when there are no features', () => {
+    expect(buildArgs({})).toEqual([])
+    expect(buildArgs({ features: [] })).toEqual([])
+    expect(buildArgs({ programName: 'x' })).toEqual(['--program-name', 'x'])
+  })
+
+  it('keeps the program name before the separator', () => {
+    expect(buildArgs({ programName: 'enc', features: ['mock'] })).toEqual([
+      '--program-name', 'enc', '--', '--features', 'mock',
+    ])
+  })
+
+  it('lets a test run ask for the mock build', () => {
+    expect(testArgs({ features: ['mock'] })).toEqual(
+      expect.arrayContaining(['--', '--features', 'mock']),
+    )
   })
 })

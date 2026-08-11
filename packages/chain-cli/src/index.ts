@@ -150,6 +150,13 @@ function deployedPrograms(): Array<{ name: string; address: string }> {
     })
 }
 
+/** `--features a,b` -> ['a','b']. Undefined stays undefined so no `--` is added. */
+export function splitFeatures(list?: string): string[] | undefined {
+  if (list === undefined) return undefined
+  const parts = list.split(',').map((f) => f.trim()).filter((f) => f.length > 0)
+  return parts.length > 0 ? parts : undefined
+}
+
 /**
  * The `chain` command group.
  *
@@ -267,8 +274,9 @@ export function chainCommand(): Command {
     .command('build')
     .description('Build the Anchor workspace and publish its IDL + TypeScript types.')
     .option('--program-name <name>', 'build only this program — much faster in a workspace')
-    .action((opts: { programName?: string }) => {
-      build({ programName: opts.programName })
+    .option('--features <list>', 'comma-separated cargo features, e.g. mock')
+    .action((opts: { programName?: string; features?: string }) => {
+      build({ programName: opts.programName, features: splitFeatures(opts.features) })
       console.log(`Published interfaces to chain/idl:`)
       for (const p of deployedPrograms()) console.log(`  ${p.name.padEnd(20)} ${p.address}`)
     })
@@ -293,10 +301,23 @@ export function chainCommand(): Command {
     .option('--script <name>', 'an Anchor.toml [scripts] entry, to run one suite')
     .option('--skip-build', 'reuse the existing build')
     .option('--own-validator', 'let Anchor start its own validator instead of reusing ours')
-    .action(async (opts: { script?: string; skipBuild?: boolean; ownValidator?: boolean }) => {
-      if (!opts.ownValidator) await up()
-      test({ script: opts.script, skipBuild: opts.skipBuild, ownValidator: opts.ownValidator })
-    })
+    .option('--features <list>', 'comma-separated cargo features for the build it runs')
+    .action(
+      async (opts: {
+        script?: string
+        skipBuild?: boolean
+        ownValidator?: boolean
+        features?: string
+      }) => {
+        if (!opts.ownValidator) await up()
+        test({
+          script: opts.script,
+          skipBuild: opts.skipBuild,
+          ownValidator: opts.ownValidator,
+          features: splitFeatures(opts.features),
+        })
+      },
+    )
 
   chain
     .command('cargo')

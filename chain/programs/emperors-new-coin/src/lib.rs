@@ -18,11 +18,13 @@ use anchor_lang::prelude::*;
 pub mod errors;
 pub mod instructions;
 pub mod math;
+pub mod oracle;
 pub mod state;
 
 pub use errors::EncError;
 pub use instructions::*;
 pub use math::{PriceCurve, SupplyMove};
+pub use oracle::Quote;
 pub use state::*;
 
 declare_id!("5YSzNEzi1Hk9uTCq3SuYDtjYVUUTN9A69AxX2hy58XCT");
@@ -47,5 +49,12 @@ pub mod emperors_new_coin {
         genesis_price: u64,
     ) -> Result<()> {
         instructions::init_asset::handler(ctx, index, name, symbol, uri, genesis_price)
+    }
+
+    /// Set M2 by hand. **Compiled only under `--features mock`** — a default
+    /// build has no such instruction at all.
+    #[cfg(feature = "mock")]
+    pub fn set_mock_m2(ctx: Context<SetMockM2>, m2_value: u64, release_date: i64) -> Result<()> {
+        instructions::set_mock_m2::handler(ctx, m2_value, release_date)
     }
 }

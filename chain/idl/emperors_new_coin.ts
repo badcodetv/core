@@ -432,6 +432,74 @@ export type EmperorsNewCoin = {
           }
         }
       ]
+    },
+    {
+      "name": "setMockM2",
+      "docs": [
+        "Set M2 by hand. **Compiled only under `--features mock`** — a default",
+        "build has no such instruction at all."
+      ],
+      "discriminator": [
+        131,
+        177,
+        226,
+        112,
+        102,
+        248,
+        184,
+        39
+      ],
+      "accounts": [
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "mockOracle",
+          "docs": [
+            "`init_if_needed` so the first call creates it and later calls overwrite",
+            "it — which is exactly the reinitialisation pattern Anchor warns about,",
+            "and exactly what a mock wants. The feature is enabled by `mock` alone",
+            "(see Cargo.toml), so a default build cannot use it anywhere."
+          ],
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  109,
+                  111,
+                  99,
+                  107,
+                  95,
+                  111,
+                  114,
+                  97,
+                  99,
+                  108,
+                  101
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "systemProgram",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "m2Value",
+          "type": "u64"
+        },
+        {
+          "name": "releaseDate",
+          "type": "i64"
+        }
+      ]
     }
   ],
   "accounts": [
@@ -462,6 +530,19 @@ export type EmperorsNewCoin = {
       ]
     },
     {
+      "name": "mockOracle",
+      "discriminator": [
+        208,
+        74,
+        71,
+        99,
+        160,
+        22,
+        158,
+        240
+      ]
+    },
+    {
       "name": "printer",
       "discriminator": [
         111,
@@ -488,71 +569,76 @@ export type EmperorsNewCoin = {
     },
     {
       "code": 6002,
+      "name": "oracleUnavailable",
+      "msg": "This build cannot read the oracle"
+    },
+    {
+      "code": 6003,
       "name": "wrongFeed",
       "msg": "The quote is for a different feed than this program accepts"
     },
     {
-      "code": 6003,
+      "code": 6004,
       "name": "staleRelease",
       "msg": "That M2 release has already been applied"
     },
     {
-      "code": 6004,
+      "code": 6005,
       "name": "changeTooLarge",
       "msg": "M2 changed more in one release than the sanity cap allows"
     },
     {
-      "code": 6005,
+      "code": 6006,
       "name": "mintTooLarge",
       "msg": "That would mint more in one step than the cap allows"
     },
     {
-      "code": 6006,
+      "code": 6007,
       "name": "notUpgradeAuthority",
       "msg": "Only the program's upgrade authority may do that"
     },
     {
-      "code": 6007,
+      "code": 6008,
       "name": "assetOutOfOrder",
       "msg": "Assets must be initialised in order"
     },
     {
-      "code": 6008,
+      "code": 6009,
       "name": "notFullyInitialized",
       "msg": "The ten assets are not all initialised yet"
     },
     {
-      "code": 6009,
+      "code": 6010,
       "name": "invalidAssetIndex",
       "msg": "Asset index out of range"
     },
     {
-      "code": 6010,
+      "code": 6011,
       "name": "assetAlreadyInitialized",
       "msg": "That asset already exists"
     },
     {
-      "code": 6011,
+      "code": 6012,
       "name": "vaultHoldsAsset",
       "msg": "The vault holds this asset, so no rent is owed"
     },
     {
-      "code": 6012,
+      "code": 6013,
       "name": "notForeclosable",
       "msg": "This asset is not foreclosable yet"
     },
     {
-      "code": 6013,
+      "code": 6014,
       "name": "invalidInterpolationWindow",
       "msg": "Invalid price interpolation window"
     },
     {
-      "code": 6014,
+      "code": 6015,
       "name": "alreadyClaimedThisEpoch",
       "msg": "You have already claimed this epoch"
     },
     {
-      "code": 6015,
+      "code": 6016,
       "name": "epochNotSettled",
       "msg": "That epoch is not settled yet"
     }
@@ -826,6 +912,32 @@ export type EmperorsNewCoin = {
           {
             "name": "maxSingleMint",
             "type": "u64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "mockOracle",
+      "docs": [
+        "A number somebody typed, for localnet.",
+        "",
+        "Compiled only under `--features mock`. A default build contains neither this",
+        "account nor the instruction that writes it."
+      ],
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "m2Value",
+            "type": "u64"
+          },
+          {
+            "name": "releaseDate",
+            "type": "i64"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
           }
         ]
       }
