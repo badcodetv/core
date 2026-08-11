@@ -175,6 +175,19 @@ between runs: **write tests that assert on movement, not on absolute values.**
 **`anchor test -- --grep x` does not filter tests.** Arguments after `--` go to
 `cargo build-sbf`. Use `--script <name>` against an `[scripts]` entry.
 
+**Anchor emits two IDLs that disagree, and only one is safe to decode with.**
+`target/idl/x.json` uses the Rust field names (`updated_at`); `target/types/x.ts`
+is its camelCase view (`updatedAt`). `Program` converts internally, so decoding
+through a Program matches the generated types. A `BorshAccountsCoder` built from
+the raw JSON does **not** convert — TypeScript says `updatedAt`, the object has
+`updated_at`, the compiler is happy and every field reads `undefined` at runtime.
+Use `useProgramReader`, which needs no wallet and exists for exactly this.
+
+**`Buffer` does not exist in a browser and Vite does not polyfill it.** Relying on
+the global throws "Buffer is not defined" on the first PDA derivation, i.e. the
+instant a wallet connects. `chain-kit` imports it explicitly so a consuming app
+needs no polyfill setup.
+
 **Program keypairs live in `chain/keys/`, not in `target/`.** Anchor generates
 them into the build output, so cleaning the build silently changes every
 program's address and breaks its own `declare_id!`. `chain build` restores them

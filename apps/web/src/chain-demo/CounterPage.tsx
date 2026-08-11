@@ -1,4 +1,4 @@
-import { BorshAccountsCoder, type Idl, type IdlAccounts } from '@coral-xyz/anchor'
+import type { BorshAccountsCoder, IdlAccounts } from '@coral-xyz/anchor'
 import { deriveAddress } from '@badcode/chain-kit'
 import type { Cluster } from '@badcode/chain-kit'
 import {
@@ -7,6 +7,7 @@ import {
   SolanaProvider,
   useAccount,
   useProgram,
+  useProgramReader,
   useSendTransaction,
   useWalletAddress,
 } from '@badcode/chain-react'
@@ -45,14 +46,12 @@ const PROGRAM_ID = new PublicKey(IDL.address)
  */
 type CounterAccount = IdlAccounts<CounterIdl>['counter']
 
-// Module scope: useAccount requires a stable decode function, and decodeAny
-// matches on the account discriminator, so renaming the Rust struct cannot
-// silently break the read path.
-const coder = new BorshAccountsCoder(IDL as Idl)
-const decodeCounter = (data: Buffer): CounterAccount => coder.decodeAny(data)
-
 function Counter() {
   const address = useWalletAddress()
+  // Two handles on purpose: `reader` needs no wallet and does every read;
+  // `program` is null until a wallet connects and exists only to build the
+  // instructions it will sign.
+  const reader = useProgramReader<CounterIdl>(IDL, PROGRAM_ID)
   const program = useProgram<CounterIdl>(IDL, PROGRAM_ID)
   const { send, pending, error } = useSendTransaction()
 
@@ -62,7 +61,16 @@ function Counter() {
     [authority],
   )
 
-  const { data, loading, missing, error: readError } = useAccount(counterPda, decodeCounter)
+  // decodeAny matches on the account discriminator, so renaming the Rust struct
+  // cannot silently break this. Decoding through the Program (not a bare
+  // BorshAccountsCoder) is what makes the field names match the generated types
+  // — see useProgramReader.
+  const { data, loading, missing, error: readError } = useAccount(
+    counterPda,
+    // The cast is only to reach decodeAny, which the generic AccountsCoder
+    // interface does not declare; the instance is always the borsh one.
+    (raw): CounterAccount => (reader.coder.accounts as BorshAccountsCoder).decodeAny(raw),
+  )
 
   if (!address) {
     return (

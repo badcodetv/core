@@ -1,3 +1,10 @@
+// Imported, never assumed. `Buffer` is a Node global that does NOT exist in a
+// browser, and Vite does not polyfill it — so relying on the global here throws
+// "Buffer is not defined" the moment a wallet connects and the first PDA is
+// derived. Importing it explicitly makes the bundler supply the shim in the
+// browser while Node still uses its built-in, and means a project that copies
+// this package needs no polyfill setup of its own.
+import { Buffer } from 'buffer'
 import { PublicKey } from '@solana/web3.js'
 
 /** Anything usable as a PDA seed. */
