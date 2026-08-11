@@ -58,6 +58,19 @@ pub mod emperors_new_coin {
         instructions::sync_m2::handler(ctx)
     }
 
+    /// Push accrued rent from the holder to the vault. **Anyone may call
+    /// this** — it works because the holder made the vault a delegate over
+    /// their ENC when they bought the asset.
+    pub fn settle_rent(ctx: Context<SettleRent>, index: u8) -> Result<()> {
+        instructions::settle_rent::handler(ctx, index)
+    }
+
+    /// Return an asset to the vault when its debt has outgrown the holder and
+    /// grace has elapsed. **Anyone may call this**, and gets paid for it.
+    pub fn foreclose(ctx: Context<Foreclose>, index: u8) -> Result<()> {
+        instructions::foreclose::handler(ctx, index)
+    }
+
     /// Set M2 by hand. **Compiled only under `--features mock`** — a default
     /// build has no such instruction at all.
     #[cfg(feature = "mock")]

@@ -19,12 +19,15 @@ idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
 # this crate never defines. Not used directly.
 anchor-debug = []
 # Compiles the mock oracle instruction. Localnet only — a default build must not
-# contain any way to set M2 by hand. It also turns on Anchor's init-if-needed,
-# which the mock uses to overwrite itself; scoping it to this feature means a
-# default build cannot use that pattern anywhere.
-mock = ["anchor-lang/init-if-needed"]
+# contain any way to set M2 by hand.
+mock = []
 
 [dependencies]
-anchor-lang = "1.1.2"
+# init-if-needed is needed by `foreclose`, which creates the caller's ENC
+# account so a first-time forecloser still collects the bounty. Anchor warns
+# about reinitialisation attacks on this: the warning is about accounts whose
+# state matters, and every use here is an associated-token account, which is
+# canonical per (owner, mint) and idempotent to create.
+anchor-lang = { version = "1.1.2", features = ["init-if-needed"] }
 anchor-spl = "1.1.2"
 spl-type-length-value = "0.9"

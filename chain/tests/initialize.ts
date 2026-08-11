@@ -119,6 +119,8 @@ describe('initialize + init_asset', () => {
     const allowed = [
       'initialize', 'init_asset', 'initAsset',
       'sync_m2', 'syncM2',
+      'settle_rent', 'settleRent',
+      'foreclose',
       'set_mock_m2', 'setMockM2', // mock builds only; absent from a real one
     ]
     const unexpected = h.program.idl.instructions

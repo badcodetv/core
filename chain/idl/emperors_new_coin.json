@@ -8,6 +8,354 @@
   },
   "instructions": [
     {
+      "name": "foreclose",
+      "docs": [
+        "Return an asset to the vault when its debt has outgrown the holder and",
+        "grace has elapsed. **Anyone may call this**, and gets paid for it."
+      ],
+      "discriminator": [
+        102,
+        30,
+        99,
+        58,
+        76,
+        76,
+        152,
+        145
+      ],
+      "accounts": [
+        {
+          "name": "caller",
+          "docs": [
+            "Anyone. They pay the fees and collect the bounty."
+          ],
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "asset",
+          "writable": true
+        },
+        {
+          "name": "vault",
+          "docs": [
+            "vault's token accounts."
+          ],
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  118,
+                  97,
+                  117,
+                  108,
+                  116
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "mint"
+        },
+        {
+          "name": "asset_mint",
+          "writable": true
+        },
+        {
+          "name": "holder_nft_account",
+          "writable": true
+        },
+        {
+          "name": "vault_nft_account",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "vault"
+              },
+              {
+                "kind": "account",
+                "path": "token_2022_program"
+              },
+              {
+                "kind": "account",
+                "path": "asset_mint"
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            }
+          }
+        },
+        {
+          "name": "holder_token_account",
+          "docs": [
+            "The holder's ENC account — read to decide whether they could have paid."
+          ]
+        },
+        {
+          "name": "vault_token_account",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "vault"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            }
+          }
+        },
+        {
+          "name": "caller_token_account",
+          "docs": [
+            "Created if absent so a first-time forecloser still gets paid."
+          ],
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "caller"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            }
+          }
+        },
+        {
+          "name": "token_program",
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+        },
+        {
+          "name": "token_2022_program",
+          "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+        },
+        {
+          "name": "associated_token_program",
+          "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "index",
+          "type": "u8"
+        }
+      ]
+    },
+    {
       "name": "init_asset",
       "docs": [
         "Create one parody asset and its NFT. Called ten times, in order."
@@ -453,9 +801,9 @@
           "name": "mock_oracle",
           "docs": [
             "`init_if_needed` so the first call creates it and later calls overwrite",
-            "it — which is exactly the reinitialisation pattern Anchor warns about,",
-            "and exactly what a mock wants. The feature is enabled by `mock` alone",
-            "(see Cargo.toml), so a default build cannot use it anywhere."
+            "it — exactly the reinitialisation pattern Anchor warns about, and",
+            "exactly what a mock wants. The whole instruction is compiled out of a",
+            "default build, so nothing here can reach production."
           ],
           "writable": true,
           "pda": {
@@ -492,6 +840,179 @@
         {
           "name": "release_date",
           "type": "i64"
+        }
+      ]
+    },
+    {
+      "name": "settle_rent",
+      "docs": [
+        "Push accrued rent from the holder to the vault. **Anyone may call",
+        "this** — it works because the holder made the vault a delegate over",
+        "their ENC when they bought the asset."
+      ],
+      "discriminator": [
+        77,
+        172,
+        130,
+        130,
+        56,
+        74,
+        236,
+        236
+      ],
+      "accounts": [
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "asset",
+          "writable": true
+        },
+        {
+          "name": "vault",
+          "docs": [
+            "token account."
+          ],
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  118,
+                  97,
+                  117,
+                  108,
+                  116
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "mint"
+        },
+        {
+          "name": "holder_token_account",
+          "docs": [
+            "The holder's ENC account. Checked against `asset.holder` in the handler",
+            "rather than by constraint, so the error names the actual problem."
+          ],
+          "writable": true
+        },
+        {
+          "name": "vault_token_account",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "vault"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            }
+          }
+        },
+        {
+          "name": "token_program",
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+        }
+      ],
+      "args": [
+        {
+          "name": "index",
+          "type": "u8"
         }
       ]
     },
@@ -736,6 +1257,32 @@
   ],
   "events": [
     {
+      "name": "Foreclosed",
+      "discriminator": [
+        93,
+        27,
+        188,
+        45,
+        33,
+        68,
+        88,
+        55
+      ]
+    },
+    {
+      "name": "RentSettled",
+      "discriminator": [
+        214,
+        23,
+        125,
+        229,
+        82,
+        74,
+        222,
+        219
+      ]
+    },
+    {
       "name": "Synced",
       "discriminator": [
         114,
@@ -817,21 +1364,26 @@
     },
     {
       "code": 6013,
+      "name": "WrongHolderAccount",
+      "msg": "That token account does not belong to the holder"
+    },
+    {
+      "code": 6014,
       "name": "NotForeclosable",
       "msg": "This asset is not foreclosable yet"
     },
     {
-      "code": 6014,
+      "code": 6015,
       "name": "InvalidInterpolationWindow",
       "msg": "Invalid price interpolation window"
     },
     {
-      "code": 6015,
+      "code": 6016,
       "name": "AlreadyClaimedThisEpoch",
       "msg": "You have already claimed this epoch"
     },
     {
-      "code": 6016,
+      "code": 6017,
       "name": "EpochNotSettled",
       "msg": "That epoch is not settled yet"
     }
@@ -1039,6 +1591,37 @@
       }
     },
     {
+      "name": "Foreclosed",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "index",
+            "type": "u8"
+          },
+          {
+            "name": "former_holder",
+            "type": "pubkey"
+          },
+          {
+            "name": "caller",
+            "type": "pubkey"
+          },
+          {
+            "name": "debt",
+            "docs": [
+              "The debt written off when the asset went back to the vault."
+            ],
+            "type": "u64"
+          },
+          {
+            "name": "bounty",
+            "type": "u64"
+          }
+        ]
+      }
+    },
+    {
       "name": "InitializeParams",
       "docs": [
         "The economic parameters, chosen once and then unchangeable.",
@@ -1181,6 +1764,36 @@
           {
             "name": "bump",
             "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RentSettled",
+      "docs": [
+        "Emitted whenever rent actually moves, so the site can show the drip."
+      ],
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "index",
+            "type": "u8"
+          },
+          {
+            "name": "holder",
+            "type": "pubkey"
+          },
+          {
+            "name": "paid",
+            "type": "u64"
+          },
+          {
+            "name": "outstanding",
+            "docs": [
+              "What remains owed because the holder could not cover it."
+            ],
+            "type": "u64"
           }
         ]
       }

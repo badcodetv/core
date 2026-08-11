@@ -84,6 +84,15 @@ pub enum EncError {
     #[msg("The vault holds this asset, so no rent is owed")]
     VaultHoldsAsset,
 
+    /// A token account was supplied that does not belong to the asset's holder,
+    /// or is for the wrong mint.
+    ///
+    /// Checked explicitly rather than by silent mismatch: rent is pulled from
+    /// whatever account is passed, so getting this wrong would charge the
+    /// wrong person.
+    #[msg("That token account does not belong to the holder")]
+    WrongHolderAccount,
+
     /// Foreclosure attempted while the holder could still pay, or before grace
     /// had elapsed.
     #[msg("This asset is not foreclosable yet")]

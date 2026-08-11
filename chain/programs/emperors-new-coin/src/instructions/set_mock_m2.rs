@@ -28,9 +28,9 @@ pub struct SetMockM2<'info> {
     pub payer: Signer<'info>,
 
     /// `init_if_needed` so the first call creates it and later calls overwrite
-    /// it — which is exactly the reinitialisation pattern Anchor warns about,
-    /// and exactly what a mock wants. The feature is enabled by `mock` alone
-    /// (see Cargo.toml), so a default build cannot use it anywhere.
+    /// it — exactly the reinitialisation pattern Anchor warns about, and
+    /// exactly what a mock wants. The whole instruction is compiled out of a
+    /// default build, so nothing here can reach production.
     #[account(
         init_if_needed,
         payer = payer,

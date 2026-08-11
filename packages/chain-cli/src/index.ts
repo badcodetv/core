@@ -44,10 +44,14 @@ const LOW_SOL = 10
  * keeps `redeploy` working after a change that makes the binary bigger, which is
  * most changes.
  *
- * Localnet only. It costs rent proportional to the size (~3.5 SOL here), which
- * is free where SOL is airdropped and rude where it is not.
+ * Localnet only. It costs rent proportional to the size (~7 SOL here), which is
+ * free where SOL is airdropped and rude where it is not.
+ *
+ * Raised from 500KB once: a program that pulls in anchor-spl and Token-2022
+ * lands near 530KB, and a feature build is larger again — so the first number
+ * that looked generous was overrun inside a day.
  */
-const LOCALNET_MAX_LEN = 500_000
+const LOCALNET_MAX_LEN = 1_000_000
 
 function reportRunner(): void {
   const runner = chosenRunner()
