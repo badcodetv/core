@@ -7,7 +7,7 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: in progress — **11 of 27 tickets done. Next: T7.**
+Status: in progress — **12 of 27 tickets done. Next: T8.**
 Date: 2026-08-06
 Relates: `docs/stories/magic-money-tree/emperors-new-coin.md` (canon — the coin
 is a cryptocurrency folded into the Magic Money Tree story, cross-promoted with
@@ -24,8 +24,8 @@ this table is the map.
 | ✅ | T1–T6 · toolchain, Anchor workspace, chain-kit / chain-react / chain-cli, `/coins/:slug` | toolchain |
 | ✅ | T24–T27 · Docker toolchain, counter harness, copy-out proof, `./stack` | toolchain |
 | ✅ | T16 · Switchboard feed authored, immutability **proven live** | oracle |
-| ⬜ | **T7 · program state + `math.rs` + placeholder genesis params** ← **you are here** | program |
-| ⬜ | T8 · `initialize` + `init_asset` ×10 | program |
+| ✅ | T7 · program state, `math.rs`, placeholder genesis params | program |
+| ⬜ | **T8 · `initialize` + `init_asset` ×10** ← **you are here** | program |
 | ⬜ | T9 · oracle trait + MockOracle behind a Cargo feature | program |
 | ⬜ | T10 · `sync_m2` — supply targeting, the core | program |
 | ⬜ | T11 · rent accrual, `settle_rent`, `foreclose` | program |
@@ -797,7 +797,7 @@ upgrade authority is burned at T22.
 - [x] done
 - Notes:
 
-### T7: Program state + math module + genesis params   [Status: pending | Model: opus]
+### T7: Program state + math module + genesis params   [Status: DONE 2026-08-11 | Model: opus]
 - **Scope:** Define `Config`, `Printer`, `Asset`, `FaucetEpoch`, `Player` with
   the byte-exact seeds from Interfaces. Implement `math.rs`: supply targeting
   (`u128` intermediate, checked narrowing), price interpolation, rent accrual,
@@ -813,8 +813,18 @@ upgrade authority is burned at T22.
 - **TDD:** yes
 - **Validation:** `./stack cargo test -p emperors-new-coin --lib`.
 - **Depends on:** T3, T2
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 42 unit tests green. The Rust seed test asserts the same three base58
+  literals as `pda.test.ts`, so the two languages fail together or not at all.
+  Rent is the **exact integral** of the interpolated price rather than a sample
+  of either endpoint — tested by splitting an interval four ways and getting the
+  same total, which is what stops rent depending on when someone settles.
+  Two small design calls made here, both cheap to revisit: `Asset.holder` is a
+  plain `Pubkey` using the vault as the "unowned" sentinel (fixed-size layout,
+  both cases cost the same to read) rather than an `Option`; and `Player` carries
+  a single `last_registered_epoch` that does two jobs — `== current` rejects a
+  second claim, `== current − 1` grants eligibility — so the two facts cannot
+  disagree with each other.
 
 ### T8: `initialize` + `init_asset`   [Status: pending | Model: opus]
 - **Scope:** `initialize` creates the classic-SPL ENC mint (6 decimals, mint

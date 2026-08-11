@@ -16,10 +16,12 @@
 use anchor_lang::prelude::*;
 
 pub mod errors;
+pub mod instructions;
 pub mod math;
 pub mod state;
 
 pub use errors::EncError;
+pub use instructions::*;
 pub use math::{PriceCurve, SupplyMove};
 pub use state::*;
 
@@ -29,13 +31,21 @@ declare_id!("5YSzNEzi1Hk9uTCq3SuYDtjYVUUTN9A69AxX2hy58XCT");
 pub mod emperors_new_coin {
     use super::*;
 
-    /// Proves the build/deploy/test loop works end to end. Removed once
-    /// `initialize` lands.
-    pub fn ping(_ctx: Context<Ping>) -> Result<()> {
-        msg!("the cloth was always invisible");
-        Ok(())
+    /// Create the mint, the vault, the rules and the printer. Once, ever, and
+    /// only by the program's upgrade authority.
+    pub fn initialize(ctx: Context<Initialize>, params: InitializeParams) -> Result<()> {
+        instructions::initialize::handler(ctx, params)
+    }
+
+    /// Create one parody asset and its NFT. Called ten times, in order.
+    pub fn init_asset(
+        ctx: Context<InitAsset>,
+        index: u8,
+        name: String,
+        symbol: String,
+        uri: String,
+        genesis_price: u64,
+    ) -> Result<()> {
+        instructions::init_asset::handler(ctx, index, name, symbol, uri, genesis_price)
     }
 }
-
-#[derive(Accounts)]
-pub struct Ping {}

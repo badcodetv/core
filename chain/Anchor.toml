@@ -20,8 +20,8 @@ url = "https://api.apr.dev"
 cluster = "Localnet"
 wallet = "~/.config/solana/id.json"
 
-# Prefer `badcode chain test`, which runs these against the validator started by
-# `chain up`. Two things bite if you call anchor directly:
+# Prefer `./stack test [suite]`, which runs these against the validator started
+# by `./stack start`. Two things bite if you call anchor directly:
 #
 #   --skip-local-validator  or Anchor starts a SECOND validator on port 8899 and
 #                           the run dies on the port collision.
@@ -38,3 +38,4 @@ wallet = "~/.config/solana/id.json"
 test = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
 test-smoke = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/smoke.ts"
 test-counter = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/counter.ts"
+test-init = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/initialize.ts"

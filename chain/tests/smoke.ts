@@ -2,8 +2,12 @@ import * as anchor from '@coral-xyz/anchor'
 import { expect } from 'chai'
 
 /**
- * Proves the whole loop works: the program builds, deploys to a local validator,
- * and answers a transaction. If this fails, nothing downstream is worth debugging.
+ * The program builds, deploys, and is executable at the id it declares.
+ *
+ * Deliberately the cheapest possible check. It used to send a `ping`
+ * transaction too, but `ping` was scaffolding and died when `initialize`
+ * arrived — behaviour lives in `initialize.ts` now. If *this* fails, nothing
+ * downstream is worth debugging.
  */
 describe('emperors-new-coin: scaffold', () => {
   anchor.setProvider(anchor.AnchorProvider.env())
@@ -15,24 +19,7 @@ describe('emperors-new-coin: scaffold', () => {
     expect(info!.executable).to.be.true
   })
 
-  it('answers a transaction', async () => {
-    const sig = await program.methods.ping().rpc()
-    expect(sig).to.be.a('string')
-  })
-
-  it('records the message on-chain, so logs are readable from tests', async () => {
-    // Confirm before reading. Passing a commitment straight to rpc() races the
-    // validator's blockhash cache and fails simulation with "Blockhash not found".
-    const { connection } = program.provider
-    const sig = await program.methods.ping().rpc()
-    const bh = await connection.getLatestBlockhash()
-    await connection.confirmTransaction({ signature: sig, ...bh }, 'confirmed')
-
-    const tx = await connection.getTransaction(sig, {
-      commitment: 'confirmed',
-      maxSupportedTransactionVersion: 0,
-    })
-    const logs = tx?.meta?.logMessages?.join('\n') ?? ''
-    expect(logs).to.contain('the cloth was always invisible')
+  it('declares the id its IDL was generated with', () => {
+    expect(program.idl.address).to.equal(program.programId.toBase58())
   })
 })

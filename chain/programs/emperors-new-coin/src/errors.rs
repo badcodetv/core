@@ -45,6 +45,18 @@ pub enum EncError {
     MintTooLarge,
 
     // ── Lifecycle ───────────────────────────────────────────────────────────
+    /// Bootstrap was attempted by someone other than the program's upgrade
+    /// authority.
+    ///
+    /// Gating on the loader's own record rather than a hardcoded key means no
+    /// new key exists, and the gate dies with the authority at T22.
+    #[msg("Only the program's upgrade authority may do that")]
+    NotUpgradeAuthority,
+
+    /// Assets must be created in order, 0 through 9.
+    #[msg("Assets must be initialised in order")]
+    AssetOutOfOrder,
+
     /// An instruction ran before all ten assets existed.
     #[msg("The ten assets are not all initialised yet")]
     NotFullyInitialized,

@@ -20,6 +20,26 @@ pub const ASSET_SEED: &[u8] = b"asset";
 pub const EPOCH_SEED: &[u8] = b"epoch";
 pub const PLAYER_SEED: &[u8] = b"player";
 
+/// The ENC mint itself is a PDA, so a client can find the coin without first
+/// reading `Config` — and so no deployer keypair ever holds the mint.
+pub const MINT_SEED: &[u8] = b"mint";
+
+/// One NFT mint per asset. Also a PDA, so the program can sign for it.
+pub const ASSET_MINT_SEED: &[u8] = b"asset_mint";
+
+/// Six. Nine would overflow: ~2.21e10 whole ENC at 9 decimals is 2.21e19 base
+/// units, past `u64::MAX` (1.845e19). Six leaves ~830× headroom. Fixed by the
+/// arithmetic, not a parameter anyone gets to choose.
+pub const ENC_DECIMALS: u8 = 6;
+
+/// M2SL at the time this program was written, in billions of USD at 6dp.
+///
+/// Only ever used to bootstrap the supply at `initialize`, so the coin exists
+/// before the first oracle read. The first real `sync_m2` retargets against the
+/// published figure and corrects whatever this was — level-targeting means a
+/// stale genesis costs one mint or burn, not a permanent error.
+pub const GENESIS_M2_VALUE: u64 = 22_176_100_000;
+
 /// How many parody assets exist. Fixed forever: scarcity of the flags is the
 /// point, and `sync_m2` refuses to run until all ten are real.
 pub const ASSET_COUNT: u8 = 10;

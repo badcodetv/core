@@ -2,9 +2,13 @@
   "compilerOptions": {
     "types": ["mocha", "chai", "node"],
     "typeRoots": ["../node_modules/@types"],
-    "lib": ["es2019"],
-    "module": "commonjs",
-    "target": "es2019",
+    // Node runs these as ES modules (mocha detects the module syntax and says
+    // so), so the compiler has to agree — under "commonjs"/es2019 the checker
+    // rejects `import.meta` and BigInt literals that work fine at runtime.
+    "lib": ["es2022"],
+    "module": "es2022",
+    "moduleResolution": "node",
+    "target": "es2022",
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
