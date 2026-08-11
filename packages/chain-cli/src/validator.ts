@@ -1,11 +1,13 @@
 import { existsSync, readFileSync, rmSync, unlinkSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { chainDir } from './paths.js'
-import { capture, runDetached, sleep } from './exec.js'
+import { runDetached, sleep } from './exec.js'
+import { chosenRunner, composeDown, composeUpValidator } from './docker.js'
+import { captureInChain } from './runner.js'
 
 const RPC_URL = 'http://127.0.0.1:8899'
 
-const ledgerDir = (root?: string): string => join(chainDir(root), 'test-ledger')
+export const ledgerDir = (root?: string): string => join(chainDir(root), 'test-ledger')
 const pidFile = (root?: string): string => join(ledgerDir(root), 'validator.pid')
 
 /** Is a local validator answering RPC? */
@@ -42,6 +44,15 @@ function alive(pid: number): boolean {
   }
 }
 
+async function waitForRpc(timeoutSeconds: number, isDead?: () => boolean): Promise<boolean> {
+  for (let i = 0; i < timeoutSeconds * 2; i++) {
+    await sleep(500)
+    if (await isUp()) return true
+    if (isDead?.()) throw new Error('Validator exited during startup. Try: chain up --reset')
+  }
+  return false
+}
+
 export interface UpOptions {
   /** Wipe the ledger first, so tests start from a known-empty chain. */
   reset?: boolean
@@ -51,18 +62,32 @@ export interface UpOptions {
 }
 
 /**
- * Start solana-test-validator in the background and wait until it answers.
+ * Start the local validator and wait until it answers.
  *
- * The ledger lives under chain/test-ledger (gitignored) rather than the CWD,
- * which is where the validator would otherwise scatter it.
+ * Under Docker the validator is a compose service with 8899/8900 published to
+ * the host, so a browser wallet and the container hit the same chain. On the
+ * host it is a detached solana-test-validator. Either way the ledger lives in
+ * chain/test-ledger (gitignored), so `--reset` means the same thing in both.
  */
 export async function up(opts: UpOptions = {}): Promise<{ started: boolean; pid: number | null }> {
-  const { reset = false, timeoutSeconds = 45, root } = opts
+  const { reset = false, timeoutSeconds = 90, root } = opts
+  const docker = chosenRunner(process.env, root) === 'docker'
 
-  if (await isUp()) return { started: false, pid: readPid(root) }
+  if (await isUp()) {
+    if (!reset) return { started: false, pid: readPid(root) }
+    await down(root)
+  }
 
   const ledger = ledgerDir(root)
   if (reset && existsSync(ledger)) rmSync(ledger, { recursive: true, force: true })
+
+  if (docker) {
+    composeUpValidator(root)
+    if (!(await waitForRpc(timeoutSeconds))) {
+      throw new Error(`Validator did not answer RPC within ${timeoutSeconds}s. Try: docker compose -f chain/docker-compose.yml logs validator`)
+    }
+    return { started: true, pid: null }
+  }
 
   const pid = runDetached('solana-test-validator', [
     '--ledger', ledger,
@@ -71,19 +96,22 @@ export async function up(opts: UpOptions = {}): Promise<{ started: boolean; pid:
     ...(reset ? ['--reset'] : []),
   ], { cwd: chainDir(root) })
 
-  for (let i = 0; i < timeoutSeconds * 2; i++) {
-    await sleep(500)
-    if (await isUp()) {
-      writeFileSync(pidFile(root), String(pid))
-      return { started: true, pid }
-    }
-    if (!alive(pid)) throw new Error('Validator exited during startup. Try: chain up --reset')
+  if (await waitForRpc(timeoutSeconds, () => !alive(pid))) {
+    writeFileSync(pidFile(root), String(pid))
+    return { started: true, pid }
   }
   throw new Error(`Validator did not answer RPC within ${timeoutSeconds}s`)
 }
 
-/** Stop the validator we started. */
+/** Stop the validator. */
 export async function down(root?: string): Promise<boolean> {
+  const wasUp = await isUp()
+
+  if (chosenRunner(process.env, root) === 'docker') {
+    composeDown(root)
+    return wasUp
+  }
+
   const pid = readPid(root)
   if (pid !== null && alive(pid)) {
     process.kill(pid, 'SIGTERM')
@@ -96,7 +124,7 @@ export async function down(root?: string): Promise<boolean> {
 }
 
 /** Airdrop SOL on a non-mainnet cluster. */
-export function airdrop(address: string, sol: number, url: string): void {
-  const out = capture('solana', ['airdrop', String(sol), address, '--url', url])
+export function airdrop(address: string, sol: number, url: string, root?: string): void {
+  const out = captureInChain('solana', ['airdrop', String(sol), address, '--url', url], root)
   if (out === null) throw new Error(`Airdrop failed. Is the cluster at ${url} reachable?`)
 }

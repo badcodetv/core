@@ -7,7 +7,7 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: in progress — T1-T6 + T16 done (2026-08-10)
+Status: in progress — T1-T6, T16 done; T24-T26 (Docker + counter harness) done 2026-08-11
 Date: 2026-08-06
 Relates: `docs/stories/magic-money-tree/emperors-new-coin.md` (canon — the coin
 is a cryptocurrency folded into the Magic Money Tree story, cross-promoted with
@@ -1155,6 +1155,75 @@ upgrade authority is burned at T22.
 - Notes:
 
 ---
+
+### T24: Containerise the toolchain   [Status: DONE 2026-08-11 | Model: opus]
+
+Kai's call: no hard dependency on host binaries. `chain/docker/Dockerfile` +
+`chain/docker-compose.yml` build a pinned image (asserting all four versions at
+build time) and run a two-service stack: a long-lived `validator` publishing
+8899/8900 to the host, and a throwaway `toolchain` sharing its network namespace
+so `127.0.0.1:8899` means the same thing inside and out.
+
+`packages/chain-cli/src/runner.ts` is the whole seam — `runInChain` dispatches to
+`docker compose run` or the host, and `CHAIN_RUNNER` forces either. Nothing else
+in the CLI branches on it. `docker/.env` is regenerated from versions.json before
+every docker command, so the image cannot drift from the pins unseen.
+
+Findings, all now pinned or asserted:
+- **Docker's seccomp profile blocks io_uring, which Agave 3.x asserts on.** A
+  fresh ledger dies with `assertion failed: io_uring_supported()` and a trace
+  that never mentions Docker. `seccomp:unconfined` on the validator service only.
+- Ubuntu 24.04 (glibc 2.39) means Anchor's **prebuilt** binary works — no source
+  build, which is why the image takes ~10 minutes once rather than ~40.
+- `anchor test` starts a second validator on the running one's port. `chain test`
+  now passes `--skip-local-validator`; tests must assert on movement, not values.
+- Switching runners changes the deploy wallet, so existing programs refuse to
+  upgrade ("Upgrade authority mismatch"). `chain reset` is the fix.
+- `chain reset` wiped the ledger *and* the wallet's balance, so the next deploy
+  failed with "no record of a prior credit". Reset now refunds and redeploys.
+
+### T25: The counter program — a harness for the whole loop   [Status: DONE 2026-08-11 | Model: opus]
+
+`chain/programs/counter` (PDA per wallet, `initialize`/`increment`/`reset`),
+`chain/tests/counter.ts` (5 tests), and `apps/web/src/chain-demo/CounterPage.tsx`
+at `/dev/counter`. Deliberately not a coin: it is the only thing that can prove a
+copy-out landed in a project that has nothing to do with tokens.
+
+The type pipeline is the point. `chain build` publishes IDL **and** generated
+TypeScript into committed `chain/idl/`; the app imports both through the new
+`@chain/*` alias (declared in tsconfig.base.json *and* vite.config.ts, because
+Vite does not read tsconfig paths). Since the IDL carries `address`, **nothing
+hardcodes a program address**.
+
+Verified live, not asserted:
+- `STEP` 1 → 2, rebuild, redeploy → the on-chain delta changed 1 → 2, same
+  address, state preserved.
+- Added `updated_at: i64` → it appeared in the generated types as `updatedAt`,
+  carrying the Rust doc comments; the app now reads it.
+- **Deleted the field → `tsc` failed** at the exact line. That is the workflow
+  Kai asked for: a backend struct change fails the frontend build.
+- A pre-existing account then fails to decode with a raw `ERR_OUT_OF_RANGE`; the
+  page catches it and names `chain reset` as the fix, since the error does not.
+- Browser (real Chrome, CDP) at `/dev/counter`: renders, 0 console errors,
+  cross-origin RPC to the container reaches the validator, program confirmed
+  executable.
+- **Not verified**: the Phantom connect/sign click path. It needs a real
+  extension, which cannot be driven headlessly.
+
+Program keypairs moved to committed `chain/keys/` (dev identities only), because
+Anchor generates them into `target/` — so cleaning the build silently changed
+every program's address and broke its own `declare_id!`.
+
+### T26: Prove the copy-out   [Status: DONE 2026-08-11 | Model: opus]
+
+The portable set was copied into an empty directory with a minimal root
+`package.json`, and the loop run there: doctor, dev (build + deploy), test.
+Counter's 5 tests passed under **both** runners. `chain/README.md` documents the
+procedure and the two things that bit.
+
+It found a real bug: `packages/chain-cli/src/bin.ts` mounted the command group on
+a program of the same name, so a project without a host CLI had to type `chain
+chain doctor`. Fixed via `standaloneProgram()`, with a test.
 
 ## Discovered Issues Log
 

@@ -1,7 +1,7 @@
 import { copyFileSync, existsSync, mkdirSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
 import { chainDir } from './paths.js'
-import { run } from './exec.js'
+import { runInChain } from './runner.js'
 
 /**
  * Anchor 1.x defaults its local validator to surfpool, which we do not install.
@@ -10,8 +10,58 @@ import { run } from './exec.js'
  */
 export const LEGACY_VALIDATOR_ARGS = ['--validator', 'legacy'] as const
 
-export function build(root?: string): void {
-  run('anchor', ['build'], { cwd: chainDir(root) })
+export const idlDir = (root?: string): string => join(chainDir(root), 'target', 'idl')
+export const typesDir = (root?: string): string => join(chainDir(root), 'target', 'types')
+
+/** Committed home for generated interfaces. See syncIdl. */
+export const generatedDir = (root?: string): string => join(chainDir(root), 'idl')
+
+/** Where Anchor expects program keypairs, and where they get wiped from. */
+export const deployDir = (root?: string): string => join(chainDir(root), 'target', 'deploy')
+
+/** Program keypairs that survive `rm -rf target`. See chain/keys/README.md. */
+export const keysDir = (root?: string): string => join(chainDir(root), 'keys')
+
+/**
+ * Put saved program keypairs back where Anchor looks for them.
+ *
+ * Anchor only reads keypairs from target/deploy, which is a build artifact — so
+ * cleaning the build silently changes every program's address and breaks the
+ * `declare_id!` in its source. Keeping the canonical copy in chain/keys and
+ * restoring it before each build makes addresses stable across cleans, machines
+ * and containers.
+ */
+export function restoreKeys(root?: string): string[] {
+  const src = keysDir(root)
+  if (!existsSync(src)) return []
+  const dest = deployDir(root)
+  mkdirSync(dest, { recursive: true })
+  const restored: string[] = []
+  for (const f of readdirSync(src).filter((f) => f.endsWith('-keypair.json'))) {
+    const target = join(dest, f)
+    // Never clobber: if a build already produced one, that is the live identity.
+    if (!existsSync(target)) {
+      copyFileSync(join(src, f), target)
+      restored.push(f)
+    }
+  }
+  return restored
+}
+
+/**
+ * Build the workspace, or one program.
+ *
+ * Narrowing to one program matters more than it looks: Anchor rebuilds every
+ * program *and* re-runs IDL generation for each, so a one-line edit to one
+ * program costs the whole workspace. Naming it turns a 90-second loop into a
+ * 25-second one.
+ */
+export function build(opts: { programName?: string; root?: string } | string = {}): void {
+  // Accept a bare root for the original call shape.
+  const { programName, root } = typeof opts === 'string' ? { programName: undefined, root: opts } : opts
+  restoreKeys(root)
+  runInChain('anchor', ['build', ...(programName ? ['--program-name', programName] : [])], root)
+  syncIdl(root)
 }
 
 export interface DeployOptions {
@@ -21,28 +71,48 @@ export interface DeployOptions {
 }
 
 export function deploy({ cluster, programName, root }: DeployOptions): void {
-  run(
+  restoreKeys(root)
+  runInChain(
     'anchor',
     ['deploy', '--provider.cluster', cluster, ...(programName ? ['--program-name', programName] : [])],
-    { cwd: chainDir(root) },
+    root,
   )
 }
 
-/** Run a test suite. `script` selects an Anchor.toml [scripts] entry. */
-export function test(opts: { script?: string; skipBuild?: boolean; root?: string } = {}): void {
-  run(
-    'anchor',
-    [
-      'test',
-      ...LEGACY_VALIDATOR_ARGS,
-      ...(opts.script ? ['--script', opts.script] : []),
-      ...(opts.skipBuild ? ['--skip-build'] : []),
-    ],
-    { cwd: chainDir(opts.root) },
-  )
+/**
+ * Run a test suite against the already-running validator.
+ *
+ * `--skip-local-validator` is not an optimisation, it is the only thing that
+ * works here: `anchor test` otherwise starts a second validator on the same port
+ * as the one `chain up` is running. It also makes the suite several seconds
+ * faster and means tests see the same chain the browser does. The cost is that
+ * state persists between runs, so tests must assert on movement rather than on
+ * absolute values.
+ *
+ * `script` selects an Anchor.toml [scripts] entry.
+ */
+export interface TestOptions {
+  script?: string
+  skipBuild?: boolean
+  /** Let Anchor start its own validator instead of reusing the running one. */
+  ownValidator?: boolean
+  root?: string
 }
 
-export const idlDir = (root?: string): string => join(chainDir(root), 'target', 'idl')
+/** Split out so the flag logic is testable without running Anchor. */
+export function testArgs(opts: TestOptions): string[] {
+  return [
+    'test',
+    ...(opts.ownValidator ? LEGACY_VALIDATOR_ARGS : ['--skip-local-validator']),
+    ...(opts.script ? ['--script', opts.script] : []),
+    ...(opts.skipBuild ? ['--skip-build'] : []),
+  ]
+}
+
+export function test(opts: TestOptions = {}): void {
+  restoreKeys(opts.root)
+  runInChain('anchor', testArgs(opts), opts.root)
+}
 
 /**
  * Copy generated IDLs somewhere a TypeScript package can import them.
@@ -62,4 +132,34 @@ export function exportIdl(destination: string, root?: string): string[] {
   mkdirSync(destination, { recursive: true })
   for (const f of files) copyFileSync(join(src, f), join(destination, f))
   return files
+}
+
+/**
+ * Publish the generated interface — IDL *and* TypeScript types — to chain/idl.
+ *
+ * This is the seam that makes the dev loop work: change a Rust struct, rebuild,
+ * and the frontend's types change with it, because it imports from here rather
+ * than from the gitignored build output. The IDL also carries the program's
+ * deployed address, so nothing downstream hardcodes one.
+ *
+ * Runs automatically after every build; committed so a fresh clone typechecks
+ * without a Rust toolchain.
+ */
+export function syncIdl(root?: string): string[] {
+  const dest = generatedDir(root)
+  mkdirSync(dest, { recursive: true })
+  const written: string[] = []
+
+  for (const [src, ext] of [[idlDir(root), '.json'], [typesDir(root), '.ts']] as const) {
+    if (!existsSync(src)) continue
+    for (const f of readdirSync(src).filter((f) => f.endsWith(ext))) {
+      copyFileSync(join(src, f), join(dest, f))
+      written.push(f)
+    }
+  }
+
+  if (written.length === 0) {
+    throw new Error(`Nothing to publish from ${idlDir(root)}. Did the build fail?`)
+  }
+  return written
 }

@@ -29,3 +29,10 @@ coverage/
 chain/target/
 chain/.anchor/
 chain/test-ledger/
+
+# Generated from versions.json before every docker command.
+chain/docker/.env
+
+# The container's solana config, including the local deploy keypair. Bind-mounted
+# so it is inspectable and backup-able, but it is a key: never commit it.
+chain/.solana/

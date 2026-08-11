@@ -1,20 +1,86 @@
-import { resolve } from 'node:path'
+import { existsSync, readFileSync, readdirSync } from 'node:fs'
+import { join, resolve } from 'node:path'
 import { Command } from 'commander'
-import { build, deploy, exportIdl, test } from './anchor.js'
-import { formatReport, runChecks } from './doctor.js'
+import { build, deploy, exportIdl, generatedDir, syncIdl, test } from './anchor.js'
+import { chosenRunner, composeCapture, composeRun, dockerAvailable, imageBuild, imageExists } from './docker.js'
+import { VERSION_PROBE, checksFromCombined, formatReport, runChecks } from './doctor.js'
 import { repoRoot } from './paths.js'
 import { airdrop, down, isUp, up } from './validator.js'
+import { ensureWallet, walletAddress, walletBalance, walletPath } from './wallet.js'
 
 export { repoRoot, chainDir, readVersions, type Versions } from './paths.js'
-export { runChecks, formatReport, parseVersion, evaluate, type Check, type Probe } from './doctor.js'
+export { runChecks, formatReport, parseVersion, evaluate, checksFromCombined, VERSION_PROBE, type Check, type Probe } from './doctor.js'
 export { toolPath, envWithTools, run, capture, runDetached } from './exec.js'
-export { isUp, up, down, airdrop, readPid, type UpOptions } from './validator.js'
-export { build, deploy, test, exportIdl, idlDir, LEGACY_VALIDATOR_ARGS, type DeployOptions } from './anchor.js'
+export { isUp, up, down, airdrop, readPid, ledgerDir, type UpOptions } from './validator.js'
+export { runInChain, captureInChain } from './runner.js'
+export {
+  chosenRunner, dockerAvailable, composeFile, composeEnvFile, composeBase, writeComposeEnv,
+  imageBuild, imageExists, composeRun, composeCapture, composeUpValidator, composeDown, type RunnerName,
+} from './docker.js'
+export { walletPath, ensureWallet, walletAddress, walletBalance } from './wallet.js'
+export {
+  build, deploy, test, testArgs, exportIdl, syncIdl, restoreKeys, idlDir, typesDir, generatedDir,
+  keysDir, deployDir, LEGACY_VALIDATOR_ARGS, type DeployOptions, type TestOptions,
+} from './anchor.js'
 
 const CLUSTER_URLS: Record<string, string> = {
   localnet: 'http://127.0.0.1:8899',
   devnet: 'https://api.devnet.solana.com',
   'mainnet-beta': 'https://api.mainnet-beta.solana.com',
+}
+
+/** Enough SOL to deploy a program a few times over. */
+const TARGET_SOL = 100
+const LOW_SOL = 10
+
+function reportRunner(): void {
+  const runner = chosenRunner()
+  console.log(runner === 'docker' ? 'Runner: docker (chain-dev:local)' : 'Runner: host toolchain')
+}
+
+/**
+ * Make sure the deploy wallet exists and can pay for a deploy.
+ *
+ * Called after every validator start, not just the first: wiping the ledger
+ * wipes every balance on it, so a reset otherwise leaves the wallet at zero and
+ * the next deploy fails with "found no record of a prior credit" — which reads
+ * like a bug in your program.
+ */
+function ensureFundedWallet(url: string): void {
+  if (ensureWallet()) console.log(`Created a deploy wallet at ${walletPath()}`)
+  if ((walletBalance(url) ?? 0) >= LOW_SOL) return
+  const address = walletAddress()
+  if (!address) return
+  airdrop(address, TARGET_SOL, url)
+  console.log(`Funded the deploy wallet with ${TARGET_SOL} SOL`)
+}
+
+/** Everything needed before you can build against a local chain. */
+async function bringUp(opts: { reset?: boolean } = {}): Promise<void> {
+  reportRunner()
+  if (chosenRunner() === 'docker' && !imageExists()) {
+    console.log('Building the toolchain image (once, ~10 minutes)…')
+    imageBuild()
+  }
+  await up({ reset: opts.reset })
+  console.log(`Validator up at ${CLUSTER_URLS.localnet}`)
+  ensureFundedWallet(CLUSTER_URLS.localnet)
+  build()
+  deploy({ cluster: 'localnet' })
+  console.log('\nDeployed:')
+  for (const p of deployedPrograms()) console.log(`  ${p.name.padEnd(20)} ${p.address}`)
+}
+
+/** Program name -> address, read from the published IDLs. */
+function deployedPrograms(): Array<{ name: string; address: string }> {
+  const dir = generatedDir()
+  if (!existsSync(dir)) return []
+  return readdirSync(dir)
+    .filter((f) => f.endsWith('.json'))
+    .map((f) => {
+      const idl = JSON.parse(readFileSync(join(dir, f), 'utf8')) as { address?: string; metadata?: { name?: string } }
+      return { name: idl.metadata?.name ?? f.replace(/\.json$/, ''), address: idl.address ?? '(none)' }
+    })
 }
 
 /**
@@ -30,20 +96,61 @@ export function chainCommand(): Command {
 
   chain
     .command('doctor')
-    .description('Verify the installed toolchain matches chain/versions.json.')
+    .description('Verify the toolchain matches chain/versions.json.')
     .action(() => {
+      reportRunner()
+      if (chosenRunner() === 'docker') {
+        if (!dockerAvailable()) {
+          console.log('  ✗ docker           not available — install Docker, or use CHAIN_RUNNER=host')
+          process.exitCode = 1
+          return
+        }
+        if (!imageExists()) {
+          console.log('  ✗ chain-dev:local  image not built yet\n\nTo fix:\n  chain image')
+          process.exitCode = 1
+          return
+        }
+        const out = composeCapture('bash', ['-lc', VERSION_PROBE])
+        if (out === null) {
+          console.log('  ✗ container        could not run — try: chain image --no-cache')
+          process.exitCode = 1
+          return
+        }
+        const checks = checksFromCombined(out)
+        console.log(formatReport(checks))
+        if (checks.some((c) => !c.ok)) process.exitCode = 1
+        return
+      }
       const checks = runChecks()
       console.log(formatReport(checks))
       if (checks.some((c) => !c.ok)) process.exitCode = 1
     })
 
   chain
+    .command('image')
+    .description('Build the pinned toolchain image (Docker runner only).')
+    .option('--no-cache', 'rebuild every layer from scratch')
+    .action((opts: { cache?: boolean }) => {
+      if (chosenRunner() !== 'docker') throw new Error('CHAIN_RUNNER=host — there is no image to build.')
+      imageBuild({ noCache: opts.cache === false })
+    })
+
+  chain
+    .command('shell')
+    .description('Open a shell in the toolchain container.')
+    .action(() => {
+      if (chosenRunner() !== 'docker') throw new Error('CHAIN_RUNNER=host — you are already in the shell.')
+      composeRun('bash', [])
+    })
+
+  chain
     .command('up')
-    .description('Start a local validator in the background and wait until it answers.')
-    .option('--reset', 'wipe the ledger first, so tests start from an empty chain')
+    .description('Start a local validator and wait until it answers.')
+    .option('--reset', 'wipe the ledger first, so you start from an empty chain')
     .action(async (opts: { reset?: boolean }) => {
-      const { started, pid } = await up({ reset: opts.reset })
-      console.log(started ? `Validator up (pid ${pid}) at ${CLUSTER_URLS.localnet}` : 'Validator already running.')
+      reportRunner()
+      const { started } = await up({ reset: opts.reset })
+      console.log(started ? `Validator up at ${CLUSTER_URLS.localnet}` : 'Validator already running.')
     })
 
   chain
@@ -51,6 +158,18 @@ export function chainCommand(): Command {
     .description('Stop the local validator.')
     .action(async () => {
       console.log((await down()) ? 'Validator stopped.' : 'No validator was running.')
+    })
+
+  chain
+    .command('reset')
+    .description('Wipe the ledger and redeploy. Do this after changing an account layout.')
+    .action(async () => {
+      // Accounts written with the old struct no longer deserialize, and the
+      // failure surfaces as a raw byte-range error pointing at the frontend
+      // rather than at the layout change that caused it. Wiping is the fix, and
+      // it has to redeploy too — an empty ledger has no programs on it.
+      await bringUp({ reset: true })
+      console.log('\nFresh ledger, programs redeployed. Browser wallets will need another airdrop.')
     })
 
   chain
@@ -63,9 +182,28 @@ export function chainCommand(): Command {
     })
 
   chain
+    .command('wallet')
+    .description('Show the deploy wallet, creating and funding it if needed.')
+    .option('--cluster <cluster>', 'localnet | devnet', 'localnet')
+    .action((opts: { cluster: string }) => {
+      const url = CLUSTER_URLS[opts.cluster]
+      if (!url) throw new Error(`Unknown cluster "${opts.cluster}"`)
+      if (opts.cluster === 'localnet') ensureFundedWallet(url)
+      else if (ensureWallet()) console.log(`Created a deploy wallet at ${walletPath()}`)
+      const balance = walletBalance(url)
+      console.log(`Deploy wallet: ${walletAddress() ?? '(unknown)'}`)
+      console.log(`Balance:       ${balance === null ? '(cluster unreachable)' : `${balance} SOL on ${opts.cluster}`}`)
+    })
+
+  chain
     .command('build')
-    .description('Build the Anchor workspace.')
-    .action(() => build())
+    .description('Build the Anchor workspace and publish its IDL + TypeScript types.')
+    .option('--program-name <name>', 'build only this program — much faster in a workspace')
+    .action((opts: { programName?: string }) => {
+      build({ programName: opts.programName })
+      console.log(`Published interfaces to chain/idl:`)
+      for (const p of deployedPrograms()) console.log(`  ${p.name.padEnd(20)} ${p.address}`)
+    })
 
   chain
     .command('deploy')
@@ -78,21 +216,26 @@ export function chainCommand(): Command {
 
   chain
     .command('test')
-    .description('Run Anchor integration tests against a local validator.')
+    .description('Run Anchor integration tests against the local validator.')
     .option('--script <name>', 'an Anchor.toml [scripts] entry, to run one suite')
     .option('--skip-build', 'reuse the existing build')
-    .action((opts: { script?: string; skipBuild?: boolean }) => {
-      test({ script: opts.script, skipBuild: opts.skipBuild })
+    .option('--own-validator', 'let Anchor start its own validator instead of reusing ours')
+    .action(async (opts: { script?: string; skipBuild?: boolean; ownValidator?: boolean }) => {
+      if (!opts.ownValidator) await up()
+      test({ script: opts.script, skipBuild: opts.skipBuild, ownValidator: opts.ownValidator })
     })
 
   chain
     .command('idl')
-    .description('Copy generated IDLs somewhere a TypeScript package can import them.')
-    .requiredOption('--out <dir>', 'destination directory, relative to the repo root')
-    .action((opts: { out: string }) => {
-      const dest = resolve(repoRoot(), opts.out)
-      const copied = exportIdl(dest)
-      console.log(`Copied ${copied.join(', ')} -> ${opts.out}`)
+    .description('Publish generated IDLs and types. Defaults to chain/idl; --out copies elsewhere too.')
+    .option('--out <dir>', 'extra destination for the .json IDLs, relative to the repo root')
+    .action((opts: { out?: string }) => {
+      const written = syncIdl()
+      console.log(`Published ${written.join(', ')} -> chain/idl`)
+      if (opts.out) {
+        const dest = resolve(repoRoot(), opts.out)
+        console.log(`Copied ${exportIdl(dest).join(', ')} -> ${opts.out}`)
+      }
     })
 
   chain
@@ -109,5 +252,29 @@ export function chainCommand(): Command {
       console.log(`Airdropped ${opts.sol} SOL to ${address} on ${opts.cluster}`)
     })
 
+  chain
+    .command('dev')
+    .description('Everything needed to develop: image, validator, funded wallet, build, deploy.')
+    .option('--reset', 'wipe the ledger first')
+    .action(async (opts: { reset?: boolean }) => {
+      await bringUp({ reset: opts.reset })
+      console.log('\nPoint a wallet at http://127.0.0.1:8899 and run the web app.')
+    })
+
   return chain
+}
+
+/**
+ * The same commands, as a standalone program.
+ *
+ * Not just `addCommand(chainCommand())` — that nests the group under its own
+ * name and you have to type `chain chain doctor`. A project with no host CLI to
+ * mount this on runs `chain doctor`, so the subcommands are re-hosted at the top
+ * level here.
+ */
+export function standaloneProgram(): Command {
+  const group = chainCommand()
+  const program = new Command('chain').description(group.description())
+  for (const command of group.commands) program.addCommand(command)
+  return program
 }

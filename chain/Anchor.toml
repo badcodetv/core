@@ -8,6 +8,7 @@ skip-lint = false
 
 [programs.localnet]
 emperors_new_coin = "5YSzNEzi1Hk9uTCq3SuYDtjYVUUTN9A69AxX2hy58XCT"
+counter = "F1t91u9XG9WbXPPQVj6mzmgVXPTVx6PZLo5kYaB76u9Q"
 
 [programs.devnet]
 emperors_new_coin = "5YSzNEzi1Hk9uTCq3SuYDtjYVUUTN9A69AxX2hy58XCT"
@@ -19,16 +20,21 @@ url = "https://api.apr.dev"
 cluster = "Localnet"
 wallet = "~/.config/solana/id.json"
 
-# ALWAYS pass `--validator legacy`. Anchor 1.x defaults to surfpool, which is not
-# installed and is not something the toolchain should require; `legacy` is
-# solana-test-validator, which ships with Agave. Without the flag every test run
-# dies with "Failed to spawn `surfpool`".
+# Prefer `badcode chain test`, which runs these against the validator started by
+# `chain up`. Two things bite if you call anchor directly:
 #
-#   anchor test --validator legacy                     # everything
-#   anchor test --validator legacy --script test-smoke  # one suite
+#   --skip-local-validator  or Anchor starts a SECOND validator on port 8899 and
+#                           the run dies on the port collision.
+#   --validator legacy      only needed when you do let Anchor start its own:
+#                           Anchor 1.x defaults to surfpool, which is not
+#                           installed, and fails with "Failed to spawn `surfpool`".
+#
+#   anchor test --skip-local-validator                     # everything
+#   anchor test --skip-local-validator --script test-smoke  # one suite
 #
 # One entry per suite below. Note `anchor test -- --grep X` does NOT work: args
 # after -- go to `cargo build-sbf`, not to mocha. Use --script instead.
 [scripts]
 test = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
 test-smoke = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/smoke.ts"
+test-counter = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/counter.ts"

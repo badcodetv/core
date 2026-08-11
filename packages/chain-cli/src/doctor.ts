@@ -71,6 +71,28 @@ export function evaluate(
   return { name, want, got, ok, broken: null, remedy: ok ? '' : remedy }
 }
 
+/**
+ * One shell line that prints every pinned tool's version, separated by a marker.
+ *
+ * Used for the container: spawning four `docker compose run` containers to ask
+ * four one-word questions costs several seconds, so ask all of them at once.
+ */
+export const VERSION_PROBE =
+  ['rustc --version', 'solana --version', 'anchor --version', 'node --version']
+    .join(' 2>&1; echo "///"; ') + ' 2>&1'
+
+/** Turn VERSION_PROBE output into the same Checks a host probe produces. */
+export function checksFromCombined(out: string, versions: Versions = readVersions()): Check[] {
+  const [rust, agave, anchor, node] = out.split('///').map((s) => s.trim())
+  const seen = (s: string | undefined): string | null => (s && parseVersion(s) ? s : null)
+  return [
+    evaluate('rust', versions.rust, seen(rust), 'rebuild the image: chain image --no-cache'),
+    evaluate('agave (solana)', versions.agave, seen(agave), 'rebuild the image: chain image --no-cache'),
+    evaluate('anchor', versions.anchor, seen(anchor), 'rebuild the image: chain image --no-cache'),
+    evaluate('node', versions.node, seen(node), 'rebuild the image: chain image --no-cache', true),
+  ]
+}
+
 export function runChecks(versions: Versions = readVersions()): Check[] {
   return [
     evaluate('rust', versions.rust, probe('rustc'), `rustup toolchain install ${versions.rust} && rustup default ${versions.rust}`),
@@ -91,7 +113,10 @@ export function formatReport(checks: Check[]): string {
   if (failed.length > 0) {
     lines.push('', 'To fix:')
     for (const c of failed) lines.push(`  ${c.name}:  ${c.remedy}`)
-    lines.push('', 'Or run everything at once:  ./chain/scripts/install.sh')
+    if (!failed.every((c) => c.remedy.startsWith('rebuild the image'))) {
+      lines.push('', 'Or run everything at once:  ./chain/scripts/install.sh')
+      lines.push('Or skip the host install entirely and use Docker:  unset CHAIN_RUNNER')
+    }
   }
   return lines.join('\n')
 }

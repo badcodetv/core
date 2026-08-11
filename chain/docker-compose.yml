@@ -1,0 +1,83 @@
+# The local Solana stack.
+#
+# Two services off one image: a long-lived validator, and a throwaway shell that
+# builds/deploys/tests against it.
+#
+# The build args come from docker/.env, which `chain` regenerates from
+# versions.json before every docker command — so the image can never drift from
+# the pins without the drift being visible in git.
+name: ${CHAIN_PROJECT:-chain}
+
+x-image: &image
+  image: chain-dev:${CHAIN_IMAGE_TAG:-local}
+  build:
+    context: ./docker
+    args:
+      RUST_VERSION: ${RUST_VERSION}
+      AGAVE_VERSION: ${AGAVE_VERSION}
+      ANCHOR_VERSION: ${ANCHOR_VERSION}
+      NODE_MAJOR: ${NODE_MAJOR}
+      UID: ${CHAIN_UID:-1000}
+      GID: ${CHAIN_GID:-1000}
+
+services:
+  validator:
+    <<: *image
+    command:
+      - solana-test-validator
+      - --ledger=/work/chain/test-ledger
+      - --rpc-port=8899
+      - --quiet
+    # Agave 3.x asserts io_uring support when it creates the accounts directories,
+    # and Docker's default seccomp profile blocks the io_uring syscalls — so a
+    # fresh ledger dies with `assertion failed: io_uring_supported()` and a stack
+    # trace that says nothing about Docker. Relaxing seccomp is the fix. It
+    # applies to this throwaway local validator only; the toolchain container
+    # keeps the default profile.
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - ..:/work
+    ports:
+      # Published to the host so a browser wallet (Phantom on localnet) and any
+      # host-side tooling talk to exactly the same validator the container does.
+      - "127.0.0.1:8899:8899"
+      - "127.0.0.1:8900:8900"
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - >-
+          curl -sf -X POST -H 'Content-Type: application/json'
+          -d '{"jsonrpc":"2.0","id":1,"method":"getHealth"}'
+          http://127.0.0.1:8899 | grep -q '"result":"ok"'
+      interval: 2s
+      timeout: 3s
+      retries: 30
+      start_period: 5s
+    stop_grace_period: 10s
+
+  toolchain:
+    <<: *image
+    # Share the validator's network namespace so 127.0.0.1:8899 means the same
+    # thing inside the container as it does on the host. That is what lets
+    # Anchor.toml keep `cluster = "Localnet"` and stay correct in both worlds —
+    # the alternative is a docker-only RPC URL leaking into committed config.
+    network_mode: "service:validator"
+    depends_on:
+      validator:
+        condition: service_started
+    working_dir: /work/chain
+    volumes:
+      - ..:/work
+      # Solana's config dir, including the deploy keypair. A bind mount, not a
+      # named volume, so the keypair is visible on the host for backup.
+      - ./.solana:/home/dev/.config/solana
+      # Crate downloads survive `compose down`; a cold cargo registry adds
+      # minutes to the first build after every teardown.
+      - cargo-registry:/home/dev/.cargo/registry
+      - cargo-git:/home/dev/.cargo/git
+    init: true
+
+volumes:
+  cargo-registry:
+  cargo-git:

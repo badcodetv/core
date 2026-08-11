@@ -1,8 +1,8 @@
-import { existsSync, mkdtempSync, readdirSync, rmSync } from 'node:fs'
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { LEGACY_VALIDATOR_ARGS, exportIdl, idlDir } from './anchor.js'
+import { LEGACY_VALIDATOR_ARGS, exportIdl, generatedDir, idlDir, restoreKeys, syncIdl, testArgs } from './anchor.js'
 
 describe('LEGACY_VALIDATOR_ARGS', () => {
   it('asks for the legacy validator, because Anchor 1.x defaults to surfpool', () => {
@@ -34,5 +34,66 @@ describe('exportIdl', () => {
   it('says to build rather than failing obscurely when there is no IDL', () => {
     const missing = join(tmpdir(), 'definitely-not-a-repo-root-xyz')
     expect(() => exportIdl(join(tmpdir(), 'out'), missing)).toThrow(/chain build/)
+  })
+})
+
+describe('restoreKeys', () => {
+  it('puts saved program keypairs back where Anchor looks for them', () => {
+    const root = mkdtempSync(join(tmpdir(), 'chain-root-'))
+    try {
+      mkdirSync(join(root, 'chain', 'keys'), { recursive: true })
+      writeFileSync(join(root, 'chain', 'keys', 'demo-keypair.json'), '[1,2,3]')
+      expect(restoreKeys(root)).toEqual(['demo-keypair.json'])
+      expect(existsSync(join(root, 'chain', 'target', 'deploy', 'demo-keypair.json'))).toBe(true)
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('never overwrites a keypair the build already produced', () => {
+    // target/deploy is the live identity. Clobbering it would change a deployed
+    // program's address underneath a running validator.
+    const root = mkdtempSync(join(tmpdir(), 'chain-root-'))
+    try {
+      mkdirSync(join(root, 'chain', 'keys'), { recursive: true })
+      mkdirSync(join(root, 'chain', 'target', 'deploy'), { recursive: true })
+      writeFileSync(join(root, 'chain', 'keys', 'demo-keypair.json'), '[1]')
+      writeFileSync(join(root, 'chain', 'target', 'deploy', 'demo-keypair.json'), '[9]')
+      expect(restoreKeys(root)).toEqual([])
+      expect(readFileSync(join(root, 'chain', 'target', 'deploy', 'demo-keypair.json'), 'utf8')).toBe('[9]')
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
+  })
+
+  it('is a no-op when there is nothing saved', () => {
+    expect(restoreKeys(join(tmpdir(), 'definitely-not-a-repo-root-xyz'))).toEqual([])
+  })
+})
+
+describe('syncIdl', () => {
+  it('publishes both the IDL and the TypeScript types, since the app needs both', () => {
+    if (!existsSync(idlDir())) return // build has not run in this environment
+    const written = syncIdl()
+    expect(written.some((f) => f.endsWith('.json'))).toBe(true)
+    expect(written.some((f) => f.endsWith('.ts'))).toBe(true)
+    for (const f of written) expect(existsSync(join(generatedDir(), f))).toBe(true)
+  })
+
+  it('says the build failed rather than publishing nothing', () => {
+    expect(() => syncIdl(join(tmpdir(), 'definitely-not-a-repo-root-xyz'))).toThrow(/build fail/)
+  })
+})
+
+describe('test arguments', () => {
+  it('reuses the running validator by default', () => {
+    // Anchor otherwise starts a second validator on the same port and the run
+    // dies on a collision that reads like a network problem.
+    expect(testArgs({})).toContain('--skip-local-validator')
+  })
+
+  it('asks for the legacy validator only when Anchor starts its own', () => {
+    expect(testArgs({ ownValidator: true })).toEqual(expect.arrayContaining(['--validator', 'legacy']))
+    expect(testArgs({ ownValidator: true })).not.toContain('--skip-local-validator')
   })
 })
