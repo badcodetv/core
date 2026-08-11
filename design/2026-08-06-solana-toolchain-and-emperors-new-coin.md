@@ -7,7 +7,7 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: in progress — T1-T6, T16 done; T24-T26 (Docker + counter harness) done 2026-08-11
+Status: in progress — T1-T6, T16 done; T24-T27 (Docker, counter harness, ./stack) done 2026-08-11
 Date: 2026-08-06
 Relates: `docs/stories/magic-money-tree/emperors-new-coin.md` (canon — the coin
 is a cryptocurrency folded into the Magic Money Tree story, cross-promoted with
@@ -1224,6 +1224,30 @@ procedure and the two things that bit.
 It found a real bug: `packages/chain-cli/src/bin.ts` mounted the command group on
 a program of the same name, so a project without a host CLI had to type `chain
 chain doctor`. Fixed via `standaloneProgram()`, with a test.
+
+### T27: `./stack` — one entry point for local services   [Status: DONE 2026-08-11 | Model: opus]
+
+Kai spotted that every documented command started with `badcode`, a binary he
+could not find. It exists — `packages/cli` declares `"bin": {"badcode": ...}` —
+but npm only symlinks it into `node_modules/.bin`, which is not on anyone's PATH.
+So every command in the README and on the demo page was uncopyable as written.
+
+Fixed by adopting Agent Orange's `./stack` convention: one executable at the repo
+root, self-documenting header, verbs for everything local (`start`, `stop`,
+`status`, `logs`, `redeploy`, `reset`, `test`, `fund`, `check`, `shell`,
+`doctor`, `image`). It shells out to `node_modules/.bin/chain` **by path**, never
+`npx chain` — npx would silently fetch an unrelated package from the registry if
+the workspace were not installed. No tmux, unlike Agent Orange: there are two
+services here, not five, so `./stack logs` is enough.
+
+`chain` stays the portable CLI; `./stack` is this project's wrapper, and a
+project that copies the toolchain writes its own. All references in
+`chain/README.md`, `CounterPage.tsx` and `CLAUDE.md` were corrected.
+
+Also adds `chain/TESTING.md`: the manual Phantom walkthrough, whose load-bearing
+point is that **Phantom sends transactions over its own selected network, not the
+page's** — so leaving it on Mainnet fails every click with a blockhash error
+while the page correctly reports localnet.
 
 ## Discovered Issues Log
 

@@ -1,0 +1,153 @@
+#!/usr/bin/env bash
+#
+# ./stack — the local development stack for BadCode's on-chain work.
+#
+# Everything you need to run locally is a verb here, so nothing depends on a
+# binary being on your PATH. (`badcode` and `chain` exist only as workspace
+# symlinks under node_modules/.bin, so typing them bare does not work.)
+#
+#   ./stack start          validator + programs deployed + the web app  ← start here
+#   ./stack stop           stop the web app and the validator
+#   ./stack status         what is up, which programs, which wallet
+#   ./stack logs [web|validator]   follow logs
+#
+#   ./stack build [prog]   build + publish IDL and TypeScript types
+#   ./stack deploy         deploy to the local validator
+#   ./stack redeploy [prog]  build + deploy — the loop after editing a program
+#   ./stack reset          wipe the ledger and redeploy (after a struct change)
+#   ./stack test [suite]   Anchor tests against the running validator
+#
+#   ./stack fund <address>   give a browser wallet 100 local SOL
+#   ./stack wallet         show the deploy wallet
+#   ./stack doctor         check the toolchain
+#   ./stack image          (re)build the Docker toolchain image
+#   ./stack shell          a shell inside the toolchain container
+#   ./stack web            just the web app
+#   ./stack check          typecheck + unit tests, repo-wide
+#
+set -euo pipefail
+
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$DIR"
+
+WEB_PORT="${WEB_PORT:-5173}"
+RPC_URL="${RPC_URL:-http://127.0.0.1:8899}"
+RUN_DIR="$DIR/.stack"
+WEB_PID="$RUN_DIR/web.pid"
+WEB_LOG="$RUN_DIR/web.log"
+
+# The chain CLI, by path. Deliberately not `npx chain`: npx will happily go and
+# install some unrelated package from the registry if the local one is missing,
+# which is a confusing way to find out your workspace is not installed.
+CHAIN="$DIR/node_modules/.bin/chain"
+
+# Name the compose project after this repo. The default is a bare "chain", which
+# every checkout that copies this toolchain would also use — so starting one
+# validator silently recreates another repo's containers.
+export CHAIN_PROJECT="${CHAIN_PROJECT:-badcode-chain}"
+
+chain() {
+  [[ -x "$CHAIN" ]] || { echo "Missing $CHAIN — run: npm install" >&2; exit 1; }
+  "$CHAIN" "$@"
+}
+
+up_web()  { curl -sf -o /dev/null -m 2 "http://127.0.0.1:${WEB_PORT}"; }
+up_rpc()  { curl -sf -o /dev/null -m 2 -X POST -H 'Content-Type: application/json' \
+              -d '{"jsonrpc":"2.0","id":1,"method":"getHealth"}' "$RPC_URL"; }
+
+# ── Commands ─────────────────────────────────────────────────────────────────
+
+web() {
+  mkdir -p "$RUN_DIR"
+  if up_web; then echo "Web app already running at http://localhost:${WEB_PORT}"; return; fi
+  echo "Starting the web app…"
+  # Detached with a pid file rather than in the foreground, so `./stack start`
+  # can bring up both halves and hand the terminal back.
+  npm run dev --workspace @badcode/web >"$WEB_LOG" 2>&1 &
+  echo $! >"$WEB_PID"
+  for _ in $(seq 1 60); do up_web && break; sleep 1; done
+  up_web || { echo "Web app did not come up — see ./stack logs web" >&2; exit 1; }
+  echo "Web app at http://localhost:${WEB_PORT}"
+}
+
+start() {
+  chain dev "$@"
+  web
+  echo
+  echo "  Counter demo:  http://localhost:${WEB_PORT}/dev/counter"
+  echo "  Connect Phantom to localhost, then:  ./stack fund <your address>"
+  echo "  Guide:  chain/TESTING.md"
+}
+
+stop() {
+  if [[ -f "$WEB_PID" ]]; then
+    kill "$(cat "$WEB_PID")" 2>/dev/null || true
+    rm -f "$WEB_PID"
+  fi
+  # The dev server spawns children; killing the npm wrapper alone leaves Vite
+  # holding the port.
+  pkill -f "vite.*${WEB_PORT}" 2>/dev/null || pkill -f 'node.*vite' 2>/dev/null || true
+  chain down
+  echo "Stopped."
+}
+
+status() {
+  echo "── web ────────────────────────────────────────────────────"
+  up_web && echo "  up    http://localhost:${WEB_PORT}" || echo "  down"
+  echo
+  echo "── validator ──────────────────────────────────────────────"
+  if up_rpc; then echo "  up    $RPC_URL"; else echo "  down  (./stack start)"; fi
+  echo
+  echo "── programs (address comes from the generated IDL) ────────"
+  if [[ -d chain/idl ]]; then
+    for f in chain/idl/*.json; do
+      [[ -e "$f" ]] || { echo "  (none — ./stack build)"; break; }
+      node -e 'const i=JSON.parse(require("node:fs").readFileSync(process.argv[1],"utf8"));console.log("  "+(i.metadata?.name??"?").padEnd(20)+i.address)' "$f"
+    done
+  else
+    echo "  (none — ./stack build)"
+  fi
+  echo
+  echo "── deploy wallet ──────────────────────────────────────────"
+  up_rpc && chain wallet | sed 's/^/  /' || echo "  (validator down)"
+}
+
+logs() {
+  case "${1:-web}" in
+    web)       tail -f "$WEB_LOG" ;;
+    validator) docker compose -f chain/docker-compose.yml --env-file chain/docker/.env logs -f validator ;;
+    *) echo "usage: ./stack logs [web|validator]" >&2; exit 1 ;;
+  esac
+}
+
+redeploy() {
+  # The loop after editing a program. Naming the program skips rebuilding the
+  # rest of the workspace, which is most of the wait.
+  if [[ $# -gt 0 ]]; then chain build --program-name "$1"; else chain build; fi
+  chain deploy --cluster localnet
+}
+
+fund() {
+  [[ $# -gt 0 ]] || { echo "usage: ./stack fund <address>   (your Phantom address)" >&2; exit 1; }
+  chain airdrop "$1" --sol "${2:-100}"
+}
+
+check() {
+  npm run typecheck
+  npm test
+}
+
+help() { sed -n '3,26p' "$0" | sed 's/^# \{0,1\}//'; }
+
+# ── Dispatch ─────────────────────────────────────────────────────────────────
+cmd="${1:-help}"
+shift || true
+case "$cmd" in
+  start|stop|status|logs|web|redeploy|fund|check|help) "$cmd" "$@" ;;
+  build)   if [[ $# -gt 0 ]]; then chain build --program-name "$1"; else chain build; fi ;;
+  deploy)  chain deploy --cluster localnet "$@" ;;
+  reset)   chain reset "$@" ;;
+  test)    if [[ $# -gt 0 ]]; then chain test --script "$1"; else chain test; fi ;;
+  wallet|doctor|image|shell|up|down|idl|airdrop) chain "$cmd" "$@" ;;
+  *) echo "unknown command: $cmd" >&2; echo; help; exit 1 ;;
+esac

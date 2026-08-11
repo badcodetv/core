@@ -10,6 +10,7 @@
  */
 export { SolanaProvider, useCluster, type SolanaProviderProps } from './SolanaProvider.js'
 export { useProgram } from './useProgram.js'
+export { useProgramReader } from './useProgramReader.js'
 export { useAccount, type AccountState } from './useAccount.js'
 export { useSendTransaction, humanizeError, type SendState } from './useSendTransaction.js'
 export { ClusterBadge } from './ClusterBadge.js'

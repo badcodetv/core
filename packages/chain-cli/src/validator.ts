@@ -2,7 +2,7 @@ import { existsSync, readFileSync, rmSync, unlinkSync, writeFileSync } from 'nod
 import { join } from 'node:path'
 import { chainDir } from './paths.js'
 import { runDetached, sleep } from './exec.js'
-import { chosenRunner, composeDown, composeUpValidator } from './docker.js'
+import { chosenRunner, composeDown, composeUpValidator, foreignPortHolder } from './docker.js'
 import { captureInChain } from './runner.js'
 
 const RPC_URL = 'http://127.0.0.1:8899'
@@ -82,6 +82,17 @@ export async function up(opts: UpOptions = {}): Promise<{ started: boolean; pid:
   if (reset && existsSync(ledger)) rmSync(ledger, { recursive: true, force: true })
 
   if (docker) {
+    // Check before starting: Docker's own error for this names neither the
+    // container nor the project it belongs to, and "port is already allocated"
+    // sends people looking for a process rather than another checkout.
+    const holder = foreignPortHolder()
+    if (holder !== null) {
+      throw new Error(
+        `Port 8899 is already published by container "${holder}", which belongs to a different ` +
+          'project. Only one local validator can run at a time — stop that one first, or set ' +
+          'CHAIN_PROJECT to a distinct name if you meant to run both (the ports will still clash).',
+      )
+    }
     composeUpValidator(root)
     if (!(await waitForRpc(timeoutSeconds))) {
       throw new Error(`Validator did not answer RPC within ${timeoutSeconds}s. Try: docker compose -f chain/docker-compose.yml logs validator`)

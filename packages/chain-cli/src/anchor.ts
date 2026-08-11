@@ -72,11 +72,24 @@ export interface DeployOptions {
 
 export function deploy({ cluster, programName, root }: DeployOptions): void {
   restoreKeys(root)
-  runInChain(
-    'anchor',
-    ['deploy', '--provider.cluster', cluster, ...(programName ? ['--program-name', programName] : [])],
-    root,
-  )
+  try {
+    runInChain(
+      'anchor',
+      ['deploy', '--provider.cluster', cluster, ...(programName ? ['--program-name', programName] : [])],
+      root,
+    )
+  } catch (err) {
+    // Upgrading in place only works while the new binary still fits the space
+    // allocated at first deploy. Grow past it and Agave fails with "Auto-extend
+    // failed: ... invalid instruction data", which reads like a bug in the
+    // program rather than an allocation problem with a one-line fix.
+    throw new Error(
+      `${(err as Error).message}\n\n` +
+        'If that mentioned "Auto-extend failed", the program outgrew the space reserved for it ' +
+        'on the last deploy. On localnet the fix is `chain reset` — a fresh ledger allocates for ' +
+        'the current size. On devnet, extend it: `solana program extend <program-id> <bytes>`.',
+    )
+  }
 }
 
 /**

@@ -87,7 +87,8 @@ function deployedPrograms(): Array<{ name: string; address: string }> {
  * The `chain` command group.
  *
  * Exported rather than run directly so a host CLI can mount it as a sub-command
- * (BadCode does: `badcode chain ...`) while `bin.ts` runs it standalone. Keep this
+ * (BadCode mounts it under `badcode`, then wraps that again in ./stack), while
+ * `bin.ts` runs it standalone for a project with no CLI of its own. Keep this
  * package free of any project-specific reference — it is meant to be lifted whole
  * into unrelated projects. See chain/README.md.
  */
