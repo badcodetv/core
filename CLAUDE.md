@@ -49,6 +49,8 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
 | `.claude/skills/` | `new-idea`, `new-marketing-idea`, `new-story`, `suno-prompt`, `make-comic`, `edit-panel`, `animate-slide`, `music-video-short`, `new-image` — orchestrators for parking an idea, capturing a marketing/distribution play, story capture, Suno prompting, the full idea→comic pipeline, editing an existing panel image, animating a finished panel, the full idea→short-form music-video pipeline (Suno track + Flow clips + edit plan), and standalone brand imagery | …you're capturing an idea or marketing play, developing a story, making a track, building a comic, editing a panel, animating a slide, making a short, or making a brand image |
 | `packages/comic` | `@badcode/comic` — code-first comic rendering library (authoring guide: [`AUTHORING.md`](./packages/comic/AUTHORING.md)) | …you're building the viewer |
 | `apps/web` | The website (Vite + React + TS SPA) | …you're building pages/routes |
+| `chain/` | Anchor workspace + Docker toolchain — [`README`](./chain/README.md), [`TESTING`](./chain/TESTING.md) | …you're writing an on-chain program |
+| `packages/chain-{cli,kit,react}` | The portable Solana kit — names no coin, copied into other repos | …you're touching the toolchain itself |
 
 ## How to work in this repo
 
@@ -149,6 +151,28 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
   - [`decisions.md`](./docs/stories/storyverse/decisions.md) — what the research settled, and the open calls still owed a human ruling
   - [`research/`](./docs/stories/storyverse/research/README.md) — seven cited research briefs (QM interpretations, idealism, dimensions & time, decoherence, theology, the meaning crisis, SF precedent)
 - [`docs/storytelling.md`](./docs/storytelling.md) — how we craft a story
+
+## Coins
+
+BadCode releases **coins** as well as comics. The first is **Emperor's New Coin** —
+supply pegged to the Fed's M2 money supply, so when they print, we print. The joke
+only works if it is true, so the design goes to some length to remove BadCode from
+the loop: the oracle feed is the hash of its own fetch job (no key can repoint it)
+and the program ships non-upgradeable. Plan and decisions:
+[`design/2026-08-06-solana-toolchain-and-emperors-new-coin.md`](./design/2026-08-06-solana-toolchain-and-emperors-new-coin.md).
+Canon: [`docs/stories/magic-money-tree/emperors-new-coin.md`](./docs/stories/magic-money-tree/emperors-new-coin.md).
+
+Coin pages live at `/coins/:slug` in the same web app — there is no second site.
+The toolchain under `chain/` and `packages/chain-*` is deliberately **generic**:
+it names no coin, so coin #2 writes a Rust program and a page component and
+nothing else. That portability is load-bearing and has been exercised — it now
+runs in a second, unrelated repository. Don't add ENC-specific code to it; see
+the portability contract in [`chain/README.md`](./chain/README.md).
+
+**Working on a program?** Read [`chain/README.md`](./chain/README.md) first. It
+carries the gotchas that cost real time — Docker's seccomp profile versus
+`io_uring`, Anchor's two disagreeing IDLs, `Buffer` not existing in browsers, and
+why program keypairs live in `chain/keys/` rather than `target/`.
 
 ## Out of scope here
 
