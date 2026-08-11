@@ -7,43 +7,53 @@ in the reusable parts knows what BadCode is or that Emperor's New Coin exists.
 ## The loop
 
 ```bash
-badcode chain dev            # image (first run), validator, funded wallet, build, deploy
-npm run dev                  # the web app, at localhost:5173/dev/counter
+./stack start   # image (first run), validator, funded wallet, build, deploy, web app
 ```
+
+Then open **localhost:5173/dev/counter**. To drive it with a real browser wallet,
+follow [`TESTING.md`](./TESTING.md).
 
 Then, all day:
 
 ```bash
 # edit chain/programs/counter/src/lib.rs
-badcode chain build --program-name counter
-badcode chain deploy --cluster localnet
+./stack redeploy counter
 ```
 
 The program keeps the same address, its accounts keep their data, and the
 browser picks up the new types on the next Vite reload.
 
-**After changing an account struct, run `badcode chain reset` first.** Accounts
+**After changing an account struct, run `./stack reset` first.** Accounts
 already on the ledger were written with the old layout and will not decode
 against the new one. The page says so when it happens, because the underlying
 borsh error does not.
 
 ## Commands
 
+Run everything through **`./stack`** at the repo root. It is a thin wrapper over
+the `chain` CLI below, and it exists because neither `badcode` nor `chain` is on
+your PATH — they are workspace symlinks under `node_modules/.bin`, so typing them
+bare does not work.
+
 | | |
 | --- | --- |
-| `chain dev` | Everything at once. The command to run when nothing works. |
-| `chain doctor` | Check the toolchain matches `versions.json`. |
-| `chain image` | Build the toolchain image. `--no-cache` to start over. |
-| `chain up` / `down` | Start / stop the validator. `--reset` wipes the ledger. |
-| `chain reset` | Wipe the ledger and restart. Do this after a layout change. |
-| `chain status` | Is the validator answering? |
-| `chain wallet` | Show (and create, and fund) the deploy wallet. |
-| `chain build` | Build and publish IDL + types to `chain/idl`. `--program-name` for one. |
-| `chain deploy --cluster localnet` | Deploy. |
-| `chain test` | Anchor tests against the running validator. `--script <name>` for one suite. |
-| `chain airdrop <address>` | Fund a wallet — e.g. your browser wallet. |
-| `chain shell` | A shell inside the toolchain container. |
-| `chain idl` | Republish `chain/idl` without building. |
+| `./stack start` | Everything at once. The command to run when nothing works. |
+| `./stack stop` | Stop the web app and the validator. |
+| `./stack status` | What is up, which programs, which wallet. |
+| `./stack redeploy [prog]` | Build + deploy. The loop after editing a program. |
+| `./stack reset` | Wipe the ledger and redeploy. After a layout change. |
+| `./stack test [suite]` | Anchor tests against the running validator. |
+| `./stack fund <address>` | Give a browser wallet 100 local SOL. |
+| `./stack doctor` | Check the toolchain matches `versions.json`. |
+| `./stack image` | Rebuild the Docker image. |
+| `./stack shell` | A shell inside the toolchain container. |
+| `./stack logs [web\|validator]` | Follow logs. |
+| `./stack check` | Typecheck + unit tests, repo-wide. |
+
+`./stack help` lists the rest. Underneath, the portable CLI is `chain` —
+`chain dev`, `chain build --program-name x`, `chain deploy --cluster localnet`,
+`chain airdrop`, `chain idl`. A project that copies this toolchain gets `chain`
+and writes its own `./stack` (or mounts `chainCommand()` on a CLI it already has).
 
 ## How the types reach the browser
 
@@ -76,13 +86,18 @@ in `tsconfig.base.json` (`paths`) and in `apps/web/vite.config.ts`
 The validator publishes `127.0.0.1:8899` (RPC) and `8900` (websocket) on the
 host, so a browser extension talks to the same chain the container does.
 
-1. In Phantom: Settings → Developer Settings → change network → **Localhost**.
-2. Copy your address, then `badcode chain airdrop <address>`.
+1. In Phantom: **Settings → Developer Settings**, and set the Solana network to
+   **Localnet** (`http://127.0.0.1:8899`).
+2. Copy your address, then `./stack fund <address>`.
 3. Open `/dev/counter`.
 
-Phantom will not connect until the validator is up. Localnet SOL is worthless by
-construction; the account you use here should still not be one holding real
-funds.
+**Phantom must be on the same network as the page.** When you approve, Phantom
+sends the transaction over *its own* selected network, not the page's — so with
+Phantom left on Mainnet every click fails with an unhelpful blockhash error while
+the page correctly insists it is on localnet.
+
+Full walkthrough, including what each failure mode looks like:
+[`TESTING.md`](./TESTING.md).
 
 ## Layout, and what is copyable
 

@@ -68,7 +68,7 @@ function Counter() {
     return (
       <p className="counter-hint">
         Connect a wallet set to <strong>localhost:8899</strong>. It needs SOL:{' '}
-        <code>badcode chain airdrop &lt;your address&gt;</code>
+        <code>./stack fund &lt;your address&gt;</code>
       </p>
     )
   }
@@ -115,7 +115,7 @@ function Counter() {
         // not, and the fix is not one anyone guesses.
         <p className="counter-error">
           This account does not match the program&rsquo;s current layout — it was written before
-          the last change. Run <code>badcode chain reset</code> and redeploy. ({readError.message})
+          the last change. Run <code>./stack reset</code>. ({readError.message})
         </p>
       ) : null}
 
@@ -153,9 +153,9 @@ export function CounterPage() {
         <footer className="counter-footer">
           <p>
             Change <code>STEP</code> in <code>chain/programs/counter/src/lib.rs</code>, then{' '}
-            <code>badcode chain build &amp;&amp; badcode chain deploy --cluster localnet</code>. The button
+            <code>./stack redeploy counter</code>. The button
             starts adding a different number, and the types on this page change with it. Change an
-            account field and run <code>badcode chain reset</code> first, or the old data will not
+            account field and run <code>./stack reset</code> first, or the old data will not
             decode.
           </p>
         </footer>

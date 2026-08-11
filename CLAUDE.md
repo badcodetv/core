@@ -52,6 +52,13 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
 
 ## How to work in this repo
 
+- **Run anything locally: `./stack`.** One script at the repo root is the entry point for
+  every local service — `./stack start` (Solana validator in Docker, programs deployed, web
+  app), `./stack stop`, `./stack status`, `./stack redeploy`, `./stack test`, `./stack check`.
+  `./stack help` lists them. Do **not** write `badcode …` or `chain …` in docs or UI copy:
+  those are workspace symlinks under `node_modules/.bin` and are not on anyone's PATH.
+  On-chain work: [`chain/README.md`](./chain/README.md); browser walkthrough:
+  [`chain/TESTING.md`](./chain/TESTING.md).
 - **Run the site:** `npm install` then `npm run dev` (Vite, port 5173). `npm run typecheck` and
   `npm run build` from the root cover all workspaces.
 - **Three skills do the creative heavy lifting** (`.claude/skills/`): **`new-story`** captures and
