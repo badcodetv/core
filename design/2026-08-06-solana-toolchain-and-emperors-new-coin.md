@@ -7,7 +7,7 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: in progress — **15 of 27 tickets done. Next: T11.**
+Status: in progress — **15 of 27 done, T11 code complete. Next: T12, after the T11 delegate ruling.**
 Date: 2026-08-06
 Relates: `docs/stories/magic-money-tree/emperors-new-coin.md` (canon — the coin
 is a cryptocurrency folded into the Magic Money Tree story, cross-promoted with
@@ -28,8 +28,8 @@ this table is the map.
 | ✅ | T8 · `initialize` + `init_asset` ×10 | program |
 | ✅ | T9 · oracle trait + MockOracle behind a Cargo feature | program |
 | ✅ | T10 · `sync_m2` — supply targeting, the core | program |
-| ⬜ | **T11 · rent accrual, `settle_rent`, `foreclose`** ← **you are here** | program |
-| ⬜ | T12 · `buy_asset` — the forced sale | program |
+| 🟡 | T11 · rent accrual, `settle_rent`, `foreclose` — code done, 7 tests need T12 | program |
+| ⬜ | **T12 · `buy_asset` — the forced sale** ← **you are here** (needs the T11 ruling) | program |
 | ⬜ | T13 · the faucet — register-now, collect-next-epoch | program |
 | ⬜ | T14 · economic simulation harness | economics |
 | ⬜ | T15 · choose the genesis parameters | economics |
@@ -931,7 +931,7 @@ upgrade authority is burned at T22.
   **`--features` build no longer publishes the IDL**, or the committed interface
   flips with whichever build ran last.
 
-### T11: Rent accrual, `settle_rent`, `foreclose`   [Status: pending | Model: opus]
+### T11: Rent accrual, `settle_rent`, `foreclose`   [Status: code DONE 2026-08-11, tests part-blocked on T12 | Model: opus]
 - **Scope:** Lazy rent from `last_touched` at the configured per-day rate against
   the *current interpolated* price. `settle_rent` (permissionless) moves owed rent
   from holder to vault. `foreclose` (permissionless) returns the asset to the
@@ -946,8 +946,21 @@ upgrade authority is burned at T22.
 - **TDD:** yes
 - **Validation:** `./stack cargo test -p emperors-new-coin --lib && ./stack test test-rent`.
 - **Depends on:** T10
-- [ ] done
-- Notes:
+- [ ] done — code complete; 7 acceptance cases pending a holder (T12)
+- Notes: **OPEN DECISION FOR KAI.** "Permissionless" + "moves tokens from holder
+  to vault" cannot both hold for a classic SPL token unless the program is a
+  **delegate**. Implemented that way: `buy_asset` will make the vault an
+  unlimited delegate over the buyer's ENC, signed by the buyer. The bargain
+  becomes "to hold a flag you sign away control of your money" — thematically
+  perfect, but it is a real cost to players. A holder can `revoke`, after which
+  rent stops being collectable and foreclosure follows. **Alternative:** drop
+  "permissionless" from `settle_rent` and collect only at sale and foreclosure.
+  Confirm before T12 builds on it.
+  Foreclosure needs debt > balance **and** grace — either alone lets a solvent
+  holder be evicted by anyone patient, or evicts on the first cent of shortfall.
+  Bounty capped at the vault balance so a poor vault cannot block foreclosure.
+  Debt dies with the tenancy. **Localnet headroom raised 500KB → 1MB** — the
+  program now lands near 530KB and overran the old reservation.
 
 ### T12: `buy_asset` — the forced sale   [Status: pending | Model: opus]
 - **Scope:** Anyone buys any asset at the current interpolated price. Atomically:
