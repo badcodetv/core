@@ -22,27 +22,39 @@ the source of truth; the frontmatter carries only settings.
 
 ## Style
 
-771 chars, of a 1,000 limit. Generate with the **Karen Voice attached** (audio
+939 chars, of a 1,000 limit. Generate with the **Karen Voice attached** (audio
 influence 40–60) — the lead identity now comes from the Voice, not from these
-words; the prompt's job is the band and the choir.
+words; the prompt's job is the band and the choir. Round 2's dilution warning
+still stands in general, but it applied when the vocal clause had to out-shout
+the genre tag; the Voice pins the lead now, which is what buys the extra ~170
+chars the spy-band clause costs.
+
+**Never write "James Bond" or "007" in any box.** Trademarked terms trip Suno's
+moderation, and even when they pass they're a weaker pointer than the era plus
+the instruments. Say *1960s Cold War spy-thriller* and name the twang.
 
 ```
-A whining, honking, nagging New York woman mid-complaint, kvetching over a beat — comedy character actress delivery, musical-theatre patter, sitcom squawk. Sharp nasal honk right through the nose, pinched and shrill, bratty and cartoonish, flat hard vowels, over-enunciated consonants, every line curling up into an exaggerated whine. She scolds, she huffs, she sighs through her teeth. Boom Bap Hip Hop at 86 BPM underneath her: a cheap on-hold muzak loop — telephone-EQ'd Rhodes and muted trumpet. Touch-tone beeps as percussion. Brushed drums, walking upright bass, warm and unhurried. On the chorus a lush, smooth, polished group choir sings the answers — pretty as hold music, never her. Muffled telephone-filtered clerks answer from behind the beat. Vinyl crackle.
+A whining, honking, nagging New York woman mid-complaint, kvetching over a beat — comedy character actress delivery, musical-theatre patter, sitcom squawk. Sharp nasal honk right through the nose, pinched and shrill, bratty and cartoonish, flat hard vowels, over-enunciated consonants, every line curling up into an exaggerated whine. She scolds, she huffs, she sighs through her teeth. Under her, a 1960s Cold War spy-thriller big band crossed with 86 BPM boom bap: twangy tremolo surf guitar, brooding and stabbing brass stingers, sustained minor-key strings, walking upright bass, brushed drums, unresolved minor-ninth tension. A cheap on-hold muzak loop of telephone-EQ'd Rhodes and muted trumpet. Touch-tone beeps as percussion. On the chorus a lush, smooth, polished group choir sings the answers — sweeping and cinematic, pretty as hold music, never her. Muffled telephone-filtered clerks answer from behind the beat. Vinyl crackle.
 ```
 
 ## Exclude styles
 
-358 chars. **Smooth-vocal words removed** as of round 8 — the Voice pins the
+333 chars. **Smooth-vocal words removed** as of round 8 — the Voice pins the
 lead now, and the excludes were strangling the choir we *want* on the chorus.
+**`orchestral` and `rock guitar` removed round 9** — they were vetoing the two
+things the spy band is built on (sweeping strings, twangy surf guitar). The
+`kazoo / slide whistle / circus / honky tonk piano` novelty block stays and now
+does double duty: it is the only thing standing between a spy-thriller
+arrangement and a comedy pastiche.
 
 ```
-soulful, r&b, neo-soul, melodic rap, warm alto, sultry, breezy, laid-back, chill, cool, swagger, charismatic, confident rapper, relaxed delivery, kazoo, slide whistle, circus, honky tonk piano, drum and bass, jungle, trap hi-hats, drill, shouted vocals, screaming, autotune, edm, dubstep, rock guitar, orchestral, uptempo, dance, gospel choir, whisper vocals
+soulful, r&b, neo-soul, melodic rap, warm alto, sultry, breezy, laid-back, chill, cool, swagger, charismatic, confident rapper, relaxed delivery, kazoo, slide whistle, circus, honky tonk piano, drum and bass, jungle, trap hi-hats, drill, shouted vocals, screaming, autotune, edm, dubstep, uptempo, dance, gospel choir, whisper vocals
 ```
 
 ## Lyrics
 
 ```lyrics
-[Intro | dial tone into a cheap hold-muzak loop | touch-tone beeps as percussion]
+[Intro | dial tone into a cheap hold-muzak loop | twangy tremolo guitar and a brass sting | touch-tone beeps as percussion]
 (Thank you for calling. Your call is important to us.)
 (Press one for claims. Press two for appeals.)
 (Press three to speak to an adviser.)
@@ -106,7 +118,7 @@ Deputy Secretary. Somebody's aide's aide.
 (Ma'am, this line is for emergencies) — well. Look what I made.
 Chief of Staff at midnight, sounding tired and small,
 (Who IS this woman?) — Karen. From the payphone. That's all.
-[Final Chorus | full choir, biggest and smoothest | lead at her most nasal, shrill and strained | wah wide open]
+[Final Chorus | full choir, biggest and smoothest, sweeping cinematic swell | brass stabs behind her | lead at her most nasal, shrill and strained | wah wide open]
 (I'm sorry, I can't help you)
 That's OK.
 (There is nobody above me)
@@ -134,7 +146,7 @@ of the house profile before overwriting, and restore it afterwards.** Also toggl
 
 ```
 Vocals: Whining, honking, nagging American women — comedy character actresses, not vocalists, kvetching and complaining over the beat. Sharp nasal squawk right through the nose, pinched and shrill, bratty cartoonish sitcom delivery, flat hard vowels, over-enunciated consonants, lines curling up into an exaggerated whine. Scolding, huffing, impatient, sighing through the teeth. Musical-theatre patter and comic-monologue delivery. Backing: muffled telephone-filtered clerks answering from behind the beat, low in the mix.
-Core sound: Dusty 86 BPM boom bap and soul-jazz built out of telephone hold-muzak, touch-tone beeps and dial tone. Warm, unhurried and sincere — the comedy lives entirely in the voice and the words, never in the music.
+Core sound: Dusty 86 BPM boom bap crossed with 1960s Cold War spy-thriller big band, built out of telephone hold-muzak, touch-tone beeps and dial tone. Twangy tremolo surf guitar, brooding and stabbing brass, sustained minor-key strings, unresolved minor-ninth tension. Played dead straight and sincere — the comedy lives entirely in the voice and the words, never in the music.
 Production: Cheap on-hold loops that never resolve, telephone-EQ'd Rhodes and muted trumpet, brushed drums, walking upright bass, vinyl crackle, band-passed phone-line tone on the background voices.
 Lyrics & mood: Bureaucratic escalation, hold queues, benefits offices, being passed up a ladder of functionaries. Dry sarcasm, weaponised politeness, American working-class grievance.
 Structure: Call-and-response choruses, a fixed hook answered by a functionary, one spoken bridge where the voice drops its edge.
@@ -173,9 +185,13 @@ the bridge, and it's the whole political point of the story in four lines.
   melodic element; touch-tone beeps are the percussion; dial tone opens and closes
   the track. This is what keeps an absurd premise from turning into a novelty
   record — the joke is audible without the arrangement playing it for laughs.
-- **The arrangement stays sincere; only the voice is annoyed.** Warm, unhurried,
-  soul-jazz. Every comedic word was deliberately stripped from the style prompt
-  (see revision log) — "comedic deadpan" summons vaudeville.
+- **The arrangement stays sincere; only the voice is annoyed.** Every comedic
+  word was deliberately stripped from the style prompt (see revision log) —
+  "comedic deadpan" summons vaudeville. **Round 9 amended what "sincere" means
+  here**: it used to also mean *warm and unhurried* soul-jazz; it now means
+  *dead straight* — the spy band plays menace with a completely straight face.
+  Sincerity is the guard against novelty, and it survives the change. Warmth was
+  never the guard, and it was fighting the brass stabs.
 - **The vocal is an arc, not a state.** Brittle and put-upon in Verse 1, sighing
   and exasperated in Verse 2, thin and strained by Verse 3. She never raises her
   voice — the tightening *is* the escalation. The one place she's genuinely
@@ -253,6 +269,52 @@ vocal phrasing — the whole-track source is 95% the Lauryn lead, and a trimmed
 designed mechanism for exactly this.
 
 ## Revision log
+
+**2026-08-11 (round 9) — the institution gets a villain's theme.** Kai: the tune
+is landing, but it wants to feel like a sixties spy-thriller title sequence. Not
+a rewrite — a sidestep. The track was *already* sitting on the noir-jazz core
+(muted trumpet, walking upright bass, brushed drums); spy jazz is that plus the
+twang and the stabs.
+
+**Say the era, never the franchise.** "James Bond" and "007" are trademarked
+terms that trip Suno's moderation, and practitioner consensus is that even when
+they pass they steer worse than `1960s Cold War spy thriller` does. Same lesson
+as round 2 in a new coat: name the sound, not the reference.
+
+What actually carries the signal, and the words for each: the Vic Flick guitar
+(`twangy tremolo surf guitar`), Barry's brass — shrill and jabbing, not warm
+(`brooding and stabbing brass stingers`, `overblown trumpets`), the Bond chord
+itself, an Em(maj9) (`unresolved minor-ninth tension`), and the strings
+(`sustained minor-key strings`, `sweeping`). The original is scored for five
+saxes, nine brass, solo guitar and rhythm section — big band minus the piano,
+which is roughly what we already had.
+
+**Two Bond sounds, two slots.** The gun-barrel instrumental goes to the band;
+the title-song swell goes to **the choir**, which round 8 already cast as the
+institution. That's the payoff of this round: the bureaucracy gets the villain's
+theme, sweeping and cinematic, and Karen refuses to be impressed by it. The
+prettier and more dangerous the system sounds, the funnier her flat refusal to
+be soothed by it.
+
+Changes: style box gained the spy-band clause replacing `Boom Bap Hip Hop at 86
+BPM underneath her` and the old `warm and unhurried` (771 → 939 chars); excludes
+**dropped `orchestral` and `rock guitar`**, which were vetoing the sweeping
+strings and the surf guitar the style box now asks for — the same box-arguing-
+with-itself bug as round 2's `soul-jazz` vs `soulful`; the intro and final-chorus
+bracket cues gained the twang and the stabs (bracket cues are a proven control
+surface on this track, so spend direction there too); and the **My Taste profile
+was realigned** — round 4 proved it sits upstream as a competing spec, so
+leaving `warm, unhurried` in it while the style box says *stabbing* would have
+re-run that exact failure.
+
+**The risk, stated plainly:** this breaks the standing "warm, unhurried, sincere"
+doctrine, which is what has kept an absurd premise from turning novelty. The
+judgement is that *sincere* was the load-bearing half and *warm* was not — a spy
+band playing menace with a straight face is still straight. But the novelty
+excludes (`kazoo, slide whistle, circus, honky tonk piano`) are now doing more
+work than before. **A/B this against a round-8 take before committing** — if it
+reads as pastiche rather than threat, the arrangement went too far and the fix
+is to keep the twang and drop the brass stingers.
 
 **2026-08-04 (round 8) — the Voice landed; the chorus flips to the institution.**
 The Karen Voice holds across the whole track — the six-round lead-vocal war is
