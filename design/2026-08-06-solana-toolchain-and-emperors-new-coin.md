@@ -7,7 +7,7 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: in progress — **12 of 27 tickets done. Next: T8.**
+Status: in progress — **15 of 27 tickets done. Next: T11.**
 Date: 2026-08-06
 Relates: `docs/stories/magic-money-tree/emperors-new-coin.md` (canon — the coin
 is a cryptocurrency folded into the Magic Money Tree story, cross-promoted with
@@ -25,10 +25,10 @@ this table is the map.
 | ✅ | T24–T27 · Docker toolchain, counter harness, copy-out proof, `./stack` | toolchain |
 | ✅ | T16 · Switchboard feed authored, immutability **proven live** | oracle |
 | ✅ | T7 · program state, `math.rs`, placeholder genesis params | program |
-| ⬜ | **T8 · `initialize` + `init_asset` ×10** ← **you are here** | program |
-| ⬜ | T9 · oracle trait + MockOracle behind a Cargo feature | program |
-| ⬜ | T10 · `sync_m2` — supply targeting, the core | program |
-| ⬜ | T11 · rent accrual, `settle_rent`, `foreclose` | program |
+| ✅ | T8 · `initialize` + `init_asset` ×10 | program |
+| ✅ | T9 · oracle trait + MockOracle behind a Cargo feature | program |
+| ✅ | T10 · `sync_m2` — supply targeting, the core | program |
+| ⬜ | **T11 · rent accrual, `settle_rent`, `foreclose`** ← **you are here** | program |
 | ⬜ | T12 · `buy_asset` — the forced sale | program |
 | ⬜ | T13 · the faucet — register-now, collect-next-epoch | program |
 | ⬜ | T14 · economic simulation harness | economics |
@@ -826,7 +826,7 @@ upgrade authority is burned at T22.
   second claim, `== current − 1` grants eligibility — so the two facts cannot
   disagree with each other.
 
-### T8: `initialize` + `init_asset`   [Status: pending | Model: opus]
+### T8: `initialize` + `init_asset`   [Status: DONE 2026-08-11 | Model: opus]
 - **Scope:** `initialize` creates the classic-SPL ENC mint (6 decimals, mint
   authority = vault PDA, **freeze authority `None`**), the vault PDA and its ATA,
   `Config` (immutable) and `Printer`, and mints a bootstrap supply from a
@@ -849,10 +849,25 @@ upgrade authority is burned at T22.
   invoking ts-mocha on `tests/initialize.ts`; `./stack test <name>` passes it to
   `anchor test --script`, which reuses the running validator).
 - **Depends on:** T7
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 20 tests green. **Three decisions the ticket did not specify.** (1) Both
+  instructions gate on the loader's own `ProgramData` upgrade-authority record —
+  the plan said "deployer, once" without saying how, and without a gate a
+  stranger could `initialize` between our deploy and our first transaction and
+  choose every parameter permanently. No new key: the authority already exists
+  and is burned at T22. (2) The ENC mint and the ten NFT mints are **PDAs**
+  (`b"mint"`, `b"asset_mint" + index`), so no deployer keypair ever holds a mint.
+  (3) Assets must be created **in order**, which makes `initialized_assets`
+  exactly "how many exist" for `sync_m2` to trust.
+  **Anchor evaluates `init` before bare `constraint =`**, so an authority gate
+  does not short-circuit account creation — a stranger aiming at an *existing*
+  account gets "already in use" and never reaches the check. Atomicity means the
+  gate still holds; it means a test must aim at a *fresh* index to prove it.
+  **The ten asset names are still placeholders**, living only in the test —
+  naming them is Kai and Jack's call, and costs one bootstrap call, not a
+  redeploy.
 
-### T9: Oracle abstraction + MockOracle   [Status: pending | Model: sonnet]
+### T9: Oracle abstraction + MockOracle   [Status: DONE 2026-08-11 | Model: opus]
 - **Scope:** A trait returning `(m2_value, release_date)`, with `switchboard`
   (stubbed until T18) and `mock` implementations behind a Cargo feature. Add
   `./stack enc mock-m2`. **Also add `--features <list>` to `chain build`** — it
@@ -869,10 +884,17 @@ upgrade authority is burned at T22.
   then `./stack build --features mock && grep -q set_mock_m2 chain/idl/emperors_new_coin.json`.
   (Note `grep -c` prints `0` but **exits 1**, so it cannot be used here.)
 - **Depends on:** T8
-- [ ] done
-- Notes:
+- [x] done
+- Notes: Both grep directions verified. `anchor build -- --features x` **does**
+  forward (unlike `anchor deploy`, which drops everything after `--`). The `mock`
+  feature also scopes `anchor-lang/init-if-needed`, so a default build cannot use
+  that pattern anywhere. `./stack enc` routes to the **badcode** CLI, not the
+  chain one — ENC commands must never enter `@badcode/chain-cli`. Proven live:
+  `./stack enc mock-m2 22176.1`. Note the real Switchboard path is a stub
+  returning `OracleUnavailable`, so a default build cannot sync until T18; the
+  two things T18 must get right are recorded in `oracle.rs`.
 
-### T10: `sync_m2` — supply targeting and guards   [Status: pending | Model: opus]
+### T10: `sync_m2` — supply targeting and guards   [Status: DONE 2026-08-11 | Model: opus]
 - **Scope:** The permissionless core. Read the oracle; **require the release date
   to have strictly advanced** (anti-double-mint); reject a change beyond
   `max_change_bps`; cap any single mint; compute `target = k × m2` in `u128` and
@@ -895,8 +917,19 @@ upgrade authority is burned at T22.
 - **TDD:** yes
 - **Validation:** `./stack cargo test -p emperors-new-coin --lib && ./stack test test-sync`.
 - **Depends on:** T9
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 12 tests. **Rent is banked before prices rescale** — rent accrues from
+  `last_touched` against the curve, so replacing the curve without settling would
+  retroactively recompute every unpaid day at the new prices. Not in the ticket;
+  it is a correctness requirement the design implies. The ten assets arrive as
+  `remaining_accounts` (naming them exceeds the tx size limit) and each is
+  **re-derived, not trusted** — without that, ten copies of asset 0 rescale it
+  ten times. The uncovered-burn acceptance case is **deliberately pending**: it
+  is unreachable while the vault holds every token, so it is enabled at T13.
+  Toolchain fallout: suites run through **mocha + tsx** (ts-mocha cannot resolve
+  TS-importing-TS as ESM, so a shared harness was impossible), and a
+  **`--features` build no longer publishes the IDL**, or the committed interface
+  flips with whichever build ran last.
 
 ### T11: Rent accrual, `settle_rent`, `foreclose`   [Status: pending | Model: opus]
 - **Scope:** Lazy rent from `last_touched` at the configured per-day rate against
