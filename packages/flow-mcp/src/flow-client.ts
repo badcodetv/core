@@ -4,7 +4,15 @@ import { collectNewCanvases, pickActiveCanvas, type CanvasImg } from './canvas'
 import { toCanvasImgs, SCRAPE_IMGS, type RawImg } from './dom'
 import { harvestToFile, contentTypeOf } from './harvest'
 import { pickProject, projectIdFromHref, toProjectSummaries, SCRAPE_PROJECTS, type ProjectTile, type ProjectSummary } from './project'
-import { batchOutPath } from './batch'
+import {
+  batchOutPath,
+  emptyBatchAccumulator,
+  finalizeBatch,
+  foldBatchOutcome,
+  type BatchOutcome,
+  type BatchResult,
+} from './batch'
+export type { BatchItem, BatchFailure, BatchResult } from './batch'
 import { candidateOutPath } from './candidates'
 import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, aspectAlreadySelected } from './compose'
 import { classifyCard, ANY_CARD_RE, type CardState } from './failure-card'
@@ -43,7 +51,6 @@ const VIDEO_POLL_MS = 3_000
 export interface ImageResult { path: string; mediaId: string; width: number; height: number }
 export interface EditResult { candidates: ImageResult[]; partial?: boolean }
 export interface MediaResult { path: string; mediaId: string }
-export interface BatchItem { index: number; prompt: string; path: string; mediaId: string; width: number; height: number }
 export interface CharacterRef { name: string }
 export interface FlowStatus { loggedIn: boolean; projectOpen: boolean; url: string }
 
@@ -921,20 +928,64 @@ export class FlowClient {
     await this.clickSubmit()
   }
 
-  async generateBatch(prompts: string[], outDir: string, opts?: { model?: string; aspect?: string }): Promise<BatchItem[]> {
+  /**
+   * Generate N images sequentially in ONE Flow session, one submit-wait-harvest turn per
+   * prompt. `character` reuses `submitWithCharacter` — the SAME inline-chip append path
+   * `generateImage`/`editImage` already use — rather than a second casting mechanism; there
+   * being exactly one way to cast a Character into a turn is deliberate. `numOutputs` is
+   * per PROMPT (each turn yields that many candidates), asserted once via `ensureImageMode`
+   * before the first turn since it's the same for every prompt in the batch; multi-candidate
+   * items are harvested through the existing `harvestCandidates`/`candidateOutPath` machinery
+   * exactly like `generateImage` does — item 3 at numOutputs=2 lands at `<outDir>/03-a.jpg`,
+   * `03-b.jpg`, not a second naming scheme invented for batch.
+   *
+   * Never throws on a single prompt's failure. See `batch.ts` (`BatchResult`,
+   * `shouldContinueAfterFailure`) for the full contract; in short: a `POLICY_BLOCKED` prompt
+   * is recorded in `failed` and the batch moves on — that verdict is about the ONE prompt (or
+   * its cast character/reference), not the session, so the rest of the list still has a fair
+   * shot. Any OTHER failure (`TIMEOUT`, `SUBMIT_FAILED`, a raw Playwright error, …) is recorded
+   * and then STOPS the batch, on the theory that it signals the page itself needs recovering —
+   * ploughing through the remaining prompts would just re-fail the same way, paying their full
+   * turn-timeouts for no new information. Either way, everything already harvested comes back
+   * in `items`: nothing earned is thrown away because something later in the list failed.
+   */
+  async generateBatch(
+    prompts: string[],
+    outDir: string,
+    opts?: { model?: string; aspect?: string; character?: string; numOutputs?: number },
+  ): Promise<BatchResult> {
+    const numOutputs = opts?.numOutputs ?? 1
     await this.ensureProjectRoot()
-    await this.ensureImageMode(1, opts?.model, opts?.aspect)
-    const items: BatchItem[] = []
+    await this.ensureImageMode(numOutputs, opts?.model, opts?.aspect)
+    let acc = emptyBatchAccumulator()
     for (let i = 0; i < prompts.length; i++) {
       const prompt = prompts[i]!
-      const before = await this.snapshotMediaNames()
-      await this.submitPrompt(prompt)
-      const { name, width, height } = await this.waitForNewCanvas(before, TURN_TIMEOUT_MS)
-      const path = batchOutPath(outDir, i)
-      await harvestToFile(this.page.request, name, path)
-      items.push({ index: i, prompt, path, mediaId: name, width, height })
+      let outcome: BatchOutcome
+      try {
+        const before = await this.snapshotMediaNames()
+        if (opts?.character) await this.submitWithCharacter(opts.character, prompt)
+        else await this.submitPrompt(prompt)
+        const canvases = await this.waitForNewCanvases(before, numOutputs, TURN_TIMEOUT_MS)
+        const path = batchOutPath(outDir, i)
+        const candidates = await this.harvestCandidates(canvases, path, numOutputs)
+        const first = candidates[0]!
+        outcome = {
+          ok: true,
+          item: {
+            ...first,
+            ...(numOutputs > 1
+              ? { candidates, ...(canvases.length < numOutputs ? { partial: true } : {}) }
+              : {}),
+          },
+        }
+      } catch (err) {
+        outcome = { ok: false, code: err instanceof Error ? err.message : String(err) }
+      }
+      const step = foldBatchOutcome(acc, i, prompt, outcome)
+      acc = step.acc
+      if (!step.continue) break
     }
-    return items
+    return finalizeBatch(acc)
   }
 
   /**

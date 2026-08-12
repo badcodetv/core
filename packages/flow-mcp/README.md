@@ -42,12 +42,25 @@ trusting a number here — this list is being actively extended.
   `ensureProjectRoot`/`ensureImageMode` call) — it trusts whatever state the prior call in
   this process left behind, so it only makes sense immediately after a
   `flow_generate_image`/`flow_edit_image` in the same session.
-- `flow_generate_batch({ prompts, outDir })` — generates up to 8 images sequentially in
-  ONE session, saved `<outDir>/00.jpg`, `01.jpg`, … Returns `BatchItem[]`
-  (`{ index, prompt, path, mediaId, width, height }`). ⚠️ **A failure partway through
-  throws and discards every result already harvested** — there is no partial-batch return
-  yet, so a late failure in a long batch loses the early frames too. Re-run the whole
-  batch, or split it, until this is fixed.
+- `flow_generate_batch({ prompts, outDir, character?, numOutputs?, model?, aspect? })` —
+  generates up to **20** images sequentially in ONE session (raised from 8 — a schema
+  choice, not a Flow limit; batch is serial so a longer list is a longer call, not a
+  heavier one, but there's no per-item timeout budget, so don't push past what one
+  unattended call should reasonably run). Saves `<outDir>/00.jpg`, `01.jpg`, … (`-a`/`-b`…
+  suffixes per prompt when `numOutputs > 1`, same convention as `flow_generate_image`).
+  `character` casts one project Character into every prompt in the batch, via the same
+  path `flow_generate_image` uses. Returns `{ items: BatchItem[], failed: BatchFailure[],
+  partial: boolean }` — **not** a bare array, and **not** all-or-nothing. `items` is every
+  prompt that completed (`{ index, prompt, path, mediaId, width, height, candidates?,
+  partial? }`); `failed` is every prompt that didn't (`{ index, prompt, code, error }`).
+  A `POLICY_BLOCKED` prompt is recorded in `failed` and the batch **keeps going** — that
+  verdict is about the one prompt, not the session, and skipping it is what makes a batch
+  useful for a mixed scene list. Any other failure (`TIMEOUT`, `SUBMIT_FAILED`, …) is
+  recorded and the batch **stops there**, on the theory that it signals the page itself
+  needs recovering, not that prompt-by-prompt retries would help. Either way nothing
+  already harvested is thrown away; resume with `prompts.slice(items.length +
+  failed.length)` once the cause is fixed. Never retry a `POLICY_BLOCKED` entry
+  unmodified — rewrite it per `docs/flow/failure-modes.md`.
 
 ### Video
 - `flow_generate_video({ imagePath, motion, model?, aspect?, count?, outPath })` — uploads
