@@ -434,6 +434,789 @@ export type EmperorsNewCoin = {
       ]
     },
     {
+      "name": "mintCertificate",
+      "docs": [
+        "Issue the current tenancy's certificate to its holder. Immutable at",
+        "issue, never reclaimed, and never worth the asset."
+      ],
+      "discriminator": [
+        53,
+        2,
+        104,
+        84,
+        51,
+        197,
+        179,
+        10
+      ],
+      "accounts": [
+        {
+          "name": "payer",
+          "docs": [
+            "Anyone. The certificate lands in the holder's wallet regardless."
+          ],
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "asset"
+        },
+        {
+          "name": "holder"
+        },
+        {
+          "name": "vault",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  118,
+                  97,
+                  117,
+                  108,
+                  116
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "noneAuthority",
+          "docs": [
+            "encodes \"no update authority\". The System Program's id *is* that key."
+          ],
+          "address": "11111111111111111111111111111111"
+        },
+        {
+          "name": "certMint",
+          "docs": [
+            "Seeded by (asset, term), so one term issues one certificate, ever."
+          ],
+          "writable": true
+        },
+        {
+          "name": "holderCertAccount",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "holder"
+              },
+              {
+                "kind": "account",
+                "path": "tokenProgram"
+              },
+              {
+                "kind": "account",
+                "path": "certMint"
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            }
+          }
+        },
+        {
+          "name": "tokenProgram",
+          "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+        },
+        {
+          "name": "associatedTokenProgram",
+          "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
+        },
+        {
+          "name": "systemProgram",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "index",
+          "type": "u8"
+        },
+        {
+          "name": "term",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "placeBid",
+      "docs": [
+        "Bid on a tenancy, escrowing your own ENC. **Signed by the bidder** —",
+        "which is the entire reason this replaced the forced sale."
+      ],
+      "discriminator": [
+        238,
+        77,
+        148,
+        91,
+        200,
+        151,
+        92,
+        146
+      ],
+      "accounts": [
+        {
+          "name": "bidder",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "asset",
+          "writable": true
+        },
+        {
+          "name": "bid",
+          "writable": true
+        },
+        {
+          "name": "mint"
+        },
+        {
+          "name": "bidderTokenAccount",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "bidder"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            }
+          }
+        },
+        {
+          "name": "escrow",
+          "docs": [
+            "the escrow token account and the only thing that can sign a release."
+          ],
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  101,
+                  115,
+                  99,
+                  114,
+                  111,
+                  119
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "escrowTokenAccount",
+          "docs": [
+            "Every bidder's ENC, pooled. Created on the first bid ever placed."
+          ],
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "escrow"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            }
+          }
+        },
+        {
+          "name": "tokenProgram",
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+        },
+        {
+          "name": "associatedTokenProgram",
+          "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
+        },
+        {
+          "name": "systemProgram",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "index",
+          "type": "u8"
+        },
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "rollTerm",
+      "docs": [
+        "End a term nobody won: the incumbent keeps it, and any stale high bid is",
+        "released to be withdrawn. **Anyone may call this**, and it needs no",
+        "signer at all."
+      ],
+      "discriminator": [
+        63,
+        192,
+        247,
+        236,
+        51,
+        250,
+        42,
+        239
+      ],
+      "accounts": [
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "asset",
+          "writable": true
+        }
+      ],
+      "args": [
+        {
+          "name": "index",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "settleAuction",
+      "docs": [
+        "End a term somebody won: the whole winning bid to the outgoing holder,",
+        "the tenancy to the winner, a fresh term for both. **Anyone may call",
+        "this**, and it asks nothing of either party."
+      ],
+      "discriminator": [
+        246,
+        196,
+        183,
+        98,
+        222,
+        139,
+        46,
+        133
+      ],
+      "accounts": [
+        {
+          "name": "caller",
+          "docs": [
+            "Whoever bothered to run it. Pays for any account this has to create and",
+            "is otherwise not consulted."
+          ],
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "asset",
+          "writable": true
+        },
+        {
+          "name": "winningBid",
+          "docs": [
+            "The winner's escrow record. Closed here; its rent returns to the winner,",
+            "who paid it."
+          ],
+          "writable": true
+        },
+        {
+          "name": "winner",
+          "docs": [
+            "handler checks against the bid account before anything moves."
+          ],
+          "writable": true
+        },
+        {
+          "name": "outgoingHolder",
+          "docs": [
+            "be the vault (the Emperor held it) or the winner (a self-bid renewal)."
+          ]
+        },
+        {
+          "name": "mint"
+        },
+        {
+          "name": "outgoingHolderTokenAccount",
+          "docs": [
+            "Created if absent, payer = caller. Rule 2: nobody gets to veto their own",
+            "eviction by closing an account."
+          ],
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "outgoingHolder"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            }
+          }
+        },
+        {
+          "name": "escrow",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  101,
+                  115,
+                  99,
+                  114,
+                  111,
+                  119
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "escrowTokenAccount",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "escrow"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            }
+          }
+        },
+        {
+          "name": "tokenProgram",
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+        },
+        {
+          "name": "associatedTokenProgram",
+          "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
+        },
+        {
+          "name": "systemProgram",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "index",
+          "type": "u8"
+        }
+      ]
+    },
+    {
       "name": "syncM2",
       "docs": [
         "Read the oracle and move the supply to `k × M2`. **Anyone may call",
@@ -616,6 +1399,269 @@ export type EmperorsNewCoin = {
         }
       ],
       "args": []
+    },
+    {
+      "name": "withdrawBid",
+      "docs": [
+        "Take an escrowed bid back. Always available except while it is the",
+        "standing high bid of a term that has not settled yet."
+      ],
+      "discriminator": [
+        110,
+        53,
+        157,
+        195,
+        147,
+        100,
+        110,
+        73
+      ],
+      "accounts": [
+        {
+          "name": "bidder",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "asset"
+        },
+        {
+          "name": "bid",
+          "docs": [
+            "Closed on the way out, rent back to the bidder who paid it."
+          ],
+          "writable": true
+        },
+        {
+          "name": "mint"
+        },
+        {
+          "name": "bidderTokenAccount",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "bidder"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            }
+          }
+        },
+        {
+          "name": "escrow",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  101,
+                  115,
+                  99,
+                  114,
+                  111,
+                  119
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "escrowTokenAccount",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "escrow"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            }
+          }
+        },
+        {
+          "name": "tokenProgram",
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+        }
+      ],
+      "args": [
+        {
+          "name": "index",
+          "type": "u8"
+        }
+      ]
     }
   ],
   "accounts": [
@@ -630,6 +1676,19 @@ export type EmperorsNewCoin = {
         224,
         160,
         8
+      ]
+    },
+    {
+      "name": "bid",
+      "discriminator": [
+        143,
+        246,
+        48,
+        245,
+        42,
+        145,
+        180,
+        88
       ]
     },
     {
@@ -747,11 +1806,61 @@ export type EmperorsNewCoin = {
     },
     {
       "code": 6014,
+      "name": "bidBelowReserve",
+      "msg": "That bid is below what M2 says this asset is worth"
+    },
+    {
+      "code": 6015,
+      "name": "bidNotHighEnough",
+      "msg": "That bid does not beat the standing high bid"
+    },
+    {
+      "code": 6016,
+      "name": "termEnded",
+      "msg": "This term has ended; it must be settled before bidding reopens"
+    },
+    {
+      "code": 6017,
+      "name": "termNotEnded",
+      "msg": "This term has not ended yet"
+    },
+    {
+      "code": 6018,
+      "name": "staleBidOutstanding",
+      "msg": "Withdraw your bid from the previous term first"
+    },
+    {
+      "code": 6019,
+      "name": "bidIsStanding",
+      "msg": "The standing high bid cannot be withdrawn until the term settles"
+    },
+    {
+      "code": 6020,
+      "name": "wrongBidAccount",
+      "msg": "That is not the standing high bid for this asset"
+    },
+    {
+      "code": 6021,
+      "name": "noQualifyingBid",
+      "msg": "No bid cleared the reserve for this term"
+    },
+    {
+      "code": 6022,
+      "name": "qualifyingBidExists",
+      "msg": "A bid did clear the reserve; this term must be settled"
+    },
+    {
+      "code": 6023,
+      "name": "noCertificateDue",
+      "msg": "No certificate is issuable for that tenancy"
+    },
+    {
+      "code": 6024,
       "name": "alreadyClaimedThisEpoch",
       "msg": "You have already claimed this epoch"
     },
     {
-      "code": 6015,
+      "code": 6025,
       "name": "epochNotSettled",
       "msg": "That epoch is not settled yet"
     }
@@ -807,17 +1916,86 @@ export type EmperorsNewCoin = {
             "type": "i64"
           },
           {
-            "name": "lastTouched",
+            "name": "termNumber",
             "docs": [
-              "When this asset was last written to — set by `init_asset` and by every",
-              "price rescale.",
+              "Which tenancy this is. Starts at 0 (the Emperor's own) and increments at",
+              "every settlement, whether or not the asset changed hands.",
               "",
-              "**Open for T12.** It was the rent clock; rent is gone. The auction needs",
-              "a term anchor, and this field is either it or is replaced by an explicit",
-              "`term_ends_at`. Left here rather than deleted so T12 decides deliberately",
-              "instead of inheriting a guess made during a deletion."
+              "It does two jobs beyond counting: it numbers the certificate, and it is",
+              "what makes a bid *stale* — a bid placed in an earlier term is no longer",
+              "live, so its escrow is always withdrawable."
+            ],
+            "type": "u64"
+          },
+          {
+            "name": "termEndsAt",
+            "docs": [
+              "When the current tenancy ends and anyone may settle it.",
+              "",
+              "Replaces T7's `last_touched`, which was the rent clock. Nothing else",
+              "needed \"when was this last written\" — the price curve carries its own",
+              "window — so an explicit term end is the honest field."
             ],
             "type": "i64"
+          },
+          {
+            "name": "highBid",
+            "docs": [
+              "The standing high bid, in base units. Zero means nobody has bid."
+            ],
+            "type": "u64"
+          },
+          {
+            "name": "highBidder",
+            "docs": [
+              "Who placed it. The default (all-zero) key when there is no high bid.",
+              "",
+              "A bid is *locked* only while it is both the standing high bid and from",
+              "the current term; everything else is withdrawable by its owner alone."
+            ],
+            "type": "pubkey"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "bid",
+      "docs": [
+        "One bidder's escrowed ENC on one asset.",
+        "",
+        "The escrow itself pools in a single token account; this records who is owed",
+        "what. Keyed by (asset, bidder), so a wallet has at most one live bid per",
+        "asset and the accounting cannot drift from the pool."
+      ],
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "assetIndex",
+            "type": "u8"
+          },
+          {
+            "name": "bidder",
+            "type": "pubkey"
+          },
+          {
+            "name": "amount",
+            "docs": [
+              "Base units sitting in escrow against this bid."
+            ],
+            "type": "u64"
+          },
+          {
+            "name": "termNumber",
+            "docs": [
+              "The term this bid was placed in. Once the asset moves past it, the bid",
+              "is dead and the money is the bidder's to take back."
+            ],
+            "type": "u64"
           },
           {
             "name": "bump",
@@ -912,6 +2090,18 @@ export type EmperorsNewCoin = {
             "type": "u16"
           },
           {
+            "name": "termSeconds",
+            "docs": [
+              "How long one tenancy lasts, in seconds.",
+              "",
+              "Aligned with `PRICE_INTERPOLATION_SECONDS` on purpose: a term is exactly",
+              "as long as it takes a price to finish travelling to its new target, so",
+              "each auction settles against a price that has arrived rather than one",
+              "still in motion."
+            ],
+            "type": "i64"
+          },
+          {
             "name": "maxChangeBps",
             "docs": [
               "Largest M2 move, in basis points, this program will believe in one",
@@ -987,6 +2177,10 @@ export type EmperorsNewCoin = {
           {
             "name": "grantsPerEpoch",
             "type": "u16"
+          },
+          {
+            "name": "termSeconds",
+            "type": "i64"
           },
           {
             "name": "maxChangeBps",

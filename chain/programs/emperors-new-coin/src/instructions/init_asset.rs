@@ -5,15 +5,17 @@
 //! limit and the 1232-byte transaction limit — it cannot be made to fit, so
 //! there is no point trying.
 //!
-//! Each asset is a Token-2022 NFT with three extensions that matter:
+//! Each asset is a Token-2022 NFT with **metadata pointer** aimed at the mint
+//! itself, plus **embedded metadata** — so a wallet renders a name and a
+//! picture rather than an anonymous token.
 //!
-//! - **Permanent delegate**, set to the vault. This is what makes the forced
-//!   sale possible: the program moves the NFT out of a holder's wallet without
-//!   their signature. It is literally a rug-pull primitive. For this coin that
-//!   is the thesis, not a smell.
-//! - **Metadata pointer**, aimed at the mint itself, plus **embedded
-//!   metadata** — so a wallet renders a name and a picture rather than an
-//!   anonymous token.
+//! **There is deliberately no permanent delegate.** It was here to make a
+//! forced sale possible, which Ruling A (2026-08-12) removed: the ten NFTs
+//! never leave this program's custody, so no wallet exists to reach into and
+//! the power would have been dead weight — while costing the heaviest flag a
+//! risk scanner issues (`"Permanent Control Enabled"`, danger, weight 50000).
+//! Dropping it is what makes "no token leaves any wallet without its owner's
+//! signature" structurally true rather than merely intended.
 //!
 //! After minting the single unit, the mint authority is set to `None`, which is
 //! what makes it permanently a *non*-fungible token.
@@ -143,7 +145,15 @@ pub fn handler(
     asset.price_to = genesis_price;
     asset.interp_start = now;
     asset.interp_end = now;
-    asset.last_touched = now;
+    // Term 0 is the Emperor's own, and it starts ticking immediately — so the
+    // first auction can be settled a term after the coin exists, with no
+    // separate "open the market" instruction to forget to call.
+    asset.term_number = 0;
+    asset.term_ends_at = now
+        .checked_add(ctx.accounts.config.term_seconds)
+        .ok_or(error!(EncError::MathOverflow))?;
+    asset.high_bid = 0;
+    asset.high_bidder = Pubkey::default();
     asset.bump = ctx.bumps.asset;
 
     ctx.accounts.config.initialized_assets = index + 1;
@@ -169,7 +179,7 @@ pub struct InitAsset<'info> {
     #[account(mut, seeds = [CONFIG_SEED], bump = config.bump)]
     pub config: Account<'info, Config>,
 
-    /// CHECK: signer-only PDA; mint authority, permanent delegate and holder.
+    /// CHECK: signer-only PDA; mint authority and custodian of every asset.
     #[account(seeds = [VAULT_SEED], bump)]
     pub vault: UncheckedAccount<'info>,
 
@@ -194,7 +204,6 @@ pub struct InitAsset<'info> {
         mint::token_program = token_program,
         extensions::metadata_pointer::authority = vault,
         extensions::metadata_pointer::metadata_address = asset_mint,
-        extensions::permanent_delegate::delegate = vault,
         seeds = [ASSET_MINT_SEED, &[index]],
         bump,
     )]

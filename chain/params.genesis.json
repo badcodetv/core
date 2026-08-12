@@ -14,6 +14,12 @@
     "placeholder": true
   },
 
+  "tenancy": {
+    "termSeconds": 2592000,
+    "_": "How long one tenancy lasts before anyone may settle it: 30 days, deliberately equal to prices.interpolationSeconds so an auction settles against a price that has finished travelling rather than one still in motion. There is no holding cost - the term IS the mechanism by which assets change hands (Ruling A, 2026-08-12).",
+    "placeholder": true
+  },
+
   "faucet": {
     "alphaBps": 1000,
     "welcomeGrant": 1000000000,

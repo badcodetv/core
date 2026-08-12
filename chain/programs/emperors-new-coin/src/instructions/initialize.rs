@@ -33,6 +33,7 @@ pub struct InitializeParams {
     pub floor_bps: u16,
     pub welcome_grant: u64,
     pub grants_per_epoch: u16,
+    pub term_seconds: i64,
     pub max_change_bps: u16,
     pub max_single_mint: u64,
 }
@@ -54,6 +55,7 @@ pub fn handler(ctx: Context<Initialize>, params: InitializeParams) -> Result<()>
     config.floor_bps = params.floor_bps;
     config.welcome_grant = params.welcome_grant;
     config.grants_per_epoch = params.grants_per_epoch;
+    config.term_seconds = params.term_seconds;
     config.max_change_bps = params.max_change_bps;
     config.max_single_mint = params.max_single_mint;
     config.initialized_assets = 0;
@@ -105,6 +107,9 @@ fn validate(p: &InitializeParams) -> Result<()> {
     // A share of something cannot exceed the whole of it.
     require!(p.floor_bps as u128 <= BPS, EncError::InvalidRate);
     require!(p.faucet_alpha_bps as u128 <= BPS, EncError::InvalidRate);
+    // A term of zero (or less) would expire the instant it began, so every
+    // asset would sit permanently settleable and no bid could ever be placed.
+    require!(p.term_seconds > 0, EncError::InvalidRate);
     // A cap of zero would reject every sync forever, permanently freezing the
     // peg — the one thing the coin exists to do.
     require!(p.max_change_bps > 0, EncError::ChangeTooLarge);

@@ -90,6 +90,70 @@ pub enum EncError {
     #[msg("Invalid price interpolation window")]
     InvalidInterpolationWindow,
 
+    // ── The auction ─────────────────────────────────────────────────────────
+    /// A bid below the reserve — the asset's current interpolated price.
+    ///
+    /// The reserve is what M2 says the asset is worth, so a flag can never
+    /// change hands below it. It moves during a term, which is why settlement
+    /// checks it again rather than trusting the check made at bid time.
+    #[msg("That bid is below what M2 says this asset is worth")]
+    BidBelowReserve,
+
+    /// A bid that did not beat the standing high bid.
+    #[msg("That bid does not beat the standing high bid")]
+    BidNotHighEnough,
+
+    /// A bid arrived after the term had already ended.
+    ///
+    /// Settlement is permissionless but nobody is obliged to run it, so a term
+    /// can sit expired for a while. Accepting bids in that window would mean
+    /// bidding against a reserve that is about to be re-checked.
+    #[msg("This term has ended; it must be settled before bidding reopens")]
+    TermEnded,
+
+    /// `settle_auction` before the term's published end.
+    #[msg("This term has not ended yet")]
+    TermNotEnded,
+
+    /// A bid from an earlier term is still in escrow.
+    ///
+    /// Withdraw it first. Rolling it forward automatically would mean money
+    /// re-entering an auction its owner never chose to join.
+    #[msg("Withdraw your bid from the previous term first")]
+    StaleBidOutstanding,
+
+    /// `withdraw_bid` by the standing high bidder of the live term.
+    ///
+    /// The only locked escrow in the program, and only until settlement — at
+    /// which point it either buys the tenancy or is released.
+    #[msg("The standing high bid cannot be withdrawn until the term settles")]
+    BidIsStanding,
+
+    /// The winning bid account passed to `settle_auction` was not the standing
+    /// high bidder's.
+    #[msg("That is not the standing high bid for this asset")]
+    WrongBidAccount,
+
+    /// `settle_auction` on a term no bid won. Roll it over instead.
+    ///
+    /// The two outcomes are separate instructions on purpose: their account
+    /// lists genuinely differ, and an explorer showing `settle_auction` versus
+    /// `roll_term` says which of the two things happened without decoding
+    /// anything.
+    #[msg("No bid cleared the reserve for this term")]
+    NoQualifyingBid,
+
+    /// `roll_term` on a term that has a winner. Settle it instead.
+    #[msg("A bid did clear the reserve; this term must be settled")]
+    QualifyingBidExists,
+
+    /// A certificate for a term the asset has already moved past, or for a
+    /// tenancy the Emperor holds.
+    ///
+    /// The vault gets no receipt: it never won anything.
+    #[msg("No certificate is issuable for that tenancy")]
+    NoCertificateDue,
+
     // ── Faucet ──────────────────────────────────────────────────────────────
     /// A second `claim` in the same epoch.
     #[msg("You have already claimed this epoch")]

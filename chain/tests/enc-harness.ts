@@ -31,6 +31,22 @@ export const ASSET_COUNT = 10
 /** PRICE_INTERPOLATION_SECONDS in state.rs. */
 export const INTERPOLATION_SECONDS = 30 * 86_400
 
+/**
+ * The tenancy term this ledger runs, in seconds.
+ *
+ * **Deliberately not `params.genesis.json`'s 30 days.** A term is the clock the
+ * auction turns on, so every settlement case — term end, the reserve re-check,
+ * the stale-bid release — is unreachable without waiting one out. Twelve
+ * seconds is long enough for a bid to land over RPC and short enough that a
+ * suite can sit through several.
+ *
+ * The shipped value stays in `params.genesis.json` and is chosen at T15; what
+ * is tested here is the *mechanism*, which does not care how long a term is.
+ * `initialize.ts` asserts `Config` carries this number rather than the genesis
+ * one, so the substitution is visible rather than silently assumed.
+ */
+export const TERM_SECONDS = 12
+
 export interface Harness {
   provider: anchor.AnchorProvider
   program: anchor.Program<EmperorsNewCoin>
@@ -48,6 +64,11 @@ export interface Harness {
   vaultEncAta: PublicKey
   assetPda: (i: number) => PublicKey
   assetMintPda: (i: number) => PublicKey
+  escrowPda: PublicKey
+  escrowEncAta: PublicKey
+  bidPda: (i: number, bidder: PublicKey) => PublicKey
+  certPda: (i: number, term: bigint) => PublicKey
+  encAta: (owner: PublicKey) => PublicKey
   vaultAta: (mint: PublicKey, tokenProgram: PublicKey) => PublicKey
   exists: (key: PublicKey) => Promise<boolean>
   failureOf: (run: () => Promise<unknown>) => Promise<string>
@@ -58,6 +79,7 @@ export interface Harness {
 interface Params {
   peg: { k: number }
   vault: { floorBps: number }
+  tenancy: { termSeconds: number }
   faucet: { alphaBps: number; welcomeGrant: number; grantsPerEpoch: number }
   sanity: { maxChangeBps: number; maxSingleMint: number }
 }
@@ -73,11 +95,22 @@ export function harness(): Harness {
 
   const vaultPda = pda([Buffer.from('vault')])
   const mintPda = pda([Buffer.from('mint')])
-  const vaultAta = (mint: PublicKey, tokenProgram: PublicKey) =>
+  const escrowPda = pda([Buffer.from('escrow')])
+  const ataFor = (owner: PublicKey, mint: PublicKey, tokenProgram: PublicKey) =>
     PublicKey.findProgramAddressSync(
-      [vaultPda.toBuffer(), tokenProgram.toBuffer(), mint.toBuffer()],
+      [owner.toBuffer(), tokenProgram.toBuffer(), mint.toBuffer()],
       ATA_PROGRAM,
     )[0]
+  const vaultAta = (mint: PublicKey, tokenProgram: PublicKey) =>
+    ataFor(vaultPda, mint, tokenProgram)
+  const encAta = (owner: PublicKey) => ataFor(owner, mintPda, TOKEN_PROGRAM_ID)
+
+  /** Little-endian u64, matching `cert_seeds` in state.rs. */
+  const termLe = (term: bigint) => {
+    const b = Buffer.alloc(8)
+    b.writeBigUInt64LE(term)
+    return b
+  }
 
   // Resolved from this file rather than the working directory: mocha loads
   // these as ES modules, where __dirname does not exist.
@@ -104,6 +137,12 @@ export function harness(): Harness {
     vaultEncAta: vaultAta(mintPda, TOKEN_PROGRAM_ID),
     assetPda: (i) => pda([Buffer.from('asset'), Buffer.from([i])]),
     assetMintPda: (i) => pda([Buffer.from('asset_mint'), Buffer.from([i])]),
+    escrowPda,
+    escrowEncAta: ataFor(escrowPda, mintPda, TOKEN_PROGRAM_ID),
+    bidPda: (i, bidder) =>
+      pda([Buffer.from('bid'), Buffer.from([i]), bidder.toBuffer()]),
+    certPda: (i, term) => pda([Buffer.from('cert'), Buffer.from([i]), termLe(term)]),
+    encAta,
     vaultAta,
     exists: async (key) => (await connection.getAccountInfo(key)) !== null,
 
@@ -150,6 +189,9 @@ export function initParams(h: Harness) {
     floorBps: h.params.vault.floorBps,
     welcomeGrant: new BN(h.params.faucet.welcomeGrant),
     grantsPerEpoch: h.params.faucet.grantsPerEpoch,
+    // See TERM_SECONDS: the genesis 30 days would make every settlement case
+    // untestable, and the mechanism is indifferent to the number.
+    termSeconds: new BN(TERM_SECONDS),
     maxChangeBps: h.params.sanity.maxChangeBps,
     maxSingleMint: new BN(h.params.sanity.maxSingleMint),
   }
@@ -264,6 +306,119 @@ export function setMockM2(h: Harness, m2Value: bigint, releaseDate: number): Pro
     .setMockM2(new BN(m2Value.toString()), new BN(releaseDate))
     .accounts({ payer: h.authority })
     .rpc()
+}
+
+/** Move vault ENC to a wallet. Mock builds only — see `mock_fund.rs`. */
+export function mockFund(h: Harness, recipient: PublicKey, amount: bigint): Promise<string> {
+  const methods = h.program.methods as unknown as Record<
+    string,
+    (...args: unknown[]) => { accounts(a: unknown): { rpc(): Promise<string> } }
+  >
+  if (typeof methods.mockFund !== 'function') {
+    throw new Error(
+      'This suite needs a mock build. Use `./stack test`, which builds the ENC program with --features mock.',
+    )
+  }
+  return methods
+    .mockFund(new BN(amount.toString()))
+    .accounts({
+      payer: h.authority,
+      config: h.configPda,
+      recipient,
+      vault: h.vaultPda,
+      mint: h.mintPda,
+      vaultTokenAccount: h.vaultEncAta,
+      recipientTokenAccount: h.encAta(recipient),
+      tokenProgram: TOKEN_PROGRAM_ID,
+      associatedTokenProgram: ATA_PROGRAM,
+      systemProgram: SYSTEM,
+    })
+    .rpc()
+}
+
+export function placeBidAccounts(h: Harness, i: number, bidder: PublicKey) {
+  return {
+    bidder,
+    config: h.configPda,
+    asset: h.assetPda(i),
+    bid: h.bidPda(i, bidder),
+    mint: h.mintPda,
+    bidderTokenAccount: h.encAta(bidder),
+    escrow: h.escrowPda,
+    escrowTokenAccount: h.escrowEncAta,
+    tokenProgram: TOKEN_PROGRAM_ID,
+    associatedTokenProgram: ATA_PROGRAM,
+    systemProgram: SYSTEM,
+  }
+}
+
+export function withdrawBidAccounts(h: Harness, i: number, bidder: PublicKey) {
+  return {
+    bidder,
+    config: h.configPda,
+    asset: h.assetPda(i),
+    bid: h.bidPda(i, bidder),
+    mint: h.mintPda,
+    bidderTokenAccount: h.encAta(bidder),
+    escrow: h.escrowPda,
+    escrowTokenAccount: h.escrowEncAta,
+    tokenProgram: TOKEN_PROGRAM_ID,
+  }
+}
+
+export function settleAccounts(
+  h: Harness,
+  i: number,
+  winner: PublicKey,
+  outgoingHolder: PublicKey,
+  caller: PublicKey = h.authority,
+) {
+  return {
+    caller,
+    config: h.configPda,
+    asset: h.assetPda(i),
+    winningBid: h.bidPda(i, winner),
+    winner,
+    outgoingHolder,
+    mint: h.mintPda,
+    outgoingHolderTokenAccount: h.encAta(outgoingHolder),
+    escrow: h.escrowPda,
+    escrowTokenAccount: h.escrowEncAta,
+    tokenProgram: TOKEN_PROGRAM_ID,
+    associatedTokenProgram: ATA_PROGRAM,
+    systemProgram: SYSTEM,
+  }
+}
+
+export function certAccounts(h: Harness, i: number, term: bigint, holder: PublicKey) {
+  return {
+    payer: h.authority,
+    config: h.configPda,
+    asset: h.assetPda(i),
+    holder,
+    vault: h.vaultPda,
+    noneAuthority: SYSTEM,
+    certMint: h.certPda(i, term),
+    holderCertAccount: PublicKey.findProgramAddressSync(
+      [holder.toBuffer(), TOKEN_2022_PROGRAM_ID.toBuffer(), h.certPda(i, term).toBuffer()],
+      ATA_PROGRAM,
+    )[0],
+    tokenProgram: TOKEN_2022_PROGRAM_ID,
+    associatedTokenProgram: ATA_PROGRAM,
+    systemProgram: SYSTEM,
+  }
+}
+
+export function syncAccounts(h: Harness) {
+  return {
+    config: h.configPda,
+    printer: h.printerPda,
+    oracle: h.mockOraclePda,
+    mint: h.mintPda,
+    vault: h.vaultPda,
+    vaultTokenAccount: h.vaultEncAta,
+    tokenProgram: TOKEN_PROGRAM_ID,
+  }
 }
 
 /** The ten Asset PDAs as writable remaining-accounts, in index order. */

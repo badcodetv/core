@@ -170,8 +170,10 @@ fn rescale_assets(ctx: &Context<SyncM2>, m2_old: u64, m2_new: u64, now: i64) -> 
             end: asset.interp_end,
         };
 
-        asset.last_touched = now;
-
+        // The term clock is deliberately untouched. A Fed release moves what an
+        // asset is worth; it does not shorten or extend anyone's tenancy, and
+        // an auction whose end date moved with the money supply could never be
+        // "a clock published at the moment they won".
         asset.price_from = curve.price_at(now);
         asset.price_to = rescale(asset.price_to, m2_old, m2_new)?;
         asset.interp_start = now;

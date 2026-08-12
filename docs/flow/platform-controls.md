@@ -16,6 +16,13 @@ Models, credits, aspect, duration, and the surfaces beyond the prompt box.
 | Veo 3.1 Quality | 4/6/8s | ✅ (8s only) | ✅ | coming soon | ✗ | ✗ |
 | Gemini Omni Flash | 4/6/8/**10s** | ✗ | ✅ | ✗ | coming soon | ✅ |
 
+⚠️ **This whole matrix is transcribed from Google's documentation and has never been tested
+by us** (flagged 2026-08-12). The **Frames→Video (first+last)** row is the one that matters
+most and is the least trustworthy: it says Veo 3.1 Lite only, "coming soon" on Fast and
+Quality. Treat every cell as a claim awaiting verification, not as a finding — and when you
+do verify one, replace the cell with the result *and the date you checked*. The Wave C spike
+(`design/2026-08-12-flow-automation-coverage.md` §C1) owns settling the first+last row.
+
 **Plan the consistency strategy against this matrix, not against assumed parity.**
 Sources disagree on the Extend row in particular — older help pages call Extend
 Veo 2-only, the 3.1 announcement says audio now flows through it, and one community

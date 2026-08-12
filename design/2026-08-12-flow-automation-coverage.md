@@ -239,30 +239,99 @@ checklist. This is where the code meets Flow for the first time.
 
 Fix-ups from Wave B are small serial commits, not new agent work.
 
-## Wave C — Frames-to-Video (spike first, then build)
+## Wave C — one video tool, several source modes
 
-**⚠️ This cannot be written blind.** An exhaustive search found **zero selector knowledge**
-of Frames to Video, first/last frame, Jump To, Extend or Scene Builder anywhere in the
-repo. `docs/flow/` describes the *prompting contract* for these features; nothing
-describes the *UI*. The only source-frame mechanism either selector map knows is the
-single-image `motion_blur Animate` menuitem.
+> **Revised 2026-08-12 (evening), after Wave B shipped and Kai ruled on scope.** The
+> original Wave C is preserved in git history; this supersedes it. Three things changed:
+> Wave B accidentally mapped the Frames entry point, Kai ruled that Frames and Animate are
+> one feature and should be one tool, and batch generation is off the table.
 
-**C1 · Mapping spike.** A live session, equivalent to the 2026-06-25 flow-video spike,
-producing ARIA names for: the Frames mode entry point, the first-frame and last-frame
-slots, the model gate, and the submit path. Write it into `flow-video.md`. **Nothing in
-C2 starts until this exists.**
+### Rulings (Kai, 2026-08-12) — decided, not open
 
-⚠️ **Check availability first.** Per `docs/flow/platform-controls.md`, first+last-frame is
-**"coming soon" on Quality and Fast, and available only on Veo 3.1 Lite** — and that whole
-matrix is Tier-1 volatile, i.e. our least trustworthy knowledge. **The spike may
-conclude the feature is not usable at our tier yet**, which is a perfectly good outcome:
-it stops us building on it.
+1. **Frames-to-Video and Animate are ONE tool, not two.** They are two tabs of the same
+   popover and two ways of saying "make me a video from these stills". The tool takes an
+   optional start image and an optional end image; **the mode follows from which are
+   supplied**, and neither is required. No `flow_generate_video_frames`. If a second tool
+   name ever seems necessary, it is a sign the modes were not genuinely unified.
+2. **No batch animation, and no batch image generation for now.** Effort goes into making
+   *single-image iteration* excellent, not into automating volume. `animate-slide` stays
+   per-slide and human-paced; that line in its `## Out of scope` **stands** and is no
+   longer an open policy question.
+3. **Audio and voice are permanently out of scope.** Flow is a visuals tool for us. Do not
+   re-scope voice selection, dialogue or audio track work into this plan.
 
-**C2 · `flow_generate_video_frames({ startImage, endImage, motion, outPath, model? })`** —
-only if C1 succeeds.
+### What Wave B changed about the spike
 
-**C3 · Rewrite `animate-slide` onto the tools.** The skill currently drives the browser by
-hand throughout. Replace:
+The original C1 opened "an exhaustive search found **zero selector knowledge** of Frames to
+Video anywhere in the repo". That is no longer true. `smoke-compose-popover.ts` mapped the
+compose-bar popover on 2026-08-12, and in **Video** mode it leads with two source tabs:
+
+| Tab | Ligature + label |
+| --- | --- |
+| Frames | `crop_freeFrames` |
+| Ingredients | `chrome_extensionIngredients` (**active by default**) |
+
+So the entry point is known. What is still unmapped: the **first-frame and last-frame
+slots** behind the Frames tab, and the submit path once both are filled.
+
+### C1 · Spike — two questions, then map (live, timeboxed)
+
+**Q1 — which mode is our existing `generateVideo` actually using?** It uploads a still and
+fires the tile's `motion_blur Animate` menuitem, which attaches the image as a "source
+frame" chip. Whether Flow treats that as **Ingredients** or as **Frames with only a first
+frame** is genuinely unknown, and it decides the shape of the merged tool: if Animate is
+already Frames-first-frame, the merge is nearly free and `startImage` is just the argument
+we already pass. Settle this before writing anything.
+
+**Q2 — is first+last frame really unavailable at our tier?**
+`docs/flow/platform-controls.md` records first+last as ✅ on Veo 3.1 Lite and **"coming
+soon" on Fast and Quality**. ⚠️ **That row is transcribed from Google's own documentation
+and has never been tested by us** — it is not evidence, and it must not be "corrected" in
+either direction until someone has opened the Frames tab on each tier and looked. Checking
+it is minutes of work and it gates everything below, so do it first.
+
+- If first+last works on Fast/Quality → the docs row is stale; fix it, note the date and
+  that it was verified live, and build the full tool.
+- If it is genuinely Lite-only → say so in `platform-controls.md` with the verification
+  date, and decide whether a Lite-tier-only start+end mode is worth having at all. **"Not
+  usable at our tier yet" remains a good outcome** — it stops us building on sand.
+
+Then map the slots and write the selectors into `flow-video.md`, per the usual rule: every
+resolved guess goes into the selector maps, or the next session re-learns it.
+
+### C2 · Fold both source modes into `flow_generate_video`
+
+Only after C1. One tool, one name, mode inferred from arguments:
+
+```
+flow_generate_video({
+  motion, outPath,
+  startImage?, endImage?,     // neither, either, or both — this selects the mode
+  model?, aspect?, count?, durationSeconds?,
+})
+```
+
+- **Neither image** — text-to-video.
+- **Start only** — today's behaviour, and the one path that is already proven.
+- **Start + end** — the panel-to-panel technique
+  (`docs/flow/video-prompting.md` §4): art-direct page N and page N+1 as clean stills and
+  let the video prompt carry only the connective camera move.
+- **End only** — accept it if Flow supports it; do not invent a workaround if it does not.
+
+**Backwards compatibility:** today's callers pass a positional `imagePath`. That becomes
+`startImage`. Keep the existing behaviour byte-for-byte when only a start image is given —
+`animate-slide` depends on it and it is the one video path with live proof behind it.
+
+**⚠️ The prompt craft genuinely differs per mode, even though the tool does not.** An
+Ingredients/start-only prompt describes *what moves*; a start+end prompt should name *only
+the camera move connecting the two frames*, because the stills already carry the content
+(`video-prompting.md` §4 is explicit, and adding scene description there makes drift
+worse). The tool description must say this — descriptions are the agent-facing docs.
+
+### C3 · Rewrite `animate-slide` onto the tools
+
+The skill still drives the browser by hand throughout, so none of Wave A/B reaches it.
+Replace:
 
 - `## Flow engine` (:53-80) — the CDP curl checks, `flow-chrome.sh` launch, OAuth race
   workaround, signed-in screenshot → one `flow_status` call plus its existing
@@ -277,9 +346,28 @@ prompt-craft we have), **`### Step 3 [GATE]`** (:173 — "do not proceed until t
 explicitly approved"; this is the credit-spend gate), `### Step 5: Judge the clip` (:189),
 `### Step 7` the `.tsx` swap (:233).
 
-⚠️ `## Out of scope` (:331) currently states *"Batch animating an entire comic. This skill
-is per-slide and human-paced by design."* If tooling makes batch viable, that is a
-**deliberate policy reversal for Kai to make**, not a side effect of the refactor.
+**`## Out of scope` (:331) stays as written.** Per ruling 2, batch animating a comic is not
+becoming viable-and-therefore-default. Do not touch that line.
+
+### C4 · Clip duration — the control nobody knew existed
+
+Wave B found duration tabs (`4s` / `6s` / `8s` / `10s`) in the compose-bar popover's Video
+mode. Nothing in the repo knew clip length was controllable, and there is no duration
+control in the Agent Settings panel at all, which is why it was missed. `animate-slide`
+has been taking Flow's 8s default by accident on every clip it has ever made.
+
+- Add `durationSeconds` to `flow_generate_video`, driven through the popover.
+- ⚠️ Per `platform-controls.md`, **10s is Gemini Omni Flash only**; the Veo 3.1 tiers cap
+  at 8s. Asking for 10s on Veo must fail loudly, not silently deliver 8s.
+- Expose it at `animate-slide`'s approval gate: clip length is a creative decision made
+  with the motion prompt, and it is the one parameter that changes both cost and cut.
+
+### Ordering
+
+**C4 → C1 → C2 → C3**, and C3 last on purpose. C4 is small, self-contained and improves
+every clip we make from now on. C1 is cheap and may end the Frames line entirely. C3 is
+written once, against whatever video tool shape C1/C2 settle on, rather than rewritten
+when Frames lands.
 
 ---
 

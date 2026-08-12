@@ -20,6 +20,22 @@ pub const ASSET_SEED: &[u8] = b"asset";
 pub const EPOCH_SEED: &[u8] = b"epoch";
 pub const PLAYER_SEED: &[u8] = b"player";
 
+/// One live bid per (asset, bidder).
+pub const BID_SEED: &[u8] = b"bid";
+
+/// Holds every bidder's escrowed ENC.
+///
+/// **Deliberately not the vault.** `sync_m2` burns from the vault's token
+/// account, so pooling escrow there would let an ordinary monetary contraction
+/// destroy money that belongs to bidders — the exact stranding the auction's
+/// acceptance criteria forbid, reached through a path nobody would think to
+/// test. The Emperor's money and the players' money live in different pockets.
+pub const ESCROW_SEED: &[u8] = b"escrow";
+
+/// One tenancy certificate per (asset, term). The seeds are the "numbered and
+/// dated" part: a term can only ever issue one, and it can never be reissued.
+pub const CERT_SEED: &[u8] = b"cert";
+
 /// The ENC mint itself is a PDA, so a client can find the coin without first
 /// reading `Config` — and so no deployer keypair ever holds the mint.
 pub const MINT_SEED: &[u8] = b"mint";
@@ -92,6 +108,14 @@ pub struct Config {
     /// How many welcome grants may be issued in a single epoch.
     pub grants_per_epoch: u16,
 
+    /// How long one tenancy lasts, in seconds.
+    ///
+    /// Aligned with `PRICE_INTERPOLATION_SECONDS` on purpose: a term is exactly
+    /// as long as it takes a price to finish travelling to its new target, so
+    /// each auction settles against a price that has arrived rather than one
+    /// still in motion.
+    pub term_seconds: i64,
+
     /// Largest M2 move, in basis points, this program will believe in one
     /// release.
     pub max_change_bps: u16,
@@ -150,14 +174,45 @@ pub struct Asset {
     pub interp_start: i64,
     pub interp_end: i64,
 
-    /// When this asset was last written to — set by `init_asset` and by every
-    /// price rescale.
+    /// Which tenancy this is. Starts at 0 (the Emperor's own) and increments at
+    /// every settlement, whether or not the asset changed hands.
     ///
-    /// **Open for T12.** It was the rent clock; rent is gone. The auction needs
-    /// a term anchor, and this field is either it or is replaced by an explicit
-    /// `term_ends_at`. Left here rather than deleted so T12 decides deliberately
-    /// instead of inheriting a guess made during a deletion.
-    pub last_touched: i64,
+    /// It does two jobs beyond counting: it numbers the certificate, and it is
+    /// what makes a bid *stale* — a bid placed in an earlier term is no longer
+    /// live, so its escrow is always withdrawable.
+    pub term_number: u64,
+    /// When the current tenancy ends and anyone may settle it.
+    ///
+    /// Replaces T7's `last_touched`, which was the rent clock. Nothing else
+    /// needed "when was this last written" — the price curve carries its own
+    /// window — so an explicit term end is the honest field.
+    pub term_ends_at: i64,
+
+    /// The standing high bid, in base units. Zero means nobody has bid.
+    pub high_bid: u64,
+    /// Who placed it. The default (all-zero) key when there is no high bid.
+    ///
+    /// A bid is *locked* only while it is both the standing high bid and from
+    /// the current term; everything else is withdrawable by its owner alone.
+    pub high_bidder: Pubkey,
+    pub bump: u8,
+}
+
+/// One bidder's escrowed ENC on one asset.
+///
+/// The escrow itself pools in a single token account; this records who is owed
+/// what. Keyed by (asset, bidder), so a wallet has at most one live bid per
+/// asset and the accounting cannot drift from the pool.
+#[account]
+#[derive(InitSpace)]
+pub struct Bid {
+    pub asset_index: u8,
+    pub bidder: Pubkey,
+    /// Base units sitting in escrow against this bid.
+    pub amount: u64,
+    /// The term this bid was placed in. Once the asset moves past it, the bid
+    /// is dead and the money is the bidder's to take back.
+    pub term_number: u64,
     pub bump: u8,
 }
 
@@ -229,6 +284,24 @@ pub fn epoch_seeds(epoch: u64) -> [Vec<u8>; 2] {
 
 pub fn player_seeds(wallet: &Pubkey) -> [Vec<u8>; 2] {
     [PLAYER_SEED.to_vec(), wallet.to_bytes().to_vec()]
+}
+
+pub fn escrow_seeds() -> [&'static [u8]; 1] {
+    [ESCROW_SEED]
+}
+
+/// One-byte index then the raw bidder key, matching `asset_seeds`' convention.
+pub fn bid_seeds(index: u8, bidder: &Pubkey) -> [Vec<u8>; 3] {
+    [BID_SEED.to_vec(), vec![index], bidder.to_bytes().to_vec()]
+}
+
+/// One-byte index then a **little-endian u64** term, matching `epoch_seeds`.
+pub fn cert_seeds(index: u8, term: u64) -> [Vec<u8>; 3] {
+    [
+        CERT_SEED.to_vec(),
+        vec![index],
+        term.to_le_bytes().to_vec(),
+    ]
 }
 
 #[cfg(test)]

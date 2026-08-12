@@ -70,10 +70,49 @@ pub mod emperors_new_coin {
         instructions::sync_m2::handler(ctx)
     }
 
+    /// Bid on a tenancy, escrowing your own ENC. **Signed by the bidder** —
+    /// which is the entire reason this replaced the forced sale.
+    pub fn place_bid(ctx: Context<PlaceBid>, index: u8, amount: u64) -> Result<()> {
+        instructions::place_bid::handler(ctx, index, amount)
+    }
+
+    /// Take an escrowed bid back. Always available except while it is the
+    /// standing high bid of a term that has not settled yet.
+    pub fn withdraw_bid(ctx: Context<WithdrawBid>, index: u8) -> Result<()> {
+        instructions::withdraw_bid::handler(ctx, index)
+    }
+
+    /// End a term somebody won: the whole winning bid to the outgoing holder,
+    /// the tenancy to the winner, a fresh term for both. **Anyone may call
+    /// this**, and it asks nothing of either party.
+    pub fn settle_auction(ctx: Context<SettleAuction>, index: u8) -> Result<()> {
+        instructions::settle_auction::handler(ctx, index)
+    }
+
+    /// End a term nobody won: the incumbent keeps it, and any stale high bid is
+    /// released to be withdrawn. **Anyone may call this**, and it needs no
+    /// signer at all.
+    pub fn roll_term(ctx: Context<RollTerm>, index: u8) -> Result<()> {
+        instructions::roll_term::handler(ctx, index)
+    }
+
+    /// Issue the current tenancy's certificate to its holder. Immutable at
+    /// issue, never reclaimed, and never worth the asset.
+    pub fn mint_certificate(ctx: Context<MintCertificate>, index: u8, term: u64) -> Result<()> {
+        instructions::mint_certificate::handler(ctx, index, term)
+    }
+
     /// Set M2 by hand. **Compiled only under `--features mock`** — a default
     /// build has no such instruction at all.
     #[cfg(feature = "mock")]
     pub fn set_mock_m2(ctx: Context<SetMockM2>, m2_value: u64, release_date: i64) -> Result<()> {
         instructions::set_mock_m2::handler(ctx, m2_value, release_date)
+    }
+
+    /// Move vault ENC to a wallet so the auction has bidders before the faucet
+    /// exists. **Compiled only under `--features mock`.**
+    #[cfg(feature = "mock")]
+    pub fn mock_fund(ctx: Context<MockFund>, amount: u64) -> Result<()> {
+        instructions::mock_fund::handler(ctx, amount)
     }
 }

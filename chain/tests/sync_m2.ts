@@ -192,17 +192,22 @@ describe('sync_m2', () => {
     }
   })
 
-  it('restarts every asset clock at the sync', async () => {
+  it('reprices without touching anybody\'s term clock', async () => {
+    const before = await Promise.all(
+      Array.from({ length: ASSET_COUNT }, async (_, i) => {
+        const a = await asset(i)
+        return { ends: a.termEndsAt.toString(), term: a.termNumber.toString() }
+      }),
+    )
     await setM2((await currentM2()) + 1_000_000n)
-    const at = Math.floor(Date.now() / 1000)
     await sync()
     for (let i = 0; i < ASSET_COUNT; i++) {
       const a = await asset(i)
-      // This was the rent clock, which is gone (Ruling A, 2026-08-12). It now
-      // records only when the asset was last written, and T12 decides whether
-      // it becomes the auction term anchor. Asserted meanwhile so the field
-      // cannot quietly stop being maintained before T12 picks it up.
-      expect(Math.abs(a.lastTouched.toNumber() - at), `asset ${i}`).to.be.lessThan(120)
+      // A Fed release changes what an asset is worth. It must not change how
+      // long anyone holds it — a term whose end moved with the money supply
+      // could never be "a clock published at the moment they won".
+      expect(a.termEndsAt.toString(), `asset ${i} term end`).to.equal(before[i].ends)
+      expect(a.termNumber.toString(), `asset ${i} term number`).to.equal(before[i].term)
     }
   })
 

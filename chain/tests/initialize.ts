@@ -3,6 +3,7 @@ import {
   TOKEN_2022_PROGRAM_ID,
   TOKEN_PROGRAM_ID,
   getMint,
+  getPermanentDelegate,
   getTokenMetadata,
 } from '@solana/spl-token'
 import * as anchor from '@coral-xyz/anchor'
@@ -15,6 +16,7 @@ import {
   initAssetAccounts,
   initParams,
   initializeAccounts,
+  TERM_SECONDS,
 } from './enc-harness.js'
 
 /**
@@ -91,6 +93,9 @@ describe('initialize + init_asset', () => {
     expect(config.encDecimals).to.equal(6)
     expect(config.floorBps).to.equal(h.params.vault.floorBps)
     expect(config.faucetAlphaBps).to.equal(h.params.faucet.alphaBps)
+    // Not the genesis 30 days: this ledger runs short terms so the auction's
+    // settlement paths are reachable at all. See TERM_SECONDS.
+    expect(Number(config.termSeconds)).to.equal(TERM_SECONDS)
     expect(config.maxChangeBps).to.equal(h.params.sanity.maxChangeBps)
     expect(config.mint.toBase58()).to.equal(h.mintPda.toBase58())
     expect(config.vault.toBase58()).to.equal(h.vaultPda.toBase58())
@@ -118,7 +123,14 @@ describe('initialize + init_asset', () => {
     const allowed = [
       'initialize', 'init_asset', 'initAsset',
       'sync_m2', 'syncM2',
-      'set_mock_m2', 'setMockM2', // mock builds only; absent from a real one
+      'place_bid', 'placeBid',
+      'withdraw_bid', 'withdrawBid',
+      'settle_auction', 'settleAuction',
+      'roll_term', 'rollTerm',
+      'mint_certificate', 'mintCertificate',
+      // Mock builds only; absent from a real one, which the test below proves.
+      'set_mock_m2', 'setMockM2',
+      'mock_fund', 'mockFund',
     ]
     const unexpected = h.program.idl.instructions
       .map((i) => i.name)
@@ -148,6 +160,24 @@ describe('initialize + init_asset', () => {
     const fields = JSON.stringify(h.program.idl.accounts ?? []) + JSON.stringify(h.program.idl.types ?? [])
     for (const gone of ['rentRatePerDayBps', 'rent_rate_per_day_bps', 'graceSeconds', 'grace_seconds', 'forecloseBounty', 'foreclose_bounty', 'rentAccrued', 'rent_accrued']) {
       expect(fields, `${gone} is still in the published interface`).to.not.include(gone)
+    }
+  })
+
+  /**
+   * The mock instructions are a compile-time choice, not a gated one.
+   *
+   * `set_mock_m2` could set the money supply by hand and `mock_fund` could move
+   * vault ENC to a chosen wallet — either would be fatal to the coin's only
+   * real claim. The committed IDL is the **default** build's, so this asserts
+   * against the artifact that actually ships. (The running localnet program is
+   * a mock build; that is the point of the split.)
+   */
+  it('ships an interface with no mock instruction in it', () => {
+    const names = h.program.idl.instructions.map((i) => i.name)
+    for (const gone of ['set_mock_m2', 'setMockM2', 'mock_fund', 'mockFund']) {
+      expect(names, `${gone} is in the SHIPPED IDL — a default build must not carry it`).to.not.include(
+        gone,
+      )
     }
   })
 
@@ -229,17 +259,19 @@ describe('initialize + init_asset', () => {
     }
   })
 
-  /** Permanent delegate is what makes the forced sale possible at T12. */
-  it('gives the vault permanent delegate over every asset', async () => {
+  /**
+   * The opposite of what T8 asserted, and deliberately so.
+   *
+   * The permanent delegate existed to make a forced sale possible. Ruling A
+   * (2026-08-12) removed the forced sale, and the ten NFTs now never leave the
+   * program's custody — so the power would have been dead weight while costing
+   * the heaviest flag a risk scanner issues. Its absence is what makes "no
+   * token leaves any wallet without its owner's signature" structural.
+   */
+  it('gives nobody permanent delegate over any asset', async () => {
     for (let i = 0; i < ASSET_COUNT; i++) {
-      const info = await h.connection.getAccountInfo(h.assetMintPda(i))
-      expect(info, `asset ${i} mint missing`).to.not.be.null
-      // The delegate lives in the mint's extension data; finding the vault key
-      // in there is enough to prove the extension was applied.
-      expect(
-        info!.data.includes(Buffer.from(h.vaultPda.toBytes())),
-        `asset ${i} has no permanent delegate`,
-      ).to.be.true
+      const mint = await getMint(h.connection, h.assetMintPda(i), undefined, TOKEN_2022_PROGRAM_ID)
+      expect(getPermanentDelegate(mint), `asset ${i} has a permanent delegate`).to.be.null
     }
   })
 
