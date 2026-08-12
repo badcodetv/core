@@ -1501,12 +1501,24 @@ export class FlowClient {
     return (await this.page.evaluate(`(${FlowClient.SCRAPE_MEDIA_NAMES})()`)) as string[]
   }
 
-  /** Click the credit-confirmation "Approve" if Flow posts one; no-op if there is no gate. */
+  /**
+   * Click the credit-confirmation "Approve" if Flow posts one; no-op if there is no gate.
+   *
+   * The gate's options are plain `<div>`s — no `<button>`, no `role` — so both
+   * `getByRole('button')` and a CSS `button` filter find NOTHING and the gate sits there
+   * unanswered until the whole generation times out. Confirmed live 2026-08-12 with a clip
+   * stalled on an unclicked gate. Match the text and click its nearest clickable ancestor,
+   * falling back to the text node itself.
+   *
+   * `exact: true` is load-bearing: the gate also offers "Approve, do not ask again", which
+   * would silently disable the credit confirmation for the whole project.
+   */
   private async approveCreditGateIfPresent(timeoutMs = 20_000): Promise<void> {
-    const approve = this.page.getByRole('button', { name: /^Approve$/ }).first()
+    const label = this.page.getByText('Approve', { exact: true }).first()
     try {
-      await approve.waitFor({ state: 'visible', timeout: timeoutMs })
-      await this.forceClick(approve)
+      await label.waitFor({ state: 'visible', timeout: timeoutMs })
+      const clickable = label.locator('xpath=ancestor-or-self::*[self::button or @role="button"][1]')
+      await this.forceClick((await clickable.count()) ? clickable.first() : label)
     } catch {
       // No gate (Confirm=Never / direct generation) — nothing to approve.
     }
