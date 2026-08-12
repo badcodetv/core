@@ -3,7 +3,7 @@ import { chromium, type Browser, type Locator, type Page } from 'playwright'
 import { collectNewCanvases, pickActiveCanvas, type CanvasImg } from './canvas'
 import { toCanvasImgs, SCRAPE_IMGS, type RawImg } from './dom'
 import { harvestToFile, contentTypeOf } from './harvest'
-import { pickProject, SCRAPE_PROJECTS, type ProjectTile } from './project'
+import { pickProject, projectIdFromHref, toProjectSummaries, SCRAPE_PROJECTS, type ProjectTile, type ProjectSummary } from './project'
 import { batchOutPath } from './batch'
 import { candidateOutPath } from './candidates'
 import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected } from './compose'
@@ -74,11 +74,22 @@ export class FlowClient {
     return { loggedIn, projectOpen, url }
   }
 
+  /**
+   * Click the "add_2 New project" button and wait for the resulting /project/<id> URL. Shared
+   * by ensureProject() (only-if-needed) and createProject() (always) so there is one place that
+   * knows how to fire this control. A plain React button, per the click-hardening rules above
+   * (not a Radix trigger), so forceClick's native el.click() is the right recipe — this used to
+   * be a banned `.click({ force: true })` here.
+   */
+  private async clickNewProjectButton(): Promise<void> {
+    const newProject = this.page.getByRole('button', { name: /New project/i })
+    await this.forceClick(newProject)
+    await this.page.waitForURL(/\/project\//, { timeout: TURN_TIMEOUT_MS })
+  }
+
   private async ensureProject(): Promise<void> {
     if (/\/project\//.test(this.page.url())) return
-    const newProject = this.page.getByRole('button', { name: /New project/i })
-    await newProject.click({ force: true })
-    await this.page.waitForURL(/\/project\//, { timeout: TURN_TIMEOUT_MS })
+    await this.clickNewProjectButton()
   }
 
   /**
@@ -98,7 +109,26 @@ export class FlowClient {
     await this.promptBox().waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
   }
 
-  async openProject(name: string): Promise<void> {
+  /**
+   * Open an existing project by `id` (preferred, when known) or `name` (matched against the
+   * projects grid). At least one must be given.
+   *
+   * `id` navigates straight to `/project/<id>` via `page.goto`, following ensureProjectRoot's
+   * existing navigation pattern (goto, then wait for the prompt box to hydrate) rather than
+   * touching the grid at all — this is the reliable path when a tile has lost its `<a href>`
+   * (flow-selectors.md:269-276: those tiles are invisible to SCRAPE_PROJECTS, and even a
+   * successful synthetic click on one does not navigate), since it never needs a tile to click.
+   *
+   * `name` keeps the original grid-scan behaviour unchanged.
+   */
+  async openProject(opts: { name?: string; id?: string }): Promise<void> {
+    if (opts.id) {
+      await this.page.goto(`${FLOW_URL}/project/${opts.id}`, { waitUntil: 'domcontentloaded' })
+      await this.promptBox().waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+      return
+    }
+    const name = opts.name
+    if (!name) throw new Error('PROJECT_ID_OR_NAME_REQUIRED')
     // Always start from the projects list so the name match is honoured even if a
     // different project is already open.
     if (/\/project\//.test(this.page.url()) || !this.page.url().includes('labs.google/fx/tools/flow')) {
@@ -117,14 +147,126 @@ export class FlowClient {
     if (!href) throw new Error('PROJECT_NOT_FOUND')
     // SPA-navigate by clicking the project tile. A second hard goto (list -> project)
     // races the app's hydration and tips it into its client-side error boundary.
-    await this.page.locator(`a[href="${href}"]`).first().click({ force: true })
+    // Plain anchor, not a Radix trigger — forceClick's native el.click() is the recipe here
+    // (this used to be a banned `.click({ force: true })`).
+    await this.forceClick(this.page.locator(`a[href="${href}"]`).first())
     await this.page.waitForURL(/\/project\//, { timeout: TURN_TIMEOUT_MS })
     // The create bar hydrates after navigation; wait for the (enabled) prompt textbox
     // before returning so callers never interact with a half-rendered editor.
-    await this.page
-      .locator('div[role="textbox"][contenteditable="true"]')
-      .first()
-      .waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    await this.promptBox().waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+  }
+
+  /**
+   * List every project tile the grid currently renders. Navigates to the projects list first
+   * if we aren't already there (mirrors openProject's name-match branch).
+   *
+   * The grid hydrates AFTER domcontentloaded (the same reality openProject's poll loop already
+   * works around), so this gives it a short grace window rather than trusting one immediate
+   * read. Unlike openProject's poll (which chases one SPECIFIC name for up to the full turn
+   * timeout, because a late-arriving match is worth the wait), an empty scrape here is
+   * ambiguous between "still hydrating" and "genuinely zero projects" — so the window is short
+   * (a few seconds), not 90s of blocking on what might just be an empty account.
+   *
+   * Never throws on the href-less-tile bug (flow-selectors.md:269-276) — see
+   * `toProjectSummaries` — so a partial list beats an error.
+   */
+  async listProjects(): Promise<ProjectSummary[]> {
+    if (!/\/fx\/tools\/flow\/?(\?.*)?$/.test(this.page.url())) {
+      await this.page.goto(FLOW_URL, { waitUntil: 'domcontentloaded' })
+    }
+    const deadline = Date.now() + 15_000
+    let tiles: ProjectTile[] = []
+    while (Date.now() < deadline) {
+      tiles = (await this.page.evaluate(`(${SCRAPE_PROJECTS})()`)) as ProjectTile[]
+      if (tiles.length) break
+      await this.page.waitForTimeout(POLL_MS)
+    }
+    return toProjectSummaries(tiles)
+  }
+
+  /**
+   * ⚠️ GUESSED locator: flow-selectors.md:280 records only that fill()/keystrokes on the
+   * project title textbox both revert on blur — no accessible name or selector for the field
+   * itself is recorded anywhere. `promptBox()` is known to have NO accessible name
+   * ("no own placeholder text", flow-selectors.md), so scoping to a NAMED textbox here at
+   * least cannot collide with it. Best-effort only: if nothing matches, or the fill doesn't
+   * survive blur (the documented, expected outcome), this silently no-ops — `createProject`
+   * never trusts this value, it always reads the real name back afterward via the projects
+   * list. Not attempted: any selector beyond fill+blur, since the doc already records BOTH
+   * fill and keystrokes failing and there is no live evidence a different mechanism would
+   * fare better.
+   */
+  private async attemptRenameProject(name: string): Promise<void> {
+    try {
+      const title = this.page.getByRole('textbox', { name: /project name|untitled/i }).first()
+      if (!(await title.count())) return
+      await title.fill(name)
+      await title.evaluate((el) => (el as HTMLElement).blur())
+    } catch {
+      // Best-effort — never throw. createProject reads back whatever actually stuck.
+    }
+  }
+
+  /**
+   * Read whatever the project is ACTUALLY named right now. Never trusts a requested rename —
+   * renaming is documented as un-automatable (flow-selectors.md:280) — so this re-derives the
+   * name from Flow's own state, in order of confidence, and never throws:
+   *   1. The projects-list tile matching `id` (SCRAPE_PROJECTS/toProjectSummaries — the same
+   *      evidenced mechanism openProject/pickProject already rely on).
+   *   2. ⚠️ GUESSED fallback: whatever attemptRenameProject's guessed title-textbox locator
+   *      currently holds, if it matched anything.
+   *   3. The literal string "Untitled Project" — Flow's character editor is confirmed to
+   *      default a fresh resource's name to "Untitled Character" (flow-selectors.md:195); this
+   *      assumes projects follow the same convention, unverified.
+   */
+  private async readProjectName(id: string): Promise<string> {
+    try {
+      await this.page.goto(FLOW_URL, { waitUntil: 'domcontentloaded' })
+      const deadline = Date.now() + 15_000
+      while (Date.now() < deadline) {
+        const tiles = (await this.page.evaluate(`(${SCRAPE_PROJECTS})()`)) as ProjectTile[]
+        const hit = tiles.find((t) => projectIdFromHref(t.href) === id)
+        if (hit?.name) return hit.name
+        await this.page.waitForTimeout(POLL_MS)
+      }
+    } catch {
+      // fall through to the guessed in-page probe
+    }
+    try {
+      const title = this.page.getByRole('textbox', { name: /project name|untitled/i }).first()
+      const value = await title.inputValue({ timeout: 2_000 })
+      if (value) return value
+    } catch {
+      // fall through to the literal default
+    }
+    return 'Untitled Project'
+  }
+
+  /**
+   * Create a brand-new Flow project and return its actual `{ id, name }`. Extracted out of
+   * ensureProject()'s "click New project" step so it is independently callable and returns
+   * something.
+   *
+   * `name` is BEST-EFFORT — see attemptRenameProject/readProjectName. The caller MUST use the
+   * returned `name`, never the one it passed in: renaming a Flow project via the title textbox
+   * is documented as un-automatable (fill and keystrokes both revert on blur,
+   * flow-selectors.md:280), so this attempts it, then reports back whatever Flow actually
+   * settled on rather than assuming the attempt worked.
+   *
+   * Ends back inside the new project (readProjectName briefly leaves to confirm the name via
+   * the projects list) so a caller can chain a generation call immediately.
+   */
+  async createProject(name?: string): Promise<{ id: string; name: string }> {
+    await this.clickNewProjectButton()
+    await this.promptBox().waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    const m = this.page.url().match(/\/project\/([0-9a-f-]+)/)
+    if (!m) throw new Error('NOT_IN_PROJECT')
+    const id = m[1]!
+    if (name) await this.attemptRenameProject(name)
+    const actualName = await this.readProjectName(id)
+    await this.page.goto(`${FLOW_URL}/project/${id}`, { waitUntil: 'domcontentloaded' })
+    await this.promptBox().waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    return { id, name: actualName }
   }
 
   // --- Click hardening (mapped live 2026-07-14, flow-selectors.md "Click reliability on WSLg") ---

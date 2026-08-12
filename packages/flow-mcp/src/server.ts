@@ -43,7 +43,8 @@ function toToolError(err: unknown): ToolResult {
     return fail('NOT_RUNNING', 'Could not attach to Chrome on the CDP port.', NOT_RUNNING_HINT)
   }
   if (msg === 'TIMEOUT') return fail('TIMEOUT', 'Flow did not finish generating in time.')
-  if (msg === 'PROJECT_NOT_FOUND') return fail('PROJECT_NOT_FOUND', 'No Flow project with that name.', 'Check the name in the Flow projects list.')
+  if (msg === 'PROJECT_NOT_FOUND') return fail('PROJECT_NOT_FOUND', 'No Flow project with that name.', 'Check the name in the Flow projects list, or use flow_list_projects/flow_open_project with id instead — name matching fails on a tile with no <a href>.')
+  if (msg === 'PROJECT_ID_OR_NAME_REQUIRED') return fail('INVALID_ARGS', 'Provide id or name.', 'flow_list_projects returns id when derivable.')
   if (msg === 'CHARACTER_NOT_FOUND') return fail('CHARACTER_NOT_FOUND', 'No Character with that name in the open project.', 'Check the Characters tab; names are case-sensitive.')
   if (msg === 'BODY_EXISTS') return fail('BODY_EXISTS', 'That character already has a Body view.', 'Use flow_edit_character with target "body" to change it.')
   if (msg === 'NO_BODY') return fail('NO_BODY', 'That character has no Body view yet.', 'Create one with flow_character_body first.')
@@ -77,15 +78,70 @@ server.registerTool(
   'flow_open_project',
   {
     title: 'Open project',
-    description: 'Open an existing Flow project by its exact name (e.g. "camping-v2"). Errors PROJECT_NOT_FOUND if absent.',
-    inputSchema: { name: z.string().min(1) },
+    description:
+      'Open an existing Flow project. Pass id OR name (at least one is required; id wins if both are given). ' +
+      'Prefer id when you have it: it navigates straight to `/project/<id>`, sidestepping the projects grid entirely — ' +
+      'the robust option, and the only reliable one when a tile has lost its clickable <a href> (a known, recorded ' +
+      'Flow bug; flow_list_projects returns such a tile with name but no id, for exactly this reason, so id is not ' +
+      'always obtainable — get it from flow_create_project at creation time, or from the Flow URL bar). ' +
+      'name matches a tile\'s visible title exactly (case-insensitive) by scanning the projects grid; it fails with ' +
+      'PROJECT_NOT_FOUND on an href-less tile even though the project exists and is healthy — switch to id in that case.',
+    inputSchema: { name: z.string().min(1).optional(), id: z.string().min(1).optional() },
+  },
+  async ({ name, id }) => {
+    if (!name && !id) {
+      return fail('INVALID_ARGS', 'Provide id or name.', 'flow_list_projects returns id when derivable; id is the reliable path when a tile has no <a href>.')
+    }
+    try {
+      return await withClient(async (c) => {
+        await c.openProject({ ...(id ? { id } : {}), ...(name ? { name } : {}) })
+        return ok(await c.status())
+      })
+    } catch (err) {
+      return toToolError(err)
+    }
+  },
+)
+
+server.registerTool(
+  'flow_list_projects',
+  {
+    title: 'List Flow projects',
+    description:
+      'List every project tile on the Flow projects grid: { name, id?, href? }[]. Use this to find a project id for ' +
+      'flow_open_project (the reliable re-open path) or to discover what already exists before flow_create_project. ' +
+      "id is derived from the tile's href and omitted when it cannot be derived. This is the known, recorded " +
+      'Flow bug where a project tile renders without a clickable <a href> at all — that tile still ships with its ' +
+      'name so the list stays useful, but you cannot open it by id (fall back to flow_open_project with name, which ' +
+      'itself will fail PROJECT_NOT_FOUND on the same tile — re-navigate to the project by URL from browser history ' +
+      'instead if you have it). A partial list is returned rather than an error.',
+    inputSchema: {},
+  },
+  async () => {
+    try {
+      return await withClient(async (c) => ok(await c.listProjects()))
+    } catch (err) {
+      return toToolError(err)
+    }
+  },
+)
+
+server.registerTool(
+  'flow_create_project',
+  {
+    title: 'Create a new Flow project',
+    description:
+      'Create a brand-new Flow project via the "New project" button. Returns the ACTUAL { id, name } — id is reliable ' +
+      '(read from the resulting /project/<id> URL), but name is BEST-EFFORT: naming a Flow project via its title ' +
+      'textbox is documented as un-automatable (a fill and a keystroke attempt both revert on blur), so this tool ' +
+      'attempts the rename you asked for, then reads back and returns whatever the project is ACTUALLY called — ' +
+      'which may still be "Untitled Project" or similar. Callers MUST use the returned name, never assume the ' +
+      'requested one stuck. Ends with the new project open, ready for a generation call.',
+    inputSchema: { name: z.string().min(1).optional() },
   },
   async ({ name }) => {
     try {
-      return await withClient(async (c) => {
-        await c.openProject(name)
-        return ok(await c.status())
-      })
+      return await withClient(async (c) => ok(await c.createProject(name)))
     } catch (err) {
       return toToolError(err)
     }

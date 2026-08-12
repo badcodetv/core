@@ -6,7 +6,7 @@ import { FlowClient } from './flow-client'
 
 const c = await FlowClient.connect()
 try {
-  await c.openProject('camping-v2')
+  await c.openProject({ name: 'camping-v2' })
   const dir = await mkdtemp(join(tmpdir(), 'flow-batch-'))
   const items = await c.generateBatch(
     [
