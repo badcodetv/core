@@ -379,6 +379,36 @@ and the identical call succeeded immediately in a fresh project. The Frames path
 this weakness — it never touches the tile grid — which is an argument for eventually routing
 start-only through Frames too. Not done: the Animate path is the one with the most live proof.
 
+## What an EXISTING clip offers (mapped 2026-08-12)
+
+Hover a finished clip → its own `more_vert More` (⚠️ **not** `.first()` — the first `more_vert`
+on the page is the top bar's project menu, which offers only Rename/Trash/Delete):
+
+```
+favoriteFavorite · redoReuse prompt · split_sceneAdd to scene · addAdd to prompt ·
+downloadDownload · whiteboardRename · shareShare · smart_displayPublish to YouTube ·
+photo_librarySet project cover · flagFlag output · deleteMove to trash
+```
+
+Two of these are the answer to *"like that clip, but slower"* without re-staging a frame:
+
+- **`redoReuse prompt`** — loads the clip's original prompt back into the compose bar. Edit and
+  re-run. (We already keep prompts in our own records, so the value here is whatever ELSE it
+  restores — source frame, model, duration. Untested.)
+- **`addAdd to prompt`** — attaches the **clip itself** into the compose bar as a reference.
+  This is the video-referencing route; whether the composer does anything useful with a video
+  ingredient is untested and needs one credit to find out.
+
+**No `Extend` and no video `Edit` in this menu** — and that is CONSISTENT with
+`platform-controls.md`, not a contradiction: the clip was Veo 3.1 **Fast**, where the matrix
+marks both ✗. Extend is claimed for Veo 3.1 Lite only, and video edit for Omni Flash only, so
+testing either means generating on that specific tier first. Worth knowing before designing a
+"refine the clip" tool: it would pin us to Omni Flash, the one model that also rejects last
+frames.
+
+Wrapping `Add to prompt` is a small extension of proven code — `openAnimateMenu` already does
+hover → per-tile `more_vert` → menuitem. The cost is the live testing, not the clicking.
+
 ## Still to watch (over a longer batch)
 
 1. **Queue latency** under "high demand" for Veo Quality — minutes. Fast/Lite models queue
