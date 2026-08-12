@@ -28,9 +28,31 @@ reconnect **once** at the end to confirm the tool wrapper.
 the MCP SDK's own `CallToolResultSchema`, so the "dies at the protocol boundary" class is now
 caught in milliseconds with no browser (Kai's suggestion, and it would have caught bug #1).
 
-**Still to do:** all of §3/§4 (video — the largest blind surface, and the only credit spend),
-the image `model`/`aspect` threading, `flow_create_project`, and the
-`flow_list_media` → `flow_create_character_from_media` round-trip.
+### Video (§3) — done, and it was the worst of it
+
+**A clip now generates end to end**: h264 1280×720, 8s with audio, harvested to disk. Five
+more bugs, every one silent:
+
+| Bug | Symptom | Fixed in |
+| --- | --- | --- |
+| Settings button lives in the **Agent panel**, which is closed by default | Waited 90s for a button that cannot appear | `4de1951` |
+| Aspect/count scoped with `.first()` across TWO sections | Configured the **image** defaults; video untouched | `4de1951` |
+| Count tab is `x1`, not `1x`; model is `Veo 3.1 - Fast`, not `Veo 3.1 Fast` | Matched nothing; settings silently unchanged | `4de1951` |
+| `videoModelAlreadySelected` broken **both ways** | Accepted Lower Priority as Lite; rejected every true match | `4de1951` |
+| Credit gate options are `<div>`s with **no role** | Gate never clicked; generation timed out having spent the wait | `4be1759` |
+
+**⚠️ The fact most likely to waste someone's afternoon: `getByRole` does not work inside the
+Agent settings panel.** `page.getByRole('tab')` counts **0** page-wide while
+`button[role="tab"]` counts **15** — the open panel sits under an `aria-hidden` ancestor and
+so is absent from the accessibility tree Playwright queries. `getByText` still works. Every
+selector in that panel is CSS + text on purpose.
+
+**Costs observed:** the gate for a Fast clip quoted **10 credits**, not the 20 recorded in
+`flow-video.md`. Treat every credit figure in that doc as unverified until re-checked.
+
+**Still to do:** the image `model`/`aspect` threading, `flow_create_project`, the
+`flow_list_media` → `flow_create_character_from_media` round-trip, and §4 animate-targeting on
+a cluttered project. Then one `/mcp` reconnect to confirm the tool wrapper end to end.
 
 ## Where this stands (read first)
 
