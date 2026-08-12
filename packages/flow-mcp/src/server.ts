@@ -48,6 +48,7 @@ function toToolError(err: unknown): ToolResult {
   if (msg === 'CHARACTER_NOT_FOUND') return fail('CHARACTER_NOT_FOUND', 'No Character with that name in the open project.', 'Check the Characters tab; names are case-sensitive.')
   if (msg === 'BODY_EXISTS') return fail('BODY_EXISTS', 'That character already has a Body view.', 'Use flow_edit_character with target "body" to change it.')
   if (msg === 'NO_BODY') return fail('NO_BODY', 'That character has no Body view yet.', 'Create one with flow_character_body first.')
+  if (msg === 'NO_PORTRAIT') return fail('NO_PORTRAIT', 'That character has no Portrait view.', 'Every character gets a Portrait from its founding reference image — this usually means the name resolved to the wrong character, or the editor failed to render before the tab was queried. Re-check the name with flow_list_characters.')
   if (msg === 'MEDIA_NOT_FOUND') return fail('MEDIA_NOT_FOUND', 'No project media matches that title.', 'Use the exact accessible name shown in the project gallery, not a file path or media id.')
   if (msg === 'ANIMATE_NOT_FOUND') return fail('ANIMATE_NOT_FOUND', 'No project media tile offered the Animate action.', 'The source still may not have finished uploading, or the tile is a video (whose menu has no Animate).')
   if (msg === 'SUBMIT_FAILED') return fail('SUBMIT_FAILED', 'The prompt was typed but Flow never accepted the submit.', 'Usually a wedged compose bar — reload the project URL (twice; the first load can throw a client-side exception) and retry.')
@@ -517,6 +518,51 @@ server.registerTool(
   async ({ name, info }) => {
     try {
       return await withClient(async (c) => ok(await c.setCharacterInfo(name, info)))
+    } catch (err) {
+      return toToolError(err)
+    }
+  },
+)
+
+server.registerTool(
+  'flow_list_characters',
+  {
+    title: 'List project characters',
+    description:
+      'Enumerate the open Flow project\'s Characters as { name, id }[]. There was previously no way to discover what Characters exist — flow_get_character/flow_edit_character/flow_character_body/flow_character_info all require an exact, case-sensitive name and throw CHARACTER_NOT_FOUND on a mismatch with no way to learn the right one. Call this first when a name is uncertain.',
+    inputSchema: {},
+  },
+  async () => {
+    try {
+      return await withClient(async (c) => ok(await c.listCharacters()))
+    } catch (err) {
+      return toToolError(err)
+    }
+  },
+)
+
+server.registerTool(
+  'flow_get_character',
+  {
+    title: 'Read back a character',
+    description:
+      'Read an existing Character without changing anything: its free-text info note, whether it has a Body view yet (hasBody), and the media id of each view it does have. Pass portraitOutPath and/or bodyOutPath (absolute) to also harvest that view to disk — this is the "show me the current portrait" tool that had no path behind it before. Strictly non-destructive: the info field is read, never filled or submitted. Errors CHARACTER_NOT_FOUND if the name (case-sensitive) doesn\'t match — use flow_list_characters to check. Returns { name, info, hasBody, portraitMediaId?, bodyMediaId? }.',
+    inputSchema: {
+      name: z.string().min(1),
+      portraitOutPath: z.string().min(1).optional(),
+      bodyOutPath: z.string().min(1).optional(),
+    },
+  },
+  async ({ name, portraitOutPath, bodyOutPath }) => {
+    try {
+      return await withClient(async (c) =>
+        ok(
+          await c.getCharacter(name, {
+            ...(portraitOutPath ? { portraitOutPath } : {}),
+            ...(bodyOutPath ? { bodyOutPath } : {}),
+          }),
+        ),
+      )
     } catch (err) {
       return toToolError(err)
     }

@@ -9,6 +9,7 @@ import { candidateOutPath } from './candidates'
 import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, aspectAlreadySelected } from './compose'
 import { classifyCard, ANY_CARD_RE, type CardState } from './failure-card'
 import { parseMediaOptions, SCRAPE_MEDIA_OPTIONS, type RawMediaOption, type MediaListItem } from './media-list'
+import { parseCharacters, SCRAPE_CHARACTERS, type RawCharacterRow, type CharacterListItem } from './character-list'
 import { toAnimateTiles, chooseAnimateTarget, type AnimateTile, type RawAnimateTile } from './animate-target'
 
 const FLOW_URL = 'https://labs.google/fx/tools/flow'
@@ -421,6 +422,105 @@ export class FlowClient {
     await this.page
       .waitForURL((u) => /\/project\/[0-9a-f-]+$/.test(u.toString()), { timeout: TURN_TIMEOUT_MS })
       .catch(() => {})
+  }
+
+  /**
+   * Enumerate the open project's Characters: `{ name, id }[]`. We can write character info and
+   * iterate a portrait/body, but until now had no way to discover what Characters even exist —
+   * and `openCharacterPage` throws CHARACTER_NOT_FOUND on a name that doesn't match, with no way
+   * to learn the exact (case-sensitive) name to retry with. This is that discovery step, reusing
+   * `openCharacterPage`'s own locator shape (`a[href*="/character/"]:has(img[alt="<name>"])`)
+   * generalised to every character card rather than one named lookup.
+   */
+  async listCharacters(): Promise<CharacterListItem[]> {
+    await this.ensureProjectRoot()
+    const raw = (await this.page.evaluate(`(${SCRAPE_CHARACTERS})()`)) as RawCharacterRow[]
+    return parseCharacters(raw)
+  }
+
+  /**
+   * Select the Portrait or Body view in an already-open character editor. Unlike a generation
+   * turn, switching tabs is a local re-render with no fresh media UUID to poll for (nothing was
+   * submitted), so this is a fixed settle rather than `waitForNewCanvas`'s wait-for-new-name
+   * loop. ⚠️ GUESSED: no selector map records a done-signal for the tab switch itself (only its
+   * end state — the image that's already there); flag for Wave B live validation.
+   */
+  private async selectCharacterView(target: 'portrait' | 'body'): Promise<void> {
+    const tab = this.page
+      .getByRole('button', { name: target === 'body' ? /^Body$/ : /^Portrait$/ })
+      .first()
+    if (!(await tab.count())) return
+    await this.forceClick(tab)
+    await this.page.waitForTimeout(500)
+  }
+
+  /**
+   * Read the media id of whatever view is currently showing in the character editor, by the
+   * same "largest media <img> on the page" rule `submitCharacterTurn` uses for a fresh
+   * generation — reused here for an EXISTING, already-rendered image rather than a new one, so
+   * there is no `before` snapshot to diff against. Reuses `toCanvasImgs`/`pickActiveCanvas`
+   * (dom.ts/canvas.ts, themselves built on media-url.ts) rather than reimplementing the src-id
+   * parse.
+   */
+  private async currentCharacterMediaId(): Promise<string | undefined> {
+    const raw = (await this.page.evaluate(`(${SCRAPE_IMGS})()`)) as RawImg[]
+    const name = pickActiveCanvas(toCanvasImgs(raw))
+    return name ?? undefined
+  }
+
+  /**
+   * Read back a Character: its free-text info note, whether it has a Body view yet, and the
+   * media id of each view it does have — optionally harvesting either to disk. This is the read
+   * half `setCharacterInfo`/`editCharacter` never had: we could write info but not confirm what
+   * it currently says, and "show Kai the current portrait" had no tool behind it. Strictly
+   * non-destructive — the info field is read via `inputValue()`, never `fill()`ed, and the only
+   * interaction is switching view tabs to see what's already there.
+   *
+   * `hasBody` reuses `runCreateBody`'s own distinction: a character with no Body view shows a
+   * "Create Body" button instead of a "Body" tab, so `/^Body$/` (anchored — does not match
+   * "Create Body") is the same signal `runCreateBody` already keys off via `BODY_EXISTS`.
+   */
+  async getCharacter(
+    name: string,
+    opts?: { portraitOutPath?: string; bodyOutPath?: string },
+  ): Promise<{
+    name: string
+    info: string
+    hasBody: boolean
+    portraitMediaId?: string
+    bodyMediaId?: string
+  }> {
+    await this.openCharacterPage(name)
+    const info = await this.characterInfoField().inputValue().catch(() => '')
+    const hasBody = (await this.page.getByRole('button', { name: /^Body$/ }).first().count()) > 0
+
+    await this.selectCharacterView('portrait')
+    const portraitMediaId = await this.currentCharacterMediaId()
+    if (portraitMediaId && opts?.portraitOutPath) {
+      await harvestToFile(this.page.request, portraitMediaId, opts.portraitOutPath)
+    }
+
+    let bodyMediaId: string | undefined
+    if (hasBody) {
+      await this.selectCharacterView('body')
+      bodyMediaId = await this.currentCharacterMediaId()
+      if (bodyMediaId && opts?.bodyOutPath) {
+        await harvestToFile(this.page.request, bodyMediaId, opts.bodyOutPath)
+      }
+    }
+
+    // Leave the editor cleanly — a read must never strand the page on /character/<id> the way a
+    // failed createCharacter() attempt strands it on /characters (ensureProjectRoot exists
+    // precisely to recover from that; a read should never create the need to).
+    await this.finishCharacter()
+
+    return {
+      name,
+      info,
+      hasBody,
+      ...(portraitMediaId ? { portraitMediaId } : {}),
+      ...(bodyMediaId ? { bodyMediaId } : {}),
+    }
   }
 
   /**
