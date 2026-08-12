@@ -148,6 +148,31 @@ export class FlowClient {
     })
   }
 
+  /**
+   * Upload local file(s) by setting Flow's hidden <input type="file"> directly — never
+   * through the OS file chooser.
+   *
+   * `waitForEvent('filechooser')` + `setFiles` hangs whenever a SECOND Playwright client
+   * (typically the Playwright MCP) is attached to the same Chrome with chooser interception
+   * armed: the dialog opens, nobody answers it, and the upload never lands. Mapped
+   * 2026-07-14 and hit again live 2026-08-12, where it surfaced as a `uploadImage` 400 plus
+   * a stranded modal during a character cast. Setting the input skips the dialog entirely.
+   *
+   * `reveal` is invoked ONLY if no file input is on the page yet — some surfaces mount it
+   * lazily behind a button or menu. Not calling it when the input already exists is the
+   * point: clicking "Upload" is what would pop the chooser we are avoiding.
+   */
+  private async uploadFiles(paths: string[], reveal?: () => Promise<void>): Promise<void> {
+    const imageInput = this.page.locator('input[type="file"][accept*="image"]').first()
+    const anyInput = this.page.locator('input[type="file"]').first()
+    const present = async (): Promise<boolean> =>
+      (await imageInput.count()) > 0 || (await anyInput.count()) > 0
+    if (reveal && !(await present())) await reveal()
+    const input = (await imageInput.count()) ? imageInput : anyInput
+    await input.waitFor({ state: 'attached', timeout: TURN_TIMEOUT_MS })
+    await input.setInputFiles(paths)
+  }
+
   private promptBox(): Locator {
     // Confirmed live 2026-06-30: the prompt box is a contenteditable div with role="textbox"
     // and NO own placeholder text. A sibling <textarea> also exposes the textbox role.
@@ -483,12 +508,8 @@ export class FlowClient {
     for (let i = 0; i < refPaths.length; i++) {
       const ref = refPaths[i]!
       await this.openAssetPicker()
-      // Upload by setting the page's persistent hidden file input directly — NO file chooser.
-      // waitForEvent('filechooser') breaks when another Playwright client (e.g. the Playwright
-      // MCP) is attached to the same Chrome with chooser interception armed (observed live
-      // 2026-07-14: the chooser hangs open and the upload never lands).
-      const fileInput = this.page.locator('input[type="file"][accept*="image"]').first()
-      await fileInput.setInputFiles(ref)
+      // The picker is already open, so its file input is mounted — no reveal needed.
+      await this.uploadFiles([ref])
       // The uploaded asset lands in the picker (Recent-first) named after the file; select it
       // if it isn't auto-selected, then attach. Match page-globally and case-insensitively:
       // the picker has two layout variants ("Add to Prompt" dialog / "Add to prompt" compact
@@ -582,10 +603,10 @@ export class FlowClient {
     await this.ensureProjectRoot()
     await this.page.getByRole('button', { name: /accessibility_new\s*Characters/i }).click({ force: true })
     await this.page.waitForURL(/\/characters\b/, { timeout: TURN_TIMEOUT_MS })
-    // Upload the reference(s); the file chooser accepts the array.
-    const chooser = this.page.waitForEvent('filechooser')
-    await this.page.getByRole('button', { name: /upload\s*Upload/i }).first().click({ force: true })
-    await (await chooser).setFiles(refImages)
+    // Upload the reference(s) through the hidden input — see uploadFiles for why not the chooser.
+    await this.uploadFiles(refImages, async () => {
+      await this.forceClick(this.page.getByRole('button', { name: /upload\s*Upload/i }).first())
+    })
     return this.finalizeCharacter(name, opts)
   }
 
@@ -727,11 +748,14 @@ export class FlowClient {
     _model?: string,
   ): Promise<MediaResult> {
     await this.ensureProject()
-    // 1. Upload the source frame.
-    await this.page.getByRole('button', { name: /add\s*Add Media/i }).click({ force: true })
-    const chooser = this.page.waitForEvent('filechooser')
-    await this.page.getByRole('menuitem', { name: /upload\s*Upload media/i }).click({ force: true })
-    await (await chooser).setFiles(imagePath)
+    // 1. Upload the source frame through the hidden input (see uploadFiles). The reveal is
+    //    two steps here: Add Media opens a menu, whose "Upload media" item mounts the input.
+    await this.uploadFiles([imagePath], async () => {
+      await this.forceClick(this.page.getByRole('button', { name: /add\s*Add Media/i }).first())
+      const item = this.page.getByRole('menuitem', { name: /upload\s*Upload media/i })
+      await item.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+      await this.forceClick(item)
+    })
     // 2. Attach it as the animation source.
     await this.openAnimateMenu()
     // 3. Motion prompt + submit (capture the pre-submit media set to detect the new clip).

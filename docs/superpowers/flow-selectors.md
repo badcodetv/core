@@ -258,8 +258,13 @@ is slow" experience — every hand-driven or locator-driven click paid them.
   client (e.g. the Playwright MCP) is attached to the same Chrome with chooser
   interception armed, the chooser hangs and the upload never lands. Instead set the
   page's persistent hidden input directly: `locator('input[type="file"][accept*="image"]')
-  .setInputFiles(path)` — no dialog interaction at all. (`generateVideo`'s chooser path
-  has the same latent conflict — port it when it next breaks.)
+  .setInputFiles(path)` — no dialog interaction at all.
+  **Ported everywhere 2026-08-12** — it broke exactly as predicted, on a character cast,
+  presenting as a `uploadImage` 400 plus a stranded modal rather than as a hang. All three
+  upload sites (`attachReferences`, `createCharacter`, `generateVideo`) now go through one
+  `uploadFiles(paths, reveal?)` helper. Its `reveal` callback is invoked **only if no file
+  input is on the page yet**, because clicking "Upload" is itself what pops the chooser
+  we are avoiding.
 - **The asset picker has two layout variants**: a full-width dialog (button "Add to
   Prompt") and a compact popover (button "Add to **p**rompt", left rail + list + preview
   pane). Match buttons **case-insensitively and page-globally**, not scoped to
