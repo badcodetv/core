@@ -171,17 +171,34 @@ server.registerTool(
   {
     title: 'Generate video',
     description:
-      'Animate an image (image→video / Veo). Uploads imagePath, applies the motion prompt, saves the .mp4 to outPath. Returns { path, mediaId }.',
+      'Animate an image (image→video / Veo). Uploads imagePath, applies the motion prompt, saves the .mp4 to outPath. ' +
+      'Asserts the Settings-panel video defaults (model, aspect, output count) before generating — they live on the ' +
+      "project and RESET to Omni Flash on a fresh project, so this call always sets them rather than trusting whatever " +
+      'was last selected. model defaults to "Veo 3.1 Fast" (20 credits/clip) when omitted — a deliberate middle tier, ' +
+      'not the cheapest and not the most expensive. Other recorded options: "Omni Flash", "Veo 3.1 Lite" (10 credits), ' +
+      '"Veo 3.1 Quality" (100 credits — ask for this explicitly; it costs 5x Fast and 10x Lite), ' +
+      '"Veo 3.1 Lite[Lower Priority]". aspect defaults to "16:9" (matches most comic pages); pass "9:16" for portrait. ' +
+      'count (1-4, default 1) sets how many candidate clips Flow generates in this turn. Returns { path, mediaId }.',
     inputSchema: {
       imagePath: z.string().min(1),
       motion: z.string().min(1),
       model: z.string().optional(),
+      aspect: z.enum(['16:9', '9:16']).optional(),
+      count: z.number().int().min(1).max(4).optional(),
       outPath: z.string().min(1),
     },
   },
-  async ({ imagePath, motion, model, outPath }) => {
+  async ({ imagePath, motion, model, aspect, count, outPath }) => {
     try {
-      return await withClient(async (c) => ok(await c.generateVideo(imagePath, motion, outPath, model)))
+      return await withClient(async (c) =>
+        ok(
+          await c.generateVideo(imagePath, motion, outPath, {
+            ...(model ? { model } : {}),
+            ...(aspect ? { aspect } : {}),
+            ...(count ? { count } : {}),
+          }),
+        ),
+      )
     } catch (err) {
       return toToolError(err)
     }

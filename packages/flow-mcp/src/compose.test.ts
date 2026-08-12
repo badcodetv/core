@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { isBoxCleared, modelAlreadySelected } from './compose'
+import { isBoxCleared, modelAlreadySelected, videoModelAlreadySelected } from './compose'
 
 describe('isBoxCleared', () => {
   it('treats a truly empty box as cleared', () => {
@@ -45,5 +45,28 @@ describe('modelAlreadySelected', () => {
 
   it('handles a missing label', () => {
     expect(modelAlreadySelected(null, 'Nano Banana Pro')).toBe(false)
+  })
+})
+
+describe('videoModelAlreadySelected', () => {
+  it('matches the trigger label ("<model> arrow_drop_down")', () => {
+    expect(videoModelAlreadySelected('Veo 3.1 Quality arrow_drop_down', 'Veo 3.1 Quality')).toBe(true)
+    expect(videoModelAlreadySelected('Omni Flash arrow_drop_down', 'Omni Flash')).toBe(true)
+  })
+
+  it('does not confuse a different tier for the target', () => {
+    expect(videoModelAlreadySelected('Veo 3.1 Fast arrow_drop_down', 'Veo 3.1 Quality')).toBe(false)
+  })
+
+  it('does not let "Veo 3.1 Lite[Lower Priority]" satisfy a request for "Veo 3.1 Lite"', () => {
+    // The bug this guards: "Veo 3.1 Lite" is a strict prefix of "Veo 3.1 Lite[Lower Priority]".
+    // A naive substring check would report the Lower Priority tier as already-selected and
+    // silently generate on it instead.
+    expect(videoModelAlreadySelected('Veo 3.1 Lite[Lower Priority]', 'Veo 3.1 Lite')).toBe(false)
+    expect(videoModelAlreadySelected('Veo 3.1 Lite[Lower Priority]', 'Veo 3.1 Lite[Lower Priority]')).toBe(true)
+  })
+
+  it('handles a missing label', () => {
+    expect(videoModelAlreadySelected(null, 'Veo 3.1 Quality')).toBe(false)
   })
 })

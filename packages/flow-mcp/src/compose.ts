@@ -35,3 +35,20 @@ export function escapeRegExp(s: string): string {
 export function modelAlreadySelected(label: string | null, model: string): boolean {
   return new RegExp(`${escapeRegExp(model)}(?![\\w ]*Lite)`, 'i').test(label ?? '')
 }
+
+/**
+ * True when a VIDEO model-picker label already names `model`.
+ *
+ * The Settings-panel trigger renders as "<model name> arrow_drop_down" (flow-video.md:114).
+ * Same prefix trap as `modelAlreadySelected`, different shape: "Veo 3.1 Lite" is a strict
+ * prefix of "Veo 3.1 Lite[Lower Priority]", but the trailing text is a bracketed suffix glued
+ * on with no space, not a " Lite"-style word — so the negative lookahead has to reject the
+ * match whenever the next character continues the label at all (a word character, or the `[`
+ * that opens "[Lower Priority]"), not just a specific trailing word. `[` and `]` are regex
+ * metacharacters, so this is exactly where `escapeRegExp` earns its keep — both on `model`
+ * (already required) and implicitly in the character class below (which uses literal chars,
+ * not user input, so no separate escaping is needed there).
+ */
+export function videoModelAlreadySelected(label: string | null, model: string): boolean {
+  return new RegExp(`${escapeRegExp(model)}(?![\\w[])`, 'i').test(label ?? '')
+}

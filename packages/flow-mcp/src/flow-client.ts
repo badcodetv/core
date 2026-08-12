@@ -6,7 +6,7 @@ import { harvestToFile, contentTypeOf } from './harvest'
 import { pickProject, SCRAPE_PROJECTS, type ProjectTile } from './project'
 import { batchOutPath } from './batch'
 import { candidateOutPath } from './candidates'
-import { escapeRegExp, isBoxCleared, modelAlreadySelected } from './compose'
+import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected } from './compose'
 import { classifyCard, ANY_CARD_RE, type CardState } from './failure-card'
 import { parseMediaOptions, SCRAPE_MEDIA_OPTIONS, type RawMediaOption, type MediaListItem } from './media-list'
 
@@ -19,6 +19,18 @@ const TURN_TIMEOUT_MS = 90_000
  * the same prompt (compared live 2026-08-11) and is what BadCode ships.
  */
 const DEFAULT_MODEL = process.env.FLOW_MODEL ?? 'Nano Banana Pro'
+export type VideoAspect = '16:9' | '9:16'
+// flow-video.md:15 records 16:9 / 1x as the persisted defaults (though it warns to re-check
+// them every project), so that's the aspect/count pair this client asserts by default.
+const DEFAULT_VIDEO_ASPECT: VideoAspect = '16:9'
+/**
+ * Video's per-tier credit spread is far steeper than the image models' — Lite 10 / Fast 20 /
+ * Quality 100 (flow-video.md:16) — so, unlike DEFAULT_MODEL for images, silently defaulting an
+ * unrequested call to the top tier would risk a 5-10x spend the caller never asked for. Fast is
+ * the deliberate middle: a real step up from Lite for the price of a fifth of Quality. A caller
+ * who wants Quality's 100 credits asks for it explicitly via the `model` option.
+ */
+const DEFAULT_VIDEO_MODEL = process.env.FLOW_VIDEO_MODEL ?? 'Veo 3.1 Fast'
 const VIDEO_TIMEOUT_MS = 8 * 60_000
 // Image/grid polls are cheap in-page DOM scrapes, so poll fast (~1s of discovery latency).
 const POLL_MS = 1_000
@@ -806,6 +818,84 @@ export class FlowClient {
   }
 
   /**
+   * Assert Flow's Settings-panel "Video generation default" — model, aspect, output count —
+   * mapped at flow-video.md:12-23 and :113-116. Unlike the image compose bar's `crop_` trigger,
+   * these live behind a dedicated panel and there is no per-turn control on the create bar
+   * itself, so a video call that skips this inherits whatever the PROJECT last had — and
+   * ⚠️ that **resets to Omni Flash on a fresh project** (flow-video.md:20). Skipping this call
+   * is exactly the bug this task exists to fix: a caller asking for Veo 3.1 Quality could
+   * silently get an Omni Flash clip at the wrong aspect.
+   *
+   * Structured on ensureImageMode: opens the panel (cheap), then only clicks through a control
+   * whose current state doesn't already match the target — so a loop of same-settings
+   * generateVideo() calls stays cheap — and only hits Save if something actually changed.
+   */
+  private async ensureVideoSettings(opts?: { model?: string; aspect?: VideoAspect; count?: number }): Promise<void> {
+    const model = opts?.model ?? DEFAULT_VIDEO_MODEL
+    const aspect = opts?.aspect ?? DEFAULT_VIDEO_ASPECT
+    const count = opts?.count ?? 1
+
+    const settingsBtn = this.page.getByRole('button', { name: /^tune\s*Settings$/i }).first()
+    await settingsBtn.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    await this.pointerClick(settingsBtn)
+
+    // The model dropdown trigger renders "<model name> arrow_drop_down" (flow-video.md:114).
+    // ⚠️ GUESSED: the doc doesn't record a heading/container locator for the "Video generation
+    // default" section, so this scopes by the model names themselves — Omni Flash / Veo 3.1 …
+    // never collide with the image bar's "Nano Banana" labels — rather than by position. If the
+    // Settings panel also shows an "Image generation default" model dropdown with its own
+    // aspect/count tabs sharing the SAME tab names ("crop_16_9 16:9", "1x"…), `.first()` below
+    // could land on the wrong section. Flag for Wave B live validation.
+    const modelBtn = this.page
+      .getByRole('button', { name: /arrow_drop_down/i })
+      .filter({ hasText: /Omni Flash|Veo/i })
+      .first()
+    await modelBtn.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    let changed = false
+    if (!videoModelAlreadySelected(await modelBtn.textContent(), model)) {
+      await this.pointerClick(modelBtn)
+      // ⚠️ GUESSED: flow-video.md maps the TRIGGER's accessible name but not the opened menu's
+      // option shape. Mirrors ensureModel's assumption that options are buttons named for the
+      // model (there rendered "🍌 <model>"; no emoji is recorded for video model names, so this
+      // matches the bare model string). Unverified against the live DOM.
+      const option = this.page.getByRole('button', { name: model, exact: true }).first()
+      await option.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+      await this.forceClick(option)
+      await this.page.keyboard.press('Escape') // closes the nested model menu; Settings panel stays open
+      changed = true
+    }
+
+    const aspectTab = this.page
+      .getByRole('tab', { name: aspect === '9:16' ? /crop_9_16\s*9:16/i : /crop_16_9\s*16:9/i })
+      .first()
+    if (await aspectTab.count()) {
+      if ((await aspectTab.getAttribute('aria-selected')) !== 'true') {
+        await this.tabClick(aspectTab)
+        changed = true
+      }
+    }
+
+    // Count tabs are named `1x` for one output and `x2`/`x3`/`x4` beyond, same convention as
+    // ensureImageMode's image-count tabs.
+    const countTab = this.page.getByRole('tab', { name: count <= 1 ? '1x' : `x${count}`, exact: true }).first()
+    if (await countTab.count()) {
+      if ((await countTab.getAttribute('aria-selected')) !== 'true') {
+        await this.tabClick(countTab)
+        changed = true
+      }
+    }
+
+    if (changed) {
+      const save = this.page.getByRole('button', { name: /^Save$/ }).first()
+      await this.forceClick(save)
+    } else {
+      // Nothing to persist — close without touching Save (leaves the unrelated Confirm-gate
+      // setting untouched too).
+      await this.page.keyboard.press('Escape')
+    }
+  }
+
+  /**
    * Animate a still into an image→video clip (Veo). Mapped live 2026-06-30 + flow-video.md:
    * Add Media → "Upload media" (file chooser) → the uploaded tile's more_vert → "Animate"
    * (attaches the source frame and switches the bar to Video mode) → motion prompt → submit →
@@ -815,9 +905,12 @@ export class FlowClient {
     imagePath: string,
     motion: string,
     outPath: string,
-    _model?: string,
+    opts?: { model?: string; aspect?: VideoAspect; count?: number },
   ): Promise<MediaResult> {
     await this.ensureProject()
+    // 0. Assert model/aspect/count BEFORE touching media — these are project-level defaults
+    //    that silently reset, so this must run every call, not just the first in a session.
+    await this.ensureVideoSettings(opts)
     // 1. Upload the source frame through the hidden input (see uploadFiles). The reveal is
     //    two steps here: Add Media opens a menu, whose "Upload media" item mounts the input.
     await this.uploadFiles([imagePath], async () => {
