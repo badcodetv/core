@@ -14,8 +14,11 @@
      pick **Veo 3.1 - Quality** (options: Omni Flash, Veo 3.1 Lite / Fast / Quality /
      Lite[Lower Priority]).
    - **Aspect**: `tab "crop_16_9 16:9"` (default) — matches the Karen comic page. Other:
-     `9:16`. **This is how you pin aspect** — there is no per-prompt aspect control; it's the
-     Video-generation-default tab. Count tabs `1x|x2|x3|x4` → **1x** for a single clip.
+     `9:16`. Count tabs are `x1|x2|x3|x4` → **x1** for a single clip (this line said `1x`;
+     see the corrections below).
+   - ⚠️ **"There is no per-prompt aspect control" — this was wrong.** The compose bar's own
+     config popover carries a per-turn aspect, model, count **and clip duration**. See
+     "The compose-bar config popover" below.
    - **Confirm before generating** is its own setting: `Always` (default) makes the agent ask
      before spending credits — a useful gate; `Never` is full-auto. **Save**.
    - ⚠️ **These defaults RESET per project** — a fresh project comes up as `Omni Flash`, so
@@ -168,6 +171,50 @@ made `ensureVideoSettings` a no-op or a 90-second hang. What the panel actually 
   **exactly**, or you hit "Approve, do not ask again" and disable credit confirmation for the
   whole project.
 
+### The compose-bar config popover — a SECOND, per-turn config (mapped 2026-08-12)
+
+Everything above describes the Agent **Settings panel**, and the TL;DR's claim that it is the
+only place aspect can be set is **wrong**. The compose bar's own config trigger — the glued
+label to the left of the submit arrow, e.g. `🍌 Nano Banana Procrop_16_9x1` — opens a
+`DropdownMenuContent` popover carrying a full per-turn config for **both** media types.
+Unlike the Settings panel, `getByRole` works normally in here.
+
+It leads with two mode tabs, `imageImage` and `videocamVideo`, and the rest of the popover
+swaps with the mode:
+
+| | Image mode | Video mode |
+| --- | --- | --- |
+| Source | — | `crop_freeFrames` \| `chrome_extensionIngredients` |
+| Aspect | `crop_16_9`\|`crop_landscape`\|`crop_square`\|`crop_portrait`\|`crop_9_16` | `crop_9_16` \| `crop_16_9` only |
+| Model | `🍌 Nano Banana Proarrow_drop_down` | `Omni Flasharrow_drop_down` |
+| **Duration** | — | **`4s` \| `6s` \| `8s` \| `10s`** |
+| Count | `x1` `x2` `x3` `x4` | `x1` `x2` `x3` `x4` |
+
+Every one is a `button[role="tab"]` (the two model rows are plain buttons) carrying
+`aria-selected` and `data-state="active"`, so current state is readable without opening
+anything — the trigger's own label concatenates model + aspect + count.
+
+Two things this changes:
+
+- **Clip duration is controllable**, and was not known to be at all. `animate-slide` has been
+  taking Flow's 8s default by accident. There is no duration control in the Settings panel.
+- **Aspect is settable per turn**, so "set it once per session" is a workaround, not a
+  constraint. `ensureImageMode` already drives this popover for images; the video half is
+  still driven through the Settings panel.
+
+**Aspect tab ligatures are NOT uniformly derivable.** The wide/tall pair spell the numbers out
+(`crop_16_9`, `crop_9_16`); the other three use descriptive Material Symbols names
+(`crop_landscape` = 4:3, `crop_portrait` = 3:4, **`crop_square` = 1:1**). `crop_1_1` does not
+exist — a derived-by-rule guess for 1:1 matches nothing.
+
+**Count tabs are `x1`…`x4` here too**, the same transposition the Settings panel had. Getting
+this wrong is expensive and silent: a click-if-present guard on a name that matches nothing
+leaves the count at whatever it was, so a "one image" request generates two, bills for two,
+and the second candidate lands *after* the next turn's media snapshot — which then harvests it
+as if it were that turn's output, at the previous turn's aspect. That is the whole of the
+"image aspect lands one generation late" bug. Read the config back off the trigger label before
+submitting; do not trust a click.
+
 ### ⚠️ Animating the wrong still — the failure that looks like success
 
 A tile's `more_vert` **must** be scoped to that tile's own card: the nearest ancestor `div`
@@ -240,7 +287,9 @@ remaining rough edge:
 
 1. **Queue latency** under "high demand" for Veo Quality — minutes. Fast/Lite models queue
    less; trade quality for latency on bulk runs.
-2. **Aspect** is a global default, not per-prompt — set it once per session before generating.
+2. ~~**Aspect** is a global default, not per-prompt~~ — **false**, corrected 2026-08-12: the
+   compose-bar popover sets aspect (and duration, and count) per turn. Setting it once per
+   session still works; it is a convenience, not a limitation.
 3. **Rate limits / credit burn** (100 credits per Quality clip).
 4. **Manifest path trap** (downstream of the harvest, in the skill): `npm run --workspace
    @badcode/cli -- assets-build -m <relative>` writes the manifest relative to `packages/cli/`.

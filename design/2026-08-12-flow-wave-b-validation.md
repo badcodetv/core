@@ -50,35 +50,65 @@ selector in that panel is CSS + text on purpose.
 **Costs observed:** the gate for a Fast clip quoted **10 credits**, not the 20 recorded in
 `flow-video.md`. Treat every credit figure in that doc as unverified until re-checked.
 
-### ⚠️ OPEN BUG — image aspect lands one generation late
+### ✅ CLOSED — "image aspect lands one generation late" was never a race
 
-**Start here next session.** Measured 2026-08-12 with `smoke-image-opts.ts`, three calls in a
-row against the same client:
+Resolved 2026-08-12 evening (`02ca4b9`). **The diagnosis in this section was wrong**, and the
+suggested fix would not have worked — worth recording, because the wrong theory was the
+plausible one.
 
-| Asked for | Got |
-| --- | --- |
-| `aspect: '16:9'` | (landscape) |
-| `aspect: '9:16'` | **1.79 — landscape** |
-| no options at all | **0.56 — portrait** |
+The proposed fix was to poll the config trigger's label before submitting. `smoke-aspect-race.ts`
+measured that label: it updates in **~80ms**, so it already showed the *new* aspect while the
+stale image was being harvested. Polling it would have passed instantly and changed nothing.
 
-The setting is not being ignored; it is arriving **one turn late**. The generation submits
-before the aspect change commits, so each call renders with the previous call's aspect. That
-makes it worse than a plain failure: a batch would produce plausible-looking frames at the
-wrong shape, and only the first would look obviously off.
+The real cause was in the count tab, not the aspect tab. The compose popover's counts are
+`x1`/`x2`/`x3`/`x4`; `ensureImageMode` asked for `1x` when count was 1 — the same transposition
+the video Settings panel had already been fixed for. The click was guarded by
+`if (await locator.count())`, so it silently no-opped and every `numOutputs: 1` turn generated
+at whatever count was already set, usually **x2**. The second, unharvested candidate then landed
+*after* the next turn's media snapshot, so the next call harvested the **previous prompt's
+straggler** — at the previous prompt's aspect. Hence "one generation late". It was also
+double-billing every single-image call.
 
-Likely a race between closing the config popover and `submitPrompt`. Do not "fix" it by
-sleeping — read back the trigger label (it concatenates model+aspect+count, e.g.
-`🍌 Nano Banana 2crop_16_91x`) and poll until it shows the requested aspect before submitting.
-`aspectAlreadySelected` already parses that label.
+Proven live in a fresh project, alternating so a stale result cannot hide:
 
-**Also unmapped and worth knowing:** the compose-bar config popover carries a **per-turn video
-config** — Frames/Ingredients, aspect, model, **duration (4s/6s/8s/10s)** and count. This
-contradicts `flow-video.md`'s claim that aspect can only be set via the Settings panel's
-Video-generation-default tab, and duration was not known to be controllable at all.
+| Asked for | Got | |
+| --- | --- | --- |
+| `16:9` | 1376×768 | ✅ |
+| `9:16` | 768×1376 | ✅ |
+| `16:9` | 1376×768 | ✅ |
+| no options | 1376×768 | ✅ correctly inherits |
 
-**Still to do:** the aspect race above, `flow_create_project`, the `flow_list_media` →
-`flow_create_character_from_media` round-trip, and §4 animate-targeting on a cluttered project.
-Then one `/mcp` reconnect to confirm the tool wrapper end to end.
+`ensureImageMode` now reads the config back off the trigger before any submit
+(`IMAGE_CONFIG_NOT_APPLIED`), so the next renamed tab fails loudly instead of quietly spending
+credits on the wrong shape and count.
+
+**Lesson worth keeping:** a click-if-present guard on a selector nobody verified is not
+defensive, it is a silent failure with a bill attached.
+
+### ✅ Wave B remainder — done 2026-08-12 evening
+
+- **`flow_create_project`** works; returns a real id and the timestamp name (`Aug 12, 04:26 PM`).
+  Fixed: it only worked from the projects list, and spent 30s waiting for a button that cannot
+  exist when called from inside a project.
+- **`flow_list_media` → `flow_create_character_from_media` round-trip** works, title passed
+  verbatim (`d5571ec`). Three bugs: "Add from Project" lives inside the New Character editor,
+  not the Characters view (the blind code only ever ran on an empty project, where Flow skips
+  the grid); the `Add to Character` confirm never appears in the single-select path (selecting
+  an option attaches and closes the dialog itself); and `waitForURL(/characters/)` is wrong
+  because Characters is a view, not a route. Plus `listCharacters()` had the **third** instance
+  of the read-before-hydration race, returning `[]` on a project showing four characters.
+- **§4 animate targeting on a cluttered project** confirmed by the clip's **first frame**, not
+  its file size (`48ca4a4`, `smoke-animate-target.ts`). On a 12-row project: first-frame
+  distance **0.1 to the source vs 99.9 to a decoy** still in the same project, and the frame is
+  visibly the still we uploaded. Veo 3.1 - Fast, 77s.
+- **The compose-bar popover is mapped** (`smoke-compose-popover.ts`) and written up in
+  `flow-video.md`. It carries a full **per-turn** config for both media types — including
+  **clip duration (4s/6s/8s/10s)**, which was not known to be controllable at all, and which
+  `animate-slide` has been taking Flow's 8s default for by accident. `flow-video.md`'s claim
+  that aspect is settable only in the Settings panel is corrected in place.
+
+**Still to do:** one `/mcp` reconnect to confirm the tool wrapper end to end — the server runs
+`tsx` against source and is frozen at whatever it started with, so it has none of these fixes.
 
 **Two clips are owed to us** in project `50894190-3b7b-4a36-95e2-cd28b1eb19a9`: a Veo Quality
 bench clip and a Veo Fast server-racks clip, both approved and queued but not delivered inside

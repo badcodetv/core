@@ -101,13 +101,29 @@ command, locate by ARIA role + accessible name/placeholder, not ref.
 
 The character UI changed. What the 2026-06-30 recipe gets wrong, and the current map:
 
-**There is no "New Character" card.** The sidebar **Characters** button now navigates
-*straight* to the composer on a project with zero characters, so the old
-`getByText('New Character')` click hangs for its full timeout and strands the page on
-`/characters` — which then breaks the *next* call, because that route has no create bar.
-Two fixes shipped in `flow-client.ts`: the dead click is gone, and every entry point now
-goes through `ensureProjectRoot()`, which re-navigates to the bare `/project/<id>` when a
-prior failure left the page on a sub-route.
+**The sidebar Characters button lands in one of TWO places, depending on whether the
+project already has characters** (re-mapped 2026-08-12; the note here previously said the
+"New Character" card was simply gone, which was true only of the empty case):
+
+- **Zero characters** → straight into the New Character composer. No card to click; the old
+  `getByText('New Character')` click hangs its full timeout.
+- **One or more** → the characters grid, where the `New Character` tile is real and
+  **must** be clicked to reach the composer.
+
+So gate on the composer's own controls, not on a click count: if `add Add from Project` /
+`upload Upload` are not already visible, click the `New Character` tile, then wait for them.
+Code that only ever ran against an empty project passes and then breaks on its second use —
+that is exactly how `createCharacterFromMedia` shipped broken.
+
+**Characters is a VIEW, not a route.** Do not `waitForURL(/characters/)`: after a hard `goto`
+the view switches while the URL stays on the bare `/project/<id>`. Every entry point still goes
+through `ensureProjectRoot()`, which re-navigates when a prior failure stranded the page on a
+sub-route.
+
+**"Add from Project" picker: clicking an option IS the confirm.** The dialog closes on select
+and the editor is populated ~1.5s later. Its `Add to Character` button exists but belongs to a
+multi-select path; waiting for it after a single select burns the full timeout on a dialog that
+has already gone. Click it only if it is still visible.
 
 **The name field is `getByRole('textbox', { name: 'Character Name' })`** — not
 `input[placeholder="Character Name"]`; that selector matches nothing and was the second
@@ -163,9 +179,23 @@ Key corrections to the spike-era selectors above:
   NO own placeholder text — the old `.filter({ hasText: /What do you want to create/i })` matched
   nothing. A sibling `<textarea>` also exposes the textbox role.
 - **Image-mode menu**: open via `getByRole('button', { name: /crop_/ })` (the
-  `🍌 Nano Banana 2 · crop_16_9 · 1x` config button). Tabs: `imageImage` / `play_circleVideo`;
-  aspect `crop_16_916:9`, `crop_landscape4:3`, …; count `1x` / `x2` / `x3` / `x4`. Default is already
-  Image · 16:9 · 1x, so `ensureImageMode` is idempotent.
+  `🍌 Nano Banana Pro · crop_16_9 · x1` config button). Tabs: `imageImage` / `videocamVideo`;
+  aspect tabs render as `<ligature><ratio text>` (`crop_16_916:9`, `crop_landscape4:3`, …);
+  count `x1` / `x2` / `x3` / `x4`. Full popover map, including the video half and its **clip
+  duration** tabs, is in [`flow-video.md`](./flow-video.md) — it is one popover serving both
+  media types, not an image-only control.
+  - ⚠️ **Count is `x1`, not `1x`** (this line said `1x` until 2026-08-12). A click-if-present
+    guard on `1x` silently leaves the count alone, so "one image" generates and bills two, and
+    the straggler is harvested by the NEXT turn at the previous turn's aspect. Read the trigger
+    label back before submitting.
+  - ⚠️ **Aspect ligatures are not uniformly derivable**: `crop_16_9` / `crop_9_16` spell the
+    numbers, but 4:3 / 3:4 / 1:1 are `crop_landscape` / `crop_portrait` / **`crop_square`**.
+    `crop_1_1` does not exist.
+  - The trigger's label concatenates model + aspect + count, so the whole state is readable
+    without opening the popover — but the popover TOGGLES, so check visibility before clicking.
+  - The default is *not* dependable: a "fresh" project came up **9:16 · x2** on 2026-08-12
+    (Flow appears to carry the last-used config across projects), so `ensureImageMode` must
+    assert, not assume idempotence.
 - **Open an existing project**: tiles are `a[href*="/fx/tools/flow/project/"]` with EMPTY anchor
   text — the name is a sibling styled-components span with a HASHED class. Scrape by climbing each
   anchor to the nearest short own-text node (see `project.ts` `SCRAPE_PROJECTS`). The grid hydrates
@@ -274,8 +304,11 @@ is slow" experience — every hand-driven or locator-driven click paid them.
   (`flow_edit_image` needs no specific project — the uploaded reference anchors it).
 - **Project rename via the title textbox could not be automated** (fill and keystrokes
   both revert on blur) — name projects at creation time, in the UI, by hand.
-  **Confirmed 2026-08-12 to apply to Characters too**: a Character renamed in the editor
-  reads back as `Untitled Character` afterwards.
+  - ⚠️ **The "…and Characters too" claim recorded here earlier is WRONG.** Naming a Character
+    through the editor's `Character Name` field **does** persist: proven live 2026-08-12 by
+    `createCharacterFromMedia('Disc Keeper', …)`, which reads back as `Disc Keeper` from both
+    `listCharacters()` and the grid. The earlier `Untitled Character` readbacks were characters
+    whose creation aborted *before* the name was ever filled, not renames that reverted.
 - **A new project is named for its creation time** — e.g. `Aug 12, 09:07 AM`, confirmed
   live 2026-08-12. It is *not* "Untitled Project"; nothing should assume that literal.
 
