@@ -15,7 +15,7 @@ import {
 export type { BatchItem, BatchFailure, BatchResult } from './batch'
 import { candidateOutPath } from './candidates'
 import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, aspectAlreadySelected } from './compose'
-import { classifyCard, ANY_CARD_RE, type CardState } from './failure-card'
+import { classifyCard, newCardsSince, ANY_CARD_RE, type CardState } from './failure-card'
 import { parseMediaOptions, SCRAPE_MEDIA_OPTIONS, type RawMediaOption, type MediaListItem } from './media-list'
 import { parseCharacters, SCRAPE_CHARACTERS, type RawCharacterRow, type CharacterListItem } from './character-list'
 import { toAnimateTiles, chooseAnimateTarget, type AnimateTile, type RawAnimateTile } from './animate-target'
@@ -56,6 +56,14 @@ export interface FlowStatus { loggedIn: boolean; projectOpen: boolean; url: stri
 
 export class FlowClient {
   private constructor(private browser: Browser, private page: Page) {}
+
+  /**
+   * Failure-card texts present when the current turn started. Flow never clears a failed
+   * generation's card, so this is what separates "this prompt was refused" from "this project
+   * has been used before". Set by markTurnStart(); empty means every card counts as new,
+   * which is correct for a fresh page.
+   */
+  private cardBaseline: string[] = []
 
   /** Attach to the already-logged-in Chrome launched by scripts/flow-chrome.sh. */
   static async connect(endpoint = DEFAULT_ENDPOINT): Promise<FlowClient> {
@@ -657,14 +665,40 @@ export class FlowClient {
    * prevent.
    */
   private async detectFailureCard(): Promise<CardState> {
-    const cards = this.page.getByText(ANY_CARD_RE)
-    if (!(await cards.count())) return null
-    const texts = await cards.allTextContents().catch(() => [] as string[])
-    return classifyCard(texts.join('\n'))
+    const texts = await this.scrapeFailureCards()
+    const fresh = newCardsSince(texts, this.cardBaseline)
+    return fresh.length ? classifyCard(fresh.join('\n')) : null
   }
 
-  /** Snapshot the media UUIDs currently on the canvas, so a later turn can detect new ones. */
+  /** Every card text currently on the page, unfiltered and unclassified. */
+  private async scrapeFailureCards(): Promise<string[]> {
+    const cards = this.page.getByText(ANY_CARD_RE)
+    if (!(await cards.count())) return []
+    return await cards.allTextContents().catch(() => [] as string[])
+  }
+
+  /**
+   * Record which failure cards were already on screen, so `detectFailureCard` can tell a card
+   * THIS turn produced from the permanent wreckage of every earlier failure in the project.
+   *
+   * MUST be called after the page has settled and before submitting a prompt. Every generation
+   * path does this via `snapshotMediaNames()`, which each one already calls at exactly that
+   * moment; `generateVideo` scrapes media names by a different route and calls this directly.
+   *
+   * Forgetting it degrades to the pre-fast-abort behaviour (a real block waits out its
+   * timeout) rather than to a false positive, which is the right way round.
+   */
+  private async markTurnStart(): Promise<void> {
+    this.cardBaseline = await this.scrapeFailureCards()
+  }
+
+  /**
+   * Snapshot the media UUIDs currently on the canvas, so a later turn can detect new ones.
+   * Also marks the turn's failure-card baseline: every caller invokes this immediately before
+   * submitting, which is precisely when that baseline must be taken (see markTurnStart).
+   */
   private async snapshotMediaNames(): Promise<Set<string>> {
+    await this.markTurnStart()
     const raw = (await this.page.evaluate(`(${SCRAPE_IMGS})()`)) as RawImg[]
     return new Set(toCanvasImgs(raw).map((i) => i.name))
   }
@@ -1293,6 +1327,10 @@ export class FlowClient {
     const tileIndex = await this.waitForNewAnimateTile(beforeTiles, TURN_TIMEOUT_MS)
     await this.openAnimateMenu(tileIndex)
     // 4. Motion prompt + submit (capture the pre-submit media set to detect the new clip).
+    // This path scrapes media names directly rather than via snapshotMediaNames(), so it must
+    // mark the failure-card baseline itself — otherwise an old blocked card in the project
+    // would abort this clip before it ever started.
+    await this.markTurnStart()
     const before = new Set(await this.scrapeMediaNames())
     await this.submitPrompt(motion)
     // 5. Approve the credit gate if Flow posts one (Veo Quality = 100 credits).

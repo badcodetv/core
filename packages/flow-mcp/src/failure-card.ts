@@ -58,3 +58,37 @@ export function classifyCard(text: string | null): CardState {
   if (QUEUED_RE.test(text)) return 'queued'
   return null
 }
+
+/**
+ * Remove the cards that were ALREADY on the page before this turn started, returning only the
+ * ones that are genuinely new.
+ *
+ * Flow keeps a refused generation's card in the project gallery permanently, so classifying
+ * every card on the page means one blocked prompt poisons the project forever: every later
+ * generation aborts instantly with POLICY_BLOCKED, confident and wrong. Confirmed live
+ * 2026-08-12 — a plainly benign prompt failed in 5.5s in a project holding two old blocked
+ * cards. That is strictly worse than the ~90s timeout this fast-abort was built to replace,
+ * because a timeout is at least honest about not knowing.
+ *
+ * Compares as a MULTISET, not a set, and never by position:
+ * - Repeated identical text is normal (retrying a blocked prompt produces a second card with
+ *   byte-identical text), so a plain set difference would hide the new one behind the old.
+ * - New cards may be prepended or appended depending on the gallery's sort, so "the last N"
+ *   is not safe either.
+ *
+ * If `baseline` is empty this is a no-op, which is the correct behaviour for a first turn.
+ * If the baseline is somehow stale (too many entries), the result is that a real block gets
+ * subtracted away and the caller falls back to waiting out its timeout — the safe direction
+ * to fail in, and exactly the behaviour that existed before the fast-abort.
+ */
+export function newCardsSince(current: string[], baseline: string[]): string[] {
+  const remaining = new Map<string, number>()
+  for (const t of baseline) remaining.set(t, (remaining.get(t) ?? 0) + 1)
+  const fresh: string[] = []
+  for (const t of current) {
+    const n = remaining.get(t) ?? 0
+    if (n > 0) remaining.set(t, n - 1)
+    else fresh.push(t)
+  }
+  return fresh
+}

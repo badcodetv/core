@@ -1,5 +1,43 @@
 import { describe, it, expect } from 'vitest'
-import { classifyCard, ANY_CARD_RE } from './failure-card'
+import { classifyCard, newCardsSince, ANY_CARD_RE } from './failure-card'
+
+describe('newCardsSince', () => {
+  const BLOCK = 'This generation might violate our policies.'
+  const QUEUE = 'Your video has been scheduled and is waiting in the queue due to high demand.'
+
+  it('returns everything when there is no baseline (first turn)', () => {
+    expect(newCardsSince([BLOCK], [])).toEqual([BLOCK])
+  })
+
+  it('returns nothing when the page is unchanged — the poisoned-project bug', () => {
+    // Live 2026-08-12: two old blocked cards made a plainly benign prompt fail in 5.5s.
+    expect(newCardsSince([BLOCK, BLOCK], [BLOCK, BLOCK])).toEqual([])
+  })
+
+  it('sees a NEW card whose text is byte-identical to an old one', () => {
+    // Retrying a blocked prompt produces a second, identical card. A set difference would
+    // hide it; a multiset difference does not.
+    expect(newCardsSince([BLOCK, BLOCK], [BLOCK])).toEqual([BLOCK])
+  })
+
+  it('finds a new card regardless of whether the gallery prepends or appends it', () => {
+    expect(newCardsSince([BLOCK, QUEUE], [QUEUE])).toEqual([BLOCK])
+    expect(newCardsSince([QUEUE, BLOCK], [QUEUE])).toEqual([BLOCK])
+  })
+
+  it('ignores a stale card that has since disappeared', () => {
+    expect(newCardsSince([BLOCK], [QUEUE])).toEqual([BLOCK])
+  })
+
+  it('fails safe when the baseline over-counts: nothing new, so the caller waits it out', () => {
+    expect(newCardsSince([BLOCK], [BLOCK, BLOCK])).toEqual([])
+  })
+
+  it('handles an empty page', () => {
+    expect(newCardsSince([], [BLOCK])).toEqual([])
+    expect(newCardsSince([], [])).toEqual([])
+  })
+})
 
 describe('classifyCard', () => {
   it('classifies null/empty as no card', () => {
