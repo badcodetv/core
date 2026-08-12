@@ -7,8 +7,27 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: in progress — **15 of 27 done, T11 code complete. Next: T12, after the T11 delegate ruling.**
-Date: 2026-08-06
+Status: in progress — **15 of 27 done. T11 SUPERSEDED by the 2026-08-12
+architecture ruling; next is T12, now the tenancy auction.**
+Date: 2026-08-06 · **architecture revised 2026-08-12**
+
+> **Read [`2026-08-12-enc-architecture-decision.md`](./2026-08-12-enc-architecture-decision.md)
+> before touching T11–T13.** Three rulings from Kai landed on 2026-08-12 and they
+> change the shape of the economy:
+> **(A) No holding cost at all** — rent, the standing SPL delegate, the
+> Token-2022 permanent delegate and foreclosure are all removed. Holding ENC
+> already loses truthfully, because the balance sits still while asset prices
+> rise. Assets change hands by **scheduled auction** instead of forced sale.
+> **(B) It runs forever**, with one exception it can prove for itself: a
+> permissionless `retire` that any caller may trigger once the oracle has been
+> silent long enough (new **T28**).
+> **(C) Closed loop by posture** — BadCode seeds no liquidity pool and sells no
+> ENC, ever. ENC stays a plain SPL token that anyone else may pool if they wish;
+> we neither prevent it nor point at it. The faucet is therefore the only route
+> in that we control, which makes T13's parameters a pass/fail test at T14.
+>
+> The evidence behind all three is at
+> [`research/2026-08-12-enc-tokenomics/`](./research/2026-08-12-enc-tokenomics/README.md).
 Relates: `docs/stories/magic-money-tree/emperors-new-coin.md` (canon — the coin
 is a cryptocurrency folded into the Magic Money Tree story, cross-promoted with
 it). Upstream reference repo: https://github.com/emperorsnewcoin/coin (design
@@ -28,9 +47,10 @@ this table is the map.
 | ✅ | T8 · `initialize` + `init_asset` ×10 | program |
 | ✅ | T9 · oracle trait + MockOracle behind a Cargo feature | program |
 | ✅ | T10 · `sync_m2` — supply targeting, the core | program |
-| 🟡 | T11 · rent accrual, `settle_rent`, `foreclose` — code done, 7 tests need T12 | program |
-| ⬜ | **T12 · `buy_asset` — the forced sale** ← **you are here** (needs the T11 ruling) | program |
-| ⬜ | T13 · the faucet — register-now, collect-next-epoch | program |
+| ⛔ | T11 · rent, `settle_rent`, `foreclose` — **SUPERSEDED 2026-08-12**, built then removed (rent inverted the thesis) | program |
+| ⬜ | **T12 · the tenancy auction — `place_bid` + `settle_auction`** ← **you are here** | program |
+| ⬜ | T13 · the faucet — register-now, collect-next-epoch (**now the only way in**) | program |
+| ⬜ | T28 · `retire` — the coin notices its own end | program |
 | ⬜ | T14 · economic simulation harness | economics |
 | ⬜ | T15 · choose the genesis parameters | economics |
 | ⬜ | T17 · stand the M2SL feed up on devnet | oracle |
@@ -931,7 +951,25 @@ upgrade authority is burned at T22.
   **`--features` build no longer publishes the IDL**, or the committed interface
   flips with whichever build ran last.
 
-### T11: Rent accrual, `settle_rent`, `foreclose`   [Status: code DONE 2026-08-11, tests part-blocked on T12 | Model: opus]
+### T11: Rent accrual, `settle_rent`, `foreclose`   [Status: **SUPERSEDED 2026-08-12** — built, then removed by ruling A | Model: opus]
+
+> **Do not build this. It is kept for the record.** The code was written and
+> tested (commit `9a94fa3`), then ruled out on 2026-08-12. **Rent inverts the
+> thesis:** asset prices rise with M2 at a median of ~0.52%/month, and rent was
+> set at 5%/day (~150%/month), so owning an asset was a catastrophic loss and
+> holding ENC was the better trade — the exact opposite of the joke. For "assets
+> beat cash" to be true on chain, any holding cost must sit *below* the M2 growth
+> rate (~6%/year), and at that rate rent cannot also serve as the turnover engine
+> it was hired to be. Under the artwork framing (legibility over engagement)
+> turnover was never required, so the job no longer exists. **The design now has
+> no holding cost at all** — holding ENC already loses truthfully, because the
+> balance sits still while asset prices rise. See
+> [`2026-08-12-enc-architecture-decision.md`](./2026-08-12-enc-architecture-decision.md).
+> Removing it also drops the standing SPL delegate and the Token-2022 permanent
+> delegate, which are the two primitives Solana risk scanners weight most heavily.
+
+<details><summary>Original ticket (superseded)</summary>
+
 - **Scope:** Lazy rent from `last_touched` at the configured per-day rate against
   the *current interpolated* price. `settle_rent` (permissionless) moves owed rent
   from holder to vault. `foreclose` (permissionless) returns the asset to the
@@ -962,24 +1000,68 @@ upgrade authority is burned at T22.
   Debt dies with the tenancy. **Localnet headroom raised 500KB → 1MB** — the
   program now lands near 530KB and overran the old reservation.
 
-### T12: `buy_asset` — the forced sale   [Status: pending | Model: opus]
-- **Scope:** Anyone buys any asset at the current interpolated price. Atomically:
-  settle the seller's rent, pay 100% of the price to the seller (or the vault if
-  the Emperor holds it), move the NFT via the permanent delegate, reassign the
-  `Asset`, reset `last_touched`. **Create the seller's ENC ATA if absent**
-  (idempotent create, buyer pays) — otherwise a seller without an ATA could block
-  their own forced sale, defeating the no-refusal guarantee. No cooldown. Emit an
-  event with buyer, seller, index, price, slot.
-- **Files:** `chain/programs/emperors-new-coin/src/instructions/buy_asset.rs`,
-  `chain/tests/buy_asset.ts`.
-- **Acceptance criteria:** Seller receives exactly price minus rent owed; the NFT
-  lands in the buyer's token account; the holder cannot block the sale **even with
-  no ENC token account**; buying from the vault routes payment to the vault;
-  supply unchanged; rapid back-and-forth buying succeeds with rent correctly
-  settled each way.
+</details>
+
+### T12: The tenancy auction — `place_bid` + `settle_auction`   [Status: pending — replaces the forced sale | Model: opus]
+- **Scope:** Each of the ten assets is held for a fixed **term** (placeholder: 30
+  days, aligned to the price interpolation window). During a term anyone may
+  `place_bid`, transferring ENC into a program-owned escrow — **signed by the
+  bidder, so no delegate over anyone's balance is ever required.** A bid must beat
+  both the current interpolated price (the reserve — a flag can never change hands
+  below what M2 says it is worth) and the standing high bid. A superseded bidder
+  may `withdraw_bid` at any time. At term end anyone may call `settle_auction`
+  (permissionless): the winner's escrow pays **100% to the outgoing holder** (the
+  vault, if the Emperor held it), the `Asset` reassigns to the winner, and a fresh
+  term begins. **If no bid cleared the reserve the incumbent keeps it for another
+  term** — dormancy is an expected outcome, not a failure.
+- **Custody — the ten flags never leave program custody.** Each sits in a
+  vault-owned token account; the `Asset` PDA records who holds the tenancy. This
+  is what removes the permanent delegate, and it is honest: it *is* a lease, and
+  the chain says so.
+- **What the holder actually gets in their wallet: a tenancy certificate.**
+  Winning mints the holder their own NFT — theirs outright, in Phantom from the
+  moment they win. **At term end nothing is taken from them.** It simply stops
+  being the current tenancy and becomes a stub: a ticket for a night that already
+  happened, kept forever, numbered and dated.
+  - *Why this rather than putting the flag itself in the wallet* (asked and ruled
+    2026-08-12): a wallet-held flag would have to be pulled back at settlement
+    without the holder's signature, which means the **permanent delegate returns**
+    — the exact power, and the exact scanner flag, that Ruling A removed. There is
+    no third way; wallet residency and permissionless settlement are mutually
+    exclusive.
+  - *And it is the better joke.* **You never really owned the asset. All you keep
+    is the receipt.** That is the Emperor's New Clothes exactly: the magnificent
+    thing was never yours, and what you're left with is documentation that you
+    were there. The certificate carries the comedy — *"Certificate of Temporary
+    Ownership. The bearer held [asset]. It is no longer theirs. Thank you for
+    participating in the economy."*
+  - *Net effect:* **no path in the entire program touches anyone's wallet without
+    their signature.** Not the coin, not the flags, not the certificates.
+- **On forcing the outgoing holder — state this plainly in the copy.** Settlement
+  does remove the tenancy whether the incumbent likes it or not. What makes that
+  fair rather than a seizure is that it happens **on a clock published at the
+  moment they won** (a term, not ownership), and they are **paid the new, higher
+  price** on the way out. Never describe a tenancy as owning the asset.
+- **Why this shape:** the outgoing holder is paid the *new* price having bought at
+  the old one, so a term held through an expansion pays out more than it cost — in
+  a currency that buys less than it used to. That is the entire joke, executed by
+  the machine, with nobody's wallet touched without their signature.
+- **Files:** `chain/programs/emperors-new-coin/src/instructions/{place_bid,withdraw_bid,settle_auction}.rs`,
+  `src/state.rs` (extend: `term_ends_at`, `high_bid`, `high_bidder`, `term_number`;
+  `Bid` PDA), `chain/tests/auction.ts`.
+- **Acceptance criteria:** A bid below the reserve or below the standing high bid
+  is refused. `settle_auction` before term end is refused. The outgoing holder
+  receives exactly the winning bid. A superseded bidder can always recover their
+  escrow in full. Settling with no qualifying bid leaves the holder unchanged and
+  starts a new term. Total supply is never changed by any path. **Escrowed ENC is
+  never strandable** — every route out is reachable by the bidder alone. A
+  tenancy certificate is minted to the winner and is **never** moved, burned or
+  reclaimed by any later instruction — prove it by settling a subsequent term and
+  asserting the previous holder's certificate is untouched. **No instruction
+  anywhere in the program can move a token the caller does not own.**
 - **TDD:** yes
-- **Validation:** `./stack test test-buy`.
-- **Depends on:** T11
+- **Validation:** `./stack test test-auction`.
+- **Depends on:** T10 (no longer T11)
 - [ ] done
 - Notes:
 
@@ -1011,7 +1093,15 @@ upgrade authority is burned at T22.
 - **Validation:** `./stack test test-faucet`.
 - **Depends on:** T12
 - [ ] done
-- Notes:
+- Notes: **The faucet is now the only way in.** Ruling C (2026-08-12) is that
+  BadCode seeds no liquidity and sells nothing, so unless a stranger makes a pool
+  there is no route to ENC except this instruction. That turns a tuning
+  preference into a **pass/fail test for T14**: a patient claimant must be able to
+  accumulate enough to clear an auction reserve within a reasonable number of
+  epochs. If they cannot, the loop does not close and the artwork is a shop
+  window. The good news is that it self-scales — the pot is a share of the vault,
+  and vault and asset prices both move with M2 by the same factor, so the ratio
+  holds as M2 grows.
 
 ### T14: Economic simulation harness   [Status: pending | Model: opus]
 - **Scope:** A TypeScript harness replaying real historical M2SL (including the
@@ -1354,6 +1444,42 @@ Also adds `chain/TESTING.md`: the manual Phantom walkthrough, whose load-bearing
 point is that **Phantom sends transactions over its own selected network, not the
 page's** — so leaving it on Mainnet fails every click with a blockhash error
 while the page correctly reports localnet.
+
+### T28: `retire` — the coin notices its own end   [Status: pending | Model: opus]
+- **Scope:** ENC runs **forever** (Ruling B, 2026-08-12) — with one exception it
+  can prove for itself. Add a permissionless `retire` instruction that any caller
+  may invoke and that the *program* validates: if the last successful `sync_m2`
+  is older than `RETIREMENT_SILENCE`, set `config.retired = true`, irreversibly,
+  and emit a `Retired` event. Once retired, `sync_m2` refuses forever. Nobody can
+  retire it early; nobody can prevent it once the condition is true. **No key, no
+  discretion, no announcement — anyone can walk up and observe that it ended.**
+- **Why time, not "the value stopped changing":** the program has no clock of its
+  own and only runs when someone sends a transaction. A staleness *counter* needs
+  somebody to keep poking it; an elapsed-time test is true whether or not anyone
+  is watching, and the first visitor years later can flip the bit.
+- **`RETIREMENT_SILENCE` = 365 days** (placeholder for T15, but the reasoning is
+  fixed): M2 publishes monthly, and this flag is **irreversible on a
+  non-upgradeable program**, so a Switchboard outage or a bad month must never be
+  able to end the artwork. A one-year gap in US money-supply publication means
+  something genuinely happened.
+- **Open creative call (Kai/Jack) — what retirement DOES to the auctions.**
+  Either everything freezes and the final state stands as the exhibit, or *the
+  auctions keep running forever at the last prices the Fed ever reported* — the
+  machine grinding on, trading flags at the valuations of a vanished world,
+  because nobody noticed the numbers stopped meaning anything. The second is the
+  better ending and costs nothing extra; it needs a ruling before this is built.
+- **Files:** `chain/programs/emperors-new-coin/src/instructions/retire.rs`,
+  `src/state.rs` (extend `Config`), `chain/tests/retire.ts`.
+- **Acceptance criteria:** `retire` fails while syncs are current and succeeds
+  once the silence threshold has elapsed. Calling it twice is harmless. After
+  retirement `sync_m2` always fails. No signer is required and no authority is
+  consulted. Clock manipulation in tests uses the mock oracle's timestamps, not a
+  writable state field.
+- **TDD:** yes
+- **Validation:** `./stack test test-retire`.
+- **Depends on:** T10
+- [ ] done
+- Notes:
 
 ## Discovered Issues Log
 
