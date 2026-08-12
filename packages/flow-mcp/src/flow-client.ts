@@ -6,7 +6,7 @@ import { harvestToFile, contentTypeOf } from './harvest'
 import { pickProject, projectIdFromHref, toProjectSummaries, SCRAPE_PROJECTS, type ProjectTile, type ProjectSummary } from './project'
 import { batchOutPath } from './batch'
 import { candidateOutPath } from './candidates'
-import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected } from './compose'
+import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, aspectAlreadySelected } from './compose'
 import { classifyCard, ANY_CARD_RE, type CardState } from './failure-card'
 import { parseMediaOptions, SCRAPE_MEDIA_OPTIONS, type RawMediaOption, type MediaListItem } from './media-list'
 import { toAnimateTiles, chooseAnimateTarget, type AnimateTile, type RawAnimateTile } from './animate-target'
@@ -483,11 +483,15 @@ export class FlowClient {
   }
 
   /**
-   * Force the create bar into image mode at the requested output count (1–4).
+   * Force the create bar into image mode at the requested output count (1–4), model and
+   * aspect ratio. `aspect` is optional and, when omitted, is left entirely untouched — Flow's
+   * own default is already 16:9 (flow-selectors.md:174: "Default is already Image · 16:9 ·
+   * 1x, so ensureImageMode is idempotent"), unlike video's Settings panel which resets to the
+   * wrong tier per project, so there is no landmine here that requires asserting a default.
    * Idempotent — when the config trigger's label already shows the target state
    * the menu is not even opened, which keeps repeat calls in an edit loop cheap.
    */
-  private async ensureImageMode(count = 1, model = DEFAULT_MODEL): Promise<void> {
+  private async ensureImageMode(count = 1, model = DEFAULT_MODEL, aspect?: string): Promise<void> {
     // Wait for the create bar to hydrate (it renders after navigation).
     await this.promptBox().waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     // The bar toggles between "Agent" (conversational) and direct generation; the image config
@@ -506,12 +510,22 @@ export class FlowClient {
     const countTab = count <= 1 ? '1x' : `x${count}`
     // Short-circuit: the trigger label concatenates model+aspect+count ("🍌 Nano Banana 2crop_16_91x").
     const label = ((await crop.textContent()) ?? '').trim()
-    if (/Nano Banana/i.test(label) && label.endsWith(countTab)) return
+    if (/Nano Banana/i.test(label) && label.endsWith(countTab) && (!aspect || aspectAlreadySelected(label, aspect))) {
+      return
+    }
     // Open the config menu — a Radix trigger; needs the synthetic pointer sequence.
     await this.pointerClick(crop)
     const imageTab = this.page.getByRole('tab', { name: /image\s*Image/i })
     await imageTab.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     await this.tabClick(imageTab)
+    // Aspect tabs render as "<icon ligature><ratio text>", with the human ratio text ALWAYS
+    // LAST (confirmed live: "crop_16_916:9", "crop_landscape4:3" — flow-selectors.md:172-174),
+    // so anchoring on the ratio text alone needs no icon-name guessing at all — unlike
+    // aspectAlreadySelected's short-circuit above, which has to guess the icon (see compose.ts).
+    if (aspect) {
+      const aspectTab = this.page.getByRole('tab', { name: new RegExp(`${escapeRegExp(aspect)}$`, 'i') })
+      if (await aspectTab.count()) await this.tabClick(aspectTab)
+    }
     const countLocator = this.page.getByRole('tab', { name: countTab, exact: true })
     if (await countLocator.count()) await this.tabClick(countLocator)
     // Escape closes the menu; the selection sticks (verified live 2026-07-14).
@@ -630,11 +644,11 @@ export class FlowClient {
   async generateImage(
     prompt: string,
     outPath: string,
-    opts?: { character?: string; numOutputs?: number },
+    opts?: { character?: string; numOutputs?: number; model?: string; aspect?: string },
   ): Promise<ImageResult & { candidates?: ImageResult[]; partial?: boolean }> {
     const numOutputs = opts?.numOutputs ?? 1
     await this.ensureProjectRoot()
-    await this.ensureImageMode(numOutputs)
+    await this.ensureImageMode(numOutputs, opts?.model, opts?.aspect)
     const before = await this.snapshotMediaNames()
     if (opts?.character) await this.submitWithCharacter(opts.character, prompt)
     else await this.submitPrompt(prompt)
@@ -654,11 +668,11 @@ export class FlowClient {
     prompt: string,
     referenceImages: string[],
     outPath: string,
-    opts?: { numOutputs?: number; character?: string },
+    opts?: { numOutputs?: number; character?: string; model?: string; aspect?: string },
   ): Promise<EditResult> {
     const numOutputs = opts?.numOutputs ?? 2
     await this.ensureProjectRoot()
-    await this.ensureImageMode(numOutputs)
+    await this.ensureImageMode(numOutputs, opts?.model, opts?.aspect)
     await this.attachReferences(referenceImages)
     if (opts?.character) await this.addCharacterToPrompt(opts.character)
     // Snapshot AFTER attaching: the uploads themselves land in the media grid as new UUIDs.
@@ -807,9 +821,9 @@ export class FlowClient {
     await this.clickSubmit()
   }
 
-  async generateBatch(prompts: string[], outDir: string): Promise<BatchItem[]> {
+  async generateBatch(prompts: string[], outDir: string, opts?: { model?: string; aspect?: string }): Promise<BatchItem[]> {
     await this.ensureProjectRoot()
-    await this.ensureImageMode()
+    await this.ensureImageMode(1, opts?.model, opts?.aspect)
     const items: BatchItem[] = []
     for (let i = 0; i < prompts.length; i++) {
       const prompt = prompts[i]!
@@ -823,8 +837,30 @@ export class FlowClient {
     return items
   }
 
-  /** Follow-up correction in the SAME session, then harvest the new active canvas. */
-  async refine(prompt: string, outPath: string): Promise<MediaResult> {
+  /**
+   * Follow-up correction in the SAME session, then harvest the new active canvas.
+   *
+   * Deliberately calls NEITHER `ensureProjectRoot()` NOR (by default) `ensureImageMode()` —
+   * the whole point of `refine()` is a cheap follow-up turn on whatever canvas/session state
+   * the PREVIOUS call already established, not a fresh assertion of it. Forcing those on every
+   * call would fight that: `ensureProjectRoot()` can navigate the page mid-edit-loop, and even
+   * an idempotent `ensureImageMode()` touches the compose bar (waits for it, reads its label)
+   * on every single refine — real cost in a tight edit loop, for callers who never asked for it.
+   *
+   * `model`/`aspect` are the one deliberate exception, and only fire when the CALLER actually
+   * passes one: this is the "assert only on demand" option from the task, chosen over asserting
+   * unconditionally, specifically so the no-argument path — every existing caller, today — stays
+   * byte-for-byte the old behaviour (no `ensureImageMode` call at all). Passing either calls
+   * `ensureImageMode(1, ...)` once, before the turn, to switch the compose bar; the side not
+   * given falls back to `ensureImageMode`'s own defaults (`DEFAULT_MODEL` / Flow's untouched
+   * aspect) rather than the session's current value — a caller who only wants a tier bump
+   * should not also be silently re-pinned to a stale aspect, and vice versa, so both fall back
+   * to the same neutral defaults every other image call uses.
+   */
+  async refine(prompt: string, outPath: string, opts?: { model?: string; aspect?: string }): Promise<MediaResult> {
+    if (opts?.model || opts?.aspect) {
+      await this.ensureImageMode(1, opts.model, opts.aspect)
+    }
     const before = await this.snapshotMediaNames()
     await this.submitPrompt(prompt)
     const { name } = await this.waitForNewCanvas(before, TURN_TIMEOUT_MS)

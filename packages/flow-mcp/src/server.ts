@@ -56,6 +56,30 @@ function toToolError(err: unknown): ToolResult {
   return fail('FLOW_ERROR', msg)
 }
 
+/**
+ * Flow's documented image aspect ratios (docs/flow/image-prompting.md §9), Nano Banana 2's
+ * extras included. Selector-confirmed against the live tab list (flow-selectors.md:172-174)
+ * for exactly two: "16:9" and "4:3". The rest are wired through the identical `ensureImageMode`
+ * tab-matching path (which needs no icon-name knowledge, just the ratio text) but are UNTESTED
+ * against the real DOM — flag any failures for Wave B live validation.
+ */
+const IMAGE_ASPECTS = [
+  '1:1', '3:2', '2:3', '3:4', '4:3', '4:5', '5:4', '9:16', '16:9', '21:9', '1:4', '4:1', '1:8', '8:1',
+] as const
+
+const IMAGE_MODEL_DESC =
+  'Override the image model for this call only (defaults to "Nano Banana Pro"). Recorded tiers, ' +
+  'sharpest first: "Nano Banana Pro", "Nano Banana 2", "Nano Banana 2 Lite". Per docs/flow/README.md ' +
+  'rule 5 ("iterate on the cheap tier, spend on the locked shot"), prefer Lite while iterating on a ' +
+  'prompt and switch to Pro only for the generation you intend to keep.'
+
+const IMAGE_ASPECT_DESC =
+  'Override the output aspect ratio for this call only. Omitting it leaves the project\'s current ' +
+  'aspect untouched (Flow\'s own default is "16:9", and unlike video there is no reset-per-project ' +
+  'landmine here, so there is nothing to assert when this is omitted). Selector-confirmed: "16:9" and ' +
+  '"4:3"; the remaining values in the list are Flow-documented ratios wired through the same tab-click ' +
+  'path but not yet live-validated.'
+
 const server = new McpServer({ name: NAME, version: VERSION })
 
 server.registerTool(
@@ -153,18 +177,31 @@ server.registerTool(
   {
     title: 'Generate image',
     description:
-      'Generate an image in Flow from a prompt and save it to outPath (absolute). Pass character to cast a project Character (created via flow_create_character) for cross-slide consistency. numOutputs (1-4, default 1) generates variants in one turn, saved with -a/-b… suffixes and returned as candidates[]. Returns { path, mediaId, width, height }.',
+      'Generate an image in Flow from a prompt and save it to outPath (absolute). Pass character to cast a project Character (created via flow_create_character) for cross-slide consistency. numOutputs (1-4, default 1) generates variants in one turn, saved with -a/-b… suffixes and returned as candidates[]. ' +
+      IMAGE_MODEL_DESC +
+      ' ' +
+      IMAGE_ASPECT_DESC +
+      ' Returns { path, mediaId, width, height }.',
     inputSchema: {
       prompt: z.string().min(1),
       outPath: z.string().min(1),
       character: z.string().min(1).optional(),
       numOutputs: z.number().int().min(1).max(4).optional(),
+      model: z.string().min(1).optional(),
+      aspect: z.enum(IMAGE_ASPECTS).optional(),
     },
   },
-  async ({ prompt, outPath, character, numOutputs }) => {
+  async ({ prompt, outPath, character, numOutputs, model, aspect }) => {
     try {
       return await withClient(async (c) =>
-        ok(await c.generateImage(prompt, outPath, { ...(character ? { character } : {}), ...(numOutputs ? { numOutputs } : {}) })),
+        ok(
+          await c.generateImage(prompt, outPath, {
+            ...(character ? { character } : {}),
+            ...(numOutputs ? { numOutputs } : {}),
+            ...(model ? { model } : {}),
+            ...(aspect ? { aspect } : {}),
+          }),
+        ),
       )
     } catch (err) {
       return toToolError(err)
@@ -177,22 +214,30 @@ server.registerTool(
   {
     title: 'Edit image with reference',
     description:
-      'Generate edited variant(s) of an existing image: uploads referenceImages (absolute local paths) as prompt ingredients, applies the delta prompt, and saves numOutputs (default 2) candidates to outPath with -a/-b… suffixes. Reference the ORIGINAL/golden image, not a previous edit output — chained edits accumulate artifacts. Phrase the prompt as: "Using the provided image, change only <X> to <Y>. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition." Returns { candidates: [{ path, mediaId, width, height }], partial? }.',
+      'Generate edited variant(s) of an existing image: uploads referenceImages (absolute local paths) as prompt ingredients, applies the delta prompt, and saves numOutputs (default 2) candidates to outPath with -a/-b… suffixes. Reference the ORIGINAL/golden image, not a previous edit output — chained edits accumulate artifacts. Phrase the prompt as: "Using the provided image, change only <X> to <Y>. Keep everything else in the image exactly the same, preserving the original style, lighting, and composition." ' +
+      IMAGE_MODEL_DESC +
+      ' ' +
+      IMAGE_ASPECT_DESC +
+      ' Returns { candidates: [{ path, mediaId, width, height }], partial? }.',
     inputSchema: {
       prompt: z.string().min(1),
       referenceImages: z.array(z.string().min(1)).min(1).max(3),
       outPath: z.string().min(1),
       numOutputs: z.number().int().min(1).max(4).optional(),
       character: z.string().min(1).optional(),
+      model: z.string().min(1).optional(),
+      aspect: z.enum(IMAGE_ASPECTS).optional(),
     },
   },
-  async ({ prompt, referenceImages, outPath, numOutputs, character }) => {
+  async ({ prompt, referenceImages, outPath, numOutputs, character, model, aspect }) => {
     try {
       return await withClient(async (c) =>
         ok(
           await c.editImage(prompt, referenceImages, outPath, {
             ...(numOutputs ? { numOutputs } : {}),
             ...(character ? { character } : {}),
+            ...(model ? { model } : {}),
+            ...(aspect ? { aspect } : {}),
           }),
         ),
       )
@@ -207,15 +252,32 @@ server.registerTool(
   {
     title: 'Refine last image',
     description:
-      'Send a follow-up correction in the SAME Flow session and save the new image to outPath. Returns { path, mediaId }.',
+      'Send a follow-up correction in the SAME Flow session and save the new image to outPath. Relies entirely on the ' +
+      "session's existing state (project, canvas, compose bar) — it does not re-open or re-navigate anything, which is " +
+      'what makes it cheap in a tight edit loop. model/aspect are optional and, when BOTH are omitted (the normal case), ' +
+      'change nothing about that: no mode assertion runs at all, identical to calling this tool with no such params. ' +
+      'Pass either one only when you deliberately want to switch tier or aspect for this follow-up turn — ' +
+      IMAGE_MODEL_DESC +
+      ' ' +
+      IMAGE_ASPECT_DESC +
+      ' Returns { path, mediaId }.',
     inputSchema: {
       prompt: z.string().min(1),
       outPath: z.string().min(1),
+      model: z.string().min(1).optional(),
+      aspect: z.enum(IMAGE_ASPECTS).optional(),
     },
   },
-  async ({ prompt, outPath }) => {
+  async ({ prompt, outPath, model, aspect }) => {
     try {
-      return await withClient(async (c) => ok(await c.refine(prompt, outPath)))
+      return await withClient(async (c) =>
+        ok(
+          await c.refine(prompt, outPath, {
+            ...(model ? { model } : {}),
+            ...(aspect ? { aspect } : {}),
+          }),
+        ),
+      )
     } catch (err) {
       return toToolError(err)
     }
@@ -266,15 +328,27 @@ server.registerTool(
   {
     title: 'Generate image batch',
     description:
-      'Generate N images sequentially in ONE Flow session from an ordered list of prompts. Saves <outDir>/<NN>.jpg per slide. Returns BatchItem[]. Use after planning all slide prompts up front.',
+      'Generate N images sequentially in ONE Flow session from an ordered list of prompts. Saves <outDir>/<NN>.jpg per slide. Returns BatchItem[]. Use after planning all slide prompts up front. model/aspect apply to the WHOLE batch (asserted once before the first prompt, not re-asserted per prompt). ' +
+      IMAGE_MODEL_DESC +
+      ' ' +
+      IMAGE_ASPECT_DESC,
     inputSchema: {
       prompts: z.array(z.string().min(1)).min(1).max(8),
       outDir: z.string().min(1),
+      model: z.string().min(1).optional(),
+      aspect: z.enum(IMAGE_ASPECTS).optional(),
     },
   },
-  async ({ prompts, outDir }) => {
+  async ({ prompts, outDir, model, aspect }) => {
     try {
-      return await withClient(async (c) => ok(await c.generateBatch(prompts, outDir)))
+      return await withClient(async (c) =>
+        ok(
+          await c.generateBatch(prompts, outDir, {
+            ...(model ? { model } : {}),
+            ...(aspect ? { aspect } : {}),
+          }),
+        ),
+      )
     } catch (err) {
       return toToolError(err)
     }

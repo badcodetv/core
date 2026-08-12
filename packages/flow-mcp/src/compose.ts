@@ -52,3 +52,42 @@ export function modelAlreadySelected(label: string | null, model: string): boole
 export function videoModelAlreadySelected(label: string | null, model: string): boolean {
   return new RegExp(`${escapeRegExp(model)}(?![\\w[])`, 'i').test(label ?? '')
 }
+
+/**
+ * Map an aspect ratio like "16:9" to the Material-icon ligature Flow's compose-bar CONFIG
+ * TRIGGER renders for it. Confirmed live (flow-selectors.md:172-174) for exactly two: 16:9 ->
+ * `crop_16_9` (the ratio spelled out with an underscore, not a colon) and 4:3 -> `crop_landscape`
+ * (Flow reuses the real Material Symbols name here instead of a derived `crop_4_3`). Every other
+ * ratio is assumed to follow the confirmed `crop_<w>_<h>` pattern by symmetry with 16:9 — and
+ * with `ensureVideoSettings`'s already-shipped `crop_9_16` guess for 9:16 — but that is
+ * UNCONFIRMED; flag for Wave B. `3:4` is guessed as `crop_portrait` by the same
+ * descriptive-name logic as 4:3/`crop_landscape`.
+ */
+function aspectIcon(aspect: string): string {
+  if (aspect === '4:3') return 'crop_landscape'
+  if (aspect === '3:4') return 'crop_portrait'
+  return `crop_${aspect.replace(':', '_')}`
+}
+
+/**
+ * True when the (collapsed) config-trigger label already shows `aspect` selected.
+ *
+ * Unlike `modelAlreadySelected`, the trigger does NOT carry the human-readable ratio text at
+ * all — confirmed live it concatenates as "🍌 Nano Banana 2crop_16_91x": icon ligature name
+ * then the count, straight through, no colon anywhere (see `ensureImageMode`'s short-circuit
+ * comment in flow-client.ts). So this matches on the derived icon name instead of the ratio text.
+ *
+ * No negative-lookahead guard here, unlike `modelAlreadySelected`/`videoModelAlreadySelected` —
+ * and that omission is deliberate, not an oversight. The count tab's digits sit immediately
+ * after the icon name with no separator ("crop_16_9" + "1x" = "crop_16_91x"), so a lookahead
+ * that rejects trailing word characters (the shape that guards the real "Nano Banana 2" vs
+ * "Nano Banana 2 Lite" bug) would reject the count digits too and this would never
+ * short-circuit at all — it would always reopen the menu, which is safe but pointless. It's
+ * safe to skip the guard: none of the derived icon names in Flow's aspect set are a strict
+ * prefix of another (`crop_16_9` / `crop_9_16` / `crop_1_1` / `crop_21_9` / … all diverge at
+ * their first digit), so there is no equivalent of the Lite trap to guard against here — the
+ * tests below exist to PROVE that for the pairs called out in the task, not to assume it.
+ */
+export function aspectAlreadySelected(label: string | null, aspect: string): boolean {
+  return new RegExp(escapeRegExp(aspectIcon(aspect)), 'i').test(label ?? '')
+}

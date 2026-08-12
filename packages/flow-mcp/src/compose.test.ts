@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { isBoxCleared, modelAlreadySelected, videoModelAlreadySelected } from './compose'
+import { isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, aspectAlreadySelected } from './compose'
 
 describe('isBoxCleared', () => {
   it('treats a truly empty box as cleared', () => {
@@ -68,5 +68,38 @@ describe('videoModelAlreadySelected', () => {
 
   it('handles a missing label', () => {
     expect(videoModelAlreadySelected(null, 'Veo 3.1 Quality')).toBe(false)
+  })
+})
+
+describe('aspectAlreadySelected', () => {
+  it('matches the confirmed 16:9 icon inside a concatenated trigger label', () => {
+    expect(aspectAlreadySelected('🍌 Nano Banana 2crop_16_91x', '16:9')).toBe(true)
+  })
+
+  it('matches the confirmed 4:3 icon, which is a descriptive name (crop_landscape), not a derived one', () => {
+    expect(aspectAlreadySelected('🍌 Nano Banana 2crop_landscape1x', '4:3')).toBe(true)
+  })
+
+  it('tolerates count digits immediately after the icon name (no separator, e.g. x2)', () => {
+    // Proves the "no lookahead guard needed" reasoning in compose.ts: the count tab's word
+    // characters sit directly against the icon name and must not block the match.
+    expect(aspectAlreadySelected('🍌 Nano Banana 2crop_16_9x2', '16:9')).toBe(true)
+  })
+
+  it('does not confuse 1:1 and 21:9 (task-flagged confusable pair)', () => {
+    expect(aspectAlreadySelected('🍌 Nano Banana 2crop_21_91x', '1:1')).toBe(false)
+    expect(aspectAlreadySelected('🍌 Nano Banana 2crop_1_11x', '21:9')).toBe(false)
+    expect(aspectAlreadySelected('🍌 Nano Banana 2crop_1_11x', '1:1')).toBe(true)
+    expect(aspectAlreadySelected('🍌 Nano Banana 2crop_21_91x', '21:9')).toBe(true)
+  })
+
+  it('does not confuse 16:9 and 9:16 (task-flagged confusable pair)', () => {
+    expect(aspectAlreadySelected('🍌 Nano Banana 2crop_9_161x', '16:9')).toBe(false)
+    expect(aspectAlreadySelected('🍌 Nano Banana 2crop_16_91x', '9:16')).toBe(false)
+    expect(aspectAlreadySelected('🍌 Nano Banana 2crop_9_161x', '9:16')).toBe(true)
+  })
+
+  it('handles a missing label', () => {
+    expect(aspectAlreadySelected(null, '16:9')).toBe(false)
   })
 })
