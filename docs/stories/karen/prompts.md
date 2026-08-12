@@ -379,12 +379,13 @@ Use the uploaded Manhattan map as the actual reference image and keep its real g
 
 ---
 
-### 2.6 Karen at the jazz club bar — illustrated register `[not yet fired]`
+### 2.6 Karen at the jazz club bar — illustrated register `[fired · accepted]`
 
-**Written 2026-08-12, not yet generated.** The first prompt in the
+**Fired 2026-08-12 on Nano Banana 2 in Flow. Accepted first time, unmodified.**
+The first prompt in the
 [§1b illustrated register](#1b-the-illustrated-register--karens-second-style-lock),
-and the only block in this file that is a **brief rather than a record** — it is
-here so it can be fired, judged and then rewritten as what was actually typed.
+and the frame every later shot in this register is style-referenced against.
+Kai's verdict: *"it is what i wanted."*
 
 Built on the six-slot structure Google's own prompt guide teaches — subject,
 action, environment, style, lighting, details
@@ -441,6 +442,195 @@ Compose for a 21:9 cinematic widescreen frame. Thanks.
 
 ---
 
+## 2a. The title-sequence plates — illustrated register
+
+Four stills fired on **Nano Banana 2 in Flow, 2026-08-12, all accepted**. They are
+the plates for a James Bond–style title sequence built out of Karen's story: the
+cord, the grid, the booth and the walk.
+
+> ### How to reconstruct any of these
+>
+> Each prompt as typed is **three parts in this order**:
+>
+> 1. the **§1b ILLUSTRATED REGISTER block**, pasted verbatim;
+> 2. the **relationship instruction** below;
+> 3. the **scene block** recorded under each heading.
+>
+> The lock is not repeated five times here — it lives in
+> [§1b](#the-block) and is character-for-character identical in every one.
+>
+> **The §2.6 jazz club frame is attached as a style reference on every one of
+> these generations.** That attachment is load-bearing: it is what holds the
+> palette and flatness across a series. The relationship instruction that
+> accompanies it, verbatim:
+>
+> ```prompt
+> Use the attached image as the style reference: match its palette, flatness, hard-edged light and matte painted texture exactly. Not photorealistic.
+> ```
+>
+> Both moves are vendor-documented — an attached image carries "artistic style,
+> colour palette and visual treatment" onto new content, and the lock is repeated
+> anyway because style drifts the moment you stop describing what stays. See
+> [`docs/google-flow/nano-banana-2.md`](../../google-flow/nano-banana-2.md).
+
+### 2a.1 The cord spiral — title-sequence plate, morph start frame
+
+Karen's signature motif. Bass emerged the *Vertigo* spiral from a pupil; hers
+comes from a phone cord — the loop, the hold, the nine months. Composed dead
+centre so it match-cuts to §2a.2.
+
+```prompt
+SCENE:
+Subject: a coiled black telephone handset cord seen from directly overhead, filling the frame.
+Action: static, wound into a tight flat spiral at the exact centre, the cord running out from the coil toward the lower frame edge.
+Environment: lying on a flat, uninterrupted deep-navy surface.
+Lighting: one warm amber source from upper left, throwing a hard-edged wedge across the surface; each coil catches a thin amber rim along its upper curve.
+Details: place the spiral's centre precisely at the centre of frame, radially balanced, with a small faint amber mark on the surface at that centre point; keep generous empty navy around the coil.
+Compose for a 16:9 frame.
+```
+
+### 2a.2 The aerial grid — title-sequence plate, morph end frame
+
+The *North by Northwest* device: geometry that resolves into a city. The
+crossroads lands on the same pixel as the spiral's eye, so the two cut together
+as a morph without any interpolation.
+
+```prompt
+SCENE:
+Subject: a dense city street grid seen from directly overhead.
+Action: static, with a few small amber vehicle shapes spaced along the streets.
+Environment: flat navy building blocks separated by wide amber streets running to every frame edge.
+Lighting: a low sun from upper left, each block throwing a long hard-edged navy shadow across the amber street beside it.
+Details: place one crossroads precisely at the centre of frame, slightly wider and brighter than the others, with the surrounding blocks radially balanced around it.
+Compose for a 16:9 frame.
+```
+
+### 2a.3 The booth — title-sequence plate, gun-barrel iris
+
+The Bond gun barrel, rebuilt as her phone box. **Generated as a plate, not as an
+iris** — the circular reveal is a mask in the edit, which is free, exact and
+repeatable. The prompt's only job is to leave enough empty navy for the circle to
+open into.
+
+```prompt
+SCENE:
+Subject: a glass phone booth glowing warm amber, standing alone on a night street, seen from across the road.
+Action: a single seated-height silhouette stands inside with her back to camera, one flat chestnut mass of shoulder-length hair catching a thin amber rim, features undrawn.
+Environment: flat navy building slabs receding on both sides, wet dark pavement in the foreground.
+Lighting: the booth's interior light is the only source in the frame; it throws one hard-edged wedge of amber across the wet pavement toward camera.
+Details: rain falls as thin pale diagonal streaks; keep the booth small and dead centre with large areas of empty navy on all sides.
+Compose for a 16:9 frame.
+```
+
+### 2a.4 The ankle-height walk — title-sequence plate
+
+The safest shot in the set and the best-looking: no face, no hands, and walking is
+the one motion these video models handle reliably.
+
+⚠️ **Palette drift — the odd one out.** This frame came back **warmer and more
+saturated** than the other three, which are navy-dominant. It will show if the four
+cut together. Either grade it back toward navy in post or re-fire with the palette
+clause tightened. Unresolved.
+
+```prompt
+SCENE:
+Subject: a woman's lower legs and shoes, seen from an extreme low angle at pavement level.
+Action: mid-stride, crossing the frame from left to right.
+Environment: flat amber pavement slabs below, navy building slabs rising steeply above and converging toward the top of frame, pale crosswalk bars running across the ground.
+Lighting: a low warm source behind her throwing one long hard-edged shadow stretching toward camera along the pavement.
+Details: charcoal trousers and dark low-heel shoes rendered as flat shapes; keep the framing below waist height so no hands or face enter the frame.
+Compose for a 16:9 frame.
+```
+
+---
+
+## 2b. Video prompts — Gemini Omni Flash `[not yet fired]`
+
+**Written 2026-08-12. Briefs, not records** — replace each with what was actually
+typed once they have been run. These animate the §2a plates.
+
+**Model: Gemini Omni Flash, in Flow.** Kai's call, made after the trade-offs were
+put on the table. Omni is already the default model in a fresh Flow project, so
+nothing needs switching — but confirm it, because
+[`docs/superpowers/flow-video.md`](../../superpowers/flow-video.md) drives the
+*Veo* path and re-selects Veo 3.1 Quality every session.
+
+Path: upload the still → hover the tile → `⋮ More` → **Animate** (attaches it as
+the source frame) → paste the prompt → Create → approve the credit gate.
+**30 credits per 10s clip**, back in 1–2 minutes, **720p native** with a 4K upscale
+on download. Poll for completion — a queued clip looks like a failure, while a real
+failure reads *"Oops, something went wrong!"* and re-posts the approve gate.
+
+### Why these are shaped the way they are
+
+Every clause is doing a job, and the shape is **not** the shape of a Veo prompt.
+Full reasoning in
+[`docs/google-flow/omni-flash.md`](../../google-flow/omni-flash.md); the short
+version:
+
+- **Open by locking the shot.** Duration, aspect and *oner* in the first sentence
+  holds them more reliably than any setting. **Omni defaults to cutting** — left
+  alone it builds a short narrative from several shots, which would wreck a slow
+  push.
+- **`Use the given image as the starting frame.`** This exact phrasing engages
+  first-frame behaviour. Omni's default is to treat a still as a loose reference
+  and redesign from it; the reports of "no true first-frame-to-video" appear to
+  describe that default rather than a hard limit.
+- **One main action per clip**, resolving inside 10s — there is no extension or
+  interpolation to lean on.
+- **`Keep … exactly the same`** is mandatory, not decorative. Without naming what
+  to preserve, Omni re-styles the whole scene when asked to change one element.
+- **Name the audio.** Omni generates sound regardless; unprompted it picks its own.
+- **Short and plain.** Google's own guide says the model does not want overly
+  prescriptive instructions. Veo-style constraint stacks cost quality here.
+- **Nothing asks for faces, hands, on-screen text or instrument-playing** — all
+  four are documented artefact sources.
+
+### 2b.1 The cord spiral
+
+`dolly zoom` is in Google's official camera vocabulary; on a spiral it is literally
+the *Vertigo* effect. Swap it for `push in` if the plain move reads flat.
+
+```prompt
+Create a 10-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. Slow push in toward the centre of the coil while it rotates gently clockwise, the amber light wedge holding steady across it. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged light exactly the same. Slow upright bass and brushed drums, no dialogue.
+```
+
+### 2b.2 The aerial grid
+
+```prompt
+Create a 10-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The camera pulls slowly straight up, revealing more of the grid, while the small cars crawl steadily along the amber streets. Keep the flat illustrated style, the navy-and-amber palette, the hard-edged shadows and the overhead angle exactly the same. Slow smoky jazz, no dialogue.
+```
+
+### 2b.3 The booth
+
+```prompt
+Create a 10-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. Slow push in toward the phone booth as the rain keeps falling; the woman inside stays with her back to camera and shifts her weight slightly. Keep the flat illustrated style, the navy-and-amber palette, the amber light wedge on the wet ground and her undrawn face exactly the same. Rain and distant traffic under slow smoky jazz, no dialogue.
+```
+
+### 2b.4 The ankle-height walk — fire this one first
+
+```prompt
+Create a 10-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. Low tracking shot moving alongside her at ground level as she keeps walking steadily across the crossing, her hard-edged shadow sweeping with her. Keep the flat illustrated style, the warm amber ground, the navy slabs above and the framing below waist height exactly the same. Footsteps and slow smoky jazz, no dialogue.
+```
+
+### 2b.5 The spiral→grid morph — experiment only
+
+**Do the morph in the edit, not in the model.** §2a.1 and §2a.2 share a centre
+point, so a hard cut on a beat does it for free — and a cut with no easing is more
+Bass than any dissolve. This block is a 30-credit experiment on the chance Omni's
+transformation ability (its actual specialty) beats the cut.
+
+```prompt
+Create a 10-second 16:9 noir title-sequence video as one continuous oner. Use the given image as the starting frame. The coil rotates slowly and transforms into an overhead city grid of navy blocks and amber streets, the centre of the coil becoming a crossroads. Keep the flat illustrated style and the navy-and-amber palette exactly the same throughout. Slow smoky jazz, no dialogue.
+```
+
+### Refining
+
+**One variable per turn** — `"Slower push in. Keep everything else the same."`
+Over-detailed edit instructions trigger changes you did not ask for.
+
+---
+
 ## 3. Gaps
 
 - **Three prompts are missing.** The batch this file was opened from included
@@ -452,5 +642,16 @@ Compose for a 21:9 cinematic widescreen frame. Thanks.
   the repo, say so and they get a `img/` folder and a per-prompt filename column.
 - **No Flow project name.** The frontmatter `flow_project` is `TODO`, same as the
   Character tiles in [`characters/`](./characters/).
-- **Video prompts are not here.** Several of these stills become clips; that step
-  has no ledger yet.
+- **Video prompts are partly here now.** [§2b](#2b-video-prompts--gemini-omni-flash-not-yet-fired)
+  covers the illustrated-register title sequence. The **super-8 register stills in
+  §2.1–2.5 still have no clip prompts recorded.**
+- **§2b is unfired.** Five briefs written but not yet run; they need replacing with
+  what was actually typed, the same way §2.6 was.
+- **No images filed for §2a.** Four accepted stills with no frame next to the
+  prompt — same gap as the bullet above, now with four more entries.
+- **The §2a.4 palette drift is unresolved** — that plate came back warmer and more
+  saturated than its three siblings and will show if they cut together.
+- **The §1b casting override is owed a ruling.** The illustrated register
+  contradicts the no-prose-faces rule in
+  [`characters/karen.md`](./characters/karen.md), for a stated reason. Kai or Jack
+  needs to confirm or reject it.
