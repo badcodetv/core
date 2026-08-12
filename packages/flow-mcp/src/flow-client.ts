@@ -18,7 +18,7 @@ import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySele
 import { classifyCard, newCardsSince, ANY_CARD_RE, type CardState } from './failure-card'
 import { parseMediaOptions, SCRAPE_MEDIA_OPTIONS, type RawMediaOption, type MediaListItem } from './media-list'
 import { parseCharacters, SCRAPE_CHARACTERS, type RawCharacterRow, type CharacterListItem } from './character-list'
-import { toAnimateTiles, chooseAnimateTarget, type AnimateTile, type RawAnimateTile } from './animate-target'
+import { toAnimateTiles, chooseAnimateTarget, attachedWrongSource, type AnimateTile, type RawAnimateTile } from './animate-target'
 
 const FLOW_URL = 'https://labs.google/fx/tools/flow'
 const DEFAULT_ENDPOINT = `http://localhost:${process.env.FLOW_CDP_PORT ?? '9222'}`
@@ -1417,8 +1417,9 @@ export class FlowClient {
     // paranoia.
     const tileIndex = await this.waitForNewAnimateTile(beforeTiles, TURN_TIMEOUT_MS)
     const targetName = toAnimateTiles(await this.scrapeAnimateTiles())[tileIndex]?.name ?? null
+    const beforeChips = await this.scrapeReferenceChips()
     await this.openAnimateMenu(tileIndex)
-    await this.assertAnimateSource(targetName)
+    await this.assertAnimateSource(targetName, beforeChips)
     // 4. Motion prompt + submit (capture the pre-submit media set to detect the new clip).
     // This path scrapes media names directly rather than via snapshotMediaNames(), so it must
     // mark the failure-card baseline itself — otherwise an old blocked card in the project
@@ -1517,15 +1518,34 @@ export class FlowClient {
    * is a guard against a known targeting bug, not a gate we want throwing on a UI tweak. It
    * only throws on a POSITIVE mismatch — two ids that both resolved and disagree.
    */
-  private async assertAnimateSource(expected: string | null): Promise<void> {
+  private async assertAnimateSource(
+    expected: string | null,
+    beforeChips: string[],
+  ): Promise<void> {
     if (!expected) return
-    const attached = (await this.page.evaluate(`(() => {
-      const el = document.querySelector('img[alt^="Reference media"]')
-      if (!el) return null
-      const s = el.currentSrc || el.src || el.getAttribute('src') || ''
-      try { return new URL(s, location.href).searchParams.get('name') } catch (e) { return null }
-    })()`)) as string | null
-    if (attached && attached !== expected) throw new Error('ANIMATE_WRONG_SOURCE')
+    const after = await this.scrapeReferenceChips()
+    if (attachedWrongSource(beforeChips, after, expected)) {
+      throw new Error('ANIMATE_WRONG_SOURCE')
+    }
+  }
+
+  /**
+   * Media ids of every reference chip currently attached. Flow does NOT clear these between
+   * turns — two were live at once during validation, one scrolled off-screen — so callers must
+   * diff before/after rather than reading "the chip".
+   */
+  private async scrapeReferenceChips(): Promise<string[]> {
+    return (await this.page.evaluate(`(() => {
+      const out = []
+      for (const im of document.querySelectorAll('img[alt^="Reference media"]')) {
+        const s = im.currentSrc || im.src || im.getAttribute('src') || ''
+        try {
+          const n = new URL(s, location.href).searchParams.get('name')
+          if (n) out.push(n)
+        } catch (e) {}
+      }
+      return out
+    })()`)) as string[]
   }
 
   /** Media UUIDs from <video>/<source>/<img> nodes carrying a non-thumbnail getMediaUrlRedirect src. */

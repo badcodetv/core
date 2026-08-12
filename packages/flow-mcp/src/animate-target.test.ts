@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import {
+  attachedWrongSource,
   toAnimateTiles,
   pickNewTileIndex,
   chooseAnimateTarget,
@@ -109,5 +110,35 @@ describe('chooseAnimateTarget', () => {
 
   it('is null when there are zero tiles at all', () => {
     expect(chooseAnimateTarget([], [])).toBeNull()
+  })
+})
+
+describe('attachedWrongSource', () => {
+  const TARGET = 'aaaa-1111'
+  const STALE = 'ffff-9999'
+
+  it('ignores a stale chip left over from an earlier turn', () => {
+    // Live 2026-08-12: two chips were attached at once, the older scrolled off-screen at
+    // y=-464. Reading "the first chip" flagged a CORRECT attach as wrong.
+    expect(attachedWrongSource([STALE], [STALE, TARGET], TARGET)).toBe(false)
+  })
+
+  it('flags a genuinely wrong attach', () => {
+    expect(attachedWrongSource([STALE], [STALE, 'bbbb-2222'], TARGET)).toBe(true)
+  })
+
+  it('says nothing when no new chip appeared — it cannot tell, so it must not block', () => {
+    expect(attachedWrongSource([STALE], [STALE], TARGET)).toBe(false)
+    expect(attachedWrongSource([], [], TARGET)).toBe(false)
+  })
+
+  it('handles a first-ever attach with no prior chips', () => {
+    expect(attachedWrongSource([], [TARGET], TARGET)).toBe(false)
+    expect(attachedWrongSource([], ['bbbb-2222'], TARGET)).toBe(true)
+  })
+
+  it('counts by multiset, so re-attaching the same media reads as new', () => {
+    expect(attachedWrongSource([TARGET], [TARGET, TARGET], TARGET)).toBe(false)
+    expect(attachedWrongSource([TARGET], [TARGET, 'bbbb-2222'], TARGET)).toBe(true)
   })
 })

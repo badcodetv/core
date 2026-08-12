@@ -60,3 +60,33 @@ export function chooseAnimateTarget(before: AnimateTile[], after: AnimateTile[])
   if (byDiff !== null) return byDiff
   return after.length === 1 ? 0 : null
 }
+
+/**
+ * Did attaching a source frame produce a reference chip for something OTHER than the tile we
+ * targeted? Compares chip media ids before and after the attach, so only the chip THIS turn
+ * created is judged.
+ *
+ * Reading "the first reference chip on the page" instead is wrong, and wrong in exactly the way
+ * the animate bug itself was: Flow leaves earlier turns' chips in the DOM (two were live at
+ * once, one scrolled far off-screen at y=-464), so the first match is routinely a stale one
+ * from a previous generation. That produced a false ANIMATE_WRONG_SOURCE on a correct attach.
+ *
+ * Returns false — no complaint — when no new chip appeared, since that means we cannot tell.
+ * This guards a known bug; it must not become a tripwire that blocks work on a UI tweak.
+ */
+export function attachedWrongSource(
+  beforeChips: string[],
+  afterChips: string[],
+  expected: string,
+): boolean {
+  const remaining = new Map<string, number>()
+  for (const c of beforeChips) remaining.set(c, (remaining.get(c) ?? 0) + 1)
+  const fresh: string[] = []
+  for (const c of afterChips) {
+    const n = remaining.get(c) ?? 0
+    if (n > 0) remaining.set(c, n - 1)
+    else fresh.push(c)
+  }
+  if (!fresh.length) return false
+  return !fresh.includes(expected)
+}
