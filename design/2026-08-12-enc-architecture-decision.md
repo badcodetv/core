@@ -9,6 +9,7 @@ the tenancy auction, T13 annotated, T28 added).
 | **A — architecture** | **No holding cost at all.** No rent, no demurrage. Assets change hands by scheduled auction. |
 | **B — sunset** | **Forever**, with a self-proving exception: a permissionless `retire` once the oracle has been silent long enough (T28). |
 | **C — market** | **Closed loop by posture.** BadCode seeds no pool and sells no ENC. Anyone else may pool it; we neither prevent it nor point at it. |
+| **D — the asset layer** (added later the same day) | **The Imperial Gazette.** The ten assets are the ten slots of a newspaper front page; the tenant files copy once per term; BadCode keeps an **editorial pen** that can strike a column's text — once per column per edition, never author it, never touch a token. See §7 and T31. |
 
 **Follow-up ruled the same day:** the ten flags stay in program custody and the
 holder receives a **tenancy certificate** NFT of their own, which is never taken
@@ -19,9 +20,11 @@ mutually exclusive. The certificate is also the better joke: *you never really
 owned the asset; all you keep is the receipt.* Net effect: **no path in the
 program touches anyone's wallet without their signature.** Detail in T12.
 
-One creative call remains open, and it is small: **what retirement does to the
-auctions** — freeze as a final exhibit, or keep trading forever at the last
-prices the Fed ever reported. See T28.
+**Ruled later the same day:** the asset layer is the **Imperial Gazette** —
+see Ruling D in the table and §7. Open creative calls after it: **what
+retirement does to the auctions** (freeze as a final exhibit, or keep trading
+forever at the last prices the Fed ever reported — and whether the editor's
+pen breaks with it; see T28), and **Jack's pass on the Gazette slot sheet**.
 
 **Why this exists.** The research base at
 [`design/research/2026-08-12-enc-tokenomics/`](./research/2026-08-12-enc-tokenomics/README.md)
@@ -238,6 +241,13 @@ Whatever is ruled, these are the constraints on public copy, from the research:
   *"M2 has risen in 94% of months since 1959, and the debt only points one
   way"* — never as "guaranteed to keep printing," which is a promise about the
   future we cannot make.
+- **After T31, never say "no admin key" unqualified.** One key exists — the
+  editor's pen — so the claim must always take its two-part form: *no key over
+  the money; one editorial pen over the words, and it can only strike, once per
+  column per edition.* The blast radius is the sentence that makes it safe to
+  say: stolen, the pen can vandalise ten columns a month; it cannot move a
+  token. "We removed ourselves from the loop" stays true of the money loop and
+  must always be said of the money loop.
 - **The mechanism may be harsh; the claims must be exactly true.** In every rug
   accusation the research could verify, the trigger was a false factual claim,
   never a disclosed mechanism. That is a strong pattern, not a universal law —
@@ -316,3 +326,57 @@ If A1 is chosen, that finding decides how loudly we have to pre-empt it.
 3. Build the **backtest into T14** so the claims become re-runnable
    demonstrations rather than citations, and use it to pick the T15 parameters.
 4. Rewrite tickets T12 onward to match, and resume.
+
+---
+
+## 7. Ruling D — the Gazette (added 2026-08-12, end of day)
+
+**Ruled by Kai in session; the slot sheet is owed a Jack pass.** The ten assets
+stop being abstract "flags" and become **the ten slots of a newspaper front
+page** — the asset layer is a newspaper about money, whose column-inches are
+auctioned monthly. It is *more* on-thesis than the flags: the assets new money
+buys first include media, and when the Fed prints, **the price of speech rises
+by exactly the printed rate.** The tenancy certificate becomes a press
+clipping; the retirement ending becomes the Million Dollar Homepage's real
+fate — the machine auctioning columns full of messages from a vanished world.
+
+**The mechanism is one instruction wide.** The tenant of a slot may
+`file_copy` **once per term**. All slot personalities — masthead, headline,
+serial, classified — are genesis naming and frontend presentation over that
+single mechanism. Mechanically this keeps N=10, leaves the auction untouched,
+and adds a text field, two flags, and three instructions. Full spec: T31.
+
+**Moderation is solved editorially, not cryptographically.** There is no
+on-chain solution to vile text, and pretending otherwise is how this gets
+ugly. So BadCode keeps **the editor's pen**: a key that may strike any
+column's copy to a fixed redaction marker, **once per column per edition**,
+and can do nothing else — it authors nothing, and it appears in no
+token-moving instruction (shape-tested). The column is for sale; the pen is
+not. A newspaper has an editor, and this was never a decentralisation play:
+the trustless surface is the money, and every claim about the money survives
+verbatim. The pen is rotatable (`pass_the_pen`, so key loss is survivable) and
+breakable (`break_the_pen`, irrevocably — the paper goes feral; whether it
+breaks at retirement joins T28's open creative call).
+
+**Amendment to the frame (Kai, reversing part of the artwork ruling's blanket
+form).** The *content layer* may court an audience — wanting people to show up
+and write is now an admitted goal, and Kai states this knowingly against the
+morning's wording. The bright line that keeps the amendment from re-opening
+the rent mistake: **no economic mechanism or parameter may ever be justified
+or tuned by engagement** — that is exactly how rent inverted the thesis — and
+the **dead-state test stays as the floor**: the piece must still read as a
+complete joke at zero participation. A dormant Gazette passes: ten columns of
+the Emperor's default copy, priced, repricing every time the Fed prints,
+nobody bidding. That still reads.
+
+**Rejected on the way here (adversarial pass, same session):** a pixel canvas
+(r/Place-shaped) — cooldowns are unenforceable without identity, so it becomes
+whoever-scripts-best's mural (Satoshi's Place's fate); it re-architects the
+tested sync/rescale core, which hard-caps at ~10 assets per transaction; and a
+dead canvas fails the dead-state test. Communal/forced-group purchase — new
+coordination machinery for a mechanism predicted to kill participation. Also
+named honestly: an auction machine allocates by wealth, full stop — self-bid
+defence is net-free, so the richest wallet can hold the megaphone
+indefinitely. For a piece about money running the news, that is the caption,
+not a bug; but "town square" framing would be a lie, and the copy must say
+"the front page, sold monthly."

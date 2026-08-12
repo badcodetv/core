@@ -66,6 +66,7 @@ this table is the map.
 | ⬜ | T13 · the faucet — register-now, collect-next-epoch (**now the only way in**) | program |
 | ⬜ | T28 · `retire` — the coin notices its own end | program |
 | ⬜ | T29 · proportional sync caps + the catch-up walk (2026-08-12 review; **must land before T22**) | program |
+| ⬜ | T31 · the Imperial Gazette — tenant copy + the editor's pen (**must land before T22**) | program |
 | ⬜ | T14 · economic simulation harness | economics |
 | ⬜ | T15 · choose the genesis parameters | economics |
 | ⬜ | T17 · stand the M2SL feed up on devnet | oracle |
@@ -169,6 +170,12 @@ findings that shaped the design, with the ones that **changed** it marked:
 > because changing it doesn't edit the feed, it creates a different feed our
 > program won't read. There is no admin key. There is no pause button. There
 > isn't even an owner field."
+
+**Amended by T31 (2026-08-12):** once the Gazette lands, "there is no admin key"
+may never again be said unqualified — one key will exist, and the claim must
+always be stated in its two-part form: **no key over the money; one editorial
+pen over the words, and it can only strike, once per column per edition.** See
+T31's claims-surgery checklist.
 
 Every clause is defensible. The claim we must **not** make is "nobody can affect
 this but the Fed" — Switchboard's queue authority governs which attested oracles
@@ -1723,6 +1730,76 @@ while the page correctly reports localnet.
   foreclosure instruction, and no rent parameters"* — it also asserts the
   `Config` fields are gone from the published types, since a parameter with no
   instruction behind it is a rule the coin cannot enforce.
+
+### T31: The Imperial Gazette — tenant copy + the editor's pen   [Status: pending — direction ruled by Kai 2026-08-12; slot sheet owed a Jack pass | Model: opus]
+
+- **What the ten assets are (decided 2026-08-12, replacing the placeholder
+  "flags").** The ten slots of a newspaper front page — the asset layer is **a
+  newspaper about money, whose column-inches are auctioned monthly.** When the
+  Fed prints, the price of speech rises by exactly the printed rate. Candidate
+  slot sheet, Jack's pass owed: the masthead (the paper's *name* is for sale),
+  the main headline, the lead story, an opinion column, letters, a cartoon
+  caption, the weather ("outlook: inflationary"), obituaries (for dead coins),
+  the serial, a classified ad. **Slot personalities are genesis naming +
+  frontend presentation only — one program mechanism serves all ten.** The
+  serial is the worked example: consequences/exquisite-corpse, one sentence per
+  term, is pure presentation — the chain is public, so "you can only see the
+  last word" is theatre the site performs, not a secret the chain keeps, and
+  the page must say so (same disclosure family as the melting balance).
+- **Scope:**
+  1. `Asset` gains a fixed-size `copy` field (~280 bytes, decided at build)
+     plus `copy_filed` / `copy_spiked` flags, reset at every settlement. Copy
+     *persists* across settlement until the new tenant files — yesterday's news
+     stands until today's edition.
+  2. `file_copy(index, text)` — current tenant only, **once per term**.
+     Write-once is what makes the pen decisive; unlimited rewrites turn
+     moderation into a war that requires BadCode to run a bot forever, which
+     re-inserts us as an operational dependency.
+  3. `spike(index)` — editor key only, **once per term per column**; replaces
+     the copy with a fixed redaction marker. **The pen strikes words; it never
+     authors them** — BadCode must not write into a slot someone paid for, and
+     a fixed marker is also the better joke (redaction bars).
+  4. `Config.editor` set at `initialize`, plus `pass_the_pen(new_editor)` —
+     rotation is the one thing that must survive key loss/theft — and
+     `break_the_pen()` (set to `None`, irrevocably: the paper goes feral).
+     Whether the pen breaks at retirement is part of T28's open creative call.
+  5. Shape tests: the editor key appears in **no** instruction that moves
+     tokens, asserted against the IDL like the T30 removal test; the
+     `initialize.ts` allowlist gains the three names deliberately.
+  6. **Claims surgery, same commit** — the sentences the pen falsifies, fixed
+     where they live: the program README's "Who can change the rules? Nobody"
+     and "no admin key, no pause button"; `lib.rs`'s module doc; this plan's
+     claim block (amended above). The replacement is always the two-part form:
+     *no key over the money; one pen over the words.* State the blast radius
+     plainly: a stolen pen can vandalise ten columns per month; it cannot move
+     a token. This is not a decentralisation play and never was — the trustless
+     surface is the money, and every one of those claims is untouched.
+- **Files:** `chain/programs/emperors-new-coin/src/instructions/{file_copy,spike,pass_the_pen}.rs`,
+  `src/state.rs` (extend `Asset`, `Config`), `chain/tests/gazette.ts`,
+  `chain/programs/emperors-new-coin/README.md`, `src/lib.rs`.
+- **Acceptance criteria:** The tenant can file once per term and not twice; a
+  stranger cannot file; the vault-held (Emperor's) slots show default copy. The
+  editor can spike once per term per column and not twice; spike writes the
+  marker, never caller-supplied text; a spiked slot cannot be re-filed until
+  the next term. `pass_the_pen` transfers the power; `break_the_pen` ends it
+  forever. **No new instruction moves any token** (shape test against the
+  IDL). Total supply and every balance are untouched by every new path — the
+  signature invariant survives verbatim.
+- **TDD:** yes
+- **Validation:** `./stack test test-gazette`; the T9 IDL grep discipline
+  (default `./stack build` + `! grep -q set_mock_m2 chain/idl/emperors_new_coin.json`).
+- **Depends on:** T12 (term lifecycle + settlement reset). **Must land before
+  T22** — the editor key, the copy field size, and the slot names/genesis
+  prices all become permanent at the authority burn.
+- [ ] done
+- Notes: Genesis prices differ per slot (`init_asset` already takes one per
+  index): masthead dearest, classified cheapest. **The cheapest reserve is
+  T14/T15's faucet-reachability target**, which turns the pass/fail criterion
+  into a sentence: *anyone patient can afford a small ad.* Price ratios freeze
+  at genesis — every sync rescales all ten by the same factor — so the masthead
+  is always the masthead, deliberately. Frontend (T19/T20) renders the front
+  page and the site curates what it hangs: the chain records, the gallery
+  chooses — declared on the page, same as the melting balance.
 
 ## Discovered Issues Log
 
