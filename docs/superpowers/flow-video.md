@@ -373,11 +373,21 @@ still (the same shot regraded gold). Text-to-video returned a genuinely new 4s c
   back with a healthy mp4 that was byte-for-byte an older generation, caught only by md5-ing
   the file. `stableMediaNames` waits for the count to settle.
 
-**The animate (start-only) path degrades in a cluttered project.** It identifies the still you
-just uploaded by diffing the tile grid; at ~30 items that diff failed with `ANIMATE_NOT_FOUND`,
-and the identical call succeeded immediately in a fresh project. The Frames path does not have
-this weakness — it never touches the tile grid — which is an argument for eventually routing
-start-only through Frames too. Not done: the Animate path is the one with the most live proof.
+**The animate (start-only) path degrades in a cluttered project — and now falls back.** It
+identifies the still you just uploaded by diffing the tile grid; at ~30 items that diff failed
+with `ANIMATE_NOT_FOUND` while the identical call succeeded immediately in a fresh project. The
+Frames path never touches the tile grid, so `generateVideo` now catches exactly
+`ANIMATE_NOT_FOUND` and re-runs the request through Frames.
+
+- It is a **fallback, not a replacement**: the happy path is byte-for-byte the code that has all
+  the live proof behind it, and only the known failure re-routes.
+- The fallback is **visible**, not silent: the result carries `via: 'frames-fallback'`. A
+  degradation nobody can see is one nobody fixes.
+- It costs a **stray uploaded tile** — the failed Animate attempt's upload stays in the project.
+- ⚠️ The degradation is **intermittent, not a size threshold**: the same ~30-item project that
+  produced the original failure completed a start-only Animate call normally on 2026-08-12. So
+  the fallback was proven by *forcing* `animateToVideo` to throw (`smoke-animate-fallback.ts`)
+  rather than by waiting for the project to misbehave — 4.000s clip, opening on the right still.
 
 ## What an EXISTING clip offers (mapped 2026-08-12)
 

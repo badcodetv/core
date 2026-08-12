@@ -71,6 +71,12 @@ const VIDEO_POLL_MS = 3_000
 export interface ImageResult { path: string; mediaId: string; width: number; height: number }
 export interface EditResult { candidates: ImageResult[]; partial?: boolean }
 export interface MediaResult { path: string; mediaId: string }
+/**
+ * A clip, plus which source path produced it. `via` is only set when generateVideo did NOT take
+ * the path the request implied — today that means Animate degraded in a busy project and Frames
+ * carried it. Absent = the expected path ran.
+ */
+export interface VideoResult extends MediaResult { via?: 'frames-fallback' }
 export interface CharacterRef { name: string }
 export interface FlowStatus { loggedIn: boolean; projectOpen: boolean; url: string }
 /**
@@ -1682,7 +1688,7 @@ export class FlowClient {
    * connects the two frames*, because the stills already carry the content
    * (`docs/flow/video-prompting.md` §4 — adding scene description there makes drift worse).
    */
-  async generateVideo(req: VideoRequest): Promise<MediaResult> {
+  async generateVideo(req: VideoRequest): Promise<VideoResult> {
     const { motion, outPath, startImage, endImage } = req
     const opts = req
     // Validate the clip length BEFORE anything is uploaded or spent. 10s exists only on Omni
@@ -1704,7 +1710,36 @@ export class FlowClient {
       return await this.framesToVideo({ motion, outPath, startImage, endImage, duration, videoModel, opts })
     }
     // Narrowed by chooseVideoMode above: 'animate' is exactly "start frame, no end frame".
-    const imagePath = startImage as string
+    //
+    // Animate identifies the still you just uploaded by DIFFING THE TILE GRID, and that degrades
+    // in a busy project: at ~30 items it failed with ANIMATE_NOT_FOUND while the identical call
+    // worked in a fresh one. Frames mode never touches the tile grid, so it is the way out — but
+    // as a FALLBACK, not a replacement. Animate is the path with by far the most live proof
+    // behind it and the ruling was to keep its behaviour byte-for-byte, so the happy path is
+    // untouched and only the known failure re-routes. The cost of the fallback is a stray
+    // uploaded tile left behind by the attempt that failed.
+    try {
+      return await this.animateToVideo({ motion, outPath, startImage: startImage as string, duration, videoModel, opts })
+    } catch (err) {
+      if (!/ANIMATE_NOT_FOUND/.test((err as Error).message)) throw err
+      // `via` so the fallback is visible in the result rather than silent: a degradation nobody
+      // can see is one nobody fixes, and it is also the only way a live test can tell which path
+      // actually ran.
+      const result = await this.framesToVideo({ motion, outPath, startImage, duration, videoModel, opts })
+      return { ...result, via: 'frames-fallback' }
+    }
+  }
+
+  /** The Animate-menuitem path: upload a still, find its tile, animate it. See generateVideo. */
+  private async animateToVideo(args: {
+    motion: string
+    outPath: string
+    startImage: string
+    duration: number
+    videoModel: string
+    opts?: { model?: string; aspect?: VideoAspect; count?: number }
+  }): Promise<MediaResult> {
+    const { motion, outPath, startImage: imagePath, duration, videoModel, opts } = args
     await this.ensureProject()
     // 0. Assert model/aspect/count BEFORE touching media — these are project-level defaults
     //    that silently reset, so this must run every call, not just the first in a session.

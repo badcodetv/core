@@ -329,7 +329,9 @@ server.registerTool(
       'Flash (15/20/25/30 credits for 4/6/8/10s) and a 4s clip is often the right answer for a single comic ' +
       'beat. ⚠️ 10s is Omni Flash ONLY — on every Veo 3.1 tier the 10s option does not exist, and asking for ' +
       'it there fails immediately (before any credits are spent) rather than quietly returning 8s. ' +
-      'Returns { path, mediaId }.',
+      'Returns { path, mediaId } — plus via: "frames-fallback" when the startImage-only path degraded in a busy ' +
+      'project and the first/last-frame composer carried the request instead. The clip is equally valid; the flag is ' +
+      'there so a run that quietly took the slower route is visible, and it leaves one stray uploaded tile behind.',
     inputSchema: {
       startImage: z.string().min(1).optional(),
       endImage: z.string().min(1).optional(),

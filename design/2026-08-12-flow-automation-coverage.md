@@ -497,13 +497,19 @@ rather than tested.
 `classifyCard` cannot name them and they will surface as `TIMEOUT`. Do not invent the strings —
 catch them the next time a long run hits one, and add them then.
 
-### L4 · Route start-only video through Frames
+### L4 · Route start-only video through Frames — ✅ DONE 2026-08-12, as a fallback
 
-The Animate path identifies its upload by diffing the tile grid and **fails in a cluttered
-project** (`ANIMATE_NOT_FOUND` at ~30 items; the identical call worked in a fresh one). The
-Frames path never touches the tile grid. Switching start-only to Frames would remove the
-weakness — deliberately not done, because Animate is the path with the most live proof behind
-it and the ruling was to keep it byte-for-byte.
+Not switched — **fallen back to**, which keeps both properties. `generateVideo` catches exactly
+`ANIMATE_NOT_FOUND` and re-runs the request through `framesToVideo`, so the happy path stays
+byte-for-byte the code with all the live proof behind it (the ruling) and the one known failure
+stops being fatal. The result carries `via: 'frames-fallback'` so the degradation is visible
+rather than silent. It costs a stray uploaded tile from the attempt that failed.
+
+⚠️ The weakness is **intermittent, not a size threshold** — the same ~30-item project completed
+a start-only Animate call normally when re-tested. So the fallback was proven by *forcing*
+`animateToVideo` to throw (`smoke-animate-fallback.ts`), not by waiting for a flaky project:
+4.000s clip, opening on the still that was passed in. A test that just runs in a busy project
+and passes proves nothing about the fallback.
 
 ### Explicitly NOT on this list
 
