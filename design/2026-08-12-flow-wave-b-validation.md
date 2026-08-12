@@ -1,7 +1,36 @@
 # Wave B — live validation checklist
 
-**Date:** 2026-08-12 · **Status:** not started
+**Date:** 2026-08-12 · **Status:** in progress — discovery tools and the policy block are DONE
 **Companion to:** [`2026-08-12-flow-automation-coverage.md`](./2026-08-12-flow-automation-coverage.md)
+
+## Progress so far (2026-08-12 afternoon)
+
+**Done and proven live:** §1 policy block, §2 media list, the character half of §"Images and
+characters", and most of §Projects. Six bugs found and fixed, four of them invisible to the
+unit suite because the tests encoded the same guesses as the code:
+
+| Bug | Symptom | Fixed in |
+| --- | --- | --- |
+| `ok()` cast arrays into `structuredContent` | **All three list tools died at the protocol boundary** — "expected record, received array" | `183764e` |
+| Picker accessible name parsed as a doubled title | `kind` garbage on every row (`"papersImage"`) | `3479319` |
+| `listCharacters` required an `<img alt>` | Reported **1 of 3** characters | `3479319` |
+| `listMedia` scraped before the grid populated | Intermittent `[]` on a full gallery — silent | `3479319` |
+| `"Untitled Project"` invented as a default | Real default is a timestamp, `"Aug 12, 09:07 AM"` | `3479319` |
+| Ledger recorded the Character as `"Economist"` | It is `Untitled Character`; renames do not stick | `76c466c` |
+
+**How to iterate without a `/mcp` reconnect** (this unblocked everything): run the client
+under `tsx` via the smoke scripts — `smoke-lists`, `smoke-raw` (dump raw DOM before writing a
+parser), `smoke-shot` (screenshot to check a DOM-derived claim), `smoke-policy`. Each is a
+fresh process, so source edits apply instantly. The MCP server stays frozen until reconnected;
+reconnect **once** at the end to confirm the tool wrapper.
+
+**Cheap standing guard added:** `result-conformance.test.ts` validates `ok()`/`fail()` against
+the MCP SDK's own `CallToolResultSchema`, so the "dies at the protocol boundary" class is now
+caught in milliseconds with no browser (Kai's suggestion, and it would have caught bug #1).
+
+**Still to do:** all of §3/§4 (video — the largest blind surface, and the only credit spend),
+the image `model`/`aspect` threading, `flow_create_project`, and the
+`flow_list_media` → `flow_create_character_from_media` round-trip.
 
 ## Where this stands (read first)
 
