@@ -58,6 +58,56 @@ export function loadHistory(path = new URL('./m2-history.csv', import.meta.url))
  * is dragged by April 2020 (+6.42%), which is exactly the kind of month a
  * forward projection should not assume repeats.
  */
+/** The largest `u64`, which is the largest supply an SPL token can have. */
+const U64_MAX = 2n ** 64n - 1n
+
+export interface PegHorizon {
+  /** The largest M2 the peg can represent, in billions at 6dp. */
+  largestM2Value: bigint
+  /** The same, in trillions of dollars, for saying out loud. */
+  largestTrillions: number
+  /** How many times today's M2 that is. */
+  multiple: number
+  /** Months away at the given growth rate. */
+  months: number
+  years: number
+}
+
+/**
+ * When the Emperor runs out of counting.
+ *
+ * `supply = k × M2` and supply is a `u64`, because that is what an SPL token's
+ * supply is. So there is a largest M2 this coin can represent, and past it
+ * `sync_m2` fails on the overflow check — permanently, because the baseline
+ * only advances on success.
+ *
+ * **This is the same shape as the bug T29 deleted**, and unlike that one it
+ * cannot be designed away: `k` and the six decimals are pinned by the width of
+ * a `u64`, and the token standard picks the width. What T28 does is make the
+ * ending graceful rather than broken — the peg stops, nobody tells the program
+ * about money for a year, and any passer-by may retire it. Nothing is
+ * stranded; the auctions go on at the last prices anyone reported.
+ *
+ * It is therefore a fact to publish, not a defect to hide. A coin pegged to a
+ * number that grows forever, running on a machine with a largest number.
+ */
+export function pegHorizon(k: bigint, from: Observation, monthlyGrowthBps = 52): PegHorizon {
+  const largestM2Value = U64_MAX / k
+  let m2 = from.m2Value
+  let months = 0
+  while (m2 <= largestM2Value && months < 100_000) {
+    m2 = m2 + (m2 * BigInt(monthlyGrowthBps)) / 10_000n
+    months += 1
+  }
+  return {
+    largestM2Value,
+    largestTrillions: Number(largestM2Value) / 1e6 / 1e3,
+    multiple: Number(largestM2Value) / Number(from.m2Value),
+    months,
+    years: months / 12,
+  }
+}
+
 export function project(
   from: Observation,
   years: number,

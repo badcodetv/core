@@ -41,6 +41,8 @@ export function format(report: RunReport, epochSeconds: number): string {
     ['worst breach of the payout bound', `${enc(report.worstBoundBreach)} ENC`],
     ['a patient claimant affords the cheapest tenancy after',
       epochsAsTime(report.epochsToFirstAsset, epochSeconds)],
+    ["the Emperor's genesis hoard reaches the floor after",
+      epochsAsTime(report.epochsToVaultFloor, epochSeconds)],
     ['tenancies bought', String(report.purchases)],
     ['final M2 (billions, 6dp)', report.finalM2.toString()],
     ['final supply', `${enc(report.finalSupply)} ENC`],

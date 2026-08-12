@@ -57,6 +57,14 @@ export interface RunReport {
   worstBoundBreach: bigint
   /** Epochs before the patient claimant could afford the cheapest reserve. */
   epochsToFirstAsset: number | null
+  /**
+   * Epochs before the vault first settled within 10bps of its floor.
+   *
+   * How long the Emperor's genesis hoard takes to distribute. After it, the
+   * faucet is a pure pass-through: it pays out roughly what the Fed prints and
+   * nothing more, because that is all that arrives.
+   */
+  epochsToVaultFloor: number | null
   purchases: number
   finalCheapestReserve: bigint
 }
@@ -82,6 +90,7 @@ export function run(label: string, options: RunOptions): RunReport {
   let faucetOutflow = 0n
   let worstBoundBreach = 0n
   let epochsToFirstAsset: number | null = null
+  let epochsToVaultFloor: number | null = null
   let purchases = 0
 
   const patientWallet = cohorts.find((c) => c.name.startsWith('patient'))?.wallets[0]
@@ -94,7 +103,8 @@ export function run(label: string, options: RunOptions): RunReport {
 
       for (const cohort of cohorts) {
         for (const wallet of cohort.wallets) {
-          if (!cohort.claimsIn(epoch, wallet)) continue
+          // Run-relative, not the chain's absolute epoch index — see `Cohort`.
+          if (!cohort.claimsIn(epochs, wallet)) continue
           economy.claim(wallet)
           if (cohort.buys && economy.buyCheapest(wallet) !== null) purchases += 1
         }
@@ -115,6 +125,9 @@ export function run(label: string, options: RunOptions): RunReport {
       if (share > maxShare) maxShare = share
 
       epochs += 1
+      if (epochsToVaultFloor === null && share <= params.floorBps + 10) {
+        epochsToVaultFloor = epochs
+      }
       if (
         epochsToFirstAsset === null &&
         patientWallet !== undefined &&
@@ -148,6 +161,7 @@ export function run(label: string, options: RunOptions): RunReport {
     faucetOutflow,
     worstBoundBreach,
     epochsToFirstAsset,
+    epochsToVaultFloor,
     purchases,
     finalCheapestReserve: economy.cheapestReserve(),
   }

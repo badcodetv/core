@@ -171,9 +171,20 @@ loop.
 
 ### How does it end?
 
-Ideally never. But if a full year ever passes in which no new M2 figure
-reaches the program, anyone — you, a stranger, a bot with a cent — may call
-`retire`. Once, permanently. No key is consulted and no announcement is
+Two ways, and one of them is arithmetic.
+
+**The Emperor runs out of counting.** A token's supply is a 64-bit number, so
+`supply = k × M2` has a largest M2 it can represent: **$18,446.7 trillion**,
+about 797 times today's. At the median month of the last 67 years that is
+roughly **107 years away**. Past it the peg simply cannot do the sum, stops,
+and never starts again. We could have bought another century by pricing the
+coin differently and we decided not to hide it: a coin pegged to a number
+that grows forever, running on a machine with a largest number, is the whole
+joke told back to us. You can check the figure yourself — it is one division.
+
+**Or nobody says anything for a year.** If a full year passes in which no new
+M2 figure reaches the program, anyone — you, a stranger, a bot with a cent —
+may call `retire`. Once, permanently. No key is consulted and no announcement is
 made; the instruction takes no signer at all, so a passer-by can simply
 observe that it is over. The program cannot tell whether the Fed went dark
 or everyone stopped looking, and from where it sits those are the same

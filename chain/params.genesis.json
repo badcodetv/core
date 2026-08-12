@@ -1,23 +1,23 @@
 {
-  "_": "PLACEHOLDERS. Every number below marked `placeholder: true` is a guess, chosen only to be dimensionally sane so the program compiles and the tests have something to run against. T15 replaces them with values produced by the T14 economic simulation, swept against real M2SL history. Do not tune these by hand on the way past — a plausible-looking hand-picked number is worse than an obvious placeholder, because it looks decided.",
+  "_": "CHOSEN at T15 (2026-08-12) and no longer placeholders. Every number here that is not fixed by arithmetic was produced by the economic simulation in chain/sim: `npx tsx chain/sim/sweep.ts` prints the sweep these came from, and chain/sim/RESULTS.md records what was chosen, what was rejected, and why. The binding rule on any future change (Ruling A): NO economic parameter may be justified or tuned by engagement, retention or turnover - that is exactly how rent came to invert the thesis. Legibility is the only permitted argument, plus one pass/fail: a patient claimant must be able to reach the cheapest tenancy, because the faucet is the only route in that BadCode controls.",
 
   "peg": {
     "k": 1000000,
     "encDecimals": 6,
-    "_": "supply = k x m2_value. M2SL is billions of USD at 6dp (22176.1 -> 22176100000), so k = 1e6 gives 1 ENC per $1,000 of M2: ~22.18bn ENC at today's M2, ~2.2e16 base units against a u64 ceiling of 1.8e19. Six decimals rather than nine because nine overflows u64 at this supply. NOT a placeholder: fixed by the arithmetic, and asserted in math.rs.",
+    "_": "supply = k x m2_value. M2SL is billions of USD at 6dp (22176.1 -> 22176100000), so k = 1e6 gives 1 ENC per $1,000 of M2: ~22.18bn ENC at today's M2, ~2.2e16 base units against a u64 ceiling of 1.8e19. Six decimals rather than nine because nine overflows u64 at this supply. Fixed by the arithmetic, and asserted in math.rs.",
     "placeholder": false
   },
 
   "vault": {
     "floorBps": 5000,
-    "_": "The vault's floor as a share of total supply. Below it the faucet pays nothing at all - no share, no welcome grant. It governs the faucet, never the burn: burning lowers the vault's own share, so a floor enforced by refusing to burn would break the peg.",
-    "placeholder": true
+    "_": "The vault's floor as a share of total supply: HALF. Below it the faucet pays nothing at all - no share, no welcome grant. It governs the faucet, never the burn: burning lowers the vault's own share, so a floor enforced by refusing to burn would break the peg. Chosen at half because it needs no footnote and is checkable in one RPC call: the Emperor keeps half of all the money, forever, and only the other half can ever circulate. The sweep found the floor changes nothing else material - every value from 25% to 60% keeps the peg alive and settles the same way - so the argument for it is entirely what it says.",
+    "placeholder": false
   },
 
   "tenancy": {
     "termSeconds": 2592000,
-    "_": "How long one tenancy lasts before anyone may settle it: 30 days, deliberately equal to prices.interpolationSeconds so an auction settles against a price that has finished travelling rather than one still in motion. There is no holding cost - the term IS the mechanism by which assets change hands (Ruling A, 2026-08-12).",
-    "placeholder": true
+    "_": "How long one tenancy lasts before anyone may settle it: 30 days, deliberately equal to prices.interpolationSeconds so an auction settles against a price that has finished travelling rather than one still in motion. There is no holding cost - the term IS the mechanism by which assets change hands (Ruling A, 2026-08-12) - and monthly is also what Ruling D's Gazette wants: a front page whose column-inches are auctioned monthly. Determined by those two facts rather than swept.",
+    "placeholder": false
   },
 
   "faucet": {
@@ -25,14 +25,14 @@
     "alphaBps": 1000,
     "welcomeGrant": 1000000000,
     "grantsPerEpoch": 100,
-    "_": "pot(N) = alpha x max(0, vault - floor x supply), snapshotted when epoch N opens. Register in N, collect your share of pot(N) in N+1 - dividing a current pot by a previous headcount would let a farm drain many times the pot. welcomeGrant is 1,000 ENC at 6dp, one per wallet ever, capped at grantsPerEpoch per epoch AND refused below the floor. epochSeconds is one day and is NOT a placeholder - 'register today, collect tomorrow' is the design, not a swept number; it is a Config field only because a test ledger cannot wait a real day for the cross-epoch behaviour, exactly as tenancy.termSeconds is. It is also a PDA seed input, so it fixes which FaucetEpoch accounts can ever exist.",
-    "placeholder": true
+    "_": "pot(N) = alpha x max(0, vault - floor x supply), snapshotted when epoch N opens. Register in N, collect your share of pot(N) in N+1 - dividing a current pot by a previous headcount would let a farm drain many times the pot. epochSeconds is one day: 'register today, collect tomorrow' is the design, not a swept number. alphaBps is 10% of the surplus per epoch, which the simulation measures as the Emperor's genesis hoard reaching its floor in about 54 epochs - under two months - after which the faucet is a pure pass-through, paying out roughly what the Fed printed and nothing more. That settling matters for legibility: a visitor should see the machine's permanent behaviour, not a launch giveaway. welcomeGrant is 1,000 ENC, which at the peg is exactly one million dollars of the money supply, and it buys you nothing. It is one per wallet ever, capped at grantsPerEpoch per epoch AND refused below the floor.",
+    "placeholder": false
   },
 
   "sanity": {
     "maxChangeBps": 1000,
-    "_": "How far the peg moves in ONE sync_m2, as a ratio: 10%. A real monthly M2 move is a fraction of a percent, so this is already generous. It is a SPEED LIMIT, NOT A VETO (T29): a release beyond it is absorbed over several permissionless calls rather than refused, because refusing was permanent - the baseline only advances on success, so one oversized release froze the peg forever and retire ended the coin a year later. The old companion maxSingleMint (an absolute number of base units) was DELETED for the same reason: any fixed token count is exceeded by an ordinary month once M2 has grown enough, which on a non-upgradeable program is a timer, not a guard.",
-    "placeholder": true
+    "_": "How far the peg moves in ONE sync_m2, as a ratio: 10%. The largest monthly move in the whole 1959-2026 record is +6.42% (April 2020), so this clears the worst month in 67 years with room - measured by chain/sim/sweep.ts, not assumed. It is a SPEED LIMIT, NOT A VETO (T29): a release beyond it is absorbed over several permissionless calls rather than refused, because refusing was permanent - the baseline only advances on success, so one oversized release froze the peg forever and retire ended the coin a year later. The old companion maxSingleMint (an absolute number of base units) was DELETED for the same reason: any fixed token count is exceeded by an ordinary month once M2 has grown enough, which on a non-upgradeable program is a timer, not a guard.",
+    "placeholder": false
   },
 
   "retirement": {
@@ -43,13 +43,14 @@
 
   "prices": {
     "interpolationSeconds": 2592000,
-    "_": "How long an asset price takes to travel to its rescaled target after a supply change: 30 days. Interpolating rather than jumping is what makes prices tick every slot instead of once a month. NOT a placeholder - it mirrors PRICE_INTERPOLATION_SECONDS in state.rs and the two must agree.",
+    "_": "How long an asset price takes to travel to its rescaled target after a supply change: 30 days. Interpolating rather than jumping is what makes prices tick every slot instead of once a month. It mirrors PRICE_INTERPOLATION_SECONDS in state.rs and the two must agree.",
     "placeholder": false
   },
 
   "assets": {
     "count": 10,
-    "_": "The ten parody assets. Their names, image URIs and genesis prices land at T8 (init_asset); only the count is fixed here, because sync_m2 refuses to run until all ten exist.",
+    "genesisPricePpm": [100, 170, 280, 460, 770, 1300, 2200, 3600, 6000, 10000],
+    "_": "The ten slots, cheapest first, priced in PARTS PER MILLION OF THE MONEY SUPPLY rather than in tokens. That is deliberate: a price fixed in base units would be a constant measured against an exponentially growing M2, which is the exact shape T29 had to delete from the sanity caps. As a fraction it holds forever, because every sync rescales all ten by the same factor - so the masthead is always the masthead. init_asset takes absolute base units, so the deployment multiplies these by the bootstrap supply (GENESIS_M2_VALUE x k). The cheapest slot is 100ppm = ONE BASIS POINT of all the money there is; the dearest is 1%, a hundred times more. The simulation found an exact ceiling behind those numbers: C claimants who all claim every epoch each accumulate, in the limit, a 1/C share of everything ever printed, so a slot costing 1/C of the supply is exactly out of reach for C of them. The cheapest column therefore supports about ten thousand diligent claimants and the masthead about a hundred. Names and image URIs are still Jack's call (T31); only the ladder is fixed here.",
     "placeholder": false
   }
 }

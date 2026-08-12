@@ -42,8 +42,22 @@ export interface SimParams {
   epochSeconds: number
   maxChangeBps: number
   interpolationSeconds: number
-  /** One genesis price per asset, cheapest first. */
-  genesisPrices: bigint[]
+  /**
+   * One genesis price per slot, cheapest first, in **parts per million of the
+   * genesis supply** — never in tokens.
+   *
+   * A price fixed in base units would be a constant measured against an
+   * exponentially growing M2, which is the exact shape T29 had to delete from
+   * the sanity caps. As a fraction it holds forever, because every sync
+   * rescales all ten by the same factor.
+   *
+   * It is also what stops the harness lying to itself: a replay that starts in
+   * 1959 has a money supply seventy-seven times smaller than a 2026
+   * deployment, so a ladder in absolute tokens would price every slot above
+   * the entire money supply of the era and report that nobody can ever afford
+   * anything.
+   */
+  genesisPricePpm: number[]
 }
 
 export interface SyncResult {
@@ -111,12 +125,10 @@ export class Economy {
     // Every token in the vault. BadCode takes no allocation; there is nobody
     // else at genesis.
     this.vault = this.supply
-    this.assets = params.genesisPrices.map((p) => ({
-      from: p,
-      to: p,
-      start: startedAt,
-      end: startedAt,
-    }))
+    this.assets = params.genesisPricePpm.map((ppm) => {
+      const price = (this.supply * BigInt(ppm)) / 1_000_000n
+      return { from: price, to: price, start: startedAt, end: startedAt }
+    })
   }
 
   epoch(): number {

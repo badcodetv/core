@@ -118,6 +118,16 @@ export interface Harness {
   vaultBalance: () => Promise<bigint>
 }
 
+/**
+ * Read once, at module scope, because `assetSpec` needs it too and two copies
+ * of the price ladder is exactly the drift this project keeps stamping out.
+ * Resolved from this file rather than the working directory: mocha loads these
+ * as ES modules, where `__dirname` does not exist.
+ */
+const PARAMS = JSON.parse(
+  readFileSync(new URL('../params.genesis.json', import.meta.url), 'utf8'),
+) as Params
+
 interface Params {
   peg: { k: number }
   vault: { floorBps: number }
@@ -130,6 +140,7 @@ interface Params {
   }
   retirement: { silenceSeconds: number }
   sanity: { maxChangeBps: number }
+  assets: { count: number; genesisPricePpm: number[] }
 }
 
 export function harness(): Harness {
@@ -160,11 +171,7 @@ export function harness(): Harness {
     return b
   }
 
-  // Resolved from this file rather than the working directory: mocha loads
-  // these as ES modules, where __dirname does not exist.
-  const params = JSON.parse(
-    readFileSync(new URL('../params.genesis.json', import.meta.url), 'utf8'),
-  ) as Params
+  const params = PARAMS
 
   // History RPCs (`getBlockTime`, `getTransaction`) refuse the provider's
   // `processed` commitment, so everything that reads the past goes through this.
@@ -272,16 +279,27 @@ export function initParams(h: Harness) {
 }
 
 /**
- * PLACEHOLDER NAMES. The ten parody assets are a creative decision that has not
- * been made. Nothing in the program hardcodes them — they are instruction
- * arguments — so naming them for real costs one bootstrap call, not a redeploy.
+ * PLACEHOLDER NAMES, REAL PRICES.
+ *
+ * The ten slots' names and images are still Jack's call (T31); nothing in the
+ * program hardcodes them, so naming them for real costs one bootstrap call
+ * rather than a redeploy.
+ *
+ * The **prices are the shipped ladder**, not a stand-in. T15 chose it as parts
+ * per million of the genesis supply — never as a fixed number of tokens, which
+ * would be a constant measured against an exponentially growing M2 and is the
+ * exact shape T29 had to delete from the sanity caps. `init_asset` takes
+ * absolute base units, so the multiplication happens here and at deployment,
+ * from the same one number.
  */
 export function assetSpec(i: number) {
+  const bootstrapSupply = GENESIS_M2 * BigInt(PARAMS.peg.k)
+  const price = (bootstrapSupply * BigInt(PARAMS.assets.genesisPricePpm[i])) / 1_000_000n
   return {
     name: `Placeholder Asset ${i}`,
     symbol: `ENCA${i}`,
     uri: `https://badcode.dev/enc/assets/${i}.json`,
-    price: new BN(1_000_000_000_000).muln(i + 1),
+    price: new BN(price.toString()),
   }
 }
 

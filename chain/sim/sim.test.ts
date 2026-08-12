@@ -14,7 +14,7 @@
  */
 import { describe, expect, it } from 'vitest'
 
-import { loadHistory, project, toFixedPoint } from './m2.js'
+import { loadHistory, pegHorizon, project, toFixedPoint } from './m2.js'
 import { run } from './run.js'
 import { loadParams, runAll, standardCohorts, violations } from './index.js'
 import { nobody, patient, sybil } from './players.js'
@@ -128,6 +128,35 @@ describe('the forward projection', () => {
     // And supply is still representable, which is the other thing that could
     // have quietly ended it: k x M2 must fit in a u64 forever.
     expect(report.finalSupply).toBe(report.finalM2 * params.k)
+  })
+})
+
+describe('the peg horizon — when the Emperor runs out of counting', () => {
+  /**
+   * `supply = k × M2` and an SPL token's supply is a `u64`, so there is a
+   * largest M2 this coin can represent. Past it `sync_m2` fails the overflow
+   * check, and because the baseline only advances on success it fails forever
+   * after — which T28 then turns into a graceful ending rather than a broken
+   * one.
+   *
+   * This is the same shape as the bug T29 deleted, and it is the one instance
+   * that cannot be designed away: the token standard picks the width. So it is
+   * pinned here as a published fact instead, and this test is what stops a
+   * future change to `k` quietly shortening the life of the artwork.
+   */
+  const horizon = pegHorizon(params.k, loadHistory()[loadHistory().length - 1])
+
+  it('can count to about eighteen quadrillion dollars of M2', () => {
+    expect(horizon.largestM2Value).toBe(18_446_744_073_709n)
+    expect(Math.round(horizon.largestTrillions)).toBe(18_447)
+    expect(Math.round(horizon.multiple)).toBe(797)
+  })
+
+  it('is more than a century away at the historical median month', () => {
+    expect(horizon.years).toBeGreaterThan(100)
+    // A tighter bound than "greater than 100" would be a promise about the
+    // Fed. This one is only a statement about arithmetic.
+    expect(Math.round(horizon.years)).toBe(107)
   })
 })
 

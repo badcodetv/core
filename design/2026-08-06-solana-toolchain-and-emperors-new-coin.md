@@ -7,15 +7,22 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: in progress — **20 of 31 done. T11 SUPERSEDED by the 2026-08-12
-architecture ruling and its code deleted by T30; the tenancy auction (T12), the
+Status: in progress — **22 of 31 done.** T11 SUPERSEDED by the 2026-08-12
+architecture ruling and its code deleted by T30. The tenancy auction (T12), the
 faucet (T13), `retire` (T28) and the proportional caps (T29) are built and
-green, so the economy has a route in, a route round, an ending, and no
-arithmetic time bomb in it. **The program is feature-complete except for T31's
-Gazette**, which is the last thing owed before T22. Next is the economics pair,
-T14 then T15. One creative call was made on the documented recommendation and
-wants Kai/Jack's ratification: retirement keeps the auctions trading rather than
-freezing them (T28's Notes).**
+green; the simulation (T14) runs the full M2 record plus a forward projection,
+and the genesis parameters (T15) are chosen from its output and recorded in
+[`chain/sim/RESULTS.md`](../chain/sim/RESULTS.md). **The program is
+feature-complete except for T31's Gazette**, which is the last thing owed before
+T22, and the remaining track is the oracle (T16–T18), the page (T19–T20) and
+shipping (T21–T23).
+
+**Three things want a human before T22.** (1) Jack's Gazette slot sheet, which
+T31 is blocked on. (2) Ratification of one creative call made on the documented
+recommendation: retirement keeps the auctions trading rather than freezing them
+(T28's Notes). (3) A read of the peg-horizon finding — the coin can only count
+to $18,446.7 trillion of M2, about 107 years out, and T15 ruled *state it, don't
+postpone it* (T15's Notes and the Discovered Issues Log).
 Date: 2026-08-06 · **architecture revised 2026-08-12 · adversarial review folded in 2026-08-12**
 
 > **Read [`2026-08-12-enc-architecture-decision.md`](./2026-08-12-enc-architecture-decision.md)
@@ -72,7 +79,7 @@ this table is the map.
 | ✅ | T29 · proportional sync caps + the catch-up walk (2026-08-12 review) | program |
 | ⬜ | T31 · the Imperial Gazette — tenant copy + the editor's pen (**must land before T22**) | program |
 | ✅ | T14 · economic simulation harness (+ `@badcode/enc`, the math mirror) | economics |
-| ⬜ | **T15 · choose the genesis parameters** ← **you are here** | economics |
+| ✅ | T15 · the genesis parameters, chosen and recorded in `chain/sim/RESULTS.md` | economics |
 | ⬜ | T17 · stand the M2SL feed up on devnet | oracle |
 | ⬜ | T18 · Switchboard on-chain read + crank (**wall-clock stall: budget a day**) | oracle |
 | ⬜ | T19 · ENC page, read-only state | web |
@@ -1360,8 +1367,67 @@ upgrade authority is burned at T22.
 - **Validation:** `npx tsx chain/sim/index.ts --report --params chain/params.genesis.json`
   exits 0 with all invariants green.
 - **Depends on:** T14
-- [ ] done
-- Notes:
+- [x] done
+- Notes: Every value chosen from `chain/sim/sweep.ts` output; the full record,
+  the rejects and the published facts are in
+  [`chain/sim/RESULTS.md`](../chain/sim/RESULTS.md).
+  **The sweep's first finding is that this was a narrow question.** 49 trials
+  across four floors, five alphas and five ladders: **zero deadlocks, zero
+  bound breaches, zero negative vaults.** Nothing here was a safety decision —
+  every combination keeps the peg alive — so every choice is about what the
+  machine *says*, which is the only ground Ruling A leaves.
+  **The price ladder is stored as parts per million of the money supply, not
+  as tokens** (`assets.genesisPricePpm`, 100 → 10000). A price in tokens is a
+  constant measured against an exponentially growing M2 — the exact shape T29
+  deleted from the sanity caps. As a fraction it holds forever, because every
+  sync rescales all ten by the same factor. `init_asset` still takes absolute
+  base units, so the multiplication happens once, at deployment, from one
+  number; the test harness now derives its ladder the same way rather than
+  carrying a second copy.
+  **The ceiling law**, found by the sweep and then confirmed exactly: in the
+  steady state the faucet pays out what the Fed printed, split among whoever
+  registered, and a slot costs a fixed fraction of supply — so `C` diligent
+  claimants each reach, in the limit, a `1/C` share of everything ever printed,
+  and a slot costing `1/C` of supply is **exactly** out of reach for `C` of
+  them. It is the honest replacement for the rent-era Invariant M and it is the
+  scarcity the piece is about. The cheapest column supports about ten thousand;
+  the masthead about a hundred.
+  **A number that would have been a lie.** The harness's first answer to "how
+  long to afford a column" was *two epochs* — true only at launch, because the
+  Emperor's genesis hoard is half the money supply and goes out over two
+  months. Publishing it would have been a false claim for everyone arriving
+  later, which is the one bug class this project calls fatal. The harness grew
+  a latecomer cohort, and the honest figures are 22 epochs at ten claimants,
+  119 at a hundred, 1,290 at a thousand.
+  **The finding that was not ticketed at all: the peg has a last number.**
+  `supply = k × M2` and an SPL supply is a `u64`, so the largest M2 this coin
+  can represent is **$18,446.7 trillion — 797× today's, about 107 years away**
+  at the median month. Past it `sync_m2` fails the overflow check and, because
+  the baseline only advances on success, fails forever after. **Same shape as
+  T29's bug, and the one instance that cannot be designed away**: `k` and the
+  six decimals are pinned by the width of a `u64`, and the token standard picks
+  the width. Postponing it by a factor of a thousand in `k` buys another
+  century and was rejected — it costs the headline ("one ENC for every $1,000
+  of America's money"), 107 versus 217 years is not a difference an artwork
+  notices, and **the ending is already graceful and already built**: T28's
+  `retire` covers it, nothing is stranded, and the auctions go on at the last
+  prices. It is now a test, so a future change to `k` cannot quietly shorten
+  the life of the artwork, and it is stated plainly in the program README —
+  which previously said the coin ends "ideally never", and no longer does.
+  **Also worth knowing:** the vault legitimately dips *below* its own floor
+  (47.47% in the historical replay). A burn lowers the vault's share as well as
+  the supply, so a long enough contraction walks it under. The floor governs
+  the faucet, never the burn — and what a visitor sees is the pot going to zero
+  and staying there, which is the austerity beat arriving out of the arithmetic
+  rather than out of a mechanism.
+  **Two harness bugs found on the way, both of which printed plausible
+  nonsense.** A cohort's `claimsIn` was being handed the chain's *absolute*
+  epoch index (north of twenty thousand), so a latecomer told to arrive at
+  "epoch 400" arrived immediately and the measured waits came out negative. And
+  a ladder expressed in absolute tokens priced every 1959 slot above the entire
+  money supply of the era, so the historical replay reported that nobody could
+  ever afford anything. Both are the same lesson as T14's genesis-date artefact:
+  **a simulation reports a number whatever you ask it.**
 
 ### T16: Switchboard feed — author it and prove immutability   [Status: mostly done 2026-08-10 | Model: opus]
 
@@ -2177,6 +2243,44 @@ _(appended by executors during implementation)_
   message (`atLeast`/`atMost`/`above` at the top of `faucet.ts`). `sync_m2.ts`
   had already hit this and worked around it inline; the same trap waits in T28,
   T29 and T14.
+
+- **2026-08-12 · T15 · the peg has a last number, and nothing had ticketed it.**
+  `supply = k × M2` and an SPL token's supply is a `u64`, so the largest M2 this
+  coin can represent is `u64::MAX / k` = **18,446,744,073,709 — $18,446.7
+  trillion, 797× today's.** Past it `sync_m2` fails the overflow check in
+  `target_supply`, and because `previous_m2` only advances on success it fails
+  **forever after**. At the historical median month that is **107 years away**.
+  Found by accident: a 150-year probe threw `MathOverflow` out of the
+  simulation.
+  **It is the same shape as the bug T29 deleted** — an absolute constant
+  measured against an exponentially growing M2 — and it is the one instance
+  that cannot be designed away, because the token standard picks the width.
+  Ruled at T15: **do not postpone it.** Dropping `k` by 1,000 buys another
+  century and costs the headline; 107 versus 217 years is not a difference an
+  artwork notices; and T28's ending already covers it gracefully (the peg
+  stops, a year of silence passes, anyone may `retire`, nothing is stranded and
+  the auctions go on at the last prices). Now pinned as a test so a future `k`
+  cannot shorten the artwork's life quietly, and stated in the program README,
+  which previously claimed the coin ends "ideally never".
+  **The general lesson for anything still unbuilt:** T29 removed the *tunable*
+  constants that were timers. The untunable one is the width of the integers,
+  and it is worth checking any new field against that before T22 makes it
+  permanent.
+
+- **2026-08-12 · T15 · a simulation reports a number whatever you ask it.**
+  Three separate times the harness printed a confident, plausible, wrong
+  figure, and each looked like a program bug rather than a harness bug: (1)
+  133 "deadlocked releases" in the historical replay, which was the program's
+  genesis release date of zero meeting the *negative* unix timestamps of
+  pre-1970 observations (T14); (2) "nobody can ever afford anything" across the
+  whole record, which was a price ladder expressed in absolute tokens being
+  applied to a 1959 money supply seventy-seven times smaller than the one it
+  was derived from; (3) *negative* waiting times, because a cohort's
+  `claimsIn` receives the chain's **absolute** epoch index (north of twenty
+  thousand today), so a latecomer told to arrive at "epoch 400" arrived
+  immediately. All three now have their reasoning written next to the code.
+  The habit that caught all of them was the same: **when the harness reports
+  the exact failure it was built to detect, suspect the harness first.**
 
 - **2026-08-12 · T28 · `program.idl` is camelCase, so an IDL shape test can
   claim the auction vanished.** `h.program.idl.instructions` presents

@@ -23,7 +23,14 @@ export interface Cohort {
   name: string
   /** The wallet names this cohort claims with. */
   wallets: string[]
-  /** Whether a given wallet claims in a given epoch. */
+  /**
+   * Whether a given wallet claims in a given epoch, counted **from the start of
+   * the run** rather than from 1970.
+   *
+   * The chain's own epoch index is `unix_timestamp / epoch_seconds`, which is
+   * north of twenty thousand today — so a cohort that said "arrives at epoch
+   * 400" against the absolute number would arrive immediately, and silently.
+   */
   claimsIn(epoch: number, wallet: string): boolean
   /** Whether it spends everything it can on the cheapest tenancy. */
   buys: boolean
@@ -40,6 +47,22 @@ export interface Cohort {
  */
 export function patient(name = 'patient'): Cohort {
   return { name, wallets: [name], claimsIn: () => true, buys: false }
+}
+
+/**
+ * `n` of them, all equally diligent. The first is the one measured.
+ *
+ * The pot is fixed when the epoch opens and divided by whoever registered, so
+ * `n` is the single biggest lever on how long one claimant waits — which is why
+ * any published "it takes X days" has to name the crowd it assumes.
+ */
+export function patients(n: number): Cohort {
+  return {
+    name: `patient×${n}`,
+    wallets: Array.from({ length: n }, (_, i) => (i === 0 ? 'patient' : `patient-${i}`)),
+    claimsIn: () => true,
+    buys: false,
+  }
 }
 
 /** Turns up when it remembers to. Colour, and a check that missing a day costs only that day. */
@@ -72,6 +95,27 @@ export function sybil(count: number): Cohort {
     name: `sybil×${count}`,
     wallets: Array.from({ length: count }, (_, i) => `sybil-${i}`),
     claimsIn: () => true,
+    buys: false,
+  }
+}
+
+/**
+ * `n` claimants, of whom the measured one **arrives late**.
+ *
+ * Without this the harness only ever answers the launch question. The
+ * Emperor's genesis hoard is half the money supply and it is handed out over
+ * the first couple of months, so a claimant present on day one affords almost
+ * anything almost immediately — and publishing *that* as "how long it takes"
+ * would be a false claim for everybody who arrives afterwards. Letting the
+ * measured wallet start at `startEpoch`, while the rest drain the hoard from
+ * the beginning, gives the number that stays true forever: a share of what the
+ * Fed prints, split among whoever is standing there.
+ */
+export function patientsWithLatecomer(n: number, startEpoch: number): Cohort {
+  return {
+    name: `patient×${n} (measured one arrives at epoch ${startEpoch})`,
+    wallets: Array.from({ length: n }, (_, i) => (i === 0 ? 'patient' : `early-${i}`)),
+    claimsIn: (epoch, wallet) => (wallet === 'patient' ? epoch >= startEpoch : true),
     buys: false,
   }
 }

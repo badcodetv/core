@@ -40,7 +40,23 @@ interface GenesisParams {
   }
   sanity: { maxChangeBps: number }
   prices: { interpolationSeconds: number }
-  assets: { count: number; genesisPrices?: number[] }
+  assets: { count: number; genesisPricePpm: number[] }
+}
+
+/**
+ * `GENESIS_M2_VALUE` in `state.rs` — the figure `initialize` bootstraps with.
+ *
+ * The deployment turns the ppm ladder into the absolute base units
+ * `init_asset` takes, by multiplying by this supply. The *fraction* is what
+ * survives: the first real sync corrects the supply and rescales every price by
+ * the same factor, so a slot set at one basis point of the bootstrap supply is
+ * still one basis point afterwards.
+ */
+export const GENESIS_M2_VALUE = 22_176_100_000n
+
+/** What `init_asset` is actually called with, at a given bootstrap supply. */
+export function genesisPrices(ppm: number[], bootstrapSupply: bigint): bigint[] {
+  return ppm.map((p) => (bootstrapSupply * BigInt(p)) / 1_000_000n)
 }
 
 export function loadParams(path?: string): SimParams {
@@ -48,10 +64,6 @@ export function loadParams(path?: string): SimParams {
     ? resolve(process.cwd(), path)
     : new URL('../params.genesis.json', import.meta.url)
   const raw = JSON.parse(readFileSync(url as never, 'utf8')) as GenesisParams
-  const count = raw.assets.count
-  // Until T15 writes a ladder, use the placeholder the test harness uses: ten
-  // prices from one million ENC to ten million, cheapest first.
-  const ladder = raw.assets.genesisPrices ?? Array.from({ length: count }, (_, i) => 1e12 * (i + 1))
   return {
     k: BigInt(raw.peg.k),
     floorBps: raw.vault.floorBps,
@@ -61,7 +73,7 @@ export function loadParams(path?: string): SimParams {
     epochSeconds: raw.faucet.epochSeconds,
     maxChangeBps: raw.sanity.maxChangeBps,
     interpolationSeconds: raw.prices.interpolationSeconds,
-    genesisPrices: ladder.map((p) => BigInt(Math.round(p))),
+    genesisPricePpm: raw.assets.genesisPricePpm,
   }
 }
 
