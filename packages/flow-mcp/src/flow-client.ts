@@ -44,6 +44,14 @@ const DEFAULT_VIDEO_ASPECT: VideoAspect = '16:9'
 // callers and normalised by canonicalVideoModel, so the env var stays forgiving.
 const DEFAULT_VIDEO_MODEL = process.env.FLOW_VIDEO_MODEL ?? 'Veo 3.1 - Fast'
 const VIDEO_TIMEOUT_MS = 8 * 60_000
+/**
+ * Ceiling for a clip Flow has explicitly told us is QUEUED. Observed live 2026-08-12: a Veo
+ * Quality clip sat in the "high demand" queue past the 8-minute timeout and was reported as a
+ * TIMEOUT despite being healthy and already paid for. The queue is Google's, not ours, so the
+ * only sane response is to keep waiting — but with a hard stop, so a permanently stuck queue
+ * cannot hang a caller indefinitely.
+ */
+const VIDEO_QUEUED_TIMEOUT_MS = 25 * 60_000
 // Image/grid polls are cheap in-page DOM scrapes, so poll fast (~1s of discovery latency).
 const POLL_MS = 1_000
 // The video poll additionally makes a content-type HTTP request per candidate media, so keep it
@@ -1569,16 +1577,23 @@ export class FlowClient {
    *     unpassable prompt is most expensive.
    *   - `error` ("Oops, something went wrong") re-approves the credit gate to retry, same
    *     behaviour this loop always had.
-   *   - `queued` is deliberately NOT checked for here — it is benign (flow-video.md:41-49), and
-   *     the misleading `warning Failed`-looking icon that can render alongside it must never be
-   *     read as a reason to stop waiting.
+   *   - `queued` is benign (flow-video.md:41-49) — the misleading `warning Failed`-looking icon
+   *     that can render alongside it must never be read as a reason to stop waiting. It now
+   *     EXTENDS the deadline: confirmed live 2026-08-12, Flow queued a clip "due to high
+   *     demand" and had still not produced it 8 minutes later. Failing at the normal timeout
+   *     there reports TIMEOUT for a generation that is healthy, already paid for, and simply
+   *     waiting its turn — and the caller has no way to collect it afterwards.
    */
   private async waitForVideoClip(before: Set<string>, timeoutMs: number): Promise<string> {
-    const deadline = Date.now() + timeoutMs
+    let deadline = Date.now() + timeoutMs
+    const hardDeadline = Date.now() + VIDEO_QUEUED_TIMEOUT_MS
     while (Date.now() < deadline) {
       const card = await this.detectFailureCard()
       if (card === 'blocked') throw new Error('POLICY_BLOCKED')
       if (card === 'error') await this.approveCreditGateIfPresent(5_000)
+      // Keep waiting while Flow says it is queued, up to a hard ceiling so a stuck queue
+      // cannot hang forever.
+      if (card === 'queued') deadline = Math.min(hardDeadline, Date.now() + timeoutMs)
       for (const n of await this.scrapeMediaNames()) {
         if (before.has(n)) continue
         const ct = await contentTypeOf(this.page.request, n)
