@@ -162,6 +162,27 @@ made `ensureVideoSettings` a no-op or a 90-second hang. What the panel actually 
   close it; click the panel's own `arrow_back Back` (not the top-left `arrow_back Go Back`,
   which leaves the project).
 - **A fresh project defaults to Omni Flash for video** — confirmed, as the original note said.
+- **The credit gate's options are plain `<div>`s** — no `<button>`, no `role`. Both
+  `getByRole('button')` and a CSS `button` filter find nothing, and the generation then sits
+  on an unanswered gate until it times out. Match the text; `Approve` must be matched
+  **exactly**, or you hit "Approve, do not ask again" and disable credit confirmation for the
+  whole project.
+
+### ⚠️ Animating the wrong still — the failure that looks like success
+
+A tile's `more_vert` **must** be scoped to that tile's own card: the nearest ancestor `div`
+containing a `more_vert`, which is the tile img's grandparent and holds exactly one image and
+one control. Do **not** use `:near(img[alt="Generated image"])` — `:near()` matches a control
+near *any* tile, so `.first()` opens the menu on whichever tile comes first in the DOM.
+
+This is worth its own heading because of how it fails: you get a **real clip, a real media id,
+and a real file on disk — of the wrong picture**. There is no error, no warning, and nothing
+downstream can detect it. It survived our own video smoke test, which checked the file size
+and declared success; it was caught only by extracting a frame and looking at it.
+
+Two defences now: the scoped selector, and a post-attach check that the reference chip's media
+id matches the targeted tile (`ANIMATE_WRONG_SOURCE`, thrown *before* credits are spent).
+**When testing anything in this flow, look at a frame — file size proves nothing.**
 
 **Progress screenshots go in `.flow-screenshots/`.** `browser_take_screenshot` writes its
 `filename` relative to the repo root, so always prefix it — e.g.
