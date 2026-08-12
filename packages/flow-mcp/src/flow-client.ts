@@ -1340,11 +1340,40 @@ export class FlowClient {
     if (changed) {
       const save = this.page.locator('button').filter({ hasText: /^Save$/ }).first()
       await this.forceClick(save)
+      await this.leaveAgentSettings()
     } else {
       // Nothing to persist — close without touching Save (leaves the unrelated Confirm-gate
       // setting untouched too).
       await this.page.keyboard.press('Escape')
+      await this.leaveAgentSettings()
     }
+  }
+
+  /**
+   * Return from the Agent settings view so the compose bar is reachable again.
+   *
+   * The settings panel REPLACES the prompt box rather than sitting beside it, so leaving it
+   * open makes the very next step — typing a motion prompt — fail with "element is not
+   * visible" on a textbox that exists but is off-screen. Saving does not close it, and the
+   * panel is sticky across navigation, so the caller has to.
+   *
+   * Best-effort by design: this is cleanup, and a generation should not fail because a back
+   * button moved. The subsequent submitPrompt has its own visibility wait, which is the real
+   * guarantee.
+   */
+  private async leaveAgentSettings(): Promise<void> {
+    const box = this.page.locator('div[role="textbox"][contenteditable="true"]').first()
+    if (await box.isVisible().catch(() => false)) return
+    // "arrow_back Back" is the PANEL's own back button. Do not confuse it with the top-left
+    // "arrow_back Go Back", which leaves the project entirely.
+    const back = this.page.locator('button').filter({ hasText: /^arrow_back\s*Back$/i }).first()
+    if (await back.count()) {
+      await this.forceClick(back).catch(() => {})
+      if (await box.isVisible().catch(() => false)) return
+    }
+    // Still covered: toggle the Agent panel shut from its compose-bar button.
+    const agentBtn = this.page.locator('button').filter({ hasText: /^Agent$/i }).first()
+    if (await agentBtn.count()) await this.forceClick(agentBtn).catch(() => {})
   }
 
   /**

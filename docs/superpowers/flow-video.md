@@ -127,6 +127,42 @@ just a `<video>` source instead of an `<img>`.**
 `browser_snapshot` refs (`e123`) go stale between snapshots — locate by ARIA role + accessible
 name, not ref.
 
+## Corrections from live automation (2026-08-12)
+
+The table above was written from a hand-driven session and several rows are wrong in ways that
+made `ensureVideoSettings` a no-op or a 90-second hang. What the panel actually does:
+
+- **⚠️ `getByRole` does not work anywhere inside the Agent settings panel.**
+  `page.getByRole('tab')` counts **0** page-wide while `button[role="tab"]` counts **15** — the
+  open panel sits under an `aria-hidden` ancestor, so it is absent from the accessibility tree
+  Playwright queries. Use **CSS + text** for everything in this panel. `getByText` still works
+  (different engine). This is the single most surprising fact here.
+- **The Settings button lives in the Agent panel, which is closed by default.** On a project
+  root there is no `tune Settings` button at all until the compose bar's `button "Agent"` is
+  clicked. The panel is **sticky across navigation**, so code must handle three states: closed,
+  open on the chat view, and already on the settings view.
+- **Two sections share tab names.** "Image generation default" (16:9 / 4:3 / 1:1 / 3:4 / 9:16,
+  x1–x4, Nano Banana) sits ABOVE "Video generation default" (16:9 / 9:16, x1–x4, Omni Flash).
+  Any `.first()` lands on the image one. Scope via the heading's immediate parent —
+  `getByText('Video generation default', {exact:true}).locator('xpath=..')` is exactly the
+  video section and excludes the image one.
+- **Count tabs are `x1`…`x4`.** The row above says `1x` for a single output; it is `x1`.
+- **Model names carry a ` - ` separator**: `Omni Flash`, `Veo 3.1 - Lite`, `Veo 3.1 - Fast`,
+  `Veo 3.1 - Quality`, `Veo 3.1 - Lite [Lower Priority]`. Note the **space** before
+  `[Lower Priority]`, and that `Veo 3.1 - Lite` is a strict prefix of it — match names for
+  equality, not containment.
+- **Menu options are `button[role="menuitem"]` with the label in a nested `<span>`**, so the
+  button's own text is not the bare name; match the label text exactly and walk up to the
+  ancestor button.
+- **The model trigger renders glued together**: `"Omni Flasharrow_drop_down"`, no space.
+- **The trigger TOGGLES** — clicking it when the menu is already open closes it. Check whether
+  the option is visible before clicking.
+- **The settings panel REPLACES the prompt box.** Leaving it open makes the next submit fail
+  with "element is not visible" on a textbox that exists but is off-screen. Saving does not
+  close it; click the panel's own `arrow_back Back` (not the top-left `arrow_back Go Back`,
+  which leaves the project).
+- **A fresh project defaults to Omni Flash for video** — confirmed, as the original note said.
+
 **Progress screenshots go in `.flow-screenshots/`.** `browser_take_screenshot` writes its
 `filename` relative to the repo root, so always prefix it — e.g.
 `filename: ".flow-screenshots/gen-progress.png"` — to keep these scratch captures out of the
