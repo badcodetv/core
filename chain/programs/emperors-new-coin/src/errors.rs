@@ -165,4 +165,13 @@ pub enum EncError {
     /// are settled.
     #[msg("That epoch is not settled yet")]
     EpochNotSettled,
+
+    /// The epoch a `claim` named is not the one the chain is in.
+    ///
+    /// The caller has to name it, because a PDA seed cannot read the clock —
+    /// so the program checks the name against `Clock::get()` rather than
+    /// trusting it. In practice this means a transaction that sat in the
+    /// mempool across an epoch boundary; resubmit it with the new number.
+    #[msg("That is not the epoch this chain is currently in")]
+    WrongEpoch,
 }

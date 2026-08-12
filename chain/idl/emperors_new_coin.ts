@@ -14,6 +14,407 @@ export type EmperorsNewCoin = {
   },
   "instructions": [
     {
+      "name": "claim",
+      "docs": [
+        "Take your share of yesterday's pot and register for today. **Anyone may",
+        "call this**, and it is the only route into the economy that we built."
+      ],
+      "discriminator": [
+        62,
+        198,
+        214,
+        193,
+        213,
+        159,
+        108,
+        210
+      ],
+      "accounts": [
+        {
+          "name": "claimer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "player",
+          "docs": [
+            "Created on a wallet's first ever claim, at that wallet's expense."
+          ],
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  108,
+                  97,
+                  121,
+                  101,
+                  114
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "claimer"
+              }
+            ]
+          }
+        },
+        {
+          "name": "epochAccount",
+          "docs": [
+            "This epoch. Created by whoever claims first, which is what freezes the",
+            "pot — everyone who registers today divides today's pot tomorrow."
+          ],
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  101,
+                  112,
+                  111,
+                  99,
+                  104
+                ]
+              },
+              {
+                "kind": "arg",
+                "path": "epoch"
+              }
+            ]
+          }
+        },
+        {
+          "name": "previousEpoch",
+          "docs": [
+            "Last epoch, the one being paid out. **Optional**, and legitimately",
+            "absent in three cases: the very first epoch anyone ever claimed in, an",
+            "epoch nobody claimed in at all, and one already closed by `close_epoch`.",
+            "Omitting it costs the caller their own share and nobody else anything,",
+            "so it needs no defending beyond the handler's check that it really is",
+            "the previous epoch."
+          ],
+          "optional": true
+        },
+        {
+          "name": "mint",
+          "docs": [
+            "Read-only on purpose: **the faucet cannot mint.** Only `sync_m2` may",
+            "change the supply, and only against what the Fed published."
+          ]
+        },
+        {
+          "name": "vault",
+          "docs": [
+            "signs the payout."
+          ],
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  118,
+                  97,
+                  117,
+                  108,
+                  116
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "vaultTokenAccount",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "vault"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            }
+          }
+        },
+        {
+          "name": "claimerTokenAccount",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "claimer"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "mint"
+              }
+            ],
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            }
+          }
+        },
+        {
+          "name": "tokenProgram",
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+        },
+        {
+          "name": "associatedTokenProgram",
+          "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
+        },
+        {
+          "name": "systemProgram",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "epoch",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "closeEpoch",
+      "docs": [
+        "Reclaim the rent from an epoch nobody can be paid from any more.",
+        "**Anyone may call this**, and keeps the lamports for their trouble."
+      ],
+      "discriminator": [
+        13,
+        87,
+        7,
+        133,
+        109,
+        14,
+        83,
+        25
+      ],
+      "accounts": [
+        {
+          "name": "closer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "epochAccount",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  101,
+                  112,
+                  111,
+                  99,
+                  104
+                ]
+              },
+              {
+                "kind": "arg",
+                "path": "epoch"
+              }
+            ]
+          }
+        }
+      ],
+      "args": [
+        {
+          "name": "epoch",
+          "type": "u64"
+        }
+      ]
+    },
+    {
       "name": "initAsset",
       "docs": [
         "Create one parody asset and its NFT. Called ten times, in order."
@@ -1705,6 +2106,32 @@ export type EmperorsNewCoin = {
       ]
     },
     {
+      "name": "faucetEpoch",
+      "discriminator": [
+        164,
+        249,
+        251,
+        129,
+        245,
+        111,
+        173,
+        240
+      ]
+    },
+    {
+      "name": "player",
+      "discriminator": [
+        205,
+        222,
+        112,
+        7,
+        165,
+        155,
+        206,
+        218
+      ]
+    },
+    {
       "name": "printer",
       "discriminator": [
         111,
@@ -1719,6 +2146,19 @@ export type EmperorsNewCoin = {
     }
   ],
   "events": [
+    {
+      "name": "claimed",
+      "discriminator": [
+        217,
+        192,
+        123,
+        72,
+        108,
+        150,
+        248,
+        33
+      ]
+    },
     {
       "name": "synced",
       "discriminator": [
@@ -1863,6 +2303,11 @@ export type EmperorsNewCoin = {
       "code": 6025,
       "name": "epochNotSettled",
       "msg": "That epoch is not settled yet"
+    },
+    {
+      "code": 6026,
+      "name": "wrongEpoch",
+      "msg": "That is not the epoch this chain is currently in"
     }
   ],
   "types": [
@@ -2005,6 +2450,52 @@ export type EmperorsNewCoin = {
       }
     },
     {
+      "name": "claimed",
+      "docs": [
+        "What one claim actually paid, so the page can say which of the three things",
+        "happened — yesterday's share, a welcome grant, or nothing and why."
+      ],
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "wallet",
+            "type": "pubkey"
+          },
+          {
+            "name": "epoch",
+            "type": "u64"
+          },
+          {
+            "name": "share",
+            "type": "u64"
+          },
+          {
+            "name": "grant",
+            "type": "u64"
+          },
+          {
+            "name": "pot",
+            "docs": [
+              "The pot this claim just registered for, collectable next epoch."
+            ],
+            "type": "u64"
+          },
+          {
+            "name": "registrants",
+            "type": "u32"
+          },
+          {
+            "name": "aboveFloor",
+            "docs": [
+              "False when the vault sits at or below its floor, where nothing pays out."
+            ],
+            "type": "bool"
+          }
+        ]
+      }
+    },
+    {
       "name": "config",
       "docs": [
         "The rules. Written once at `initialize`, never changed afterwards.",
@@ -2102,6 +2593,18 @@ export type EmperorsNewCoin = {
             "type": "i64"
           },
           {
+            "name": "epochSeconds",
+            "docs": [
+              "How long one faucet epoch lasts, in seconds. One day in the shipped",
+              "parameters; see `DEFAULT_SECONDS_PER_EPOCH` for why it is a field.",
+              "",
+              "It is a **PDA seed input**, so it decides which `FaucetEpoch` accounts",
+              "can ever exist. Fixed at genesis and without a setter, like everything",
+              "else here."
+            ],
+            "type": "i64"
+          },
+          {
             "name": "maxChangeBps",
             "docs": [
               "Largest M2 move, in basis points, this program will believe in one",
@@ -2122,6 +2625,52 @@ export type EmperorsNewCoin = {
               "Counts up to `ASSET_COUNT` during bootstrap. The only mutable field."
             ],
             "type": "u8"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "faucetEpoch",
+      "docs": [
+        "One day of the faucet.",
+        "",
+        "Created by whoever claims first that day, which is also what snapshots the",
+        "pot. Everyone who registers today divides *today's* pot tomorrow."
+      ],
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "epoch",
+            "type": "u64"
+          },
+          {
+            "name": "pot",
+            "docs": [
+              "`α × max(0, vault − floor × supply)`, frozen at creation. Frozen because",
+              "a pot that moved with the vault balance could not be divided fairly",
+              "among a set of registrants that is still growing."
+            ],
+            "type": "u64"
+          },
+          {
+            "name": "registrants",
+            "docs": [
+              "How many wallets registered during this epoch. The divisor for this",
+              "pot — *next* epoch."
+            ],
+            "type": "u32"
+          },
+          {
+            "name": "grantsIssued",
+            "docs": [
+              "Welcome grants issued during this epoch, capped at `grants_per_epoch`."
+            ],
+            "type": "u16"
           },
           {
             "name": "bump",
@@ -2183,12 +2732,54 @@ export type EmperorsNewCoin = {
             "type": "i64"
           },
           {
+            "name": "epochSeconds",
+            "type": "i64"
+          },
+          {
             "name": "maxChangeBps",
             "type": "u16"
           },
           {
             "name": "maxSingleMint",
             "type": "u64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "player",
+      "docs": [
+        "A wallet that has played."
+      ],
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "wallet",
+            "type": "pubkey"
+          },
+          {
+            "name": "lastRegisteredEpoch",
+            "docs": [
+              "The last epoch this wallet registered in.",
+              "",
+              "One field does two jobs: it rejects a second claim in the same epoch",
+              "(`== current`), and it decides eligibility for the previous pot",
+              "(`== current - 1`). Keeping them as one field means they cannot",
+              "disagree."
+            ],
+            "type": "u64"
+          },
+          {
+            "name": "welcomeGrantTaken",
+            "docs": [
+              "Whether the one-off welcome grant has been taken. Never resets."
+            ],
+            "type": "bool"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
           }
         ]
       }

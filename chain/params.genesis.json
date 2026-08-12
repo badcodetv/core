@@ -21,10 +21,11 @@
   },
 
   "faucet": {
+    "epochSeconds": 86400,
     "alphaBps": 1000,
     "welcomeGrant": 1000000000,
     "grantsPerEpoch": 100,
-    "_": "pot(N) = alpha x max(0, vault - floor x supply), snapshotted when epoch N opens. Register in N, collect your share of pot(N) in N+1 - dividing a current pot by a previous headcount would let a farm drain many times the pot. welcomeGrant is 1,000 ENC at 6dp, one per wallet ever, capped at grantsPerEpoch per epoch AND refused below the floor.",
+    "_": "pot(N) = alpha x max(0, vault - floor x supply), snapshotted when epoch N opens. Register in N, collect your share of pot(N) in N+1 - dividing a current pot by a previous headcount would let a farm drain many times the pot. welcomeGrant is 1,000 ENC at 6dp, one per wallet ever, capped at grantsPerEpoch per epoch AND refused below the floor. epochSeconds is one day and is NOT a placeholder - 'register today, collect tomorrow' is the design, not a swept number; it is a Config field only because a test ledger cannot wait a real day for the cross-epoch behaviour, exactly as tenancy.termSeconds is. It is also a PDA seed input, so it fixes which FaucetEpoch accounts can ever exist.",
     "placeholder": true
   },
 

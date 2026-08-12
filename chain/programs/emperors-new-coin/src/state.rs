@@ -60,16 +60,34 @@ pub const GENESIS_M2_VALUE: u64 = 22_176_100_000;
 /// point, and `sync_m2` refuses to run until all ten are real.
 pub const ASSET_COUNT: u8 = 10;
 
-/// One epoch is one day. The faucet's whole rhythm — register today, collect
-/// tomorrow — is measured in these.
-pub const SECONDS_PER_EPOCH: i64 = 86_400;
+/// One day. The unit the shipped economy is measured in.
+pub const SECONDS_PER_DAY: i64 = 86_400;
+
+/// The faucet epoch the coin ships with: one day. Register today, collect
+/// tomorrow.
+///
+/// **This is the default, not the rule.** The live value is
+/// `Config.epoch_seconds`, chosen once at `initialize` from
+/// `params.genesis.json` and never changeable afterwards — because every
+/// cross-epoch behaviour the faucet has (a pot divided among *yesterday's*
+/// registrants, an epoch old enough to close) is unreachable in a test suite
+/// that would have to wait a real day for it. The same reasoning made
+/// `term_seconds` a field at T12.
+///
+/// The epoch index is a PDA seed, so this number decides which accounts exist.
+/// That is safe only because it cannot move after genesis.
+pub const DEFAULT_SECONDS_PER_EPOCH: i64 = SECONDS_PER_DAY;
 
 /// How long a price takes to travel to its new target after a supply change.
 ///
 /// Rescaling every asset instantly would make prices jump on the Fed's
 /// schedule; interpolating means they tick every slot, which is both truer to
 /// "the money is melting continuously" and much better television.
-pub const PRICE_INTERPOLATION_SECONDS: i64 = 30 * SECONDS_PER_EPOCH;
+///
+/// Measured in **days, not epochs**: a test ledger runs short epochs, and a
+/// price curve that shrank with them would leave every asset already arrived at
+/// its target, quietly disabling the reserve the auction bids against.
+pub const PRICE_INTERPOLATION_SECONDS: i64 = 30 * SECONDS_PER_DAY;
 
 // ── Accounts ────────────────────────────────────────────────────────────────
 
@@ -115,6 +133,14 @@ pub struct Config {
     /// each auction settles against a price that has arrived rather than one
     /// still in motion.
     pub term_seconds: i64,
+
+    /// How long one faucet epoch lasts, in seconds. One day in the shipped
+    /// parameters; see `DEFAULT_SECONDS_PER_EPOCH` for why it is a field.
+    ///
+    /// It is a **PDA seed input**, so it decides which `FaucetEpoch` accounts
+    /// can ever exist. Fixed at genesis and without a setter, like everything
+    /// else here.
+    pub epoch_seconds: i64,
 
     /// Largest M2 move, in basis points, this program will believe in one
     /// release.

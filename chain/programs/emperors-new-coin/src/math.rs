@@ -13,7 +13,6 @@
 use anchor_lang::prelude::*;
 
 use crate::errors::EncError;
-use crate::state::SECONDS_PER_EPOCH;
 
 /// Basis points denominator. 10,000 bps = 100%.
 pub const BPS: u128 = 10_000;
@@ -195,15 +194,18 @@ pub fn above_floor(vault_balance: u64, total_supply: u64, floor_bps: u16) -> Res
     Ok(vault_balance > floor_amount(total_supply, floor_bps)?)
 }
 
-/// Which epoch a timestamp falls in. One epoch is one day.
+/// Which epoch a timestamp falls in.
 ///
-/// Pre-1970 timestamps cannot occur on a live chain, and clamping beats
-/// panicking on a negative division.
-pub fn epoch_of(unix_timestamp: i64) -> u64 {
-    if unix_timestamp <= 0 {
+/// `seconds_per_epoch` comes from `Config`, not from a constant: the shipped
+/// day is what the coin runs on, but a test ledger cannot wait one out. A
+/// non-positive length is impossible (`initialize` refuses it) and clamps to
+/// epoch zero rather than dividing by it. Pre-1970 timestamps cannot occur on a
+/// live chain, and clamping beats panicking on a negative division.
+pub fn epoch_of(unix_timestamp: i64, seconds_per_epoch: i64) -> u64 {
+    if unix_timestamp <= 0 || seconds_per_epoch <= 0 {
         return 0;
     }
-    (unix_timestamp / SECONDS_PER_EPOCH) as u64
+    (unix_timestamp / seconds_per_epoch) as u64
 }
 
 #[cfg(test)]
@@ -418,18 +420,33 @@ mod tests {
     // ── Epochs ──────────────────────────────────────────────────────────────
 
     #[test]
-    fn one_epoch_is_one_day() {
-        assert_eq!(epoch_of(0), 0);
-        assert_eq!(epoch_of(SECONDS_PER_EPOCH - 1), 0);
-        assert_eq!(epoch_of(SECONDS_PER_EPOCH), 1);
-        assert_eq!(epoch_of(SECONDS_PER_EPOCH * 20_000), 20_000);
+    fn one_shipped_epoch_is_one_day() {
+        use crate::state::DEFAULT_SECONDS_PER_EPOCH as DAY;
+        assert_eq!(epoch_of(0, DAY), 0);
+        assert_eq!(epoch_of(DAY - 1, DAY), 0);
+        assert_eq!(epoch_of(DAY, DAY), 1);
+        assert_eq!(epoch_of(DAY * 20_000, DAY), 20_000);
         // A real timestamp, for scale.
-        assert_eq!(epoch_of(1_754_870_400), 20_311);
+        assert_eq!(epoch_of(1_754_870_400, DAY), 20_311);
+    }
+
+    /// The test ledger runs short epochs so the cross-epoch behaviour is
+    /// reachable at all. Nothing about the faucet cares how long one is.
+    #[test]
+    fn a_shorter_epoch_is_the_same_arithmetic() {
+        assert_eq!(epoch_of(0, 10), 0);
+        assert_eq!(epoch_of(9, 10), 0);
+        assert_eq!(epoch_of(10, 10), 1);
+        assert_eq!(epoch_of(1_754_870_400, 10), 175_487_040);
     }
 
     #[test]
-    fn a_nonsense_timestamp_clamps_instead_of_panicking() {
-        assert_eq!(epoch_of(-1), 0);
-        assert_eq!(epoch_of(i64::MIN), 0);
+    fn a_nonsense_timestamp_or_length_clamps_instead_of_panicking() {
+        use crate::state::DEFAULT_SECONDS_PER_EPOCH as DAY;
+        assert_eq!(epoch_of(-1, DAY), 0);
+        assert_eq!(epoch_of(i64::MIN, DAY), 0);
+        // `initialize` refuses these, so this is the belt to that braces.
+        assert_eq!(epoch_of(1_754_870_400, 0), 0);
+        assert_eq!(epoch_of(1_754_870_400, -1), 0);
     }
 }

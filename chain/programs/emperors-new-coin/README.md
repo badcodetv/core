@@ -98,11 +98,12 @@ is the rule.
 The faucet. Register today; come back tomorrow and split yesterday's pot with
 everyone who registered beside you. The pot does not grow when the crowd
 does, so a thousand-wallet bot farm mostly dilutes itself — and you. Welcome
-to scarcity. A first visit carries a small welcome grant while the day's
-allotment lasts — and only while the Emperor's vault sits above its floor.
-When the Fed tightens hard enough, the faucet stops entirely: arrive during
-the tightening and there is nothing for you. That is not a bug. That is
-austerity, reproduced faithfully.
+to scarcity. Every wallet is owed one small welcome grant, paid on the first
+visit where the day's allotment has not run out and the Emperor's vault sits
+above its floor; refused, it is not lost, and you can come back for it. When
+the Fed tightens hard enough, the faucet stops entirely — no share, no grant.
+Arrive during the tightening and there is nothing for you. That is not a bug.
+That is austerity, reproduced faithfully.
 
 ### What do I actually own?
 

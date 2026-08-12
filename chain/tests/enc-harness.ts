@@ -47,6 +47,29 @@ export const INTERPOLATION_SECONDS = 30 * 86_400
  */
 export const TERM_SECONDS = 12
 
+/**
+ * The faucet epoch this ledger runs, in seconds.
+ *
+ * **Deliberately not `params.genesis.json`'s one day.** Every behaviour the
+ * faucet has is cross-epoch — a pot divided among *yesterday's* registrants, a
+ * second claim refused within one epoch, an epoch old enough to close — so at
+ * the shipped length not one acceptance case is reachable without waiting out a
+ * real day. Same substitution, and same reasoning, as `TERM_SECONDS`.
+ *
+ * Fifteen seconds: long enough that six claims land well inside one over local
+ * RPC, short enough that a suite can sit through half a dozen.
+ */
+export const EPOCH_SECONDS = 15
+
+/**
+ * Welcome grants per epoch on this ledger, against the shipped 100.
+ *
+ * The headline bound is "payout during epoch N is at most pot(N−1) plus
+ * grants_per_epoch × welcome_grant", so the cap is load-bearing — and at 100 it
+ * would take 101 funded wallets to prove. Three takes four.
+ */
+export const GRANTS_PER_EPOCH = 3
+
 export interface Harness {
   provider: anchor.AnchorProvider
   program: anchor.Program<EmperorsNewCoin>
@@ -68,9 +91,13 @@ export interface Harness {
   escrowEncAta: PublicKey
   bidPda: (i: number, bidder: PublicKey) => PublicKey
   certPda: (i: number, term: bigint) => PublicKey
+  epochPda: (epoch: bigint) => PublicKey
+  playerPda: (wallet: PublicKey) => PublicKey
   encAta: (owner: PublicKey) => PublicKey
   vaultAta: (mint: PublicKey, tokenProgram: PublicKey) => PublicKey
   exists: (key: PublicKey) => Promise<boolean>
+  /** The **validator's** unix time. Never `Date.now()` — see the comment. */
+  chainNow: () => Promise<number>
   failureOf: (run: () => Promise<unknown>) => Promise<string>
   supply: () => Promise<bigint>
   vaultBalance: () => Promise<bigint>
@@ -80,7 +107,12 @@ interface Params {
   peg: { k: number }
   vault: { floorBps: number }
   tenancy: { termSeconds: number }
-  faucet: { alphaBps: number; welcomeGrant: number; grantsPerEpoch: number }
+  faucet: {
+    epochSeconds: number
+    alphaBps: number
+    welcomeGrant: number
+    grantsPerEpoch: number
+  }
   sanity: { maxChangeBps: number; maxSingleMint: number }
 }
 
@@ -105,10 +137,10 @@ export function harness(): Harness {
     ataFor(vaultPda, mint, tokenProgram)
   const encAta = (owner: PublicKey) => ataFor(owner, mintPda, TOKEN_PROGRAM_ID)
 
-  /** Little-endian u64, matching `cert_seeds` in state.rs. */
-  const termLe = (term: bigint) => {
+  /** Little-endian u64, matching `cert_seeds` and `epoch_seeds` in state.rs. */
+  const u64Le = (n: bigint) => {
     const b = Buffer.alloc(8)
-    b.writeBigUInt64LE(term)
+    b.writeBigUInt64LE(n)
     return b
   }
 
@@ -118,11 +150,15 @@ export function harness(): Harness {
     readFileSync(new URL('../params.genesis.json', import.meta.url), 'utf8'),
   ) as Params
 
+  // History RPCs (`getBlockTime`, `getTransaction`) refuse the provider's
+  // `processed` commitment, so everything that reads the past goes through this.
+  const history = new anchor.web3.Connection(connection.rpcEndpoint, 'confirmed')
+
   return {
     provider,
     program,
     connection,
-    history: new anchor.web3.Connection(connection.rpcEndpoint, 'confirmed'),
+    history,
     authority: provider.wallet.publicKey,
     params,
     configPda: pda([Buffer.from('config')]),
@@ -141,10 +177,26 @@ export function harness(): Harness {
     escrowEncAta: ataFor(escrowPda, mintPda, TOKEN_PROGRAM_ID),
     bidPda: (i, bidder) =>
       pda([Buffer.from('bid'), Buffer.from([i]), bidder.toBuffer()]),
-    certPda: (i, term) => pda([Buffer.from('cert'), Buffer.from([i]), termLe(term)]),
+    certPda: (i, term) => pda([Buffer.from('cert'), Buffer.from([i]), u64Le(term)]),
+    epochPda: (epoch) => pda([Buffer.from('epoch'), u64Le(epoch)]),
+    playerPda: (wallet) => pda([Buffer.from('player'), wallet.toBuffer()]),
     encAta,
     vaultAta,
     exists: async (key) => (await connection.getAccountInfo(key)) !== null,
+
+    /**
+     * The **validator's** clock, not this machine's.
+     *
+     * `Clock::get()` is the only clock the program has, and a local validator's
+     * unix time drifts behind wall time as slots slip. Deciding which epoch it
+     * is from `Date.now()` gets `WrongEpoch` back from a chain that has not
+     * caught up — which looks exactly like a program bug and is not one. Cost
+     * an hour at T12; the same trap waits in T28.
+     */
+    chainNow: async () => {
+      const slot = await history.getSlot()
+      return (await history.getBlockTime(slot)) ?? Math.floor(Date.now() / 1000)
+    },
 
     /**
      * Run something expected to fail and return everything the chain said about
@@ -188,10 +240,14 @@ export function initParams(h: Harness) {
     faucetAlphaBps: h.params.faucet.alphaBps,
     floorBps: h.params.vault.floorBps,
     welcomeGrant: new BN(h.params.faucet.welcomeGrant),
-    grantsPerEpoch: h.params.faucet.grantsPerEpoch,
+    // See GRANTS_PER_EPOCH: the shipped 100 would need 101 wallets to prove the
+    // cap, and the cap is half of the payout bound.
+    grantsPerEpoch: GRANTS_PER_EPOCH,
     // See TERM_SECONDS: the genesis 30 days would make every settlement case
     // untestable, and the mechanism is indifferent to the number.
     termSeconds: new BN(TERM_SECONDS),
+    // See EPOCH_SECONDS: at the shipped day, every faucet case would need one.
+    epochSeconds: new BN(EPOCH_SECONDS),
     maxChangeBps: h.params.sanity.maxChangeBps,
     maxSingleMint: new BN(h.params.sanity.maxSingleMint),
   }
@@ -406,6 +462,42 @@ export function certAccounts(h: Harness, i: number, term: bigint, holder: Public
     tokenProgram: TOKEN_2022_PROGRAM_ID,
     associatedTokenProgram: ATA_PROGRAM,
     systemProgram: SYSTEM,
+  }
+}
+
+/**
+ * `previousEpoch` is Anchor-optional: `null` when that epoch account does not
+ * exist (the first epoch anyone claimed in, one nobody claimed in, or one
+ * already closed). Passing null costs the caller their own share and nothing
+ * else, which is why the program can accept it without a fight.
+ */
+export function claimAccounts(
+  h: Harness,
+  claimer: PublicKey,
+  epoch: bigint,
+  previousEpoch: PublicKey | null,
+) {
+  return {
+    claimer,
+    config: h.configPda,
+    player: h.playerPda(claimer),
+    epochAccount: h.epochPda(epoch),
+    previousEpoch,
+    mint: h.mintPda,
+    vault: h.vaultPda,
+    vaultTokenAccount: h.vaultEncAta,
+    claimerTokenAccount: h.encAta(claimer),
+    tokenProgram: TOKEN_PROGRAM_ID,
+    associatedTokenProgram: ATA_PROGRAM,
+    systemProgram: SYSTEM,
+  }
+}
+
+export function closeEpochAccounts(h: Harness, epoch: bigint, closer: PublicKey) {
+  return {
+    closer,
+    config: h.configPda,
+    epochAccount: h.epochPda(epoch),
   }
 }
 

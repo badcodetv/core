@@ -1,5 +1,6 @@
 import { expect } from 'chai'
-import { TOKEN_PROGRAM_ID } from '@solana/spl-token'
+import { Keypair, LAMPORTS_PER_SOL } from '@solana/web3.js'
+import { TOKEN_PROGRAM_ID, transfer } from '@solana/spl-token'
 import {
   ASSET_COUNT,
   GENESIS_M2,
@@ -8,6 +9,7 @@ import {
   big,
   bootstrap,
   harness,
+  mockFund,
   setMockM2,
 } from './enc-harness.js'
 
@@ -212,14 +214,96 @@ describe('sync_m2', () => {
   })
 
   /**
-   * The one acceptance case this suite cannot reach yet.
+   * T10 left this pending and pointed at T13. T13 arrived, and the pointer was
+   * half wrong, which is worth writing down.
    *
-   * A burn is `supply - target`, and the vault holds every token until
-   * something moves them out. Nothing does until the faucet lands at T13, so
-   * `supply - target <= vault balance` always holds here and the uncovered-burn
-   * path is unreachable. The arithmetic is covered by the Rust unit tests
-   * (`supply_move`, plus the `min` in the handler); the on-chain case is
-   * enabled at T13.
+   * A burn is `supply − target` and can only take the vault's own tokens, so
+   * this path needs the vault holding *less than* one burn. The faucet does not
+   * get us there: it stops paying at the floor, so it can never take the vault
+   * below 50% of supply. What actually gets there is **sustained contraction** —
+   * burning lowers the vault's share as well as the supply (100/100 → burn 10 →
+   * 90/90 stays 100%, but 50/100 → burn 10 → 40/90 = 44%), so a long enough
+   * tightening walks the vault down until a burn outruns it. That is many years
+   * of real M2 history, so the state is reached here with `mock_fund` — the same
+   * stand-in the auction suite uses for "the economy distributed the money".
+   *
+   * What it proves is the sentence the README publishes: the coin burns **from
+   * the vault, never from a wallet**, and when the vault runs out supply simply
+   * sits above target until the next rise catches up.
    */
-  it('leaves supply above target when the vault cannot cover a burn')
+  it('leaves supply above target when the vault cannot cover a burn', async function () {
+    this.timeout(120_000)
+    const whale = Keypair.generate()
+    const drop = await h.connection.requestAirdrop(whale.publicKey, 2 * LAMPORTS_PER_SOL)
+    await h.history.confirmTransaction(drop, 'confirmed')
+
+    // Leave the Emperor one ENC: less than any burn the change cap permits.
+    const keep = 1_000_000n
+    const moved = (await h.vaultBalance()) - keep
+    await mockFund(h, whale.publicKey, moved)
+    expect((await h.vaultBalance()).toString()).to.equal(keep.toString())
+
+    try {
+      const supplyBefore = await h.supply()
+      const m2 = await currentM2()
+      const fallen = m2 - (m2 * MAX_CHANGE_BPS) / 10_000n
+      const wanted = supplyBefore - targetFor(fallen)
+      expect(wanted > keep, 'the burn no longer outruns the vault').to.be.true
+
+      await setM2(fallen)
+      await sync()
+
+      // It burned everything it had and stopped, rather than reaching into a
+      // wallet to hit the number.
+      expect((await h.vaultBalance()).toString(), 'the vault did not burn what it had').to.equal('0')
+      expect((await h.supply()).toString()).to.equal((supplyBefore - keep).toString())
+      expect((await h.supply()) > targetFor(fallen), 'supply reached a target it could not').to.be
+        .true
+      // The target is still recorded honestly: `supply >= k x M2`, and the
+      // chain says which of the two it is.
+      expect((await printer()).targetSupply.toString()).to.equal(targetFor(fallen).toString())
+
+      // No deficit is remembered anywhere, because the next target is absolute.
+      // Give the money back and let M2 rise: level-targeting lands exactly,
+      // with no double correction.
+      await transfer(
+        h.connection,
+        whale,
+        h.encAta(whale.publicKey),
+        h.vaultEncAta,
+        whale,
+        moved,
+        [],
+        undefined,
+        TOKEN_PROGRAM_ID,
+      )
+      const risen = fallen + fallen / 100n
+      await setM2(risen)
+      await sync()
+      expect(
+        (await h.supply()).toString(),
+        'the self-correction over- or under-shot',
+      ).to.equal(targetFor(risen).toString())
+    } finally {
+      // Whatever happened above, the Emperor gets his money back — every later
+      // run of every suite reads this vault.
+      const stranded = await h.connection
+        .getTokenAccountBalance(h.encAta(whale.publicKey))
+        .then((b) => BigInt(b.value.amount))
+        .catch(() => 0n)
+      if (stranded > 0n) {
+        await transfer(
+          h.connection,
+          whale,
+          h.encAta(whale.publicKey),
+          h.vaultEncAta,
+          whale,
+          stranded,
+          [],
+          undefined,
+          TOKEN_PROGRAM_ID,
+        )
+      }
+    }
+  })
 })

@@ -70,6 +70,18 @@ pub mod emperors_new_coin {
         instructions::sync_m2::handler(ctx)
     }
 
+    /// Take your share of yesterday's pot and register for today. **Anyone may
+    /// call this**, and it is the only route into the economy that we built.
+    pub fn claim(ctx: Context<Claim>, epoch: u64) -> Result<()> {
+        instructions::claim::handler(ctx, epoch)
+    }
+
+    /// Reclaim the rent from an epoch nobody can be paid from any more.
+    /// **Anyone may call this**, and keeps the lamports for their trouble.
+    pub fn close_epoch(ctx: Context<CloseEpoch>, epoch: u64) -> Result<()> {
+        instructions::close_epoch::handler(ctx, epoch)
+    }
+
     /// Bid on a tenancy, escrowing your own ENC. **Signed by the bidder** —
     /// which is the entire reason this replaced the forced sale.
     pub fn place_bid(ctx: Context<PlaceBid>, index: u8, amount: u64) -> Result<()> {

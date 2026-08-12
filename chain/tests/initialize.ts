@@ -18,6 +18,8 @@ import {
   initParams,
   initializeAccounts,
   TERM_SECONDS,
+  EPOCH_SECONDS,
+  GRANTS_PER_EPOCH,
 } from './enc-harness.js'
 
 /**
@@ -97,6 +99,12 @@ describe('initialize + init_asset', () => {
     // Not the genesis 30 days: this ledger runs short terms so the auction's
     // settlement paths are reachable at all. See TERM_SECONDS.
     expect(Number(config.termSeconds)).to.equal(TERM_SECONDS)
+    // Same substitution, same reasoning: at the shipped one-day epoch not one
+    // faucet case is reachable. Asserted rather than assumed, so the swap is
+    // visible in the record.
+    expect(Number(config.epochSeconds)).to.equal(EPOCH_SECONDS)
+    expect(config.grantsPerEpoch).to.equal(GRANTS_PER_EPOCH)
+    expect(config.welcomeGrant.toString()).to.equal(String(h.params.faucet.welcomeGrant))
     expect(config.maxChangeBps).to.equal(h.params.sanity.maxChangeBps)
     expect(config.mint.toBase58()).to.equal(h.mintPda.toBase58())
     expect(config.vault.toBase58()).to.equal(h.vaultPda.toBase58())
@@ -129,6 +137,8 @@ describe('initialize + init_asset', () => {
       'settle_auction', 'settleAuction',
       'roll_term', 'rollTerm',
       'mint_certificate', 'mintCertificate',
+      'claim',
+      'close_epoch', 'closeEpoch',
       // Mock builds only; absent from a real one, which the test below proves.
       'set_mock_m2', 'setMockM2',
       'mock_fund', 'mockFund',

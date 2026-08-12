@@ -7,11 +7,10 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: in progress — **17 of 31 done. T11 SUPERSEDED by the 2026-08-12
-architecture ruling and its code deleted by T30; T12's tenancy auction is
-built and green. Next is T13, the faucet — which Ruling C made the only route
-into the economy, so its parameters are a pass/fail test at T14. The permanent
-delegate is gone (T12 settled it). Still open before T22: T29's proportional
+Status: in progress — **18 of 31 done. T11 SUPERSEDED by the 2026-08-12
+architecture ruling and its code deleted by T30; the tenancy auction (T12) and
+the faucet (T13) are built and green, so the economy now has a route in and a
+route round. Next is T28, `retire`. Still open before T22: T29's proportional
 caps, and T31's Gazette.**
 Date: 2026-08-06 · **architecture revised 2026-08-12 · adversarial review folded in 2026-08-12**
 
@@ -64,8 +63,8 @@ this table is the map.
 | ⛔ | T11 · rent, `settle_rent`, `foreclose` — **SUPERSEDED 2026-08-12**, built, still in the tree until T30 removes it | program |
 | ✅ | T30 · remove the rent machinery (the deletion Ruling A implies) | program |
 | ✅ | T12 · the tenancy auction — `place_bid` · `withdraw_bid` · `settle_auction` · `roll_term` · `mint_certificate` | program |
-| ⬜ | **T13 · the faucet — register-now, collect-next-epoch (now the only way in)** ← **you are here** | program |
-| ⬜ | T28 · `retire` — the coin notices its own end | program |
+| ✅ | T13 · the faucet — `claim` · `close_epoch` (Ruling C made it the only way in) | program |
+| ⬜ | **T28 · `retire` — the coin notices its own end** ← **you are here** | program |
 | ⬜ | T29 · proportional sync caps + the catch-up walk (2026-08-12 review; **must land before T22**) | program |
 | ⬜ | T31 · the Imperial Gazette — tenant copy + the editor's pen (**must land before T22**) | program |
 | ⬜ | T14 · economic simulation harness | economics |
@@ -1207,8 +1206,58 @@ upgrade authority is burned at T22.
 - **TDD:** yes
 - **Validation:** `./stack test test-faucet`.
 - **Depends on:** T12
-- [ ] done
-- Notes: **The faucet is now the only way in.** Ruling C (2026-08-12) is that
+- [x] done
+- Notes: 10 faucet cases green, and 31 Rust unit tests (the epoch arithmetic
+  gained two). **Three decisions the ticket did not spell out.**
+  (1) **The epoch length became `Config.epoch_seconds`**, exactly as
+  `term_seconds` did at T12 and for exactly the same reason: at the shipped one
+  day, *not one* acceptance criterion is reachable — a pot divided among
+  yesterday's registrants, a second claim refused inside one epoch, an epoch old
+  enough to close, all of them need a boundary crossed. The harness runs 15
+  seconds, `params.genesis.json` keeps 86,400, and `initialize.ts` asserts
+  `Config` carries the harness value so the substitution is visible rather than
+  assumed. The epoch is a **PDA seed input**, so this decides which accounts can
+  ever exist — safe only because it is chosen once and has no setter.
+  Consequence worth catching: `PRICE_INTERPOLATION_SECONDS` was defined as
+  `30 × SECONDS_PER_EPOCH` and is now `30 × SECONDS_PER_DAY`. Left alone, a
+  short test epoch would have shrunk every price curve to nothing, leaving all
+  ten assets permanently arrived at their targets and quietly disabling the
+  reserve the auction bids against.
+  (2) **`claim` gates on `initialized_assets == ASSET_COUNT`**, like `place_bid`.
+  Not in the ticket, and it closes a real window: between `initialize` and the
+  tenth `init_asset` the vault holds every token, so a stranger claiming in that
+  gap draws a full pot out of a machine that is not built yet. The window is
+  live at T22.
+  (3) **The welcome grant is keyed on `welcome_grant_taken`, not on "is this
+  wallet new".** Somebody whose first visit landed below the floor, or after the
+  day's allotment ran out, is owed theirs when they come back. The field's own
+  doc already said "never resets"; this is what that buys, and the program
+  README's sentence about the grant was corrected in the same commit to say so.
+  **`mock_fund` stays, deliberately.** T13 does give wallets a real route to
+  ENC, but funding the auction suite through it would make a bidder's stake
+  `pot ÷ registrants` — a number that depends on whether *another suite* claimed
+  in the previous epoch, on a ledger all the suites share and which runs them
+  alphabetically. That is the cross-suite coupling the log already warns about,
+  and it would make every auction case wait out an epoch before it could bid.
+  The mock-surface argument does not bite either way: `mock_fund` ships in
+  **neither** build, and `initialize.ts` asserts that against the committed IDL,
+  so the claim it could threaten is about the shipped interface and is untouched.
+  What the faucet proves instead is in its own suite: a claimant's payout clears
+  the cheapest asset's live reserve, so the loop closes.
+  **Two traps worth not rediscovering.** The epoch index has to be an
+  **instruction argument** (a PDA seed cannot read the clock), so the program
+  checks it against `Clock::get()` and returns the new `WrongEpoch` when a
+  transaction straddles a boundary — correct behaviour, and the suite resubmits
+  rather than loosening the check. And **chai's ordering assertions reject a
+  BigInt outright** ("expected N to be a number or a date"), which fails five
+  tests at once while the program is entirely correct; every amount here is a
+  u64 that does not survive a `Number`, so ordering is asserted as a boolean
+  with both operands printed.
+  The below-floor case drives the vault under its floor with `mock_fund` and
+  **puts the money back in a `finally`** — the vault ATA is an ordinary token
+  account, so anyone may pay into it. Without the restore, every later run of
+  the suite finds an empty Emperor and fails for a reason unrelated to the code.
+  **The faucet is now the only way in.** Ruling C (2026-08-12) is that
   BadCode seeds no liquidity and sells nothing, so unless a stranger makes a pool
   there is no route to ENC except this instruction. That turns a tuning
   preference into a **pass/fail test for T14**: a patient claimant must be able to
@@ -1914,6 +1963,18 @@ _(appended by executors during implementation)_
   IDL. It *moves* tokens rather than minting them, so `supply = k × M2` holds
   across every test — which is what the faucet will do too. Retire it if T13
   ever makes it redundant; there is no other reason to keep it.
+  **RESOLVED at T13 (2026-08-12): kept, and it earned two more jobs.** The
+  faucet does give wallets a real route to ENC, but funding the auction suite
+  through it would make a bidder's stake `pot ÷ registrants` — a number set by
+  whether *another suite* claimed in the previous epoch, on the one ledger they
+  all share and which runs them alphabetically. That is the cross-suite coupling
+  logged above, and it would make every auction case wait out an epoch before
+  bidding. Nothing about the shipped claim changes either way: `mock_fund` is in
+  **neither** build and `initialize.ts` proves it against the committed IDL.
+  Meanwhile it turned out to be the only way to reach two states the real
+  economy takes years to produce — a vault below its floor, and a vault too
+  small to cover a burn — so both of those acceptance cases now run on it, each
+  putting the money back in a `finally`.
 
 - **2026-08-12 · T12 · `h.program.idl` is the build output, not the artifact
   that ships.** A test asserting "no mock instruction in the interface" against
@@ -1954,6 +2015,31 @@ _(appended by executors during implementation)_
   exactly like a program bug and is not one. Cost an hour. `auction.ts` reads
   `getBlockTime(getSlot())` and loops until the chain agrees. The same trap is
   waiting in T13 (epochs) and T28 (the retirement clock).
+
+- **2026-08-12 · T13 · the faucet can never drain the vault, so T10's pending
+  case needed a different key.** T10 left "leaves supply above target when the
+  vault cannot cover a burn" pending and pointed at T13, on the reasoning that
+  the faucet would move tokens out of the vault. It does — but it **stops paying
+  at the floor**, so it can never take the vault below 50% of supply, while the
+  case needs the vault holding less than one burn. What actually reaches that
+  state is **sustained contraction**: a burn lowers the vault's share as well as
+  the supply (50/100 → burn 10 → 40/90 = 44%), so a long enough tightening walks
+  the vault down until a burn outruns it. That is years of real M2 history, so
+  the case is now driven by `mock_fund` — the same stand-in the auction uses —
+  and the suite has no pending cases left. Worth generalising: *"the faucet will
+  make this reachable"* was an assumption about a mechanism that had not been
+  built yet, and the floor is exactly the feature that makes it false.
+
+- **2026-08-12 · T13 · chai's ordering assertions reject a BigInt, and fail
+  like a broken program.** `expect(x).to.be.greaterThan(y)` / `.at.most` /
+  `.at.least` throw *"expected 887046740000000 to be a number or a date"* when
+  handed a BigInt — which fails the test with a message that reads like the
+  arithmetic was wrong, while the arithmetic is fine. Five faucet cases failed
+  this way at once. Every amount in this program is a u64 that does not survive
+  a `Number`, so ordering is asserted as a boolean with both operands in the
+  message (`atLeast`/`atMost`/`above` at the top of `faucet.ts`). `sync_m2.ts`
+  had already hit this and worked around it inline; the same trap waits in T28,
+  T29 and T14.
 
 - **2026-08-12 · T30 · a default build can publish a stale IDL, so run T9's
   grep every time.** After deleting the two instructions, `./stack build`

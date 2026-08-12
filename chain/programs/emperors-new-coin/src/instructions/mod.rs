@@ -1,4 +1,6 @@
 //! One module per instruction. `lib.rs` stays a table of contents.
+pub mod claim;
+pub mod close_epoch;
 pub mod init_asset;
 pub mod initialize;
 pub mod mint_certificate;
@@ -13,6 +15,8 @@ pub mod mock_fund;
 #[cfg(feature = "mock")]
 pub mod set_mock_m2;
 
+pub use claim::*;
+pub use close_epoch::*;
 pub use init_asset::*;
 pub use initialize::*;
 pub use mint_certificate::*;
