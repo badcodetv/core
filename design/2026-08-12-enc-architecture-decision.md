@@ -219,13 +219,31 @@ Whatever is ruled, these are the constraints on public copy, from the research:
 - **Anchor the economics on:** the Bank of England's own 2012 finding that the top
   5% of households held 40% of QE's financial-asset gains; Fed DFA Q4 2024 wealth
   shares (top 1% = 33%, bottom 50% = 2.5%); Case-Shiller 100 → 332.7 since 2000.
-- **Pre-empt the strongest attack in one honest line:** 2021–24 was the fastest
-  money growth in modern history *and* real wages for the bottom half rose 15.3%.
-  Root the joke in the long-run asset-vs-wage divergence, not a year-by-year
-  causal claim.
-- **The mechanism may be harsh; the claims must be exactly true.** No project has
-  been called a rug over a disclosed harsh mechanism. Every real accusation
-  traced to a false factual claim.
+- **Pre-empt the strongest attack in one honest line — and quote the figure
+  exactly.** The EPI figure is: **2019–2024, real wages for low-wage workers,
+  ~+15.3%** — the fastest in decades, spanning the fastest money growth in
+  modern history (while average real hourly earnings *fell* year-over-year for
+  25 straight months inside that window). The 2026-08-12 adversarial review
+  caught this file compressing it to "2021–24" and "the bottom half", both of
+  which make the sentence false. Root the joke in the long-run asset-vs-wage
+  divergence, not a year-by-year causal claim — and never imply the converse
+  either (the 2022–23 tightening was the *worst* stretch for real wages).
+- **Never say "paid the new, higher price."** The auction pays the outgoing
+  holder the *current* price, and M2 falls in 6.1% of months — 13 in a row in
+  2022–23 — so "higher" is a false claim one contraction away. Say **"paid the
+  current price, whatever M2 says it is."**
+- **The forward-looking line is incentive, not prophecy** (Kai, 2026-08-12).
+  The engine of the joke is that debasement is every indebted government's
+  cheapest exit, so they keep taking it. Say it as incentive and record —
+  *"M2 has risen in 94% of months since 1959, and the debt only points one
+  way"* — never as "guaranteed to keep printing," which is a promise about the
+  future we cannot make.
+- **The mechanism may be harsh; the claims must be exactly true.** In every rug
+  accusation the research could verify, the trigger was a false factual claim,
+  never a disclosed mechanism. That is a strong pattern, not a universal law —
+  HEX discloses its mechanism in detail and is still widely called a Ponzi — so
+  our real protection is not disclosure alone: **no path BadCode built accepts
+  anyone's money.**
 
 ---
 

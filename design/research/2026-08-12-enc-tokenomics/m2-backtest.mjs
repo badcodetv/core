@@ -1,5 +1,13 @@
-import { readFileSync } from 'node:fs'
-const rows = readFileSync('m2sl.csv','utf8').trim().split('\n').slice(1)
+import { readFileSync, writeFileSync, existsSync } from 'node:fs'
+// Self-fetching so "re-runnable" is literally true: the CSV is not committed,
+// so pull the full series from FRED on first run (or delete the file to refresh).
+const CSV = new URL('./m2sl.csv', import.meta.url)
+if (!existsSync(CSV)) {
+  const res = await fetch('https://fred.stlouisfed.org/graph/fredgraph.csv?id=M2SL')
+  if (!res.ok) throw new Error(`FRED fetch failed: HTTP ${res.status}`)
+  writeFileSync(CSV, await res.text())
+}
+const rows = readFileSync(CSV,'utf8').trim().split('\n').slice(1)
   .map(l => { const [d,v] = l.split(','); return { d, v: Number(v) } })
   .filter(r => Number.isFinite(r.v))
 const last = rows.at(-1), first = rows[0]
@@ -34,6 +42,10 @@ console.log(`3y windows with a LOSS (multiple<1): ${mult.filter(x=>x.m<1).length
 const recent = mult.filter(x=>x.d>='2016-01-01')
 console.log(`last 10y of 3y windows: min ${Math.min(...recent.map(x=>x.m)).toFixed(3)}x  max ${Math.max(...recent.map(x=>x.m)).toFixed(3)}x`)
 
-// genesis supply
-const k = 1e6, dec = 1e6
-console.log(`genesis supply at ${last.d}: ${(last.v*k/dec).toLocaleString('en-US',{maximumFractionDigits:0})} whole ENC`)
+// genesis supply. M2 is published in BILLIONS: on-chain it is stored as
+// billions at 6dp fixed point (22176.1 -> 22_176_100_000), base units are
+// stored × k, whole ENC divides by 10^6 decimals — net: whole ENC = billions × 1e6,
+// i.e. 1 ENC per $1,000 of M2. (An earlier version of this line divided the
+// fixed point back out and understated supply by a factor of a million.)
+const wholeEnc = last.v * 1e6
+console.log(`genesis supply at ${last.d}: ${wholeEnc.toLocaleString('en-US',{maximumFractionDigits:0})} whole ENC (1 ENC per $1,000 of M2)`)

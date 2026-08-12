@@ -7,9 +7,11 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: in progress — **15 of 27 done. T11 SUPERSEDED by the 2026-08-12
-architecture ruling; next is T12, now the tenancy auction.**
-Date: 2026-08-06 · **architecture revised 2026-08-12**
+Status: in progress — **15 of 29 done. T11 SUPERSEDED by the 2026-08-12
+architecture ruling; next is T30 (delete T11's code, which is still in the
+tree), then T12, the tenancy auction — hardened the same day by an adversarial
+review, which also added T29.**
+Date: 2026-08-06 · **architecture revised 2026-08-12 · adversarial review folded in 2026-08-12**
 
 > **Read [`2026-08-12-enc-architecture-decision.md`](./2026-08-12-enc-architecture-decision.md)
 > before touching T11–T13.** Three rulings from Kai landed on 2026-08-12 and they
@@ -28,6 +30,16 @@ Date: 2026-08-06 · **architecture revised 2026-08-12**
 >
 > The evidence behind all three is at
 > [`research/2026-08-12-enc-tokenomics/`](./research/2026-08-12-enc-tokenomics/README.md).
+>
+> **An adversarial review (2026-08-12, same day) then attacked the rulings and
+> the tickets.** The rulings held — the arithmetic was re-verified from a fresh
+> FRED pull and the auction shape survived. The tickets did not, quite: **T12**
+> gained three spec fixes (stale-bid release, settlement that never needs the
+> outgoing holder's cooperation, the invariant restated in signature form),
+> **T28**'s rationale was rewritten (oracle silence ≠ Fed silence, and its
+> correctness now explicitly depends on T16/T18's release-date sourcing), and
+> **T29** was added — as built, the sync caps guarantee eventual forced
+> retirement. Claims corrections landed in the decision doc §4.
 Relates: `docs/stories/magic-money-tree/emperors-new-coin.md` (canon — the coin
 is a cryptocurrency folded into the Magic Money Tree story, cross-promoted with
 it). Upstream reference repo: https://github.com/emperorsnewcoin/coin (design
@@ -47,10 +59,12 @@ this table is the map.
 | ✅ | T8 · `initialize` + `init_asset` ×10 | program |
 | ✅ | T9 · oracle trait + MockOracle behind a Cargo feature | program |
 | ✅ | T10 · `sync_m2` — supply targeting, the core | program |
-| ⛔ | T11 · rent, `settle_rent`, `foreclose` — **SUPERSEDED 2026-08-12**, built then removed (rent inverted the thesis) | program |
-| ⬜ | **T12 · the tenancy auction — `place_bid` + `settle_auction`** ← **you are here** | program |
+| ⛔ | T11 · rent, `settle_rent`, `foreclose` — **SUPERSEDED 2026-08-12**, built, still in the tree until T30 removes it | program |
+| ⬜ | **T30 · remove the rent machinery (the deletion Ruling A implies)** ← **you are here** | program |
+| ⬜ | T12 · the tenancy auction — `place_bid` + `settle_auction` | program |
 | ⬜ | T13 · the faucet — register-now, collect-next-epoch (**now the only way in**) | program |
 | ⬜ | T28 · `retire` — the coin notices its own end | program |
+| ⬜ | T29 · proportional sync caps + the catch-up walk (2026-08-12 review; **must land before T22**) | program |
 | ⬜ | T14 · economic simulation harness | economics |
 | ⬜ | T15 · choose the genesis parameters | economics |
 | ⬜ | T17 · stand the M2SL feed up on devnet | oracle |
@@ -61,9 +75,10 @@ this table is the map.
 | ⬜ | T22 · devnet deploy + **burn the upgrade authority** | ship |
 | ⬜ | T23 · end-to-end verification | ship |
 
-**T7–T13 are one continuous run** — each builds on the last, all in Rust, all
-validated by `./stack cargo test …` and `./stack test test-…`. Nothing in that
-stretch needs devnet, Switchboard, or a browser.
+**T30, T12, T13, T28, T29 are one continuous run** — each builds on the last,
+all in Rust, all validated by `./stack cargo test …` and `./stack test test-…`.
+Nothing in that stretch needs devnet, Switchboard, or a browser. (T7–T11 were
+the same kind of run and are done, T11 having been superseded.)
 
 **Two schedule facts worth knowing before you start.** T18 needs a Switchboard
 quote that has genuinely *aged* on devnet, so it stalls a calendar day no matter
@@ -262,6 +277,16 @@ Two rules that make this real, and both are testable:
 T23 verifies this by grep, not by good intentions.
 
 ### The ENC machine
+
+> **⚠ SUPERSEDED IN PART (2026-08-12).** The diagram and several paragraphs in
+> this section describe the **rent-era architecture** — force-buy, rent,
+> foreclosure, the Token-2022 permanent delegate, Invariant M. Ruling A removed
+> all of it; they stand here as the record of what was designed and why. The
+> live architecture is: **no holding cost; the ten flags stay in program
+> custody; tenancy auctions (T12); a tenancy certificate in the holder's
+> wallet; no token leaves any wallet without its owner's signature.** Where a
+> paragraph below disagrees with the decision doc or with T12/T28/T29, the
+> tickets win.
 
 ```
    ┌─────────────────────────────────────────────────────┐
@@ -1014,6 +1039,24 @@ upgrade authority is burned at T22.
   vault, if the Emperor held it), the `Asset` reassigns to the winner, and a fresh
   term begins. **If no bid cleared the reserve the incumbent keeps it for another
   term** — dormancy is an expected outcome, not a failure.
+  Three settlement rules from the 2026-08-12 adversarial review, each closing a
+  hole the original spec left open:
+  - **The reserve is re-checked at settlement, and a standing bid that no longer
+    clears it is released** — `high_bid` clears and the bid becomes withdrawable
+    exactly as if superseded. Prices move during a term (~94% of months, upward),
+    so a bid that beat the reserve when placed can sit under it at term end;
+    without release, the sole bidder in a dormant market is locked into term
+    after term while the reserve climbs away from them. That is the stranding
+    the acceptance criteria forbid, reached under the design's *expected* state.
+  - **Settlement never depends on the outgoing holder's cooperation.** If their
+    ENC token account is missing (closed, deliberately or not — the classic
+    push-payment veto), `settle_auction` creates it, payer = caller. Otherwise
+    an incumbent blocks their own eviction and freezes the winner's escrow by
+    closing one account.
+  - **The incumbent may bid on their own asset** — they are just another bidder,
+    and a winning self-bid simply renews the term (settlement must tolerate
+    payer = payee). To take a flag from someone defending it, outbid them; that
+    is an auction working, not a loophole.
 - **Custody — the ten flags never leave program custody.** Each sits in a
   vault-owned token account; the `Asset` PDA records who holds the tenancy. This
   is what removes the permanent delegate, and it is honest: it *is* a lease, and
@@ -1037,11 +1080,19 @@ upgrade authority is burned at T22.
     participating in the economy."*
   - *Net effect:* **no path in the entire program touches anyone's wallet without
     their signature.** Not the coin, not the flags, not the certificates.
+  - **Immutable at mint** (2026-08-12 review): no update authority, no freeze
+    authority; name, term number and dates written once at issue. Its "stub"
+    state is *derived* — the certificate's term number no longer matches the
+    `Asset`'s — never written by a later instruction. That makes "never touched
+    again" structural rather than a matter of implementer restraint.
 - **On forcing the outgoing holder — state this plainly in the copy.** Settlement
   does remove the tenancy whether the incumbent likes it or not. What makes that
   fair rather than a seizure is that it happens **on a clock published at the
-  moment they won** (a term, not ownership), and they are **paid the new, higher
-  price** on the way out. Never describe a tenancy as owning the asset.
+  moment they won** (a term, not ownership), and they are **paid the current
+  price, whatever M2 says it is** — never say "the new, higher price": M2 falls
+  in 6.1% of months (13 in a row in 2022–23), the reserve falls with it, and an
+  incumbent settled out in a contraction is paid *less* than they bid. Never
+  describe a tenancy as owning the asset.
 - **Why this shape:** the outgoing holder is paid the *new* price having bought at
   the old one, so a term held through an expansion pays out more than it cost — in
   a currency that buys less than it used to. That is the entire joke, executed by
@@ -1054,11 +1105,22 @@ upgrade authority is burned at T22.
   receives exactly the winning bid. A superseded bidder can always recover their
   escrow in full. Settling with no qualifying bid leaves the holder unchanged and
   starts a new term. Total supply is never changed by any path. **Escrowed ENC is
-  never strandable** — every route out is reachable by the bidder alone. A
+  never strandable** — every route out is reachable by the bidder alone;
+  specifically, a stale high bid (placed above the reserve, overtaken by it
+  mid-term) is released at a no-winner settlement and recoverable in full.
+  `settle_auction` succeeds when the outgoing holder's ENC token account has
+  been closed, creating it with the caller as payer. A winning self-bid
+  (payer = payee) settles cleanly and renews the term. A
   tenancy certificate is minted to the winner and is **never** moved, burned or
   reclaimed by any later instruction — prove it by settling a subsequent term and
-  asserting the previous holder's certificate is untouched. **No instruction
-  anywhere in the program can move a token the caller does not own.**
+  asserting the previous holder's certificate is untouched, and assert the
+  certificate mint carries **no update authority and no freeze authority**.
+  **No tokens leave any wallet without that wallet owner's signature.** (The
+  earlier caller-form of this sentence — "no instruction can move a token the
+  caller does not own" — was unsatisfiable as written: `settle_auction` is
+  permissionless and moves the winner's escrow by design, and T13's `claim`
+  pays vault tokens to the caller. The signature form is the real invariant;
+  found by the 2026-08-12 review.)
 - **TDD:** yes
 - **Validation:** `./stack test test-auction`.
 - **Depends on:** T10 (no longer T11)
@@ -1107,8 +1169,14 @@ upgrade authority is burned at T22.
 - **Scope:** A TypeScript harness replaying real historical M2SL (including the
   2022–23 contraction — the first sustained decline since the 1930s) through the
   program's math, with synthetic player populations including a sybil-farm
-  cohort. Reports vault share, asset turnover, time-to-first-asset, and whether
-  Invariant M holds. Depends only on `math.rs`'s TS mirror, **not** on the
+  cohort — **plus a forward projection: ≥50 years at the median M2 growth rate
+  (~0.52%/month), asserting `sync_m2` never deadlocks against the caps.** The
+  forward leg exists because the cap failure T29 fixes is in the *future* by
+  construction; a historical replay alone would have waved it through. Reports
+  vault share, time-to-first-asset (a patient claimant reaching the cheapest
+  auction reserve — T13's pass/fail). Invariant M was rent-era arithmetic and
+  retires with T11; asset-turnover reporting is optional colour, not a
+  criterion, per Ruling A. Depends only on `math.rs`'s TS mirror, **not** on the
   oracle integration.
 - **Files:** `chain/sim/{index,players,report}.ts`, `chain/sim/m2-history.csv`,
   `chain/sim/*.test.ts`, and **create `packages/enc/`** (`@badcode/enc`:
@@ -1129,11 +1197,16 @@ upgrade authority is burned at T22.
   to `chain/params.genesis.json`, replacing T7's placeholders. Record the
   rationale and the rejected settings in `chain/sim/RESULTS.md`.
 - **Files:** `chain/params.genesis.json`, `chain/sim/RESULTS.md`.
-- **Acceptance criteria:** Over the full historical replay: the vault never goes
-  negative; **Invariant M holds in every epoch in which all ten assets are held by
-  players**; a new player can afford the cheapest asset on day one via the welcome
-  grant; assets turn over at least once per week on average under a moderate
-  population. Values are produced by the harness, not hand-written.
+- **Acceptance criteria:** Over the full historical replay **and T14's ≥50-year
+  forward projection**: the vault never goes negative; `sync_m2` never deadlocks
+  against the caps (T29's regression, proven at the parameter values actually
+  chosen); a patient claimant can clear the cheapest auction reserve within a
+  stated number of epochs — record the number in `RESULTS.md` as a published
+  fact about the artwork, not a growth target. Values are produced by the
+  harness, not hand-written. *(The old criteria "Invariant M holds" and "assets
+  turn over weekly" are removed: the first was rent-era arithmetic, the second
+  was an engagement target, and Ruling A forbids justifying mechanisms by
+  engagement.)*
 - **TDD:** no (parameter selection); the invariants are asserted by T14's harness.
 - **Validation:** `npx tsx chain/sim/index.ts --report --params chain/params.genesis.json`
   exits 0 with all invariants green.
@@ -1215,6 +1288,15 @@ upgrade authority is burned at T22.
   own quorum (`min_oracle_samples` may not be enforced by the deployed program).
   Add `chain enc crank` (T17's `feed-crank` plus a `sync_m2` call) and the
   standalone published `crank.ts`.
+  **`Quote.release_date` must come from the Fed's own metadata** (the
+  release-date feed T16's scope specifies — note the committed
+  `m2sl.job.json` currently extracts only the value), **never from the quote's
+  crank or signing timestamp** (2026-08-12 review). This is load-bearing for
+  T28: with Fed-sourced dates, a discontinued-but-still-served series fails the
+  `StaleRelease` guard, the last-successful-sync clock freezes, and `retire`
+  fires correctly; with crank-time dates, any bot cranking a dead series keeps
+  the coin "alive" forever and retirement measures nothing but apathy in both
+  directions.
   **Schedule note:** one acceptance criterion needs a quote that genuinely aged
   on devnet, so budget a **calendar day** between cranking and asserting. T19–T23
   sit behind this — it is a wall-clock stall in the critical path, not a work
@@ -1460,14 +1542,36 @@ while the page correctly reports localnet.
 - **`RETIREMENT_SILENCE` = 365 days** (placeholder for T15, but the reasoning is
   fixed): M2 publishes monthly, and this flag is **irreversible on a
   non-upgradeable program**, so a Switchboard outage or a bad month must never be
-  able to end the artwork. A one-year gap in US money-supply publication means
-  something genuinely happened.
+  able to end the artwork.
+- **What a year of silence actually means (2026-08-12 review — the copy must not
+  overclaim).** The trigger measures one thing: *no new M2 figure reached this
+  program for a year.* The program cannot know why. The causes, roughly in order
+  of likelihood over a forever horizon: the oracle stack rotted (Switchboard
+  sunsets the feed's runtime — near-certain eventually, against a pinned feed
+  hash on a non-upgradeable program); nobody left who cares to crank; the sync
+  caps deadlocked (T29 removes this cause); FRED stopped serving; the Fed went
+  dark. Do **not** write "a one-year gap in US money-supply publication means
+  something genuinely happened" — oracle silence is not Fed silence. Write what
+  is true, which is also the better joke: **the coin ends when nobody has told
+  it about money for a year — whether because the dollar ended or because
+  everyone stopped looking, and from where it sits those are the same event.**
+  That is the most Emperor's-New-Clothes ending available.
+- **Correctness dependency:** the silence clock only freezes when the *data*
+  stops advancing if `release_date` is Fed-sourced and `sync_m2` refuses
+  repeats — see the requirement added to T18. Without it, `retire` can never
+  fire while any bot cranks a dead series.
 - **Open creative call (Kai/Jack) — what retirement DOES to the auctions.**
   Either everything freezes and the final state stands as the exhibit, or *the
   auctions keep running forever at the last prices the Fed ever reported* — the
   machine grinding on, trading flags at the valuations of a vanished world,
   because nobody noticed the numbers stopped meaning anything. The second is the
   better ending and costs nothing extra; it needs a ruling before this is built.
+  **Constraint from the 2026-08-12 review:** the freeze ending must keep
+  `withdraw_bid` and every other escrow exit alive after retirement, or it
+  strands live bids permanently — the exact harm T12's criteria forbid. "Keep
+  trading" has no such edge and is mechanically free: price interpolation
+  already flattens at `price_to`, so after the final sync the machine holds the
+  last prices with no extra code.
 - **Files:** `chain/programs/emperors-new-coin/src/instructions/retire.rs`,
   `src/state.rs` (extend `Config`), `chain/tests/retire.ts`.
 - **Acceptance criteria:** `retire` fails while syncs are current and succeeds
@@ -1481,6 +1585,140 @@ while the page correctly reports localnet.
 - [ ] done
 - Notes:
 
+### T29: Proportional sync caps — remove the built-in doomsday constants   [Status: pending — from the 2026-08-12 adversarial review | Model: opus]
+
+- **Why this exists.** As built at T7/T10, `Config.max_single_mint` is an
+  **absolute number of base units**, fixed at `initialize`, forever, on a
+  non-upgradeable program — while the median monthly mint grows with M2, which
+  doubles roughly every 11 years. Any finite value is therefore exceeded by an
+  ordinary month eventually. When that happens `sync_m2` fails, and because
+  level-targeting only updates `previous_m2` on success, **every later sync
+  fails too**, and T28 retires the coin 365 days later. "Forever" as built is
+  "until M2 outgrows a constant chosen in 2026." The same deadlock hits
+  `max_change_bps` on a single genuine hyperinflation-scale release: a real
+  move past the cap can never be believed, the gap never closes, and the coin
+  dies at the exact moment its thesis is most vindicated. T15's historical
+  replay could never catch either — the breach is in the future by construction
+  (hence the forward projection now required in T14/T15).
+- **Scope:** (1) Replace `max_single_mint: u64` with a proportional bound or
+  delete it outright — `max_change_bps` already caps the move as a ratio, so
+  the absolute cap adds nothing but the time bomb. (2) Give an oversized *real*
+  move a **catch-up walk** instead of a permanent refusal: when a release's
+  delta exceeds `max_change_bps`, move `m2_value` toward the quote by at most
+  the cap and do **not** store the release date; repeated permissionless calls
+  walk supply to the target over several transactions, each rescaling prices by
+  its own step ratio (the steps telescope), and the final in-cap step commits
+  the release date. A bad oracle print still moves at most one cap-step before
+  the next genuine release retargets it — level-targeting self-heals, exactly
+  as it already does for uncovered burns.
+- **Files:** `chain/programs/emperors-new-coin/src/{state.rs,math.rs}`,
+  `src/instructions/sync_m2.rs`, `chain/tests/sync.ts` (extend).
+- **Acceptance criteria:** An ordinary month's mint at 10× today's M2 level
+  succeeds with the shipped parameters. A single release 5× over the cap is
+  absorbed over multiple `sync_m2` calls, each within cap, with the release
+  date committed exactly once, supply landing exactly on target, and prices
+  rescaled by the same total ratio as a single-step sync would have applied
+  (up to truncation). A bad print followed by a corrected release converges
+  back to the true target. `previous_m2 = 0` still fails rather than walking
+  from zero. The T14 forward projection passes at the T15 parameter values.
+- **TDD:** yes
+- **Validation:** `./stack cargo test -p emperors-new-coin --lib && ./stack test test-sync`.
+- **Depends on:** T10. **Must land before T22** — the authority burn makes it
+  permanent, and this is the one class of bug (works now, fails by arithmetic
+  certainty later) that non-upgradeability turns fatal.
+- [ ] done
+- Notes:
+
+### T30: Remove the rent machinery   [Status: pending — the deletion Ruling A implies | Model: sonnet]
+
+- **Why this exists.** Ruling A deleted rent on 2026-08-12, and the decision
+  doc's cost table says "T11 → delete" — but **no ticket ever owned the
+  deletion, so the code is still live in the tree**: `settle_rent` and
+  `foreclose` are wired into `lib.rs`, `Config` still carries three rent
+  parameters, `sync_m2` still banks rent before every rescale, and `lib.rs`'s
+  own module docs still describe force-buy and rent as the machine. T12 extends
+  the same files, so shipping this first is what stops the auction being built
+  on top of a contradiction. Found by the 2026-08-12 adversarial review.
+- **Scope:** Delete the rent/foreclosure machinery and every reference to it,
+  leaving the peg (T7–T10) untouched.
+  - **Delete:** `instructions/settle_rent.rs`, `instructions/foreclose.rs`,
+    `chain/tests/rent.ts`, and the `test-rent` script in `Anchor.toml [scripts]`.
+  - **`lib.rs`:** drop both `#[program]` entrypoints, and **rewrite the module
+    doc comment** — it currently describes assets "always for sale at a
+    published price with no right of refusal" whose "holders pay rent to the
+    vault", which is now the opposite of the design. Replace with the tenancy
+    model (auctions, certificate, no holding cost).
+  - **`instructions/mod.rs`:** drop both modules and their re-exports.
+  - **`state.rs`:** remove `Config.rent_rate_per_day_bps`, `Config.grace_seconds`,
+    `Config.foreclose_bounty`, and `Asset.rent_accrued`. **Leave
+    `Asset.last_touched` in place and flag it to T12** — it is currently "when
+    rent was last settled or the holder last changed"; T12 decides whether it
+    becomes the term anchor or is replaced by `term_ends_at`. Deciding it here
+    would be guessing at T12's shape.
+  - **`math.rs`:** remove `rent_owed` and `PriceCurve::integral` (the integral
+    exists only to charge rent against a moving price; nothing else calls it)
+    plus their unit tests. Keep `price_at` — the auction reserve needs it.
+  - **`instructions/initialize.rs`:** remove the three fields from
+    `InitializeParams`, their assignments, and their `InvalidRate` validation.
+  - **`sync_m2.rs`:** remove the rent-banking block and the `rent_rate` local
+    from `rescale_assets`, and the comment explaining bank-before-rescale. The
+    Emperor-charges-himself-nothing branch goes with it. *(T10's Notes keep the
+    original explanation as history — do not edit past tickets' Notes.)*
+  - **`errors.rs`:** remove `NotForeclosable` and `VaultHoldsAsset`. **Keep
+    `WrongHolderAccount`** — T12 needs exactly that check when paying the
+    outgoing holder. Note that Anchor numbers error codes by declaration order
+    (6000 + index), so removing variants **renumbers every later code**; that is
+    free now and impossible after T22, which is another reason this lands here.
+  - **`chain/params.genesis.json`:** delete the `rent` block. Leave `sanity`
+    alone — T29 reworks it.
+  - **`chain/tests/{enc-harness,initialize}.ts`:** drop the rent params from the
+    harness type and the `initialize` call, and the `rentRatePerDayBps`
+    assertion.
+  - **`chain/tests/initialize.ts` "exposes no instruction that could rewrite the
+    rules":** remove `settle_rent`/`settleRent`/`foreclose` from the allowlist,
+    **and add a positive assertion that the IDL does not contain them** — the
+    removal should be provable, not merely untested.
+- **Files:** as enumerated above.
+- **Acceptance criteria:** The program builds and every existing suite passes.
+  `grep -rnE 'rent_owed|rent_accrued|rent_rate|settle_rent|settleRent|foreclos'
+  chain/programs chain/tests chain/params.genesis.json` returns nothing outside
+  historical comments. **Do not grep for the bare word `rent`** — Solana's own
+  account-rent exemption and the `Rent` sysvar (`initialize.rs` holds a
+  `Sysvar<'info, Rent>`) legitimately use it, and conflating the two is how this
+  ticket breaks `initialize`. The published IDL contains neither `settleRent`
+  nor `foreclose`. `sync_m2` still rescales all ten assets correctly and its
+  suite passes unchanged.
+- **TDD:** no (deletion; the existing suites are the regression).
+- **Validation:** `./stack cargo test -p emperors-new-coin --lib && ./stack test test-init && ./stack test test-sync`.
+- **Depends on:** T10. **Blocks T12** — same files.
+- [ ] done
+- Notes:
+
 ## Discovered Issues Log
 
 _(appended by executors during implementation)_
+
+- **2026-08-12 · adversarial review (Fable), findings folded into tickets:**
+  (1) `max_single_mint` / `max_change_bps` deadlock guarantees eventual forced
+  retirement → **T29**, and T14/T15 gained a ≥50-year forward projection since
+  historical replay cannot see it. (2) T12 as first specced could strand escrow
+  (stale high bid at a no-winner rollover) and let an incumbent veto eviction
+  (closed token account) — both closed in the ticket. (3) The acceptance
+  invariant "no instruction can move a token the caller does not own" was
+  unsatisfiable (permissionless `settle_auction` moves the winner's escrow by
+  design); restated in signature form. (4) T28's rationale confused oracle
+  silence with Fed silence; the committed feed job extracts only the value, so
+  Fed-sourced `release_date` is now an explicit T18 requirement T28 depends on.
+  (5) Claims corrections in the decision doc §4: the EPI wage figure's window
+  and population, "paid the new, higher price," the rug-accusation universal,
+  and the forward-looking debasement line as incentive-not-prophecy.
+  (6) `m2-backtest.mjs` now self-fetches its CSV and its genesis-supply line
+  was off by 10⁶ (printed 23,155 whole ENC; correct is ~23.16 billion).
+  (7) Verified clean in the same review: the M2 arithmetic against a fresh FRED
+  pull, `PriceCurve` flattening at `price_to` (makes "keep trading at last
+  prices" free), rent banked-before-rescale, and the sybil-dilution faucet
+  bound.
+  (8) **Ruling A's deletion was never ticketed** — T11's rent code is still live
+  in the tree (wired into `lib.rs`, `Config`, `sync_m2`), so a builder starting
+  at T12 would extend files that contradict the design → **T30**, which now
+  precedes T12.

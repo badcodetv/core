@@ -39,3 +39,6 @@ chain/.solana/
 
 # ./stack: pid + log files for the local dev servers
 .stack/
+
+# Cached FRED series for the ENC backtest (m2-backtest.mjs fetches it on demand)
+design/research/2026-08-12-enc-tokenomics/m2sl.csv
