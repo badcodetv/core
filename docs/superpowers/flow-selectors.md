@@ -85,26 +85,19 @@ base64, but don't — it bloats context). Do the actual file write in the **dete
 Refs (`e123`) from `browser_snapshot` are per-snapshot and **go stale** — in the hardened
 command, locate by ARIA role + accessible name/placeholder, not ref.
 
-## Character consistency — SOLVED (2026-06-30, camping-v2)
+## Characters, re-mapped live 2026-08-11 (GPOM + MMT casting)
 
-Casting a Flow Character into a generation works via the **`@` asset picker**, not
-prose:
-
-1. Create the Character once: sidebar **Characters → New Character → Upload** the
-   canon sheet → name it → **Done**. Characters are project-scoped but castable by
-   `@tag`.
-2. In the prompt box, type **`@`** → an asset-picker `dialog` opens listing project
-   assets; the character shows as an `option` *"<Name> — Character"*. Select it →
-   **"Add to Prompt"** button. A **character reference chip** attaches to the bar
-   (`button "Character reference image …"`), and generation uses the real face.
-3. Type the scene text after the chip, set Image mode, submit, harvest as usual.
-
-**Plain `@Name` typed as text does NOT bind the character** — it yields a generic
-person. The reference attachment is what binds it (camping-v2 p03: text → generic
-financier; reference → the real Tarquin). `flow_generate_image` only fills text, so
-character panels need the reference attached via the UI (Playwright) for now.
-
-## Characters, re-mapped live 2026-08-11 (GPOM + MMT casting) — SUPERSEDES the flow above
+> A 2026-06-30 "Character consistency — SOLVED" recipe lived here (New Character card,
+> `@` picker giving an `option` `"<Name> — Character"`). It's gone — the UI it described
+> no longer exists (see below) and `flow_generate_image`/`flow_edit_image`/
+> `flow_generate_batch` now take a `character` parameter that drives the current picker
+> internally, so there is no browser-driving step left for a caller to do by hand. The
+> one gotcha worth keeping from it: **plain `@Name` typed as prompt text does NOT bind
+> the character** — it yields a generic likeness, not the cast one (camping-v2 p03: text
+> → a generic financier; a real reference attachment → the actual Tarquin). Binding
+> requires the reference-attachment flow, which is exactly what the `character`
+> parameter now does under the hood — see the asset-picker recipe under "Reference
+> images (ingredients)" below.
 
 The character UI changed. What the 2026-06-30 recipe gets wrong, and the current map:
 
@@ -189,15 +182,15 @@ Key corrections to the spike-era selectors above:
   check whether `crop_` is present and, if not, click the `Agent` toggle to drop into generation
   mode first. The mode is stateful and varies (e.g. it engages after the character flow), so gate
   on `crop_`'s presence, not on `aria-pressed` (which lags after navigation).
-- **Create a character** (`createCharacter`): `Characters` sidebar button (`accessibility_newCharacters`)
-  → click the **"New Character"** card (a `div`, not a `<button>`) → URL goes to `/characters` →
-  click `Upload` (`uploadUpload`) → file chooser `setFiles(refs)` → fill `input[placeholder="Character Name"]`
-  (defaults to "Untitled Character") → click `Done` → returns to `/project/<id>`.
-- **Cast a character into a generation** (`generateImage` with `{ character }`): type `@` in the prompt
-  box → asset-picker opens with `role="option"` entries named `<Name>Character` → click the option →
-  click `Add to Prompt` (inserts an inline character-reference chip into the box) → APPEND the scene
-  text after the chip (`End` then type — `fill()` would wipe the chip) → submit. Confirmed live:
-  the reference composition is faithfully reproduced, so the chip genuinely binds the character.
+- **Create a character** (`createCharacter`): this original recipe (click a "New
+  Character" card, fill `input[placeholder="Character Name"]`) is superseded by the
+  2026-08-11 remap above — there is no such card, and that name-field selector matches
+  nothing. Two facts from here still hold and aren't restated above: the "Character
+  Name" field **defaults to "Untitled Character"** until filled, and `Done` **returns
+  you to `/project/<id>`** — the reliable done-signal for the whole flow.
+- **Cast a character into a generation**: the `role="option"` asset-picker entries this
+  recipe originally relied on are dead — gone from the UI *and* the code. See "Reference
+  images (ingredients)" below for the current Characters-tab flow.
 
 ## Reference images (ingredients) — mapped live 2026-07-14 (edit-panel spike)
 
@@ -220,7 +213,9 @@ live: uploaded `gpom-short` p04 golden, applied a Google-template delta prompt a
   open the picker (`@` or `add_2`), click the `Characters` tab, select the character tile,
   "Add to Prompt". The character chip is still INLINE in the contenteditable (` Name `),
   so once a character chip is present, APPEND text (`End` + type) — never `fill()`.
-  `submitWithCharacter`'s option-based flow is dead and needs porting to this picker.
+  `submitWithCharacter`'s option-based flow has since been ported to this picker
+  (`addCharacterToPrompt` in `flow-client.ts`) — every `character` param on the
+  `flow_*` tools goes through it now, so callers don't drive the picker by hand.
 - **Composition confirmed**: a media ingredient chip + an inline character chip coexist
   in one prompt (tested in camping-v2 with an existing asset + SmokeChar).
 - **Multi-output (x2/x3/x4)**: count tab selection in the `crop_` config menu **persists
