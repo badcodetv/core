@@ -52,6 +52,10 @@ function toToolError(err: unknown): ToolResult {
   if (msg === 'MEDIA_NOT_FOUND') return fail('MEDIA_NOT_FOUND', 'No project media matches that title.', 'Use the exact accessible name shown in the project gallery, not a file path or media id.')
   if (msg === 'ANIMATE_NOT_FOUND') return fail('ANIMATE_NOT_FOUND', 'No project media tile offered the Animate action.', 'The source still may not have finished uploading, or the tile is a video (whose menu has no Animate).')
   if (msg === 'ANIMATE_WRONG_SOURCE') return fail('ANIMATE_WRONG_SOURCE', 'Flow attached a different still than the one requested, so the clip was NOT generated.', 'Aborted deliberately before spending credits: animating the wrong frame returns a healthy-looking clip of the wrong picture. Retry; if it persists, the tile-to-control mapping in openAnimateMenu has drifted again.')
+  // Duration errors carry their own detail after the code, so they pass the message through.
+  if (msg.startsWith('VIDEO_DURATION_INVALID')) return fail('INVALID_ARGS', msg, 'Flow offers exactly 4, 6, 8 and 10 second clips — there is no slider.')
+  if (msg.startsWith('VIDEO_DURATION_UNAVAILABLE')) return fail('VIDEO_DURATION_UNAVAILABLE', msg, 'Only Gemini Omni Flash makes 10s clips; every Veo 3.1 tier caps at 8s (confirmed live 2026-08-12 — the 10s tab is absent from the DOM, not merely disabled). Either drop to 8s or pass model "Omni Flash".')
+  if (msg.startsWith('VIDEO_DURATION_NOT_APPLIED')) return fail('VIDEO_DURATION_NOT_APPLIED', msg, 'The duration tab was clicked but the config trigger never showed it — aborted before spending credits, because an ignored duration returns a healthy-looking clip of the wrong length. The tab names in the compose popover have probably drifted; re-map with packages/flow-mcp/src/smoke-duration.ts.')
   if (msg === 'SUBMIT_FAILED') return fail('SUBMIT_FAILED', 'The prompt was typed but Flow never accepted the submit.', 'Usually a wedged compose bar — reload the project URL (twice; the first load can throw a client-side exception) and retry.')
   if (msg === 'NOT_IN_PROJECT') return fail('NOT_IN_PROJECT', 'The page is not inside a Flow project.', 'Open one with flow_open_project, or pass a project id.')
   if (msg === 'POLICY_BLOCKED') return fail('POLICY_BLOCKED', 'Flow flagged this generation as a possible policy violation — it will never complete no matter how long you wait.', 'Do NOT retry the same prompt. Rewrite it: check the reference image and any Character name/info fields, not just the prompt text (docs/flow/failure-modes.md §A2), then use the trigger list and rewrite table at docs/flow/failure-modes.md §A5-A6.')
@@ -299,17 +303,25 @@ server.registerTool(
       'not the cheapest and not the most expensive. Other recorded options: "Omni Flash", "Veo 3.1 Lite" (10 credits), ' +
       '"Veo 3.1 Quality" (100 credits — ask for this explicitly; it costs 5x Fast and 10x Lite), ' +
       '"Veo 3.1 Lite[Lower Priority]". aspect defaults to "16:9" (matches most comic pages); pass "9:16" for portrait. ' +
-      'count (1-4, default 1) sets how many candidate clips Flow generates in this turn. Returns { path, mediaId }.',
+      'count (1-4, default 1) sets how many candidate clips Flow generates in this turn. ' +
+      'durationSeconds sets the CLIP LENGTH — 4, 6, 8 or 10. Omitting it leaves Flow on whatever the ' +
+      'project last used, which is normally its 8s default; every clip made before this parameter existed ' +
+      'was 8s by accident rather than by choice, so state a length deliberately. Shorter is cheaper on Omni ' +
+      'Flash (15/20/25/30 credits for 4/6/8/10s) and a 4s clip is often the right answer for a single comic ' +
+      'beat. ⚠️ 10s is Omni Flash ONLY — on every Veo 3.1 tier the 10s option does not exist, and asking for ' +
+      'it there fails immediately (before any credits are spent) rather than quietly returning 8s. ' +
+      'Returns { path, mediaId }.',
     inputSchema: {
       imagePath: z.string().min(1),
       motion: z.string().min(1),
       model: z.string().optional(),
       aspect: z.enum(['16:9', '9:16']).optional(),
       count: z.number().int().min(1).max(4).optional(),
+      durationSeconds: z.union([z.literal(4), z.literal(6), z.literal(8), z.literal(10)]).optional(),
       outPath: z.string().min(1),
     },
   },
-  async ({ imagePath, motion, model, aspect, count, outPath }) => {
+  async ({ imagePath, motion, model, aspect, count, durationSeconds, outPath }) => {
     try {
       return await withClient(async (c) =>
         ok(
@@ -317,6 +329,7 @@ server.registerTool(
             ...(model ? { model } : {}),
             ...(aspect ? { aspect } : {}),
             ...(count ? { count } : {}),
+            ...(durationSeconds ? { durationSeconds } : {}),
           }),
         ),
       )

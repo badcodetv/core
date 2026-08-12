@@ -196,11 +196,38 @@ anything — the trigger's own label concatenates model + aspect + count.
 
 Two things this changes:
 
-- **Clip duration is controllable**, and was not known to be at all. `animate-slide` has been
-  taking Flow's 8s default by accident. There is no duration control in the Settings panel.
+- **Clip duration is controllable**, and was not known to be at all. Every clip made before
+  2026-08-12 took Flow's 8s default by accident. There is no duration control in the Settings
+  panel. Now driven by `flow_generate_video`'s `durationSeconds` — see below.
 - **Aspect is settable per turn**, so "set it once per session" is a workaround, not a
   constraint. `ensureImageMode` already drives this popover for images; the video half is
   still driven through the Settings panel.
+
+#### Clip duration, as wired (C4, live-proven 2026-08-12)
+
+`flow_generate_video({ durationSeconds: 4 | 6 | 8 | 10 })`. Three things cost real time to
+learn, all confirmed by clicking rather than reading:
+
+- ⚠️ **The Animate flow leaves the compose bar in AGENT mode, which has no config popover at
+  all** — no `crop_` trigger, no tabs, nothing. The first implementation just timed out for 90s
+  waiting on a control that cannot exist there. Toggle out with the `Agent` pill first, exactly
+  as `ensureImageMode` does. **The attached source chip survives the toggle** and the trigger
+  comes back already in Video mode (`Video · 8scrop_16_9x1`), so the popover and the Settings
+  panel are one shared config, not rival states.
+- ⚠️ **10s is Omni Flash only, and the tab is ABSENT from the DOM on the Veo tiers** — not
+  present-and-disabled. A `click-if-present` would therefore be a silent no-op returning a
+  healthy 8s clip you have already paid for (the `1x`/`x1` failure shape again), so the model
+  rule lives in code (`maxDurationForModel`) and asking for 10s on Veo throws before uploading
+  anything.
+- **The Video-mode trigger label reads `Video · 8scrop_9_16x1`** — mode, duration, aspect
+  ligature, count, and **no model name at all**. So the label verifies duration/aspect/count
+  and can never verify the tier. `assertVideoDuration` polls it and throws
+  `VIDEO_DURATION_NOT_APPLIED` naming what it actually saw.
+
+Duration is **project state that persists**, so an omitted `durationSeconds` now defaults to
+8 and is asserted every call rather than left alone: without that, one 4s clip would silently
+make every later clip 4s. Proven end to end — an explicit 4 returned a 4.011s / 96-frame mp4,
+and a call omitting it, made in a project sitting at 4s, returned exactly 8.000s.
 
 **Aspect tab ligatures are NOT uniformly derivable.** The wide/tall pair spell the numbers out
 (`crop_16_9`, `crop_9_16`); the other three use descriptive Material Symbols names
@@ -260,7 +287,11 @@ remaining rough edge:
   chooser. The chooser is handled by the Playwright *library* (`setFiles`) — no repo-root
   sandbox limit (unlike the MCP's `browser_file_upload`).
 - **Animate switches the bar to Video mode** and attaches the source-frame chip (bar reads
-  `Video · 8s · crop_16_9 · 1x`, Agent toggle off). No separate mode switch needed.
+  `Video · 8s · crop_16_9 · 1x`, Agent toggle off). No separate mode switch needed. ⚠️ **Only
+  when the bar was in direct-generation mode already.** In the real `generateVideo` path,
+  `ensureVideoSettings` has just been through the Agent panel, so Animate attaches the chip
+  with the bar in **Agent mode** — where the config trigger does not exist. Confirmed live
+  2026-08-12; see the duration section above for the toggle-out.
 - **Completion scrape must include `<video>`/`<source>`** (the old code scraped `<img>` only, so
   it never saw the clip). Snapshot media names *before* submit and wait for a NEW name whose
   `content-type` is `video/*` (`scrapeMediaNames` + `waitForVideoClip`). Evaluate the scraper as

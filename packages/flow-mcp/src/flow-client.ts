@@ -14,7 +14,7 @@ import {
 } from './batch'
 export type { BatchItem, BatchFailure, BatchResult } from './batch'
 import { candidateOutPath } from './candidates'
-import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, canonicalVideoModel, aspectAlreadySelected } from './compose'
+import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, canonicalVideoModel, aspectAlreadySelected, videoDurationAlreadySelected, maxDurationForModel, VIDEO_DURATIONS } from './compose'
 import { classifyCard, newCardsSince, ANY_CARD_RE, type CardState } from './failure-card'
 import { parseMediaOptions, SCRAPE_MEDIA_OPTIONS, type RawMediaOption, type MediaListItem } from './media-list'
 import { parseCharacters, SCRAPE_CHARACTERS, type RawCharacterRow, type CharacterListItem } from './character-list'
@@ -43,6 +43,11 @@ const DEFAULT_VIDEO_ASPECT: VideoAspect = '16:9'
 // Written the way Flow's menu writes it. Loose spellings ("Veo 3.1 Fast") are accepted from
 // callers and normalised by canonicalVideoModel, so the env var stays forgiving.
 const DEFAULT_VIDEO_MODEL = process.env.FLOW_VIDEO_MODEL ?? 'Veo 3.1 - Fast'
+/**
+ * Flow's own default clip length, and therefore the length of every clip made before the
+ * duration control was discovered. Asserted on every video call — see generateVideo.
+ */
+const DEFAULT_VIDEO_DURATION = 8
 const VIDEO_TIMEOUT_MS = 8 * 60_000
 /**
  * Ceiling for a clip Flow has explicitly told us is QUEUED. Observed live 2026-08-12: a Veo
@@ -1450,6 +1455,89 @@ export class FlowClient {
   }
 
   /**
+   * Set the clip length (4/6/8/10s) for the turn about to be submitted.
+   *
+   * ⚠️ This is a SEPARATE surface from `ensureVideoSettings`, not a parameter on it. Model,
+   * aspect and count live in the Agent Settings panel; duration exists ONLY in the compose-bar
+   * config popover's Video mode and has no representation in the Settings panel at all — which
+   * is why nothing in this repo knew clip length was controllable, and why every clip
+   * `animate-slide` has ever made silently took Flow's 8s default.
+   *
+   * Called AFTER the Animate menuitem has attached the source frame, deliberately: that action
+   * is what puts the compose bar in Video mode, and the duration tabs only exist there. Setting
+   * it earlier would mean forcing the bar into Video mode with no source attached.
+   *
+   * (The same popover also carries video model, aspect and count, so the Settings-panel
+   * machinery could in principle collapse into it one day. Noted, not attempted here — the
+   * Settings path is the one with live proof behind it.)
+   */
+  private async ensureVideoDuration(seconds: number, model: string): Promise<void> {
+    await this.ensureComposeVisible()
+    const crop = this.page.getByRole('button', { name: /crop_/ }).first()
+    // ⚠️ The Animate menuitem leaves the bar in AGENT mode, which has NO config popover at all
+    // — no crop_ trigger, no tabs, nothing (screenshotted 2026-08-12; the first attempt at this
+    // simply timed out waiting for a control that cannot exist there). Toggle out, exactly as
+    // ensureImageMode does. Confirmed live that the attached source chip SURVIVES the toggle
+    // (smoke-agent-toggle.ts) and the trigger comes back already in Video mode reading
+    // "Video · 8scrop_16_9x1" — i.e. the two surfaces share one config, they are not rival
+    // states, so leaving Agent mode does not discard what ensureVideoSettings just set.
+    if (!(await crop.count())) {
+      const agent = this.page.getByRole('button', { name: 'Agent', exact: true })
+      if (await agent.count()) await this.forceClick(agent)
+    }
+    await crop.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    // Short-circuit on the collapsed label ("Video · 8scrop_9_16x1"), so a run of same-length
+    // clips never opens the popover.
+    if (videoDurationAlreadySelected(await crop.textContent(), seconds)) return
+
+    const durationTab = this.page
+      .locator('button[role="tab"]')
+      .filter({ hasText: new RegExp(`^${seconds}s$`) })
+      .first()
+    // The trigger TOGGLES: clicking it while the popover is already open closes the thing we
+    // came to use. Gate on the target tab being visible, as every other popover path does.
+    if (!(await durationTab.isVisible().catch(() => false))) await this.pointerClick(crop)
+    const videoTab = this.page
+      .locator('button[role="tab"]')
+      .filter({ hasText: /videocam\s*Video/i })
+      .first()
+    await videoTab.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    if ((await videoTab.getAttribute('aria-selected')) !== 'true') await this.tabClick(videoTab)
+    try {
+      await durationTab.waitFor({ state: 'visible', timeout: 10_000 })
+    } catch {
+      // Not a timeout worth 90 seconds: on the Veo tiers the 10s tab is ABSENT from the DOM
+      // rather than disabled (confirmed live 2026-08-12), so a missing tab means the tier
+      // cannot make this length. generateVideo pre-checks that, so reaching here means the
+      // tab list itself has changed.
+      await this.page.keyboard.press('Escape').catch(() => {})
+      throw new Error(`VIDEO_DURATION_UNAVAILABLE: no ${seconds}s tab on ${model}`)
+    }
+    await this.tabClick(durationTab)
+    await this.page.keyboard.press('Escape')
+    await this.assertVideoDuration(crop, seconds)
+  }
+
+  /**
+   * Poll the config trigger until it shows the requested clip length, and throw naming what it
+   * actually shows.
+   *
+   * Non-negotiable for the same reason `assertImageConfig` is: an ignored duration click does
+   * not produce an error, it produces a perfectly healthy 8s clip that has already been paid
+   * for. A silent no-op on a tab whose name drifted is precisely how `1x` billed for months.
+   */
+  private async assertVideoDuration(crop: Locator, seconds: number): Promise<void> {
+    const deadline = Date.now() + 5_000
+    let label = ''
+    while (Date.now() < deadline) {
+      label = ((await crop.textContent()) ?? '').trim()
+      if (videoDurationAlreadySelected(label, seconds)) return
+      await this.page.waitForTimeout(150)
+    }
+    throw new Error(`VIDEO_DURATION_NOT_APPLIED: wanted ${seconds}s, trigger shows "${label}"`)
+  }
+
+  /**
    * Make sure the compose bar is reachable, closing the Agent panel if it is covering it.
    *
    * The Agent panel REPLACES the prompt box rather than sitting beside it, in both of its
@@ -1501,8 +1589,27 @@ export class FlowClient {
     imagePath: string,
     motion: string,
     outPath: string,
-    opts?: { model?: string; aspect?: VideoAspect; count?: number },
+    opts?: { model?: string; aspect?: VideoAspect; count?: number; durationSeconds?: number },
   ): Promise<MediaResult> {
+    // Validate the clip length BEFORE anything is uploaded or spent. 10s exists only on Omni
+    // Flash — on the Veo tiers the tab is absent, so a click-if-present would quietly hand back
+    // an 8s clip and bill for it.
+    const videoModel = canonicalVideoModel(opts?.model ?? DEFAULT_VIDEO_MODEL)
+    // Default to 8s and ASSERT it, rather than leaving an omitted duration untouched. Duration
+    // is project state that persists: the moment one call sets 4s, every later call that omits
+    // it would silently inherit 4s. Before this parameter existed nothing ever moved the
+    // control, so "omitted" and "8s" were the same thing by accident — defaulting keeps that
+    // true on purpose, and keeps every clip made to date reproducible. Same reasoning as
+    // ensureVideoSettings asserting model/aspect/count every call.
+    const duration = opts?.durationSeconds ?? DEFAULT_VIDEO_DURATION
+    if (!(VIDEO_DURATIONS as readonly number[]).includes(duration)) {
+      throw new Error(`VIDEO_DURATION_INVALID: ${duration}s — Flow offers ${VIDEO_DURATIONS.join('/')}s`)
+    }
+    if (duration > maxDurationForModel(videoModel)) {
+      throw new Error(
+        `VIDEO_DURATION_UNAVAILABLE: ${duration}s is not offered on ${videoModel} (max ${maxDurationForModel(videoModel)}s) — only Omni Flash goes to 10s`,
+      )
+    }
     await this.ensureProject()
     // 0. Assert model/aspect/count BEFORE touching media — these are project-level defaults
     //    that silently reset, so this must run every call, not just the first in a session.
@@ -1527,6 +1634,8 @@ export class FlowClient {
     const beforeChips = await this.scrapeReferenceChips()
     await this.openAnimateMenu(tileIndex)
     await this.assertAnimateSource(targetName, beforeChips)
+    // 3b. Clip length, now that Animate has put the bar in Video mode (see ensureVideoDuration).
+    await this.ensureVideoDuration(duration, videoModel)
     // 4. Motion prompt + submit (capture the pre-submit media set to detect the new clip).
     // This path scrapes media names directly rather than via snapshotMediaNames(), so it must
     // mark the failure-card baseline itself — otherwise an old blocked card in the project

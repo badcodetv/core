@@ -172,8 +172,18 @@ Confirm with `file /tmp/animate-slide/src.<ext>`. For a `to` tween, stage both i
 
 ### Step 3: Discuss and approve the motion prompt [GATE]
 
-Draft the motion prompt (see "Writing motion prompts" above). Present it to the user.
-**Do not proceed to step 4 until the prompt is explicitly approved.**
+Draft the motion prompt (see "Writing motion prompts" above). Present it to the user **with the
+clip length**, and get both approved together. **Do not proceed to step 4 until the prompt is
+explicitly approved.**
+
+**Clip length is part of this gate, not a detail.** Flow offers **4 / 6 / 8 / 10 seconds** and
+nothing between. Every clip made before 2026-08-12 was 8s because nobody knew the control
+existed — do not inherit that by default. Propose a length with the prompt and say why: a
+single held beat rarely needs more than 4s, and a scroll-scrubbed panel plays at the reader's
+speed anyway, so longer mostly buys drift, not drama. It changes both the cut and the cost.
+
+⚠️ **10s is Gemini Omni Flash only.** Every Veo 3.1 tier caps at 8s and asking for 10s there
+fails outright (before spending credits) rather than quietly returning an 8s clip.
 
 ### Step 4: Drive Flow — image→video
 
@@ -182,6 +192,9 @@ Follow **`docs/superpowers/flow-video.md`** exactly:
 - Provide the staged source image (and `to` image if tweening).
 - Type the approved motion prompt.
 - Pin the aspect ratio to match the comic page (the recipe records how).
+- **Pass the approved clip length** (`durationSeconds`, one of 4/6/8/10). Omitting it asserts
+  8s — deliberately, since the setting persists on the Flow project and one 4s clip would
+  otherwise make every later clip 4s without anyone noticing.
 - Poll the DOM/network completion signal — **never a fixed sleep**.
 
 Do not invent UI steps. The recipe doc is the authority.

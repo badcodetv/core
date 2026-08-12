@@ -6,6 +6,10 @@ import {
   canonicalVideoModel,
   VIDEO_MODELS,
   aspectAlreadySelected,
+  maxDurationForModel,
+  parseVideoDuration,
+  videoDurationAlreadySelected,
+  VIDEO_DURATIONS,
 } from './compose'
 
 describe('isBoxCleared', () => {
@@ -145,5 +149,76 @@ describe('aspectAlreadySelected', () => {
 
   it('handles a missing label', () => {
     expect(aspectAlreadySelected(null, '16:9')).toBe(false)
+  })
+})
+
+describe('video clip duration', () => {
+  // Every label below was READ OFF THE LIVE TRIGGER on 2026-08-12 (smoke-duration.ts /
+  // smoke-duration-model.ts), not derived from the parser. That distinction matters: the
+  // aspect helper's tests once asserted `crop_1_1` because the code guessed `crop_1_1`, and
+  // two green suites hid a selector that matched nothing.
+  const LIVE = {
+    four: 'Video · 4scrop_9_16x1',
+    six: 'Video · 6scrop_9_16x1',
+    eight: 'Video · 8scrop_9_16x1',
+    ten: 'Video · 10scrop_9_16x1',
+    image: '🍌 Nano Banana Procrop_16_9x1',
+  }
+
+  it('offers exactly the four lengths Flow shows', () => {
+    expect([...VIDEO_DURATIONS]).toEqual([4, 6, 8, 10])
+  })
+
+  it('parses each live trigger label', () => {
+    expect(parseVideoDuration(LIVE.four)).toBe(4)
+    expect(parseVideoDuration(LIVE.six)).toBe(6)
+    expect(parseVideoDuration(LIVE.eight)).toBe(8)
+    expect(parseVideoDuration(LIVE.ten)).toBe(10)
+  })
+
+  it('reads 10s as ten, not as one or zero', () => {
+    // The digit-by-digit failure a substring matcher invites: "10s" contains "0s", and a
+    // matcher anchored on the leading digit would call it "1".
+    expect(videoDurationAlreadySelected(LIVE.ten, 10)).toBe(true)
+    expect(videoDurationAlreadySelected(LIVE.ten, 1)).toBe(false)
+    expect(videoDurationAlreadySelected(LIVE.ten, 0)).toBe(false)
+  })
+
+  it('is not fooled by the aspect ligature or count digits sharing the label', () => {
+    // "crop_9_16" and "x1" are the neighbours; nothing in them may read as a duration.
+    expect(videoDurationAlreadySelected(LIVE.four, 9)).toBe(false)
+    expect(videoDurationAlreadySelected(LIVE.four, 16)).toBe(false)
+    expect(videoDurationAlreadySelected(LIVE.four, 1)).toBe(false)
+    expect(videoDurationAlreadySelected(LIVE.four, 4)).toBe(true)
+  })
+
+  it('refuses to read a duration off an image-mode label', () => {
+    // An image-mode trigger carries no duration at all; returning a number here would let the
+    // guard pass without the popover ever being in Video mode.
+    expect(parseVideoDuration(LIVE.image)).toBe(null)
+    expect(videoDurationAlreadySelected(LIVE.image, 8)).toBe(false)
+    expect(parseVideoDuration(null)).toBe(null)
+  })
+
+  it('caps every Veo tier at 8s and only Omni Flash at 10s', () => {
+    // Confirmed by opening the popover on each tier: the 10s tab is absent on Veo.
+    expect(maxDurationForModel('Omni Flash')).toBe(10)
+    expect(maxDurationForModel('Veo 3.1 - Lite')).toBe(8)
+    expect(maxDurationForModel('Veo 3.1 - Fast')).toBe(8)
+    expect(maxDurationForModel('Veo 3.1 - Quality')).toBe(8)
+    expect(maxDurationForModel('Veo 3.1 - Lite [Lower Priority]')).toBe(8)
+  })
+
+  it('accepts the loose spellings callers actually write', () => {
+    // Same canonicalisation the model click uses — "Veo 3.1 Fast" never appears in the menu.
+    expect(maxDurationForModel('veo 3.1 fast')).toBe(8)
+    expect(maxDurationForModel('omni flash')).toBe(10)
+    expect(maxDurationForModel('OmniFlash')).toBe(10)
+  })
+
+  it('caps an unrecognised model at 8s', () => {
+    // Conservative on purpose: a model Flow adds tomorrow gets the safe limit, and asking for
+    // 10s on it fails loudly rather than silently returning an 8s clip.
+    expect(maxDurationForModel('Veo 4')).toBe(8)
   })
 })

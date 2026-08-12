@@ -16,7 +16,12 @@ Models, credits, aspect, duration, and the surfaces beyond the prompt box.
 | Veo 3.1 Quality | 4/6/8s | ✅ (8s only) | ✅ | coming soon | ✗ | ✗ |
 | Gemini Omni Flash | 4/6/8/**10s** | ✗ | ✅ | ✗ | coming soon | ✅ |
 
-⚠️ **This whole matrix is transcribed from Google's documentation and has never been tested
+✅ **Clip length column — VERIFIED live 2026-08-12** (`smoke-duration-model.ts`, by opening the
+compose popover on each tier). Omni Flash offers 4/6/8/10s; Veo 3.1 Fast and Quality offer
+4/6/8s and the **10s tab is absent from the DOM entirely**, not greyed out. Veo 3.1 Lite was
+not opened, so its cell stays a claim.
+
+⚠️ **The rest of this matrix is transcribed from Google's documentation and has never been tested
 by us** (flagged 2026-08-12). The **Frames→Video (first+last)** row is the one that matters
 most and is the least trustworthy: it says Veo 3.1 Lite only, "coming soon" on Fast and
 Quality. Treat every cell as a claim awaiting verification, not as a finding — and when you
@@ -62,8 +67,11 @@ clips including discards per 60 seconds of finished output.
 - **Video aspect ratio: 16:9 or 9:16 only.** Set it as a project default (prompt box →
   Settings) rather than per clip. ⚠️ These defaults **reset per project** — a fresh
   project comes up as Omni Flash.
-- **Duration: 4 / 6 / 8s presets, no slider.** 10s only on Omni Flash. Anything longer is
-  Extend chaining or Scene Builder assembly.
+- **Duration: 4 / 6 / 8s presets, no slider.** 10s only on Omni Flash (verified live
+  2026-08-12). Anything longer is Extend chaining or Scene Builder assembly. The control is in
+  the **compose-bar popover's Video mode**, not the Settings panel — which is why we missed it
+  for months. `flow_generate_video` takes `durationSeconds`; omitting it asserts 8s, because
+  the setting persists on the project and would otherwise carry over silently.
 - **Resolution is a separate upscale step after generation.** Generate at base for
   drafts; upscale only the final pick.
 - Image aspect ratios are much richer — see [`image-prompting.md`](./image-prompting.md) §9.

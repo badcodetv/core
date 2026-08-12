@@ -349,7 +349,7 @@ explicitly approved"; this is the credit-spend gate), `### Step 5: Judge the cli
 **`## Out of scope` (:331) stays as written.** Per ruling 2, batch animating a comic is not
 becoming viable-and-therefore-default. Do not touch that line.
 
-### C4 · Clip duration — the control nobody knew existed
+### C4 · Clip duration — the control nobody knew existed ✅ DONE 2026-08-12
 
 Wave B found duration tabs (`4s` / `6s` / `8s` / `10s`) in the compose-bar popover's Video
 mode. Nothing in the repo knew clip length was controllable, and there is no duration
@@ -361,6 +361,35 @@ has been taking Flow's 8s default by accident on every clip it has ever made.
   at 8s. Asking for 10s on Veo must fail loudly, not silently deliver 8s.
 - Expose it at `animate-slide`'s approval gate: clip length is a creative decision made
   with the motion prompt, and it is the one parameter that changes both cost and cut.
+
+**Shipped.** `flow_generate_video({ durationSeconds })`, the `maxDurationForModel` /
+`parseVideoDuration` helpers in `compose.ts` with tests, `ensureVideoDuration` +
+`assertVideoDuration` in the client, and the gate wording in `animate-slide`. Live proof: an
+explicit `4` returned a 4.011s / 96-frame mp4 of the correct source still; a call omitting the
+parameter, made in a project left sitting at 4s, returned exactly 8.000s.
+
+Three findings, two of which change later tickets:
+
+1. **⚠️ The Animate flow leaves the compose bar in AGENT mode, which has no config popover at
+   all.** `ensureVideoSettings` goes through the Agent panel immediately before, so by the time
+   Animate attaches the source chip there is no `crop_` trigger on the page — the first
+   implementation timed out for 90s waiting on a control that cannot exist in that mode.
+   Toggling the `Agent` pill fixes it, the source chip survives the toggle, and the trigger
+   returns already in Video mode. **This matters for C2:** the Frames/Ingredients source tabs
+   also live in that popover, so the merged tool works in direct-generation mode, and the
+   Agent-mode toggle is a step every source mode will need. `flow-video.md`'s claim that
+   "Animate switches the bar to Video mode … Agent toggle off" is only true when the bar was in
+   direct mode to begin with; it is now corrected in place.
+2. **10s is Omni Flash only, and the tab is ABSENT from the DOM on Veo — not disabled.** So a
+   `click-if-present` would be a silent no-op billing for an 8s clip; the model rule is in code
+   and throws before uploading anything. The duration column of `platform-controls.md`'s matrix
+   is now marked verified (that column only — the first+last row is still C1's to settle).
+3. **Duration persists on the project**, so an omitted `durationSeconds` asserts 8s rather than
+   leaving the control alone. Otherwise one 4s clip would quietly make every later clip 4s.
+
+**Deliberately not done:** the Video-mode popover also carries model, aspect and count, so
+`ensureVideoSettings`' whole Settings-panel path could collapse into it. Tempting, out of
+scope, and the Settings path is the one with live proof behind it. Revisit only if C2 needs it.
 
 ### Ordering
 

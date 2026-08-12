@@ -86,6 +86,48 @@ export function videoModelAlreadySelected(label: string | null, model: string): 
 }
 
 /**
+ * The clip lengths Flow offers, as the compose popover's Video-mode tabs spell them
+ * (confirmed live 2026-08-12, smoke-duration.ts: `4s` `6s` `8s` `10s`, all
+ * `button[role="tab"]`). `8s` is Flow's default and is what every clip we have ever made
+ * silently used, because nothing in the repo knew this control existed.
+ */
+export const VIDEO_DURATIONS = [4, 6, 8, 10] as const
+export type VideoDuration = (typeof VIDEO_DURATIONS)[number]
+
+/**
+ * The longest clip a given video model will make.
+ *
+ * Confirmed live 2026-08-12 (smoke-duration-model.ts) by opening the popover on each tier:
+ * on Veo 3.1 Fast and Quality the 10s tab is **ABSENT from the DOM**, not present-and-
+ * disabled; on Omni Flash it is present, clickable, and the trigger reads back "Video · 10s".
+ * That absence is exactly why this rule has to live in code rather than in a click-if-present:
+ * a missing tab makes `if (await tab.count())` a silent no-op, which is the same shape as the
+ * `1x`/`x1` bug that quietly billed for months. Ask for 10s on Veo and we throw instead.
+ */
+export function maxDurationForModel(model: string): number {
+  return /omni\s*flash/i.test(canonicalVideoModel(model)) ? 10 : 8
+}
+
+/**
+ * Read the clip length back out of the collapsed config-trigger label.
+ *
+ * In Video mode the trigger concatenates as "Video · 8scrop_9_16x1" — mode, duration, aspect
+ * ligature, count, and (unlike image mode) **no model name at all**, so the label can verify
+ * duration/aspect/count but never the tier. Parses the number rather than substring-matching
+ * "8s", because the neighbouring segments are digits too ("crop_9_16", "x1") and a loose match
+ * there is how the aspect short-circuit went wrong.
+ */
+export function parseVideoDuration(label: string | null): number | null {
+  const m = /Video[^0-9]*(\d+)s/i.exec(label ?? '')
+  return m ? Number(m[1]) : null
+}
+
+/** True when the trigger label already shows exactly `seconds` — a numeric compare, see above. */
+export function videoDurationAlreadySelected(label: string | null, seconds: number): boolean {
+  return parseVideoDuration(label) === seconds
+}
+
+/**
  * Map an aspect ratio like "16:9" to the Material-icon ligature Flow's compose-bar CONFIG
  * TRIGGER renders for it.
  *
