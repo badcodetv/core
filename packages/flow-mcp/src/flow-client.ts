@@ -990,9 +990,27 @@ export class FlowClient {
    */
   private async openAssetPicker(): Promise<Locator> {
     const trigger = this.page.getByRole('button', { name: /add_2\s*Create/i }).first()
-    await trigger.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     const dialog = this.page.getByRole('dialog').last()
     const uploadBtn = dialog.getByRole('button', { name: /upload\s*Upload media/i })
+    // ⚠️ `add_2 Create` DOES NOT EXIST while the compose bar is in Video mode — and every video
+    // call leaves it there, persistently, surviving navigation. So after any clip, this used to
+    // wait out its full 90s and time out: `flow_list_media` (the documented way to recover a
+    // clip's mediaId for a refine), `flow_create_character_from_media`, and every character or
+    // reference attach. The image tools escaped it only by accident, because `ensureImageMode`
+    // runs first and flips the bar back. Found 2026-08-12 by review, reproduced live.
+    //
+    // The `@` route works in EVERY mode because the prompt box exists in every mode, so it is
+    // the fallback rather than a mode-flip: flipping the bar would drag model/aspect/count state
+    // along with it, which is exactly what a read-only listing must not do.
+    if (!(await trigger.count())) {
+      const box = this.promptBox()
+      await box.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+      await box.evaluate((el) => (el as HTMLElement).focus())
+      await this.page.keyboard.type('@')
+      await uploadBtn.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+      return dialog
+    }
+    await trigger.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     // Native click opens this trigger (proven live on a fresh CDP connection); the synthetic
     // pointer sequence only works once the dialog has mounted before. Try native, then fall back.
     await this.forceClick(trigger)
@@ -1013,6 +1031,11 @@ export class FlowClient {
     } catch {
       await this.page.keyboard.press('Escape')
     }
+    // Sweep up the `@` if the fallback route typed one and Flow did not consume it. Only when
+    // the box holds nothing else: a stray character is harmless to a caller that fill()s the box
+    // next, and fatal to one that appends (submitWithCharacter does exactly that).
+    const text = (await this.promptBox().textContent().catch(() => null)) ?? ''
+    if (text.replace(/[​﻿]/g, '').trim() === '@') await this.promptBox().fill('')
   }
 
   /**
@@ -1026,6 +1049,17 @@ export class FlowClient {
    */
   async listMedia(opts?: { query?: string; limit?: number }): Promise<MediaListItem[]> {
     await this.ensureProjectRoot()
+    // The picker is filtered to whatever the compose bar's current mode can USE: in a video
+    // source mode it offers stills only, so a listing taken there reports zero clips in a
+    // project full of them — measured live 2026-08-12, 9 rows and no videos where image mode
+    // shows 13 rows and four clips. That is the worst possible failure for the one tool that can
+    // recover a clip's mediaId for `flow_refine_video`, and it lands exactly when you have just
+    // made a clip. So a listing asserts image mode first.
+    //
+    // The cost is that a "read" moves the bar: it asserts the default image model and count,
+    // the same values every image generation asserts anyway, and the next video call puts video
+    // mode straight back via ensureVideoSettings. Being complete beats being side-effect-free.
+    await this.ensureImageMode()
     const dialog = await this.openAssetPicker()
     try {
       // openAssetPicker only waits for the picker's CHROME (its Upload button), which mounts

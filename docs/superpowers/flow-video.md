@@ -460,6 +460,25 @@ down to almost nothing by the end."` — new media id, 6.000s, 1280x720, in 104s
 first frame is the **original source still**, unmistakably, and the last frame has pulled back
 with the light gone. Neither the still nor its path was supplied to the call.
 
+## ⚠️ Video mode poisons the asset picker (found 2026-08-12)
+
+Every video call leaves the compose bar in **Video mode**, and that state is persistent — it
+survives navigation. Two things break there, and both were live-reproduced:
+
+1. **The `add_2 Create` trigger does not exist in video mode.** `openAssetPicker` waited for it,
+   so after any clip, `flow_list_media`, `flow_create_character_from_media` and every
+   character/reference attach hung for 90s and timed out. The image tools escaped it only by
+   accident: `ensureImageMode` runs first and flips the bar back. **Fixed** — the picker falls
+   back to typing `@` in the prompt box, which works in every mode.
+2. **The picker only lists what the current mode can USE.** In a video source mode it offers
+   stills only: 9 rows and **zero videos** in a project where image mode shows 13 rows and four
+   clips. So the one tool that recovers a clip's `mediaId` for `flow_refine_video` went blind
+   exactly when you had just made a clip. **Fixed** — `listMedia` asserts image mode first, at
+   the cost of re-asserting the default image model/count (which the next video call undoes).
+
+The general lesson, which will recur: **the compose bar's mode is global project state, and a
+tool that reads the gallery is not therefore read-only.**
+
 ## Still to watch (over a longer batch)
 
 1. **Queue latency** under "high demand" for Veo Quality — minutes. Fast/Lite models queue
