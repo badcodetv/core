@@ -38,6 +38,28 @@ Read on demand. Never reproduce it into a reply, and don't lecture the user abou
 
 All paths relative to [`docs/flow/`](../../../docs/flow/README.md).
 
+## Rule zero — never name a real person, anywhere
+
+**No real person's name goes into any Flow field. Ever.** Not the prompt, not a Character
+Name, not Character Info, not a filename you upload. Describe the person instead: build, age,
+era dress, bearing, posture. "A lean man in his fifties, three-piece tweed, moustache,
+1940s" — never the name.
+
+Three reasons this is absolute rather than a preference:
+
+- **Flow scans every field, not just the prompt box.** A Character called "Keynes" had every
+  generation refused while the prompt text named nobody (2026-08-12). A poisoned Character
+  Name breaks *every* shot that casts it, not one prompt.
+- **Getting away with it is worse than being blocked.** Tested 2026-08-12: Churchill
+  generated fine, Taylor Swift was refused. So a name that works today teaches the wrong
+  lesson, spends real credits, and can start failing at any time — usually mid-batch.
+- **A named likeness is not what we want anyway.** BadCode figures are archetypes. Naming a
+  real person makes the model chase a specific face instead of the character we designed,
+  and the Character feature already binds the face far more reliably.
+
+If a story's canon is *about* a real person, that person's identity lives in the story
+document. The prompt gets the description only.
+
 ## The five rules that carry most of the value
 
 If you read nothing else:
@@ -63,8 +85,9 @@ If you read nothing else:
 2. **Draft in the platform's shape** — the formula from `image-prompting.md` §2 or
    `video-prompting.md` §1, with the four levers (lighting / camera+lens / stock+grade /
    materiality) as separate clauses.
-3. **Run the policy pass** — `failure-modes.md` §A5. Check *every field*, not just the
-   prompt: a Character's **name** is scanned too. This is cheap and saves ~90s per block.
+3. **Run the policy pass** — `failure-modes.md` §A5, and rule zero above. Check *every
+   field*, not just the prompt: a Character's **name** is scanned too. Cheap, and saves ~90s
+   per block.
 4. **Critique before sending.** Is there exactly one action? One camera move? Is the
    light source a real thing in the scene? Is any load-bearing text better done as a
    comic overlay?
