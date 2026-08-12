@@ -21,6 +21,7 @@ import {
   getMint,
   getTokenMetadata,
   closeAccount,
+  transfer,
 } from '@solana/spl-token'
 
 import {
@@ -36,6 +37,7 @@ import {
   certAccounts,
   assetMetas,
   syncAccounts,
+  ASSET_COUNT,
   TERM_SECONDS,
   ATA_PROGRAM,
   type Harness,
@@ -67,9 +69,24 @@ describe('the tenancy auction', () => {
   const h = harness()
   const alice = Keypair.generate()
   const bob = Keypair.generate()
+  // Carol exists only to close her own ENC account mid-test, which needs a
+  // zero balance — doing that to Alice would strand every later case.
+  const carol = Keypair.generate()
 
   const asset = (i: number) => h.program.account.asset.fetch(h.assetPda(i))
-  const now = () => Math.floor(Date.now() / 1000)
+
+  /**
+   * The **validator's** clock, not this machine's.
+   *
+   * `Clock::get()` is the only clock the program has, and a local validator's
+   * unix time drifts behind wall time as slots slip. Deciding "the term has
+   * ended" from `Date.now()` gets `TermNotEnded` back from a chain that has not
+   * caught up yet — which looks exactly like a program bug and is not one.
+   */
+  const now = async (): Promise<number> => {
+    const slot = await h.history.getSlot()
+    return (await h.history.getBlockTime(slot)) ?? Math.floor(Date.now() / 1000)
+  }
   const escrowBalance = async () =>
     (await h.exists(h.escrowEncAta))
       ? BigInt((await getAccount(h.connection, h.escrowEncAta)).amount.toString())
@@ -89,9 +106,10 @@ describe('the tenancy auction', () => {
   async function freshTerm(i: number) {
     for (let attempt = 0; attempt < 4; attempt++) {
       const a = await asset(i)
-      if (now() < Number(a.termEndsAt) - 3) return a
+      const t = await now()
+      if (t < Number(a.termEndsAt) - 3) return a
 
-      const reserve = priceAt(a, now() + 1)
+      const reserve = priceAt(a, t + 1)
       const qualifies = big(a.highBid) > 0n && big(a.highBid) >= reserve
       if (qualifies) {
         await h.program.methods
@@ -105,37 +123,66 @@ describe('the tenancy auction', () => {
     throw new Error(`asset ${i} would not settle into a fresh term`)
   }
 
-  /** Wait out the current term so it becomes settleable. */
-  async function waitOutTerm(i: number) {
+  /**
+   * The smallest bid that clears both floors right now: the reserve, and the
+   * standing high bid. Re-read rather than passed in, because an earlier case
+   * in this suite may have left a bid standing on the same asset.
+   */
+  async function nextBid(i: number, extra = 0n) {
     const a = await asset(i)
-    const remaining = Number(a.termEndsAt) - now()
-    if (remaining > 0) await sleep((remaining + 2) * 1000)
+    const reserve = priceAt(a, (await now()) + 2)
+    const floor = big(a.highBid) + 1n
+    // The margin is a *fraction of the price*, not a flat number of base
+    // units. The reserve climbs for the whole term after any sync, so a bid
+    // that only just clears it now can be underwater by settlement — which is
+    // the real mechanism (and its own test), not something to trip over here.
+    // A hundredth of a percent covers a full term of creep many times over.
+    return (reserve > floor ? reserve : floor) + reserve / 10_000n + extra
+  }
+
+  /** Wait out the current term, by the chain's reckoning, not this machine's. */
+  async function waitOutTerm(i: number) {
+    const endsAt = Number((await asset(i)).termEndsAt)
+    for (let i = 0; i < 60; i++) {
+      const t = await now()
+      if (t >= endsAt) return
+      await sleep(Math.min((endsAt - t) * 1000 + 500, 5_000))
+    }
+    throw new Error('the validator clock never reached the end of the term')
   }
 
   before(async function () {
     this.timeout(180_000)
     await bootstrap(h)
 
-    for (const who of [alice, bob]) {
+    for (const who of [alice, bob, carol]) {
       const sig = await h.connection.requestAirdrop(who.publicKey, 5 * LAMPORTS_PER_SOL)
       await h.history.confirmTransaction(sig, 'confirmed')
     }
-    // Enough to clear the cheapest asset's reserve several times over. The
-    // vault is the only source of ENC until T13's faucet exists.
-    const stake = big((await asset(0)).priceTo) * 4n
-    await mockFund(h, alice.publicKey, stake)
-    await mockFund(h, bob.publicKey, stake)
+    // The dearest asset costs ten times the cheapest and several cases bid on
+    // one twice, so stake against the top of the range rather than the bottom.
+    // The vault is the only source of ENC until T13's faucet exists.
+    const stake = big((await asset(ASSET_COUNT - 1)).priceTo) * 6n
+    for (const who of [alice, bob, carol]) await mockFund(h, who.publicKey, stake)
   })
 
   // ── Bidding ───────────────────────────────────────────────────────────────
 
   it('refuses a bid below what M2 says the asset is worth', async () => {
-    const a = await freshTerm(0)
-    const under = priceAt(a, now() + 2) - 1n
+    // Asset 7 is never successfully bid on anywhere in this suite, so it can
+    // never carry a standing high bid that would fail this for another reason.
+    const a = await freshTerm(7)
+    // One percent under, not one base unit under. After any sync the price is
+    // interpolating, so the reserve the program checks a second from now is not
+    // the one read here — and `price - 1` lands *above* a rising reserve read
+    // slightly ahead. A percent is far more than a curve moves in seconds
+    // (30 days to travel), so this is below the reserve whichever way it runs.
+    const at = priceAt(a, (await now()) + 60)
+    const under = at - at / 100n
     const why = await h.failureOf(() =>
       h.program.methods
-        .placeBid(0, new BN(under.toString()))
-        .accounts(placeBidAccounts(h, 0, alice.publicKey))
+        .placeBid(7, new BN(under.toString()))
+        .accounts(placeBidAccounts(h, 7, alice.publicKey))
         .signers([alice])
         .rpc(),
     )
@@ -143,8 +190,8 @@ describe('the tenancy auction', () => {
   })
 
   it('escrows a qualifying bid, and refuses one that only ties it', async () => {
-    const a = await freshTerm(0)
-    const bid = priceAt(a, now() + 2) + 1_000n
+    await freshTerm(0)
+    const bid = await nextBid(0)
 
     const before = await escrowBalance()
     const aliceBefore = await encBalance(alice.publicKey)
@@ -172,8 +219,8 @@ describe('the tenancy auction', () => {
   })
 
   it('charges only the difference when a bidder raises their own bid', async () => {
-    const a = await freshTerm(0)
-    const first = priceAt(a, now() + 2) + 5_000n
+    await freshTerm(0)
+    const first = await nextBid(0, 5_000n)
     await h.program.methods
       .placeBid(0, new BN(first.toString()))
       .accounts(placeBidAccounts(h, 0, alice.publicKey))
@@ -197,8 +244,8 @@ describe('the tenancy auction', () => {
   })
 
   it('refuses to let a stranger bid out of somebody else\'s account', async () => {
-    const a = await freshTerm(1)
-    const bid = priceAt(a, now() + 2) + 1_000n
+    await freshTerm(1)
+    const bid = await nextBid(1)
     // Bob signs, but names Alice's token account as the source.
     const why = await h.failureOf(() =>
       h.program.methods
@@ -216,8 +263,8 @@ describe('the tenancy auction', () => {
   // ── Settlement ────────────────────────────────────────────────────────────
 
   it('refuses to settle before the term ends', async () => {
-    const a = await freshTerm(0)
-    const bid = priceAt(a, now() + 2) + 1_000n
+    await freshTerm(0)
+    const bid = await nextBid(0)
     await h.program.methods
       .placeBid(0, new BN(bid.toString()))
       .accounts(placeBidAccounts(h, 0, alice.publicKey))
@@ -236,8 +283,8 @@ describe('the tenancy auction', () => {
 
   it('pays the outgoing holder the entire winning bid, and never changes supply', async function () {
     this.timeout(120_000)
-    const a = await freshTerm(0)
-    const bid = priceAt(a, now() + 2) + 2_000n
+    await freshTerm(0)
+    const bid = await nextBid(0, 2_000n)
     await h.program.methods
       .placeBid(0, new BN(bid.toString()))
       .accounts(placeBidAccounts(h, 0, alice.publicKey))
@@ -270,8 +317,8 @@ describe('the tenancy auction', () => {
   })
 
   it('lets a superseded bidder recover their escrow in full', async () => {
-    const a = await freshTerm(2)
-    const first = priceAt(a, now() + 2) + 1_000n
+    await freshTerm(2)
+    const first = await nextBid(2)
     await h.program.methods
       .placeBid(2, new BN(first.toString()))
       .accounts(placeBidAccounts(h, 2, alice.publicKey))
@@ -311,7 +358,7 @@ describe('the tenancy auction', () => {
     const i = 3
     const a = await freshTerm(i)
     // Exactly the reserve: any upward price move leaves this bid underwater.
-    const bid = priceAt(a, now() + 2)
+    const bid = priceAt(a, (await now()) + 2)
     await h.program.methods
       .placeBid(i, new BN(bid.toString()))
       .accounts(placeBidAccounts(h, i, bob.publicKey))
@@ -352,59 +399,78 @@ describe('the tenancy auction', () => {
   it('settles even when the outgoing holder has closed their ENC account', async function () {
     this.timeout(120_000)
     const i = 4
-    // Alice takes the tenancy first, so there is a real wallet to evict.
-    let a = await freshTerm(i)
-    let bid = priceAt(a, now() + 2) + 1_000n
+    // Carol takes the tenancy first, so there is a real wallet to evict — and
+    // she is the only wallet this suite can safely empty.
+    await freshTerm(i)
     await h.program.methods
-      .placeBid(i, new BN(bid.toString()))
-      .accounts(placeBidAccounts(h, i, alice.publicKey))
-      .signers([alice])
+      .placeBid(i, new BN((await nextBid(i)).toString()))
+      .accounts(placeBidAccounts(h, i, carol.publicKey))
+      .signers([carol])
       .rpc()
     await waitOutTerm(i)
     await h.program.methods
       .settleAuction(i)
-      .accounts(settleAccounts(h, i, alice.publicKey, (await asset(i)).holder))
+      .accounts(settleAccounts(h, i, carol.publicKey, (await asset(i)).holder))
       .rpc()
+    expect((await asset(i)).holder.toBase58()).to.equal(carol.publicKey.toBase58())
 
-    // Now Bob bids, and Alice closes her ENC account to try to freeze it.
-    a = await freshTerm(i)
-    bid = priceAt(a, now() + 2) + 1_000n
+    // Bob bids, and Carol tries the classic push-payment veto: close the
+    // account the payment has to land in, and settlement can never run.
+    await freshTerm(i)
+    const bid = await nextBid(i)
     await h.program.methods
       .placeBid(i, new BN(bid.toString()))
       .accounts(placeBidAccounts(h, i, bob.publicKey))
       .signers([bob])
       .rpc()
+
+    // An account can only be closed empty, so she moves her ENC out first —
+    // which is exactly what someone doing this deliberately would do.
+    const left = await encBalance(carol.publicKey)
+    if (left > 0n) {
+      await transfer(
+        h.connection,
+        carol,
+        h.encAta(carol.publicKey),
+        h.encAta(bob.publicKey),
+        carol,
+        left,
+        [],
+        undefined,
+        TOKEN_PROGRAM_ID,
+      )
+    }
     await closeAccount(
       h.connection,
-      alice,
-      h.encAta(alice.publicKey),
-      alice.publicKey,
-      alice,
+      carol,
+      h.encAta(carol.publicKey),
+      carol.publicKey,
+      carol,
       [],
       undefined,
       TOKEN_PROGRAM_ID,
     )
-    expect(await h.exists(h.encAta(alice.publicKey)), 'the veto account survived').to.equal(false)
+    expect(await h.exists(h.encAta(carol.publicKey)), 'the veto account survived').to.equal(false)
 
     await waitOutTerm(i)
     await h.program.methods
       .settleAuction(i)
-      .accounts(settleAccounts(h, i, bob.publicKey, alice.publicKey))
+      .accounts(settleAccounts(h, i, bob.publicKey, carol.publicKey))
       .rpc()
 
     expect((await asset(i)).holder.toBase58(), 'an incumbent vetoed their own eviction').to.equal(
       bob.publicKey.toBase58(),
     )
-    expect(await encBalance(alice.publicKey), 'the recreated account was not paid').to.equal(bid)
+    expect(await encBalance(carol.publicKey), 'the recreated account was not paid').to.equal(bid)
   })
 
   it('lets the incumbent defend with a self-bid, paying themselves', async function () {
     this.timeout(120_000)
     const i = 4 // Bob holds it from the previous case.
-    const a = await freshTerm(i)
+    await freshTerm(i)
     expect((await asset(i)).holder.toBase58()).to.equal(bob.publicKey.toBase58())
 
-    const bid = priceAt(a, now() + 2) + 1_000n
+    const bid = await nextBid(i)
     const before = await encBalance(bob.publicKey)
     await h.program.methods
       .placeBid(i, new BN(bid.toString()))
@@ -429,8 +495,8 @@ describe('the tenancy auction', () => {
   it('issues an immutable certificate to the holder, and never takes it back', async function () {
     this.timeout(120_000)
     const i = 5
-    const a = await freshTerm(i)
-    const bid = priceAt(a, now() + 2) + 1_000n
+    await freshTerm(i)
+    const bid = await nextBid(i)
     await h.program.methods
       .placeBid(i, new BN(bid.toString()))
       .accounts(placeBidAccounts(h, i, alice.publicKey))
@@ -476,8 +542,8 @@ describe('the tenancy auction', () => {
     expect(twice, 'a term issued two certificates').to.not.equal('')
 
     // Settle a further term away from her and the clipping is untouched.
-    const next = await freshTerm(i)
-    const bid2 = priceAt(next, now() + 2) + 1_000n
+    await freshTerm(i)
+    const bid2 = await nextBid(i)
     await h.program.methods
       .placeBid(i, new BN(bid2.toString()))
       .accounts(placeBidAccounts(h, i, bob.publicKey))

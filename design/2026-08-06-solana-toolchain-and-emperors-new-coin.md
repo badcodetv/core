@@ -7,11 +7,12 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: in progress — **16 of 30 done. T11 SUPERSEDED by the 2026-08-12
-architecture ruling and its code deleted by T30; next is T12, the tenancy
-auction — hardened by the same-day adversarial review, which also added T29.
-T12 owes one decision it inherits rather than makes: the ten NFTs still carry
-the Token-2022 permanent delegate (see the Discovered Issues Log).**
+Status: in progress — **17 of 31 done. T11 SUPERSEDED by the 2026-08-12
+architecture ruling and its code deleted by T30; T12's tenancy auction is
+built and green. Next is T13, the faucet — which Ruling C made the only route
+into the economy, so its parameters are a pass/fail test at T14. The permanent
+delegate is gone (T12 settled it). Still open before T22: T29's proportional
+caps, and T31's Gazette.**
 Date: 2026-08-06 · **architecture revised 2026-08-12 · adversarial review folded in 2026-08-12**
 
 > **Read [`2026-08-12-enc-architecture-decision.md`](./2026-08-12-enc-architecture-decision.md)
@@ -62,8 +63,8 @@ this table is the map.
 | ✅ | T10 · `sync_m2` — supply targeting, the core | program |
 | ⛔ | T11 · rent, `settle_rent`, `foreclose` — **SUPERSEDED 2026-08-12**, built, still in the tree until T30 removes it | program |
 | ✅ | T30 · remove the rent machinery (the deletion Ruling A implies) | program |
-| ⬜ | **T12 · the tenancy auction — `place_bid` + `settle_auction`** ← **you are here** | program |
-| ⬜ | T13 · the faucet — register-now, collect-next-epoch (**now the only way in**) | program |
+| ✅ | T12 · the tenancy auction — `place_bid` · `withdraw_bid` · `settle_auction` · `roll_term` · `mint_certificate` | program |
+| ⬜ | **T13 · the faucet — register-now, collect-next-epoch (now the only way in)** ← **you are here** | program |
 | ⬜ | T28 · `retire` — the coin notices its own end | program |
 | ⬜ | T29 · proportional sync caps + the catch-up walk (2026-08-12 review; **must land before T22**) | program |
 | ⬜ | T31 · the Imperial Gazette — tenant copy + the editor's pen (**must land before T22**) | program |
@@ -1088,6 +1089,10 @@ upgrade authority is burned at T22.
     participating in the economy."*
   - *Net effect:* **no path in the entire program touches anyone's wallet without
     their signature.** Not the coin, not the flags, not the certificates.
+  - **Correction from the build:** the certificate is *claimable* from the
+    moment they win, not already in the wallet — issuing it is a separate
+    permissionless `mint_certificate`, and the winner's frontend bundles the
+    two instructions. See the Notes for why settlement does not carry it.
   - **Immutable at mint** (2026-08-12 review): no update authority, no freeze
     authority; name, term number and dates written once at issue. Its "stub"
     state is *derived* — the certificate's term number no longer matches the
@@ -1132,8 +1137,48 @@ upgrade authority is burned at T22.
 - **TDD:** yes
 - **Validation:** `./stack test test-auction`.
 - **Depends on:** T10 (no longer T11)
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 12 auction cases green on a fresh ledger; `test-init` and `test-sync`
+  still green beside them. Every acceptance criterion is covered, including the
+  three the adversarial review added — the stale-bid release, the closed-account
+  veto, and the signature-form invariant.
+  **Five shape decisions the ticket left open.**
+  (1) **`roll_term` is a second instruction**, not a branch inside
+  `settle_auction`. The two outcomes need genuinely different accounts — a
+  no-winner term has no bid, no winner and no payment — and Anchor optional
+  accounts would have been the only way to keep one name. Their guards are
+  exact complements, so every ended term is handled by precisely one of the
+  two and neither can deny the other's outcome. An explorer also now says which
+  of the two happened without decoding anything, which is a legibility win.
+  (2) **Escrow pools in its own PDA, deliberately not the vault.** `sync_m2`
+  burns from the vault's token account, so pooling bids there would let an
+  ordinary monetary contraction destroy bidders' money — stranding reached
+  through a path nobody would think to test.
+  (3) **The certificate is `mint_certificate`, a separate permissionless
+  instruction**, not part of settlement. Atomic issue would drag a mint,
+  metadata and an ATA into the no-winner path too, and make a stranger settling
+  out of civic duty pay for someone else's souvenir. Consequence for the copy:
+  the certificate is *claimable* from the moment they win, not already in the
+  wallet — the ticket body's "in Phantom from the moment they win" is corrected
+  above. The winner (or their frontend) bundles both instructions in one
+  transaction, so in practice it is instant.
+  (4) **`Asset.last_touched` became `term_ends_at`** (T30 flagged this here).
+  Nothing else read "when was this last written" — the price curve carries its
+  own window. Added alongside: `term_number`, `high_bid`, `high_bidder`, a
+  `Bid` PDA per (asset, bidder), and `Config.term_seconds`.
+  (5) **The permanent delegate is gone from `init_asset`**, which the
+  Discovered Issues Log flagged as T12's call. Under program custody it was
+  dead weight costing the heaviest scanner flag, and its absence is what makes
+  the signature invariant structural. `initialize.ts` now asserts the *absence*
+  where it used to assert the presence.
+  **Two things worth not rediscovering.** A bid is locked only while it is both
+  the standing high bid *and* from the live term, which is what makes a stale
+  high bid recoverable without a special case. And raising a bid is a top-up
+  (only the difference moves), so a superseded bidder does not have to withdraw
+  and re-bid.
+  **Test-only affordance, logged below:** `mock_fund` — the vault holds every
+  token and the faucet is T13, so without it the auction could not be tested
+  against a bidder who owns anything.
 
 ### T13: The faucet — register-now, collect-next-epoch   [Status: pending | Model: opus]
 - **Scope:** `claim()` in epoch `N`: (1) create `FaucetEpoch(N)` if absent, payer
@@ -1854,6 +1899,61 @@ _(appended by executors during implementation)_
   T12 should either drop the extension (recommended: it is unused under
   program custody, and it buys back the claim) or keep it deliberately and fix
   §3/§5 in the same commit. Do not let it arrive at T22 undecided.
+  **RESOLVED at T12 (2026-08-12): dropped.** `init_asset` no longer sets the
+  extension, and `initialize.ts` asserts its *absence* where it used to assert
+  its presence. The decision doc's §3 and §5 are true again.
+
+- **2026-08-12 · T12 · the auction needed a way to own money, so `mock_fund`
+  exists.** The vault holds every token at genesis and its authority is a PDA,
+  so the only route from the vault to a wallet is an instruction — and that
+  instruction is the faucet, which is **T13, and T13 depends on T12**. Without
+  a stand-in, not one acceptance case involving a real bidder could be written.
+  Added `mock_fund` behind `--features mock`, exactly as `set_mock_m2` already
+  is: a default build contains no instruction that can move vault ENC to a
+  chosen wallet, and `initialize.ts` asserts that against the **committed**
+  IDL. It *moves* tokens rather than minting them, so `supply = k × M2` holds
+  across every test — which is what the faucet will do too. Retire it if T13
+  ever makes it redundant; there is no other reason to keep it.
+
+- **2026-08-12 · T12 · `h.program.idl` is the build output, not the artifact
+  that ships.** A test asserting "no mock instruction in the interface" against
+  `h.program.idl` fails under `./stack test`, because Anchor loads the IDL from
+  `target/` — which that command deliberately fills with a **mock** build. The
+  shipped interface is the committed `chain/idl/*.json`, and only a default
+  build publishes there. Any test about what *ships* must read the file. (The
+  T30 rent test happens to pass either way, since rent is absent from both
+  builds — so this only bites tests about the mock/default split itself.)
+
+- **2026-08-12 · T12 · suites share one ledger, and `tests/**/*.ts` runs them
+  alphabetically — so `auction` runs before `initialize`.** "All ten assets are
+  held by the Emperor" is a statement about genesis that the auction exists to
+  falsify, so it now skips on a played ledger rather than asserting something
+  the design deliberately breaks. Worth knowing before writing T13's suite: any
+  assertion about pristine state needs the same treatment, and `./stack reset`
+  is what makes those cases run.
+
+- **2026-08-12 · T12 · a parallel session committed this ticket's code inside
+  its own commit.** Another session was working the Flow track in the *same
+  working tree* on the same branch, and its `1021159` ("plan: revise Wave C")
+  swept up every mid-flight T12 file — all five new instructions, `state.rs`,
+  `errors.rs`, `lib.rs`, the IDL, `params.genesis.json` and the suites. The
+  content is correct and the tests pass against it; only the history is
+  mislabelled, and two later commits sit on top, so **it was not rewritten** —
+  rewriting shared history under a live session is a worse bug than a wrong
+  commit message. T12's own commit therefore carries the tests and the plan
+  only, and says so.
+  **The lesson is about `git add -A`, not about that session.** One checkout,
+  two agents, and a stage-everything commit takes whatever the other one has
+  half-written. If two sessions must share a tree, stage explicit paths; if they
+  can, use separate worktrees.
+
+- **2026-08-12 · T12 · test time must come from the validator, never
+  `Date.now()`.** A local validator's `Clock::get()` drifts behind wall time as
+  slots slip, so a suite that decides "the term has ended" from the host clock
+  gets `TermNotEnded` back from a chain that has not caught up — which reads
+  exactly like a program bug and is not one. Cost an hour. `auction.ts` reads
+  `getBlockTime(getSlot())` and loops until the chain agrees. The same trap is
+  waiting in T13 (epochs) and T28 (the retirement clock).
 
 - **2026-08-12 · T30 · a default build can publish a stale IDL, so run T9's
   grep every time.** After deleting the two instructions, `./stack build`
