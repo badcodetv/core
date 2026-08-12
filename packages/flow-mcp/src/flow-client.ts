@@ -1404,9 +1404,13 @@ export class FlowClient {
       await item.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
       await this.forceClick(item)
     })
-    // 3. Identify the just-uploaded tile and attach it as the animation source.
+    // 3. Identify the just-uploaded tile and attach it as the animation source, then CHECK
+    // that Flow attached the one we meant — see assertAnimateSource for why this is not
+    // paranoia.
     const tileIndex = await this.waitForNewAnimateTile(beforeTiles, TURN_TIMEOUT_MS)
+    const targetName = toAnimateTiles(await this.scrapeAnimateTiles())[tileIndex]?.name ?? null
     await this.openAnimateMenu(tileIndex)
+    await this.assertAnimateSource(targetName)
     // 4. Motion prompt + submit (capture the pre-submit media set to detect the new clip).
     // This path scrapes media names directly rather than via snapshotMediaNames(), so it must
     // mark the failure-card baseline itself — otherwise an old blocked card in the project
@@ -1468,11 +1472,18 @@ export class FlowClient {
     const tile = this.page.locator('img[alt="Generated image"]').nth(tileIndex)
     await tile.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     await this.hoverElement(tile)
-    // Only the hovered tile's more_vert is revealed (we hover exactly one tile — never a
-    // scan loop), so :near() unambiguously resolves to that tile's own control.
-    const more = this.page
-      .locator('button:has-text("more_vert"):near(img[alt="Generated image"])')
-      .first()
+    // Scope the control to the tile's OWN card: the nearest ancestor div that contains a
+    // more_vert (mapped live — it is the tile img's grandparent, holding exactly one image and
+    // exactly one control).
+    //
+    // This previously used `:near(img[alt="Generated image"])` with `.first()`, on the
+    // assumption that only the hovered tile reveals a control. It does not: `:near()` matches
+    // a control near ANY tile, so `.first()` took whichever came first in the DOM. The result
+    // was a clip that animated a completely different still than the caller supplied, with a
+    // perfectly successful-looking return value — caught 2026-08-12 only by eyeballing a
+    // frame of the output.
+    const card = tile.locator('xpath=ancestor::div[.//button[contains(., "more_vert")]][1]')
+    const more = card.locator('button:has-text("more_vert")').first()
     if (!(await more.count())) throw new Error('ANIMATE_NOT_FOUND')
     await this.pointerClick(more)
     const animate = this.page.getByRole('menuitem', { name: /motion_blur\s*Animate/i })
@@ -1483,6 +1494,30 @@ export class FlowClient {
       throw new Error('ANIMATE_NOT_FOUND')
     }
     await this.forceClick(animate)
+  }
+
+  /**
+   * Verify the source frame Flow actually attached is the tile we targeted.
+   *
+   * Animating the wrong still is the one failure in this whole flow that produces a perfectly
+   * healthy-looking result: a real clip, a real media id, a real file on disk, of the wrong
+   * picture. Nothing downstream can detect it, and a batch would happily produce a comic's
+   * worth of wrong footage. So this asserts identity instead of trusting the click, comparing
+   * the attached reference chip's media id against the tile's.
+   *
+   * Fails OPEN when the chip's id cannot be read (no chip yet, an unparseable src): the check
+   * is a guard against a known targeting bug, not a gate we want throwing on a UI tweak. It
+   * only throws on a POSITIVE mismatch — two ids that both resolved and disagree.
+   */
+  private async assertAnimateSource(expected: string | null): Promise<void> {
+    if (!expected) return
+    const attached = (await this.page.evaluate(`(() => {
+      const el = document.querySelector('img[alt^="Reference media"]')
+      if (!el) return null
+      const s = el.currentSrc || el.src || el.getAttribute('src') || ''
+      try { return new URL(s, location.href).searchParams.get('name') } catch (e) { return null }
+    })()`)) as string | null
+    if (attached && attached !== expected) throw new Error('ANIMATE_WRONG_SOURCE')
   }
 
   /** Media UUIDs from <video>/<source>/<img> nodes carrying a non-thumbnail getMediaUrlRedirect src. */
