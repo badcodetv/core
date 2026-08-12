@@ -19,7 +19,7 @@ import { candidateOutPath } from './candidates'
 import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, canonicalVideoModel, aspectAlreadySelected, videoDurationAlreadySelected } from './compose'
 import { existsSync, readFileSync } from 'node:fs'
 import { jpegSize } from './jpeg-size'
-import { chooseVideoMode, videoRequestError } from './video-mode'
+import { chooseVideoMode, refineRequestError, videoRequestError } from './video-mode'
 import { classifyCard, newCardsSince, ANY_CARD_RE, type CardState } from './failure-card'
 import { parseMediaOptions, SCRAPE_MEDIA_OPTIONS, type RawMediaOption, type MediaListItem } from './media-list'
 import { parseCharacters, SCRAPE_CHARACTERS, type RawCharacterRow, type CharacterListItem } from './character-list'
@@ -85,6 +85,16 @@ export interface VideoRequest {
   model?: string
   aspect?: VideoAspect
   count?: number
+  durationSeconds?: number
+}
+export interface VideoRefineRequest {
+  /** The clip to refine, by the `mediaId` generate_video returned — NOT a local file path. */
+  mediaId: string
+  /** The NEW motion prompt. It replaces the original, which is returned as `originalPrompt`. */
+  motion: string
+  outPath: string
+  model?: string
+  /** Omit to keep the original turn's length, which Reuse prompt restores. */
   durationSeconds?: number
 }
 /** One frame slot as scraped from the compose bar — see SCRAPE_FRAME_SLOTS. */
@@ -1775,6 +1785,112 @@ export class FlowClient {
     const name = await this.waitForVideoClip(before, VIDEO_TIMEOUT_MS)
     await harvestToFile(this.page.request, name, outPath)
     return { path: outPath, mediaId: name }
+  }
+
+  /**
+   * "Like that clip, but slower" — re-run an existing clip's turn with a new motion prompt.
+   *
+   * The mechanism is Flow's own per-clip **`Reuse prompt`**, mapped live 2026-08-12
+   * (`smoke-video-reuse.ts`). It does far more than paste text back: it restores the original
+   * prompt, re-attaches the clip's **source frame**, and puts the compose bar back into Frames
+   * mode. That is the whole reason this is not just "call generateVideo again" — the caller
+   * never has to still HAVE the source still on disk, and never re-uploads it.
+   *
+   * The other affordance on that menu, `Add to prompt`, attaches the CLIP ITSELF as a compose-bar
+   * ingredient (also mapped: it lands as an `img` whose alt is the generic "A piece of media
+   * generated or uploaded by you…", which is why `scrapeReferenceChips` cannot see it). That is
+   * the video-as-reference route and it is deliberately not what this method uses: Reuse restores
+   * a known-good turn, whereas an ingredient asks the model to interpret a video, which no
+   * BadCode output has ever needed.
+   *
+   * Returns the clip plus `originalPrompt`, so a caller that did not record the prompt can still
+   * show the user what was changed.
+   */
+  async refineVideo(req: VideoRefineRequest): Promise<MediaResult & { originalPrompt: string }> {
+    const { mediaId, motion, outPath } = req
+    const videoModel = canonicalVideoModel(req.model ?? DEFAULT_VIDEO_MODEL)
+    const problem = refineRequestError({ mediaId, motion, model: videoModel, durationSeconds: req.durationSeconds })
+    if (problem) throw new Error(problem)
+    await this.ensureProject()
+    // Reload FIRST, exactly as framesToVideo does: the compose bar is persistent project state,
+    // and a reload is the one deterministic way to know Reuse is restoring into an empty bar
+    // rather than on top of a previous turn's frames. Proven live — an `Add to prompt` chip from
+    // the previous run was gone after the reload.
+    await this.reloadProject()
+    await this.openClipMenu(mediaId, /redo\s*Reuse prompt/i)
+    // Readback: Reuse is asynchronous and silent when it fails. The prompt box shows its
+    // PLACEHOLDER as textContent when empty, so "restored" means isBoxCleared() is false.
+    const restored = await this.waitForRestoredPrompt()
+    // Only touch duration when the caller asked: the value Reuse restored is the original
+    // clip's, which is what "like that clip, but slower" means everywhere except length.
+    if (req.durationSeconds !== undefined) {
+      await this.ensureVideoDuration(req.durationSeconds, videoModel)
+      // The duration popover is opened over a bar that Reuse has already staged, so prove the
+      // restored source frame survived it rather than assuming.
+      await this.assertFrameSlots(true, false).catch((e: Error) => {
+        if (/FRAME_NOT_ATTACHED/.test(e.message)) throw new Error('VIDEO_REFINE_FRAMES_LOST: setting the duration cleared the frame Reuse prompt restored')
+        throw e
+      })
+    }
+    await this.markTurnStart()
+    const before = await this.stableMediaNames()
+    await this.submitPrompt(motion)
+    await this.approveCreditGateIfPresent()
+    const name = await this.waitForVideoClip(before, VIDEO_TIMEOUT_MS)
+    await harvestToFile(this.page.request, name, outPath)
+    return { path: outPath, mediaId: name, originalPrompt: restored }
+  }
+
+  /** Poll until `Reuse prompt` has actually put something in the box; return it. */
+  private async waitForRestoredPrompt(): Promise<string> {
+    const deadline = Date.now() + TURN_TIMEOUT_MS
+    while (Date.now() < deadline) {
+      const text = (await this.promptBox().textContent()) ?? ''
+      if (!isBoxCleared(text)) return text.trim()
+      await this.page.waitForTimeout(POLL_MS)
+    }
+    throw new Error('VIDEO_REFINE_NOT_RESTORED: Reuse prompt left the compose bar empty')
+  }
+
+  /**
+   * Open one CLIP's own action menu and click an item, targeting it by media id.
+   *
+   * Two things make a clip tile unlike the still tiles `openAnimateMenu` handles:
+   * 1. At rest it renders as `img[alt="Video thumbnail"]`; hovering SWAPS that img out for a
+   *    `<video>` preview. So the hover target and the card anchor cannot be the same element —
+   *    an ancestor xpath rooted on the thumbnail finds nothing, because by then the thumbnail
+   *    is gone from the DOM.
+   * 2. `<video>` is `hidden` until hover, so it cannot be the hover target either.
+   *
+   * Targeting is by media id rather than tile index on purpose: index is a property of the
+   * current gallery ordering, and refine is exactly the operation a caller runs days later.
+   */
+  private async openClipMenu(mediaId: string, item: RegExp): Promise<void> {
+    const thumb = this.page.locator(`img[alt="Video thumbnail"][src*="${mediaId}"]`).first()
+    try {
+      await thumb.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    } catch {
+      throw new Error(`CLIP_NOT_FOUND: no clip with mediaId ${mediaId} in this project`)
+    }
+    await thumb.scrollIntoViewIfNeeded().catch(() => {})
+    await this.hoverElement(thumb)
+    const video = this.page.locator(`video[src*="${mediaId}"]`).first()
+    const card = video.locator('xpath=ancestor::div[.//button[contains(., "more_vert")]][1]')
+    const more = card.locator('button:has-text("more_vert")').first()
+    try {
+      await more.waitFor({ state: 'visible', timeout: 10_000 })
+    } catch {
+      throw new Error('CLIP_MENU_NOT_FOUND: hovering the clip did not reveal its own more_vert')
+    }
+    await this.pointerClick(more)
+    const target = this.page.getByRole('menuitem', { name: item })
+    try {
+      await target.waitFor({ state: 'visible', timeout: 5_000 })
+    } catch {
+      await this.page.keyboard.press('Escape')
+      throw new Error(`CLIP_ACTION_NOT_FOUND: this clip's menu has no ${item.source}`)
+    }
+    await this.forceClick(target)
   }
 
   /**

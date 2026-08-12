@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { chooseVideoMode, videoRequestError } from './video-mode'
+import { chooseVideoMode, refineRequestError, videoRequestError } from './video-mode'
 
 const req = (over: Partial<Parameters<typeof videoRequestError>[0]> = {}) => ({
   model: 'Veo 3.1 - Fast',
@@ -62,5 +62,37 @@ describe('videoRequestError', () => {
   it('checks duration before frames, so a doubly-wrong request names the simpler fix first', () => {
     const err = videoRequestError(req({ endImage: 'b.jpg', model: 'Omni Flash', durationSeconds: 5 }))
     expect(err).toMatch(/^VIDEO_DURATION_INVALID/)
+  })
+})
+
+describe('refineRequestError', () => {
+  const ref = (over: Partial<Parameters<typeof refineRequestError>[0]> = {}) => ({
+    mediaId: '390b5431-d1c1-4371-aa6b-4fd49f6166ac',
+    motion: 'Same shot, slower push in.',
+    model: 'Veo 3.1 - Fast',
+    ...over,
+  })
+
+  it('accepts a media id with no duration at all — the normal case', () => {
+    // Omitting duration is not an oversight: Reuse prompt restores the original turn's length.
+    expect(refineRequestError(ref())).toBe(null)
+  })
+
+  it('names the path mistake instead of letting it surface as "clip not found"', () => {
+    expect(refineRequestError(ref({ mediaId: 'out/clip.mp4' }))).toMatch(/^VIDEO_REFINE_NOT_A_MEDIA_ID/)
+    expect(refineRequestError(ref({ mediaId: '/home/kai/clip.mp4' }))).toMatch(/^VIDEO_REFINE_NOT_A_MEDIA_ID/)
+    expect(refineRequestError(ref({ mediaId: 'panel-03.jpg' }))).toMatch(/^VIDEO_REFINE_NOT_A_MEDIA_ID/)
+  })
+
+  it('rejects a missing source or a blank prompt', () => {
+    expect(refineRequestError(ref({ mediaId: '  ' }))).toMatch(/^VIDEO_REFINE_NO_SOURCE/)
+    expect(refineRequestError(ref({ motion: '   ' }))).toMatch(/^VIDEO_REFINE_NO_PROMPT/)
+  })
+
+  it('applies the duration rules only when a duration is actually requested', () => {
+    expect(refineRequestError(ref({ durationSeconds: 5 }))).toMatch(/^VIDEO_DURATION_INVALID/)
+    expect(refineRequestError(ref({ durationSeconds: 10 }))).toMatch(/^VIDEO_DURATION_UNAVAILABLE/)
+    expect(refineRequestError(ref({ durationSeconds: 10, model: 'omni flash' }))).toBe(null)
+    expect(refineRequestError(ref({ durationSeconds: 4 }))).toBe(null)
   })
 })

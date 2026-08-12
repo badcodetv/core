@@ -390,14 +390,36 @@ downloadDownload · whiteboardRename · shareShare · smart_displayPublish to Yo
 photo_librarySet project cover · flagFlag output · deleteMove to trash
 ```
 
-Two of these are the answer to *"like that clip, but slower"* without re-staging a frame:
+Two of these are the answer to *"like that clip, but slower"* without re-staging a frame. Both
+were driven live 2026-08-12 (`smoke-video-reuse.ts`), and the result was better than expected:
 
-- **`redoReuse prompt`** — loads the clip's original prompt back into the compose bar. Edit and
-  re-run. (We already keep prompts in our own records, so the value here is whatever ELSE it
-  restores — source frame, model, duration. Untested.)
-- **`addAdd to prompt`** — attaches the **clip itself** into the compose bar as a reference.
-  This is the video-referencing route; whether the composer does anything useful with a video
-  ingredient is untested and needs one credit to find out.
+- **`redoReuse prompt`** — restores the whole turn, not just the text. Measured: the original
+  prompt lands in the box, the **source still is re-attached**, and the bar flips into **Frames
+  mode** (its `swap_horiz Swap first and last frames` control appears). This is what
+  `refineVideo` is built on, and it is why refine needs **nothing but the clip's mediaId** — the
+  caller does not have to still have the source image on disk, or ever have had it.
+- **`addAdd to prompt`** — attaches the **clip itself** as a compose-bar ingredient. It lands as
+  an `img` whose alt is the generic *"A piece of media generated or uploaded by you, that is
+  present in your collection."* — **not** `Reference media…`, so `scrapeReferenceChips` is blind
+  to it. Mapped but deliberately unused: Reuse restores a known-good turn, while an ingredient
+  asks the model to interpret a video.
+
+**Navigation clears the compose bar.** An `Add to prompt` chip was gone after a project reload —
+which is what makes `reloadProject()` a sound way to guarantee Reuse restores into an empty bar.
+
+### The clip card's DOM is not the still card's
+
+Two traps, both mapped by clicking (`smoke-clip-card.ts`), both fatal to code copied from
+`openAnimateMenu`:
+
+1. At rest a clip is `img[alt="Video thumbnail"]`. **Hovering SWAPS that img out** for the
+   `<video>` preview — so the element you hovered no longer exists when the controls appear, and
+   an ancestor xpath rooted on it finds nothing at all.
+2. The `<video>` is **hidden until hover**, so it cannot be the hover target either.
+
+So: hover the thumbnail, then anchor the card on `video[src*="<mediaId>"]`. The control cluster
+is 3 levels up — and `redoReuse prompt` is also a bare hover button on the card, beside
+`favorite` and `more_vert`, if you ever want it without opening the menu.
 
 **No `Extend` and no video `Edit` in this menu** — and that is CONSISTENT with
 `platform-controls.md`, not a contradiction: the clip was Veo 3.1 **Fast**, where the matrix
@@ -406,8 +428,27 @@ testing either means generating on that specific tier first. Worth knowing befor
 "refine the clip" tool: it would pin us to Omni Flash, the one model that also rejects last
 frames.
 
-Wrapping `Add to prompt` is a small extension of proven code — `openAnimateMenu` already does
-hover → per-tile `more_vert` → menuitem. The cost is the live testing, not the clicking.
+### Refine, as wired
+
+`flow_refine_video({ mediaId, motion, outPath, durationSeconds?, model? })` →
+`{ path, mediaId, originalPrompt }`. `mediaId` is the id `flow_generate_video` **returned**, not
+the `.mp4` you saved — passing a path is refused by name rather than surfacing as "clip not
+found". `motion` **replaces** the original prompt: write the whole new prompt, not a delta.
+
+Order of operations: reload (empty bar) → hover the clip → its `more_vert` → `Reuse prompt` →
+poll until the box is non-empty (`VIDEO_REFINE_NOT_RESTORED` if it never is — the placeholder
+renders as `textContent`, so "restored" means `isBoxCleared()` is false) → optionally set the
+duration and re-assert the frame survived (`VIDEO_REFINE_FRAMES_LOST`) → submit → harvest.
+
+Omitting `durationSeconds` keeps the original clip's length and is the normal case — it is the
+one setting refine deliberately does **not** assert, because the whole premise is "that turn,
+new prompt".
+
+**Live proof, 2026-08-12** (`smoke-video-refine.ts`, one clip spent): a 6s Veo 3.1 Fast corridor
+clip refined from `"Slow push in. The light holds steady."` to `"Slow pull back. The light fades
+down to almost nothing by the end."` — new media id, 6.000s, 1280x720, in 104s. The extracted
+first frame is the **original source still**, unmistakably, and the last frame has pulled back
+with the light gone. Neither the still nor its path was supplied to the call.
 
 ## Still to watch (over a longer batch)
 

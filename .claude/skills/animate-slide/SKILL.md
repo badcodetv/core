@@ -214,10 +214,23 @@ Read the poster or a sampled frame. Evaluate against:
 - Does it match the BadCode voice (restrained, not flashy)?
 - Technical: acceptable quality, correct aspect, no artefacts?
 
-If weak, call `flow_generate_video` again with the prompt tightened ("slower / less camera /
-hold longer on the face") against the **same source still**, in the same Flow project. Each
-call is one generation and one charge, so change one thing at a time rather than re-rolling
-and hoping.
+If weak, refine it rather than starting over:
+
+```
+flow_refine_video({
+  mediaId: "<the mediaId the generate call returned>",
+  motion:  "<the whole tightened prompt — not a delta>",
+  outPath: "/tmp/animate-slide/clip-v2.mp4",
+})
+```
+
+That re-runs the clip's own turn against the **same source frame**, which Flow re-attaches
+itself — no re-upload, and it works even if the still is long gone. It returns `originalPrompt`,
+so you can show the user exactly what changed. Tighten one thing at a time ("slower" / "less
+camera" / "hold longer on the face"): each call is one generation and one charge, so changing
+three things at once tells you nothing about which one worked.
+
+Only go back to `flow_generate_video` if the **source still** is what's wrong.
 
 ### Step 6: Upload and build
 

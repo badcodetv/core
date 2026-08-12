@@ -58,6 +58,12 @@ function toToolError(err: unknown): ToolResult {
   if (msg.startsWith('VIDEO_DURATION_NOT_APPLIED')) return fail('VIDEO_DURATION_NOT_APPLIED', msg, 'The duration tab was clicked but the config trigger never showed it — aborted before spending credits, because an ignored duration returns a healthy-looking clip of the wrong length. The tab names in the compose popover have probably drifted; re-map with packages/flow-mcp/src/smoke-duration.ts.')
   if (msg.startsWith('VIDEO_END_ONLY_UNSUPPORTED')) return fail('VIDEO_END_ONLY_UNSUPPORTED', msg, 'Flow has first-frame and first+last-frame generation, but not last-frame-alone (live-tested 2026-08-12 on Veo 3.1 Fast and Lite — the slot fills and is then flagged invalid). Pass a startImage as well, or describe the opening in the prompt and use text-to-video.')
   if (msg.startsWith('VIDEO_FRAMES_UNAVAILABLE')) return fail('VIDEO_FRAMES_UNAVAILABLE', msg, 'Only the Veo 3.1 tiers accept a LAST frame; Omni Flash rejects it (its End slot comes back with an error badge, live-confirmed 2026-08-12). Pass model "Veo 3.1 Fast" (or Lite/Quality), or drop endImage.')
+  if (msg.startsWith('VIDEO_REFINE_NO_SOURCE') || msg.startsWith('VIDEO_REFINE_NO_PROMPT')) return fail('INVALID_ARGS', msg)
+  if (msg.startsWith('VIDEO_REFINE_NOT_A_MEDIA_ID')) return fail('INVALID_ARGS', msg, 'Refine works on a clip that is already in the Flow project, addressed by the mediaId flow_generate_video returned — not by the .mp4 you saved. If you no longer have that id, list the project media with flow_list_media.')
+  if (msg.startsWith('VIDEO_REFINE_NOT_RESTORED')) return fail('VIDEO_REFINE_NOT_RESTORED', msg, "Flow's per-clip Reuse prompt did not put the original prompt back in the compose bar, so there is nothing to refine FROM — aborted before spending credits. Re-map the clip menu with packages/flow-mcp/src/smoke-video-reuse.ts.")
+  if (msg.startsWith('VIDEO_REFINE_FRAMES_LOST')) return fail('VIDEO_REFINE_FRAMES_LOST', msg, 'Setting durationSeconds cleared the source frame that Reuse prompt restored. Re-run without durationSeconds to keep the original clip length, or regenerate from the still with flow_generate_video.')
+  if (msg.startsWith('CLIP_NOT_FOUND')) return fail('CLIP_NOT_FOUND', msg, 'The mediaId must be a CLIP in the project currently open. Open the right project with flow_open_project, and check the id with flow_list_media.')
+  if (msg.startsWith('CLIP_MENU_NOT_FOUND') || msg.startsWith('CLIP_ACTION_NOT_FOUND')) return fail('CLIP_ACTION_NOT_FOUND', msg, "The clip's own hover menu did not offer that action. Re-map it with packages/flow-mcp/src/smoke-video-menu.ts — note that Extend and video Edit only appear on specific model tiers.")
   if (msg === 'FRAME_SLOTS_NOT_FOUND') return fail('FRAME_SLOTS_NOT_FOUND', 'The compose bar is not showing its Start/End frame slots.', 'The Frames source tab did not take, or Flow has renamed the "Swap first and last frames" control this code anchors on. Re-map with packages/flow-mcp/src/smoke-frames.ts.')
   if (msg.startsWith('FRAME_REJECTED')) return fail('FRAME_REJECTED', msg, 'Flow marked the frame invalid rather than accepting it — aborted before spending credits. Most often this is a last frame on a model that does not support one; check the model, and that the image file is a normal JPEG/PNG.')
   if (msg.startsWith('FRAME_NOT_ATTACHED')) return fail('FRAME_NOT_ATTACHED', msg, 'The upload finished but the picker never put it in the slot. Usually the media row was still resolving; retry once. If it persists, re-map the picker with packages/flow-mcp/src/smoke-frame-pick.ts.')
@@ -347,6 +353,51 @@ server.registerTool(
             ...(model ? { model } : {}),
             ...(aspect ? { aspect } : {}),
             ...(count ? { count } : {}),
+            ...(durationSeconds ? { durationSeconds } : {}),
+          }),
+        ),
+      )
+    } catch (err) {
+      return toToolError(err)
+    }
+  },
+)
+
+server.registerTool(
+  'flow_refine_video',
+  {
+    title: 'Refine an existing video',
+    description:
+      '"Like that clip, but slower / darker / without the pan." Re-runs an EXISTING clip\'s turn with a new motion ' +
+      'prompt and saves the new .mp4 to outPath. ' +
+      'The point of this tool over flow_generate_video is that YOU DO NOT NEED THE SOURCE STILL: Flow\'s per-clip ' +
+      '"Reuse prompt" restores the original prompt AND re-attaches the frame that clip was generated from, so a refine ' +
+      'works days later from nothing but the clip\'s mediaId (live-proven 2026-08-12 — the refined clip opened on the ' +
+      'original source frame and then followed the new prompt). ' +
+      'mediaId is the id flow_generate_video RETURNED, not the .mp4 path you saved it to, and the clip must be in the ' +
+      'project currently open. ' +
+      'motion REPLACES the original prompt — write the whole new prompt, not a delta ("Slow pull back, the light fades ' +
+      'down", not "but slower"). The prompt it replaced comes back as originalPrompt, so you can show the user what changed. ' +
+      'Omit durationSeconds to keep the original clip\'s length, which is the normal case; passing one re-opens the ' +
+      'compose popover and is refused if that clears the restored frame. ' +
+      'Returns { path, mediaId, originalPrompt }.',
+    inputSchema: {
+      mediaId: z.string().min(1),
+      motion: z.string().min(1),
+      model: z.string().optional(),
+      durationSeconds: z.union([z.literal(4), z.literal(6), z.literal(8), z.literal(10)]).optional(),
+      outPath: z.string().min(1),
+    },
+  },
+  async ({ mediaId, motion, model, durationSeconds, outPath }) => {
+    try {
+      return await withClient(async (c) =>
+        ok(
+          await c.refineVideo({
+            mediaId,
+            motion,
+            outPath,
+            ...(model ? { model } : {}),
             ...(durationSeconds ? { durationSeconds } : {}),
           }),
         ),

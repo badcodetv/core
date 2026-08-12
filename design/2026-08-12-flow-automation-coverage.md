@@ -453,16 +453,25 @@ Waves A, B and C are done. Batch is proven, resumable and reports honest dimensi
 `make-comic`'s "unattended loop" section documents the rewrite-and-retry cycle. What remains,
 most valuable first:
 
-### L1 · Video refine — "like that clip, but slower"
+### L1 · Video refine — "like that clip, but slower" — ✅ DONE 2026-08-12
 
-Every finished clip carries **`redoReuse prompt`** (loads its original prompt back into the
-compose bar) and **`addAdd to prompt`** (attaches the clip ITSELF as a reference). Mapped
-2026-08-12 (`smoke-video-menu.ts`); neither has been driven. `Add to prompt` is the real
-video-referencing route and wrapping it is a small extension of `openAnimateMenu` — the cost is
-live testing, not clicking.
+Shipped as **`flow_refine_video`** (`refineVideo` + `openClipMenu` + `refineRequestError`).
 
-⚠️ **A true video *edit* would pin us to Omni Flash**, per the matrix — the one model that also
-rejects last frames. Worth deciding deliberately rather than discovering.
+What the probe settled, and it is more than was expected: **`Reuse prompt` restores the whole
+turn** — the original prompt text, the **source still re-attached**, and the compose bar flipped
+into Frames mode. So refine needs **nothing but the clip's mediaId**: the caller never has to
+still hold the source image. Live-proven with one clip — a 6s corridor clip re-prompted from
+"slow push in, light holds steady" to "slow pull back, light fades down"; the refined clip's
+first frame is the original source still and its last frame follows the new prompt.
+
+**`Add to prompt`** was also driven: it attaches the clip itself as a compose-bar ingredient,
+landing as an `img` with the generic *"A piece of media generated or uploaded by you…"* alt —
+which `scrapeReferenceChips` cannot see. Mapped, deliberately unused: Reuse restores a
+known-good turn, an ingredient asks the model to interpret a video, and nothing we make needs
+the latter. **No video *edit* was built**, so we stayed off the Omni-Flash pin.
+
+Write-up: `docs/superpowers/flow-video.md` § "What an EXISTING clip offers" (incl. the clip
+card's hover-swaps-the-thumbnail DOM trap, which breaks any code copied from `openAnimateMenu`).
 
 ### L2 · The two matrix rows still transcribed, not tested
 

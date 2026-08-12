@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { readFileSync, existsSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
 import { jpegSize } from './jpeg-size'
 
 /** Build a minimal but structurally real JPEG header: SOI, an APP0 to skip, then a SOF0. */
@@ -56,9 +57,11 @@ describe('jpegSize', () => {
 
   it('agrees with a real Flow-generated JPEG', () => {
     // The one test that proves the parser against reality rather than against my own fixture.
-    // Path is relative to the PACKAGE (vitest's cwd), not the repo root — as repo-root paths
-    // it silently existsSync-ed to false and the test asserted nothing at all.
-    const real = '../../docs/images/register-anchor.jpg'
+    // Resolved against THIS FILE, never the cwd: vitest's cwd is the package when run inside it
+    // and the repo root when run as `vitest run packages/flow-mcp`, so any relative path is
+    // wrong half the time — and an existsSync guard that returns early would hide it (which it
+    // did once already, asserting nothing at all).
+    const real = fileURLToPath(new URL('../../../docs/images/register-anchor.jpg', import.meta.url))
     expect(existsSync(real)).toBe(true)
     expect(jpegSize(readFileSync(real))).toEqual({ width: 1376, height: 768 })
   })

@@ -32,13 +32,9 @@ export function videoRequestError(req: {
   durationSeconds: number
 }): string | null {
   const model = canonicalVideoModel(req.model)
-  if (!(VIDEO_DURATIONS as readonly number[]).includes(req.durationSeconds)) {
-    return `VIDEO_DURATION_INVALID: ${req.durationSeconds}s — Flow offers ${VIDEO_DURATIONS.join('/')}s`
-  }
+  const durationProblem = durationError(model, req.durationSeconds)
+  if (durationProblem) return durationProblem
   const maxDuration = maxDurationForModel(model)
-  if (req.durationSeconds > maxDuration) {
-    return `VIDEO_DURATION_UNAVAILABLE: ${req.durationSeconds}s is not offered on ${model} (max ${maxDuration}s) — only Omni Flash goes to 10s`
-  }
   // A last frame with no first frame is not a mode Flow has: the slot fills and is then marked
   // invalid. Tested on Veo 3.1 Fast and Lite.
   if (req.endImage && !req.startImage) {
@@ -49,6 +45,50 @@ export function videoRequestError(req: {
   // Omni-Flash-only line, and there is exactly one such model.
   if (req.endImage && maxDuration === 10) {
     return `VIDEO_FRAMES_UNAVAILABLE: ${model} does not accept a last frame — use a Veo 3.1 tier`
+  }
+  return null
+}
+
+/** The two duration rules, shared by generate and refine (which validates it only if asked). */
+function durationError(canonicalModel: string, seconds: number): string | null {
+  if (!(VIDEO_DURATIONS as readonly number[]).includes(seconds)) {
+    return `VIDEO_DURATION_INVALID: ${seconds}s — Flow offers ${VIDEO_DURATIONS.join('/')}s`
+  }
+  const max = maxDurationForModel(canonicalModel)
+  if (seconds > max) {
+    return `VIDEO_DURATION_UNAVAILABLE: ${seconds}s is not offered on ${canonicalModel} (max ${max}s) — only Omni Flash goes to 10s`
+  }
+  return null
+}
+
+/**
+ * The reason Flow will refuse a REFINE request, or null.
+ *
+ * Refine re-runs an existing clip's own turn — Flow's per-clip `Reuse prompt` restores the
+ * original prompt, its source frames and the compose mode, and we then overwrite the prompt.
+ * So the source is a **media id already in the project**, never a local file: passing a path
+ * is the mistake worth naming explicitly, because a path would otherwise simply never match a
+ * tile and surface as a bare "clip not found".
+ *
+ * `durationSeconds` is optional here, and omitting it is the norm: whatever the original turn
+ * used is what Reuse restores.
+ */
+export function refineRequestError(req: {
+  mediaId: string
+  motion: string
+  model: string
+  durationSeconds?: number
+}): string | null {
+  const id = (req.mediaId ?? '').trim()
+  if (!id) return 'VIDEO_REFINE_NO_SOURCE: refine needs the mediaId of the clip to refine'
+  if (/[/\\]/.test(id) || /\.(mp4|mov|webm|jpe?g|png)$/i.test(id)) {
+    return `VIDEO_REFINE_NOT_A_MEDIA_ID: "${id}" looks like a file — refine targets a clip already in the project by the mediaId generate_video returned, not a path`
+  }
+  if (!(req.motion ?? '').trim()) {
+    return 'VIDEO_REFINE_NO_PROMPT: refine needs the new motion prompt — to re-run a clip unchanged, just generate it again'
+  }
+  if (req.durationSeconds !== undefined) {
+    return durationError(canonicalVideoModel(req.model), req.durationSeconds)
   }
   return null
 }
