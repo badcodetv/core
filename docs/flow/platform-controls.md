@@ -11,10 +11,10 @@ Models, credits, aspect, duration, and the surfaces beyond the prompt box.
 
 | Model | Clip length | Ingredients→Video | Frames→Video (first) | Frames→Video (first+last) | Extend | Edit existing video |
 | --- | --- | --- | --- | --- | --- | --- |
-| Veo 3.1 Lite | 4/6/8s ✅ | ✅ (8s only) | ✅ | ✅ (2026-08-12) | ✅ (Veo 3.1 content only) | ✗ |
-| Veo 3.1 Fast | 4/6/8s ✅ | ✅ (8s only) | ✅ | ✅ (2026-08-12) | ✗ | ✗ |
-| Veo 3.1 Quality | 4/6/8s ✅ | ✅ (8s only) | ✅ | ✅ (2026-08-12) | ✗ | ✗ |
-| Gemini Omni Flash | 4/6/8/**10s** ✅ | ✗ | ✅ | ✗ (2026-08-12) | coming soon | ✅ |
+| Veo 3.1 Lite | 4/6/8s ✅ | ✅ (8s only) | ✅ | ✅ (2026-08-12) | **not present** (2026-08-12) | ✗ |
+| Veo 3.1 Fast | 4/6/8s ✅ | ✅ (8s only) | ✅ | ✅ (2026-08-12) | **not present** (2026-08-12) | ✗ |
+| Veo 3.1 Quality | 4/6/8s ✅ | ✅ (8s only) | ✅ | ✅ (2026-08-12) | not tested | ✗ |
+| Gemini Omni Flash | 4/6/8/**10s** ✅ | ✗ | ✅ | ✗ (2026-08-12) | not present (2026-08-12) | **not present** (2026-08-12) |
 
 ✅ **Clip length and first+last columns — VERIFIED live 2026-08-12.** First+last frame works on
 **every Veo 3.1 tier**, not just Lite: the docs' "coming soon" for Fast and Quality is stale.
@@ -28,16 +28,29 @@ compose popover on each tier). Omni Flash offers 4/6/8/10s; Veo 3.1 Fast and Qua
 4/6/8s and the **10s tab is absent from the DOM entirely**, not greyed out. Veo 3.1 Lite was
 not opened, so its cell stays a claim.
 
-⚠️ **The remaining columns — Ingredients→Video, Extend, Edit existing video — are still
-transcribed from Google's documentation and have never been tested by us.** Treat each as a
-claim awaiting verification, not a finding; when you do verify one, replace the cell with the
-result *and the date you checked*. The two columns settled above were both wrong in the docs,
+✅ **Extend and Edit existing video — neither exists in this account's UI** (`smoke-tier-menus.ts`
++ `smoke-clip-detail.ts`, 2026-08-12, one clip generated per tier and its menus dumped). A
+finished clip's own hover menu is the SAME eleven items on Veo 3.1 Fast, Veo 3.1 Lite **and Omni
+Flash** — `Favorite · Reuse prompt · Add to scene · Add to prompt · Download · Rename · Share ·
+Publish to YouTube · Set project cover · Flag output · Move to trash`. Not on the clip's page
+either: clicking a clip opens the **scene editor** (`/edit/<sceneId>` — a timeline with `Add
+Clip`), whose controls contain no Extend and no video Edit, and hovering the timeline reveals
+none. Written "not present" rather than "false" deliberately: Google gates features per account
+and per rollout, and this is one account on one day. But do not plan around either.
+
+What Flow gives you *instead* of Extend is that scene editor: `Add Clip` chains footage on a
+timeline. It is a much larger surface than a per-clip action and nothing in BadCode has needed
+it — see `design/2026-08-12-flow-automation-coverage.md`.
+
+⚠️ **Ingredients→Video is still transcribed from Google's documentation and has never been
+tested by us.** Treat it as a claim awaiting verification; when you verify it, replace the cell
+with the result *and the date you checked*. Every column settled so far was wrong in the docs,
 which is the best argument for not trusting the rest.
 
 **Plan the consistency strategy against this matrix, not against assumed parity.**
 Sources disagree on the Extend row in particular — older help pages call Extend
 Veo 2-only, the 3.1 announcement says audio now flows through it, and one community
-report says it silently drops you to Veo 2 Fast with no audio. Test it.
+report says it silently drops you to Veo 2 Fast with no audio. We could not find it at all.
 
 **Image models:** Nano Banana 2 Lite (free default) → Nano Banana 2 → **Nano Banana Pro**
 (the one for legible in-image text, localized edits, 14 references / 5 identities,

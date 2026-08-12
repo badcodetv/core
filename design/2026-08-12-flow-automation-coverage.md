@@ -473,13 +473,23 @@ the latter. **No video *edit* was built**, so we stayed off the Omni-Flash pin.
 Write-up: `docs/superpowers/flow-video.md` § "What an EXISTING clip offers" (incl. the clip
 card's hover-swaps-the-thumbnail DOM trap, which breaks any code copied from `openAnimateMenu`).
 
-### L2 · The two matrix rows still transcribed, not tested
+### L2 · The two matrix rows still transcribed, not tested — ✅ TESTED 2026-08-12
 
-`Extend` (claimed Veo 3.1 Lite only) and `Edit existing video` (claimed Omni Flash only) are the
-last unverified columns in `platform-controls.md`. Neither appeared on a Veo 3.1 **Fast** clip's
-menu, which is consistent with the matrix rather than against it — so testing either means
-generating on that specific tier first. Both columns we HAVE tested turned out wrong, which is
-the argument for not trusting these two.
+Answer: **neither exists in this account's UI.** Two clips generated for the purpose (Veo 3.1
+Lite, Omni Flash — the exact tiers the matrix claims them for), and the clip's hover menu came
+back as the **identical eleven items** it shows on Veo 3.1 Fast. Nor are they on the clip's own
+page: clicking a clip opens the **scene editor** (`/edit/<sceneId>` — a timeline with `Add
+Clip`), whose controls include no Extend and no video Edit, and hovering the timeline reveals
+none. `smoke-tier-menus.ts`, `smoke-clip-detail.ts`.
+
+Recorded in `platform-controls.md` as "not present (2026-08-12)" rather than "false" — Google
+gates features per account and per rollout, and this is one account on one day. But nothing
+should be planned around either.
+
+What Flow offers *instead* of Extend is that scene editor's `Add Clip` — chaining footage on a
+timeline. A much larger surface than a per-clip action, and nothing we make has needed it, so it
+is not proposed here. `Ingredients→Video` is now the only cell in the matrix still transcribed
+rather than tested.
 
 ### L3 · Failure states we have never seen
 
