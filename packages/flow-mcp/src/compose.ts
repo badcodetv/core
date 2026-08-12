@@ -37,20 +37,52 @@ export function modelAlreadySelected(label: string | null, model: string): boole
 }
 
 /**
- * True when a VIDEO model-picker label already names `model`.
+ * The video model names exactly as Flow's Settings menu renders them, captured live
+ * 2026-08-12. Note the ` - ` separators and the SPACE before `[Lower Priority]`; both had
+ * been guessed wrong, and both matter (see canonicalVideoModel / videoModelAlreadySelected).
+ */
+export const VIDEO_MODELS = [
+  'Omni Flash',
+  'Veo 3.1 - Lite',
+  'Veo 3.1 - Fast',
+  'Veo 3.1 - Quality',
+  'Veo 3.1 - Lite [Lower Priority]',
+] as const
+
+const normaliseModel = (s: string): string => s.toLowerCase().replace(/[^a-z0-9]/g, '')
+
+/**
+ * Resolve a loosely-written model name to the exact label Flow's menu shows.
  *
- * The Settings-panel trigger renders as "<model name> arrow_drop_down" (flow-video.md:114).
- * Same prefix trap as `modelAlreadySelected`, different shape: "Veo 3.1 Lite" is a strict
- * prefix of "Veo 3.1 Lite[Lower Priority]", but the trailing text is a bracketed suffix glued
- * on with no space, not a " Lite"-style word — so the negative lookahead has to reject the
- * match whenever the next character continues the label at all (a word character, or the `[`
- * that opens "[Lower Priority]"), not just a specific trailing word. `[` and `]` are regex
- * metacharacters, so this is exactly where `escapeRegExp` earns its keep — both on `model`
- * (already required) and implicitly in the character class below (which uses literal chars,
- * not user input, so no separate escaping is needed there).
+ * Callers, docs and env vars all say "Veo 3.1 Fast" while the menu says "Veo 3.1 - Fast", and
+ * an exact-match click on the former simply never finds anything: that is precisely how a
+ * request for a specific model turned into a 90s hang. Comparing with punctuation and case
+ * stripped makes every reasonable spelling work while keeping the CLICK target exact.
+ *
+ * An unrecognised name is returned unchanged rather than rejected, so a model Flow adds
+ * tomorrow still works without a code change.
+ */
+export function canonicalVideoModel(model: string): string {
+  const want = normaliseModel(model)
+  return VIDEO_MODELS.find(m => normaliseModel(m) === want) ?? model
+}
+
+/**
+ * True when the Settings-panel model trigger already shows `model` selected.
+ *
+ * Compares for EQUALITY against the canonical name rather than searching for a substring,
+ * which is what finally kills the "Veo 3.1 - Lite" ⊂ "Veo 3.1 - Lite [Lower Priority]" prefix
+ * trap: no lookahead can be tuned well enough to survive both that suffix and the trigger's
+ * own glued-on "arrow_drop_down". The previous attempt failed in both directions at once —
+ * it accepted Lower Priority as Lite (the suffix has a leading SPACE, which the guard let
+ * through), and it rejected every genuine match (the trigger renders
+ * "Omni Flasharrow_drop_down", so the guard's "no trailing word character" rule always
+ * fired). The second bug hid the first: nothing ever short-circuited, so nothing was ever
+ * wrongly kept.
  */
 export function videoModelAlreadySelected(label: string | null, model: string): boolean {
-  return new RegExp(`${escapeRegExp(model)}(?![\\w[])`, 'i').test(label ?? '')
+  const shown = (label ?? '').replace(/arrow_drop_down\s*$/i, '').trim()
+  return normaliseModel(shown) === normaliseModel(canonicalVideoModel(model))
 }
 
 /**

@@ -14,7 +14,7 @@ import {
 } from './batch'
 export type { BatchItem, BatchFailure, BatchResult } from './batch'
 import { candidateOutPath } from './candidates'
-import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, aspectAlreadySelected } from './compose'
+import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, canonicalVideoModel, aspectAlreadySelected } from './compose'
 import { classifyCard, newCardsSince, ANY_CARD_RE, type CardState } from './failure-card'
 import { parseMediaOptions, SCRAPE_MEDIA_OPTIONS, type RawMediaOption, type MediaListItem } from './media-list'
 import { parseCharacters, SCRAPE_CHARACTERS, type RawCharacterRow, type CharacterListItem } from './character-list'
@@ -40,7 +40,9 @@ const DEFAULT_VIDEO_ASPECT: VideoAspect = '16:9'
  * the deliberate middle: a real step up from Lite for the price of a fifth of Quality. A caller
  * who wants Quality's 100 credits asks for it explicitly via the `model` option.
  */
-const DEFAULT_VIDEO_MODEL = process.env.FLOW_VIDEO_MODEL ?? 'Veo 3.1 Fast'
+// Written the way Flow's menu writes it. Loose spellings ("Veo 3.1 Fast") are accepted from
+// callers and normalised by canonicalVideoModel, so the env var stays forgiving.
+const DEFAULT_VIDEO_MODEL = process.env.FLOW_VIDEO_MODEL ?? 'Veo 3.1 - Fast'
 const VIDEO_TIMEOUT_MS = 8 * 60_000
 // Image/grid polls are cheap in-page DOM scrapes, so poll fast (~1s of discovery latency).
 const POLL_MS = 1_000
@@ -1231,42 +1233,88 @@ export class FlowClient {
    * generateVideo() calls stays cheap — and only hits Save if something actually changed.
    */
   private async ensureVideoSettings(opts?: { model?: string; aspect?: VideoAspect; count?: number }): Promise<void> {
-    const model = opts?.model ?? DEFAULT_VIDEO_MODEL
+    // Accept "Veo 3.1 Fast" and click "Veo 3.1 - Fast": the menu's exact labels are the click
+    // targets, but nothing else in the codebase (or in a caller's head) writes them that way.
+    const model = canonicalVideoModel(opts?.model ?? DEFAULT_VIDEO_MODEL)
     const aspect = opts?.aspect ?? DEFAULT_VIDEO_ASPECT
     const count = opts?.count ?? 1
 
-    const settingsBtn = this.page.getByRole('button', { name: /^tune\s*Settings$/i }).first()
-    await settingsBtn.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
-    await this.pointerClick(settingsBtn)
+    // Reach the Agent settings view from whichever of THREE states the UI is in. The panel is
+    // sticky: it stays where the last call left it, including across navigation. The original
+    // code assumed only one state (settings button already on screen) and hung for 90s in the
+    // other two. All three confirmed live 2026-08-12.
+    // CSS + text throughout, for the aria-hidden reason documented below.
+    const heading = this.page.getByText('Video generation default', { exact: true })
+    const settingsBtn = this.page.locator('button').filter({ hasText: /^tune\s*Settings$/i }).first()
+    const agentBtn = this.page.locator('button').filter({ hasText: /^Agent$/i }).first()
+    if (!(await heading.count())) {
+      // Agent panel closed entirely: its "Agent" button is on the compose bar.
+      if (!(await settingsBtn.count()) && (await agentBtn.count())) {
+        await this.forceClick(agentBtn)
+        await settingsBtn.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+      }
+      // Agent panel open on its chat view: the settings button is in its footer.
+      await settingsBtn.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+      await this.pointerClick(settingsBtn)
+    }
+    // Third state: already on the settings view — nothing to open, and clicking "Settings"
+    // again would not exist to click.
 
-    // The model dropdown trigger renders "<model name> arrow_drop_down" (flow-video.md:114).
-    // ⚠️ GUESSED: the doc doesn't record a heading/container locator for the "Video generation
-    // default" section, so this scopes by the model names themselves — Omni Flash / Veo 3.1 …
-    // never collide with the image bar's "Nano Banana" labels — rather than by position. If the
-    // Settings panel also shows an "Image generation default" model dropdown with its own
-    // aspect/count tabs sharing the SAME tab names ("crop_16_9 16:9", "1x"…), `.first()` below
-    // could land on the wrong section. Flag for Wave B live validation.
-    const modelBtn = this.page
-      .getByRole('button', { name: /arrow_drop_down/i })
+    // Scope EVERYTHING to the "Video generation default" section. The panel carries an
+    // "Image generation default" section above it whose aspect and count tabs have identical
+    // names ("crop_16_9 16:9", "x1"…), so the previous `.first()` silently configured the
+    // IMAGE defaults and left video on whatever it already was — confirmed live 2026-08-12.
+    // The heading's immediate parent is exactly the video section and excludes the image one
+    // (mapped by walking the ancestor chain), which makes `xpath=..` the whole scope.
+    const videoSection = this.page
+      .getByText('Video generation default', { exact: true })
+      .locator('xpath=..')
+    await videoSection.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+
+    // ⚠️ EVERY selector below is CSS + text, never getByRole. Inside this panel Playwright's
+    // role engine returns NOTHING — `page.getByRole('tab')` counts 0 page-wide while
+    // `button[role="tab"]` counts 15 (measured 2026-08-12), because the open panel sits under
+    // an aria-hidden ancestor and is therefore absent from the accessibility tree Playwright
+    // queries. getByText still works (different engine), which is why the section anchor above
+    // is fine. Do not "tidy" these back into getByRole.
+    const modelBtn = videoSection
+      .locator('button')
       .filter({ hasText: /Omni Flash|Veo/i })
       .first()
     await modelBtn.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     let changed = false
     if (!videoModelAlreadySelected(await modelBtn.textContent(), model)) {
-      await this.pointerClick(modelBtn)
-      // ⚠️ GUESSED: flow-video.md maps the TRIGGER's accessible name but not the opened menu's
-      // option shape. Mirrors ensureModel's assumption that options are buttons named for the
-      // model (there rendered "🍌 <model>"; no emoji is recorded for video model names, so this
-      // matches the bare model string). Unverified against the live DOM.
-      const option = this.page.getByRole('button', { name: model, exact: true }).first()
+      // Options are `button[role="menuitem"]` with the label in a nested span, so the button's
+      // own text carries more than the name and an anchored match on it finds nothing. Match
+      // the LABEL exactly, then walk up to the clickable button. Exactness is what keeps
+      // "Veo 3.1 - Lite" from selecting "Veo 3.1 - Lite [Lower Priority]".
+      const option = this.page
+        .getByText(model, { exact: true })
+        .locator('xpath=ancestor::button[1]')
+        .first()
+      // The trigger TOGGLES. A menu left open by an earlier aborted run would be closed by an
+      // unconditional click here, and the wait below would then time out on a menu we had just
+      // shut ourselves — which is exactly how this failed three times during validation. So
+      // only click when the option is not already on screen, and re-toggle once if the first
+      // click lands on a mid-render menu.
+      if (!(await option.isVisible().catch(() => false))) {
+        await this.pointerClick(modelBtn)
+        try {
+          await option.waitFor({ state: 'visible', timeout: 8_000 })
+        } catch {
+          await this.pointerClick(modelBtn)
+        }
+      }
       await option.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
       await this.forceClick(option)
       await this.page.keyboard.press('Escape') // closes the nested model menu; Settings panel stays open
       changed = true
     }
 
-    const aspectTab = this.page
-      .getByRole('tab', { name: aspect === '9:16' ? /crop_9_16\s*9:16/i : /crop_16_9\s*16:9/i })
+    // Tabs render their icon ligature glued to the label: "crop_16_916:9", "x1".
+    const aspectTab = videoSection
+      .locator('button[role="tab"]')
+      .filter({ hasText: aspect === '9:16' ? /crop_9_16\s*9:16/i : /crop_16_9\s*16:9/i })
       .first()
     if (await aspectTab.count()) {
       if ((await aspectTab.getAttribute('aria-selected')) !== 'true') {
@@ -1275,9 +1323,13 @@ export class FlowClient {
       }
     }
 
-    // Count tabs are named `1x` for one output and `x2`/`x3`/`x4` beyond, same convention as
-    // ensureImageMode's image-count tabs.
-    const countTab = this.page.getByRole('tab', { name: count <= 1 ? '1x' : `x${count}`, exact: true }).first()
+    // Count tabs are `x1`…`x4` — uniformly x-first. flow-video.md recorded the single-output
+    // tab as "1x" and the code followed it; the live panel says "x1" (confirmed 2026-08-12),
+    // so asking for one clip matched nothing and silently left the count at whatever it was.
+    const countTab = videoSection
+      .locator('button[role="tab"]')
+      .filter({ hasText: new RegExp(`^x${Math.max(1, count)}$`) })
+      .first()
     if (await countTab.count()) {
       if ((await countTab.getAttribute('aria-selected')) !== 'true') {
         await this.tabClick(countTab)
@@ -1286,7 +1338,7 @@ export class FlowClient {
     }
 
     if (changed) {
-      const save = this.page.getByRole('button', { name: /^Save$/ }).first()
+      const save = this.page.locator('button').filter({ hasText: /^Save$/ }).first()
       await this.forceClick(save)
     } else {
       // Nothing to persist — close without touching Save (leaves the unrelated Confirm-gate

@@ -21,7 +21,20 @@ try {
   await inner.ensureProjectRoot()
 
   const settings = page.getByRole('button', { name: /tune\s*Settings/i }).first()
-  console.log('tune Settings trigger count:', await settings.count())
+  console.log('tune Settings count (project root):', await settings.count())
+
+  // flow-video.md calls it the "agent panel footer" button, so the Agent panel presumably has
+  // to be opened before it exists. Try that before declaring it missing.
+  if (!(await settings.count())) {
+    const agent = page.getByRole('button', { name: /^Agent$/i }).first()
+    console.log('Agent button count:', await agent.count())
+    if (await agent.count()) {
+      await inner.forceClick(agent)
+      await page.waitForTimeout(2500)
+      console.log('tune Settings count (after opening Agent):', await settings.count())
+    }
+  }
+
   if (!(await settings.count())) {
     console.log('\n=== every visible button on the project root ===')
     const buttons = await page.evaluate(`(() => {
@@ -42,6 +55,11 @@ try {
   }
   await inner.forceClick(settings)
   await page.waitForTimeout(2500)
+  const shot = process.env.SHOT
+  if (shot) {
+    await page.screenshot({ path: shot })
+    console.log('screenshot:', shot)
+  }
 
   // What does the panel actually contain? Dump every control with its accessible name.
   const controls = await page.evaluate(`(() => {

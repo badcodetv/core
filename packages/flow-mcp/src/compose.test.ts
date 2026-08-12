@@ -1,5 +1,12 @@
 import { describe, it, expect } from 'vitest'
-import { isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, aspectAlreadySelected } from './compose'
+import {
+  isBoxCleared,
+  modelAlreadySelected,
+  videoModelAlreadySelected,
+  canonicalVideoModel,
+  VIDEO_MODELS,
+  aspectAlreadySelected,
+} from './compose'
 
 describe('isBoxCleared', () => {
   it('treats a truly empty box as cleared', () => {
@@ -48,26 +55,55 @@ describe('modelAlreadySelected', () => {
   })
 })
 
+describe('canonicalVideoModel', () => {
+  // The live menu labels, captured 2026-08-12. Everything else in the codebase writes these
+  // names without the " - ", which is why an exact click target has to be resolved.
+  it('resolves the spelling we use to the spelling Flow renders', () => {
+    expect(canonicalVideoModel('Veo 3.1 Fast')).toBe('Veo 3.1 - Fast')
+    expect(canonicalVideoModel('Veo 3.1 Quality')).toBe('Veo 3.1 - Quality')
+    expect(canonicalVideoModel('veo 3.1 lite')).toBe('Veo 3.1 - Lite')
+  })
+
+  it('leaves an already-canonical name alone', () => {
+    for (const m of VIDEO_MODELS) expect(canonicalVideoModel(m)).toBe(m)
+  })
+
+  it('keeps the Lower Priority tier distinct from plain Lite', () => {
+    expect(canonicalVideoModel('Veo 3.1 Lite [Lower Priority]')).toBe('Veo 3.1 - Lite [Lower Priority]')
+    expect(canonicalVideoModel('Veo 3.1 Lite')).toBe('Veo 3.1 - Lite')
+  })
+
+  it('passes an unknown name through untouched, so a new Flow model still works', () => {
+    expect(canonicalVideoModel('Veo 4 - Ultra')).toBe('Veo 4 - Ultra')
+  })
+})
+
 describe('videoModelAlreadySelected', () => {
-  it('matches the trigger label ("<model> arrow_drop_down")', () => {
-    expect(videoModelAlreadySelected('Veo 3.1 Quality arrow_drop_down', 'Veo 3.1 Quality')).toBe(true)
-    expect(videoModelAlreadySelected('Omni Flash arrow_drop_down', 'Omni Flash')).toBe(true)
+  // The trigger glues the caret straight onto the name, with NO space: "Omni Flasharrow_drop_down".
+  it('matches the real trigger label, whose caret text is not separated by a space', () => {
+    expect(videoModelAlreadySelected('Omni Flasharrow_drop_down', 'Omni Flash')).toBe(true)
+    expect(videoModelAlreadySelected('Veo 3.1 - Qualityarrow_drop_down', 'Veo 3.1 - Quality')).toBe(true)
+  })
+
+  it('accepts a loosely-spelled request against the rendered label', () => {
+    expect(videoModelAlreadySelected('Veo 3.1 - Fastarrow_drop_down', 'Veo 3.1 Fast')).toBe(true)
   })
 
   it('does not confuse a different tier for the target', () => {
-    expect(videoModelAlreadySelected('Veo 3.1 Fast arrow_drop_down', 'Veo 3.1 Quality')).toBe(false)
+    expect(videoModelAlreadySelected('Veo 3.1 - Fastarrow_drop_down', 'Veo 3.1 - Quality')).toBe(false)
   })
 
-  it('does not let "Veo 3.1 Lite[Lower Priority]" satisfy a request for "Veo 3.1 Lite"', () => {
-    // The bug this guards: "Veo 3.1 Lite" is a strict prefix of "Veo 3.1 Lite[Lower Priority]".
-    // A naive substring check would report the Lower Priority tier as already-selected and
-    // silently generate on it instead.
-    expect(videoModelAlreadySelected('Veo 3.1 Lite[Lower Priority]', 'Veo 3.1 Lite')).toBe(false)
-    expect(videoModelAlreadySelected('Veo 3.1 Lite[Lower Priority]', 'Veo 3.1 Lite[Lower Priority]')).toBe(true)
+  it('does not let "Lite [Lower Priority]" satisfy a request for plain "Lite"', () => {
+    // The suffix has a LEADING SPACE — the earlier lookahead guard assumed it did not, and
+    // let this exact case through.
+    expect(videoModelAlreadySelected('Veo 3.1 - Lite [Lower Priority]arrow_drop_down', 'Veo 3.1 - Lite')).toBe(false)
+    expect(
+      videoModelAlreadySelected('Veo 3.1 - Lite [Lower Priority]arrow_drop_down', 'Veo 3.1 - Lite [Lower Priority]'),
+    ).toBe(true)
   })
 
   it('handles a missing label', () => {
-    expect(videoModelAlreadySelected(null, 'Veo 3.1 Quality')).toBe(false)
+    expect(videoModelAlreadySelected(null, 'Veo 3.1 - Quality')).toBe(false)
   })
 })
 
