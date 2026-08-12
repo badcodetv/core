@@ -3,6 +3,38 @@
 **Date:** 2026-08-12 · **Status:** not started
 **Companion to:** [`2026-08-12-flow-automation-coverage.md`](./2026-08-12-flow-automation-coverage.md)
 
+## Where this stands (read first)
+
+**Wave A is code-complete and entirely unvalidated.** 14 commits on branch
+`worktree-flow-automation`, in the worktree at `.claude/worktrees/flow-automation`.
+117 tests pass, typecheck clean, tool surface 12 → 17. **Nothing is pushed**, and this
+branch is separate from `feat/enc-program`, which carries the earlier Flow work
+(`5a11bf6`, `e00f648`) plus Kai's ongoing ENC commits.
+
+**Before running anything below: reconnect the `flow` MCP (`/mcp`).** The server runs
+`tsx` against source, so a running process has none of Wave A's tools — you will get
+"unknown tool" for all five new ones and, worse, the OLD behaviour from the ones that
+changed.
+
+**Open decision for Kai, not blocking:** `flow_generate_video` now defaults to
+**Veo 3.1 Fast (20 credits)**, not Quality (100). The reasoning is the 5× spread and that
+nothing should silently spend at the top tier. But `flow-video.md` records our actual
+workflow as Quality, and the one clip we ever validated was Quality. Recommendation:
+keep Fast as the default and have `animate-slide` pass Quality explicitly at its
+motion-prompt approval gate, which is already the credit-spend checkpoint — that matches
+the "iterate cheap, spend on the locked shot" rule in `docs/flow/README.md`. Nothing
+breaks today because `animate-slide` does not call the tool until Wave C.
+
+**Wave C has not started**, and its first step is a mapping spike, not code:
+Frames-to-Video has **zero recorded selectors anywhere in the repo**, and per
+`docs/flow/platform-controls.md` first+last-frame may be Veo 3.1 Lite-only. Concluding
+"not usable at our tier yet" is a valid and useful outcome.
+
+**Useful live fixture:** the `magic-money-tree-story` Flow project already contains a cast
+Character named **`Economist`** (portrait + body, Nano Banana Pro), created 2026-08-12.
+It is named `Economist` and not `Keynes` deliberately — the Character Name field is
+policy-scanned. Use it for the character-read checks below.
+
 Wave A was written **blind** — one logged-in browser, strictly serial, so no coding agent
 could check its selectors against Flow. This is where the code meets the real UI for the
 first time.
