@@ -7,6 +7,7 @@ import { pickProject, SCRAPE_PROJECTS, type ProjectTile } from './project'
 import { batchOutPath } from './batch'
 import { candidateOutPath } from './candidates'
 import { escapeRegExp, isBoxCleared, modelAlreadySelected } from './compose'
+import { classifyCard, ANY_CARD_RE, type CardState } from './failure-card'
 
 const FLOW_URL = 'https://labs.google/fx/tools/flow'
 const DEFAULT_ENDPOINT = `http://localhost:${process.env.FLOW_CDP_PORT ?? '9222'}`
@@ -341,6 +342,21 @@ export class FlowClient {
     await this.page.keyboard.press('Escape')
   }
 
+  /**
+   * Read Flow's status/warning card (if one is showing) and classify it via failure-card.ts.
+   * Polled INSIDE every generation wait loop below — the whole point is aborting a policy
+   * block in seconds rather than running out the 90s (or 8-minute video) clock, so this must
+   * be a cheap, single-query probe cheap enough to call every tick, not a post-timeout check.
+   * `.first()` matters: a busy transcript can carry more than one matching message (see
+   * failure-card.ts's precedence notes), and classifyCard resolves the ambiguity from
+   * whichever text we hand it, so grabbing just the first hit is enough.
+   */
+  private async detectFailureCard(): Promise<CardState> {
+    const card = this.page.getByText(ANY_CARD_RE).first()
+    if (!(await card.count())) return null
+    return classifyCard(await card.textContent().catch(() => null))
+  }
+
   /** Snapshot the media UUIDs currently on the canvas, so a later turn can detect new ones. */
   private async snapshotMediaNames(): Promise<Set<string>> {
     const raw = (await this.page.evaluate(`(${SCRAPE_IMGS})()`)) as RawImg[]
@@ -352,6 +368,12 @@ export class FlowClient {
    * largest such image. Each Flow turn yields a fresh UUID, so comparing against the pre-submit
    * snapshot is what distinguishes a new generation from the previous (still on-canvas) image —
    * waiting for "any image" would harvest the stale previous frame on refine/batch turns.
+   *
+   * No candidate can ever land after a policy block, so `detectFailureCard()` is polled on
+   * every tick and a `blocked` verdict throws immediately — the entire point is not waiting
+   * out the full timeout on a prompt that can never pass (docs/flow/failure-modes.md §A1).
+   * `queued`/`error` are not actionable here (no credit gate to re-approve on the image path);
+   * they fall through to the same poll-and-retry as an unrecognised card.
    */
   private async waitForNewCanvas(
     before: Set<string>,
@@ -359,6 +381,7 @@ export class FlowClient {
   ): Promise<{ name: string; width: number; height: number }> {
     const deadline = Date.now() + timeoutMs
     while (Date.now() < deadline) {
+      if ((await this.detectFailureCard()) === 'blocked') throw new Error('POLICY_BLOCKED')
       const raw = (await this.page.evaluate(`(${SCRAPE_IMGS})()`)) as RawImg[]
       const imgs = toCanvasImgs(raw).filter((i) => !before.has(i.name))
       const name = pickActiveCanvas(imgs)
@@ -376,6 +399,13 @@ export class FlowClient {
    * candidates staggered (observed skew ≈ 9–15 s), so after the first arrival keep
    * polling for a grace window rather than the full turn timeout. Returns what
    * arrived (≥1) — the caller decides whether fewer than expected is `partial`.
+   *
+   * Fast-abort on a `blocked` card, BUT only while `found` is still empty. A multi-output
+   * turn can be blocked on some candidates and not others (or a block card can appear stale
+   * from an unrelated earlier turn), and once we are inside the grace window we already have
+   * real, harvestable candidates — throwing there would discard output the caller already
+   * paid for. So a block only aborts the "nothing has landed yet" phase; past that, this
+   * behaves exactly as before and lets the grace window run its course.
    */
   private async waitForNewCanvases(
     before: Set<string>,
@@ -387,6 +417,9 @@ export class FlowClient {
     let graceDeadline = Number.POSITIVE_INFINITY
     const found = new Map<string, CanvasImg>()
     while (Date.now() < Math.min(deadline, graceDeadline)) {
+      if (found.size === 0 && (await this.detectFailureCard()) === 'blocked') {
+        throw new Error('POLICY_BLOCKED')
+      }
       const raw = (await this.page.evaluate(`(${SCRAPE_IMGS})()`)) as RawImg[]
       for (const im of collectNewCanvases(toCanvasImgs(raw), before)) {
         const prev = found.get(im.name)
@@ -827,14 +860,26 @@ export class FlowClient {
     }
   }
 
-  /** Poll for a media name not present pre-submit whose content-type is video/*; retry a transient gate. */
+  /**
+   * Poll for a media name not present pre-submit whose content-type is video/*; retry a
+   * transient gate. Routes both known card states through `detectFailureCard()` /
+   * `classifyCard()` (failure-card.ts) rather than its own inline `getByText` checks, so there
+   * is one source of truth for what each card string means:
+   *   - `blocked` aborts immediately (POLICY_BLOCKED) — a video generation this large a spend
+   *     (Veo Quality = 100 credits) is exactly where burning the full 8-minute clock on an
+   *     unpassable prompt is most expensive.
+   *   - `error` ("Oops, something went wrong") re-approves the credit gate to retry, same
+   *     behaviour this loop always had.
+   *   - `queued` is deliberately NOT checked for here — it is benign (flow-video.md:41-49), and
+   *     the misleading `warning Failed`-looking icon that can render alongside it must never be
+   *     read as a reason to stop waiting.
+   */
   private async waitForVideoClip(before: Set<string>, timeoutMs: number): Promise<string> {
     const deadline = Date.now() + timeoutMs
     while (Date.now() < deadline) {
-      // A genuine failure re-posts the gate ("Oops, something went wrong") — re-approve to retry.
-      if (await this.page.getByText(/Oops, something went wrong/i).count()) {
-        await this.approveCreditGateIfPresent(5_000)
-      }
+      const card = await this.detectFailureCard()
+      if (card === 'blocked') throw new Error('POLICY_BLOCKED')
+      if (card === 'error') await this.approveCreditGateIfPresent(5_000)
       for (const n of await this.scrapeMediaNames()) {
         if (before.has(n)) continue
         const ct = await contentTypeOf(this.page.request, n)

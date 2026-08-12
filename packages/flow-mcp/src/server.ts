@@ -51,6 +51,7 @@ function toToolError(err: unknown): ToolResult {
   if (msg === 'ANIMATE_NOT_FOUND') return fail('ANIMATE_NOT_FOUND', 'No project media tile offered the Animate action.', 'The source still may not have finished uploading, or the tile is a video (whose menu has no Animate).')
   if (msg === 'SUBMIT_FAILED') return fail('SUBMIT_FAILED', 'The prompt was typed but Flow never accepted the submit.', 'Usually a wedged compose bar — reload the project URL (twice; the first load can throw a client-side exception) and retry.')
   if (msg === 'NOT_IN_PROJECT') return fail('NOT_IN_PROJECT', 'The page is not inside a Flow project.', 'Open one with flow_open_project, or pass a project id.')
+  if (msg === 'POLICY_BLOCKED') return fail('POLICY_BLOCKED', 'Flow flagged this generation as a possible policy violation — it will never complete no matter how long you wait.', 'Do NOT retry the same prompt. Rewrite it: check the reference image and any Character name/info fields, not just the prompt text (docs/flow/failure-modes.md §A2), then use the trigger list and rewrite table at docs/flow/failure-modes.md §A5-A6.')
   return fail('FLOW_ERROR', msg)
 }
 
