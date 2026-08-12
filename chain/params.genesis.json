@@ -31,9 +31,14 @@
 
   "sanity": {
     "maxChangeBps": 1000,
-    "maxSingleMint": 1000000000000000,
-    "_": "Bounds on what this program will believe from the oracle. A real monthly M2 move is a fraction of a percent, so 10% is already generous; a larger jump means the feed is wrong, not that the economy changed. maxSingleMint (1e15 base units, ~4.5% of today's supply) caps the damage if a bad quote passes the change check.",
+    "_": "How far the peg moves in ONE sync_m2, as a ratio: 10%. A real monthly M2 move is a fraction of a percent, so this is already generous. It is a SPEED LIMIT, NOT A VETO (T29): a release beyond it is absorbed over several permissionless calls rather than refused, because refusing was permanent - the baseline only advances on success, so one oversized release froze the peg forever and retire ended the coin a year later. The old companion maxSingleMint (an absolute number of base units) was DELETED for the same reason: any fixed token count is exceeded by an ordinary month once M2 has grown enough, which on a non-upgradeable program is a timer, not a guard.",
     "placeholder": true
+  },
+
+  "retirement": {
+    "silenceSeconds": 31536000,
+    "_": "How long the program must go without a new M2 figure before anyone may call retire: 365 days. It runs forever otherwise (Ruling B, 2026-08-12). Long on purpose and NOT a tuning knob: the flag is irreversible on a non-upgradeable program, M2 publishes monthly, and a Switchboard outage or a bad month must never be able to end the artwork. It is a Config field rather than a constant only so a test ledger can reach the case at all - the shipped value is this one.",
+    "placeholder": false
   },
 
   "prices": {

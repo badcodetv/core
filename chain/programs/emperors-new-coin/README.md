@@ -55,7 +55,10 @@ the feed is the cryptographic hash of its own fetch job, so no key exists
 that could point it somewhere else. Anyone may call `sync_m2` for a fraction
 of a cent: supply moves to `k × M2`, minted to (or burned from) the Emperor's
 vault, and all ten asset prices rescale by the same ratio, gliding to their
-new levels over thirty days so they tick every slot. A daily faucet drips ENC
+new levels over thirty days so they tick every slot. There is one speed
+limit — the peg will not move more than 10% of itself in a single call, so a
+figure wilder than that arrives in instalments rather than all at once. A
+real month is a fraction of a percent, so you will never see it. A daily faucet drips ENC
 from the vault to whoever shows up. The ten assets re-auction on a published
 clock, roughly monthly: the winner takes the tenancy and a certificate, and
 the outgoing holder is paid the entire winning bid. That is the whole
@@ -170,14 +173,20 @@ loop.
 
 Ideally never. But if a full year ever passes in which no new M2 figure
 reaches the program, anyone — you, a stranger, a bot with a cent — may call
-`retire`. Once, permanently. No key is consulted, no announcement is made; a
-passer-by can simply observe that it is over. The program cannot tell
-whether the Fed went dark or everyone stopped looking, and from where it
-sits those are the same event. What the ending looks like is still being
-argued about in the studio: freeze as a final exhibit, or keep trading
-forever at the last prices anyone reported. We lean toward the second. The
-machine grinding on, auctioning flags at the valuations of a vanished world,
-would be the truest thing in the whole piece.
+`retire`. Once, permanently. No key is consulted and no announcement is
+made; the instruction takes no signer at all, so a passer-by can simply
+observe that it is over. The program cannot tell whether the Fed went dark
+or everyone stopped looking, and from where it sits those are the same
+event.
+
+And then it keeps going. Retirement stops exactly one thing — the peg. The
+ten columns go on auctioning, forever, at the last prices the Fed ever
+reported: the machine grinding on, trading at the valuations of a vanished
+world, because nobody told it the numbers had stopped meaning anything. Your
+bids still go in and still come out; nothing is stranded by the end of the
+world. We considered freezing it all as a final exhibit and decided this was
+truer, and it costs no extra code — the prices were always going to stop
+moving on their own.
 
 ### Why ten assets, and what are they?
 

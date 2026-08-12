@@ -70,6 +70,21 @@ export const EPOCH_SECONDS = 15
  */
 export const GRANTS_PER_EPOCH = 3
 
+/**
+ * How long this ledger must go unsynced before `retire` will fire.
+ *
+ * The shipped value is a year, for the reason recorded in `params.genesis.json`
+ * — the flag is irreversible on a non-upgradeable program. A suite cannot wait
+ * one out, and unlike a term or an epoch this clock is **terminal**: once it
+ * fires, `sync_m2` refuses on this ledger forever. So `retire.ts` is excluded
+ * from the run-everything script and left to `./stack test test-retire`, after
+ * which the ledger wants a `./stack reset`.
+ *
+ * Twenty-five seconds, comfortably longer than the auction's term and the
+ * faucet's epoch, so nothing else in the suite can drift into it by accident.
+ */
+export const RETIREMENT_SILENCE_SECONDS = 25
+
 export interface Harness {
   provider: anchor.AnchorProvider
   program: anchor.Program<EmperorsNewCoin>
@@ -113,7 +128,8 @@ interface Params {
     welcomeGrant: number
     grantsPerEpoch: number
   }
-  sanity: { maxChangeBps: number; maxSingleMint: number }
+  retirement: { silenceSeconds: number }
+  sanity: { maxChangeBps: number }
 }
 
 export function harness(): Harness {
@@ -248,8 +264,10 @@ export function initParams(h: Harness) {
     termSeconds: new BN(TERM_SECONDS),
     // See EPOCH_SECONDS: at the shipped day, every faucet case would need one.
     epochSeconds: new BN(EPOCH_SECONDS),
+    // See RETIREMENT_SILENCE_SECONDS: the shipped year is unwaitable, and this
+    // clock is the one whose firing cannot be undone.
+    retirementSilenceSeconds: new BN(RETIREMENT_SILENCE_SECONDS),
     maxChangeBps: h.params.sanity.maxChangeBps,
-    maxSingleMint: new BN(h.params.sanity.maxSingleMint),
   }
 }
 

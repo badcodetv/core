@@ -20,6 +20,13 @@
 //! high enough to force turnover it made owning an asset a catastrophic loss,
 //! inverting the joke the coin exists to tell.
 //!
+//! **It runs forever, with one exception it proves for itself.** If a full year
+//! ever passes in which no new M2 figure reaches this program, anyone may call
+//! `retire` — once, permanently, with no key consulted. That stops `sync_m2`
+//! and nothing else: the auctions go on trading at the last prices the Fed ever
+//! reported. The program cannot tell whether the dollar ended or everyone
+//! stopped looking, and from where it sits those are the same event.
+//!
 //! The consequence to keep true as this grows: **no token leaves any wallet
 //! without that wallet owner's signature.** Not the coin, not the flags, not
 //! the certificates.
@@ -112,6 +119,13 @@ pub mod emperors_new_coin {
     /// issue, never reclaimed, and never worth the asset.
     pub fn mint_certificate(ctx: Context<MintCertificate>, index: u8, term: u64) -> Result<()> {
         instructions::mint_certificate::handler(ctx, index, term)
+    }
+
+    /// End it. **Anyone may call this**, and only once the program has gone
+    /// long enough without hearing what money is. No key, no discretion, no
+    /// announcement — a passer-by can observe that it is over.
+    pub fn retire(ctx: Context<Retire>) -> Result<()> {
+        instructions::retire::handler(ctx)
     }
 
     /// Set M2 by hand. **Compiled only under `--features mock`** — a default

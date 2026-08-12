@@ -117,26 +117,121 @@ describe('sync_m2', () => {
     expect(await h.failureOf(sync)).to.match(/StaleRelease/)
   })
 
-  it('refuses a move larger than the sanity cap', async () => {
-    const m2 = await currentM2()
-    const beyond = m2 + (m2 * (MAX_CHANGE_BPS + 100n)) / 10_000n
+  /**
+   * The cap is a speed limit, not a veto — and this is the case that used to
+   * assert the opposite.
+   *
+   * As built, a move beyond `max_change_bps` was refused. Because `previous_m2`
+   * only advances on success, that refusal was **permanent**: the gap never
+   * closed, every later sync failed too, and `retire` ended the coin a year
+   * later. One genuine hyperinflation-scale month would have killed the
+   * artwork at the exact moment its thesis was most vindicated. T29 replaced
+   * the refusal with a walk.
+   */
+  it('absorbs an oversized release over several syncs, committing the date once', async function () {
+    this.timeout(120_000)
+    const from = await currentM2()
+    // Five times the cap: five capped steps and a landing.
+    const beyond = from + (from * MAX_CHANGE_BPS * 5n) / 10_000n
+    const pricesBefore = await Promise.all(
+      Array.from({ length: ASSET_COUNT }, (_, i) => asset(i).then((a) => big(a.priceTo))),
+    )
+    const dateBefore = (await printer()).m2ReleaseDate.toNumber()
     await setM2(beyond)
-    expect(await h.failureOf(sync)).to.match(/ChangeTooLarge/)
+
+    let steps = 0
+    while ((await currentM2()) !== beyond) {
+      const before = await currentM2()
+      await sync()
+      steps += 1
+      const after = await currentM2()
+      expect(after > before, `step ${steps} did not move`).to.be.true
+      // Each step is within the cap, measured against where it started.
+      expect(
+        (after - before) * 10_000n <= before * MAX_CHANGE_BPS,
+        `step ${steps} exceeded the cap`,
+      ).to.be.true
+      if (after !== beyond) {
+        // The release date is withheld until the walk lands — which is exactly
+        // what lets the same quote back in for the next step.
+        expect(
+          (await printer()).m2ReleaseDate.toNumber(),
+          'the release date was committed mid-walk',
+        ).to.equal(dateBefore)
+      }
+      expect(steps, 'the walk did not converge').to.be.lessThan(20)
+    }
+
+    expect(steps, 'a five-times-the-cap move should take more than one step').to.be.greaterThan(1)
+    expect((await printer()).m2ReleaseDate.toNumber(), 'the release was never committed').to.equal(
+      release,
+    )
+    // Supply lands exactly where a single-step sync would have put it.
+    expect((await h.supply()).toString()).to.equal(targetFor(beyond).toString())
+
+    // And so do the prices: the steps telescope, up to truncation.
+    for (let i = 0; i < ASSET_COUNT; i++) {
+      const expected = (pricesBefore[i] * beyond) / from
+      const actual = big((await asset(i)).priceTo)
+      const drift = actual > expected ? actual - expected : expected - actual
+      expect(
+        drift * 1_000_000n <= expected,
+        `asset ${i} drifted ${drift} from the single-step target ${expected}`,
+      ).to.be.true
+    }
   })
 
-  it('refuses a mint larger than the per-sync cap even inside the change cap', async () => {
-    // Exactly at the change cap, which at this supply is still a bigger mint
-    // than max_single_mint allows — the second guard exists for precisely the
-    // window the first one lets through.
+  /**
+   * The other half of T29: no absolute cap in base units.
+   *
+   * `max_single_mint` was a fixed number of tokens against a money supply that
+   * doubles roughly every eleven years, so an ordinary month would have
+   * exceeded it eventually and deadlocked the peg forever. The walk above has
+   * just carried M2 well past today's level; an ordinary month must still work
+   * up there, and the mint it implies is far larger than the deleted cap ever
+   * allowed.
+   */
+  it('mints an ordinary month at a much larger money supply', async function () {
+    this.timeout(60_000)
     const m2 = await currentM2()
-    const atCap = m2 + (m2 * MAX_CHANGE_BPS) / 10_000n
-    const mintSize = targetFor(atCap) - (await h.supply())
-    expect(
-      mintSize > BigInt(h.params.sanity.maxSingleMint),
-      `the placeholder params no longer put this case between the two caps (mint would be ${mintSize})`,
-    ).to.be.true
-    await setM2(atCap)
-    expect(await h.failureOf(sync)).to.match(/MintTooLarge/)
+    expect(m2 > GENESIS_M2, 'this case needs M2 above where it started').to.be.true
+    // The historical median month: +0.522%.
+    const ordinary = m2 + (m2 * 52n) / 10_000n
+    const mintSize = targetFor(ordinary) - (await h.supply())
+    // The old placeholder cap was 1e15 base units. Nothing enforces it now,
+    // and this asserts the number it would have refused.
+    expect(mintSize > 0n, 'the ordinary month did not imply a mint').to.be.true
+
+    await setM2(ordinary)
+    await sync()
+    expect((await h.supply()).toString(), 'an ordinary month failed').to.equal(
+      targetFor(ordinary).toString(),
+    )
+    expect((await printer()).m2ReleaseDate.toNumber(), 'it needed more than one step').to.equal(
+      release,
+    )
+  })
+
+  /** Level-targeting self-heals: a bad print is corrected, not compounded. */
+  it('converges back to the truth after a bad print', async function () {
+    this.timeout(120_000)
+    const truth = await currentM2()
+    // A wrong number, walked partway toward — one step, then abandoned.
+    await setM2(truth * 2n)
+    await sync()
+    const drifted = await currentM2()
+    expect(drifted > truth, 'the bad print did not move the peg at all').to.be.true
+    expect(drifted < truth * 2n, 'the bad print landed in one step').to.be.true
+
+    // The next genuine release retargets absolutely. It is more than a cap
+    // away, so it walks — and lands on the truth, not on the truth minus
+    // whatever the bad print did.
+    await setM2(truth)
+    for (let i = 0; i < 20 && (await currentM2()) !== truth; i++) await sync()
+    expect((await currentM2()).toString(), 'the peg did not converge back').to.equal(
+      truth.toString(),
+    )
+    expect((await h.supply()).toString()).to.equal(targetFor(truth).toString())
   })
 
   it('refuses the wrong number of asset accounts', async () => {

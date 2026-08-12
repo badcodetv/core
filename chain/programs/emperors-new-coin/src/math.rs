@@ -64,19 +64,57 @@ pub fn supply_move(current_supply: u64, target: u64) -> SupplyMove {
     }
 }
 
-/// Absolute change from `old` to `new`, in basis points of `old`.
+/// One step of a catch-up walk: move `from` toward `to` by at most `cap_bps`.
 ///
-/// Used only as a sanity bound on the oracle. From a zero baseline any change
-/// is infinite, so that case reports the maximum rather than dividing by zero —
-/// which makes the very first sync after genesis fail the cap if genesis M2 was
-/// left at zero, and that is the correct outcome.
-pub fn change_bps(old: u64, new: u64) -> u64 {
-    if old == 0 {
-        return if new == 0 { 0 } else { u64::MAX };
+/// **This is what stops the sanity cap from being a doomsday device.** As first
+/// built, a release beyond `max_change_bps` was simply refused — and because
+/// `previous_m2` only advances on success, the refusal was *permanent*: the gap
+/// never closed, every later sync failed too, and `retire` ended the coin a year
+/// later. A single genuine hyperinflation-scale month would have killed the
+/// artwork at the exact moment its thesis was most vindicated.
+///
+/// So an oversized move is absorbed instead of refused. Each call moves by one
+/// capped step and does **not** commit the release date; repeated
+/// permissionless calls walk to the target over several transactions, and the
+/// final step — the one that lands exactly on `to` — commits it. The steps
+/// telescope, so prices end up rescaled by the same total ratio a single-step
+/// sync would have applied, up to truncation.
+///
+/// The honest trade, because it is permanent after T22: a bad oracle print is no
+/// longer refused outright, it is merely slow and expensive — anyone willing to
+/// send enough transactions can walk supply all the way to a wrong number. What
+/// makes that survivable is that level-targeting self-heals: the next genuine
+/// release retargets absolutely, exactly as it already does for an uncovered
+/// burn. A permanent deadlock does not self-heal, which is why this is the
+/// better of the two failure modes rather than a free lunch.
+///
+/// Two floors keep the walk from inventing new deadlocks of its own:
+///
+/// - **A step is never zero.** With a small `from` and a small cap the
+///   proportional step truncates to nothing, and a walk that cannot move is the
+///   same permanent refusal in a friendlier costume.
+/// - **A downward walk never reaches zero.** From zero there is no ratio to
+///   walk along and every later sync divides by nothing, so a program that
+///   could reach `m2 = 0` could never leave it. A real M2 of zero is not a
+///   reading, it is the end of money.
+pub fn capped_step(from: u64, to: u64, cap_bps: u16) -> Result<u64> {
+    if from == 0 {
+        return err!(EncError::NoBaselineM2);
     }
-    let delta = if new > old { new - old } else { old - new };
-    // (delta / old) × 10_000, in u128 so a large delta cannot wrap.
-    u64::try_from((delta as u128) * BPS / (old as u128)).unwrap_or(u64::MAX)
+    // At least one unit, so the walk always advances.
+    let cap = (((from as u128) * (cap_bps as u128)) / BPS).max(1);
+    if to >= from {
+        // Saturating, not checked: `to` is a `u64`, so a ceiling above `u64::MAX`
+        // is simply "no ceiling in range". Erroring here would refuse a step
+        // that is perfectly representable, which is the deadlock again.
+        let ceiling = u64::try_from((from as u128) + cap).unwrap_or(u64::MAX);
+        Ok(to.min(ceiling))
+    } else {
+        // `from` is at least 1 and `cap_bps` cannot exceed 100%, so this floors
+        // at 1 rather than wrapping.
+        let floor = ((from as u128).saturating_sub(cap)).max(1);
+        Ok(to.max(narrow(floor)?))
+    }
 }
 
 /// Scale `value` by `to / from`, in `u128` throughout.
@@ -264,28 +302,97 @@ mod tests {
         assert!(matches!(supply_move(before, revised), SupplyMove::Burn(_)));
     }
 
-    // ── Sanity bounds ───────────────────────────────────────────────────────
+    // ── The catch-up walk ───────────────────────────────────────────────────
 
     #[test]
-    fn measures_change_symmetrically_in_basis_points() {
-        assert_eq!(change_bps(10_000, 10_100), 100); // +1%
-        assert_eq!(change_bps(10_100, 10_000), 99); // −1% of a larger base
-        assert_eq!(change_bps(100, 200), 10_000); // doubled
-        assert_eq!(change_bps(M2_REAL, M2_REAL), 0);
+    fn an_in_cap_move_lands_in_one_step() {
+        // The ordinary case: the whole move is inside the cap, so the step *is*
+        // the quote and the caller commits the release date.
+        assert_eq!(capped_step(10_000, 10_500, 1_000).unwrap(), 10_500);
+        assert_eq!(capped_step(10_000, 9_500, 1_000).unwrap(), 9_500);
+        assert_eq!(capped_step(10_000, 10_000, 1_000).unwrap(), 10_000);
+        // Exactly at the cap still lands in one.
+        assert_eq!(capped_step(10_000, 11_000, 1_000).unwrap(), 11_000);
+        assert_eq!(capped_step(10_000, 9_000, 1_000).unwrap(), 9_000);
     }
 
     #[test]
-    fn treats_any_change_from_zero_as_unbounded_rather_than_dividing_by_zero() {
-        assert_eq!(change_bps(0, 1), u64::MAX);
-        assert_eq!(change_bps(0, 0), 0);
-        // So a genesis M2 left at zero fails any finite cap, which is correct.
-        assert!(change_bps(0, M2_REAL) > 10_000);
+    fn an_oversized_move_is_walked_rather_than_refused() {
+        // Five times the cap, up: five steps and a landing, never a refusal.
+        let target = 15_000u64;
+        let mut m2 = 10_000u64;
+        let mut steps = 0;
+        while m2 != target {
+            m2 = capped_step(m2, target, 1_000).unwrap();
+            steps += 1;
+            assert!(steps < 50, "the walk did not converge");
+        }
+        assert_eq!(steps, 5);
+
+        // And down, which is the direction that used to be able to reach zero.
+        let mut m2 = 10_000u64;
+        let mut steps = 0;
+        while m2 != 1_000 {
+            m2 = capped_step(m2, 1_000, 1_000).unwrap();
+            steps += 1;
+            assert!(steps < 100, "the downward walk did not converge");
+        }
+        assert!(steps > 1, "a 90% fall should not have landed in one step");
     }
 
+    /// The bug the walk could have introduced: a step that truncates to nothing
+    /// is the same permanent refusal wearing a friendlier hat.
     #[test]
-    fn change_from_the_extremes_does_not_wrap() {
-        assert_eq!(change_bps(1, u64::MAX), u64::MAX);
-        assert_eq!(change_bps(u64::MAX, 0), BPS as u64);
+    fn a_step_is_never_zero_however_small_the_numbers() {
+        // 10% of 5 truncates to 0. It must still move.
+        assert_eq!(capped_step(5, 1_000_000, 1_000).unwrap(), 6);
+        assert_eq!(capped_step(1, 1_000_000, 1).unwrap(), 2);
+        assert_eq!(capped_step(5, 1, 1_000).unwrap(), 4);
+    }
+
+    /// From zero there is no ratio to walk along, so a program that could reach
+    /// `m2 = 0` could never leave it — the exact deadlock class this replaces.
+    #[test]
+    fn a_downward_walk_never_reaches_zero_and_zero_is_refused_outright() {
+        let mut m2 = 1_000u64;
+        for _ in 0..500 {
+            m2 = capped_step(m2, 0, 1_000).unwrap();
+            assert!(m2 > 0, "the walk reached a value it could never leave");
+        }
+        assert_eq!(m2, 1);
+        // And if one ever arrived there anyway, it refuses rather than walking.
+        assert!(capped_step(0, 1_000, 1_000).is_err());
+    }
+
+    /// The property that lets the walk stand in for a single sync: the steps
+    /// telescope, so prices land where one big rescale would have put them.
+    #[test]
+    fn the_steps_telescope_to_the_same_total_ratio() {
+        let (from, to) = (10_000u64, 15_000u64);
+        let price = 1_000_000_000u64;
+
+        let one_step = rescale(price, from, to).unwrap();
+
+        let mut m2 = from;
+        let mut walked = price;
+        while m2 != to {
+            let next = capped_step(m2, to, 1_000).unwrap();
+            walked = rescale(walked, m2, next).unwrap();
+            m2 = next;
+        }
+
+        // Equal up to truncation, which loses at most one unit per step.
+        let drift = one_step.abs_diff(walked);
+        assert!(drift <= 10, "walking drifted {drift} from a single rescale");
+    }
+
+    /// A ceiling past `u64::MAX` means "no ceiling in range", not "refuse".
+    /// Erroring there would be the deadlock again, wearing a different hat.
+    #[test]
+    fn a_walk_at_the_top_of_the_range_saturates_rather_than_refusing() {
+        assert_eq!(capped_step(u64::MAX, u64::MAX, 1_000).unwrap(), u64::MAX);
+        assert_eq!(capped_step(u64::MAX - 1, u64::MAX, 1_000).unwrap(), u64::MAX);
+        assert_eq!(capped_step(u64::MAX, 0, 10_000).unwrap(), 1);
     }
 
     // ── Rescaling ───────────────────────────────────────────────────────────

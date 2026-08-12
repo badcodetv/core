@@ -7,11 +7,15 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: in progress — **18 of 31 done. T11 SUPERSEDED by the 2026-08-12
-architecture ruling and its code deleted by T30; the tenancy auction (T12) and
-the faucet (T13) are built and green, so the economy now has a route in and a
-route round. Next is T28, `retire`. Still open before T22: T29's proportional
-caps, and T31's Gazette.**
+Status: in progress — **20 of 31 done. T11 SUPERSEDED by the 2026-08-12
+architecture ruling and its code deleted by T30; the tenancy auction (T12), the
+faucet (T13), `retire` (T28) and the proportional caps (T29) are built and
+green, so the economy has a route in, a route round, an ending, and no
+arithmetic time bomb in it. **The program is feature-complete except for T31's
+Gazette**, which is the last thing owed before T22. Next is the economics pair,
+T14 then T15. One creative call was made on the documented recommendation and
+wants Kai/Jack's ratification: retirement keeps the auctions trading rather than
+freezing them (T28's Notes).**
 Date: 2026-08-06 · **architecture revised 2026-08-12 · adversarial review folded in 2026-08-12**
 
 > **Read [`2026-08-12-enc-architecture-decision.md`](./2026-08-12-enc-architecture-decision.md)
@@ -64,10 +68,10 @@ this table is the map.
 | ✅ | T30 · remove the rent machinery (the deletion Ruling A implies) | program |
 | ✅ | T12 · the tenancy auction — `place_bid` · `withdraw_bid` · `settle_auction` · `roll_term` · `mint_certificate` | program |
 | ✅ | T13 · the faucet — `claim` · `close_epoch` (Ruling C made it the only way in) | program |
-| ⬜ | **T28 · `retire` — the coin notices its own end** ← **you are here** | program |
-| ⬜ | T29 · proportional sync caps + the catch-up walk (2026-08-12 review; **must land before T22**) | program |
+| ✅ | T28 · `retire` — the coin notices its own end (ending ruled: **keep trading**) | program |
+| ✅ | T29 · proportional sync caps + the catch-up walk (2026-08-12 review) | program |
 | ⬜ | T31 · the Imperial Gazette — tenant copy + the editor's pen (**must land before T22**) | program |
-| ⬜ | T14 · economic simulation harness | economics |
+| ⬜ | **T14 · economic simulation harness** ← **you are here** | economics |
 | ⬜ | T15 · choose the genesis parameters | economics |
 | ⬜ | T17 · stand the M2SL feed up on devnet | oracle |
 | ⬜ | T18 · Switchboard on-chain read + crank (**wall-clock stall: budget a day**) | oracle |
@@ -1684,8 +1688,54 @@ while the page correctly reports localnet.
 - **TDD:** yes
 - **Validation:** `./stack test test-retire`.
 - **Depends on:** T10
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 7 cases green, including a stranger with no relationship to the program
+  ending it, and money still leaving escrow afterwards.
+  **The open creative call is answered: keep trading.** Both this ticket and the
+  decision doc recommended it, it is mechanically free (`PriceCurve` already
+  flattens at `price_to`, so after the final sync the machine simply holds), and
+  it is the *safe* option rather than merely the better one — a freeze would
+  have had to keep `withdraw_bid` and every escrow exit alive anyway or it would
+  strand live bids permanently. `retire` therefore touches exactly one thing:
+  `config.retired`, which only `sync_m2` reads. **Reversible until T22 and owed
+  Kai/Jack's ratification**; the program README now states it as built, since
+  the code does it.
+  **Three shape decisions.** (1) **`Printer` gained `last_sync_at`** — a unix
+  timestamp beside the existing `last_sync_slot`, because a program cannot
+  convert a slot into a date, so the slot could never answer "how long has it
+  been". It is **seeded at `initialize`**, not left at zero: at zero the coin
+  would be decades overdue for retirement the instant it was born and the first
+  stranger to look could end it before the first sync. It advances only on a
+  *successful* sync, which is the mechanism T18's Fed-sourced `release_date`
+  requirement protects — a feed still serving a dead series fails the
+  release-date guard, never reaches that line, and the clock keeps running.
+  (2) **`RETIREMENT_SILENCE` is `Config.retirement_silence_seconds`**, shipped
+  at 365 days and 25 seconds on the test ledger — the third parameter to make
+  that trade, after `term_seconds` and `epoch_seconds`. Marked
+  `placeholder: false`: the length is reasoned, not swept.
+  (3) **`Config` now documents two one-way latches** rather than one. Neither
+  `initialized_assets` nor `retired` has a key on it, and `retired` is not
+  anyone's decision — it is a condition the program checks about itself. The
+  economic parameters still have no setter at all.
+  **The suite is TERMINAL and is excluded from the run-everything script.**
+  Retirement is irreversible by design, so once `retire.ts` passes, `sync_m2`
+  refuses on that ledger forever and the auction and sync suites have nothing
+  to sync. `Anchor.toml`'s `test` now carries `--ignore 'tests/retire.ts'` with
+  the reason written next to it; `./stack test test-retire` runs it, and the
+  ledger wants `./stack reset` after. Nothing is lost from coverage: T23's
+  gate is "every `./stack test test-*` suite", which names them individually.
+  **Two traps worth not rediscovering.** Anchor **rejects `.signers([x])` on an
+  instruction with no signer account** — "unknown signer", because the extra key
+  is not in the account list. That refusal is itself proof of signerlessness,
+  but to actually *execute* as a stranger you must build the instruction and
+  send a raw `Transaction` with them as fee payer. And **`h.program.idl`
+  presents camelCase names**: an IDL shape assertion looking for `place_bid`
+  fails while `claim` passes, which reads as "the auction vanished". That is
+  `chain/README.md`'s "two IDLs that disagree" surfacing somewhere new — the
+  `initialize.ts` allowlist already carries both spellings for this reason. The
+  fix here was better than the assertion: the case now **places two bids and
+  withdraws one on a retired chain**, which proves what actually matters — that
+  no escrow is stranded by the end of the world.
 
 ### T29: Proportional sync caps — remove the built-in doomsday constants   [Status: pending — from the 2026-08-12 adversarial review | Model: opus]
 
@@ -1728,8 +1778,52 @@ while the page correctly reports localnet.
 - **Depends on:** T10. **Must land before T22** — the authority burn makes it
   permanent, and this is the one class of bug (works now, fails by arithmetic
   certainty later) that non-upgradeability turns fatal.
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 34 Rust unit tests (7 new, all on the walk) and the sync suite rewritten
+  around the new behaviour.
+  **`max_single_mint` was deleted rather than made proportional.** The ticket
+  offered either; `max_change_bps` already bounds the move as a ratio, so a
+  second cap in absolute base units bounded nothing that was not already bounded
+  and carried the whole time bomb by itself. Out with it went the `Config` field,
+  the `InitializeParams` field, the `sanity.maxSingleMint` parameter and the
+  `MintTooLarge` error.
+  **`ChangeTooLarge` went too, and that is the real shape of this ticket.** Once
+  an oversized move is *walked* rather than refused, no move is ever refused, so
+  the error had no remaining path to it. `NoBaselineM2` replaces it for the one
+  thing still refused — a walk from zero, which has no ratio to walk along.
+  `change_bps` was deleted with them: nothing calls it now, which is the standard
+  T30 applied to `rent_owed`. Error renumbering was free again, as T30 predicted,
+  because no suite matches on a numeric `60xx` code.
+  **Two floors the walk needed that the ticket did not specify, both of which
+  would have re-created the exact deadlock it exists to remove.**
+  (1) **A step is never zero.** The proportional step is `from × cap ÷ 10000`,
+  which truncates to nothing for a small enough `from` — and a walk that cannot
+  move is the same permanent refusal in a friendlier costume.
+  (2) **A downward walk never reaches zero.** This one is not theoretical:
+  repeated 10% cuts with integer truncation *do* reach zero, and from zero every
+  later sync has no baseline, so a program that could get there could never
+  leave. The walk floors at one unit. A real M2 of zero is not a reading, it is
+  the end of money.
+  Also: the ceiling at the top of `u64` **saturates rather than erroring**. A
+  ceiling above `u64::MAX` means "no ceiling in range", and refusing a step that
+  is perfectly representable would have been the deadlock in a third costume.
+  **The honest trade, recorded because T22 makes it permanent.** A bad oracle
+  print is no longer refused outright — it is merely slow and expensive, and
+  anyone willing to send enough transactions can walk supply all the way to a
+  wrong number. What makes that survivable is that level-targeting self-heals:
+  the next genuine release retargets absolutely, exactly as it already does for
+  an uncovered burn, and the suite proves it. A permanent deadlock does not
+  self-heal. This is the better of two failure modes, not a free lunch, and the
+  ticket's own sentence *"a bad print still moves at most one cap-step before
+  the next genuine release retargets it"* is true of a caller who stops and not
+  of one who does not. **No time gate was added**, deliberately: the ticket
+  specifies a per-transaction walk, and a clock that must be waited on is a new
+  deadlock class rather than a fix for the old one.
+  Two smaller things. `Synced` gained `release_committed`, so an indexer can
+  tell "still catching up" from "done" without diffing the printer. And T28's
+  retirement clock **does** advance on a partial step — the program genuinely
+  heard about money — which cannot be used to keep a dead coin alive, because a
+  walk always terminates and the release date then commits.
 
 ### T30: Remove the rent machinery   [Status: pending — the deletion Ruling A implies | Model: sonnet]
 
@@ -2040,6 +2134,26 @@ _(appended by executors during implementation)_
   message (`atLeast`/`atMost`/`above` at the top of `faucet.ts`). `sync_m2.ts`
   had already hit this and worked around it inline; the same trap waits in T28,
   T29 and T14.
+
+- **2026-08-12 · T28 · `program.idl` is camelCase, so an IDL shape test can
+  claim the auction vanished.** `h.program.idl.instructions` presents
+  **camelCase** names, so a test asserting the interface still contains
+  `place_bid` fails while the same test's `claim` passes — it reads as "half the
+  program is gone". This is `chain/README.md`'s "Anchor emits two IDLs that
+  disagree" turning up somewhere new: the committed `chain/idl/*.json` is
+  snake_case, the in-memory `Program.idl` is not. `initialize.ts`'s allowlist
+  already carries both spellings for exactly this reason and is the pattern to
+  copy. The better fix, where it is available, is to stop asserting shape and
+  assert behaviour — the case now places two bids and withdraws one on a retired
+  chain, which proves the thing the shape test was only gesturing at.
+
+- **2026-08-12 · T28 · Anchor refuses an extra signer, which is how you prove
+  an instruction has none.** `.signers([stranger])` on an instruction whose
+  account list contains no `Signer` fails with `unknown signer: <key>` — the key
+  is not in the account list, so web3.js will not attach it. Convenient as a
+  proof, useless as a way to *run* the thing as somebody else: for that, build
+  it with `.instruction()` and send a raw `Transaction` with the stranger as fee
+  payer. Both forms appear in `retire.ts`, doing different jobs.
 
 - **2026-08-12 · T30 · a default build can publish a stale IDL, so run T9's
   grep every time.** After deleting the two instructions, `./stack build`

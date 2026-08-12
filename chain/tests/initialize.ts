@@ -139,6 +139,7 @@ describe('initialize + init_asset', () => {
       'mint_certificate', 'mintCertificate',
       'claim',
       'close_epoch', 'closeEpoch',
+      'retire',
       // Mock builds only; absent from a real one, which the test below proves.
       'set_mock_m2', 'setMockM2',
       'mock_fund', 'mockFund',

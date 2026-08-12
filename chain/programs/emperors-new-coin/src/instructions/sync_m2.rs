@@ -16,7 +16,7 @@ use anchor_lang::prelude::*;
 use anchor_spl::token::{burn, mint_to, Burn, Mint, MintTo, Token, TokenAccount};
 
 use crate::errors::EncError;
-use crate::math::{change_bps, rescale, supply_move, target_supply, PriceCurve, SupplyMove};
+use crate::math::{capped_step, rescale, supply_move, target_supply, PriceCurve, SupplyMove};
 use crate::oracle::read_quote;
 use crate::state::*;
 
@@ -32,6 +32,10 @@ pub struct Synced {
     /// How much of a burn the vault could not cover. Non-zero means supply is
     /// left above target on purpose.
     pub uncovered_burn: u64,
+    /// False when this was one capped step of a catch-up walk rather than the
+    /// whole move — the release date is not committed until the walk lands, so
+    /// an indexer can tell "still catching up" from "done".
+    pub release_committed: bool,
     pub slot: u64,
 }
 
@@ -42,6 +46,11 @@ pub fn handler(ctx: Context<SyncM2>) -> Result<()> {
         ctx.accounts.config.initialized_assets == ASSET_COUNT,
         EncError::NotFullyInitialized
     );
+
+    // The one thing retirement stops. Everything else — the auctions, the
+    // faucet, the escrow exits — goes on forever at the last prices the Fed
+    // ever reported.
+    require!(!ctx.accounts.config.retired, EncError::Retired);
 
     let clock = Clock::get()?;
     let now = clock.unix_timestamp;
@@ -59,14 +68,19 @@ pub fn handler(ctx: Context<SyncM2>) -> Result<()> {
         EncError::StaleRelease
     );
 
-    // A real monthly M2 move is a fraction of a percent. A large jump means the
-    // oracle is wrong, not that the economy changed.
-    require!(
-        change_bps(previous_m2, quote.m2_value) <= config.max_change_bps as u64,
-        EncError::ChangeTooLarge
-    );
+    // The sanity cap is a **speed limit, not a veto** (T29). A move beyond it
+    // is walked toward over several permissionless calls rather than refused,
+    // because refusing it was permanent: `previous_m2` only advances on
+    // success, so one oversized release froze the peg forever and `retire`
+    // ended the coin a year later. A real monthly M2 move is a fraction of a
+    // percent, so in practice this lands in one step and nobody ever sees it.
+    let applied_m2 = capped_step(previous_m2, quote.m2_value, config.max_change_bps)?;
+    // Only the step that lands exactly on the quote commits its release date.
+    // Until then the guard above keeps letting the same quote back in, which is
+    // what makes the walk possible at all.
+    let release_committed = applied_m2 == quote.m2_value;
 
-    let target = target_supply(quote.m2_value, config.k)?;
+    let target = target_supply(applied_m2, config.k)?;
     let supply = ctx.accounts.mint.supply;
     let vault_seeds: &[&[u8]] = &[VAULT_SEED, &[ctx.bumps.vault]];
 
@@ -74,7 +88,10 @@ pub fn handler(ctx: Context<SyncM2>) -> Result<()> {
     let supply_delta: i128 = match supply_move(supply, target) {
         SupplyMove::Hold => 0,
         SupplyMove::Mint(amount) => {
-            require!(amount <= config.max_single_mint, EncError::MintTooLarge);
+            // No absolute cap on the size of a mint. `max_change_bps` already
+            // bounds the move as a *ratio*, and a bound in base units is a
+            // number an ordinary month outgrows — which on a non-upgradeable
+            // program is a timer rather than a guard (T29).
             mint_to(
                 CpiContext::new_with_signer(
                     ctx.accounts.token_program.key(),
@@ -115,24 +132,37 @@ pub fn handler(ctx: Context<SyncM2>) -> Result<()> {
         }
     };
 
-    rescale_assets(&ctx, previous_m2, quote.m2_value, now)?;
+    // Rescaled by *this step's* ratio, not the whole move's. The steps
+    // telescope, so a walk leaves prices where one big sync would have.
+    rescale_assets(&ctx, previous_m2, applied_m2, now)?;
 
     let printer = &mut ctx.accounts.printer;
-    printer.m2_value = quote.m2_value;
-    printer.m2_release_date = quote.release_date;
+    printer.m2_value = applied_m2;
+    if release_committed {
+        printer.m2_release_date = quote.release_date;
+    }
     printer.last_sync_slot = clock.slot;
+    // The retirement clock, and it restarts only here — on a sync that
+    // *succeeded*. A feed still serving a dead series fails the release-date
+    // guard above and never reaches this line, which is what stops a bot
+    // cranking a corpse from keeping the coin alive forever.
+    printer.last_sync_at = now;
     printer.target_supply = target;
 
     emit!(Synced {
-        m2_value: quote.m2_value,
-        m2_release_date: quote.release_date,
+        m2_value: applied_m2,
+        m2_release_date: printer.m2_release_date,
         target_supply: target,
         supply_delta,
         uncovered_burn,
+        release_committed,
         slot: clock.slot,
     });
 
-    msg!("M2 {previous_m2} -> {}, supply delta {supply_delta}", quote.m2_value);
+    msg!(
+        "M2 {previous_m2} -> {applied_m2} (of {}), supply delta {supply_delta}",
+        quote.m2_value
+    );
     Ok(())
 }
 

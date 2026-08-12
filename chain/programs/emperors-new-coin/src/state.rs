@@ -96,8 +96,14 @@ pub const PRICE_INTERPOLATION_SECONDS: i64 = 30 * SECONDS_PER_DAY;
 /// There is deliberately no instruction that mutates the economic parameters —
 /// not gated behind an authority, not present at all — because the program ships
 /// non-upgradeable and "not even we can change the rule" has to be literally
-/// true, not merely intended. The single exception is `initialized_assets`,
-/// which counts up to ten during bootstrap and then never moves again.
+/// true, not merely intended.
+///
+/// Two fields here move, and both are **one-way latches with no key on them**:
+/// `initialized_assets` counts up to ten during bootstrap and then never moves
+/// again, and `retired` flips once, permissionlessly, when the program has gone
+/// long enough without hearing a new M2 figure. Neither can be set back, and
+/// neither is anyone's decision — the second is a condition the program checks
+/// about itself.
 #[account]
 #[derive(InitSpace)]
 pub struct Config {
@@ -142,14 +148,37 @@ pub struct Config {
     /// else here.
     pub epoch_seconds: i64,
 
-    /// Largest M2 move, in basis points, this program will believe in one
-    /// release.
-    pub max_change_bps: u16,
-    /// Largest mint, in base units, this program will perform in one sync.
-    pub max_single_mint: u64,
+    /// How long the program must go without a new M2 figure before anyone may
+    /// `retire` it, in seconds. A year in the shipped parameters.
+    ///
+    /// Long on purpose: the flag is irreversible on a non-upgradeable program,
+    /// so a Switchboard outage or a bad month must never be able to end the
+    /// artwork. M2 publishes monthly; a year is twelve missed chances.
+    pub retirement_silence_seconds: i64,
 
-    /// Counts up to `ASSET_COUNT` during bootstrap. The only mutable field.
+    /// How far the peg will move in one `sync_m2`, in basis points.
+    ///
+    /// **A speed limit, not a veto** (T29). A release beyond it is absorbed
+    /// over several permissionless calls rather than refused — refusing it was
+    /// permanent, because the baseline only advances on success. There is
+    /// deliberately no companion cap in absolute base units: any fixed number
+    /// of tokens is exceeded by an ordinary month once M2 has grown enough, and
+    /// on a non-upgradeable program that is a timer, not a guard.
+    pub max_change_bps: u16,
+
+    /// Counts up to `ASSET_COUNT` during bootstrap, then never moves.
     pub initialized_assets: u8,
+
+    /// Whether the coin has noticed its own end. One-way, and nobody's
+    /// decision: `retire` sets it when the silence condition is already true,
+    /// and no instruction anywhere can set it back.
+    ///
+    /// The **only** thing it stops is `sync_m2`. Everything else keeps running
+    /// on the last prices the Fed ever reported — the machine grinding on,
+    /// auctioning flags at the valuations of a vanished world. That also
+    /// removes the one hazard a freeze would have carried: escrow that can
+    /// never be withdrawn.
+    pub retired: bool,
     pub bump: u8,
 }
 
@@ -167,6 +196,18 @@ pub struct Printer {
     pub m2_release_date: i64,
     /// Slot of the last successful sync. Informational.
     pub last_sync_slot: u64,
+    /// Unix seconds of the last successful sync — **our** clock, not the Fed's.
+    ///
+    /// This is the retirement clock, and it has to be wall time rather than the
+    /// slot beside it: a program cannot convert a slot into a date, so
+    /// `last_sync_slot` can never answer "how long has it been". Seeded at
+    /// `initialize` rather than left at zero, or the coin would be a year
+    /// overdue for retirement the moment it was born.
+    ///
+    /// It advances only on a **successful** sync, which is what makes silence
+    /// mean silence: a feed still serving a dead series fails the release-date
+    /// guard, this clock stops, and `retire` becomes true on schedule.
+    pub last_sync_at: i64,
     /// `k × m2_value` at the last sync — what supply was aimed at.
     ///
     /// Actual supply can sit *above* this, when a burn was larger than the

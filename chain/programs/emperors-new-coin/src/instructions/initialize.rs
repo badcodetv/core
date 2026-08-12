@@ -35,8 +35,8 @@ pub struct InitializeParams {
     pub grants_per_epoch: u16,
     pub term_seconds: i64,
     pub epoch_seconds: i64,
+    pub retirement_silence_seconds: i64,
     pub max_change_bps: u16,
-    pub max_single_mint: u64,
 }
 
 pub fn handler(ctx: Context<Initialize>, params: InitializeParams) -> Result<()> {
@@ -58,9 +58,10 @@ pub fn handler(ctx: Context<Initialize>, params: InitializeParams) -> Result<()>
     config.grants_per_epoch = params.grants_per_epoch;
     config.term_seconds = params.term_seconds;
     config.epoch_seconds = params.epoch_seconds;
+    config.retirement_silence_seconds = params.retirement_silence_seconds;
     config.max_change_bps = params.max_change_bps;
-    config.max_single_mint = params.max_single_mint;
     config.initialized_assets = 0;
+    config.retired = false;
     config.bump = ctx.bumps.config;
 
     // ── What the Fed last said ──────────────────────────────────────────────
@@ -71,6 +72,10 @@ pub fn handler(ctx: Context<Initialize>, params: InitializeParams) -> Result<()>
     // genesis date of `now` would reject every release published before today.
     printer.m2_release_date = 0;
     printer.last_sync_slot = clock.slot;
+    // The retirement clock starts **now**, not at zero. Left at zero the coin
+    // would be decades overdue for retirement the instant it was born, and the
+    // first stranger to look could end it before the first sync.
+    printer.last_sync_at = clock.unix_timestamp;
     printer.target_supply = genesis_supply;
     printer.bump = ctx.bumps.printer;
 
@@ -115,10 +120,15 @@ fn validate(p: &InitializeParams) -> Result<()> {
     // An epoch of zero would divide the clock by nothing and pin the whole
     // faucet to epoch 0 forever — one pot, once, and never another.
     require!(p.epoch_seconds > 0, EncError::InvalidRate);
-    // A cap of zero would reject every sync forever, permanently freezing the
-    // peg — the one thing the coin exists to do.
-    require!(p.max_change_bps > 0, EncError::ChangeTooLarge);
-    require!(p.max_single_mint > 0, EncError::MintTooLarge);
+    // A silence window of zero (or less) would let the first passer-by retire
+    // the coin in the same block it was born in. The flag is irreversible on a
+    // non-upgradeable program, so this is the one validation here whose absence
+    // would be immediately fatal rather than eventually embarrassing.
+    require!(p.retirement_silence_seconds > 0, EncError::InvalidRate);
+    // A cap of zero would make every walk a one-unit step, so a real move would
+    // take billions of transactions to land — the peg alive in principle and
+    // frozen in practice.
+    require!(p.max_change_bps > 0, EncError::InvalidRate);
     // The genesis supply must fit, or the program is born broken.
     target_supply(GENESIS_M2_VALUE, p.k)?;
     Ok(())

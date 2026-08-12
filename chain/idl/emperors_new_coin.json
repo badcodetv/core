@@ -1269,6 +1269,65 @@
       ]
     },
     {
+      "name": "retire",
+      "docs": [
+        "End it. **Anyone may call this**, and only once the program has gone",
+        "long enough without hearing what money is. No key, no discretion, no",
+        "announcement — a passer-by can observe that it is over."
+      ],
+      "discriminator": [
+        44,
+        138,
+        153,
+        31,
+        222,
+        53,
+        21,
+        16
+      ],
+      "accounts": [
+        {
+          "name": "config",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "printer",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  114,
+                  105,
+                  110,
+                  116,
+                  101,
+                  114
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "args": []
+    },
+    {
       "name": "roll_term",
       "docs": [
         "End a term nobody won: the incumbent keeps it, and any stale high bid is",
@@ -2154,6 +2213,19 @@
       ]
     },
     {
+      "name": "Retired",
+      "discriminator": [
+        106,
+        202,
+        161,
+        255,
+        255,
+        39,
+        222,
+        10
+      ]
+    },
+    {
       "name": "Synced",
       "discriminator": [
         114,
@@ -2195,113 +2267,118 @@
     },
     {
       "code": 6005,
-      "name": "ChangeTooLarge",
-      "msg": "M2 changed more in one release than the sanity cap allows"
+      "name": "NoBaselineM2",
+      "msg": "This program has no previous M2 to measure a move against"
     },
     {
       "code": 6006,
-      "name": "MintTooLarge",
-      "msg": "That would mint more in one step than the cap allows"
-    },
-    {
-      "code": 6007,
       "name": "NotUpgradeAuthority",
       "msg": "Only the program's upgrade authority may do that"
     },
     {
-      "code": 6008,
+      "code": 6007,
       "name": "AssetOutOfOrder",
       "msg": "Assets must be initialised in order"
     },
     {
-      "code": 6009,
+      "code": 6008,
       "name": "NotFullyInitialized",
       "msg": "The ten assets are not all initialised yet"
     },
     {
-      "code": 6010,
+      "code": 6009,
       "name": "InvalidAssetIndex",
       "msg": "Asset index out of range"
     },
     {
-      "code": 6011,
+      "code": 6010,
       "name": "AssetAlreadyInitialized",
       "msg": "That asset already exists"
     },
     {
-      "code": 6012,
+      "code": 6011,
       "name": "WrongHolderAccount",
       "msg": "That token account does not belong to the holder"
     },
     {
-      "code": 6013,
+      "code": 6012,
       "name": "InvalidInterpolationWindow",
       "msg": "Invalid price interpolation window"
     },
     {
-      "code": 6014,
+      "code": 6013,
       "name": "BidBelowReserve",
       "msg": "That bid is below what M2 says this asset is worth"
     },
     {
-      "code": 6015,
+      "code": 6014,
       "name": "BidNotHighEnough",
       "msg": "That bid does not beat the standing high bid"
     },
     {
-      "code": 6016,
+      "code": 6015,
       "name": "TermEnded",
       "msg": "This term has ended; it must be settled before bidding reopens"
     },
     {
-      "code": 6017,
+      "code": 6016,
       "name": "TermNotEnded",
       "msg": "This term has not ended yet"
     },
     {
-      "code": 6018,
+      "code": 6017,
       "name": "StaleBidOutstanding",
       "msg": "Withdraw your bid from the previous term first"
     },
     {
-      "code": 6019,
+      "code": 6018,
       "name": "BidIsStanding",
       "msg": "The standing high bid cannot be withdrawn until the term settles"
     },
     {
-      "code": 6020,
+      "code": 6019,
       "name": "WrongBidAccount",
       "msg": "That is not the standing high bid for this asset"
     },
     {
-      "code": 6021,
+      "code": 6020,
       "name": "NoQualifyingBid",
       "msg": "No bid cleared the reserve for this term"
     },
     {
-      "code": 6022,
+      "code": 6021,
       "name": "QualifyingBidExists",
       "msg": "A bid did clear the reserve; this term must be settled"
     },
     {
-      "code": 6023,
+      "code": 6022,
       "name": "NoCertificateDue",
       "msg": "No certificate is issuable for that tenancy"
     },
     {
-      "code": 6024,
+      "code": 6023,
       "name": "AlreadyClaimedThisEpoch",
       "msg": "You have already claimed this epoch"
     },
     {
-      "code": 6025,
+      "code": 6024,
       "name": "EpochNotSettled",
       "msg": "That epoch is not settled yet"
     },
     {
-      "code": 6026,
+      "code": 6025,
       "name": "WrongEpoch",
       "msg": "That is not the epoch this chain is currently in"
+    },
+    {
+      "code": 6026,
+      "name": "NotSilentEnough",
+      "msg": "This coin has heard about money too recently to be retired"
+    },
+    {
+      "code": 6027,
+      "name": "Retired",
+      "msg": "This coin has retired; the peg has stopped"
     }
   ],
   "types": [
@@ -2497,8 +2574,14 @@
         "There is deliberately no instruction that mutates the economic parameters —",
         "not gated behind an authority, not present at all — because the program ships",
         "non-upgradeable and \"not even we can change the rule\" has to be literally",
-        "true, not merely intended. The single exception is `initialized_assets`,",
-        "which counts up to ten during bootstrap and then never moves again."
+        "true, not merely intended.",
+        "",
+        "Two fields here move, and both are **one-way latches with no key on them**:",
+        "`initialized_assets` counts up to ten during bootstrap and then never moves",
+        "again, and `retired` flips once, permissionlessly, when the program has gone",
+        "long enough without hearing a new M2 figure. Neither can be set back, and",
+        "neither is anyone's decision — the second is a condition the program checks",
+        "about itself."
       ],
       "type": {
         "kind": "struct",
@@ -2599,26 +2682,52 @@
             "type": "i64"
           },
           {
+            "name": "retirement_silence_seconds",
+            "docs": [
+              "How long the program must go without a new M2 figure before anyone may",
+              "`retire` it, in seconds. A year in the shipped parameters.",
+              "",
+              "Long on purpose: the flag is irreversible on a non-upgradeable program,",
+              "so a Switchboard outage or a bad month must never be able to end the",
+              "artwork. M2 publishes monthly; a year is twelve missed chances."
+            ],
+            "type": "i64"
+          },
+          {
             "name": "max_change_bps",
             "docs": [
-              "Largest M2 move, in basis points, this program will believe in one",
-              "release."
+              "How far the peg will move in one `sync_m2`, in basis points.",
+              "",
+              "**A speed limit, not a veto** (T29). A release beyond it is absorbed",
+              "over several permissionless calls rather than refused — refusing it was",
+              "permanent, because the baseline only advances on success. There is",
+              "deliberately no companion cap in absolute base units: any fixed number",
+              "of tokens is exceeded by an ordinary month once M2 has grown enough, and",
+              "on a non-upgradeable program that is a timer, not a guard."
             ],
             "type": "u16"
           },
           {
-            "name": "max_single_mint",
-            "docs": [
-              "Largest mint, in base units, this program will perform in one sync."
-            ],
-            "type": "u64"
-          },
-          {
             "name": "initialized_assets",
             "docs": [
-              "Counts up to `ASSET_COUNT` during bootstrap. The only mutable field."
+              "Counts up to `ASSET_COUNT` during bootstrap, then never moves."
             ],
             "type": "u8"
+          },
+          {
+            "name": "retired",
+            "docs": [
+              "Whether the coin has noticed its own end. One-way, and nobody's",
+              "decision: `retire` sets it when the silence condition is already true,",
+              "and no instruction anywhere can set it back.",
+              "",
+              "The **only** thing it stops is `sync_m2`. Everything else keeps running",
+              "on the last prices the Fed ever reported — the machine grinding on,",
+              "auctioning flags at the valuations of a vanished world. That also",
+              "removes the one hazard a freeze would have carried: escrow that can",
+              "never be withdrawn."
+            ],
+            "type": "bool"
           },
           {
             "name": "bump",
@@ -2730,12 +2839,12 @@
             "type": "i64"
           },
           {
-            "name": "max_change_bps",
-            "type": "u16"
+            "name": "retirement_silence_seconds",
+            "type": "i64"
           },
           {
-            "name": "max_single_mint",
-            "type": "u64"
+            "name": "max_change_bps",
+            "type": "u16"
           }
         ]
       }
@@ -2812,6 +2921,23 @@
             "type": "u64"
           },
           {
+            "name": "last_sync_at",
+            "docs": [
+              "Unix seconds of the last successful sync — **our** clock, not the Fed's.",
+              "",
+              "This is the retirement clock, and it has to be wall time rather than the",
+              "slot beside it: a program cannot convert a slot into a date, so",
+              "`last_sync_slot` can never answer \"how long has it been\". Seeded at",
+              "`initialize` rather than left at zero, or the coin would be a year",
+              "overdue for retirement the moment it was born.",
+              "",
+              "It advances only on a **successful** sync, which is what makes silence",
+              "mean silence: a feed still serving a dead series fails the release-date",
+              "guard, this clock stops, and `retire` becomes true on schedule."
+            ],
+            "type": "i64"
+          },
+          {
             "name": "target_supply",
             "docs": [
               "`k × m2_value` at the last sync — what supply was aimed at.",
@@ -2824,6 +2950,43 @@
           {
             "name": "bump",
             "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Retired",
+      "docs": [
+        "Emitted once, ever. The receipt for the end of the artwork."
+      ],
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "at",
+            "docs": [
+              "When the bit was flipped."
+            ],
+            "type": "i64"
+          },
+          {
+            "name": "last_sync_at",
+            "docs": [
+              "The last time anyone told this program what money was."
+            ],
+            "type": "i64"
+          },
+          {
+            "name": "final_m2_value",
+            "docs": [
+              "What the Fed last said, and when they said it — the numbers the",
+              "auctions go on trading at forever."
+            ],
+            "type": "u64"
+          },
+          {
+            "name": "final_m2_release_date",
+            "type": "i64"
           }
         ]
       }
@@ -2863,6 +3026,15 @@
               "left above target on purpose."
             ],
             "type": "u64"
+          },
+          {
+            "name": "release_committed",
+            "docs": [
+              "False when this was one capped step of a catch-up walk rather than the",
+              "whole move — the release date is not committed until the walk lands, so",
+              "an indexer can tell \"still catching up\" from \"done\"."
+            ],
+            "type": "bool"
           },
           {
             "name": "slot",

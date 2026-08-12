@@ -39,10 +39,17 @@ wallet = "~/.config/solana/id.json"
 # which is what these are — so the shared tests/enc-harness.ts is unreachable
 # under it. tsx resolves both extensionless and .js-to-.ts specifiers.
 [scripts]
-test = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 'tests/**/*.ts'"
+# `retire` is excluded from the run-everything script on purpose: it is
+# TERMINAL. Retirement is irreversible by design, so once that suite passes,
+# `sync_m2` refuses on this ledger forever and the auction and sync suites have
+# nothing left to sync. Run it on its own with `./stack test test-retire`, then
+# `./stack reset`. T23 runs every `test-*` suite by name, so nothing is lost.
+test = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 'tests/**/*.ts' --ignore 'tests/retire.ts'"
 test-smoke = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/smoke.ts"
 test-counter = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/counter.ts"
 test-init = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/initialize.ts"
 test-sync = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/sync_m2.ts"
 test-auction = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/auction.ts"
 test-faucet = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/faucet.ts"
+# Terminal — see the note above `test`. Ends this ledger; `./stack reset` after.
+test-retire = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/retire.ts"

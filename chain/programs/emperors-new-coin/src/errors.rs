@@ -39,17 +39,16 @@ pub enum EncError {
     #[msg("That M2 release has already been applied")]
     StaleRelease,
 
-    /// M2 moved further in one release than the sanity cap allows.
+    /// There is no previous M2 to measure a move against.
     ///
-    /// A real monthly M2 move is a fraction of a percent. A large jump means the
-    /// oracle is wrong, not that the economy changed, so we refuse rather than
-    /// mint against it.
-    #[msg("M2 changed more in one release than the sanity cap allows")]
-    ChangeTooLarge,
-
-    /// A single sync would have minted more than the per-sync cap.
-    #[msg("That would mint more in one step than the cap allows")]
-    MintTooLarge,
+    /// Replaces `ChangeTooLarge` and `MintTooLarge`, both of which T29 deleted.
+    /// A move beyond the sanity cap is no longer *refused* — refusing it was
+    /// permanent, because the baseline only advances on success, so one
+    /// oversized release killed the peg forever. It is walked instead. The only
+    /// thing left to refuse is a walk that has no ratio to walk along, which
+    /// needs a baseline of zero and cannot be reached from a live program.
+    #[msg("This program has no previous M2 to measure a move against")]
+    NoBaselineM2,
 
     // ── Lifecycle ───────────────────────────────────────────────────────────
     /// Bootstrap was attempted by someone other than the program's upgrade
@@ -174,4 +173,17 @@ pub enum EncError {
     /// mempool across an epoch boundary; resubmit it with the new number.
     #[msg("That is not the epoch this chain is currently in")]
     WrongEpoch,
+
+    // ── The ending ──────────────────────────────────────────────────────────
+    /// `retire` while the program has heard from the Fed recently enough.
+    ///
+    /// Nobody can end this early. The condition is elapsed time since the last
+    /// successful sync, which is true or false whether or not anyone is
+    /// watching — no key, no discretion, no announcement.
+    #[msg("This coin has heard about money too recently to be retired")]
+    NotSilentEnough,
+
+    /// `sync_m2` after retirement. There is no way back.
+    #[msg("This coin has retired; the peg has stopped")]
+    Retired,
 }
