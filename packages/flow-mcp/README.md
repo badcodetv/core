@@ -9,7 +9,8 @@ MCP server that drives Google Flow over CDP to generate images/videos and harves
 ## Tools
 
 Ground truth is `src/server.ts` (each `server.registerTool(...)` call) — if this list and
-the code ever disagree, the code wins; fix this file. 12 tools as of this writing.
+the code ever disagree, the code wins; fix this file. Count them there rather than
+trusting a number here — this list is being actively extended.
 
 ### Status & projects
 - `flow_status()` → `{ loggedIn, projectOpen, url }`
@@ -17,8 +18,11 @@ the code ever disagree, the code wins; fix this file. 12 tools as of this writin
   sensitive match against the projects grid). Errors `PROJECT_NOT_FOUND` if nothing
   matches. Returns `{ loggedIn, projectOpen, url }`.
 
-There is no `flow_create_project` or `flow_list_projects` yet — creating and enumerating
-projects is still a manual step in the Flow UI.
+- `flow_list_media({ query?, limit? })` → `{ title, kind, mediaId?, index }[]` for the open
+  project's gallery, in gallery order. **This is how you get the `mediaTitle` that
+  `flow_create_character_from_media` requires** — the gallery legitimately repeats titles
+  (Flow auto-captions), so titles are never de-duplicated or suffixed; use `index` to
+  disambiguate rather than editing the title text, which must match what the UI shows.
 
 ### Images
 - `flow_generate_image({ prompt, outPath, character?, numOutputs? })` — `character` casts
@@ -46,14 +50,15 @@ projects is still a manual step in the Flow UI.
   batch, or split it, until this is fixed.
 
 ### Video
-- `flow_generate_video({ imagePath, motion, model?, outPath })` — uploads `imagePath`,
-  attaches it via the tile's Animate menu, applies the motion prompt, saves the `.mp4` to
-  `outPath`. Returns `{ path, mediaId }`. ⚠️ **`model` is accepted by the schema but
-  silently discarded** — `generateVideo` takes it as `_model` and never reads it
-  (`flow-client.ts:748`). Combined with Flow's per-project defaults resetting to Omni
-  Flash, a caller who asks for Veo 3.1 Quality can silently get an Omni Flash clip at
-  whatever tier the Settings panel happens to be on. Don't rely on this parameter for
-  tier control yet — check/set the Settings panel by hand first if the tier matters.
+- `flow_generate_video({ imagePath, motion, model?, aspect?, count?, outPath })` — uploads
+  `imagePath`, attaches it via the tile's Animate menu, applies the motion prompt, saves the
+  `.mp4` to `outPath`. Returns `{ path, mediaId }`.
+  **Tier and aspect are asserted per call** through Flow's `tune Settings` panel, because
+  those defaults reset per project (a fresh project comes up as Omni Flash), so without the
+  assertion a caller asking for Quality could silently get an Omni Flash clip.
+  **`model` defaults to `Veo 3.1 Fast` (20 credits).** Lite is 10, **Quality is 100** — the
+  spread is steep enough that defaulting to the top tier would risk a 5× spend nobody asked
+  for, so Quality is opt-in. Override the default globally with `FLOW_VIDEO_MODEL`.
 
 ### Characters
 - `flow_create_character({ name, refImages, body?, info?, bodyOutPath?, model? })` —
@@ -101,7 +106,7 @@ in `server.ts`). Codes a caller can branch on today:
 | Code | Meaning | Hint |
 | --- | --- | --- |
 | `NOT_RUNNING` | Could not attach to Chrome on the CDP port. | Run `./scripts/flow-chrome.sh` and log into Google/Flow, then retry. |
-| `TIMEOUT` | Flow did not finish generating in time. | Overloaded — this is also what a policy block looks like. See "Usage-policy blocks" below before retrying. |
+| `TIMEOUT` | Flow did not finish generating in time. | A genuine slow/stuck generation. Policy blocks now return `POLICY_BLOCKED` instead, so this no longer means "probably blocked". |
 | `PROJECT_NOT_FOUND` | No Flow project with that exact name. | Check the name in the Flow projects list. |
 | `CHARACTER_NOT_FOUND` | No Character with that name in the open project. | Check the Characters tab; names are case-sensitive. |
 | `BODY_EXISTS` | That character already has a Body view. | Use `flow_edit_character` with `target: 'body'` to change it. |
@@ -110,6 +115,7 @@ in `server.ts`). Codes a caller can branch on today:
 | `ANIMATE_NOT_FOUND` | No project media tile offered the Animate action. | The source still may not have finished uploading, or the tile is a video (its menu has no Animate). |
 | `SUBMIT_FAILED` | The prompt was typed but Flow never accepted the submit. | Usually a wedged compose bar — reload the project URL (twice; the first load can throw a client-side exception) and retry. |
 | `NOT_IN_PROJECT` | The page is not inside a Flow project. | Open one with `flow_open_project`, or pass a project id. |
+| `POLICY_BLOCKED` | Flow flagged the generation as a possible policy violation. | **Never retry** — it can never pass. Rewrite per `docs/flow/failure-modes.md`, checking the Character name/info and reference image too, not just the prompt. |
 | `FLOW_ERROR` | Fallback for anything not mapped above. | Read `message` — it carries the raw underlying error text. |
 
 ⚠️ `flow_edit_character` can also throw `NO_PORTRAIT` internally (`target: 'portrait'`
@@ -155,15 +161,20 @@ used to be duplicated here. Read it before writing a prompt that might trip a fi
 
 What's genuinely specific to this server:
 
-- **A policy block is invisible to this server.** Flow shows a warning card in the
-  browser, but over CDP it surfaces as a plain `TIMEOUT` (see the Errors table above) —
-  indistinguishable from a slow generation. There is no distinct `POLICY_BLOCKED` code
-  yet; `TIMEOUT` is currently overloaded for both cases.
-- **Two-failure diagnosis heuristic:** if a call fails twice with no candidates and the
-  session is otherwise healthy (`flow_status` fine, project loads, other prompts
-  succeed), assume policy block, not timeout — rewrite the prompt per
-  `docs/flow/failure-modes.md` rather than retrying it. Glance at the Flow window to
-  confirm.
+- **A policy block returns `POLICY_BLOCKED`, not `TIMEOUT`.** The generation waits poll
+  Flow's status card every tick and classify it (`failure-card.ts`), so a block aborts in
+  seconds instead of running out the 90s (or 8-minute video) clock. **Never retry a
+  `POLICY_BLOCKED` call** — it can never pass. Rewrite per `docs/flow/failure-modes.md`,
+  and check the Character name/info fields and the reference image, not just the prompt
+  text: every field Flow reads is scanned.
+- **The other two card states are handled, not confused with it.** `queued` ("waiting in
+  the queue due to high demand") is benign and keeps waiting — note a `warning Failed`-looking
+  icon can render while queued. `error` ("Oops, something went wrong") is transient; Flow
+  re-posts the credit gate and the video path re-approves to retry.
+- **Two-failure heuristic, still useful as a backstop:** if a call fails twice with no
+  candidates and no `POLICY_BLOCKED`, and the session is otherwise healthy, glance at the
+  Flow window — the card wording may have changed and `failure-card.ts` may need a new
+  pattern.
 
 **Separate concern — publication, not generation:** an image can pass generation and
 still carry a brand-usage risk once it's in a comic (visible real signage, etc.). That's
