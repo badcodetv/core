@@ -243,6 +243,50 @@ glasses, flipping a cap's orientation, swapping an entire environment when asked
 outfit), and occasionally ends a clip with a stuttering loop. One creator rates the adherence as
 comparable to Veo 3.1 — a step down from current best-in-class. Budget for regenerations.
 
+## The `<FIRST_FRAME>` tag — a documented binding mechanism `[vendor]`
+
+**Found 2026-08-12** while writing the Karen §2d clip prompts, in Google's own API
+reference. It was missed on the first pass and it bears directly on
+[the animate-slide problem](#the-animate-slide-problem).
+
+The API documents **explicit inline tags that assign a role to each uploaded image**:
+
+- **`<FIRST_FRAME>`** — placed inline at the *start* of the prompt text, binds an
+  image to the starting-frame role. Documented example: `<FIRST_FRAME> a woman is walking`
+- **`<IMAGE_REF_N>`** — reference images, **zero-indexed**, up to six. Documented
+  example: `"in the style of <IMAGE_REF_0> a woman <IMAGE_REF_1> is walking"`
+- **Explicit declaration prefixes** for multi-image prompts:
+  `[# Sources <FIRST_FRAME>@Image1] [# References <IMAGE_REF_0>@Image2]`
+
+**Why this matters.** The `[community]` complaint recorded above — "no true
+first-frame-to-video… references through the agent, causing heavy redesign" — reads
+very differently now. There *is* a first-frame binding mechanism; the complaint
+most plausibly describes **default reference behaviour when the role was never
+declared**. That is a configuration problem, not a model limitation.
+
+**It does not overturn the verdict yet**, for two reasons: this is *API* syntax and
+`animate-slide` runs through Flow's UI, and the **end-frame** finding is separate and
+independently confirmed (Omni has no end frame; Veo 3.1 Quality does). But it
+converts the first-frame question from "the model can't" to "we never asked
+properly", and it makes the confirming test more urgent, not less.
+
+**The cheap test:** type `<FIRST_FRAME>` into Flow's prompt box on a plate with a
+known-exact composition and see whether frame one comes back pixel-matched. If Flow
+passes prompt text through to the model unmodified, the tag should work there too.
+
+Two further points from the same reference:
+
+- **Guiding instructions go at the *end* of the prompt** — "add instructions at the
+  prompt's end", e.g. `Use this image as the starting frame.` Our §2b prompts put it
+  second; the Karen §2d set moves it last.
+- **Timecodes parse**: `[0-3s] A person is walking`, or plain "after three seconds".
+  Useful for beat-timed motion graphics, which is one of Omni's stronger modes.
+
+Sources: [Generate and edit videos with Gemini Omni Flash](https://ai.google.dev/gemini-api/docs/omni) `[vendor]` ·
+[DeepMind Omni prompt guide](https://deepmind.google/models/gemini-omni/prompt-guide/) `[vendor]`
+(the latter now fetches, and confirms the five core elements and the
+"you don't have to be as prescriptive" line the practitioner guides restate).
+
 ## Notes for BadCode `[untested]`
 
 1. **10s per generation fits `music-video-short`'s 10–20s target as 2+ clips** — consistent with

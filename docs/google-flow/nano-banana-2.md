@@ -197,6 +197,57 @@ naturalistic motivated light, film grain. The engine's default improvement direc
 axis our house style suppresses. If panels start reading glossy, this is why, and Nano Banana Pro
 may be the better engine for us despite being the older, slower, more rate-limited one.
 
+## Second web pass — 2026-08-12 `[vendor]` `[community]`
+
+Harvested while writing the Karen §2c title-sequence plates
+([`docs/stories/karen/prompts.md`](../stories/karen/prompts.md)). Google's own
+guide plus the current crop of NB2 playbooks. Seven things the first pass missed.
+
+1. **A style reference does not carry style.** The most counter-intuitive finding
+   and the most useful: an attached reference anchors **identity and content**,
+   and the model **will not assume the output matches the reference's style
+   unless the prompt says so** — style has to be stated explicitly every time,
+   even with the reference attached. `[community]` This retroactively justifies
+   the Karen §2a habit of pasting the full style lock *and* attaching a style
+   reference. It is not redundancy.
+2. **Naming the use case measurably improves output.** "A hero shot for a luxury
+   perfume launch", "a print-ready conference poster" — the model reportedly uses
+   that context "to make a thousand small decisions". `[community]` Cheap to add
+   and we do not currently do it anywhere.
+3. **Series membership can be stated in prose.** Recommended phrasing:
+   *"this is panel 3 of a 6-panel sequence; maintain visual identity with panels 1
+   and 2"*. `[community]` Directly relevant to storyboard panel runs, where we
+   currently lean entirely on references and the Character system.
+4. **Negatives work, but short ones.** This resolves the tension flagged in note 2
+   of *Notes for BadCode* below. Google's house rule is positive framing only —
+   "empty street", never "no cars" `[vendor]` — yet `Not photorealistic` appears in
+   Google's own illustration examples, and NB2 is reported to honour targeted
+   negations more reliably than earlier generations, with the caveat that **long
+   exclusion lists dilute the effect**. `[community]` Working resolution:
+   **negate the style family in a clause, describe everything else positively.**
+   Our eight-line exclusion stacks are the shape most likely to be underperforming.
+5. **Hex codes are understood** — strongly by Nano Banana Pro, "to a lesser extent"
+   by NB2. `[community]` Untested by us, and the obvious lever for any palette that
+   has to hold across a series.
+6. **Two regenerations, then rewrite.** "If you have regenerated the same prompt
+   more than twice… rewrite from scratch." `[community]` Matches what the
+   `edit-panel` loop already assumes about re-anchoring.
+7. **Keyframes → video is the vendor's own recommended path**: "create keyframes
+   with Nano Banana to direct an animation, then use Veo to generate the video
+   between them". `[vendor]` The Karen §2b plate→clip pipeline is doing the
+   endorsed thing, not improvising.
+
+**Sources:** [Google Cloud — Ultimate prompting guide for Nano Banana](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana) ·
+[Fliki — NB2 prompting guide](https://fliki.ai/blog/nano-banana-2-prompting-guide) ·
+[RunDiffusion — consistent character campaign images](https://www.rundiffusion.com/nano-banana-2-consistent-character-images) ·
+[Flowith — consistent characters across 50 storyboard frames](https://flowith.io/blog/nano-banana-consistent-characters-storyboard/) ·
+[Pixeldojo — NB2 negative prompts](https://pixeldojo.ai/nano-banana-2-negative-prompt) ·
+[Atlabs — NB2 prompting guide](https://www.atlabs.ai/blog/nano-banana-2-prompting-guide)
+
+**Same bias warning as the `[yt]` table.** Most of these are vendor blogs for
+competing platforms; several demonstrate in third-party wrappers rather than Flow.
+Google's own guide is the only unambiguously `[vendor]` source in the list.
+
 ## Notes for BadCode `[untested]`
 
 Hypotheses for the calibration run, not rules.
