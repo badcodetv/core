@@ -31,13 +31,17 @@ try {
   await inner.closeAssetPicker()
 
   console.log('\n=== RAW character rows ===')
-  const chars = await page.evaluate(`() => [...document.querySelectorAll('a[href*="/character/"], [data-character-id]')].map(el => ({
+  // MUST be invoked as `(${fn})()`: evaluating a bare arrow-function string returns the
+  // FUNCTION, and Playwright serialises that as undefined — so this printed "undefined" and
+  // read as "no character rows on the page" while four characters were sitting there.
+  // media-list.ts and project.ts carry the same warning; this script had the bug it warns about.
+  const chars = await page.evaluate(`(() => [...document.querySelectorAll('a[href*="/character/"], [data-character-id]')].map(el => ({
     tag: el.tagName,
     href: el.getAttribute('href') || undefined,
     ariaLabel: el.getAttribute('aria-label') || undefined,
     text: (el.textContent || '').trim().slice(0, 200),
     imgAlt: el.querySelector('img') ? el.querySelector('img').getAttribute('alt') : undefined,
-  }))`)
+  })))()`)
   console.log(JSON.stringify(chars, null, 2))
 } finally {
   await client.close()

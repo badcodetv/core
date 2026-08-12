@@ -470,8 +470,24 @@ export class FlowClient {
    */
   async listCharacters(): Promise<CharacterListItem[]> {
     await this.ensureProjectRoot()
-    const raw = (await this.page.evaluate(`(${SCRAPE_CHARACTERS})()`)) as RawCharacterRow[]
-    return parseCharacters(raw)
+    // The project root's grid hydrates AFTER navigation, so a single immediate read returns []
+    // on a project that plainly has characters — the same silent race listMedia and
+    // listProjects were both already fixed for, and this was the third instance. Seen live
+    // 2026-08-12: called straight after finishCharacter() navigated back, it reported zero
+    // while four characters were on screen.
+    //
+    // Short window, like listProjects: an empty read is ambiguous between "still hydrating"
+    // and "genuinely no characters", and blocking a full turn timeout on an empty project
+    // would be worse than answering promptly.
+    const deadline = Date.now() + 15_000
+    let rows: CharacterListItem[] = []
+    while (Date.now() < deadline) {
+      const raw = (await this.page.evaluate(`(${SCRAPE_CHARACTERS})()`)) as RawCharacterRow[]
+      rows = parseCharacters(raw)
+      if (rows.length) break
+      await this.page.waitForTimeout(POLL_MS)
+    }
+    return rows
   }
 
   /**
@@ -1177,8 +1193,21 @@ export class FlowClient {
   ): Promise<CharacterRef & { bodyMediaId?: string; bodyPath?: string }> {
     await this.ensureProjectRoot()
     await this.forceClick(this.page.getByRole('button', { name: /accessibility_new\s*Characters/i }).first())
-    await this.page.waitForURL(/\/characters\b/, { timeout: TURN_TIMEOUT_MS })
+    // NO waitForURL(/characters/) here: Characters is a sidebar VIEW, and after a hard goto the
+    // app does not reliably push a URL for it (observed live 2026-08-12 — the view switched, the
+    // URL stayed on the bare project). Gate on the control we need instead.
+    //
+    // "Add from Project" lives one level deeper than this was written to assume: inside the
+    // New Character editor, not the Characters view. On an EMPTY project Flow skips the grid and
+    // drops straight into that editor, which is why the original blind sequence appeared to work
+    // — it was only ever exercised with zero characters. As soon as one exists, the grid shows
+    // and the button is not on the page. Click the tile only when the button isn't already there.
     const addFromProject = this.page.getByRole('button', { name: /add\s*Add from Project/i }).first()
+    if (!(await addFromProject.isVisible().catch(() => false))) {
+      const newCharacter = this.page.getByText('New Character', { exact: true }).first()
+      await newCharacter.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+      await this.forceClick(newCharacter)
+    }
     await addFromProject.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     await this.forceClick(addFromProject)
     const dialog = this.page.getByRole('dialog').last()
@@ -1189,9 +1218,13 @@ export class FlowClient {
       throw new Error('MEDIA_NOT_FOUND')
     }
     await this.forceClick(option)
+    // Clicking an option ATTACHES it and closes the picker by itself — the editor is fully
+    // populated ~1.5s later (mapped live 2026-08-12, smoke-charadd.ts). The dialog's
+    // "Add to Character" button is real but belongs to a multi-select path this never enters,
+    // so waiting for it spent the full 90s timeout on a dialog that had already gone. Click it
+    // only if it is genuinely still there.
     const addToCharacter = dialog.getByRole('button', { name: /Add to Character/i }).first()
-    await addToCharacter.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
-    await this.forceClick(addToCharacter)
+    if (await addToCharacter.isVisible().catch(() => false)) await this.forceClick(addToCharacter)
     return this.finalizeCharacter(name, opts)
   }
 
