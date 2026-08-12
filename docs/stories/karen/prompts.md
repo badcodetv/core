@@ -85,6 +85,80 @@ still owed a ruling.
 
 ---
 
+## 1b. The ILLUSTRATED REGISTER — Karen's second style lock
+
+**Added 2026-08-12** from six reference frames Kai supplied (video stills in which
+the picture transitions *out of* the super-8 register in §1 and *into* this one).
+This is a **second register, not a replacement**: §1 is the live-action-feel
+capture emulation, this is the graphic register the films cut to. Both are Karen.
+
+### What the reference frames establish
+
+- **Two-family palette, no third.** Deep desaturated navy / slate-blue / near-black
+  carries every unlit mass; amber, ochre and sodium-orange carry every lit surface.
+  One saturated accent (a taxi yellow) is the only colour allowed to escape.
+- **Flat geometric planes.** Buildings are plain extruded blocks; windows are
+  punched rectangles of warm light. No surface detail below the level of a large
+  flat shape.
+- **Hard-edged light.** Light arrives as pools and shafts with crisp borders;
+  shadows fall as clean geometric wedges, never soft gradients.
+- **Matte painted texture.** Visible canvas tooth and fine grain — it reads as a
+  photographed painted board, not clean vector.
+- **Figures as near-silhouettes.** Hair is one flat mass, clothing is flat shapes,
+  and **facial features are implied by shadow rather than drawn.** In the closest
+  reference the face carries no features at all.
+- **Depth by stacked value**, layers reading like separate cut-out cards.
+- **Cinematic widescreen, strong central framing**, generous negative space, and
+  hard scale contrast between a small figure and a large architectural mass.
+
+Lineage: mid-century modern poster illustration / UPA-era animation, Saul Bass
+title-card geometry, Hopper's light logic.
+
+### The load-bearing split (same trick as §1)
+
+**Mid-century graphic *style*, present-day *world*.** Exactly the trap §1 names:
+the model will hand you 1958 if you let it. The register is a drawing convention,
+not a period setting — modern clothing, modern vehicles, modern signage.
+
+### Consequence for casting — this register overrides the casting rule
+
+[`characters/karen.md`](./characters/karen.md) forbids describing a face in prose
+because it competes with the Flow Character binding. **That rule is scoped to the
+photoreal register and does not apply here.** In this style the face carries no
+features, so likeness cannot live in it — it lives in **hair mass, silhouette,
+wardrobe and posture**. Casting a photoreal Character into a flat graphic frame
+pulls the render back toward photorealism, which is the failure mode.
+
+So: in the illustrated register, **describe the likeness in prose and do not cast
+`@Karen`.** Owed a ruling from Kai/Jack if they disagree.
+
+### The block
+
+```prompt
+STYLE LOCK — ILLUSTRATED REGISTER (keep identical every time):
+
+Style: flat graphic illustration in a mid-century modern poster register, painted in matte gouache on board, with visible canvas tooth and fine even grain as though the finished board were photographed.
+
+Present-day constraint: the drawing convention is mid-century, the depicted world is contemporary — modern clothing, modern vehicles, modern architecture and signage. Style only, never period.
+
+Palette: restrict to two families. Deep desaturated navy, slate-blue and near-black charcoal carry every unlit surface; warm amber, ochre and sodium-orange carry every lit surface. Permit one saturated accent colour and keep it rare.
+
+Form: reduce everything to flat geometric planes — rectangles, trapezoids, wedges. Architecture becomes plain extruded blocks; windows become punched rectangles of warm light; keep surface detail at the scale of large flat shapes.
+
+Light: one motivated source, emitted as hard-edged pools and shafts, with shadows falling as clean flat geometric wedges with crisp borders.
+
+Figures: elegant, slightly elongated, reading close to silhouette. Hair is a single flat mass; clothing is flat shapes; imply facial features with shadow and leave them undrawn.
+
+Depth: stack flat planes of stepped value so the layers read as separate cut-out cards.
+
+Composition: cinematic widescreen, strong central framing, generous negative space, hard scale contrast between a small figure and a large architectural mass.
+
+Surface: clean edges carrying a slight painterly imperfection; calm, graphic and still.
+
+Keep the frame free of lettering, signage copy, logos and watermarks.
+```
+
+
 ## 2. Scene prompts
 
 Scene numbers map to the storyboard in
@@ -301,6 +375,68 @@ five pins, with the mug/lamp/desk investigative-office clutter explicitly banned
 
 ```prompt
 Use the uploaded Manhattan map as the actual reference image and keep its real geography, street layout, coastline, parks, and neighborhood structure exactly intact. Create a realistic photographic image of that exact map pinned to a wall or board in a landscape composition. The map itself is rotated and presented horizontally, filling almost the entire wide frame. Add five colored push pins in meaningful locations across Manhattan. Remove all printed text and labels from the map so there are no street names, no neighborhood names, no borough names, no park labels, no numbers, and no other text anywhere on the map. Keep the roads, blocks, coastlines, parks, and overall cartographic structure visible and realistic, but text-free. The image should feel like a real investigative office map: slightly worn paper, natural pin holes, flat pinned surface, warm practical indoor light, realistic texture, believable photographed angle. Keep it present-day and realistic. Only borrow the visual treatment from the earlier map image: pinned paper map, warm indoor lighting, candid photographic realism, subtle investigative-office mood. Do not add a desk, mug, phone, lamp, nameplate, papers, or any other objects. The image should be just the real Manhattan map with pins. STYLE LOCK: cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day. Visible film grain, slight gate-weave feel, occasional dust/specks, gentle halation around highlights, punchy vibrant palette, mild film-like color cast, deep but soft blacks, slightly soft edges, mild vignette, shallow-to-moderate depth of field, preserve detail, high detail, natural imperfections, candid snapshot energy. No added text, no logos, no watermark, no AI hyper-sharp HDR look, no era shift, no border. Thanks.
+```
+
+---
+
+### 2.6 Karen at the jazz club bar — illustrated register `[not yet fired]`
+
+**Written 2026-08-12, not yet generated.** The first prompt in the
+[§1b illustrated register](#1b-the-illustrated-register--karens-second-style-lock),
+and the only block in this file that is a **brief rather than a record** — it is
+here so it can be fired, judged and then rewritten as what was actually typed.
+
+Built on the six-slot structure Google's own prompt guide teaches — subject,
+action, environment, style, lighting, details
+([`docs/google-flow/nano-banana-2.md`](../../google-flow/nano-banana-2.md)) — and
+phrased positively throughout, because the guide is explicit that these models
+handle "keep the frame clean" better than "no clutter".
+
+**Likeness carries in the silhouette, not the face** — see §1b. Do **not** cast
+`@Karen`; the photoreal Character binding fights the flat register.
+
+**Flow settings:** landscape, 21:9 if the picker offers it, 4 candidates. Try it
+on both Nano Banana 2 and Nano Banana Pro and compare the matte texture — NB2 is
+reported to run sharper and more contrasted, which this register may not want.
+
+```prompt
+STYLE LOCK — ILLUSTRATED REGISTER (keep identical every time):
+
+Style: flat graphic illustration in a mid-century modern poster register, painted in matte gouache on board, with visible canvas tooth and fine even grain as though the finished board were photographed.
+
+Present-day constraint: the drawing convention is mid-century, the depicted world is contemporary — modern clothing, modern vehicles, modern architecture and signage. Style only, never period.
+
+Palette: restrict to two families. Deep desaturated navy, slate-blue and near-black charcoal carry every unlit surface; warm amber, ochre and sodium-orange carry every lit surface. Permit one saturated accent colour and keep it rare.
+
+Form: reduce everything to flat geometric planes — rectangles, trapezoids, wedges. Architecture becomes plain extruded blocks; windows become punched rectangles of warm light; keep surface detail at the scale of large flat shapes.
+
+Light: one motivated source, emitted as hard-edged pools and shafts, with shadows falling as clean flat geometric wedges with crisp borders.
+
+Figures: elegant, slightly elongated, reading close to silhouette. Hair is a single flat mass; clothing is flat shapes; imply facial features with shadow and leave them undrawn.
+
+Depth: stack flat planes of stepped value so the layers read as separate cut-out cards.
+
+Composition: cinematic widescreen, strong central framing, generous negative space, hard scale contrast between a small figure and a large architectural mass.
+
+Surface: clean edges carrying a slight painterly imperfection; calm, graphic and still.
+
+Keep the frame free of lettering, signage copy, logos and watermarks.
+
+SCENE:
+
+Subject: Karen (fictional), a woman in her early fifties, alone at the end of a long bar in a basement jazz club. Her likeness reads entirely through silhouette: shoulder-length auburn hair with volume and a side part, drawn as one flat chestnut mass catching a thin amber rim along the top; a camel cashmere cardigan draped over the shoulders of a cream blouse; tailored charcoal high-waisted trousers; a structured leather handbag set on the stool beside her. Leave her face in shadow with the features undrawn.
+
+Action: she sits side-on to the camera on a low bar stool, one forearm resting along the bar top, the other hand holding a stemmed glass at chest height, chin slightly raised and turned a few degrees away from the room. Her posture is composed, self-possessed and faintly impatient — a woman entirely willing to wait, who fully expects someone to come and sort it out.
+
+Environment: a small low-ceilinged basement jazz club at night. A long dark wood bar runs from the lower foreground into the middle distance; behind it the back-bar reduces to a flat grid of small amber rectangles standing in for bottles; three empty stools sit between her and the frame edge; a shallow stage in the deep background holds three flat black musician silhouettes — an upright bass, the raised lid of a piano, and a horn player — placed small against the far wall.
+
+Art style: exactly the STYLE LOCK above.
+
+Lighting: a single warm pendant lamp hanging low over the bar is the only source in the room. It pools amber light across the bar top and over Karen's shoulders and hair, and throws one hard-edged wedge of light across the floor toward the camera. Everything outside that pool settles into deep navy and near-black. A second much smaller cone of ochre picks out the stage at the back.
+
+Details: a flat translucent band of smoke haze lies across the lamp light; the polished bar top carries one long warm reflection running toward the foreground; a lowball glass and a folded napkin rest near her hand; the floor is a large uninterrupted plane of dark slate; keep the whole frame calm, graphic and still.
+
+Compose for a 21:9 cinematic widescreen frame. Thanks.
 ```
 
 ---
