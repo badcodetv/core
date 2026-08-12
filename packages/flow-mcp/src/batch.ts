@@ -29,6 +29,8 @@ export interface BatchItem {
   height: number
   candidates?: BatchCandidate[]
   partial?: boolean
+  /** True when this item was NOT generated on this run — its file was already on disk. */
+  skipped?: boolean
 }
 
 /** One prompt that did NOT produce a BatchItem, and why. `code` is the raw error string
@@ -60,6 +62,29 @@ export interface BatchResult {
   items: BatchItem[]
   failed: BatchFailure[]
   partial: boolean
+}
+
+/**
+ * Decide, per prompt, whether to generate it or skip it because its output already exists.
+ *
+ * This is what makes a long run RESUMABLE. `batchOutPath` is deterministic, so re-running the
+ * same prompt list against the same `outDir` can pick up exactly where a dead session left off
+ * instead of re-generating — and re-paying for — everything that already landed. A two-hour
+ * unattended run that dies at prompt 14 is otherwise a two-hour loss.
+ *
+ * Deliberately keyed on the FILE, not on a recorded index: the file is the artifact the caller
+ * actually wanted, it survives a crashed process that never got to write a manifest, and a
+ * human who deletes one bad image gets exactly that one regenerated on the next run.
+ */
+export function planBatch(
+  prompts: string[],
+  outDir: string,
+  exists: (path: string) => boolean,
+): { index: number; prompt: string; path: string; skip: boolean }[] {
+  return prompts.map((prompt, index) => {
+    const path = batchOutPath(outDir, index)
+    return { index, prompt, path, skip: exists(path) }
+  })
 }
 
 /** Accumulator threaded through the submission loop in FlowClient.generateBatch. */

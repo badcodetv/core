@@ -2,8 +2,12 @@
 export interface CanvasImg {
   /** Media UUID parsed from the img src; '' if absent. */
   name: string
+  /** The ON-SCREEN box. Selection only — see RawImg for why the two sizes are kept apart. */
   width: number
   height: number
+  /** The image's own pixels. What a caller means by "how big is it". */
+  naturalWidth?: number
+  naturalHeight?: number
 }
 
 /**

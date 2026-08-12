@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import {
   batchOutPath,
+  planBatch,
   emptyBatchAccumulator,
   finalizeBatch,
   foldBatchOutcome,
@@ -93,5 +94,36 @@ describe('finalizeBatch', () => {
     expect(result.partial).toBe(true)
     expect(result.items).toHaveLength(1)
     expect(result.failed).toHaveLength(1)
+  })
+})
+
+describe('planBatch', () => {
+  const prompts = ['a', 'b', 'c']
+
+  it('plans every prompt when nothing exists yet', () => {
+    const plan = planBatch(prompts, '/out', () => false)
+    expect(plan.map((p) => p.skip)).toEqual([false, false, false])
+    expect(plan.map((p) => p.path)).toEqual(['/out/00.jpg', '/out/01.jpg', '/out/02.jpg'])
+  })
+
+  it('skips exactly the prompts whose file is already on disk', () => {
+    // The resume case: a run that died after two images picks up at the third.
+    const done = new Set(['/out/00.jpg', '/out/01.jpg'])
+    const plan = planBatch(prompts, '/out', (p) => done.has(p))
+    expect(plan.map((p) => p.skip)).toEqual([true, true, false])
+  })
+
+  it('regenerates a hole in the middle, not just the tail', () => {
+    // Deleting one bad image and re-running must regenerate that one and leave the rest.
+    const done = new Set(['/out/00.jpg', '/out/02.jpg'])
+    const plan = planBatch(prompts, '/out', (p) => done.has(p))
+    expect(plan.map((p) => p.skip)).toEqual([true, false, true])
+  })
+
+  it('keeps index aligned with the prompt list even when skipping', () => {
+    // Index is what maps an image back to its prompt; a resumed run that renumbered would
+    // silently pair prompts with the wrong pictures.
+    const plan = planBatch(prompts, '/out', (p) => p.endsWith('00.jpg'))
+    expect(plan.map((p) => [p.index, p.prompt])).toEqual([[0, 'a'], [1, 'b'], [2, 'c']])
   })
 })

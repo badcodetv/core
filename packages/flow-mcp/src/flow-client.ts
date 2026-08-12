@@ -9,12 +9,16 @@ import {
   emptyBatchAccumulator,
   finalizeBatch,
   foldBatchOutcome,
+  planBatch,
+  type BatchItem,
   type BatchOutcome,
   type BatchResult,
 } from './batch'
 export type { BatchItem, BatchFailure, BatchResult } from './batch'
 import { candidateOutPath } from './candidates'
 import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, canonicalVideoModel, aspectAlreadySelected, videoDurationAlreadySelected } from './compose'
+import { existsSync, readFileSync } from 'node:fs'
+import { jpegSize } from './jpeg-size'
 import { chooseVideoMode, videoRequestError } from './video-mode'
 import { classifyCard, newCardsSince, ANY_CARD_RE, type CardState } from './failure-card'
 import { parseMediaOptions, SCRAPE_MEDIA_OPTIONS, type RawMediaOption, type MediaListItem } from './media-list'
@@ -877,7 +881,13 @@ export class FlowClient {
       await this.page.waitForTimeout(POLL_MS)
     }
     if (found.size === 0) throw new Error('TIMEOUT')
-    return [...found.values()].map((im) => ({ name: im.name, width: Math.round(im.width), height: Math.round(im.height) }))
+    return [...found.values()].map((im) => ({
+      name: im.name,
+      width: Math.round(im.width),
+      height: Math.round(im.height),
+      ...(im.naturalWidth ? { naturalWidth: Math.round(im.naturalWidth) } : {}),
+      ...(im.naturalHeight ? { naturalHeight: Math.round(im.naturalHeight) } : {}),
+    }))
   }
 
   /** Harvest each canvas to its candidate path (suffixed -a/-b… when numOutputs > 1). */
@@ -887,7 +897,17 @@ export class FlowClient {
       const c = canvases[i]!
       const path = candidateOutPath(outPath, i, numOutputs)
       await harvestToFile(this.page.request, c.name, path)
-      out.push({ path, mediaId: c.name, width: c.width, height: c.height })
+      // Measure the FILE we just wrote, not the page. The DOM cannot be trusted for this: the
+      // on-screen box is a layout accident (a real 1376x768 image reported as 537x300), and
+      // naturalWidth is 0 until the browser has decoded the image, which it usually has not by
+      // the time we scrape. The harvested bytes are the ground truth and we already have them.
+      const measured = this.measureFile(path)
+      out.push({
+        path,
+        mediaId: c.name,
+        width: measured?.width ?? c.naturalWidth ?? c.width,
+        height: measured?.height ?? c.naturalHeight ?? c.height,
+      })
     }
     return out
   }
@@ -1109,14 +1129,25 @@ export class FlowClient {
   async generateBatch(
     prompts: string[],
     outDir: string,
-    opts?: { model?: string; aspect?: string; character?: string; numOutputs?: number },
+    opts?: { model?: string; aspect?: string; character?: string; numOutputs?: number; resume?: boolean },
   ): Promise<BatchResult> {
     const numOutputs = opts?.numOutputs ?? 1
+    // Plan before touching the browser: with `resume`, a prompt whose output file is already
+    // on disk is not regenerated. That is what lets a long unattended run be restarted after
+    // it dies without re-paying for everything that already landed.
+    const plan = planBatch(prompts, outDir, opts?.resume ? (p) => existsSync(p) : () => false)
+    const todo = plan.filter((p) => !p.skip).length
+    if (!todo) return finalizeBatch({ items: plan.map((p) => this.skippedItem(p.index, p.prompt, p.path)), failed: [] })
     await this.ensureProjectRoot()
     await this.ensureImageMode(numOutputs, opts?.model, opts?.aspect)
     let acc = emptyBatchAccumulator()
-    for (let i = 0; i < prompts.length; i++) {
-      const prompt = prompts[i]!
+    for (const step of plan) {
+      const i = step.index
+      const prompt = step.prompt
+      if (step.skip) {
+        acc = foldBatchOutcome(acc, i, prompt, { ok: true, item: this.skippedOutcome(step.path) }).acc
+        continue
+      }
       let outcome: BatchOutcome
       try {
         const before = await this.snapshotMediaNames()
@@ -1138,11 +1169,36 @@ export class FlowClient {
       } catch (err) {
         outcome = { ok: false, code: err instanceof Error ? err.message : String(err) }
       }
-      const step = foldBatchOutcome(acc, i, prompt, outcome)
-      acc = step.acc
-      if (!step.continue) break
+      const folded = foldBatchOutcome(acc, i, prompt, outcome)
+      acc = folded.acc
+      if (!folded.continue) break
     }
     return finalizeBatch(acc)
+  }
+
+  /**
+   * A batch item for a prompt that was skipped because its file already existed.
+   *
+   * Reads the real dimensions back out of the JPEG rather than reporting 0x0: a caller building
+   * a manifest from a resumed run must not be able to tell skipped items from generated ones by
+   * accident. `mediaId` is genuinely unknowable without regenerating, so it is empty and says so.
+   */
+  private skippedOutcome(path: string): Omit<BatchItem, 'index' | 'prompt'> {
+    const size = this.measureFile(path)
+    return { path, mediaId: '', width: size?.width ?? 0, height: size?.height ?? 0, skipped: true }
+  }
+
+  /** Real pixel dimensions of a harvested image, or null if it is unreadable/not a JPEG. */
+  private measureFile(path: string): { width: number; height: number } | null {
+    try {
+      return jpegSize(readFileSync(path))
+    } catch {
+      return null
+    }
+  }
+
+  private skippedItem(index: number, prompt: string, path: string): BatchItem {
+    return { index, prompt, ...this.skippedOutcome(path) }
   }
 
   /**

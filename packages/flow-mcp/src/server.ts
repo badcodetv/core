@@ -363,7 +363,8 @@ server.registerTool(
     title: 'Generate image batch',
     description:
       'Generate N images sequentially in ONE Flow session from an ordered list of prompts (e.g. every scene on a story\'s prompts.md). Saves <outDir>/<NN>.jpg per prompt (candidates get -a/-b… suffixes when numOutputs > 1 — see flow_generate_image). Use after planning all prompts up front. character casts a project Character (create one first with flow_create_character) into EVERY prompt in the batch, via the same mechanism flow_generate_image uses — pass per-scene character names as part of the prompt text instead if different prompts need different characters. model/aspect/numOutputs apply to the WHOLE batch (asserted once before the first prompt, not re-asserted per prompt). ' +
-      'Never throws away work already done: returns { items: BatchItem[], failed: BatchFailure[], partial: boolean }. `items` is every prompt that completed. `failed` is every prompt that did not, each as { index, prompt, code, error } — check `partial` before assuming the batch is done. A POLICY_BLOCKED prompt is recorded in `failed` and the batch CONTINUES to the next prompt (that verdict is about the one prompt, not the run); any other failure (TIMEOUT, SUBMIT_FAILED, …) is recorded and the batch STOPS there, since it likely means the page itself needs recovering — re-run from prompts.slice(items.length + failed.length) once fixed. Never retry a POLICY_BLOCKED entry unmodified; rewrite it per docs/flow/failure-modes.md. ' +
+      'resume: true SKIPS any prompt whose output file is already on disk, and reports it as an item with skipped: true (its real dimensions are read back from the file; mediaId is empty, since that is unknowable without regenerating). This is how you restart a long run that died — same prompts, same outDir, nothing already paid for is paid for twice. It also means deleting one bad image and re-running regenerates exactly that one. '
+      + 'Never throws away work already done: returns { items: BatchItem[], failed: BatchFailure[], partial: boolean }. `items` is every prompt that completed. `failed` is every prompt that did not, each as { index, prompt, code, error } — check `partial` before assuming the batch is done. A POLICY_BLOCKED prompt is recorded in `failed` and the batch CONTINUES to the next prompt (that verdict is about the one prompt, not the run); any other failure (TIMEOUT, SUBMIT_FAILED, …) is recorded and the batch STOPS there, since it likely means the page itself needs recovering — re-run from prompts.slice(items.length + failed.length) once fixed. Never retry a POLICY_BLOCKED entry unmodified; rewrite it per docs/flow/failure-modes.md. ' +
       'Capped at 20 prompts per call, up from the earlier cap of 8 (a schema choice, not a Flow limit) — batch is strictly serial, so a longer list is a longer call, not a heavier one, but there is no per-item timeout budget yet and a very long unattended call has its own failure modes (session drift, Flow rate-limiting/recaptcha on sustained volume per docs/flow/platform-controls.md §9). 20 comfortably covers one comic\'s worth of scene prompts while keeping worst-case call length bounded; split anything larger into multiple calls. ' +
       IMAGE_MODEL_DESC +
       ' ' +
@@ -375,9 +376,10 @@ server.registerTool(
       numOutputs: z.number().int().min(1).max(4).optional(),
       model: z.string().min(1).optional(),
       aspect: z.enum(IMAGE_ASPECTS).optional(),
+      resume: z.boolean().optional(),
     },
   },
-  async ({ prompts, outDir, character, numOutputs, model, aspect }) => {
+  async ({ prompts, outDir, character, numOutputs, model, aspect, resume }) => {
     try {
       return await withClient(async (c) =>
         ok(
@@ -386,6 +388,7 @@ server.registerTool(
             ...(numOutputs ? { numOutputs } : {}),
             ...(model ? { model } : {}),
             ...(aspect ? { aspect } : {}),
+            ...(resume ? { resume } : {}),
           }),
         ),
       )
