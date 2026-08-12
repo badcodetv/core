@@ -1033,7 +1033,7 @@ export class FlowClient {
     opts?: { info?: string; body?: string; model?: string; bodyOutPath?: string },
   ): Promise<CharacterRef & { bodyMediaId?: string; bodyPath?: string }> {
     await this.ensureProjectRoot()
-    await this.page.getByRole('button', { name: /accessibility_new\s*Characters/i }).click({ force: true })
+    await this.forceClick(this.page.getByRole('button', { name: /accessibility_new\s*Characters/i }).first())
     await this.page.waitForURL(/\/characters\b/, { timeout: TURN_TIMEOUT_MS })
     // Upload the reference(s) through the hidden input — see uploadFiles for why not the chooser.
     await this.uploadFiles(refImages, async () => {
@@ -1057,7 +1057,7 @@ export class FlowClient {
     opts?: { info?: string; body?: string; model?: string; bodyOutPath?: string },
   ): Promise<CharacterRef & { bodyMediaId?: string; bodyPath?: string }> {
     await this.ensureProjectRoot()
-    await this.page.getByRole('button', { name: /accessibility_new\s*Characters/i }).click({ force: true })
+    await this.forceClick(this.page.getByRole('button', { name: /accessibility_new\s*Characters/i }).first())
     await this.page.waitForURL(/\/characters\b/, { timeout: TURN_TIMEOUT_MS })
     const addFromProject = this.page.getByRole('button', { name: /add\s*Add from Project/i }).first()
     await addFromProject.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
