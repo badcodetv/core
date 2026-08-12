@@ -447,11 +447,22 @@ when Frames lands.
 
 ---
 
-## What is left (as of 2026-08-12, end of Wave C + batch)
+## What is left (L1–L4 worked through 2026-08-12; see each entry)
 
 Waves A, B and C are done. Batch is proven, resumable and reports honest dimensions, and
-`make-comic`'s "unattended loop" section documents the rewrite-and-retry cycle. What remains,
-most valuable first:
+`make-comic`'s "unattended loop" section documents the rewrite-and-retry cycle.
+
+**L1–L4 are now all closed** — three built, one answered by testing:
+
+| | | |
+| --- | --- | --- |
+| **L1** Video refine | ✅ built | `flow_refine_video`, live-proven |
+| **L2** Extend / video Edit | ✅ answered | neither exists in this account's UI, on any tier |
+| **L3** Unmapped failure states | ⏳ still unseen | but a timeout now records the page, so the next one is mappable |
+| **L4** Animate's cluttered-project weakness | ✅ built | falls back to Frames, visibly (`via`) |
+
+The one cell in `platform-controls.md` still transcribed rather than tested is
+**Ingredients→Video**. Everything below is the detail, most valuable first.
 
 ### L1 · Video refine — "like that clip, but slower" — ✅ DONE 2026-08-12
 
@@ -491,11 +502,20 @@ timeline. A much larger surface than a per-clip action, and nothing we make has 
 is not proposed here. `Ingredients→Video` is now the only cell in the matrix still transcribed
 rather than tested.
 
-### L3 · Failure states we have never seen
+### L3 · Failure states we have never seen — ⏳ still unseen, but now self-recording
 
-**Credit exhaustion** and **rate-limiting / recaptcha** have no mapped card text, so
-`classifyCard` cannot name them and they will surface as `TIMEOUT`. Do not invent the strings —
-catch them the next time a long run hits one, and add them then.
+**Credit exhaustion** and **rate-limiting / recaptcha** still have no mapped card text, so
+`classifyCard` cannot name them and they still surface as `TIMEOUT`. The strings are not
+invented, per the ruling — but a timeout no longer throws away the evidence.
+
+Every timeout now **writes down what was on screen**: `dumpLines` (pure, tested) filters Flow's
+own chrome out of the page's leaf text, and the client saves it plus a screenshot to
+`$TMPDIR/flow-timeout-<stamp>.txt/.png`, naming the path in the error message and in the MCP
+hint. On a healthy page that is 13 readable lines, so a real failure message will be the obvious
+one. Verified live without waiting eight minutes for a real timeout (`smoke-timeout-dump.ts`).
+
+**What to do when one lands:** read the dump, add the exact wording to `failure-card.ts`, and the
+state aborts in seconds from then on instead of burning the full timeout.
 
 ### L4 · Route start-only video through Frames — ✅ DONE 2026-08-12, as a fallback
 

@@ -1,4 +1,6 @@
-import { basename } from 'node:path'
+import { basename, join } from 'node:path'
+import { tmpdir } from 'node:os'
+import { writeFile } from 'node:fs/promises'
 import { chromium, type Browser, type Locator, type Page } from 'playwright'
 import { collectNewCanvases, pickActiveCanvas, type CanvasImg } from './canvas'
 import { toCanvasImgs, SCRAPE_IMGS, type RawImg } from './dom'
@@ -19,6 +21,7 @@ import { candidateOutPath } from './candidates'
 import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, canonicalVideoModel, aspectAlreadySelected, videoDurationAlreadySelected } from './compose'
 import { existsSync, readFileSync } from 'node:fs'
 import { jpegSize } from './jpeg-size'
+import { dumpLines } from './page-dump'
 import { chooseVideoMode, refineRequestError, videoRequestError } from './video-mode'
 import { classifyCard, newCardsSince, ANY_CARD_RE, type CardState } from './failure-card'
 import { parseMediaOptions, SCRAPE_MEDIA_OPTIONS, type RawMediaOption, type MediaListItem } from './media-list'
@@ -858,7 +861,7 @@ export class FlowClient {
       }
       await this.page.waitForTimeout(POLL_MS)
     }
-    throw new Error('TIMEOUT')
+    throw new Error(await this.timeoutError(timeoutMs))
   }
 
   /**
@@ -896,7 +899,7 @@ export class FlowClient {
       if (found.size > 0 && graceDeadline === Number.POSITIVE_INFINITY) graceDeadline = Date.now() + graceMs
       await this.page.waitForTimeout(POLL_MS)
     }
-    if (found.size === 0) throw new Error('TIMEOUT')
+    if (found.size === 0) throw new Error(await this.timeoutError(timeoutMs))
     return [...found.values()].map((im) => ({
       name: im.name,
       width: Math.round(im.width),
@@ -2261,7 +2264,39 @@ export class FlowClient {
       }
       await this.page.waitForTimeout(VIDEO_POLL_MS)
     }
-    throw new Error('TIMEOUT')
+    throw new Error(await this.timeoutError(timeoutMs))
+  }
+
+  /**
+   * Write down what was actually on screen when a generation ran out of time.
+   *
+   * Two failure states have never been seen — credit exhaustion, and rate-limiting/recaptcha —
+   * so `classifyCard` cannot name them and they surface as a bare `TIMEOUT` that tells nobody
+   * anything. The ruling was **do not invent the strings**; this is the other half of that
+   * ruling. The next unmapped failure leaves its real wording (and a screenshot) on disk, and
+   * whoever finds it can add the pattern to `failure-card.ts` from evidence.
+   *
+   * Best-effort throughout: a diagnostic that can itself throw would replace a useful timeout
+   * message with a confusing one.
+   */
+  private async timeoutError(timeoutMs: number): Promise<string> {
+    const secs = Math.round(timeoutMs / 1000)
+    try {
+      // Leaf nodes only (so one message is one line), and nothing inside a control — a real
+      // failure message is never a button label, and the sidebar alone is 20 of them.
+      const texts = (await this.page.evaluate(`(() => [...document.querySelectorAll('body *')]
+        .filter(el => el.children.length === 0 && el.getBoundingClientRect().width > 0)
+        .filter(el => !el.closest('button, a, nav, [role="button"], [role="tab"], [role="menuitem"]'))
+        .map(el => el.textContent || ''))()`)) as string[]
+      const lines = dumpLines(texts)
+      const stamp = new Date().toISOString().replace(/[:.]/g, '-')
+      const base = join(tmpdir(), `flow-timeout-${stamp}`)
+      await writeFile(`${base}.txt`, `${this.page.url()}\n\n${lines.join('\n')}\n`, 'utf8')
+      await this.page.screenshot({ path: `${base}.png`, fullPage: false }).catch(() => {})
+      return `TIMEOUT: nothing finished in ${secs}s — page text and screenshot written to ${base}.txt/.png. If Flow was showing an unmapped failure (out of credits, rate limited, a captcha), add its exact wording to failure-card.ts so it aborts fast next time instead of timing out.`
+    } catch {
+      return `TIMEOUT: nothing finished in ${secs}s (and the page could not be read for a diagnostic).`
+    }
   }
 
   /** Whether the cached CDP attachment (and its page) is still usable. */
