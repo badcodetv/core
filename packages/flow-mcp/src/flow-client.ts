@@ -626,12 +626,33 @@ export class FlowClient {
     // (the "crop_…" button) only exists in generation mode. If it isn't showing we're in Agent
     // mode — click the Agent toggle to leave it. (Gating on crop_'s presence is more reliable
     // than reading the toggle's aria-pressed, which lags after navigation.)
+    // Reveal the compose bar BEFORE looking for the crop_ button or the Agent toggle: the
+    // Agent panel's chat view (where a video turn leaves it, showing the credit approval)
+    // covers the bar entirely, so neither control is reachable while it is open — and the
+    // Agent toggle is itself part of the bar being hidden. Doing this after the toggle check,
+    // as a first attempt did, leaves the bar revealed but still in Agent mode with no crop_
+    // button and nothing left to click. Observed live 2026-08-12, both orderings.
+    await this.ensureComposeVisible()
     const crop = this.page.getByRole('button', { name: /crop_/ }).first()
     if (!(await crop.count())) {
       const agent = this.page.getByRole('button', { name: 'Agent', exact: true })
       if (await agent.count()) await this.forceClick(agent)
     }
     await crop.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    // The compose bar has an IMAGE/VIDEO mode of its own, above and separate from the Agent
+    // toggle — its config popover leads with `image Image` / `videocam Video` tabs. An
+    // image→video turn leaves the bar in Video mode ("Video · 8scrop_16_9x2"), where there is
+    // no Nano Banana model at all, so ensureModel below hung for 90s looking for one. Mapped
+    // live 2026-08-12 after exactly that failure.
+    if (/^Video\b/i.test(((await crop.textContent()) ?? '').trim())) {
+      const imageTab = this.page.locator('button').filter({ hasText: /^imageImage$/i }).first()
+      // The trigger TOGGLES the popover, so only click it when the tab is not already showing
+      // — otherwise a popover left open by an earlier step gets closed instead of used.
+      if (!(await imageTab.isVisible().catch(() => false))) await this.pointerClick(crop)
+      await imageTab.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+      await this.tabClick(imageTab)
+      await this.page.keyboard.press('Escape')
+    }
     // Assert the model before reading the label below — ensureModel rewrites it.
     await this.ensureModel(model)
     // Count tabs are named `1x` for one output and `x2`/`x3`/`x4` beyond (mapped live 2026-07-14).
@@ -1348,40 +1369,55 @@ export class FlowClient {
     if (changed) {
       const save = this.page.locator('button').filter({ hasText: /^Save$/ }).first()
       await this.forceClick(save)
-      await this.leaveAgentSettings()
+      await this.ensureComposeVisible()
     } else {
       // Nothing to persist — close without touching Save (leaves the unrelated Confirm-gate
       // setting untouched too).
       await this.page.keyboard.press('Escape')
-      await this.leaveAgentSettings()
+      await this.ensureComposeVisible()
     }
   }
 
   /**
-   * Return from the Agent settings view so the compose bar is reachable again.
+   * Make sure the compose bar is reachable, closing the Agent panel if it is covering it.
    *
-   * The settings panel REPLACES the prompt box rather than sitting beside it, so leaving it
-   * open makes the very next step — typing a motion prompt — fail with "element is not
-   * visible" on a textbox that exists but is off-screen. Saving does not close it, and the
-   * panel is sticky across navigation, so the caller has to.
+   * The Agent panel REPLACES the prompt box rather than sitting beside it, in both of its
+   * views — the settings view and the chat/credit-approval view it drops into after a video
+   * turn. Leaving either open makes the next generation fail on a textbox that exists but is
+   * off-screen ("element is not visible"), and `ensureImageMode` fail waiting for a `crop_`
+   * button that is equally hidden. Saving does not close it and the panel survives navigation,
+   * so every path that is about to type a prompt has to do this itself. Both failures observed
+   * live 2026-08-12.
    *
-   * Best-effort by design: this is cleanup, and a generation should not fail because a back
-   * button moved. The subsequent submitPrompt has its own visibility wait, which is the real
-   * guarantee.
+   * Best-effort by design: this is cleanup, and a generation should not fail because a close
+   * button moved. The callers' own visibility waits remain the real guarantee.
    */
-  private async leaveAgentSettings(): Promise<void> {
-    const box = this.page.locator('div[role="textbox"][contenteditable="true"]').first()
-    if (await box.isVisible().catch(() => false)) return
-    // "arrow_back Back" is the PANEL's own back button. Do not confuse it with the top-left
-    // "arrow_back Go Back", which leaves the project entirely.
-    const back = this.page.locator('button').filter({ hasText: /^arrow_back\s*Back$/i }).first()
-    if (await back.count()) {
-      await this.forceClick(back).catch(() => {})
-      if (await box.isVisible().catch(() => false)) return
+  private async ensureComposeVisible(): Promise<void> {
+    // Detect the PANEL, not a visible textbox. An earlier version checked for a visible
+    // `div[role="textbox"][contenteditable="true"]` and returned early when it found one —
+    // but the Agent panel carries its OWN prompt box, so the check passed while the panel was
+    // still covering the compose bar, and the caller then timed out looking for a control the
+    // panel was hiding. Confirmed live 2026-08-12.
+    //
+    // Loops because the panel has two stacked views: from settings, "Back" lands on the chat
+    // view, which then needs its own "Close". Bounded so a UI change cannot spin here.
+    for (let i = 0; i < 3; i++) {
+      // "arrow_back Back" is the PANEL's own back button — NOT the top-left "arrow_back Go
+      // Back", which leaves the project entirely.
+      const back = this.page.locator('button').filter({ hasText: /^arrow_back\s*Back$/i }).first()
+      if (await back.count()) {
+        await this.forceClick(back).catch(() => {})
+        await this.page.waitForTimeout(POLL_MS)
+        continue
+      }
+      const close = this.page.locator('button').filter({ hasText: /^close\s*Close$/i }).first()
+      if (await close.count()) {
+        await this.forceClick(close).catch(() => {})
+        await this.page.waitForTimeout(POLL_MS)
+        continue
+      }
+      return
     }
-    // Still covered: toggle the Agent panel shut from its compose-bar button.
-    const agentBtn = this.page.locator('button').filter({ hasText: /^Agent$/i }).first()
-    if (await agentBtn.count()) await this.forceClick(agentBtn).catch(() => {})
   }
 
   /**
