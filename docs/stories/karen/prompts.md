@@ -2,7 +2,7 @@
 story: karen
 kind: record — prompts typed into Flow by hand, not a generation brief
 flow_project: TODO — exact project name as it appears in Flow
-updated: 2026-08-11
+updated: 2026-08-12
 ---
 
 # Karen — Flow image prompt ledger
@@ -448,6 +448,10 @@ Four stills fired on **Nano Banana 2 in Flow, 2026-08-12, all accepted**. They a
 the plates for a James Bond–style title sequence built out of Karen's story: the
 cord, the grid, the booth and the walk.
 
+> **A second wave of plates for this same sequence — ten more, unfired — is in
+> [§2c](#2c-the-second-wave-of-title-sequence-plates--illustrated-register-not-yet-fired),
+> along with the research that changed the recipe.**
+
 > ### How to reconstruct any of these
 >
 > Each prompt as typed is **three parts in this order**:
@@ -631,6 +635,465 @@ Over-detailed edit instructions trigger changes you did not ask for.
 
 ---
 
+## 2c. The second wave of title-sequence plates — illustrated register `[8 of 10 fired · accepted]`
+
+**Written and fired 2026-08-12.** Ten plates extending the
+[§2a](#2a-the-title-sequence-plates--illustrated-register) Bond sequence — six
+scenes and a four-shot match-cut chain.
+
+> ### What came back
+>
+> **Eight fired on Nano Banana 2 in Flow, 2026-08-12, all accepted** — 2c.1, 2c.2
+> (**two takes**), 2c.3, 2c.4, 2c.5, 2c.6, 2c.8, 2c.10. **2c.7 (the earpiece grill)
+> and 2c.9 (the manhole) were not run** — status unknown, not known to have failed.
+>
+> Clip prompts for the eight accepted plates are in
+> [§2d](#2d-clip-prompts-for-the-2c-plates--gemini-omni-flash-not-yet-fired).
+>
+> **Three things worth recording:**
+>
+> - **The series clause appears to have worked.** The palette held across eight
+>   independent generations with no repeat of the §2a.4 drift. The two 2c.2 takes
+>   differ markedly in warmth — one navy-dominant, one pushed to saturated
+>   amber — but those are **two takes of one plate**, not drift across the set.
+>   Both are keepers and they do different jobs; see §2d.4 and §2d.7.
+> - **2c.1 came back as a three-by-three grid, not three-by-four.** The prompt asked
+>   for twelve keys and got nine. Harmless — the meaning lives in the position, and
+>   top-right still reads as the three — but it is a real divergence from the words.
+> - **The single-accent spine emerged on its own.** Red turns up on the standing
+>   statue's handset (2c.4), as one bubble among the grey in the river (2c.6), and as
+>   the auburn hair mass seen from above (2c.10). Nobody prompted it. That is the
+>   accent rule proposing itself, and it is worth adopting deliberately rather than
+>   letting the next batch spend it elsewhere.
+
+Each borrows a specific title-sequence device and rebuilds it out of Karen's own
+material: Binder's dots and silhouette line-ups, Brownjohn's projections,
+*GoldenEye*'s toppling statues, *Casino Royale*'s falling card suits, Bass's
+refusal to let one shape leave the frame.
+
+### What the research changed
+
+Checked 2026-08-12 against Google's own guide and the current crop of NB2
+playbooks; engine-level findings are filed in
+[`docs/google-flow/nano-banana-2.md`](../../google-flow/nano-banana-2.md). Six
+things move the recipe from §2a:
+
+1. **A style reference does not carry style.** The strongest finding, and it is
+   counter-intuitive: a reference image anchors *identity and content*, and the
+   model **will not assume the new image matches the reference's style unless the
+   prompt says so**. The §2a instinct to paste the full lock *and* attach the jazz
+   club frame was right — it is not belt-and-braces, it is the only thing holding
+   the register. Do not drop the lock because a reference is attached.
+2. **Name the use case.** Telling the model what the image is *for* measurably
+   improves it — the guides put it as the model making "a thousand small
+   decisions" off that context. Every block below now opens by declaring itself a
+   title-sequence plate. New since §2a.
+3. **Say where it sits in the series.** The recommended phrasing is explicit —
+   *"this is panel 3 of a 6-panel sequence, maintain visual identity with panels 1
+   and 2"*. Cheap, and aimed exactly at the §2a.4 drift problem.
+4. **Negatives work here, but keep them short.** Google's house rule is positive
+   framing only ("empty street", never "no cars") — but `Not photorealistic`
+   appears in Google's own illustration examples, and NB2 is reported to follow
+   targeted negations more reliably than its predecessors. The resolution we are
+   adopting: **negate the style family, describe everything else positively**, and
+   keep the negative tail to a clause, not a list. Long exclusion stacks dilute.
+   This is why the eight-line exclusion block from the §1 super-8 lock is **not**
+   imported into this register.
+5. **Two regenerations, then rewrite.** If the same prompt misses twice, rewriting
+   beats rolling again. Worth adopting as a standing rule for the whole ledger.
+6. **Keyframes → video is the vendor's own recommended path** — generate the plate
+   in Nano Banana, animate it in the video model. [§2b](#2b-video-prompts--gemini-omni-flash-not-yet-fired)
+   is doing the endorsed thing.
+
+**Two things to test, not adopt:**
+
+- **Hex-pinned palette.** NB2 reportedly understands hex codes, though less
+  reliably than Nano Banana Pro. Appending an explicit pin — e.g.
+  `Unlit surfaces #1B2A41 · lit surfaces #E39A2C` — is the most direct candidate
+  fix for the §2a.4 warmth drift. **Do not edit the canonical lock to add it**:
+  the lock is character-for-character fixed. Run it as an appended clause on one
+  plate and compare.
+- **Lock-first ordering.** The playbooks say lead with the subject inside the
+  first fifteen words, which the lock-first structure plainly violates. But §2.6
+  was accepted first time as-is, so this is not being changed on paper. If a plate
+  below comes back drifting toward photoreal, **moving the lock below the scene
+  block is the first thing to try.**
+
+> ### How to fire any of these
+>
+> Same three parts in the same order as §2a — (1) the **§1b ILLUSTRATED REGISTER
+> block** verbatim, (2) the **relationship instruction**, (3) the **scene block**
+> below. The lock is not repeated ten times; it lives in [§1b](#the-block).
+>
+> **Attach the §2.6 jazz club frame as the style reference on every one.** The
+> relationship instruction gains a series clause and a use-case clause over the
+> §2a version:
+>
+> ```prompt
+> Use the attached image as the style reference: match its palette, flatness, hard-edged light and matte painted texture exactly. Not photorealistic.
+>
+> This image is one plate in a series of frames for a noir film title sequence. Maintain visual identity with the attached plate across the whole set.
+> ```
+>
+> **Flow settings:** landscape, 16:9, 4 candidates, Nano Banana 2. Every block
+> below closes by restating the ratio in prose, which the guides recommend doing
+> even when the UI already sets it.
+>
+> **All ten are face-free, hand-free, text-free and single-action** — the four
+> documented artefact sources. That is deliberate, not incidental.
+
+### 2c.1 The keypad — Binder's dots, rebuilt
+
+*Dr. No* opened on nothing but bouncing coloured dots. The song opens on
+*"touch-tone beeps locked to the beat, the only percussion"* and a menu that ends
+on **three**. The plate is the end state of that menu; the 1 → 2 → 3 light-up is
+the video move.
+
+The no-text rule does real work here: the keys are blank, so **position carries
+the meaning**. Top-right of the top row is the three.
+
+```prompt
+SCENE:
+Subject: a payphone keypad seen from directly overhead, filling the frame — twelve rounded square keys in a three-by-four grid, set into a flat navy steel faceplate.
+Action: static, with the top-left and top-middle keys glowing a dim ochre and the top-right key burning a full bright amber, markedly brighter than anything else in the frame.
+Environment: the faceplate fills the whole frame and runs out past every edge, each key sitting in a shallow inset that reads as one crisp flat shadow.
+Art style: exactly the STYLE LOCK above.
+Lighting: the keys are the only light source; the brightest key throws a hard-edged square of amber spill onto the faceplate immediately around it.
+Details: keep every key face completely blank and unmarked; keep the faceplate a single uninterrupted flat navy plane carrying fine canvas tooth; keep the grid square to frame and evenly spaced.
+Compose for a 16:9 frame.
+```
+
+### 2c.2 There is always a level above the level
+
+The best line in the song had no picture. This is it: the light well of an office
+tower from the very bottom, looking straight up, storeys repeating toward an
+opening you never reach. The same escalation device as the canon zoom-map, turned
+through ninety degrees.
+
+**The ambitious one — give it the most candidates.** The endless-stack rhythm is
+the thing that will or won't land.
+
+```prompt
+SCENE:
+Subject: the interior light well of an office tower seen from the very bottom, looking straight up.
+Action: static — on every storey a single small dark silhouette sits at a desk against the lit window of its own floor, one figure per level, repeating upward.
+Environment: four flat navy wall planes rising and converging toward a small bright opening at the top of frame; each storey reads as a horizontal band of punched amber window rectangles.
+Art style: exactly the STYLE LOCK above.
+Lighting: warm amber light comes from inside every floor and from the small opening far above; the wall planes step from ochre near the top through slate-blue to near-black at the bottom of frame.
+Details: place the vanishing point precisely at the centre of frame; let the storeys repeat at a steady rhythm and grow smaller and closer together toward the top so the stack reads as endless; keep every surface a flat unbroken plane and every window free of lettering.
+Compose for a 16:9 frame.
+```
+
+### 2c.3 The hold-line chorus — Binder's silhouette line-up
+
+Binder's dancers against flat colour, except these figures hold handsets. Five in
+front, then the same arrangement receding until it disappears. This is *"a room of
+voices sings the hook in unison"* given a body — the chorus plate.
+
+```prompt
+SCENE:
+Subject: a long row of standing figures in near-silhouette, each holding a telephone handset to one ear, seen straight on from the front.
+Action: static, each figure standing alone in its own circular pool of amber light, all facing camera, weight settled, the coiled cords hanging down from each handset.
+Environment: an unbroken deep navy void with no walls, floor line or horizon — the pools of light are the only structure; five figures stand large across the foreground and the same arrangement repeats smaller and dimmer in receding rows behind them until it disappears into the dark.
+Art style: exactly the STYLE LOCK above.
+Lighting: one hard-edged circular pool of amber under each figure thrown from directly above, with crisp borders and flat unbroken navy between the pools.
+Details: leave every face in shadow with the features undrawn; hair reads as one flat mass per figure and clothing as flat shapes, varied between figures so no two silhouettes match; keep the rows evenly spaced and the frame calm, graphic and symmetrical.
+Compose for a 16:9 frame.
+```
+
+### 2c.4 The statues — *GoldenEye* inverted
+
+Kleinman's sequence toppled the statues of dictators. Karen's story ends on a
+bronze that is still on hold. So the frame carries the whole arc at once: two
+figures going over on the left, one rising half-out of the ground in the centre,
+one complete and upright on the right.
+
+```prompt
+SCENE:
+Subject: a row of tall stone plinths on a wide public square at night, some bearing standing figures and some empty.
+Action: on the left of frame two suited figures tilt backwards off their plinths mid-fall, already past the point of recovery; at the centre a third figure rises from a plinth still half-sunk into the ground; on the right a single figure stands upright and complete, one arm bent to hold a telephone handset to the ear.
+Environment: a broad flat plaza of dark slate running to the lower frame edge, with plain navy building slabs standing along the far side of the square.
+Art style: exactly the STYLE LOCK above.
+Lighting: a low amber uplight at the base of each plinth throws every figure as a hard-edged silhouette and casts long clean wedges of shadow up the buildings behind.
+Details: every figure is a flat near-silhouette with the features undrawn; the standing figure on the right is the tallest and most upright shape in the frame; keep the plinths blank and free of any plaque or lettering; keep a large area of empty navy sky above.
+Compose for a 16:9 frame.
+```
+
+### 2c.5 The paper tower — *Casino Royale*'s falling suits
+
+Kleinman built those titles out of card suits. Yours are forms. The lock already
+asks for *"hard scale contrast between a small figure and a large architectural
+mass"* — this just makes the mass out of bureaucracy, stacked until it is
+geology.
+
+```prompt
+SCENE:
+Subject: a colossal tower built entirely from stacked sheets of paper, standing alone on an empty plain.
+Action: static, with a scatter of loose sheets falling slowly through the air around the tower's upper reaches, each catching a thin amber edge; one small figure stands at the base, tiny against it, a handset held to the ear.
+Environment: a flat dark navy ground plane meeting a flat navy sky with no horizon detail; the tower rises from the centre of frame and runs out past the top edge.
+Art style: exactly the STYLE LOCK above.
+Lighting: a low warm source from the left rakes across the stacked edges so every layer catches a bright ochre line, while the shadowed side falls to near-black; the tower throws one long hard-edged wedge of shadow across the ground to the right.
+Details: the stack reads as thousands of flat horizontal layers, slightly uneven, like a cliff face of sediment; keep every sheet blank and unprinted; the figure at the base is a flat near-silhouette with the features undrawn; keep generous empty navy around the tower.
+Compose for a 16:9 frame.
+```
+
+### 2c.6 The phone in the river
+
+Act 1 already throws it in, and modern Bond sinks things beautifully. Slow, still,
+no faces, no hands — **the safest generation in the set after the §2a.4 walk, and
+the one to fire first if you want an early read on whether the series clause is
+holding the palette.**
+
+```prompt
+SCENE:
+Subject: a telephone handset sinking through deep water, seen from below and slightly to one side.
+Action: the handset falls slowly downward through the middle of frame, tilted, its coiled cord trailing upward above it in a loose curve.
+Environment: a vast body of deep navy water, the surface far above reading as a flat plane of lighter slate-blue across the top of frame.
+Art style: exactly the STYLE LOCK above.
+Lighting: hard-edged amber shafts break through the surface and cut down through the water as clean straight-sided wedges, catching one edge of the handset as it passes through them.
+Details: the water steps down through flat bands of stepped value from slate-blue at the surface to near-black at the bottom of frame; a few flat circular bubbles rise in a line toward the surface; keep the handset a simple flat shape with no detail below the level of a large plane; keep the lower third of the frame almost entirely empty near-black.
+Compose for a 16:9 frame.
+```
+
+### 2c.7–2c.10 The circle chain — one shape that refuses to leave
+
+Bass built whole sequences on a single shape passing through unrelated objects.
+§2a.1 and §2a.2 already share a centre point; this makes it a **rule** rather than
+a moment. Six circles, same pixel, cut hard on the beat:
+
+> earpiece grill → rotary dial → **key 3** (§2c.1) → manhole → **the booth iris**
+> (§2a.3) → the plinth from overhead
+
+Four of the six need plates; the other two exist. All four are overhead, dead
+centre, and share the same closing line — **the centring instruction is the whole
+point, so do not trim it.**
+
+**2c.7 — the earpiece grill**
+
+```prompt
+SCENE:
+Subject: the earpiece end of a telephone handset seen from directly overhead, filling the centre of frame — a flat navy disc perforated with a ring of small round holes.
+Action: static, held square to camera.
+Environment: lying on a flat uninterrupted deep-navy surface that fills the rest of the frame.
+Art style: exactly the STYLE LOCK above.
+Lighting: one warm amber source from the upper left throwing a hard-edged wedge across the surface; each hole reads as a crisp dark circle carrying a thin amber rim along its upper edge.
+Details: place the disc's centre precisely at the centre of frame and keep it radially balanced; keep generous empty navy on all sides.
+Compose for a 16:9 frame.
+```
+
+**2c.8 — the rotary dial**
+
+```prompt
+SCENE:
+Subject: a rotary telephone dial seen from directly overhead, filling the centre of frame — a flat disc with ten evenly spaced round finger holes around its edge.
+Action: static, with one finger hole at the top of the dial glowing brighter amber than the rest.
+Environment: the flat navy face of the telephone body fills the rest of the frame as one uninterrupted plane.
+Art style: exactly the STYLE LOCK above.
+Lighting: one warm amber source from the upper left, throwing a hard-edged wedge across the dial face and a clean crescent of shadow inside each finger hole.
+Details: place the centre of the dial precisely at the centre of frame; keep the dial face completely blank with no digits, letters or markings of any kind; keep the ring of holes radially balanced.
+Compose for a 16:9 frame.
+```
+
+**2c.9 — the manhole**
+
+```prompt
+SCENE:
+Subject: an open round manhole in a road surface seen from directly overhead, warm amber light rising up out of it.
+Action: static, the light spilling upward from below.
+Environment: flat wet navy asphalt filling the whole frame as one plane, with pale crosswalk bars crossing one corner.
+Art style: exactly the STYLE LOCK above.
+Lighting: the light from the opening is the only source in the frame; it lays a hard-edged amber ring on the asphalt immediately around the hole and leaves everything beyond it deep navy.
+Details: place the opening precisely at the centre of frame and keep it perfectly circular; keep the road surface a single flat plane free of markings or lettering apart from the pale crosswalk bars.
+Compose for a 16:9 frame.
+```
+
+**2c.10 — the plinth from overhead**
+
+The last circle in the chain, and the one that lands the sequence on the statue.
+
+```prompt
+SCENE:
+Subject: a circular stone plinth seen from directly overhead, with a single figure standing on it in near-silhouette.
+Action: static, the figure standing at the exact centre of the disc, one arm bent to hold a telephone handset to the ear, seen from straight above so only the shoulders, the flat mass of hair and the cast shadow read.
+Environment: a flat dark slate plaza filling the frame around the circular plinth.
+Art style: exactly the STYLE LOCK above.
+Lighting: one warm amber source from the upper left; the figure throws one long hard-edged shadow across the plinth and out onto the plaza beyond it.
+Details: place the centre of the plinth precisely at the centre of frame; leave the face undrawn; keep the plinth surface blank and free of any plaque or lettering; keep the surrounding plaza a single uninterrupted flat plane.
+Compose for a 16:9 frame.
+```
+
+### Not on this list, deliberately
+
+Four of the ideas from the same session are **edit-side moves and need no image
+prompt at all** — recorded here so nobody generates a plate for them by mistake:
+
+- **The light-wedge wipe** — every plate in this register already carries one
+  hard-edged amber wedge; let it sweep and reveal the next plate behind it. The
+  transition is made of what the style already does.
+- **Cutting on the touch-tone beeps** — hard cuts, no easing, twelve plates before
+  the drums arrive.
+- **The hold-freeze** — picture freezes and drains to navy-only on each
+  *"(I'm sorry, I can't help you)"*, snaps back on *"That's OK."*
+- **The one saturated accent** — the lock permits a single rare accent colour.
+  Spending it on one recurring object for the whole sequence (the red hold button,
+  or Karen's handset) is a grade decision, not a prompt. It would also give
+  everything else a reason to sit back down toward navy, which is the §2a.4 fix.
+
+---
+
+## 2d. Clip prompts for the §2c plates — Gemini Omni Flash `[not yet fired]`
+
+**Written 2026-08-12. Briefs, not records.** Nine clips animating the eight
+accepted [§2c](#2c-the-second-wave-of-title-sequence-plates--illustrated-register-8-of-10-fired--accepted)
+plates — 2c.2 gets two, one per take. Numbered in the order the plates were
+harvested, which is **not** §2c order.
+
+**Model: Gemini Omni Flash, in Flow.** Path unchanged from §2b: upload the still →
+hover the tile → `⋮ More` → **Animate** → paste the prompt → Create → approve the
+credit gate. **30 credits per 10s clip**, so **the full set is ~270 credits** —
+and note that **blocked generations still consume credits with no automatic
+refund** ([`docs/google-flow/omni-flash.md`](../../google-flow/omni-flash.md)).
+Poll for completion; a queued clip looks like a failure.
+
+### What the research changed since §2b
+
+Checked against Google's API reference and the DeepMind prompt guide; engine-level
+detail is filed in [`omni-flash.md`](../../google-flow/omni-flash.md).
+
+1. **There is a first-frame *tag*, and §2b did not know about it.** The API accepts
+   `<FIRST_FRAME>` inline at the start of the prompt to bind an uploaded image to
+   the starting-frame role, `<IMAGE_REF_0>` (zero-indexed, up to six) for
+   references, and explicit declarations like
+   `[# Sources <FIRST_FRAME>@Image1] [# References <IMAGE_REF_0>@Image2]`. **This
+   substantially undercuts the "no true first-frame-to-video" complaint** — there is
+   a real binding mechanism, and the complaints most likely describe the *default*
+   reference behaviour. It is **API syntax**, and in Flow the Frames input is
+   supposed to do this job, so the prompts below use the plain-language sentence.
+   **Worth one experiment:** type the tag into Flow's prompt box and see whether it
+   binds harder than the sentence. If it does, it also reopens the `animate-slide`
+   question in [`omni-flash.md`](../../google-flow/omni-flash.md#the-animate-slide-problem).
+2. **The guiding instruction belongs at the very end.** Google's own wording is to
+   "add instructions at the prompt's end". §2b put *"Use the given image as the
+   starting frame"* second, in the opening breath. **All nine below move it to the
+   last line** — the single most likely reason a §2b clip would have drifted.
+3. **Timecodes parse.** `[0-3s] A person is walking`, or plainly *"after three
+   seconds…"*. Not used below, because one-action-per-clip is the stronger rule —
+   but the keypad's 1 → 2 → 3 light-up is the obvious candidate if anyone wants that
+   whole beat as a single clip instead of a cut.
+4. **Name the reference's job.** When an image is *not* a first frame, say whether
+   it is a style, character, subject or background reference. Irrelevant to these
+   nine; relevant to everything else in the pipeline.
+
+**The ~50-word ceiling and why these bust it.** Omni is reported to lose quality
+past roughly fifty words — and these run 55–65. That is a deliberate trade, not an
+oversight: the **shot lock** is mandatory because Omni defaults to cutting, and the
+**preserve clause** is mandatory because without a named keep-list Omni re-styles
+the whole frame. Those two eat ~35 words before anything happens. The action and
+the audio get what is left, which is why every action below is one terse sentence.
+**If clips come back soft or drifting, shorten the preserve clause first** — down to
+`Keep the flat illustrated style and palette exactly the same.` — and leave the
+shot lock alone.
+
+**Five of nine are locked off.** Deliberate. Over-specifying camera is a documented
+Omni backfire, static is the most reliable instruction it takes, and camera moves
+into geometry the plate never showed are a documented weak spot — which rules out
+the pull-back that several of these frames invite.
+
+### 2d.1 The paper tower — plate §2c.5
+
+Push in rather than pull up: the tower runs out past the top of frame, and moving
+into unseen geometry is where Omni distorts.
+
+```prompt
+Create a 10-second 16:9 title-sequence video, one continuous shot, no cuts. Slow push in toward the small figure at the tower's base as loose sheets keep drifting down around it. Keep the flat illustrated style, the navy-and-amber palette and the hard-edged shadow exactly the same. Paper rustle under slow upright bass, no dialogue. Use this image as the starting frame.
+```
+
+### 2d.2 The statues — plate §2c.4
+
+The topple is the action, so the camera does nothing. Naming the standing figure as
+*holding still* is what stops Omni animating all four.
+
+```prompt
+Create a 10-second 16:9 title-sequence video, one continuous shot, no cuts. Locked off. The two figures on the left tip slowly backwards off their plinths and out of the light; the standing figure on the right holds still. Keep the flat illustrated style, the amber uplight cones and the palette exactly the same. Low brass and timpani, no dialogue. Use this image as the starting frame.
+```
+
+### 2d.3 The hold-line chorus — plate §2c.3
+
+**Note the audio clause is different.** This is the one clip that *wants* voices, so
+it cannot say "no dialogue" — it asks for chatter and rules out intelligible speech
+instead.
+
+```prompt
+Create a 10-second 16:9 title-sequence video, one continuous shot, no cuts. Slow push in toward the centre figure as every figure shifts weight slightly and the coiled cords sway. Keep the flat illustrated style, the amber pools of light and the palette exactly the same. Indistinct telephone chatter under slow strings, no intelligible speech. Use this image as the starting frame.
+```
+
+### 2d.4 The level above the level, cool take — plate §2c.2
+
+The navy-dominant take gets the move: a continuous rise toward an opening it never
+reaches. This is the shot the plate was designed for.
+
+```prompt
+Create a 10-second 16:9 title-sequence video, one continuous shot, no cuts. Slow continuous push in toward the small bright opening at the centre, storeys sliding steadily past the frame edges. Keep the flat illustrated style, the amber windows, the navy walls and the symmetry exactly the same. Distant office hum under slow smoky jazz, no dialogue. Use this image as the starting frame.
+```
+
+### 2d.5 The keypad — plate §2c.1
+
+The plate is already the end state of the menu, so the clip carries it onward into
+the iris-out. Motion graphics of exactly this kind are a documented Omni strength.
+
+```prompt
+Create a 10-second 16:9 title-sequence video, one continuous shot, no cuts. Locked off overhead. The lit key pulses once, then its amber glow spreads outward until it floods the whole frame. Keep the flat illustrated style, the navy faceplate and the key grid exactly the same. Three touch-tone beeps, then a dial tone, no dialogue. Use this image as the starting frame.
+```
+
+### 2d.6 The rotary dial — plate §2c.8
+
+Object tracking through rotation is the thing Omni is reported to be *best* at, so
+this is the highest-confidence clip in the set.
+
+```prompt
+Create a 10-second 16:9 title-sequence video, one continuous shot, no cuts. Locked off overhead. The dial turns slowly clockwise, carrying the lit hole round with it, then springs back to rest. Keep the flat illustrated style, the hard-edged wedge of light and the palette exactly the same. A mechanical dial whirr, then a dial tone, no dialogue. Use this image as the starting frame.
+```
+
+### 2d.7 The level above the level, warm take — plate §2c.2
+
+**Same plate as 2d.4, different job.** The saturated take is held completely still
+so the two cut together as a breath — the cool one moves, the warm one sits. That
+turns the warmth difference between the takes from a defect into an edit.
+
+```prompt
+Create a 10-second 16:9 title-sequence video, one continuous shot, no cuts. Locked off, camera completely still. The tiny silhouettes at the desks shift and settle at their work; nothing else moves. Keep the flat illustrated style, the saturated amber windows, the ceiling grid and the symmetry exactly the same. Distant hold music and a low room hum, no dialogue. Use this image as the starting frame.
+```
+
+### 2d.8 The phone in the river — plate §2c.6
+
+**The red bubble is named in the preserve list on purpose.** It is the single
+saturated accent, and an unnamed one-pixel colour is exactly what a re-style eats.
+
+```prompt
+Create a 10-second 16:9 title-sequence video, one continuous shot, no cuts. The handset keeps sinking slowly toward the dark, its coiled cord trailing above it, bubbles rising past. Keep the flat illustrated style, the amber shafts, the single red bubble and the stepped water bands exactly the same. Muffled underwater ambience under one low sustained bass note, no dialogue. Use this image as the starting frame.
+```
+
+### 2d.9 The plinth from overhead — plate §2c.10
+
+The light moves, not the camera. **The variant worth one extra clip** is a slow
+clockwise rotation about the plinth's centre — very Bass, and it lands the circle
+chain — but overhead rotation is the riskier ask, so shoot the sweep first.
+
+```prompt
+Create a 10-second 16:9 title-sequence video, one continuous shot, no cuts. Locked off overhead. The amber band of light sweeps slowly across the plinth so the figure's long shadow swings round with it. Keep the flat illustrated style, the flat navy ground and the palette exactly the same. Slow smoky jazz and faint city air, no dialogue. Use this image as the starting frame.
+```
+
+### Fire order
+
+**2d.6 (the dial) first** — rotation is Omni's strongest documented motion, so it is
+the cleanest read on whether the moved guiding instruction and the preserve clause
+are doing their jobs before ~270 credits go out the door. Then **2d.5** (motion
+graphics, second-safest), then the rest. **2d.4 is the one most likely to fail**:
+a sustained push into repeating geometry is precisely the "camera moves into areas
+the source never showed" weakness.
+
+---
+
 ## 3. Gaps
 
 - **Three prompts are missing.** The batch this file was opened from included
@@ -647,6 +1110,21 @@ Over-detailed edit instructions trigger changes you did not ask for.
   §2.1–2.5 still have no clip prompts recorded.**
 - **§2b is unfired.** Five briefs written but not yet run; they need replacing with
   what was actually typed, the same way §2.6 was.
+- **§2c is 8 of 10 fired and accepted.** Still owed: **2c.7 (the earpiece grill)
+  and 2c.9 (the manhole)**, without which the circle chain is four links, not six.
+  The accepted eight are also **not yet recorded as images** — see the bullet above.
+  The use-case and series clauses that were untested when written are now **fired
+  and apparently working**; the palette held across eight generations.
+- **§2d is unfired.** Nine clip briefs against the eight accepted plates. They carry
+  one untested recipe change — **the guiding instruction moved to the last line** —
+  so 2d.6 is a calibration run as much as a clip. Full set is ~270 credits.
+- **The `<FIRST_FRAME>` tag is untested in Flow.** Documented API syntax that binds
+  an image to the starting-frame role; whether it does anything typed into Flow's
+  prompt box is unknown, and the answer matters well beyond Karen — see
+  [`omni-flash.md`](../../google-flow/omni-flash.md#the-animate-slide-problem).
+- **The hex-pinned palette is untested.** Proposed in §2c as the candidate fix for
+  the §2a.4 drift, deliberately *not* written into the §1b lock. Somebody needs to
+  run it on one plate and compare before it goes anywhere near the canonical block.
 - **No images filed for §2a.** Four accepted stills with no frame next to the
   prompt — same gap as the bullet above, now with four more entries.
 - **The §2a.4 palette drift is unresolved** — that plate came back warmer and more
