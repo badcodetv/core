@@ -9,6 +9,7 @@ import { candidateOutPath } from './candidates'
 import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected } from './compose'
 import { classifyCard, ANY_CARD_RE, type CardState } from './failure-card'
 import { parseMediaOptions, SCRAPE_MEDIA_OPTIONS, type RawMediaOption, type MediaListItem } from './media-list'
+import { toAnimateTiles, chooseAnimateTarget, type AnimateTile, type RawAnimateTile } from './animate-target'
 
 const FLOW_URL = 'https://labs.google/fx/tools/flow'
 const DEFAULT_ENDPOINT = `http://localhost:${process.env.FLOW_CDP_PORT ?? '9222'}`
@@ -159,6 +160,26 @@ export class FlowClient {
       for (const type of ['mousedown', 'mouseup', 'click'] as const) {
         el.dispatchEvent(new MouseEvent(type, { bubbles: true, cancelable: true, button: 0 }))
       }
+    })
+  }
+
+  /**
+   * Reveal a hover-only overlay (a media tile's `more_vert` action button, which only mounts
+   * on hover) via synthetic pointer/mouse events, NOT Playwright's coordinate-based `.hover()`.
+   * flow-selectors.md:236-242 documents coordinate input as untrustworthy on this rig — the
+   * WSLg window's input pipeline scales coordinates, so a trusted pointer move can land on the
+   * wrong element (or the right element at the wrong point) even where a click with the same
+   * mechanism would at least fail loudly. A hover has no "did it land" signal of its own, so
+   * getting the coordinates wrong here fails silently instead — worse than a missed click, not
+   * better. `pointerover`/`mouseover` bubble, so dispatching them at the target element reaches
+   * React's root-level listeners the same way the app's own onMouseEnter handling would.
+   */
+  private async hoverElement(locator: Locator): Promise<void> {
+    await locator.evaluate((el) => {
+      const opts: PointerEventInit = { bubbles: true, cancelable: true, pointerId: 1, pointerType: 'mouse', isPrimary: true }
+      el.dispatchEvent(new PointerEvent('pointerover', opts))
+      el.dispatchEvent(new MouseEvent('mouseover', { bubbles: true, cancelable: true }))
+      el.dispatchEvent(new MouseEvent('mousemove', { bubbles: true, cancelable: true }))
     })
   }
 
@@ -911,7 +932,11 @@ export class FlowClient {
     // 0. Assert model/aspect/count BEFORE touching media — these are project-level defaults
     //    that silently reset, so this must run every call, not just the first in a session.
     await this.ensureVideoSettings(opts)
-    // 1. Upload the source frame through the hidden input (see uploadFiles). The reveal is
+    // 1. Snapshot the "Generated image" tiles BEFORE upload, so the tile the upload creates
+    //    can be told apart from whatever else is already sitting in the project (same idea as
+    //    the `before` snapshot below, applied one step earlier — see animate-target.ts).
+    const beforeTiles = toAnimateTiles(await this.scrapeAnimateTiles())
+    // 2. Upload the source frame through the hidden input (see uploadFiles). The reveal is
     //    two steps here: Add Media opens a menu, whose "Upload media" item mounts the input.
     await this.uploadFiles([imagePath], async () => {
       await this.forceClick(this.page.getByRole('button', { name: /add\s*Add Media/i }).first())
@@ -919,48 +944,81 @@ export class FlowClient {
       await item.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
       await this.forceClick(item)
     })
-    // 2. Attach it as the animation source.
-    await this.openAnimateMenu()
-    // 3. Motion prompt + submit (capture the pre-submit media set to detect the new clip).
+    // 3. Identify the just-uploaded tile and attach it as the animation source.
+    const tileIndex = await this.waitForNewAnimateTile(beforeTiles, TURN_TIMEOUT_MS)
+    await this.openAnimateMenu(tileIndex)
+    // 4. Motion prompt + submit (capture the pre-submit media set to detect the new clip).
     const before = new Set(await this.scrapeMediaNames())
     await this.submitPrompt(motion)
-    // 4. Approve the credit gate if Flow posts one (Veo Quality = 100 credits).
+    // 5. Approve the credit gate if Flow posts one (Veo Quality = 100 credits).
     await this.approveCreditGateIfPresent()
-    // 5. Poll for the new video media and harvest.
+    // 6. Poll for the new video media and harvest.
     const name = await this.waitForVideoClip(before, VIDEO_TIMEOUT_MS)
     await harvestToFile(this.page.request, name, outPath)
     return { path: outPath, mediaId: name }
   }
 
+  /** Media names from every current "Generated image" tile — see SCRAPE_ANIMATE_TILES. */
+  private async scrapeAnimateTiles(): Promise<RawAnimateTile[]> {
+    return (await this.page.evaluate(`(${FlowClient.SCRAPE_ANIMATE_TILES})()`)) as RawAnimateTile[]
+  }
+
+  /** In-page scraper for every "Generated image" tile's current src (evaluated as `(${...})()`). */
+  private static readonly SCRAPE_ANIMATE_TILES = `() => [...document.querySelectorAll('img[alt="Generated image"]')].map(im => ({
+    src: im.currentSrc || im.src || im.getAttribute('src') || '',
+  }))`
+
   /**
-   * Open the "Animate" action on an uploaded still. Media tiles only reveal their more_vert on
-   * hover, and a media-rich project has several "Generated image" tiles (including video posters
-   * whose menu has no Animate), so hover each tile, click the revealed more_vert, and accept the
-   * first whose menu exposes Animate.
+   * Poll until the just-uploaded still's tile becomes identifiable, per
+   * `chooseAnimateTarget`'s diff-then-sole-tile-fallback rule (animate-target.ts). The upload
+   * takes a beat to render as a fresh tile with a resolved media id, so this polls rather than
+   * scraping once.
    *
-   * NOTE (2026-06-30): the end-to-end image→video flow is PROVEN (a real .mp4 was generated and
-   * harvested through this exact path), but this tile-targeting step has only been hardened, not
-   * re-validated clean against a media-cluttered project — see docs/superpowers/flow-video.md.
+   * Throws ANIMATE_NOT_FOUND (mapped in toToolError) on timeout rather than EVER falling back
+   * to "hover every tile and take the first that offers Animate" — that blind scan is exactly
+   * the fragility this task replaces (flow-video.md's "open rough edge": it timed out on
+   * re-runs once the project filled with test media, and worse, a media-rich project has no
+   * guarantee the first Animate-capable tile it finds is the one we just uploaded). A clear,
+   * fast failure beats a silent wrong-image animate.
    */
-  private async openAnimateMenu(): Promise<void> {
-    const tiles = this.page.locator('img[alt="Generated image"]')
-    await tiles.first().waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
-    const n = await tiles.count()
-    for (let i = 0; i < n; i++) {
-      await tiles.nth(i).hover()
-      const more = this.page
-        .locator('button:has-text("more_vert"):near(img[alt="Generated image"])')
-        .first()
-      if (!(await more.count())) continue
-      await more.click({ force: true })
-      const animate = this.page.getByRole('menuitem', { name: /motion_blur\s*Animate/i })
-      if (await animate.count()) {
-        await animate.click({ force: true })
-        return
-      }
-      await this.page.keyboard.press('Escape') // wrong tile (e.g. a video) — close and try the next
+  private async waitForNewAnimateTile(before: AnimateTile[], timeoutMs: number): Promise<number> {
+    const deadline = Date.now() + timeoutMs
+    while (Date.now() < deadline) {
+      const after = toAnimateTiles(await this.scrapeAnimateTiles())
+      const idx = chooseAnimateTarget(before, after)
+      if (idx !== null) return idx
+      await this.page.waitForTimeout(POLL_MS)
     }
     throw new Error('ANIMATE_NOT_FOUND')
+  }
+
+  /**
+   * Open the "Animate" action on ONE specific "Generated image" tile — `tileIndex` from
+   * `waitForNewAnimateTile`, the just-uploaded still, never "whichever tile answers first".
+   * The tile's more_vert only mounts on hover, so reveal it via the synthetic-event
+   * `hoverElement` (not coordinate-based `.hover()` — see its doc comment), then the standard
+   * hardened clicks: `more_vert` is a Radix menu trigger (`pointerClick`), "Animate" is the
+   * menu item it opens (`forceClick`).
+   */
+  private async openAnimateMenu(tileIndex: number): Promise<void> {
+    const tile = this.page.locator('img[alt="Generated image"]').nth(tileIndex)
+    await tile.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    await this.hoverElement(tile)
+    // Only the hovered tile's more_vert is revealed (we hover exactly one tile — never a
+    // scan loop), so :near() unambiguously resolves to that tile's own control.
+    const more = this.page
+      .locator('button:has-text("more_vert"):near(img[alt="Generated image"])')
+      .first()
+    if (!(await more.count())) throw new Error('ANIMATE_NOT_FOUND')
+    await this.pointerClick(more)
+    const animate = this.page.getByRole('menuitem', { name: /motion_blur\s*Animate/i })
+    try {
+      await animate.waitFor({ state: 'visible', timeout: 5_000 })
+    } catch {
+      await this.page.keyboard.press('Escape')
+      throw new Error('ANIMATE_NOT_FOUND')
+    }
+    await this.forceClick(animate)
   }
 
   /** Media UUIDs from <video>/<source>/<img> nodes carrying a non-thumbnail getMediaUrlRedirect src. */
@@ -984,7 +1042,7 @@ export class FlowClient {
     const approve = this.page.getByRole('button', { name: /^Approve$/ }).first()
     try {
       await approve.waitFor({ state: 'visible', timeout: timeoutMs })
-      await approve.click({ force: true })
+      await this.forceClick(approve)
     } catch {
       // No gate (Confirm=Never / direct generation) — nothing to approve.
     }

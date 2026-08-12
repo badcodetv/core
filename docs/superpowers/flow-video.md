@@ -163,14 +163,21 @@ remaining rough edge:
   `(${SCRAPE})()` — evaluating the bare function string returns the function, not the array.
 - **Credit gate**: `approveCreditGateIfPresent` clicks `Approve` if Flow posts the confirmation;
   a genuine failure re-posts it (`Oops, something went wrong`) and the poll re-approves to retry.
-- ⚠️ **Open rough edge — the uploaded-still → Animate attach.** Media tiles only reveal their
-  `more_vert` **on hover**, and a media-rich project shows many `img[alt="Generated image"]`
-  tiles (including the video poster, whose menu has no Animate) in a grid. `openAnimateMenu` now
-  hovers each tile and accepts the first menu exposing Animate, but this **best-effort targeting
-  has not been re-validated clean** on a cluttered project (it timed out on re-runs once the
-  project filled with test media). Robust targeting of *the just-uploaded* still (vs. picking any
-  animatable tile) is the remaining work. In real use the `animate-slide` skill drives this path
-  on a freshly-generated single slide.
+- **The uploaded-still → Animate attach now targets the specific tile, not "any animatable
+  tile"** (closed 2026-08-12, A7). The old `openAnimateMenu` hovered every `img[alt="Generated
+  image"]` tile in the grid and accepted the first menu exposing Animate — the exact fragility
+  this note used to flag: it timed out on re-runs once the project filled with test media, and
+  had no guarantee the first Animate-capable tile was the one just uploaded. `generateVideo` now
+  snapshots the tile list (`scrapeAnimateTiles`) BEFORE the upload and again after, and
+  `chooseAnimateTarget` (`animate-target.ts`) diffs the two to find the ONE new media name; if
+  that's ambiguous but the project holds exactly one tile total, it falls back to that sole tile
+  (still safe — there's no other candidate it could be). Any other ambiguity fails closed
+  (`ANIMATE_NOT_FOUND`) rather than guessing — a wrong pick here means silently animating a
+  different still with no visible sign anything went wrong. `openAnimateMenu` then hovers that
+  ONE identified tile (via a synthetic `pointerover`/`mouseover` dispatch, not coordinate-based
+  `.hover()` — see `hoverElement` in `flow-client.ts`) instead of scanning. In real use the
+  `animate-slide` skill drives this path on a freshly-generated single slide, which is also why
+  the sole-tile fallback matters: that's the common case this bug is fixed for.
 
 ## Still to watch (over a longer batch)
 
