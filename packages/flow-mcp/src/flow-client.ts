@@ -286,6 +286,14 @@ export class FlowClient {
    * the projects list) so a caller can chain a generation call immediately.
    */
   async createProject(name?: string): Promise<{ id: string; name: string }> {
+    // The "New project" button only exists on the projects LIST. Unlike ensureProject(), which
+    // is a no-op when a project is already open, this must always make a new one — so from
+    // inside a project it has to go back to the list first, or it spends the full 30s timeout
+    // waiting for a button that cannot be on the page (hit live 2026-08-12, calling
+    // createProject straight after another smoke script left the browser inside a project).
+    if (!/\/fx\/tools\/flow\/?(\?.*)?$/.test(this.page.url())) {
+      await this.page.goto(FLOW_URL, { waitUntil: 'domcontentloaded' })
+    }
     await this.clickNewProjectButton()
     await this.promptBox().waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     const m = this.page.url().match(/\/project\/([0-9a-f-]+)/)
@@ -655,8 +663,15 @@ export class FlowClient {
     }
     // Assert the model before reading the label below — ensureModel rewrites it.
     await this.ensureModel(model)
-    // Count tabs are named `1x` for one output and `x2`/`x3`/`x4` beyond (mapped live 2026-07-14).
-    const countTab = count <= 1 ? '1x' : `x${count}`
+    // Count tabs are `x1`/`x2`/`x3`/`x4` — uniform, no special case for one (mapped live
+    // 2026-08-12, smoke-compose-popover.ts). The old `1x` here is the SAME transposition the
+    // video Settings panel had, and it is the root cause of the "aspect lands one generation
+    // late" bug: `1x` matched nothing, the `if (count)` guard below silently no-opped, so every
+    // numOutputs=1 turn generated at whatever count was already set (typically x2). The second,
+    // unharvested candidate then landed AFTER the next turn's media snapshot, so the next call
+    // harvested the PREVIOUS prompt's straggler — at the previous aspect. It looked like a
+    // config race; it was a stale extra image, and it was also silently double-billing.
+    const countTab = `x${count}`
     // Short-circuit: the trigger label concatenates model+aspect+count ("🍌 Nano Banana 2crop_16_91x").
     const label = ((await crop.textContent()) ?? '').trim()
     if (/Nano Banana/i.test(label) && label.endsWith(countTab) && (!aspect || aspectAlreadySelected(label, aspect))) {
@@ -679,6 +694,29 @@ export class FlowClient {
     if (await countLocator.count()) await this.tabClick(countLocator)
     // Escape closes the menu; the selection sticks (verified live 2026-07-14).
     await this.page.keyboard.press('Escape')
+    // Read the config back off the trigger before returning. Both clicks above are
+    // click-if-present, which is how a name that matched nothing (`1x` vs `x1`) went unnoticed
+    // for a month while quietly generating — and paying for — the wrong number of images at the
+    // wrong shape. A generation is far too expensive to submit on an unverified config.
+    // The label is local React state and lands in well under a second (measured ~80ms,
+    // smoke-aspect-race.ts), so this is a settle-check, not a race workaround.
+    await this.assertImageConfig(crop, countTab, aspect)
+  }
+
+  /**
+   * Poll the compose-bar config trigger until its label shows the requested count and aspect.
+   * Throws `IMAGE_CONFIG_NOT_APPLIED: <label>` naming what it actually saw, so the next
+   * renamed-tab breakage is a one-line diagnosis instead of an archaeology session.
+   */
+  private async assertImageConfig(crop: Locator, countTab: string, aspect?: string): Promise<void> {
+    const deadline = Date.now() + 5_000
+    let label = ''
+    while (Date.now() < deadline) {
+      label = ((await crop.textContent()) ?? '').trim()
+      if (label.endsWith(countTab) && (!aspect || aspectAlreadySelected(label, aspect))) return
+      await this.page.waitForTimeout(150)
+    }
+    throw new Error(`IMAGE_CONFIG_NOT_APPLIED: wanted ${countTab}${aspect ? ` + ${aspect}` : ''}, trigger shows "${label}"`)
   }
 
   /**

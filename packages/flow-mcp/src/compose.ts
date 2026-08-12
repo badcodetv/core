@@ -87,17 +87,22 @@ export function videoModelAlreadySelected(label: string | null, model: string): 
 
 /**
  * Map an aspect ratio like "16:9" to the Material-icon ligature Flow's compose-bar CONFIG
- * TRIGGER renders for it. Confirmed live (flow-selectors.md:172-174) for exactly two: 16:9 ->
- * `crop_16_9` (the ratio spelled out with an underscore, not a colon) and 4:3 -> `crop_landscape`
- * (Flow reuses the real Material Symbols name here instead of a derived `crop_4_3`). Every other
- * ratio is assumed to follow the confirmed `crop_<w>_<h>` pattern by symmetry with 16:9 — and
- * with `ensureVideoSettings`'s already-shipped `crop_9_16` guess for 9:16 — but that is
- * UNCONFIRMED; flag for Wave B. `3:4` is guessed as `crop_portrait` by the same
- * descriptive-name logic as 4:3/`crop_landscape`.
+ * TRIGGER renders for it.
+ *
+ * The compose popover offers exactly five image ratios, and all five ligatures are now CONFIRMED
+ * live (2026-08-12, smoke-compose-popover.ts, which dumps each tab as "<ligature><ratio text>"):
+ * 16:9 -> `crop_16_9`, 9:16 -> `crop_9_16`, 4:3 -> `crop_landscape`, 3:4 -> `crop_portrait`,
+ * 1:1 -> `crop_square`. Note the pattern is NOT uniform: the two wide/tall ratios spell the
+ * numbers out with an underscore, the other three use descriptive Material Symbols names. `1:1`
+ * was previously derived as `crop_1_1` by the numeric rule and matched nothing — harmless (the
+ * short-circuit just never fired, so the menu reopened every time) but wrong.
+ *
+ * Any ratio outside that set falls back to the numeric rule. Flow does not currently offer one.
  */
 function aspectIcon(aspect: string): string {
   if (aspect === '4:3') return 'crop_landscape'
   if (aspect === '3:4') return 'crop_portrait'
+  if (aspect === '1:1') return 'crop_square'
   return `crop_${aspect.replace(':', '_')}`
 }
 

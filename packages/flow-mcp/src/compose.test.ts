@@ -122,11 +122,19 @@ describe('aspectAlreadySelected', () => {
     expect(aspectAlreadySelected('🍌 Nano Banana 2crop_16_9x2', '16:9')).toBe(true)
   })
 
-  it('does not confuse 1:1 and 21:9 (task-flagged confusable pair)', () => {
+  it('uses the live-confirmed descriptive icons for 1:1 and 3:4, not derived numeric ones', () => {
+    // Mapped live 2026-08-12 (smoke-compose-popover.ts): Flow's five image ratios render as
+    // crop_16_9 / crop_9_16 / crop_landscape / crop_portrait / crop_square. This test used to
+    // assert crop_1_1 for 1:1 — the same guess the code made, which is exactly why the wrong
+    // ligature survived: a unit test that encodes the implementation's assumption proves nothing.
+    expect(aspectAlreadySelected('🍌 Nano Banana Procrop_squarex1', '1:1')).toBe(true)
+    expect(aspectAlreadySelected('🍌 Nano Banana Procrop_portraitx1', '3:4')).toBe(true)
+    expect(aspectAlreadySelected('🍌 Nano Banana Procrop_1_1x1', '1:1')).toBe(false)
+  })
+
+  it('does not confuse 1:1 with a hypothetical 21:9 (both fall outside the descriptive set)', () => {
     expect(aspectAlreadySelected('🍌 Nano Banana 2crop_21_91x', '1:1')).toBe(false)
-    expect(aspectAlreadySelected('🍌 Nano Banana 2crop_1_11x', '21:9')).toBe(false)
-    expect(aspectAlreadySelected('🍌 Nano Banana 2crop_1_11x', '1:1')).toBe(true)
-    expect(aspectAlreadySelected('🍌 Nano Banana 2crop_21_91x', '21:9')).toBe(true)
+    expect(aspectAlreadySelected('🍌 Nano Banana 2crop_squarex1', '21:9')).toBe(false)
   })
 
   it('does not confuse 16:9 and 9:16 (task-flagged confusable pair)', () => {

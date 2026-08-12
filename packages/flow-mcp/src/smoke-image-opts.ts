@@ -1,12 +1,16 @@
 /**
  * Manual check — are `model` and `aspect` actually honoured per image call, and does the
- * no-arguments path still behave as before? NOT part of CI. Costs a few image generations.
+ * no-arguments path still behave as before? NOT part of CI. Costs four image generations.
  *
- * The regression this watches for: refine()/generateImage() previously asserted NO project or
- * image mode, deliberately trusting session state, so an edit loop mid-session must not be
- * disturbed by the new options plumbing.
+ * This is the proof for the "aspect lands one generation late" bug. It alternates
+ * 16:9 → 9:16 → 16:9 so a stale result is unmistakable: under the bug each call returned the
+ * PREVIOUS call's shape, which an all-same-aspect run could never reveal. Run it in a FRESH
+ * project (pass no id) so no pre-existing media can be mistaken for a turn's output.
  *
- * Usage: npx tsx packages/flow-mcp/src/smoke-image-opts.ts
+ * The fourth call passes no options at all — the regression watch for refine()/generateImage()'s
+ * deliberate "trust session state" path, which an edit loop mid-session depends on.
+ *
+ * Usage: npx tsx packages/flow-mcp/src/smoke-image-opts.ts [projectId]
  */
 import { mkdtemp } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
@@ -15,23 +19,34 @@ import { FlowClient } from './flow-client'
 
 const client = await FlowClient.connect()
 try {
+  const id = process.argv[2]
+  if (id) await client.openProject({ id })
+  else console.log('fresh project:', await client.createProject())
+
   const dir = await mkdtemp(join(tmpdir(), 'flow-imgopts-'))
   const PROMPT = 'A single plain metal disc resting on a dark tabletop, one soft light.'
+  const wanted = ['16:9', '9:16', '16:9'] as const
+  const results: { asked: string; ratio: number; w: number; h: number }[] = []
 
-  console.log('--- 16:9 ---')
-  const wide = await client.generateImage(PROMPT, join(dir, 'wide.jpg'), { aspect: '16:9' })
-  console.log(wide, 'ratio:', (wide.width / wide.height).toFixed(2), '(expect ~1.78)')
-
-  console.log('--- 9:16 ---')
-  const tall = await client.generateImage(PROMPT, join(dir, 'tall.jpg'), { aspect: '9:16' })
-  console.log(tall, 'ratio:', (tall.width / tall.height).toFixed(2), '(expect ~0.56)')
+  for (const [i, aspect] of wanted.entries()) {
+    console.log(`--- ${i + 1}/${wanted.length}: ${aspect} ---`)
+    const r = await client.generateImage(PROMPT, join(dir, `${i}-${aspect.replace(':', 'x')}.jpg`), { aspect })
+    const ratio = r.width / r.height
+    console.log(r, 'ratio:', ratio.toFixed(2))
+    results.push({ asked: aspect, ratio, w: r.width, h: r.height })
+  }
 
   console.log('--- no options (must not disturb session state) ---')
   const plain = await client.generateImage(PROMPT, join(dir, 'plain.jpg'))
   console.log(plain, 'ratio:', (plain.width / plain.height).toFixed(2))
 
-  const ok = wide.width > wide.height && tall.height > tall.width
-  console.log(ok ? 'ASPECT OK — orientation followed the request' : 'ASPECT FAIL')
+  const expected = (a: string) => (a === '16:9' ? (r: number) => r > 1.4 : (r: number) => r < 0.7)
+  const bad = results.filter((r) => !expected(r.asked)(r.ratio))
+  console.log(
+    bad.length
+      ? `ASPECT FAIL — ${bad.map((b) => `${b.asked} came back ${b.w}x${b.h}`).join('; ')}`
+      : 'ASPECT OK — every call returned the shape it asked for, including the alternation',
+  )
 } finally {
   await client.close()
 }
