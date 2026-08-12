@@ -104,6 +104,55 @@ person. The reference attachment is what binds it (camping-v2 p03: text → gene
 financier; reference → the real Tarquin). `flow_generate_image` only fills text, so
 character panels need the reference attached via the UI (Playwright) for now.
 
+## Characters, re-mapped live 2026-08-11 (GPOM + MMT casting) — SUPERSEDES the flow above
+
+The character UI changed. What the 2026-06-30 recipe gets wrong, and the current map:
+
+**There is no "New Character" card.** The sidebar **Characters** button now navigates
+*straight* to the composer on a project with zero characters, so the old
+`getByText('New Character')` click hangs for its full timeout and strands the page on
+`/characters` — which then breaks the *next* call, because that route has no create bar.
+Two fixes shipped in `flow-client.ts`: the dead click is gone, and every entry point now
+goes through `ensureProjectRoot()`, which re-navigates to the bare `/project/<id>` when a
+prior failure left the page on a sub-route.
+
+**The name field is `getByRole('textbox', { name: 'Character Name' })`** — not
+`input[placeholder="Character Name"]`; that selector matches nothing and was the second
+half of the same failure.
+
+**A Character has two view slots, Portrait and Body.** Uploading a reference fills only
+the Portrait. The editor's **`Create Body`** button opens a second compose bar
+("Describe body and outfit…." + the portrait as a chip); on completion the tab's label
+flips `Create Body` → `Body`, which is the reliable done-signal. A portrait *and* a body
+bind identity noticeably better than a portrait alone.
+
+**Character Info** (`getByRole('textbox', { name: /Describe how your character/i })`) is a
+free-text note Flow's own scene agent reads when the character is cast — worth filling so
+prompts don't have to repeat it.
+
+**Iterating on an existing character** is a first-class flow: select the Portrait or Body
+tab, then use the editor's own *"What do you want to change?"* bar. Cheaper and more
+faithful than re-casting from a new reference, and recoverable via **Show history**.
+
+**Model picker — two layouts, and it RESETS on navigation.** The canvas has one trigger
+concatenating model+aspect+count (`🍌 Nano Banana Pro crop_16_9 x2`) with the model
+submenu nested inside its menu; the character editor has a bare
+`🍌 <model> arrow_drop_down` trigger. Both default back to **Nano Banana 2** after
+navigation, so the model is asserted **per generation**. Tiers: **Nano Banana Pro** >
+Nano Banana 2 > Nano Banana 2 Lite. Beware: `Nano Banana 2` is a strict prefix of
+`Nano Banana 2 Lite`, so a substring check silently generates on the wrong tier
+(guarded by `modelAlreadySelected()` in `compose.ts`, with tests).
+
+**Empty compose boxes report their placeholder in `textContent`,** and the placeholder
+differs per surface. The submit-verification helper strips all of them
+(`isBoxCleared()` in `compose.ts`) — otherwise a character-page submit never reads as
+cleared and retries into a double submission.
+
+**What does NOT work: asking for a multi-view character sheet in one shot.** A single
+`flow_edit_image` call asking Flow to composite front/side/back turnarounds from one
+portrait produced *nothing* — no candidate ever landed (consistent with a policy block or
+a compositing limit; it is not merely slow). Use Portrait + native Create Body instead.
+
 ## Hardening — confirmed live 2026-06-30 (flow-script-hardening branch)
 
 Live-validated `@badcode/flow-mcp` against camping-v2 (`/project/9b729074…`): `openProject`,

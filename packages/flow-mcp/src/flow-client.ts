@@ -6,10 +6,17 @@ import { harvestToFile, contentTypeOf } from './harvest'
 import { pickProject, SCRAPE_PROJECTS, type ProjectTile } from './project'
 import { batchOutPath } from './batch'
 import { candidateOutPath } from './candidates'
+import { escapeRegExp, isBoxCleared, modelAlreadySelected } from './compose'
 
 const FLOW_URL = 'https://labs.google/fx/tools/flow'
 const DEFAULT_ENDPOINT = `http://localhost:${process.env.FLOW_CDP_PORT ?? '9222'}`
 const TURN_TIMEOUT_MS = 90_000
+/**
+ * Flow's compose bars default to "Nano Banana 2" and RESET to it on navigation, so the
+ * model is asserted per generation, never once per session. Pro is materially sharper on
+ * the same prompt (compared live 2026-08-11) and is what BadCode ships.
+ */
+const DEFAULT_MODEL = process.env.FLOW_MODEL ?? 'Nano Banana Pro'
 const VIDEO_TIMEOUT_MS = 8 * 60_000
 // Image/grid polls are cheap in-page DOM scrapes, so poll fast (~1s of discovery latency).
 const POLL_MS = 1_000
@@ -147,6 +154,96 @@ export class FlowClient {
     return this.page.locator('div[role="textbox"][contenteditable="true"]').first()
   }
 
+  /**
+   * Select the generation model in whichever compose bar is on screen. Two layouts, both
+   * mapped live 2026-08-11:
+   *   • project canvas — one config trigger concatenating model+aspect+count
+   *     ("🍌 Nano Banana Pro crop_16_9 x2"); the model submenu is nested INSIDE its menu.
+   *   • character editor — a bare "🍌 <model> arrow_drop_down" trigger, no crop_ wrapper.
+   * No-ops when the surface has no model picker.
+   */
+  private async ensureModel(model = DEFAULT_MODEL): Promise<void> {
+    const bare = this.page.getByRole('button', { name: /Nano Banana.*arrow_drop_down/i }).first()
+    const crop = this.page.getByRole('button', { name: /crop_/ }).first()
+    let trigger: Locator
+    if (await bare.count()) {
+      if (modelAlreadySelected(await bare.textContent(), model)) return
+      trigger = bare
+    } else if (await crop.count()) {
+      if (modelAlreadySelected(await crop.textContent(), model)) return
+      await this.pointerClick(crop)
+      trigger = this.page.getByRole('button', { name: /Nano Banana.*arrow_drop_down/i }).first()
+      await trigger.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    } else {
+      return
+    }
+    await this.pointerClick(trigger)
+    const option = this.page.getByRole('button', { name: `🍌 ${model}`, exact: true }).first()
+    await option.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    await this.forceClick(option)
+    // Escape closes the (possibly nested) menu; the selection sticks.
+    await this.page.keyboard.press('Escape')
+  }
+
+  /** The character editor's name field — also the reliable "which character is open" probe. */
+  private characterNameField(): Locator {
+    return this.page.getByRole('textbox', { name: 'Character Name' })
+  }
+
+  /**
+   * Open a Character's editor page by name. Character cards on the project root carry the
+   * character's name as their <img alt>, which is what distinguishes them from generated
+   * media tiles (mapped live 2026-08-11).
+   */
+  private async openCharacterPage(name: string): Promise<void> {
+    if (/\/character\/[0-9a-f-]+/.test(this.page.url())) {
+      const open = await this.characterNameField().inputValue().catch(() => '')
+      if (open === name) return
+    }
+    await this.ensureProjectRoot()
+    const link = this.page.locator(`a[href*="/character/"]:has(img[alt="${name}"])`).first()
+    try {
+      await link.waitFor({ state: 'visible', timeout: 15_000 })
+    } catch {
+      throw new Error('CHARACTER_NOT_FOUND')
+    }
+    await this.forceClick(link)
+    await this.page.waitForURL(/\/character\/[0-9a-f-]+/, { timeout: TURN_TIMEOUT_MS })
+    await this.characterNameField().waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+  }
+
+  /** Leave the character editor (Done persists the edits and returns to the project root). */
+  private async finishCharacter(): Promise<void> {
+    const done = this.page.getByRole('button', { name: /^Done$/ }).first()
+    if (await done.count()) await this.forceClick(done)
+    await this.page
+      .waitForURL((u) => /\/project\/[0-9a-f-]+$/.test(u.toString()), { timeout: TURN_TIMEOUT_MS })
+      .catch(() => {})
+  }
+
+  /**
+   * Generate on a character-editor compose bar and harvest the resulting view. The new
+   * media is the largest fresh image on the page (the main preview), the same rule the
+   * canvas turns use.
+   */
+  private async submitCharacterTurn(
+    text: string,
+    model: string | undefined,
+    outPath: string | undefined,
+    settled?: Locator,
+  ): Promise<MediaResult> {
+    const box = this.promptBox()
+    await box.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    await this.ensureModel(model)
+    await box.fill(text)
+    const before = await this.snapshotMediaNames()
+    await this.clickSubmit()
+    if (settled) await settled.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    const { name: mediaId } = await this.waitForNewCanvas(before, TURN_TIMEOUT_MS)
+    if (outPath) await harvestToFile(this.page.request, mediaId, outPath)
+    return { path: outPath ?? '', mediaId }
+  }
+
   private async clickSubmit(): Promise<void> {
     // Accessible name renders as "arrow_forwardCreate" (no space). The button enables
     // asynchronously after the prompt fills — a click while it is still disabled is silently
@@ -159,13 +256,7 @@ export class FlowClient {
       if (await submit.isEnabled().catch(() => false)) break
       await this.page.waitForTimeout(250)
     }
-    const boxCleared = async (): Promise<boolean> => {
-      const text = ((await box.textContent()) ?? '')
-        .replace(/[\u200B\uFEFF]/g, '')
-        .replace('What do you want to create?', '')
-        .trim()
-      return text === ''
-    }
+    const boxCleared = async (): Promise<boolean> => isBoxCleared(await box.textContent())
     for (let attempt = 0; attempt < 3; attempt++) {
       if (attempt === 0) await this.forceClick(submit)
       else {
@@ -194,7 +285,7 @@ export class FlowClient {
    * Idempotent — when the config trigger's label already shows the target state
    * the menu is not even opened, which keeps repeat calls in an edit loop cheap.
    */
-  private async ensureImageMode(count = 1): Promise<void> {
+  private async ensureImageMode(count = 1, model = DEFAULT_MODEL): Promise<void> {
     // Wait for the create bar to hydrate (it renders after navigation).
     await this.promptBox().waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     // The bar toggles between "Agent" (conversational) and direct generation; the image config
@@ -207,6 +298,8 @@ export class FlowClient {
       if (await agent.count()) await this.forceClick(agent)
     }
     await crop.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    // Assert the model before reading the label below — ensureModel rewrites it.
+    await this.ensureModel(model)
     // Count tabs are named `1x` for one output and `x2`/`x3`/`x4` beyond (mapped live 2026-07-14).
     const countTab = count <= 1 ? '1x' : `x${count}`
     // Short-circuit: the trigger label concatenates model+aspect+count ("🍌 Nano Banana 2crop_16_91x").
@@ -481,7 +574,11 @@ export class FlowClient {
    * so that step is gone. Flow: Characters sidebar -> Upload (file chooser) -> fill
    * "Character Name" -> Done. Returns once the character editor is left.
    */
-  async createCharacter(name: string, refImages: string[]): Promise<CharacterRef> {
+  async createCharacter(
+    name: string,
+    refImages: string[],
+    opts?: { info?: string; body?: string; model?: string; bodyOutPath?: string },
+  ): Promise<CharacterRef & { bodyMediaId?: string; bodyPath?: string }> {
     await this.ensureProjectRoot()
     await this.page.getByRole('button', { name: /accessibility_new\s*Characters/i }).click({ force: true })
     await this.page.waitForURL(/\/characters\b/, { timeout: TURN_TIMEOUT_MS })
@@ -489,17 +586,132 @@ export class FlowClient {
     const chooser = this.page.waitForEvent('filechooser')
     await this.page.getByRole('button', { name: /upload\s*Upload/i }).first().click({ force: true })
     await (await chooser).setFiles(refImages)
-    // After upload the character editor opens with a "Character Name" field defaulting to
-    // "Untitled Character"; set it, then finalize.
-    const nameInput = this.page.getByRole('textbox', { name: 'Character Name' })
+    return this.finalizeCharacter(name, opts)
+  }
+
+  /**
+   * Create a Character from a media item ALREADY IN the project's gallery, instead of a fresh
+   * file upload. Needed because the raw upload endpoint 400s on some re-fetched/harvested images
+   * (observed live 2026-08-12 casting a Character from a media id pulled back off Flow's own
+   * network traffic; root cause unconfirmed) — Flow's own "Add from Project" picker sidesteps
+   * that entirely since the media is already server-side. `mediaTitle` matches the option's
+   * accessible name shown in the project gallery — Flow's auto-caption for the image (e.g.
+   * "Man sitting with open book"), not the file path or media id.
+   */
+  async createCharacterFromMedia(
+    name: string,
+    mediaTitle: string,
+    opts?: { info?: string; body?: string; model?: string; bodyOutPath?: string },
+  ): Promise<CharacterRef & { bodyMediaId?: string; bodyPath?: string }> {
+    await this.ensureProjectRoot()
+    await this.page.getByRole('button', { name: /accessibility_new\s*Characters/i }).click({ force: true })
+    await this.page.waitForURL(/\/characters\b/, { timeout: TURN_TIMEOUT_MS })
+    const addFromProject = this.page.getByRole('button', { name: /add\s*Add from Project/i }).first()
+    await addFromProject.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    await this.forceClick(addFromProject)
+    const dialog = this.page.getByRole('dialog').last()
+    const option = dialog.getByRole('option', { name: new RegExp(escapeRegExp(mediaTitle), 'i') }).first()
+    try {
+      await option.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    } catch {
+      throw new Error('MEDIA_NOT_FOUND')
+    }
+    await this.forceClick(option)
+    const addToCharacter = dialog.getByRole('button', { name: /Add to Character/i }).first()
+    await addToCharacter.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    await this.forceClick(addToCharacter)
+    return this.finalizeCharacter(name, opts)
+  }
+
+  /**
+   * Shared tail of both character-creation paths: the editor opens with a "Character Name"
+   * field defaulting to "Untitled Character" once a reference (uploaded or from-project) is
+   * attached — name it, fill the optional info note, run the optional Create Body pass, done.
+   */
+  private async finalizeCharacter(
+    name: string,
+    opts?: { info?: string; body?: string; model?: string; bodyOutPath?: string },
+  ): Promise<CharacterRef & { bodyMediaId?: string; bodyPath?: string }> {
+    const nameInput = this.characterNameField()
     await nameInput.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     await nameInput.fill(name)
-    await this.page.getByRole('button', { name: /^Done$/ }).click({ force: true })
-    // Done returns to the project root (leaves /character/<id>).
-    await this.page.waitForURL((u) => /\/project\/[0-9a-f-]+$/.test(u.toString()), {
-      timeout: TURN_TIMEOUT_MS,
-    })
+    if (opts?.info) await this.characterInfoField().fill(opts.info)
+    let body: MediaResult | undefined
+    if (opts?.body) body = await this.runCreateBody(opts.body, opts.model, opts.bodyOutPath)
+    await this.finishCharacter()
+    return {
+      name,
+      ...(body ? { bodyMediaId: body.mediaId, ...(body.path ? { bodyPath: body.path } : {}) } : {}),
+    }
+  }
+
+  /** The optional free-text field Flow's own scene agent reads when casting the character. */
+  private characterInfoField(): Locator {
+    return this.page.getByRole('textbox', { name: /Describe how your character/i })
+  }
+
+  /**
+   * Run the character editor's "Create Body" pass: it opens a second compose bar seeded with
+   * the portrait, takes a body+outfit description, and adds a full-figure "Body" view
+   * alongside the portrait. Assumes the editor is already open. Mapped live 2026-08-11.
+   */
+  private async runCreateBody(
+    description: string,
+    model?: string,
+    outPath?: string,
+  ): Promise<MediaResult> {
+    const createBody = this.page.getByRole('button', { name: /^Create Body$/ }).first()
+    if (!(await createBody.count())) throw new Error('BODY_EXISTS')
+    await this.forceClick(createBody)
+    // Completion flips the tab's label from "Create Body" to "Body".
+    const bodyTab = this.page.getByRole('button', { name: /^Body$/ }).first()
+    return this.submitCharacterTurn(description, model, outPath, bodyTab)
+  }
+
+  /** Add the full-figure Body view to a character that only has a Portrait. */
+  async createCharacterBody(
+    name: string,
+    description: string,
+    opts?: { model?: string; outPath?: string },
+  ): Promise<MediaResult> {
+    await this.openCharacterPage(name)
+    const res = await this.runCreateBody(description, opts?.model, opts?.outPath)
+    await this.finishCharacter()
+    return res
+  }
+
+  /** Set (or replace) the character's free-text personality/appearance note. */
+  async setCharacterInfo(name: string, info: string): Promise<CharacterRef> {
+    await this.openCharacterPage(name)
+    const field = this.characterInfoField()
+    await field.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    await field.fill(info)
+    await this.finishCharacter()
     return { name }
+  }
+
+  /**
+   * Iterate on an EXISTING character in place: select the Portrait or Body view and apply a
+   * delta prompt through the editor's "What do you want to change?" bar. This is the cheap
+   * path for "same character, but <change>" — it keeps the identity Flow has already bound
+   * instead of re-casting from a fresh reference image, and every round is recoverable from
+   * the editor's own "Show history".
+   */
+  async editCharacter(
+    name: string,
+    prompt: string,
+    opts?: { target?: 'portrait' | 'body'; model?: string; outPath?: string },
+  ): Promise<MediaResult & { target: 'portrait' | 'body' }> {
+    await this.openCharacterPage(name)
+    const target = opts?.target ?? 'portrait'
+    const tab = this.page
+      .getByRole('button', { name: target === 'body' ? /^Body$/ : /^Portrait$/ })
+      .first()
+    if (!(await tab.count())) throw new Error(target === 'body' ? 'NO_BODY' : 'NO_PORTRAIT')
+    await this.forceClick(tab)
+    const res = await this.submitCharacterTurn(prompt, opts?.model, opts?.outPath)
+    await this.finishCharacter()
+    return { ...res, target }
   }
 
   /**

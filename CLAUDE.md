@@ -46,7 +46,8 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
 | `docs/marketing/` | Marketing & release plans — reaching people, not making the thing | …it's a channel/campaign/launch plan |
 | `docs/misc/` | Catch-all for what fits nowhere else | …in doubt |
 | `docs/suno-gpt/` | Suno-prompting toolkit (operating procedure + reference files) | …you're turning a song idea into a Suno prompt |
-| `.claude/skills/` | `new-idea`, `new-marketing-idea`, `new-story`, `suno-prompt`, `make-comic`, `edit-panel`, `animate-slide`, `music-video-short`, `new-image` — orchestrators for parking an idea, capturing a marketing/distribution play, story capture, Suno prompting, the full idea→comic pipeline, editing an existing panel image, animating a finished panel, the full idea→short-form music-video pipeline (Suno track + Flow clips + edit plan), and standalone brand imagery | …you're capturing an idea or marketing play, developing a story, making a track, building a comic, editing a panel, animating a slide, making a short, or making a brand image |
+| `docs/flow/` | Google Flow toolkit (Nano Banana + Veo prompt craft, policy blocks, consistency) | …you're writing or debugging a Flow prompt |
+| `.claude/skills/` | `new-idea`, `new-marketing-idea`, `new-story`, `suno-prompt`, `make-comic`, `edit-panel`, `animate-slide`, `music-video-short`, `new-image`, `badcode-art-direction`, `flow-prompt` — orchestrators for parking an idea, capturing a marketing/distribution play, story capture, Suno prompting, the full idea→comic pipeline, editing an existing panel image, animating a finished panel, the full idea→short-form music-video pipeline (Suno track + Flow clips + edit plan), standalone brand imagery, the BadCode comic register, and Google Flow prompt craft | …you're capturing an idea or marketing play, developing a story, making a track, building a comic, editing a panel, animating a slide, making a short, making a brand image, or writing a Flow prompt |
 | `packages/comic` | `@badcode/comic` — code-first comic rendering library (authoring guide: [`AUTHORING.md`](./packages/comic/AUTHORING.md)) | …you're building the viewer |
 | `apps/web` | The website (Vite + React + TS SPA) | …you're building pages/routes |
 | `chain/` | Anchor workspace + Docker toolchain — [`README`](./chain/README.md), [`TESTING`](./chain/TESTING.md) | …you're writing an on-chain program |
@@ -83,6 +84,16 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
   The toolkit also covers the **platform** beyond the prompt box — the three influence sliders, the
   Voice/custom-model stack for a recurring narrator across a release, lyric editing, Studio, stems,
   and the things Suno reliably gets wrong (half-time drums, niche D&B subgenres).
+- **Write or debug a Flow prompt:** run the **`flow-prompt`** skill
+  (`.claude/skills/flow-prompt/`). The Suno toolkit's counterpart for images and video —
+  it owns **platform craft** (how Nano Banana and Veo actually behave) while the
+  BadCode *look* stays with `badcode-art-direction` (panels) and `new-image` (brand
+  imagery). Reach for it when a prompt needs writing, when a generation fails, or when a
+  character has to stay the same across many shots. Its knowledge base is
+  [`docs/flow/`](./docs/flow/README.md): image and video prompt craft, camera
+  vocabulary with reliability tiers, consistency/reference discipline, platform controls
+  and credits, and the policy-block triggers and rewrites. **A policy block looks exactly
+  like a timeout** — that one fact is the biggest time-saver in the whole toolkit.
 - **Record an idea (the inbox):** run the **`new-idea`** skill
   (`.claude/skills/new-idea/`). It parks an idea the second it pops as a
   minimal-prose file under [`docs/ideas/`](./docs/ideas/README.md) and adds a

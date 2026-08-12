@@ -44,6 +44,10 @@ function toToolError(err: unknown): ToolResult {
   }
   if (msg === 'TIMEOUT') return fail('TIMEOUT', 'Flow did not finish generating in time.')
   if (msg === 'PROJECT_NOT_FOUND') return fail('PROJECT_NOT_FOUND', 'No Flow project with that name.', 'Check the name in the Flow projects list.')
+  if (msg === 'CHARACTER_NOT_FOUND') return fail('CHARACTER_NOT_FOUND', 'No Character with that name in the open project.', 'Check the Characters tab; names are case-sensitive.')
+  if (msg === 'BODY_EXISTS') return fail('BODY_EXISTS', 'That character already has a Body view.', 'Use flow_edit_character with target "body" to change it.')
+  if (msg === 'NO_BODY') return fail('NO_BODY', 'That character has no Body view yet.', 'Create one with flow_character_body first.')
+  if (msg === 'MEDIA_NOT_FOUND') return fail('MEDIA_NOT_FOUND', 'No project media matches that title.', 'Use the exact accessible name shown in the project gallery, not a file path or media id.')
   return fail('FLOW_ERROR', msg)
 }
 
@@ -205,15 +209,141 @@ server.registerTool(
   {
     title: 'Create character',
     description:
-      'Create a reusable Flow Character from one or more reference image paths (absolute), for cross-slide consistency. Cast it later by typing "@" in the prompt. Returns { name }.',
+      'Create a reusable Flow Character from one or more reference image paths (absolute), for cross-slide consistency, and optionally complete it in the SAME call: pass body to add the full-figure Body view (Flow\'s native "Create Body" pass — describe build, posture and outfit) and info to fill the free-text note Flow\'s scene agent reads. A character with both a Portrait and a Body binds identity far better than a portrait alone. Cast it later with the character parameter, or "@" in a prompt. Returns { name, bodyMediaId?, bodyPath? }.',
     inputSchema: {
       name: z.string().min(1),
       refImages: z.array(z.string().min(1)).min(1),
+      body: z.string().min(1).optional(),
+      info: z.string().min(1).optional(),
+      bodyOutPath: z.string().min(1).optional(),
+      model: z.string().min(1).optional(),
     },
   },
-  async ({ name, refImages }) => {
+  async ({ name, refImages, body, info, bodyOutPath, model }) => {
     try {
-      return await withClient(async (c) => ok(await c.createCharacter(name, refImages)))
+      return await withClient(async (c) =>
+        ok(
+          await c.createCharacter(name, refImages, {
+            ...(body ? { body } : {}),
+            ...(info ? { info } : {}),
+            ...(bodyOutPath ? { bodyOutPath } : {}),
+            ...(model ? { model } : {}),
+          }),
+        ),
+      )
+    } catch (err) {
+      return toToolError(err)
+    }
+  },
+)
+
+server.registerTool(
+  'flow_create_character_from_media',
+  {
+    title: 'Create character from existing project media',
+    description:
+      'Like flow_create_character, but the reference is a media item ALREADY IN the project gallery (e.g. a prior generation) instead of a fresh file upload — use this when the reference came from Flow itself, since re-uploading a harvested image can 400. mediaTitle is the option\'s accessible name shown in the gallery (Flow\'s auto-caption, e.g. "Man sitting with open book"), not a file path or media id. Same optional body/info/model/bodyOutPath as flow_create_character. Returns { name, bodyMediaId?, bodyPath? }.',
+    inputSchema: {
+      name: z.string().min(1),
+      mediaTitle: z.string().min(1),
+      body: z.string().min(1).optional(),
+      info: z.string().min(1).optional(),
+      bodyOutPath: z.string().min(1).optional(),
+      model: z.string().min(1).optional(),
+    },
+  },
+  async ({ name, mediaTitle, body, info, bodyOutPath, model }) => {
+    try {
+      return await withClient(async (c) =>
+        ok(
+          await c.createCharacterFromMedia(name, mediaTitle, {
+            ...(body ? { body } : {}),
+            ...(info ? { info } : {}),
+            ...(bodyOutPath ? { bodyOutPath } : {}),
+            ...(model ? { model } : {}),
+          }),
+        ),
+      )
+    } catch (err) {
+      return toToolError(err)
+    }
+  },
+)
+
+server.registerTool(
+  'flow_character_body',
+  {
+    title: 'Add character body view',
+    description:
+      'Add the full-figure Body view to an existing Character that only has a Portrait, via Flow\'s native "Create Body" pass. description should cover build, posture, outfit and setting. Errors BODY_EXISTS if it already has one — use flow_edit_character to change that. Returns { path, mediaId }.',
+    inputSchema: {
+      name: z.string().min(1),
+      description: z.string().min(1),
+      outPath: z.string().min(1).optional(),
+      model: z.string().min(1).optional(),
+    },
+  },
+  async ({ name, description, outPath, model }) => {
+    try {
+      return await withClient(async (c) =>
+        ok(
+          await c.createCharacterBody(name, description, {
+            ...(outPath ? { outPath } : {}),
+            ...(model ? { model } : {}),
+          }),
+        ),
+      )
+    } catch (err) {
+      return toToolError(err)
+    }
+  },
+)
+
+server.registerTool(
+  'flow_edit_character',
+  {
+    title: 'Edit an existing character',
+    description:
+      'Iterate on an EXISTING Character in place: applies a delta prompt to its Portrait (default) or Body view through the character editor. Use this for "same character, but <change>" instead of re-creating from a new reference image — it preserves the identity Flow has already bound, and each round is recoverable via the editor\'s Show history. Phrase as a delta ("give him a heavier overcoat; keep the face, lighting and framing identical"). Returns { path, mediaId, target }.',
+    inputSchema: {
+      name: z.string().min(1),
+      prompt: z.string().min(1),
+      target: z.enum(['portrait', 'body']).optional(),
+      outPath: z.string().min(1).optional(),
+      model: z.string().min(1).optional(),
+    },
+  },
+  async ({ name, prompt, target, outPath, model }) => {
+    try {
+      return await withClient(async (c) =>
+        ok(
+          await c.editCharacter(name, prompt, {
+            ...(target ? { target } : {}),
+            ...(outPath ? { outPath } : {}),
+            ...(model ? { model } : {}),
+          }),
+        ),
+      )
+    } catch (err) {
+      return toToolError(err)
+    }
+  },
+)
+
+server.registerTool(
+  'flow_character_info',
+  {
+    title: 'Set character info',
+    description:
+      "Set (or replace) a Character's free-text note — personality, mannerisms, how it should be framed. Flow's own scene agent reads this when the character is cast, so it does not need repeating in every prompt. Returns { name }.",
+    inputSchema: {
+      name: z.string().min(1),
+      info: z.string().min(1),
+    },
+  },
+  async ({ name, info }) => {
+    try {
+      return await withClient(async (c) => ok(await c.setCharacterInfo(name, info)))
     } catch (err) {
       return toToolError(err)
     }

@@ -111,7 +111,7 @@ the wrong band is wrong even if the image is beautiful.
 | Tag | Character file | Sheet | Flow Character id | Status |
 | --- | --- | --- | --- | --- |
 | @TheAI | characters/the-ai.md | — | — | **never rendered** — canon, not an omission |
-| @Carrier | characters/the-carrier.md | characters/img/carrier-sheet.jpg (recover from git `7dd36c7^`) | — | **not-cast — should be cast** |
+| @Carrier | characters/the-carrier.md | characters/img/carrier-sheet.jpg (recovered from git `7dd36c7^:docs/stories/gpom-short/characters/img/carrier.jpg`) | "Carrier" | **cast** 2026-08-11 — Portrait + native Create Body (Nano Banana Pro) |
 | @TheHundred | characters/the-hundred.md | — | — | no-character-by-design — a crowd, always distant; consistency is wardrobe and light, held by a golden reference plate |
 
 **Only the Carrier needs a Character.** She is the one human the AI ever
