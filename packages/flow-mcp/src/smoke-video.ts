@@ -14,11 +14,11 @@ try {
   await c.openProject({ name: 'camping-v2' })
   const dir = await mkdtemp(join(tmpdir(), 'flow-vid-'))
   const out = join(dir, 'clip.mp4')
-  const res = await c.generateVideo(
-    src,
-    'Slow gentle push-in; mist drifts; subtle wind in the grass. Cinematic.',
-    out,
-  )
+  const res = await c.generateVideo({
+    startImage: src,
+    motion: 'Slow gentle push-in; mist drifts; subtle wind in the grass. Cinematic.',
+    outPath: out,
+  })
   const { size } = await stat(res.path)
   console.log('video:', res, 'bytes:', size)
   if (size < 10000) throw new Error('clip suspiciously small')

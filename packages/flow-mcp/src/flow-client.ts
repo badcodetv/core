@@ -14,7 +14,8 @@ import {
 } from './batch'
 export type { BatchItem, BatchFailure, BatchResult } from './batch'
 import { candidateOutPath } from './candidates'
-import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, canonicalVideoModel, aspectAlreadySelected, videoDurationAlreadySelected, maxDurationForModel, VIDEO_DURATIONS } from './compose'
+import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, canonicalVideoModel, aspectAlreadySelected, videoDurationAlreadySelected } from './compose'
+import { chooseVideoMode, videoRequestError } from './video-mode'
 import { classifyCard, newCardsSince, ANY_CARD_RE, type CardState } from './failure-card'
 import { parseMediaOptions, SCRAPE_MEDIA_OPTIONS, type RawMediaOption, type MediaListItem } from './media-list'
 import { parseCharacters, SCRAPE_CHARACTERS, type RawCharacterRow, type CharacterListItem } from './character-list'
@@ -68,6 +69,22 @@ export interface EditResult { candidates: ImageResult[]; partial?: boolean }
 export interface MediaResult { path: string; mediaId: string }
 export interface CharacterRef { name: string }
 export interface FlowStatus { loggedIn: boolean; projectOpen: boolean; url: string }
+/**
+ * One request shape for every video mode. `startImage`/`endImage` are what select the mode —
+ * see `generateVideo`. Both optional, because "neither" is a legitimate ask (text to video).
+ */
+export interface VideoRequest {
+  motion: string
+  outPath: string
+  startImage?: string
+  endImage?: string
+  model?: string
+  aspect?: VideoAspect
+  count?: number
+  durationSeconds?: number
+}
+/** One frame slot as scraped from the compose bar — see SCRAPE_FRAME_SLOTS. */
+interface RawFrameSlot { text: string; images: number }
 
 export class FlowClient {
   private constructor(private browser: Browser, private page: Page) {}
@@ -1580,17 +1597,28 @@ export class FlowClient {
   }
 
   /**
-   * Animate a still into an image→video clip (Veo). Mapped live 2026-06-30 + flow-video.md:
-   * Add Media → "Upload media" (file chooser) → the uploaded tile's more_vert → "Animate"
-   * (attaches the source frame and switches the bar to Video mode) → motion prompt → submit →
-   * approve the credit gate if shown → poll for the new video media and harvest the .mp4.
+   * Make a video. ONE tool, four source modes, selected by which images you supply:
+   *
+   * | startImage | endImage | what happens |
+   * | --- | --- | --- |
+   * | ✓ | — | animate a still (the long-proven path, untouched) |
+   * | ✓ | ✓ | first frame → last frame, via the compose bar's Frames slots |
+   * | — | ✓ | last frame only |
+   * | — | — | text to video |
+   *
+   * They are not two features. Flow presents them as two *source tabs* of one video composer
+   * (`crop_freeFrames` / `chrome_extensionIngredients`), which is why this is one method with
+   * an inferred mode rather than a second `generateVideoFrames` — see the Wave C ruling in
+   * `design/2026-08-12-flow-automation-coverage.md`.
+   *
+   * ⚠️ The prompt itself should differ by mode even though the tool does not. A start-only
+   * prompt describes *what moves*; a start+end prompt should name *only the camera move that
+   * connects the two frames*, because the stills already carry the content
+   * (`docs/flow/video-prompting.md` §4 — adding scene description there makes drift worse).
    */
-  async generateVideo(
-    imagePath: string,
-    motion: string,
-    outPath: string,
-    opts?: { model?: string; aspect?: VideoAspect; count?: number; durationSeconds?: number },
-  ): Promise<MediaResult> {
+  async generateVideo(req: VideoRequest): Promise<MediaResult> {
+    const { motion, outPath, startImage, endImage } = req
+    const opts = req
     // Validate the clip length BEFORE anything is uploaded or spent. 10s exists only on Omni
     // Flash — on the Veo tiers the tab is absent, so a click-if-present would quietly hand back
     // an 8s clip and bill for it.
@@ -1602,14 +1630,15 @@ export class FlowClient {
     // true on purpose, and keeps every clip made to date reproducible. Same reasoning as
     // ensureVideoSettings asserting model/aspect/count every call.
     const duration = opts?.durationSeconds ?? DEFAULT_VIDEO_DURATION
-    if (!(VIDEO_DURATIONS as readonly number[]).includes(duration)) {
-      throw new Error(`VIDEO_DURATION_INVALID: ${duration}s — Flow offers ${VIDEO_DURATIONS.join('/')}s`)
+    // Every "Flow will refuse this" rule lives in video-mode.ts with its tests. Checked here,
+    // before a browser is touched: each one otherwise costs an upload, a fill and a credit.
+    const problem = videoRequestError({ startImage, endImage, model: videoModel, durationSeconds: duration })
+    if (problem) throw new Error(problem)
+    if (chooseVideoMode(startImage, endImage) === 'frames') {
+      return await this.framesToVideo({ motion, outPath, startImage, endImage, duration, videoModel, opts })
     }
-    if (duration > maxDurationForModel(videoModel)) {
-      throw new Error(
-        `VIDEO_DURATION_UNAVAILABLE: ${duration}s is not offered on ${videoModel} (max ${maxDurationForModel(videoModel)}s) — only Omni Flash goes to 10s`,
-      )
-    }
+    // Narrowed by chooseVideoMode above: 'animate' is exactly "start frame, no end frame".
+    const imagePath = startImage as string
     await this.ensureProject()
     // 0. Assert model/aspect/count BEFORE touching media — these are project-level defaults
     //    that silently reset, so this must run every call, not just the first in a session.
@@ -1650,6 +1679,194 @@ export class FlowClient {
     await harvestToFile(this.page.request, name, outPath)
     return { path: outPath, mediaId: name }
   }
+
+  /**
+   * The Frames source mode: first frame, last frame, both, or neither (text to video).
+   *
+   * Mapped live 2026-08-12 (`smoke-frames.ts` → `smoke-frame-tier.ts`). The compose bar in
+   * Frames mode renders `[Start] [swap_horiz Swap first and last frames] [End]`; clicking an
+   * empty slot opens Flow's media picker, and the chosen asset becomes that frame.
+   */
+  private async framesToVideo(args: {
+    motion: string
+    outPath: string
+    startImage?: string
+    endImage?: string
+    duration: number
+    videoModel: string
+    opts?: { model?: string; aspect?: VideoAspect; count?: number }
+  }): Promise<MediaResult> {
+    const { motion, outPath, startImage, endImage, duration, videoModel, opts } = args
+    await this.ensureProject()
+    // Reload FIRST, for two reasons. Frame slots persist for the life of the page but are
+    // wiped by navigation, so a fresh load is the one deterministic way to know the bar is
+    // empty — otherwise a previous call's Start frame silently becomes this call's. (Clearing
+    // via each slot's own `cancel` button needs a hover to even reveal it, which is exactly the
+    // kind of state-dependent click this codebase keeps getting bitten by.) And doing it before
+    // ensureVideoSettings means a page left wedged by an earlier failure is healed here, rather
+    // than costing a 90s timeout inside the settings panel first.
+    await this.reloadProject()
+    await this.ensureVideoSettings(opts)
+    await this.ensureFramesMode()
+    await this.ensureVideoDuration(duration, videoModel)
+    if (startImage) await this.fillFrameSlot('Start', startImage)
+    if (endImage) await this.fillFrameSlot('End', endImage)
+    await this.assertFrameSlots(Boolean(startImage), Boolean(endImage))
+    await this.markTurnStart()
+    const before = await this.stableMediaNames()
+    await this.submitPrompt(motion)
+    await this.approveCreditGateIfPresent()
+    const name = await this.waitForVideoClip(before, VIDEO_TIMEOUT_MS)
+    await harvestToFile(this.page.request, name, outPath)
+    return { path: outPath, mediaId: name }
+  }
+
+  /**
+   * Media names, read only once the gallery has stopped growing.
+   *
+   * ⚠️ This exists because of a real, silent failure. `framesToVideo` reloads the project to
+   * clear the frame slots, and the media grid hydrates AFTER the load — so a plain
+   * `scrapeMediaNames()` right afterwards returns a partial list. Anything missing from that
+   * "before" set then looks NEW to `waitForVideoClip`, which returned an existing clip
+   * instantly: a text-to-video call came back with a healthy mp4 that was byte-for-byte an
+   * older generation (caught 2026-08-12 by md5-ing the file, not by reading the result).
+   *
+   * Two consecutive equal counts is the settle signal; a project with genuinely no media
+   * simply runs out the clock and returns empty, which is correct for it.
+   */
+  private async stableMediaNames(): Promise<Set<string>> {
+    let prev = -1
+    let names: string[] = []
+    const deadline = Date.now() + TURN_TIMEOUT_MS
+    while (Date.now() < deadline) {
+      names = await this.scrapeMediaNames()
+      if (names.length && names.length === prev) return new Set(names)
+      prev = names.length
+      await this.page.waitForTimeout(POLL_MS)
+    }
+    return new Set(names)
+  }
+
+  /**
+   * Reload the current project URL, which resets the compose bar (including frame slots).
+   *
+   * Loads TWICE when the first attempt comes up empty: a Flow project load can throw a
+   * client-side exception and render a completely black page with no compose bar at all
+   * (flow-video.md's SUBMIT_FAILED note, and observed again 2026-08-12 — a wedged page then
+   * fails every later call in the run with an unrelated-looking timeout). A second load
+   * reliably fixes it, so do it here rather than leaving the wedge for the next caller.
+   */
+  private async reloadProject(): Promise<void> {
+    const m = this.page.url().match(/\/project\/([0-9a-f-]+)/)
+    if (!m) throw new Error('NOT_IN_PROJECT')
+    const url = `${FLOW_URL}/project/${m[1]}`
+    for (let attempt = 0; attempt < 2; attempt++) {
+      await this.page.goto(url, { waitUntil: 'domcontentloaded' })
+      try {
+        await this.promptBox().waitFor({ state: 'visible', timeout: attempt === 0 ? 20_000 : TURN_TIMEOUT_MS })
+        return
+      } catch {
+        if (attempt === 1) throw new Error('SUBMIT_FAILED')
+      }
+    }
+  }
+
+  /** Put the compose bar in Video mode with the Frames source tab selected. */
+  private async ensureFramesMode(): Promise<void> {
+    await this.ensureComposeVisible()
+    const crop = this.page.getByRole('button', { name: /crop_/ }).first()
+    // Agent mode has no config popover at all — see ensureVideoDuration.
+    if (!(await crop.count())) {
+      const agent = this.page.getByRole('button', { name: 'Agent', exact: true })
+      if (await agent.count()) await this.forceClick(agent)
+    }
+    await crop.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    const videoTab = this.page.locator('button[role="tab"]').filter({ hasText: /videocam\s*Video/i }).first()
+    // Every trigger TOGGLES: only open the popover when its contents are not already showing.
+    if (!(await videoTab.isVisible().catch(() => false))) await this.pointerClick(crop)
+    await videoTab.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    if ((await videoTab.getAttribute('aria-selected')) !== 'true') await this.tabClick(videoTab)
+    const framesTab = this.page.locator('button[role="tab"]').filter({ hasText: /Frames/ }).first()
+    await framesTab.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    // Ingredients is the DEFAULT source, so this tab click is load-bearing, not defensive.
+    if ((await framesTab.getAttribute('aria-selected')) !== 'true') await this.tabClick(framesTab)
+    await this.page.keyboard.press('Escape')
+    await this.page.waitForTimeout(POLL_MS)
+  }
+
+  /**
+   * Upload a local file into the Start or End frame slot.
+   *
+   * Three traps, all found by clicking rather than reading:
+   * 1. An empty slot renders its label as plain text; a filled one replaces it with a
+   *    thumbnail and a `cancel` button. So the label locator only works while it is empty —
+   *    which is guaranteed here by `reloadProject`.
+   * 2. Uploading does NOT select. The freshly-uploaded row appears instantly but shows a
+   *    spinner until the asset resolves, and clicking it while it spins does nothing at all,
+   *    silently. Wait for its thumbnail `src`.
+   * 3. Selecting is not confirming. A row click confirms only when that row was already the
+   *    highlighted one — true for a fresh upload (top of the Recent sort) and false for
+   *    anything else, which is why "Add to Prompt" is clicked when it is still there.
+   */
+  private async fillFrameSlot(label: 'Start' | 'End', filePath: string): Promise<void> {
+    const base = filePath.split('/').pop() ?? filePath
+    const slot = this.page.getByText(label, { exact: true }).first()
+    await slot.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    await this.forceClick(slot)
+    await this.uploadFiles([filePath], async () => {
+      const up = this.page.locator('button').filter({ hasText: /^upload\s*Upload media$/i }).first()
+      await up.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+      await this.forceClick(up)
+    })
+    const row = this.page.locator('[role="option"]').filter({ hasText: base }).first()
+    await row.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    const deadline = Date.now() + TURN_TIMEOUT_MS
+    while (Date.now() < deadline) {
+      const thumb = row.locator('img').first()
+      const src = (await thumb.count()) ? await thumb.getAttribute('src') : null
+      if (src && /http|\//.test(src)) break
+      await this.page.waitForTimeout(POLL_MS)
+    }
+    await this.pointerClick(row)
+    await this.page.waitForTimeout(POLL_MS)
+    const add = this.page.locator('button').filter({ hasText: /^Add to Prompt$/ }).first()
+    if (await add.isVisible().catch(() => false)) await this.pointerClick(add)
+    // Done when the picker has gone.
+    await this.page
+      .locator('[role="option"]')
+      .first()
+      .waitFor({ state: 'detached', timeout: TURN_TIMEOUT_MS })
+      .catch(() => {})
+  }
+
+  /**
+   * Refuse to submit unless the frames actually landed.
+   *
+   * A slot Flow has rejected renders an `error` badge and still looks filled — it would
+   * generate, and bill, from whatever it fell back to. Reads the row anchored on the swap
+   * button, whose parent is exactly `[Start tile, swap button, End tile]`.
+   */
+  private async assertFrameSlots(wantStart: boolean, wantEnd: boolean): Promise<void> {
+    const slots = (await this.page.evaluate(`(${FlowClient.SCRAPE_FRAME_SLOTS})()`)) as RawFrameSlot[] | null
+    if (!slots || slots.length < 3) throw new Error('FRAME_SLOTS_NOT_FOUND')
+    const [start, , end] = slots
+    const check = (slot: RawFrameSlot, want: boolean, which: string) => {
+      if (/error/i.test(slot.text)) throw new Error(`FRAME_REJECTED: Flow flagged the ${which} frame as invalid`)
+      if (want && !slot.images) throw new Error(`FRAME_NOT_ATTACHED: the ${which} frame slot is still empty`)
+    }
+    check(start, wantStart, 'first')
+    check(end, wantEnd, 'last')
+  }
+
+  /** In-page scraper for the two frame slots (evaluated as `(${...})()`). */
+  private static readonly SCRAPE_FRAME_SLOTS = `() => {
+    const swap = [...document.querySelectorAll('button')].find(b => /Swap first and last frames/.test(b.textContent || ''))
+    if (!swap || !swap.parentElement) return null
+    return [...swap.parentElement.children].map(c => ({
+      text: (c.textContent || '').trim(),
+      images: c.querySelectorAll('img').length,
+    }))
+  }`
 
   /** Media names from every current "Generated image" tile — see SCRAPE_ANIMATE_TILES. */
   private async scrapeAnimateTiles(): Promise<RawAnimateTile[]> {

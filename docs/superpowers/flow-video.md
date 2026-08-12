@@ -314,6 +314,71 @@ remaining rough edge:
   `animate-slide` skill drives this path on a freshly-generated single slide, which is also why
   the sole-tile fallback matters: that's the common case this bug is fixed for.
 
+## Frames mode — first and last frame (mapped 2026-08-12)
+
+The compose popover's Video mode leads with two **source** tabs: `chrome_extensionIngredients`
+(the default) and `crop_freeFrames`. Selecting Frames puts two slots on the compose bar:
+
+```
+[ Start ]  [ swap_horiz Swap first and last frames ]  [ End ]
+```
+
+`flow_generate_video` drives this whenever the request is anything other than "one start
+frame": `startImage` + `endImage`, or neither (text to video). A lone start frame still goes
+down the older Animate-menuitem path, which is the one with the most live proof behind it.
+
+**Filling a slot — three traps, each found by clicking, each silent when got wrong:**
+
+1. An **empty** slot renders its label (`Start`/`End`) as plain text; a **filled** one replaces
+   that with a thumbnail and a `cancel` button. So the label locator only works while the slot
+   is empty. Slots persist for the life of the page and are wiped by navigation, so the client
+   reloads the project first rather than trying to clear them (the `cancel` button needs a
+   hover to even appear).
+2. Clicking the slot opens Flow's media picker (project selector, `imageImages` /
+   `drive_folder_uploadUploads` tabs, `uploadUpload media`, `role="option"` rows, `Add to
+   Prompt`). **Uploading does not select.** The new row appears instantly but shows a spinner
+   until the asset resolves, and clicking it while it spins does nothing at all. Wait for its
+   thumbnail `src`.
+3. **Selecting is not confirming** — and confirming is inconsistent. A row click confirms only
+   when that row was already the highlighted one (true for a fresh upload, which lands at the
+   top of the Recent sort; false for anything else). For any other row, `Add to Prompt` is the
+   confirm. Also: the row needs `pointerClick`; `forceClick`'s in-page `el.click()` leaves it
+   merely highlighted.
+
+**What each tier actually does with a last frame** (live, all four tiers, `smoke-frame-tier.ts`):
+
+| Model | First frame | Last frame |
+| --- | --- | --- |
+| Veo 3.1 Lite / Fast / Quality | ✅ | ✅ — no error badge, and a Fast clip generated correctly |
+| Gemini Omni Flash | ✅ | ✗ — the End slot fills, then shows an `error` badge |
+
+That kills `platform-controls.md`'s "coming soon on Fast and Quality" (transcribed from
+Google's docs, never tested by us). **A last frame with no first frame is not a mode at all** —
+Flow flags it invalid on Fast and on Lite, so the tool refuses it up front.
+
+**A rejected frame still looks filled**, which is why `assertFrameSlots` runs before every
+submit: without it Flow generates and bills from whatever it fell back to.
+
+**Proven end to end 2026-08-12:** a start+end call on Veo 3.1 Fast at 4s returned a 4.000s clip
+whose first frame is the start still (white-blue key light) and whose last frame is the end
+still (the same shot regraded gold). Text-to-video returned a genuinely new 4s clip.
+
+⚠️ **Two failure modes this path taught us, both of which returned success:**
+
+- A project load can throw a client-side exception and render a **completely black page** with
+  no compose bar. Every later call then fails with an unrelated-looking timeout. `reloadProject`
+  now loads twice for this reason.
+- The media grid hydrates **after** the page load, so a "before" snapshot taken too early is
+  incomplete — an existing clip then looks new and gets harvested. A text-to-video call came
+  back with a healthy mp4 that was byte-for-byte an older generation, caught only by md5-ing
+  the file. `stableMediaNames` waits for the count to settle.
+
+**The animate (start-only) path degrades in a cluttered project.** It identifies the still you
+just uploaded by diffing the tile grid; at ~30 items that diff failed with `ANIMATE_NOT_FOUND`,
+and the identical call succeeded immediately in a fresh project. The Frames path does not have
+this weakness — it never touches the tile grid — which is an argument for eventually routing
+start-only through Frames too. Not done: the Animate path is the one with the most live proof.
+
 ## Still to watch (over a longer batch)
 
 1. **Queue latency** under "high demand" for Veo Quality — minutes. Fast/Lite models queue

@@ -17,15 +17,14 @@ if (!projectId || !imagePath || !outPath) {
 const client = await FlowClient.connect()
 try {
   await client.openProject({ id: projectId })
-  const res = await client.generateVideo(
-    imagePath,
-    'Slow push in. The light holds steady. No cuts.',
+  const res = await client.generateVideo({
+    startImage: imagePath,
+    motion: 'Slow push in. The light holds steady. No cuts.',
     outPath,
+    aspect: '16:9',
     // `seconds` of "default" omits the parameter entirely, to prove the asserted default.
-    seconds === 'default'
-      ? { aspect: '16:9' as const }
-      : { aspect: '16:9' as const, durationSeconds: Number(seconds) },
-  )
+    ...(seconds === 'default' ? {} : { durationSeconds: Number(seconds) }),
+  })
   console.log('result:', JSON.stringify(res))
 } finally {
   await client.close()

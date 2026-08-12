@@ -47,13 +47,15 @@ try {
   console.log(`project holds ${tiles.length} media rows — clutter is the point here`)
 
   const started = Date.now()
-  const res = await client.generateVideo(
-    source,
+  const res = await client.generateVideo({
+    startImage: source,
     // Motion only — the still already carries subject, scene and style (flow-prompt rule 2).
-    'The camera pushes in very slowly. Dust drifts through the light. Nothing else moves.',
-    out,
-    { model: 'Veo 3.1 - Fast', aspect: '16:9', count: 1 },
-  )
+    motion: 'The camera pushes in very slowly. Dust drifts through the light. Nothing else moves.',
+    outPath: out,
+    model: 'Veo 3.1 - Fast',
+    aspect: '16:9',
+    count: 1,
+  })
   const { size } = await stat(res.path)
   console.log(`clip in ${((Date.now() - started) / 1000).toFixed(1)}s:`, res, 'bytes:', size)
 

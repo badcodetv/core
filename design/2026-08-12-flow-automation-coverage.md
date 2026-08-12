@@ -274,7 +274,7 @@ compose-bar popover on 2026-08-12, and in **Video** mode it leads with two sourc
 So the entry point is known. What is still unmapped: the **first-frame and last-frame
 slots** behind the Frames tab, and the submit path once both are filled.
 
-### C1 · Spike — two questions, then map (live, timeboxed)
+### C1 · Spike — two questions, then map ✅ DONE 2026-08-12
 
 **Q1 — which mode is our existing `generateVideo` actually using?** It uploads a still and
 fires the tile's `motion_blur Animate` menuitem, which attaches the image as a "source
@@ -299,7 +299,22 @@ it is minutes of work and it gates everything below, so do it first.
 Then map the slots and write the selectors into `flow-video.md`, per the usual rule: every
 resolved guess goes into the selector maps, or the next session re-learns it.
 
-### C2 · Fold both source modes into `flow_generate_video`
+**Answers, all by clicking:**
+
+- **Q1 — Animate is neither tab.** It runs in the compose bar's **Agent mode**, which has no
+  config popover at all; the Frames/Ingredients tabs belong to direct-generation mode. So the
+  merge was not free, but it was clean: start-only keeps the Animate path, everything else goes
+  through Frames.
+- **Q2 — first+last works on EVERY Veo 3.1 tier**, not just Lite. The "coming soon" on Fast and
+  Quality is stale documentation. Omni Flash rejects a last frame (End slot fills, then shows an
+  error badge, which clears the instant you switch tier). **A last frame with no first frame is
+  not a mode at all** — Flow flags it invalid on Fast and on Lite. `platform-controls.md`'s
+  clip-length and first+last columns are now marked verified with the date.
+- **The slots**: `[Start] [swap_horiz Swap first and last frames] [End]`, filled through Flow's
+  media picker. Three silent traps (empty-vs-filled label, upload-does-not-select, and
+  select-is-not-confirm) are written up in `flow-video.md` "Frames mode".
+
+### C2 · Fold both source modes into `flow_generate_video` ✅ DONE 2026-08-12
 
 Only after C1. One tool, one name, mode inferred from arguments:
 
@@ -328,7 +343,32 @@ the camera move connecting the two frames*, because the stills already carry the
 (`video-prompting.md` §4 is explicit, and adding scene description there makes drift
 worse). The tool description must say this — descriptions are the agent-facing docs.
 
-### C3 · Rewrite `animate-slide` onto the tools
+**Shipped.** `generateVideo(req)` now takes one options object; `chooseVideoMode` picks the
+path and `videoRequestError` holds every "Flow will refuse this" rule, both pure and tested
+(`video-mode.ts`, 9 tests). End-only is refused up front rather than uploaded and rejected.
+
+**Live proof, all four modes:** start-only 6.000s in a clean project (unchanged path,
+regression-checked after the refactor); start+end 4.000s on Veo 3.1 Fast with its first frame
+verified as the start still and its **last frame** as the end still; text-to-video a genuinely
+new 4s clip; end-only correctly refused.
+
+**Two bugs this found, both of which returned success:**
+
+1. A text-to-video call came back with a healthy mp4 that was **byte-for-byte an older
+   generation** — the media grid hydrates after page load, so the "before" snapshot was
+   incomplete and an existing clip looked new. Caught by md5, not by reading the result.
+   Fixed with `stableMediaNames` (wait for the count to settle).
+2. A project load can render a **completely black page**, after which every later call fails
+   with an unrelated-looking timeout. `reloadProject` now loads twice, which is the documented
+   Flow workaround applied where it belongs.
+
+**Worth knowing:** the start-only Animate path identifies its upload by diffing the tile grid,
+and that **degrades in a cluttered project** — `ANIMATE_NOT_FOUND` at ~30 media items, working
+immediately in a fresh one. The Frames path never touches the tile grid and has no such
+weakness, which is an argument for eventually routing start-only through Frames too. Not done:
+Animate is the path with the most live proof, and the ruling was to keep it byte-for-byte.
+
+### C3 · Rewrite `animate-slide` onto the tools ✅ DONE 2026-08-12
 
 The skill still drives the browser by hand throughout, so none of Wave A/B reaches it.
 Replace:
@@ -348,6 +388,13 @@ explicitly approved"; this is the credit-spend gate), `### Step 5: Judge the cli
 
 **`## Out of scope` (:331) stays as written.** Per ruling 2, batch animating a comic is not
 becoming viable-and-therefore-default. Do not touch that line.
+
+**Shipped.** `## Flow engine` is now `flow_status` plus the launch fallback (and a warning to
+work in an uncluttered project, per the tile-diff finding above); `### Step 4` is one
+`flow_generate_video` call, with the start+end variant and its prompt-craft rule; co-viewing
+step 2 uses `flow_status`. Kept exactly as they were: the scope guard, the motion-prompt craft,
+the `[GATE]`, judging the clip, the `.tsx` swap, and `## Out of scope`. The gate now also
+carries clip length, since that is a creative call made with the prompt.
 
 ### C4 · Clip duration — the control nobody knew existed ✅ DONE 2026-08-12
 

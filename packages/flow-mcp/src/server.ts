@@ -56,6 +56,11 @@ function toToolError(err: unknown): ToolResult {
   if (msg.startsWith('VIDEO_DURATION_INVALID')) return fail('INVALID_ARGS', msg, 'Flow offers exactly 4, 6, 8 and 10 second clips — there is no slider.')
   if (msg.startsWith('VIDEO_DURATION_UNAVAILABLE')) return fail('VIDEO_DURATION_UNAVAILABLE', msg, 'Only Gemini Omni Flash makes 10s clips; every Veo 3.1 tier caps at 8s (confirmed live 2026-08-12 — the 10s tab is absent from the DOM, not merely disabled). Either drop to 8s or pass model "Omni Flash".')
   if (msg.startsWith('VIDEO_DURATION_NOT_APPLIED')) return fail('VIDEO_DURATION_NOT_APPLIED', msg, 'The duration tab was clicked but the config trigger never showed it — aborted before spending credits, because an ignored duration returns a healthy-looking clip of the wrong length. The tab names in the compose popover have probably drifted; re-map with packages/flow-mcp/src/smoke-duration.ts.')
+  if (msg.startsWith('VIDEO_END_ONLY_UNSUPPORTED')) return fail('VIDEO_END_ONLY_UNSUPPORTED', msg, 'Flow has first-frame and first+last-frame generation, but not last-frame-alone (live-tested 2026-08-12 on Veo 3.1 Fast and Lite — the slot fills and is then flagged invalid). Pass a startImage as well, or describe the opening in the prompt and use text-to-video.')
+  if (msg.startsWith('VIDEO_FRAMES_UNAVAILABLE')) return fail('VIDEO_FRAMES_UNAVAILABLE', msg, 'Only the Veo 3.1 tiers accept a LAST frame; Omni Flash rejects it (its End slot comes back with an error badge, live-confirmed 2026-08-12). Pass model "Veo 3.1 Fast" (or Lite/Quality), or drop endImage.')
+  if (msg === 'FRAME_SLOTS_NOT_FOUND') return fail('FRAME_SLOTS_NOT_FOUND', 'The compose bar is not showing its Start/End frame slots.', 'The Frames source tab did not take, or Flow has renamed the "Swap first and last frames" control this code anchors on. Re-map with packages/flow-mcp/src/smoke-frames.ts.')
+  if (msg.startsWith('FRAME_REJECTED')) return fail('FRAME_REJECTED', msg, 'Flow marked the frame invalid rather than accepting it — aborted before spending credits. Most often this is a last frame on a model that does not support one; check the model, and that the image file is a normal JPEG/PNG.')
+  if (msg.startsWith('FRAME_NOT_ATTACHED')) return fail('FRAME_NOT_ATTACHED', msg, 'The upload finished but the picker never put it in the slot. Usually the media row was still resolving; retry once. If it persists, re-map the picker with packages/flow-mcp/src/smoke-frame-pick.ts.')
   if (msg === 'SUBMIT_FAILED') return fail('SUBMIT_FAILED', 'The prompt was typed but Flow never accepted the submit.', 'Usually a wedged compose bar — reload the project URL (twice; the first load can throw a client-side exception) and retry.')
   if (msg === 'NOT_IN_PROJECT') return fail('NOT_IN_PROJECT', 'The page is not inside a Flow project.', 'Open one with flow_open_project, or pass a project id.')
   if (msg === 'POLICY_BLOCKED') return fail('POLICY_BLOCKED', 'Flow flagged this generation as a possible policy violation — it will never complete no matter how long you wait.', 'Do NOT retry the same prompt. Rewrite it: check the reference image and any Character name/info fields, not just the prompt text (docs/flow/failure-modes.md §A2), then use the trigger list and rewrite table at docs/flow/failure-modes.md §A5-A6.')
@@ -296,7 +301,15 @@ server.registerTool(
   {
     title: 'Generate video',
     description:
-      'Animate an image (image→video / Veo). Uploads imagePath, applies the motion prompt, saves the .mp4 to outPath. ' +
+      'Make a video and save the .mp4 to outPath. ONE tool, four source modes, chosen by which images you pass: ' +
+      'startImage only = animate that still (the everyday path); startImage + endImage = generate the motion BETWEEN two ' +
+      'stills (Flow\'s first/last frame feature — art-direct page N and page N+1 as clean stills and let the video carry ' +
+      'only the move between them); neither = text-to-video from the prompt alone. An endImage with NO startImage is not a mode Flow has (it fills the slot, then marks it invalid — tested on Veo 3.1 Fast and Lite) and is refused up front. ' +
+      '⚠️ WRITE THE PROMPT FOR THE MODE. With one still, describe WHAT MOVES. With a start AND an end frame, name ONLY the ' +
+      'camera move that connects them — the two stills already carry the content, and adding scene description there makes ' +
+      'drift worse (docs/flow/video-prompting.md §4). ' +
+      '⚠️ endImage needs a Veo 3.1 tier: Gemini Omni Flash takes a first frame but REJECTS a last one (confirmed live ' +
+      '2026-08-12) and the call fails before uploading anything. ' +
       'Asserts the Settings-panel video defaults (model, aspect, output count) before generating — they live on the ' +
       "project and RESET to Omni Flash on a fresh project, so this call always sets them rather than trusting whatever " +
       'was last selected. model defaults to "Veo 3.1 Fast" (20 credits/clip) when omitted — a deliberate middle tier, ' +
@@ -312,7 +325,8 @@ server.registerTool(
       'it there fails immediately (before any credits are spent) rather than quietly returning 8s. ' +
       'Returns { path, mediaId }.',
     inputSchema: {
-      imagePath: z.string().min(1),
+      startImage: z.string().min(1).optional(),
+      endImage: z.string().min(1).optional(),
       motion: z.string().min(1),
       model: z.string().optional(),
       aspect: z.enum(['16:9', '9:16']).optional(),
@@ -321,11 +335,15 @@ server.registerTool(
       outPath: z.string().min(1),
     },
   },
-  async ({ imagePath, motion, model, aspect, count, durationSeconds, outPath }) => {
+  async ({ startImage, endImage, motion, model, aspect, count, durationSeconds, outPath }) => {
     try {
       return await withClient(async (c) =>
         ok(
-          await c.generateVideo(imagePath, motion, outPath, {
+          await c.generateVideo({
+            motion,
+            outPath,
+            ...(startImage ? { startImage } : {}),
+            ...(endImage ? { endImage } : {}),
             ...(model ? { model } : {}),
             ...(aspect ? { aspect } : {}),
             ...(count ? { count } : {}),

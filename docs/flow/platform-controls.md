@@ -11,22 +11,28 @@ Models, credits, aspect, duration, and the surfaces beyond the prompt box.
 
 | Model | Clip length | Ingredients→Video | Frames→Video (first) | Frames→Video (first+last) | Extend | Edit existing video |
 | --- | --- | --- | --- | --- | --- | --- |
-| Veo 3.1 Lite | 4/6/8s | ✅ (8s only) | ✅ | ✅ | ✅ (Veo 3.1 content only) | ✗ |
-| Veo 3.1 Fast | 4/6/8s | ✅ (8s only) | ✅ | coming soon | ✗ | ✗ |
-| Veo 3.1 Quality | 4/6/8s | ✅ (8s only) | ✅ | coming soon | ✗ | ✗ |
-| Gemini Omni Flash | 4/6/8/**10s** | ✗ | ✅ | ✗ | coming soon | ✅ |
+| Veo 3.1 Lite | 4/6/8s ✅ | ✅ (8s only) | ✅ | ✅ (2026-08-12) | ✅ (Veo 3.1 content only) | ✗ |
+| Veo 3.1 Fast | 4/6/8s ✅ | ✅ (8s only) | ✅ | ✅ (2026-08-12) | ✗ | ✗ |
+| Veo 3.1 Quality | 4/6/8s ✅ | ✅ (8s only) | ✅ | ✅ (2026-08-12) | ✗ | ✗ |
+| Gemini Omni Flash | 4/6/8/**10s** ✅ | ✗ | ✅ | ✗ (2026-08-12) | coming soon | ✅ |
 
-✅ **Clip length column — VERIFIED live 2026-08-12** (`smoke-duration-model.ts`, by opening the
+✅ **Clip length and first+last columns — VERIFIED live 2026-08-12.** First+last frame works on
+**every Veo 3.1 tier**, not just Lite: the docs' "coming soon" for Fast and Quality is stale.
+Omni Flash rejects a last frame (its End slot fills, then shows an error badge). A last frame
+with **no** first frame is not a mode at all — Flow flags it invalid. A start+end clip was
+generated on Fast and its two ends verified frame by frame. Details:
+`docs/superpowers/flow-video.md` "Frames mode".
+
+✅ **Clip length — same session** (`smoke-duration-model.ts`, by opening the
 compose popover on each tier). Omni Flash offers 4/6/8/10s; Veo 3.1 Fast and Quality offer
 4/6/8s and the **10s tab is absent from the DOM entirely**, not greyed out. Veo 3.1 Lite was
 not opened, so its cell stays a claim.
 
-⚠️ **The rest of this matrix is transcribed from Google's documentation and has never been tested
-by us** (flagged 2026-08-12). The **Frames→Video (first+last)** row is the one that matters
-most and is the least trustworthy: it says Veo 3.1 Lite only, "coming soon" on Fast and
-Quality. Treat every cell as a claim awaiting verification, not as a finding — and when you
-do verify one, replace the cell with the result *and the date you checked*. The Wave C spike
-(`design/2026-08-12-flow-automation-coverage.md` §C1) owns settling the first+last row.
+⚠️ **The remaining columns — Ingredients→Video, Extend, Edit existing video — are still
+transcribed from Google's documentation and have never been tested by us.** Treat each as a
+claim awaiting verification, not a finding; when you do verify one, replace the cell with the
+result *and the date you checked*. The two columns settled above were both wrong in the docs,
+which is the best argument for not trusting the rest.
 
 **Plan the consistency strategy against this matrix, not against assumed parity.**
 Sources disagree on the Extend row in particular — older help pages call Extend

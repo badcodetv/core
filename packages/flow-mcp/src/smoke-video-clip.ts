@@ -18,13 +18,15 @@ const out = process.argv[4] ?? '/tmp/flow-clip.mp4'
 const client = await FlowClient.connect()
 try {
   const started = Date.now()
-  const res = await client.generateVideo(
-    source,
+  const res = await client.generateVideo({
+    startImage: source,
     // Motion only — the still already carries subject, scene and style (flow-prompt rule 2).
-    'The camera pushes in slowly. Leaves stir in a light breeze. Nothing else moves.',
-    out,
-    { model, aspect: '16:9', count: 1 },
-  )
+    motion: 'The camera pushes in slowly. Leaves stir in a light breeze. Nothing else moves.',
+    outPath: out,
+    model,
+    aspect: '16:9',
+    count: 1,
+  })
   const { size } = await stat(res.path)
   console.log(`clip in ${((Date.now() - started) / 1000).toFixed(1)}s:`, res, 'bytes:', size)
   if (size < 10_000) throw new Error('file suspiciously small')
