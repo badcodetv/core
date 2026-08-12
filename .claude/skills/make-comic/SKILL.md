@@ -177,20 +177,74 @@ revision line.
 
 ## Fast slide loop: plan → batch → iterate
 
-Work in batches of 1–4 slides, not one at a time:
+Work in batches, not one image at a time. `flow_generate_batch` opens the project once and
+fires the whole list sequentially in one Flow session — roughly **12s an image** on the cheap
+tier (measured 2026-08-12), so twenty slides is minutes, not an afternoon.
 
-1. **Plan the prompts first.** Write the full prompt for every slide in the batch
-   before generating anything. Get them agreed.
-2. **Batch-generate unattended.** Call `flow_generate_batch` with the ordered
-   prompt list and an `outDir`. It opens the project once and fires all N
-   sequentially in one Flow session — no page-reading between slides.
-3. **Review the batch together.** Look at all N harvested frames at once.
-4. **Iterate only the weak ones.** A single slide is a cheap same-session
-   follow-up: `flow_refine` with the correction. Don't regenerate the batch.
+1. **Plan every prompt first.** Write the full prompt for every slide in the batch before
+   generating anything, and get them agreed. This is the gate; everything after it is machinery.
+2. **Batch-generate.** `flow_generate_batch({ prompts, outDir, resume: true })`. Always pass
+   `resume: true` — see the loop below.
+3. **Review all N frames together**, not one by one.
+4. **Iterate only the weak ones.** A single slide is a cheap same-session follow-up:
+   `flow_refine` with the correction, or `edit-panel` once it is a finished panel. Don't
+   regenerate the batch.
 
-Precondition: the Flow browser is up and logged in (`./scripts/flow-chrome.sh`,
-then `flow_status` → loggedIn: true) and the project is opened with
-`flow_open_project` (e.g. "camping-v2").
+### The unattended loop (how to actually leave it running)
+
+A batch does not fail all-or-nothing. It returns `{ items, failed, partial }`, and the two
+failure kinds mean opposite things:
+
+- **`POLICY_BLOCKED` is about that one prompt.** The batch records it and carries on. It leaves
+  a hole, and the hole is a prompt that needs **rewriting, never retrying** — the same prompt
+  will be blocked forever.
+- **Anything else** (`TIMEOUT`, `SUBMIT_FAILED`, a raw Playwright error) is about the
+  **session**. The batch stops there deliberately, because a wedged page will fail the next
+  prompt too.
+
+So the loop is:
+
+```
+round 1: flow_generate_batch({ prompts, outDir, resume: true })
+         │
+         ├─ failed is empty ────────────────────────────────► done
+         │
+         ├─ POLICY_BLOCKED entries ──► rewrite those prompts in place
+         │                             (badcode-art-direction → "Usage-policy blocks")
+         │                             then re-run the SAME list, resume: true
+         │
+         └─ any other code ──────────► the session is hurt, not the prompt.
+                                       flow_status, re-open the project, re-run
+                                       the SAME list, resume: true
+```
+
+**`resume: true` is what makes re-running free.** It skips any prompt whose output file is
+already on disk, so round 2 only pays for the holes. Same prompts, same `outDir`, every time.
+Deleting one bad image and re-running regenerates exactly that one.
+
+**Stop after three rounds** and report what is still missing. A prompt that survives two
+rewrites is a storyboard problem, not a prompting problem — take it back to the human.
+
+⚠️ **Never re-run a `POLICY_BLOCKED` prompt unchanged**, even in a later round. It cannot pass,
+and it costs a full turn-timeout to learn that again.
+
+⚠️ **Twenty prompts per call.** Longer lists get chunked; each chunk is its own loop.
+
+⚠️ **Credits do not roll over and there are no top-ups** (`docs/flow/platform-controls.md` §2).
+A long run can hard-stall until the billing cycle turns. We have never mapped what Flow's UI
+does at zero credits, so expect it to look like a `TIMEOUT` — if a run starts failing at the
+session level and `flow_status` is healthy, check the credit balance by eye before retrying.
+
+**Budget this stage for policy blocks.** Flow's usage filter silently blocks a large share of
+prompts, and over CDP a block is indistinguishable from a timeout — on the camping recut it was
+over half of all generations. Better than any retry loop: avoid the triggers when *writing the
+storyboard*. Real brand names and legible wordmarks, likeness phrasing, stacked destitution,
+institutional text. If a sign or headline is load-bearing for a beat, plan it as a comic text
+overlay rather than baked into the image. Rules + rewrite table: **`badcode-art-direction`**.
+
+Precondition: the Flow browser is up and logged in (`./scripts/flow-chrome.sh`, then
+`flow_status` → `loggedIn: true`) and the project is opened with `flow_open_project`. Prefer a
+project that is not already full of test media.
 
 ---
 

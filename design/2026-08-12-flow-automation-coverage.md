@@ -447,6 +447,51 @@ when Frames lands.
 
 ---
 
+## What is left (as of 2026-08-12, end of Wave C + batch)
+
+Waves A, B and C are done. Batch is proven, resumable and reports honest dimensions, and
+`make-comic`'s "unattended loop" section documents the rewrite-and-retry cycle. What remains,
+most valuable first:
+
+### L1 · Video refine — "like that clip, but slower"
+
+Every finished clip carries **`redoReuse prompt`** (loads its original prompt back into the
+compose bar) and **`addAdd to prompt`** (attaches the clip ITSELF as a reference). Mapped
+2026-08-12 (`smoke-video-menu.ts`); neither has been driven. `Add to prompt` is the real
+video-referencing route and wrapping it is a small extension of `openAnimateMenu` — the cost is
+live testing, not clicking.
+
+⚠️ **A true video *edit* would pin us to Omni Flash**, per the matrix — the one model that also
+rejects last frames. Worth deciding deliberately rather than discovering.
+
+### L2 · The two matrix rows still transcribed, not tested
+
+`Extend` (claimed Veo 3.1 Lite only) and `Edit existing video` (claimed Omni Flash only) are the
+last unverified columns in `platform-controls.md`. Neither appeared on a Veo 3.1 **Fast** clip's
+menu, which is consistent with the matrix rather than against it — so testing either means
+generating on that specific tier first. Both columns we HAVE tested turned out wrong, which is
+the argument for not trusting these two.
+
+### L3 · Failure states we have never seen
+
+**Credit exhaustion** and **rate-limiting / recaptcha** have no mapped card text, so
+`classifyCard` cannot name them and they will surface as `TIMEOUT`. Do not invent the strings —
+catch them the next time a long run hits one, and add them then.
+
+### L4 · Route start-only video through Frames
+
+The Animate path identifies its upload by diffing the tile grid and **fails in a cluttered
+project** (`ANIMATE_NOT_FOUND` at ~30 items; the identical call worked in a fresh one). The
+Frames path never touches the tile grid. Switching start-only to Frames would remove the
+weakness — deliberately not done, because Animate is the path with the most live proof behind
+it and the ruling was to keep it byte-for-byte.
+
+### Explicitly NOT on this list
+
+Batch video (ruling 2), audio and voice (ruling 3), and a second video tool name (ruling 1).
+
+---
+
 ## Conventions every agent must follow
 
 - **Never write a bare `.click()` or `.click({ force: true })`.** Use `forceClick`
