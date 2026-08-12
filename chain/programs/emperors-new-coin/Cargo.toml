@@ -23,10 +23,12 @@ anchor-debug = []
 mock = []
 
 [dependencies]
-# init-if-needed is needed by `foreclose`, which creates the caller's ENC
-# account so a first-time forecloser still collects the bounty. Anchor warns
-# about reinitialisation attacks on this: the warning is about accounts whose
-# state matters, and every use here is an associated-token account, which is
+# init-if-needed: the mock oracle account uses it today, and T12's
+# `settle_auction` needs it to create the outgoing holder's ENC account when
+# they have closed it — otherwise an incumbent vetoes their own eviction and
+# freezes the winner's escrow by closing one account. Anchor warns about
+# reinitialisation attacks on this: the warning is about accounts whose state
+# matters, and every use here is an associated-token account, which is
 # canonical per (owner, mint) and idempotent to create.
 anchor-lang = { version = "1.1.2", features = ["init-if-needed"] }
 anchor-spl = "1.1.2"

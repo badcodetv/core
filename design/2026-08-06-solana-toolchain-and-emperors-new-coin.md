@@ -7,10 +7,11 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: in progress — **15 of 29 done. T11 SUPERSEDED by the 2026-08-12
-architecture ruling; next is T30 (delete T11's code, which is still in the
-tree), then T12, the tenancy auction — hardened the same day by an adversarial
-review, which also added T29.**
+Status: in progress — **16 of 30 done. T11 SUPERSEDED by the 2026-08-12
+architecture ruling and its code deleted by T30; next is T12, the tenancy
+auction — hardened by the same-day adversarial review, which also added T29.
+T12 owes one decision it inherits rather than makes: the ten NFTs still carry
+the Token-2022 permanent delegate (see the Discovered Issues Log).**
 Date: 2026-08-06 · **architecture revised 2026-08-12 · adversarial review folded in 2026-08-12**
 
 > **Read [`2026-08-12-enc-architecture-decision.md`](./2026-08-12-enc-architecture-decision.md)
@@ -60,8 +61,8 @@ this table is the map.
 | ✅ | T9 · oracle trait + MockOracle behind a Cargo feature | program |
 | ✅ | T10 · `sync_m2` — supply targeting, the core | program |
 | ⛔ | T11 · rent, `settle_rent`, `foreclose` — **SUPERSEDED 2026-08-12**, built, still in the tree until T30 removes it | program |
-| ⬜ | **T30 · remove the rent machinery (the deletion Ruling A implies)** ← **you are here** | program |
-| ⬜ | T12 · the tenancy auction — `place_bid` + `settle_auction` | program |
+| ✅ | T30 · remove the rent machinery (the deletion Ruling A implies) | program |
+| ⬜ | **T12 · the tenancy auction — `place_bid` + `settle_auction`** ← **you are here** | program |
 | ⬜ | T13 · the faucet — register-now, collect-next-epoch (**now the only way in**) | program |
 | ⬜ | T28 · `retire` — the coin notices its own end | program |
 | ⬜ | T29 · proportional sync caps + the catch-up walk (2026-08-12 review; **must land before T22**) | program |
@@ -1691,8 +1692,37 @@ while the page correctly reports localnet.
 - **TDD:** no (deletion; the existing suites are the regression).
 - **Validation:** `./stack cargo test -p emperors-new-coin --lib && ./stack test test-init && ./stack test test-sync`.
 - **Depends on:** T10. **Blocks T12** — same files.
-- [ ] done
-- Notes:
+- [x] done
+- Notes: Rust unit tests 42 → **30** (the 12 removed were `integral` and
+  `rent_owed`); `test-init` 14 green on a fresh ledger, `test-sync` 12 green +
+  the 1 deliberately-pending uncovered-burn case. `./stack check` clean.
+  **Run on opus though the header says sonnet** — Kai's call, made rather than
+  switching models twice for a mechanical deletion.
+  **Four references the enumeration missed**, all forced by the deletion rather
+  than scope creep: `init_asset.rs` zeroed `rent_accrued`; `Cargo.toml`
+  justified the `init-if-needed` feature by naming `foreclose` (the feature
+  **stays** — `set_mock_m2` uses it now and T12's create-the-holder's-account
+  rule needs it, so the comment was repointed at that); `errors.rs` had a
+  section header `── Assets, rent, sales ──`; and `math.rs`'s `faucet_pot` doc
+  said the pot stays at zero "until rent rebuilds the Emperor's coffers", which
+  is now a claim about a mechanism that does not exist — rewritten to the two
+  ways the vault actually refills (M2 rises, or a flag the Emperor holds is won
+  at auction).
+  **Two build facts worth not rediscovering.** The published IDL only refreshes
+  from a **default** build (T9/T10's note), so removing an instruction needs
+  `./stack build` before the mock build the suites do for themselves — otherwise
+  the committed interface still advertises `settleRent`. And `Config` losing
+  three fields is a layout change, so `./stack reset` is required or every
+  pre-existing account fails to decode.
+  Error renumbering was free as predicted: no suite matched on a numeric
+  `60xx` code, only on names. `Asset.last_touched` kept and flagged to T12 in
+  its doc comment; `sync_m2.ts`'s "banks the rent clock" test renamed to
+  "restarts every asset clock at the sync" and kept, so the field cannot
+  quietly stop being maintained before T12 picks it up.
+  The IDL-shape test asked for is in `initialize.ts` as *"has no rent or
+  foreclosure instruction, and no rent parameters"* — it also asserts the
+  `Config` fields are gone from the published types, since a parameter with no
+  instruction behind it is a rule the coin cannot enforce.
 
 ## Discovered Issues Log
 
@@ -1722,3 +1752,43 @@ _(appended by executors during implementation)_
   in the tree (wired into `lib.rs`, `Config`, `sync_m2`), so a builder starting
   at T12 would extend files that contradict the design → **T30**, which now
   precedes T12.
+
+- **2026-08-12 · T30 · the permanent delegate is still on all ten NFTs, and a
+  published sentence says it isn't.** T30 deleted the rent machinery, but
+  `init_asset` still creates each asset mint with the Token-2022
+  **PermanentDelegate** extension, and `initialize.ts` still asserts it
+  (*"gives the vault permanent delegate over every asset"*, passing). Left in
+  place: T30's scope is the rent machinery, and asset custody belongs to T12.
+  **Why it matters.** The decision doc's §3 cost table lists the permanent
+  delegate as **dropped** under Ruling A, and §5 states plainly *"Under A2 the
+  permanent-delegate flag never applies, since the extension is dropped."* That
+  sentence is currently false about the built code — and §4's rule is that the
+  mechanism may be harsh but the claims must be exactly true. It is also the
+  heavier of the two scanner flags the ruling was partly chosen to shed
+  (RugCheck: `"Permanent Control Enabled"`, danger, weight 50000).
+  **Not yet a live danger**, which is why it is logged rather than hot-fixed:
+  the extension can only be exercised against a wallet holding a flag, and
+  under T12 no wallet ever does — the flags stay in program custody and holders
+  get a certificate. So the program README's "no instruction can move a token
+  out of any wallet without its owner's signature" survives intact today.
+  **The decision T12 must make, and the deadline.** Extensions are fixed at
+  mint creation, so this is changeable only until T22 runs the real
+  `init_asset` calls — after that it is permanent on a non-upgradeable program.
+  T12 should either drop the extension (recommended: it is unused under
+  program custody, and it buys back the claim) or keep it deliberately and fix
+  §3/§5 in the same commit. Do not let it arrive at T22 undecided.
+
+- **2026-08-12 · T30 · a default build can publish a stale IDL, so run T9's
+  grep every time.** After deleting the two instructions, `./stack build`
+  (default) published an IDL that no longer contained `settleRent` or
+  `foreclose` — but *still* contained `set_mock_m2`, which a default build must
+  never carry. An identical second `./stack build` later produced the correct
+  file. Verified in isolation, so the obvious suspects are cleared: **neither
+  `./stack test <suite>` nor `./stack reset` republishes the IDL**, despite both
+  building. Root cause not pinned further (incremental-build reuse is the
+  likely candidate) and not chased, because the guard is cheap and already
+  specified: **T9's validation grep is the check, and it has to be run rather
+  than assumed.** The staged commit was briefly wrong in exactly this way and
+  the grep is what caught it. Practical rule for T12 onward: a default
+  `./stack build` plus `! grep -q set_mock_m2 chain/idl/emperors_new_coin.json`
+  immediately before `git add`, every time the instruction set changes.

@@ -81,8 +81,6 @@ pub struct Config {
     /// Decimals on the mint. Six: nine would overflow u64 at this supply.
     pub enc_decimals: u8,
 
-    /// Daily rent on a held asset, in basis points of its current price.
-    pub rent_rate_per_day_bps: u16,
     /// Share of the distributable surplus paid out per epoch, in basis points.
     pub faucet_alpha_bps: u16,
     /// The vault's floor, in basis points of total supply. Below it the faucet
@@ -93,11 +91,6 @@ pub struct Config {
     pub welcome_grant: u64,
     /// How many welcome grants may be issued in a single epoch.
     pub grants_per_epoch: u16,
-
-    /// How long an unpayable rent debt may stand before anyone may foreclose.
-    pub grace_seconds: i64,
-    /// Paid from the vault to whoever forecloses, in base units.
-    pub foreclose_bounty: u64,
 
     /// Largest M2 move, in basis points, this program will believe in one
     /// release.
@@ -132,7 +125,12 @@ pub struct Printer {
     pub bump: u8,
 }
 
-/// One of the ten parody assets: a Token-2022 NFT, always for sale.
+/// One of the ten parody assets: a Token-2022 NFT, held for a term.
+///
+/// The NFT itself never leaves program custody — this account records who holds
+/// the *tenancy*, and the holder's own wallet gets a certificate instead. That
+/// is what lets settlement be permissionless without a permanent delegate:
+/// there is no wallet to reach into.
 #[account]
 #[derive(InitSpace)]
 pub struct Asset {
@@ -152,10 +150,13 @@ pub struct Asset {
     pub interp_start: i64,
     pub interp_end: i64,
 
-    /// Rent charged but not yet paid, in base units.
-    pub rent_accrued: u64,
-    /// When rent was last settled or the holder last changed. Rent is computed
-    /// from here on read — no crank, and no iterating over accounts.
+    /// When this asset was last written to — set by `init_asset` and by every
+    /// price rescale.
+    ///
+    /// **Open for T12.** It was the rent clock; rent is gone. The auction needs
+    /// a term anchor, and this field is either it or is replaced by an explicit
+    /// `term_ends_at`. Left here rather than deleted so T12 decides deliberately
+    /// instead of inheriting a guess made during a deletion.
     pub last_touched: i64,
     pub bump: u8,
 }

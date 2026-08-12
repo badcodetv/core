@@ -14,14 +14,6 @@
     "placeholder": true
   },
 
-  "rent": {
-    "ratePerDayBps": 500,
-    "graceSeconds": 86400,
-    "forecloseBounty": 100000000,
-    "_": "~5%/day of an asset's current price, accrued lazily and charged against the interpolated price as it moves. Rent is the turnover engine - a Harberger price with no carrying cost is inert. Grace is how long an unpayable debt may stand before anyone may foreclose; the bounty (100 ENC at 6dp) is what the vault pays whoever does, so nobody has to run a bot for free.",
-    "placeholder": true
-  },
-
   "faucet": {
     "alphaBps": 1000,
     "welcomeGrant": 1000000000,

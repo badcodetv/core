@@ -7,10 +7,22 @@
 //!
 //! The machine, in one paragraph. A permissionless `sync_m2` reads the feed and
 //! mints or burns against the vault so that `supply = k × M2`. Everything else
-//! only moves tokens that already exist: ten parody assets are always for sale
-//! at a published price with no right of refusal, their holders pay rent to the
-//! vault, and the vault pays a daily faucet back out to anyone who shows up.
-//! The Fed decides how much money there is; the game decides who holds it.
+//! only moves tokens that already exist: ten parody assets reprice by whatever
+//! percentage M2 moved and are held for a published term, changing hands by
+//! auction with the full winning bid paid to the outgoing holder, while the
+//! vault drips a daily faucet back out to anyone who shows up. The Fed decides
+//! how much money there is; the game decides who holds it.
+//!
+//! **There is no holding cost.** No rent, no demurrage, no fee. Holding ENC
+//! already loses truthfully — the balance sits still while the assets reprice
+//! away from it, which is what a peg to the printer *means* and what happens to
+//! a wage. A carrying cost was built here and removed on 2026-08-12: at a rate
+//! high enough to force turnover it made owning an asset a catastrophic loss,
+//! inverting the joke the coin exists to tell.
+//!
+//! The consequence to keep true as this grows: **no token leaves any wallet
+//! without that wallet owner's signature.** Not the coin, not the flags, not
+//! the certificates.
 //!
 //! See design/2026-08-06-solana-toolchain-and-emperors-new-coin.md.
 use anchor_lang::prelude::*;
@@ -56,19 +68,6 @@ pub mod emperors_new_coin {
     /// index order.
     pub fn sync_m2(ctx: Context<SyncM2>) -> Result<()> {
         instructions::sync_m2::handler(ctx)
-    }
-
-    /// Push accrued rent from the holder to the vault. **Anyone may call
-    /// this** — it works because the holder made the vault a delegate over
-    /// their ENC when they bought the asset.
-    pub fn settle_rent(ctx: Context<SettleRent>, index: u8) -> Result<()> {
-        instructions::settle_rent::handler(ctx, index)
-    }
-
-    /// Return an asset to the vault when its debt has outgrown the holder and
-    /// grace has elapsed. **Anyone may call this**, and gets paid for it.
-    pub fn foreclose(ctx: Context<Foreclose>, index: u8) -> Result<()> {
-        instructions::foreclose::handler(ctx, index)
     }
 
     /// Set M2 by hand. **Compiled only under `--features mock`** — a default

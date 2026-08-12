@@ -143,7 +143,6 @@ pub fn handler(
     asset.price_to = genesis_price;
     asset.interp_start = now;
     asset.interp_end = now;
-    asset.rent_accrued = 0;
     asset.last_touched = now;
     asset.bump = ctx.bumps.asset;
 

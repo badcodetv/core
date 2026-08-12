@@ -192,15 +192,16 @@ describe('sync_m2', () => {
     }
   })
 
-  it('banks the rent clock on every asset', async () => {
+  it('restarts every asset clock at the sync', async () => {
     await setM2((await currentM2()) + 1_000_000n)
     const at = Math.floor(Date.now() / 1000)
     await sync()
     for (let i = 0; i < ASSET_COUNT; i++) {
       const a = await asset(i)
-      // Rent owed is banked under the OLD curve and the clock restarted —
-      // otherwise every unpaid day would be silently recomputed at the new
-      // prices, charging people for a past that did not happen.
+      // This was the rent clock, which is gone (Ruling A, 2026-08-12). It now
+      // records only when the asset was last written, and T12 decides whether
+      // it becomes the auction term anchor. Asserted meanwhile so the field
+      // cannot quietly stop being maintained before T12 picks it up.
       expect(Math.abs(a.lastTouched.toNumber() - at), `asset ${i}`).to.be.lessThan(120)
     }
   })

@@ -153,9 +153,6 @@ fn rescale_assets(ctx: &Context<SyncM2>, m2_old: u64, m2_new: u64, now: i64) -> 
         EncError::NotFullyInitialized
     );
 
-    let vault = ctx.accounts.vault.key();
-    let rent_rate = ctx.accounts.config.rent_rate_per_day_bps;
-
     for (index, info) in ctx.remaining_accounts.iter().enumerate() {
         let index = index as u8;
         // Derived, not trusted. Without this a caller could pass ten copies of
@@ -173,18 +170,6 @@ fn rescale_assets(ctx: &Context<SyncM2>, m2_old: u64, m2_new: u64, now: i64) -> 
             end: asset.interp_end,
         };
 
-        // Bank the rent owed under the OLD curve before replacing it. Rent is
-        // computed from `last_touched` against the curve, so changing the curve
-        // without settling would retroactively recompute every unpaid day at
-        // the new prices — charging or refunding people for a past that did not
-        // happen. The Emperor charges himself nothing.
-        if asset.holder != vault {
-            let owed = crate::math::rent_owed(&curve, rent_rate, asset.last_touched, now)?;
-            asset.rent_accrued = asset
-                .rent_accrued
-                .checked_add(owed)
-                .ok_or(error!(EncError::MathOverflow))?;
-        }
         asset.last_touched = now;
 
         asset.price_from = curve.price_at(now);

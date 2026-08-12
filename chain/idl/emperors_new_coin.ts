@@ -14,354 +14,6 @@ export type EmperorsNewCoin = {
   },
   "instructions": [
     {
-      "name": "foreclose",
-      "docs": [
-        "Return an asset to the vault when its debt has outgrown the holder and",
-        "grace has elapsed. **Anyone may call this**, and gets paid for it."
-      ],
-      "discriminator": [
-        102,
-        30,
-        99,
-        58,
-        76,
-        76,
-        152,
-        145
-      ],
-      "accounts": [
-        {
-          "name": "caller",
-          "docs": [
-            "Anyone. They pay the fees and collect the bounty."
-          ],
-          "writable": true,
-          "signer": true
-        },
-        {
-          "name": "config",
-          "pda": {
-            "seeds": [
-              {
-                "kind": "const",
-                "value": [
-                  99,
-                  111,
-                  110,
-                  102,
-                  105,
-                  103
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "name": "asset",
-          "writable": true
-        },
-        {
-          "name": "vault",
-          "docs": [
-            "vault's token accounts."
-          ],
-          "pda": {
-            "seeds": [
-              {
-                "kind": "const",
-                "value": [
-                  118,
-                  97,
-                  117,
-                  108,
-                  116
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "name": "mint"
-        },
-        {
-          "name": "assetMint",
-          "writable": true
-        },
-        {
-          "name": "holderNftAccount",
-          "writable": true
-        },
-        {
-          "name": "vaultNftAccount",
-          "writable": true,
-          "pda": {
-            "seeds": [
-              {
-                "kind": "account",
-                "path": "vault"
-              },
-              {
-                "kind": "account",
-                "path": "token2022Program"
-              },
-              {
-                "kind": "account",
-                "path": "assetMint"
-              }
-            ],
-            "program": {
-              "kind": "const",
-              "value": [
-                140,
-                151,
-                37,
-                143,
-                78,
-                36,
-                137,
-                241,
-                187,
-                61,
-                16,
-                41,
-                20,
-                142,
-                13,
-                131,
-                11,
-                90,
-                19,
-                153,
-                218,
-                255,
-                16,
-                132,
-                4,
-                142,
-                123,
-                216,
-                219,
-                233,
-                248,
-                89
-              ]
-            }
-          }
-        },
-        {
-          "name": "holderTokenAccount",
-          "docs": [
-            "The holder's ENC account — read to decide whether they could have paid."
-          ]
-        },
-        {
-          "name": "vaultTokenAccount",
-          "writable": true,
-          "pda": {
-            "seeds": [
-              {
-                "kind": "account",
-                "path": "vault"
-              },
-              {
-                "kind": "const",
-                "value": [
-                  6,
-                  221,
-                  246,
-                  225,
-                  215,
-                  101,
-                  161,
-                  147,
-                  217,
-                  203,
-                  225,
-                  70,
-                  206,
-                  235,
-                  121,
-                  172,
-                  28,
-                  180,
-                  133,
-                  237,
-                  95,
-                  91,
-                  55,
-                  145,
-                  58,
-                  140,
-                  245,
-                  133,
-                  126,
-                  255,
-                  0,
-                  169
-                ]
-              },
-              {
-                "kind": "account",
-                "path": "mint"
-              }
-            ],
-            "program": {
-              "kind": "const",
-              "value": [
-                140,
-                151,
-                37,
-                143,
-                78,
-                36,
-                137,
-                241,
-                187,
-                61,
-                16,
-                41,
-                20,
-                142,
-                13,
-                131,
-                11,
-                90,
-                19,
-                153,
-                218,
-                255,
-                16,
-                132,
-                4,
-                142,
-                123,
-                216,
-                219,
-                233,
-                248,
-                89
-              ]
-            }
-          }
-        },
-        {
-          "name": "callerTokenAccount",
-          "docs": [
-            "Created if absent so a first-time forecloser still gets paid."
-          ],
-          "writable": true,
-          "pda": {
-            "seeds": [
-              {
-                "kind": "account",
-                "path": "caller"
-              },
-              {
-                "kind": "const",
-                "value": [
-                  6,
-                  221,
-                  246,
-                  225,
-                  215,
-                  101,
-                  161,
-                  147,
-                  217,
-                  203,
-                  225,
-                  70,
-                  206,
-                  235,
-                  121,
-                  172,
-                  28,
-                  180,
-                  133,
-                  237,
-                  95,
-                  91,
-                  55,
-                  145,
-                  58,
-                  140,
-                  245,
-                  133,
-                  126,
-                  255,
-                  0,
-                  169
-                ]
-              },
-              {
-                "kind": "account",
-                "path": "mint"
-              }
-            ],
-            "program": {
-              "kind": "const",
-              "value": [
-                140,
-                151,
-                37,
-                143,
-                78,
-                36,
-                137,
-                241,
-                187,
-                61,
-                16,
-                41,
-                20,
-                142,
-                13,
-                131,
-                11,
-                90,
-                19,
-                153,
-                218,
-                255,
-                16,
-                132,
-                4,
-                142,
-                123,
-                216,
-                219,
-                233,
-                248,
-                89
-              ]
-            }
-          }
-        },
-        {
-          "name": "tokenProgram",
-          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
-        },
-        {
-          "name": "token2022Program",
-          "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
-        },
-        {
-          "name": "associatedTokenProgram",
-          "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
-        },
-        {
-          "name": "systemProgram",
-          "address": "11111111111111111111111111111111"
-        }
-      ],
-      "args": [
-        {
-          "name": "index",
-          "type": "u8"
-        }
-      ]
-    },
-    {
       "name": "initAsset",
       "docs": [
         "Create one parody asset and its NFT. Called ten times, in order."
@@ -782,247 +434,6 @@ export type EmperorsNewCoin = {
       ]
     },
     {
-      "name": "setMockM2",
-      "docs": [
-        "Set M2 by hand. **Compiled only under `--features mock`** — a default",
-        "build has no such instruction at all."
-      ],
-      "discriminator": [
-        131,
-        177,
-        226,
-        112,
-        102,
-        248,
-        184,
-        39
-      ],
-      "accounts": [
-        {
-          "name": "payer",
-          "writable": true,
-          "signer": true
-        },
-        {
-          "name": "mockOracle",
-          "docs": [
-            "`init_if_needed` so the first call creates it and later calls overwrite",
-            "it — exactly the reinitialisation pattern Anchor warns about, and",
-            "exactly what a mock wants. The whole instruction is compiled out of a",
-            "default build, so nothing here can reach production."
-          ],
-          "writable": true,
-          "pda": {
-            "seeds": [
-              {
-                "kind": "const",
-                "value": [
-                  109,
-                  111,
-                  99,
-                  107,
-                  95,
-                  111,
-                  114,
-                  97,
-                  99,
-                  108,
-                  101
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "name": "systemProgram",
-          "address": "11111111111111111111111111111111"
-        }
-      ],
-      "args": [
-        {
-          "name": "m2Value",
-          "type": "u64"
-        },
-        {
-          "name": "releaseDate",
-          "type": "i64"
-        }
-      ]
-    },
-    {
-      "name": "settleRent",
-      "docs": [
-        "Push accrued rent from the holder to the vault. **Anyone may call",
-        "this** — it works because the holder made the vault a delegate over",
-        "their ENC when they bought the asset."
-      ],
-      "discriminator": [
-        77,
-        172,
-        130,
-        130,
-        56,
-        74,
-        236,
-        236
-      ],
-      "accounts": [
-        {
-          "name": "config",
-          "pda": {
-            "seeds": [
-              {
-                "kind": "const",
-                "value": [
-                  99,
-                  111,
-                  110,
-                  102,
-                  105,
-                  103
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "name": "asset",
-          "writable": true
-        },
-        {
-          "name": "vault",
-          "docs": [
-            "token account."
-          ],
-          "pda": {
-            "seeds": [
-              {
-                "kind": "const",
-                "value": [
-                  118,
-                  97,
-                  117,
-                  108,
-                  116
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "name": "mint"
-        },
-        {
-          "name": "holderTokenAccount",
-          "docs": [
-            "The holder's ENC account. Checked against `asset.holder` in the handler",
-            "rather than by constraint, so the error names the actual problem."
-          ],
-          "writable": true
-        },
-        {
-          "name": "vaultTokenAccount",
-          "writable": true,
-          "pda": {
-            "seeds": [
-              {
-                "kind": "account",
-                "path": "vault"
-              },
-              {
-                "kind": "const",
-                "value": [
-                  6,
-                  221,
-                  246,
-                  225,
-                  215,
-                  101,
-                  161,
-                  147,
-                  217,
-                  203,
-                  225,
-                  70,
-                  206,
-                  235,
-                  121,
-                  172,
-                  28,
-                  180,
-                  133,
-                  237,
-                  95,
-                  91,
-                  55,
-                  145,
-                  58,
-                  140,
-                  245,
-                  133,
-                  126,
-                  255,
-                  0,
-                  169
-                ]
-              },
-              {
-                "kind": "account",
-                "path": "mint"
-              }
-            ],
-            "program": {
-              "kind": "const",
-              "value": [
-                140,
-                151,
-                37,
-                143,
-                78,
-                36,
-                137,
-                241,
-                187,
-                61,
-                16,
-                41,
-                20,
-                142,
-                13,
-                131,
-                11,
-                90,
-                19,
-                153,
-                218,
-                255,
-                16,
-                132,
-                4,
-                142,
-                123,
-                216,
-                219,
-                233,
-                248,
-                89
-              ]
-            }
-          }
-        },
-        {
-          "name": "tokenProgram",
-          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
-        }
-      ],
-      "args": [
-        {
-          "name": "index",
-          "type": "u8"
-        }
-      ]
-    },
-    {
       "name": "syncM2",
       "docs": [
         "Read the oracle and move the supply to `k × M2`. **Anyone may call",
@@ -1235,19 +646,6 @@ export type EmperorsNewCoin = {
       ]
     },
     {
-      "name": "mockOracle",
-      "discriminator": [
-        208,
-        74,
-        71,
-        99,
-        160,
-        22,
-        158,
-        240
-      ]
-    },
-    {
       "name": "printer",
       "discriminator": [
         111,
@@ -1262,32 +660,6 @@ export type EmperorsNewCoin = {
     }
   ],
   "events": [
-    {
-      "name": "foreclosed",
-      "discriminator": [
-        93,
-        27,
-        188,
-        45,
-        33,
-        68,
-        88,
-        55
-      ]
-    },
-    {
-      "name": "rentSettled",
-      "discriminator": [
-        214,
-        23,
-        125,
-        229,
-        82,
-        74,
-        222,
-        219
-      ]
-    },
     {
       "name": "synced",
       "discriminator": [
@@ -1365,31 +737,21 @@ export type EmperorsNewCoin = {
     },
     {
       "code": 6012,
-      "name": "vaultHoldsAsset",
-      "msg": "The vault holds this asset, so no rent is owed"
-    },
-    {
-      "code": 6013,
       "name": "wrongHolderAccount",
       "msg": "That token account does not belong to the holder"
     },
     {
-      "code": 6014,
-      "name": "notForeclosable",
-      "msg": "This asset is not foreclosable yet"
-    },
-    {
-      "code": 6015,
+      "code": 6013,
       "name": "invalidInterpolationWindow",
       "msg": "Invalid price interpolation window"
     },
     {
-      "code": 6016,
+      "code": 6014,
       "name": "alreadyClaimedThisEpoch",
       "msg": "You have already claimed this epoch"
     },
     {
-      "code": 6017,
+      "code": 6015,
       "name": "epochNotSettled",
       "msg": "That epoch is not settled yet"
     }
@@ -1398,7 +760,12 @@ export type EmperorsNewCoin = {
     {
       "name": "asset",
       "docs": [
-        "One of the ten parody assets: a Token-2022 NFT, always for sale."
+        "One of the ten parody assets: a Token-2022 NFT, held for a term.",
+        "",
+        "The NFT itself never leaves program custody — this account records who holds",
+        "the *tenancy*, and the holder's own wallet gets a certificate instead. That",
+        "is what lets settlement be permissionless without a permanent delegate:",
+        "there is no wallet to reach into."
       ],
       "type": {
         "kind": "struct",
@@ -1440,17 +807,15 @@ export type EmperorsNewCoin = {
             "type": "i64"
           },
           {
-            "name": "rentAccrued",
-            "docs": [
-              "Rent charged but not yet paid, in base units."
-            ],
-            "type": "u64"
-          },
-          {
             "name": "lastTouched",
             "docs": [
-              "When rent was last settled or the holder last changed. Rent is computed",
-              "from here on read — no crank, and no iterating over accounts."
+              "When this asset was last written to — set by `init_asset` and by every",
+              "price rescale.",
+              "",
+              "**Open for T12.** It was the rent clock; rent is gone. The auction needs",
+              "a term anchor, and this field is either it or is replaced by an explicit",
+              "`term_ends_at`. Left here rather than deleted so T12 decides deliberately",
+              "instead of inheriting a guess made during a deletion."
             ],
             "type": "i64"
           },
@@ -1518,13 +883,6 @@ export type EmperorsNewCoin = {
             "type": "u8"
           },
           {
-            "name": "rentRatePerDayBps",
-            "docs": [
-              "Daily rent on a held asset, in basis points of its current price."
-            ],
-            "type": "u16"
-          },
-          {
             "name": "faucetAlphaBps",
             "docs": [
               "Share of the distributable surplus paid out per epoch, in basis points."
@@ -1554,20 +912,6 @@ export type EmperorsNewCoin = {
             "type": "u16"
           },
           {
-            "name": "graceSeconds",
-            "docs": [
-              "How long an unpayable rent debt may stand before anyone may foreclose."
-            ],
-            "type": "i64"
-          },
-          {
-            "name": "forecloseBounty",
-            "docs": [
-              "Paid from the vault to whoever forecloses, in base units."
-            ],
-            "type": "u64"
-          },
-          {
             "name": "maxChangeBps",
             "docs": [
               "Largest M2 move, in basis points, this program will believe in one",
@@ -1592,37 +936,6 @@ export type EmperorsNewCoin = {
           {
             "name": "bump",
             "type": "u8"
-          }
-        ]
-      }
-    },
-    {
-      "name": "foreclosed",
-      "type": {
-        "kind": "struct",
-        "fields": [
-          {
-            "name": "index",
-            "type": "u8"
-          },
-          {
-            "name": "formerHolder",
-            "type": "pubkey"
-          },
-          {
-            "name": "caller",
-            "type": "pubkey"
-          },
-          {
-            "name": "debt",
-            "docs": [
-              "The debt written off when the asset went back to the vault."
-            ],
-            "type": "u64"
-          },
-          {
-            "name": "bounty",
-            "type": "u64"
           }
         ]
       }
@@ -1660,10 +973,6 @@ export type EmperorsNewCoin = {
             "type": "u64"
           },
           {
-            "name": "rentRatePerDayBps",
-            "type": "u16"
-          },
-          {
             "name": "faucetAlphaBps",
             "type": "u16"
           },
@@ -1680,46 +989,12 @@ export type EmperorsNewCoin = {
             "type": "u16"
           },
           {
-            "name": "graceSeconds",
-            "type": "i64"
-          },
-          {
-            "name": "forecloseBounty",
-            "type": "u64"
-          },
-          {
             "name": "maxChangeBps",
             "type": "u16"
           },
           {
             "name": "maxSingleMint",
             "type": "u64"
-          }
-        ]
-      }
-    },
-    {
-      "name": "mockOracle",
-      "docs": [
-        "A number somebody typed, for localnet.",
-        "",
-        "Compiled only under `--features mock`. A default build contains neither this",
-        "account nor the instruction that writes it."
-      ],
-      "type": {
-        "kind": "struct",
-        "fields": [
-          {
-            "name": "m2Value",
-            "type": "u64"
-          },
-          {
-            "name": "releaseDate",
-            "type": "i64"
-          },
-          {
-            "name": "bump",
-            "type": "u8"
           }
         ]
       }
@@ -1770,36 +1045,6 @@ export type EmperorsNewCoin = {
           {
             "name": "bump",
             "type": "u8"
-          }
-        ]
-      }
-    },
-    {
-      "name": "rentSettled",
-      "docs": [
-        "Emitted whenever rent actually moves, so the site can show the drip."
-      ],
-      "type": {
-        "kind": "struct",
-        "fields": [
-          {
-            "name": "index",
-            "type": "u8"
-          },
-          {
-            "name": "holder",
-            "type": "pubkey"
-          },
-          {
-            "name": "paid",
-            "type": "u64"
-          },
-          {
-            "name": "outstanding",
-            "docs": [
-              "What remains owed because the holder could not cover it."
-            ],
-            "type": "u64"
           }
         ]
       }

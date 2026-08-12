@@ -58,7 +58,6 @@ export interface Harness {
 interface Params {
   peg: { k: number }
   vault: { floorBps: number }
-  rent: { ratePerDayBps: number; graceSeconds: number; forecloseBounty: number }
   faucet: { alphaBps: number; welcomeGrant: number; grantsPerEpoch: number }
   sanity: { maxChangeBps: number; maxSingleMint: number }
 }
@@ -147,13 +146,10 @@ export function initParams(h: Harness) {
     // Zeroes until T17 stands the real feed up on devnet. The mock ignores it.
     expectedFeedId: Array(32).fill(0),
     k: new BN(h.params.peg.k),
-    rentRatePerDayBps: h.params.rent.ratePerDayBps,
     faucetAlphaBps: h.params.faucet.alphaBps,
     floorBps: h.params.vault.floorBps,
     welcomeGrant: new BN(h.params.faucet.welcomeGrant),
     grantsPerEpoch: h.params.faucet.grantsPerEpoch,
-    graceSeconds: new BN(h.params.rent.graceSeconds),
-    forecloseBounty: new BN(h.params.rent.forecloseBounty),
     maxChangeBps: h.params.sanity.maxChangeBps,
     maxSingleMint: new BN(h.params.sanity.maxSingleMint),
   }

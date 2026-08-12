@@ -29,13 +29,10 @@ pub struct InitializeParams {
     pub expected_feed_id: [u8; 32],
     /// Base units of ENC per unit of `m2_value`.
     pub k: u64,
-    pub rent_rate_per_day_bps: u16,
     pub faucet_alpha_bps: u16,
     pub floor_bps: u16,
     pub welcome_grant: u64,
     pub grants_per_epoch: u16,
-    pub grace_seconds: i64,
-    pub foreclose_bounty: u64,
     pub max_change_bps: u16,
     pub max_single_mint: u64,
 }
@@ -53,13 +50,10 @@ pub fn handler(ctx: Context<Initialize>, params: InitializeParams) -> Result<()>
     config.expected_feed_id = params.expected_feed_id;
     config.k = params.k;
     config.enc_decimals = ENC_DECIMALS;
-    config.rent_rate_per_day_bps = params.rent_rate_per_day_bps;
     config.faucet_alpha_bps = params.faucet_alpha_bps;
     config.floor_bps = params.floor_bps;
     config.welcome_grant = params.welcome_grant;
     config.grants_per_epoch = params.grants_per_epoch;
-    config.grace_seconds = params.grace_seconds;
-    config.foreclose_bounty = params.foreclose_bounty;
     config.max_change_bps = params.max_change_bps;
     config.max_single_mint = params.max_single_mint;
     config.initialized_assets = 0;
@@ -78,8 +72,8 @@ pub fn handler(ctx: Context<Initialize>, params: InitializeParams) -> Result<()>
 
     // ── The money ───────────────────────────────────────────────────────────
     // Every token goes to the vault. There is nobody else yet, and BadCode
-    // takes no allocation — the only way out of the vault is the faucet, or
-    // buying an asset from someone who used it.
+    // takes no allocation — the only way out of the vault is the faucet, which
+    // makes it the only route into the economy at all.
     let vault_seeds: &[&[u8]] = &[VAULT_SEED, &[ctx.bumps.vault]];
     mint_to(
         CpiContext::new_with_signer(
@@ -111,8 +105,6 @@ fn validate(p: &InitializeParams) -> Result<()> {
     // A share of something cannot exceed the whole of it.
     require!(p.floor_bps as u128 <= BPS, EncError::InvalidRate);
     require!(p.faucet_alpha_bps as u128 <= BPS, EncError::InvalidRate);
-    require!(p.rent_rate_per_day_bps as u128 <= BPS, EncError::InvalidRate);
-    require!(p.grace_seconds >= 0, EncError::InvalidRate);
     // A cap of zero would reject every sync forever, permanently freezing the
     // peg — the one thing the coin exists to do.
     require!(p.max_change_bps > 0, EncError::ChangeTooLarge);

@@ -143,65 +143,6 @@ impl PriceCurve {
         price.clamp(self.from.min(self.to) as i128, self.from.max(self.to) as i128) as u64
     }
 
-    /// Integral of price over `[a, b]`, in price-seconds.
-    ///
-    /// Exact, not sampled. Rent is charged against the price *as it moves*, so
-    /// approximating with the price at either end would over- or under-charge
-    /// every holder for thirty days after every Fed release. The curve is
-    /// piecewise linear, so the integral splits into three pieces and the
-    /// middle one is just its mean times its length.
-    pub fn integral(&self, a: i64, b: i64) -> u128 {
-        if b <= a {
-            return 0;
-        }
-        let end = self.effective_end();
-        let mut total: u128 = 0;
-
-        // Before the window: flat at `from`.
-        let flat_before = b.min(self.start);
-        if flat_before > a {
-            total += (flat_before - a) as u128 * self.from as u128;
-        }
-
-        // Inside the window: a straight line, so mean × length.
-        let lo = a.max(self.start);
-        let hi = b.min(end);
-        if hi > lo {
-            let mean = self.price_at(lo) as u128 + self.price_at(hi) as u128;
-            total += (hi - lo) as u128 * mean / 2;
-        }
-
-        // After the window: flat at `to`.
-        let flat_after = a.max(end);
-        if b > flat_after {
-            total += (b - flat_after) as u128 * self.to as u128;
-        }
-
-        total
-    }
-}
-
-// ── Rent ────────────────────────────────────────────────────────────────────
-
-/// Rent owed over `[last_touched, now]` at `rate_bps` per day.
-///
-/// The carrying cost is the whole turnover engine: a Harberger price with no
-/// rent is inert, because nothing pushes an owner to give the asset up or to
-/// price it honestly. Charged against the interpolated price so that rent rises
-/// with the money supply exactly as the asset's price does.
-///
-/// Returns zero for a window that runs backwards, which happens on the same
-/// slot as a settle and must not be an error path.
-pub fn rent_owed(curve: &PriceCurve, rate_bps: u16, last_touched: i64, now: i64) -> Result<u64> {
-    if now <= last_touched {
-        return Ok(0);
-    }
-    let price_seconds = curve.integral(last_touched, now);
-    let owed = price_seconds
-        .checked_mul(rate_bps as u128)
-        .ok_or(error!(EncError::MathOverflow))?
-        / (BPS * SECONDS_PER_EPOCH as u128);
-    narrow(owed)
 }
 
 // ── The faucet ──────────────────────────────────────────────────────────────
@@ -216,9 +157,11 @@ pub fn floor_amount(total_supply: u64, floor_bps: u16) -> Result<u64> {
 /// The floor governs the *faucet*, not the burn. Burning from the vault lowers
 /// the vault's share of supply, so a floor enforced by refusing to burn would
 /// break the peg — the burn must always happen. Instead the pot goes to zero
-/// below the floor and rent refills it. The story that falls out of the
-/// arithmetic: the Fed tightens, and your pocket money stops entirely until
-/// rent rebuilds the Emperor's coffers.
+/// below the floor and stays there until the vault refills, which it does two
+/// ways: M2 rises and the new supply mints into it, or a flag the Emperor
+/// still holds is won at auction and the bid lands in his pocket. The story
+/// that falls out of the arithmetic: the Fed tightens, and your pocket money
+/// stops entirely until the Emperor's coffers rebuild.
 pub fn faucet_pot(
     vault_balance: u64,
     total_supply: u64,
@@ -405,105 +348,6 @@ mod tests {
         assert_eq!(c.price_at(0), 0);
         assert_eq!(c.price_at(1_000), u64::MAX);
         assert_eq!(c.price_at(500), u64::MAX / 2);
-    }
-
-    // ── The integral behind rent ────────────────────────────────────────────
-
-    #[test]
-    fn integrates_a_flat_price_as_price_times_time() {
-        let c = PriceCurve::flat(100, 0);
-        assert_eq!(c.integral(0, 10), 1_000);
-        assert_eq!(c.integral(-10, 0), 1_000);
-    }
-
-    #[test]
-    fn integrates_a_ramp_as_its_mean() {
-        // 1000 → 2000 over 100 seconds: mean 1500, so 150_000 price-seconds.
-        assert_eq!(curve().integral(0, 100), 150_000);
-    }
-
-    #[test]
-    fn integrates_across_the_end_of_the_window() {
-        // The ramp (150_000) plus 100 seconds flat at 2_000.
-        assert_eq!(curve().integral(0, 200), 150_000 + 200_000);
-    }
-
-    #[test]
-    fn integrates_across_the_start_of_the_window() {
-        // 100 seconds flat at 1_000, then the ramp.
-        assert_eq!(curve().integral(-100, 100), 100_000 + 150_000);
-    }
-
-    #[test]
-    fn splitting_an_interval_gives_the_same_total() {
-        let c = curve();
-        let whole = c.integral(-50, 150);
-        let parts = c.integral(-50, 20) + c.integral(20, 80) + c.integral(80, 150);
-        assert_eq!(whole, parts, "rent must not depend on when it was settled");
-    }
-
-    #[test]
-    fn an_empty_or_backwards_interval_integrates_to_zero() {
-        assert_eq!(curve().integral(50, 50), 0);
-        assert_eq!(curve().integral(50, 10), 0);
-    }
-
-    // ── Rent ────────────────────────────────────────────────────────────────
-
-    #[test]
-    fn charges_the_daily_rate_on_a_flat_price() {
-        let c = PriceCurve::flat(1_000_000, 0);
-        // 5%/day of 1_000_000 for one day.
-        assert_eq!(rent_owed(&c, 500, 0, SECONDS_PER_EPOCH).unwrap(), 50_000);
-        // Half a day, half the rent.
-        assert_eq!(rent_owed(&c, 500, 0, SECONDS_PER_EPOCH / 2).unwrap(), 25_000);
-        // Ten days.
-        assert_eq!(rent_owed(&c, 500, 0, SECONDS_PER_EPOCH * 10).unwrap(), 500_000);
-    }
-
-    #[test]
-    fn charges_rent_against_the_moving_price_not_either_endpoint() {
-        let day = SECONDS_PER_EPOCH;
-        let c = PriceCurve { from: 1_000_000, to: 2_000_000, start: 0, end: day };
-        let owed = rent_owed(&c, 500, 0, day).unwrap();
-        // The mean price over the day is 1_500_000, so 5% of that.
-        assert_eq!(owed, 75_000);
-        // Strictly between charging at the old price and at the new one, which
-        // is the whole point of integrating rather than sampling.
-        assert!(owed > 50_000 && owed < 100_000);
-    }
-
-    #[test]
-    fn settling_repeatedly_costs_the_same_as_settling_once() {
-        let day = SECONDS_PER_EPOCH;
-        let c = PriceCurve { from: 1_000_000, to: 4_000_000, start: 0, end: 4 * day };
-        let once = rent_owed(&c, 500, 0, 4 * day).unwrap();
-        let piecemeal: u64 = (0..4)
-            .map(|d| rent_owed(&c, 500, d * day, (d + 1) * day).unwrap())
-            .sum();
-        // Equal up to the per-settle truncation, which can only favour the
-        // holder and only by a few base units.
-        assert!(once.abs_diff(piecemeal) <= 4, "once={once} piecemeal={piecemeal}");
-    }
-
-    #[test]
-    fn no_time_means_no_rent_and_is_not_an_error() {
-        let c = PriceCurve::flat(1_000_000, 0);
-        assert_eq!(rent_owed(&c, 500, 100, 100).unwrap(), 0);
-        assert_eq!(rent_owed(&c, 500, 100, 50).unwrap(), 0);
-    }
-
-    #[test]
-    fn a_zero_rate_or_a_free_asset_owes_nothing() {
-        assert_eq!(rent_owed(&PriceCurve::flat(1_000_000, 0), 0, 0, 10_000).unwrap(), 0);
-        assert_eq!(rent_owed(&PriceCurve::flat(0, 0), 500, 0, 10_000).unwrap(), 0);
-    }
-
-    #[test]
-    fn rent_on_an_absurd_price_errors_rather_than_wrapping() {
-        let c = PriceCurve::flat(u64::MAX, 0);
-        // A century at 100%/day against the largest representable price.
-        assert!(rent_owed(&c, 10_000, 0, SECONDS_PER_EPOCH * 36_500).is_err());
     }
 
     // ── The faucet ──────────────────────────────────────────────────────────

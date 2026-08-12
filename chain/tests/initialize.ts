@@ -90,7 +90,6 @@ describe('initialize + init_asset', () => {
     expect(config.k.toString()).to.equal(String(h.params.peg.k))
     expect(config.encDecimals).to.equal(6)
     expect(config.floorBps).to.equal(h.params.vault.floorBps)
-    expect(config.rentRatePerDayBps).to.equal(h.params.rent.ratePerDayBps)
     expect(config.faucetAlphaBps).to.equal(h.params.faucet.alphaBps)
     expect(config.maxChangeBps).to.equal(h.params.sanity.maxChangeBps)
     expect(config.mint.toBase58()).to.equal(h.mintPda.toBase58())
@@ -119,8 +118,6 @@ describe('initialize + init_asset', () => {
     const allowed = [
       'initialize', 'init_asset', 'initAsset',
       'sync_m2', 'syncM2',
-      'settle_rent', 'settleRent',
-      'foreclose',
       'set_mock_m2', 'setMockM2', // mock builds only; absent from a real one
     ]
     const unexpected = h.program.idl.instructions
@@ -130,6 +127,28 @@ describe('initialize + init_asset', () => {
       unexpected,
       `new instructions since this test was written — check none mutate Config: ${unexpected.join(', ')}`,
     ).to.be.empty
+  })
+
+  /**
+   * Ruling A (2026-08-12) removed every holding cost, and the removal has to be
+   * provable rather than merely untested. The allowlist above only catches
+   * instructions being *added*; this catches them coming back.
+   *
+   * It matters beyond tidiness: both instructions existed to move ENC out of a
+   * holder's wallet without their signature, which is the one power the design
+   * now claims it does not have. The claim is checkable, so check it.
+   */
+  it('has no rent or foreclosure instruction, and no rent parameters', () => {
+    const names = h.program.idl.instructions.map((i) => i.name)
+    for (const gone of ['settle_rent', 'settleRent', 'foreclose']) {
+      expect(names, `${gone} is back in the IDL`).to.not.include(gone)
+    }
+    // The parameters go too — a Config field with no instruction behind it is
+    // a rule the coin cannot enforce and a sentence the README would owe.
+    const fields = JSON.stringify(h.program.idl.accounts ?? []) + JSON.stringify(h.program.idl.types ?? [])
+    for (const gone of ['rentRatePerDayBps', 'rent_rate_per_day_bps', 'graceSeconds', 'grace_seconds', 'forecloseBounty', 'foreclose_bounty', 'rentAccrued', 'rent_accrued']) {
+      expect(fields, `${gone} is still in the published interface`).to.not.include(gone)
+    }
   })
 
   /** Only the upgrade authority may bootstrap, so nobody can front-run us. */

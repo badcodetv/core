@@ -76,27 +76,15 @@ pub enum EncError {
     #[msg("That asset already exists")]
     AssetAlreadyInitialized,
 
-    // ── Assets, rent, sales ─────────────────────────────────────────────────
-    /// Rent was owed against an asset the vault itself holds.
-    ///
-    /// The Emperor does not pay rent to the Emperor. Charging it would inflate
-    /// the vault out of thin air on paper while moving nothing.
-    #[msg("The vault holds this asset, so no rent is owed")]
-    VaultHoldsAsset,
-
+    // ── Assets ──────────────────────────────────────────────────────────────
     /// A token account was supplied that does not belong to the asset's holder,
     /// or is for the wrong mint.
     ///
-    /// Checked explicitly rather than by silent mismatch: rent is pulled from
-    /// whatever account is passed, so getting this wrong would charge the
+    /// Checked explicitly rather than by silent mismatch: the auction pays out
+    /// to whatever account is passed, so getting this wrong would pay the
     /// wrong person.
     #[msg("That token account does not belong to the holder")]
     WrongHolderAccount,
-
-    /// Foreclosure attempted while the holder could still pay, or before grace
-    /// had elapsed.
-    #[msg("This asset is not foreclosable yet")]
-    NotForeclosable,
 
     /// A price interpolation window that ends before it starts.
     #[msg("Invalid price interpolation window")]
