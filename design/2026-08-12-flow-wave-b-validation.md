@@ -50,9 +50,41 @@ selector in that panel is CSS + text on purpose.
 **Costs observed:** the gate for a Fast clip quoted **10 credits**, not the 20 recorded in
 `flow-video.md`. Treat every credit figure in that doc as unverified until re-checked.
 
-**Still to do:** the image `model`/`aspect` threading, `flow_create_project`, the
-`flow_list_media` → `flow_create_character_from_media` round-trip, and §4 animate-targeting on
-a cluttered project. Then one `/mcp` reconnect to confirm the tool wrapper end to end.
+### ⚠️ OPEN BUG — image aspect lands one generation late
+
+**Start here next session.** Measured 2026-08-12 with `smoke-image-opts.ts`, three calls in a
+row against the same client:
+
+| Asked for | Got |
+| --- | --- |
+| `aspect: '16:9'` | (landscape) |
+| `aspect: '9:16'` | **1.79 — landscape** |
+| no options at all | **0.56 — portrait** |
+
+The setting is not being ignored; it is arriving **one turn late**. The generation submits
+before the aspect change commits, so each call renders with the previous call's aspect. That
+makes it worse than a plain failure: a batch would produce plausible-looking frames at the
+wrong shape, and only the first would look obviously off.
+
+Likely a race between closing the config popover and `submitPrompt`. Do not "fix" it by
+sleeping — read back the trigger label (it concatenates model+aspect+count, e.g.
+`🍌 Nano Banana 2crop_16_91x`) and poll until it shows the requested aspect before submitting.
+`aspectAlreadySelected` already parses that label.
+
+**Also unmapped and worth knowing:** the compose-bar config popover carries a **per-turn video
+config** — Frames/Ingredients, aspect, model, **duration (4s/6s/8s/10s)** and count. This
+contradicts `flow-video.md`'s claim that aspect can only be set via the Settings panel's
+Video-generation-default tab, and duration was not known to be controllable at all.
+
+**Still to do:** the aspect race above, `flow_create_project`, the `flow_list_media` →
+`flow_create_character_from_media` round-trip, and §4 animate-targeting on a cluttered project.
+Then one `/mcp` reconnect to confirm the tool wrapper end to end.
+
+**Two clips are owed to us** in project `50894190-3b7b-4a36-95e2-cd28b1eb19a9`: a Veo Quality
+bench clip and a Veo Fast server-racks clip, both approved and queued but not delivered inside
+their timeouts. `smoke-watch-video.ts` / `smoke-harvest-video.ts` collect them without spending
+again — and the Fast one is the outstanding proof that animate targeting is fixed end to end
+(Flow already described its source back to us correctly as "the server racks").
 
 ## Where this stands (read first)
 
