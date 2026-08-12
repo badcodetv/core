@@ -94,6 +94,27 @@ describe('classifyCard', () => {
   })
 })
 
+describe('multiple cards joined from separate DOM nodes', () => {
+  // detectFailureCard() reads ALL matching messages and joins them before classifying,
+  // rather than taking the first hit. Flow's transcript accumulates (flow-video.md:61-62 —
+  // the queue message survives after the clip finishes), so the stale message is frequently
+  // the FIRST one in the DOM. These lock in that a stale queue line above a real block or
+  // error cannot mask it.
+  const QUEUED = 'Your video has been scheduled and is waiting in the queue due to high demand.'
+
+  it('sees a block that appears below a stale queue message', () => {
+    expect(classifyCard([QUEUED, 'This generation might violate our policies.'].join('\n'))).toBe('blocked')
+  })
+
+  it('sees an error that appears below a stale queue message', () => {
+    expect(classifyCard([QUEUED, 'Oops, something went wrong!'].join('\n'))).toBe('error')
+  })
+
+  it('still reads a lone queue message as benign', () => {
+    expect(classifyCard([QUEUED, QUEUED].join('\n'))).toBe('queued')
+  })
+})
+
 describe('ANY_CARD_RE', () => {
   it('matches every known card string, so the DOM probe scopes to real cards only', () => {
     expect(ANY_CARD_RE.test('This generation might violate our policies.')).toBe(true)

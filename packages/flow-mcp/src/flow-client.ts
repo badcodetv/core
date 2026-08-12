@@ -347,14 +347,20 @@ export class FlowClient {
    * Polled INSIDE every generation wait loop below — the whole point is aborting a policy
    * block in seconds rather than running out the 90s (or 8-minute video) clock, so this must
    * be a cheap, single-query probe cheap enough to call every tick, not a post-timeout check.
-   * `.first()` matters: a busy transcript can carry more than one matching message (see
-   * failure-card.ts's precedence notes), and classifyCard resolves the ambiguity from
-   * whichever text we hand it, so grabbing just the first hit is enough.
+   *
+   * Reads ALL matching messages and classifies them together, rather than the first hit.
+   * classifyCard's precedence resolves ambiguity WITHIN one string, so taking `.first()` would
+   * discard the other matches before precedence could ever apply — and Flow's transcript
+   * accumulates rather than replaces (flow-video.md:61-62: the queue message survives even
+   * after the clip finishes). A stale "waiting in the queue" sitting above a real block or
+   * error would then mask it, which is exactly the retry-forever failure this probe exists to
+   * prevent.
    */
   private async detectFailureCard(): Promise<CardState> {
-    const card = this.page.getByText(ANY_CARD_RE).first()
-    if (!(await card.count())) return null
-    return classifyCard(await card.textContent().catch(() => null))
+    const cards = this.page.getByText(ANY_CARD_RE)
+    if (!(await cards.count())) return null
+    const texts = await cards.allTextContents().catch(() => [] as string[])
+    return classifyCard(texts.join('\n'))
   }
 
   /** Snapshot the media UUIDs currently on the canvas, so a later turn can detect new ones. */
