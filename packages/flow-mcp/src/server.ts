@@ -209,6 +209,28 @@ server.registerTool(
 )
 
 server.registerTool(
+  'flow_list_media',
+  {
+    title: 'List project media',
+    description:
+      'List media in the open Flow project\'s asset picker (gallery): { title, kind, mediaId?, index }[]. This is how you obtain the exact mediaTitle that flow_create_character_from_media requires — that tool needs a title matching an existing gallery item\'s accessible name, and this is the only tool that can produce one (previously only recoverable from a DOM snapshot). Pass query to type into the picker\'s own search box first and narrow the scrape to matching tiles (e.g. a filename or a distinctive word from an auto-caption); pass limit to cap how many rows come back. title is recovered from Flow\'s own <img alt> where present, else derived from the picker\'s doubled accessible-name label. kind is classified from the trailing label ("Image", "Video", …). mediaId is present only when the tile\'s underlying src carries a getMediaUrlRedirect media id — treat it as optional. Titles are NOT deduplicated: the gallery legitimately holds several items sharing the same auto-caption (repeat generations, uploads named the same), so every tile is returned in gallery order with its own index; use mediaId to disambiguate exact duplicates when one is present.',
+    inputSchema: {
+      query: z.string().min(1).optional(),
+      limit: z.number().int().min(1).optional(),
+    },
+  },
+  async ({ query, limit }) => {
+    try {
+      return await withClient(async (c) =>
+        ok(await c.listMedia({ ...(query ? { query } : {}), ...(limit ? { limit } : {}) })),
+      )
+    } catch (err) {
+      return toToolError(err)
+    }
+  },
+)
+
+server.registerTool(
   'flow_create_character',
   {
     title: 'Create character',

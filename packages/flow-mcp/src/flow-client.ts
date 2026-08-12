@@ -8,6 +8,7 @@ import { batchOutPath } from './batch'
 import { candidateOutPath } from './candidates'
 import { escapeRegExp, isBoxCleared, modelAlreadySelected } from './compose'
 import { classifyCard, ANY_CARD_RE, type CardState } from './failure-card'
+import { parseMediaOptions, SCRAPE_MEDIA_OPTIONS, type RawMediaOption, type MediaListItem } from './media-list'
 
 const FLOW_URL = 'https://labs.google/fx/tools/flow'
 const DEFAULT_ENDPOINT = `http://localhost:${process.env.FLOW_CDP_PORT ?? '9222'}`
@@ -532,6 +533,36 @@ export class FlowClient {
       await dialog.waitFor({ state: 'hidden', timeout: 2_000 })
     } catch {
       await this.page.keyboard.press('Escape')
+    }
+  }
+
+  /**
+   * List media in the open project's asset picker: title, kind, and media id where
+   * derivable. This is the discovery step `flow_create_character_from_media` has no
+   * substitute for — its `mediaTitle` parameter must match a gallery item's accessible
+   * name exactly-ish, and until now the only way to read that name was a DOM snapshot.
+   * Pass `query` to type into the picker's own search box first (narrows the scrape to
+   * matching tiles); pass `limit` to cap the returned list — the scrape itself always reads
+   * whatever the picker currently renders.
+   */
+  async listMedia(opts?: { query?: string; limit?: number }): Promise<MediaListItem[]> {
+    await this.ensureProjectRoot()
+    const dialog = await this.openAssetPicker()
+    try {
+      if (opts?.query) {
+        const search = dialog.getByRole('textbox', { name: 'Search assets' })
+        await search.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+        await search.fill(opts.query)
+        // The grid re-filters asynchronously; give it a beat before scraping.
+        await this.page.waitForTimeout(POLL_MS)
+      }
+      const raw = (await this.page.evaluate(`(${SCRAPE_MEDIA_OPTIONS})()`)) as RawMediaOption[]
+      const items = parseMediaOptions(raw)
+      return opts?.limit ? items.slice(0, opts.limit) : items
+    } finally {
+      // Always close, including on a thrown error — leaving the picker open strands the
+      // next call the same way a failed createCharacter() strands the page on /characters.
+      await this.closeAssetPicker()
     }
   }
 
