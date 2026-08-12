@@ -71,8 +71,8 @@ this table is the map.
 | ✅ | T28 · `retire` — the coin notices its own end (ending ruled: **keep trading**) | program |
 | ✅ | T29 · proportional sync caps + the catch-up walk (2026-08-12 review) | program |
 | ⬜ | T31 · the Imperial Gazette — tenant copy + the editor's pen (**must land before T22**) | program |
-| ⬜ | **T14 · economic simulation harness** ← **you are here** | economics |
-| ⬜ | T15 · choose the genesis parameters | economics |
+| ✅ | T14 · economic simulation harness (+ `@badcode/enc`, the math mirror) | economics |
+| ⬜ | **T15 · choose the genesis parameters** ← **you are here** | economics |
 | ⬜ | T17 · stand the M2SL feed up on devnet | oracle |
 | ⬜ | T18 · Switchboard on-chain read + crank (**wall-clock stall: budget a day**) | oracle |
 | ⬜ | T19 · ENC page, read-only state | web |
@@ -1295,8 +1295,51 @@ upgrade authority is burned at T22.
 - **Validation:** `npm test --workspace @badcode/chain` (vitest; the sim is pure
   TypeScript, so it needs no container).
 - **Depends on:** T13
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 30 mirror tests in `@badcode/enc`, 15 simulation tests in
+  `chain/sim`, `./stack check` green repo-wide.
+  **The mirror is all `bigint`.** Every quantity in this program is a `u64` in
+  base units and `Number` silently rounds above 2^53, which the money supply
+  passed long ago (~2.2e16 base units today). A mirror that quietly rounded
+  would be worse than none, because the parameters that ship are chosen against
+  it. `math.test.ts` copies the Rust vectors verbatim, so the two languages fail
+  together — the same arrangement `pda.test.ts` already has for the seeds.
+  **The finding, and it looked exactly like the bug T29 had just fixed.** The
+  first historical run reported **133 deadlocked releases and one 8-step
+  catch-up walk**. Neither is real. The program writes `m2_release_date = 0` at
+  genesis, on the reasoning that any real Fed release is later than the unix
+  epoch — true of a coin deployed in 2026, and **false of a replay that starts
+  in 1959, because pre-1970 observations have negative timestamps.** So every
+  release from 1959-01 to 1969-12 failed the anti-double-mint guard (133 of
+  them), the peg sat frozen for eleven years, and the first release it *did*
+  accept was a +110% move it then had to walk in eight steps. A fact about the
+  harness, not the program: a historical run now says when the coin was
+  notionally deployed. Worth recording because a number that looks like a
+  deadlock is exactly the number this harness exists to detect, and it was
+  wrong the first time.
+  **What is modelled, and what is deliberately not.** The peg (including T29's
+  walk), the vault, supply, the ten price curves, and the faucet in full — pots,
+  snapshots, registration, grants, the floor. Not modelled: bidding, terms,
+  certificates, who wins what. Ruling A removed turnover as a goal, so asset
+  turnover is explicitly not a criterion. What *is* modelled is the money moving
+  when a purchase happens, because a purchase from the Emperor refills the vault
+  and that changes the faucet — the vault is not simply a leak.
+  **Deterministic on purpose:** nothing calls `Math.random`, and the M2 history
+  is a committed CSV rather than a fetch, so the sweep that picks the parameters
+  for a non-upgradeable program gives the same answer twice. The re-fetchable
+  version stays at `design/research/2026-08-12-enc-tokenomics/m2-backtest.mjs`
+  and the two must agree.
+  **The dead state is a first-class run**, not an afterthought: the whole record
+  with not one participant. It passes — the vault holds everything, the prices
+  go on repricing, and nothing breaks. That is the floor Ruling A set, and now
+  it is a test rather than an intention.
+  **Left for T15, since T14 judges nothing:** at the shipped genesis M2 the
+  placeholder price ladder makes the cheapest tenancy affordable after **two
+  epochs**, which is almost certainly too cheap for a thing whose scarcity is
+  the point. Note the ladder is *not* a T29-class time bomb even though it is an
+  absolute number — every sync rescales all ten by the same factor, so it tracks
+  M2 forever. What T15 is choosing is only where it starts, relative to the
+  genesis supply.
 
 ### T15: Choose the genesis parameters   [Status: pending | Model: opus]
 - **Scope:** Sweep parameters with the T14 harness and commit the chosen values
