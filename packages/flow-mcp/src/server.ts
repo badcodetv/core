@@ -322,7 +322,12 @@ server.registerTool(
       'not the cheapest and not the most expensive. Other recorded options: "Omni Flash", "Veo 3.1 Lite" (10 credits), ' +
       '"Veo 3.1 Quality" (100 credits — ask for this explicitly; it costs 5x Fast and 10x Lite), ' +
       '"Veo 3.1 Lite[Lower Priority]". aspect defaults to "16:9" (matches most comic pages); pass "9:16" for portrait. ' +
-      'count (1-4, default 1) sets how many candidate clips Flow generates in this turn. ' +
+      'count (1-4, default 1) sets how many candidate clips Flow generates in this turn — ALL of them are harvested, ' +
+      'the first at outPath and the set under `candidates` with -a/-b/-c/-d suffixes. Two candidates cost one turn\'s ' +
+      'WAIT (~110s) rather than two, so it is the cheapest way to buy a choice; it is not cheaper in credits. ' +
+      'character casts a Flow Character in the clip, the same names flow_list_characters returns. ⚠️ The mechanism is ' +
+      'proven but identity fidelity is not: for a character who must LOOK right, art-direct a still with the character ' +
+      'and animate that (startImage) — the still pins the likeness in a way a text mention does not. ' +
       'durationSeconds sets the CLIP LENGTH — 4, 6, 8 or 10. Omitting it leaves Flow on whatever the ' +
       'project last used, which is normally its 8s default; every clip made before this parameter existed ' +
       'was 8s by accident rather than by choice, so state a length deliberately. Shorter is cheaper on Omni ' +
@@ -340,10 +345,11 @@ server.registerTool(
       aspect: z.enum(['16:9', '9:16']).optional(),
       count: z.number().int().min(1).max(4).optional(),
       durationSeconds: z.union([z.literal(4), z.literal(6), z.literal(8), z.literal(10)]).optional(),
+      character: z.string().min(1).optional(),
       outPath: z.string().min(1),
     },
   },
-  async ({ startImage, endImage, motion, model, aspect, count, durationSeconds, outPath }) => {
+  async ({ startImage, endImage, motion, model, aspect, count, durationSeconds, character, outPath }) => {
     try {
       return await withClient(async (c) =>
         ok(
@@ -356,6 +362,7 @@ server.registerTool(
             ...(aspect ? { aspect } : {}),
             ...(count ? { count } : {}),
             ...(durationSeconds ? { durationSeconds } : {}),
+            ...(character ? { character } : {}),
           }),
         ),
       )

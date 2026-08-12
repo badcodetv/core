@@ -531,6 +531,21 @@ a start-only Animate call normally when re-tested. So the fallback was proven by
 4.000s clip, opening on the still that was passed in. A test that just runs in a busy project
 and passes proves nothing about the fallback.
 
+### After the review (2026-08-12, prompted by "would this be fast in a new thread?")
+
+An adversarial pass over the *iterate on images and videos together* workflow found four real
+faults that L1–L4 had not touched. All fixed and live-proven:
+
+| | What was wrong | Now |
+| --- | --- | --- |
+| **Asset picker** | Unreachable in video mode (`add_2 Create` does not exist there) — 90s timeouts on `flow_list_media`, character creation and every reference attach after any clip | `@` fallback, which works in every mode |
+| **Media listing** | Showed only what the current mode can USE: zero clips in video mode | `listMedia` asserts image mode first |
+| **`count`** | A lie: the tab was never clicked and the harvest took the first clip only | Popover tab + asserted + all candidates harvested |
+| **Characters** | Assumed impossible in video; the two helpers that would have proved otherwise both hung on stale waits | `flow_generate_video({ character })`, mechanism proven |
+
+The one thing that did NOT change: for a character who must look right, animate an art-directed
+still. A text mention does not pin a likeness.
+
 ### Explicitly NOT on this list
 
 Batch video (ruling 2), audio and voice (ruling 3), and a second video tool name (ruling 1).

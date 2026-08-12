@@ -460,6 +460,46 @@ down to almost nothing by the end."` — new media id, 6.000s, 1280x720, in 104s
 first frame is the **original source still**, unmistakably, and the last frame has pulled back
 with the light gone. Neither the still nor its path was supplied to the call.
 
+## Candidates and casting (both fixed 2026-08-12)
+
+### `count` was a lie, and now is not
+
+`count: 2` on a video used to produce **one** clip and leave the trigger reading `x1`. Two
+separate faults, either of which alone would have hidden the other:
+
+1. **The Settings panel's video count is a default, not the turn's.** The governing control is
+   the compose popover's `x1…x4` tabs — the same popover that hides the duration, for the same
+   reason. `ensureVideoDuration` now clicks both in one visit and asserts both on the collapsed
+   label, so a request for 2 that lands on 1 throws instead of billing.
+2. **The harvest returned on the first new clip.** Siblings were generated, billed, and left in
+   the project. `finishVideoTurn` now collects them all: first at `outPath`, the set under
+   `candidates`, `-a`/`-b`/… suffixes, `partial: true` if fewer arrive than were asked for.
+
+**Live proof:** `count: 2` → `count-a.mp4` and `count-b.mp4`, distinct md5s, both 4.000s
+1280x720, from **one turn in 111s**. That is the real win — two candidates for one turn's *wait*.
+It is not cheaper in credits.
+
+### A Character can be cast in a video turn
+
+The assumption was that characters reached video only as character → still → animate. Wrong: the
+picker's Characters tab is present in video mode, the chip lands inline in the prompt box, and
+the turn generates. `flow_generate_video` now takes `character`.
+
+⚠️ **What is proven is the mechanism, not identity fidelity.** The test character was founded on
+a picture of an empty corridor, so there was no face to keep — and two runs produced two
+different people. For a character who must LOOK right, art-direct a still and animate that: the
+still pins the likeness in a way a text mention does not.
+
+Two bugs found on the way, both of the same family (a hard wait on a control that had already
+gone, or had not arrived yet):
+
+- **`createCharacterFromMedia` raced the Characters view.** It checked `Add from Project`
+  visibility instantly after clicking the sidebar and, on a slow render, fell into the
+  already-has-characters branch and waited 90s for a tile that does not exist on an empty
+  project — i.e. it failed on the exact first-use case. Now waits for *either* control.
+- **`addCharacterToPrompt` hard-waited on "Add to Prompt".** Clicking the tile attaches and
+  closes the picker by itself, so that wait always ran out its 90s. Now conditional.
+
 ## ⚠️ Video mode poisons the asset picker (found 2026-08-12)
 
 Every video call leaves the compose bar in **Video mode**, and that state is persistent — it

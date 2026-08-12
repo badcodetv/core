@@ -128,6 +128,23 @@ export function videoDurationAlreadySelected(label: string | null, seconds: numb
 }
 
 /**
+ * Read the OUTPUT COUNT back out of the same trigger label ("Video · 4scrop_16_9x2" -> 2).
+ *
+ * The count is the last segment, which matters: `crop_16_9` ends in a digit and `crop_9_16x1`
+ * contains an `x` nowhere near the count, so this anchors on the end of the string rather than
+ * hunting for an "x" — the mistake that would read the aspect as the count.
+ */
+export function parseVideoCount(label: string | null): number | null {
+  const m = /x([1-4])\s*$/.exec((label ?? '').trim())
+  return m ? Number(m[1]) : null
+}
+
+/** True when the trigger label already shows exactly `count` candidate outputs. */
+export function videoCountAlreadySelected(label: string | null, count: number): boolean {
+  return parseVideoCount(label) === count
+}
+
+/**
  * Map an aspect ratio like "16:9" to the Material-icon ligature Flow's compose-bar CONFIG
  * TRIGGER renders for it.
  *

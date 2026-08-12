@@ -18,7 +18,7 @@ import {
 } from './batch'
 export type { BatchItem, BatchFailure, BatchResult } from './batch'
 import { candidateOutPath } from './candidates'
-import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, canonicalVideoModel, aspectAlreadySelected, videoDurationAlreadySelected } from './compose'
+import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, canonicalVideoModel, aspectAlreadySelected, videoDurationAlreadySelected, videoCountAlreadySelected } from './compose'
 import { existsSync, readFileSync } from 'node:fs'
 import { jpegSize } from './jpeg-size'
 import { dumpLines } from './page-dump'
@@ -58,6 +58,12 @@ const DEFAULT_VIDEO_MODEL = process.env.FLOW_VIDEO_MODEL ?? 'Veo 3.1 - Fast'
 const DEFAULT_VIDEO_DURATION = 8
 const VIDEO_TIMEOUT_MS = 8 * 60_000
 /**
+ * How long to keep waiting for a multi-output turn's SIBLING clips after the first one lands.
+ * They arrive within seconds of each other; without this bound, a turn that produces fewer clips
+ * than requested would burn the whole eight-minute timeout before returning the ones it got.
+ */
+const VIDEO_SIBLING_GRACE_MS = 90_000
+/**
  * Ceiling for a clip Flow has explicitly told us is QUEUED. Observed live 2026-08-12: a Veo
  * Quality clip sat in the "high demand" queue past the 8-minute timeout and was reported as a
  * TIMEOUT despite being healthy and already paid for. The queue is Google's, not ours, so the
@@ -79,7 +85,13 @@ export interface MediaResult { path: string; mediaId: string }
  * the path the request implied — today that means Animate degraded in a busy project and Frames
  * carried it. Absent = the expected path ran.
  */
-export interface VideoResult extends MediaResult { via?: 'frames-fallback' }
+export interface VideoResult extends MediaResult {
+  via?: 'frames-fallback'
+  /** Every clip the turn produced, when `count` asked for more than one. */
+  candidates?: MediaResult[]
+  /** Set when fewer clips arrived than were asked for — the ones that did are still valid. */
+  partial?: boolean
+}
 export interface CharacterRef { name: string }
 export interface FlowStatus { loggedIn: boolean; projectOpen: boolean; url: string }
 /**
@@ -88,6 +100,8 @@ export interface FlowStatus { loggedIn: boolean; projectOpen: boolean; url: stri
  */
 export interface VideoRequest {
   motion: string
+  /** Cast a Flow Character in the turn — its chip goes inline in the prompt, as for images. */
+  character?: string
   outPath: string
   startImage?: string
   endImage?: string
@@ -1142,9 +1156,13 @@ export class FlowClient {
     const tile = dialog.getByText(name, { exact: true }).first()
     await tile.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     await this.forceClick(tile)
+    // Clicking the tile ATTACHES and closes the picker by itself — so a hard wait on
+    // "Add to Prompt" sits out its full 90s against a dialog that has already gone. Exactly the
+    // trap `createCharacterFromMedia` was fixed for; this call site kept the old shape and only
+    // showed up once a character was cast on a VIDEO turn (2026-08-12). Click the button if it
+    // is genuinely still there — the multi-select layout does keep it — otherwise carry on.
     const addToPrompt = this.page.getByRole('button', { name: /add to prompt/i }).first()
-    await addToPrompt.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
-    await this.forceClick(addToPrompt)
+    if (await addToPrompt.isVisible().catch(() => false)) await this.forceClick(addToPrompt)
     await this.closeAssetPicker()
   }
 
@@ -1333,9 +1351,26 @@ export class FlowClient {
     // drops straight into that editor, which is why the original blind sequence appeared to work
     // — it was only ever exercised with zero characters. As soon as one exists, the grid shows
     // and the button is not on the page. Click the tile only when the button isn't already there.
+    // ⚠️ RACE, not just a branch. `isVisible()` answers instantly, and the Characters view takes
+    // a second or two to render — so an immediate check on a project that WILL land in the
+    // editor returns false, drops into the grid branch, and then spends the full 90s waiting for
+    // a "New Character" tile that only exists when the project already has characters. Hit live
+    // 2026-08-12 on the exact first-use case (zero characters), where the view was showing
+    // "Add from Project" the whole time. Wait for EITHER control before deciding which state
+    // this is.
     const addFromProject = this.page.getByRole('button', { name: /add\s*Add from Project/i }).first()
-    if (!(await addFromProject.isVisible().catch(() => false))) {
-      const newCharacter = this.page.getByText('New Character', { exact: true }).first()
+    const newCharacter = this.page.getByText('New Character', { exact: true }).first()
+    const settled = Date.now() + TURN_TIMEOUT_MS
+    let inEditor = false
+    while (Date.now() < settled) {
+      if (await addFromProject.isVisible().catch(() => false)) {
+        inEditor = true
+        break
+      }
+      if (await newCharacter.isVisible().catch(() => false)) break
+      await this.page.waitForTimeout(POLL_MS)
+    }
+    if (!inEditor) {
       await newCharacter.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
       await this.forceClick(newCharacter)
     }
@@ -1463,7 +1498,7 @@ export class FlowClient {
    * whose current state doesn't already match the target — so a loop of same-settings
    * generateVideo() calls stays cheap — and only hits Save if something actually changed.
    */
-  private async ensureVideoSettings(opts?: { model?: string; aspect?: VideoAspect; count?: number }): Promise<void> {
+  private async ensureVideoSettings(opts?: { model?: string; aspect?: VideoAspect; count?: number; character?: string }): Promise<void> {
     // Accept "Veo 3.1 Fast" and click "Veo 3.1 - Fast": the menu's exact labels are the click
     // targets, but nothing else in the codebase (or in a caller's head) writes them that way.
     const model = canonicalVideoModel(opts?.model ?? DEFAULT_VIDEO_MODEL)
@@ -1597,7 +1632,7 @@ export class FlowClient {
    * machinery could in principle collapse into it one day. Noted, not attempted here — the
    * Settings path is the one with live proof behind it.)
    */
-  private async ensureVideoDuration(seconds: number, model: string): Promise<void> {
+  private async ensureVideoDuration(seconds: number, model: string, count = 1): Promise<void> {
     await this.ensureComposeVisible()
     const crop = this.page.getByRole('button', { name: /crop_/ }).first()
     // ⚠️ The Animate menuitem leaves the bar in AGENT mode, which has NO config popover at all
@@ -1612,9 +1647,13 @@ export class FlowClient {
       if (await agent.count()) await this.forceClick(agent)
     }
     await crop.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
-    // Short-circuit on the collapsed label ("Video · 8scrop_9_16x1"), so a run of same-length
-    // clips never opens the popover.
-    if (videoDurationAlreadySelected(await crop.textContent(), seconds)) return
+    // Short-circuit on the collapsed label ("Video · 8scrop_9_16x1"), so a run of same-length,
+    // same-count clips never opens the popover. Both must match: the count lives in the SAME
+    // popover, and asserting only the duration is how `count` came to be silently ignored for
+    // months — a count:2 request generated one clip and left the trigger reading x1
+    // (measured 2026-08-12). The Settings panel's video count is a default, not the turn's.
+    const collapsed = await crop.textContent()
+    if (videoDurationAlreadySelected(collapsed, seconds) && videoCountAlreadySelected(collapsed, count)) return
 
     const durationTab = this.page
       .locator('button[role="tab"]')
@@ -1640,8 +1679,22 @@ export class FlowClient {
       throw new Error(`VIDEO_DURATION_UNAVAILABLE: no ${seconds}s tab on ${model}`)
     }
     await this.tabClick(durationTab)
+    // Same popover, same visit: the count tabs (x1–x4) sit below the duration row. Mapped live
+    // 2026-08-12 (smoke-count-popover.ts) — clicking x2 moves the trigger to "…x2", which the
+    // Settings-panel count never did.
+    const countTab = this.page
+      .locator('button[role="tab"]')
+      .filter({ hasText: new RegExp(`^x${count}$`) })
+      .first()
+    try {
+      await countTab.waitFor({ state: 'visible', timeout: 10_000 })
+    } catch {
+      await this.page.keyboard.press('Escape').catch(() => {})
+      throw new Error(`VIDEO_COUNT_UNAVAILABLE: no x${count} tab in the video popover`)
+    }
+    if ((await countTab.getAttribute('aria-selected')) !== 'true') await this.tabClick(countTab)
     await this.page.keyboard.press('Escape')
-    await this.assertVideoDuration(crop, seconds)
+    await this.assertVideoTurn(crop, seconds, count)
   }
 
   /**
@@ -1652,15 +1705,18 @@ export class FlowClient {
    * not produce an error, it produces a perfectly healthy 8s clip that has already been paid
    * for. A silent no-op on a tab whose name drifted is precisely how `1x` billed for months.
    */
-  private async assertVideoDuration(crop: Locator, seconds: number): Promise<void> {
+  private async assertVideoTurn(crop: Locator, seconds: number, count: number): Promise<void> {
     const deadline = Date.now() + 5_000
     let label = ''
     while (Date.now() < deadline) {
       label = ((await crop.textContent()) ?? '').trim()
-      if (videoDurationAlreadySelected(label, seconds)) return
+      if (videoDurationAlreadySelected(label, seconds) && videoCountAlreadySelected(label, count)) return
       await this.page.waitForTimeout(150)
     }
-    throw new Error(`VIDEO_DURATION_NOT_APPLIED: wanted ${seconds}s, trigger shows "${label}"`)
+    // One code for both, because both fail the same way and for the same reason: a control that
+    // was clicked but did not take returns a healthy-looking clip of the wrong length or a
+    // single clip you asked two of. Aborting here costs nothing; not aborting costs credits.
+    throw new Error(`VIDEO_DURATION_NOT_APPLIED: wanted ${seconds}s x${count}, trigger shows "${label}"`)
   }
 
   /**
@@ -1774,7 +1830,7 @@ export class FlowClient {
     startImage: string
     duration: number
     videoModel: string
-    opts?: { model?: string; aspect?: VideoAspect; count?: number }
+    opts?: { model?: string; aspect?: VideoAspect; count?: number; character?: string }
   }): Promise<MediaResult> {
     const { motion, outPath, startImage: imagePath, duration, videoModel, opts } = args
     await this.ensureProject()
@@ -1802,20 +1858,18 @@ export class FlowClient {
     await this.openAnimateMenu(tileIndex)
     await this.assertAnimateSource(targetName, beforeChips)
     // 3b. Clip length, now that Animate has put the bar in Video mode (see ensureVideoDuration).
-    await this.ensureVideoDuration(duration, videoModel)
+    await this.ensureVideoDuration(duration, videoModel, opts?.count ?? 1)
     // 4. Motion prompt + submit (capture the pre-submit media set to detect the new clip).
     // This path scrapes media names directly rather than via snapshotMediaNames(), so it must
     // mark the failure-card baseline itself — otherwise an old blocked card in the project
     // would abort this clip before it ever started.
     await this.markTurnStart()
     const before = new Set(await this.scrapeMediaNames())
-    await this.submitPrompt(motion)
+    await this.submitVideoPrompt(motion, opts?.character)
     // 5. Approve the credit gate if Flow posts one (Veo Quality = 100 credits).
     await this.approveCreditGateIfPresent()
     // 6. Poll for the new video media and harvest.
-    const name = await this.waitForVideoClip(before, VIDEO_TIMEOUT_MS)
-    await harvestToFile(this.page.request, name, outPath)
-    return { path: outPath, mediaId: name }
+    return await this.finishVideoTurn(before, outPath, opts?.count ?? 1)
   }
 
   /**
@@ -1832,7 +1886,7 @@ export class FlowClient {
     endImage?: string
     duration: number
     videoModel: string
-    opts?: { model?: string; aspect?: VideoAspect; count?: number }
+    opts?: { model?: string; aspect?: VideoAspect; count?: number; character?: string }
   }): Promise<MediaResult> {
     const { motion, outPath, startImage, endImage, duration, videoModel, opts } = args
     await this.ensureProject()
@@ -1846,17 +1900,15 @@ export class FlowClient {
     await this.reloadProject()
     await this.ensureVideoSettings(opts)
     await this.ensureFramesMode()
-    await this.ensureVideoDuration(duration, videoModel)
+    await this.ensureVideoDuration(duration, videoModel, opts?.count ?? 1)
     if (startImage) await this.fillFrameSlot('Start', startImage)
     if (endImage) await this.fillFrameSlot('End', endImage)
     await this.assertFrameSlots(Boolean(startImage), Boolean(endImage))
     await this.markTurnStart()
     const before = await this.stableMediaNames()
-    await this.submitPrompt(motion)
+    await this.submitVideoPrompt(motion, opts?.character)
     await this.approveCreditGateIfPresent()
-    const name = await this.waitForVideoClip(before, VIDEO_TIMEOUT_MS)
-    await harvestToFile(this.page.request, name, outPath)
-    return { path: outPath, mediaId: name }
+    return await this.finishVideoTurn(before, outPath, opts?.count ?? 1)
   }
 
   /**
@@ -2281,6 +2333,84 @@ export class FlowClient {
    *     there reports TIMEOUT for a generation that is healthy, already paid for, and simply
    *     waiting its turn — and the caller has no way to collect it afterwards.
    */
+  /**
+   * Collect every clip the turn produced and write them to disk.
+   *
+   * `count > 1` used to be a lie twice over: the tab was never clicked (see ensureVideoDuration)
+   * and the harvest returned on the FIRST new clip, so any siblings were generated, billed, and
+   * abandoned in the project. Multi-output now works the way images already did — first result
+   * at `outPath` when there is one, `-a`/`-b`/… suffixes when there are several, and the full
+   * set under `candidates`.
+   */
+  /**
+   * Submit a video turn, optionally with a Flow **Character** cast in it.
+   *
+   * No video tool took a `character` until 2026-08-12, and the assumption was that the only
+   * route was character → still → animate that still. Proven wrong live: the picker's Characters
+   * tab is present in video mode, the chip lands inline in the prompt box exactly as it does for
+   * images, and the turn generates. It reuses `submitWithCharacter` unchanged — the chip is
+   * inline in the contenteditable, so the prompt text must be APPENDED, never filled over it.
+   *
+   * ⚠️ What is proven is the mechanism, not identity fidelity: the test character was founded on
+   * a picture of an empty corridor, so there was no face to keep. For a real cast, image→video
+   * from an art-directed still is still the stronger route — the still pins the likeness.
+   */
+  private async submitVideoPrompt(motion: string, character?: string): Promise<void> {
+    if (character) await this.submitWithCharacter(character, motion)
+    else await this.submitPrompt(motion)
+  }
+
+  private async finishVideoTurn(before: Set<string>, outPath: string, count: number): Promise<VideoResult> {
+    const names = await this.waitForVideoClips(before, count, VIDEO_TIMEOUT_MS)
+    const candidates: MediaResult[] = []
+    for (const [i, name] of names.entries()) {
+      const path = candidateOutPath(outPath, i, names.length)
+      await harvestToFile(this.page.request, name, path)
+      candidates.push({ path, mediaId: name })
+    }
+    const first = candidates[0]!
+    // `partial` rather than an error: clips that DID arrive are paid for, and throwing away two
+    // of three because the third never landed is the one outcome nobody wants.
+    return {
+      ...first,
+      ...(count > 1 ? { candidates } : {}),
+      ...(names.length < count ? { partial: true } : {}),
+    }
+  }
+
+  /**
+   * Wait for `expected` new clips, or as many as arrive before the clock runs out.
+   *
+   * The grace window mirrors `waitForNewCanvases`: once the first clip lands, its siblings are
+   * seconds behind, so waiting the full video timeout for a second one that is never coming
+   * would cost eight minutes on every single-output turn that somehow set count high.
+   */
+  private async waitForVideoClips(before: Set<string>, expected: number, timeoutMs: number): Promise<string[]> {
+    if (expected <= 1) return [await this.waitForVideoClip(before, timeoutMs)]
+    const found: string[] = []
+    const seen = new Set(before)
+    let deadline = Date.now() + timeoutMs
+    let graceDeadline = Number.POSITIVE_INFINITY
+    while (Date.now() < deadline && Date.now() < graceDeadline) {
+      const card = await this.detectFailureCard()
+      if (card === 'blocked') throw new Error('POLICY_BLOCKED')
+      if (card === 'error') await this.approveCreditGateIfPresent(5_000)
+      if (card === 'queued') deadline = Math.min(Date.now() + timeoutMs, deadline + timeoutMs)
+      for (const n of await this.scrapeMediaNames()) {
+        if (seen.has(n)) continue
+        const ct = await contentTypeOf(this.page.request, n)
+        if (!ct.startsWith('video/')) continue
+        seen.add(n)
+        found.push(n)
+        if (graceDeadline === Number.POSITIVE_INFINITY) graceDeadline = Date.now() + VIDEO_SIBLING_GRACE_MS
+      }
+      if (found.length >= expected) return found
+      await this.page.waitForTimeout(VIDEO_POLL_MS)
+    }
+    if (!found.length) throw new Error(await this.timeoutError(timeoutMs))
+    return found
+  }
+
   private async waitForVideoClip(before: Set<string>, timeoutMs: number): Promise<string> {
     let deadline = Date.now() + timeoutMs
     const hardDeadline = Date.now() + VIDEO_QUEUED_TIMEOUT_MS

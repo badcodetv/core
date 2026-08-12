@@ -1,5 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import {
+  parseVideoCount,
+  videoCountAlreadySelected,
   isBoxCleared,
   modelAlreadySelected,
   videoModelAlreadySelected,
@@ -220,5 +222,31 @@ describe('video clip duration', () => {
     // Conservative on purpose: a model Flow adds tomorrow gets the safe limit, and asking for
     // 10s on it fails loudly rather than silently returning an 8s clip.
     expect(maxDurationForModel('Veo 4')).toBe(8)
+  })
+})
+
+describe('parseVideoCount', () => {
+  it('reads the count off the end of the trigger label', () => {
+    expect(parseVideoCount('Video · 4scrop_16_9x2')).toBe(2)
+    expect(parseVideoCount('Video · 8scrop_9_16x1')).toBe(1)
+    expect(parseVideoCount('Video · 10scrop_16_9x4')).toBe(4)
+  })
+
+  it('is not fooled by the aspect ligature, which also holds digits and an x', () => {
+    // "crop_9_16x1" contains an x that is NOT the count separator, and "crop_16_9" ends in a
+    // digit — a loose /x(\d)/ or a trailing-digit read gets both of these wrong.
+    expect(parseVideoCount('Video · 6scrop_9_16x3')).toBe(3)
+    expect(parseVideoCount('Video · 6scrop_16_9')).toBe(null)
+  })
+
+  it('returns null on a label that carries no count', () => {
+    expect(parseVideoCount(null)).toBe(null)
+    expect(parseVideoCount('🍌 Nano Banana Procrop_16_9')).toBe(null)
+  })
+
+  it('videoCountAlreadySelected compares numerically', () => {
+    expect(videoCountAlreadySelected('Video · 4scrop_16_9x2', 2)).toBe(true)
+    expect(videoCountAlreadySelected('Video · 4scrop_16_9x2', 1)).toBe(false)
+    expect(videoCountAlreadySelected(null, 1)).toBe(false)
   })
 })
