@@ -10,7 +10,14 @@
  */
 export interface RawCharacterRow {
   href?: string
+  /** The card's `<img alt>` — present only once the character has a generated portrait. */
   alt?: string
+  /**
+   * The visible caption, which lives in the anchor's PARENT, not inside the anchor (the
+   * anchor's own text is nothing but material-symbols icon ligatures — "accessibility_new",
+   * "faceaccessibility_new"). Recovered by subtracting the anchor's text from its parent's.
+   */
+  label?: string
 }
 
 export interface CharacterListItem {
@@ -25,7 +32,13 @@ export interface CharacterListItem {
  */
 export const SCRAPE_CHARACTERS = `() => [...document.querySelectorAll('a[href*="/character/"]')].map(a => {
   const img = a.querySelector('img[alt]')
-  return { href: a.getAttribute('href') || '', alt: img ? (img.getAttribute('alt') || '') : '' }
+  const own = (a.textContent || '')
+  const parent = a.parentElement ? (a.parentElement.textContent || '') : ''
+  return {
+    href: a.getAttribute('href') || '',
+    alt: img ? (img.getAttribute('alt') || '') : '',
+    label: parent.replace(own, '').trim(),
+  }
 })`
 
 /**
@@ -33,19 +46,26 @@ export const SCRAPE_CHARACTERS = `() => [...document.querySelectorAll('a[href*="
  * `/character/<id>` segment. Pure — no page access — so every rule here is unit-tested rather
  * than verified by hand against a live project root.
  *
- * A row missing either half is dropped rather than guessed at: no href means no id is
- * recoverable at all, and no alt means the row isn't a character card in the first place (it's
- * what `openCharacterPage`'s `:has(img[alt="<name>"])` locator already assumes — a card with no
- * alt simply never matches a name lookup, so it shouldn't surface here either).
+ * The NAME is taken from the visible caption first and the `<img alt>` only as a fallback.
+ * Requiring the alt (as this did originally) silently hid every character without a generated
+ * portrait: live 2026-08-12 a project showing three characters returned one, because the two
+ * un-portraited cards render an avatar placeholder rather than an `<img>`. Those are exactly
+ * the characters a caller most needs to discover — a half-made character is the one you were
+ * about to go and finish.
+ *
+ * Only `href` is genuinely required: without it there is no id, and an id is the sole
+ * unambiguous handle (Flow lets several characters share the name "Untitled Character", so a
+ * name is not a key). A row with an id but no recoverable name is still returned, named '',
+ * rather than dropped — its id remains usable.
  */
 export function parseCharacters(raw: RawCharacterRow[]): CharacterListItem[] {
   const out: CharacterListItem[] = []
   for (const r of raw) {
     const href = r.href?.trim()
-    const name = r.alt?.trim()
-    if (!href || !name) continue
+    if (!href) continue
     const m = href.match(/\/character\/([0-9a-f-]+)/i)
     if (!m) continue
+    const name = r.label?.trim() || r.alt?.trim() || ''
     out.push({ name, id: m[1]! })
   }
   return out

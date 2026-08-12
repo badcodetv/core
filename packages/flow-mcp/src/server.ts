@@ -160,8 +160,9 @@ server.registerTool(
       '(read from the resulting /project/<id> URL), but name is BEST-EFFORT: naming a Flow project via its title ' +
       'textbox is documented as un-automatable (a fill and a keystroke attempt both revert on blur), so this tool ' +
       'attempts the rename you asked for, then reads back and returns whatever the project is ACTUALLY called — ' +
-      'which may still be "Untitled Project" or similar. Callers MUST use the returned name, never assume the ' +
-      'requested one stuck. Ends with the new project open, ready for a generation call.',
+      'which is normally a creation timestamp such as "Aug 12, 09:07 AM" (confirmed live). An empty name means the ' +
+      'read-back failed and the real name is unknown; it is never a guess. Callers MUST use the returned name, and ' +
+      'the returned id in preference to it. Ends with the new project open, ready for a generation call.',
     inputSchema: { name: z.string().min(1).optional() },
   },
   async ({ name }) => {

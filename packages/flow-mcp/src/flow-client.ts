@@ -223,9 +223,12 @@ export class FlowClient {
    *      evidenced mechanism openProject/pickProject already rely on).
    *   2. ⚠️ GUESSED fallback: whatever attemptRenameProject's guessed title-textbox locator
    *      currently holds, if it matched anything.
-   *   3. The literal string "Untitled Project" — Flow's character editor is confirmed to
-   *      default a fresh resource's name to "Untitled Character" (flow-selectors.md:195); this
-   *      assumes projects follow the same convention, unverified.
+   *   3. The empty string, meaning "unknown" — deliberately NOT a guessed default. Flow does
+   *      not name new projects "Untitled Project" (the earlier guess here, extrapolated from
+   *      "Untitled Character"): confirmed live 2026-08-12, a fresh project is named after its
+   *      creation time, e.g. "Aug 12, 09:07 AM". Since that string is unpredictable, inventing
+   *      one would hand callers a name that does not match any tile — worse than admitting we
+   *      could not read it, because it looks authoritative.
    */
   private async readProjectName(id: string): Promise<string> {
     try {
@@ -245,9 +248,9 @@ export class FlowClient {
       const value = await title.inputValue({ timeout: 2_000 })
       if (value) return value
     } catch {
-      // fall through to the literal default
+      // fall through: report "unknown" rather than invent a name
     }
-    return 'Untitled Project'
+    return ''
   }
 
   /**
@@ -845,6 +848,19 @@ export class FlowClient {
     await this.ensureProjectRoot()
     const dialog = await this.openAssetPicker()
     try {
+      // openAssetPicker only waits for the picker's CHROME (its Upload button), which mounts
+      // before the media grid has populated — so its return is not proof there is anything to
+      // scrape. Without this wait the scrape races the grid and returns [] on a project full
+      // of media, which is the worst possible failure: indistinguishable from an empty
+      // gallery, and silent. Observed live 2026-08-12, intermittently.
+      //
+      // A genuinely empty project has no option to wait for, so this must expire rather than
+      // throw — losing the timeout there is the correct answer, not an error.
+      await this.page
+        .locator('[role="option"]')
+        .first()
+        .waitFor({ state: 'attached', timeout: 10_000 })
+        .catch(() => {})
       if (opts?.query) {
         const search = dialog.getByRole('textbox', { name: 'Search assets' })
         await search.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
