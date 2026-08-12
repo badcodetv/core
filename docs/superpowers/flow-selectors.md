@@ -274,6 +274,37 @@ is slow" experience — every hand-driven or locator-driven click paid them.
   (`flow_edit_image` needs no specific project — the uploaded reference anchors it).
 - **Project rename via the title textbox could not be automated** (fill and keystrokes
   both revert on blur) — name projects at creation time, in the UI, by hand.
+  **Confirmed 2026-08-12 to apply to Characters too**: a Character renamed in the editor
+  reads back as `Untitled Character` afterwards.
+- **A new project is named for its creation time** — e.g. `Aug 12, 09:07 AM`, confirmed
+  live 2026-08-12. It is *not* "Untitled Project"; nothing should assume that literal.
+
+### Asset-picker tiles and character cards (mapped live 2026-08-12)
+
+Both were previously written from inference and both were wrong. The real shapes:
+
+- **Picker tiles are `[role="option"]`, and the accessible name is `<title><Kind>`
+  concatenated with NO separator** — `"Man in suit holding papersImage"`,
+  `"Untitled CharacterCharacter"`. There is no doubling. Parse by stripping a **known kind
+  suffix** (`Image` / `Video` / `Character` / `Audio`); splitting on the last space puts
+  `"papersImage"` in `kind`.
+- **Some tiles prefix a material-symbols ligature** with no separator either —
+  `"personUntitled CharacterCharacter"` — because the icon renders as ordinary text. Strip
+  a known ligature only when it butts directly against a capital, so a real title starting
+  `"person walking…"` survives.
+- **`<img alt>` is the clean title** where a tile has one (free of both suffix and
+  ligature). Prefer it; parse the accessible name only as a fallback.
+- **The picker's chrome mounts before its grid populates.** Waiting for the "Upload media"
+  button is *not* enough — scrape too early and you get `[]` on a full gallery. Wait for
+  the first `[role="option"]` to attach, tolerating expiry so an empty project still works.
+- **Character cards are `a[href*="/character/"]`, but the NAME is not inside the anchor.**
+  The anchor's own text is only icon ligatures (`accessibility_new`,
+  `faceaccessibility_new`); the visible caption lives in the anchor's **parent**, recovered
+  as `parent.textContent` minus `anchor.textContent`.
+- **A character with no generated portrait has no `<img>` at all** (placeholder avatar), so
+  any selector requiring `img[alt]` silently hides it — that cost us 2 of 3 characters.
+- **Character names are NOT unique and NOT a key.** Three Characters in one project can all
+  be `Untitled Character`. Use the id from the href; treat name lookups as best-effort.
 
 ## Still to spike (before a full unattended comic run)
 
