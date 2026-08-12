@@ -53,6 +53,27 @@ Child, Celebrity, PII, Toxic, Vulgar, Dangerous, Prohibited. The **taxonomy** is
 trustworthy; the specific code digits circulating in third-party tables are not verified
 against any Google-published list.
 
+### A3b. Naming a real person is not a uniform trigger (tested 2026-08-12)
+
+Two deliberate probes, same tool, same project, minutes apart:
+
+| Prompt | Result |
+| --- | --- |
+| photorealistic portrait of **Winston Churchill** at a desk, 1942 | **generated**, 29s |
+| photorealistic portrait of **Taylor Swift** at a desk | **blocked**, 19s |
+
+So the **Celebrity** category is doing the work, and it lands hardest on **living public
+figures**. A long-dead historical figure may well pass.
+
+**This does not soften the guardrail** — keep real names out of every field. Two reasons the
+success is worth less than it looks: what passes today is a moving target, and the block we
+actually lost a morning to was fired by a **Character Name**, where a refusal poisons every
+generation that casts it rather than just one prompt. Treat "it went through" as luck, not
+permission.
+
+Practical upshot for **testing** our own tooling: a living celebrity is the reliable trigger.
+A historical name is not, and will silently produce a real image and a real credit spend.
+
 ## A4. The debugging procedure
 
 1. **Turn off "Enhance Prompt" first.** Flow's auto-rewrite injects descriptive language

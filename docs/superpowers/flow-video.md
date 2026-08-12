@@ -14,8 +14,11 @@
      pick **Veo 3.1 - Quality** (options: Omni Flash, Veo 3.1 Lite / Fast / Quality /
      Lite[Lower Priority]).
    - **Aspect**: `tab "crop_16_9 16:9"` (default) — matches the Karen comic page. Other:
-     `9:16`. **This is how you pin aspect** — there is no per-prompt aspect control; it's the
-     Video-generation-default tab. Count tabs `1x|x2|x3|x4` → **1x** for a single clip.
+     `9:16`. Count tabs are `x1|x2|x3|x4` → **x1** for a single clip (this line said `1x`;
+     see the corrections below).
+   - ⚠️ **"There is no per-prompt aspect control" — this was wrong.** The compose bar's own
+     config popover carries a per-turn aspect, model, count **and clip duration**. See
+     "The compose-bar config popover" below.
    - **Confirm before generating** is its own setting: `Always` (default) makes the agent ask
      before spending credits — a useful gate; `Never` is full-auto. **Save**.
    - ⚠️ **These defaults RESET per project** — a fresh project comes up as `Omni Flash`, so
@@ -127,6 +130,107 @@ just a `<video>` source instead of an `<img>`.**
 `browser_snapshot` refs (`e123`) go stale between snapshots — locate by ARIA role + accessible
 name, not ref.
 
+## Corrections from live automation (2026-08-12)
+
+The table above was written from a hand-driven session and several rows are wrong in ways that
+made `ensureVideoSettings` a no-op or a 90-second hang. What the panel actually does:
+
+- **⚠️ `getByRole` does not work anywhere inside the Agent settings panel.**
+  `page.getByRole('tab')` counts **0** page-wide while `button[role="tab"]` counts **15** — the
+  open panel sits under an `aria-hidden` ancestor, so it is absent from the accessibility tree
+  Playwright queries. Use **CSS + text** for everything in this panel. `getByText` still works
+  (different engine). This is the single most surprising fact here.
+- **The Settings button lives in the Agent panel, which is closed by default.** On a project
+  root there is no `tune Settings` button at all until the compose bar's `button "Agent"` is
+  clicked. The panel is **sticky across navigation**, so code must handle three states: closed,
+  open on the chat view, and already on the settings view.
+- **Two sections share tab names.** "Image generation default" (16:9 / 4:3 / 1:1 / 3:4 / 9:16,
+  x1–x4, Nano Banana) sits ABOVE "Video generation default" (16:9 / 9:16, x1–x4, Omni Flash).
+  Any `.first()` lands on the image one. Scope via the heading's immediate parent —
+  `getByText('Video generation default', {exact:true}).locator('xpath=..')` is exactly the
+  video section and excludes the image one.
+- **Count tabs are `x1`…`x4`.** The row above says `1x` for a single output; it is `x1`.
+- **Model names carry a ` - ` separator**: `Omni Flash`, `Veo 3.1 - Lite`, `Veo 3.1 - Fast`,
+  `Veo 3.1 - Quality`, `Veo 3.1 - Lite [Lower Priority]`. Note the **space** before
+  `[Lower Priority]`, and that `Veo 3.1 - Lite` is a strict prefix of it — match names for
+  equality, not containment.
+- **Menu options are `button[role="menuitem"]` with the label in a nested `<span>`**, so the
+  button's own text is not the bare name; match the label text exactly and walk up to the
+  ancestor button.
+- **The model trigger renders glued together**: `"Omni Flasharrow_drop_down"`, no space.
+- **The trigger TOGGLES** — clicking it when the menu is already open closes it. Check whether
+  the option is visible before clicking.
+- **The settings panel REPLACES the prompt box.** Leaving it open makes the next submit fail
+  with "element is not visible" on a textbox that exists but is off-screen. Saving does not
+  close it; click the panel's own `arrow_back Back` (not the top-left `arrow_back Go Back`,
+  which leaves the project).
+- **A fresh project defaults to Omni Flash for video** — confirmed, as the original note said.
+- **The credit gate's options are plain `<div>`s** — no `<button>`, no `role`. Both
+  `getByRole('button')` and a CSS `button` filter find nothing, and the generation then sits
+  on an unanswered gate until it times out. Match the text; `Approve` must be matched
+  **exactly**, or you hit "Approve, do not ask again" and disable credit confirmation for the
+  whole project.
+
+### The compose-bar config popover — a SECOND, per-turn config (mapped 2026-08-12)
+
+Everything above describes the Agent **Settings panel**, and the TL;DR's claim that it is the
+only place aspect can be set is **wrong**. The compose bar's own config trigger — the glued
+label to the left of the submit arrow, e.g. `🍌 Nano Banana Procrop_16_9x1` — opens a
+`DropdownMenuContent` popover carrying a full per-turn config for **both** media types.
+Unlike the Settings panel, `getByRole` works normally in here.
+
+It leads with two mode tabs, `imageImage` and `videocamVideo`, and the rest of the popover
+swaps with the mode:
+
+| | Image mode | Video mode |
+| --- | --- | --- |
+| Source | — | `crop_freeFrames` \| `chrome_extensionIngredients` |
+| Aspect | `crop_16_9`\|`crop_landscape`\|`crop_square`\|`crop_portrait`\|`crop_9_16` | `crop_9_16` \| `crop_16_9` only |
+| Model | `🍌 Nano Banana Proarrow_drop_down` | `Omni Flasharrow_drop_down` |
+| **Duration** | — | **`4s` \| `6s` \| `8s` \| `10s`** |
+| Count | `x1` `x2` `x3` `x4` | `x1` `x2` `x3` `x4` |
+
+Every one is a `button[role="tab"]` (the two model rows are plain buttons) carrying
+`aria-selected` and `data-state="active"`, so current state is readable without opening
+anything — the trigger's own label concatenates model + aspect + count.
+
+Two things this changes:
+
+- **Clip duration is controllable**, and was not known to be at all. `animate-slide` has been
+  taking Flow's 8s default by accident. There is no duration control in the Settings panel.
+- **Aspect is settable per turn**, so "set it once per session" is a workaround, not a
+  constraint. `ensureImageMode` already drives this popover for images; the video half is
+  still driven through the Settings panel.
+
+**Aspect tab ligatures are NOT uniformly derivable.** The wide/tall pair spell the numbers out
+(`crop_16_9`, `crop_9_16`); the other three use descriptive Material Symbols names
+(`crop_landscape` = 4:3, `crop_portrait` = 3:4, **`crop_square` = 1:1**). `crop_1_1` does not
+exist — a derived-by-rule guess for 1:1 matches nothing.
+
+**Count tabs are `x1`…`x4` here too**, the same transposition the Settings panel had. Getting
+this wrong is expensive and silent: a click-if-present guard on a name that matches nothing
+leaves the count at whatever it was, so a "one image" request generates two, bills for two,
+and the second candidate lands *after* the next turn's media snapshot — which then harvests it
+as if it were that turn's output, at the previous turn's aspect. That is the whole of the
+"image aspect lands one generation late" bug. Read the config back off the trigger label before
+submitting; do not trust a click.
+
+### ⚠️ Animating the wrong still — the failure that looks like success
+
+A tile's `more_vert` **must** be scoped to that tile's own card: the nearest ancestor `div`
+containing a `more_vert`, which is the tile img's grandparent and holds exactly one image and
+one control. Do **not** use `:near(img[alt="Generated image"])` — `:near()` matches a control
+near *any* tile, so `.first()` opens the menu on whichever tile comes first in the DOM.
+
+This is worth its own heading because of how it fails: you get a **real clip, a real media id,
+and a real file on disk — of the wrong picture**. There is no error, no warning, and nothing
+downstream can detect it. It survived our own video smoke test, which checked the file size
+and declared success; it was caught only by extracting a frame and looking at it.
+
+Two defences now: the scoped selector, and a post-attach check that the reference chip's media
+id matches the targeted tile (`ANIMATE_WRONG_SOURCE`, thrown *before* credits are spent).
+**When testing anything in this flow, look at a frame — file size proves nothing.**
+
 **Progress screenshots go in `.flow-screenshots/`.** `browser_take_screenshot` writes its
 `filename` relative to the repo root, so always prefix it — e.g.
 `filename: ".flow-screenshots/gen-progress.png"` — to keep these scratch captures out of the
@@ -163,20 +267,29 @@ remaining rough edge:
   `(${SCRAPE})()` — evaluating the bare function string returns the function, not the array.
 - **Credit gate**: `approveCreditGateIfPresent` clicks `Approve` if Flow posts the confirmation;
   a genuine failure re-posts it (`Oops, something went wrong`) and the poll re-approves to retry.
-- ⚠️ **Open rough edge — the uploaded-still → Animate attach.** Media tiles only reveal their
-  `more_vert` **on hover**, and a media-rich project shows many `img[alt="Generated image"]`
-  tiles (including the video poster, whose menu has no Animate) in a grid. `openAnimateMenu` now
-  hovers each tile and accepts the first menu exposing Animate, but this **best-effort targeting
-  has not been re-validated clean** on a cluttered project (it timed out on re-runs once the
-  project filled with test media). Robust targeting of *the just-uploaded* still (vs. picking any
-  animatable tile) is the remaining work. In real use the `animate-slide` skill drives this path
-  on a freshly-generated single slide.
+- **The uploaded-still → Animate attach now targets the specific tile, not "any animatable
+  tile"** (closed 2026-08-12, A7). The old `openAnimateMenu` hovered every `img[alt="Generated
+  image"]` tile in the grid and accepted the first menu exposing Animate — the exact fragility
+  this note used to flag: it timed out on re-runs once the project filled with test media, and
+  had no guarantee the first Animate-capable tile was the one just uploaded. `generateVideo` now
+  snapshots the tile list (`scrapeAnimateTiles`) BEFORE the upload and again after, and
+  `chooseAnimateTarget` (`animate-target.ts`) diffs the two to find the ONE new media name; if
+  that's ambiguous but the project holds exactly one tile total, it falls back to that sole tile
+  (still safe — there's no other candidate it could be). Any other ambiguity fails closed
+  (`ANIMATE_NOT_FOUND`) rather than guessing — a wrong pick here means silently animating a
+  different still with no visible sign anything went wrong. `openAnimateMenu` then hovers that
+  ONE identified tile (via a synthetic `pointerover`/`mouseover` dispatch, not coordinate-based
+  `.hover()` — see `hoverElement` in `flow-client.ts`) instead of scanning. In real use the
+  `animate-slide` skill drives this path on a freshly-generated single slide, which is also why
+  the sole-tile fallback matters: that's the common case this bug is fixed for.
 
 ## Still to watch (over a longer batch)
 
 1. **Queue latency** under "high demand" for Veo Quality — minutes. Fast/Lite models queue
    less; trade quality for latency on bulk runs.
-2. **Aspect** is a global default, not per-prompt — set it once per session before generating.
+2. ~~**Aspect** is a global default, not per-prompt~~ — **false**, corrected 2026-08-12: the
+   compose-bar popover sets aspect (and duration, and count) per turn. Setting it once per
+   session still works; it is a convenience, not a limitation.
 3. **Rate limits / credit burn** (100 credits per Quality clip).
 4. **Manifest path trap** (downstream of the harvest, in the skill): `npm run --workspace
    @badcode/cli -- assets-build -m <relative>` writes the manifest relative to `packages/cli/`.

@@ -12,7 +12,7 @@ if (!ref) throw new Error('pass a reference image path, e.g. .playwright-mcp/ref
 
 const c = await FlowClient.connect()
 try {
-  await c.openProject('camping-v2')
+  await c.openProject({ name: 'camping-v2' })
   const char = await c.createCharacter('SmokeChar', [ref])
   console.log('character:', char)
   const dir = await mkdtemp(join(tmpdir(), 'flow-charuse-'))

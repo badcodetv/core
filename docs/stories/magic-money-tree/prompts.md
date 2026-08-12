@@ -29,14 +29,22 @@ There is no prompt in this file for anyone else real, and there must never be on
 as a likeness target is Flow block trigger #2. Describe build, era dress and
 bearing; keep him distant or three-quarter-back wherever the shot allows.
 
-**The Flow Character is named "Economist", not "Keynes" — and that is the whole
-reason it works.** Learned the hard way 2026-08-12: the **Character Name field
-itself feeds Flow's policy scanner**, not just the prompt box. A Character named
-"Keynes" had every generation refused ("This generation might violate our
-policies") even though the prompt text named nobody; renaming it to "Economist"
-and retrying the identical prompt succeeded immediately. So the guardrail above
-extends to **every field Flow can read** — Character Name, Character Info, and
-the prompt. Cast him as `@Economist`.
+**The Flow Character must not be named "Keynes" — and that is the whole reason it
+works.** Learned the hard way 2026-08-12: the **Character Name field itself feeds
+Flow's policy scanner**, not just the prompt box. A Character named "Keynes" had
+every generation refused ("This generation might violate our policies") even
+though the prompt text named nobody; clearing that name and retrying the
+identical prompt succeeded immediately. So the guardrail above extends to **every
+field Flow can read** — Character Name, Character Info, and the prompt.
+
+**In Flow it is actually called `Untitled Character`, not `Economist`.** Verified
+against the live project 2026-08-12: the rename never stuck. That matches the
+un-automatable rename already documented for projects — the field reverts on blur
+— and it applies to Characters too. Worse, the project holds **three** Characters
+all called `Untitled Character`, so **the name is not a usable handle**: address
+this one by its **id**, `40387729-cccf-4c29-bc97-f8e193e249d6`. `@Economist`
+below is our own shorthand for the cast slot in this document, and is
+deliberately never typed into Flow.
 
 **The tree is never mystical.** No glow, no face, no eyes in the bark, no
 anthropomorphism of any kind. Canon: it grew from a £1 note planted in August
@@ -109,7 +117,7 @@ Period interior photography, higher contrast and colder grade, closer framing, l
 
 | Tag | Character file | Sheet | Flow Character id | Status |
 | --- | --- | --- | --- | --- |
-| @Economist | characters/keynes.md | — | "Economist" · `40387729-cccf-4c29-bc97-f8e193e249d6` | **cast** 2026-08-12 — Portrait + native Create Body, Nano Banana Pro. Portrait media `9887ff7d-1d23-4394-b275-f3cfa0b9b455`, Body media `905c89ba-22c8-410c-accf-51c65f3569eb`. Cast in Flow as **"Economist"** — see §0; the name field is policy-scanned. |
+| @Economist | characters/keynes.md | — | **id `40387729-cccf-4c29-bc97-f8e193e249d6`** (Flow name: `Untitled Character`) | **cast** 2026-08-12 — Portrait + native Create Body, Nano Banana Pro. Portrait media `9887ff7d-1d23-4394-b275-f3cfa0b9b455`, Body media `905c89ba-22c8-410c-accf-51c65f3569eb`. **Address it by id** — the project holds three Characters sharing the name `Untitled Character`, and Flow renames do not stick. See §0; the name field is also policy-scanned. |
 | @TheTree | characters/the-tree.md | — | — | no-character-by-design — **consistency via golden reference**, not a Character |
 
 **The economist must be cast.** He appears at four ages across eighty years — 1942 at
