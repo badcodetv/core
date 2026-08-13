@@ -186,10 +186,10 @@ the loop does not close and the piece is a shop window.
 | Parameter | Value | The sentence it buys |
 | --- | --- | --- |
 | `vault.floorBps` | 5000 | **The Emperor keeps half of all the money, forever.** Only the other half can ever circulate. |
-| `faucet.alphaBps` | 1000 | The genesis hoard goes out over about **two months**; after that the faucet pays out roughly what the Fed printed, and not one token more. |
+| `faucet.alphaBps` | 1000 | The genesis hoard goes out over about **two months**; after that the faucet hands out **half of everything the Fed prints, and the Emperor keeps the other half**. |
 | `faucet.epochSeconds` | 86400 | Register today, collect tomorrow. |
 | `faucet.welcomeGrant` | 1000 ENC | At the peg that is **exactly one million dollars** of the money supply, and it buys you nothing. |
-| `faucet.grantsPerEpoch` | 100 | Caps aggregate grants at roughly 2.5% of a day's pot. |
+| `faucet.grantsPerEpoch` | 100 | Caps aggregate grants at roughly 5% of a day's pot in the steady state. |
 | `sanity.maxChangeBps` | 1000 | Clears the largest month in 67 years (+6.42%, April 2020) with room. |
 | `tenancy.termSeconds` | 2592000 | A month — the price-travel window, and a front page sold monthly. |
 | `retirement.silenceSeconds` | 31536000 | A year of nobody mentioning money. |
@@ -203,19 +203,48 @@ that the top 5% of households held 40% of QE's financial-asset gains — because
 it needs a paragraph to land, and a number that needs explaining is a worse
 number.
 
-**The ladder has a ceiling law, and it is the scarcity the piece is about.** In
-the steady state the faucet distributes what the Fed printed, split among
-whoever registered, and a slot costs a fixed fraction of supply. So `C`
-claimants all claiming every epoch each accumulate, in the limit, a `1/C` share
-of everything ever printed — and can afford a slot costing up to `1/C` of the
-supply, and never more. The cheapest column at 100 ppm therefore supports about
-**ten thousand** diligent claimants; the masthead at 10,000 ppm supports about
-**a hundred**. Stated, that is the caption. Unstated, it is a nasty surprise.
+**The faucet is a half pass-through, and that is where the ceiling law comes
+from.** Once the genesis hoard is gone the faucet does *not* hand out what the
+Fed printed. It hands out half of it. The reason is the floor: the floor is half
+of a supply that is itself growing, so every time the Fed prints, the Emperor has
+to keep half of the new money simply to stay level with his own floor, and only
+the other half is ever above it to be paid out. Written down, with `f` the floor
+as a share of supply, `α` the fraction of the surplus paid per epoch and `g` the
+per-epoch supply growth: the surplus settles at `g(1−f)/(g+α)` of supply, so the
+pot settles at
+
+```
+pot / newly minted  =  α(1−f) / (g+α)   →   1 − f   as g gets small
+```
+
+At `f = ½` that is **one half**, and `g` is small enough here to make it exact to
+three figures: **0.4991** at the historical median month (+0.522%), **0.4992** at
+the trailing-20-year CAGR (+6.28%/yr). The simulation measures **0.497** across
+years ten to fifty of a fifty-year run — years one and two are excluded because
+the genesis hoard is still going out and drags the whole-run figure to 0.52. So
+the honest sentence is the better one:
+**the Emperor keeps half of everything printed and hands out half.**
+
+**The ceiling law falls straight out of it, and it is the scarcity the piece is
+about.** A slot costs a fixed fraction of supply, and `C` claimants who all claim
+every epoch split the pot `C` ways forever. So each accumulates, in the limit, a
+`1/2C` share of everything ever printed — and can afford a slot costing up to
+**`1/2C`** of the supply, and never more. Turned around: a column priced at a
+fraction `p` of the money supply is reachable by at most `1/2p` claimants. The
+cheapest column at 100 ppm therefore supports about **five thousand** diligent
+claimants; the masthead at 10,000 ppm supports about **fifty**. Stated, that is
+the caption. Unstated, it is a nasty surprise.
+
+It is a hard edge rather than a trend, and the harness finds it where the
+arithmetic puts it: a cohort of 4,000 all claiming every epoch reaches the
+cheapest column after 309 months, and a cohort of 4,990 never does — it stalls at
+97.8% of the price and stays there, because the price is running away at exactly
+the rate the money is arriving.
 
 The published sentence, measured against a cohort arriving *after* the genesis
 hoard is gone: *anyone patient can afford a small ad — in about four months, if
 a hundred other people are being just as patient. The more of you there are, the
-longer it takes, and past ten thousand it never happens at all.*
+longer it takes, and past five thousand it never happens at all.*
 
 ## 5. Who can change the rules
 
@@ -410,7 +439,15 @@ Held to the standard in
 [the architecture decision, §4](../../design/2026-08-12-enc-architecture-decision.md):
 
 - Never **"guaranteed to rise."** Say *it tracks M2, whatever M2 does* — which
-  makes the 2022–23 burn a feature rather than an embarrassment.
+  makes the 2022–23 burn a feature rather than an embarrassment. **This escaped
+  once and it is worth naming where:** the Gazette masthead on the live page
+  read *"priced in a currency that only goes up"* until 2026-08-13. The
+  forbidden claim will not arrive labelled as one; it arrives as a strapline
+  somebody wrote in a hurry because it scanned well.
+- Never **"the faucet pays out what the Fed printed."** It pays out **half** of
+  it — the floor is half of a growing supply, so the vault retains half of every
+  release just to stay level with itself. The true version is the better joke
+  and it is also the one that survives someone checking.
 - Never **"the Fed prints money and hands it to Wall Street."** That conflates
   QE, bank lending and fiscal transfers, and 2020–21 was transfer-heavy. Say
   *when the money supply expands, asset owners benefit disproportionately and
@@ -422,6 +459,10 @@ Held to the standard in
 - Never **"paid the new, higher price."** The auction pays the current price,
   whatever M2 says it is.
 - Never **"no admin key"** unqualified. One key exists. Say both halves.
+- Never **"nobody can change that, including us"** while the upgrade authority
+  is alive. Non-upgradeability is a property of the shipped binary, and until
+  T22 burns the authority the honest form names the gap: *that is what ships,
+  and it has not shipped.*
 - Never **"ENC cannot be traded."** We seed nothing and sell nothing; anyone
   else may pool a plain SPL token.
 - Do not call it a **Harberger tax**. Self-assessment was removed, and that was
@@ -446,7 +487,7 @@ otherwise a claim about a thing that does not exist.
 
 | | State |
 | --- | --- |
-| The Rust program | **Complete.** 15 instructions, 39 Rust unit tests, seven Anchor suites. Verified 2026-08-13: 39 unit tests pass; `test-gazette` 16 passing; `test-faucet` 10 passing. |
+| The Rust program | **Complete.** 15 instructions in a default build (17 with the two mock ones compiled in), **42 unit tests**, eight Anchor suites of 92 cases. Counted and re-run 2026-08-13: `cargo test -p emperors-new-coin --lib` reports 43 passing, the forty-third being Anchor's own generated `test_id`. `retire` is one of the eight and runs alone, because passing it ends the ledger. |
 | The oracle, mock | **Works.** `--features mock` compiles a `MockOracle` and `set_mock_m2`. This is what localnet runs and what every green test uses. |
 | The oracle, real | **Not built.** `oracle::read_quote`'s non-mock body returns `OracleUnavailable` unconditionally, and the crate has no Switchboard dependency at all. **A default build cannot sync.** That is T18. |
 | The M2 feed | Authored, and its hash-immutability property proven live. The **release-date** extraction it needs does not exist yet — the committed job pulls the value only — and `retire` is only correct once that date is Fed-sourced. |

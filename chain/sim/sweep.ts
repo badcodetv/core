@@ -93,8 +93,8 @@ function trial(params: SimParams, claimants: number, years = 50): Row {
  * Chosen on legibility, which is the only thing Ruling A permits a parameter to
  * be chosen on. It gives an exact sentence — *the cheapest column costs one
  * basis point of all the money there is* — and, through the ceiling law in leg
- * 3, an exact second one: **ten thousand diligent claimants can each eventually
- * afford it, and the ten thousand and first cannot.**
+ * 3, an exact second one: **five thousand diligent claimants can each eventually
+ * afford it, and the five thousand and first cannot.**
  */
 const CHOSEN_CHEAPEST_BPS = 1
 
@@ -102,7 +102,7 @@ const CHOSEN_CHEAPEST_BPS = 1
  * How much dearer the masthead is than the classified: **a hundred times.**
  *
  * Which puts the dearest slot at 1% of the money supply, so a lone claimant can
- * reach it and a hundred competing for it cannot. Ratios freeze at genesis —
+ * reach it and fifty competing for it cannot. Ratios freeze at genesis —
  * every sync rescales all ten by the same factor — so the masthead is always
  * the masthead.
  */
@@ -156,21 +156,33 @@ function main() {
   // ── Leg 3: the ceiling, which turned out to be exact ────────────────────
   //
   // The sweep above shows a slot going from "two epochs" to "never" as the
-  // crowd grows, and the boundary is not fuzzy. In the steady state the faucet
-  // pays out what the Fed printed and nothing more, split among whoever
-  // registered; the slot price is a fixed fraction of supply and rises with it.
-  // So C diligent claimants each accumulate, in the limit, a 1/C share of
-  // everything ever printed — and can therefore afford a slot costing up to
-  // **1/C of the total supply, and never more.**
+  // crowd grows, and the boundary is not fuzzy.
+  //
+  // **Corrected 2026-08-13: this prediction was out by a factor of two.** It
+  // read the steady state as the faucet paying out everything the Fed printed.
+  // It pays out HALF: the floor is half of a supply that is itself growing, so
+  // the vault must retain half of every release just to stay level with its own
+  // floor, and only the other half is ever above the floor to be paid from. The
+  // 50 bps row below is what gives it away — the old formula predicted 200 could
+  // get in and the harness had already measured that 200 never do.
+  //
+  // So: the slot price is a fixed fraction of supply, C diligent claimants split
+  // each pot C ways, and each therefore accumulates in the limit a **1/2C share
+  // of everything ever printed** — affording a slot costing up to **1/2C of the
+  // total supply, and never more.** Inverted, which is how it is published: a
+  // slot priced at a fraction p of supply is reachable by at most 1/2p people.
   //
   // That is a hard arithmetic ceiling on how many people can ever hold a
   // column, and it is the honest replacement for the rent-era "Invariant M".
   // Stated, it is the scarcity the piece is about. Unstated, it is a surprise.
-  console.log('\n## The ceiling: a slot costing 1/C of supply is exactly out of reach for C claimants\n')
+  console.log('\n## The ceiling: a slot costing 1/2C of supply is exactly out of reach for C claimants\n')
   console.log('slot as bps of supply   predicted max crowd   200 claiming   500 claiming   2000 claiming')
   for (const cheapestBps of [10, 25, 50]) {
     const ppm = ladderPpm(cheapestBps, 100)
-    const predicted = Math.floor(10_000 / cheapestBps)
+    // 1/2p, with p in basis points. The crowds that beat it in the cells to the
+    // right are living off the genesis hoard, not off the steady state; leg 3b
+    // is the measurement with the hoard gone.
+    const predicted = Math.floor(5_000 / cheapestBps)
     const cells = [200, 500, 2_000].map((claimants) => {
       const r = trial({ ...base, genesisPricePpm: ppm }, claimants, 80)
       rows.push({ ...r, cheapestBps })
@@ -191,7 +203,7 @@ function main() {
   console.log('\n## The steady state: a claimant who arrives after the hoard is gone\n')
   console.log('crowd      wait for the cheapest column (100 ppm)')
   const LATE = 400
-  for (const claimants of [10, 100, 1_000, 5_000]) {
+  for (const claimants of [10, 100, 1_000, 4_000, 5_000]) {
     const r = run('late', {
       params: { ...base, genesisPricePpm: ladderPpm(CHOSEN_CHEAPEST_BPS, CHOSEN_SPREAD) },
       observations: project(genesis, 60),
@@ -226,7 +238,8 @@ function main() {
       `  slot ${i}  ${String(chosenPpm[i]).padStart(6)} ppm  ` +
         `= ${(chosenPpm[i] / 100).toFixed(2).padStart(6)} bps  ` +
         `= ${(Number(price) / 1e6).toLocaleString('en-US', { maximumFractionDigits: 0 }).padStart(15)} ENC at genesis  ` +
-        `max crowd ${Math.floor(1_000_000 / chosenPpm[i]).toLocaleString('en-US')}`,
+        // 1/2p, not 1/p — half of every release never leaves the vault.
+        `max crowd ${Math.floor(500_000 / chosenPpm[i]).toLocaleString('en-US')}`,
     )
   })
   console.log(`\n  genesisPricePpm: ${JSON.stringify(chosenPpm)}`)

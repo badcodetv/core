@@ -16,6 +16,20 @@ import './enc.css'
  */
 const CLUSTER: Cluster = 'localnet'
 
+/**
+ * Whether the deployed program's upgrade authority has actually been burned.
+ *
+ * The header claims no key can change the peg. That is a property of the
+ * *shipped binary*, and this is not it: nothing is deployed, and T22 deploys
+ * upgradeable first and burns the authority afterwards as a separate human act.
+ * Until then an upgrade could rewrite any of it, so the page says so instead of
+ * asserting a burn that has not happened.
+ *
+ * **Flip this in the same commit that burns the authority, and not one commit
+ * earlier.** Deploying to devnet is not enough on its own.
+ */
+const AUTHORITY_BURNED = false
+
 function BackToIndex() {
   const navigate = useNavigate()
   return (
@@ -96,10 +110,23 @@ export function EncPage() {
         <header className="enc-header">
           <ClusterBadge className="enc-cluster" />
           <h1>Emperor&rsquo;s New Coin</h1>
+          {/* The trust statement is two parts and neither survives alone —
+              there IS one key on this chain now (the editor's pen, T31), so
+              "nobody here can change that, including us" cannot be served
+              unqualified. No key over the money; one pen over the words. */}
           <p className="enc-strap">
-            The first currency honest about what it is. When the Fed prints, we print. Nobody
-            here can change that, including us.
+            The first currency honest about what it is. When the Fed prints, we print. There is no
+            key over the money — not ours, not anyone&rsquo;s. There is one editorial pen over the
+            words, and all it can do is strike a column: it appears in no instruction that moves a
+            token.
           </p>
+          {AUTHORITY_BURNED ? null : (
+            <p className="enc-hint">
+              That describes the program as it ships: non-upgradeable, with the upgrade authority
+              burned. It is not deployed yet and the authority is not burned yet, so today you are
+              reading a design and not a fact. Come back when there is an address.
+            </p>
+          )}
         </header>
 
         <div className="enc-wallet">

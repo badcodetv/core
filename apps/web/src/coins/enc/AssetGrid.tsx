@@ -59,6 +59,21 @@ function Redacted() {
   )
 }
 
+/**
+ * Where this price is in its thirty-day walk to the new supply.
+ *
+ * Read off the endpoints rather than assumed: this said "still climbing" for
+ * every unarrived price until 2026-08-13, which is the forbidden claim wearing
+ * a status label — M2 fell in 6.1% of the months in the record, and a burn
+ * walks the reserve *down* over exactly the same window.
+ */
+function travelling(view: AssetView): string {
+  if (view.arrived) return 'arrived'
+  if (view.priceTo > view.priceFrom) return 'still climbing'
+  if (view.priceTo < view.priceFrom) return 'still falling'
+  return 'not moving'
+}
+
 function Column({
   view,
   supply,
@@ -83,8 +98,7 @@ function Column({
         {formatEnc(view.price, { fractionDigits: 2, padFraction: true })} <span>ENC</span>
       </p>
       <p className="gz-price-note">
-        {formatShare(view.price, supply)} of all the money there is
-        {view.arrived ? ' · arrived' : ' · still climbing'}
+        {formatShare(view.price, supply)} of all the money there is · {travelling(view)}
       </p>
 
       <div className="gz-body">
@@ -179,7 +193,14 @@ export function AssetGrid({
   return (
     <section className="enc-gazette" aria-label="The Imperial Gazette">
       <header className="gz-masthead">
-        <p className="gz-rule">Ten columns · sold by the month · priced in a currency that only goes up</p>
+        {/* Never "a currency that only goes up", which is what this line used
+            to say: it is the one claim the design pre-commits to never making
+            (§4 of the architecture decision), M2 fell in 6.1% of months in the
+            record, and the page below already explains that a bid can end up
+            under its own reserve. The true version is the better line anyway —
+            the prices are a fixed share of the money supply, so a release
+            raises the cost of a column by exactly the printed rate. */}
+        <p className="gz-rule">Ten columns · sold by the month · when they print, the price of speech prints too</p>
         <h2>The Imperial Gazette</h2>
         <p className="gz-dateline">
           {dateline} · New York · circulation: everyone with an RPC endpoint

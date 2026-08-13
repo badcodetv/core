@@ -257,6 +257,19 @@ Whatever is ruled, these are the constraints on public copy, from the research:
   say: stolen, the pen can vandalise ten columns a month; it cannot move a
   token. "We removed ourselves from the loop" stays true of the money loop and
   must always be said of the money loop.
+- **Never say "nobody can change that, including us" before the authority is
+  burned.** Non-upgradeability is a property of the shipped binary. Added at the
+  2026-08-13 pre-burn review, which found that exact sentence live in `EncPage`
+  while nothing was deployed and the upgrade authority was still to be created.
+  Until T22 burns it, the honest form names the gap: *that is what ships, and it
+  has not shipped.*
+- **🔴 The "guaranteed to rise" ban was breached, on the one surface a visitor
+  reads.** The Gazette masthead served *"priced in a currency that only goes
+  up"* — the single claim this section pre-commits never to make — from T31
+  until 2026-08-13. Recorded rather than quietly fixed, because the lesson is
+  about *how* it got there: nobody wrote it as a claim. It was a strapline that
+  scanned well, in a component nobody re-read against this list. **Copy needs a
+  claims pass at the surface, not only at the document.**
 - **The mechanism may be harsh; the claims must be exactly true.** In every rug
   accusation the research could verify, the trigger was a false factual claim,
   never a disclosed mechanism. That is a strong pattern, not a universal law —

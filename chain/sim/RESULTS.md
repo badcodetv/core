@@ -37,10 +37,10 @@ is a safety decision. It is all about what the machine *says*.
 | Parameter | Value | The sentence it buys |
 | --- | --- | --- |
 | `vault.floorBps` | **5000** | The Emperor keeps **half** of all the money, forever. Only the other half can ever circulate. |
-| `faucet.alphaBps` | **1000** | The genesis hoard is handed out over about **two months**; after that the faucet pays out roughly what the Fed printed, and nothing more. |
+| `faucet.alphaBps` | **1000** | The genesis hoard is handed out over about **two months**; after that the faucet hands out **half of everything the Fed prints**, and the Emperor keeps the other half. |
 | `faucet.epochSeconds` | **86400** | Register today, collect tomorrow. |
 | `faucet.welcomeGrant` | **1000 ENC** | At the peg that is exactly **one million dollars** of the money supply, and it buys you nothing. |
-| `faucet.grantsPerEpoch` | **100** | Caps aggregate grants at about 2.5% of a day's pot. |
+| `faucet.grantsPerEpoch` | **100** | Caps aggregate grants at about 5% of a day's pot in the steady state. |
 | `sanity.maxChangeBps` | **1000** | Clears the largest month in 67 years (**+6.42%, April 2020**) with room. |
 | `tenancy.termSeconds` | **2592000** | A month — matching the price-travel window, and the Gazette's monthly front page. |
 | `retirement.silenceSeconds` | **31536000** | A year of nobody mentioning money. |
@@ -75,14 +75,38 @@ The argument for 10% is legibility, not speed: **a visitor should be looking at
 the machine's permanent behaviour, not at a launch giveaway.** At 1% the opening
 hand-out never really ends inside a human attention span, so every number a
 visitor reads in the first years is unrepresentative of what the thing actually
-does. At 10% the machine settles into its steady state — a pure pass-through of
-new printing — inside two months, and stays there for as long as it runs.
+does. At 10% the machine settles into its steady state inside two months, and
+stays there for as long as it runs.
 
-The steady state is worth stating on its own, because it is the piece's
-thesis executing: **once the hoard is gone, the faucet distributes precisely the
-money the Fed prints, and not one token more.** The vault sits a fifth of a
-percentage point above its floor forever, and every ENC that reaches a wallet
-came from a Federal Reserve release.
+**What the steady state actually is — corrected 2026-08-13.** This section used
+to say the faucet then distributed *precisely* the money the Fed prints and not
+one token more. It does not. **It distributes half of it.**
+
+The floor is why, and the reason is exact rather than approximate. The floor is
+half of a supply that is itself growing, so every token minted raises the floor
+by half a token: the vault has to retain half of each release simply to stay
+level with its own floor, and only the other half is ever above the floor for the
+pot to be a fraction of. With `f` the floor as a share of supply, `α` the fraction
+of the surplus paid per epoch and `g` the per-epoch growth in supply, the surplus
+settles at `g(1−f)/(g+α)` of supply and therefore
+
+```
+pot / newly minted  =  α(1−f) / (g+α)   →   1 − f   as g gets small
+```
+
+At the shipped `f = 5000 bps` that is **one half**, and `g` here is small enough
+to make it exact to three figures: **0.4991** at the historical median month,
+**0.4992** at the trailing-20-year CAGR. Measured rather than derived, across
+years ten to fifty of a fifty-year forward run at the chosen parameters:
+**0.497**. Over the *whole* run it reads 0.52, because the genesis hoard is still
+going out — which is the same trap as the two-epochs-to-a-column number below.
+
+So the sentence that survives is the sharper one anyway: **the Emperor keeps half
+of everything printed and hands out half.** Every ENC that reaches a wallet still
+came from a Federal Reserve release; half of every release simply never leaves.
+The vault does not sit at a flat fraction above its floor — it jumps to about
+26 bps above it on the day of a release and decays back toward the floor over the
+month, which is the 50.26% / 50.00% pair in the sweep above.
 
 ### The ladder: one basis point to one percent
 
@@ -95,31 +119,48 @@ masthead is always the masthead.
 
 | slot | ppm | bps | at genesis | claimants it can support |
 | --- | --- | --- | --- | --- |
-| 0 (cheapest) | 100 | 1.00 | 2,217,610 ENC | 10,000 |
-| 1 | 170 | 1.70 | 3,769,937 ENC | 5,882 |
-| 2 | 280 | 2.80 | 6,209,308 ENC | 3,571 |
-| 3 | 460 | 4.60 | 10,201,006 ENC | 2,173 |
-| 4 | 770 | 7.70 | 17,075,597 ENC | 1,298 |
-| 5 | 1300 | 13.00 | 28,828,930 ENC | 769 |
-| 6 | 2200 | 22.00 | 48,787,420 ENC | 454 |
-| 7 | 3600 | 36.00 | 79,833,960 ENC | 277 |
-| 8 | 6000 | 60.00 | 133,056,600 ENC | 166 |
-| 9 (dearest) | 10000 | 100.00 | 221,761,000 ENC | 100 |
+| 0 (cheapest) | 100 | 1.00 | 2,217,610 ENC | 5,000 |
+| 1 | 170 | 1.70 | 3,769,937 ENC | 2,941 |
+| 2 | 280 | 2.80 | 6,209,308 ENC | 1,785 |
+| 3 | 460 | 4.60 | 10,201,006 ENC | 1,086 |
+| 4 | 770 | 7.70 | 17,075,597 ENC | 649 |
+| 5 | 1300 | 13.00 | 28,828,930 ENC | 384 |
+| 6 | 2200 | 22.00 | 48,787,420 ENC | 227 |
+| 7 | 3600 | 36.00 | 79,833,960 ENC | 138 |
+| 8 | 6000 | 60.00 | 133,056,600 ENC | 83 |
+| 9 (dearest) | 10000 | 100.00 | 221,761,000 ENC | 50 |
 
-**The ceiling law, which the sweep found and then confirmed exactly.** In the
-steady state the faucet pays out what the Fed printed, split among whoever
-registered, and a slot's price is a fixed fraction of supply. So `C` claimants
-who all claim every epoch each accumulate, in the limit, a `1/C` share of
-everything ever printed — and can therefore afford a slot costing **up to `1/C`
-of the total supply, and never more.**
+**The ceiling law — corrected 2026-08-13, and it was out by a factor of two.**
+This section derived the law from "the faucet pays out what the Fed printed",
+which is the error fixed above: the faucet pays out **half** of what the Fed
+printed, because the floor takes the other half. Every figure in it was therefore
+twice what the arithmetic supports, and the wrong ones had already reached
+`params.genesis.json` and the published design document.
 
-That is not a soft trend. Tested against the harness:
+Corrected: a slot's price is a fixed fraction of supply, and `C` claimants who
+all claim every epoch split each pot `C` ways forever, so each accumulates in the
+limit a **`1/2C`** share of everything ever printed — and can therefore afford a
+slot costing **up to `1/2C` of the total supply, and never more.** Turned around,
+which is the useful direction: a slot priced at a fraction `p` of supply is
+reachable by at most **`1/2p`** claimants.
+
+That is not a soft trend. Tested against the harness, whose cells were right all
+along and are what caught the derivation:
 
 | slot | predicted max crowd | 200 claiming | 500 claiming | 2000 claiming |
 | --- | --- | --- | --- | --- |
-| 10 bps | 1,000 | 6 epochs | 64 epochs | never |
-| 25 bps | 400 | 64 epochs | never | never |
-| 50 bps | 200 | never | never | never |
+| 10 bps | 500 | 6 epochs | 64 epochs | never |
+| 25 bps | 200 | 64 epochs | never | never |
+| 50 bps | 100 | never | never | never |
+
+The bottom row is the one that gives the old law away: at 50 bps the old formula
+predicted 200 claimants could get in, and the harness had already measured that
+200 never do. The crowds that *do* get in at exactly the predicted ceiling — 500
+at 10 bps, 200 at 25 bps — get there off the genesis hoard, which is half the
+money supply handed out in the first two months, and not off the steady state.
+The clean measurement is the latecomer table below, where the hoard is gone: a
+cohort of 4,000 reaches the cheapest column after 309 months, and a cohort of
+4,990 stalls at 97.8% of the price forever.
 
 It is the honest replacement for the rent-era "Invariant M", and it is the
 scarcity the piece is about. **Stated, it is the caption. Unstated, it is a
@@ -144,11 +185,17 @@ that stay true:
 | 10 | 22 epochs (0.7 months) |
 | 100 | 119 epochs (4.0 months) |
 | 1,000 | 1,290 epochs (43 months) |
-| 5,000 | longer than the horizon measured |
+| 4,000 | 9,271 epochs (309 months) |
+| 5,000 | never — and this is the ceiling, not the horizon |
+
+The last row was previously read as "longer than the horizon measured". It is
+not: 5,000 is the ceiling itself. Extending the run and walking the crowd size
+puts the edge between 4,000, which arrives in 309 months, and 4,990, which peaks
+at 97.8% of the price and stays there forever. `1/2p` at 100 ppm is 4,991.
 
 **The published fact, as a sentence:** *anyone patient can afford a small ad —
 in about four months, if a hundred other people are being just as patient. The
-more of you there are, the longer it takes, and past ten thousand it never
+more of you there are, the longer it takes, and past five thousand it never
 happens at all.*
 
 ## When the Emperor runs out of counting

@@ -1413,14 +1413,25 @@ is no setter for any economic parameter. The upgrade authority is burned at T22.
   base units, so the multiplication happens once, at deployment, from one
   number; the test harness now derives its ladder the same way rather than
   carrying a second copy.
-  **The ceiling law**, found by the sweep and then confirmed exactly: in the
-  steady state the faucet pays out what the Fed printed, split among whoever
-  registered, and a slot costs a fixed fraction of supply — so `C` diligent
-  claimants each reach, in the limit, a `1/C` share of everything ever printed,
-  and a slot costing `1/C` of supply is **exactly** out of reach for `C` of
-  them. It is the honest replacement for the rent-era Invariant M and it is the
-  scarcity the piece is about. The cheapest column supports about ten thousand;
-  the masthead about a hundred.
+  **The ceiling law**, found by the sweep and **corrected on 2026-08-13, having
+  been published out by a factor of two.** The steady-state faucet pays out
+  **half** of what the Fed printed, not all of it — the floor is half of a supply
+  that is itself growing, so the vault retains half of every release just to stay
+  level with its own floor. A slot costs a fixed fraction of supply and `C`
+  diligent claimants split each pot `C` ways, so each reaches in the limit a
+  `1/2C` share of everything ever printed, and a slot costing `1/2C` of supply is
+  **exactly** out of reach for `C` of them. Inverted: a slot priced at a fraction
+  `p` of supply is reachable by at most `1/2p` claimants. It is the honest
+  replacement for the rent-era Invariant M and it is the scarcity the piece is
+  about. **The cheapest column supports about five thousand; the masthead about
+  fifty** — previously published as ten thousand and a hundred.
+  **This does not change T15's pass/fail, and the ticket stays done.** The one
+  pass/fail is that a patient claimant can reach the cheapest tenancy, and the
+  numbers that answer it were always measurements rather than derivations: 22
+  epochs at ten claimants, 119 at a hundred, 1,290 at a thousand, all reproduced
+  unchanged on 2026-08-13. What was wrong was the closed form printed beside
+  them, and it was wrong in the safe direction — the machine is *harsher* than
+  the published law said, not more permissive. No parameter moved.
   **A number that would have been a lie.** The harness's first answer to "how
   long to afford a column" was *two epochs* — true only at launch, because the
   Emperor's genesis hoard is half the money supply and goes out over two
@@ -2685,6 +2696,119 @@ _(appended by executors during implementation)_
   sentence. It now exists and is that authority. Worth noting because a dangling
   link to a claims document reads, to anyone auditing, exactly like a claim with
   no backing — which is what it was.
+
+- **2026-08-13 · PRE-BURN FIX · the claims and copy half (findings 2, 7 and the
+  two copy-lens findings). The faucet pays half, and everything downstream of
+  "it pays all of it" was wrong by the same factor of two.**
+  Both the CRITICAL ceiling law and the HIGH faucet claim turned out to be one
+  error wearing two hats, and the cause is worth stating before the fixes,
+  because it is the thing to check next time: **the derivation ignored that the
+  floor is a fraction of a supply that is itself growing.** The floor is half the
+  supply, so every token minted raises the floor by half a token — the vault has
+  to retain half of each release simply to stay level with its own floor, and
+  only the other half is ever above the floor for the pot to be a fraction of.
+  Written down, with `f` the floor, `α` the fraction of the surplus paid per
+  epoch and `g` the per-epoch supply growth, the surplus settles at `g(1−f)/(g+α)`
+  of supply and `pot / newly minted = α(1−f)/(g+α)`, which tends to `1−f`. **The
+  pass-through is one minus the floor, and the floor is a half.**
+  - **Finding 7 — the faucet pays about half of what the Fed printed, not all of
+    it.** Closed form **0.4991** at the historical median month (+0.522%),
+    **0.4992** at the trailing-20-year CAGR (+6.28%/yr); **measured 0.497** over
+    the tail of a fifty-year forward run on the sim's own `Economy` (the whole
+    run reads 0.5205, inflated by the genesis hoard, which is why it has to be
+    measured on the tail). Said the way the reviewer suggested and it is the
+    better line: **the Emperor keeps half of everything printed and hands out
+    half.**
+  - **Finding 2 — the ceiling law, corrected from `1/C` to `1/2C`.** `C`
+    claimants splitting half of each release accumulate a `1/2C` share of
+    everything ever printed, so a slot priced at a fraction `p` of supply is
+    reachable by at most **`1/2p`** claimants. **The cheapest column at 100 ppm
+    supports about 5,000 diligent claimants and the masthead about 50**,
+    published as ten thousand and a hundred. Measured against the harness with a
+    latecomer cohort: 4,000 claimants reach the cheapest column after 309 months,
+    4,990 peak at **97.8%** of the price and stay there. `1/2p` at 100 ppm is
+    4,991.
+  - **The harness had already refuted the old law and nobody read it that way.**
+    The sweep's leg-3 table predicted 200 claimants could take a 50 bps slot and
+    measured, in the cell beside it, that 200 never do. Recorded because the
+    lesson is not "check the arithmetic" — it is that a *derived* number printed
+    next to a *measured* one that contradicts it will be believed over the
+    measurement, in a document whose whole purpose is to make claims checkable.
+  - **What did not change: T15's pass/fail, and no parameter.** The one pass/fail
+    is that a patient claimant can reach the cheapest tenancy, and the numbers
+    answering it were always measurements — 22 epochs at ten claimants, 119 at a
+    hundred, 1,290 at a thousand — all reproduced unchanged. The four-months-at-a-
+    hundred sentence is still true. **The error was in the safe direction**: the
+    machine is harsher than the published law said, not more permissive, so
+    nothing shipped that over-promised to a claimant. T15 stays done and no value
+    in `params.genesis.json` moved. *Judgement call: I did not re-open the sweep's
+    parameter choices, because Ruling A permits a parameter to be chosen only on
+    legibility, and every sentence the chosen values buy is still true — just
+    harsher.*
+  - **Corrected in:** `docs/coins/emperors-new-coin.md` (the ceiling-law section,
+    now carrying the derivation; the alpha and grants rows of the parameter
+    table), `chain/sim/RESULTS.md` (the alpha row, the grants row, the
+    steady-state section, the per-slot "claimants it can support" column, the
+    ceiling-law section and its predicted-crowd table, the latecomer table),
+    `chain/sim/sweep.ts` (**`predicted` was `Math.floor(10_000/cheapestBps)` and
+    is now `5_000/cheapestBps`**; leg 4's per-slot max crowd was `1_000_000/ppm`
+    and is now `500_000/ppm`; leg 3b grew a 4,000 row so the edge is visible),
+    `chain/sim/run.ts` (`epochsToVaultFloor`'s doc comment), the `faucet` and
+    `assets` notes in `chain/params.genesis.json`, and T15's notes in this plan.
+    The sweep was re-run and its output now matches every table in `RESULTS.md`.
+  - **A third number fell out of the same correction, unasked:**
+    `grantsPerEpoch: 100` was published as capping aggregate grants at "roughly
+    2.5% of a day's pot". Against a *steady-state* pot it is **5.2%**
+    (100 × 1,000 ENC against a pot of ~1.91m ENC at today's supply). 2.5% is what
+    you get from a pot equal to the whole month's printing — the same wrong
+    assumption. Corrected to "about 5%" in both the doc and `RESULTS.md`.
+  - **Test counts under the "Verified" stamp were wrong in both directions.** The
+    doc claimed 39 Rust unit tests and the review said 38; **there are 42**, plus
+    Anchor's generated `test_id`, so `cargo test -p emperors-new-coin --lib`
+    reports 43 passing (re-run today). The drift is T31's ten `state.rs` Gazette
+    cases landing after the count was written. "Seven Anchor suites" was also
+    wrong — there are **eight** ENC suites totalling 92 `it` cases, of which
+    `retire` runs alone because passing it ends the ledger. The two counts that
+    were right were `test-gazette` 16 and `test-faucet` 10. *Judgement call: I
+    re-ran the Rust units myself but not the Anchor suites — the validator was in
+    use by the concurrent chain fixer — so the cell now states counted cases and
+    scopes the "re-run" claim to what I actually re-ran.*
+  - **Copy · the Gazette masthead served the one forbidden claim.** *"Ten columns
+    · sold by the month · priced in a currency that only goes up"* — §4
+    pre-commits to never saying "guaranteed to rise", and this said it harder, on
+    the surface a visitor actually reads. Replaced with *"when they print, the
+    price of speech prints too"*, which is exactly true (prices are a fixed ppm
+    of supply, so a release raises a column by exactly the printed rate), is
+    Ruling D's own thesis, and does not deny the 6.1% of months that fall.
+  - **Copy · the same claim was also hiding as a status label.** Unasked, and
+    found while checking the masthead: every column whose price had not finished
+    interpolating printed **"still climbing"**, hardcoded — so a price walking
+    *downward* after a burn, over exactly the same thirty-day window, would have
+    said it was climbing. It now reads the direction off `priceFrom`/`priceTo`
+    (`travelling()` in `AssetGrid.tsx`). *Judgement call: fixed rather than
+    logged, because it is the same forbidden claim as the masthead, one component
+    away, and the honest label costs four lines.*
+  - **Copy · the trust statement is now two-part and dated.** `EncPage` served
+    *"Nobody here can change that, including us"* unqualified while nothing is
+    deployed, the upgrade authority does not exist to be burned yet, and the
+    editor's pen is a real key on the chain. The strap now says *no key over the
+    money — not ours, not anyone's; one editorial pen over the words, and all it
+    can do is strike a column: it appears in no instruction that moves a token*,
+    which is true of the shipped design and stays true after T22. The
+    not-yet-deployed gap is a separate `enc-hint` line gated on a new
+    `AUTHORITY_BURNED = false` constant in `EncPage.tsx`. *Judgement call: I used
+    a named constant rather than deriving it from `CLUSTER`, because T22 deploys
+    upgradeable **first** and burns as a separate human act — a cluster flip would
+    have silently un-said the caveat while the authority was still live. Its
+    doc comment says to flip it in the burn commit and not one commit earlier.*
+  - **Two entries added to "Claims we do not make"** in `docs/coins/emperors-new-coin.md`
+    and two to §4 of the architecture decision, naming the surfaces rather than
+    only the rules: *never "the faucet pays out what the Fed printed"*, and
+    *never "nobody can change that, including us" while the upgrade authority is
+    alive*. §4's "guaranteed to rise" bullet now records that it was breached and
+    how — not as a claim anyone argued for, but as a strapline that scanned well
+    in a component nobody re-read against the list. **The claims pass has to run
+    over the rendered surfaces, not only over the documents.**
 
 - **2026-08-13 · PRE-BURN REVIEW · 16 agents, five lenses, adversarial
   verification.** Twenty raw findings → **seven confirmed**, four refuted with

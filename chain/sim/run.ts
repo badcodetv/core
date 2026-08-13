@@ -61,8 +61,10 @@ export interface RunReport {
    * Epochs before the vault first settled within 10bps of its floor.
    *
    * How long the Emperor's genesis hoard takes to distribute. After it, the
-   * faucet is a pure pass-through: it pays out roughly what the Fed prints and
-   * nothing more, because that is all that arrives.
+   * faucet pays out **half** of what the Fed prints: the floor is half of a
+   * supply that is itself growing, so the vault has to retain half of every
+   * release just to stay level with its own floor, and only the other half is
+   * ever above the floor for the pot to be a fraction of.
    */
   epochsToVaultFloor: number | null
   purchases: number
