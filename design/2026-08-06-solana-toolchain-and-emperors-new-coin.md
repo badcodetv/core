@@ -7,7 +7,7 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: in progress — **24 of 31 done** (T31 and T19 landed 2026-08-13). T11 SUPERSEDED by the 2026-08-12
+Status: in progress — **25 of 31 done** (T31, T19 and T20 landed 2026-08-13). T11 SUPERSEDED by the 2026-08-12
 architecture ruling and its code deleted by T30. The tenancy auction (T12), the
 faucet (T13), `retire` (T28) and the proportional caps (T29) are built and
 green; the simulation (T14) runs the full M2 record plus a forward projection,
@@ -99,7 +99,7 @@ this table is the map.
 | ⬜ | T17 · stand the M2SL feed up on devnet | oracle |
 | ⬜ | T18 · Switchboard on-chain read + crank (**wall-clock stall: budget a day**) | oracle |
 | ✅ | T19 · ENC page, read-only state — the printer + the Imperial Gazette front page, live on localnet | web |
-| ⬜ | T20 · ENC page, wallet actions + the melting balance | web |
+| ✅ | T20 · ENC page, wallet actions + the melting balance — **one gap: the two-wallet Phantom run-through is still owed a human** | web |
 | ⬜ | T21 · documentation | docs |
 | ⬜ | T22 · devnet deploy + **burn the upgrade authority** | ship |
 | ⬜ | T23 · end-to-end verification | ship |
@@ -1770,7 +1770,7 @@ is no setter for any economic parameter. The upgrade authority is burned at T22.
   bids, and one slot whose standing bid had fallen **under the reserve** since
   it was placed — which is the coin's whole thesis rendering itself.
 
-### T20: ENC page — wallet actions and the melting balance   [Status: pending | Model: sonnet]
+### T20: ENC page — wallet actions and the melting balance   [Status: **DONE 2026-08-13** — validation re-run by the orchestrator; **the Phantom two-wallet run-through is still owed a human**, see the checkbox | Model: sonnet]
 - **Scope:** Connect, claim (showing whether it's the welcome grant, a share of
   yesterday's pot, or zero — and why), and the auction actions. Errors surface a
   human cause, successes an explorer link. Plus the melting balance: the
@@ -1827,7 +1827,22 @@ is no setter for any economic parameter. The upgrade authority is burned at T22.
   **Epoch and term lengths are `Config` fields** — a test ledger can be
   initialised with short ones to reach these cases without waiting a month.
 - **Depends on:** T19
-- [ ] done
+- [x] done — 2026-08-13, **with one criterion explicitly outstanding.**
+  Orchestrator re-ran the validation independently: `npm run test --workspace
+  @badcode/enc` **133 passing**, `./stack test test-actions` **15 passing** on a
+  fresh ledger, `./stack check` green across every workspace and **leaving the
+  working tree clean**, `npm run build` green, the portability grep still
+  returning nothing but `programs.json`, and the page loaded over CDP with a
+  **clean console** and correctly showing no buttons before a wallet connects.
+  - **🔴 STILL OWED A HUMAN: the two-wallet Phantom run-through.** A browser
+    extension cannot be driven from here. The executor proved every instruction
+    from a real browser through an injected Phantom-shaped provider holding a
+    throwaway key, which establishes the wiring, the account maps, the amounts
+    and the error mapping — but **not Phantom itself**. That is a genuine gap in
+    this ticket's acceptance, carried forward to **T23**, not quietly closed.
+  - **Corrected by the orchestrator:** the melt rate was 5%/yr and is now 6%.
+    See the Discovered Issues Log — the research's 5% is an order of magnitude,
+    and M2 has actually grown 6.73%/yr since 1959.
 - Notes (built 2026-08-13):
   - **The logic is in `packages/enc/src/actions.ts`, not in components.** Three
     things live there: every instruction's account map, every `require!` a
@@ -1841,11 +1856,15 @@ is no setter for any economic parameter. The upgrade authority is burned at T22.
     against the *same* predictions the page uses, so a derivation that drifts
     fails a suite rather than a user's transaction. 15 cases, the ticket's whole
     loop in order.
-  - **The melt rate is 5% a year**, sourced to
-    `research/2026-08-12-enc-tokenomics/README.md` — the long-run growth of M2,
-    and the same figure that killed the rent. Every price on the page is a fixed
-    share of the money supply, so that is honestly what a balance sitting still
-    loses. Stated on the page, not buried.
+  - ~~**The melt rate is 5% a year**, sourced to
+    `research/2026-08-12-enc-tokenomics/README.md` — the long-run growth of
+    M2.~~ **Corrected to 6% by the orchestrator, 2026-08-13.** The research's
+    5% is an order-of-magnitude figure in a comparison against 150%/month rent;
+    M2 has actually compounded at **6.73%/yr since 1959** and above 5.6% on
+    every multi-decade window. See the Discovered Issues Log. The rest of this
+    note stands: every price on the page is a fixed share of the money supply,
+    so that is honestly what a balance sitting still loses, and it is stated on
+    the page rather than buried.
   - **The melt clock starts when the page first sees the balance**, and
     re-anchors whenever the balance changes. The chain does not record when a
     wallet acquired anything and neither do we, so any other anchor would be an
