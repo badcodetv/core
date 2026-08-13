@@ -7,7 +7,7 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: in progress — **25 of 31 done** (T31, T19 and T20 landed 2026-08-13). T11 SUPERSEDED by the 2026-08-12
+Status: in progress — **26 of 31 done** (T31, T19, T20 and T21 landed 2026-08-13). The autonomous track is complete; everything left needs devnet, keys, or a human decision. T11 SUPERSEDED by the 2026-08-12
 architecture ruling and its code deleted by T30. The tenancy auction (T12), the
 faucet (T13), `retire` (T28) and the proportional caps (T29) are built and
 green; the simulation (T14) runs the full M2 record plus a forward projection,
@@ -100,7 +100,7 @@ this table is the map.
 | ⬜ | T18 · Switchboard on-chain read + crank (**wall-clock stall: budget a day**) | oracle |
 | ✅ | T19 · ENC page, read-only state — the printer + the Imperial Gazette front page, live on localnet | web |
 | ✅ | T20 · ENC page, wallet actions + the melting balance — **one gap: the two-wallet Phantom run-through is still owed a human** | web |
-| ⬜ | T21 · documentation | docs |
+| ✅ | T21 · documentation — `docs/coins/emperors-new-coin.md` + the **claim ledger**, every figure re-derived from the FRED record | docs |
 | ⬜ | T22 · devnet deploy + **burn the upgrade authority** | ship |
 | ⬜ | T23 · end-to-end verification | ship |
 
@@ -1901,7 +1901,7 @@ is no setter for any economic parameter. The upgrade authority is burned at T22.
     30-day term, but it is why the browser bid needed a script keeping a slot on
     a fresh term.
 
-### T21: Documentation — toolchain, coin, canon   [Status: pending | Model: sonnet]
+### T21: Documentation — toolchain, coin, canon   [Status: **DONE 2026-08-13** — validation re-run by the orchestrator; every claim-ledger figure independently recomputed from the FRED series | Model: sonnet]
 - **Scope:** `chain/README.md` (install → run → deploy → **how to add coin #2**).
   `docs/coins/emperors-new-coin.md` — the public design including the honest trust
   statement: what we can say ("we removed ourselves from the loop") and what we
@@ -1949,7 +1949,27 @@ is no setter for any economic parameter. The upgrade authority is burned at T22.
 - **TDD:** no (docs)
 - **Validation:** Follow `chain/README.md` from a clean shell; every command runs.
 - **Depends on:** T20
-- [ ] done
+- [x] done — 2026-08-13. Orchestrator re-ran the validation and, because this
+  is the claims ticket, **independently recomputed every figure in the claim
+  ledger straight from the FRED M2SL series** rather than reading the table.
+  All of them hold: 810 observations / 809 steps, rose 758 · fell 49 ·
+  unchanged 2; median month **+0.522%**; biggest rise **+6.42%** (Apr 2020);
+  biggest fall **−1.40%** (Mar 2023); the 2022–23 contraction **−4.82%**,
+  **$1,049.7bn**, Mar 2022 → Oct 2023; the longest run of consecutive falls
+  **nine**, Aug 2022 → Apr 2023; and the peg horizon **$18,446.7 trillion**,
+  **796.7×** today, **106.9 years** at the median month. `./stack check` green
+  across every workspace and leaving the tree clean, `npm run build` green.
+  - **🔴 One claim in this repo did not survive the ticket, and it had spread.**
+    The claims standard in the decision doc said M2 fell "13 in a row in
+    2022–23". It did not — the longest run in the entire 1959–2026 record is
+    **nine**. The wrong figure had already reached `settle_auction.rs` and the
+    plan's T12 notes. Corrected in all three, visibly rather than quietly.
+    Independently confirmed here.
+  - **Orchestrator fix on top:** T21 removed `--features mock` from `./stack
+    help`'s `test` line but left it on `build`, where the advertised
+    `./stack build [<program>] [--features mock]` is precisely the form that
+    fails — cargo features are per-package and `counter` has no `mock`. Ran it;
+    it dies. The help now states that naming the program is required, and why.
 - Notes:
   - **Built 2026-08-13.** `docs/coins/emperors-new-coin.md` is new and is now the
     public design of record: the machine instruction by instruction, the
