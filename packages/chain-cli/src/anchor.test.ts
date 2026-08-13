@@ -2,7 +2,7 @@ import { existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, 
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { LEGACY_VALIDATOR_ARGS, buildArgs, exportIdl, generatedDir, idlDir, restoreKeys, syncIdl, testArgs } from './anchor.js'
+import { LEGACY_VALIDATOR_ARGS, buildArgs, exportIdl, generatedDir, idlDir, restoreKeys, syncIdl, testArgs, typesDir } from './anchor.js'
 
 describe('LEGACY_VALIDATOR_ARGS', () => {
   it('asks for the legacy validator, because Anchor 1.x defaults to surfpool', () => {
@@ -72,12 +72,27 @@ describe('restoreKeys', () => {
 })
 
 describe('syncIdl', () => {
+  // Against a fixture root, never the working tree. `syncIdl()` with no root
+  // copies whatever the last build left in `chain/target/idl` over the
+  // committed `chain/idl` — so running the suites under `--features mock` and
+  // then running the unit tests published an interface carrying `set_mock_m2`
+  // for a build that is never released. A validation command must not mutate
+  // tracked files. Same shape as the `restoreKeys` cases above.
   it('publishes both the IDL and the TypeScript types, since the app needs both', () => {
-    if (!existsSync(idlDir())) return // build has not run in this environment
-    const written = syncIdl()
-    expect(written.some((f) => f.endsWith('.json'))).toBe(true)
-    expect(written.some((f) => f.endsWith('.ts'))).toBe(true)
-    for (const f of written) expect(existsSync(join(generatedDir(), f))).toBe(true)
+    const root = mkdtempSync(join(tmpdir(), 'chain-root-'))
+    try {
+      mkdirSync(idlDir(root), { recursive: true })
+      mkdirSync(typesDir(root), { recursive: true })
+      writeFileSync(join(idlDir(root), 'demo.json'), '{"address":"demo"}')
+      writeFileSync(join(typesDir(root), 'demo.ts'), 'export type Demo = never\n')
+
+      const written = syncIdl(root)
+      expect(written.some((f) => f.endsWith('.json'))).toBe(true)
+      expect(written.some((f) => f.endsWith('.ts'))).toBe(true)
+      for (const f of written) expect(existsSync(join(generatedDir(root), f))).toBe(true)
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
   })
 
   it('says the build failed rather than publishing nothing', () => {

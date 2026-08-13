@@ -2472,6 +2472,14 @@ _(appended by executors during implementation)_
   file-copying function at the working tree. Left unfixed here because it is
   outside this ticket and inside the portable package. Worth doing before T22,
   where the deployed IDL becomes permanent.
+  **✅ FIXED by the orchestrator, 2026-08-13**, exactly as described — the case
+  now builds a `mkdtempSync` root with fixture `target/idl` and `target/types`
+  and passes it to `syncIdl(root)`. Verified by planting a sentinel file in
+  `chain/target/idl/` and confirming the suite neither publishes it nor dirties
+  `chain/idl/`; `./stack check` now leaves the working tree clean. Fixed rather
+  than deferred because every remaining ticket runs `./stack check`, so the
+  hazard was live for the rest of the build, and T22 makes the published IDL
+  permanent.
 
 - **2026-08-13 · T19 · Anchor types every `u64` as `any`, so the compiler does
   not catch a `BN` reaching a `bigint`.** `IdlAccounts<EmperorsNewCoin>` gives
