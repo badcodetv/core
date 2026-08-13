@@ -2686,6 +2686,55 @@ _(appended by executors during implementation)_
   link to a claims document reads, to anyone auditing, exactly like a claim with
   no backing — which is what it was.
 
+- **2026-08-13 · PRE-BURN REVIEW · 16 agents, five lenses, adversarial
+  verification.** Twenty raw findings → **seven confirmed**, four refuted with
+  corrections, nine below the verification threshold. Confirmed, worst first:
+  1. **🔴 CRITICAL · nothing checks that the deployed `.so` is a default
+     build.** `./stack test` builds the mock last, so `chain/target/deploy/
+     emperors_new_coin.so` is the **mock binary** after any test run, and
+     `deploy`/`deployProgram` never rebuild — they upload what is on disk. The
+     only mock guard anywhere inspects the *published IDL*, a different artifact
+     from a different step. `set_mock_m2` is unauthenticated by design and
+     `mock_fund` moves vault ENC to any named wallet, so a mock build that
+     reaches a real cluster and is then burned hands every stranger the money
+     supply, permanently. *Verifier's correction, fairly made:* the documented
+     recipe does start with `./stack build`, and a mock build would fail T23's
+     live-Switchboard criterion — so this is a missing belt to an existing
+     brace rather than a live break. It is still the one artifact the burn makes
+     permanent and it has no mechanical provenance check.
+  2. **🔴 CRITICAL · the published "ceiling law" is wrong by a factor of two.**
+     `docs/coins/emperors-new-coin.md` derives that the cheapest column supports
+     about ten thousand diligent claimants; the arithmetic beside it gives
+     ~5,000. Published as a derived law with a re-runnable proof that does not
+     support it — precisely the failure the project names as the only fatal one.
+  3. **🔴 HIGH · `init_asset` does not validate `genesis_price`.** Zero is an
+     absorbing state (`rescale(0, ..) == 0` forever, so the slot is winnable for
+     one base unit for all time), and a mis-scaled ladder stays internally
+     consistent while being permanently wrong against M2. The ppm → base-units
+     conversion exists in exactly one place in the repo — `assetSpec()` in a
+     **test file** — and T22 asks the operator to redo that multiplication by
+     hand, once, at the only moment it can never be corrected.
+  4. **🔴 HIGH · every tenancy certificate is minted with an empty URI** and its
+     update authority set to `None` in the same instruction. The certificate is
+     the one piece of the artwork that lands in a human's wallet, and it will
+     render as nothing, forever.
+  5. **🔴 HIGH · `./stack test`, `reset` and `start` all rewrite the committed
+     `chain/idl`.** The same class as the `syncIdl` unit-test bug fixed earlier
+     today, one level up in the CLI itself — and the log's entry for that fix
+     reads as a broader exoneration than it earned.
+  6. **🔴 HIGH · the prefilled bid is the reserve at render time**, and the
+     reserve climbs every second, so the *default* bid transaction on any column
+     is guaranteed to be refused. The first bid — the primary interaction the
+     auction exists for — costs a fee and returns an error.
+  7. **🔴 HIGH · "the faucet pays out roughly what the Fed printed, and not one
+     token more" — it pays about half.**
+  Below the verification threshold but worth naming, because **two independent
+  lenses found it**: the Gazette masthead prints *"a currency that only goes
+  up"* — the single claim §4 pre-commits never to make — and `EncPage` serves
+  "Nobody here can change that, including us" unqualified while the program is
+  undeployed with a live upgrade authority.
+  Full output: the workflow result for run `wf_bdfdf6bc-ff2`.
+
 - **2026-08-13 · T20 · 🔴 an order-of-magnitude figure became a claim on the
   page.** The melting balance shipped falling at **5% a year**, described in
   code as "the rate the money supply grows at in the long run" and on the page
