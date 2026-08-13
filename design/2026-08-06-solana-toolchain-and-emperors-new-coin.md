@@ -2966,8 +2966,14 @@ _(appended by executors during implementation)_
   - **Test counts under the "Verified" stamp were wrong in both directions.** The
     doc claimed 39 Rust unit tests and the review said 38; **there are 42**, plus
     Anchor's generated `test_id`, so `cargo test -p emperors-new-coin --lib`
-    reports 43 passing (re-run today). The drift is T31's ten `state.rs` Gazette
-    cases landing after the count was written. "Seven Anchor suites" was also
+    reports 43 passing (re-run today, and again at `b2eca83` after the chain
+    fixes landed). *Correcting my own entry, which was unfair to the doc:* 39 was
+    not a miscount, it was a faithful reading of `cargo test` at the time — the
+    tool's total, counting Anchor's generated `test_id` as one of ours. The
+    review's 38 was the count of `#[test]`s we wrote. **Both readings are
+    defensible and that is the problem**: "39 Rust unit tests" is ambiguous
+    between them, so the cell now states both numbers and says which is which.
+    "Seven Anchor suites" was also
     wrong — there are **eight** ENC suites totalling 92 `it` cases, of which
     `retire` runs alone because passing it ends the ledger. The two counts that
     were right were `test-gazette` 16 and `test-faucet` 10. *Judgement call: I
@@ -3002,6 +3008,13 @@ _(appended by executors during implementation)_
     upgradeable **first** and burns as a separate human act — a cluster flip would
     have silently un-said the caveat while the authority was still live. Its
     doc comment says to flip it in the burn commit and not one commit earlier.*
+  - **Follow-up, after the concurrent chain fixes landed at `b2eca83`:** that
+    ticket's fix for finding 3 mirrors `assets.genesisPricePpm` into the program
+    as `GENESIS_PRICE_PPM` and makes `init_asset` demand exact equality, so
+    **those ten numbers in `params.genesis.json` are now load-bearing twice** —
+    edit them without editing the Rust constant and deployment fails at asset 0
+    rather than mis-pricing the ladder. Recorded in the `assets._` note, since
+    that note is the only thing anyone reads before touching the array.
   - **Two entries added to "Claims we do not make"** in `docs/coins/emperors-new-coin.md`
     and two to §4 of the architecture decision, naming the surfaces rather than
     only the rules: *never "the faucet pays out what the Fed printed"*, and
