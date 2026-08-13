@@ -37,6 +37,16 @@ pub struct InitializeParams {
     pub epoch_seconds: i64,
     pub retirement_silence_seconds: i64,
     pub max_change_bps: u16,
+
+    /// Who holds the editor's pen at genesis, or `None` for a paper that is
+    /// feral from birth.
+    ///
+    /// **Not an economic parameter**, which is why it is not in
+    /// `params.genesis.json` alongside the rest — it is a key, chosen at
+    /// deployment, and the only one this program ever accepts. It can be
+    /// rotated afterwards by its holder and broken by its holder, and by
+    /// nobody else, ever.
+    pub editor: Option<Pubkey>,
 }
 
 pub fn handler(ctx: Context<Initialize>, params: InitializeParams) -> Result<()> {
@@ -62,6 +72,7 @@ pub fn handler(ctx: Context<Initialize>, params: InitializeParams) -> Result<()>
     config.max_change_bps = params.max_change_bps;
     config.initialized_assets = 0;
     config.retired = false;
+    config.editor = params.editor;
     config.bump = ctx.bumps.config;
 
     // ── What the Fed last said ──────────────────────────────────────────────
@@ -129,6 +140,14 @@ fn validate(p: &InitializeParams) -> Result<()> {
     // take billions of transactions to land — the peg alive in principle and
     // frozen in practice.
     require!(p.max_change_bps > 0, EncError::InvalidRate);
+    // An editor of the all-zero key would leave `editor.is_some()` true while
+    // nobody could ever sign for it — a pen the account claims exists and no
+    // hand holds. `None` says that honestly; this refuses to say it by
+    // accident, exactly as `pass_the_pen` does.
+    require!(
+        p.editor != Some(Pubkey::default()),
+        EncError::NotTheEditor
+    );
     // The genesis supply must fit, or the program is born broken.
     target_supply(GENESIS_M2_VALUE, p.k)?;
     Ok(())

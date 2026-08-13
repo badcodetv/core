@@ -61,7 +61,8 @@ figure wilder than that arrives in instalments rather than all at once. A
 real month is a fraction of a percent, so you will never see it. A daily faucet drips ENC
 from the vault to whoever shows up. The ten assets re-auction on a published
 clock, roughly monthly: the winner takes the tenancy and a certificate, and
-the outgoing holder is paid the entire winning bid. That is the whole
+the outgoing holder is paid the entire winning bid. Whoever holds a slot
+writes its column, once, for the term they paid for. That is the whole
 machine.
 
 ## Questions you are already asking
@@ -158,16 +159,51 @@ printed beside it are exact.
 
 ### Who can change the rules?
 
-Nobody — and the nobody provably includes us. The program ships with its
-upgrade authority burned. The economic parameters have no update
+**No key over the money; one pen over the words.**
+
+Nobody can change the rules, and the nobody provably includes us. The program
+ships with its upgrade authority burned. The economic parameters have no update
 instruction: not gated behind an authority — *absent*. The oracle feed is
 the hash of its own fetch job: edit one character and you have not changed
 the feed, you have created a different feed the program refuses to read. No
-admin key, no pause button, no owner field. One honest asterisk, stated
-loudly because it is on-theme: the oracle network's operators are admitted
-by its queue authority, so a small consortium still decides who may sign
-for reality. We removed ourselves from the loop. We could not remove the
-loop.
+key can mint, burn, move, freeze or seize a token. No pause button. No
+owner field over the money.
+
+There is exactly one key in the whole program, and it is over the *words*.
+See the next answer.
+
+One honest asterisk on the money, stated loudly because it is on-theme: the
+oracle network's operators are admitted by its queue authority, so a small
+consortium still decides who may sign for reality. We removed ourselves from
+the loop. We could not remove the loop.
+
+### So there *is* a key. What can it do?
+
+It can draw a black bar through a column. That is the whole list.
+
+The ten slots are a newspaper front page, and a newspaper has an editor. There
+is no on-chain answer to vile text and pretending otherwise is how a project
+like this gets ugly, so we kept **the editor's pen**: one key that may `spike`
+any column — replacing what it says with a fixed redaction marker the key does
+not get to choose — **once per column per edition**. It cannot write. It has no
+text field to write *with*: the instruction takes a slot number and nothing
+else.
+
+**State the blast radius plainly: a stolen pen can vandalise ten columns a
+month, and it cannot move a token.** Not one ENC, not one asset, not one
+certificate. The key appears in no instruction that touches a mint, a token
+account, the vault or the escrow, and the test suite asserts that against the
+program's published interface rather than leaving it as a promise you have to
+take on trust.
+
+The pen can be handed on (`pass_the_pen` — a lost or stolen key has to be
+survivable, and after launch there is no upgrade authority to fall back on) and
+it can be snapped (`break_the_pen`, permanently, after which the paper goes
+feral and every column says whatever its tenant filed, forever).
+
+This was never a decentralisation play. **The trustless surface is the money**,
+and every claim on this page about the money is untouched by the pen. The column
+is for sale. The pen is not.
 
 ### How does it end?
 
@@ -202,8 +238,21 @@ moving on their own.
 ### Why ten assets, and what are they?
 
 Ten because scarcity is the point — the joke needs things there are not
-enough of. What they are, exactly, is a creative decision still being fought
-over in the other room. They will be magnificent, and you will not own them.
+enough of. What they are is **the ten slots of a newspaper front page**: a
+masthead, a headline, a lead story, a cartoon caption, a classified ad. The
+asset layer is a paper about money whose column-inches are auctioned monthly,
+which is more on-thesis than anything abstract could be — the assets new money
+buys first include media, so **when the Fed prints, the price of speech rises
+by exactly the printed rate.** Win a column and you write it, once, for the
+term you paid for. The tenancy certificate is your press clipping.
+
+Say the unflattering part out loud, because it is the caption rather than a
+bug: an auction machine allocates by wealth, full stop. Nothing stops the
+richest wallet holding the masthead indefinitely. This is not a town square and
+we will not call it one. It is the front page, sold monthly.
+
+The individual slot names are still Jack's call in the other room. They will be
+magnificent, and you will not own them.
 
 ### Why did you build this?
 

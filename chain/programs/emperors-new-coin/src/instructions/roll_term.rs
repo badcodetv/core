@@ -54,6 +54,10 @@ pub fn handler(ctx: Context<RollTerm>, index: u8) -> Result<()> {
     asset.term_ends_at = now
         .checked_add(ctx.accounts.config.term_seconds)
         .ok_or(error!(EncError::MathOverflow))?;
+    // Same new edition as a settlement: the incumbent gets another filing, a
+    // spiked column is unstruck, and the copy on the page is left exactly where
+    // it was. A dormant slot simply keeps running last month's words.
+    asset.open_a_new_edition();
 
     msg!(
         "asset {index}: nobody cleared {reserve}, {} keeps it for term {} ({released} released)",
@@ -71,6 +75,8 @@ pub struct RollTerm<'info> {
     #[account(seeds = [CONFIG_SEED], bump = config.bump)]
     pub config: Account<'info, Config>,
 
+    /// Boxed: `Asset` is 414 bytes and Anchor deserialises into a 4KB stack
+    /// frame. See the note in `place_bid.rs`.
     #[account(mut, seeds = [ASSET_SEED, &[index]], bump = asset.bump)]
-    pub asset: Account<'info, Asset>,
+    pub asset: Box<Account<'info, Asset>>,
 }

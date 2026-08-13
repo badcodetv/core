@@ -153,6 +153,44 @@ pub enum EncError {
     #[msg("No certificate is issuable for that tenancy")]
     NoCertificateDue,
 
+    // ── The Gazette ─────────────────────────────────────────────────────────
+    /// `file_copy` by somebody who does not hold the tenancy.
+    ///
+    /// The column is rented, not owned, and only its current tenant writes in
+    /// it. The Emperor's own slots are held by the vault, which is a PDA nobody
+    /// can sign for — so they can never be filed at all, and the page renders
+    /// their default copy forever.
+    #[msg("Only the current tenant of this column may file copy")]
+    NotTheTenant,
+
+    /// A second `file_copy` in the same term.
+    ///
+    /// Write-once per term is the design, not a rate limit: unlimited rewrites
+    /// would make moderation a war of attrition that only a bot BadCode ran
+    /// forever could win, which puts us back in the loop.
+    #[msg("This column has already been filed this term")]
+    AlreadyFiled,
+
+    /// The editor struck this column this term. Refuses a second spike and a
+    /// re-file alike, because those are the same fact: the column is spiked
+    /// until the term rolls.
+    #[msg("This column has been spiked; the next term gets a fresh page")]
+    ColumnSpiked,
+
+    /// Copy longer than `COPY_BYTES`. Bytes, not characters.
+    #[msg("That copy is longer than a column")]
+    CopyTooLong,
+
+    /// `spike`, `pass_the_pen` or `break_the_pen` by somebody who is not the
+    /// editor.
+    #[msg("Only the editor may do that")]
+    NotTheEditor,
+
+    /// The pen was broken. There is no way back — `pass_the_pen` needs a
+    /// current editor to sign, and nothing else writes the field.
+    #[msg("The pen is broken; this paper has no editor and never will again")]
+    PenBroken,
+
     // ── Faucet ──────────────────────────────────────────────────────────────
     /// A second `claim` in the same epoch.
     #[msg("You have already claimed this epoch")]

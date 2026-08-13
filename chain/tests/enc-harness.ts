@@ -28,6 +28,10 @@ export const BPF_LOADER_UPGRADEABLE = new PublicKey('BPFLoaderUpgradeab1e1111111
 /** Mirrors GENESIS_M2_VALUE in state.rs: $22,176.1bn at 6dp. */
 export const GENESIS_M2 = 22_176_100_000n
 export const ASSET_COUNT = 10
+/** COPY_BYTES in state.rs. Bytes, not characters. */
+export const COPY_BYTES = 280
+/** SPIKE_MARKER in state.rs — the only thing the editor's pen can write. */
+export const SPIKE_MARKER = '███████ SPIKED ███████'
 /** PRICE_INTERPOLATION_SECONDS in state.rs. */
 export const INTERPOLATION_SECONDS = 30 * 86_400
 
@@ -275,6 +279,14 @@ export function initParams(h: Harness) {
     // clock is the one whose firing cannot be undone.
     retirementSilenceSeconds: new BN(RETIREMENT_SILENCE_SECONDS),
     maxChangeBps: h.params.sanity.maxChangeBps,
+    // The genesis editor. **This ledger's deploy wallet**, which is the only key
+    // every suite already has and which survives a re-run — `initialize` is
+    // once-ever, so a freshly generated keypair here would leave the pen in the
+    // hands of a key that vanished when the process exited.
+    //
+    // Not in `params.genesis.json`: that file holds economic parameters, chosen
+    // by the simulation, and the pen is neither.
+    editor: h.authority,
   }
 }
 
@@ -535,6 +547,28 @@ export function closeEpochAccounts(h: Harness, epoch: bigint, closer: PublicKey)
     config: h.configPda,
     epochAccount: h.epochPda(epoch),
   }
+}
+
+export function fileCopyAccounts(h: Harness, i: number, tenant: PublicKey) {
+  return { tenant, asset: h.assetPda(i) }
+}
+
+export function spikeAccounts(h: Harness, i: number, editor: PublicKey) {
+  return { editor, config: h.configPda, asset: h.assetPda(i) }
+}
+
+/** Shared by `pass_the_pen` and `break_the_pen` — they need the same two. */
+export function penAccounts(h: Harness, editor: PublicKey) {
+  return { editor, config: h.configPda }
+}
+
+/**
+ * The readable part of a column: `copy` is a fixed 280-byte array, zero-padded,
+ * and `copyLen` says how much of it is real. Reading to the first zero byte
+ * would be a guess — nothing stops a tenant filing a NUL.
+ */
+export function readCopy(asset: { copy: number[]; copyLen: number }): string {
+  return Buffer.from(asset.copy.slice(0, asset.copyLen)).toString('utf8')
 }
 
 export function syncAccounts(h: Harness) {

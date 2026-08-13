@@ -89,6 +89,11 @@ pub fn handler(ctx: Context<SettleAuction>, index: u8) -> Result<()> {
     asset.term_ends_at = now
         .checked_add(ctx.accounts.config.term_seconds)
         .ok_or(error!(EncError::MathOverflow))?;
+    // A new edition: the incoming tenant gets their one filing and the pen gets
+    // its one strike back. The **copy itself is deliberately left standing** —
+    // yesterday's news runs until today's is filed, so a column whose new
+    // tenant never writes keeps saying whatever it said last month.
+    asset.open_a_new_edition();
 
     msg!(
         "asset {index}: {outgoing} paid {price}, {winner} holds term {}",
@@ -108,8 +113,10 @@ pub struct SettleAuction<'info> {
     #[account(seeds = [CONFIG_SEED], bump = config.bump)]
     pub config: Account<'info, Config>,
 
+    /// Boxed: `Asset` is 414 bytes and Anchor deserialises into a 4KB stack
+    /// frame. See the note in `place_bid.rs`.
     #[account(mut, seeds = [ASSET_SEED, &[index]], bump = asset.bump)]
-    pub asset: Account<'info, Asset>,
+    pub asset: Box<Account<'info, Asset>>,
 
     /// The winner's escrow record. Closed here; its rent returns to the winner,
     /// who paid it.

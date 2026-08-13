@@ -7,11 +7,27 @@
 //!
 //! The machine, in one paragraph. A permissionless `sync_m2` reads the feed and
 //! mints or burns against the vault so that `supply = k × M2`. Everything else
-//! only moves tokens that already exist: ten parody assets reprice by whatever
-//! percentage M2 moved and are held for a published term, changing hands by
-//! auction with the full winning bid paid to the outgoing holder, while the
-//! vault drips a daily faucet back out to anyone who shows up. The Fed decides
-//! how much money there is; the game decides who holds it.
+//! only moves tokens that already exist: ten parody assets — the ten slots of a
+//! newspaper front page — reprice by whatever percentage M2 moved and are held
+//! for a published term, changing hands by auction with the full winning bid
+//! paid to the outgoing holder, while the vault drips a daily faucet back out
+//! to anyone who shows up. The tenant of a slot writes its column, once per
+//! term. The Fed decides how much money there is; the game decides who holds
+//! it; and the price of speech rises at exactly the rate they print.
+//!
+//! **No key over the money; one pen over the words.** There is exactly one key
+//! in this program — `Config.editor` — and it reaches exactly one instruction,
+//! `spike`, which replaces a column's copy with a fixed marker it does not get
+//! to choose, once per column per term. State the blast radius plainly: a
+//! stolen pen can vandalise ten columns a month, and it cannot move a token.
+//! Not one ENC, not one asset, not one certificate — `initialize.ts` asserts
+//! that against the IDL rather than leaving it as a promise. It exists because
+//! there is no on-chain answer to vile text and pretending otherwise is how
+//! this gets ugly; a newspaper has an editor. It is rotatable
+//! (`pass_the_pen` — after T22 there is no upgrade authority to recover a lost
+//! key with) and breakable (`break_the_pen`, irrevocably). This was never a
+//! decentralisation play: the trustless surface is the money, and every claim
+//! about the money below survives verbatim.
 //!
 //! **There is no holding cost.** No rent, no demurrage, no fee. Holding ENC
 //! already loses truthfully — the balance sits still while the assets reprice
@@ -28,8 +44,9 @@
 //! stopped looking, and from where it sits those are the same event.
 //!
 //! The consequence to keep true as this grows: **no token leaves any wallet
-//! without that wallet owner's signature.** Not the coin, not the flags, not
-//! the certificates.
+//! without that wallet owner's signature.** Not the coin, not the columns, not
+//! the certificates. The editor's pen does not weaken this by one clause: it
+//! cannot reach a token account at all.
 //!
 //! See design/2026-08-06-solana-toolchain-and-emperors-new-coin.md.
 use anchor_lang::prelude::*;
@@ -119,6 +136,32 @@ pub mod emperors_new_coin {
     /// issue, never reclaimed, and never worth the asset.
     pub fn mint_certificate(ctx: Context<MintCertificate>, index: u8, term: u64) -> Result<()> {
         instructions::mint_certificate::handler(ctx, index, term)
+    }
+
+    /// Write this term's column. **Current tenant only, once per term.** The
+    /// Emperor's slots are held by a PDA, so they can never be filed.
+    pub fn file_copy(ctx: Context<FileCopy>, index: u8, text: String) -> Result<()> {
+        instructions::file_copy::handler(ctx, index, text)
+    }
+
+    /// Strike a column to a fixed redaction marker. **Editor only, once per
+    /// column per term.** It takes no text: the pen strikes words, it never
+    /// authors them.
+    pub fn spike(ctx: Context<Spike>, index: u8) -> Result<()> {
+        instructions::spike::handler(ctx, index)
+    }
+
+    /// Hand the pen to a successor. **Editor only.** The one power in this
+    /// program that had to be rotatable, because after T22 there is no upgrade
+    /// authority to recover a lost key with.
+    pub fn pass_the_pen(ctx: Context<ThePen>, new_editor: Pubkey) -> Result<()> {
+        instructions::pass_the_pen::pass(ctx, new_editor)
+    }
+
+    /// End the editorship, permanently. **Editor only, and there is no way
+    /// back** — the paper goes feral.
+    pub fn break_the_pen(ctx: Context<ThePen>) -> Result<()> {
+        instructions::pass_the_pen::break_it(ctx)
     }
 
     /// End it. **Anyone may call this**, and only once the program has gone

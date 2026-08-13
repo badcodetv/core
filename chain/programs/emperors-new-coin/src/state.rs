@@ -78,6 +78,24 @@ pub const SECONDS_PER_DAY: i64 = 86_400;
 /// That is safe only because it cannot move after genesis.
 pub const DEFAULT_SECONDS_PER_EPOCH: i64 = SECONDS_PER_DAY;
 
+/// How many bytes of copy one column holds. **Bytes, not characters** — an
+/// emoji costs four of these and an accented letter costs two.
+///
+/// Two hundred and eighty, because the internet already argued this one out and
+/// settled on it as the size of a stranger's opinion. It is enough for a
+/// headline, a classified ad or a sentence of the serial, and small enough that
+/// ten of them are still one cheap RPC read. The number is permanent — `Asset`
+/// is fixed-size and the program ships non-upgradeable — so it is chosen for
+/// what a column of a newspaper is, not for what a text field could be.
+pub const COPY_BYTES: usize = 280;
+
+/// What the editor's pen leaves behind. **The pen strikes words; it never
+/// authors them**, so `spike` writes this and nothing else — there is no
+/// caller-supplied text anywhere in it. BadCode does not get to write into a
+/// column somebody paid for, and a redaction bar says more than a sentence
+/// would.
+pub const SPIKE_MARKER: &str = "███████ SPIKED ███████";
+
 /// How long a price takes to travel to its new target after a supply change.
 ///
 /// Rescaling every asset instantly would make prices jump on the Fed's
@@ -98,12 +116,16 @@ pub const PRICE_INTERPOLATION_SECONDS: i64 = 30 * SECONDS_PER_DAY;
 /// non-upgradeable and "not even we can change the rule" has to be literally
 /// true, not merely intended.
 ///
-/// Two fields here move, and both are **one-way latches with no key on them**:
-/// `initialized_assets` counts up to ten during bootstrap and then never moves
-/// again, and `retired` flips once, permissionlessly, when the program has gone
-/// long enough without hearing a new M2 figure. Neither can be set back, and
-/// neither is anyone's decision — the second is a condition the program checks
-/// about itself.
+/// Two fields here move without any key at all, and both are **one-way
+/// latches**: `initialized_assets` counts up to ten during bootstrap and then
+/// never moves again, and `retired` flips once, permissionlessly, when the
+/// program has gone long enough without hearing a new M2 figure. Neither can be
+/// set back, and neither is anyone's decision — the second is a condition the
+/// program checks about itself.
+///
+/// One field here **is** a key: `editor`, the pen. It is the single exception in
+/// the whole program and it is deliberately narrow — no key over the money, one
+/// pen over the words. See its own doc for exactly what it can reach.
 #[account]
 #[derive(InitSpace)]
 pub struct Config {
@@ -179,7 +201,38 @@ pub struct Config {
     /// removes the one hazard a freeze would have carried: escrow that can
     /// never be withdrawn.
     pub retired: bool,
+
+    /// The editor's pen: the one key in this program, and it can only strike
+    /// words.
+    ///
+    /// It reaches exactly one instruction, `spike`, which replaces a column's
+    /// copy with `SPIKE_MARKER` — a fixed string it does not get to choose —
+    /// once per column per term. **The blast radius is ten columns a month, and
+    /// it cannot move a token.** Not one ENC, not one asset NFT, not one
+    /// certificate; the shape test in `initialize.ts` asserts the key appears in
+    /// no instruction that touches a token account.
+    ///
+    /// It exists because there is no on-chain answer to vile text and
+    /// pretending otherwise is how this gets ugly. A newspaper has an editor.
+    ///
+    /// `Some` while a pen exists, `None` once `break_the_pen` has been called —
+    /// which is irrevocable, because `pass_the_pen` needs a current editor to
+    /// sign and nothing else writes this field. Rotatable on purpose: a lost or
+    /// stolen key must be survivable without an upgrade authority to fall back
+    /// on, since by T22 there will not be one.
+    pub editor: Option<Pubkey>,
     pub bump: u8,
+}
+
+impl Config {
+    /// Prove the signer holds the pen, distinguishing "there is no pen" from
+    /// "you are not the editor" — a broken pen is a permanent fact about the
+    /// paper and a caller deserves to be told which of the two happened.
+    pub fn require_editor(&self, signer: &Pubkey) -> Result<()> {
+        let editor = self.editor.ok_or(error!(crate::errors::EncError::PenBroken))?;
+        require_keys_eq!(editor, *signer, crate::errors::EncError::NotTheEditor);
+        Ok(())
+    }
 }
 
 /// What the Fed last told us, and what we did about it.
@@ -262,7 +315,62 @@ pub struct Asset {
     /// A bid is *locked* only while it is both the standing high bid and from
     /// the current term; everything else is withdrawable by its owner alone.
     pub high_bidder: Pubkey,
+
+    /// What this column currently says. UTF-8, left-aligned, zero-padded.
+    ///
+    /// **It persists across settlement.** A new tenancy does not blank the page
+    /// — yesterday's news stands until today's edition is filed, so a column
+    /// nobody writes in keeps saying whatever it last said, for as long as that
+    /// takes. Only `file_copy` and `spike` ever write here.
+    pub copy: [u8; COPY_BYTES],
+
+    /// How many of `copy`'s bytes are real.
+    ///
+    /// Carried explicitly rather than left for the client to find, because
+    /// "read until the first zero byte" is a guess: nothing stops a tenant
+    /// filing a NUL, and the array is zero-padded either way. Zero means the
+    /// column has never been written and the page should render the Emperor's
+    /// own default copy — which is what every slot looks like at genesis and
+    /// what the vault-held ones look like forever.
+    pub copy_len: u16,
+
+    /// Whether this term's copy has been filed. **Once per term, write-once.**
+    ///
+    /// Not a rate limit — a decision. Unlimited rewrites would turn moderation
+    /// into a war of attrition that only a bot BadCode ran forever could win,
+    /// which puts us back in the loop as an operational dependency. One filing
+    /// per term makes the pen decisive instead.
+    pub copy_filed: bool,
+
+    /// Whether the editor has struck this column this term. Blocks a second
+    /// spike, and blocks a re-file: a spiked column stays struck until the term
+    /// rolls, or the pen would just be the opening move of that same war.
+    pub copy_spiked: bool,
+
     pub bump: u8,
+}
+
+impl Asset {
+    /// Overwrite the column, zero-padding the rest. The one place `copy` and
+    /// `copy_len` are written, so the two cannot disagree.
+    pub fn write_copy(&mut self, bytes: &[u8]) -> Result<()> {
+        require!(
+            bytes.len() <= COPY_BYTES,
+            crate::errors::EncError::CopyTooLong
+        );
+        self.copy = [0u8; COPY_BYTES];
+        self.copy[..bytes.len()].copy_from_slice(bytes);
+        self.copy_len = bytes.len() as u16;
+        Ok(())
+    }
+
+    /// Clear the per-term flags without touching a byte of the copy. Called at
+    /// every settlement and every rollover — the edition changes, the page does
+    /// not go blank.
+    pub fn open_a_new_edition(&mut self) {
+        self.copy_filed = false;
+        self.copy_spiked = false;
+    }
 }
 
 /// One bidder's escrowed ENC on one asset.
@@ -412,6 +520,103 @@ mod tests {
         assert_eq!(epoch_seeds(1)[1], vec![1, 0, 0, 0, 0, 0, 0, 0]);
         assert_eq!(epoch_seeds(256)[1], vec![0, 1, 0, 0, 0, 0, 0, 0]);
         assert_ne!(epoch_seeds(1)[1], vec![1u8]);
+    }
+
+    /// A blank `Asset` for the copy cases. `Default` is not derived on the
+    /// account struct, so build it here rather than adding a trait the program
+    /// never uses.
+    fn blank_asset() -> Asset {
+        Asset {
+            index: 0,
+            holder: Pubkey::default(),
+            price_from: 0,
+            price_to: 0,
+            interp_start: 0,
+            interp_end: 0,
+            term_number: 0,
+            term_ends_at: 0,
+            high_bid: 0,
+            high_bidder: Pubkey::default(),
+            copy: [0u8; COPY_BYTES],
+            copy_len: 0,
+            copy_filed: false,
+            copy_spiked: false,
+            bump: 0,
+        }
+    }
+
+    /// The size is permanent — `Asset` is created with `init` and the program
+    /// ships non-upgradeable, so this number is chosen once and lives with the
+    /// coin. Pinned so that growing the struct is a deliberate act with a
+    /// failing test in front of it, not something noticed at deploy time.
+    #[test]
+    fn the_asset_account_is_the_size_we_think_it_is() {
+        // 1 index + 32 holder + 4×8 curve + 8 term + 8 term_ends_at
+        // + 8 high_bid + 32 high_bidder + 280 copy + 2 copy_len + 2 flags + 1 bump
+        assert_eq!(Asset::INIT_SPACE, 1 + 32 + 32 + 8 + 8 + 8 + 32 + 280 + 2 + 2 + 1);
+        assert_eq!(8 + Asset::INIT_SPACE, 414);
+    }
+
+    /// Zero-padding plus an explicit length, rather than a NUL terminator:
+    /// nothing stops a tenant filing a zero byte, so scanning for one would
+    /// truncate their column and call it a feature.
+    #[test]
+    fn copy_is_zero_padded_and_its_length_is_recorded() {
+        let mut a = blank_asset();
+        a.write_copy(b"there is no magic money tree").unwrap();
+        assert_eq!(a.copy_len as usize, 28);
+        assert_eq!(&a.copy[..28], b"there is no magic money tree");
+        assert!(a.copy[28..].iter().all(|b| *b == 0));
+
+        // A shorter second filing must not leave the tail of the first behind.
+        a.write_copy(b"no").unwrap();
+        assert_eq!(a.copy_len, 2);
+        assert_eq!(&a.copy[..2], b"no");
+        assert!(a.copy[2..].iter().all(|b| *b == 0));
+
+        // An embedded NUL survives, which is the whole reason for copy_len.
+        a.write_copy(b"a\0b").unwrap();
+        assert_eq!(a.copy_len, 3);
+        assert_eq!(&a.copy[..3], b"a\0b");
+    }
+
+    #[test]
+    fn copy_refuses_more_than_it_can_hold() {
+        let mut a = blank_asset();
+        assert!(a.write_copy(&[b'x'; COPY_BYTES]).is_ok());
+        assert!(a.write_copy(&[b'x'; COPY_BYTES + 1]).is_err());
+        // The refused write changed nothing.
+        assert_eq!(a.copy_len as usize, COPY_BYTES);
+    }
+
+    /// The marker has to fit in the field it replaces, or the pen would fail on
+    /// exactly the column it was reached for. Block characters are three bytes
+    /// each, which is easy to forget.
+    #[test]
+    fn the_spike_marker_fits_in_a_column() {
+        assert!(SPIKE_MARKER.len() <= COPY_BYTES);
+        let mut a = blank_asset();
+        a.write_copy(SPIKE_MARKER.as_bytes()).unwrap();
+        assert_eq!(
+            std::str::from_utf8(&a.copy[..a.copy_len as usize]).unwrap(),
+            SPIKE_MARKER
+        );
+    }
+
+    /// Copy persists across settlement; only the flags reset. Yesterday's news
+    /// stands until today's edition is filed.
+    #[test]
+    fn a_new_edition_clears_the_flags_and_not_the_page() {
+        let mut a = blank_asset();
+        a.write_copy(b"the emperor has no clothes").unwrap();
+        a.copy_filed = true;
+        a.copy_spiked = true;
+
+        a.open_a_new_edition();
+
+        assert!(!a.copy_filed);
+        assert!(!a.copy_spiked);
+        assert_eq!(&a.copy[..a.copy_len as usize], b"the emperor has no clothes");
     }
 
     #[test]

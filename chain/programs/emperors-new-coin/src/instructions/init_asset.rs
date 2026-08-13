@@ -154,6 +154,14 @@ pub fn handler(
         .ok_or(error!(EncError::MathOverflow))?;
     asset.high_bid = 0;
     asset.high_bidder = Pubkey::default();
+    // The column starts blank, and blank is not the same as empty: `copy_len`
+    // of zero is the signal that nobody has ever filed this slot, and the front
+    // page renders the Emperor's own default copy for it. Every slot looks like
+    // this at genesis, and the ones nobody ever wins look like it forever.
+    asset.copy = [0u8; COPY_BYTES];
+    asset.copy_len = 0;
+    asset.copy_filed = false;
+    asset.copy_spiked = false;
     asset.bump = ctx.bumps.asset;
 
     ctx.accounts.config.initialized_assets = index + 1;
@@ -183,6 +191,8 @@ pub struct InitAsset<'info> {
     #[account(seeds = [VAULT_SEED], bump)]
     pub vault: UncheckedAccount<'info>,
 
+    /// Boxed: `Asset` is 414 bytes and Anchor deserialises into a 4KB stack
+    /// frame. See the note in `place_bid.rs`.
     #[account(
         init,
         payer = authority,
@@ -190,7 +200,7 @@ pub struct InitAsset<'info> {
         seeds = [ASSET_SEED, &[index]],
         bump,
     )]
-    pub asset: Account<'info, Asset>,
+    pub asset: Box<Account<'info, Asset>>,
 
     /// The NFT.
     ///

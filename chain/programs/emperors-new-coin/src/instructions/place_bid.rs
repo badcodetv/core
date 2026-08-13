@@ -105,8 +105,15 @@ pub struct PlaceBid<'info> {
     #[account(seeds = [CONFIG_SEED], bump = config.bump)]
     pub config: Account<'info, Config>,
 
+    /// Boxed, like every other `Asset` in this program. It is 414 bytes since
+    /// the Gazette landed, and Anchor deserialises accounts into the
+    /// instruction's own 4KB BPF stack frame — unboxed, `place_bid` overflowed
+    /// it and failed with "Access violation in stack frame 5", which names
+    /// neither the account nor the size. Boxing is a uniform rule here rather
+    /// than a per-instruction judgement so nothing has to be re-measured when
+    /// an account list next grows.
     #[account(mut, seeds = [ASSET_SEED, &[index]], bump = asset.bump)]
-    pub asset: Account<'info, Asset>,
+    pub asset: Box<Account<'info, Asset>>,
 
     #[account(
         init_if_needed,

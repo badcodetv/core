@@ -2318,6 +2318,37 @@ while the page correctly reports localnet.
   where `init_asset` writes the real names and the burn makes them permanent.
   Nothing in the program logic branches on a slot's name.
 - [ ] done
+- Notes (executor, 2026-08-13 — **six judgement calls the ticket did not
+  settle**, all reversible until T22 and all flagged rather than buried):
+  1. **`copy` is 280 bytes plus an explicit `copy_len: u16`.** The ticket named
+     the field and the flags but not how a client finds the end of a shorter
+     string. NUL-termination was rejected: nothing stops a tenant filing a zero
+     byte, so scanning for one would silently truncate their column. `copy_len
+     == 0` doubles as "never written", which is what the front page renders the
+     Emperor's default copy from.
+  2. **The editor may spike a vault-held column.** Nothing in `spike` branches
+     on the holder — the pen is aimed at a column, not a tenant. Striking one
+     the Emperor holds writes the marker over nothing. Harmless, left
+     permitted, and cheaper than a rule; say so if T19 renders it oddly.
+  3. **`pass_the_pen` refuses the all-zero key**, and `initialize` refuses
+     `Some(Pubkey::default())`. Either would leave `editor.is_some()` true while
+     no hand could sign — an account claiming an editor exists when none does.
+     `break_the_pen` says that honestly; these refuse to say it by accident.
+  4. **`InitializeParams.editor` is `Option<Pubkey>`, and is *not* in
+     `params.genesis.json`.** That file holds economic parameters chosen by the
+     simulation; the pen is a key chosen at deployment. `None` is accepted, so a
+     paper can be feral from birth. **T22 must supply the real key** — the test
+     harness uses the deploy wallet, which is the only key every suite has and
+     the only one that survives a re-run.
+  5. **`chain/tests/gazette.ts` is one-way, cheaply.** Its last case breaks the
+     pen, which is irrevocable, so a re-run marks the seven pen cases pending
+     instead of passing for the wrong reason (verified: 15 passing fresh, 9
+     passing + 7 pending on a re-run). Unlike `retire.ts` it stays in the
+     run-everything script, because nothing outside the suite uses the pen.
+     `./stack reset` restores full coverage.
+  6. **Placeholder slot names unchanged.** `assetSpec` still writes
+     `Placeholder Asset N`; no program logic anywhere branches on a slot's name.
+     Jack's sheet is still consumed at T22 as planned.
 - Notes: Genesis prices differ per slot (`init_asset` already takes one per
   index): masthead dearest, classified cheapest. **The cheapest reserve is
   T14/T15's faucet-reachability target**, which turns the pass/fail criterion
@@ -2330,6 +2361,27 @@ while the page correctly reports localnet.
 ## Discovered Issues Log
 
 _(appended by executors during implementation)_
+
+- **2026-08-13 · T31 · 🔴 growing `Asset` overflowed the BPF stack, and the
+  error names nothing.** The Gazette's 284 extra bytes took `Asset` to 414, and
+  `place_bid` — untouched by this ticket — began failing every transaction with
+  `Access violation in stack frame 5 at address 0x200005ff8 of size 8`. That is
+  a 4KB stack-frame overflow in Anchor's generated account deserialisation, and
+  the message mentions neither the account, nor the size, nor Anchor. Fixed by
+  `Box<Account<'info, Asset>>` in every instruction context that carries one,
+  applied as a uniform rule rather than per-instruction so nothing has to be
+  re-measured when an account list next grows. **Recorded in
+  [`chain/README.md`](../chain/README.md)'s "Things that will bite you"** — it
+  is exactly the class of thing that file exists for, and the next person to
+  widen an account struct will hit it. Worth knowing at T19/T22: `Asset` is now
+  414 bytes on the ledger and that number is permanent.
+
+- **2026-08-13 · T31 · README vocabulary drift, not fixed.** The program README
+  still calls the assets "flags" and "the Emperor's treasures" in the joke
+  section and in "What do I actually own?", which predates Ruling D's newspaper
+  framing. Nothing there is *false* — they are the same ten things — so it was
+  left alone rather than expanding this ticket into a rewrite of the page.
+  Worth one pass at T21/T23, when the copy is being read end-to-end anyway.
 
 - **2026-08-13 · ticket audit before the remaining-work run (no code changed).**
   Every unfinished ticket was read against the as-built program and the

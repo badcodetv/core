@@ -51,5 +51,10 @@ test-init = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/initialize.t
 test-sync = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/sync_m2.ts"
 test-auction = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/auction.ts"
 test-faucet = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/faucet.ts"
+# Kept in the run-everything script above, unlike `retire`: its last case breaks
+# the editor's pen irrevocably, but nothing outside this suite uses the pen, so
+# the cost is confined to gazette.ts's own pen cases skipping on a re-run.
+# `./stack reset` brings them back.
+test-gazette = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/gazette.ts"
 # Terminal — see the note above `test`. Ends this ledger; `./stack reset` after.
 test-retire = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/retire.ts"

@@ -205,6 +205,15 @@ the global throws "Buffer is not defined" on the first PDA derivation, i.e. the
 instant a wallet connects. `chain-kit` imports it explicitly so a consuming app
 needs no polyfill setup.
 
+**A big account struct overflows the 4KB stack frame, and says so in hex.**
+Anchor deserialises accounts into the instruction's own BPF stack frame, which
+is 4KB. Growing `Asset` by 284 bytes for the Gazette (T31) pushed `place_bid`
+over it, and the only symptom is `Access violation in stack frame 5 at address
+0x200005ff8 of size 8` — which names neither the account, nor the size, nor
+Anchor. The fix is `Box<Account<'info, T>>`, which puts the struct on the heap;
+in this program `Asset` is boxed everywhere as a uniform rule, so nothing has to
+be re-measured the next time an account list grows.
+
 **Program keypairs live in `chain/keys/`, not in `target/`.** Anchor generates
 them into the build output, so cleaning the build silently changes every
 program's address and breaks its own `declare_id!`. `chain build` restores them

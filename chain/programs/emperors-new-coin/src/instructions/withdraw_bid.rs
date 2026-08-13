@@ -62,8 +62,10 @@ pub struct WithdrawBid<'info> {
     #[account(seeds = [CONFIG_SEED], bump = config.bump)]
     pub config: Account<'info, Config>,
 
+    /// Boxed: `Asset` is 414 bytes and Anchor deserialises into a 4KB stack
+    /// frame. See the note in `place_bid.rs`.
     #[account(seeds = [ASSET_SEED, &[index]], bump = asset.bump)]
-    pub asset: Account<'info, Asset>,
+    pub asset: Box<Account<'info, Asset>>,
 
     /// Closed on the way out, rent back to the bidder who paid it.
     #[account(

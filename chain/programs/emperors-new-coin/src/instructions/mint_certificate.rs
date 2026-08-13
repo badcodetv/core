@@ -152,8 +152,10 @@ pub struct MintCertificate<'info> {
     #[account(seeds = [CONFIG_SEED], bump = config.bump)]
     pub config: Account<'info, Config>,
 
+    /// Boxed: `Asset` is 414 bytes and Anchor deserialises into a 4KB stack
+    /// frame. See the note in `place_bid.rs`.
     #[account(seeds = [ASSET_SEED, &[index]], bump = asset.bump)]
-    pub asset: Account<'info, Asset>,
+    pub asset: Box<Account<'info, Asset>>,
 
     /// CHECK: pinned to the asset's recorded holder by the handler.
     pub holder: UncheckedAccount<'info>,

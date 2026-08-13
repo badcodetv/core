@@ -14,6 +14,53 @@ export type EmperorsNewCoin = {
   },
   "instructions": [
     {
+      "name": "breakThePen",
+      "docs": [
+        "End the editorship, permanently. **Editor only, and there is no way",
+        "back** — the paper goes feral."
+      ],
+      "discriminator": [
+        205,
+        64,
+        174,
+        172,
+        159,
+        39,
+        238,
+        75
+      ],
+      "accounts": [
+        {
+          "name": "editor",
+          "docs": [
+            "The current editor, and nobody else. Checked in the handler so that \"no",
+            "pen exists\" and \"you are not the editor\" come back as different errors."
+          ],
+          "signer": true
+        },
+        {
+          "name": "config",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "args": []
+    },
+    {
       "name": "claim",
       "docs": [
         "Take your share of yesterday's pot and register for today. **Anyone may",
@@ -415,6 +462,50 @@ export type EmperorsNewCoin = {
       ]
     },
     {
+      "name": "fileCopy",
+      "docs": [
+        "Write this term's column. **Current tenant only, once per term.** The",
+        "Emperor's slots are held by a PDA, so they can never be filed."
+      ],
+      "discriminator": [
+        167,
+        52,
+        237,
+        153,
+        42,
+        12,
+        192,
+        251
+      ],
+      "accounts": [
+        {
+          "name": "tenant",
+          "docs": [
+            "The tenancy holder, checked against the asset's own record."
+          ],
+          "signer": true
+        },
+        {
+          "name": "asset",
+          "docs": [
+            "Boxed: `Asset` is 414 bytes and Anchor deserialises into a 4KB stack",
+            "frame. See the note in `place_bid.rs`."
+          ],
+          "writable": true
+        }
+      ],
+      "args": [
+        {
+          "name": "index",
+          "type": "u8"
+        },
+        {
+          "name": "text",
+          "type": "string"
+        }
+      ]
+    },
+    {
       "name": "initAsset",
       "docs": [
         "Create one parody asset and its NFT. Called ten times, in order."
@@ -483,6 +574,10 @@ export type EmperorsNewCoin = {
         },
         {
           "name": "asset",
+          "docs": [
+            "Boxed: `Asset` is 414 bytes and Anchor deserialises into a 4KB stack",
+            "frame. See the note in `place_bid.rs`."
+          ],
           "writable": true
         },
         {
@@ -878,7 +973,11 @@ export type EmperorsNewCoin = {
           }
         },
         {
-          "name": "asset"
+          "name": "asset",
+          "docs": [
+            "Boxed: `Asset` is 414 bytes and Anchor deserialises into a 4KB stack",
+            "frame. See the note in `place_bid.rs`."
+          ]
         },
         {
           "name": "holder"
@@ -996,6 +1095,59 @@ export type EmperorsNewCoin = {
       ]
     },
     {
+      "name": "passThePen",
+      "docs": [
+        "Hand the pen to a successor. **Editor only.** The one power in this",
+        "program that had to be rotatable, because after T22 there is no upgrade",
+        "authority to recover a lost key with."
+      ],
+      "discriminator": [
+        153,
+        92,
+        248,
+        51,
+        18,
+        64,
+        26,
+        20
+      ],
+      "accounts": [
+        {
+          "name": "editor",
+          "docs": [
+            "The current editor, and nobody else. Checked in the handler so that \"no",
+            "pen exists\" and \"you are not the editor\" come back as different errors."
+          ],
+          "signer": true
+        },
+        {
+          "name": "config",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "args": [
+        {
+          "name": "newEditor",
+          "type": "pubkey"
+        }
+      ]
+    },
+    {
       "name": "placeBid",
       "docs": [
         "Bid on a tenancy, escrowing your own ENC. **Signed by the bidder** —",
@@ -1037,6 +1189,15 @@ export type EmperorsNewCoin = {
         },
         {
           "name": "asset",
+          "docs": [
+            "Boxed, like every other `Asset` in this program. It is 414 bytes since",
+            "the Gazette landed, and Anchor deserialises accounts into the",
+            "instruction's own 4KB BPF stack frame — unboxed, `place_bid` overflowed",
+            "it and failed with \"Access violation in stack frame 5\", which names",
+            "neither the account nor the size. Boxing is a uniform rule here rather",
+            "than a per-instruction judgement so nothing has to be re-measured when",
+            "an account list next grows."
+          ],
           "writable": true
         },
         {
@@ -1371,6 +1532,10 @@ export type EmperorsNewCoin = {
         },
         {
           "name": "asset",
+          "docs": [
+            "Boxed: `Asset` is 414 bytes and Anchor deserialises into a 4KB stack",
+            "frame. See the note in `place_bid.rs`."
+          ],
           "writable": true
         }
       ],
@@ -1428,6 +1593,10 @@ export type EmperorsNewCoin = {
         },
         {
           "name": "asset",
+          "docs": [
+            "Boxed: `Asset` is 414 bytes and Anchor deserialises into a 4KB stack",
+            "frame. See the note in `place_bid.rs`."
+          ],
           "writable": true
         },
         {
@@ -1677,6 +1846,62 @@ export type EmperorsNewCoin = {
       ]
     },
     {
+      "name": "spike",
+      "docs": [
+        "Strike a column to a fixed redaction marker. **Editor only, once per",
+        "column per term.** It takes no text: the pen strikes words, it never",
+        "authors them."
+      ],
+      "discriminator": [
+        149,
+        199,
+        30,
+        147,
+        2,
+        236,
+        202,
+        60
+      ],
+      "accounts": [
+        {
+          "name": "editor",
+          "signer": true
+        },
+        {
+          "name": "config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "asset",
+          "docs": [
+            "Boxed: `Asset` is 414 bytes and Anchor deserialises into a 4KB stack",
+            "frame. See the note in `place_bid.rs`."
+          ],
+          "writable": true
+        }
+      ],
+      "args": [
+        {
+          "name": "index",
+          "type": "u8"
+        }
+      ]
+    },
+    {
       "name": "syncM2",
       "docs": [
         "Read the oracle and move the supply to `k × M2`. **Anyone may call",
@@ -1901,7 +2126,11 @@ export type EmperorsNewCoin = {
           }
         },
         {
-          "name": "asset"
+          "name": "asset",
+          "docs": [
+            "Boxed: `Asset` is 414 bytes and Anchor deserialises into a 4KB stack",
+            "frame. See the note in `place_bid.rs`."
+          ]
         },
         {
           "name": "bid",
@@ -2363,26 +2592,56 @@ export type EmperorsNewCoin = {
     },
     {
       "code": 6023,
+      "name": "notTheTenant",
+      "msg": "Only the current tenant of this column may file copy"
+    },
+    {
+      "code": 6024,
+      "name": "alreadyFiled",
+      "msg": "This column has already been filed this term"
+    },
+    {
+      "code": 6025,
+      "name": "columnSpiked",
+      "msg": "This column has been spiked; the next term gets a fresh page"
+    },
+    {
+      "code": 6026,
+      "name": "copyTooLong",
+      "msg": "That copy is longer than a column"
+    },
+    {
+      "code": 6027,
+      "name": "notTheEditor",
+      "msg": "Only the editor may do that"
+    },
+    {
+      "code": 6028,
+      "name": "penBroken",
+      "msg": "The pen is broken; this paper has no editor and never will again"
+    },
+    {
+      "code": 6029,
       "name": "alreadyClaimedThisEpoch",
       "msg": "You have already claimed this epoch"
     },
     {
-      "code": 6024,
+      "code": 6030,
       "name": "epochNotSettled",
       "msg": "That epoch is not settled yet"
     },
     {
-      "code": 6025,
+      "code": 6031,
       "name": "wrongEpoch",
       "msg": "That is not the epoch this chain is currently in"
     },
     {
-      "code": 6026,
+      "code": 6032,
       "name": "notSilentEnough",
       "msg": "This coin has heard about money too recently to be retired"
     },
     {
-      "code": 6027,
+      "code": 6033,
       "name": "retired",
       "msg": "This coin has retired; the peg has stopped"
     }
@@ -2476,6 +2735,58 @@ export type EmperorsNewCoin = {
               "the current term; everything else is withdrawable by its owner alone."
             ],
             "type": "pubkey"
+          },
+          {
+            "name": "copy",
+            "docs": [
+              "What this column currently says. UTF-8, left-aligned, zero-padded.",
+              "",
+              "**It persists across settlement.** A new tenancy does not blank the page",
+              "— yesterday's news stands until today's edition is filed, so a column",
+              "nobody writes in keeps saying whatever it last said, for as long as that",
+              "takes. Only `file_copy` and `spike` ever write here."
+            ],
+            "type": {
+              "array": [
+                "u8",
+                280
+              ]
+            }
+          },
+          {
+            "name": "copyLen",
+            "docs": [
+              "How many of `copy`'s bytes are real.",
+              "",
+              "Carried explicitly rather than left for the client to find, because",
+              "\"read until the first zero byte\" is a guess: nothing stops a tenant",
+              "filing a NUL, and the array is zero-padded either way. Zero means the",
+              "column has never been written and the page should render the Emperor's",
+              "own default copy — which is what every slot looks like at genesis and",
+              "what the vault-held ones look like forever."
+            ],
+            "type": "u16"
+          },
+          {
+            "name": "copyFiled",
+            "docs": [
+              "Whether this term's copy has been filed. **Once per term, write-once.**",
+              "",
+              "Not a rate limit — a decision. Unlimited rewrites would turn moderation",
+              "into a war of attrition that only a bot BadCode ran forever could win,",
+              "which puts us back in the loop as an operational dependency. One filing",
+              "per term makes the pen decisive instead."
+            ],
+            "type": "bool"
+          },
+          {
+            "name": "copySpiked",
+            "docs": [
+              "Whether the editor has struck this column this term. Blocks a second",
+              "spike, and blocks a re-file: a spiked column stays struck until the term",
+              "rolls, or the pen would just be the opening move of that same war."
+            ],
+            "type": "bool"
           },
           {
             "name": "bump",
@@ -2582,12 +2893,16 @@ export type EmperorsNewCoin = {
         "non-upgradeable and \"not even we can change the rule\" has to be literally",
         "true, not merely intended.",
         "",
-        "Two fields here move, and both are **one-way latches with no key on them**:",
-        "`initialized_assets` counts up to ten during bootstrap and then never moves",
-        "again, and `retired` flips once, permissionlessly, when the program has gone",
-        "long enough without hearing a new M2 figure. Neither can be set back, and",
-        "neither is anyone's decision — the second is a condition the program checks",
-        "about itself."
+        "Two fields here move without any key at all, and both are **one-way",
+        "latches**: `initialized_assets` counts up to ten during bootstrap and then",
+        "never moves again, and `retired` flips once, permissionlessly, when the",
+        "program has gone long enough without hearing a new M2 figure. Neither can be",
+        "set back, and neither is anyone's decision — the second is a condition the",
+        "program checks about itself.",
+        "",
+        "One field here **is** a key: `editor`, the pen. It is the single exception in",
+        "the whole program and it is deliberately narrow — no key over the money, one",
+        "pen over the words. See its own doc for exactly what it can reach."
       ],
       "type": {
         "kind": "struct",
@@ -2736,6 +3051,32 @@ export type EmperorsNewCoin = {
             "type": "bool"
           },
           {
+            "name": "editor",
+            "docs": [
+              "The editor's pen: the one key in this program, and it can only strike",
+              "words.",
+              "",
+              "It reaches exactly one instruction, `spike`, which replaces a column's",
+              "copy with `SPIKE_MARKER` — a fixed string it does not get to choose —",
+              "once per column per term. **The blast radius is ten columns a month, and",
+              "it cannot move a token.** Not one ENC, not one asset NFT, not one",
+              "certificate; the shape test in `initialize.ts` asserts the key appears in",
+              "no instruction that touches a token account.",
+              "",
+              "It exists because there is no on-chain answer to vile text and",
+              "pretending otherwise is how this gets ugly. A newspaper has an editor.",
+              "",
+              "`Some` while a pen exists, `None` once `break_the_pen` has been called —",
+              "which is irrevocable, because `pass_the_pen` needs a current editor to",
+              "sign and nothing else writes this field. Rotatable on purpose: a lost or",
+              "stolen key must be survivable without an upgrade authority to fall back",
+              "on, since by T22 there will not be one."
+            ],
+            "type": {
+              "option": "pubkey"
+            }
+          },
+          {
             "name": "bump",
             "type": "u8"
           }
@@ -2851,6 +3192,22 @@ export type EmperorsNewCoin = {
           {
             "name": "maxChangeBps",
             "type": "u16"
+          },
+          {
+            "name": "editor",
+            "docs": [
+              "Who holds the editor's pen at genesis, or `None` for a paper that is",
+              "feral from birth.",
+              "",
+              "**Not an economic parameter**, which is why it is not in",
+              "`params.genesis.json` alongside the rest — it is a key, chosen at",
+              "deployment, and the only one this program ever accepts. It can be",
+              "rotated afterwards by its holder and broken by its holder, and by",
+              "nobody else, ever."
+            ],
+            "type": {
+              "option": "pubkey"
+            }
           }
         ]
       }

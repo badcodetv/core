@@ -140,6 +140,14 @@ describe('initialize + init_asset', () => {
       'claim',
       'close_epoch', 'closeEpoch',
       'retire',
+      // The Gazette (T31). Added deliberately: none of the four touches Config's
+      // economic parameters, and only `pass_the_pen` / `break_the_pen` write to
+      // Config at all — to the one field that is a key rather than a rule. The
+      // test below pins what the pen can and cannot reach.
+      'file_copy', 'fileCopy',
+      'spike',
+      'pass_the_pen', 'passThePen',
+      'break_the_pen', 'breakThePen',
       // Mock builds only; absent from a real one, which the test below proves.
       'set_mock_m2', 'setMockM2',
       'mock_fund', 'mockFund',
@@ -173,6 +181,58 @@ describe('initialize + init_asset', () => {
     for (const gone of ['rentRatePerDayBps', 'rent_rate_per_day_bps', 'graceSeconds', 'grace_seconds', 'forecloseBounty', 'foreclose_bounty', 'rentAccrued', 'rent_accrued']) {
       expect(fields, `${gone} is still in the published interface`).to.not.include(gone)
     }
+  })
+
+  /**
+   * The editor's pen (T31), pinned to what it can reach.
+   *
+   * The program's claim is two-part and deliberately narrow: **no key over the
+   * money; one pen over the words.** The second half is only worth saying
+   * because the first half survives it, so the thing to assert is the boundary
+   * — that `Config.editor` appears in no instruction which touches a mint, a
+   * token account, the vault or the escrow. A stolen pen vandalises ten columns
+   * a month; it cannot move a token.
+   *
+   * Derived from the IDL rather than from a hand-written list, so a future
+   * instruction that handed the editor a token account would fail here without
+   * anyone remembering to come back and add it.
+   */
+  it('lets the editor key nowhere near a token', () => {
+    // Every way a token can be reached: an SPL mint, any token account, the
+    // Emperor's vault, the bid escrow. Case-insensitive because the two IDLs
+    // disagree about snake vs camel case — see chain/README.md.
+    const TOKENISH = /token|mint|vault|escrow/i
+
+    const withEditor = h.program.idl.instructions.filter((ix) =>
+      ix.accounts.some((a) => a.name === 'editor'),
+    )
+
+    // Not vacuous: if the field were renamed, the loop below would pass by
+    // examining nothing at all. Names are normalised because Anchor's two IDLs
+    // disagree about case and either could be the one loaded here.
+    const camel = (n: string) => n.replace(/_([a-z])/g, (_, c: string) => c.toUpperCase())
+    expect(
+      withEditor.map((ix) => camel(ix.name)).sort(),
+      'the editor key is not where this test thinks it is',
+    ).to.deep.equal(['breakThePen', 'passThePen', 'spike'])
+
+    for (const ix of withEditor) {
+      const reachable = ix.accounts.map((a) => a.name).filter((n) => TOKENISH.test(n))
+      expect(
+        reachable,
+        `${ix.name} puts the editor key next to ${reachable.join(', ')} — the pen must not reach the money`,
+      ).to.be.empty
+    }
+
+    // The tenant's own instruction is held to the same standard. It is the one
+    // place untrusted text enters the program, and it takes no token program,
+    // so no amount of copy can dislodge a coin.
+    const fileCopy = h.program.idl.instructions.find((ix) => /^file_?[Cc]opy$/.test(ix.name))
+    expect(fileCopy, 'file_copy is missing from the IDL').to.not.be.undefined
+    expect(
+      fileCopy!.accounts.map((a) => a.name).filter((n) => TOKENISH.test(n)),
+      'file_copy can reach a token account',
+    ).to.be.empty
   })
 
   /**
