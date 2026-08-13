@@ -1473,15 +1473,35 @@ is no setter for any economic parameter. The upgrade authority is burned at T22.
 >    dead series keeps the coin alive forever and retirement measures apathy
 >    rather than silence. This must be authored and its feed ID committed
 >    **before T18 can meet its acceptance criteria.**
->    **Decision owed to the executor:** `fredgraph.csv` carries the
->    *observation month* (e.g. `2026-07-01`), not the H.6 *release date*. For
->    T28's purpose — "has the Fed published anything new?" — the observation
->    month is sufficient and arguably better: it advances monthly, it freezes
->    when the series dies, and it is in the CSV we already fetch. If it is used,
->    **rename the field and say so in the docs** rather than calling an
->    observation date a release date. If a true release date is wanted, it needs
->    a second endpoint, and the job is immutable forever once stored — so decide
->    before storing, not after.
+>    **Decision owed to Kai, with the groundwork done (2026-08-13).** Tested
+>    against a live pull of `fredgraph.csv`, whose last row today is
+>    `2026-06-01,23155.2`:
+>    - **A Switchboard feed's value is a number**, and `2026-06-01` is not one.
+>      A single "date feed" is therefore not possible — the date has to be
+>      encoded numerically.
+>    - **The CSV's date column is literally named `observation_date`** — the
+>      month the figure describes, not the day the Fed published it. Today's
+>      last observation is June while the date is August, so it lags the release
+>      by about two months. **Calling it a release date in the code would be a
+>      lie in the field name**, and the field is permanent.
+>    - **Recommended mechanism — two extra feeds, combined on-chain.** Extract
+>      the year and the month as separate numeric feeds, both end-anchored like
+>      the value feed, then key off `year × 12 + month`. Verified against the
+>      live CSV in single-line mode:
+>      ```
+>      ([0-9]{4})-[0-9]{2}-[0-9]{2},[0-9.]+\s*$   ->  2026   ✓
+>      [0-9]{4}-([0-9]{2})-[0-9]{2},[0-9.]+\s*$   ->  06     ✓
+>      year × 12 + month                          ->  24318  (next month 24319)
+>      ```
+>      That key is **monotone, Fed-sourced, and freezes when the series dies** —
+>      which is exactly and only what `retire` needs. Rename `Printer.
+>      m2_release_date` to something honest (`m2_period` / `m2_observation_key`)
+>      if this is chosen.
+>    - If a **true H.6 release date** is wanted instead, it needs a second
+>      endpoint and its own keyless-source proof. More work, and it buys nothing
+>      `retire` actually uses.
+>
+>    **The job is immutable forever once stored, so decide before storing.**
 > 2. Add DBnomics as a median-aggregated second source (needs the
 >    JSONPath-to-last-element shape tested; its `observations=1` does not limit
 >    the response).
