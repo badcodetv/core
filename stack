@@ -11,8 +11,13 @@
 #   ./stack status         what is up, which programs, which wallet
 #   ./stack logs [web|validator]   follow logs
 #
-#   ./stack build [<program>] [--features mock]
+#   ./stack build [<program>]
 #                          build + publish IDL and TypeScript types
+#   ./stack build <program> --features mock
+#                          NAMING THE PROGRAM IS REQUIRED with --features:
+#                          cargo features are per-package, and `counter` has no
+#                          `mock`, so the unscoped form fails. You rarely need
+#                          this — `./stack test` builds the mock itself.
 #   ./stack deploy         deploy to the local validator
 #   ./stack redeploy [prog]  build + deploy — the loop after editing a program
 #   ./stack reset          wipe the ledger and redeploy (after a struct change)
