@@ -1,4 +1,4 @@
-import { copyFileSync, existsSync, mkdirSync, readdirSync } from 'node:fs'
+import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { chainDir } from './paths.js'
 import { runInChain } from './runner.js'
@@ -48,6 +48,135 @@ export function restoreKeys(root?: string): string[] {
   return restored
 }
 
+// ── Build provenance ────────────────────────────────────────────────────────
+// A cargo feature build is a *different program*. It compiles in code the
+// default build does not have, and that code exists precisely because it must
+// never reach a real cluster. But `deploy` uploads whatever `.so` is on disk
+// and has no way to tell the two apart — a binary carries no record of the
+// flags that made it. So the build writes one down beside the artifact, and the
+// deploy refuses to send a flagged artifact anywhere but a local validator.
+//
+// Nothing here knows what any feature means; a feature build is simply not the
+// thing that ships.
+
+/** Written beside `<name>.so`, and removed by the next default build of it. */
+const FEATURE_MARKER = '.features.json'
+
+export const featureMarkerPath = (programName: string, root?: string): string =>
+  join(deployDir(root), `${programName}${FEATURE_MARKER}`)
+
+/** Every program with a built artifact on disk. */
+export function builtArtifacts(root?: string): string[] {
+  const dir = deployDir(root)
+  if (!existsSync(dir)) return []
+  return readdirSync(dir).filter((f) => f.endsWith('.so')).map((f) => f.slice(0, -3))
+}
+
+/**
+ * Record — or clear — which cargo features produced the artifacts just built.
+ *
+ * Clearing on a default build is the half that keeps this honest: a marker that
+ * outlived the binary it described would refuse a deploy that is actually fine,
+ * which is the fastest way to teach someone to delete the guard.
+ */
+export function recordBuildFeatures(opts: {
+  programName?: string
+  features?: string[]
+  root?: string
+}): string[] {
+  const names = opts.programName ? [opts.programName] : builtArtifacts(opts.root)
+  const touched: string[] = []
+  for (const name of names) {
+    const path = featureMarkerPath(name, opts.root)
+    if (opts.features?.length) {
+      mkdirSync(deployDir(opts.root), { recursive: true })
+      writeFileSync(path, `${JSON.stringify({ features: opts.features, builtAt: new Date().toISOString() }, null, 2)}\n`)
+      touched.push(name)
+    } else if (existsSync(path)) {
+      rmSync(path)
+      touched.push(name)
+    }
+  }
+  return touched
+}
+
+/**
+ * The features that built this artifact: `[]` for a default build, `null` when
+ * nothing was recorded.
+ *
+ * **Null is not suspicion.** A fresh checkout has no `target/` at all, so a
+ * missing marker is the ordinary case and must not stand between anyone and a
+ * legitimate deploy — there the deploy fails for the honest reason that there is
+ * no binary. An unreadable marker is different: something wrote it and we cannot
+ * tell what, so it is reported rather than assumed innocent.
+ */
+export function buildFeatures(programName: string, root?: string): string[] | null {
+  const path = featureMarkerPath(programName, root)
+  if (!existsSync(path)) return null
+  try {
+    const parsed = JSON.parse(readFileSync(path, 'utf8')) as { features?: unknown }
+    if (!Array.isArray(parsed.features)) throw new Error('no features array')
+    return parsed.features.map(String)
+  } catch {
+    return ['(unreadable build marker)']
+  }
+}
+
+/** Localnet, by name or by URL. Everything else is somebody's real chain. */
+export function isLocalCluster(clusterOrUrl: string): boolean {
+  if (clusterOrUrl === 'localnet') return true
+  try {
+    const { hostname } = new URL(clusterOrUrl)
+    return hostname === '127.0.0.1' || hostname === 'localhost' || hostname === '0.0.0.0'
+  } catch {
+    return false
+  }
+}
+
+/**
+ * Refuse to send a feature-built artifact to a cluster that is not local.
+ *
+ * Localnet keeps working exactly as before — that is where a feature build
+ * belongs, and where the test suites need it.
+ */
+export function assertDefaultBuild(opts: {
+  cluster: string
+  programName?: string
+  root?: string
+}): void {
+  if (isLocalCluster(opts.cluster)) return
+  const names = opts.programName ? [opts.programName] : builtArtifacts(opts.root)
+  for (const name of names) {
+    const features = buildFeatures(name, opts.root)
+    if (!features?.length) continue
+    throw new Error(
+      `Refusing to deploy ${name} to ${opts.cluster}: this binary was not built from the default sources.\n\n` +
+        `target/deploy/${name}.so was produced by a build with cargo features [${features.join(', ')}], ` +
+        'according to the marker written beside it. A feature build compiles in code the shipping build ' +
+        'does not have, so it is for a local validator only.\n\n' +
+        'Rebuild without features, then deploy again:\n' +
+        `  chain build --program-name ${name}\n` +
+        `  chain deploy --cluster ${opts.cluster} --program-name ${name}\n\n` +
+        `(The marker is ${name}${FEATURE_MARKER}, written by the build that made this binary and ` +
+        'removed by the next default build of it.)',
+    )
+  }
+}
+
+export interface BuildOptions {
+  programName?: string
+  features?: string[]
+  /**
+   * Publish the generated interface into chain/idl. Default true.
+   *
+   * **A command whose job is to run or to test passes `false`.** chain/idl is
+   * tracked, and publishing it is a deliberate act with a diff to read — not a
+   * side effect of starting a validator. See `publishOrReport`.
+   */
+  publish?: boolean
+  root?: string
+}
+
 /**
  * Build the workspace, or one program.
  *
@@ -56,14 +185,13 @@ export function restoreKeys(root?: string): string[] {
  * program costs the whole workspace. Naming it turns a 90-second loop into a
  * 25-second one.
  */
-export function build(
-  opts: { programName?: string; features?: string[]; root?: string } | string = {},
-): void {
+export function build(opts: BuildOptions | string = {}): void {
   // Accept a bare root for the original call shape.
-  const { programName, features, root } =
-    typeof opts === 'string' ? { programName: undefined, features: undefined, root: opts } : opts
+  const { programName, features, publish, root } =
+    typeof opts === 'string' ? ({ root: opts } as BuildOptions) : opts
   restoreKeys(root)
   runInChain('anchor', ['build', ...buildArgs({ programName, features })], root)
+  recordBuildFeatures({ programName, features, root })
 
   // A feature build is a variant, not the artifact that ships, so it does not
   // overwrite the committed interface. Without this the checked-in IDL would
@@ -73,7 +201,56 @@ export function build(
     console.log(`Built with features [${features.join(', ')}] — committed IDL left unchanged.`)
     return
   }
+  if (publish === false) {
+    publishOrReport(root)
+    return
+  }
   syncIdl(root)
+}
+
+/**
+ * Publish only if there is nothing published yet; otherwise say what drifted.
+ *
+ * The exception matters as much as the rule. On a checkout that has never
+ * published an interface — a fresh copy of this toolchain into another project
+ * — writing chain/idl creates files rather than rewriting tracked ones, and
+ * without it `dev` would have no interface to deploy from or import. Once the
+ * directory has contents, the working tree belongs to whoever is reading the
+ * diff, so this reports and leaves it alone.
+ */
+function publishOrReport(root?: string): void {
+  if (publishedInterfaces(root).length === 0) {
+    syncIdl(root)
+    return
+  }
+  const drifted = idlDrift(root)
+  if (drifted.length === 0) return
+  console.log(
+    `\nchain/idl is out of date with this build: ${drifted.join(', ')}.\n` +
+      'This command does not publish it — run `chain build` when you mean to.\n',
+  )
+}
+
+/** Interfaces already published into chain/idl. */
+export function publishedInterfaces(root?: string): string[] {
+  const dir = generatedDir(root)
+  if (!existsSync(dir)) return []
+  return readdirSync(dir).filter((f) => f.endsWith('.json') || f.endsWith('.ts'))
+}
+
+/** Generated files that the committed copies no longer match. */
+export function idlDrift(root?: string): string[] {
+  const drifted: string[] = []
+  for (const [src, ext] of [[idlDir(root), '.json'], [typesDir(root), '.ts']] as const) {
+    if (!existsSync(src)) continue
+    for (const f of readdirSync(src).filter((f) => f.endsWith(ext))) {
+      const published = join(generatedDir(root), f)
+      if (!existsSync(published) || readFileSync(published, 'utf8') !== readFileSync(join(src, f), 'utf8')) {
+        drifted.push(f)
+      }
+    }
+  }
+  return drifted
 }
 
 /**
@@ -104,6 +281,7 @@ export interface DeployOptions {
 }
 
 export function deploy({ cluster, programName, maxLen, root }: DeployOptions): void {
+  assertDefaultBuild({ cluster, programName, root })
   restoreKeys(root)
   const args = [
     'deploy',
@@ -148,6 +326,10 @@ export function deployProgram(opts: {
   maxLen?: number
   root?: string
 }): void {
+  // Same provenance gate as `deploy`, reached through the URL: this path takes
+  // a cluster URL rather than a cluster name, and it is the one localnet
+  // actually uses.
+  assertDefaultBuild({ cluster: opts.url, programName: opts.name, root: opts.root })
   restoreKeys(opts.root)
   runInChain(
     'solana',

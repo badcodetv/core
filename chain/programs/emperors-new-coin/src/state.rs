@@ -60,6 +60,27 @@ pub const GENESIS_M2_VALUE: u64 = 22_176_100_000;
 /// point, and `sync_m2` refuses to run until all ten are real.
 pub const ASSET_COUNT: u8 = 10;
 
+/// The genesis price ladder, in **parts per million of the genesis supply**,
+/// cheapest first. Mirrors `assets.genesisPricePpm` in `params.genesis.json`,
+/// which is where the ladder was chosen (T15) and what the simulation swept.
+///
+/// **It lives in the program because the program is the only thing that can
+/// still check it.** `init_asset` takes an absolute number of base units, and
+/// until this constant existed the ppm → base-units multiplication was done by
+/// hand at bootstrap — once, at the one moment it can never be corrected,
+/// against a program that ships non-upgradeable. Now the deployer states the
+/// number and the program checks their arithmetic against this ladder; the two
+/// have to agree or the asset is not created. The test harness computes the
+/// same prices straight from `params.genesis.json`, so if this array and that
+/// file ever drift apart, `test-init` fails on the first asset rather than
+/// somebody noticing years later that a column is priced wrong.
+///
+/// The *ratios* are what hold forever — every `sync_m2` rescales all ten by the
+/// same factor, so 100ppm stays one basis point of all the money there is no
+/// matter how much of it gets printed.
+pub const GENESIS_PRICE_PPM: [u32; ASSET_COUNT as usize] =
+    [100, 170, 280, 460, 770, 1300, 2200, 3600, 6000, 10_000];
+
 /// One day. The unit the shipped economy is measured in.
 pub const SECONDS_PER_DAY: i64 = 86_400;
 
@@ -510,6 +531,20 @@ mod tests {
             let (addr, _) = Pubkey::find_program_address(&refs, &pid);
             assert!(seen.insert(addr), "asset {i} collided with an earlier index");
         }
+    }
+
+    /// One rung per slot, cheapest first, and no two the same. `init_asset`
+    /// forces the indexes to arrive in sequence, so an ascending ladder is what
+    /// makes "cheapest column first" a fact about the chain rather than a
+    /// convention the deployer is trusted to follow.
+    #[test]
+    fn the_price_ladder_has_a_rung_per_asset_and_climbs() {
+        assert_eq!(GENESIS_PRICE_PPM.len(), ASSET_COUNT as usize);
+        assert!(GENESIS_PRICE_PPM.windows(2).all(|w| w[0] < w[1]));
+        // The two ends, as published: one basis point of the money supply up to
+        // one per cent of it. Mirrors params.genesis.json.
+        assert_eq!(GENESIS_PRICE_PPM[0], 100);
+        assert_eq!(GENESIS_PRICE_PPM[ASSET_COUNT as usize - 1], 10_000);
     }
 
     /// A one-byte index and an eight-byte little-endian epoch are different

@@ -2532,116 +2532,121 @@ export type EmperorsNewCoin = {
     },
     {
       "code": 6011,
+      "name": "wrongGenesisPrice",
+      "msg": "That is not this slot's rung on the genesis price ladder"
+    },
+    {
+      "code": 6012,
       "name": "wrongHolderAccount",
       "msg": "That token account does not belong to the holder"
     },
     {
-      "code": 6012,
+      "code": 6013,
       "name": "invalidInterpolationWindow",
       "msg": "Invalid price interpolation window"
     },
     {
-      "code": 6013,
+      "code": 6014,
       "name": "bidBelowReserve",
       "msg": "That bid is below what M2 says this asset is worth"
     },
     {
-      "code": 6014,
+      "code": 6015,
       "name": "bidNotHighEnough",
       "msg": "That bid does not beat the standing high bid"
     },
     {
-      "code": 6015,
+      "code": 6016,
       "name": "termEnded",
       "msg": "This term has ended; it must be settled before bidding reopens"
     },
     {
-      "code": 6016,
+      "code": 6017,
       "name": "termNotEnded",
       "msg": "This term has not ended yet"
     },
     {
-      "code": 6017,
+      "code": 6018,
       "name": "staleBidOutstanding",
       "msg": "Withdraw your bid from the previous term first"
     },
     {
-      "code": 6018,
+      "code": 6019,
       "name": "bidIsStanding",
       "msg": "The standing high bid cannot be withdrawn until the term settles"
     },
     {
-      "code": 6019,
+      "code": 6020,
       "name": "wrongBidAccount",
       "msg": "That is not the standing high bid for this asset"
     },
     {
-      "code": 6020,
+      "code": 6021,
       "name": "noQualifyingBid",
       "msg": "No bid cleared the reserve for this term"
     },
     {
-      "code": 6021,
+      "code": 6022,
       "name": "qualifyingBidExists",
       "msg": "A bid did clear the reserve; this term must be settled"
     },
     {
-      "code": 6022,
+      "code": 6023,
       "name": "noCertificateDue",
       "msg": "No certificate is issuable for that tenancy"
     },
     {
-      "code": 6023,
+      "code": 6024,
       "name": "notTheTenant",
       "msg": "Only the current tenant of this column may file copy"
     },
     {
-      "code": 6024,
+      "code": 6025,
       "name": "alreadyFiled",
       "msg": "This column has already been filed this term"
     },
     {
-      "code": 6025,
+      "code": 6026,
       "name": "columnSpiked",
       "msg": "This column has been spiked; the next term gets a fresh page"
     },
     {
-      "code": 6026,
+      "code": 6027,
       "name": "copyTooLong",
       "msg": "That copy is longer than a column"
     },
     {
-      "code": 6027,
+      "code": 6028,
       "name": "notTheEditor",
       "msg": "Only the editor may do that"
     },
     {
-      "code": 6028,
+      "code": 6029,
       "name": "penBroken",
       "msg": "The pen is broken; this paper has no editor and never will again"
     },
     {
-      "code": 6029,
+      "code": 6030,
       "name": "alreadyClaimedThisEpoch",
       "msg": "You have already claimed this epoch"
     },
     {
-      "code": 6030,
+      "code": 6031,
       "name": "epochNotSettled",
       "msg": "That epoch is not settled yet"
     },
     {
-      "code": 6031,
+      "code": 6032,
       "name": "wrongEpoch",
       "msg": "That is not the epoch this chain is currently in"
     },
     {
-      "code": 6032,
+      "code": 6033,
       "name": "notSilentEnough",
       "msg": "This coin has heard about money too recently to be retired"
     },
     {
-      "code": 6033,
+      "code": 6034,
       "name": "retired",
       "msg": "This coin has retired; the peg has stopped"
     }

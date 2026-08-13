@@ -71,7 +71,7 @@ bare does not work.
 | `./stack start` | Everything at once. The command to run when nothing works. |
 | `./stack stop` | Stop the web app and the validator. |
 | `./stack status` | What is up, which programs, which wallet. |
-| `./stack build [prog]` | Build + publish the IDL and TypeScript types. |
+| `./stack build [prog]` | Build + publish the IDL and TypeScript types. The **only** command that writes to `chain/idl`. |
 | `./stack deploy` | Deploy to the local validator. |
 | `./stack redeploy [prog]` | Build + deploy. The loop after editing a program. |
 | `./stack reset` | Wipe the ledger and redeploy. After a layout change. |
@@ -150,7 +150,20 @@ import type { Counter } from '@chain/idl/counter'      // compile time: the stru
 type CounterAccount = IdlAccounts<Counter>['counter']  // { count: BN, updatedAt: BN, ... }
 ```
 
-Two consequences worth knowing:
+**Publishing is a command, never a side effect.** `chain/idl` is tracked, so
+writing it belongs to the command whose job that is — `build` (and `idl`, and
+`redeploy`, which is build + deploy). **`test`, `reset`, `start` and `dev` build
+without publishing**: a command that validates or runs must leave the working
+tree exactly as it found it, or "the tests passed" and "the tree is clean" stop
+being separable questions and a mock interface ships on somebody's ordinary
+commit. Those commands say when a build has moved ahead of the committed
+interface rather than quietly moving it for you; `chain build` is the answer.
+Two exceptions, both narrow: a build with `--features` never publishes at all,
+and a checkout with nothing published yet gets its first copy written, because
+there creating a file cannot dirty anything and without it a fresh copy of this
+toolchain has no interface to deploy from.
+
+Two more consequences worth knowing:
 
 **Nothing hardcodes a program address.** The IDL carries `address` at the top, so
 a redeploy to a different address needs no code change anywhere.
@@ -192,6 +205,17 @@ it again after an edit. Beyond localnet:
 ```
 
 Four things decide whether that goes well.
+
+**The binary is guarded; the interface is grepped.** A feature build writes a
+marker beside its artifact (`chain/target/deploy/<program>.features.json`)
+recording which cargo features produced it, and `chain deploy` **refuses to send
+a marked artifact anywhere but a local validator** — naming the program, the
+features, and the rebuild that fixes it. The next default build of that program
+removes the marker, so the guard cannot go stale, and a checkout with no marker
+at all deploys exactly as before. This exists because `deploy` uploads whatever
+`.so` is on disk and `./stack test` builds the mock **last**: after any test run
+the artifact on disk is the mock one, and a binary carries no record of the flags
+that made it.
 
 **Build without features, and check the IDL before you commit it.** A mock build
 publishes an interface describing a program you must never release. `./stack

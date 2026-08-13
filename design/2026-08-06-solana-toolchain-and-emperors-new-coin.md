@@ -1219,6 +1219,63 @@ is no setter for any economic parameter. The upgrade authority is burned at T22.
   token and the faucet is T13, so without it the auction could not be tested
   against a bidder who owns anything.
 
+  **🔴 OPEN DECISION FOR KAI — what the certificate looks like in a wallet.**
+  Raised by the pre-burn review (2026-08-13) as "every tenancy certificate is
+  minted with an empty URI"; **deliberately not fixed by the executor**, because
+  every fix is a permanent artistic commitment made before an irreversible burn,
+  and one of them would make BadCode an operational dependency on its own
+  authority. The facts, then the options.
+
+  *What is actually true.* `mint_certificate` writes name, symbol and URI into
+  the mint's own Token-2022 metadata, so **the name is on-chain and does
+  render** — "ENC Tenancy 3 — Term 7", from the chain, forever. What the empty
+  URI costs is the JSON a wallet fetches for the *image*, description and
+  attributes. So the certificate renders as a correctly-named token with no
+  artwork, not as nothing; the review's "will render as nothing" overstates it,
+  and some indexers do hide an asset with no metadata document, so it is not far
+  off in practice. The update authority is dropped in the same instruction, on
+  purpose (a record that can be rewritten is not a record), so whatever is
+  chosen here is chosen once.
+
+  *The same decision is already owed elsewhere, and should be made once.*
+  `init_asset` takes a `uri` per asset and the harness passes the placeholder
+  `https://badcode.dev/enc/assets/{i}.json`. **T22 item 1 already lists the ten
+  image URIs as Jack's call at the burn.** The certificate was simply left out
+  of that list. Decide both together.
+
+  1. **Leave it blank, deliberately.** Zero dependency, and the joke is exact:
+     you never owned the thing, and the receipt is for clothes that were never
+     there. Cost: indistinguishable from an oversight to anyone who does not
+     know the bit, and some wallets will not list it at all. This is the only
+     option that costs nothing and commits to nothing.
+  2. **One immutable content-addressed URI** (`ar://` or `ipfs://`), the same
+     one on every certificate — the asset and term are already in the name, so
+     no per-term file is needed. Pay once, nothing to keep alive, no key that
+     can repoint it. Costs a one-time upload, an image, and the acceptance that
+     the fragile part is public gateways rather than the data. **The best fit
+     with the project's own constraint**, and the recommendation if it is to
+     look like anything.
+  3. **An HTTPS URI** (a prefix set at genesis, derived per term). Renders
+     properly in every wallet today and ties the artwork to a domain resolving
+     forever on an NFT nobody can update. This is the operational dependency
+     the project exists to avoid, and the review flags it separately at lower
+     severity. **Not recommended.**
+  4. **A `data:` URI built on-chain** — inline JSON with an inline SVG. Fully
+     self-contained and genuinely appealing. But many wallets fetch metadata
+     through their own http-only proxy, so it may render nowhere while costing
+     rent on every certificate; it would have to be proven against a real wallet
+     *before* the burn, and there is no second chance afterwards.
+  5. **On-chain `additional_metadata`** (asset index, term number, issue date)
+     — cheap, permanent, no dependency, and it makes the receipt carry its own
+     facts. Solves no image; **combines with any of the above**, and is worth
+     doing on top of 1 or 2.
+
+  *Implementation, when it is decided:* the URI is one `String::new()` in
+  `mint_certificate.rs`. For 2 or 3 it would come from a genesis parameter —
+  the smallest honest shape is a fixed-size `cert_uri` on `Config`, written at
+  `initialize` and without a setter, like every other rule. No new authority
+  either way.
+
 ### T13: The faucet — register-now, collect-next-epoch   [Status: pending | Model: opus]
 - **Scope:** `claim()` in epoch `N`: (1) create `FaucetEpoch(N)` if absent, payer
   = caller, snapshotting `pot(N) = α × max(0, V − floor·S)`; (2) if the caller
@@ -2627,6 +2684,108 @@ while the page correctly reports localnet.
 
 _(appended by executors during implementation)_
 
+- **2026-08-13 · PRE-BURN FIXES · findings 1, 3 and 5 fixed; finding 4 referred
+  to Kai.** The chain-and-toolchain half of the pre-burn review. Every judgement
+  call is stated here rather than left in the diff.
+
+  **Finding 1 (🔴 CRITICAL, nothing verified the deployed binary was a default
+  build) — fixed in the portable package.** A binary carries no record of the
+  flags that made it, so the build now writes one down: a **features marker**
+  beside the artifact (`target/deploy/<program>.features.json`) naming the cargo
+  features that produced it, and `deploy` **refuses to send a marked artifact to
+  any cluster that is not local**. Four design calls, each of which could have
+  made it useless:
+  1. **The next default build of that program deletes the marker.** A guard that
+     goes stale refuses a deploy that is fine, and that is how a guard gets
+     deleted instead of fixed. `build --program-name x` clears only `x`'s; a
+     workspace build clears every artifact's.
+  2. **A missing marker deploys.** `target/` is gitignored, so a fresh clone has
+     no marker *and no binary* — the deploy fails there for the honest reason,
+     not on a provenance check nobody can satisfy. Absence means "nothing was
+     recorded", never "assume the worst".
+  3. **An unreadable marker refuses**, and says the file is unreadable. Something
+     wrote it and we cannot tell what.
+  4. **Local is local by name or by URL** (`localnet`, `127.0.0.1`, `localhost`),
+     because the localnet path deploys through `solana program deploy` with a URL
+     and never sees a cluster name. Localnet behaviour is byte-for-byte what it
+     was — that is where the mock belongs.
+  The refusal names the artifact, the features, and the two commands that fix it.
+  **It mentions no coin and no feature by meaning** — it is generic to "a program
+  built with cargo features", which is the portability contract. Twelve unit
+  tests cover it, all against `mkdtemp` roots. Demonstrated live: after a test
+  run, `chain deploy --cluster devnet` refuses without touching the network.
+
+  **Finding 5 (🔴 HIGH, `test`/`reset`/`start` rewrote the committed IDL) —
+  fixed, and stated as a rule.** *A command whose job is to test or to run must
+  not mutate tracked files; a command whose job is to publish an interface may.*
+  Sorted: **`build` and `idl` publish** (and `redeploy`, which is build + deploy
+  — after editing a program the whole point is that the types reach the
+  browser); **`test`, `reset`, `start`/`dev` do not**. `build` gained
+  `--no-publish` and `./stack test` uses it. Two deliberate exceptions: a
+  `--features` build already published nothing, and a checkout with **nothing
+  published yet** gets its first copy written — there, writing creates files
+  rather than dirtying tracked ones, and without it a fresh copy of this
+  toolchain into another project has no interface to deploy from. Where a
+  non-publishing command finds the build ahead of the committed interface it
+  **says so and names the files** rather than silently moving them; that warning
+  is the ergonomic replacement for the old side effect, and `chain build` is the
+  answer to it. Demonstrated rather than asserted: `./stack test` (85 passing)
+  and `./stack check` both left `chain/idl` byte-identical, checked with
+  `md5sum -c`.
+
+  **Finding 3 (🔴 HIGH, `init_asset` did not validate `genesis_price`) — fixed
+  harder than asked, deliberately.** The ticket asked for a zero check, a
+  strictly-increasing check, and whatever could be cheaply asserted about scale.
+  The ordering check needs the previous rung, which meant either a permanent
+  `Config` field or an extra account — and both are more machinery than the real
+  problem, which is the *last* sentence of the finding: the ppm → base-units
+  multiplication lived only in a test file, and **T22 asks the operator to redo
+  it by hand at the one moment it can never be corrected.** So the ladder now
+  lives in the program: `GENESIS_PRICE_PPM` in `state.rs`, mirroring
+  `params.genesis.json`, and `init_asset` computes the rung itself from
+  `config.k × GENESIS_M2_VALUE` — the same genesis supply `initialize` mints —
+  and **requires the caller's number to equal it**. The argument stays, as a
+  statement of intent the program checks; the deployer can no longer be wrong
+  quietly. Zero is unreachable (100ppm of the genesis supply is
+  2,217,610,000,000 base units, and `math::genesis_price` refuses to *return*
+  zero, for the reason the finding names: `rescale(0, ..) == 0`, so a slot that
+  starts at nothing stays there through every sync and is winnable for one base
+  unit forever). Ordering comes free and is stronger than asked: **the ladder is
+  ascending and `init_asset` already forces indexes to arrive in sequence, so
+  the ten can only be created cheapest first.** Checked before enforcing, as
+  instructed — `bootstrap()` loops 0→9 and `assets.genesisPricePpm` is ascending,
+  so ascending-by-index is what the callers already do. New error variant
+  `WrongGenesisPrice`, whose log line prints the ppm, the base units the ladder
+  expected, and what arrived.
+  **The cost of this call, stated plainly:** the ladder is now in two files.
+  `params.genesis.json` remains where it was *chosen* and what the simulation
+  sweeps; the Rust constant is what is *enforced*. They cannot drift silently —
+  the test harness computes prices straight from the JSON, so a disagreement
+  fails `test-init` on asset 0 with the expected and actual numbers in the log,
+  rather than a column being priced wrong for the life of the coin. Adding a
+  variant mid-enum shifts the numeric codes after it; nothing keys on those
+  (`packages/enc` looks errors up by name and falls back to the IDL's own
+  message), and the committed IDL was republished in the same change.
+
+  **Finding 4 (🔴 HIGH, certificates minted with an empty URI) — NOT fixed.
+  Referred to Kai as a decision, with the options and trade-offs written into
+  T12's Notes.** Every available fix is a permanent artistic commitment made
+  before an irreversible burn, and the one that renders best in a wallet today
+  (an HTTPS URI on an un-updatable NFT) would make BadCode an operational
+  dependency on its own domain — which is a thing an executor must not decide.
+  Two corrections to the finding while it is open. **The name is on-chain and
+  does render**: `mint_certificate` writes name and symbol into the mint's own
+  Token-2022 metadata, so the certificate renders as "ENC Tenancy 3 — Term 7"
+  with no artwork, not as nothing. And **the same decision is already owed at
+  T22 item 1** for the ten asset URIs (the harness passes a placeholder
+  `https://badcode.dev/…`); the certificate was simply left off that list, and
+  the two should be decided together.
+
+  **Verified:** 43 Rust unit tests, 63 `chain-cli` unit tests, `./stack check`,
+  `npm run build`, `./stack test` 85 passing / 5 pending / 0 failing,
+  `test-init` on a fresh ledger, `test-retire` alone. Working tree clean after
+  `check` and after `test`.
+
 - **2026-08-13 · T21 · 🔴 "thirteen in a row" is not true of the record, and it
   had already propagated into three files.** The claims standard itself
   (`2026-08-12-enc-architecture-decision.md` §4) carried *"M2 falls in 6.1% of
@@ -2696,6 +2855,48 @@ _(appended by executors during implementation)_
   sentence. It now exists and is that authority. Worth noting because a dangling
   link to a claims document reads, to anyone auditing, exactly like a claim with
   no backing — which is what it was.
+
+- **2026-08-13 · PRE-BURN FIX · the chain and toolchain half (findings 1, 3, 5).**
+  Written up by the orchestrator: the executor produced the work but stopped
+  before committing or logging it, so everything below was reviewed and
+  re-validated from the working tree rather than taken on report.
+  - **Finding 1 — build provenance.** `build()` now writes a **feature marker**
+    beside each artifact recording the cargo features that produced it, and the
+    next default build of that program clears it, so a marker cannot outlive its
+    binary and refuse a deploy that is fine. `deploy` calls `assertDefaultBuild`,
+    which **refuses any feature-built artifact on a non-localnet cluster** and
+    names both the problem and the two commands that fix it. Localnet is
+    untouched — that is where the mock belongs. An unreadable marker reports
+    itself rather than being assumed innocent. Generic throughout: it speaks of
+    "cargo features", names no coin, and the portability grep still passes.
+  - **Finding 5 — the dev loop no longer publishes.** `BuildOptions` gained
+    `publishIdl`, and **a command whose job is to run or to test passes
+    `false`**; only a command whose job is to publish an interface writes into
+    `chain/idl`. **Demonstrated, not asserted:** a full seven-suite run plus
+    `reset` was executed with `chain/idl` diffed before and after — **no drift.**
+  - **Finding 3 — `init_asset` went further than the ticket asked, and better.**
+    Rather than merely rejecting zero and enforcing ascending order, the ten-rung
+    ladder now lives **in the program** as `GENESIS_PRICE_PPM`, and `init_asset`
+    computes the expected base-unit price itself and requires exact equality,
+    erroring with `WrongGenesisPrice` and a message naming the ppm, the expected
+    value and what it got. **This deletes the T22 hazard entirely rather than
+    guarding it**: the by-hand multiplication that previously existed only in a
+    test file cannot now be got wrong, because the operator no longer supplies
+    the answer — the program already knows it. Unit tests pin the ladder's
+    length, its ascending order and both published ends against
+    `params.genesis.json`.
+  - **Finding 4 — deliberately NOT fixed.** The empty certificate URI is a
+    decision for Kai, not an agent: any HTTPS URI on an NFT whose update
+    authority is `None` ties the artwork forever to one domain staying alive,
+    which is exactly the operational dependency the whole design exists to
+    avoid, and is itself a separate review finding. **Options are owed to a
+    human; nothing was invented.**
+  - **Validation (orchestrator, from a fresh ledger):** Rust unit tests **43
+    passing**; `test-sync` 14, `test-auction` 12, `test-faucet` 10,
+    `test-gazette` 16, `test-actions` 15, `test-retire` 7; `chain-cli` **63**
+    (up from 51). `test-init` failed once on a **transient platform-tools
+    download timeout inside Docker** — a cold-cache network failure, not a code
+    failure — and was re-run.
 
 - **2026-08-13 · PRE-BURN FIX · the claims and copy half (findings 2, 7 and the
   two copy-lens findings). The faucet pays half, and everything downstream of

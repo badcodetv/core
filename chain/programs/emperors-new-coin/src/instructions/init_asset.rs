@@ -54,6 +54,26 @@ pub fn handler(
         EncError::AssetOutOfOrder
     );
 
+    // The ladder is the program's, and the caller's number has to match it.
+    // `genesis_price` arrives as absolute base units, which is a multiplication
+    // somebody does by hand at bootstrap — and both ways of getting it wrong are
+    // permanent and silent on a program that ships non-upgradeable. Zero is an
+    // absorbing state: `math::rescale(0, ..)` is zero, so the slot would stay at
+    // zero through every sync the coin ever runs and be winnable for one base
+    // unit forever. A mis-scaled ladder — ppm passed raw, or a dropped × k —
+    // stays internally consistent while being permanently wrong against M2,
+    // which is the claim the whole coin rests on.
+    //
+    // Checking equality rather than a range also fixes the ordering for free:
+    // the ladder is ascending, `index` is forced to arrive in sequence by the
+    // check above, so the ten prices can only be created cheapest first.
+    let ppm = GENESIS_PRICE_PPM[index as usize];
+    let expected = crate::math::genesis_price(GENESIS_M2_VALUE, ctx.accounts.config.k, ppm)?;
+    if genesis_price != expected {
+        msg!("asset {index} is {ppm} ppm of the genesis supply — {expected} base units, not {genesis_price}");
+        return err!(EncError::WrongGenesisPrice);
+    }
+
     let now = Clock::get()?.unix_timestamp;
     let vault_seeds: &[&[u8]] = &[VAULT_SEED, &[ctx.bumps.vault]];
 

@@ -153,7 +153,12 @@ check() {
   npm test
 }
 
-help() { sed -n '3,29p' "$0" | sed 's/^# \{0,1\}//'; }
+# Prints the header block above — from after the shebang to the first line that
+# is not a comment. Deliberately NOT a line range: this was `sed -n '3,29p'`,
+# and every time the header grew the range silently swallowed the bottom of it.
+# By 2026-08-13 it was hiding six commands, `./stack check` among them — the one
+# every ticket is required to run.
+help() { awk 'NR<3 {next} /^#/ {sub(/^# ?/, ""); print; next} {exit}' "$0"; }
 
 # ── Dispatch ─────────────────────────────────────────────────────────────────
 cmd="${1:-help}"
@@ -178,8 +183,11 @@ case "$cmd" in
   # build is automatic; there is nothing to ask for. `--skip-build` is the one
   # useful passthrough — it re-runs a suite against what is already deployed.
   test)    args=(); if [[ $# -gt 0 && "$1" != -* ]]; then args+=(--script "$1"); shift; fi
+           # --no-publish on both: this command's job is to test, and chain/idl
+           # is tracked. A validation run that rewrites committed files makes
+           # "the tests passed and the tree is clean" two different questions.
            if [[ "$*" != *--features* && "$*" != *--skip-build* ]]; then
-             chain build
+             chain build --no-publish
              chain build --program-name emperors_new_coin --features mock
              args+=(--skip-build)
            fi

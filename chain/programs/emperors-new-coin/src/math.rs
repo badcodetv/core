@@ -17,6 +17,12 @@ use crate::errors::EncError;
 /// Basis points denominator. 10,000 bps = 100%.
 pub const BPS: u128 = 10_000;
 
+/// Parts-per-million denominator. The genesis price ladder is measured in these
+/// rather than in basis points: the cheapest slot is one basis point of the
+/// money supply, and a ladder that started at "1" would have no room underneath
+/// it to be finer than the masthead ever needs.
+pub const PPM: u128 = 1_000_000;
+
 /// Narrow a `u128` back to `u64`, erroring instead of truncating.
 #[inline]
 fn narrow(value: u128) -> Result<u64> {
@@ -115,6 +121,28 @@ pub fn capped_step(from: u64, to: u64, cap_bps: u16) -> Result<u64> {
         let floor = ((from as u128).saturating_sub(cap)).max(1);
         Ok(to.max(narrow(floor)?))
     }
+}
+
+/// One rung of the genesis price ladder, in base units.
+///
+/// The ladder is chosen as a fraction of the money supply rather than as a
+/// number of tokens (see `GENESIS_PRICE_PPM`), so the only place the absolute
+/// figure exists is here — computed from the same genesis supply `initialize`
+/// mints, by the program that is going to enforce it.
+///
+/// **It refuses to produce zero.** A zero price is an absorbing state: `rescale`
+/// multiplies it by every later ratio and gets zero back, so the slot would
+/// stay at zero through every sync the coin ever performs and be winnable for
+/// one base unit forever. On a non-upgradeable program that is permanent, so it
+/// is made unreachable here rather than caught downstream.
+pub fn genesis_price(m2_value: u64, k: u64, ppm: u32) -> Result<u64> {
+    let supply = target_supply(m2_value, k)? as u128;
+    let price = narrow(supply * (ppm as u128) / PPM)?;
+    if price == 0 {
+        msg!("a genesis rung of {ppm} ppm of {supply} base units rounds to zero");
+        return err!(EncError::WrongGenesisPrice);
+    }
+    Ok(price)
 }
 
 /// Scale `value` by `to / from`, in `u128` throughout.
@@ -409,6 +437,49 @@ mod tests {
         assert!(rescale(1_000, 0, 100).is_err());
         assert!(rescale(u64::MAX, 1, 2).is_err());
         assert!(rescale(u64::MAX, 2, 2).is_ok());
+    }
+
+    // ── The genesis ladder ──────────────────────────────────────────────────
+
+    #[test]
+    fn the_cheapest_rung_is_one_basis_point_of_all_the_money_there_is() {
+        let supply = target_supply(M2_REAL, K).unwrap();
+        // 100 ppm = 1bp. 22,176,100,000,000,000 ÷ 10,000.
+        assert_eq!(genesis_price(M2_REAL, K, 100).unwrap(), supply / 10_000);
+        assert_eq!(genesis_price(M2_REAL, K, 100).unwrap(), 2_217_610_000_000);
+        // …and the dearest is 1%, a hundred times more.
+        assert_eq!(genesis_price(M2_REAL, K, 10_000).unwrap(), supply / 100);
+        assert_eq!(genesis_price(M2_REAL, K, 10_000).unwrap(), 221_761_000_000_000);
+    }
+
+    /// Every rung, in the order `init_asset` will be called in. The ladder has
+    /// to climb: the indexes are forced to arrive in sequence, so this is what
+    /// makes "cheapest column first" true of the chain rather than of a
+    /// convention. (The check that the *ladder itself* still matches
+    /// `params.genesis.json` is `test-init`, which prices its ten assets
+    /// straight from the JSON and is refused if the two ever disagree.)
+    #[test]
+    fn the_ladder_climbs_and_never_touches_zero() {
+        let mut previous = 0u64;
+        for (i, ppm) in crate::state::GENESIS_PRICE_PPM.iter().enumerate() {
+            let price = genesis_price(M2_REAL, K, *ppm).unwrap();
+            assert!(price > previous, "rung {i} does not climb: {price} after {previous}");
+            previous = price;
+        }
+    }
+
+    /// Zero is the failure this exists to prevent, and the reason is one line
+    /// down: every later sync multiplies the price by a ratio, and zero times
+    /// anything is zero — so a slot that starts at nothing is winnable for one
+    /// base unit for the life of the coin.
+    #[test]
+    fn a_rung_that_rounds_to_zero_is_refused_rather_than_stored() {
+        assert_eq!(rescale(0, 100, 10_000_000).unwrap(), 0);
+        // A supply small enough that one ppm of it is nothing.
+        assert!(genesis_price(1, 1, 1).is_err());
+        assert!(genesis_price(0, K, 100).is_err());
+        // And a rung that cannot be represented at all is refused, not wrapped.
+        assert!(genesis_price(u64::MAX, K, 100).is_err());
     }
 
     // ── Price interpolation ─────────────────────────────────────────────────

@@ -21,7 +21,9 @@ export {
 export { walletPath, ensureWallet, walletAddress, walletBalance } from './wallet.js'
 export {
   build, deploy, deployProgram, test, testArgs, exportIdl, syncIdl, restoreKeys, idlDir, typesDir, generatedDir,
-  keysDir, deployDir, LEGACY_VALIDATOR_ARGS, type DeployOptions, type TestOptions,
+  keysDir, deployDir, LEGACY_VALIDATOR_ARGS, assertDefaultBuild, buildFeatures, builtArtifacts,
+  featureMarkerPath, idlDrift, isLocalCluster, publishedInterfaces, recordBuildFeatures,
+  type BuildOptions, type DeployOptions, type TestOptions,
 } from './anchor.js'
 
 const CLUSTER_URLS: Record<string, string> = {
@@ -85,7 +87,10 @@ async function bringUp(opts: { reset?: boolean } = {}): Promise<void> {
   await up({ reset: opts.reset })
   console.log(`Validator up at ${CLUSTER_URLS.localnet}`)
   ensureFundedWallet(CLUSTER_URLS.localnet)
-  build()
+  // Builds, but does not publish: this command's job is to *run* the thing, and
+  // chain/idl is tracked. Starting a validator is not the moment to rewrite a
+  // committed interface — `chain build` is, and it says what it published.
+  build({ publish: false })
   await deployLocalnet()
   console.log('\nDeployed:')
   for (const p of deployedPrograms()) console.log(`  ${p.name.padEnd(20)} ${p.address}`)
@@ -279,9 +284,15 @@ export function chainCommand(): Command {
     .description('Build the Anchor workspace and publish its IDL + TypeScript types.')
     .option('--program-name <name>', 'build only this program — much faster in a workspace')
     .option('--features <list>', 'comma-separated cargo features, e.g. mock')
-    .action((opts: { programName?: string; features?: string }) => {
-      build({ programName: opts.programName, features: splitFeatures(opts.features) })
-      console.log(`Published interfaces to chain/idl:`)
+    // Publishing is this command's job, so it is the one place that does it by
+    // default. `--no-publish` exists for the callers that only want the binary:
+    // a test run, or a script bringing a validator up.
+    .option('--no-publish', 'build only — leave the committed chain/idl alone')
+    .action((opts: { programName?: string; features?: string; publish?: boolean }) => {
+      const features = splitFeatures(opts.features)
+      build({ programName: opts.programName, features, publish: opts.publish })
+      const published = opts.publish !== false && !features?.length
+      console.log(published ? 'Published interfaces to chain/idl:' : 'Programs, per the committed IDL:')
       for (const p of deployedPrograms()) console.log(`  ${p.name.padEnd(20)} ${p.address}`)
     })
 
@@ -329,7 +340,11 @@ export function chainCommand(): Command {
     // toolchain, which under Docker only exists in the container. Without this
     // there is no way to run them at all on a machine with no host Rust.
     .description('Run cargo inside the toolchain, from the Anchor workspace.')
-    .argument('[args...]', 'arguments for cargo, e.g. test -p emperors-new-coin --lib')
+    // The example names no program on purpose: this package is copied whole
+    // into unrelated repos, and a help string advertising a coin that does not
+    // exist there is the portability contract leaking out of the source and
+    // into the user's terminal.
+    .argument('[args...]', 'arguments for cargo, e.g. test -p <program> --lib')
     // Read raw argv rather than commander's parse: cargo's flags (--lib, -p) are
     // ours to forward, not ours to interpret, and commander's own pass-through
     // mode would force positional-option parsing on the entire CLI.

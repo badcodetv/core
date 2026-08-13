@@ -75,6 +75,18 @@ pub enum EncError {
     #[msg("That asset already exists")]
     AssetAlreadyInitialized,
 
+    /// The genesis price handed to `init_asset` is not this slot's rung on the
+    /// ladder in `GENESIS_PRICE_PPM`.
+    ///
+    /// The deployer passes absolute base units and the program checks the
+    /// multiplication, because bootstrap is the only moment this is correctable
+    /// and the two ways of getting it wrong are both silent afterwards: zero is
+    /// an absorbing state that every later sync preserves, and a ladder off by a
+    /// factor stays internally consistent while being permanently wrong against
+    /// M2. The log line beside this error prints what the ladder expected.
+    #[msg("That is not this slot's rung on the genesis price ladder")]
+    WrongGenesisPrice,
+
     // ── Assets ──────────────────────────────────────────────────────────────
     /// A token account was supplied that does not belong to the asset's holder,
     /// or is for the wrong mint.
