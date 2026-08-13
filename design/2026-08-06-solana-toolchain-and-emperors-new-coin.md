@@ -2532,6 +2532,25 @@ while the page correctly reports localnet.
 
 _(appended by executors during implementation)_
 
+- **2026-08-13 · T20 · 🔴 an order-of-magnitude figure became a claim on the
+  page.** The melting balance shipped falling at **5% a year**, described in
+  code as "the rate the money supply grows at in the long run" and on the page
+  as "roughly how fast they print", citing
+  `design/research/2026-08-12-enc-tokenomics/README.md`. That research does say
+  "on the order of 5% per year" — but it is comparing against rent at *150% a
+  month*, where a point either way changes nothing. **Compounded from the Fed's
+  own series, M2 has grown 6.73% a year since 1959, and above 5.6% on every
+  multi-decade window since 1990 — every window is above 5%.**
+  **Fixed by the orchestrator: `MELT_ANNUAL_BPS` is now 600**, the conservative
+  round number rather than a flattering one, with the measured windows recorded
+  at the constant and a caveat added to the research file so the loose figure is
+  not imported again. Artistically it is also the better number: the truth is
+  worse than 5%, which is the joke landing harder. **Kai may reasonably prefer a
+  different rate** — it is one constant and one test line.
+  The general lesson for T21, which has to state claims for real: **the research
+  briefs are argument-grade, not copy-grade.** A number good enough to win an
+  internal argument is not automatically good enough to print.
+
 - **2026-08-13 · T19 · 🔴 `./stack check` overwrites the committed IDL with
   whatever was last built — including the mock one.** Two steps, and the second
   is the surprising one. `./stack test` builds with `--features mock`, which

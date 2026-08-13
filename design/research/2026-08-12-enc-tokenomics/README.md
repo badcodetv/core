@@ -34,6 +34,14 @@ None of the ten briefs states this outright; it falls out of putting 02, 05 and
 
 - Asset prices rise with M2. M2 grows on the order of **5% per year**, so an asset
   appreciates ~**0.4% per month**.
+  > **The 5% here is an order of magnitude, not a measurement** (noted
+  > 2026-08-13). It is doing an order-of-magnitude job — the comparison below is
+  > against *150% a month*, where a point either way changes nothing, and the
+  > argument is unaffected. **Do not quote it as what M2 actually does.**
+  > Compounded from the Fed's own series it is **6.73% since 1959**, and above
+  > **5.6%** on every multi-decade window. T20 imported this line into copy on
+  > the page and it had to be corrected; see `MELT_ANNUAL_BPS` in
+  > `packages/enc/src/actions.ts`.
 - Rent is **5% per day** — ~**150% per month**.
 - An asset holder therefore nets roughly *minus 150% a month*. Holding ENC and
   buying nothing is, by a wide margin, the better trade.

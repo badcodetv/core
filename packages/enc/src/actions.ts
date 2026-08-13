@@ -396,19 +396,38 @@ export function certificateIssuable(view: AssetView, minted: boolean): boolean {
 // ── The melting balance ─────────────────────────────────────────────────────
 
 /**
- * How fast the displayed balance falls: **5% a year**.
+ * How fast the displayed balance falls: **6% a year**.
  *
  * Not invented, and not a decay of anything on-chain — nothing on this coin
  * decays, there is no demurrage, and the number in your wallet will be the same
- * number tomorrow. It is the rate the money supply grows at in the long run
- * (`design/research/2026-08-12-enc-tokenomics/README.md`, and the same figure
- * that killed the rent), so it is what a balance sitting still loses in
- * purchasing power against everything priced against M2 — which on this page is
- * literally every price.
+ * number tomorrow. It is roughly the rate the money supply grows at, so it is
+ * what a balance sitting still loses in purchasing power against everything
+ * priced against M2 — which on this page is literally every price.
+ *
+ * **Measured, not borrowed** (corrected 2026-08-13). This was 5%, taken from
+ * `design/research/2026-08-12-enc-tokenomics/README.md`, which says M2 grows
+ * "on the order of 5% per year". That is an order-of-magnitude figure doing an
+ * order-of-magnitude job there — it was comparing against rent at *150% a
+ * month*, where a point either way changes nothing. Stated on the page as what
+ * the money supply actually does, it was simply too low. Compound growth of
+ * M2SL straight from the Fed's own series:
+ *
+ * | window | CAGR |
+ * | --- | --- |
+ * | 1959-01 → 2026-06 (the whole record) | **6.73%** |
+ * | 1990-01 → 2026-06 | 5.62% |
+ * | 2000-01 → 2026-06 | 6.25% |
+ * | 2010-01 → 2026-06 | 6.32% |
+ * | 2015-01 → 2026-06 | 6.08% |
+ *
+ * **Every window is above 5%**, so 6% is the conservative round number rather
+ * than a flattering one — the full-record figure is worse, and the joke is
+ * better for it. Re-run it against `chain/sim/m2-history.csv` if you want to
+ * move it; do not re-import the research's 5% without reading why it says 5%.
  *
  * The page says all of this out loud. A number that lies has to admit it.
  */
-export const MELT_ANNUAL_BPS = 500
+export const MELT_ANNUAL_BPS = 600
 
 /** A Gregorian year, so a countdown and a decay agree about how long one is. */
 export const SECONDS_PER_YEAR = 31_556_952

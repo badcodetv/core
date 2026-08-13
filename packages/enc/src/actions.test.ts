@@ -417,8 +417,8 @@ describe('the melting balance', () => {
   it('compounds rather than accumulating linearly', () => {
     const balance = 1_000_000_000_000n
     const two = meltedBalance(balance, SECONDS_PER_YEAR * 2)
-    // 0.95² = 0.9025, which is above the 0.90 a linear fall would give.
-    expect(two).toBe(902_500_000_000n)
+    // 0.94² = 0.8836, which is above the 0.88 a linear fall would give.
+    expect(two).toBe(883_600_000_000n)
   })
 
   it('keeps every base unit of a balance past 2^53', () => {
