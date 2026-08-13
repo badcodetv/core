@@ -7,15 +7,16 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: in progress — **22 of 31 done.** T11 SUPERSEDED by the 2026-08-12
+Status: in progress — **23 of 31 done** (T31 landed 2026-08-13). T11 SUPERSEDED by the 2026-08-12
 architecture ruling and its code deleted by T30. The tenancy auction (T12), the
 faucet (T13), `retire` (T28) and the proportional caps (T29) are built and
 green; the simulation (T14) runs the full M2 record plus a forward projection,
 and the genesis parameters (T15) are chosen from its output and recorded in
-[`chain/sim/RESULTS.md`](../chain/sim/RESULTS.md). **The program's *economics*
-are feature-complete except for T31's Gazette**, which is the last thing owed
-before T22, and the remaining track is the oracle (T16–T18), the page (T19–T20)
-and shipping (T21–T23).
+[`chain/sim/RESULTS.md`](../chain/sim/RESULTS.md). **The Rust program is now
+code-complete** — T31's Gazette landed on 2026-08-13 and every suite is green
+under the `mock` feature (39 Rust unit tests; init 12, sync 14, auction 12,
+faucet 10, gazette 16, retire 7). The remaining track is the oracle (T16–T18),
+the page (T19–T20) and shipping (T21–T23).
 
 > **⚠ Corrected 2026-08-13 (ticket audit) — "feature-complete" was overstated.**
 > `oracle::read_quote`'s non-mock body is a stub that unconditionally returns
@@ -92,7 +93,7 @@ this table is the map.
 | ✅ | T13 · the faucet — `claim` · `close_epoch` (Ruling C made it the only way in) | program |
 | ✅ | T28 · `retire` — the coin notices its own end (ending ruled: **keep trading**) | program |
 | ✅ | T29 · proportional sync caps + the catch-up walk (2026-08-12 review) | program |
-| ⬜ | T31 · the Imperial Gazette — tenant copy + the editor's pen (**must land before T19**, which decodes its accounts, and before T22, which freezes them) | program |
+| ✅ | T31 · the Imperial Gazette — tenant copy + the editor's pen. `Asset` is now **414 bytes and boxed everywhere**; that size is permanent after T22 | program |
 | ✅ | T14 · economic simulation harness (+ `@badcode/enc`, the math mirror) | economics |
 | ✅ | T15 · the genesis parameters, chosen and recorded in `chain/sim/RESULTS.md` | economics |
 | ⬜ | T17 · stand the M2SL feed up on devnet | oracle |
@@ -2266,7 +2267,7 @@ while the page correctly reports localnet.
   `Config` fields are gone from the published types, since a parameter with no
   instruction behind it is a rule the coin cannot enforce.
 
-### T31: The Imperial Gazette — tenant copy + the editor's pen   [Status: pending — direction ruled by Kai 2026-08-12; slot sheet owed a Jack pass | Model: opus]
+### T31: The Imperial Gazette — tenant copy + the editor's pen   [Status: **DONE 2026-08-13** — validation re-run by the orchestrator; slot names still placeholders, Jack's sheet consumed at T22 | Model: opus]
 
 - **What the ten assets are (decided 2026-08-12, replacing the placeholder
   "flags").** The ten slots of a newspaper front page — the asset layer is **a
@@ -2337,7 +2338,12 @@ while the page correctly reports localnet.
   scope above, clearly marked provisional). Jack's sheet is consumed at **T22**,
   where `init_asset` writes the real names and the burn makes them permanent.
   Nothing in the program logic branches on a slot's name.
-- [ ] done
+- [x] done — 2026-08-13. Orchestrator re-ran the validation independently:
+  `./stack test test-gazette` **16 passing** on a fresh ledger, `./stack cargo
+  test -p emperors-new-coin --lib` **39 passing**, the shipped IDL carries the
+  four new instructions and no mock one, and every pre-existing suite is still
+  green (init 12, sync 14, auction 12, faucet 10). Slot names remain
+  placeholders by design; Jack's sheet is consumed at T22.
 - Notes (executor, 2026-08-13 — **six judgement calls the ticket did not
   settle**, all reversible until T22 and all flagged rather than buried):
   1. **`copy` is 280 bytes plus an explicit `copy_len: u16`.** The ticket named
