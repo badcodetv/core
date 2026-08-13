@@ -21,7 +21,12 @@
 //!
 //! What the outgoing holder is paid is the winning bid: **the current price,
 //! whatever M2 says it is.** Never "the new, higher price" — M2 falls in about
-//! 6% of months, thirteen in a row in 2022–23, and the reserve falls with it.
+//! 6% of months, nine of them consecutively in 2022–23, and the reserve falls
+//! with it. (That figure was "thirteen in a row" until T21 re-derived it from
+//! `chain/sim/m2-history.csv`: the longest run of consecutive monthly falls in
+//! the whole 1959–2026 record is **nine**, August 2022 to April 2023. The
+//! contraction ran nineteen months peak to trough and seventeen of them fell,
+//! which is presumably where the wrong number came from.)
 use anchor_lang::prelude::*;
 use anchor_spl::associated_token::AssociatedToken;
 use anchor_spl::token::{transfer, Mint, Token, TokenAccount, Transfer};

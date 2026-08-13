@@ -232,9 +232,18 @@ Whatever is ruled, these are the constraints on public copy, from the research:
   divergence, not a year-by-year causal claim — and never imply the converse
   either (the 2022–23 tightening was the *worst* stretch for real wages).
 - **Never say "paid the new, higher price."** The auction pays the outgoing
-  holder the *current* price, and M2 falls in 6.1% of months — 13 in a row in
-  2022–23 — so "higher" is a false claim one contraction away. Say **"paid the
-  current price, whatever M2 says it is."**
+  holder the *current* price, and M2 falls in 6.1% of months — nine of them
+  consecutively in 2022–23 — so "higher" is a false claim one contraction away.
+  Say **"paid the current price, whatever M2 says it is."**
+  **🔴 Corrected at T21 (2026-08-13): this bullet said "13 in a row" and that is
+  not true of the record.** Re-derived from `chain/sim/m2-history.csv`: the
+  longest run of consecutive monthly falls in the whole 1959–2026 series is
+  **nine**, August 2022 to April 2023. The contraction ran nineteen months peak
+  (2022-03) to trough (2023-10) and seventeen of those months fell, across three
+  separate runs of 3, 9 and 5. Left as a visible correction rather than a silent
+  edit, because this section is the standard other copy is written against and a
+  wrong figure here propagates: it had already reached `settle_auction.rs` and
+  the plan's T12 notes.
 - **The forward-looking line is incentive, not prophecy** (Kai, 2026-08-12).
   The engine of the joke is that debasement is every indebted government's
   cheapest exit, so they keep taking it. Say it as incentive and record —

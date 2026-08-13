@@ -4,16 +4,47 @@ A Solana development stack that runs in Docker, so the only thing your machine
 needs is Docker itself. It is built to be **copied into other projects**: nothing
 in the reusable parts knows what BadCode is or that Emperor's New Coin exists.
 
-## The loop
+This file is the toolchain — install, run, test, deploy, and how to add a second
+coin. The coin that currently runs on it is documented separately:
+**[`docs/coins/emperors-new-coin.md`](../docs/coins/emperors-new-coin.md)** for
+the design and the claims, and
+[`programs/emperors-new-coin/README.md`](./programs/emperors-new-coin/README.md)
+for the same coin told as a joke.
+
+## From a clean shell
+
+Two prerequisites, and no third: **Docker** (running, with Compose) and
+**Node 22+ with npm**. There is no host Rust, no host Solana, no `avm`, no
+Anchor install — the whole toolchain lives in an image this repo builds. On WSL,
+Docker Desktop with WSL integration enabled is what most people have; nothing
+here needs anything else.
 
 ```bash
-./stack start   # image (first run), validator, funded wallet, build, deploy, web app
+git clone <this repo> && cd badcode
+npm install                 # required first: ./stack drives node_modules/.bin
+./stack start               # image (first run), validator, wallet, build, deploy, web app
 ```
 
-Then open **localhost:5173/dev/counter**. To drive it with a real browser wallet,
-follow [`TESTING.md`](./TESTING.md).
+The first `./stack start` builds the Docker image and takes a while. Every one
+after it does not.
 
-Then, all day:
+Then open **localhost:5173/dev/counter** for the toolchain demo, or
+**localhost:5173/coins/enc** for Emperor's New Coin. To drive either with a real
+browser wallet, follow [`TESTING.md`](./TESTING.md).
+
+Check it worked:
+
+```bash
+./stack status              # web, validator, deployed program addresses, wallet
+./stack doctor              # the container's toolchain versus versions.json
+```
+
+If something is wrong, `./stack start` again is the honest first move — it is
+idempotent and it is the command that fixes most things.
+
+## The loop
+
+All day:
 
 ```bash
 # edit chain/programs/counter/src/lib.rs
@@ -40,25 +71,76 @@ bare does not work.
 | `./stack start` | Everything at once. The command to run when nothing works. |
 | `./stack stop` | Stop the web app and the validator. |
 | `./stack status` | What is up, which programs, which wallet. |
+| `./stack build [prog]` | Build + publish the IDL and TypeScript types. |
+| `./stack deploy` | Deploy to the local validator. |
 | `./stack redeploy [prog]` | Build + deploy. The loop after editing a program. |
 | `./stack reset` | Wipe the ledger and redeploy. After a layout change. |
 | `./stack test [suite]` | Anchor tests against the running validator. |
+| `./stack cargo <args>` | Cargo inside the container — this is how Rust unit tests run. |
+| `./stack enc <cmd>` | Emperor's New Coin commands. |
 | `./stack fund <address>` | Give a browser wallet 100 local SOL. |
+| `./stack wallet` | Show the deploy wallet. |
 | `./stack doctor` | Check the toolchain matches `versions.json`. |
 | `./stack image` | Rebuild the Docker image. |
 | `./stack shell` | A shell inside the toolchain container. |
+| `./stack web` | Just the web app. |
 | `./stack logs [web\|validator]` | Follow logs. |
-| `./stack check` | Typecheck + unit tests, repo-wide. |
+| `./stack check` | Typecheck + unit tests, repo-wide. The gate. |
 
-`./stack help` lists the rest. Underneath, the portable CLI is `chain` —
-`chain dev`, `chain build --program-name x`, `chain deploy --cluster localnet`,
-`chain airdrop`, `chain idl`. A project that copies this toolchain gets `chain`
-and writes its own `./stack` (or mounts `chainCommand()` on a CLI it already has).
+`./stack help` lists the rest. Underneath, the portable CLI is `chain` — `dev`,
+`build --program-name x`, `deploy --cluster localnet`, `airdrop`, `idl`. A
+project that copies this toolchain gets that CLI and writes its own `./stack`
+(or mounts `chainCommand()` on a CLI it already has). **In this repo, always go
+through `./stack`**: `chain` and `badcode` exist only as workspace symlinks
+under `node_modules/.bin` and are not on anybody's PATH.
+
+## Tests
+
+Three separate things, and they fail in different ways.
+
+```bash
+./stack cargo test -p emperors-new-coin --lib   # Rust unit tests — pure functions, no chain
+./stack test                                    # every Anchor suite except test-retire
+./stack test test-auction                       # one suite
+./stack check                                   # typecheck + vitest, repo-wide
+```
+
+The Anchor suite names are the `[scripts]` entries in
+[`Anchor.toml`](./Anchor.toml): `test-smoke`, `test-counter`, `test-init`,
+`test-sync`, `test-auction`, `test-faucet`, `test-gazette`, `test-actions`,
+`test-retire`.
+
+**Do not pass `--features mock` yourself.** `./stack test` already builds the ENC
+program with it, because localnet is mock-oracle-only by design. Passing the flag
+takes a different branch and fails with *"the package 'counter' does not contain
+this feature: mock"* — Cargo features are per-package and `anchor test` rebuilds
+the whole workspace. Same trap on `./stack build --features mock`; the working
+form names the program: `./stack build emperors_new_coin --features mock`. Both
+verified at T21.
+
+`--skip-build` is the passthrough worth knowing: it re-runs a suite against what
+is already deployed, which is most of the wait.
+
+**`test-retire` is terminal and is excluded from the run-everything script.**
+Retirement is irreversible by design, so once that suite passes, `sync_m2`
+refuses on that ledger forever. Run it alone, then `./stack reset`.
+`test-gazette`'s last case breaks the editor's pen just as permanently, but
+nothing outside that suite uses the pen, so it stays in the main run and only its
+own pen cases skip on a re-run.
+
+**Suites share one ledger and it accumulates.** `./stack test` reuses the running
+validator rather than starting a private one, so state persists between runs and
+between suites — which is the point (the tests see the chain your browser sees)
+and also the trap: **write tests that assert on movement, not on absolute
+values.** Anything asserting genesis state needs `./stack reset` first. Observed
+at T21: on a played ledger `test-init` is 12 passing / 1 failing, and the
+failure is *"puts 100% of the genesis supply in the vault"* comparing a supply
+that has since been synced. That is the ledger, not the program.
 
 ## How the types reach the browser
 
 `anchor build` generates an IDL and a TypeScript type per program, into
-`chain/target/` — which is gitignored, so nothing can import from it. `chain
+`chain/target/` — which is gitignored, so nothing can import from it. `./stack
 build` copies both into **`chain/idl/`**, which is committed, and that is what
 the frontend imports:
 
@@ -99,6 +181,98 @@ the page correctly insists it is on localnet.
 Full walkthrough, including what each failure mode looks like:
 [`TESTING.md`](./TESTING.md).
 
+## Deploying
+
+Localnet is a verb — `./stack start` deploys everything, `./stack redeploy` does
+it again after an edit. Beyond localnet:
+
+```bash
+./stack build                                  # a DEFAULT build; never ship a mock one
+./node_modules/.bin/chain deploy --cluster devnet --program-name emperors_new_coin
+```
+
+Four things decide whether that goes well.
+
+**Build without features, and check the IDL before you commit it.** A mock build
+publishes an interface describing a program you must never release. `./stack
+build` on its own is the shipping build, and T9's grep is the guard — run it,
+do not assume it:
+
+```bash
+./stack build && ! grep -q set_mock_m2 chain/idl/emperors_new_coin.json && echo ok
+```
+
+This has actually bitten: a default build once published an IDL that still
+carried `set_mock_m2`, and an identical second build produced the correct file.
+The grep caught it. Root cause was never pinned past "incremental-build reuse",
+which is exactly why the guard is cheap and mandatory rather than clever.
+
+**The program keypair is the address, and it is committed.** `chain/keys/` holds
+one keypair per program; deploying with a different one deploys a different coin
+at a different address whose `declare_id!` no longer matches. See
+[`keys/README.md`](./keys/README.md) — everything in there is public by
+definition.
+
+**Record the address in `packages/chain-kit/src/programs.json`**, keyed by
+program then cluster. That file is the only place in the portable set that names
+a program, and it is data rather than code for exactly this reason.
+
+**Burning an upgrade authority is irreversible and is a human decision.** Deploy
+upgradeable first, prove the thing works against a real cluster, and burn as a
+separate deliberate act afterwards. An agent may prepare and verify it; an agent
+must not execute it unprompted. For Emperor's New Coin specifically, the list of
+what the burn makes permanent — slot names, the editor key, the price ladder,
+the retirement clock — is ticket T22 in
+[the plan](../design/2026-08-06-solana-toolchain-and-emperors-new-coin.md).
+
+*Nothing in this repo is deployed to devnet or mainnet yet.*
+
+## Adding coin #2
+
+The toolchain is generic on purpose: a second coin is **a Rust program and a
+page component, and nothing else**. Nothing under `packages/chain-*` should
+learn its name. The path, end to end:
+
+**1. The program.** Copy `chain/programs/counter/` to
+`chain/programs/<coin>/`, rename it in its own `Cargo.toml`, and add it to the
+workspace members in [`Cargo.toml`](./Cargo.toml).
+
+**2. Its address.** Generate a keypair into `chain/keys/<coin>-keypair.json`
+(inside the container: `./stack shell`, then `solana-keygen new -o ...`), put the
+pubkey in `declare_id!` and in `[programs.localnet]` in
+[`Anchor.toml`](./Anchor.toml). Keypairs live in `chain/keys/` and not in
+`target/` for a reason — see "Things that will bite you".
+
+**3. Build it.** `./stack redeploy <coin>`. That publishes
+`chain/idl/<coin>.json` and `chain/idl/<coin>.ts`, and the frontend imports
+those. Nothing hardcodes the address; the IDL carries it.
+
+**4. The page.** Add `apps/web/src/coins/<coin>/` and one line to the
+`liveCoins` map in [`apps/web/src/coins/coins.ts`](../apps/web/src/coins/coins.ts)
+— the route is already `/coins/:slug`, so registering the component is all there
+is. Keep the `lazy()` wrapper: the wallet adapter and web3.js are heavy and
+nobody reading a comic should download them. Read state with `useProgramReader`
+(no wallet needed, and it decodes through a `Program`, which is the only safe
+way — see the dual-IDL trap below). If the page sends transactions, it needs
+`Buffer` on the global; the app already installs it in
+`apps/web/src/buffer-global.ts`.
+
+**5. Its own decoders, in their own package.** If the coin needs view models,
+formatters or account maps, they go in `packages/<coin>/` — the way
+`packages/enc/` does. **They must not go in `packages/chain-kit`.** That is the
+portability contract, and it is grepped for.
+
+**6. Its tests.** Add `chain/tests/<coin>.ts` and a `test-<coin>` entry in
+`Anchor.toml`'s `[scripts]`.
+
+**7. Its documentation.** A public design page under `docs/coins/<coin>.md`,
+which is where the claims live. The worked example is
+[`docs/coins/emperors-new-coin.md`](../docs/coins/emperors-new-coin.md).
+
+What you should *not* have touched by the end: `packages/chain-cli`,
+`packages/chain-kit` (except the `programs.json` data file),
+`packages/chain-react`, or `./stack`.
+
 ## Layout, and what is copyable
 
 **Portable — copy these into another project as they are:**
@@ -119,8 +293,10 @@ programId)` — which is what stops a program's types leaking into them.
 **Not portable — delete when you lift it:**
 
 ```
-chain/programs/emperors-new-coin/  chain/feeds/  chain/keys/emperors_new_coin-keypair.json
-apps/web/src/coins/                packages/cli/src/enc.ts
+chain/programs/emperors-new-coin/  chain/sim/  chain/feeds/
+chain/keys/emperors_new_coin-keypair.json
+chain/tests/{enc-harness,smoke,initialize,sync_m2,auction,faucet,gazette,retire,actions}.ts
+apps/web/src/coins/                packages/enc/   packages/cli/src/enc.ts
 ```
 
 **The demo:** `chain/programs/counter/`, `chain/tests/counter.ts` and
@@ -185,7 +361,7 @@ the original reason this is containerised at all. The image is 24.04, where the
 prebuilt just works — no source build, no host Rust involved.
 
 **`anchor test` starts its own validator** on the port yours is already using.
-`chain test` passes `--skip-local-validator` and reuses the running one, so the
+`./stack test` passes `--skip-local-validator` and reuses the running one, so the
 suite sees the same chain your browser does. The trade is that state persists
 between runs: **write tests that assert on movement, not on absolute values.**
 
@@ -238,12 +414,12 @@ be re-measured the next time an account list grows.
 
 **Program keypairs live in `chain/keys/`, not in `target/`.** Anchor generates
 them into the build output, so cleaning the build silently changes every
-program's address and breaks its own `declare_id!`. `chain build` restores them
+program's address and breaks its own `declare_id!`. `./stack build` restores them
 first. See `keys/README.md` — everything in there is public by definition.
 
 **Switching between the Docker and host runners changes the deploy wallet**, and
 therefore the upgrade authority. Programs already on the ledger then refuse to
-upgrade ("Upgrade authority mismatch"). `chain reset` is the fix.
+upgrade ("Upgrade authority mismatch"). `./stack reset` is the fix.
 
 **`CHAIN_RUNNER=host`** skips Docker entirely if you already have the toolchain
 installed (`chain/scripts/install.sh`). Everything behaves the same otherwise.

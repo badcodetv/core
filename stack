@@ -11,12 +11,12 @@
 #   ./stack status         what is up, which programs, which wallet
 #   ./stack logs [web|validator]   follow logs
 #
-#   ./stack build [--features mock] [--program-name <p>]
+#   ./stack build [<program>] [--features mock]
 #                          build + publish IDL and TypeScript types
 #   ./stack deploy         deploy to the local validator
 #   ./stack redeploy [prog]  build + deploy — the loop after editing a program
 #   ./stack reset          wipe the ledger and redeploy (after a struct change)
-#   ./stack test [suite] [--features mock]   Anchor tests, running validator
+#   ./stack test [suite]   Anchor tests against the running validator
 #   ./stack cargo <args>   cargo inside the toolchain (Rust unit tests)
 #   ./stack enc <cmd>      Emperor's New Coin commands
 #
@@ -160,12 +160,18 @@ case "$cmd" in
   build)   if [[ $# -gt 0 && "$1" != -* ]]; then p="$1"; shift; chain build --program-name "$p" "$@"; else chain build "$@"; fi ;;
   deploy)  chain deploy --cluster localnet "$@" ;;
   reset)   chain reset "$@" ;;
-  # Same shape: `./stack test test-init --features mock`.
+  # `./stack test test-init` — the suite name is an Anchor.toml [scripts] entry.
   # Localnet is mock-oracle-only by design (see chain/README.md), so the ENC
   # program is built with --features mock before the suites run. It has to be a
   # separate build: cargo features are per-package, and `anchor test` would
   # rebuild the whole workspace — where `counter` has no `mock` feature and the
   # build fails. Then --skip-build so anchor deploys what we just made.
+  #
+  # Which is why passing --features yourself does NOT work here: it takes the
+  # branch below, and `anchor test -- --features mock` fails with "the package
+  # 'counter' does not contain this feature: mock" (verified at T21). The mock
+  # build is automatic; there is nothing to ask for. `--skip-build` is the one
+  # useful passthrough — it re-runs a suite against what is already deployed.
   test)    args=(); if [[ $# -gt 0 && "$1" != -* ]]; then args+=(--script "$1"); shift; fi
            if [[ "$*" != *--features* && "$*" != *--skip-build* ]]; then
              chain build

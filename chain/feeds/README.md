@@ -1,10 +1,20 @@
 # The M2 feed — and the proof it can't be tampered with
 
-This directory holds the Switchboard job definition that puts the US money supply
-on-chain, and the evidence for the claim Emperor's New Coin rests on.
+This directory holds the Switchboard job definition that is meant to put the US
+money supply on-chain, and the evidence for the claim Emperor's New Coin rests
+on.
 
 **Everything below was executed live on 2026-08-10, not taken from documentation.**
 Re-run any of it yourself; that is the point.
+
+> **Status, so the present tense above is not read as more than it is (T21,
+> 2026-08-13).** The immutability experiment is genuinely done and its result
+> genuinely holds. **The feed is not wired to the program.** No feed is stood up
+> on devnet (T17), the program's Switchboard read path is a stub that returns
+> `OracleUnavailable` and the crate has no Switchboard dependency (T18), and the
+> committed job extracts the *value* only — so `Quote.release_date` still has no
+> source, which `retire` depends on. Nothing in this directory puts anything
+> on-chain today.
 
 ## The claim
 

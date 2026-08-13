@@ -169,8 +169,24 @@ BadCode releases **coins** as well as comics. The first is **Emperor's New Coin*
 supply pegged to the Fed's M2 money supply, so when they print, we print. The joke
 only works if it is true, so the design goes to some length to remove BadCode from
 the loop: the oracle feed is the hash of its own fetch job (no key can repoint it)
-and the program ships non-upgradeable. Plan and decisions:
-[`design/2026-08-06-solana-toolchain-and-emperors-new-coin.md`](./design/2026-08-06-solana-toolchain-and-emperors-new-coin.md).
+and the program ships non-upgradeable.
+
+**The trust statement is two parts and is never said as one: *no key over the
+money; one pen over the words.*** There is exactly one key in the program — the
+editor's pen, which can strike a Gazette column to a fixed redaction marker once
+per column per term, and can do nothing else. **"No admin key" unqualified is
+false and must not be written anywhere.** State the blast radius with it: a
+stolen pen can vandalise ten columns a month and cannot move a token.
+
+**Public design and the claim ledger: [`docs/coins/emperors-new-coin.md`](./docs/coins/emperors-new-coin.md)** —
+read it before writing any sentence about the coin. Every claim we may and may
+not make is listed there, with the primary source beside it.
+Plan: [`design/2026-08-06-solana-toolchain-and-emperors-new-coin.md`](./design/2026-08-06-solana-toolchain-and-emperors-new-coin.md).
+**Architecture rulings (A–D, 2026-08-12):** [`design/2026-08-12-enc-architecture-decision.md`](./design/2026-08-12-enc-architecture-decision.md) —
+no holding cost of any kind (no rent, no demurrage, no foreclosure, no permanent
+delegate; assets change hands by scheduled auction), it runs forever bar a
+permissionless `retire` after a year of oracle silence, closed loop by posture,
+and the asset layer is the Imperial Gazette.
 Canon: [`docs/stories/magic-money-tree/emperors-new-coin.md`](./docs/stories/magic-money-tree/emperors-new-coin.md).
 
 Coin pages live at `/coins/:slug` in the same web app — there is no second site.

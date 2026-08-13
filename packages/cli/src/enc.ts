@@ -59,9 +59,14 @@ export function encCommand(): Command {
       // it would produce ("instruction not found") sends people looking in the
       // wrong place entirely.
       if (opts.cluster !== 'localnet') {
+        // Deliberately does NOT name a devnet alternative. There isn't one yet:
+        // the real Switchboard read path is a stub and there is no crank
+        // command. This string used to point at `./stack enc crank`, which has
+        // never existed — a wrong signpost is worse than none (T21).
         throw new Error(
           'mock-m2 is localnet-only by construction: set_mock_m2 is compiled out of every ' +
-            'other build. On devnet, advance the real feed with `./stack enc crank`.',
+            'other build. There is no devnet equivalent yet — the real oracle read is unbuilt ' +
+            '(see docs/coins/emperors-new-coin.md, "What is actually built").',
         )
       }
       const fixed = toFixedPoint(value)

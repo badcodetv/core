@@ -1141,7 +1141,8 @@ is no setter for any economic parameter. The upgrade authority is burned at T22.
   fair rather than a seizure is that it happens **on a clock published at the
   moment they won** (a term, not ownership), and they are **paid the current
   price, whatever M2 says it is** — never say "the new, higher price": M2 falls
-  in 6.1% of months (13 in a row in 2022–23), the reserve falls with it, and an
+  in 6.1% of months (nine consecutively in 2022–23 — corrected from "13 in a
+  row" at T21, see the Discovered Issues Log), the reserve falls with it, and an
   incumbent settled out in a contraction is paid *less* than they bid. Never
   describe a tenancy as owning the asset.
 - **Why this shape:** the outgoing holder is paid the *new* price having bought at
@@ -1950,6 +1951,50 @@ is no setter for any economic parameter. The upgrade authority is burned at T22.
 - **Depends on:** T20
 - [ ] done
 - Notes:
+  - **Built 2026-08-13.** `docs/coins/emperors-new-coin.md` is new and is now the
+    public design of record: the machine instruction by instruction, the
+    parameters by what they *say*, the two-part trust statement, the Switchboard
+    queue-authority residual, the scanner warning quoted as a selling point, the
+    peg horizon stated rather than buried, and a **claim ledger** — every factual
+    figure with the thing that proves it. `chain/README.md` gained a clean-shell
+    install path, a tests section with the real suite names, a deploy section and
+    a **how to add coin #2** walkthrough. Both existing READMEs were extended,
+    not rewritten.
+  - **Every M2 figure was re-derived at this ticket** from
+    `chain/sim/m2-history.csv` rather than quoted from a brief. Confirmed exactly:
+    median month +0.522%; rose 758/809 (93.7%), fell 49 (6.1%), 2 unchanged;
+    largest month +6.42% (2020-04); largest fall −1.40% (2023-03); CAGR 6.73%
+    since 1959 and 6.28% trailing 20y; 770 of 774 three-year windows up, worst
+    −0.54%, median 1.222×; 2022–23 drawdown −4.82% / $1,049.7bn; peg ceiling
+    $18,446.7tn = 797× today = **107 years** at the median month; genesis 22.176bn
+    ENC; cheapest column 100 ppm = 1.00 bps = 2,217,610 ENC; welcome grant
+    1,000 ENC = $1,000,000 of M2. **One figure did not survive** — see the
+    Discovered Issues Log entry on "thirteen in a row".
+  - **`MELT_ANNUAL_BPS = 600` is confirmed correct.** All five CAGR windows in its
+    justification comment reproduce exactly (6.73 / 5.62 / 6.25 / 6.32 / 6.08%).
+    One precision note recorded in the log: "every multi-decade window is above
+    5%" is true of those five windows and of every 30-year and 40-year window,
+    but **not** of every 20-year window — 28 of 570 fall below 5%, the weakest
+    being 4.88% (1987-01 → 2007-01). The constant is unaffected; the sentence
+    should not be generalised past the table it sits under.
+  - **Two documented commands did not work and were fixed** — see the log.
+  - **Claim surgery applied** to the program README (`supply ≥ k × M2` now stated
+    where the `=` headline was; "the Emperor's treasures" and "the flag passes to
+    them" replaced with Gazette vocabulary per Ruling D; the 2022–23 sentence
+    re-derived; an explicit "the oracle is not built and the authority is not
+    burned" note added at the top where the blanket disclaimer sat 160 lines
+    away), to `CLAUDE.md` (which stated the trust claim in the forbidden one-part
+    form and did not link the rulings), to `chain/feeds/README.md` (present tense
+    on an unwired feed), and to `packages/cli/src/enc.ts` (an error string
+    pointing at `./stack enc crank`, a command that has never existed).
+  - **Left for T22/T23, deliberately:** the "flags" vocabulary still in Rust doc
+    comments (`state.rs`, `math.rs`, `place_bid.rs`, `retire.rs`, `errors.rs`) and
+    the `supply = k × M2` form in `state.rs:141` / `lib.rs:9` — **those two reach
+    the IDL**, so changing them republishes a committed artifact, which is T22's
+    territory and not a docs ticket's. Also left: the plan's own §"Key decisions"
+    (~L373–475) and §"Interfaces" (~L620–680), which still narrate rent, `Invariant
+    M` and the permanent delegate as live design without the SUPERSEDED banner the
+    §"The ENC machine" section carries.
 
 ### T22: Devnet deploy + burn the upgrade authority   [Status: pending | Model: opus]
 - **Scope:** Deploy to devnet against the feed T17 already created, run
@@ -2550,6 +2595,76 @@ while the page correctly reports localnet.
 ## Discovered Issues Log
 
 _(appended by executors during implementation)_
+
+- **2026-08-13 · T21 · 🔴 "thirteen in a row" is not true of the record, and it
+  had already propagated into three files.** The claims standard itself
+  (`2026-08-12-enc-architecture-decision.md` §4) carried *"M2 falls in 6.1% of
+  months — 13 in a row in 2022–23"*, and from there it reached
+  `settle_auction.rs`'s module doc and this plan's T12 notes. Re-derived from
+  `chain/sim/m2-history.csv`: **the longest run of consecutive monthly falls in
+  the entire 1959–2026 series is nine, August 2022 to April 2023.** The
+  contraction ran nineteen months peak (2022-03, 21787.2) to trough (2023-10,
+  20737.5) and seventeen of those months fell — but across *three* runs of 3, 9
+  and 5, which is the likeliest origin of the wrong number. Corrected in all
+  three places, visibly rather than silently in §4, because that section is what
+  other copy is written against. Everything else in §4 re-verified and holds.
+  **The lesson is the T20 one arriving a second time**: a figure that is only
+  ever quoted, never re-derived, drifts and then hardens. The claim ledger in
+  `docs/coins/emperors-new-coin.md` now lists each figure next to the operation
+  that reproduces it, so the next person can check rather than copy.
+
+- **2026-08-13 · T21 · 🔴 two documented `./stack` commands did not work.**
+  Found by running the docs rather than reading them.
+  1. **`./stack test <suite> --features mock`** — the form printed by
+     `./stack help` and by the script's own inline comment — fails with *"the
+     package 'counter' does not contain this feature: mock"*. Cargo features are
+     per-package and `anchor test` rebuilds the whole workspace, so the flag
+     reaches `counter`, which has no such feature. The dispatch already builds ENC
+     with `--features mock` automatically; passing the flag takes the *other*
+     branch and breaks it. **There is nothing to ask for, so the help text now
+     says `./stack test [suite]`** and the comment explains the trap.
+  2. **`./stack build --features mock`**, also advertised in the help, fails the
+     same way for the same reason. The working form names the program:
+     **`./stack build emperors_new_coin --features mock`**. Help corrected.
+  Both were verified failing and then verified fixed. `./stack build
+  emperors_new_coin --features mock` also prints *"committed IDL left
+  unchanged"*, so the mock-IDL hazard is now guarded at the build as well as in
+  the test that used to trip it.
+
+- **2026-08-13 · T21 · `test-init` fails rather than skips on a played ledger.**
+  On the shared localnet after T19/T20's runs, `./stack test test-init` is 12
+  passing / 3 pending / **1 failing**, and the failure is *"puts 100% of the
+  genesis supply in the vault"* comparing 20,680,992,104,074,290 against the
+  genesis 22,176,100,000,000,000. That is the ledger, not the program — the
+  supply has since been synced. The T12 log already recorded the general rule
+  ("any assertion about pristine state needs the same treatment") and fixed the
+  auction suite's equivalent case to **skip** on a played ledger; this one was
+  missed. Documented as the remedy (`./stack reset` first) in `chain/README.md`
+  rather than fixed, because changing a test's pass condition is not a docs
+  ticket's call — but it is three lines and belongs to whoever next opens
+  `initialize.ts`. Everything else run at T21 is green on the played ledger:
+  39 Rust unit tests, `test-gazette` 16 passing, `test-faucet` 10 passing,
+  `./stack check`, `npm run build`.
+
+- **2026-08-13 · T21 · "every multi-decade window is above 5%" is true of the
+  table it sits under and false if generalised.** `MELT_ANNUAL_BPS = 600` is
+  **correct and its evidence reproduces exactly** — all five CAGRs in its comment
+  (6.73 / 5.62 / 6.25 / 6.32 / 6.08%) re-derive to the digit. But those are five
+  windows that all *end at 2026-06*. Across every 20-year window in the series,
+  **28 of 570 come in below 5%**, the weakest being **4.88% (1987-01 → 2007-01)**.
+  Every 30-year window (min 5.36%) and every 40-year window (min 5.61%) clears 5%.
+  So the honest generalisation is *"every thirty-year window"*, not *"every
+  multi-decade window"*. Nothing needs changing in the code; recorded so the
+  looser sentence is not the one that gets printed later. Not a defect — a
+  reminder that the failure mode being guarded against is a claim widening
+  quietly as it is re-quoted.
+
+- **2026-08-13 · T21 · `docs/coins/emperors-new-coin.md` was linked from four
+  files before it existed.** `chain/feeds/README.md:21` and this plan (four
+  places) pointed at it as though it were the authority on the honest oracle
+  sentence. It now exists and is that authority. Worth noting because a dangling
+  link to a claims document reads, to anyone auditing, exactly like a claim with
+  no backing — which is what it was.
 
 - **2026-08-13 · T20 · 🔴 an order-of-magnitude figure became a claim on the
   page.** The melting balance shipped falling at **5% a year**, described in
