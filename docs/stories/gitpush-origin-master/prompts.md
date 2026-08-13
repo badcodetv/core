@@ -2,7 +2,7 @@
 story: gitpush-origin-master
 flow_project: gpom-story
 flow_project_id: 1774dff0-02b0-45a7-9d53-ecc549bc60a5
-updated: 2026-08-11
+updated: 2026-08-13
 ---
 
 # GitPush Origin Master — prompt ledger
@@ -126,7 +126,7 @@ a closer shot, she is the only face that has to hold.
 
 | Totem | Rule | Appears in |
 | --- | --- | --- |
-| **The coin** | **The most important object in the film.** One ordinary coin, no markings we can read, on one plain surface. It spins in 11, spins in 13, and **lands in 16** — the single most violent frame in the story, and it is just a coin on a table. Generate it once, accept it, and reference that exact image in 13 and 16 so the landing reads as the same coin. | 11, 13, 16 |
+| **The coin** | **The most important object in the film.** One ordinary coin, no markings we can read, **under a sealed clear glass dome** on one plain surface — the rig: the one object the world is never allowed to touch (`story.md` binding rule 8, added 2026-08-13; the glass is the visual grammar of "engineered apart from the world" and is why only the coin stays undecided). It spins in 11, spins in 13, and **lands in 16** — the single most violent frame in the story, and it is just a coin on a table. Generate it once, accept it, and reference that exact image in 13 and 16 so the landing (and the dome) reads as the same rig. | 11, 13, 16 |
 | **The empty chair** | One ordinary human chair, worn, entirely unremarkable, in a space with no human scale anywhere else. The whole argument in one object. | 13 |
 | **The ventilation shaft** | Plain industrial ductwork, the first human sound in twenty years coming up it. Warm light from below. | 14 |
 | **The green ✓** | A UI element — **motion graphics, not Flow.** See §5. | 5, 6, 7, 8 |
@@ -259,7 +259,7 @@ reads as the same object.
   legible markings of any kind.
 
 ```prompt
-Hyper-realistic macro photograph, 35mm film grain, near-black exposure, no lens flares, landscape orientation, deep unlifted shadows. A single plain metal disc the size of a coin, blank and unmarked on both faces, spinning upright on a bare dark tabletop, photographed close and low so the tabletop runs off into total blackness in every direction. The spin has blurred its edge into a smooth translucent smear, caught mid-rotation so it is impossible to tell which face is which. One hard small light directly overhead is the only illumination, putting a bright ellipse on the table beneath the coin and nothing else. Nothing else in the frame at all. No people, no text, no markings, no numerals, no fantasy effects.
+Hyper-realistic macro photograph, 35mm film grain, near-black exposure, no lens flares, landscape orientation, deep unlifted shadows. A single plain metal disc the size of a coin, blank and unmarked on both faces, spinning upright on a bare dark tabletop beneath a sealed clear laboratory glass dome, photographed close and low so the tabletop runs off into total blackness in every direction. The spin has blurred its edge into a smooth translucent smear, caught mid-rotation so it is impossible to tell which face is which. One hard small light directly overhead is the only illumination, putting a bright ellipse on the table beneath the coin and a thin curved highlight along the top of the glass, nothing else. Nothing else in the frame at all. No people, no text, no markings, no numerals, no fantasy effects.
 ```
 
 ---
@@ -289,7 +289,7 @@ element.
 - **Lint:** ✅ 2026-08-08
 
 ```prompt
-Hyper-realistic photograph, 35mm film grain, near-black exposure, no lens flares, landscape orientation, deep unlifted shadows, a single object and a single light in a very large dark volume. A plain dark table alone in an enormous unlit space, one hard small light directly above it. On the table, a blank unmarked metal disc spins upright, edge blurred, mid-rotation. Drawn up to the table facing it is one ordinary wooden human chair — worn, domestic, entirely unremarkable, the only human-scaled object anywhere in the frame — and it is empty. Everything beyond the pool of light is total black. Nothing else in the frame. No people, no text, no markings, no fantasy effects.
+Hyper-realistic photograph, 35mm film grain, near-black exposure, no lens flares, landscape orientation, deep unlifted shadows, a single object and a single light in a very large dark volume. A plain dark table alone in an enormous unlit space, one hard small light directly above it. On the table, beneath a sealed clear laboratory glass dome, a blank unmarked metal disc spins upright, edge blurred, mid-rotation. Drawn up to the table facing it is one ordinary wooden human chair — worn, domestic, entirely unremarkable, the only human-scaled object anywhere in the frame — and it is empty. Everything beyond the pool of light is total black. Nothing else in the frame. No people, no text, no markings, no fantasy effects.
 ```
 
 ---
@@ -339,7 +339,7 @@ that identity is the entire payoff.
 - **Lint:** ✅ 2026-08-08
 
 ```prompt
-Hyper-realistic photograph, 35mm film grain, near-black exposure with warm light intruding from one edge, no lens flares, landscape orientation, deep unlifted shadows. The same plain dark tabletop, close and low. The blank unmarked metal disc is no longer spinning — it lies completely flat and still on the table, one face up, absolutely ordinary. The hard overhead light puts a small sharp shadow beside it for the first time. From the left edge of frame, warm lamplight now spills across the table surface, and the out-of-focus shoulder and sleeve of a person in hand-mended wool is just present at the very edge, unmistakably close by but not the subject. Stillness. No text, no markings, no numerals, no fantasy effects.
+Hyper-realistic photograph, 35mm film grain, near-black exposure with warm light intruding from one edge, no lens flares, landscape orientation, deep unlifted shadows. The same plain dark tabletop, close and low, the same sealed clear glass dome. Beneath the glass the blank unmarked metal disc is no longer spinning — it lies completely flat and still on the table, one face up, absolutely ordinary. The hard overhead light puts a small sharp shadow beside it for the first time. From the left edge of frame, warm lamplight now spills across the table surface, and the out-of-focus shoulder and sleeve of a person in hand-mended wool is just present at the very edge, unmistakably close by but not the subject. Stillness. No text, no markings, no numerals, no fantasy effects.
 ```
 
 ---
@@ -399,8 +399,11 @@ Hyper-realistic photograph, 35mm film grain, ordinary present-day daylight and u
   other two from Jack, or leave all three to him for consistency.
 - **Scene 10, peopled version.** Derive from the accepted `s10-ghosts-room` so
   the geometry matches exactly; it is a `flow_edit_image` delta, not a new prompt.
-- **Scene 18 (the cost ledger).** Rendered as a ledger being written — text-led,
-  so it belongs with the motion-graphics register in §5, not here.
+- **Scene 18 (the cost ledger).** Rendered as a **log being written** — the
+  terminal register returning for the constraints (`story.md` scene 18, git
+  register per binding rule 9: append-only history, the *undo* entry, the
+  inert patch). Text-led, so it belongs with the motion-graphics register in
+  §5, not here.
 
 ## 5. Not a Flow job — the terminal register
 
@@ -416,3 +419,8 @@ They are motion graphics, not photographs:
 
 Build them as vector/motion assets. `docs/images/register-anchor.md` is the
 correct backdrop reference for the frame they sit inside.
+
+**Scene 18 joined this register 2026-08-13** (`critique-pass-2.md`): the cost
+ledger is written as **log entries** — the constraints landing one by one, the
+final line the *undo* entry. Same stylised git UI, timed to narration, over the
+R2 warmth of the vault scenes rather than the cold open's black.

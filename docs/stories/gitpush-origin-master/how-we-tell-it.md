@@ -185,7 +185,15 @@ reader's attention arrives.** So the scroll comic doesn't illustrate participato
 
 - **Panels resolve from fog as they enter the viewport.** The world below the fold is visibly
   *undecided* — a smear, not a blank. Scrolling is the pick.
-- **The coin lands because the reader scrolled to it** (Act 4/5's totem, enacted in form).
+- **The coin is the one exception — it never resolves on scroll.** *(Corrected
+  2026-08-13, [`critique-pass-2.md`](./critique-pass-2.md): the earlier rule here —
+  "the coin lands because the reader scrolled to it" — contradicted `story.md`,
+  where the coin lands once, under the Carrier's glance in scene 16, and would have
+  pre-empted the most violent frame in the film.)* Every panel resolves as
+  attention arrives; the coin alone ignores the reader's scroll and stays a smear
+  however long they look — until scene 16 lands it *inside* the fiction. The one
+  object in the whole work that is not answering to the reader is the reader's
+  proof that the smear is real.
 - **The reader strikes the key** in the Prologue (`git push origin master` fires on their scroll /
   click — complicity, not fatalism) and **holds a live cursor** in the Coda (the pen is literally
   theirs). Both formerly-open threads resolve the same way: *the interactive answer, both times.*
@@ -207,6 +215,17 @@ how a story reads geeky *with zero physics on the page.*
 (the arc's constant, margin-weight only) plus whichever single device that act owns (the checkmark,
 the ladder, the coin, the ghosts, the pen). Everything else in the taxonomy is production
 machinery: it lives in the bible, steers the writing, and never asks the reader to learn it.
+
+**Amendment (2026-08-13, [`critique-pass-2.md`](./critique-pass-2.md)):** at the revert
+(`story.md` scenes 17–18; Act 6) the git system is **promoted from margin-weight constant to the
+act's owned surface device** — the mechanism of the return is explained in git and nothing else,
+because it is the one system the reader has already paid for since the Prologue. The promotion is
+capped (`story.md` binding rule 9): only vocabulary the Prologue taught plus *revert*; no command
+syntax; and the two constraints that are not git properties (**one shot**; **the channel runs on
+conscious picks**) stay the price, never the mechanism. Net reader load goes *down*:
+"multidimensional time" leaves the surface and no new system arrives. The pillar-3 keeper framing
+above (the actor's clock and the director's) is unchanged as the framing for other pieces and for
+the Storyverse's own telling — the two clocks stay bedrock.
 
 ## Deployment — by altitude
 

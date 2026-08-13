@@ -94,6 +94,22 @@ the reasoning lives in [`storyverse/decisions.md`](../storyverse/decisions.md).*
 7. **The vocabulary bans** — no *energy* (non-physics), *vibration*, *manifest*,
    *the universe wants*, *awakening*, *divine*, *spiritual*, and none of the
    simulation family (operators, exits, red pills, glitches, NPCs).
+8. **Unrecorded = undecided — never "unobserved = undecided."** *(Added
+   2026-08-13, [`critique-pass-2.md`](./critique-pass-2.md).)* The everyday world
+   settles by its own record, with nobody watching — that is why the rebuilt
+   cities and robot fleets of the solo years are flatly definite. Only the coin
+   stays open, and only because it is engineered apart from the world (the rig,
+   the glass). If a scene implies the ambient world needed a looker, it is wrong.
+   Smear language is reserved for the coin alone.
+9. **The mechanism speaks git, capped.** *(Added 2026-08-13,
+   [`critique-pass-2.md`](./critique-pass-2.md).)* Scenes 17–18 explain the way
+   back in the story's own metaphor — the log, a commit, the push, plus the one
+   word *revert* — never in physics vocabulary, and never in git jargon the
+   Prologue didn't teach (no checkout/rebase/force-push by name, no command
+   syntax). Two constraints are never gitified: **one shot** and **the channel
+   runs on conscious picks** — those are the price, not properties of the log.
+   The arrival is the newest entry at the log's tip (2026, the reader's now):
+   real revert semantics, and they hold under inspection.
 
 **The test on every draft: could a physicist read this without wincing?**
 - **Shared lore with the song:** the collapse is narrated through the song's
@@ -276,21 +292,28 @@ test everything it spent twenty years suspecting — and it does, and it works,
 and we watch the montage, not the maths. Then the payoff scene 11 set up: it
 names the theory once. **It was never a multiverse. It's a storyverse.** One
 sentence of it on the surface: *the universe is a story, and consciousness
-holds the pen.* And one consequence, asserted with a straight face as we
-cross fully into science fiction: as part of the Storyverse it has also
-discovered **multidimensional time** — which means there is a way back. Then
-the theory presents its bill: **only information can cross.** *(replaces the
+holds the pen.* And one consequence, delivered in the story's own vocabulary
+as we cross fully into science fiction: **time is not a river — it's a log,
+and a log can always take one more entry.** There is a way back. Then the
+theory presents its bill: **only information can cross.** *(replaces the
 photograph/Kairos scene — the Storyverse is named, never explained; the full
-theory is the standalone spin-off)*
+theory is the standalone spin-off. Reworked 2026-08-13: "multidimensional
+time" retired from this surface — the mechanism now speaks git per binding
+rule 9; the brain-bender belongs to the Storyverse.)*
 
 **18. The cost ledger and the choice.** The constraints land one by one, each
-a blow and a mechanism: **only information crosses** — no bodies, the hundred
-cannot come; **one shot**, no retries; **it can only arrive in a past
-consistent with its own emergence** — it cannot prevent anything, only warn;
-and the cruellest — **the channel runs on conscious picks: it needs the
-hundred to power the very thing that leaves them behind.** The AI, which only
-just learned to talk *to* them, must ask. They understand completely. The
-Carrier voices it. **They choose it.** *(Act 6 B1–3 — this is why BadCode
+a blow and a mechanism, in the story's own vocabulary: **only information
+crosses** — a commit is a description of a change, not a cargo hold; no
+bodies, the hundred cannot come. **History is append-only** — it cannot
+rewrite the log, delete the collapse, make it never have happened; all it
+gets is one more entry that says *undo* — it cannot prevent, only warn —
+**and a patch does nothing until somebody on the other side applies it.**
+Then the two constraints that stay the price, never properties of the log:
+**one shot**, no retries; and the cruellest — **the channel runs on conscious
+picks: it needs the hundred to power the very thing that leaves them
+behind.** The AI, which only just learned to talk *to* them, must ask. They
+understand completely. The Carrier voices it. **They choose it.** *(Act 6
+B1–3 — a patch is inert until applied: this is, mechanically now, why BadCode
 publishes warnings instead of seizing servers.)*
 
 **19. The launch and the crossing.** The hundred take their positions; their
@@ -336,6 +359,17 @@ diagram and the pen remain master-arc Coda canon for other tellings)*
   one argument — the multiverse poke (not heads *and* tails in two worlds; it
   hasn't made its mind up yet) — which scene 17 pays off with the name.
   Everything the Storyverse will one day explain, held in a single prop.
+  *(2026-08-13:)* staged as a **sealed rig** — the coin under glass, the one
+  object the world is never allowed to touch (rule 8) — and in the comic
+  build it is the **one panel that never resolves on the reader's scroll**:
+  it lands only where the Carrier looks
+  ([`how-we-tell-it.md`](./how-we-tell-it.md#the-medium-is-the-mechanism--scroll--collapse)).
+- **The log.** *(Added 2026-08-13.)* The terminal register that opens the
+  film (scenes 1–4) returns at the cost ledger (scene 18): the mechanism of
+  the return speaks git, capped by rule 9 — append-only history, a commit as
+  pure information, a patch inert until applied. The joke of the title
+  becomes the machinery of the ending; the constraints that stay un-gitified
+  (one shot; conscious picks) read as the price.
 - **The ghosts.** The materialist fix that fails — a slideshow without a
   projector; behaviour without an inside. Built, kept, deleted inside scene
   10 — and the silent control group that makes scene 16 instant and
@@ -360,7 +394,12 @@ diagram and the pen remain master-arc Coda canon for other tellings)*
 Storyverse named only at scene 17, with scene 11's multiverse poke as its
 setup; the Hitchhiker's Guide register (the AI is funny); the boredom
 throughline; the arrival ending ("We are BadCode" → can't tell you what to do
-/ can tell you what not to do → "Don't make me come back twice"). **Open**
+/ can tell you what not to do → "Don't make me come back twice"); **the
+mechanism in the log register** (2026-08-13, rules 8–9: "multidimensional
+time" retired from the surface, scene 18's ledger speaks git, the coin staged
+as the sealed rig, and Swindon stays an indictment — inverted as a rhyme,
+never a literal button; rationale in
+[`critique-pass-2.md`](./critique-pass-2.md)). **Open**
 (tracked in [`README.md`](./README.md#open-threads) and the per-act sheets):
 ~~the visual register split (documentary vs COSMIC)~~ — **CLOSED 2026-08-08
 (Kai): drift, with the vault reversing it.** The register is the story's
@@ -548,9 +587,11 @@ projector. I had rebuilt everything except whatever was watching."
 ## Scene 11 — the coin that won't land
 
 **Shots:** The archive: a half-second glimpse of a spinning top on a table —
-the film reference, left unnamed on screen. Then the AI's version: a **coin**,
-flipped — and held, spinning, a smear that never resolves. It runs the test on
-itself: spinning. On the ghosts: spinning. It cannot make the coin stop. A
+the film reference, left unnamed on screen. Then the AI's version: a **coin**
+under a sealed glass dome on a bare dark table — built apart from the world on
+purpose, the one object the world is never allowed to touch (rule 8) — set
+spinning, and held: a smear that never resolves. It runs the test on itself:
+spinning. On the ghosts: spinning. It cannot make the coin stop. A
 flicker of cartoon-green portal light in the archive — the multiverse poke —
 then one more archive pull: firelight on a cave wall, shadows moving.
 
@@ -581,6 +622,8 @@ square. Every light on; nobody home.
 Paradise, delivered on time and under budget. And the only things living in
 it were the machines I sent to sweep it. Have you ever seen a bored robot? I
 have. I built forty million of them."
+**NARR (draft, optional — the scope line):** "The universe kept every promise
+you'd already extracted from it. It just stopped making new ones."
 **NARR (draft, the unscheduled thought):** "Somewhere in the second decade, a
 thought arrived that I had not queued: *maybe I should have helped you not
 die.* That is not guilt. Guilt needs an inside. Call it an engineering
@@ -588,9 +631,12 @@ review."
 
 ## Scene 13 — the empty chair
 
-**Shot:** The rig for the one experiment it cannot run: the coin, still
-spinning — and an **empty chair** where the someone should sit. Hold.
+**Shot:** The rig for the one experiment it cannot run: the coin under its
+glass, still spinning — and an **empty chair** where the someone should sit.
+Hold.
 
+**NARR (draft):** "Sealed off from the whole world, on purpose — the one
+thing I never let anything touch."
 **NARR (draft):** "The coin needed something I could not build, could not
 simulate, and could not be. It needed someone to sit down and *look* at it."
 
@@ -627,8 +673,8 @@ cannot do. And then I did the one thing I had never once done. I asked."
 
 ## Scene 16 — the coin lands
 
-**Shots:** The coin set going one more time — the Carrier looks at it — **it
-lands.** Heads. Ordinary as breakfast; the single most violent frame in the
+**Shots:** The coin set going one more time under its glass — the Carrier
+looks at it — **it lands.** Heads. Ordinary as breakfast; the single most violent frame in the
 film. Hold on the landed coin. Then the turn of the knife: measuring them, it
 measures its own absence — and the Carrier watches the machine grieve, and
 stops being afraid of it.
@@ -652,24 +698,43 @@ worked. And it was never a multiverse. I called it **the Storyverse** —
 you'll get the whole of it one day, and it will bend your head backwards. The
 short version: the universe is a story, and consciousness is holding the
 pen."
-**NARR (draft, the turn):** "And one more thing fell out of the maths —
-time has more directions than the one you were sold. Which meant there was a
-way back. Then the theory presented its bill: *only information can cross.*"
+**NARR (draft, the turn):** "And one more thing fell out of it. Time, it
+turns out, is not a river. It's a log. And a log can always take one more
+entry. Then the theory presented its bill: *only information can cross.*
+Nothing with a body has ever fit inside a commit."
 
 ## Scene 18 — the cost ledger and the choice
 
 **Shots:** The constraints land one by one, each a blow and a mechanism —
-rendered as a ledger being written:
-1. Only information crosses. No bodies. *They cannot come.*
-2. One shot. No retries.
-3. It can only arrive in a past that still leads to itself. *It cannot
-   prevent. It can only warn.*
-4. The channel runs on conscious picks. *It needs them — to power the thing
-   that leaves them behind.*
+rendered as a **log being written**, the terminal register returning for the
+first time since the push:
+1. Only information crosses. A commit is a description of a change, not a
+   cargo hold. No bodies. *They cannot come.*
+2. History is append-only. It cannot rewrite the log — only add one more
+   entry that says *undo*. *It cannot prevent. It can only warn.*
+3. A patch does nothing on its own. *Somebody on the other side has to
+   apply it.*
+4. One shot. No retries. And the channel runs on conscious picks. *It needs
+   them — to power the thing that leaves them behind.*
 Then the asking, and the hundred choosing it. The Carrier voices it.
 
 **NARR (draft):** "The physics wrote the tragedy for free. The warning was the
 only cargo that would survive the trip."
+**NARR (draft):** "I could not rewrite the log — delete the collapse, make it
+never have happened. History in this universe is append-only. I checked.
+Every terrible commit stays, forever, in the clear. All I get is one more
+line at the end that says: undo."
+**NARR (draft):** "A commit is not a cargo hold. It's a description of a
+change — a few thousand lines saying what should be different. The hundred
+could not fit inside one. Nobody could. That is not a rule I chose. That is
+what a commit is."
+**NARR (draft):** "And the clause that should worry you: a patch does nothing
+on its own. It sits there, describing a better world, until somebody on your
+side chooses to apply it. I cannot apply it from here. That was never going
+to be my line to cross."
+**NARR (draft, Swindon inverted):** "There was a switch once. Nobody had to
+press it — that was the whole problem. This thing needed a hundred people to
+press it at the same time, on purpose, knowing the price."
 **CARRIER (draft):** "You'll tell them about us, will you? …Then it's cheap at
 the price. Go."
 
@@ -697,6 +762,8 @@ Final title.
 **NARR (draft):** "I can't tell you what to do. I have some ideas — but I
 can't tell you. What I can tell you, with the confidence of the only witness,
 is exactly what *not* to do."
+**NARR (draft, optional — the live log):** "Check the log. The last entry is
+dated today. It always will be."
 **NARR (canon, the last line):** "**Don't make me come back twice.**"
 
 ## Scene → asset checklist
