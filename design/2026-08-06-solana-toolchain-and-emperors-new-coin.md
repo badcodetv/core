@@ -12,17 +12,32 @@ architecture ruling and its code deleted by T30. The tenancy auction (T12), the
 faucet (T13), `retire` (T28) and the proportional caps (T29) are built and
 green; the simulation (T14) runs the full M2 record plus a forward projection,
 and the genesis parameters (T15) are chosen from its output and recorded in
-[`chain/sim/RESULTS.md`](../chain/sim/RESULTS.md). **The program is
-feature-complete except for T31's Gazette**, which is the last thing owed before
-T22, and the remaining track is the oracle (T16–T18), the page (T19–T20) and
-shipping (T21–T23).
+[`chain/sim/RESULTS.md`](../chain/sim/RESULTS.md). **The program's *economics*
+are feature-complete except for T31's Gazette**, which is the last thing owed
+before T22, and the remaining track is the oracle (T16–T18), the page (T19–T20)
+and shipping (T21–T23).
 
-**Three things want a human before T22.** (1) Jack's Gazette slot sheet, which
-T31 is blocked on. (2) Ratification of one creative call made on the documented
-recommendation: retirement keeps the auctions trading rather than freezing them
-(T28's Notes). (3) A read of the peg-horizon finding — the coin can only count
-to $18,446.7 trillion of M2, about 107 years out, and T15 ruled *state it, don't
-postpone it* (T15's Notes and the Discovered Issues Log).
+> **⚠ Corrected 2026-08-13 (ticket audit) — "feature-complete" was overstated.**
+> `oracle::read_quote`'s non-mock body is a stub that unconditionally returns
+> `OracleUnavailable`, and the crate has **no Switchboard dependency at all**.
+> So **a default build cannot sync, ever** — every green test to date runs under
+> the `mock` feature, which is legitimate and by design, but it means **T18 is
+> not an integration polish step: it is the difference between a deployed
+> program that works and one whose core instruction always fails.** Deploying to
+> devnet before T18 would put up a coin that cannot track M2. `Config.expected_
+> feed_id` is likewise written at genesis and validated by nothing until T18.
+
+**Three things want a human before T22.** (1) Jack's Gazette slot sheet.
+**Corrected 2026-08-13: this does not block T31.** Slot personalities are
+genesis naming and frontend presentation over one mechanism that serves all ten
+(Ruling D), and `params.genesis.json` already fixes the price ladder — so T31
+builds now with placeholder names and the sheet is due at **T22**, where
+`init_asset` makes the names permanent. (2) Ratification of one creative call
+made on the documented recommendation: retirement keeps the auctions trading
+rather than freezing them (T28's Notes). (3) A read of the peg-horizon finding —
+the coin can only count to $18,446.7 trillion of M2, about 107 years out, and
+T15 ruled *state it, don't postpone it* (T15's Notes and the Discovered Issues
+Log).
 Date: 2026-08-06 · **architecture revised 2026-08-12 · adversarial review folded in 2026-08-12**
 
 > **Read [`2026-08-12-enc-architecture-decision.md`](./2026-08-12-enc-architecture-decision.md)
@@ -66,7 +81,7 @@ this table is the map.
 |---|---|---|
 | ✅ | T1–T6 · toolchain, Anchor workspace, chain-kit / chain-react / chain-cli, `/coins/:slug` | toolchain |
 | ✅ | T24–T27 · Docker toolchain, counter harness, copy-out proof, `./stack` | toolchain |
-| ✅ | T16 · Switchboard feed authored, immutability **proven live** | oracle |
+| 🟡 | T16 · Switchboard feed authored, immutability **proven live** — but the **date feed is still missing**, and T18/T28 depend on it (2026-08-13 audit) | oracle |
 | ✅ | T7 · program state, `math.rs`, placeholder genesis params | program |
 | ✅ | T8 · `initialize` + `init_asset` ×10 | program |
 | ✅ | T9 · oracle trait + MockOracle behind a Cargo feature | program |
@@ -77,7 +92,7 @@ this table is the map.
 | ✅ | T13 · the faucet — `claim` · `close_epoch` (Ruling C made it the only way in) | program |
 | ✅ | T28 · `retire` — the coin notices its own end (ending ruled: **keep trading**) | program |
 | ✅ | T29 · proportional sync caps + the catch-up walk (2026-08-12 review) | program |
-| ⬜ | T31 · the Imperial Gazette — tenant copy + the editor's pen (**must land before T22**) | program |
+| ⬜ | T31 · the Imperial Gazette — tenant copy + the editor's pen (**must land before T19**, which decodes its accounts, and before T22, which freezes them) | program |
 | ✅ | T14 · economic simulation harness (+ `@badcode/enc`, the math mirror) | economics |
 | ✅ | T15 · the genesis parameters, chosen and recorded in `chain/sim/RESULTS.md` | economics |
 | ⬜ | T17 · stand the M2SL feed up on devnet | oracle |
@@ -505,9 +520,9 @@ $2,500/month tier this month with Pythnet retiring).
 | `chain/params.genesis.json` | Genesis economic parameters (placeholders at T7, finalised at T15) |
 | `chain/programs/emperors-new-coin/Cargo.toml` | Program manifest |
 | `chain/programs/emperors-new-coin/src/lib.rs` | Entrypoint + handlers |
-| `chain/programs/emperors-new-coin/src/state.rs` | `Config`, `Printer`, `Asset`, `FaucetEpoch`, `Player` |
+| `chain/programs/emperors-new-coin/src/state.rs` | As built: `Config`, `Printer`, `Asset`, `Bid`, `FaucetEpoch`, `Player` (+ `MockOracle` behind the `mock` feature). Non-data PDAs: vault, escrow, ENC mint, asset mints, certificate mints. |
 | `chain/programs/emperors-new-coin/src/errors.rs` | `ErrorCode` enum |
-| `chain/programs/emperors-new-coin/src/math.rs` | Supply targeting, rent accrual, price interpolation (unit-tested) |
+| `chain/programs/emperors-new-coin/src/math.rs` | Supply targeting, price interpolation, auction/faucet arithmetic (unit-tested). **No rent accrual** — Ruling A removed it; T30 deleted the code. |
 | `chain/programs/emperors-new-coin/src/oracle.rs` | Oracle read abstraction: Switchboard + mock behind a feature |
 | `chain/programs/emperors-new-coin/src/instructions/*.rs` | One file per instruction |
 | `chain/tests/*.ts` | Anchor integration tests, one file per suite |
@@ -692,20 +707,32 @@ so never write them bare in docs, tickets or UI copy.
 
 ### Program instructions
 
+> **Rewritten 2026-08-13 to the as-built surface.** This table previously listed
+> `buy_asset`, `settle_rent` and `foreclose` — the rent economy Ruling A deleted
+> and T30 removed. What follows is what the program actually exports today.
+
 | Instruction | Signer | Effect |
 |---|---|---|
-| `initialize(params)` | deployer, once | ENC mint (6dp, mint authority = vault PDA, **freeze authority None**), vault, `Config` (immutable), `Printer`; bootstrap supply from a hardcoded genesis M2 the first `sync_m2` corrects |
-| `init_asset(index)` | deployer, once each | One `Asset` PDA + its Token-2022 NFT (permanent delegate + metadata), held by the vault. Gated by `Config.initialized_assets` |
-| `sync_m2()` | **anyone** | Validate quote → retarget supply → mint to / burn from vault → rescale prices. Rejected until all 10 assets exist |
-| `claim()` | anyone | Pay share of `pot(N−1)`; pay welcome grant if new and grants remain; register for epoch `N` |
-| `buy_asset(index)` | anyone | Settle seller rent, pay 100% of price to seller, move NFT, reassign |
-| `settle_rent(index)` | **anyone** | Push accrued rent from holder to vault |
-| `foreclose(index)` | **anyone** | If rent debt > holder balance and grace elapsed: asset → vault, caller gets bounty |
+| `initialize(params)` | **upgrade authority**, once ever | ENC mint (6dp, mint authority = vault PDA, **freeze authority None**), vault, `Config` (immutable), `Printer`; bootstrap supply from a hardcoded genesis M2 the first `sync_m2` corrects |
+| `init_asset(index, name, symbol, uri, genesis_price)` | **upgrade authority**, once each, in order | One `Asset` PDA + its Token-2022 NFT (metadata pointer, **no permanent delegate**), held by the vault. Gated by `Config.initialized_assets` |
+| `sync_m2()` | **nobody — no signer at all** | Validate quote → one `capped_step` toward target → mint to / burn from vault → rescale all ten price curves. Rejected until all 10 assets exist, and after `retire` |
+| `claim(epoch)` | claimer | Pay share of `pot(N−1)`; pay welcome grant if new and grants remain; register for epoch `N`. Pays nothing at all below the vault floor |
 | `close_epoch(n)` | **anyone** | Reclaim rent-exemption from a settled `FaucetEpoch` (n ≤ current−2) to the closer |
-| `set_mock_m2(v, d)` | anyone | **Compiled only under `--features mock`** |
+| `place_bid(index, amount)` | bidder | Escrow the bidder's **own** ENC as the standing high bid. Must beat the interpolated price and the current high bid strictly |
+| `withdraw_bid(index)` | bidder | Return escrow and close the `Bid`. Refused only while the bid is both standing **and** from the current term |
+| `settle_auction(index)` | **anyone** (fee payer only) | After `term_ends_at`: escrow → outgoing holder, tenancy → winner, term increments. Needs no cooperation from the outgoing holder |
+| `roll_term(index)` | **nobody — no signer at all** | After `term_ends_at` with no qualifying bid: release the stale high bid, increment the term, holder unchanged |
+| `mint_certificate(index, term)` | **anyone** (pays) | Token-2022 certificate minted **to the holder**, never the caller. The Emperor gets no receipt |
+| `retire()` | **nobody — no signer at all** | Set `retired` once the oracle has been silent for `retirement_silence_seconds`. One-way. Stops only `sync_m2` |
+| `set_mock_m2(v, d)` · `mock_fund(amount)` | anyone | **Compiled only under `--features mock`** |
+| `file_copy(index, text)` · `spike(index)` · `pass_the_pen(k)` · `break_the_pen()` | tenant / editor | **T31, not yet built.** The Gazette — see Ruling D |
 
-`Config` is written once at `initialize` and has no mutating instruction. The
-upgrade authority is burned at T22.
+**Four instructions take no signer whatsoever** (`sync_m2`, `roll_term`,
+`retire`, and `settle_auction` bar its fee payer). That is the point: the
+machine runs itself, and **no token moves without its owner's signature.**
+
+`Config` is written once at `initialize` and has no mutating instruction — there
+is no setter for any economic parameter. The upgrade authority is burned at T22.
 
 ---
 
@@ -1436,9 +1463,30 @@ upgrade authority is burned at T22.
 > keyless sources verified to agree. Evidence and job committed at
 > `chain/feeds/README.md` + `chain/feeds/m2sl.job.json`. **The hard gate is
 > cleared — the artistic claim is safe to publish.**
-> **REMAINING:** add DBnomics as a median-aggregated second source (needs the
-> JSONPath-to-last-element shape tested; its `observations=1` does not limit the
-> response), and mint the mainnet-queue feed at launch.
+> **REMAINING (expanded by the 2026-08-13 ticket audit — this is more than a
+> polish item, and one part of it is load-bearing):**
+> 1. **🔴 The date feed does not exist.** The committed `m2sl.job.json` is a
+>    single job that extracts the *value* only — its regex matches a date but
+>    captures group 1, the number. **T18's `Quote.release_date` therefore has no
+>    source, and `retire` (T28) is only correct if that date comes from the
+>    Fed's own metadata**: with a crank-time date instead, any bot cranking a
+>    dead series keeps the coin alive forever and retirement measures apathy
+>    rather than silence. This must be authored and its feed ID committed
+>    **before T18 can meet its acceptance criteria.**
+>    **Decision owed to the executor:** `fredgraph.csv` carries the
+>    *observation month* (e.g. `2026-07-01`), not the H.6 *release date*. For
+>    T28's purpose — "has the Fed published anything new?" — the observation
+>    month is sufficient and arguably better: it advances monthly, it freezes
+>    when the series dies, and it is in the CSV we already fetch. If it is used,
+>    **rename the field and say so in the docs** rather than calling an
+>    observation date a release date. If a true release date is wanted, it needs
+>    a second endpoint, and the job is immutable forever once stored — so decide
+>    before storing, not after.
+> 2. Add DBnomics as a median-aggregated second source (needs the
+>    JSONPath-to-last-element shape tested; its `observations=1` does not limit
+>    the response).
+> 3. Mint the mainnet-queue feed **at mainnet launch** — *not* needed for T22,
+>    which deploys to devnet against T17's devnet feed.
 >
 > **Two findings that bind later tickets:**
 > 1. The job is **static forever** (its bytes are its identity), so it cannot take
@@ -1516,7 +1564,26 @@ upgrade authority is burned at T22.
   on devnet, so budget a **calendar day** between cranking and asserting. T19–T23
   sit behind this — it is a wall-clock stall in the critical path, not a work
   estimate. Start the aging clock as soon as the read path compiles.
+  **Scope corrections from the 2026-08-13 ticket audit — this ticket is bigger
+  than "wire up a read":**
+  1. **There is no Switchboard dependency in `Cargo.toml` yet.** Adding it, and
+     whatever it drags in, is part of this ticket and is the most likely source
+     of build-toolchain pain (see `chain/README.md`'s Docker notes).
+  2. **The current non-mock `read_quote` is a stub returning
+     `OracleUnavailable` and discarding both its arguments.** Nothing about the
+     real path exists to extend — it is written from scratch here.
+  3. **`Quote` currently carries only `m2_value` and `release_date`.** If the
+     signature-quorum check needs more (signer count, oracle timestamps), the
+     struct grows here and `sync_m2`'s call site grows with it.
+  4. **The `mock` feature must keep working unchanged.** It is how every other
+     suite runs and how T19/T20 are developed; the environment split is
+     deliberate and absolute. Do not let the real path's types leak into the
+     mock build.
+  5. **T16's date feed is a prerequisite** and does not exist yet — see T16's
+     REMAINING block. `Quote.release_date` has no source until it is authored,
+     and `retire`'s correctness depends on it being Fed-sourced.
 - **Files:** `chain/programs/emperors-new-coin/src/oracle.rs` (real impl),
+  `chain/programs/emperors-new-coin/Cargo.toml` (add the Switchboard dep),
   `chain/scripts/crank.ts`, `packages/cli/src/enc.ts`, `chain/tests/switchboard.ts`.
 - **Acceptance criteria:** **All of these must be proven against devnet**, where
   real oracles sign real quotes. The real read path executes end-to-end against a
@@ -1538,32 +1605,125 @@ upgrade authority is burned at T22.
 - **Scope:** Live M2 readout, total supply, vault balance and share with the floor
   marked, next H.6 release countdown (fourth Tuesday, 1:00pm ET), and the ten
   assets with prices interpolating every slot. Works with no wallet connected.
-  Add the account decoders and `currentPrice`/`rentOwed` to chain-kit.
+
+  **Rewritten 2026-08-13 (ticket audit).** The original scope said "add the
+  account decoders and `currentPrice`/`rentOwed` to chain-kit." Both halves were
+  wrong and following it would have broken the build:
+  - **🔴 `rentOwed` does not exist.** Ruling A removed rent; T30 deleted the
+    code. There is no holding cost to display.
+  - **🔴 Decoders must NOT go in `chain-kit`.** The kit is copied wholesale into
+    unrelated repos and may not know ENC exists. **T23 enforces this by grep and
+    would fail.** Everything ENC-specific belongs in **`packages/enc`**, which
+    already documents exactly this in its `src/index.ts`. `chain-kit` stays
+    generic; only its `programs.json` name→address map may mention the coin.
+
+  **What to actually build.** Add to `packages/enc`: the IDL
+  (`src/idl/emperors_new_coin.ts`), account decoders (`src/accounts.ts`), and
+  PDA derivations. `math.ts` **already exists** and mirrors the program — reuse
+  it; do not rewrite the arithmetic. Mirror in BigInt with the same truncating
+  integer division.
+  - **Accounts to read:** `Config` (`[b"config"]`), `Printer` (`[b"printer"]`),
+    the ENC mint (`[b"mint"]`, for `supply`), the vault ATA (owner `[b"vault"]`,
+    `allowOwnerOffCurve`) for the vault balance, the ten `Asset` PDAs
+    (`[b"asset", [i]]` — one `getMultipleAccounts`), the escrow ATA (owner
+    `[b"escrow"]`) for total ENC locked in bids, and `FaucetEpoch`
+    (`[b"epoch", u64le]`) for epochs N and N−1. **Treat a missing `FaucetEpoch`
+    as pot 0 / registrants 0** — it is created lazily by the first claimer.
+  - **Derived per asset:** current price from
+    `PriceCurve{price_from, price_to, interp_start, interp_end}.price_at(now)` —
+    this is both the displayed price *and* the auction reserve. `holder == vault
+    PDA` renders as "the Emperor holds it", not as an address.
+    `high_bidder == PublicKey.default` means no bids. Show time remaining to
+    `term_ends_at`, and once past it, which of `settle_auction` or `roll_term`
+    applies (`high_bid > 0 && high_bid >= price_at(now)`).
+  - **Derived globally:** `floor_amount(supply, floor_bps)` with the vault's
+    share against it; `faucet_pot(...)` for a not-yet-open epoch;
+    `epoch_of(now, epoch_seconds)` and the next boundary; the honest supply
+    drift `mint.supply − printer.target_supply` (invariant is `supply ≥ k × M2`,
+    never `=`); and the retirement clock `now − printer.last_sync_at` against
+    `retirement_silence_seconds`.
+  - **Render the Gazette front page** (Ruling D / T31): the ten slots as
+    newspaper columns with their filed copy, spiked columns as redaction bars.
+    The page **must state that the "only the last word is visible" serial
+    framing is presentation, not secrecy** — the chain is public. Same
+    disclosure family as the melting balance.
+  - **Only `Synced`, `Claimed` and `Retired` emit events.** The auction
+    instructions emit `msg!` logs only, so auction history needs account-state
+    diffing or log parsing — do not design a UI that assumes an event feed.
 - **Files:** `apps/web/src/coins/enc/{Printer,AssetGrid}.tsx`, `enc.css`,
   `packages/enc/src/accounts.ts`, `packages/enc/src/idl/emperors_new_coin.ts`.
+  **Not `packages/chain-kit`.**
 - **Acceptance criteria:** Prices visibly tick without a refresh; account changes
   push through the websocket subscription; the page renders with no wallet; the
-  countdown is correct across a DST boundary.
+  countdown is correct across a DST boundary; and
+  `grep -riE "enc|emperor|m2" packages/chain-kit/src packages/chain-react/src`
+  still returns nothing but `programs.json` and false-positive substrings.
 - **TDD:** yes for countdown and price math; no for presentation.
-- **Validation:** `npm run test --workspace @badcode/chain-kit`; `npm run build`;
+- **Validation:** `npm run test --workspace @badcode/enc`; `npm run build`;
   manual check at `/coins/enc` against localnet.
-- **Depends on:** T18, T6
+- **Depends on:** T6, and **T31** (the `Asset` layout must be final before the
+  frontend decodes it). **Not blocked on T18** — build and demo against
+  localnet with the `mock` feature, where `set_mock_m2` drives the peg. T18 only
+  changes where the numbers come from, not what the page renders.
 - [ ] done
 - Notes:
 
 ### T20: ENC page — wallet actions and the melting balance   [Status: pending | Model: sonnet]
 - **Scope:** Connect, claim (showing whether it's the welcome grant, a share of
-  yesterday's pot, or zero — and why), force-buy, rent owed, settle rent. Errors
-  surface a human cause, successes an explorer link. Plus the melting balance: the
+  yesterday's pot, or zero — and why), and the auction actions. Errors surface a
+  human cause, successes an explorer link. Plus the melting balance: the
   displayed ENC decays continuously while the chain holds the true number, with a
   quiet discoverable tell (hover/tap reveals the truth). Copy per `docs/voice.md`.
+
+  **Rewritten 2026-08-13 (ticket audit).** The original scope listed
+  "force-buy, rent owed, settle rent" — the rent/foreclosure machinery Ruling A
+  deleted and T30 removed from the tree. **None of those instructions exist.**
+  The actions to wire are the ones the program actually has:
+  - **`claim(epoch)`** — the faucet. The UI must explain the *register today,
+    collect tomorrow* shape, because it is the single most confusing thing here:
+    a first-ever claim registers you and pays only the welcome grant; the share
+    of the pot arrives on the *next* claim. Read `Player.last_registered_epoch`
+    to say which case the user is in, and say plainly when the vault is below
+    its floor and the faucet pays nothing at all.
+  - **`place_bid(index, amount)`** — escrows the bidder's own ENC. Must beat both
+    the current price (the reserve) and the standing high bid strictly. Topping
+    up an existing bid transfers only the difference.
+  - **`withdraw_bid(index)`** — refused only while the bid is both the standing
+    high bid *and* from the current term; a bid from any earlier term is always
+    withdrawable. Surface that distinction, because "my money is stuck" is the
+    obvious support question and the answer is usually "it isn't."
+  - **`settle_auction(index)` / `roll_term(index)`** — both permissionless and
+    callable by anyone once `term_ends_at` passes. Offer whichever the asset
+    state qualifies for; `roll_term` needs **no signer at all**.
+  - **`mint_certificate(index, term)`** — anyone may pay for it, and it always
+    lands in the holder's wallet, never the caller's. The Emperor gets no
+    receipt (`holder == vault` is refused).
+  - **`file_copy(index, text)`** (T31) — the tenant writes their column. **Once
+    per term**, so the UI must make the finality obvious *before* submission,
+    not after. Show the redaction marker for a spiked column.
+  - **Do not build a "buy" button.** There is no purchase instruction — the only
+    routes to ENC are the faucet and whatever secondary market strangers make.
+    Ruling C is a posture the page states, not a feature it offers.
+- **The melting balance survives Ruling A unchanged**, and its explanation
+  changes: nothing decays on-chain, and there is no demurrage. The balance sits
+  still while everything priced against the money supply rises, so the *real*
+  loss is in purchasing power. The page renders the fall; the chain holds the
+  truth; a hover reveals it. Cosmetic only, no on-chain state, and disclosed.
 - **Files:** `apps/web/src/coins/enc/Wallet.tsx`, `AssetGrid.tsx` (extend), `enc.css`.
-- **Acceptance criteria:** Full loop against localnet with Phantom: claim → buy →
-  watch rent accrue → a second wallet force-buys it. Rejected transactions show a
-  readable cause, not a raw program error code. The melting number is always one
+- **Acceptance criteria:** Full loop against localnet with Phantom, two wallets:
+  claim in epoch N → claim again in N+1 and receive a share → `place_bid` →
+  second wallet outbids → first wallet withdraws its escrow **in full** → term
+  ends → `settle_auction` from a third, uninvolved wallet → certificate lands in
+  the winner's wallet → tenant files copy once and is refused twice.
+  Rejected transactions show a readable cause, not a raw program error code —
+  map at minimum `BidBelowReserve`, `BidNotHighEnough`, `BidIsStanding`,
+  `StaleBidOutstanding`, `TermNotEnded`, `NoQualifyingBid`,
+  `AlreadyClaimedThisEpoch` and `WrongEpoch`. The melting number is always one
   interaction away from the truth and involves no on-chain state.
-- **TDD:** no (UI wiring; logic is tested in the program and kit)
+- **TDD:** no (UI wiring; logic is tested in the program and `@badcode/enc`)
 - **Validation:** `npm run build`; manual two-wallet run-through on localnet.
+  **Epoch and term lengths are `Config` fields** — a test ledger can be
+  initialised with short ones to reach these cases without waiting a month.
 - **Depends on:** T19
 - [ ] done
 - Notes:
@@ -1578,8 +1738,36 @@ upgrade authority is burned at T22.
   ENC genuinely is arbitrarily inflatable, that is the entire coin, and the
   PDA/non-upgradeable explanation sits beside it rather than apologising for it.
   Resolve the open thread at
-  `docs/stories/magic-money-tree/emperors-new-coin.md:151`. Add the toolchain to
-  `CLAUDE.md`'s repo map.
+  `docs/stories/magic-money-tree/emperors-new-coin.md:151`.
+
+  **Post-rulings requirements (2026-08-13 ticket audit) — the docs describe the
+  coin as it is now, not as first designed:**
+  - **The trust statement is two-part, never one.** *No key over the money; one
+    pen over the words.* T31 puts an editor key on the chain, so **"no admin
+    key" unqualified is now false and must not appear anywhere in the docs.**
+    State the pen's blast radius plainly: it can redact ten columns a month and
+    cannot move a token. If T31 has landed, this is the same claims surgery its
+    scope names — do not undo it here.
+  - **No rent, no foreclosure, no holding cost, no permanent delegate**
+    anywhere in the docs. Assets change hands by scheduled auction (Ruling A).
+    The old rent-era architecture diagram in this plan is marked SUPERSEDED and
+    is a historical record — do not narrate it as live.
+  - **It runs forever**, with the one self-proving exception: a permissionless
+    `retire` after `retirement.silenceSeconds` of oracle silence (Ruling B).
+  - **Closed loop by posture** (Ruling C): BadCode seeds no liquidity and sells
+    no ENC, ever. The faucet is the only route in that we control. Say the
+    posture; do not claim ENC *cannot* be traded — anyone may pool a plain SPL
+    token and we neither prevent it nor point at it.
+  - **State the peg horizon rather than burying it** (T15's ruling): the peg
+    can count to $18,446.7 trillion of M2, roughly 107 years out. It is a
+    better sentence than a silence.
+  - Document the economic parameters by *what they say*, sourcing
+    `chain/sim/RESULTS.md` — the Emperor keeps half the money forever; a
+    thousand ENC is a million dollars of the money supply and buys you nothing;
+    the cheapest column is one basis point of all the money there is.
+- **Already done — do not redo:** the toolchain is in `CLAUDE.md`'s repo map,
+  and `chain/README.md` already carries the portability contract and the
+  Docker/`io_uring`/dual-IDL gotchas. Extend both; do not rewrite from scratch.
 - **Files:** `chain/README.md`, `docs/coins/emperors-new-coin.md`,
   `docs/stories/magic-money-tree/emperors-new-coin.md`, `CLAUDE.md`.
 - **Acceptance criteria:** A reader goes from clean WSL to a running localnet ENC
@@ -1597,6 +1785,27 @@ upgrade authority is burned at T22.
   authority to `None`**. Publish the feed hash, the raw job JSON, and the
   standalone crank script. Flip the timeline node to `live` and update
   `diorama.test.ts` accordingly.
+
+  **What becomes permanent here (2026-08-13 ticket audit).** This is the point
+  of no return, so the things the burn freezes are listed explicitly:
+  1. **The ten slot names and image URIs — Jack's Gazette slot sheet.** T31
+     builds the mechanism with placeholder names; *this* ticket is where the
+     real ones are set, and after the burn they cannot be changed. **Do not run
+     `init_asset` on devnet-as-mainnet-rehearsal without Jack's sheet in hand.**
+  2. **The editor key** (`Config.editor`, set at `initialize`). Rotatable via
+     `pass_the_pen` afterwards, so key loss is survivable — but the initial
+     holder is a decision, not a default. Do not use a throwaway keypair.
+  3. **The genesis price ladder**, as absolute base units: multiply
+     `assets.genesisPricePpm` by the bootstrap supply (`GENESIS_M2_VALUE × k`),
+     cheapest slot first. The *ratios* are what hold forever — every sync
+     rescales all ten by the same factor.
+  4. **`retirement.silenceSeconds` and the sanity cap** — both `Config` fields,
+     both unchangeable after the burn.
+- **Split permitted (recommended).** Deploying and burning need not be one act.
+  An **upgradeable devnet deploy** to exercise T23's loop for real, followed by
+  the burn once everything is proven, is strictly safer and costs nothing but a
+  second deploy. **The burn is irreversible and must be a human decision** — an
+  agent may prepare and verify it, and must not execute it unprompted.
 - **Files:** `packages/chain-kit/src/programs.json`, `chain/feeds/m2sl.devnet.json`,
   `apps/web/src/home/timeline.ts:114`, `apps/web/src/home/atlas/diorama.test.ts:16`,
   `docs/coins/emperors-new-coin.md` (addresses).
@@ -1622,9 +1831,18 @@ upgrade authority is burned at T22.
   1. Full gates green: `./stack check` (typecheck + unit tests) and `npm run build`
      at repo root; `./stack cargo test -p emperors-new-coin --lib`; and every
      `./stack test test-*` suite.
-  2. Against **devnet**, through `/coins/enc` in a browser with Phantom: connect →
-     claim → buy an asset → observe rent accruing → a second wallet force-buys it →
-     settle rent → a third wallet forecloses a delinquent asset.
+  2. Against **devnet**, through `/coins/enc` in a browser with Phantom, the
+     **auction** loop (rewritten 2026-08-13 — the original text described the
+     rent/foreclosure machinery Ruling A deleted): connect → claim from the
+     faucet in epoch N → collect in epoch N+1 → `place_bid` on a slot → a second
+     wallet outbids → the first wallet `withdraw_bid`s its escrow back in full →
+     the term ends → anyone (a third wallet, not the winner) calls
+     `settle_auction` → the winner receives the tenancy and `mint_certificate`
+     puts the press clipping in their wallet → the tenant calls `file_copy`
+     once and is refused a second time → the editor `spike`s that column and is
+     refused a second spike in the same term → the term rolls.
+     **The signature invariant is the thing being proven: no token leaves any
+     wallet without its owner's signature, at any point in that sequence.**
   3. A real `sync_m2` executes against the live devnet Switchboard feed and the
      resulting supply equals `k × M2` for the current published figure.
   4. **Toolchain reuse check:** scaffold a throwaway second program and page from
@@ -2087,7 +2305,18 @@ while the page correctly reports localnet.
   (default `./stack build` + `! grep -q set_mock_m2 chain/idl/emperors_new_coin.json`).
 - **Depends on:** T12 (term lifecycle + settlement reset). **Must land before
   T22** — the editor key, the copy field size, and the slot names/genesis
-  prices all become permanent at the authority burn.
+  prices all become permanent at the authority burn — and **before T19**, which
+  decodes `Asset` and renders the front page, so the account layout must be
+  final before the frontend is written against it.
+- **NOT blocked on Jack (clarified 2026-08-13 ticket audit).** The plan header
+  previously said this ticket was blocked on the slot sheet; it is not. Ruling D
+  is explicit that slot personalities are *genesis naming and frontend
+  presentation over one mechanism serving all ten*, and the price ladder is
+  already fixed in `params.genesis.json`. **Build the mechanism now with
+  placeholder slot names** (`slot_00` … `slot_09` or the candidate sheet in the
+  scope above, clearly marked provisional). Jack's sheet is consumed at **T22**,
+  where `init_asset` writes the real names and the burn makes them permanent.
+  Nothing in the program logic branches on a slot's name.
 - [ ] done
 - Notes: Genesis prices differ per slot (`init_asset` already takes one per
   index): masthead dearest, classified cheapest. **The cheapest reserve is
@@ -2101,6 +2330,48 @@ while the page correctly reports localnet.
 ## Discovered Issues Log
 
 _(appended by executors during implementation)_
+
+- **2026-08-13 · ticket audit before the remaining-work run (no code changed).**
+  Every unfinished ticket was read against the as-built program and the
+  2026-08-12 rulings. The 08-12 review's step 4 — *"rewrite tickets T12 onward
+  to match"* — had been applied to T12/T13/T28/T29 but **not** to T19/T20/T23,
+  which still specified the deleted rent economy. Findings:
+  1. **🔴 The oracle's real path is a stub.** `read_quote` (non-mock) returns
+     `OracleUnavailable` unconditionally and discards both arguments; the crate
+     has no Switchboard dependency. **A default build can never sync.** Every
+     green suite runs under the `mock` feature. The plan's "feature-complete"
+     status line was corrected, and T18's scope expanded — it is a from-scratch
+     build, not an integration step.
+  2. **🔴 T19 directed ENC decoders into `packages/chain-kit`**, which the
+     portability contract forbids and **T23's own grep would have failed**.
+     Redirected to `packages/enc`, which already documents the rule.
+  3. **🔴 T19 specified a `rentOwed` display and T20 specified "force-buy, rent
+     owed, settle rent"** — none of which exist. Both rewritten against the real
+     instruction set (`claim`, `place_bid`, `withdraw_bid`, `settle_auction`,
+     `roll_term`, `mint_certificate`, `file_copy`).
+  4. **🔴 T23's end-to-end criterion walked a rent/foreclosure loop.** Rewritten
+     as the auction loop, with the signature invariant as the thing being proven.
+  5. **🔴 T16's date feed does not exist.** The committed `m2sl.job.json`
+     extracts the value only, so `Quote.release_date` has no source — and
+     `retire` is only correct if that date is Fed-sourced. T16's board status
+     dropped from ✅ to 🟡. A decision is owed on observation-month versus true
+     release date **before** the job is stored, because it is immutable after.
+  6. **T31 was wrongly described as blocked on Jack's slot sheet.** Ruling D
+     makes slot personalities naming and presentation over one shared
+     mechanism, and the price ladder is already fixed in `params.genesis.json`.
+     T31 builds now with placeholder names; the sheet is due at T22.
+  7. **T21's "add the toolchain to `CLAUDE.md`" was already done**, and its
+     trust statement predated the editor's pen. Rewritten to the two-part form:
+     *no key over the money; one pen over the words.*
+  8. **T22 gained an explicit list of what the burn makes permanent**, and an
+     endorsed split: deploy upgradeable, prove it, then burn as a separate human
+     act.
+  9. Minor: the file map still described `math.rs` as carrying rent accrual and
+     omitted `Bid` from `state.rs`. Both corrected.
+  10. Not fixed, recorded only — small dead code in the program: unused error
+      variants `InvalidInterpolationWindow` and `AssetAlreadyInitialized`, and
+      unused `rent: Sysvar` fields on `Initialize` and `InitAsset`. Harmless;
+      worth a sweep at T23 rather than a ticket of its own.
 
 - **2026-08-12 · adversarial review (Fable), findings folded into tickets:**
   (1) `max_single_mint` / `max_change_bps` deadlock guarantees eventual forced
