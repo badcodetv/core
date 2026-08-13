@@ -202,8 +202,30 @@ Use `useProgramReader`, which needs no wallet and exists for exactly this.
 
 **`Buffer` does not exist in a browser and Vite does not polyfill it.** Relying on
 the global throws "Buffer is not defined" on the first PDA derivation, i.e. the
-instant a wallet connects. `chain-kit` imports it explicitly so a consuming app
-needs no polyfill setup.
+instant a wallet connects. `chain-kit` imports it explicitly, so nothing this
+toolchain does needs a polyfill — **but Anchor does.** Its
+`BorshInstructionCoder.encode` calls `Buffer.alloc` against the global, inside a
+dependency you cannot edit, so a page reads perfectly and then throws on the
+first button that builds an instruction. **An app that sends transactions has to
+put `Buffer` on the global itself**; see `apps/web/src/buffer-global.ts`, which
+is imported first thing in `main.tsx`. Found at T20 by clicking a button in a
+real browser — every unit test and the whole typecheck passed with the bug in
+place, because nothing but a browser has this gap.
+
+**Account subscriptions inherit the connection's commitment, and the default is
+`finalized`.** A `ConnectionProvider` given no commitment makes every
+`onAccountChange` wait ~32 slots: measured at T20 on a local validator,
+**12.5 seconds** between a transaction landing and the page hearing about it,
+which reads as a broken subscription rather than as a commitment level.
+`SolanaProvider` now pins `confirmed`, matching what `useSendTransaction`
+already confirms at.
+
+**Anchor's two IDLs disagree about error names as well as field names.** The
+JSON carries the Rust variant (`MathOverflow`); the generated `.ts` carries its
+camelCase view (`mathOverflow`); and what a running program puts in its logs —
+and therefore in `errorCode.code` — is the Rust one. A lookup table typed off
+the generated view compiles, matches nothing, and degrades silently to hex codes
+in front of users. See `packages/enc/src/actions.ts`.
 
 **A big account struct overflows the 4KB stack frame, and says so in hex.**
 Anchor deserialises accounts into the instruction's own BPF stack frame, which

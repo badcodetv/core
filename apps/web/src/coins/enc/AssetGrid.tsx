@@ -9,6 +9,8 @@ import {
 } from '@badcode/enc'
 import { shortAddress } from '@badcode/chain-react'
 import type { PublicKey } from '@solana/web3.js'
+import { Counter } from './Counter'
+import type { EncActions } from './useEncActions'
 
 /**
  * The Imperial Gazette: ten columns, sold by the month.
@@ -57,7 +59,15 @@ function Redacted() {
   )
 }
 
-function Column({ view, supply }: { view: AssetView; supply: bigint }) {
+function Column({
+  view,
+  supply,
+  actions,
+}: {
+  view: AssetView
+  supply: bigint
+  actions: EncActions
+}) {
   return (
     <article className={`gz-column${view.index === 9 ? ' gz-column-lead' : ''}`}>
       <header className="gz-column-head">
@@ -130,6 +140,8 @@ function Column({ view, supply }: { view: AssetView; supply: bigint }) {
           </dd>
         </div>
       </dl>
+
+      <Counter view={view} actions={actions} />
     </article>
   )
 }
@@ -140,12 +152,14 @@ export function AssetGrid({
   vault,
   supply,
   now,
+  actions,
 }: {
   assets: (EncAsset | null)[]
   config: EncConfig
   vault: PublicKey
   supply: bigint
   now: number
+  actions: EncActions
 }) {
   const views = assets
     .map((asset) => (asset ? assetView(asset, vault, now) : null))
@@ -179,7 +193,7 @@ export function AssetGrid({
       ) : (
         <div className="gz-columns">
           {views.map((view) => (
-            <Column key={view.index} view={view} supply={supply} />
+            <Column key={view.index} view={view} supply={supply} actions={actions} />
           ))}
         </div>
       )}

@@ -50,6 +50,10 @@ test-counter = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/counter.t
 test-init = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/initialize.ts"
 test-sync = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/sync_m2.ts"
 test-auction = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/auction.ts"
+# T20's suite: every instruction the website sends, through the website's own
+# account maps and predictions in `@badcode/enc`. It proves the client, where
+# the others prove the program.
+test-actions = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/actions.ts"
 test-faucet = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/faucet.ts"
 # Kept in the run-everything script above, unlike `retire`: its last case breaks
 # the editor's pen irrevocably, but nothing outside this suite uses the pen, so

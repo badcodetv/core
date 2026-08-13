@@ -53,6 +53,32 @@ export function formatEnc(value: bigint, options: FormatOptions = {}): string {
 }
 
 /**
+ * A typed decimal back into base units. Null when it is not a number.
+ *
+ * The inverse of `formatUnits`, and the same discipline: assembled from the
+ * digit strings in `bigint` rather than parsed as a float, because a bid is a
+ * `u64` and `parseFloat` would quietly round the low end of one. Anything past
+ * `decimals` places is **truncated**, never rounded — a bid rounded up is a bid
+ * the user did not make, and this is the number that leaves their wallet.
+ *
+ * Accepts the thousands separators the page itself prints, so a figure copied
+ * off the page and pasted back in is not rejected for looking exactly like the
+ * page.
+ */
+export function parseUnits(text: string, decimals: number): bigint | null {
+  const cleaned = text.trim().replace(/,/g, '')
+  if (!/^\d*(\.\d*)?$/.test(cleaned) || cleaned === '' || cleaned === '.') return null
+  const [whole, fraction = ''] = cleaned.split('.')
+  const padded = fraction.padEnd(decimals, '0').slice(0, decimals)
+  return BigInt(whole || '0') * 10n ** BigInt(decimals) + BigInt(padded || '0')
+}
+
+/** ENC, at the mint's six decimals. */
+export function parseEnc(text: string): bigint | null {
+  return parseUnits(text, 6)
+}
+
+/**
  * M2 as the Fed says it: billions of dollars.
  *
  * The program stores it as billions at six decimal places, so `22_176_100_000`

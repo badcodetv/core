@@ -1,5 +1,4 @@
 import {
-  ASSET_COUNT,
   ENC_IDL,
   ENC_PROGRAM_ID,
   type EmperorsNewCoin,
@@ -78,48 +77,57 @@ export function useChainClock(tickMs = 1_000): number {
 }
 
 /**
- * The ten slots, in index order.
+ * A fixed list of accounts, kept live, in the order given.
  *
  * One `getMultipleAccounts` for the first read — ten round trips to draw one
  * front page would be visible — then a subscription each, because a bid or a
- * filing touches exactly one column and re-reading all ten to notice would
+ * filing touches exactly one account and re-reading all ten to notice would
  * throw away the reason for subscribing at all.
+ *
+ * A missing account is `null` rather than an error: every list this page
+ * subscribes to has entries that legitimately do not exist yet — a slot before
+ * bootstrap, a bid nobody has placed, a certificate nobody has paid for.
+ *
+ * Written as a list rather than as ten `useAccount` calls because the addresses
+ * move: a bid's address depends on the connected wallet and a certificate's on
+ * the term, so the *length* is fixed but the contents are not.
  */
-function useAssets(
+export function useAccountList<T>(
   addresses: PublicKey[],
-  decode: (data: Buffer) => EncAsset,
-): (EncAsset | null)[] {
+  decode: (data: Buffer) => T,
+): (T | null)[] {
   const { connection } = useConnection()
   const decodeRef = useRef(decode)
   decodeRef.current = decode
-  const [assets, setAssets] = useState<(EncAsset | null)[]>(() =>
-    Array.from({ length: ASSET_COUNT }, () => null),
-  )
+  const [values, setValues] = useState<(T | null)[]>(() => addresses.map(() => null))
   const key = addresses.map((a) => a.toBase58()).join(',')
 
   useEffect(() => {
     let live = true
+    setValues(addresses.map(() => null))
     const put = (index: number, data: Buffer | null) => {
       if (!live) return
-      setAssets((previous) => {
+      setValues((previous) => {
         const next = [...previous]
         try {
           next[index] = data ? decodeRef.current(data) : null
         } catch {
-          // A slot that will not decode is a layout change, not a bad slot —
-          // the page says so once, globally, rather than ten times.
+          // An account that will not decode is a layout change, not a bad
+          // account — the page says so once, globally, rather than ten times.
           next[index] = null
         }
         return next
       })
     }
 
-    connection
-      .getMultipleAccountsInfo(addresses)
-      .then((infos) => infos.forEach((info, i) => put(i, info?.data ?? null)))
-      .catch(() => {
-        /* the config read surfaces a dead RPC; ten copies of it helps nobody */
-      })
+    if (addresses.length > 0) {
+      connection
+        .getMultipleAccountsInfo(addresses)
+        .then((infos) => infos.forEach((info, i) => put(i, info?.data ?? null)))
+        .catch(() => {
+          /* the config read surfaces a dead RPC; ten copies of it helps nobody */
+        })
+    }
 
     const subs = addresses.map((address, i) =>
       connection.onAccountChange(address, (info) => put(i, info.data)),
@@ -131,12 +139,14 @@ function useAssets(
     // eslint-disable-next-line react-hooks/exhaustive-deps -- decode is held in a ref
   }, [connection, key])
 
-  return assets
+  return values
 }
 
 export interface EncChainState {
   now: number
   addresses: ReturnType<typeof encAddresses>
+  /** The epoch the chain is in. `claim` takes it as an argument. */
+  epochIndex: bigint
   config: EncConfig | null
   printer: EncPrinter | null
   supply: bigint
@@ -165,7 +175,7 @@ export function useEncChain(): EncChainState {
   const mint = useAccount(addresses.mint, decodeMintSupply)
   const vault = useAccount(addresses.vaultEncAta, decodeTokenAmount)
   const escrow = useAccount(addresses.escrowEncAta, decodeTokenAmount)
-  const assets = useAssets(assetPdas, decoders.asset)
+  const assets = useAccountList(assetPdas, decoders.asset)
 
   // The epoch index changes once a day, not once a second, so the PDAs are
   // memoised on the index itself — otherwise every tick would resubscribe.
@@ -185,6 +195,7 @@ export function useEncChain(): EncChainState {
   return {
     now,
     addresses,
+    epochIndex: BigInt(epochIndex),
     config: config.data,
     printer: printer.data,
     // A missing token account is a zero balance, not a failure: the escrow does

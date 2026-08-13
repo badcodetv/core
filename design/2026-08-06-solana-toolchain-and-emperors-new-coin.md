@@ -1828,7 +1828,58 @@ is no setter for any economic parameter. The upgrade authority is burned at T22.
   initialised with short ones to reach these cases without waiting a month.
 - **Depends on:** T19
 - [ ] done
-- Notes:
+- Notes (built 2026-08-13):
+  - **The logic is in `packages/enc/src/actions.ts`, not in components.** Three
+    things live there: every instruction's account map, every `require!` a
+    person can trip by clicking mirrored so a button can grey itself out and say
+    why, and the program's refusals in English. `Counter.tsx` and `Wallet.tsx`
+    decide nothing; they render what those functions return. 49 unit cases.
+  - **`chain/tests/actions.ts` (`./stack test test-actions`) is the substitute
+    for the Phantom run-through**, and it exists because the acceptance criteria
+    describe something no automation here can drive. It sends every instruction
+    against a live validator through the *same* account maps and checks them
+    against the *same* predictions the page uses, so a derivation that drifts
+    fails a suite rather than a user's transaction. 15 cases, the ticket's whole
+    loop in order.
+  - **The melt rate is 5% a year**, sourced to
+    `research/2026-08-12-enc-tokenomics/README.md` — the long-run growth of M2,
+    and the same figure that killed the rent. Every price on the page is a fixed
+    share of the money supply, so that is honestly what a balance sitting still
+    loses. Stated on the page, not buried.
+  - **The melt clock starts when the page first sees the balance**, and
+    re-anchors whenever the balance changes. The chain does not record when a
+    wallet acquired anything and neither do we, so any other anchor would be an
+    invention. Six decimals are rendered because the last two are what visibly
+    fall — about two micro-ENC a second on a thousand ENC.
+  - **Hover and tap are separate states.** A mouse user who hovers and then
+    clicks was toggling the reveal straight back off; the click now pins it.
+  - **Two-step filing.** Once per term is the design, so the button says
+    "File it" and then "Yes — file it, finally", with the finality spelled out
+    *before* submission rather than explained afterwards. Byte count, not
+    character count, is shown live.
+  - **No buy button, stated twice** — once to a visitor who has not connected
+    and once to one who has. Ruling C is a posture the page says out loud.
+  - **Certificates are subscribed to, not discovered by failing.** A second
+    `mint_certificate` fails with "account already in use", a raw system-program
+    error with no good sentence, so the page reads the cert PDA's existence
+    instead. Those ten subscriptions are wallet-gated: T19's read-only page must
+    not pay for T20's buttons.
+  - **`roll_term` needs no signer but still needs a wallet to pay the fee.** The
+    page says the instruction asks nothing of anyone; it does not pretend the
+    transaction is free.
+  - **What a human still has to click.** Every instruction was driven from a
+    real browser against localnet — claim, place_bid, withdraw_bid,
+    settle_auction, roll_term, mint_certificate, file_copy, plus a refusal
+    rendering its mapped sentence — but through an injected Phantom-shaped
+    provider holding a throwaway localnet key, because a browser extension
+    cannot be automated here. **What is unverified is Phantom itself**: its
+    approve/reject dialogs, its own error surfaces, and the reconnect/account-
+    change paths its adapter emits. That is the residual for T23.
+  - **The 12-second test-ledger term is nearly unbiddable from a browser** and
+    that is the ledger's fault, not the page's: notification lag plus a term
+    shorter than it leaves a window of a few seconds. Irrelevant at the shipped
+    30-day term, but it is why the browser bid needed a script keeping a slot on
+    a fresh term.
 
 ### T21: Documentation — toolchain, coin, canon   [Status: pending | Model: sonnet]
 - **Scope:** `chain/README.md` (install → run → deploy → **how to add coin #2**).
@@ -2796,3 +2847,60 @@ _(appended by executors during implementation)_
   the grep is what caught it. Practical rule for T12 onward: a default
   `./stack build` plus `! grep -q set_mock_m2 chain/idl/emperors_new_coin.json`
   immediately before `git add`, every time the instruction set changes.
+
+- **2026-08-13 · T20 · 🔴 Anchor needs `Buffer` on the global, and the read half
+  of a page hides it.** `chain/README.md` said `chain-kit` imports `buffer`
+  explicitly "so a consuming app needs no polyfill setup". That is true of every
+  PDA this toolchain derives and **false of every instruction Anchor encodes**:
+  `BorshInstructionCoder.encode` calls `Buffer.alloc` against the global, inside
+  a dependency nobody here can edit. So T19's page — all reads — worked
+  perfectly, and the first T20 button threw `Buffer is not defined` with a stack
+  naming none of it. Every unit test, the typecheck and `npm run build` passed
+  with the bug in place, because nothing but a browser has this gap. Fixed in
+  the **app** (`apps/web/src/buffer-global.ts`, imported first in `main.tsx`)
+  rather than in `chain-kit`/`chain-react`: a library that silently mutates
+  `globalThis` on import is a worse neighbour than an app that says what it is
+  installing. README corrected.
+
+- **2026-08-13 · T20 · 🔴 Every account subscription was waiting for
+  finalisation.** `ConnectionProvider` was given a `wsEndpoint` and no
+  commitment, so web3.js defaulted the connection to `finalized` and every
+  `onAccountChange` inherited it. **Measured: 12.5 seconds** between a
+  `roll_term` landing and the open page showing the new term — long enough that
+  a term shorter than that (the test ledger's twelve seconds) can never be seen
+  live at all, and long enough on any ledger to read as a broken page rather
+  than as a commitment level. Worse, it disagreed with `useSendTransaction`,
+  which has always confirmed at `confirmed`: the two halves of one click
+  believed different things about when it happened. Fixed in `SolanaProvider`
+  (`commitment: 'confirmed'`), which is generic and names no program. Lag on the
+  same measurement afterwards: under seven seconds, the remainder being local
+  validator and headless browser.
+
+- **2026-08-13 · T20 · 🔴 A generic error humaniser destroys the specific one
+  downstream.** `useSendTransaction` caught the failure, rewrote it as "The
+  program rejected this (error 0x1780)" and rethrew a **new** `Error` — so the
+  page's own mapping had nothing left to read and rendered the hex code to the
+  user. Caught only by clicking a button that fails in a real browser; the unit
+  tests passed because they fed `encErrorMessage` the shapes it expected. Fixed
+  on both sides: `useSendTransaction` now carries the original as `cause`
+  (generic, and strictly better for any consumer), and `encErrorName` follows
+  `cause` *and* recognises the humanised wording. Both cases are now regression
+  tests.
+
+- **2026-08-13 · T20 · Anchor's two IDLs disagree about error names too.** The
+  documented gotcha was about *field* names; it applies to the error table as
+  well. `chain/idl/emperors_new_coin.json` carries `MathOverflow`, the generated
+  `.ts` carries `mathOverflow`, `ENC_IDL` is the JSON wearing the `.ts` file's
+  types, and what a running program logs — and puts in `errorCode.code` — is the
+  Rust one. A lookup table typed off the compiler's view compiles cleanly,
+  matches nothing, and degrades silently to hex codes in front of users. Noted
+  in `chain/README.md`.
+
+- **2026-08-13 · T20 · The test ledger's twelve-second term is effectively
+  unbiddable from a browser**, and it is the ledger's fault rather than the
+  page's. Between notification lag and a term shorter than a minute there is a
+  window of a few seconds in which the bid form exists at all. Nothing to fix —
+  the shipped term is thirty days — but anyone verifying the auction by hand on
+  localnet should expect to need a script holding a slot on a fresh term, or a
+  ledger initialised with a longer one. Recorded because it will otherwise look
+  like a page bug to whoever tries it next.

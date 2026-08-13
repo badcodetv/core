@@ -4,6 +4,8 @@ import { ENC_PROGRAM_ID } from '@badcode/enc'
 import { useNavigate } from 'react-router-dom'
 import { AssetGrid } from './AssetGrid'
 import { Printer } from './Printer'
+import { Wallet } from './Wallet'
+import { useEncActions } from './useEncActions'
 import { useEncChain } from './useEncChain'
 import '@solana/wallet-adapter-react-ui/styles.css'
 import './enc.css'
@@ -32,6 +34,10 @@ function BackToIndex() {
  */
 function EncBody() {
   const state = useEncChain()
+  // Additive, and deliberately unconditional: the actions hook subscribes to
+  // nothing at all until a wallet connects, so the read-only page above costs
+  // exactly what it cost before T20.
+  const actions = useEncActions(state)
 
   if (state.error) {
     return (
@@ -69,12 +75,14 @@ function EncBody() {
   return (
     <>
       <Printer state={state} />
+      <Wallet state={state} actions={actions} />
       <AssetGrid
         assets={state.assets}
         config={state.config}
         vault={state.addresses.vault}
         supply={state.supply}
         now={state.now}
+        actions={actions}
       />
     </>
   )
@@ -98,7 +106,8 @@ export function EncPage() {
           <ConnectWallet />
           <p className="enc-hint">
             Everything below is readable without connecting anything — it is a public chain and we
-            are not the ones holding it. A wallet only becomes useful when you want to take part.
+            are not the ones holding it. A wallet only becomes useful when you want to take part:
+            the faucet, the ten auctions, and the one field on this page anybody can write in.
           </p>
         </div>
 

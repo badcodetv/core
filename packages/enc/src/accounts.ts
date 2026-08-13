@@ -55,6 +55,17 @@ export const PRICE_INTERPOLATION_SECONDS = 30 * 86_400
 /** The classic SPL Token program. ENC itself is a plain SPL token. */
 export const TOKEN_PROGRAM_ID = new PublicKey('TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA')
 
+/**
+ * Token-2022, which is **not** the program ENC itself uses.
+ *
+ * The two live side by side here on purpose: ENC is a plain classic SPL token,
+ * and the tenancy NFTs and their certificates are Token-2022 because they need
+ * the metadata extension. Passing one where the other belongs derives a
+ * different associated-token address, which fails as "account not initialized"
+ * and names nothing useful.
+ */
+export const TOKEN_2022_PROGRAM_ID = new PublicKey('TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb')
+
 /** The associated-token program, which owns the vault's and escrow's accounts. */
 export const ASSOCIATED_TOKEN_PROGRAM_ID = new PublicKey(
   'ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL',

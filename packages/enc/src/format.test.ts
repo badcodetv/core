@@ -6,7 +6,16 @@
  * units and nothing else notices.
  */
 import { describe, expect, it } from 'vitest'
-import { formatBps, formatDuration, formatEnc, formatM2, formatShare, formatUnits } from './format.js'
+import {
+  formatBps,
+  formatDuration,
+  formatEnc,
+  formatM2,
+  formatShare,
+  formatUnits,
+  parseEnc,
+  parseUnits,
+} from './format.js'
 
 describe('base units', () => {
   it('splits on the string, so nothing rounds at scale', () => {
@@ -85,5 +94,38 @@ describe('countdowns', () => {
     expect(formatDuration(0)).toBe('now')
     expect(formatDuration(-3_600)).toBe('now')
     expect(formatDuration(Number.NaN)).toBe('now')
+  })
+})
+
+describe('reading a typed figure back', () => {
+  it('round-trips what the page prints, separators and all', () => {
+    // A bidder copies the reserve off the column and pastes it into the box.
+    // Rejecting it for looking like the page would be its own small insult.
+    expect(parseEnc('22,176,100,000')).toBe(22_176_100_000_000_000n)
+    expect(parseEnc(formatEnc(1_234_567n))).toBe(1_234_567n)
+  })
+
+  it('keeps every base unit past 2^53', () => {
+    // `parseFloat` loses the low digits here, and this is the number that
+    // leaves somebody's wallet.
+    expect(parseEnc('22176100000.000001')).toBe(22_176_100_000_000_001n)
+  })
+
+  it('truncates beyond the mint’s decimals rather than rounding up', () => {
+    expect(parseEnc('1.9999999')).toBe(1_999_999n)
+  })
+
+  it('fills in the halves people actually type', () => {
+    expect(parseEnc('5')).toBe(5_000_000n)
+    expect(parseEnc('0.5')).toBe(500_000n)
+    expect(parseEnc('.5')).toBe(500_000n)
+    expect(parseEnc('5.')).toBe(5_000_000n)
+    expect(parseUnits('1', 0)).toBe(1n)
+  })
+
+  it('refuses anything that is not a number', () => {
+    for (const bad of ['', ' ', '.', 'lots', '1e9', '-1', '1.2.3', '0x10']) {
+      expect(parseEnc(bad), bad).toBe(null)
+    }
   })
 })

@@ -15,11 +15,15 @@
  * - `idl` / `accounts` — the program's interface and where its state lives.
  * - `view` — decoded accounts plus a timestamp, assembled into what the page
  *   renders. Composes `math`; never re-derives it.
+ * - `actions` — what a connected wallet may do: every instruction's account
+ *   map, the program's guards mirrored so a button can grey itself out, and its
+ *   refusals in English. Composes `view`.
  * - `format` / `h6` — printing numbers, and when the Fed next speaks.
  */
 export * from './math.js'
 export * from './accounts.js'
 export * from './view.js'
+export * from './actions.js'
 export * from './format.js'
 export * from './h6.js'
 export { ENC_IDL, ENC_PROGRAM_ID, type EmperorsNewCoin } from './idl/emperors_new_coin.js'
