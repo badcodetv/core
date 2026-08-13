@@ -2342,7 +2342,8 @@ while the page correctly reports localnet.
   `./stack test test-gazette` **16 passing** on a fresh ledger, `./stack cargo
   test -p emperors-new-coin --lib` **39 passing**, the shipped IDL carries the
   four new instructions and no mock one, and every pre-existing suite is still
-  green (init 12, sync 14, auction 12, faucet 10). Slot names remain
+  green (init 12, sync 14, auction 12, faucet 10, retire 7 — run last, then
+  `./stack reset`). Slot names remain
   placeholders by design; Jack's sheet is consumed at T22.
 - Notes (executor, 2026-08-13 — **six judgement calls the ticket did not
   settle**, all reversible until T22 and all flagged rather than buried):
