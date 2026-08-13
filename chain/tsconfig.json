@@ -6,7 +6,12 @@
     // so), so the compiler has to agree — under "commonjs"/es2019 the checker
     // rejects `import.meta` and BigInt literals that work fine at runtime.
     "lib": ["es2022"],
-    "module": "es2022",
+    // esnext rather than es2022 for one reason: import attributes
+    // (`with { type: 'json' }`). The simulation imports @badcode/enc, which
+    // reaches the generated IDL and @badcode/chain-kit's program registry, and
+    // both load JSON that way. Under es2022 the checker rejects the syntax that
+    // every runtime here already accepts.
+    "module": "esnext",
     "moduleResolution": "node",
     "target": "es2022",
     "esModuleInterop": true,

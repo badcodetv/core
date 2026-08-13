@@ -1,9 +1,14 @@
-/* Emperor's New Coin. Uses the site palette from index.css. */
+/* Emperor's New Coin. Uses the site palette from index.css.
+
+   Two registers on one page, on purpose. The printer is the machine: near-black,
+   monospace, numbers that move on their own. The Gazette is what the machine
+   prints: paper, serif, column rules, ink. The join between them is the point —
+   a public ledger set as a front page. */
 
 .enc {
   max-width: 60rem;
   margin: 0 auto;
-  padding: 6rem 1.5rem 6rem;
+  padding: 6rem 1.5rem 8rem;
 }
 
 .enc-back {
@@ -53,11 +58,13 @@
   background: var(--cyan);
 }
 
-.enc-wallet { margin-bottom: 3rem; }
+.enc-wallet { margin-bottom: 3.5rem; }
 
 .enc-hint {
   color: var(--grey);
   font-size: 0.85rem;
+  line-height: 1.6;
+  max-width: 42rem;
   margin: 0.75rem 0 0;
 }
 
@@ -65,8 +72,10 @@
   border: 1px solid var(--grey);
   padding: 2rem;
   color: var(--grey);
+  line-height: 1.6;
 }
-.enc-pending p { margin: 0; }
+.enc-pending p { margin: 0 0 0.5rem; }
+.enc-pending p:last-child { margin-bottom: 0; }
 
 /* The adapter's button ships its own look; pull it back toward the site's. */
 .enc .wallet-adapter-button {
@@ -82,4 +91,389 @@
 .enc .wallet-adapter-button:not([disabled]):hover {
   background: var(--cyan);
   color: var(--black);
+}
+
+/* ── The printer ──────────────────────────────────────────────────────────── */
+
+.enc-section-title {
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin: 0 0 0.75rem;
+  font-weight: 500;
+}
+
+.enc-section-strap {
+  color: var(--grey);
+  line-height: 1.7;
+  margin: 0 0 2.5rem;
+  max-width: 42rem;
+}
+
+.enc-readouts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1px;
+  background: #1a1d20;
+  border: 1px solid #1a1d20;
+  margin-bottom: 2.5rem;
+}
+
+.enc-readout {
+  background: var(--black);
+  padding: 1.5rem 1.25rem;
+}
+
+.enc-readout-label {
+  margin: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
+.enc-readout-value {
+  margin: 0.6rem 0 0;
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  /* Tabular figures: a number that changes every second must not make the
+     layout twitch under it. */
+  font-variant-numeric: tabular-nums;
+  color: var(--white);
+  /* Never mid-digit: a wrapped number is a different number to anyone
+     skim-reading it. The column gives ground instead. */
+  overflow-wrap: normal;
+}
+
+.enc-readout-unit {
+  font-size: 0.8rem;
+  color: var(--cyan);
+  letter-spacing: 0.1em;
+}
+
+.enc-readout-note {
+  margin: 0.75rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: var(--grey);
+}
+
+.enc-fact {
+  border-top: 1px solid #1a1d20;
+  padding: 2rem 0;
+}
+
+.enc-fact h3 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.enc-fact p {
+  margin: 0 0 1rem;
+  line-height: 1.75;
+  color: #c8cfd6;
+  max-width: 46rem;
+}
+
+.enc-fact code {
+  color: var(--signal);
+  font-size: 0.9em;
+}
+
+.enc-aside {
+  color: var(--grey) !important;
+  font-size: 0.85rem;
+}
+
+.enc-retired {
+  border-left: 2px solid var(--signal);
+  padding-left: 1rem;
+  color: var(--signal) !important;
+}
+
+.enc-pairs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 0;
+}
+.enc-pairs dt {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+.enc-pairs dd {
+  margin: 0.4rem 0 0;
+  font-size: 0.95rem;
+  font-variant-numeric: tabular-nums;
+}
+.enc-drift { color: var(--signal); }
+
+/* The vault's share, with the floor drawn on it. The bar can go under the
+   floor — the floor governs the faucet, never the burn. */
+.enc-bar {
+  position: relative;
+  height: 14px;
+  border: 1px solid #2a3037;
+  margin: 0 0 2rem;
+  background: #0a0c0e;
+}
+.enc-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, rgba(70, 213, 255, 0.35), rgba(70, 213, 255, 0.85));
+}
+.enc-bar-floor {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  width: 1px;
+  background: var(--signal);
+}
+.enc-bar-floor span {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 6px;
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--signal);
+  white-space: nowrap;
+}
+
+/* ── The Gazette ──────────────────────────────────────────────────────────── */
+
+/* Breaks out of the page's column, because a front page that fits in a blog
+   post is not a front page. */
+.enc-gazette {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(94vw, 82rem);
+  margin: 4rem 0 0;
+  padding: 2.5rem clamp(1rem, 3vw, 3rem) 3rem;
+  background: #e9e3d6;
+  color: #17150f;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* Newsprint, not paper: a faint tint of the ink that soaked through. */
+  box-shadow: inset 0 0 120px rgba(23, 21, 15, 0.12);
+}
+
+.gz-masthead {
+  text-align: center;
+  border-bottom: 3px double #17150f;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.gz-rule {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #4a453a;
+}
+
+.gz-masthead h2 {
+  margin: 0.6rem 0;
+  font-size: clamp(2.2rem, 7vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.gz-dateline {
+  margin: 0;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #4a453a;
+  border-top: 1px solid #17150f;
+  padding-top: 0.6rem;
+}
+
+.gz-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0;
+}
+
+.gz-column {
+  padding: 1.25rem 1.25rem 1.5rem;
+  border-top: 1px solid #b9b1a0;
+  /* Column rules, as a newspaper draws them: hairlines between, not around. */
+  border-left: 1px solid #b9b1a0;
+}
+.gz-column:first-child { border-left: none; }
+
+/* The masthead slot leads the page, because the ratios were fixed at genesis
+   and every sync rescales all ten by the same factor. */
+.gz-column-lead {
+  grid-column: 1 / -1;
+  border-left: none;
+  border-top: none;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: 1px solid #17150f;
+  margin-bottom: 0.5rem;
+}
+.gz-column-lead .gz-price { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+.gz-column-lead .gz-copy { font-size: 1.15rem; line-height: 1.5; }
+/* The lead runs its copy full width and its facts beside it, the way a front
+   page gives its top story the whole span and keeps the furniture in the rail. */
+.gz-column-lead .gz-body { max-width: 46rem; }
+.gz-column-lead .gz-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 0 2rem;
+}
+
+.gz-column-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid #17150f;
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.gz-furniture {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.gz-slot {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  color: #6b6555;
+  text-transform: uppercase;
+}
+
+.gz-price {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  overflow-wrap: anywhere;
+}
+.gz-price span {
+  font-size: 0.6em;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
+.gz-price-note {
+  margin: 0.2rem 0 1rem;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6b6555;
+}
+
+.gz-copy {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  /* Justified with hyphenation, which is what makes narrow columns read as
+     print rather than as a form. */
+  text-align: justify;
+  hyphens: auto;
+}
+.gz-copy-default {
+  font-style: italic;
+  color: #5c5648;
+}
+
+.gz-redacted {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.gz-redacted span {
+  display: block;
+  height: 0.95rem;
+  background: #17150f;
+}
+
+.gz-byline {
+  margin: 0.7rem 0 0;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6b6555;
+}
+
+.gz-facts {
+  margin: 1.1rem 0 0;
+  border-top: 1px solid #b9b1a0;
+  padding-top: 0.75rem;
+  font-family: var(--mono);
+}
+.gz-facts > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.66rem;
+  line-height: 1.6;
+  padding: 0.15rem 0;
+}
+.gz-facts dt {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6b6555;
+  white-space: nowrap;
+}
+.gz-facts dd {
+  margin: 0;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.gz-due { font-weight: 700; }
+.gz-bidder { color: #6b6555; }
+.gz-under { color: #8a2f1d; }
+
+.gz-empty {
+  font-style: italic;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.gz-footer {
+  margin-top: 2.5rem;
+  border-top: 3px double #17150f;
+  padding-top: 1.5rem;
+  columns: 2;
+  column-gap: 2.5rem;
+}
+@media (max-width: 48rem) {
+  .gz-footer { columns: 1; }
+}
+.gz-footer h3 {
+  margin: 0 0 0.75rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  column-span: all;
+}
+.gz-footer p {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  line-height: 1.65;
+  text-align: justify;
+  hyphens: auto;
+  break-inside: avoid;
 }

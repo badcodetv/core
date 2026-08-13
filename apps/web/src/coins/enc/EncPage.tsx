@@ -1,6 +1,10 @@
-import { ClusterBadge, ConnectWallet, SolanaProvider, useWalletAddress } from '@badcode/chain-react'
+import { ClusterBadge, ConnectWallet, SolanaProvider } from '@badcode/chain-react'
 import type { Cluster } from '@badcode/chain-kit'
+import { ENC_PROGRAM_ID } from '@badcode/enc'
 import { useNavigate } from 'react-router-dom'
+import { AssetGrid } from './AssetGrid'
+import { Printer } from './Printer'
+import { useEncChain } from './useEncChain'
 import '@solana/wallet-adapter-react-ui/styles.css'
 import './enc.css'
 
@@ -19,13 +23,60 @@ function BackToIndex() {
   )
 }
 
-function Wallet() {
-  const address = useWalletAddress()
+/**
+ * Everything the chain says, and nothing you have to sign for.
+ *
+ * The whole page reads without a wallet. That is deliberate and it is the point
+ * of the coin: a claim that nobody can change the supply is worth nothing if
+ * you have to install something to check it.
+ */
+function EncBody() {
+  const state = useEncChain()
+
+  if (state.error) {
+    return (
+      <section className="enc-pending">
+        <p>
+          Nothing is answering on {CLUSTER}. The coin is fine; the pipe is not.
+          {import.meta.env.DEV ? ' Locally, that is usually `./stack start`.' : ''}
+        </p>
+        <p className="enc-hint">{state.error.message}</p>
+      </section>
+    )
+  }
+
+  if (state.uninitialised) {
+    return (
+      <section className="enc-pending">
+        <p>
+          The program is deployed here and has never been switched on — no mint, no vault, no
+          slots. A coin nobody has initialised is the purest form of this joke, but it is not the
+          one we meant.
+        </p>
+        <p className="enc-hint">Program {ENC_PROGRAM_ID.toBase58()}</p>
+      </section>
+    )
+  }
+
+  if (state.loading || !state.config || !state.printer) {
+    return (
+      <section className="enc-pending">
+        <p>Asking the chain how much money there is…</p>
+      </section>
+    )
+  }
+
   return (
-    <div className="enc-wallet">
-      <ConnectWallet />
-      {address ? null : <p className="enc-hint">Connect a wallet to take part. Nothing here costs real money.</p>}
-    </div>
+    <>
+      <Printer state={state} />
+      <AssetGrid
+        assets={state.assets}
+        config={state.config}
+        vault={state.addresses.vault}
+        supply={state.supply}
+        now={state.now}
+      />
+    </>
   )
 }
 
@@ -43,11 +94,15 @@ export function EncPage() {
           </p>
         </header>
 
-        <Wallet />
+        <div className="enc-wallet">
+          <ConnectWallet />
+          <p className="enc-hint">
+            Everything below is readable without connecting anything — it is a public chain and we
+            are not the ones holding it. A wallet only becomes useful when you want to take part.
+          </p>
+        </div>
 
-        <section className="enc-pending">
-          <p>The printer is still being built.</p>
-        </section>
+        <EncBody />
       </main>
     </SolanaProvider>
   )

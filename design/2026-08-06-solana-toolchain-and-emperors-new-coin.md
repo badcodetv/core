@@ -1687,7 +1687,72 @@ is no setter for any economic parameter. The upgrade authority is burned at T22.
   localnet with the `mock` feature, where `set_mock_m2` drives the peg. T18 only
   changes where the numbers come from, not what the page renders.
 - [ ] done
-- Notes:
+- Notes (executor, 2026-08-13 — built and verified in a real browser against
+  localnet with the `mock` build; validation run: `npm run test --workspace
+  @badcode/enc` **79 passing**, `./stack check` green, `npm run build` green,
+  the T23 grep clean. **Judgement calls the ticket did not settle:**
+  1. **`packages/enc` gained four modules, not two.** `accounts.ts` (addresses,
+     Anchor decoders, the two SPL decoders) and `idl/emperors_new_coin.ts` as
+     specified, plus `view.ts` (decoded accounts + a timestamp → what a
+     component renders), `format.ts` (base units, M2, shares, countdowns) and
+     `h6.ts` (the release calendar). The rule they enforce: **no arithmetic and
+     no date logic in a component**, so all of it is testable without a browser.
+     `math.ts` was reused unchanged and nothing re-derives it.
+  2. **The IDL module is a re-export, imported by relative path rather than the
+     `@chain/*` alias.** That alias is a tsconfig path and therefore has to be
+     declared twice per consumer; `@badcode/enc` is now compiled by four
+     toolchains (the web app's tsc + vite, its own vitest, `chain`'s tsc, the
+     simulation's vitest) and a relative path is understood by all four with
+     nothing to keep in step. Nothing is hand-written — `./stack build` still
+     owns the file.
+  3. **`chain/tsconfig.json`'s `module` moved es2022 → esnext.** The simulation
+     imports `@badcode/enc`, which now reaches `@badcode/chain-kit`, whose
+     `registry.ts` loads JSON with an import attribute — syntax es2022 rejects
+     and every runtime here already accepts. One line, commented in place.
+  4. **The mint and the two token accounts are decoded by fixed offset in
+     `accounts.ts`**, rather than adding `@solana/spl-token` to the browser
+     bundle. `getTokenSupply`/`getTokenAccountBalance` were rejected for a
+     different reason: they are RPC calls, not subscriptions, and the page has
+     to move when the chain moves.
+  5. **The page runs on the validator's clock, not the browser's.** A local
+     validator's unix time drifts behind wall time, and every price and epoch
+     index is derived from `Clock::get()`; `useChainClock` reads the chain's
+     time, keeps the offset and ticks locally. Same trap the test harness
+     documents, one layer up.
+  6. **Slot names are frontend furniture and provisional** — Masthead, Leader,
+     Editorial … Classified, dearest to cheapest. Only the two ends are settled
+     by Ruling D; the eight between are presentation and cost nothing to change
+     when Jack's sheet lands at T22. The page says the names arrive later and
+     that the ladder is already fixed.
+  7. **The Emperor's default copy (`copy_len == 0`) is written in the
+     frontend**, not on-chain, and reads as a standing notice rather than an
+     empty column. A column with copy from an earlier tenant is labelled
+     "standing from an earlier edition", which is the distinction `copy_filed`
+     exists to make.
+  8. **Gazette prices render at two decimal places with the exact figure on
+     hover.** At this scale the price moves by whole ENC a second, so the tick
+     is visible without setting a headline in micro-units.
+  9. **Shares of the money supply are printed to four decimal places.** Two
+     rendered the cheapest column — one basis point of everything — as `0%`,
+     which deletes the joke rather than rounding it.
+  10. **T31's judgement call #2 asked whether a spiked column the Emperor holds
+      renders oddly. It does not.** Slot 08 is exactly that on the test ledger:
+      redaction bars, "struck by the editor, this edition", holder "The
+      Emperor". Nothing to fix.
+  11. **A missing escrow ATA or `FaucetEpoch` reads as zero, never as an
+      error** — both are created lazily, so absence is the normal state and the
+      page says so in words ("no epoch account exists yet today … it is created
+      by whoever claims first").
+  12. The wallet button stays but does nothing yet; the page states plainly that
+      everything on it is readable without connecting. T20 fills it in.
+- Notes (verification, same run): prices tick every second in the browser with
+  no refresh (all ten columns move); an account change pushes through the
+  websocket subscription — `roll_term` sent from a script moved a slot's term
+  number and standing-bid state in the open page without a reload. Zero console
+  errors at 1440px and at 390px. The front page rendered from the state the
+  suites leave behind: filed copy on one slot, a spiked column on another, live
+  bids, and one slot whose standing bid had fallen **under the reserve** since
+  it was placed — which is the coin's whole thesis rendering itself.
 
 ### T20: ENC page — wallet actions and the melting balance   [Status: pending | Model: sonnet]
 - **Scope:** Connect, claim (showing whether it's the welcome grant, a share of
@@ -2388,6 +2453,36 @@ while the page correctly reports localnet.
 ## Discovered Issues Log
 
 _(appended by executors during implementation)_
+
+- **2026-08-13 · T19 · 🔴 `./stack check` overwrites the committed IDL with
+  whatever was last built — including the mock one.** Two steps, and the second
+  is the surprising one. `./stack test` builds with `--features mock`, which
+  leaves `chain/target/idl/emperors_new_coin.json` carrying `set_mock_m2` and
+  `mock_fund`. Then **`packages/chain-cli/src/anchor.test.ts`'s `syncIdl` case
+  calls `syncIdl()` against the real repo root**, so running the unit tests
+  copies that build output over the committed `chain/idl/`. The validation
+  command mutates tracked files, and the natural workflow — run the suites, run
+  check, commit — ships an interface describing a build we never release. Hit
+  twice in this ticket and reverted by hand both times
+  (`git checkout -- chain/idl/`); T9's grep discipline catches it only if
+  somebody remembers to run the grep.
+  **The fix is three lines and belongs to whoever owns `chain-cli`:** give that
+  test a temporary root with a fixture `target/idl`, the way `restoreKeys`'s
+  cases already do two describes above it, rather than pointing a
+  file-copying function at the working tree. Left unfixed here because it is
+  outside this ticket and inside the portable package. Worth doing before T22,
+  where the deployed IDL becomes permanent.
+
+- **2026-08-13 · T19 · Anchor types every `u64` as `any`, so the compiler does
+  not catch a `BN` reaching a `bigint`.** `IdlAccounts<EmperorsNewCoin>` gives
+  precise types for `pubkey`, `bool`, `u8`/`u16`/`u32` and arrays, but `u64` and
+  `i64` land as `any` in this build. Passing `printer.m2Value` straight to a
+  formatter that takes `bigint` therefore typechecks, builds, and throws
+  "Cannot mix BigInt and other types" in the browser — which is exactly how the
+  page first failed to render. Fixed structurally rather than locally: every
+  `BN` is converted at one boundary (`view.ts`), components never see one, and
+  `view.test.ts` asserts the view hands out `bigint`. Worth knowing at T20,
+  which will touch far more `u64` fields than this ticket did.
 
 - **2026-08-13 · T31 · 🔴 growing `Asset` overflowed the BPF stack, and the
   error names nothing.** The Gazette's 284 extra bytes took `Asset` to 414, and
