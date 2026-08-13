@@ -2856,48 +2856,39 @@ _(appended by executors during implementation)_
   link to a claims document reads, to anyone auditing, exactly like a claim with
   no backing — which is what it was.
 
-- **2026-08-13 · PRE-BURN FIX · the chain and toolchain half (findings 1, 3, 5).**
-  Written up by the orchestrator: the executor produced the work but stopped
-  before committing or logging it, so everything below was reviewed and
-  re-validated from the working tree rather than taken on report.
-  - **Finding 1 — build provenance.** `build()` now writes a **feature marker**
-    beside each artifact recording the cargo features that produced it, and the
-    next default build of that program clears it, so a marker cannot outlive its
-    binary and refuse a deploy that is fine. `deploy` calls `assertDefaultBuild`,
-    which **refuses any feature-built artifact on a non-localnet cluster** and
-    names both the problem and the two commands that fix it. Localnet is
-    untouched — that is where the mock belongs. An unreadable marker reports
-    itself rather than being assumed innocent. Generic throughout: it speaks of
-    "cargo features", names no coin, and the portability grep still passes.
-  - **Finding 5 — the dev loop no longer publishes.** `BuildOptions` gained
-    `publishIdl`, and **a command whose job is to run or to test passes
-    `false`**; only a command whose job is to publish an interface writes into
-    `chain/idl`. **Demonstrated, not asserted:** a full seven-suite run plus
-    `reset` was executed with `chain/idl` diffed before and after — **no drift.**
-  - **Finding 3 — `init_asset` went further than the ticket asked, and better.**
-    Rather than merely rejecting zero and enforcing ascending order, the ten-rung
-    ladder now lives **in the program** as `GENESIS_PRICE_PPM`, and `init_asset`
-    computes the expected base-unit price itself and requires exact equality,
-    erroring with `WrongGenesisPrice` and a message naming the ppm, the expected
-    value and what it got. **This deletes the T22 hazard entirely rather than
-    guarding it**: the by-hand multiplication that previously existed only in a
-    test file cannot now be got wrong, because the operator no longer supplies
-    the answer — the program already knows it. Unit tests pin the ladder's
-    length, its ascending order and both published ends against
-    `params.genesis.json`.
-  - **Finding 4 — deliberately NOT fixed.** The empty certificate URI is a
-    decision for Kai, not an agent: any HTTPS URI on an NFT whose update
-    authority is `None` ties the artwork forever to one domain staying alive,
-    which is exactly the operational dependency the whole design exists to
-    avoid, and is itself a separate review finding. **Options are owed to a
-    human; nothing was invented.**
-  - **Validation (orchestrator, from a fresh ledger):** Rust unit tests **43
-    passing**; `test-sync` 14, `test-auction` 12, `test-faucet` 10,
-    `test-gazette` 16, `test-actions` 15, `test-retire` 7; `chain-cli` **63**
-    (up from 51). `test-init` failed once on a **transient platform-tools
-    download timeout inside Docker** — a cold-cache network failure, not a code
-    failure — and was re-run.
-
+- **2026-08-13 · ORCHESTRATOR VERIFICATION of the chain/toolchain fixes.**
+  The executor's own write-up is the entry above (findings 1, 3, 5 fixed,
+  finding 4 referred to Kai) — it is the fuller account and the authority on the
+  design calls. This records only what an independent re-run adds, because the
+  executor stopped before committing and its work was committed and validated
+  from the working tree rather than taken on report.
+  - **Every claim re-checked from a fresh ledger:** Rust unit tests **43
+    passing**; `test-init` 16, `test-sync` 14, `test-auction` 12, `test-faucet`
+    10, `test-gazette` 16, `test-actions` 15, `test-retire` 7 (run last);
+    `chain-cli` **63** (up from 51); `@badcode/enc` 133; `./stack check` and
+    `npm run build` green with a clean tree afterwards.
+  - **Finding 5 independently demonstrated**, by a different method than the
+    executor's `md5sum`: `chain/idl` diffed either side of a seven-suite run
+    plus a `reset` — **no drift**.
+  - **Finding 1 independently reproduced**: built `--features mock`, attempted
+    `chain deploy --cluster devnet`, and it refused before touching the network,
+    naming the features and the remedy. Then a default build cleared the marker
+    and the deploy proceeded past the guard. Both halves of the mechanism hold.
+  - **`init_asset`'s new `WrongGenesisPrice` variant shifts every later error
+    code.** Checked because it is exactly the shape that silently degrades a UI
+    to hex codes: it does not here, because `packages/enc` imports the IDL from
+    `chain/idl` rather than keeping a copy, and builds both its name and number
+    lookups from it at load.
+  - **One transient failure, not a defect:** `test-init` died once on a
+    platform-tools download timing out inside Docker on a cold cache. Re-run,
+    16 passing.
+  - **Two review findings neither fix agent was assigned, closed here:**
+    `./stack help` was a hardcoded line range that had swallowed six commands
+    including `./stack check` (and an earlier edit of mine had made it worse) —
+    it now reads to the end of the header and cannot go stale; and `chain-cli`
+    named `emperors-new-coin` in its `cargo` help example and `'enc'` in a test
+    fixture, both in a package copied whole into other repos. The portable
+    packages now name no coin anywhere.
 - **2026-08-13 · PRE-BURN FIX · the claims and copy half (findings 2, 7 and the
   two copy-lens findings). The faucet pays half, and everything downstream of
   "it pays all of it" was wrong by the same factor of two.**
