@@ -7,7 +7,7 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: in progress — **23 of 31 done** (T31 landed 2026-08-13). T11 SUPERSEDED by the 2026-08-12
+Status: in progress — **24 of 31 done** (T31 and T19 landed 2026-08-13). T11 SUPERSEDED by the 2026-08-12
 architecture ruling and its code deleted by T30. The tenancy auction (T12), the
 faucet (T13), `retire` (T28) and the proportional caps (T29) are built and
 green; the simulation (T14) runs the full M2 record plus a forward projection,
@@ -98,7 +98,7 @@ this table is the map.
 | ✅ | T15 · the genesis parameters, chosen and recorded in `chain/sim/RESULTS.md` | economics |
 | ⬜ | T17 · stand the M2SL feed up on devnet | oracle |
 | ⬜ | T18 · Switchboard on-chain read + crank (**wall-clock stall: budget a day**) | oracle |
-| ⬜ | T19 · ENC page, read-only state | web |
+| ✅ | T19 · ENC page, read-only state — the printer + the Imperial Gazette front page, live on localnet | web |
 | ⬜ | T20 · ENC page, wallet actions + the melting balance | web |
 | ⬜ | T21 · documentation | docs |
 | ⬜ | T22 · devnet deploy + **burn the upgrade authority** | ship |
@@ -1622,7 +1622,7 @@ is no setter for any economic parameter. The upgrade authority is burned at T22.
 - [ ] done
 - Notes:
 
-### T19: ENC page — read-only state   [Status: pending | Model: sonnet]
+### T19: ENC page — read-only state   [Status: **DONE 2026-08-13** — validation re-run by the orchestrator, page loaded and read in a real browser | Model: sonnet]
 - **Scope:** Live M2 readout, total supply, vault balance and share with the floor
   marked, next H.6 release countdown (fourth Tuesday, 1:00pm ET), and the ten
   assets with prices interpolating every slot. Works with no wallet connected.
@@ -1686,7 +1686,23 @@ is no setter for any economic parameter. The upgrade authority is burned at T22.
   frontend decodes it). **Not blocked on T18** — build and demo against
   localnet with the `mock` feature, where `set_mock_m2` drives the peg. T18 only
   changes where the numbers come from, not what the page renders.
-- [ ] done
+- [x] done — 2026-08-13. Orchestrator re-ran the validation independently:
+  `npm run test --workspace @badcode/enc` **79 passing** (including a five-year
+  H.6 sweep asserting every release still reads 1pm Tuesday in New York, across
+  both DST boundaries), `npm run build` green, `./stack check` green across
+  every workspace, and the portability grep over `chain-kit`/`chain-react`
+  returning nothing but the generic `programs.json` entry. **Loaded
+  `/coins/enc` in a real browser over CDP and read the rendered page**: the
+  printer, the `supply ≥ k × M2` drift line, the vault's 77.61% against its 50%
+  floor, the faucet correctly explaining that no epoch account exists yet
+  *because nobody has claimed*, the retirement clock, and all ten Gazette
+  columns — a filed column, a spiked one rendering as redaction bars, an
+  under-reserve standing bid, and the Emperor's default copy on the rest.
+  Console clean apart from a missing `favicon.ico`. Both required disclosures
+  are present and in voice. **Review finding logged against T22:** slot names
+  now exist both on-chain and in `AssetGrid`'s `FURNITURE` array, and Jack's
+  sheet must reach both or the page will caption a column the chain does not
+  carry.
 - Notes (executor, 2026-08-13 — built and verified in a real browser against
   localnet with the `mock` build; validation run: `npm run test --workspace
   @badcode/enc` **79 passing**, `./stack check` green, `npm run build` green,
@@ -1878,6 +1894,17 @@ is no setter for any economic parameter. The upgrade authority is burned at T22.
      builds the mechanism with placeholder names; *this* ticket is where the
      real ones are set, and after the burn they cannot be changed. **Do not run
      `init_asset` on devnet-as-mainnet-rehearsal without Jack's sheet in hand.**
+     **🔴 The names now live in two places (noted at T19's review,
+     2026-08-13).** `init_asset` writes a name into each asset's Token-2022 NFT
+     metadata, *and* `apps/web/src/coins/enc/AssetGrid.tsx` carries a
+     `FURNITURE` array of ten presentation names (currently Classified →
+     Masthead, cheapest first, and clearly marked provisional in place).
+     **Jack's sheet must land in both, in the same commit**, or the page will
+     confidently caption a column with a name the chain does not carry — and
+     after the burn only the page can be corrected. Either sync the two
+     deliberately at this ticket, or make `AssetGrid` read the name from the
+     NFT metadata and delete the array. The second is better and is a small
+     job; decide before deploying, not after.
   2. **The editor key** (`Config.editor`, set at `initialize`). Rotatable via
      `pass_the_pen` afterwards, so key loss is survivable — but the initial
      holder is a decision, not a default. Do not use a throwaway keypair.
