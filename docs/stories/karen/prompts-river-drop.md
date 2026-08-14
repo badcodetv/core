@@ -1,7 +1,7 @@
 ---
 story: karen
 kind: brief — written in-repo, not yet fired; replace with what was actually typed
-engine: Nano Banana Pro (plates) · Gemini Omni Flash (clips)
+engine: Nano Banana Pro (plates) · Gemini Omni Flash / Veo 3.1 Fast (clips)
 flow_project: TODO — exact project name as it appears in Flow
 updated: 2026-08-14
 ---
@@ -32,10 +32,19 @@ Prompts for one Act 1 beat: **Karen and Susan at the river, and the phone goes i
 
 ---
 
-## The prompts — §2g, super-8 register `[not yet fired]`
+## The prompts — §2g, super-8 register `[the drop fired twice and failed; redesigned]`
 
-**Written 2026-08-14. Briefs, not records** — replace with what was actually typed
-once they have been run.
+**Written 2026-08-14, redesigned the same day after two failed firings.** Still
+briefs rather than records — replace each with what was actually typed once it has
+been run and accepted.
+
+> **Where this stands.** The drop has been attempted twice. Round 1 failed on prompt
+> craft (too long, too negated — [post-mortem](#why-the-last-drop-prompt-failed--the-omni-post-mortem)).
+> Round 2 was clean prose and **still failed**, on geometry and physics
+> ([bug 1](#bug-1-the-wrong-side-of-the-railing--our-own-fault),
+> [bug 2](#bug-2-the-phone-flew--and-no-prompt-can-fix-that)) — which is what
+> established that the shot, not the wording, was wrong. **2g.6–2g.8 are round 3.**
+> The two-shot (2g.1/2g.2) has never been fired.
 
 The end of the drunk night: **Karen and Susan at the river, and the phone goes in.**
 [`story.md`](./story.md#16-the-phone-in-the-river--keep-retake-till-the-physics-behave)
@@ -248,86 +257,186 @@ The second move is that **the camera does not chase it.** Real footage of an
 accidental drop is never anticipated — the camera not helping is precisely what reads
 as true. That also removes the documented distortion case in one stroke.
 
-### 2g.3 The falling light — plate
+### 2g.3 / 2g.4 — superseded, kept for the record
 
-Framed so the drop below the rail is the biggest thing in shot, with the water
-genuinely dark. **No Character is cast here and no face is in frame** — which
-incidentally takes the untested two-binding risk out of the hardest shot in the set.
+The lit-screen idea above was right and survives into the new design. **The shot
+around it was not**, and it failed on its first firing with two specific bugs:
+
+> **Karen appeared on the wrong side of the railing**, and **the phone glitched and
+> flew upward instead of falling.**
+
+Both are structural. Neither would have been fixed by more re-rolls, and one of them
+was caused by the plate prompt itself.
+
+<details>
+<summary>The superseded 2g.3 plate and 2g.4 clip — 2026-08-14</summary>
 
 ```prompt
 SCENE:
 
 Subject: a lit smartphone held slackly in a woman's fingertips out over the outside edge of a waterfront railing at night, seen from below and to the side so the rail crosses the top of the frame and open black water fills the space beneath it.
 
-Action: the hand hangs slack over the drop, the phone held loosely by its edges with its screen still lit and facing down toward the water.
-
-Environment: the East River waterfront in early September, a worn steel pipe rail with chipped municipal paint, deep dark water a long way below with broken city light moving on it, the far skyline reduced to soft blooms along the top edge of frame.
-
 Camera: 40mm, hand-held, low and just outside the rail looking along it, so the open drop below the rail is the largest thing in the frame.
-
-Lighting: night, one cold park lamp above and behind the rail putting a hard edge along the pipe and across the knuckles; the phone's own screen is the brightest thing in the frame and throws a little light onto the fingers holding it.
-
-Details: a cream blouse cuff and the edge of a camel cashmere sleeve at the top of frame; the water below is genuinely dark rather than lit; keep every mooring plate and notice free of readable lettering.
-
-Compose for a 16:9 frame.
 ```
-
-### 2g.4 The falling light — clip
-
-**This is the replacement for the prompt that failed.** Camera vocabulary first
-`[runware]`, four sentences, every constraint stated positively, and not one word
-spent explaining gravity to a model that already has it.
-
-Read the negations it replaced: *"the surface closes over the light and goes dark"*
-is `no float / no bounce / no reappear`. *"The hand stays where it is"* is `no
-reaction / no lunge / no catch`. *"At real speed"* is `no slow motion`. *"Locked
-off"* is `do not chase it`. **Same constraints, none of them poisoning the prompt.**
 
 ```prompt
 Handheld and locked off low beside the railing, one continuous shot at real speed. Grainy night cinematography lit by a single cold lamp above the rail. Her fingers go slack and the lit phone falls away toward the river, its glow shrinking as it drops, meets the water with one small splash and sinks; the surface closes over the light and goes dark, and the ripples spread and settle. The hand stays where it is at the top of frame. Water against the piling, distant traffic and indistinct conversation above, no intelligible dialogue. Use this image as the starting frame.
 ```
 
-### The Ingredients loadout
+</details>
 
-**Ingredients is the high-control path** in Flow and the right mode for this
-`[yt]`. The rules that matter: **three reference images maximum** in the Flow UI, and
-**order matters — the most important element goes first** `[community]`.
+### Bug 1: the wrong side of the railing — our own fault
 
-For 2g.4 that is deliberately sparse:
+The plate put the **camera outside the rail, over the water** (*"low and just outside
+the rail looking along it"*). Video models have no world model — they *"don't
+inherently understand 3D space, depth, or physics"* and produce perspective failures
+that look fine frame by frame `[community]`. Handed a viewpoint that is out over the
+river, one perfectly reasonable way to resolve the geometry is to put the people out
+there too. **We asked for it.**
 
-| Slot | Ingredient | Role |
-|---|---|---|
-| 1 | the **2g.3 plate** | `<FIRST_FRAME>` — the shot itself |
-| 2 | the **2g.1 two-shot plate** | `<IMAGE_REF_0>` — grade and location continuity only |
-| 3 | *(empty)* | leave it empty; every extra ingredient is another thing to drift |
+There is a second, larger cause: **an Ingredient is a reference, not a frame.** Flow's
+Ingredients mode lets the model reinterpret the plate's geometry, and it will. The
+closing line `Use this image as the starting frame.` does nothing structural if the
+image went in as an Ingredient — see
+[the input-mode matrix](../../google-flow/omni-flash.md#the-input-mode-matrix-and-a-conflict-worth-resolving).
 
-**No Flow Characters in this generation.** There is no face in the frame, so casting
-them buys nothing and costs binding risk. `@Karen` and `@Susan` belong in 2g.1/2g.2.
+**Three fixes, all in the new plate:** the camera goes on the walkway behind her, the
+paved ground she stands on is visible under her feet, and the railing crosses between
+her and the water so the depth order is settled by the picture rather than by prose.
 
-The documented tag syntax, **still untested in Flow's prompt box** — this is the same
-open question as `<FIRST_FRAME>` in
-[`omni-flash.md`](../../google-flow/omni-flash.md#the-first_frame-tag--a-documented-binding-mechanism-vendor):
+### Bug 2: the phone flew — and no prompt can fix that
 
+This one is worth understanding properly, because it is not a wording problem and we
+have now spent two attempts writing around it.
+
+Video diffusion models have **no physics engine**. They have absorbed the statistical
+pattern that unsupported things fall, and they make **semi-independent decisions per
+frame, so small errors compound over time** `[community]`. The documented symptom is
+verbatim what we got: *"objects float, accelerations drift."*
+
+**A small object in multi-second free fall is close to the worst possible subject for
+the medium.** Round 1's prompt was too long and too negated; round 2's was clean and
+still failed, because the shot itself was the problem. The 2g.4 clip asked for a
+visible fall *plus* a water entry *plus* ripples — roughly two seconds of continuous
+ballistic motion, which is fifty-odd frames for drift to accumulate in.
+
+### The redesign: let the railing hide it, and let the splash be a sound
+
+Four levers exist for a physics shot
+([full list](../../google-flow/omni-flash.md#why-falling-objects-fail-and-what-actually-fixes-it)).
+The new design uses all of them:
+
+1. **Occlusion.** The phone falls **behind the railing** and is out of sight within a
+   few frames. Frames that are never rendered cannot drift. This costs nothing and
+   looks *better* — it is what a real camera would have caught.
+2. **The splash is audio only.** Omni generates sound natively, so we *hear* it hit
+   and nothing splashes on screen. No fluid simulation is rendered at any point. A
+   real film would cut it this way regardless.
+3. **Four seconds, not ten.** Drift compounds per frame. Flow offers 4s / 6s / 8s /
+   10s `[vendor]` and we had been defaulting to 10s out of habit on every clip in
+   this repo. For a physics beat the short end is free quality.
+4. **The lit screen stays.** A self-luminous object is the easiest possible thing to
+   track, and it is what makes the drop legible at a glance.
+
+**The beat still works.** §1.6 needs the audience to know where the phone went. They
+see it leave her hand and they hear it hit the water. That is more than enough — and
+withholding the splash is better filmmaking than showing it.
+
+### 2g.6 The drop, from behind — plate
+
+Every element here is load-bearing on bug 1: the camera is on the walkway, the
+pavement is under her feet, her shadow falls forward onto it, and the railing sits
+between her and the water.
+
+**No Character is cast** — she is seen from behind and there is no face in frame.
+
+```prompt
+SCENE:
+
+Subject: a woman seen from behind at a waterfront railing at night, standing on the paved walkway with the railing directly in front of her, one arm out over the top rail with a lit smartphone hanging slackly from her fingertips.
+
+Action: she rests her weight on the top rail and looks out across the water, the phone held loosely in the hand that is out over the rail, its screen still lit.
+
+Environment: the East River waterfront in early September; worn paving running away under her feet into the bottom of the frame, a scuffed concrete kerb, a steel pipe railing with chipped municipal paint crossing the frame in front of her at waist height with a lower bar beneath it, and the far Manhattan skyline as a soft band of lights above the rail across the water.
+
+Camera: 35mm, hand-held, low on the walkway three or four metres behind her at hip height, so the pavement she is standing on fills the foreground and the railing reads clearly between her and the water.
+
+Lighting: night, one cold park lamp above and behind camera throwing her shadow forward across the pavement and catching the top edge of the railing; the phone's screen is the brightest thing in the frame; the water beyond the railing stays dark and largely hidden behind it.
+
+Details: she wears a cream blouse pulled untucked and a camel cashmere cardigan slipped off one shoulder, tailored trousers and low-heel flats, no coat; a structured leather handbag sits on the paving by her feet; keep every notice and mooring plate free of readable lettering.
+
+Compose for a 16:9 frame.
 ```
-[# Sources <FIRST_FRAME>@Image1] [# References <IMAGE_REF_0>@Image2]
+
+### 2g.7 The drop, from behind — clip · Omni Flash, Ingredients
+
+**This is the one that was asked for.** Four seconds, five sentences, every constraint
+positive, the fall occluded by the railing and the splash carried entirely by sound.
+
+```prompt
+Create a 4-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off low behind her on the walkway. Grainy night cinematography lit by a single cold park lamp. Her fingers go slack and the lit phone drops from her hand and falls past the railing out of sight below it, while she stays leaning on the rail exactly as she is, still looking out across the water. Distant traffic, water against the piling and one small splash somewhere below the railing, no dialogue.
 ```
 
-If it does nothing, the plain closing sentence `Use this image as the starting frame.`
-is already carrying the job — which is why the prompt above keeps it rather than
-relying on the tags.
+**Append `Use this image as the starting frame.` only if you are in the Frames tab.**
+In Ingredients it is decoration — and possibly worse than decoration, since it asks
+for behaviour the mode does not provide.
 
-### 2g.5 The no-water fallback
+#### The loadout
 
-**Only if 2g.4 loses.** Tight on the hand; the lit phone leaves her fingers and exits
-the bottom of frame, and the shot ends. No surface, no splash, no fluid simulation
-anywhere in it — the hardest part of the beat is *removed* rather than retried.
+| Slot | Ingredient | Why |
+| --- | --- | --- |
+| 1 | the **2g.6 plate** | the shot; most important element goes first `[community]` |
+| 2 | *(empty)* | every extra ingredient is another thing to drift |
+| 3 | *(empty)* | — |
+
+**Check the Frames tab first.** Flow's changelog says Omni gained Frames-to-Video in
+June 2026 while the help matrix says it has none
+([the conflict](../../google-flow/omni-flash.md#the-input-mode-matrix-and-a-conflict-worth-resolving)).
+If a Frames tab appears when Omni is selected, **use it instead of Ingredients** — a
+Frame is honoured as geometry, an Ingredient is only a suggestion, and bug 1 is a
+geometry failure. Whichever it turns out to be, **write down which one you used**;
+that answers an open question for the whole repo, not just this shot.
+
+### 2g.8 The drop, from behind — clip · Veo 3.1 Fast, first + last frame
+
+**The recommended path, and the only one that structurally cannot reproduce bug 2.**
+
+With a first *and* last frame the model is interpolating between two known states
+rather than generating freely. It cannot fly the phone upward, because the final frame
+says where everything ended up. Per Google's own feature matrix that is **Veo 3.1
+Lite or Fast** — *not* Quality, and not Omni `[vendor]`.
+
+The cost is Omni's native audio, so the splash becomes a sound-design job in the edit
+rather than a generated one. For this shot that is a fair trade, and arguably an
+improvement.
+
+**Making the last frame is the whole trick.** Do **not** generate it fresh — a
+separately generated plate will differ in a hundred small ways and the interpolation
+will morph. Take the accepted 2g.6 plate and **edit the phone out of it** with
+`flow_edit_image`, so every other pixel is identical by construction:
+
+```prompt
+Remove the smartphone from her hand so the hand is empty and hangs slack over the rail, and remove the light its screen was throwing on her fingers. Keep everything else in the image exactly the same — the same woman in the same position and clothing, the same railing, the same paving and shadow, the same skyline, the same lighting and grain. Thanks.
+```
+
+Then generate with 2g.6 as the first frame, that edit as the last frame, 4 seconds:
+
+```prompt
+Create a 4-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off low behind her on the walkway. Her fingers go slack and the lit phone drops from her hand and falls past the railing out of sight below it, while she stays leaning on the rail looking out across the water. Grainy night cinematography, one cold park lamp, deep soft blacks.
+```
+
+### 2g.9 The last resort — the insert that shows almost nothing
+
+**Only if both 2g.7 and 2g.8 lose.** Tight on the hand; the lit phone leaves her
+fingers and exits the bottom of frame, and the shot ends. There is no water in the
+frame at any point and no fall to speak of — a few frames of motion, then nothing.
 
 It cuts straight into **§2c.6**, the illustrated handset already sinking through navy
-water, which is sitting in this ledger with no job. Wide two-shot → this → the graphic
-sink. The audience gets the whole physics and Omni never renders a drop of it, and the
+water, which is sitting in the ledger with no job. Two-shot → this → the graphic sink.
+The audience gets the whole physics and no engine renders a drop of it, and the
 register switch lands on the one plate built to carry it.
 
-Its plate is 2g.3 shot longer and tighter, so the water never enters frame at all:
+Its plate is framed tight enough that the water never enters at all:
 
 ```prompt
 SCENE:
@@ -350,22 +459,31 @@ Compose for a 16:9 frame.
 And its clip:
 
 ```prompt
-Locked off tight on the hand, one continuous shot at real speed. Grainy night cinematography, one hard lamp edge along the rail and the knuckles. The lit phone slides out of her fingertips and falls straight out of the bottom of the frame, and the hand stays exactly where it is, still hanging slack over the rail. The rest of the frame holds still. Water against the piling and distant traffic, no dialogue. Use this image as the starting frame.
+Create a 4-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off tight on the hand. Grainy night cinematography, one hard lamp edge along the rail and the knuckles. The lit phone slides out of her fingertips and falls straight out of the bottom of the frame, and the hand stays exactly where it is, still hanging slack over the rail. The rest of the frame holds still. Water against the piling and distant traffic, no dialogue.
 ```
 
 ### Fire order, and what it would prove
 
-1. **2g.3 → 2g.4** — the drop, and the thing actually blocking the beat. It needs
-   no Characters, so it can be fired **before** the casting question is settled and
-   tells us on its own whether the falling-light idea holds.
-2. **2g.1 → 2g.2** — the two-shot. Two bindings in one frame, and Susan's
+0. **Check Flow's model picker before generating anything.** With Omni selected, is
+   there a **Frames** tab? And with Veo 3.1 Fast selected, is there a **last frame**
+   slot? Those two answers decide the next three steps and settle an open question
+   for the whole repo. Thirty seconds, no credits.
+1. **2g.6** — the plate. Everything downstream depends on it, and it is where bug 1
+   is either fixed or not: look at it and ask whether it is obvious she is standing
+   on the walkway. If it is not obvious to you, it will not be obvious to the model.
+2. **2g.8** — the Veo first+last version. **Fire this before 2g.7.** It is the only
+   route that structurally cannot reproduce the flying phone, so if it works the beat
+   is finished and the Omni question becomes academic.
+3. **2g.7** — the Omni Ingredients version, as asked for. Cheaper, keeps the native
+   splash audio, and if it holds it is the better clip.
+4. **2g.1 → 2g.2** — the two-shot. Two bindings in one frame, and Susan's
    e-commerce references under a super-8 night grade.
-3. **2g.5** — only if 2g.4 loses. One plate, one clip, no water physics, and it
-   gives §2c.6 a job.
+5. **2g.9** — only if both drop routes lose.
 
-**What to watch on 2g.4:** whether the glow stays one solid rectangle all the way
-down. If it smears, stretches or changes shape mid-fall, that is the morphing tell,
-and the answer is 2g.5 rather than another roll.
+**What to watch on 2g.7 / 2g.8:** whether the phone is visible for more than a few
+frames after it leaves her hand. **If it is, the framing is wrong, not the prompt** —
+lower the camera or raise the rail until the railing takes it out of sight almost
+immediately. Every frame the phone is airborne on screen is a frame it can drift in.
 
 **What to watch on 2g.1:** whether Karen and Susan look lit by the same lamp. That
 is the whole Susan-register question, and it is answerable at a glance.
@@ -375,6 +493,18 @@ things wants to give you the flinch, and the flinch kills the beat — if either
 them looks down, the next morning's *"Where's my phone?"* stops working.
 
 ### Sources for the §2g research `[2026-08-14]`
+
+Round 3 (the physics and input-mode pass) added:
+
+- [Google Flow — models & supported features](https://support.google.com/flow/answer/16352836) `[vendor]` — the input-mode matrix: who gets Frames, who gets first+last, and the 4s/6s/8s/10s durations.
+- [Google Flow changelog](https://labs.google/fx/tools/flow/changelogs) `[vendor]` — *"Frame to Video now available for Gemini Omni Flash"*, June 2026, which conflicts with the matrix above.
+- [What about gravity in video generation?](https://arxiv.org/html/2512.00425v1) — *"objects float, accelerations drift, and collisions behave inconsistently."*
+- [Making AI video generators smarter about physics — Johns Hopkins](https://engineering.jhu.edu/ece/news/making-ai-video-generators-smarter-about-physics/) — there is no physics engine, only absorbed statistics.
+- [Temporal consistency explained — Picto](https://picto.video/en/learn/temporal-consistency/) — per-frame semi-independent decisions; errors compound over time.
+- [Measuring 3D Spatial Geometric Consistency](https://arxiv.org/pdf/2603.19048) · [Why spatial awareness is the missing key](https://www.technoohub.com/why-spatial-awareness-is-the-missing-key-in-generative-video) — no world model; which-side-of-a-barrier is genuinely unreliable.
+- [Veo 3.1 first/last frame to video](https://www.eachlabs.ai/google/veo3-1/veo3-1-first-last-frame-to-video) — interpolation between pinned endpoints.
+
+Round 2 (the prompt-craft pass) used:
 
 - [Cinematic prompting for Gemini Omni Flash — Runware](https://runware.ai/docs/models/google-gemini-omni-flash/guides/cinematic-prompting) `[runware]` — the three-to-four-sentence scaffold, camera vocabulary first, and *"the biggest single quality lever in Omni Flash prompting is what you remove, not what you add."*
 - [How to create effective prompts with Gemini Omni — Google DeepMind](https://deepmind.google/models/gemini-omni/prompt-guide/) `[vendor]` — the five core elements, *"you don't have to be as prescriptive"*, *"you don't need to describe it across every frame."*

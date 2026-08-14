@@ -2,8 +2,9 @@
 
 **Model:** Gemini Omni Flash (`gemini-omni-flash-preview`). Announced at I/O 19 May 2026; developer
 API access 30 Jun 2026. **Still public preview.**
-**Researched:** 2026-08-12 · **second pass 2026-08-14** (see
-[Prompt craft: what a failed shot taught us](#prompt-craft-what-a-failed-shot-taught-us)) ·
+**Researched:** 2026-08-12 · **second pass 2026-08-14**
+([Prompt craft](#prompt-craft-what-a-failed-shot-taught-us)) · **third pass 2026-08-14**
+([Physics shots and the input-mode matrix](#physics-shots-and-the-flow-input-mode-matrix)) ·
 **Confirmed against our Flow session:** never.
 
 > **Read the verdict first.** On current evidence Omni Flash is *not* a drop-in replacement for the
@@ -96,6 +97,13 @@ frame**" `[yt]`. Independently, a VFX creator running Omni through Higgsfield re
 reference workflow kept redesigning his scene, "the only way I could get the result I was after was
 actually just using the start and end frame feature" — i.e. frame-anchoring is what rescues a shot
 Omni's reference mode mangles `[yt]`.
+
+> **⚠️ Both halves of that paragraph are now contested — see
+> [the input-mode matrix](#the-input-mode-matrix-and-a-conflict-worth-resolving) (2026-08-14).**
+> Google's own feature page says first+last frames are **Veo 3.1 Lite and Fast, not Quality**,
+> and Flow's changelog says **Omni gained Frames-to-Video in June 2026**. `[vendor]` outranks
+> `[yt]`, so treat the Stratvert demo as describing an older build. The conclusion below survives
+> — frame-anchoring is still Veo's job — but the specific model named in it is probably wrong.
 
 Combined with the `[community]` report of no true first-frame-to-video, the working conclusion is:
 
@@ -434,6 +442,125 @@ Consistent across sources and worth more than it sounds `[community]`:
 better-sourced than a guess and it explains an observed failure, which is why it is
 written down — but nothing here has been through the
 [calibration protocol](./README.md#calibration-protocol-how-untested-becomes-confirmed).
+
+## Physics shots, and the Flow input-mode matrix
+
+**Added 2026-08-14, third pass.** Triggered by the Karen river drop failing a
+*second* time, on a rewritten prompt. The two reported bugs were **the character
+appearing on the wrong side of a railing** and **the falling phone glitching and
+flying upward**. Both turned out to be structural rather than verbal, which is why
+the prompt rewrite alone did not fix them.
+
+### The input-mode matrix, and a conflict worth resolving
+
+Flow's model picker is not interchangeable. From Google's own
+[models & supported features page](https://support.google.com/flow/answer/16352836) `[vendor]`:
+
+| Mode | Veo 3.1 Lite / Fast | Veo 3.1 Quality | Omni Flash |
+| --- | --- | --- | --- |
+| Text → video | ✅ | ✅ | ✅ |
+| **Frames → video (first frame)** | ✅ | ✅ | ❌ *(but see below)* |
+| **Frames → video (first + last)** | ✅ | ❌ | ❌ |
+| Ingredients / references → video | ✅ (8s) | — | ✅ (10s, incl. character & audio refs) |
+| Durations | 4s / 6s / 8s (Fast also 10s) | 4s / 6s / 8s | **4s / 6s / 8s / 10s** |
+
+> **⚠️ Two conflicts, both `[untested]` and both one click away from an answer.**
+>
+> 1. **Omni and first frames.** The help page says Omni has no Frames mode, but
+>    Flow's own [changelog](https://labs.google/fx/tools/flow/changelogs) `[vendor]`
+>    lists *"Frame to Video now available for Gemini Omni Flash"* (2026-06-04) and
+>    *"Omni Frames to Video"* (2026-06-10). The changelog is dated and specific; the
+>    matrix page is probably stale. **Check whether Flow shows a Frames tab when
+>    Omni is selected.**
+> 2. **Veo Quality and end frames.** This page says first+last is **Lite and Fast
+>    only**. That contradicts the `[yt]` claim recorded above — Kevin Stratvert
+>    demonstrating that you switch to *Veo 3.1 Quality* for start and end frames.
+>    `[vendor]` outranks `[yt]`, so the table above is what to believe until someone
+>    looks.
+>
+> Either way the practical rule holds: **if a shot needs its end state pinned, that
+> is a Veo 3.1 Lite/Fast job, not an Omni job.**
+
+**The consequence we had missed:** a prompt ending `Use this image as the starting
+frame.` does nothing structural if the image was loaded as an **Ingredient**.
+Ingredients are *references* — the model is free to reinterpret the geometry, and it
+will. That is a sufficient explanation for a character swapping sides of a railing.
+**If the plate's geometry must be respected, it has to go in as a Frame, not an
+Ingredient.**
+
+### Why falling objects fail, and what actually fixes it
+
+This is not a prompting problem and no wording fixes it. Video diffusion models have
+**no physics engine**; they have absorbed the statistical pattern that unsupported
+things accelerate downward, and they make **semi-independent decisions per frame, so
+small errors compound over time** `[community]`. The documented symptoms are exactly
+what we saw: *"objects float, accelerations drift, and collisions behave
+inconsistently"* `[community]`.
+
+A small object in multi-second free fall is therefore close to the **worst possible
+subject** for the medium. Four levers, in order of how much they actually buy:
+
+1. **Pin the end state.** A first **and last** frame turns free generation into
+   interpolation between two known states — the model cannot fly the object upward
+   because the final frame says where it ended up. This is the only true fix, and it
+   means **Veo 3.1 Lite/Fast**.
+2. **Occlude the hard motion.** Let the scene's own geometry hide it — a railing, a
+   frame edge, a foreground object. Frames never rendered cannot drift. This costs
+   nothing and usually looks *better*, because it is what a real camera would catch.
+3. **Shorten the clip.** Drift compounds per frame, so **4s is meaningfully safer
+   than 10s** for a physics beat. We had been defaulting to 10s everywhere out of
+   habit; Flow offers 4s / 6s / 8s / 10s and the short end is free quality on any
+   shot that does not need the runtime.
+4. **Give the object its own light.** A self-luminous object is the easiest possible
+   tracking target; a dark object against dark water is the hardest, and morphing
+   lives there.
+
+**And the one that removes the problem rather than mitigating it: render the event as
+audio.** Omni generates sound natively, so a splash can be *heard* while nothing
+splashes on screen. A real film would cut this way regardless. Physics you don't
+render cannot go wrong.
+
+### Spatial geometry: models have no world model
+
+Related failure, same root. Models trained on 2D clips *"don't inherently understand
+3D space, depth, or physics"* and exhibit **geometric warping and perspective
+failures despite plausible per-frame visuals** `[community]`. "Which side of a barrier
+is a person on" is genuinely unreliable, not a fluke.
+
+Counters that work at the prompt and plate level:
+
+- **Put the camera unambiguously on one side**, and say so. A camera described as
+  *outside* a railing implies a viewpoint over the water, and the model may resolve
+  that by moving the people out there too. *(This is precisely how our own plate
+  caused the bug.)*
+- **Show the ground plane.** Pavement under her feet in frame is an anchor no amount
+  of prose replaces.
+- **Use the barrier as a foreground occluder.** A rail crossing in front of the
+  subject settles the depth ordering visually rather than verbally.
+
+### Slop counters specific to motion `[community]`
+
+Additions to the table in the previous section:
+
+- **Film grain at 10–15% opacity** counteracts the too-clean look — for us this is
+  already the §1 `STYLE LOCK`'s job, which is a point in the house style's favour.
+- **A 10–15% speed adjustment in the edit** makes AI motion read as more natural.
+  Post, not prompt, but worth knowing before a clip gets binned.
+- **Review frame by frame before accepting** — flicker, morphing, inconsistent
+  shadows. The failure is usually in a handful of frames, not the whole clip.
+- **Less motion is safer motion.** Over-animation is the tell; explicit "motion
+  bucket"-style restraint is the counter.
+
+### Sources for this section (2026-08-14)
+
+- [Google Flow — models & supported features](https://support.google.com/flow/answer/16352836) `[vendor]` — the input-mode matrix and durations.
+- [Google Flow changelog](https://labs.google/fx/tools/flow/changelogs) `[vendor]` — Omni Frames-to-Video, June 2026.
+- [What about gravity in video generation? Post-Training Newton's Laws with Verifiable Rewards](https://arxiv.org/html/2512.00425v1) — *"objects float, accelerations drift, and collisions behave inconsistently."*
+- [Making AI video generators smarter about physics — Johns Hopkins](https://engineering.jhu.edu/ece/news/making-ai-video-generators-smarter-about-physics/) — no physics engine; statistical patterns only.
+- [Temporal consistency explained — Picto](https://picto.video/en/learn/temporal-consistency/) `[community]` — per-frame semi-independent decisions, errors compounding.
+- [Measuring 3D Spatial Geometric Consistency in Dynamic Video Generation](https://arxiv.org/pdf/2603.19048) · [Why spatial awareness is the missing key](https://www.technoohub.com/why-spatial-awareness-is-the-missing-key-in-generative-video) `[community]` — no world model; geometric and perspective failures.
+- [Veo 3.1 first/last frame](https://www.eachlabs.ai/google/veo3-1/veo3-1-first-last-frame-to-video) `[community]` — interpolation between pinned endpoints.
+- [AI Video Quality Checklist — Green Frog Labs](https://greenfroglabs.com/blog/ai-video-quality-avoid-slop-appearance) `[community]` — grain opacity, speed adjustment, frame-by-frame review.
 
 ## Notes for BadCode `[untested]`
 
