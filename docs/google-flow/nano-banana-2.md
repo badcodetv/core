@@ -1,7 +1,12 @@
 # Nano Banana 2 — image engine reference
 
 **Model:** Gemini 3.1 Flash Image. Launched 26 Feb 2026.
-**Researched:** 2026-08-12 · **Confirmed against our Flow session:** never — everything here is
+**Also covers Nano Banana Pro** (Gemini 3 Pro Image), the sibling model in Flow's picker —
+see [Third pass](#third-pass--nano-banana-pro-and-the-anti-slop-toolkit), which is where the
+Pro-specific prompting and the engine recommendation live.
+**Researched:** 2026-08-12 · **second pass 2026-08-12** ·
+**third pass 2026-08-14** ([Pro, and the anti-slop toolkit](#third-pass--nano-banana-pro-and-the-anti-slop-toolkit)) ·
+**Confirmed against our Flow session:** never — everything here is
 `[vendor]` or `[community]` until a calibration run says otherwise (see [README](./README.md)).
 
 ## Identity & availability
@@ -247,6 +252,127 @@ guide plus the current crop of NB2 playbooks. Seven things the first pass missed
 **Same bias warning as the `[yt]` table.** Most of these are vendor blogs for
 competing platforms; several demonstrate in third-party wrappers rather than Flow.
 Google's own guide is the only unambiguously `[vendor]` source in the list.
+
+## Third pass — Nano Banana Pro, and the anti-slop toolkit
+
+**Added 2026-08-14.** Written while drafting the Karen §1.7 morning-after plates, on
+two questions: *how do we prompt Nano Banana **Pro** specifically*, and *how do we keep
+these out of the generic-AI-image trap.* The engine-agnostic realism half is the more
+valuable of the two.
+
+### Pro is a different animal: it plans before it draws
+
+- **It reasons first.** Pro runs a *"'Thinking' Process… reasons through your prompt
+  before generating, fixing logic errors"* `[community]`, and *"operates more like a
+  designer, planning a scene's logic before generating it"* `[community]`, where NB2 is
+  the better conversational editor.
+- **Consequence: statements of *intent* land on Pro in a way they do not on a pure
+  diffusion model.** *"This panel must read as a deliberate rhyme with the previous
+  one"* is an instruction Pro can act on. Worth exploiting for matched pairs and
+  sequence panels; worth not bothering with on NB2.
+- **Google's own slot order for Pro** `[vendor]`: **Subject · Composition · Action ·
+  Location · Style · Editing instructions.** Note *Composition* is promoted above
+  *Action*, unlike the NB2 template above.
+- Aspect ratio, aperture and grade can be stated **inline in the prose** — *"a cinematic
+  21:9 wide shot"*, *"shallow depth of field (f/1.8)"*, *"muted teal tones"* `[vendor]`.
+- **Reference images: name each one's job.** *"Clearly define the role of each"* input —
+  one for pose, one for style, one for background `[vendor]`; *"Keep the character from
+  Image 1 but put them in the pose from Image 2"* `[community]`. Identical in shape to
+  the finding on the video side, which makes it a Google-wide habit rather than a
+  per-model quirk.
+
+### ⚠️ "Descriptive, not repetitive" — and what it costs us
+
+The line that should change how we write:
+
+> *"You don't need '4k, trending on artstation, masterpiece' spam anymore."* Be
+> **"descriptive, not repetitive."** `[community]` And from Google's own guidance: define
+> the job, subject, composition, light, style and constraints, **then remove repetition
+> and conflicts** — *"a focused short prompt can beat a long prompt with competing
+> styles or viewpoints."* `[vendor]`
+
+**This has a direct cost for the Karen house style.** The §1 `STYLE LOCK` is pasted
+verbatim at the top of every plate — grain, halation, vignetting, bloom, soft blacks —
+and our scene blocks have then *restated* texture and optics underneath it. On Pro that
+is precisely the pattern named above: repetition plus a second, competing style
+statement.
+
+**Working rule, `[untested]`: the lock owns texture and optics; the scene block owns the
+world.** If a word appears in the lock, it should not appear again below it. This does
+**not** contradict the finding that style must be stated explicitly even when a
+reference is attached (second pass, item 1) — state it **once**, in the lock.
+
+### The anti-slop toolkit `[community]`
+
+The generic-AI-image look is a set of specific, nameable defaults, and each has a
+counter you can put in a prompt. This table is engine-agnostic and worth applying on
+any image model:
+
+| The tell | The counter in the prompt |
+| --- | --- |
+| Plastic, over-smoothed skin; the AI "glow" | Name the capture as unprocessed — `RAW`, `unretouched` — and ask for **natural skin texture** |
+| Noiseless perfection | `ISO 1600`, `natural film grain visible in the shadow areas` |
+| Vague "nice lighting" | **One named source with a position** — *"a single window camera-left"*, *"one overhead fluorescent tube"* |
+| Symmetry and perfect centring | *"slightly off-centre, not quite level, candid"* — real photographs are asymmetric |
+| Sterile, empty environments | **Environmental imperfections**: dust, a dried water ring, crumbs, clutter, a stain |
+| Stiff posing | **Mid-action, not posed** — *"mid-laugh"*, *"hands mid-gesture"*, *"half out of the chair"* |
+| Flawless optics | vignetting, chromatic aberration, focus breathing |
+| Flat, 2D composition | **depth layering** — a foreground occluder, something out of focus in front |
+| Generic colour grading | **Name a film stock** — `Kodak Portra 400`, `Tri-X`, `Fujifilm Classic Chrome` |
+
+Most of this the Karen `STYLE LOCK` already buys. **The four it does not** are the ones
+worth adding per-scene, because they live in the *world*, not the capture:
+
+> **environmental imperfection · mid-action instead of pose · off-centre and not-quite-level
+> framing · a foreground occluder.**
+
+### The root cause, and the one habit to keep
+
+> *"Vague prompts produce vague images, and most people are working from vague prompts —
+> borrowed, recycled, entered in a rush with no particular vision behind them."*
+> `[community]` The advice that follows is to **start fresh: craft a new brief for each
+> creative problem** rather than reusing a saved prompt.
+
+**Read carefully, that is an argument for what we already do, not against it.** Recycling
+a *scene* is what produces slop. Locking a *style* is the opposite — it is the thing that
+makes a series look authored. **Lock the register; never recycle the shot.**
+
+### Negatives, revisited
+
+The realism literature leans hard on exclusions — *"ask yourself what this image should
+absolutely not be. Lens flare. Symmetrical composition"* `[community]` — against Google's
+positive-framing house rule `[vendor]`. **The second pass's resolution survives and is now
+better evidenced:** negate the *style family* in one short clause, describe everything else
+positively, and keep the exclusion list short because long ones dilute. The Karen lock's
+single `Exclusions:` line is already the right shape. **Do not add a second one.**
+
+### Which engine for BadCode
+
+The [calibration risk](#the-calibration-risk-nobody-flags) above still points one way, and
+this pass reinforces it: NB2's reported failure mode is *"too sharp… too overly
+contrast… almost overexposed"* against Pro's *"a lot more natural"* `[yt]` — and
+over-sharpened, over-lit, over-contrasted is a fair description of the slop look itself.
+
+> **Working recommendation, `[untested]`: use Nano Banana Pro for Karen plates**, and
+> accept the tighter rate limit as the price. The house style is a *suppression* of
+> exactly the axis NB2 pushes on. Pro also has the reasoning behaviour that matched-pair
+> and sequence panels benefit from, and stronger hex-code handling for palette locks.
+>
+> **Cheap test:** run one plate on both, same prompt, and look at the skin and the
+> highlights. Nobody has done this.
+
+### Sources for this section (2026-08-14)
+
+- [Nano Banana Pro prompting tips — blog.google](https://blog.google/products-and-platforms/products/gemini/prompting-tips-nano-banana-pro/) `[vendor]` — the Subject/Composition/Action/Location/Style slot order; inline aspect ratio, aperture and grade; *"clearly define the role of each"* reference image.
+- [Nano Banana Pro — Google DeepMind](https://deepmind.google/models/gemini-image/pro/) · [Nano Banana Pro announcement](https://blog.google/innovation-and-ai/products/nano-banana-pro/) `[vendor]` — model identity, 14 references / 5 people.
+- [The ultimate Nano Banana Pro prompting guide — Atlabs](https://www.atlabs.ai/blog/the-ultimate-nano-banana-pro-prompting-guide-mastering-gemini-3-pro-image) `[community]` — the "Thinking" process; *"descriptive, not repetitive"*; keyword spam is dead; role-assigning references.
+- [Google Nano Banana Pro complete guide — WaveSpeed](https://wavespeed.ai/blog/posts/google-nano-banana-pro-complete-guide-2026/) `[community]` — Pro plans scene logic; focused short prompts beat long conflicting ones.
+- [The anti-slop playbook — OpenArt](https://openart.ai/blog/how-to-avoid-ai-slop/) `[community]` — slop as recycled vagueness; specificity over wishes; exclusions as guardrails; treat outputs as starting points.
+- [How to make AI images look like real photos — Miraflow](https://miraflow.ai/blog/how-to-make-ai-images-look-like-real-photos-prompt-tricks) `[community]` — the tell→counter table above: camera bodies, ISO and grain, positioned lights, environmental imperfection, mid-action, optical flaws, film stock, depth layering.
+- [How to make AI images look less like AI — Pixova](https://www.pixova.io/blog/how-to-make-ai-images-look-less-like-ai) · [Photorealistic AI image prompts — Artsmart](https://artsmart.ai/blog/ai-image-prompts-photorealistic/) `[community]` — asymmetry and imperfect framing; RAW/unprocessed to counter over-smoothing.
+
+**All `[untested]`.** Same bias warning as everywhere else in this file: only the
+blog.google and DeepMind links are `[vendor]`, and the rest sell something.
 
 ## Notes for BadCode `[untested]`
 
