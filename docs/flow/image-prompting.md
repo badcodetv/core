@@ -69,6 +69,49 @@ camera:
 Bare "photorealistic" as an adjective gets you plastic. The imperfection has to be
 named.
 
+## 4a. Expressions — name the muscles, never the emotion
+
+**Added 2026-08-14.** The counterpart to §4: the same studio-perfect default that makes
+skin plastic makes faces *overact*. Naming a feeling is what causes it.
+
+> **"AI does not understand feelings. It understands facial muscles, micro-expressions,
+> and physical changes in the face."** `[community]`
+>
+> *"Most people write 'sad person' and get an exaggerated crying face. Real sadness is
+> quiet and lives mostly in the eyes."*
+
+**So describe the face physically and let the emotion be inferred.** The word for the
+feeling should not appear in the prompt at all.
+
+| Instead of | Write |
+| --- | --- |
+| happy | genuine smile, cheeks lifted, eyes slightly squinting |
+| sad | soft eyes, slight frown, down-turned lips |
+| angry | tight jaw, lowered brows, intense eyes |
+| hungover, exhausted | half-lidded eyes slow to track, mouth flat and slightly open, slack jaw, a pillow crease across one cheek |
+| unimpressed, annoyed | brows relaxed and level, eyes aimed at nothing, the face doing almost nothing |
+
+**The vocabulary, by feature** `[community]` — eyes: *engaged, soft, intense, wide,
+half-lidded*; brows: *raised, lowered, relaxed, level, slightly raised (single)*; mouth:
+*genuine smile, slight frown, slightly open, flat*; overall: *relaxed facial muscles,
+tight jaw, controlled anger, realistic tension*.
+
+**⚠️ Beware the opposite-of-happy trap.** Reaching for a scowl to convey displeasure
+gets you Angry Face, which is just as overacted. Restraint reads as real: **a face that
+does almost nothing** is usually the truthful version of irritation, boredom or
+endurance.
+
+**Supporting tokens that stop the stock-photo look** `[community]`: `natural skin
+texture`, `slight asymmetry`, `unposed`, `unaware of the camera`, `caught mid-gesture`.
+And put the state in the **world** as well as the face — a pressed-out blister pack and
+a half-drunk pint of water say *hungover* more reliably than any adjective on a face.
+
+**Sources:** [Realistic facial expressions in AI images — Medium](https://medium.com/write-your-world/how-to-create-realistic-facial-expressions-in-ai-images-2026-guide-prompt-examples-63438c54c65f) ·
+[Prompt keywords to make images less fake — Promptaa](https://promptaa.com/blog/prompt-key-words-to-make-images-less-fake-looking)
+`[community]`. Consistent with the repo's own long-standing note in
+[`video-prompting.md`](./video-prompting.md) — *"mouth movement matches the words
+without exaggerated expression"*.
+
 ## 5. Rendered text
 
 Nano Banana Pro is genuinely strong at legible in-image text — the one place Flow will

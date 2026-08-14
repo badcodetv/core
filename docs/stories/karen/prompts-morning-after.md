@@ -333,7 +333,7 @@ Camera: low-angle shot from her side at mattress height, 35mm at f/2, the near e
 
 Composition: 16:9. She sits right of centre. The room falls away to the left toward the window. The rumpled duvet crosses the bottom of the frame, close and out of focus.
 
-Action: her free hand is pushed up into her hairline at the temple. Her eyes are open and unfocused, looking at nothing across the room. She is halfway through a slow sigh.
+Action: she has not sat up and has not moved since it rang. She lies low in the bed with the phone resting against her ear, held by a hand that stays where it fell. Her other forearm is draped across her forehead just above her eyes. Her eyes are half-lidded and slow, aimed at the ceiling rather than at anything in the room. Her brows are relaxed and level. Her mouth is flat and slightly open. Her jaw is slack.
 
 Location: a small rented pre-war New York apartment bedroom, mid-morning. The walls are painted a deep terracotta burnt-sienna, with the ornate ceiling moulding and picture rail left chalky off-white and thickened by many layers of paint. A painted cast-iron radiator under the window. Worn narrow-strip parquet floor. Through the half-open venetian blind, a black iron fire escape and the brick wall of the building opposite, close enough to touch. Mismatched second-hand furniture: a bentwood chair with an olive suede bomber slung over it, a chest of drawers that does not match the bedside table. Paperbacks stacked on the floor beside the bed. A trailing pothos on the windowsill. The bedside table holds a lamp, a half-drunk mug going cold and a tangled charger cable. Yesterday's jeans are on the floor where they were stepped out of.
 
@@ -341,8 +341,35 @@ Light: a hard ladder of daylight through the half-open venetian blind camera-lef
 
 Style: a still from a 35mm independent film. Available light only. Hyper-realistic skin texture with visible pores and subtle imperfections. A faint smear on the lens, fine grain, subtle handshake blur.
 
-Constraints: sleep-creased t-shirt, hair flattened on one side. She is weary and patient rather than pained or contemptuous. Keep every label, book spine and poster free of readable lettering.
+Constraints: a pillow crease across one cheek, hair stuck flat to the side of her face, dull skin, dry lips, one eye open slightly wider than the other, sleep-creased t-shirt. Unposed and unaware of the camera. Keep every label, book spine and blister pack free of readable lettering.
 ```
+
+### Round 6 — she is wrecked, and the face does almost nothing
+
+Kai: *more hungover, lying there like she is injured, not pleased to take the call.*
+Three changes, and the third is a craft rule now written up in
+[`docs/flow/image-prompting.md` §4a](../../flow/image-prompting.md#4a-expressions--name-the-muscles-never-the-emotion).
+
+1. **She stops sitting up.** Flat on her back, low in the bed, forearm draped across her
+   forehead, the phone held by *"a hand that stays where it fell."* Posture carries the
+   hangover so nothing on the face has to.
+2. **The state moves into the world.** A pressed-out blister pack and a half-drunk pint
+   of water on the bedside table say it more reliably than any adjective on a face.
+3. **⚠️ No emotion word appears in the prompt at all.** Not *hungover*, not *annoyed*,
+   not the previous draft's *"weary and patient."* Only muscles: half-lidded eyes aimed
+   at the ceiling, brows relaxed and level, mouth flat and slightly open, slack jaw.
+
+> **Why that last one matters.** *"AI does not understand feelings. It understands
+> facial muscles."* Naming a feeling is what produces the overacted AI face — ask for
+> *sad* and you get a crying face. The trap on this particular beat is the
+> **opposite-of-happy** reflex: reaching for a scowl to convey displeasure just gets you
+> Angry Face, equally overacted. **Not-pleased-to-take-the-call reads truest as a face
+> doing almost nothing.**
+
+**Candidate B is the take**, and it is the first time the camera clause landed exactly —
+lens level with her head on the pillow — which is worth noting after three rounds of it
+being quietly ignored. C is the alternate: same read, camera a little higher, mouth
+slightly more open.
 
 ### Susan's flat is not Karen's flat — round 3, at Kai's direction
 
