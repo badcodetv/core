@@ -81,9 +81,12 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
   the vocal arc, what must survive — then produces a style prompt, exclude-styles list, slider
   settings, and on request lyrics, in the BadCode voice, refining against what you actually hear. It
   runs on the toolkit in [`docs/suno-gpt/`](./docs/suno-gpt/README.md) and defaults to drum & bass.
-  The toolkit also covers the **platform** beyond the prompt box — the three influence sliders, the
-  Voice/custom-model stack for a recurring narrator across a release, lyric editing, Studio, stems,
-  and the things Suno reliably gets wrong (half-time drums, niche D&B subgenres).
+  **The skill also drives the app, not just the prompt box** — ask it "how do I…" or "what do I
+  click" and it gives a click-path with every setting stated. The toolkit covers the three influence
+  sliders, the Voice/custom-model stack for a recurring narrator across a release, lyric editing,
+  stems, **Suno Studio 2.0** (project-aware chat, MIDI, effects rack, natural-language custom
+  plugins — [`files/suno-studio.md`](./docs/suno-gpt/files/suno-studio.md)), and the things Suno
+  reliably gets wrong (half-time drums, niche D&B subgenres).
 - **Write or debug a Flow prompt:** run the **`flow-prompt`** skill
   (`.claude/skills/flow-prompt/`). The Suno toolkit's counterpart for images and video —
   it owns **platform craft** (how Nano Banana and Veo actually behave) while the
