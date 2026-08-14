@@ -19,6 +19,28 @@ The split, and why it matters:
 Nothing in here has been wired into a skill yet. These are reference files; the skills that would
 consult them are untouched.
 
+## 🖐 Standing rule: engine research lands here
+
+**Any research about how a Flow engine behaves goes in this folder — always, and at the time it
+is found.** Not in a story's prompt file, not in a commit message, not only in the conversation
+where it came up.
+
+The test is *"would this still be true for a different story?"* If yes, it belongs here:
+
+| Finding | Where it goes |
+| --- | --- |
+| Omni ignores negative prompts | **here** — true of every clip we ever make |
+| Karen's river drop needs the phone screen lit | the story's prompt file — true of one shot |
+| Nano Banana's aspect-ratio ceiling | **here** |
+| Susan's Character reference is in the wrong register | `docs/stories/karen/` |
+
+Research is worth roughly nothing the second time somebody has to find it again. The 2026-08-14
+Omni prompt-craft pass exists because a shot failed, the answer was already three clicks away in a
+blog post, and nobody had written it down after the first time.
+
+Tag every claim with an [evidence tier](#evidence-tiers), date the section, and cite the URL — an
+untiered, undated claim is indistinguishable from a guess in six weeks.
+
 ## Contents
 
 | File | Model | Surface |
@@ -48,6 +70,11 @@ Every claim in these files carries a tag. Respect them.
   the claim is *demonstrated on screen inside Flow*, and no better than it otherwise: most of these
   creators sell a course or a competing platform, and many test in third-party wrappers
   (Higgsfield, OpenArt, Cue AI) where limits and filtering differ from Flow's.
+- `[runware]` — a model **host's** own documentation (Runware, and any equivalent). Added
+  2026-08-14. Above `[community]` because it is a doc rather than a blog post and the vendor has
+  to make the model work; below `[vendor]` because it describes their surface, not Google's. In
+  practice the most *craft-useful* tier we have found — hosts write the prompting guidance Google's
+  API reference omits.
 - `[untested]` — we have not confirmed it in our own Flow session. Do not build a rule on it.
 - `[confirmed <date>]` — we ran it and watched what happened. This is the only tier that earns a
   hard rule.

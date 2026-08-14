@@ -2,7 +2,9 @@
 
 **Model:** Gemini Omni Flash (`gemini-omni-flash-preview`). Announced at I/O 19 May 2026; developer
 API access 30 Jun 2026. **Still public preview.**
-**Researched:** 2026-08-12 · **Confirmed against our Flow session:** never.
+**Researched:** 2026-08-12 · **second pass 2026-08-14** (see
+[Prompt craft: what a failed shot taught us](#prompt-craft-what-a-failed-shot-taught-us)) ·
+**Confirmed against our Flow session:** never.
 
 > **Read the verdict first.** On current evidence Omni Flash is *not* a drop-in replacement for the
 > Veo-based recipe in `docs/superpowers/flow-video.md`, and there is a specific reason why — see
@@ -286,6 +288,152 @@ Sources: [Generate and edit videos with Gemini Omni Flash](https://ai.google.dev
 [DeepMind Omni prompt guide](https://deepmind.google/models/gemini-omni/prompt-guide/) `[vendor]`
 (the latter now fetches, and confirms the five core elements and the
 "you don't have to be as prescriptive" line the practitioner guides restate).
+
+## Prompt craft: what a failed shot taught us
+
+**Added 2026-08-14**, from a second research pass triggered by a real failure — the
+Karen river-drop clip (a phone falling off a railing into water) came back wrong
+repeatedly, and the diagnosis turned out to be entirely in the prompt. The full
+post-mortem with the offending text is in
+[`docs/stories/karen/prompts-river-drop.md`](../stories/karen/prompts-river-drop.md);
+the reusable findings are here.
+
+### ⚠️ Negatives do not work, and they actively backfire
+
+The single most consequential finding, and it invalidates a habit carried over from
+Veo and from Nano Banana.
+
+- Omni Flash has **no negative-prompt parameter** `[vendor]` — already recorded above
+  under *Explicitly not supported*, but the consequence was never spelled out.
+- The workaround everyone reaches for — putting the negation in the prompt body — is
+  **specifically counter-recommended**: instructive language using `no` or `don't`
+  ("no walls", "don't show walls") performs *worse* than not mentioning the thing at
+  all `[community]`. **Reframe constraints positively or omit them.**
+
+The failed prompt carried ~20 negations and named *float*, *bounce*, *skip*, *hover*
+and *second phone* into a model that cannot subtract them. It got what it asked for.
+
+**The rewrite pattern — same constraint, positively stated:**
+
+| Instead of | Write |
+| --- | --- |
+| `it does not float, bounce or reappear` | `the surface closes over it and goes dark` |
+| `no reaction, no lunge, do not look down` | `the hand stays where it is` |
+| `no slow motion, no speed changes` | `at real speed` |
+| `do not chase it, no aggressive camera move` | `locked off` |
+| `the Wonder Wheel does not turn` | `the Wonder Wheel stands still` |
+
+Two established exceptions that appear to be safe, because they are the vendor's own
+documented phrasing: **`no dialogue`** for audio, and **`no cuts` / `single
+continuous shot`** for the shot lock. Both are recommended in Google's own guidance
+`[vendor]`, so treat them as idiom rather than as negation. Everything else gets the
+positive restatement.
+
+### Length: three to four sentences, and the lever is subtraction
+
+> *"The biggest single quality lever in Omni Flash prompting is what you remove, not
+> what you add."* `[runware]`
+
+The sources disagree on the surface and agree underneath:
+
+| Source | Says | Tier |
+| --- | --- | --- |
+| Runware | three to four sentences covering the five elements | `[runware]` |
+| geminiomniprompts | under ~50 words; beyond that dilutes focus | `[community]` |
+| promptslove | 50–150 words; "specificity over brevity" | `[community]` |
+| DeepMind | no word limit; *"the more detail you add, the more control"* | `[vendor]` |
+
+**The resolution is that the axis is not length, it is kind.** DeepMind's own guide
+says in the same breath *"you don't have to be as prescriptive"* and *"you don't need
+to describe it across every frame."* Detail about **what the shot is** — the five
+elements — buys control. Prescription about **how the model should achieve it** —
+timecoded beats, frame-by-frame narration, mechanism explanations — buys nothing and
+costs focus. The failed prompt ran ~450 words and almost all of it was the second kind.
+
+### Do not explain physics to it
+
+Omni reasons about gravity, kinetic energy and fluid dynamics from world knowledge
+`[vendor]`. Naming the action is the documented method; explaining the mechanism is
+waste:
+
+> Instead of explaining how rain creates motion blur or how a beam refracts through
+> water, state: *"The lighthouse beam rotates slowly through the dusk light, cutting
+> through the rain."* `[runware]`
+
+So `immediate downward acceleration under gravity`, `the phone gains speed
+continuously as it falls`, `rotation remains physically consistent` are all dead
+words. `the phone falls into the river` is the whole instruction.
+
+### Design the shot around the difficulty ranking, not against it
+
+The [motion difficulty ranking](#motion-difficulty-ranking-community) above is a
+*shot-design* input, not trivia. The failed clip put **complex physics** (a water
+entry) and **fine hand articulation** (the release) — the two documented weak
+areas — in frame simultaneously, as the subject, with the camera tracking them.
+
+Three counters that generalise:
+
+- **Give a hard-to-track subject its own light.** A dark object moving through a dark
+  frame is where morphing artefacts live; a small self-luminous object is the easiest
+  possible tracking target. In the river shot this meant *the phone's screen is on* —
+  which was also more truthful and gave the edit its cut point.
+- **Let the camera not help.** A camera that anticipates an accident reads as staged,
+  and a move into geometry the plate never showed is the documented distortion case
+  `[yt]`. Locked off is both the safer and the more honest choice for anything
+  unplanned.
+- **When a shot needs a documented weakness, cut around it instead.** The fallback
+  for the river drop removes the water entry from frame entirely and cuts to a
+  different register for the underwater beat. The audience gets the full physics; the
+  model never renders it.
+
+### Ingredients: three slots, most important first
+
+**Ingredients is the high-control input mode** in Flow `[yt]`. Practical rules:
+
+- **Three reference images maximum** per generation in the Flow UI `[community]` —
+  note the API documents up to six `<IMAGE_REF_N>` slots `[vendor]`, so this ceiling
+  is a Flow-side limit and worth re-checking.
+- **Order matters — put the most important element first** `[community]`.
+- **Consistent look across ingredients helps the blend** `[community]`; mixing
+  registers gives the model a choice it will make badly.
+- **Every unnecessary ingredient is another thing to drift.** Leave slots empty.
+- **Do not cast Flow Characters into a shot with no face in frame.** It buys nothing
+  and adds a binding that can fail.
+
+Role-declaration syntax, **still `[untested]` in Flow's prompt box** — see
+[The `<FIRST_FRAME>` tag](#the-first_frame-tag--a-documented-binding-mechanism-vendor):
+
+```
+[# Sources <FIRST_FRAME>@Image1] [# References <IMAGE_REF_0>@Image2]
+```
+
+Until that is confirmed, the plain closing sentence `Use this image as the starting
+frame.` is still doing the work.
+
+### Multi-turn: one category per turn
+
+Consistent across sources and worth more than it sounds `[community]`:
+
+- **Split edits by category** — one turn for lighting, one for camera, one for
+  action, one for audio. Concentrating them in a single turn applies them all with
+  measurably lower control.
+- **End every edit turn with `Keep everything else identical.`** Without a
+  preservation clause Omni drifts on elements nobody asked it to touch — the same
+  finding as the `Keep [X, Y, Z] exactly the same` rule recorded above, generalised.
+
+### Sources for this section (2026-08-14)
+
+- **[Cinematic prompting for Gemini Omni Flash — Runware](https://runware.ai/docs/models/google-gemini-omni-flash/guides/cinematic-prompting) `[runware]`** — the most craft-useful single page found in either pass: the three-to-four-sentence scaffold, camera vocabulary first, name-the-action-not-the-mechanism, and the subtraction lever. New tier tag; it is a model-host's own doc, so above `[community]` and below `[vendor]`.
+- [Gemini Omni Flash keeps rejecting your prompts — Segmind](https://blog.segmind.com/gemini-omni-flash-keeps-rejecting-your-prompts-9-fixes-that-actually-work/) `[community]` — the `no`/`don't` backfire finding.
+- [Google Omni Prompting Guide — Promptslove](https://promptslove.com/blog/google-omni-prompting-guide/) `[community]` — world-knowledge grounding; the `Keep everything else identical` clause; per-category edit turns.
+- [Veo 3.1 Ingredients to Video](https://www.veo3ai.io/blog/veo-3-1-ingredients-to-video-guide-2026) `[community]` — three-ingredient ceiling, order matters. Describes the **Veo** path; assumed to hold for Omni, unconfirmed.
+- [AI Video Quality Checklist — Green Frog Labs](https://greenfroglabs.com/blog/ai-video-quality-avoid-slop-appearance) · [AI Slop: 12 Tells — Opus](https://www.opus.pro/blog/ai-slop-aesthetic-12-tells) `[community]` — the motion tells: morphing edges, *"mathematically smooth rather than physically real"* movement, floating objects, hand-heavy shots.
+- [DeepMind Omni prompt guide](https://deepmind.google/models/gemini-omni/prompt-guide/) · [Gemini API — Omni Flash](https://ai.google.dev/gemini-api/docs/omni) `[vendor]` — re-fetched and unchanged from the 2026-08-12 pass.
+
+**Everything in this section is `[untested]` against our own Flow session.** It is
+better-sourced than a guess and it explains an observed failure, which is why it is
+written down — but nothing here has been through the
+[calibration protocol](./README.md#calibration-protocol-how-untested-becomes-confirmed).
 
 ## Notes for BadCode `[untested]`
 
