@@ -345,3 +345,64 @@ Both were previously written from inference and both were wrong. The real shapes
 3. **Aspect ratio control** — got 1376×768 (≈16:9) by asking for "landscape"; confirm how
    to pin a target ratio/size for the comic page model.
 4. **Rate limits / session longevity** over a long batch.
+
+---
+
+## ⚠️ The 2026-08 redesign — three selectors that went stale in three days
+
+**Found live 2026-08-14**, while trying to cast `@Karen` into a plate. Every claim below was
+verified in the browser, not inferred. The mapped-2026-08-11 assumptions above held for
+**three days**; treat everything in this file as perishable and re-verify on any 90s timeout.
+
+**The new project shell** is a left nav — `All Media · Images · Videos · Characters · Scenes ·
+Uploads` — plus a prompt bar carrying `addAdd Media`, an `Agent` chip and a model chip
+(`Nano Banana 2 x4`). Nav buttons carry a material-symbols ligature inside their own text and
+have **hashed styled-components classes**, so text-filtering is the only stable handle:
+`button` filtered on `/^accessibility_new\s*Characters$/i`.
+
+### 1. Characters left the project root → `flow_list_characters` returned `[]`
+
+`a[href*="/character/"]` matches **nothing** on the project root now; the cards live behind the
+nav's **Characters** button. The scrape was correct and the navigation was wrong, so the tool
+reported an empty project — and an empty result is indistinguishable from "no characters".
+
+**This produced a real, confident, wrong conclusion:** a sweep of all seven projects reported
+that no Karen Character existed anywhere and proposed creating one, while Karen, Susan and
+Aarron sat in the project we had been given. **A `[]` from a character scrape is not evidence
+of absence.** Fixed by `ensureCharactersSection()` in `flow-client.ts`.
+
+### 2. `add_2 Create` still exists but no longer opens the asset picker
+
+The redesign kept a button whose accessible name matches `/add_2\s*Create/i` — it renders as
+`add_2Create`, no gap, so the existing regex matches — but it is no longer wired to the picker.
+`openAssetPicker` therefore counted a truthy trigger, **skipped its `@` fallback**, clicked the
+wrong thing and burned the full 90s timeout on every character and reference attach.
+
+> **The lesson worth keeping: counting a trigger is not evidence that it still does its job.**
+> Prove the *dialog*, not the button. The `@` route is now tried first and the button is the
+> fallback.
+
+The `@` dialog on the new layout (verified): a project dropdown, tabs `All / Images /
+Characters / Uploads` (**Videos and Voices are gone**), an `upload Upload media` button, a
+`Search assets` input and an `Add to Prompt` button. So `uploadBtn` survives as a readiness
+signal — it was never the broken part.
+
+`+` / `addAdd Media` is now a **creation menu** (`role="menu"`, not `dialog`): `Upload media ·
+Create Collection · Create Character · Create Scene`. Don't mistake it for the picker.
+
+### 3. `keyboard.type()` submitted a multi-line prompt line by line 💸
+
+The most expensive of the three. Both **cast** paths appended the prompt with
+`keyboard.type()`, which emits genuine key events — so every `\n` arrived as **Enter, and the
+prompt box submits on Enter**. A ~2,000-character house-style prompt fired as ~15 separate
+generations, one per line, each seeing only a fragment.
+
+The tell, and how to recognise it instantly: **the project fills with images titled after your
+own prompt's lines** — `"Optics with soft edges"`, `"Visible film grain and dust"`, `"Vibrant
+color palette with warm…"`. The returned "result" is whatever the last fragment produced, so it
+looks like a bad prompt rather than a broken client.
+
+Only the cast paths were affected; the uncast path already used `fill()`. Fixed with
+`appendPromptText()` → `keyboard.insertText()`, which dispatches one `input` event carrying the
+whole string and no keydown at all. `fill()` is still unusable there because it would wipe the
+character chip.

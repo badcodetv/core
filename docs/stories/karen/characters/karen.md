@@ -35,9 +35,11 @@ Full arc: [`../story.md`](../story.md#storyboard--scene-by-scene-video-canon).
 
 ## Flow Character
 
-**Flow Character:** name `TODO — exact tile name as it appears in Flow's picker` ·
-project `TODO` · **created by hand in Flow by Kai/Jack**, not by
-`flow_create_character`.
+**Flow Character:** name `Karen` ·
+id `f26355cb-f50c-4fba-a06b-60e226659ce0` ·
+project `da8feea7-0574-437b-8ff9-97da233a0a4f` (*"Aug 10, 12:51 PM"*) ·
+**created by hand in Flow by Kai/Jack**, not by `flow_create_character`.
+**Confirmed live 2026-08-14.**
 
 > **Why these prompts live here.** Flow's Character editor takes a **look**, a
 > **voice** and a **personality**, and takes **portrait + full-body** reference
