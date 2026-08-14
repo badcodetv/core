@@ -187,7 +187,16 @@ export class FlowClient {
    */
   private async ensureProjectRoot(): Promise<void> {
     await this.ensureProject()
-    if (/\/project\/[0-9a-f-]+\/?$/.test(this.page.url())) return
+    if (/\/project\/[0-9a-f-]+\/?$/.test(this.page.url())) {
+      // ⚠️ The URL alone stopped being proof that the compose bar is on screen (2026-08-14).
+      // The redesign's left-nav sections — Characters, Scenes, Uploads — swap the pane WITHOUT
+      // touching the URL, and the prompt box does not exist on them. `ensureCharactersSection()`
+      // leaves the page in exactly that state, so `listCharacters()` followed by any generate
+      // failed on a missing prompt box while the URL looked perfectly correct.
+      //
+      // Re-navigating is the reset: `goto` on the bare project URL lands back on All Media.
+      if (await this.promptBox().isVisible().catch(() => false)) return
+    }
     const m = this.page.url().match(/\/project\/([0-9a-f-]+)/)
     if (!m) throw new Error('NOT_IN_PROJECT')
     await this.page.goto(`${FLOW_URL}/project/${m[1]}`, { waitUntil: 'domcontentloaded' })
