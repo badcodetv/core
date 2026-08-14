@@ -321,14 +321,46 @@ Composition: 16:9. She sits left of centre. The bedroom falls away to the right.
 
 Action: her free hand is pushed up into her hairline at the temple. Her eyes are open and unfocused, looking at nothing across the room. She is halfway through a slow sigh.
 
-Location: an apartment bedroom, mid-morning. A bedside table holds a lamp, a half-drunk mug going cold, a paperback face-down and a tangled charger cable. Yesterday's jeans are on the floor where they were stepped out of. An olive suede bomber is slung over the back of a chair.
+Location: a small rented pre-war New York apartment bedroom, mid-morning. Ornate ceiling moulding and a picture rail thickened by many layers of paint. A painted cast-iron radiator under the window. Worn narrow-strip parquet floor. Through the half-open venetian blind, a black iron fire escape and the brick wall of the building opposite, close enough to touch. Mismatched second-hand furniture: a bentwood chair with an olive suede bomber slung over it, a chest of drawers that does not match the bedside table. Paperbacks stacked on the floor beside the bed. A trailing pothos on the windowsill. The bedside table holds a lamp, a half-drunk mug going cold and a tangled charger cable. Yesterday's jeans are on the floor where they were stepped out of.
 
-Light: a hard ladder of daylight through a half-open venetian blind camera-left, striping across the headboard and her arm. No other source. Uneven exposure, the window blown out behind the blind.
+Light: a hard ladder of daylight through the half-open venetian blind camera-left, striping across the headboard and her arm. No other source. Uneven exposure, the window blown out behind the blind.
 
 Style: a still from a 35mm independent film. Available light only. Hyper-realistic skin texture with visible pores and subtle imperfections. A faint smear on the lens, fine grain, subtle handshake blur.
 
-Constraints: sleep-creased t-shirt, hair flattened on one side. She is weary and patient rather than pained or contemptuous. Keep every label and book spine free of readable lettering.
+Constraints: sleep-creased t-shirt, hair flattened on one side. She is weary and patient rather than pained or contemptuous. Keep every label, book spine and poster free of readable lettering.
 ```
+
+### Susan's flat is not Karen's flat — round 3, at Kai's direction
+
+Round 2's bedroom was generic and read as the same flat as Karen's. **That flattens the
+one joke this pair of shots exists to tell.** Canon calls §2h.4 a *"mirror of the shot
+we just did with Karen"* — and the rhyme is supposed to live in the **camera**, not the
+room. Identical framing across two clearly different apartments is funny; identical
+framing across two identical rooms is just a repeated shot.
+
+**The class distance is already in canon and should be visible.** Karen is *"a rich
+middle-class American woman"* with a country-club register — cashmere, a luxury key fob,
+a structured leather handbag. Susan is late-30s New York, dry and lived-in: an olive
+suede bomber, jeans, brown leather sneakers. **She rents a pre-war walk-up.**
+
+The nine nouns that did the work, and they are all cheap:
+
+> painted **cast-iron radiator** · a **fire escape** and the brick wall of the building
+> opposite, close enough to touch · **worn parquet** · thick painted-over **ceiling
+> moulding** · a **bentwood chair** · **mismatched second-hand furniture** ·
+> **paperbacks stacked on the floor** · a **trailing pothos** · yesterday's jeans where
+> they were stepped out of
+
+**Save these for Karen's flat's opposite number.** Whatever her bedroom gets on a
+re-shoot should be expensively bland where this is characterful — the contrast is the
+point, and it costs nothing to write.
+
+> **⚠️ A prompt bug worth not repeating.** All three candidates put her **right** of
+> centre with the room falling **left** — the mirror of what the Composition line asked
+> for. That is not the model ignoring left/right (round 2 honoured it): it is that
+> `light … camera-left` and `she sits left of centre` were **fighting**, since obeying
+> both would have put her in front of the window. The model resolved it sensibly.
+> **When a placement instruction keeps flipping, check it isn't arguing with the light.**
 
 **Two notes for the next plate in this room.** Candidate **C** mirrored the composition
 (her right of centre, room falling left) and gave the *best* camera of the three — a
