@@ -2,7 +2,7 @@
 story: karen
 kind: record — prompts typed into Flow by hand, not a generation brief
 flow_project: TODO — exact project name as it appears in Flow
-updated: 2026-08-12
+updated: 2026-08-13
 ---
 
 # Karen — Flow image prompt ledger
@@ -1094,6 +1094,1171 @@ the source never showed" weakness.
 
 ---
 
+## 2e. The New York walk plates — super-8 register `[not yet fired]`
+
+**Written 2026-08-13. Briefs, not records** — replace each with what was actually
+typed once they have been run.
+
+Ten location stills of Karen crossing New York on foot, for the **music video** of
+[`songs/all-day-to-complain.md`](./songs/all-day-to-complain.md). They are the
+connective tissue the song already asks for and the ledger has never had: Verse 2
+is a list of places and dates (*"Regional office, Thursday. Rain on the glass…
+Borough office, Tuesday… State house, Friday"*), and Act 2's canon rule is that
+**time passes in the wide shots — rain → snow → sun**
+([`story.md`](./story.md), Act 2 formula, step 5).
+
+So the set is **a nine-month clock**. One plate per month, September to May, plus
+a tenth in hard June sun as the payoff. The weather is not decoration; it is the
+only thing in the frame that says nine months went by.
+
+> **These are the first §1 plates in this ledger that are ours rather than
+> Jack's.** §2.1–2.5 are a record of hand-typed work. This section is a brief in
+> the shape §2b/§2c/§2d established, and it is **owed the same treatment**:
+> overwrite it with what was actually pasted once it is fired.
+
+### The register, and why these are cast
+
+**These are §1 super-8 photoreal, not §1b illustrated.** That decides the casting
+question outright: `@Karen` **is** cast on every one of these, and **no prompt
+below describes her face**, per the rule in
+[`characters/karen.md`](./characters/karen.md). The §1b override — *describe the
+likeness in prose, do not cast* — is scoped to the flat graphic register, where
+the face carries no features. It does not apply here.
+
+The illustrated title-sequence plates (§2a, §2c) and these are **two different
+jobs in the same video**: the graphic register carries the titles and the hook,
+this one carries the story between them.
+
+### The engine: Nano Banana Pro, and a naming correction
+
+**There is no model called "Nano Banana Pro 2".** Checked 2026-08-13. The family
+is **Nano Banana 2** (Gemini 3.1 Flash Image) and **Nano Banana Pro** (Gemini 3
+Pro Image), both generally available; Pro is the reasoning/quality lane, NB2 the
+fast one ([Google Cloud](https://cloud.google.com/blog/products/ai-machine-learning/nano-banana-2-and-nano-banana-pro-are-generally-available/)).
+
+**Fire these on Nano Banana Pro**, and that is a reversal of the §2a/§2c default.
+Three reasons, and the first is already an open question in
+[`docs/google-flow/nano-banana-2.md`](../../google-flow/nano-banana-2.md):
+
+1. **NB2's default improvement direction fights this register.** A head-to-head
+   report has NB2 coming back *"too sharp… too overly contrast… almost
+   overexposed"* against Pro's *"a lot more natural"*. The §1 lock is soft edges,
+   gentle halation, deep-but-soft blacks and `no AI "hyper-sharp HDR" look` —
+   i.e. the exact axis NB2 pushes hardest on. **Consider this batch the
+   calibration run that answers that open question.**
+2. **Pro reads hex codes strongly**, NB2 only *"to a lesser extent"* — which is
+   the lever for holding a grade across ten plates, and the proposed fix for the
+   §2a.4 warmth drift.
+3. **Pro is the structure-and-reasoning tier.** These are ten compositions with a
+   named lens, a named crowd behaviour and a stated framing rule each. That is
+   what the Pro lane is for.
+
+**The cost, and it is real:** Pro exhausts Flow's rate limit far faster than NB2,
+which is why practitioners default to NB2 in Flow at all. Ten plates × 4
+candidates is where that will bite. **Fire the calibration plate first** (see
+*Fire order*), confirm the register, then run the rest.
+
+**Pro's context window is 65,536 tokens** — half NB2's. Irrelevant at this prompt
+length, but worth knowing before anyone bolts a JSON style token onto the front.
+
+**Live web search is wired into these models.** For §2c that was a drift risk; for
+naming real New York locations in the present day it is a *feature*, and it is
+part of why these prompts name actual places instead of describing generic ones.
+
+### Avoiding the AI-slop look — what the research changed
+
+Checked 2026-08-13. The consistent finding across the practitioner material is
+that slop is **a process failure, not a model failure**: strip out creative
+direction and the model falls back to the statistical average, which is centred,
+symmetrical, oversaturated, posed, and set nowhere in particular. The named
+signatures are all things a prompt can pre-empt
+([imagine.art](https://www.imagine.art/blogs/ai-slop-in-images-and-videos),
+[Miraflow](https://miraflow.ai/blog/how-to-make-ai-images-look-like-real-photos-prompt-tricks),
+[Imagera](https://imagera.ai/blog/make-ai-images-look-real-2026)):
+
+| Signature | What produces it | The counter used below |
+|---|---|---|
+| Centred, symmetrical framing | no stated composition | she is held a third off-centre, weight carried by the architecture |
+| The frozen portrait | "smiling at camera" | mid-stride, weight on one foot, eyeline off-frame |
+| Waxy, noiseless perfection | no grain or ISO named | the §1 lock already does this — do not weaken it |
+| Oversaturated sheen | vivid colour words | restrained colour words in the scene; the vibrancy stays a *stock* property |
+| Nowhere-in-particular settings | "urban background" | a named street, a named material, a named piece of wear |
+| Over-rendered digital-art look | `hyperrealistic, 8K, masterpiece` | **not one of those words appears below** |
+| Impossible/perfect light | "beautiful lighting" | one stated source, one stated weather, per plate |
+
+**Two of these need saying out loud because they cut against instinct:**
+
+- **"Cinematic" is a slop word on its own.** The advice is explicit — replace
+  buzzwords like *cinematic* and *photorealistic* with a concrete reference
+  (*"1970s European commercial photography"*). Every plate below names a lens, a
+  camera position and a shutter behaviour instead. The word *cinematic* appears
+  in this section's prose and in **none** of its prompts.
+- **Do not answer slop with a long negative list.** NB2/Pro honour targeted
+  negations, but **long exclusion stacks dilute** — the finding §2c already
+  adopted. So the anti-slop material below is written **positively**, with a
+  single short negative clause at the end.
+
+### ⚠️ The one live tension: `vibrant` vs `restrained`
+
+**The §1 lock says `punchy, vibrant palette` and `vibrant colours`. The
+anti-slop research says vivid colour words are what produce the plastic
+oversaturated sheen.** These pull against each other and it would be dishonest
+not to flag it.
+
+**The resolution adopted here: the vibrancy is a property of the *stock*, the
+restraint is a property of the *scene*.** The lock keeps its words untouched —
+it is a restore point and character-for-character fixed — and the candid clause
+governs the subject matter, the weather and the light. A punchy film stock
+photographing a grey wet street gives you a grey wet street with body in it. A
+punchy film stock photographing a "vibrant bustling city" gives you slop.
+
+**If plates come back candy-coloured anyway**, the fix is the untested lever from
+§2c and this is the batch to try it on: **append a hex pin** rather than editing
+the lock — Pro reads hex strongly. Do it on one plate and compare.
+
+> ### How to fire any of these
+>
+> **Four parts, in this order.** The first three are identical every time; only
+> part 4 changes.
+>
+> 1. the **cast + series instruction** below;
+> 2. the **§1 STYLE LOCK** block, [verbatim](#1-the-style-lock);
+> 3. the **CANDID CLAUSE** below, verbatim;
+> 4. the **scene block** under each heading.
+>
+> **Part 1 — cast, use case, series and wardrobe:**
+>
+> ```prompt
+> Cast: @Karen.
+>
+> Use the attached Karen Character reference for her identity and wardrobe only. Take the location, the framing, the light and the weather entirely from the description below.
+>
+> This image is one still in a set of ten present-day New York location plates for a music video, in which the same woman crosses the city on foot over nine months. Maintain visual identity across the whole set: the same woman, the same core wardrobe, the same film register.
+>
+> Wardrobe, constant in every plate: a cream blouse, a camel cashmere cardigan, tailored high-waisted charcoal trousers, low-heel leather flats, and a large structured leather handbag carried on one forearm. Only the outer layer changes, with the weather stated in the scene.
+> ```
+>
+> Three vendor-documented moves are doing work there: **naming the use case**
+> (the model makes "a thousand small decisions" off it), **stating series
+> membership** in prose, and **naming what the reference contributes** — the
+> relationship instruction is the load-bearing middle term of Google's own
+> reference-image template. See
+> [`docs/google-flow/nano-banana-2.md`](../../google-flow/nano-banana-2.md).
+>
+> **The wardrobe clause is deliberately split.** The core outfit is fixed so the
+> ten plates read as one woman on one errand; the **outer layer is the clock**.
+> Cardigan alone in September, overcoat by December, cardigan again in May. That
+> is the same device as the canon weather rule, worn instead of filmed.
+>
+> **Part 3 — the CANDID CLAUSE.** New in this section, and the whole anti-slop
+> payload. Paste it verbatim, the same way the locks are pasted:
+>
+> ```prompt
+> CANDID CLAUSE (keep identical every time):
+>
+> Framing: hold her about a third in from one edge of the frame and let the architecture carry the weight of the composition. Let one foreground element cross the lens, and let bystanders be cut by the frame edges.
+>
+> Moment: catch her mid-stride with her weight on one foot, her coat and hair still moving, and her eyeline off-camera on something outside the frame. She is walking somewhere, unaware of the lens.
+>
+> People: everyone else is indifferent and busy with their own errand. Nobody looks at her and nobody looks at the camera; faces are turned away, distant or in profile.
+>
+> Surfaces: the city is worn in — salt-stained kerbs, patched asphalt, gum-flecked stone, scaffolding pipe, weathered paint, blank taped-over hoardings.
+>
+> Optics: allow a trace of motion blur at her hands, faint colour fringing at high-contrast edges, and focus that sits on her and falls off honestly everywhere else.
+>
+> Restraint: keep the colour of the scene itself restrained and the light ordinary for the weather stated below. This is a frame pulled from a documentary.
+>
+> Not a posed portrait, not a stock photograph, not symmetrical.
+> ```
+>
+> The last line is the entire negative budget for the prompt. **Do not extend
+> it** — that is the diluting shape.
+>
+> **Flow settings:** landscape, **16:9**, 4 candidates, **Nano Banana Pro**. Every
+> block restates the ratio in prose, which the guides recommend even when the UI
+> already sets it. 21:9 is available and would match §2.6, but the music video
+> cuts 16:9 — pick one and hold it across all ten.
+>
+> **No legible text in any plate.** Standing rule (§1), and it is doing heavy
+> lifting here: Grand Central's boards, Wall Street's plaques and Midtown's
+> avenue signage are all text minefields. Every block below blanks them.
+
+### The shot list
+
+Each plate is a month, a location, a lens and one composition rule. The
+composition rule is the anti-slop content — it is what stops the model handing
+back the postcard version of a famous place.
+
+| # | Month | Where | The shot | The rule |
+|---|---|---|---|---|
+| 2e.1 | Sept | Grand Central concourse | 135mm from the west balcony, 1/15s | she is the one legible figure in a field of smear |
+| 2e.2 | Oct | Wall Street canyon | 200mm compression, straight down the street | half-occluded by passing shoulders |
+| 2e.3 | Nov | Civic colonnade, Foley Square | 35mm dolly alongside her | columns strobe the foreground as a natural wipe |
+| 2e.4 | Dec | Staten Island Ferry, stern deck | 50mm handheld, from behind and low | the skyline is small, grey and leaving |
+| 2e.5 | Jan | Roosevelt Island tram | 28mm from the back of the cabin | the window does the moving, not the camera |
+| 2e.6 | Feb | Coney Island boardwalk | 85mm long lens down the boards | backlit, empty, off-season |
+| 2e.7 | Mar | Brooklyn Bridge promenade | 24mm at plank level | she enters as legs and a coat hem; the tower is cropped |
+| 2e.8 | Apr | Elevated 7 platform, Queens | 35mm low, down the platform | she is small; Manhattan is smaller |
+| 2e.9 | May | Central Park, the Mall | 50mm static at path level, she exits frame | the dapple lands on the path, not on her |
+| 2e.10 | June | Fifth Avenue crosswalk | 40mm handheld from inside a moving cab | shot through a door frame and a mirror |
+
+**Reserve locations, no prompt written** — the obvious next ten if this set
+lands: the High Line, Washington Square arch, Bethesda Terrace arcade, a subway
+stair emerging into daylight, the Queensboro Bridge underside, the Whitehall
+ferry terminal ramp, a Midtown steam stack, Times Square (**text minefield —
+only with every fascia blown to unreadable glare**), the Oculus, a Harlem
+brownstone stoop in rain.
+
+---
+
+### 2e.1 Grand Central — the long diagonal · September
+
+The first rung, and the only plate where she is *inside* the machine rather than
+walking between its buildings. The device is old and it still works: everybody
+smears, one person doesn't.
+
+The postcard version of this room is the sun shafts landing centre-frame on the
+marble. **This prompt puts them behind her on purpose.**
+
+```prompt
+SCENE:
+
+Subject: a woman crossing the main concourse of Grand Central Terminal at the morning rush, seen from the west balcony above.
+
+Action: she walks one unbroken diagonal across the marble at a steady, purposeful pace, handbag on her forearm, chin level, her eyeline fixed on something out of frame ahead of her, while every other commuter around her changes direction and dissolves into streaks.
+
+Environment: the concourse floor in early September, the painted ceiling cropped away by the top of the frame, the brass information clock sitting off to one side rather than centred, a cleaner's cart parked against a pillar, ticket windows dark.
+
+Camera: 135mm long lens from the balcony, looking down at about thirty degrees, locked off on a tripod at one-fifteenth of a second so the crowd smears and she survives as the one legible figure, carrying her own trace of blur at the hands and feet.
+
+Lighting: the high south windows throw thin dusty shafts that land on the floor well behind her; the concourse itself is lit flat and warm by its own chandeliers, and she walks through that flat light rather than through a beam.
+
+Details: keep every departure board, sign and ticket window blank and unreadable; the marble is scuffed and gum-flecked; a wheeled suitcase and two turned backs cross the lower foreground; she wears the cardigan with no coat, because it is still warm.
+
+Compose for a 16:9 frame.
+```
+
+### 2e.2 Wall Street — the canyon, compressed · October
+
+The money rung. A 200mm from a long way down the street stacks the facades flat
+and turns the crowd into a wall she has to come through — which is the song's
+whole mechanism in one lens choice.
+
+```prompt
+SCENE:
+
+Subject: a woman walking toward camera along a narrow Financial District street in Lower Manhattan, in the middle of the morning crowd.
+
+Action: she walks straight at the lens at her own pace while the crowd flows around and past her, her handbag held against her body, one hand keeping her coat shut, a folded envelope in the other hand.
+
+Environment: a tight stone street canyon in October rain, the facades stacked flat by the long lens, scaffolding pipe and plywood hoarding running down one side, wet black asphalt, a road stack venting steam that drifts across the frame between her and the camera.
+
+Camera: 200mm telephoto from far down the street at chest height, hand-held, the compression flattening a whole block into layers behind her.
+
+Lighting: flat grey overcast with no sun anywhere in the frame; the only warm points are a traffic signal and its long smeared reflection in the wet road.
+
+Details: umbrellas at several heights, a steel police barrier at the kerb, blank taped-over hoardings, and passing shoulders crossing the foreground so she is briefly half-hidden; keep every sign, plaque and awning free of readable lettering.
+
+Compose for a 16:9 frame.
+```
+
+### 2e.3 The civic colonnade — Foley Square · November
+
+**The bureaucracy rung, filmed literally.** A dolly alongside her past a civic
+colonnade gives you a light-and-shadow wipe every time she passes a column — the
+same device as the §2c light-wedge wipe, arrived at through architecture instead
+of grading.
+
+```prompt
+SCENE:
+
+Subject: a woman walking the full length of a civic colonnade outside a large government courthouse building in Lower Manhattan, seen from the side.
+
+Action: she walks steadily in profile, handbag on her forearm, coat open, taking the steps at the end of the colonnade without breaking stride.
+
+Environment: a deep stone colonnade of tall square columns in mid-November, the plaza and bare plane trees of the square visible between the columns, wet leaves flattened on the stone, a metal barrier stacked against a wall.
+
+Camera: 35mm on a dolly running alongside her at exactly her walking pace, at chest height, so the near columns sweep through the foreground and briefly black out the frame between each one.
+
+Lighting: low late-autumn sun raking straight down the length of the colonnade, laying hard bars of light and shadow across her one after another as she passes each column.
+
+Details: she wears a charcoal wool overcoat over the cardigan now; two figures in suits stand talking at the far end with their backs turned; keep every plaque, notice board and door free of readable lettering.
+
+Compose for a 16:9 frame.
+```
+
+### 2e.4 The Staten Island Ferry — the skyline leaving · December
+
+**Fire this one first.** One figure, no crowd, no text, one weather — it is the
+cleanest possible read on whether the Pro register and the candid clause are
+doing their jobs, before ten plates' worth of rate limit goes out the door.
+
+The orange of the ferry is the single saturated accent, which is the rule §2c
+watched propose itself. Let it be the only strong colour in the frame.
+
+```prompt
+SCENE:
+
+Subject: a woman on the open stern deck of the Staten Island Ferry, seen from behind and slightly below.
+
+Action: she walks the length of the empty deck away from camera toward the stern rail, coat and hair taking the wind sideways, one hand steadying the handbag on her forearm.
+
+Environment: the open orange-painted steel stern deck in December, chipped paint and rust bloom along the welds, a chain slung across a gap in the rail, wooden benches bolted to the deck, Lower Manhattan pulling away behind her as a low grey band on pewter water, gulls holding station off the stern.
+
+Camera: 50mm, hand-held at waist height a few metres behind her, slightly low, with a little natural sway in the frame.
+
+Lighting: flat winter overcast with no sun and no horizon glow; the light is even, cold and directionless, and the orange steel is the only strong colour in the frame.
+
+Details: she wears a charcoal wool overcoat buttoned over the cardigan; two other passengers sit at the far end of a bench with their backs turned and their hoods up; salt spray dries in pale streaks on the deck; keep every notice, sign and life-ring free of readable lettering.
+
+Compose for a 16:9 frame.
+```
+
+### 2e.5 The Roosevelt Island tram — January
+
+The one plate where **the window moves and the camera doesn't** — a rest beat in
+a set of walks, and a shot almost nobody uses.
+
+```prompt
+SCENE:
+
+Subject: a woman inside the Roosevelt Island aerial tram cabin, seen from the back of the cabin at standing height.
+
+Action: she moves down the length of the cabin toward the front glass, one hand travelling along the overhead pole to steady herself as the cabin sways, the other holding her handbag against her hip.
+
+Environment: the tram cabin in January, condensation and snowmelt beaded on the windows, the Queensboro Bridge's steel sliding past outside, the East River flat grey a long way below, six or seven other riders standing and sitting in heavy coats.
+
+Camera: 28mm from the rear of the cabin at standing eye height, hand-held, the cabin's own frame and pole running through the foreground.
+
+Lighting: dull overcast daylight coming through fogged glass, topped up by the cabin's own cold strip light in the ceiling.
+
+Details: she wears the charcoal overcoat with the collar up; one rider is asleep against the glass, another faces away out of the far window; wet footprints on the floor; keep every notice, map and panel in the cabin free of readable lettering.
+
+Compose for a 16:9 frame.
+```
+
+### 2e.6 Coney Island boardwalk — February
+
+*"Sun, snow, sun again, and not one word."* The bridge line, given a picture. An
+off-season boardwalk is the least AI-postcard version of New York available, which
+is exactly why it belongs in the set.
+
+```prompt
+SCENE:
+
+Subject: a woman walking toward camera along an empty Coney Island boardwalk in deep winter.
+
+Action: she walks the boards straight at the lens with her coat held shut against the wind, her breath visible, handbag on her forearm, not hurrying.
+
+Environment: the boardwalk in February, concessions shuttered behind blank roll-down steel, the Wonder Wheel's bare steel far out of focus behind her, scraped snow pushed into grey ridges along the rail, dry sand blown in fans across the planks, one gull on a post.
+
+Camera: 85mm long lens from far down the boards at chest height, hand-held, so the shuttered fronts compress into a wall behind her.
+
+Lighting: hard low winter sun coming from behind her, backlighting her breath and the blown sand and putting the boards themselves in shadow, with the front of her coat in soft bounce from the snow.
+
+Details: she wears the charcoal overcoat over the cardigan, scarf, no hat; the planks are split and silvered with old nail heads standing proud; keep every shutter, kiosk and signboard free of readable lettering.
+
+Compose for a 16:9 frame.
+```
+
+### 2e.7 Brooklyn Bridge — from the planks · March
+
+The most-photographed walkway in the world, so the whole job of this prompt is to
+**refuse the centred symmetrical tower shot**. Camera on the deck, tower cropped,
+her entering as a coat hem before she is a person.
+
+```prompt
+SCENE:
+
+Subject: a woman walking the wooden promenade of the Brooklyn Bridge, seen from almost down at plank level.
+
+Action: she enters the frame from the left and walks across it, so she reads first as low-heeled shoes, a coat hem and a handbag before the rest of her arrives in shot.
+
+Environment: the promenade in wet March, worn dark timber planks running away underfoot, the suspension cables converging overhead and out of the top of the frame, one stone tower cropped hard by the right-hand frame edge, cyclists and a jogger cut by the edges of the frame.
+
+Camera: 24mm wide angle set almost on the deck, tilted slightly up, locked off, with the near planks huge and soft in the foreground.
+
+Lighting: flat grey daylight with the sky blown to plain white between the cables and no sun visible; the timber holds most of the tone in the frame.
+
+Details: she wears the charcoal overcoat, hem wet at the back; puddles stand between the planks and hold the cable pattern; chewing gum and old tape marks on the boards; keep every plaque, banner and bike marking free of readable lettering.
+
+Compose for a 16:9 frame.
+```
+
+### 2e.8 The elevated platform, Queens — April
+
+The rung where she is furthest from power and it shows: **she is small in the
+frame and Manhattan is smaller still**, a serrated band on the horizon she has
+been phoning for seven months.
+
+```prompt
+SCENE:
+
+Subject: a woman walking the length of an outdoor elevated subway platform in Queens at dusk, seen from the far end of the platform.
+
+Action: she walks away from the camera down the middle of the empty platform toward the far stairs, small in the frame, handbag on her forearm.
+
+Environment: an elevated platform in April, a steel canopy on riveted stanchions with peeling green paint, the tracks running away on both sides, low brick and vinyl-sided blocks below, and the Manhattan skyline far behind as a small serrated band on the horizon.
+
+Camera: 35mm at hip height from the opposite end of the platform, locked off, the canopy stanchions receding in a row down one side of the frame.
+
+Lighting: the last of the blue dusk in the sky with the platform's own sodium fixtures just coming on warm, one of them flickering, so the platform is amber and everything beyond it is blue.
+
+Details: she wears the cardigan with a light raincoat over it now; one other passenger sits far down a bench facing away; a discarded coffee cup by a stanchion; keep every sign, board and train front free of readable lettering.
+
+Compose for a 16:9 frame.
+```
+
+### 2e.9 Central Park — the Mall · May
+
+Nine months in, and the first frame with anything green in it. **Dappled light is
+the highest slop risk in the set** — every model in the world wants to bathe her
+in it — so the prompt puts the dapple on the path and lets it clip her shoulder
+only.
+
+```prompt
+SCENE:
+
+Subject: a woman walking the elm tunnel of the Mall in Central Park, passing close to a camera set low at the edge of the path.
+
+Action: she walks past the lens from left to right at her own pace and is already halfway out of the right-hand side of the frame, still in mid-stride, handbag swinging slightly.
+
+Environment: the Mall in May, the double rows of old elms arching over the path in full leaf, cast-iron benches down both sides, a dog walker and two people on a bench well behind her, the path's hexagonal pavers worn smooth.
+
+Camera: 50mm set low at knee height at the edge of the path, locked off, so she crosses close to the lens and the tunnel of elms runs away long behind her.
+
+Lighting: high midday sun broken into hundreds of small moving patches by the canopy, landing almost entirely on the path and the benches, with only one patch clipping her shoulder as she passes.
+
+Details: she wears the cardigan again with no coat, sleeves pushed up; last autumn's leaf litter still packed under the benches; keep every plaque, bin and lamp post free of readable lettering.
+
+Compose for a 16:9 frame.
+```
+
+### 2e.10 Fifth Avenue, through a cab window — June
+
+The payoff plate, and the only one shot from a vehicle. **Foreground depth is the
+single most reliable anti-slop device** — a door frame and a wing mirror sitting
+soft in front of the shot is something a generated image almost never volunteers.
+
+```prompt
+SCENE:
+
+Subject: a woman crossing a wide Midtown avenue in a crowd of pedestrians, seen from inside a moving yellow taxi.
+
+Action: she strides across the crosswalk in the middle of the crowd, half a pace ahead of everyone around her, coat over her forearm, handbag in the other hand.
+
+Environment: a Fifth Avenue crossing in hard June sun, the crowd stepping off both kerbs at once, a cyclist cutting through the near lane, heat shimmer standing off the asphalt, tall facades running away up the avenue behind her.
+
+Camera: 40mm hand-held from the rear seat of a moving taxi, shooting out through the open window, so the cab's door frame runs down one side of the shot and the wing mirror sits large and soft in the near foreground.
+
+Lighting: high hard summer sun almost overhead, dropping short black shadows straight down under everyone, with one hot reflection sliding across the glass at the edge of the frame.
+
+Details: she wears the cream blouse and the cardigan tied at her shoulders, sleeves pushed up; the crowd is dressed for heat and nobody is looking anywhere but forward; keep every street sign, awning, bus flank and shop front free of readable lettering.
+
+Compose for a 16:9 frame.
+```
+
+### Fire order
+
+1. **2e.4 (the ferry) first — it is the calibration run, not just a plate.** One
+   figure, one weather, no crowd, no text. If Pro's register is right and the
+   candid clause is landing, it will show here with nothing else to blame.
+2. **2e.6 (Coney Island)** — the second-simplest, and it confirms that hard
+   backlight survives the §1 lock's `preserve highlight detail` clause.
+3. Then **2e.3, 2e.8, 2e.7, 2e.5, 2e.9** in any order.
+4. **2e.2 and 2e.10 late** — dense crowds close to the lens are where hands and
+   faces go wrong, and both are in text-heavy parts of the city.
+5. **2e.1 (Grand Central) last, and expect to rewrite it.** It is the most famous
+   interior in the set, the most text-dense, and the only one asking the model to
+   hold one figure sharp inside a long-exposure smear. **Two regenerations, then
+   rewrite** — the standing rule from §2c.
+
+### What to watch, and what it would prove
+
+- **Does Pro hold the soft register where NB2 over-sharpens?** This is the
+  standing open question in
+  [`nano-banana-2.md`](../../google-flow/nano-banana-2.md). Ten plates is a real
+  answer to it.
+- **Does the candid clause survive the style lock?** The lock says *vibrant*; the
+  clause says *restrained*. If plates come back candy-coloured, the clause lost —
+  and the hex pin is the next lever, appended, never written into the lock.
+- **Does `@Karen` hold across ten locations, ten weathers and two outer layers?**
+  If wardrobe drifts, the fix is the shorter-prompt finding from
+  [`nano-banana-2.md`](../../google-flow/nano-banana-2.md), not a longer wardrobe
+  paragraph.
+- **Does the off-centre instruction actually take?** It is the one anti-slop
+  clause with no fallback if the model ignores it — everything else can be
+  graded, cropped or reshot.
+
+### The clips these become
+
+**No clip prompts are written yet.** When they are, they follow §2d's shape and
+its one hard-won correction — **the guiding instruction goes on the last line** —
+and the walking action is the safest possible ask of a video model (the §2a.4
+finding). The obvious moves: 2e.3 and 2e.10 are already camera moves and want
+the plate's own motion continued; 2e.1, 2e.4 and 2e.9 want to be locked off and
+let her do the moving.
+
+---
+
+## 2f. Clip prompts for the §2e walk plates — Gemini Omni Flash `[not yet fired]`
+
+**Written 2026-08-13. Briefs, not records** — replace each with what was actually
+typed once they have been run.
+
+**Ten plates came back and they are the ten clips below**, in the order they were
+harvested. Two housekeeping facts before anything else:
+
+- **§2e is still marked `[not yet fired]` above and that is now wrong.** Ten
+  finished frames exist. The briefs in §2e are owed the same overwrite §2.6 got:
+  paste what was actually typed.
+- **2f.1 is a plate the §2e shot list never had** — a snow-and-slush street with a
+  scaffolding pipe across the frame. It is a good frame and it slots straight into
+  the winter run. Note also that she is in the **cardigan with no coat** in it,
+  which puts it out of step with the wardrobe clock (§2e Part 1); the clip below
+  does not try to fix that, because **a clip never fights its own plate**.
+- The plate that did **not** come back is the civic colonnade (§2e.3). If it gets
+  re-run, its clip is the easy one: the plate is already a dolly, so the clip is
+  *continue the move at the same pace*.
+
+**Model: Gemini Omni Flash, in Flow.** Same path as §2b/§2d. **30 credits per 10s
+clip**, so **the full set is ~300 credits**, and blocked generations still consume
+credits with no automatic refund
+([`omni-flash.md`](../../google-flow/omni-flash.md)).
+
+### Ingredients, not Frames — and how these get fired
+
+Checked 2026-08-13. Google's own Flow help splits the input modes cleanly:
+**Frames to Video** takes start/end images; **Ingredients to Video** exists so you
+"consistently use the same images for your character and key objects from one clip
+to the next", and you feed it by **dragging media into the prompt box or typing
+`@` to reference an uploaded asset**
+([Flow help](https://support.google.com/flow/answer/16353334)). Its two stated
+rules matter here:
+
+1. **Prepare clean ingredients.** The plates are clean — they are finished,
+   graded, single-subject frames.
+2. **Avoid conflicting guidance between text and visuals.** This is the load-bearing
+   one, and it is why **no prompt below re-describes what the plate already shows.**
+   The word budget goes on motion, timing and audio — the three things the still
+   cannot carry. Re-describing the frame is how you talk the model into redrawing it.
+
+> **How to fire any of these**
+>
+> 1. **Video tab → model picker → Gemini Omni Flash.** Confirm it; Flow's default
+>    model has moved before.
+> 2. **Drag the plate into the prompt box** (or `@` it if it is already uploaded).
+>    That is the ingredient.
+> 3. **Paste the block.** Nothing else — no style lock, no candid clause. Both of
+>    those are *image* instruments and both are already baked into the plate. On
+>    Omni they would be forty words of dilution.
+> 4. **Cast `@Karen` only if identity drifts.** Not by default. The plate already
+>    carries her, and adding a second visual source is exactly the "conflicting
+>    guidance" the vendor doc warns about. If a clip comes back with her face
+>    rebuilt, add the Character tile as a second ingredient and re-fire — that is
+>    the documented purpose of the consistency layer, and it is the lever, not the
+>    default.
+> 5. **16:9, one clip at a time**, and poll for completion. A queued clip looks
+>    like a failure; a real failure reads *"Oops, something went wrong!"*.
+>
+> **Never described in any block below: her face.** Standing rule
+> ([`characters/karen.md`](./characters/karen.md)), and on this engine it is also
+> just good practice — faces and fine hand articulation are the two documented
+> artefact sources, and every one of these plates already frames around them.
+
+### The shape, and the one thing that changed from §2d
+
+Same six-part shape §2d settled on, with the guiding instruction **last** — the
+correction §2d bought and has still not spent:
+
+1. **shot lock** — duration, ratio, *one continuous shot, no cuts*, **and speed**;
+2. **camera** — one of Omni's parsed camera words, or *locked off*;
+3. **one action**, hers, resolving inside ten seconds;
+4. **one ambient motion**, and where it helps, **one thing named as holding still**;
+5. **preserve clause** — `Keep [X, Y, Z] exactly the same.`;
+6. **audio**, named, ending `no dialogue`;
+7. **`Use this image as the starting frame.`**
+
+**What is new in this set is item 4 and the word `real speed` in item 1.** Both are
+the live-action tax. §2b and §2d animate flat graphics, where nobody can tell how
+heavy a thing is; these are photographs of a woman walking, and **weight is the
+entire game**.
+
+### Avoiding the AI-slop look in motion — what the research changed
+
+Checked 2026-08-13, and the finding is the same one §2e landed on from the stills
+side: slop is a process failure. The video tells are different tells, though, and
+they are all things a prompt can pre-empt
+([Green Frog Labs](https://greenfroglabs.com/blog/ai-video-quality-avoid-slop-appearance),
+[Opus](https://www.opus.pro/blog/ai-slop-aesthetic-12-tells),
+[Magic Hour](https://magichour.ai/blog/realistic-ai-video-prompting)):
+
+| Tell | What produces it | The counter used below |
+|---|---|---|
+| Weightless, gliding walk | gait never specified | `weight transferring foot to foot` — named in every walking clip |
+| Everything drifts into slow motion | speed never specified | `at real speed`, in the opening sentence |
+| The whole frame animates at once | every element implicitly in play | **one** action, **one** ambient motion, and often one thing named as *not* moving |
+| Glassy robotic camera glide | camera unspecified | `locked off`, or handheld with the sway named — Omni's own vocabulary |
+| Sterile silence, or a stock score | audio unprompted; Omni picks its own | a named ambient stack per clip, room tone first |
+| Morphing faces and hands in crowds | crowd asked to perform | crowds are named as continuing, never as doing; no hand articulation is asked for anywhere |
+| The frame quietly re-styled | no keep-list — **the Omni-specific one** | a per-clip preserve clause naming the grade and the wardrobe |
+| It cuts to a different shot | **Omni defaults to cutting** | `one continuous shot, no cuts`, first line, every time |
+
+**Two things worth saying plainly.**
+
+- **There are no negative prompts on this engine** — the API does not accept them
+  ([`omni-flash.md`](../../google-flow/omni-flash.md)). So every anti-slop item
+  above is written **positively**. The only negations in the whole set are
+  `no cuts` and `no dialogue`, both of which are instructions rather than
+  exclusions.
+- **The word `cinematic` appears nowhere below**, same rule as §2e. Nor do
+  `hyperrealistic`, `8K` or `masterpiece`. The register is already in the plate;
+  asking for it again in adjectives is how you lose it.
+
+**The ~50-word ceiling, and these blow through it.** They run **80–98 words** —
+worse than §2d's 55–65, and worth being honest about rather than quietly hoping.
+Two things pushed them up and both are live-action costs: the preserve clause has
+to name a *photographic* grade rather than "the flat illustrated style", and item
+4 (the ambient motion) simply did not exist in the graphic sets. Everything that
+could be cut has been: **no block below re-describes its own plate**, which is
+where the first draft's extra fifteen words went.
+
+**If clips come back soft or drifting, shorten in this order** and change nothing
+else:
+
+1. **the preserve clause**, down to `Keep the film grain, the light and her clothes
+   exactly the same.` — §2d's rule, and it buys ~12 words;
+2. **the ambient motion sentence** — the clip gets duller, but it survives;
+3. **the audio line**, down to two named sounds.
+
+**Never the shot lock.** `one continuous shot, no cuts` is what stands between us
+and Omni's default, which is to cut.
+
+---
+
+### 2f.1 The snow street — the unlisted plate
+
+Three blurred pedestrians already cross this frame, so the ambient motion is free:
+they clear the lens and the street keeps going. Locked off, because the foreground
+crossings only read as accidental if the camera is not chasing them.
+
+```prompt
+Create a 10-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off. She keeps walking in profile at the same steady pace, her weight transferring foot to foot. The blurred pedestrians cross the lens and clear it, and fine snow keeps falling. Keep the film grain, the flat grey winter light, her camel cardigan and the scaffolding pipe across the frame exactly the same. Slush underfoot, muffled traffic and cold wind, no dialogue. Use this image as the starting frame.
+```
+
+### 2f.2 Grand Central — the long diagonal
+
+**Fire this one last and expect trouble.** The plate's whole conceit is a
+*shutter* artefact: a one-fifteenth-of-a-second exposure that smears a crowd
+around one sharp woman. Video has no such shutter. Asked to animate it, the
+honest prediction is that Omni resolves the smear into ordinary sharp commuters
+and the idea evaporates.
+
+The prompt below asks for the smear explicitly, in the preserve clause, which is
+the only lever available. **If it loses, do not spend three more generations on
+it** — hold the plate as a still in the edit and put a slow digital push on it.
+A long-exposure photograph is allowed to stay a photograph.
+
+```prompt
+Create a 10-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off from the balcony. She keeps walking her diagonal at the same steady pace while every other commuter stays a moving blur around her. The cleaner's cart does not move. Keep the long-exposure smear on the crowd, the warm chandelier light and her camel cardigan exactly the same. A vast echoing concourse, footsteps and rolling luggage, no intelligible speech. Use this image as the starting frame.
+```
+
+### 2f.3 Wall Street — the canyon
+
+The steam is the gift here: it is the one element that can move a lot without
+anyone being able to say it moved wrongly. Handheld, barely — a 200mm handheld
+drifts, and that drift is worth more than any specified move.
+
+```prompt
+Create a 10-second 16:9 video, one continuous shot, no cuts, at real speed. Handheld on a long lens with a slight drift. She keeps walking toward the camera through the crowd, her weight transferring foot to foot. The steam keeps drifting across the street between her and the lens and the rain keeps falling. Keep the flat grey overcast, the red signal reflections in the wet road, her dark coat and the white envelope in her hand exactly the same. Rain on umbrellas, wet tyres and distant traffic, no dialogue. Use this image as the starting frame.
+```
+
+### 2f.4 The ferry — the skyline leaving
+
+**The one clip with a real ending.** She reaches the rail and stops, which gives
+the edit a natural out at ten seconds instead of a fade. The gulls hold station,
+which is what gulls behind a ferry actually do — and it is a motion Omni can hardly
+get wrong.
+
+```prompt
+Create a 10-second 16:9 video, one continuous shot, no cuts, at real speed. Handheld behind her with a little natural sway. She walks the last steps to the stern rail and stops there, her hair and cardigan taking the wind sideways. The gulls hold station off the stern and the skyline recedes very slowly. Keep the orange deck steel, the flat cold overcast, the pewter water and her camel cardigan exactly the same. Wind across the deck, engine drone, gull calls and water, no dialogue. Use this image as the starting frame.
+```
+
+### 2f.5 Coney Island — the boardwalk
+
+**The Wonder Wheel is named as still on purpose.** It is off-season and it should
+not be turning — and a big rotating structure in the background is exactly the
+detail a video model volunteers unasked. Her breath is the anti-slop payload:
+cold air is a physics tell that reads instantly.
+
+```prompt
+Create a 10-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off on a long lens far down the boards. She keeps walking toward the camera, her breath clouding in the cold and her weight transferring foot to foot. Blown sand drifts across the planks and the gull shifts on its post; the Wonder Wheel does not turn. Keep the hard low backlight, the shuttered steel fronts and her dark overcoat and scarf exactly the same. Wind, distant surf and creaking boards, no dialogue. Use this image as the starting frame.
+```
+
+### 2f.6 Brooklyn Bridge — from the planks
+
+**Fire this one first.** No face in the frame at all, one motion, everything else
+architecture. It is the cheapest possible read on whether Omni holds the plate's
+grade and its plank-level geometry before 300 credits go out the door — and if it
+comes back re-styled, we learn that with nothing else to blame.
+
+She leaves the frame, which is the correct shape for a ten-second clip: an exit is
+an edit point.
+
+```prompt
+Create a 10-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off almost on the deck. She walks across the frame and out of it, so she leaves as a coat hem and a handbag, and the cyclist rolls on past behind her. Keep the low plank-level angle, the wet dark timber, the converging cables and the flat white sky exactly the same. Footsteps and bicycle tyres on wet timber, wind through the cables, traffic below, no dialogue. Use this image as the starting frame.
+```
+
+### 2f.7 The elevated platform — Queens
+
+She is tiny in this frame, so almost nothing about her can go wrong. The train is
+**audio only, out of frame** — a passing train is complex motion into geometry the
+plate never showed, which is the documented Omni weak spot, and the sound alone
+sells it.
+
+```prompt
+Create a 10-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off down the platform. She keeps walking toward the camera, still small in the frame. The overhead strip light flickers once and settles. Keep the blue dusk sky, the amber platform lights, the peeling green stanchions and the small Manhattan skyline on the horizon exactly the same. Wind, a fluorescent hum and a train passing somewhere out of frame, no dialogue. Use this image as the starting frame.
+```
+
+### 2f.8 The tram — January
+
+**The rest beat, and the only clip where she barely walks.** The window does the
+moving. Naming the sleeping passenger as still is the same trick §2d.2 used on the
+standing statue: it stops the model animating the whole cabin.
+
+```prompt
+Create a 10-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off at the back of the cabin. The cabin sways gently and she rides it with one hand on the overhead pole, shifting her weight as it moves, while the bridge steel slides past the windows. The sleeping passenger does not stir. Keep the cold cabin light, the condensation on the glass and her dark overcoat exactly the same. Cable hum, a rattling cabin and muffled wind, no dialogue. Use this image as the starting frame.
+```
+
+### 2f.9 Central Park — the Mall
+
+**Fire this one second.** She passes closest to the lens of any plate in the set,
+in profile, so it is the identity test the same way 2f.6 is the register test. If
+`@Karen` is ever going to be needed as a second ingredient, this is the clip that
+proves it.
+
+She exits and the empty path holds — nine months of walking, and the last thing
+you see is where she was.
+
+```prompt
+Create a 10-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off low at the edge of the path. She walks past the lens from left to right, her weight transferring foot to foot, and out of the right-hand side of the frame; the empty path holds after her. The elms move so the dapple shifts across the pavers. Keep the knee-height angle, the elm tunnel and the dappled path exactly the same. Leaves, birdsong, footsteps on stone and a distant city hum, no dialogue. Use this image as the starting frame.
+```
+
+### 2f.10 Fifth Avenue — through the cab window
+
+The payoff, and the riskiest crowd in the set: dense, close, sunlit, walking toward
+camera. **Her reflection in the wing mirror is in the preserve clause, not in the
+action** — asking a video model to track a reflection through a moving mirror is
+asking for complex physics, which is a named failure mode. Let it sit there and
+survive.
+
+```prompt
+Create a 10-second 16:9 video, one continuous shot, no cuts, at real speed. Handheld from the back seat as the taxi rolls slowly forward, so the wing mirror drifts across the near foreground. She strides across the crossing in the crowd, half a pace ahead of everyone around her, and the crowd keeps moving past her. Keep the hard overhead summer sun, the yellow door frame, her reflection in the wing mirror and her cream blouse and tied cardigan exactly the same. Traffic, a horn and summer street noise, no dialogue. Use this image as the starting frame.
+```
+
+### Fire order
+
+1. **2f.6 (Brooklyn Bridge) — the register test.** No face, one motion, all
+   architecture. If the grade or the geometry comes back rebuilt, we know before
+   we have spent anything.
+2. **2f.9 (Central Park) — the identity test.** Closest pass to the lens. If she
+   holds here, she holds everywhere, and `@Karen` stays in the drawer.
+3. **2f.4, 2f.7, 2f.5, 2f.8, 2f.1** in any order — one figure, simple weather,
+   no crowd close to the lens.
+4. **2f.3 and 2f.10 late.** Dense crowds near the lens are where faces and hands
+   go wrong, and 2f.10 also carries the reflection.
+5. **2f.2 (Grand Central) last, and expect to lose it.** See its note. **Two
+   regenerations, then stop** — the standing rule from §2c — and put the plate in
+   the edit as a still with a slow push instead.
+
+### What to watch, and what it would prove
+
+- **Does Omni hold a photoreal plate, or re-style it?** Every §2b/§2d clip animates
+  a flat graphic, where a re-style is survivable. Here the plate *is* the art
+  direction. This set is the first real test of that.
+- **Does the plate survive as ingredient, or does it need the Frames input?** The
+  last line asks for first-frame behaviour in plain language; the ingredient path
+  asks for reference behaviour. **If frame one comes back visibly redrawn, that is
+  the `<FIRST_FRAME>` experiment finally becoming urgent** — type the tag and
+  compare ([`omni-flash.md`](../../google-flow/omni-flash.md#the-first_frame-tag--a-documented-binding-mechanism-vendor)).
+- **Does `at real speed` beat the slow-motion drift?** It is one phrase against a
+  documented default. If clips still drift slow, the next lever is a timecode
+  (`[0-10s]`), which §2d established parses and has never been used.
+- **Does the long-exposure smear survive at all (2f.2)?** A clean no is a useful
+  answer: it tells us which plates in future sets must stay stills.
+- **Do the crowds stay whole?** 2f.3 and 2f.10 are the ones to watch, and the
+  failure will be faces and hands, not composition.
+
+### The edit these are for
+
+Ten ten-second clips is a hundred seconds of walking, which is more than the song
+has room for. **They are cut-in material, not a sequence** — the wide shots that
+carry Act 2's nine-month clock between the illustrated title plates (§2a, §2c) and
+the narrative scenes (§2.1–2.5). Three of them have a built-in out — 2f.4 stops,
+2f.6 and 2f.9 exit frame — and those are the three worth cutting *on*.
+
+---
+
+## 2g. The river drop — super-8 register `[not yet fired]`
+
+**Written 2026-08-14. Briefs, not records** — replace with what was actually typed
+once they have been run.
+
+The end of the drunk night: **Karen and Susan at the river, and the phone goes in.**
+[`story.md`](./story.md#16-the-phone-in-the-river--keep-retake-till-the-physics-behave)
+§1.6 — *"very drunk Karen drops her phone in the water… this is a load-bearing beat:
+we see where the phone went. Karen won't remember."*
+
+This is the first prompt in the ledger for this beat. The §2c.6 / §2d.8 plates share
+its name but are a different job — those are the flat illustrated handset sinking
+through navy water, one link in the title-sequence circle chain. **This is the
+live-action drop**, and it is the one the plot runs through.
+
+### Why the beat exists at all
+
+From the master notes, in Jack's words: the bar compilation *"had to do was get them
+to the river so she could drop the phone in the river… so had a reason to use the
+phone booth instead of just using it."* The whole second half of the film — nine
+months in a phone box — is load-bearing on this ten seconds. If the phone doesn't
+convincingly go in the water, Karen has a phone, and there is no story.
+
+### The joke is that nobody notices
+
+The single most important instruction in both prompts below: **neither of them looks
+down.** No lunge, no catch, no reaction shot. Karen is blackout drunk and will not
+remember this; Susan is mid-sentence and never sees it. *We* see it, and that
+asymmetry is what pays off the next morning when Karen asks *"Where's my phone?"* —
+Kai, on the notes: *"she can't remember dropping it in the water, but we can cuz we
+just saw it happen."*
+
+That instruction is also, conveniently, the cheapest possible thing to render. A
+reaction is two faces, two bodies and a change of intent inside ten seconds. Two
+people continuing to lean on a rail is nothing at all. **The correct shot and the
+easy shot are the same shot**, which is rare enough to say out loud.
+
+It is also why the clip is a full ten seconds for a drop that takes half of one. The
+dead air *after* the phone is gone is the punchline, and it needs the runtime.
+
+### Two things in the two-shot are untested
+
+- **Two Flow Characters bound in one frame.** Every plate in §2e casts one figure.
+  §2.2 has Karen and Ari together, but that was hand-typed prose in the days before
+  the casting rule. `@Karen` **and** `@Susan` in a single prompt is new, and if
+  bindings bleed into each other this is where we find out.
+- **Susan's reference register finally gets tested.** Her Character plates were shot
+  as clean commercial e-commerce photography — even softbox, sharp at f/5.6, greige
+  cyclorama — the divergence flagged in
+  [`characters/susan.md`](./characters/susan.md) and still owed a ruling. A grainy
+  super-8 night exterior is the harshest possible grade to ask that binding to
+  survive. **If it holds here, the divergence is fine and the ruling is "leave it."**
+  If she comes back looking lit differently to Karen in the same frame, re-shoot her
+  references in the §1 lock.
+
+### Continuity: she is still wearing what she got fired in
+
+Act 1 runs the same day. Karen went from the laptop to the bar without going home,
+so she is in the cream blouse and camel cardigan from
+[`characters/karen.md`](./characters/karen.md) — **but wrecked**: blouse untucked,
+cardigan off one shoulder instead of neatly draped. That is the drunkenness, and it
+has to live entirely in wardrobe and posture, because the casting rule forbids
+describing her face. No "drunk expression" anywhere below.
+
+Season is **early September** — Act 2's nine-month walk clock starts in September
+([§2e](#2e-the-new-york-walk-plates--super-8-register-not-yet-fired)), so this night
+is warm and neither of them is in a coat. Susan is in the olive suede bomber her
+sheet lists as a signal.
+
+### 2g.1 The rail — plate
+
+**The phone is dangling over the water in the still.** That is deliberate: the plate
+alone should make an audience wince before anything has happened. Setup in the
+still, payoff in the clip.
+
+The failure mode to watch is the postcard — a glittering skyline across black water
+at night is the single most AI-generated image in existence. The counters are all in
+the frame: the rail is the subject and it is chipped and municipal, the skyline is a
+soft out-of-focus band well behind them, and the light comes from an ugly park lamp
+rather than from the view.
+
+**Cast:** `@Karen`, `@Susan` — neither face described, per the casting rule.
+
+```prompt
+SCENE:
+
+Subject: two women leaning on a waterfront rail at night, seen from their side and slightly below, the rail running across the frame.
+
+Action: they lean on the top rail with their heads turned toward each other mid-conversation, the older woman with her weight dumped on her forearms and one hand hanging loose out over the water with a smartphone held slackly in her fingertips.
+
+Environment: the East River waterfront in early September, a worn steel pipe rail with chipped municipal paint and a scuffed concrete kerb, dark moving water below with broken reflections in it, the Manhattan skyline a soft out-of-focus band of lights across the water, a structured leather handbag and two takeaway cups set down on the rail beside them.
+
+Camera: 35mm, hand-held at rail height a few metres to their side, slightly low, with a little natural sway in the frame.
+
+Lighting: night, lit from above and behind by a single cold park lamp on a post with warm window light far across the water; the skyline reads as soft bloomed points rather than detail, and their faces catch the lamp from the side.
+
+Details: the older woman wears a cream blouse pulled untucked and a camel cashmere cardigan slipped off one shoulder, tailored trousers, no coat; the younger woman wears an unzipped olive suede bomber over a cream t-shirt and blue jeans and is mid-laugh with her head tipped back; keep every notice, mooring plate and sign free of readable lettering.
+
+Compose for a 16:9 frame.
+```
+
+### 2g.2 The two-shot — clip
+
+The story beat, and deliberately **not** the physics shot. They lean, they talk, the
+phone leaves her hand at the bottom edge of frame, and nothing else happens. The drop
+is real but incidental; the water entry is out of frame and belongs to 2g.4.
+
+```prompt
+Locked off at rail height a few metres to their side, one continuous shot at real speed. Grainy night cinematography lit by a single cold park lamp. They keep leaning on the rail with their heads turned toward each other, and the phone slides out of her slack fingers and drops away below the frame edge while they carry on talking. The water moves under the rail and the skyline lights hold steady behind them. Water against the piling, distant traffic and their own indistinct conversation, no intelligible dialogue. Use this image as the starting frame.
+```
+
+---
+
+### Why the last drop prompt failed — the Omni post-mortem
+
+**Researched 2026-08-14.** The previous attempt (recorded verbatim below) asked Omni
+for its four documented weakest capabilities simultaneously, in the one prompt shape
+the vendor guide specifically warns against. Nine distinct problems, every one of them
+fixable:
+
+| What the prompt did | Why Omni punishes it |
+|---|---|
+| ~450 words | *"The biggest single quality lever in Omni Flash prompting is what you remove, not what you add"* — target is **three to four sentences** `[runware]`. §2f already had this at ~50 words `[community]`. |
+| ~20 negations (`no bounce`, `no float`, `no slow motion`, `no second phone`) | **Omni has no negative-prompt support at all** `[vendor]`, and `no`/`don't` phrasing is *explicitly* counter-recommended — reframe positively or the tokens simply land as content. This prompt named *float*, *bounce*, *skip*, *hover* and *second phone* into a model that cannot subtract them. |
+| Timecoded frame-by-frame block (`0–2 sec`, `2–5 sec`, `5–6.5 sec`, `6.5–10 sec`) | *"You don't need to describe it across every frame"* `[vendor]`. Timecodes **do** parse, but they are for beat-timed motion graphics, not for narrating a fall. |
+| Taught the model gravity (`immediate downward acceleration`, `gains speed continuously`, `rotation remains physically consistent`) | Omni reasons about gravity and fluid dynamics from world knowledge `[vendor]`. Naming the action is the documented method; explaining the mechanism spends words and buys nothing. |
+| Made the **releasing hand** the subject | Fine hand articulation is a **documented degrade mode** — *"frame to hide hands where possible"* `[community]`. |
+| Made a **water entry** the subject | **Complex physics is a documented weak area** `[vendor]` model card, `[yt]`. |
+| Asked the camera to **tilt down and follow the phone** | Over-specified camera backfires `[yt]`, and a move into geometry the plate never showed is *the* documented distortion case. |
+| Roughly eight actions (rest → release → fall → impact → ripples → reframe → freeze → puzzled look → Susan turns) | **One main action per clip**, resolving inside ten seconds `[vendor]`. |
+| Contradicted itself — *"Do not prioritize faces"*, then asked for a *"faint puzzled expression"* | And it fights our own canon: §1.6 works **because neither of them notices**. |
+
+> **The deeper point.** Nothing above is a rendering problem, so no number of re-rolls
+> was ever going to fix it. Canon says *retake till the physics behave*, and that
+> instruction is honest but incomplete: **the fix is not a better take, it is a
+> different shot.**
+
+<details>
+<summary>The prompt that did not work — kept verbatim, 2026-08-14</summary>
+
+```prompt
+Use @Karen and @Susan exactly as supplied, but the phone drop is the primary subject of this shot.
+
+Nighttime New York waterfront beneath a large suspension bridge. Karen and Susan are already leaning over a metal railing above the river.
+
+Camera position: close side angle beside Karen, framed from roughly chest height downward. Clearly include Karen's hand holding the smartphone, the top of the railing, the open space below it, and the river surface underneath. Susan is only partially visible beside her. Do not prioritize faces.
+
+0–2 sec:
+Karen's hand rests loosely over the outside edge of the railing while holding a normal modern smartphone. She is drunk and careless. Her grip is visibly relaxed. Very little movement.
+
+2–5 sec — the drop:
+Her fingers simply open and the phone falls directly out of her hand.
+
+This must look like a real accidental dropped object:
+
+no throwing gesture
+no wrist flick
+almost zero initial horizontal velocity
+immediate downward acceleration under gravity
+the phone gains speed continuously as it falls
+slight natural tumbling caused by the uneven release
+rotation remains physically consistent throughout the fall
+
+Keep the phone continuously visible in the same shot from hand to water.
+
+Camera performs only a small controlled downward tilt to follow it. Do not chase it aggressively. Do not cut.
+
+5–6.5 sec — impact:
+The same phone reaches the river at realistic speed and strikes the surface at an imperfect angle.
+
+The impact creates a small, irregular splash proportional to a smartphone: brief uneven droplets, one compact disturbance in the water, then expanding ripples.
+
+The phone immediately passes below the surface and is gone.
+
+It does not bounce, hover, float, skip across the surface, slow down before impact, or reappear.
+
+6.5–10 sec:
+Hold on the ripples for a moment. Then allow Karen and Susan's upper bodies to enter more of the frame as they continue leaning over the railing, staring downward with delayed drunken confusion.
+
+Karen's reaction is tiny: she freezes, looks at the water, then gives a faint puzzled expression. Susan slowly looks toward Karen.
+
+Visual priority: realistic phone physics above everything else.
+
+Grounded documentary-style cinematography, natural night exposure, practical lighting, ordinary water behaviour, restrained acting.
+
+Exactly one smartphone. One release. One continuous gravitational fall. One water impact.
+
+No staged presentation of the phone, no dramatic arc, no hand throwing it, no close-up cutaway, no slow motion, no floating object, no speed changes, no perfect symmetrical splash, no second phone, no duplicate characters, no surreal effects, no glossy music-video aesthetic. Thanks.
+```
+
+</details>
+
+### The move that fixes it: the phone is a falling light
+
+Her screen is on. She is drunk, she has been on it all night, and a lit phone in the
+hand at 1am is the most ordinary thing in the world. That one detail solves the shot
+on three levels at once:
+
+- **It gives the model something trackable.** A dark object falling against black
+  water is the hardest possible tracking problem and exactly where morphing creeps
+  in. A small self-luminous rectangle moving through a dark frame is the *easiest* —
+  high contrast, unambiguous, one clear thing to move.
+- **It gives the audience the plot.** §1.6's whole job is that *we see where the
+  phone went*. A glow that shrinks, hits the water and goes out is unmistakable, even
+  at a glance, even small in frame.
+- **It gives the edit its cut point and the sound design its cue.** The light going
+  out is the frame to cut on.
+
+And it is cinematic rather than merely safe: the phone falls **out of the lamp light
+into the dark**, which is the shot saying what the story is about before anyone has
+said a word.
+
+The second move is that **the camera does not chase it.** Real footage of an
+accidental drop is never anticipated — the camera not helping is precisely what reads
+as true. That also removes the documented distortion case in one stroke.
+
+### 2g.3 The falling light — plate
+
+Framed so the drop below the rail is the biggest thing in shot, with the water
+genuinely dark. **No Character is cast here and no face is in frame** — which
+incidentally takes the untested two-binding risk out of the hardest shot in the set.
+
+```prompt
+SCENE:
+
+Subject: a lit smartphone held slackly in a woman's fingertips out over the outside edge of a waterfront railing at night, seen from below and to the side so the rail crosses the top of the frame and open black water fills the space beneath it.
+
+Action: the hand hangs slack over the drop, the phone held loosely by its edges with its screen still lit and facing down toward the water.
+
+Environment: the East River waterfront in early September, a worn steel pipe rail with chipped municipal paint, deep dark water a long way below with broken city light moving on it, the far skyline reduced to soft blooms along the top edge of frame.
+
+Camera: 40mm, hand-held, low and just outside the rail looking along it, so the open drop below the rail is the largest thing in the frame.
+
+Lighting: night, one cold park lamp above and behind the rail putting a hard edge along the pipe and across the knuckles; the phone's own screen is the brightest thing in the frame and throws a little light onto the fingers holding it.
+
+Details: a cream blouse cuff and the edge of a camel cashmere sleeve at the top of frame; the water below is genuinely dark rather than lit; keep every mooring plate and notice free of readable lettering.
+
+Compose for a 16:9 frame.
+```
+
+### 2g.4 The falling light — clip
+
+**This is the replacement for the prompt that failed.** Camera vocabulary first
+`[runware]`, four sentences, every constraint stated positively, and not one word
+spent explaining gravity to a model that already has it.
+
+Read the negations it replaced: *"the surface closes over the light and goes dark"*
+is `no float / no bounce / no reappear`. *"The hand stays where it is"* is `no
+reaction / no lunge / no catch`. *"At real speed"* is `no slow motion`. *"Locked
+off"* is `do not chase it`. **Same constraints, none of them poisoning the prompt.**
+
+```prompt
+Handheld and locked off low beside the railing, one continuous shot at real speed. Grainy night cinematography lit by a single cold lamp above the rail. Her fingers go slack and the lit phone falls away toward the river, its glow shrinking as it drops, meets the water with one small splash and sinks; the surface closes over the light and goes dark, and the ripples spread and settle. The hand stays where it is at the top of frame. Water against the piling, distant traffic and indistinct conversation above, no intelligible dialogue. Use this image as the starting frame.
+```
+
+### The Ingredients loadout
+
+**Ingredients is the high-control path** in Flow and the right mode for this
+`[yt]`. The rules that matter: **three reference images maximum** in the Flow UI, and
+**order matters — the most important element goes first** `[community]`.
+
+For 2g.4 that is deliberately sparse:
+
+| Slot | Ingredient | Role |
+|---|---|---|
+| 1 | the **2g.3 plate** | `<FIRST_FRAME>` — the shot itself |
+| 2 | the **2g.1 two-shot plate** | `<IMAGE_REF_0>` — grade and location continuity only |
+| 3 | *(empty)* | leave it empty; every extra ingredient is another thing to drift |
+
+**No Flow Characters in this generation.** There is no face in the frame, so casting
+them buys nothing and costs binding risk. `@Karen` and `@Susan` belong in 2g.1/2g.2.
+
+The documented tag syntax, **still untested in Flow's prompt box** — this is the same
+open question as `<FIRST_FRAME>` in
+[`omni-flash.md`](../../google-flow/omni-flash.md#the-first_frame-tag--a-documented-binding-mechanism-vendor):
+
+```
+[# Sources <FIRST_FRAME>@Image1] [# References <IMAGE_REF_0>@Image2]
+```
+
+If it does nothing, the plain closing sentence `Use this image as the starting frame.`
+is already carrying the job — which is why the prompt above keeps it rather than
+relying on the tags.
+
+### 2g.5 The no-water fallback
+
+**Only if 2g.4 loses.** Tight on the hand; the lit phone leaves her fingers and exits
+the bottom of frame, and the shot ends. No surface, no splash, no fluid simulation
+anywhere in it — the hardest part of the beat is *removed* rather than retried.
+
+It cuts straight into **§2c.6**, the illustrated handset already sinking through navy
+water, which is sitting in this ledger with no job. Wide two-shot → this → the graphic
+sink. The audience gets the whole physics and Omni never renders a drop of it, and the
+register switch lands on the one plate built to carry it.
+
+Its plate is 2g.3 shot longer and tighter, so the water never enters frame at all:
+
+```prompt
+SCENE:
+
+Subject: a woman's hand hanging loose over a waterfront rail at night, holding a lit smartphone slackly between the fingertips, framed tight so the hand and the top of the rail fill the frame.
+
+Action: the hand hangs slack and unmoving over the drop, the phone held only by its edges with its screen still lit.
+
+Environment: a worn steel pipe rail with chipped municipal paint running across the frame, deep black water far out of focus below and behind it, distant city lights reduced to soft round blooms.
+
+Camera: 85mm long lens close in on the hand, hand-held, shallow focus with the rail sharp and everything beyond it dissolved.
+
+Lighting: night, one cold lamp from above and behind putting a hard edge along the top of the rail and across the knuckles, the phone's screen glowing on the fingertips, everything else falling away into black.
+
+Details: a cream blouse cuff and the edge of a camel cashmere sleeve at the top of frame; manicured nails; keep the frame free of readable lettering.
+
+Compose for a 16:9 frame.
+```
+
+And its clip:
+
+```prompt
+Locked off tight on the hand, one continuous shot at real speed. Grainy night cinematography, one hard lamp edge along the rail and the knuckles. The lit phone slides out of her fingertips and falls straight out of the bottom of the frame, and the hand stays exactly where it is, still hanging slack over the rail. The rest of the frame holds still. Water against the piling and distant traffic, no dialogue. Use this image as the starting frame.
+```
+
+### Fire order, and what it would prove
+
+1. **2g.3 → 2g.4** — the drop, and the thing actually blocking the beat. It needs
+   no Characters, so it can be fired **before** the casting question is settled and
+   tells us on its own whether the falling-light idea holds.
+2. **2g.1 → 2g.2** — the two-shot. Two bindings in one frame, and Susan's
+   e-commerce references under a super-8 night grade.
+3. **2g.5** — only if 2g.4 loses. One plate, one clip, no water physics, and it
+   gives §2c.6 a job.
+
+**What to watch on 2g.4:** whether the glow stays one solid rectangle all the way
+down. If it smears, stretches or changes shape mid-fall, that is the morphing tell,
+and the answer is 2g.5 rather than another roll.
+
+**What to watch on 2g.1:** whether Karen and Susan look lit by the same lamp. That
+is the whole Susan-register question, and it is answerable at a glance.
+
+**What to watch on 2g.2:** whether they react. A model trained on people dropping
+things wants to give you the flinch, and the flinch kills the beat — if either of
+them looks down, the next morning's *"Where's my phone?"* stops working.
+
+### Sources for the §2g research `[2026-08-14]`
+
+- [Cinematic prompting for Gemini Omni Flash — Runware](https://runware.ai/docs/models/google-gemini-omni-flash/guides/cinematic-prompting) `[runware]` — the three-to-four-sentence scaffold, camera vocabulary first, and *"the biggest single quality lever in Omni Flash prompting is what you remove, not what you add."*
+- [How to create effective prompts with Gemini Omni — Google DeepMind](https://deepmind.google/models/gemini-omni/prompt-guide/) `[vendor]` — the five core elements, *"you don't have to be as prescriptive"*, *"you don't need to describe it across every frame."*
+- [Generate and edit videos with Gemini Omni Flash — Gemini API](https://ai.google.dev/gemini-api/docs/omni) `[vendor]` — negative prompts unsupported; `<FIRST_FRAME>` / `<IMAGE_REF_N>` tag syntax.
+- [Gemini Omni Flash — 9 fixes](https://blog.segmind.com/gemini-omni-flash-keeps-rejecting-your-prompts-9-fixes-that-actually-work/) — confirms `no`/`don't` phrasing is counter-recommended and that constraints should be reframed positively.
+- [Google Omni Prompting Guide — Promptslove](https://promptslove.com/blog/google-omni-prompting-guide/) — world-knowledge grounding for physics; the `Keep everything else identical` preservation clause.
+- [AI Video Quality Checklist — Green Frog Labs](https://greenfroglabs.com/blog/ai-video-quality-avoid-slop-appearance) — the slop tells that matter here: morphing edges, *"mathematically smooth rather than physically real"* motion, objects that float.
+- [AI Slop: 12 Tells — Opus](https://www.opus.pro/blog/ai-slop-aesthetic-12-tells) — motion tells in general, and the hand-heavy-shot warning.
+- [Veo 3.1 Ingredients to Video](https://www.veo3ai.io/blog/veo-3-1-ingredients-to-video-guide-2026) `[community]` — three ingredients maximum in Flow, most important first.
+
+**Bias warning, same as `omni-flash.md`:** several of these sell a platform or a
+course, and the Ingredients ceiling in particular is a community figure describing
+the Veo path. The `[vendor]` and `[runware]` lines are the load-bearing ones; treat
+the rest as directional until fired.
+
+---
+
 ## 3. Gaps
 
 - **Three prompts are missing.** The batch this file was opened from included
@@ -1118,6 +2283,51 @@ the source never showed" weakness.
 - **§2d is unfired.** Nine clip briefs against the eight accepted plates. They carry
   one untested recipe change — **the guiding instruction moved to the last line** —
   so 2d.6 is a calibration run as much as a clip. Full set is ~270 credits.
+- **§2e is fired but its record is stale.** Ten finished plates exist (they are the
+  ten [§2f](#2f-clip-prompts-for-the-2e-walk-plates--gemini-omni-flash-not-yet-fired)
+  clips), yet §2e still says `[not yet fired]` and still holds briefs rather than
+  the words that were typed. **Two specific corrections are owed:** the civic
+  colonnade (**2e.3**) has no plate, and there is an **eleventh location that was
+  never in the shot list** — a snow-and-slush street with a scaffolding pipe across
+  the frame, in which she wears the **cardigan with no coat despite the snow**, out
+  of step with the wardrobe clock. Whoever fired them: paste the prompts and mark
+  the section.
+- **The `vibrant` / `restrained` collision is unresolved.** The §1 lock asks for a
+  punchy vibrant palette; the anti-slop research says vivid colour words are what
+  produce the plastic sheen. §2e resolves it *on paper* — vibrancy is the stock,
+  restraint is the scene — but nothing has been fired to test it. If it loses, the
+  **hex pin** is the lever, appended to one plate, **never written into the lock.**
+- ~~**No clip prompts for §2e.**~~ **Written 2026-08-13 as
+  [§2f](#2f-clip-prompts-for-the-2e-walk-plates--gemini-omni-flash-not-yet-fired)** —
+  ten briefs, ~300 credits, unfired. They carry **three untested things**: a
+  **photoreal** plate through Omni for the first time (§2b/§2d are all flat
+  graphics), the **ingredient** path rather than Frames, and the new live-action
+  clauses (`at real speed`, named weight transfer, one named ambient motion). **2f.6
+  fires first** as the register test, **2f.9 second** as the identity test.
+- **The §2e plates are still not filed as images.** Ten frames now exist outside
+  the repo with nothing next to their prompts. This is the same gap as §2a and §2c,
+  now three sets deep, and §2f makes it worse: a clip brief that cannot be checked
+  against its own plate is half a record. Say the word and they get an `img/`
+  folder and a per-prompt filename column.
+- **§2g is unfired, and it carries the only two-Character prompt in the ledger.**
+  Written 2026-08-14 as
+  [§2g](#2g-the-river-drop--super-8-register-not-yet-fired) — the Act 1 river
+  drop — a two-shot (2g.1/2g.2), the drop itself rebuilt for Omni after a failed
+  attempt (2g.3/2g.4), and a no-physics fallback (2g.5) held in reserve. Three
+  untested things: **`@Karen` and `@Susan` bound in the same frame**, which no
+  plate has ever asked for; **Susan's clean e-commerce references under a
+  super-8 night grade**, the sharpest available test of the divergence flagged in
+  [`characters/susan.md`](./characters/susan.md); and **the falling-light idea**,
+  which is the whole bet on 2g.4. Firing 2g.1 answers the Susan ruling on its own,
+  and 2g.4 needs no Characters so it can go first.
+- **§2g carries the ledger's first recorded Omni post-mortem**, and it belongs in
+  [`omni-flash.md`](../../google-flow/omni-flash.md) rather than only here. The
+  reusable findings: **negative prompts are unsupported *and* `no`/`don't`
+  phrasing is counter-recommended** — every §2b/§2d/§2f prompt that leans on a
+  negation is suspect; **three to four sentences is the target length**, which
+  the §2d/§2f briefs already roughly hit and the failed §2g attempt missed by
+  400 words; and **explaining physics to a model with world-knowledge grounding
+  is pure waste**. Somebody should fold these back into the engine reference.
 - **The `<FIRST_FRAME>` tag is untested in Flow.** Documented API syntax that binds
   an image to the starting-frame role; whether it does anything typed into Flow's
   prompt box is unknown, and the answer matters well beyond Karen — see
