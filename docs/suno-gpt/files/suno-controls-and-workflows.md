@@ -423,6 +423,11 @@ song** → Create tab → **Cover** with a minimal style prompt (literally just 
 influence 60, weirdness 0** → bring the covered song **back into Studio**. Now Suno has whole-song
 context and everything afterwards locks in far better.
 
+> **Studio 2.0 makes this concrete, and adds the step that matters** — advanced-split the covered
+> take and **harvest two or three stems** rather than keeping the whole thing. The dragged-in cover
+> auto-adjusts to the project tempo, and *insert all* arranges the stems to its timing. Full recipe,
+> click by click: [`suno-studio.md`](./suno-studio.md) §11B.
+
 ---
 
 ## 9. Stems

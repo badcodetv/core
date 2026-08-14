@@ -29,7 +29,7 @@ Read on demand. Never reproduce its content in your reply, and don't lecture the
 | `system-prompt.txt` | Base operating procedure — modes, output format, character limits, edge cases | First use in a conversation |
 | `files/suno-tag-mechanics.md` | Prompt language: hybrid format, ordering, genre pairing, bracket language, exclude strategy, contamination words | First use in a conversation |
 | `files/suno-controls-and-workflows.md` | **The three sliders, model choice, Voice/Persona/custom models, lyric editing, Studio generation craft, stems, known failure modes** | Any question beyond the Style box — and always before quoting a slider value |
-| `files/suno-studio.md` | **The Studio 2.0 app surface** — project-aware chat, MIDI + musical typing, live recording, cover-in-place, advanced split / remove effects, effects rack + sidechain + automation, custom plugins, shortcuts | Any Studio, MIDI, effects, recording or "what do I click" question. **Vendor-demo confidence — read its warning and never present it as tested** |
+| `files/suno-studio.md` | **The Studio 2.0 app surface** — chat, MIDI + musical typing, recording, timeline editing, cover-in-place, advanced split / remove effects, effects rack, custom plugins, export/sharing, shortcuts — **plus §11's two worked recipes** (the blank-canvas build; sketch → cover → stems) | Any Studio, MIDI, effects, recording, export or "what do I click" question. **Vendor-video confidence — read its warning and never present it as tested** |
 | `files/producer-vocabulary.md` | Words for describing sound; song structure; how to judge a generation | Translating a vague brief, or debugging a prompt that won't land |
 | `files/lyric-craft.md` | Syllables, rhyme, section shapes, transitions — **plus the punctuation/timing table (how Suno times what you wrote)** | Writing lyrics — apply **silently**. **Always** when a delivery is the wrong speed |
 | `files/lyricist-playbook.md` | **The songwriter's side**: which section tag summons which character, performance cues, multi-voice casting, typography, pronunciation, the content filter, hooks, lyric failure modes, Studio warp/quantize | Any lyrics-box question the other files don't answer. **Assertion-grade — read its confidence warning; where it conflicts with a tested finding, the tested one wins** |
@@ -198,6 +198,8 @@ goes in, every time.
 | Getting a good generation *out of* Studio | §8 |
 | Stems, de-artifacting, "reduce more than you produce" | §9 |
 | Studio 2.0 chat, MIDI, recording, effects, plugins, shortcuts | `suno-studio.md` |
+| Building a track in Studio from nothing; getting an arrangement around a human performance | `suno-studio.md` §11 — the two worked recipes |
+| Exporting, pulling MIDI out, sharing a project with Jack | `suno-studio.md` §12 |
 | A character voice that won't come | "Getting a specific voice" below, then `suno-voices.md` |
 
 **Two honesty rules, because the app moves faster than this knowledge base.**
@@ -210,7 +212,22 @@ goes in, every time.
 **The dream feature, when it comes up: re-singing one word in the same voice.** Suno cannot do it.
 Don't improvise a workaround — `suno-studio.md` §5 has the honest ladder (custom model first; isolate
 → dry → cover-in-place second; sing it yourself third; the Editor last) and states plainly what's
-still missing. Give the ladder, name the drift, let the user choose.
+still missing, including that **Studio has no pitch correction at all**. Give the ladder, name the
+drift, let the user choose.
+
+**Two answers to reach for before you reach for a better prompt.** Both are in `suno-studio.md` §11
+and both beat adjective-stacking:
+
+- **"Sing it in."** When the user can hum, sing or badly play what they want but can't describe it —
+  record the scrap, select it, cover it into the real instrument ("make this a lead electric guitar
+  solo, tasty"). Performing a part badly specifies it far better than words do, and it routes around
+  the whole problem that adjectives are weak against the genre tag.
+- **The sketch → cover → stems round-trip.** Rough sketch → export full song → Cover it with an
+  edited style description → drag the take back onto the timeline → advanced-split it → keep the two
+  or three stems worth stealing. This is the concrete version of the bootstrap trick, and it's the
+  strongest route we have to BadCode tracks that don't sound like Suno: the human performance stays
+  the spine, Suno is the session band. It also strengthens the release-rights position
+  (`suno-controls-and-workflows.md` §13).
 
 ---
 

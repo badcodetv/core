@@ -48,6 +48,7 @@ here is the artifact.
 | 2026-08-08 | ChillPanic, *"Finally! Use TWO VOICES in ONE SUNO AI SONG"* (published 2026-08-04) | `files/suno-controls-and-workflows.md` §4a — the layered-cover method |
 | 2026-08-08 | 11-agent web sweep, songwriter-side sources (non-ChillPanic) | `files/lyricist-playbook.md` (new) + `files/lyric-craft.md` timing table |
 | 2026-08-14 | Suno Music official, *"Introducing Suno Studio 2.0"* (published 2026-08-13) | `files/suno-studio.md` (new) + cross-refs in `suno-controls-and-workflows.md` §6, §8, §9, §10, §11 |
+| 2026-08-14 | Suno Music official, *"Getting Started in Suno Studio 2.0"* (published 2026-08-14, 37 min) | `files/suno-studio.md` §10–13 — a full blank-canvas build with the mistakes left in; the source for the timeline-editing, workflow, export and sharing material |
 
 Re-run the harvest script with a date filter to catch up on anything newer.
 
@@ -91,7 +92,7 @@ Re-verify before relying on these; they move fast and some are version-pinned:
 
 - Model behaviour (v4.5 creative vs v5.5 polished; mumble mode broken on 5.5; Studio better on v5)
 - Feature names and locations (Persona was renamed **Voice** in v5.5)
-- **Everything in `files/suno-studio.md`** — one vendor launch video, nothing tested by us or by a
-  practitioner. Suno is shipping Studio fast; assume it has moved again.
+- **Everything in `files/suno-studio.md`** — two vendor videos, nothing tested by us or by an
+  independent practitioner. Suno is shipping Studio fast; assume it has moved again.
 - Plan tiers, pricing, credit costs, and which features each tier gates
 - Rights, ownership, AI-disclosure requirements, and distributor policy
