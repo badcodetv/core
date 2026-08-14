@@ -6,12 +6,47 @@ API access 30 Jun 2026. **Still public preview.**
 ([Prompt craft](#prompt-craft-what-a-failed-shot-taught-us)) · **third pass 2026-08-14**
 ([Physics shots and the input-mode matrix](#physics-shots-and-the-flow-input-mode-matrix)) ·
 **fourth pass 2026-08-14** ([References vs frames](#references-vs-frames-the-prompt-has-to-change-shape)) ·
-**Confirmed against our Flow session:** never.
+**fifth pass 2026-08-14** ([Making a reference stick](#making-a-reference-stick-there-is-no-adherence-knob)) ·
+**sixth pass 2026-08-14** ([Making motion read as real](#making-motion-read-as-real)) ·
+**Confirmed against our Flow session:** ~~never~~ **first confirmed run 2026-08-14** —
+see [What we actually confirmed](#what-we-actually-confirmed-2026-08-14).
 
 > **Read the verdict first.** On current evidence Omni Flash is *not* a drop-in replacement for the
 > Veo-based recipe in `docs/superpowers/flow-video.md`, and there is a specific reason why — see
 > [The animate-slide problem](#the-animate-slide-problem). Nothing should be rewired until that
 > question is settled by a test.
+>
+> **⚠️ Partly overtaken by events, 2026-08-14.** Omni's Frames tab is real and a supplied
+> start frame is honoured — we ran it. That removes the main objection, though not the
+> end-frame one. [What we actually confirmed](#what-we-actually-confirmed-2026-08-14).
+
+## What we actually confirmed (2026-08-14)
+
+**The first `[confirmed]` entries in this folder.** Everything else here is still
+hypothesis. Source: the Karen river-drop clip (`docs/stories/karen/prompts-river-drop.md`
+§2g.13), accepted after four failed rounds.
+
+| Claim | Status |
+| --- | --- |
+| **Flow shows a Frames tab with Omni Flash selected** | `[confirmed 2026-08-14]` |
+| **A start frame loaded there is honoured** — the anchor's geometry survived: no re-staging, no invented terrain, people on the correct side of the railing | `[confirmed 2026-08-14]` |
+| **Occluding the hard motion works.** Framing so a falling object exits frame within a few frames produced a clip that reads as real, after four attempts that kept it in frame all failed | `[confirmed 2026-08-14]` |
+| **The 24fps / 180° shutter clause earns its place.** Asked for it; the fall came back as a streak rather than a sharp object, and no post pass was needed | `[confirmed 2026-08-14]` |
+| **A grain/speed pass in post was *not* required** for the clip to read as captured | `[confirmed 2026-08-14]` |
+
+**What is still not confirmed, and matters:**
+
+- **Whether frame one is pixel-identical to the supplied plate.** The geometry held,
+  which is what the shot needed and what four rounds of Ingredients never gave us. That
+  is not the same as a pixel match, and nobody measured one. `animate-slide`'s contract
+  needs the stronger claim — see [below](#the-animate-slide-problem).
+- **Whether Omni has an end-frame slot.** Not exercised; the run left it empty.
+- **`<IMAGE_REF_0>` / `<FIRST_FRAME>` in Flow's prompt box.** Still untyped.
+
+> **The pattern worth keeping.** Four rounds of prompt craft fixed four real bugs and
+> every clip still failed. What finally worked was a **change of mode and a change of
+> shot** — the same lesson twice. On this engine, when a clip fails, ask what the shot
+> is asking the model to do before rewriting a single word of it.
 
 ## Identity & availability
 
@@ -105,17 +140,31 @@ Omni's reference mode mangles `[yt]`.
 > and Flow's changelog says **Omni gained Frames-to-Video in June 2026**. `[vendor]` outranks
 > `[yt]`, so treat the Stratvert demo as describing an older build. The conclusion below survives
 > — frame-anchoring is still Veo's job — but the specific model named in it is probably wrong.
+>
+> **Update, fifth pass 2026-08-14:** half of the conclusion no longer holds. Omni has a
+> **first**-frame mode ([why](#1-mode--and-omni-does-have-frames-now)), so
+> `animate-slide`'s single-anchor contract is now plausibly an Omni job too. Only
+> **end**-frame pinning is still exclusively Veo's.
 
 Combined with the `[community]` report of no true first-frame-to-video, the working conclusion is:
 
 > **`animate-slide` stays on Veo 3.1.** The skill's contract — an approved panel is frame one —
 > is a frame-anchoring problem, and in Flow that is Veo's job, not Omni's.
 
-Still worth running the confirming test before treating this as closed, since it is one UI change
-away from flipping:
+**Status 2026-08-14: the objection is half-dead.** Omni's Frames tab exists and honours
+a start frame `[confirmed 2026-08-14]` — a supplied plate's geometry survived intact
+through a clip that four Ingredients-mode attempts had re-staged. So the verdict above
+now rests on the *end*-frame gap alone, which is narrower than what it was written on.
 
-> Take one accepted panel with a cast Flow Character. Generate with `task: image_to_video`. Does
-> frame 1 match the panel pixel-for-pixel, or has the character been redesigned?
+The confirming test still has not been run, and it is the one that decides it:
+
+> Take one accepted panel with a cast Flow Character. Load it as a start frame in
+> Omni's Frames tab. Does frame 1 match the panel **pixel-for-pixel**, or has the
+> character been redesigned?
+
+**"The geometry held" is not "the pixels matched."** `animate-slide` needs the stronger
+claim, because its whole contract is that an already-approved, already-art-directed
+panel *is* frame one. Until someone measures it, the skill does not move.
 
 Omni Flash remains interesting for `music-video-short`, where clips are generated fresh and no
 golden original is at stake — and for restyling clips Flow generated itself (see below).
@@ -463,19 +512,17 @@ Flow's model picker is not interchangeable. From Google's own
 | Mode | Veo 3.1 Lite / Fast | Veo 3.1 Quality | Omni Flash |
 | --- | --- | --- | --- |
 | Text → video | ✅ | ✅ | ✅ |
-| **Frames → video (first frame)** | ✅ | ✅ | ❌ *(but see below)* |
+| **Frames → video (first frame)** | ✅ | ✅ | ~~❌~~ **✅ `[confirmed 2026-08-14]`** |
 | **Frames → video (first + last)** | ✅ | ❌ | ❌ |
 | Ingredients / references → video | ✅ (8s) | — | ✅ (10s, incl. character & audio refs) |
 | Durations | 4s / 6s / 8s (Fast also 10s) | 4s / 6s / 8s | **4s / 6s / 8s / 10s** |
 
 > **⚠️ Two conflicts, both `[untested]` and both one click away from an answer.**
 >
-> 1. **Omni and first frames.** The help page says Omni has no Frames mode, but
->    Flow's own [changelog](https://labs.google/fx/tools/flow/changelogs) `[vendor]`
->    lists *"Frame to Video now available for Gemini Omni Flash"* (2026-06-04) and
->    *"Omni Frames to Video"* (2026-06-10). The changelog is dated and specific; the
->    matrix page is probably stale. **Check whether Flow shows a Frames tab when
->    Omni is selected.**
+> 1. ~~**Omni and first frames.**~~ **Settled `[confirmed 2026-08-14]` — the help page
+>    is stale.** The Frames tab is there with Omni selected and a start frame loaded
+>    into it is honoured; we ran it. Flow's changelog was right and the matrix page is
+>    out of date. Read the row below as **first frame ✅ / first+last ❌** for Omni.
 > 2. **Veo Quality and end frames.** This page says first+last is **Lite and Fast
 >    only**. That contradicts the `[yt]` claim recorded above — Kevin Stratvert
 >    demonstrating that you switch to *Veo 3.1 Quality* for start and end frames.
@@ -610,7 +657,10 @@ faces — our casting rule still holds, and it costs nothing here.
 ### Choosing the mode
 
 - **The plate's exact composition matters** (an approved panel, a geometry that must
-  survive) → **Frame**. If Omni's Frames tab is unavailable, that is a Veo job.
+  survive) → **Frame**. ~~If Omni's Frames tab is unavailable, that is a Veo job.~~
+  **Omni has a Frames tab as of June 2026** — see
+  [the fifth pass](#1-mode--and-omni-does-have-frames-now). Only an *end* state that
+  must be pinned still forces Veo.
 - **Only the look, the characters or the props matter**, and the shot may be
   re-staged → **Reference / Ingredients**, with the scene written out in full.
 - **Both** → stack them: an anchor frame *plus* character references is a documented
@@ -640,6 +690,269 @@ The craft half of the same pass, and it lines up with the house `STYLE LOCK` `[c
 - [Google Flow AI prompts guide](https://whiskailabs.net/google-flow-ai-prompts/) `[community]` — reinforce appearance in text to prevent drift from a reference; the `@` asset syntax.
 - [Realistic AI video prompting — Magic Hour](https://magichour.ai/blog/realistic-ai-video-prompting) · [AI film prompts by genre — Imagine.art](https://www.imagine.art/blogs/ai-film-prompts-guide) `[community]` — imperfection tokens, capture specifics, and the don't-compose-cinematically rule for documentary.
 
+## Making a reference stick: there is no adherence knob
+
+**Added 2026-08-14, fifth pass.** Triggered by the Karen drop failing a *third* time —
+this round the clip **invented terrain that was not in the plate**, dropping the phone
+onto rocks under the railing where the plate had open water. Reported symptom: *"it not
+paying enough attention to the reference image."*
+
+That reading is right, and the research says the fix is not a stronger instruction.
+
+### The knob does not exist — adherence is bought four other ways
+
+**No strength, weight, denoise or influence parameter is exposed anywhere** on the
+reference path — not in Google's API schema `[vendor]`, and not in the hosted
+schemas, which list only `prompt`, `image_urls`, `aspect_ratio` and `duration`
+`[runware]` (fal.ai's reference-to-video reference). Whatever the Flow UI shows you,
+there is nothing behind it to turn up.
+
+So adherence is entirely a function of four things you *do* control, in descending
+order of how much they buy:
+
+| Lever | What it does |
+| --- | --- |
+| 1. **Mode** | Frame = geometry is honoured. Ingredient = geometry is a suggestion. |
+| 2. **Role declaration** | Naming what each image *is* changes how it is used. |
+| 3. **What is in the image** | A reference carrying two roles at once gets read as one of them. |
+| 4. **Text reinforcement** | Words are the only "strength" control there is. |
+
+### 1. Mode — and Omni *does* have Frames now
+
+> **The [input-mode matrix](#the-input-mode-matrix-and-a-conflict-worth-resolving)
+> conflict is resolved, and the help page was the stale one.** Flow's changelog lists
+> *"Frame to Video now available for Gemini Omni Flash"* (2026-06-04) and *"Omni
+> Frames to Video"* (2026-06-10) `[vendor]`; the API documents a starting frame; and
+> an independent review confirms starting-frame support while listing **last-frame
+> control among the capabilities still "available soon"** `[community]`.
+>
+> **`[confirmed 2026-08-14]`** — we opened it, loaded a plate into it, and the plate's
+> geometry came back intact. This is no longer a paper finding.
+
+**Omni Flash: first frame yes, last frame not yet.** That changes our routing
+materially — a shot whose *composition* must survive can go through **Omni's Frames
+tab** and keep the native audio. Only a shot whose *end state* must be pinned still
+has to go to Veo 3.1 Lite/Fast.
+
+Google's own tips page draws the same line in its own words `[vendor]`:
+
+| Feature | Google's description |
+| --- | --- |
+| **Frames to Video** | *"gives you precise control over your shot's composition"* |
+| **Ingredients to Video** | *"use your pre-defined characters, objects and styles as a consistent reference"* |
+
+**Read that as the routing rule.** Composition control is the Frames tab's stated
+purpose and it is not the Ingredients tab's. If the answer to *"what must survive?"*
+is a layout, a geometry or a camera position, no amount of prompt work makes
+Ingredients do it.
+
+### 2. Role declaration — say what the image *is*, at the top
+
+The vendor's own worked Ingredients prompt opens by assigning every image a role
+before it asks for anything `[vendor]`:
+
+> *"**Using the provided images for the detective, the woman, and the office
+> setting**, create a medium shot of the detective behind his desk…"*
+
+Note *"the office setting"* — a **location** is a documented ingredient role, alongside
+character, object and style `[vendor]`. The practitioner restatement is a template:
+
+> `[Subject] stands in [scene], rendered entirely in [style]` `[community]`
+
+And the rule under it: *"Do not just upload the ingredient and expect Flow to use it
+automatically. Your text prompt must reference it… The explicit reference produces
+dramatically more consistent results."* `[community]`
+
+- **Order is a signal.** *"Pass reference images in the order you reference them in the
+  prompt. The model uses position as a signal."* `[runware]`
+- **`<IMAGE_REF_N>` is now double-sourced.** Google's API reference and fal.ai's hosted
+  schema both document inline, zero-indexed role binding in the prompt text
+  (`<IMAGE_REF_0>`) `[vendor]` `[runware]`. Still `[untested]` in Flow's prompt box —
+  but two independent surfaces documenting the same syntax makes it worth the one
+  cheap test.
+
+**"Use the supplied image as the visual reference for the whole shot and hold its
+staging"** — our round-4 phrasing — never says what the image *is*. It asks for
+obedience without assigning a role, which is the one thing the documented shape
+always does first.
+
+### 3. ⚠️ A location reference must not contain subjects
+
+The sharpest finding of this pass, and the likeliest single cause of the rocks:
+
+> *"When you add ingredients to your prompt, provide subject or product references on
+> a plain or segmented background. **Make sure location and style references don't
+> contain extra subjects**, unless that is your creative intent."* `[community]`
+
+A plate that is *both* the location and the two characters is a reference carrying two
+roles at once. The model resolves the ambiguity by picking one — and the documented
+strength of the reference path is **subject** carry-over, not environment carry-over
+(Veo's API types a reference as `asset` or `style`, and the asset case is documented
+as *"up to three images of a single person, character, or product"* `[vendor]`). So it
+keeps the people, treats the rest as loose atmosphere, and re-stages the ground.
+
+**The counter is to split the roles across slots:** a clean location plate with **no
+people in it** as the scene ingredient, and the cast Characters as the subject
+bindings. This is also why clean-background character references — the register that
+looked like a divergence — are *correct* for this path.
+
+Corollaries worth keeping:
+
+- **Consistent look across ingredients helps the blend**, and a busy background on a
+  subject reference confuses the read `[community]`.
+- **Text and image must not contradict.** *"Your text prompt should complement, not
+  contradict, your visual inputs."* `[community]` A prompt describing something the
+  reference does not show is an instruction to re-stage.
+
+### 4. Text reinforcement is the substitute for a knob
+
+With no strength parameter, words carry the load:
+
+- **Re-describe the thing you want preserved**, in the prompt, in addition to supplying
+  it — *"…the woman with long brown hair and a blue jacket…"* `[community]`. Already
+  recorded for wardrobe; it applies equally to a location.
+- **Keep ~80% of the descriptive keywords identical** between shots that share a
+  setting — lighting, lens, style — and change only the action. *"This prevents the
+  character's face or the environment from drifting."* `[community]`
+- **Build a reference pack, not one casual image** — several approved angles of the
+  same subject or location `[community]`.
+
+### The unrendered-region rule — why it invented a shore
+
+Underneath the mode question sits a plainer mechanism, and it generalises past this shot.
+
+**Any region the plate does not show is a region the model will invent**, and it
+invents by likelihood, not by imagination: asked what is below a waterfront railing at
+night, the statistically ordinary answer is a rocky shore. That is the same root as
+the [no-world-model failures](#spatial-geometry-models-have-no-world-model) above —
+*"vague or contradictory instructions force the model to interpret… it fills in details
+based on probability rather than intent"* `[community]`.
+
+Three counters, in order of strength:
+
+1. **Show it in the plate.** Geometry that is visible cannot be guessed at.
+2. **Name it positively in the prompt.** Not *"no rocks"* — that is the
+   [negation backfire](#-negatives-do-not-work-and-they-actively-backfire), and it puts
+   the word *rocks* into a model that cannot subtract it. Write what is there:
+   *"deep open water runs right up to the wall below the railing."*
+3. **Frame it out.** A region outside the frame for the whole clip is a region that
+   never has to be resolved.
+
+**And the diagnostic that follows from it:** before firing, look at the plate and ask
+*"what does this image fail to answer?"* Whatever that is, the model will answer it,
+and you will not like the answer.
+
+### Sources for this section (2026-08-14)
+
+- [5 tips for using Flow — blog.google](https://blog.google/innovation-and-ai/products/flow-video-tips/) `[vendor]` — Frames to Video *"gives you precise control over your shot's composition"*; Ingredients as *"a consistent reference"*.
+- [Ultimate prompting guide for Veo 3.1 — Google Cloud](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-veo-3-1) `[vendor]` — the *"Using the provided images for the detective, the woman, and the office setting…"* prompt shape; location as a first-class ingredient role.
+- [Guide video generation using asset and style images — Vertex AI](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/use-reference-images-to-guide-video-generation) `[vendor]` — `referenceType: asset | style`; asset documented as up to three images of *a single person, character, or product*; one style image.
+- [Google Flow changelog](https://labs.google/fx/tools/flow/changelogs) `[vendor]` — Omni Frames to Video, 2026-06-04 and 2026-06-10.
+- [Create videos in Google Flow](https://support.google.com/flow/answer/16353334) `[vendor]` — the *"+ Add start frame"* / *"+ Add end frame"* slots and `@` asset referencing in the prompt box.
+- [Reference-driven video with Gemini Omni Flash — Runware](https://runware.ai/docs/models/google-gemini-omni-flash/guides/reference-driven-video) `[runware]` — order as a positional signal; combined frame-anchor + references mode; 7 references / 1 frame anchor.
+- [Gemini Omni Flash reference-to-video API — fal.ai](https://fal.ai/models/google/gemini-omni-flash/reference-to-video/api) `[runware]` — the full input schema, confirming **no strength/weight/adherence parameter**, and `<IMAGE_REF_0>` inline binding.
+- [Google Flow AI prompts 2026 — Whiskai Labs](https://whiskailabs.net/google-flow-ai-prompts-2026-best-prompts-guide/) `[community]` — *"make sure location and style references don't contain extra subjects"*; the `[Subject] stands in [scene]` template; text must not contradict the visual inputs.
+- [Fixing Google Flow: Ingredients to Video troubleshooting — Arsturn](https://www.arsturn.com/blog/fixing-google-flow-common-issues-with-ingredients-to-video) `[community]` — reuse the identical ingredient image; reinforce appearance in text; plain or segmented backgrounds.
+- [Gemini Omni Flash review — BuildFastWithAI](https://www.buildfastwithai.com/blogs/gemini-omni-flash-review-google-ai-video-model-2026) `[community]` — starting frame supported; **last-frame control listed as still "available soon"**.
+- [How Veo 3.1 maintains character & scene consistency — Sider](https://sider.ai/blog/ai-tools/how-veo-3_1-maintains-character-scene-consistency-in-ai-video) · [Veo 3 image-reference workflow — veo3ai](https://www.veo3ai.io/blog/veo-3-image-reference-workflow-2026) `[community]` — location profiles, reference packs, and the keep-80%-of-the-keywords rule.
+- [AI video hallucinations — Hailuo](https://hailuoai.video/pages/blog/ai-hallucinations-video-generation-guide) `[community]` — underspecified regions get filled by probability rather than intent.
+
+**Still `[untested]` against our own Flow session** — but two items here are answerable
+in seconds and settle open questions for the whole repo: **does the Frames tab appear
+with Omni selected**, and **does `<IMAGE_REF_0>` do anything in Flow's prompt box**.
+
+## Making motion read as real
+
+**Added 2026-08-14, sixth pass.** Triggered by the Karen drop failing a *fourth* time.
+This round the geometry held and the terrain was right — and **the phone bounced off
+the ground before going into the water**, and the whole clip *"looked very AI."* Two
+separate problems, and the first one has a permanent answer.
+
+### The shutter is the tell nobody prompts for
+
+A real camera at 24fps with a 180° shutter exposes each frame for 1/48 of a second, so
+**anything moving fast smears**. Video models default to rendering every frame sharp,
+which is why fast motion reads as *"mathematically smooth rather than physically
+real"* — the phrase already in this file from the slop research.
+
+- *"Realistic AI video almost always conforms to cinema convention — 24 frames per
+  second with a 180-degree shutter and natural motion blur, because that cadence is
+  what audiences subconsciously equate with professional footage."* `[community]`
+- *"Prompting 'high shutter speed, filmic tone with subtle motion blur' creates an
+  immediate expectation for how motion should be rendered."* `[community]`
+- The motion blur has to **match the motion** — a fast move rendered sharp, or a slow
+  one smeared, both read as wrong `[community]`.
+
+**Practical token, and it is cheap:** `shot at 24fps with a 180-degree shutter, so
+anything moving fast smears with natural motion blur.` Our clip prompts have carried
+`natural motion blur` as one item in a grain list; naming the *cadence* is stronger,
+because it tells the model which frames to blur rather than asking for blur in general.
+
+> **`[confirmed 2026-08-14]`.** Asked for it on the Karen drop; the falling phone came
+> back as a streak rather than a sharp object, and **no post pass was needed** for the
+> clip to read as captured. Use this clause on any shot with fast motion in it.
+
+**Corollary for falling objects specifically.** A dropped object crossing frame in a
+few frames should be a **streak**, not a crisp phone in four positions. If it is sharp,
+it will read as pasted-on no matter how correct the trajectory is.
+
+### The rule that outranks all of it: a real camera never catches the whole fall
+
+Four rounds of evidence, and it lines up exactly with what the physics research
+predicted:
+
+> **Every frame the object is airborne on screen is a frame the model can get wrong,
+> and it will use them all.** Occlusion is not a compromise — it is what real footage
+> of an accident looks like.
+
+**`[confirmed 2026-08-14]`.** Four clips that kept the falling phone in frame failed
+four different ways. The fifth framed it so the phone exits within a few frames, and it
+was accepted first time. This is the strongest rule in this file and the only one that
+has survived contact five times.
+
+Real handheld footage of someone dropping something catches the release and then loses
+the object immediately: it exits the frame, or the operator doesn't follow it. The
+audience fills in the rest and never questions it. **A shot that keeps a falling object
+in frame from hand to landing is already a stylised shot**, which means we were asking
+the model for the hardest possible version of the motion *and* a version that would
+have read as staged even if it rendered perfectly.
+
+The design rule that follows, and it is now a house rule rather than a per-shot fix:
+
+| Instead of | Do |
+| --- | --- |
+| render the fall | render the **release**, and let the object leave frame within a few frames |
+| render the landing | let it be a **sound**, delayed by the right beat |
+| one continuous shot covering the event | **cut**: a wide that stages it, an insert that loses it, and the aftermath |
+
+**Cutting is free and generating is not.** The three-shot version costs the same
+credits as one failed ten-second attempt, and every shot in it is inside the model's
+competence.
+
+### The rest of the "looks AI" complaint
+
+Independent of the physics, and consistent across every source `[community]`:
+
+- **Perfection is the tell.** *"AI video defaults to an impossibly clean look because
+  models were trained to produce 'high quality' output — but perfection is what makes
+  it look fake."* Grain, slight overexposure, handheld wobble, imperfect focus.
+- **Describe how a real operator would have shot it**, not how the scene looks —
+  *"handheld camera with subtle movement, shot on 16mm, slightly warm colour cast"*
+  beats *"smooth steady shot"* on realism every time.
+- **Post does the last 10% — but it is a rescue, not a requirement.** A subtle grain
+  layer *"instantly makes output feel captured rather than generated"*, and a 10–15%
+  speed adjustment breaks the synthetic cadence. **On our one confirmed run neither was
+  needed** `[confirmed 2026-08-14]`: a correctly framed shot with the shutter clause in
+  the prompt read as real straight out of Flow. Reach for post when a clip is close,
+  not as a standing step.
+
+### Sources for this section (2026-08-14)
+
+- [Why AI videos look fake (and how physics can fix it) — Medium](https://medium.com/@nandinilreddy/why-ai-videos-look-fake-and-how-physics-can-fix-it-bb84149831d8) `[community]` — models mimic the appearance of motion without mass, gravity or momentum.
+- [The A to Z guide to Seedance 2.0 prompts](https://ethicalfounder.com/guide-to-seedance-2-0-prompts-claude-ai-video-prompt-generation/) `[community]` — 24fps / 180° shutter as the realism convention; motion blur must match the simulated shutter; describes another model, so treat the mechanism as directional and the token as cheap to try.
+- [How to add realistic motion blur and depth of field to AI video — Higgsfield](https://geo.higgsfield.ai/task/blog/how-to-add-motion-blur-depth-of-field-ai-video) `[community]` — shutter-speed prompting sets the expectation for how motion renders.
+- [5 ways to make AI video look less AI — Sunra](https://sunra.ai/blog/make-ai-video-look-less-ai) · [Why your AI videos look fake — Nemo](https://www.nemovideo.com/blog/why-ai-videos-look-fake-how-to-fix) · [Why AI video motion looks unnatural — AIVid](https://aivid.video/blog/why-ai-video-motion-looks-unnatural-and-how-to-fix-it) `[community]` — perfection as the tell; grain, wobble and imperfect focus; describe the operator, not the scene; grain and speed adjustment in post.
+
 ## Notes for BadCode `[untested]`
 
 1. **10s per generation fits `music-video-short`'s 10–20s target as 2+ clips** — consistent with
@@ -663,7 +976,15 @@ The craft half of the same pass, and it lines up with the house `STYLE LOCK` `[c
 
 ## Open questions
 
-- **First-frame fidelity** (above). Blocks everything else.
+- **First-frame *fidelity*.** Narrowed twice and still open, and it blocks
+  `animate-slide`. Omni has a Frames mode and it **honours a plate's geometry**
+  `[confirmed 2026-08-14]` — but nobody has checked whether frame one is a **pixel
+  match**. That is the remaining question, and it is the whole one.
+- **Does Omni's Frames tab expose an end-frame slot?** The confirmed run left it empty.
+  Vendor sources say no and call it "available soon"; one look answers it.
+- **Does `<IMAGE_REF_0>` / `<FIRST_FRAME>` do anything in Flow's prompt box?** Two
+  independent surfaces document the syntax `[vendor]` `[runware]`; nobody has typed it
+  into Flow. One cheap test.
 - Does the UK/EEA restriction on editing uploaded video apply to us in Flow, or only via API?
 - Does Flow's UI surface `previous_interaction_id`-style threading, or is that API-only?
 - Does the `flow` MCP server reach Omni Flash at all, or only the Veo path?
