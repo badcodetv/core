@@ -395,16 +395,39 @@ the symptom was named.
 
 ### 2g.7 The drop, from behind — clip · Omni Flash, Ingredients
 
-**This is the one that was asked for.** Four seconds, five sentences, every constraint
-positive, the fall occluded by the railing and the splash carried entirely by sound.
+Four seconds, camera vocabulary first, every constraint stated positively, the fall
+occluded by the railing and the splash carried entirely by sound.
 
 ```prompt
-Create a 4-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off low behind them on the promenade. Grainy night cinematography lit by ordinary streetlights. Her fingers go slack and the lit phone drops from her hand and falls past the railing out of sight below it, while both women stay leaning on the rail exactly as they are, heads still turned toward each other. Distant traffic, water against the piling and one small splash somewhere below the railing, no dialogue.
+Create a 4-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off low behind them on the promenade, grainy night cinematography under ordinary streetlights. @Karen's fingers go slack and the lit phone drops from her hand, falls past the railing out of sight below it, and a small splash sounds from below a moment later; both women stay leaning on the rail with their heads turned toward each other, talking. The reflections shift on the dark water while the bridge lights hold steady. Low indistinct voices under distant traffic and water against the stonework, no intelligible dialogue.
 ```
 
 **Append `Use this image as the starting frame.` only if you are in the Frames tab.**
 In Ingredients it is decoration — and possibly worse than decoration, since it asks
 for behaviour the mode does not provide.
+
+Four things in that prompt are doing specific work:
+
+- **`@Karen's fingers`, not `her fingers`.** Two women are in frame and `her` is
+  ambiguous — the model has to guess whose hand, and a wrong guess breaks the beat.
+  Naming the cast Character disambiguates *and* reinforces the binding.
+- **`the bridge lights hold steady`.** A big illuminated structure is exactly the
+  thing a video model animates unasked — the same trap as the Wonder Wheel in
+  §2f.5. Stated positively, per the negation finding, because *"the bridge does not
+  move"* is the phrasing that backfires.
+- **`the reflections shift on the dark water`** is the one named ambient motion.
+  Without one, models tend to animate the whole frame at once; with one, the rest
+  settles.
+- **`a small splash sounds from below`** sits in the *action* sentence rather than
+  the audio sentence, so the causality is unmistakable: the sound belongs to the
+  phone, and nothing splashes on screen.
+
+> **The risk this framing introduces.** In a wide from three or four metres back, the
+> phone is small. The lit screen is the only thing making the drop legible, and if it
+> reads as a flicker rather than an object, **the beat fails even with perfect
+> physics** — §1.6 needs the audience to *see* where the phone went. Watch the first
+> output for that specifically. The fix is not a re-roll: it is to cut §2g.9's tight
+> insert in immediately after, so the wide establishes and the insert confirms.
 
 #### The loadout
 
