@@ -412,6 +412,164 @@ context and everything afterwards locks in far better.
 
 ---
 
+## 8a. Studio 2.0 — what the update added
+
+**Added 2026-08-14** from Suno's own channel: a walkthrough with **Henry Fipps, product manager for
+Studio**.
+
+> **Read the source tier before the content.** Almost everything else in this knowledge base is folk
+> knowledge discovered by trial, because *"Suno publishes no meta-tag list and no slider guidance."*
+> This section is different: it is **the vendor describing their own product on camera**, feature by
+> feature. Treat capability claims here as reliable and *behaviour* claims — how well any of it
+> works in practice — as untested by us.
+
+**Everything in §8 above still applies.** 2.0 is **backwards compatible**: opening an existing
+project offers a modal — old interface or new — and nothing is lost either way. The three verbs, the
+prompt craft and the bootstrap trick are unchanged. What follows is additive.
+
+### Studio Chat — natural language over the project
+
+The headline. A chat bar that **can see the project state** — the audio on every track, the effects
+on them, the MIDI — and acts on it.
+
+- **`Enter` opens it from anywhere, `Escape` closes it.** Press `1` to fly it to the left as a full
+  conversation history for longer back-and-forth.
+- **Session admin**: *"rename all my tracks to something that makes more sense"* — renaming, colour
+  coding, tidying. Explicitly built because producers asked for it.
+- **Generation onto the timeline**: *"add a bassline here, should be 70s inspired and electric
+  bass."* It still has Suno's musical brain behind it.
+- **It teaches the product**: *"how do I record into this?"* returns which buttons to press. Worth
+  knowing before anyone goes hunting through docs.
+- **It drives the features below** — MIDI→audio conversion, plugin creation, covers — so most of
+  this section is reachable by typing rather than by finding a menu.
+
+**The workflow claim is that you click a thing, hit `Enter`, say what you want, hit `Escape`.** If
+that holds, it is a materially faster loop than the Create-tab cycle in §5.
+
+### Cover a vocal in place — keep the words, change the performance
+
+The single most useful thing here for us:
+
+> *"Keep the lyrics the same but cover this into a new lead vocal performance."*
+
+It **replaces the audio with new audio carrying the same timing and melody**. That is the Cover verb
+from §8 aimed at a vocal you have already recorded or generated, without touching the writing.
+
+**Why it matters for BadCode:** the recurring-narrator problem in §4 is about holding a voice across
+a release. This is the other half — holding the *take* and changing the voice. It is also the
+cheapest possible route to "the words are right, the delivery isn't", which is where most of our
+song rounds actually die.
+
+### MIDI — actual note-level control
+
+New track type alongside audio: horizontal note lines, i.e. a piano roll.
+
+- **Musical typing** — play chords and melodies on the computer keyboard, no hardware needed.
+- **External MIDI devices supported and plug-and-play** — keyboards, pad controllers, knobs and
+  faders. **Knobs, faders and Launchpad buttons can be mapped to Studio parameters**, which is what
+  makes the real-time effects below actually performable.
+- **Record MIDI to the timeline and edit the notes directly** — fix a flubbed note, extend a note,
+  change a voicing.
+- **Convert MIDI to audio through chat**: *"turn this MIDI clip into a rhythm electric guitar part"*
+  / a string quartet / whatever.
+
+**The stated reason it exists is precision**: *"not all G major chords are created equal."* For us
+that is bass movement and chord voicings — the two things a text prompt has never been able to
+specify. Note the standing rule in *Things that don't work*: **chord progressions as text are
+ignored, feed audio instead.** MIDI is now a third option and a better one.
+
+### Real-time audio effects, and a side-chain compressor
+
+A conventional signal chain per track — instrument first, then effects — with **about seven effects
+at launch and more promised**: reverb, delay, distortion, compressor, EQ among them.
+
+- **The compressor takes a side-chain input**: select another track (the drums) as the trigger, and
+  the source ducks to it. Demonstrated gluing a synth to a drum track.
+- **Automation** — parameters change over time. The demo automates an EQ to sweep a filter open,
+  which is a drum & bass staple we have never been able to ask for.
+
+> **⚠️ This does not overturn the §9 rule, and check before you assume it does.** That rule is
+> *"sidechain pumping cannot be undone — Suno learned to sound pumped without a real sidechain."*
+> Studio 2 lets you **apply** real side-chain to tracks inside Studio; it says nothing about
+> **removing** pumping already baked into a generation. Those are different problems. **Whether
+> `remove effects` (below) touches baked-in pumping is untested and worth ten minutes.**
+
+### Remove effects — recover a dry signal
+
+Right-click → **remove effects** → Studio arranges a dry version of the audio.
+
+**It works on audio you import, not just generations.** So: bring in a processed vocal, strip it
+back, and re-process with the in-house effects to taste.
+
+Read this against §9's account of why stems sound bad. It does not fix the structural problem —
+Suno still generates one master file and the splitter still guesses — but a dry signal is a
+different starting point from a wet one, and the de-artifacting recipe in §9 now has a cheaper
+sibling worth trying first.
+
+### Advanced split — the vendor confirms our doctrine
+
+§9 already says *"use the advanced splitter, not autosplit."* The PM says the same thing and gives
+the reason:
+
+> Auto-detecting every instrument sounds like it ought to be better, but *"this works the best when
+> you're using your ears and you say, I want that specific instrument."* Even though it is more
+> work, **the stems that come out of advanced mode are higher fidelity.** He uses it every time.
+
+New detail: **`Insert` drops the extracted stem straight onto the timeline** directly below the
+original audio, rather than making you export and re-import.
+
+### Imagine your own plugin
+
+Describe an effect in natural language and Studio builds it, names it, and keeps it in your library
+permanently under **My plugins** in the effect picker. It can be iterated on later.
+
+The worked example: *"make me a new plugin that does a tremolo effect. I want it to be like those
+old organ rotary cabinets. I should be able to control the speed and the depth."* Studio returned a
+build plan (a dual-LFO system, separate slow bass rotor and faster treble rotor), then shipped
+**Rotor Glow** with speed, depth, warmth, mix and a slow/fast switch.
+
+**Two things to steal from how that was asked:**
+
+- **Name the controls you want** — "speed", "depth", "amount" — and they become knobs. The plugin
+  language term is *amount*, but plain English resolved fine.
+- **Name a reference piece of hardware.** *"Those old organ rotary cabinets"* is what produced the
+  dual-rotor design nobody specified. Same mechanism as the `909 kick` shorthand in §8's prompt
+  craft: **gear names are dense tone instructions.**
+
+One surprise worth recording: the `warmth` knob turned out to be **saturation**, which nobody asked
+for and which the host liked. Expect the build to interpret rather than transcribe.
+
+### Recording hygiene — two small things that matter
+
+- **Latency calibration.** Measures round-trip latency so a live take **lands on the timeline where
+  you actually played it**. Do this before any real recording session.
+- **Count-in pre-roll** — metronome clicks before the take starts.
+
+Small features, and the difference between usable live tracking and unusable.
+
+### Keyboard shortcuts
+
+Studio 1's number-key panel scheme survives:
+
+| Key | Panel |
+|---|---|
+| `1` | move the chat to the side / full conversation history |
+| `2` | device view — the instrument and effects signal chain |
+| `3` | automation and take lanes |
+| `4` | the library |
+| `Shift`+`Tab` | piano roll instead of the device view |
+| `Enter` / `Escape` | open / close chat |
+
+### What is not answered here
+
+- **Pricing.** Studio is a paid add-on (§8); nothing was said about whether 2.0 changes that.
+- **How many effects, exactly.** *"Seven right now, more coming."*
+- **Whether any of §8's practical rules changed** — manual BPM, over-highlighting the region,
+  always filling Exclude Styles, clearing it between generations. Assume they still hold; the video
+  never revisits them.
+
+---
+
 ## 9. Stems
 
 **Why they sound bad, structurally:** Suno generates one master audio file end-to-end — it never had
@@ -482,7 +640,9 @@ chorus. This is where a flat AI arrangement gains dynamics.
 - **The "Rhymes" tool** in the lyrics box — reportedly never works.
 - **Chord progressions as text.** Suno was trained on adjectives describing vibe, not music theory;
   chord symbols are near-meaningless tokens. **Feed it audio instead** — play or render the
-  progression, upload, and Cover it at audio influence ~40.
+  progression, upload, and Cover it at audio influence ~40. **Or, since Studio 2.0, play it as
+  MIDI** — see [§8a](#8a-studio-20--what-the-update-added). That is now the precise option and this
+  one is the fallback.
 - **Music-theory intervals** (`third`, `fifth`) in harmony prompts — little effect. Raise weirdness
   to ~60 instead to get a genuinely different harmony line.
 - **"Max Mode."** The viral code block is almost certainly placebo: a control test with meaningless

@@ -9,7 +9,7 @@ the entry point — this is what it reads.
 |---|---|
 | [`system-prompt.txt`](./system-prompt.txt) | Base operating procedure — mode detection, output format, character limits, famous-artist translation, edge cases |
 | [`files/suno-tag-mechanics.md`](./files/suno-tag-mechanics.md) | The prompt language: hybrid format, information ordering, genre pairing, bracket language, exclude strategy, contamination words |
-| [`files/suno-controls-and-workflows.md`](./files/suno-controls-and-workflows.md) | **The control surface and the platform.** Sliders, model choice, the consistency stack (Voice / custom model / Lyricist), lyric editing, Studio, stems, known failure modes |
+| [`files/suno-controls-and-workflows.md`](./files/suno-controls-and-workflows.md) | **The control surface and the platform.** Sliders, model choice, the consistency stack (Voice / custom model / Lyricist), lyric editing, Studio (**including §8a — Studio 2.0: chat, MIDI, real-time effects, custom plugins**), stems, known failure modes |
 | [`files/producer-vocabulary.md`](./files/producer-vocabulary.md) | Words for describing sound, by domain; song structure; how to judge a generation |
 | [`files/lyric-craft.md`](./files/lyric-craft.md) | Syllable counts, rhyme schemes, section shapes, engineered transitions — **and the punctuation/timing table: how Suno times what you wrote** |
 | [`files/lyricist-playbook.md`](./files/lyricist-playbook.md) | **The songwriter's side**: section-tag character ([Chorus] vs [Drop] vs [Chant]), performance cues, multi-voice casting, typography, pronunciation, the content filter, hooks, lyric failure modes, Studio 1.2 warp/quantize. **Weaker evidence than the rest of this base — read its confidence warning first** |
@@ -46,6 +46,7 @@ here is the artifact.
 |---|---|---|
 | 2026-08-08 | ChillPanic, *"Finally! Use TWO VOICES in ONE SUNO AI SONG"* (published 2026-08-04) | `files/suno-controls-and-workflows.md` §4a — the layered-cover method |
 | 2026-08-08 | 11-agent web sweep, songwriter-side sources (non-ChillPanic) | `files/lyricist-playbook.md` (new) + `files/lyric-craft.md` timing table |
+| 2026-08-14 | **Suno's own channel** — Studio 2.0 walkthrough with **Henry Fipps, product manager for Studio** | `files/suno-controls-and-workflows.md` §8a (new) + a pointer from §11 |
 
 Re-run the harvest script with a date filter to catch up on anything newer.
 
@@ -59,6 +60,12 @@ failed.
 **Suno publishes no meta-tag list and no slider guidance.** This entire domain is folk knowledge
 discovered by trial. Treat confident claims — including ours — as testable, not settled. Where the
 corpus reports a controlled A/B test, that is noted inline.
+
+**One section is the exception, and it is worth knowing which.** `suno-controls-and-workflows.md`
+**§8a (Studio 2.0)** came from Suno's own channel, walked through by the product manager for Studio.
+That makes its *capability* claims vendor-grade — far stronger than anything else here — while its
+*behaviour* claims (how well any of it actually works) remain untested by us. Nowhere else in this
+base does the vendor speak.
 
 **The corpus has a shape, and it is a producer's.** ChillPanic is a working music producer, so the
 distillation is strong on sliders, model choice, Studio, stems, mixing and workflow — and thin on
