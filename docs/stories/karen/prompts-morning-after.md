@@ -283,23 +283,65 @@ phone in the river."* Her sheet is explicit that **the affection has to read thr
 the bluntness** — if she plays contemptuous, the pep talk becomes mockery and the hinge
 snaps. So: unimpressed, patient, awake about four seconds, faintly amused. Not withering.
 
+> **✅ FIRED AND ACCEPTED 2026-08-14 — candidate B of round 2.** Nano Banana Pro,
+> `@Susan` cast, 16:9, 3 candidates, no reference image. The block below is what was
+> actually sent; it is a record now, not a brief.
+
+**Round 1 came back wrong in a way worth keeping**, because the cause was one clause:
+
+| Round 1 said | What it produced |
+| --- | --- |
+| `her free hand pressed flat over her eyes` | **eyes shut, wincing — she read as hungover and in pain**, not listening |
+| `from the side and slightly below at mattress height` (buried in Composition) | a front-on shot at seated eye level; the camera note was ignored |
+| *(no imperfection tokens)* | a soft, pretty, show-home-tidy room — the plastic default |
+
+**Susan's job in this beat is to be the one who is fine.** She is patient, unimpressed
+and fond; the pain is Karen's. Round 2 fixed it with four changes, all straight out of
+[`docs/flow/image-prompting.md`](../../flow/image-prompting.md):
+
+1. **Eyes open and unfocused**, hand moved up into her hairline. One word — *open* —
+   turned a wince into listening. **The single highest-value edit on this plate.**
+2. **Camera promoted to its own clause with focal length and aperture** (§3's four
+   levers): `low-angle shot from her side at mattress height, 35mm at f/2`. Stated as a
+   lever it landed; buried in Composition it did not.
+3. **Imperfection tokens** (§4 — "the model defaults to studio-perfect"):
+   `hyper-realistic skin texture with visible pores`, `a faint smear on the lens`,
+   `subtle handshake blur`, `uneven exposure, the window blown out behind the blind`.
+4. **Environmental imperfection** — yesterday's jeans on the floor, a tangled charger
+   cable, a mug going cold. The room stopped looking staged.
+
 ```prompt
 SCENE:
 
-Subject: a woman sitting up against the headboard with a phone to her ear, four seconds awake, listening.
+Subject: a woman sitting up against a headboard with a phone held to her ear, four seconds awake, listening to someone else talk.
 
-Composition: 16:9, from the side and slightly below at mattress height, her head and shoulders left of centre with the empty bedroom falling away to the right; the rumpled duvet crosses the bottom of the frame out of focus; not quite level.
+Camera: low-angle shot from her side at mattress height, 35mm at f/2, the near edge of the bed close to the lens.
 
-Action: mid-listen with her free hand pressed flat over her eyes, already halfway through a slow sigh — the moment before she says the thing.
+Composition: 16:9. She sits left of centre. The bedroom falls away to the right. The rumpled duvet crosses the bottom of the frame, close and out of focus. The frame tilts a few degrees off level.
 
-Location: the same tidier apartment bedroom, mid-morning; the bedside lamp, the half-drunk mug and the paperback still where they were.
+Action: her free hand is pushed up into her hairline at the temple. Her eyes are open and unfocused, looking at nothing across the room. She is halfway through a slow sigh.
 
-Light: the same ladder of daylight from the half-open blind camera-left, striping across the headboard and her arm.
+Location: an apartment bedroom, mid-morning. A bedside table holds a lamp, a half-drunk mug going cold, a paperback face-down and a tangled charger cable. Yesterday's jeans are on the floor where they were stepped out of. An olive suede bomber is slung over the back of a chair.
 
-Style: a still from a 35mm independent film. Available light only, unretouched, natural skin texture.
+Light: a hard ladder of daylight through a half-open venetian blind camera-left, striping across the headboard and her arm. No other source. Uneven exposure, the window blown out behind the blind.
 
-Constraints: sleep-creased t-shirt, hair flattened on one side; her expression is unimpressed and patient rather than contemptuous, with the affection showing; keep every label and book spine free of readable lettering.
+Style: a still from a 35mm independent film. Available light only. Hyper-realistic skin texture with visible pores and subtle imperfections. A faint smear on the lens, fine grain, subtle handshake blur.
+
+Constraints: sleep-creased t-shirt, hair flattened on one side. She is weary and patient rather than pained or contemptuous. Keep every label and book spine free of readable lettering.
 ```
+
+**Two notes for the next plate in this room.** Candidate **C** mirrored the composition
+(her right of centre, room falling left) and gave the *best* camera of the three — a
+true low side angle, with dust visible in the light beam. If a reverse of this setup is
+ever needed, C is the reference to attach. And **the "few degrees off level" never
+landed on any candidate** — three for three came back level, so treat frame tilt as
+something Nano Banana Pro does not honour and get it in the edit instead.
+
+> **⚠️ Susan's register question is now answered.** Her Character references are clean
+> e-commerce photography rather than the shared `STYLE LOCK`, and
+> [`characters/susan.md`](./characters/susan.md) has been waiting on a ruling. **The
+> binding held** — she came back recognisably herself under a hard blind-light grade,
+> across all three candidates. **The divergence is fine; the ruling is "leave it."**
 
 ### 2h.6 The news lands — plate
 
