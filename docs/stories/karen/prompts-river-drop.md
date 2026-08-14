@@ -395,18 +395,41 @@ the symptom was named.
 
 ### 2g.7 The drop, from behind — clip · Omni Flash, Ingredients
 
-Four seconds, camera vocabulary first, every constraint stated positively, the fall
-occluded by the railing and the splash carried entirely by sound.
+**Rewritten 2026-08-14 (round 2 of the clip)** after the first version **ignored the
+reference image and re-staged the scene**.
+
+That is not a bug. In Reference/Ingredients mode the model *"treats it as a subject
+and style reference rather than locking it as the first frame, with the model expected
+to re-stage the scene"* — and **the two modes want opposite prompts**
+([full table](../../google-flow/omni-flash.md#references-vs-frames-the-prompt-has-to-change-shape)):
+
+| | Reference / Ingredients | Frame |
+| --- | --- | --- |
+| The prompt must | **describe the whole scene**, and assign the image a role | describe only **what happens next** |
+
+**Our first clip was written in Frame shape and fired in Reference mode.** Motion-only
+text plus an image the model owed nothing to — it had no staging to hold, so it
+invented one. Both halves were defensible; the combination was empty.
+
+So this version **carries the staging in words**. It is longer than the
+three-to-four-sentence target on purpose: that target assumes frame anchoring. The
+extra words buy scene description only — never narration or negation.
 
 ```prompt
-Create a 4-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off low behind them on the promenade, grainy night cinematography under ordinary streetlights. @Karen's fingers go slack and the lit phone drops from her hand, falls past the railing out of sight below it, and a small splash sounds from below a moment later; both women stay leaning on the rail with their heads turned toward each other, talking. The reflections shift on the dark water while the bridge lights hold steady. Low indistinct voices under distant traffic and water against the stonework, no intelligible dialogue.
+Create a 4-second 16:9 video, one continuous shot, no cuts, at real speed. Use the supplied image as the visual reference for the whole shot and hold its staging.
+
+Locked off on a 35mm lens, low on the paving three or four metres behind two women at a waterfront railing on a New York riverside promenade at night, seen from behind and slightly to one side. The railing crosses the frame in front of them, the paving they stand on fills the foreground, and an illuminated suspension bridge and the Manhattan skyline sit far across the dark river beyond it. @Karen is in a cream blouse and a camel cardigan off one shoulder with a lit phone held slackly out over the rail; @Susan is beside her in an olive suede bomber with a canned drink resting on the rail.
+
+@Karen's fingers go slack and the phone drops from her hand, falls past the railing out of sight below it, and a small splash sounds from below a moment later; both women stay leaning on the rail with their heads turned toward each other, talking. The reflections shift on the dark water while the bridge lights hold steady.
+
+Observational documentary camerawork, available light only from the promenade streetlights, real-time pace, unposed. Grainy super-8 capture: visible film grain, ISO noise, natural motion blur, mild halation around the streetlights and bridge lights, deep soft blacks. Low indistinct voices under distant traffic and water against the stonework, no intelligible dialogue.
 ```
 
 **Append `Use this image as the starting frame.` only if you are in the Frames tab.**
 In Ingredients it is decoration — and possibly worse than decoration, since it asks
 for behaviour the mode does not provide.
 
-Four things in that prompt are doing specific work:
+Beyond the staging, five things in that prompt are doing specific work:
 
 - **`@Karen's fingers`, not `her fingers`.** Two women are in frame and `her` is
   ambiguous — the model has to guess whose hand, and a wrong guess breaks the beat.
@@ -421,6 +444,13 @@ Four things in that prompt are doing specific work:
 - **`a small splash sounds from below`** sits in the *action* sentence rather than
   the audio sentence, so the causality is unmistakable: the sound belongs to the
   phone, and nothing splashes on screen.
+- **The imperfection tokens are load-bearing, not decoration.** `film grain`,
+  `ISO noise`, `natural motion blur`, `halation` are what stop the model smoothing
+  everything into the plastic look `[community]` — and `observational documentary
+  camerawork… unposed` is the documented way to get vérité: *instruct it not to
+  compose cinematically*. For an accident caught on camera, a camera that is not
+  helping **is** the cinematic choice. Our §1 `STYLE LOCK` has asked for most of
+  these on the image side all along; the clip prompts had never carried them.
 
 > **The risk this framing introduces.** In a wide from three or four metres back, the
 > phone is small. The lit screen is the only thing making the drop legible, and if it

@@ -5,6 +5,7 @@ API access 30 Jun 2026. **Still public preview.**
 **Researched:** 2026-08-12 · **second pass 2026-08-14**
 ([Prompt craft](#prompt-craft-what-a-failed-shot-taught-us)) · **third pass 2026-08-14**
 ([Physics shots and the input-mode matrix](#physics-shots-and-the-flow-input-mode-matrix)) ·
+**fourth pass 2026-08-14** ([References vs frames](#references-vs-frames-the-prompt-has-to-change-shape)) ·
 **Confirmed against our Flow session:** never.
 
 > **Read the verdict first.** On current evidence Omni Flash is *not* a drop-in replacement for the
@@ -190,6 +191,9 @@ tier above forum hearsay.
   It does not affect the **end**-frame finding, which is separate and confirmed.
 - **Spend the rest of the prompt on what the image cannot show**: motion, timing, audio.
   Re-describing what is already visible wastes the word budget and invites drift.
+  **⚠️ True in Frame mode only** — in Reference/Ingredients mode the opposite holds and the
+  prompt must carry the staging. See
+  [References vs frames](#references-vs-frames-the-prompt-has-to-change-shape).
 - **One main action per clip.** If the source image holds several elements, keep the prompt to a
   single action or the animation loses coherence. With no extension or interpolation available,
   **plan an action that starts and resolves inside the 10 seconds.**
@@ -561,6 +565,80 @@ Additions to the table in the previous section:
 - [Measuring 3D Spatial Geometric Consistency in Dynamic Video Generation](https://arxiv.org/pdf/2603.19048) · [Why spatial awareness is the missing key](https://www.technoohub.com/why-spatial-awareness-is-the-missing-key-in-generative-video) `[community]` — no world model; geometric and perspective failures.
 - [Veo 3.1 first/last frame](https://www.eachlabs.ai/google/veo3-1/veo3-1-first-last-frame-to-video) `[community]` — interpolation between pinned endpoints.
 - [AI Video Quality Checklist — Green Frog Labs](https://greenfroglabs.com/blog/ai-video-quality-avoid-slop-appearance) `[community]` — grain opacity, speed adjustment, frame-by-frame review.
+
+## References vs frames: the prompt has to change shape
+
+**Added 2026-08-14, fourth pass.** Triggered by the Karen drop clip **ignoring its
+reference image and re-staging the scene**. That is not a bug and no amount of
+insisting fixes it — *"the model treats it as a subject and style reference rather
+than locking it as the first frame, with the model expected to re-stage the scene…
+this is the expected behavior"* `[community]`.
+
+### The two modes want opposite prompts
+
+From Runware's reference-driven guide `[runware]`:
+
+| | **Reference / Ingredients** | **Frame** |
+| --- | --- | --- |
+| What the image is | visual ground truth for style, character, composition — a *guide* | the locked opening composition |
+| How many | up to **7** (Flow UI exposes fewer) | **exactly 1** |
+| What the prompt must do | **describe the new scene**, plus assign each image a role | *"emphasise action and narrative after the anchor"* — what happens **next** |
+| Re-describing the scene | **required** — the text carries the staging | **wasteful** — the anchor carries it |
+
+> **This resolves a contradiction that has been sitting in this file.** The
+> [prompt-craft section](#prompt-craft-what-a-failed-shot-taught-us) says *"spend the
+> rest of the prompt on what the image cannot show — re-describing what is already
+> visible wastes the word budget and invites drift."* That advice is **correct for
+> Frame mode and exactly wrong for Reference mode.** In Reference mode the model has
+> no obligation to the image's staging, so a motion-only prompt leaves it nothing to
+> hold and it invents a scene.
+>
+> **The failure that prompted this pass was precisely that mismatch:** a prompt
+> written in Frame-mode shape, fired in Ingredients. Both halves were individually
+> defensible and the combination had nothing in it.
+
+**Corollary on length.** The three-to-four-sentence target assumes frame anchoring.
+**Reference-mode prompts are legitimately longer** because they carry the staging as
+well as the motion. That is not licence to return to 450-word specs — the extra words
+buy *scene description*, never frame-by-frame narration or negation piles.
+
+**Corollary on drift.** In reference mode, *"add detailed appearance descriptions to
+your prompt, reinforcing your character's appearance in text to prevent the model
+from drifting from the reference"* `[community]`. Wardrobe and staging in words, not
+faces — our casting rule still holds, and it costs nothing here.
+
+### Choosing the mode
+
+- **The plate's exact composition matters** (an approved panel, a geometry that must
+  survive) → **Frame**. If Omni's Frames tab is unavailable, that is a Veo job.
+- **Only the look, the characters or the props matter**, and the shot may be
+  re-staged → **Reference / Ingredients**, with the scene written out in full.
+- **Both** → stack them: an anchor frame *plus* character references is a documented
+  combined mode `[runware]`.
+
+### Realism: name the imperfections, and refuse to compose
+
+The craft half of the same pass, and it lines up with the house `STYLE LOCK` `[community]`:
+
+- **Explicit imperfection tokens stop the smoothing.** `film grain`, `motion blur`,
+  `slight chromatic aberration`, `ISO noise`, `halation` — *"prompts that include
+  these stop the AI from smoothing everything out."* Our §1 lock already asks for
+  most of them on the image side; **clip prompts should carry them too**, and mostly
+  have not.
+- **Name the capture, not just the look:** focal length, film stock, lighting
+  condition. Again already the lock's vocabulary.
+- **For vérité, instruct it *not* to compose.** *"Documentary AI film prompts work
+  best when you explicitly instruct the model not to compose cinematically —
+  available light, handheld presence, and real-time pace are what separate vérité
+  from everything else."* For an accident caught on camera, that **is** the cinematic
+  choice: a camera that is not helping is what reads as real.
+
+### Sources for this section (2026-08-14)
+
+- **[Reference-driven video with Gemini Omni Flash — Runware](https://runware.ai/docs/models/google-gemini-omni-flash/guides/reference-driven-video) `[runware]`** — the mode table above: reference images as persistent ground truth vs a single locked opening frame, the 7-vs-1 limits, and the opposite prompt shapes each wants.
+- [Gemini Omni Flash reference-to-video — ShortGenius](https://shortgenius.com/models/google-gemini-omni-flash-reference-to-video) `[community]` — *"treats it as a subject and style reference rather than locking it as the first frame… expected to re-stage the scene."*
+- [Google Flow AI prompts guide](https://whiskailabs.net/google-flow-ai-prompts/) `[community]` — reinforce appearance in text to prevent drift from a reference; the `@` asset syntax.
+- [Realistic AI video prompting — Magic Hour](https://magichour.ai/blog/realistic-ai-video-prompting) · [AI film prompts by genre — Imagine.art](https://www.imagine.art/blogs/ai-film-prompts-guide) `[community]` — imperfection tokens, capture specifics, and the don't-compose-cinematically rule for documentary.
 
 ## Notes for BadCode `[untested]`
 
