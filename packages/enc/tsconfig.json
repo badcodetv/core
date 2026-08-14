@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    // The program's interface arrives as generated JSON from `chain build`.
+    "resolveJsonModule": true
+  },
+  "include": ["src"]
+}

@@ -1,0 +1,251 @@
+//! When they print, we print.
+//!
+//! The permissionless core: read what the Fed published, and move the supply to
+//! `k × M2`. Anyone may call it and it costs a fraction of a cent, which is the
+//! point — a peg that only BadCode could advance would be a peg BadCode
+//! controls.
+//!
+//! **Level-targeting, not a ratchet.** Every release retargets absolutely, so a
+//! downward M2 revision and genuine quantitative tightening travel the identical
+//! code path. Nothing records a burn the vault could not cover: the next
+//! target is absolute, so the excess corrects itself, and remembering it as well
+//! would apply the correction twice and undershoot permanently. The honest
+//! invariant is therefore `supply ≥ k × M2`, with equality whenever the vault
+//! was solvent enough to absorb the last burn.
+use anchor_lang::prelude::*;
+use anchor_spl::token::{burn, mint_to, Burn, Mint, MintTo, Token, TokenAccount};
+
+use crate::errors::EncError;
+use crate::math::{capped_step, rescale, supply_move, target_supply, PriceCurve, SupplyMove};
+use crate::oracle::read_quote;
+use crate::state::*;
+
+/// Emitted on every successful sync, so the website and any indexer can show
+/// what the printer did without replaying the whole chain.
+#[event]
+pub struct Synced {
+    pub m2_value: u64,
+    pub m2_release_date: i64,
+    pub target_supply: u64,
+    /// Positive when minted, negative when burned.
+    pub supply_delta: i128,
+    /// How much of a burn the vault could not cover. Non-zero means supply is
+    /// left above target on purpose.
+    pub uncovered_burn: u64,
+    /// False when this was one capped step of a catch-up walk rather than the
+    /// whole move — the release date is not committed until the walk lands, so
+    /// an indexer can tell "still catching up" from "done".
+    pub release_committed: bool,
+    pub slot: u64,
+}
+
+pub fn handler(ctx: Context<SyncM2>) -> Result<()> {
+    // Prices are rescaled as part of a sync, so syncing before the assets exist
+    // would set a ratio the missing assets never see.
+    require!(
+        ctx.accounts.config.initialized_assets == ASSET_COUNT,
+        EncError::NotFullyInitialized
+    );
+
+    // The one thing retirement stops. Everything else — the auctions, the
+    // faucet, the escrow exits — goes on forever at the last prices the Fed
+    // ever reported.
+    require!(!ctx.accounts.config.retired, EncError::Retired);
+
+    let clock = Clock::get()?;
+    let now = clock.unix_timestamp;
+    let config = &ctx.accounts.config;
+    let oracle_info = ctx.accounts.oracle.to_account_info();
+    let quote = read_quote(&oracle_info, &config.expected_feed_id)?;
+
+    let previous_m2 = ctx.accounts.printer.m2_value;
+
+    // Anti-double-mint. The release date is the Fed's, not ours, so it is the
+    // one timestamp a caller cannot advance simply by waiting — which is what
+    // makes it usable as a replay guard where a block time would not be.
+    require!(
+        quote.release_date > ctx.accounts.printer.m2_release_date,
+        EncError::StaleRelease
+    );
+
+    // The sanity cap is a **speed limit, not a veto** (T29). A move beyond it
+    // is walked toward over several permissionless calls rather than refused,
+    // because refusing it was permanent: `previous_m2` only advances on
+    // success, so one oversized release froze the peg forever and `retire`
+    // ended the coin a year later. A real monthly M2 move is a fraction of a
+    // percent, so in practice this lands in one step and nobody ever sees it.
+    let applied_m2 = capped_step(previous_m2, quote.m2_value, config.max_change_bps)?;
+    // Only the step that lands exactly on the quote commits its release date.
+    // Until then the guard above keeps letting the same quote back in, which is
+    // what makes the walk possible at all.
+    let release_committed = applied_m2 == quote.m2_value;
+
+    let target = target_supply(applied_m2, config.k)?;
+    let supply = ctx.accounts.mint.supply;
+    let vault_seeds: &[&[u8]] = &[VAULT_SEED, &[ctx.bumps.vault]];
+
+    let mut uncovered_burn: u64 = 0;
+    let supply_delta: i128 = match supply_move(supply, target) {
+        SupplyMove::Hold => 0,
+        SupplyMove::Mint(amount) => {
+            // No absolute cap on the size of a mint. `max_change_bps` already
+            // bounds the move as a *ratio*, and a bound in base units is a
+            // number an ordinary month outgrows — which on a non-upgradeable
+            // program is a timer rather than a guard (T29).
+            mint_to(
+                CpiContext::new_with_signer(
+                    ctx.accounts.token_program.key(),
+                    MintTo {
+                        mint: ctx.accounts.mint.to_account_info(),
+                        to: ctx.accounts.vault_token_account.to_account_info(),
+                        authority: ctx.accounts.vault.to_account_info(),
+                    },
+                    &[vault_seeds],
+                ),
+                amount,
+            )?;
+            amount as i128
+        }
+        SupplyMove::Burn(amount) => {
+            // Only the vault's own tokens can be burned. Reaching into holders'
+            // balances to hit the target is exactly the power this coin claims
+            // not to have, so a burn the vault cannot cover simply burns
+            // everything it has and leaves supply above target.
+            let available = ctx.accounts.vault_token_account.amount;
+            let burning = amount.min(available);
+            uncovered_burn = amount - burning;
+            if burning > 0 {
+                burn(
+                    CpiContext::new_with_signer(
+                        ctx.accounts.token_program.key(),
+                        Burn {
+                            mint: ctx.accounts.mint.to_account_info(),
+                            from: ctx.accounts.vault_token_account.to_account_info(),
+                            authority: ctx.accounts.vault.to_account_info(),
+                        },
+                        &[vault_seeds],
+                    ),
+                    burning,
+                )?;
+            }
+            -(burning as i128)
+        }
+    };
+
+    // Rescaled by *this step's* ratio, not the whole move's. The steps
+    // telescope, so a walk leaves prices where one big sync would have.
+    rescale_assets(&ctx, previous_m2, applied_m2, now)?;
+
+    let printer = &mut ctx.accounts.printer;
+    printer.m2_value = applied_m2;
+    if release_committed {
+        printer.m2_release_date = quote.release_date;
+    }
+    printer.last_sync_slot = clock.slot;
+    // The retirement clock, and it restarts only here — on a sync that
+    // *succeeded*. A feed still serving a dead series fails the release-date
+    // guard above and never reaches this line, which is what stops a bot
+    // cranking a corpse from keeping the coin alive forever.
+    printer.last_sync_at = now;
+    printer.target_supply = target;
+
+    emit!(Synced {
+        m2_value: applied_m2,
+        m2_release_date: printer.m2_release_date,
+        target_supply: target,
+        supply_delta,
+        uncovered_burn,
+        release_committed,
+        slot: clock.slot,
+    });
+
+    msg!(
+        "M2 {previous_m2} -> {applied_m2} (of {}), supply delta {supply_delta}",
+        quote.m2_value
+    );
+    Ok(())
+}
+
+/// Move every asset's price target by the same ratio the money supply moved.
+///
+/// An asset should cost the same *share* of the money supply as it did before,
+/// so when M2 rises one percent every price target rises one percent. The new
+/// curve starts from the price the asset is showing right now, so nothing
+/// jumps: the visible price walks to its new target over thirty days and ticks
+/// every slot on the way.
+///
+/// The ten assets arrive as `remaining_accounts` in index order. Naming them
+/// individually would put them past the transaction size limit alongside
+/// everything else this instruction needs.
+fn rescale_assets(ctx: &Context<SyncM2>, m2_old: u64, m2_new: u64, now: i64) -> Result<()> {
+    require!(
+        ctx.remaining_accounts.len() == ASSET_COUNT as usize,
+        EncError::NotFullyInitialized
+    );
+
+    for (index, info) in ctx.remaining_accounts.iter().enumerate() {
+        let index = index as u8;
+        // Derived, not trusted. Without this a caller could pass ten copies of
+        // asset 0 and rescale it ten times.
+        let seeds = asset_seeds(index);
+        let refs: Vec<&[u8]> = seeds.iter().map(|s| s.as_slice()).collect();
+        let (expected, _) = Pubkey::find_program_address(&refs, &crate::ID);
+        require_keys_eq!(info.key(), expected, EncError::InvalidAssetIndex);
+
+        let mut asset: Account<Asset> = Account::try_from(info)?;
+        let curve = PriceCurve {
+            from: asset.price_from,
+            to: asset.price_to,
+            start: asset.interp_start,
+            end: asset.interp_end,
+        };
+
+        // The term clock is deliberately untouched. A Fed release moves what an
+        // asset is worth; it does not shorten or extend anyone's tenancy, and
+        // an auction whose end date moved with the money supply could never be
+        // "a clock published at the moment they won".
+        asset.price_from = curve.price_at(now);
+        asset.price_to = rescale(asset.price_to, m2_old, m2_new)?;
+        asset.interp_start = now;
+        asset.interp_end = now
+            .checked_add(PRICE_INTERPOLATION_SECONDS)
+            .ok_or(error!(EncError::MathOverflow))?;
+
+        asset.exit(&crate::ID)?;
+    }
+    Ok(())
+}
+
+/// No signer. Anyone may advance the peg, which is the whole idea — the fee
+/// payer signs the transaction, but this instruction asks nothing of them.
+#[derive(Accounts)]
+pub struct SyncM2<'info> {
+    #[account(seeds = [CONFIG_SEED], bump = config.bump)]
+    pub config: Account<'info, Config>,
+
+    #[account(mut, seeds = [PRINTER_SEED], bump = printer.bump)]
+    pub printer: Account<'info, Printer>,
+
+    /// CHECK: interpreted by `oracle::read_quote`, which is the only thing that
+    /// knows what shape this account has — a Switchboard feed in a real build,
+    /// a mock in a mock one.
+    pub oracle: UncheckedAccount<'info>,
+
+    #[account(mut, address = config.mint)]
+    pub mint: Account<'info, Mint>,
+
+    /// CHECK: signer-only PDA; the mint authority and the only account whose
+    /// tokens this instruction may burn.
+    #[account(seeds = [VAULT_SEED], bump)]
+    pub vault: UncheckedAccount<'info>,
+
+    #[account(
+        mut,
+        associated_token::mint = mint,
+        associated_token::authority = vault,
+    )]
+    pub vault_token_account: Account<'info, TokenAccount>,
+
+    pub token_program: Program<'info, Token>,
+    // remaining_accounts: the ten Asset PDAs, writable, in index order.
+}

@@ -1,3 +1,5 @@
+// First, and before anything that can reach Anchor: see the file for why.
+import './buffer-global'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { App } from './App'

@@ -46,10 +46,13 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
 | `docs/marketing/` | Marketing & release plans — reaching people, not making the thing | …it's a channel/campaign/launch plan |
 | `docs/misc/` | Catch-all for what fits nowhere else | …in doubt |
 | `docs/suno-gpt/` | Suno-prompting toolkit (operating procedure + reference files) | …you're turning a song idea into a Suno prompt |
-| `docs/google-flow/` | Engine reference — how Flow's models (Nano Banana, Omni Flash) actually behave, and how to prompt them. **All engine research goes here, always** — see [`docs/google-flow/README.md`](./docs/google-flow/README.md) | …a generation came back wrong, or you learned something about an engine |
-| `.claude/skills/` | `new-idea`, `new-marketing-idea`, `new-story`, `suno-prompt`, `make-comic`, `edit-panel`, `animate-slide`, `music-video-short`, `new-image` — orchestrators for parking an idea, capturing a marketing/distribution play, story capture, Suno prompting, the full idea→comic pipeline, editing an existing panel image, animating a finished panel, the full idea→short-form music-video pipeline (Suno track + Flow clips + edit plan), and standalone brand imagery | …you're capturing an idea or marketing play, developing a story, making a track, building a comic, editing a panel, animating a slide, making a short, or making a brand image |
+| `docs/flow/` | Google Flow **prompt craft** — writing and debugging a prompt (Nano Banana + Veo), camera vocabulary, consistency, policy blocks. Paired with the `flow-prompt` skill | …you're writing or debugging a Flow prompt |
+| `docs/google-flow/` | Google Flow **engine behaviour** — evidence-tiered research into what the models (Nano Banana, Omni Flash) actually do, with a refresh protocol. **New engine findings go here** — see [`docs/google-flow/README.md`](./docs/google-flow/README.md). *(⚠ Overlaps `docs/flow/`; the two trees were written independently and a consolidation call is still owed.)* | …a generation came back wrong, or you learned something about an engine |
+| `.claude/skills/` | `new-idea`, `new-marketing-idea`, `new-story`, `suno-prompt`, `make-comic`, `edit-panel`, `animate-slide`, `music-video-short`, `new-image`, `badcode-art-direction`, `flow-prompt` — orchestrators for parking an idea, capturing a marketing/distribution play, story capture, Suno prompting, the full idea→comic pipeline, editing an existing panel image, animating a finished panel, the full idea→short-form music-video pipeline (Suno track + Flow clips + edit plan), standalone brand imagery, the BadCode comic register, and Google Flow prompt craft | …you're capturing an idea or marketing play, developing a story, making a track, building a comic, editing a panel, animating a slide, making a short, making a brand image, or writing a Flow prompt |
 | `packages/comic` | `@badcode/comic` — code-first comic rendering library (authoring guide: [`AUTHORING.md`](./packages/comic/AUTHORING.md)) | …you're building the viewer |
 | `apps/web` | The website (Vite + React + TS SPA) | …you're building pages/routes |
+| `chain/` | Anchor workspace + Docker toolchain — [`README`](./chain/README.md), [`TESTING`](./chain/TESTING.md) | …you're writing an on-chain program |
+| `packages/chain-{cli,kit,react}` | The portable Solana kit — names no coin, copied into other repos | …you're touching the toolchain itself |
 
 ## How to work in this repo
 
@@ -79,9 +82,22 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
   the vocal arc, what must survive — then produces a style prompt, exclude-styles list, slider
   settings, and on request lyrics, in the BadCode voice, refining against what you actually hear. It
   runs on the toolkit in [`docs/suno-gpt/`](./docs/suno-gpt/README.md) and defaults to drum & bass.
-  The toolkit also covers the **platform** beyond the prompt box — the three influence sliders, the
-  Voice/custom-model stack for a recurring narrator across a release, lyric editing, Studio, stems,
-  and the things Suno reliably gets wrong (half-time drums, niche D&B subgenres).
+  **The skill also drives the app, not just the prompt box** — ask it "how do I…" or "what do I
+  click" and it gives a click-path with every setting stated. The toolkit covers the three influence
+  sliders, the Voice/custom-model stack for a recurring narrator across a release, lyric editing,
+  stems, **Suno Studio 2.0** (project-aware chat, MIDI, effects rack, natural-language custom
+  plugins — [`files/suno-studio.md`](./docs/suno-gpt/files/suno-studio.md)), and the things Suno
+  reliably gets wrong (half-time drums, niche D&B subgenres).
+- **Write or debug a Flow prompt:** run the **`flow-prompt`** skill
+  (`.claude/skills/flow-prompt/`). The Suno toolkit's counterpart for images and video —
+  it owns **platform craft** (how Nano Banana and Veo actually behave) while the
+  BadCode *look* stays with `badcode-art-direction` (panels) and `new-image` (brand
+  imagery). Reach for it when a prompt needs writing, when a generation fails, or when a
+  character has to stay the same across many shots. Its knowledge base is
+  [`docs/flow/`](./docs/flow/README.md): image and video prompt craft, camera
+  vocabulary with reliability tiers, consistency/reference discipline, platform controls
+  and credits, and the policy-block triggers and rewrites. **A policy block looks exactly
+  like a timeout** — that one fact is the biggest time-saver in the whole toolkit.
 - **Record an idea (the inbox):** run the **`new-idea`** skill
   (`.claude/skills/new-idea/`). It parks an idea the second it pops as a
   minimal-prose file under [`docs/ideas/`](./docs/ideas/README.md) and adds a
@@ -150,6 +166,44 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
   - [`decisions.md`](./docs/stories/storyverse/decisions.md) — what the research settled, and the open calls still owed a human ruling
   - [`research/`](./docs/stories/storyverse/research/README.md) — seven cited research briefs (QM interpretations, idealism, dimensions & time, decoherence, theology, the meaning crisis, SF precedent)
 - [`docs/storytelling.md`](./docs/storytelling.md) — how we craft a story
+
+## Coins
+
+BadCode releases **coins** as well as comics. The first is **Emperor's New Coin** —
+supply pegged to the Fed's M2 money supply, so when they print, we print. The joke
+only works if it is true, so the design goes to some length to remove BadCode from
+the loop: the oracle feed is the hash of its own fetch job (no key can repoint it)
+and the program ships non-upgradeable.
+
+**The trust statement is two parts and is never said as one: *no key over the
+money; one pen over the words.*** There is exactly one key in the program — the
+editor's pen, which can strike a Gazette column to a fixed redaction marker once
+per column per term, and can do nothing else. **"No admin key" unqualified is
+false and must not be written anywhere.** State the blast radius with it: a
+stolen pen can vandalise ten columns a month and cannot move a token.
+
+**Public design and the claim ledger: [`docs/coins/emperors-new-coin.md`](./docs/coins/emperors-new-coin.md)** —
+read it before writing any sentence about the coin. Every claim we may and may
+not make is listed there, with the primary source beside it.
+Plan: [`design/2026-08-06-solana-toolchain-and-emperors-new-coin.md`](./design/2026-08-06-solana-toolchain-and-emperors-new-coin.md).
+**Architecture rulings (A–D, 2026-08-12):** [`design/2026-08-12-enc-architecture-decision.md`](./design/2026-08-12-enc-architecture-decision.md) —
+no holding cost of any kind (no rent, no demurrage, no foreclosure, no permanent
+delegate; assets change hands by scheduled auction), it runs forever bar a
+permissionless `retire` after a year of oracle silence, closed loop by posture,
+and the asset layer is the Imperial Gazette.
+Canon: [`docs/stories/magic-money-tree/emperors-new-coin.md`](./docs/stories/magic-money-tree/emperors-new-coin.md).
+
+Coin pages live at `/coins/:slug` in the same web app — there is no second site.
+The toolchain under `chain/` and `packages/chain-*` is deliberately **generic**:
+it names no coin, so coin #2 writes a Rust program and a page component and
+nothing else. That portability is load-bearing and has been exercised — it now
+runs in a second, unrelated repository. Don't add ENC-specific code to it; see
+the portability contract in [`chain/README.md`](./chain/README.md).
+
+**Working on a program?** Read [`chain/README.md`](./chain/README.md) first. It
+carries the gotchas that cost real time — Docker's seccomp profile versus
+`io_uring`, Anchor's two disagreeing IDLs, `Buffer` not existing in browsers, and
+why program keypairs live in `chain/keys/` rather than `target/`.
 
 ## Out of scope here
 

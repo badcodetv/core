@@ -146,11 +146,40 @@ value is a shared agreement with nothing underneath — and money hoarded, unuse
 is literally nothing. It becomes real only when it is made into something. The
 "unfit to see it" rule is simply how dissent is shamed into silence.
 
+## The coin itself — RESOLVED (T21, 2026-08-13)
+
+The thread this file was kept open for is closed. **Emperor's New Coin is a
+built thing, not a concept**, and it lives at
+[`docs/coins/emperors-new-coin.md`](../../coins/emperors-new-coin.md) — the
+public design, the parameters, the trust statement and the claim ledger. The
+Rust program is code-complete under `chain/programs/emperors-new-coin/`; the
+remaining work is the oracle, the deploy and the burn.
+
+**What it is, in one paragraph, for a storyteller who needs it.** A Solana token
+whose supply is pegged to M2, so when the Fed prints, it prints — one ENC per
+$1,000 of America's money. Ten assets hang off the peg and reprice by exactly
+the percentage M2 moved, which makes the demonstration literal: your balance
+sits still while the assets glide out of reach at the printed rate. Nobody takes
+anything from you, and that is the entire point. The ten assets are the ten
+slots of a newspaper front page, auctioned monthly, so *the price of speech
+rises by exactly the rate they print.* The Emperor holds half of all the money
+forever, and the only way in is a faucet.
+
+**How it cross-promotes.** The coin *is* the fable's fourth beat — the hoard —
+running as machinery instead of as a picture. The fable states that the cloth
+was always invisible; the coin lets you hold some. So the release plays as a
+pair: the comic gives the metaphor, and the coin is the footnote you can
+actually run, sitting at `/coins/enc` on the same site. In-story the coin stays
+a **cameo only** (see [`story.md`](./story.md)) — the fable must not become an
+advert for a token, and the token must not need the fable explained.
+
+**The one line that must survive contact with marketing:** it is not an
+investment, there is no route from anyone's pocket to ours, and we would rather
+say so than be asked. The claim rules in the design doc bind any copy written
+about it — including a lyric.
+
 ## Open threads carried over
 
-- **The coin itself** — what the cryptocurrency actually is and how it
-  cross-promotes with the Magic Money Tree release. (The new reason this file
-  exists.)
 - **Don't conflate with Billionaire Coin** — that's the *good-branch* solution
   node (cap real wealth, compete over status coins, real money builds hospitals).
   Emperor's New Coin is the bad-branch *diagnosis*. Keep them distinct.

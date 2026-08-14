@@ -298,6 +298,12 @@ documentary-real; the frame earns a distinct cosmic register, and the *contrast*
 - **How humanity ends on the bad branch** — *partially resolved* by the
   [Discovery Timeline](./discovery-timeline.md) (gradual decline, the 2034 collapse, the analog vault
   of 100); the exact texture (extermination, self-destruction, or both) is still per-piece work.
+- **The repository artwork** *(added 2026-08-13)* — a public repo whose commit history is the
+  piece: the epoch commit (`1970-01-01T00:00:00Z`, the real floor of Unix time) → the push →
+  the bad branch dated 2026–2054 → the revert dated the real now (the date disorder in `git log`
+  *is* the visible time travel) → live good-branch commits ongoing. Specced with verified
+  feasibility in [`critique-pass-2.md`](./critique-pass-2.md#the-repository-artwork--specced-feasibility-verified);
+  read-only to the public, artifice owned in the manifesto. Next step: throwaway-account prototype.
 - **Length / format** — one long scroll-comic, a multi-part series, or the spine future episodes fill in?
 - **Dates** — Act 2's 2034 is canon; the timeline's other years (2029, 2033, 2041, 2053, 2054) stay
   mythic/loose until a piece commits to one.
@@ -310,9 +316,11 @@ documentary-real; the frame earns a distinct cosmic register, and the *contrast*
 *The whole arc is **beat-complete end-to-end** — all eight movements at **Beats**. The cross-arc
 cohesion read is recorded in [`stitch-pass.md`](./stitch-pass.md) (checklist, fixes, threads). A
 research-backed **critique pass** (2026-07) then reworked Acts 3–5, the Coda, and the craft rules —
-rationale and change log in [`critique-pass.md`](./critique-pass.md). The canonical distillation
-of all of it — spine + video storyboard — is [`story.md`](./story.md) (2026-08-06); next maturity
-step is **Script**, scene by scene, in `story.md`.*
+rationale and change log in [`critique-pass.md`](./critique-pass.md). A second, adversarially
+verified pass (2026-08-13) ruled on the coin's collapse objection and moved the time-travel
+mechanism into the git register — [`critique-pass-2.md`](./critique-pass-2.md). The canonical
+distillation of all of it — spine + video storyboard — is [`story.md`](./story.md) (2026-08-06);
+next maturity step is **Script**, scene by scene, in `story.md`.*
 
 ## The folder
 
@@ -337,6 +345,10 @@ Everything in `docs/stories/gitpush-origin-master/` is this story:
 - [`how-we-tell-it.md`](./how-we-tell-it.md) — the skeleton, the four skins, the simplest framing per pillar.
 - [`critique-pass.md`](./critique-pass.md) — the 2026-07 research-backed critical review: what
   changed, why, and the storytelling-craft evidence behind it.
+- [`critique-pass-2.md`](./critique-pass-2.md) — the 2026-08-13 review (the coin and the revert):
+  the coin survives its own objection (rule 8, the sealed rig, the scroll exception), the
+  time-travel mechanism moves into the git register (rule 9, "multidimensional time" retired from
+  the surface), and the repository artwork is specced with verified feasibility.
 - [`ep1.md`](./ep1.md) — the three-track teaser; the Act 1 nodes.
 
 Related but no longer a folder: **the GPOM Short** — the 16-panel condensed teaser of this

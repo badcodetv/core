@@ -7,7 +7,7 @@ import { FlowClient } from './flow-client'
 
 const c = await FlowClient.connect()
 try {
-  await c.openProject('camping-v2')
+  await c.openProject({ name: 'camping-v2' })
   console.log('opened:', await c.status())
   const dir = await mkdtemp(join(tmpdir(), 'flow-core-'))
   const a = await c.generateImage('A single landscape image: a quiet campsite at dawn, one empty tent, mist. Cinematic, grounded.', join(dir, 'a.jpg'))

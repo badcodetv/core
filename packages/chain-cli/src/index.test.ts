@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { chainCommand, standaloneProgram } from './index.js'
+import { chainCommand, splitFeatures, standaloneProgram } from './index.js'
 
 const names = (c: { commands: readonly { name(): string }[] }) => c.commands.map((s) => s.name())
 
@@ -23,5 +23,18 @@ describe('standaloneProgram', () => {
     // how this package first arrived in another project — broken.
     expect(names(standaloneProgram())).toContain('doctor')
     expect(names(standaloneProgram())).not.toContain('chain')
+  })
+})
+
+describe('splitFeatures', () => {
+  it('splits and trims a comma-separated list', () => {
+    expect(splitFeatures('mock')).toEqual(['mock'])
+    expect(splitFeatures('mock, other')).toEqual(['mock', 'other'])
+  })
+
+  it('stays undefined when unset, so no `--` is added to the build', () => {
+    expect(splitFeatures(undefined)).toBeUndefined()
+    expect(splitFeatures('')).toBeUndefined()
+    expect(splitFeatures(' , ')).toBeUndefined()
   })
 })

@@ -20,8 +20,8 @@ url = "https://api.apr.dev"
 cluster = "Localnet"
 wallet = "~/.config/solana/id.json"
 
-# Prefer `badcode chain test`, which runs these against the validator started by
-# `chain up`. Two things bite if you call anchor directly:
+# Prefer `./stack test [suite]`, which runs these against the validator started
+# by `./stack start`. Two things bite if you call anchor directly:
 #
 #   --skip-local-validator  or Anchor starts a SECOND validator on port 8899 and
 #                           the run dies on the port collision.
@@ -34,7 +34,31 @@ wallet = "~/.config/solana/id.json"
 #
 # One entry per suite below. Note `anchor test -- --grep X` does NOT work: args
 # after -- go to `cargo build-sbf`, not to mocha. Use --script instead.
+# Run through mocha with tsx as the loader, not ts-mocha. ts-mocha cannot
+# resolve a TypeScript file importing another TypeScript file as an ES module,
+# which is what these are — so the shared tests/enc-harness.ts is unreachable
+# under it. tsx resolves both extensionless and .js-to-.ts specifiers.
 [scripts]
-test = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
-test-smoke = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/smoke.ts"
-test-counter = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/counter.ts"
+# `retire` is excluded from the run-everything script on purpose: it is
+# TERMINAL. Retirement is irreversible by design, so once that suite passes,
+# `sync_m2` refuses on this ledger forever and the auction and sync suites have
+# nothing left to sync. Run it on its own with `./stack test test-retire`, then
+# `./stack reset`. T23 runs every `test-*` suite by name, so nothing is lost.
+test = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 'tests/**/*.ts' --ignore 'tests/retire.ts'"
+test-smoke = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/smoke.ts"
+test-counter = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/counter.ts"
+test-init = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/initialize.ts"
+test-sync = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/sync_m2.ts"
+test-auction = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/auction.ts"
+# T20's suite: every instruction the website sends, through the website's own
+# account maps and predictions in `@badcode/enc`. It proves the client, where
+# the others prove the program.
+test-actions = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/actions.ts"
+test-faucet = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/faucet.ts"
+# Kept in the run-everything script above, unlike `retire`: its last case breaks
+# the editor's pen irrevocably, but nothing outside this suite uses the pen, so
+# the cost is confined to gazette.ts's own pen cases skipping on a re-run.
+# `./stack reset` brings them back.
+test-gazette = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/gazette.ts"
+# Terminal — see the note above `test`. Ends this ledger; `./stack reset` after.
+test-retire = "NODE_OPTIONS='--import tsx' npx mocha -t 1000000 tests/retire.ts"

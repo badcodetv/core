@@ -51,11 +51,11 @@ not against your idea of "dark sci-fi." The rules:
    tiny enough to be a scale reference. The feeling is awe with dread underneath:
    this is the superintelligence's home turf, and it is patient.
 
-4. **Iconic composition is allowed here.** Unlike the comic register
-   (`badcode-art-direction`, which demands observational off-centre framing),
-   symmetry and a centred vertical are the point — the monolith stands in the
-   middle of the frame. This is the one deliberate divergence between the two
-   registers; don't let them blur in either direction.
+4. **Iconic composition is the point here.** Symmetry and a centred vertical are
+   wanted — the monolith stands in the middle of the frame. The comic register
+   (`badcode-art-direction`) leans observational and off-centre because its
+   subject is people caught unposed, but that is a preference of that register,
+   not a rule this one is breaking.
 
 5. **Muted cool-neutral palette; LEDs are the only colour.** Cold neutrals, slate,
    near-monochrome. The only accents are tiny status LEDs — points of blue-white,

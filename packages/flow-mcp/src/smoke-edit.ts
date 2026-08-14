@@ -12,7 +12,7 @@ const ref = resolve(process.argv[2] ?? 'docs/stories/magic-money-tree/storyboard
 const project = process.argv[3]
 const c = await FlowClient.connect()
 try {
-  if (project) await c.openProject(project)
+  if (project) await c.openProject({ name: project })
   console.log('status:', await c.status())
   const dir = await mkdtemp(join(tmpdir(), 'flow-edit-'))
   const t0 = Date.now()

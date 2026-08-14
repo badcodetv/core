@@ -11,11 +11,19 @@
 #   ./stack status         what is up, which programs, which wallet
 #   ./stack logs [web|validator]   follow logs
 #
-#   ./stack build [prog]   build + publish IDL and TypeScript types
+#   ./stack build [<program>]
+#                          build + publish IDL and TypeScript types
+#   ./stack build <program> --features mock
+#                          NAMING THE PROGRAM IS REQUIRED with --features:
+#                          cargo features are per-package, and `counter` has no
+#                          `mock`, so the unscoped form fails. You rarely need
+#                          this — `./stack test` builds the mock itself.
 #   ./stack deploy         deploy to the local validator
 #   ./stack redeploy [prog]  build + deploy — the loop after editing a program
 #   ./stack reset          wipe the ledger and redeploy (after a struct change)
 #   ./stack test [suite]   Anchor tests against the running validator
+#   ./stack cargo <args>   cargo inside the toolchain (Rust unit tests)
+#   ./stack enc <cmd>      Emperor's New Coin commands
 #
 #   ./stack fund <address>   give a browser wallet 100 local SOL
 #   ./stack wallet         show the deploy wallet
@@ -40,6 +48,9 @@ WEB_LOG="$RUN_DIR/web.log"
 # install some unrelated package from the registry if the local one is missing,
 # which is a confusing way to find out your workspace is not installed.
 CHAIN="$DIR/node_modules/.bin/chain"
+# The BadCode CLI, which hosts the ENC-specific commands. Same reasoning as
+# CHAIN: by path, never via npx.
+BADCODE="$DIR/node_modules/.bin/badcode"
 
 # Name the compose project after this repo. The default is a bare "chain", which
 # every checkout that copies this toolchain would also use — so starting one
@@ -49,6 +60,11 @@ export CHAIN_PROJECT="${CHAIN_PROJECT:-badcode-chain}"
 chain() {
   [[ -x "$CHAIN" ]] || { echo "Missing $CHAIN — run: npm install" >&2; exit 1; }
   "$CHAIN" "$@"
+}
+
+badcode() {
+  [[ -x "$BADCODE" ]] || { echo "Missing $BADCODE — run: npm install" >&2; exit 1; }
+  "$BADCODE" "$@"
 }
 
 up_web()  { curl -sf -o /dev/null -m 2 "http://127.0.0.1:${WEB_PORT}"; }
@@ -137,17 +153,47 @@ check() {
   npm test
 }
 
-help() { sed -n '3,26p' "$0" | sed 's/^# \{0,1\}//'; }
+# Prints the header block above — from after the shebang to the first line that
+# is not a comment. Deliberately NOT a line range: this was `sed -n '3,29p'`,
+# and every time the header grew the range silently swallowed the bottom of it.
+# By 2026-08-13 it was hiding six commands, `./stack check` among them — the one
+# every ticket is required to run.
+help() { awk 'NR<3 {next} /^#/ {sub(/^# ?/, ""); print; next} {exit}' "$0"; }
 
 # ── Dispatch ─────────────────────────────────────────────────────────────────
 cmd="${1:-help}"
 shift || true
 case "$cmd" in
   start|stop|status|logs|web|redeploy|fund|check|help) "$cmd" "$@" ;;
-  build)   if [[ $# -gt 0 ]]; then chain build --program-name "$1"; else chain build; fi ;;
+  # A bare first word is the program name, so `./stack build counter` still
+  # works; anything starting with a dash is passed straight through.
+  build)   if [[ $# -gt 0 && "$1" != -* ]]; then p="$1"; shift; chain build --program-name "$p" "$@"; else chain build "$@"; fi ;;
   deploy)  chain deploy --cluster localnet "$@" ;;
   reset)   chain reset "$@" ;;
-  test)    if [[ $# -gt 0 ]]; then chain test --script "$1"; else chain test; fi ;;
+  # `./stack test test-init` — the suite name is an Anchor.toml [scripts] entry.
+  # Localnet is mock-oracle-only by design (see chain/README.md), so the ENC
+  # program is built with --features mock before the suites run. It has to be a
+  # separate build: cargo features are per-package, and `anchor test` would
+  # rebuild the whole workspace — where `counter` has no `mock` feature and the
+  # build fails. Then --skip-build so anchor deploys what we just made.
+  #
+  # Which is why passing --features yourself does NOT work here: it takes the
+  # branch below, and `anchor test -- --features mock` fails with "the package
+  # 'counter' does not contain this feature: mock" (verified at T21). The mock
+  # build is automatic; there is nothing to ask for. `--skip-build` is the one
+  # useful passthrough — it re-runs a suite against what is already deployed.
+  test)    args=(); if [[ $# -gt 0 && "$1" != -* ]]; then args+=(--script "$1"); shift; fi
+           # --no-publish on both: this command's job is to test, and chain/idl
+           # is tracked. A validation run that rewrites committed files makes
+           # "the tests passed and the tree is clean" two different questions.
+           if [[ "$*" != *--features* && "$*" != *--skip-build* ]]; then
+             chain build --no-publish
+             chain build --program-name emperors_new_coin --features mock
+             args+=(--skip-build)
+           fi
+           chain test "${args[@]}" "$@" ;;
+  cargo)   chain cargo "$@" ;;
+  enc)     badcode enc "$@" ;;
   wallet|doctor|image|shell|up|down|idl|airdrop) chain "$cmd" "$@" ;;
   *) echo "unknown command: $cmd" >&2; echo; help; exit 1 ;;
 esac

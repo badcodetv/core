@@ -24,11 +24,24 @@ export interface SolanaProviderProps {
  * Deliberately says nothing about which program you are talking to; that arrives
  * per-call via `useProgram(idl, programId)`. Autoconnect is on so a returning
  * visitor who already approved the site does not have to click again.
+ *
+ * **The commitment is `confirmed`, and saying nothing would have been a bug.**
+ * web3.js defaults an unconfigured connection to `finalized`, and every
+ * `onAccountChange` made through it inherits that — so a page that subscribes
+ * to its own state waits ~32 slots to hear about a change it just caused.
+ * Measured on a local validator at T20: **12.5 seconds** between a transaction
+ * landing and the subscription firing, which reads as a broken page rather than
+ * as a commitment level. `useSendTransaction` already confirms at `confirmed`,
+ * so this also stops the two halves of the same click disagreeing about when it
+ * happened.
  */
 export function SolanaProvider({ cluster, children, endpoint }: SolanaProviderProps) {
   const url = useMemo(() => rpcEndpoint(cluster, endpoint), [cluster, endpoint])
   const wallets = useMemo(() => [new PhantomWalletAdapter()], [])
-  const config = useMemo(() => ({ wsEndpoint: wsEndpoint(cluster) }), [cluster])
+  const config = useMemo(
+    () => ({ wsEndpoint: wsEndpoint(cluster), commitment: 'confirmed' as const }),
+    [cluster],
+  )
 
   return (
     <ClusterContext.Provider value={cluster}>

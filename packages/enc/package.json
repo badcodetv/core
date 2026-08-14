@@ -1,0 +1,25 @@
+{
+  "name": "@badcode/enc",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Emperor's New Coin: the program's arithmetic, interface and derived state, mirrored in TypeScript. ENC-specific by design — see chain/README.md's portability contract for why none of this may live in @badcode/chain-kit.",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@badcode/chain-kit": "*",
+    "@coral-xyz/anchor": "^0.32.1",
+    "@solana/web3.js": "^1.95"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.8"
+  }
+}

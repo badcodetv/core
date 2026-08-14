@@ -85,24 +85,82 @@ base64, but don't — it bloats context). Do the actual file write in the **dete
 Refs (`e123`) from `browser_snapshot` are per-snapshot and **go stale** — in the hardened
 command, locate by ARIA role + accessible name/placeholder, not ref.
 
-## Character consistency — SOLVED (2026-06-30, camping-v2)
+## Characters, re-mapped live 2026-08-11 (GPOM + MMT casting)
 
-Casting a Flow Character into a generation works via the **`@` asset picker**, not
-prose:
+> A 2026-06-30 "Character consistency — SOLVED" recipe lived here (New Character card,
+> `@` picker giving an `option` `"<Name> — Character"`). It's gone — the UI it described
+> no longer exists (see below) and `flow_generate_image`/`flow_edit_image`/
+> `flow_generate_batch` now take a `character` parameter that drives the current picker
+> internally, so there is no browser-driving step left for a caller to do by hand. The
+> one gotcha worth keeping from it: **plain `@Name` typed as prompt text does NOT bind
+> the character** — it yields a generic likeness, not the cast one (camping-v2 p03: text
+> → a generic financier; a real reference attachment → the actual Tarquin). Binding
+> requires the reference-attachment flow, which is exactly what the `character`
+> parameter now does under the hood — see the asset-picker recipe under "Reference
+> images (ingredients)" below.
 
-1. Create the Character once: sidebar **Characters → New Character → Upload** the
-   canon sheet → name it → **Done**. Characters are project-scoped but castable by
-   `@tag`.
-2. In the prompt box, type **`@`** → an asset-picker `dialog` opens listing project
-   assets; the character shows as an `option` *"<Name> — Character"*. Select it →
-   **"Add to Prompt"** button. A **character reference chip** attaches to the bar
-   (`button "Character reference image …"`), and generation uses the real face.
-3. Type the scene text after the chip, set Image mode, submit, harvest as usual.
+The character UI changed. What the 2026-06-30 recipe gets wrong, and the current map:
 
-**Plain `@Name` typed as text does NOT bind the character** — it yields a generic
-person. The reference attachment is what binds it (camping-v2 p03: text → generic
-financier; reference → the real Tarquin). `flow_generate_image` only fills text, so
-character panels need the reference attached via the UI (Playwright) for now.
+**The sidebar Characters button lands in one of TWO places, depending on whether the
+project already has characters** (re-mapped 2026-08-12; the note here previously said the
+"New Character" card was simply gone, which was true only of the empty case):
+
+- **Zero characters** → straight into the New Character composer. No card to click; the old
+  `getByText('New Character')` click hangs its full timeout.
+- **One or more** → the characters grid, where the `New Character` tile is real and
+  **must** be clicked to reach the composer.
+
+So gate on the composer's own controls, not on a click count: if `add Add from Project` /
+`upload Upload` are not already visible, click the `New Character` tile, then wait for them.
+Code that only ever ran against an empty project passes and then breaks on its second use —
+that is exactly how `createCharacterFromMedia` shipped broken.
+
+**Characters is a VIEW, not a route.** Do not `waitForURL(/characters/)`: after a hard `goto`
+the view switches while the URL stays on the bare `/project/<id>`. Every entry point still goes
+through `ensureProjectRoot()`, which re-navigates when a prior failure stranded the page on a
+sub-route.
+
+**"Add from Project" picker: clicking an option IS the confirm.** The dialog closes on select
+and the editor is populated ~1.5s later. Its `Add to Character` button exists but belongs to a
+multi-select path; waiting for it after a single select burns the full timeout on a dialog that
+has already gone. Click it only if it is still visible.
+
+**The name field is `getByRole('textbox', { name: 'Character Name' })`** — not
+`input[placeholder="Character Name"]`; that selector matches nothing and was the second
+half of the same failure.
+
+**A Character has two view slots, Portrait and Body.** Uploading a reference fills only
+the Portrait. The editor's **`Create Body`** button opens a second compose bar
+("Describe body and outfit…." + the portrait as a chip); on completion the tab's label
+flips `Create Body` → `Body`, which is the reliable done-signal. A portrait *and* a body
+bind identity noticeably better than a portrait alone.
+
+**Character Info** (`getByRole('textbox', { name: /Describe how your character/i })`) is a
+free-text note Flow's own scene agent reads when the character is cast — worth filling so
+prompts don't have to repeat it.
+
+**Iterating on an existing character** is a first-class flow: select the Portrait or Body
+tab, then use the editor's own *"What do you want to change?"* bar. Cheaper and more
+faithful than re-casting from a new reference, and recoverable via **Show history**.
+
+**Model picker — two layouts, and it RESETS on navigation.** The canvas has one trigger
+concatenating model+aspect+count (`🍌 Nano Banana Pro crop_16_9 x2`) with the model
+submenu nested inside its menu; the character editor has a bare
+`🍌 <model> arrow_drop_down` trigger. Both default back to **Nano Banana 2** after
+navigation, so the model is asserted **per generation**. Tiers: **Nano Banana Pro** >
+Nano Banana 2 > Nano Banana 2 Lite. Beware: `Nano Banana 2` is a strict prefix of
+`Nano Banana 2 Lite`, so a substring check silently generates on the wrong tier
+(guarded by `modelAlreadySelected()` in `compose.ts`, with tests).
+
+**Empty compose boxes report their placeholder in `textContent`,** and the placeholder
+differs per surface. The submit-verification helper strips all of them
+(`isBoxCleared()` in `compose.ts`) — otherwise a character-page submit never reads as
+cleared and retries into a double submission.
+
+**What does NOT work: asking for a multi-view character sheet in one shot.** A single
+`flow_edit_image` call asking Flow to composite front/side/back turnarounds from one
+portrait produced *nothing* — no candidate ever landed (consistent with a policy block or
+a compositing limit; it is not merely slow). Use Portrait + native Create Body instead.
 
 ## Hardening — confirmed live 2026-06-30 (flow-script-hardening branch)
 
@@ -121,9 +179,23 @@ Key corrections to the spike-era selectors above:
   NO own placeholder text — the old `.filter({ hasText: /What do you want to create/i })` matched
   nothing. A sibling `<textarea>` also exposes the textbox role.
 - **Image-mode menu**: open via `getByRole('button', { name: /crop_/ })` (the
-  `🍌 Nano Banana 2 · crop_16_9 · 1x` config button). Tabs: `imageImage` / `play_circleVideo`;
-  aspect `crop_16_916:9`, `crop_landscape4:3`, …; count `1x` / `x2` / `x3` / `x4`. Default is already
-  Image · 16:9 · 1x, so `ensureImageMode` is idempotent.
+  `🍌 Nano Banana Pro · crop_16_9 · x1` config button). Tabs: `imageImage` / `videocamVideo`;
+  aspect tabs render as `<ligature><ratio text>` (`crop_16_916:9`, `crop_landscape4:3`, …);
+  count `x1` / `x2` / `x3` / `x4`. Full popover map, including the video half and its **clip
+  duration** tabs, is in [`flow-video.md`](./flow-video.md) — it is one popover serving both
+  media types, not an image-only control.
+  - ⚠️ **Count is `x1`, not `1x`** (this line said `1x` until 2026-08-12). A click-if-present
+    guard on `1x` silently leaves the count alone, so "one image" generates and bills two, and
+    the straggler is harvested by the NEXT turn at the previous turn's aspect. Read the trigger
+    label back before submitting.
+  - ⚠️ **Aspect ligatures are not uniformly derivable**: `crop_16_9` / `crop_9_16` spell the
+    numbers, but 4:3 / 3:4 / 1:1 are `crop_landscape` / `crop_portrait` / **`crop_square`**.
+    `crop_1_1` does not exist.
+  - The trigger's label concatenates model + aspect + count, so the whole state is readable
+    without opening the popover — but the popover TOGGLES, so check visibility before clicking.
+  - The default is *not* dependable: a "fresh" project came up **9:16 · x2** on 2026-08-12
+    (Flow appears to carry the last-used config across projects), so `ensureImageMode` must
+    assert, not assume idempotence.
 - **Open an existing project**: tiles are `a[href*="/fx/tools/flow/project/"]` with EMPTY anchor
   text — the name is a sibling styled-components span with a HASHED class. Scrape by climbing each
   anchor to the nearest short own-text node (see `project.ts` `SCRAPE_PROJECTS`). The grid hydrates
@@ -140,15 +212,15 @@ Key corrections to the spike-era selectors above:
   check whether `crop_` is present and, if not, click the `Agent` toggle to drop into generation
   mode first. The mode is stateful and varies (e.g. it engages after the character flow), so gate
   on `crop_`'s presence, not on `aria-pressed` (which lags after navigation).
-- **Create a character** (`createCharacter`): `Characters` sidebar button (`accessibility_newCharacters`)
-  → click the **"New Character"** card (a `div`, not a `<button>`) → URL goes to `/characters` →
-  click `Upload` (`uploadUpload`) → file chooser `setFiles(refs)` → fill `input[placeholder="Character Name"]`
-  (defaults to "Untitled Character") → click `Done` → returns to `/project/<id>`.
-- **Cast a character into a generation** (`generateImage` with `{ character }`): type `@` in the prompt
-  box → asset-picker opens with `role="option"` entries named `<Name>Character` → click the option →
-  click `Add to Prompt` (inserts an inline character-reference chip into the box) → APPEND the scene
-  text after the chip (`End` then type — `fill()` would wipe the chip) → submit. Confirmed live:
-  the reference composition is faithfully reproduced, so the chip genuinely binds the character.
+- **Create a character** (`createCharacter`): this original recipe (click a "New
+  Character" card, fill `input[placeholder="Character Name"]`) is superseded by the
+  2026-08-11 remap above — there is no such card, and that name-field selector matches
+  nothing. Two facts from here still hold and aren't restated above: the "Character
+  Name" field **defaults to "Untitled Character"** until filled, and `Done` **returns
+  you to `/project/<id>`** — the reliable done-signal for the whole flow.
+- **Cast a character into a generation**: the `role="option"` asset-picker entries this
+  recipe originally relied on are dead — gone from the UI *and* the code. See "Reference
+  images (ingredients)" below for the current Characters-tab flow.
 
 ## Reference images (ingredients) — mapped live 2026-07-14 (edit-panel spike)
 
@@ -171,7 +243,9 @@ live: uploaded `gpom-short` p04 golden, applied a Google-template delta prompt a
   open the picker (`@` or `add_2`), click the `Characters` tab, select the character tile,
   "Add to Prompt". The character chip is still INLINE in the contenteditable (` Name `),
   so once a character chip is present, APPEND text (`End` + type) — never `fill()`.
-  `submitWithCharacter`'s option-based flow is dead and needs porting to this picker.
+  `submitWithCharacter`'s option-based flow has since been ported to this picker
+  (`addCharacterToPrompt` in `flow-client.ts`) — every `character` param on the
+  `flow_*` tools goes through it now, so callers don't drive the picker by hand.
 - **Composition confirmed**: a media ingredient chip + an inline character chip coexist
   in one prompt (tested in camping-v2 with an existing asset + SmokeChar).
 - **Multi-output (x2/x3/x4)**: count tab selection in the `crop_` config menu **persists
@@ -209,8 +283,13 @@ is slow" experience — every hand-driven or locator-driven click paid them.
   client (e.g. the Playwright MCP) is attached to the same Chrome with chooser
   interception armed, the chooser hangs and the upload never lands. Instead set the
   page's persistent hidden input directly: `locator('input[type="file"][accept*="image"]')
-  .setInputFiles(path)` — no dialog interaction at all. (`generateVideo`'s chooser path
-  has the same latent conflict — port it when it next breaks.)
+  .setInputFiles(path)` — no dialog interaction at all.
+  **Ported everywhere 2026-08-12** — it broke exactly as predicted, on a character cast,
+  presenting as a `uploadImage` 400 plus a stranded modal rather than as a hang. All three
+  upload sites (`attachReferences`, `createCharacter`, `generateVideo`) now go through one
+  `uploadFiles(paths, reveal?)` helper. Its `reveal` callback is invoked **only if no file
+  input is on the page yet**, because clicking "Upload" is itself what pops the chooser
+  we are avoiding.
 - **The asset picker has two layout variants**: a full-width dialog (button "Add to
   Prompt") and a compact popover (button "Add to **p**rompt", left rail + list + preview
   pane). Match buttons **case-insensitively and page-globally**, not scoped to
@@ -225,6 +304,40 @@ is slow" experience — every hand-driven or locator-driven click paid them.
   (`flow_edit_image` needs no specific project — the uploaded reference anchors it).
 - **Project rename via the title textbox could not be automated** (fill and keystrokes
   both revert on blur) — name projects at creation time, in the UI, by hand.
+  - ⚠️ **The "…and Characters too" claim recorded here earlier is WRONG.** Naming a Character
+    through the editor's `Character Name` field **does** persist: proven live 2026-08-12 by
+    `createCharacterFromMedia('Disc Keeper', …)`, which reads back as `Disc Keeper` from both
+    `listCharacters()` and the grid. The earlier `Untitled Character` readbacks were characters
+    whose creation aborted *before* the name was ever filled, not renames that reverted.
+- **A new project is named for its creation time** — e.g. `Aug 12, 09:07 AM`, confirmed
+  live 2026-08-12. It is *not* "Untitled Project"; nothing should assume that literal.
+
+### Asset-picker tiles and character cards (mapped live 2026-08-12)
+
+Both were previously written from inference and both were wrong. The real shapes:
+
+- **Picker tiles are `[role="option"]`, and the accessible name is `<title><Kind>`
+  concatenated with NO separator** — `"Man in suit holding papersImage"`,
+  `"Untitled CharacterCharacter"`. There is no doubling. Parse by stripping a **known kind
+  suffix** (`Image` / `Video` / `Character` / `Audio`); splitting on the last space puts
+  `"papersImage"` in `kind`.
+- **Some tiles prefix a material-symbols ligature** with no separator either —
+  `"personUntitled CharacterCharacter"` — because the icon renders as ordinary text. Strip
+  a known ligature only when it butts directly against a capital, so a real title starting
+  `"person walking…"` survives.
+- **`<img alt>` is the clean title** where a tile has one (free of both suffix and
+  ligature). Prefer it; parse the accessible name only as a fallback.
+- **The picker's chrome mounts before its grid populates.** Waiting for the "Upload media"
+  button is *not* enough — scrape too early and you get `[]` on a full gallery. Wait for
+  the first `[role="option"]` to attach, tolerating expiry so an empty project still works.
+- **Character cards are `a[href*="/character/"]`, but the NAME is not inside the anchor.**
+  The anchor's own text is only icon ligatures (`accessibility_new`,
+  `faceaccessibility_new`); the visible caption lives in the anchor's **parent**, recovered
+  as `parent.textContent` minus `anchor.textContent`.
+- **A character with no generated portrait has no `<img>` at all** (placeholder avatar), so
+  any selector requiring `img[alt]` silently hides it — that cost us 2 of 3 characters.
+- **Character names are NOT unique and NOT a key.** Three Characters in one project can all
+  be `Untitled Character`. Use the id from the href; treat name lookups as best-effort.
 
 ## Still to spike (before a full unattended comic run)
 

@@ -48,7 +48,11 @@ export function useSendTransaction(): SendState {
       } catch (err) {
         const message = humanizeError(err)
         setError(message)
-        throw new Error(message)
+        // The original is carried as `cause` rather than discarded. A caller
+        // that knows its own program can map the error code to something far
+        // more useful than the generic wording below, and it cannot do that
+        // from a string this function has already rewritten.
+        throw new Error(message, { cause: err })
       } finally {
         setPending(false)
       }

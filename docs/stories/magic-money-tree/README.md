@@ -77,6 +77,6 @@ artifact, and git history preserves the old canon.
 | Easter eggs | [`easter-eggs.md`](./easter-eggs.md) | **new 2026-08-07** — tiered found details awaiting Kai's promotion rulings |
 | Research | [`research/`](./research/) | complete (6 briefs: 4 on 2026-08-05, fascism 2026-08-06, central-bank trees 2026-08-07) |
 | YouTube video | — | not started — next artifact; script derives from story.md beats |
-| Song | [`songs/magic-money-tree.md`](./songs/magic-money-tree.md) | Suno takes exist (Jack); best take saved — revisit lyrics against the new spine (the '71/2008 verses may now fit), keep the hard cut on "there is no magic money tree" |
+| Song | [`songs/magic-money-tree.md`](./songs/magic-money-tree.md) | **Version C lyrics saved 2026-08-14** — rap-cadence rework (the war question, the orchard/jungle/garden triangle, corroding refrain); spoken-word chilled-D&B direction; next: Jack listen, delivery casting, Suno prompt rebuild; hard cut kept |
 | Comic (v1, superseded) | `apps/web/src/comics/magic-money-tree/` | built & live at `/comics/magic-money-tree` — stands as the pipeline-spike reference; no further derivation |
 | Emperor's New Coin linkage | [`emperors-new-coin.md`](./emperors-new-coin.md) | folded into this story 2026-08-06 — becomes a cryptocurrency; cameo in-story only; real linkage is social-media cross-promotion (story ↔ coin) |

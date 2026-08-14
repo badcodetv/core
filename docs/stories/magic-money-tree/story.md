@@ -482,10 +482,12 @@ right against the misuse of the system.
 
 ## Open questions
 
-1. **Song lyrics** — the saved take's history-walkthrough verses ('71 Nixon,
-   2008…) now *align* with the story's beats; revisit whether they need the
-   rewrite Kai previously assumed, or just the hard cut. Hand off to
-   `suno-prompt` when ready.
+1. **Song lyrics — reworked 2026-08-14 (Version C in the song file):**
+   rap-cadence sheet built on the corroding refrain, the "how'd a broke little
+   island pay for the Blitz?" detonator, and the Marx/Hayek/Keynes triangle as
+   orchard/jungle/garden. Remaining: Jack listen, delivery casting (spoken-word
+   register — JCC energy), the Marx-slogan ruling, the '79 book-slam
+   verification, Suno prompt rebuild.
 2. **Script** — next artifact: the full narration + dialogue script derived
    from these beats (a `script.md` in this folder), before any visual work.
 3. **The easter-egg promotions** — [`easter-eggs.md`](./easter-eggs.md)

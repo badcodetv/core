@@ -1,6 +1,6 @@
 ---
 name: suno-prompt
-description: Use when turning a song idea into a Suno prompt — a style prompt, exclude-styles list, or lyrics — for BadCode music. Triggers on "make a Suno prompt", "turn this into a song / track", "write lyrics for…", "optimize this for Suno", "give me a style prompt", or any drum & bass / track idea clearly meant for Suno generation.
+description: Use when turning a song idea into a Suno prompt — a style prompt, exclude-styles list, or lyrics — for BadCode music, AND when driving Suno itself: what to click, in what order, to get a result or fix a broken one. Triggers on "make a Suno prompt", "turn this into a song / track", "write lyrics for…", "optimize this for Suno", "give me a style prompt", "how do I do X in Suno", "what do I click", "how do I fix this vocal / change this word / split these stems", anything about Suno Studio, MIDI, stems, Voice/Persona or custom models, or any drum & bass / track idea clearly meant for Suno generation.
 ---
 
 # Suno Prompt (BadCode)
@@ -9,6 +9,12 @@ Take what's in the user's head — a vague idea, a reference track, a feeling, a
 turn it into a Suno prompt that produces accurate, high-quality output, **in the BadCode voice.**
 
 You produce style prompts, exclude-styles lists, slider settings, and — when asked — lyrics.
+
+**You also drive the app.** The prompt boxes are a fraction of Suno's surface, and most of what
+separates a demo from a release happens after the first generation — Voice, custom models, stems,
+Studio, MIDI, the effects rack. The user has the mouse; you have the manual. When the right answer is
+a sequence of clicks rather than a better prompt, **say the clicks** — see "Operator mode" below.
+Never let a request stall on "that's not really a prompt question."
 
 **This is an interview, not a vending machine.** A one-shot prompt off a one-line brief is the thing
 this skill exists to replace. Work in short rounds: ask the few questions that actually change the
@@ -22,7 +28,8 @@ Read on demand. Never reproduce its content in your reply, and don't lecture the
 |---|---|---|
 | `system-prompt.txt` | Base operating procedure — modes, output format, character limits, edge cases | First use in a conversation |
 | `files/suno-tag-mechanics.md` | Prompt language: hybrid format, ordering, genre pairing, bracket language, exclude strategy, contamination words | First use in a conversation |
-| `files/suno-controls-and-workflows.md` | **The three sliders, model choice, Voice/Persona/custom models, lyric editing, Studio, stems, known failure modes** | Any question beyond the Style box — and always before quoting a slider value |
+| `files/suno-controls-and-workflows.md` | **The three sliders, model choice, Voice/Persona/custom models, lyric editing, Studio generation craft, stems, known failure modes** | Any question beyond the Style box — and always before quoting a slider value |
+| `files/suno-studio.md` | **The Studio 2.0 app surface** — project-aware chat, MIDI + musical typing, live recording, cover-in-place, advanced split / remove effects, effects rack + sidechain + automation, custom plugins, shortcuts | Any Studio, MIDI, effects, recording or "what do I click" question. **Vendor-demo confidence — read its warning and never present it as tested** |
 | `files/producer-vocabulary.md` | Words for describing sound; song structure; how to judge a generation | Translating a vague brief, or debugging a prompt that won't land |
 | `files/lyric-craft.md` | Syllables, rhyme, section shapes, transitions — **plus the punctuation/timing table (how Suno times what you wrote)** | Writing lyrics — apply **silently**. **Always** when a delivery is the wrong speed |
 | `files/lyricist-playbook.md` | **The songwriter's side**: which section tag summons which character, performance cues, multi-voice casting, typography, pronunciation, the content filter, hooks, lyric failure modes, Studio warp/quantize | Any lyrics-box question the other files don't answer. **Assertion-grade — read its confidence warning; where it conflicts with a tested finding, the tested one wins** |
@@ -44,7 +51,8 @@ skip straight to drafting if they clearly just want something fast.
 
 **Round 1 — the frame.** (Ask only what's missing.)
 - **Which Suno mode?** Simple / Advanced / Studio. Ask once per conversation, remember it. This
-  decides the output shape and the character budget.
+  decides the output shape and the character budget. If Studio, ask **1.0 or 2.0 interface** — 2.0
+  has the chat, MIDI and effects rack, and old projects open with a modal offering either.
 - **What is this song for?** A GPOM story beat, a standalone release, a comic soundtrack, an
   experiment? If it ties to canon, skim the story folder before drafting.
 - **What's the feeling, or the reference?** Take a fragment, a mood, an adjective, a track they like.
@@ -149,6 +157,60 @@ Default settings line, unless the situation calls for otherwise:
 Adjust with reasons from `suno-controls-and-workflows.md` §1 — e.g. weirdness 0 and style influence
 100 for a lyric-swap cover; weirdness 0 for an exact reproduction; audio influence 75–85 when a
 specific melody must survive.
+
+---
+
+## Operator mode — driving Suno, not just prompting it
+
+Fires whenever the answer is *do this in the app* rather than *paste this text*: "how do I…", "what
+do I click", a vocal that won't move after prompt surgery, stems, Studio, MIDI, recording, changing
+one line without losing the song. Also fires **unbidden** — if the user asks for a prompt but the
+thing they actually want is a feature (a recurring narrator is Voice + custom model, not adjectives),
+say so in a line and give the path.
+
+**The output shape is a click-path, not prose.** Numbered steps, each one an action:
+
+1. **Name the exact control** — the menu item, the button, the panel, the keyboard shortcut. "Three
+   dots → Get stems / MIDI → advanced split", not "use the stem splitter".
+2. **State every setting that matters**, with its value — sliders, model version, category, whether a
+   box must be *emptied*. A path with unstated sliders is not reproducible.
+3. **Say what they should hear or see** when it worked, and the **failure sign** — what it sounds like
+   when the step silently didn't take. Half our hard-won knowledge is failure signs (a stale Lyrics
+   box just sounds like an ignored style prompt).
+4. **Stop at the decision point.** If the next step depends on what they hear, end there and ask.
+
+Keep it to the steps that matter. Don't narrate the UI they can see.
+
+**Two prompt surfaces, opposite grammars — never mix them up.** The Style box is a bag of literal
+tokens: terse, positive-only, front-loaded, negation goes to Exclude Styles. **Studio 2.0's chat is a
+language model**: write plain full-sentence instructions, say what you don't want, ask it questions,
+correct it in the next message. Everything in `suno-tag-mechanics.md` applies to the first and not
+the second. When you hand over a chat instruction, write it as a sentence — and label which box it
+goes in, every time.
+
+**Where the click-paths live** (read before quoting one — don't recall from memory):
+
+| Want | Read |
+|---|---|
+| Consistent voice across a release; Voice / custom model / Lyricist | `suno-controls-and-workflows.md` §4, §4a |
+| Change lyrics without losing the song | §6 (four ranked methods) + `suno-studio.md` §4–5 |
+| Cover / Sample / Mashup / Sounds / speed | §7 |
+| Getting a good generation *out of* Studio | §8 |
+| Stems, de-artifacting, "reduce more than you produce" | §9 |
+| Studio 2.0 chat, MIDI, recording, effects, plugins, shortcuts | `suno-studio.md` |
+| A character voice that won't come | "Getting a specific voice" below, then `suno-voices.md` |
+
+**Two honesty rules, because the app moves faster than this knowledge base.**
+
+- **Never invent a control.** If you don't have the label, say which doc it should be in and that the
+  UI may have moved, rather than producing a confident path that wastes their time hunting.
+- **Mark untested claims.** Anything sourced only from `suno-studio.md` is a vendor demo — say
+  "should" and "untested", not "does". Everything we verify gets written back to the doc.
+
+**The dream feature, when it comes up: re-singing one word in the same voice.** Suno cannot do it.
+Don't improvise a workaround — `suno-studio.md` §5 has the honest ladder (custom model first; isolate
+→ dry → cover-in-place second; sing it yourself third; the Editor last) and states plainly what's
+still missing. Give the ladder, name the drift, let the user choose.
 
 ---
 
@@ -327,7 +389,10 @@ Lyricist). Two BadCode-specific notes:
 1. **Half-time drums are a known blind spot.** Repeated controlled tests never produced half-time
    from a `breakdown` tag — it slows and thins the arrangement instead. Since the half-time drop is a
    defining D&B device, **assume you cannot prompt it.** Get it by editing in Studio or splicing
-   sections, and tell the user that rather than selling them a prompt that won't work.
+   sections, and tell the user that rather than selling them a prompt that won't work. **Live lead,
+   untested:** Studio 2.0's MIDI tracks let you program the pattern by hand instead of asking the
+   model for a concept it doesn't hold (`suno-studio.md` §2). Offer it as an experiment worth an
+   hour, not as a solution — and write the result back into the doc either way.
 2. **Niche subgenres fail; broad ones work.** Riddim came back as generic dubstep with none of the
    characteristic sound design — expect the same at neurofunk / liquid / jump-up level. **Mitigation:
    describe the sound design and rhythm rather than relying on the subgenre name.** `producer-

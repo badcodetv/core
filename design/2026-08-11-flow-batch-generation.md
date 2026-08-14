@@ -57,10 +57,61 @@ prompts; they are linted and self-contained. Paste them verbatim.
 
 | Character | Route |
 | --- | --- |
-| GPOM @Carrier | Recover sheet from git (above) → Kai confirms face still canon → `flow_create_character("Carrier", [sheet])`. No generation needed. |
-| MMT @Keynes | No sheet exists (T15). Generate one via badcode-art-direction loop — 1940s build/era-dress/bearing, **never the name** (block trigger #2) — 2 candidates/round until Kai accepts → `flow_create_character("Keynes", [accepted])`. |
+| GPOM @Carrier | Recover sheet from git (above) → Kai confirms face still canon → `flow_create_character("Carrier", [sheet])` → **Create Body** (below). Done, 2026-08-11. |
+| MMT @Keynes | No sheet exists (T15). Generate one via badcode-art-direction loop — 1940s build/era-dress/bearing, **never the name** (block trigger #2) — 2 candidates/round until Kai accepts → `flow_create_character("Keynes", [accepted])` → **Create Body**. |
 | MMT @TheTree | **Not a Character** — the accepted MMT cover is the bench+tree golden reference. |
 | GPOM @TheAI / @TheHundred | Never cast, by canon. |
+
+**Every cast character gets a body pass, not just a portrait.** Flow's
+Character object isn't fed an external turnaround sheet — it's built natively:
+portrait, then the editor's **"Create Body"** button opens a second view and a
+"Describe body and outfit…" prompt; fill it from the character's canon file
+(build, clothing, signature details) and submit. The character then carries
+both a Portrait and a Body reference, and `@name` casting draws on both.
+Live-validated 2026-08-11 on Carrier (workshop full-body shot, correct navy
+jumper + green darn + glasses-on-cord, matched canon on the first try).
+
+**Model: Nano Banana Pro is now the automatic default** (`DEFAULT_MODEL` in
+`flow-client.ts`, overridable per call or via `FLOW_MODEL`). Flow's picker
+resets to Nano Banana 2 on every navigation, so the client re-asserts the model
+on each generation rather than once per session. Pro is visibly sharper;
+confirmed live 2026-08-11 on the Keynes portrait re-run.
+
+### Tooling built 2026-08-11 — no more hand-driving the browser
+
+The first two castings were done by hand through Playwright because the
+character tools were broken; ~90% of that time went on DOM round-trips rather
+than generation. That knowledge is now encoded in `@badcode/flow-mcp`, so each
+of these is **one call, no browser steps**:
+
+| Tool | Does |
+| --- | --- |
+| `flow_create_character` | Now takes optional `body`, `info`, `model` — casts the character *and* runs the native Create Body pass *and* fills Character Info in a single call. |
+| `flow_character_body` | Adds the full-figure Body view to a Portrait-only character. |
+| `flow_edit_character` | **Iterate on an existing character in place** — delta prompt against its Portrait or Body, preserving the bound identity instead of re-casting. |
+| `flow_character_info` | Sets the free-text note Flow's scene agent reads. |
+
+Full selector map and the failure modes behind each fix:
+[`docs/superpowers/flow-selectors.md`](../docs/superpowers/flow-selectors.md)
+("Characters, re-mapped live 2026-08-11"). Pure bits are unit-tested in
+`compose.ts` / `compose.test.ts`.
+
+**Character iteration loop (the standing workflow):** show Kai the current
+Portrait/Body → he names the change in plain words → one `flow_edit_character`
+call → show the result. No regeneration from scratch, no re-upload, and the
+editor's own *Show history* is the undo.
+
+**Character-sheet experiment (2026-08-11): a single `flow_edit_image` call
+asking Flow to composite a 3-view (front/side/back) turnaround from one
+portrait reference produced nothing** — no new candidate landed in the
+gallery, consistent with either a policy block or a hard compositing-capability
+limit (not just slow; waited well past the timeout with no result). Don't
+retry this shape blind. **What works instead: Portrait + native "Create
+Body"** — two separate, single-subject generations, each reliable. If deeper
+angle coverage is ever needed, the fallback is N separate single-image
+generations (front/side/back as distinct calls) fed together into
+`flow_create_character`'s `refImages` array — untested but structurally sound,
+since that array accepts multiple images by design.
 
 Record Character ids/names in each prompts.md §2 table. **Gate: Kai approves
 both characters before Phase 2.** Present candidates as a private contact-sheet

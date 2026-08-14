@@ -7,7 +7,7 @@ every program silently gets a *new* address, which no longer matches the
 `declare_id!` in its own source, and the build fails in a way that looks like a
 compiler problem.
 
-So the canonical copy lives here, and `chain build` restores anything missing
+So the canonical copy lives here, and `./stack build` restores anything missing
 into `target/deploy/` before building. Same address on every machine, in and out
 of the container, across as many `rm -rf target` as you like.
 
@@ -18,6 +18,9 @@ this directory as public.
 
 - `counter-keypair.json` — the toolchain demo program. Deliberately public. It is
   a counter; there is nothing to steal.
+- `emperors_new_coin-keypair.json` — the ENC development address, for localnet and
+  devnet. Also public, and it must not become the mainnet address: a mainnet
+  program keypair is generated at deploy time and backed up out of band.
 
 ## What must never go in here
 

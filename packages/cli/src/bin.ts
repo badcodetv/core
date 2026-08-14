@@ -2,6 +2,7 @@
 import { Command } from 'commander'
 import { mkdir } from 'node:fs/promises'
 import { chainCommand } from '@badcode/chain-cli'
+import { encCommand } from './enc'
 import { loadComic } from './loadComic'
 import { buildPrompt } from './prompt'
 import { flowPrep } from './flow-prep'
@@ -163,6 +164,10 @@ program
 // Generic Solana toolchain commands. The group lives in @badcode/chain-cli so it
 // can be lifted into unrelated projects; only ENC-specific sub-commands belong here.
 program.addCommand(chainCommand())
+
+// ENC-specific. Deliberately NOT in @badcode/chain-cli: that package names no
+// coin, so a second project can lift it whole. See chain/README.md.
+program.addCommand(encCommand())
 
 program.parseAsync(process.argv).catch((err: unknown) => {
   console.error(err instanceof Error ? err.message : String(err))

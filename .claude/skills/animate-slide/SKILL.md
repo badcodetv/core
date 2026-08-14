@@ -20,7 +20,7 @@ the bucket → `badcode assets-build` (renditions/poster/manifest) →
 |---|---|
 | `CLAUDE.md` | What BadCode is; repo map |
 | `docs/voice.md` | Load-bearing tone — applies to motion prompts too |
-| `docs/superpowers/flow-video.md` | **The Flow video recipe** — the exact UI steps, selectors, completion signal, aspect-ratio pinning, and mp4 harvest. Read it before touching Flow. |
+| `docs/superpowers/flow-video.md` | How the Flow video tools work underneath — selectors, the frame slots, the completion signal, the mp4 harvest. Reference material for when a call fails; not needed to run this skill. |
 | `packages/comic/AUTHORING.md` | Mandatory before the `.tsx` widget swap |
 
 ## Scope guard — bucket pipeline only
@@ -52,32 +52,26 @@ does not read `comic.meta.ts` for animations; Karen's 9 working animations aren'
 
 ## Flow engine (required before generating)
 
-Video generation requires Flow connected. Confirm before producing:
+Video generation runs through the **`flow` MCP server**, not by driving the browser by hand.
+Call `flow_status` once before producing:
 
-1. **CDP up?** `curl -s http://localhost:9222/json/version` returns JSON.
-2. **Playwright MCP available?** a `browser_*` tool is present in this session.
-3. **If CDP is down, launch the browser yourself** (no need to make the user do it):
-   run `./scripts/flow-chrome.sh` **as a background process** from your shell. It renders via
-   WSLg (so the user sees it) and exposes CDP on `:9222`. The already-loaded Playwright MCP
-   **re-attaches to the fresh browser on its own** — no session restart needed (verified). Poll
-   `curl -s http://localhost:9222/json/version` until it returns JSON, then use `browser_*`.
-   - The login persists in `.flow-profile/`, so a relaunch is **already signed in** — the user
-     only ever logs in the very first time.
-   - On relaunch, the auto-opened Flow tabs may show a transient `OAuthCallback` sign-in error
-     (a race from 3 tabs at once). Ignore it; a **fresh `browser_navigate` to
-     `https://labs.google/fx/tools/flow` loads signed-in**.
-   - Only if the Playwright MCP itself isn't loaded at all (no `browser_*` tool exists) does the
-     user need to restart / `claude --resume` and approve the `playwright` server (`.mcp.json`
-     loads at startup).
-4. Confirm a signed-in screenshot of `https://labs.google/fx/tools/flow`.
+- `{ loggedIn: true }` → you are ready.
+- `NOT_RUNNING` → the browser is down. Launch it yourself, backgrounded, from your shell:
+  `./scripts/flow-chrome.sh`. It renders via WSLg (so the user sees it) and exposes CDP on
+  `:9222`. Poll `curl -s http://localhost:9222/json/version` until it returns JSON, then call
+  `flow_status` again. The login persists in `.flow-profile/`, so a relaunch is already signed
+  in — the user only ever logs in the very first time.
+- `loggedIn: false` → ask the user to sign in; nothing else here will work.
 
-For the full Flow video UI recipe — how a source image enters image→video mode, where the
-motion prompt goes, the completion signal, aspect-ratio pinning, and the mp4 harvest — see
-**`docs/superpowers/flow-video.md`**.
+Then open the working project once with `flow_open_project`. **Prefer a project that is not
+full of test media**: the animate path identifies the still you just uploaded by diffing the
+tile grid, and that diff degrades in a project holding dozens of items (observed failing with
+`ANIMATE_NOT_FOUND` at ~30 items, 2026-08-12, and working immediately in a fresh project).
+`flow_create_project` gives you a clean one.
 
-> If `docs/superpowers/flow-video.md` does not exist, the spike (Task 1 of the
-> animate-slide plan) has not been run yet. Stop, explain this to the user, and point them to
-> `docs/superpowers/plans/2026-06-25-animate-slide.md` Task 1.
+For what the tools do underneath — the compose bar, the frame slots, the completion signal,
+the mp4 harvest — see **`docs/superpowers/flow-video.md`**. You should not need it to run this
+skill; read it when something fails.
 
 ---
 
@@ -90,8 +84,8 @@ user start things by hand.
 1. **Start the dev server yourself**, backgrounded: `npm run dev` (from repo root). Read the
    port from its output (`http://localhost:<port>/comics/<comic>`) — it's `5173` unless taken.
    **Print the URL** so the user can open it on their side too if they like.
-2. **Ensure the shared browser** is up (the Flow-engine check above — launch
-   `./scripts/flow-chrome.sh` backgrounded if CDP is down).
+2. **Ensure the shared browser** is up (`flow_status`; launch `./scripts/flow-chrome.sh`
+   backgrounded if it reports `NOT_RUNNING`).
 3. **Open the comic in the shared browser**: `browser_navigate` to
    `http://localhost:<port>/comics/<comic>`. This one Chromium is **both** what the user sees
    (WSLg) **and** what you screenshot (CDP) — so you're always looking at the same thing. When
@@ -213,19 +207,46 @@ Confirm with `file /tmp/animate-slide/src.<ext>`. For a `to` tween, stage both i
 
 ### Step 3: Discuss and approve the motion prompt [GATE]
 
-Draft the motion prompt (see "Writing motion prompts" above). Present it to the user.
-**Do not proceed to step 4 until the prompt is explicitly approved.**
+Draft the motion prompt (see "Writing motion prompts" above). Present it to the user **with the
+clip length**, and get both approved together. **Do not proceed to step 4 until the prompt is
+explicitly approved.**
 
-### Step 4: Drive Flow — image→video
+**Clip length is part of this gate, not a detail.** Flow offers **4 / 6 / 8 / 10 seconds** and
+nothing between. Every clip made before 2026-08-12 was 8s because nobody knew the control
+existed — do not inherit that by default. Propose a length with the prompt and say why: a
+single held beat rarely needs more than 4s, and a scroll-scrubbed panel plays at the reader's
+speed anyway, so longer mostly buys drift, not drama. It changes both the cut and the cost.
 
-Follow **`docs/superpowers/flow-video.md`** exactly:
+⚠️ **10s is Gemini Omni Flash only.** Every Veo 3.1 tier caps at 8s and asking for 10s there
+fails outright (before spending credits) rather than quietly returning an 8s clip.
 
-- Provide the staged source image (and `to` image if tweening).
-- Type the approved motion prompt.
-- Pin the aspect ratio to match the comic page (the recipe records how).
-- Poll the DOM/network completion signal — **never a fixed sleep**.
+### Step 4: Generate the clip
 
-Do not invent UI steps. The recipe doc is the authority.
+One call:
+
+```
+flow_generate_video({
+  startImage: "/tmp/animate-slide/src.jpg",   // the staged source frame
+  motion:     "<the approved motion prompt>",
+  outPath:    "/tmp/animate-slide/clip.mp4",
+  aspect:     "16:9",              // match the comic page; "9:16" for portrait
+  durationSeconds: 4,              // the approved length — 4/6/8, or 10 on Omni Flash only
+})
+```
+
+It uploads the still, attaches it, applies the prompt, asserts the model/aspect/count/duration,
+waits for the clip (no fixed sleeps) and saves the .mp4. Model defaults to Veo 3.1 Fast
+(20 credits); pass `model` for a different tier and say so at the gate, since Quality is 100.
+
+**For a tween, pass both frames instead of one.** `startImage` + `endImage` generates the
+motion BETWEEN two stills — art-direct the two ends as clean panels and let the video carry only
+the move between them. ⚠️ Then the prompt should name **only the connecting camera move**; the
+two stills already carry the content, and describing the scene again makes drift worse. An
+`endImage` needs a Veo 3.1 tier (Omni Flash rejects a last frame) and cannot be passed alone.
+
+If it fails, read the error's `hint` — every failure mode here (policy block, wrong duration for
+the tier, a frame Flow rejected) names its own fix. `POLICY_BLOCKED` in particular means
+**rewrite, never retry**: see `docs/flow/failure-modes.md`.
 
 ### Step 5: Judge the clip
 
@@ -234,9 +255,23 @@ Read the poster or a sampled frame. Evaluate against:
 - Does it match the BadCode voice (restrained, not flashy)?
 - Technical: acceptable quality, correct aspect, no artefacts?
 
-If weak, **refine in the same Flow session** ("like that, but slower / less camera / hold
-longer on the face") and re-harvest. Do not start a new session — Flow's context is in the
-session; a new one loses the reference image.
+If weak, refine it rather than starting over:
+
+```
+flow_refine_video({
+  mediaId: "<the mediaId the generate call returned>",
+  motion:  "<the whole tightened prompt — not a delta>",
+  outPath: "/tmp/animate-slide/clip-v2.mp4",
+})
+```
+
+That re-runs the clip's own turn against the **same source frame**, which Flow re-attaches
+itself — no re-upload, and it works even if the still is long gone. It returns `originalPrompt`,
+so you can show the user exactly what changed. Tighten one thing at a time ("slower" / "less
+camera" / "hold longer on the face"): each call is one generation and one charge, so changing
+three things at once tells you nothing about which one worked.
+
+Only go back to `flow_generate_video` if the **source still** is what's wrong.
 
 ### Step 6: Upload and build
 

@@ -290,6 +290,12 @@ real phrasing; you then write lyrics into that rhythm. Mirrors how pop songwrite
 
 Nothing gets you a byte-identical result. Expect small drift.
 
+> Studio 2.0 adds a fifth surface — **cover in place** on a selected region, driven from the chat
+> ("keep the lyrics the same but cover this into a new lead vocal performance"): same timing, same
+> melody, new performance. It does **not** replace method 1 for voice preservation. See
+> [`suno-studio.md`](./suno-studio.md) §4–5, which also lays out honestly how close 2.0 gets to
+> re-singing a single word in the original voice (answer: not there, but the primitives now exist).
+
 **1. Custom model of the song itself (~99.9%, best).** Download the song as **WAV** → Create custom
 model → drag the same WAV in **6+ times** → name → create → wait. Select the model, drag the song
 into remix on **Cover**, **delete the styles box entirely**, paste lyrics with your edits, set
@@ -345,6 +351,13 @@ appear; **Replace lyrics** → type → algorithm (**Smart** default; **Fixed** 
 ---
 
 ## 8. Suno Studio
+
+> **The app surface moved on 2026-08-13 — see [`suno-studio.md`](./suno-studio.md) for Studio 2.0**
+> (project-aware chat, MIDI tracks and musical typing, live-recording latency calibration, a real
+> effects rack with sidechain, automation, and natural-language custom plugins). That release is
+> **additive and backwards compatible**, so everything in this section still holds. Split of duties:
+> that file is *what's in the app and how to drive it*; this section is *how to get a good generation
+> out of it*.
 
 A paid add-on and a genuinely different environment: a multitrack editor over an existing song's
 stems, *and* a single-element generator.
@@ -589,6 +602,12 @@ so it grids in a DAW.
 
 Stems are hidden in the workspace by default — Filters → uncheck **Hide stems**.
 
+**Inside Studio 2.0** the same advanced split runs on a clip and **inserts the stem straight onto the
+timeline** below the original; the Studio PM confirms he uses advanced split every time, for fidelity.
+Studio also has **remove effects** (right-click a clip) to recover a dry signal — including from audio
+you imported — which is the missing half of this section: a processed vocal is no longer processed
+forever. See [`suno-studio.md`](./suno-studio.md) §6.
+
 **Don't stem a song you only want to master.** Master the full stereo bounce; recombined stems
 always sound worse. Take stems only when you intend to genuinely re-produce.
 
@@ -609,7 +628,10 @@ chorus. This is where a flat AI arrangement gains dynamics.
 1. **Half-time / double-time drums.** Across controlled tests a `breakdown` tag always slowed and
    thinned the arrangement but **never produced half-time drums**. The model appears not to
    understand the concept. **Directly relevant to D&B, where the half-time drop is a core device** —
-   get it by editing in Studio or splicing sections, not by prompting.
+   get it by editing in Studio or splicing sections, not by prompting. **Untested lead (2026-08-13):**
+   Studio 2.0's MIDI tracks let you *program* the pattern by hand and render it to a drum part, which
+   sidesteps the model's missing concept entirely. Best candidate in the update for BadCode — test it
+   before recommending it.
 2. **Isolating instruments by meta-tag.** "Vocals only", "a cappella", "no drums" are unreliable. If
    you need an element gone, **stem it out** — don't ask.
 3. **Niche subgenres.** Broad genres work; specific subgenres don't. Riddim came back as generic
@@ -641,10 +663,12 @@ chorus. This is where a flat AI arrangement gains dynamics.
 - **Chord progressions as text.** Suno was trained on adjectives describing vibe, not music theory;
   chord symbols are near-meaningless tokens. **Feed it audio instead** — play or render the
   progression, upload, and Cover it at audio influence ~40. **Or, since Studio 2.0, play it as
-  MIDI** — see [§8a](#8a-studio-20--what-the-update-added). That is now the precise option and this
-  one is the fallback.
+  MIDI** — Studio's MIDI tracks take the progression, voicing and all, by keyboard or musical
+  typing, and chat renders it to any instrument (see [§8a](#8a-studio-20--what-the-update-added)
+  and [`suno-studio.md`](./suno-studio.md) §2). That is now the precise option and this one is the
+  fallback. Same fix for intervals below. **Untested by us.**
 - **Music-theory intervals** (`third`, `fifth`) in harmony prompts — little effect. Raise weirdness
-  to ~60 instead to get a genuinely different harmony line.
+  to ~60 instead to get a genuinely different harmony line, or write the line as MIDI.
 - **"Max Mode."** The viral code block is almost certainly placebo: a control test with meaningless
   gibberish of the same shape produced a comparably different-and-decent result. **The real mechanism
   is token padding** — stapling many extra tags onto a prompt changes the output whether or not they

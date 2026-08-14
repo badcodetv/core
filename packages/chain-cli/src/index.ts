@@ -5,6 +5,7 @@ import { build, deploy, deployProgram, exportIdl, generatedDir, syncIdl, test } 
 import { chosenRunner, composeCapture, composeRun, dockerAvailable, imageBuild, imageExists } from './docker.js'
 import { VERSION_PROBE, checksFromCombined, formatReport, runChecks } from './doctor.js'
 import { repoRoot } from './paths.js'
+import { runInChain } from './runner.js'
 import { airdrop, down, isUp, up } from './validator.js'
 import { ensureWallet, walletAddress, walletBalance, walletPath } from './wallet.js'
 
@@ -20,7 +21,9 @@ export {
 export { walletPath, ensureWallet, walletAddress, walletBalance } from './wallet.js'
 export {
   build, deploy, deployProgram, test, testArgs, exportIdl, syncIdl, restoreKeys, idlDir, typesDir, generatedDir,
-  keysDir, deployDir, LEGACY_VALIDATOR_ARGS, type DeployOptions, type TestOptions,
+  keysDir, deployDir, LEGACY_VALIDATOR_ARGS, assertDefaultBuild, buildFeatures, builtArtifacts,
+  featureMarkerPath, idlDrift, isLocalCluster, publishedInterfaces, recordBuildFeatures,
+  type BuildOptions, type DeployOptions, type TestOptions,
 } from './anchor.js'
 
 const CLUSTER_URLS: Record<string, string> = {
@@ -43,10 +46,14 @@ const LOW_SOL = 10
  * keeps `redeploy` working after a change that makes the binary bigger, which is
  * most changes.
  *
- * Localnet only. It costs rent proportional to the size (~3.5 SOL here), which
- * is free where SOL is airdropped and rude where it is not.
+ * Localnet only. It costs rent proportional to the size (~7 SOL here), which is
+ * free where SOL is airdropped and rude where it is not.
+ *
+ * Raised from 500KB once: a program that pulls in anchor-spl and Token-2022
+ * lands near 530KB, and a feature build is larger again — so the first number
+ * that looked generous was overrun inside a day.
  */
-const LOCALNET_MAX_LEN = 500_000
+const LOCALNET_MAX_LEN = 1_000_000
 
 function reportRunner(): void {
   const runner = chosenRunner()
@@ -80,7 +87,10 @@ async function bringUp(opts: { reset?: boolean } = {}): Promise<void> {
   await up({ reset: opts.reset })
   console.log(`Validator up at ${CLUSTER_URLS.localnet}`)
   ensureFundedWallet(CLUSTER_URLS.localnet)
-  build()
+  // Builds, but does not publish: this command's job is to *run* the thing, and
+  // chain/idl is tracked. Starting a validator is not the moment to rewrite a
+  // committed interface — `chain build` is, and it says what it published.
+  build({ publish: false })
   await deployLocalnet()
   console.log('\nDeployed:')
   for (const p of deployedPrograms()) console.log(`  ${p.name.padEnd(20)} ${p.address}`)
@@ -147,6 +157,13 @@ function deployedPrograms(): Array<{ name: string; address: string }> {
       const idl = JSON.parse(readFileSync(join(dir, f), 'utf8')) as { address?: string; metadata?: { name?: string } }
       return { name: idl.metadata?.name ?? f.replace(/\.json$/, ''), address: idl.address ?? '(none)' }
     })
+}
+
+/** `--features a,b` -> ['a','b']. Undefined stays undefined so no `--` is added. */
+export function splitFeatures(list?: string): string[] | undefined {
+  if (list === undefined) return undefined
+  const parts = list.split(',').map((f) => f.trim()).filter((f) => f.length > 0)
+  return parts.length > 0 ? parts : undefined
 }
 
 /**
@@ -266,9 +283,16 @@ export function chainCommand(): Command {
     .command('build')
     .description('Build the Anchor workspace and publish its IDL + TypeScript types.')
     .option('--program-name <name>', 'build only this program — much faster in a workspace')
-    .action((opts: { programName?: string }) => {
-      build({ programName: opts.programName })
-      console.log(`Published interfaces to chain/idl:`)
+    .option('--features <list>', 'comma-separated cargo features, e.g. mock')
+    // Publishing is this command's job, so it is the one place that does it by
+    // default. `--no-publish` exists for the callers that only want the binary:
+    // a test run, or a script bringing a validator up.
+    .option('--no-publish', 'build only — leave the committed chain/idl alone')
+    .action((opts: { programName?: string; features?: string; publish?: boolean }) => {
+      const features = splitFeatures(opts.features)
+      build({ programName: opts.programName, features, publish: opts.publish })
+      const published = opts.publish !== false && !features?.length
+      console.log(published ? 'Published interfaces to chain/idl:' : 'Programs, per the committed IDL:')
       for (const p of deployedPrograms()) console.log(`  ${p.name.padEnd(20)} ${p.address}`)
     })
 
@@ -292,9 +316,43 @@ export function chainCommand(): Command {
     .option('--script <name>', 'an Anchor.toml [scripts] entry, to run one suite')
     .option('--skip-build', 'reuse the existing build')
     .option('--own-validator', 'let Anchor start its own validator instead of reusing ours')
-    .action(async (opts: { script?: string; skipBuild?: boolean; ownValidator?: boolean }) => {
-      if (!opts.ownValidator) await up()
-      test({ script: opts.script, skipBuild: opts.skipBuild, ownValidator: opts.ownValidator })
+    .option('--features <list>', 'comma-separated cargo features for the build it runs')
+    .action(
+      async (opts: {
+        script?: string
+        skipBuild?: boolean
+        ownValidator?: boolean
+        features?: string
+      }) => {
+        if (!opts.ownValidator) await up()
+        test({
+          script: opts.script,
+          skipBuild: opts.skipBuild,
+          ownValidator: opts.ownValidator,
+          features: splitFeatures(opts.features),
+        })
+      },
+    )
+
+  chain
+    .command('cargo')
+    // Rust unit tests (`cargo test -p <program> --lib`) need the pinned Rust
+    // toolchain, which under Docker only exists in the container. Without this
+    // there is no way to run them at all on a machine with no host Rust.
+    .description('Run cargo inside the toolchain, from the Anchor workspace.')
+    // The example names no program on purpose: this package is copied whole
+    // into unrelated repos, and a help string advertising a coin that does not
+    // exist there is the portability contract leaking out of the source and
+    // into the user's terminal.
+    .argument('[args...]', 'arguments for cargo, e.g. test -p <program> --lib')
+    // Read raw argv rather than commander's parse: cargo's flags (--lib, -p) are
+    // ours to forward, not ours to interpret, and commander's own pass-through
+    // mode would force positional-option parsing on the entire CLI.
+    .allowUnknownOption()
+    .helpOption(false)
+    .action(() => {
+      const at = process.argv.indexOf('cargo')
+      runInChain('cargo', at === -1 ? [] : process.argv.slice(at + 1))
     })
 
   chain

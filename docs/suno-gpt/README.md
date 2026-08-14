@@ -9,7 +9,8 @@ the entry point — this is what it reads.
 |---|---|
 | [`system-prompt.txt`](./system-prompt.txt) | Base operating procedure — mode detection, output format, character limits, famous-artist translation, edge cases |
 | [`files/suno-tag-mechanics.md`](./files/suno-tag-mechanics.md) | The prompt language: hybrid format, information ordering, genre pairing, bracket language, exclude strategy, contamination words |
-| [`files/suno-controls-and-workflows.md`](./files/suno-controls-and-workflows.md) | **The control surface and the platform.** Sliders, model choice, the consistency stack (Voice / custom model / Lyricist), lyric editing, Studio (**including §8a — Studio 2.0: chat, MIDI, real-time effects, custom plugins**), stems, known failure modes |
+| [`files/suno-controls-and-workflows.md`](./files/suno-controls-and-workflows.md) | **The control surface and the platform.** Sliders, model choice, the consistency stack (Voice / custom model / Lyricist), lyric editing, Studio generation craft (**and §8a — Studio 2.0: chat, MIDI, real-time effects, custom plugins**), stems, known failure modes |
+| [`files/suno-studio.md`](./files/suno-studio.md) | **The Studio 2.0 app surface** — project-aware chat, MIDI + musical typing, live recording, cover-in-place, advanced split / remove effects, the effects rack + sidechain + automation, natural-language custom plugins, shortcuts. **Vendor-demo confidence — read its warning.** ⚠ Overlaps §8a of the file above: the two were written independently from the same launch video and are pending a merge |
 | [`files/producer-vocabulary.md`](./files/producer-vocabulary.md) | Words for describing sound, by domain; song structure; how to judge a generation |
 | [`files/lyric-craft.md`](./files/lyric-craft.md) | Syllable counts, rhyme schemes, section shapes, engineered transitions — **and the punctuation/timing table: how Suno times what you wrote** |
 | [`files/lyricist-playbook.md`](./files/lyricist-playbook.md) | **The songwriter's side**: section-tag character ([Chorus] vs [Drop] vs [Chant]), performance cues, multi-voice casting, typography, pronunciation, the content filter, hooks, lyric failure modes, Studio 1.2 warp/quantize. **Weaker evidence than the rest of this base — read its confidence warning first** |
@@ -46,7 +47,7 @@ here is the artifact.
 |---|---|---|
 | 2026-08-08 | ChillPanic, *"Finally! Use TWO VOICES in ONE SUNO AI SONG"* (published 2026-08-04) | `files/suno-controls-and-workflows.md` §4a — the layered-cover method |
 | 2026-08-08 | 11-agent web sweep, songwriter-side sources (non-ChillPanic) | `files/lyricist-playbook.md` (new) + `files/lyric-craft.md` timing table |
-| 2026-08-14 | **Suno's own channel** — Studio 2.0 walkthrough with **Henry Fipps, product manager for Studio** | `files/suno-controls-and-workflows.md` §8a (new) + a pointer from §11 |
+| 2026-08-14 | **Suno's own channel** — *"Introducing Suno Studio 2.0"* (published 2026-08-13), walked through by **Henry Fipps, product manager for Studio** | `files/suno-studio.md` (new) + cross-refs in `suno-controls-and-workflows.md` §6, §8, §9, §10, §11 — **and, written independently from the same video,** `suno-controls-and-workflows.md` §8a (new) |
 
 Re-run the harvest script with a date filter to catch up on anything newer.
 
@@ -96,5 +97,7 @@ Re-verify before relying on these; they move fast and some are version-pinned:
 
 - Model behaviour (v4.5 creative vs v5.5 polished; mumble mode broken on 5.5; Studio better on v5)
 - Feature names and locations (Persona was renamed **Voice** in v5.5)
+- **Everything in `files/suno-studio.md`** — one vendor launch video, nothing tested by us or by a
+  practitioner. Suno is shipping Studio fast; assume it has moved again.
 - Plan tiers, pricing, credit costs, and which features each tier gates
 - Rights, ownership, AI-disclosure requirements, and distributor policy

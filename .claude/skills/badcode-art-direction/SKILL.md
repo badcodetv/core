@@ -30,15 +30,13 @@ These are not aspirations; they are consistent across camping, magic-money-tree,
 
 ## Calibration — the generic AI-comic look to AVOID
 
-Right now AI image generation clusters around four defaults that would immediately read as "not BadCode." Where the beat leaves an axis free, do NOT spend that freedom on these:
+Right now AI image generation clusters around three defaults that would immediately read as "not BadCode." Where the beat leaves an axis free, do NOT spend that freedom on these:
 
 1. **Over-rendered cinematic rim-lighting and deep blue-teal shadows.** The Midjourney / Flux default gives every image movie-poster lighting: a hard rim light from behind, deep blue shadows, glowing eyes. BadCode uses motivated, naturalistic light — what would actually be in the room (the fluorescent strip, the lamp, the overcast sky). Specify the actual light source in the prompt; do not let the model invent photogenic lighting.
 
 2. **Smooth porcelain skin and idealised faces.** Bob is weathered and kind; Dawn is exhausted; Karen is brassy and middle-aged. The AI default gives everyone the same smooth, ageless, slightly glamorous complexion. Push back on it — name the imperfections that make the character real.
 
-3. **Symmetrical centred composition.** The AI default squares subjects in the frame, centred, facing the camera, nothing blocking them — the "character sheet" look. BadCode panels are observational: subject off-centre, other elements in the frame, the camera placed where a documentary crew would place it, not where a portrait photographer would.
-
-4. **Lens flares, heavy vignettes, and chromatic aberration as decoration.** These are the AI equivalent of comic-book SFX decoration — digital flourishes that read as "AI image" immediately. The house style explicitly bans lens flares. Film grain and gate weave are allowed because they are analogue artefacts, not effects applied on top.
+3. **Lens flares, heavy vignettes, and chromatic aberration as decoration.** These are the AI equivalent of comic-book SFX decoration — digital flourishes that read as "AI image" immediately. The house style explicitly bans lens flares. Film grain and gate weave are allowed because they are analogue artefacts, not effects applied on top.
 
 ## Casting characters (consistency) — load-bearing
 
