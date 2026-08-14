@@ -122,7 +122,7 @@ SCENE:
 
 Subject: a woman turning away from a younger colleague who is still mid-sentence.
 
-Composition: 16:9, at standing eye level in an open-plan office aisle; the colleague sits left of frame at their desk, Karen crosses the right third already half out of frame with her back three-quarters to them; a monitor and the edge of a partition crop the near foreground out of focus.
+Composition: 16:9, at standing eye level in an open-plan office aisle; the colleague sits left of frame at their desk, the woman crosses the right third already half out of frame with her back three-quarters to them; a monitor and the edge of a partition crop the near foreground out of focus.
 
 Action: mid-stride away, one hand already lifted in a small dismissive acknowledgement without looking back, while the seated colleague still has a hand raised and their mouth open.
 

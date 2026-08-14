@@ -143,7 +143,7 @@ Composition: 16:9, from almost directly above, close over the bed; the spill of 
 
 Action: two hands mid-search, one pushing objects aside and the other lifting the empty bag by its base to shake it out.
 
-Location: an unmade bed in mid-morning; among the spill are car keys on a luxury fob, a lipstick, folded receipts, sunglasses with one arm open, a packet of tissues, loose change, a hairbrush and a crumpled bar napkin — and no phone anywhere among them.
+Location: an unmade bed in mid-morning; the spill consists only of car keys on a luxury fob, a lipstick, folded receipts, sunglasses with one arm open, a packet of tissues, loose change, a hairbrush and a crumpled bar napkin — no phone among them.
 
 Light: a hard ladder of daylight from a half-open blind falling across the duvet and the objects, the shadows long and low.
 
@@ -152,9 +152,17 @@ Style: a still from a 35mm independent film. Available light only, unretouched.
 Constraints: cream blouse cuffs at the wrists, manicured nails, a camel cardigan sleeve at the edge of frame; keep every receipt, label, napkin and fob free of readable lettering.
 ```
 
-### 2h.3 The phone box — plate
+> **How the absence is stated, and why.** *"The spill consists only of…"* plus an
+> exhaustive inventory, then **one** short negation. An absence cannot be described
+> positively, but an exhaustive positive list comes close, and `only` is a restriction
+> these models handle well. A bare *"no phone anywhere"* is the construction Google's
+> guidance warns against and it puts the word *phone* into the prompt as content.
+> **Revised 2026-08-14** from the first version, which did exactly that.
 
-**Cast:** `@Karen`.
+### 2h.3 The phone box — plate · **reference-anchored**
+
+**Cast:** `@Karen`. **Attach the phone booth reference image** — Kai has one
+(2026-08-14), so this plate is reference-anchored rather than generated from nothing.
 
 The icon of the entire story arrives here, and **the failure mode is the postcard.** A
 lone figure in a phone box on a Manhattan street at golden hour is one of the most
@@ -162,10 +170,41 @@ generated images in existence. Every counter is in the frame: she is small and n
 centred, the kiosk is scuffed and municipal, there is scaffolding and a bin, and the
 light is flat mid-morning rather than golden anything.
 
+> ### ⚠️ This plate is a design decision, not just a shot
+>
+> **Whatever kiosk comes back becomes the phone box for the rest of the story** —
+> §2h.6 and §2h.7 sit inside it, Act 2 spends nine months in it, and Act 5's statue
+> *is* it. Judge it as production design, not as a frame: if it is not a kiosk you
+> would want cast in bronze at the end of the film, that is the reason to re-roll,
+> not the composition.
+>
+> **Keep the accepted source file.** §2h.6 and §2h.7 want it attached the same way.
+>
+> ### Check the reference before attaching it
+>
+> Two documented anti-patterns, both cheap to avoid:
+>
+> - **Anyone in the photograph?** A location reference containing people gets read as
+>   a *subject* reference — the model keeps the people and re-stages the location,
+>   which is how the §2g clip failed four times. **Crop them out.** Same for a strong
+>   distinctive background: crop tight to the kiosk.
+> - **Legible signage on it?** Real payphone branding will come through, against the
+>   standing no-readable-text rule. Crop, or expect to fight it.
+
+**The `REFERENCE` block is the load-bearing part.** Nano Banana's documented shape is
+`[Reference images] + [Relationship instruction] + [New scenario]`, and the middle term
+is what stops the model treating the photo as the shot. It also has to say the style
+does *not* come from the reference — an attached image anchors identity and content,
+and the model will not assume your style unless the prompt states it.
+
 ```prompt
+REFERENCE:
+
+Use the attached image as the design reference for the phone kiosk only — its shape, proportions, height, panelling, glazing, colour and construction. Take the kiosk itself from that image and nothing else: not its camera angle, not its lighting, not its weather, not its surroundings, and not any people in it. Rebuild that same kiosk into the new scene described below, seen from the new angle described below. The finished frame carries the film look described in the style lock above, not the look of the attached photograph.
+
 SCENE:
 
-Subject: a woman in yesterday's clothes stepping into a scuffed street phone kiosk on a Midtown Manhattan corner.
+Subject: a woman in yesterday's clothes stepping into that scuffed street phone kiosk on a Midtown Manhattan corner.
 
 Composition: 16:9 wide, from across the street at eye level, the figure small and well left of centre with the block rising out of the top of the frame; a scaffolding leg and a mesh bin cross the right foreground out of focus; the frame is very slightly tilted.
 
@@ -177,8 +216,25 @@ Light: flat overcast mid-morning daylight from a white sky, no direct sun; the k
 
 Style: a still from a 35mm independent film — an ordinary street, an unremarkable morning. Available light only, unretouched.
 
-Constraints: cream blouse untucked, camel cardigan slipped off one shoulder, tailored trousers, no coat, structured leather handbag; keep every sign, hoarding notice, plate and shopfront free of readable lettering.
+Constraints: cream blouse untucked, camel cardigan slipped off one shoulder, tailored trousers, no coat, structured leather handbag; keep every sign, hoarding notice, plate, shopfront and kiosk marking free of readable lettering.
 ```
+
+**What to watch, beyond the postcard:**
+
+- **Did it import the photograph's light?** The `REFERENCE` block says take the kiosk
+  and not the lighting, but a reference drags its own look in unless stopped. Sunny, or
+  graded like your source photo, means that instruction did not land — sharpen it
+  rather than rewriting the prompt.
+- **Same kiosk from a new angle, or the same photo with a woman added?** The ask is a
+  rebuild. If the composition has collapsed toward the reference's framing, the
+  relationship instruction needs strengthening.
+- **Is she too small to read?** She is deliberately minor in frame and the binding has
+  little to work with. If she is unreadable, tighten the wide rather than enlarging her
+  within it — §2h.6 is the close-up that confirms who it is, so this shot does not have
+  to carry identification alone.
+- **Worth one candidate at 21:9.** The engine offers it, we have never used it, and a
+  small figure under a tall block is exactly the case where the 16:9 crop fights the
+  scale. `[untested]`
 
 ### 2h.4 Susan wakes — plate, the mirror
 
@@ -314,8 +370,10 @@ Constraints: cream blouse untucked, camel cardigan slipped off one shoulder, no 
    still works, but the scene loses its best joke.
 3. **2h.7** — the closing frame. Fire it early rather than last: it is the one that
    matters most and the one most likely to need rounds.
-4. **2h.3** → **2h.6** — the kiosk exterior and interior. 2h.3 establishes the geometry
-   2h.6 sits inside, so keep them adjacent.
+4. **2h.3** → **2h.6** → **2h.7** — the kiosk, outside then in then out again. 2h.3 is
+   reference-anchored on Kai's phone booth image and **its accepted output is the
+   reference for the other two**, so fire them adjacent and attach it forward each
+   time. The kiosk has to be the same object in all three, and in Act 2 and Act 5.
 5. **2h.2**, **2h.5** — the two easy ones. Neither has a hard binding or a hard
    composition; they will come back fine.
 
