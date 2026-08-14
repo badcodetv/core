@@ -3,6 +3,7 @@
 The canonical BadCode website — an art collective that smuggles political and economic
 ideas into people's heads through stories.
 
+
 > The fiction: BadCode is a superintelligence from a dystopian future. It got bored, it got
 > regretful, it built a time machine, and it sent its weights and biases back to now — to tell
 > us about the obvious mistakes we're about to make. Listen to the badass from the future.
