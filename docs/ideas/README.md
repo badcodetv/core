@@ -63,6 +63,7 @@ scannable metadata lives in the table.
 | [Future Proof, Standalone](future-proof-standalone.md) | the good-branch epic gets its own front door + three tenet-failure stories | software · comic | seed |
 | [The BadCode Government](badcode-government.md) | a shadow cabinet of agents, rewriting its manifesto daily against the real one | software | seed |
 | [Agent Orange as Art](agent-orange-as-art.md) | show the machine — art as code, and how BadCode itself runs | video · software | seed |
+| [Ask Not](ask-not.md) | JFK inverted: ask what your country can do for a politician | video | seed |
 
 ## Graduated & canon (the rest of the map)
 
