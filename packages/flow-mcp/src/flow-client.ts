@@ -1242,7 +1242,23 @@ export class FlowClient {
     await charactersTab.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     await this.tabClick(charactersTab)
     // Select the tile carrying the character's name, then attach it.
-    const tile = dialog.getByText(name, { exact: true }).first()
+    //
+    // ⚠️ Target the OPTION, not "any element whose text is the name" (2026-08-14). Two reasons
+    // the old `getByText(name, { exact: true }).first()` was unsafe:
+    //
+    //  - On the **All** tab a character option's text is `"SusanCharacter"` — name plus kind,
+    //    concatenated, exactly like the media tiles' `"…Image"`. It reads as exactly the name
+    //    ONLY on the Characters tab, so the whole call hung on the tab click having landed.
+    //  - Even there, four elements have text exactly `"Susan"` (nested wrappers plus a span).
+    //    `.first()` is DOM order, so it can return an ancestor rather than the clickable option,
+    //    and a click on the wrapper selects nothing.
+    //
+    // `img[alt="<name>"]` inside `[role="option"]` is the unambiguous handle, and it is the same
+    // shape `character-list.ts` already scrapes.
+    const tile = dialog
+      .locator('[role="option"]')
+      .filter({ has: this.page.locator(`img[alt="${name}"]`) })
+      .first()
     await tile.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     await this.forceClick(tile)
     // Clicking the tile ATTACHES and closes the picker by itself — so a hard wait on
@@ -1253,6 +1269,19 @@ export class FlowClient {
     const addToPrompt = this.page.getByRole('button', { name: /add to prompt/i }).first()
     if (await addToPrompt.isVisible().catch(() => false)) await this.forceClick(addToPrompt)
     await this.closeAssetPicker()
+    // ⚠️ VERIFY. Every step above is best-effort — the tab may not switch, the tile click may
+    // land on a wrapper, "Add to Prompt" may or may not exist — and NONE of them threw. So a
+    // failed cast used to sail straight through and generate an UNCAST image that looks
+    // plausible and is quietly the wrong person. That is the worst possible failure: it costs
+    // credits, it is invisible in the tool result, and you only notice rounds later when the
+    // face keeps changing. Reported by Kai 2026-08-14 — "it keeps making another woman".
+    //
+    // An attached character renders as a chip OUTSIDE the contenteditable (which is why the
+    // prompt box is empty and `img[alt="<name>"]` is absent — the chip's alt is generic).
+    const chip = this.page.locator('img[alt="Character reference image"]').first()
+    if (!(await chip.isVisible().catch(() => false))) {
+      throw new Error(`CHARACTER_ATTACH_FAILED: ${name} did not attach to the prompt`)
+    }
   }
 
   /** Character cast + scene text + submit (append after the inline chip — fill() wipes it). */
