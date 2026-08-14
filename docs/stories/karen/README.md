@@ -63,6 +63,15 @@ A hundred years later, there's a statue.
   pep talk that starts the whole thing — named 2026-08-11) — **plus her Flow
   Character ledger**: look + voice prompts (base voice Kore) and references in
   [`characters/img/`](./characters/img/)
+- **Scene briefs** — written in-repo, unfired, expected to change. The opposite
+  standing to `prompts.md`: revise these freely, and never mistake one for a
+  restore point.
+  - [`prompts-river-drop.md`](./prompts-river-drop.md) — §1.6, the phone in the
+    river. **§2g.13 accepted 2026-08-14** after four failed rounds; the
+    post-mortems are the most useful part of the file.
+  - [`prompts-morning-after.md`](./prompts-morning-after.md) — §1.7, the end of
+    Act 1. Seven plates including the Karen/Susan matched pair and the closing
+    frame of the act.
 
 ## Production tracker
 
