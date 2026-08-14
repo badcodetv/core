@@ -1,6 +1,6 @@
 ---
 story: karen
-kind: brief — written in-repo, not yet fired; replace with what was actually typed
+kind: brief — written in-repo; §2g.13 is now a fired record, the rest is still unfired
 engine: Nano Banana Pro (plates) · Gemini Omni Flash / Veo 3.1 Fast (clips)
 flow_project: TODO — exact project name as it appears in Flow
 updated: 2026-08-14
@@ -45,7 +45,19 @@ been run and accepted.
 > [bug 2](#bug-2-the-phone-flew--and-no-prompt-can-fix-that)) — which is what
 > established that the shot, not the wording, was wrong. **2g.6–2g.8 are round 3**,
 > with the 2g.6 plate revised again as **round 4** (location detail, both Characters cast).
-> The two-shot (2g.1/2g.2) has never been fired.
+> Round 4's clip **also failed** — Omni put rocks under the railing and dropped the
+> phone onto them ([bug 3](#bug-3-the-rocks-that-were-never-there)). **§2g.10–2g.12 are
+> round 5**, and the headline is that **the shot should not be in Ingredients at all**.
+> Round 5 failed too — the phone **bounced** ([bug 4](#bug-4-it-bounced)).
+>
+> **Round 6 stops trying, and round 6 worked.** Four rounds fixed four real bugs and all
+> four clips failed, because every one of them kept a falling object in frame.
+> **[§2g.13](#2g13-the-insert--clip--the-2g9-plate-frames-tab-4s--accepted-2026-08-14)
+> is the accepted take** — the release, the phone gone out of frame in a few frames, the
+> splash as sound. Omni Flash, Frames tab, 4s, first attempt, no post.
+>
+> **What remains:** the wide and the aftermath either side of it (fire order below), and
+> the two-shot (2g.1/2g.2), which has never been fired.
 
 The end of the drunk night: **Karen and Susan at the river, and the phone goes in.**
 [`story.md`](./story.md#16-the-phone-in-the-river--keep-retake-till-the-physics-behave)
@@ -393,7 +405,11 @@ failure report twice, and the two fixes that mattered so far — the camera bein
 outside the rail, the fall being too long on screen — were both only findable because
 the symptom was named.
 
-### 2g.7 The drop, from behind — clip · Omni Flash, Ingredients
+### 2g.7 The drop, from behind — clip · Omni Flash, Ingredients `[superseded by 2g.10]`
+
+> **This is the version that put rocks under the railing.** Kept because its
+> *prompt shape* was right for the mode; the mode was the mistake. See
+> [bug 3](#bug-3-the-rocks-that-were-never-there).
 
 **Rewritten 2026-08-14 (round 2 of the clip)** after the first version **ignored the
 reference image and re-staged the scene**.
@@ -475,6 +491,247 @@ Frame is honoured as geometry, an Ingredient is only a suggestion, and bug 1 is 
 geometry failure. Whichever it turns out to be, **write down which one you used**;
 that answers an open question for the whole repo, not just this shot.
 
+---
+
+### Bug 3: the rocks that were never there
+
+**Round 4's clip, fired 2026-08-14.** Reported symptom, in Kai's words: *"it was
+dropped onto rocks it added in Omni Flash… the main source of losing the realism is it
+not paying enough attention to the reference image."*
+
+The plate has open water beyond the railing. The clip invented a **rocky shore beneath
+it** and landed the phone there. So the beat fails twice over: the phone doesn't go in
+the water, and §1.6 exists precisely so the audience knows it did.
+
+The diagnosis is in
+[`omni-flash.md` §Making a reference stick](../../google-flow/omni-flash.md#making-a-reference-stick-there-is-no-adherence-knob),
+and it has three parts:
+
+1. **There is no adherence knob to turn up.** No strength, weight or influence
+   parameter exists on the reference path in any published schema `[vendor]`
+   `[runware]`. "Pay more attention to the image" is not an instruction the model can
+   act on, and no phrasing of it will be.
+2. **The plate is a location reference with two people in it** — a documented
+   anti-pattern: *"make sure location and style references don't contain extra
+   subjects"* `[community]`. Handed one image carrying two roles, the reference path
+   does what it is documented to be good at — **carries the subjects** — and treats
+   the environment as loose atmosphere it may re-stage.
+3. **The area below the railing is a region the plate never shows.** Anything a plate
+   fails to answer, the model answers by likelihood — and the likely thing under a
+   riverside railing at night is a shore. **We left the gap; it filled it.**
+
+> **The move that follows.** Points 2 and 3 are worth fixing, but point 1 says the
+> real error was upstream of all of it: **this shot's whole problem is that the
+> composition must survive, and Ingredients is not the mode that preserves
+> composition.** Google's own words — Frames to Video *"gives you precise control over
+> your shot's composition"*; Ingredients gives *"a consistent reference"* `[vendor]`.
+> We have been asking the consistency tool for geometry, three rounds running.
+
+### Round 5: use the Frames tab — Omni has one now
+
+**The input-mode conflict this file has been carrying is resolved, and in our favour.**
+Flow's changelog shipped *"Frame to Video… for Gemini Omni Flash"* in June 2026
+`[vendor]`; the stale help matrix said Omni had no Frames mode and we believed it.
+**Omni takes a first frame. It still has no last frame** — that part is listed as
+"available soon" `[community]`.
+
+So the routing for this shot changes:
+
+| Route | Mode | Fixes | Costs |
+| --- | --- | --- | --- |
+| **2g.10 — primary** | **Omni, Frames tab**, 2g.6 as start frame, 4s | bug 1 (geometry) and bug 3 (invented terrain) — the anchor *is* the composition | nothing; keeps the native splash audio |
+| **2g.8 — fallback A** | Veo 3.1 Fast, first + last frame | all three bugs, and the only structural fix for bug 2 | loses native audio; splash becomes a sound-design job |
+| **2g.11 — fallback B** | Omni, Ingredients, done properly | bug 3 only, and only partly | needs a second plate shot with no people in it |
+
+### 2g.10 The drop, from behind — clip · Omni Flash, **Frames tab**
+
+**Load the accepted 2g.6 plate into `+ Add start frame`.** Leave the end-frame slot
+empty — Omni has no last frame, and if the slot is greyed out, that is the confirmation
+rather than a problem.
+
+Frame mode wants the **opposite prompt shape** to the round-4 Ingredients version: the
+anchor carries the staging, so the text carries only what happens next. Back to three
+or four sentences.
+
+```prompt
+Create a 4-second 16:9 video, one continuous shot, no cuts, at real speed. Her fingers go slack and the lit phone drops from her hand, falls past the railing out of sight below it, and a small splash sounds from below a moment later; deep open water runs right up to the wall beneath the railing. Both women stay leaning on the rail with their heads turned toward each other, talking, and the bridge lights hold steady while the reflections shift on the dark water. Observational documentary camerawork, available light, unposed; visible film grain, ISO noise, natural motion blur, mild halation on the streetlights. Low indistinct voices under distant traffic and water against the stonework, no intelligible dialogue.
+```
+
+Two things in there are deliberate departures from the usual Frame-mode rule:
+
+- **`deep open water runs right up to the wall beneath the railing`** re-describes
+  something — which Frame mode normally treats as wasted words. It earns its place
+  because **the anchor does not show that area**. The rule is not "never re-describe";
+  it is *"don't re-describe what the anchor shows."* What the anchor **hides** still
+  has to be named, or the model names it for you. That is bug 3 in one sentence.
+- It is stated **positively**. Not *"no rocks"* — that is the negation backfire, and it
+  would put the word *rocks* into a model that cannot subtract it.
+
+### 2g.11 The location plate — no people in it
+
+**Only needed for the Ingredients fallback.** Same promenade as 2g.6, same lens, same
+lamp, **empty**. Then the loadout splits the roles the way the reference path expects:
+slot 1 the location, and Karen and Susan as cast Characters rather than as pixels
+inside a location plate.
+
+```prompt
+SCENE:
+
+Subject: an empty stretch of New York riverside promenade at night, seen from three or four metres back at hip height, with a steel pipe railing crossing the frame at waist height and worn paving running away underneath into the bottom of the frame.
+
+Environment: early September; a large illuminated suspension bridge crossing the river ahead with its lit span reflected in the water, the Manhattan skyline a soft band of lights across the dark river, a scuffed concrete kerb, chipped municipal paint on the railing with a lower bar beneath it, deep open water running right up to the wall below the railing, a park bench and an ordinary streetlight further along the promenade.
+
+Camera: 35mm, hand-held, low on the promenade at hip height.
+
+Lighting: night, ordinary promenade streetlights above and behind camera catching the top edge of the railing and throwing long shadows forward across the paving; the bridge lights and skyline sit far back as soft blooms; the water beyond the railing stays dark with broken reflections across it.
+
+Details: no people anywhere in the frame; keep every notice, mooring plate and sign free of readable lettering.
+
+Compose for a 16:9 frame.
+```
+
+And the clip prompt opens by **assigning every image its role**, which is the shape
+Google's own worked example uses — *"Using the provided images for the detective, the
+woman, and the office setting…"* `[vendor]`:
+
+```prompt
+Using the provided image as the promenade setting, and @Karen and @Susan as the two women: create a 4-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off low on the paving three or four metres behind them, seen from behind and slightly to one side, the railing crossing the frame in front of them and deep open water running right up to the wall beneath it. @Karen leans on the top rail in a cream blouse and a camel cardigan off one shoulder with a lit phone held slackly out over the rail; @Susan is beside her in an olive suede bomber with a canned drink resting on the rail. @Karen's fingers go slack and the phone drops from her hand, falls past the railing out of sight below it, and a small splash sounds from below a moment later; both stay leaning on the rail with their heads turned toward each other, talking, and the bridge lights hold steady while the reflections shift on the dark water. Observational documentary camerawork, available light, unposed; visible film grain, ISO noise, natural motion blur, mild halation on the streetlights. Low indistinct voices under distant traffic and water against the stonework, no intelligible dialogue.
+```
+
+#### The loadout, revised
+
+| Slot | Ingredient | Why |
+| --- | --- | --- |
+| 1 | the **2g.11 location plate** (no people) | the setting, named first in the prompt — order is a positional signal `[runware]` |
+| 2 | `@Karen` | subject binding, named second |
+| 3 | `@Susan` | subject binding, named third |
+
+**Order the slots the way the prompt names them.** That is documented behaviour, not
+superstition.
+
+### 2g.12 The free test worth running first
+
+Thirty seconds, no credits, and it answers two open questions for the whole repo:
+
+1. **Select Omni Flash. Is there a Frames tab, and does it offer an end-frame slot?**
+   Expected: Frames yes, end frame no. Write down what you actually see.
+2. **Type `<IMAGE_REF_0>` into the prompt box on any throwaway generation.** Google's
+   API and fal.ai both document inline role binding with that tag `[vendor]`
+   `[runware]`; nobody has ever checked whether Flow passes it through. If it works, it
+   is a stronger role declaration than any sentence.
+
+---
+
+### Bug 4: it bounced
+
+**Round 5's clip, fired 2026-08-14.** Reported symptom: *"it bounced off the ground
+and then into the water, and looked very AI."*
+
+The geometry held this time and the terrain was right. **The fall itself was the
+failure** — which is what the physics research said would happen, in
+[bug 2](#bug-2-the-phone-flew--and-no-prompt-can-fix-that), before we started.
+
+We have now spent four rounds asking a video diffusion model to render two seconds of
+ballistic motion, and it has failed four different ways: it flew upward, it landed on
+invented rocks, it bounced. **The variable was never the prompt.** Each round I wrote a
+better instruction and left the impossible part of the shot in frame.
+
+> `story.md` §1.6 says *"retake till the physics behave."* Four takes in, the honest
+> reading of that instruction is: **the physics will not behave, and the note was
+> written before we knew that.** What §1.6 actually requires is that the audience knows
+> where the phone went. It never required us to *show* it get there.
+
+### Round 6: the shot a real camera would have got
+
+The rule, now written into
+[`omni-flash.md`](../../google-flow/omni-flash.md#the-rule-that-outranks-all-of-it-a-real-camera-never-catches-the-whole-fall):
+
+> **A real camera never catches the whole fall.** Real handheld footage of someone
+> dropping something catches the release and loses the object immediately. The audience
+> fills in the rest and never questions it.
+
+Which means the shot we have been trying to make was **already stylised** — a fall held
+in frame from hand to water is a shot a camera operator would have had to anticipate.
+We were asking for the hardest thing the model does *and* the version that reads as
+staged even when it works. The vérité version is easier and better, which is the same
+happy coincidence as *"neither of them looks down."*
+
+So: **§2g.9 stops being the last resort and becomes the shot.** It was designed for
+exactly this and it has been sitting at the bottom of the fire order for two rounds.
+
+**The beat becomes three shots, and no model renders a falling object at any point:**
+
+| # | Shot | Plate | What it carries | Risk |
+| --- | --- | --- | --- | --- |
+| 1 | the wide | **2g.6** | where they are, that they're wrecked, that she's holding a phone | none — nobody moves much |
+| 2 | **the insert** | **2g.9** | the release; the phone streaks out of frame; splash on the soundtrack | none — no water, no ground, no fall in frame |
+| 3 | the aftermath | 2g.6 again, or **2c.6** | the surface, or the illustrated handset already sinking | none |
+
+Cutting is free. The three-shot version costs the same credits as one more failed
+attempt at the impossible one, and every shot in it sits inside the model's competence.
+
+### 2g.13 The insert — clip · the 2g.9 plate, Frames tab, 4s ✅ **ACCEPTED 2026-08-14**
+
+> **This is the take.** Fired through **Gemini Omni Flash, Frames tab**, with the 2g.9
+> plate loaded as the start frame, 4 seconds. Accepted **first time**, and **no post
+> pass was needed** — no grain layer, no speed adjustment. The prompt below is the one
+> that ran; it is a record now, not a brief.
+>
+> Five rounds, and what changed on the last one was **the mode and the shot**, not the
+> words. The findings that generalise are in
+> [`omni-flash.md`](../../google-flow/omni-flash.md#what-we-actually-confirmed-2026-08-14)
+> (engine) and
+> [`animate-slide`](../../../.claude/skills/animate-slide/SKILL.md#what-the-model-cannot-do-whichever-model-it-is)
+> (craft that outlives the engine).
+
+The plate is [§2g.9's](#2g9-the-last-resort--the-insert-that-shows-almost-nothing),
+unchanged: 85mm, tight on the hand and the top of the rail, everything past it
+dissolved into black. **No water and no ground are in frame at any point**, so there is
+nothing for the phone to bounce off and no surface for it to enter.
+
+```prompt
+Create a 4-second 16:9 video in one continuous shot, no cuts, at real speed. Shot at 24fps with a 180-degree shutter, so anything moving fast smears with natural motion blur.
+
+The camera holds close on the rail beside her forearm with a little handheld sway. After about a second the lit phone slips from her fingertips and streaks down out of the bottom of the frame, gone in an instant, and a splash sounds from the dark below a moment later. Her hand stays exactly where it is on the rail, and nothing else in the frame changes for the rest of the shot.
+
+Available light only from one lamp above the rail, unposed and observational, nothing composed: heavy grain, ISO noise, mild halation on the lamp, deep soft blacks, everything past the rail dissolved into dark bokeh. Water against the stonework, distant traffic and low indistinct voices, no dialogue.
+```
+
+**What each part is buying, and what's new since round 5:**
+
+- **`shot at 24fps with a 180-degree shutter, so anything moving fast smears`** — the
+  new lever, and the direct answer to *"looked very AI."* Models render fast motion
+  sharp in every frame; a real camera smears it. Naming the *cadence* is stronger than
+  asking for "motion blur" in a grain list, because it tells the model **which** frames
+  to blur.
+- **`streaks down out of the bottom of the frame, gone in an instant`** — the phone
+  should be a smear, not a crisp handset in four positions. A sharp falling object
+  reads as pasted on even when the trajectory is right.
+- **`After about a second`** — one plain-language timing cue, which parses `[vendor]`.
+  It stops the model stretching the event to fill the runtime, and it buys three
+  seconds of nothing, which is the punchline. **One cue only** — a timecoded narration
+  block is what sank round 1.
+- **`nothing else in the frame changes for the rest of the shot`** — positively stated,
+  and it is the whole second half of the clip.
+- **`unposed and observational, nothing composed`** — the documented way to get vérité.
+  For an accident nobody saw coming, a camera that is not helping *is* the right
+  choice.
+
+### In the edit
+
+Two things the prompt cannot do, both documented `[community]`:
+
+- **Lay a grain pass over the cut** — *"instantly makes output feel captured rather
+  than generated."*
+- **Take the speed off by 10–15%.** It breaks the synthetic cadence, and it is the
+  cheapest realism fix available.
+
+And **review it frame by frame before accepting.** The failure is usually a handful of
+frames, not the whole clip — and on this shot the only frames that matter are the four
+or five where the phone is still in shot.
+
+---
+
 ### 2g.8 The drop, from behind — clip · Veo 3.1 Fast, first + last frame
 
 **The recommended path, and the only one that structurally cannot reproduce bug 2.**
@@ -542,26 +799,38 @@ Create a 4-second 16:9 video, one continuous shot, no cuts, at real speed. Locke
 
 ### Fire order, and what it would prove
 
-0. **Check Flow's model picker before generating anything.** With Omni selected, is
-   there a **Frames** tab? And with Veo 3.1 Fast selected, is there a **last frame**
-   slot? Those two answers decide the next three steps and settle an open question
-   for the whole repo. Thirty seconds, no credits.
-1. **2g.6** — the plate. Everything downstream depends on it, and it is where bug 1
-   is either fixed or not: look at it and ask whether it is obvious she is standing
-   on the walkway. If it is not obvious to you, it will not be obvious to the model.
-2. **2g.8** — the Veo first+last version. **Fire this before 2g.7.** It is the only
-   route that structurally cannot reproduce the flying phone, so if it works the beat
-   is finished and the Omni question becomes academic.
-3. **2g.7** — the Omni Ingredients version, as asked for. Cheaper, keeps the native
-   splash audio, and if it holds it is the better clip.
-4. **2g.1 → 2g.2** — the two-shot. Two bindings in one frame, and Susan's
-   e-commerce references under a super-8 night grade.
-5. **2g.9** — only if both drop routes lose.
+**Rewritten for round 6, 2026-08-14.** The order has inverted: the shot that shows
+least is now the shot to fire first.
 
-**What to watch on 2g.7 / 2g.8:** whether the phone is visible for more than a few
-frames after it leaves her hand. **If it is, the framing is wrong, not the prompt** —
-lower the camera or raise the rail until the railing takes it out of sight almost
-immediately. Every frame the phone is airborne on screen is a frame it can drift in.
+1. ~~**2g.9's plate**~~ — ✅ done.
+2. ~~**2g.13**~~ — ✅ **done and accepted 2026-08-14.** Omni Frames tab, 4s, first
+   attempt, no post pass.
+3. **2g.6 → the wide**, cut before it. Almost no motion — they lean, they talk, the
+   phone is still in her hand. Fire it as a near-static clip or hold the still.
+4. **2c.6** — the illustrated handset already sinking, cut after. It has been sitting
+   in the ledger with no job since the title sequence, and this is the job.
+5. **2g.1 → 2g.2** — the two-shot. Two bindings in one frame, and Susan's
+   e-commerce references under a super-8 night grade. Independent of the drop.
+
+**Only if someone still wants the fall on screen:** `2g.8`, the Veo first+last version.
+It is the only route that structurally cannot bounce, because the last frame says where
+everything ended up. **Fire it once**, and if it loses, the answer is the cut, not a
+sixth prompt.
+
+**Superseded, kept as worked examples:** ~~2g.7~~ (right prompt shape, wrong mode),
+~~2g.10~~ and ~~2g.11~~ (right mode, impossible shot). Each was a real fix to a real
+bug — and each left the falling phone in frame, which is why each failed.
+
+**~~What to watch on 2g.13~~ — it passed both checks 2026-08-14.** Kept because they are
+the right checks for the next clip anyone writes:
+
+- **Count the frames the object is visible.** More than four or five and the *framing*
+  is wrong, not the prompt — tighten in until it is gone almost immediately.
+- **Streak or sharp?** A crisp object in four positions reads as pasted on however
+  correct the trajectory is. Sharp means the shutter clause is not landing.
+- **Any shore, rocks or jetty** is [bug 3](#bug-3-the-rocks-that-were-never-there)
+  again — the model answering a question the plate left open. 2g.9's plate is framed so
+  the question never gets asked, which is why it never got answered wrong.
 
 **What to watch on 2g.1:** whether Karen and Susan look lit by the same lamp. That
 is the whole Susan-register question, and it is answerable at a glance.
@@ -571,6 +840,22 @@ things wants to give you the flinch, and the flinch kills the beat — if either
 them looks down, the next morning's *"Where's my phone?"* stops working.
 
 ### Sources for the §2g research `[2026-08-14]`
+
+**Round 6 (the realism pass)** is written up in
+[`omni-flash.md` §Making motion read as real](../../google-flow/omni-flash.md#making-motion-read-as-real).
+The two lines it turns on:
+
+- [The A to Z guide to Seedance 2.0 prompts](https://ethicalfounder.com/guide-to-seedance-2-0-prompts-claude-ai-video-prompt-generation/) `[community]` — 24fps / 180° shutter as the realism convention, and motion blur that has to match the motion. Describes a different model; the token is cheap to try.
+- [5 ways to make AI video look less AI — Sunra](https://sunra.ai/blog/make-ai-video-look-less-ai) `[community]` — *"perfection is what makes it look fake"*; grain and a 10–15% speed adjustment in post.
+
+**Round 5 (the reference-adherence pass)** is written up in full in
+[`omni-flash.md` §Making a reference stick](../../google-flow/omni-flash.md#making-a-reference-stick-there-is-no-adherence-knob),
+with its own source list. The four lines it turns on:
+
+- [5 tips for using Flow — blog.google](https://blog.google/innovation-and-ai/products/flow-video-tips/) `[vendor]` — Frames to Video *"gives you precise control over your shot's composition"*.
+- [Ultimate prompting guide for Veo 3.1 — Google Cloud](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-veo-3-1) `[vendor]` — *"Using the provided images for the detective, the woman, and the office setting…"*; location is a first-class ingredient role.
+- [Gemini Omni Flash reference-to-video — fal.ai](https://fal.ai/models/google/gemini-omni-flash/reference-to-video/api) `[runware]` — the full input schema: **no strength or adherence parameter exists**.
+- [Google Flow AI prompts 2026 — Whiskai Labs](https://whiskailabs.net/google-flow-ai-prompts-2026-best-prompts-guide/) `[community]` — *"make sure location and style references don't contain extra subjects."*
 
 Round 3 (the physics and input-mode pass) added:
 
