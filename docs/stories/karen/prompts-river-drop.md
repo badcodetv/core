@@ -43,7 +43,8 @@ been run and accepted.
 > Round 2 was clean prose and **still failed**, on geometry and physics
 > ([bug 1](#bug-1-the-wrong-side-of-the-railing--our-own-fault),
 > [bug 2](#bug-2-the-phone-flew--and-no-prompt-can-fix-that)) — which is what
-> established that the shot, not the wording, was wrong. **2g.6–2g.8 are round 3.**
+> established that the shot, not the wording, was wrong. **2g.6–2g.8 are round 3**,
+> with the 2g.6 plate revised again as **round 4** (location detail, both Characters cast).
 > The two-shot (2g.1/2g.2) has never been fired.
 
 The end of the drunk night: **Karen and Susan at the river, and the phone goes in.**
@@ -344,29 +345,53 @@ withholding the splash is better filmmaking than showing it.
 
 ### 2g.6 The drop, from behind — plate
 
-Every element here is load-bearing on bug 1: the camera is on the walkway, the
-pavement is under her feet, her shadow falls forward onto it, and the railing sits
-between her and the water.
+Every element here is load-bearing on bug 1: the camera is on the promenade, the
+paving is under their feet, their shadows fall forward across it, and the railing sits
+between them and the water.
 
-**No Character is cast** — she is seen from behind and there is no face in frame.
+**Revised 2026-08-14 (round 4)** after the first version came back wrong — how, we
+don't know; it wasn't recorded. Two changes at Kai's direction: **the location is
+described properly** rather than as a bare rail (promenade, illuminated suspension
+bridge, benches, streetlights, skyline across the river), and **both Characters are
+cast**, where the previous version had none.
+
+That second change reverses an earlier call in this file. It was worth casting nobody
+while the shot was a hand in close-up; a two-figure wide needs the bindings, and the
+consistency they buy across the whole Act 1 sequence is worth more than the risk.
+
+> **One geometry correction, carried in from the reference version.** That prompt put
+> them *"beneath a large illuminated suspension bridge"* with the camera behind them —
+> which puts the bridge behind the camera and out of shot. The bridge has to be
+> **ahead, across the river**, or the two instructions fight and the model picks one.
+
+The angle is **behind and slightly to one side**, not straight on: their profiles read
+for the Character bindings while the paving, the railing and the depth ordering stay
+unambiguous. Straight-on-from-behind protects the geometry but starves the bindings.
 
 ```prompt
 SCENE:
 
-Subject: a woman seen from behind at a waterfront railing at night, standing on the paved walkway with the railing directly in front of her, one arm out over the top rail with a lit smartphone hanging slackly from her fingertips.
+Use @Karen and @Susan exactly as supplied. Keep their faces, hair and proportions consistent with the supplied references.
 
-Action: she rests her weight on the top rail and looks out across the water, the phone held loosely in the hand that is out over the rail, its screen still lit.
+Subject: two women at a waterfront railing at night on a New York riverside promenade, seen from behind and slightly to one side so their profiles read, standing on the paved promenade with the railing directly in front of them.
 
-Environment: the East River waterfront in early September; worn paving running away under her feet into the bottom of the frame, a scuffed concrete kerb, a steel pipe railing with chipped municipal paint crossing the frame in front of her at waist height with a lower bar beneath it, and the far Manhattan skyline as a soft band of lights above the rail across the water.
+Action: both lean their weight on the top rail with their heads turned toward each other mid-conversation; the older woman has one arm out over the rail with a lit smartphone hanging slackly from her fingertips, and the younger woman rests a canned drink on the top rail beside her.
 
-Camera: 35mm, hand-held, low on the walkway three or four metres behind her at hip height, so the pavement she is standing on fills the foreground and the railing reads clearly between her and the water.
+Environment: a New York riverside promenade in early September; a large illuminated suspension bridge crossing the river ahead of them with its lit span reflected in the water, the Manhattan skyline glowing as a soft band of lights across the dark river, worn paving running away under their feet into the bottom of the frame, a scuffed concrete kerb, a steel pipe railing with chipped municipal paint crossing in front of them at waist height with a lower bar beneath it, a park bench and an ordinary streetlight further along the promenade.
 
-Lighting: night, one cold park lamp above and behind camera throwing her shadow forward across the pavement and catching the top edge of the railing; the phone's screen is the brightest thing in the frame; the water beyond the railing stays dark and largely hidden behind it.
+Camera: 35mm, hand-held, low on the promenade three or four metres behind them at hip height, so the paving they are standing on fills the foreground and the railing reads clearly between them and the water.
 
-Details: she wears a cream blouse pulled untucked and a camel cashmere cardigan slipped off one shoulder, tailored trousers and low-heel flats, no coat; a structured leather handbag sits on the paving by her feet; keep every notice and mooring plate free of readable lettering.
+Lighting: night, ordinary promenade streetlights above and behind camera throwing their shadows forward across the paving and catching the top edge of the railing; the bridge lights and the skyline sit far back as soft blooms; the phone's screen is the brightest thing in the near frame; the water beyond the railing stays dark with broken reflections across it.
+
+Details: both are very drunk in an ordinary, believable way — loose posture, weight dumped on their forearms, one shoulder dropped, hair slightly disturbed; the older woman wears a cream blouse pulled untucked and a camel cashmere cardigan slipped off one shoulder, tailored trousers and low-heel flats, no coat; the younger woman wears an unzipped olive suede bomber over a cream t-shirt, blue jeans and brown leather low-top sneakers; a structured leather handbag sits on the paving by their feet; keep every notice, mooring plate and sign free of readable lettering.
 
 Compose for a 16:9 frame.
 ```
+
+**If this one misses too, record how.** "It didn't work" has now been the entire
+failure report twice, and the two fixes that mattered so far — the camera being
+outside the rail, the fall being too long on screen — were both only findable because
+the symptom was named.
 
 ### 2g.7 The drop, from behind — clip · Omni Flash, Ingredients
 
@@ -374,7 +399,7 @@ Compose for a 16:9 frame.
 positive, the fall occluded by the railing and the splash carried entirely by sound.
 
 ```prompt
-Create a 4-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off low behind her on the walkway. Grainy night cinematography lit by a single cold park lamp. Her fingers go slack and the lit phone drops from her hand and falls past the railing out of sight below it, while she stays leaning on the rail exactly as she is, still looking out across the water. Distant traffic, water against the piling and one small splash somewhere below the railing, no dialogue.
+Create a 4-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off low behind them on the promenade. Grainy night cinematography lit by ordinary streetlights. Her fingers go slack and the lit phone drops from her hand and falls past the railing out of sight below it, while both women stay leaning on the rail exactly as they are, heads still turned toward each other. Distant traffic, water against the piling and one small splash somewhere below the railing, no dialogue.
 ```
 
 **Append `Use this image as the starting frame.` only if you are in the Frames tab.**
@@ -416,13 +441,13 @@ will morph. Take the accepted 2g.6 plate and **edit the phone out of it** with
 `flow_edit_image`, so every other pixel is identical by construction:
 
 ```prompt
-Remove the smartphone from her hand so the hand is empty and hangs slack over the rail, and remove the light its screen was throwing on her fingers. Keep everything else in the image exactly the same — the same woman in the same position and clothing, the same railing, the same paving and shadow, the same skyline, the same lighting and grain. Thanks.
+Remove the smartphone from her hand so the hand is empty and hangs slack over the rail, and remove the light its screen was throwing on her fingers. Keep everything else in the image exactly the same — both women in the same positions and clothing, the same railing, the same paving and shadows, the same bridge and skyline, the same lighting and grain. Thanks.
 ```
 
 Then generate with 2g.6 as the first frame, that edit as the last frame, 4 seconds:
 
 ```prompt
-Create a 4-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off low behind her on the walkway. Her fingers go slack and the lit phone drops from her hand and falls past the railing out of sight below it, while she stays leaning on the rail looking out across the water. Grainy night cinematography, one cold park lamp, deep soft blacks.
+Create a 4-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off low behind them on the promenade. Her fingers go slack and the lit phone drops from her hand and falls past the railing out of sight below it, while both women stay leaning on the rail with their heads turned toward each other. Grainy night cinematography, ordinary streetlights, deep soft blacks.
 ```
 
 ### 2g.9 The last resort — the insert that shows almost nothing
