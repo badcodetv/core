@@ -313,15 +313,15 @@ and fond; the pain is Karen's. Round 2 fixed it with four changes, all straight 
 ```prompt
 SCENE:
 
-Subject: a woman sitting up against a headboard with a phone held to her ear, four seconds awake, listening to someone else talk.
+Subject: a woman in her late thirties with long dark brown wavy hair parted in the centre and falling just past her shoulders, slept on and flattened on one side, sitting up against a headboard with a phone held to her ear, four seconds awake, listening to someone else talk.
 
 Camera: low-angle shot from her side at mattress height, 35mm at f/2, the near edge of the bed close to the lens.
 
-Composition: 16:9. She sits left of centre. The bedroom falls away to the right. The rumpled duvet crosses the bottom of the frame, close and out of focus. The frame tilts a few degrees off level.
+Composition: 16:9. She sits right of centre. The room falls away to the left toward the window. The rumpled duvet crosses the bottom of the frame, close and out of focus.
 
 Action: her free hand is pushed up into her hairline at the temple. Her eyes are open and unfocused, looking at nothing across the room. She is halfway through a slow sigh.
 
-Location: a small rented pre-war New York apartment bedroom, mid-morning. Ornate ceiling moulding and a picture rail thickened by many layers of paint. A painted cast-iron radiator under the window. Worn narrow-strip parquet floor. Through the half-open venetian blind, a black iron fire escape and the brick wall of the building opposite, close enough to touch. Mismatched second-hand furniture: a bentwood chair with an olive suede bomber slung over it, a chest of drawers that does not match the bedside table. Paperbacks stacked on the floor beside the bed. A trailing pothos on the windowsill. The bedside table holds a lamp, a half-drunk mug going cold and a tangled charger cable. Yesterday's jeans are on the floor where they were stepped out of.
+Location: a small rented pre-war New York apartment bedroom, mid-morning. The walls are painted a deep terracotta burnt-sienna, with the ornate ceiling moulding and picture rail left chalky off-white and thickened by many layers of paint. A painted cast-iron radiator under the window. Worn narrow-strip parquet floor. Through the half-open venetian blind, a black iron fire escape and the brick wall of the building opposite, close enough to touch. Mismatched second-hand furniture: a bentwood chair with an olive suede bomber slung over it, a chest of drawers that does not match the bedside table. Paperbacks stacked on the floor beside the bed. A trailing pothos on the windowsill. The bedside table holds a lamp, a half-drunk mug going cold and a tangled charger cable. Yesterday's jeans are on the floor where they were stepped out of.
 
 Light: a hard ladder of daylight through the half-open venetian blind camera-left, striping across the headboard and her arm. No other source. Uneven exposure, the window blown out behind the blind.
 
@@ -355,12 +355,43 @@ The nine nouns that did the work, and they are all cheap:
 re-shoot should be expensively bland where this is characterful — the contrast is the
 point, and it costs nothing to write.
 
-> **⚠️ A prompt bug worth not repeating.** All three candidates put her **right** of
+> **⚠️ A prompt bug worth not repeating.** Round 3's candidates all put her **right** of
 > centre with the room falling **left** — the mirror of what the Composition line asked
 > for. That is not the model ignoring left/right (round 2 honoured it): it is that
 > `light … camera-left` and `she sits left of centre` were **fighting**, since obeying
 > both would have put her in front of the window. The model resolved it sensibly.
 > **When a placement instruction keeps flipping, check it isn't arguing with the light.**
+> Round 4 simply stopped fighting it — the recorded prompt now says *right of centre,
+> room falling left*, and it lands every time.
+
+### Round 4 — the walls, and the drift `[accepted]`
+
+Two more notes from Kai, both fixed in the block above.
+
+**The room still read as Karen's flat**, because *"a small rented pre-war New York
+apartment"* was doing all the differentiating work and the walls were still landlord
+off-white — the same neutral as every generic bedroom. **Colour is the fastest way to
+make two rooms read as two rooms.** The walls are now a deep terracotta burnt-sienna
+with the moulding left chalky off-white, which does three things at once: it is
+unmistakably a renter's own paint choice, the pre-war architecture stays legible against
+it, and **the olive suede bomber pops** instead of disappearing. That last point is why
+this is terracotta and not the obvious deep green — green would have swallowed her one
+wardrobe signal.
+
+**Susan was not in every candidate.** Character drift, which `docs/flow/consistency.md`
+calls *"a probability, not a bug — budget a reroll on hero shots."* The counter that
+worked, and it is the one the reference research already prescribed: **reinforce hair
+and build in text, never the face.** The Subject line now carries *"late thirties, long
+dark brown wavy hair parted in the centre, falling just past her shoulders."*
+
+> **This is not a breach of the casting rule and the distinction matters.** The rule
+> forbids describing a **face** in prose, because a described face competes with the
+> Character binding. Hair, age and build **reinforce** it. After adding one hair clause,
+> all three candidates came back recognisably Susan where the round before had drifted.
+
+**Candidate C carries the trailing pothos** that B lost, and is the warmer, tighter
+read. B has more architecture — moulding, picture rail, herringbone parquet, radiator
+and fire escape all legible at once — which is why it is the take.
 
 **Two notes for the next plate in this room.** Candidate **C** mirrored the composition
 (her right of centre, room falling left) and gave the *best* camera of the three — a
