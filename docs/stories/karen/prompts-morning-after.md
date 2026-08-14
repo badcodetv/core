@@ -283,9 +283,23 @@ phone in the river."* Her sheet is explicit that **the affection has to read thr
 the bluntness** — if she plays contemptuous, the pep talk becomes mockery and the hinge
 snaps. So: unimpressed, patient, awake about four seconds, faintly amused. Not withering.
 
-> **✅ FIRED AND ACCEPTED 2026-08-14 — candidate B of round 2.** Nano Banana Pro,
-> `@Susan` cast, 16:9, 3 candidates, no reference image. The block below is what was
-> actually sent; it is a record now, not a brief.
+> **✅ FIRED AND ACCEPTED 2026-08-14 — candidate B of round 5.** Nano Banana Pro,
+> `@Susan` cast **and verified**, 16:9, 3 candidates, no reference image. The block below
+> is what was actually sent; it is a record now, not a brief.
+>
+> **Rounds 1–4 were all generated UNCAST and nobody knew.** `addCharacterToPrompt` was
+> silently no-opping — every step best-effort, none of them throwing — so Flow returned a
+> plausible stranger each time and the tool result looked like a success. That is why the
+> woman changed between rounds, and why *"reinforce her hair in text"* appeared to help:
+> with no binding attached, the prose was the *only* thing describing her.
+>
+> **The client now verifies the chip and throws `CHARACTER_ATTACH_FAILED` instead**
+> (`packages/flow-mcp`, 2026-08-14). This round is the first with a genuine binding, and
+> the face matches the Character tile for the first time.
+>
+> **Keep the hair clause anyway.** It costs nothing and it is what the reference research
+> prescribes for drift — but it is now belt *and* braces rather than the only thing
+> holding her together.
 
 **Round 1 came back wrong in a way worth keeping**, because the cause was one clause:
 
