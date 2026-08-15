@@ -28,3 +28,9 @@ and `new-story` scaffolds its canon folder.
 - [`vision.md`](./vision.md) — origin story, mission, themes
 - [`voice.md`](./voice.md) — the load-bearing tone guide
 - [`storytelling.md`](./storytelling.md) — how we craft a story
+- [`marketing/the-reader.md`](./marketing/the-reader.md) — **who the work is for** (ruled
+  2026-08-15): the working-class reader drifting right, the ten rules for writing to them, and the
+  traps. Evidence: [`misc/2026-08-15-target-reader-research.md`](./misc/2026-08-15-target-reader-research.md)
+- [`using-ai.md`](./using-ai.md) — our position on making the work with AI: what we concede, what we
+  don't, what we owe, and the sentences we never use. **Armour, not the campaign.** Evidence:
+  [`misc/2026-08-15-anti-ai-research.md`](./misc/2026-08-15-anti-ai-research.md)

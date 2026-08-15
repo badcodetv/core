@@ -154,6 +154,22 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
 
 - [`docs/vision.md`](./docs/vision.md) — origin story, mission, themes
 - [`docs/voice.md`](./docs/voice.md) — tone guide with do/don't
+- **[`docs/marketing/the-reader.md`](./docs/marketing/the-reader.md) — WHO THE WORK IS FOR. Read
+  before writing any story, song or public copy.** Ruled 2026-08-15: the target is a working-class
+  UK reader drifting right because the economy failed them — *not* anti-AI advocates and not the
+  converted left. Ten evidence-backed rules, and the traps that cost us the reader if we trip them:
+  never "you've been duped"; never deny immigration's real costs (proportionality instead); name the
+  decision-maker, never the technology; **never raise automation fear without naming the beneficiary
+  in the same piece** (unaimed, it demonstrably feeds nativism). Evidence:
+  [`docs/misc/2026-08-15-target-reader-research.md`](./docs/misc/2026-08-15-target-reader-research.md),
+  whose §7 lists what nobody has measured — don't assert those.
+- **[`docs/using-ai.md`](./docs/using-ai.md) — how we talk about making the work with AI.** Read it
+  before writing any public-facing copy that touches AI. **It is armour, not the campaign** — the
+  honest account for when someone asks about our method, never the register the work leads with.
+  It carries the two-layer disclosure, the never-say list (including "we can't afford to commission"
+  and "AI is inevitable" — both actively counterproductive), and the standing commitments that make
+  the position honest rather than clever. Evidence:
+  [`docs/misc/2026-08-15-anti-ai-research.md`](./docs/misc/2026-08-15-anti-ai-research.md).
 - **[`docs/stories/gitpush-origin-master/`](./docs/stories/gitpush-origin-master/README.md)** — the whole GPOM story canon, one folder. Start at its `README.md` (the **backbone**: orientation, the fork, the production tracker, and the act sequence — Prologue → 6 acts → Coda — from the push to the time machine). Inside:
   - [`discovery-timeline.md`](./docs/stories/gitpush-origin-master/discovery-timeline.md) — how the Storyverse got proven: the bad-branch fictional history 2026–2054 (the four beats, the vault, the revert)
   - [`future-proof.md`](./docs/stories/gitpush-origin-master/future-proof.md) — the good-branch epic: redesigning politics with software-engineering tenets
