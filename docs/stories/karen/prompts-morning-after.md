@@ -445,14 +445,33 @@ perfectly. So the clip ends on the blind grope.
 > contact.** It is also the better performance. Hungover irritation is a blind swat, not
 > a clean pick-up.
 
+> **⚠️ The first version of this block was POLICY-BLOCKED, 2026-08-16.** The word was
+> **`gropes`** — *"her hanging arm swings up and gropes blindly along the edge of the
+> mattress"* — in a scene where a woman is lying on a bed. Nothing in the shot is
+> remotely sexual; the classifier scans keywords, and **the setting supplied the second
+> meaning.** Written up as trigger 5 in
+> [`failure-modes.md` §A5b](../../flow/failure-modes.md#a5b-the-bedroom-problem--trigger-5-in-detail).
+>
+> Three changes went in. Only the first is diagnosis; the other two are insurance, and
+> that is the right posture on a scene the filter is already primed for:
+>
+> | Was | Now | Why |
+> | --- | --- | --- |
+> | `gropes blindly along` | `feels its way along` | the suspected trigger |
+> | `lying on her front` | `lying face-down across the bed` | adjacent, costs nothing |
+> | `…and one dry breath in through her nose` | *(cut from the audio)* | a breath track over a woman on a bed buys nothing |
+>
+> **And turn Enhance Prompt off first.** Flow's auto-rewrite injects language you never
+> wrote, and a plain prompt that blocks is often blocked for the enhancer's words.
+
 ```prompt
 Using the attached image as the locked opening frame, animate what happens next. Keep the room, the bedding, the light and her hair and clothes exactly as they are in the frame.
 
-She stays lying on her front throughout, exactly as in the frame. On the bedside table at frame right the phone screen lights and starts to buzz, rattling faintly against the wood. She stays still for a beat. Then her eyes open. Nothing else on her face moves. Her head lifts an inch off the mattress, turns a few degrees toward the sound, and drops back down onto it. Her hanging arm swings up and gropes blindly along the edge of the mattress toward the noise, patting at the bedding, still searching as the clip ends.
+She stays lying face-down across the bed throughout, exactly as in the frame. On the bedside table at frame right the phone screen lights and starts to buzz, rattling faintly against the wood. She stays still for a beat. Then her eyes open. Nothing else on her face moves. Her head lifts an inch off the mattress, turns a few degrees toward the sound, and drops back down onto it. Her hanging arm swings up and feels its way along the edge of the mattress toward the noise, patting at the bedding, still searching as the clip ends.
 
 The camera is locked and still throughout. Available light only, real-time pace, and the camera is not helping — this is a fixed observational shot, not a composed one. Shot at 24fps with a 180-degree shutter, so the arm smears with natural motion blur as it swings. Fine film grain.
 
-Audio is the room only: the low buzz of a phone vibrating on a wooden table, distant traffic through the window, and one dry breath in through her nose.
+Audio is the room only: the low buzz of a phone vibrating on a wooden table and distant traffic through the window.
 ```
 
 **Note every constraint is stated positively** — *"she stays lying on her front

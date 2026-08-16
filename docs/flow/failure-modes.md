@@ -85,7 +85,10 @@ A historical name is not, and will silently produce a real image and a real cred
 4. **Rewrite; don't re-roll.** Retrying identical text is wasted credits and wasted
    minutes.
 
-## A5. The four triggers (BadCode's own, from the camping recut)
+## A5. The five triggers (BadCode's own)
+
+Numbers 1–4 come from the camping recut; **number 5 was added 2026-08-16** from the
+Karen §2h.4v clip.
 
 1. **Real brand names, prominent or repeated** — supermarket fascias, a named car marque
    plus a specific plate, branded totes. Asking for a **legible** real logo or wordmark is
@@ -96,6 +99,41 @@ A historical name is not, and will silently produce a real image and a real cred
    one prompt, especially alongside a real identifiable business.
 4. **Legible text attributed to real institutions** — invented headlines quoting a real
    central bank, government body or newspaper.
+5. **A word with a sexual second meaning, in a setting that supplies the first one.**
+
+### A5b. The bedroom problem — trigger 5 in detail
+
+**Karen §2h.4v, 2026-08-16.** A clip of Susan waking up to a ringing phone was blocked.
+Nothing in the scene is remotely sexual: she is fully dressed, face-down, alone, and the
+entire action is reaching for a phone. **The word was `gropes`** — *"her hanging arm
+swings up and **gropes** blindly along the edge of the mattress."*
+
+This is [A6](#a6-rewrite-patterns)'s mechanism — *"the filter scans individual keywords,
+not overall intent"* — with one thing added that the existing list did not say:
+
+> **Context does not protect a word; it convicts it.** The advice so far was that words
+> with a violent second meaning false-positive *in wholly innocent contexts*. That
+> undersells it. `grope` in a kitchen is a fumble; `grope` on a bed with a woman on it is
+> the classifier's other reading, because **the setting supplies the missing half of the
+> phrase.** Google's own filter list names *sexual* alongside violence, derogatory and
+> toxic `[vendor]`.
+
+**So audit for the pair, not the word.** Before firing any bedroom, bathroom, shower or
+undressing scene, read the block back asking which words would look bad *quoted next to
+the location* — and swap them even where you are sure of your own meaning.
+
+| In a bedroom scene, instead of | Write |
+| --- | --- |
+| gropes / gropes blindly | feels its way along, patting at |
+| lying on her front | lying face-down across the bed |
+| a breath in through her nose *(audio)* | cut it — a breath track over a woman on a bed buys nothing |
+| stripping / strips off | changing out of, pulling off a jumper |
+| moans / groans | *(name the sound: a sigh, a low sound in her throat)* |
+
+**None of the three changes we made were diagnosis** — only `gropes` was suspected. The
+other two were dropped because **they cost nothing and they were adjacent**, which is the
+right posture: on a scene the filter is already primed for, do not spend generations
+defending a clause you do not need.
 
 ## A6. Rewrite patterns
 
