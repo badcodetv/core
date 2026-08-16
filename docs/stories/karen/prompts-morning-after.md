@@ -478,21 +478,31 @@ Audio is the room only: the low buzz of a phone vibrating on a wooden table and 
 bed"*, *"the camera is locked and still"*, *"audio is the room only"*. Negatives do not
 work on Omni and actively backfire, so there is not a single "no" in the block.
 
-> **❌ THIS VERSION FAILED — the Frames run came back as a different woman entirely.**
-> 2026-08-16, Kai: *"she looks completely different."* The block above is kept as the
-> record of what was fired, not as a brief.
+> **✅ FIRED AND ACCEPTED 2026-08-16 — the block above is exactly what worked.**
 >
-> **The composition held and the face did not**, which is the sharpest limit we have
-> found on the Frames tab and it disproves the reasoning written here two days earlier.
-> **Frames buys composition, and composition only** —
-> [`omni-flash.md`](../../google-flow/omni-flash.md#️-a-start-frame-does-not-hold-a-face),
-> `[confirmed 2026-08-16]`. Since Flow will not let you attach a character to a start
-> frame, **there is currently no way to get both on this engine.**
+> **Two runs of this plate, and the difference is worth recording.** The first came back
+> as *"a completely different woman"*; the second, with the
+> [policy rewrite](../../flow/failure-modes.md#a5b-the-bedroom-problem--trigger-5-in-detail)
+> in place, held her and was accepted.
 >
-> **The rule that comes out of it: ask which one the shot cannot survive losing.** Susan's
-> face is on screen and has to be hers, so this is an Ingredients shot. See §2h.4v-i below.
+> **⚠️ I called that first failure a capability limit and wrote it into
+> [`omni-flash.md`](../../google-flow/omni-flash.md#a-start-frame-holds-a-face--usually-and-not-reliably)
+> as "a start frame does not hold a face." That was over-generalised from one run and is
+> retracted.** Identity in Frames is a **probability, not a guarantee** — the same thing
+> [`consistency.md`](../../flow/consistency.md) already says about character drift
+> generally. **Reroll a drifted face; do not change tab for it.** The wrong conclusion
+> sends you to Ingredients, which costs you the composition you already had.
+>
+> **The open question it leaves is the interesting one:** the two runs differed *only* in
+> the safety rewrite. Whether a near-miss on the policy filter quietly degrades a
+> generation rather than blocking it outright is untested, and would explain both results.
 
-### 2h.4v-i Susan wakes to the phone — clip, **Ingredients**
+### 2h.4v-i Susan wakes to the phone — clip, Ingredients · **superseded, kept as reference**
+
+> **Not needed — §2h.4v was accepted in Frames.** This block was written when the Frames
+> run looked like a mode failure. It is kept because **it is the worked example of the
+> Ingredients prompt shape**, which is genuinely different and which we will need the
+> next time a shot has no plate to start from.
 
 **Engine:** Gemini Omni Flash · **Ingredients to Video** · `@Susan` **and** the accepted
 §2h.4 still, both roles named in the first line · 8s · native audio · **Enhance Prompt
@@ -530,12 +540,59 @@ Audio is the room only: the low buzz of a phone vibrating on a wooden table and 
 
 **What to watch:** whether the room survives. If it comes back generic, that is Ingredients
 doing what Ingredients does — **add room nouns to the text, do not insist on the image.**
-If it comes back as Susan in roughly the right room, take it; the identity is the thing
-the other tab could not give.
 
 **If she sits up**, cut the head-lift beat and let it be eyes-open plus the arm. **If the
 phone slides or rattles unnaturally**, drop *"rattling faintly against the wood"* —
 object motion is where it invents physics.
+
+### 2h.5bv Susan explains, overhead — clip
+
+**Engine:** Gemini Omni Flash · **Frames to Video**, the accepted §2h.5b overhead as the
+**start frame** · 8s · native audio · **Enhance Prompt off**.
+
+Kai's brief, 2026-08-16: *annoyed and hungover, gesturing like she is explaining what
+happened last night.*
+
+> **⚠️ Not one emotion word is in the block.** *Annoyed* is the fastest route to an
+> overacted face, and the **opposite-of-happy reflex** — reaching for a scowl — just gets
+> you Angry Face, equally overacted
+> ([`image-prompting.md` §4a](../../flow/image-prompting.md#4a-expressions--name-the-muscles-never-the-emotion)).
+> What reads as annoyed is **a face doing almost nothing while the mouth keeps working**,
+> plus **one blink held a beat longer than it needs to be.** That blink is the whole
+> performance and it is the cheapest thing in the prompt.
+
+Three other choices, each with a reason:
+
+1. **The voice is indistinct.** Ask Omni for a line and it writes a script that will not
+   match Susan's real dialogue when the VO goes on in post. Indistinct buys natural mouth
+   movement with nothing to sync against — and at this distance overhead nobody is reading
+   her lips. **The same logic as blurring signage rather than inventing a wordmark.**
+2. **Exactly one ambient motion: dust in the light bar.** A locked overhead with nothing
+   moving but the actor reads as a still with a person animated on top. A breathing beat
+   was drafted and cut — `animate-slide`'s rule is *one* ambient motion, and competing
+   ones are where these get muddy.
+3. **The gesture is a wrist and a forearm, not a hand.** Fine finger articulation is the
+   documented weak spot, and her arm is already up above her head in the plate, so the
+   move starts from where it is instead of travelling across frame.
+
+```prompt
+Using the attached image as the locked opening frame, animate what happens next. Keep the room, the bedding, the light and her hair and clothes exactly as they are in the frame.
+
+She stays sprawled across the bed throughout, exactly as in the frame, the phone held to her ear. She is talking, and she has been talking for a while. Her mouth moves with the words without exaggeration. Her eyes stay half-lidded and aimed at the ceiling, her brows relaxed and level. One slow blink, held a beat longer than it needs to be. Her free arm, resting above her head, lifts a few inches off the mattress — the wrist turning over so the palm faces up, the forearm making one small loose circle as she explains something — then drops back down where it was.
+
+The camera is locked and still throughout, directly overhead. Available light only, real-time pace, and the camera is not helping — this is a fixed observational shot, not a composed one. Dust drifts through the bar of daylight lying across the bed. Shot at 24fps with a 180-degree shutter. Fine film grain.
+
+Audio is the room only: her voice low, flat and indistinct under distant traffic through the window.
+```
+
+**What to watch: whether the gesture inflates.** If she starts conducting, cut *"the
+forearm making one small loose circle"* and leave the wrist turning palm-up — **that alone
+reads as explaining.** Second, whether she stays on the bed; she should not move off it.
+
+> **Policy note.** *"Sprawled across the bed"* is deliberate — after §2h.4v was blocked on
+> `gropes`, every bedroom block gets read back for words that look bad quoted next to the
+> location. *"On her back"* was avoided for the same reason, and costs nothing since the
+> frame already shows the pose.
 
 ### 2h.5 Susan takes the call — plate
 
