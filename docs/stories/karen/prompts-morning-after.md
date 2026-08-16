@@ -365,6 +365,105 @@ Constraints: a pillow crease across one cheek, hair stuck to the side of her fac
 **Second thing to watch: whether she sits further up than one elbow.** The read is that
 the news is casual to her and catastrophic to Karen — **she does not sit up for this.**
 
+### 2h.5b Susan explains, overhead — plate, **reference-anchored** `[accepted]`
+
+**Cast:** `@Susan`. **Attach the accepted §2h.4 frame** — room, bedding, light and
+clothing only; the camera is completely different.
+
+Kai's call, 2026-08-16: the same beat from directly overhead, *"like from the perspective
+of her ceiling fan."* Accepted first time —
+[`img/2h5b-susan-overhead-ACCEPTED.png`](./img/2h5b-susan-overhead-ACCEPTED.png).
+
+**The angle is Tier 1** in [`camera-vocabulary.md`](../../flow/camera-vocabulary.md) —
+bird's-eye is dependable. **The register is the problem**, because that file also says
+what it reads as: *"bird's-eye = surveillance or flat-lay."* We want the surveillance
+half. Four clauses push it off flat-lay and all four earned their place:
+
+> **the bed runs diagonally · cropped by two edges · she lies off-centre, head nearer one
+> corner · a held overhead of someone at their lowest, not a flat-lay**
+
+That last one is an **intent** clause, and it is there because Nano Banana Pro reasons
+about the prompt before drawing — telling it *what kind of shot this is* is an
+instruction a planning model can act on.
+
+> **⚠️ The clause that did the most work is in `Light`, not `Composition`:**
+> *"the bars breaking and bending over every fold in the duvet."* Straight bars across a
+> flat plane is what a fake overhead looks like; **bars that deform tell you there is a
+> real three-dimensional mess underneath.** Steal this for any top-down.
+
+> **A rejected idea, recorded so nobody re-adds it.** The first draft asked for *"the soft
+> shadow of a ceiling fan blade across the foot of the bed"* to buy depth relief. **Kai
+> cut it** — the fan was only ever his way of describing where the camera goes, and a
+> literal fan in shot is set dressing nobody asked for. **The honest replacement is
+> physical:** from directly overhead the floor sits about a metre further from the lens
+> than she does, so at f/2.8 it falls soft on its own. Depth from the optics, not a prop.
+
+```prompt
+SCENE:
+
+Camera: a bird's-eye shot looking straight down from ceiling height directly above the bed, 24mm at f/2.8, the bedding sharp and the floor beyond it falling soft because it sits further from the lens. Nothing of the ceiling is in frame.
+
+Use the attached image for the room, the wall colour, the bedding, the parquet floor, the daylight and her clothing only — the same terracotta bedroom, the same bed, the same clothes she fell asleep in. This is the same continuous scene, seen from above.
+
+Subject: a woman in her late thirties with long dark brown wavy hair fanned and knotted across the pillow, still in yesterday's pale t-shirt and blue jeans, sprawled on her back across the bed with a phone held to her ear, mid-sentence.
+
+Composition: 16:9. This is a held overhead of someone at their lowest, not a flat-lay. The bed is not square to the frame — it runs diagonally across it and is cropped by two edges, with the worn parquet floor and the corner of the bedside table showing at one side. She lies off-centre, her head nearer one corner than the middle, the empty half of the mattress open beside her.
+
+Action: she has sprawled rather than settled. One leg is out from under the duvet and hanging off the edge of the bed, the other tangled in it. One arm is flung up above her head, the back of the hand resting open on the mattress. Her other hand holds the phone loosely to her ear, the elbow dropped flat. Her head is turned to one side on the pillow. Her lips are parted mid-word. Her eyes are half-lidded and unfocused. Her brows are relaxed and level. Her jaw is slack between words.
+
+Location: the same small rented pre-war New York apartment bedroom, mid-morning. Rumpled cream bedding, a twisted duvet, worn narrow-strip parquet showing beyond the foot of the bed, yesterday's shoes kicked off at odd angles on the floor, and the bedside table at the frame edge holding a lamp, a half-drunk mug, a pressed-out blister pack, a pint glass of water and a tangled charger cable.
+
+Light: hard daylight through a half-open venetian blind out of frame, throwing a ladder of bright bars diagonally across the bedding and across her body, the bars breaking and bending over every fold in the duvet. The rest of the bed is in flat shadow. No other source.
+
+Style: a still from a 35mm independent film. Available light only. Hyper-realistic skin texture with visible pores and subtle imperfections. A faint smear on the lens, subtle handshake blur, mild wide-angle stretch toward the corners.
+
+Constraints: hair stuck to one cheek, dull skin, dry lips, the t-shirt slept in and rucked up at the waist, one sock on and one off. Unposed and unaware of the camera. Keep every label and blister pack free of readable lettering.
+```
+
+### 2h.4v Susan wakes to the phone — clip
+
+**Engine:** Gemini Omni Flash · **Frames to Video**, the accepted §2h.4 as the **start
+frame** · **no character ingredient** · 8s · native audio.
+
+> **⚠️ Mode is an exclusive choice, and Kai confirmed it at the UI on 2026-08-16:
+> Flow will not let you attach `@Susan` to a start frame.** Recorded in
+> [`omni-flash.md`](../../google-flow/omni-flash.md#️-the-combined-mode-does-not-exist-in-flow),
+> where it retires the `[runware]` "combined mode" claim.
+>
+> **It costs nothing here.** The start frame *is* Susan — her face, in position, in the
+> right light — which is a stronger identity anchor than a reference tile. The tile
+> exists for shots where nothing on screen shows her yet. Going to Ingredients to get the
+> binding would have re-staged the room and thrown away the composition the whole shot
+> is built on.
+
+**The design decision: she never reaches the phone.** Fine hand articulation is the
+model's documented weak spot, and the table sits past her hip from where her head is — a
+clean grab is the hardest thing available *and* would read as staged even rendered
+perfectly. So the clip ends on the blind grope.
+
+> **This is the river-drop rule again, one scene later: render the reach, not the
+> contact.** It is also the better performance. Hungover irritation is a blind swat, not
+> a clean pick-up.
+
+```prompt
+Using the attached image as the locked opening frame, animate what happens next. Keep the room, the bedding, the light and her hair and clothes exactly as they are in the frame.
+
+She stays lying on her front throughout, exactly as in the frame. On the bedside table at frame right the phone screen lights and starts to buzz, rattling faintly against the wood. She stays still for a beat. Then her eyes open. Nothing else on her face moves. Her head lifts an inch off the mattress, turns a few degrees toward the sound, and drops back down onto it. Her hanging arm swings up and gropes blindly along the edge of the mattress toward the noise, patting at the bedding, still searching as the clip ends.
+
+The camera is locked and still throughout. Available light only, real-time pace, and the camera is not helping — this is a fixed observational shot, not a composed one. Shot at 24fps with a 180-degree shutter, so the arm smears with natural motion blur as it swings. Fine film grain.
+
+Audio is the room only: the low buzz of a phone vibrating on a wooden table, distant traffic through the window, and one dry breath in through her nose.
+```
+
+**Note every constraint is stated positively** — *"she stays lying on her front
+throughout"*, *"the camera is locked and still"*, *"audio is the room only"*. Negatives
+do not work on Omni and actively backfire, so there is not a single "no" in the block.
+
+**What to watch:** if the room changes at all, you are in Ingredients rather than Frames
+— a mode problem, not a prompt problem. If she sits up, cut the head-lift beat and let it
+be eyes-open plus the arm. If the phone slides or rattles unnaturally, drop *"rattling
+faintly against the wood"*; object motion is where it invents physics.
+
 ### 2h.5 Susan takes the call — plate
 
 **Cast:** `@Susan`.

@@ -33,6 +33,30 @@ hypothesis. Source: the Karen river-drop clip (`docs/stories/karen/prompts-river
 | **Occluding the hard motion works.** Framing so a falling object exits frame within a few frames produced a clip that reads as real, after four attempts that kept it in frame all failed | `[confirmed 2026-08-14]` |
 | **The 24fps / 180° shutter clause earns its place.** Asked for it; the fall came back as a streak rather than a sharp object, and no post pass was needed | `[confirmed 2026-08-14]` |
 | **A grain/speed pass in post was *not* required** for the clip to read as captured | `[confirmed 2026-08-14]` |
+| **⚠️ Flow's UI will not let you attach a character to a start frame.** Frames and Ingredients are mutually exclusive in the interface — you get the anchor or the character binding, never both | `[confirmed 2026-08-16]` (Kai, at the UI) |
+
+> ### ⚠️ The combined mode does not exist in Flow
+>
+> **`[confirmed 2026-08-16]`, and it contradicts this file.** [Choosing the
+> mode](#choosing-the-mode) says *"**Both** → stack them: an anchor frame plus character
+> references is a documented combined mode `[runware]`."* **That is not available in
+> Flow's UI.** Selecting a start frame removes the ability to add `@Character`
+> ingredients. The `[runware]` claim may hold at the API layer; it does not hold on the
+> surface we actually work on. **Treat mode as an exclusive choice.**
+>
+> **The routing rule that follows, and it is simpler than the old one:**
+>
+> | What must survive | Tab | Why |
+> | --- | --- | --- |
+> | The **composition** — an accepted plate, a geometry, a camera position | **Frames** | Ingredients re-stages; no prompt fixes that |
+> | Only the **person** — new angle, new room, no accepted frame to start from | **Ingredients** | The only binding available, and the scene gets written out in full |
+>
+> **A start frame containing the character needs no character ingredient, and losing
+> that option costs nothing.** A frame that literally shows her face, in position, in
+> the right light is a *stronger* identity anchor than a reference tile — the tile
+> exists for shots where nothing on screen shows her yet. The trade only bites on a
+> clip long enough for the face to drift, which is an argument for designing the shot
+> so the subject barely moves, not for switching mode.
 
 **What is still not confirmed, and matters:**
 
@@ -663,8 +687,12 @@ faces — our casting rule still holds, and it costs nothing here.
   must be pinned still forces Veo.
 - **Only the look, the characters or the props matter**, and the shot may be
   re-staged → **Reference / Ingredients**, with the scene written out in full.
-- **Both** → stack them: an anchor frame *plus* character references is a documented
-  combined mode `[runware]`.
+- ~~**Both** → stack them: an anchor frame *plus* character references is a documented
+  combined mode `[runware]`.~~ **⚠️ Not available in Flow — `[confirmed 2026-08-16]`.**
+  Selecting a start frame removes the `@Character` option. See
+  [the combined mode does not exist in Flow](#️-the-combined-mode-does-not-exist-in-flow).
+  **Mode is an exclusive choice**, and a start frame that already shows the character
+  does not need one.
 
 ### Realism: name the imperfections, and refuse to compose
 
