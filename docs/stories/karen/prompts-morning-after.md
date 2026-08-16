@@ -27,6 +27,13 @@ memory, gets to the phone box, and Susan aims her at the rest of the film.**
 > **Engine research does not live here.** The Nano Banana Pro and anti-slop
 > findings this section produced are in
 > [`docs/google-flow/nano-banana-2.md`](../../google-flow/nano-banana-2.md#third-pass--nano-banana-pro-and-the-anti-slop-toolkit).
+>
+> **⚠️ Ruled 2026-08-16 (Kai): these are fired by hand, not by the automation.**
+> Driving Flow through `@badcode/flow-mcp` cost more rounds than it saved after the
+> August redesign. **The blocks below are therefore the deliverable** — each one is
+> the complete thing to paste, `STYLE LOCK` + `SCENE:` + *"Thanks."*, with the cast,
+> the time of day and whether anything is attached stated above it. Do not silently
+> assume a reference image is attached; say so, per plate.
 
 ---
 
@@ -238,41 +245,58 @@ Constraints: cream blouse untucked, camel cardigan slipped off one shoulder, tai
 
 ### 2h.4 Susan wakes — plate, the mirror
 
-**Cast:** `@Susan`. **Attach the accepted §2h.1 as a reference image.**
+**Cast:** `@Susan`. **No reference image** — see the ruling below.
 
 This is the joke, and the joke is entirely in the geometry: **the same shot, the other
-woman.** It only lands if the framing is a copy, which is why the reference is attached
-with an explicit role rather than described in prose.
-
-**Two findings are being used at once here** — *"clearly define the role of each"*
-reference image `[vendor]`, and the fact that Pro reasons about intent before it draws,
-so telling it *why* the composition matters is worth the words:
+woman.** It only lands if the framing is a copy.
 
 > **Susan has her phone.** It is on the bedside table where Karen's charging cable was
-> empty, and it is about to ring. That single swap is the scene's whole argument.
+> empty, and it is about to ring. That single swap is the scene's whole argument, and a
+> candidate that loses the phone is a reroll.
+
+> **⚠️ Rewritten 2026-08-16, after §2h.5 was accepted.** The original block predated
+> Susan's flat existing, and is superseded on three counts:
+>
+> 1. **The room is no longer generic.** It was *"a tidier apartment bedroom"*; it is now
+>    the established terracotta pre-war walk-up, copied verbatim from the accepted §2h.5
+>    Location line. Two shots of the same bedroom have to describe the same bedroom.
+> 2. **The camera clause is now stated the way §2h.5 stated it** — with focal length and
+>    aperture, as its own lever. That is the version that finally landed after three
+>    rounds of being ignored, and a matched pair only cuts together if the lens is
+>    identical in both prompts.
+> 3. **No frame-tilt request.** *"Not quite level"* came back level three for three on
+>    §2h.5. Treat it as something Nano Banana Pro does not honour and get it in the edit.
+>
+> **Kai ruled 2026-08-16: no reference image, describe the room instead.** The earlier
+> draft attached the accepted §2h.1 for composition. Dropping it removes the one real
+> risk on this plate — **Karen's face bleeding out of the attached frame into Susan's
+> shot** — and the room is proven to work from prose alone, three candidates for three on
+> §2h.5. The cost is that the rhyme now rides entirely on the Camera and Composition
+> clauses. **If the angle wanders, re-fire; do not add words.**
 
 ```prompt
 SCENE:
 
-Use the attached image for composition, camera height, lens and lighting geometry only — the same side-on framing at mattress height, the same off-centre placement, the same ladder of blind-light across the bed. This is the second half of a deliberate matched pair and should read as a rhyme with it. The room, the furnishings and the person are different.
+Subject: a woman in her late thirties with long dark brown wavy hair parted in the centre and falling just past her shoulders, asleep on her front, one arm flung out across the mattress, minutes before the phone wakes her.
 
-Subject: a different woman asleep on her front in a different bedroom, one arm flung out across the mattress, not yet awake.
+Camera: low-angle shot from her side at mattress height, 35mm at f/2, the near edge of the bed close to the lens.
 
-Composition: 16:9, matched to the attached image as above; the bedside table large and soft in the near foreground.
+Composition: 16:9. She lies right of centre. The room falls away to the left toward the window. The bedside table sits large and soft in the near foreground.
 
-Action: still asleep and about to be woken — face turned into the pillow, one hand slack over the edge of the bed.
+Action: still asleep, face turned into the pillow, mouth slightly open, one hand slack over the edge of the bed, the duvet kicked half off one leg.
 
-Location: a tidier apartment bedroom in mid-morning; a bedside table holding a lamp, a half-drunk mug, a paperback and a smartphone lying face-up and lit; an olive suede bomber over the back of a chair, jeans folded on the seat.
+Location: a small rented pre-war New York apartment bedroom, mid-morning. The walls are painted a deep terracotta burnt-sienna, with the ornate ceiling moulding and picture rail left chalky off-white and thickened by many layers of paint. A painted cast-iron radiator under the window. Worn narrow-strip parquet floor. Through the half-open venetian blind, a black iron fire escape and the brick wall of the building opposite, close enough to touch. Mismatched second-hand furniture: a bentwood chair with an olive suede bomber slung over it, jeans folded on the seat, a chest of drawers that does not match the bedside table. Paperbacks stacked on the floor beside the bed. A trailing pothos on the windowsill. The bedside table holds a lamp, a half-drunk mug, a pressed-out blister pack, a tangled charger cable, and a smartphone lying face-up with its screen lit.
 
-Light: a half-open venetian blind at the window camera-left throwing the same hard ladder of daylight across the bed; no other source.
+Light: a hard ladder of daylight through the half-open venetian blind camera-left, striping across the headboard and her back. No other source. Uneven exposure, the window blown out behind the blind.
 
-Style: a still from a 35mm independent film. Available light only, unretouched, natural skin texture.
+Style: a still from a 35mm independent film. Available light only. Hyper-realistic skin texture with visible pores and subtle imperfections. A faint smear on the lens, subtle handshake blur.
 
-Constraints: keep every book spine, mug and label free of readable lettering.
+Constraints: hair fallen across her face, a pillow crease, dull skin, a sleep-creased t-shirt. Unposed and unaware of the camera. Keep every label, book spine and blister pack free of readable lettering.
 ```
 
-**If the rhyme does not land, the fix is not this prompt** — it is to re-run it with
-2h.1 attached *and* to say which parts drifted. Composition references degrade quietly.
+**Note the placement is `right of centre, room falling left`** — the same way round as
+§2h.5, and for the same reason: it must not fight `light … camera-left`. See the prompt
+bug recorded under §2h.5.
 
 ### 2h.5 Susan takes the call — plate
 
