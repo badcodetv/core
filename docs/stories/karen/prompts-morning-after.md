@@ -298,6 +298,73 @@ Constraints: hair fallen across her face, a pillow crease, dull skin, a sleep-cr
 §2h.5, and for the same reason: it must not fight `light … camera-left`. See the prompt
 bug recorded under §2h.5.
 
+> **✅ FIRED AND ACCEPTED 2026-08-16.** Fired by hand by Kai with `@Susan` cast, no
+> reference image, and it landed. **This frame is now the room reference for everything
+> else set in Susan's flat** — kept in-repo at
+> [`img/2h4-susan-wakes-ACCEPTED.png`](./img/2h4-susan-wakes-ACCEPTED.png) so the record
+> is self-contained; the copy to attach in Flow is the one in the project.
+>
+> **Two things the generation gave us that the prompt did not ask for, and both are
+> keepers:**
+>
+> 1. **She fell asleep in yesterday's jeans and t-shirt.** A better hangover signal than
+>    anything written — it says she did not get as far as undressing. **Carry it into
+>    every later shot in this room as continuity.**
+> 2. **The light came from frame right, not `camera-left`.** The window and fire escape
+>    sit right of frame with the ladder of blind-light striping the wall at left. The
+>    directional instruction was overruled by the model's own room layout. Downstream
+>    prompts should **describe the frame as it actually is** rather than repeat
+>    `camera-left`, which removes the fight recorded under §2h.5 rather than managing it.
+
+### 2h.5a Susan explains — plate, **reference-anchored**
+
+**Cast:** `@Susan`. **Attach the accepted §2h.4 frame** — role named in the prompt: the
+room, the light and her clothing, *not* the camera.
+
+Written 2026-08-16 at Kai's request. A minute into the call, mid-explanation —
+*"Karen. Yesterday you got sacked. By an AI. And you dropped your phone in the river."*
+It sits between §2h.5 (she answers) and the pep talk.
+
+**Unlike §2h.4, the reference and the casting reinforce each other here.** The attached
+frame contains Susan, and `@Susan` is bound — two signals for the same person instead of
+the competing ones that made 2h.4 risky.
+
+**The camera is deliberately different from §2h.4** — closer, and moved round toward the
+foot of the bed. Same size and angle would be a jump cut; a change in both is a cut.
+
+> **⚠️ The failure mode on this plate is the gesture getting big.** *"Gesturing while
+> explaining"* is very close to the prompt that produces a stock-photo woman mid-
+> presentation, which is the posed-and-stiff tell from the anti-slop table. Four clauses
+> hold it down: **palm turned up, fingers loose, a few inches off the duvet, shoulders
+> stay dropped.** The hand is explaining and the rest of her has not agreed to it. If a
+> candidate comes back with the arm up and animated, **cut the gesture smaller** — do not
+> add hangover words, which is the §4a trap.
+
+```prompt
+SCENE:
+
+Use the attached image for the room, the wall colour, the furniture, the daylight and her clothing only — the same terracotta bedroom, the same bed, the same window and fire escape at frame right, the same clothes she fell asleep in. This is the next shot in the same continuous scene, a minute later. The camera position is different and is described below.
+
+Subject: a woman in her late thirties with long dark brown wavy hair parted in the centre, slept on and tangled across one side of her face, still in yesterday's pale t-shirt and blue jeans, propped up on one elbow in the same bed with a phone held to her ear, mid-sentence, telling someone something they have not heard yet.
+
+Camera: medium shot from her side, the lens a little above mattress height and moved round toward the foot of the bed, 50mm at f/2. The rumpled duvet crosses the near foreground, close and out of focus.
+
+Composition: 16:9. She fills the left half of the frame, head toward the left. The window and the fire escape sit at frame right, the ladder of blind-light falling across the wall behind her. The bedside table is cut by the right edge.
+
+Action: she has got as far as one elbow and no further. Her free hand is lifted a few inches off the duvet, palm turned up, fingers loose and slightly curled — a small flat gesture that has not left the bed, caught mid-word. Her lips are parted mid-sentence. Her eyes are half-lidded and aimed at nothing in particular, well past the person she is talking to. Her brows are relaxed and level. Her shoulders stay dropped.
+
+Location: the same small rented pre-war New York apartment bedroom, mid-morning — terracotta burnt-sienna walls, chalky off-white ceiling moulding and picture rail, a painted cast-iron radiator, worn narrow-strip parquet, a bentwood chair with an olive suede bomber slung over it, and a bedside table holding a lamp, a half-drunk mug, a pressed-out blister pack, a pint glass of water and a tangled charger cable.
+
+Light: daylight through the half-open venetian blind at frame right, striping the wall behind her. No other source. Uneven exposure, the window blown out behind the blind.
+
+Style: a still from a 35mm independent film. Available light only. Hyper-realistic skin texture with visible pores and subtle imperfections. A faint smear on the lens, subtle handshake blur.
+
+Constraints: a pillow crease across one cheek, hair stuck to the side of her face, dull skin, dry lips, one eye open slightly wider than the other, the t-shirt slept in and rucked. Unposed and unaware of the camera. Keep every label, book spine and blister pack free of readable lettering.
+```
+
+**Second thing to watch: whether she sits further up than one elbow.** The read is that
+the news is casual to her and catastrophic to Karen — **she does not sit up for this.**
+
 ### 2h.5 Susan takes the call — plate
 
 **Cast:** `@Susan`.
