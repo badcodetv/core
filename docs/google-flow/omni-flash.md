@@ -51,19 +51,55 @@ hypothesis. Source: the Karen river-drop clip (`docs/stories/karen/prompts-river
 > | The **composition** — an accepted plate, a geometry, a camera position | **Frames** | Ingredients re-stages; no prompt fixes that |
 > | Only the **person** — new angle, new room, no accepted frame to start from | **Ingredients** | The only binding available, and the scene gets written out in full |
 >
-> **A start frame containing the character needs no character ingredient, and losing
-> that option costs nothing.** A frame that literally shows her face, in position, in
-> the right light is a *stronger* identity anchor than a reference tile — the tile
-> exists for shots where nothing on screen shows her yet. The trade only bites on a
-> clip long enough for the face to drift, which is an argument for designing the shot
-> so the subject barely moves, not for switching mode.
+> ~~**A start frame containing the character needs no character ingredient, and losing
+> that option costs nothing.**~~ **⚠️ Wrong, and disproved the same week — see
+> [a start frame does not hold a face](#️-a-start-frame-does-not-hold-a-face)
+> `[confirmed 2026-08-16]`.** The reasoning was that a frame showing her face beats a
+> reference tile. It does not: **Frames holds composition and not identity.** Losing the
+> combined mode costs a great deal, because the two things you need are now in two tabs
+> you cannot use at once. **Pick the one the shot cannot survive losing** — face on
+> screen means Ingredients, and the staging goes in the text.
+
+> ### ⚠️ A start frame does not hold a face
+>
+> **`[confirmed 2026-08-16]`** (Kai, Karen §2h.4v). A clip generated in **Frames to
+> Video** from an accepted plate of Susan came back with **a completely different
+> woman** — *"she looks completely different."*
+>
+> **This is the sharpest limit on the Frames tab we have found, and it cuts against the
+> reasoning recorded on 2026-08-14.** That entry argued a start frame containing the
+> character needs no character ingredient, because a frame showing her face is a
+> stronger identity anchor than a reference tile. **The geometry claim survives; the
+> identity claim does not.** Frames buys you *composition*, and composition only.
+>
+> | | Frames | Ingredients |
+> | --- | --- | --- |
+> | Composition | **held** `[confirmed 2026-08-14]` | re-staged |
+> | Identity | **not held** `[confirmed 2026-08-16]` | held — subject carry-over is this path's documented strength |
+>
+> **And the two are mutually exclusive in Flow's UI**
+> ([above](#️-the-combined-mode-does-not-exist-in-flow)), so **there is currently no way
+> to get both** on this engine. That is a routing constraint, not a prompt problem.
+>
+> **The working rule: ask which one the shot cannot survive losing.** A clip where the
+> character's face is on screen and recognisable is an **Ingredients** job, and the
+> staging goes in the text. A clip where the composition is load-bearing and the face is
+> turned away, distant, or occluded can go through **Frames**. Design the shot to need
+> only one of them — a subject who barely moves does not rescue a face the tab was never
+> holding.
+>
+> **Open:** whether the drift is progressive across the clip or present in frame one.
+> Nobody has stepped through the first few frames. If frame one already differs, the tab
+> is regenerating rather than continuing, which would matter to `animate-slide`.
 
 **What is still not confirmed, and matters:**
 
 - **Whether frame one is pixel-identical to the supplied plate.** The geometry held,
   which is what the shot needed and what four rounds of Ingredients never gave us. That
-  is not the same as a pixel match, and nobody measured one. `animate-slide`'s contract
-  needs the stronger claim — see [below](#the-animate-slide-problem).
+  is not the same as a pixel match, and nobody measured one. **The 2026-08-16 identity
+  drift above makes this materially more doubtful** — a tab that changes the face may not
+  be continuing from the plate at all. `animate-slide`'s contract needs the stronger
+  claim — see [below](#the-animate-slide-problem).
 - **Whether Omni has an end-frame slot.** Not exercised; the run left it empty.
 - **`<IMAGE_REF_0>` / `<FIRST_FRAME>` in Flow's prompt box.** Still untyped.
 

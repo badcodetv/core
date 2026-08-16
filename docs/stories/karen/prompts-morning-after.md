@@ -474,14 +474,68 @@ The camera is locked and still throughout. Available light only, real-time pace,
 Audio is the room only: the low buzz of a phone vibrating on a wooden table and distant traffic through the window.
 ```
 
-**Note every constraint is stated positively** — *"she stays lying on her front
-throughout"*, *"the camera is locked and still"*, *"audio is the room only"*. Negatives
-do not work on Omni and actively backfire, so there is not a single "no" in the block.
+**Note every constraint is stated positively** — *"she stays lying face-down across the
+bed"*, *"the camera is locked and still"*, *"audio is the room only"*. Negatives do not
+work on Omni and actively backfire, so there is not a single "no" in the block.
 
-**What to watch:** if the room changes at all, you are in Ingredients rather than Frames
-— a mode problem, not a prompt problem. If she sits up, cut the head-lift beat and let it
-be eyes-open plus the arm. If the phone slides or rattles unnaturally, drop *"rattling
-faintly against the wood"*; object motion is where it invents physics.
+> **❌ THIS VERSION FAILED — the Frames run came back as a different woman entirely.**
+> 2026-08-16, Kai: *"she looks completely different."* The block above is kept as the
+> record of what was fired, not as a brief.
+>
+> **The composition held and the face did not**, which is the sharpest limit we have
+> found on the Frames tab and it disproves the reasoning written here two days earlier.
+> **Frames buys composition, and composition only** —
+> [`omni-flash.md`](../../google-flow/omni-flash.md#️-a-start-frame-does-not-hold-a-face),
+> `[confirmed 2026-08-16]`. Since Flow will not let you attach a character to a start
+> frame, **there is currently no way to get both on this engine.**
+>
+> **The rule that comes out of it: ask which one the shot cannot survive losing.** Susan's
+> face is on screen and has to be hers, so this is an Ingredients shot. See §2h.4v-i below.
+
+### 2h.4v-i Susan wakes to the phone — clip, **Ingredients**
+
+**Engine:** Gemini Omni Flash · **Ingredients to Video** · `@Susan` **and** the accepted
+§2h.4 still, both roles named in the first line · 8s · native audio · **Enhance Prompt
+off**.
+
+The same shot, re-routed after the Frames run lost her face. **The trade is exact and
+worth stating both ways round:** Ingredients keeps the person and re-stages the ground,
+where Frames kept the ground and lost the person.
+
+**Which is why this block is three times longer.** In reference mode the text carries the
+staging — a motion-only prompt leaves the model nothing to hold and it invents a scene.
+The room paragraph deliberately **reuses the nouns from the §2h.4 image prompt**, per the
+finding that keeping ~80% of descriptive keywords identical between shots sharing a
+setting is what stops the environment drifting.
+
+> **⚠️ The reference has Susan in it, so it is a dual-role image** — location and subject
+> at once, which [`omni-flash.md`](../../google-flow/omni-flash.md#3--a-location-reference-must-not-contain-subjects)
+> warns against. The model resolves that by **keeping the person and treating the room as
+> loose atmosphere.** Here that is the right way round — the face is what we came for —
+> but it is why the room description is doing so much work.
+
+```prompt
+Using the provided image as the reference for the bedroom and for how she is lying in it, and @Susan as the woman in the bed, create an eight-second shot.
+
+The room is a small rented pre-war New York apartment bedroom in mid-morning: walls painted deep terracotta burnt-sienna, chalky off-white ceiling moulding and picture rail, a painted cast-iron radiator under the window, worn narrow-strip parquet, a bentwood chair with an olive suede bomber slung over it, and through a half-open venetian blind a black iron fire escape and the brick wall of the building opposite. A hard ladder of daylight comes through the blind at frame right and stripes the wall behind the bed. There is no other light. The bedside table at frame right holds a lamp, a half-drunk mug, a pressed-out blister pack, a tangled charger cable and a phone lying face-up.
+
+Susan lies face-down across the rumpled cream bedding, head toward frame left, her long dark brown wavy hair parted in the centre and tangled across one side of her face, still in yesterday's pale t-shirt and blue jeans, one arm hanging off the near edge of the bed. She is asleep.
+
+The phone screen lights and starts to buzz, rattling faintly against the wood. She stays still for a beat. Then her eyes open. Nothing else on her face moves. Her head lifts an inch off the mattress, turns a few degrees toward the sound, and drops back down onto it. Her hanging arm swings up and feels its way along the edge of the mattress toward the noise, patting at the bedding, still searching as the clip ends.
+
+The camera is locked and still throughout, at mattress height from the side of the bed, wide enough to hold the whole bed and the bedside table. Available light only, real-time pace, a fixed observational shot rather than a composed one. Shot at 24fps with a 180-degree shutter. Fine film grain.
+
+Audio is the room only: the low buzz of a phone vibrating on a wooden table and distant traffic through the window.
+```
+
+**What to watch:** whether the room survives. If it comes back generic, that is Ingredients
+doing what Ingredients does — **add room nouns to the text, do not insist on the image.**
+If it comes back as Susan in roughly the right room, take it; the identity is the thing
+the other tab could not give.
+
+**If she sits up**, cut the head-lift beat and let it be eyes-open plus the arm. **If the
+phone slides or rattles unnaturally**, drop *"rattling faintly against the wood"* —
+object motion is where it invents physics.
 
 ### 2h.5 Susan takes the call — plate
 
