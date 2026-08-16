@@ -478,31 +478,34 @@ Audio is the room only: the low buzz of a phone vibrating on a wooden table and 
 bed"*, *"the camera is locked and still"*, *"audio is the room only"*. Negatives do not
 work on Omni and actively backfire, so there is not a single "no" in the block.
 
-> **✅ FIRED AND ACCEPTED 2026-08-16 — the block above is exactly what worked.**
+> **✅ ACCEPTED 2026-08-16 — but read the tab line, because it is not the one this
+> heading says.**
 >
-> **Two runs of this plate, and the difference is worth recording.** The first came back
-> as *"a completely different woman"*; the second, with the
-> [policy rewrite](../../flow/failure-modes.md#a5b-the-bedroom-problem--trigger-5-in-detail)
-> in place, held her and was accepted.
+> **The text above is exactly what worked. It was fired in the Ingredients tab**, with
+> the still attached and `@Susan` added — *not* in Frames, despite opening with
+> *"the locked opening frame."* The Frames run of the same plate came back as a different
+> woman.
 >
-> **⚠️ I called that first failure a capability limit and wrote it into
-> [`omni-flash.md`](../../google-flow/omni-flash.md#a-start-frame-holds-a-face--usually-and-not-reliably)
-> as "a start frame does not hold a face." That was over-generalised from one run and is
-> retracted.** Identity in Frames is a **probability, not a guarantee** — the same thing
-> [`consistency.md`](../../flow/consistency.md) already says about character drift
-> generally. **Reroll a drifted face; do not change tab for it.** The wrong conclusion
-> sends you to Ingredients, which costs you the composition you already had.
+> **So the accepted recipe is: Ingredients + the accepted still + the Character +
+> Frame-shaped prompt text.** The *"locked opening frame"* wording appears to work as text
+> reinforcement inside Ingredients, which is not what the research predicted — it says
+> Ingredients re-stages and wants the scene written out in full. Here it did not re-stage.
 >
-> **The open question it leaves is the interesting one:** the two runs differed *only* in
-> the safety rewrite. Whether a near-miss on the policy filter quietly degrades a
-> generation rather than blocking it outright is untested, and would explain both results.
+> **⚠️ I got this wrong twice in one day and both errors were the same error.** First I
+> declared *"a start frame does not hold a face"* from one Frames failure; then I
+> retracted it from one success that turned out to be a different tab. **Generalising a
+> capability claim from a single generation is the mistake** — every run is n=1 on a
+> stochastic model. The discipline note now sits in
+> [`omni-flash.md`](../../google-flow/omni-flash.md#frames-lost-the-face-ingredients-held-both-n1-each-way):
+> record what was fired, in which tab, and what came back; promote nothing to a rule until
+> it repeats with something else varying.
 
-### 2h.4v-i Susan wakes to the phone — clip, Ingredients · **superseded, kept as reference**
+### 2h.4v-i Susan wakes to the phone — the long Ingredients block · **kept as reference**
 
-> **Not needed — §2h.4v was accepted in Frames.** This block was written when the Frames
-> run looked like a mode failure. It is kept because **it is the worked example of the
-> Ingredients prompt shape**, which is genuinely different and which we will need the
-> next time a shot has no plate to start from.
+> **Not needed — the short block above was accepted.** This one was written on the
+> assumption that Ingredients must carry the whole staging in prose. **It did not turn out
+> to be necessary**, which is itself the finding. Kept as the worked example of the
+> full-length Ingredients shape, for the next shot that has no plate to start from.
 
 **Engine:** Gemini Omni Flash · **Ingredients to Video** · `@Susan` **and** the accepted
 §2h.4 still, both roles named in the first line · 8s · native audio · **Enhance Prompt
@@ -547,8 +550,12 @@ object motion is where it invents physics.
 
 ### 2h.5bv Susan explains, overhead — clip
 
-**Engine:** Gemini Omni Flash · **Frames to Video**, the accepted §2h.5b overhead as the
-**start frame** · 8s · native audio · **Enhance Prompt off**.
+**Engine:** Gemini Omni Flash · **Ingredients to Video** — the accepted §2h.5b overhead
+attached **plus `@Susan`** · 8s · native audio · **Enhance Prompt off**.
+
+**Same recipe as the accepted §2h.4v**, deliberately: Frame-shaped prompt text fired in
+the Ingredients tab. It is the only combination that has produced an accepted clip in
+this room, so nothing about it changes except the action.
 
 Kai's brief, 2026-08-16: *annoyed and hungover, gesturing like she is explaining what
 happened last night.*

@@ -34,7 +34,7 @@ hypothesis. Source: the Karen river-drop clip (`docs/stories/karen/prompts-river
 | **The 24fps / 180° shutter clause earns its place.** Asked for it; the fall came back as a streak rather than a sharp object, and no post pass was needed | `[confirmed 2026-08-14]` |
 | **A grain/speed pass in post was *not* required** for the clip to read as captured | `[confirmed 2026-08-14]` |
 | **⚠️ Flow's UI will not let you attach a character to a start frame.** Frames and Ingredients are mutually exclusive in the interface — you get the anchor or the character binding, never both | `[confirmed 2026-08-16]` (Kai, at the UI) |
-| **A start frame usually carries the character's identity, but not reliably** — same plate, two runs, one drifted to a different woman and one held. **Reroll; don't change tab** | `[confirmed 2026-08-16]` |
+| **Same plate, same prompt text, two tabs:** Frames returned a different woman; **Ingredients held the room *and* the face.** A Frame-shaped prompt fired in Ingredients did **not** re-stage | `[untested]` — n=1 each way, see the discipline note below |
 
 > ### ⚠️ The combined mode does not exist in Flow
 >
@@ -52,51 +52,61 @@ hypothesis. Source: the Karen river-drop clip (`docs/stories/karen/prompts-river
 > | The **composition** — an accepted plate, a geometry, a camera position | **Frames** | Ingredients re-stages; no prompt fixes that |
 > | Only the **person** — new angle, new room, no accepted frame to start from | **Ingredients** | The only binding available, and the scene gets written out in full |
 >
-> **A start frame containing the character needs no character ingredient, and losing
-> that option costs little.** A frame that shows her face, in position, in the right
-> light is a strong identity anchor — the reference tile exists for shots where nothing
-> on screen shows her yet. **It is not a perfect anchor**: one run in two drifted on
-> 2026-08-16 and a reroll fixed it
-> ([above](#a-start-frame-holds-a-face--usually-and-not-reliably)). **Reroll a drifted
-> face; do not change tab for it.**
+> **⚠️ Do not assume a start frame carries the character's identity.** The one time we
+> tried it, Frames returned a different woman and the Ingredients tab — same image, same
+> prompt text, plus the Character — held her
+> ([above](#frames-lost-the-face-ingredients-held-both-n1-each-way)). n=1, so this is a
+> caution rather than a rule, but **if the face has to be right, put the Character in the
+> shot rather than trusting the plate to carry it.**
 
-> ### A start frame holds a face — usually, and not reliably
+> ### Frames lost the face; Ingredients held both. n=1 each way.
 >
-> **`[confirmed 2026-08-16]`** (Kai, Karen §2h.4v). Two runs of the **same plate**
-> through **Frames to Video** on the same day:
+> **2026-08-16, Kai, Karen §2h.4v — the same plate, the same scene, two tabs:**
 >
-> | Run | Result |
-> | --- | --- |
-> | First | **a completely different woman** — *"she looks completely different"* |
-> | Second, corrected prompt | **held.** Accepted |
->
-> **So identity in Frames is a probability, not a guarantee — budget a reroll, do not
-> switch mode.** This entry originally read *"a start frame does not hold a face"* and
-> declared Frames composition-only. **That was over-generalised from a single failure and
-> is retracted.** One bad run is not a capability limit, and the correction matters
-> because the wrong conclusion sends you to Ingredients, which costs you the composition
-> you had.
->
-> | | Frames | Ingredients |
+> | Tab | Prompt shape | Result |
 > | --- | --- | --- |
-> | Composition | **held** `[confirmed 2026-08-14]` | re-staged |
-> | Identity | **usually held; rerollable** `[confirmed 2026-08-16]` | held — subject carry-over is this path's documented strength |
+> | **Frames to Video** | *"the locked opening frame"* | **a different woman** — *"she looks completely different"* |
+> | **Ingredients to Video** | **the same text, unchanged** | **room and face both held. Accepted** |
 >
-> **The two are still mutually exclusive in Flow's UI**
-> ([above](#️-the-combined-mode-does-not-exist-in-flow)) — that finding stands
-> untouched. But the routing is now much simpler than the retracted version implied:
+> **Two things to take from this, and neither is a law.**
 >
-> > **If you have an accepted plate, start in Frames.** It gives composition outright and
-> > identity most of the time. **Reroll a drifted face before changing tab.** Go to
-> > Ingredients when there is *no* plate to start from — a new angle, a new room —
-> > because then there is nothing carrying either thing and the text has to carry both.
+> **1. The `[runware]` mode table is not the whole story.** It says Ingredients treats an
+> image as a guide and *"the model is expected to re-stage the scene"*, and that
+> Frame-shaped prompts are wrong for it. **Here a Frame-shaped prompt fired in Ingredients
+> preserved the staging.** The wording *"use the attached image as the locked opening
+> frame"* appears to be doing real work as **text reinforcement** — which is exactly what
+> [lever 4](#4-text-reinforcement-is-the-substitute-for-a-knob) predicts, since words are
+> the only strength control there is. **Worth trying before assuming Ingredients will
+> re-stage.**
 >
-> **Open:** what separated the two runs. The corrected prompt differed only in the
-> [policy rewrite](../flow/failure-modes.md#a5b-the-bedroom-problem--trigger-5-in-detail)
-> — `gropes`→`feels its way along`, `on her front`→`face-down`, and a dropped breath
-> line. Whether a near-miss on the safety filter degrades a generation rather than
-> blocking it outright is an interesting question nobody has tested, and it would explain
-> both runs.
+> **2. Frames lost a face that Ingredients kept.** One run each. That is a hint, not a
+> capability claim.
+>
+> > ### ⚠️ Discipline note — this entry was rewritten twice in one day
+> >
+> > It first read *"a start frame does not hold a face,"* declaring Frames
+> > composition-only from one failure. It was then retracted from one success — which
+> > turned out to be **a different tab entirely**, so the retraction was wrong too.
+> >
+> > **The failure mode is mine, not the engine's: generalising a capability claim from a
+> > single generation.** These models are stochastic and every run is n=1. **Record what
+> > was fired, in which tab, and what came back. Do not promote it to a rule until the
+> > same thing happens twice with something else varying.** The four-round river-drop
+> > entries earned their `[confirmed]` tags precisely because they did not do this.
+>
+> **The two tabs are still mutually exclusive in Flow's UI**
+> ([above](#️-the-combined-mode-does-not-exist-in-flow)) — that one is a UI fact and
+> stands.
+>
+> **Working practice, stated as practice and not as a finding:** with an accepted plate,
+> **Ingredients + the attached still + the character + "locked opening frame" wording** is
+> the recipe that has actually produced accepted clips. Use it. If the staging drifts,
+> add room nouns to the text; if the face drifts, reroll.
+>
+> **Open, and cheap to test:** whether a near-miss on the safety filter degrades a
+> generation rather than blocking it. The two runs also differed by the
+> [policy rewrite](../flow/failure-modes.md#a5b-the-bedroom-problem--trigger-5-in-detail),
+> so tab is not the only variable that changed.
 
 **What is still not confirmed, and matters:**
 
