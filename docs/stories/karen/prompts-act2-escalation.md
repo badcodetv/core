@@ -168,52 +168,93 @@ cropped off.
 rung's zoom-out lands, and the weather changes read best that far back — it is just not the
 master.)*
 
+##### ✅ Ruled 2026-08-17 (Kai): **keep the wide frame.** It is the master.
+
+The concern above was raised and overruled, and the ruling is a good one for a reason the
+checklist missed: **the river edge makes the frame unmistakably Manhattan without the
+skyline postcard**, and it gives the weather changes somewhere big to happen. The
+close-and-steeper recipe stays on file for the rung-2/3/4 aerials if we ever want variety —
+but §2j.1 is the wide view, and the block was rebuilt around it rather than swapped onto it.
+
+**What the altitude changes, and it changes three things:**
+
+1. **The detail budget moves to the grain of the grid.** No rooftop clutter is legible at
+   this height, so the realism has to come from **density** — roofs in a hundred shades of
+   grey and brown, traffic in short broken lines, steam standing over two or three
+   buildings. Density is the texture now.
+2. **The landmarks stay in, demoted rather than banned.** The bridge, the island and the UN
+   grounds are *in the reference*. **Never write a constraint that fights the attached
+   image** — that conflict is a reliable route to a mushy compromise. The block gives them a
+   role instead: *ordinary working infrastructure at the edge of frame, not a view.*
+3. **Water is now the main slop risk.** AI water defaults to glittery, teal and sparkling,
+   and that one failure turns the plate into tourism. The Light line pins it **flat matte
+   grey, no sparkle, no reflected colour.**
+
+**⚠️ The likeliest reject is the sun.** The screenshot carries hard baked-in shadows down
+the west face of every tower — the strongest signal in the image, and it argues with the
+flat-overcast instruction. Sharpen the refusal; do not rewrite the scene.
+
+**And the likeliest quality failure is density mush** — forty blocks is a lot to rebuild at
+once, and it goes to copy-paste blocks and soup where the haze starts. Check at 100%. The
+honest fix is a **tighter crop of the same screenshot**: same geography, same ruling, fewer
+blocks to build.
+
+**Mechanical note:** the screenshot is ~2.6:1. Crop to **16:9** with the Earth UI off both
+bottom corners, centred so the dark tower sits off-centre with room around it — that is the
+building the clip pushes down into.
+
 *(The screenshot is an internal composition reference. The deliverable is a rebuild, not the
 photograph.)*
 
 ```prompt
 REFERENCE:
 
-Use the attached image as the layout reference only — the street grid, the block sizes, the positions, footprints and relative heights of the buildings, the shapes of the rooftops, and the viewpoint and framing. Keep that geography and that framing. Take nothing else from it: not its colour, not its lighting, not its shadows, not its weather, not its time of day, and not its surface texture.
+Use the attached image as the layout reference — the street grid, the block sizes, the footprints and relative heights of the buildings, the line of the river and the bridge, and above all the viewpoint and the framing. Keep that geography and that framing exactly. Take nothing else from it: not its colour, not its lighting, not its shadows, not its weather, not its time of day, and not its surface texture.
 
-The attached image is a satellite-derived three-dimensional view, so its buildings are soft and slightly melted at the edges and its streets are smeared. Treat all of that as an artefact of the source: rebuild the same buildings as real architecture with clean edges, straight parapets, proper window reveals and sharp rooflines, and rebuild the streets as real streets.
+The attached image is a satellite-derived three-dimensional view, so its buildings are soft and melted at the edges, its rooftops are flattened and its streets are smeared. Treat all of that as an artefact of the source: rebuild the same buildings as real architecture with clean edges, straight parapets and sharp rooflines, rebuild the roofs with real rooftop machinery, water towers and vents on them, and rebuild the streets as real streets with real vehicles in them.
 
-Rebuild that block of city as a photograph made from a helicopter, in the light described below. The finished frame carries the film look described in the style lock above, not the look of the attached image.
+Rebuild that view of the city as a photograph made from a helicopter, in the light described below. The finished frame carries the film look described in the style lock above, not the look of the attached image.
 
 SCENE:
 
-Subject: one plain, unremarkable 1980s office tower standing mid-block in Midtown Manhattan, seen from high above and a little to one side.
+Subject: Midtown Manhattan seen from high above on an ordinary weekday morning, with one plain dark office tower standing alone above the lower blocks near the middle of the frame.
 
-Composition: 16:9, the viewpoint and framing of the attached image kept as they are — a steep high angle looking down across the rooftops, the tower off centre with open blocks around it and an avenue running diagonally through the frame, the near edge of another rooftop clipping a bottom corner close and out of focus, the frame filled with city and holding no sky, the further blocks receding into haze at the top of frame; the frame is very slightly tilted.
+Composition: 16:9, the viewpoint and framing of the attached image kept as they are — a steep high angle looking down and across the grid, the city filling the whole frame with no sky and no horizon in it, the river running along one edge, the far blocks receding into haze; the frame is very slightly tilted.
 
-Action: an ordinary weekday instant — traffic held at a red light along the avenue while the cross street moves, steam lifting from a rooftop stack, a tower crane standing over a construction site with its jib slewed off to one angle.
+Action: an ordinary weekday instant — traffic strung along the avenues in short broken lines and held at the lights on the cross streets, one boat drawing a slow wake on the river, steam standing in thin plumes above two or three roofs.
 
-Location: the roofs of Midtown — timber-framed water towers, boxed HVAC plant, tarred roofs patched and seamed, roof access huts, satellite dishes and antennae, a roof with faded painted markings, pavement scaffolding along one street, a construction site under orange netting, yellow cabs and double-parked delivery trucks in the canyon below.
+Location: forty blocks of ordinary Manhattan — flat tarred roofs in a hundred shades of grey and brown, timber-framed water towers, rooftop plant and bulkheads and vents, fire escapes down the older blocks, two construction sites under orange netting with tower cranes over them, and at the edge of the frame a bridge and a river island reading as ordinary working infrastructure rather than as a view.
 
-Light: flat overcast mid-morning daylight from a white sky, no direct sun and no long shadows; the street canyons several stops darker than the roofs.
+Light: flat overcast mid-morning daylight from a white sky, no direct sun and no long shadows; the river flat matte grey with no sparkle and no reflected colour; the street canyons several stops darker than the roofs.
 
-Style: a still from a 35mm independent film, shot from a helicopter on a long lens — compressed perspective, haze between the camera and the far blocks, available light only, unretouched, documentary rather than promotional.
+Style: a still from a 35mm independent film, shot from a helicopter on a long lens — compressed perspective, haze thickening with distance, available light only, unretouched, documentary rather than promotional.
 
-Constraints: ordinary commercial architecture with no landmark skyscrapers and no famous skyline in frame; keep every rooftop sign, hoarding, advertisement, street marking and vehicle livery free of readable lettering.
+Constraints: ordinary commercial and residential architecture throughout, unglamorised; keep every rooftop sign, hoarding, advertisement and vehicle livery free of readable lettering.
 ```
 
-**What to watch:**
+> **The block above is round 2 — the wide, reference-anchored version.** Round 1's
+> unanchored block (a tight rooftop frame, no reference, no river) is superseded and has
+> been removed rather than kept, because two blocks under one heading is how the wrong one
+> gets fired. The close-and-steeper **Earth camera recipe** above is what survives of it,
+> and it is still the right recipe if a later rung wants a tighter aerial.
 
-1. **Has it gone postcard?** Sun arrived, skyline assembled along the top of frame,
-   buildings turned glassy and blue. The counter is **more ordinariness** — more plant
-   machinery, more patched tar — not more instruction.
-2. **Is the tower actually plain?** A hero building with a distinctive crown makes the zoom
-   read as *important building*. The joke of the ladder is that **none of these places are
-   special.**
-3. **Is there air around it?** The clip pushes down into this tower. Crowded to the frame
-   edge is a re-roll, not a crop.
-4. **The traffic.** Vehicles are where aerial renders fall apart — floating, mis-scaled,
-   facing the wrong way down a one-way avenue. Check at 100%.
-5. **Did it import the sun?** Hard shadows raking the roofs means the light refusal did not
-   land. Sharpen that clause; do not rewrite the prompt — same lesson as §2h.3.
-6. **Did it copy the mesh instead of rebuilding it?** Soft, drooping, subtly wrong buildings
+**What to watch, in the order these are likely to fail:**
+
+1. **The sun.** The reference carries hard baked-in shadows down the west face of every
+   tower. **Most likely reject.** Sharpen the refusal; do not rewrite the scene — the same
+   lesson as §2h.3.
+2. **The water.** Sparkle, teal, or a mirror finish means postcard. Flat matte grey or
+   re-roll.
+3. **Density mush.** Forty blocks is a lot to rebuild at once; it fails as copy-paste blocks
+   and soup where the haze starts. Check at 100%. The fix is a **tighter crop of the same
+   screenshot**, not more words.
+4. **Is the target tower still legible?** It has to survive as one identifiable object — the
+   clip pushes down into it and the rung-1 interior lives inside it.
+5. **Did it copy the mesh instead of rebuilding it?** Soft, drooping, subtly wrong buildings
    mean it treated the screenshot as the shot. That is the relationship instruction failing,
    and the fix is strengthening it rather than adding detail elsewhere.
+6. **The traffic.** Vehicles are where aerial renders fall apart — floating, mis-scaled,
+   facing the wrong way down a one-way avenue.
 
 **On acceptance**, the three weather variants are this block with **only the Light line
 changed** (rain → snow → low winter sun), plus whatever the wet or snow-covered roofs
