@@ -1035,6 +1035,49 @@ Constraints: nobody in the frame looks at her; keep the handwriting on the paper
 4. **Did the list grow?** A shape, not text — but visibly longer than rung 1's two lines, or
    the accumulation device does nothing.
 
+### 2j.6rv Karen holds, rain (rung 2) — clip
+
+**Cast:** none needed. **Attach:** the accepted §2j.6r still. **Engine:** Gemini Omni Flash ·
+**Ingredients to Video** · 8s · native audio · **Enhance Prompt off**.
+
+> ### The beat is the most important thing in the act: **she is on hold.**
+>
+> Canon is explicit — *"I'm sorry madam, we can only prioritise callers at the front of the
+> phone queue." She holds. That's the point of her.* So the clip is **eight seconds of nothing
+> happening**, and that is not a compromise, it is the scene. It also gives §2j.0v something
+> to contrast against: there she was talking; here she has nothing to say and is not going
+> anywhere.
+
+**Every motion is in the safe tier** — a weight shift, an eye move, a blink. No hands, no fine
+articulation, nothing that can smear.
+
+**The audio is where the joke lives: tinny hold music leaking out of the receiver.** The song
+already has hold music in it, so this is the film and the track touching for the first time.
+**Whatever Omni invents is a placeholder** — the real loop goes on in post.
+
+```prompt
+Using the attached image as the locked opening frame, animate what happens next in one continuous shot. Keep the phone box, the corner, the rain, the light and her coat and hair exactly as they are in the frame.
+
+She is on hold and she is not speaking. She stands where she is with the receiver at her ear, waiting. Her eyes move down to the paper on the shelf, rest there a moment, then come back up to nothing in particular. She blinks once, slowly. She shifts her weight from one foot to the other and settles. Her face stays level and still throughout and her mouth stays closed.
+
+Rain runs down the glass of the box in beads and streaks. Behind it the street keeps moving, blurred and out of focus: traffic passing and people going by under umbrellas without looking at her.
+
+The camera is locked and still throughout, across the pavement. Available light only, real-time pace. Shot at 24fps with a 180-degree shutter. Fine film grain.
+
+Audio is the rain and the street: rain drumming on the roof of the box and running on the glass, tyres hissing on wet asphalt, and a thin tinny loop of hold music leaking out of the receiver.
+```
+
+**What to watch:**
+
+1. **Does she talk?** She must not. If her mouth moves, **cut the eye-movement beat** — giving
+   her something to look at is what suggests activity, and this has to read as pure waiting.
+2. **The hold music.** Audio is the flakiest channel; treat what comes back as a placeholder.
+   Garbled speech instead of music is an audio re-roll, not a rewrite.
+3. **The rain on the glass.** Formless and should be safe, but it is water on a surface. If
+   the streaks crawl upward, cut the clause and let the drumming on the roof carry it.
+4. **The umbrellas.** A busier shape than plain pedestrians, written as flow rather than
+   individuals. If they morph, drop to *"traffic passing"* alone.
+
 ---
 
 ## The plates this section still owes
@@ -1054,6 +1097,7 @@ Sketched so the order is visible; each gets written one at a time, on request.
 | **2j.5v** | Rung 1, the block — clip | ✅ written — one head shake, locked camera, **no Character to hold the face** |
 | **2j.6** | Karen in the box, rung 1 | ⛔ superseded by **§2j.0**, which was fired and accepted |
 | **2j.6r** | Karen in the box, rain (rung 2) | ✅ written — **an edit of §2j.0**; wet hair, scattered coins, a longer list |
+| **2j.6rv** | Karen holds, rain (rung 2) — clip | ✅ written — eight seconds of nothing happening; hold music in the audio |
 | **2j.7** | Rung 2 interior — the borough office | ✅ **accepted 2026-08-17, round 2** — **calmer and no more use**; carries the newspaper easter egg |
 | **2j.7v** | Rung 2, the patient block — clip | ✅ written — one chair swivel; the unanswered phone is in the audio |
 | 2j.8 | Rung 3 interior — the councilman's assistant | |
