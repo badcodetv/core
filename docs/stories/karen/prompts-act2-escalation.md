@@ -937,6 +937,46 @@ Constraints: his expression stays patient and unhurried; keep the newspaper head
 4. **Is the office shabby enough?** A clean modern council office reads as a startup. The
    nineties carpet tiles and the layered pinboard are what sell it.
 
+### 2j.7v Rung 2, the patient block — clip
+
+**Cast:** none. **Attach:** the accepted §2j.7 still. **Engine:** Gemini Omni Flash ·
+**Ingredients to Video** · 8s · native audio · **Enhance Prompt off**.
+
+**Tab: Ingredients**, per [the settled rule](../../google-flow/omni-flash.md#-the-tab-rule-is-there-a-face-in-it) —
+there is a face in it. No Flow Character exists for him, so identity rests on the still alone,
+exactly as it did on §2j.5v, which held.
+
+> **The beat is one move: he starts talking, and while he talks he swivels a few degrees away
+> and looks out of the window.** Courteous, unhurried, **already elsewhere** — the whole rung
+> in one gesture, and a chair swivel is about the most reliable motion available.
+
+**The audio carries the theme again:** a phone ringing somewhere down the corridor that nobody
+answers. Free, and it says more about the institution than anything in the picture.
+
+```prompt
+Using the attached image as the locked opening frame, animate what happens next in one continuous shot. Keep the office, the desk, the window, the light and his clothes and glasses exactly as they are in the frame.
+
+He stays where he is, leaning back with the handset at his ear. He listens for a while, doing nothing at all. Then he begins to speak, and as he speaks he swivels his chair a few degrees away from the desk and looks out of the window at his side. He keeps talking, still looking out. Then he stops and listens again. His face stays relaxed throughout, his eyebrows level, and his mouth closes flat between phrases.
+
+Rain runs down the window glass beside him. Nothing else in the room moves.
+
+The camera is locked and still throughout, in the doorway. Available light only, real-time pace. Shot at 24fps with a 180-degree shutter. Fine film grain.
+
+Audio is the office only: his voice low, flat and indistinct, rain against the window, the hum of an air conditioning unit, and a phone ringing somewhere down the corridor that nobody answers.
+```
+
+**What to watch:**
+
+1. **Does he stay seated?** If he stands, **cut the swivel** — a chair move is what invites a
+   body move.
+2. **Is the swivel small?** A few degrees, not a spin. If it over-rotates, replace with
+   *"he turns his head to look out of the window"* — less expressive, much safer.
+3. **The rain on the glass.** Formless, so it should be safe, but water on a surface is still
+   water. If it streaks oddly, cut it and let the audio carry the weather.
+4. **Is it still him?** No Character binding — the same situation as the lobby clip, which
+   held. Drift here would mean **face-plus-no-Character is genuinely untested**, and worth
+   recording.
+
 ---
 
 ## The plates this section still owes
@@ -955,7 +995,8 @@ Sketched so the order is visible; each gets written one at a time, on request.
 | **2j.5** | Rung 1 interior — the front desk | ✅ **fired and accepted 2026-08-17, round 2** — **the interior template**; the camera stands where Karen cannot |
 | **2j.5v** | Rung 1, the block — clip | ✅ written — one head shake, locked camera, **no Character to hold the face** |
 | **2j.6** | Karen in the box, intercut | ✅ written — **the Karen master**; the frame never changes, everything in it does. Coins and the name-list scrap accumulate across the act |
-| **2j.7** | Rung 2 interior — the borough office | ✅ written — **calmer and no more use**; carries the newspaper easter egg |
+| **2j.7** | Rung 2 interior — the borough office | ✅ **accepted 2026-08-17, round 2** — **calmer and no more use**; carries the newspaper easter egg |
+| **2j.7v** | Rung 2, the patient block — clip | ✅ written — one chair swivel; the unanswered phone is in the audio |
 | 2j.8 | Rung 3 interior — the councilman's assistant | |
 | 2j.9 | Rung 4 interior — the Chief of Staff | the top of the on-screen ladder |
 | 2j.10 | The newspaper easter egg | AI-taking-jobs headline, **background not foreground**; ideally the Camping prop paper. ⚠️ Legible headline text is the most reliable policy block there is — the line belongs in a `NarrationBox`, not in the image |
