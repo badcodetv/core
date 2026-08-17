@@ -75,7 +75,11 @@ A hundred years later, there's a statue.
     post-mortems are the most useful part of the file.
   - [`prompts-morning-after.md`](./prompts-morning-after.md) — §1.7, the end of
     Act 1. Seven plates including the Karen/Susan matched pair and the closing
-    frame of the act.
+    frame of the act, plus the accepted clips.
+  - [`prompts-act2-escalation.md`](./prompts-act2-escalation.md) — **Act 2**, the
+    escalation formula. §2j. Plates first, clips after. The aerial is the master:
+    the later rungs are re-fires of it with one line swapped, because **sameness
+    is the point** in this section.
 
 ## Production tracker
 
