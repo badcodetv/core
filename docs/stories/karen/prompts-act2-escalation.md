@@ -348,6 +348,69 @@ Audio is the city from a long way up: a low wash of distant traffic and steady w
 **Accept it as a master, like the plate.** The other three rungs are this clip with the
 weather changed and a different tower named.
 
+### 2j.5 Rung 1 interior, the front desk — plate · **the template**
+
+**Cast:** none. **Time:** mid-morning, same day. **Attached:** nothing. **Engine:** Nano
+Banana Pro, 16:9, 3 candidates. **Register: super-8 `STYLE LOCK`** — inside Karen's world,
+so it is grainy. The aerials are the photoreal ones.
+
+> ### ✅ Ruled by acceptance, 2026-08-17: rung 1 is inside the dark slab.
+>
+> The [hero-building question](#fired-2026-08-17--round-2-came-back-strong-three-rulings-owed)
+> answered itself when §2j.1v was accepted — the clip descends into that tower, so the
+> interior is in that tower. Read it as a corporate HQ. **The dull-building joke moves to
+> rung 2**, where it costs nothing.
+
+**This plate is a template.** Rungs 2, 3 and 4 are this shot with the room and the person
+changed, so the grammar is worth getting right once:
+
+1. **The camera always stands where Karen cannot.** Every rung is shot from the **visitor's
+   side of the desk, at standing eye level**, from the position of someone who has come to
+   ask for something. Karen is never in the room — she is in a phone box across town — but
+   **the camera is always in the room, at the counter, being ignored.** The section's joke,
+   rendered as a camera position.
+2. **What escalates is the furniture, not the shot.** Laminate at rung 1; carpet and a
+   nameplate at rung 2; wood panelling and a window with a view by rung 4. Same lens, same
+   distance, same eye level, so the ladder reads without being announced.
+3. **The performance is one thing: they are not looking at the call.** Eyes on the monitor,
+   hand on the mouse, mid-sentence in something they say forty times a day. **No rudeness** —
+   rudeness makes it a scene about a bad person, and it is not. It is about a system where
+   nobody is unkind and nothing can happen.
+4. **No emotion words.** Per [§4a](../../flow/image-prompting.md#4a-expressions--name-the-muscles-never-the-emotion)
+   the smile is described as muscles — *mouth corners lifted, nothing moving around the
+   eyes.* That sentence is the entire portrait.
+
+```prompt
+SCENE:
+
+Subject: a young front-desk worker sitting behind the reception counter of a corporate office lobby, wearing a headset with a slim boom microphone, a call already in progress.
+
+Composition: 16:9, a medium shot taken from the far side of the counter at standing eye level, slightly off to one side; they sit right of centre behind the counter; the near edge of the counter and the back corner of a monitor cross the bottom of the frame, close and out of focus; the frame is slightly off level.
+
+Action: mid-sentence and mid-task at the same time — their eyes are on the monitor to one side rather than on the call, one hand rests on a mouse, and the corners of their mouth are lifted in a small automatic smile with no movement anywhere around the eyes.
+
+Location: the ground-floor lobby of a plain Midtown office tower — a laminate counter scuffed along its front edge, a blank signage panel on the wall behind, a badge printer with a curl of unclaimed visitor passes beside it, a lanyard, a takeaway coffee cup standing in a dried ring, a tired potted plant, brushed steel turnstiles further back and the street glazing beyond them.
+
+Light: flat overhead ceiling panels above the desk, cold daylight coming through the lobby glazing behind them, a little light bouncing up off the pale counter.
+
+Style: a still from a 35mm independent film — an ordinary lobby on an ordinary weekday. Available light only, unretouched, natural skin texture.
+
+Constraints: their expression stays pleasant and unbothered rather than rude or hostile; keep the signage panel, visitor passes, screens, lanyard and every notice free of readable lettering.
+```
+
+**Two notes before firing:**
+
+- **The *"Hello, I'm —"* title is a `NarrationBox`, not text in the image.** Same rule as the
+  newspaper: [load-bearing text belongs in the overlay](../../flow/failure-modes.md#a7-two-structural-rules-that-make-blocks-rare),
+  where it is sharp, editable and unblockable.
+- **Watch the hands.** One hand on a mouse is the least articulated hand pose available and
+  it still does the storytelling. If the fingers come back mangled, **move the hand flat onto
+  the counter** rather than trying to prompt the fingers right.
+
+**What to watch: whether they are looking at the call.** Someone gazing warmly into the
+middle distance means the plate has become *a nice receptionist* and the point is gone. The
+eyes go on the screen.
+
 ---
 
 ## The plates this section still owes
@@ -359,9 +422,9 @@ Sketched so the order is visible; each gets written one at a time, on request.
 | **2j.1** | Aerial over Midtown, rung 1 | ✅ **fired and accepted 2026-08-17** — the master |
 | **2j.1v** | The descent, rung 1 — clip | ✅ written — the clip master; it never arrives |
 | 2j.2–2j.4 | The same aerial in rain, snow, low winter sun | one line swapped each |
-| 2j.5 | Rung 1 interior — the front desk | portrait of a functionary, not a conversation |
+| **2j.5** | Rung 1 interior — the front desk | ✅ written — **the interior template**; the camera stands where Karen cannot |
 | 2j.6 | Karen in the box, intercut | §2h kiosk still attached; **no crowd** |
-| 2j.7 | Rung 2 interior — the borough office | the ladder's second face |
+| 2j.7 | Rung 2 interior — the borough office | the ladder's second face; **the dull-building joke lands here** |
 | 2j.8 | Rung 3 interior — the councilman's assistant | |
 | 2j.9 | Rung 4 interior — the Chief of Staff | the top of the on-screen ladder |
 | 2j.10 | The newspaper easter egg | AI-taking-jobs headline, **background not foreground**; ideally the Camping prop paper. ⚠️ Legible headline text is the most reliable policy block there is — the line belongs in a `NarrationBox`, not in the image |
