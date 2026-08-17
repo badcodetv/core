@@ -488,30 +488,52 @@ canonical one — *"while we're high over the city, the weather changes"* — an
 than a cut because **the audience watches time pass rather than inferring it.** Worth one
 generation to find out; the fallback needs both aerials, which we want anyway.
 
+> ### Round 1 fired 2026-08-17 — failed three ways, one cause
+>
+> *"AI slop, changed the location, the camera zoomed out and moved in a very strange way."*
+>
+> **The cause is that pull-back is structurally far riskier than push-in.** A push-in only
+> crops further into pixels the model already has. **A pull-back demands brand-new city on
+> all four edges** — tens of blocks never in the frame — and with no world model it invents
+> them; once inventing at that scale it stops being anchored to the geography at all. **Same
+> plate pushed *in* (§2j.1v) held together fine.** Written up as an engine finding in
+> [`omni-flash.md`](../../google-flow/omni-flash.md#-pull-back-is-structurally-riskier-than-push-in).
+>
+> Two compounding faults, both mine: *"rises and pulls back"* is **two vectors**, and
+> *"the small float and drift of a long lens shot from a helicopter"* stacked a **third**
+> camera description on top — the documented over-specified-camera failure. And
+> *"keep the city"* **is not a preservation list**; without an itemised one Omni re-styles
+> the whole scene when asked to change one element.
+>
+> **Round 2 deletes the move entirely.** Not a compromise: **a city held perfectly still
+> while the light dies and rain arrives is a better image of nine months passing** than a
+> camera wandering over it — and nothing new enters the frame, so there is nothing to invent.
+
 ```prompt
-Using the attached image as the locked opening frame, animate what happens next in one continuous shot. Keep the city, the camera position at the start and the framing exactly as they are in the frame.
+Using the attached image as the locked opening frame, animate what happens next in one continuous shot.
 
-The camera rises and pulls back. It starts exactly where the frame starts and moves slowly and steadily up and away from the city, so more of the grid comes into the frame from the edges as it goes. The move carries the small float and drift of a long lens shot from a helicopter, and it is the only camera move in the shot.
+The camera does not move at all. It stays exactly where it is for the whole shot, in the position and framing of the attached image.
 
-As the camera rises, the weather closes in over the city, coming on gradually across the whole shot rather than all at once. Cloud thickens and the light drains out of the frame until it is much darker than it began. The tarred roofs go dark and wet. The streets below turn black and glossy and headlights come on in the middle of the day. The river surface goes matte and pocked. By the end of the shot the city is under heavy rain and the tops of the tallest towers are lost in low cloud.
+Keep all of these exactly the same as they are in the frame, for the whole shot: the camera position, the framing, the street grid, every building and its height and shape, the rooftops, the line of the river, and the far blocks receding into haze.
 
-Below, the city keeps going throughout: traffic creeps along the avenues, one boat draws a slow wake up the river, and steam stands above two or three rooftops.
+The only thing that changes is the weather, and it comes on gradually across the whole shot. The light drains out of the frame until the city is much darker than it began. The roofs and the streets go dark and wet. By the end of the shot the city is under heavy rain.
+
+Below, the city keeps going throughout: traffic creeps along the avenues and one boat draws a slow wake up the river.
 
 Real-time pace. Shot at 24fps with a 180-degree shutter.
 
 Audio is the city from a long way up: a low wash of distant traffic, steady wind, and the hiss of rain arriving.
 ```
 
-**What to watch — this one has a real chance of failing:**
+**What to watch:**
 
-1. **Does it cut to show the change?** The likeliest failure: a weather transition is exactly
-   what Omni resolves by chopping to a second shot. If it cuts, the experiment is over.
-2. **Does the change snap?** One frame where dry becomes wet is unusable. *"Gradually across
-   the whole shot"* is the counter; if it still snaps, take the fallback.
-3. **Does the city survive the darkening?** Big global changes are where geometry drifts.
-   Buildings hold position and shape; only light and surfaces change.
-4. **Does it actually get dark?** Models resist draining light. A slightly grey version of the
-   same bright city means it did not commit.
+1. **Is it the same city?** With nothing entering frame it has no excuse. If geography still
+   drifts, **the weather change alone is too big an ask** and the fallback is the plain cut —
+   pull-out dry, cut, descend wet — which is one edit and always works.
+2. **Does it get dark?** The one thing that must actually happen.
+3. **Does the change snap?** A single frame flipping dry to wet is unusable.
+
+**If this works, its last frame is the rain aerial** and §2j.2 becomes unnecessary.
 
 **No film grain** — god's-eye, so it matches the photoreal aerials rather than Karen's
 super-8.

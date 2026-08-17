@@ -653,6 +653,35 @@ audio.** Omni generates sound natively, so a splash can be *heard* while nothing
 splashes on screen. A real film would cut this way regardless. Physics you don't
 render cannot go wrong.
 
+### ⚠️ Pull-back is structurally riskier than push-in
+
+**Karen §2j.1x, 2026-08-17.** A high aerial was asked to **rise and pull back** while the
+weather closed in. It came back with **a different city**, plus incoherent camera motion.
+
+**The asymmetry is not about the engine's taste, it is about what each move demands:**
+
+| Move | What the model must supply |
+| --- | --- |
+| **Push in** | nothing new — it crops further into pixels it already has |
+| **Pull back** | **new world on all four edges**, every frame, with no world model to build it from |
+
+Once it is inventing at that scale it stops being anchored to the source geography at all.
+This is [the unrendered-region rule](#the-unrendered-region-rule--why-it-invented-a-shore)
+stated as a camera-direction preference: **prefer moves that reveal less.** The same plate
+pushed *in* (§2j.1v) held together fine — same image, opposite direction, completely
+different risk.
+
+**Compounding cause on the same shot:** *"rises and pulls back"* is two vectors, and
+*"the small float and drift of a long lens shot from a helicopter"* stacked a third
+description on top — the documented
+[over-specified-camera failure](#prompt-craft). **A big appearance change and a big camera
+move in one clip is two large asks**, and the fix that worked was deleting the move, not
+softening it.
+
+**And name the preservation list.** *"Keep the city"* is not a list; Omni's documented shape
+is `"[change]. Keep [X, Y, Z] exactly the same."` **Without an itemised list it re-styles
+the whole scene when asked to change one element** `[community]`.
+
 ### Spatial geometry: models have no world model
 
 Related failure, same root. Models trained on 2D clips *"don't inherently understand
