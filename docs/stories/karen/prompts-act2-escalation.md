@@ -799,7 +799,13 @@ Audio is the lobby only: her voice low, flat and indistinct, the click and rattl
 4. **The mouse hand.** An inch is deliberately small. If fingers smear, drop the hand clause
    and let the head shake be the only motion.
 
-### 2j.6 Karen in the box, rung 1 — plate · **the Karen master**
+### 2j.6 Karen in the box, rung 1 — plate · ⛔ **superseded by §2j.0**
+
+> **Not fired.** [§2j.0](#2j0-the-corner-with-karen-in-it--plate) is the shot that was
+> actually made and accepted, so it is the rung-1 Karen frame and the master. This block is
+> kept for its three accumulating devices — **the coins, the name list and the opposed arc** —
+> which carry forward into every rain/snow/sun variant.
+
 
 **Cast:** `@Karen`. **Time:** flat overcast mid-morning, same day as Act 1. **Attach:** the
 accepted §2h.3 kiosk source — the box is a fixed point and must be the same object.
@@ -977,6 +983,58 @@ Audio is the office only: his voice low, flat and indistinct, rain against the w
    held. Drift here would mean **face-plus-no-Character is genuinely untested**, and worth
    recording.
 
+### 2j.6r Karen in the box, rain (rung 2) — plate
+
+**Cast:** `@Karen` — attach the Character **as well as** the base image if the UI allows both;
+cheap insurance. **Attach:** the accepted **§2j.0**. **Engine:** Nano Banana Pro, 16:9, 3
+candidates.
+
+> ### This is an edit, not a new generation — and canon is the reason
+>
+> *"The world changes around the box; the box never moves."* **An edit is the most literal
+> possible way to honour that**: kiosk, subway entrance, scaffolding and camera stay
+> pixel-identical while everything else moves on. Generating it fresh gives a *similar*
+> corner, and similar is exactly what breaks the device. Same method as the
+> [weather aerials](#2j2-aerial-over-midtown-rain--plate).
+
+**Three things change, and they are the act's arc in one frame:** the weather, her clothes,
+and her. Rung 1 she was neat and faintly apologetic, still expecting this sorted by lunchtime.
+Now the hair is wet, **the coins are a scatter rather than a stack**, and **the scrap has a
+column of names down it instead of two lines.** Nobody will read the list — they will just see
+that it got longer.
+
+**Her face escalates by subtraction:** the raised inner brows of rung 1 are gone. Level brows,
+flat mouth, steady eyes. **She has stopped explaining and started working.**
+
+```prompt
+REFERENCE:
+
+Use the attached image as the base image. Keep all of these exactly the same as they are in it: the camera position and framing, the phone kiosk and every detail of its construction and wear, the subway entrance behind it with its railings, steps and green glass globes, the scaffolding, the litter bin, the buildings and the layout of the street. The camera does not move and none of those things are rebuilt or replaced. It is the same woman in the same phone box on the same corner. Change only the weather, her clothes and her condition, as described below.
+
+SCENE:
+
+Change: it is the same corner several months later, in heavy rain. She wears a cheap dark raincoat over the same cream blouse, buttoned wrong at the bottom, and her hair is wet and flattened to her head with strands stuck to her temple. A folded umbrella leans dripping in the corner of the kiosk and there is a puddle spreading from it across the floor. On the shelf, the coins are now a loose scatter with a few stacked and a couple lying flat, and the folded scrap of paper has grown into a column of handwritten names running down it. She is still on the phone.
+
+Action: her free hand is flat on the shelf and her weight is down on both feet. Her eyebrows are level and still, her mouth is flat and closed, and her eyes are steady and aimed at nothing. She is listening rather than explaining.
+
+Weather: rain running down the outside of the kiosk glass in beads and streaks, the street beyond it broken up and blurred by the water; the pavement dark and wet with standing water at the kerb; the paving reflecting nothing brighter than a dull grey.
+
+Light: no sun anywhere; flat grey rainy daylight, the whole frame two stops darker than the base image, the inside of the kiosk darker again.
+
+Constraints: nobody in the frame looks at her; keep the handwriting on the paper, every sign panel, notice, hoarding, sticker and vehicle marking free of readable lettering; no border or frame edge around the image.
+```
+
+**What to watch:**
+
+1. **Did the box move?** The one thing that must not happen. Flick between this and §2j.0 —
+   changed proportions or a shifted camera is a re-roll, not a rewrite.
+2. **Is she the same woman?** An edit that changes clothes and wetness is exactly where a face
+   quietly gets replaced. Compare features, not impression.
+3. **Is it actually raining, or just overcast?** Beads and streaks on the glass are the
+   difference. Grey with dry pavement means it hedged.
+4. **Did the list grow?** A shape, not text — but visibly longer than rung 1's two lines, or
+   the accumulation device does nothing.
+
 ---
 
 ## The plates this section still owes
@@ -994,7 +1052,8 @@ Sketched so the order is visible; each gets written one at a time, on request.
 | 2j.3–2j.4 | The same aerial in snow, then low winter sun | same method; **snow needs bare trees stated** |
 | **2j.5** | Rung 1 interior — the front desk | ✅ **fired and accepted 2026-08-17, round 2** — **the interior template**; the camera stands where Karen cannot |
 | **2j.5v** | Rung 1, the block — clip | ✅ written — one head shake, locked camera, **no Character to hold the face** |
-| **2j.6** | Karen in the box, intercut | ✅ written — **the Karen master**; the frame never changes, everything in it does. Coins and the name-list scrap accumulate across the act |
+| **2j.6** | Karen in the box, rung 1 | ⛔ superseded by **§2j.0**, which was fired and accepted |
+| **2j.6r** | Karen in the box, rain (rung 2) | ✅ written — **an edit of §2j.0**; wet hair, scattered coins, a longer list |
 | **2j.7** | Rung 2 interior — the borough office | ✅ **accepted 2026-08-17, round 2** — **calmer and no more use**; carries the newspaper easter egg |
 | **2j.7v** | Rung 2, the patient block — clip | ✅ written — one chair swivel; the unanswered phone is in the audio |
 | 2j.8 | Rung 3 interior — the councilman's assistant | |
