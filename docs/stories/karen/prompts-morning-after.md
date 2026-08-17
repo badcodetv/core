@@ -802,6 +802,78 @@ Style: a still from a 35mm independent film — a woman receiving news through g
 Constraints: cream blouse untucked, camel cardigan off one shoulder; her expression is flat and absorbing rather than shocked; keep every notice, card slot, sticker and reflected sign free of readable lettering.
 ```
 
+### 2h.6v Karen listens in the kiosk — clip
+
+**Engine:** Gemini Omni Flash · **Ingredients to Video** — an accepted kiosk still of Karen
+attached **plus `@Karen`** · 8s · native audio · **Enhance Prompt off**.
+
+**Attach the wider kiosk still** (§2h.3 or §2h.7 framing), not the tight through-glass
+§2h.6 close-up: this shot is a push-in and a push-in needs somewhere to travel from.
+
+Kai's brief, 2026-08-17: *confused and actively listening, no exaggerated expressions;
+start on her in the booth and slowly push in to her face.* The counter-shot to §2h.5bv —
+Susan talks, Karen takes it.
+
+> **⚠️ The camera paragraph is promoted above the action paragraph here**, which reverses
+> §2h.4v and §2h.5bv. Omni Flash reads `push in` as one of its named camera phrases and
+> **the first words set the shot grammar** `[runware]` — the same rule as
+> [`camera-vocabulary.md` §1](../../flow/camera-vocabulary.md#rules), *"camera instruction
+> goes first, as its own clause."* The frame-lock line still has to come first for
+> identity, so camera takes second position. **Push-in is Tier 1, the safest move there
+> is**, and it is the only move in the block.
+
+**Confusion is bought with four physical events and no emotion word:**
+
+1. **focus set past the glass** — the eyes are open and looking at nothing;
+2. **one slow blink**;
+3. **the mouth opens a fraction and closes again without a word** — *she starts to say
+   something and doesn't* is what confused-and-listening actually looks like;
+4. **a chin dip smaller than a nod.**
+
+That third one is the whole performance. The wider research agrees with
+[`image-prompting.md` §4a](../../flow/image-prompting.md#4a-expressions--name-the-muscles-never-the-emotion)
+from the other direction: **over-specifying an expression is itself what produces
+overacting** `[community]`, so four small events beat a paragraph of feeling.
+
+Three other choices, each with a reason:
+
+- **The reflection slides off her face as the camera closes.** One motivated change that
+  only a real move could produce — it is the anti-scaling tell as much as an atmosphere
+  clause.
+- **Her hand does not move.** She is holding a receiver next to her face for the whole
+  clip, which puts fingers in shot at the closest point. Motionless hands render;
+  articulating ones are the documented weak spot.
+- **The receiver voice is indistinct.** Same logic as §2h.5bv — Susan's real dialogue goes
+  on in post, so there is nothing here to fail to match.
+
+> **⚠️ "In one continuous shot" is not decoration.** Omni's documented default is to **cut** —
+> left alone it builds a little sequence out of two or three angles, which is the single
+> most likely way to lose a slow push. Say it in the opening line.
+
+```prompt
+Using the attached image as the locked opening frame, animate what happens next in one continuous shot. Keep the kiosk, the street, the glass, the light and her hair and clothes exactly as they are in the frame.
+
+The camera pushes in. It starts exactly where the frame starts, holding her in the kiosk with the street around her, and moves slowly and steadily straight toward her, ending on a medium close-up of her face through the glass. The move is continuous and unhurried and it is the only camera move in the shot.
+
+She is listening, and she has been listening for a while. Her eyes are open and set on nothing, focused somewhere past the glass rather than on anything in the street. Her brows stay level, the inner ends drawing very slightly up and together once. One slow blink. Her lips are parted and stay parted; her mouth opens a fraction as if to say something, then closes again. Her chin dips once, barely — less than a nod. Her hand stays where it is on the receiver, still.
+
+Available light only, real-time pace, and the camera is not helping — this is a plain observational push-in, not a composed one. The white reflection of the sky lies across the glass and slides off her face as the camera closes on her. Traffic moves in the reflection behind her. Any lettering on the kiosk and in the reflections stays soft and unreadable. Shot at 24fps with a 180-degree shutter. Fine film grain.
+
+Audio is the street only: distant traffic, a vehicle passing, and the thin indistinct sound of a voice in the receiver, too faint to make out any words.
+```
+
+**What to watch:**
+
+- **Whether the push is a dolly or a zoom.** A real move changes perspective — the kiosk
+  frame should widen past the edges of shot as you close. If the image only scales up, add
+  *"the kiosk frame passes out of the sides of the frame as the camera comes in."*
+- **Whether the face starts performing.** Cut the inner-brow clause first; it is the one
+  line that can be read as an instruction to emote.
+- **Whether the reflection swallows her.** If she ends behind white glare, replace the
+  slide-off with *"the glass is clear over her face by the end of the move."*
+- **Whether she speaks.** She is receiving, not talking. Dialogue coming back is the audio
+  lottery — reroll, do not rewrite.
+
 ### 2h.7 The last frame of Act 1 — plate
 
 **Cast:** `@Karen`. **This is the one that has to be great.**

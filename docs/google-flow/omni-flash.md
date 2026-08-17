@@ -301,6 +301,12 @@ tier above forum hearsay.
   circle) · Pan (left, right, vertical) · Static (locked off, fixed, oner, continuous shot). Camera
   *character* also parses: natural smartphone zoom, film camera (warm grain), webcam, handheld
   (micro-jitter).
+- **Lead with the camera phrase — "the first words set the shot grammar, and everything after
+  fills it in"** `[runware]`. Consistent with [`camera-vocabulary.md`](../flow/camera-vocabulary.md#rules)
+  rule 1. ⚠️ **In Ingredients mode this collides with the role-declaration line**, which also wants
+  to be first. BadCode's resolution (Karen §2h.6v): **frame-lock line first, camera paragraph
+  second, action third** — identity outranks grammar, and second position still beats burying the
+  move mid-description.
 - **Style preservation is an explicit list, not an assumption.** The working shape is
   `"[change]. Keep [X, Y, Z] exactly the same."` **Without naming what to preserve, Omni will
   re-style the whole scene when asked to change one element.**
