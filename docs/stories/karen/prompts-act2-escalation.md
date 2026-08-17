@@ -1256,20 +1256,48 @@ Use the attached image as the base image. Keep all of these exactly the same as 
 
 SCENE:
 
-Change: it is the same corner deep in winter, months after the base image, in falling snow. She wears a bulky padded coat that does not go with anything else she has on, over the same cream blouse, with a wool hat pushed back off her forehead and a scarf wound loosely. Her nose and the tops of her cheeks are red with cold, her lips are chapped and there is shadow under her eyes. Her breath fogs in the air inside the kiosk. On the shelf, the coins are down to a thin scatter of small change, and the folded paper has become several soft, much-handled scraps with columns of handwritten names running off the bottom of them.
+Change: it is the same corner in the middle of a heavy snowstorm, months after the base image. This is a full storm that has been falling for hours, not a light dusting.
+
+Snow on everything: several inches of snow lying on every horizontal surface in the frame, a deep rounded ridge of it along the roof of the kiosk and drooping over its edge, the litter bin capped with a mound of it, snow heaped along the top rails of the subway balustrade and packed into the corners of its steps, the scaffolding boards and every ledge above loaded with it, snow driven against the kiosk glass and stuck in the corners of the panes, and snow settled across her shoulders and the top of her hat.
+
+Snow in the air: large flakes crossing the whole frame, some of them close to the lens and thrown out of focus, falling thickly enough that the far end of the block is greyed out and the buildings down the street are reduced to pale shapes.
+
+The street: the road narrowed to a single trodden lane by ploughed banks of grey snow along the kerb, deep brown tyre ruts in the slush, and a single path stamped through the snow along the pavement.
+
+Her: she wears a bulky padded coat that does not go with anything else she has on, over the same cream blouse, with a wool hat pushed back off her forehead and a scarf wound loosely. Her nose and the tops of her cheeks are red with cold, her lips are chapped, there is shadow under her eyes and her breath fogs in the air inside the kiosk. On the shelf, the coins are down to a thin scatter of small change, and the folded paper has become several soft, much-handled scraps with columns of handwritten names running off the bottom of them.
 
 Action: she is mid-sentence and saying something short. Her jaw is set and her chin is a fraction forward. Her eyebrows are level and still, her mouth is firm, and her eyes are steady and aimed at nothing. Her free hand rests flat on the shelf. She has stopped explaining.
 
-Weather: snow falling steadily past the kiosk and settling along its roof, along the top rails of the subway balustrade and on the scaffolding above; grey compacted slush along the kerb and a trodden path through it on the pavement; the glass of the kiosk fogged at its lower edges where her breath has reached it.
+Light: the light is dim and flat under a low white sky with no sun anywhere and no shadows at all; the falling snow takes the contrast out of everything beyond the near pavement; the inside of the kiosk is darker still.
 
-Light: cold bright winter daylight bouncing up off the snow, no direct sun; the whole frame colder and cleaner than the base image; the inside of the kiosk still a stop darker than the street.
-
-Constraints: the pedestrians passing are bundled up and hurrying and none of them looks at her; keep the handwriting on the paper, every sign panel, notice, hoarding, sticker and vehicle marking free of readable lettering; no border or frame edge around the image.
+Constraints: the few pedestrians are hunched with hoods up and hurrying and none of them looks at her; keep the handwriting on the paper, every sign panel, notice, hoarding, sticker and vehicle marking free of readable lettering; no border or frame edge around the image.
 ```
+
+> ### Round 1 fired 2026-08-17 — *"not snowy enough."* Weather edits hedge.
+>
+> **Second sighting of the same behaviour** — the rain aerial was warned for exactly this
+> (*"models resist darkening a frame"*). **Ask for a weather noun and you get a polite version
+> of it**: "snow falling steadily" is satisfied by a few flakes over a dry street.
+>
+> **The fix is magnitude and consequences, not more snow words.** Snow that has fallen for
+> hours *does things*: it ridges on the kiosk roof, caps the bin, narrows the road to ploughed
+> banks, greys out the end of the block and kills the light. Round 2 asks for the **effects**
+> and states the magnitude outright — *"a full storm, not a light dusting."*
+>
+> **Plus the one thing that actually reads as heavy snowfall in a frame:** large flakes
+> crossing **close to the lens and out of focus.** That is the difference between being inside
+> the storm and watching one.
+>
+> **And a correction to round 1:** it said *"cold bright winter daylight"*, which fights
+> heaviness. **A real snowstorm is dim and flat**, not bright.
 
 **What to watch:**
 
-1. **Did the box move?** Flick against §2j.0. The kiosk and camera are the fixed point of the
+1. **Is the end of the block greyed out?** The real test of density — falling snow destroys
+   distance. A crisp background is a dusting with flakes drawn on top.
+2. **Are the near flakes out of focus?** What makes it read as *inside* the storm.
+3. **Did the box move?** Flick against §2j.0. Snow loads on the kiosk roof are a lot of new
+   geometry on an object that must not change. The kiosk and camera are the fixed point of the
    whole act.
 2. **Is her breath visible?** The best detail in the frame, and models often skip it because it
    is subtle. **Worth a re-roll on its own.**
