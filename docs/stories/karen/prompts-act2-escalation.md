@@ -1091,6 +1091,60 @@ Audio is the rain and the street: rain drumming on the roof of the box and runni
 3. **The hold music.** Audio is the flakiest channel; treat what comes back as a placeholder.
    Garbled speech instead of music is an audio re-roll, not a rewrite.
 
+### 2j.8 Rung 3 interior, the councilman's assistant — plate
+
+**Cast:** none. **Time:** mid-morning, months later — snow outside. **Attached:** nothing.
+**Engine:** Nano Banana Pro, 16:9, 3 candidates. **Register:** super-8 `STYLE LOCK`.
+
+> ### He is the most charming person Karen has reached, and the least useful yet.
+>
+> That is the escalation, and it has to read as **genuinely likeable rather than smarmy.** He
+> is taking it seriously. He is doing nothing.
+
+**The rung is in one prop: he is writing her name on a sticky note.** All the appearance of
+action, on an object designed to be thrown away. **Three other notes are already stuck along
+the monitor bezel** — every previous caller got exactly the same treatment. *One note is a man
+helping; four notes is a system.*
+
+**The other new idea is the empty visitor's chair in the near foreground.** Same grammar as
+rungs 1 and 2 — the camera stands where Karen cannot — but now **the chair she would be
+sitting in is in shot, unoccupied.** She is never in the room, and this is the first frame that
+says so out loud.
+
+**Light changes with the season and stays directional:** cold snow-light through the window at
+his side. Rung 2's rain gave hard blind-stripes; snow gives a clean cold key from one side.
+**What it must not become is the even, shadowless lighting that slopped rung 1.**
+
+```prompt
+SCENE:
+
+Subject: a man in his early thirties working as an aide in a New York councilman's district office, sitting behind a desk with a phone handset trapped between his ear and his shoulder, writing on a small square sticky note. He is neatly turned out and ordinary looking: a white shirt with the sleeves buttoned at the wrist, a lanyard, short hair combed, a shaving nick under the jaw, chapped lips from the cold, visible pores and a shine on his forehead.
+
+Composition: 16:9 on a 50mm lens at f/2.8, from the visitor's side of the desk at standing eye level and off to one side; he sits right of centre; the padded back of an empty visitor's chair stands in the near left foreground, close and thrown out of focus; the frame is tilted a few degrees off level.
+
+Action: he is listening and writing at the same time, his head tilted a few degrees, his eyebrows raised slightly in the middle, his mouth closed with the corners a little turned up. He is writing on the top sheet of a pad of sticky notes. Three older sticky notes are already stuck along the bezel of his monitor.
+
+Location: a district office that is tidier and better furnished than the last one — low grey carpet, a wood veneer desk, a laptop open beside a multi-line desk phone, a metal water bottle, a wool overcoat on a hook by the door, a small American flag on a stand, and a wall of framed certificates and handshake photographs hung in a grid, all of them too small and too indistinct to make out. Through the window at his side, snow is falling steadily past the building opposite and lying along the window ledge and the fire escape rails.
+
+Light: one source only — cold bright daylight bouncing off the snow outside and coming in through the window at his side, striking him from one direction and leaving the far side of his face and the wall behind him in shade; the ceiling lights are off.
+
+Style: a frame from a documentary, caught from across the desk while he is not paying attention to the camera. Shot on 35mm film, available light only, unretouched, no beauty retouching, natural skin with real texture.
+
+Constraints: his expression stays warm and attentive; keep the sticky notes, the certificates, the photographs, the laptop screen and every sign free of readable lettering, with any handwriting reduced to indistinct marks; no border or frame edge around the image.
+```
+
+**What to watch:**
+
+1. **Is he likeable?** The rung fails if he reads as smug or dismissive. He should be someone
+   you would be pleased to get through to.
+2. **Are the three older notes on the monitor?** That is the joke.
+3. **The empty chair.** Dropped, the frame loses its best new idea — and it has to read as
+   *empty* rather than merely cropped.
+4. **Is the writing illegible?** Handwriting is where the no-text rule most often slips, and a
+   legible name is both a policy risk and a continuity problem.
+5. **Did the snow flatten the light?** Snow light wants to go soft and even everywhere. One
+   side of his face in shade, or it is rung 1's failure again.
+
 ---
 
 ## The plates this section still owes
@@ -1113,7 +1167,7 @@ Sketched so the order is visible; each gets written one at a time, on request.
 | **2j.6rv** | Karen holds, rain (rung 2) — clip | ✅ written — eight seconds of nothing happening; hold music in the audio |
 | **2j.7** | Rung 2 interior — the borough office | ✅ **accepted 2026-08-17, round 2** — **calmer and no more use**; carries the newspaper easter egg |
 | **2j.7v** | Rung 2, the patient block — clip | ✅ written — one chair swivel; the unanswered phone is in the audio |
-| 2j.8 | Rung 3 interior — the councilman's assistant | |
+| **2j.8** | Rung 3 interior — the councilman's assistant | ✅ written — **the sticky note**, and the empty visitor's chair |
 | 2j.9 | Rung 4 interior — the Chief of Staff | the top of the on-screen ladder |
 | 2j.10 | The newspaper easter egg | AI-taking-jobs headline, **background not foreground**; ideally the Camping prop paper. ⚠️ Legible headline text is the most reliable policy block there is — the line belongs in a `NarrationBox`, not in the image |
 | 2j.11 | She is alone in it | the lone shot of her staring out of the box; the act's emotional exit |
