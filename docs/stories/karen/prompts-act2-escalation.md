@@ -882,28 +882,57 @@ receptionist. This one gets daylight through half-lowered blinds at his side.
 ```prompt
 SCENE:
 
-Subject: a man in his sixties who has worked in local government for thirty years, sitting behind a desk in a municipal borough office with a desk phone handset held to his ear. He is an ordinary looking man with an unremarkable face, a soft build and no styling: thinning grey hair, reading glasses low on his nose, grey stubble along the jaw, deep lines, visible pores, a shirt that has been worn since Monday with the collar softened, a wool cardigan over it and no tie.
+Subject: a man in his sixties who has worked for the City of New York for thirty years, sitting behind a desk in a municipal office with a desk phone handset held to his ear. He is an ordinary looking man with an unremarkable face, a soft heavy build and no styling: thinning grey hair combed flat, reading glasses low on his nose, grey stubble, deep lines across his forehead, visible pores and a shine on his nose, a short-sleeved shirt worn soft with the sleeves rolled once more and a tie pulled loose at the collar.
 
-Composition: 16:9, a medium shot on a 50mm lens at f/2.8, taken from the visitor's side of the desk at standing eye level and off to one side; he sits right of centre behind the desk, leaning back in his chair; the near edge of the desk crosses the bottom of the frame close and thrown out of focus; the frame is tilted a few degrees off level.
+Composition: 16:9 on a 50mm lens at f/2.8, shot from the open doorway of his office at standing eye level; the dark edge of the doorframe cuts down the near left of the frame, close and thrown out of focus; he sits right of centre behind the desk, leaning back in his chair; the top corner of a filing cabinet blocks the bottom right of the frame; the frame is tilted a few degrees off level.
 
-Action: he is listening, patiently and without hurry, leaning back with one hand holding a pen he is not writing with and the other holding the handset. His mouth is closed and still. His eyebrows are relaxed and level. He has all the time in the world.
+Action: he is listening, patiently and without hurry, leaning back with one hand holding a pen he is not writing with and the other holding the handset against his shoulder. His mouth is closed and still, his eyebrows relaxed and level. He is not aware of the camera. He has all the time in the world.
 
-Location: a municipal borough office that has not been refurbished since the nineties — grey carpet tiles, a scuffed melamine desk, a swivel chair with a coat over the back of it, stacked buff folders and a wire tray of loose paper, a mug ringed brown inside, a dying spider plant, a wall calendar and a pinboard of layered notices behind him, a folded tabloid newspaper lying face up beside the folders, and a window to his side with venetian blinds half lowered showing wet rooftops and a car park below.
+Location: a New York city government office that has not been refurbished since the nineties — grey carpet tiles worn shiny in a track by the desk, a scuffed melamine desk, a swivel chair with a jacket over the back, stacked manila folders and a wire in-tray of loose paper, a paper deli coffee cup gone cold, a dying spider plant, a small American flag on a stand on the filing cabinet, a corkboard behind him layered with overlapping notices, and a folded New York tabloid lying face up beside the folders. Through the window at his side: the black iron fire escape and brick flank of the building across the airshaft, timber water towers on the rooflines above, and four floors down a wet street with a yellow cab standing at the kerb and steam lifting off the asphalt.
 
-Light: one source only — grey rainy daylight through the venetian blinds at his side, striping across him and the desk from one direction, leaving the far side of his face and the room behind him in shade; the ceiling lights are off.
+Light: one source only — grey rainy daylight through venetian blinds at his side, striping hard across him and the desk from one direction and leaving the far side of his face and the back of the room in shade; the ceiling fluorescents are switched off; the corridor behind the camera is dark.
 
-Style: a documentary photograph on 35mm film, made for a newspaper story about local government; unretouched, no beauty retouching, natural skin with real texture; candid, caught rather than composed.
+Style: a frame from a documentary, caught from the doorway while he is not paying attention. Shot on 35mm film, available light only, unretouched, no beauty retouching, natural skin with real texture.
 
-Constraints: his expression stays patient and unhurried; keep the newspaper headline, the calendar, the pinboard notices, the folder labels and every sign free of readable lettering; no border or frame edge around the image.
+Constraints: his expression stays patient and unhurried; keep the newspaper headline, the corkboard notices, the folder tabs, the flag and every sign free of readable lettering; no border or frame edge around the image.
 ```
+
+> ### Round 1 fired 2026-08-17 — rejected: the window was English, and it slopped
+>
+> **The window was a straight error in the prompt:** *"wet rooftops and a car park below"* is
+> an English sentence. **A New York municipal office does not overlook a car park, it
+> overlooks a canyon** — fire escape, brick flank across the airshaft, water towers on the
+> rooflines, a yellow cab four floors down. Several props were quietly British too: buff
+> folders, a pinboard, and **a wool cardigan on a man in his sixties reads as a parish council
+> in Surrey.** Now manila folders, a corkboard, a rolled-sleeve shirt with the tie pulled
+> loose, and **a small American flag on a stand — the most efficient Americanising object
+> available.**
+>
+> **On the slop, the current Nano Banana Pro guidance converges on one idea: *the more
+> decisions you make, the less it has to guess*** `[vendor]`, and adjective-heavy prompting is
+> what summons the generic default. Round 2 trades adjectives for decisions:
+>
+> 1. **The camera stands in his doorway**, doorframe cutting the near edge dark and out of
+>    focus. Keeps the template grammar — *the camera stands where Karen cannot* — and makes
+>    the frame **imperfectly composed on purpose**, which is what a real observational frame
+>    has and a generated one never does.
+> 2. **Exact optics stated**, because Pro computes depth of field and perspective from camera
+>    data rather than guessing at "cinematic" `[community]`.
+> 3. **The style line stops asking for an editorial portrait.** *"A newspaper story about
+>    local government"* invites a posed, well-lit subject looking down a lens. It is now a
+>    frame caught from a doorway while he is not paying attention.
 
 **What to watch:**
 
-1. **Is he leaning back?** That posture **is** the rung. Hunched forward looking helpful and
+1. **Does the window read as New York?** Fire escape, brick airshaft, water towers, yellow
+   cab. Any of those missing and it drifts back toward anywhere.
+2. **Is he leaning back?** That posture **is** the rung. Hunched forward looking helpful and
    the escalation reads as effort, which kills the joke.
 2. **Is the newspaper readable?** It must not be. If lettering resolves, blur it next round
    rather than removing the paper — it does real work sitting there unread.
-3. **Did the blinds give stripes?** The one lighting instruction carrying the realism. Flat
+3. **Did the doorframe survive?** That dark near edge does most of the anti-slop work. A
+   clean centred frame means it dropped the occluder, and it will look generated again.
+4. **Did the blinds give stripes?** The one lighting instruction carrying the realism. Flat
    and even means it reverted to rung 1's failure.
 4. **Is the office shabby enough?** A clean modern council office reads as a startup. The
    nineties carpet tiles and the layered pinboard are what sell it.
