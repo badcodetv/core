@@ -1379,6 +1379,63 @@ Audio is the storm and the street: the flattened hush of heavy snowfall, wind mo
    materialises and swims is the layer problem again, and prose will not fix it — crop or
    accept.
 
+### 2j.9 Rung 4 interior, the Chief of Staff — plate
+
+**Cast:** none. **Time:** late afternoon, low winter sun. **Attached:** nothing. **Engine:**
+Nano Banana Pro, 16:9, 3 candidates. **Register:** super-8 `STYLE LOCK`.
+
+**The top of the ladder, and both standing rules max out here** — the **lowest camera angle in
+the film** and the **best view in it**.
+
+> ### The escalation lands in one detail: she is not holding the phone.
+>
+> Rung 1 wore a headset and typed. Rung 2 trapped the handset at his shoulder. Rung 3 wedged it
+> against his ear and wrote a note. **Rung 4 has Karen on speakerphone, on the desk, while she
+> stands at the window with her back to it.** The whole climb in one image — *the higher you
+> go, the less of the call anyone is actually holding.*
+>
+> **And you never see her face.** Turned away: thematically exact — **the further from Karen,
+> the less of a person there is to talk to** — and it means describing no face at all, which is
+> the cleanest likeness position available.
+
+**The camera goes to the floor.** Low by the door, looking up past the desk with the
+speakerphone large in the foreground and her small and tall against the glass. **Nothing in the
+act has looked like this yet**, which is why it was saved for last.
+
+**Low winter sun gets the magnitude treatment**, per the [snow lesson](#2j6s-karen-in-the-box-snow-rung-3--plate):
+not *"low sun"* but its consequences — shadows thrown right across the carpet to the camera,
+the room half blinded, the glass flaring.
+
+```prompt
+SCENE:
+
+Subject: a woman in her forties standing with her back to the room at the window of a senior government office, holding a mug, listening to a call that is running on speakerphone on the desk behind her. She is in a plain dark tailored suit with the jacket off and hanging on the chair, sleeves pushed up, hair up. Her face is turned away and not visible.
+
+Composition: 16:9 on a 24mm lens at f/4, with the camera very low, close to the floor just inside the doorway, angled upward across the room. The desk edge crosses the near foreground large and out of focus with the speakerphone standing on it, its light on. She stands beyond the desk, small and tall against the window, well right of centre. Two empty visitor chairs sit between the camera and the desk. The ceiling shows at the top of the frame. The frame is tilted a few degrees off level.
+
+Action: she is doing nothing except listening. She stands square to the window with her weight on both feet, the mug held at her chest in both hands, unhurried. She is not aware of the camera.
+
+Location: a senior office in a government building — a large desk with almost nothing on it, papers squared into one stack, a landline speakerphone, a jug of water and a glass, a low bookcase, a rug over the carpet with a worn track leading to the door, an old cast-iron radiator under the window, scuffs along the skirting board, and framed photographs and certificates on the side wall hung in a grid, all too small and indistinct to make out. Through the window, a wide open view over Manhattan in winter: rooftops, water towers and the tops of the towers, with a bridge and the water beyond them.
+
+Light: the sun is low and coming straight in through the window, so the room is half blinded by it. Long hard shadows are thrown from the window right across the carpet toward the camera. She is a dark shape rimmed with light along one shoulder and the side of her head. The glass flares where the sun catches its edge, the tops of the buildings outside are lit gold and everything below them is already in blue shadow. The ceiling lights are off.
+
+Style: a frame from a documentary, caught from the doorway while she is not paying attention to the camera. Shot on 35mm film, available light only, unretouched, natural texture.
+
+Constraints: keep the papers, the photographs, the certificates, the speakerphone display and every sign free of readable lettering; no border or frame edge around the image.
+```
+
+**What to watch:**
+
+1. **Is she actually turned away?** The model will want to give you her face. **A face here
+   undoes the idea.**
+2. **Is the phone on the desk, not in her hand?** The punchline of the whole ladder.
+3. **Do the shadows reach the camera?** Long shadows *across the carpet toward the lens* are
+   what make the sun low. Short shadows mean it hedged again.
+4. **Is the desk nearly empty?** Clutter reads as work; an empty desk reads as power, and it is
+   the strongest contrast with rung 2's stacked folders.
+5. **Is the room still ordinary?** Scuffed skirting, a worn track in the rug, a cast-iron
+   radiator. A glass corner office is **the wrong kind of status.**
+
 ---
 
 ## The plates this section still owes
@@ -1405,6 +1462,6 @@ Sketched so the order is visible; each gets written one at a time, on request.
 | **2j.7v** | Rung 2, the patient block — clip | ✅ written — one chair swivel; the unanswered phone is in the audio |
 | **2j.8** | Rung 3 interior — the councilman's assistant | ✅ written, round 2 — **the sticky note**, the empty chair, and the first low angle |
 | **2j.8v** | Rung 3, the fourth note — clip | ✅ written — the joke completes on screen |
-| 2j.9 | Rung 4 interior — the Chief of Staff | the top of the on-screen ladder |
+| **2j.9** | Rung 4 interior — the Chief of Staff | ✅ written — **on speakerphone, back turned**; lowest angle, best view |
 | 2j.10 | The newspaper easter egg | AI-taking-jobs headline, **background not foreground**; ideally the Camping prop paper. ⚠️ Legible headline text is the most reliable policy block there is — the line belongs in a `NarrationBox`, not in the image |
 | 2j.11 | She is alone in it | the lone shot of her staring out of the box; the act's emotional exit |
