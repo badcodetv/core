@@ -1228,6 +1228,58 @@ Audio is the office only: his voice warm, low and indistinct, the hum of the bui
 4. **Does he stand or turn round?** He does not know the camera is there. Any acknowledgement
    of the lens kills the observational frame the whole ladder is shot in.
 
+### 2j.6s Karen in the box, snow (rung 3) — plate
+
+**Cast:** `@Karen` — attach the Character alongside the base image if the UI allows both.
+**Attach:** the accepted **§2j.0**. **Engine:** Nano Banana Pro, 16:9, 3 candidates. Same edit
+method as [§2j.6r](#2j6r-karen-in-the-box-rain-rung-2--plate).
+
+> ### This is where the wardrobe dial goes furthest.
+>
+> Rung 1: neat, in the clothes she was fired in. Rung 2: a cheap raincoat and wet hair. Rung 3:
+> **a coat that does not match anything she owns, a hat pushed back, and — the detail to
+> protect above all others — her breath fogging inside the box.** It says the heating in her
+> life stopped some time ago and she is still there.
+
+**Her face continues escalating by subtraction.** Rung 1: raised inner brows, apologising for
+existing. Rung 2: level and flat, working. Rung 3: **jaw set, chin a fraction forward, eyes
+steady.** ⚠️ **Not angry** — angry is a woman losing it, and she is not. **She has become
+immovable**, which is the thing that eventually gets a President on the phone.
+
+**And the coins are nearly gone.** Nobody consciously tracks a coin pile across three shots.
+Everybody feels it.
+
+```prompt
+REFERENCE:
+
+Use the attached image as the base image. Keep all of these exactly the same as they are in it: the camera position and framing, the phone kiosk and every detail of its construction and wear, the subway entrance behind it with its railings, steps and green glass globes, the scaffolding, the litter bin, the buildings and the layout of the street. The camera does not move and none of those things are rebuilt or replaced. It is the same woman in the same phone box on the same corner. Change only the season, her clothes and her condition, as described below.
+
+SCENE:
+
+Change: it is the same corner deep in winter, months after the base image, in falling snow. She wears a bulky padded coat that does not go with anything else she has on, over the same cream blouse, with a wool hat pushed back off her forehead and a scarf wound loosely. Her nose and the tops of her cheeks are red with cold, her lips are chapped and there is shadow under her eyes. Her breath fogs in the air inside the kiosk. On the shelf, the coins are down to a thin scatter of small change, and the folded paper has become several soft, much-handled scraps with columns of handwritten names running off the bottom of them.
+
+Action: she is mid-sentence and saying something short. Her jaw is set and her chin is a fraction forward. Her eyebrows are level and still, her mouth is firm, and her eyes are steady and aimed at nothing. Her free hand rests flat on the shelf. She has stopped explaining.
+
+Weather: snow falling steadily past the kiosk and settling along its roof, along the top rails of the subway balustrade and on the scaffolding above; grey compacted slush along the kerb and a trodden path through it on the pavement; the glass of the kiosk fogged at its lower edges where her breath has reached it.
+
+Light: cold bright winter daylight bouncing up off the snow, no direct sun; the whole frame colder and cleaner than the base image; the inside of the kiosk still a stop darker than the street.
+
+Constraints: the pedestrians passing are bundled up and hurrying and none of them looks at her; keep the handwriting on the paper, every sign panel, notice, hoarding, sticker and vehicle marking free of readable lettering; no border or frame edge around the image.
+```
+
+**What to watch:**
+
+1. **Did the box move?** Flick against §2j.0. The kiosk and camera are the fixed point of the
+   whole act.
+2. **Is her breath visible?** The best detail in the frame, and models often skip it because it
+   is subtle. **Worth a re-roll on its own.**
+3. **Is she the same woman?** A hat, a scarf and a red nose are a lot of change around a face.
+   Compare features, not impression.
+4. **Is she implacable rather than angry?** A scowl means the arc has overshot — she still has
+   two acts to go.
+5. **Did the paper multiply?** Several soft scraps, not one clean note. **The pile is the nine
+   months.**
+
 ---
 
 ## The plates this section still owes
@@ -1248,6 +1300,7 @@ Sketched so the order is visible; each gets written one at a time, on request.
 | **2j.6** | Karen in the box, rung 1 | ⛔ superseded by **§2j.0**, which was fired and accepted |
 | **2j.6r** | Karen in the box, rain (rung 2) | ✅ written — **an edit of §2j.0**; wet hair, scattered coins, a longer list |
 | **2j.6rv** | Karen holds, rain (rung 2) — clip | ✅ written — eight seconds of nothing happening; hold music in the audio |
+| **2j.6s** | Karen in the box, snow (rung 3) | ✅ written — **her breath fogs**; coins down to shrapnel, the list on several scraps |
 | **2j.7** | Rung 2 interior — the borough office | ✅ **accepted 2026-08-17, round 2** — **calmer and no more use**; carries the newspaper easter egg |
 | **2j.7v** | Rung 2, the patient block — clip | ✅ written — one chair swivel; the unanswered phone is in the audio |
 | **2j.8** | Rung 3 interior — the councilman's assistant | ✅ written, round 2 — **the sticky note**, the empty chair, and the first low angle |
