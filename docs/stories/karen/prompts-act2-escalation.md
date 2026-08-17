@@ -292,6 +292,62 @@ Constraints: ordinary commercial and residential architecture throughout, unglam
 changed** (rain → snow → low winter sun), plus whatever the wet or snow-covered roofs
 demand in the Location line. Written when the master lands.
 
+### 2j.1v The descent, rung 1 — clip · **the master**
+
+**Cast:** none. **Attach:** the accepted §2j.1 aerial. **Engine:** Gemini Omni Flash ·
+**Ingredients to Video** · 8s · native audio · **Enhance Prompt off.** Same recipe as the
+accepted Act 1 clips — Frame-shaped prompt text fired in the Ingredients tab.
+
+> ### The design decision: **it never arrives.**
+>
+> Eight seconds cannot carry a camera from this altitude down to one building, and forcing
+> it buys the two things Omni is worst at — **an accelerating move**, and **façades it has
+> to invent** because the plate never showed them
+> ([the unrendered-region rule](../../google-flow/omni-flash.md#the-unrendered-region-rule--why-it-invented-a-shore)).
+>
+> **So the descent is still going when the clip ends and the cut does the arriving.** It is
+> [*render the reach, not the contact*](../../google-flow/omni-flash.md#the-rule-that-outranks-all-of-it-a-real-camera-never-catches-the-whole-fall)
+> applied to a camera move instead of an object, it is how a documentary would cut it, and
+> it happens to serve the story — the film keeps not getting there.
+
+**⚠️ No film grain in this block**, unlike every Act 1 clip. The
+[photoreal-aerials ruling](#fired-2026-08-17--round-2-came-back-strong-three-rulings-owed)
+means the clip has to match the plate it starts from. **The 24fps/180-degree shutter clause
+stays** — that is motion realism, not texture, and the two are separable.
+
+**The ambient motion is ranked by risk**, deliberately: the boat and its wake are the safest
+thing moving (slow, single, unambiguous direction), the steam is formless, and the traffic
+is the one most likely to misbehave at this scale.
+
+```prompt
+Using the attached image as the locked opening frame, animate what happens next in one continuous shot. Keep the city, the light, the weather and the framing exactly as they are in the frame.
+
+The camera descends. It starts exactly where the frame starts, high over the city, and moves slowly and steadily down and forward toward the dark tower standing alone near the middle of the frame, which grows larger in frame as the camera closes on it. The shot stays high throughout and the descent is still going when the clip ends. The move carries the small float and drift of a long lens shot from a helicopter. It is the only camera move in the shot.
+
+Below, the city goes on with its morning: traffic creeps along the avenues and along the riverside expressway, one boat draws a slow white wake up the river, and thin plumes of steam stand and drift above two or three rooftops.
+
+Available light only, real-time pace, flat overcast daylight from a white sky. Haze hangs between the camera and the far blocks. Shot at 24fps with a 180-degree shutter.
+
+Audio is the city from a long way up: a low wash of distant traffic and steady wind.
+```
+
+**What to watch:**
+
+1. **Whether it arrives anyway.** The tower filling frame at the end means it accelerated,
+   and the façades will break up. Add *"the tower is still small in the frame when the clip
+   ends"* — **stated as a fact about the last frame, not as a limit on the move**, because
+   [negatives backfire on Omni](../../google-flow/omni-flash.md#-negatives-do-not-work-and-they-actively-backfire).
+2. **Whether it cuts.** The likeliest structural failure — a descent is exactly the shape
+   Omni wants to chop into three angles. *"In one continuous shot"* is in the opening line
+   for that reason; if it still cuts, reroll rather than rewrite.
+3. **The traffic and the boat.** Vehicles this small are cheap to get wrong. **If the
+   traffic misbehaves, drop the traffic clause** and let the boat and the steam carry it.
+4. **Whether the city holds still underneath.** Buildings should keep their positions and
+   grow with perspective. Blocks sliding relative to each other is warping, not moving.
+
+**Accept it as a master, like the plate.** The other three rungs are this clip with the
+weather changed and a different tower named.
+
 ---
 
 ## The plates this section still owes
@@ -300,7 +356,8 @@ Sketched so the order is visible; each gets written one at a time, on request.
 
 | § | Plate | Notes |
 | --- | --- | --- |
-| **2j.1** | Aerial over Midtown, rung 1 | ✅ written — the master |
+| **2j.1** | Aerial over Midtown, rung 1 | ✅ **fired and accepted 2026-08-17** — the master |
+| **2j.1v** | The descent, rung 1 — clip | ✅ written — the clip master; it never arrives |
 | 2j.2–2j.4 | The same aerial in rain, snow, low winter sun | one line swapped each |
 | 2j.5 | Rung 1 interior — the front desk | portrait of a functionary, not a conversation |
 | 2j.6 | Karen in the box, intercut | §2h kiosk still attached; **no crowd** |
