@@ -383,19 +383,19 @@ changed, so the grammar is worth getting right once:
 ```prompt
 SCENE:
 
-Subject: a young front-desk worker sitting behind the reception counter of a corporate office lobby, wearing a headset with a slim boom microphone, a call already in progress.
+Subject: a woman in her early fifties who has worked the same reception desk for eleven years, sitting behind the counter of an office lobby in a headset with a slim boom microphone, a call already in progress. She is an ordinary looking woman with an unremarkable face, a heavy build and no styling: greying hair pulled back with flyaway strands escaping around the headset band, reading glasses pushed up on her head, dry lips, visible pores and fine lines, a shine across her forehead and nose, a plain unironed blouse with the collar sitting crooked, a lanyard twisted so the badge faces the wrong way.
 
-Composition: 16:9, a medium shot taken from the far side of the counter at standing eye level, slightly off to one side; they sit right of centre behind the counter; the near edge of the counter and the back corner of a monitor cross the bottom of the frame, close and out of focus; the frame is slightly off level.
+Composition: 16:9, a medium shot on a 50mm lens at f/2.8, taken from the far side of the counter at standing eye level and off to one side; she sits well right of centre with the empty run of the counter going away to the left; the near edge of the counter crosses the bottom of the frame close and thrown out of focus; the frame is tilted a few degrees off level.
 
-Action: mid-sentence and mid-task at the same time — their eyes are on the monitor to one side rather than on the call, one hand rests on a mouse, and the corners of their mouth are lifted in a small automatic smile with no movement anywhere around the eyes.
+Action: she is mid-word, saying something she says forty times a day. Her eyes are on the monitor to one side, not on the call. Her mouth is open on the word and the rest of her face is doing nothing at all — her cheeks are still, there is no movement around her eyes, and she is not smiling. One hand rests on a mouse.
 
-Location: the ground-floor lobby of a plain Midtown office tower — a laminate counter scuffed along its front edge, a blank signage panel on the wall behind, a badge printer with a curl of unclaimed visitor passes beside it, a lanyard, a takeaway coffee cup standing in a dried ring, a tired potted plant, brushed steel turnstiles further back and the street glazing beyond them.
+Location: the lobby of a 1980s office tower that has been half refurbished — dark polished stone floor and dated stone cladding behind, newer steel turnstiles that do not match it, a laminate counter chipped along its front edge, a takeaway coffee cup standing in a dried brown ring, a curling stack of unclaimed visitor passes, old blu-tack marks on the wall panel behind her.
 
-Light: flat overhead ceiling panels above the desk, cold daylight coming through the lobby glazing behind them, a little light bouncing up off the pale counter.
+Light: one source only — cold daylight from the street glazing off to her right, raking across her face from the side so her pores and lines catch micro-shadow and the far side of her face falls into shade; the ceiling panels above are off; the front of the counter is dark.
 
-Style: a still from a 35mm independent film — an ordinary lobby on an ordinary weekday. Available light only, unretouched, natural skin texture.
+Style: a documentary photograph on 35mm film, made for a newspaper story about office work rather than for the company; unretouched, no beauty retouching, natural skin with real texture; candid, caught rather than composed.
 
-Constraints: their expression stays pleasant and unbothered rather than rude or hostile; keep the signage panel, visitor passes, screens, lanyard and every notice free of readable lettering.
+Constraints: keep the wall panel, visitor passes, screens, lanyard and every notice free of readable lettering; no border or frame edge around the image.
 ```
 
 **Two notes before firing:**
@@ -411,6 +411,84 @@ Constraints: their expression stays pleasant and unbothered rather than rude or 
 middle distance means the plate has become *a nice receptionist* and the point is gone. The
 eyes go on the screen.
 
+> ### Round 1 fired 2026-08-17 — rejected as AI slop, and most of it was the prompt's fault
+>
+> **Three clauses in round 1 asked for the picture that came back:**
+>
+> | Round 1 wrote | Why it produced slop |
+> | --- | --- |
+> | *"a young front-desk worker"* | **a summons for stock photography** — that phrase's centre of gravity is a photogenic twenty-something in a headset, smiling at a screen |
+> | *"flat overhead ceiling panels"* | **it prompted the flat light.** Pores and fine lines exist only as micro-shadow; flat overhead erases them. Every realism guide says directional sidelight `[community]` |
+> | nine props in one Location line | **a long list gets deduplicated to generic nouns** — the model kept "coffee cup, plant, badge printer" and binned "scuffed", "dried ring", "tired" |
+>
+> Two failures were the model's own: **the smile** came back warm and eye-crinkling despite
+> *"no movement around the eyes"* (the overacted-positive default), and **a film border was
+> burned into the frame** — excluded by the §2.5 lock but not by §1's.
+>
+> **The highest-leverage fix was casting.** Rung 1 is now a woman in her early fifties who
+> has worked the desk eleven years. It kills the stock attractor at the root, and it is
+> truer: **the first person in Karen's way is not a gatekeeper, it is someone with no power
+> at all.**
+>
+> **Round 2's other changes:** one named side light with the ceiling panels off · pores,
+> fine lines, forehead shine, flyaway hair, dry lips — and **no "flawless", "beautiful" or
+> "8k" anywhere**, since one such word undoes every texture term `[community]` · 50mm at
+> f/2.8 so the lobby falls off · a half-refurbished 1980s lobby, because mismatch reads as
+> real where a new glass box reads as a set · four props, each with its wear stated ·
+> *"not smiling"* said three ways · *"no border or frame edge"* in Constraints rather than
+> mutating the lock.
+>
+> **What landed in round 1 and did not change:** eyes on the screen, hand on the mouse, the
+> counter and monitor as foreground occluders.
+>
+> **✅ Round 2 accepted 2026-08-17.**
+
+### 2j.5v Rung 1, the block — clip
+
+**Cast:** none. **Attach:** the accepted §2j.5 still. **Engine:** Gemini Omni Flash ·
+**Ingredients to Video** · 8s · native audio · **Enhance Prompt off**.
+
+> **⚠️ This is the first clip in the story with no Flow Character to bind the face.** Every
+> accepted clip so far has been Ingredients + still + `@Character`, the still holding the
+> staging and the Character holding the identity. **Here the still does both** — the
+> [dual-role reference](../../google-flow/omni-flash.md#3--a-location-reference-must-not-contain-subjects)
+> case. So identity is the risk, and **if she comes back as a different woman, retry the
+> identical text in the Frames tab**: Frames is the mode that pins the opening frame, and
+> there is no Character binding here for it to lose.
+
+**The camera stays locked**, and that is a rhythm decision as much as a safety one: the
+god's-eye camera travels, **the camera at the counter just stands there being ignored.**
+
+**The performance is one gesture — a small shake of the head while she is still talking.**
+That is the block made physical. She is not refusing Karen; she is saying no to something
+she stopped hearing three sentences ago.
+
+```prompt
+Using the attached image as the locked opening frame, animate what happens next in one continuous shot. Keep the lobby, the counter, the light and her hair, glasses, headset and clothes exactly as they are in the frame.
+
+She stays exactly where she is, talking. She is mid-sentence and she has said this before. Her mouth moves with the words without exaggeration and her eyes stay on the monitor to one side. Once, while she is still talking, she gives one small shake of the head, barely a movement. Her hand on the mouse shifts it an inch and settles. Between phrases her mouth closes flat and her cheeks stay still.
+
+Behind her and out of focus, one person walks through the turnstiles and out of the frame.
+
+The camera is locked and still throughout, at the far side of the counter. Available light only, real-time pace. Shot at 24fps with a 180-degree shutter. Fine film grain.
+
+Audio is the lobby only: her voice low, flat and indistinct, the click and rattle of a keyboard, a double beep from the turnstile, and the room tone of a hard-floored lobby.
+```
+
+**⚠️ The grain is back in this block**, unlike [§2j.1v](#2j1v-the-descent-rung-1--clip--the-master). This is Karen's world, so the super-8 register applies; the aerials are the photoreal ones. **Check the register per shot** — it is now a real fork in the checklist rather than a constant.
+
+**What to watch:**
+
+1. **Is it still her?** Drift lands entirely on the still. A different woman → re-run in Frames,
+   identical text.
+2. **Does the smile come back?** Round 1's failure gets a second chance at the animation
+   stage. The mouth closing flat between phrases is the counter.
+3. **The background walker.** The best life cue available, but background people are
+   documented for appearing and vanishing. If they morph, **cut the line** — the keyboard and
+   the turnstile beep carry the room alone.
+4. **The mouse hand.** An inch is deliberately small. If fingers smear, drop the hand clause
+   and let the head shake be the only motion.
+
 ---
 
 ## The plates this section still owes
@@ -422,7 +500,8 @@ Sketched so the order is visible; each gets written one at a time, on request.
 | **2j.1** | Aerial over Midtown, rung 1 | ✅ **fired and accepted 2026-08-17** — the master |
 | **2j.1v** | The descent, rung 1 — clip | ✅ written — the clip master; it never arrives |
 | 2j.2–2j.4 | The same aerial in rain, snow, low winter sun | one line swapped each |
-| **2j.5** | Rung 1 interior — the front desk | ✅ written — **the interior template**; the camera stands where Karen cannot |
+| **2j.5** | Rung 1 interior — the front desk | ✅ **fired and accepted 2026-08-17, round 2** — **the interior template**; the camera stands where Karen cannot |
+| **2j.5v** | Rung 1, the block — clip | ✅ written — one head shake, locked camera, **no Character to hold the face** |
 | 2j.6 | Karen in the box, intercut | §2h kiosk still attached; **no crowd** |
 | 2j.7 | Rung 2 interior — the borough office | the ladder's second face; **the dull-building joke lands here** |
 | 2j.8 | Rung 3 interior — the councilman's assistant | |
