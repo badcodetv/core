@@ -505,6 +505,64 @@ Audio is the lobby only: her voice low, flat and indistinct, the click and rattl
 4. **The mouse hand.** An inch is deliberately small. If fingers smear, drop the hand clause
    and let the head shake be the only motion.
 
+### 2j.6 Karen in the box, rung 1 — plate · **the Karen master**
+
+**Cast:** `@Karen`. **Time:** flat overcast mid-morning, same day as Act 1. **Attach:** the
+accepted §2h.3 kiosk source — the box is a fixed point and must be the same object.
+**Engine:** Nano Banana Pro, 16:9, 3 candidates.
+
+> ### The frame never changes; everything inside it does.
+>
+> **This is the shot that carries the nine months.** Same lens, same distance, same angle
+> through the same pane of glass, every rung. What changes is **the weather on the glass,
+> the light, and her.** It is the ground-level twin of the aerial's weather trick, and it
+> passes time without a caption.
+
+**Three devices that pay off across the act, all cheap:**
+
+1. **Coins on the shelf.** She is paying for these calls. A small neat stack at rung 1;
+   scraped-together shrapnel by rung 4. Nobody consciously notices; everybody feels it.
+2. **A folded scrap of paper with a name on it.** The ladder made physical — two lines now,
+   a long list by the Chief of Staff. Illegible, so it is a shape rather than text.
+3. **Her escalation runs opposite to theirs.** They climb in status; **she climbs in
+   resolve.** Rung 1 she is still being *reasonable*, faintly embarrassed to be making a
+   fuss. That is the floor the act builds off, so it is deliberately underplayed here.
+
+**Continuity:** same day as Act 1, so she is in the clothes she was fired in. No coat.
+
+```prompt
+REFERENCE:
+
+Use the attached image as the design reference for the phone kiosk only — its shape, proportions, height, panelling, glazing, colour and construction. Take the kiosk itself from that image and nothing else: not its camera angle, not its lighting, not its weather, not its surroundings, and not any people in it. Rebuild that same kiosk into the new scene described below, seen from the new angle described below. The finished frame carries the film look described in the style lock above, not the look of the attached photograph.
+
+SCENE:
+
+Subject: a woman standing inside that street phone kiosk with the receiver to her ear, mid-explanation, seen through the glass from outside.
+
+Composition: 16:9, close, from just outside the kiosk at eye level; she stands right of centre behind the glass with the reflected street laid across her; the aluminium kiosk frame crosses the left of the frame in hard foreground; the frame is slightly off level.
+
+Action: she is mid-sentence and explaining herself, her free hand flat on the little shelf, her weight on one leg. Her inner eyebrows are raised slightly, her chin is level and her mouth is moving on the words. On the shelf beside her hand: a small neat stack of coins and a folded scrap of paper with two lines written on it.
+
+Location: the interior of a scuffed street kiosk — a worn steel shelf, a coiled metal handset cord, chipped paint, old adhesive marks on the panel where cards were peeled off; beyond the glass an ordinary Midtown side street with scaffolding, a mesh bin and steam off a vent, and nobody paying her any attention.
+
+Light: flat overcast mid-morning daylight from a white sky, the interior of the kiosk a stop darker than the street; a bright reflection of the white sky across the upper panes and clear glass over her face.
+
+Style: a still from a 35mm independent film — an ordinary woman doing an ordinary, hopeless piece of admin. Available light only, unretouched, natural skin texture.
+
+Constraints: cream blouse untucked, camel cardigan slipped off one shoulder, tailored trousers, no coat, structured leather handbag; the pavement behind her is ordinary and indifferent with nobody watching her; keep the writing on the paper, every notice, card slot, sticker and reflected sign free of readable lettering; no border or frame edge around the image.
+```
+
+**What to watch:**
+
+1. **Does she look reasonable rather than angry?** Rung 1 is the floor of her arc. Already
+   indignant here and the other three rungs have nowhere to go.
+2. **Is anyone watching her?** The act's one rule is that she is alone in it. A passer-by
+   glancing over kills the jeopardy — *something incredible is unfolding and nobody knows.*
+3. **Is it the same kiosk?** Judge as production design against the Act 1 frames. This object
+   gets cast in bronze in Act 5.
+4. **The coins and the paper.** Small, and the model may drop them the way it dropped the
+   lobby props. Worth a re-roll: they are the only things in the act that visibly accumulate.
+
 ---
 
 ## The plates this section still owes
@@ -518,7 +576,7 @@ Sketched so the order is visible; each gets written one at a time, on request.
 | 2j.2–2j.4 | The same aerial in rain, snow, low winter sun | one line swapped each |
 | **2j.5** | Rung 1 interior — the front desk | ✅ **fired and accepted 2026-08-17, round 2** — **the interior template**; the camera stands where Karen cannot |
 | **2j.5v** | Rung 1, the block — clip | ✅ written — one head shake, locked camera, **no Character to hold the face** |
-| 2j.6 | Karen in the box, intercut | §2h kiosk still attached; **no crowd** |
+| **2j.6** | Karen in the box, intercut | ✅ written — **the Karen master**; the frame never changes, everything in it does. Coins and the name-list scrap accumulate across the act |
 | 2j.7 | Rung 2 interior — the borough office | the ladder's second face; **the dull-building joke lands here** |
 | 2j.8 | Rung 3 interior — the councilman's assistant | |
 | 2j.9 | Rung 4 interior — the Chief of Staff | the top of the on-screen ladder |
