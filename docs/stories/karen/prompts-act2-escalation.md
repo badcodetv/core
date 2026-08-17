@@ -144,6 +144,30 @@ framing. It also brings three things the `REFERENCE` block refuses by name:
 **Grab a second screenshot while you are in there** — the same tower lower and closer. That
 is the zoom target for the clip and the exterior the rung-1 interior has to sit inside.
 
+##### ⚠️ Round 1 of the screenshot, 2026-08-17 — too high, and the river got in
+
+Kai's first pass came back from several thousand metres out, looking east over Midtown East
+with **the East River, Roosevelt Island, the Queensboro Bridge and the UN grounds** all in
+frame. Tilt and no-sky were right; distance and heading were not.
+
+**The diagnostic is one question: can you pick out individual water towers?** If not, the
+reference is giving the model anonymous grey blocks — which is what it would have invented
+unaided, so the screenshot is buying nothing. **Rooftop clutter is the whole reason we are
+shooting the roofs instead of the skyline.**
+
+The correction was **closer and steeper**: `650d` and `30t`, heading `300h` to put the river
+behind the camera. Steeper does the landmark exclusion by itself — at 30° the far edge of
+frame is a few blocks away, so there is no distance for a famous crown to appear in.
+
+**The pre-shoot checklist, in order:** individual water towers legible · no water, bridge or
+park in frame · no distinctive crowns on the far edge (Citigroup Center is the one to watch
+north of 53rd) · one plain slab off-centre with room around it · roughly 16:9, Earth UI
+cropped off.
+
+*(The too-wide frame is worth keeping. That altitude is roughly where the end of each
+rung's zoom-out lands, and the weather changes read best that far back — it is just not the
+master.)*
+
 *(The screenshot is an internal composition reference. The deliverable is a rebuild, not the
 photograph.)*
 
