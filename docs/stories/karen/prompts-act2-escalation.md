@@ -1450,9 +1450,26 @@ the composition, and the one thing that must not happen is her turning round. **
 wants a short prompt**, so this block is deliberately half the length of the Ingredients ones.
 Ingredients with the still is the fallback.
 
-**Ambient motion is dust in the low sun** — formless, and physically what that room does with
-the sun coming straight in. **And it carries a bare-surfaces line**, which every clip gets from
-here after the subway-sign incident.
+**No ambient motion at all**, after round 1. **And it carries a bare-surfaces line**, which
+every clip gets from here after the subway-sign incident.
+
+> ### Round 1 fired 2026-08-17 — *"the dust is so over the top."*
+>
+> **⚠️ Atmospheric particles are a volume control we do not have.** Name dust and the model
+> makes it **a feature of the shot** rather than a texture in it. Note the asymmetry against
+> the [snow lesson](#2j6s-karen-in-the-box-snow-rung-3--plate): **weather nouns underdeliver
+> and need magnitude pushed at them; particle nouns overdeliver and need removing.**
+>
+> **Placement matters too.** Dust in the bar of light across Susan's bed
+> ([§2h.5bv](./prompts-morning-after.md#2h5bv-susan-explains-overhead--clip)) worked because
+> the source was small and the room was tight. **In a 24mm room with the sun coming straight
+> in, the beam is the whole frame — so the dust has the whole frame to fill.**
+>
+> **Nothing replaces it.** She sips, she speaks, she shifts her weight; §2j.6rv already proved
+> a near-static clip reads fine when the stillness is the point. *"The air in the room is
+> clear"* does a negative's job without being one — a state to render rather than a
+> prohibition to invert. **If the room feels dead**, the bounded fallback is *"one or two
+> specks of dust cross the light, barely visible."*
 
 **The audio is the best thing in the shot: Karen, small and tinny, out of a speakerphone in an
 empty room.** She has been climbing for nine months to become a noise on a desk nobody is
@@ -1463,7 +1480,7 @@ Use the attached image as the starting frame.
 
 The camera does not move. She stays exactly where she is at the window with her back to the room, and she does not turn round. She lifts the mug, drinks, and lowers it again. She says something short. She shifts her weight from one foot to the other and settles.
 
-Dust drifts through the low sunlight coming across the room. Every surface that could carry writing stays bare: the papers on the desk are blank, the speakerphone shows only a small steady light, and the framed pictures on the wall stay too small to make out.
+The air in the room is clear and the light across the carpet stays exactly as it is. Every surface that could carry writing stays bare: the papers on the desk are blank, the speakerphone shows only a small steady light, and the framed pictures on the wall stay too small to make out.
 
 Real-time pace, 24fps with a 180-degree shutter. Fine film grain.
 
@@ -1476,8 +1493,7 @@ Audio is the room: a woman's voice coming small and tinny out of the speakerphon
    something short"*** — speech is what invites a turn toward the room.
 2. **Is the tinny voice on the speaker?** Given to her mouth instead, the shot inverts and the
    point is lost. Worth a re-roll.
-3. **The dust.** Should be safe; if it swarms rather than drifts, cut it — the sunlight alone
-   still reads.
+3. **Does dust come back anyway?** It should not now that the air is described as clear.
 4. **Frames with a person in shot.** Only tested on an empty landscape so far. **Holding
    confirms the rule at its edge; distortion finds its limit** and Ingredients is the fallback.
 
