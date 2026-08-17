@@ -525,13 +525,56 @@ Real-time pace. Shot at 24fps with a 180-degree shutter.
 Audio is the city from a long way up: a low wash of distant traffic, steady wind, and the hiss of rain arriving.
 ```
 
+> ### Round 2 fired 2026-08-17 — the weather worked; the camera flew
+>
+> **The good news first: the weather change landed.** The last frame came back genuinely
+> greyer, hazier and wetter. That was the part expected to fail.
+>
+> **What broke was the camera, and the cause is the tab, not the wording.** Frame 2 was
+> looking north down the island from a much lower altitude with sky in the top of frame — it
+> did not drift, it *flew*. **Ingredients treats the image as a loose reference and is
+> entitled to re-stage**, which on a landscape with no face to anchor it is exactly what it
+> did.
+>
+> **⚠️ The rule we had been running on was wrong in a specific way.** We used Ingredients
+> everywhere because [Frames lost Susan's face](./prompts-morning-after.md#2h4v-susan-wakes-to-the-phone--clip)
+> in Act 1. **But there is no face in an empty aerial** — the one documented reason to avoid
+> Frames does not apply, and Frames is the mode that actually pins frame one. **The tab
+> choice looks like *"is there a face in it?"*, not a general preference.**
+>
+> **Round 3 also cuts the prompt in half.** In Frames mode the guidance inverts: the image
+> carries the staging, so re-describing it wastes the budget and invites drift. The itemised
+> preservation list was the right medicine for the wrong tab.
+>
+> **And the camera gets a small move**, per Kai: *"relatively still with some movements."*
+> *"Does not move at all"* fights the engine's default and gives it nothing to do; a
+> barely-there **push in** satisfies it in [the one direction that is structurally safe](../../google-flow/omni-flash.md#-pull-back-is-structurally-riskier-than-push-in).
+
+```prompt
+Use the attached image as the starting frame.
+
+The camera holds almost still, creeping very slowly straight in toward the city. It keeps the same downward angle for the whole shot and the frame stays filled with city throughout.
+
+Across the eight seconds the weather closes in. The light drains out until the city is much darker than it began, the roofs and the streets go dark and wet, and by the end it is raining hard.
+
+Traffic creeps along the avenues and one boat draws a slow wake up the river.
+
+Real-time pace, 24fps with a 180-degree shutter.
+
+Audio is the city from a long way up: a low wash of distant traffic, steady wind, and the hiss of rain arriving.
+```
+
 **What to watch:**
 
-1. **Is it the same city?** With nothing entering frame it has no excuse. If geography still
-   drifts, **the weather change alone is too big an ask** and the fallback is the plain cut —
-   pull-out dry, cut, descend wet — which is one edit and always works.
-2. **Does it get dark?** The one thing that must actually happen.
-3. **Does the change snap?** A single frame flipping dry to wet is unusable.
+1. **Does sky appear?** The tell that it tilted up and left. *"Keeps the same downward angle"*
+   and *"the frame stays filled with city"* are the two clauses holding it down.
+2. **Is it the same block of city at the end?** Frames should guarantee frame one; the
+   question is whether it holds by frame two hundred.
+3. **Does it still get dark?** This worked in Ingredients. **If Frames costs the weather
+   change, that is a real trade** — and the answer becomes two clips and a cut.
+
+**If Frames holds the camera, record it**: it would upgrade the tab rule from a preference to
+a test — *is there a face in it?* — which is far more useful than what we have been running on.
 
 **If this works, its last frame is the rain aerial** and §2j.2 becomes unnecessary.
 
