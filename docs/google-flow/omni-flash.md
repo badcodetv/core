@@ -334,6 +334,16 @@ tier above forum hearsay.
 - **Audio is part of the prompt.** Omni generates sound; unprompted it picks its own. Name it
   ("slow smoky jazz", "sizzling broth and soft city rain") and say "no dialogue" if you want none.
 - **One change per edit turn**, and over-detailed edit instructions trigger unintended changes.
+- **⚠️ Undefined surfaces are where hallucinated text appears — define them.** Google's own
+  Omni guidance says the model renders text **correctly when you specify it**, and that *"if
+  there will be naturally occurring text in your video, even in background elements, it can
+  help to define what it should say"* `[vendor]`. **Confirmed the hard way** (Karen §2j.6sv,
+  2026-08-17): a clip block that never mentioned signage came back with **writing crawling
+  onto a subway entrance sign.** Under a no-legible-text house rule the move is to **define
+  the surfaces as bare** — *"a blank weathered plate with the paint worn off"*, *"notices
+  faded to plain paper"* — which gives the model something specific to satisfy instead of a
+  vacuum to fill. ⚠️ **Clip blocks need this as much as plates do**; text is not a
+  still-image-only problem, because the clip re-renders every surface in frame.
 - **Large bold text renders well; small type garbles** — and the prompt guides go further: avoid
   mentioning on-screen text at all unless you need it, since any signage/labels/captions degrade.
 - **Over-specifying camera can backfire.** One creator got a correct multi-shot sequence when he

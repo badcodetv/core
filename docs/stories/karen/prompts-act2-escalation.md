@@ -1310,8 +1310,27 @@ Constraints: the few pedestrians are hunched with hoods up and hurrying and none
 
 ### 2j.6sv Karen in the snow, rung 3 — clip
 
-**Cast:** none needed. **Attach:** the accepted §2j.6s still. **Engine:** Gemini Omni Flash ·
-**Ingredients to Video** · 8s · native audio · **Enhance Prompt off**.
+**Cast:** **`@Karen`** — the Character **and** the still. **Attach:** the accepted §2j.6s
+still. **Engine:** Gemini Omni Flash · **Ingredients to Video** · 8s · native audio ·
+**Enhance Prompt off**.
+
+> ### Round 1 fired 2026-08-17 — her face changed, and writing appeared on the subway sign
+>
+> **The face was my error.** The settled recipe is Ingredients + still **+ the Flow
+> Character** — the Character holds identity, the still only holds staging. I wrote *"Cast:
+> none needed"* on this clip and the two before it; it got away with it twice and caught up
+> here. **Attach `@Karen`.**
+>
+> **The writing has the opposite fix to the obvious one.** Google's Omni guidance is that the
+> model renders text **well when you specify it**, and that background text is best **defined**
+> rather than left alone — random characters are what fills an undefined surface `[vendor]`.
+> Under our no-legible-text rule the move is to **define the surfaces as bare**: a blank
+> weathered plate, notices faded to plain paper, unmarked metal.
+>
+> **⚠️ Structural gap this exposed: every plate carries a no-text constraint and no clip ever
+> has**, because text was treated as a still-image problem. It is not — **the clip re-renders
+> every surface in the frame.** Applies to all future clip blocks.
+> [Recorded in `omni-flash.md`](../../google-flow/omni-flash.md#prompt-craft).
 
 > **The ambient motion is her breath.** The detail worth a re-roll in the plate becomes the
 > thing that moves in the clip. **Falling snow and a fogging breath are both formless**, which
@@ -1328,9 +1347,11 @@ short thing and then simply stays.** The most expressive moment available is **h
 at the weather and going straight back to the call** — nine months in one look.
 
 ```prompt
-Using the attached image as the locked opening frame, animate what happens next in one continuous shot. Keep the phone box, the corner, the snow lying on everything, the light and her coat, hat and hair exactly as they are in the frame.
+Using the attached image as the locked opening frame, and @Karen as the woman in the phone box, animate what happens next in one continuous shot. Keep her face, her coat, her hat and her hair exactly as they are in the frame, and keep the phone box, the corner, the snow lying on everything and the light exactly as they are too.
 
 She stands where she is with the receiver at her ear. She says something short, four or five words, and her mouth closes again. Her breath clouds in the cold air in front of her and drifts. She blinks once, slowly. Her eyes go out to the falling snow beyond the kiosk for a moment and come back to nothing in particular. Her jaw stays set and her chin stays where it is. She does not move her feet.
+
+Every surface in the frame that could carry writing is bare for the whole shot: the sign panel above the subway entrance is a blank weathered plate with the paint worn off it, the notices on the kiosk are faded to plain paper, and the hoardings and the litter bin are unmarked metal and board.
 
 Snow keeps falling steadily past the kiosk in large flakes, some of them close to the lens and out of focus. Nothing else in the frame moves and the street beyond stays as it is.
 
@@ -1341,7 +1362,12 @@ Audio is the storm and the street: the flattened hush of heavy snowfall, wind mo
 
 **What to watch:**
 
-1. **Does her breath fog?** The whole point of the clip. If it does not appear, add *"a visible
+1. **Is it Karen?** With the Character attached it should hold — that combination has never
+   lost a face for us. Drift even so would be a genuine finding.
+2. **Did the writing stay away?** If letters still crawl onto the sign, the next lever is
+   naming a surface that structurally cannot carry text — *"the sign panel is missing and only
+   its empty steel bracket remains."*
+3. **Does her breath fog?** The whole point of the clip. If it does not appear, add *"a visible
    cloud of breath leaves her mouth and hangs before it drifts away"* — **worth spending a
    round on.**
 2. **Does the snow strobe?** Falling snow is easy motion but can return as a shimmering layer
