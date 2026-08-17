@@ -1308,6 +1308,51 @@ Constraints: the few pedestrians are hunched with hoods up and hurrying and none
 5. **Did the paper multiply?** Several soft scraps, not one clean note. **The pile is the nine
    months.**
 
+### 2j.6sv Karen in the snow, rung 3 — clip
+
+**Cast:** none needed. **Attach:** the accepted §2j.6s still. **Engine:** Gemini Omni Flash ·
+**Ingredients to Video** · 8s · native audio · **Enhance Prompt off**.
+
+> **The ambient motion is her breath.** The detail worth a re-roll in the plate becomes the
+> thing that moves in the clip. **Falling snow and a fogging breath are both formless**, which
+> is the only kind of motion that has never failed us.
+
+**⚠️ No vehicles in the picture.** Direct traffic was fine on the dry street (§2j.0v), but
+**heavy falling snow is itself an occluding layer** between lens and car — the same stacked
+problem as rain-streaked glass, and
+[vehicles have failed every time there is a layer in front of them](../../google-flow/omni-flash.md#slop-counters-specific-to-motion-community).
+It costs nothing dramatically: a snowstorm empties a street. The traffic stays in the audio.
+
+**Her beat escalates the pattern.** Rung 1 she talked; rung 2 she waited; **rung 3 she says one
+short thing and then simply stays.** The most expressive moment available is **her glancing out
+at the weather and going straight back to the call** — nine months in one look.
+
+```prompt
+Using the attached image as the locked opening frame, animate what happens next in one continuous shot. Keep the phone box, the corner, the snow lying on everything, the light and her coat, hat and hair exactly as they are in the frame.
+
+She stands where she is with the receiver at her ear. She says something short, four or five words, and her mouth closes again. Her breath clouds in the cold air in front of her and drifts. She blinks once, slowly. Her eyes go out to the falling snow beyond the kiosk for a moment and come back to nothing in particular. Her jaw stays set and her chin stays where it is. She does not move her feet.
+
+Snow keeps falling steadily past the kiosk in large flakes, some of them close to the lens and out of focus. Nothing else in the frame moves and the street beyond stays as it is.
+
+The camera is locked and still throughout, across the pavement. Available light only, real-time pace. Shot at 24fps with a 180-degree shutter. Fine film grain.
+
+Audio is the storm and the street: the flattened hush of heavy snowfall, wind moving past the kiosk, the scrape of a snowplough somewhere out of sight, and her voice low, short and indistinct.
+```
+
+**What to watch:**
+
+1. **Does her breath fog?** The whole point of the clip. If it does not appear, add *"a visible
+   cloud of breath leaves her mouth and hangs before it drifts away"* — **worth spending a
+   round on.**
+2. **Does the snow strobe?** Falling snow is easy motion but can return as a shimmering layer
+   rather than discrete flakes. If it crawls or flickers, **drop the near out-of-focus flakes
+   first** — they are the hardest part.
+3. **Does she leave?** No stepping out, turning away or hanging up. **She stays. That is the
+   character.**
+4. **Did it invent traffic?** *"The street beyond stays as it is"* should hold it. A car that
+   materialises and swims is the layer problem again, and prose will not fix it — crop or
+   accept.
+
 ---
 
 ## The plates this section still owes
@@ -1328,7 +1373,8 @@ Sketched so the order is visible; each gets written one at a time, on request.
 | **2j.6** | Karen in the box, rung 1 | ⛔ superseded by **§2j.0**, which was fired and accepted |
 | **2j.6r** | Karen in the box, rain (rung 2) | ✅ written — **an edit of §2j.0**; wet hair, scattered coins, a longer list |
 | **2j.6rv** | Karen holds, rain (rung 2) — clip | ✅ written — eight seconds of nothing happening; hold music in the audio |
-| **2j.6s** | Karen in the box, snow (rung 3) | ✅ written — **her breath fogs**; coins down to shrapnel, the list on several scraps |
+| **2j.6s** | Karen in the box, snow (rung 3) | ✅ written, round 2 — **a full storm**; her breath fogs, coins down to shrapnel |
+| **2j.6sv** | Karen in the snow, rung 3 — clip | ✅ written — the breath is the motion; she says one short thing and stays |
 | **2j.7** | Rung 2 interior — the borough office | ✅ **accepted 2026-08-17, round 2** — **calmer and no more use**; carries the newspaper easter egg |
 | **2j.7v** | Rung 2, the patient block — clip | ✅ written — one chair swivel; the unanswered phone is in the audio |
 | **2j.8** | Rung 3 interior — the councilman's assistant | ✅ written, round 2 — **the sticky note**, the empty chair, and the first low angle |
