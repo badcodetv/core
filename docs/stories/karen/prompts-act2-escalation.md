@@ -59,11 +59,11 @@ it is also the joke.
 
 **Paste the §1 `STYLE LOCK` verbatim above each block**, then the block, then *"Thanks."*
 
-### 2j.1 Aerial over Midtown, rung 1 — plate · **the master**
+### 2j.1 Aerial over Midtown, rung 1 — plate · **the master** · **reference-anchored**
 
 **Cast:** none. **Time:** flat overcast mid-morning — the same day and the same weather Act
-1 ends in, so it cuts straight out of §2h.7. **Attached:** nothing. **Engine:** Nano Banana
-Pro, 16:9, 3 candidates.
+1 ends in, so it cuts straight out of §2h.7. **Attached:** a cropped **Google Earth**
+screenshot, one image (recipe below). **Engine:** Nano Banana Pro, 16:9, 3 candidates.
 
 **Fire this one first and accept it properly.** Three later aerials are re-runs of it.
 
@@ -89,14 +89,80 @@ Pro, 16:9, 3 candidates.
 **One production note:** the tower sits **off-centre with air around it**, because the video
 pass has to push down into it. A centred building leaves the move nowhere to go.
 
+#### The Google Earth recipe — Kai's call, 2026-08-17
+
+**Anchor the aerial on real geography instead of an invented one.** This is the strongest
+anti-slop move available for a city shot: the model stops *composing* a city and starts
+rebuilding one, and the framing decision moves out of the prompt and into a viewport where
+you can actually see it.
+
+**Where.** Third Avenue between E 46th and E 50th, Midtown East — canon-correct (the song
+puts the box at Lexington & Third) and four blocks of plain 1970s–80s office slabs, water
+towers and tarred roofs.
+
+> **⚠️ Do not drift south or west.** The Chrysler Building, Grand Central, One Vanderbilt,
+> the Waldorf's twin towers, Citigroup Center's angled crown and the Seagram Building are
+> all within a few blocks. **One of them in frame and the shot is a postcard again.**
+
+**The camera, set numerically** — paste into the address bar rather than flying it by hand:
+
+```
+https://earth.google.com/web/@40.75390,-73.97150,20a,900d,35y,340h,40t,0r
+```
+
+| Token | Means | Nudge if… |
+| --- | --- | --- |
+| `900d` | camera distance, metres | roofs unreadable → `600d`; more haze depth → `1400d` |
+| `40t` | tilt; `0t` straight down, `90t` horizon | **sky at the top of frame → lower it.** 45 is the ceiling |
+| `340h` | heading | spin until the avenue cuts corner to corner; ~320h–20h all work |
+| `35y` | field of view | leave it — 35° approximates the long lens the block asks for |
+
+Coordinates are approximate. Check the street labels on screen and slide a block until you
+find a tower you like.
+
+**Compose the screenshot; do not just take one.** The prompt now says *keep this viewpoint*,
+so the framing rules move into Earth: target tower **off-centre with air around it**, avenue
+diagonal, **no sky and no horizon**, a nearer rooftop clipping a bottom corner, browser
+window roughly 16:9.
+
+**Then crop off every bit of Google UI, especially the bottom attribution strip.** Legible
+text in a reference comes through into the generation, and
+[Flow scans the uploaded image as well as the prompt](../../flow/failure-modes.md#a2-every-field-flow-reads-is-scanned-not-just-the-prompt-box).
+Downscale to ~1600px on the long edge; one image, not several.
+
+**What the reference must not bring.** Earth gives real geometry, real massing, real
+framing. It also brings three things the `REFERENCE` block refuses by name:
+
+1. **Its light.** The 3D tiles have shadows **baked in** from capture, often hard midday
+   sun. We want flat overcast. This is the most likely way the plate comes back wrong.
+2. **Its texture.** Satellite-derived mesh is smeared and plasticky — the exact look we are
+   already fighting.
+3. **Its melted buildings.** Earth's 3D droops at every edge. The block tells the model to
+   treat that as source artefact and rebuild the architecture properly, which is the one
+   instruction here that has no precedent in our other reference-anchored plates.
+
+**Grab a second screenshot while you are in there** — the same tower lower and closer. That
+is the zoom target for the clip and the exterior the rung-1 interior has to sit inside.
+
+*(The screenshot is an internal composition reference. The deliverable is a rebuild, not the
+photograph.)*
+
 ```prompt
+REFERENCE:
+
+Use the attached image as the layout reference only — the street grid, the block sizes, the positions, footprints and relative heights of the buildings, the shapes of the rooftops, and the viewpoint and framing. Keep that geography and that framing. Take nothing else from it: not its colour, not its lighting, not its shadows, not its weather, not its time of day, and not its surface texture.
+
+The attached image is a satellite-derived three-dimensional view, so its buildings are soft and slightly melted at the edges and its streets are smeared. Treat all of that as an artefact of the source: rebuild the same buildings as real architecture with clean edges, straight parapets, proper window reveals and sharp rooflines, and rebuild the streets as real streets.
+
+Rebuild that block of city as a photograph made from a helicopter, in the light described below. The finished frame carries the film look described in the style lock above, not the look of the attached image.
+
 SCENE:
 
 Subject: one plain, unremarkable 1980s office tower standing mid-block in Midtown Manhattan, seen from high above and a little to one side.
 
-Composition: 16:9, a steep high angle looking down across the rooftops, the tower well left of centre with open blocks around it and an avenue running diagonally through the frame; the near edge of another rooftop clips the bottom right corner, close and out of focus; the frame is filled with city and holds no sky, the further blocks receding into haze at the top of frame; the frame is very slightly tilted.
+Composition: 16:9, the viewpoint and framing of the attached image kept as they are — a steep high angle looking down across the rooftops, the tower off centre with open blocks around it and an avenue running diagonally through the frame, the near edge of another rooftop clipping a bottom corner close and out of focus, the frame filled with city and holding no sky, the further blocks receding into haze at the top of frame; the frame is very slightly tilted.
 
-Action: an ordinary weekday instant — traffic held at a red light along the avenue while the cross street moves, steam lifting from a rooftop stack, a tower crane standing over a construction site two blocks away with its jib slewed off to one angle.
+Action: an ordinary weekday instant — traffic held at a red light along the avenue while the cross street moves, steam lifting from a rooftop stack, a tower crane standing over a construction site with its jib slewed off to one angle.
 
 Location: the roofs of Midtown — timber-framed water towers, boxed HVAC plant, tarred roofs patched and seamed, roof access huts, satellite dishes and antennae, a roof with faded painted markings, pavement scaffolding along one street, a construction site under orange netting, yellow cabs and double-parked delivery trucks in the canyon below.
 
@@ -119,6 +185,11 @@ Constraints: ordinary commercial architecture with no landmark skyscrapers and n
    edge is a re-roll, not a crop.
 4. **The traffic.** Vehicles are where aerial renders fall apart — floating, mis-scaled,
    facing the wrong way down a one-way avenue. Check at 100%.
+5. **Did it import the sun?** Hard shadows raking the roofs means the light refusal did not
+   land. Sharpen that clause; do not rewrite the prompt — same lesson as §2h.3.
+6. **Did it copy the mesh instead of rebuilding it?** Soft, drooping, subtly wrong buildings
+   mean it treated the screenshot as the shot. That is the relationship instruction failing,
+   and the fix is strengthening it rather than adding detail elsewhere.
 
 **On acceptance**, the three weather variants are this block with **only the Light line
 changed** (rain → snow → low winter sun), plus whatever the wet or snow-covered roofs
