@@ -1060,23 +1060,36 @@ Using the attached image as the locked opening frame, animate what happens next 
 
 She is on hold and she is not speaking. She stands where she is with the receiver at her ear, waiting. Her eyes move down to the paper on the shelf, rest there a moment, then come back up to nothing in particular. She blinks once, slowly. She shifts her weight from one foot to the other and settles. Her face stays level and still throughout and her mouth stays closed.
 
-Rain runs down the glass of the box in beads and streaks. Behind it the street keeps moving, blurred and out of focus: traffic passing and people going by under umbrellas without looking at her.
+Rain runs down the glass of the box in beads and streaks, and that is the only movement behind her. The street beyond the wet glass stays exactly as it is in the frame for the whole shot, blurred and still.
 
 The camera is locked and still throughout, across the pavement. Available light only, real-time pace. Shot at 24fps with a 180-degree shutter. Fine film grain.
 
-Audio is the rain and the street: rain drumming on the roof of the box and running on the glass, tyres hissing on wet asphalt, and a thin tinny loop of hold music leaking out of the receiver.
+Audio is the rain and the street: rain drumming on the roof of the box and running on the glass, tyres hissing past on wet asphalt, and a thin tinny loop of hold music leaking out of the receiver.
 ```
+
+> ### Round 1 fired 2026-08-17 — the traffic vanished and drove through itself
+>
+> **Third vehicle failure, and it sharpens the rule.** Traffic seen **directly** has been fine
+> — the §2j.1 aerial, §2j.0v's dry street. Traffic seen **through or reflected in glass** has
+> failed every time: *"very strange"* in the Act 1 kiosk reflection, and now cars
+> interpenetrating and popping out of existence behind rain-streaked glass. **The model has to
+> solve the motion and the distorting layer at once, and it cannot.**
+> [Recorded in `omni-flash.md`](../../google-flow/omni-flash.md#slop-counters-specific-to-motion-community).
+>
+> **So the traffic goes to the audio** — tyres hissing on wet asphalt says the street is busy
+> with nothing rendered — **and the rain becomes the only motion behind her**, which is the
+> right answer anyway: formless, in front of the lens rather than behind a layer, and through
+> that much water the street is already an abstract wash where nobody reads individual cars.
 
 **What to watch:**
 
-1. **Does she talk?** She must not. If her mouth moves, **cut the eye-movement beat** — giving
+1. **Does the held-still street read as a freeze-frame?** It should not behind that much water.
+   If it does, the fix is **one formless motion, not traffic**: add *"steam lifts from a vent
+   grate beyond the glass."* Steam has never failed for us; vehicles now have three times.
+2. **Does she talk?** She must not. If her mouth moves, **cut the eye-movement beat** — giving
    her something to look at is what suggests activity, and this has to read as pure waiting.
-2. **The hold music.** Audio is the flakiest channel; treat what comes back as a placeholder.
+3. **The hold music.** Audio is the flakiest channel; treat what comes back as a placeholder.
    Garbled speech instead of music is an audio re-roll, not a rewrite.
-3. **The rain on the glass.** Formless and should be safe, but it is water on a surface. If
-   the streaks crawl upward, cut the clause and let the drumming on the roof carry it.
-4. **The umbrellas.** A busier shape than plain pedestrians, written as flow rather than
-   individuals. If they morph, drop to *"traffic passing"* alone.
 
 ---
 

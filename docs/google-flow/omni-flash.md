@@ -763,6 +763,13 @@ Additions to the table in the previous section:
   shadows. The failure is usually in a handful of frames, not the whole clip.
 - **Less motion is safer motion.** Over-animation is the tell; explicit "motion
   bucket"-style restraint is the counter.
+- **⚠️ Vehicles fail *through* a surface, not in the open.** Three sightings, and the
+  pattern is sharper than "vehicles are risky": traffic seen **directly** has been fine
+  (Karen §2j.1 aerial, §2j.0v dry street), while traffic seen **through or reflected in
+  glass** has failed every time — *"very strange"* in a kiosk reflection (§2h.6v), and
+  cars **interpenetrating and vanishing** behind rain-streaked glass (§2j.6rv), both
+  2026-08-17. **The model has to solve the motion and the distorting layer at once**, and
+  it cannot. Put the vehicles in the open or put them in the audio.
 - **⚠️ When a moving element fails, demote it to sound.** BadCode's own rule, and the
   first thing here with **two independent sightings**: reflected traffic that came back
   "very strange" (Karen §2h.6v) and a background walker who vanished mid-stride (Karen
