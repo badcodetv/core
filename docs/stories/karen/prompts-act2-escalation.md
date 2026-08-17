@@ -59,6 +59,63 @@ it is also the joke.
 
 **Paste the §1 `STYLE LOCK` verbatim above each block**, then the block, then *"Thanks."*
 
+### 2j.0 The corner — location plate · **no people in it**
+
+**Cast:** none, deliberately. **Time:** flat overcast mid-morning. **Attach:** the accepted
+§2h.3 kiosk source. **Engine:** Nano Banana Pro, 16:9, 3 candidates.
+
+Kai's call, 2026-08-17: the box needs a subway entrance behind it, per
+[`story.md`](./story.md#act-2--the-great-escalation-the-core-of-the-film)'s *"Midtown
+Manhattan, outside a subway entrance."* **No real corner has both**
+([the four surviving NYC booths are on West End Avenue, a block from any line](#the-google-earth-recipe--kais-call-2026-08-17)),
+so the adjacency is invented — ruled fine by Kai the same day.
+
+> ### Why this one has nobody in it
+>
+> **A reference containing a person is read as a *subject* reference** — the model keeps the
+> person and re-stages the location, which is
+> [how the §2g clips failed four times](./prompts-river-drop.md#2g11-the-location-plate--no-people-in-it).
+> So the most useful version of this corner is the empty one: it becomes **the location
+> reference attached to every Act 2 generation** — every rung, every season, and eventually
+> the Act 5 statue — with Karen placed into it by §2h.3 and §2j.6.
+>
+> An empty Midtown pavement is slightly unreal, and that is fine. **This is a reference, not
+> a frame.**
+
+```prompt
+REFERENCE:
+
+Use the attached image as the design reference for the phone kiosk only — its shape, proportions, height, panelling, glazing, colour and construction. Take the kiosk itself from that image and nothing else: not its camera angle, not its lighting, not its weather, not its surroundings, and not any people in it. Rebuild that same kiosk into the new scene described below, seen from the new angle described below. The finished frame carries the film look described in the style lock above, not the look of the attached photograph.
+
+SCENE:
+
+Subject: that street phone kiosk standing empty on a Midtown Manhattan pavement, with the entrance to a subway station immediately behind it.
+
+Composition: 16:9, from across the pavement at standing eye level, the kiosk whole in the frame and left of centre; the subway entrance sits behind it and to the right, its stairs dropping out of sight below pavement level; a scaffolding leg crosses the near right foreground out of focus; the block rises out of the top of the frame; the frame is slightly off level.
+
+Action: nothing is happening — an empty corner between one thing and the next, with steam lifting off a vent grate and a plastic bag caught in the base of the scaffolding.
+
+Location: an ordinary Midtown side street — the subway entrance is a flight of steps going down between steel handrails with a low steel balustrade around the opening, a green glass globe on the newel post, a blank sign panel on a mast above it, rust streaks bleeding down the handrails, a taped-up notice weathered blank, chewed gum trodden into the paving and a shallow puddle at the edge of the pavement grating; behind that, pavement scaffolding with plywood hoarding, a mesh litter bin, a fire hydrant and stacked delivery crates against a shutter.
+
+Light: flat overcast mid-morning daylight from a white sky, no direct sun and no long shadows; the inside of the kiosk a stop darker than the street; the wet paving holding a dull sheen rather than a bright reflection.
+
+Style: a still from a 35mm independent film — a location plate of an unremarkable corner, shot to be looked at rather than admired. Available light only, unretouched.
+
+Constraints: the pavement and the street are completely empty of people and the kiosk is unoccupied; keep every sign panel, notice, hoarding, sticker, shopfront and vehicle marking free of readable lettering; no border or frame edge around the image.
+```
+
+**What to watch:**
+
+1. **Is the kiosk still the same object?** Third generation of it; every rebuild is a chance
+   for drift. Compare side by side against Act 1, not from memory.
+2. **Did it put people in?** The thing the model resists hardest here, and the one failure
+   worth re-rolling for — **a location reference with a person in it is worse than none.**
+3. **Does the entrance read as a subway rather than a basement?** The green globe and the
+   balustrade carry it. If it reads as a cellar hatch, strengthen those rather than adding
+   signage — signage is where the no-text rule and realism start fighting.
+4. **Is it boring enough?** This corner appears dozens of times. Anything picturesque will
+   grate by the fourth rung.
+
 ### 2j.1 Aerial over Midtown, rung 1 — plate · **the master** · **reference-anchored**
 
 **Cast:** none. **Time:** flat overcast mid-morning — the same day and the same weather Act
@@ -571,6 +628,7 @@ Sketched so the order is visible; each gets written one at a time, on request.
 
 | § | Plate | Notes |
 | --- | --- | --- |
+| **2j.0** | The corner — location plate | ✅ written — **empty on purpose**; the location reference for the whole act |
 | **2j.1** | Aerial over Midtown, rung 1 | ✅ **fired and accepted 2026-08-17** — the master |
 | **2j.1v** | The descent, rung 1 — clip | ✅ written — the clip master; it never arrives |
 | 2j.2–2j.4 | The same aerial in rain, snow, low winter sun | one line swapped each |
