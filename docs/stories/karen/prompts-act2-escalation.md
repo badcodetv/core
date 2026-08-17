@@ -59,10 +59,10 @@ it is also the joke.
 
 **Paste the §1 `STYLE LOCK` verbatim above each block**, then the block, then *"Thanks."*
 
-### 2j.0 The corner — location plate · **no people in it**
+### 2j.0 The corner, with Karen in it — plate
 
-**Cast:** none, deliberately. **Time:** flat overcast mid-morning. **Attach:** the accepted
-§2h.3 kiosk source. **Engine:** Nano Banana Pro, 16:9, 3 candidates.
+**Cast:** `@Karen`. **Time:** flat overcast mid-morning. **Attached:** nothing. **Engine:**
+Nano Banana Pro, 16:9, 3 candidates.
 
 Kai's call, 2026-08-17: the box needs a subway entrance behind it, per
 [`story.md`](./story.md#act-2--the-great-escalation-the-core-of-the-film)'s *"Midtown
@@ -70,51 +70,50 @@ Manhattan, outside a subway entrance."* **No real corner has both**
 ([the four surviving NYC booths are on West End Avenue, a block from any line](#the-google-earth-recipe--kais-call-2026-08-17)),
 so the adjacency is invented — ruled fine by Kai the same day.
 
-> ### Why this one has nobody in it
+> ### ⚠️ Ruled by Kai: no reference image, and Karen is in it.
 >
-> **A reference containing a person is read as a *subject* reference** — the model keeps the
-> person and re-stages the location, which is
-> [how the §2g clips failed four times](./prompts-river-drop.md#2g11-the-location-plate--no-people-in-it).
-> So the most useful version of this corner is the empty one: it becomes **the location
-> reference attached to every Act 2 generation** — every rung, every season, and eventually
-> the Act 5 statue — with Karen placed into it by §2h.3 and §2j.6.
+> A first draft of this plate was **empty and reference-anchored**, on the documented ground
+> that [a reference containing a person is read as a *subject* reference](../../google-flow/omni-flash.md#3--a-location-reference-must-not-contain-subjects).
+> **Kai overruled both:** she is in every Act 2 image anyway, so an empty plate buys nothing.
 >
-> An empty Midtown pavement is slightly unreal, and that is fine. **This is a reference, not
-> a frame.**
+> **The consequence is real and worth stating: the prose is now the continuity anchor for
+> the kiosk.** No reference is holding its design, so the Location sentence below **is** the
+> canon description of the box — check it against the accepted Act 1 frames and swap the
+> nouns until it matches, then paste it forward the way the `STYLE LOCK` is pasted forward.
+>
+> **Two indifferent pedestrians are back**, matching §2h.3. *"No crowd"* does not mean an
+> empty street — it means **nobody is looking at her.** A deserted Midtown pavement reads as
+> post-apocalyptic; people walking past without a glance is the actual point of the act.
 
 ```prompt
-REFERENCE:
-
-Use the attached image as the design reference for the phone kiosk only — its shape, proportions, height, panelling, glazing, colour and construction. Take the kiosk itself from that image and nothing else: not its camera angle, not its lighting, not its weather, not its surroundings, and not any people in it. Rebuild that same kiosk into the new scene described below, seen from the new angle described below. The finished frame carries the film look described in the style lock above, not the look of the attached photograph.
-
 SCENE:
 
-Subject: that street phone kiosk standing empty on a Midtown Manhattan pavement, with the entrance to a subway station immediately behind it.
+Subject: a woman standing inside a street phone kiosk on a Midtown Manhattan pavement with the receiver to her ear, mid-call, with the entrance to a subway station immediately behind her.
 
-Composition: 16:9, from across the pavement at standing eye level, the kiosk whole in the frame and left of centre; the subway entrance sits behind it and to the right, its stairs dropping out of sight below pavement level; a scaffolding leg crosses the near right foreground out of focus; the block rises out of the top of the frame; the frame is slightly off level.
+Composition: 16:9, from across the pavement at standing eye level, the kiosk whole in the frame and left of centre with the street running away to the right; the subway entrance sits behind the kiosk and to the right, its steps dropping out of sight below pavement level; a scaffolding leg crosses the near right foreground out of focus; the block rises out of the top of the frame; the frame is slightly off level.
 
-Action: nothing is happening — an empty corner between one thing and the next, with steam lifting off a vent grate and a plastic bag caught in the base of the scaffolding.
+Action: she is mid-sentence and explaining herself, the receiver held to her ear, her free hand flat on the little shelf, her weight on one leg; her inner eyebrows are raised slightly and her chin is level. On the shelf beside her hand, a small neat stack of coins and a folded scrap of paper with two lines written on it. Two pedestrians pass along the pavement without looking at her.
 
-Location: an ordinary Midtown side street — the subway entrance is a flight of steps going down between steel handrails with a low steel balustrade around the opening, a green glass globe on the newel post, a blank sign panel on a mast above it, rust streaks bleeding down the handrails, a taped-up notice weathered blank, chewed gum trodden into the paving and a shallow puddle at the edge of the pavement grating; behind that, pavement scaffolding with plywood hoarding, a mesh litter bin, a fire hydrant and stacked delivery crates against a shutter.
+Location: an ordinary Midtown side street. The kiosk is a scuffed municipal phone box — a brushed aluminium frame glazed on three sides, a hinged door, chipped paint along the base, a worn steel shelf inside, a coiled metal handset cord and old adhesive marks on the panel where cards were peeled off. The subway entrance behind it is a flight of steps going down between steel handrails with a low steel balustrade around the opening, a green glass globe on the newel post, a blank sign panel on a mast above it, rust streaks bleeding down the handrails and a taped-up notice weathered blank. Behind that, pavement scaffolding with plywood hoarding, a mesh litter bin, a fire hydrant, steam lifting off a vent grate and stacked delivery crates against a shutter.
 
-Light: flat overcast mid-morning daylight from a white sky, no direct sun and no long shadows; the inside of the kiosk a stop darker than the street; the wet paving holding a dull sheen rather than a bright reflection.
+Light: flat overcast mid-morning daylight from a white sky, no direct sun and no long shadows; the inside of the kiosk a stop darker than the street; the paving holding a dull sheen rather than a bright reflection.
 
-Style: a still from a 35mm independent film — a location plate of an unremarkable corner, shot to be looked at rather than admired. Available light only, unretouched.
+Style: a still from a 35mm independent film — an ordinary woman on an ordinary corner, doing a hopeless piece of admin nobody is watching. Available light only, unretouched, natural skin texture.
 
-Constraints: the pavement and the street are completely empty of people and the kiosk is unoccupied; keep every sign panel, notice, hoarding, sticker, shopfront and vehicle marking free of readable lettering; no border or frame edge around the image.
+Constraints: cream blouse untucked, camel cardigan slipped off one shoulder, tailored trousers, no coat, structured leather handbag; nobody in the frame looks at her; keep the writing on the paper, every sign panel, notice, hoarding, sticker, shopfront and vehicle marking free of readable lettering; no border or frame edge around the image.
 ```
 
 **What to watch:**
 
-1. **Is the kiosk still the same object?** Third generation of it; every rebuild is a chance
-   for drift. Compare side by side against Act 1, not from memory.
-2. **Did it put people in?** The thing the model resists hardest here, and the one failure
-   worth re-rolling for — **a location reference with a person in it is worse than none.**
-3. **Does the entrance read as a subway rather than a basement?** The green globe and the
+1. **Is the kiosk the box from Act 1?** Nothing is holding it but the prose, so this is where
+   drift shows. A British red box, an American hood-style payphone or something sleeker than
+   Act 1's all mean the Location sentence needs fixing — **and that sentence is the canon.**
+2. **Does the entrance read as a subway rather than a basement?** The green globe and the
    balustrade carry it. If it reads as a cellar hatch, strengthen those rather than adding
    signage — signage is where the no-text rule and realism start fighting.
-4. **Is it boring enough?** This corner appears dozens of times. Anything picturesque will
-   grate by the fourth rung.
+3. **Do the pedestrians look at her?** One glance and the act's jeopardy is gone.
+4. **The coins and the scrap.** Small props get dropped. They are the only things that
+   visibly accumulate across nine months, so they are worth a re-roll.
 
 ### 2j.1 Aerial over Midtown, rung 1 — plate · **the master** · **reference-anchored**
 
@@ -628,7 +627,7 @@ Sketched so the order is visible; each gets written one at a time, on request.
 
 | § | Plate | Notes |
 | --- | --- | --- |
-| **2j.0** | The corner — location plate | ✅ written — **empty on purpose**; the location reference for the whole act |
+| **2j.0** | The corner, with Karen in it | ✅ written — no reference; **the Location sentence is now the kiosk's canon description** |
 | **2j.1** | Aerial over Midtown, rung 1 | ✅ **fired and accepted 2026-08-17** — the master |
 | **2j.1v** | The descent, rung 1 — clip | ✅ written — the clip master; it never arrives |
 | 2j.2–2j.4 | The same aerial in rain, snow, low winter sun | one line swapped each |
