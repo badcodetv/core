@@ -1181,6 +1181,53 @@ Constraints: his expression stays warm and attentive; keep the sticky notes, the
 5. **Did the snow flatten the light?** Snow light wants to go soft and even everywhere. One
    side of his face in shade, or it is rung 1's failure again.
 
+### 2j.8v Rung 3, the fourth note — clip
+
+**Cast:** none. **Attach:** the accepted §2j.8 still. **Engine:** Gemini Omni Flash ·
+**Ingredients to Video** · 8s · native audio · **Enhance Prompt off**.
+
+> ### The beat is the fourth note joining the row.
+>
+> He finishes writing, peels the note off the pad and presses it onto the monitor bezel beside
+> the other three. **The joke completes on screen** — one note is a man helping, four notes is
+> a system.
+
+**The new framing is what makes that safe to ask for.** A peel-and-stick would normally be
+off-limits — [fine hand articulation is the documented weak spot](../../google-flow/omni-flash.md#motion-difficulty-ranking-community) —
+but he is small and in profile at 28mm, so his hands occupy very few pixels, and *keep hands
+distant or partially occluded* is the standard mitigation. **The wide angle bought the
+gesture.**
+
+**Snow past the window is the only ambient motion**, and it is worth being explicit about why
+this is not the [through-glass failure](../../google-flow/omni-flash.md#slop-counters-specific-to-motion-community)
+we hit twice: those were vehicles behind **rain-streaked glass and a reflection** — layers
+that refract and mirror. **A clean window with a blown-out white field beyond distorts
+nothing.**
+
+```prompt
+Using the attached image as the locked opening frame, animate what happens next in one continuous shot. Keep the office, the desk, the window, the falling snow, the light and his clothes exactly as they are in the frame.
+
+He stays at his desk in profile with the handset trapped at his shoulder, listening. He nods once, small, without stopping writing. Then he lifts the pen away, peels the top note off the pad, reaches up and presses it onto the edge of the monitor beside the three notes already there. He settles back into his chair and goes on listening. His head stays tilted toward the phone and his mouth stays closed with the corners a little turned up.
+
+Beyond the window, snow keeps falling steadily past the building. Nothing else in the room moves.
+
+The camera is locked and still throughout, low in the far corner of the room. Available light only, real-time pace. Shot at 24fps with a 180-degree shutter. Fine film grain.
+
+Audio is the office only: his voice warm, low and indistinct, the hum of the building, a keyboard going somewhere else in the room, and the flattened quiet of a heavy snowfall outside.
+```
+
+**What to watch:**
+
+1. **Does the note make it to the monitor?** That is the shot. If the hand fumbles or the note
+   morphs mid-air, the fallback is *"he lifts the pen away and settles back"* — you lose the
+   punchline and keep a usable clip.
+2. **Do the existing three notes stay put?** Untouched. Notes appearing, vanishing or
+   multiplying breaks the gag in the other direction.
+3. **The snow.** If it smears or crawls, cut the line and let the room tone carry it — but this
+   one should hold.
+4. **Does he stand or turn round?** He does not know the camera is there. Any acknowledgement
+   of the lens kills the observational frame the whole ladder is shot in.
+
 ---
 
 ## The plates this section still owes
@@ -1203,7 +1250,8 @@ Sketched so the order is visible; each gets written one at a time, on request.
 | **2j.6rv** | Karen holds, rain (rung 2) — clip | ✅ written — eight seconds of nothing happening; hold music in the audio |
 | **2j.7** | Rung 2 interior — the borough office | ✅ **accepted 2026-08-17, round 2** — **calmer and no more use**; carries the newspaper easter egg |
 | **2j.7v** | Rung 2, the patient block — clip | ✅ written — one chair swivel; the unanswered phone is in the audio |
-| **2j.8** | Rung 3 interior — the councilman's assistant | ✅ written — **the sticky note**, and the empty visitor's chair |
+| **2j.8** | Rung 3 interior — the councilman's assistant | ✅ written, round 2 — **the sticky note**, the empty chair, and the first low angle |
+| **2j.8v** | Rung 3, the fourth note — clip | ✅ written — the joke completes on screen |
 | 2j.9 | Rung 4 interior — the Chief of Staff | the top of the on-screen ladder |
 | 2j.10 | The newspaper easter egg | AI-taking-jobs headline, **background not foreground**; ideally the Camping prop paper. ⚠️ Legible headline text is the most reliable policy block there is — the line belongs in a `NarrationBox`, not in the image |
 | 2j.11 | She is alone in it | the lone shot of her staring out of the box; the act's emotional exit |
