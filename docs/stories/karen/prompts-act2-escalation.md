@@ -663,9 +663,22 @@ changed, so the grammar is worth getting right once:
    ask for something. Karen is never in the room — she is in a phone box across town — but
    **the camera is always in the room, at the counter, being ignored.** The section's joke,
    rendered as a camera position.
-2. **What escalates is the furniture, not the shot.** Laminate at rung 1; carpet and a
-   nameplate at rung 2; wood panelling and a window with a view by rung 4. Same lens, same
-   distance, same eye level, so the ladder reads without being announced.
+2. **What escalates is the furniture — and, from rung 3, the window and the angle.**
+   ⚠️ **Amended 2026-08-17 (Kai): the first version of this rule was wrong.** Holding the
+   same lens, distance and eye level for four rungs is not discipline, it is **boring**, and
+   a straight-on eye-level view is precisely what these models default to when nobody
+   specifies otherwise `[community]` — which is a large part of why rung 3 round 1 read as
+   slop. Two things now escalate alongside the furniture:
+   - **The window is the status.** No window at all at rung 1 (a lobby); an airshaft and a
+     wet street at rung 2; **a real view of Manhattan at rung 3**; something close to
+     spectacular at rung 4. Nobody has to notice it — it quietly says *these people are
+     further and further from her.*
+   - **The camera drops as the ladder climbs.** Straight-on at standing eye level for rungs
+     1–2; **low and angled up** from rung 3. That is the shot grammar of power, and
+     *"low angle looking up"* is the single highest-impact angle term available `[community]`.
+
+   **What does *not* change is the conceptual grammar:** the camera is always in the room,
+   always unnoticed, always standing where Karen cannot.
 3. **The performance is one thing: they are not looking at the call.** Eyes on the monitor,
    hand on the mouse, mid-sentence in something they say forty times a day. **No rudeness** —
    rudeness makes it a scene about a bad person, and it is not. It is about a system where
@@ -1118,24 +1131,47 @@ his side. Rung 2's rain gave hard blind-stripes; snow gives a clean cold key fro
 ```prompt
 SCENE:
 
-Subject: a man in his early thirties working as an aide in a New York councilman's district office, sitting behind a desk with a phone handset trapped between his ear and his shoulder, writing on a small square sticky note. He is neatly turned out and ordinary looking: a white shirt with the sleeves buttoned at the wrist, a lanyard, short hair combed, a shaving nick under the jaw, chapped lips from the cold, visible pores and a shine on his forehead.
+Subject: a man in his early thirties working as an aide in a New York councilman's office, seen in profile at his desk with a phone handset trapped between his ear and his shoulder, writing on a small square sticky note. He is neatly turned out and ordinary looking: a white shirt with the sleeves buttoned at the wrist, a lanyard, short combed hair, a shaving nick under the jaw, visible pores and a shine along his cheekbone.
 
-Composition: 16:9 on a 50mm lens at f/2.8, from the visitor's side of the desk at standing eye level and off to one side; he sits right of centre; the padded back of an empty visitor's chair stands in the near left foreground, close and thrown out of focus; the frame is tilted a few degrees off level.
+Composition: 16:9 on a 28mm lens at f/4, taken from the far corner of the room behind him and to one side, with the camera low at desk height and angled slightly upward. He is small in the frame and left of centre, in profile at the desk. The whole right half of the frame is a window wall of falling snow over the city. The office ceiling and one long fluorescent tube, switched off, cut across the top of the frame. The padded back of an empty visitor's chair stands in the near foreground at the bottom right, close and thrown out of focus. The frame is tilted a few degrees off level.
 
-Action: he is listening and writing at the same time, his head tilted a few degrees, his eyebrows raised slightly in the middle, his mouth closed with the corners a little turned up. He is writing on the top sheet of a pad of sticky notes. Three older sticky notes are already stuck along the bezel of his monitor.
+Action: he is listening and writing at the same time, his head tilted a few degrees toward the phone, his mouth closed with the corners a little turned up. He is writing on the top sheet of a pad of sticky notes. Three older sticky notes are already stuck along the bezel of his monitor. He has no idea anyone is behind him.
 
-Location: a district office that is tidier and better furnished than the last one — low grey carpet, a wood veneer desk, a laptop open beside a multi-line desk phone, a metal water bottle, a wool overcoat on a hook by the door, a small American flag on a stand, and a wall of framed certificates and handshake photographs hung in a grid, all of them too small and too indistinct to make out. Through the window at his side, snow is falling steadily past the building opposite and lying along the window ledge and the fire escape rails.
+Location: a district office that is tidier and better furnished than the last one — low grey carpet, a wood veneer desk, a laptop open beside a multi-line desk phone, a metal water bottle, a wool overcoat on a hook, a small American flag on a stand, framed certificates and handshake photographs hung in a grid and all too small to make out. Beyond the window wall, snow falls steadily over a wide view of Manhattan: setback rooftops and timber water towers below, the tops of the towers going grey and vague in the snow, and a bridge just visible in the far distance.
 
-Light: one source only — cold bright daylight bouncing off the snow outside and coming in through the window at his side, striking him from one direction and leaving the far side of his face and the wall behind him in shade; the ceiling lights are off.
+Light: the window is the only light in the room and it is far brighter than the interior. The exposure is set for his face, so the snow and the city outside blow out toward white at the edges of the glass. The window light rims his profile from one side and the rest of the office falls away into shade behind him. The ceiling lights are switched off.
 
-Style: a frame from a documentary, caught from across the desk while he is not paying attention to the camera. Shot on 35mm film, available light only, unretouched, no beauty retouching, natural skin with real texture.
+Style: a frame from a documentary, caught from the back of the room while he is not aware of the camera. Shot on 35mm film, available light only, unretouched, no beauty retouching, natural skin with real texture.
 
 Constraints: his expression stays warm and attentive; keep the sticky notes, the certificates, the photographs, the laptop screen and every sign free of readable lettering, with any handwriting reduced to indistinct marks; no border or frame edge around the image.
 ```
 
+> ### Round 1 fired 2026-08-17 — rejected: boring angle, and slop-adjacent
+>
+> Kai's note, and it produced **two standing rules for the whole section** (now in the
+> [template grammar](#2j5-rung-1-interior-the-front-desk--plate--the-template)): **the window
+> is the status**, and **the camera drops as the ladder climbs.**
+>
+> **Round 2 rebuilds the frame:** wide 28mm, low at desk height angled up, from the far corner
+> *behind* him, so he is small and in profile against a window wall of falling snow over
+> Manhattan. **The ceiling is in shot** with its fluorescent tube switched off — ceilings
+> almost never appear in generated office pictures, and their absence is one of the quiet
+> tells.
+>
+> **And it prompts a photographic failure on purpose:** the window blows out to white because
+> the exposure is set for his face. That is what a real camera does in that room, and
+> **deliberately prompting the failures a camera makes is one of the most reliable anti-slop
+> levers there is** `[community]`.
+
 **What to watch:**
 
-1. **Is he likeable?** The rung fails if he reads as smug or dismissive. He should be someone
+1. **Did the window blow out?** A perfectly exposed crisp postcard skyline behind him means it
+   HDR'd the shot and you are back in slop. **The over-exposure is the realism.**
+2. **Is he small in the frame?** The point of the new angle is that the view dwarfs him. Back
+   to filling the frame means it reverted to portrait mode.
+3. **Is the ceiling in shot?** Cheap, and one of the details that separates a room from a
+   render.
+4. **Is he likeable?** The rung fails if he reads as smug or dismissive. He should be someone
    you would be pleased to get through to.
 2. **Are the three older notes on the monitor?** That is the joke.
 3. **The empty chair.** Dropped, the frame loses its best new idea — and it has to read as
