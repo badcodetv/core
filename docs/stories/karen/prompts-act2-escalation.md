@@ -1436,6 +1436,51 @@ Constraints: keep the papers, the photographs, the certificates, the speakerphon
 5. **Is the room still ordinary?** Scuffed skirting, a worn track in the rug, a cast-iron
    radiator. A glass corner office is **the wrong kind of status.**
 
+### 2j.9v Rung 4, the speakerphone — clip
+
+**Cast:** none. **Attach:** the accepted §2j.9 still. **Engine:** Gemini Omni Flash ·
+**Frames to Video** · 8s · native audio · **Enhance Prompt off**.
+
+> **Her back is turned, which is a gift: no visible mouth means no lip-sync to fail**, so she
+> can speak freely and the audio channel does the acting.
+
+**Tab: Frames — the [settled rule](../../google-flow/omni-flash.md#-the-tab-rule-is-there-a-face-in-it)
+applied at its edge.** There is a person but **no face to lose**, so Frames is right: it pins
+the composition, and the one thing that must not happen is her turning round. **Frames also
+wants a short prompt**, so this block is deliberately half the length of the Ingredients ones.
+Ingredients with the still is the fallback.
+
+**Ambient motion is dust in the low sun** — formless, and physically what that room does with
+the sun coming straight in. **And it carries a bare-surfaces line**, which every clip gets from
+here after the subway-sign incident.
+
+**The audio is the best thing in the shot: Karen, small and tinny, out of a speakerphone in an
+empty room.** She has been climbing for nine months to become a noise on a desk nobody is
+holding.
+
+```prompt
+Use the attached image as the starting frame.
+
+The camera does not move. She stays exactly where she is at the window with her back to the room, and she does not turn round. She lifts the mug, drinks, and lowers it again. She says something short. She shifts her weight from one foot to the other and settles.
+
+Dust drifts through the low sunlight coming across the room. Every surface that could carry writing stays bare: the papers on the desk are blank, the speakerphone shows only a small steady light, and the framed pictures on the wall stay too small to make out.
+
+Real-time pace, 24fps with a 180-degree shutter. Fine film grain.
+
+Audio is the room: a woman's voice coming small and tinny out of the speakerphone on the desk, indistinct and a long way from here, the tick of a radiator, and traffic far below.
+```
+
+**What to watch:**
+
+1. **Does she turn round?** The one failure that matters. If she does, **cut *"she says
+   something short"*** — speech is what invites a turn toward the room.
+2. **Is the tinny voice on the speaker?** Given to her mouth instead, the shot inverts and the
+   point is lost. Worth a re-roll.
+3. **The dust.** Should be safe; if it swarms rather than drifts, cut it — the sunlight alone
+   still reads.
+4. **Frames with a person in shot.** Only tested on an empty landscape so far. **Holding
+   confirms the rule at its edge; distortion finds its limit** and Ingredients is the fallback.
+
 ---
 
 ## The plates this section still owes
@@ -1463,5 +1508,6 @@ Sketched so the order is visible; each gets written one at a time, on request.
 | **2j.8** | Rung 3 interior — the councilman's assistant | ✅ written, round 2 — **the sticky note**, the empty chair, and the first low angle |
 | **2j.8v** | Rung 3, the fourth note — clip | ✅ written — the joke completes on screen |
 | **2j.9** | Rung 4 interior — the Chief of Staff | ✅ written — **on speakerphone, back turned**; lowest angle, best view |
+| **2j.9v** | Rung 4, the speakerphone — clip | ✅ written — **Frames**, tested at the rule's edge; Karen is a noise on a desk |
 | 2j.10 | The newspaper easter egg | AI-taking-jobs headline, **background not foreground**; ideally the Camping prop paper. ⚠️ Legible headline text is the most reliable policy block there is — the line belongs in a `NarrationBox`, not in the image |
 | 2j.11 | She is alone in it | the lone shot of her staring out of the box; the act's emotional exit |
