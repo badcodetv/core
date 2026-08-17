@@ -103,11 +103,41 @@ Style: a still from a 35mm independent film — an ordinary woman on an ordinary
 Constraints: cream blouse untucked, camel cardigan slipped off one shoulder, tailored trousers, no coat, structured leather handbag; nobody in the frame looks at her; keep the writing on the paper, every sign panel, notice, hoarding, sticker, shopfront and vehicle marking free of readable lettering; no border or frame edge around the image.
 ```
 
+> ### ✅ FIRED AND ACCEPTED 2026-08-17 — and it is now the canon kiosk for the whole story
+>
+> It came back as a full-height glazed booth: scuffed aluminium frame, rust bleeding down it,
+> peeled adhesive marks, a real payphone unit, a coiled metal cord, subway railings and green
+> glass globes behind. **Kai ruled that the Act 1 box was a different box**, and that
+> [Act 1 gets re-fired against this frame](./prompts-morning-after.md#-superseded-2026-08-17--this-is-no-longer-the-canon-kiosk):
+> §2h.3 → §2h.6 → §2h.7, then §2h.6v re-run off the new still with its prompt text unchanged.
+>
+> **Everything load-bearing landed:** nobody in frame looks at her, the coins and the scrap
+> are on the shelf, the light is flat with no long shadows, and her face is doing almost
+> nothing — right for rung 1.
+>
+> **Two counters did not land, and one is worth knowing:** the frame came back **centred and
+> level** against a block that asked for off-centre and tilted. Left as is — for a plate that
+> anchors the act, square and symmetrical reads as *the camera that is always there* rather
+> than a composed shot. Recorded because it is the second time a tilt request has been
+> ignored (see §2h.4), which is starting to look like a real limit rather than a fluke.
+>
+> **⚠️ The handbag is a Birkin** — trapezoid body, flap, padlock and straps. Two problems: a
+> recognisable luxury design is the brand-lookalike shape that gets generations blocked, and
+> it is wrong for a woman counting coins onto a shelf to ask how she will pay her rent.
+> **Raised before the re-fires**, because a setting reference propagates its own contents:
+> fix the wardrobe line to *"a plain structured leather tote with no hardware"* and re-fire
+> this plate once, or five downstream shots inherit the bag.
+>
+> **Forward note on the arc:** her hair is salon-fresh and the cardigan is neat. Correct for
+> rung 1 — she still thinks this will be sorted out by lunchtime. **It is a dial.** By rung 4
+> she should be visibly worn: flyaway hair, a coat that does not match, the coins scraped
+> together. The wardrobe carries the nine months so the acting does not have to.
+
 **What to watch:**
 
-1. **Is the kiosk the box from Act 1?** Nothing is holding it but the prose, so this is where
-   drift shows. A British red box, an American hood-style payphone or something sleeker than
-   Act 1's all mean the Location sentence needs fixing — **and that sentence is the canon.**
+1. **Is the kiosk the box from Act 1?** *(Answered: no — and this one won.)* Nothing was
+   holding it but the prose, which is exactly where drift shows. **The Location sentence is
+   now the canon description**, and Act 1 is what moves.
 2. **Does the entrance read as a subway rather than a basement?** The green globe and the
    balustrade carry it. If it reads as a cellar hatch, strengthen those rather than adding
    signage — signage is where the no-text rule and realism start fighting.

@@ -177,6 +177,35 @@ generated images in existence. Every counter is in the frame: she is small and n
 centred, the kiosk is scuffed and municipal, there is scaffolding and a bin, and the
 light is flat mid-morning rather than golden anything.
 
+> ## ⛔ SUPERSEDED 2026-08-17 — this is no longer the canon kiosk
+>
+> **The phone box is now the one generated in
+> [`prompts-act2-escalation.md` §2j.0](./prompts-act2-escalation.md#2j0-the-corner-with-karen-in-it--plate)** —
+> a full-height glazed booth with a scuffed aluminium frame, rust bleeding down it, peeled
+> adhesive marks, a real payphone unit and a coiled metal cord, standing beside a subway
+> entrance with steel railings and green glass globes. Kai ruled 2026-08-17 that **the Act 1
+> kiosk was a different box** and that Act 1 gets re-fired against the new one.
+>
+> **Re-fire list, in order: §2h.3 → §2h.6 → §2h.7**, each with the new
+> [`REFERENCE` block](#the-reference-block-for-the-kiosk-re-fires) prepended and the §2j.0
+> frame attached. Then **re-run §2h.6v off the new §2h.6 still** — that clip's prompt text
+> does not change at all; only the attached image does.
+>
+> **The Location sentence in §2j.0 is now the kiosk's canon description in prose**, since
+> §2j.0 was generated with no reference of its own.
+>
+> ### The `REFERENCE` block for the kiosk re-fires
+>
+> Paste between the `STYLE LOCK` and the existing `SCENE:` block. **It differs from the old
+> one in one specific way: the new reference has Karen in it**, so it must refuse her pose
+> and framing explicitly or the same composition comes back three times.
+>
+> ```prompt
+> REFERENCE:
+>
+> Use the attached image as the design reference for the phone kiosk and the corner it stands on — the kiosk's shape, proportions, height, framing members, glazing, panelling, colour, wear and rust, its payphone unit, its coiled handset cord and its shelf, and the subway entrance behind it with its steel railings, stairs and green glass globes. Take those objects from the image and nothing else: not its camera angle, not its framing, not its lighting, not its weather, and not the woman's position or pose within it. Rebuild that same kiosk and that same corner into the new scene described below, seen from the new angle described below. The finished frame carries the film look described in the style lock above, not the look of the attached photograph.
+> ```
+
 > ### ⚠️ This plate is a design decision, not just a shot
 >
 > **Whatever kiosk comes back becomes the phone box for the rest of the story** —
