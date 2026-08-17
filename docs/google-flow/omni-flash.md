@@ -706,6 +706,18 @@ Additions to the table in the previous section:
   shadows. The failure is usually in a handful of frames, not the whole clip.
 - **Less motion is safer motion.** Over-animation is the tell; explicit "motion
   bucket"-style restraint is the counter.
+- **⚠️ When a moving element fails, demote it to sound.** BadCode's own rule, and the
+  first thing here with **two independent sightings**: reflected traffic that came back
+  "very strange" (Karen §2h.6v) and a background walker who vanished mid-stride (Karen
+  §2j.5v), both 2026-08-17. In each case the element was **cut from the picture and kept
+  in the audio** — distant traffic, a turnstile beep — and the scene still read as
+  populated. **A sound never grows a second leg.** Prefer this to describing the element
+  more carefully; a second attempt at the same motion is the expensive way to learn the
+  same thing.
+- **State emptiness positively.** *"The lobby behind her is empty and still, and stays
+  empty for the whole shot"* does a negative's job without being one. If a figure still
+  materialises, **crop the reference** so the doorway or turnstile is out of frame —
+  nothing can hallucinate a walker into a wall.
 
 ### Sources for this section (2026-08-14)
 

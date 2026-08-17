@@ -463,16 +463,31 @@ god's-eye camera travels, **the camera at the counter just stands there being ig
 That is the block made physical. She is not refusing Karen; she is saying no to something
 she stopped hearing three sentences ago.
 
+> ### Round 1 fired 2026-08-17 — the background walker vanished mid-stride
+>
+> Exactly the documented failure: *"background people appearing and vanishing."* **Not
+> fixable by describing him better** — the fix is to stop asking for one.
+>
+> **The replacement is a house rule now, used twice: when a moving element fails, demote it
+> to sound.** The reflected traffic in [§2h.6v](./prompts-morning-after.md#2h6v-karen-listens-in-the-kiosk--clip)
+> went the same way. **The turnstile beep stays in the audio**, so the lobby still reads as a
+> place people pass through — we simply never render them. A beep never grows a second leg.
+>
+> **The empty lobby is stated positively** — *"empty and still, and stays empty for the whole
+> shot"* — because a "no people" instruction is the exact shape of negative
+> [Omni inverts](../../google-flow/omni-flash.md#-negatives-do-not-work-and-they-actively-backfire).
+> One small human beat replaces the lost motion: she shifts in the chair.
+
 ```prompt
 Using the attached image as the locked opening frame, animate what happens next in one continuous shot. Keep the lobby, the counter, the light and her hair, glasses, headset and clothes exactly as they are in the frame.
 
-She stays exactly where she is, talking. She is mid-sentence and she has said this before. Her mouth moves with the words without exaggeration and her eyes stay on the monitor to one side. Once, while she is still talking, she gives one small shake of the head, barely a movement. Her hand on the mouse shifts it an inch and settles. Between phrases her mouth closes flat and her cheeks stay still.
+She stays exactly where she is, talking. She is mid-sentence and she has said this before. Her mouth moves with the words without exaggeration and her eyes stay on the monitor to one side. Once, while she is still talking, she gives one small shake of the head, barely a movement. Her hand on the mouse shifts it an inch and settles. She shifts her weight in the chair once and settles again. Between phrases her mouth closes flat and her cheeks stay still.
 
-Behind her and out of focus, one person walks through the turnstiles and out of the frame.
+The lobby behind her is empty and still, and stays empty for the whole shot.
 
 The camera is locked and still throughout, at the far side of the counter. Available light only, real-time pace. Shot at 24fps with a 180-degree shutter. Fine film grain.
 
-Audio is the lobby only: her voice low, flat and indistinct, the click and rattle of a keyboard, a double beep from the turnstile, and the room tone of a hard-floored lobby.
+Audio is the lobby only: her voice low, flat and indistinct, the click and rattle of a keyboard, a double beep from the turnstile somewhere behind her, and the room tone of a hard-floored lobby.
 ```
 
 **⚠️ The grain is back in this block**, unlike [§2j.1v](#2j1v-the-descent-rung-1--clip--the-master). This is Karen's world, so the super-8 register applies; the aerials are the photoreal ones. **Check the register per shot** — it is now a real fork in the checklist rather than a constant.
@@ -483,9 +498,10 @@ Audio is the lobby only: her voice low, flat and indistinct, the click and rattl
    identical text.
 2. **Does the smile come back?** Round 1's failure gets a second chance at the animation
    stage. The mouth closing flat between phrases is the counter.
-3. **The background walker.** The best life cue available, but background people are
-   documented for appearing and vanishing. If they morph, **cut the line** — the keyboard and
-   the turnstile beep carry the room alone.
+3. **Whether it invents someone anyway.** *"Stays empty for the whole shot"* does a
+   negative's job without being one. If a figure still materialises at the turnstiles, the
+   next lever is **cropping the reference so the turnstiles are out of frame** — nothing can
+   hallucinate a walker into a wall.
 4. **The mouse hand.** An inch is deliberately small. If fingers smear, drop the hand clause
    and let the head shake be the only motion.
 
