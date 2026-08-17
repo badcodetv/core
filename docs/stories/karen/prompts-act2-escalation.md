@@ -238,6 +238,38 @@ Constraints: ordinary commercial and residential architecture throughout, unglam
 > gets fired. The close-and-steeper **Earth camera recipe** above is what survives of it,
 > and it is still the right recipe if a later rung wants a tighter aerial.
 
+> ### Fired 2026-08-17 — round 2 came back strong. Three rulings owed.
+>
+> **Density did not mush**, which was the real risk: forty blocks rebuilt, the grid holds,
+> the far distance stays coherent, traffic reads correctly on the riverside expressway, and
+> it delivered the boat and its wake. **The water came back flat and matte** — that risk
+> did not materialise either. **The sun did not land as hard shadow**, against expectation.
+>
+> **1. The `STYLE LOCK` did not land — and canon says that is correct.** No grain, no
+> halation, no vignette, no super-8: a clean photographic aerial. A photographic reference
+> pulls hard toward photographic realism and the lock lost. But
+> [`story.md`](./story.md#act-2--the-great-escalation-the-core-of-the-film) asks for
+> *"Aerial Manhattan — **photoreal**, looking down over the city."*
+>
+> **So promote the accident to a device: the god's-eye shots are photoreal; Karen's world
+> is super-8.** The camera is objective above the city and degraded down in it with her.
+> Free, and it means something. **But it has to be deliberate and consistent across all
+> four aerials**, or it reads as two shots that do not match. *(If Kai wants the grain
+> instead, that is a post pass over the whole act, not a re-fire.)*
+>
+> **2. ⚠️ The zoom target is a hero building.** The obvious target — the dark slab, dead
+> centre, alone, air around it — is a distinctive luxury tower, and **the joke of the ladder
+> is that none of these places are special.** Two options, and this decides the rung-1
+> interior as well: use it and read it as a corporate HQ (easiest; the composition is
+> already built round it), or nominate one of the dull mid-height blocks left of centre, so
+> the zoom becomes *"and in this completely unremarkable building…"* — funnier, more
+> on-message, less for the push to lock onto. **Ruling owed before the interior is written.**
+>
+> **3. The foliage will fight the snow variant.** Full summer leaf, green lawns. Fine for
+> rung 1; when the Light line changes to snow, **the reference will keep pushing summer**,
+> so bare trees have to be stated in the Location line rather than implied by the weather.
+> Recorded now so it is not diagnosed as a random failure later.
+
 **What to watch, in the order these are likely to fail:**
 
 1. **The sun.** The reference carries hard baked-in shadows down the west face of every
