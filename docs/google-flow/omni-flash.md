@@ -671,6 +671,29 @@ Counters that work at the prompt and plate level:
 - **Use the barrier as a foreground occluder.** A rail crossing in front of the
   subject settles the depth ordering visually rather than verbally.
 
+#### ⚠️ Moving objects *inside a reflection* — one observed failure, and the mechanism is here
+
+**Karen §2h.6v round 1, 2026-08-17.** The clause was *"traffic moves in the reflection
+behind her"* — a push-in on a woman in a glazed phone kiosk. Kai's verdict on what came
+back: *"the traffic going past looked very strange."*
+
+**n=1, so this is not a rule yet** — but it belongs under this heading rather than under
+bad luck, because a reflection is **geometry twice over**: the engine has to hold where
+the vehicle is, where its mirror image lands, and how both move, every frame, with no
+world model to do it in. That is [the falling-object problem](#why-falling-objects-fail-and-what-actually-fixes-it)
+with an extra transform on top.
+
+**The working counter is substitution, not instruction.** Round 2 cut moving objects from
+the glass entirely and replaced the ambient motion with **steam off a pavement vent** —
+formless motion has no geometry to get wrong, which is why dust, steam and drifting light
+keep earning their place in these blocks. The traffic moved to the **audio**, where it
+reads free.
+
+**Generalise carefully:** what is claimed here is that *this* shot failed and that the
+mechanism is the documented one. Whether reflections of moving objects fail *reliably*
+wants a second sighting with something else varying — see
+[the discipline note](#frames-lost-the-face-ingredients-held-both-n1-each-way).
+
 ### Slop counters specific to motion `[community]`
 
 Additions to the table in the previous section:

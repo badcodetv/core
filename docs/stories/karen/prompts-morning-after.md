@@ -814,13 +814,38 @@ Kai's brief, 2026-08-17: *confused and actively listening, no exaggerated expres
 start on her in the booth and slowly push in to her face.* The counter-shot to §2h.5bv —
 Susan talks, Karen takes it.
 
+> ### Round 1 fired 2026-08-17 — rejected on two counts
+>
+> | What round 1 said | What came back |
+> | --- | --- |
+> | `Traffic moves in the reflection behind her` | **"very strange"** — the vehicles in the glass |
+> | a straight push-in, one move | technically correct and **boring** |
+>
+> **Reflected traffic is close to the worst ask there is.** A reflection is *geometry*, and
+> [these models have no world model](../../google-flow/omni-flash.md#spatial-geometry-models-have-no-world-model) —
+> the engine has to solve where a vehicle is, where its mirror image lands and how both
+> move, every frame. It is the [falling-object problem](../../google-flow/omni-flash.md#why-falling-objects-fail-and-what-actually-fixes-it)
+> wearing a different coat. **Round 2 cuts moving objects from the glass entirely** and
+> keeps the traffic in the *audio*, where it costs nothing and reads free.
+>
+> **The ambient motion is now formless** — steam off a pavement vent. Formless motion has
+> no geometry to get wrong, which is exactly why dust and steam keep turning up in these
+> blocks.
+>
+> **And the fix for boring is not a busier camera, it is a camera that causes something.**
+> Round 2 arcs as it pushes, so the kiosk upright sweeps through the near edge of frame and
+> **the white sky reflection slides off the glass and gives up her face.** That is an event
+> in the shot rather than a move performed at it — and it is the story in one gesture, since
+> the whole film watches her through glass and this is where it gets inside.
+
 > **⚠️ The camera paragraph is promoted above the action paragraph here**, which reverses
 > §2h.4v and §2h.5bv. Omni Flash reads `push in` as one of its named camera phrases and
 > **the first words set the shot grammar** `[runware]` — the same rule as
 > [`camera-vocabulary.md` §1](../../flow/camera-vocabulary.md#rules), *"camera instruction
 > goes first, as its own clause."* The frame-lock line still has to come first for
-> identity, so camera takes second position. **Push-in is Tier 1, the safest move there
-> is**, and it is the only move in the block.
+> identity, so camera takes second position. **Push-in is Tier 1, the safest move there is;
+> the arc round 2 adds is Tier 2, "works, expect retries."** Two moves is the documented
+> maximum — do not add a third.
 
 **Confusion is bought with four physical events and no emotion word:**
 
@@ -840,6 +865,12 @@ Three other choices, each with a reason:
 - **The reflection slides off her face as the camera closes.** One motivated change that
   only a real move could produce — it is the anti-scaling tell as much as an atmosphere
   clause.
+- **The move settles a fraction late.** Round 1's *"the camera is not helping — a plain
+  observational push-in, not a composed one"* was written for a locked-off frame and it
+  argues with a move; it is gone. **Weight and drift replace it.** AI camera moves are
+  unnaturally perfect, so an imperfect settle is the realism token a moving shot needs —
+  the same job [the 180-degree shutter](../../google-flow/omni-flash.md#the-shutter-is-the-tell-nobody-prompts-for)
+  does for motion blur.
 - **Her hand does not move.** She is holding a receiver next to her face for the whole
   clip, which puts fingers in shot at the closest point. Motionless hands render;
   articulating ones are the documented weak spot.
@@ -853,17 +884,23 @@ Three other choices, each with a reason:
 ```prompt
 Using the attached image as the locked opening frame, animate what happens next in one continuous shot. Keep the kiosk, the street, the glass, the light and her hair and clothes exactly as they are in the frame.
 
-The camera pushes in. It starts exactly where the frame starts, holding her in the kiosk with the street around her, and moves slowly and steadily straight toward her, ending on a medium close-up of her face through the glass. The move is continuous and unhurried and it is the only camera move in the shot.
+The camera pushes in and arcs at the same time. It starts exactly where the frame starts, then moves toward her and around to one side, slowly and steadily, so the street slides across behind her and the aluminium upright of the kiosk sweeps through the near edge of the frame and out of it. The bright white reflection of the sky slides off the glass as it goes and her face comes clear behind it. The move slows as it arrives and settles on a medium close-up of her face through the glass, a little off to one side of her. It carries the weight and drift of a real dolly and settles a fraction late. It is the only camera move in the shot.
 
 She is listening, and she has been listening for a while. Her eyes are open and set on nothing, focused somewhere past the glass rather than on anything in the street. Her brows stay level, the inner ends drawing very slightly up and together once. One slow blink. Her lips are parted and stay parted; her mouth opens a fraction as if to say something, then closes again. Her chin dips once, barely — less than a nod. Her hand stays where it is on the receiver, still.
 
-Available light only, real-time pace, and the camera is not helping — this is a plain observational push-in, not a composed one. The white reflection of the sky lies across the glass and slides off her face as the camera closes on her. Traffic moves in the reflection behind her. Any lettering on the kiosk and in the reflections stays soft and unreadable. Shot at 24fps with a 180-degree shutter. Fine film grain.
+Available light only, real-time pace. Behind the kiosk, steam lifts and drifts from a vent grate in the pavement. The street itself is quiet and still. Any lettering on the kiosk and in the reflections stays soft and unreadable. Shot at 24fps with a 180-degree shutter. Fine film grain.
 
-Audio is the street only: distant traffic, a vehicle passing, and the thin indistinct sound of a voice in the receiver, too faint to make out any words.
+Audio is the street only: distant traffic somewhere out of shot, and the thin indistinct sound of a voice in the receiver, too faint to make out any words.
 ```
 
 **What to watch:**
 
+- **Whether the arc breaks it.** The one real risk in round 2: an arcing camera has to
+  render the side of the kiosk it never saw, and unseen ground is where these
+  [invent](../../google-flow/omni-flash.md#the-unrendered-region-rule--why-it-invented-a-shore).
+  **The fallback is exact** — cut *"and around to one side"* and the *"sweeps through the
+  near edge"* clause, keep the rest. That is round 1's straight push plus the reflection
+  reveal and the settle, which was most of the improvement anyway.
 - **Whether the push is a dolly or a zoom.** A real move changes perspective — the kiosk
   frame should widen past the edges of shot as you close. If the image only scales up, add
   *"the kiosk frame passes out of the sides of the frame as the camera comes in."*
