@@ -423,9 +423,98 @@ Constraints: ordinary commercial and residential architecture throughout, unglam
 6. **The traffic.** Vehicles are where aerial renders fall apart — floating, mis-scaled,
    facing the wrong way down a one-way avenue.
 
-**On acceptance**, the three weather variants are this block with **only the Light line
-changed** (rain → snow → low winter sun), plus whatever the wet or snow-covered roofs
-demand in the Location line. Written when the master lands.
+### 2j.2 Aerial over Midtown, rain — plate
+
+**Cast:** none. **Attach:** the accepted **§2j.1** — **not** the Earth screenshot.
+**Engine:** Nano Banana Pro, 16:9, 3 candidates.
+
+> ### ⚠️ Method change: the weather variants are *edits of the accepted aerial*
+>
+> §2j.1 was built from the Earth screenshot. **The variants must not be.** Re-firing from
+> Earth gives four *similar* aerials, and **similar is worthless here** — the entire
+> structural bet is that the audience recognises **the same shot, later**.
+>
+> So these are edits: attach the accepted §2j.1 and change only the weather. That is Nano
+> Banana Pro's strongest documented mode — *"[change]. Keep [X, Y, Z] exactly the same"*
+> `[vendor]` — and the only way to guarantee all four aerials are the same city from the same
+> camera.
+
+```prompt
+REFERENCE:
+
+Use the attached image as the base image and keep everything in it exactly the same: the camera position, the framing, the street grid, every building and its height and shape, the rooftops and their machinery, the line of the river, the bridge, and the way the far blocks recede into haze. The camera does not move and the city is not rebuilt. Change only the weather and the light, as described below.
+
+SCENE:
+
+Weather: the same view of the same city, months later, in heavy rain.
+
+Change: the tarred roofs are dark and soaked and holding standing water in their low corners, the streets below are black and glossy, headlights and tail lights are on in the middle of the day and throwing long smears on the wet asphalt, spray stands behind the moving vehicles, the river surface is pocked and matte with no reflection in it at all, and the tops of the tallest towers are lost in low cloud.
+
+Light: no sun anywhere; a dark grey sky pressing down, the whole frame two stops darker than the base image, the haze thickened so the far blocks are nearly gone, and the wet surfaces carrying a dull sheen rather than bright highlights.
+
+Constraints: keep every rooftop sign, hoarding, advertisement and vehicle livery free of readable lettering; no border or frame edge around the image.
+```
+
+**What to watch:**
+
+1. **Did the camera move?** The only failure that matters. Flick between this and §2j.1 —
+   anything that shifts, rebuilds or re-frames breaks the device. Re-roll, do not rewrite.
+2. **Is it dark enough?** Models resist darkening a frame and will hand back a *slightly
+   overcast* version of the same bright image. The lever is *"two stops darker"* stated
+   harder, **not more rain nouns.**
+3. **The river.** Rain water is matte and pocked; glossy and reflective means it reverted to
+   the pretty default.
+4. **Headlights in daylight.** Small detail, big payoff — it says *bad day*, not *evening*.
+
+**§2j.3 is snow and §2j.4 is low winter sun, same method.** ⚠️ **Snow needs bare trees stated
+explicitly** — the base image is in full summer leaf, a weather instruction alone will not
+strip it, and green trees under snow read as wrong without anyone being able to say why.
+
+### 2j.1x The pull-out, weather closing in — clip · **the experiment**
+
+**Cast:** none. **Attach:** the accepted §2j.1. **Engine:** Gemini Omni Flash · **Ingredients
+to Video** · 8s · native audio · **Enhance Prompt off**.
+
+**Formula step 5, and the join that turns four rungs into nine months.** Two ways to do it,
+differing in risk rather than in look:
+
+| | How | Cost |
+| --- | --- | --- |
+| **Canonical** *(this block)* | one clip: the camera rises and the weather closes in as it goes | may fail outright |
+| **Fallback** | pull out dry, **cut**, descend in rain | always works, reads flatter |
+
+[`story.md`](./story.md#act-2--the-great-escalation-the-core-of-the-film) asks for the
+canonical one — *"while we're high over the city, the weather changes"* — and it is better
+than a cut because **the audience watches time pass rather than inferring it.** Worth one
+generation to find out; the fallback needs both aerials, which we want anyway.
+
+```prompt
+Using the attached image as the locked opening frame, animate what happens next in one continuous shot. Keep the city, the camera position at the start and the framing exactly as they are in the frame.
+
+The camera rises and pulls back. It starts exactly where the frame starts and moves slowly and steadily up and away from the city, so more of the grid comes into the frame from the edges as it goes. The move carries the small float and drift of a long lens shot from a helicopter, and it is the only camera move in the shot.
+
+As the camera rises, the weather closes in over the city, coming on gradually across the whole shot rather than all at once. Cloud thickens and the light drains out of the frame until it is much darker than it began. The tarred roofs go dark and wet. The streets below turn black and glossy and headlights come on in the middle of the day. The river surface goes matte and pocked. By the end of the shot the city is under heavy rain and the tops of the tallest towers are lost in low cloud.
+
+Below, the city keeps going throughout: traffic creeps along the avenues, one boat draws a slow wake up the river, and steam stands above two or three rooftops.
+
+Real-time pace. Shot at 24fps with a 180-degree shutter.
+
+Audio is the city from a long way up: a low wash of distant traffic, steady wind, and the hiss of rain arriving.
+```
+
+**What to watch — this one has a real chance of failing:**
+
+1. **Does it cut to show the change?** The likeliest failure: a weather transition is exactly
+   what Omni resolves by chopping to a second shot. If it cuts, the experiment is over.
+2. **Does the change snap?** One frame where dry becomes wet is unusable. *"Gradually across
+   the whole shot"* is the counter; if it still snaps, take the fallback.
+3. **Does the city survive the darkening?** Big global changes are where geometry drifts.
+   Buildings hold position and shape; only light and surfaces change.
+4. **Does it actually get dark?** Models resist draining light. A slightly grey version of the
+   same bright city means it did not commit.
+
+**No film grain** — god's-eye, so it matches the photoreal aerials rather than Karen's
+super-8.
 
 ### 2j.1v The descent, rung 1 — clip · **the master**
 
@@ -710,7 +799,9 @@ Sketched so the order is visible; each gets written one at a time, on request.
 | **2j.0v** | Karen in the box, rung 1 — clip | ✅ written — locked camera, three-beat arc, street as flow rather than individuals |
 | **2j.1** | Aerial over Midtown, rung 1 | ✅ **fired and accepted 2026-08-17** — the master |
 | **2j.1v** | The descent, rung 1 — clip | ✅ written — the clip master; it never arrives |
-| 2j.2–2j.4 | The same aerial in rain, snow, low winter sun | one line swapped each |
+| **2j.1x** | The pull-out, weather closing in — clip | ✅ written — **the experiment**; formula step 5, with a cut as the fallback |
+| **2j.2** | The same aerial in rain | ✅ written — **an edit of the accepted §2j.1**, not a re-fire from Earth |
+| 2j.3–2j.4 | The same aerial in snow, then low winter sun | same method; **snow needs bare trees stated** |
 | **2j.5** | Rung 1 interior — the front desk | ✅ **fired and accepted 2026-08-17, round 2** — **the interior template**; the camera stands where Karen cannot |
 | **2j.5v** | Rung 1, the block — clip | ✅ written — one head shake, locked camera, **no Character to hold the face** |
 | **2j.6** | Karen in the box, intercut | ✅ written — **the Karen master**; the frame never changes, everything in it does. Coins and the name-list scrap accumulate across the act |
