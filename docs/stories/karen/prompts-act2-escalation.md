@@ -145,6 +145,55 @@ Constraints: cream blouse untucked, camel cardigan slipped off one shoulder, tai
 4. **The coins and the scrap.** Small props get dropped. They are the only things that
    visibly accumulate across nine months, so they are worth a re-roll.
 
+### 2j.0v Karen in the box, rung 1 — clip
+
+**Cast:** none needed. **Attach:** the accepted §2j.0 still. **Engine:** Gemini Omni Flash ·
+**Ingredients to Video** · 8s · native audio · **Enhance Prompt off**.
+
+> **The camera is locked, and that is now a rule with a reason: the god's-eye camera moves,
+> the ground never does.** The box is a fixed point in the story, so it is a fixed point in
+> the grammar — the world goes past it and she does not.
+
+**The performance is a three-beat arc, which is what eight seconds holds:** she is explaining
+→ she stops and takes it → she starts again. **That third beat is *"I want to speak to your
+manager"* without needing the line**, and it is the counter-shot to the receptionist's head
+shake in §2j.5v.
+
+> **⚠️ One deliberate difference from the lobby clip.** There a lone background walker
+> vanished mid-stride and we cut him. **Here the street stays busy, because a continuous
+> stream is safer than one isolated figure** — nobody notices a pedestrian swapping identity
+> in a flow of six; everybody notices the one man in an empty lobby dissolving. So the motion
+> is written as **flow, not individuals.** This is a refinement of
+> [demote-it-to-sound](../../google-flow/omni-flash.md#slop-counters-specific-to-motion-community),
+> not a contradiction of it: the rule is about *conspicuous* elements.
+
+```prompt
+Using the attached image as the locked opening frame, animate what happens next in one continuous shot. Keep the phone box, the corner, the subway entrance, the light and her hair and clothes exactly as they are in the frame.
+
+She stays in the box with the receiver to her ear and her free hand flat on the shelf. She is mid-sentence, explaining something. Then she stops talking and listens: her mouth closes, her eyes drop a little, and she blinks once, slowly. Her hand lifts an inch off the shelf and settles back down flat. Then she starts talking again, her chin lifting slightly as she does. Her face does very little throughout.
+
+Behind her the street keeps going: traffic moves steadily past on the road, people walk along the pavement in both directions without looking at her, and steam drifts off the vent grate.
+
+The camera is locked and still throughout, across the pavement. Available light only, real-time pace. Shot at 24fps with a 180-degree shutter. Fine film grain.
+
+Audio is the street only: her voice low and indistinct, traffic, a bus pulling away, and the rumble of a train coming up out of the subway entrance behind her.
+```
+
+**What to watch:**
+
+1. **Does she stay in the box?** No stepping out, turning or drifting. If she wanders, **cut
+   the chin-lift beat** — the third beat is the one that invites movement.
+2. **Do the pedestrians look at her?** A head turning toward her costs the act its jeopardy.
+3. **The traffic.** Vehicles have misbehaved twice now. If they float, reverse or pop, drop
+   the traffic clause and let the pavement flow and the steam carry it — the road noise stays
+   in the audio either way.
+4. **Her hand.** An inch up, then flat. If the fingers smear on the way down, cut the hand
+   beat; the blink and the chin do the work.
+
+**The train rumble is the cheapest thing in the block and does more than the picture can** —
+*this is a real corner in a real city, and the trains keep running whether or not anyone
+answers her.*
+
 ### 2j.1 Aerial over Midtown, rung 1 — plate · **the master** · **reference-anchored**
 
 **Cast:** none. **Time:** flat overcast mid-morning — the same day and the same weather Act
@@ -657,7 +706,8 @@ Sketched so the order is visible; each gets written one at a time, on request.
 
 | § | Plate | Notes |
 | --- | --- | --- |
-| **2j.0** | The corner, with Karen in it | ✅ written — no reference; **the Location sentence is now the kiosk's canon description** |
+| **2j.0** | The corner, with Karen in it | ✅ **fired and accepted 2026-08-17** — **the canon kiosk for the whole story**; Act 1 re-fires against it |
+| **2j.0v** | Karen in the box, rung 1 — clip | ✅ written — locked camera, three-beat arc, street as flow rather than individuals |
 | **2j.1** | Aerial over Midtown, rung 1 | ✅ **fired and accepted 2026-08-17** — the master |
 | **2j.1v** | The descent, rung 1 — clip | ✅ written — the clip master; it never arrives |
 | 2j.2–2j.4 | The same aerial in rain, snow, low winter sun | one line swapped each |
