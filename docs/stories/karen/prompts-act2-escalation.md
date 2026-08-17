@@ -573,10 +573,15 @@ Audio is the city from a long way up: a low wash of distant traffic, steady wind
 3. **Does it still get dark?** This worked in Ingredients. **If Frames costs the weather
    change, that is a real trade** — and the answer becomes two clips and a cut.
 
-**If Frames holds the camera, record it**: it would upgrade the tab rule from a preference to
-a test — *is there a face in it?* — which is far more useful than what we have been running on.
-
-**If this works, its last frame is the rain aerial** and §2j.2 becomes unnecessary.
+> ### ✅ ACCEPTED 2026-08-17, round 3 — and it settled the tab question
+>
+> Frames held the camera and the geography **and** kept the weather change. **The tab rule is
+> now a test, not a habit: [is there a face in it?](../../google-flow/omni-flash.md#-the-tab-rule-is-there-a-face-in-it)**
+> Face → Ingredients with the Character; no face → Frames. That changes the default for every
+> establishing and location clip left in the film.
+>
+> **Its last frame is the rain aerial**, so §2j.2 is not needed unless a still is wanted for
+> its own sake.
 
 **No film grain** — god's-eye, so it matches the photoreal aerials rather than Karen's
 super-8.
@@ -852,6 +857,57 @@ Constraints: cream blouse untucked, camel cardigan slipped off one shoulder, tai
 4. **The coins and the paper.** Small, and the model may drop them the way it dropped the
    lobby props. Worth a re-roll: they are the only things in the act that visibly accumulate.
 
+### 2j.7 Rung 2 interior, the borough office — plate
+
+**Cast:** none. **Time:** mid-morning, months later — raining outside. **Attached:** nothing.
+**Engine:** Nano Banana Pro, 16:9, 3 candidates. **Register:** super-8 `STYLE LOCK`.
+
+> ### The thesis for the ladder: **each rung is calmer than the last, and equally useless.**
+>
+> Rung 1 was **too busy to listen** — typing, eyes on the monitor, saying no to something she
+> had stopped hearing. **Rung 2 has all the time in the world and no more power.** He will
+> hear Karen out completely, with real patience, and nothing will happen. By rung 4 the Chief
+> of Staff should be entirely relaxed.
+>
+> That is funnier than escalating rudeness and it is truer: **nobody in this chain is a
+> villain, and the higher you climb the more courteously nothing happens.**
+
+**The newspaper easter egg lands here.** A folded tabloid on a municipal officer's desk is the
+most natural place in the film for it — **background, not foreground**, exactly as canon asks.
+Headline illegible; the actual line goes in a `NarrationBox` where it cannot be blocked.
+
+**One fix carried from rung 1: no overhead strip lighting.** That is what flattened the
+receptionist. This one gets daylight through half-lowered blinds at his side.
+
+```prompt
+SCENE:
+
+Subject: a man in his sixties who has worked in local government for thirty years, sitting behind a desk in a municipal borough office with a desk phone handset held to his ear. He is an ordinary looking man with an unremarkable face, a soft build and no styling: thinning grey hair, reading glasses low on his nose, grey stubble along the jaw, deep lines, visible pores, a shirt that has been worn since Monday with the collar softened, a wool cardigan over it and no tie.
+
+Composition: 16:9, a medium shot on a 50mm lens at f/2.8, taken from the visitor's side of the desk at standing eye level and off to one side; he sits right of centre behind the desk, leaning back in his chair; the near edge of the desk crosses the bottom of the frame close and thrown out of focus; the frame is tilted a few degrees off level.
+
+Action: he is listening, patiently and without hurry, leaning back with one hand holding a pen he is not writing with and the other holding the handset. His mouth is closed and still. His eyebrows are relaxed and level. He has all the time in the world.
+
+Location: a municipal borough office that has not been refurbished since the nineties — grey carpet tiles, a scuffed melamine desk, a swivel chair with a coat over the back of it, stacked buff folders and a wire tray of loose paper, a mug ringed brown inside, a dying spider plant, a wall calendar and a pinboard of layered notices behind him, a folded tabloid newspaper lying face up beside the folders, and a window to his side with venetian blinds half lowered showing wet rooftops and a car park below.
+
+Light: one source only — grey rainy daylight through the venetian blinds at his side, striping across him and the desk from one direction, leaving the far side of his face and the room behind him in shade; the ceiling lights are off.
+
+Style: a documentary photograph on 35mm film, made for a newspaper story about local government; unretouched, no beauty retouching, natural skin with real texture; candid, caught rather than composed.
+
+Constraints: his expression stays patient and unhurried; keep the newspaper headline, the calendar, the pinboard notices, the folder labels and every sign free of readable lettering; no border or frame edge around the image.
+```
+
+**What to watch:**
+
+1. **Is he leaning back?** That posture **is** the rung. Hunched forward looking helpful and
+   the escalation reads as effort, which kills the joke.
+2. **Is the newspaper readable?** It must not be. If lettering resolves, blur it next round
+   rather than removing the paper — it does real work sitting there unread.
+3. **Did the blinds give stripes?** The one lighting instruction carrying the realism. Flat
+   and even means it reverted to rung 1's failure.
+4. **Is the office shabby enough?** A clean modern council office reads as a startup. The
+   nineties carpet tiles and the layered pinboard are what sell it.
+
 ---
 
 ## The plates this section still owes
@@ -870,7 +926,7 @@ Sketched so the order is visible; each gets written one at a time, on request.
 | **2j.5** | Rung 1 interior — the front desk | ✅ **fired and accepted 2026-08-17, round 2** — **the interior template**; the camera stands where Karen cannot |
 | **2j.5v** | Rung 1, the block — clip | ✅ written — one head shake, locked camera, **no Character to hold the face** |
 | **2j.6** | Karen in the box, intercut | ✅ written — **the Karen master**; the frame never changes, everything in it does. Coins and the name-list scrap accumulate across the act |
-| 2j.7 | Rung 2 interior — the borough office | the ladder's second face; **the dull-building joke lands here** |
+| **2j.7** | Rung 2 interior — the borough office | ✅ written — **calmer and no more use**; carries the newspaper easter egg |
 | 2j.8 | Rung 3 interior — the councilman's assistant | |
 | 2j.9 | Rung 4 interior — the Chief of Staff | the top of the on-screen ladder |
 | 2j.10 | The newspaper easter egg | AI-taking-jobs headline, **background not foreground**; ideally the Camping prop paper. ⚠️ Legible headline text is the most reliable policy block there is — the line belongs in a `NarrationBox`, not in the image |

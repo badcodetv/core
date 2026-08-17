@@ -653,6 +653,34 @@ audio.** Omni generates sound natively, so a splash can be *heard* while nothing
 splashes on screen. A real film would cut this way regardless. Physics you don't
 render cannot go wrong.
 
+### ✅ The tab rule: **is there a face in it?**
+
+**Settled 2026-08-17 across four generations on two very different subjects.** This
+supersedes the earlier "prefer Ingredients" habit, which was an over-generalisation from one
+Act 1 failure.
+
+| Shot | Tab | Result |
+| --- | --- | --- |
+| Susan waking, bedroom, `@Susan` | Frames | **different woman** |
+| Susan waking / Susan explaining, `@Susan` | Ingredients | **held the face *and* the staging** ×2 |
+| Aerial over Midtown, no people | Ingredients | **re-staged and flew** — tilted up, moved north, sky in frame |
+| Aerial over Midtown, no people | Frames | **held the camera and the geography** |
+
+**The rule:**
+
+- **A face in the shot → Ingredients**, with the still and the Character both attached. The
+  Character carries identity; Frames will lose it.
+- **No face in the shot → Frames.** The one documented reason to avoid Frames does not apply,
+  and Frames is the mode that actually pins frame one. **Ingredients on a faceless landscape
+  is entitled to re-stage, and will.**
+
+**And the prompt shape follows the tab, not the shot.** In Frames the image carries the
+staging, so **cut the prompt down** to motion, timing and audio — an itemised preservation
+list is the right medicine for the wrong tab and invites the drift it was meant to prevent.
+In Ingredients the text must carry the staging. This is the
+[references-vs-frames asymmetry](#the-two-modes-want-opposite-prompts) confirmed from our own
+work rather than inherited from the vendor table.
+
 ### ⚠️ Pull-back is structurally riskier than push-in
 
 **Karen §2j.1x, 2026-08-17.** A high aerial was asked to **rise and pull back** while the
