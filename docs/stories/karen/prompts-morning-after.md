@@ -905,35 +905,65 @@ something Nano Banana Pro does not honour and get it in the edit instead.
 > binding held** — she came back recognisably herself under a hard blind-light grade,
 > across all three candidates. **The divergence is fine; the ruling is "leave it."**
 
-### 2h.6 The news lands — plate
+### 2h.6 The news lands — plate · **re-fired against the canon kiosk**
 
-**Cast:** `@Karen`.
+**Cast:** `@Karen` — the Character **and** the accepted **§2j.0** still as image 1. Two
+references, nothing else. **Engine:** Nano Banana Pro, 16:9, 3 candidates.
 
-Interior of the kiosk, and the counter-shot to 2h.5. She has just been told. **No
-reaction acting** — the beat is the information arriving, not her performing shock.
+Interior of the kiosk, and the counter-shot to §2h.5. She has just been told. **No reaction
+acting** — the beat is the information arriving, not her performing shock.
 
-The glass is doing the work: the street reflected across her means we are already
-watching her from the outside, which is where the rest of the film watches her from.
+> ### The glass is doing the thematic work.
+>
+> **The street reflected across her means we are already watching her from the outside**, which
+> is where the rest of the film watches her from: through glass, from across a pavement, from a
+> helicopter, from a room she is not allowed into. This is the frame that establishes that
+> distance, and it is the reason the shot is *through* the panel rather than in the open front.
+
+**Reference: §2j.0, not §2j.11.** Both are canon and both would work, but §2j.0 is the same time
+of day, the same light and the same clothes, so **the only thing changing is the camera** — and
+[a change-list of one kind is more likely to land](./prompts-act2-escalation.md#2j11-she-is-alone-in-it--plate)
+than a change-list that moves the framing *and* the sun. Do not attach both stills; two
+references of the same set are a third opinion on it.
+
+**§4a, hard: name the muscles, never the emotion.** *"She has just found out"* is the cue that
+produces a woman doing Shocked. The muscles are what is actually devastating — a face that has
+gone flat while it absorbs something.
 
 ```prompt
-SCENE:
+Image 1 is the reference. Keep it exactly as it is — the same kiosk, the same corner behind it, the same woman, the same clothes, the same flat overcast mid-morning light, and the same grainy super-8 film look. Redesign nothing.
 
-Subject: a woman inside a street phone kiosk with the receiver to her ear, seen through the glass from outside.
+Change three things:
 
-Composition: 16:9, close, from just outside the kiosk at eye level; she sits right of centre behind the glass with the reflected street laid across her; the aluminium kiosk frame crosses the left of the frame in hard foreground; slightly off level.
+1. Much tighter framing. Her head and shoulders fill most of the frame, seen from just outside the kiosk through its glass side panel, with the aluminium kiosk frame crossing the left of the frame close to the lens and out of focus.
 
-Action: gone still mid-call with the receiver held against her ear and her other hand flat on the little shelf, taking it in.
+2. The Midtown street is reflected across the glass in front of her, laid over her face and shoulders, with a hard bright reflection of the white sky across the upper half of the glass. The reflected signs and shopfronts stay too soft to read.
 
-Location: the interior of a scuffed street kiosk — a worn steel shelf, a coiled metal handset cord, chipped paint, old adhesive marks on the panel where cards were peeled off, the Midtown street reflected in the glass.
+3. She has gone completely still. The receiver is against her ear and her other hand is flat on the shelf. Her face is flat and absorbing rather than shocked — her mouth is closed, her jaw is loose, her eyebrows are level — and she is not looking at the camera.
 
-Light: flat overcast daylight from outside, the interior a stop darker; a hard bright reflection of the white sky across the upper half of the glass.
-
-Style: a still from a 35mm independent film — a woman receiving news through glass. Available light only, unretouched, natural skin texture.
-
-Constraints: cream blouse untucked, camel cardigan off one shoulder; her expression is flat and absorbing rather than shocked; keep every notice, card slot, sticker and reflected sign free of readable lettering.
+No readable lettering anywhere, and no border around the image.
 
 Thanks.
 ```
+
+**What to watch:**
+
+1. **Is she through glass, or in the open front?** The reflection is the whole idea. If the
+   panel has vanished and she is simply framed in the doorway, the shot has lost its point —
+   strengthen with a consequence: *"her face is seen through the glass and partly broken up by
+   what the glass is reflecting."*
+2. **Did it tighten?** Head and shoulders filling most of the frame. §2h.3's widening hedged and
+   §2j.11's tightening hedged twice, so this is the likeliest miss.
+3. **Is she acting?** A dropped jaw, wide eyes, a hand to the mouth — reject. The line to add is
+   *"her face barely changes at all."*
+4. **Are the reflected signs unreadable?** Reflections are where text sneaks back in, because
+   the surface is undefined by default.
+5. **Same kiosk?** Rust, peeled adhesive, the shelf, the coiled cord. It is why the re-fire
+   exists.
+
+> **Keep this still.** [§2h.6v](#2h6v-karen-listens-in-the-kiosk--clip) is re-run off it with
+> **its prompt text completely unchanged** — only the attached image differs. That clip was
+> already accepted against the old booth; it does not need rewriting, just re-firing.
 
 ### 2h.6v Karen listens in the kiosk — clip
 
