@@ -73,38 +73,83 @@ cuts between them; the engine's limit is pushing us toward the edit we would hav
 
 ---
 
-## 3a.0 He walks past — plate
+## 3a.0 He crosses the road — plate
 
 **Cast:** `@Aarron`. **Attach:** the accepted **§2j.0** still as image 1. **One reference.**
 **Time:** flat overcast mid-morning. **Engine:** Nano Banana Pro, 16:9, 3 candidates.
 
-> ### The walk is the accident.
+**Kai's call, 2026-08-18: start him in the road.** §3a.0b (below) already has him walking along
+the pavement and was accepted — **this frame goes in front of it**, so the clip can carry him all
+the way from the crossing to the spot where he stops and hears her.
+
+> ### The walk is the accident, and the crossing is the strongest version of it.
 >
 > [`story.md`](./story.md#31-the-aarron-cameo--redo-five-seconds-total): *"Aarron happens to
-> wander past the phone box — **he is not looking for anything.**"* Without this frame he is a
-> man who came to a phone box to film a woman, and the canon warns twice that **the believable
-> version is the accidental one.** Everything the cameo means rests on him having been on his way
-> somewhere else.
+> wander past the phone box — **he is not looking for anything.**"* **A man crossing a road is
+> unambiguously going somewhere**, more so than a man already on the pavement — he is mid-errand,
+> committed to a direction, and the phone box is not it.
 >
-> **So the tell is his hands: the phone is in his pocket.** He is not filming, not scrolling, not
-> looking for content. He gets it out *because of what he hears*, and the only way an audience
-> feels that is if they saw it put away first.
+> **The tell is still his hands: the phone is in his pocket.** He is not filming, not scrolling,
+> not looking for content. He gets it out *because of what he hears*, and the audience only feels
+> that if they saw it put away first.
 
-**A proper cut needs a different size, so this one is wide.** §3a.1 is a 135mm three-quarter from
-twenty feet; this is **a 50mm on the whole corner from thirty**. Wide establishes the geometry —
-her in the box, him coming along the pavement, the distance between them — and then the cut goes
-tighter as he stops. Same-size shots cut like a stutter.
+**⚠️ The road is clear and the lights are red.** A crossing implies traffic, and
+[vehicles have failed three times in this film](../../google-flow/omni-flash.md). Stating the
+lights are stopping the traffic is both true to how a person crosses a road **and** the thing
+that lets the clip animate without cars in motion — a plate constraint written for the clip that
+comes after it.
 
-**Karen stays the near, dominant figure**, as in every frame of this act. He is small, further
-away, and walking.
+**Karen stays the near, dominant figure.** He is a small figure out in the road.
 
-> ### ⚠️ The headphones stay on, and the beat does not touch them.
+```prompt
+Image 1 is the reference. Keep it exactly as it is — the same kiosk, the same subway entrance immediately behind it, the same scaffolding, the same corner, the same woman in the kiosk, her clothes, the flat overcast mid-morning light, and the grainy super-8 film look. Redesign nothing.
+
+Change three things:
+
+1. A wide shot of the corner on a 50mm lens at f/5.6, taken from the pavement about thirty feet from the kiosk at chest height, framed so the kiosk is on the left, the subway entrance is in the middle, and the pedestrian crossing and the road are visible on the right.
+
+2. The woman is in the kiosk on the left, closest to the camera, with the receiver at her ear, her mouth open in mid-shout and her free hand out in front of her off the shelf.
+
+3. A young man is out in the road on the pedestrian crossing, about halfway over, walking towards the near pavement, caught mid-stride with one foot off the ground. He is wearing his rig, his hands are down by his sides and his phone is in his pocket, and he is looking straight ahead at the pavement he is walking towards, not at her.
+
+The road is clear and the traffic is stopped at the lights further down the street. The pavement is otherwise empty. Natural skin texture with visible pores. No readable lettering anywhere. No border around the image.
+
+Thanks.
+```
+
+**What to watch:**
+
+1. **Are his hands empty and his phone away?** The most important thing in the frame. A phone
+   already in his hand and the cameo stops being an accident.
+2. **Is he actually in the road, on the crossing?** Not on the kerb, not on the pavement. The
+   crossing is what says *going somewhere*.
+3. **Is the road clear, with traffic stopped?** Both a realism check and the thing that makes the
+   clip safe to animate.
+4. **Is he looking ahead, not at her?** If he is already looking at her, the shot has skipped to
+   the beat after this one.
+5. **Is she still the nearest and largest?** He is small and far. The canon forbids making him
+   part of the attraction.
+
+> ### The clip that follows
+>
+> **§3a.0v carries him from the crossing to the spot where he stops** — up onto the pavement,
+> along past the subway entrance, slowing, his head turning towards the kiosk. **One mover**: she
+> only moves her mouth, which is not locomotion, so the
+> [two-figure rule](../../google-flow/omni-flash.md) does not bite. Written once this plate is
+> accepted.
+
+## 3a.0b He walks along the pavement — plate `[accepted 2026-08-18]`
+
+**Superseded as the opening frame by §3a.0**, but accepted and worth keeping: it is the middle of
+the walk, and a usable alternate if the crossing turns out to be too far away to read.
+
+> ### ⚠️ The headphones stay on, and no beat touches them.
 >
 > A man in over-ear headphones hearing a woman shout is a small logic problem, and the tempting
 > fix — **he lifts one cup off his ear** — is a lovely beat that **breaks continuity with the
-> accepted §3a.1 still**, where both cups are on. It is not worth it. She is shouting at the top
-> of her voice on an empty street; that is loud enough. **The "he heard it" moment is carried by
-> his head turning in the clip and by the narrator's line, not by the headphones.**
+> accepted §3a.1 still**, where both cups are on. Not worth it. She is shouting at the top of her
+> voice on an empty street. **The "he heard it" moment is carried by his head turning and by the
+> narrator's line.**
 
 ```prompt
 Image 1 is the reference. Keep it exactly as it is — the same kiosk, the same subway entrance immediately behind it, the same scaffolding, the same corner, the same woman in the kiosk, her clothes, the flat overcast mid-morning light, and the grainy super-8 film look. Redesign nothing.
@@ -121,19 +166,6 @@ The pavement is otherwise empty. Natural skin texture with visible pores. No rea
 
 Thanks.
 ```
-
-**What to watch:**
-
-1. **Are his hands empty and his phone away?** The single most important thing in the frame. A
-   phone already in his hand and the cameo stops being an accident.
-2. **Is he looking away from her?** Eyes down the pavement. If he is already looking at her, the
-   shot has skipped to the next beat.
-3. **Is he mid-stride?** One foot off the ground. A standing figure reads as arrived, and this
-   shot exists to show him *passing*.
-4. **Is she still the nearest and largest?** He is a small figure on the right.
-5. **Does the rig read at this distance?** Harness, headphones, the chest keyboard. If it is
-   unreadable at 50mm the fix is to bring him a little closer along the pavement, **not** to
-   describe it.
 
 ## 3a.1 The sample — plate
 
@@ -348,8 +380,9 @@ Thanks.
 
 | § | Piece | Notes |
 | --- | --- | --- |
-| **3a.0** | He walks past — plate | ✅ written — 50mm wide, phone in his pocket, not looking at her |
-| 3a.0v | He walks past — clip | **only he moves**: he walks, slows, and his head turns towards the kiosk |
+| **3a.0** | He crosses the road — plate | ✅ written — the new opening frame; a man crossing a road is unambiguously going somewhere |
+| **3a.0b** | He walks along the pavement — plate | ✅ **accepted 2026-08-18** — the middle of the walk; kept as an alternate |
+| 3a.0v | Crossing to the stop — clip | **only he moves**: up onto the pavement, along, slowing, head turning towards the kiosk |
 | **3a.1** | The sample — plate | ✅ written, **round 4** — 135mm three-quarter; he stands by the subway railings behind her |
 | **3a.1v** | The sample — clip | ✅ written — **only she moves**; he is planted and the one change is a smile |
 | 3a.2 | Karen shouts the line — plate | ⚠️ **owed** — her single; the sound the whole film hangs on, and it keeps the two-hander out of one moving frame |
