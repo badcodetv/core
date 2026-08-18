@@ -458,6 +458,12 @@ the model can check it against the picture it was handed.
 Pair it with a named focal length: it fixes the perspective, straightens verticals, and bounds
 how much world has to be invented.
 
+**✅ The same trick works on subjects, not just cameras.** *"Further down the pavement"* is a
+direction, and the model treats unclaimed space as free — Karen §3a.1 round 2 put a figure in the
+road. *"On the pavement beside the subway entrance railings, between the kiosk and the green
+globe posts"* is **a spot that exists in the attached reference and can be checked against it.**
+Place people the way you place cameras: by landmark, not by vector.
+
 ### 4. Slots: fewer is better, and order matters
 
 **Up to 14 references, but only about 6 at high fidelity** — and the field advice is to

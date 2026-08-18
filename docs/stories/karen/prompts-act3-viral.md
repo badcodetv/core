@@ -122,21 +122,46 @@ cuts between them; the engine's limit is pushing us toward the edit we would hav
 > **He stays on the pavement.** Round 2 put him in the road. Stated outright, because the corner
 > has a kerb and the model will use the road as free space if nothing stops it.
 
-**The angle: an 85mm over-the-shoulder.** Long enough to keep Act 3's compressed, watched-from-a-
-distance language, short enough that the camera does not have to stand a block away to make the
-frame. Prompt order follows the convention — **angle → lens → composition** — so the spatial
-rules land before any detail.
+> ### ⚠️ Round 3, 2026-08-18 — ✅ the Character bound, ⛔ I had been misreading the note.
+>
+> **Dropping the clothing description worked immediately.** He came back in the patterned
+> crewneck with the headphones and his own hair — the first time `@Aarron` has actually appeared
+> in this film. **That rule is settled and is not to be broken again.**
+>
+> **The composition note was mine to get wrong three times.** Kai has said *"behind and to the
+> side"*, then *"he should be behind her looking at her, next to the subway entrance."* I read
+> the first two as **camera** instructions — put the lens behind him — when they were always
+> **staging** instructions: *where Aarron stands in the world.*
+>
+> **He is a figure in the background.** The camera stays on Karen's side of the corner; he is
+> beyond her, by the subway railings, watching. That is what makes the cameo accidental — a man
+> who happens to be standing there — rather than a scene about a man with a phone.
+>
+> ### Naming the spot fixes the road problem too.
+>
+> Round 2 put him in the road because *"further down the pavement"* is a direction, not a place,
+> and the model treats unclaimed space as free. **"Standing on the pavement beside the subway
+> entrance railings, between the kiosk and the green globe posts"** is a spot that exists in the
+> reference and can be checked against it — the same fix as
+> [naming where the photographer stands](../../google-flow/nano-banana-2.md#3c--name-where-the-photographer-stands-not-what-the-shot-looks-like),
+> applied to a subject instead of a camera.
+
+**The angle: a 135mm three-quarter from the side.** Long enough to keep Act 3's
+watched-from-a-distance language and to **stack him up close behind her** while he stands ten or
+fifteen feet further back — which is exactly the composition the note asks for. Off-axis rather
+than dead-on, because the straight-on front of the kiosk is spent. Prompt order follows the
+convention: **angle → lens → composition**.
 
 ```prompt
 Image 1 is the reference. Keep it exactly as it is — the same kiosk, the same subway entrance immediately behind it, the same scaffolding, the same corner, the same woman in the kiosk, her clothes, the flat overcast mid-morning light, and the grainy super-8 film look. Redesign nothing.
 
 Change three things:
 
-1. An over-the-shoulder shot on an 85mm lens at f/4, taken from just behind a young man's shoulder at his head height. He fills the near left of the frame from behind, large and out of focus, and everything beyond him is sharp.
+1. A three-quarter shot from the side of the kiosk on a 135mm lens at f/5.6, taken from the pavement about twenty feet away at chest height, so the kiosk, the subway entrance and the block behind them are compressed and stacked up close together. Everything in the frame is in focus.
 
-2. He has stopped mid-walk on the pavement a few steps in front of the kiosk, wearing his rig, holding his phone up in both hands to film her. He is standing well back from the kerb and every part of him is on the pavement.
+2. The woman is in the kiosk in the left half of the frame, closest to the camera, with the receiver at her ear, her mouth open in mid-shout and her free hand out in front of her off the shelf. She does not know anyone is watching her.
 
-3. The woman is in the kiosk beyond him, in the right half of the frame and sharp, with the receiver at her ear, her mouth open in mid-shout and her free hand out in front of her off the shelf. She does not know he is there.
+3. A young man has stopped ten or fifteen feet behind her, standing on the pavement beside the subway entrance railings between the kiosk and the green globe posts, well back from the kerb. He is wearing his rig and holding his phone up in both hands to film her, and he is facing her, so his face is turned towards the camera and clearly visible. He is smaller in the frame than she is.
 
 The pavement is otherwise empty. Natural skin texture with visible pores. No readable lettering anywhere, and nothing readable on the phone screen. No border around the image.
 
@@ -145,14 +170,17 @@ Thanks.
 
 **What to watch:**
 
-1. **Is the rig there, and does it read?** Headphones, the harness straps across his back, the
-   chest mic, cables. **It is the only thing identifying him in this framing**, and with the
-   clothing description finally gone the Character should supply all of it.
-2. **Is he on the pavement?** Round 2 put him in the road. The kerb is the tell.
-3. **Is she the sharp one?** He is the blur; she is the subject. If the focus has swapped, it has
-   become his scene, which the canon forbids twice.
-4. **Is her mouth open?** Mid-shout is what he is recording and what the narrator's line sits on.
-5. **Blank phone screen?** Screens are where text appears and where policy blocks come from.
+1. **Is he behind her, by the railings?** The note, three rounds running. He should be a smaller
+   figure in the background beside the subway entrance — **not** a foreground presence, and not
+   in the road.
+2. **Is she the nearest and largest thing in frame?** The canon forbids making him part of the
+   attraction twice over. She is the subject; he is a man who happened to stop.
+3. **Does the rig read?** Headphones, harness, the chest-mounted keyboard, the shoulder mic. With
+   no clothing in the prompt the Character supplies all of it — round 3 proved that works.
+4. **Is it compressed?** 135mm should stack the block up behind the kiosk. A wide-looking frame
+   means the lens instruction lost.
+5. **Blank phone screen, mouth open.** The screen is where text and policy blocks come from; the
+   shout is what the narrator's line sits on.
 
 > ### ⚠️ Standing rule, relearned the hard way
 >
@@ -165,7 +193,7 @@ Thanks.
 
 | § | Piece | Notes |
 | --- | --- | --- |
-| **3a.1** | The sample — plate | ✅ written, **round 3** — 85mm over his shoulder; the rig identifies him, no clothing described |
+| **3a.1** | The sample — plate | ✅ written, **round 4** — 135mm three-quarter; he stands by the subway railings behind her |
 | 3a.1v | The sample — clip | **only he moves**: he stops, lifts the phone, lowers it, walks out of frame. Karen holds. |
 | 3a.2 | Karen shouts the line — plate | her single; the counter-shot, so the two-hander never shares a moving frame |
 | 3a.2v | …— clip | **only she moves.** This is the *"I've got ALL DAY to complain"* shot |
