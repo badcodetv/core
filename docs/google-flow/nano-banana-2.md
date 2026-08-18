@@ -597,6 +597,36 @@ shopfronts, conservatories, anything shot side-on through two panes.
 medium close-up in profile"* is a framing the model knows; *"the camera has moved round to the
 side and is close"* is a description of a tripod, and it renders as one.
 
+### 12. ⚠️ A Character binds to a face. No face in the shot, no likeness `[observed]`
+
+Obvious once said, and it cost a generation. Karen §3a.1 round 1 (2026-08-18) attached
+`@Aarron` to a shot specified as *"seen from behind… only a sliver of the side of his face"* —
+**and the likeness did not appear, because there was nothing for it to appear on.**
+
+**Design the shot and the Character attachment together.** An anonymising framing — from behind,
+silhouetted, face out of frame, too small to read — is a decision to **not use the Character**,
+and that is legitimate as long as it is a choice. The consistency guidance asks for a reference
+that *"clearly shows the face"*; the same holds on the output side.
+
+### 13. ✅ Prompt order for camera work: **angle → lens → composition → lighting → style**
+
+The field convention, and it matches what has worked here: **set the spatial rules before adding
+any detail.** Composition instructions written after lighting and style tend to lose. Pairs with
+naming the photographer's standing position — angle first, and make it an angle a person could
+occupy.
+
+### 14. ✅ Long lenses are under-used and hard to fake `[community]`
+
+**Telephoto compression stacks foreground, midground and background together** and isolates the
+subject; 135mm is the workhorse, 200mm+ is extreme. Two reasons it earns a place in an anti-slop
+kit:
+
+- **Nearly all AI street imagery is wide.** A compressed frame reads as a lens choice somebody
+  made, which is most of what "cinematic" means.
+- **It is motivated whenever the subject is unaware.** *"Telephoto lenses work well for candid
+  street shots where you want distance between camera and subject"* — so it carries story as well
+  as look, which is the only kind of style decision worth making.
+
 ### Sources for this section
 
 - [Google — prompting tips for Nano Banana Pro](https://blog.google/products/gemini/prompting-tips-nano-banana-pro/) `[vendor]`
@@ -604,6 +634,8 @@ side and is close"* is a description of a tripod, and it renders as one.
 - [Nano Banana Pro reference images: setup and drift fixes](https://www.aifreeapi.com/en/posts/nano-banana-pro-reference-images) `[community]`
 - [Nano Banana Pro camera control guide](https://techyheaven.com/nano-banana-pro-camera-control/) `[community]`
 - [How to make AI images look real (2026)](https://imagera.ai/blog/make-ai-images-look-real-2026) `[community]`
+- [Camera angles & composition for AI image generation (2026)](https://www.gensgpt.com/blog/camera-angles-composition-ai-image-generation-2026-guide) `[community]` — prompt order, telephoto compression, foreground layering
+- [How to keep characters consistent in Google Flow](https://veobulk.com/en/blog/consistent-characters-google-flow) `[community]`
 - [DetailMaster — can your text-to-image model handle long prompts?](https://arxiv.org/pdf/2505.16915) `[research]` — the length/adherence correlation
 - [Consistent style in Nano Banana image edits](https://sider.ai/blog/ai-tools/how-to-write-prompts-that-produce-consistent-style-in-nano-banana-image-edits) `[community]` — hair-and-wardrobe drift, keep-before-change ordering
 
