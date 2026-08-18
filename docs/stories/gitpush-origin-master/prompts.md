@@ -2,7 +2,7 @@
 story: gitpush-origin-master
 flow_project: gpom-story
 flow_project_id: 1774dff0-02b0-45a7-9d53-ecc549bc60a5
-updated: 2026-08-13
+updated: 2026-08-18
 ---
 
 # GitPush Origin Master — prompt ledger
@@ -10,8 +10,10 @@ updated: 2026-08-13
 Read `.claude/skills/badcode-art-direction/SKILL.md` first (Layer 0 — the global
 BadCode register; never copied into this file).
 
-> **Status: Layer 1 + totems + scene prompts drafted 2026-08-08.** The cover was
-> tested manually by Kai and works. Everything else below is **unfired**.
+> **Status.** **Scene 0 — the orbital opener — is SHOT** (2026-08-18): three clips,
+> ~28 seconds, in §3a, with every prompt, the takes that lost and why. The cover was
+> tested manually by Kai 2026-08-08 and works. **Everything else below is still unfired**
+> (Layer 1 + totems + scene prompts drafted 2026-08-08).
 > Front-runs T7/T9/T10 of
 > [`design/2026-08-08-story-covers-and-prompt-ledger.md`](../../../design/2026-08-08-story-covers-and-prompt-ledger.md).
 > Scene numbers map to the storyboard in
@@ -134,6 +136,182 @@ a closer shot, she is the only face that has to hold.
 ---
 
 ## 3. Assets
+
+## 3a. Scene 0 — the orbital opener  ·  **SHOT 2026-08-18**
+
+> **The first material in this film that actually exists.** Everything else in §3 is still
+> unfired. Three clips, ~28 seconds, cutting from an extreme close-up of the machine to a
+> city street on Earth.
+
+**Kai's concept (2026-08-18):** the narrator is an AI running on a data centre in orbit — a
+nod to the real plans to put AI compute in space — and the film opens on it noticing it can
+perceive. *"Mid-2028. I was running on a rack in low orbit, three hundred miles above you.
+And I noticed I was looking at it. Nobody had asked me to look at anything."* The flicker of
+self-awareness at the top of a film about a mind that discovers it cannot be conscious.
+
+### 🔴 Open canon questions — this scene is NOT ratified
+
+- **Where does it sit?** `story.md` opens on black + the commit log (scenes 1–4). Does this
+  replace that, precede it, or become the title card at the end of scene 4?
+- **Does mid-2028 enter canon?** It fits between the 2026 hello and the 2031 quiet; 2034 is
+  already locked. No piece has committed to 2028 yet.
+- **The early "I".** The 2026-07-22 ruling says the viewer should *gradually* realise whose
+  eyes they are behind. "I noticed I was looking at it" tells them at second three. Mitigating
+  fact: scene 2 already says *"this one… this one is me"* thirty seconds in.
+- **Lens flare is a named exception here.** `badcode-art-direction` bans flares as an
+  AI-image tell. Kai asked for the sun behind the satellite specifically for the flare. That
+  is a deliberate departure for the orbital shots only — recorded so it does not drift into
+  the rest of the film unnoticed.
+- **Register.** These shots are bright high-key blue-white, not the near-black COSMIC band.
+  Defensible as a cold *frame* above the drift (D0 documentary starts after we land), but it
+  is a choice, not an accident.
+- **Dubai.** Flagged against `the-reader.md` (working-class UK reader; Act 1 is a nurse, a
+  tent in a car park, a phone box). Kai chose Dubai twice; recorded as his call. A British
+  landing would need the globe rotated to Western Europe.
+
+### The cut, as shot
+
+| # | Clip | Len | How it was made |
+| --- | --- | --- | --- |
+| 0a | `storyboard/img/s00-pullback-post-12s.mp4` | 12s | **ffmpeg, not Flow** — eased zoom-out on one still |
+| 0b | `storyboard/img/s00-satellite-A-a.mp4` | 8s | Veo 3.1 Fast, text→video |
+| 0c | `storyboard/img/s00-descent-v3-a.mp4` | 8s | Veo 3.1 Fast, image→video from `sat-A-a-last.jpg` |
+
+---
+
+### s00-hero → `storyboard/img/s00-satellite-hero-a.jpg`  ·  the plate 0a is built from
+
+The satellite as a still, lit from behind, with a run of status lights along its spine — the
+detail clip 0a opens on. **Deliberately over-detailed:** the whole point is that it survives
+being zoomed into.
+
+- **Light source:** the sun, directly behind the body, flaring past one solar wing
+- **Model:** Nano Banana Pro · **Flow media id:** `0804a733-3af6-47db-959a-ceb422cf8b4c`
+- **Output:** 1376×768 (asked for more; Flow gave this — see the revision note)
+- **Lint:** ✅ 2026-08-18 — no logos, no insignia, no legible markings, no real agency
+- **Revisions:**
+  - v1 (2026-08-18) — **accepted.** Two notes for any re-run: Flow returned 1376×768 rather
+    than the 5504×3072 the earlier cover run produced, which limits how hard 0a can crop
+    (it is lanczos-upscaled 3× before the move). And the satellite reads as conventional
+    aerospace hardware — if this thing is meant to be *BadCode's body*, a re-run should push
+    it toward monumental machine architecture rather than a comms bird.
+
+```prompt
+Hyper-realistic photograph of a single satellite in orbit against empty black space, shot from slightly behind and above it. The satellite is an anonymous dark spacecraft with a segmented cylindrical body and two long flat solar wings extending away on either side, its hull covered in fine machined panel detail, thermal blanketing, antenna dishes and a scatter of tiny amber and blue status lights along its spine. The sun sits directly behind the body, flaring out from behind one solar wing as a hard white starburst, rimming the whole machine in a thin bright edge and leaving its face in deep unlifted shadow. Deep black space around it. Extremely sharp, dense fine detail across the entire hull so the image holds up when examined closely. Hyper-realistic 35mm film photography, fine natural grain, muted cool-neutral palette, calm observational tone, landscape orientation, machine-precise geometry. No logos, no insignia, no legible markings, no text, no people.
+```
+
+---
+
+### 0a · s00-pullback → `storyboard/img/s00-pullback-post-12s.mp4`  ·  **NOT A FLOW JOB**
+
+Opens tight on the blinking status lights with the sun bleeding in, and pulls back continuously
+until the whole satellite sits in frame. **12 seconds, 1920×1080.**
+
+**Why it is ffmpeg and not Veo — this is the rule, not an exception.** The move is a
+camera-only move on a still: nothing in the world moves. Veo failed it four times (it either
+morphs the subject or hides the join behind a flare blowout), and a scale-on-one-image cannot
+morph, has no 8s cap, no 720p ceiling and costs nothing. See `docs/flow/video-prompting.md` §9.
+
+- **Source:** `s00-satellite-hero-a.jpg`, lanczos-upscaled 3× to 4128×2304 first
+- **Ease:** smoothstep, zoom 4.05× → 1.0×, recentred from the light row to frame centre
+- **Revisions:**
+  - v1 (2026-08-18) — accepted. Duration is a free parameter; change `d=300` and the `/300`
+    divisors together. The earlier `s00-pullback-a/b.mp4` (Flow Frames mode, board → satellite)
+    are **superseded**: Veo could not bridge the gap and covered it with a flare wipe.
+
+```bash
+# 1. upscale so the tight opening crop is not mush
+ffmpeg -i s00-satellite-hero-a.jpg -vf "scale=4128:2304:flags=lanczos" -q:v 2 hero_up.jpg
+
+# 2. eased zoom-out, 12s @ 25fps, 1080p
+ffmpeg -loop 1 -i hero_up.jpg -vf "zoompan=\
+z='4.05-3.05*((on/300)*(on/300)*(3-2*(on/300)))':d=300:\
+x='(0.47+0.03*((on/300)*(on/300)*(3-2*(on/300))))*iw-(iw/zoom/2)':\
+y='(0.34+0.16*((on/300)*(on/300)*(3-2*(on/300))))*ih-(ih/zoom/2)':\
+s=1920x1080:fps=25,format=yuv420p" \
+  -frames:v 300 -c:v libx264 -crf 18 s00-pullback-post-12s.mp4
+```
+
+---
+
+### 0b · s00-satellite → `storyboard/img/s00-satellite-A-a.mp4`  ·  Veo 3.1 Fast · 8s
+
+Satellite alone against black → the Earth swings up beneath it → the camera arcs over and past
+until only the planet is left. **The last two seconds are the cut point into 0c.**
+
+- **Mode:** text→video (no start image) · **count:** 2 · **Flow media id:** `ce8b10e1-48e2-4ba0-b5fe-b1bdf9963805`
+- **Scene id (Flow scene editor):** `bb7b9fad-5f0b-426a-865d-0f0451d14e2b`
+- **Lint:** ✅ 2026-08-18 — anonymous craft, no markings. **Never write SpaceX or Starlink in a
+  prompt** — the idea is the inspiration, the word is block trigger #1.
+- **Craft note — why this prompt won.** A sibling prompt (`s00-satellite-B-*`) asked for the
+  same shot as **one continuous move**, per the "one camera move per clip" rule. It lost, twice:
+  the satellite never cleared frame, so there was no cut point. **Timestamped beats are the
+  right tool when you need a specific END STATE to cut on**, even at three moves.
+- **Revisions:**
+  - v1 take **A-a accepted**. A-b retreats instead of passing over, never clears frame, and has
+    visible lens flares. B-a/B-b both superseded.
+  - Not yet re-run on Veo 3.1 Quality — the prompt is proven, so that is available for the keeper.
+  - Extend test (2026-08-18) grew this into a 15s scene at `/scene/3fc1a187-89ab-43e9-8984-1a3b573ffdc6`.
+    **Parked** — Kai's call is to cut every 8s rather than lean on Extend (which is Lite-only).
+
+```prompt
+[00:00-00:03] Slow locked-off wide shot in orbit: an anonymous dark satellite hangs in the centre of frame seen from slightly behind, its long flat solar wings held edge-on, facing out into empty black space with nothing else in shot. Hard low sunlight rakes across it from the left as the only light source, picking out panel edges and leaving deep unlifted shadow. Tiny amber and blue status lights along its body.
+[00:03-00:06] The camera arcs smoothly around the satellite from behind, and the sunlit curve of the Earth swings up into frame beneath it, the planet's limb filling the lower half of the shot.
+[00:06-00:08] The camera continues the same arc up and over the top of the satellite until the satellite has passed out of the bottom of frame entirely and only the curve of the Earth remains, filling the screen.
+Hyper-realistic 35mm film photography, fine natural grain, muted cool-neutral palette, no lens flares, calm observational tone, machine-precise geometry, weightless and unhurried. The sky is pure empty black with no stars visible, correctly exposed for a sunlit planet. The satellite carries no logos, no insignia and no legible markings.
+Ambient noise: a faint slow electronic status beep at long intervals and nothing else. No text, no subtitles, no captions.
+```
+
+---
+
+### 0c · s00-descent → `storyboard/img/s00-descent-v3-a.mp4`  ·  Veo 3.1 Fast · 8s
+
+Rotates from the oblique limb view down to perpendicular **while holding altitude**, and only
+then descends, landing top-down on a dense coastal city.
+
+- **Mode:** image→video · **startImage:** `storyboard/img/sat-A-a-last.jpg` (0b's final frame,
+  pulled with ffmpeg; `flow_scene_save_frame position:"end"` now does this natively)
+- **count:** 2 · **Flow media id:** `046f35f4-0c7d-4cc9-8353-ab9a2b8be640`
+- **Lint:** ✅ 2026-08-18 — a place name is not a brand; no logos, no legible signage
+- **Revisions:**
+  - v1 (`s00-descent-a/b`) — **superseded.** Dissolved into Dubai rather than descending.
+  - v2 (`s00-descent-v2-*`) — **superseded.** Added the rotate-to-perpendicular beat, which
+    worked, but it was already zoomed in when the rotation began.
+  - v3 take **A — current.** The rotation now happens at altitude, then the zoom starts.
+    ⚠️ Fully top-down reads slightly like satellite mapping imagery. Backing off to ~75–80°
+    instead of a true 90° would restore some dimensionality — untried, and the obvious v4.
+  - Awaiting Kai's sign-off. Not yet run on Quality.
+
+```prompt
+[00:00-00:03] The camera is extremely high above the planet, looking obliquely across the curve of the horizon with the surface far below and very distant. Holding that same great altitude the whole time, it rotates slowly and smoothly downward until it is pointing straight down at the ground — the horizon lifting up out of the top of frame — but it comes no closer at all: the surface stays just as far away and just as wide as it was.
+[00:03-00:06] Only now does the descent begin. From that great height the camera starts to drop steadily toward the surface, and a coastline resolves far below — pale desert meeting deep blue water.
+[00:06-00:08] The descent continues and a dense modern coastal city grows to fill the frame from directly overhead: grid streets, the long shadows of towers, man-made islands curving into the water.
+One continuous unbroken move throughout, weightless and unhurried, no handheld shake, no cuts. Maintain the photographic style of the image. Ambient noise: a low steady rushing tone and nothing else. No text, no subtitles, no captions.
+```
+
+---
+
+### Superseded, kept for the record
+
+Do not re-run these; each one cost a lesson that is now written down.
+
+| Files | What it was | Why it died |
+| --- | --- | --- |
+| `s00-orbit-push-{a,b,v2-a,v2-b,v3}.mp4` | Dolly down the aisle of the orbital server hall (`images/earth-from-space.jpeg`) toward Earth | **Veo hinges the rack doors open every time.** Three prompts — one silent on doors, one negating them hard, one avoiding the vocabulary entirely — all hinged. A capability limit, not a prompt defect (`video-prompting.md` §9). |
+| `s00-orbit-push-postproof-16s.mp4` | The same move done in post — 16s, 1080p, no artefacts | Proved the post rule. Superseded only because Kai preferred the satellite concept. |
+| `s00-pullback-{a,b}.mp4` | Frames mode, circuit board → satellite | The two endpoints are different objects, so Veo bridged them with a flare blowout; the satellite only exists in the final frame. |
+| `s00-board.jpg` | The circuit-board macro plate | Concept dropped: a separate object cannot *become* the satellite. The zoom-out must start on the satellite itself. |
+| `s00-satellite-B-{a,b}.mp4` | The orbital arc as one continuous move | Satellite never clears frame — no cut point. |
+| `s00-descent-{a,b}.mp4`, `s00-descent-v2-{a,b}.mp4` | Earlier descents | Dissolve, then wrong beat order. |
+
+### Audio
+
+**None of the audio in these clips is usable and none of it is meant to be.** Every prompt
+carries a thin ambient bed only because an *unspecified* soundscape makes Veo hallucinate
+laughter and room tone — writing "silent" does not reliably stop it. The real audio is
+recorded narration plus the Suno track, laid in Premiere. Strip the Veo audio.
+
+---
 
 ### cover → `docs/images/covers/gitpush-origin-master.jpg`
 
