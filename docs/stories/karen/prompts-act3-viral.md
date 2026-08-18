@@ -501,6 +501,73 @@ Thanks.
 5. **Is it much closer than §2h.6?** She should fill the frame. Same distance means we have made
    the same shot twice.
 
+### 3a.2c The phone-screen version — plate
+
+**Cast:** `@Karen`. **Attach:** the accepted **§2j.0** still as image 1 — **setting only, one
+reference.** **Engine:** Nano Banana Pro, 16:9, 3 candidates.
+
+> ### This is the artefact. Everything else in the act is about it; this is it.
+>
+> Twenty million people are about to watch **this exact picture**, and the film has never shown
+> it. **It also gives Act 3 a formal device of its own** — the way the aerial belonged to Act 2 —
+> and it is the one frame here that can be lifted verbatim into the music video and the social
+> cuts, because in-world it is a real object rather than a shot of one.
+
+> ### ⚠️ The `STYLE LOCK` is deliberately **off** for this plate. It is the only one.
+>
+> Every other frame in this film is super-8: grain, halation, soft edges, shallow focus. **A
+> phone camera is the exact opposite** — deep focus front to back, over-sharpened, digital noise
+> in the shadows, blown highlights, careless framing. **That contrast is the whole point.** If it
+> comes back looking like the rest of the film, the device has failed and it is just another shot
+> of Karen.
+>
+> **So the keep-list carries the street and explicitly not the look**, which is a first for this
+> project: *"do not use image 1's film look."*
+
+**The thumb is the realism token.** Everything else could be faked; a thumb sliding over the
+corner of the lens is what nobody stages. It does the job that
+[grain and imperfect framing](../../google-flow/nano-banana-2.md#the-anti-slop-toolkit-community)
+do everywhere else.
+
+**⚠️ No interface, anywhere.** We are **inside** the recording, not looking at a phone, so there
+is no reason for a timer, a record button or a battery icon — and
+[legible on-screen text is both our standing rule and the most reliable policy block there
+is](../../flow/README.md). The block says so outright rather than trusting the absence.
+
+**Vertical picture, black either side.** The output is still 16:9; the *content* is a portrait
+video sitting in the middle of it. **This is the one plate where a border is wanted**, so the
+usual *"no border"* clause is gone — deliberately, not by oversight.
+
+```prompt
+Image 1 is the reference for the setting only. Keep the street exactly as it is and redesign nothing about it: the same narrow Midtown side street, the same phone kiosk, the same subway entrance behind it with its dark green railings and green glass globes on cast-iron posts, the same pre-war masonry, the same paving and the same flat overcast mid-morning light.
+
+Do not use image 1's film look. This picture is modern phone video, not film.
+
+The frame is 16:9 and mostly plain black. In the middle of it stands a tall vertical video picture about half the width of the frame, with plain black on either side of it.
+
+Inside that vertical picture: the woman in the kiosk, filmed on a phone from about fifteen feet away along the pavement, handheld. Everything in the picture is in focus from front to back. It looks exactly like modern phone footage — bright, over-sharpened, a little noisy in the shadows, with the white sky blown out to pure white. The framing is careless: she is off to one side, the horizon is tilted, and the tip of a thumb intrudes over the bottom right corner of the picture, dark and out of focus.
+
+She is caught at the top of a shout, mouth wide open, the receiver hard against her ear and her free hand thrown out in front of her. She has no idea she is being filmed.
+
+She is the only person in the vertical picture. Natural skin texture. Keep every sign, notice, hoarding and shopfront free of readable lettering, and keep the picture free of any icons, buttons, timers or on-screen markings.
+
+Thanks.
+```
+
+**What to watch:**
+
+1. **Does it look like phone footage, or like our film?** Deep focus, sharp, bright, blown sky.
+   **Any grain, halation or shallow focus means the register break failed** — and this shot is
+   worth nothing without it.
+2. **Is the picture vertical, with black either side?** The one plate where the bars are the
+   design.
+3. **Is the frame careless?** Tilted, her off to one side. A well-composed phone video is a
+   contradiction and reads instantly as fake.
+4. **Is the thumb there, and is it a thumb?** Bottom right, dark, out of focus. It is the single
+   most convincing detail available.
+5. **Any interface at all?** A timer, a red dot, a battery icon — reject. Text is the standing
+   rule and the most common policy block.
+
 ## What this act still owes
 
 > ### ⚠️ Gap found 2026-08-18 (Kai): the cameo was built middle-first.
@@ -534,7 +601,7 @@ Thanks.
 | **3a.1v** | The sample — clip | ✅ written — **only she moves**; he is planted and the one change is a smile |
 | **3a.2a** | Across the street — plate | ✅ written — 200mm paparazzi grammar; the camera becomes a watcher |
 | **3a.2b** | Through the side panel — plate | ✅ written — the upright cuts her face in two |
-| 3a.2c | The phone-screen version — plate | owed — Act 3's formal device; the artefact that goes viral |
+| **3a.2c** | The phone-screen version — plate | ✅ written — **`STYLE LOCK` off**, the only plate in the film without it |
 | 3a.2v | …— clip | **only she moves.** This is the *"I've got ALL DAY to complain"* shot |
 | 3a.3 | The train — plate | two riders, a phone between them, the tune playing in-world |
 | 3a.4 | The crowd — the drone trick | **stills only, cut between.** Altitude up/down, the crowd bigger each time. Never animated. |
