@@ -57,6 +57,9 @@ cuts between them; the engine's limit is pushing us toward the edit we would hav
 
 ## The other standing rules, carried forward
 
+0. **⚠️ Never describe a cast member's appearance** when their Character is attached — no
+   clothes, no face, no build. The casting rule is in every character file; breaking it made
+   Aarron a different man in every frame. **Describe the shot only.**
 1. **One reference, described relations minimal** (Kai, 2026-08-18). Attach the canon corner
    [§2j.0](./prompts-act2-escalation.md#2j0-the-corner-with-karen-in-it--plate) and describe
    everything else. A second image costs more than a role label buys back.
@@ -85,52 +88,55 @@ cuts between them; the engine's limit is pushing us toward the edit we would hav
 > him part of the attraction.* So this is not a hero shot of a young producer discovering a
 > star. **It is a man who has stopped walking.**
 
-> ### ⚠️ Round 1 fired 2026-08-18 — three notes from Kai, and they resolve into one shot.
+> ### ⚠️ Rounds 1 and 2, 2026-08-18. **Aarron kept changing, and the cause was in this file's own rules.**
 >
-> | Note | Cause |
-> | --- | --- |
-> | *"Aarron should not be in front of Karen, maybe behind and to the side"* | round 1 put him in the near foreground, which made it his scene |
-> | *"it did not use his likeness from `@Aarron`"* | **my error: I asked for the back of his head.** A Character has nothing to apply a face to when there is no face in the frame |
-> | *"the same shot directly in front of Karen is getting boring"* | true — every frame in this film so far is 28–35mm from in front of her |
+> **I described him.** Both rounds said *"a hoodie, a jacket and trainers with a small backpack
+> on one shoulder."* [`characters/aarron.md`](./characters/aarron.md#flow-character) forbids
+> exactly that:
 >
-> ### The likeness rule, now explicit: **a Character needs a face in the shot.**
+> > **Casting rule:** these prompts are never pasted into a scene prompt. Scene blocks say
+> > `**Cast:** @Aarron` and describe the shot only — **a face described in prose competes with
+> > the Character binding instead of reinforcing it.**
 >
-> The consistency guidance asks for *"a sharp image with neutral lighting that clearly shows the
-> face"* on the reference side; the same is true of the **output** side. **`@Aarron` on a shot of
-> the back of a head is a wasted attachment.** Round 1's whole design — anonymity, a sliver of
-> face, *"he is not part of the attraction"* — was faithful to the canon and incompatible with
-> using his Character at all.
+> **And the description was wrong as well as forbidden.** His canon look is a **patterned
+> crewneck sweater** and the **wearable rig** — harness, chest-mounted keyboard, over-ear
+> headphones, a shoulder mic, real straps and cables. A hoodie and a backpack is a different
+> young man, described twice, in two different sets of words. **The prose was not merely
+> competing with the Character; it was overruling it with a stranger.**
 >
-> **Resolved by putting him behind her rather than in front:** further down the street, **facing
-> back towards the camera as he films her**, so his face is toward us and the Character binds,
-> while she is still the near, dominant figure. Kai's first note fixes the second.
+> **Why Karen never drifts, by contrast:** her face is never described, *and* she is in the
+> attached reference still as well as the Character. **Two sources agreeing.** Aarron had one
+> source being argued with.
 >
-> ### ✅ The new angle: go long. 135mm from down the pavement.
+> ### ✅ The rig is the identification, which is why over-the-shoulder works.
 >
-> **A long lens is how you photograph someone who does not know you are there**, which is exactly
-> what this act is about — so the change is motivated, not decorative. It also
-> [compresses the block and stacks the layers](https://www.gensgpt.com/blog/camera-angles-composition-ai-image-generation-2026-guide),
-> which puts Aarron visually close to her while keeping him ten or fifteen feet behind, and it
-> gives Act 3 **a visual language of its own**: everything up to now is a wide standing on the
-> corner; from here the camera is watching from a distance, because so is everybody else.
+> His file: *"the wearable rig **is** the character — it is what makes him legible as a roaming
+> street producer in a single frame, so the harness, keyboard, mic and cables are load-bearing,
+> not costume detail."*
 >
-> **Prompt order matters and is now followed:** the field convention is **angle → lens →
-> composition → lighting → style**, so that spatial rules are set before any detail is added.
+> **So Kai's framing solves the likeness problem from the other end.** Round 1 failed from behind
+> because there was no face *and* no rig — nothing to recognise. **From behind with the rig on,
+> he is unmistakable**, and we get the over-the-shoulder that puts Karen where she belongs: in
+> front of the camera, sharp, being watched.
 >
-> **Anti-slop levers in this frame:** telephoto compression (unusual and hard to fake), a
-> deliberate blurred foreground occluder, an off-centre subject, and a candid distance rather
-> than a composed portrait.
+> **He stays on the pavement.** Round 2 put him in the road. Stated outright, because the corner
+> has a kerb and the model will use the road as free space if nothing stops it.
+
+**The angle: an 85mm over-the-shoulder.** Long enough to keep Act 3's compressed, watched-from-a-
+distance language, short enough that the camera does not have to stand a block away to make the
+frame. Prompt order follows the convention — **angle → lens → composition** — so the spatial
+rules land before any detail.
 
 ```prompt
 Image 1 is the reference. Keep it exactly as it is — the same kiosk, the same subway entrance immediately behind it, the same scaffolding, the same corner, the same woman in the kiosk, her clothes, the flat overcast mid-morning light, and the grainy super-8 film look. Redesign nothing.
 
 Change three things:
 
-1. The shot is taken from a long way down the pavement on a 135mm lens at f/5.6, from a photographer standing back against the scaffolding at chest height and looking along the street, so the whole block is compressed and stacked up behind the kiosk. A scaffolding pole crosses the very near edge of the frame, blurred. Both people described below are in focus.
+1. An over-the-shoulder shot on an 85mm lens at f/4, taken from just behind a young man's shoulder at his head height. He fills the near left of the frame from behind, large and out of focus, and everything beyond him is sharp.
 
-2. The woman is in the kiosk, a little left of centre, with the receiver at her ear, her mouth open in mid-shout and her free hand out in front of her off the shelf. She does not know anyone is watching her.
+2. He has stopped mid-walk on the pavement a few steps in front of the kiosk, wearing his rig, holding his phone up in both hands to film her. He is standing well back from the kerb and every part of him is on the pavement.
 
-3. A young man in his twenties stands further down the pavement, beyond the kiosk and off to the right, ten or fifteen feet behind her. He has stopped mid-walk and is holding his phone up in both hands, filming her, so he is facing back towards the camera and his face is clearly visible. He is in a hoodie, a jacket and trainers with a small backpack on one shoulder.
+3. The woman is in the kiosk beyond him, in the right half of the frame and sharp, with the receiver at her ear, her mouth open in mid-shout and her free hand out in front of her off the shelf. She does not know he is there.
 
 The pavement is otherwise empty. Natural skin texture with visible pores. No readable lettering anywhere, and nothing readable on the phone screen. No border around the image.
 
@@ -139,25 +145,27 @@ Thanks.
 
 **What to watch:**
 
-1. **Is his face visible and is it Aarron?** The round-1 failure and the whole reason for the new
-   geometry. If it is turned away again, `@Aarron` has nothing to bind to and the attachment is
-   wasted.
-2. **Is it actually compressed?** 135mm should stack the block up behind the kiosk and make the
-   buildings look close and flat. If it comes back looking like a 35mm wide, the framing lost to
-   the reference and the fix is a consequence — *"the buildings behind the kiosk look stacked
-   right up against it."*
-3. **Is she still the near, dominant figure?** He is behind and smaller. If he has come forward
-   again it has become his scene, which the canon forbids twice.
-4. **Is her mouth open?** Mid-shout is what he is recording, and it is what the narrator's line
-   sits on.
-5. **Blank phone screen?** Screens are the most reliable place for text to appear and the most
-   reliable policy block there is.
+1. **Is the rig there, and does it read?** Headphones, the harness straps across his back, the
+   chest mic, cables. **It is the only thing identifying him in this framing**, and with the
+   clothing description finally gone the Character should supply all of it.
+2. **Is he on the pavement?** Round 2 put him in the road. The kerb is the tell.
+3. **Is she the sharp one?** He is the blur; she is the subject. If the focus has swapped, it has
+   become his scene, which the canon forbids twice.
+4. **Is her mouth open?** Mid-shout is what he is recording and what the narrator's line sits on.
+5. **Blank phone screen?** Screens are where text appears and where policy blocks come from.
+
+> ### ⚠️ Standing rule, relearned the hard way
+>
+> **Never describe a cast member's clothes, face or build in a scene prompt** when their
+> Character is attached. It is written in every character file and it was still worth two
+> generations to relearn. **The shot only** — where they are, what they are doing, where the
+> camera is.
 
 ## What this act still owes
 
 | § | Piece | Notes |
 | --- | --- | --- |
-| **3a.1** | The sample — plate | ✅ written, **round 2** — 135mm down the pavement; he is behind her, facing back, so `@Aarron` binds |
+| **3a.1** | The sample — plate | ✅ written, **round 3** — 85mm over his shoulder; the rig identifies him, no clothing described |
 | 3a.1v | The sample — clip | **only he moves**: he stops, lifts the phone, lowers it, walks out of frame. Karen holds. |
 | 3a.2 | Karen shouts the line — plate | her single; the counter-shot, so the two-hander never shares a moving frame |
 | 3a.2v | …— clip | **only she moves.** This is the *"I've got ALL DAY to complain"* shot |

@@ -605,7 +605,22 @@ Obvious once said, and it cost a generation. Karen §3a.1 round 1 (2026-08-18) a
 
 **Design the shot and the Character attachment together.** An anonymising framing — from behind,
 silhouetted, face out of frame, too small to read — is a decision to **not use the Character**,
-and that is legitimate as long as it is a choice. The consistency guidance asks for a reference
+and that is legitimate as long as it is a choice.
+
+**⚠️ Corollary, and it cost two more generations: describing the person in prose overrules the
+Character.** Karen §3a.1 rounds 1–2 wrote *"a hoodie, a jacket and trainers with a small
+backpack"* into shots with `@Aarron` attached — **and his canon look is a patterned crewneck and
+a wearable keyboard rig.** The prose won, so he came back as a different man each time. Our
+character files already carry the rule (*"scene blocks describe the shot only"*); it is worth
+restating here because the failure looks like *Character binding is unreliable* when it is
+actually *the prompt was arguing with it.*
+
+**The reliable configuration is two sources agreeing**: the Character attached **and** the person
+present in the attached reference still, with **nothing about their appearance in the text**.
+That is why Karen has never drifted in this film and Aarron drifted every time.
+
+**When a character must be recognisable without a face, give them one load-bearing object** —
+Aarron's rig identifies him from behind — and name the object, not the outfit. The consistency guidance asks for a reference
 that *"clearly shows the face"*; the same holds on the output side.
 
 ### 13. ✅ Prompt order for camera work: **angle → lens → composition → lighting → style**
