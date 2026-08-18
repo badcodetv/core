@@ -1675,109 +1675,84 @@ supplies the feeling, which is why they end up on her side.
 >   plain prose with no slot labels** — deliberately, because the reference is carrying the set
 >   and the slots were mostly restating it.
 
-> ### Round 3 fired 2026-08-18 — **the set is fixed, the shot is not.**
+> ### Round 3 fired 2026-08-18 — the set was fixed, the shot was not. Round 4 was never fired.
 >
-> **Everything the last two rounds got wrong came back right:** the narrow open-fronted kiosk
-> with its steel upright and peeling stickers, the blouse and cardigan with no coat, the
-> receiver at her ear, the subway entrance and scaffolding, dry pavement, empty street, coins
-> and cup on the shelf. **The keep-list works. Do not touch it.**
+> Round 3 got everything the earlier rounds broke: the narrow open-fronted kiosk, the blouse
+> and cardigan with no coat, the receiver at her ear, the subway entrance and scaffolding, dry
+> pavement, empty street, Karen's face. **But all three of its changes came back met halfway** —
+> night became blue hour, *"close to her"* kept the reference's own distance, and the
+> reference's alert pose survived an instruction to look away.
 >
-> **Three things did not land, and they are the same failure three times:**
+> **⚠️ A strong reference hedges its own change-list.** Once the reference is genuinely driving
+> the image, it also becomes the baseline every change is measured against, and it **wins the
+> ties**. Changes need magnitude and consequences, exactly like
+> [weather nouns](#2j6s-karen-in-the-box-snow-rung-3--plate) — and **framing, never camera
+> distance**: *"two feet away"* is a fact about a tripod nobody can see, while *"she fills the
+> frame from her head to her waist"* is something a model can draw.
 >
-> | Asked for | Got | Why |
-> | --- | --- | --- |
-> | night | blue hour, bright sky, readable buildings | *"it is now night"* is a noun |
-> | camera two feet away at the mouth of the kiosk | a medium shot from §2j.0's distance | *"close to her"* is not something a model renders |
-> | a face doing nothing, looking past the lens | brows drawn, mouth set, eyeline in the lens | the reference's pose is a strong pose |
+> ### Kai, 2026-08-18: *"the setting changes slightly each time, I think the length of the prompt is confusing it."*
 >
-> ### ⚠️ A strong reference hedges its own change-list.
+> **Correct, and it is the keep-list doing it.** Round 4 tried to fix the hedging by making the
+> change-list longer, which made the whole prompt longer, which is the wrong direction. The
+> benchmark finding is a consistent **negative correlation between prompt length and adherence
+> across ten text-to-image models** — and our own keep-list is the worst offender, because
+> **enumerating the kiosk's parts asks the model to re-render each one**, and it draws them
+> slightly differently every time. *"The same peeling sticker marks"* is an instruction to draw
+> sticker marks, not to copy them.
 >
-> **This is the [snow lesson](#2j6s-karen-in-the-box-snow-rung-3--plate) in a new place.** Once
-> the reference is doing the heavy lifting — which is exactly what we spent three rounds
-> arranging — **it also becomes the thing every change is measured against, and it wins the
-> ties.** A one-word change instruction gets met halfway: night becomes dusk, close becomes
-> nearer, empty becomes quieter.
+> **Pointing at the picture beats describing the picture.** Round 5 replaces the whole keep-list
+> with *"keep it exactly as it is"* and says only what changes.
 >
-> **So the change-list needs the same treatment weather needed: magnitude and consequences.**
-> Not *"it is night"* but *"the sky is black, the windows above are dark, the shopfronts are
-> unlit."* And **state framing, not camera position** — *"she fills the frame from the top of
-> her head to her waist"* is renderable; *"the camera is two feet away"* is a fact about a
-> tripod nobody can see.
+> ### ⚠️ Proposed ruling: with a reference attached, the `STYLE LOCK` is a pointer, not a paste.
 >
-> **Round 4 keeps the reference block identical and rewrites only the change-list and the
-> scene.** The scene no longer describes the set at all — the reference has that job now.
+> **§2j.0 was generated in the `STYLE LOCK`, so the reference *is* the lock** — two hundred
+> words re-specifying grain, halation, vignetting and colour cast are two hundred words
+> competing with a picture that already demonstrates all of it. Round 5 replaces the block with
+> six words: *"the same grainy super-8 film look."*
+>
+> **This applies only to reference-anchored plates.** A plate with nothing attached still pastes
+> the lock verbatim — that has not changed and must not. **Kai's call whether to make it
+> general**; it is written here as this plate's practice until then.
 
-**Reference block** — unchanged from round 3, it did its job. Goes first:
+**One block. The whole prompt is ~150 words.**
 
 ```prompt
-Image 1 is the reference. Keep the same phone kiosk exactly as it is in image 1 — the same narrow open-fronted booth, the same steel upright with the payphone on it, the same peeling sticker marks, the same little shelf, the same armoured handset cord. Keep the same subway entrance behind it, the same green globes on their posts, the same railings and blank sign panel, the same scaffolding. Keep the same woman: the same face, the same dark auburn shoulder-length hair, the same cream blouse, camel cardigan and taupe trousers, the same taupe handbag on her shoulder, and the receiver held to her ear the way she holds it in image 1.
+Image 1 is the reference. Keep it exactly as it is — the same kiosk, the same street behind it, the same woman, the same clothes, the same receiver at her ear, and the same grainy super-8 film look. Redesign nothing.
 
-Change these four things:
+Change four things:
 
-1. It is the middle of the night. The sky is black, every office window in the buildings above is dark, the shopfronts are unlit and shuttered, and the only light on the street comes from the street lights.
+1. It is the middle of the night. The sky is black, the windows in the buildings above are dark, the shopfronts are unlit, and the only light on the street comes from the street lights.
 
-2. The shot is much tighter than image 1. She fills the frame from the top of her head down to her waist, and the payphone and the steel upright crowd the right-hand edge of the frame close to the lens and out of focus.
+2. Much tighter framing. She fills the frame from the top of her head down to her waist, and the payphone crowds the right-hand edge of the frame close to the lens and out of focus.
 
-3. She is not looking at the camera. She looks out past it, down the street, at nothing in particular.
+3. She looks out past the camera, down the street, at nothing. Her mouth is closed, her jaw is loose, her eyebrows are level, and her face is doing nothing at all.
 
-4. The pavement is empty. There is nobody else anywhere in the frame.
-```
+4. The pavement is empty.
 
-```prompt
-STYLE LOCK (keep identical every time):
-
-Capture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.
-
-Present-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.
-
-Texture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.
-
-Color: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).
-
-Optics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).
-
-Exposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.
-
-Output: high detail, natural imperfections, candid snapshot energy.
-
-Exclusions: no added text, no logos, no watermark, no AI "hyper-sharp HDR" look, no historical setting/era shift.
-
-SCENE:
-
-A tight three-quarter shot on a 35mm lens at f/2, the frame tilted a few degrees off level, taken from the pavement at the open front of the kiosk.
-
-She has been on hold for hours and it shows in nothing except that she has stopped doing anything. Her free hand rests loose and open on the shelf beside the paper cup. Her mouth is closed, her jaw is loose, her eyebrows are level and still, and her eyes are open and not following anything on the street. A strand of hair has come down and stuck to her cheek. She has no idea she is being photographed.
-
-One light: a street light out on the pavement behind the camera and to the left, raking across the near side of her face and leaving the far side of it in shadow. The green globe on the subway post behind her is one small point of colour, too weak to light anything, and everything past it falls away into black.
-
-A candid documentary photograph, unposed, available light only, unretouched, natural skin texture with visible pores and shine. The papers on the shelf are blank, and every sign panel, notice, hoarding and sticker stays free of readable lettering. No border or frame edge around the image.
+One street light out on the pavement behind the camera and to the left rakes across the near side of her face. No readable lettering anywhere, and no border around the image.
 
 Thanks.
 ```
 
 **Slots:** two references only — **image 1 is §2j.0, and `@Karen` is the Character.** Do **not**
-attach round 3's image as a second reference; it carries the dusk and the wide framing, which
-are the two things being changed.
+attach round 3's image; it carries the dusk and the wide framing, which are what is changing.
 
 **What to watch:**
 
-1. **Is it actually dark?** The round-3 failure. **Black sky, dark windows, unlit shopfronts.**
-   If it hedges to dusk again, the lever is a consequence it cannot fake — *"the only things
-   visible down the block are the street lights themselves."*
-2. **Is it tight?** Top of her head to her waist. A medium shot means the framing instruction
-   lost to the reference a second time, and the next move is to cut the SCENE block in half.
-3. **Is she looking past the lens, with a face doing nothing?** Round 3 gave the *"speak to
-   your manager"* face — which is Act 2's **opening**, not its exit. If it persists, add *"she
-   looks tired and slightly bored."* Bored reads as endurance; anything sharper is a
-   performance, and welling eyes or a bravely-lifted chin is the slop version — reject those
-   outright.
-4. **Still the same booth, clothes and receiver?** Rounds 2 and 3's fixes. Open front, one
-   person wide, steel upright with the payphone; blouse and cardigan, no coat; receiver at her
-   ear. All three held in round 3 and the keep-list is unchanged, so a regression here means
-   the longer change-list has crowded the keep-list — shorten the change-list, not the keeps.
-5. **Any snow or rain?** There should be none.
-6. **Two coins, not a stack**, and blank papers. The coins are the clearest evidence this is
-   month nine; the papers grew handwriting in round 3.
+1. **Does the setting hold still now?** The whole point of the cut. If the kiosk still shifts
+   between candidates, the remaining length is in the change-list — **drop change 4** (an empty
+   night street is nearly implied) and see if three holds better than four.
+2. **Is it actually dark?** Black sky, dark windows, unlit shopfronts. If it hedges to dusk
+   again, swap in a consequence it cannot fake: *"the only things visible down the block are
+   the street lights themselves."*
+3. **Is it tight?** Top of her head to her waist.
+4. **Face doing nothing, eyes past the lens?** Round 3 gave the *"speak to your manager"* face,
+   which is Act 2's **opening**, not its exit. If it persists, add *"she looks tired and
+   slightly bored"* — bored reads as endurance, and welling eyes or a lifted chin is the slop
+   version, so reject those outright.
+5. **Did the super-8 register survive without the `STYLE LOCK`?** The one real risk in the cut.
+   Clean, sharp, digital-looking output means the pointer was not enough — **put the full lock
+   back and instead delete the change-list's prose down to four short lines.**
 
 > ### The clip that follows (§2j.11v) is written after this is accepted
 >
