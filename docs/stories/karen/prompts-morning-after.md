@@ -1221,55 +1221,95 @@ the exit feeling is **I would not want to be the person who answers her next cal
 not triumph. It is **settling in**: shoulders down, weight in her heels, the bag on the floor,
 the kiosk already looking like somewhere she lives.
 
-> ### The design idea: shoot it low, so the kiosk reads as a plinth.
+> ### Round 1 fired 2026-08-18 — ✅ the angle, ⛔ the world.
+>
+> **Kai: *"I like the camera angle, keep that, but make it match the reference for the
+> setting."*** The plinth idea landed exactly. What came back with it was **an open plaza**: the
+> kiosk free-standing on an island, the subway entrance a long way off to the right, no
+> scaffolding, and the whole thing shot on something close to a fisheye with the buildings
+> bending.
+>
+> ### ⚠️ The camera demanded room the corner does not have — so it built the room.
+>
+> Third sighting of [the same
+> mechanism](../../google-flow/nano-banana-2.md#6--if-the-camera-cannot-physically-stand-there-the-model-rebuilds-the-set):
+> §2j.11 round 2 enlarged a booth to fit a camera inside it, §2h.6 grew a glass door to hold a
+> reflection, and here **a low wide shot from across the pavement, with the whole building above,
+> needs a plaza.** The canon corner has scaffolding on the near side and a subway entrance
+> immediately behind — there is nowhere to stand and take that picture. **So the model moved the
+> kiosk somewhere the picture was possible.**
+>
+> **Generalise it once more: the set gives way to whatever the shot requires.** Camera position,
+> a reflective surface, and now *space* — if the framing implies room the reference does not
+> have, the reference loses.
+>
+> ### The fix: give each image a declared job.
+>
+> Google's guidance is to **name the role of every reference** — *"use Image A for the pose,
+> Image B for the style, Image C for the background"* — and the field advice sharpens it:
+> **the prompt should describe the relationships between images**, because *"Nano Banana Pro is
+> good at inference; your job is to reduce the number of bad inferences it has to make."*
+>
+> **So round 2 attaches both: §2j.0 for the world, round 1's frame for the camera.** This is the
+> first time in the film two stills of the same subject are attached at once, and it is only safe
+> **because their jobs are stated and do not overlap** — the "third opinion" warning applies to
+> two references silently competing for the same job, not to two with different ones.
+>
+> **And the lens gets named.** Naming a camera and focal length does
+> [more work than any other single addition](https://imagera.ai/blog/best-prompts-realistic-ai-images-2026),
+> and it solves two problems at once here: **28mm keeps the low angle without the ultra-wide
+> bend** — bent verticals are a slop tell — **and a narrower field is less world for the model to
+> invent.**
+
+> ### The design idea, unchanged: the kiosk is a plinth.
 >
 > The story leaves her here and does not come back for nine months, and **Act 5 puts a statue on
-> this corner.** So the closing frame of Act 1 should already have the shape of a monument in
-> it — **a low camera, the kiosk standing whole, her inside it, the block going up out of the
-> top of the frame** — without anybody having drawn a statue yet. Nobody needs to notice; it
-> pays off four acts later.
->
-> **It is also what keeps this from being §2h.3 twice.** §2h.3 is eye level from across the
-> street with her small and arriving; this is **low, closer, and she has stopped moving.**
+> this corner.** The closing frame of Act 1 should already have the shape of a monument in it
+> without anybody having drawn a statue yet. Nobody needs to notice; it pays off four acts later.
+> **It is also what keeps this from being §2h.3 twice** — that one is eye level with her small
+> and arriving; this is low, closer, and she has stopped moving.
 
 > ### The people stay in, and that is the canon note, not a hedge.
 >
 > §2j.0's ruling: *"'no crowd' does not mean an empty street — it means nobody is looking at
-> her,"* and a deserted Midtown pavement at mid-morning reads post-apocalyptic. **The isolation
-> here is that she is the only person on the street who has stopped.** §2j.11 gets to empty the
-> pavement because it is the middle of the night; this does not.
+> her."* A deserted Midtown pavement at mid-morning reads post-apocalyptic. **The isolation here
+> is that she is the only person on the street who has stopped.**
 
-**No reflections and no steam** — the old version of this block asked for both, and
-[both are the atmosphere family](../../google-flow/nano-banana-2.md): rendered for free,
-overdelivering the moment they are named. Whatever the glass does on its own is a bonus.
+**Cast:** `@Karen`. **Attach two stills with stated jobs — image 1 = the accepted §2j.0, image 2
+= round 1's frame** (the low angle). **Engine:** Nano Banana Pro, 16:9, 3 candidates.
 
 ```prompt
-Image 1 is the reference. Keep it exactly as it is — the same kiosk, the same corner behind it, the same woman, the same clothes, the same flat overcast mid-morning light, and the same grainy super-8 film look. Redesign nothing.
+Image 1 is the setting. Image 2 is the camera angle. Nothing except the camera angle comes from image 2.
 
-Change two things:
+From image 1, keep everything exactly as it is: the kiosk, the subway entrance immediately behind it, the scaffolding, the pavement, the woman, her clothes, the flat overcast mid-morning light and the grainy super-8 film look. It is a narrow Midtown side street, not an open plaza, and the kiosk stands against the pavement rather than free in the middle of a space.
 
-1. A wide shot from across the pavement with the camera low, at about chest height and looking very slightly upward, so the kiosk stands whole in the frame with her inside it, a little left of centre, and the building above it rises out of the top of the frame.
+From image 2, take only the camera: low down at about chest height, looking slightly upward, so the kiosk stands whole in the frame like a plinth with her inside it.
 
-2. She has settled in. Her shoulders are squared and dropped, her weight is down in her heels, her free hand is flat on the shelf, and her handbag is standing on the floor of the kiosk by her feet. Her chin is level and her face is doing nothing in particular.
+Then change two things from image 1:
 
-Two pedestrians pass along the pavement without looking at her. No readable lettering anywhere, and no border around the image.
+1. Shot on a 28mm lens from across the pavement, low. The kiosk fills the height of the frame a little left of centre and the building behind it rises out of the top. Vertical lines stay close to straight.
+
+2. She has settled in. The receiver is against her ear, her free hand is flat on the shelf, her shoulders are squared and dropped, her weight is down in her heels, and her handbag is standing on the floor of the kiosk by her feet. Her chin is level and her face is doing nothing in particular.
+
+Two pedestrians pass along the pavement without looking at her. Natural skin texture with visible pores and fine lines. No readable lettering anywhere, and no border around the image.
 
 Thanks.
 ```
 
 **What to watch:**
 
-1. **Is the camera low, and does the block go out of the top?** The monument shape is the whole
-   design idea. Eye level makes this §2h.3 again. If it hedges, the consequence to add is
-   *"the kiosk is taller than everything else in the lower half of the frame."*
-2. **Is the bag on the floor?** One prop carrying the entire idea — *she is going to be here a
-   while.* If it is still on her shoulder, the beat has not landed.
-3. **Settled, not triumphant.** A lifted chin, a straightened back, a hand on the hip: reject.
+1. **Is the kiosk back on the corner?** The round-1 failure. Tells: **scaffolding on the near
+   side, the subway entrance immediately behind it, a street rather than a plaza.** If it is
+   free-standing on an island again, the framing is still asking for more room than the corner
+   has — and the fix is to come **closer and tighter**, not to argue about the location.
+2. **Is she holding the receiver?** Round 1 dropped it entirely. It is the whole reason she is
+   standing there.
+3. **Do the verticals stay straight?** 28mm should hold them. Bending buildings are the
+   ultra-wide slop tell and they will fight the statue rhyme rather than serve it.
+4. **Is the bag on the floor?** One prop carrying the entire idea — *she is going to be here a
+   while.*
+5. **Settled, not triumphant.** A lifted chin, a straightened back, a hand on the hip: reject.
    The posture is a woman getting comfortable, not a woman winning.
-4. **Same kiosk?** Rust, peeled adhesive, the payphone unit, the coiled cord, the green globes.
-   The reason all three re-fires exist.
-5. **Anyone looking at her?** Nobody should be. That single rule runs from here to the end of
-   Act 2.
 
 > ### After this, Act 1 is closed.
 >
