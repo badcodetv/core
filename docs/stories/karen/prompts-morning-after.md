@@ -953,12 +953,34 @@ acting** — the beat is the information arriving, not her performing shock.
 > Everything else in round 2 was right — profile, camera at the side, open front intact, no
 > invented door — so nothing else changes.
 
-> ### The idea survives without the instruction.
+> ### ⚠️ Kai, 2026-08-18: *"what camera shot is this supposed to be, because it is showing multiple."*
+>
+> **Fair, and the fault is a missing background.** The intended shot is one camera: **a medium
+> close-up in profile, eye level, from the pavement at the side of the kiosk.** What came back
+> read as several, and the reason is optical rather than mysterious —
+>
+> **a phone kiosk is a glass box.** Side-on, the lens looks *through* the near panel, past her,
+> *through* the far panel, at the street — while the near panel reflects the street behind the
+> camera. **Four image layers in one frame.** Real, but it reads as a double exposure instead of
+> a shot.
+>
+> ### Give the camera a position **and** a background. A position alone is half a shot.
+>
+> Round 3 said where the camera stood and never said what was behind her, so the engine filled
+> the background with everything available at once. **An undefined background stacks, the same
+> way an [undefined surface grows
+> text](../../google-flow/omni-flash.md).** The fix is one sentence naming a single soft
+> backdrop, and dropping the extra foreground layer we did not need.
+>
+> **Name the shot type too.** Nano Banana's documented camera form is
+> *"[shot type] of image 1"* — *"a medium close-up in profile"* is a thing it knows how to
+> frame; *"the camera has moved round to the side and is close"* is a description of a tripod.
+
+> ### The idea survives without any of the effects.
 >
 > **We are watching her from outside**, which is where the rest of the film watches her from —
 > through glass, across a pavement, from a helicopter, from a room she is not allowed into. That
-> reading comes from **where the camera is standing**, not from an effect laid over her face.
-> Whatever the side panel does on its own is a bonus.
+> reading comes from **where the camera is standing**, not from reflections laid over her face.
 
 **Reference: §2j.0, not §2j.11.** Both are canon, but §2j.0 is the same time of day, the same
 light and the same clothes, so **the only thing changing is the camera**. Do not attach both
@@ -975,7 +997,7 @@ The front of the kiosk is open, with no door and no glass across it, exactly as 
 
 Change two things:
 
-1. The camera has moved round to the side of the kiosk and is close. She is in profile, her head and shoulders filling most of the frame, with the aluminium frame of the kiosk crossing the near edge of the frame out of focus.
+1. A medium close-up of her in profile, taken from the pavement at the side of the kiosk at her eye level. She fills the left half of the frame, facing out of the open front towards the right of the frame. Behind her is one soft out-of-focus background and nothing else: the far side of the kiosk and the street beyond it, all of it blurred, with nothing sharp anywhere except her.
 
 2. She has gone completely still. The receiver is against her ear and her other hand is flat on the shelf. Her face is flat and absorbing rather than shocked — her mouth is closed, her jaw is loose, her eyebrows are level — and she is looking straight ahead out of the open front, not at the camera.
 
@@ -986,13 +1008,12 @@ Thanks.
 
 **What to watch:**
 
-1. **Is her face clean?** The round-2 failure. No ghosting, no double-exposure across her hair
-   and cheek. Whatever the side panel reflects on its own is fine — what must not be there is a
-   reflection laid *over* her.
-2. **Did it grow a door?** The front must still be open. Round 2 held this, so a regression
-   would mean the shortened prompt lost the geometry line — it has not moved, so this should be
-   safe.
-3. **Is she in profile, and tight?** Head and shoulders filling most of the frame.
+1. **Does it read as one shot?** The round-3 failure. **Only her should be sharp**; if the
+   street behind her is as crisp as her face, the layers stack again and it stops looking like
+   a photograph of a person.
+2. **Is her face clean?** No ghosting or double exposure across her hair and cheek. Reflections
+   *in* the panel are fine; a reflection *over* her is the failure.
+3. **Did it grow a door?** The front must still be open.
 4. **Is she acting?** A dropped jaw, wide eyes, a hand to the mouth — reject. The line to add is
    *"her face barely changes at all."*
 5. **Same kiosk?** Rust, peeled adhesive, the shelf, the coiled cord. It is why the re-fire
