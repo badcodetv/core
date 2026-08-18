@@ -431,6 +431,17 @@ are refusing into the prompt. The replacement is a three-way split, all positive
 Stating the change as a change is what stops it inventing a *different place* — the model is
 told the location is the same and only the listed facts differ.
 
+### 3b. Two references of the same subject are safe **only when their jobs differ**
+
+The "third opinion" warning above is about references **silently competing for the same job**.
+Two stills of one set, each with a **declared and non-overlapping** role, is the documented
+pattern rather than a violation of it — Karen §2h.7 attaches the canon corner as *the setting*
+and a rejected frame as *the camera angle only*.
+
+The field formulation is the one to keep: **"the prompt should describe the relationships
+between images"**, because *"Nano Banana Pro is good at inference — your job is to reduce the
+number of bad inferences it has to make."*
+
 ### 4. Slots: fewer is better, and order matters
 
 **Up to 14 references, but only about 6 at high fidelity** — and the field advice is to
@@ -462,6 +473,17 @@ too.
 **Check the requested camera position against the physical set before writing it.** A position
 a human could not occupy is an instruction to rebuild the world, and it will be obeyed at the
 reference's expense. The fix is nearly always a legal position a foot or two away.
+
+**⚠️ And it catches *space*, not just positions and surfaces** (Karen §2h.7, 2026-08-18). A low
+wide shot *"from across the pavement, with the building above rising out of frame"* needs room
+the canon corner does not have — scaffolding on the near side, a subway entrance immediately
+behind. **The model moved the kiosk onto an open plaza where the picture was possible.** Third
+sighting of one rule: **the set gives way to whatever the shot requires.** Before writing a
+framing, ask where a photographer would have to stand and whether that spot exists.
+
+**The fix when the framing is wanted anyway: name a narrower lens.** 28mm instead of an implied
+ultra-wide keeps the angle, straightens the verticals (bending buildings are a slop tell), and
+**gives the model less world to invent**, which is the actual cure.
 
 **⚠️ The same trap catches surfaces, not just camera positions** (Karen §2h.6, 2026-08-18). The
 prompt asked for the street *"reflected in the glass in front of her"* while the camera stood at
