@@ -27,6 +27,14 @@ act.
 >
 > Prompts follow the Nano Banana Pro slot order and the anti-slop counters recorded
 > in [`docs/google-flow/nano-banana-2.md`](../../google-flow/nano-banana-2.md#third-pass--nano-banana-pro-and-the-anti-slop-toolkit).
+>
+> ### ⚠️ Every prompt ends with *"Thanks."* — plates and clips alike
+>
+> Reaffirmed by Kai 2026-08-18 after it slipped on the clips. **The last line of every block
+> that gets pasted into Flow is `Thanks.` on its own line**, images and videos both. Where a
+> prompt is pasted as two blocks (a `REFERENCE` block and then the `STYLE LOCK` + `SCENE`),
+> only the **final** block carries it, because the two are one paste.
+
 
 ---
 
@@ -104,6 +112,8 @@ Light: overhead fluorescent panels, flat and slightly green, plus grey daylight 
 Style: a still from a 35mm independent film — an ordinary morning meeting nobody wanted. Available light only, unretouched, natural skin texture.
 
 Constraints: cream blouse, camel cashmere cardigan neatly draped over her shoulders, tailored trousers, staff lanyard; she is composed and entirely sincere, not comic; keep every whiteboard mark, cup, screen and badge free of readable lettering.
+
+Thanks.
 ```
 
 ### 2i.2 Listening intently to feedback — plate
@@ -133,6 +143,8 @@ Light: overhead fluorescent panels, flat and slightly green, with grey window li
 Style: a still from a 35mm independent film. Available light only, unretouched, natural skin texture.
 
 Constraints: cream blouse, camel cardigan, tailored trousers, staff lanyard; her expression is pleasant and unbothered rather than sneering; keep every screen, sticky note, badge and printout free of readable lettering.
+
+Thanks.
 ```
 
 ---
@@ -165,6 +177,8 @@ Light: one overhead fluorescent tube directly above the counter, hard and slight
 Style: a still from a 35mm independent film. Available light only, unretouched, natural skin texture.
 
 Constraints: cream blouse, camel cardigan, tailored trousers, staff lanyard; keep every notice, label, packet and dial marking free of readable lettering.
+
+Thanks.
 ```
 
 ### 2i.4 Inside the microwave — plate
@@ -195,6 +209,8 @@ Light: the small internal oven lamp coming on from above and behind camera, warm
 Style: a still from a 35mm independent film — a point of view nobody chose to have. Available light only, unretouched.
 
 Constraints: cream blouse, camel cardigan, staff lanyard swinging forward as she leans in; her expression is ordinary and preoccupied, not comic; keep every dial marking, label and notice free of readable lettering.
+
+Thanks.
 ```
 
 ### 2i.5 What it feels like to be on the receiving end — plate
@@ -230,6 +246,8 @@ Light: overhead fluorescent panels directly above her, flat and slightly green, 
 Style: a still from a 35mm independent film — the shot is the other person's point of view, and it should feel like being talked down to. Available light only, unretouched, natural skin texture.
 
 Constraints: cream blouse, camel cardigan, tailored trousers, staff lanyard hanging forward as she leans down; she is polite and helpful in manner rather than angry; keep every sign, label, badge and notice free of readable lettering.
+
+Thanks.
 ```
 
 ---
@@ -280,6 +298,8 @@ Light: overhead fluorescent panels, flat and slightly green, with grey daylight 
 Style: a still from a 35mm independent film — a decent man doing something he has been told to do. Available light only, unretouched, natural skin texture.
 
 Constraints: she wears a cream blouse, camel cardigan, tailored trousers and a staff lanyard; he wears an untucked shirt with no tie and a staff lanyard; his manner is apologetic and awkward, hers is composed; keep every screen, badge, notice and document free of readable lettering.
+
+Thanks.
 ```
 
 ### 2i.7 Her point of view — plate
@@ -305,6 +325,8 @@ Light: overhead fluorescent panels with grey daylight striping through the blind
 Style: a still from a 35mm independent film, shot as a point-of-view frame. Available light only, unretouched, natural skin texture.
 
 Constraints: untucked shirt, no tie, staff lanyard; his expression is apologetic and uncomfortable; keep every badge, screen and document free of readable lettering.
+
+Thanks.
 ```
 
 ### 2i.8 Sean AI — the screen plate
@@ -342,6 +364,8 @@ Location: a flat digital interface — no room, no reflection, no device bezel, 
 Style: minimal corporate software UI, flat vector, near-black background with one restrained accent colour; the glyph is chunky low-resolution pixel art in the manner of an early-1980s computer icon — a simple abstract mark, geometric and friendly-looking, with no face, no eyes and nothing humanoid about it. Clean flat rendering with no photographic texture, no grain, no glow and no drop shadows.
 
 Constraints: the message area is completely empty — no body text, no paragraphs, no placeholder lines, no cursor, no buttons, no menu bar, no window chrome, no icons other than the single glyph; nothing anthropomorphic anywhere.
+
+Thanks.
 ```
 
 ### 2i.9 The laptop camera looks back — plate
@@ -375,6 +399,8 @@ Light: the laptop screen underlighting her face from below, cool and even, again
 Style: low-resolution built-in webcam capture — soft focus, visible sensor noise in the shadows, slight motion smear, muted washed-out colour and a cool cast. This shot is captured on the laptop's own camera rather than on film, so it does not carry the film texture of the surrounding scene.
 
 Constraints: cream blouse, camel cardigan, staff lanyard; her expression is blank and absorbing rather than wide-eyed or theatrical; keep every badge, ceiling marking and screen free of readable lettering.
+
+Thanks.
 ```
 
 ### 2i.10 Sorry mate — you too — plate
@@ -402,6 +428,8 @@ Light: the laptop screen underlighting his face from below, cool and even, again
 Style: low-resolution built-in webcam capture — soft focus, visible sensor noise in the shadows, slight motion smear, muted washed-out colour and a cool cast, matching the attached frame.
 
 Constraints: untucked shirt, no tie, staff lanyard; his expression is unguarded and ordinary rather than theatrical; keep every badge, ceiling marking and screen free of readable lettering.
+
+Thanks.
 ```
 
 ---
@@ -440,6 +468,8 @@ Light: warm practical light from the shelf behind the bar and one low pendant ab
 Style: a still from a 35mm independent film — the beginning of a long night that nobody has admitted to yet. Available light only, unretouched, natural skin texture.
 
 Constraints: the older woman wears a cream blouse and a camel cardigan, still neat, no lanyard; the younger wears an unzipped olive suede bomber over a cream t-shirt; both are sober and subdued, not yet drunk; keep every bottle label, coaster, card and sign free of readable lettering.
+
+Thanks.
 ```
 
 ### 2i.12 The Polaroid compilation — one recipe, ten frames
@@ -477,6 +507,8 @@ Light: a single direct on-camera flash from close range — hot blown-out highli
 Style: an amateur flash snapshot taken by a friend on a night out, of the kind that gets stuck to a fridge. Unposed, badly timed, unretouched.
 
 Constraints: the older woman wears a cream blouse and a camel cardigan; the younger an olive suede bomber over a cream t-shirt; their drunkenness shows only in posture, wardrobe and mess — never in a described expression; keep every bottle label, pump badge, menu, coaster and sign free of readable lettering.
+
+Thanks.
 ```
 
 **The ten frames — the arc is in the wardrobe and the wreckage, in this order:**

@@ -29,6 +29,14 @@ storyboard is the song — [`songs/all-day-to-complain.md`](./songs/all-day-to-c
 >
 > **Engine research does not live here** — it goes to
 > [`docs/google-flow/`](../../google-flow/README.md).
+>
+> ### ⚠️ Every prompt ends with *"Thanks."* — plates and clips alike
+>
+> Reaffirmed by Kai 2026-08-18 after it slipped on the clips. **The last line of every block
+> that gets pasted into Flow is `Thanks.` on its own line**, images and videos both. Where a
+> prompt is pasted as two blocks (a `REFERENCE` block and then the `STYLE LOCK` + `SCENE`),
+> only the **final** block carries it, because the two are one paste.
+
 
 ---
 
@@ -101,6 +109,8 @@ Light: flat overcast mid-morning daylight from a white sky, no direct sun and no
 Style: a still from a 35mm independent film — an ordinary woman on an ordinary corner, doing a hopeless piece of admin nobody is watching. Available light only, unretouched, natural skin texture.
 
 Constraints: cream blouse untucked, camel cardigan slipped off one shoulder, tailored trousers, no coat, structured leather handbag; nobody in the frame looks at her; keep the writing on the paper, every sign panel, notice, hoarding, sticker, shopfront and vehicle marking free of readable lettering; no border or frame edge around the image.
+
+Thanks.
 ```
 
 > ### ✅ FIRED AND ACCEPTED 2026-08-17 — and it is now the canon kiosk for the whole story
@@ -177,6 +187,8 @@ Behind her the street keeps going: traffic moves steadily past on the road, peop
 The camera is locked and still throughout, across the pavement. Available light only, real-time pace. Shot at 24fps with a 180-degree shutter. Fine film grain.
 
 Audio is the street only: her voice low and indistinct, traffic, a bus pulling away, and the rumble of a train coming up out of the subway entrance behind her.
+
+Thanks.
 ```
 
 **What to watch:**
@@ -365,6 +377,8 @@ Light: flat overcast mid-morning daylight from a white sky, no direct sun and no
 Style: a still from a 35mm independent film, shot from a helicopter on a long lens — compressed perspective, haze thickening with distance, available light only, unretouched, documentary rather than promotional.
 
 Constraints: ordinary commercial and residential architecture throughout, unglamorised; keep every rooftop sign, hoarding, advertisement and vehicle livery free of readable lettering.
+
+Thanks.
 ```
 
 > **The block above is round 2 — the wide, reference-anchored version.** Round 1's
@@ -453,6 +467,8 @@ Change: the tarred roofs are dark and soaked and holding standing water in their
 Light: no sun anywhere; a dark grey sky pressing down, the whole frame two stops darker than the base image, the haze thickened so the far blocks are nearly gone, and the wet surfaces carrying a dull sheen rather than bright highlights.
 
 Constraints: keep every rooftop sign, hoarding, advertisement and vehicle livery free of readable lettering; no border or frame edge around the image.
+
+Thanks.
 ```
 
 **What to watch:**
@@ -523,6 +539,8 @@ Below, the city keeps going throughout: traffic creeps along the avenues and one
 Real-time pace. Shot at 24fps with a 180-degree shutter.
 
 Audio is the city from a long way up: a low wash of distant traffic, steady wind, and the hiss of rain arriving.
+
+Thanks.
 ```
 
 > ### Round 2 fired 2026-08-17 — the weather worked; the camera flew
@@ -562,6 +580,8 @@ Traffic creeps along the avenues and one boat draws a slow wake up the river.
 Real-time pace, 24fps with a 180-degree shutter.
 
 Audio is the city from a long way up: a low wash of distant traffic, steady wind, and the hiss of rain arriving.
+
+Thanks.
 ```
 
 **What to watch:**
@@ -623,6 +643,8 @@ Below, the city goes on with its morning: traffic creeps along the avenues and a
 Available light only, real-time pace, flat overcast daylight from a white sky. Haze hangs between the camera and the far blocks. Shot at 24fps with a 180-degree shutter.
 
 Audio is the city from a long way up: a low wash of distant traffic and steady wind.
+
+Thanks.
 ```
 
 **What to watch:**
@@ -703,6 +725,8 @@ Light: one source only — cold daylight from the street glazing off to her righ
 Style: a documentary photograph on 35mm film, made for a newspaper story about office work rather than for the company; unretouched, no beauty retouching, natural skin with real texture; candid, caught rather than composed.
 
 Constraints: keep the wall panel, visitor passes, screens, lanyard and every notice free of readable lettering; no border or frame edge around the image.
+
+Thanks.
 ```
 
 **Two notes before firing:**
@@ -795,6 +819,8 @@ The lobby behind her is empty and still, and stays empty for the whole shot.
 The camera is locked and still throughout, at the far side of the counter. Available light only, real-time pace. Shot at 24fps with a 180-degree shutter. Fine film grain.
 
 Audio is the lobby only: her voice low, flat and indistinct, the click and rattle of a keyboard, a double beep from the turnstile somewhere behind her, and the room tone of a hard-floored lobby.
+
+Thanks.
 ```
 
 **⚠️ The grain is back in this block**, unlike [§2j.1v](#2j1v-the-descent-rung-1--clip--the-master). This is Karen's world, so the super-8 register applies; the aerials are the photoreal ones. **Check the register per shot** — it is now a real fork in the checklist rather than a constant.
@@ -863,6 +889,8 @@ Light: flat overcast mid-morning daylight from a white sky, the interior of the 
 Style: a still from a 35mm independent film — an ordinary woman doing an ordinary, hopeless piece of admin. Available light only, unretouched, natural skin texture.
 
 Constraints: cream blouse untucked, camel cardigan slipped off one shoulder, tailored trousers, no coat, structured leather handbag; the pavement behind her is ordinary and indifferent with nobody watching her; keep the writing on the paper, every notice, card slot, sticker and reflected sign free of readable lettering; no border or frame edge around the image.
+
+Thanks.
 ```
 
 **What to watch:**
@@ -914,6 +942,8 @@ Light: one source only — grey rainy daylight through venetian blinds at his si
 Style: a frame from a documentary, caught from the doorway while he is not paying attention. Shot on 35mm film, available light only, unretouched, no beauty retouching, natural skin with real texture.
 
 Constraints: his expression stays patient and unhurried; keep the newspaper headline, the corkboard notices, the folder tabs, the flag and every sign free of readable lettering; no border or frame edge around the image.
+
+Thanks.
 ```
 
 > ### Round 1 fired 2026-08-17 — rejected: the window was English, and it slopped
@@ -982,6 +1012,8 @@ Rain runs down the window glass beside him. Nothing else in the room moves.
 The camera is locked and still throughout, in the doorway. Available light only, real-time pace. Shot at 24fps with a 180-degree shutter. Fine film grain.
 
 Audio is the office only: his voice low, flat and indistinct, rain against the window, the hum of an air conditioning unit, and a phone ringing somewhere down the corridor that nobody answers.
+
+Thanks.
 ```
 
 **What to watch:**
@@ -1035,6 +1067,8 @@ Weather: rain running down the outside of the kiosk glass in beads and streaks, 
 Light: no sun anywhere; flat grey rainy daylight, the whole frame two stops darker than the base image, the inside of the kiosk darker again.
 
 Constraints: nobody in the frame looks at her; keep the handwriting on the paper, every sign panel, notice, hoarding, sticker and vehicle marking free of readable lettering; no border or frame edge around the image.
+
+Thanks.
 ```
 
 **What to watch:**
@@ -1078,6 +1112,8 @@ Rain runs down the glass of the box in beads and streaks, and that is the only m
 The camera is locked and still throughout, across the pavement. Available light only, real-time pace. Shot at 24fps with a 180-degree shutter. Fine film grain.
 
 Audio is the rain and the street: rain drumming on the roof of the box and running on the glass, tyres hissing past on wet asphalt, and a thin tinny loop of hold music leaking out of the receiver.
+
+Thanks.
 ```
 
 > ### Round 1 fired 2026-08-17 — the traffic vanished and drove through itself
@@ -1144,6 +1180,8 @@ Light: the window is the only light in the room and it is far brighter than the 
 Style: a frame from a documentary, caught from the back of the room while he is not aware of the camera. Shot on 35mm film, available light only, unretouched, no beauty retouching, natural skin with real texture.
 
 Constraints: his expression stays warm and attentive; keep the sticky notes, the certificates, the photographs, the laptop screen and every sign free of readable lettering, with any handwriting reduced to indistinct marks; no border or frame edge around the image.
+
+Thanks.
 ```
 
 > ### Round 1 fired 2026-08-17 — rejected: boring angle, and slop-adjacent
@@ -1214,6 +1252,8 @@ Beyond the window, snow keeps falling steadily past the building. Nothing else i
 The camera is locked and still throughout, low in the far corner of the room. Available light only, real-time pace. Shot at 24fps with a 180-degree shutter. Fine film grain.
 
 Audio is the office only: his voice warm, low and indistinct, the hum of the building, a keyboard going somewhere else in the room, and the flattened quiet of a heavy snowfall outside.
+
+Thanks.
 ```
 
 **What to watch:**
@@ -1271,6 +1311,8 @@ Action: she is mid-sentence and saying something short. Her jaw is set and her c
 Light: the light is dim and flat under a low white sky with no sun anywhere and no shadows at all; the falling snow takes the contrast out of everything beyond the near pavement; the inside of the kiosk is darker still.
 
 Constraints: the few pedestrians are hunched with hoods up and hurrying and none of them looks at her; keep the handwriting on the paper, every sign panel, notice, hoarding, sticker and vehicle marking free of readable lettering; no border or frame edge around the image.
+
+Thanks.
 ```
 
 > ### Round 1 fired 2026-08-17 — *"not snowy enough."* Weather edits hedge.
@@ -1358,6 +1400,8 @@ Snow keeps falling steadily past the kiosk in large flakes, some of them close t
 The camera is locked and still throughout, across the pavement. Available light only, real-time pace. Shot at 24fps with a 180-degree shutter. Fine film grain.
 
 Audio is the storm and the street: the flattened hush of heavy snowfall, wind moving past the kiosk, the scrape of a snowplough somewhere out of sight, and her voice low, short and indistinct.
+
+Thanks.
 ```
 
 **What to watch:**
@@ -1422,6 +1466,8 @@ Light: the sun is low and coming straight in through the window, so the room is 
 Style: a frame from a documentary, caught from the doorway while she is not paying attention to the camera. Shot on 35mm film, available light only, unretouched, natural texture.
 
 Constraints: keep the papers, the photographs, the certificates, the speakerphone display and every sign free of readable lettering; no border or frame edge around the image.
+
+Thanks.
 ```
 
 **What to watch:**
@@ -1507,6 +1553,8 @@ Every object in the room stays exactly where it is and nothing is picked up, mov
 Real-time pace, 24fps with a 180-degree shutter. Fine film grain.
 
 Audio is the room: a woman's voice coming small and tinny out of the speakerphone on the desk, indistinct and a long way from here, the tick of a radiator, and traffic far below.
+
+Thanks.
 ```
 
 **What to watch:**
@@ -1663,6 +1711,8 @@ She is doing nothing but waiting. Her fingers have gone loose on the receiver, h
 One light: a street light out on the pavement behind the camera and to the left, raking across the near side of her face and leaving the far side in shadow. The green globe on the subway post behind her is one small point of colour, too weak to light anything, and the block beyond falls away into darkness. The pavement is dry, the air is clear, and nobody is on the street.
 
 A candid documentary photograph, unposed, available light only, unretouched, natural skin texture with visible pores and shine. Keep every sign panel, notice, hoarding, sticker and the papers on the shelf free of readable lettering, and no border or frame edge around the image.
+
+Thanks.
 ```
 
 **Slots:** two references only — **image 1 is §2j.0, and `@Karen` is the Character.**

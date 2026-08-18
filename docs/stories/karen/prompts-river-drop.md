@@ -29,6 +29,14 @@ Prompts for one Act 1 beat: **Karen and Susan at the river, and the phone goes i
 > produced are folded into
 > [`docs/google-flow/omni-flash.md`](../../google-flow/omni-flash.md) — that is the
 > home for anything about how the *engine* behaves, so it is reusable beyond Karen.
+>
+> ### ⚠️ Every prompt ends with *"Thanks."* — plates and clips alike
+>
+> Reaffirmed by Kai 2026-08-18 after it slipped on the clips. **The last line of every block
+> that gets pasted into Flow is `Thanks.` on its own line**, images and videos both. Where a
+> prompt is pasted as two blocks (a `REFERENCE` block and then the `STYLE LOCK` + `SCENE`),
+> only the **final** block carries it, because the two are one paste.
+
 
 ---
 
@@ -153,6 +161,8 @@ Lighting: night, lit from above and behind by a single cold park lamp on a post 
 Details: the older woman wears a cream blouse pulled untucked and a camel cashmere cardigan slipped off one shoulder, tailored trousers, no coat; the younger woman wears an unzipped olive suede bomber over a cream t-shirt and blue jeans and is mid-laugh with her head tipped back; keep every notice, mooring plate and sign free of readable lettering.
 
 Compose for a 16:9 frame.
+
+Thanks.
 ```
 
 ### 2g.2 The two-shot — clip
@@ -163,6 +173,8 @@ is real but incidental; the water entry is out of frame and belongs to 2g.4.
 
 ```prompt
 Locked off at rail height a few metres to their side, one continuous shot at real speed. Grainy night cinematography lit by a single cold park lamp. They keep leaning on the rail with their heads turned toward each other, and the phone slides out of her slack fingers and drops away below the frame edge while they carry on talking. The water moves under the rail and the skyline lights hold steady behind them. Water against the piling, distant traffic and their own indistinct conversation, no intelligible dialogue. Use this image as the starting frame.
+
+Thanks.
 ```
 
 ---
@@ -290,10 +302,14 @@ SCENE:
 Subject: a lit smartphone held slackly in a woman's fingertips out over the outside edge of a waterfront railing at night, seen from below and to the side so the rail crosses the top of the frame and open black water fills the space beneath it.
 
 Camera: 40mm, hand-held, low and just outside the rail looking along it, so the open drop below the rail is the largest thing in the frame.
+
+Thanks.
 ```
 
 ```prompt
 Handheld and locked off low beside the railing, one continuous shot at real speed. Grainy night cinematography lit by a single cold lamp above the rail. Her fingers go slack and the lit phone falls away toward the river, its glow shrinking as it drops, meets the water with one small splash and sinks; the surface closes over the light and goes dark, and the ripples spread and settle. The hand stays where it is at the top of frame. Water against the piling, distant traffic and indistinct conversation above, no intelligible dialogue. Use this image as the starting frame.
+
+Thanks.
 ```
 
 </details>
@@ -398,6 +414,8 @@ Lighting: night, ordinary promenade streetlights above and behind camera throwin
 Details: both are very drunk in an ordinary, believable way — loose posture, weight dumped on their forearms, one shoulder dropped, hair slightly disturbed; the older woman wears a cream blouse pulled untucked and a camel cashmere cardigan slipped off one shoulder, tailored trousers and low-heel flats, no coat; the younger woman wears an unzipped olive suede bomber over a cream t-shirt, blue jeans and brown leather low-top sneakers; a structured leather handbag sits on the paving by their feet; keep every notice, mooring plate and sign free of readable lettering.
 
 Compose for a 16:9 frame.
+
+Thanks.
 ```
 
 **If this one misses too, record how.** "It didn't work" has now been the entire
@@ -439,6 +457,8 @@ Locked off on a 35mm lens, low on the paving three or four metres behind two wom
 @Karen's fingers go slack and the phone drops from her hand, falls past the railing out of sight below it, and a small splash sounds from below a moment later; both women stay leaning on the rail with their heads turned toward each other, talking. The reflections shift on the dark water while the bridge lights hold steady.
 
 Observational documentary camerawork, available light only from the promenade streetlights, real-time pace, unposed. Grainy super-8 capture: visible film grain, ISO noise, natural motion blur, mild halation around the streetlights and bridge lights, deep soft blacks. Low indistinct voices under distant traffic and water against the stonework, no intelligible dialogue.
+
+Thanks.
 ```
 
 **Append `Use this image as the starting frame.` only if you are in the Frames tab.**
@@ -555,6 +575,8 @@ or four sentences.
 
 ```prompt
 Create a 4-second 16:9 video, one continuous shot, no cuts, at real speed. Her fingers go slack and the lit phone drops from her hand, falls past the railing out of sight below it, and a small splash sounds from below a moment later; deep open water runs right up to the wall beneath the railing. Both women stay leaning on the rail with their heads turned toward each other, talking, and the bridge lights hold steady while the reflections shift on the dark water. Observational documentary camerawork, available light, unposed; visible film grain, ISO noise, natural motion blur, mild halation on the streetlights. Low indistinct voices under distant traffic and water against the stonework, no intelligible dialogue.
+
+Thanks.
 ```
 
 Two things in there are deliberate departures from the usual Frame-mode rule:
@@ -588,6 +610,8 @@ Lighting: night, ordinary promenade streetlights above and behind camera catchin
 Details: no people anywhere in the frame; keep every notice, mooring plate and sign free of readable lettering.
 
 Compose for a 16:9 frame.
+
+Thanks.
 ```
 
 And the clip prompt opens by **assigning every image its role**, which is the shape
@@ -596,6 +620,8 @@ woman, and the office setting…"* `[vendor]`:
 
 ```prompt
 Using the provided image as the promenade setting, and @Karen and @Susan as the two women: create a 4-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off low on the paving three or four metres behind them, seen from behind and slightly to one side, the railing crossing the frame in front of them and deep open water running right up to the wall beneath it. @Karen leans on the top rail in a cream blouse and a camel cardigan off one shoulder with a lit phone held slackly out over the rail; @Susan is beside her in an olive suede bomber with a canned drink resting on the rail. @Karen's fingers go slack and the phone drops from her hand, falls past the railing out of sight below it, and a small splash sounds from below a moment later; both stay leaning on the rail with their heads turned toward each other, talking, and the bridge lights hold steady while the reflections shift on the dark water. Observational documentary camerawork, available light, unposed; visible film grain, ISO noise, natural motion blur, mild halation on the streetlights. Low indistinct voices under distant traffic and water against the stonework, no intelligible dialogue.
+
+Thanks.
 ```
 
 #### The loadout, revised
@@ -695,6 +721,8 @@ Create a 4-second 16:9 video in one continuous shot, no cuts, at real speed. Sho
 The camera holds close on the rail beside her forearm with a little handheld sway. After about a second the lit phone slips from her fingertips and streaks down out of the bottom of the frame, gone in an instant, and a splash sounds from the dark below a moment later. Her hand stays exactly where it is on the rail, and nothing else in the frame changes for the rest of the shot.
 
 Available light only from one lamp above the rail, unposed and observational, nothing composed: heavy grain, ISO noise, mild halation on the lamp, deep soft blacks, everything past the rail dissolved into dark bokeh. Water against the stonework, distant traffic and low indistinct voices, no dialogue.
+
+Thanks.
 ```
 
 **What each part is buying, and what's new since round 5:**
@@ -758,6 +786,8 @@ Then generate with 2g.6 as the first frame, that edit as the last frame, 4 secon
 
 ```prompt
 Create a 4-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off low behind them on the promenade. Her fingers go slack and the lit phone drops from her hand and falls past the railing out of sight below it, while both women stay leaning on the rail with their heads turned toward each other. Grainy night cinematography, ordinary streetlights, deep soft blacks.
+
+Thanks.
 ```
 
 ### 2g.9 The last resort — the insert that shows almost nothing
@@ -789,12 +819,16 @@ Lighting: night, one cold lamp from above and behind putting a hard edge along t
 Details: a cream blouse cuff and the edge of a camel cashmere sleeve at the top of frame; manicured nails; keep the frame free of readable lettering.
 
 Compose for a 16:9 frame.
+
+Thanks.
 ```
 
 And its clip:
 
 ```prompt
 Create a 4-second 16:9 video, one continuous shot, no cuts, at real speed. Locked off tight on the hand. Grainy night cinematography, one hard lamp edge along the rail and the knuckles. The lit phone slides out of her fingertips and falls straight out of the bottom of the frame, and the hand stays exactly where it is, still hanging slack over the rail. The rest of the frame holds still. Water against the piling and distant traffic, no dialogue.
+
+Thanks.
 ```
 
 ### Fire order, and what it would prove

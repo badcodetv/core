@@ -34,6 +34,14 @@ memory, gets to the phone box, and Susan aims her at the rest of the film.**
 > the complete thing to paste, `STYLE LOCK` + `SCENE:` + *"Thanks."*, with the cast,
 > the time of day and whether anything is attached stated above it. Do not silently
 > assume a reference image is attached; say so, per plate.
+>
+> ### ⚠️ Every prompt ends with *"Thanks."* — plates and clips alike
+>
+> Reaffirmed by Kai 2026-08-18 after it slipped on the clips. **The last line of every block
+> that gets pasted into Flow is `Thanks.` on its own line**, images and videos both. Where a
+> prompt is pasted as two blocks (a `REFERENCE` block and then the `STYLE LOCK` + `SCENE`),
+> only the **final** block carries it, because the two are one paste.
+
 
 ---
 
@@ -130,6 +138,8 @@ Light: a half-open venetian blind at the window camera-left throwing a hard ladd
 Style: a still from a 35mm independent film — the last morning of the first act. Available light only, unretouched, natural skin texture.
 
 Constraints: she is still in yesterday's cream blouse, slept in and pulled untucked, hair flattened on one side; keep every book spine, label and sign free of readable lettering.
+
+Thanks.
 ```
 
 ### 2h.2 Where's my phone — plate
@@ -157,6 +167,8 @@ Light: a hard ladder of daylight from a half-open blind falling across the duvet
 Style: a still from a 35mm independent film. Available light only, unretouched.
 
 Constraints: cream blouse cuffs at the wrists, manicured nails, a camel cardigan sleeve at the edge of frame; keep every receipt, label, napkin and fob free of readable lettering.
+
+Thanks.
 ```
 
 > **How the absence is stated, and why.** *"The spill consists only of…"* plus an
@@ -253,6 +265,8 @@ Light: flat overcast mid-morning daylight from a white sky, no direct sun; the k
 Style: a still from a 35mm independent film — an ordinary street, an unremarkable morning. Available light only, unretouched.
 
 Constraints: cream blouse untucked, camel cardigan slipped off one shoulder, tailored trousers, no coat, structured leather handbag; keep every sign, hoarding notice, plate, shopfront and kiosk marking free of readable lettering.
+
+Thanks.
 ```
 
 **What to watch, beyond the postcard:**
@@ -321,6 +335,8 @@ Light: a hard ladder of daylight through the half-open venetian blind camera-lef
 Style: a still from a 35mm independent film. Available light only. Hyper-realistic skin texture with visible pores and subtle imperfections. A faint smear on the lens, subtle handshake blur.
 
 Constraints: hair fallen across her face, a pillow crease, dull skin, a sleep-creased t-shirt. Unposed and unaware of the camera. Keep every label, book spine and blister pack free of readable lettering.
+
+Thanks.
 ```
 
 **Note the placement is `right of centre, room falling left`** — the same way round as
@@ -389,6 +405,8 @@ Light: daylight through the half-open venetian blind at frame right, striping th
 Style: a still from a 35mm independent film. Available light only. Hyper-realistic skin texture with visible pores and subtle imperfections. A faint smear on the lens, subtle handshake blur.
 
 Constraints: a pillow crease across one cheek, hair stuck to the side of her face, dull skin, dry lips, one eye open slightly wider than the other, the t-shirt slept in and rucked. Unposed and unaware of the camera. Keep every label, book spine and blister pack free of readable lettering.
+
+Thanks.
 ```
 
 **Second thing to watch: whether she sits further up than one elbow.** The read is that
@@ -447,6 +465,8 @@ Light: hard daylight through a half-open venetian blind out of frame, throwing a
 Style: a still from a 35mm independent film. Available light only. Hyper-realistic skin texture with visible pores and subtle imperfections. A faint smear on the lens, subtle handshake blur, mild wide-angle stretch toward the corners.
 
 Constraints: hair stuck to one cheek, dull skin, dry lips, the t-shirt slept in and rucked up at the waist, one sock on and one off. Unposed and unaware of the camera. Keep every label and blister pack free of readable lettering.
+
+Thanks.
 ```
 
 ### 2h.4v Susan wakes to the phone — clip
@@ -501,6 +521,8 @@ She stays lying face-down across the bed throughout, exactly as in the frame. On
 The camera is locked and still throughout. Available light only, real-time pace, and the camera is not helping — this is a fixed observational shot, not a composed one. Shot at 24fps with a 180-degree shutter, so the arm smears with natural motion blur as it swings. Fine film grain.
 
 Audio is the room only: the low buzz of a phone vibrating on a wooden table and distant traffic through the window.
+
+Thanks.
 ```
 
 **Note every constraint is stated positively** — *"she stays lying face-down across the
@@ -568,6 +590,8 @@ The phone screen lights and starts to buzz, rattling faintly against the wood. S
 The camera is locked and still throughout, at mattress height from the side of the bed, wide enough to hold the whole bed and the bedside table. Available light only, real-time pace, a fixed observational shot rather than a composed one. Shot at 24fps with a 180-degree shutter. Fine film grain.
 
 Audio is the room only: the low buzz of a phone vibrating on a wooden table and distant traffic through the window.
+
+Thanks.
 ```
 
 **What to watch:** whether the room survives. If it comes back generic, that is Ingredients
@@ -619,6 +643,8 @@ She stays sprawled across the bed throughout, exactly as in the frame, the phone
 The camera is locked and still throughout, directly overhead. Available light only, real-time pace, and the camera is not helping — this is a fixed observational shot, not a composed one. Dust drifts through the bar of daylight lying across the bed. Shot at 24fps with a 180-degree shutter. Fine film grain.
 
 Audio is the room only: her voice low, flat and indistinct under distant traffic through the window.
+
+Thanks.
 ```
 
 **What to watch: whether the gesture inflates.** If she starts conducting, cut *"the
@@ -698,6 +724,8 @@ Light: a hard ladder of daylight through the half-open venetian blind camera-lef
 Style: a still from a 35mm independent film. Available light only. Hyper-realistic skin texture with visible pores and subtle imperfections. A faint smear on the lens, fine grain, subtle handshake blur.
 
 Constraints: a pillow crease across one cheek, hair stuck flat to the side of her face, dull skin, dry lips, one eye open slightly wider than the other, sleep-creased t-shirt. Unposed and unaware of the camera. Keep every label, book spine and blister pack free of readable lettering.
+
+Thanks.
 ```
 
 ### Round 6 — she is wrecked, and the face does almost nothing
@@ -829,6 +857,8 @@ Light: flat overcast daylight from outside, the interior a stop darker; a hard b
 Style: a still from a 35mm independent film — a woman receiving news through glass. Available light only, unretouched, natural skin texture.
 
 Constraints: cream blouse untucked, camel cardigan off one shoulder; her expression is flat and absorbing rather than shocked; keep every notice, card slot, sticker and reflected sign free of readable lettering.
+
+Thanks.
 ```
 
 ### 2h.6v Karen listens in the kiosk — clip
@@ -920,6 +950,8 @@ She is listening, and she has been listening for a while. Her eyes are open and 
 Available light only, real-time pace. Behind the kiosk, steam lifts and drifts from a vent grate in the pavement. The street itself is quiet and still. Any lettering on the kiosk and in the reflections stays soft and unreadable. Shot at 24fps with a 180-degree shutter. Fine film grain.
 
 Audio is the street only: distant traffic somewhere out of shot, and the thin indistinct sound of a voice in the receiver, too faint to make out any words.
+
+Thanks.
 ```
 
 **What to watch:**
@@ -969,6 +1001,8 @@ Light: flat overcast mid-morning daylight, a bright white sky reflected in the u
 Style: a still from a 35mm independent film — the closing frame of the first act, a small figure committing to something enormous. Available light only, unretouched.
 
 Constraints: cream blouse untucked, camel cardigan slipped off one shoulder, no coat; her posture reads as settled and immovable rather than triumphant; keep every notice, hoarding, sticker and reflected sign free of readable lettering.
+
+Thanks.
 ```
 
 ---
