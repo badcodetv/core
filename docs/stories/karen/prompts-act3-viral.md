@@ -85,25 +85,52 @@ cuts between them; the engine's limit is pushing us toward the edit we would hav
 > him part of the attraction.* So this is not a hero shot of a young producer discovering a
 > star. **It is a man who has stopped walking.**
 
-**Shot from behind and slightly to one side of him**, so we get his phone screen, a sliver of his
-face, and **Karen small in the kiosk beyond, mid-shout**. Three things this buys:
-
-1. **Her face is far enough away not to need `@Karen`** — one Character, one reference, a short
-   prompt. Everything this file has learned says that is the shot most likely to come back right.
-2. **The phone screen is the story.** What he is doing is more important than what he looks like,
-   and a screen held up between us and her is the image the next twenty million views come out of.
-3. **He is facing away from us, which is where he is going.** We never see him again.
+> ### ⚠️ Round 1 fired 2026-08-18 — three notes from Kai, and they resolve into one shot.
+>
+> | Note | Cause |
+> | --- | --- |
+> | *"Aarron should not be in front of Karen, maybe behind and to the side"* | round 1 put him in the near foreground, which made it his scene |
+> | *"it did not use his likeness from `@Aarron`"* | **my error: I asked for the back of his head.** A Character has nothing to apply a face to when there is no face in the frame |
+> | *"the same shot directly in front of Karen is getting boring"* | true — every frame in this film so far is 28–35mm from in front of her |
+>
+> ### The likeness rule, now explicit: **a Character needs a face in the shot.**
+>
+> The consistency guidance asks for *"a sharp image with neutral lighting that clearly shows the
+> face"* on the reference side; the same is true of the **output** side. **`@Aarron` on a shot of
+> the back of a head is a wasted attachment.** Round 1's whole design — anonymity, a sliver of
+> face, *"he is not part of the attraction"* — was faithful to the canon and incompatible with
+> using his Character at all.
+>
+> **Resolved by putting him behind her rather than in front:** further down the street, **facing
+> back towards the camera as he films her**, so his face is toward us and the Character binds,
+> while she is still the near, dominant figure. Kai's first note fixes the second.
+>
+> ### ✅ The new angle: go long. 135mm from down the pavement.
+>
+> **A long lens is how you photograph someone who does not know you are there**, which is exactly
+> what this act is about — so the change is motivated, not decorative. It also
+> [compresses the block and stacks the layers](https://www.gensgpt.com/blog/camera-angles-composition-ai-image-generation-2026-guide),
+> which puts Aarron visually close to her while keeping him ten or fifteen feet behind, and it
+> gives Act 3 **a visual language of its own**: everything up to now is a wide standing on the
+> corner; from here the camera is watching from a distance, because so is everybody else.
+>
+> **Prompt order matters and is now followed:** the field convention is **angle → lens →
+> composition → lighting → style**, so that spatial rules are set before any detail is added.
+>
+> **Anti-slop levers in this frame:** telephoto compression (unusual and hard to fake), a
+> deliberate blurred foreground occluder, an off-centre subject, and a candid distance rather
+> than a composed portrait.
 
 ```prompt
 Image 1 is the reference. Keep it exactly as it is — the same kiosk, the same subway entrance immediately behind it, the same scaffolding, the same corner, the same woman in the kiosk, her clothes, the flat overcast mid-morning light, and the grainy super-8 film look. Redesign nothing.
 
 Change three things:
 
-1. A young man in his twenties has stopped on the pavement a few steps in front of the kiosk, seen from behind and slightly to his left, filling the left of the frame and close to the camera. He is holding his phone up in front of him in both hands, filming, and only a sliver of the side of his face is visible. He is in a hoodie, a jacket and trainers, with a small backpack on one shoulder.
+1. The shot is taken from a long way down the pavement on a 135mm lens at f/5.6, from a photographer standing back against the scaffolding at chest height and looking along the street, so the whole block is compressed and stacked up behind the kiosk. A scaffolding pole crosses the very near edge of the frame, blurred. Both people described below are in focus.
 
-2. The woman in the kiosk is beyond him, small and sharp in the middle distance, with the receiver at her ear and her mouth open in mid-shout. She is not looking at him and does not know he is there.
+2. The woman is in the kiosk, a little left of centre, with the receiver at her ear, her mouth open in mid-shout and her free hand out in front of her off the shelf. She does not know anyone is watching her.
 
-3. The camera is at his shoulder height on the pavement, standing under the scaffolding, on a 35mm lens. He is out of focus in the near foreground and she is the sharp thing in the frame.
+3. A young man in his twenties stands further down the pavement, beyond the kiosk and off to the right, ten or fifteen feet behind her. He has stopped mid-walk and is holding his phone up in both hands, filming her, so he is facing back towards the camera and his face is clearly visible. He is in a hoodie, a jacket and trainers with a small backpack on one shoulder.
 
 The pavement is otherwise empty. Natural skin texture with visible pores. No readable lettering anywhere, and nothing readable on the phone screen. No border around the image.
 
@@ -112,22 +139,25 @@ Thanks.
 
 **What to watch:**
 
-1. **Is he anonymous?** A sliver of face, from behind. **If it has turned him round into a
-   portrait, reject it** — the canon is explicit that he is not part of the attraction, and a
-   face here makes him a character instead of an accident.
-2. **Is she the sharp one?** The focus is the whole argument of the frame: he is the blur, she is
-   the subject. If he is sharp and she is soft, it has made this his scene.
-3. **Is her mouth open?** Mid-shout is what he is recording. A woman standing quietly gives the
-   narrator's line nothing to sit on.
-4. **Is the phone screen blank?** Screens are the most reliable place for text to appear, and a
-   legible screen is also the most reliable policy block there is.
-5. **Same kiosk and same corner?** As ever. It is the fixed point of the whole film.
+1. **Is his face visible and is it Aarron?** The round-1 failure and the whole reason for the new
+   geometry. If it is turned away again, `@Aarron` has nothing to bind to and the attachment is
+   wasted.
+2. **Is it actually compressed?** 135mm should stack the block up behind the kiosk and make the
+   buildings look close and flat. If it comes back looking like a 35mm wide, the framing lost to
+   the reference and the fix is a consequence — *"the buildings behind the kiosk look stacked
+   right up against it."*
+3. **Is she still the near, dominant figure?** He is behind and smaller. If he has come forward
+   again it has become his scene, which the canon forbids twice.
+4. **Is her mouth open?** Mid-shout is what he is recording, and it is what the narrator's line
+   sits on.
+5. **Blank phone screen?** Screens are the most reliable place for text to appear and the most
+   reliable policy block there is.
 
 ## What this act still owes
 
 | § | Piece | Notes |
 | --- | --- | --- |
-| **3a.1** | The sample — plate | ✅ written — over his shoulder, she is the sharp one |
+| **3a.1** | The sample — plate | ✅ written, **round 2** — 135mm down the pavement; he is behind her, facing back, so `@Aarron` binds |
 | 3a.1v | The sample — clip | **only he moves**: he stops, lifts the phone, lowers it, walks out of frame. Karen holds. |
 | 3a.2 | Karen shouts the line — plate | her single; the counter-shot, so the two-hander never shares a moving frame |
 | 3a.2v | …— clip | **only she moves.** This is the *"I've got ALL DAY to complain"* shot |
