@@ -1025,6 +1025,81 @@ Thanks.
 
 ### 2h.6v Karen listens in the kiosk — clip
 
+**Cast:** none — **Frames takes no Character.** **Attach:** the accepted **§2h.6** still (the
+profile with the blurred street) as the **starting frame**. **Engine:** Gemini Omni Flash ·
+**Frames to Video** · 8s · native audio · **Enhance Prompt off**.
+
+> ### ⚠️ Rewritten 2026-08-18 — §2h.6 is a different shot now, so its clip is too.
+>
+> The block below used to be **a push-in with an arc, fired off a wider still** — it says so
+> itself: *"a push-in needs somewhere to travel from."* **The accepted §2h.6 is already a tight
+> profile**, so there is nowhere to push from, and the arc would have to invent the far side of
+> a kiosk the shallow focus has deliberately dissolved.
+>
+> **The old block is kept below the new one**, because its craft is still the best writing in
+> this file on *how to make a camera move do something* — the reflection sliding off her face,
+> the late settle, the four physical events that buy "confused" without an emotion word. **Reuse
+> it on a shot that has room.**
+
+> ### The blur is not just a look — it is protection.
+>
+> Kai kept this frame for the shallow focus, and it buys something the film has been fighting
+> for all week: **blurred traffic has no geometry to get wrong.** Sharp vehicles have
+> interpenetrated, vanished and [failed through
+> glass](../../google-flow/omni-flash.md); a soft yellow shape drifting across a bokeh
+> background is [formless
+> motion](../../google-flow/omni-flash.md#why-falling-objects-fail-and-what-actually-fixes-it),
+> which is the one kind these engines never break. **For once the street can stay alive on
+> screen instead of being demoted to audio.**
+>
+> **So the focus itself has to be pinned**, because it is now doing real work: *"the focus stays
+> on her face for the whole shot; the street behind her stays a soft blur."*
+
+**Camera locked, and that is a decision.** A push-in on a shallow frame makes the engine re-rack
+focus, and the blur is the thing being protected. **The motion budget goes entirely into her
+face** — which is right for the beat anyway: this is the moment the news lands, and the news
+lands on a person who has stopped moving.
+
+**She does not speak.** She is receiving. It also removes the lip-sync risk from a profile
+close-up, which is the shot type least able to survive it.
+
+```prompt
+Use the attached image as the starting frame. One continuous shot.
+
+The focus stays on her face for the whole shot and the street behind her stays a soft blur.
+
+She is listening. She breathes in and out once. Her eyes lower a little and come back up. She moves the receiver a small amount against her ear and settles it again. Her mouth stays closed, she does not speak, and she does not turn towards the camera.
+
+The camera does not move. Behind her the blurred traffic drifts slowly across the frame as soft shapes of colour with no hard edges. Everything sharp in the frame stays exactly where it is: the payphone, the coiled cord and the kiosk frame do not move, and every sticker and mark on them stays exactly as it is.
+
+Real-time pace, 24fps with a 180-degree shutter. Fine film grain.
+
+Audio: a small indistinct voice talking on the line, too faint to make out any words, and the muffled sound of the street — traffic, footsteps and a bus somewhere out of shot. No dialogue from her.
+
+Thanks.
+```
+
+**What to watch:**
+
+1. **Does the background stay blurred?** The reason this still was kept. If the street sharpens
+   up as the clip runs, the fallback is a consequence rather than a restatement: *"only her face
+   is ever in focus; everything behind her is soft shapes of colour."*
+2. **Does she speak?** She must not. A moving mouth in a profile close-up is the hardest thing
+   in this film to get away with.
+3. **Do the sharp props hold?** The payphone, the cord and the peeled stickers are the only
+   hard-edged things in frame, which makes them the only things that can visibly break.
+4. **Does the blurred traffic behave?** It should — formless motion is the safe kind. If it
+   somehow does not, that is genuinely new information and worth recording, because it would be
+   the first time.
+5. **Is the voice on the line, not in the room?** The whole beat is information arriving from
+   somewhere else.
+
+---
+
+<details>
+<summary><strong>⛔ Superseded — the push-in-and-arc version, written for a wider still.</strong> Kept for its camera craft; reuse it on a shot with room to travel.</summary>
+
+
 **Engine:** Gemini Omni Flash · **Ingredients to Video** — an accepted kiosk still of Karen
 attached **plus `@Karen`** · 8s · native audio · **Enhance Prompt off**.
 
@@ -1133,6 +1208,8 @@ Thanks.
   slide-off with *"the glass is clear over her face by the end of the move."*
 - **Whether she speaks.** She is receiving, not talking. Dialogue coming back is the audio
   lottery — reroll, do not rewrite.
+
+</details>
 
 ### 2h.7 The last frame of Act 1 — plate
 
