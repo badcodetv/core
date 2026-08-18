@@ -784,6 +784,37 @@ consequences pushed at them (*"a full storm, not a light dusting"*, shadows thro
 across the carpet). Particle nouns *overdeliver* and need removing. Same instinct — "say
 more about it" — is right in one case and wrong in the other.
 
+### ⚠️ Objects vanish on the occlusion round trip `[observed, n=1]`
+
+**An object that passes out of sight during a clip may not come back the same — or at all.**
+Karen §2j.9v round 2 (2026-08-18) had a woman with her back turned lift a mug to drink and
+lower it; the mug travelled **behind her head** and returned, and it — plus papers elsewhere
+in frame — came back *"appearing and disappearing randomly."*
+
+**The mechanism is the familiar one:** no world model, so an object with no visible pixels for
+several frames has nothing to be reconstructed from. This is
+[the falling-object problem](#why-falling-objects-fail-and-what-actually-fixes-it) with an
+occlusion instead of a trajectory. **Prefer actions where every object stays visible the whole
+time.** A mug held still is safe; a mug raised behind a turned head is not.
+
+**Contagion is worth watching.** The papers were not part of the action and flickered anyway —
+one unstable object in frame appears to lower the bar for the rest. **n=1, so treat as a
+suspicion, not a rule**, but it argues for pinning everything rather than only the moving thing.
+
+### Naming a prop is not pinning it `[observed]`
+
+**"The papers are blank" and "the papers do not move" are two different instructions**, and the
+first does not imply the second. The bare-surfaces line (see *"Undefined surfaces are where hallucinated text appears"* above)
+governs what a surface *says*; it says nothing about whether the surface *persists*. Clips with
+defocused foreground props want both:
+
+> Every object in the room stays exactly where it is and nothing is picked up, moved or put
+> down. The papers on the desk lie flat and still and stay blank.
+
+**Permanence reads better as a positive state than as a prohibition**, same as
+[emptiness](#-negatives-do-not-work-and-they-actively-backfire) — *"stays exactly where it is"*
+rather than *"does not disappear"*, which puts the disappearing in the prompt.
+
 ### Slop counters specific to motion `[community]`
 
 Additions to the table in the previous section:

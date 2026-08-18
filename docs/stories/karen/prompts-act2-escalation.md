@@ -1476,12 +1476,33 @@ every clip gets from here after the subway-sign incident.
 empty room.** She has been climbing for nine months to become a noise on a desk nobody is
 holding.
 
+> ### Round 2 fired 2026-08-18 — *"paper and her coffee mug appearing and disappearing randomly."*
+>
+> **⚠️ The mug made an occlusion round trip.** *"She lifts the mug, drinks, and lowers it"* on a
+> woman with her back turned sends the mug **behind her head and out again** — the object leaves
+> visibility and has to be rebuilt from nothing on the way back. Same mechanism as
+> [falling objects](../../google-flow/omni-flash.md#why-falling-objects-fail-and-what-actually-fixes-it)
+> and [reflected traffic](../../google-flow/omni-flash.md): geometry with no world model behind
+> it. **An object that disappears in a clip is an object that was asked to disappear.**
+>
+> **And naming a prop is not pinning it.** The papers were mentioned only in the bare-surfaces
+> line — *"the papers on the desk are blank"* — which tells the engine what they **say**, not
+> that they **hold still**. In a defocused 24mm foreground that is an invitation to re-decide
+> them every frame. **The permanence clause and the no-text clause are two different jobs** and
+> from here both get written.
+>
+> **Round 3 spends the entire motion budget on her body**: weight shift, one short line spoken
+> away from the room, and nothing else moves anywhere in the frame. The mug stays welded to her
+> chest in both hands. §2j.6rv already proved eight seconds of almost nothing reads fine when
+> the stillness *is* the point — and here it is the point twice over, because **the room's
+> refusal to move is the room's refusal to care.**
+
 ```prompt
-Use the attached image as the starting frame.
+Use the attached image as the starting frame. One continuous shot.
 
-The camera does not move. She stays exactly where she is at the window with her back to the room, and she does not turn round. She lifts the mug, drinks, and lowers it again. She says something short. She shifts her weight from one foot to the other and settles.
+The camera does not move. She stays exactly where she is at the window with her back to the room, and she does not turn round. The mug stays held in both hands against her chest for the whole shot: she does not raise it, drink from it, lower it or set it down. She says something short without turning. She shifts her weight from one foot to the other and settles.
 
-The air in the room is clear and the light across the carpet stays exactly as it is. Every surface that could carry writing stays bare: the papers on the desk are blank, the speakerphone shows only a small steady light, and the framed pictures on the wall stay too small to make out.
+Every object in the room stays exactly where it is and nothing is picked up, moved or put down. The papers on the desk lie flat and still and stay blank, the speakerphone shows only a small steady light, and the framed pictures on the wall stay too small to make out. The air in the room is clear and the light across the carpet does not change.
 
 Real-time pace, 24fps with a 180-degree shutter. Fine film grain.
 
@@ -1492,12 +1513,15 @@ Audio is the room: a woman's voice coming small and tinny out of the speakerphon
 
 1. **Does she turn round?** The one failure that matters. If she does, **cut *"she says
    something short"*** — speech is what invites a turn toward the room.
-2. **Is the tinny voice on the speaker?** Given to her mouth instead, the shot inverts and the
+2. **Do the mug and the papers hold?** The round-2 failure. Everything in shot is now pinned by
+   name; if anything still flickers, the last lever is **Ingredients with the still**, which has
+   held staging better than Frames every time it has been tried.
+3. **Is the tinny voice on the speaker?** Given to her mouth instead, the shot inverts and the
    point is lost. Worth a re-roll.
-3. **Does dust come back anyway?** It should not now that the air is described as clear. If
+4. **Does dust come back anyway?** It should not now that the air is described as clear. If
    it does, the next lever is the light, not the air: bring the sun off-axis so the beam stops
    crossing the room.
-4. **Frames with a person in shot.** Only tested on an empty landscape so far. **Holding
+5. **Frames with a person in shot.** Only tested on an empty landscape so far. **Holding
    confirms the rule at its edge; distortion finds its limit** and Ingredients is the fallback.
 
 ---
@@ -1527,6 +1551,6 @@ Sketched so the order is visible; each gets written one at a time, on request.
 | **2j.8** | Rung 3 interior — the councilman's assistant | ✅ written, round 2 — **the sticky note**, the empty chair, and the first low angle |
 | **2j.8v** | Rung 3, the fourth note — clip | ✅ written — the joke completes on screen |
 | **2j.9** | Rung 4 interior — the Chief of Staff | ✅ written — **on speakerphone, back turned**; lowest angle, best view |
-| **2j.9v** | Rung 4, the speakerphone — clip | ✅ written — **Frames**, tested at the rule's edge; Karen is a noise on a desk |
+| **2j.9v** | Rung 4, the speakerphone — clip | ✅ written, round 3 — **Frames**, tested at the rule's edge; every prop pinned; Karen is a noise on a desk |
 | 2j.10 | The newspaper easter egg | AI-taking-jobs headline, **background not foreground**; ideally the Camping prop paper. ⚠️ Legible headline text is the most reliable policy block there is — the line belongs in a `NarrationBox`, not in the image |
 | 2j.11 | She is alone in it | the lone shot of her staring out of the box; the act's emotional exit |
