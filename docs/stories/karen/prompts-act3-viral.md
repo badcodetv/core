@@ -262,11 +262,34 @@ Thanks.
 
 ## What this act still owes
 
+> ### ⚠️ Gap found 2026-08-18 (Kai): the cameo was built middle-first.
+>
+> [`story.md` §3.1](./story.md#31-the-aarron-cameo--redo-five-seconds-total) has **four on-screen
+> beats** and §3a.1 covers the third:
+>
+> | Canon beat | Piece |
+> | --- | --- |
+> | *"Aarron happens to wander past the phone box — he is not looking for anything"* | **§3a.0 — missing** |
+> | *"Karen, mid-hold, shouts her line"* | **§3a.2 — planned, not written** |
+> | *"Aarron stops, gets his phone out, records a few seconds"* | ✅ §3a.1 / §3a.1v |
+> | *"— 'oh sh—' — and walks off"* | the *"oh sh—"* is §3a.1v's smile; **the walk-off is a ruling, below** |
+>
+> **§3a.0 is the load-bearing one.** He has to be **going somewhere else** before he stops.
+> Without it he is a man standing at a phone box filming a woman, which reads as *intent* — and
+> the canon warns twice that the believable version is the accidental one. **The walk is what
+> makes it an accident.**
+>
+> **Ruling on the walk-off: cut away on the smile instead.** Canon's own line is *"we never see
+> him again"*, and the cleanest way to say that is to not show him leaving. If it is wanted, the
+> cheap version is a reverse from behind him walking away with the kiosk small behind — one
+> mover, Karen static and tiny — but the cut is stronger and the cameo is only five seconds long.
+
 | § | Piece | Notes |
 | --- | --- | --- |
+| **3a.0** | He walks past — plate + clip | ⚠️ **owed** — the shot that makes the cameo accidental; one mover (him) |
 | **3a.1** | The sample — plate | ✅ written, **round 4** — 135mm three-quarter; he stands by the subway railings behind her |
 | **3a.1v** | The sample — clip | ✅ written — **only she moves**; he is planted and the one change is a smile |
-| 3a.2 | Karen shouts the line — plate | her single; the counter-shot, so the two-hander never shares a moving frame |
+| 3a.2 | Karen shouts the line — plate | ⚠️ **owed** — her single; the sound the whole film hangs on, and it keeps the two-hander out of one moving frame |
 | 3a.2v | …— clip | **only she moves.** This is the *"I've got ALL DAY to complain"* shot |
 | 3a.3 | The train — plate | two riders, a phone between them, the tune playing in-world |
 | 3a.4 | The crowd — the drone trick | **stills only, cut between.** Altitude up/down, the crowd bigger each time. Never animated. |
