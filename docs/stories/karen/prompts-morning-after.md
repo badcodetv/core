@@ -1243,23 +1243,33 @@ the kiosk already looking like somewhere she lives.
 > a reflective surface, and now *space* — if the framing implies room the reference does not
 > have, the reference loses.
 >
-> ### The fix: give each image a declared job.
+> ### ⚠️ The fix is one reference and a legal camera position — **ruled by Kai 2026-08-18**
 >
-> Google's guidance is to **name the role of every reference** — *"use Image A for the pose,
-> Image B for the style, Image C for the background"* — and the field advice sharpens it:
-> **the prompt should describe the relationships between images**, because *"Nano Banana Pro is
-> good at inference; your job is to reduce the number of bad inferences it has to make."*
+> A draft of round 2 attached **two** stills with declared jobs (§2j.0 for the world, round 1's
+> frame for the angle), on the documented ground that naming each image's role is the supported
+> pattern. **Kai overruled it:** *"just describe the camera angle — too much extra info/images
+> in the prompt seems to mess it up."*
 >
-> **So round 2 attaches both: §2j.0 for the world, round 1's frame for the camera.** This is the
-> first time in the film two stills of the same subject are attached at once, and it is only safe
-> **because their jobs are stated and do not overlap** — the "third opinion" warning applies to
-> two references silently competing for the same job, not to two with different ones.
+> **That is consistent with everything this file has learned the hard way.** Prompt length
+> correlates negatively with adherence; the keep-list drifted because it re-described a picture;
+> §2j.11 only worked once it was cut to ~150 words. **A second image is more input competing for
+> the same attention, and role labels do not make it free.** One reference, described relations
+> kept to a minimum.
 >
-> **And the lens gets named.** Naming a camera and focal length does
+> ### So the camera has to be described in words that do not demand a plaza.
+>
+> Round 1's wording — *"a wide shot from across the pavement"* — is what bought the open space.
+> **The replacement names a spot the reference actually contains: standing under the scaffolding,
+> a few steps in front of the kiosk, camera down at knee height.** A photographer could be there.
+>
+> **Naming where the photographer stands beats naming what the shot looks like**, when the risk
+> is the set. It converts an abstract framing into a position the model can check against the
+> picture it was given.
+>
+> **And the lens gets named.** Naming a focal length does
 > [more work than any other single addition](https://imagera.ai/blog/best-prompts-realistic-ai-images-2026),
-> and it solves two problems at once here: **28mm keeps the low angle without the ultra-wide
-> bend** — bent verticals are a slop tell — **and a narrower field is less world for the model to
-> invent.**
+> and it solves two problems here: **28mm keeps the low angle without the ultra-wide bend** —
+> bent verticals are a slop tell — **and a narrower field is less world for the model to invent.**
 
 > ### The design idea, unchanged: the kiosk is a plinth.
 >
@@ -1275,19 +1285,15 @@ the kiosk already looking like somewhere she lives.
 > her."* A deserted Midtown pavement at mid-morning reads post-apocalyptic. **The isolation here
 > is that she is the only person on the street who has stopped.**
 
-**Cast:** `@Karen`. **Attach two stills with stated jobs — image 1 = the accepted §2j.0, image 2
-= round 1's frame** (the low angle). **Engine:** Nano Banana Pro, 16:9, 3 candidates.
+**Cast:** `@Karen` — the Character **and** the accepted **§2j.0** still as image 1. **One
+reference, nothing else.** **Engine:** Nano Banana Pro, 16:9, 3 candidates.
 
 ```prompt
-Image 1 is the setting. Image 2 is the camera angle. Nothing except the camera angle comes from image 2.
+Image 1 is the reference. Keep it exactly as it is — the same kiosk, the same subway entrance immediately behind it, the same scaffolding, the same corner, the same woman, the same clothes, the same flat overcast mid-morning light, and the same grainy super-8 film look. Redesign nothing. It is a narrow Midtown side street and the kiosk stands against the pavement, not free in the middle of an open space.
 
-From image 1, keep everything exactly as it is: the kiosk, the subway entrance immediately behind it, the scaffolding, the pavement, the woman, her clothes, the flat overcast mid-morning light and the grainy super-8 film look. It is a narrow Midtown side street, not an open plaza, and the kiosk stands against the pavement rather than free in the middle of a space.
+Change two things:
 
-From image 2, take only the camera: low down at about chest height, looking slightly upward, so the kiosk stands whole in the frame like a plinth with her inside it.
-
-Then change two things from image 1:
-
-1. Shot on a 28mm lens from across the pavement, low. The kiosk fills the height of the frame a little left of centre and the building behind it rises out of the top. Vertical lines stay close to straight.
+1. A low-angle shot on a 28mm lens, taken from the pavement a few steps in front of the kiosk, standing under the scaffolding, with the camera down at about knee height looking up at her. The kiosk stands whole in the frame a little left of centre with her inside it, and the building behind it goes up out of the top of the frame. Vertical lines stay close to straight.
 
 2. She has settled in. The receiver is against her ear, her free hand is flat on the shelf, her shoulders are squared and dropped, her weight is down in her heels, and her handbag is standing on the floor of the kiosk by her feet. Her chin is level and her face is doing nothing in particular.
 
