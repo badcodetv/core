@@ -463,6 +463,15 @@ too.
 a human could not occupy is an instruction to rebuild the world, and it will be obeyed at the
 reference's expense. The fix is nearly always a legal position a foot or two away.
 
+**⚠️ The same trap catches surfaces, not just camera positions** (Karen §2h.6, 2026-08-18). The
+prompt asked for the street *"reflected in the glass in front of her"* while the camera stood at
+the kiosk's **open front** — there is no pane there. **A shot that needs a surface the set does
+not have is an instruction to build the surface**, in that case a glass door on a doorless
+booth. Reflections, shadows cast on walls, light through windows: check the thing exists before
+asking it to do something. And **state the geometry positively** — *"the front of the kiosk is
+open, with no door and no glass across it"* — because a set fact left unsaid is a set fact the
+model gets to decide.
+
 ### 7. ⚠️ Write the keep-list from the accepted still, not from the prose that made it
 
 Same shot, second cause: the keep-list said *"glazed on three sides, a hinged door"*, carried
