@@ -930,17 +930,39 @@ acting** — the beat is the information arriving, not her performing shock.
 > with no door and no glass across it"* — because a set fact left unsaid is a set fact the model
 > gets to decide.
 
-> ### The glass is still doing the thematic work.
+> ### ⚠️ Round 2 fired 2026-08-18 — *"it still has reflections where there isn't glass… it seems to do it naturally when you don't ask."*
 >
-> **The street reflected across her means we are already watching her from the outside**, which
-> is where the rest of the film watches her from: through glass, from across a pavement, from a
-> helicopter, from a room she is not allowed into. This is the frame that establishes that
-> distance — it just has to happen on a pane that exists.
+> **Kai's second clause is the rule.** The reflection came back smeared across her hair and
+> cheek as a double-exposure, because **naming a reflection makes it an effect to apply rather
+> than a property of a surface.** Round 2 had already moved the camera to a real pane; that was
+> not enough, because the instruction itself is the problem.
+>
+> ### The atmosphere family is rendered for free and overdelivers when named.
+>
+> **Reflections, dust, steam, haze, bokeh** — the engine puts them in unasked, because they are
+> everywhere in the reference photography it learned from. **Name one and it becomes the subject
+> of the shot.** Exactly the [dust
+> lesson](./prompts-act2-escalation.md#2j9v-rung-4-the-speakerphone--clip), which was written up
+> as a fact about particles when it was really a fact about atmosphere.
+>
+> **Note the asymmetry with weather, which is the mirror image**: weather nouns *underdelivered*
+> and needed magnitude pushed at them (*"a full storm, not a light dusting"*). **Atmosphere
+> needs deleting; weather needs shouting at.**
+>
+> **So round 3 deletes the reflection clause entirely and says nothing about glass at all.**
+> Everything else in round 2 was right — profile, camera at the side, open front intact, no
+> invented door — so nothing else changes.
 
-**Reference: §2j.0, not §2j.11.** Both are canon and both would work, but §2j.0 is the same time
-of day, the same light and the same clothes, so **the only thing changing is the camera** — and
-a change-list of one kind is more likely to land than one that moves the framing *and* the sun.
-Do not attach both stills; two references of the same set are a third opinion on it.
+> ### The idea survives without the instruction.
+>
+> **We are watching her from outside**, which is where the rest of the film watches her from —
+> through glass, across a pavement, from a helicopter, from a room she is not allowed into. That
+> reading comes from **where the camera is standing**, not from an effect laid over her face.
+> Whatever the side panel does on its own is a bonus.
+
+**Reference: §2j.0, not §2j.11.** Both are canon, but §2j.0 is the same time of day, the same
+light and the same clothes, so **the only thing changing is the camera**. Do not attach both
+stills; two references of the same set are a third opinion on it.
 
 **§4a, hard: name the muscles, never the emotion.** *"She has just found out"* is the cue that
 produces a woman doing Shocked. The muscles are what is actually devastating — a face that has
@@ -951,13 +973,11 @@ Image 1 is the reference. Keep it exactly as it is — the same kiosk, the same 
 
 The front of the kiosk is open, with no door and no glass across it, exactly as in image 1.
 
-Change three things:
+Change two things:
 
-1. The camera has moved round to the side of the kiosk and is close. She is seen in profile through the glazed side panel, her head and shoulders filling most of the frame, with the aluminium frame of the panel crossing the near edge of the frame out of focus.
+1. The camera has moved round to the side of the kiosk and is close. She is in profile, her head and shoulders filling most of the frame, with the aluminium frame of the kiosk crossing the near edge of the frame out of focus.
 
-2. The Midtown street is reflected in that side panel and laid across her face and shoulders, with a hard bright reflection of the white sky along the top of the glass. The reflected signs and shopfronts stay too soft to read.
-
-3. She has gone completely still. The receiver is against her ear and her other hand is flat on the shelf. Her face is flat and absorbing rather than shocked — her mouth is closed, her jaw is loose, her eyebrows are level — and she is looking straight ahead out of the open front, not at the camera.
+2. She has gone completely still. The receiver is against her ear and her other hand is flat on the shelf. Her face is flat and absorbing rather than shocked — her mouth is closed, her jaw is loose, her eyebrows are level — and she is looking straight ahead out of the open front, not at the camera.
 
 No readable lettering anywhere, and no border around the image.
 
@@ -966,19 +986,16 @@ Thanks.
 
 **What to watch:**
 
-1. **⚠️ Did it grow a door?** The failure this round is written to prevent. The front of the
-   kiosk must still be open. A glazed front, a hinged door or a fully enclosed box means the
-   reflection instruction pulled a surface into existence, and the fix is to cut change 2
-   entirely rather than to argue with it.
-2. **Is the reflection on the side panel, and is she in profile?** If the camera has stayed at
-   the open front, there is no glass in the shot and the idea is gone.
-3. **Did it tighten?** Head and shoulders filling most of the frame. §2h.3's widening hedged and
-   §2j.11's tightening hedged twice, so this is the likeliest miss.
+1. **Is her face clean?** The round-2 failure. No ghosting, no double-exposure across her hair
+   and cheek. Whatever the side panel reflects on its own is fine — what must not be there is a
+   reflection laid *over* her.
+2. **Did it grow a door?** The front must still be open. Round 2 held this, so a regression
+   would mean the shortened prompt lost the geometry line — it has not moved, so this should be
+   safe.
+3. **Is she in profile, and tight?** Head and shoulders filling most of the frame.
 4. **Is she acting?** A dropped jaw, wide eyes, a hand to the mouth — reject. The line to add is
    *"her face barely changes at all."*
-5. **Are the reflected signs unreadable?** Reflections are where text sneaks back in, because
-   the surface is undefined by default.
-6. **Same kiosk?** Rust, peeled adhesive, the shelf, the coiled cord. It is why the re-fire
+5. **Same kiosk?** Rust, peeled adhesive, the shelf, the coiled cord. It is why the re-fire
    exists.
 
 > **Keep this still.** [§2h.6v](#2h6v-karen-listens-in-the-kiosk--clip) is re-run off it with
