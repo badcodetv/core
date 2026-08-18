@@ -431,16 +431,32 @@ are refusing into the prompt. The replacement is a three-way split, all positive
 Stating the change as a change is what stops it inventing a *different place* — the model is
 told the location is the same and only the listed facts differ.
 
-### 3b. Two references of the same subject are safe **only when their jobs differ**
+### 3b. ⚠️ Role labels do not make a second reference free — **house rule: one reference**
 
-The "third opinion" warning above is about references **silently competing for the same job**.
-Two stills of one set, each with a **declared and non-overlapping** role, is the documented
-pattern rather than a violation of it — Karen §2h.7 attaches the canon corner as *the setting*
-and a rejected frame as *the camera angle only*.
+The literature says two references are fine when each has a **declared, non-overlapping** job,
+and the "third opinion" warning is really about references *silently competing* for one job. All
+true. **Kai ruled against it anyway for BadCode, 2026-08-18:** *"just describe the camera angle —
+too much extra info/images in the prompt seems to mess it up."*
 
-The field formulation is the one to keep: **"the prompt should describe the relationships
-between images"**, because *"Nano Banana Pro is good at inference — your job is to reduce the
-number of bad inferences it has to make."*
+**That is consistent with the length finding**: a second image is more input competing for the
+same attention, and a role label does not buy it back. **Default to one reference and describe
+the rest**, reaching for a second only when the thing being transferred cannot be written down
+(a face, a texture, a specific product).
+
+The field formulation is still the one to keep for whatever *is* attached: **"the prompt should
+describe the relationships between images"**, because *"Nano Banana Pro is good at inference —
+your job is to reduce the number of bad inferences it has to make."*
+
+### 3c. ✅ Name where the photographer stands, not what the shot looks like
+
+**The counter to the set-rebuilding trap, and it is cheap.** *"A wide shot from across the
+pavement"* is an abstract framing, and the model satisfies it by building whatever space it
+needs. *"From the pavement a few steps in front of the kiosk, standing under the scaffolding,
+camera at knee height"* is **a position that either exists in the reference or does not** — and
+the model can check it against the picture it was handed.
+
+Pair it with a named focal length: it fixes the perspective, straightens verticals, and bounds
+how much world has to be invented.
 
 ### 4. Slots: fewer is better, and order matters
 
