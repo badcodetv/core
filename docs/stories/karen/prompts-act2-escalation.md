@@ -30,6 +30,26 @@ storyboard is the song — [`songs/all-day-to-complain.md`](./songs/all-day-to-c
 > **Engine research does not live here** — it goes to
 > [`docs/google-flow/`](../../google-flow/README.md).
 >
+> ### ⚠️ Clip duration is a decision, not a default
+>
+> Asked by Kai 2026-08-18: *"why are all of the video prompts 8s?"* — **because 8s is what
+> happens when nobody chooses.** Flow offers 4 / 6 / 8s (10s on Omni Flash only), and
+> `flow_generate_video` **asserts 8s when the parameter is omitted**
+> ([`platform-controls.md`](../../flow/platform-controls.md)). Act 1's river clips are 4s; Act 2
+> drifted back to the default without anyone deciding.
+>
+> **It costs quality. Drift compounds per frame** — the mug that flickered, the walker who
+> vanished, the traffic that interpenetrated are all per-frame accumulation. Half the frames is
+> half the chances.
+>
+> **Set it from the shot: how many beats, then shorten it by how much geometry is moving.**
+> One gesture is 4s. One action with props at risk is 4–6s. Three beats, or a shot whose
+> *length is the joke*, is 8s. Editing handles are a real argument for generating long, but not
+> when the failure mode is drift — you cannot trim your way out of a prop that flickers.
+>
+> **Durations below are stated per clip and several are now shorter than 8s.** Already-accepted
+> clips are left alone; the number applies on any re-fire.
+
 > ### ⚠️ Every prompt ends with *"Thanks."* — plates and clips alike
 >
 > Reaffirmed by Kai 2026-08-18 after it slipped on the clips. **The last line of every block
@@ -777,7 +797,7 @@ eyes go on the screen.
 ### 2j.5v Rung 1, the block — clip
 
 **Cast:** none. **Attach:** the accepted §2j.5 still. **Engine:** Gemini Omni Flash ·
-**Ingredients to Video** · 8s · native audio · **Enhance Prompt off**.
+**Ingredients to Video** · **4s** · native audio · **Enhance Prompt off**.
 
 > **⚠️ This is the first clip in the story with no Flow Character to bind the face.** Every
 > accepted clip so far has been Ingredients + still + `@Character`, the still holding the
@@ -989,7 +1009,7 @@ Thanks.
 ### 2j.7v Rung 2, the patient block — clip
 
 **Cast:** none. **Attach:** the accepted §2j.7 still. **Engine:** Gemini Omni Flash ·
-**Ingredients to Video** · 8s · native audio · **Enhance Prompt off**.
+**Ingredients to Video** · **4s** · native audio · **Enhance Prompt off**.
 
 **Tab: Ingredients**, per [the settled rule](../../google-flow/omni-flash.md#-the-tab-rule-is-there-a-face-in-it) —
 there is a face in it. No Flow Character exists for him, so identity rests on the still alone,
@@ -1222,7 +1242,7 @@ Thanks.
 ### 2j.8v Rung 3, the fourth note — clip
 
 **Cast:** none. **Attach:** the accepted §2j.8 still. **Engine:** Gemini Omni Flash ·
-**Ingredients to Video** · 8s · native audio · **Enhance Prompt off**.
+**Ingredients to Video** · **6s** · native audio · **Enhance Prompt off**.
 
 > ### The beat is the fourth note joining the row.
 >
@@ -1353,7 +1373,7 @@ Thanks.
 ### 2j.6sv Karen in the snow, rung 3 — clip
 
 **Cast:** **`@Karen`** — the Character **and** the still. **Attach:** the accepted §2j.6s
-still. **Engine:** Gemini Omni Flash · **Ingredients to Video** · 8s · native audio ·
+still. **Engine:** Gemini Omni Flash · **Ingredients to Video** · **6s** · native audio ·
 **Enhance Prompt off**.
 
 > ### Round 1 fired 2026-08-17 — her face changed, and writing appeared on the subway sign
@@ -1485,7 +1505,7 @@ Thanks.
 ### 2j.9v Rung 4, the speakerphone — clip
 
 **Cast:** none. **Attach:** the accepted §2j.9 still. **Engine:** Gemini Omni Flash ·
-**Frames to Video** · 8s · native audio · **Enhance Prompt off**.
+**Frames to Video** · **6s** · native audio · **Enhance Prompt off**.
 
 > **Her back is turned, which is a gift: no visible mouth means no lip-sync to fail**, so she
 > can speak freely and the audio channel does the acting.
