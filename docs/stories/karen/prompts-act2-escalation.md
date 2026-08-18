@@ -1524,6 +1524,128 @@ Audio is the room: a woman's voice coming small and tinny out of the speakerphon
 5. **Frames with a person in shot.** Only tested on an empty landscape so far. **Holding
    confirms the rule at its edge; distortion finds its limit** and Ingredients is the fallback.
 
+
+### 2j.10 The newspaper easter egg — ⛔ no plate needed
+
+**Ruled 2026-08-18.** [`story.md`](./story.md#act-2--the-great-escalation-the-core-of-the-film)
+asks for *"somewhere in the compilation, a newspaper … with an AI-taking-jobs headline.
+**Background, not foreground.**"* **§2j.7 already has it**, lying on the borough clerk's desk
+among the manila folders. That satisfies the canon exactly as written.
+
+**A dedicated plate would break the note it is trying to honour.** Give the newspaper its own
+frame and it stops being background — it becomes the film stopping to point at its own theme,
+which is the one thing the [voice guide](../../voice.md) says not to do. *Story over sermon.*
+The gag works precisely because a viewer either catches it on the desk or doesn't.
+
+**If it turns out to be unreadable in the cut**, the fix is a re-fire of §2j.7 with the paper
+moved nearer the camera — **not** a new shot.
+
+### 2j.11 She is alone in it — plate
+
+**Cast:** `@Karen`. **Time:** night, after the street has emptied. **Attached:** the accepted
+**§2j.0** with the refusal block below (fallback: nothing attached, prose only). **Engine:**
+Nano Banana Pro, 16:9, 3 candidates. **Register:** super-8 `STYLE LOCK`.
+
+> ### The act's exit, and the one frame in it that is not a template.
+>
+> Everything else in Act 2 is a machine: the aerial repeats with the weather swapped, the
+> interiors repeat with the furniture upgraded, the box repeats with Karen inside it. **That
+> sameness is the argument** — nine months of identical days. This frame is what the sameness
+> was *for*, and it earns its break by being the only one that stops observing her.
+
+**The formal event is the camera getting inside the box.** Act 2's interior template rule is
+*"the camera stands where Karen cannot"* — the front desk, the borough office, the aide's room,
+the Chief of Staff's window, every one of them a place she will never be admitted to. **This
+inverts it: the camera finally stands where only Karen stands.** Two feet from her, inside a
+box the width of her shoulders. It is the closest the film has been to her and it is the first
+time the camera is on her side.
+
+**And she still does not know it is there** — that much stays. The moment she plays to a lens
+she stops being a person and starts being a poster.
+
+> ### The street is empty, and that is a deliberate reversal.
+>
+> §2j.0's note is explicit: *"'no crowd' does not mean an empty street — it means nobody is
+> looking at her,"* and a deserted Midtown pavement reads post-apocalyptic. **Every frame in
+> the act has therefore carried people walking past without a glance.** This one takes them
+> away. Night makes it plausible, and the act ends by removing even the indifference — there
+> is no longer anybody there *to* not look at her.
+
+**Nine months are told in props, not in a caption.** The coins are down to two. The scrap of
+paper with two lines on it (§2j.0) is now a thick soft-edged fold of many. A cup has gone cold
+with a tide line dried inside it. Her hair is longer and re-tied. **Nobody says how long she
+has been doing this and nobody needs to.**
+
+**§4a applies hardest here: name the muscles, never the emotion.** This is the frame where the
+model most wants to give you Brave Sad Woman — welling eyes, a tightened chin, a single tear.
+**All of that is the slop version of this shot.** What is actually devastating is a face doing
+nothing at all: jaw loose, eyebrows level, eyes open and not tracking anything. The audience
+supplies the feeling, which is why they end up on her side.
+
+**Reference block** — paste above the `STYLE LOCK` if attaching §2j.0:
+
+```prompt
+REFERENCE: use the attached image only for the design of the phone kiosk and the subway entrance behind it — the shape of the frame and glazing, the steel shelf, the coiled handset cord, the chipped paint, the handrails and the green glass globe. Do not copy its camera angle, its framing, its time of day, or the woman's position and pose. This is a different shot from a different place, at night, from inside the kiosk.
+```
+
+```prompt
+STYLE LOCK (keep identical every time):
+
+Capture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.
+
+Present-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.
+
+Texture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.
+
+Color: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).
+
+Optics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).
+
+Exposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.
+
+Output: high detail, natural imperfections, candid snapshot energy.
+
+Exclusions: no added text, no logos, no watermark, no AI "hyper-sharp HDR" look, no historical setting/era shift.
+
+SCENE:
+
+Subject: a woman in her forties standing inside a street phone kiosk late at night with the receiver held against her ear, seen from inside the kiosk with her, looking out through the glass at nothing.
+
+Composition: 16:9 on a 35mm lens at f/2, the camera inside the kiosk in the corner beside her, close, at her eye level. Her head and shoulders fill the left of the frame in three-quarter profile, turned away from the camera toward the glass. The glass and the dark street beyond fill the right of the frame. The kiosk's aluminium corner post runs down the near edge as a dark vertical bar, the coiled handset cord crosses the bottom of the frame close to the lens and out of focus, and the kiosk's low roof panel with its dead light fitting shows across the top. The frame is tilted a few degrees off level.
+
+Action: she is doing nothing but waiting. The receiver rests against her ear held by a hand whose fingers have gone loose, her wrist propped on the steel shelf. Her mouth is closed, her jaw is loose, her eyebrows are level, and her eyes are open and not following anything outside. A strand of hair has come down and stuck to her cheek. She is not aware of the camera.
+
+Location: a scuffed municipal phone kiosk on a Midtown Manhattan pavement — a brushed aluminium frame glazed on three sides, a hinged door, chipped paint along the base, a worn steel shelf, a coiled metal handset cord, old adhesive marks on the panel where cards were peeled off. On the shelf: two coins, a thick fold of papers gone soft at the edges, and a paper cup gone cold with a dried tide line inside it. Her handbag stands on the floor by her feet. Through the glass, the subway entrance immediately behind the kiosk — steel handrails, a low balustrade, a green glass globe on the newel post, a blank sign panel on a mast, rust streaks bleeding down the rails — and beyond it pavement scaffolding with plywood hoarding. The pavement is empty across the whole width of the frame and the street runs away into the dark.
+
+Light: night, long after the offices emptied. A street light outside and behind the camera to the left rakes across the near side of her face and leaves the far side of it in shadow. The green glass globe on the subway post lays a weak green wash across the glass behind her. The light fitting in the kiosk roof is dead, so the inside of the kiosk is lit only by what comes in from the street. Street lights further down the block sit far out of focus as soft blown highlights. Her own face is faintly doubled in the glass in front of her.
+
+Style: a still from a 35mm independent film — the last frame of a long day nobody watched. Available light only, unretouched, natural skin texture with visible pores and shine, flyaway hair.
+
+Constraints: cream blouse untucked, camel cardigan, a dark coat over it hanging open, tailored trousers, structured leather handbag on the floor; her expression stays neutral and unperformed, with no tears, no trembling lip and no raised chin; the pavement outside stays empty for the whole frame; keep the papers on the shelf, the cup, every sign panel, notice, hoarding, sticker and shopfront free of readable lettering; no border or frame edge around the image.
+```
+
+**What to watch:**
+
+1. **Is the camera actually inside the box?** If it has stepped back onto the pavement it has
+   made the same shot as §2j.0 and the whole point is gone. The tells are the **corner post
+   down the near edge** and the **roof panel across the top** — no roof means it is outside.
+2. **Is she acting?** Welling eyes, a wobbling lip, a bravely-lifted chin: **reject the
+   candidate.** The line to add if it keeps happening is *"her face is completely relaxed and
+   she looks mildly bored."* Bored reads as endurance; sad reads as advertising.
+3. **Did the reference drag the angle back outside?** The documented failure mode. **Re-fire
+   with nothing attached** and let the Location prose carry the kiosk — it is the canon
+   description by ruling, and §2j.0 was made from prose alone.
+4. **Is it still recognisably Midtown at night**, not a generic wet alley? The subway rails,
+   the green globe and the scaffolding are the three nouns doing that work.
+5. **Two coins, not a stack.** The clearest single piece of evidence that this is month nine
+   and not day one.
+
+> ### The clip that follows (§2j.11v) is written after this is accepted
+>
+> Flagged now because **the glass will be a problem**: a reflection of anything moving is
+> [geometry twice over](../../google-flow/omni-flash.md) and reflected traffic has already
+> failed once in this film. Plan for a near-static clip — a blink, a breath on the glass, the
+> cord swinging a little — with everything else pinned, and the street's life demoted to audio.
 ---
 
 ## The plates this section still owes
@@ -1550,7 +1672,11 @@ Sketched so the order is visible; each gets written one at a time, on request.
 | **2j.7v** | Rung 2, the patient block — clip | ✅ written — one chair swivel; the unanswered phone is in the audio |
 | **2j.8** | Rung 3 interior — the councilman's assistant | ✅ written, round 2 — **the sticky note**, the empty chair, and the first low angle |
 | **2j.8v** | Rung 3, the fourth note — clip | ✅ written — the joke completes on screen |
+| **2j.9** | Rung 4 interior — the Chief of Staff | ✅ written — on speakerphone, back turned; lowest angle, best view |
+| **2j.9v** | Rung 4, the speakerphone — clip | ✅ **accepted 2026-08-18, round 3** — every prop pinned by name |
+| **2j.10** | The newspaper easter egg | ⛔ **no plate** (2026-08-18) — §2j.7's desk already carries it; a frame of its own would promote background to sermon |
+| **2j.11** | She is alone in it | ✅ written — **the act's exit**; the camera finally stands where only Karen stands |
 | **2j.9** | Rung 4 interior — the Chief of Staff | ✅ written — **on speakerphone, back turned**; lowest angle, best view |
 | **2j.9v** | Rung 4, the speakerphone — clip | ✅ written, round 3 — **Frames**, tested at the rule's edge; every prop pinned; Karen is a noise on a desk |
-| 2j.10 | The newspaper easter egg | AI-taking-jobs headline, **background not foreground**; ideally the Camping prop paper. ⚠️ Legible headline text is the most reliable policy block there is — the line belongs in a `NarrationBox`, not in the image |
-| 2j.11 | She is alone in it | the lone shot of her staring out of the box; the act's emotional exit |
+| 2j.10 | The newspaper easter egg | ⛔ **closed 2026-08-18** — satisfied by §2j.7's desk; see the ruling above |
+| 2j.11 | She is alone in it | ✅ **written 2026-08-18** — the last plate Act 2 owed |
