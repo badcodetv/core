@@ -1754,12 +1754,76 @@ attach round 3's image; it carries the dusk and the wide framing, which are what
    Clean, sharp, digital-looking output means the pointer was not enough — **put the full lock
    back and instead delete the change-list's prose down to four short lines.**
 
-> ### The clip that follows (§2j.11v) is written after this is accepted
+### 2j.11v She is alone in it — clip
+
+**Cast:** **`@Karen`** — the Character **and** the accepted §2j.11 still. **Attach:** both.
+**Engine:** Gemini Omni Flash · **Ingredients to Video** · 8s · native audio · **Enhance
+Prompt off**.
+
+**Tab: Ingredients**, no argument. [The rule](../../google-flow/omni-flash.md#-the-tab-rule-is-there-a-face-in-it)
+is *"is there a face in it?"* and here the face **is** the shot — it is the only frame in Act 2
+where her expression carries the meaning. Frames has lost a face before and cannot be risked on
+this one. **Ingredients wants the staging written out**, so this block is longer than a Frames
+block by design.
+
+> ### She does not speak. That is the whole idea.
 >
-> Flagged now because **the glass will be a problem**: a reflection of anything moving is
-> [geometry twice over](../../google-flow/omni-flash.md) and reflected traffic has already
-> failed once in this film. Plan for a near-static clip — a blink, a breath on the glass, the
-> cord swinging a little — with everything else pinned, and the street's life demoted to audio.
+> Every rung of this act has had her talking — explaining, repeating herself, being reasonable
+> at someone. **The exit is the one where she says nothing**, because there is nobody to say it
+> to. Round after round of *"I want to speak to your manager"* ends in a woman listening to hold
+> music on an empty street at night with her mouth closed.
+>
+> **So the motion budget is almost nothing, and that is the point.** Two blinks, one breath, a
+> hand closing. §2j.6rv and §2j.9v both proved a near-static clip reads fine when the stillness
+> *is* the meaning — and here it is carrying the act.
+
+**The only move is a push-in, and barely.** [Push-in crops into known
+pixels; pull-back demands invented world](../../google-flow/omni-flash.md#-pull-back-is-structurally-riskier-than-push-in),
+and this is not the frame to gamble on. Written as *almost imperceptible* so that if the engine
+overdoes it by its usual margin, the result is still a creep rather than a zoom.
+
+**Every prop is pinned by name**, after §2j.9v — including the handwriting on the paper, which
+is in the accepted still and must stay exactly as it is rather than being re-decided each frame.
+
+**Nothing in the world moves**, which for once is free: the street is empty, so there is no
+traffic to interpenetrate and no reflections to hold. **The city stays alive in the audio only** —
+a train under the street, a siren a long way off, and the hold music leaking out of the
+receiver.
+
+```prompt
+Using the attached image as the locked opening frame, and @Karen as the woman, animate it as one continuous eight-second shot.
+
+She does not speak. She is listening to hold music and she has been listening for hours. She blinks slowly, twice. Her eyes shift a fraction and settle again without following anything. Her free hand, flat on the shelf, curls slowly into a loose fist and stops. She breathes out. That is everything she does.
+
+The camera creeps almost imperceptibly closer to her across the eight seconds and does nothing else. She keeps the receiver against her ear the whole time and never lowers it.
+
+Everything else in the frame stays exactly where it is. The paper cup, the coins and the paper on the shelf do not move, and the writing on the paper stays exactly as it is. The handset cord hangs still. The bag stays on her shoulder. The street stays empty for the whole shot, the lights across the road stay steady, and the air is clear.
+
+Real-time pace, 24fps with a 180-degree shutter. Fine film grain.
+
+Audio is the night: a thin tinny loop of hold music leaking out of the receiver, the rumble of a train passing somewhere under the street, and a siren a very long way off. No dialogue.
+
+Thanks.
+```
+
+**What to watch:**
+
+1. **Does she stay silent?** If her mouth starts moving, the act loses its ending. The line to
+   strengthen is *"she does not speak"* → *"her lips stay closed for the whole shot."*
+2. **Do the props hold?** The §2j.9v failure. The cup and the paper are the likely ones, and the
+   **writing on the paper** is the newest risk — it is the one surface in the film carrying
+   visible marks, so it has the most to re-decide.
+3. **Is the push-in still a creep?** If it reads as a zoom, cut the sentence entirely and let
+   the camera lock. A locked camera on this frame is not a failure; it is the fallback and it
+   works.
+4. **Does the face stay Karen?** Ingredients with the Character attached has held it every time
+   it was used properly. A drift here means the Character was not attached — check before
+   re-rolling.
+5. **Is anything moving on the street?** There should be nothing. An empty street is the one
+   gift this frame gives us: no vehicles, no pedestrians, no reflections, nothing with geometry
+   to lose.
+
+
 ---
 
 ## The plates this section still owes
@@ -1789,8 +1853,9 @@ Sketched so the order is visible; each gets written one at a time, on request.
 | **2j.9** | Rung 4 interior — the Chief of Staff | ✅ written — on speakerphone, back turned; lowest angle, best view |
 | **2j.9v** | Rung 4, the speakerphone — clip | ✅ **accepted 2026-08-18, round 3** — every prop pinned by name |
 | **2j.10** | The newspaper easter egg | ⛔ **no plate** (2026-08-18) — §2j.7's desk already carries it; a frame of its own would promote background to sermon |
-| **2j.11** | She is alone in it | ✅ written, **round 3** — the act's exit; camera at the mouth of the kiosk after round 2 rebuilt the booth |
+| **2j.11** | She is alone in it | ✅ **fired and accepted 2026-08-18, round 5** — the act's exit; the cut-down prompt is the one that worked |
+| **2j.11v** | She is alone in it — clip | ✅ written — **Ingredients**, near-static, she says nothing; the city is audio only |
 | **2j.9** | Rung 4 interior — the Chief of Staff | ✅ written — **on speakerphone, back turned**; lowest angle, best view |
 | **2j.9v** | Rung 4, the speakerphone — clip | ✅ written, round 3 — **Frames**, tested at the rule's edge; every prop pinned; Karen is a noise on a desk |
 | 2j.10 | The newspaper easter egg | ⛔ **closed 2026-08-18** — satisfied by §2j.7's desk; see the ruling above |
-| 2j.11 | She is alone in it | ✅ **written 2026-08-18** — the last plate Act 2 owed |
+| 2j.11 | She is alone in it | ✅ **accepted 2026-08-18** — round 5, after the prompt was cut to ~150 words |
