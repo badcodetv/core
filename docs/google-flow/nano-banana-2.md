@@ -519,6 +519,26 @@ nobody can see; **what fills the frame is the only thing the model can actually 
 *position* language works when it changes the visible geometry (low, from behind, from the
 doorway); camera *distance* language should always be converted to a crop.
 
+### 10. ⚠️ The atmosphere family is rendered for free and overdelivers when named `[observed, n=3]`
+
+**Kai, 2026-08-18, on a reflection that would not go away: *"it seems to do it naturally when
+you don't ask."*** That is the rule.
+
+**Reflections, dust, steam, haze, bokeh** are everywhere in the photography these models learned
+from, so they arrive unasked and at a believable strength. **Name one and it stops being a
+property of the scene and becomes an effect applied to the shot** — dust filled the whole frame
+in Karen §2j.9v, and a named reflection came back as a double exposure smeared over the
+subject's face in §2h.6 **even after the camera had been moved to a genuine pane of glass.
+Moving the camera did not help, because the instruction was the problem.**
+
+**The counter-move is deletion, not moderation.** There is no *"faint"* or *"subtle"* setting;
+say nothing and take what the engine gives you.
+
+**Mirror image: weather nouns underdeliver** and need magnitude and consequences pushed at them
+(*"a full storm, not a light dusting"*; shadows thrown right across the carpet). **Atmosphere
+needs deleting; weather needs shouting at.** The two instincts are opposite and both are
+counter-intuitive, which is why this keeps being relearned.
+
 ### Sources for this section
 
 - [Google — prompting tips for Nano Banana Pro](https://blog.google/products/gemini/prompting-tips-nano-banana-pro/) `[vendor]`
