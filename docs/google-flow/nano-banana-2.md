@@ -496,6 +496,12 @@ too.
 a human could not occupy is an instruction to rebuild the world, and it will be obeyed at the
 reference's expense. The fix is nearly always a legal position a foot or two away.
 
+**⚠️ To remove something, remove its noun from the keep-list.** Karen §3a.0 round 2 (2026-08-18)
+asked for a frame without scaffolding while the setting clause still said *"the same pavement
+scaffolding with plywood hoarding"* — carried forward because the reference does have it.
+**Anything named in a keep-list is an instruction to draw it**, wherever the camera happens to be
+pointing. Keep-lists are per-shot, not per-set: name only what this frame contains.
+
 **⚠️ And it catches *space*, not just positions and surfaces** (Karen §2h.7, 2026-08-18). A low
 wide shot *"from across the pavement, with the building above rising out of frame"* needs room
 the canon corner does not have — scaffolding on the near side, a subway entrance immediately

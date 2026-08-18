@@ -110,12 +110,27 @@ cuts between them; the engine's limit is pushing us toward the edit we would hav
 > standing rule, and it worked cleanly last round: the framing came back right, only the world
 > was wrong.
 
+> ### ⚠️ Round 2, 2026-08-18 — *"remove the scaffolding poles, they are not consistent with §2j.0."*
+>
+> **The word had to go from the keep-list, not just from the shot.** §2j.0 does have pavement
+> scaffolding, so *"the same pavement scaffolding with plywood hoarding"* was sitting in the
+> setting clause **inviting poles into every frame** — and what came back was a sculptural tangle
+> that matches nothing. **This block of pavement simply does not have it.** Round 3 does not use
+> the word at all.
+>
+> **That costs the frame its foreground occluder**, which is a real
+> [anti-slop lever](../../google-flow/nano-banana-2.md#the-anti-slop-toolkit-community) — depth
+> comes from something close and out of focus. **Nothing replaces it this round, deliberately:**
+> the guidance is not to change two things at once, and Kai's note was about the poles only. **If
+> the frame reads flat**, the canon-consistent replacement is the nearest green globe post at the
+> right edge, close and out of focus — one sentence, next round.
+
 ```prompt
-Image 1 is the reference for the setting only. Keep the street exactly as it is — the same narrow Midtown side street, the same subway entrance with its steel railings and green glass globes on their posts, the same pavement scaffolding with plywood hoarding, the same shopfronts and awnings, the same paving, the same flat overcast mid-morning light and the same grainy super-8 film look. It is a narrow side street running between tall blocks, not an open intersection and not a plaza. Redesign nothing about the street.
+Image 1 is the reference for the setting only. Keep the street exactly as it is — the same narrow Midtown side street, the same subway entrance with its steel railings and green glass globes on their posts, the same shopfronts and awnings, the same paving, the same flat overcast mid-morning light and the same grainy super-8 film look. It is a narrow side street running between tall blocks, not an open intersection and not a plaza. Redesign nothing about the street.
 
 The phone kiosk and the woman are not in this shot. The camera is standing on the pavement in the block behind the kiosk with its back to the kiosk, looking away down the street, so the kiosk is out of shot behind the camera.
 
-The shot: a young man walking straight towards the camera down the middle of the pavement, on an 85mm lens at f/2.8, framed from chest height with his whole body in frame from his head to his shoes. He is about eighteen feet away, dead centre, caught mid-stride with one foot off the ground. Scaffolding poles cross the near left of the frame diagonally, close to the lens and heavily blurred. The subway entrance runs along the right-hand side of the frame in the middle distance. He is sharp and everything behind him is soft.
+The shot: a young man walking straight towards the camera down the middle of the pavement, on an 85mm lens at f/2.8, framed from chest height with his whole body in frame from his head to his shoes. He is about eighteen feet away, dead centre, caught mid-stride with one foot off the ground. The subway entrance runs along the right-hand side of the frame in the middle distance, and the buildings on both sides come close enough to fill the frame from edge to edge behind him. He is sharp and everything behind him is soft.
 
 He is wearing his rig, his hands are down by his sides and his phone is in his pocket. He is looking straight ahead past the camera, not at anything in particular.
 
@@ -126,16 +141,17 @@ Thanks.
 
 **What to watch:**
 
-1. **Is it a narrow side street?** The round-1 failure. Tall blocks close on both sides, plywood
-   hoarding on the scaffolding, no wide crossing and no plaza. If it opens up again, the next
-   lever is a consequence — *"the buildings on both sides are close enough to fill the frame from
-   edge to edge behind him."*
-2. **Is he alone, with no kiosk?** Nobody else on the pavement, and no phone box anywhere.
-3. **Hands empty, phone in pocket?** Still the most important detail in the cameo — he gets it
+1. **Are the poles gone?** The round-2 note. No scaffolding anywhere in the frame — the word is
+   no longer in the prompt at all, which is the actual fix.
+2. **Is it a narrow side street?** The round-1 failure. Tall blocks close on both sides, no wide
+   crossing and no plaza. The edge-to-edge clause is now doing that job as well as replacing the
+   lost foreground.
+3. **Is he alone, with no kiosk?** Nobody else on the pavement, and no phone box anywhere.
+4. **Hands empty, phone in pocket?** Still the most important detail in the cameo — he gets it
    out *because of what he hears*, and the audience only feels that if they saw it put away.
-4. **Same camera and position as round 1?** Dead centre, full body, chest height, blurred
-   scaffolding across the near left. That part worked and should not move.
-5. **Is he mid-stride?** A standing figure reads as arrived; this shot exists to show him passing
+5. **Same camera and position?** Dead centre, full body, chest height, 85mm. That part has
+   worked twice and should not move.
+6. **Is he mid-stride?** A standing figure reads as arrived; this shot exists to show him passing
    through.
 
 > ### The clip that follows
@@ -386,7 +402,7 @@ Thanks.
 
 | § | Piece | Notes |
 | --- | --- | --- |
-| **3a.0** | He walks towards the camera — plate | ✅ written, **round 2** — Aarron alone, kiosk behind the lens, Karen audio only |
+| **3a.0** | He walks towards the camera — plate | ✅ written, **round 3** — Aarron alone, kiosk behind the lens, no scaffolding |
 | **3a.0b** | He walks along the pavement — plate | ✅ **accepted 2026-08-18** — the middle of the walk; kept as an alternate |
 | 3a.0v | Crossing to the stop — clip | **only he moves**: up onto the pavement, along, slowing, head turning towards the kiosk |
 | **3a.1** | The sample — plate | ✅ written, **round 4** — 135mm three-quarter; he stands by the subway railings behind her |
