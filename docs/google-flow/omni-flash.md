@@ -845,14 +845,19 @@ and **they walked through each other.** With [no world
 model](#spatial-geometry-models-have-no-world-model), two bodies whose relative positions change
 must be re-solved every frame, and one ends up inside the other.
 
-**The fix is to remove the *relative* motion, not the motion.** State that they hold formation:
+**⚠️ Holding formation was tried and did not work.** Round 2 asked for *"one behind the other,
+staying the same distance apart and keeping the same order the whole time"* — a reasonable
+attempt to turn two tracking problems into one — and they merged again. **Telling the engine to
+preserve a relationship does not give it the machinery to preserve one.**
 
-> …one behind the other, staying the same distance apart and keeping the same order the whole
-> time, until they walk out of the frame.
+**What worked: get them out of frame inside the first second and leave the subject alone for the
+rest of the shot.** The general form is the standing fix, now four for four —
+[cut it from the picture, keep it in the sound](#demote-it-to-sound). Reflected traffic, a walker
+through a turnstile, interpenetrating cars, and now pedestrians: **nothing that has failed in
+motion has ever been rescued by describing it better.** Reach for demotion sooner than feels
+necessary.
 
-**Two figures moving as one rigid group is one tracking problem instead of two.** Same logic as
-the [demote-to-sound](#demote-it-to-sound) fix, one step short of it — and if it still fails,
-demotion is the next move, as it has been three times now.
+**One person is fine. Two is the threshold.** Every single-figure clip in this film has held.
 
 ### ⚠️ The action the shot is *for* must lead its own sentence `[observed]`
 
