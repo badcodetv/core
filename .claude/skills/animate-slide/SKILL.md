@@ -56,11 +56,9 @@ Video generation runs through the **`flow` MCP server**, not by driving the brow
 Call `flow_status` once before producing:
 
 - `{ loggedIn: true }` → you are ready.
-- `NOT_RUNNING` → the browser is down. Launch it yourself, backgrounded, from your shell:
-  `./scripts/flow-chrome.sh`. It renders via WSLg (so the user sees it) and exposes CDP on
-  `:9222`. Poll `curl -s http://localhost:9222/json/version` until it returns JSON, then call
-  `flow_status` again. The login persists in `.flow-profile/`, so a relaunch is already signed
-  in — the user only ever logs in the very first time.
+- `NOT_RUNNING` → bring the browser up yourself; the recipe is
+  [`docs/flow/operating.md`](../../../docs/flow/operating.md) §1. It renders via WSLg, so the
+  user sees the window.
 - `loggedIn: false` → ask the user to sign in; nothing else here will work.
 
 Then open the working project once with `flow_open_project`. **Prefer a project that is not
@@ -84,8 +82,8 @@ user start things by hand.
 1. **Start the dev server yourself**, backgrounded: `npm run dev` (from repo root). Read the
    port from its output (`http://localhost:<port>/comics/<comic>`) — it's `5173` unless taken.
    **Print the URL** so the user can open it on their side too if they like.
-2. **Ensure the shared browser** is up (`flow_status`; launch `./scripts/flow-chrome.sh`
-   backgrounded if it reports `NOT_RUNNING`).
+2. **Ensure the shared browser** is up (`flow_status`; on `NOT_RUNNING` follow
+   [`docs/flow/operating.md`](../../../docs/flow/operating.md) §1).
 3. **Open the comic in the shared browser**: `browser_navigate` to
    `http://localhost:<port>/comics/<comic>`. This one Chromium is **both** what the user sees
    (WSLg) **and** what you screenshot (CDP) — so you're always looking at the same thing. When

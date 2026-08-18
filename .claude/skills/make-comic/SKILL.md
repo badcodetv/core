@@ -88,8 +88,9 @@ Per image: the art-direction skill plans + critiques the prompt, calls
 `flow_generate_image({ prompt, outPath })` (or `flow_refine` to correct in-session),
 and records the prompt + revision in `docs/stories/<story>/storyboard/pNN.md`.
 
-Prerequisite: `./scripts/flow-chrome.sh` running and logged in (see
-`packages/flow-mcp/README.md`). Do NOT puppeteer Flow via the Playwright MCP by hand.
+Prerequisite: the Flow browser up and logged in — see
+[`docs/flow/operating.md`](../../../docs/flow/operating.md) §1. Do NOT puppeteer Flow via the
+Playwright MCP by hand.
 
 For **every named character**: invoke **`badcode-art-direction`** with the character's
 `sheet` description; harvest the portrait to `docs/stories/<story>/characters/img/<name>.jpg`,
@@ -152,8 +153,9 @@ Per image: the art-direction skill plans + critiques the prompt, calls
 `flow_generate_image({ prompt, outPath })` (or `flow_refine` to correct in-session),
 and records the prompt + revision in `docs/stories/<story>/storyboard/pNN.md`.
 
-Prerequisite: `./scripts/flow-chrome.sh` running and logged in (see
-`packages/flow-mcp/README.md`). Do NOT puppeteer Flow via the Playwright MCP by hand.
+Prerequisite: the Flow browser up and logged in — see
+[`docs/flow/operating.md`](../../../docs/flow/operating.md) §1. Do NOT puppeteer Flow via the
+Playwright MCP by hand.
 
 **Budget this stage for policy blocks.** Flow's usage filter silently blocks a large
 share of prompts, and over CDP a block is indistinguishable from a timeout — on the
@@ -242,8 +244,9 @@ storyboard*. Real brand names and legible wordmarks, likeness phrasing, stacked 
 institutional text. If a sign or headline is load-bearing for a beat, plan it as a comic text
 overlay rather than baked into the image. Rules + rewrite table: **`badcode-art-direction`**.
 
-Precondition: the Flow browser is up and logged in (`./scripts/flow-chrome.sh`, then
-`flow_status` → `loggedIn: true`) and the project is opened with `flow_open_project`. Prefer a
+Precondition: the Flow browser is up and logged in (see
+[`docs/flow/operating.md`](../../../docs/flow/operating.md) §1) and the project is opened with
+`flow_open_project`. Prefer a
 project that is not already full of test media.
 
 ---

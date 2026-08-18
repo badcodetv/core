@@ -7,10 +7,12 @@ description: Use when generating or refining a still image for a BadCode comic p
 
 You are the art director for BadCode. Every panel must look unmistakably like BadCode and never like a generic AI comic. Make deliberate, opinionated choices grounded in the story's world.
 
-## Prerequisite
-Image generation runs through the `flow` MCP server (`flow_generate_image`, `flow_refine`).
-If a call returns `{ error: true, code: "NOT_RUNNING" }`, tell the user to run
-`./scripts/flow-chrome.sh` and log in, then retry. (See `packages/flow-mcp/README.md`.)
+## Prerequisite — read the operating block first
+
+**Driving Flow — launching the browser, diagnosing policy blocks, casting characters,
+reviewing output — lives in ONE place: [`docs/flow/operating.md`](../../../docs/flow/operating.md).**
+Read it before your first flow call. It is not restated here, deliberately: six skills used to
+carry six drifting copies of it, and the copies disagreed.
 
 ## Identity — what a BadCode panel looks like
 
@@ -74,48 +76,12 @@ the character is **attached as a reference** — naming them in prose is not eno
   project, MCP failure, whatever — STOP and fix that first; do not fall back
   to prose + refs for a face.
 
-## Usage-policy blocks — write to pass on the first attempt
+## Usage-policy blocks
 
-**Over half of all Flow generations on the camping recut were blocked by the usage
-filter, not slow.** The block is visible in the Flow browser window but the MCP tools
-surface it as a generic timeout or a missing candidate — indistinguishable from a slow
-generation. So the natural instinct (retry) burns minutes on a prompt that can never
-pass. Writing compliant prompts up front is the single biggest time saver in this
-skill.
-
-**Diagnosis rule:** two failures with no candidates while the session is otherwise
-healthy (`flow_status` fine, project loads, other prompts working) = **policy block**.
-Rewrite the prompt; do not retry it. Glance at the Flow window to confirm.
-
-### The four triggers
-
-1. **Real brand names, prominent or repeated** — supermarket fascias, a named car
-   marque plus a specific number plate, branded tote bags. Asking for a **legible**
-   real logo or wordmark is the most reliable block there is.
-2. **Likeness phrasing for faces** — "use this only as a face reference — same face,
-   same bone structure" reads as reproducing a specific real person.
-3. **Stacked destitution** — burn barrels + tent city + collapsed figures + "gaunt" in
-   one prompt, especially alongside a real identifiable business.
-4. **Legible text attributed to real institutions** — invented headlines quoting a real
-   central bank, government body, or newspaper.
-
-### Rewrite rules — keep the meaning, drop the trigger
-
-| Instead of | Write |
-| --- | --- |
-| "Waitrose storefront, green signage" | "an upmarket supermarket fascia in green and white, lettering indistinct" |
-| "Waitrose Bag for Life totes, wordmark legible" | "heavy-duty reusable grocery totes in supermarket green" |
-| "black BMW X7, plate T4RQ 1N" | "a large black luxury SUV, private plate" |
-| "same face, same bone structure as the reference" | "keep this character's design consistent with the reference — same hairstyle, build, colouring and wardrobe" |
-| "gaunt, squalid, collapsed among rubbish" | "weary, worn, sitting among the debris" |
-| headline text quoting a real bank | describe the newspaper; put the actual line in a `NarrationBox`/overlay in the comic |
-
-**Load-bearing text belongs in the comic, not the image.** If a sign or headline has to
-be readable for the story to work, render it as a bubble/narration overlay in
-`@badcode/comic` — it will be sharper, editable, translatable, and it cannot be blocked.
-
-**Brand usage is also a publication question.** Panels already carrying real signage are
-a release decision for Kai, separate from whether they generate.
+**The four triggers and the rewrite table are in
+[`docs/flow/operating.md`](../../../docs/flow/operating.md) §2.** The one fact worth carrying
+in your head: *a policy block looks exactly like a timeout*, so two candidate-less failures on
+a healthy session mean rewrite, never retry.
 
 ## The loop (per panel)
 

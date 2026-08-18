@@ -124,8 +124,9 @@ class-coded visual description in house style.
 If a character recurs across scenes, set up a **Flow Character** once for
 cross-scene consistency:
 
-- Prerequisite: `./scripts/flow-chrome.sh` running and logged in; confirm with
-  `flow_status()` → `loggedIn: true`, then `flow_open_project({ name })`.
+- Prerequisite: the Flow browser up and logged in — see
+  [`docs/flow/operating.md`](../../../docs/flow/operating.md) §1 — then
+  `flow_open_project({ name })`.
 - Generate a portrait via **`badcode-art-direction`** → `flow_generate_image`,
   harvest to `docs/shorts/<name>/scenes/img/<char>-ref.jpg` (the same
   `scenes/img/` directory the folder convention already defines for scene

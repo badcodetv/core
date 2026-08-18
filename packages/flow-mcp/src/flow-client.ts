@@ -23,6 +23,21 @@ import { existsSync, readFileSync } from 'node:fs'
 import { jpegSize } from './jpeg-size'
 import { dumpLines } from './page-dump'
 import { chooseVideoMode, refineRequestError, videoRequestError } from './video-mode'
+import {
+  sceneUrl,
+  parseSceneUrl,
+  parseAnySceneUrl,
+  extendModelFromLabel,
+  sceneExtendError,
+  ADD_CLIP_BUTTON_RE,
+  EXTEND_MENU_ITEM_RE,
+  EXTEND_CHIP_RE,
+  SAVE_FRAME_RE,
+  SAVED_FRAME_QUERY,
+  fromTimecode,
+  SKIP_NEXT_RE,
+  type FramePosition,
+} from './scene'
 import { classifyCard, newCardsSince, ANY_CARD_RE, type CardState } from './failure-card'
 import { parseMediaOptions, SCRAPE_MEDIA_OPTIONS, type RawMediaOption, type MediaListItem } from './media-list'
 import { parseCharacters, SCRAPE_CHARACTERS, type RawCharacterRow, type CharacterListItem } from './character-list'
@@ -86,11 +101,30 @@ export interface MediaResult { path: string; mediaId: string }
  * carried it. Absent = the expected path ran.
  */
 export interface VideoResult extends MediaResult {
-  via?: 'frames-fallback'
+  /**
+   * 'frames-fallback' — generateVideo's Animate path degraded and Frames carried it.
+   * 'scene-extend'   — the clip came from Scene Builder's Extend, not the compose bar, so it
+   *                    ran on whatever tier Flow pins Extend to rather than the requested one.
+   */
+  via?: 'frames-fallback' | 'scene-extend'
   /** Every clip the turn produced, when `count` asked for more than one. */
   candidates?: MediaResult[]
   /** Set when fewer clips arrived than were asked for — the ones that did are still valid. */
   partial?: boolean
+}
+/**
+ * What an Extend produces: a LONGER SCENE, not a new clip file. There is no path/mediaId here
+ * because Flow does not emit one — export the assembled scene with the scene editor's Download
+ * control, or pull stills out of it with flow_scene_save_frame.
+ */
+export interface SceneExtendResult {
+  sceneId: string
+  url: string
+  durationSeconds: number
+  previousDurationSeconds?: number
+  addedSeconds?: number
+  model: string | null
+  via: 'scene-extend'
 }
 export interface CharacterRef { name: string }
 export interface FlowStatus { loggedIn: boolean; projectOpen: boolean; url: string }
@@ -2461,6 +2495,226 @@ export class FlowClient {
     } catch {
       return `TIMEOUT: nothing finished in ${secs}s (and the page could not be read for a diagnostic).`
     }
+  }
+
+  // ---------------------------------------------------------------------------------------
+  // Scene Builder
+  //
+  // Flow's per-clip editor at /project/<projectId>/edit/<sceneId>. It carries three things the
+  // compose bar does not: Extend (a true continuation, generated with the clip's own context
+  // rather than a still), Save Frame (harvest the playhead frame straight into the project),
+  // and a scene-level prompt box. Mapped live 2026-08-18 — see src/scene.ts for why the
+  // 2026-08-12 sweep concluded Extend did not exist.
+  // ---------------------------------------------------------------------------------------
+
+  /** The project id from the current URL, so scene navigation never needs it passed in. */
+  private currentProjectId(): string {
+    const m = /\/project\/([0-9a-f-]{36})/i.exec(this.page.url())
+    if (!m) throw new Error('NO_PROJECT_OPEN')
+    return m[1]!
+  }
+
+  /** Navigate into a scene, unless we are already in it. */
+  async openScene(sceneId: string): Promise<{ projectId: string; sceneId: string; url: string }> {
+    const here = parseSceneUrl(this.page.url())
+    if (here?.sceneId === sceneId) return { ...here, url: this.page.url() }
+    const projectId = here?.projectId ?? this.currentProjectId()
+    const url = sceneUrl(projectId, sceneId)
+    await this.page.goto(url, { waitUntil: 'domcontentloaded' })
+    // The timeline is the last thing to render; waiting on it means every later click lands.
+    await this.page
+      .getByRole('button', { name: ADD_CLIP_BUTTON_RE })
+      .first()
+      .waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    return { projectId, sceneId, url }
+  }
+
+  /**
+   * Put the compose bar into extend mode and report which tier Flow pinned it to.
+   *
+   * Arming spends nothing — Create stays disabled until the prompt has text — so this is safe
+   * to call to READ the tier. Returns the normalised model name, or null when Flow renders its
+   * unsubstituted "{{modelName}}" placeholder.
+   */
+  private async armExtend(): Promise<string | null> {
+    await this.ensureComposeVisible()
+    // The timeline menu opens on POINTERDOWN, not click: forceClick's synthetic
+    // HTMLElement.click() leaves it shut and the wait below then burns its full timeout
+    // (measured 2026-08-18, first live run of this method). pointerClick is the one that
+    // works; forceClick stays as a fallback in case the handler ever moves.
+    const addClip = this.page.getByRole('button', { name: ADD_CLIP_BUTTON_RE }).first()
+    const item = this.page.getByRole('menuitem', { name: EXTEND_MENU_ITEM_RE }).first()
+    let opened = false
+    for (const click of [this.pointerClick.bind(this), this.forceClick.bind(this)]) {
+      await click(addClip).catch(() => {})
+      if (await item.isVisible({ timeout: 5_000 }).catch(() => false)) {
+        opened = true
+        break
+      }
+    }
+    if (!opened) {
+      throw new Error('SCENE_ADD_CLIP_MENU_NOT_OPEN: the timeline\'s Add Clip button did not open its menu, so Extend could not be reached. The menu opens on pointerdown; if both click paths now fail, re-map the control against the live scene editor.')
+    }
+    const label = (await item.textContent()) ?? ''
+    await this.pointerClick(item).catch(async () => await this.forceClick(item))
+    // The chip is the only positive proof the mode took. Without it a later submit would
+    // generate an ordinary clip and bill for it, which looks like success and is not.
+    const chip = this.page.getByRole('button', { name: EXTEND_CHIP_RE }).first()
+    await chip.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS }).catch(() => {
+      throw new Error('SCENE_EXTEND_NOT_ARMED: the Extend menu item was clicked but the compose bar never entered extend mode, so a submit here would have generated an ordinary clip and charged for it. Aborted before spending anything.')
+    })
+    return extendModelFromLabel((await chip.textContent()) ?? label)
+  }
+
+  /** Leave extend mode without generating — used to read the tier, and to clean up on failure. */
+  private async disarmExtend(): Promise<void> {
+    const chip = this.page.getByRole('button', { name: EXTEND_CHIP_RE }).first()
+    if (await chip.count()) await this.forceClick(chip).catch(() => {})
+  }
+
+  /** Which tier Flow currently pins Extend to, without generating anything. */
+  async sceneExtendModel(sceneId?: string): Promise<{ model: string | null }> {
+    if (sceneId) await this.openScene(sceneId)
+    const model = await this.armExtend()
+    await this.disarmExtend()
+    return { model }
+  }
+
+  /**
+   * Continue a clip from its own end, with the model's context — Flow's Extend.
+   *
+   * The tier is NOT ours to choose: Extend runs on whatever Flow pins it to (Veo 3.1 Lite on
+   * 2026-08-18), regardless of the compose bar's model. The tier actually used is returned so
+   * the caller can see what they bought rather than assume.
+   */
+  async sceneExtend(req: {
+    prompt: string
+    sceneId?: string
+  }): Promise<SceneExtendResult> {
+    const problem = sceneExtendError(req)
+    if (problem) throw new Error(problem)
+    if (req.sceneId) await this.openScene(req.sceneId)
+    else if (!parseAnySceneUrl(this.page.url())) {
+      throw new Error('NOT_IN_SCENE: flow_scene_extend must run inside a scene editor. Pass sceneId, or open a clip in Flow first — the scene id is the uuid after /edit/ in the URL.')
+    }
+    const model = await this.armExtend()
+    const before = await this.readSceneDuration()
+    try {
+      await this.submitPrompt(req.prompt)
+    } catch (err) {
+      await this.disarmExtend()
+      throw err
+    }
+    // An Extend does NOT emit a new clip into the gallery — it APPENDS A SEGMENT to a scene and
+    // navigates to /scene/<newId>. Waiting for a new video media item (the compose-bar harvest)
+    // therefore waits forever: the first live run timed out at 480s on an Extend that had
+    // already succeeded, with a 15s scene sitting on screen. Success is the scene growing.
+    const deadline = Date.now() + VIDEO_TIMEOUT_MS
+    while (Date.now() < deadline) {
+      const card = await this.detectFailureCard()
+      if (card === 'blocked') throw new Error('POLICY_BLOCKED')
+      const now = await this.readSceneDuration()
+      if (now !== null && (before === null || now > before + 0.5)) {
+        const at = parseAnySceneUrl(this.page.url())
+        return {
+          sceneId: at?.sceneId ?? req.sceneId ?? '',
+          url: this.page.url(),
+          durationSeconds: now,
+          ...(before !== null ? { previousDurationSeconds: before } : {}),
+          addedSeconds: before !== null ? Math.round((now - before) * 100) / 100 : undefined,
+          model,
+          via: 'scene-extend',
+        }
+      }
+      await this.page.waitForTimeout(VIDEO_POLL_MS)
+    }
+    throw new Error(await this.timeoutError(VIDEO_TIMEOUT_MS))
+  }
+
+  /**
+   * The scene's total length, from the player's right-hand "MM:SS:FF" readout.
+   *
+   * There are two timecodes side by side — playhead then total — so this reads the LAST one.
+   */
+  private async readSceneDuration(): Promise<number | null> {
+    const codes = await this.page
+      .locator('div,span')
+      .filter({ hasText: /^\d{2}:\d{2}:\d{2}$/ })
+      .allTextContents()
+      .catch(() => [] as string[])
+    const parsed = codes.map((c) => fromTimecode(c.trim())).filter((n): n is number => n !== null)
+    return parsed.length ? Math.max(...parsed) : null
+  }
+
+  /**
+   * Save the frame under the playhead into the project as an image asset.
+   *
+   * This is the frame-chaining workflow Flow already has: the saved frame becomes a normal
+   * gallery item, usable as the startImage of the next generation without a download round
+   * trip. position "end" parks the playhead at the clip's last frame first, which is the only
+   * position chaining ever actually wants.
+   */
+  async sceneSaveFrame(opts?: {
+    sceneId?: string
+    position?: FramePosition
+  }): Promise<{ mediaId?: string; position: FramePosition; playhead?: string }> {
+    const here = parseSceneUrl(this.page.url())
+    const sceneId = opts?.sceneId ?? here?.sceneId
+    if (!sceneId) throw new Error('NOT_IN_SCENE: flow_scene_save_frame must run inside a scene editor. Pass sceneId, or open a clip in Flow first.')
+    const scene = await this.openScene(sceneId)
+    const position = opts?.position ?? 'current'
+    // Detect the new asset through the ASSET PICKER, not scrapeMediaNames().
+    //
+    // scrapeMediaNames() reads media rendered in the page, and the scene editor does not render
+    // the project gallery — so a frame that saved perfectly reported no mediaId (measured on the
+    // first live run, 2026-08-18: the asset was there in flow_list_media all along). The picker
+    // is the only surface that sees it. Two picker opens is slow, but this is not a hot path and
+    // a silently-missing id is worse: the whole point of the tool is handing the caller an id to
+    // chain from.
+    const savedIds = async (): Promise<Set<string>> =>
+      new Set(
+        (await this.listMedia({ query: SAVED_FRAME_QUERY }))
+          .map((m) => m.mediaId)
+          .filter((id): id is string => Boolean(id)),
+      )
+    const before = await savedIds()
+    // listMedia asserts image mode on the compose bar, which can leave the scene — go back.
+    await this.openScene(scene.sceneId)
+    if (position === 'end') await this.parkPlayheadAtEnd()
+    const save = this.page.getByRole('button', { name: SAVE_FRAME_RE }).first()
+    await save.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS }).catch(() => {
+      throw new Error('SAVE_FRAME_NOT_FOUND: the player overlay had no Save Frame control. It only renders once a clip is loaded and the player has painted a frame.')
+    })
+    const playhead = await this.readPlayhead()
+    await this.pointerClick(save).catch(async () => await this.forceClick(save))
+    const deadline = Date.now() + TURN_TIMEOUT_MS
+    while (Date.now() < deadline) {
+      await this.page.waitForTimeout(POLL_MS)
+      for (const id of await savedIds()) {
+        if (!before.has(id)) return { mediaId: id, position, ...(playhead ? { playhead } : {}) }
+      }
+    }
+    // Not an error: Save Frame gives no confirmation of its own, and the asset may simply not
+    // have surfaced yet. The caller can find it with flow_list_media.
+    return { position, ...(playhead ? { playhead } : {}) }
+  }
+
+  /** Park the playhead on the clip's last frame — the only position chaining ever wants. */
+  private async parkPlayheadAtEnd(): Promise<void> {
+    const next = this.page.getByRole('button', { name: SKIP_NEXT_RE }).first()
+    if (await next.count()) await this.pointerClick(next).catch(() => {})
+    await this.page.waitForTimeout(POLL_MS)
+  }
+
+  /** The player's "MM:SS:FF" readout, when it can be found. */
+  private async readPlayhead(): Promise<string | undefined> {
+    const tc = await this.page
+      .locator('div,span')
+      .filter({ hasText: /^\d{2}:\d{2}:\d{2}$/ })
+      .first()
+      .textContent()
+      .catch(() => null)
+    return tc?.trim() ?? undefined
   }
 
   /** Whether the cached CDP attachment (and its page) is still usable. */

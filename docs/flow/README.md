@@ -22,6 +22,7 @@ Same split as [`docs/suno-gpt/`](../suno-gpt/README.md) and the `suno-prompt` sk
 
 | File | What | Read when |
 | --- | --- | --- |
+| [`operating.md`](./operating.md) | **The operating block** — launching the browser, policy blocks, casting, which surface to reach for, how to review output | **First, before any flow call.** The six Flow-using skills point here instead of restating it |
 | [`image-prompting.md`](./image-prompting.md) | Nano Banana / Pro still-image craft, editing, rendered text | Generating or editing any still |
 | [`video-prompting.md`](./video-prompting.md) | Veo text→video, image→video, frames, audio, dialogue | Any motion work |
 | [`camera-vocabulary.md`](./camera-vocabulary.md) | Shot/move/lens/lighting/grade terms, with reliability tiers | Writing the camera clause |

@@ -54,8 +54,13 @@ frame should look like, and it drifts toward regenerating rather than animating.
 - **Refer to the subject generically** — "the subject", "the woman", "he".
 - **Source-image quality gates everything downstream.** Sharp, one clear subject,
   readable detail, enough negative space for the camera to move into.
-- **Veo's default is near-static.** Name at least one motion or you get an almost-still
-  clip.
+- **An unspecified camera is NOT a still camera — corrected 2026-08-18.** This file used to
+  say "Veo's default is near-static". That is wrong and it cost us real time. Leave the camera
+  unstated and Veo *invents* behaviour — generic framing, a slow drift, a sway, an unrequested
+  push-in. **Name the move every time.** When you want no move at all, say so explicitly:
+  `static`, `locked-off`, `no camera movement`. Silence is not a request for stillness.
+- **Name the subject motion too.** Separately from the camera: an unstated subject can come
+  back near-frozen even while the camera is busy.
 - **1–2 motion types maximum.** "Slow dolly in, leaves rustling, clouds moving, water
   rippling, light shifting" is five competing instructions.
 - Get one axis working (camera *or* subject) before adding the other.
@@ -199,7 +204,58 @@ text, no crowds") for removing *artifacts*, and that works. What does not work i
 sentence-form prohibition ("don't include logos") or negating a whole subject category
 ("no people") — use framing or a positive empty-scene description instead.
 
-## 9. Meta-prompting
+### The failure this rule exists for (2026-08-18)
+
+Naming the thing you don't want **summons it**. Three attempts at one shot, all three broken
+by the same artefact:
+
+| Attempt | What the prompt said about doors | Result |
+| --- | --- | --- |
+| v1 | nothing at all | a cabinet door swung open |
+| v2 | "every door, panel and surface stays shut… nothing opens, swings, rotates" | doors swung open |
+| v3 | the words door/panel/swing/rotate/open never appeared | doors swung open, wider |
+
+Two lessons, and they are different:
+
+1. **The negation in v2 was worse than useless** — it put "door", "swing", "rotate" and
+   "open" into the prompt five times. That is this section's rule, and it was already written
+   down here when the prompt was authored. It was read and ignored.
+2. **But v3 proves wording was never the real lever.** The artefact survived a prompt that
+   never mentioned it. See §9 — this was a capability limit, not a prompt defect, and no
+   amount of rewriting was going to fix it. **Two identical failures with different wording
+   means stop rewriting and question the shot.**
+
+## 9. What Veo cannot do — reach for post instead
+
+Some shots are not prompt problems. Recognising them early is worth more than any phrasing.
+
+**Near-field parallax past flat parallel structures.** Dolly down a corridor, an aisle, a row
+of columns or racks, and Veo fakes the parallax by *rotating the geometry* — surfaces hinge
+open like doors as they pass. Measured 2026-08-18 across three prompts and two tiers; wording
+made no difference. If a shot travels close past parallel flat surfaces, expect this.
+
+**The rule that follows: a camera-only move on a still belongs in post, not in Veo.**
+
+If nothing in the world actually moves — no cloth, no water, no crowd, no machine turning —
+and the only motion is the camera (push, pull, pan, tilt, drift), then it is a scale-and-crop
+on one image. Render it with ffmpeg or in the edit and you get:
+
+| | Veo | Post |
+| --- | --- | --- |
+| Artefacts | hinging, morphing, invented motion | **none possible** — it is one image |
+| Length | 8s hard cap | **any** |
+| Resolution | 720p base | **source resolution** |
+| Ease curve | whatever it feels like | exact |
+| Cost | 10–100 credits per attempt | free, seconds |
+
+Worked example: `docs/stories/gitpush-origin-master/storyboard/img/s00-pullback-post-12s.mp4`
+— a 12s 1080p zoom-out that Veo failed at four times, rendered in one ffmpeg pass.
+
+**Reserve Veo for shots where something in the world has to move.** That is what it is for,
+and it is very good at it — the same session's orbital arc and atmospheric descent were both
+single-take successes.
+
+## 10. Meta-prompting
 
 Google's own recommended pattern: ask Gemini to draft Veo prompts in batches of 5–10,
 giving it (1) a specific task, (2) a precise format constraint, (3) concrete material
@@ -209,9 +265,56 @@ it to write you new prompts."
 
 This is essentially what a flow-driving skill does when it plans a wave of shot prompts.
 
-## 10. Iteration discipline
+## 11. Three things that reliably improve a prompt
+
+Added 2026-08-18 from the external sweep; each is absent from the rest of this file.
+
+**1. Replace speed adjectives with timestamps.** "Slow", "quickly" and "gradually" are
+weakly honoured — the model has no scale to hang them on. A timestamped beat is unambiguous
+about how long something takes:
+
+> ❌ `a very slow push toward the planet`
+> ✅ `[00:00-00:06] the camera pushes toward the planet, covering barely a third of the
+>    distance in the whole shot`
+
+**Live proof (2026-08-18, GPOM scene 0):** two takes of one prompt containing "slow
+continuous dolly-in" — one crossed the whole move in 4.5s of an 8s clip, the other paced it
+across the full 8. Same words, different speeds. The adjective did nothing; only the
+timestamps in the sibling prompt held.
+
+**2. Describe the physics, not just the subject.** Name how a thing *behaves* and the clip
+stops looking synthetic: `smoke curls rather than billows`, `rain falling at 45 degrees`,
+`the fabric settles a beat after she stops`. Material behaviour is where the uncanny lives.
+
+**3. State the camera separately from the action.** Keep the camera clause and the subject
+clause in separate sentences rather than braided into one. Veo parses both more reliably
+when they are not competing inside a single instruction — and it makes the "one move per
+clip" rule visible at a glance, because the camera clause is right there on its own.
+
+## 12. Iteration discipline
 
 - **Don't re-roll the same failing prompt.** Similar prompts yield near-identical
   outputs. Change a verb, a camera term, or the framing of the action.
 - When a result is wrong, the productive revision is **subtraction** — remove
   content-description, cut to 1–2 motion instructions — before adding anything new.
+
+---
+
+## Sources
+
+Platform behaviour in this file that is marked "verified live" comes from our own smoke tests
+against Flow (`packages/flow-mcp/src/smoke-*.ts`) and is dated where it was checked. The
+prompt-craft guidance was cross-checked against these on **2026-08-18**:
+
+- [Ultimate prompting guide for Veo 3.1 — Google Cloud Blog](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-veo-3-1) *(primary — Google's own)*
+- [How to prompt Veo 3.1 — Replicate](https://replicate.com/blog/veo-3-1)
+- [Veo 3.1 Prompt Guide — LTX](https://ltx.io/blog/veo-prompt-guide)
+- [The ultimate prompting guide for Veo 3.1 — Atlabs](https://www.atlabs.ai/blog/the-ultimate-prompting-guide-for-veo-3-1)
+- [Structuring Veo 3 Prompts for Better Motion Control — Eachlabs](https://www.eachlabs.ai/blog/structuring-veo-3-prompts-for-better-motion-control)
+- [Veo 3 negative prompts: reducing artifacts and unwanted objects — Anakin](http://anakin.ai/blog/veo-3-negative-prompts-how-to-reduce-artifacts-and-unwanted-objects/)
+- [30 Cinematic Camera Prompts for Veo 3 and Kling — Prompt Architects](https://prompt-architects.com/blog/25-30-cinematic-camera-prompts-for-veo3-and-kling)
+- [Best Prompt Techniques for Veo 3.1 Video Output — Sider](https://sider.ai/blog/ai-tools/best-prompt-techniques-for-veo-3_1-video-output-a-field-guide-to-cinematic-control)
+
+**Where they and we disagree, we win on platform mechanics and they win on prompt craft** —
+our mechanics are measured on this account, and none of them have measured it; their craft
+guidance is drawn from far more generations than we have run.

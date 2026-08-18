@@ -11,10 +11,10 @@ Models, credits, aspect, duration, and the surfaces beyond the prompt box.
 
 | Model | Clip length | Ingredients→Video | Frames→Video (first) | Frames→Video (first+last) | Extend | Edit existing video |
 | --- | --- | --- | --- | --- | --- | --- |
-| Veo 3.1 Lite | 4/6/8s ✅ | ✅ (8s only) | ✅ | ✅ (2026-08-12) | **not present** (2026-08-12) | ✗ |
+| Veo 3.1 Lite | 4/6/8s ✅ | ✅ (8s only) | ✅ | ✅ (2026-08-12) | ✅ **scene editor → Add Clip → Extend** (2026-08-18) | ✗ |
 | Veo 3.1 Fast | 4/6/8s ✅ | ✅ (8s only) | ✅ | ✅ (2026-08-12) | **not present** (2026-08-12) | ✗ |
 | Veo 3.1 Quality | 4/6/8s ✅ | ✅ (8s only) | ✅ | ✅ (2026-08-12) | not tested | ✗ |
-| Gemini Omni Flash | 4/6/8/**10s** ✅ | ✗ | ✅ | ✗ (2026-08-12) | not present (2026-08-12) | **not present** (2026-08-12) |
+| Gemini Omni Flash | 4/6/8s (**10s removed 2026-08-18**) | ✗ | ✅ | ✗ (2026-08-12) | not present (2026-08-12) | **not present** (2026-08-12) |
 
 ✅ **Clip length and first+last columns — VERIFIED live 2026-08-12.** First+last frame works on
 **every Veo 3.1 tier**, not just Lite: the docs' "coming soon" for Fast and Quality is stale.
@@ -28,7 +28,7 @@ compose popover on each tier). Omni Flash offers 4/6/8/10s; Veo 3.1 Fast and Qua
 4/6/8s and the **10s tab is absent from the DOM entirely**, not greyed out. Veo 3.1 Lite was
 not opened, so its cell stays a claim.
 
-✅ **Extend and Edit existing video — neither exists in this account's UI** (`smoke-tier-menus.ts`
+⚠️ **SUPERSEDED 2026-08-18 for Extend — see §4, it lives in the scene editor's `Add Clip` menu.** The Edit-existing-video half of this still stands. Original finding: **Extend and Edit existing video — neither exists in this account's UI** (`smoke-tier-menus.ts`
 + `smoke-clip-detail.ts`, 2026-08-12, one clip generated per tier and its menus dumped). A
 finished clip's own hover menu is the SAME eleven items on Veo 3.1 Fast, Veo 3.1 Lite **and Omni
 Flash** — `Favorite · Reuse prompt · Add to scene · Add to prompt · Download · Rename · Share ·
@@ -86,8 +86,11 @@ clips including discards per 60 seconds of finished output.
 - **Video aspect ratio: 16:9 or 9:16 only.** Set it as a project default (prompt box →
   Settings) rather than per clip. ⚠️ These defaults **reset per project** — a fresh
   project comes up as Omni Flash.
-- **Duration: 4 / 6 / 8s presets, no slider.** 10s only on Omni Flash (verified live
-  2026-08-12). Anything longer is Extend chaining or Scene Builder assembly. The control is in
+- **Duration: 4 / 6 / 8s presets, no slider. 8s is now the cap on EVERY tier.**
+  ⚠️ **Superseded 2026-08-18:** Omni Flash's 10s tab is **gone** — a live 10s request on
+  Omni Flash returned `VIDEO_DURATION_UNAVAILABLE: no 10s tab on Omni Flash`. The 10s
+  option verified on 2026-08-12 lasted under a week. Assume 8s until re-verified.
+  Anything longer is frame-to-frame chaining or Scene Builder assembly. The control is in
   the **compose-bar popover's Video mode**, not the Settings panel — which is why we missed it
   for months. `flow_generate_video` takes `durationSeconds`; omitting it asserts 8s, because
   the setting persists on the project and would otherwise carry over silently.
@@ -97,10 +100,37 @@ clips including discards per 60 seconds of finished output.
   Note our observed still output is 1376×768 (ratio 1.792), near but not exactly 16:9;
   assert "landscape within 2%", never strict equality.
 
-## 4. Scene Builder
+## 4. Scene Builder — and where Extend actually lives
 
-Hover a clip → "Add to Scene". Inside: arrange clips in sequence, drag to reorder, trim
-in/out with handles, and Extend in place to continue a move.
+Hover a clip → "Add to Scene", or click any clip to open `/edit/<sceneId>`. Inside:
+arrange clips in sequence, drag to reorder, trim in/out with handles.
+
+✅ **CORRECTION 2026-08-18 — Extend DOES exist. It is in here, not on the clip menu.**
+The 2026-08-12 finding below ("Extend not present in this account") checked the clip's
+hover menu and the scene editor's *visible* controls and concluded it was absent. It is
+actually one level deeper: **scene editor → `Add Clip` button → dropdown menu**, whose
+two items are:
+
+| Menu item | What it does |
+| --- | --- |
+| `Add Clip` | insert an existing clip onto the timeline |
+| **`Extend (Veo 3.1 - Lite)`** | **generate a continuation of the clip from its own end** |
+
+⚠️ **Extend is pinned to Veo 3.1 Lite** — the cheapest tier (10 credits). You cannot
+Extend at Fast or Quality. That is the real cost of using it over frame-chaining, and
+it is a quality decision, not a convenience one.
+
+Also live in the scene editor and easy to miss:
+
+- **`Save Frame`** (player overlay, `add_photo_alternate`) — saves the current playhead
+  frame straight into the project as an asset. This is the frame-to-frame chaining
+  workflow **built in**; no download-and-ffmpeg round trip needed to get a start image
+  for the next clip.
+- **A prompt box — "Describe your edits" + `Create`**, with its own model picker
+  (observed defaulting to Omni Flash). A generative edit surface on the scene itself.
+
+**None of this is reachable from `@badcode/flow-mcp`** — there are no Scene Builder tools.
+It is manual browser work until someone adds them.
 
 **Generate short beats independently and assemble here.** Do not try to nail one long
 single generation.
