@@ -837,6 +837,37 @@ defocused foreground props want both:
 [emptiness](#-negatives-do-not-work-and-they-actively-backfire) — *"stays exactly where it is"*
 rather than *"does not disappear"*, which puts the disappearing in the prompt.
 
+### ⚠️ Two figures in relative motion interpenetrate — keep the formation `[observed]`
+
+**People break the same way vehicles do.** Karen §2h.7v round 1 (2026-08-18) had two pedestrians
+walking off the edge of frame — already the safe version, since they never pass behind anything —
+and **they walked through each other.** With [no world
+model](#spatial-geometry-models-have-no-world-model), two bodies whose relative positions change
+must be re-solved every frame, and one ends up inside the other.
+
+**The fix is to remove the *relative* motion, not the motion.** State that they hold formation:
+
+> …one behind the other, staying the same distance apart and keeping the same order the whole
+> time, until they walk out of the frame.
+
+**Two figures moving as one rigid group is one tracking problem instead of two.** Same logic as
+the [demote-to-sound](#demote-it-to-sound) fix, one step short of it — and if it still fails,
+demotion is the next move, as it has been three times now.
+
+### ⚠️ The action the shot is *for* must lead its own sentence `[observed]`
+
+Round 1 of the same clip wrote *"she shifts her weight and settles, her free hand stays flat on
+the shelf, **and she starts talking**"* — and she never talked. **The primary action was the
+third clause of a sentence about weight and hands.**
+
+**Everything after the first clause is decoration the engine may skip.** This is the
+[lead-with-the-camera-phrase](#lead-with-the-camera-phrase) rule generalised: *whatever must
+happen goes first, in its own sentence, with a duration attached* — *"she talks for the whole
+eight seconds, from the first frame to the last."*
+
+**Duration matters because the still is a counter-argument.** A frame of someone standing
+quietly is a very strong reference for standing quietly, and a weak instruction loses to it.
+
 ### Slop counters specific to motion `[community]`
 
 Additions to the table in the previous section:

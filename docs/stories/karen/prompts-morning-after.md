@@ -1337,23 +1337,57 @@ geometry in the film, and Frames pins it at frame 0. Ingredients would re-stage 
 > **Her words stay indistinct on purpose.** Kai's ruling that clips get narrated means the
 > voice-over owns this moment; her voice is texture under it, not competition.
 
-**⚠️ The two pedestrians walk *out of frame*, not behind a pole.** A walker
-[vanished mid-stride once already](./prompts-act2-escalation.md#2j5v-rung-1-the-block--clip) and
-the [occlusion round trip](../../google-flow/omni-flash.md#-objects-vanish-on-the-occlusion-round-trip)
-is the mechanism — the scaffolding leg on the right is exactly the kind of thing they would
-disappear behind and fail to come back from. **Send them off the edge instead: once they are
-out, they never have to be rebuilt.**
+> ### ⚠️ Round 1 fired 2026-08-18 — *"people walk through each other, and Karen needs to be talking."*
+>
+> ### 1. Two figures in relative motion is two problems, exactly like traffic.
+>
+> **Round 1 already sent them off the edge** to dodge the
+> [occlusion round trip](../../google-flow/omni-flash.md#-objects-vanish-on-the-occlusion-round-trip),
+> and they interpenetrated anyway. **The mechanism is the one that has broken vehicles twice** —
+> [no world model](../../google-flow/omni-flash.md), so two bodies whose relative positions
+> change have to be re-solved every frame, and one of them ends up inside the other.
+>
+> **The fix is to remove the relative motion, not the motion.** Say they **keep formation**:
+> same order, same spacing, one behind the other, all the way out of frame. Two figures moving
+> as one object is one problem instead of two.
+>
+> ### 2. ⚠️ The action that matters has to lead. Round 1 buried it.
+>
+> *"She shifts her weight and settles, her free hand stays flat on the shelf, **and she starts
+> talking**"* — the thing the shot is **for**, third clause in, in a sentence about weight and
+> hands. **It did not happen.** Compare the
+> [camera-phrase rule](../../google-flow/omni-flash.md): the first words set the grammar, and
+> everything after them is decoration the engine may skip.
+>
+> **Round 2 gives it its own sentence, first after the camera, and states duration** — *"she
+> talks for the whole eight seconds… from the first frame to the last."* A
+> [strong reference hedges a weak instruction](./prompts-act2-escalation.md#2j11-she-is-alone-in-it--plate),
+> and a still of a woman standing quietly is a very strong reference for standing quietly.
+
+> ### ✅ This is still the shot where dialogue is cheap.
+>
+> **She can talk here.** Every recent clip has had her silent, because a profile close-up or a
+> turned back makes lip-sync the likeliest failure. **At this distance her face is small**, so a
+> moving mouth costs almost nothing — and it is the right beat: the last thing Act 1 does is
+> **start** something. Nine months begin on this line.
+>
+> **Her words stay indistinct on purpose.** Clips get narrated, so the voice-over owns this
+> moment; her voice is texture under it, not competition. **What she says does not matter** —
+> Kai's call, and it is the correct one: nobody will ever hear it.
 
 **Camera locked, deliberately.** The whole design of the plate is a plinth; a monument does not
-drift. If the act-out wants a lift on the next pass, a barely-there push-in is the cheapest
-thing to add — but stillness is the stronger read and it costs nothing to try first.
+drift.
 
 ```prompt
 Use the attached image as the starting frame. One continuous shot.
 
-The camera does not move. She stays exactly where she is in the kiosk with the receiver against her ear. She shifts her weight and settles, her free hand stays flat on the shelf, and she starts talking — steady and unhurried, her mouth moving but her words too far away to make out. She does not look at the camera.
+The camera does not move.
 
-The two people on the right keep walking and go out of the right-hand edge of the frame. Traffic crosses the far end of the street beyond them. Everything else stays exactly where it is: the kiosk, the scaffolding poles, her handbag on the floor, and every sign and panel stay exactly as they are.
+She talks for the whole eight seconds. Her mouth moves continuously from the first frame to the last, steady and unhurried, and her words are too far away to make out. She stays exactly where she is in the kiosk with the receiver against her ear and her free hand flat on the shelf, she shifts her weight once and settles, and she does not look at the camera.
+
+The two people on the right keep walking the way they are already going, one behind the other, staying the same distance apart and keeping the same order the whole time, until they walk out of the right-hand edge of the frame. The rest of the pavement stays empty.
+
+Everything else stays exactly where it is: the kiosk, the scaffolding poles, her handbag on the floor, and every sign and panel stay exactly as they are.
 
 Real-time pace, 24fps with a 180-degree shutter. Fine film grain.
 
@@ -1361,6 +1395,20 @@ Audio is the street: traffic, footsteps going away, a bus somewhere out of shot,
 
 Thanks.
 ```
+
+**What to watch:**
+
+1. **Is her mouth moving the whole time?** The round-1 failure. If she still goes quiet, the
+   next lever is to **cut the weight shift** — one physical action competing with the talking is
+   one too many.
+2. **Do the two hold formation?** They should now read as one moving object. If they merge
+   again, **cut them from the picture entirely** and leave the footsteps in the audio; that fix
+   has worked three times and costs this shot almost nothing.
+3. **Does the scaffolding hold?** The most fragile geometry in the film — a cage of thin poles.
+   Frames pins it at frame 0, which is why this is not on Ingredients.
+4. **Are her words unintelligible?** They must stay under the narration. Actual dialogue is the
+   audio lottery — re-roll, do not rewrite.
+5. **Does the bag stay on the floor?** It is the beat of the whole plate.
 
 **What to watch:**
 
