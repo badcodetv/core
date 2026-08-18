@@ -663,7 +663,29 @@ audio.** Omni generates sound natively, so a splash can be *heard* while nothing
 splashes on screen. A real film would cut this way regardless. Physics you don't
 render cannot go wrong.
 
-### ✅ The tab rule: **is there a face in it?**
+### ✅ The tab rule — ⚠️ **amended 2026-08-18: Ingredients holds identity, Frames holds staging**
+
+> **The rule below was *"is there a face in it?"* → Ingredients, and it is now the second
+> question, not the first.** It was derived entirely from failures where the **face** was what
+> got lost, so it had nothing to say when Karen §2j.11v put a face and an irreplaceable set in
+> the same frame: Ingredients held her and **rebuilt the phone booth.**
+>
+> **Ask instead: what can this shot not survive losing?**
+>
+> | What must hold | Tab | Why |
+> | --- | --- | --- |
+> | the person's identity | **Ingredients** + the Character | it re-stages freely but holds a face |
+> | the set, the framing, the continuity | **Frames** | the attached image is the literal frame 0 |
+> | **both** | **Frames**, with the motion cut to almost nothing | staging failure is unrecoverable; face drift over a near-static clip is small — and a shot with no dialogue has no lip-sync to lose |
+>
+> **The mechanism is in the names.** An *ingredient* is content to draw on and the model may
+> re-stage it; a *frame* is a frame. The §2j.1 aerial said this already — Ingredients re-staged
+> and flew, Frames held — and it was read too narrowly at the time as a fact about faceless
+> shots.
+>
+> **The strongest lock of all is not on this tab at all:** Veo 3.1 (any tier) takes a **first
+> *and* last frame**, and the same still in both slots makes the clip an interpolation between
+> two identical known states. **Omni Flash rejects a last frame**, so that costs a model switch.
 
 **Settled 2026-08-17 across four generations on two very different subjects.** This
 supersedes the earlier "prefer Ingredients" habit, which was an over-generalisation from one

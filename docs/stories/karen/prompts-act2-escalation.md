@@ -30,25 +30,17 @@ storyboard is the song — [`songs/all-day-to-complain.md`](./songs/all-day-to-c
 > **Engine research does not live here** — it goes to
 > [`docs/google-flow/`](../../google-flow/README.md).
 >
-> ### ⚠️ Clip duration is a decision, not a default
+> ### Clip duration: **8s, ruled by Kai 2026-08-18 — the clips get narrated**
 >
-> Asked by Kai 2026-08-18: *"why are all of the video prompts 8s?"* — **because 8s is what
-> happens when nobody chooses.** Flow offers 4 / 6 / 8s (10s on Omni Flash only), and
-> `flow_generate_video` **asserts 8s when the parameter is omitted**
-> ([`platform-controls.md`](../../flow/platform-controls.md)). Act 1's river clips are 4s; Act 2
-> drifted back to the default without anyone deciding.
+> Asked and answered the same day. The engine argument is for shorter clips — **drift compounds
+> per frame**, Flow offers 4 / 6 / 8s, and `flow_generate_video`
+> [asserts 8s on an omitted parameter](../../flow/platform-controls.md), which is why every
+> block here said 8s without anyone choosing it.
 >
-> **It costs quality. Drift compounds per frame** — the mug that flickered, the walker who
-> vanished, the traffic that interpenetrated are all per-frame accumulation. Half the frames is
-> half the chances.
->
-> **Set it from the shot: how many beats, then shorten it by how much geometry is moving.**
-> One gesture is 4s. One action with props at risk is 4–6s. Three beats, or a shot whose
-> *length is the joke*, is 8s. Editing handles are a real argument for generating long, but not
-> when the failure mode is drift — you cannot trim your way out of a prop that flickers.
->
-> **Durations below are stated per clip and several are now shorter than 8s.** Already-accepted
-> clips are left alone; the number applies on any re-fire.
+> **Kai's reason overrides it and is better: these clips carry narration.** A four-second clip
+> cannot hold a line of voice-over, and the narrator is the spine of this film. **8s everywhere
+> until a specific shot argues otherwise** — and if drift bites on a busy shot, the lever is
+> less motion in the frame, not less runtime.
 
 > ### ⚠️ Every prompt ends with *"Thanks."* — plates and clips alike
 >
@@ -797,7 +789,7 @@ eyes go on the screen.
 ### 2j.5v Rung 1, the block — clip
 
 **Cast:** none. **Attach:** the accepted §2j.5 still. **Engine:** Gemini Omni Flash ·
-**Ingredients to Video** · **4s** · native audio · **Enhance Prompt off**.
+**Ingredients to Video** · 8s · native audio · **Enhance Prompt off**.
 
 > **⚠️ This is the first clip in the story with no Flow Character to bind the face.** Every
 > accepted clip so far has been Ingredients + still + `@Character`, the still holding the
@@ -1009,7 +1001,7 @@ Thanks.
 ### 2j.7v Rung 2, the patient block — clip
 
 **Cast:** none. **Attach:** the accepted §2j.7 still. **Engine:** Gemini Omni Flash ·
-**Ingredients to Video** · **4s** · native audio · **Enhance Prompt off**.
+**Ingredients to Video** · 8s · native audio · **Enhance Prompt off**.
 
 **Tab: Ingredients**, per [the settled rule](../../google-flow/omni-flash.md#-the-tab-rule-is-there-a-face-in-it) —
 there is a face in it. No Flow Character exists for him, so identity rests on the still alone,
@@ -1242,7 +1234,7 @@ Thanks.
 ### 2j.8v Rung 3, the fourth note — clip
 
 **Cast:** none. **Attach:** the accepted §2j.8 still. **Engine:** Gemini Omni Flash ·
-**Ingredients to Video** · **6s** · native audio · **Enhance Prompt off**.
+**Ingredients to Video** · 8s · native audio · **Enhance Prompt off**.
 
 > ### The beat is the fourth note joining the row.
 >
@@ -1373,7 +1365,7 @@ Thanks.
 ### 2j.6sv Karen in the snow, rung 3 — clip
 
 **Cast:** **`@Karen`** — the Character **and** the still. **Attach:** the accepted §2j.6s
-still. **Engine:** Gemini Omni Flash · **Ingredients to Video** · **6s** · native audio ·
+still. **Engine:** Gemini Omni Flash · **Ingredients to Video** · 8s · native audio ·
 **Enhance Prompt off**.
 
 > ### Round 1 fired 2026-08-17 — her face changed, and writing appeared on the subway sign
@@ -1505,7 +1497,7 @@ Thanks.
 ### 2j.9v Rung 4, the speakerphone — clip
 
 **Cast:** none. **Attach:** the accepted §2j.9 still. **Engine:** Gemini Omni Flash ·
-**Frames to Video** · **6s** · native audio · **Enhance Prompt off**.
+**Frames to Video** · 8s · native audio · **Enhance Prompt off**.
 
 > **Her back is turned, which is a gift: no visible mouth means no lip-sync to fail**, so she
 > can speak freely and the audio channel does the acting.
@@ -1776,48 +1768,39 @@ attach round 3's image; it carries the dusk and the wide framing, which are what
 
 ### 2j.11v She is alone in it — clip
 
-**Cast:** **`@Karen`** — the Character **and** the accepted §2j.11 still. **Attach:** both.
-**Engine:** Gemini Omni Flash · **Ingredients to Video** · 8s · native audio · **Enhance
-Prompt off**.
+**Cast:** none — **Frames takes no Character.** **Attach:** the accepted §2j.11 still as the
+**starting frame**. **Engine:** Gemini Omni Flash · **Frames to Video** · 8s · native audio ·
+**Enhance Prompt off**.
 
-**Tab: Ingredients**, no argument. [The rule](../../google-flow/omni-flash.md#-the-tab-rule-is-there-a-face-in-it)
-is *"is there a face in it?"* and here the face **is** the shot — it is the only frame in Act 2
-where her expression carries the meaning. Frames has lost a face before and cannot be risked on
-this one. **Ingredients wants the staging written out**, so this block is longer than a Frames
-block by design.
-
-> ### She does not speak. That is the whole idea.
+> ### ⚠️ Round 1 fired 2026-08-18 on Ingredients — *"the phone booth changed."*
 >
-> Every rung of this act has had her talking — explaining, repeating herself, being reasonable
-> at someone. **The exit is the one where she says nothing**, because there is nobody to say it
-> to. Round after round of *"I want to speak to your manager"* ends in a woman listening to hold
-> music on an empty street at night with her mouth closed.
+> **The tab was the bug, and the tab rule needed amending.**
+> [Our rule](../../google-flow/omni-flash.md#-the-tab-rule-is-there-a-face-in-it) was *"is there
+> a face in it?"* → Ingredients. It was derived entirely from failures where **the face** was
+> what got lost, so it had nothing to say about this one.
 >
-> **So the motion budget is almost nothing, and that is the point.** Two blinks, one breath, a
-> hand closing. §2j.6rv and §2j.9v both proved a near-static clip reads fine when the stillness
-> *is* the meaning — and here it is carrying the act.
-
-**The only move is a push-in, and barely.** [Push-in crops into known
-pixels; pull-back demands invented world](../../google-flow/omni-flash.md#-pull-back-is-structurally-riskier-than-push-in),
-and this is not the frame to gamble on. Written as *almost imperceptible* so that if the engine
-overdoes it by its usual margin, the result is still a creep rather than a zoom.
-
-**Every prop is pinned by name**, after §2j.9v — including the handwriting on the paper, which
-is in the accepted still and must stay exactly as it is rather than being re-decided each frame.
-
-**Nothing in the world moves**, which for once is free: the street is empty, so there is no
-traffic to interpenetrate and no reflections to hold. **The city stays alive in the audio only** —
-a train under the street, a siren a long way off, and the hold music leaking out of the
-receiver.
+> **The real distinction is what each tab does with the attached image.** Ingredients treats it
+> as an *ingredient* — content to draw on, which the model is free to re-stage. Frames pins it
+> as the **literal opening frame**. We already had the evidence and read it too narrowly:
+> Ingredients re-staged and flew on the §2j.1 aerial while Frames held the same shot.
+>
+> ### The amended rule: **Ingredients holds identity, Frames holds staging. Pick the one the shot cannot survive losing.**
+>
+> Here the set is unrecoverable — a booth that redesigns itself breaks continuity with the
+> whole act — while the face has very little chance to drift across eight seconds in which
+> almost nothing moves. **Frames, and lock the camera.**
+>
+> **Frames wants a short prompt**, so this block is half the length of the Ingredients one it
+> replaces, and **the push-in is gone**: with the set now the thing at risk, a locked camera is
+> the safest possible instruction, and it was always the stated fallback. If the result feels
+> too dead, the creep comes back next round — that is a cheaper mistake than a changing booth.
 
 ```prompt
-Using the attached image as the locked opening frame, and @Karen as the woman, animate it as one continuous eight-second shot.
+Use the attached image as the starting frame. One continuous shot.
 
-She does not speak. She is listening to hold music and she has been listening for hours. She blinks slowly, twice. Her eyes shift a fraction and settle again without following anything. Her free hand, flat on the shelf, curls slowly into a loose fist and stops. She breathes out. That is everything she does.
+Nothing in the frame changes except her. She does not speak and she does not lower the receiver. She blinks slowly twice, her eyes shift a fraction and settle again, her free hand curls slowly into a loose fist on the shelf, and she breathes out. That is all she does.
 
-The camera creeps almost imperceptibly closer to her across the eight seconds and does nothing else. She keeps the receiver against her ear the whole time and never lowers it.
-
-Everything else in the frame stays exactly where it is. The paper cup, the coins and the paper on the shelf do not move, and the writing on the paper stays exactly as it is. The handset cord hangs still. The bag stays on her shoulder. The street stays empty for the whole shot, the lights across the road stay steady, and the air is clear.
+The camera does not move. The street stays empty, the lights across the road stay steady, every object stays exactly where it is, and the writing on the paper on the shelf stays exactly as it is.
 
 Real-time pace, 24fps with a 180-degree shutter. Fine film grain.
 
@@ -1826,22 +1809,31 @@ Audio is the night: a thin tinny loop of hold music leaking out of the receiver,
 Thanks.
 ```
 
+> ### She does not speak, and that is the whole idea.
+>
+> Every rung of this act has had her talking — explaining, repeating herself, being reasonable
+> at someone. **The exit is the one where she says nothing**, because there is nobody to say it
+> to. Nine months of *"I want to speak to your manager"* ending in a woman listening to hold
+> music on an empty street. **It also removes the lip-sync risk entirely**, which is the second
+> reason Frames is survivable here.
+
 **What to watch:**
 
-1. **Does she stay silent?** If her mouth starts moving, the act loses its ending. The line to
-   strengthen is *"she does not speak"* → *"her lips stay closed for the whole shot."*
-2. **Do the props hold?** The §2j.9v failure. The cup and the paper are the likely ones, and the
-   **writing on the paper** is the newest risk — it is the one surface in the film carrying
-   visible marks, so it has the most to re-decide.
-3. **Is the push-in still a creep?** If it reads as a zoom, cut the sentence entirely and let
-   the camera lock. A locked camera on this frame is not a failure; it is the fallback and it
-   works.
-4. **Does the face stay Karen?** Ingredients with the Character attached has held it every time
-   it was used properly. A drift here means the Character was not attached — check before
-   re-rolling.
-5. **Is anything moving on the street?** There should be nothing. An empty street is the one
-   gift this frame gives us: no vehicles, no pedestrians, no reflections, nothing with geometry
-   to lose.
+1. **Does the booth hold?** The whole reason for the tab switch. Frames pins frame 0, so a
+   change now would be new information worth recording.
+2. **Does her face hold across 8s?** The cost of leaving Ingredients, and **the open question in
+   the amended rule.** Near-static and no speech is the best case for Frames; if it still drifts,
+   the fallback is **Veo 3.1 Fast with the same still in both the first and last frame slots** —
+   interpolation between two identical known states, the strongest lock available. Omni Flash
+   rejects a last frame ([verified 2026-08-12](../../flow/platform-controls.md)), so that fallback
+   means changing model as well as tab.
+3. **Does she stay silent?** If her mouth moves, strengthen to *"her lips stay closed for the
+   whole shot."*
+4. **Do the props hold?** The cup, the coins and especially **the writing on the paper** — the
+   one surface in the film carrying visible marks, so it has the most to re-decide.
+5. **Is the audio doing the work?** The hold music leaking out of the receiver is the best thing
+   in the shot. If it lands on her mouth instead, or the train never arrives, it is worth a
+   re-roll for the sound alone.
 
 
 ---
@@ -1874,7 +1866,7 @@ Sketched so the order is visible; each gets written one at a time, on request.
 | **2j.9v** | Rung 4, the speakerphone — clip | ✅ **accepted 2026-08-18, round 3** — every prop pinned by name |
 | **2j.10** | The newspaper easter egg | ⛔ **no plate** (2026-08-18) — §2j.7's desk already carries it; a frame of its own would promote background to sermon |
 | **2j.11** | She is alone in it | ✅ **fired and accepted 2026-08-18, round 5** — the act's exit; the cut-down prompt is the one that worked |
-| **2j.11v** | She is alone in it — clip | ✅ written — **Ingredients**, near-static, she says nothing; the city is audio only |
+| **2j.11v** | She is alone in it — clip | ✅ written, **round 2** — **Frames** after Ingredients re-staged the booth; locked camera, she says nothing |
 | **2j.9** | Rung 4 interior — the Chief of Staff | ✅ written — **on speakerphone, back turned**; lowest angle, best view |
 | **2j.9v** | Rung 4, the speakerphone — clip | ✅ written, round 3 — **Frames**, tested at the rule's edge; every prop pinned; Karen is a noise on a desk |
 | 2j.10 | The newspaper easter egg | ⛔ **closed 2026-08-18** — satisfied by §2j.7's desk; see the ruling above |
