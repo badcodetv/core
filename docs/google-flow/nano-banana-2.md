@@ -374,6 +374,90 @@ over-sharpened, over-lit, over-contrasted is a fair description of the slop look
 **All `[untested]`.** Same bias warning as everywhere else in this file: only the
 blog.google and DeepMind links are `[vendor]`, and the rest sell something.
 
+## Fourth pass — making it obey a reference `[vendor]` `[community]` 2026-08-18
+
+Prompted by Kai on Karen §2j.11, where a reference-anchored plate needed to hold a set
+while changing the camera. **Our house habit turned out to be actively wrong** on three
+counts.
+
+### 1. Name the job of every image, in the prompt
+
+Google's own tip: with multiple uploads, *"clearly define the role of each"* — their example
+is *"Use Image A for the character's pose, Image B for the art style, and Image C for the
+background environment."* The community formula is the same idea written out:
+
+> Image 1: main subject or product to preserve exactly. Image 2: character identity / face
+> reference. Image 3: pose or composition reference. Image 4: environment or scene reference.
+> … Create one final image that keeps the subject from image 1 intact, preserves the face from
+> image 2, follows the pose from image 3, uses the environment from image 4.
+
+**The prompt should describe the *relationships between images*, not only the final picture.**
+An attached reference with no stated job is a suggestion; an attached reference with a stated
+job is an instruction.
+
+### 2. ⚠️ Do not restate what the reference already shows
+
+The sharpest line in the camera-angle literature: **"Your job is not to restate all this. Your
+job is to tell it the camera angle."** The foundation image carries the set, the light and the
+look for free; a long prose re-description **competes** with it and is a known drift source.
+
+**This is a direct hit on our practice.** Karen's §2j.0 ruling made the Location paragraph the
+canon kiosk description *because no reference existed*. Once an accepted still exists, pasting
+that paragraph forward **alongside** the still is two authorities on one set. **Rule: reference
+attached → the Location slot shrinks to what the reference cannot show.**
+
+Note this also agrees with the photorealism finding that **short specific prompts beat long
+complex ones** when the goal is a real-looking photograph.
+
+### 3. Say "keep the same X", never "do not copy X"
+
+The working camera-angle template is positive throughout:
+
+> *"High-angle shot of image 1. Camera positioned above the subject, looking downward. **Keep
+> the same snowy environment and gritty style.**"*
+> *"Create a Dutch angle shot of image 1. Tilted horizon, subject in foreground, background
+> slightly blurred, **same lighting and environment**."*
+
+**Our refusal block — *"do not copy its camera angle, its framing, or the woman's pose"* — is
+negative prompting**, which [does not work here](#negatives-revisited) and puts the thing we
+are refusing into the prompt. The replacement is a three-way split, all positive:
+
+| Bucket | What goes in it | How to write it |
+| --- | --- | --- |
+| **Keep** | the set, the identity, the design, the look | *"Keep from image 1, exactly: …"* |
+| **Change** | the camera, the time of day, the weather, who is on screen | *"Change from image 1: it is now night; the camera is inside the kiosk"* |
+| **New** | what no reference shows | the Location slot, kept short |
+
+Stating the change as a change is what stops it inventing a *different place* — the model is
+told the location is the same and only the listed facts differ.
+
+### 4. Slots: fewer is better, and order matters
+
+**Up to 14 references, but only about 6 at high fidelity** — and the field advice is to
+*"begin with 2 to 4 images, not 10-plus. More references only help when each one owns a
+distinct role."* Put whatever must survive in the earliest slots. For us that is nearly always
+**two**: the accepted still, and the Flow Character.
+
+### 5. Anti-slop, restated from the photorealism pass
+
+Two of these are new and both bear on night exteriors:
+
+- **⚠️ Do not stack lighting ideas.** The named tell is *"a glowing face, a dark background, a
+  bright window, a rim light, neon reflections and a golden sunset all somehow happening at
+  once."* **One key light with a stated direction, plus its consequences.** Practicals are
+  allowed if they are bounded to a job — *"one small point of colour, too weak to light
+  anything."*
+- **Prompt the capture, not the beauty** — *candid, documentary, unposed, imperfect
+  composition, lived-in, realistic skin texture*. Already the §1 `STYLE LOCK`'s job for Karen.
+
+### Sources for this section
+
+- [Google — prompting tips for Nano Banana Pro](https://blog.google/products/gemini/prompting-tips-nano-banana-pro/) `[vendor]`
+- [Google AI — Nano-Banana Pro prompting guide & strategies](https://dev.to/googleai/nano-banana-pro-prompting-guide-strategies-1h9n) `[vendor]`
+- [Nano Banana Pro reference images: setup and drift fixes](https://www.aifreeapi.com/en/posts/nano-banana-pro-reference-images) `[community]`
+- [Nano Banana Pro camera control guide](https://techyheaven.com/nano-banana-pro-camera-control/) `[community]`
+- [How to make AI images look real (2026)](https://imagera.ai/blog/make-ai-images-look-real-2026) `[community]`
+
 ## Notes for BadCode `[untested]`
 
 Hypotheses for the calibration run, not rules.

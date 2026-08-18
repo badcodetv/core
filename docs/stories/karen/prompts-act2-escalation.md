@@ -1582,10 +1582,40 @@ model most wants to give you Brave Sad Woman — welling eyes, a tightened chin,
 nothing at all: jaw loose, eyebrows level, eyes open and not tracking anything. The audience
 supplies the feeling, which is why they end up on her side.
 
-**Reference block** — paste above the `STYLE LOCK` if attaching §2j.0:
+> ### ⚠️ Round 1's block was rewritten before firing — it fought its own reference.
+>
+> Kai asked for it to *"pay close attention to the reference image"*, and the
+> [research pass](../../google-flow/nano-banana-2.md#fourth-pass--making-it-obey-a-reference-vendor-community-2026-08-18)
+> found our house habit doing the opposite in three ways at once:
+>
+> 1. **It restated the whole kiosk in prose while attaching a picture of the kiosk.** Two
+>    authorities on one set. The camera-angle literature is blunt about it — *"your job is not
+>    to restate all this, your job is to tell it the camera angle"* — and a long
+>    re-description is a documented drift source.
+> 2. **Its refusal block was negative prompting.** *"Do not copy its camera angle, its framing
+>    or the woman's pose"* puts all three into the prompt. The working template is positive:
+>    *"Keep the same snowy environment and gritty style."*
+> 3. **It never told the model what the reference was *for*.** Google's guidance is to name
+>    each image's job outright.
+>
+> **The rewrite below is shorter than round 1 and does more.** The reference gets a stated
+> role and a **keep / change** split, both written positively; the Location slot shrinks to
+> only what the reference cannot show — the inside of the box, at night, nine months on. **§2j.0's
+> Location paragraph is no longer pasted forward when §2j.0 itself is attached** — that ruling
+> was made when no reference existed.
+>
+> **The lighting was also stacked** — street light *and* a green wash *and* distant bokeh *and*
+> her face doubled in the glass. Four ideas is the named slop tell. **One key, one bounded
+> practical**, and the reflection is gone.
+
+**Reference block** — this replaces the refusal wording, and goes above the `STYLE LOCK`:
 
 ```prompt
-REFERENCE: use the attached image only for the design of the phone kiosk and the subway entrance behind it — the shape of the frame and glazing, the steel shelf, the coiled handset cord, the chipped paint, the handrails and the green glass globe. Do not copy its camera angle, its framing, its time of day, or the woman's position and pose. This is a different shot from a different place, at night, from inside the kiosk.
+Image 1 is the location reference. Make a new shot of the same phone kiosk in image 1, at night, with the camera inside the kiosk.
+
+Keep from image 1, exactly the same: the design of the kiosk — the brushed aluminium frame, the glazing on three sides, the hinged door, the chipped paint along the base, the worn steel shelf, the coiled metal handset cord, the old adhesive marks on the panel; the subway entrance behind it — the steel handrails, the low balustrade, the green glass globe on the newel post, the blank sign panel on its mast, the rust streaks down the rails; the scaffolding and plywood hoarding beyond it; and the woman's face, hair and build.
+
+Change from image 1: it is night instead of overcast daytime, the camera is inside the kiosk instead of out on the pavement, and the pavement outside is empty.
 ```
 
 ```prompt
@@ -1609,20 +1639,25 @@ Exclusions: no added text, no logos, no watermark, no AI "hyper-sharp HDR" look,
 
 SCENE:
 
-Subject: a woman in her forties standing inside a street phone kiosk late at night with the receiver held against her ear, seen from inside the kiosk with her, looking out through the glass at nothing.
+Subject: the same woman as image 1, in her forties, standing inside the same kiosk late at night with the receiver held against her ear, seen from inside the kiosk with her, looking out through the glass at nothing.
 
-Composition: 16:9 on a 35mm lens at f/2, the camera inside the kiosk in the corner beside her, close, at her eye level. Her head and shoulders fill the left of the frame in three-quarter profile, turned away from the camera toward the glass. The glass and the dark street beyond fill the right of the frame. The kiosk's aluminium corner post runs down the near edge as a dark vertical bar, the coiled handset cord crosses the bottom of the frame close to the lens and out of focus, and the kiosk's low roof panel with its dead light fitting shows across the top. The frame is tilted a few degrees off level.
+Composition: 16:9 on a 35mm lens at f/2, the camera inside the kiosk in the corner beside her, close, at her eye level. Her head and shoulders fill the left of the frame in three-quarter profile, turned away from the camera toward the glass, and the glass and the dark street fill the right of the frame. The kiosk's aluminium corner post runs down the near edge of the frame as a dark vertical bar, the coiled handset cord crosses the bottom of the frame close to the lens and out of focus, and the kiosk's low roof panel shows across the top with its light fitting dead. The frame is tilted a few degrees off level.
 
 Action: she is doing nothing but waiting. The receiver rests against her ear held by a hand whose fingers have gone loose, her wrist propped on the steel shelf. Her mouth is closed, her jaw is loose, her eyebrows are level, and her eyes are open and not following anything outside. A strand of hair has come down and stuck to her cheek. She is not aware of the camera.
 
-Location: a scuffed municipal phone kiosk on a Midtown Manhattan pavement — a brushed aluminium frame glazed on three sides, a hinged door, chipped paint along the base, a worn steel shelf, a coiled metal handset cord, old adhesive marks on the panel where cards were peeled off. On the shelf: two coins, a thick fold of papers gone soft at the edges, and a paper cup gone cold with a dried tide line inside it. Her handbag stands on the floor by her feet. Through the glass, the subway entrance immediately behind the kiosk — steel handrails, a low balustrade, a green glass globe on the newel post, a blank sign panel on a mast, rust streaks bleeding down the rails — and beyond it pavement scaffolding with plywood hoarding. The pavement is empty across the whole width of the frame and the street runs away into the dark.
+Location: the inside of the kiosk, which image 1 only shows from outside. On the worn steel shelf sit two coins, a thick fold of papers gone soft at the edges, and a paper cup gone cold with a dried tide line inside it; her handbag stands on the floor by her feet. Everything visible through the glass is the same as image 1, at night, and the pavement is empty across the whole width of the frame.
 
-Light: night, long after the offices emptied. A street light outside and behind the camera to the left rakes across the near side of her face and leaves the far side of it in shadow. The green glass globe on the subway post lays a weak green wash across the glass behind her. The light fitting in the kiosk roof is dead, so the inside of the kiosk is lit only by what comes in from the street. Street lights further down the block sit far out of focus as soft blown highlights. Her own face is faintly doubled in the glass in front of her.
+Light: one source, a street light outside and behind the camera to the left. It rakes across the near side of her face and leaves the far side of it in shadow, and it is the only thing lighting the inside of the kiosk, because the fitting in the kiosk roof is dead. The green glass globe on the subway post is lit and sits behind her as one small point of colour, too weak to light anything. Everything further down the block falls away into darkness.
 
-Style: a still from a 35mm independent film — the last frame of a long day nobody watched. Available light only, unretouched, natural skin texture with visible pores and shine, flyaway hair.
+Style: a candid documentary photograph, unposed, the last frame of a long day nobody watched. Available light only, unretouched, natural skin texture with visible pores and shine, flyaway hair.
 
-Constraints: cream blouse untucked, camel cardigan, a dark coat over it hanging open, tailored trousers, structured leather handbag on the floor; her expression stays neutral and unperformed, with no tears, no trembling lip and no raised chin; the pavement outside stays empty for the whole frame; keep the papers on the shelf, the cup, every sign panel, notice, hoarding, sticker and shopfront free of readable lettering; no border or frame edge around the image.
+Constraints: cream blouse untucked, camel cardigan, a dark coat over it hanging open, tailored trousers, structured leather handbag on the floor; her expression stays relaxed and unperformed; the pavement outside stays empty for the whole frame; keep the papers on the shelf, the cup, every sign panel, notice, hoarding and sticker free of readable lettering; no border or frame edge around the image.
 ```
+
+**Slots:** two references only — **image 1 is §2j.0, and `@Karen` is the Character.** The
+guidance is *"begin with 2 to 4 images, not 10-plus; more references only help when each one
+owns a distinct role"*, and fidelity is highest in the first six slots. Do not add the Act 1
+frames as extra kiosk references; they would be a third opinion on the same set.
 
 **What to watch:**
 
@@ -1632,9 +1667,11 @@ Constraints: cream blouse untucked, camel cardigan, a dark coat over it hanging 
 2. **Is she acting?** Welling eyes, a wobbling lip, a bravely-lifted chin: **reject the
    candidate.** The line to add if it keeps happening is *"her face is completely relaxed and
    she looks mildly bored."* Bored reads as endurance; sad reads as advertising.
-3. **Did the reference drag the angle back outside?** The documented failure mode. **Re-fire
-   with nothing attached** and let the Location prose carry the kiosk — it is the canon
-   description by ruling, and §2j.0 was made from prose alone.
+3. **Did the reference drag the angle back outside?** With the camera move now stated as the
+   *first* instruction and the change written positively, this should hold. If it still steps
+   out onto the pavement, the next lever is **shortening further** — cut the Composition slot
+   to two sentences and let image 1 carry the rest, per *"tell it the camera angle, not the
+   scene."* Falling back to prose-only is the **last** resort now, not the first.
 4. **Is it still recognisably Midtown at night**, not a generic wet alley? The subway rails,
    the green globe and the scaffolding are the three nouns doing that work.
 5. **Two coins, not a stack.** The clearest single piece of evidence that this is month nine
