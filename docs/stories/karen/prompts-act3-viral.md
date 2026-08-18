@@ -189,12 +189,83 @@ Thanks.
 > generations to relearn. **The shot only** — where they are, what they are doing, where the
 > camera is.
 
+## 3a.1v The sample — clip
+
+**Cast:** none — **Frames takes no Character.** **Attach:** the accepted §3a.1 still as the
+**starting frame**. **Engine:** Gemini Omni Flash · **Frames to Video** · 8s · native audio ·
+**Enhance Prompt off**.
+
+**Tab: Frames.** Two faces and a set full of thin geometry — railings, green globes, the straps
+and cables of the rig. **Ingredients would re-stage all of it**, and it took four rounds to get
+this staging. Frames pins frame 0, and with both subjects nearly static there is very little
+runway for identity to drift.
+
+> ### The act's rule bites, and the funniest version is also the safest one.
+>
+> **Only one person may move** — [two figures in relative motion
+> interpenetrate](../../google-flow/omni-flash.md), and no prompt fixes it. Here that costs
+> nothing, because **the joke is that he does not react much.** She is exploding at a stranger on
+> the end of a phone; he is standing on a pavement quietly recording it. **Stillness is funnier
+> than a reaction**, and it is what a real person filming something on their phone actually does.
+>
+> **His feet never move.** The rule is about *relative* motion, so a planted figure beside a
+> gesturing one is one tracking problem, not two. **The one thing he is allowed is his face** —
+> facial motion on a static body has never failed here, and *"oh sh—"*, the canon beat, is a
+> small grin arriving as he works out what he has got.
+
+**The traffic is frozen and lives in the audio.** Vehicles have failed three times in this film
+and the [demote-to-sound fix is four for four](../../google-flow/omni-flash.md#demote-it-to-sound).
+Parked cars holding still is a much smaller lie than cars driving through each other.
+
+> ### ⚠️ Her line is not in this clip, on purpose.
+>
+> Canon gives her *"I've got ALL DAY to complain — all day to complain!"* and **that line is the
+> hook of the song** — it wants to arrive as the record, laid in at the edit, not as whatever
+> Omni's native audio invents. So the block asks for **a raised voice with the words unclear**.
+>
+> **If Kai wants to gamble on hearing it**, swap the audio clause for *"a woman shouting 'I've
+> got all day to complain' at the top of her voice"* — but expect the
+> [audio lottery](./prompts-morning-after.md#2h6v-karen-listens-in-the-kiosk--clip): wrong words
+> come back as often as right ones, and re-rolling is the only fix.
+
+```prompt
+Use the attached image as the starting frame. One continuous shot.
+
+The camera does not move.
+
+She is mid-rant and stays mid-rant for the whole eight seconds. Her mouth moves continuously, her free hand moves as she talks, and she leans a little towards the phone and back again. She stays in the kiosk with the receiver at her ear and she never looks away from the street in front of her. She does not notice the young man.
+
+He stays exactly where he is on the pavement, standing still with his phone held up in both hands, filming her. His feet do not move and he does not walk. The only thing that changes about him is his face: a small delighted smile arrives as he works out what he is recording.
+
+Everything else in the frame holds still. The kiosk, the railings, the green globe posts, the straps and cables on his rig, her handbag and the parked cars all stay exactly where they are and exactly as they are, and the pavement stays empty apart from the two of them.
+
+Real-time pace, 24fps with a 180-degree shutter. Fine film grain.
+
+Audio is the street: a woman's voice raised and carrying but not clear enough to make out the words, traffic, and the rumble of a train under the pavement. No other dialogue.
+
+Thanks.
+```
+
+**What to watch:**
+
+1. **Does he stay planted?** The one thing that would break it. If he walks, drifts or turns, the
+   two of them become two moving figures and the failure is the one nothing fixes — **cut the
+   smile and give him nothing at all** on the next pass.
+2. **Do the rig's cables and the railings hold?** The most fragile geometry in the frame, and the
+   reason this is on Frames rather than Ingredients.
+3. **Is she actually ranting the whole time?** Her mouth moving from first frame to last. It
+   leads its own sentence for exactly that reason.
+4. **Do the parked cars stay parked?** Frozen traffic is the deliberate choice; cars driving
+   through each other is the failure it avoids.
+5. **Does he look at the camera?** He must not. He is looking at his phone screen, and she never
+   looks at anything but the street.
+
 ## What this act still owes
 
 | § | Piece | Notes |
 | --- | --- | --- |
 | **3a.1** | The sample — plate | ✅ written, **round 4** — 135mm three-quarter; he stands by the subway railings behind her |
-| 3a.1v | The sample — clip | **only he moves**: he stops, lifts the phone, lowers it, walks out of frame. Karen holds. |
+| **3a.1v** | The sample — clip | ✅ written — **only she moves**; he is planted and the one change is a smile |
 | 3a.2 | Karen shouts the line — plate | her single; the counter-shot, so the two-hander never shares a moving frame |
 | 3a.2v | …— clip | **only she moves.** This is the *"I've got ALL DAY to complain"* shot |
 | 3a.3 | The train — plate | two riders, a phone between them, the tune playing in-world |
