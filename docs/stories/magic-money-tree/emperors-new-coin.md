@@ -8,7 +8,7 @@
 > substantive from it is preserved below, so the fable machinery is here if the
 > coin (or a future story) ever wants it. The song that lived there — the jump-up
 > comedy "paper comes from trees" version — is preserved at
-> [`songs/magic-money-tree-jump-up.md`](./songs/magic-money-tree-jump-up.md).
+> [`songs/magic-money-tree.md`](./songs/magic-money-tree.md).
 
 Provenance: developed from scratch with Kai, Jun 2026, as EP1 track 3 inside
 [GitPush Origin Master](../gitpush-origin-master/README.md) (the bad-branch

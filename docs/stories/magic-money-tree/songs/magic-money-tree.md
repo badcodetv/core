@@ -1,376 +1,276 @@
 ---
-title: There Is No Magic Money Tree
-status: rap-cadence rework (Version C, 2026-08-14) — current sheet; pending Jack listen + delivery casting
+title: Magic Money Tree
+status: drafting
+suno:
+  style: >-
+    Jump-up drum and bass, 172 BPM, bouncy and comedic. Hyperactive and cheeky,
+    tongue-in-cheek energy, big playful drops. Wobbling gurgly jump-up bassline,
+    chopped breakbeats, bright stabs, air-horn and rewind FX. A single UK comedic
+    rapper — fast double-time flow, animated and witty, cheeky British accent,
+    spoken-word punchlines landing on the beat, theatrical and sardonic. Clean
+    punchy mix, club-ready, energetic. Satirical, fun, fast-talking.
+  exclude: >-
+    liquid dnb, dark neurofunk, boom bap, lo-fi hip hop, pop, autotune, clean sung
+    melody, soft female vocal, American accent, acoustic guitar, jazz, orchestral,
+    ballad, slow tempo, melancholy, ambient
 bpm: 172
-model: v5.5 (cue-heavy lyric sheet — stay on 5.5, see workflow)
-settings: style influence 75, weirdness 60; Cover experiment at audio influence 35–40
-voices: spoken word — very well-spoken English poet register (John Cooper Clarke energy); candidates = newsreader, old economist (live option — the ghost of Keynes reads it), punk poet; decision deferred to the Suno stage
+voices: [rapper, politician]
 ---
 
-> **Three-sheets policy (updated 2026-08-14; original two-versions policy Kai,
-> 2026-08-06):** this file carries all three lyric sheets, permanently, in this
-> order — **Version A** (2026-08-06 story-matched rework): superseded 2026-08-14,
-> kept for side-by-side comparison. **Version B** (the original saved-take
-> transcription): **locked verbatim** — never edit it; it remains a live option
-> to return to. **Version C** (2026-08-14 rap-cadence rework, at the bottom):
-> the **current sheet** — it inherits Version A's evolving role; as the canon
-> changes, it changes.
+# Magic Money Tree (song)
 
-# There Is No Magic Money Tree (song)
+**The canonical song file.** Bouncy jump-up D&B, comedic UK rap, 172 BPM. The
+liquid/spoken-word rework was deleted 2026-08-18 (Kai) — it lives in git history
+only; do not resurrect it. The dumb-genius payoff stands: the magic money tree is
+real, because paper money is paper, and paper comes from trees. Bookended by a
+prim politician's "there is no magic money tree" — which the song spends three
+minutes disproving.
 
-**Role in the release (re-founded story, 2026-08-06):** the ending of the YouTube
-video. The video is narration-led; the song slams in after the winter-bench
-scene (the veterans/flags sequence plays quiet so the interviews can be heard)
-and the video ends on the track's hard cut — **"There is no magic money tree."**
-The song no longer has to teach the history (the video does that) — it's the
-recap that detonates.
+The point (woven into the bridge): the limit isn't money, it's what we actually
+build — *we can afford what we can create*.
 
-## Style direction — lighter, rolling, played straight
+Flow/beat reference: <https://www.youtube.com/watch?v=OJM8yJTn_I0> ("Don't Get
+High On Your Own Supply" — East Coast / mafioso hip-hop; here the flow is moved
+onto bouncy jump-up D&B).
 
-Kai's steer: **intelligent/liquid drum & bass, not dark jungle.** Existing takes
-(rap D&B, boom-bap, orchestral prog-rock) all read darker/heavier than the
-re-founded story, which is elegiac underneath the sarcasm — a friendship, a
-death, a betrayal. The arrangement warms; the words keep the knife. (Satire
-played straight: the joke stays in the lyrics, never the music.)
+## Structure (agreed 2026-08-18, Kai + Claude — working map)
 
-Suno craft note: **"liquid" and "intelligent D&B" are exactly the niche
-subgenre names Suno fails on** — so the prompt names the parent genre and then
-*describes* the sound design (rolling breaks, warm subs, Rhodes, pads) instead
-of trusting the label.
+### The ruling that sets the budget
 
-**2026-08-14 steer (Kai):** **spoken word over chilled breakbeat D&B** — not
-jump-up, no massive basslines or drops. Delivery register: a very well-spoken
-voice reading a poem — John Cooper Clarke energy; newsreader / old-economist
-candidates (one live option: the ghost of Keynes reads it). Timing first: the
-current sheet (Version C, bottom of this file) is written in the original
-take's rap cadence — Version B's flow — so it locks to ~172; the delivery
-style gets chosen at the Suno stage. **The Suno prompt blocks below predate
-this steer** (they target the laid-back-MC / liquid direction) and will be
-rebuilt before the next generation round.
+**The song does not carry the history. The video does.** Kai, 2026-08-18: the
+story and the song *stand on their own two feet*. So there is **no history
+verse** — no Nixon, no Weimar, no postwar build, no Marshall Plan. The song is
+the modern argument, at speed, with jokes. History appears only where a single
+fact is funnier than a paragraph (see the 1694 jab below).
 
-**Casting idea (open):** the vocal could *be* the Tree — the canon voice is a
-warm working-class London sage, and the existing lyrics already half-read as
-the tree talking ("Where does it grow? You and me"). If we later build the
-Tree as a saved Voice for the video's dialogue, the same Voice fronts the song
-and story + song lock together.
+### The argument the song makes
 
-## Suno prompt (Advanced — paste all four, in order, every round)
+1. **We're skint and being told there's no money.** (the wound)
+2. **And yet — COVID.** The money appeared in a fortnight. (the crack)
+3. **Here are the receipts, with names and dates.** (the proof)
+4. **Here's the actual trick: it's not that they printed — it's where they pointed it.** (the mechanism)
+5. **Keynes had the law the whole time.** (the turn)
 
-**My Taste** (swap in for this track; restore/replace after):
+### The shape
 
-```
-Laid-back male London MC vocals — conversational, half-spoken, warm and unhurried, hardening as the track builds, lifting into a plain-sung hook. Liquid rolling drum & bass: fast rolling breakbeats, deep warm sub bass, Rhodes chords, soft string pads, spacious mix, melancholy warmth, cinematic restraint, UK rap delivery over soulful electronic backing.
-```
+| # | Part | Bars | Job |
+| --- | --- | --- | --- |
+| 1 | Intro — politician, spoken, dry | — | *"I'm afraid there is no magic money tree."* |
+| 2 | **Verse 1 — the wound** | 16 | Skint modern Britain. **10 written, 6 to go.** Sets the register for everything else. |
+| 3 | **Pre-hook — the crack ("and yet…")** | 8 | COVID. £450bn in ~3 months vs ~£445bn for the *whole* 2009–17 era. Ten years of "there's no money", then the whole decade again in a season. This is what earns the drop. |
+| 4 | **Hook** | 8 | See below. |
+| 5 | **Verse 2 — the receipts** | 16 | May & the nurse → £1bn for the DUP 24 days later; the VIP lane; the gowns; 1% for the nurses in 2021. Named choosers, dated events. |
+| 6 | Hook | 8 | |
+| 7 | **Verse 3 — the mechanism** | 16 | The two addresses. Money pointed at the asset market vs money pointed at wards, homes, wages. The BoE's own "hot potato". |
+| 8 | **Bridge — the law** | 8 | Half-time, drums out, suddenly sincere. Keynes verbatim + the bricks heckle. |
+| 9 | **Hook — final, biggest** | 8 | Plus the title payoff: *(on a tree!)* |
+| 10 | Outro — politician, then the deadpan button | — | *"…there is no magic money tree."* / *(course there is, love — where'd you think the paper comes from?)* |
 
-**Style:**
+**~3:10 at 172 BPM.** Three verses, not four — the old draft's V2/V3 history
+verses are gone.
 
-```
-Drum and Bass, Liquid at 172 BPM, warm and melancholy. Rolling breakbeat, deep sub bass, lush Rhodes chords and soft string pads. Laid-back male London MC, conversational half-spoken flow that hardens verse by verse, lifting into a plain-sung hook. Dark satire played completely straight, no comedy, no novelty.
-```
+### The hook — carrying two jobs without overloading
 
-**Exclude Styles:**
+Kai's steer: the chorus is **Keynes** ("we can afford anything we can do") *and*
+the two-addresses economics. That's two ideas, so it's split across the 8 bars —
+call-and-response first half, the mechanism second half — and the **title payoff
+`(on a tree!)` is held back for the final hook only**, so the song *builds to*
+its own title instead of repeating it from bar one.
 
-```
-comedy, novelty, parody, dark techstep, neurofunk growl bass, aggressive jump up, screamo, shouting, orchestral, prog rock, boom bap, trap hats, EDM festival drop, harsh distortion, gothic choir, ad-libs, whoop, autotune, lo-fi
-```
+- **First half:** Keynes as a gang-vocal call/response — *anything we can
+  actually do → (we can afford it!)*
+- **Second half:** where it lands. Same note, two addresses.
+- **Final hook only:** the *(on a tree!)* payoff, then the politician.
 
-**Settings:** style influence **75**, weirdness **60**. For the Cover experiment
-below, audio influence **35–40**.
+### The verbatim material (do not paraphrase)
 
-## Workflow — two experiments, cheapest first
+- **Keynes, BBC, 2 April 1942:** *"Anything we can actually do we can afford."*
+  — the exact line. Kai's *"we can afford what we can create"* is a **gloss, not
+  the quote**; the rapper may gloss it in the following bar, the hook uses the
+  real one.
+- **The bricks heckle, same broadcast — the bridge's centrepiece:** *"The money?
+  But surely, Sir John, you don't build houses with money? Do you mean that
+  there won't be enough bricks and mortar and steel and cement?"*
+- **Theresa May, 2 June 2017:** *"…a magic money tree that we can **shake**."*
+  Protect the verb — the whole lore runs on shaken-vs-spoken-to.
 
-1. **Cover the saved take into the new register.** Jack's keeper take → Remix →
-   Cover with the Style/Exclude above, weirdness 0, audio influence ~35–40.
-   Keeps the flow and melody everyone already likes; swaps the clothes. If the
-   vocal drifts, raise audio influence toward 60.
-2. **Fresh generation** with the reworked lyric sheet below (all four boxes,
-   v5.5 — the sheet is cue-heavy and 4.5 shreds dense bracket structure).
-   Half-time drop cannot be prompted; if we want one before the hard cut, it's
-   a Studio splice.
+### The facts on the shortlist (all sourced in `../research/`)
 
-Either way the ending is non-negotiable: **cut hard immediately after "There is
-no magic money tree."**
+- **£450bn in ~3 months (2020–21)** vs ~£445bn across 2009–2017 entire.
+- **May tells the nurse no tree (2 June 2017) → £1bn for the DUP, 24 days later.**
+- **The nurse's 2009 payslip matched her 2017 payslip.**
+- **2021: nurses offered 1%.**
+- **The gowns:** £122m for 25 million gowns the NHS could never use; 55 of a
+  60-gown sample not sterile; ~£8m to store them. *(Mone guardrails in
+  `../research/michelle-mone-ppe-medpro.md` are **mandatory** — no criminal
+  conviction exists, the £122m is a civil judgment against a **company**. Her own
+  BBC admission is the safe material.)*
+- **QE raises asset prices by design — the Bank's own words:** the *"hot potato"*
+  effect, *"this will raise the value of those assets."*
+- **The 1694 jab** — the one history fact worth a bar-pair, because it's a joke
+  not a lesson: the Bank of England was chartered **27 July 1694 to fund a war
+  against France — £1.2m at 8%, subscribed in twelve days.** *The institution
+  that told a nurse there's no magic money tree was founded as one, to fight a
+  war, in a fortnight.*
 
-## Version A — story-matched lyrics (proposal 2026-08-06 — superseded by Version C 2026-08-14; kept for comparison)
+### Guardrails for this song specifically
 
-Changes against the saved take: **kept** the domestic verse ("Grandma freezing"
-now doubles as the freeze motif), the '71/Biggie/'08 history verse (trimmed of
-the uncertain transcription lines, **wheelbarrow line restored** — it was always
-the Weimar line), and the closing thesis couplet + hard cut. **Added** a
-1942/Keynes verse (the law), a 2020/yacht verse (the betrayal), and — per the
-2026-08-06 conclusion rework — **a bridge**: the grandfathers, the flags coming
-back, the Weimar double burn. The paper-grows-on-a-tree joke stays — canon
-note: in the *story* the tree is a sage; the printer gag lives only here.
+- 🔴 **Never "printing made your wages worth less."** That's the monetarist story,
+  the research says it isn't what happened (2021–23 was ~half supply shocks, unit
+  profits ≈ 60% of euro-area price growth), and it argues *for* austerity in our
+  own single. **The true version: it's not the printing, it's the address.**
+- 🔴 **Never "you've been duped."** `../../../marketing/the-reader.md` rule 2 —
+  it's "you're stupid" with a citation. The trick is shown being run **on someone
+  else, on camera**: the nurse. The listener is never the mark.
+- ⚪ **No current war by name.** Dates the song and trips the target reader. The
+  war card is 1694.
+- ⚪ **No "money printing caused inflation."** Use Keynes's own definition if the
+  limit needs naming: inflation is *"a demand in excess of the physical
+  possibilities of supply."*
 
-```lyrics
-[Intro | spoken word speech, cold, clipped female authority]
-(I'm afraid there is no magic money tree.)
-[Verse 1 | laid-back male London MC, conversational half-spoken, dry sarcasm]
-They say you can't make money from a tree. Let's see.
-Work and get paid though. Earn that dough. Where does it go? Nobody knows.
-Standards bleeding. Landlords needing quantitative easing. Grandma freezing.
-Means of production. Means of reduction. Stimulus checks. Our necks get wrecked.
-Rent seeking. Just about eating. Sorry — did I interrupt your meeting?
-Where does it grow? You and me. Mother paper grows on a tree.
-[Verse 2 | warmer, unhurried, storyteller register]
-Rewind. '42. The city's burning.
-Broke little island, bombs above it, still turning.
-A quiet man in a park with sums that wouldn't come right,
-and the tree said: mate — you free tonight?
-You don't build houses out of money, son.
-Bricks and hands and steel — well, have we got some?
-Then we can afford it. Say it slow, no debate:
-anything we can actually do, we can create.
-Skint as we'd ever been, debt through the ceiling —
-built a health service free at the point of healing.
-Who paid? Not grandma. Follow the maths:
-the bondholders carried it. Cheers for that.
-[Verse 3 | flow hardens, tighter delivery]
-Then '71: Tricky Dicky sold the gold by the metric ton.
-The deal was very simple: buy oil in green. Propping up the dollar with guns and gasoline.
-It's '97 and Biggie said it clearly: don't get high off your own supply.
-Now we paying dearly — not very hard with six credit cards.
-This is '08, where we fucked up there mate. Locked in our fate with the low low rates.
-Can't pay it back, you know the crack. Printer go brrr making them stacks.
-Print it with the ink on that paper. Filled up a wheelbarrow sometime later.
-It's the fiat system. It's insistent on the debt's existence. Don't be resistant, okay.
-[Verse 4 | quieter, colder, almost spoken]
-2020. Clap for the nurses on the doorstep.
-Four hundred and fifty billion. No sweat. No war chest.
-The tree got shook like it's autumn forever —
-wages held, fair play. That's the tree working, whatever the weather.
-Then a door marked VIP swings wide:
-gowns you can't use, and a friend inside.
-Nurse gets one percent for the year of the dead.
-The profit? Offshore. Frozen. A yacht instead.
-Money's meant to move, mate. That's the whole of the law.
-It froze on a deck off Monaco.
-[Bridge | stripped back, quiet, grief not anger, half-spoken]
-My grandad didn't storm a beach for a hedge fund,
-didn't watch his mates go under so the rents could jump.
-They came home to rubble and they built the welfare state —
-no gold in the vault. Just the will to create.
-Now the flags are back out and the boots are on the street.
-Starve a man of a future and he'll march to any beat.
-Weimar burned the paper, then they froze the till,
-and a salesman sold them someone to blame. He always will.
-[Outro | plain-sung hook rising, then dead stop]
-I know this money ain't free. But I do know paper comes from a tree.
-So don't believe them when they say the coffers run dry —
-now for the whopper: for the banks, funds multiplied.
-A tree makes the paper. The limit's what we make — say it with me now:
-we can afford what we can create.
-Where's it grow? On a tree. Brrr ain't free.
-They say there's none for you and me. But the paper grows on a tree.
-There is no magic money tree.
-[End]
-```
+### Idea parking lot
 
-## Open questions (for Kai + Jack — refreshed 2026-08-14 for Version C)
+- **Money as energy that wants to move** (Kai, 2026-08-18). **Recommendation:
+  keep the physics, drop the wanting.** The flow/freeze grammar is already canon
+  and already vetted (Ken Honda brief; hoarded money *freezes*, healthy money is
+  a lake fed by streams). But the moment money **prefers** or **wants**, the line
+  reads as manifestation/law-of-attraction — and `../../../../CLAUDE.md` is
+  explicit that this project does politics and economics first and saves
+  spirituality for later. Our reader is skint and cynical and switches off at
+  woo. So: *frozen solid on a deck in the Med* — yes. *Money likes to move* — no.
+  Kai to overrule if he disagrees.
+- **Verse 3's strongest single image (already canon):** the nurse's flat payslip
+  and the yacht in Monaco are **the same banknote at two addresses**.
 
-1. **Jack listen** — does the corroding-refrain structure and the rap cadence
-   read off the page the way it should sound at 172?
-2. **Delivery casting** — spoken-word register is locked in spirit (JCC energy,
-   well-spoken, not rap/hip-hop delivery); pick between newsreader / old
-   economist (the ghost of Keynes?) / punk poet at the Suno stage. If Keynes
-   reads it, the sheet wants a pronoun pass to first person.
-3. **The Marx slogan** — Version C says "the orchard's stolen" because
-   "property is theft" is Proudhon (Marx mocked the line). Kai to rule: keep
-   the honest dodge, or use the slogan knowingly.
-4. **'79 book-slam verification** — Thatcher slamming Hayek's *Constitution of
-   Liberty* on the table ("this is what we believe") is widely reported via
-   John Ranelagh's account; verify before print — it's load-bearing for the
-   corner-swap couplet.
-5. **Verse 4 length** — 24 lines; if a take drags, first trim candidates are
-   the "Where'd it land?… Read the receipt" couplet or the Notorious-don
-   couplet.
-6. **The bridge's weight** — the video's beat 8 (grandads/flags/Weimar) in four
-   couplets; confirm it earns its place alongside the cold back half of V4.
-7. **Suno prompt rebuild** — the Style/Exclude/My Taste blocks above still
-   target the liquid-MC direction; rebuild for spoken-word-over-chilled-
-   breakbeat once delivery casting is decided. The ending is non-negotiable
-   regardless: **cut hard immediately after "There is no magic money tree."**
+## Working sheet — type new lyrics here
 
-## Version B — the original saved take (LOCKED — as transcribed 2026-07-22, never edit)
+**This block is the live one.** Clean bars only, no Suno cues — cues get added at
+the very end, when the words are settled. One line = one bar at 172 (double-time
+16th flow, 8–11 syllables a line).
 
-> I'm afraid there is no magic money tree.
->
-> They say you can't make money from a tree. Let's see each day, not three.
-> Work can get paid though. Earn that though. Where does it go? Nobody knows.
-> Standards bleeding. Landlords needing quantitative easing. Grandma freezing.
-> Means of production. Means of reduction. Stimulus checks. Our necks get wrecked.
-> Rent seeking. Just about eating. Sorry, did I interrupt your meeting?
-> Where does it grow? You and me. Mother paper grows on a tree.
->
-> It all began back in '71. Tricky Dicky sold the gold by the metric ton.
-> The deal was very simple: buy oil in green. Propping up the dollar with guns and gasoline.
-> Then in '83, when shit was nearly free, Tony Montana took a big fucking hammer.
-> He went to work and didn't fucking stammer. Don't get high off your own supply.
-> Plus plus '14, Alan Green on the scene. Big Apple know what I mean.
-> It's '97 and Biggie said it clearly: don't get high off your own supply.
-> Plus 11, now we paying dearly. Not very hard with six credit cards.
-> This is '08, where we fucked up there mate. Locked in our fate with the low low rates.
-> Can't pay it back, you know the crack. Printer go brrr making them stacks.
-> Print it with the ink on that paper. Filled up a wheelbarrow sometime later.
-> It's the fiat system. It's insistent on the debt's existence. Don't be resistant, okay.
-> I know this money ain't free. But I do know paper comes from a tree.
-> So don't believe them when they say the coffers run dry.
-> Now for the whopper: for the banks, funds multiplied.
-> A tree makes the paper. The limit's what we make — say it with me now:
-> **we can afford what we can create.**
-> Where's it grow? On a tree. Brrr ain't free.
-> They say there's none for you and me. But the paper grows on a tree.
-> **There is no magic money tree.**
->
-> *(← cut it there)*
-
-Transcription notes: several lines were phonetic best-guesses ("Let's see each
-day, not three", "Plus 11", "Plus plus '14, Alan Green on the scene") — the
-rework above drops the uncertain lines rather than guessing; reconcile against
-the actual Suno lyrics sheet if any are wanted back. What worked about the
-keeper: the flow, and the register — *"I'm sarcastic and then fuck you."*
-
-## Version C — rap-cadence rework (2026-08-14) — CURRENT
-
-> **The current sheet** (Kai + Claude session, 2026-08-14), written after the
-> story pivot: the joke moves from the paper pun to **"how did we pay for the
-> Second World War?"**, and the theme is that money really does come from a
-> tree — a magic one that prints it.
->
-> **Structural idea:** the song is an **argument, not a timeline**. The official
-> denial ends every verse and **corrodes** with each repeat as the evidence
-> piles up (the *Evidently Chickentown* mechanism — the music never has to be
-> funny; the repetition does the satire), detonated by the war question. The
-> Marx/Hayek/Keynes triangle is rendered as **orchard / jungle / garden** —
-> three men reading the same tree — so the triangle never leaves the theme.
-> Biggie is promoted from name-drop to doctrine: *don't get high on your own
-> supply* IS the tree's one rule (print past capacity → hollow fruit).
->
-> **Craft:** written throughout in Version B's rap cadence (2–4 stress units a
-> line, internal rhyme chains, question-answer snaps), timed for ~172. Two
-> load-bearing rhyme families carry the thesis: **-ee** (tree/free/me/BBC) and
-> **-aw** (war/afford/law/poor) — "anything we can actually do, we can afford /
-> and that is how you pay for a war" rhymes because the idea rhymes. The
-> paper-pun outro is retired — which also satisfies the plastic-notes guardrail
-> in [`../research/central-bank-trees.md`](../research/central-bank-trees.md).
-> Verse-1 lines, the '71 petrodollar couplet, the whole '08 block, the VIP/yacht
-> couplets, the bridge, and "say it with me now" are kept (near-)verbatim from
-> Versions A/B.
->
-> **Flags before print:** the Marx slogan is deliberately dodged (open question
-> 3); the '79 book-slam needs verification (open question 4); V4 trim
-> candidates listed in open question 5; V3's "slept / back" is the sheet's one
-> deliberate near-miss rhyme — tighten on request.
+Verse 1 is approved as-is and is the register to match: bouncy, conversational,
+mock-outraged, punchline every couplet. Target **16 bars** — it is currently 10,
+so 6 bars (3 couplets) still to write.
 
 ```lyrics
-[Intro | spoken, cold]
-(I'm afraid there is no magic money tree.)
+[Verse 1 — the wound — 10 of 16 bars]
+They say, ya can't make money from a tree
+let's see, each day, not free, ay
+work and get paid though, earn that dough
+where does it go? nobody knows!
+standards bleeding, land-lords needing
+quantitative easing, grandma freezing
+means of production, means a reduction
+stimulus checks are next get wrecked
+rent seeking? just about eating!
+sorry, did I interrupt your meeting?
 
-[Verse 1]
-They say you can't make money from a tree. Let's see.
-Work and get paid though. Earn that dough. Where does it go? Nobody knows.
-Standards bleeding. Landlords needing quantitative easing. Grandma freezing.
-Means of production. Means of reduction. Stimulus checks. Our necks get wrecked.
-Rent seeking. Just about eating. Sorry — did I interrupt your meeting?
-Nurse does nights on a frozen wage,
-asks the question, calm, centre stage.
-Hand on heart on the BBC:
+[Pre-hook — the crack, "and yet…" — 0 of 8 bars]
 
-There is no magic money tree.
+[Hook — 0 of 8 bars]
 
-[Verse 2]
-Funny. 'Cause riddle me this:
-how'd a broke little island pay for the Blitz?
-No gold in the bank, no coin in the tin.
-Spitfires ain't cheap and the Yanks weren't in.
-Quiet man in the park, sums that won't come right,
-and the tree leans down: mate — you free tonight?
-You don't build houses out of money, son.
-Bricks and hands and steel — well, have we got some?
-Then say it slow, mate, like it's law:
-anything we can actually do, we can afford.
-And that — write it down — is how you pay for a war.
-Skint as we'd ever been, debt through the ceiling —
-built a health service free at the point of healing.
-Eight hundred thousand keys cut fresh for the poor.
-Who paid? Not grandma. Follow the maths:
-the bondholders carried it. Cheers for that.
-All of it grown on a fantasy?
+[Verse 2 — the receipts — 0 of 16 bars]
 
-There is no magic money tree.
+[Verse 3 — the mechanism, two addresses — 0 of 16 bars]
 
-[Verse 3]
-Three men round one tree, and they all think they're right.
-Marx says the orchard's stolen — look at the site:
-fence went up while the workers slept.
-Rip the fences out and take it back.
-Hayek says jungle, and the jungle can't be wrong:
-tallest takes the light — shade's what you get for not being strong.
-Keynes in the middle: gentlemen, please.
-You're barking, the pair of you — and up the wrong trees.
-It's a garden. It grows what we're able to grow.
-Tend it, prune it, mind where the fruit wants to go.
-Thirty years on the garden plan:
-a ward for the sick and a home for the man —
-best we ever had it. Ask your gran.
-Then they look her dead in the eye on TV:
+[Bridge — the law, half-time — 0 of 8 bars]
 
-There is no magic money tree.
-
-[Verse 4]
-Fast-forward: '71. Tricky Dicky sold the gold by the metric ton.
-The deal was very simple: buy oil in green. Propping up the dollar with guns and gasoline.
-'79: same tree, new book,
-slammed on the table — that's all it took.
-"This is what we believe." And believe they did:
-garden went to auction, lot by lot, highest bid.
-'97, Biggie made it plain as day:
-don't get high on your own supply, okay?
-Sound advice from the Notorious don —
-nobody in the Treasury ever put it on.
-This is '08, where we fucked up there mate. Locked in our fate with the low low rates.
-Can't pay it back, you know the crack. Printer go brrr making them stacks.
-Where'd it land? Not your street.
-Straight to asset prices by design. Read the receipt.
-2020: clap for the nurse on the step.
-Four hundred and fifty billion, twelve weeks, no sweat.
-The tree got shook like it's autumn forever —
-wages held. Tree works, whatever the weather.
-Then a door marked VIP swings wide:
-gowns you can't use, and a friend inside.
-Nurse gets one percent for the year of the dead.
-The harvest? Frozen. A yacht instead.
-And she says it again, for you and me:
-
-There is no magic money tree.
-
-[Bridge | quiet, half-time feel]
-My grandad didn't storm a beach for a hedge fund,
-didn't watch his mates go under so the rents could jump.
-They came home to rubble and they built the welfare state —
-no gold in the vault, just the will to create.
-Now the flags are back out and the boots are on the street.
-Starve a man of a future and he'll march to any beat.
-Weimar burned the paper, then they froze the till,
-and a salesman sold them someone to blame. He always will.
-
-[Outro]
-OK. I know this money ain't free.
-But it's grown — always has been — on a tree.
-The Bank of England keeps four in the yard:
-mulberries. Planted in the Blitz. Over a graveyard.
-Google it, go on. I'll wait.
-Then we'll talk about what we can and can't create.
-One rule on the tin, and Biggie wrote the rhyme:
-don't get high on your own supply.
-Ask it for more than the hands can make:
-the fruit comes up hollow — wheelbarrows of fake.
-Ask it for what we can actually do?
-We can afford it. The war's the proof.
-Say it with me now: we can afford what we can create.
-Where's it grow? On a tree. Brrr ain't free.
-They say there's none for you and me.
-
-There is no magic money tree.
-[end — hard cut]
+[Final hook — + (on a tree!) payoff — 0 of 8 bars]
 ```
+
+## Reference sheet — the old full jump-up draft
+
+Kept for parts-mining only. Verse 1 here is superseded by the working sheet
+above; the rest of the words are up for rewrite (Kai, 2026-08-18: "I don't like
+the way that the words work" past verse 1 — the bouncy-rap *style* stays).
+
+```lyrics
+[Intro | spoken | prim, clipped, condescending UK politician | dry, no drums]
+"I'm afraid there is no magic money tree."
+[build | air-horn, breakbeat rolls in, bass loading]
+[Verse 1 | UK comedic rapper | fast double-time | cheeky, animated]
+They say, ya can't make money from a tree
+let's see, each day, not free, ay
+[bouncing, conversational]
+work and get paid though, earn that dough
+where does it go? nobody knows!
+[mock-outrage, faster]
+standards bleeding, land-lords needing
+quantitative easing, grandma freezing
+[punchy, spat out]
+means of production, means a reduction
+stimulus checks are next get wrecked
+[sarcastic, leaning in]
+rent seeking? just about eating!
+sorry, did I interrupt your meeting?
+[Hook | shout-along drop | jump-up bass | gang vocals + air-horn]
+where's it grow? (on a tree!)
+printer go brrr — it ain't free!
+they say there's nowt for you and me...
+but the paper grows on a tree!
+[Verse 2 | history lesson | double-time, swaggering]
+it all began back in seventy one
+tricky dicky sold the gold by the metric tonne
+[storytelling, sly]
+the deal was very simple: "buy oil in green"
+proppin up the dollar with guns and gasoline
+[switch up, filmic]
+then in 83, when shit was nearly free
+Tony Montana took a big fucking hammer
+[land it hard]
+he went to work and didn't fucking stammer
+"Don't get high off your own supply"
+[Verse 3 | keep rolling | playful name-drops]
+plus fourteen, alan green on the scene
+big apple, know what I mean
+[quoting, reverent then cheeky]
+it's ninety seven and Biggie said it clearly
+"Don't get high off your own supply"
+[darker turn, mock-grave]
+plus eleven, now we paying dearly
+NOT very hard with SIX credit cards
+[the crash — spat, bitter-comic]
+this is o'eight, where we fucked up there mate
+locked in our fate with the low low rates
+[Verse 4 | the mechanic | gleeful, conspiratorial]
+can't pay it back? you know the crack
+printer go brrr, making them stacks
+[mimicking the printer, bouncy]
+print it with the ink, on that paper
+filled up a wheelbarrow some time later
+[fast, insistent]
+it's the fiat system, it's insistent
+on the debt's existence, don't be resistant
+[the dumb-genius punchline — slow down, deadpan]
+ok, I know this money ain't free
+but I do know paper comes from a tree
+[Bridge | the turn | drop to half-time | suddenly sincere]
+so don't believe 'em when they say the coffers run dry,
+nowt for the ward but for the banks? funds multiply.
+the tree makes the paper — the limit's what we make:
+say it with me now — we can afford what we can create.
+[Hook | final | biggest drop | gang vocals, air-horn, rewind]
+where's it grow? (on a tree!)
+printer go brrr — it ain't free!
+they say there's nowt for you and me...
+but the paper grows on a tree!
+[Outro | spoken | the prim politician again, now absurd | beat dropping out]
+"...there is no magic money tree."
+[deadpan button | UK rapper]
+(course there is, love — where'd you think the paper comes from?)
+[end]
+```
+
+## Story sketch (Emperor's-New-Clothes frame)
+
+Kept from the original draft. The fable canon lives in
+[`../emperors-new-coin.md`](../emperors-new-coin.md); this is the song's own
+earlier framing of the idea.
+
+- A prosperous kingdom; the king constantly spends state money on new clothes,
+  insisting it's vital state business (taxes foot the bill).
+- He spends so much the kingdom goes broke — so he invents "paper money" (fiat,
+  by analogy).
+- He "borrows", buys more clothes, then has to "repay" — so he tells the now-
+  worried council that the wood used to print the money comes from a magic money
+  tree only he may use, and prints more money to repay the previous money.

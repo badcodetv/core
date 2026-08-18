@@ -482,12 +482,15 @@ right against the misuse of the system.
 
 ## Open questions
 
-1. **Song lyrics — reworked 2026-08-14 (Version C in the song file):**
-   rap-cadence sheet built on the corroding refrain, the "how'd a broke little
-   island pay for the Blitz?" detonator, and the Marx/Hayek/Keynes triangle as
-   orchard/jungle/garden. Remaining: Jack listen, delivery casting (spoken-word
-   register — JCC energy), the Marx-slogan ruling, the '79 book-slam
-   verification, Suno prompt rebuild.
+1. **Song lyrics — reset 2026-08-18 (Kai):** the liquid/spoken-word rework
+   (Versions A/B/C) is deleted; the **jump-up comedy version is the canonical and
+   only song**, and it is a peer artifact — **Kai's ruling: the song does not
+   carry the history, the video does; the two stand on their own two feet.**
+   Structure agreed and recorded in
+   [`songs/magic-money-tree.md`](./songs/magic-money-tree.md): wound → crack
+   (COVID) → receipts → mechanism (the two addresses) → the law (Keynes
+   verbatim). Remaining: write V1's last 6 bars, then the hook, then V2/V3, then
+   the Suno prompt rebuild.
 2. **Script** — next artifact: the full narration + dialogue script derived
    from these beats (a `script.md` in this folder), before any visual work.
 3. **The easter-egg promotions** — [`easter-eggs.md`](./easter-eggs.md)
