@@ -80,6 +80,10 @@ A hundred years later, there's a statue.
     escalation formula. §2j. Plates first, clips after. The aerial is the master:
     the later rungs are re-fires of it with one line swapped, because **sameness
     is the point** in this section.
+  - [`prompts-act3-viral.md`](./prompts-act3-viral.md) — **Act 3**, viral. §3a. The
+    first act with two people in it, which is the hard part: two figures in
+    relative motion interpenetrate and it is not fixable by prompting, so the
+    two-hander is shot as singles and the crowd is stills only.
 
 ## Production tracker
 
