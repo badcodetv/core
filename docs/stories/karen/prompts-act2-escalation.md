@@ -1675,12 +1675,52 @@ supplies the feeling, which is why they end up on her side.
 >   plain prose with no slot labels** — deliberately, because the reference is carrying the set
 >   and the slots were mostly restating it.
 
-**Reference block** — goes first, before the `STYLE LOCK`:
+> ### Round 3 fired 2026-08-18 — **the set is fixed, the shot is not.**
+>
+> **Everything the last two rounds got wrong came back right:** the narrow open-fronted kiosk
+> with its steel upright and peeling stickers, the blouse and cardigan with no coat, the
+> receiver at her ear, the subway entrance and scaffolding, dry pavement, empty street, coins
+> and cup on the shelf. **The keep-list works. Do not touch it.**
+>
+> **Three things did not land, and they are the same failure three times:**
+>
+> | Asked for | Got | Why |
+> | --- | --- | --- |
+> | night | blue hour, bright sky, readable buildings | *"it is now night"* is a noun |
+> | camera two feet away at the mouth of the kiosk | a medium shot from §2j.0's distance | *"close to her"* is not something a model renders |
+> | a face doing nothing, looking past the lens | brows drawn, mouth set, eyeline in the lens | the reference's pose is a strong pose |
+>
+> ### ⚠️ A strong reference hedges its own change-list.
+>
+> **This is the [snow lesson](#2j6s-karen-in-the-box-snow-rung-3--plate) in a new place.** Once
+> the reference is doing the heavy lifting — which is exactly what we spent three rounds
+> arranging — **it also becomes the thing every change is measured against, and it wins the
+> ties.** A one-word change instruction gets met halfway: night becomes dusk, close becomes
+> nearer, empty becomes quieter.
+>
+> **So the change-list needs the same treatment weather needed: magnitude and consequences.**
+> Not *"it is night"* but *"the sky is black, the windows above are dark, the shopfronts are
+> unlit."* And **state framing, not camera position** — *"she fills the frame from the top of
+> her head to her waist"* is renderable; *"the camera is two feet away"* is a fact about a
+> tripod nobody can see.
+>
+> **Round 4 keeps the reference block identical and rewrites only the change-list and the
+> scene.** The scene no longer describes the set at all — the reference has that job now.
+
+**Reference block** — unchanged from round 3, it did its job. Goes first:
 
 ```prompt
 Image 1 is the reference. Keep the same phone kiosk exactly as it is in image 1 — the same narrow open-fronted booth, the same steel upright with the payphone on it, the same peeling sticker marks, the same little shelf, the same armoured handset cord. Keep the same subway entrance behind it, the same green globes on their posts, the same railings and blank sign panel, the same scaffolding. Keep the same woman: the same face, the same dark auburn shoulder-length hair, the same cream blouse, camel cardigan and taupe trousers, the same taupe handbag on her shoulder, and the receiver held to her ear the way she holds it in image 1.
 
-Change three things and nothing else: it is now night, the camera has moved to the open front of the kiosk and is close to her, and the pavement outside is empty.
+Change these four things:
+
+1. It is the middle of the night. The sky is black, every office window in the buildings above is dark, the shopfronts are unlit and shuttered, and the only light on the street comes from the street lights.
+
+2. The shot is much tighter than image 1. She fills the frame from the top of her head down to her waist, and the payphone and the steel upright crowd the right-hand edge of the frame close to the lens and out of focus.
+
+3. She is not looking at the camera. She looks out past it, down the street, at nothing in particular.
+
+4. The pavement is empty. There is nobody else anywhere in the frame.
 ```
 
 ```prompt
@@ -1704,38 +1744,40 @@ Exclusions: no added text, no logos, no watermark, no AI "hyper-sharp HDR" look,
 
 SCENE:
 
-A close three-quarter shot taken from the pavement just outside the open front of the kiosk, about two feet from her, at her eye level, on a 35mm lens at f/2, the frame tilted a few degrees off level. She stands in the kiosk exactly where she stands in image 1, the receiver against her ear, looking out past the camera down the street. The steel upright and the payphone crowd the right of the frame, close to the lens and out of focus, with the armoured cord hanging across the bottom corner. On the shelf beside her hand: two coins, a fold of papers gone soft at the edges, and a paper cup gone cold.
+A tight three-quarter shot on a 35mm lens at f/2, the frame tilted a few degrees off level, taken from the pavement at the open front of the kiosk.
 
-She is doing nothing but waiting. Her fingers have gone loose on the receiver, her mouth is closed, her jaw is loose, her eyebrows are level, and her eyes are open and not following anything. A strand of hair has come down and stuck to her cheek. She is not aware of the camera.
+She has been on hold for hours and it shows in nothing except that she has stopped doing anything. Her free hand rests loose and open on the shelf beside the paper cup. Her mouth is closed, her jaw is loose, her eyebrows are level and still, and her eyes are open and not following anything on the street. A strand of hair has come down and stuck to her cheek. She has no idea she is being photographed.
 
-One light: a street light out on the pavement behind the camera and to the left, raking across the near side of her face and leaving the far side in shadow. The green globe on the subway post behind her is one small point of colour, too weak to light anything, and the block beyond falls away into darkness. The pavement is dry, the air is clear, and nobody is on the street.
+One light: a street light out on the pavement behind the camera and to the left, raking across the near side of her face and leaving the far side of it in shadow. The green globe on the subway post behind her is one small point of colour, too weak to light anything, and everything past it falls away into black.
 
-A candid documentary photograph, unposed, available light only, unretouched, natural skin texture with visible pores and shine. Keep every sign panel, notice, hoarding, sticker and the papers on the shelf free of readable lettering, and no border or frame edge around the image.
+A candid documentary photograph, unposed, available light only, unretouched, natural skin texture with visible pores and shine. The papers on the shelf are blank, and every sign panel, notice, hoarding and sticker stays free of readable lettering. No border or frame edge around the image.
 
 Thanks.
 ```
 
-**Slots:** two references only — **image 1 is §2j.0, and `@Karen` is the Character.**
+**Slots:** two references only — **image 1 is §2j.0, and `@Karen` is the Character.** Do **not**
+attach round 3's image as a second reference; it carries the dusk and the wide framing, which
+are the two things being changed.
 
 **What to watch:**
 
-1. **Is the camera actually inside the box?** If it has stepped back onto the pavement it has
-   made the same shot as §2j.0 and the whole point is gone. The tells are the **corner post
-   down the near edge** and the **roof panel across the top** — no roof means it is outside.
-2. **Is she acting?** Welling eyes, a wobbling lip, a bravely-lifted chin: **reject the
-   candidate.** The line to add if it keeps happening is *"her face is completely relaxed and
-   she looks mildly bored."* Bored reads as endurance; sad reads as advertising.
-3. **Is it the same booth?** The round-2 failure. Tells: **open front, one person wide, a
-   steel upright carrying the payphone.** A ceiling, three walls or room to stand back means it
-   has rebuilt the set again — and the next lever is **cutting more**, not adding.
-4. **Same clothes, no coat?** A puffer or a scarf means the wardrobe drifted again.
-5. **Is she holding the receiver?** It is the whole shot.
-6. **Any snow?** There should be none. If it returns, the line to strengthen is *"the pavement
-   is dry"* → *"it is a mild dry night, with no snow and no rain anywhere in the frame."*
-4. **Is it still recognisably Midtown at night**, not a generic wet alley? The subway rails,
-   the green globe and the scaffolding are the three nouns doing that work.
-5. **Two coins, not a stack.** The clearest single piece of evidence that this is month nine
-   and not day one.
+1. **Is it actually dark?** The round-3 failure. **Black sky, dark windows, unlit shopfronts.**
+   If it hedges to dusk again, the lever is a consequence it cannot fake — *"the only things
+   visible down the block are the street lights themselves."*
+2. **Is it tight?** Top of her head to her waist. A medium shot means the framing instruction
+   lost to the reference a second time, and the next move is to cut the SCENE block in half.
+3. **Is she looking past the lens, with a face doing nothing?** Round 3 gave the *"speak to
+   your manager"* face — which is Act 2's **opening**, not its exit. If it persists, add *"she
+   looks tired and slightly bored."* Bored reads as endurance; anything sharper is a
+   performance, and welling eyes or a bravely-lifted chin is the slop version — reject those
+   outright.
+4. **Still the same booth, clothes and receiver?** Rounds 2 and 3's fixes. Open front, one
+   person wide, steel upright with the payphone; blouse and cardigan, no coat; receiver at her
+   ear. All three held in round 3 and the keep-list is unchanged, so a regression here means
+   the longer change-list has crowded the keep-list — shorten the change-list, not the keeps.
+5. **Any snow or rain?** There should be none.
+6. **Two coins, not a stack**, and blank papers. The coins are the clearest evidence this is
+   month nine; the papers grew handwriting in round 3.
 
 > ### The clip that follows (§2j.11v) is written after this is accepted
 >

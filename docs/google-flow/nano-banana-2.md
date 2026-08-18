@@ -487,6 +487,29 @@ accepted.** Re-read the picture and describe what is actually in it.
   models, not folklore. When a reference is doing the heavy lifting, **cut the scene down and
   drop the slot labels**; most of what the slots were carrying is already in the picture.
 
+### 9. ⚠️ A strong reference hedges its own change-list `[observed]`
+
+**The cost of the fixes above, and it arrives the moment they start working.** Once a
+reference is genuinely driving the image, **it also becomes the baseline every change is
+measured against, and it wins the ties.** Karen §2j.11 round 3 (2026-08-18) held the set, the
+wardrobe and the identity perfectly and then met all three of its changes halfway: *"it is now
+night"* came back as blue hour, *"the camera is close to her"* came back at the reference's own
+distance, and the reference's alert pose survived an instruction to look away.
+
+**Change instructions need magnitude and consequences, exactly like weather nouns.** This is
+[the snow lesson](omni-flash.md) reappearing on the image side:
+
+| Hedged | Renders |
+| --- | --- |
+| *"it is now night"* | *"the sky is black, every window above is dark, the shopfronts are unlit and shuttered, the only light is the street lights"* |
+| *"the camera is close to her"* | *"she fills the frame from the top of her head to her waist"* |
+| *"she is not looking at the camera"* | *"she looks out past it, down the street, at nothing in particular"* |
+
+**And state framing, not camera position.** *"Two feet from her"* is a fact about a tripod
+nobody can see; **what fills the frame is the only thing the model can actually draw.** Camera
+*position* language works when it changes the visible geometry (low, from behind, from the
+doorway); camera *distance* language should always be converted to a crop.
+
 ### Sources for this section
 
 - [Google — prompting tips for Nano Banana Pro](https://blog.google/products/gemini/prompting-tips-nano-banana-pro/) `[vendor]`
