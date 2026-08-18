@@ -568,6 +568,101 @@ Thanks.
 5. **Any interface at all?** A timer, a red dot, a battery icon — reject. Text is the standing
    rule and the most common policy block.
 
+## 3a.3 The train — plate
+
+**Cast:** none — **no Characters exist for these two, and none should.** **Attached:** nothing.
+**Engine:** Nano Banana Pro, 16:9, 3 candidates. **Register:** super-8 `STYLE LOCK`.
+
+> ### The joke of the act: the tune went stratospheric and she never left the box.
+>
+> [`story.md`](./story.md#32-the-train--keep-as-is-play-the-real-tune): two riders listening to
+> **our actual song, in-world.** *"You heard this Karen tune? It's gone viral."* — *"She's still
+> there. The phone-box lady. Still. There."*
+>
+> **The whole act turns on this being ordinary.** Nobody is impressed, nobody is reporting it;
+> two people on a train are just passing on a thing they heard. **The idea travelled because it
+> became a song, not a speech** — which is BadCode's thesis, and this is the only frame that
+> states it.
+
+> ### ⚠️ Two rulings this shot needs
+>
+> **1. No Flow Characters for these two.** They appear here and again in
+> [§3a.4](#what-this-act-still-owes) as the first two people in the crowd, and **canon says their
+> role ends there.** Two Characters, two reference sets and two more likenesses to police is a
+> lot of machinery for four seconds — so instead, **shoot §3a.4 wide enough that their faces do
+> not have to match.** Cheaper, and the crowd wants to be wide anyway.
+>
+> **2. ⚠️ *"Mate"* is a Britishism and it is in the canon line.** Nobody on the A train says
+> *"Mate. She's still there."* The
+> [standing audit](./prompts-act2-escalation.md#2j7-rung-2-interior--the-borough-office--plate)
+> that caught *"car park"* and buff folders catches this too. **Kai's call** — the American
+> versions are *"Bro. She's still there."* or *"Dude. She's still there."* — but it should be
+> fixed in `story.md` rather than silently in a prompt.
+
+**The phone screen is the key light**, and that is the choice that saves the shot. Real subway
+lighting is flat overhead fluorescent, which is
+[exactly the light that erases skin texture](../../google-flow/nano-banana-2.md#the-anti-slop-toolkit-community)
+and made §2j.5's receptionist look like stock photography. **Lighting their faces from below off
+the screen they are both looking at is both motivated and directional** — one named source, doing
+story work.
+
+**Sharing a single pair of wired earbuds** is the clearest possible picture of *two people
+hearing the same thing*, and wired is a deliberate period-correct nuisance: it forces them to sit
+close.
+
+**⚠️ A subway car is the most text-dense location in the film** — maps, ads, door notices, route
+strips. Every one gets blanked, and the phone screen with it.
+
+```prompt
+STYLE LOCK (keep identical every time):
+
+Capture look only (NOT time period): cinestyle 800+, grainy, super 8, vintage, polaroid, vibrant colours — apply only as film-emulation texture/color, while the depicted world remains present-day.
+
+Present-day constraint: modern clothing, modern vehicles, modern architecture, contemporary street design and signage; no retro/period props or era-specific styling.
+
+Texture: visible film grain, slight gate-weave/micro-jitter feel, occasional dust/specks, gentle halation around bright highlights.
+
+Color: punchy, vibrant palette with warm skin tones; mild film-like color cast; deep but soft blacks (not HDR).
+
+Optics: slightly soft edges, mild vignetting, shallow-to-moderate depth of field; highlights bloom subtly (not foggy).
+
+Exposure: preserve highlight detail; avoid crushed shadows; keep the main subject readable.
+
+Output: high detail, natural imperfections, candid snapshot energy.
+
+Exclusions: no added text, no logos, no watermark, no AI "hyper-sharp HDR" look, no historical setting/era shift.
+
+SCENE:
+
+Subject: two men in their twenties sitting side by side on a subway bench, sharing a single pair of wired earbuds, listening to something on one of their phones.
+
+Composition: 16:9 on a 40mm lens at f/2.8, from the bench seat directly opposite them at seated eye level. They fill the middle of the frame with the car window behind them; a vertical stainless steel grab pole crosses the near left of the frame close to the lens and out of focus; the frame is slightly off level.
+
+Action: the one holding the phone is turned towards the other and is mid-sentence; the other is looking down at the screen with his eyebrows raised. Neither of them is aware of the camera.
+
+Location: the inside of a New York subway car — moulded plastic bench seats, brushed stainless steel panelling, vertical grab poles and overhead rails, a scuffed floor, a strip light along the ceiling, and the dark tunnel wall going past the window behind them. The car is otherwise almost empty.
+
+Light: the phone screen lights both their faces from below, cold and slightly blue. The ceiling strip light is weaker and flat above them. The window behind them is dark with tunnel lights smearing past.
+
+Style: a still from a 35mm independent film — two strangers, overheard. Available light only, unretouched, natural skin texture with visible pores and shine.
+
+Constraints: keep every sign, route map, notice, advertisement, sticker and the phone screen free of readable lettering; no border or frame edge around the image.
+```
+
+**What to watch:**
+
+1. **Is the phone lighting their faces?** The whole reason this is not a flat fluorescent
+   nothing-shot. If their faces are lit from above, the light instruction lost and the frame will
+   look like stock photography.
+2. **Are they sharing one set of earbuds?** One wire, two ears. It is the single image that says
+   *they are both hearing this.*
+3. **Is anything readable?** A subway car is the most text-dense place in the film. Maps and ads
+   are where it will creep back.
+4. **Is the car nearly empty?** More riders means more faces to hold and, for the clip, more
+   figures in relative motion.
+5. **Do they look ordinary?** Nobody is performing amazement. Two people passing on something
+   they heard.
+
 ## What this act still owes
 
 > ### ⚠️ Gap found 2026-08-18 (Kai): the cameo was built middle-first.
@@ -603,6 +698,6 @@ Thanks.
 | **3a.2b** | Through the side panel — plate | ✅ written — the upright cuts her face in two |
 | **3a.2c** | The phone-screen version — plate | ✅ written — **`STYLE LOCK` off**, the only plate in the film without it |
 | 3a.2v | …— clip | **only she moves.** This is the *"I've got ALL DAY to complain"* shot |
-| 3a.3 | The train — plate | two riders, a phone between them, the tune playing in-world |
+| **3a.3** | The train — plate | ✅ written — phone-screen key light, one set of earbuds between them |
 | 3a.4 | The crowd — the drone trick | **stills only, cut between.** Altitude up/down, the crowd bigger each time. Never animated. |
 | 3a.5 | News vans | the end of the act; the world has arrived and she is still on hold |
