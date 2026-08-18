@@ -148,12 +148,17 @@ its own title instead of repeating it from bar one.
 the very end, when the words are settled. One line = one bar at 172 (double-time
 16th flow, 8–11 syllables a line).
 
-Verse 1 is approved as-is and is the register to match: bouncy, conversational,
-mock-outraged, punchline every couplet. Target **16 bars** — it is currently 10,
-so 6 bars (3 couplets) still to write.
+**Status 2026-08-18 — full first pass (Claude), written to V1's register:**
+internal rhyme inside the bar, the wonk-term-as-punchline move, the
+question-bang, the mock-polite sneer. **Only V1's original ten bars are
+approved** — in V1 below they are bars 1–8 plus the final couplet; bars 9–14
+are draft. Every other section is draft top to bottom. Kai's red pen next.
 
 ```lyrics
-[Verse 1 — the wound — 10 of 16 bars]
+[Intro — the politician, spoken, dry]
+"I'm afraid there is no magic money tree."
+
+[Verse 1 — the wound — 16]
 They say, ya can't make money from a tree
 let's see, each day, not free, ay
 work and get paid though, earn that dough
@@ -162,21 +167,109 @@ standards bleeding, land-lords needing
 quantitative easing, grandma freezing
 means of production, means a reduction
 stimulus checks are next get wrecked
+full-time graft, still short on the rent
+"cost of living crisis" — where's the living went?
+food banks up in the sixth-richest state
+nurses in the queue — mustn't grumble, mate
+trolley in a corridor, four-year list
+"record investment!" — you get the gist
 rent seeking? just about eating!
 sorry, did I interrupt your meeting?
 
-[Pre-hook — the crack, "and yet…" — 0 of 8 bars]
+[Pre-hook — the crack — 8]
+and yet — hang about — one thing I've seen:
+ten years of nowt, twenty-ten to nineteen
+belts tight, wards shut, "nothing spare" —
+then the world stops dead: money from thin air!
+four hundred fifty billion in a season
+the whole lost decade, matched — that's the treason
+half-price dinners on the chancellor's card
+ten years of "can't afford it" — weren't that hard!
 
-[Hook — 0 of 8 bars]
+[Hook — 8]
+what can we afford? (anything we can do!)
+says who? (says Keynes! forty-two!)
+short of money? (you can't be, mate!)
+short of bricks? (well — that's the debate!)
+one pound, two addresses, pick:
+wages make it flow — assets make it stick
+stick it in a portfolio, up goes the rent
+flow it round the houses — money well spent!
 
-[Verse 2 — the receipts — 0 of 16 bars]
+[Verse 2 — the receipts — 16]
+sixteen ninety-four — quick history, chief:
+skint little island, war on the brief
+can't afford the fight? course ya can — watch:
+grew a whole bank in a fortnight, top notch!
+three hundred years on, they've "forgotten" the trick…
+twenty seventeen, Question Time — click:
+a nurse, twenty-six years, payslip flat since oh-nine,
+asks for a rise — and here's the party line:
+"there is no magic money tree that we can SHAKE"
+twenty-four days later? — billion for Belfast! shake, shake!
+lockdown lands: the VIP lane's humming
+no queue if ya know 'em — see the gowns coming:
+twenty-five million, not one fit to use
+hundred and twenty-two mil — small change, old news
+nurses got a clap, then one percent…
+and a yacht in the Med — THAT'S where it went!
 
-[Verse 3 — the mechanism, two addresses — 0 of 16 bars]
+[Hook — repeat]
 
-[Bridge — the law, half-time — 0 of 8 bars]
+[Verse 3 — the mechanism — 16]
+so here's the mechanism — free of charge:
+every printed pound needs a place to park
+send it to the ward and watch it flow:
+payslip, caff, till — round the town it goes
+everybody touches it, everybody eats
+money doing laps — that's a high street that heats
+now park it in a portfolio — nice —
+nothing new gets built, it just triples the price
+same flat, same mould, same broken door —
+"asset appreciation!" — rent's up more
+don't take my word — take the Bank's own notes:
+"hot potato," they called it — direct quote!
+pump the assets up — that's the design —
+your flat's still cold but the chart looks fine
+one banknote, two addresses — do the maths:
+her payslip's froze — the yacht's having a bath
 
-[Final hook — + (on a tree!) payoff — 0 of 8 bars]
+[Bridge — half-time, drums thin, played straight]
+nineteen forty-two. the city's on fire.
+a broke little island, up to its neck.
+and a calm voice comes over the wireless:
+"you don't build houses with money.
+you build them with bricks and mortar, steel and cement."
+anything we can actually do, we can afford.
+it was true in the Blitz. it's true right now.
+we can afford what we can create.
+
+[Final hook — the payoff]
+what can we afford? (anything we can do!)
+says who? (says Keynes! forty-two!)
+so where's it grow? (on a tree!)
+printer go brrr — it ain't free!
+they say there's nowt for you and me…
+but the paper grows on a tree!
+where's it GROW? (ON A TREE!)
+where's it GROW? (ON A TREE!)
+
+[Outro — the politician, beat gone]
+"…there is no magic money tree."
+(course there is, love — where'd you think the paper comes from?)
 ```
+
+### Spares (alternates, not in the sheet)
+
+- **V1 alt** (if "rent" landing twice in one verse grates — bar 9 + the closer):
+  *full-time graft and it still won't stretch / "cost of living crisis" — who
+  writes this sketch?*
+- **V1 spare:** *zero-hour contract, twenty-four-hour stress / app says "no
+  shifts today" — thanks for your interest!*
+- **V1 spare:** *heating or eating — lovely choice / "difficult decisions" in a
+  Westminster voice*
+- **Pre-hook alt closer:** *skint for a decade — then, overnight, / the tree in
+  full fruit — funny old sight*
 
 ## Reference sheet — the old full jump-up draft
 
