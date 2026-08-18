@@ -206,17 +206,30 @@ light is flat mid-morning rather than golden anything.
 > **The Location sentence in §2j.0 is now the kiosk's canon description in prose**, since
 > §2j.0 was generated with no reference of its own.
 >
-> ### The `REFERENCE` block for the kiosk re-fires
+> ### The re-fire recipe — ⚠️ **rewritten 2026-08-18**
 >
-> Paste between the `STYLE LOCK` and the existing `SCENE:` block. **It differs from the old
-> one in one specific way: the new reference has Karen in it**, so it must refuse her pose
-> and framing explicitly or the same composition comes back three times.
+> **The block that used to live here was a list of refusals** — *"not its camera angle, not its
+> framing, not the woman's pose."* That shape cost three rounds on
+> [§2j.11](./prompts-act2-escalation.md#2j11-she-is-alone-in-it--plate) before it was diagnosed.
+> Three findings from that fight, all recorded in
+> [`nano-banana-2.md`](../../google-flow/nano-banana-2.md#fourth-pass--making-it-obey-a-reference-vendor-community-2026-08-18):
 >
-> ```prompt
-> REFERENCE:
+> 1. **Never write a negative.** Say *"keep it exactly as it is"* and then list what changes.
+>    A refusal puts the refused thing into the prompt.
+> 2. **Never re-describe the set.** Enumerating the kiosk's parts is an instruction to *draw*
+>    them, not to copy them, and it draws them slightly differently every time — which is
+>    exactly the drift these re-fires exist to remove. **Point at the picture.**
+> 3. **With a reference attached, the `STYLE LOCK` becomes a pointer.** §2j.0 was generated in
+>    the lock, so the reference *is* the lock; six words beat two hundred. **Unattached plates
+>    still paste it verbatim.**
 >
-> Use the attached image as the design reference for the phone kiosk and the corner it stands on — the kiosk's shape, proportions, height, framing members, glazing, panelling, colour, wear and rust, its payphone unit, its coiled handset cord and its shelf, and the subway entrance behind it with its steel railings, stairs and green glass globes. Take those objects from the image and nothing else: not its camera angle, not its framing, not its lighting, not its weather, and not the woman's position or pose within it. Rebuild that same kiosk and that same corner into the new scene described below, seen from the new angle described below. The finished frame carries the film look described in the style lock above, not the look of the attached photograph.
-> ```
+> **So the recipe is now a two-part sentence, not a block:** *"Image 1 is the reference. Keep it
+> exactly as it is — … Redesign nothing."* followed by a numbered list of **only** what differs,
+> each item written with **magnitude and consequences** (a strong reference meets a one-word
+> change halfway) and **framing rather than camera distance** (*"she is no more than a third of
+> the frame's height"*, never *"a wide shot from across the street"* alone).
+>
+> **§2h.6 and §2h.7 get written the same way when they come up.**
 
 > ### ⚠️ This plate is a design decision, not just a shot
 >
@@ -239,45 +252,43 @@ light is flat mid-morning rather than golden anything.
 > - **Legible signage on it?** Real payphone branding will come through, against the
 >   standing no-readable-text rule. Crop, or expect to fight it.
 
-**The `REFERENCE` block is the load-bearing part.** Nano Banana's documented shape is
-`[Reference images] + [Relationship instruction] + [New scenario]`, and the middle term
-is what stops the model treating the photo as the shot. It also has to say the style
-does *not* come from the reference — an attached image anchors identity and content,
-and the model will not assume your style unless the prompt states it.
+**Cast:** `@Karen` — the Character **and** the accepted **§2j.0** still as image 1. Two
+references, nothing else. **Engine:** Nano Banana Pro, 16:9, 3 candidates.
+
+**The change-list is short because almost nothing changes.** §2j.0 is the same corner, the same
+woman, the same clothes and the same flat overcast mid-morning. **This shot is the same picture
+from further away, one moment earlier** — before she has picked up the phone. That is the whole
+delta, and keeping it that small is the point of re-firing against a canon still.
 
 ```prompt
-REFERENCE:
+Image 1 is the reference. Keep it exactly as it is — the same kiosk, the same subway entrance and corner behind it, the same woman, the same clothes, the same flat overcast mid-morning light, and the same grainy super-8 film look. Redesign nothing.
 
-Use the attached image as the design reference for the phone kiosk only — its shape, proportions, height, panelling, glazing, colour and construction. Take the kiosk itself from that image and nothing else: not its camera angle, not its lighting, not its weather, not its surroundings, and not any people in it. Rebuild that same kiosk into the new scene described below, seen from the new angle described below. The finished frame carries the film look described in the style lock above, not the look of the attached photograph.
+Change three things:
 
-SCENE:
+1. Much wider framing. She is a small figure no more than a third of the height of the frame, well left of centre, and the block above her rises out of the top of the frame.
 
-Subject: a woman in yesterday's clothes stepping into that scuffed street phone kiosk on a Midtown Manhattan corner.
+2. She is arriving, not calling. She is half inside the kiosk, caught mid-stride with one hand on the frame and her back three-quarters to the camera, and she is not holding the receiver yet.
 
-Composition: 16:9 wide, from across the street at eye level, the figure small and well left of centre with the block rising out of the top of the frame; a scaffolding leg and a mesh bin cross the right foreground out of focus; the frame is very slightly tilted.
+3. A scaffolding leg and a mesh litter bin cross the right-hand foreground close to the lens and out of focus.
 
-Action: already half inside the kiosk with one hand on the frame and her back three-quarters to camera, mid-stride rather than posed.
-
-Location: a Midtown side street on an ordinary weekday mid-morning — pavement scaffolding with plywood hoarding, a mesh litter bin, a fire hydrant, steam lifting from a vent grate, delivery crates stacked against a shutter, two indifferent pedestrians passing without looking at her.
-
-Light: flat overcast mid-morning daylight from a white sky, no direct sun; the kiosk interior a shade darker than the street.
-
-Style: a still from a 35mm independent film — an ordinary street, an unremarkable morning. Available light only, unretouched.
-
-Constraints: cream blouse untucked, camel cardigan slipped off one shoulder, tailored trousers, no coat, structured leather handbag; keep every sign, hoarding notice, plate, shopfront and kiosk marking free of readable lettering.
+Two pedestrians pass along the pavement without looking at her. No readable lettering anywhere, and no border around the image.
 
 Thanks.
 ```
 
 **What to watch, beyond the postcard:**
 
-- **Did it import the photograph's light?** The `REFERENCE` block says take the kiosk
-  and not the lighting, but a reference drags its own look in unless stopped. Sunny, or
-  graded like your source photo, means that instruction did not land — sharpen it
-  rather than rewriting the prompt.
-- **Same kiosk from a new angle, or the same photo with a woman added?** The ask is a
-  rebuild. If the composition has collapsed toward the reference's framing, the
-  relationship instruction needs strengthening.
+- **Is it the same kiosk, part for part?** The entire reason for the re-fire. Rust, peeled
+  adhesive, the payphone unit, the coiled cord, the green globes on the subway posts. Any
+  redesign and Act 1 still does not match Act 2.
+- **Did the framing actually widen?** A strong reference
+  [meets its change-list halfway](./prompts-act2-escalation.md#2j11-she-is-alone-in-it--plate) —
+  §2j.11 asked for night and got dusk, asked for closer and stayed put. If she comes back the
+  same size as in image 1, the lever is a consequence it cannot fake: *"the whole kiosk and
+  three floors of the building above it fit in the frame."*
+- **Is she mid-stride, without the receiver?** The moment-earlier beat is the only thing
+  distinguishing this shot from §2j.0. A woman on the phone here is just §2j.0 from further
+  back.
 - **Is she too small to read?** She is deliberately minor in frame and the binding has
   little to work with. If she is unreadable, tighten the wide rather than enlarging her
   within it — §2h.6 is the close-up that confirms who it is, so this shot does not have
