@@ -450,6 +450,43 @@ Two of these are new and both bear on night exteriors:
 - **Prompt the capture, not the beauty** — *candid, documentary, unposed, imperfect
   composition, lived-in, realistic skin texture*. Already the §1 `STYLE LOCK`'s job for Karen.
 
+### 6. ⚠️ If the camera cannot physically stand there, the model rebuilds the set `[observed]`
+
+**The strongest reference-drift cause found so far, and it does not look like a reference
+problem.** Karen §2j.11 round 2 (2026-08-18) asked for a camera *"inside the kiosk, in the
+corner beside her"* on a reference showing an **open-fronted booth one person wide.** The shot
+is physically impossible in that booth, so Nano Banana **enlarged the booth** — three walls, a
+ceiling, room to stand back — and once the room was bigger, the wardrobe and the weather went
+too.
+
+**Check the requested camera position against the physical set before writing it.** A position
+a human could not occupy is an instruction to rebuild the world, and it will be obeyed at the
+reference's expense. The fix is nearly always a legal position a foot or two away.
+
+### 7. ⚠️ Write the keep-list from the accepted still, not from the prose that made it
+
+Same shot, second cause: the keep-list said *"glazed on three sides, a hinged door"*, carried
+forward from the prompt that **generated** the reference. The generated image has neither.
+**Picture and words disagreed and the words won** — which is the same lesson as §2 above, seen
+from the other side.
+
+**Any canon-prose description of a set is superseded the moment a still of that set is
+accepted.** Re-read the picture and describe what is actually in it.
+
+### 8. Small rules that fell out of the same failure
+
+- **Do not change hair and wardrobe in one pass** — together they drift more than either
+  alone — and put *"keep the same face, pose and background"* **before** any clothing
+  description. Better still, **add no garment nouns at all**: one new coat invited a whole new
+  outfit.
+- **State the weather even when there isn't any.** Night + New York + a coat produced snow that
+  nothing had asked for. *"The pavement is dry and the air is clear."*
+- **Whatever the shot is *about* goes in the keep-list**, not mid-paragraph in Action. A woman
+  on hold who is not holding the phone is a lost frame.
+- **Prompt length is negatively correlated with adherence** — measured across ten text-to-image
+  models, not folklore. When a reference is doing the heavy lifting, **cut the scene down and
+  drop the slot labels**; most of what the slots were carrying is already in the picture.
+
 ### Sources for this section
 
 - [Google — prompting tips for Nano Banana Pro](https://blog.google/products/gemini/prompting-tips-nano-banana-pro/) `[vendor]`
@@ -457,6 +494,8 @@ Two of these are new and both bear on night exteriors:
 - [Nano Banana Pro reference images: setup and drift fixes](https://www.aifreeapi.com/en/posts/nano-banana-pro-reference-images) `[community]`
 - [Nano Banana Pro camera control guide](https://techyheaven.com/nano-banana-pro-camera-control/) `[community]`
 - [How to make AI images look real (2026)](https://imagera.ai/blog/make-ai-images-look-real-2026) `[community]`
+- [DetailMaster — can your text-to-image model handle long prompts?](https://arxiv.org/pdf/2505.16915) `[research]` — the length/adherence correlation
+- [Consistent style in Nano Banana image edits](https://sider.ai/blog/ai-tools/how-to-write-prompts-that-produce-consistent-style-in-nano-banana-image-edits) `[community]` — hair-and-wardrobe drift, keep-before-change ordering
 
 ## Notes for BadCode `[untested]`
 
