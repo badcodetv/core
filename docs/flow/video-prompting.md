@@ -7,6 +7,32 @@ Text→video, image→video, frames, audio and dialogue. Motion craft for
 
 `[Cinematography] + [Subject] + [Action] + [Context] + [Style & Ambiance]`
 
+**That ordering is ours, not Google's** — corrected 2026-08-18. Google publishes a *list* of
+components with no mandated sequence. Its own worked examples do tend to lead with the shot
+(*"Close up shot (composition) of melting icicles (subject) on a frozen rock wall (context)
+with cool blue tones (ambiance), zoomed in (camera motion)"*), which is why we front-load, but
+don't cite Google for the order.
+
+**The official component list** — the video-generation prompt guide's "Anatomy of a prompt",
+in its own order:
+
+| # | Component | Google's gloss |
+| --- | --- | --- |
+| 1 | **Subject** | the "who" or "what" the action revolves around — "specificity helps avoid generic outputs" |
+| 2 | **Action** | the verb: movements, interactions, subtle expressions, transformations |
+| 3 | **Scene or context** | the where and when — location, time of day, weather, period, atmospheric detail |
+| 4 | **Camera angles** | viewpoint (see [`camera-vocabulary.md`](./camera-vocabulary.md)) |
+| 5 | **Camera movements** | the move, listed separately from the angle |
+| 6 | **Lens and optical effects** | focal length, depth of field, flare, rack focus |
+| 7 | **Visual style & aesthetics** | four sub-parts: lighting · tone/mood · artistic style · ambiance |
+| 8 | **Temporal elements** | pacing, evolution within the clip, rhythm |
+| 9 | **Audio** | "we recommend that you use separate sentences to describe the audio" |
+| 10 | **Cinematic terms** | editing-grammar words: match cut, jump cut, montage, split diopter |
+
+"You don't need to use all elements in every prompt" — the list is a palette, not a checklist.
+Note that **camera angle and camera movement are two separate components**: Google splits them,
+and so should the prompt (§11.3).
+
 Not every element every time — know them so you can add them deliberately. The formula
 **constrains the model's improvisation**; it is not a requirement. A one-line prompt is
 a legitimate opening move precisely because it shows you what Veo invents by default,
@@ -123,7 +149,60 @@ Format: `[MM:SS-MM:SS] <shot description>. SFX: … Emotion: …`
 Use this for reveal → reaction → detail → pull-back inside 8 seconds. Use clip-chaining
 ([`consistency.md`](./consistency.md) §7) for continuity *across* 8-second windows.
 
+## 5b. Temporal elements and editing grammar
+
+Two officially-listed components we had never written down. Both are cheap and both do work
+inside an 8-second clip.
+
+**Temporal elements — how time flows in the shot.**
+
+| Lever | Terms Google lists |
+| --- | --- |
+| Pacing | `slow-motion` · `fast-paced action` · `time-lapse` |
+| Evolution (kept subtle for short clips) | "a flower bud slowly unfurling" · "a candle burning down slightly" · "dawn breaking, the sky gradually lightening" |
+| Rhythm | `pulsating light` · `rhythmic movement` |
+
+> **Official (evolution):** "A close-up of a single red rose bud, its petals tightly closed.
+> The camera remains static as the flower slowly and gracefully unfurls over the course of the
+> shot, revealing its vibrant inner layers. The evolution is subtle, showing a clear but
+> gradual change"
+
+Note what that example does: it **states the camera is static and gives the subject the
+motion**. That is §3's rule arriving from the other direction.
+
+**Cinematic terms — editing grammar inside one generation.** Google lists `match cut`,
+`jump cut`, `establishing shot sequence`, `montage`, `split diopter effect`.
+
+> **Official (jump cut):** "A person sitting in the same position but wearing different
+> outfits, with sharp jump cuts between each outfit change. The background should stay static
+> and the person should reappear instantly in the new outfit, creating a fast-paced, rhythmic
+> jump cut effect. The lighting and framing should remain consistent to emphasize the sudden
+> changes"
+
+**BadCode read.** These matter more than they look, because our constraint is a cut every 8
+seconds. A `match cut` asked for *inside* one generation gives you two shots for one credit
+spend, and an `establishing shot sequence` can carry a location change that would otherwise
+cost a whole extra clip. Untested by us — flagged as an opportunity, not a proven technique.
+
 ## 6. Audio
+
+🔴 **Veo 3.1 audio is ALWAYS ON and cannot be turned off.** Google's model-feature table lists
+audio as "✔️ Always on" for Veo 3.1, 3.1 Fast and 3.1 Lite alike — there is no silent mode and
+no toggle in Flow. Verified against our own footage on 2026-08-18: every one of the nine Flow
+clips in the GPOM scene-0 folder carries an AAC track; only the ffmpeg-rendered ones don't.
+
+**So for BadCode, where the track comes from Suno: strip it in post, don't fight it in the
+prompt.**
+
+```bash
+ffmpeg -i clip.mp4 -c:v copy -an clip-silent.mp4
+```
+
+Do still write one short audio line (below) — not to *get* audio, but because unspecified
+audio is where Veo hallucinates laughter, studio-audience noise and stray dialogue, and a
+generation can be **killed outright by an audio failure** (see
+[`failure-modes.md`](./failure-modes.md) B0). Cheap insurance on a track you're about to
+delete.
 
 **Prompt audio as its own scene layer** — labelled clauses placed after the visual
 description:
@@ -153,11 +232,17 @@ Rules:
 
 ## 7. Dialogue — the resolved syntax
 
-Google contradicts itself here. The Cloud Blog Veo 3.1 guide writes `A woman says, "We
-have to leave now."`; the Vertex "Best practices for Veo" page says the opposite —
-*"To prevent the model from rendering text in the video, use a colon (:) after the
-speaker's action to denote speech and avoid using quotation marks."* Community consensus
-sides with the colon.
+Google still contradicts itself, and both sides were re-checked at source on 2026-08-18:
+
+| Page | What it does |
+| --- | --- |
+| **Video generation prompt guide** (Cloud) | **colon** — *"the man in the red hat says: Where is the rabbit?"*, and again in its worked example: *"The seasoned detective says: Your story has holes."* |
+| **Gemini API Veo guide** (ai.google.dev) | **quotes** — *"Dialogue: Use quotes for specific speech."* |
+
+Its older Vertex best-practices page states the reason for the colon outright: *"To prevent
+the model from rendering text in the video, use a colon (:) after the speaker's action to
+denote speech and avoid using quotation marks."* Two of the three primary pages point at the
+colon, and only the colon page gives a mechanism. We keep the colon.
 
 **Default form:**
 
@@ -198,6 +283,19 @@ Other dialogue rules:
 | Vertex API `negativePrompt` | Bare nouns. **Never** "no"/"don't"/instructive language | `wall, frame` · `people, animals` · `overhead lighting, bright colors` |
 | Flow's negative field, where exposed | Short comma list, 3–7 items | `subtitles, captions, blur, shaky camera, distorted hands` |
 | Inside the main prompt | Positive description of the end state | "a desolate landscape with no buildings or roads" · "low angle, ceiling out of frame" |
+
+> **Official (the negative-prompt field, verbatim):** *"Not recommended: using instructive
+> language or words such as 'no' or 'don't'. For example, avoid prompts such as 'no walls' or
+> 'don't show walls'. Recommended: Describe what you don't want to see. For example, 'wall,
+> frame'."* Its worked pair generates an autumn-oak animation, then re-generates it with the
+> negative prompt `urban background, man-made structures, dark, stormy, or threatening
+> atmosphere`.
+
+⚠️ **Flow's compose bar exposes no negative-prompt field.** The bare-noun syntax above is an
+**API** affordance (Vertex / Gemini `negativePrompt`). Inside Flow you only have row 3 —
+positive description of the end state. Don't paste bare-noun exclusion lists into the Flow
+prompt box expecting API behaviour; there they are just more nouns naming the thing you don't
+want (see below).
 
 Google's guide does show a trailing list form inside the prompt ("no logos, no extra
 text, no crowds") for removing *artifacts*, and that works. What does not work is
@@ -306,12 +404,22 @@ Platform behaviour in this file that is marked "verified live" comes from our ow
 against Flow (`packages/flow-mcp/src/smoke-*.ts`) and is dated where it was checked. The
 prompt-craft guidance was cross-checked against these on **2026-08-18**:
 
-- [Ultimate prompting guide for Veo 3.1 — Google Cloud Blog](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-veo-3-1) *(primary — Google's own)*
+**Primary sources, read end to end on 2026-08-18** — not from search snippets, which is how
+the previous pass cited the first of the secondary links below without ever opening it:
+
+- [Video generation prompt guide — Google Cloud](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide) — the "Anatomy of a prompt" component list, every camera/lens/lighting/style term, the negative-prompt rule, the dialogue colon. *Moved: the old `cloud.google.com/vertex-ai/generative-ai/docs/video/…` URL 301s here.*
+- [Generate videos with Veo 3.1 — Gemini API](https://ai.google.dev/gemini-api/docs/veo) — the model-feature table (durations, resolutions, audio always-on), limitations, Extend semantics, reference images and first/last frame.
+- [Learn about Google Flow models & supported features](https://support.google.com/labs/answer/16352836?hl=en) — the per-tier matrix Flow actually enforces.
+- [Create videos in Google Flow](https://support.google.com/labs/answer/16353334?hl=en) · [Edit videos & build scenes in Google Flow](https://support.google.com/labs/answer/16935718?hl=en) — ingredients, frames, characters, voices, Extend, Scenebuilder.
+
+Secondary, from the 2026-08-12 sweep:
+
+- [Ultimate prompting guide for Veo 3.1 — Google Cloud Blog](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-veo-3-1) *(Google-authored, blog tier)*
 - [How to prompt Veo 3.1 — Replicate](https://replicate.com/blog/veo-3-1)
 - [Veo 3.1 Prompt Guide — LTX](https://ltx.io/blog/veo-prompt-guide)
 - [The ultimate prompting guide for Veo 3.1 — Atlabs](https://www.atlabs.ai/blog/the-ultimate-prompting-guide-for-veo-3-1)
 - [Structuring Veo 3 Prompts for Better Motion Control — Eachlabs](https://www.eachlabs.ai/blog/structuring-veo-3-prompts-for-better-motion-control)
-- [Veo 3 negative prompts: reducing artifacts and unwanted objects — Anakin](http://anakin.ai/blog/veo-3-negative-prompts-how-to-reduce-artifacts-and-unwanted-objects/)
+- Veo 3 negative prompts — Anakin *(link dead as of 2026-08-18; claim survives only as recorded here)*
 - [30 Cinematic Camera Prompts for Veo 3 and Kling — Prompt Architects](https://prompt-architects.com/blog/25-30-cinematic-camera-prompts-for-veo3-and-kling)
 - [Best Prompt Techniques for Veo 3.1 Video Output — Sider](https://sider.ai/blog/ai-tools/best-prompt-techniques-for-veo-3_1-video-output-a-field-guide-to-cinematic-control)
 

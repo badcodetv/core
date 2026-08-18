@@ -3,12 +3,33 @@
 Keeping the same person, object and place across many generations. This is the hardest
 part of Flow and the one where discipline beats cleverness.
 
-## 1. The two mechanisms
+## 1. The mechanisms — there are four, not two
 
-| Mechanism | What it is | Use when |
-| --- | --- | --- |
-| **Characters** (`@Name`) | A saved entity — face/body reference set, voice, personality — reusable across prompts without re-uploading | A recurring lead across many shots |
-| **Ingredients** | Reference images attached per generation (character / object / location-or-style), cap ~3 | A one-off composition, or a scene needing a specific prop and setting |
+Corrected 2026-08-18 against Flow's own help pages. These are **separate modes selected from
+the compose bar's model menu**, not variations on one idea, and picking the wrong one is why a
+reference sometimes appears to do nothing.
+
+| Mechanism | Where | What it is | Use when |
+| --- | --- | --- | --- |
+| **Characters** (`@Name`) | type `@` in the prompt box | A saved entity — face/body reference set, voice, personality — reusable across prompts without re-uploading. `@me` inserts your own avatar. | A recurring lead across many shots |
+| **Ingredients** | model menu → **Video Ingredients** | Reference images attached per generation (character / object / location-or-style), cap 3 | A one-off composition, or a scene needing a specific prop and setting |
+| **Frames** | model menu → **Video Frames** | A start image and/or an end image the clip must begin and end on | You have already art-directed the endpoints |
+| **Voices** | model menu → Omni Flash → **Add Voices** | A named voice (`@Voice: Andrew`) or a custom one built from a preset plus a "Voice Performance" description | Never, for us — our audio is Suno's |
+
+🔴 **Ingredients cost you the Quality tier and the short durations.** Google's feature matrix
+marks Ingredients/References → Video as **not supported on Veo 3.1 Quality**, and **8s only**
+on Lite and Fast. So any shot with a cast character is a Fast shot at 8 seconds — there is no
+Quality hero take of a character, and no 4s character beat. Plan for it; don't discover it.
+See [`platform-controls.md`](./platform-controls.md) §1.
+
+**Voice references only work on generations that already use ingredients** — Google's help says
+any other kind of generation returns an error.
+
+**On the API side** (not Flow) the same idea is narrower and worth knowing as the model's
+actual contract: *"Provide up to three asset images of a single person, character, or
+product. Veo preserves the subject's appearance in the output video."* Reference images are a
+**subject-identity** mechanism first. Using them to carry a location or a grade is us borrowing
+the slot, and it is the weaker use.
 
 Building a Character: Characters tab → upload or generate images → name → optional voice
 → Done. **Two views minimum** is best practice: a detailed headshot for face and
@@ -113,8 +134,15 @@ spacing and apparent age, not just "is it the same face".
 
 ## 7. Continuity across clips
 
-**Extend** — continues the same action, generating from the **final second** of the
-previous clip.
+**Extend** — *"finalizes the final second or 24 frames of your video and continues the
+action"* (Google's wording). It sees **only that last second**; everything earlier in the clip
+is invisible to the continuation.
+
+⚠️ **Extending forecloses repair.** *"You can't apply other edit modes such as insert, remove,
+and camera to extended video clips."* Fix the prop, then extend — never the other way round.
+
+⚠️ **Extend runs at Veo 3.1 Lite whatever tier the source was.** A Quality clip continued by
+Extend continues at Lite. This is why BadCode cuts every 8 seconds instead.
 
 - Pick an end frame with a readable silhouette, planted feet, no fast camera move.
 - Change **one** thing per extension. Never location + performance + camera at once.
@@ -126,8 +154,10 @@ previous clip.
 preserving appearance from the previous shot. This is the cut; Extend is the continuous
 take.
 
-**Frame-to-frame chaining** — the community workaround, and the more controllable
-option. When a clip finishes, save its final frame as an asset, then start the next clip
+**Frame-to-frame chaining** — documented by Google, not just a community workaround, and the
+more controllable option. When a clip finishes, save its final frame as an asset (pause on the
+frame → hover → **Save frame**; or `flow_scene_save_frame`, which will park the playhead at the
+end for you), then start the next clip
 with Frames to Video using that frame as the start. Re-state character, outfit,
 background, lighting and sound in every new prompt or it drifts. Flow exports the stacked
 clips as one continuous download.
@@ -144,3 +174,19 @@ and same discipline as characters.
 *(BadCode: this is exactly the "golden reference" rule already in our prompt ledgers for
 objects and places that have no face for a Character to bind — the bench, the tree, the
 coin.)*
+
+---
+
+## Sources
+
+Re-checked at source **2026-08-18**.
+
+- [Create videos in Google Flow](https://support.google.com/labs/answer/16353334?hl=en) — characters (`@Name`, `@me`), Video Ingredients, Video Frames, voice references, and the ingredient-hygiene best practices quoted in §2 ("provide subject or product references on a plain or segmented background"; "make sure location and style references don't contain extra subjects"; "your text prompt should complement, not contradict, your visual inputs"; "a consistent look and feel across all your ingredient images helps the model blend them more effectively").
+- [Edit videos & build scenes in Google Flow](https://support.google.com/labs/answer/16935718?hl=en) — Extend, Save frame, the History panel, Scenebuilder.
+- [Learn about Google Flow models & supported features](https://support.google.com/labs/answer/16352836?hl=en) — the Quality/ingredients exclusion and the 8s constraint in §1.
+- [Generate videos with Veo 3.1 — Gemini API](https://ai.google.dev/gemini-api/docs/veo) — reference images as a subject-identity mechanism ("up to three asset images of a single person, character, or product"), Extend semantics, first/last frame.
+- [Image generation with Gemini](https://ai.google.dev/gemini-api/docs/image-generation) — the iterative 360-view character technique behind §5, and per-model reference caps (see [`image-prompting.md`](./image-prompting.md) §9).
+
+§2's discipline is **Google's own published best practice**, not folklore — which is worth
+knowing, because it is also the single highest-leverage habit in this file and the easiest to
+skip when a gorgeous crowded reference is right there.

@@ -25,6 +25,12 @@ wrong: retrying burns ~90s a go on a prompt that can never pass.
 healthy (`flow_status` fine, project loads, other prompts succeeding) = **policy block.
 Rewrite; do not retry.** Glance at the Flow window to confirm.
 
+⚠️ **Refined 2026-08-18: a policy block is the most likely cause of a candidate-less failure,
+not the only one.** Google documents three other faults that also return nothing —
+audio-generation failure, rate limiting, and "unusual activity" — and they need opposite
+responses (wait, or retry unchanged) to a block (rewrite). **Look at the Flow window before
+rewriting**, because the card names which one it is and the tools cannot. See Part B0.
+
 *(Known gap: flow-mcp does not yet distinguish a block from a timeout or return a
 distinct `POLICY_BLOCKED` code — see `packages/flow-mcp/README.md`.)*
 
@@ -150,6 +156,32 @@ cost logic defensively — you may be billed for a generation you never see.**
 
 ---
 
+# Part B0 — The other empty results (2026-08-18)
+
+Added after reading Flow's own FAQ. Every one of these returns **no candidate**, exactly like a
+policy block, and every one wants a different response. Getting this wrong costs either a
+rewrite you didn't need or a retry that can never pass.
+
+| The card says | What it is | What to do | Credits |
+| --- | --- | --- | --- |
+| **"Audio Generation Failed"** | Veo 3.1 blocked its own output because the *audio* stage failed or tripped safety — *"sometimes Veo can produce low-quality audio, in which case your video will not be generated"* | **Retry unchanged, or reprompt.** This is a lottery, not a verdict on your prompt | refunded |
+| **"You're requesting generations too quickly"** | Rate limiting, which tightens as the day's volume grows and bites hardest on zero-credit models | **Wait.** Slow the batch; don't rewrite anything | n/a |
+| **"We noticed some unusual activity"** | Anti-abuse | Retry after a couple of minutes; **disable any VPN or proxy** | n/a |
+| **A stuck "Pending" card** | A generation that failed on policy or credits and left a husk | Check the top-right for a system notification, then **manually retry or delete the card** — it will not clear itself | — |
+| *(silently the wrong model)* | Flow auto-switches you to a compatible model when the selected one lacks a feature you used | Read the model back off the compose bar. See [`platform-controls.md`](./platform-controls.md) §1 | you paid for whatever ran |
+
+**The audio one matters most to us**, and it is a small nasty irony: BadCode never uses Veo's
+audio — the track is Suno's and we strip the AAC in post — but the audio stage can still kill a
+picture take we wanted. That is the concrete reason to write one short audio line into every
+prompt even though the track is going in the bin (`video-prompting.md` §6): an unspecified
+soundscape is the one most likely to come back unusable and take the picture with it.
+
+**Two of these five also explain a fault we have already hit.** The stuck-Pending row is the
+junk we found sitting in the gallery on 2026-08-18 masquerading as returned generations; the
+model-auto-switch row is why Extend arrives pinned to Lite.
+
+---
+
 # Part B — Non-policy failures
 
 These fail silently, as bad output rather than as a block.
@@ -185,3 +217,19 @@ Not Flow's fault, but they present identically. Full detail in
 - **Multiple references or references over ~1 MB** are the two known causes of upload
   timeouts. Downscale to ~1600px and pass exactly one.
 - **The model picker resets to Nano Banana 2 on every navigation.**
+
+---
+
+## Sources
+
+Part A's triggers and rewrites are **ours**, measured on the camping recut and dated in place.
+Part B0 is Google's, re-read at source on **2026-08-18**:
+
+- [Get started with Google Flow — FAQ](https://support.google.com/labs/answer/16353333?hl=en) — the audio-generation failure, rate limiting, unusual-activity, pending cards, model auto-switching, and "you are not charged for failed generations".
+- [Generate videos with Veo 3.1 — Gemini API](https://ai.google.dev/gemini-api/docs/veo) — *"Veo 3.1 will sometimes block a video from generating because of safety filters or other processing issues with the audio. You will not be charged if your video is blocked from generating."*
+- [Video generation prompt guide — Google Cloud](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide) — the safety-filter section and the abuse-report route.
+
+⚠️ **A8's "billing under a block is undocumented" is now partly answered** — Google states
+plainly that failed generations are not charged, both in the Flow FAQ and in the Veo API docs.
+What remains undocumented is the *partially*-blocked batch and post-generation output blocking.
+Keep the defensive retry logic; drop the assumption that a block costs money.

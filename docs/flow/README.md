@@ -42,12 +42,15 @@ Same split as [`docs/suno-gpt/`](../suno-gpt/README.md) and the `suno-prompt` sk
    makes the model regenerate instead of animate. Refer to the subject generically:
    "the woman", "the subject", "he".
 3. **Front-load the shot.** Camera/framing first, then subject + action, then context,
-   then style. Google's formula: `[Cinematography] + [Subject] + [Action] + [Context] +
-   [Style & Ambiance]`. Earlier clauses win when instructions compete.
+   then style. Earlier clauses win when instructions compete. *(Corrected 2026-08-18: this
+   ordering is **ours**. Google publishes a component list with no mandated sequence, though
+   its worked examples do lead with the shot — `video-prompting.md` §1.)*
 4. **One action, one camera move, per clip.** Two moves max; three is mush. If a shot
    isn't landing, delete a clause — don't add one.
 5. **Iterate on the cheap tier, spend on the locked shot.** Veo 3.1 Lite = 10 credits,
-   Fast = 20, Quality = 100. Never send an unproven prompt to Quality.
+   Fast = 20, Quality = 100. Never send an unproven prompt to Quality. ⚠️ **Except with a cast
+   character** — Quality does not support Ingredients/References at all, so those shots top
+   out at Fast, at 8 seconds (`platform-controls.md` §1).
 6. **Pre-generate every still before you touch video.** A good first frame is most of
    a good clip.
 7. **Dialogue: colon, not quotation marks, plus an explicit no-subtitles instruction.**
@@ -60,8 +63,11 @@ Same split as [`docs/suno-gpt/`](../suno-gpt/README.md) and the `suno-prompt` sk
 10. **One clean element per reference image, plain background.** A crowded gorgeous
     photo loses to a tight cut-out. This single discipline fixes both identity drift
     and style bleed.
-11. **State the audio or you won't get the audio you want.** One line of dialogue,
-    one SFX, one ambient bed. Expect to reroll audio independently of picture.
+11. **Veo 3.1 audio is always on and cannot be turned off — state it anyway.** One line of
+    dialogue, one SFX, one ambient bed. Not to get audio (BadCode strips it: `ffmpeg -an`,
+    the track is Suno's) but because an unspecified soundscape hallucinates, and because the
+    audio stage can kill an otherwise-good picture take. Expect to reroll audio independently
+    of picture.
 12. **Describe the absence positively.** "an empty street", not "no cars".
 13. **Change exactly one variable per test generation**, and never chain an extension
     off an unreviewed clip — errors compound forward.
@@ -75,6 +81,43 @@ Same split as [`docs/suno-gpt/`](../suno-gpt/README.md) and the `suno-prompt` sk
 ---
 
 ## Provenance
+
+### 2026-08-18 — the primary-source pass
+
+The 2026-08-12 sweep below was a **web sweep**: ten agents over blogs, guides and
+search-indexed excerpts, with Google's own pages only partly recovered because several are
+JS-rendered SPAs. That gap is now closed. On 2026-08-18 every Google page below was fetched
+and **read end to end**, and every file in this folder carries a `Sources` section naming
+which of its claims came from where.
+
+| Read at source | Settled |
+| --- | --- |
+| [Video generation prompt guide](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide) | The 10-component "Anatomy of a prompt"; truck / pedestal / aerial / rack focus, which we were missing; temporal elements; cinematic terms; the negative-prompt rule verbatim; the dialogue colon |
+| [Generate videos with Veo 3.1 — Gemini API](https://ai.google.dev/gemini-api/docs/veo) | Audio always-on; per-model durations and resolutions; Extend = "the final second or 24 frames"; reference images are a *subject-identity* mechanism |
+| [Image generation with Gemini](https://ai.google.dev/gemini-api/docs/image-generation) | Seven prompt templates we lacked, including comic panels and the 360 character view; "semantic negative prompts"; the real per-model reference caps |
+| [Flow models & supported features](https://support.google.com/labs/answer/16352836?hl=en) | **The feature matrix, from Google.** Ingredients unsupported on Quality; Extend is Lite-only by design; 8s is the cap on every Veo tier |
+| [Get started with Flow — FAQ](https://support.google.com/labs/answer/16353333?hl=en) | Failed generations aren't billed; rate limiting is real and documented; silent model auto-switching; the visible-watermark toggle |
+| [Create videos](https://support.google.com/labs/answer/16353334?hl=en) · [Edit videos & build scenes](https://support.google.com/labs/answer/16935718?hl=en) · [The Flow Agent](https://support.google.com/labs/answer/17093911?hl=en) | Four reference mechanisms, not two; Scenebuilder can download a scene; the History panel is an in-app prompt ledger; Agent batch generation and image-bearing Agent Instructions |
+
+**What it changed, in order of how much it costs to not know:**
+
+1. **A cast character cannot be generated on Quality**, and forces 8s. Our matrix said
+   otherwise. This one reshapes shot planning.
+2. **Veo's audio cannot be disabled** — the correct move is `ffmpeg -an`, not prompt wording.
+   We had been writing prompt language against a setting that doesn't exist.
+3. **Not every empty result is a policy block.** Audio failure, rate limiting and
+   unusual-activity all look identical over CDP and want the opposite response
+   (`failure-modes.md` B0).
+4. **Truck and pedestal** — two basic moves absent from our vocabulary, and the reason a
+   "zoom" that should have been a travelling move reads flat.
+5. **Flow silently swaps your model** when the selected tier lacks a feature you used.
+
+**Also worth knowing but unexercised:** the Flow **Agent** can batch-generate variations and
+carries per-project instructions *with a reference image*; **Omni Flash video-to-video editing**
+can repair a finished clip (region-gated, likely not available to us); and Scenebuilder has a
+**download**, which is how an Extend-grown scene becomes a file.
+
+### 2026-08-12 — the web sweep
 
 Gathered **2026-08-12** by a ten-agent parallel web sweep over Google Flow / Veo 3 &
 3.1 / Nano Banana & Nano Banana Pro prompting, followed by an **adversarial
@@ -108,13 +151,17 @@ platform-controls figures need a live in-app check.
 
 **Tier 1 — goes stale fastest, re-check before relying:**
 
-- **The model/feature matrix** in `platform-controls.md`. Sources contradict each other
-  on which tier supports Extend, first+last frame, and video editing. They cannot all
-  be true — **test in the live UI before designing a workflow on any of them.**
+- ✅ **RESOLVED 2026-08-18 — the model/feature matrix** in `platform-controls.md` is now
+  Google's own published table, cross-checked against our live findings, with the two
+  remaining disagreements named and adjudicated in place. It is no longer the most volatile
+  thing here. Still re-check before a big shoot: Google changed the Omni Flash duration
+  options inside a week.
 - **All credit figures and plan names.** Prices conflict across sources. Nano Banana
   Pro's per-resolution cost is third-party, not Google-published.
-- **The ingredient cap.** Flow's help page says 3; the Veo 3.1 launch post implies no
-  cap; wrappers claim 4–9. Assume 3, verify live.
+- ✅ **RESOLVED — the ingredient cap is 3.** Flow's current help page says *"you can add up
+  to three ingredients per prompt"*, and the Veo API says *"up to three asset images"*. The
+  wrapper claims of 4–9 were wrong. (Separately, the *image* models have their own much larger
+  reference caps — `image-prompting.md` §9.)
 - **Storyboard Studio / "Make a Story"** — secondary coverage only.
 
 **Tier 2 — weakly evidenced, treat as checklist not doctrine:** "naming a concept even

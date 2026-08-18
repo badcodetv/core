@@ -90,8 +90,18 @@ from a **Flow Character** attached as a reference. Naming them in prose binds no
 | A change to an existing still | `flow_edit_image` (reference-anchored) |
 | Motion where something in the world moves | `flow_generate_video` |
 | A camera-only move on a still | **post (ffmpeg / the edit)** — see `video-prompting.md` §9 |
-| Runway: continue a clip with its own context | `flow_scene_extend` (Scene Builder) |
+| Runway: continue a clip with its own context | `flow_scene_extend` (Scene Builder) — ⚠️ runs at Veo 3.1 Lite whatever the source tier |
 | A frame out of a clip, into the gallery | `flow_scene_save_frame` |
+
+**Two constraints that decide the shot before you write it** (both Google-published, see
+[`platform-controls.md`](./platform-controls.md) §1):
+
+- **A cast character can't be generated on Veo 3.1 Quality**, and forces 8 seconds. Character
+  shots top out at Fast.
+- **Veo's audio is always on and cannot be turned off.** BadCode's audio is Suno's, so strip
+  it: `ffmpeg -i clip.mp4 -c:v copy -an out.mp4`. Still write one short audio line into the
+  prompt — an unspecified soundscape is the one most likely to fail and take the picture with
+  it.
 
 ## 5. Review what you generated — properly
 
@@ -111,3 +121,11 @@ detail is small or dark.
 **Platform craft** (how Flow behaves) is the rest of [`docs/flow/`](./README.md).
 **The BadCode look** stays in `badcode-art-direction` (panels) and `new-image` (brand imagery).
 **Per-story prompts** live in `docs/stories/<story>/prompts.md`.
+
+---
+
+## Sources
+
+This file is a pointer, not a source of record: every fact in it is stated and cited in one of
+the files it links to. The Google pages behind them are listed in
+[`README.md`](./README.md) → Provenance → *2026-08-18 — the primary-source pass*.
