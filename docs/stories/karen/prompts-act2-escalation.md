@@ -1468,8 +1468,9 @@ every clip gets from here after the subway-sign incident.
 > **Nothing replaces it.** She sips, she speaks, she shifts her weight; §2j.6rv already proved
 > a near-static clip reads fine when the stillness is the point. *"The air in the room is
 > clear"* does a negative's job without being one — a state to render rather than a
-> prohibition to invert. **If the room feels dead**, the bounded fallback is *"one or two
-> specks of dust cross the light, barely visible."*
+> prohibition to invert. **There is no reduced version to fall back on** (ruled 2026-08-18,
+> Kai) — *"a little dust"* is not a setting the model has. If the room feels dead, add a
+> movement she makes, not a thing in the air.
 
 **The audio is the best thing in the shot: Karen, small and tinny, out of a speakerphone in an
 empty room.** She has been climbing for nine months to become a noise on a desk nobody is
@@ -1493,7 +1494,9 @@ Audio is the room: a woman's voice coming small and tinny out of the speakerphon
    something short"*** — speech is what invites a turn toward the room.
 2. **Is the tinny voice on the speaker?** Given to her mouth instead, the shot inverts and the
    point is lost. Worth a re-roll.
-3. **Does dust come back anyway?** It should not now that the air is described as clear.
+3. **Does dust come back anyway?** It should not now that the air is described as clear. If
+   it does, the next lever is the light, not the air: bring the sun off-axis so the beam stops
+   crossing the room.
 4. **Frames with a person in shot.** Only tested on an empty landscape so far. **Holding
    confirms the rule at its edge; distortion finds its limit** and Ingredients is the fallback.
 

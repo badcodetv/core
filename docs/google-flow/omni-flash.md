@@ -753,13 +753,36 @@ with an extra transform on top.
 **The working counter is substitution, not instruction.** Round 2 cut moving objects from
 the glass entirely and replaced the ambient motion with **steam off a pavement vent** —
 formless motion has no geometry to get wrong, which is why dust, steam and drifting light
-keep earning their place in these blocks. The traffic moved to the **audio**, where it
-reads free.
+keep earning their place in these blocks — **but see the volume warning below: formless is
+safe to render and hard to dose.** The traffic moved to the **audio**, where it reads free.
 
 **Generalise carefully:** what is claimed here is that *this* shot failed and that the
 mechanism is the documented one. Whether reflections of moving objects fail *reliably*
 wants a second sighting with something else varying — see
 [the discipline note](#frames-lost-the-face-ingredients-held-both-n1-each-way).
+
+### ⚠️ Particle nouns have no volume control `[observed, n=2]`
+
+**Name an airborne particle and the engine makes it a feature of the shot, not a texture in
+it.** Karen §2j.9v round 1 (2026-08-17) asked for dust in a sunbeam and came back *"so over
+the top"*; the same clause in [§2h.5bv](../stories/karen/prompts-morning-after.md) was fine.
+
+**The difference is the size of the light source, not the wording.** Susan's dust sat in a
+narrow bar of daylight across a bed — a small source in a tight room, so the particles had
+a small volume to occupy. Rung 4 was a 24mm office with the sun coming straight in through
+a full window: **the beam is the whole frame, so the dust fills the whole frame.** Check the
+lighting before writing the particle, not after.
+
+**There is no reduced version.** *"A little dust"*, *"faint"*, *"barely visible"* are not
+settings the engine has; the choice is name it or don't. Cut the noun and describe the state
+instead — *"the air in the room is clear"* — which is a state to render rather than a
+[negative to invert](#-negatives-do-not-work-and-they-actively-backfire). If the shot needs motion back, add a movement
+the subject makes.
+
+**Note the asymmetry with weather.** Weather nouns *underdeliver* and need magnitude and
+consequences pushed at them (*"a full storm, not a light dusting"*, shadows thrown right
+across the carpet). Particle nouns *overdeliver* and need removing. Same instinct — "say
+more about it" — is right in one case and wrong in the other.
 
 ### Slop counters specific to motion `[community]`
 
