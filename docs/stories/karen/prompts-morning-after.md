@@ -1211,38 +1211,70 @@ Thanks.
 
 </details>
 
-### 2h.7 The last frame of Act 1 — plate
+### 2h.7 The last frame of Act 1 — plate · **re-fired against the canon kiosk**
 
-**Cast:** `@Karen`. **This is the one that has to be great.**
+**Cast:** `@Karen` — the Character **and** the accepted **§2j.0** still as image 1. Two
+references, nothing else. **Engine:** Nano Banana Pro, 16:9, 3 candidates.
 
-The pep talk has landed. *"Then get ringing."* The exit feeling is **I would not want
-to be the person who answers her next call** — so the image is not triumph, it is
-**settling in**. Shoulders squared, weight down, the phone box already looking like
-somewhere she lives.
+**This is the one that has to be great.** The pep talk has landed — *"then get ringing"* — and
+the exit feeling is **I would not want to be the person who answers her next call.** So it is
+not triumph. It is **settling in**: shoulders down, weight in her heels, the bag on the floor,
+the kiosk already looking like somewhere she lives.
 
-Pulled back further than 2h.6 and shot from outside through the smeared glass, because
-the story leaves her here and comes back nine months later. It should rhyme with the
-statue at the end without anybody having drawn the statue yet.
+> ### The design idea: shoot it low, so the kiosk reads as a plinth.
+>
+> The story leaves her here and does not come back for nine months, and **Act 5 puts a statue on
+> this corner.** So the closing frame of Act 1 should already have the shape of a monument in
+> it — **a low camera, the kiosk standing whole, her inside it, the block going up out of the
+> top of the frame** — without anybody having drawn a statue yet. Nobody needs to notice; it
+> pays off four acts later.
+>
+> **It is also what keeps this from being §2h.3 twice.** §2h.3 is eye level from across the
+> street with her small and arriving; this is **low, closer, and she has stopped moving.**
+
+> ### The people stay in, and that is the canon note, not a hedge.
+>
+> §2j.0's ruling: *"'no crowd' does not mean an empty street — it means nobody is looking at
+> her,"* and a deserted Midtown pavement at mid-morning reads post-apocalyptic. **The isolation
+> here is that she is the only person on the street who has stopped.** §2j.11 gets to empty the
+> pavement because it is the middle of the night; this does not.
+
+**No reflections and no steam** — the old version of this block asked for both, and
+[both are the atmosphere family](../../google-flow/nano-banana-2.md): rendered for free,
+overdelivering the moment they are named. Whatever the glass does on its own is a bonus.
 
 ```prompt
-SCENE:
+Image 1 is the reference. Keep it exactly as it is — the same kiosk, the same corner behind it, the same woman, the same clothes, the same flat overcast mid-morning light, and the same grainy super-8 film look. Redesign nothing.
 
-Subject: a woman standing in a street phone kiosk with the receiver to her ear, seen from outside through the smeared glass, the street reflected over her.
+Change two things:
 
-Composition: 16:9, from across the pavement at chest height, the kiosk standing whole in the frame and slightly left of centre with the empty street beside it; a scaffolding leg crosses the near right foreground out of focus; the frame very slightly tilted.
+1. A wide shot from across the pavement with the camera low, at about chest height and looking very slightly upward, so the kiosk stands whole in the frame with her inside it, a little left of centre, and the building above it rises out of the top of the frame.
 
-Action: settling in — shoulders squared and dropped, weight gone down into her heels, her free hand flat on the shelf and her handbag set down on the floor of the kiosk by her feet, as if the call has a long way to go.
+2. She has settled in. Her shoulders are squared and dropped, her weight is down in her heels, her free hand is flat on the shelf, and her handbag is standing on the floor of the kiosk by her feet. Her chin is level and her face is doing nothing in particular.
 
-Location: the Midtown side street outside the kiosk on an ordinary weekday morning — scaffolding, a mesh bin, steam off a vent, the block going up out of frame behind; the glass smeared with handprints and old adhesive marks; a pedestrian passing in the reflection without looking.
-
-Light: flat overcast mid-morning daylight, a bright white sky reflected in the upper panes; the interior of the kiosk a stop darker than the street.
-
-Style: a still from a 35mm independent film — the closing frame of the first act, a small figure committing to something enormous. Available light only, unretouched.
-
-Constraints: cream blouse untucked, camel cardigan slipped off one shoulder, no coat; her posture reads as settled and immovable rather than triumphant; keep every notice, hoarding, sticker and reflected sign free of readable lettering.
+Two pedestrians pass along the pavement without looking at her. No readable lettering anywhere, and no border around the image.
 
 Thanks.
 ```
+
+**What to watch:**
+
+1. **Is the camera low, and does the block go out of the top?** The monument shape is the whole
+   design idea. Eye level makes this §2h.3 again. If it hedges, the consequence to add is
+   *"the kiosk is taller than everything else in the lower half of the frame."*
+2. **Is the bag on the floor?** One prop carrying the entire idea — *she is going to be here a
+   while.* If it is still on her shoulder, the beat has not landed.
+3. **Settled, not triumphant.** A lifted chin, a straightened back, a hand on the hip: reject.
+   The posture is a woman getting comfortable, not a woman winning.
+4. **Same kiosk?** Rust, peeled adhesive, the payphone unit, the coiled cord, the green globes.
+   The reason all three re-fires exist.
+5. **Anyone looking at her?** Nobody should be. That single rule runs from here to the end of
+   Act 2.
+
+> ### After this, Act 1 is closed.
+>
+> The three kiosk re-fires — **§2h.3 → §2h.6 → §2h.7** — are done, §2h.3v and §2h.6v are cut
+> off the new stills, and **the whole film is now standing in one phone box.**
 
 ---
 
