@@ -297,6 +297,69 @@ Thanks.
   small figure under a tall block is exactly the case where the 16:9 crop fights the
   scale. `[untested]`
 
+### 2h.3v She picks up the phone — clip
+
+**Cast:** none — **Frames takes no Character, and there is no face in this shot.** **Attach:**
+the accepted §2h.3 still as the **starting frame**. **Engine:** Gemini Omni Flash · **Frames to
+Video** · 8s · native audio · **Enhance Prompt off**.
+
+**Tab: Frames**, by the
+[amended rule](../../google-flow/omni-flash.md#-the-tab-rule--amended-2026-08-18-ingredients-holds-identity-frames-holds-staging):
+her back is three-quarters to camera so **there is no face to lose**, and what this shot cannot
+survive losing is the kiosk a whole re-fire was spent matching. **Ingredients would re-stage it**,
+which is exactly what it did to §2j.11v.
+
+> ### This is the hand-off. Act 1 ends with a hand closing on a receiver.
+>
+> Everything before it is a woman being fired and then being told to complain. **The last thing
+> Act 1 does is show her pick up the phone** — and then Act 2 is nine months of that phone. It
+> wants no cleverness at all: one movement, then stillness, then the credits of the act.
+
+**⚠️ The one risk is the receiver, and it is the
+[occlusion round trip](../../google-flow/omni-flash.md#-objects-vanish-on-the-occlusion-round-trip)
+again.** A handset travelling from a cradle up to an ear on the far side of a turned head is
+precisely the move that lost §2j.9v's mug. **The fix here is not to avoid the motion — it is the
+beat — but to constrain it:** *"the receiver stays visible the whole way and never passes out of
+sight."* State the visibility, not the trajectory.
+
+**Everything with text in it gets pinned rather than blanked.** The accepted still already
+carries lettering on the litter bin and the ad panel; the standing rule is about *new* text
+appearing, so the instruction is *"stays exactly as it is"*, not *"stays bare."*
+
+**The street keeps moving, modestly.** Direct traffic on a dry street has held every time we
+have asked for it; it is [traffic through a distorting
+surface](../../google-flow/omni-flash.md) that fails. A frozen Midtown is a worse error than a
+small risk here — the whole point of the act is that the city does not care.
+
+```prompt
+Use the attached image as the starting frame. One continuous shot.
+
+Her hand closes on the receiver, lifts it off the hook and raises it to her ear in one unbroken movement. The receiver stays visible the whole way and never passes out of sight. She settles her weight onto both feet and stands there waiting, her back still three-quarters to the camera. She does not turn round.
+
+The camera does not move. Traffic passes along the street beyond her and the two pedestrians on the pavement keep walking without looking at her. Everything else stays exactly where it is: the litter bin, the scaffolding and the kiosk do not change, and every sign, panel and notice stays exactly as it is.
+
+Real-time pace, 24fps with a 180-degree shutter. Fine film grain.
+
+Audio is the street: the clunk of the receiver coming off its hook, traffic, footsteps on the pavement and a bus pulling away somewhere out of shot. No dialogue.
+
+Thanks.
+```
+
+**What to watch:**
+
+1. **Does the receiver survive the trip?** The known failure. If it vanishes or reappears wrong,
+   the fallback is to **stop the movement early** — *"she lifts the receiver off the hook and
+   holds it at chest height"* — and let §2h.6 open with it already at her ear.
+2. **Does she turn round?** She must not. Her turning makes it a different shot and puts a face
+   in a clip that has no Character attached to hold one.
+3. **Does the kiosk hold?** Frames pins frame 0, so a change here would be new information.
+4. **Do the pedestrians make it across?** A walker vanishing mid-stride
+   [has happened before](./prompts-act2-escalation.md#2j5v-rung-1-the-block--clip). If they
+   glitch, cut them from the picture and leave the footsteps in the audio — that fix has worked
+   twice.
+5. **Is the receiver clunk there?** It is the sound of the whole film starting, and it is worth
+   a re-roll on its own.
+
 ### 2h.4 Susan wakes — plate, the mirror
 
 **Cast:** `@Susan`. **No reference image** — see the ruling below.
