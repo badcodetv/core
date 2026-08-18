@@ -539,6 +539,26 @@ say nothing and take what the engine gives you.
 needs deleting; weather needs shouting at.** The two instincts are opposite and both are
 counter-intuitive, which is why this keeps being relearned.
 
+### 11. ⚠️ A camera position without a background is half a shot `[observed]`
+
+**Karen §2h.6, 2026-08-18 — *"what camera shot is this supposed to be, because it is showing
+multiple."*** The prompt said where the camera stood and never said what was behind the subject,
+and the engine filled the background with **everything available at once**: through the near
+glass, past her, through the far glass, plus the near panel's reflection. Four layers in one
+frame, which reads as a double exposure rather than a photograph.
+
+**An undefined background stacks, the same way an undefined surface grows text.** One sentence
+fixes it — *"behind her is one soft out-of-focus background and nothing else"* — and it is worth
+naming what stays sharp, because *only the subject is sharp* is the instruction that collapses
+the layers.
+
+**Watch for this wherever the subject is inside something transparent**: vehicles, kiosks,
+shopfronts, conservatories, anything shot side-on through two panes.
+
+**And name the shot type.** The documented camera form is *"[shot type] of image 1"* — *"a
+medium close-up in profile"* is a framing the model knows; *"the camera has moved round to the
+side and is close"* is a description of a tripod, and it renders as one.
+
 ### Sources for this section
 
 - [Google — prompting tips for Nano Banana Pro](https://blog.google/products/gemini/prompting-tips-nano-banana-pro/) `[vendor]`
