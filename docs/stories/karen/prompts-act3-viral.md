@@ -442,6 +442,65 @@ Thanks.
 5. **Is she at the top of the shout?** Mouth wide open. A woman talking normally gives the
    narrator and the song nothing to land on.
 
+### 3a.2b Through the side panel — plate
+
+**Cast:** `@Karen`. **Attach:** the accepted **§2j.0** still as image 1 — **setting only, one
+reference.** **Time:** flat overcast mid-morning. **Engine:** Nano Banana Pro, 16:9, 3 candidates.
+
+> ### The frame member cuts her face in two, at the moment she is about to be copied a million times.
+>
+> **The metaphor is free and it is never said out loud.** She is seconds from being cut up,
+> sampled, looped and reposted; the shot puts a hard aluminium edge straight down the middle of
+> her face. Nobody has to notice for it to work — **and if anyone asks, it is just where the
+> kiosk's upright happens to be.**
+>
+> It also continues the motif [§2h.6](./prompts-morning-after.md#2h6-the-news-lands--plate--re-fired-against-the-canon-kiosk)
+> started: **we watch her through things.** Through glass, across a pavement, from a helicopter,
+> from a room she is not allowed into — and now through a scratched panel with a bar across her
+> face.
+
+**How this differs from §2h.6, which is the same panel:** that one is a clean profile with a soft
+background and nothing crossing her. **This is much closer, and the frame members are the
+subject.** If it comes back looking like §2h.6 it has failed, however pretty it is.
+
+> ### ⚠️ Glass rules, learned over three rounds on §2h.6
+>
+> 1. **Never name a reflection.** [Atmosphere renders for
+>    free](../../google-flow/nano-banana-2.md) and overdelivers the moment it is asked for — a
+>    named reflection came back as a double exposure smeared over her face. **Only the geometry
+>    and the surface get described**: the upright, the frame member, the scratches, the chipped
+>    paint. Whatever the panel does with the light on its own is a bonus.
+> 2. **State that the front is open.** A shot that needs glass invites the model to build glass;
+>    saying *"no door and no glass across the front"* is what stopped it growing one.
+> 3. **Name what stays sharp.** A subject inside something transparent stacks every available
+>    layer unless one is nominated — *"only her face is sharp"* is what collapses them back into a
+>    photograph.
+
+```prompt
+Image 1 is the reference for the setting. Keep the kiosk exactly as it is and redesign nothing about it: the same scuffed aluminium frame, the same chipped paint and rust, the same glazed side panels, the same worn steel shelf and coiled handset cord, the same flat overcast mid-morning light and the same grainy super-8 film look. The front of the kiosk is open, with no door and no glass across it, exactly as in image 1.
+
+The shot is a tight close-up taken from the pavement at the side of the kiosk, right up against the glazed side panel, on a 50mm lens at f/2 at her eye level. She is seen through that panel and fills most of the frame. The kiosk's aluminium upright runs vertically down the frame and across her face, cutting it in two, and a horizontal frame member crosses below her chin. The glass she is seen through is old, scratched and grubby, with chipped paint along the edges of the frame. Only her face is sharp; the open front of the kiosk and the street beyond it fall away soft behind her.
+
+She is caught at the top of a shout, mouth wide open, the receiver hard against her ear. Her eyes are fixed on nothing out in the street and she does not know the camera is there.
+
+She is the only person in the frame. Natural skin texture with visible pores and shine. No readable lettering anywhere. No border around the image.
+
+Thanks.
+```
+
+**What to watch:**
+
+1. **Does the upright actually cross her face?** The entire idea. If it sits beside her head
+   instead, the shot is just a close-up through glass — the consequence to add is *"the upright
+   passes over her nose and mouth."*
+2. **Is her face clean of ghosting?** No double exposure, no smeared street laid over her.
+   Reflections *in* the panel are fine; a reflection *over* her is the round-2 failure from §2h.6.
+3. **Did it grow a door?** The front stays open.
+4. **Is only her sharp?** If the street behind is as crisp as her face, the layers have stacked
+   again.
+5. **Is it much closer than §2h.6?** She should fill the frame. Same distance means we have made
+   the same shot twice.
+
 ## What this act still owes
 
 > ### ⚠️ Gap found 2026-08-18 (Kai): the cameo was built middle-first.
@@ -474,7 +533,7 @@ Thanks.
 | **3a.1** | The sample — plate | ✅ written, **round 4** — 135mm three-quarter; he stands by the subway railings behind her |
 | **3a.1v** | The sample — clip | ✅ written — **only she moves**; he is planted and the one change is a smile |
 | **3a.2a** | Across the street — plate | ✅ written — 200mm paparazzi grammar; the camera becomes a watcher |
-| 3a.2b | Through the side panel — plate | owed — her face broken by the glass and frame members |
+| **3a.2b** | Through the side panel — plate | ✅ written — the upright cuts her face in two |
 | 3a.2c | The phone-screen version — plate | owed — Act 3's formal device; the artefact that goes viral |
 | 3a.2v | …— clip | **only she moves.** This is the *"I've got ALL DAY to complain"* shot |
 | 3a.3 | The train — plate | two riders, a phone between them, the tune playing in-world |
