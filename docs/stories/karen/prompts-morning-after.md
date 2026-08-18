@@ -1317,10 +1317,69 @@ Thanks.
 5. **Settled, not triumphant.** A lifted chin, a straightened back, a hand on the hip: reject.
    The posture is a woman getting comfortable, not a woman winning.
 
+### 2h.7v The last frame of Act 1 — clip
+
+**Cast:** none — **Frames takes no Character.** **Attach:** the accepted §2h.7 still as the
+**starting frame**. **Engine:** Gemini Omni Flash · **Frames to Video** · 8s · native audio ·
+**Enhance Prompt off**.
+
+**Tab: Frames.** Her face is small in this frame so there is little identity to lose, and what
+the shot cannot survive losing is **the scaffolding** — a cage of thin poles is the most fragile
+geometry in the film, and Frames pins it at frame 0. Ingredients would re-stage it.
+
+> ### ✅ This is the shot where dialogue is cheap.
+>
+> **She can finally talk.** Every recent clip has had her silent, because a profile close-up or
+> a turned back makes lip-sync the likeliest failure. **Here she is mid-distance and small**, so
+> a moving mouth costs almost nothing — and it is the right beat: the last thing Act 1 does is
+> **start** something. Nine months begin on this line.
+>
+> **Her words stay indistinct on purpose.** Kai's ruling that clips get narrated means the
+> voice-over owns this moment; her voice is texture under it, not competition.
+
+**⚠️ The two pedestrians walk *out of frame*, not behind a pole.** A walker
+[vanished mid-stride once already](./prompts-act2-escalation.md#2j5v-rung-1-the-block--clip) and
+the [occlusion round trip](../../google-flow/omni-flash.md#-objects-vanish-on-the-occlusion-round-trip)
+is the mechanism — the scaffolding leg on the right is exactly the kind of thing they would
+disappear behind and fail to come back from. **Send them off the edge instead: once they are
+out, they never have to be rebuilt.**
+
+**Camera locked, deliberately.** The whole design of the plate is a plinth; a monument does not
+drift. If the act-out wants a lift on the next pass, a barely-there push-in is the cheapest
+thing to add — but stillness is the stronger read and it costs nothing to try first.
+
+```prompt
+Use the attached image as the starting frame. One continuous shot.
+
+The camera does not move. She stays exactly where she is in the kiosk with the receiver against her ear. She shifts her weight and settles, her free hand stays flat on the shelf, and she starts talking — steady and unhurried, her mouth moving but her words too far away to make out. She does not look at the camera.
+
+The two people on the right keep walking and go out of the right-hand edge of the frame. Traffic crosses the far end of the street beyond them. Everything else stays exactly where it is: the kiosk, the scaffolding poles, her handbag on the floor, and every sign and panel stay exactly as they are.
+
+Real-time pace, 24fps with a 180-degree shutter. Fine film grain.
+
+Audio is the street: traffic, footsteps going away, a bus somewhere out of shot, the hollow ring of scaffolding, and her voice low and steady and too far off to make out any words.
+
+Thanks.
+```
+
+**What to watch:**
+
+1. **Does the scaffolding hold?** The most fragile thing in the frame. Bending, doubling or
+   melting poles means Frames is not enough and the fallback is **cutting the pedestrians** so
+   the only motion left is her.
+2. **Do the pedestrians make it off the edge?** If they dissolve on the way, cut them and leave
+   the footsteps in the audio — that fix has now worked three times.
+3. **Are her words unintelligible?** They must stay under the narration. Actual dialogue coming
+   back is [the audio lottery](#2h6v-karen-listens-in-the-kiosk--clip) — re-roll, do not rewrite.
+4. **Does the bag stay on the floor?** It is the beat of the whole plate.
+5. **Does she look at the camera?** She never has and she must not start on the last frame of
+   the act.
+
 > ### After this, Act 1 is closed.
 >
-> The three kiosk re-fires — **§2h.3 → §2h.6 → §2h.7** — are done, §2h.3v and §2h.6v are cut
-> off the new stills, and **the whole film is now standing in one phone box.**
+> The three kiosk re-fires — **§2h.3 → §2h.6 → §2h.7** — are done, their clips (**§2h.3v,
+> §2h.6v, §2h.7v**) are cut off the new stills, and **the whole film is now standing in one
+> phone box.**
 
 ---
 
