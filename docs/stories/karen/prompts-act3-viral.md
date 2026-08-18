@@ -73,6 +73,68 @@ cuts between them; the engine's limit is pushing us toward the edit we would hav
 
 ---
 
+## 3a.0 He walks past — plate
+
+**Cast:** `@Aarron`. **Attach:** the accepted **§2j.0** still as image 1. **One reference.**
+**Time:** flat overcast mid-morning. **Engine:** Nano Banana Pro, 16:9, 3 candidates.
+
+> ### The walk is the accident.
+>
+> [`story.md`](./story.md#31-the-aarron-cameo--redo-five-seconds-total): *"Aarron happens to
+> wander past the phone box — **he is not looking for anything.**"* Without this frame he is a
+> man who came to a phone box to film a woman, and the canon warns twice that **the believable
+> version is the accidental one.** Everything the cameo means rests on him having been on his way
+> somewhere else.
+>
+> **So the tell is his hands: the phone is in his pocket.** He is not filming, not scrolling, not
+> looking for content. He gets it out *because of what he hears*, and the only way an audience
+> feels that is if they saw it put away first.
+
+**A proper cut needs a different size, so this one is wide.** §3a.1 is a 135mm three-quarter from
+twenty feet; this is **a 50mm on the whole corner from thirty**. Wide establishes the geometry —
+her in the box, him coming along the pavement, the distance between them — and then the cut goes
+tighter as he stops. Same-size shots cut like a stutter.
+
+**Karen stays the near, dominant figure**, as in every frame of this act. He is small, further
+away, and walking.
+
+> ### ⚠️ The headphones stay on, and the beat does not touch them.
+>
+> A man in over-ear headphones hearing a woman shout is a small logic problem, and the tempting
+> fix — **he lifts one cup off his ear** — is a lovely beat that **breaks continuity with the
+> accepted §3a.1 still**, where both cups are on. It is not worth it. She is shouting at the top
+> of her voice on an empty street; that is loud enough. **The "he heard it" moment is carried by
+> his head turning in the clip and by the narrator's line, not by the headphones.**
+
+```prompt
+Image 1 is the reference. Keep it exactly as it is — the same kiosk, the same subway entrance immediately behind it, the same scaffolding, the same corner, the same woman in the kiosk, her clothes, the flat overcast mid-morning light, and the grainy super-8 film look. Redesign nothing.
+
+Change three things:
+
+1. A wide shot of the whole corner on a 50mm lens at f/5.6, taken from the pavement about thirty feet away at chest height, with the kiosk on the left of the frame and the subway entrance and the pavement beyond it running away to the right.
+
+2. The woman is in the kiosk on the left, closest to the camera, with the receiver at her ear, her mouth open in mid-shout and her free hand out in front of her off the shelf.
+
+3. A young man is walking along the pavement on the right, past the subway entrance and towards the kiosk, caught mid-stride with one foot off the ground. He is wearing his rig, his hands are down by his sides and his phone is in his pocket. He is looking straight ahead along the pavement, not at her, and he has not noticed her.
+
+The pavement is otherwise empty. Natural skin texture with visible pores. No readable lettering anywhere. No border around the image.
+
+Thanks.
+```
+
+**What to watch:**
+
+1. **Are his hands empty and his phone away?** The single most important thing in the frame. A
+   phone already in his hand and the cameo stops being an accident.
+2. **Is he looking away from her?** Eyes down the pavement. If he is already looking at her, the
+   shot has skipped to the next beat.
+3. **Is he mid-stride?** One foot off the ground. A standing figure reads as arrived, and this
+   shot exists to show him *passing*.
+4. **Is she still the nearest and largest?** He is a small figure on the right.
+5. **Does the rig read at this distance?** Harness, headphones, the chest keyboard. If it is
+   unreadable at 50mm the fix is to bring him a little closer along the pavement, **not** to
+   describe it.
+
 ## 3a.1 The sample — plate
 
 **Cast:** `@Aarron`. **Attach:** the accepted **§2j.0** still as image 1. **One reference.**
@@ -286,7 +348,8 @@ Thanks.
 
 | § | Piece | Notes |
 | --- | --- | --- |
-| **3a.0** | He walks past — plate + clip | ⚠️ **owed** — the shot that makes the cameo accidental; one mover (him) |
+| **3a.0** | He walks past — plate | ✅ written — 50mm wide, phone in his pocket, not looking at her |
+| 3a.0v | He walks past — clip | **only he moves**: he walks, slows, and his head turns towards the kiosk |
 | **3a.1** | The sample — plate | ✅ written, **round 4** — 135mm three-quarter; he stands by the subway railings behind her |
 | **3a.1v** | The sample — clip | ✅ written — **only she moves**; he is planted and the one change is a smile |
 | 3a.2 | Karen shouts the line — plate | ⚠️ **owed** — her single; the sound the whole film hangs on, and it keeps the two-hander out of one moving frame |
