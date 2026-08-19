@@ -707,10 +707,62 @@ Constraints: keep every sign, route map, notice, advertisement, sticker and the 
 | 3a.0v | Crossing to the stop — clip | **only he moves**: up onto the pavement, along, slowing, head turning towards the kiosk |
 | **3a.1** | The sample — plate | ✅ written, **round 4** — 135mm three-quarter; he stands by the subway railings behind her |
 | **3a.1v** | The sample — clip | ✅ written — **only she moves**; he is planted and the one change is a smile |
-| **3a.2a** | Across the street — plate | ✅ written, **round 5** — the setting is a blur, so it stops needing to be accurate |
+| **3a.2a** | Across the street — plate | ✅ **accepted 2026-08-18** as the **dusk long exposure**, after ten rounds; see the ledger below |
+| **3a.2a-v** | The dusk frame, moving — clip | ✅ **worked round 6** — *"continue that same timelapse"* |
 | **3a.2b** | Through the side panel — plate | ✅ written — the upright cuts her face in two |
 | **3a.2c** | The phone-screen version — plate | ✅ written — **`STYLE LOCK` off**, the only plate in the film without it |
-| 3a.2v | …— clip | **only she moves.** This is the *"I've got ALL DAY to complain"* shot |
+
 | **3a.3** | The train — plate | ✅ written — phone-screen key light, one set of earbuds between them |
-| 3a.4 | The crowd — the drone trick | **stills only, cut between.** Altitude up/down, the crowd bigger each time. Never animated. |
+| **3a.4** | The crowd — the drone trick | ⏭ **next** — **stills only, cut between.** Altitude up/down, the crowd bigger each time. Never animated. |
 | 3a.5 | News vans | the end of the act; the world has arrived and she is still on hold |
+
+
+---
+
+## ⚠️ The §3a.2a ledger — ten rounds, and what it taught
+
+**The longest single fight in the project.** Worth keeping because almost none of it was about
+this shot.
+
+**Rounds 1–4 + a location turnaround: trying to move the camera across the road.** Every attempt
+specified the corner harder; each bought more invented street. **A reference cannot move the
+camera somewhere it has never seen** — §2j.0 is a pavement-level view, so it has no information
+about the far side, and it wins ties.
+
+**Rounds 5–7: trying to hide the setting.** Blur, bokeh, zoom burst, flash-and-drag. All
+underdelivered for one physical reason: **light streaks need lights**, and flat overcast
+mid-morning has no point sources. The engine was right and the prompt was wrong.
+
+**Round 8: dusk + a thirty-second exposure. ✅ Accepted.** Real light sources, the traffic drawn
+into unbroken ribbons, and every passer-by **vanished** — nobody stands still long enough to
+register. *She is the only person in the picture because she is the only one who stayed.*
+
+### The clip took six more rounds, and the lesson is the one worth keeping
+
+| Attempt | Result |
+| --- | --- |
+| describe the ribbons in my own words (*bands, flowing along their length*) | reverted to a bus with motion blur |
+| tell it *"never resolve into cars — no vehicle is ever visible"* | put **car**, **headlight** and **vehicle** in the prompt three times; got a bus |
+| freeze everything, 50-word prompt | trails still reverted |
+| Ingredients + `@Karen` | held her face, **re-staged the entire shot** |
+| a full day-to-night timelapse | produced the effect and **abandoned the frame** |
+| ✅ *"The attached image is a frame from a timelapse. **Continue that same timelapse** from this exact frame."* | **worked** |
+
+> ### ✅ Ask the engine to *continue* a state, not to *reach* one.
+>
+> Every failed version asked for a transformation — become a long exposure, become night, become
+> a timelapse. **The accepted version asked for nothing to change**: the still already *was* a
+> long-exposure timelapse frame, so the instruction was to keep going.
+>
+> **And "timelapse" was the missing word all along.** *Long exposure* is a stills concept with no
+> video equivalent — [it cannot be shot, only made in
+> post](https://nofilmschool.com/2017/08/how-create-long-exposure-video-effect-after-effects) — so
+> the engine had nothing to reach for and fell back to its prior: a bus. **Timelapse is a video
+> form the model knows from thousands of hours of night-city footage**, and light trails are
+> native to it.
+>
+> ### ⚠️ The general rule: **the more change you ask for, the less the start frame holds.**
+>
+> Small asks keep the frame and refuse the effect; big asks deliver the effect and abandon the
+> frame. **When both matter, find the framing where the effect is already present in frame 0 and
+> ask only for continuation.**

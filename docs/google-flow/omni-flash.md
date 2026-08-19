@@ -873,6 +873,37 @@ eight seconds, from the first frame to the last."*
 **Duration matters because the still is a counter-argument.** A frame of someone standing
 quietly is a very strong reference for standing quietly, and a weak instruction loses to it.
 
+### ✅ Ask it to *continue* a state, never to *reach* one `[observed]`
+
+**The fix that ended a six-round fight** (Karen §3a.2a-v, 2026-08-18). A still of a long-exposure
+night street would not animate: every version reverted the light trails to **a bus with motion
+blur**, including a 50-word prompt, a fully frozen background, and an explicit ban on vehicles.
+
+**Two causes, and both are about vocabulary rather than effort:**
+
+1. **⚠️ *Long exposure* is a stills-only concept.** Every video frame is a short exposure, so
+   there is no state the engine can hold. It cannot be shot, only made in post — so the model had
+   nothing to reach for and fell back to its prior for *night street*. **"Timelapse" is the video
+   form where light trails legitimately live**, and it is one of the largest stock-video
+   categories in existence. Say timelapse.
+2. **The instruction was a transformation.** *Become a long exposure* / *become night* / *become a
+   timelapse* all ask the engine to leave frame 0. What worked was:
+
+> The attached image is a frame from a timelapse. **Continue that same timelapse** from this exact
+> frame.
+
+**Frame 0 already showed the effect, so the ask was zero change.** Look for the framing where what
+you want is already visible in the starting image, then ask only for continuation.
+
+### ⚠️ The change/adherence trade is a straight line
+
+Across ten rounds on one shot: **small asks keep the frame and refuse the effect; big asks deliver
+the effect and abandon the frame.** A full day-to-night timelapse produced beautiful light trails
+and regenerated the whole set, including deleting the phone box.
+
+**There is no wording that buys both.** When both matter, change the *starting frame* so the ask
+can be small — not the prompt.
+
 ### Slop counters specific to motion `[community]`
 
 Additions to the table in the previous section:
