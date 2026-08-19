@@ -8,8 +8,8 @@ updated: 2026-08-19
 
 # Karen — Act 4, The Ultimate Manager
 
-Plate and clip prompts for the act where a television show escalates Karen to the one man with
-no manager above him, and an AI fires him live on air.
+Plate and clip prompts for the act where a show escalates Karen to the one man with no manager
+above him, and an AI fires him on air.
 [`story.md`](./story.md#act-4--the-ultimate-manager) §Act 4. Section numbers run at **§4a**.
 
 > ## 🖐 A brief, not a record
@@ -43,16 +43,26 @@ Never *news*, *reporter*, *broadcast*, *live*, *television*. **The picture may l
 anything; the prompt may not say so.** Full note:
 [`failure-modes.md`](../../flow/failure-modes.md).
 
-### 2. ⚠️ The President is **fictional and must not resemble anyone**
+### 2. ⚠️ He is **"some guy in a suit."** The word *President* never appears in a prompt.
 
-Canon never names him, and he must stay unnamed. The documented rewrite for a real or named
-person is *"a fictional adult … **do not resemble any real person**"*, and every plate in this
-act that includes him carries that line verbatim.
+**Ruled 2026-08-19 (Kai)**, and it is the [film-crew rule](#1-it-is-a-film-crew-and-a-film-set-the-word-news-is-banned)
+applied a second time: **do not name the risky category, name a benign one.** Deleting the word
+while describing an oval office and a motorcade would fail the same way deleting *"reporter"*
+failed while a microphone was in shot.
 
-**He is also easier to shoot than he sounds.** Canon gives him **two words** — *"Hello — this is
-the President."* — so he needs **no dialogue on screen** and can be shot the way Act 2 shot the
-Chief of Staff: **from behind, from a distance, or as a figure in a chair**. The less of his face
-the film sees, the safer and the funnier: *the ultimate manager is a shape in a suit.*
+**So in every prompt in this act he is simply *a man in a dark suit*** — in a chair, at a desk,
+walking down a corridor. No office of state, no flags, no seal, no motorcade, no security detail,
+no title, no country. **The audience gets it from the story and the narrator; the prompt gets
+none of it.**
+
+**This costs the film nothing, because canon gives him two words** — *"Hello — this is the
+President."* — and that line is **spoken, not shown.** He needs no dialogue on screen at all, so
+he can be shot the way Act 2 shot the Chief of Staff: **from behind, from a distance, or as a
+shape in a chair.** The less of his face the film sees, the safer and the funnier: **the ultimate
+manager is a silhouette in a suit.**
+
+**Keep the non-resemblance line anyway**, on any plate where his face could appear: *"a fictional
+man; do not resemble any real person."* Belt and braces, and it is one clause.
 
 ### 3. The look changes, and that is the point
 
@@ -145,6 +155,6 @@ Constraints: adults only; ordinary present-day office clothes, no suits and ties
 | 4a.2 | The intern says it — plate | her, finally noticed; the room turning towards her |
 | 4a.3 | The executives discover their own genius | canon lands the joke **here**, before the call |
 | 4a.4 | The set — the show | **a film set, never a studio.** Lights, a desk, two chairs, a crew |
-| 4a.5 | The ultimate manager | ⚠️ fictional, non-resemblance line mandatory; **shot from behind** |
+| 4a.5 | The ultimate manager | ⚠️ **"a man in a dark suit"** — never named, no office of state, **shot from behind** |
 | 4a.6 | The call | two lines of dialogue in the whole act |
 | 4a.7 | Sean AI takes the screen | same UI as §1.4, **gold** icon now — the bookend |
