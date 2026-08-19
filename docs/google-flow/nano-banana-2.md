@@ -654,6 +654,27 @@ kit:
   street shots where you want distance between camera and subject"* — so it carries story as well
   as look, which is the only kind of style decision worth making.
 
+### 15. ✅ If the setting keeps coming back wrong, check whether the shot needs a setting at all
+
+Karen §3a.2a burned four rounds and a location turnaround trying to render a street corner from a
+viewpoint the reference had never seen. **The shot was a long lens wide open — at which point the
+entire background is out of focus and none of that geometry appears in the picture.**
+
+**Ask what actually has to be sharp.** Anything soft does not have to be accurate, and
+**describing it as a blur is strictly easier than describing it correctly**: a blur has no
+geometry to get wrong. This inverts the usual instinct, which is to specify harder when a frame
+comes back wrong.
+
+Applies wherever a shot has a shallow-focus excuse: long lenses, wide apertures, night, rain,
+distance, foreground occlusion.
+
+### 16. ✅ Natural language beats camera data for optics `[community]`
+
+Testing found *"a telephone with a shallow depth of field"* produced the effect more reliably than
+f-stops and focal lengths. **These models parse description better than specification.** Keep the
+focal length when the *perspective* matters (compression, distortion), but say *"thrown completely
+out of focus"* rather than trusting `f/2.8` to deliver it.
+
 ### Sources for this section
 
 - [Google — prompting tips for Nano Banana Pro](https://blog.google/products/gemini/prompting-tips-nano-banana-pro/) `[vendor]`
