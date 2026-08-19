@@ -333,9 +333,25 @@ Thanks.
 
 **Cast:** none. **No `STYLE LOCK` on this one** — see the note below.
 
+> ## ⛔ SUPERSEDED 2026-08-19 — **the logo exists.**
+>
+> **Jack has made the Sean AI moniker**: a chunky 8-bit pixel-art **robot head** in dark grey
+> with heavy black outlines, hooded eyes with red pupils, a small flat mouth, side plates like
+> ears, a neck and shoulders, an **S** on the chest, and the wordmark **SEAN AI** in pixel
+> capitals beneath it.
+>
+> **The brief below was wrong and is kept only as a record.** It called for *"no face, no eyes
+> and nothing humanoid"* — that reading of *"a screen, never a face"* was mine, and it meant
+> *never a human character*, not *never an icon with eyes*. **The asset is canon; do not
+> generate a new glyph.** Attach the logo file as a reference wherever the screen appears.
+>
+> **It is needed in two colourways:** the dark-grey original for **§1.4**, and a **gold**
+> version for **§4.3**, where the same icon returns promoted. The gold one is a one-line edit of
+> the original, never a fresh generation — the callback only works if it matches.
+
 This is a **design artifact**, not a photograph, and it recurs: §4.3 has to reuse it
 exactly. Canon: minimal, an **8-bit pixel-art moniker** parodying the Claude Code
-symbol, *"Sean AI"* — **iconography, not a face. Never humanize him.**
+symbol, *"Sean AI"*.
 
 > **Two departures, both deliberate.**
 >
