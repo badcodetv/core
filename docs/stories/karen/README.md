@@ -80,6 +80,10 @@ A hundred years later, there's a statue.
     escalation formula. §2j. Plates first, clips after. The aerial is the master:
     the later rungs are re-fires of it with one line swapped, because **sameness
     is the point** in this section.
+  - [`prompts-act4-manager.md`](./prompts-act4-manager.md) — **Act 4**, the ultimate
+    manager. §4a. Carries two standing rulings: everything is a **film crew on a film
+    set** (the word "news" is banned after four policy refusals), and the President is
+    **fictional, non-resembling and shot from behind**.
   - [`prompts-act3-viral.md`](./prompts-act3-viral.md) — **Act 3**, viral. §3a. The
     first act with two people in it, which is the hard part: two figures in
     relative motion interpenetrate and it is not fixable by prompting, so the
