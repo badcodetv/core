@@ -170,6 +170,26 @@ mappings are not. Substitute by meaning, in context.
 **Hard limit, no rewrite exists:** uploaded images containing real minors are a
 zero-tolerance block on the image content itself. No caption change fixes it.
 
+### ⚠️ False positives on crowd uploads — *"We do not allow uploads of minors at this time"*
+
+**Observed 2026-08-19 (Karen §3a.4c-v).** An AI-generated high-angle crowd of adults was
+refused on upload. **The age classifier runs on faces, and low-resolution faces read young** —
+at that distance each face is a few dozen pixels, so there is not enough detail to judge age
+and the classifier defaults to *could be a minor*. Nothing in the picture was a child.
+
+**Fixes, cheapest first:**
+
+1. **Upscale before uploading.** Counter-intuitive and the most direct fix: bigger faces give
+   the classifier the detail it needs.
+2. **Crop the edges** — the smallest, most distant figures are the trigger.
+3. **Re-export** (PNG↔JPEG, resize a few percent) for a fresh classifier pass.
+4. **Try another candidate** from the same generation; face sizes vary.
+5. **Do not animate it.** Use the frame as a held still.
+
+**Prompt-side prevention for crowd plates: write the crowd as explicitly adult.** *"People of
+all ages"* invites the flag; *"adult New Yorkers, office workers and commuters of all adult
+ages"* does not. Same mechanism as the age-loaded-language row above, applied to groups.
+
 ## A7. Two structural rules that make blocks rare
 
 **Load-bearing text belongs in the comic, not the image.** If a sign or headline must be
