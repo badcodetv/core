@@ -170,6 +170,28 @@ mappings are not. Substitute by meaning, in context.
 **Hard limit, no rewrite exists:** uploaded images containing real minors are a
 zero-tolerance block on the image content itself. No caption change fixes it.
 
+### ⚠️ Synthetic-news trigger — *"may cause reputational risk or misrepresent current events"*
+
+**Observed 2026-08-19 (Karen §3a.5v).** A clip of a woman with a microphone talking to camera on
+a street was refused. **The picture was not the problem — the vocabulary was.** *Reporter*,
+*live television report* and *news van* together describe fabricated broadcast footage, one of
+the highest-risk categories in any content policy.
+
+**Rewrite: keep the journalism in the picture, take it out of the prompt.** The still already
+carries the microphone, the crew light and the van; the engine only needs to know how things
+*move*.
+
+| Says | Write instead |
+| --- | --- |
+| a television reporter | the woman in the dark coat at the front |
+| talking to camera / reporting live | talking, facing the front |
+| a news van | the van at the kerb |
+| the clipped rhythm of a live report | talking steadily and clearly |
+
+⚠️ **Act 4 will hit this much harder** — a TV studio with a president on air. Same rule: a studio
+is *"a room with lights and cameras"*, a president is *"a man in a suit behind a desk"*. The
+image may be as journalistic as you like; the prompt may not.
+
 ### ⚠️ False positives on crowd uploads — *"We do not allow uploads of minors at this time"*
 
 **Observed 2026-08-19 (Karen §3a.4c-v).** An AI-generated high-angle crowd of adults was
