@@ -675,6 +675,17 @@ f-stops and focal lengths. **These models parse description better than specific
 focal length when the *perspective* matters (compression, distortion), but say *"thrown completely
 out of focus"* rather than trusting `f/2.8` to deliver it.
 
+### 17. ⚠️ Light streaks need lights — the lighting has to permit the technique `[observed]`
+
+Karen §3a.2a spent three variants (long exposure, bokeh, zoom burst) trying to get *"streaks of
+light"* out of **flat overcast mid-morning**, which has no point sources in it. The engine was
+right and the prompt was wrong: **a long exposure of a grey street gives grey smears.** Bokeh
+discs, light trails and flare all need lamps, headlights, neon or specular highlights to exist.
+
+**Check the light before choosing the technique.** If the effect needs sources the scene does not
+have, the fix is to change the *time of day*, not the prompt — or to isolate with **exposure**
+instead of focus (underexpose ambient, light the subject) which works in any light.
+
 ### Sources for this section
 
 - [Google — prompting tips for Nano Banana Pro](https://blog.google/products/gemini/prompting-tips-nano-banana-pro/) `[vendor]`
