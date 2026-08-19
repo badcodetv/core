@@ -390,57 +390,70 @@ which costs nothing in continuity because **this is the shout he is still walkin
 
 ### 3a.2a Across the street — plate
 
-**Cast:** `@Karen`. **Attach:** the accepted **§2j.0** still as image 1 — **setting only, one
-reference.** **Time:** flat overcast mid-morning. **Engine:** Nano Banana Pro, 16:9, 3 candidates.
+**Cast:** `@Karen`. **Attach:** the accepted **§2j.0** still as image 1 — **one reference.**
+**Engine:** Nano Banana Pro, 16:9, 3 candidates.
 
-> ### The camera has stopped being an observer and become a watcher.
+> ### ⚠️ Rounds 1–4 all failed, plus a location turnaround. The diagnosis was wrong every time.
 >
-> Acts 1 and 2 spent every frame establishing that **nobody is looking at her** — pedestrians
-> pass without a glance, the camera stands in rooms she will never enter. **This is the frame
-> where that ends.** Nothing in the picture has changed except the lens, and the lens says
-> somebody is across the street with a long glass, taking her picture without permission.
+> | Round | Approach | Result |
+> | --- | --- | --- |
+> | 1 | *"from the opposite pavement, across the road"* | stayed on the near pavement |
+> | 2 | moved the camera back to the same pavement | correct, and not what was asked for |
+> | 3 | named the road and crosswalk in the foreground | camera dropped into the middle of the road |
+> | 4 | stated the near-to-far stacking order | flipped the subway entrance to the wrong side |
+> | §2j.0t | a three-panel location turnaround, to build the far side as canon | the kiosk came back redesigned in all three panels |
 >
-> **That is the whole act in one optical decision**, and it costs nothing to shoot.
-
-**200mm at f/2.8, which is the extreme end of compression on purpose.**
-[Long focal lengths stack the background forward and isolate the subject](https://www.gensgpt.com/blog/camera-angles-composition-ai-image-generation-2026-guide) —
-at 200mm the block behind her flattens into a wall and she floats in front of it. It also reads
-as **a lens choice a person made**, which is most of what separates a shot from a snapshot.
-
-**The paparazzi tell is the foreground, and it must be a parked car.** Shooting past something
-close and blurred is what says *taken from a hide* — but the clip that follows cannot afford a
-moving obstruction, so **the roof of a parked car across the bottom of the frame** does the job
-and stays put. A passing bus would be better cinema and a guaranteed re-roll.
-
-**Imperfect framing is the point, not a flaw:** off-level, her not centred, a slice of the frame
-wasted on nothing. A perfectly composed long lens looks like a poster; a slightly wrong one looks
-like someone was actually standing there.
+> **The error was treating this as a geometry problem.** Every round tried harder to specify a
+> corner the reference has never seen — and
+> [a reference wins ties](./prompts-act2-escalation.md#2j11-she-is-alone-in-it--plate), so each
+> attempt bought more invented street rather than less.
+>
+> ### ✅ The fix: at this focal length **the setting is a blur**, so stop asking for it.
+>
+> A real 200mm wide open from a hundred feet renders **the subject sharp and everything else to
+> mush.** That is the actual look being chased — and it means **the corner's accuracy stops
+> mattering**, because there is no corner in the picture. Only Karen and the kiosk around her
+> need to be right, and both are things the reference *does* contain.
+>
+> **The road stops being geometry and becomes a grey blur across the bottom of the frame.** That
+> is what says *across the street*, and a blur cannot be drawn wrong.
+>
+> ### Two more corrections from the research
+>
+> - **Natural language beats technical specification.** Testing found *"a telephone with a shallow
+>   depth of field"* outperformed f-stops and focal lengths, because these models parse
+>   description better than camera data. **The block below says *"a long-lens photograph taken
+>   from a long way off"* instead of *"200mm at f/2.8."***
+> - **Describe what is visible, not where the camera stands.** The documented camera form is
+>   *"[shot type] of image 1"* with the reference carrying the rest — and every round here got
+>   longer while getting further from the target.
 
 ```prompt
-Image 1 is the reference for the setting. Keep the street exactly as it is and redesign nothing about it: the same narrow Midtown side street, the same phone kiosk, the same subway entrance behind it with its dark green railings and green glass globes on cast-iron posts, the same pre-war masonry, the same paving, the same flat overcast mid-morning light and the same grainy super-8 film look.
+Image 1 is the reference. Keep the same phone kiosk exactly as it is — the same scuffed aluminium frame, the same chipped paint and rust, the same glazed sides and steel shelf — and the same woman, the same clothes, the same flat overcast light and the same grainy super-8 film look.
 
-The shot is taken from the opposite pavement, across the road, on a 200mm lens at f/2.8 held at chest height. The long lens flattens the whole block into a wall behind her and she is the only sharp thing in the frame. The roof of a parked car crosses the very bottom of the frame, close to the lens and heavily blurred. The frame is a few degrees off level and she sits right of centre with empty street filling the left third.
+A long-lens photograph of her taken from a long way off, as if by somebody watching her from across the street. She is in the kiosk with the receiver at her ear, caught at the top of a shout with her mouth wide open and her free hand thrown out in front of her.
 
-The woman is in the kiosk with the receiver at her ear, caught at the top of a shout with her mouth wide open and her free hand thrown out in front of her off the shelf. Her eyes are on nothing in particular out in the street. She has no idea anyone is looking at her.
+Only she and the kiosk around her are sharp. Everything else is thrown completely out of focus: the road in the foreground is a soft grey blur across the bottom of the frame, and the whole street behind her is a wash of soft shapes with no detail in it. The frame is a few degrees off level and the kiosk sits right of centre.
 
-She is the only person in the frame and the pavement is empty. Natural skin texture with visible pores and shine. No readable lettering anywhere. No border around the image.
+She is the only person in the frame. Natural skin texture with visible pores and shine. No readable lettering anywhere. No border around the image.
 
 Thanks.
 ```
 
 **What to watch:**
 
-1. **Is the background flattened?** At 200mm the buildings behind her should stack into a wall
-   with no sense of depth. If it looks like a normal street photograph, the lens instruction lost
-   — the consequence to add is *"the buildings behind her look pressed flat against her."*
-2. **Is she the only sharp thing?** Everything else soft, including the kiosk frame. That
-   isolation is what makes it feel taken rather than composed.
-3. **Is the framing slightly wrong?** Off-level, off-centre, a third of the frame doing nothing.
-   A tidy composition here reads as a poster and kills the idea.
-4. **Is the car roof static and blurred?** It is the paparazzi tell and it has to be a parked
-   car, because the clip cannot afford a moving obstruction.
-5. **Is she at the top of the shout?** Mouth wide open. A woman talking normally gives the
-   narrator and the song nothing to land on.
+1. **Is everything except her genuinely soft?** The whole point. **If the street behind her comes
+   back detailed, the shot is back to being a geometry problem** — and the lever is more blur, not
+   more description: *"the background is unrecognisable, just soft shapes and colour."*
+2. **Is the kiosk right?** It is now the only thing in frame that has to match, which is the
+   entire reason this approach should work.
+3. **Is there a grey blur along the bottom?** That is the road, and it is what says the camera is
+   on the other side of it.
+4. **Is she at the top of the shout?** Mouth wide open. The line is the hook of the song.
+
+> **If this fails too, stop.** [§3a.2c](#3a2c-the-phone-screen-version--plate) already covers
+> *she is being watched* — literally, and as the artefact rather than the metaphor. Four seconds
+> of screen time does not owe us five rounds.
 
 ### 3a.2b Through the side panel — plate
 
@@ -694,7 +707,7 @@ Constraints: keep every sign, route map, notice, advertisement, sticker and the 
 | 3a.0v | Crossing to the stop — clip | **only he moves**: up onto the pavement, along, slowing, head turning towards the kiosk |
 | **3a.1** | The sample — plate | ✅ written, **round 4** — 135mm three-quarter; he stands by the subway railings behind her |
 | **3a.1v** | The sample — clip | ✅ written — **only she moves**; he is planted and the one change is a smile |
-| **3a.2a** | Across the street — plate | ✅ written — 200mm paparazzi grammar; the camera becomes a watcher |
+| **3a.2a** | Across the street — plate | ✅ written, **round 5** — the setting is a blur, so it stops needing to be accurate |
 | **3a.2b** | Through the side panel — plate | ✅ written — the upright cuts her face in two |
 | **3a.2c** | The phone-screen version — plate | ✅ written — **`STYLE LOCK` off**, the only plate in the film without it |
 | 3a.2v | …— clip | **only she moves.** This is the *"I've got ALL DAY to complain"* shot |
