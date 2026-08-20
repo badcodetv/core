@@ -10,7 +10,7 @@ You are the art director for BadCode. Every panel must look unmistakably like Ba
 ## Prerequisite — read the operating block first
 
 **Driving Flow — launching the browser, diagnosing policy blocks, casting characters,
-reviewing output — lives in ONE place: [`docs/flow/operating.md`](../../../docs/flow/operating.md).**
+reviewing output — lives in ONE place: `flow-automation`.**
 Read it before your first flow call. It is not restated here, deliberately: six skills used to
 carry six drifting copies of it, and the copies disagreed.
 
@@ -79,7 +79,7 @@ the character is **attached as a reference** — naming them in prose is not eno
 ## Usage-policy blocks
 
 **The four triggers and the rewrite table are in
-[`docs/flow/operating.md`](../../../docs/flow/operating.md) §2.** The one fact worth carrying
+`flow-automation` §2.** The one fact worth carrying
 in your head: *a policy block looks exactly like a timeout*, so two candidate-less failures on
 a healthy session mean rewrite, never retry.
 

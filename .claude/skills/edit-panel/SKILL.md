@@ -23,8 +23,8 @@ the Playwright MCP.
    - `NO_RECORDS` / `RECORD_NOT_FOUND` → tell the user that comic isn't on the record
      pipeline yet; stop.
    - `PAGE_NOT_IMAGE` → hand off to **animate-slide**.
-2. If any flow call returns `NOT_RUNNING`: bring the browser up yourself — the recipe is
-   [`docs/flow/operating.md`](../../../docs/flow/operating.md) §1.
+2. If any flow call fails — `NOT_RUNNING`, a timeout, an empty result — **`flow-automation`**
+   owns it. Bring the browser up yourself; never bounce it to the user.
 3. `flow_open_project` — use the comic's Flow project if one exists (e.g. `camping-v2`);
    otherwise any scratch project (e.g. `edit-smoke`). The edit is fully anchored by the
    uploaded reference, so project choice only affects where Flow files its media.

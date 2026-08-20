@@ -52,24 +52,12 @@ does not read `comic.meta.ts` for animations; Karen's 9 working animations aren'
 
 ## Flow engine (required before generating)
 
-Video generation runs through the **`flow` MCP server**, not by driving the browser by hand.
-Call `flow_status` once before producing:
+**Invoke the `flow-automation` skill.** It owns getting the browser up, the tool surface, and
+every failure mode — including the two that bite this skill specifically: a cluttered project
+degrading the animate path (`ANIMATE_NOT_FOUND`), and video mode poisoning the asset picker.
 
-- `{ loggedIn: true }` → you are ready.
-- `NOT_RUNNING` → bring the browser up yourself; the recipe is
-  [`docs/flow/operating.md`](../../../docs/flow/operating.md) §1. It renders via WSLg, so the
-  user sees the window.
-- `loggedIn: false` → ask the user to sign in; nothing else here will work.
-
-Then open the working project once with `flow_open_project`. **Prefer a project that is not
-full of test media**: the animate path identifies the still you just uploaded by diffing the
-tile grid, and that diff degrades in a project holding dozens of items (observed failing with
-`ANIMATE_NOT_FOUND` at ~30 items, 2026-08-12, and working immediately in a fresh project).
-`flow_create_project` gives you a clean one.
-
-For what the tools do underneath — the compose bar, the frame slots, the completion signal,
-the mp4 harvest — see **`docs/flow/automation-video.md`**. You should not need it to run this
-skill; read it when something fails.
+The short version: `flow_status` → if `NOT_RUNNING`, bring Chrome up yourself, never bounce it
+to the user → `flow_open_project`, preferring one **not** full of test media.
 
 ---
 
@@ -82,8 +70,7 @@ user start things by hand.
 1. **Start the dev server yourself**, backgrounded: `npm run dev` (from repo root). Read the
    port from its output (`http://localhost:<port>/comics/<comic>`) — it's `5173` unless taken.
    **Print the URL** so the user can open it on their side too if they like.
-2. **Ensure the shared browser** is up (`flow_status`; on `NOT_RUNNING` follow
-   [`docs/flow/operating.md`](../../../docs/flow/operating.md) §1).
+2. **Ensure the shared browser** is up (`flow_status`; on `NOT_RUNNING` see **`flow-automation`** §1).
 3. **Open the comic in the shared browser**: `browser_navigate` to
    `http://localhost:<port>/comics/<comic>`. This one Chromium is **both** what the user sees
    (WSLg) **and** what you screenshot (CDP) — so you're always looking at the same thing. When
@@ -201,9 +188,9 @@ the move between them. ⚠️ Then the prompt should name **only the connecting 
 two stills already carry the content, and describing the scene again makes drift worse. An
 `endImage` needs a Veo 3.1 tier (Omni Flash rejects a last frame) and cannot be passed alone.
 
-If it fails, read the error's `hint` — every failure mode here (policy block, wrong duration for
-the tier, a frame Flow rejected) names its own fix. `POLICY_BLOCKED` in particular means
-**rewrite, never retry**: see `docs/flow/failure-modes.md`.
+If it fails, read the error's `hint`, then **`flow-automation` §3** — every failure mode names
+its own fix, and they do not all want the same response. `POLICY_BLOCKED` means **rewrite,
+never retry**; an audio failure means **retry unchanged**.
 
 ### Step 5: Judge the clip
 

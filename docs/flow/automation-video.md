@@ -6,10 +6,10 @@
 > Recorded 2026-06-25 from the first successful automated image→video generation; live
 > corrections since are dated in place, most recently 2026-08-12.
 >
+> This is the input contract behind `@badcode/flow-mcp`'s video half. Playwright over CDP to a
+> WSLg Chromium logged into Flow (ULTRA plan).
+>
 > *Moved here 2026-08-20 from `docs/superpowers/` — see the note in `automation-images.md`.*
-> The **video** companion to [`automation-images.md`](./automation-images.md) (which covers images).
-> This is the input contract the `animate-slide` skill drives. Playwright MCP attached over
-> CDP to a WSLg Chromium logged into Flow (ULTRA plan).
 
 ## TL;DR — the loop that works
 

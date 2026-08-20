@@ -124,9 +124,7 @@ class-coded visual description in house style.
 If a character recurs across scenes, set up a **Flow Character** once for
 cross-scene consistency:
 
-- Prerequisite: the Flow browser up and logged in — see
-  [`docs/flow/operating.md`](../../../docs/flow/operating.md) §1 — then
-  `flow_open_project({ name })`.
+- Prerequisite: **invoke `flow-automation`** — then `flow_open_project({ name })`.
 - Generate a portrait via **`badcode-art-direction`** → `flow_generate_image`,
   harvest to `docs/shorts/<name>/scenes/img/<char>-ref.jpg` (the same
   `scenes/img/` directory the folder convention already defines for scene
@@ -174,9 +172,8 @@ status: planned               # planned | done
 
 ## Stage 5 — Clips (⚙ auto)
 
-Prerequisite: Flow connected — `flow_status()` → `loggedIn: true`, then
-`flow_open_project({ name })`. Do **not** hand-puppeteer Flow via the
-Playwright MCP.
+Prerequisite: **invoke `flow-automation`** — browser up, project open, failures owned.
+Do **not** hand-puppeteer Flow via the Playwright MCP.
 
 For each `scenes/sNN.md` with `status: planned`, run this exact routine:
 
@@ -188,9 +185,10 @@ For each `scenes/sNN.md` with `status: planned`, run this exact routine:
    the result against the scene + house style; use `flow_refine` to correct
    in-session if weak.
 2. **Animate** —
-   `flow_generate_video({ imagePath: "<abs>/…/scenes/img/sNN.jpg", motion: "<the scene's Motion prompt>", outPath: "<abs>/docs/shorts/<name>/clips/sNN.mp4" })`.
+   `flow_generate_video({ startImage: "<abs>/…/scenes/img/sNN.jpg", motion: "<the scene's Motion prompt>", outPath: "<abs>/docs/shorts/<name>/clips/sNN.mp4" })`.
    (`flow_generate_video` may take minutes and can post a credit gate — the
-   MCP tool already handles the gate + harvest.)
+   MCP tool already handles the gate + harvest. ⚠️ the param is `startImage`,
+   not `imagePath`.)
 3. **Record** — in `sNN.md`: fill `still_media_id` and `clip_media_id`, embed
    the still, set `status: done`, write the **exact** still + motion prompts
    used, and add a `v1` revision line.

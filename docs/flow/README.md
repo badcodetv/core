@@ -7,13 +7,14 @@ Nano Banana for stills. Read on demand via the **`flow-prompt`** skill
 **This folder holds two jobs, and they are not the same job** (restated 2026-08-20, when the
 automation half moved in from `docs/superpowers/`):
 
-| Half | What it is | Files |
-| --- | --- | --- |
-| **Craft** — platform-generic | How the *tool* behaves. True for anyone using Flow, ours or not. | `image-prompting` · `video-prompting` · `camera-vocabulary` · `consistency` · `platform-controls` · `failure-modes` |
-| **Automation** — ours | How *our* code drives it: DOM roles, selectors, completion signals, harvest. Useless to anyone not running `@badcode/flow-mcp`. | `operating` · `automation-images` · `automation-video` |
+| Half | What it is | Files | Skill |
+| --- | --- | --- | --- |
+| **Craft** — platform-generic | How the *tool* behaves. True for anyone using Flow, ours or not. | `image-prompting` · `video-prompting` · `camera-vocabulary` · `consistency` · `failure-modes` | **`scene-prompt`** *(not yet built)* |
+| **Automation** — ours | How *our* code drives it: DOM roles, selectors, completion signals, harvest. Useless to anyone not running `@badcode/flow-mcp`. | `automation-images` · `automation-video` · `platform-controls` | ✅ **`flow-automation`** |
 
-These map onto the two skills we are consolidating toward — **`scene-prompt`** reads the craft
-half, **`flow-automation`** reads the automation half.
+`platform-controls` sits on the automation side because what it answers — which tier supports
+what, what it costs, what Flow silently swaps — is a question you ask while *driving*, not
+while writing.
 
 The BadCode look — 35mm documentary register, muted cool-neutral palette, what a panel is
 allowed to be — is a **third** job and lives in the skills, deliberately NOT here:
@@ -31,7 +32,7 @@ Same split as [`docs/suno-gpt/`](../suno-gpt/README.md) and the `suno-prompt` sk
 
 | File | What | Read when |
 | --- | --- | --- |
-| [`operating.md`](./operating.md) | **The operating block** — launching the browser, policy blocks, casting, which surface to reach for, how to review output | **First, before any flow call.** The six Flow-using skills point here instead of restating it |
+| [`operating.md`](./operating.md) | ⚠️ **Dissolving.** Its automation half became the `flow-automation` skill; the policy-block triggers and casting discipline wait here for `scene-prompt` | Nothing points here any more. Don't add to it |
 | [`image-prompting.md`](./image-prompting.md) | Nano Banana / Pro still-image craft, editing, rendered text | Generating or editing any still |
 | [`video-prompting.md`](./video-prompting.md) | Veo text→video, image→video, frames, audio, dialogue | Any motion work |
 | [`camera-vocabulary.md`](./camera-vocabulary.md) | Shot/move/lens/lighting/grade terms, with reliability tiers | Writing the camera clause |

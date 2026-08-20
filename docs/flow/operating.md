@@ -1,48 +1,42 @@
 # Flow — the operating block
 
-**The single copy of "how to drive Flow" that every Flow-using skill points at.**
+> ⚠️ **This file is being dissolved, 2026-08-20.** It was the single copy of "how to drive
+> Flow" that six skills pointed at — a good idea that turned out to be two ideas.
+>
+> - **The automation half has moved into the `flow-automation` skill** (launching the browser,
+>   the tool surface, the failure decision table, batches, verifying output). No skill points
+>   here any more. `flow-automation` is the front door.
+> - **The prompt-craft half is still below**, waiting for `scene-prompt` to absorb it. When it
+>   does, this file goes.
+>
+> Nothing new should be added here. Add to the skill, or to the file in `docs/flow/` that owns
+> the subject.
 
-There are six skills that touch Flow (`badcode-art-direction`, `new-image`, `edit-panel`,
-`animate-slide`, `make-comic`, `music-video-short`). Before 2026-08-18 each carried its own
-paraphrase of the launch recipe and the policy-block rules — six copies of the launch
-sequence and six of the block triggers. They drifted, exactly as duplicated instructions
-always do: `badcode-art-direction` still said *"tell the user to run flow-chrome.sh"* long
-after the other five had been updated to launch it themselves, so a session that entered
-through that skill stalled and asked the user to do something the agent could have done.
-
-**Skills reference this file. They do not restate it.** If you find yourself pasting any of
-the below into a SKILL.md, link here instead — and if the guidance is wrong, fix it *here*,
-once.
+**Why the single copy existed at all**, since the lesson still applies: before 2026-08-18 each
+Flow-using skill carried its own paraphrase of the launch recipe and the policy-block rules —
+six copies of each. They drifted exactly as duplicated instructions always do:
+`badcode-art-direction` still said *"tell the user to run flow-chrome.sh"* long after the other
+five had been updated to launch it themselves, so a session entering through that skill stalled
+and asked the user to do something the agent could have done.
 
 ---
 
-## 1. Bring the browser up yourself
+## 1. A policy block looks exactly like a timeout
 
-Image and video generation run through the `flow` MCP server. If `flow_status` — or any flow
-call — returns `{ error: true, code: "NOT_RUNNING" }`, **do not bounce this to the user.**
+*(Destined for `scene-prompt` — this is about how to WRITE, not how to drive.)*
 
-1. `Bash` with `run_in_background: true` → `./scripts/flow-chrome.sh`
-   (Chrome with CDP on port 9222 and the persistent `.flow-profile/` session).
-2. Wait for the port:
-   `for i in $(seq 1 20); do curl -s -m 2 http://localhost:9222/json/version >/dev/null && break; sleep 1; done`
-3. `flow_status` → if `loggedIn: true`, proceed. **Only** if `loggedIn: false` (first run, or
-   an expired session) ask the user to log into Google in the window that opened.
-
-- The login persists in `.flow-profile/`, so a relaunch is normally already signed in.
-- **Don't relaunch Chrome between generations** — the MCP caches its CDP attachment.
-- Characters are **project-scoped**. Open the right project before casting or generating, or
-  the character silently will not exist.
-
-## 2. A policy block looks exactly like a timeout
-
-This is the single biggest time-saver in the whole toolkit. Over half the generations on the
-camping recut were blocked by the usage filter, not slow — and over CDP a block is
-indistinguishable from a slow generation. The natural instinct (retry) burns minutes on a
-prompt that can never pass.
+The single biggest time-saver in the whole toolkit. Over half the generations on the camping
+recut were blocked by the usage filter, not slow — and over CDP a block is indistinguishable
+from a slow generation. The natural instinct (retry) burns minutes on a prompt that can never
+pass.
 
 **Diagnosis rule:** two failures with no candidates, while the session is otherwise healthy
 (`flow_status` fine, project loads, other prompts working) = **policy block**. Rewrite it; do
 not retry it. Glance at the Flow window to confirm.
+
+⚠️ Refined 2026-08-18: a block is the *likeliest* cause of an empty result, not the only one.
+An audio failure and a rate limit look identical and want the opposite response. The full
+decision table is **`flow-automation` §3**.
 
 ### The four triggers
 
@@ -70,7 +64,10 @@ not retry it. Glance at the Flow window to confirm.
 readable should be a bubble/narration overlay in `@badcode/comic` — sharper, editable,
 translatable, and unblockable.
 
-## 3. Casting a recurring character
+## 2. Casting a recurring character
+
+*(Destined for `scene-prompt` — the discipline. The `character` parameter that implements it
+is `flow-automation`'s.)*
 
 A recurring character must read as the **same person** in every frame, and that likeness comes
 from a **Flow Character** attached as a reference. Naming them in prose binds nothing.
@@ -81,51 +78,12 @@ from a **Flow Character** attached as a reference. Naming them in prose binds no
   plus image references provably do not hold a face: the 2026-07-25 camping recut tried it and
   produced a third face matching neither previous version. If the character can't be cast
   (wrong project, MCP failure), **stop and fix that** rather than falling back to prose.
-
-## 4. Which surface to reach for
-
-| You want | Use |
-| --- | --- |
-| A still | `flow_generate_image` |
-| A change to an existing still | `flow_edit_image` (reference-anchored) |
-| Motion where something in the world moves | `flow_generate_video` |
-| A camera-only move on a still | **post (ffmpeg / the edit)** — see `video-prompting.md` §9 |
-| Runway: continue a clip with its own context | `flow_scene_extend` (Scene Builder) — ⚠️ runs at Veo 3.1 Lite whatever the source tier |
-| A frame out of a clip, into the gallery | `flow_scene_save_frame` |
-
-**Two constraints that decide the shot before you write it** (both Google-published, see
-[`platform-controls.md`](./platform-controls.md) §1):
-
-- **A cast character can't be generated on Veo 3.1 Quality**, and forces 8 seconds. Character
-  shots top out at Fast.
-- **Veo's audio is always on and cannot be turned off.** BadCode's audio is Suno's, so strip
-  it: `ffmpeg -i clip.mp4 -c:v copy -an out.mp4`. Still write one short audio line into the
-  prompt — an unspecified soundscape is the one most likely to fail and take the picture with
-  it.
-
-## 5. Review what you generated — properly
-
-**Do not judge a clip from three sampled frames.** A door that swings open for 1.5 seconds sits
-entirely between them, and you will report success on a broken clip (done, 2026-08-18).
-
-```bash
-scripts/video-contact-sheet.sh clip.mp4              # every frame at 4fps, one image
-REGION=left scripts/video-contact-sheet.sh clip.mp4  # crop a band + brighten it
-```
-
-Near-black BadCode frames hide motion at full-frame scale — use `REGION` when the suspect
-detail is small or dark.
+- 🔴 **A cast character cannot be generated on Veo 3.1 Quality**, and forces 8s
+  ([`platform-controls.md`](./platform-controls.md) §1). Character shots top out at Fast.
 
 ---
 
 **Platform craft** (how Flow behaves) is the rest of [`docs/flow/`](./README.md).
+**Driving it** is the `flow-automation` skill.
 **The BadCode look** stays in `badcode-art-direction` (panels) and `new-image` (brand imagery).
 **Per-story prompts** live in `docs/stories/<story>/prompts.md`.
-
----
-
-## Sources
-
-This file is a pointer, not a source of record: every fact in it is stated and cited in one of
-the files it links to. The Google pages behind them are listed in
-[`README.md`](./README.md) → Provenance → *2026-08-18 — the primary-source pass*.
