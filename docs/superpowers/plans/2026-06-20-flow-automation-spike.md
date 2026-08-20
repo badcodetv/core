@@ -321,11 +321,11 @@ git commit -m "feat(cli): flow-prep — stage prompt + reference files for a sli
 ### Task 4: Spike one Camping slide end-to-end + record the selector map
 
 **Files:**
-- Create: `docs/superpowers/flow-selectors.md`
+- Create: `docs/flow/automation-images.md`
 
 **Interfaces:**
 - Consumes: `badcode flow-prep` (Task 3), the Playwright MCP attach (Task 2), the logged-in Chrome (Task 1), and existing `badcode push` / `badcode status`.
-- Produces: `docs/superpowers/flow-selectors.md` — the recorded selector/step map that Phase 2 (`badcode flow`) will be built from; and one real frame for `camping / p8-main` in the bucket.
+- Produces: `docs/flow/automation-images.md` — the recorded selector/step map that Phase 2 (`badcode flow`) will be built from; and one real frame for `camping / p8-main` in the bucket.
 
 This task is **exploratory**: it discovers Flow's live UI. Do the steps interactively via the Playwright MCP tools, writing down what works as you go.
 
@@ -362,12 +362,12 @@ Expected: the `p8-main` row shows `latest✓`.
 
 - [ ] **Step 6: Write the selector/step map**
 
-Create `docs/superpowers/flow-selectors.md` capturing, for the image loop: the Flow URL(s); the selector/role for the prompt field; the working reference-attachment method (A/B/C) and its selector; the generate trigger; the **completion signal**; the candidate-grid structure; and the download trigger + where files land. This is the input contract for Phase 2.
+Create `docs/flow/automation-images.md` capturing, for the image loop: the Flow URL(s); the selector/role for the prompt field; the working reference-attachment method (A/B/C) and its selector; the generate trigger; the **completion signal**; the candidate-grid structure; and the download trigger + where files land. This is the input contract for Phase 2.
 
 - [ ] **Step 7: Commit**
 
 ```bash
-git add docs/superpowers/flow-selectors.md
+git add docs/flow/automation-images.md
 git commit -m "docs(flow): record Flow UI selector/step map from the spike"
 ```
 
@@ -378,7 +378,7 @@ git commit -m "docs(flow): record Flow UI selector/step map from the spike"
 - `badcode flow-prep camping <slide> -d <dir>` prints the prompt and downloads the reference files (Task 3, unit-tested).
 - The Playwright MCP attaches to the logged-in Flow session over CDP (Task 2, verified by a signed-in screenshot).
 - One real frame for a Camping slide was generated in Flow via that attach, judged, and pushed to the bucket (`badcode status camping` shows `latest✓`).
-- `docs/superpowers/flow-selectors.md` records Flow's actual UI well enough to build the deterministic `badcode flow` command in Phase 2.
+- `docs/flow/automation-images.md` records Flow's actual UI well enough to build the deterministic `badcode flow` command in Phase 2.
 
 ## Out of scope (Phase 2 / later cycles)
 

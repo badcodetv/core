@@ -11,7 +11,7 @@
 ## Global Constraints
 
 - Skill name is exactly **`make-comic`**; it lives at `.claude/skills/make-comic/SKILL.md` as **one self-contained file** (no separate references file).
-- **Compose, don't duplicate:** reuse `new-story` for canon, the Flow recipe (`docs/superpowers/flow-selectors.md`) for images, `packages/comic/AUTHORING.md` for assembly. Point at these; don't restate their content.
+- **Compose, don't duplicate:** reuse `new-story` for canon, the Flow recipe (`docs/flow/automation-images.md`) for images, `packages/comic/AUTHORING.md` for assembly. Point at these; don't restate their content.
 - **Gated stages:** every stage is *discuss → approve → produce*; never generate an image before that stage's discussion is approved.
 - **Source of truth is `docs/stories/<story>/`**; the comic in `apps/web` is derived (stage 6). For v1, derivation copies storyboard images into the web app `public/` with a local manifest via `createComic(manifest, { baseUrl: '' })`. Bucket/`assets-build` migration is an explicit follow-up, NOT in this skill.
 - **A Flow Character for every named character.** Multi-character casting is verified (cast every relevant Character by name in a scene).
@@ -49,7 +49,7 @@ not duplicate them.
 
 - [ ] **Step 2: Write "Read first" pointers**
 
-Append a section pointing at (do not restate): `CLAUDE.md`; `docs/voice.md` (tone); `docs/storytelling.md` (method); the **`new-story`** skill (canon capture); `docs/superpowers/flow-selectors.md` (the Flow recipe); `packages/comic/AUTHORING.md` (assembly). One line each.
+Append a section pointing at (do not restate): `CLAUDE.md`; `docs/voice.md` (tone); `docs/storytelling.md` (method); the **`new-story`** skill (canon capture); `docs/flow/automation-images.md` (the Flow recipe); `packages/comic/AUTHORING.md` (assembly). One line each.
 
 - [ ] **Step 3: Write the six-stage overview table + gating principle**
 
@@ -151,7 +151,7 @@ Image stages REQUIRE Flow connected. Ensure it before producing:
 
 - [ ] **Step 2: Write the per-image routine**
 
-Append the exact routine (Flow is agent-driven; one image per request; iterate to refine — see `docs/superpowers/flow-selectors.md`):
+Append the exact routine (Flow is agent-driven; one image per request; iterate to refine — see `docs/flow/automation-images.md`):
 
 ```markdown
 ### Per-image routine

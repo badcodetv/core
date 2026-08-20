@@ -20,8 +20,8 @@ and `new-story` scaffolds its canon folder.
 - [`shorts/`](./shorts/README.md) — short-form music-video packages (`music-video-short` skill)
 - [`images/`](./images/README.md) — standalone brand imagery catalogue (`new-image` skill)
 - [`suno-gpt/`](./suno-gpt/README.md) — Suno toolkit (`suno-prompt` skill): prompt language, the control sliders, the recurring-narrator stack, and what Suno reliably gets wrong
-- [`flow/`](./flow/README.md) — Google Flow toolkit (`flow-prompt` skill): Nano Banana and Veo prompt craft, camera vocabulary, consistency, policy blocks and what Flow reliably gets wrong
-- [`superpowers/`](./superpowers/) — plans & design specs archive
+- [`flow/`](./flow/README.md) — Google Flow toolkit, two halves: **craft** (Nano Banana and Veo prompt craft, camera vocabulary, consistency, policy blocks) and **automation** (how `@badcode/flow-mcp` drives the browser — selectors, DOM roles, harvest)
+- [`superpowers/`](./superpowers/) — **archive only**: dated implementation plans & design specs. Nothing live lives here; the name is a fossil of a plugin we no longer run. Flow automation notes moved to [`flow/`](./flow/) on 2026-08-20
 
 ## Core context (read these first)
 

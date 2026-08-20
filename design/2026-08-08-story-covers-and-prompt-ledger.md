@@ -343,7 +343,7 @@ file — it would otherwise pollute every `grep` over the cast tables.
 story: camping                  # must equal the folder name
 flow_project: badcode-camping   # EXACT Flow project name; flow_open_project
                                 # matches exact names only and rename is not
-                                # automatable (flow-selectors.md:226)
+                                # automatable (automation-images.md:226)
 flow_project_id: <uuid>         # filled by T11b
 updated: 2026-08-08
 ---
@@ -429,7 +429,7 @@ enumeration (T11a) and project creation (T12) are therefore
 UI actions — not flow-mcp calls.
 
 **Aspect ratio is not a parameter.** It is a global Flow UI tab and defaults to
-landscape, which is what covers need. Note `docs/superpowers/flow-selectors.md:232`
+landscape, which is what covers need. Note `docs/flow/automation-images.md:232`
 logs aspect control as an open issue: real observed output is **1376×768
 (ratio 1.792)**, near but not exactly 16:9. Assert "landscape within 2% of
 1.778", never strict equality.
@@ -746,7 +746,7 @@ before this gate clears.**
   Playwright MCP against the attached browser; there is no flow-mcp create tool.
   Adopt an existing project where T11a identified one rather than creating a
   duplicate; since **rename is not automatable**
-  (`docs/superpowers/flow-selectors.md:226`), record the project's *real* name in
+  (`docs/flow/automation-images.md:226`), record the project's *real* name in
   the ledger's `flow_project` field rather than trying to rename it.
   `flow_open_project` matches exact names only.
 - **Files:** modify all four `docs/stories/*/prompts.md`, `docs/stories/FLOW-STATE.md`.
@@ -918,7 +918,7 @@ before this gate clears.**
   ratio check —
   `identify -format "%f %w %h\n" docs/images/covers/*.jpg | awk '{r=$2/$3; if(r<1.742||r>1.814){print "FAIL",$0; f=1}} END{exit f}'`
   exits `0` (1.778 ±2%, tolerating the observed 1376×768 = 1.792 per
-  `flow-selectors.md:232`);
+  `automation-images.md:232`);
   `grep -c 'Flow media id: <uuid>' docs/stories/*/prompts.md` returns `0` (`|| true`);
   manual visual check of all four side by side at thumb width.
 - **Depends on:** T18

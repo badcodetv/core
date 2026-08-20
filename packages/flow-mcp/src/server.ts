@@ -82,7 +82,7 @@ function toToolError(err: unknown): ToolResult {
 
 /**
  * Flow's documented image aspect ratios (docs/flow/image-prompting.md §9), Nano Banana 2's
- * extras included. Selector-confirmed against the live tab list (flow-selectors.md:172-174)
+ * extras included. Selector-confirmed against the live tab list (automation-images.md:172-174)
  * for exactly two: "16:9" and "4:3". The rest are wired through the identical `ensureImageMode`
  * tab-matching path (which needs no icon-name knowledge, just the ratio text) but are UNTESTED
  * against the real DOM — flag any failures for Wave B live validation.

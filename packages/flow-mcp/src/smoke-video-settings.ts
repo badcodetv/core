@@ -23,7 +23,7 @@ try {
   const settings = page.getByRole('button', { name: /tune\s*Settings/i }).first()
   console.log('tune Settings count (project root):', await settings.count())
 
-  // flow-video.md calls it the "agent panel footer" button, so the Agent panel presumably has
+  // automation-video.md calls it the "agent panel footer" button, so the Agent panel presumably has
   // to be opened before it exists. Try that before declaring it missing.
   if (!(await settings.count())) {
     const agent = page.getByRole('button', { name: /^Agent$/i }).first()

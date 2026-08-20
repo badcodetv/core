@@ -121,7 +121,7 @@ from one portrait in a single `flow_edit_image` call produces *nothing* — no c
 ever lands. What works instead is **Portrait + native "Create Body"**, two separate
 single-subject generations. The untested fallback for deeper angle coverage is N separate
 single-image generations fed together into `flow_create_character`'s `refImages` array.
-See `docs/superpowers/flow-selectors.md`.
+See `docs/flow/automation-images.md`.
 
 ## 6. Drift is a probability, not a bug
 

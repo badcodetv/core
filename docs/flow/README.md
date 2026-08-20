@@ -4,14 +4,23 @@ Platform knowledge for **Google Flow** (labs.google/fx/tools/flow): Veo for vide
 Nano Banana for stills. Read on demand via the **`flow-prompt`** skill
 (`.claude/skills/flow-prompt/`) — never reproduce it wholesale into a reply.
 
-**This folder is platform-generic.** It describes how the *tool* behaves, true for
-anyone using Flow. The BadCode look — 35mm documentary register, muted cool-neutral
-palette, what a panel is allowed to be — lives in the skills and is deliberately
-NOT here:
+**This folder holds two jobs, and they are not the same job** (restated 2026-08-20, when the
+automation half moved in from `docs/superpowers/`):
+
+| Half | What it is | Files |
+| --- | --- | --- |
+| **Craft** — platform-generic | How the *tool* behaves. True for anyone using Flow, ours or not. | `image-prompting` · `video-prompting` · `camera-vocabulary` · `consistency` · `platform-controls` · `failure-modes` |
+| **Automation** — ours | How *our* code drives it: DOM roles, selectors, completion signals, harvest. Useless to anyone not running `@badcode/flow-mcp`. | `operating` · `automation-images` · `automation-video` |
+
+These map onto the two skills we are consolidating toward — **`scene-prompt`** reads the craft
+half, **`flow-automation`** reads the automation half.
+
+The BadCode look — 35mm documentary register, muted cool-neutral palette, what a panel is
+allowed to be — is a **third** job and lives in the skills, deliberately NOT here:
 
 | Layer | Lives in |
 | --- | --- |
-| How Flow behaves (this folder) | `docs/flow/` |
+| How Flow behaves + how we drive it (this folder) | `docs/flow/` |
 | The comic register | `.claude/skills/badcode-art-direction/SKILL.md` |
 | The brand-image register | `.claude/skills/new-image/SKILL.md` |
 | Per-story style + prompts | `docs/stories/<story>/prompts.md` |
@@ -29,6 +38,8 @@ Same split as [`docs/suno-gpt/`](../suno-gpt/README.md) and the `suno-prompt` sk
 | [`consistency.md`](./consistency.md) | Characters, ingredients, references, continuity across shots | A character or object recurs |
 | [`platform-controls.md`](./platform-controls.md) | Models, credits, aspect, duration, Scene Builder, the Agent | Planning a batch or a budget |
 | [`failure-modes.md`](./failure-modes.md) | Policy blocks + rewrites; non-policy quality failures | A generation fails, or before writing a risky prompt |
+| [`automation-images.md`](./automation-images.md) | **Automation.** The still-image UI recipe: selectors, DOM roles, the asset picker, characters, reference images, harvest | You are changing `@badcode/flow-mcp`, or a tool call behaves oddly |
+| [`automation-video.md`](./automation-video.md) | **Automation.** The image→video recipe: completion signals, Frames mode, what a finished clip offers, the picker traps | Same, for motion |
 
 ---
 

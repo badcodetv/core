@@ -7,7 +7,7 @@
 > skill guides the human toward the goal and only automates the link that's
 > already proven (Flow clips). Composes `suno-prompt`, `badcode-art-direction`,
 > and `@badcode/flow-mcp`. See [[flow-automation-integration]],
-> `docs/superpowers/flow-video.md`, and the sibling `make-comic` skill.
+> `docs/flow/automation-video.md`, and the sibling `make-comic` skill.
 
 ## Goal
 
@@ -173,7 +173,7 @@ timings.
   record routine.
 - **Points at (for depth, not duplicated):** `docs/voice.md`,
   `docs/storytelling.md`, the `suno-prompt` skill, the `badcode-art-direction`
-  skill, `docs/superpowers/flow-video.md`, and `packages/flow-mcp/README.md`.
+  skill, `docs/flow/automation-video.md`, and `packages/flow-mcp/README.md`.
 - A short row is added to `docs/shorts/README.md`'s index.
 
 ## Resume & progress

@@ -2,7 +2,7 @@
  * Manual DOM-mapping probe for the compose-bar config popover — NOT part of CI, costs nothing.
  *
  * The popover carries a PER-TURN config (Image/Video mode, model, aspect, duration, count) and
- * has never been mapped: docs/superpowers/flow-video.md still claims aspect is only settable in
+ * has never been mapped: docs/flow/automation-video.md still claims aspect is only settable in
  * the Settings panel and does not mention duration at all. It is also where the `1x` count tab
  * lives, which is silently failing to land on Nano Banana Pro (label stays `x2`).
  *

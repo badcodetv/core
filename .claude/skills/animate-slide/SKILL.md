@@ -1,6 +1,6 @@
 ---
 name: animate-slide
-description: Use to turn a single comic slide into a scroll-scrubbed video clip via Google Flow (image→video / Veo), then weave it into the comic. Triggers on "turn this slide into a video", "animate panel N", "animate this slide", "add motion to <panel>". Points at an existing bucket-pipeline comic; reuses the Flow video recipe (docs/superpowers/flow-video.md) + assets-build + @badcode/comic AnimationWidget.
+description: Use to turn a single comic slide into a scroll-scrubbed video clip via Google Flow (image→video / Veo), then weave it into the comic. Triggers on "turn this slide into a video", "animate panel N", "animate this slide", "add motion to <panel>". Points at an existing bucket-pipeline comic; reuses the Flow video recipe (docs/flow/automation-video.md) + assets-build + @badcode/comic AnimationWidget.
 ---
 
 # Animate Slide (BadCode)
@@ -20,7 +20,7 @@ the bucket → `badcode assets-build` (renditions/poster/manifest) →
 |---|---|
 | `CLAUDE.md` | What BadCode is; repo map |
 | `docs/voice.md` | Load-bearing tone — applies to motion prompts too |
-| `docs/superpowers/flow-video.md` | How the Flow video tools work underneath — selectors, the frame slots, the completion signal, the mp4 harvest. Reference material for when a call fails; not needed to run this skill. |
+| `docs/flow/automation-video.md` | How the Flow video tools work underneath — selectors, the frame slots, the completion signal, the mp4 harvest. Reference material for when a call fails; not needed to run this skill. |
 | `packages/comic/AUTHORING.md` | Mandatory before the `.tsx` widget swap |
 
 ## Scope guard — bucket pipeline only
@@ -68,7 +68,7 @@ tile grid, and that diff degrades in a project holding dozens of items (observed
 `flow_create_project` gives you a clean one.
 
 For what the tools do underneath — the compose bar, the frame slots, the completion signal,
-the mp4 harvest — see **`docs/superpowers/flow-video.md`**. You should not need it to run this
+the mp4 harvest — see **`docs/flow/automation-video.md`**. You should not need it to run this
 skill; read it when something fails.
 
 ---
@@ -306,7 +306,7 @@ panel: <N>
 image_key: img/<iNN>.<ext>         # the static source image in the bucket
 anim_key: anim/<key>               # e.g. anim/a10
 flow_media_id: <uuid>              # the Flow media name from getMediaUrlRedirect
-model: <as Flow reports it>        # the model name from flow-video.md / the Flow UI
+model: <as Flow reports it>        # the model name from automation-video.md / the Flow UI
 status: done                       # planned | done
 ---
 
@@ -347,9 +347,9 @@ Do not restart completed work. Do not re-generate a clip that already renders co
 1. Open `docs/stories/<story>/storyboard/pNN.md` and read the recorded motion prompt.
 2. Re-prompt Flow in the **same session** if it is still open — "just like that but
    `<change>`". If the session is closed, start fresh from **step 2 of the loop** (re-stage
-   the source image and re-upload it to Flow per `flow-video.md`) before re-prompting — a new
+   the source image and re-upload it to Flow per `automation-video.md`) before re-prompting — a new
    Flow session has no reference image until you re-stage it.
-3. Re-harvest the clip (follow `flow-video.md`).
+3. Re-harvest the clip (follow `automation-video.md`).
 4. Re-upload and re-run `assets-build` (step 6 above) — the manifest entry updates in place.
 5. **Append a revision line** to the `pNN.md` Revisions log:
    ```

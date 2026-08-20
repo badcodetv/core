@@ -104,7 +104,7 @@ If you read nothing else:
   Check it isn't a known-unreliable ask (hands, physics, legible video text, full 360°
   orbit) before blaming the prompt.
 - **Tool error, wedged picker, stale tab** → not a prompt problem.
-  `docs/superpowers/flow-selectors.md` and the `flow-operator` agent.
+  `docs/flow/automation-images.md` and the `flow-operator` agent.
 
 **The one debugging move that generalises:** subtract. Strip to the simplest form that
 works, then add back one variable at a time.
@@ -127,5 +127,5 @@ When a character, object or place has to survive across many generations, read
 
 Platform craft for Google Flow: Nano Banana stills, Veo motion, references, consistency,
 policy, controls. **Not** the BadCode visual identity (`badcode-art-direction`,
-`new-image`), **not** browser automation or selectors (`docs/superpowers/flow-selectors.md`,
+`new-image`), **not** browser automation or selectors (`docs/flow/automation-images.md`,
 the `flow-operator` agent), **not** Suno or music (`suno-prompt`).

@@ -6,7 +6,7 @@
  * scattered `getByText` regexes making their own judgement calls.
  *
  * The three known states (real strings observed live, see docs/flow/failure-modes.md §A1 and
- * docs/superpowers/flow-video.md:41-49):
+ * docs/flow/automation-video.md:41-49):
  *
  * - `blocked` — policy. Never retry; the prompt (or a field/reference image, §A2) must be
  *   rewritten. Two variants seen, one sentence-case, one Title Case ("This Prompt Might
@@ -18,7 +18,7 @@
  *   for this one; the existing retry (re-approve) path stays valid.
  *
  * Precedence when more than one pattern matches the same string. This matters because a Flow
- * chat transcript accumulates messages rather than replacing them — flow-video.md documents the
+ * chat transcript accumulates messages rather than replacing them — automation-video.md documents the
  * queue message surviving in the DOM even after the clip has finished — so by the time we poll,
  * more than one of these strings can legitimately be present at once:
  *

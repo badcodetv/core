@@ -26,7 +26,7 @@ This plan closes those, plus the video path, which today calls **zero** `flow_*`
 code and unit tests in parallel; they **cannot validate against Flow**. So:
 
 - Wave A is written blind, against selectors already recorded in
-  `docs/superpowers/flow-selectors.md` and `flow-video.md`. Its correctness bar is
+  `docs/flow/automation-images.md` and `automation-video.md`. Its correctness bar is
   *typecheck + unit tests + selector fidelity to the maps*.
 - Live validation is a **separate serial phase** (Wave B), run by one session with the
   browser, batching all of Wave A into one pass.
@@ -78,7 +78,7 @@ Add a `detectFailureCard()` probe polled **inside the existing generation waits*
 instead of running out the 90s clock. Throw `POLICY_BLOCKED`; map it in `toToolError`
 with a hint pointing at the rewrite table.
 
-Also distinguish the two *other* card states already documented in `flow-video.md:41-49`:
+Also distinguish the two *other* card states already documented in `automation-video.md:41-49`:
 `scheduled … waiting in the queue` (benign — keep waiting) and `Oops, something went
 wrong` (transient — retry path already exists).
 
@@ -93,13 +93,13 @@ and `flow-operator`'s documented recovery path is raw `curl` against the CDP end
 
 - `flow_create_project({ name? })` — the `add_2 New project` button is already clicked
   internally by `ensureProject()` (`flow-client.ts:64`). ⚠️ **Renaming is documented as
-  un-automatable** (`flow-selectors.md:275` — fill and keystrokes both revert on blur).
+  un-automatable** (`automation-images.md:275` — fill and keystrokes both revert on blur).
   So `name` is best-effort: attempt it, return the actual name and id, and say plainly in
   the tool description that the caller must accept what came back.
 - `flow_list_projects()` — `SCRAPE_PROJECTS` in `project.ts` already returns every tile;
   it is currently consumed only for name matching. Just expose it.
 - `flow_open_project` gains an optional `id`, navigating straight to
-  `/project/<id>`. ⚠️ Known issue (`flow-selectors.md:269`): project tiles sometimes
+  `/project/<id>`. ⚠️ Known issue (`automation-images.md:269`): project tiles sometimes
   render without `<a href>`, breaking name matching entirely — id is the reliable path
   and this task is what makes it available.
 
@@ -107,7 +107,7 @@ and `flow-operator`'s documented recovery path is raw `curl` against the CDP end
 
 **Why:** `ensureModel` already takes a model argument; only the character tools can reach
 it. And the research says iterate-cheap-then-spend-on-Quality, which needs per-call tier
-control. Aspect has tabs mapped (`flow-selectors.md:174`) and no code path at all.
+control. Aspect has tabs mapped (`automation-images.md:174`) and no code path at all.
 
 Add optional `model` and `aspect` to `flow_generate_image`, `flow_edit_image`,
 `flow_generate_batch`, `flow_refine`. Thread through to `ensureImageMode(count, model,
@@ -141,7 +141,7 @@ quietly produce an Omni Flash clip at the wrong aspect while the caller believes
 asked for Veo 3.1 Quality.
 
 Add `ensureVideoSettings({ model?, aspect?, count? })` driving the `tune Settings` panel,
-fully mapped at `flow-video.md:12-23`:
+fully mapped at `automation-video.md:12-23`:
 
 | Control | Selector |
 | --- | --- |
@@ -181,7 +181,7 @@ Fix the three violations:
 Also `tiles.nth(i).hover()` (`:787`) is coordinate-based, on a rig where coordinate input
 is documented as untrustworthy.
 
-Then fix the targeting itself — the standing "open rough edge" (`flow-video.md:166`):
+Then fix the targeting itself — the standing "open rough edge" (`automation-video.md:166`):
 `openAnimateMenu` hovers **every** tile and takes the first menu exposing Animate, which
 "timed out on re-runs once the project filled with test media." **Target the
 just-uploaded still specifically**: snapshot media names before upload (the pattern
@@ -214,7 +214,7 @@ three in `toToolError` with actionable hints. Trivial task; good first integrati
 duplicates the policy-block guidance now owned by `docs/flow/failure-modes.md` — replace
 the duplicate with a pointer.
 
-`docs/superpowers/flow-selectors.md:88-105` still carries a superseded section claiming
+`docs/flow/automation-images.md:88-105` still carries a superseded section claiming
 "character panels need the reference attached via the UI (Playwright) for now", already
 contradicted by the `character` param and by its own `:107` "SUPERSEDES the flow above".
 Delete the dead section rather than leaving two truths.
@@ -296,7 +296,7 @@ it is minutes of work and it gates everything below, so do it first.
   date, and decide whether a Lite-tier-only start+end mode is worth having at all. **"Not
   usable at our tier yet" remains a good outcome** — it stops us building on sand.
 
-Then map the slots and write the selectors into `flow-video.md`, per the usual rule: every
+Then map the slots and write the selectors into `automation-video.md`, per the usual rule: every
 resolved guess goes into the selector maps, or the next session re-learns it.
 
 **Answers, all by clicking:**
@@ -312,7 +312,7 @@ resolved guess goes into the selector maps, or the next session re-learns it.
   clip-length and first+last columns are now marked verified with the date.
 - **The slots**: `[Start] [swap_horiz Swap first and last frames] [End]`, filled through Flow's
   media picker. Three silent traps (empty-vs-filled label, upload-does-not-select, and
-  select-is-not-confirm) are written up in `flow-video.md` "Frames mode".
+  select-is-not-confirm) are written up in `automation-video.md` "Frames mode".
 
 ### C2 · Fold both source modes into `flow_generate_video` ✅ DONE 2026-08-12
 
@@ -424,7 +424,7 @@ Three findings, two of which change later tickets:
    Toggling the `Agent` pill fixes it, the source chip survives the toggle, and the trigger
    returns already in Video mode. **This matters for C2:** the Frames/Ingredients source tabs
    also live in that popover, so the merged tool works in direct-generation mode, and the
-   Agent-mode toggle is a step every source mode will need. `flow-video.md`'s claim that
+   Agent-mode toggle is a step every source mode will need. `automation-video.md`'s claim that
    "Animate switches the bar to Video mode … Agent toggle off" is only true when the bar was in
    direct mode to begin with; it is now corrected in place.
 2. **10s is Omni Flash only, and the tab is ABSENT from the DOM on Veo — not disabled.** So a
@@ -481,7 +481,7 @@ which `scrapeReferenceChips` cannot see. Mapped, deliberately unused: Reuse rest
 known-good turn, an ingredient asks the model to interpret a video, and nothing we make needs
 the latter. **No video *edit* was built**, so we stayed off the Omni-Flash pin.
 
-Write-up: `docs/superpowers/flow-video.md` § "What an EXISTING clip offers" (incl. the clip
+Write-up: `docs/flow/automation-video.md` § "What an EXISTING clip offers" (incl. the clip
 card's hover-swaps-the-thumbnail DOM trap, which breaks any code copied from `openAnimateMenu`).
 
 ### L2 · The two matrix rows still transcribed, not tested — ✅ TESTED 2026-08-12

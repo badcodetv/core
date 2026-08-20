@@ -15,7 +15,7 @@ live in one place, located by ARIA role/text, swappable when the UI changes.
 But it is **slow in practice** for two reasons:
 
 1. **Never validated live.** `flow-client.ts` was written to the documented
-   selector contract (`flow-selectors.md`) but never run against a logged-in
+   selector contract (`automation-images.md`) but never run against a logged-in
    Flow window. Because the scripts are untrusted, the working habit falls back
    to driving Flow with the raw Playwright MCP + `browser_snapshot` — reading the
    whole page every step. That page-reading is the slowness.
@@ -46,9 +46,9 @@ We never ship a selector we have not watched succeed live. For each action:
 2. Capture the selectors / step sequence that actually work.
 3. Bake them into a `flow-client` method (+ MCP tool if user-facing).
 4. **Re-run the tool** to prove it round-trips.
-5. Record the observed truth in `flow-selectors.md`.
+5. Record the observed truth in `automation-images.md`.
 
-`flow-selectors.md` becomes a log of observed reality, not a wish list. This
+`automation-images.md` becomes a log of observed reality, not a wish list. This
 discipline is the actual fix — the existing scripts are untrusted precisely
 because they were written blind to a contract.
 
@@ -117,7 +117,7 @@ Each step is observe-then-codify, ending in a green re-run of the tool.
   steps 1–3 (the fast image loop the user wants most) and split characters/video
   into a follow-up.
 - **Live selectors drift from the documented contract** — expected; that is why
-  we observe-then-codify and update `flow-selectors.md` as we go.
+  we observe-then-codify and update `automation-images.md` as we go.
 - **Per-call CDP re-attach** is acceptable for single actions; the batch tool is
   where we eliminate it for throughput.
 
@@ -126,6 +126,6 @@ Each step is observe-then-codify, ending in a green re-run of the tool.
 - `status`, `openProject`, `generateImage`, `refine`, `createCharacter`,
   generate-with-character, and `generateVideo` each proven by a live re-run.
 - `flow_generate_batch` generates + harvests a multi-slide batch in one call.
-- `flow-selectors.md` updated to observed truth for every action.
+- `automation-images.md` updated to observed truth for every action.
 - The plan→batch→iterate workflow documented in the comic skill.
 - A real camping-v2 batch (1–4 slides) generated end-to-end as the acceptance run.

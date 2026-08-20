@@ -53,12 +53,12 @@ const TURN_TIMEOUT_MS = 90_000
  */
 const DEFAULT_MODEL = process.env.FLOW_MODEL ?? 'Nano Banana Pro'
 export type VideoAspect = '16:9' | '9:16'
-// flow-video.md:15 records 16:9 / 1x as the persisted defaults (though it warns to re-check
+// automation-video.md:15 records 16:9 / 1x as the persisted defaults (though it warns to re-check
 // them every project), so that's the aspect/count pair this client asserts by default.
 const DEFAULT_VIDEO_ASPECT: VideoAspect = '16:9'
 /**
  * Video's per-tier credit spread is far steeper than the image models' — Lite 10 / Fast 20 /
- * Quality 100 (flow-video.md:16) — so, unlike DEFAULT_MODEL for images, silently defaulting an
+ * Quality 100 (automation-video.md:16) — so, unlike DEFAULT_MODEL for images, silently defaulting an
  * unrequested call to the top tier would risk a 5-10x spend the caller never asked for. Fast is
  * the deliberate middle: a real step up from Lite for the price of a fifth of Quality. A caller
  * who wants Quality's 100 credits asks for it explicitly via the `model` option.
@@ -235,7 +235,7 @@ export class FlowClient {
    * `id` navigates straight to `/project/<id>` via `page.goto`, following ensureProjectRoot's
    * existing navigation pattern (goto, then wait for the prompt box to hydrate) rather than
    * touching the grid at all — this is the reliable path when a tile has lost its `<a href>`
-   * (flow-selectors.md:269-276: those tiles are invisible to SCRAPE_PROJECTS, and even a
+   * (automation-images.md:269-276: those tiles are invisible to SCRAPE_PROJECTS, and even a
    * successful synthetic click on one does not navigate), since it never needs a tile to click.
    *
    * `name` keeps the original grid-scan behaviour unchanged.
@@ -286,7 +286,7 @@ export class FlowClient {
    * ambiguous between "still hydrating" and "genuinely zero projects" — so the window is short
    * (a few seconds), not 90s of blocking on what might just be an empty account.
    *
-   * Never throws on the href-less-tile bug (flow-selectors.md:269-276) — see
+   * Never throws on the href-less-tile bug (automation-images.md:269-276) — see
    * `toProjectSummaries` — so a partial list beats an error.
    */
   async listProjects(): Promise<ProjectSummary[]> {
@@ -304,10 +304,10 @@ export class FlowClient {
   }
 
   /**
-   * ⚠️ GUESSED locator: flow-selectors.md:280 records only that fill()/keystrokes on the
+   * ⚠️ GUESSED locator: automation-images.md:280 records only that fill()/keystrokes on the
    * project title textbox both revert on blur — no accessible name or selector for the field
    * itself is recorded anywhere. `promptBox()` is known to have NO accessible name
-   * ("no own placeholder text", flow-selectors.md), so scoping to a NAMED textbox here at
+   * ("no own placeholder text", automation-images.md), so scoping to a NAMED textbox here at
    * least cannot collide with it. Best-effort only: if nothing matches, or the fill doesn't
    * survive blur (the documented, expected outcome), this silently no-ops — `createProject`
    * never trusts this value, it always reads the real name back afterward via the projects
@@ -328,7 +328,7 @@ export class FlowClient {
 
   /**
    * Read whatever the project is ACTUALLY named right now. Never trusts a requested rename —
-   * renaming is documented as un-automatable (flow-selectors.md:280) — so this re-derives the
+   * renaming is documented as un-automatable (automation-images.md:280) — so this re-derives the
    * name from Flow's own state, in order of confidence, and never throws:
    *   1. The projects-list tile matching `id` (SCRAPE_PROJECTS/toProjectSummaries — the same
    *      evidenced mechanism openProject/pickProject already rely on).
@@ -372,7 +372,7 @@ export class FlowClient {
    * `name` is BEST-EFFORT — see attemptRenameProject/readProjectName. The caller MUST use the
    * returned `name`, never the one it passed in: renaming a Flow project via the title textbox
    * is documented as un-automatable (fill and keystrokes both revert on blur,
-   * flow-selectors.md:280), so this attempts it, then reports back whatever Flow actually
+   * automation-images.md:280), so this attempts it, then reports back whatever Flow actually
    * settled on rather than assuming the attempt worked.
    *
    * Ends back inside the new project (readProjectName briefly leaves to confirm the name via
@@ -399,7 +399,7 @@ export class FlowClient {
     return { id, name: actualName }
   }
 
-  // --- Click hardening (mapped live 2026-07-14, flow-selectors.md "Click reliability on WSLg") ---
+  // --- Click hardening (mapped live 2026-07-14, automation-images.md "Click reliability on WSLg") ---
   // Playwright's actionability "stable" check stalls on this UI (persistent animation) and
   // trusted CDP pointer input can silently miss, so each control type gets the recipe that
   // actually fires its handler. A bare click with default actionability is banned in this file.
@@ -438,7 +438,7 @@ export class FlowClient {
   /**
    * Reveal a hover-only overlay (a media tile's `more_vert` action button, which only mounts
    * on hover) via synthetic pointer/mouse events, NOT Playwright's coordinate-based `.hover()`.
-   * flow-selectors.md:236-242 documents coordinate input as untrustworthy on this rig — the
+   * automation-images.md:236-242 documents coordinate input as untrustworthy on this rig — the
    * WSLg window's input pipeline scales coordinates, so a trusted pointer move can land on the
    * wrong element (or the right element at the wrong point) even where a click with the same
    * mechanism would at least fail loudly. A hover has no "did it land" signal of its own, so
@@ -730,7 +730,7 @@ export class FlowClient {
   /**
    * Force the create bar into image mode at the requested output count (1–4), model and
    * aspect ratio. `aspect` is optional and, when omitted, is left entirely untouched — Flow's
-   * own default is already 16:9 (flow-selectors.md:174: "Default is already Image · 16:9 ·
+   * own default is already 16:9 (automation-images.md:174: "Default is already Image · 16:9 ·
    * 1x, so ensureImageMode is idempotent"), unlike video's Settings panel which resets to the
    * wrong tier per project, so there is no landmine here that requires asserting a default.
    * Idempotent — when the config trigger's label already shows the target state
@@ -792,7 +792,7 @@ export class FlowClient {
     await imageTab.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     await this.tabClick(imageTab)
     // Aspect tabs render as "<icon ligature><ratio text>", with the human ratio text ALWAYS
-    // LAST (confirmed live: "crop_16_916:9", "crop_landscape4:3" — flow-selectors.md:172-174),
+    // LAST (confirmed live: "crop_16_916:9", "crop_landscape4:3" — automation-images.md:172-174),
     // so anchoring on the ratio text alone needs no icon-name guessing at all — unlike
     // aspectAlreadySelected's short-circuit above, which has to guess the icon (see compose.ts).
     if (aspect) {
@@ -837,7 +837,7 @@ export class FlowClient {
    * Reads ALL matching messages and classifies them together, rather than the first hit.
    * classifyCard's precedence resolves ambiguity WITHIN one string, so taking `.first()` would
    * discard the other matches before precedence could ever apply — and Flow's transcript
-   * accumulates rather than replaces (flow-video.md:61-62: the queue message survives even
+   * accumulates rather than replaces (automation-video.md:61-62: the queue message survives even
    * after the clip finishes). A stale "waiting in the queue" sitting above a real block or
    * error would then mask it, which is exactly the retry-forever failure this probe exists to
    * prevent.
@@ -1521,10 +1521,10 @@ export class FlowClient {
 
   /**
    * Assert Flow's Settings-panel "Video generation default" — model, aspect, output count —
-   * mapped at flow-video.md:12-23 and :113-116. Unlike the image compose bar's `crop_` trigger,
+   * mapped at automation-video.md:12-23 and :113-116. Unlike the image compose bar's `crop_` trigger,
    * these live behind a dedicated panel and there is no per-turn control on the create bar
    * itself, so a video call that skips this inherits whatever the PROJECT last had — and
-   * ⚠️ that **resets to Omni Flash on a fresh project** (flow-video.md:20). Skipping this call
+   * ⚠️ that **resets to Omni Flash on a fresh project** (automation-video.md:20). Skipping this call
    * is exactly the bug this task exists to fix: a caller asking for Veo 3.1 Quality could
    * silently get an Omni Flash clip at the wrong aspect.
    *
@@ -1623,7 +1623,7 @@ export class FlowClient {
       }
     }
 
-    // Count tabs are `x1`…`x4` — uniformly x-first. flow-video.md recorded the single-output
+    // Count tabs are `x1`…`x4` — uniformly x-first. automation-video.md recorded the single-output
     // tab as "1x" and the code followed it; the live panel says "x1" (confirmed 2026-08-12),
     // so asking for one clip matched nothing and silently left the count at whatever it was.
     const countTab = videoSection
@@ -2082,7 +2082,7 @@ export class FlowClient {
    *
    * Loads TWICE when the first attempt comes up empty: a Flow project load can throw a
    * client-side exception and render a completely black page with no compose bar at all
-   * (flow-video.md's SUBMIT_FAILED note, and observed again 2026-08-12 — a wedged page then
+   * (automation-video.md's SUBMIT_FAILED note, and observed again 2026-08-12 — a wedged page then
    * fails every later call in the run with an unrelated-looking timeout). A second load
    * reliably fixes it, so do it here rather than leaving the wedge for the next caller.
    */
@@ -2216,7 +2216,7 @@ export class FlowClient {
    *
    * Throws ANIMATE_NOT_FOUND (mapped in toToolError) on timeout rather than EVER falling back
    * to "hover every tile and take the first that offers Animate" — that blind scan is exactly
-   * the fragility this task replaces (flow-video.md's "open rough edge": it timed out on
+   * the fragility this task replaces (automation-video.md's "open rough edge": it timed out on
    * re-runs once the project filled with test media, and worse, a media-rich project has no
    * guarantee the first Animate-capable tile it finds is the one we just uploaded). A clear,
    * fast failure beats a silent wrong-image animate.
@@ -2360,7 +2360,7 @@ export class FlowClient {
    *     unpassable prompt is most expensive.
    *   - `error` ("Oops, something went wrong") re-approves the credit gate to retry, same
    *     behaviour this loop always had.
-   *   - `queued` is benign (flow-video.md:41-49) — the misleading `warning Failed`-looking icon
+   *   - `queued` is benign (automation-video.md:41-49) — the misleading `warning Failed`-looking icon
    *     that can render alongside it must never be read as a reason to stop waiting. It now
    *     EXTENDS the deadline: confirmed live 2026-08-12, Flow queued a clip "due to high
    *     demand" and had still not produced it 8 minutes later. Failing at the normal timeout

@@ -208,7 +208,7 @@ not.)*
 ## Our own automation failure modes
 
 Not Flow's fault, but they present identically. Full detail in
-`docs/superpowers/flow-selectors.md` and `packages/flow-mcp/README.md`:
+`docs/flow/automation-images.md` and `packages/flow-mcp/README.md`:
 
 - **A wedged asset picker** from a failed upload survives retries and poisons the next
   call. Reload the project URL — twice; Flow intermittently throws a client-side
