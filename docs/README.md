@@ -21,6 +21,8 @@ and `new-story` scaffolds its canon folder.
 - [`images/`](./images/README.md) — standalone brand imagery catalogue (`new-image` skill)
 - [`suno-gpt/`](./suno-gpt/README.md) — Suno toolkit (`suno-prompt` skill): prompt language, the control sliders, the recurring-narrator stack, and what Suno reliably gets wrong
 - [`flow/`](./flow/README.md) — Google Flow toolkit, two halves: **craft** (Nano Banana and Veo prompt craft, camera vocabulary, consistency, policy blocks) and **automation** (how `@badcode/flow-mcp` drives the browser — selectors, DOM roles, harvest)
+- [`premiere/`](./premiere/README.md) — Premiere Pro bridge (`premiere-automation` skill): the UXP panel + WebSocket setup that lets a session build and adjust timelines. **[`setup.md`](./premiere/setup.md) is the one-time, per-machine install — start there**
+- [`video-fx/`](./video-fx/README.md) — choosing the tool for a video job: the lane table (Flow invents / ffmpeg is exact / Premiere is the edit), the **no-paid-plugins** ruling and the free route instead, and the 20 research briefs. No `video-fx` skill yet — reach for `premiere-automation` and `flow-prompt`
 - [`superpowers/`](./superpowers/) — **archive only**: dated implementation plans & design specs. Nothing live lives here; the name is a fossil of a plugin we no longer run. Flow automation notes moved to [`flow/`](./flow/) on 2026-08-20
 
 ## Core context (read these first)

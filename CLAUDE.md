@@ -47,7 +47,10 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
 | `docs/misc/` | Catch-all for what fits nowhere else | …in doubt |
 | `docs/suno-gpt/` | Suno-prompting toolkit (operating procedure + reference files) | …you're turning a song idea into a Suno prompt |
 | `docs/flow/` | Google Flow toolkit (Nano Banana + Veo prompt craft, policy blocks, consistency) | …you're writing or debugging a Flow prompt |
-| `.claude/skills/` | `new-idea`, `new-marketing-idea`, `new-story`, `suno-prompt`, `make-comic`, `edit-panel`, `animate-slide`, `music-video-short`, `new-image`, `badcode-art-direction`, `flow-prompt` — orchestrators for parking an idea, capturing a marketing/distribution play, story capture, Suno prompting, the full idea→comic pipeline, editing an existing panel image, animating a finished panel, the full idea→short-form music-video pipeline (Suno track + Flow clips + edit plan), standalone brand imagery, the BadCode comic register, and Google Flow prompt craft | …you're capturing an idea or marketing play, developing a story, making a track, building a comic, editing a panel, animating a slide, making a short, making a brand image, or writing a Flow prompt |
+| `docs/premiere/` | Premiere Pro bridge — [`recipes.md`](./docs/premiere/recipes.md) (the cookbook), [`effects-catalogue.md`](./docs/premiere/effects-catalogue.md) (every effect installed), [`setup.md`](./docs/premiere/setup.md), [`api-notes.md`](./docs/premiere/api-notes.md) | …you're putting anything on a Premiere timeline |
+| `packages/premiere-mcp` | `@badcode/premiere-mcp` — the MCP server + UXP panel that drive Premiere from WSL ([tool reference](./packages/premiere-mcp/README.md)) | …you're changing the bridge itself |
+| `docs/video-fx/` | Which tool for the job — lane choice (Flow / ffmpeg / Premiere), the free stack, and the 20 research briefs. **No paid plugins** | …you're choosing an effect or wondering if a tool exists |
+| `.claude/skills/` | `new-idea`, `new-marketing-idea`, `new-story`, `suno-prompt`, `make-comic`, `edit-panel`, `animate-slide`, `music-video-short`, `new-image`, `badcode-art-direction`, `flow-prompt`, `premiere-automation` — orchestrators for parking an idea, capturing a marketing/distribution play, story capture, Suno prompting, the full idea→comic pipeline, editing an existing panel image, animating a finished panel, the full idea→short-form music-video pipeline (Suno track + Flow clips + edit plan), standalone brand imagery, the BadCode comic register, Google Flow prompt craft, and driving Adobe Premiere Pro | …you're capturing an idea or marketing play, developing a story, making a track, building a comic, editing a panel, animating a slide, making a short, making a brand image, writing a Flow prompt, or cutting video in Premiere |
 | `packages/comic` | `@badcode/comic` — code-first comic rendering library (authoring guide: [`AUTHORING.md`](./packages/comic/AUTHORING.md)) | …you're building the viewer |
 | `apps/web` | The website (Vite + React + TS SPA) | …you're building pages/routes |
 | `chain/` | Anchor workspace + Docker toolchain — [`README`](./chain/README.md), [`TESTING`](./chain/TESTING.md) | …you're writing an on-chain program |
@@ -97,6 +100,25 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
   vocabulary with reliability tiers, consistency/reference discipline, platform controls
   and credits, and the policy-block triggers and rewrites. **A policy block looks exactly
   like a timeout** — that one fact is the biggest time-saver in the whole toolkit.
+
+- **Put something on a Premiere timeline:** run the **`premiere-automation`** skill
+  (`.claude/skills/premiere-automation/`). Premiere Pro is the **third tool** alongside Flow
+  and ffmpeg: a UXP panel inside Premiere on Windows dials out to a WebSocket server in WSL,
+  and a session gets **27 tools** — import, build and re-cut a sequence, trim, transitions,
+  markers, any installed effect with keyframes, and `export_frame` so it can **see** what it
+  just did. Knowledge base: [`docs/premiere/`](./docs/premiere/README.md) —
+  **[`recipes.md`](./docs/premiere/recipes.md) is the cookbook** (build a cut, push in,
+  dissolve, grade, composite a Flow element, export and look, plus the things that flatly do
+  not work); [`effects-catalogue.md`](./docs/premiere/effects-catalogue.md) is a live inventory
+  of all **106 effects and 118 transitions** installed;
+  [`setup.md`](./docs/premiere/setup.md) is the one-time per-machine install;
+  [`api-notes.md`](./docs/premiere/api-notes.md) is what the API actually does versus what
+  Adobe claims. **Two facts save the most time:** no tool returns a whole timeline (you get a
+  per-track summary plus the complete state on disk to `jq`), and **every edit tool acts on the
+  ACTIVE sequence** — a human clicking another timeline tab silently redirects your next call.
+  **We own no paid plugins and are not buying any**: for fire, smoke and weather, generate the
+  element in Flow on black and key it in. Choosing between Flow, ffmpeg and Premiere for a given
+  job is [`docs/video-fx/`](./docs/video-fx/README.md).
 - **Record an idea (the inbox):** run the **`new-idea`** skill
   (`.claude/skills/new-idea/`). It parks an idea the second it pops as a
   minimal-prose file under [`docs/ideas/`](./docs/ideas/README.md) and adds a
