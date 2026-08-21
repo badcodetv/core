@@ -133,6 +133,7 @@ Cross-referenced to [`failure-modes.md`](./failure-modes.md) Part B.
 | **Liquid that must respond to the frame's own acceleration** | No model tested passed the "glass of water in a moving car" test — gravity-driven water is fine, inertial water is not |
 | **Near-field parallax past flat parallel structures** | Our own measurement: Veo hinges the geometry open instead. See `video-prompting.md` §9 — though the source still's depth-cue composition is an untested variable, not a ruled-out one |
 | **Precise hand articulation** | Long-standing, unfixed |
+| **Orbiting a rigid subject faster than ~35–40° per 8s clip** | Measured on GPOM scene 0, 2026-08-21, two candidate pairs from identical prompts. The take that arced ~90° stopped moving the camera and started **redesigning the object** — antenna swelling, solar arrays changing count, hull reproportioning. The ~35–40° takes held. Chain several slow stages instead of asking for one fast arc |
 
 ---
 

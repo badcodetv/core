@@ -107,6 +107,14 @@ Same split as [`docs/suno-gpt/`](../suno-gpt/README.md) and the `suno-prompt` sk
     And if Veo refuses a move, ask whether it will do the **inverse**: a push-in reversed in post
     is a rigid pull-back. Plan every shot as *prompt → generate → transform*, so the transform is
     designed rather than improvised. [`post-production.md`](./post-production.md).
+17. **Generate into a scratch folder; commit almost nothing.** A finished 56-second scene cost 42
+    video takes and 22 stills and shipped on **three** of them. Work entirely in the scene's
+    scratch folder until a human approves a cut, then commit only the stills Flow generated **as
+    images** that a kept clip was built from — never a frame you pulled out of a video, because
+    that is recoverable from the approved video at a known timestamp (measured: 1.2–2.3/255
+    difference, i.e. codec noise). The test: delete the scratch folder except the approved video,
+    and the scene must still rebuild from the repo plus that one file.
+    `.claude/skills/flow-automation/SKILL.md` §9.
 
 ---
 

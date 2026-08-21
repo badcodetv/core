@@ -106,6 +106,35 @@ format=yuv420p" \
 
 Renders a 12s 720p move in about 5 seconds.
 
+### 3.4b Break the 8s cap: chained push-ins, reversed
+
+**The move that beats Veo's hard cap and its inability to take a destination.** Proven on GPOM
+scene 0, 2026-08-21: a 16s continuous rigid pull-out landing frame-exact on an art-directed plate.
+
+Veo cannot be told where to *end* without Frames mode, and Frames mode interpolates (§ and
+[`video-prompting.md`](./video-prompting.md) §4). Post cannot cover a big scale change either —
+see §4. So invert it:
+
+1. Shoot a push-in **from** the frame you want to arrive at. Start-image-only, no end frame.
+2. Take that clip's last frame; shoot the next push-in from it. Repeat for as much magnification
+   as you need — each stage starts from a real frame, so each one stays rigid.
+3. Reverse each stage and concatenate **in reverse order**.
+
+```bash
+# stage 2 first, then stage 1 -- each reversed
+ffmpeg -i push2.mp4 -vf "reverse,format=yuv420p" -an -c:v libx264 -crf 18 -y r2.mp4
+ffmpeg -i push1.mp4 -vf "reverse,format=yuv420p" -an -c:v libx264 -crf 18 -y r1.mp4
+ffmpeg -i r2.mp4 -i r1.mp4 -filter_complex "[0:v][1:v]concat=n=2:v=1:a=0[v]" \
+  -map "[v]" -an -c:v libx264 -pix_fmt yuv420p -crf 18 -y pullout.mp4
+```
+
+**Two bonuses.** N stages gives N×8 seconds of unbroken move. And the deepest stage's last frame
+is a free, perfectly-matched anchor for a locked-off plate at that magnification — so the opening
+hold joins the pull-out invisibly.
+
+⚠️ Same reversal caveat as §2: forbid smoke, dust, sparks and drifting particles in the prompt, or
+they read as running backwards. Blinking lights are safe.
+
 ### 3.5 Pull the last frame out of a clip
 
 Chaining without opening the browser. (`flow_scene_save_frame position:"end"` does the same thing

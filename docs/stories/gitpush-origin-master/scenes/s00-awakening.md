@@ -448,3 +448,167 @@ after an MCP reconnect: the call that had failed four times went straight throug
 **Note on resolution:** Flow returns **1376×768** stills, not 4K, whatever the model. The 4K
 figure is an API affordance. That materially weakens the ffmpeg pull-back fallback for clip B —
 there is far less to zoom into than assumed.
+
+---
+
+# v3 — the built scene (2026-08-21)
+
+Kai's rewrite after watching v2: **open on two flashing lights and nothing else**, pull out to the
+board, hold, pull out to the satellite, **cut** to Earth. No dive — ruled too ambitious, and a cut
+is the stronger edit anyway.
+
+> ⚠️ `.mp4` paths are gitignored. Keepers mirror to `/mnt/c/Users/kai/Desktop/gpom-s00/`.
+
+## The beats as built
+
+| # | Beat | File | Length | How it was made |
+| --- | --- | --- | --- | --- |
+| 1 | Two LEDs blinking, extreme macro | `s00v3-idle-macro-a.mp4` | 8s | locked-off from `s00v3-macro-anchor.jpg` |
+| 2 | Macro → board, one unbroken pull-out | `s00v3-pushin2-b` + `s00v3-pushin-a`, **both reversed** | 16s | see below |
+| 3 | Hold on the board, LEDs blinking | `s00v3-idle-board-b.mp4` | 8s | locked-off from `s00v3-board-anchor.jpg` |
+| 4 | Board → satellite | `s00v2-reveal-flush-c.mp4` | 8s | Kai's pick, recovered from Flow |
+| 5 | Earth from orbit, terminator + city lights | `s00v3-earth-b.mp4` | 8s | text-to-video, no source still |
+
+**Assembled:** `s00v3-SEQUENCE-orig.mp4` and `s00v3-SEQUENCE-gradeB.mp4` — 48s, identical but for
+beat 4's grade. All four internal joins are frame-matched and invisible.
+
+## 🔑 The new technique: chained push-ins, reversed
+
+Kai wanted beat 2 to **arrive at** a specific frame. Veo cannot be given a destination without
+Frames mode, which is the interpolation trap (§ above). Post cannot do it either — the two LEDs
+occupy ~8% of frame width, so filling the frame is a ~10× zoom against a 1.07×-native ceiling.
+
+**The solve, which generalises to any length:**
+
+1. Shoot a push-in **from** the frame you want to arrive at (`s00v3-board-anchor.jpg`),
+   start-image-only, no end frame.
+2. Take its **last** frame. Shoot a second push-in from that. Repeat for as much magnification
+   as you need — each stage is rigid because each starts from a real frame and invents only
+   forward.
+3. **Reverse each stage and concatenate them in reverse order.** You now have an arbitrarily long
+   pull-out that lands frame-exact on your art-directed plate.
+
+Two stages here gave a **16s continuous rigid pull-out** — twice Veo's hard cap, with no
+interpolation anywhere. The deepest stage's last frame doubles as the anchor for the opening
+locked-off plate, so beat 1 joins beat 2 for free.
+
+⚠️ Reversal is only safe because blinking is time-symmetric and the prompt forbade smoke, dust and
+drifting particles. Any settling or drifting element would read as running backwards.
+
+## Take notes
+
+- **`pushin-a` over `b`** — b drifted and smeared the blue LED at the end.
+- **`pushin2-b` over `a`** — b magnified further and kept both LEDs lit; a stopped short.
+- **`idle-board-b` over `a`** — a genuinely drifted, migrated the LEDs across the board and
+  invented new ones. b holds framing first-to-last (~2% mid-clip float, reads as a breath).
+  `vidstabtransform tripod=1` was tried and was **not** needed — the measured drift was my
+  thumbnail scaling, not the clip. Check first-vs-last frames before reaching for stabilisation.
+- **`earth-b` over `a`** — calmer drift, stronger terminator, city lights actually read.
+- **The satellite is bright white**, which is off the BadCode near-black register. Graded in post
+  rather than re-shot: the flush rigidity was hard-won and a re-roll risks it. `GRADE-A-slate` and
+  `GRADE-B-deep` on the Desktop; grade B crushes the whites to slate and blacks the space out.
+
+## Open
+
+- ⬜ Kai to pick the grade (orig / A / B).
+- ⬜ Beats 1 and 3 are locked-off plates — **ping-pong them** (`post-production.md` §3.3) to fit
+  whatever the narration needs. The 48s assembly uses them at natural length.
+
+## v3.1 — the orbit ending (2026-08-21)
+
+Kai, on watching the 48s cut: keep it, drop grade B (*"changes colour completely"*), drop the
+standalone Earth beat, and **cut** from the close satellite hull to a wide shot of the whole
+vehicle, then arc the camera around it until Earth is behind it. His own framing: *"imagine you
+stood on the edge of a 20-metre circle looking at a tree, and you walked 180° round it, fixated on
+the tree the whole time."*
+
+| # | Beat | File | Length |
+| --- | --- | --- | --- |
+| 5 | Wide satellite alone in black, camera begins the arc | `s00v3-orbit1-b.mp4` | 8s |
+| 6 | Arc continues, Earth swings in behind, ends on the silhouette | `s00v3-orbit2-b.mp4` | 8s |
+
+**Assembled:** `s00v3-SEQUENCE.mp4` — 56s, seven beats. The 40s cut (close hull → wide satellite)
+is a hard cut and reads as one; 48s is frame-matched.
+
+**The wide still.** `s00v3-sat-wide-a.jpg`, made with `flow_edit_image` off
+`s00v3-sat-closeup-anchor.jpg` so the hull, rivet lines, porthole and lighting carry over. Four
+candidates; a has the best hull continuity. The other three (b, c, d — d is symmetric side-on and
+the cleanest fallback for an orbit) are on the scratch folder, not in the repo.
+
+### 🔑 Veo's orbit rate limit — measured
+
+Both orbit stages were shot from the same prompt with two candidates, and the pairs split the same
+way both times: **the take that arced further destroyed the subject.**
+
+| Take | Arc covered in 8s | Result |
+| --- | --- | --- |
+| `orbit1-a` | ~90° | ❌ dish swells into a bulb, arrays change count, body flattens — a different machine by 5s |
+| `orbit1-b` | ~35–40° | ✅ holds hull, arrays, dish |
+| `orbit2-a` | fast | ❌ vehicle goes dark and Soyuz-shaped |
+| `orbit2-b` | ~35–40° | ✅ stays white, arrays persist; gains a conical nose module but reads as the same craft |
+
+**Working figure: about 35–40° of orbit per 8s clip is the ceiling for a rigid subject.** Past that
+Veo stops moving the camera and starts redesigning the object. A true 180° would need four to five
+chained stages. Two stages (~70–80°) already deliver the story beat — alone in black → Earth
+behind — so the full half-circle was not worth the drift risk. Say so before promising one.
+
+⚠️ This is the exception to README rule 16 in action: an orbit needs the far side of the subject,
+which no source frame contains, so it cannot be a post move. It is a Veo job and it costs identity.
+
+### Star note
+
+Kai on the first Earth: *"the stars far too prominent… we're not trying to show the galaxy."* The
+fix that worked, in both the still and the video prompts: name a **count** — *"only four or five
+faint distant stars barely visible"* — and explicitly ban galaxy, nebula, star field and dust.
+`s00v3-earth-b.mp4` (the standalone Earth) still carries the old busy star field and is superseded.
+
+---
+
+# ✅ COMMITTED — `s00v3-SEQUENCE.mp4`, 56s (2026-08-21)
+
+Kai: *"That entire sequence is perfect."* Committed under the rule in
+`.claude/skills/flow-automation/SKILL.md` §9.
+
+**The video is NOT in this repo.** It lives at `/mnt/c/Users/kai/Desktop/gpom-s00/final/s00v3-SEQUENCE.mp4`.
+
+## The three images that are committed
+
+Everything else was scaffolding — 42 video takes and 19 other stills, all left on the scratch
+folder. These three are the only files Flow generated as **images** that a kept clip was built from,
+so they are the only ones that cannot be recovered any other way.
+
+| File | What it is | Used by |
+| --- | --- | --- |
+| `../storyboard/img/s00v2-board-b.jpg` | The macro circuit board. The root of the whole scene | beat 4 start frame; ancestor of beats 1–3 |
+| `../storyboard/img/s00v2-reveal-flush-a.jpg` | The art-directed flush satellite plate | beat 4 end frame (Frames to Video) |
+| `../storyboard/img/s00v3-sat-wide-a.jpg` | The whole satellite, wide, in black | beat 5 start frame |
+
+## Everything else: recover it from the final video
+
+Measured 2026-08-21 — each of these came back with a mean pixel difference of **1.2–2.3 out of
+255** against the original, i.e. codec noise. There is no reason to store them.
+
+| Anchor | Recover with |
+| --- | --- |
+| macro (beat 1 start) | `ffmpeg -ss 0 -i final/s00v3-SEQUENCE.mp4 -frames:v 1 -q:v 2 macro-anchor.jpg` |
+| pushin-a last (beat 2 midpoint) | `ffmpeg -ss 16.04 -i final/s00v3-SEQUENCE.mp4 -frames:v 1 -q:v 2 pushin-a-last.jpg` |
+| board (beats 3 & 4 start) | `ffmpeg -ss 24.04 -i final/s00v3-SEQUENCE.mp4 -frames:v 1 -q:v 2 board-anchor.jpg` |
+| satellite close-up (beat 4 end) | `ffmpeg -ss 39.96 -i final/s00v3-SEQUENCE.mp4 -frames:v 1 -q:v 2 sat-closeup-anchor.jpg` |
+| orbit stage 1 last (beat 6 start) | `ffmpeg -ss 47.96 -i final/s00v3-SEQUENCE.mp4 -frames:v 1 -q:v 2 orbit1-b-last.jpg` |
+
+## The rebuild order
+
+Each beat's exact prompt is above in this file. Model was **Veo 3.1 Fast, 8s, 2 candidates**
+throughout; every clip had its audio stripped.
+
+1. `s00v2-board-b.jpg` + `s00v2-reveal-flush-a.jpg` → Frames to Video → **beat 4**
+2. Beat 4's first frame → push-in → reverse → **beat 2, second half**
+3. That push-in's last frame → push-in again → reverse → **beat 2, first half**
+4. The deepest frame → locked-off plate → **beat 1**
+5. Beat 4's first frame → locked-off plate → **beat 3**
+6. `s00v3-sat-wide-a.jpg` → orbit → **beat 5**
+7. Beat 5's last frame → orbit + Earth → **beat 6**
+8. Concatenate 1 · 2 · 3 · 4 · 5 · 6, no audio, CRF 18
+
+**The test this passes:** delete the scratch folder except `final/`, and the scene rebuilds from
+this repo plus that one video.

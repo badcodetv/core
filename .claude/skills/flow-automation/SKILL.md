@@ -372,6 +372,72 @@ written down well enough yet.
 
 ---
 
+## 9. Where files live — the scratch folder and the commit gate
+
+**Ruled by Kai 2026-08-21, after scene 0 put 22 stills and 155MB of takes into the repo on the way
+to a cut that used three of them.**
+
+Generating is cheap and messy: a finished 56-second scene cost 42 video takes and 22 stills. Almost
+all of that is scaffolding. The repo must end up holding the few files that let us *rebuild* the
+scene — and nothing else.
+
+### While you are working: nothing goes in the repo
+
+Everything — every still, every take, every contact sheet — lives in the scene's scratch folder:
+
+```
+/mnt/c/Users/kai/Desktop/<scene>/          # takes, candidates, rejects: the whole mess
+/mnt/c/Users/kai/Desktop/<scene>/final/    # only what has been approved
+```
+
+Kai watches from there, so **name files so a human can tell them apart** and tell him the folder,
+never a bare filename. `.mp4` is gitignored anyway (`docs/stories/**/storyboard/img/*.mp4`); the
+discipline you have to keep yourself is not committing the stills.
+
+### At the commit gate: Kai approves a cut
+
+Three steps, in order.
+
+**1. The approved video moves to `final/`.** It stays out of git — it is regenerable and it is
+large. `final/` is the answer to "which of these 42 files is the actual scene?"
+
+**2. Copy into the repo ONLY the images Flow generated as images.** This is the whole rule, and it
+is much tighter than it sounds:
+
+> **An extracted video frame is never committed. It is recorded as a timestamp into the final
+> video.**
+
+Every chain anchor you made with `ffmpeg -sseof` or `flow_scene_save_frame` is, by construction, a
+frame of a clip that ended up in the cut. Keep the final video and you can pull it back with one
+command. Scene 0 measured this: all five extracted anchors came back from
+`s00v3-SEQUENCE.mp4` with a mean pixel difference of 1.2–2.3/255 — codec noise, nothing more.
+
+What survives the rule is only what **no video contains**: the stills Nano Banana generated. For
+scene 0's 56-second cut that was **three images out of twenty-two**.
+
+| Commit | Do not commit |
+| --- | --- |
+| Stills from `flow_generate_image` / `flow_edit_image` that a kept clip was generated FROM | Frames pulled out of a video with `ffmpeg` |
+| The rejected candidate ONLY if the scene notes argue from it | Rejected candidates that lost on quality |
+| | Any `.mp4` |
+
+**3. Update the scene file so it reconstructs the cut.** A reader with the repo and the final video
+must be able to rebuild every beat. That means, per beat: the exact prompt, the model and settings,
+the source image **named as either a committed file or a timestamp into the final video**, and any
+post step. Add the recovery table:
+
+```markdown
+| Anchor | Recover with |
+| --- | --- |
+| board-anchor | `ffmpeg -ss 24.04 -i final/<scene>.mp4 -frames:v 1 board-anchor.jpg` |
+```
+
+### The test
+
+**Delete the scratch folder except `final/`. Could you rebuild the scene from the repo plus that
+one video?** If yes, you committed enough. If you committed anything beyond that, you committed too
+much.
+
 ## Knowledge base
 
 | File | What | Read when |
