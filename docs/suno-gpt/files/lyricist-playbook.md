@@ -150,6 +150,11 @@ whole block extends across it.
 **Don't stack more than 3–4 cues in close proximity.** Dense tagging is reported to confuse the
 model and produce inconsistent results; a tag on every line is counterproductive.
 
+> **First supporting observation, 2026-08-20.** Camping's re-cut ran a bracket cue roughly every two
+> lines and **broke into double time** for a stretch. Not cleanly separated from syllable cramming
+> as a cause — but cue overload is no longer only asserted, and **a tempo fault is now a reason to
+> strip cues before trying anything else.** ([`../suno-voices.md`](../suno-voices.md) Thread 4 §4.)
+
 > ⚠️ **This contradicts BadCode house practice.** Our tracks use very long multi-clause bracket cues
 > (six to eight directions in one header). Those cues have produced takes we liked, so this is not a
 > reason to rewrite them — but if a heavily-cued section keeps ignoring its own directions,
@@ -177,6 +182,13 @@ tested which parses better.)
 which line they take, or render too similar to tell apart, especially over longer sections. Other
 sources present duets as straightforward — that confidence gap is unresolved, and the pessimistic
 source is the more specific one.
+
+> **Resolved 2026-08-20 in favour of the pessimist, by a generation we ran.** Camping's re-cut
+> swapped voices *within* a verse, exactly as described. Suno documents no switch that locks a
+> singer to a line, and a saved Voice "is not a separate singer lane". Also tested: **"label every
+> line" is wrong** — per-line markup made the swapping worse, not better. One fixed short label per
+> character, repeated identically, is what works. Full evidence:
+> [`../suno-voices.md`](../suno-voices.md) Thread 4.
 
 **Call-and-response works best asymmetric and short:** the lead sings full lines, the responder
 answers in 3–6 words, and the two overlap only once, on a shared hook line.
@@ -228,6 +240,59 @@ Saoirse→SEER-sha    Siobhan→Shi-vawn
 
 **Keep the respelling identical everywhere the word recurs** — inconsistent spelling reintroduces
 the error. And don't preemptively respell words that haven't actually failed.
+
+> **Two additions from Camping, 2026-08-20.**
+>
+> **A hyphenated proper noun is a *slow* proper noun — and nobody connects these two sections.**
+> §5 lists the in-word hyphen as a note-stretcher; §6 tells you to respell for sound. Put them
+> together and you get the rule that actually matters: **compound and foreign names arrive
+> pre-hyphenated, so they render stretched by default.** `Châteauneuf-du-Pap` was being explicitly
+> instructed to drag, on a line that needed to rattle. Strip the hyphens as the *speed* fix and
+> respell as the *pronunciation* fix — they are two different faults that look like one.
+> Drop diacritics with them: a model sounding words out from English spelling patterns has no use
+> for a circumflex.
+>
+> **Respell the outlier to the rhyme chain, not to the dictionary.** When several words are meant to
+> rhyme and one keeps falling out, the culprit is usually that its correct spelling produces a
+> different stressed vowel. `ethic / pathetic / paralytic / get it` broke because `-lytic` reads
+> long; `paraletic` puts it back on the chain. **The chain is the spec, the dictionary isn't** —
+> the audience hears the rhyme, never the spelling.
+>
+> **Intermittent mispronunciation is a re-roll, not a respelling.** Only respell a word that fails
+> *reliably*; respelling one that mostly works trades a sometimes-fault for an always-fault.
+>
+> **When a respelling keeps getting overridden, the model is recognising the word — split it into
+> separate words so it can't.** `paralytic` → `paraletic` → `paralettic` all came back *paralytic*:
+> each was still close enough to the source spelling to be normalised back to the dictionary
+> pronunciation. `parra lettic` held. A single respelt token is still a token; two short ones are not
+> the word any more. This is also why `shatoe nuff doo pap` worked where `Châteauneuf-du-Pap` didn't
+> — the split was doing as much work as the phonetics.
+>
+> **The escalation ladder: respell → double the consonants → split into words.** Double consonants
+> bias the preceding vowel short (`lettic` → *LET-ik*, as in athletic), which is the cheapest step
+> and worth trying before the split. Watch the syllable count across the change — `parra lettic` is
+> four syllables, same as the original, so it costs nothing in timing.
+>
+> **The split rung needs spare syllables, so monosyllables get a different ladder.** `paralytic` and
+> `Châteauneuf-du-Pape` are four syllables each and could be redistributed across two tokens for
+> free. A one-syllable word cannot be split without adding a beat to the line. For those:
+> **respell to an *attested* spelling → double the vowel → give it its own stress unit with a
+> comma.** "Attested" is the load-bearing word — pick a spelling a human writer would plausibly
+> use, because the model has seen those and has never seen your invention. `BLOUGH` came out as a
+> mumbled *bleh*; `blaow` — the real grime/hip-hop ad-lib spelling — reads exactly one way
+> (2026-08-20, Camping).
+>
+> **`-ough` is the worst cluster in English and should never survive a respelling pass.** It maps to
+> at least seven vowels — *through, though, tough, cough, bough, thorough, hiccough* — so a model
+> sounding words out from spelling has nothing to go on. On an *invented* word there's no dictionary
+> entry to fall back on either, so it mumbles. Treat any `-ough` in a lyric sheet as a fault waiting
+> to happen.
+>
+> **Take an invented word out of ALL CAPS.** Caps are already unreliable as an emphasis mechanic,
+> but on a word the model doesn't know they add a worse failure: an unfamiliar all-caps token reads
+> as an **initialism**, and the model either spells it out or gives up. Capitalised *real* words
+> (`KEEP ON WALKING`) can't be misread that way and are safe. **Caps are a risk in proportion to how
+> unfamiliar the token is** — and a well-chosen spelling can carry the shout on its own.
 
 **Spell numerals out as words:** `24/7` → *twenty four seven*, `2024` → *twenty twenty-four*,
 `100` → *a hundred*.

@@ -61,7 +61,9 @@ later). Change the story here first, then the media.
 | --- | --- | --- |
 | Story spine | [`story.md`](./story.md) | **locked structure** (2026-08-04 master notes) |
 | Storyboard (video) | [`story.md`](./story.md#storyboard--scene-by-scene-video-guide) | drafted from the spine — Jack to shoot from |
-| Song — "Camping" | [`songs/camping.md`](./songs/camping.md) | exists; lyrics predate the restructure — revisit at cut time |
+| Song — "Camping" | [`songs/camping.md`](./songs/camping.md) | **live prompt sheet** — duet re-cut, same words, rebuilt casting so Bob and Tarquin stop blending. 14 rounds in; combination working |
+| Song — released take | [`songs/camping-released.md`](./songs/camping-released.md) | the published version, and the lyric-fidelity reference. Jack's video is cut to it |
+| Song — prompt history | [`songs/camping-prompt-history.md`](./songs/camping-prompt-history.md) | archive: what failed in each of the 14 rounds and why |
 | Video | Jack, from the storyboard section of `story.md` | next up |
 | Comic | `apps/web/src/comics/camping/` | **tells the old spine** (v1 recut, 24 pages) — rebuild from this canon when the video has proven the telling |
 | Social posts | — | not started |

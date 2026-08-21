@@ -285,6 +285,23 @@ tag references as mid-song tempo controls. Unattested in the ChillPanic corpus, 
 tags (half-time/double-time) are exactly where Suno is documented to be weakest — treat density as
 the real lever and this as a long shot.
 
+#### Diagnose a "feels rushed" note by measuring the spread (2026-08-20)
+
+A vague delivery complaint becomes actionable the moment you count syllables per line **per section
+and look at the range, not the mean**. On Camping only 5 of 48 lines were over the density ceiling —
+the fault was the **spread** (bridge: 9→15 against a 12-syllable opening line), and the section-template
+rule did the rest. A spread of 6+ inside one section is a timing fault waiting to happen.
+
+**When the words are locked — a released track, a re-cut, someone else's lyric — line breaks are the
+tempo control and they change no words.** Splitting a 15-syllable line into 7 + 8 halves the density
+and buys a second phrase. It is the first lever, ahead of commas and far ahead of the Style box.
+
+**Err short:** a short line is **stretched** (sounds deliberate), a long line is **crammed** (sounds
+broken).
+
+**Multiple spaces do nothing** — an intuitive but non-existent mechanism. The pause vocabulary is the
+table above.
+
 ### The blank-line technique
 
 An extra blank line within a section creates a longer pause for instrumental fill or vocal reset. This is one of the strongest performance controls available. Use it deliberately to mark:

@@ -35,7 +35,7 @@ Read on demand. Never reproduce its content in your reply, and don't lecture the
 | `files/lyricist-playbook.md` | **The songwriter's side**: which section tag summons which character, performance cues, multi-voice casting, typography, pronunciation, the content filter, hooks, lyric failure modes, Studio warp/quantize | Any lyrics-box question the other files don't answer. **Assertion-grade — read its confidence warning; where it conflicts with a tested finding, the tested one wins** |
 | `files/meta-tag-dictionary.md` | Specialty `[ ]` tags | Writing lyrics. **Treat as unverified** — see caution below |
 | `files/overused-words.md`, `files/ai-cliches.md` | Red-flag lists. **Lyrics only, never style prompts** | Writing lyrics |
-| `suno-voices.md` | **The voice playbook's evidence base** — both Karen threads in full: the genre-pool discovery, the transplant ladder, My Taste forensics | A character voice is fighting you, or you need the why behind "Getting a specific voice" below |
+| `suno-voices.md` | **The voice playbook's evidence base** — four threads: the Karen genre-pool discovery and transplant ladder, My Taste forensics, GPOM's two-voice problem, and **Thread 4, the Camping duet — the tested failures behind "Two characters in one song"** | A character voice is fighting you, two characters keep blending, or you need the why behind "Getting a specific voice" below |
 
 **Caution on the meta-tag dictionary.** Its exotic entries (`[fugue]`, `[retrograde]`,
 `[pedal-point]`, `[length: …]`) are uncorroborated by any practitioner source we have. Suno publishes
@@ -194,6 +194,8 @@ goes in, every time.
 |---|---|
 | Consistent voice across a release; Voice / custom model / Lyricist | `suno-controls-and-workflows.md` §4, §4a |
 | Change lyrics without losing the song | §6 (four ranked methods) + `suno-studio.md` §4–5 |
+| A word mispronounced, or a rhyme that won't chain | `lyricist-playbook.md` §6 — respell for **sound**, and **respell the outlier to the rhyme chain, not the dictionary**. Strip in-word hyphens too: they stretch the note, so a hyphenated or foreign name renders slow by default. Intermittent = re-roll, not respell |
+| A delivery that's rushed, or lines that won't sit on the bar | `lyric-craft.md` "Punctuation is the brake" — **measure syllables per line per section and look at the spread**; line breaks are the tempo control and change no words. Then `lyricist-playbook.md` §9 for Studio warp/quantize |
 | Cover / Sample / Mashup / Sounds / speed | §7 |
 | Getting a good generation *out of* Studio | §8 |
 | Stems, de-artifacting, "reduce more than you produce" | §9 |
@@ -201,6 +203,10 @@ goes in, every time.
 | Building a track in Studio from nothing; getting an arrangement around a human performance | `suno-studio.md` §11 — the two worked recipes |
 | Exporting, pulling MIDI out, sharing a project with Jack | `suno-studio.md` §12 |
 | A character voice that won't come | "Getting a specific voice" below, then `suno-voices.md` |
+| Fusing two genres — an orchestra under a beat, strings on a club track | `suno-tag-mechanics.md` "The unity sentence". Name the lead genre, then state explicitly that the two are **one piece of music, not a remix of one by the other** — that clause is what stops a fusion sounding bolted on. Worked example: `stories/gitpush-origin-master/songs/git-push-origin-master-dnb.md` |
+| A layer arrives too early — strings/pads in bar one when you asked for them at the drop | `suno-tag-mechanics.md` "The unity sentence" → the entrance rules. Naming an instrument puts it in bar one by default, and a *lead-in* cue still names it. **Delete the mention rather than describing a quiet version**, and strip the instrument from **My Taste**, which has no section scope. Worked example: `stories/camping/songs/camping.md` §4c |
+| The drop lands flat even though the sound is right | Nothing before it was held back. Escalate the arrangement in **gears** — no drums → loose kit with no sub → full weight *plus* the held-back layer, arriving together. Two reveals on one beat. `suno-tag-mechanics.md`, and the gear table in `stories/camping/songs/camping.md` §4c |
+| Two characters who keep blending, swapping mid-verse, or won't take an accent | "Two characters in one song" below, then `suno-voices.md` Thread 4 |
 
 **Two honesty rules, because the app moves faster than this knowledge base.**
 
@@ -312,6 +318,60 @@ fighting it** — the smooth vocalist that kept invading Karen's lead became the
 singing the functionaries' answers against her spoken whine. The wrong voice is often a right
 voice for somebody else in the story. One saved Voice per generation, but lead + parentheses =
 two cast members.
+
+### Two characters in one song
+
+**There is no multi-voice control in Suno.** No documented switch locks Singer A to specific lines;
+a saved Voice is not a separate singer lane. Role labels are steering cues, and the platform is
+free to blend the two, swap them, or collapse the duet into one lead. Design around that.
+
+**First, check whether it's actually a duet.** Two characters *sharing* a section is a casting
+problem. Two characters *taking turns* across an instrumental break is **a seam you can cut on** —
+generate one per character and join them, which makes the blend structurally impossible instead of
+merely improbable. Cutting beats casting every time; the drop is free. (Camping looked like a
+two-hander and was really two solo verses either side of a 32-bar drop — every lever spent on
+in-generation casting there was wasted.)
+
+**Contrast on axes the model renders, never on accent.** A detailed Scouse spec produced zero
+accent (2026-08-20, tested). Accent joins age on the describable-but-not-summonable list. Stack
+these four instead — together they put two solo adult men genuinely far apart:
+**pitch** (low/deep vs high/light) · **texture** (gravelly, torn vs clean, crisp) ·
+**delivery mode** (rapped on the grid vs spoken behind it) · **room** (close and dry vs wide and
+reverberant). Accent belongs in the canon file and in your own head, not in the Style box.
+
+**But keep a UK genre tag, or the voices go American.** Nationality rides on the **genre**, not on
+adjectives — pool-selecting words are the strongest national control there is; `British` alone is
+weak reinforcement. Camping stripped its accent language and lost `UK grime influence` in the same
+edit, and both men came back American. **When you strip a failing spec, check what else that clause
+was quietly holding up.**
+
+**Then pick the genre whose default performer *is* your character — a pool is a person, not a
+property.** Accent, age, class and race arrive as one package; you cannot borrow a genre's
+nationality without its performer. `UK grime` fixed Camping's nationality and cast both leads as
+young MCs, when they're a weathered fifty-something and a City banker. Choose the **tradition**
+instead: `British post-punk spoken word` for a middle-aged working-class British bloke, `BBC English`
+/ `newsreader` for the establishment one, grime and drill where a young street voice is actually
+right. Naming a tradition does the casting precisely and keeps demographic adjectives out of the
+prompt entirely — which is the "cast traditions, not demographics" rule doing real work.
+
+**If the character exists as an image, the voice has to match the picture.** Check a take against the
+character sheet, not just against the style prompt — a song and a comic that disagree about who
+someone is read as two different characters.
+
+**Parentheses hold a short answer line, not a verse.** They state a position in the *mix* — a
+backing singer stood back from the mic — not an identity. A section of nothing but parenthesised
+lines has no lead line to answer, so the lead slot gets filled line by line and the voice
+ping-pongs *inside* the section. See `suno-voices.md` Thread 4 §1, which bounds Thread 3 §6.
+
+**More casting markup makes casting worse.** Dense per-line voice labels are a smell, not a fix.
+Use **one fixed short label per character, repeated identically** (`[low gravelly voice]`,
+`[high clean voice]`) — varied wording reads as a new character. And if the tempo breaks into
+double time, **strip cues before anything else**: a bracket every couplet chops a verse into
+micro-sections that each re-decide their phrasing. `[Beat Transition]` between sections is the
+cheap reset.
+
+**Once you've cut, a saved Voice per character is exactly right** — one Voice per generation is the
+supported case. The Voice is rarely the wrong tool; it's the right tool on the wrong unit of work.
 
 **Cue-heavy skit tracks invert the model rule:** v4.5's extra vocal variety isn't worth it when the
 track's architecture lives in dense bracket cues — 4.5 shreds the structure, v5.5 obeys it. Stay on

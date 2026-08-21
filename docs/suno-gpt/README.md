@@ -14,6 +14,7 @@ the entry point — this is what it reads.
 | [`files/producer-vocabulary.md`](./files/producer-vocabulary.md) | Words for describing sound, by domain; song structure; how to judge a generation |
 | [`files/lyric-craft.md`](./files/lyric-craft.md) | Syllable counts, rhyme schemes, section shapes, engineered transitions — **and the punctuation/timing table: how Suno times what you wrote** |
 | [`files/lyricist-playbook.md`](./files/lyricist-playbook.md) | **The songwriter's side**: section-tag character ([Chorus] vs [Drop] vs [Chant]), performance cues, multi-voice casting, typography, pronunciation, the content filter, hooks, lyric failure modes, Studio 1.2 warp/quantize. **Weaker evidence than the rest of this base — read its confidence warning first** |
+| [`suno-voices.md`](./suno-voices.md) | **Getting a specific character's voice, on purpose** — the evidence base behind the skill's "Getting a specific voice" and "Two characters in one song". Four threads: the genre-pool discovery + Voice-transplant ladder (Karen), My Taste forensics, the two-voice problem (GPOM), and the Camping duet. **Contains most of what we have actually tested ourselves** |
 | [`files/meta-tag-dictionary.md`](./files/meta-tag-dictionary.md) | Specialty `[ ]` tags. **Largely unverified — see caveat below** |
 | [`files/overused-words.md`](./files/overused-words.md), [`files/ai-cliches.md`](./files/ai-cliches.md) | Red-flag lists for lyrics only, never style prompts |
 
@@ -49,6 +50,17 @@ here is the artifact.
 | 2026-08-08 | 11-agent web sweep, songwriter-side sources (non-ChillPanic) | `files/lyricist-playbook.md` (new) + `files/lyric-craft.md` timing table |
 | 2026-08-14 | Suno Music official, *"Introducing Suno Studio 2.0"* (published 2026-08-13) | `files/suno-studio.md` (new) + cross-refs in `suno-controls-and-workflows.md` §6, §8, §9, §10, §11 |
 | 2026-08-14 | Suno Music official, *"Getting Started in Suno Studio 2.0"* (published 2026-08-14, 37 min) | `files/suno-studio.md` §10–13 — a full blank-canvas build with the mistakes left in; the source for the timeline-editing, workflow, export and sharing material |
+| 2026-08-20 | **Our own generation** (Camping duet re-cut, round 1) + a web sweep on multi-voice casting | `suno-voices.md` Thread 4 + skill "Two characters in one song"; bounds Thread 3 §6; corroborates `lyricist-playbook.md` §3 and resolves its §4 duet disagreement |
+| 2026-08-20 | **Our own generations** (Camping duet re-cut, rounds 5–6 — the orchestral layer arriving in bar one, twice) | `files/suno-tag-mechanics.md` entrance rules (delete the mention, don't describe the absence; My Taste has no section scope; escalate in gears) + `suno-voices.md` Thread 4 §6a + two skill routing rows |
+| 2026-08-20 | **Our own generation** (Camping duet re-cut, round 6 — a mid-verse arrangement change that never happened) | `files/suno-tag-mechanics.md` — an inline cue is a modifier and the genre tag is the noun, so mid-section arrangement changes need a real section tag (`[Build]`); plus the easy-direction/hard-direction rule for instrument entrances |
+| 2026-08-21 | **Our own generation** (Camping duet re-cut, round 14 — adding a guitar to a prompt that banned guitars) | `files/suno-tag-mechanics.md` — grep Exclude and My Taste for an instrument *and its category* before adding it; a stale ban is invisible and reads as the Style box being ignored. Plus how to word a low rhythmic guitar bed without getting a solo |
+| 2026-08-21 | **Our own generation** (Camping duet re-cut, round 12 — a glockenspiel made two ranting men start singing) | `files/suno-tag-mechanics.md` — a melodic accompaniment invites a melodic vocal and will undo casting; when five wordings each fail *differently* the category is wrong, not the wording; plugin brand names don't travel, the synthesis technique does |
+| 2026-08-21 | **Our own generation** (Camping duet re-cut — Suno rejected the word `skank`) | `files/suno-tag-mechanics.md` — `skank` is filter-blocked by artist-alias collision; a rejected innocuous musical word is usually a *name*, so describe the mechanic instead of naming it |
+| 2026-08-21 | **Web sweep** (reggae/dub prompting guides) + **our own generation** (Camping duet re-cut, round 10) | `files/suno-tag-mechanics.md` — how to word a dub `skank` and a dub horn section; and the larger rule: reach for a **named technique** that is already sparse rather than spending rounds asking an instrument to play less |
+| 2026-08-21 | **Our own generations** (Camping duet re-cut, round 9 — a sparse piano that stayed busy, and a `[Build]` gap that survived three denials) | `files/suno-tag-mechanics.md` — adjectives are comparative so give a **rate**; deny the part exists; swap to an instrument that physically cannot do the banned thing; and replace a fighting keyword rather than arguing with it (`[Verse 1 continues]` over `[Build]`) |
+| 2026-08-21 | **Our own generation** (Camping duet re-cut, round 8 — a solo piano turned the whole track pantomime) | `files/suno-tag-mechanics.md` — naming a *form* imports its *texture* (`Chopin nocturne` = busy, not sad); one instrument's texture can flip the register; don't name the genre you're satirising in a mood line; negatives belong in Exclude, positives in Style |
+| 2026-08-20 | **Our own generation** (Camping duet re-cut, round 7 — `[Build]` worked and emptied the section of vocals) | `files/suno-tag-mechanics.md` — a section tag brings its whole genre convention: never put a bar count on a tag you want sung over, and state the exception three ways |
+| 2026-08-20 | **Our own generation** (Camping duet re-cut — the invented word `BLOUGH`) | `files/lyricist-playbook.md` §6 — the monosyllable respelling ladder, the `-ough` warning, and caps-on-invented-words; sharpens the ALL CAPS entry below |
 
 Re-run the harvest script with a date filter to catch up on anything newer.
 
@@ -76,10 +88,41 @@ may simply not cover it and search outward.
 Recorded so nobody re-derives them:
 
 - **ALL CAPS for emphasis** — failed a direct A/B test; evidence elsewhere is mixed. Not a mechanic.
+  **On an invented word it is actively harmful**: an unfamiliar all-caps token reads as an
+  initialism and gets spelled out or mumbled (`BLOUGH` → *bleh*, 2026-08-20). Capitalised real
+  words are safe. Risk scales with how unfamiliar the token is.
 - **Pipes vs commas in meta-tags** — no measurable difference across controlled testing. Keep the
   pipe as a readability convention only.
 - **"Max Mode"** — almost certainly placebo; a gibberish control block performed comparably. The real
   effect is token padding, which changes output without improving it.
+- **Regional accents** — a detailed Scouse spec produced no accent at all (tested 2026-08-20). Accent
+  sits with age words: describable, not summonable. Contrast voices on pitch, texture, delivery mode
+  and room instead. **But nationality is real and rides on the *genre* tag** — dropping `UK grime`
+  turned the same voices American. Keep a UK genre; `British` alone is weak reinforcement.
+- **Borrowing one attribute from a genre** — a vocalist pool is a *person*, not a property: accent,
+  age, class and race come as one package. `UK grime` bought Britishness and cast two middle-aged
+  white characters as young MCs. Pick the genre whose default performer *is* your character.
+- **Per-line voice labels to fix a duet** — tested worse than one repeated short label per character.
+  More casting markup makes casting worse.
+- **A "quiet lead-in" cue to make a layer arrive late** — failed twice on the same track
+  (2026-08-20). A cue describing a soft early version of an instrument still *names* it,
+  and naming defaults to bar one. Delete the mention instead; state the entrance once in
+  the Style box and once in the cue for the section it arrives in.
+- **Inline cues asking for a weaker version of the genre's default sound** — e.g.
+  `[drums enter — stripped back, no sub yet]` inside a neurofunk track. Produced no
+  audible change at all (2026-08-20). Use a section tag (`[Build]`) so the model
+  re-decides the arrangement; an adjective cannot outvote the genre tag.
+- **A composer or repertoire name as a *mood* instruction** — `a Chopin nocturne,
+  mournful` returned a busy, upbeat piano (2026-08-21). Form names carry texture and beat
+  the adjective beside them. Describe the texture, and describe the silence.
+- **Adjectives for sparseness** (`utterly sparse`, `more silence than notes`, `no melody,
+  no runs`) — still returned a busy piano (2026-08-21). They are graded against the
+  instrument's normal idiom. Give a rate: `one note every two seconds`.
+- **Denying a section tag's connotation** — `[Build … no instrumental gap, no break in the
+  words, carrying straight on]` still produced an instrumental gap, twice. Replace the
+  keyword instead.
+- **Plugin / brand names** (`Serum 2`, etc.) — no reliable effect, plus alias-collision
+  risk. Name the synthesis technique (`wavetable`) and the behaviour instead.
 - **Chord progressions as text** — ignored. Feed audio instead.
 - **Music-theory intervals** (`third`, `fifth`) in harmony prompts — little effect.
 - **The exotic meta-tag dictionary entries** — uncorroborated by any practitioner source.
