@@ -503,6 +503,65 @@ Stacking guidelines:
 - Order from broadest to most specific
 - Keep each bracket under roughly 80 characters
 
+#### What to cut when a cue outgrows that — the scoping rule
+
+The 80-character guideline is real but it is a *ceiling, not a mechanic*: long cues do
+still function. Camping's verse-1 cue reached **ten clauses and 1,010 characters** and
+every arrangement instruction in it was landing. The cost is dilution, not failure —
+with ten clauses none of them dominates, and Camping round 1's double-time delivery fault
+was traced to cue density.
+
+So the useful question is not *how long* but *what belongs there*. **The lyric cue is the
+only section-scoped box.** Both other boxes are global:
+
+| Box | Scope | Should carry |
+|---|---|---|
+| My Taste | none — global, unswitchable | only what plays from bar one |
+| Style | none — global, strongest | the whole-track truth |
+| **Lyric cue** | **section-scoped** | **only what is true of this section and not the others** |
+
+Everything else in a cue is a duplicate of the Style box, and duplication costs attention
+without buying scope. Cutting on that rule took Camping's verse cue from 1,010 to 693
+characters with nothing section-scoped lost: out went an instrument's *tone* (the same
+guitar plays in both verses, so the tone is global), a lead synth's full spec (global),
+and two of three denials of melody. In stayed entrance timing, "no drums for the first
+half", "the guitar drops out here", "heavier than the first drop", and the anti-gap guard
+— all facts about *that section*.
+
+**The one time to keep a duplicate:** when the same round is trying to make that element
+louder. Thinning repetition on the exact thing you are boosting is two changes fighting.
+Drop the duplicate the round *after* it works.
+
+### Making a fill or a one-off event audible
+
+Two failures produce a fill nobody can hear, and both are worth checking before rewording.
+
+**1. A fill cannot contrast with a bed made of the same thing.** Camping asked for amen-break
+fills over a kit that `My Taste` had already described as `chopped amen breaks` — so the fill
+was made of the background. Nothing arrived. The fix was upstream of the wording: describe the
+bed as something else (`dry chopped breakbeats`) and reserve the named sample for the fill.
+**Generalised: before adding an accent, check what the prompt says the default already is.**
+This is the same shape as the "sparse piano" failure — an instruction graded against an idiom
+that already contains it has nothing to move against.
+
+**2. A rate works for density; an event needs a description.** "Rate beats adjective" holds for
+things that play continuously (`one note every two seconds` beat every wording of "sparse").
+It does *not* transfer to discrete events: Suno has no bar counter, so `a fill at the end of
+every eight bars` puts the whole instruction's weight on the most ignorable word in it. Describe
+the moment instead — what changes, for how long, how loud, and that it returns:
+
+```
+Every four bars the drums tear into a chopped amen roll for a whole bar,
+snares tumbling over each other, loud and messy up front, then straight back in.
+```
+
+Keep the interval in the sentence (it costs nothing) but do not expect it to be counted.
+
+**Watch the tempo vocabulary while you do it.** "At double speed" is the obvious way to describe
+a roll and it is a trap: `double time` and `tempo change` are standard Exclude-box entries for
+timing faults, and a tempo word in the Style box acts on the whole track, not on the fill.
+`snares tumbling over each other` buys the same impression with no tempo word in it.
+
 ### Section tags Suno reliably recognizes
 
 `[Intro]` `[Verse]` `[Pre-Chorus]` `[Chorus]` `[Post-Chorus]` `[Bridge]` `[Hook]` `[Build]` `[Drop]` `[Breakdown]` `[Interlude]` `[Solo]` `[Outro]` `[End]` `[Fade In]` `[Fade Out]`

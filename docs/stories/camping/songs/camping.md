@@ -1,6 +1,6 @@
 ---
 title: Camping (duet re-cut)
-status: round 14 drafted (synths + guitar) — rounds 1-13 generated and diagnosed; the orchestral direction is abandoned
+status: round 15 drafted (amen fills as an event + cues compressed) — rounds 1-14 generated and diagnosed; the orchestral direction is abandoned
 released_take: ./camping-released.md
 history: ./camping-prompt-history.md
 bpm: 174
@@ -48,7 +48,7 @@ onto.
 
 ---
 
-## The four Suno boxes — current, round 13
+## The four Suno boxes — current, round 15
 
 **This is the live prompt.** Paste **all four** boxes every round; never trust what a box
 already contains. Everything below this heading is current; the round log above and the
@@ -63,7 +63,7 @@ generation, cannot be turned off, and can only be replaced.
 ```
 Vocals: British post-punk spoken word — two white British men in their late forties and fifties, ranting and talking over the beat rather than singing. One is low, gravelly, smoke-worn and nasal, half-shouting and half-muttering into a cheap close mic: a working-men's-club voice. The other is higher, clean and plummy BBC English, precise and unhurried, talking down at you from a wide room. Ranted spoken word over sung melody, every time. Raw over polished.
 
-Music: dark UK drum and bass and neurofunk at 174 BPM, minor key. Rolling Reese bass, deep sub, chopped amen breaks, industrial stabs. Arrangements that climb in steps and hold things back: a track that opens on one unaccompanied instrument and does not show its full weight until the drop. Space used as an instrument: long empty stretches, one sound at a time, nothing playing that does not need to. Big aggressive wavetable synthesizers doing the work an orchestra would do elsewhere: screaming detuned leads, hard-synced and formant-morphing, growling gnarly mid-range, filters swept by hand. No orchestral instruments and no piano anywhere. Cold, grimy, relentless, and rock steady in tempo from start to finish. A British record, made in Britain, about Britain.
+Music: dark UK drum and bass and neurofunk at 174 BPM, minor key. Rolling Reese bass, deep sub, dry chopped breakbeats, industrial stabs. Drum fills that tear across a whole bar every few bars: chopped amen rolls, snares tumbling over each other, loud and right at the front of the mix, then straight back into the groove. Arrangements that climb in steps and hold things back: a track that opens on one unaccompanied instrument and does not show its full weight until the drop. Space used as an instrument: long empty stretches, one sound at a time, nothing playing that does not need to. Big aggressive wavetable synthesizers doing the work an orchestra would do elsewhere: screaming detuned leads, hard-synced and formant-morphing, growling gnarly mid-range, filters swept by hand. No orchestral instruments and no piano anywhere. Cold, grimy, relentless, and rock steady in tempo from start to finish. A British record, made in Britain, about Britain.
 
 Register: bleak, bitter and angry, played completely straight. Whatever is funny lives in the words alone — the music never winks, never nudges, never plays along.
 
@@ -90,7 +90,7 @@ the nationality. Escalate `British post-punk` and add `Britpop` before adding an
 genre back.
 
 ```
-Dark UK drum and bass, neurofunk, 174 BPM, minor key — British post-punk spoken word on top, ranted over the beat. Verse one is a weathered British man in his fifties: low, gravelly, smoke-worn, nasal, half-shouted and half-muttered, bone dry. Verse two hands to a well-spoken British man: higher, clean, plummy BBC English, talking down from a wide room. Four steps: one long low detuned synth note, no melody; then the voice over it with a low palm-muted single-note electric guitar riff underneath — distorted rock tone, one short figure repeating low down, never a solo, never chords; then a dry chopped breakbeat under the vocal, no bassline; then the drop, guitar out, kit at full weight, Reese sub and a screaming detuned wavetable lead cut against it, so synth and break are one piece of music, not a remix of one by the other. An amen break rolls in as a fill at the end of every eight bars. Ranted and spoken throughout. Grim and bitter, played straight, one steady tempo throughout.
+Dark UK drum and bass, neurofunk, 174 BPM, minor key — British post-punk spoken word on top, ranted over the beat. Verse one is a weathered British man in his fifties: low, gravelly, smoke-worn, nasal, half-shouted and half-muttered, bone dry. Verse two, a well-spoken British man: higher, clean, plummy BBC English, talking down from a wide room. Four steps: one long low detuned synth note; then the voice over a low palm-muted electric guitar riff — distorted rock tone, one short figure repeating, never a solo, never chords; then a dry chopped breakbeat under the vocal, no bassline; then the drop, guitar out, kit at full weight, Reese sub and a screaming detuned wavetable lead cut against it, so synth and break are one piece of music, not a remix of one by the other. Every four bars the drums tear into a chopped amen roll for a whole bar, snares tumbling over each other, loud and messy up front, then straight back in. Grim and bitter, played straight, steady tempo throughout.
 ```
 
 ### 3. Exclude Styles
@@ -144,16 +144,16 @@ anywhere**, a known Suno blind spot that thins the arrangement instead of halvin
 drums.
 
 ```lyrics
-[Intro — 8 bars | one long low detuned synth note, completely alone | held, slowly filtering open, cold and menacing, growing in threat | a texture, not a tune: no melody, no phrase, no notes changing | distant city hum far underneath | no drums, no bass, no guitar]
-[Verse 1 | gravelly ranting voice — a weathered British man in his fifties, low, smoke-worn, nasal | ranted over the beat, half-shouted and half-muttered, close and bone dry | the low synth note holds underneath | a low palm-muted single-note electric guitar riff comes in with the voice and runs the whole verse — a distorted, overdriven rock guitar tone, hard and dirty, played tight and dry on the bottom strings | the same short figure repeating steadily, changing note only every bar or two — not a solo, no chords, no strumming, no fast runs | no drums and no bass for the first half of this verse, then a dry chopped breakbeat comes in underneath the vocal and runs to the drop, with a chopped amen break rolling in as a fill at the end of every eight bars | a short hard synth stab starts repeating underneath once the beat is in | the words never stop and there is no instrumental passage anywhere in this verse]
-Once again and you catching my eye,
+[Intro — 8 bars | one long low detuned synth note, completely alone, held and slowly filtering open, cold and menacing | a texture, not a tune: no melody, no notes changing | distant city hum far underneath | no drums, no bass, no guitar]
+[Verse 1 | gravelly ranting voice — a weathered British man in his fifties, low, smoke-worn, nasal, half-shouted and half-muttered, close and bone dry | the low synth note holds underneath | the palm-muted distorted guitar riff comes in with the voice and runs the whole verse, the same short figure repeating | no drums and no bass for the first half of this verse, then a dry chopped breakbeat comes in under the vocal and runs to the drop, with chopped amen rolls tearing across every fourth bar, snares tumbling over each other, loud up front | a short hard synth stab starts repeating once the beat is in | the words never stop and there is no instrumental passage anywhere in this verse]
+Once again, and you catching my eye,
 and you looking to the side in shame, but why
 now, let me explain, how I'm just poor
-you KEEP ON WALKING through that Wait trose door
-presenting yourself with your shiny teeth
-fucking sense of entitlement and self belief
-I get that you think your deals are slick
-but I bet that you paid for your wheels on tick!
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick!
 cash from the bank for your wank tank
 let me count up all the cans that I drank
 I'm not alone and I'm sick of this crap
@@ -162,9 +162,9 @@ crackle and pop, I want change,
 not from your pocket but at the top
 in the meantime though let me hold that door
 please sir, can I FUCKIN, have some more?
-[Drop — instrumental, 16 bars, no vocals | the kit hits full weight and the sub bass drops for the first time | heavy Reese bass, dark and relentless | a chopped amen break rolls in as a fill at the end of every eight bars | the guitar drops out here | a screaming detuned wavetable lead tears in over the break — hard-synced, bending, formant-morphing, gnarly mid-range, cutting against the drums]
+[Drop — instrumental, 16 bars, no vocals | the kit hits full weight and the sub bass drops for the first time, heavy Reese, dark and relentless | chopped amen rolls tearing across every fourth bar, snares tumbling over each other, loud up front | the guitar drops out here | the screaming detuned wavetable lead tears in over the break, cutting against the drums]
 [Beat Transition]
-[Verse 2 | well-spoken posh voice — a completely different man, same age, light, crisp, plummy BBC English | talking down at you, unhurried, from a wide open room, smug and mocking | full-weight drum and bass carries straight on, drums flip, colder synths, sharper hats | a chopped amen break rolls in as a fill at the end of every eight bars | the same low palm-muted distorted electric guitar riff returns underneath, same tone, steady and unchanged | nothing else playing at all]
+[Verse 2 | well-spoken posh voice — a completely different man, same age, light, crisp, plummy BBC English, talking down at you, unhurried, smug and mocking, from a wide open room | full-weight drum and bass carries straight on, drums flip, colder synths, sharper hats | chopped amen rolls tearing across every fourth bar, snares tumbling over each other, loud up front | the same palm-muted distorted guitar riff returns underneath, unchanged | nothing else playing at all]
 you are intent on living in a tent
 get fucked all day and pay no rent
 it's a lack of work ethic, quite pathetic
@@ -182,7 +182,7 @@ if you worked hard, then you could have plenty, fenty,
 all you seem to now do, is resent me.
 wealth gap? fuckin what a load of crap
 now please let me drink my shatoe nerf doo pap
-[Drop — instrumental, 16 bars, no vocals | heavier and more distorted, neuro bass growl | the amen break fills come harder and more chopped than the first drop | the lead synth harsher and more distorted than the first drop, screaming higher, more bend and more formant movement | growling neuro bass underneath it all]
+[Drop — instrumental, 16 bars, no vocals | everything heavier and more distorted than the first drop — growling neuro bass underneath it all, the amen rolls harder, longer and more chopped, the lead screaming higher with more bend and more formant movement]
 [Beat Transition]
 [Bridge | the turn | drums strip right back, intimate | the two men trade, both close and dry in the same cold room now]
 [gravelly ranting voice]
@@ -396,6 +396,75 @@ line holding six rounds of orchestral wreckage out of the track — narrowed fro
 **Note on "dancehall".** Read as **dancefloor** D&B — big-room, main-stage synths — not
 the Jamaican genre, which is excluded along with the rest of the reggae direction.
 
+### 4d. Amen fills — why the first attempt was inaudible
+
+Round 14 asked for `an amen break rolls in as a fill at the end of every eight bars` and
+the fills did not arrive. Two causes, and the first one is the reusable finding.
+
+**1. The bed was already made of amen.** `My Taste` described the kit as
+`chopped amen breaks`, so the track's default drums *were* an amen break. A fill built
+from the same sample as the bed has nothing to contrast against, and an event you cannot
+distinguish from the background is an event that did not happen. **This is the piano
+failure again in a different costume** — "sparse piano" was graded against a piano's
+normal idiom and lost; an amen fill was graded against a bed of amen and lost. Fix: the
+bed is now `dry chopped breakbeats` and the word **amen** is reserved for the fill alone.
+
+**2. A rate is not enough for a discrete event.** "Rate beats adjective" (§4c, the piano)
+holds for the *density of something continuously playing*. A fill is an **event**, and
+Suno has no bar counter — the count is the most ignorable word in the sentence. What
+lands is the **sound and the contrast**: what the drums do differently, for how long, how
+loud, and that they come back. So the wording moved from a label plus a number to a
+description of the moment: *the drums tear into a chopped amen roll for a whole bar,
+snares tumbling over each other, loud and messy up front, then straight back in.* The
+interval was halved to four bars at the same time, but that is the least load-bearing
+word in it.
+
+**Deliberately not written: "double speed" or "double time".** Both are in the Exclude
+box for the timing fault, and naming a tempo word in the Style box risks the whole track,
+not just the fill. `snares tumbling over each other` buys the same impression of speed
+with no tempo word in it.
+
+### 4e. How long should a bracket cue be?
+
+The cues had grown to ten clauses and 1,010 characters on verse 1. They were cut to seven
+and 693 in round 15, with no section-scoped fact lost. The question behind it — *is Suno
+even reading all of this?* — has an evidenced answer both ways: **yes it reads them**
+(every arrangement win in this sheet came through a cue, and every accidental instrumental
+gap came from one), **but they compete** (round 1's double-time fault came from cue
+density). With ten clauses, none of them dominates.
+
+**The rule, and it is the mirror of the My Taste rule.** The lyric cue is the *only*
+section-scoped box we have. `My Taste` and the Style box are both global. So:
+
+| Box | Scope | Should carry |
+|---|---|---|
+| My Taste | none — global | only what plays from bar one |
+| Style | none — global, strongest | the whole-track truth |
+| **Lyric cue** | **section-scoped** | **only what is true of this section and not the others** |
+
+Everything else in a cue is duplication of the Style box, and duplication costs attention
+without adding scope. What that removed here: the guitar's tone spec (global — it is the
+same guitar in both verses, and the tone lives in the Style box), the wavetable lead's
+full spec (global), and three separate denials of melody in the intro. What stayed:
+entrance timing, the no-drums first half, "the guitar drops out here", drop 2's
+*relative to the first drop*, and the anti-gap guard — all facts about **this section**.
+
+**One deliberate exception this round.** The amen clause was *kept* in all four cues even
+though it is now global, because the same round is trying to make the fills louder, and
+thinning the repetition on the exact thing being boosted would be two changes fighting.
+Once the fills are audible, that clause is the next thing to drop from the cues.
+
+**Next available trim, not taken:** verse 1 and verse 2 still repeat their casting
+description, which is also in the Style box. Left alone on purpose — the casting took
+four rounds to win and is not worth risking to save 120 characters.
+
+**Trim ledger — Style box, round 15.** Adding the amen sentence pushed the box to 1,040.
+Back to **989** by cutting, in this order: `hands to` → `,`; `, no melody` from the intro
+note (the intro cue says it twice more); `low down` from the guitar (`low palm-muted`
+already says it); `right at the front` → `up front`; `slam back into the groove` →
+`straight back in`; `one steady tempo` → `steady tempo`. Nothing cut from the casting
+clauses or the unity sentence, per the standing rule.
+
 ### 5. Settings
 
 Style influence **75** · weirdness **30** · **no saved Voice** · model **v5.5**.
@@ -454,7 +523,9 @@ that needed two.
 
 - **"AI"** in the bridge may render as a word rather than the letters. If so,
   respell `A-I` consistently everywhere it appears.
-- **ALL CAPS** ("KEEP ON WALKING", "FUCKIN") is not a reliable shout mechanic on its own,
+- **ALL CAPS** ("FUCKIN", "SPEAK TO THE HAND BITCH!") is not a reliable shout mechanic on its own
+  — `KEEP ON WALKING` came out of caps in round 15 and gained a comma instead, which is the
+  more reliable mechanic anyway (a comma is a stress boundary; caps are not documented) —
   and the sheet no longer carries the bracket cues that used to back them. If those lines
   lose their force, the fix is the four-cue re-add list in *"If the delivery goes flat"*.
   Both are safe to leave capitalised because they are **real words**; `blough` was not,
@@ -467,4 +538,3 @@ that needed two.
 - **One interpretive call:** the final line, unattributed in the released lyric,
   is cued as **both men together**. Change it to the high clean voice alone if you
   want the released reading.
-

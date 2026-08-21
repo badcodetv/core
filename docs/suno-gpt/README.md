@@ -57,6 +57,7 @@ here is the artifact.
 | 2026-08-21 | **Our own generation** (Camping duet re-cut, round 12 — a glockenspiel made two ranting men start singing) | `files/suno-tag-mechanics.md` — a melodic accompaniment invites a melodic vocal and will undo casting; when five wordings each fail *differently* the category is wrong, not the wording; plugin brand names don't travel, the synthesis technique does |
 | 2026-08-21 | **Our own generation** (Camping duet re-cut — Suno rejected the word `skank`) | `files/suno-tag-mechanics.md` — `skank` is filter-blocked by artist-alias collision; a rejected innocuous musical word is usually a *name*, so describe the mechanic instead of naming it |
 | 2026-08-21 | **Web sweep** (reggae/dub prompting guides) + **our own generation** (Camping duet re-cut, round 10) | `files/suno-tag-mechanics.md` — how to word a dub `skank` and a dub horn section; and the larger rule: reach for a **named technique** that is already sparse rather than spending rounds asking an instrument to play less |
+| 2026-08-21 | **Our own generation** (Camping duet re-cut, round 14 — amen fills that never arrived, and bracket cues grown to 1,010 characters) | `files/suno-tag-mechanics.md` — the cue **scoping rule** (the lyric cue is the only section-scoped box, so it carries only section-scoped facts; everything else duplicates the Style box) and **making a fill audible** (a fill cannot contrast with a bed made of the same thing; a rate suits density, an event needs a description; avoid tempo words in a roll) |
 | 2026-08-21 | **Our own generations** (Camping duet re-cut, round 9 — a sparse piano that stayed busy, and a `[Build]` gap that survived three denials) | `files/suno-tag-mechanics.md` — adjectives are comparative so give a **rate**; deny the part exists; swap to an instrument that physically cannot do the banned thing; and replace a fighting keyword rather than arguing with it (`[Verse 1 continues]` over `[Build]`) |
 | 2026-08-21 | **Our own generation** (Camping duet re-cut, round 8 — a solo piano turned the whole track pantomime) | `files/suno-tag-mechanics.md` — naming a *form* imports its *texture* (`Chopin nocturne` = busy, not sad); one instrument's texture can flip the register; don't name the genre you're satirising in a mood line; negatives belong in Exclude, positives in Style |
 | 2026-08-20 | **Our own generation** (Camping duet re-cut, round 7 — `[Build]` worked and emptied the section of vocals) | `files/suno-tag-mechanics.md` — a section tag brings its whole genre convention: never put a bar count on a tag you want sung over, and state the exception three ways |
@@ -121,6 +122,13 @@ Recorded so nobody re-derives them:
 - **Denying a section tag's connotation** — `[Build … no instrumental gap, no break in the
   words, carrying straight on]` still produced an instrumental gap, twice. Replace the
   keyword instead.
+- **A bar count for a one-off event** (`a fill at the end of every eight bars`) — Suno has
+  no bar counter, so the number is the ignorable part and the fill does not arrive
+  (2026-08-21). The rate rule above is for *continuous* density only. Describe the event:
+  what changes, how long, how loud, and that it comes back.
+- **An accent made of the same material as the bed** — an amen-break *fill* over a kit the
+  prompt already called `chopped amen breaks` was inaudible (2026-08-21). Not a wording
+  fault: check what the prompt says the default already is before adding an accent.
 - **Plugin / brand names** (`Serum 2`, etc.) — no reliable effect, plus alias-collision
   risk. Name the synthesis technique (`wavetable`) and the behaviour instead.
 - **Chord progressions as text** — ignored. Feed audio instead.
