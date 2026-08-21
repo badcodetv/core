@@ -23,8 +23,12 @@ PROMPT = 'C:\\> '
 CMD = 'git push origin master'
 
 # ---------------------------------------------------------------- the plate
-plate = Image.open(os.path.join(HERE, 'plate-1080.png')).convert('RGB')
-P = np.asarray(plate).astype(np.float32)
+# Two plates. The raw one still carries Flow's chroma fill and is what we key the screen
+# geometry out of; the processed one (build_screen.py) has the tube dead and the room's
+# green spill already taken down, and is what every frame here is actually built on. Using
+# it as the base is what makes the join off the push-in exact rather than approximate.
+P = np.asarray(Image.open(os.path.join(HERE, 'plate-1080.png')).convert('RGB')).astype(np.float32)
+P_OFF = np.asarray(Image.open(os.path.join(HERE, 'plate-off-1080.png')).convert('RGB')).astype(np.float32)
 
 R, G, B = P[..., 0], P[..., 1], P[..., 2]
 mask = (G > 120) & (G - R > 60) & (G - B > 60)
@@ -96,15 +100,8 @@ gy, gx = np.mgrid[0:H, 0:W]
 d = np.sqrt(((gx - CX) / (HW * 2.6)) ** 2 + ((gy - CY) / (HH * 2.6)) ** 2)
 spill = np.clip(1.0 - d, 0.0, 1.0)[..., None] ** 1.5
 
-plate_lit = P.copy()                                   # as generated: bright green spill
-neutral = P.copy()                                     # spill removed
-gray = neutral.mean(axis=2, keepdims=True)
-neutral = neutral * (1 - spill * 0.85) + gray * (spill * 0.85) * 0.72
-plate_unlit = np.clip(neutral, 0, 255)
-
-# The exact green the plate was generated with. The settle cross-fade has to START here,
-# not at a guess, or the first frame pops against the last frame of the push-in.
-SCREEN_GREEN = P[mask].mean(axis=0).astype(np.float32)
+plate_lit = P.copy()                                   # as generated: full green spill
+plate_unlit = P_OFF.copy()                             # monitor dead, room lit by the city
 
 
 def base_plate(glow):
@@ -164,7 +161,13 @@ def bloom(tex):
 
 
 # ------------------------------------------------------------------ the beat
-SETTLE = 12          # screen settles from the generated chroma green to dark phosphor
+# The monitor is OFF for the whole approach and wakes up here. That bookends against the
+# switch-off at the other end -- same grammar both ways, and two more places for a thunk.
+PRE_OFF = 20         # arrive on a dead tube and sit with it
+PON_DOT = 2          # a dot strikes in the centre
+PON_LINE = 3         # it opens out into a horizontal line
+PON_OPEN = 3         # the line opens vertically, overbright
+PON_SETTLE = 9       # brightness settles, the prompt fades up
 HOLD_A = 19          # prompt, cursor blinking
 TYPE_F = 53          # 22 characters land, ~0.1s each
 HOLD_B = 34          # the hesitation, cursor blinking after the command
@@ -173,20 +176,24 @@ COLLAPSE = 4         # picture squeezes to a bright line, blowing out as it goes
 TO_DOT = 2           # line closes to a centre dot
 DOT_FADE = 14        # dot fades
 BLACK = 8            # black
-TOTAL = SETTLE + HOLD_A + TYPE_F + HOLD_B + ENTER_HOLD + COLLAPSE + TO_DOT + DOT_FADE + BLACK
 
-t_settle = SETTLE
-t_holdA = t_settle + HOLD_A
+t_pre = PRE_OFF
+t_pdot = t_pre + PON_DOT
+t_pline = t_pdot + PON_LINE
+t_popen = t_pline + PON_OPEN
+t_psettle = t_popen + PON_SETTLE
+t_holdA = t_psettle + HOLD_A
 t_type = t_holdA + TYPE_F
 t_holdB = t_type + HOLD_B
 t_enter = t_holdB + ENTER_HOLD          # everything from here is the monitor dying
 t_coll = t_enter + COLLAPSE
 t_dot = t_coll + TO_DOT
 t_fade = t_dot + DOT_FADE
+TOTAL = t_fade + BLACK
 
-# A dead tube is BLACK, not the chroma green the plate was generated with. Without this
-# the collapsing picture stops covering the screen and raw green floods back in.
-DEAD = np.zeros((len(ys), 3), np.float32) + np.array([6, 8, 7], np.float32)
+# The dead tube is taken verbatim from the processed landing frame, so frame 0 here IS the
+# last frame of the push-in and the join cannot be seen.
+DEAD = P_OFF[ys, xs].copy()
 
 
 def compose(glow, screen_px):
@@ -196,67 +203,81 @@ def compose(glow, screen_px):
     return out
 
 
+def open_screen(tex, sq, gain):
+    """Sample the terminal with the picture squeezed toward the centre line."""
+    tt = t / max(sq, 0.02)
+    keep = (np.abs(tt) <= 1.0)[:, None]
+    ty_ = np.clip((tt + 1.0) * 0.5 * (TH - 1), 0, TH - 1).astype(int)
+    return np.where(keep, np.clip(tex[ty_, tx0] * gain, 0, 255), DEAD)
+
+
+def strike(half_w, half_h, amp):
+    """A bright dot or line on a dead tube."""
+    px = DEAD.copy()
+    halo = (np.abs(xs - CX) <= half_w * 1.25 + 12) & (np.abs(ys - CY) <= half_h + 6)
+    core = (np.abs(xs - CX) <= half_w) & (np.abs(ys - CY) <= half_h)
+    px[halo] = np.maximum(px[halo], np.array([34, 62, 42], np.float32) * amp)
+    px[core] = np.array([175, 255, 205], np.float32) * amp
+    return px
+
+
 print(f'{TOTAL} frames  =  {TOTAL / FPS:.2f}s', flush=True)
 
 for f in range(TOTAL):
     entered = f >= t_holdB
     blink = ((f // 12) % 2) == 0                       # ~2Hz, the DOS rate
 
-    if f < t_settle:
+    if f < t_holdA:
         n, cur = 0, False
-    elif f < t_holdA:
-        n, cur = 0, blink
     elif f < t_type:
         n, cur = min(len(CMD), int((f - t_holdA) / TYPE_F * len(CMD)) + 1), True
     else:
         n, cur = len(CMD), blink
 
-    if f < t_enter:
-        tex = bloom(terminal_texture(n, cur, entered))
-        if f < t_settle:
-            # cross-fade the generated chroma green into our phosphor field so the join
-            # off the push-in is invisible, and reads as the tube settling
-            k = f / t_settle
-            flat = np.zeros_like(tex) + SCREEN_GREEN
-            tex = flat * (1 - k) + tex * k
-            glow = 1.0 - 0.62 * k
-        else:
-            glow = 0.38
-        out = compose(glow, sample(tex))
+    # ---------------------------------------------------------------- powering up
+    if f < t_pre:
+        out = compose(0.0, DEAD)
 
+    elif f < t_pdot:
+        k = (f - t_pre + 1) / PON_DOT
+        out = compose(0.10 * k, strike(HW * 0.012, 2.5, k))
+
+    elif f < t_pline:
+        k = (f - t_pdot + 1) / PON_LINE
+        out = compose(0.10 + 0.55 * k, strike(HW * (0.012 + 0.988 * k ** 0.6), 2.5, 1.0))
+
+    elif f < t_popen:
+        k = (f - t_pline + 1) / PON_OPEN
+        tex = bloom(terminal_texture(0, False, False))
+        out = compose(0.65 + 0.25 * (1 - k), open_screen(tex, k ** 1.4, 1.0 + 3.2 * (1 - k)))
+
+    elif f < t_psettle:
+        k = (f - t_popen + 1) / PON_SETTLE
+        tex = bloom(terminal_texture(0, k > 0.55, False))
+        out = compose(0.90 - 0.52 * k, sample(tex) * (1.0 + 1.9 * (1 - k) ** 2.2))
+
+    # ------------------------------------------------------------------- the line
+    elif f < t_holdA:
+        out = compose(0.38, sample(bloom(terminal_texture(0, blink, False))))
+
+    elif f < t_enter:
+        out = compose(0.38, sample(bloom(terminal_texture(n, cur, entered))))
+
+    # -------------------------------------------------------------- powering down
     elif f < t_coll:
-        # squeeze the picture toward the centre line, blowing out as it goes, and flare
-        # the room with it -- a dying CRT dumps its remaining beam current all at once
+        # a dying CRT dumps its remaining beam current all at once, so the room flares
         k = (f - t_enter + 1) / COLLAPSE
-        sq = max((1.0 - k) ** 1.6, 0.02)
         tex = bloom(terminal_texture(n, False, entered))
-        tt = t / sq
-        keep = (np.abs(tt) <= 1.0)[:, None]
-        ty_ = np.clip((tt + 1.0) * 0.5 * (TH - 1), 0, TH - 1).astype(int)
-        vals = tex[ty_, tx0] * (1.0 + 3.0 * k)
-        px = np.where(keep, np.clip(vals, 0, 255), DEAD)
-        out = compose(0.38 + 0.55 * k, px)
+        out = compose(0.38 + 0.55 * k, open_screen(tex, (1.0 - k) ** 1.6, 1.0 + 3.0 * k))
 
     elif f < t_dot:
         k = (f - t_coll + 1) / TO_DOT
-        half_w = max(HW * (1.0 - k) ** 1.5, HW * 0.012)
-        px = DEAD.copy()
-        band = (np.abs(xs - CX) <= half_w) & (np.abs(ys - CY) <= 2.5)
-        halo = (np.abs(xs - CX) <= half_w * 1.2) & (np.abs(ys - CY) <= 7.0)
-        px[halo] = np.array([44, 78, 52], np.float32)
-        px[band] = np.array([170, 255, 200], np.float32)
-        out = compose(0.9 * (1 - k) + 0.12, px)
+        out = compose(0.9 * (1 - k) + 0.12, strike(max(HW * (1.0 - k) ** 1.5, HW * 0.012), 2.5, 1.0))
 
     else:
         k = min((f - t_dot) / DOT_FADE, 1.0)
         amp = max(1.0 - k, 0.0) ** 1.9
-        px = DEAD.copy()
-        if amp > 0.01:
-            dot = (np.abs(xs - CX) <= HW * 0.012) & (np.abs(ys - CY) <= 2.5)
-            halo = (np.abs(xs - CX) <= HW * 0.05) & (np.abs(ys - CY) <= 6.0)
-            px[halo] = np.array([30, 55, 36], np.float32) * amp
-            px[dot] = np.array([170, 255, 200], np.float32) * amp
-        out = compose(0.12 * amp, px)
+        out = compose(0.12 * amp, strike(HW * 0.012, 2.5, amp) if amp > 0.01 else DEAD)
 
     Image.fromarray(np.clip(out, 0, 255).astype(np.uint8)).save(
         os.path.join(OUT, f'{f:04d}.png'), compress_level=1)

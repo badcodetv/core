@@ -43,8 +43,8 @@ join is a cut), and no signage in any frame carries legible lettering.
 | B1 | Descent into the city | `s01-hk-modern-b.jpg` | 8.0s | Veo 3.1 Fast, image→video, **reversed in post** |
 | B2 | One lit floor in a black tower | `s01-tower-ext2-b.jpg` | 3.5s | ffmpeg — eased 1.07× push on the still |
 | B3 | The office floor, and the one old machine | `s01-office-int-a.jpg` | 4.5s | ffmpeg — eased 1.06× push on the still |
-| B3b | Push in to the CRT | `s01-office-int-a.jpg` | 8.0s | Veo 3.1 Fast, image→video |
-| B4 | The terminal | B3b's **last frame** | 7.3s | Built in post — `build_terminal.py` |
+| B3b | Push in to the CRT | `s01-office-int-a.jpg` | 8.0s | Veo 3.1 Fast, image→video, **screen killed in post** — `build_screen.py` |
+| B4 | The terminal | B3b's **last frame** | 8.3s | Built in post — `build_terminal.py` |
 
 **The push-in's landing frame IS the plate.** Rather than cut from the office to a separately
 generated close-up — a different monitor in a different room — the push-in was shot and its last
@@ -170,6 +170,32 @@ entire clip, subject included. Name the moving thing first and hard, then lock t
 
 ---
 
+## 🔴 The monitor is OFF until we arrive
+
+**Kai, 2026-08-21, on v1:** *"I was hoping just that the screen would be black, it would then turn
+on to see green letters — that's what I meant by green screen."*
+
+A genuine crossed wire, and worth writing down because it will recur: **Flow renders the CRT as a
+flat chroma-key fill**, which is exactly what makes it keyable and is *not* something that should
+ever survive to screen. v1 replaced it only during the terminal beat, so for the first twenty
+seconds the film showed a monitor displaying nothing but chroma green.
+
+`build_screen.py` walks every frame of the push-in, keys the fill, puts a **dead tube** in its
+place, and takes the room's green cast down with it — the office is lit by that monitor, so with it
+off the only light is the city through the glass.
+
+**A switched-off CRT is not black.** It is a dark grey mirror with a slight sheen, rendered here in
+the mask's own normalised coordinates so it tracks correctly as the camera closes in.
+
+**And it made the scene better.** The monitor now **wakes up** when we arrive — a dot strikes, opens
+to a line, opens vertically, overbrightens, settles, and the prompt fades up. That bookends exactly
+against the switch-off at the other end: same grammar both ways, and two more places for a thunk.
+
+⚠️ **Two plates, and they are not interchangeable.** `plate-1080.png` still carries the chroma fill
+and is what the screen geometry is keyed out of; `plate-off-1080.png` is the processed version and
+is what every terminal frame is built on. The dead-tube pixels are taken **verbatim** from it, which
+is why the push-in→terminal join measures pixel-identical rather than merely close.
+
 ## B4 — the terminal, built in post
 
 `build_terminal.py`. Nothing on that screen is generated; every pixel of it is drawn.
@@ -184,23 +210,28 @@ comes back **615×487 with the middle rows 130px wider than the top and bottom**
 CRT geometry. A quartic (`1 - k·c⁴`, k=0.248 horizontal / 0.104 vertical) fits it, and the type is
 inverse-mapped through that, so it curves onto the glass instead of sitting on it.
 
-**Beat, at 24fps:**
+**Beat.** Frame numbers are within B4; `t` is into the finished scene, which is what the audio
+cuts against.
 
 | Frames | t | What |
 | --- | --- | --- |
-| 0–11 | 0.00–0.50 | the tube settles from the generated chroma green to dark phosphor |
-| 12–30 | 0.50–1.29 | `C:\>` and a blinking block cursor |
-| 31–83 | 1.29–3.50 | 22 characters land, ~0.1s each |
-| 84–117 | 3.50–4.92 | the hesitation — cursor blinking after the command |
-| 118 | 4.92 | **Enter.** Cursor drops to the next line |
-| 118–146 | 4.92–6.13 | nothing happens |
-| 147–150 | 6.13–6.29 | picture squeezes to a bright line, blowing out as it goes |
-| 151–152 | 6.29–6.38 | line closes to a centre dot |
-| 153–166 | 6.38–6.96 | dot fades |
-| 167–174 | 6.96–7.29 | black |
+| 0–19 | 19.50–20.33 | we arrive and sit on a dead tube |
+| 20–21 | 20.33 | 🔊 **power on** — a dot strikes in the centre |
+| 22–24 | 20.42 | it opens out into a horizontal line |
+| 25–27 | 20.54 | the line opens vertically, overbright |
+| 28–36 | 20.67–21.04 | brightness settles, the prompt fades up |
+| 37–55 | 21.04–21.83 | `C:\>` and a blinking block cursor |
+| 56–108 | 21.83–24.04 | 🔊 **22 characters land**, ~0.1s each |
+| 109–142 | 24.04–25.46 | the hesitation — cursor blinking after the command |
+| 143 | 25.46 | 🔊 **Enter.** Cursor drops to the next line |
+| 143–171 | 25.46–26.67 | nothing happens |
+| 172–175 | 26.67 | 🔊 **switch off** — picture squeezes to a bright line, blowing out |
+| 176–177 | 26.83 | line closes to a centre dot |
+| 178–191 | 26.92–27.50 | dot fades |
+| 192–199 | 27.50–27.83 | black |
 
-**Kai adds the audio** — keystrokes under the typing, the Enter, and the CRT thunk on the collapse.
-Every timing above is a cut point for it.
+**Kai adds the audio.** Every 🔊 above is a cut point: the CRT thunk on, keystrokes under the
+typing, the Enter, and the CRT thunk off.
 
 ### Four things that had to be got right
 
