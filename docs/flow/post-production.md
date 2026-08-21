@@ -155,6 +155,39 @@ ffmpeg -i a.mp4 -i b.mp4 -filter_complex "[0:v][1:v]concat=n=2:v=1:a=0[v]" \
   -map "[v]" -an -c:v libx264 -pix_fmt yuv420p -crf 18 out.mp4
 ```
 
+#### 🔴 Normalise fps and SAR BEFORE concat, or it runs away
+
+**Veo returns 24fps. Every clip `ffmpeg` builds from a still defaults to 25fps.** Mix the two in
+the `concat` *filter* and it does not error — it produces an ever-growing file that never
+terminates. Measured on the GPOM scene-1 rough cut, 2026-08-21: a 23-second sequence reached
+**628MB and 105 minutes of CPU** before it was killed, while every one of its five inputs was
+correct and under 4MB.
+
+Flow's own clips are uniform with each other, so this only bites once you start mixing generated
+video with post-built plates — which is exactly what a finished scene is.
+
+There is a second, quieter mismatch in the same family: `concat` also refuses inputs whose sample
+aspect ratios differ (`SAR 0:1` vs `SAR 8778:8777`), and *that* one does error, immediately and
+legibly. It is the good version of the same bug.
+
+**Fix both at the source.** Put `fps=<N>,setsar=1` in every clip's filter chain as you build it,
+pick the rate your generated footage already uses (24 for Veo, so the real footage is never
+resampled), and then the concat **demuxer** with `-c copy` will join them in a second flat:
+
+```bash
+# build each piece with the SAME fps and SAR
+ffmpeg -i veo.mp4 -vf "scale=1280:720,fps=24,setsar=1,format=yuv420p" -an -c:v libx264 -crf 20 -y q1.mp4
+ffmpeg -loop 1 -i still.jpg -t 3 -vf "scale=1280:720,fps=24,setsar=1,format=yuv420p" -c:v libx264 -crf 20 -y q2.mp4
+
+# then join with the DEMUXER, no re-encode
+printf "file 'q1.mp4'\nfile 'q2.mp4'\n" > list.txt
+ffmpeg -f concat -safe 0 -i list.txt -c copy -y out.mp4
+```
+
+⚠️ **`-c copy` here is safe only because the pieces were built identically** — same codec, size,
+fps, SAR and pixel format. That is the point of normalising at build time rather than at join
+time. If you did not build them, re-encode.
+
 ### 3.7 Retime
 
 Buys length out of the 8s cap when the move is too fast. `minterpolate` synthesises intermediate

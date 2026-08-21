@@ -1,6 +1,6 @@
 ---
 title: Camping (duet re-cut)
-status: round 16 drafted (amen fills as an event + cues cut to 53% of round 15, 16% of round 14) — rounds 1-14 generated and diagnosed; the orchestral direction is abandoned
+status: round 17 drafted (guitar under every vocal section) — round 16 cut the cues to 16% of round 14 — rounds 1-14 generated and diagnosed; the orchestral direction is abandoned
 released_take: ./camping-released.md
 history: ./camping-prompt-history.md
 bpm: 174
@@ -48,7 +48,7 @@ onto.
 
 ---
 
-## The four Suno boxes — current, round 16
+## The four Suno boxes — current, round 17
 
 **This is the live prompt.** Paste **all four** boxes every round; never trust what a box
 already contains. Everything below this heading is current; the round log above and the
@@ -90,7 +90,7 @@ the nationality. Escalate `British post-punk` and add `Britpop` before adding an
 genre back.
 
 ```
-Dark UK drum and bass, neurofunk, 174 BPM, minor key — British post-punk spoken word on top, ranted over the beat. Verse one is a weathered British man in his fifties: low, gravelly, smoke-worn, nasal, half-shouted and half-muttered, bone dry. Verse two, a well-spoken British man: higher, clean, plummy BBC English, talking down from a wide room. Four steps: one long low detuned synth note; then the voice over a low palm-muted electric guitar riff — distorted rock tone, one short figure repeating, never a solo, never chords; then a dry chopped breakbeat under the vocal, no bassline; then the drop, guitar out, kit at full weight, Reese sub and a screaming detuned wavetable lead cut against it, so synth and break are one piece of music, not a remix of one by the other. Every four bars the drums tear into a chopped amen roll for a whole bar, snares tumbling over each other, loud and messy up front, then straight back in. Grim and bitter, played straight, steady tempo throughout.
+Dark UK drum and bass, neurofunk, 174 BPM, minor key — British post-punk spoken word on top, ranted over the beat. Verse one, a weathered British man in his fifties: low, gravelly, smoke-worn, nasal, half-shouted and half-muttered, bone dry. Verse two, a well-spoken British man: higher, clean, plummy BBC English, talking down from a wide room. Four steps: one long low detuned synth note; then the voice over a low palm-muted electric guitar riff — distorted rock tone, one short figure repeating, never a solo, never chords, running under every vocal section; then a dry chopped breakbeat under the vocal, no bass; then the drop, guitar out, kit at full weight, Reese sub and a screaming detuned wavetable lead cut against it, so synth and break are one piece of music, not a remix of one by the other. Every four bars the drums tear into a chopped amen roll for a whole bar, snares tumbling over each other, loud up front, then straight back in. Grim and bitter, played straight, steady tempo.
 ```
 
 ### 3. Exclude Styles
@@ -184,7 +184,7 @@ wealth gap? fuckin what a load of crap
 now please let me drink my shatoe nerf doo pap
 [Drop — instrumental, 16 bars, no vocals | everything heavier and more distorted than the first drop — neuro bass growling underneath, the amen rolls harder and longer, the lead screaming higher]
 [Beat Transition]
-[Bridge | the turn | drums strip right back, intimate | the two men trade, both close and dry in the same cold room now]
+[Bridge | the turn | drums strip right back, intimate | the two men trade, both close and dry in the same cold room now | the guitar riff sparser and quieter here, still one repeating figure, never a tune]
 [gravelly ranting voice]
 Oh shit, here we both are, living in a car
 park, in the rain and the dark, fast start
@@ -208,7 +208,7 @@ yet I don't begrudge you, let's get along
 let's make a happy ending for this song
 [well-spoken posh voice]
 well we don't have long and it might go wrong
-[Outro — 8 bars | both voices together | diminuendo, voice and bass dissolve into static]
+[Outro — 8 bars | both voices together | diminuendo, voice, guitar and bass dissolve into static]
 but by the time it hits, we'll be gone
 [end]
 ```
@@ -498,6 +498,40 @@ already says it); `right at the front` → `up front`; `slam back into the groov
 `straight back in`; `one steady tempo` → `steady tempo`. Nothing cut from the casting
 clauses or the unity sentence, per the standing rule.
 
+### 4f. More guitar — bought with one global clause, not three cues
+
+Round 17 wanted *a little* more guitar. The instinct is to add a guitar clause to the
+bridge cue and the outro cue, which is exactly the growth round 16 just undid. **The
+cheaper move is to change its scope once, globally.** The Style box's guitar clause gained
+`running under every vocal section` — four words that put the riff under the bridge and
+the outro as well as the two verses, and the `then the drop, guitar out` clause still
+carves the drops out of it.
+
+That leaves the cues carrying only what the global sentence *cannot* say:
+
+- **Bridge** — `the guitar riff sparser and quieter here, still one repeating figure, never
+  a tune`. Its *presence* is derivable and was cut back out after the first draft; the
+  **character change** is not. And the guard matters here specifically: the bridge strips
+  the drums back, so it is the most exposed vocal in the song, and an exposed vocal over a
+  melodic accompaniment is the exact mechanism that made both men **sing** in round 12
+  (§4c). A palm-muted single-note figure is rhythmic rather than melodic, so the risk is
+  much lower than the glockenspiel was — but `never a tune` costs eleven characters and
+  buys insurance against the one failure that has actually happened.
+- **Outro** — the dissolve list gained the guitar: `voice, guitar and bass dissolve into
+  static`. Which instruments dissolve is a fact about that section alone.
+
+Cost: cues went 1,657 → 1,750, spending back 7% of round 16's trim on two sections
+gained. Style box 989 → 997, paid for out of the trim order (`Verse one is a` → `Verse
+one,`, `no bassline` → `no bass`, `loud and messy up front` → `loud up front`,
+`steady tempo throughout` → `steady tempo`).
+
+**The escalation ladder if it is still not enough guitar**, cheapest first: let the riff
+ride the first few bars of drop 1 before dropping out (costs the clean guitar-out contrast);
+open the intro on the riff instead of the synth note (already a parked option in Watch
+items, and it matches the *8 Mile* reference); make the figure move more often. **The last
+one is the risky rung** — "more notes" is the direction a solo lives in, and `never a solo,
+never chords` took a round to win.
+
 ### 5. Settings
 
 Style influence **75** · weirdness **30** · **no saved Voice** · model **v5.5**.
@@ -568,6 +602,9 @@ that needed two.
   *"I pay my tax"*. The only intentional departures are the four respellings and
   `the last part`, all listed in §4. **Re-run the check in §4 after every lyric edit**;
   drift is silent and none of these were noticed by ear.
+- **The intro could open on the guitar** instead of the long synth note — it is what the
+  *8 Mile* reference track does, and it is rung two of the guitar escalation ladder (§4f).
+  Not taken, because it would cost the bare gear-one opening.
 - **One interpretive call:** the final line, unattributed in the released lyric,
   is cued as **both men together**. Change it to the high clean voice alone if you
   want the released reading.

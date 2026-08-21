@@ -330,6 +330,124 @@ recorded narration plus the Suno track, laid in Premiere. Strip the Veo audio.
 
 ---
 
+## 3b. Scene 1 — Hong Kong and the push  ·  🟡 **BOARD, not yet shot**
+
+> **This is the pre-production suggestion board.** When the scene is built it gets stamped like
+> §3a and the truth moves to `scenes/s01-the-push.md`. Do not edit this section to match what
+> gets made.
+
+**Ruling 2026-08-21 (Kai): canon scenes 1–4 collapse into one physical location.** `story.md`
+scenes 1 (the commit log), 2 (the log of the species), 3 (`HEAD`) and 4 (the push) have never had
+a *place*. They get one: a derelict internet cafe in Hong Kong, and the whole terminal register
+plays on a monitor in it. This supersedes the §5 "motion graphics over a black frame" reading —
+the graphics still get built in post, but they are composited **onto a real CRT in a real room**.
+
+**Why it is stronger.** The AI comes down from orbit into a human room, so the camera-is-the-AI
+rule holds unbroken from the first frame of scene 0. Scene 4's "cut mid-keystroke" cuts off a
+real object rather than off a graphic. And the narration — *"this is your repository"* — lands
+over a knackered beige monitor in a cafe rather than over abstract black.
+
+**Register.** Scene 0 was near-black COSMIC. This is the landing: **band D0, documentary-real**.
+Neon and phosphor are the only light and both are motivated. Warmth is allowed here precisely
+because it is the human world — it drains out again from scene 6 onward.
+
+### The six beats
+
+| # | Beat | Asset | Lane |
+| --- | --- | --- | --- |
+| B1 | Hard cut from satellite-against-Earth → high wide Hong Kong at night | `s01-hk-wide` | **Veo** — the city genuinely moves |
+| B2 | Street level, the cafe shopfront among many | `s01-cafe-ext` | Veo or locked plate |
+| B3 | Interior: rows of dead CRTs, one lit | `s01-cafe-int` | Locked plate — **cut in, never push through** |
+| B4 | The CRT full frame. The commit log of the species lands | `s01-crt-plate` | **Flow plate + post type** |
+| B5 | `HEAD`. Blinking cursor. Held too long | same plate | post (ping-pong the plate) |
+| B6 | `git push origin master` types itself. Struck. Cut | same plate | post |
+
+### 🔴 The plate must be generated EMPTY
+
+B4, B5 and B6 are one locked-off monitor with different text on it. **If Flow bakes the text in
+we get one frame and can animate nothing.** So the asset we actually need is a dark green
+phosphor field with no characters on it at all, and post owns every glyph — the scroll, the
+acceleration, the slam-stop on *the model*, the typing, all cut to narration.
+
+The 2026-08-21 retest (§5) proved Flow *can* spell the command, which de-risks the fallback and
+gives post a reference for the font weight, glow and bloom to match. It is not the shot.
+
+### 🔴 Two traps, dodged by design not discovered
+
+- **Never push through the cafe interior.** Two rows of monitors down a narrow room is exactly
+  the near-field parallax past flat parallel structures that Veo hinges open
+  (`physics-and-motion.md` §7, and the scene-0 server-hall aisle died of it three times).
+  B2→B3 is a **cut**. If the move is wanted, shoot the push-in and reverse it
+  (`post-production.md` §3.4b).
+- **Hong Kong neon is a brand minefield.** Legible signage is block trigger #1 and #4 at once.
+  Every prompt below says *lettering illegible*. Do not relax it.
+
+### 🔴 Open questions for this scene
+
+- **Is the cafe occupied?** A distant incidental figure gives scale and makes it a human room;
+  an empty room makes it a machine's room. Canon says humans are always distant or absent, so
+  either passes — but it changes what the scene means.
+- **Whose hands push?** Scene 4 says "the command types itself". With a physical CRT, no hands
+  is now a deliberate wrongness rather than a graphic convention. Recommend keeping it: nobody
+  is at the keyboard, and the command types anyway.
+- **Does B1 need a title card?** §3a's third open question asked whether scene 0 or scene 4
+  carries it. B6's hard cut is the natural home.
+
+---
+
+### s01-hk-wide → `.../gpom-s01/stills/s01-hk-wide-*.jpg`  · band D0 · B1
+
+- **Cast:** — (distant incidental figures only)
+- **Light source:** neon signage and lit windows — no other light in frame
+- **Lint:** no brand names · no likeness · **all signage lettering illegible**
+
+```prompt
+Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, calm observational tone, landscape orientation. A high wide night view down a dense Hong Kong high-rise canyon: a narrow wet street far below, walls of old residential towers rising close on both sides, thousands of small lit windows and caged balconies stacked into the dark, projecting neon signs cantilevered out over the street in red, green and cold white with all lettering illegible and unresolved. The neon and the windows are the only light in the frame and they behave like it, raking the building faces and falling off to deep unlifted black in the gaps between them. Thin haze softens the far end of the canyon; the wet tarmac holds the reflections. A few tiny distant figures on the pavement, incidental, none identifiable. Vast still composition, dense machine-made geometry. No readable text, no logos, no fantasy effects.
+```
+
+- **Variant B — higher and colder:** *"seen from much higher, the street a thin bright seam at
+  the bottom of the frame"*.
+- **Variant C — the AI's arrival angle:** looking straight down the canyon from directly
+  overhead, to rhyme with the orbital vantage we just cut from.
+
+---
+
+### s01-cafe-ext → `.../gpom-s01/stills/s01-cafe-ext-*.jpg`  · band D0 · B2
+
+```prompt
+Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, calm observational tone, landscape orientation. Street level at night in a dense Hong Kong side street, rain-wet pavement: a narrow shopfront wedged between a shuttered metal roller door and a dark stairwell, its window glazed and grubby, and behind the glass the cold green-white glow of old computer monitors in rows. A projecting sign above the door lit from within, its lettering illegible and unresolved. The glow from the window is the brightest thing in frame and spills out across the wet pavement; everything beyond it falls to deep unlifted black. Air-conditioning units and cable runs bolted to the wall above. No people in frame. Observational eye-level framing, static. No readable text, no logos, no fantasy effects.
+```
+
+---
+
+### s01-cafe-int → `.../gpom-s01/stills/s01-cafe-int-*.jpg`  · band D0 · B3
+
+```prompt
+Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, calm observational tone, landscape orientation. The interior of a cramped old internet cafe at night: two rows of cheap laminate desks down a narrow low-ceilinged room, each carrying a beige CRT computer monitor and a yellowed keyboard, cables sagging between them. Every monitor is dark and dead except one in the middle of the frame, which is on and glowing dark green. The overhead strip light is switched off, so that single screen is the only light source in the room and behaves like one — it picks out the nearest desk edge, the keyboard and a strip of the wall, and everything else falls to deep unlifted black. Peeling paint, a stack of paper, a plastic stool pushed back. No people. Calm static observational framing. No readable text, no logos, no fantasy effects.
+```
+
+- **Variant B — occupied:** add *"one figure seated far down the room at a dead monitor, seen
+  only from behind as a silhouette, not identifiable"*.
+
+---
+
+### s01-crt-plate → `.../gpom-s01/stills/s01-crt-plate-*.jpg`  · band D0 · B4–B6 · **THE PLATE**
+
+**The screen must come back empty.** This is the asset post composites the entire terminal
+register onto. A baked-in line of text makes it useless.
+
+```prompt
+Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, calm observational tone, landscape orientation. A single old beige CRT computer monitor on a scuffed wooden desk in a dark room, framed straight on and square, the monitor filling the middle of the frame. The monitor is switched on and its screen is completely blank — an even dark green phosphor field with faint horizontal scanlines and gentle glass curvature, absolutely no characters, no cursor, no writing and no markings of any kind anywhere on it. That green glow is the only light in the room and behaves like one: it washes the front of the monitor casing, the yellowed keyboard and tangled cables on the desk, and a patch of the peeling wall behind, falling off hard to deep unlifted black at the edges of frame. Dust on the casing. No people. Locked-off static camera, calm and observational. No text anywhere in the image, no logos, no fantasy effects.
+```
+
+- **Variant B — closer:** the screen fills the frame edge to edge, casing only just visible.
+- **Reference, do not use as the plate:** `TEST-crt-text-{a..d}.jpg` (2026-08-21) carry
+  `git push origin master` baked in, correctly spelled 4/4. They exist to give post the phosphor
+  colour, glow radius and character weight to match — and as the fallback if the empty plate
+  cannot be got.
+
+---
+
 ### cover → `docs/images/covers/gitpush-origin-master.jpg`
 
 **Metadata — none of this is pasted into Flow.**

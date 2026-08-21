@@ -543,6 +543,14 @@ What that left, and it is a good shape to aim for: **the voice label, the one th
 Style box cannot say (where a step boundary falls *inside* a section), and any guard bought
 with a failed round.** Everything else was the Style box in different words.
 
+**Adding an element back: change its scope, do not add clauses.** When something should
+appear in more sections, the instinct is a new clause in each cue — which is how cues grow
+back. Change the *global* sentence instead: `running under every vocal section` is four
+words in the Style box and covers three sections at once, and an existing exclusion
+(`then the drop, guitar out`) still carves out the ones it should not touch. Then leave in
+the cues only what the global sentence cannot say — a character change in one section, or
+a guard against a failure that has actually happened there.
+
 **Where to stop.** Keep cutting while you can name the reason each clause fails. When every
 remaining clause has a stated reason to exist, stop — the next cut is a bet, not a decision,
 and it should be settled by a generation. Archive the previous set as a revert target and
