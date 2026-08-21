@@ -1,6 +1,6 @@
 ---
 title: Camping (duet re-cut)
-status: round 17 drafted (guitar under every vocal section) — round 16 cut the cues to 16% of round 14 — rounds 1-14 generated and diagnosed; the orchestral direction is abandoned
+status: ACCEPTED at round 17, 2026-08-21 — the prompt below is the one that worked. Change it only against a specific fault — rounds 1-14 generated and diagnosed; the orchestral direction is abandoned
 released_take: ./camping-released.md
 history: ./camping-prompt-history.md
 bpm: 174
@@ -48,9 +48,15 @@ onto.
 
 ---
 
-## The four Suno boxes — current, round 17
+## The four Suno boxes — accepted, round 17
 
-**This is the live prompt.** Paste **all four** boxes every round; never trust what a box
+**This is the accepted prompt** — round 17, signed off 2026-08-21. Seventeen rounds of
+casting, arrangement, timing and pronunciation work land here, and the reasoning behind
+every clause is in §4a–§4f. **Change it only against a fault you can name in a take**, and
+when you do, read §4e first: nearly every regression in this sheet came from a box growing
+rather than from a clause being wrong.
+
+Paste **all four** boxes every round; never trust what a box
 already contains. Everything below this heading is current; the round log above and the
 appendices below (§4a–§4c) are **history and reasoning**, kept because the diagnoses are
 reusable — they are not instructions, and nothing in them is pasted anywhere.
