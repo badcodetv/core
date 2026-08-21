@@ -1,4 +1,20 @@
-# Scene 0 (v2) — The Awakening
+# Scene 0 — The Awakening
+
+> **This file is the LEDGER OF RECORD for scene 0** — the exact prompts, images and settings that
+> made `s00v3-SEQUENCE.mp4`. Its counterpart is [`../prompts.md`](../prompts.md) §3a, the
+> **suggestion board**, written before anything was shot and deliberately left as written. The gap
+> between the two documents is the record of how the scene was actually made; it is not debt to be
+> paid off.
+
+## What changed from the board, and why
+
+| The board said | What got made | Why |
+| --- | --- | --- |
+| Open on the satellite | Open on **two blinking LEDs at extreme macro**, pull out to the board, then the satellite | Kai's rewrite. A separate object cannot *become* the satellite, but a chained pull-out can travel the whole distance in one unbroken move |
+| Descend to a city — Dubai | **No descent.** The cut ends on the satellite silhouetted against Earth | Too ambitious; the descent takes were the weakest material and a cut is the stronger edit. Also retires the `the-reader.md` flag against Dubai |
+| Sun behind the satellite **for the lens flare** — a named exception to the flare ban | **No flare.** The register went near-black | Once beats 1–4 were a near-black circuit board, a bright flared opener no longer matched. The house ban stands unbroken |
+| ~28s, three clips | **56s, seven beats** | Chaining and reversal removed the 8s cap, and Kai wants room to narrate over locked-off plates |
+
 
 > **Status: DRAFT, nothing fired.** Kai's concept, 2026-08-20. This supersedes the scene-0
 > opener recorded as shot in [`../prompts.md`](../prompts.md) §3a — that version starts on the

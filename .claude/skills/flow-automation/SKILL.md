@@ -381,6 +381,26 @@ Generating is cheap and messy: a finished 56-second scene cost 42 video takes an
 all of that is scaffolding. The repo must end up holding the few files that let us *rebuild* the
 scene — and nothing else.
 
+### The two documents — and they never reconcile
+
+**Ruled by Kai 2026-08-21.** A story carries two prompt documents. Trying to make the first one
+match the second is the mistake — it destroys the only interesting thing about having both.
+
+| | `docs/stories/<story>/prompts.md` | `docs/stories/<story>/scenes/<scene>.md` |
+| --- | --- | --- |
+| **Role** | **The suggestion board** | **The ledger of record** |
+| **Holds** | What we thought we'd shoot, before we'd shot anything | The exact prompts, images and settings that made the cut |
+| **Written** | Pre-production, in one pass | At the commit gate, from what happened |
+| **Edited to match reality?** | 🔴 **Never** | It *is* reality |
+
+The board's job is to get you moving in five minutes, not to be obeyed. **Once you are on the
+path, reinterpret freely** — scene 0's board promised a descent into Dubai and a lens flare; what
+got made ends on Earth from orbit with neither, and is better. The board was still worth having.
+
+**The gap between the two documents is the record of how the film was actually made.** A reader
+with both sees the plan and the thing, and the distance travelled. Preserve that distance; do not
+close it.
+
 ### While you are working: nothing goes in the repo
 
 Everything — every still, every take, every contact sheet — lives in the scene's scratch folder:
@@ -396,7 +416,7 @@ discipline you have to keep yourself is not committing the stills.
 
 ### At the commit gate: Kai approves a cut
 
-Three steps, in order.
+Four steps, in order.
 
 **1. The approved video moves to `final/`.** It stays out of git — it is regenerable and it is
 large. `final/` is the answer to "which of these 42 files is the actual scene?"
@@ -432,11 +452,39 @@ post step. Add the recovery table:
 | board-anchor | `ffmpeg -ss 24.04 -i final/<scene>.mp4 -frames:v 1 board-anchor.jpg` |
 ```
 
+**4. Stamp the suggestion board — do not rewrite it.** One line under that scene's heading in
+`prompts.md`, naming where the real record lives and how far the shoot drifted:
+
+```markdown
+> ✅ **BUILT 2026-08-21** as [`scenes/s00-awakening.md`](./scenes/s00-awakening.md).
+> Diverged from this board: no descent, no Dubai, no lens flare — the cut ends on Earth from orbit.
+> **This section is the pre-production suggestion and is left as written.**
+```
+
+Then open the scene file with **what changed from the board and why**. That paragraph is the most
+useful thing in the document and it is the first thing that gets skipped.
+
 ### The test
 
 **Delete the scratch folder except `final/`. Could you rebuild the scene from the repo plus that
 one video?** If yes, you committed enough. If you committed anything beyond that, you committed too
 much.
+
+### Capability rulings expire — retest before you let one block work
+
+A ruling that some shot *cannot* be done in Flow is a reading of the models on the day it was
+written, and the models move. **Every such ruling carries a date and the one test that would
+overturn it, and gets retested before it is allowed to stop anything.**
+
+Worked example, 2026-08-21: `prompts.md` §5 ruled GPOM scenes 1–4 "not a Flow job" on 2026-08-08,
+because legible text is a policy-block trigger and Flow renders text badly. Both halves had stopped
+being true. Nano Banana Pro rendered `git push origin master` on a CRT correctly in **4 of 4**
+candidates with no block, and Veo held the spelling and spacing intact through an 8s push-in. The
+ruling cost two weeks of a scene being considered unshootable.
+
+⚠️ **What the retest did NOT overturn:** text *appearing* — typing character by character, commits
+landing to narration timing — is still a post job. Flow makes the plate; post animates the type.
+Retest the specific claim, not the general mood.
 
 ## Knowledge base
 

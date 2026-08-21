@@ -137,11 +137,25 @@ a closer shot, she is the only face that has to hold.
 
 ## 3. Assets
 
-## 3a. Scene 0 — the orbital opener  ·  **SHOT 2026-08-18**
+## 3a. Scene 0 — the orbital opener  ·  ✅ **BUILT 2026-08-21**
 
-> **The first material in this film that actually exists.** Everything else in §3 is still
-> unfired. Three clips, ~28 seconds, cutting from an extreme close-up of the machine to a
-> city street on Earth.
+> ✅ **BUILT as [`scenes/s00-awakening.md`](./scenes/s00-awakening.md)** — 56s, seven beats,
+> `s00v3-SEQUENCE.mp4`. That file is the ledger of record: the exact prompts, images and settings
+> that made the cut. **This section is the pre-production suggestion and is left as written.**
+>
+> **Diverged from this board:** no descent and no Dubai (the dive was cut as too ambitious; a cut
+> is the stronger edit), **no lens flare** (v3 went near-black, so the §3a flare exception is no
+> longer taken), and the opener now starts on two blinking LEDs at extreme macro rather than on the
+> satellite. The cut ends on the satellite silhouetted against Earth from orbit.
+>
+> **Three of this section's six open canon questions are resolved by what got made** — Dubai is
+> moot, the flare exception is unused, and the register is near-black for four of six beats. The
+> three that remain are rulings only Kai can give: where scene 0 sits relative to scenes 1–4,
+> whether mid-2028 enters canon, and the early "I".
+
+**Superseded pre-production note (2026-08-18), kept as written:** *The first material in this film
+that actually exists. Everything else in §3 is still unfired. Three clips, ~28 seconds, cutting
+from an extreme close-up of the machine to a city street on Earth.*
 
 **Kai's concept (2026-08-18):** the narrator is an AI running on a data centre in orbit — a
 nod to the real plans to put AI compute in space — and the film opens on it noticing it can
@@ -169,7 +183,10 @@ self-awareness at the top of a film about a mind that discovers it cannot be con
   tent in a car park, a phone box). Kai chose Dubai twice; recorded as his call. A British
   landing would need the globe rotated to Western Europe.
 
-### The cut, as shot
+### The cut as it stood on 2026-08-18 — superseded by v3
+
+Kept as the pre-production record. The built cut is in [`scenes/s00-awakening.md`](./scenes/s00-awakening.md).
+
 
 | # | Clip | Len | How it was made |
 | --- | --- | --- | --- |
@@ -583,7 +600,22 @@ Hyper-realistic photograph, 35mm film grain, ordinary present-day daylight and u
   inert patch). Text-led, so it belongs with the motion-graphics register in
   §5, not here.
 
-## 5. Not a Flow job — the terminal register
+## 5. The terminal register — 🔴 **RULING OVERTURNED 2026-08-21**
+
+> 🔴 **The ruling below is wrong and is kept only as the record.** It was written 2026-08-08 on a
+> capability read that stopped being true. Retested 2026-08-21: Nano Banana Pro rendered
+> `git push origin master` on an old green CRT **correctly in 4 of 4 candidates, no policy block**,
+> and Veo 3.1 Fast held the spelling and spacing intact through an 8s push-in — the text got
+> *sharper* as it filled frame. `git push origin master` is not institutional text, so trigger #4
+> never applied.
+>
+> **What survives the retest:** text *appearing* — typing character by character, commits landing
+> to narration timing — is still a post job. **Flow makes the plate; post animates the type.**
+>
+> **Kai's reinterpretation, 2026-08-21:** scene 1 chains off the end of scene 0 — Earth from orbit
+> → cut to a wide Hong Kong → into an internet cafe → the CRT and the command. Shootable in Flow.
+
+### Superseded ruling (2026-08-08), kept as written
 
 **Scenes 1–4** (the commit log of the species, `HEAD`, the blinking cursor, the
 push) and **the green ✓** that stamps through scenes 5–8 are a **stylised git UI**.
