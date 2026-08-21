@@ -482,15 +482,16 @@ right against the misuse of the system.
 
 ## Open questions
 
-1. **Song lyrics — reset 2026-08-18 (Kai):** the liquid/spoken-word rework
-   (Versions A/B/C) is deleted; the **jump-up comedy version is the canonical and
-   only song**, and it is a peer artifact — **Kai's ruling: the song does not
-   carry the history, the video does; the two stand on their own two feet.**
-   Structure agreed and recorded in
-   [`songs/magic-money-tree.md`](./songs/magic-money-tree.md): wound → crack
-   (COVID) → receipts → mechanism (the two addresses) → the law (Keynes
-   verbatim). Remaining: write V1's last 6 bars, then the hook, then V2/V3, then
-   the Suno prompt rebuild.
+1. **Song lyrics — the ring, 2026-08-21 (Kai):** the jump-up comedy version is
+   the canonical and only song (the liquid/spoken-word rework was deleted
+   2026-08-18 and lives in git history). **The 08-18 ruling that the song carries
+   no history is reversed:** the song now carries the war as its own spine — a
+   ring from the present as a puzzle (*where does it come from?*) back to 1940
+   and 1948, home to the present as a verdict. Song and video still stand alone.
+   Structure, palettes per movement, sources and guardrails are in
+   [`songs/magic-money-tree.md`](./songs/magic-money-tree.md) under *The shape*.
+   Kai writes the bars; remaining: V1's last 6 (ending on the pivot question),
+   then the war and build movements, then Movement 4, then the Suno prompt.
 2. **Script** — next artifact: the full narration + dialogue script derived
    from these beats (a `script.md` in this folder), before any visual work.
 3. **The easter-egg promotions** — [`easter-eggs.md`](./easter-eggs.md)

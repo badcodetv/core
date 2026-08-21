@@ -26,61 +26,190 @@ real, because paper money is paper, and paper comes from trees. Bookended by a
 prim politician's "there is no magic money tree" — which the song spends three
 minutes disproving.
 
-The point (woven into the bridge): the limit isn't money, it's what we actually
-build — *we can afford what we can create*.
+The point: the limit isn't money, it's what we actually build — *we can afford
+what we can create*. Since 2026-08-21 the song carries the war to prove it: a
+ring from the present as a puzzle, back to 1940 and 1948, and home to the
+present as a verdict — see *The shape* below.
 
 Flow/beat reference: <https://www.youtube.com/watch?v=OJM8yJTn_I0> ("Don't Get
 High On Your Own Supply" — East Coast / mafioso hip-hop; here the flow is moved
 onto bouncy jump-up D&B).
 
-## Structure (agreed 2026-08-18, Kai + Claude — working map)
+## The shape — a ring (2026-08-21, Kai + Claude)
 
-### The ruling that sets the budget
+**Kai's steer, 2026-08-21:** keep writing in the register of the approved verse
+— whimsical concept-play, pairing bars, question-bangs — and **not** a rigid
+history lesson. The structure is there to give the poetry *things to reflect
+on*, not slots to fill. So this section is a map of **movements**, each with a
+palette, not a table of lines that must land.
 
-**The song does not carry the history. The video does.** Kai, 2026-08-18: the
-story and the song *stand on their own two feet*. So there is **no history
-verse** — no Nixon, no Weimar, no postwar build, no Marshall Plan. The song is
-the modern argument, at speed, with jokes. History appears only where a single
-fact is funnier than a paragraph (see the 1694 jab below).
+**The ring:** the song leaves the present as a **puzzle** and comes back to it
+as a **verdict**.
 
-### The argument the song makes
+```
+NOW, abstract  →  "where does it come from?"  →  THEN: the war  →  THEN: the build  →  NOW, concrete
+   (puzzle)              (the pivot)              (the answer)      (the proof)          (the verdict)
+```
 
-1. **We're skint and being told there's no money.** (the wound)
-2. **And yet — COVID.** The money appeared in a fortnight. (the crack)
-3. **Here are the receipts, with names and dates.** (the proof)
-4. **Here's the actual trick: it's not that they printed — it's where they pointed it.** (the mechanism)
-5. **Keynes had the law the whole time.** (the turn)
+The approved verse already opens with *where does it **go**?* — the ring closes
+it by ending the verse on *where does it **come from**?* Same question, turned
+round. That turn is the cut to 1940.
 
-### The shape
+The present is seen twice, and that is the whole device: every abstract pairing
+in the opener (*quantitative easing, grandma freezing*) has a **concrete twin**
+waiting in the last verse (*now you know who got the easing*). Write the
+opener's collisions loosely; the closer's job is to name them.
 
-| # | Part | Bars | Job |
-| --- | --- | --- | --- |
-| 1 | Intro — politician, spoken, dry | — | *"I'm afraid there is no magic money tree."* |
-| 2 | **Verse 1 — the wound** | 16 | Skint modern Britain. **10 written, 6 to go.** Sets the register for everything else. |
-| 3 | **Pre-hook — the crack ("and yet…")** | 8 | COVID. £450bn in ~3 months vs ~£445bn for the *whole* 2009–17 era. Ten years of "there's no money", then the whole decade again in a season. This is what earns the drop. |
-| 4 | **Hook** | 8 | See below. |
-| 5 | **Verse 2 — the receipts** | 16 | May & the nurse → £1bn for the DUP 24 days later; the VIP lane; the gowns; 1% for the nurses in 2021. Named choosers, dated events. |
-| 6 | Hook | 8 | |
-| 7 | **Verse 3 — the mechanism** | 16 | The two addresses. Money pointed at the asset market vs money pointed at wards, homes, wages. The BoE's own "hot potato". |
-| 8 | **Bridge — the law** | 8 | Half-time, drums out, suddenly sincere. Keynes verbatim + the bricks heckle. |
-| 9 | **Hook — final, biggest** | 8 | Plus the title payoff: *(on a tree!)* |
-| 10 | Outro — politician, then the deadpan button | — | *"…there is no magic money tree."* / *(course there is, love — where'd you think the paper comes from?)* |
+**Bar counts are loose.** Four movements of ~16 plus hooks comes in around 3:10
+at 172; the war and the build can be one verse in two halves if the bars want
+it. Decide when the bars tell you.
 
-**~3:10 at 172 BPM.** Three verses, not four — the old draft's V2/V3 history
-verses are gone.
+### The honest answer the ring rests on (stronger than the myth)
 
-### The hook — carrying two jobs without overloading
+Britain did **not** print the war. Keynes's *How to Pay for the War* (1940) was
+about paying for it **without** inflation — the country was at full stretch, so
+the tree's one limit was live, and the answer was rationing, taxes, and
+borrowing people's wages back ("deferred pay"). So the song's answer to *where
+does it come from?* is not *a printer* — it is **money was never the thing we
+were short of.** The hands were the limit; the money is the receipt for the
+work. That is Keynes's line said plainly, it is what buries the Weimar
+objection, and it is what makes 1948 unanswerable: the country that had nothing
+built the NHS because it still had hands. (Sources:
+`../research/central-bank-trees.md` §10,
+`../research/economics-of-money-creation.md` "rock solid".)
 
-Kai's steer: the chorus is **Keynes** ("we can afford anything we can do") *and*
-the two-addresses economics. That's two ideas, so it's split across the 8 bars —
-call-and-response first half, the mechanism second half — and the **title payoff
-`(on a tree!)` is held back for the final hook only**, so the song *builds to*
-its own title instead of repeating it from bar one.
+### The stance for the history movements
 
-- **First half:** Keynes as a gang-vocal call/response — *anything we can
-  actually do → (we can afford it!)*
-- **Second half:** where it lands. Same note, two addresses.
-- **Final hook only:** the *(on a tree!)* payoff, then the politician.
+Not a teacher. **A bloke at the bar who's read one book and is furious about
+it** — which is already the opener's voice. The war and the build are told as
+*things he can't get over*, not as dates. If a bar starts sounding like a
+documentary caption, that's the tell.
+
+### Movement 1 — NOW, abstract (the approved verse + 6)
+
+**Mood:** whimsical, pub-economist, juggling the words they use on us.
+**Already doing its job.** The six remaining bars keep juggling, then tilt.
+
+*Things to reflect on for the tail:*
+- Every Bank of England note says **"I promise to pay the bearer on demand the
+  sum of…"** — promise to pay? *with what?* The question is printed on the
+  money itself.
+- "Magic money tree" is a thing *they* say — turn it over: *no tree? then where's
+  the ones in your pocket from?*
+- Collisions in the opener's grammar: *fiscal headroom, no bedroom · balance the
+  books, cook the books · growth forecast? ask the gas · magic money tree? where's
+  the seed?*
+- **The pivot bar** is the last thing before the cut: *where does it come from?*
+  — then black.
+
+### Movement 2 — THEN, the war (1940)
+
+**Mood:** the bounce keeps going, the colour drops out. Dark, tight.
+**Rule:** the jokes are about the **money**, never the beaches.
+
+*Things to reflect on:*
+- A bankrupt island: selling the family silver abroad, the Yanks wanting paying
+  up front before they'd lend (cash-and-carry, then Lend-Lease). ✅ in outline;
+  ⚠️ keep reserve figures impressionistic — unbriefed.
+- The enemy built *their* war on money conjured in the dark by a man running a
+  fake company. ✅ (Mefo — the mechanism, never the man.)
+- Keynes on the wireless asking the country to **lend him its wages** — in the
+  open, in a pamphlet, on the radio. ✅ The contrast with the fake company needs
+  no commentary.
+- The war run from a bunker **under the grass** of St James's Park, the
+  Treasury on top of it. ✅ canon.
+- Nobody shouted *"how will you pay for it?"* at a Spitfire. The factories ran
+  flat out and the money followed — which is the whole point, and the reader's
+  own wound turned inside out.
+- **The tree's line, if you want it here or as a pre-hook:** *you're not asking
+  anything new, mate — it's what I was planted for.* Bank of England, 1694,
+  chartered to fund a war against France, subscribed in twelve days. ✅ **The
+  bank that says no to you was invented to say yes to a war.**
+- Collisions: *ration book, balance sheet · blackout, bailout · sandbags,
+  moneybags · deferred pay, defer the day.*
+
+### Movement 3 — THEN, the build (1945–48)
+
+**Mood:** triumphant, grinning. The biggest ask ever made of a broke country —
+granted.
+
+*Things to reflect on:*
+- **~250% debt** — never "259%" — the most skint a country has ever been. ✅
+- Ration book in one hand, hospital keys in the other: rationing ran to 1954;
+  the NHS opened **5 July 1948**, *free at the point of use*. ✅
+- **806,857 council houses** by 1951; a fifth of the economy nationalised. ✅
+- The debt was never paid off — it was **outgrown**, like a school blazer. ✅
+  (*"growth painlessly erased it"* is contested; the line that survives is
+  **"they made the rentiers pay for the hospitals"** — real rates held below
+  inflation 24 of 30 years.)
+- Keynes borrowed the lunch money off the Yanks (the 1946 loan), then died
+  **21 April 1946** — two years before the doors opened. ✅ He never saw it
+  work.
+- Before the NHS, people died of being poor — **first person or one voice**,
+  never a veteran chorus (see guardrails).
+- Collisions: *bombsite, building site · ration book, cheque book · national
+  debt, national health · bricks and mortar, pay the porter.*
+- The question-bang the movement runs on: *skint? — built a health service.
+  skint? — built a million homes. skint? — how'd they pay for it? they didn't.
+  they built it.*
+
+### Movement 4 — NOW, concrete (the forgetting)
+
+**Mood:** bitter, fast. The opener's concepts come back **with names on**.
+
+*Things to reflect on:*
+- **The asks shrink and the no grows** — this is the movement's joke and the
+  song's thesis in one shape: *a war? yes. a hospital? yes. a pay rise?* — *"I'm
+  afraid there is no magic money tree."* Use it as a run, not a refrain.
+- The nurse: 26 years in, **2009 payslip = 2017 payslip**; 2 June 2017, *"…a
+  magic money tree that we can **shake**"* — **protect the verb**; 24 days later,
+  **£1bn for Belfast**. ✅
+- COVID: **£450bn in ~3 months** vs ~£445bn for the whole of 2009–17. The tree
+  *working* — furlough, the thing it was born for. ✅
+- Then where it came to rest: the VIP lane; the gowns (**£122m**, 25m unusable,
+  55 of a 60-gown sample not sterile — **Mone guardrails mandatory**, see below);
+  **1% for the nurses, 2021**; the yacht in the Med. ✅
+- **"Hot potato"** — the Bank's own words for QE: *"this will raise the value of
+  those assets."* Direct quote. ✅
+- **Echo pairs** — each opener collision gets its twin here: *quantitative
+  easing, grandma freezing → now you know who got the easing · landlords needing
+  → "asset appreciation" · where does it go? → the Med.*
+- *Same bank, same tree, same banknote — two addresses.* The bank that told her
+  no was founded as one.
+
+### Bridge — the wireless
+
+Half-time, drums thin, suddenly sincere. The **bricks heckle, verbatim** (see
+below). Then **one bar-pair**, by juxtaposition only: what they built it
+*against* — the flags from the war are back, and the machine that kept them gone
+is being sold off. Grief, not mockery; the marchers are the recruited.
+
+### The hook
+
+Unchanged in shape from the 2026-08-18 draft: Keynes verbatim as call-and-
+response in the first half, the address couplet in the second, **the title
+payoff *(on a tree!)* held back for the final hook only.** What the ring adds:
+**the words never change and the meaning does** — a puzzle after the opener,
+*the answer* after the war, a victory lap after the build, **ironic** after the
+yacht, defiant at the end. Kai does not need to rewrite the hook; the verses do
+it.
+
+**Final hook, optional second turn:** *no, literally — four mulberries in the
+Bank's courtyard, planted in the Blitz, go and look.* The one thing they're sure
+we made up is the one thing they can check. ✅ (Garden Court, Threadneedle
+Street; "during the war" / "early 1940s" — **never a year**; in a graveyard,
+roots kept shallow; chosen because the Bank's oldest note is mulberry bark; the
+Bank's own blog is titled *"Does money grow on trees?"*)
+
+### Where the 2026-08-18 map went
+
+Four candidate spines were considered on 2026-08-21 (straight chronology; a
+flashback; the tree in first person; "the invoice" — three asks, shrinking) and
+Kai ruled for a looser merge: the approved opener stays the opener, the history
+sits inside the ring, and "the invoice" survives as Movement 4's run rather than
+as a refrain. The 08-18 ruling that *the song carries no history* is reversed by
+this; the song and video still stand alone — the war is the song's own spine
+now, not a summary of the video's. The 08-18 tables are in git history.
 
 ### The verbatim material (do not paraphrase)
 
@@ -94,24 +223,21 @@ its own title instead of repeating it from bar one.
 - **Theresa May, 2 June 2017:** *"…a magic money tree that we can **shake**."*
   Protect the verb — the whole lore runs on shaken-vs-spoken-to.
 
-### The facts on the shortlist (all sourced in `../research/`)
+### Sources for the receipts
 
-- **£450bn in ~3 months (2020–21)** vs ~£445bn across 2009–2017 entire.
-- **May tells the nurse no tree (2 June 2017) → £1bn for the DUP, 24 days later.**
-- **The nurse's 2009 payslip matched her 2017 payslip.**
-- **2021: nurses offered 1%.**
+Every fact in the movements above is sourced in `../research/` and marked ✅; the
+two marked ⚠️ (1940 reserve figures) are unbriefed — keep them impressionistic
+until someone writes the brief. Two details the movements compress:
+
 - **The gowns:** £122m for 25 million gowns the NHS could never use; 55 of a
   60-gown sample not sterile; ~£8m to store them. *(Mone guardrails in
   `../research/michelle-mone-ppe-medpro.md` are **mandatory** — no criminal
   conviction exists, the £122m is a civil judgment against a **company**. Her own
   BBC admission is the safe material.)*
-- **QE raises asset prices by design — the Bank's own words:** the *"hot potato"*
-  effect, *"this will raise the value of those assets."*
-- **The 1694 jab** — the one history fact worth a bar-pair, because it's a joke
-  not a lesson: the Bank of England was chartered **27 July 1694 to fund a war
-  against France — £1.2m at 8%, subscribed in twelve days.** *The institution
-  that told a nurse there's no magic money tree was founded as one, to fight a
-  war, in a fortnight.*
+- **1694, exactly:** chartered **27 July 1694** to fund a war against France —
+  **£1.2m at 8%, subscribed in twelve days.** A joke, not a lesson: *the
+  institution that told a nurse there's no magic money tree was founded as one,
+  to fight a war, in a fortnight.*
 
 ### Guardrails for this song specifically
 
@@ -127,6 +253,25 @@ its own title instead of repeating it from bar one.
 - ⚪ **No "money printing caused inflation."** Use Keynes's own definition if the
   limit needs naming: inflation is *"a demand in excess of the physical
   possibilities of supply."*
+
+**Added by the war spine, 2026-08-21:**
+
+- 🔴 **Never "we printed the war."** See *the honest answer* above — the line is
+  *money was never what we were short of.*
+- 🔴 **Dunkirk jokes are about the money, never the beaches.** Contempt for the
+  mistake, not the people (`../../../voice.md`).
+- 🔴 **Don't say "Bradbury."** Live monetary-crank dogwhistle
+  (`../research/central-bank-trees.md`, never-say list). The 1914 seed is video
+  lore, not a rap lyric.
+- 🔴 **Veterans: first person or one voice, never "they all say."** *My grandad
+  fought for this* is fiction and fine; a veteran chorus is not
+  (`../research/fascism-and-the-wealth-gap.md`). No British statesman said the
+  welfare-prevents-fascism line — don't invent one; FDR's *"stuff of which
+  dictatorships are made"* is real but American.
+- ⚪ **The fascism turn is one bar-pair, in the bridge, by juxtaposition.** A
+  comedic rap can't carry more without lecturing.
+- ⚪ **~250%, never "259%."** And "early 1940s" / "during the war" for the
+  mulberries — never a year.
 
 ### Idea parking lot
 
@@ -147,6 +292,13 @@ its own title instead of repeating it from bar one.
 **This block is the live one.** Clean bars only, no Suno cues — cues get added at
 the very end, when the words are settled. One line = one bar at 172 (double-time
 16th flow, 8–11 syllables a line).
+
+**2026-08-21:** the draft below still follows the 08-18 map (wound → COVID
+pre-hook → receipts → mechanism). Under the ring, V1 stays as Movement 1 and
+should end on *where does it come from?*; the war and the build are new
+movements; the receipts and the mechanism fold into Movement 4. Mine the draft
+for parts — the pre-hook's COVID bars and V2's nurse run belong in Movement 4,
+and V2's 1694 opener belongs in Movement 2.
 
 **Status 2026-08-18 — full first pass (Claude), written to V1's register:**
 internal rhyme inside the bar, the wonk-term-as-punchline move, the
