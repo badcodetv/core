@@ -149,8 +149,8 @@ one place — this table. Reordering the film is a table edit, not a rename.
 | --- | --- | --- | --- | --- |
 | 1 | `s00` *(grandfathered)* | the orbital opener — the AI wakes, descends | — | ✅ **BUILT** · 56s |
 | 2 | `s01` *(grandfathered)* | Hong Kong, the CRT, `git push origin master` | 1–4 | ✅ **BUILT** · 27.8s |
-| 3 | `plant-room` | 2032. The vast hall, and the dashboard going red | 6 | ⬜ **NEXT** — §3c |
-| 4 | `bulletin` | the collapse as news | 7 | ⬜ prompted, unfired |
+| 3 | `plant-room` | 2032. The vast hall, and the console going red | 6 | ✅ **BUILT** · 40s — §3c |
+| 4 | `bulletin` | the collapse as news | 7 | ⬜ **NEXT** — prompted, unfired |
 | 5 | `empty-street` | the conveniences still humming | 8 | ⬜ prompted, unfired |
 | 6 | `vantage` | planet-wide, perfect, empty | 9 | ⬜ prompted, unfired |
 | 7 | `ghosts` | the materialist fix, and the check | 10 | ⬜ prompted, unfired |
