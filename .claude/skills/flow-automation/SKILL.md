@@ -23,6 +23,39 @@ If you are choosing adjectives, you are in the wrong skill.
 
 ---
 
+## 0. Before you open the browser at all
+
+🔴 **Ask: does anything in the world actually move?** Cloth, water, smoke, a crowd, a machine
+turning, a face — or **only the camera**?
+
+If only the camera moves, this is not a Flow job. It is a scale-and-crop on one still in `ffmpeg`:
+free, any length, an exact ease curve, and **no artefact is possible** because it is one image.
+Veo can only make it worse — GPOM scene 0 burned four generations on a camera-only move that post
+rendered perfectly in five seconds.
+
+And when Veo refuses a move, ask whether it will do the **inverse**. A push-in reversed in post is
+a rigid pull-back, and that is how scene 0's reveal was finally solved.
+
+**Plan every shot as `prompt → generate → transform`.** The ffmpeg step is part of the design, not
+a rescue. Recipe book, all tested on our own footage:
+[`post-production.md`](../../../docs/flow/post-production.md).
+
+| Symptom | Try in post first |
+| --- | --- |
+| Camera-only move (push, pull, pan, drift) on a still | Eased `zoompan` — §3.4 |
+| Veo will not hold a rigid subject on the move you want | Shoot the inverse, `-vf reverse` — §2 |
+| Clip is too short for the narration | Ping-pong loop — §3.3 — or retime — §3.7 |
+| Move is too fast inside 8s | Retime — §3.7 |
+| A stray burned-in subtitle | Crop the bottom — §3.8 |
+| Need the last frame to chain from | `-sseof` — §3.5 (or `flow_scene_save_frame`) |
+| Every clip that lands | Strip audio — §3.1 |
+
+⚠️ **The limit that decides it: Flow returns 1376×768 stills.** A post zoom is native only to about
+**1.07×**; past ~2.5× it is visibly soft. A big reveal cannot be one post move off one Flow still —
+`post-production.md` §4 has the table and the three routes around it.
+
+---
+
 ## 1. Get a working browser
 
 Everything runs through the `flow` MCP server. **Never puppeteer Flow by hand with the
@@ -135,7 +168,7 @@ Part B0 the other empty results, Part B silent quality failures.
 
 ---
 
-## 4. The fifteen laws
+## 4. The eighteen laws
 
 These are why the client looks the way it does. Every one was paid for live. If you are
 changing `@badcode/flow-mcp`, they are the spec; if you are just calling tools, laws 1–5
@@ -189,6 +222,28 @@ explain most of what you will see.
 15. **Navigation clears the bar and resets the pickers.** Model reverts to Nano Banana 2, chips
     detach, frame slots wipe. That is also the reliable way to *guarantee* a clean bar before
     `Reuse prompt`.
+16. 🔴 **One browser, one generation at a time — and a second call kills BOTH.** Added
+    2026-08-20 after doing exactly this. A `flow_generate_video` that runs past ~116s is moved
+    to the background, and it *keeps owning* the cached CDP attachment, the compose bar and the
+    asset picker. Firing a second call into that same bar **overwrites the prompt the first one
+    is still waiting on**: the second died with a 90s picker timeout on a file that was
+    definitely present, and the first ran its full 480s clock and returned TIMEOUT. The dump
+    proved it — an empty compose bar carrying the *second* call's Frames slots, no error card,
+    no credit warning, account healthy.
+    **A backgrounded Flow task is not free parallelism. Wait for it.** Do non-browser work
+    instead. And read the timeout dump before retrying: the failure impersonates a wedged
+    picker, so the reflex (reload and retry) disturbs the job that is still working.
+17. **99% is not done, and the 480s clock can expire while Flow sits there.** Two runs on
+    2026-08-20 returned TIMEOUT with the gallery tiles reading **99%** — rendered, billed, and
+    never harvested, with no tool to fetch an existing clip afterwards. The dump is what proves
+    it: check the tiles for a percentage before assuming a block or a credit problem. Suspect it
+    more as a project fills up (ours was ~25 items; harvest is known to degrade around 30).
+    Cheapest guard: keep projects small and one shot per project when a shoot gets long.
+18. **The compose-trigger label gains segments over time.** It read `Video · 8scrop_9_16x1`; on
+    2026-08-20 it read `Video · 720p · 8scrop_16_9x2`. A parser that walks from the mode to the
+    first digits will break on the next segment Flow adds. Anchor on the token *and its
+    neighbour* (`(\d+)s(?=crop|$)`), never on position. This one aborted every video call while
+    reporting the opposite of the truth.
 
 ---
 
@@ -282,6 +337,41 @@ Source: `packages/flow-mcp/src/`. Pure modules with `.test.ts` siblings (vitest,
 
 ---
 
+## 8. Write back what you learn — every session, not eventually
+
+🔴 **This is part of the job, not admin after it.** Every hour at the Flow face produces at least
+one fact that cost credits and wall-clock to discover, and the *only* thing that makes the next
+session cheaper is that the fact got written down. A finding that stays in a chat transcript is
+a finding we will pay for again.
+
+**Route it by kind. Three destinations, and the split is deliberate:**
+
+| You learned… | Goes in | Example |
+| --- | --- | --- |
+| **How to drive it** — a selector drifted, a control lies, a call collides, a failure impersonates another | **§4 of this skill**, as a new numbered law | Laws 16 (concurrent calls kill each other) and 17 (the label gained a `720p` segment) |
+| **How the model behaves** — what wording works, what it invents, what a tier does | [`docs/flow/`](../../../docs/flow/README.md), in the file that owns the subject | "describe the middle" → `video-prompting.md` §4; the hinge fix → §9 |
+| **What happened on this shot** — takes, verdicts, why one won | The story's scene file, `docs/stories/<story>/scenes/` | `s00-awakening.md`'s four-run comparison table |
+
+**Rules for writing it back:**
+
+1. **Correct in place, and say the old thing was wrong.** Don't quietly overwrite — a reader who
+   remembers the old rule needs to see it struck. `video-prompting.md` §9 keeps the refuted
+   version visible above the fix.
+2. **Carry the evidence with the claim.** What was run, how many times, on which tier, what the
+   comparison was. A rule with no measurement behind it becomes folklore in a month.
+3. **Say when it is weak.** `n=2, observed not established` is a useful thing to read. An
+   overstated finding is worse than none, because it stops the next person testing.
+4. **A finding that contradicts an existing rule is the most valuable kind.** Write it up loudly
+   and flag it to the human rather than resolving it quietly — several of our rules are measured
+   on this account and should usually win over a blog, but not over a fresh measurement.
+5. **Update the count in the heading** when you add a law, and check nothing else cites the old
+   number.
+
+**The test:** could someone opening a fresh session tomorrow hit the same wall? If yes, it isn't
+written down well enough yet.
+
+---
+
 ## Knowledge base
 
 | File | What | Read when |
@@ -290,6 +380,7 @@ Source: `packages/flow-mcp/src/`. Pure modules with `.test.ts` siblings (vitest,
 | [`automation-video.md`](../../../docs/flow/automation-video.md) | Motion: completion signals, the compose popover, Frames mode, what a finished clip offers, refine, the picker traps | Same, for video |
 | [`platform-controls.md`](../../../docs/flow/platform-controls.md) | Google's feature matrix, credits, watermarking, model auto-switching | Planning a shoot or a budget |
 | [`failure-modes.md`](../../../docs/flow/failure-modes.md) | Full failure taxonomy | §3 didn't cover it |
+| [`post-production.md`](../../../docs/flow/post-production.md) | 🔴 **The ffmpeg half.** The Veo-or-post decision, tested recipes, the resolution ceiling | §0 — before generating, and after every clip lands |
 | `packages/flow-mcp/README.md` | Tool schemas and the client's own contract | Editing the server |
 
 ⚠️ **Both automation docs are chronological logs, not manuals.** They record what was learned

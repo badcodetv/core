@@ -165,6 +165,12 @@ describe('video clip duration', () => {
     eight: 'Video · 8scrop_9_16x1',
     ten: 'Video · 10scrop_9_16x1',
     image: '🍌 Nano Banana Procrop_16_9x1',
+    // Captured live 2026-08-20: Flow inserted a RESOLUTION segment between the mode and the
+    // duration. The old `/Video[^0-9]*(\d+)s/` could not step over the `720` and matched
+    // nothing, so every video call aborted claiming the duration had not applied — while it
+    // had. These are the labels that regression must never come back on.
+    eightRes: 'Video · 720p · 8scrop_16_9x2',
+    tenRes: 'Video · 1080p · 10scrop_16_9x4',
   }
 
   it('offers exactly the four lengths Flow shows', () => {
@@ -176,6 +182,20 @@ describe('video clip duration', () => {
     expect(parseVideoDuration(LIVE.six)).toBe(6)
     expect(parseVideoDuration(LIVE.eight)).toBe(8)
     expect(parseVideoDuration(LIVE.ten)).toBe(10)
+  })
+
+  it('parses the label form that carries a resolution segment', () => {
+    // The 2026-08-20 drift. `720` sits between "Video" and the duration, and `1080p` even
+    // contains a `0` adjacent to nothing useful — neither may be read as a clip length.
+    expect(parseVideoDuration(LIVE.eightRes)).toBe(8)
+    expect(parseVideoDuration(LIVE.tenRes)).toBe(10)
+    expect(videoDurationAlreadySelected(LIVE.eightRes, 8)).toBe(true)
+    expect(videoDurationAlreadySelected(LIVE.eightRes, 720)).toBe(false)
+    expect(videoDurationAlreadySelected(LIVE.tenRes, 1080)).toBe(false)
+    expect(videoDurationAlreadySelected(LIVE.tenRes, 10)).toBe(true)
+    // And the count still reads off the end of the same longer label.
+    expect(videoCountAlreadySelected(LIVE.eightRes, 2)).toBe(true)
+    expect(videoCountAlreadySelected(LIVE.tenRes, 4)).toBe(true)
   })
 
   it('reads 10s as ten, not as one or zero', () => {

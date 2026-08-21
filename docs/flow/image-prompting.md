@@ -11,7 +11,14 @@ consequences:
 
 - Compound spatial and logical instructions that a diffusion model would average out
   are actually honoured — "the text acts as a cut-out window", exact object counts,
-  explicit left/right placement.
+  explicit left/right placement. ⚠️ **Softened 2026-08-20 — Google's own model card names
+  spatial localisation as a weakness**, not a strength: *"Occasional confusion around spatial
+  localisation (e.g. left/right etc.)"* sits in the shipping model's Known Limitations,
+  alongside *"Still limited in advanced capabilities with world knowledge, 3D reasoning and
+  factuality"*. Left/right lands often enough to be worth asking for; it is **not** something
+  to trust on the first generation when the whole shot depends on which side something is on.
+  Budget a verify-and-retry pass there. (official,
+  [Gemini 3 Pro Image model card](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Image-Model-Card.pdf))
 - **Prose beats keyword stacks.** Write like you're briefing a designer, not filling
   a search box.
 - Iterative refinement beats front-loading. Short prompts already generate well;
@@ -48,12 +55,14 @@ camera, materiality.
 
 | Lever | Write it as | Examples |
 | --- | --- | --- |
-| **Lighting** | A named setup | "three-point softbox setup"; "chiaroscuro lighting with harsh, high contrast"; "golden hour backlighting creating long shadows" |
-| **Camera / lens** | Focal length + aperture together | "low-angle shot with a shallow depth of field (f/1.8)"; "85mm lens at f/2.8"; "macro lens" |
+| **Lighting** | A named setup, **or a numeric ratio, or one source plus its falloff** | "three-point softbox setup"; "chiaroscuro lighting with harsh, high contrast"; "2:1 exposure ratio"; "one hard light source from a window at camera left, deep falloff into shadow" |
+| **Camera / lens** | Focal length + aperture together, **with the aperture's reason** | "low-angle shot with a shallow depth of field (f/1.8)"; "85mm lens at f/8 so the whole product stays sharp while the background falls into soft blur" |
 | **Film stock / grade** | A trailing clause, after everything else | "as if on 1980s color film, slightly grainy"; "cinematic color grading with muted teal tones" |
 | **Materiality** | Replace the category noun with the substance | not "suit jacket" → "navy blue tweed"; not "armor" → "ornate elven plate armor, etched with silver leaf patterns" |
 
-Full term reference with reliability tiers: [`camera-vocabulary.md`](./camera-vocabulary.md).
+Full term reference with reliability tiers: [`camera-vocabulary.md`](./camera-vocabulary.md) —
+including the **near-black recipe**, which names the source *and* claims the shadow, and matters
+more to the BadCode register than any other lighting note in these files.
 
 ## 4. Realism — defeating the plastic default
 
@@ -69,10 +78,24 @@ camera:
 Bare "photorealistic" as an adjective gets you plastic. The imperfection has to be
 named.
 
+**The imperfection vocabulary practitioners actually use**, beyond skin microtexture:
+asymmetrical features, scars, moles, wrinkles, *"slight redness or yellow in the sclera"*, stray
+hair strands, *"natural film grain, subtle lens breathing, analog bloom"*. ⚠️ The same worked
+prompts also carry *"no AI look, no stylization"* as a bare negative in the main prompt body,
+which contradicts §7's official semantic-negative guidance; the shown outputs prove the whole
+prompt worked, not that clause. **Take the imperfection markers, leave the bare negative.**
+(corroborated for the markers — five shown generated images,
+[blog.designhero.tv](https://blog.designhero.tv/veo-3-flow-cinematic-realism-midjourney/))
+
 ## 5. Rendered text
 
 Nano Banana Pro is genuinely strong at legible in-image text — the one place Flow will
 hold a word steady.
+
+🔴 **Never generate a panel that needs legible text at 1K.** Google lists *"Text rendering: poor
+in small text (often blurry in 1k model), long paragraphs, page length"* as a Known Limitation.
+Ask for 2K or 4K whenever a word has to survive. (official,
+[Gemini 3 Pro Image model card](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Image-Model-Card.pdf))
 
 1. Put the exact string in quotes: `"URBAN EXPLORER"`.
 2. Name the typography separately, in prose: "bold, white, sans-serif font".
@@ -107,6 +130,23 @@ halves are mandatory:
 
 - **Name the operation with a strong verb, first:** "Remove the man from the photo."
 - **State explicitly what must stay the same.** Omitting this is why edits wander.
+
+**Google confirms the word-defined mask is the stronger path.** The model card lists
+*"Masked/Doodle based editing: partial instruction following and persistent ink"* as a Known
+Limitation — drawn masks are officially the weaker channel, which is exactly why `edit-panel`
+describes the region instead of painting it. And the preservation clause can fail silently:
+*"When editing images: infrequent copying/pasting from user's input image to generated image"*.
+**Diff-check an edit's untouched regions rather than eyeballing them.** (official,
+[Gemini 3 Pro Image model card](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Image-Model-Card.pdf))
+
+### Region editing by lasso
+
+Google's Flow blog describes drawing a **freehand selection** around any region of a generated
+image *or a video frame* and typing a plain-language change — *"remove the man"* / *"add Koi
+fish in the water"* — with only the selected region updating. 🔴 Announced on the blog, absent
+from the current Flow help page; verify in the live app before building a workflow on it.
+(official but unconfirmed against the live app,
+[blog.google](https://blog.google/innovation-and-ai/models-and-research/google-labs/flow-updates-february-2026/))
 
 Google's own edit template, which `edit-panel` already uses verbatim:
 
@@ -148,6 +188,12 @@ logo"), pair the exclusion with a positive restatement of the required result.
 > use this data to modify the scene (e.g., if raining, make it look grey and rainy)] +
 > [Visualize this in a miniature city-in-a-cup concept embedded within a realistic,
 > modern smartphone UI.]"
+
+**Why grounding exists, and what it does not fix.** The base model's *"knowledge cutoff date for
+Gemini 3 Pro Image was January 2025."* Grounding patches the world-knowledge gap; it does **not**
+patch the 3D and spatial-reasoning weakness named in the same Known Limitations list — the one
+§1 now carries. (official,
+[Gemini 3 Pro Image model card](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Image-Model-Card.pdf))
 
 ## 8b. The official templates we didn't have
 
@@ -202,7 +248,8 @@ Beyond "be specific", which this file already says three ways:
   figure belongs to NB2, not Pro. *(Our `flow_edit_image` tool caps at 3 by schema and the
   flow-mcp README says use exactly one — an upload-reliability limit on our side, well inside
   every model limit above.)*
-- **Resolution:** 1K / 2K / 4K (Nano Banana 2 also 512px).
+- **Resolution:** 1K / 2K / 4K (Nano Banana 2 also 512px). **Pick 2K or 4K whenever the panel
+  carries a word** — small text is blurry at 1K by Google's own admission (§5).
 - **Aspect ratios:** 1:1, 3:2, 2:3, 3:4, 4:3, 4:5, 5:4, 9:16, 16:9, 21:9 (NB2 adds 1:4,
   4:1, 1:8, 8:1). **State it as its own clause** — "A cinematic 21:9 wide shot".
 - **Inputs:** PNG / JPEG / WebP / HEIC / HEIF, plus text and PDF.
@@ -226,3 +273,9 @@ professional asset production and complex instructions"* with search grounding, 
 **"Thinking" process that refines composition prior to generation**, and up to 4K. That
 Thinking pass is the thing §1 of this file calls a reasoning model — it is documented, not
 inferred. Imagen is deprecated and shuts down 2026-08-17; do not reach for it.
+
+**Added by the 2026-08-20 ten-angle sweep:**
+
+- [Gemini 3 Pro Image model card — DeepMind](https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Image-Model-Card.pdf) — Known Limitations (spatial localisation, small-text blur at 1K, doodle-mask editing, input-pixel preservation, character consistency) and the January 2025 knowledge cutoff. 🔴 **WebFetch cannot read this PDF — it returns a description of the binary. Download it and use the Read tool.**
+- [Flow updates, February 2026 — blog.google](https://blog.google/innovation-and-ai/models-and-research/google-labs/flow-updates-february-2026/) — the Lasso region edit.
+- Secondary, phrasing only: [fal.ai](https://fal.ai/learn/tools/nano-banana-pro-prompting-guide) *(prompts with shown outputs)* · [blog.designhero.tv](https://blog.designhero.tv/veo-3-flow-cinematic-realism-midjourney/) *(five shown outputs; take the imperfection markers, leave its bare negatives)*

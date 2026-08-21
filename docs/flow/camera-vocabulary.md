@@ -5,6 +5,13 @@ each. Applies to both stills and video unless noted.
 
 ## Reliability tiers
 
+⚠️ **These tiers are Veo's, and vocabulary does not port.** A named studio protocol (5 tests,
+one generation per model) found the prompt *"POV shot of a man who just fell standing up fast
+and running. Fast-paced shot. quick movements."* produced a clip that *"resembled more of a
+tracking shot"* on Veo 3.1 — which also *"added a random additional person to the mix"* — while
+the same prompt read correctly on Kling. **A term working on another model is not evidence about
+this one.** (corroborated, [curiousrefuge.com](https://curiousrefuge.com/blog/kling-vs-veo))
+
 **Tier 1 — dependable, use freely.**
 Shot sizes: extreme wide / establishing, wide, medium, medium close-up, close-up,
 extreme close-up, two-shot, over-the-shoulder, POV.
@@ -14,6 +21,10 @@ Focus: shallow depth of field, bokeh, deep focus.
 Angles: eye-level, low angle, high angle, Dutch angle, bird's-eye, worm's-eye.
 
 **Tier 2 — works, expect retries.** Crane / jib, arc / orbit, rack focus, whip pan.
+Google's own 180-degree arc phrasing generalises to any partial sweep pinned between two named
+viewpoints — *"Camera moves 45 degrees from front-left to front-right."* Low risk: an arbitrary
+degree value gets approximated, not refused. (content-mill,
+[veo3ai.io](https://www.veo3ai.io/blog/veo-3-camera-control-prompts-2026))
 
 **Tier 3 — hero-shot only, budget failures.** Dolly zoom (vertigo), full 360° orbit,
 anything requiring precise hand articulation in frame.
@@ -90,6 +101,26 @@ in that story's ledger — don't generalise them.
    seconds") is unreliably parsed — the one source with comparative testing measured
    ~39% adherence and recommends adverbs instead. *This corrects a widely-repeated tip
    claiming exact durations improve specialty moves; they don't.*
+
+   **But "slow" is not one speed.** There is a usable scale below it — *"Imperceptible /
+   barely-there — used for subtle pushes that build tension without obvious motion… Slow —
+   most cinematic default, works on every model… Steady / measured — locked, deliberate
+   pace."* Padding does not help: *"Padding the movement description with adjectives ('a
+   smooth, fluid, cinematic dolly that elegantly moves toward the subject') rarely helps and
+   sometimes confuses the model."* ⚠️ Whether *imperceptible* differs from *slow* in output is
+   untested, and our register lives at exactly that end of the scale.
+
+   **The speed instruction that actually recurs in practice is relative, not absolute** — tie
+   the camera's pace to something already in frame rather than naming a speed in isolation:
+   *"match the subject's pace"* / *"match the vehicle's pace"* / *"natural walking or reaching
+   pace"* / *"smooth controlled push/retreat"* / *"slow controlled constant motion"*.
+
+   **Staging *when* a move starts is not the banned pattern.** `Static for first 2 seconds,
+   then slow dolly-in toward [subject].` That allocates a beat of stillness before the move; it
+   does not try to time the move's *execution*, which is the thing measured at ~39% adherence.
+
+   *(single-source, [lzyprompt.com](https://lzyprompt.com/blog/ai-video-camera-movement-prompts/);
+   relative-pace phrasings content-mill, [aicameramovements.com](https://www.aicameramovements.com/))*
 5. **To lock the camera, say so positively:** "static shot", "fixed camera", "the camera
    is locked and still". Don't try to fight motion with negatives.
 6. **Angle carries emotional register** and pairs with a shot size in one clause
@@ -105,6 +136,11 @@ in that story's ledger — don't generalise them.
 Put aperture in the same clause as the focal length: "50mm prime lens with a shallow
 depth of field", "85mm lens at f/2.8", "low-angle shot with a shallow depth of field
 (f/1.8)".
+
+**Give the aperture a stated reason rather than a bare f-stop** — *"shot on an 85mm lens at
+f/8 so the whole product stays sharp while the background falls into soft blur"*. (corroborated
+— generated image shown beneath the prompt,
+[fal.ai](https://fal.ai/learn/tools/nano-banana-pro-prompting-guide))
 
 Fisheye recipe: "Wide-angle / fisheye lens (10mm–14mm) – Strong foreground distortion on
 hands + faces – Bright, saturated colors – High contrast, punchy sunlight."
@@ -133,6 +169,50 @@ against colour creep down a shot chain.
 > "golden hour rim light on a dancer in a warehouse with backlight creating a halo and
 > dust particles in light beams"
 
+### Near-black: name the light, then claim the shadow
+
+**This is the second half of our own motivated-lighting rule** — which currently names the
+source and never claims the shadow. Describing a frame as "dark" or "near-black" is not an
+instruction. Say which single source is lit, and state explicitly where everything else falls:
+
+> *"one hard light source from a window at camera left, deep falloff into shadow, a thin rim of
+> light along the fruit's edge"*
+
+The low-key siblings: *"Low-key, motivated by a single warm practical lamp; the rest of the room
+in shadow."* / *"Soft single key light from a large window, deep falloff into shadow (Rembrandt
+lighting)."*
+
+*(corroborated — exact prompt with generated image shown,
+[fal.ai](https://fal.ai/learn/tools/nano-banana-pro-prompting-guide); low-key siblings
+single-source, [sider.ai](https://sider.ai/blog/ai-tools/best-prompt-techniques-for-veo-3_1-video-output-a-field-guide-to-cinematic-control))*
+
+**Why near-black is uphill.** Average frame brightness is the noise component that survives
+longest during forward noising in diffusion training, so a standard denoise pass cannot move
+global brightness far — near-black prompts tend to render as **muddy dark-grey rather than true
+black** unless the prompt compensates. Background rationale, not a phrase to write: the
+actionable half is the one-light-plus-stated-falloff recipe above. (practitioner-with-evidence,
+[crosslabs.org](https://www.crosslabs.org/blog/diffusion-with-offset-noise))
+
+🔴 **This is the BadCode register's structural enemy** — near-black with one thin light is
+exactly what the model's training pulls against. Nobody outside has tested it for our register;
+the settling test is a histogram, not a vibe.
+
+### Two more lighting levers
+
+**Numeric key:fill ratios are usable prompt vocabulary**, a lexical tier below named setups —
+*"2:1 exposure ratio, shallow depth of field, realistic lens flares, soft analog bloom"*, with
+2:1 or 4:1 for *"a balance of shadow detail and contrast"* and tighter ratios pushed toward
+near-black. The underlying ASC convention is a real film-industry standard regardless of AI
+leverage. (corroborated — five shown generated images tied to numbered prompts,
+[blog.designhero.tv](https://blog.designhero.tv/veo-3-flow-cinematic-realism-midjourney/))
+
+**Two opposing colour temperatures in one frame plus a single continuous move reads as
+production value inside 8 seconds** — *"Slow dolly-in on a lighthouse keeper reading by lamplight
+as a storm builds outside the window, warm interior light against cold blue dusk, rain against
+glass, distant thunder"*. The pattern is generic cinematography craft; the source's own output
+claim is a vendor thumbnail and is not evidence. (content-mill,
+[videogen.io](https://videogen.io/veo-3-prompts))
+
 ## Film stock, grain, grade
 
 Composable into one dense trailing clause. Terms that land: "shot on 35mm film",
@@ -146,6 +226,35 @@ Portra 400"), "teal-and-orange", "desaturated", "sepia", "muted teal tones".
 > high but smooth contrast, rolled-off highlights, anamorphic 35mm, subtle blue lens
 > flare, fine grain."
 
+**Anamorphic is two independent optical traits, so name both.** Oval bokeh comes from the
+lens's oval entrance pupil; the blue horizontal streak flare comes from cylindrical-element
+coatings. Ask for "anamorphic" alone and the model may deliver one and drop the other — write
+*"oval bokeh from background lights"* and *"subtle blue lens flare"* explicitly when both are
+wanted. Real optics, independently documented in mainstream cinematography literature, not an
+AI-behaviour claim. (corroborated,
+[diyphotography.net](https://www.diyphotography.net/this-is-why-anamorphic-lenses-have-oval-bokeh-its-nothing-to-do-with-the-aperture/))
+
+**Named stock vocabulary beyond Kodak Portra 400** — Kodak Vision3 500T (cool shadows, held
+highlights), Fujifilm Eterna (muted, desaturated, low-contrast indie), *"CineStill 800T,
+tungsten-balanced, visible halation around lights"* (the halation is stock-specific, not
+generic), Technicolor three-strip (punchy saturated reds/cyans), *"Bleach bypass process, silver
+retention, desaturated with crushed contrast"*. ⚠️ **Phrasing value only** — the stock-look
+mappings are true photographically, but nothing tests whether Veo or Nano Banana differentiates
+these names from generic "warm grainy film". (content-mill, no shown output,
+[veo3ai.io](https://www.veo3ai.io/blog/veo-3-cinematic-film-look-color-grading-2026))
+
+### The one-line Style Bible
+
+Lock a single dense descriptor once per project — light direction, palette, contrast character,
+grain and halation in one clause — and paste it **verbatim** into every prompt:
+
+> *"soft north-light rim; muted earth tones; low-contrast filmic; subtle halation; fine grain"*
+
+Same discipline as the character DNA block ([`consistency.md`](./consistency.md) §4), applied to
+the grade. ⚠️ Source unreadable (403), snippet only — the template is harmless, the attribution
+is weak. (practitioner, snippet-only,
+[wimarys.com](https://www.wimarys.com/lighting-colour-in-google-veo-palette-control-grade-intent-consistency/))
+
 ⚠️ Teal-and-orange is the *opposite* of the BadCode comic register, which calls for
 muted cool-neutral and bans movie-poster grading. Quoted here as vocabulary, not as a
 recommendation.
@@ -157,11 +266,35 @@ handheld", "Arri Alexa Mini") is widely recommended as shorthand for an optical
 signature. It is **documented by Google for the image side** — the Nano Banana guide
 explicitly lists GoPro / Fujifilm / disposable camera as style levers — and is **absent
 from Google's Veo guide**, which teaches descriptive technique language instead.
-Verification found no controlled test isolating the effect on video.
+**One weak video-side data point now exists, and it says the rig name was not the variable.**
+In a fixed cross-model run, *"Cinematic tracking shot through a rain-soaked Tokyo alley at
+night… The camera glides forward slowly, revealing layers of depth — hanging lanterns, dripping
+pipes, distant city glow. Shot on ARRI Alexa with Panavision C-series anamorphic lenses."*
+executed the glide correctly at the start and then ran out of budget — *"Beautiful composition
+and lighting, but 8 seconds isn't enough for a proper tracking shot. Camera shows the beginning
+of the alley but doesn't reveal the depth."* **The bottleneck was the 8-second cap, not the
+hardware token.** It neither helped nor hurt. (single-source,
+[clipia.ai](https://clipia.ai/en/blog/seedance-2-vs-kling-3-vs-veo-3))
 
 **Use it for stills. On video, describe the signature itself** ("fisheye distortion,
 blown highlights, on-camera flash, handheld urgency") rather than trusting a brand name
 to carry it.
+
+## When words cannot get the move: hand Veo the motion itself
+
+Google's own production account of **ANCESTRA** describes building a *reference video* of the
+exact motion — a virtual 3D body model moved through the intended trajectory, or existing
+footage of the target motion — and having Veo *"track the draft shot's motion and generate new
+videos using that same movement,"* with the text prompt specifying **content only, never the
+move**. A second sequence used *"reference videos of this motion"* to match organic movement
+that would have been *"complex and time-intensive"* via traditional CGI. Described as shipped in
+the released film, not as a demo.
+
+**This is the most literal answer to "exact camera movement" the research found**, and it is
+official. 🔴 Whether it is reachable from the Flow app — as opposed to the research pipeline
+Google gave that production — is entirely unknown and worth one live check.
+
+*(official, [blog.google](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/ancestra-behind-the-scenes/))*
 
 ## Simplicity is the technique
 
@@ -181,4 +314,13 @@ first of these; the reliability tiers, the rules and the BadCode notes are ours.
 - [Image generation with Gemini — Gemini API](https://ai.google.dev/gemini-api/docs/image-generation) — the still-side camera guidance ("Control the camera: use photographic and cinematic language") and the camera-hardware style levers noted below.
 
 The **camera-hardware-as-style-token** section stands as written: it is documented for the
-image side and absent from every Veo page re-read in this pass.
+image side and absent from every Veo page re-read in this pass. One weak video-side data point
+was added on 2026-08-20 and it points the same way — the rig name was not the variable.
+
+**Added by the 2026-08-20 ten-angle sweep:**
+
+- [ANCESTRA behind the scenes — blog.google](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/ancestra-behind-the-scenes/) *(official — reference-video motion transfer, and the "add object" compositing path in [`consistency.md`](./consistency.md))*
+- [Kling vs Veo — Curious Refuge](https://curiousrefuge.com/blog/kling-vs-veo) *(named protocol, 5 tests — vocabulary does not port between models)*
+- [Diffusion with offset noise — Crosslabs](https://www.crosslabs.org/blog/diffusion-with-offset-noise) *(the mechanism behind near-black rendering as muddy grey)*
+- [Nano Banana Pro prompting guide — fal.ai](https://fal.ai/learn/tools/nano-banana-pro-prompting-guide) *(prompts with shown outputs — the near-black recipe, the reasoned aperture)*
+- Secondary, phrasing only: [lzyprompt.com](https://lzyprompt.com/blog/ai-video-camera-movement-prompts/) · [blog.designhero.tv](https://blog.designhero.tv/veo-3-flow-cinematic-realism-midjourney/) · [veo3ai.io](https://www.veo3ai.io/blog/veo-3-cinematic-film-look-color-grading-2026) · [clipia.ai](https://clipia.ai/en/blog/seedance-2-vs-kling-3-vs-veo-3)

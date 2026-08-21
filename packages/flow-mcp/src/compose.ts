@@ -116,9 +116,18 @@ export function maxDurationForModel(model: string): number {
  * duration/aspect/count but never the tier. Parses the number rather than substring-matching
  * "8s", because the neighbouring segments are digits too ("crop_9_16", "x1") and a loose match
  * there is how the aspect short-circuit went wrong.
+ *
+ * ⚠️ **The label gained a resolution segment (2026-08-20).** Flow now renders
+ * "Video · 720p · 8scrop_16_9x2". The previous pattern was `/Video[^0-9]*(\d+)s/`, whose
+ * `[^0-9]*` cannot step over the `720` — so it matched nothing at all and every video call
+ * aborted with VIDEO_DURATION_NOT_APPLIED while the duration was in fact correctly applied.
+ * A failure this shape is worse than useless: it burns the turn AND reports the opposite of
+ * the truth. The fix skips intervening segments lazily but still anchors the capture on the
+ * `<digits>s` that is immediately followed by the aspect ligature, so `720p` and `16_9x2`
+ * cannot be misread as a duration.
  */
 export function parseVideoDuration(label: string | null): number | null {
-  const m = /Video[^0-9]*(\d+)s/i.exec(label ?? '')
+  const m = /Video\b.*?(\d+)s(?=crop|\s|$)/i.exec(label ?? '')
   return m ? Number(m[1]) : null
 }
 
