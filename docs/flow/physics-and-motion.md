@@ -123,6 +123,33 @@ Weak evidence, but it gives README rule 6 a *mechanism* it currently lacks, and 
 plausible enough to change how we write an animate prompt: on an existing still, every word
 spent re-describing the scene is a word not spent on the motion.
 
+## 6b. 🔴 Veo animates what the plate gives it something to animate
+
+Measured on GPOM scene 1, 2026-08-21, and it arrived as a correction to our own first reading.
+
+| Plate | Takes | Result |
+| --- | --- | --- |
+| Grimy night alley, dense, dark, high-detail — asked for **rain** | 5 across 3 plates, 2 prompt strategies | One pedestrian walked. Nothing else moved in any of them. Rain never appeared, twice |
+| Modern harbour city at night — asked for **water, ferries, cloud, window lights** | 1 | Moved immediately and well. Ferries tracking with visible wakes, thousands of windows twinkling, water surface breaking and reforming, cloud drifting |
+
+Same tier (Veo 3.1 Fast), same settings, same prompt shape. **The variable is the plate, not the
+tool.** Open water, distant traffic, cloud and a large field of small lights are things Veo will
+move. Fine particulate — rain, drizzle, spray — over a dark, dense, high-detail surface is not.
+
+So the storyboard-time question is not *"will Veo animate this?"* but **"what in this frame is Veo
+already good at moving, and is any of it in shot?"** If the honest answer is nothing, the shot is a
+locked plate and belongs in post ([`post-production.md`](./post-production.md) §1) — which is a
+first choice, not a defeat.
+
+### ⚠️ Over-locking the camera freezes the world
+
+The trap that nearly hid the finding above. Prompts that stacked *"no pan, no tilt, no zoom, no
+drift, no handheld shake… nothing else moves at all"* froze the **entire clip**, subject included —
+identical to a still, and identical in the file to a plate Veo simply refused.
+
+**Name the moving thing first and hard, then lock the camera.** One clause of camera lock at the
+end does the job; a wall of negations reads as "hold everything".
+
 ## 7. Shot classes to avoid
 
 Cross-referenced to [`failure-modes.md`](./failure-modes.md) Part B.
@@ -133,6 +160,7 @@ Cross-referenced to [`failure-modes.md`](./failure-modes.md) Part B.
 | **Liquid that must respond to the frame's own acceleration** | No model tested passed the "glass of water in a moving car" test — gravity-driven water is fine, inertial water is not |
 | **Near-field parallax past flat parallel structures** | Our own measurement: Veo hinges the geometry open instead. See `video-prompting.md` §9 — though the source still's depth-cue composition is an untested variable, not a ruled-out one |
 | **Precise hand articulation** | Long-standing, unfixed |
+| **Rain, drizzle or spray over a dark dense scene** | Measured GPOM scene 1, 2026-08-21: four takes across two prompt strategies produced no rain at all on a night alley plate. Fine particulate over high-detail dark surfaces is below what Veo renders. Post it, or pick a frame with water, cloud or traffic in it instead — see §6b |
 | **Orbiting a rigid subject faster than ~35–40° per 8s clip** | Measured on GPOM scene 0, 2026-08-21, two candidate pairs from identical prompts. The take that arced ~90° stopped moving the camera and started **redesigning the object** — antenna swelling, solar arrays changing count, hull reproportioning. The ~35–40° takes held. Chain several slow stages instead of asking for one fast arc |
 
 ---

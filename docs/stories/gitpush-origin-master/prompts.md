@@ -330,11 +330,27 @@ recorded narration plus the Suno track, laid in Premiere. Strip the Veo audio.
 
 ---
 
-## 3b. Scene 1 — Hong Kong and the push  ·  🟡 **BOARD, not yet shot**
+## 3b. Scene 1 — Hong Kong and the push  ·  ✅ **SHAPE BUILT 2026-08-21**
 
-> **This is the pre-production suggestion board.** When the scene is built it gets stamped like
-> §3a and the truth moves to `scenes/s01-the-push.md`. Do not edit this section to match what
-> gets made.
+> ✅ **BUILT as [`scenes/s01-the-push.md`](./scenes/s01-the-push.md)** — 21s, four beats,
+> `s01-ROUGH-MODERN.mp4`. That file is the ledger of record: the prompts, images and settings that
+> actually made the cut. **This section is the pre-production suggestion and is left as written.**
+>
+> **Diverged from this board, hard:** the whole location register flipped from **grimy to modern**
+> (Kai's ruling — *grime pre-loads the dystopia*; scene 1's job is that the world looked completely
+> fine when the command got typed). So: no neon canyon, no derelict internet cafe, no rain-wet
+> shopfront. Instead a modern prosperous Hong Kong, a black glass tower with one lit floor, and a
+> clean modern office. **Six beats became four** — the office plate already holds the CRT at mid
+> distance, so the separate desk-distance beat was dropped.
+>
+> **The CRT got a better job out of it.** In a grimy cafe it was more decay. In a clean working
+> office it is the one thing that does not belong.
+>
+> **What this board got right and should be credited with:** the empty-plate ruling (below) was
+> correct and is what made the terminal register possible at all, and both named traps held — every
+> join is a cut, and no frame carries legible signage.
+>
+> 🔴 **The scene is a SHAPE, not finished.** The terminal register — the payload — is unbuilt.
 
 **Ruling 2026-08-21 (Kai): canon scenes 1–4 collapse into one physical location.** `story.md`
 scenes 1 (the commit log), 2 (the log of the species), 3 (`HEAD`) and 4 (the push) have never had
@@ -351,7 +367,7 @@ over a knackered beige monitor in a cafe rather than over abstract black.
 Neon and phosphor are the only light and both are motivated. Warmth is allowed here precisely
 because it is the human world — it drains out again from scene 6 onward.
 
-### The six beats
+### The six beats as planned on 2026-08-21 — superseded by the four that got made
 
 | # | Beat | Asset | Lane |
 | --- | --- | --- | --- |
