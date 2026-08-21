@@ -1,0 +1,26 @@
+{
+  // The panel is a UXP CommonJS bundle, NOT part of the ESM workspace — it deliberately does
+  // NOT extend ../../tsconfig.base.json: the base sets `moduleResolution: "bundler"` and
+  // `verbatimModuleSyntax: true`, both of which are incompatible with a CJS bundle whose
+  // dependencies (`premierepro`, `uxp`) are resolved by UXP's own runtime `require`, not by us.
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM"],
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "types": [],
+    "baseUrl": ".",
+    "paths": {
+      "premierepro": ["../../node_modules/@adobe/premierepro/src/premierepro.d.ts"]
+    }
+  },
+  "include": ["panel/src", "src/protocol.ts", "src/nearest.ts"]
+}

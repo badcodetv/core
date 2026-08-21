@@ -50,3 +50,6 @@ design/research/2026-08-12-enc-tokenomics/m2sl.csv
 # anchors the prompts refer to, and they are small.
 docs/stories/**/storyboard/img/*.mp4
 docs/stories/**/scenes/**/*.mp4
+
+# Premiere bridge: per-machine media root + port (see design/2026-08-21-premiere-bridge-and-video-fx.md)
+badcode.local.json

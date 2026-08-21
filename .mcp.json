@@ -2,11 +2,26 @@
   "mcpServers": {
     "playwright": {
       "command": "npx",
-      "args": ["-y", "@playwright/mcp@latest", "--cdp-endpoint", "http://localhost:9222"]
+      "args": [
+        "-y",
+        "@playwright/mcp@latest",
+        "--cdp-endpoint",
+        "http://localhost:9222"
+      ]
     },
     "flow": {
       "command": "npx",
-      "args": ["tsx", "packages/flow-mcp/src/server.ts"]
+      "args": [
+        "tsx",
+        "packages/flow-mcp/src/server.ts"
+      ]
+    },
+    "premiere": {
+      "command": "npx",
+      "args": [
+        "tsx",
+        "packages/premiere-mcp/src/server.ts"
+      ]
     }
   }
 }

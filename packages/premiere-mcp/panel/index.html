@@ -1,0 +1,49 @@
+<!--
+  BadCode Bridge panel shell. Kept deliberately plain: the whole UI is a status light, the
+  server address, and a log, because everything interesting happens in the conversation on the
+  other end of the socket. Element ids here are the contract with panel/src/main.ts.
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        font-family: "Adobe Clean", sans-serif;
+        font-size: 11px;
+        color: #d8d8d8;
+        background: #1e1e1e;
+        margin: 0;
+        padding: 10px;
+      }
+      .row { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; }
+      #light {
+        width: 10px; height: 10px; border-radius: 50%;
+        background: #8a1f1f; flex: 0 0 auto;
+      }
+      #light.on { background: #2f9e44; }
+      #url { flex: 1 1 auto; }
+      #log {
+        white-space: pre-wrap;
+        font-family: monospace;
+        font-size: 10px;
+        height: 190px;
+        overflow-y: auto;
+        border: 1px solid #3a3a3a;
+        padding: 6px;
+        background: #141414;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div id="light"></div>
+      <span id="state">disconnected</span>
+    </div>
+    <div class="row">
+      <sp-textfield id="url" value="ws://localhost:7890"></sp-textfield>
+      <sp-button id="connect" size="s">Connect</sp-button>
+    </div>
+    <div id="log"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
