@@ -184,7 +184,69 @@ below). Then **one bar-pair**, by juxtaposition only: what they built it
 *against* — the flags from the war are back, and the machine that kept them gone
 is being sold off. Grief, not mockery; the marchers are the recruited.
 
-### The hook
+### The hook — recovered candidates (2026-08-21)
+
+Kai remembered a better chorus. **There was never one with those exact words** —
+what he remembers is two real things that sat next to each other in the
+Version A/B outro, both now recovered from git:
+
+**1. The concession couplet — the oldest line in the project.** Kai's own, from
+the first file (`d29417c`, 2026-06-17). It survived every rewrite until the
+08-18 reset dropped it:
+
+```
+ok, I know this money ain't free
+but I do know paper comes from a tree
+```
+
+**2. The corroding refrain** (Version C, `55984b4`, 2026-08-14). The politician's
+line lands at the end of *every* verse and rots as the evidence stacks up — the
+*Evidently Chickentown* mechanism, where the repetition does the satire and the
+music never has to be funny:
+
+```
+There is no magic money tree.
+```
+
+**3. The A/B shout-along** (which the 08-18 sheet kept as its final hook):
+
+```
+Where's it grow? On a tree. Brrr ain't free.
+They say there's none for you and me. But the paper grows on a tree.
+```
+
+**The problem with the current 08-18 hook** (*"what can we afford? (anything we
+can do!) / says who? (says Keynes! forty-two!)"*): it carries two jobs, and it
+names a dead economist in the one part people chant. It's an argument in
+call-and-response clothing, not a chorus.
+
+**Recommendation — 1 answering 2.** The bloke concedes, the politician's line
+answers back from the parentheses (which is what parentheses actually do in
+Suno — backing/secondary vocal, stood back from the mic), and the concession
+turns into the punchline. Seed, disposable:
+
+```
+I don't know much — (there is no magic money tree)
+never read a book — (there is no magic money tree)
+can't tell ya what a bond yield be
+but I know that paper comes from a tree
+```
+
+**Why it fits the ring:** Movement 1 spends sixteen bars juggling their
+vocabulary — *quantitative easing, means of production, debasement*. A chorus
+that says **"I don't know any of that, but I know this"** is the reader's own
+position, handed back to them with the win in it. And it corrodes on schedule:
+a shrug after M1, an accusation after the war, a victory lap after the build,
+and a straight-faced indictment after the yacht — **same words, four meanings**,
+so Kai never rewrites it.
+
+**One caveat, not a blocker:** modern UK notes are polymer. The paper gag is
+played dumb on purpose and the sheet's header keeps it; the plastic guardrail in
+`../research/central-bank-trees.md` binds the *tree's dialogue in the story*, not
+the song's joke. The hard backup fact, if the final hook wants one, is the four
+mulberries.
+
+### The hook — as mapped 2026-08-18 (superseded by the candidates above if Kai picks one)
 
 Unchanged in shape from the 2026-08-18 draft: Keynes verbatim as call-and-
 response in the first half, the address couplet in the second, **the title
@@ -313,36 +375,26 @@ are draft. Every other section is draft top to bottom. Kai's red pen next.
 [Verse 1 — the wound — 16]
 They say, ya can't make money from a tree
 let's see, each day, not free, ay
-work and get paid though, earn that dough
-where does it go? nobody knows!
+work and get paid though, earning that dough
+but where does it go? nobody knows!
 standards bleeding, land-lords needing
-quantitative easing, grandma freezing
+quantitative easing, grandma FREEZING!
 means of production, means a reduction
-stimulus checks are next get wrecked
-full-time graft, still short on the rent
-"cost of living crisis" — where's the living went?
-food banks up in the sixth-richest state
-nurses in the queue — mustn't grumble, mate
-trolley in a corridor, four-year list
-"record investment!" — you get the gist
-rent seeking? just about eating!
+rent seeking? JUST ABOUT EATING!
 sorry, did I interrupt your meeting?
-
-[Pre-hook — the crack — 8]
-and yet — hang about — one thing I've seen:
-ten years of nowt, twenty-ten to nineteen
-belts tight, wards shut, "nothing spare" —
-then the world stops dead: money from thin air!
-four hundred fifty billion in a season
-the whole lost decade, matched — that's the treason
-half-price dinners on the chancellor's card
-ten years of "can't afford it" — weren't that hard!
+stimulus checks are next, get wrecked
+incoming statement all about debasement
+here comes the piggy bank out of the basement
+apparently, there is no magic money tree
+yet it seems to me, that when the government
+has a mess, then they lean on the printing press
+and the magic part is who it made rich — have a guess
 
 [Hook — 8]
 what can we afford? (anything we can do!)
-says who? (says Keynes! forty-two!)
+says who? (says Keynes back in forty-two!)
 short of money? (you can't be, mate!)
-short of bricks? (well — that's the debate!)
+short of bricks? (well — that's a debate!)
 one pound, two addresses, pick:
 wages make it flow — assets make it stick
 stick it in a portfolio, up goes the rent
@@ -412,6 +464,39 @@ where's it GROW? (ON A TREE!)
 ```
 
 ### Spares (alternates, not in the sheet)
+
+**V1 bar 16 — re-pointed 2026-08-21 (Kai's call).** As written it was *"and the
+magic part is the money is now worth less"* — which is the monetarist story this
+song's own guardrails ban: the research says that isn't what happened, and it
+argues *for* austerity in our own single. Re-pointed to name **the beneficiary**
+instead of the mechanism, which also satisfies `../../../marketing/the-reader.md`
+(never raise the economic fear without naming who gained, in the same piece).
+Installed:
+
+```
+and the magic part is who it made rich — have a guess
+```
+
+Same 13 syllables as the original, same `press` rhyme, same mock-polite sneer.
+Alternates if it doesn't sit:
+
+- *and the magic part is who it's worth more to — guess* (closest to the
+  original phrasing)
+- *and the magic part? — check the address!* (9 syllables, punchy; plants the
+  word that Movement 4 pays off with *"one banknote, two addresses"* — but reads
+  cryptic on first listen)
+- *and the magic part is who gets rich off the mess* (most legible; echoes
+  "mess" from bar 15)
+
+**Bar 11's "debasement" now reads as setup, not claim** — the bloke reporting
+what he's told, corrected two bars later. Fine as it stands; watch it if bar 16
+ever changes back.
+
+**Note on the pivot:** the ring wanted Movement 1 to land on *where does it come
+from?* Kai's V1 lands on the printing press instead, which does the same job
+(it names the printer and points at the next question). If the cut to 1940 feels
+unmotivated once the war verse exists, the hook can carry the pivot instead of
+the verse.
 
 - **V1 alt** (if "rent" landing twice in one verse grates — bar 9 + the closer):
   *full-time graft and it still won't stretch / "cost of living crisis" — who
