@@ -50,9 +50,14 @@ join is a cut), and no signage in any frame carries legible lettering.
 generated close-up — a different monitor in a different room — the push-in was shot and its last
 frame extracted as `plate-1080.png`. The type composites onto the exact frame the move lands on, so
 there is no join to hide. It is the scene-0 chaining technique run forwards instead of reversed,
-and it retires `s01-crt-close-b.jpg`, which is now unused.
+and it retired `s01-crt-close-b.jpg` — which was **removed from the repo** on that basis. It was a
+good plate and it made no frame of the film, and the rule is that only stills which reached the cut
+are kept.
 
-All four stills are committed to `storyboard/img/`. Everything else — 12 video takes, 14 stills,
+**Three stills are committed** to `storyboard/img/`: `s01-hk-modern-b`, `s01-tower-ext2-b`,
+`s01-office-int-a`. Sixteen were generated. Everything else — the grimy set, the failed tower
+exteriors, the retired close-up, 14 video takes and every intermediate frame sequence — stayed in
+the scratch folder. Everything else — 12 video takes, 14 stills,
 the superseded grimy set — stayed in the scratch folder.
 
 ---
