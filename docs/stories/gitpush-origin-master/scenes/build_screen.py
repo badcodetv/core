@@ -2,11 +2,21 @@
 """
 GPOM scene 1 -- kill the chroma green everywhere before the terminal beat.
 
-Flow generates the CRT as a flat chroma-key fill, which is exactly what we want to key
-against but is NOT what should be on screen: the monitor is OFF for the whole approach
-and only powers on once we arrive. This walks every frame of the push-in, keys the green
-out, puts a dead tube in its place, and takes the room's green cast down with it -- the
-office is lit by that monitor, so with it off the only light is the city through the glass.
+Flow generates the CRT as a chroma-key fill, which is what we key against and is NOT what
+should be on screen: the monitor is OFF for the whole approach and only powers on once we
+arrive. This walks every frame of the push-in and turns that screen off.
+
+  🔴 Veo ANIMATES the screen brightening as the camera closes in. Measured across the clip:
+  at frame 1 it is a dim desaturated green, by frame 60 it is saturated chroma. A fixed
+  threshold therefore keys 0% of it early, 33% at frame 60, 75% at frame 90 -- and a
+  partial key on a flat fill is a ragged green blob, which is exactly what it looked like.
+
+So there are two rules here, and the first version broke both:
+
+  1. SOFT key, on a ratio that survives the brightness ramp. No hard threshold anywhere.
+  2. RECOLOUR the real pixels; never paste a synthetic screen over them. Pasting a shape
+     means inventing an edge, and an invented edge does not match the tube's real bezel
+     shadow, corner rounding or anti-aliasing -- it reads immediately as an overlay.
 
 Emits the processed frames, and `plate-off-1080.png`: the landing frame, which is the
 plate build_terminal.py powers back up.
@@ -24,73 +34,82 @@ files = sorted(glob.glob(os.path.join(SRC, '*.png')))
 assert files, 'no source frames -- extract the push-in first'
 print(f'{len(files)} frames', flush=True)
 
-
-def key(P):
-    """Chroma mask for the generated screen fill."""
-    R, G, B = P[..., 0], P[..., 1], P[..., 2]
-    return (G > 110) & (G - R > 55) & (G - B > 55)
+def smoothstep(x, lo, hi):
+    k = np.clip((x - lo) / (hi - lo), 0.0, 1.0)
+    return k * k * (3.0 - 2.0 * k)
 
 
-def dead_screen(mask, ys, xs):
-    """
-    A switched-off CRT is not black -- it is a dark grey mirror with a slight sheen.
-    Rendered in the mask's own normalised coordinates so it tracks as the camera closes in.
-
-    Geometry comes from the raw chroma bbox, but it is EVALUATED at the dilated pixel set
-    the composite actually writes to -- those are not the same pixels.
-    """
-    my, mx = np.nonzero(mask)
-    x0, x1, y0, y1 = mx.min(), mx.max(), my.min(), my.max()
-    w, h = max(x1 - x0, 1), max(y1 - y0, 1)
-    u = (xs - x0) / w * 2 - 1
-    v = (ys - y0) / h * 2 - 1
-
-    base = np.array([15.0, 17.5, 16.5])
-    sheen = np.clip(0.55 - 0.42 * u - 0.50 * v, 0, 1) ** 2.4        # soft glare, upper left
-    vign = np.clip(1.0 - 0.45 * (u ** 2 + v ** 2) ** 1.1, 0, 1)
-
-    px = base[None, :] * vign[:, None]
-    px += np.array([16.0, 19.0, 18.0])[None, :] * sheen[:, None]
-    return px
+def greenness(P):
+    return (P[..., 1] - np.maximum(P[..., 0], P[..., 2])) / 255.0
 
 
+# PASS 1 -- measure. A fixed ramp cannot work because the screen's saturation climbs by 9x
+# across the clip while the room's own faint cast stays put, so the thresholds are derived
+# per frame: the screen is the top of the distribution, the room is the middle of it.
+print('measuring...', flush=True)
+hi_s, mid_s = [], []
+for f in files:
+    g = greenness(np.asarray(Image.open(f).convert('RGB')).astype(np.float32))
+    a_, b_ = np.percentile(g, [99.9, 50])
+    hi_s.append(a_)
+    mid_s.append(b_)
+
+
+def smooth(v, w=5):
+    """Moving average. Per-frame thresholds jump around; a jumping threshold flickers."""
+    v = np.asarray(v, np.float32)
+    pad = np.pad(v, (w // 2, w // 2), mode='edge')
+    return np.convolve(pad, np.ones(w) / w, mode='valid')
+
+
+hi_s, mid_s = smooth(hi_s), smooth(mid_s)
+
+# PASS 2 -- process.
 for i, f in enumerate(files):
-    im = Image.open(f).convert('RGB')
-    P = np.asarray(im).astype(np.float32)
-    H, W = P.shape[:2]
-    mask = key(P)
+    P = np.asarray(Image.open(f).convert('RGB')).astype(np.float32)
+    R, G, B = P[..., 0], P[..., 1], P[..., 2]
 
-    if mask.sum() < 50:
-        Image.fromarray(P.astype(np.uint8)).save(os.path.join(OUT, f'{i:04d}.png'), compress_level=1)
-        continue
+    # LO has to clear the room's median by a real margin: at the widest point of the clip
+    # the two are only 3x apart, and keying into the room desaturates the whole office.
+    LO = max(0.55 * hi_s[i], mid_s[i] + 0.025)
+    HI = max(0.85 * hi_s[i], LO + 0.020)
+    a = smoothstep(greenness(P), LO, HI)[..., None]
 
-    # Dilate past the chroma before feathering -- the fill has a hard edge, and replacing
-    # only the keyed pixels leaves a bright green rim right around the tube.
-    alpha = np.asarray(
-        Image.fromarray((mask * 255).astype(np.uint8))
-        .filter(ImageFilter.MaxFilter(7))
+    # What the tube looks like with no beam on it. R and B are untouched by the chroma
+    # fill, so their average is the honest brightness underneath the green -- which makes
+    # this a dark grey mirror that still carries the plate's own shading and reflections
+    # rather than a flat fill.
+    under = ((R + B) * 0.5)[..., None]
+    dead = np.clip(under * 0.92 + 5.0, 0, 255)
+    dead = dead * np.array([0.94, 1.02, 0.99], np.float32)     # the faintest green cast, as glass has
+
+    out = P * (1 - a) + dead * a
+
+    # Despill. Along the tube's anti-aliased edge the greenness sits between LO and HI, so
+    # those pixels are only partly keyed and keep some of their green -- which shows up as a
+    # thin green rim right around the screen. Clamp green to the other two channels across a
+    # slightly dilated band so the edge cannot stay tinted.
+    band = np.asarray(
+        Image.fromarray((a[..., 0] * 255).astype(np.uint8))
+        .filter(ImageFilter.MaxFilter(9))
         .filter(ImageFilter.GaussianBlur(2))
     ).astype(np.float32) / 255.0
+    band = np.clip(band * 1.6, 0, 1)
+    capped = np.minimum(out[..., 1], np.maximum(out[..., 0], out[..., 2]) * 1.03 + 2.0)
+    out[..., 1] = out[..., 1] * (1 - band) + capped * band
 
-    ys, xs = np.nonzero(alpha > 0.004)
-    A = alpha[ys, xs][:, None]
-
-    # Take the room's green cast down. Weighted by distance from the screen, because the
-    # spill is strongest on the nearest desk edges and falls away across the room.
+    # The office was lit by that monitor, so with it off some light has to leave the room.
+    # Driven by how much green was actually removed and blurred wide, so it tracks the
+    # screen as it grows. Kept deliberately gentle: the previous version overdid this and
+    # the relight itself became visible.
     spill = np.asarray(
-        Image.fromarray((mask * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(90))
+        Image.fromarray((a[..., 0] * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(70))
     ).astype(np.float32) / 255.0
-    spill = np.clip(spill * 3.2, 0, 1)[..., None]
+    spill = np.clip(spill * 2.4, 0, 1)[..., None]
 
-    gray = P.mean(axis=2, keepdims=True)
-    out = P * (1 - spill * 0.80) + gray * (spill * 0.80) * 0.66
-
-    # a touch cooler where the spill was, so the room reads as lit by the city not the tube
-    out[..., 2] += spill[..., 0] * 5.0
-    out[..., 0] += spill[..., 0] * 1.5
-
-    dead = dead_screen(mask, ys, xs)
-    out[ys, xs] = out[ys, xs] * (1 - A) + dead * A
+    gray = out.mean(axis=2, keepdims=True)
+    out = out * (1 - spill * 0.45) + gray * (spill * 0.45)
+    out *= (1 - spill * 0.10)
 
     Image.fromarray(np.clip(out, 0, 255).astype(np.uint8)).save(
         os.path.join(OUT, f'{i:04d}.png'), compress_level=1)
@@ -98,7 +117,6 @@ for i, f in enumerate(files):
     if i % 32 == 0:
         print(f'  {i}/{len(files)}', flush=True)
 
-# the landing frame, at delivery resolution, is the plate the terminal beat powers up
 last = Image.open(os.path.join(OUT, f'{len(files) - 1:04d}.png')).convert('RGB')
 last.resize((1920, 1080), Image.LANCZOS).save(os.path.join(HERE, 'plate-off-1080.png'))
 print('done -- plate-off-1080.png written', flush=True)

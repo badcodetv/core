@@ -180,12 +180,43 @@ flat chroma-key fill**, which is exactly what makes it keyable and is *not* some
 ever survive to screen. v1 replaced it only during the terminal beat, so for the first twenty
 seconds the film showed a monitor displaying nothing but chroma green.
 
-`build_screen.py` walks every frame of the push-in, keys the fill, puts a **dead tube** in its
-place, and takes the room's green cast down with it — the office is lit by that monitor, so with it
-off the only light is the city through the glass.
+`build_screen.py` walks every frame of the push-in, keys the fill, and turns the tube off — and the
+room's green cast comes down with it, because the office is lit by that monitor.
 
-**A switched-off CRT is not black.** It is a dark grey mirror with a slight sheen, rendered here in
-the mask's own normalised coordinates so it tracks correctly as the camera closes in.
+### 🔴 Veo ANIMATES the screen brightening, which broke the first two attempts
+
+The finding, and it took a second round of Kai's notes to surface: **the screen's saturation climbs
+about 9× across the push-in.** At frame 1 it is a dim desaturated green; by frame 60 it is fully
+saturated chroma. Measured:
+
+| Frame | Fixed threshold caught |
+| --- | --- |
+| 0–40 | **0%** |
+| 60 | 33% |
+| 90 | 75% |
+| 150 | 94% |
+
+**A partial key on a flat fill is a ragged green blob**, which is exactly what it looked like. Two
+rules came out of it, and the first version broke both:
+
+1. **Soft key, on a ratio, with per-frame thresholds.** No fixed threshold can work when the thing
+   you are keying changes by 9× while the room's own faint cast stays put. So the bounds are derived
+   from each frame's own distribution — the screen is the top of it, the room is the middle — and
+   then **smoothed over time**, because a threshold that jumps frame to frame flickers.
+   ⚠️ `LO` must clear the room's median by a real margin: at the tightest point of this clip the two
+   are only 3× apart, and keying into the room desaturates the whole office.
+2. **Recolour the real pixels; never paste a synthetic screen over them.** Pasting a shape means
+   inventing an edge, and an invented edge does not match the tube's real bezel shadow, corner
+   rounding or anti-aliasing — Kai spotted it instantly as *"a black overlay on the monitor"*.
+   Recolouring keeps every one of those for free.
+
+**A switched-off CRT is not black.** R and B are untouched by the chroma fill, so their average is
+the honest brightness underneath it — which gives a dark grey mirror still carrying the plate's own
+shading and reflections, rather than a flat fill.
+
+**Despill the edge.** Along the tube's anti-aliased boundary the greenness sits between the two
+bounds, so those pixels are only partly keyed and keep some green — a thin green rim right around
+the screen. Green is clamped to the other two channels across a slightly dilated band.
 
 **And it made the scene better.** The monitor now **wakes up** when we arrive — a dot strikes, opens
 to a line, opens vertically, overbrightens, settles, and the prompt fades up. That bookends exactly
@@ -194,7 +225,8 @@ against the switch-off at the other end: same grammar both ways, and two more pl
 ⚠️ **Two plates, and they are not interchangeable.** `plate-1080.png` still carries the chroma fill
 and is what the screen geometry is keyed out of; `plate-off-1080.png` is the processed version and
 is what every terminal frame is built on. The dead-tube pixels are taken **verbatim** from it, which
-is why the push-in→terminal join measures pixel-identical rather than merely close.
+is why the push-in→terminal join measures a mean difference of **0.88/255** — six times quieter than
+two adjacent frames mid-push-in, which differ by 5.25. It is codec noise, not a cut.
 
 ## B4 — the terminal, built in post
 
