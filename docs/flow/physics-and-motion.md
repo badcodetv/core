@@ -48,6 +48,34 @@ Defensive wording, not a technique with its own failure mode. Harmless if it doe
 The last clause earns its place twice over: it is also the anti-morph instruction for a camera
 move, and morphing mid-move is the family our own measured parallax-hinging failure belongs to.
 
+## 2b. 🔴 A camera move past REPEATED objects makes Veo regenerate them — measured, ours
+
+**GPOM cut 3, 2026-08-21.** A dolly straight down an aisle of identical server cabinets. The
+prompt named nothing wrong; the stability clause above was in it. Kai caught it on playback:
+*"the cabinets themselves are animating."* Solid-door cabinets became glass-fronted racks mid-shot,
+and back again.
+
+**The camera move was the bug, not the prompt.** A camera travelling past a rank of near-identical
+objects arrives at faces that were not in the start frame, so Veo has to invent them — and it has
+no obligation to invent the same one twice. Repetition makes this worse, not better: with nothing
+to distinguish cabinet 9 from cabinet 4, there is nothing to hold it to a decision.
+
+**The fix is to take the camera out, not to describe the cabinets harder.** Kai's own note carried
+it: *"all it is is the lights are flickering on and off. That's enough."* Reshot with **no camera
+clause at all** — motion only — the rank held its shape and position over all 192 frames.
+
+So, before writing any move:
+
+| The shot travels past… | |
+| --- | --- |
+| One distinctive subject | Fine. Parallax is what Veo is for |
+| A **rank of near-identical objects** | 🔴 Expect regeneration. Kill the move, or reframe so the rank stays put and something *inside* it moves |
+
+This is the counterweight to rule 0a. Parallax is worth a Veo credit **when there is one subject
+with depth**; over repetition it buys you a morph. And a static frame with real internal motion —
+lights, a vehicle, a crowd — is still a genuine Veo job, so removing the camera does not send the
+shot back to post.
+
 ## 3. Force verbs beat motion verbs
 
 > *"Vague actions result in floaty, weightless movement because the model lacks a sense of force

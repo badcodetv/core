@@ -419,7 +419,14 @@ the structure now; the words we tweak as we go"*).
 # Storyboard — scene-by-scene (video guide)
 
 > **This is the scene-by-scene guide for the story video** — the one Jack
-> produces from. It renders the committed timeline above into shots. Narrator
+> produces from. It renders the committed timeline above into shots.
+>
+> 🔴 **These numbers are canon, not cut order.** Building the film has already
+> reordered it twice — scenes 1–4 collapsed into one location, scene 5 got
+> deferred, scene 6 became the third thing the audience sees. **What actually
+> comes after what lives in [`prompts.md`](./prompts.md) §2c**, and that table
+> is the authority. This file stays as the canon it always was; do not renumber
+> it when the cut moves. Narrator
 > lines marked *(canon)* are verbatim from the beat sheets or the song; lines
 > marked *(draft)* are placeholders in the agreed spirit — improve the words
 > freely, **don't change what the scene does.**

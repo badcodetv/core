@@ -259,6 +259,64 @@ Three more things the tool does, each worth keeping:
 ⚠️ **Do the 1.5× upscale to 1080p here too**, in the same pass — not at concat time, where the
 footage would be resampled twice.
 
+## 3.10 🔴 Put content on a screen in a plate — three things, and only one is the content
+
+GPOM cut 2 and cut 3 both do this: Flow shoots a room with a monitor in it, and post decides what
+the monitor says. It is cheaper than any reshoot and infinitely revisable — the type is editable,
+translatable and cannot be policy-blocked. It also looks pasted on unless you get three separate
+things right, and on cut 3 all three were wrong at once. Kai's verdict on that pass: *"it just
+becomes obviously just a black box overlay… we've not done a great job of embedding the screen
+into the actual bezel."*
+
+**1. Measure the rectangle. Do not detect it.** The detector on cut 3 returned **1100×511 against
+a real panel of 631×350** — it had latched onto the room's dark areas rather than the screen.
+Content painted over a box twice the size of the monitor cannot read as anything but a box, and
+no amount of tuning the type fixes it. Four integers off a luminance probe take one minute:
+
+```bash
+python3 -c "
+from PIL import Image; import numpy as np
+lum = np.asarray(Image.open('plate.jpg').convert('RGB')).astype(float).mean(2)
+print([(x, int(lum[400, x])) for x in range(360, 400, 3)])   # walk across the bezel
+"
+```
+
+The screen is a wide flat plateau; the bezel is a sharp dark trough on either side of it. You are
+looking for where the trough ends. Pass the result in as an argument.
+
+**2. Keep the plate's own speculars.** A black LCD is not black — it reflects the room, and in a
+lit interior it carries the ceiling lights as soft highlights. Those highlights are the only thing
+tying the rectangle to the space it is in, and a flat fill deletes them. Reflectance does not
+change with what is displayed, so they are correct whatever you draw:
+
+```python
+base  = plate[y0:y1, x0:x1].mean(2)
+lowf  = blur(base, 55)                          # the panel's broad shading
+resid = blur(base - lowf + 128.0, 2) - 128.0    # its reflections, sign preserved
+glass = 4.5 + np.clip(resid, 0, None) * 0.85    # near-black, reflections intact
+```
+
+Add an inner rim falloff too (`0.55 → 1.0` over ~14px). Real panels sit darker at the edge, and
+that gradient is most of what sells the seam against the bezel — without it the fill meets the
+bezel as a hard step.
+
+**3. Give the type a margin, and soften it.** Content running to the panel edge is the clearest
+tell there is; every real console overscans. **5.5% each way**, and everything lives inside that
+box. Then blur the finished screen content by ~0.5px: a photographed screen is never pixel-crisp,
+and half a pixel is the difference between type that sits *on* the glass and type that sits *in
+front of* it.
+
+**And light the room with it.** If the plate's monitor was off, turning it on has to add light to
+the desk — but keep the falloff LOCAL. A 150px blur clipped at 6× is not a light pool, it is the
+whole room: on cut 3 it tinted the ceiling, the mezzanine and the far cabinets. Tint by
+multiplying toward a colour (`[1.42, 0.62, 0.64]` for red), never by swapping R and G — a channel
+swap is not a light, it is a bug that happens to look coloured, and on a green-grey room it comes
+out lilac.
+
+Worked example: `docs/stories/gitpush-origin-master/scenes/build_console.py`.
+
+---
+
 ## 4. 🔴 The resolution ceiling — the one real limit
 
 **Flow returns 1376×768 stills and 1280×720 video, whatever model you pick.** Google documents 2K

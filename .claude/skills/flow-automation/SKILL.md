@@ -25,6 +25,14 @@ If you are choosing adjectives, you are in the wrong skill.
 
 ## 0. Before you open the browser at all
 
+🔴 **Every shot starts as a still. Settle the look there, then animate the accepted still.**
+Iterate stills until the frame is right, accept exactly one as the plate, feed it in as
+`startImage`, and prompt **the motion only**. Text→video re-decides the whole look on every roll,
+so you never converge — and the plate is also how you find out whether the move is possible before
+spending a video credit. **Iterating on the look inside video is the most expensive mistake
+available in Flow.** Full method, and the three cases that legitimately break it:
+[`video-prompting.md`](../../../docs/flow/video-prompting.md) §0.
+
 🔴 **Ask: does anything in the world actually move?** Cloth, water, smoke, a crowd, a machine
 turning, a face — or **only the camera**?
 

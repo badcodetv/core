@@ -46,7 +46,7 @@ Same split as [`docs/suno-gpt/`](../suno-gpt/README.md) and the `suno-prompt` sk
 
 ---
 
-## The 18 rules
+## The 19 rules
 
 0a. 🔴 **A camera move through a scene with DEPTH is a Veo job, not a post job.** Post can scale
    and crop one flat image; it cannot invent the far side of a building, so on any subject with
@@ -118,7 +118,11 @@ Same split as [`docs/suno-gpt/`](../suno-gpt/README.md) and the `suno-prompt` sk
     And if Veo refuses a move, ask whether it will do the **inverse**: a push-in reversed in post
     is a rigid pull-back. Plan every shot as *prompt → generate → transform*, so the transform is
     designed rather than improvised. [`post-production.md`](./post-production.md).
-17. **Generate into a scratch folder; commit almost nothing.** A finished 56-second scene cost 42
+17. 🔴 **Never dolly past a rank of near-identical objects — Veo regenerates them.** It has to
+    invent the faces it arrives at and will not invent the same one twice, so the rank morphs
+    mid-shot. Kill the camera move and let something *inside* the frame move instead;
+    `physics-and-motion.md` §2b.
+18. **Generate into a scratch folder; commit almost nothing.** A finished 56-second scene cost 42
     video takes and 22 stills and shipped on **three** of them. Work entirely in the scene's
     scratch folder until a human approves a cut, then commit only the stills Flow generated **as
     images** that a kept clip was built from — never a frame you pulled out of a video, because

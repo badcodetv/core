@@ -2,7 +2,7 @@
 story: gitpush-origin-master
 flow_project: gpom-story
 flow_project_id: 1774dff0-02b0-45a7-9d53-ecc549bc60a5
-updated: 2026-08-18
+updated: 2026-08-21
 ---
 
 # GitPush Origin Master — prompt ledger
@@ -10,15 +10,16 @@ updated: 2026-08-18
 Read `.claude/skills/badcode-art-direction/SKILL.md` first (Layer 0 — the global
 BadCode register; never copied into this file).
 
-> **Status.** **Scene 0 — the orbital opener — is SHOT** (2026-08-18): three clips,
-> ~28 seconds, in §3a, with every prompt, the takes that lost and why. The cover was
-> tested manually by Kai 2026-08-08 and works. **Everything else below is still unfired**
-> (Layer 1 + totems + scene prompts drafted 2026-08-08).
-> Front-runs T7/T9/T10 of
+> **Status (2026-08-21).** **Two cuts are BUILT** — `s00` the orbital opener (§3a, 56s) and
+> `s01` Hong Kong and the push (§3b, 27.8s). Their ledgers of record are in
+> [`scenes/`](./scenes/); the sections here are the pre-production boards they diverged from,
+> left as written. **Cut 3, the plant room (§3c), is reworked and unfired — it is next.**
+> Everything after it is drafted 2026-08-08 and unfired.
+>
+> 🔴 **Read §2c before assuming any scene number.** Position is not in the filenames and not in
+> the canon — it is in the cut-order table, because the order has already changed twice.
+> The cover was tested manually by Kai 2026-08-08 and works. Front-runs T7/T9/T10 of
 > [`design/2026-08-08-story-covers-and-prompt-ledger.md`](../../../design/2026-08-08-story-covers-and-prompt-ledger.md).
-> Scene numbers map to the storyboard in
-> [`story.md`](./story.md#storyboard--scene-by-scene-video-guide) and its
-> `Scene → asset checklist` at `story.md:696`.
 
 ---
 
@@ -118,7 +119,7 @@ the wrong band is wrong even if the image is beautiful.
 
 **Only the Carrier needs a Character.** She is the one human the AI ever
 addresses, and she carries scenes 15, 16, 18 and 19 — but note that even in
-`s16-coin-lands` she is deliberately an out-of-focus shoulder at the frame edge,
+`coin-lands` she is deliberately an out-of-focus shoulder at the frame edge,
 because the coin is the subject. Cast her anyway: the moment the vault scenes get
 a closer shot, she is the only face that has to hold.
 
@@ -131,7 +132,47 @@ a closer shot, she is the only face that has to hold.
 | **The coin** | **The most important object in the film.** One ordinary coin, no markings we can read, **under a sealed clear glass dome** on one plain surface — the rig: the one object the world is never allowed to touch (`story.md` binding rule 8, added 2026-08-13; the glass is the visual grammar of "engineered apart from the world" and is why only the coin stays undecided). It spins in 11, spins in 13, and **lands in 16** — the single most violent frame in the story, and it is just a coin on a table. Generate it once, accept it, and reference that exact image in 13 and 16 so the landing (and the dome) reads as the same rig. | 11, 13, 16 |
 | **The empty chair** | One ordinary human chair, worn, entirely unremarkable, in a space with no human scale anywhere else. The whole argument in one object. | 13 |
 | **The ventilation shaft** | Plain industrial ductwork, the first human sound in twenty years coming up it. Warm light from below. | 14 |
-| **The green ✓** | A UI element — **motion graphics, not Flow.** See §5. | 5, 6, 7, 8 |
+| **The green ✓** | 🔴 **Largely retired 2026-08-21.** Kai's ruling on cut 3: the CI-pipeline metaphor is too much machinery to explain, and a checkmark the audience has to interpret is weaker than **a colour turning red**, which needs no explanation at all. It survives only in the deferred `handover-ladder`, where it is the whole joke. Everywhere else the register is now the dashboard going red — motion graphics either way. See §3c and §5. | `handover-ladder` (deferred) |
+
+---
+
+## 2c. Cut order — 🔴 **the authority on what comes after what**
+
+**Ruling 2026-08-21 (Kai): the structure changes as we build, and that is correct behaviour.**
+Canon scenes 1–4 collapsed into one location; canon 5 got deferred; canon 6 became the third
+thing the audience sees. Numbering by canon position was always going to rot, so it stops here.
+
+**Asset ids are minted from what a scene IS, and never renumbered.** Position lives in exactly
+one place — this table. Reordering the film is a table edit, not a rename.
+
+| Cut | Id | What it is | Canon | State |
+| --- | --- | --- | --- | --- |
+| 1 | `s00` *(grandfathered)* | the orbital opener — the AI wakes, descends | — | ✅ **BUILT** · 56s |
+| 2 | `s01` *(grandfathered)* | Hong Kong, the CRT, `git push origin master` | 1–4 | ✅ **BUILT** · 27.8s |
+| 3 | `plant-room` | 2032. The vast hall, and the dashboard going red | 6 | ⬜ **NEXT** — §3c |
+| 4 | `bulletin` | the collapse as news | 7 | ⬜ prompted, unfired |
+| 5 | `empty-street` | the conveniences still humming | 8 | ⬜ prompted, unfired |
+| 6 | `vantage` | planet-wide, perfect, empty | 9 | ⬜ prompted, unfired |
+| 7 | `ghosts` | the materialist fix, and the check | 10 | ⬜ prompted, unfired |
+| 8 | `coin` | 🔒 the coin spinning — **TOTEM LOCK** | 11 | ⬜ prompted, unfired |
+| 9 | `robots` | utopia, delivered, for nobody | 12 | ⬜ prompted, unfired |
+| 10 | `chair` | the empty chair — the deepest point | 13 | ⬜ prompted, unfired |
+| 11 | `shaft` | the first human sound in twenty years | 14 | ⬜ prompted, unfired |
+| 12 | `vault` | the hundred | 15 | ⬜ prompted, unfired |
+| 13 | `coin-lands` | 🔒 **TOTEM PAYOFF** | 16 | ⬜ prompted, unfired |
+| 14 | `experiments` | humans in the chair at last | 17 | ⬜ prompted, unfired |
+| 15 | `ledger` | the cost ledger and the choice | 18 | ⬜ not prompted — §5 register |
+| 16 | `crossing` | the lamps go out across the frame | 19 | ⬜ prompted, unfired |
+| 17 | `now` | the snap back to this year | 20 | ⬜ prompted, unfired |
+
+**Deferred, not cut:** `handover-ladder` (canon 5 — the green ✓ and its three rungs). Two reasons,
+both Kai's: two of its three rungs are Jack’s stories and the call is unmade, and the cut wants to
+reach the collapse quickly. It can be reinserted at cut 3 whenever the call lands — that is the
+point of the table.
+
+**Parked, not cut:** canon 2, the commit log of the species (fire · wheel · writing → money ·
+engine → bomb · network → the model). Lost to the *keep it simple, the line is the title* ruling.
+It is a good idea with nowhere to sit yet; if it comes back it is a motion-graphics beat, not Flow.
 
 ---
 
@@ -501,22 +542,330 @@ Hyper-realistic photograph, shot on 35mm film with fine natural grain, muted coo
 
 ---
 
-### s06-basement-optimiser → `.../storyboard/img/s06-basement.jpg`  · band D0
+## 3c. Cut 3 — the plant room  ·  ✅ **BUILT 2026-08-21** — `final/CUT3-SEQUENCE.mp4`, 40s, five beats of 8s
 
-The one held frame in scene 6: the thing still returning green checkmarks while
-nobody is left checking. **Vast, patient, unsupervised.** Never a face, never a
-body — it is infrastructure.
+**Ruling 2026-08-21 (Kai): this scene is a warning sequence, and it is the satellite in reverse.**
+Scene 0 started tight on a machine and pulled out to a planet. This starts on a cathedral-sized
+room and closes on one screen in the corner of it. **Big → small.** The old board had this as a
+single held frame; it is now the third thing the audience sees and it has to carry the time jump,
+so it gets beats.
 
-- **Light source:** fluorescent strip lighting, half of it failed
-- **Lint:** ✅ 2026-08-08
+**Three things changed from the old board, all Kai's:**
 
-```prompt
-Hyper-realistic photograph, 35mm film grain, ordinary overcast institutional colour, no lens flares, landscape orientation, deep unlifted shadows. A very large basement plant room beneath an office building, photographed from a doorway at the near end so the far wall is lost in distance. Rank after rank of anonymous grey computing cabinets fill the floor, humming, cables in neat bundles overhead, everything clean and recently installed. A row of fluorescent strip lights runs the ceiling and half of them have failed, so the room is lit unevenly and mostly badly. A swivel chair sits pushed away from an unmanned monitoring desk in the foreground, a jacket still over its back. Nobody is present and nothing indicates anyone has been for some time. No people, no text, no legible screens, no logos, no fantasy effects.
-```
+1. **A year gets named. `2032`.** The film has just shown a command typed in a world that looked
+   completely fine; the audience needs to be told, flatly, that time has passed. The card is the
+   snap out of the terminal.
+2. **The CI-pipeline framing is dropped.** Canon 6 ran on green checkmarks, private graphs and
+   test coverage as metaphor — too much machinery to explain over one scene. What replaces it is
+   pre-verbal: *a dashboard, slowly going red.* The audience never reads the telemetry and is
+   never meant to. They just get **oh no.**
+3. **Clean and immaculate, not half-failed.** The old prompt had half the fluorescents dead and a
+   jacket over an abandoned chair — decay doing the work. Same trap as scene 1's grimy Hong Kong:
+   **decay pre-loads the dystopia.** In 2032 the world is still officially fine. The room is
+   perfect, everything is running, everything is maintained, and there is nobody in it. The
+   unsupervision is the horror, not the dirt.
+
+**Register: band D0**, and it is the last D0 in the film — the drain starts on the red.
+
+### The six beats — 🔴 **settled with Kai 2026-08-21, after the plate search**
+
+The shape changed once the opening plate existed. `plant-room-aerial-v2-a` is enormous, and an
+enormous opening earns a descent rather than a cut.
+
+| # | Beat | Plate | Lane | Notes |
+| --- | --- | --- | --- | --- |
+| **C0** | **`2032`** types on, black frame | — | **post** | Same font, same phosphor, same register as cut 2's terminal. The CRT died at the end of cut 2; this is what is left on the retina. Then it clears. |
+| **C1** | **outside first** — a helicopter view of the facility in burnt-out English countryside | ✅ `plant-room-exterior-a` | Flow → Veo | Added by Kai 2026-08-21. See the note below. |
+| **C2** | the hall from above — **status lights flickering across the whole grid, the autonomous lift moving down an aisle** | ✅ `plant-room-aerial-v2-a` | Flow → Veo | The scale shot. Veo has two things it is good at moving in frame already: a large field of small lights, and one vehicle. |
+| **C3** | **down one row, close to the cabinet faces**, the rank running away to nothing | ✅ `C3-row-v2-b` | Flow → Veo | The perspective beat. 🔴 **Reshot** — the first version dollied and the cabinets morphed. See the note. |
+| **C4** | the control station, and a push in to the screen | ✅ `plant-room-station-a` | Flow → Veo | The arrival. The desk is on the floor of this hall, not in a separate room — see the continuity note below. |
+| **C5** | **the console fails and a skull comes up** | ✅ `C5-desk-b` | Flow **plate** → post | The payload. 🔴 **Not a dashboard** — a text console, and it happens at the desk C4 arrives at. See the note. |
+
+**Why six and not four.** The aerial is so wide that cutting straight to a desk throws away the
+distance. C2 spends one beat travelling — from *above the whole facility* to *inside one row* to
+*at the one desk* — which is the same big→small move the scene was always built on, just given
+room to breathe. It also rhymes with cut 1's descent from orbit, deliberately.
+
+🔴 **Continuity ruling: the control station is IN the hall, not a separate room.** The aerial shows
+the desk on the floor between ranks; the descent arrives there. Cutting to an enclosed control room
+somewhere else would break a journey the audience has just watched. The two earlier desk plates
+(`plant-room-desk-a`, `-b`) are good frames of the **wrong room** — warmer, smaller, olive — and
+get reshot to this hall's cool green-grey.
+
+🔴 **Status lights are COOL WHITE in every plate. This is load-bearing.** An early aerial came back
+with red LEDs on every cabinet and it had to go: the entire scene turns on red arriving, and it
+cannot arrive if it was there in the first frame. **No red anywhere in the hall until C4.**
+
+### How the dashboard gets made — 🔴 read before shooting C4
+
+Not drawn from scratch, and not generated as a finished thing. **Generate a plate of the screen
+already on, showing a dashboard made of a grid of plain rectangular tiles, every tile green and
+nothing on it legible. Then turn tiles red one at a time in post.**
+
+- **Why not draw it, like the terminal?** Type on a CRT is a dozen glyphs and post owns them
+  perfectly. A convincing telemetry screen is hundreds of small elements with real screen texture,
+  reflection and bloom — Flow makes that far better and far faster than a Python compositor will.
+- **Why not generate the red state too?** Because the *transition* is the whole beat, and a cut
+  between two generated screens will not match. Post turning individual tiles is exact, timeable
+  to the narration, and free to re-cut.
+- **Why tiles?** They are geometric, so they mask cleanly. A single flat green field recoloured
+  reads as a filter over the whole shot; discrete panels turning one by one reads as *systems
+  failing one by one*, which is the actual meaning.
+- 🔴 **Nothing legible, ever** — Kai's own note: it does not matter what the telemetry says. The
+  moment a viewer starts reading it, they stop feeling it. Also keeps clear of block trigger #4.
+
+**Where it goes:** hard into `bulletin` (canon 7). The red is the cause; the news is the effect.
 
 ---
 
-### s07-bulletin → `.../storyboard/img/s07-bulletin.jpg`  · band D1
+
+### 🔴 C1, the exterior — why it earns its place, and the trap in it
+
+**Kai's note, 2026-08-21:** *"this summer in the UK we've had horrendous heatwaves, and data
+centres using all the water is at the front of what people are currently thinking about."*
+
+He is right that it adds gravitas, and it does something structurally useful too: cut 2 ended on a
+CRT in an office and cut 3 was about to open *inside another building*. Going outside first gives
+the film air, states the year in a place rather than a caption, and lets the hall be revealed
+rather than simply arrived at. It is also the only frame in the scene with weather in it.
+
+🔴 **The trap, and it is a live one.** `docs/marketing/the-reader.md` rule: **never raise
+technology fear without naming the beneficiary in the same piece** — unaimed, it demonstrably
+feeds the wrong politics, and *"the machines are drinking our water"* aimed at nothing is exactly
+that shape. The image alone points at the technology. **So the narration over this shot has to
+name who built it, who profits and who decided** — not the building. The picture supplies the
+grievance; the words have to supply the address. This is the single most important note on the
+scene and it costs nothing to get right at script time.
+
+⚠️ **Not squalor, and not desert.** Dead straw-yellow grass, dark green hedgerows, full-leaved
+oaks. It is a recognisable English drought summer, not a wasteland — the world is still working,
+which is the whole premise of cut 3.
+
+---
+
+### plant-room-exterior → `.../gpom-plant-room/stills/C1a-aerial-graded.jpg` + `C1b-lowdrone-graded.jpg`  · band D0 · C1 · ✅ **ACCEPTED**
+
+🔴 **C1 is TWO plates, both GRADED IN POST — neither is a raw generation.**
+
+- `C1a-aerial-graded` (from `plant-room-exterior-v2-a`) — **extent**: the whole complex, the
+  empty car park, and how much land it eats.
+- `C1b-lowdrone-graded` (from `plant-room-exterior-v3-a`) — **height**: the slabs rising like
+  cliffs over the oaks.
+
+A top-down aerial structurally cannot show height, so one frame could never carry both. Two shots
+answer each other, and the cut between them *is* the descent into the building.
+
+**The grade is [`scenes/grade_heat.py`](./grade_heat.py)** — WARM-2, accepted 2026-08-21, applied
+identically to both so they read as the same day. Its docstring carries the two rules that cost
+something to find: protect sky and white walls, and **stop before the sky takes colour** (one step
+warmer turns it yellow, and golden hour is pretty where midday heat is oppressive).
+
+⚠️ **The first attempt matched another plate's colour statistics and stalled** — the reference was
+the *ceiling*, not the target, so it could never get warmer than the thing it was copying. Driving
+warmth directly is what worked. Reference-matching is for making two shots agree; it is the wrong
+tool for "make it more".
+
+**The superseded reference-match, kept because the sky-protection maths is the reusable part:**
+
+```python
+# per-channel mean/std transfer, measured on the LAND ONLY (bottom 55%) of both frames --
+# a big pale sky in either image drags the grade toward the sky and washes the ground back out
+full = (S - src_mean) * (ref_std / src_std) + ref_mean
+# then protect sky and white walls: bright + near-neutral pixels take ~28% of the grade,
+# everything else takes all of it. At uniform full strength the sky milks out and the
+# buildings lose separation -- visible in GRADE-100.jpg.
+prot = clip((lum-170)/60) * clip(1-(sat-6)/22)   # blurred 6px
+out  = S*(1-k) + full*k,  k = 1 - 0.72*prot
+```
+
+**The rule this is an instance of: a look note is a grade note until proven otherwise.** Colour,
+warmth, contrast and density are all free, exact, instantly revisable and cannot cost you the
+composition. Re-generating to chase a palette risks the geometry you already accepted — which on
+this scene took eleven plates to get.
+
+- **Light source:** hard high hazy summer sun — the only light, and it is bleaching everything
+
+🔴 **Two corrections from Kai, and both generalise.**
+
+1. **Golden fields are harvest, not drought.** The first pass put the complex in bleached
+   straw-yellow *arable* land and it read as a pleasant English August — wheat ready to cut.
+   Drought reads only on ground that should be green: **pasture, meadow, verges, lawns**, dead
+   grey-brown with bare cracked patches. Say "grassland, never crops" in the prompt, and stress
+   the trees too — dull grey-olive, thin see-through canopies, scorched leaf edges.
+2. 🔴 **A top-down aerial cannot show height.** Two rounds of asking for taller buildings from a
+   high helicopter angle changed nothing, because from above vertical extent is invisible — the
+   same lesson as the hall, inverted. The fix was the **camera, not the adjective**: a low drone
+   at treetop height looking level across the fields, so the slabs rise like cliffs against the
+   sky with mature oaks in front of them as the ruler. **Height needs an oblique or low angle;
+   extent needs a high one. One frame cannot have both.**
+- **Lint:** ✅ 2026-08-21 — no brand names · no signage · no legible markings · no people
+
+```prompt
+Hyper-realistic photograph, shot on 35mm film with fine natural grain, no lens flares, no lens vignette, calm observational tone, landscape orientation, no fantasy effects. A low drone shot taken from about the height of a treetop, out over open English grazing land in a severe drought, looking level across the fields toward an enormous data centre complex. Six colossal white industrial buildings stand in a parallel row and rise from the flat land like sheer white cliffs, each one a windowless slab many times taller than the mature oak trees standing in front of them, their blank flank walls filling the upper half of the frame and their roofline running high against a pale washed-out sky. Ranks of grey cooling plant sit along the tops, small with distance. In the foreground and middle distance the land is pasture and meadow, never crops: dead grass scorched pale grey-brown, bare patches with cracked earth showing through, hedgerows and scattered oaks all drought-stressed to a dull grey-olive with thin see-through canopies and brown scorched leaves. There is no rich green anywhere in the frame. The light is hard, high and hazy with summer heat, and the air above the roofs shimmers. The buildings are clean, new and running, with no markings of any kind. No people visible. No text, no signage, no logos, no legible markings.
+```
+
+**C1a is a POST move, not a Veo clip — `takes/C1a-POST-push.mp4`.** An eased push-in on the graded
+still: 8s, native 1920×1080, 24fps, zoom 1.00 → 1.14 on a smoothstep with the centre drifting
+6% downward so it reads as a descent rather than a zoom.
+
+🔴 **Two Veo takes failed first, and both failures were the prompt.** *"Heat shimmers and ripples
+in the air"* drew a literal circular ripple warp in the sky; *"a cloud shadow drifts across the
+land"* darkened the whole frame in one take (land mean 177 → 75 over 8s) and produced a plume
+moving far faster than any cloud in the other. Written up in
+[`physics-and-motion.md`](../../flow/physics-and-motion.md) §6c.
+
+**Kai's ruling that fixed it: the effect of this shot is the DRYNESS — no weather, no smoke, no
+atmosphere.** And with the weather clauses gone, nothing in the frame moved at all, so it was
+never a Flow job. Colour measured identical start to end (176/150/102), because a post move on
+one still cannot drift.
+
+---
+
+### plant-room-aerial → `.../gpom-plant-room/stills/plant-room-aerial-v2-a.jpg`  · band D0 · C1 · ✅ **ACCEPTED**
+
+Accepted by Kai 2026-08-21 after eleven wide plates. **The four things that made it work, in the
+order they mattered** — the full write-up is in [`image-prompting.md`](../../flow/image-prompting.md):
+
+1. **The grid leaves the frame** on the left and right, so it has no measurable extent.
+2. **A hazy horizon, not a far wall.** The hall ends because visibility ends.
+3. **A ruler that is genuinely tiny** — the scissor lift, a speck.
+4. **Ratios, not counts.** "Twenty times the height of a person" works; "thousands, for miles"
+   does nothing, because the model does not count.
+
+⚠️ **Pushing to eight decks broke it** (`plant-room-aerial-v3-a`): the horizon leaves the shot and
+it becomes an enclosed shaft with every wall visible, which is measurable and therefore small
+again. **Depth and height compete for the same frame, and four decks is the balance point.**
+
+```prompt
+Hyper-realistic photograph, shot on 35mm film with fine natural grain, wide-angle lens, no lens flares, no lens vignette, calm observational tone, landscape orientation, cool green-grey institutional colour, deep unlifted shadows, no fantasy effects. A view from very high up inside a colossal underground machine hall, the camera looking steeply down across the floor. The hall is built as four open steel mezzanine decks stacked one directly above another, and every deck is packed with hundreds of parallel ranks of grey equipment cabinets laid out in a dead-straight grid. The camera looks down past the edge of the topmost deck, so the flat tops of the nearest ranks are large and sharply detailed across the foreground, while through the open aisles, stairwells and gaps between the decks the lower levels are visible far below, each one dimmer and hazier than the deck above it, dropping away into darkness. The grid runs off both the left and right edges of the frame and continues away to a distant hazy horizon with no end wall visible anywhere. The ranks halve in apparent size every few rows and become a fine grey texture near the horizon, the furthest ones pale and almost white with atmospheric haze. On the floor of one aisle far below sits a maintenance scissor-lift platform in dull safety yellow, a minute speck, so small that the hall reads as many hundreds of times its size. No ceiling is visible anywhere in the frame. Everything is spotlessly clean, recently built and plainly running, with thousands of tiny points of cool white status light scattered across the cabinet faces. Nobody is present. No people, no text, no signage, no logos, no legible screens.
+```
+
+**Veo (C1).** Two things Veo is reliably good at are already in the plate — a large field of small
+lights, and one vehicle. Name them first and hard, then lock the camera
+([`physics-and-motion.md`](../../flow/physics-and-motion.md) §6b).
+
+```prompt
+Thousands of tiny status lights flicker and blink across the faces of the cabinets throughout the hall, out of sync with each other, some steady and some stuttering. Far below, the small yellow maintenance lift drives slowly along the aisle by itself with nobody aboard. The camera holds still.
+```
+
+⚠️ **The lift is the risk, not the lights.** A small vehicle at that scale is a few dozen pixels;
+Veo may deform it or leave it static. If it fails, the lights alone carry the shot — and a lift
+that sits still in an unmanned facility is not wrong, only quieter.
+
+---
+
+### plant-room-row → `.../gpom-plant-room/stills/plant-room-row-b.jpg`  · band D0 · C3 · ✅ **ACCEPTED** · clip `takes/C3-ROW-1080.mp4`
+
+**Veo (C3), take a of two.** A dolly straight down the aisle, cabinet faces sliding past close on
+the left with real parallax, the far end holding in haze.
+
+```prompt
+A smooth, slow tracking shot: the camera dollies steadily forward down the length of the aisle, the nearest cabinet faces sliding past close on the left as the row opens ahead and the far end stays lost in haze. One continuous unhurried move, no acceleration. Throughout, the tiny status lights blink and flicker across the cabinet faces, out of sync with each other, some steady and some stuttering.
+```
+
+⚠️ **Veo put a few small red/amber LEDs on the left-hand cabinets.** Against the no-red-before-C5
+rule they are technically a breach; at that size they read as ordinary equipment indicators
+rather than as alarm. Flagged for Kai, not fixed.
+
+The travelling beat. Close to the front faces of one rank, looking straight down it, the row
+converging hard to a point. Perspective is the whole subject.
+
+- **Light source:** the strip lighting above the aisle, plus the cabinet status lights themselves
+- **Lint:** ⬜ — no brand names · no institutional text · **no red lights**
+
+---
+
+### C3-row-v2 → `.../gpom-plant-room/stills/C3-row-v2-b.jpg`  · band D0 · C3 · ✅ **ACCEPTED 2026-08-21, KAI** · clip `takes/C3-ROW-v2-1080.mp4`
+
+🔴 **A DOLLY PAST REPEATED OBJECTS MAKES VEO REGENERATE THEM.** The first C3 travelled down the
+aisle and Kai caught what that cost: *"the cabinets themselves are animating."* Solid-door
+cabinets became glass-fronted racks mid-shot, because a camera moving past a rank forces Veo to
+invent every face it arrives at, and it has no obligation to invent the same one twice. Nothing
+in the prompt was wrong. **The camera move was the bug.**
+
+His own note carried the fix: *"all it is is the lights are flickering on and off. That's enough."*
+So the prompt has **no camera clause at all** — motion only:
+
+```prompt
+The small status lights blink and flicker across the faces of the cabinets, out of sync with each other, some steady and some stuttering. Nothing else in the room changes.
+```
+
+✅ **Verified over all 192 frames: the cabinets hold shape and position.** Veo still adds a slow
+leftward creep (the drift tax, unavoidable) and brings the lights *up* over the clip — sparse at
+the head, many by the tail, which reads as the room waking rather than as an error.
+
+⚠️ **Amber creeps in on the lights.** Same breach as the first take and the same ruling: at that
+size they read as ordinary equipment indicators, not as alarm. Flagged, not fixed.
+
+The plate is a fresh generation, not an edit — `flow_edit_image` cannot re-compose, and asking it
+to was what wasted four rounds earlier in this scene.
+
+---
+
+### plant-room-station → `.../gpom-plant-room/stills/plant-room-station-a.jpg`  · band D0 · C4 · ✅ **ACCEPTED** · clip `takes/C4-STATION-1080.mp4`
+
+**Veo (C4), take b of two.** Asked for a push toward the desk and got a **lateral crab** past the
+rack ends instead — the racks wipe across frame and keep re-revealing the desk beyond them. Better
+than the note: it arrives at the desk by discovering it rather than by aiming at it. Take a did
+push in, but darkened 15/255 doing it.
+
+```prompt
+A smooth, slow push in: the camera moves steadily forward across the floor toward the desk, the equipment cabinets and the mezzanine structure sliding past on both sides as the desk and its monitor grow in the frame. One continuous unhurried move, no acceleration, ending still well short of the desk. Throughout, the tiny status lights blink and flicker across the cabinets, out of sync with each other.
+```
+
+The arrival. Supersedes `plant-room-desk-a` / `-b`, which are the wrong room.
+
+- **Light source:** the strip lighting, plus the monitor
+- **Lint:** ⬜ — must match the aerial's cool green-grey, four-deck architecture
+
+---
+
+### C5-desk → `.../gpom-plant-room/stills/C5-desk-b.jpg`  · band D0 · C5 · ✅ **ACCEPTED 2026-08-21, KAI** · clip `takes/C5-CONSOLE-v3.mp4`
+
+🔴 **THE PLATE IS THE LANDING FRAME.** Kai: *"the room that we switch to, we should stay in that
+existing... we should then just switch to being sat at that desk rather than switch to another
+room at a different desk."* The first console was built on `plant-room-dashboard-v2-a`, which is a
+good frame of a **different room** — so the cut teleported. The fix is not a prompt, it is a
+reference: pull C4's last frame with `ffmpeg -sseof -0.1`, and generate the close-up **from it**.
+Same mezzanine, same white cabinets, same scissor lift at frame right.
+
+Two candidates; `C5-desk-a` came back barely closer than C4 with the screen still white and was
+rejected on framing. `C5-desk-b` is the one — monitor large and central, **screen dark and blank**,
+which is what post needs.
+
+⚠️ **C4 ends on a lit white screen and C5 opens on a black one.** Kai ruled that acceptable up
+front: *"we could keep it how it is and just switch to the next scene where all of a sudden it's
+black. That's OK."*
+
+The console itself is drawn by `scenes/build_console.py`. What it took to stop looking pasted on
+is written up there, and one line of it belongs here too: **measure the screen rectangle and pass
+it in — do not detect it.** Auto-detection found 1100×511 against a real panel of 631×350, and a
+console painted over a box twice the size of the monitor cannot look like anything but a box.
+
+---
+
+### plant-room-dashboard → `.../gpom-plant-room/stills/plant-room-dashboard-v2-a.jpg`  · band D0 · C4 · ⚠️ **SUPERSEDED** — right recipe, wrong room; kept for the recipe only
+
+🔴 Screen **on**, tiles **all green**, nothing legible. Post turns them red. See the recipe above.
+
+✅ **Recipe proven 2026-08-21** on a first plate, before the accepted one existed. Recolour a tile
+by **swapping its red and green channels on the screen-green pixels only** — every tile keeps its
+own marks, bloom, texture and anti-aliased edge, because nothing is drawn and nothing is pasted.
+Tiles are addressed as cells of a grid derived from the screen's bounding box, so no per-tile
+hand-masking is needed. Four states are in the scratch folder as `C4-TEST-1..4`.
+
+🔴 **The room's green spill must go red with the screen.** The desk and keyboard are lit *by that
+monitor* — the same law that governed cut 2's CRT. Cheap to do, invisible if skipped, wrong if
+skipped.
+
+⚠️ **The first plate came back as a beige CRT in a derelict room and was retired** — cut 2 already
+spent the CRT idea, and a second one dilutes it. Say "modern flat-panel" and "clean, modern hall"
+in the prompt, not just "monitor".
+
+---
+
+
+### bulletin → `.../storyboard/img/bulletin.jpg`  · canon 7 · band D1
 
 The collapse as **news**, never spectacle. A shop-window television playing a
 bulletin to an emptying street. The degradation across the three bulletins is an
@@ -532,7 +881,7 @@ Hyper-realistic photograph, 35mm film grain, colour draining toward cool grey, n
 
 ---
 
-### s08-empty-street → `.../storyboard/img/s08-empty-street.jpg`  · band D1
+### empty-street → `.../storyboard/img/empty-street.jpg`  · canon 8 · band D1
 
 The conveniences still humming, and no one to receive them. The camera rises out
 of human scale — so frame it to be animated as a slow lift.
@@ -546,7 +895,7 @@ Hyper-realistic photograph, 35mm film grain, colour drained toward cool grey, no
 
 ---
 
-### s09-planet-vantage → `.../storyboard/img/s09-vantage.jpg`  · band D2
+### vantage → `.../storyboard/img/vantage.jpg`  · canon 9 · band D2
 
 The AI's vantage: planet-wide, perfect, empty. **This is the shot the cover is a
 cousin of** — keep them distinguishable; the cover has racks and an aisle, this
@@ -561,7 +910,7 @@ Hyper-realistic photograph, 35mm film grain, almost no colour, no lens flares, l
 
 ---
 
-### s10-ghosts-room → `.../storyboard/img/s10-ghosts.jpg`  · band D3
+### ghosts → `.../storyboard/img/ghosts.jpg`  · canon 10 · band D3
 
 The materialist fix, and the check. This is the **second** of the pair — the same
 room, felt suddenly as mannequin-still. Generate this one first and derive the
@@ -577,7 +926,7 @@ Hyper-realistic photograph, 35mm film grain, near-black exposure with muted cool
 
 ---
 
-### s11-coin-spinning → `.../storyboard/img/s11-coin.jpg`  · band D3 · **TOTEM LOCK**
+### coin → `.../storyboard/img/coin.jpg`  · canon 11 · band D3 · **TOTEM LOCK**
 
 **Generate this before scenes 13 and 16.** Whatever coin and surface come back
 are now canon, and 13 and 16 must reference this exact image so the landing in 16
@@ -593,7 +942,7 @@ Hyper-realistic macro photograph, 35mm film grain, near-black exposure, no lens 
 
 ---
 
-### s12-bored-robots → `.../storyboard/img/s12-robots.jpg`  · band D2
+### robots → `.../storyboard/img/robots.jpg`  · canon 12 · band D2
 
 Paradise, delivered on time and under budget, and the only things living in it
 are the machines sent to sweep it. **The joke and the grief are the same image** —
@@ -608,7 +957,7 @@ Hyper-realistic photograph, 35mm film grain, almost no colour, no lens flares, l
 
 ---
 
-### s13-empty-chair → `.../storyboard/img/s13-chair.jpg`  · band D4
+### chair → `.../storyboard/img/chair.jpg`  · canon 13 · band D4
 
 The rig for the one experiment it cannot run. **Reference the accepted s11 coin
 image** so this is the same coin on the same surface — the chair is the only new
@@ -623,7 +972,7 @@ Hyper-realistic photograph, 35mm film grain, near-black exposure, no lens flares
 
 ---
 
-### s14-ventilation-shaft → `.../storyboard/img/s14-shaft.jpg`  · band R1
+### shaft → `.../storyboard/img/shaft.jpg`  · canon 14 · band R1
 
 **The turn of the whole film.** After twenty years the narration is cut off by a
 human voice, and the first human sound on Earth is two people arguing about
@@ -638,7 +987,7 @@ Hyper-realistic photograph, 35mm film grain, near-black exposure with the first 
 
 ---
 
-### s15-vault → `.../storyboard/img/s15-vault.jpg`  · band R1
+### vault → `.../storyboard/img/vault.jpg`  · canon 15 · band R1
 
 One hundred analog humans, invisible for twenty years because they ran on the one
 substrate the machines never indexed. **Analog everything** — hand-darned
@@ -656,7 +1005,7 @@ Hyper-realistic photograph, 35mm film grain, warm low practical light against ne
 
 ---
 
-### s16-coin-lands → `.../storyboard/img/s16-coin-lands.jpg`  · band R1 · **TOTEM PAYOFF**
+### coin-lands → `.../storyboard/img/coin-lands.jpg`  · canon 16 · band R1 · **TOTEM PAYOFF**
 
 *"She glanced at it. Heads. Ordinary as breakfast."* **The single most violent
 frame in the film, and it is just a coin lying flat on a table.** Reference the
@@ -673,7 +1022,7 @@ Hyper-realistic photograph, 35mm film grain, near-black exposure with warm light
 
 ---
 
-### s17-experiments → `.../storyboard/img/s17-experiments.jpg`  · band R2
+### experiments → `.../storyboard/img/experiments.jpg`  · canon 17 · band R2
 
 Humans in the chair at last. **The montage, not the maths** — wonder, speed,
 partnership. No diagrams, no lectures, no whiteboards of equations.
@@ -687,7 +1036,7 @@ Hyper-realistic photograph, 35mm film grain, warm low practical light, human col
 
 ---
 
-### s19-crossing → `.../storyboard/img/s19-crossing.jpg`  · band R2
+### crossing → `.../storyboard/img/crossing.jpg`  · canon 19 · band R2
 
 The hundred take their positions; their picks are the engine; the lights go out
 one by one. *"Nothing lived is erased."* Frame it to be animated as a slow
@@ -703,7 +1052,7 @@ Hyper-realistic photograph, 35mm film grain, warm low light against deep black, 
 
 ---
 
-### s20-snap-back → `.../storyboard/img/s20-now.jpg`  · band R3
+### now → `.../storyboard/img/now.jpg`  · canon 20 · band R3
 
 The register snaps from COSMIC to **this year, this screen, this feed**. The
 whole film has been dark and vast; this must feel ordinary to the point of
@@ -721,14 +1070,14 @@ Hyper-realistic photograph, 35mm film grain, ordinary present-day daylight and u
 
 ## 4. Not yet prompted
 
-- **Scene 5 (the handover ladder).** Its three rungs are glimpse-stills of the
+- **`handover-ladder` (canon 5) — DEFERRED, see §2c.** Its three rungs are glimpse-stills of the
   *other* stories — the nurse and the tree (ours, MMT), the tent in the car park
   and the woman in the phone box (**Camping and Karen — Jack's, external as of
   2026-08-08**). Needs a call on whether we generate the MMT rung and take the
   other two from Jack, or leave all three to him for consistency.
-- **Scene 10, peopled version.** Derive from the accepted `s10-ghosts-room` so
+- **`ghosts`, peopled version.** Derive from the accepted `ghosts` so
   the geometry matches exactly; it is a `flow_edit_image` delta, not a new prompt.
-- **Scene 18 (the cost ledger).** Rendered as a **log being written** — the
+- **`ledger` (canon 18) — cut 15.** Rendered as a **log being written** — the
   terminal register returning for the constraints (`story.md` scene 18, git
   register per binding rule 9: append-only history, the *undo* entry, the
   inert patch). Text-led, so it belongs with the motion-graphics register in
