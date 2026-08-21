@@ -532,6 +532,22 @@ half", "the guitar drops out here", "heavier than the first drop", and the anti-
 louder. Thinning repetition on the exact thing you are boosting is two changes fighting.
 Drop the duplicate the round *after* it works.
 
+**Second filter, and it is the one that actually gets you near 80 characters.** Scoping
+alone still left Camping's verse cue at 693 — eight times the guideline. Add a second
+test: **is this clause already implied by the Style box's arrangement sentence?** A Style
+box that spells out the track's steps in order (`Four steps: … then … then …`) is a full
+arrangement spec, and cues tend to restate it clause for clause. Filtering on *both* tests
+took verse 1 from 693 to **311**, and every cue in the song from 2,469 to 1,657.
+
+What that left, and it is a good shape to aim for: **the voice label, the one thing the
+Style box cannot say (where a step boundary falls *inside* a section), and any guard bought
+with a failed round.** Everything else was the Style box in different words.
+
+**Where to stop.** Keep cutting while you can name the reason each clause fails. When every
+remaining clause has a stated reason to exist, stop — the next cut is a bet, not a decision,
+and it should be settled by a generation. Archive the previous set as a revert target and
+put it back one cue at a time if the arrangement regresses.
+
 ### Making a fill or a one-off event audible
 
 Two failures produce a fill nobody can hear, and both are worth checking before rewording.

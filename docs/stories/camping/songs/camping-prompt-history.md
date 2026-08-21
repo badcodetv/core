@@ -609,3 +609,25 @@ the *next* thing to try once the casting is settled.
 - [Can Suno Use Multiple Personas in One Song? Duets, Bands, and AI Casts](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/can-suno-use-multiple-personas-duets-bands-ai-casts)
 - [Suno Duet & Harmony Guide: Vocal Roles, Labels & Fixes (2026)](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/duet-harmony-theme-meta-tags-suno)
 - [Suno Song Structure: Brackets, Vocal Tags & Lyric Formatting](https://paddystudio.com/blog/suno-song-structure-and-vocal-tags/)
+
+---
+
+## Round 15 cues — the revert target for the round-16 trim
+
+Round 16 cut every lyric cue to clauses that are **section-scoped and not derivable
+from the Style box's `Four steps:` sentence** (reasoning in the live sheet, §4e). Verse 1
+went 693 → 311 characters. If a take regresses on arrangement, paste these back one cue
+at a time — **verse 1 first**, and expect the synth stab and the guitar-entrance clause to
+be the two that matter.
+
+```
+[Intro — 8 bars | one long low detuned synth note, completely alone, held and slowly filtering open, cold and menacing | a texture, not a tune: no melody, no notes changing | distant city hum far underneath | no drums, no bass, no guitar]
+[Verse 1 | gravelly ranting voice — a weathered British man in his fifties, low, smoke-worn, nasal, half-shouted and half-muttered, close and bone dry | the low synth note holds underneath | the palm-muted distorted guitar riff comes in with the voice and runs the whole verse, the same short figure repeating | no drums and no bass for the first half of this verse, then a dry chopped breakbeat comes in under the vocal and runs to the drop, with chopped amen rolls tearing across every fourth bar, snares tumbling over each other, loud up front | a short hard synth stab starts repeating once the beat is in | the words never stop and there is no instrumental passage anywhere in this verse]
+[Drop — instrumental, 16 bars, no vocals | the kit hits full weight and the sub bass drops for the first time, heavy Reese, dark and relentless | chopped amen rolls tearing across every fourth bar, snares tumbling over each other, loud up front | the guitar drops out here | the screaming detuned wavetable lead tears in over the break, cutting against the drums]
+[Verse 2 | well-spoken posh voice — a completely different man, same age, light, crisp, plummy BBC English, talking down at you, unhurried, smug and mocking, from a wide open room | full-weight drum and bass carries straight on, drums flip, colder synths, sharper hats | chopped amen rolls tearing across every fourth bar, snares tumbling over each other, loud up front | the same palm-muted distorted guitar riff returns underneath, unchanged | nothing else playing at all]
+[Drop — instrumental, 16 bars, no vocals | everything heavier and more distorted than the first drop — growling neuro bass underneath it all, the amen rolls harder, longer and more chopped, the lead screaming higher with more bend and more formant movement]
+```
+
+**The round-14 versions** (before any trimming — verse 1 at 1,010 characters) are in this
+file's round log; the round-15 set above is the more useful revert, since it is already
+free of the duplication that had no defence.

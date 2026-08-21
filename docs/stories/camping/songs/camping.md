@@ -1,6 +1,6 @@
 ---
 title: Camping (duet re-cut)
-status: round 15 drafted (amen fills as an event + cues compressed) — rounds 1-14 generated and diagnosed; the orchestral direction is abandoned
+status: round 16 drafted (amen fills as an event + cues cut to 53% of round 15, 16% of round 14) — rounds 1-14 generated and diagnosed; the orchestral direction is abandoned
 released_take: ./camping-released.md
 history: ./camping-prompt-history.md
 bpm: 174
@@ -48,7 +48,7 @@ onto.
 
 ---
 
-## The four Suno boxes — current, round 15
+## The four Suno boxes — current, round 16
 
 **This is the live prompt.** Paste **all four** boxes every round; never trust what a box
 already contains. Everything below this heading is current; the round log above and the
@@ -144,8 +144,8 @@ anywhere**, a known Suno blind spot that thins the arrangement instead of halvin
 drums.
 
 ```lyrics
-[Intro — 8 bars | one long low detuned synth note, completely alone, held and slowly filtering open, cold and menacing | a texture, not a tune: no melody, no notes changing | distant city hum far underneath | no drums, no bass, no guitar]
-[Verse 1 | gravelly ranting voice — a weathered British man in his fifties, low, smoke-worn, nasal, half-shouted and half-muttered, close and bone dry | the low synth note holds underneath | the palm-muted distorted guitar riff comes in with the voice and runs the whole verse, the same short figure repeating | no drums and no bass for the first half of this verse, then a dry chopped breakbeat comes in under the vocal and runs to the drop, with chopped amen rolls tearing across every fourth bar, snares tumbling over each other, loud up front | a short hard synth stab starts repeating once the beat is in | the words never stop and there is no instrumental passage anywhere in this verse]
+[Intro — 8 bars | one long low detuned synth note, completely alone, held and slowly filtering open | a texture, not a tune, no melody | distant city hum far underneath | no drums, no bass, no guitar]
+[Verse 1 | gravelly ranting voice | the low synth note holds underneath | no drums and no bass for the first half of this verse, then a dry chopped breakbeat comes in under the vocal and runs to the drop | amen rolls tearing across every fourth bar | the words never stop, no instrumental passage in this verse]
 Once again, and you catching my eye,
 and you looking to the side in shame, but why
 now, let me explain, how I'm just poor
@@ -162,9 +162,9 @@ crackle and pop, I want change,
 not from your pocket but at the top
 in the meantime though let me hold that door
 please sir, can I FUCKIN, have some more?
-[Drop — instrumental, 16 bars, no vocals | the kit hits full weight and the sub bass drops for the first time, heavy Reese, dark and relentless | chopped amen rolls tearing across every fourth bar, snares tumbling over each other, loud up front | the guitar drops out here | the screaming detuned wavetable lead tears in over the break, cutting against the drums]
+[Drop — instrumental, 16 bars, no vocals | the kit hits full weight and the sub bass drops for the first time | amen rolls tearing across every fourth bar | the guitar drops out here | the wavetable lead tears in over the break]
 [Beat Transition]
-[Verse 2 | well-spoken posh voice — a completely different man, same age, light, crisp, plummy BBC English, talking down at you, unhurried, smug and mocking, from a wide open room | full-weight drum and bass carries straight on, drums flip, colder synths, sharper hats | chopped amen rolls tearing across every fourth bar, snares tumbling over each other, loud up front | the same palm-muted distorted guitar riff returns underneath, unchanged | nothing else playing at all]
+[Verse 2 | well-spoken posh voice, a completely different man | full-weight drum and bass carries straight on, drums flip, colder synths, sharper hats | amen rolls tearing across every fourth bar | the same guitar riff returns underneath, unchanged | nothing else playing at all]
 you are intent on living in a tent
 get fucked all day and pay no rent
 it's a lack of work ethic, quite pathetic
@@ -182,7 +182,7 @@ if you worked hard, then you could have plenty, fenty,
 all you seem to now do, is resent me.
 wealth gap? fuckin what a load of crap
 now please let me drink my shatoe nerf doo pap
-[Drop — instrumental, 16 bars, no vocals | everything heavier and more distorted than the first drop — growling neuro bass underneath it all, the amen rolls harder, longer and more chopped, the lead screaming higher with more bend and more formant movement]
+[Drop — instrumental, 16 bars, no vocals | everything heavier and more distorted than the first drop — neuro bass growling underneath, the amen rolls harder and longer, the lead screaming higher]
 [Beat Transition]
 [Bridge | the turn | drums strip right back, intimate | the two men trade, both close and dry in the same cold room now]
 [gravelly ranting voice]
@@ -449,14 +449,47 @@ full spec (global), and three separate denials of melody in the intro. What stay
 entrance timing, the no-drums first half, "the guitar drops out here", drop 2's
 *relative to the first drop*, and the anti-gap guard — all facts about **this section**.
 
-**One deliberate exception this round.** The amen clause was *kept* in all four cues even
-though it is now global, because the same round is trying to make the fills louder, and
-thinning the repetition on the exact thing being boosted would be two changes fighting.
-Once the fills are audible, that clause is the next thing to drop from the cues.
+**One deliberate exception.** The amen clause is *kept* in all four cues even though it is
+now global, because the same round is trying to make the fills louder, and thinning the
+repetition on the exact thing being boosted would be two changes fighting. Once the fills
+are audible, that clause is the next thing to drop.
 
-**Next available trim, not taken:** verse 1 and verse 2 still repeat their casting
-description, which is also in the Style box. Left alone on purpose — the casting took
-four rounds to win and is not worth risking to save 120 characters.
+### The second test: is it derivable from the Style box?
+
+Scoping alone left verse 1 at 693 characters — still **eight times** the toolkit's own
+`under roughly 80 characters` guidance. So round 16 applied a harder filter, and a clause
+now has to pass **both**: section-scoped **and** not already implied by the Style box's
+`Four steps:` sentence, which is the full arrangement spec for the track.
+
+That sentence turned out to be doing most of the work the cues were repeating. Verse 1
+went **693 → 311**, six clauses; every cue in the song, 2,469 → 1,657.
+
+| Cut from verse 1 | Why it had no defence |
+|---|---|
+| the whole casting description | near word-for-word from the Style box, which *already* scopes it — it says "Verse one is a weathered British man in his fifties…". The **fixed short label** is the load-bearing part and it stays. |
+| the guitar's entrance spec and figure | Style's step two *is* the voice over the guitar riff |
+| `a short hard synth stab starts repeating once the beat is in` | already flagged as the first thing to cut if the pre-drop clutters — this took it |
+| the wavetable lead's spec (drop 1) | Style's step four, verbatim |
+
+**What survived, and why each one has a name.** The voice label (the switch between men is
+section-scoped and Style only says "verse one / verse two"); `the low synth note holds
+underneath` (Style orders the steps but never says the note carries); **`no drums and no
+bass for the first half of this verse, then a dry chopped breakbeat…`** — the single most
+load-bearing clause in the sheet, because Style says step three follows step two but not
+*where*; the amen clause (the deliberate duplicate above); and `the words never stop, no
+instrumental passage in this verse`, the anti-gap guard bought over rounds 6–10.
+
+**This is where the trimming stops being a decision and starts being a bet.** Every
+remaining clause has a reason that can be stated. Cutting further means cutting a
+hard-won guard on a guess, so the next cut should be settled by a generation, not by
+argument. The round-15 cues are archived in
+[`./camping-prompt-history.md`](./camping-prompt-history.md) as the revert target — put
+them back one cue at a time, verse 1 first, if arrangement regresses.
+
+**Honest limit on all of this:** we have never A/B'd cue length on this track. Long cues
+demonstrably *work* here; the claim is that they dilute, and it rests on round 1's
+density-driven timing fault plus the toolkit's general guidance. The round-16 take is the
+first real test of it.
 
 **Trim ledger — Style box, round 15.** Adding the amen sentence pushed the box to 1,040.
 Back to **989** by cutting, in this order: `hands to` → `,`; `, no melody` from the intro
