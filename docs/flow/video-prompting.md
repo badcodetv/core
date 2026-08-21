@@ -3,6 +3,47 @@
 Text→video, image→video, frames, audio and dialogue. Motion craft for
 `animate-slide` and `music-video-short`.
 
+## 0. 🔴 The order of operations — settle the look on a STILL first
+
+**Ruling 2026-08-21 (Kai). This is the default method for every shot in a film, not an option.**
+It was already what we did on both built GPOM scenes; it was never written down as the method,
+which meant it read as a habit rather than a rule. It is a rule.
+
+| Step | Do | Why here |
+| --- | --- | --- |
+| 1 | **Generate stills until the LOOK is right.** Iterate freely — palette, lens, scale, light, framing, what is and is not in shot | Stills are the cheap, fast, high-control surface. Nano Banana Pro takes correction well and a reroll costs seconds |
+| 2 | **Accept exactly one.** That is the plate | The decision is made in the still, in daylight, before any motion is on the table |
+| 3 | **Feed the plate in as `startImage`** and prompt **the motion only** | The plate is now the first frame of the clip, so the look is already locked into the output and cannot drift |
+| 4 | **Judge the clip on movement alone** — did the right thing move, at the right weight? | The look is not up for re-litigation at this stage. If it is, step 2 was wrong |
+
+**Three reasons this is not merely convenient:**
+
+1. **Text→video re-decides the look on every roll.** Every reroll is a fresh interpretation of
+   the whole frame, so you cannot converge — you are iterating on a target that moves. Fix the
+   frame and the only remaining variable is the motion.
+2. **The plate decides whether the move is possible at all.** Veo animates what the plate gives it
+   something to animate — five takes across three dark, dense alley plates produced no rain, while
+   one modern harbour plate moved immediately ([`physics-and-motion.md`](./physics-and-motion.md)
+   §6b). That is a judgement you can make **by looking at a still**, before spending a video credit.
+3. **A plate is worth keeping even if the clip never works.** If Veo will not move it, the shot
+   becomes a locked plate with an eased move added in post — a first choice, not a defeat
+   ([`post-production.md`](./post-production.md) §1). Either way the still was the right first buy.
+
+**The corollary that costs money if ignored: never iterate on the look inside video.** A wrong
+palette or a wrong lens is a still problem. Fixing it by rerolling 8-second clips is the single
+most expensive mistake available in Flow, and it is slower as well as dearer.
+
+### When to break it
+
+- **The shot has no stable first frame** — a whip pan, a shot that starts on black, a pure
+  interpolation between two pictures. Frames mode owns those (§4).
+- **You want a move Veo will only produce unprompted**, and you intend to reverse or retime it.
+  The GPOM descent was Veo's crane-up run backwards.
+- **A quick text→video probe to find out whether a kind of motion exists at all.** Legitimate,
+  but it is reconnaissance — throw the result away and come back through the plate.
+
+---
+
 ## 1. The formula
 
 `[Cinematography] + [Subject] + [Action] + [Context] + [Style & Ambiance]`
@@ -112,6 +153,9 @@ frame should look like, and it drifts toward regenerating rather than animating.
   unstated and Veo *invents* behaviour — generic framing, a slow drift, a sway, an unrequested
   push-in. **Name the move every time.** When you want no move at all, say so explicitly:
   `static`, `locked-off`, `no camera movement`. Silence is not a request for stillness.
+  ⚠️ **Bounded 2026-08-21: saying it does not make it so.** An explicit static instruction is
+  still the right thing to write — it demonstrably reduces the drift — but it does **not**
+  produce a locked frame on any model we have. See *"Static" is not a lever* below.
 - **Name the subject motion too.** Separately from the camera: an unstated subject can come
   back near-frozen even while the camera is busy.
 - **1–2 motion types maximum.** "Slow dolly in, leaves rustling, clouds moving, water
@@ -141,6 +185,70 @@ frame should look like, and it drifts toward regenerating rather than animating.
   scenes. (practitioner, [replicate.com](https://replicate.com/blog/veo-3-image))
 
 > **Minimal and valid:** "Make him run!"
+
+### 🔴 "Static" is not a lever — every clip drifts (measured 2026-08-21)
+
+**We asked for a locked-off camera in the plainest words available and got a moving one, on
+both models, in every take.** This is the single most useful thing to know before planning a
+shot that depends on the frame holding still: you cannot get one out of the prompt.
+
+**The test.** Plate `docs/stories/magic-money-tree/storyboard/img/p01.jpg` (Dawn at the
+bedside — two faces, joined hands, dim ward, fine grain). One prompt, sent identically to two
+models at 8s / 16:9:
+
+> Static locked-off camera, no camera movement. The nurse blinks and breathes slowly, her
+> thumb stroking the back of the patient's hand once. Everything else in the ward stays still.
+> Very subtle movement, minimal motion. Maintain the style, grain and lighting of the image.
+
+**The measurement.** Drift is measured on a **subject-free crop** — the left third of frame
+(wall, fluorescent tube, equipment), which is static in the fiction — phase-correlated against
+frame 0, sampled every 6th frame. That isolates camera movement from the nurse's own motion;
+a whole-frame diff would conflate the two and tell you nothing.
+
+| Clip | Net drift at 8s | Peak vertical | Frames off-lock |
+| --- | --- | --- | --- |
+| Veo 3.1 Fast, take a | **+66 px** (5.2% of frame width) | 5 px | 31/32 |
+| Veo 3.1 Fast, take b | +42 px | 6 px | 30/32 |
+| Gemini Omni Flash | +34 px | 12 px | 30/32 |
+
+**Every take drifted, and all of it was horizontal creep in the same direction** — a slow
+unrequested push/pan, not a shake. Omni Flash drifted least laterally and most vertically;
+the spread between the two Veo takes (66 px vs 42 px) is as large as the spread between the
+models, so **treat drift as a per-take lottery, not a model property.**
+
+**What this changes:**
+
+- **Do not design a beat that depends on a locked frame.** If the shot only works held
+  perfectly still, it is not a Flow shot — it is a locked plate with the move added in post
+  ([`post-production.md`](./post-production.md) §1).
+- **Budget ~2–5% of frame width of unplanned travel per 8s clip.** Frame with that headroom:
+  anything critical parked hard against an edge can walk out of shot by the last second.
+- **Cuts between two clips will not match.** Each take has drifted a different distance by its
+  last frame, so a join between two "static" clips carries a visible framing bump. Either
+  stabilise both before the cut, or cut on motion so the bump reads as intent.
+- **Keep writing the static instruction anyway.** It is not useless — silence produces worse,
+  and the rule above still stands. It sets an upper bound on the drift; it does not remove it.
+
+### ⚠️ Leaderboard rank does not transfer to our register (2026-08-21)
+
+The same A/B was run to answer a second question: Gemini Omni Flash sits ~280 Elo above
+Veo 3.1 on the Artificial Analysis **image-to-video (no audio)** board (1366 vs 1084, Aug 2026).
+Is our `Veo 3.1 Fast` default leaving quality on the table?
+
+**On this plate: no.** Detail retention against the plate was a tie — 92–97% of the plate's
+high-frequency energy across all three clips, whole-frame, with no model preserving grain or
+skin texture better than another. Character identity held on all three. Neither invented
+dialogue (all clips −43 to −46 dB mean, room tone only).
+
+**Ruling: keep `"Veo 3.1 Fast"` as the `flow_generate_video` default.** The arena is won on
+bright, busy, generic prompts; our register is dark, single-source-lit and identity-critical,
+and the ranking did not survive the move. ⚠️ **Bounds:** n=3 clips, one plate, one near-static
+prompt. This rules out a *large* Omni Flash advantage here. It does not rule out a small one,
+or one on a motion-heavy or brighter shot — re-test before trusting it beyond this case.
+
+⚠️ **Omni Flash ignored `count`** — a `count: 2` call returned one clip with `partial: true`,
+so the run is 2 Veo samples against 1 Omni sample. Known `flow-mcp` gap; don't plan a
+multi-candidate round on Omni Flash until it is fixed.
 
 ### The first frame decides whether the move is possible
 

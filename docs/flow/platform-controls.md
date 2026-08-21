@@ -25,6 +25,13 @@ that matters. Verbatim from *Learn about Google Flow models & supported features
 Both aspect ratios (16:9, 9:16) everywhere it is supported at all. Google's footnote on Extend:
 *"All Veo 3.1 8s videos can be extended, but you must use Veo 3.1 Lite to extend them."*
 
+⚠️ **Do not pick Omni Flash for image→video on rank alone.** It sits ~280 Elo above Veo 3.1 on
+the public image-to-video board, and in a live A/B on a BadCode plate that lead produced **no
+measurable quality gain** — detail retention was a tie and identity held equally. `Veo 3.1 Fast`
+remains the `flow_generate_video` default. Evidence, bounds and the numbers:
+[`video-prompting.md`](./video-prompting.md) §3, *Leaderboard rank does not transfer to our
+register*. Omni Flash also ignored `count` in that run (returned 1 of 2, `partial: true`).
+
 ### The three rows that change how we work
 
 🔴 **1. Casting a character rules out Quality entirely.** Ingredients/References → Video is

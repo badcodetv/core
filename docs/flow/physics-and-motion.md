@@ -150,6 +150,75 @@ identical to a still, and identical in the file to a plate Veo simply refused.
 **Name the moving thing first and hard, then lock the camera.** One clause of camera lock at the
 end does the job; a wall of negations reads as "hold everything".
 
+## 6c. 🔴 Naming an atmospheric effect makes Veo render it as an EFFECT, not as weather
+
+Measured on GPOM cut 3, 2026-08-21, on a graded aerial plate of a data centre in a drought.
+Two clauses, two takes, two distinct failures — and both clauses were mine, not the model's fault.
+
+| Clause sent | What Veo did |
+| --- | --- |
+| *"heat shimmers and ripples continuously in the air above the rooftop cooling plant"* | Drew a **literal circular ripple warp** in the sky, like a stone dropped in water. Plainly a post-production distortion, not air. Kai spotted it in a screenshot |
+| *"a large soft cloud shadow drifts slowly across the land"* | Take 1: **darkened the entire frame** — the land's mean brightness fell 177 → 75 over 8s. Take 2: a fast brown plume streaking across the sky at a speed no cloud moves |
+
+**The rule: a shadow instruction reads as a global exposure instruction, and a shimmer instruction
+reads as a warp filter.** Veo has no model of "weather happening at a distance"; it has a strong
+model of "visual effect applied to the frame". Ask for atmosphere and you get the effect.
+
+### The deeper mistake, which is the one worth remembering
+
+**The plate's subject was a static condition — drought — and I prompted motion anyway.** Kai's
+correction: *"the visual effect of this scene is in the dryness, so I don't think we need to add
+any weather or smoke or anything like that."*
+
+Once the weather clauses came out, **nothing in the frame moved at all** — which meant it was
+never a Flow job. It became an eased push-in on the graded still in `ffmpeg`: native 1920×1080,
+exact ease, colour identical start to end, and **no artefact is possible because it is one
+image**. Rendered in seconds, after two Veo takes had failed.
+
+**So the test at storyboard time is not "what motion would suit this shot?" but "does anything in
+this world actually move?"** If the answer is no, adding a motion prompt does not add life — it
+adds artefacts.
+
+### 🔴 …but "nothing moves" does NOT mean "not a Flow job" — corrected the same day
+
+The paragraph above was written after the ffmpeg push-in replaced two failed Veo takes, and it
+over-generalised within the hour. Kai watched the post move and rejected it:
+
+> *"It looks just like it was zooming on an image. It's much better to actually have a video with
+> some movement — the camera could move around the buildings. So it's not as simple as just
+> zooming on an image."*
+
+He is right, and the distinction is **parallax**:
+
+| | Post (`ffmpeg`) | Veo |
+| --- | --- | --- |
+| What it can do | scale and crop one flat image | a real camera move **through a 3-D scene** |
+| So the frame | zooms | **re-parallaxes** — near objects slide against far ones, faces of buildings open and close, the geometry genuinely changes |
+| Reads as | a photograph with a zoom on it | a shot |
+| Cost | free, exact, no artefacts, native resolution | credits, 8s cap, 720p, colour drift |
+
+A 2-D zoom cannot invent the far side of a building, so on any subject with real depth the eye
+reads it instantly as a still. Measured on GPOM C1a: the Veo flight rotated the six blocks against
+one another and slid the near hedgerow past, which is exactly what the post move could not do at
+any zoom rate.
+
+**The corrected test, and it has two limbs:**
+
+> **Is anything in the world moving, OR does the camera need parallax?** Either one means Veo.
+> Only when *both* are no — a flat subject, a graphic, a distant sky, a locked plate — is it a
+> post move.
+
+⚠️ **And the atmospheric finding above still stands.** The fix was never "remove all motion", it
+was **remove the weather and keep the camera**. C1a's successful take carries a camera clause and
+no atmosphere clause at all, and it came back clean first time.
+
+**Veo's price for parallax is colour drift**, and it is correctable rather than fatal: this clip
+brightened 177 → 200 over 8s. Measure the drift per frame, smooth the correction as hard as the
+drift itself, and hold the value from frame 0 — GPOM C1a came back to ±0.5/255 across the clip.
+A fix that is not smoothed is a fix you can see.
+
+See [`post-production.md`](./post-production.md) §3.4 and `flow-automation` §0.
+
 ## 7. Shot classes to avoid
 
 Cross-referenced to [`failure-modes.md`](./failure-modes.md) Part B.

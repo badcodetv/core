@@ -46,8 +46,19 @@ Same split as [`docs/suno-gpt/`](../suno-gpt/README.md) and the `suno-prompt` sk
 
 ---
 
-## The 16 rules
+## The 18 rules
 
+0a. 🔴 **A camera move through a scene with DEPTH is a Veo job, not a post job.** Post can scale
+   and crop one flat image; it cannot invent the far side of a building, so on any subject with
+   real depth a post zoom reads instantly as a photograph. The test has two limbs: **is anything
+   moving, OR does the camera need parallax?** Either one means Veo. Only when both are no is it
+   ffmpeg. ([`physics-and-motion.md`](./physics-and-motion.md) §6c)
+0. 🔴 **Settle the look on a STILL, then animate the accepted still.** Iterate stills until the
+   frame is right, accept one as the plate, feed it in as `startImage`, and prompt the motion
+   only. Text→video re-decides the whole look on every roll, so you cannot converge; and the
+   plate tells you whether the move is even possible before you spend a video credit. Iterating
+   on the *look* inside video is the most expensive mistake available in Flow.
+   ([`video-prompting.md`](./video-prompting.md) §0)
 1. **Write a brief, not a tag dump.** Full sentences, prose. Comma-stacked keywords,
    artist-name dumps and Midjourney weight syntax (`word::1.5`) do nothing here and
    actively degrade Nano Banana, which reasons over the prompt before rendering.

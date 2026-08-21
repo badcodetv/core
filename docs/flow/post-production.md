@@ -228,6 +228,37 @@ ffmpeg -v error -i /tmp/f-0.png -i /tmp/f-1.5.png -i /tmp/f-3.png \
 `scripts/video-contact-sheet.sh` wraps this with a `REGION` crop and an exposure lift for
 near-black frames.
 
+
+## 3.9 🔴 Hold a Veo clip's colour — and anchor on a PERCENTILE, never the mean
+
+**Every Veo clip drifts.** Measured across six clips on GPOM cut 3, 2026-08-21: an exterior
+flight brightened 177 → 200 over 8s, one station take *darkened* by 15, a row take brightened by
+13. It is always smooth and monotonic, never a jump — which is why it is correctable, and why it
+is easy to miss by eye until two clips are cut together and the join flashes.
+
+**Tool: `docs/stories/gitpush-origin-master/scenes/hold_grade.py`** (clip in, 1080p clip out).
+
+🔴 **The trap, and the first version fell straight into it.** Anchoring on the frame **mean**
+measures *what is in shot*, not *how the shot is lit*. On a lateral move past rack ends, big dark
+objects wipe through frame and the mean swung 64 → 48 → 68 with no exposure change at all.
+Holding that mean applied a **1.4× gain** to the darkest frames and pushed clipped pixels from
+0.22% to **1.85%** — the correction was destroying the shot it was meant to repair.
+
+**Anchor on a high percentile (p90).** It tracks the light sources rather than the composition,
+so a rack crossing frame does not move it. Same clip, corrected version: clipping back to ~0.5%
+and flat, p90 held within 7/255 across 8s.
+
+Three more things the tool does, each worth keeping:
+
+| | Why |
+| --- | --- |
+| **Skip below a threshold** (p90 drift < 3/255) | A correction applied to noise is pure risk for no gain |
+| **Clamp the gain** (0.88–1.14) | A shot the model cannot describe then degrades to roughly-right instead of to blown highlights |
+| **Smooth the correction** over ~9 frames | A per-frame gain from a per-frame measurement flickers, and a fix you can see is worse than the drift |
+
+⚠️ **Do the 1.5× upscale to 1080p here too**, in the same pass — not at concat time, where the
+footage would be resampled twice.
+
 ## 4. 🔴 The resolution ceiling — the one real limit
 
 **Flow returns 1376×768 stills and 1280×720 video, whatever model you pick.** Google documents 2K
