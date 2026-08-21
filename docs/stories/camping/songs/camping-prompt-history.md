@@ -17,6 +17,33 @@ The lessons that generalise beyond this track have been promoted into
 
 ---
 
+## What this song taught
+
+The one-minute version, for a future session that does not want to read seventeen rounds.
+Convention and reasoning: [`docs/suno-gpt/session-method.md`](../../../suno-gpt/session-method.md).
+
+| What broke | Why | The fix | General rule now lives in |
+|---|---|---|---|
+| Bob and Tarquin sounded like the same man | a **saved Voice binds the lead slot for the whole track** — it has no section scope | no Voice; cast by contrast on pitch, texture, tradition, delivery, age, room | `suno-voices.md` Thread 4 |
+| both men came out American | the **genre tag was holding the nationality up**, and it was dropped | `British post-punk spoken word` — a genre tag carries a whole *performer*: accent, age, class, race | `suno-voices.md` Thread 4 |
+| the orchestra played from bar one, twice | **`My Taste` has no section scope**, and a "quiet lead-in" cue still names the instrument | delete the mention rather than describe its absence; escalate entrances in gears | `files/suno-tag-mechanics.md` |
+| a mid-verse arrangement change never happened | an inline cue is a *modifier*; the **genre tag is the noun** | use a real section tag to force a re-decision | `files/suno-tag-mechanics.md` |
+| `[Build]` inserted an instrumental gap, through three explicit denials | **a section tag brings its whole genre convention** | replace the keyword, don't argue with it | `files/suno-tag-mechanics.md` + README known-unreliable |
+| the piano stayed busy through three wordings | **adjectives are comparative** — "sparse" is graded against a piano's normal idiom | give a **rate**: `one note every two seconds` | `files/suno-tag-mechanics.md` |
+| the track turned pantomime | naming a **form** imports its **texture** — `a Chopin nocturne, mournful` returned busy and ornamented | describe the texture, never the repertoire | README known-unreliable |
+| two ranting men started **singing** | **a melodic accompaniment invites a melodic vocal** — no vocal clause had changed | if a spoken delivery drifts sung, look at what plays underneath | `files/suno-tag-mechanics.md` |
+| six attempts at a second layer, all failing | five came from **outside the track's own genre** | **when N wordings fail *differently*, the category is wrong** — the genre's own palette worked first time | `session-method.md` |
+| a guitar that would not appear | a **stale ban** three rounds old, in a box nobody re-read | grep Exclude **and** My Taste for the instrument, its *category*, and whole-palette adjectives | `files/suno-tag-mechanics.md` |
+| Suno rejected the word `skank` | **artist-alias collision** — a rejected innocuous musical term is usually a *name* | describe the mechanic instead of naming it | `files/suno-tag-mechanics.md` |
+| amen fills inaudible | **the drum bed was already amen** — the fill had nothing to contrast with | free the sample from the bed; describe the *event*, not a bar count | `files/suno-tag-mechanics.md` |
+| bracket cues grown to 1,010 characters | boxes grow; nothing removes | **scoping rule** (the cue is the only section-scoped box) + the **derivability test** against the Style box | `files/suno-tag-mechanics.md` |
+| three words silently drifted from the released lyric | nobody heard it across nine rounds of close listening | diff mechanically every round; encode deliberate departures so the check keeps working | `session-method.md` |
+| two documented line-splits were never applied | **a note recording an *intended* edit reads like one recording a *made* edit** | measure the artifact, never the note about it | `session-method.md` |
+| `BLOUGH` mumbled | **`-ough` maps to seven vowels**, and ALL CAPS on an invented word reads as an initialism | attested respelling, lower case | `files/lyricist-playbook.md` |
+| `paralytic` normalised back twice | a single respelt token still *looks like* the word | **split it into two words** so recognition fails | `files/lyricist-playbook.md` |
+
+---
+
 ## The orchestral menu — five options, worked through one at a time
 
 **Where we got to (2026-08-21).** The GPOM-borrowed strings never sat right; the dub

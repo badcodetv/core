@@ -114,12 +114,22 @@ protects.
 
 ### 4. Lyrics
 
-**Words verbatim — verified, not assumed.** Every word of the released take
-([`./camping-released.md`](./camping-released.md)) is present and unchanged. Four tokens are **respelt**,
-which changes the spelling and not the word: `parra lettic`, `shatoe nerf doo pap`,
-`blaow`, and `the last part` (a deliberate correction of the released `a cast part`).
-Line breaks differ in five places — see §4a — and those change timing, not words. Re-run
-the check after any edit:
+**Words checked mechanically, not by ear — and the departures are now deliberate.** The
+re-cut began as a verbatim rebuild of the released take
+([`./camping-released.md`](./camping-released.md)); at round 17 Kai made three considered
+word changes to the final cut. They are listed below and encoded in the check, so the
+script still catches *accidental* drift. **That matters more than it sounds:** a check that
+always fails is a check nobody reads, and silent drift is exactly how three words went
+missing earlier in this sheet without anyone hearing it.
+
+| Departure | Released | Final cut | Note |
+|---|---|---|---|
+| respelling ×4 | — | `parra lettic`, `shatoe nerf doo pap`, `blaow`, `the last part` | spelling only, the word is unchanged (§4b) |
+| verse 2 | `get fucked all day and pay no rent` | `getting fucked all day and paying no rent` | +2 syllables, moving a 9 toward the section's 10-syllable slot |
+| bridge | `park, in the rain and the dark, fast start` | `park, in the rain and the fucking dark` | **costs a rhyme leg** — `fast start` was the setup for `the AI does the fast part` two lines later. Kai's call, made with the take in his ears |
+
+Line breaks also differ — see §4a — and those change timing, not words. Re-run the check
+after any edit:
 
 ```bash
 # from docs/stories/camping/songs/ — strips cues, punctuation and respellings, then diffs
@@ -131,7 +141,10 @@ def lyr(p):
 def norm(ls):
     t=' '.join(ls).lower()
     for x,y in [('parra lettic','paralytic'),('shatoe nerf doo pap','W'),('châteauneuf-du-pap','W'),
-                ('blaow','blough'),('the last part','a cast part')]:
+                ('blaow','blough'),('the last part','a cast part'),
+                # deliberate round-17 word changes — keep the check clean so real drift shows
+                ('getting fucked all day and paying no rent','get fucked all day and pay no rent'),
+                ('park, in the rain and the fucking dark','park, in the rain and the dark, fast start')]:
         t=t.replace(x,y)
     return ' '.join(re.sub(r'[^a-z ]','',t).split())
 a,b=norm(lyr('camping-released.md')),norm(lyr('camping.md'))
@@ -168,11 +181,11 @@ crackle and pop, I want change,
 not from your pocket but at the top
 in the meantime though let me hold that door
 please sir, can I FUCKIN, have some more?
-[Drop — instrumental, 16 bars, no vocals | the kit hits full weight and the sub bass drops for the first time | amen rolls tearing across every fourth bar | the guitar drops out here | the wavetable lead tears in over the break]
+[Drop — instrumental, 8 bars, no vocals | the kit hits full weight and the sub bass drops for the first time | amen rolls tearing across every fourth bar | the guitar drops out here | the wavetable lead tears in over the break]
 [Beat Transition]
 [Verse 2 | well-spoken posh voice, a completely different man | full-weight drum and bass carries straight on, drums flip, colder synths, sharper hats | amen rolls tearing across every fourth bar | the same guitar riff returns underneath, unchanged | nothing else playing at all]
 you are intent on living in a tent
-get fucked all day and pay no rent
+getting fucked all day and paying no rent
 it's a lack of work ethic, quite pathetic
 getting parra lettic and you just don't get it
 prospects exist and you just resist
@@ -188,12 +201,12 @@ if you worked hard, then you could have plenty, fenty,
 all you seem to now do, is resent me.
 wealth gap? fuckin what a load of crap
 now please let me drink my shatoe nerf doo pap
-[Drop — instrumental, 16 bars, no vocals | everything heavier and more distorted than the first drop — neuro bass growling underneath, the amen rolls harder and longer, the lead screaming higher]
+[Drop — instrumental, 8 bars, no vocals | everything heavier and more distorted than the first drop — neuro bass growling underneath, the amen rolls harder and longer, the lead screaming higher]
 [Beat Transition]
 [Bridge | the turn | drums strip right back, intimate | the two men trade, both close and dry in the same cold room now | the guitar riff sparser and quieter here, still one repeating figure, never a tune]
 [gravelly ranting voice]
 Oh shit, here we both are, living in a car
-park, in the rain and the dark, fast start
+park, in the rain and the fucking dark
 [well-spoken posh voice]
 went down the wrong track, then I got the sack,
 then I drank, broke my back, now I'm in the last part
@@ -279,12 +292,30 @@ Words untouched. Five lines re-shaped:
 | Line | Was | Now |
 |---|---|---|
 | `the only thing I'm changing / is the lanes in my M3` | 14 syl, one line | 7 + 6, split |
-| `in having the manager / or any of the c-suite about` | **15 syl** — worst in the song | 7 + 8, split |
-| `you see as it turns out, / there is very little clout,` | 13 syl | 6 + 7, split at its own comma |
+| ~~`in having the manager / or any of the c-suite about`~~ | **15 syl** — worst in the song | **NOT APPLIED** — see below |
+| ~~`you see as it turns out, / there is very little clout,`~~ | 13 syl | **NOT APPLIED** — see below |
 | `if you worked hard, then you could have plenty, fenty,` | 13 syl, 2 stress units | comma added → 3 units |
 | `now let's — go snap snap` | double space | em dash |
 
 Revert any of them by rejoining the lines — nothing else depends on the split.
+
+**Two of the five were never actually applied, and the sheet claimed they were** (found
+2026-08-21, by measuring the file rather than trusting it). Both are in the **bridge** —
+already the worst section on range and mean — and one of them is the 15-syllable line this
+very table calls the worst in the song. The bridge's opening line sets an 11-syllable slot,
+so that line is force-fit into it, which is the textbook cause of *"the words fall behind
+the beat and catch up by the end of the section"*. Left unsplit in the final cut because
+Kai signed the take off with it; **it is the first thing to try if that section is ever
+re-cut**, as:
+
+```
+in having the manager
+or any of the c-suite about
+```
+
+**The transferable lesson is about the document, not the song: a note recording an
+*intended* edit reads identically to one recording a *made* edit.** Measure the artifact,
+never the note about the artifact.
 
 **Still over budget and deliberately left:** `and sicker than when the government
 debased us` (13). Every available break falls mid-clause and would read worse than the
@@ -569,7 +600,7 @@ verses into micro-sections.
 ## If a round still gives one voice — cut on the drop
 
 Likely, and worth planning for now: **stop asking one generation to be two men.**
-Camping's 16-bar drop is still a natural edit point, and every source — ours and the
+Camping's drop is still a natural edit point, and every source — ours and the
 web's — lands in the same place: generate separately, assemble in production.
 
 1. **Generation A — Bob's half.** Intro + verse 1 + drop. Style box describes
