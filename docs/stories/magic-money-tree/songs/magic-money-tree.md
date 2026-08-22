@@ -27,164 +27,242 @@ prim politician's "there is no magic money tree" — which the song spends three
 minutes disproving.
 
 The point: the limit isn't money, it's what we actually build — *we can afford
-what we can create*. Since 2026-08-21 the song carries the war to prove it: a
-ring from the present as a puzzle, back to 1940 and 1948, and home to the
-present as a verdict — see *The shape* below.
+what we can create*. Since 2026-08-22 the song's own story is **a banknote's
+life**: a bloke traces a tenner back hand by hand to the promise printed on it
+(*there's your tree*), watches the other note that never touched a hand, and
+lands on the win — see *The shape* below. The 08-21 ring is superseded.
 
 Flow/beat reference: <https://www.youtube.com/watch?v=OJM8yJTn_I0> ("Don't Get
 High On Your Own Supply" — East Coast / mafioso hip-hop; here the flow is moved
 onto bouncy jump-up D&B).
 
-## The shape — a ring (2026-08-21, Kai + Claude)
+## The shape — follow the money (AGREED 2026-08-22, Kai)
 
-**Kai's steer, 2026-08-21:** keep writing in the register of the approved verse
-— whimsical concept-play, pairing bars, question-bangs — and **not** a rigid
-history lesson. The structure is there to give the poetry *things to reflect
-on*, not slots to fill. So this section is a map of **movements**, each with a
-palette, not a table of lines that must land.
+**Rulings, 2026-08-22 (Kai):** V1 is locked at 16 bars. The 08-21 ring
+(now → war → build → now) is **reopened and superseded** — its parts are mined
+below, it is no longer the shape. The song's own narrative runs on **a
+banknote's life**. It **lands on the win** — the last thirty seconds are
+permission, not the gag, not the indictment, not grief. **Kai writes every
+bar.** This section is what the song's story *is* and what each movement has to
+do; it never hands over lines.
 
-**The ring:** the song leaves the present as a **puzzle** and comes back to it
-as a **verdict**.
+**Ratified the same day, after the adversarial pass:** the arc below **as
+written, rewind included**; the hook is **the concession hook** (candidate 1
+answering 2, below — installed in the working sheet as a seed, Kai's to
+rewrite); the bridge is **question only** — no 1948 memory bar; the history
+stays in the video.
+
+**Not the story's story.** Keynes, the bench and the ghost are never named. The
+song shares the story's *world* — money is fruit off a tree, and the tree is
+real — and tells a different story inside it: the story starts at the tree; the
+song **arrives** at it from the other end.
+
+### The song's story in one line
+
+A bloke with a tenner asks it where it came from, walks it back hand by hand
+expecting to hit gold — and hits a promise and a tree. Then he watches the
+*other* note, the one that never touched a hand. Then he asks how you pay for
+things when there isn't enough of it, and answers his own question.
 
 ```
-NOW, abstract  →  "where does it come from?"  →  THEN: the war  →  THEN: the build  →  NOW, concrete
-   (puzzle)              (the pivot)              (the answer)      (the proof)          (the verdict)
+V1  NOW — the wound (locked)          "…who it made rich — have a guess"
+      ↓ hook (shrug)
+V2  THE TRACE, backwards              boss ← punter ← her wages ← the ward ← my tax ← Treasury ← Bank ← "I promise to pay" → THERE'S YOUR TREE
+      ↓ hook (found it)
+V3  THE OTHER NOTE — the rewind        same hands, money going the other way; then one note, sitting still, on a deck
+      ↓
+BR  NOT ENOUGH WHAT?  (half-time)      you don't run out of receipts, you run out of shifts — the limit, once, as a joke
+      ↓
+FH  THE WIN                            the afford line IN the hook; the crowd talks over the politician
+      ↓
+OUT "…there is no magic money tree."   hard cut — now absurd
 ```
 
-The approved verse already opens with *where does it **go**?* — the ring closes
-it by ending the verse on *where does it **come from**?* Same question, turned
-round. That turn is the cut to 1940.
+Two verses and a bridge — about 40 bars. Anything that needs more is a lesson.
+The two questions the song asks after V1, in order: **where does it come from?**
+(V2 answers it by finding out) and **how can they pay for things when there
+isn't enough of it?** (the bridge answers it by turning it over).
 
-The present is seen twice, and that is the whole device: every abstract pairing
-in the opener (*quantitative easing, grandma freezing*) has a **concrete twin**
-waiting in the last verse (*now you know who got the easing*). Write the
-opener's collisions loosely; the closer's job is to name them.
+### How it was chosen (the adversarial pass, 2026-08-22)
 
-**Bar counts are loose.** Four movements of ~16 plus hooks comes in around 3:10
-at 172; the war and the build can be one verse in two halves if the bars want
-it. Decide when the bars tell you.
+Three arcs were built on the banknote engine and put in front of three
+independent critics — the target reader (`../../../marketing/the-reader.md`),
+an MC judging rap craft at 172, and a hostile economist holding the project's
+never-say list. All three ranked the same way.
 
-### The honest answer the ring rests on (stronger than the myth)
+- **A — "Born, spent, buried"** (straight biography: birth → life → frozen).
+  **Killed.** No reveal the listener didn't see coming, no villain (the note
+  "ends up" on a deck — weather, and weather has no culprit, which is the vacuum
+  the reader's existing culprit list walks into), a birth verse whose thesis is
+  *it's easy* — which reads as "printing is free", and it never names the limit.
+- **B — "Trace it back"** (the detective: backwards, then forwards). **Survives.**
+  The listener's stand-in does the finding (hero, not pupil); the proof is
+  printed on the tenner in their own wallet; a backwards chain is a native rap
+  device; one voice; the cleanest hand-off from V1's question-bang grammar.
+- **C — "A tenner's confession"** (first person, picaresque). **Killed on
+  voice.** Ventriloquism costs a two-bar frame every time the voice re-enters,
+  Suno reads first-person-object lyrics as a second character and casts a
+  second singer against the style prompt, the concession hook is in the bloke's
+  voice so the hook fights the verses, and a note that asks to be *pointed at
+  something* is money that wants (the banned woo) — permission without a limit.
+  Funniest of the three; **its best shot is harvested into V3** (one note, not
+  touched in four years).
+- **D — the note's 80-year life** (1948 → '71 → '08 → '20). Never built: it's
+  the ring with a banknote narrating, and four dates in forty bars is a history
+  lesson however it's dressed.
 
-Britain did **not** print the war. Keynes's *How to Pay for the War* (1940) was
-about paying for it **without** inflation — the country was at full stretch, so
-the tree's one limit was live, and the answer was rationing, taxes, and
-borrowing people's wages back ("deferred pay"). So the song's answer to *where
-does it come from?* is not *a printer* — it is **money was never the thing we
-were short of.** The hands were the limit; the money is the receipt for the
-work. That is Keynes's line said plainly, it is what buries the Weimar
-objection, and it is what makes 1948 unanswerable: the country that had nothing
-built the NHS because it still had hands. (Sources:
-`../research/central-bank-trees.md` §10,
-`../research/economics-of-money-creation.md` "rock solid".)
+### Movement 1 — V1, the wound (locked)
 
-### The stance for the history movements
+Already doing its job. **The hand-off:** V1 exits on a sneer (*have a guess*),
+the first hook sits between, so **V2's first bar must re-ask the question, not
+assume it** — and the strongest shape is V1's own opening turned round: the
+verse opened on *where does it go?*; V2 opens on *where's it from?* The song
+audibly closes on itself. No pre-hook needed.
 
-Not a teacher. **A bloke at the bar who's read one book and is furious about
-it** — which is already the opener's voice. The war and the build are told as
-*things he can't get over*, not as dates. If a bar starts sounding like a
-documentary caption, that's the tell.
+### Movement 2 — V2, the trace (backwards)
 
-### Movement 1 — NOW, abstract (the approved verse + 6)
+**Mood:** the bounce keeps going; the bloke is *investigating*, cheeky and
+literal — he's holding the tenner up to the light.
 
-**Mood:** whimsical, pub-economist, juggling the words they use on us.
-**Already doing its job.** The six remaining bars keep juggling, then tilt.
+**The device: a backwards chain.** *Got it off / got it off.* At double-time a
+listener hears a list of people, not a direction — the ← is inaudible — so
+**put the same two-syllable pointer at the head of every link** (a *from* / a
+*before that*) and the ear rides the rail. The content of the verse is **what
+he finds**, never a stated mechanism; if a bar explains, it's a caption.
 
-*Things to reflect on for the tail:*
-- Every Bank of England note says **"I promise to pay the bearer on demand the
-  sum of…"** — promise to pay? *with what?* The question is printed on the
-  money itself.
-- "Magic money tree" is a thing *they* say — turn it over: *no tree? then where's
-  the ones in your pocket from?*
-- Collisions in the opener's grammar: *fiscal headroom, no bedroom · balance the
-  books, cook the books · growth forecast? ask the gas · magic money tree? where's
-  the seed?*
-- **The pivot bar** is the last thing before the cut: *where does it come from?*
-  — then black.
+**The links, in order, and why each is there:**
+- the boss ← a punter ← **her wages** ← **the ward** — every hand it passed
+  through was somebody doing a shift. (Keep the chain in **wages and tills**.
+  Never a mortgage, never the building society — ~97% of money is bank-lending
+  deposits and the tree reveal is only honest because a *physical note* is
+  always born at the Bank.)
+- **← my tax.** The beat the first draft missed, and the reader critic's
+  biggest finding: this listener's entire theory is *"it's my money they're
+  spending."* The chain has to pass **through** his own tax — *and keep going.*
+  Tax is the note coming back round, not where it starts. One bar, shaped as a
+  surprise — it re-aims without telling him he's wrong.
+- ← the Treasury ← the Bank ← *and the Bank got it from…?* — **the promise
+  printed on it.** *I promise to pay the bearer on demand the sum of…* Say it
+  **once**, then sneer-exit. 🔴 **Never "nothing under it"** — that's the
+  gold-bug's sneer in our colours, and a hostile economist wins the argument
+  (it's a central-bank liability, legal tender, the thing the taxman accepts).
+  The honest and *stronger* image: **a promise backed by the country's next
+  shift.**
+- **The title lands at the bottom of the trace:** *there's your tree.* The
+  midpoint reveal, and it's checkable — it's printed on the money.
 
-### Movement 2 — THEN, the war (1940)
+*Things to reflect on:* every note is born at the Bank (printed for it at
+Debden); the bank that says no to you was chartered in 1694 to say yes to a
+war, in a fortnight (✅ — optional one-bar joke, not a lesson); modern notes are
+plastic — the paper gag is played dumb on purpose (see the caveat under the
+hook); the V1 collision grammar still applies (*promise to pay? — pay with
+what?*).
 
-**Mood:** the bounce keeps going, the colour drops out. Dark, tight.
-**Rule:** the jokes are about the **money**, never the beaches.
+**Do not put "receipt" here.** The receipt-for-work idea belongs to the bridge.
+In the creation step it reads as *her wages funded the Treasury* — the
+household fallacy run backwards — and the economist critic flagged exactly that.
 
-*Things to reflect on:*
-- A bankrupt island: selling the family silver abroad, the Yanks wanting paying
-  up front before they'd lend (cash-and-carry, then Lend-Lease). ✅ in outline;
-  ⚠️ keep reserve figures impressionistic — unbriefed.
-- The enemy built *their* war on money conjured in the dark by a man running a
-  fake company. ✅ (Mefo — the mechanism, never the man.)
-- Keynes on the wireless asking the country to **lend him its wages** — in the
-  open, in a pamphlet, on the radio. ✅ The contrast with the fake company needs
-  no commentary.
-- The war run from a bunker **under the grass** of St James's Park, the
-  Treasury on top of it. ✅ canon.
-- Nobody shouted *"how will you pay for it?"* at a Spitfire. The factories ran
-  flat out and the money followed — which is the whole point, and the reader's
-  own wound turned inside out.
-- **The tree's line, if you want it here or as a pre-hook:** *you're not asking
-  anything new, mate — it's what I was planted for.* Bank of England, 1694,
-  chartered to fund a war against France, subscribed in twelve days. ✅ **The
-  bank that says no to you was invented to say yes to a war.**
-- Collisions: *ration book, balance sheet · blackout, bailout · sandbags,
-  moneybags · deferred pay, defer the day.*
+### Movement 3 — V3, the other note (the rewind)
 
-### Movement 3 — THEN, the build (1945–48)
+**Mood:** the colour drops out; bitter, then *still*.
 
-**Mood:** triumphant, grinning. The biggest ask ever made of a broke country —
-granted.
+**The device: the rewind.** Air-horn, *pull it up* — and **the V2 chain plays
+again with the money going the other way.** The same hands, now *not* getting
+it. That is "one banknote, two addresses" as a jump-up gesture instead of an
+explanation, and it's the texture change V3 needs (the MC critic: two lists in
+a row is the arc's monotony risk; this is a chain *inverted*, not a second
+chain).
 
-*Things to reflect on:*
-- **~250% debt** — never "259%" — the most skint a country has ever been. ✅
-- Ration book in one hand, hospital keys in the other: rationing ran to 1954;
-  the NHS opened **5 July 1948**, *free at the point of use*. ✅
-- **806,857 council houses** by 1951; a fifth of the economy nationalised. ✅
-- The debt was never paid off — it was **outgrown**, like a school blazer. ✅
-  (*"growth painlessly erased it"* is contested; the line that survives is
-  **"they made the rentiers pay for the hospitals"** — real rates held below
-  inflation 24 of 30 years.)
-- Keynes borrowed the lunch money off the Yanks (the 1946 loan), then died
-  **21 April 1946** — two years before the doors opened. ✅ He never saw it
-  work.
-- Before the NHS, people died of being poor — **first person or one voice**,
-  never a veteran chorus (see guardrails).
-- Collisions: *bombsite, building site · ration book, cheque book · national
-  debt, national health · bricks and mortar, pay the porter.*
-- The question-bang the movement runs on: *skint? — built a health service.
-  skint? — built a million homes. skint? — how'd they pay for it? they didn't.
-  they built it.*
+**Then the still shot** (harvested from C): eight bars on **one note sitting
+still**, every verb negative. Born at a desk, not a till. Handed to a fund —
+*"hot potato,"* the Bank's own words, direct quote: *"this will raise the value
+of those assets."* Bought a thing that already existed. Price up, rent up,
+nothing built. Never did a shift in its life. A deck in the Med. Not been
+touched in four years.
 
-### Movement 4 — NOW, concrete (the forgetting)
+**Who pointed it there.** The note didn't drift — **a man in a meeting chose**
+(the right culprit-shape for this reader is a decision-maker, never a party),
+and V1's *have a guess* comes back as the name-shaped hole. Chooser and
+beneficiary on-panel in the same movement (`the-reader.md` rules 5–6) — that
+is what keeps the anger aimed. 🔴 **V3 is person-free**: no names, no gowns, no
+£122m. The Mone material (civil judgment against a company, no conviction) and
+the nurse's payslip live in the **video**, not the rap. *A deck in the Med* is
+all the song needs.
 
-**Mood:** bitter, fast. The opener's concepts come back **with names on**.
+### Bridge — not enough what? (half-time)
 
-*Things to reflect on:*
-- **The asks shrink and the no grows** — this is the movement's joke and the
-  song's thesis in one shape: *a war? yes. a hospital? yes. a pay rise?* — *"I'm
-  afraid there is no magic money tree."* Use it as a run, not a refrain.
-- The nurse: 26 years in, **2009 payslip = 2017 payslip**; 2 June 2017, *"…a
-  magic money tree that we can **shake**"* — **protect the verb**; 24 days later,
-  **£1bn for Belfast**. ✅
-- COVID: **£450bn in ~3 months** vs ~£445bn for the whole of 2009–17. The tree
-  *working* — furlough, the thing it was born for. ✅
-- Then where it came to rest: the VIP lane; the gowns (**£122m**, 25m unusable,
-  55 of a 60-gown sample not sterile — **Mone guardrails mandatory**, see below);
-  **1% for the nurses, 2021**; the yacht in the Med. ✅
-- **"Hot potato"** — the Bank's own words for QE: *"this will raise the value of
-  those assets."* Direct quote. ✅
-- **Echo pairs** — each opener collision gets its twin here: *quantitative
-  easing, grandma freezing → now you know who got the easing · landlords needing
-  → "asset appreciation" · where does it go? → the Med.*
-- *Same bank, same tree, same banknote — two addresses.* The bank that told her
-  no was founded as one.
+Drums thin, **one idea, six bars max** (the MC critic: a verse idea in a bridge
+slot dies). The second question, turned over: *how do they pay for it when
+there's not enough?* — **not enough what? receipts? you don't run out of
+receipts, you run out of shifts.** That is Keynes's inflation definition in pub
+grammar, it is the win's condition, and it is **load-bearing, not a footnote**:
+the reader's first thought at *print more* is *Zimbabwe / my grandad's
+savings*, and this is where it gets answered. **Shape the limit as a joke, not
+a caveat** — print past the shifts and it's paper, mate (hollow). 🔴 Never
+"wages worth less", never "printing caused inflation".
 
-### Bridge — the wireless
+**The 1948 memory bar — DROPPED (Kai, 2026-08-22).** The bridge is question
+only; the build stays in the video. Kept for the record in case it ever comes
+back: the survivable shapes were *they asked, and built it anyway* and *they
+made the rentiers pay for the hospitals* — 🔴 never "nobody asked how we'd pay
+for it" (rationing to 1954, a 30% devaluation, charges by 1951), never "it was
+free."
 
-Half-time, drums thin, suddenly sincere. The **bricks heckle, verbatim** (see
-below). Then **one bar-pair**, by juxtaposition only: what they built it
-*against* — the flags from the war are back, and the machine that kept them gone
-is being sold off. Grief, not mockery; the marchers are the recruited.
+### Final hook — the win
 
-### The hook — recovered candidates (2026-08-21)
+🔴 **The win has to be IN the hook.** Every hook candidate below ends on the
+paper gag, and the gag and the win are different sentences — left alone, the
+song lands on the joke. The shape that fixes it: keep the call, **change the
+answer** — in the final round only, the politician's parenthetical *(there is
+no magic money tree)* gets **talked over by the crowd** with the afford line.
+The exact line is **"Anything we can actually do we can afford"** (BBC, 2 April
+1942); Kai's *"we can afford what we can create"* is the gloss and can follow
+it. The win is honest **only because the bridge stated the condition first** —
+the limit, then the permission, never the other way round.
+
+Then the outro: the politician says the line one last time over no beat, and
+the song has spent three minutes making it absurd. The video's hard cut lands
+on it.
+
+### How the hook corrodes under this arc
+
+Same words, four meanings, so Kai never rewrites it: **a shrug** after V1 (*I
+don't know much*), **found it** after the trace (*…but I know where this came
+from*), **an accusation** after the deck, **permission** at the end. The
+concession hook (candidate 1 answering 2, below) corrodes best — *"I don't know
+much, but I know this"* is literally what the trace proves.
+
+### The ring (superseded 2026-08-22) — parts to mine
+
+The 08-21 shape carried the war and the build as their own movements. Under
+the banknote arc **the only history in the song is the bridge's one optional
+memory bar.** What survives from the ring, and where it goes:
+
+- **The honest answer** — *money was never what we were short of; the hands
+  were the limit; the money is the receipt for the work.* Britain did **not**
+  print the war (*How to Pay for the War* was about paying **without**
+  inflation — rationing, taxes, deferred pay). → the bridge's grammar.
+- **The stance** — *a bloke at the bar who's read one book and is furious
+  about it.* → all of V2 and V3.
+- **The build facts**, ✅ — ~250% debt; NHS **5 July 1948**, free at the point
+  of use; **806,857** council houses by 1951; the debt *outgrown, like a school
+  blazer*, never paid off; real rates below inflation 24 of 30 years — *they
+  made the rentiers pay for the hospitals.* → the one memory bar, if it stays.
+- **The war palette** — cash-and-carry, Lend-Lease (⚠️ reserves unbriefed), the
+  bunker under the grass, the enemy's money conjured in the dark by a man
+  running a fake company (Mefo — the mechanism, never the man), Keynes on the
+  wireless asking the country to lend him its wages, *nobody shouted "how will
+  you pay for it?" at a Spitfire.* → **video only** now. The 1694 charter
+  survives as V2's optional one-bar joke.
+- **Movement 4's run** — *a war? yes. a hospital? yes. a pay rise? — "I'm afraid
+  there is no magic money tree."* The shrinking ask and the growing no. → a
+  candidate shape for the rewind half of V3, or for the final hook's build; the
+  MC critic rated it the best call-and-response run in the file.
+- **The bridge-as-the-wireless** (the bricks heckle, verbatim) and the fascism
+  bar-pair → **video.** A banknote's life can't carry them and land on the win.
+
+
+### The hook — recovered candidates (2026-08-21) — **concession hook picked 2026-08-22**
 
 Kai remembered a better chorus. **There was never one with those exact words** —
 what he remembers is two real things that sat next to each other in the
@@ -220,7 +298,7 @@ can do!) / says who? (says Keynes! forty-two!)"*): it carries two jobs, and it
 names a dead economist in the one part people chant. It's an argument in
 call-and-response clothing, not a chorus.
 
-**Recommendation — 1 answering 2.** The bloke concedes, the politician's line
+**Picked (Kai, 2026-08-22) — 1 answering 2.** The bloke concedes, the politician's line
 answers back from the parentheses (which is what parentheses actually do in
 Suno — backing/secondary vocal, stood back from the mic), and the concession
 turns into the punchline. Seed, disposable:
@@ -335,6 +413,26 @@ until someone writes the brief. Two details the movements compress:
 - ⚪ **~250%, never "259%."** And "early 1940s" / "during the war" for the
   mulberries — never a year.
 
+**Added by the banknote arc, 2026-08-22 (from the adversarial pass):**
+
+- 🔴 **Never "nothing under it" / "backed by nothing."** A note is a promise
+  backed by the country's next shift. "Nothing" is the gold-bug's line.
+- 🔴 **The trace never passes through a mortgage or a building society.** Wages
+  and tills only — the tree reveal is honest for a physical note, not for the
+  ~97% of money that banks lend into existence.
+- 🔴 **"Receipt for work" lives in the bridge, never in V2's creation step**
+  (else it reads as wages funding the Treasury).
+- 🔴 **The trace passes THROUGH the listener's tax and keeps going.** Stopping
+  at tax turns the reveal into "the state spends my money" and the tree
+  vanishes.
+- 🔴 **Never "nobody asked how we'd pay for it."** They asked, and built it
+  anyway. Never "it was free."
+- 🔴 **V3 is person-free.** No names, no gowns, no figures — *a deck in the
+  Med* and *a man in a meeting*. The receipts stay in the video.
+- 🔴 **The limit once, joke-shaped, before the win.** Permission after the
+  condition, never before it.
+- ⚪ **The win is in the final hook's answer, not in the bridge.**
+
 ### Idea parking lot
 
 - **Money as energy that wants to move** (Kai, 2026-08-18). **Recommendation:
@@ -355,18 +453,15 @@ until someone writes the brief. Two details the movements compress:
 the very end, when the words are settled. One line = one bar at 172 (double-time
 16th flow, 8–11 syllables a line).
 
-**2026-08-21:** the draft below still follows the 08-18 map (wound → COVID
-pre-hook → receipts → mechanism). Under the ring, V1 stays as Movement 1 and
-should end on *where does it come from?*; the war and the build are new
-movements; the receipts and the mechanism fold into Movement 4. Mine the draft
-for parts — the pre-hook's COVID bars and V2's nurse run belong in Movement 4,
-and V2's 1694 opener belongs in Movement 2.
+**2026-08-22:** the sheet below is the **agreed banknote skeleton** — V1
+locked, the concession hook seeded, and three slots for Kai (V2 the trace, V3
+the rewind + still shot, the bridge) with each slot's brief in brackets. The
+brackets are instructions, not lyrics; delete them as the bars land.
 
-**Status 2026-08-18 — full first pass (Claude), written to V1's register:**
-internal rhyme inside the bar, the wonk-term-as-punchline move, the
-question-bang, the mock-polite sneer. **Only V1's original ten bars are
-approved** — in V1 below they are bars 1–8 plus the final couplet; bars 9–14
-are draft. Every other section is draft top to bottom. Kai's red pen next.
+**Status 2026-08-22 (Kai): V1 is approved in full — all 16 bars below are
+Kai's and locked.** A committed merge conflict (d799bd1, two V1s stapled
+together) was resolved to this version; the other tail's quatrains are parked
+under *Spares*. Every section after V1 is still draft top to bottom.
 
 ```lyrics
 [Intro — the politician, spoken, dry]
@@ -377,135 +472,10 @@ They say, ya can't make money from a tree
 let's see, each day, not free, ay
 work and get paid though, earning that dough
 but where does it go? nobody knows!
-<<<<<<< HEAD
-=======
-
->>>>>>> f8014cb09bd62b9d9d8f07e2966a6df9ff951545
 standards bleeding, land-lords needing
 quantitative easing, grandma FREEZING!
 means of production, means a reduction
-<<<<<<< HEAD
 rent seeking? JUST ABOUT EATING!
-=======
-stimulus checks, are next, get wrecked
-
-the cost of living is unforgiving
-gotta ask my boss for 2 more shillings
-the rent is double and I'm living in rubble
-the local kids are always causing trouble
-
-oh, my, it's an all time high
-few people celebrate and most people cry
-rent seeking? just about eating!
-sorry, did I interrupt your meeting?
-
-[Pre-hook — the crack — 8]
-and yet — hang about — one thing I've seen:
-ten years of nowt, twenty-ten to nineteen
-belts tight, wards shut, "nothing spare" —
-then the world stops dead: money from thin air!
-four hundred fifty billion in a season
-the whole lost decade, matched — that's the treason
-half-price dinners on the chancellor's card
-ten years of "can't afford it" — weren't that hard!
-
-[Hook — 8]
-what can we afford? (anything we can do!)
-says who? (says Keynes! forty-two!)
-short of money? (you can't be, mate!)
-short of bricks? (well — that's the debate!)
-one pound, two addresses, pick:
-wages make it flow — assets make it stick
-stick it in a portfolio, up goes the rent
-flow it round the houses — money well spent!
-
-[Verse 2 — the receipts — 16]
-sixteen ninety-four — quick history, chief:
-skint little island, war on the brief
-can't afford the fight? course ya can — watch:
-grew a whole bank in a fortnight, top notch!
-three hundred years on, they've "forgotten" the trick…
-twenty seventeen, Question Time — click:
-a nurse, twenty-six years, payslip flat since oh-nine,
-asks for a rise — and here's the party line:
-"there is no magic money tree that we can SHAKE"
-twenty-four days later? — billion for Belfast! shake, shake!
-lockdown lands: the VIP lane's humming
-no queue if ya know 'em — see the gowns coming:
-twenty-five million, not one fit to use
-hundred and twenty-two mil — small change, old news
-nurses got a clap, then one percent…
-and a yacht in the Med — THAT'S where it went!
-
-[Hook — repeat]
-
-[Verse 3 — the mechanism — 16]
-so here's the mechanism — free of charge:
-every printed pound needs a place to park
-send it to the ward and watch it flow:
-payslip, caff, till — round the town it goes
-everybody touches it, everybody eats
-money doing laps — that's a high street that heats
-now park it in a portfolio — nice —
-nothing new gets built, it just triples the price
-same flat, same mould, same broken door —
-"asset appreciation!" — rent's up more
-don't take my word — take the Bank's own notes:
-"hot potato," they called it — direct quote!
-pump the assets up — that's the design —
-your flat's still cold but the chart looks fine
-one banknote, two addresses — do the maths:
-her payslip's froze — the yacht's having a bath
-
-[Bridge — half-time, drums thin, played straight]
-nineteen forty-two. the city's on fire.
-a broke little island, up to its neck.
-and a calm voice comes over the wireless:
-"you don't build houses with money.
-you build them with bricks and mortar, steel and cement."
-anything we can actually do, we can afford.
-it was true in the Blitz. it's true right now.
-we can afford what we can create.
-
-[Final hook — the payoff]
-what can we afford? (anything we can do!)
-says who? (says Keynes! forty-two!)
-so where's it grow? (on a tree!)
-printer go brrr — it ain't free!
-they say there's nowt for you and me…
-but the paper grows on a tree!
-where's it GROW? (ON A TREE!)
-where's it GROW? (ON A TREE!)
-
-[Outro — the politician, beat gone]
-"…there is no magic money tree."
-(course there is, love — where'd you think the paper comes from?)
-```
-
-```
-[Intro — the politician, spoken, dry]
-"I'm afraid there is no magic money tree."
-
-[Verse 1 — the wound — 16]
-They say, ya can't make money from a tree
-let's see, each day, not free, ay
-work and get paid though, earning that dough
-but where does it go? nobody knows!
-
-standards bleeding, land-lords needing
-quantitative easing, grandma freezing
-means of production, means a reduction
-stimulus checks, are next, get wrecked
-
-the cost of living is unforgiving
-gotta ask my boss for 2 more shillings
-the rent is double and I'm living in rubble
-the local kids are always causing trouble
-
-oh, my, it's an all time high
-few people celebrate and most people cry
-rent seeking? just about eating!
->>>>>>> f8014cb09bd62b9d9d8f07e2966a6df9ff951545
 sorry, did I interrupt your meeting?
 stimulus checks are next, get wrecked
 incoming statement all about debasement
@@ -515,6 +485,56 @@ yet it seems to me, that when the government
 has a mess, then they lean on the printing press
 and the magic part is who it made rich — have a guess
 
+[Hook — the concession — 4 — SEED, Kai to rewrite]
+I don't know much — (there is no magic money tree)
+never read a book — (there is no magic money tree)
+can't tell ya what a bond yield be
+but I know that paper comes from a tree
+
+[Verse 2 — the trace, backwards — 16 — KAI TO WRITE]
+(bar 1 re-asks the question: V1 opened on "where does it go?", this opens on
+ "where's it from?" · a "got it off / got it off" chain with the same pointer
+ word on every link · boss ← punter ← her wages ← the ward ← MY TAX, and keep
+ going ← Treasury ← Bank ← "I promise to pay the bearer" · say the promise once,
+ sneer-exit · the title lands at the bottom: there's your tree · never a
+ mortgage · never "nothing under it" · never "receipt" here)
+
+[Hook — repeat — now it means "found it"]
+
+[Verse 3 — the other note — 16 — KAI TO WRITE]
+(8: THE REWIND — air-horn, pull it up, the V2 chain again with the money going
+ the other way, same hands, not getting it · 8: THE STILL SHOT — one note,
+ every verb negative: born at a desk not a till, handed to a fund — "hot
+ potato", the Bank's own words — bought a thing that already existed, price
+ up rent up nothing built, a deck in the Med, not touched in four years · "a
+ man in a meeting" chose — V1's "have a guess" comes back · PERSON-FREE: no
+ names, no gowns, no figures)
+
+[Bridge — not enough what? — half-time, drums thin — 6 max — KAI TO WRITE]
+(one idea: "how do they pay for it when there's not enough?" — not enough
+ WHAT? receipts? you don't run out of receipts, you run out of shifts · the
+ limit, once, as a joke: print past the shifts and it's paper, mate · never
+ "wages worth less" · no history)
+
+[Final hook — the win — the answer changes]
+(same call as the hook; in THIS round the crowd talks over the politician's
+ parenthetical with the afford line — "anything we can actually do we can
+ afford" is the exact Keynes; "we can afford what we can create" may follow
+ as the gloss · the paper gag gives way to the permission)
+
+[Outro — the politician, beat gone]
+"…there is no magic money tree."
+```
+
+### The 08-18 draft past V1 (parts-mining only — superseded by the banknote arc)
+
+Claude's first pass under the old map (wound → COVID pre-hook → receipts →
+mechanism → wireless bridge). Not the sheet any more. Mine it: the *"one pound,
+two addresses"* couplet and the *"hot potato — direct quote"* bar belong in V3;
+the 1694 fortnight joke is V2's optional one-liner; the nurse, the gowns, the
+£450bn and the wireless are **video** now.
+
+```
 [Hook — 8]
 what can we afford? (anything we can do!)
 says who? (says Keynes back in forty-two!)
@@ -589,6 +609,21 @@ where's it GROW? (ON A TREE!)
 ```
 
 ### Spares (alternates, not in the sheet)
+
+**V1 alternate tail (Kai, 08-18 GitHub edit, `f8014cb`) — parked 2026-08-22.**
+Kai's own quatrains from the other side of the merge; not in the locked V1, kept
+here because they are Kai's words and may want a home in a later verse:
+
+```
+the cost of living is unforgiving
+gotta ask my boss for 2 more shillings
+the rent is double and I'm living in rubble
+the local kids are always causing trouble
+
+oh, my, it's an all time high
+few people celebrate and most people cry
+```
+
 
 **V1 bar 16 — re-pointed 2026-08-21 (Kai's call).** As written it was *"and the
 magic part is the money is now worth less"* — which is the monetarist story this
