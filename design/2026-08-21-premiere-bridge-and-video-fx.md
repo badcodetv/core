@@ -1363,3 +1363,23 @@ throughout, and a 22:31 autosave (68KB against 108KB) is what exposed the diverg
 human in front of Premiere is looking at. Say so, and prefer a scratch project over someone's real
 one when only exercising tools. Camping was reopened read-only for measurement afterwards and the
 `.prproj` is intact.
+
+### 11. Binding the port at startup made every launched session fight for it (2026-08-22)
+
+Tried, and reverted the next day. The bridge was made to `listen()` when the MCP server process
+started, so the panel's light went green and stayed green through an idle session — fixing a real
+complaint that a red light "looks broken".
+
+The cost was much larger than the benefit. **Claude Code starts every server in `.mcp.json` at
+session launch**, so four open sessions became four servers all grabbing port 7890, and three
+collided before anybody had said the word "Premiere". Found live with four sessions open, the
+holder seven minutes into an unrelated task.
+
+**The bridge binds on first USE**, like Flow's browser. The panel's own wording carries the idle
+state instead — `waiting for Claude…` rather than `disconnected` + a raw close code — which costs
+nobody a port. `premiere_status` is what opens the bridge.
+
+Second-order fix: the EADDRINUSE guidance in the skill, recipes and api-notes said *"kill all but
+the newest tree"*, which is right for a self-orphaned server and **destructive when the holder is
+another live session**. All three now require tracing the holder up to its `claude` process first,
+and forbid killing a sibling session.

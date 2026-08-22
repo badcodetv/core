@@ -66,7 +66,23 @@ async function getBridge(): Promise<Bridge> {
   // exponential backoff, which is capped at 10s. A shorter wait reports "not connected" for a
   // panel that is about to dial in a second later.
   const b = new Bridge({ port, bind, connectWaitMs: 15_000 })
-  await b.listen()
+  try {
+    await b.listen()
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err)
+    if (/EADDRINUSE/.test(message)) {
+      // Almost always another Claude session that touched Premiere first. Say that, rather than
+      // leaving someone to decode a socket error — and never suggest killing it, because the
+      // other session may be mid-edit and only the user knows.
+      throw new BridgeError(
+        'PANEL_NOT_CONNECTED',
+        `Another process already holds the Premiere bridge on port ${port}. ` +
+          'Almost always a second Claude session that used Premiere first — only one session can drive it ' +
+          '(one Premiere, one panel, strictly serial).'
+      )
+    }
+    throw err
+  }
   console.error(`[premiere-mcp] bridge listening on ws://${bind === 'all' ? '0.0.0.0' : '127.0.0.1'}:${port}`)
   bridge = b
   return b
@@ -77,7 +93,9 @@ async function getBridge(): Promise<Bridge> {
 const HINTS: Partial<Record<ErrorCode, string>> = {
   PANEL_NOT_CONNECTED:
     'Open the panel in Premiere: Window ▸ Extensions (UXP) ▸ BadCode Bridge, and check the light is green. ' +
-    'If it was rebuilt since Premiere started, press ⋯ → Load in UXP Developer Tool. Setup: docs/premiere/setup.md.',
+    'If it was rebuilt since Premiere started, press ⋯ → Load in UXP Developer Tool. ' +
+    'If the message mentions the port being held, another Claude session is driving Premiere: work in that ' +
+    'one, or close it and retry here. Run `ss -ltnp | grep 7890` to see which. Setup: docs/premiere/setup.md.',
   TIMEOUT:
     'Almost always a modal dialog waiting in Premiere — switch to it and dismiss it, then retry. ' +
     'If the machine slept, WSL localhost forwarding may have broken: `wsl --shutdown` in PowerShell.',
@@ -324,8 +342,10 @@ server.registerTool(
     title: 'Premiere status',
     description:
       'Is the bridge up, is the panel connected, what is open in Premiere, and where is the media root. ' +
-      'This is the ONLY tool that runs without a configured media root — it reports `mediaRoot: null` plus a ' +
-      'hint rather than failing, so it is always the right first call when something is not working. ' +
+      'This is the ONLY tool that always answers — no configured media root, no bridge, no panel, it still ' +
+      'returns a result with a hint rather than an error, so it is always the right first call when something ' +
+      'is not working. **Calling it OPENS the bridge**, which is why the panel goes green a few seconds after ' +
+      'a session first touches Premiere and not before. ' +
       '`connected: false` means the panel is not answering: open it in Premiere (Window ▸ Extensions (UXP) ▸ ' +
       'BadCode Bridge), and if it was rebuilt since Premiere started, press ⋯ → Load in UXP Developer Tool.',
     inputSchema: {},
@@ -335,7 +355,20 @@ server.registerTool(
       const { cfg, err } = readConfig()
       if (err && err.code === 'BAD_CONFIG') return toToolError(err)
 
-      const b = await getBridge()
+      // Opening the bridge is itself a thing that can fail, and the commonest failure — another
+      // Claude session already holding the port — is INFORMATION, not an error. `premiere_status`
+      // exists to answer when nothing works; it must not be the tool that refuses to.
+      let b: Bridge
+      try {
+        b = await getBridge()
+      } catch (bridgeErr) {
+        return ok({
+          connected: false,
+          mediaRoot: cfg?.mediaRoot ?? null,
+          hint: `${bridgeErr instanceof BridgeError ? bridgeErr.message : String(bridgeErr)} ${HINTS.PANEL_NOT_CONNECTED}`,
+        })
+      }
+
       try {
         // Short window: status should answer quickly and say "no", not sit on the default wait.
         const pong = await b.send('ping', {}, { timeoutMs: 5000 })
@@ -1183,21 +1216,17 @@ const transport = new StdioServerTransport()
 await server.connect(transport)
 
 /**
- * Open the bridge NOW rather than on the first tool call.
+ * 🔴 **Nothing is opened here.** The bridge binds its port on the FIRST `premiere_*` call and not
+ * a moment earlier — the same discipline as Flow, where the browser comes up when you start
+ * working on Flow, not when you start Claude.
  *
- * The panel dials out and can only go green when something is listening, so a lazily-opened
- * bridge leaves it sitting on "waiting for Claude" — looking broken — for the whole time a
- * session runs before it first touches Premiere. Listening at startup means the panel connects
- * within its ten-second backoff and simply stays connected.
+ * This matters because Claude Code launches every server in `.mcp.json` at session startup. Four
+ * open sessions means four of these processes, and if they each grabbed the port on launch, three
+ * would collide before anybody had said the word "Premiere". An idle server is a few megabytes
+ * doing nothing; an idle server holding the port is a session-wide outage for everyone else.
  *
- * Failure here is not fatal: if the port is already held (a second Claude session, a stray
- * `tsx` from a smoke run), say so on stderr and carry on. `getBridge()` will try again on the
- * first call, and every tool still reports PANEL_NOT_CONNECTED properly in the meantime.
+ * (This was briefly the other way round, to keep the panel's light green while a session sat
+ * idle. Wrong trade: the panel now says "waiting for Claude…" instead of looking broken, which
+ * costs nothing and collides with nobody.)
  */
-void getBridge().catch((err: unknown) => {
-  const message = err instanceof Error ? err.message : String(err)
-  console.error(`[premiere-mcp] could not open the bridge at startup: ${message}`)
-  if (/EADDRINUSE/.test(message)) {
-    console.error('[premiere-mcp] something already holds the port — `ss -ltnp | grep 7890` will name it.')
-  }
-})
+

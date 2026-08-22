@@ -759,20 +759,53 @@ Reconnecting `premiere` from `/mcp` spawns a **new** server process and leaves t
 running. The old process keeps its `ws` listener on 7890, so the new server's `listen()` fails and
 **every tool returns `PANEL_ERROR: listen EADDRINUSE: address already in use 127.0.0.1:7890`**.
 
-Three generations were found alive at once on this box. Diagnose and fix from WSL:
+Three generations were found alive at once on this box.
+
+### 🔴 …but "kill all but the newest" is only safe for ONE of the two causes
+
+There are two ways to arrive at `EADDRINUSE`, they look identical, and the fix for one is
+destructive to the other. **Establish which before killing anything.**
+
+| Cause | Holder belongs to | Safe to kill? |
+| --- | --- | --- |
+| An `/mcp` reconnect orphaned an older generation | **your own** `claude` process | **Yes** — it is your own litter |
+| Another Claude session used Premiere first | **a different** live `claude` process | 🔴 **NO.** It may be mid-edit |
+
+Claude Code starts every server in `.mcp.json` at launch, so several sessions open at once is
+ordinary, not a fault — and the first one to make a `premiere_*` call takes the port for its
+lifetime. **That is the one-Premiere-one-panel law working**, not a bug to clear.
+
+Tell them apart by walking the holder up to its `claude` process and comparing with your own:
 
 ```sh
-ss -lptn 'sport = :7890'                                   # which pid holds it
-ps -eo pid,ppid,etime,cmd | grep premiere-mcp/src/server.ts # every generation
-kill -TERM <the old pids>                                   # keep only the newest tree
+ss -lptn 'sport = :7890'                       # the holding pid
+up() { P=$1; while [ -n "$P" ] && [ "$P" != 1 ]; do ps -o pid=,args= -p "$P" --no-headers | cut -c1-90
+        P=$(ps -o ppid= -p "$P" 2>/dev/null | tr -d ' '); done; }
+up <holding pid>                               # whose server is it
+up $$                                          # …and whose are you
 ```
 
-The next tool call then binds and the panel reconnects on its own backoff (capped at 10s), so no
-Premiere-side action is needed. **`getBridge()` only caches the `Bridge` after `listen()` resolves**,
-so a failed bind does not poison the process — retrying really does work.
+Same `claude` pid in both chains → your own orphan, `kill -TERM` it. **Different `claude` pid →
+another live session. Do not kill it.** Say what you found and let the user choose: work in that
+session, or close it themselves. Only they know what is unfinished in it.
 
-This is the same `EADDRINUSE` hazard the smoke scripts were written around (Discovered Issues Log,
-T6); an MCP reconnect is simply another way to produce it.
+Measured live 2026-08-22: four sessions open, three holding `premiere-mcp` processes, and the one
+holding the port was seven minutes into an unrelated task with an agent attached. "Kill all but
+the newest" would have destroyed it.
+
+The next tool call after a genuine release binds cleanly, and the panel reconnects on its own
+backoff (capped at 10s) — no Premiere-side action needed. **`getBridge()` only caches the `Bridge`
+after `listen()` resolves**, so a failed bind does not poison the process; retrying really works.
+
+### The bridge binds on first USE, which keeps idle sessions out of the fight
+
+For one day (2026-08-21) the server opened its listener at startup, so the panel's light stayed
+green through an idle session. That was the wrong trade: it made every *launched* session grab the
+port, so three collided before anyone had touched Premiere. Reverted 2026-08-22.
+
+**Nothing binds until the first `premiere_*` call** — the same discipline as Flow, where the
+browser comes up when you start working on Flow. The panel reads `waiting for Claude…` until then,
+which is honest and costs nobody a port. `premiere_status` is what opens it.
 
 ### 🔴 Every edit tool acts on the ACTIVE sequence — and a human clicking in Premiere changes which
 

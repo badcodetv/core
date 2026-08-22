@@ -76,9 +76,24 @@ light is red exactly when that process is not running — and green whenever it 
 | `connected` | Working | — |
 | `closed (1011)` or another code | A real error. The server accepted the panel and then hung up | Check §1a |
 
-**The bridge opens when the MCP server starts, not on the first tool call**, so in a session with
-the server loaded the panel goes green within its ten-second backoff and stays green for the
-whole session. If it is red for a whole session, the server is not loaded — see below.
+**The bridge opens on the FIRST `premiere_*` call, not when the session starts** — the same
+discipline as Flow, where the browser comes up when you start working on Flow. So a session that
+has not touched Premiere yet leaves the panel on "waiting for Claude…", and that is correct.
+**`premiere_status` is what opens it.** Call that, then watch the light go green within ten
+seconds.
+
+🔴 **Only ONE session can drive Premiere.** Claude Code starts every server in `.mcp.json` at
+launch, so four open sessions means four of these processes — but the first one to call a
+`premiere_*` tool takes the port and keeps it for its lifetime. Any other session then reports:
+
+> *Another process already holds the Premiere bridge on port 7890.*
+
+That is not a fault to fix, it is the one-Premiere-one-panel law showing itself. **Work in the
+session that owns it, or close that session and retry here.** `ss -ltnp | grep 7890` names the
+holder; trace it with `ps -o ppid= -p <pid>` up to its `claude` process.
+
+**NEVER kill another session's server to take the port.** It may be mid-edit, and only the user
+knows what is unfinished in it. Tell them what you found and let them choose.
 
 🔴 **The one case that genuinely needs action: the MCP server is not loaded.** MCP servers are
 read from `.mcp.json` **at startup**. If the `premiere` entry was added during the current
@@ -95,6 +110,32 @@ fix; a panel reload is not.
 **Never ask the user to reload the panel for a connection problem.** Reload is for one thing
 only: picking up a **rebuilt** panel (§1a). Asking for it otherwise wastes their time and teaches
 them a reflex that will mislead them later.
+
+### §1d — the port is held: whose is it?
+
+`EADDRINUSE` has two causes that produce the same message and want opposite responses.
+
+| Cause | The holder traces up to | Do |
+| --- | --- | --- |
+| An `/mcp` reconnect orphaned your own older server | **your own** `claude` process | Kill it — your litter |
+| Another Claude session called a `premiere_*` tool first | **a different** live `claude` process | 🔴 **Leave it.** It may be mid-edit |
+
+```sh
+ss -lptn 'sport = :7890'                       # the holding pid
+up() { P=$1; while [ -n "$P" ] && [ "$P" != 1 ]; do ps -o pid=,args= -p "$P" --no-headers | cut -c1-90
+        P=$(ps -o ppid= -p "$P" 2>/dev/null | tr -d ' '); done; }
+up <holding pid>                               # whose server is it
+up $$                                          # …and whose are you
+```
+
+Same `claude` pid → your orphan, `kill -TERM` it and retry. **Different `claude` pid → another
+live session.** Several sessions open at once is ordinary (Claude Code starts every `.mcp.json`
+server at launch); the first to *use* Premiere owns it. That is the one-Premiere-one-panel law
+working, not a fault.
+
+**Report and let the user choose** — work in that session, or close it themselves. Only they know
+what is unfinished in it. A holder found this way was once seven minutes into an unrelated task
+with an agent attached.
 
 ### §1b — `mediaRoot: null`: no config
 
@@ -158,8 +199,12 @@ say *why* — otherwise it reads as superstition.
 6. **Outputs live beside the project.** `frames\` and `renders\` sit next to the `.prproj`,
    whichever way it was opened. `premiere_open_project` returns both paths — use them rather than
    assuming the media root.
-7. **Never guess a match name.** Effects and transitions are addressed by internal match name and
-   no third-party vendor publishes theirs. List, then apply.
+7. **Never guess a match name, and address params by INDEX.** Effects and transitions are
+   addressed by internal match name and no vendor publishes theirs — list, then apply. Params are
+   worse: display names **repeat and are sometimes blank**. Lumetri Color has two "Saturation",
+   two "Intensity", two "Look"; `AE.ADBE Opacity` has two "Blend Mode"; Motion's Uniform Scale is
+   named `" "`. **`premiere_describe_effect` reports every index — use those.** A name that
+   matches twice is refused rather than guessed at, which is a rejection you should expect.
 8. 🔴 **Every edit tool acts on the ACTIVE sequence and takes no sequence argument.** A human
    clicking a different timeline tab silently redirects your next call. Re-assert
    `premiere_set_active` before a run of edits, and **read `sequence.name` on every response** to
@@ -168,6 +213,9 @@ say *why* — otherwise it reads as superstition.
    person at the keyboard. If the user says they are going to work in Premiere, stop calling until
    they say they have stopped — and tell them that opening or activating a project changes what
    they are looking at.
+10. **Leave a record before you finish.** A session that builds a timeline and writes nothing down
+    has done the work twice — once now, and once again next week when nobody can remember what was
+    applied or why. §7.
 
 ---
 
@@ -249,7 +297,7 @@ Do not guess a match name and do not go looking for a plugin we do not own:
 | `EFFECT_NOT_FOUND` / `TRANSITION_NOT_FOUND` | Guessed a match name | List first; law 7 |
 | `INVALID_ARGS` | Bad arguments — **or a stale panel** | Check the call, then §1a |
 | `EVAL_ERROR` | Your snippet threw | The stack is in the error |
-| `PANEL_ERROR: listen EADDRINUSE` | 🔴 **An old MCP server still holds port 7890.** An `/mcp` reconnect spawns a new server and orphans the old one | `ss -lptn 'sport = :7890'`, then `ps -eo pid,ppid,cmd \| grep premiere-mcp/src/server.ts` and kill all but the newest tree. The next call binds and the panel reconnects itself |
+| `PANEL_ERROR: listen EADDRINUSE` or *"another process already holds the bridge"* | Something else has port 7890. **Two causes that look identical:** your own orphan from an `/mcp` reconnect, or **another live Claude session** that used Premiere first | 🔴 **Find out which before killing anything** — §1d. Your own orphan: kill it. Another session: leave it alone and tell the user |
 
 ---
 
@@ -268,6 +316,75 @@ session** — that file is why the next person does not pay for the same lesson.
 
 ---
 
+## 7. Write it back — the step that is easy to skip and always costs
+
+**Before you tell the user you are done, write down what you did.** Not later, not "if there is
+time" — in the same session, while the numbers are still true. A timeline is not
+self-documenting: `.prproj` is gzipped XML, transitions cannot even be read back, and the next
+session starts blind.
+
+There are **two destinations and they are not interchangeable.**
+
+### 7a. What you DID → the ledger
+
+The story's own doc, next to the canon that produced it — a scene ledger under
+`docs/stories/<story>/scenes/<scene>.md`, or the story README if there is no scene file. Add or
+update a **`## Premiere`** section:
+
+```markdown
+## Premiere
+
+**Project:** `/mnt/d/badcode-videos/<story>/<story>.prproj`
+**Sequence:** `s01` — 1920×1080 @ 25, 123.8s
+**Built:** 2026-08-21 by session (bridge)
+
+| Track | What |
+| --- | --- |
+| V1 | `s01-earth` 0→56 · `s02-hong-kong` 56→83.8 · `s03-plant-room` 83.8→123.8 |
+| A1 | `The Global Overview.wav` 0→95.2 |
+
+**Applied**
+- `v0:0` Motion → Scale 150 — source is 1280×720 in a 1080p sequence, so it was inset in black
+
+**Outputs**
+- Frame: `…/frames/s01-10s.png` (checked by eye)
+- Render: *not yet*
+
+**Needs a human**
+- `s02` and `s03` are 24fps in a 25fps sequence — 68s of 124s is conformed. Fine if delivery is 25
+```
+
+**What makes it worth writing:**
+
+- **Replayable, not prose.** Refs, times, match names and parameter *indices* — enough that
+  someone could rebuild it. "Added a nice dissolve" is worthless; `AE.ADBE Cross Dissolve New`,
+  `at: "end"`, `duration: 1` is not.
+- **Say why, when the why is not obvious.** `Scale 150` means nothing on its own; "because the
+  source is 720p in a 1080p sequence" means someone can spot the same problem next time.
+- **Be honest about what is unfinished**, and about anything a human still has to do by hand —
+  audio crossfades especially, since there is no API for them at all.
+- **Record what was actually looked at.** An exported frame you read is evidence; a timeline whose
+  numbers are right is not.
+
+### 7b. What you LEARNED about Premiere → `api-notes.md`
+
+Anything the API did that surprised you goes in
+[`docs/premiere/api-notes.md`](../../../docs/premiere/api-notes.md), in the same session. Say what
+you expected, what actually happened, and what to do instead. That file exists because
+`Project.open()` rejects with a bare string even when it succeeds, and nobody should ever pay for
+that twice.
+
+If you worked out a *sequence of calls* that is worth repeating, it belongs in
+[`docs/premiere/recipes.md`](../../../docs/premiere/recipes.md) instead. If you learned what an
+effect's parameter indices are, put them in
+[`docs/premiere/effects-catalogue.md`](../../../docs/premiere/effects-catalogue.md) — it has an
+explicit list of unanswered questions at the bottom waiting for exactly that.
+
+**The test for which file:** *did I learn something about this story, or about Premiere?* Story →
+ledger. Premiere → notes, recipes, catalogue.
+
+---
+
 ## Knowledge base
 
 | File | What |
@@ -279,3 +396,4 @@ session** — that file is why the next person does not pay for the same lesson.
 | [`packages/premiere-mcp/README.md`](../../../packages/premiere-mcp/README.md) | Tool reference, error table, how to build the panel |
 | [`docs/premiere/bridge-protocol.md`](../../../docs/premiere/bridge-protocol.md) | The wire protocol — only if you are changing the bridge |
 | [`design/2026-08-21-premiere-bridge-and-video-fx.md`](../../../design/2026-08-21-premiere-bridge-and-video-fx.md) | Why it is built this way; the ticket list |
+| `docs/stories/<story>/scenes/<scene>.md` | 🔴 **Where your work gets recorded** — the `## Premiere` section. §7 |

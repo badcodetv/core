@@ -409,7 +409,7 @@ session.** That file is why the next person does not pay for the same lesson.
 | Code | What it really means | Do |
 | --- | --- | --- |
 | `PANEL_NOT_CONNECTED` | Panel closed, or **rebuilt and not reloaded** | ⋯ → Load in UXP Developer Tool |
-| `PANEL_ERROR: listen EADDRINUSE` | **An old MCP server is still holding port 7890** | `ss -lptn 'sport = :7890'`, kill all but the newest `premiere-mcp/src/server.ts` tree |
+| `PANEL_ERROR: listen EADDRINUSE` | Something holds port 7890 — **either your own orphaned server, or another live Claude session that used Premiere first** | Trace the holder up to its `claude` process before killing anything. Yours → kill it. Someone else's → leave it and tell the user. Full recipe: the skill's §1d |
 | `TIMEOUT` | **Almost always a modal dialog waiting in Premiere** | Ask the user to look and dismiss it |
 | `CLIP_NOT_FOUND` | A stale ref | Re-read the state |
 | `EFFECT_NOT_FOUND` / `TRANSITION_NOT_FOUND` | Guessed a match name | List first |
