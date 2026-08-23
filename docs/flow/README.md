@@ -46,7 +46,7 @@ Same split as [`docs/suno-gpt/`](../suno-gpt/README.md) and the `suno-prompt` sk
 
 ---
 
-## The 19 rules
+## The 21 rules
 
 0a. 🔴 **A camera move through a scene with DEPTH is a Veo job, not a post job.** Post can scale
    and crop one flat image; it cannot invent the far side of a building, so on any subject with
@@ -83,6 +83,12 @@ Same split as [`docs/suno-gpt/`](../suno-gpt/README.md) and the `suno-prompt` sk
    *behind* on image-to-video (47.2% over 646) — and we are stills-first on almost every shot.
    Iterate on Lite for framing, blocking and policy-cleanliness; **confirm the motion on Fast**
    before you lock. (official, [Veo 3.1 Lite model card](https://deepmind.google/models/model-cards/veo-3-1-lite/))
+   ⚠️ **One scoped exception, measured 2026-08-23 (ours, one shot).** On a *locked-off* plate whose
+   only motion is weather, litter and crowd micro-movement, and whose screens are explicitly held,
+   Lite was indistinguishable from Fast: screen swing 23 vs 25, motion 5.45 vs 5.08, camera held in
+   both, at half the credits. That is the class where the model has least to invent — and it is most
+   of a bulletin-style scene. **It does not generalise.** Google's head-to-head still has Lite behind
+   on image-to-video overall, so keep Fast for real subject motion, for parallax, and for a face.
 6. **Pre-generate every still before you touch video.** A good first frame is most of
    a good clip.
 7. **Dialogue: colon, not quotation marks, plus an explicit no-subtitles instruction.**
@@ -130,6 +136,38 @@ Same split as [`docs/suno-gpt/`](../suno-gpt/README.md) and the `suno-prompt` sk
     difference, i.e. codec noise). The test: delete the scratch folder except the approved video,
     and the scene must still rebuild from the repo plus that one file.
     `.claude/skills/flow-automation/SKILL.md` §9.
+19. 🔴 **Seal the plate before you spend a video credit — anything ambiguous in the still is a paid
+    re-roll.** Veo animates whatever it cannot explain. A dead screen carrying pale patches of damage
+    grew into a lit white graphic on two consecutive rolls (`p4-london`, 2026-08-23, **80 credits**)
+    and was then killed for free by one `flow_edit_image` that flattened the panel to matte black.
+    **Stills do not bill; video does.** Before any `startImage` call, run the plate gate:
+    - Every screen, sign or display — is its content final, and unambiguous? A bright patch on a
+      surface that is meant to read as *dead* is the most reliable way there is to lose a roll.
+    - Anything half-legible — text, a logo, a reflection — Veo will finish the thought for you,
+      differently every time.
+    - A rank of near-identical objects in the camera's path (rule 17).
+    - **Is this even the right beat?** A whole bulletin sequence was shot before anyone noticed it
+      was the *next* scene's image.
+    - Is the brightest object in frame a screen? Then `hold_grade.py`'s p90 anchor will measure
+      content rather than lighting — plan the plain lanczos fallback now.
+    **And the gate has a ceiling — but it is higher than it looks.** Sealing the plate stops Veo
+    *inventing*; it does not stop it *re-interpreting*. Measured 2026-08-23 on `p4-shibuya-after`:
+    a plate whose screen carried fine static damage came back scrubbed clean on Lite and re-damaged
+    in a different place on Fast — **neither tier reproduced it**. Fine texture is not safe.
+    🟢 **Legible TEXT, however, survives — put it in the plate.** Same day, `p1-london-a`: Nano Banana
+    Pro rendered `200,000 OFFICE WORKERS FIRED` into the strap of a curved screen, first try, both
+    candidates, correctly curved; Veo then held it **perfectly legible and unchanged across all 8
+    seconds** (swing 4/255) for one Lite clip, 10 credits. So do NOT ask Veo to render text and do
+    NOT reach for post first: **render the text into the still, then hold it**. Nano Banana sets type
+    properly, images do not bill, and the words become part of the plate you already sealed.
+    Post-compositing ([`post-production.md`](./post-production.md) §3.10) stays the fallback for when
+    the text must be exact to the pixel, must change later, or the plate cannot be regenerated —
+    and note it needs a per-frame track, because even a "static" clip creeps 34–66px.
+20. **`count: 1` is the default; a second candidate is a purchase, not a setting.** `count: 2` costs
+    exactly double — it buys one wait instead of two, never a discount. Buy it for the **first** shot
+    of a new setup or a new motion pattern, where you genuinely cannot predict what Veo will do. Once
+    the plate is sealed and the formula is proven it is a coin you flip and throw away: on cut 4,
+    eight of nine calls ran at 2 and the second take was used **once** — ≈160 credits in one scene.
 
 ---
 

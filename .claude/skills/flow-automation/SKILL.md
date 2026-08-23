@@ -196,7 +196,7 @@ Part B0 the other empty results, Part B silent quality failures.
 
 ---
 
-## 4. The nineteen laws
+## 4. The twenty-one laws
 
 These are why the client looks the way it does. Every one was paid for live. If you are
 changing `@badcode/flow-mcp`, they are the spec; if you are just calling tools, laws 1–5
@@ -272,6 +272,21 @@ explain most of what you will see.
     first digits will break on the next segment Flow adds. Anchor on the token *and its
     neighbour* (`(\d+)s(?=crop|$)`), never on position. This one aborted every video call while
     reporting the opposite of the truth.
+20. 🔴 **Upload from the WSL filesystem, never from `/mnt/c`.** Measured 2026-08-23: four
+    consecutive calls died on `waiting for locator('[role="option"]').filter({hasText: '<file>'})`
+    — the upload silently never landed, `flow_list_media` showed an empty project, and it failed
+    identically across **two Chrome instances, three fresh projects and two filenames**. A
+    `flow_edit_image` on the same file failed too, at a different control, proving the whole upload
+    path was down rather than video mode. `flow_generate_image` (no upload) worked throughout, which
+    is the cheap free probe that isolates it. **`cp` the file into the WSL filesystem and pass that
+    path — it then worked first try.** Note the failure is intermittent, not absolute: uploads from
+    `/mnt/c` had succeeded twenty minutes earlier in the same session, so do not wait for it to fail.
+21. 🔴 **Never generate a diagnostic image into the project you are about to animate in.** Doing
+    exactly that on 2026-08-23 cost **40 credits**: a throwaway "plain dark grey empty room" ping
+    test was picked up as the start frame, and the clip opened on that empty room, dissolved into a
+    completely different studio and rendered the strap as garbled Cyrillic. The picker matches on
+    the tile grid, so a scratch image is not inert — it is a candidate. Probe in a *separate*
+    project, or delete the probe before generating.
 19. 🔴 **A cluttered project silently hands back OLD media as if it were new.** The animate path
     identifies your clip by diffing the tile grid, and that diff degrades as a project fills.
     Measured 2026-08-23 in a project holding ~50 clips: one `flow_generate_video` call returned
