@@ -152,7 +152,9 @@ pages it originally specified — `premiere-builtins.md`, `premiere-plugins.md`,
 "which effect" question is answered more concretely by the live
 [`effects-catalogue.md`](../premiere/effects-catalogue.md) than a distilled page would have been;
 and ffmpeg recipes still live in [`docs/flow/post-production.md`](../flow/post-production.md) plus
-briefs 12–18. There is also **no `video-fx` skill yet** — reach for `premiere-automation` for the
+briefs 12–18. The **`video-fx` skill now exists** (`.claude/skills/video-fx/`, 2026-08-23) and is
+the way in: it owns lane choice, routes "what effect does X" into the catalogues, and carries the
+delivery gate. This page is its reference. Alongside it: `premiere-automation` for driving the
 edit, `flow-prompt` for the element, and `find-footage` for anything real we might source instead
 of inventing.
 
