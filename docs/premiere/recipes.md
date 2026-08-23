@@ -260,11 +260,21 @@ Then, always: `premiere_export_frame` and look.
    (`PR.ADBE Extract`).
 4. Soften the edge with **Edge Feather** (`AE.ADBE Edge Feather`) if it reads as cut out.
 
-⚠️ **Blend modes are not currently reachable by number.** They live on the Opacity intrinsic as two
-params both named `Blend Mode` (indices 1 and 2), and the API exposes **no way to enumerate the
-options** — a live probe found no `getOptions`, `getEnumValues` or range accessor of any kind. The
-integer for Screen has not been measured. **Key instead of blending** until someone runs the sweep
-(see the Open questions in `effects-catalogue.md`), and run that sweep **in a scratch project**.
+🟢 **Or blend instead of keying — one call, measured 2026-08-22.** An element shot on black wants
+**Screen**, and Screen is the integer **22** on the Opacity intrinsic's **param 1**:
+
+```jsonc
+premiere_set_param({ clip: "v1:0", component: 0, param: 1, value: 22 })   // Screen
+premiere_set_param({ clip: "v1:0", component: 0, param: 1, value: 14 })   // Add — hotter, clips sooner
+```
+
+**Screen is usually the better first try than a Luma Key**: it needs no threshold, it keeps the
+soft falloff at the edge of smoke, and there is nothing to feather. Reach for the key when the
+element has genuinely opaque bright areas you want solid, or when black is not quite black.
+
+🔴 **It must be param 1.** There are two params called `Blend Mode` on the Opacity intrinsic, and
+**param 2 does nothing at all** — swept across 24 values with the picture unchanged every time.
+Full integer table and how it was measured: [`effects-catalogue.md`](effects-catalogue.md).
 
 Stock-element libraries (Mixkit, Pexels, Videvo — free tiers) are the fallback if Flow will not
 produce it.
@@ -273,20 +283,31 @@ produce it.
 
 ## Recipe: text on screen without a template
 
-🟢 `AE.ADBE PPro SimpleText` is an ordinary effect, so it applies and sets like any other — no
-MOGRT, no Essential Graphics, no unresolved API question.
+🔴 **You cannot set the words from here. Measured 2026-08-22, confirmed with pixels.** This recipe
+previously said Simple Text was "an ordinary effect with no unresolved API question". It is half
+that: the styling is automatable, the text is not.
 
 ```jsonc
 premiere_apply_effect({ clip: "v0:0", matchName: "AE.ADBE PPro SimpleText" })
-premiere_describe_effect({ clip: "v0:0", component: "Simple Text" })   // dump its params, then set them
+premiere_set_param({ clip: "v0:0", component: "Simple Text", param: 3, value: 120 })  // Size    ✅
+premiere_set_param({ clip: "v0:0", component: "Simple Text", param: 4, value: 100 })  // Opacity ✅
+premiere_set_param({ clip: "v0:0", component: "Simple Text", param: 1, value: {x: 0.5, y: 0.5} })  // Position ✅
+// param 5 is the text itself — throws `Illegal Parameter type`.                              🔴
 ```
 
-Its parameter list has not been recorded yet — **describe it once and write the indices into
-[`effects-catalogue.md`](./effects-catalogue.md)** so the next session does not pay again.
+An exported frame after all of the above rendered **"Default Text"** at 120pt, full opacity: the
+styling landed, the words did not.
+
+**So place and style it, then hand the typing over.** That is the correct answer, not a gap:
+
+> "Simple Text is on the clip at 4s, 120pt, centred. Type the line into **Effect Controls ▸ Simple
+> Text ▸ Source Text** — I can't set the words from here."
+
+The same is expected of a MOGRT's text fields (T11's remaining half). Both are `premiere-automation`
+skill §8 hand-overs. Full param table: [`effects-catalogue.md`](./effects-catalogue.md).
 
 For animated/templated type, the `AE.AE_Impact_Typewriter` and `AE.AE_Impact_Text_Animator`
-*transitions* are free and installed. Full MOGRT parameter automation is still an open question
-(T11).
+*transitions* are free and installed.
 
 ---
 
@@ -344,6 +365,18 @@ premiere_add_marker({ name: "phrase 1", time: 0.7147, comments: "175.78 BPM · 8
 premiere_add_marker({ name: "phrase 2", time: 11.6373, comments: "175.78 BPM · 8 bars" })
 // …one per emitted time
 ```
+
+**Proven end to end, 2026-08-22:** the real Karen track → 23 phrase markers in Premiere, every one
+landing at exactly the requested time.
+
+🟢 **Markers do NOT snap to the frame grid.** Every clip edit does; markers keep the exact tick.
+`0.7147s` is frame 17.87 at 25fps and it stored unrounded. So the grid survives at full precision
+and the *cut* snaps against it, not the reference.
+
+🟢 **For a whole grid, put it in one transaction** — `createAddMarkerAction` is an ordinary Action,
+so 23 of them is one `premiere_eval`, one undo entry, and **1ms**. It also sidesteps the
+script-object exhaustion that bites a long loop of separate commits. Pattern in
+[`api-notes.md`](api-notes.md).
 
 **Mark phrases, not beats.** 175 BPM over four minutes is **730 beats** — 730 markers is unusable
 and cutting on every one of them is the most obvious amateur edit there is. The same track is
@@ -467,7 +500,11 @@ session.** That file is why the next person does not pay for the same lesson.
 | Apply an effect and set its params in one undo step | Two transactions, unavoidably |
 | Enumerate what projects are open | `getActiveProject()` is the only handle Premiere offers |
 | Remove the Motion or Opacity intrinsics | Refused, deliberately. Reset their params instead |
-| Read blend mode options | No enumeration accessor exists |
+| Read blend mode options | No enumeration accessor exists — but **the integers are now measured**, see `effects-catalogue.md` |
+| Set the words on a Simple Text effect | 🔴 `Illegal Parameter type`. Style it, then hand the typing over |
+| Set the words on a **MOGRT** | 🔴 Same refusal. Its position/scale/rotation/opacity **do** write; `Source Text` does not |
+| Trust `exportSequenceFrame`'s `true` inside an eval | It returns true for frames it never writes — ~20% loss under a rapid loop. The typed `premiere_export_frame` waits properly |
+| Run 50+ transactions in one `premiere_eval` | Premiere's script objects exhaust around 54 and every write fails until it recovers. Batch about a dozen |
 | Get an exact time back from an edit | **Everything snaps to a frame.** Compare within half a frame (`0.5 / frameRate`, which is in every state) |
 
 ---

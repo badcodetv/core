@@ -21,7 +21,7 @@ is canon 6 and cut 3, and it is the third thing the audience sees — which is p
 numbers had to stop being the filename.
 
 **Approved cut:** `final/CUT3-SEQUENCE.mp4` — 40.0s, 24fps, 1920×1080, five beats of 8s.
-Lives at `/mnt/c/Users/kai/Desktop/gpom-plant-room/`, not in the repo.
+Lives at `/mnt/d/badcode-videos/gitpush-origin-master/plant-room/`, not in the repo.
 
 ---
 

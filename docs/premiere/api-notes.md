@@ -922,6 +922,192 @@ promote to the section above once proven, correct it if wrong.
 
 ---
 
+## `premiere_eval` in anger, 2026-08-22 (the blend-mode sweep)
+
+Everything below came out of one job: sweeping `AE.ADBE Opacity`'s Blend Mode through every
+integer. Four separate traps, and three of them silently produce a wrong answer rather than an
+error.
+
+### 🔴 `helpers.withTransaction`'s builder is SYNCHRONOUS and takes a CompoundAction
+
+The signature is `withTransaction(project, label, build: (ca: CompoundAction) => void)`. The
+builder must call **`ca.addAction(...)`**; it is not an async function and its return value is
+discarded.
+
+```js
+// WRONG — does nothing, and reports success
+helpers.withTransaction(project, 'x', async () => [param.createSetValueAction(kf, true)])
+
+// RIGHT
+const kf = param.createKeyframe(value)                       // resolve everything first
+helpers.withTransaction(project, 'x', (ca) => { ca.addAction(param.createSetValueAction(kf, true)) })
+```
+
+**An empty transaction commits successfully.** `executeTransaction` returned `true` for a callback
+that added no actions, so `withTransaction` did not throw and the caller had every reason to
+believe the write landed. It had not: Opacity read back 100 after being "set" to 42. **Read the
+value back after any write you care about** — the transaction returning is not evidence.
+
+`withActions(project, label, thunks)` is the nicer helper the command modules use, but **it is not
+exposed to `premiere_eval`** — eval gets `withTransaction` only.
+
+### 🔴 A committed transaction invalidates every handle resolved before it
+
+Reuse a `Clip`, `ComponentChain`, `Component` or `ComponentParam` across a commit and the next
+native call throws **"The script object is no longer valid."** — the same error T8 hit on
+`TrackItemSelection`.
+
+So a loop that writes must re-resolve from the project down on **every** iteration:
+sequence → clip → chain → component → param. This is the T10 note about applying an effect and
+setting its params generalised: it is not about effects, it is about transactions.
+
+### 🔴 Long transaction loops inside one eval exhaust Premiere and it does not recover mid-call
+
+A single eval running **55 write-then-export cycles** worked for about 54 of them and then began
+throwing "The script object is no longer valid." from `withTransaction` itself — with freshly
+resolved handles. The typed `premiere_set_param` failed the same way immediately afterwards, so it
+is a host-wide state, not an eval bug.
+
+**It clears on its own.** A minute later the same call succeeded, and reads never stopped working
+throughout. **Keep a loop inside one eval to roughly a dozen commits and split the rest across
+calls.** A batch of 7 and a batch of 6 both ran clean.
+
+### 🔴 `exportSequenceFrame` returns `true` for frames it never writes
+
+T12 recorded that the promise resolves before the file is finished. It is worse than that under
+load: of 55 exports that all returned `true`, **44 files existed** afterwards, and a later batch of
+6 produced 4. The missing ones never appeared — this is not the settle delay, they are simply
+absent minutes later.
+
+The typed `premiere_export_frame` is safe (`waitForStableFile` in `src/server.ts` waits for the
+file to exist and its size to hold). **Raw `ppro.Exporter.exportSequenceFrame` inside an eval is
+not.** Check the file exists yourself and retry, or accept a lossy sweep and measure what landed.
+
+### 🔴 A string parameter cannot be written — `Illegal Parameter type`
+
+`AE.ADBE PPro SimpleText` param 5 is the text itself. It reads back `unreadable`, and writing it
+throws `Illegal Parameter type`. Its *styling* params write fine — Size 120 and Opacity 100 both
+landed and were confirmed in an exported frame that still read **"Default Text"**.
+
+T10 recorded that unreadable params "can still be WRITTEN". **That is true of Lumetri's structural
+params and false of this one** — unreadable does not imply writable. Expect the same of a MOGRT's
+text fields when T11's write half is finally tested.
+
+
+## MOGRTs, answered live 2026-08-22 (T11)
+
+The question the research sweep raised three times, settled with pixels.
+
+### ✅ `insertMogrtFromPath` works, and it is not an Action
+
+```js
+const editor = await ppro.SequenceEditor.getEditor(seq)
+let inserted = null
+project.lockedAccess(() => {
+  inserted = editor.insertMogrtFromPath(winPath, tick, videoTrackIndex, audioTrackIndex)
+})
+// inserted: Array<VideoClipTrackItem | AudioClipTrackItem>, length 1 for a title
+```
+
+It runs **inside `lockedAccess` and outside `executeTransaction`**, exactly as the declarations
+implied, and returns the created track items synchronously. The clip arrives named `Graphic`.
+
+### The inserted MOGRT exposes MORE than expected — four components
+
+| # | matchName | displayName | Params |
+| --- | --- | --- | --- |
+| 0 | `AE.ADBE Opacity` | Opacity | 3 |
+| 1 | `AE.ADBE Motion` | Motion | 11 |
+| 2 | `AE.ADBE Graphic Group` | **Vector Motion** | 6 — Position, Scale, Rotation, Anchor Point |
+| 3 | `AE.ADBE Text` | **Text** | 22 — **param 0 is `Source Text`** |
+
+So a MOGRT is not opaque. Its transform, scale, rotation and opacity are ordinary readable,
+writable params, and `premiere_set_param` drives them.
+
+### 🔴 …but `Source Text` cannot be written. `Illegal Parameter type`
+
+| Route | Result |
+| --- | --- |
+| `getValueAtTime()` | throws — reports `unreadable` |
+| `getStartValue()` | `null` |
+| `getKeyframePtr()` | throws `Illegal Parameter type` |
+| `areKeyframesSupported()` | **`false`** — the only param seen to return this |
+| `createSetValueAction(createKeyframe('BADCODE'), true)` | throws **`Illegal Parameter type`** |
+
+Verified with an exported frame: after writing Text ▸ Opacity 55 and Text ▸ Scale 140 (both
+landed and both visible), the rendered title still read **"Your Title Here"**.
+
+**The same is true of `AE.ADBE PPro SimpleText` param 5.** Two independent text params, same
+refusal — this is how Premiere treats string params through UXP, not a MOGRT quirk.
+
+### 🔴 It will NOT create a track, and says only "Invalid parameter"
+
+`premiere_insert_clip` creates a video track when you address one past the last. **`insertMogrtFromPath`
+does not.** Asking for `videoTrack: 3` on a three-track sequence throws a bare
+`Error: Invalid parameter` with nothing to say which parameter was wrong — the path is fine, the
+time is fine, the track is the problem. Insert onto an existing track, or make one with a clip first.
+
+### Component count varies by template
+
+`Basic Title` inserts with **four** components including `AE.ADBE Text`. `Bold Lower Third Left`
+inserts with **three** — Opacity, Motion, Vector Motion, and **no Text component at all**. Do not
+assume component index 3 is the text on an arbitrary template; read the chain back from the
+`changed.added` entry the tool returns.
+
+### The ruling
+
+**T11's write half is answered: no. Do not build a workaround.** *(Kai, 2026-08-21: full
+automation was never the goal.)* The working division is:
+
+- **Automatable:** choosing the template, placing it at a timecode, its position, scale, rotation
+  and opacity.
+- **Handwork:** the words. `premiere-automation` skill §8.
+
+What each installed template asks for is catalogued offline in
+[`mogrt-catalogue.md`](mogrt-catalogue.md), so a hand-over can name the fields before anything is
+placed.
+
+---
+
+## Markers hold exact time — they do NOT snap to the frame grid
+
+Every clip edit snaps to a frame boundary (T8). **Markers do not.** 23 markers were written from a
+beat grid at 175.78 BPM and read back at exactly the requested times:
+
+```
+asked  0.7147   11.6373   22.56   …   241.0133
+got    0.7147   11.6373   22.56   …   241.0133
+```
+
+0.7147s at 25fps is frame 17.87 — not a boundary — and Premiere stored the tick unrounded
+(`66.2507` came back as `66.25069999999606`, a float round-trip, not a snap).
+
+**So a beat grid survives into Premiere at full precision**, which is what makes markers the right
+carrier for one: the cut you place against the marker snaps, the reference itself does not.
+
+### 23 markers, one transaction, one undo entry
+
+`createAddMarkerAction` is an ordinary Action, so the whole grid goes in a single
+`executeTransaction` — which is also how to avoid the script-object exhaustion above. It took
+**1ms**.
+
+```js
+const markers = await ppro.Markers.getMarkers(seq)
+helpers.withTransaction(project, 'beat grid', (ca) => {
+  TIMES.forEach((t, i) => ca.addAction(markers.createAddMarkerAction(
+    `phrase ${i + 1}`, ppro.Marker.MARKER_TYPE_COMMENT,
+    helpers.secondsToTick(t), ppro.TickTime.createWithSeconds(0), 'note')))
+})
+```
+
+🔴 **The constant is `ppro.Marker.MARKER_TYPE_COMMENT`.** `ppro.Constants.MarkerType` does not
+exist and fails with `Cannot read properties of undefined (reading 'COMMENT')`.
+
+🔴 **Reading markers back: use `premiere_get_sequence`, not your own probe.** `await m.start` on a
+`Marker` handle returned 0 for all 23 while the typed tool reported every time correctly. The
+panel's `dumpSequence` knows the right accessors; a hand-rolled read does not.
+
+
 ## Open questions
 
 Things we will only learn by asking a running Premiere. Each is assigned to a ticket in

@@ -33,6 +33,26 @@ spending a video credit. **Iterating on the look inside video is the most expens
 available in Flow.** Full method, and the three cases that legitimately break it:
 [`video-prompting.md`](../../../docs/flow/video-prompting.md) §0.
 
+🔴 **Seal the plate first — stills are free, video bills.** Every credit this pipeline has wasted
+went on a plate that was not ready. Before any `startImage` call, look at the still and ask what in
+it Veo cannot explain, because that is what it will invent:
+
+| On the plate | What Veo does with it |
+| --- | --- |
+| A pale patch on a screen meant to read as **dead** | Lights it up as a graphic. Cost us 80 credits over two rolls, 2026-08-23 |
+| Half-legible text, a logo, a smeared reflection | Finishes the thought — differently every roll |
+| A rank of near-identical objects in the camera's path | Regenerates them mid-move (law 17 / rule 17) |
+| The brightest object in frame being a screen | Breaks `hold_grade.py`'s p90 anchor — plan the lanczos fallback |
+
+Fix all of it in `flow_edit_image` **before** you spend, phrased as a delta off the golden original
+so the composition survives. And know the ceiling: sealing stops Veo *inventing*, not
+*re-interpreting* — a screen carrying fine detail came back scrubbed clean on Lite and re-damaged
+elsewhere on Fast, **neither faithful**. If a screen's exact content carries meaning, animate it
+blank and composite in post (`post-production.md` §3.10).
+
+🔴 **`count: 1` unless you are buying a choice.** Two candidates cost exactly double. Buy them on
+the first shot of a new setup; after that the plate is sealed and the second take gets thrown away.
+
 🔴 **Ask: does anything in the world actually move?** Cloth, water, smoke, a crowd, a machine
 turning, a face — or **only the camera**?
 
@@ -176,7 +196,7 @@ Part B0 the other empty results, Part B silent quality failures.
 
 ---
 
-## 4. The eighteen laws
+## 4. The nineteen laws
 
 These are why the client looks the way it does. Every one was paid for live. If you are
 changing `@badcode/flow-mcp`, they are the spec; if you are just calling tools, laws 1–5
@@ -252,6 +272,16 @@ explain most of what you will see.
     first digits will break on the next segment Flow adds. Anchor on the token *and its
     neighbour* (`(\d+)s(?=crop|$)`), never on position. This one aborted every video call while
     reporting the opposite of the truth.
+19. 🔴 **A cluttered project silently hands back OLD media as if it were new.** The animate path
+    identifies your clip by diffing the tile grid, and that diff degrades as a project fills.
+    Measured 2026-08-23 in a project holding ~50 clips: one `flow_generate_video` call returned
+    **twelve** candidates, and all twelve were **byte-identical to takes generated the day before**
+    — no error, no warning, real files on disk. A second call in the same project animated a
+    *different plate* than the one passed, because the picker matched an older upload.
+    **So: one fresh project per shot.** `flow_create_project` costs nothing and takes seconds, and
+    a project holding exactly one uploaded still cannot mis-pick. Then verify anyway — md5 every
+    take against the ones you already have, and check the clip's **first frame against its plate**.
+    File size, a healthy mediaId and a playable mp4 all prove nothing (laws 9–11).
 
 ---
 
@@ -414,9 +444,14 @@ close it.
 Everything — every still, every take, every contact sheet — lives in the scene's scratch folder:
 
 ```
-/mnt/c/Users/kai/Desktop/<scene>/          # takes, candidates, rejects: the whole mess
-/mnt/c/Users/kai/Desktop/<scene>/final/    # only what has been approved
+<mediaRoot>/<story>/<scene>/          # takes, candidates, rejects: the whole mess
+<mediaRoot>/<story>/<scene>/final/    # only what has been approved
 ```
+
+`mediaRoot` is the one in `badcode.local.json` — `D:\badcode-videos` on this machine, so GPOM's
+plant-room scratch is `/mnt/d/badcode-videos/gitpush-origin-master/plant-room/`. **Scratch folders
+used to live on the Desktop and no longer do** (moved 2026-08-23); anything still pointing at
+`~/Desktop/gpom-*` is stale.
 
 Kai watches from there, so **name files so a human can tell them apart** and tell him the folder,
 never a bare filename. `.mp4` is gitignored anyway (`docs/stories/**/storyboard/img/*.mp4`); the
@@ -464,7 +499,7 @@ post step. Add the recovery table:
 `prompts.md`, naming where the real record lives and how far the shoot drifted:
 
 ```markdown
-> ✅ **BUILT 2026-08-21** as [`scenes/s00-awakening.md`](./scenes/s00-awakening.md).
+> ✅ **BUILT 2026-08-21** as [`scenes/s00-awakening.md`](../../../docs/stories/gitpush-origin-master/scenes/s00-awakening.md).
 > Diverged from this board: no descent, no Dubai, no lens flare — the cut ends on Earth from orbit.
 > **This section is the pre-production suggestion and is left as written.**
 ```

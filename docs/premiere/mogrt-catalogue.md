@@ -25,12 +25,25 @@ C:\Program Files\Adobe\Adobe Premiere Pro 2026\Essential Graphics\
 
 ## 🔴 Two facts that shape how we use these
 
-**1. Placing one may be automatable; filling it in is a job for the human.**
-`SequenceEditor.insertMogrtFromPath` exists in the API, but whether the exposed Essential
-Graphics parameters can be read or set through UXP is **still an open question** (T11). Per the
-standing ruling of 2026-08-21, that is fine. The workflow is: the session places the template at
-the right timecode, and says *"type the title into the Essential Graphics panel."* See the
-`premiere-automation` skill §8.
+**1. Placing one is automated. Filling it in is not — and that is settled, not pending.**
+
+```jsonc
+premiere_insert_mogrt({ path: "C:\\Program Files\\...\\Lower Thirds\\Basic Name and Title.mogrt",
+                        time: 4, videoTrack: 2 })
+```
+
+🔴 **The text cannot be written. Measured 2026-08-22:** an inserted MOGRT carries an
+`AE.ADBE Text` component whose param 0 is `Source Text`, and writing it throws
+`Illegal Parameter type` (`areKeyframesSupported()` returns `false` — the only param seen to do
+so). Confirmed with a frame that still read "Your Title Here" after other writes had visibly
+landed.
+
+🟢 **Its transform IS writable.** Position, Scale, Rotation and Opacity on the `Text` and
+`Vector Motion` components all take `premiere_set_param` like any other component. So a session
+can place a template, position it and fade it — and then hand over the typing.
+
+Per the ruling of 2026-08-21, that is the intended division. See the `premiere-automation`
+skill §8.
 
 **2. Adobe's own templates give every text box the same name.**
 Of 144 text controls across all 77 templates, the ones authored by Adobe are almost all called

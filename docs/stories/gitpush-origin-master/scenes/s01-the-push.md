@@ -14,7 +14,7 @@ updated: 2026-08-21
 > reconcile, and the gap between them is the record of how the scene was built.
 
 **Approved cut:** `s01-ROUGH-MODERN.mp4` — 21.0s, 24fps, four beats.
-Lives at `/mnt/c/Users/kai/Desktop/gpom-s01/final/`, not in the repo.
+Lives at `/mnt/d/badcode-videos/gitpush-origin-master/s01/final/`, not in the repo.
 
 🔴 **This is an approved SHAPE, not a finished scene.** The terminal register — the commit log of
 the species, `HEAD`, and the command typing itself — is not built. It is a post job composited onto

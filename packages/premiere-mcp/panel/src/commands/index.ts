@@ -13,6 +13,7 @@ import { effectCommands } from './effects'
 import { evalCommands } from './eval'
 import { exportCommands } from './export'
 import { markerCommands } from './markers'
+import { mogrtCommands } from './mogrt'
 import { projectCommands } from './project'
 import { sequenceCommands } from './sequence'
 import { transitionCommands } from './transitions'
@@ -47,6 +48,7 @@ export const commands: Partial<Record<CmdName, CommandHandler>> = {
   ...transitionCommands,
   ...markerCommands,
   ...effectCommands,
+  ...mogrtCommands,
   ...exportCommands,
   ...evalCommands,
 }

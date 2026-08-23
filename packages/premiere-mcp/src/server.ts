@@ -162,7 +162,7 @@ async function sendAndNormalise(
     | 'create_sequence' | 'set_active' | 'get_sequence'
     | 'insert_clip' | 'move_clip' | 'trim_clip' | 'remove_clip' | 'clone_clip'
     | 'add_transition' | 'remove_transition' | 'add_marker'
-    | 'apply_effect' | 'set_param' | 'remove_effect',
+    | 'apply_effect' | 'set_param' | 'remove_effect' | 'insert_mogrt',
   args: Record<string, unknown>,
   timeoutMs = 60_000
 ): Promise<SequenceState> {
@@ -868,6 +868,46 @@ server.registerTool(
   async (a) => {
     try {
       return ok(await sendAndView('remove_transition', a))
+    } catch (err) {
+      return toToolError(err)
+    }
+  }
+)
+
+server.registerTool(
+  'premiere_insert_mogrt',
+  {
+    title: 'Place a motion-graphics template',
+    description:
+      'Place a Motion Graphics Template (.mogrt) on the timeline — a lower third, a title, a caption, a credit ' +
+      'roll. **77 ship with Premiere and are already installed**; `docs/premiere/mogrt-catalogue.md` lists every ' +
+      'one and the fields it exposes, and `scripts/mogrt-catalogue.py` queries them without opening Premiere. ' +
+      '🔴 THIS PLACES THE TEMPLATE; IT CANNOT TYPE IN IT. An inserted MOGRT\'s text is not writable through the ' +
+      'API (`Illegal Parameter type`, measured), so set the words by hand in the Essential Graphics panel — and ' +
+      'tell the user which field, by position, because Adobe\'s own templates name every text box `TextLayer`. ' +
+      'Its position, scale, rotation and opacity ARE writable with premiere_set_param on the `Text` or ' +
+      '`Vector Motion` component. Unlike every other mutation this is not an Action, so it leaves NO single ' +
+      'BadCode entry in Edit > Undo. \U0001F534 THE TARGET TRACK MUST ALREADY EXIST — unlike '  +
+      'premiere_insert_clip this will NOT create one, and a track past the last fails with a bare '  +
+      '`Invalid parameter` that does not say which parameter.',
+    inputSchema: {
+      path: z.string().min(1).describe('Absolute path to a .mogrt, WSL or Windows form'),
+      time: z.number().describe('Where on the timeline, in seconds'),
+      videoTrack: z.number().int().min(0).default(0).describe('0-based; 0 is V1'),
+      audioTrack: z.number().int().min(0).default(0).describe('0-based; 0 is A1'),
+    },
+  },
+  async ({ path: mogrtPath, ...rest }) => {
+    try {
+      const translated = inPath(mogrtPath)
+      if (!fs.existsSync(toWsl(translated.path))) {
+        return fail(
+          'INVALID_ARGS',
+          `No template at ${mogrtPath}.`,
+          'Check the path. `scripts/mogrt-catalogue.py` lists the 77 installed templates without opening Premiere.'
+        )
+      }
+      return ok(await sendAndView('insert_mogrt', { path: translated.path, ...rest }))
     } catch (err) {
       return toToolError(err)
     }

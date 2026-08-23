@@ -164,12 +164,25 @@ fully addressable.
 | Cut a logo out of the frame | Logo Cutout | `AE.Impact_Alpha_FX` |
 | Layout spacing helper | Spacer | `AE.Impact_Spacer_FX` |
 
-🟢 **`AE.ADBE PPro SimpleText` is the find worth knowing.** The research sweep flagged
-"MOGRT parameter automation via UXP" as an unresolved blocker for template-driven titles. For
-*plain* titles it is moot: Simple Text is an ordinary effect, so it goes on through
-`premiere_apply_effect` and its params set through `premiere_set_param` like anything else. Its
-parameter list has not been dumped yet — do that with `premiere_describe_effect` the first time you
-need it, and record it here.
+🔴 **`AE.ADBE PPro SimpleText` cannot be given its words. Measured 2026-08-22, confirmed with
+pixels.** It was previously recorded here as the route to a title without a template. It is not.
+
+| Index | Param | Default | Writable? |
+| --- | --- | --- | --- |
+| 0 | *(blank)* | false | — |
+| 1 | Position | `[0.5, 0.88]` | ✅ |
+| 2 | Justification | 1 | ✅ |
+| 3 | Size | 40 | ✅ **verified** |
+| 4 | Opacity | 40 | ✅ **verified** |
+| 5 | `" "` — **the text itself** | *unreadable* | 🔴 **NO** — `Illegal Parameter type` |
+
+Writing Size 120 and Opacity 100 landed. Writing the string threw, and the exported frame still
+read **"Default Text"** in 120pt at full opacity — the styling took, the words did not.
+
+**So a title is handwork.** Apply and position Simple Text from here if you like, then say *"type
+the words into the Effect Controls panel"*. Or place a MOGRT and hand over the same way — see
+[`mogrt-catalogue.md`](mogrt-catalogue.md). This is the `premiere-automation` skill §8 case, and
+per Kai's ruling of 2026-08-21 it is a fine answer, not a gap to engineer around.
 
 ### VR / 360
 
@@ -269,15 +282,145 @@ audio at all — list, never guess.
 
 ---
 
+## Blend modes — measured, 2026-08-22
+
+**Settled live.** A three-band plate (RGB 64 / 128 / 192) on V1 under a solid 128 grey on V2, every
+integer swept, a frame exported per step, luma measured per band with `ffmpeg signalstats`.
+
+### 🔴 `AE.ADBE Opacity` param **1** is the live Blend Mode. Param **2** does nothing.
+
+With param 1 pinned to Multiply, param 2 was set to 1, 5, 10 and 22 and the rendered frame was
+**byte-identical every time** (43/71/99). A separate 20-value sweep of param 2 also never changed
+the picture. **Always write index 1.**
+
+### The integers
+
+Identified where the arithmetic matches exactly. Predicted values are in encoded Y (limited range),
+which is what `signalstats` reports.
+
+| Integer | Mode | Measured Y (64/128/192 band) |
+| --- | --- | --- |
+| 1 | Color Burn | 16 / 18 / 128 |
+| 2 | Color Dodge | 127 / 235 / 235 |
+| 5 | Difference | 71 / 16 / 71 |
+| 9 | Hard Mix | 16 / 235 / 235 |
+| 13 | Linear Burn | 16 / 17 / 72 |
+| **14** | **Linear Dodge (Add)** | 181 / 235 / 235 |
+| **17** | **Multiply** | 43 / 71 / 99 |
+| **18** | **Normal** *(the default)* | 126 / 126 / 126 |
+| **22** | **Screen** | 153 / 181 / 208 |
+| 25 | Subtract | 16 / 16 / 71 |
+| 3 or 4 | Darken *(both render identically here)* | 71 / 126 / 126 |
+| 11 or 12 | Lighten *(both render identically here)* | 126 / 126 / 181 |
+
+**22 (Screen) and 14 (Add) are the ones that matter** — they are the one-call route for
+compositing a Flow element shot on black. Recipe:
+[`recipes.md`](recipes.md) § *Fire, smoke, sparks*.
+
+⚠️ **What this plate could not separate.** The test overlay is 50% grey and the plate is greyscale,
+so every mode that is neutral at 50% (Soft Light, Vivid Light, Linear Light, Pin Light) and every
+mode that needs colour (Hue, Saturation, Color, Luminosity) rendered as the base untouched —
+values 0, 8, 10, 15, 19, 20, 21, 23, 24, 27 all read 71/126/181. Values 6, 7 and 16 rendered
+identically to Normal. **Distinguishing those needs a colour plate and a non-50% overlay.**
+
+---
+
+## Parameter indices, measured 2026-08-22
+
+### 🔴 Every Impact effect shares a boilerplate, and the real controls start at index 4
+
+`0 Error occurred` · `1 Controls` · `2 ""` · `3 Seed` — then the actual controls — then a trailing
+block of `_ Overlay Mode`, `_ Overlay Info`, `_ Applied Version`, `_ Sequence Width/Height/Pixel
+Ratio`. **Anything prefixed `_` is internal; leave it alone.** This is why Vignette reports 27
+params and has 13 you would ever touch.
+
+### Vignette — `AE.Impact_Vignette_FX` (27 params)
+
+| Index | Param | Default |
+| --- | --- | --- |
+| 4 | **Vignette** *(the amount)* | 100 |
+| 5 | Width | 80 |
+| 6 | Height | 80 |
+| 7 | Scale | 100 |
+| 8 | Angle | 0 |
+| 9 | Center | `[0.5, 0.5]` |
+| 10 | Roundness | 100 |
+| 11 | Feather | 50 |
+| 12 | Color | 🔴 unreadable (writable) |
+| 13 | Softness | 20 |
+| 14 | Chromatic Aberration | 20 |
+| 15 | Opacity | 100 |
+| 16 | Master | 100 |
+
+### Noise — `AE.ADBE_Noise_FX` (23 params)
+
+| Index | Param | Default |
+| --- | --- | --- |
+| 3 | Seed | 0 |
+| 4 | **Intensity** | 50 |
+| 5 | Shadows | 75 |
+| 6 | Midtones | 75 |
+| 7 | Highlights | 75 |
+| 8 | Uniform Intensity | true |
+| 9 | Saturation | 50 |
+| 10 | Blend Mode | 4 |
+| 11 | Master | 100 |
+| 12 | Preserve Alpha | true |
+
+🟢 **Separate Shadows / Midtones / Highlights is the BadCode control.** Grain only in the shadows
+is exactly the near-black register — and it is also the banding defence before upload
+([`docs/video-fx/delivery.md`](../video-fx/delivery.md)).
+
+### RGB Split — `AE.Impact_RGB_Split_FX` (24 params)
+
+| Index | Param | Default |
+| --- | --- | --- |
+| 4 | **Horizontal Split** | 1 |
+| 5 | Vertical Split | 0 |
+| 6 | Depth Split | 0 |
+| 7 | Vertigo | 0 |
+| 8 | Channel Shift | 0 |
+| 9 | Feather | 0 |
+| 10 | Position | `[0.5, 0.5]` |
+| 11 | Lightness | 0 |
+| 12 | Softness | 0 |
+| 13 | Edge Behavior | 0 |
+
+### Volumetric Rays — `AE.Impact_Volumetric_Rays_FX` (32 params)
+
+| Index | Param | Default |
+| --- | --- | --- |
+| 4 | **Intensity** | 60 |
+| 5 | Highlights Only | 60 |
+| 6 | Ray Length | 75 |
+| 7 | **Light Position** | `[0.5, 0.25]` |
+| 8 | Softness | 10 |
+| 9 | Edge Rays | 0 |
+| 10 | Volumetric Fog | 25 |
+| 11 | Fog Size | 50 |
+| 12 | Fog Speed | 20 |
+| 13 | Caustics | 0 |
+| 14 | Caustics Speed | 50 |
+| 15 | Color | 🔴 unreadable (writable) |
+| 16 | Colorize | 0 |
+| 17 | Vibrance | 20 |
+| 18 | Desaturate | 0 |
+| 19 | Chromatic Aberration | 20 |
+| 20 | Blend Mode | 1 |
+| 21 | Source Opacity | 100 |
+
+🟢 **`Light Position` (index 7) plus `Highlights Only` is the one thin light** — the BadCode
+register in two parameters.
+
+---
+
 ## Open questions — answer these live and record the answer here
 
 | Question | Why it matters | How to settle it |
 | --- | --- | --- |
-| **Which integer is Screen** on Opacity's Blend Mode param? | It is the one-call route for compositing Flow fire/smoke | Build a probe sequence, bright clip over dark, sweep the value and export a frame per step. **Do this in a scratch project, never a real one** |
-| Which of Opacity's **two** `Blend Mode` params is the live one (index 1 = 18, index 2 = 0)? | Same | Same sweep |
-| `AE.ADBE PPro SimpleText` parameter list | Titles with no MOGRT | `apply_effect` on a scratch clip, then `premiere_describe_effect` |
-| Can a **MOGRT's** Essential Graphics params be read/set? | Template-driven maps, charts, kinetic type. **What each template exposes is already catalogued** in [`mogrt-catalogue.md`](mogrt-catalogue.md) — this is only about writing to them | T11 — `premiere_eval` on an inserted MOGRT |
-| `AE.Impact_Vignette_FX` and `AE.ADBE_Noise_FX` param indices | The two most BadCode effects there are | `describe_effect` once, record here |
+| Which integers are Soft Light, Overlay, Hue, Saturation, Color, Luminosity? | Completeness; none is load-bearing | Re-sweep with a **colour** plate and an overlay that is not 50% grey |
+| Is 3 or 4 Darken, 11 or 12 Lighten? | Cosmetic | Same colour re-sweep |
+| ~~Can a **MOGRT's** params be written?~~ | **ANSWERED 2026-08-22.** Placement, position, scale, rotation and opacity: **yes**. The text itself: **no** — `Illegal Parameter type`. [`api-notes.md`](api-notes.md) | T11 — closed |
 
 ---
 

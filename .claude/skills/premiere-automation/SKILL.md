@@ -246,7 +246,7 @@ call made the project; `false` means it already existed and was opened.
 
 ## 4. The tool surface
 
-**27 tools ship.** Ground truth is `packages/premiere-mcp/src/server.ts` — count the
+**28 tools ship.** Ground truth is `packages/premiere-mcp/src/server.ts` — count the
 `registerTool` calls there rather than trusting a number here. Full reference with arguments and
 error codes: [`packages/premiere-mcp/README.md`](../../../packages/premiere-mcp/README.md).
 
@@ -257,11 +257,11 @@ error codes: [`packages/premiere-mcp/README.md`](../../../packages/premiere-mcp/
 | Editing | `insert_clip` · `move_clip` · `trim_clip` · `remove_clip` · `clone_clip` |
 | Transitions & notes | `list_transitions` · `add_transition` · `remove_transition` · `add_marker` · `set_playhead` |
 | Effects & keyframes | `list_effects` · `describe_effect` · `apply_effect` · `set_param` · `remove_effect` |
+| Graphics | `insert_mogrt` |
 | Output & escape hatch | `export_frame` · `export_sequence` · `eval` |
 
-**Not built yet:** `insert_mogrt` (T11) — motion-graphics templates. Until a tool exists the panel answers
-`INVALID_ARGS` — which is also what a **stale panel** says, so check §1a before concluding a tool
-is missing.
+**Every tool in the plan is now built.** If one answers `INVALID_ARGS`, suspect a **stale panel**
+before you suspect a missing tool — §1a.
 
 ### Reading a timeline: summary by default, detail on request
 

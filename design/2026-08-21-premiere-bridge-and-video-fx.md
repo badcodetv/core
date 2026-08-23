@@ -799,7 +799,7 @@ export async function dumpSequence(project: Project, seq: Sequence): Promise<Raw
     now assert non-emptiness first. Worth remembering across the remaining tickets.
   - **Smoke: 41/41 green.** Gates: root typecheck clean, 155 unit tests green.
 
-### T11: MOGRT + `premiere_eval`   [Status: PARTIAL 2026-08-22 — `eval` shipped; MOGRT *read* answered offline, *write* still open | Model: sonnet]
+### T11: MOGRT + `premiere_eval`   [Status: DONE 2026-08-22 — `eval` shipped; MOGRT insert proven live, params answered: transform yes, text NO | Model: sonnet]
 - **Scope:** `premiere_insert_mogrt` (`panel/src/commands/mogrt.ts`; runs under `lockedAccess`
   only — see the tool table) and `premiere_eval`
   (`panel/src/commands/eval.ts`): `new Function('ppro','helpers','log', code)`, async-aware
@@ -893,7 +893,7 @@ export async function dumpSequence(project: Project, seq: Sequence): Promise<Raw
     the T21 fix, and the live-validation findings including the EADDRINUSE orphan.
   - **T11's MOGRT tool is still unbuilt**, and every doc says so rather than implying otherwise.
 
-### T14: Media-root migration   [Status: pending | Model: sonnet]
+### T14: Media-root migration   [Status: DONE 2026-08-23 — 4 of 5 folders moved; gpom-bulletin deliberately left, another session was writing to it | Model: sonnet]
 - **Scope:** Move the existing scene folders under the root and update every reference.
   `mv /mnt/c/Users/kai/Desktop/gpom-s00 "<root wsl>/gitpush-origin-master/s00"` and `gpom-s01 →
   …/s01` (**ask Kai before moving; `final/` contents are irreplaceable renders**). Update
@@ -1483,3 +1483,107 @@ branch has been exercised in anger, and the guidance was clear enough to follow 
 Everything requiring a live Premiere is therefore still open: **A** blend-mode integers,
 **B** param indices for the BadCode register effects, **C** the MOGRT *write* question, and the
 live `premiere_add_marker` run against a real beat grid.
+
+### 2026-08-22 · A + B + C + D · The live session, once the bridge came free
+Another session released port 7890 late in the day and Kai started Premiere. Everything below is
+measured in a throwaway project (`_smoke/blend-probe.prproj`, `created: true`), never one of his.
+
+**A — blend modes. Settled.** Three-band plate (RGB 64/128/192) under a solid 128 grey, every
+integer swept, a frame per step, luma measured per band. **Screen = 22, Multiply = 17,
+Add/Linear Dodge = 14, Normal = 18** (also Color Burn 1, Color Dodge 2, Difference 5, Hard Mix 9,
+Linear Burn 13, Subtract 25), each identified by exact arithmetic agreement.
+
+🔴 **`AE.ADBE Opacity` param 1 is the live Blend Mode; param 2 does nothing.** With param 1 pinned
+to Multiply, param 2 was swept and the render never changed. **This unlocks the house route for
+compositing Flow fire/smoke** — Screen in one call, no key, no threshold, no feathering.
+
+⚠️ A greyscale plate with a 50%-grey overlay cannot separate the modes that are neutral at 50%
+(Soft Light, Vivid Light, Linear Light, Pin Light) or that need colour (Hue, Saturation, Color,
+Luminosity). Ten integers rendered as the base untouched. Not load-bearing; noted in the catalogue.
+
+**B — param indices. Done in one call.** Vignette, Noise, RGB Split, Volumetric Rays and Simple
+Text, all dumped and recorded. 🟢 **Every Impact effect shares a boilerplate and the real controls
+start at index 4** — `0 Error occurred`, `1 Controls`, `2 ""`, `3 Seed`, then the controls, then a
+trailing `_`-prefixed internal block. That one rule makes a 32-param effect legible.
+
+**C — T11, answered.** `insertMogrtFromPath` works and is not an Action. The inserted clip exposes
+**four** components including `AE.ADBE Text`, whose position/scale/rotation/opacity all write.
+🔴 **`Source Text` does not** — `Illegal Parameter type`, `areKeyframesSupported() === false`. Same
+refusal as `AE.ADBE PPro SimpleText` param 5. Confirmed with a frame that still read "Your Title
+Here" after the transform writes had visibly landed. **Per Kai's ruling, no workaround was built.**
+
+**D — beat markers, proven end to end.** The real Karen track → `scripts/beat-grid.py` → 23 phrase
+markers in Premiere, **every one at exactly the requested time**. 🟢 **Markers do not snap to the
+frame grid** (0.7147s is frame 17.87 at 25fps and stored unrounded), so a beat grid survives at
+full precision. All 23 went in **one transaction, one undo entry, 1ms**.
+
+### 2026-08-22 · 🔴 Four ways `premiere_eval` silently lies, found the hard way
+Each of these produced a *wrong answer* rather than an error, and cost real time in this session.
+
+1. **`withTransaction`'s builder is synchronous and takes a CompoundAction.** Pass an async
+   function returning an array and it does nothing — **and an empty transaction commits
+   successfully**, so nothing throws. Opacity read back 100 after being "set" to 42. Always read
+   back a write you care about.
+2. **A committed transaction invalidates every handle resolved before it.** Reuse a clip, chain,
+   component or param across a commit and the next call throws *"The script object is no longer
+   valid."* Re-resolve from the project down, every iteration.
+3. **Long transaction loops exhaust the host.** One eval running 55 write-then-export cycles broke
+   around the 54th, and the typed `premiere_set_param` failed identically straight after — it is
+   host-wide, not an eval bug. **It recovers on its own within a minute.** Batch about a dozen
+   commits, or put the whole job in one transaction (as the markers did).
+4. **`exportSequenceFrame` returns `true` for frames it never writes.** Of 55 exports that all
+   reported success, **44 files existed**; a later batch of 6 produced 4. The typed
+   `premiere_export_frame` is safe (`waitForStableFile`); the raw call inside an eval is not.
+
+Two smaller ones: `ppro.Constants.MarkerType` does not exist (it is
+`ppro.Marker.MARKER_TYPE_COMMENT`), and `helpers.withActions` is not exposed to eval — only
+`withTransaction`.
+
+🔴 **And a correction to T10.** api-notes recorded that unreadable params "can still be WRITTEN".
+**That holds for Lumetri's structural params and is false for string params** — both `Source Text`
+and Simple Text's param 5 read as unreadable *and* refuse the write. Unreadable does not imply
+writable.
+
+### 2026-08-23 · T14 · The migration, and the folder that had to stay
+Four of the five scene folders moved from `C:\Users\kai\Desktop\gpom-*` to
+`<mediaRoot>\gitpush-origin-master\<scene>\`. **The ticket named two; there were five.**
+
+Done as **copy → verify → delete**, not `mv`, because C: to D: is a cross-drive move and an
+interrupted `mv` on irreplaceable renders is not a risk worth taking. Verification was file
+count, total bytes, and a full recursive md5 of every file — 859 files, all identical — plus a
+named checksum on each of the four `final/` renders.
+
+🔴 **`gpom-bulletin` was left where it is.** The verify caught it: three files (`SHEET-STRAP.jpg`,
+`p1-london-a-strap-a/b.jpg`) appeared in the source *during* the copy, timestamped the same minute.
+**Another live session was generating Flow stills into it.** Moving it would have broken that
+session's next write, so the partial copy on D: was removed rather than left as a decoy, and the
+folder stays on the Desktop until whoever is working in it is finished.
+
+This is the same lesson as the port lock, in a different costume: **check for a concurrent session
+before taking something away from it.** A byte-count verify is what surfaced it — a `mv` would have
+silently destroyed three files and broken a running job.
+
+**Consequence to hand over:** `gitpush-origin-master.prproj` linked
+`Desktop\gpom-s00\final\s00v3-SEQUENCE.mp4`. That one clip now shows Media Offline and needs a
+right-click ▸ Link Media to `<mediaRoot>\gitpush-origin-master\s00\final\`. Nothing else in either
+project referenced the Desktop.
+
+Ten path references rewritten across five files, plus the `flow-automation` skill's scratch-folder
+convention, which had hardcoded `/mnt/c/Users/kai/Desktop/<scene>/` and now reads
+`<mediaRoot>/<story>/<scene>/`.
+
+### 2026-08-23 · T11 · `premiere_insert_mogrt` shipped — 28 tools
+Promoted from the escape hatch, per the standing rule that anything reached for twice becomes a
+typed tool. `panel/src/commands/mogrt.ts` + a registration in `server.ts`.
+
+Two things about it are unlike every other mutation:
+
+- **It is not an Action.** `insertMogrtFromPath` runs inside `lockedAccess` and outside
+  `executeTransaction`, returning the created track items synchronously. So it leaves **no
+  `BadCode:` entry in Edit ▸ Undo** — the only mutating tool that does not.
+- **It returns an array, and an empty one is a failure Premiere does not throw for.** A path it
+  cannot read comes back as `[]` rather than an error, so the command treats a zero-length result
+  as `INVALID_ARGS` with the path in the message.
+
+The server stats the file on the WSL side before sending, so a typo gets a useful error instead of
+a silent no-op.

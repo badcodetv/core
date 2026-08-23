@@ -102,6 +102,7 @@ All take refs from the most recent view. `v0:2` = third clip on video track 0 (`
 | `premiere_list_transitions` | `query?` | Match names **only** — the transition API has no display names at all |
 | `premiere_add_transition` | **`clip`**, **`matchName`**, **`at`**, `duration?`, `alignment?` | Video only; **there is no audio transition API**. A transition belongs to a clip *edge*, so add it once from either side. No handles is **not** a refusal — you get a single-sided frame-hold |
 | `premiere_remove_transition` | **`clip`**, **`at`** | |
+| `premiere_insert_mogrt` | `path`, `time`, `videoTrack?`, `audioTrack?` | Place a `.mogrt` on the timeline. **Places it; cannot type in it** — the text is not writable through the API. Not an Action, so no undo entry |
 | `premiere_add_marker` | **`name`**, **`time`**, `duration=0`, `comments?` | How to leave a human a note at a timecode |
 | `premiere_set_playhead` | **`time`** | Not an Action, not undoable. Read the result back — it snaps to a frame |
 
