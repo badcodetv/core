@@ -9,8 +9,10 @@ storytelling tricks that would engage the audience?" — with the arc, backbone,
 conclusion explicitly held fixed. Method: the pass in
 [`checklist.md`](../../story-craft/checklist.md) run by one reviewer over the canon **and the
 as-built cuts**, twelve draft findings, then 24 Sonnet verifiers (one prompted to refute each
-finding, one to sharpen it), then ruled. **Not yet ratified by Kai or Jack** — every option below
-is one option, not a prescription.*
+finding, one to sharpen it), then ruled. **RULED BY KAI 2026-08-23** — every finding below was put to him one at a time and
+decided; the rulings, and the new trust-layer findings this pass could not have made, are in
+[`critique-pass-4.md`](./critique-pass-4.md). Read that for what actually happens; read this for
+why.*
 
 **Verdict: RECOMMEND.** The architecture held for a third time — two earlier passes already took
 the structural risks out of Movement II and the time machine. What the new toolkit found is at
@@ -263,9 +265,16 @@ contrast that ends the film; the narrator's sincere turn spent once, last, at th
 6. **Cite rulings by number with the file open.** One draft finding cited principles "ruling 13"
    for a jargon point that lives in binding rule 9. Caught by the refuter; noted in step 4.
 
-## Open for Kai and Jack
+## Open for Kai and Jack — **CLOSED 2026-08-23**
 
-- Ratify or strike F1 and F2 (both cheap, both pre-production).
-- F3: is the Carrier's own account wanted inside scene 15, and how long may it run?
-- F8: which way — leave the sincere turn as is, or let it carry the cost?
-- The §2c / `s01-the-push.md` discrepancy on whether the commit-log register is parked or pending.
+All four were ruled in interview; see [`critique-pass-4.md`](./critique-pass-4.md) for the
+decisions and the drafted beats.
+
+- ~~Ratify or strike F1 and F2.~~ F1: bulletin 1 keeps the treasury line, the bread couplet stays
+  a song joke. F2: **dissolved** — the crossing now runs on consciousness, not on `commit`, so git
+  shrinks to *append-only* and rule 9's premise problem goes with it.
+- ~~F3: is the Carrier's own account wanted?~~ Yes — merged with the new trust finding T2. She
+  gives her account **and** corrects the AI: not *"nobody was watching"* but *"nobody was
+  listening."* The AI concedes.
+- ~~F8: which way?~~ The single sincere turn now names what it cost. Ruling 1 intact.
+- The §2c / `s01-the-push.md` discrepancy is **still open** — carried to pass 4.

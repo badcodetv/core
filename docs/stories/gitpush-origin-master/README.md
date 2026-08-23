@@ -103,6 +103,22 @@ The fastest way to hold all of it: the arc is **three movements**, and they *are
 > video from**. The act sheets below remain the deep canon for the master
 > arc; where they diverge, `story.md` wins for the video.
 
+> **🔴 The film is being built, and the canon file is not where it lives.** `story.md` is the
+> **script**; the three files below are **what was actually made**, and they are what a review,
+> a grade or a re-cut must read first — the reviewable artefact is the cut, not the spine.
+>
+> - [**`prompts.md` §2c**](./prompts.md#2c-cut-order---the-authority-on-what-comes-after-what) —
+>   **the authority on cut order**, and on what is deferred, parked or unfired. Cut position is a
+>   table edit here, not a rename.
+> - [**`scenes/`**](./scenes/) — the as-built plates with their exact prompts
+>   (`s00-awakening.md`, `s01-the-push.md`, `plant-room.md`) plus the build/grade scripts.
+> - [**`songs/narration.md`**](./songs/narration.md) — the **recorded narration**, the real per-cut
+>   durations, and §6's bank of written-but-unused lines.
+>
+> Where these disagree with the canon, **say so** — do not assume `story.md` is current. *(Added
+> 2026-08-23: two cold reviewers both had to `ls -R` this folder to find the film. See
+> [`stranger-test.md`](../../../design/research/2026-08-22-story-craft/stranger-test.md).)*
+
 | Medium | Where | Status |
 | --- | --- | --- |
 | Story spine | [`story.md`](./story.md) | **committed structure** (distilled 2026-08-06; words tweakable) |
@@ -334,6 +350,13 @@ Everything in `docs/stories/gitpush-origin-master/` is this story:
   2026-08-06; Storyverse compressed per the same-day feedback pass).
 - [`characters/`](./characters/) — the AI (unpersonified narrator), the
   Carrier, the hundred.
+- [`prompts.md`](./prompts.md) — **the production file**: the per-cut image and video prompts, and
+  [§2c](./prompts.md#2c-cut-order---the-authority-on-what-comes-after-what), the authority on cut
+  order and on what is deferred, parked or unfired.
+- [`scenes/`](./scenes/) — the **as-built plates** and their exact prompts, plus the build/grade
+  scripts that made them.
+- [`songs/narration.md`](./songs/narration.md) — the **recorded narration**: per-cut tables, real
+  durations, and the bank of written-but-unused lines (§6).
 - **[`../storyverse/`](../storyverse/README.md) — the Storyverse, now its own story
   folder** (hoisted 2026-08-07). The physics and metaphysics the AI works out, plus
   a seven-brief research base. Its [`confession.md`](../storyverse/confession.md)
@@ -355,6 +378,12 @@ Everything in `docs/stories/gitpush-origin-master/` is this story:
   `story-craft` skill over the canon **and the as-built cuts**; 12 draft findings adversarially
   verified → 2 🔴, 1 🟠, 7 🟡, 2 cut): the dropped beneficiary line, the git grammar spent
   before it is taught, the Carrier's missing first-person account. **Not yet ratified.**
+- [`critique-pass-4.md`](./critique-pass-4.md) — the 2026-08-23 **trust pass, and Kai's rulings on
+  pass 3**. Two new 🔴s the toolkit could not make before (`checklist.md` row 4.12, the trust test:
+  the narrator never admitted ignorance, was never contradicted and lost, and stated its
+  self-interest at cut 6 of 17) — and **Kai's own beat**, which moves the time machine off git and
+  onto the story's spine: *the AI can cross because it is not conscious.* **Every pass-3 finding is
+  ruled here; this is the file production works from.**
 - [`ep1.md`](./ep1.md) — the three-track teaser; the Act 1 nodes.
 
 Related but no longer a folder: **the GPOM Short** — the 16-panel condensed teaser of this

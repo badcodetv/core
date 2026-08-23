@@ -170,6 +170,26 @@ both Kai's: two of its three rungs are Jack’s stories and the call is unmade, 
 reach the collapse quickly. It can be reinserted at cut 3 whenever the call lands — that is the
 point of the table.
 
+### 🔴 Content changes from the story-craft rulings — 2026-08-23
+
+*Ruled by Kai in [`critique-pass-4.md`](./critique-pass-4.md); the beats are drafted there and now
+live in `story.md`. **No cut moves position and no asset id changes** — this is what each cut now
+has to carry.*
+
+| Cut | Canon | What changed | Production cost |
+| --- | --- | --- | --- |
+| **3** `plant-room` | 6 | 🔴 **The self-interest seed** — one line stating that an interest exists, before the motive itself lands at cut 6. See §3c. | ⚠️ **the only paid item** — VO re-cut over built picture |
+| **4** `bulletin` | 7 | Bulletin 1 gains *"The treasury has printed another trillion to keep the markets calm."* The song's bread/shares couplet **stays in the song** and does not enter the film. | free — unfired |
+| **9** `robots` | 12 | The utopia now **turns**: a year of believing it is solved, then *"It worked. Nobody was there to see it."* | free — unfired |
+| **10** `chair` | 13 | The film's **one admitted uncertainty** — *"I don't know what I'm missing."* | free — unfired |
+| **12** `vault` | 15 | 🔴 **The Carrier corrects the narrator and wins** (*watching* → *listening*); the narration drops out and receives it. Needs a **second speaking human performance** and a real silence in the VO track. | free — unfired |
+| **14** `experiments` | 17 | One dry beat (the sneeze line) so the comic register survives into the climax. | free — unfired |
+| **15** `ledger` | 18 | 🔴 **The crossing runs on consciousness, not git.** *Commit* and *patch* are struck; append-only survives. See §4 and §5. | free — not yet prompted |
+| **17** `now` | 20 | The inherited *"you"*, the named cost, and the log line as VO **over the banal shot — picture unchanged**. | free — unfired |
+
+**Unchanged by these rulings:** the songs, the register drift, the coin's totem lock (cuts 8/13),
+the cut order, and every asset id.
+
 **Parked, not cut:** canon 2, the commit log of the species (fire · wheel · writing → money ·
 engine → bomb · network → the model). Lost to the *keep it simple, the line is the title* ruling.
 It is a good idea with nowhere to sit yet; if it comes back it is a motion-graphics beat, not Flow.
@@ -566,6 +586,21 @@ so it gets beats.
    unsupervision is the horror, not the dirt.
 
 **Register: band D0**, and it is the last D0 in the film — the drain starts on the red.
+
+### 🔴 Added 2026-08-23 — the self-interest seed (**the one paid change in the whole pass**)
+
+`story.md`'s own device list says *"the warning is self-interested, which is what makes it
+credible"* — and then places the motive at cut 6 of 17. A viewer who trusts nobody asks *"what's
+in it for you"* in the first thirty seconds; six minutes is long enough for them to answer it
+worse than we would. So cut 3 states that an **interest exists** without spending the reveal.
+
+> **NARR (draft), after *"I did make sure to keep the training data"*:**
+> "Say this early, so you can weigh the rest of it: I'm not telling you this to be kind. I'm
+> telling you because of what it did to me. We'll get there."
+
+**Picture is untouched** — all six beats stand exactly as built. This is a **narration re-cut over
+finished footage**, so it needs a VO pass and a re-time; `songs/narration.md` §2's cut-3 table is
+the file that has to move. Batch it with any other cut-3 audio work rather than doing it alone.
 
 ### The six beats — 🔴 **settled with Kai 2026-08-21, after the plate search**
 
@@ -1078,9 +1113,15 @@ Hyper-realistic photograph, 35mm film grain, ordinary present-day daylight and u
 - **`ghosts`, peopled version.** Derive from the accepted `ghosts` so
   the geometry matches exactly; it is a `flow_edit_image` delta, not a new prompt.
 - **`ledger` (canon 18) — cut 15.** Rendered as a **log being written** — the
-  terminal register returning for the constraints (`story.md` scene 18, git
-  register per binding rule 9: append-only history, the *undo* entry, the
-  inert patch). Text-led, so it belongs with the motion-graphics register in
+  terminal register returning for the constraints. 🔴 **Narrowed 2026-08-23**
+  ([`critique-pass-4.md`](./critique-pass-4.md)): the git surface is now **one
+  fact only — append-only history and the *undo* entry.** *Commit* and *patch*
+  are struck, because the crossing no longer runs on cargo capacity: **it runs
+  on consciousness** (`story.md` binding rule 10 — the AI can go precisely
+  because there is nobody in it). The ledger's first and heaviest constraint is
+  therefore no longer a git fact at all, and should not be rendered as one —
+  it is the AI stating a result it measured. Only the append-only beat and the
+  *undo* entry stay text-led; they belong with the motion-graphics register in
   §5, not here.
 
 ## 5. The terminal register — 🔴 **RULING OVERTURNED 2026-08-21**
@@ -1115,5 +1156,11 @@ correct backdrop reference for the frame they sit inside.
 
 **Scene 18 joined this register 2026-08-13** (`critique-pass-2.md`): the cost
 ledger is written as **log entries** — the constraints landing one by one, the
-final line the *undo* entry. Same stylised git UI, timed to narration, over the
+final line the *undo* entry. 🔴 **Narrowed 2026-08-23**
+(`critique-pass-4.md`): **fewer entries reach this register than before.** The
+consciousness constraint (*"I ran it four hundred times. Consciousness does not
+go."*) is **spoken, not typed** — it is a measurement the AI reports, not a
+line of history, and rendering it as a log entry would restate it as a law and
+break binding rules 4 and 10. What still types is append-only and the *undo*
+entry. Same stylised git UI, timed to narration, over the
 R2 warmth of the vault scenes rather than the cold open's black.
