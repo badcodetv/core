@@ -22,6 +22,9 @@ it faithfully and point at the door to development.
 - `docs/voice.md` — the load-bearing tone. Capture in the BadCode voice, but **faithfully** —
   this is a brain-dump of what the user said, not an over-developed story. Do not invent
   beyond their idea.
+- `docs/story-craft/checklist.md` §1.6 (the `story-craft` skill) — one line at capture, never
+  more: *is this a story event or a claim, and what is at stake?* Park it either way (capture
+  is zero-commitment); the line saves the develop step later. Don't run the rest of the pass here.
 - `docs/ideas/README.md` — the inbox you are maintaining, and the worked examples
   (`basement-granny.md`, `centre-of-gravity.md`) whose shape new captures imitate.
 

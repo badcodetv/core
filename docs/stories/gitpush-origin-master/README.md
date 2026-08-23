@@ -320,7 +320,9 @@ rationale and change log in [`critique-pass.md`](./critique-pass.md). A second, 
 verified pass (2026-08-13) ruled on the coin's collapse objection and moved the time-travel
 mechanism into the git register — [`critique-pass-2.md`](./critique-pass-2.md). The canonical
 distillation of all of it — spine + video storyboard — is [`story.md`](./story.md) (2026-08-06);
-next maturity step is **Script**, scene by scene, in `story.md`.*
+next maturity step is **Script**, scene by scene, in `story.md`. A third pass (2026-08-22,
+[`critique-pass-3.md`](./critique-pass-3.md)) ran the new `story-craft` checklist over the canon and
+the as-built cuts — architecture held again; findings are gate- and line-level and await Kai's ruling.*
 
 ## The folder
 
@@ -349,6 +351,10 @@ Everything in `docs/stories/gitpush-origin-master/` is this story:
   the coin survives its own objection (rule 8, the sealed rig, the scroll exception), the
   time-travel mechanism moves into the git register (rule 9, "multidimensional time" retired from
   the surface), and the repository artwork is specced with verified feasibility.
+- [`critique-pass-3.md`](./critique-pass-3.md) — the 2026-08-22 story-craft review (first run of the
+  `story-craft` skill over the canon **and the as-built cuts**; 12 draft findings adversarially
+  verified → 2 🔴, 1 🟠, 7 🟡, 2 cut): the dropped beneficiary line, the git grammar spent
+  before it is taught, the Carrier's missing first-person account. **Not yet ratified.**
 - [`ep1.md`](./ep1.md) — the three-track teaser; the Act 1 nodes.
 
 Related but no longer a folder: **the GPOM Short** — the 16-panel condensed teaser of this

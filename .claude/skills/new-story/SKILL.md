@@ -21,6 +21,11 @@ from the CLI; write the files as you go.
   & economics first; story over sermon). All prose and lyrics match this.
 - `docs/storytelling.md` — the method: Key concept + Background → beats →
   characters → image direction. Do not reinvent it; follow it.
+- The **`story-craft`** skill (`docs/story-craft/principles.md`) — the craft under the
+  method. Apply its **Build mode** at step 3 (the spine and beats): the theme as one
+  causal sentence, the one costed object that carries it, the last beat fixed first,
+  beats joined by but/therefore, a midpoint that reverses. Hand over beats with the
+  checklist rows you ran (`docs/story-craft/checklist.md` §0–§2).
 - For canon-linked stories, skim `docs/stories/gitpush-origin-master/README.md` to stay
   consistent with the arc.
 

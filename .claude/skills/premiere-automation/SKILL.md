@@ -216,6 +216,13 @@ say *why* — otherwise it reads as superstition.
 10. **Leave a record before you finish.** A session that builds a timeline and writes nothing down
     has done the work twice — once now, and once again next week when nobody can remember what was
     applied or why. §7.
+11. **Full automation is NOT the goal.** *(Kai, 2026-08-21.)* The goal is as much automation as
+    makes sense, and no more. **"For this bit you will have to do X and Y by hand in Premiere" is a
+    correct, welcome answer** — not a failure, not something to apologise for, and not a reason to
+    spend an hour building a workaround. Say plainly which part is automated, which part is
+    handwork, and exactly what the human should click. Some things genuinely have no API at all
+    (audio crossfades, reading transitions back, Essential Sound) and some are simply not worth the
+    engineering. Hand those over cleanly and get on with the parts that pay.
 
 ---
 
@@ -282,6 +289,10 @@ Do not guess a match name and do not go looking for a plugin we do not own:
 - **We own no paid plugins and are not buying any.** For fire, smoke, sparks and weather the house
   answer is: generate the element in **Flow on a black background**, then key it in with Luma Key
   or Extract on a track above.
+- **[`docs/premiere/mogrt-catalogue.md`](../../../docs/premiere/mogrt-catalogue.md)** — 77
+  motion-graphics templates ship with Premiere and are already installed. `scripts/mogrt-catalogue.py`
+  reads their fields without opening Premiere, so you can say what a human will have to type
+  before you place anything.
 
 ---
 
@@ -385,6 +396,36 @@ ledger. Premiere → notes, recipes, catalogue.
 
 ---
 
+## 8. Handing work back to the human — this is a feature
+
+**Ruled by Kai, 2026-08-21: the goal was never complete automation.** It is *as much automation as
+makes sense*. A session that stops and says **"this next bit is quicker by hand — here is exactly
+what to click"** has done its job properly.
+
+So: do not build a workaround for something Premiere simply does not expose, and do not quietly
+deliver a worse result because the better one needed a human. Say which is which.
+
+**Things that have no API and must be handed over:**
+
+| Job | Why | What to tell them |
+| --- | --- | --- |
+| **Audio crossfades** | There is no audio transition API *at all* — not a gap in our tools, a gap in Adobe's | "Drag a Constant Power crossfade onto the audio cut at 56s" |
+| **Reading existing transitions** | `getTrackItems()` returns null for every non-CLIP item; we can count them and nothing more | "Tell me what's on the cut at 12s and I'll match it" |
+| **Filling in a MOGRT's boxes** | Unresolved whether the exposed Essential Graphics params are reachable at all — and Adobe's own templates name every text field `TextLayer`, so even the definition cannot say which is which | "I've placed *Basic Lower Third* at 4s — the top field is the name, the one under it is the role" |
+| **Essential Sound, auto-ducking, Enhance Speech** | GUI-only features with no scripting surface | Name the panel and the setting |
+| **Anything needing After Effects** | Not installed on this machine | Say so, and offer the Flow route instead |
+
+**How to hand over well:**
+
+- **Be specific to the second and the track.** "Add a crossfade" is useless; "audio cut at 56.0s
+  between A1's two clips, Constant Power, 12 frames" is a instruction someone can follow.
+- **Do the automatable 90% first**, then hand over the remainder — not the other way round.
+- **Put it in the ledger's "Needs a human" section** (§7a) so it survives the conversation.
+- **Never pretend.** If you could not verify something, say you could not. A confident wrong claim
+  about a timeline costs more than an honest gap.
+
+---
+
 ## Knowledge base
 
 | File | What |
@@ -392,6 +433,7 @@ ledger. Premiere → notes, recipes, catalogue.
 | [`docs/premiere/setup.md`](../../../docs/premiere/setup.md) | 🔴 The install walkthrough. §1c sends you here |
 | [`docs/premiere/recipes.md`](../../../docs/premiere/recipes.md) | 🟢 **The cookbook** — concrete tool-call sequences for every job that comes up |
 | [`docs/premiere/effects-catalogue.md`](../../../docs/premiere/effects-catalogue.md) | Every effect and transition installed, grouped by what you would ask for |
+| [`docs/premiere/mogrt-catalogue.md`](../../../docs/premiere/mogrt-catalogue.md) | The 77 motion-graphics templates already installed, and every box each one asks for |
 | [`docs/premiere/api-notes.md`](../../../docs/premiere/api-notes.md) | What Premiere's API actually does, versus what it claims |
 | [`packages/premiere-mcp/README.md`](../../../packages/premiere-mcp/README.md) | Tool reference, error table, how to build the panel |
 | [`docs/premiere/bridge-protocol.md`](../../../docs/premiere/bridge-protocol.md) | The wire protocol — only if you are changing the bridge |

@@ -799,7 +799,7 @@ export async function dumpSequence(project: Project, seq: Sequence): Promise<Raw
     now assert non-emptiness first. Worth remembering across the remaining tickets.
   - **Smoke: 41/41 green.** Gates: root typecheck clean, 155 unit tests green.
 
-### T11: MOGRT + `premiere_eval`   [Status: pending | Model: sonnet]
+### T11: MOGRT + `premiere_eval`   [Status: PARTIAL 2026-08-22 — `eval` shipped; MOGRT *read* answered offline, *write* still open | Model: sonnet]
 - **Scope:** `premiere_insert_mogrt` (`panel/src/commands/mogrt.ts`; runs under `lockedAccess`
   only — see the tool table) and `premiere_eval`
   (`panel/src/commands/eval.ts`): `new Function('ppro','helpers','log', code)`, async-aware
@@ -997,7 +997,7 @@ export async function dumpSequence(project: Project, seq: Sequence): Promise<Raw
   Critic output (4 gaps, 4 price contradictions, 5 weak briefs) is in the Discovered Issues Log
   below and is **required input to T17**.
 
-### T17: Distil `docs/video-fx/` + `video-fx` skill   [Status: PARTIAL 2026-08-21 — index shipped, per-lane pages and skill still pending | Model: opus]
+### T17: Distil `docs/video-fx/` + `video-fx` skill   [Status: PARTIAL 2026-08-22 — index + `delivery.md` + briefs 19/20 made real (3 scripts); other per-lane pages and the skill still pending | Model: opus]
 - **Scope:** The orchestrating session (not a worker) reads the 18 briefs and writes the toolkit:
   `docs/video-fx/README.md` (the index: *need → lane → page*, the price-tier legend, the
   "toolkit-first → web-on-miss → record-back" rule), one page per lane group (`premiere-builtins.md`,
@@ -1383,3 +1383,75 @@ Second-order fix: the EADDRINUSE guidance in the skill, recipes and api-notes sa
 the newest tree"*, which is right for a self-orphaned server and **destructive when the holder is
 another live session**. All three now require tracing the holder up to its `claude` process first,
 and forbid killing a sibling session.
+
+### 2026-08-22 · T11 · A MOGRT's whole parameter surface is readable WITHOUT Premiere
+The open question this plan has carried since T11 was written is *"can the bridge read or set a
+MOGRT's exposed Essential Graphics parameters?"* — and it is still open, because the bridge was
+held by another session all day. But **half of what it was blocking turns out not to need
+Premiere at all.**
+
+A `.mogrt` is a zip. Its `definition.json` carries `clientControls`: the exact list of fields
+Premiere will show in the Essential Graphics panel, each with a stable GUID, a type, and a
+default. So the full parameter surface of every installed template is readable offline.
+
+`scripts/mogrt-catalogue.py` does it; [`docs/premiere/mogrt-catalogue.md`](../docs/premiere/mogrt-catalogue.md)
+is the generated result. **77 templates, 317 editable controls** — 144 text, 93 colour, 51
+checkbox, 29 slider. Control types inferred from their shape across all 77: `1` checkbox (carries
+a boolean value), `2` slider (carries min/max/value), `4` colour, `6` text, `8` group header.
+
+Two consequences:
+
+- **The free-MOGRT question is answered without buying anything.** 77 ship with Premiere and are
+  already installed. Nine categories, of which `[AE] Sports Package` and `[AE] Video Gaming
+  Package` (17 of the 77) are useless to us.
+- **A session can now say exactly which boxes a human will have to fill in, before placing
+  anything** — which is what law 11 asks for. T11's remaining scope is only the *write* half.
+
+🔴 **And a trap that changes how we hand over.** Adobe's own templates name almost every text
+control `TextLayer`. A two-line lower third exposes `TextLayer` and `TextLayer`; the definition
+file cannot say which is the name and which is the role. Only the two `[AE]` packages use
+meaningful names. So a hand-over must describe the fields by *position and purpose*, never by the
+name the file gives them.
+
+### 2026-08-22 · T17 · Briefs 19 and 20 made real, and both found faults in shipped work
+Neither needed the bridge, so both were done while it was held.
+
+**Brief 20 (beat-synced cutting) — `scripts/beat-grid.py`.** The brief's headline gap was that
+nothing had been tested against real BadCode audio. Six real tracks later:
+
+- 🔴 **`aggregate=np.median` is load-bearing and its absence IS the octave error.** Same file,
+  same call: `np.mean` reports **87.89 BPM**, `np.median` reports the true **175.78**. This is
+  almost certainly what the brief's synthetic-click tests were seeing in aubio and Essentia too.
+- 🔴 **Beat trackers answer confidently about material with no beat.** GPOM's spoken-word
+  narration reports a clean 144.23 BPM and a full grid of 217 beats. Two signals catch it:
+  cross-detector agreement after octave-folding (1.1% on real D&B, 8.9–11.5% on everything else),
+  and folded residual from a constant grid (**0.45ms** on the locked track, **11.8–22.8ms** on all
+  five others — a 26x empty gap the thresholds sit in).
+- **Measure regularity on aubio's times, never librosa's.** librosa quantises beats to the
+  analysis hop — 21.33ms at 48kHz — and reported *exactly* that for both the D&B and the
+  narration. It cannot distinguish them.
+
+**Brief 19 (delivery + QC) — `scripts/delivery-qc.sh`, [`docs/video-fx/delivery.md`](../docs/video-fx/delivery.md).**
+
+- 🔴 **The finished `camping.mp4` on the drive has the fault the brief predicted.** Full-range
+  content (`YMIN=0 YMAX=255`) with `color_range=unknown`. A player finding no tag assumes limited
+  and expands 16–235 to 0–255 — crushing everything under 16. **The shadows are the whole BadCode
+  register.**
+- 🔴 **`out_range` alone is a silent no-op.** The brief's fix is half of one: without
+  `in_range=full`, ffmpeg skips the conversion and writes the tag anyway. Measured: content stayed
+  at 4–249 while claiming `tv`. You manufacture the mismatch you were fixing.
+- **libx264 will not emit `yuv420p` at full range** — you get deprecated `yuvj420p` even with an
+  explicit `-pix_fmt yuv420p`. That settles the direction: convert to limited on the way out,
+  keep the precision in the master.
+
+### 2026-08-22 · The bridge was held by another live session for the whole day
+Port 7890 held by pid 7181, tracing to `claude --resume` pid **7024** on `pts/3` — a different
+session from this one (pid 8549), started 26 seconds earlier. Six `claude` sessions were live.
+
+Per §1d and the api-notes rule added on 2026-08-21, that holder was left alone. **The one-session
+rule worked exactly as designed** — it is the first time the "different session, do not kill"
+branch has been exercised in anger, and the guidance was clear enough to follow without guessing.
+
+Everything requiring a live Premiere is therefore still open: **A** blend-mode integers,
+**B** param indices for the BadCode register effects, **C** the MOGRT *write* question, and the
+live `premiere_add_marker` run against a real beat grid.

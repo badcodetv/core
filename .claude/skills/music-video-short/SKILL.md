@@ -17,6 +17,11 @@ generation and the final cut stay with the human.
 - `docs/voice.md` — load-bearing tone (sarcastic, dark, total authority; politics
   & economics first; story over sermon). All copy and lyrics match it.
 - `docs/storytelling.md` — the method: one load-bearing idea, real grounding.
+- The **`story-craft`** skill — Build mode for Stage 1 (the sentence, the costed object,
+  the ending first) and Stage 4 (the scene breakdown: but/therefore, the motion budget,
+  VO in the breakdown and the drop wordless, the house VO markup —
+  `docs/story-craft/forms.md` §2). Run `checklist.md` §0 and §6 (video/track rows)
+  before the edit plan is written.
 - The **`suno-prompt`** skill — turns the song idea into a Style prompt,
   Exclude-Styles list, and lyrics. Drives Stage 2.
 - The **`badcode-art-direction`** skill — prompt craft + critique loop for
@@ -135,6 +140,11 @@ cross-scene consistency:
 **Gate:** approve the look + cast (and any Flow Characters) before Stage 4.
 
 ## Stage 4 — Scene breakdown
+
+> **Craft gate:** run the `story-craft` pass on the breakdown before approval — gates
+> (`docs/story-craft/checklist.md` §0), structure (§2) and the video rows (§6.5–6.9). One
+> moving shot, not a pan on everything; narration sits in the breakdown, the drop is
+> wordless punctuation (`forms.md` §2, §5).
 
 Map the **actual** song — its measured duration from Stage 2 plus the human's
 section boundaries — to N scenes (~4–8 for 15s). Each scene is one shot

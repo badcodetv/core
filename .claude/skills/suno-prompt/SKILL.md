@@ -401,6 +401,12 @@ Apply on top of everything above. This is why the skill exists and not just the 
 - **Default to drum & bass.** Lead with a specific subgenre (`Drum and Bass, Neurofunk` / `Liquid
   DnB` / `Jump Up` / `Jungle`) paired with the parent genre — but see the D&B notes below, because
   Suno is weak at exactly these subgenres.
+- **Lyrics are a story first.** Narrative in lyrics — whose "you" is addressed, the drama
+  stated in one sentence before a bar is written, comment-don't-describe, a second voice
+  carrying the irony, one concrete gesture instead of a stated feeling, the final verse
+  that turns — is the **`story-craft`** skill's job: read
+  [`docs/story-craft/forms.md`](../../../docs/story-craft/forms.md) §3. This toolkit owns how
+  Suno hears the words; that one owns what the words do.
 - **Lyrics carry the BadCode voice.** Read [`docs/voice.md`](../../../docs/voice.md). Overtly
   sarcastic, dark humour, total authority — a superintelligence from the future that already knows
   how it all played out, nurturing underneath the snark. Politics and economics first. Story over

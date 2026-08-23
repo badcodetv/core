@@ -929,4 +929,45 @@ Things we will only learn by asking a running Premiere. Each is assigned to a ti
 
 | Question | Why it matters | Ticket |
 | --- | --- | --- |
-| Can the bridge read/set a **MOGRT's** exposed Essential Graphics parameters? | Blocks template-driven maps, charts and kinetic type. The research sweep raised this three times and never resolved it | T11 |
+| Can the bridge **SET** a MOGRT's exposed Essential Graphics parameters? | Blocks template-driven maps, charts and kinetic type. *Reading what a template exposes no longer needs Premiere at all — see below.* | T11 |
+| Which integer is Screen on `AE.ADBE Opacity`'s Blend Mode, and which of its two Blend Mode params is live? | The one-call route for compositing Flow fire and smoke | — |
+| `AE.ADBE PPro SimpleText` parameter list; `AE.Impact_Vignette_FX` and `AE.ADBE_Noise_FX` param indices | Titles without a template, and the two most BadCode effects there are | — |
+
+---
+
+## MOGRT definitions are readable without Premiere, 2026-08-22
+
+A `.mogrt` is a **zip**, and the `definition.json` inside it carries `clientControls` — the exact
+list of fields Premiere will show in the Essential Graphics panel, each with a stable GUID, a
+type and a default value. Nothing has to be running to read it.
+
+```bash
+unzip -p "Basic Title.mogrt" definition.json | jq '.clientControls'
+scripts/mogrt-catalogue.py --find "lower third" --controls   # does it for all 77
+```
+
+Control types, inferred from their shape across all 77 shipped templates (type `1` always carries
+a boolean `value`; type `2` always carries `min`/`max`/`value`; `6` and `8` never carry a value,
+and `8` is used for the unnamed and section-named separators):
+
+| `type` | Control |
+| --- | --- |
+| 1 | checkbox |
+| 2 | slider (with `min`/`max`) |
+| 4 | colour |
+| 6 | text |
+| 8 | group header |
+
+**77 templates, 317 editable controls** — 144 text, 93 colour, 51 checkbox, 29 slider. Full
+inventory: [`mogrt-catalogue.md`](mogrt-catalogue.md).
+
+### 🔴 Adobe's own templates name every text field `TextLayer`
+
+A two-line lower third exposes `TextLayer` and `TextLayer`, and the definition cannot tell you
+which is the name and which is the role. Only the two `[AE]` packages use meaningful names
+(`Title`, `Subtitle`, `Team #1 Score`).
+
+So this file answers *what boxes exist*, never *which box is which*. **Describe a hand-over by
+position and purpose** — "the top field is the name" — never by the name the file gives it.
+
+This does **not** imply the params are writable through UXP. That is still T11's open half.

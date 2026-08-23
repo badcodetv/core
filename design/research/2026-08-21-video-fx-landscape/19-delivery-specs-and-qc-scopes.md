@@ -146,6 +146,78 @@ ffmpeg -i in.mp4 -af "ebur128=peak=true" -f null -
 - [ffmpeg.org — Filters Documentation](https://ffmpeg.org/ffmpeg-filters.html) — 2026-08-21 — official filter reference, all names
 - local: `ffmpeg -h filter=<name>` / `ffprobe` / range-mismatch test, this WSL box — 2026-08-21 — confirmed QC filters, tag/content mismatch
 
+---
+
+## Live findings on a real BadCode render, 2026-08-22
+
+Shipped as **[`scripts/delivery-qc.sh`](../../../scripts/delivery-qc.sh)**; house page at
+[`docs/video-fx/delivery.md`](../../../docs/video-fx/delivery.md).
+
+### 🔴 The trap this brief predicted is already in a finished BadCode film
+
+`D:\badcode-videos\camping\camping.mp4` — 1920x1080, 25fps, 215s, the delivered camping cut —
+measures `YMIN=0 YMAX=255` with **`color_range=unknown`, `color_space=unknown`**. Full-range
+content, no tag at all.
+
+A player finding no tag assumes limited and expands 16–235 to 0–255. On content already at 0–255,
+everything under 16 flattens. **The shadows are the entire BadCode register**, so this is the
+picture, not a nuance. It was found by running the check, not by looking at it.
+
+### 🔴 `out_range` alone is a silent no-op — the trap inside the trap
+
+The brief's fix (`scale=out_range=full`) is only half of one. Measured on the same source:
+
+| Command | Content | Tag | Verdict |
+| --- | --- | --- | --- |
+| `scale=out_range=limited` + `-color_range tv` | **4–249** | `tv` | 🔴 conversion did nothing, tag written anyway |
+| `scale=in_range=full:out_range=limited` + `-color_range tv` | **18–231** | `tv` | ✅ agree |
+
+Without `in_range`, ffmpeg assumes the input was already limited and skips the conversion — while
+still writing the tag. **You manufacture the exact mismatch you were fixing**, now clipping whites
+instead of crushing blacks. Both halves are load-bearing.
+
+### 🔴 libx264 will not emit `yuv420p` at full range
+
+Ask for full range and you get **`yuvj420p`**, the deprecated J-variant — *even with an explicit
+`-pix_fmt yuv420p` output flag*. Confirmed both ways on the same slice.
+
+This settles which direction to convert. Full range is tempting for a film made of shadows, but
+it costs a deprecated pixel format, and a platform that ignores a `pc` tag crushes the film while
+one that ignores a `tv` tag does nothing at all. **Convert to limited on the way out; keep the
+extra precision in the master.** The house command:
+
+```bash
+ffmpeg -i in.mp4 -vf "scale=in_range=full:out_range=limited" \
+  -pix_fmt yuv420p -color_range tv \
+  -colorspace bt709 -color_primaries bt709 -color_trc bt709 \
+  -c:v libx264 -crf 18 -c:a copy out.mp4
+```
+
+### Four mismatch cases, not two
+
+The brief describes tagged-full/content-limited. There are four, and **the untagged pair is the
+one that occurs in the wild** — every Flow clip and every default ffmpeg encode is untagged:
+
+| Tag | Content | Result |
+| --- | --- | --- |
+| `pc` | limited | stretched, clips |
+| `tv` | full | clipped whites |
+| **untagged** | **full** | 🔴 **crushed blacks — this is `camping.mp4`** |
+| untagged | limited | harmless; tag it anyway |
+
+### The rest of the check, on the same file
+
+Loudness **−12.5 LUFS** (inside 1.5 LU of the −14 consensus), true peak **−1.5 dBFS** (headroom
+for the re-encode), AAC 48kHz, 16.99 Mbps — all clean. `blackdetect` found 7 near-black stretches
+and `freezedetect` 4 frozen ones, both plausible for held comic frames rather than faults, which
+is why they warn rather than fail.
+
+**Still open:** Lumetri Scopes and "Render at Maximum Depth" remain unconfirmed against a live
+26.3.2 session — the bridge was held by another session on 2026-08-22. No upload-and-redownload
+test against a real platform.
+
+---
+
 **Gaps:** TikTok's own primary spec page (JS-rendered, unreachable via WebFetch this pass);
 YouTube's primary loudness page (also unreachable); Lumetri Scopes and "Render at Maximum Depth"
 not confirmed against a live 26.3.2 session; no upload-and-redownload test against a real

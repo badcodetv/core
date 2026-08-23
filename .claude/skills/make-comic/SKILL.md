@@ -17,6 +17,11 @@ duplicate them.
   & economics first; story over sermon). All prose and captions match it.
 - `docs/storytelling.md` — the method: one load-bearing idea, real grounding,
   beats. Don't reinvent it.
+- The **`story-craft`** skill — Build mode for Stage 1 (the causal theme sentence, the
+  costed object, the ending first) and Stage 4 (beats joined by but/therefore; every
+  panel carries weight alone; the duo-specific caption test; the one long gutter; the
+  one silent panel — `docs/story-craft/forms.md` §1). Run `checklist.md` §0 (the gates)
+  and §6 (comic rows) before Stage 4 is approved.
 - The **`new-story`** skill — captures the `docs/stories/<story>/` canon. Stages 1, 2, 4
   delegate to its method.
 - `packages/flow-mcp/README.md` — the `flow` MCP server (tools, prerequisites).
@@ -113,6 +118,11 @@ record** below.
 ---
 
 ## Stage 4 — Storyboard
+
+> **Craft gate:** before asking for approval, run the `story-craft` pass on the storyboard —
+> gates (`docs/story-craft/checklist.md` §0), structure (§2: but/therefore, the turn per
+> scene, the midpoint) and the comic rows (§6.1–6.4). Captions that only confirm what the
+> panel shows are cut here, not after the images are fired.
 
 Discuss the panel sequence (beats → panels). Write `docs/stories/<story>/storyboard/index.md`
 (an overview: numbered panels, each with a one-line intent and which characters

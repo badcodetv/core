@@ -304,7 +304,75 @@ of the API with no marshalling trouble. `set_playhead` is not an Action and is n
 
 ---
 
+## Recipe: cut to the beat
+
+Markers are the only part of the timeline Premiere reads back perfectly, so a beat grid laid down
+as markers is the highest-value thing you can put on a timeline before a single clip lands.
+
+**Get the grid outside Premiere.** There is no API that exposes a beat grid from inside it.
+
+```bash
+scripts/beat-grid.py "/mnt/d/badcode-videos/karen-music/song.wav"
+#   175.78 BPM   beat 0.34133s   bar 1.36533s   phrase 10.92267s (8 bars)
+#   first downbeat at 0.7147s
+#   confidence: high — both detectors agree to 1.1% after octave-folding, and every beat
+#                      sits within 0.5ms of a constant grid
+```
+
+🔴 **Read the confidence line before you use a single number.** Beat trackers answer confidently
+on material that has no beat at all. Measured across six real BadCode tracks, 2026-08-22:
+
+| Confidence | What it means | What to do |
+| --- | --- | --- |
+| `high` | Two detectors agree, beats within 5ms of a constant grid | Use the times as they come |
+| `fair` | Tempo solid, beats 5–15ms off — played, not programmed | Trust the BPM, check the downbeat by ear |
+| `tempo-only` | Tempo agreed, beat *positions* unusable | Build the grid from the BPM and a downbeat you set by hand |
+| `none` | The detectors disagree at every octave | **There is no beat.** Narration, ambience, an isolated vocal stem. Do not cut to it |
+
+`The Global Overview.wav` — the GPOM narration — reports a plausible **144 BPM** and a full grid,
+and is a man reading quietly over a held note. That is what `none` is protecting you from.
+
+**Then lay the markers.** One call per marker; the tool takes seconds, not ticks.
+
+```bash
+scripts/beat-grid.py TRACK.wav --emit phrase --json     # ~23 phrase marks on a 4-minute track
+scripts/beat-grid.py TRACK.wav --emit bar --limit 32    # bars, when you want finer placement
+```
+
+```jsonc
+premiere_add_marker({ name: "phrase 1", time: 0.7147, comments: "175.78 BPM · 8 bars" })
+premiere_add_marker({ name: "phrase 2", time: 11.6373, comments: "175.78 BPM · 8 bars" })
+// …one per emitted time
+```
+
+**Mark phrases, not beats.** 175 BPM over four minutes is **730 beats** — 730 markers is unusable
+and cutting on every one of them is the most obvious amateur edit there is. The same track is
+**23 phrases**. D&B moves in 8- and 16-bar blocks and the drop lands on a phrase boundary, so
+phrase marks are where the cuts actually want to go. Drop to `--emit bar` only for a passage you
+are deliberately cutting hard.
+
+**The grid places a cut; it does not generate one.** Hold a shot across several bars and save
+per-beat cutting for the drop.
+
+### Two traps that cost real time
+
+🔴 **Octave errors are the norm, not the exception.** On the same real D&B track, `aubiotrack`
+reports **88.91 BPM** and `librosa.feature.tempo` reports **87.89** — both exactly half of the
+true 175.78. `scripts/beat-grid.py` folds and cross-checks for you; if you run a detector by
+hand, **sanity-check against the tempo you asked Suno for** before believing it.
+
+🔴 **Flow's clip cap does not respect bar boundaries.** An 8-second clip ends where the cap says,
+not on a downbeat. Trim to bar-length multiples where you can (at 175.78 BPM a bar is 1.365s, so
+five bars is 6.83s and six is 8.19s — just over), or let a hard cut hide the seam.
+
+---
+
 ## Recipe: see it, then ship it
+
+> 🔴 **Then check it.** `scripts/delivery-qc.sh RENDER.mp4 shorts` before anything is
+> uploaded. The finished `camping.mp4` on the drive ships full-range and untagged, which
+> crushes its own shadows on any player that trusts the tag — invisible until measured.
+> [`docs/video-fx/delivery.md`](../video-fx/delivery.md).
 
 ```jsonc
 // One frame, to look at

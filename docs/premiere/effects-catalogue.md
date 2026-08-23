@@ -276,7 +276,7 @@ audio at all — list, never guess.
 | **Which integer is Screen** on Opacity's Blend Mode param? | It is the one-call route for compositing Flow fire/smoke | Build a probe sequence, bright clip over dark, sweep the value and export a frame per step. **Do this in a scratch project, never a real one** |
 | Which of Opacity's **two** `Blend Mode` params is the live one (index 1 = 18, index 2 = 0)? | Same | Same sweep |
 | `AE.ADBE PPro SimpleText` parameter list | Titles with no MOGRT | `apply_effect` on a scratch clip, then `premiere_describe_effect` |
-| Can a **MOGRT's** Essential Graphics params be read/set? | Template-driven maps, charts, kinetic type | T11 — `premiere_eval` on an inserted MOGRT |
+| Can a **MOGRT's** Essential Graphics params be read/set? | Template-driven maps, charts, kinetic type. **What each template exposes is already catalogued** in [`mogrt-catalogue.md`](mogrt-catalogue.md) — this is only about writing to them | T11 — `premiere_eval` on an inserted MOGRT |
 | `AE.Impact_Vignette_FX` and `AE.ADBE_Noise_FX` param indices | The two most BadCode effects there are | `describe_effect` once, record here |
 
 ---

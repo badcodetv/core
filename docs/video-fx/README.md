@@ -16,7 +16,7 @@ is *what to reach for*. If you already know the effect and just need the call, y
 
 ## Lane choice — the decision that comes first
 
-Four lanes. Pick by what the job actually needs, not by habit.
+Five lanes. Pick by what the job actually needs, not by habit.
 
 | Lane | Reach for it when | Why |
 | --- | --- | --- |
@@ -24,9 +24,11 @@ Four lanes. Pick by what the job actually needs, not by habit.
 | **ffmpeg** | The result must be **exact, repeatable and headless** — conform, concat, trim, retime, LUT, grain, contact sheet, delivery encode | Deterministic, scriptable, no GUI in the loop. The recipe book is [`docs/flow/post-production.md`](../flow/post-production.md) |
 | **Premiere** | It is part of **the edit** — cuts, dissolves, keyframed motion, a grade you want to see against the cut, compositing a Flow element over a plate, titles | Real-time preview, the effect catalogue, and the session can `export_frame` and *look* |
 | **After Effects** | True 3D, planar tracking, complex motion graphics | 🔴 **AE is not installed on this machine.** Flag it as out of scope; do not design around it |
+| **Sourcing** | The thing is **real, already filmed, and its being real is the point** — an Apollo launch, a 1950s factory floor, the fall of France | Inventing it in Flow would be both worse and a lie. There is a genuinely free tier (US federal film, newsreel, NASA, Commons CC0) — but **"free to download" and "free to publish" are different questions**, so it comes with a licence gate. Skill: `find-footage`. Reference: [`footage-sources.md`](footage-sources.md) |
 
 **The tie-breaker:** if a human will iterate on it by eye, it belongs in Premiere. If it is a
 transform with one right answer, it belongs in ffmpeg. If it does not exist, it belongs in Flow.
+**If it already exists and really happened, source it** — and check the licence before you cut it.
 
 ### The house answer for atmospherics
 
@@ -39,7 +41,12 @@ Asked for fire, smoke, sparks, rain, fog, dust, embers, explosions:
    (`PR.ADBE Extract`); soften with **Edge Feather** if it reads as cut out.
 4. Or, headless: ffmpeg `blend=screen` / `overlay`.
 
-Free stock (Mixkit, Pexels, Videvo free tiers) is the fallback if Flow will not produce it.
+Free stock is the fallback if Flow will not produce it — but reach for it through the
+`find-footage` skill and [`footage-sources.md`](footage-sources.md), not from memory. The stock
+tier is amber, not free-for-all: **Pexels and Pixabay both carry an explicit political-context
+exclusion**, Adobe Stock Free bars implied political endorsement, Mixkit mixes free and
+non-commercial licences in one result set, and **Videvo and Mazwai are dead** (both 301 to
+freepik.com — any blog post describing their old CC tiers is stale).
 **Buying Sapphire or ActionVFX is not on the table.**
 
 ---
@@ -48,10 +55,13 @@ Free stock (Mixkit, Pexels, Videvo free tiers) is the fallback if Flow will not 
 
 | Question | Go to |
 | --- | --- |
+| "Is this file ready to upload?" | 🟢 **[`delivery.md`](delivery.md)** — delivery specs and QC, plus `scripts/delivery-qc.sh`. **Run it before anything ships** |
+| "Is there a template for X?" | [`../premiere/mogrt-catalogue.md`](../premiere/mogrt-catalogue.md) — **77 MOGRTs already installed**, free, with every field they expose |
 | "What effect does X?" (Premiere) | [`../premiere/effects-catalogue.md`](../premiere/effects-catalogue.md) — **all 106 effects and 118 transitions installed**, harvested live and grouped by what you would ask for |
 | "How do I apply it from here?" | [`../premiere/recipes.md`](../premiere/recipes.md) — concrete tool calls |
 | "What ffmpeg filter does X?" | [`docs/flow/post-production.md`](../flow/post-production.md) first (it owns the everyday recipes), then brief `12` below |
 | "Why did the API do that?" | [`../premiere/api-notes.md`](../premiere/api-notes.md) |
+| "Is there a royalty-free clip of X?" · "Is this clip safe to use?" | 🟢 **[`footage-sources.md`](footage-sources.md)** — **68 sources tiered green/amber/red**, counts dated, with the licence traps that look nothing like traps — and a verification table separating what was proven live from what was only read. The procedure is the **`find-footage`** skill; this is its reference |
 
 ---
 
@@ -136,14 +146,15 @@ reference section anyway.
 
 ## Status
 
-🟡 **This index is the delivered slice of T17.** The per-lane pages it originally specified —
-`premiere-builtins.md`, `premiere-plugins.md`, `ffmpeg-recipes.md`, `lane-choice.md` — are **not
-written**. The lane-choice decision and the paid-tool position are captured here; the Premiere
+🟡 **This index plus [`delivery.md`](delivery.md) are the delivered slice of T17.** The per-lane
+pages it originally specified — `premiere-builtins.md`, `premiere-plugins.md`, `ffmpeg-recipes.md`,
+`lane-choice.md` — are **not written**. The lane-choice decision and the paid-tool position are captured here; the Premiere
 "which effect" question is answered more concretely by the live
 [`effects-catalogue.md`](../premiere/effects-catalogue.md) than a distilled page would have been;
 and ffmpeg recipes still live in [`docs/flow/post-production.md`](../flow/post-production.md) plus
 briefs 12–18. There is also **no `video-fx` skill yet** — reach for `premiere-automation` for the
-edit and `flow-prompt` for the element.
+edit, `flow-prompt` for the element, and `find-footage` for anything real we might source instead
+of inventing.
 
 Plan and remaining scope:
 [`design/2026-08-21-premiere-bridge-and-video-fx.md`](../../design/2026-08-21-premiere-bridge-and-video-fx.md).
