@@ -37,7 +37,7 @@ constraint into the film's best goodbye.
 
 | # | Finding | Ruling | Lands in | Cost |
 | --- | --- | --- | --- | --- |
-| **F1** | 🔴 The piece names no beneficiary | Bulletin 1 keeps **"the treasury has printed another trillion to keep the markets calm."** The bread/shares couplet is a **song joke and stays in the song** — it does not enter the story. | cut 4 `bulletin` | free — unfired |
+| **F1** | 🔴 The piece names no beneficiary | Bulletin 1 keeps **"the treasury has printed another trillion to keep the markets calm."** The bread/shares couplet is a **song joke and stays in the song** — it does not enter the story. | cut 4 `bulletin` | free — see below |
 | **F2** | 🔴 *commit* / *patch* spent untaught | **Dissolved by the consciousness beat below.** Git shrinks to *append-only → one more entry that says undo*, which is plain English and needs no Prologue. Binding rule 9's premise problem goes with it. Canon 2 stays parked. | scenes 17–18 | free |
 | **NEW** | 🔴 The mechanism was quasi-science | **The AI can cross because it is not conscious.** Framed **"tested, not explained"** — a result it measured, never a law of the universe (protects binding rules 4 and 5). Storyverse stays capped at rule 3's one sentence; the second dimension of time does **not** come to this surface. | scene 18 | free — unfired |
 | **T1** | 🔴 Never admits ignorance | One admission, **at the empty chair**. Native to the scene — the AI is already facing the experiment it cannot run. | cut 10 / canon 13 | free — unfired |
@@ -52,6 +52,15 @@ constraint into the film's best goodbye.
 | **F5** | 🟡 A plant that never fires | **Delete the half-line.** *"into the world, and the machines"* goes; the food stays as comic jeopardy. | scene 14 | free |
 | **5.11** | 🟡 The convicting image is an accident | **Budget it.** Add to `story.md`'s device list so it recurs on purpose — candidates: the bulletin, the empty street, the vantage. | `story.md` | doc edit |
 | **Cutdown** | 🟡 Nothing exists for a muted feed | **After the film.** Script it backward from the finished piece, per `forms.md` — never trimmed from the long-form open. | release planning | deferred |
+
+> ⚠️ **F1's cost, corrected the same evening.** Cut 4 `bulletin` was **built while this interview
+> was running** (2026-08-23 17:42, another session — 13 beats, 104s,
+> [`scenes/bulletin.md`](./scenes/bulletin.md)). The treasury line is **still free**, because that
+> file records *"no narration exists for this cut, and none has been generated for any cut"* — the
+> line rides the newsreader's read over plates that already exist. But the **picture is finished**,
+> so if the beneficiary should also appear **on screen** (the strongest form — the built cut already
+> sets `200,000 OFFICE WORKERS FIRED` into the plate as type), that needs a second strap plate and a
+> new generation. **Not assumed, and not done — Kai's call.**
 
 ---
 

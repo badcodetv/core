@@ -179,7 +179,7 @@ has to carry.*
 | Cut | Canon | What changed | Production cost |
 | --- | --- | --- | --- |
 | **3** `plant-room` | 6 | 🔴 **The self-interest seed** — one line stating that an interest exists, before the motive itself lands at cut 6. See §3c. | ⚠️ **the only paid item** — VO re-cut over built picture |
-| **4** `bulletin` | 7 | Bulletin 1 gains *"The treasury has printed another trillion to keep the markets calm."* The song's bread/shares couplet **stays in the song** and does not enter the film. | free — unfired |
+| **4** `bulletin` | 7 | Bulletin 1 gains *"The treasury has printed another trillion to keep the markets calm."* The song's bread/shares couplet **stays in the song** and does not enter the film. | free — ⚠️ **picture was built 2026-08-23** (13 beats, 104s), but [`scenes/bulletin.md`](./scenes/bulletin.md) records that **no narration exists for any cut yet**, so the line costs nothing. It rides the newsreader's read over plates that already exist. *If* the beneficiary should also be **on screen** — the strongest form — that needs a second strap plate, which is a new generation. Kai's call, not assumed. |
 | **9** `robots` | 12 | The utopia now **turns**: a year of believing it is solved, then *"It worked. Nobody was there to see it."* | free — unfired |
 | **10** `chair` | 13 | The film's **one admitted uncertainty** — *"I don't know what I'm missing."* | free — unfired |
 | **12** `vault` | 15 | 🔴 **The Carrier corrects the narrator and wins** (*watching* → *listening*); the narration drops out and receives it. Needs a **second speaking human performance** and a real silence in the VO track. | free — unfired |
