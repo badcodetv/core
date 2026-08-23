@@ -3,7 +3,8 @@
 Precedents to reach for when a scene needs a device. Each row: the idea a work carried → the
 mechanism that carried it (something a writer could reuse tomorrow) → the maker's or a named
 critic's account of why it worked → what was said against it → the brief of the
-[2026-08-22 sweep](../../design/research/2026-08-22-story-craft/README.md) holding the sources.
+[2026-08-22 sweep](../../design/research/2026-08-22-story-craft/README.md) holding the sources
+([`briefs.md`](./briefs.md) resolves a number to its sections).
 The standing caution: all of it is reverse-engineered from interviews and criticism, graded as the
 briefs graded it. The Brief column carries the grade — a plain number means the practitioner's own
 account was fetched; **w** is Wikipedia-grade; **s** is search summary, listicle or study-aid only;

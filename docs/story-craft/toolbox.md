@@ -2,7 +2,7 @@
 
 The reach-for-it list: when a row in [`checklist.md`](./checklist.md) fails or a draft is stuck, find the layer, find the tool, run the test.
 Each entry is **the move, then the test** a reviewer can apply to the page; the example makes it stick; "fails when" is the usual misuse. Principles and rulings are in [`principles.md`](./principles.md), cited as "principle N" / "ruling N", never restated. Sibling tools share a row and are each named, so search for them.
-The long version of every tool — mechanism, sources, evidence grade — is the brief in the last column (`design/research/2026-08-22-story-craft/NN-*.md`); "(unverified)" means that brief could not confirm it against a primary source.
+The long version of every tool — mechanism, sources, evidence grade — is the brief in the last column, resolved to its file **and section** in [`briefs.md`](./briefs.md); "(unverified)" means that brief could not confirm it against a primary source.
 
 ## Idea
 

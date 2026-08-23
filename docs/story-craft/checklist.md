@@ -3,7 +3,9 @@
 One ordered pass, roughly forty questions, collapsed from the ~280 diagnostics in the 24 briefs.
 It runs top to bottom because the layers nest: a piece that fails a gate is not worth a scene
 note, and a scene note is wasted on a story whose theme is still a topic. Each question names the
-brief it came from so the reasoning is one click away.
+brief it came from so the reasoning is one click away ([`briefs.md`](./briefs.md) resolves the number to the
+section). If the user has named a symptom rather than asked for a review, [`symptoms.md`](./symptoms.md) is the
+shorter route.
 
 **How to run it** is [§ The procedure](#the-procedure) at the bottom. Read that first if you are
 reviewing, not drafting.
@@ -74,6 +76,7 @@ reviewing, not drafting.
 | 4.9 | Does the ending **accuse the viewer** or tell them what to do? Is direct address spent **once, last, aimed at the chooser**? | 06 |
 | 4.10 | Does the piece **hold the comic register through the diagnosis**, or drop into sincere tragedy in the last third? Is the hope beat **present as a line**, not assumed from tone? | 08, 12 |
 | 4.11 | Would someone who **disagrees with our politics still feel this character's specific loss**? | 08 |
+| 4.12 | **The trust test.** Why should a reader who trusts almost nobody believe *this* narrator? Three sub-tests, all three needed: is its **self-interest stated plainly and early** (not the care — the interest); does it **admit, once, something it does not know**; and does anyone **contradict it and win**? *(House composition — the ingredients are the-reader 10, `narrator.md` §1b rule 6, and rows 1.3 / 4.4 / 5.11. No brief sits behind it; added 2026-08-23 after the stranger test found the layer missing.)* | the-reader 10 · 17 |
 
 ## 5 · Voice and line
 

@@ -36,6 +36,7 @@ Read on demand. Never reproduce its content in a reply; don't lecture the user a
 
 | File | What | Read when |
 | --- | --- | --- |
+| [`symptoms.md`](../../../docs/story-craft/symptoms.md) | **Start here when the user describes a problem** — ~45 symptoms in a writer's words, each routed to the checklist row, the named tool, the principle and the brief section | Any "this isn't working / feels flat / too preachy / doesn't land" |
 | [`principles.md`](../../../docs/story-craft/principles.md) | **What we hold to be true**, graded A / P / p / H; the gates; the sixteen rulings; the two honest gaps | First use in a conversation; whenever two pieces of advice conflict |
 | [`checklist.md`](../../../docs/story-craft/checklist.md) | **The pass** — ~40 questions in seven nested layers, the procedure (notes not fixes, one layer per pass, adversarial verification, write-back), the coverage-sheet format | Any review; the relevant rows before handing over a draft |
 | [`narrator.md`](../../../docs/story-craft/narrator.md) | **The BadCode narrator pattern** — what an omniscient, bored, caring machine must want and be unable to have; carrier/cargo; address; bathos as a budget; the one crack; the comedy lanes; the failure modes | Writing or reviewing any narration, caption in the narrator's voice, or the narrator's lines in a track |
@@ -43,7 +44,8 @@ Read on demand. Never reproduce its content in a reply; don't lecture the user a
 | [`forms.md`](../../../docs/story-craft/forms.md) | **What changes per form** — scroll comic, narrated video (incl. the house VO markup), D&B track (narrative in lyrics only — Suno mechanics stay in `docs/suno-gpt/`), the serialised run; the cross-form scarcity budgets | Any step that is about *this* medium rather than the story |
 | [`evidence.md`](../../../docs/story-craft/evidence.md) | **What the science supports** — claim · grade · source; the myths and the never-cite list (22×, oxytocin, Zeigarnik-as-memory, the MrBeast document, retention percentages) | Before quoting any mechanism or number in public copy, a brief, or a note |
 | [`case-studies.md`](../../../docs/story-craft/case-studies.md) | **Works that landed an idea** and the device that carried it — satire, dystopia, parables, AI narrators — as a pattern table with what was criticised | When a scene needs a precedent; when choosing a device |
-| [`README.md`](../../../docs/story-craft/README.md) | Index, provenance, the research briefs, how to write back | Orientation; adding to the toolkit |
+| [`briefs.md`](../../../docs/story-craft/briefs.md) | **The brief index** — resolves every "brief NN" to its file and sections with anchors; the long version of any tool is one hop | Whenever a principle, tool or row cites "brief NN" |
+| [`README.md`](../../../docs/story-craft/README.md) | Index, provenance, how to write back | Orientation; adding to the toolkit |
 
 The raw research — 24 briefs, the critic's notes, the contradictions — is in
 [`design/research/2026-08-22-story-craft/`](../../../design/research/2026-08-22-story-craft/README.md).
@@ -83,7 +85,10 @@ own; it sharpens what those skills produce.
 
 ## Review mode
 
-Run **the pass** exactly as `checklist.md` § The procedure says. The short version:
+If the user has named a *symptom* rather than asked for a full review, go to `symptoms.md` first
+— it routes the complaint to the row, the tool and the brief section, and often that is the whole
+answer. For a full review, run **the pass** exactly as `checklist.md` § The procedure says. The
+short version:
 
 1. Read once as a reader. Write the **coverage line** (logline · about / really about · verdict).
 2. **Gates first.** A gate failure *is* the review.

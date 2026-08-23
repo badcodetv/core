@@ -11,6 +11,7 @@ reader it serves is [`../marketing/the-reader.md`](../marketing/the-reader.md); 
 
 | File | What | Read when |
 | --- | --- | --- |
+| [`symptoms.md`](./symptoms.md) | **Start here when something is wrong and you don't know what** — ~45 symptoms in the writer's words ("it reads like an essay", "the middle sags", "will they get that it's sarcasm?"), each routed to a checklist row, a named tool, a principle and the *section* of the brief | The first stop for any "this isn't working" |
 | [`principles.md`](./principles.md) | **What we hold to be true** — thirty principles in seven layers, each graded **A** (academic/replicated) / **P** (practitioner consensus) / **p** (one practitioner) / **H** (house ruling); the five gates from the-reader.md stated once; the **sixteen house rulings** where the sources disagreed; the two honest gaps | First use; whenever two pieces of advice conflict |
 | [`checklist.md`](./checklist.md) | **The pass** — ~40 questions in seven nested layers (gates → idea → structure → engagement → persuasion → voice → form → run), each traced to its brief; the procedure (read once as a reader, gates first, one layer per pass, notes not fixes, grade and cap, adversarial verification, hold fixed, write back); the coverage-sheet format | Any review; the relevant rows before handing over a draft |
 | [`narrator.md`](./narrator.md) | **The BadCode narrator as a design pattern** — a want its power cannot buy, the absence itemised not philosophised, relational vulnerability; flat in satellites / one change arc in the trunk (carrier fixed, cargo variable); the mechanics (bathos as a budget, pre-announcement, the refrain, address by default and the sincere turn rationed, flat baseline and one crack, two comedy lanes, the three-beat, stage straight / snark after); the irony risk and its two tests; eleven failure modes | Writing or reviewing any narration, caption or lyric in the narrator's voice |
@@ -18,8 +19,12 @@ reader it serves is [`../marketing/the-reader.md`](../marketing/the-reader.md); 
 | [`forms.md`](./forms.md) | **What changes per form** — the scroll comic (closure, gutter distance, word and picture, the generated-still redundancy test, constraint-and-break), the narrated video (rhythm, motion budget, words-to-picture, sound, **the house VO markup**, the opening, short-form), the D&B track (narrative in lyrics only), the serialised run (trunk/satellites, the recurring narrator, what may stay open); the cross-form scarcity budgets | Any step that is about the medium rather than the story |
 | [`evidence.md`](./evidence.md) | **What the science supports** — claim · grade · source; the myths; the never-cite list | Before quoting a mechanism or a number anywhere |
 | [`case-studies.md`](./case-studies.md) | **Works that landed an idea** and the device that carried it — satire, dystopia and warnings, parables, the made mind — with what was criticised | When a scene needs a precedent or a device |
+| [`briefs.md`](./briefs.md) | **The brief index** — every "brief NN" cited anywhere in this folder resolved to its file *and its sections*, with anchors, so the long version of a tool is one hop away | Whenever a principle, tool or row says "brief NN" |
 
 ## How the skill uses it
+
+**A symptom first** — if the user describes a problem ("it's flat", "too preachy", "the ending doesn't land"),
+[`symptoms.md`](./symptoms.md) routes it to the row, the tool and the brief section in one lookup.
 
 **Build mode** (drafting) walks principles §1 → §7 in order — the sentence and the costed object
 first, the ending fixed, the spine, the scenes, the persuasion check, the voice, the form — and hands

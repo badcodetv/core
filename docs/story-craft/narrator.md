@@ -183,7 +183,8 @@ radio-drama beat, it is not finished (brief 23).
 ## 7. The narrator rows of the pass
 
 When reviewing narration specifically, run these from [`checklist.md`](./checklist.md): G2, G4 ·
-3.1, 3.8 · 4.1, 4.2, 4.4, 4.5, 4.9, 4.10 · 5.4–5.11 · 6.6–6.8. Add one question of this file's own:
+3.1, 3.8 · 4.1, 4.2, 4.4, 4.5, 4.9, 4.10, **4.12** · 5.4–5.11 · 6.6–6.8. Add one question of this
+file's own:
 
 > **Does this narrator want something in this piece, and is the thing it cannot have visible in the
 > frame?** If not, it is a voice-over, not a character.
