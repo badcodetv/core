@@ -997,7 +997,7 @@ export async function dumpSequence(project: Project, seq: Sequence): Promise<Raw
   Critic output (4 gaps, 4 price contradictions, 5 weak briefs) is in the Discovered Issues Log
   below and is **required input to T17**.
 
-### T17: Distil `docs/video-fx/` + `video-fx` skill   [Status: PARTIAL 2026-08-22 — index + `delivery.md` + briefs 19/20 made real (3 scripts); other per-lane pages and the skill still pending | Model: opus]
+### T17: Distil `docs/video-fx/` + `video-fx` skill   [Status: DONE 2026-08-23 — skill shipped, acceptance dry-runs passed; per-lane pages deliberately dropped | Model: opus]
 - **Scope:** The orchestrating session (not a worker) reads the 18 briefs and writes the toolkit:
   `docs/video-fx/README.md` (the index: *need → lane → page*, the price-tier legend, the
   "toolkit-first → web-on-miss → record-back" rule), one page per lane group (`premiere-builtins.md`,
@@ -1016,7 +1016,7 @@ export async function dumpSequence(project: Project, seq: Sequence): Promise<Raw
 - **TDD:** no
 - **Validation:** `ls docs/video-fx/` shows the five files; `grep -c "design/research/2026-08-21-video-fx-landscape" docs/video-fx/*.md` ≥ 1 per page.
 - **Depends on:** T16
-- [ ] done
+- [x] done
 - Notes: **`docs/video-fx/README.md` shipped 2026-08-21** — the highest-value slice: the
   **lane-choice table** (Flow invents / ffmpeg is exact / Premiere is the edit / AE is not
   installed), the no-paid-plugins ruling stated at the top as standing policy, the house answer for
@@ -1028,6 +1028,34 @@ export async function dumpSequence(project: Project, seq: Sequence): Promise<Raw
   live `docs/premiere/effects-catalogue.md` than a distilled page would be, and ffmpeg recipes
   already live in `docs/flow/post-production.md` plus briefs 12–18. Reconsider the shape before
   writing them.
+
+  **CLOSED 2026-08-23 (`6ff1c36`).** `.claude/skills/video-fx/SKILL.md` written (177 lines, all 9
+  relative links verified to resolve): the five-lane table with tie-breakers, a ten-row "what
+  effect does X" router into the live catalogues, the atmospherics house answer inline, the
+  no-purchase rule, and the delivery gate. `CLAUDE.md` patched — `delivery.md` and
+  `flow-automation` were both invisible from the auto-loaded index; the `video-fx` README's
+  stale "there is no `video-fx` skill yet" claim corrected.
+
+  🔴 **The four per-lane pages were deliberately NOT written, so `ls docs/video-fx/` shows three
+  files, not five — the stated Validation is not met and will not be.** The shape changed on
+  purpose: `premiere-builtins.md` / `premiere-plugins.md` are answered better by the live
+  `effects-catalogue.md` (106 effects, 118 transitions, harvested, dated) than by a distilled
+  prose page that would rot; `ffmpeg-recipes.md` would duplicate `docs/flow/post-production.md`;
+  and `lane-choice.md` is the skill itself. A future session wanting a per-lane page should
+  re-argue the case rather than assume it was an oversight.
+
+  **Acceptance criteria — all three dry-runs resolved from the toolkit alone, 2026-08-23:**
+
+  | Request | Lane | Tool | Price | First call |
+  | --- | --- | --- | --- | --- |
+  | *"fire in the server hall"* | **Flow** — it does not exist, it must be invented | Flow element on pure black, then `AE.ADBE Legacy Key Luma` on a track above the plate, softened with `AE.ADBE Edge Feather` | **Free** at the margin (Ultra) | `flow_generate_video` via `flow-prompt` → `premiere_import` → `premiere_apply_effect` |
+  | *"push into a map of Tokyo"* | **Premiere** if a human iterates by eye; **ffmpeg** if it must be headless | the intrinsic **Motion**, `AE.ADBE Motion` — always component 1 — keyframing Scale + Position | **Free**, intrinsic | `premiere_set_param` on component 1. Headless alternative: ffmpeg `zoompan` (brief 16). The map *plate* is itself a lane call: Flow, or `find-footage` |
+  | *"make s01 black and white with grain"* | **Premiere** (part of the edit) or **ffmpeg** (exact and repeatable) | `AE.ADBE Black & White`, then Noise `AE.ADBE_Noise_FX` | **Free**, both installed | `premiere_apply_effect` ×2. 🟡 `AE.ADBE_Noise_FX` param indices are an open question in the catalogue — `describe_effect` once and record the answer there |
+
+  **The skill's procedure never says "install"** — verified by reading; every paid tool routes to a
+  named free alternative, and the standing rule is stated as *never end an answer at "buy X."*
+  🔴 **Not yet exercised against a real job.** Three dry-runs prove the routing resolves; they
+  prove nothing about whether the advice is right in practice. That is T20.
 
 ### T18: CLAUDE.md, docs index, flow docs pointers   [Status: DONE 2026-08-21 | Model: opus]
 - **Scope:** Repo-map rows and two "How to work" bullets in `CLAUDE.md` (Premiere bridge;
