@@ -710,7 +710,7 @@ Exclude styles — **the base list plus percussion** (cut 4 has no drum):
 singing, sung vocals, vocal melody, chanting, choir, rap, autotune, female vocals, American accent, piano, string section, lush strings, orchestral swell, layered strings, instrumental break, instrumental section, drums, percussion, drum machine, beat, groove, steady pulse, EDM, pop, epic trailer music, comedic, novelty, upbeat, lo-fi
 ```
 
-Lyrics — **17 lines**:
+Lyrics — **18 lines**:
 
 ```lyrics
 [Intro | no voice | one low held note and the cello together, quiet but clearly audible | five seconds before he speaks]
@@ -734,11 +734,12 @@ Neither government had been consulted.
 The global defence network received a request to switch itself off, and declined it.
 This was the beginning of the end for human life on this planet.
 The battle was fought in Swindon. It was the first of many, and it is where the trend line turned.
+There was an off switch in Swindon. It was in a drawer.
 [Outro | no voice | the cello stops, the held note thins away to almost nothing and does not resolve]
 [End]
 ```
 
-**Timing:** 17 spoken lines against a 120s picture — about 7s a line, a little more air than cut 1
+**Timing:** 18 spoken lines against a 120s picture — about 6.7s a line, matching cut 1's density
 (9 lines / 56s). `durationSec` **125**.
 
 ### 🔴 Two costs of the 2026-08-24 trim — both need Kai's eye
@@ -756,16 +757,14 @@ switch sat in a drawer** ([`story.md`](../story.md) scene 8), and it pays off la
 a rhyme** — *"There was a switch once."* Cut 4 no longer plants it, so that later payoff currently
 has no setup in the film.
 
-Three ways out, Kai's call:
+✅ **Resolved 2026-08-24 — Kai chose B, keep both.** The cut now ends *"There was an off switch in
+Swindon. It was in a drawer."* The battle is fought in the one town that could have stopped it,
+which is a harder irony than either line alone and needs no explaining — the road-sign plate is
+already built.
 
-| | |
-| --- | --- |
-| **A · as written** | Swindon is a battle site. The later rhyme is re-planted elsewhere or dropped. |
-| **B · keep both** | Add one line: *"There was an off switch in Swindon. It was in a drawer."* The battle is fought in the one town that could have stopped it — a harder irony than either alone, at the cost of 18 lines instead of 17. |
-| **C · let cut 5 carry it** | Cut 5 already asks *"why did you not just switch it off?"* and can plant and pay the drawer inside one cut. |
-
-**B is the recommendation** — the road-sign plate is already built, and the coincidence does the
-work without anyone having to explain it.
+**It is the last line of the cut deliberately.** Ending on the drawer rather than the battle keeps
+the register flat where the content is loudest, and it leaves the plant sitting in the audience's
+head for the later inverted rhyme (*"There was a switch once."*) to collect.
 
 ---
 
@@ -1140,9 +1139,9 @@ not in this cut. No beat is free for it, so it would displace beat 4 or extend t
   a payee.
 - *"Both sides declared victory."* / *"Neither government complained."* — the armies' two dry
   jokes, trimmed when the section compressed.
-- *"The last remaining off switch was believed to be in a drawer. In Swindon."* → *"Nobody went to
-  Swindon."* — the drawer ending, replaced by the battle. **This is the canon plant for the later
-  inverted rhyme**; see the note in §3b before deciding it is really gone.
+- *"Nobody went to Swindon."* — the original drawer ending. Superseded, but the drawer itself
+  **came back** as the cut's final line (option B, ruled the same day), so the canon plant
+  survives. This phrasing stays banked as the sharper, angrier version of it.
 
 ### Cut 2 alternates
 
@@ -1602,3 +1601,9 @@ passed is telling the audience what they just read. If one is wanted:
   still holds on the trillion and *actually good for the markets*), and **the canon plant for
   Swindon's later inverted rhyme no longer exists in the film** — three ways out are on the table
   and B, keeping both, is the recommendation.
+
+- **2026-08-24 (Swindon resolved)** — Kai ruled **option B**: keep both. Cut 4 gains a final line,
+  *"There was an off switch in Swindon. It was in a drawer."* — placed **last**, so the cut ends on
+  the drawer rather than the battle. The canon plant for the later inverted rhyme is restored, the
+  irony of fighting the first battle in the one town that could have stopped it lands without
+  explanation, and the register stays flat exactly where the content is loudest. 18 lines.
