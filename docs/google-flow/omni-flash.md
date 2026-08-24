@@ -904,6 +904,23 @@ and regenerated the whole set, including deleting the phone box.
 **There is no wording that buys both.** When both matter, change the *starting frame* so the ask
 can be small — not the prompt.
 
+### ⚠️ Ingredients re-renders faces — it will not hold an unnamed person `[observed, 2026-08-20]`
+
+A wide studio plate was animated on **Ingredients** to stop a screen graphic morphing. The motion
+behaved — and **a background actor's face was replaced with a different man entirely.**
+
+Ingredients treats the attached image as *material*, not as pixels to continue: every person in it
+is drawn again from scratch. A single reference carries wardrobe, framing and mood; it does **not**
+carry a likeness. Only two things hold a face:
+
+1. **Frames**, which continues the actual pixels, or
+2. a **Character**, which is what Characters are for.
+
+**The cheap fix is neither: get the face out of the shot.** Crop or reframe so no face is legible —
+backs of heads, silhouettes, and a screen filling the frame have no likeness to lose. This is the
+same removal rule that fixed two-figure interpenetration: when a thing cannot be prompted stable,
+stop drawing it.
+
 ### Slop counters specific to motion `[community]`
 
 Additions to the table in the previous section:
