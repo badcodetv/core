@@ -817,9 +817,16 @@ are hidden in the workspace by default — Filters → uncheck **Hide stems**.
 **If the voice is right but the audio is rough:** Remix → **Cover**, same boxes, audio influence
 **25–40**. The voice is baked in by then and survives at full quality.
 
-**Length.** ✅ **Measured 2026-08-24, first real pair:** the six cut-1 takes came back
-**0:53 – 1:20** (w30: 0:54, 0:59, 1:00, 1:20 · w60: 0:53, 0:56) — against a 56s picture budget.
-They arrive essentially on-length, which is much better than feared.
+**Length.** ✅ **Measured 2026-08-24 — all three cuts, first full pass:**
+
+| Cut | Picture budget | Takes came back | |
+| --- | --- | --- | --- |
+| **1** · awakening | 56s | w30: 0:54, 0:59, 1:00, 1:20 · w60: 0:53, 0:56 | on budget |
+| **2** · the push | ~27.8s | w30: 0:22, 0:24 · w60: 0:22, 0:28 | on budget |
+| **3** · plant room | 40s | w30: 0:43, 0:44 · w60: 0:48, 0:44 | slightly over |
+
+They arrive essentially on-length, which is much better than feared, and cut 3's small overrun is
+exactly what §2's "length is a budget, not a constraint" exists to absorb.
 
 The earlier expectation of two to three minutes was a guess and it was wrong for this
 configuration; the near-silent bed and the short lyric block appear to keep it honest. Either way
