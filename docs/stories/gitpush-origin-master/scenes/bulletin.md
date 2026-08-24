@@ -3,168 +3,177 @@ scene: bulletin
 cut: 4
 canon: story.md scene 7
 built: 2026-08-23
-runtime: 104s (13 beats × 8s)
-scratch: /mnt/c/Users/kai/Desktop/gpom-bulletin/
+rebuilt: 2026-08-24
+runtime: 120s (15 beats × 8s)
+scratch: /mnt/c/Users/kai/Desktop/gpom-bulletin-v2/
+supersedes: the 13-beat build of 2026-08-23 (/mnt/c/Users/kai/Desktop/gpom-bulletin/)
 ---
 
 # Cut 4 — `bulletin`
 
 **The collapse, told entirely as news.** Three stories from the song — the redundancies, the
-banks, the autonomous army — reported across years that we never date on screen. The degradation
-is in the *signal and the room*, never in a caption.
+banks, the autonomous army — reported across years we never date on screen.
 
-Kai's framing, 2026-08-22: *"we should just cut from news report to news report to news report,
-and maybe there's like a year between them… each time it moves on, there's a kind of marked
-degradation in the news report quality and studio, like everything is going downhill."*
+> 🔴 **Rebuilt 2026-08-24.** The first build put all three bulletins over *unrelated* pictures.
+> Kai: *"it's not dramatic enough… what we have is sort of abstract background art."* He was
+> right, and the craft toolkit names it: run **McKee's VO test** on the original and muting
+> bulletin 2 costs the picture nothing, because an emptying railway station never carried
+> information about banks. Mamet's **silent-movie test** fails outright on phases 2 and 3.
+> We had reached for **Curtis's two tracks** — illustrative narration over a free-riff image
+> layer — which `toolbox.md` lists *with a warning attached*.
 
 ---
 
-## 1. The shape — four phases, thirteen beats
+## 1. The shape — three packages, one grammar, degrading
 
-| # | Beat | Plate | Phase |
+Each bulletin gets a **real news package**, and what degrades is **the news's ability to
+report** — not the furniture. Iannucci's rule: the drama is in the institutional response,
+not the crisis.
+
+| | Bulletin 1 — redundancies | Bulletin 2 — the banks | Bulletin 3 — the armies |
 | --- | --- | --- | --- |
-| 1 | `p0-newsreader` | `bulletin-p0-newsreader.jpg` | **0 — the bulletin itself** |
-| 2 | `p1-london-a` | `bulletin-p1-london-a.jpg` | **1 — the crowds** |
-| 3 | `p1-london-b` | `bulletin-p1-london-b.jpg` | 1 |
-| 4 | `p1-shibuya` | `bulletin-p1-shibuya.jpg` | 1 |
-| 5 | `p2-station` | `bulletin-p2-station.jpg` | **2 — emptying** |
-| 6 | `p2-airport1` | `bulletin-p2-airport1.jpg` | 2 |
-| 7 | `p2-airport2` | `bulletin-p2-airport2.jpg` | 2 |
-| 8 | `p3-studio-man` | `bulletin-p3-studio-man.jpg` | **3 — the studio dies** |
-| 9 | `p3-studio-empty` | `bulletin-p3-studio-empty.jpg` | 3 |
-| 10 | `p3-collapse` | `bulletin-p3-collapse.jpg` | 3 |
-| 11 | `p3-dark` | `bulletin-p3-dark.jpg` | 3 |
-| 12 | `p4-london` | `bulletin-p4-london.jpg` | **4 — where are the humans** |
-| 13 | `p4-shibuya` | `bulletin-p4-shibuya.jpg` | 4 |
+| **Anchor** | live, composed, full studio | live but alone — no crew | gone — an automated caption |
+| **Footage** | a proper cut package | one static feed | grainy aerial, no edit |
+| **On the ground** | reporter + crowds | none | nobody at all |
+| **Beneficiary** | the market rising | the government thanking it | nobody left to benefit |
 
-Plate→beat provenance was **measured**, not remembered: every finished clip's first frame was
-matched against every still in the scratch folder. Worth doing — five of the thirteen came from
-an earlier round and the mapping was no longer in anyone's head.
+🔴 **The ladder is measured in humans on screen: five, then two, then none.** The thing running
+out is people, not production values. That is the whole device.
 
-Rebuild: `assemble.sh` in the scratch folder. Stream-copy concat, so every beat must already be
-1920×1080 / 24fps / 8s.
+| # | Beat | Source | Package |
+| --- | --- | --- | --- |
+| 1 | `C4-p0-newsreader` | v1, kept | **1 — the redundancies** |
+| 2 | `C4V2-workers` | new | 1 |
+| 3 | `C4V2-exchange-alive` | new | 1 |
+| 4 | `C4V2-trading-floor` | new | 1 |
+| 5–7 | `C4-p1-london-a/-b`, `C4-p1-shibuya` | v1, kept | 1 |
+| 8 | `C4V2-anchor-alone` | new | **2 — the banks** |
+| 9 | `C4V2-presser` | new | 2 |
+| 10 | `C4V2-bank-empty` | new | 2 |
+| 11 | `C4V2-exchange-empty` | new | 2 |
+| — | ⬜ automated caption over a held frame | **post job, no credits — held frame unruled** | **3 — the armies** |
+| 12 | `C4V2-aerial` | new | 3 |
+| 13 | `C4V2-swindon` | new | 3 |
+| 14 | `C4-studio-empty` | v1, kept | 3 |
+| 15 | `C4-p4-london` | v1, kept | 3 |
+
+Rebuild: `assemble.sh` in the scratch folder. ⚠️ **The concat is preview only** — per Kai's
+2026-08-24 ruling the deliverable is the individual clips on a Premiere timeline, and the
+`BEATS` list is the canonical import order.
 
 ---
 
 ## 2. The rulings that shaped it
 
-**Only phase 1 shows what the news actually *is*.** Phases 2 and 3 show nobody and nothing, and
-the voiceover carries them. Showing the story three times would flatten it.
+**The world still ends off-screen.** `story.md`'s device list says *"the world ends off-screen;
+the composure is the horror."* The rebuild shows **the coverage, never the event** — a press
+conference is not a takeover, an aerial of the aftermath is not the battle. The constraint cost
+nothing and made every shot more specific.
 
-**Start full so the emptying can happen.** The first attempt at this scene shot a shop window on a
-dead empty street — which is scene *8's* image. Kai's Piccadilly instinct was the correction: the
-crowd has to exist before its absence means anything.
+**The aerial is a feed, not a movie shot** — and nobody is flying it. In a story about
+autonomous machines the camera being autonomous too is thematically exact, and it dodges the
+"who is up there?" question, because nobody is. It also keeps the degradation honest: a
+collapsing newsroom cannot afford a helicopter, but it can rebroadcast a drone.
 
-**Three rooms, not one studio.** Canon puts the degradation in the *signal*, not the set, so
-locking to a single studio was never required. Ruled by Kai after the question was put with that
-evidence.
+**Swindon is a plant, not a punchline.** Ruled by Kai 2026-08-24: the drawer-in-Swindon joke
+belongs to the song. The film gets one deadpan road sign after the battlefield, undamaged and
+ordinary, with a column of smoke on the horizon behind it — the implication that the battle was
+*there*, and nothing said. Damaging the sign would explain the joke. 🟡 Consequence for cut 5:
+its draft line *"It was in a drawer. In Swindon."* would make the plant explicit one scene later.
+**Recommended cut; not yet ruled.**
 
-**The phase-1 newsreader is the phase-3 studio, intact.** Same slatted back wall, same round
-columns, same lighting truss with square softboxes, same domed pendant lamp. Phase 3 then stops
-being generic decay and becomes *that room, later* — which costs nothing extra to shoot.
+**The exchange floor is the cut's anchor.** The same hall alive in bulletin 1 and empty in
+bulletin 2, so the audience re-recognises the room and clocks what changed. Two anonymous
+open-plan offices cannot do that. 🟡 The plates came back **period** (CRTs, 80s jackets) — kept,
+because it reads as archive and matches the house film register, but it is a visible choice.
+🟡 The two halls are separate generations and do not match exactly; deriving the empty one from
+the alive plate with `flow_edit_image` would fix that for free.
 
-**The callback replays the exact camera position.** `flow_edit_image` cannot re-compose, and that
-is precisely why it is the right tool here: derived off the original plate, it holds the framing,
-so "same place, later" reads without a word. Daylight, empty, weeds, litter, screens dead.
+**The beneficiary is on screen, benefiting.** Gate G3 wants the beneficiary named; beat 4 shows
+traders laughing with their feet up under a climbing green line, cut against beat 2's workers
+carrying boxes out. That pairing is the thesis in two shots.
 
-**`p4-shibuya` keeps one red banner strip still lit on an otherwise dead screen** — an emergency
-still being flagged to an empty crossing.
+**The phase-1 newsreader is the phase-2 studio, intact.** Same slatted wall, round columns,
+square softboxes, domed pendant lamp — so beat 8 is *that room, later*, at no extra cost.
 
 ---
 
 ## 3. Load-bearing text goes in the PLATE
 
-Kai, 2026-08-23, on the empty red bar: *"it just looks like a red bar across the bottom."* He was
-right — it was a coloured band with nothing to say.
+Proven twice now. **Nano Banana Pro sets the type; Veo holds it.**
 
-🔴 **Do not ask Veo to render text, and do not reach for post first.** The route that worked:
+- `200,000 OFFICE WORKERS FIRED` — correct first try, correctly curved to a curved screen.
+- `ACTUALLY GOOD FOR THE MARKETS` on a teleprompter — measured identical, sharp and correctly
+  oriented at 0s, 2.5s, 5s and 7.5s.
+- `SWINDON` on a road sign — held.
 
-1. **Nano Banana Pro sets the type** into the still — `200,000 OFFICE WORKERS FIRED`, correct
-   first try on both candidates, correctly curved to a curved screen. **Images do not bill.**
-2. **Veo then holds it.** One Lite clip, 10 credits, proved it: legible and unchanged at 0s, 2s,
-   4s, 6s and 7s, screen swing **4/255**. The other two straps came back at swing **2** and **0**.
+**Images do not bill.** Never ask Veo to render text and never reach for post-compositing first.
 
-Post-compositing (`docs/flow/post-production.md` §3.10) stays the fallback for text that must be
-pixel-exact, must change later, or whose plate cannot be regenerated — and note it needs a
-per-frame track, because even a "static" clip creeps 34–66px.
+🔴 **The mirroring trap.** Asked for a teleprompter from the audience side, Nano Banana rendered
+the text **reversed** — physically correct, and useless for a joke the viewer must read. The fix
+is a **three-quarter angle** so the glass faces partly to camera, not a request to break physics.
 
-The number is **200,000**, matching canon. Once it is rendered as on-screen text it stops being
-flexible, so it was confirmed with Kai before a credit was spent.
+🔴 **~1 in 5 Nano Banana Pro 16:9 outputs come back with letterbox or windowbox bars baked into
+the pixels**, and it is invisible in the returned dimensions — everything reports 1376×768.
+Measured: 3 of 14 in one batch, 1 of 10 in another. Check before animating, not after.
 
 ---
 
-## 4. Holding a screen — the whole technique
+## 4. Holding a screen — the technique
 
-**Veo animates a screen whether you ask it to or not.** Unheld, screens grew into blown-out
-lightboxes with lens flares, or switched off mid-clip.
+Name the real-world motion first and hard → hold the screen explicitly (*"the screen keeps
+showing exactly the same picture from the first frame to the last: the same size, the same
+brightness, no flicker, no flare, no blowing out, no cut to another shot, no change of
+channel"*) → *"the camera stays where it is."*
 
-The motion prompt that works, in this order:
-
-1. **Name the real-world motion first, and hard** — rain stippling the road and breaking up the
-   screen's reflection; umbrellas rocking; a figure shifting weight; static rolling.
-2. **Then hold the screen explicitly** — *"the screen keeps showing exactly the same picture from
-   the first frame to the last: the same size, the same brightness, no flicker, no flare, no
-   blowing out, no cut to another shot, no change of channel."*
-3. **Then** *"the camera stays where it is."*
-
-Measured effect: screen swing fell from **96/255 to under 4/255**.
-
-For a screen meant to read as **dead**, invert the clause — *"stays completely dead matte black…
-no shapes, no blocks, no letters, no logos, no picture, no glow, no flicker"* — and say what
-should NOT appear, positively and by name.
+Measured across the rebuild: **screen swing 0–3/255 on every shot with a screen.** For a screen
+meant to read as **dead**, invert the clause and name what must not appear.
 
 ---
 
 ## 5. What cost the most, and why
 
-**A plate with an ambiguous bright patch is a paid re-roll.** `p4-london`'s screen carried pale
-patches of damage. Veo read them as content and lit them into a white graphic — twice, **80
-credits**. One `flow_edit_image` flattening the panel to matte black killed it for free. Now
-rule 19 in `docs/flow/README.md`.
+🔴 **Veo will not lock off a wide interior or an aerial.** Three shots in this rebuild drifted
+into a slow push despite an explicit lock-off clause, across both tiers — matching v1's
+`p4-london`, which drifted across four takes and three prompts. **Ask for the move you want
+rather than fighting for stillness.** Nothing regenerated and no one appeared, so all three
+were kept.
 
-**The gate has a ceiling.** Sealing stops Veo *inventing*; it does not stop it *re-interpreting*.
-`p4-shibuya`'s fine static damage came back scrubbed clean on Lite and re-damaged elsewhere on
-Fast — **neither tier reproduced it**. Fine texture is not safe; rendered text is.
+🔴 **An unmapped failure card burns the full 480s clock.** The presser died on *"Audio generation
+failed. Please try a different prompt or send feedback. You have not been charged for this
+generation."* That is a **retry-unchanged** condition with credits refunded — but its wording is
+not in `failure-card.ts`, so it timed out instead of aborting in seconds. The retry worked first
+time, unchanged. **Read the timeout dump before retrying; it names the cause.**
 
-**A cluttered project hands back old media as if it were new.** In a project holding ~50 clips,
-one call returned **twelve** candidates, all byte-identical to the previous day's takes, with no
-error. A second call animated a *different plate* than the one passed. **One fresh project per
-shot** — free, and it makes the mis-pick impossible. Law 19.
+🔴 **Flow now offers silent videos.** The same card said *"You can update your settings to return
+silent videos."* Our toolkit records that Veo audio is always on and cannot be disabled — **that
+is out of date.** Enabling it would kill this failure class and remove the `-an` step. Not yet
+enabled; it is global project state.
 
-**Never generate a diagnostic image into the project you are about to animate in.** A throwaway
-"empty grey room" ping test was picked up as the start frame: the clip opened on that room,
-dissolved into a different studio and rendered the strap as garbled Cyrillic. **40 credits.**
-Law 21.
+**A plate with an ambiguous bright patch is a paid re-roll** (v1: 80 credits on `p4-london`,
+killed for free by one `flow_edit_image`). **A cluttered project hands back old media as if it
+were new** — one fresh project per shot. **Never generate a diagnostic image into the project you
+are about to animate in** (v1: 40 credits). **Upload from the WSL filesystem, never `/mnt/c`.**
 
-**Upload from the WSL filesystem, never `/mnt/c`.** Four consecutive calls died with the picker
-never finding the file, across two Chrome instances, three projects and two filenames. A free
-`flow_generate_image` (no upload) worked throughout — that is the cheap probe that isolates it.
-Copying the file into the WSL filesystem fixed it first try. Intermittent, not absolute. Law 20.
+**Cost of the rebuild: 150 credits** — 6 Fast + 3 Lite, `count: 1` throughout, one refunded
+failure.
 
 ---
 
 ## 6. Grade and finish
 
-`hold_grade.py` holds colour on a p90 anchor and delivers 1080p — but 🔴 **it fails when the
-brightest object in frame is a screen that legitimately changes**, because it then measures
-*content* rather than lighting.
-
-Measured here: **3 of 7** clips tripped it. `p3-dark` reported **97.2/255** of "drift" — that was
-the static, not the lighting — and slammed both gain clamps. `p1-london-b` hit the 1.140 ceiling,
-`p3-collapse` the 0.880 floor.
-
-**When it clamps, fall back to a plain upscale:**
+Screen swing measured 0–3 on every held screen, so there was nothing to correct and all nine
+went straight to the plain upscale:
 
 ```bash
 ffmpeg -i in.mp4 -vf "scale=1920:1080:flags=lanczos,setsar=1" \
        -c:v libx264 -crf 17 -pix_fmt yuv420p -an out.mp4
 ```
 
-The four strap/newsreader takes measured 0–4/255 of drift, so there was nothing to correct and
-they went straight to lanczos.
-
-**Still owed:** a monotonicity guard in `hold_grade.py`, so a non-monotonic "drift" is recognised
-as content and refuses the correction rather than clamping.
+🔴 `hold_grade.py` **fails when the brightest object in frame is a screen that legitimately
+changes**, because it then measures content rather than lighting (v1: 3 of 7 clips tripped it;
+`p3-dark` reported 97.2/255 of "drift" that was static). **Still owed:** a monotonicity guard so
+a non-monotonic "drift" refuses the correction rather than clamping.
 
 ---
 
@@ -172,35 +181,33 @@ as content and refuses the correction rather than clamping.
 
 | Dropped | Why |
 | --- | --- |
-| `C4-mall1`, `C4-mall2` | Too many empty-transit beats, and a running fountain fought the grain |
-| `C4-tokyo1`, `C4-tokyo2` | Anonymous city — replaced by the Shibuya scramble crossing, which reads on sight |
-| `b3-wide` (car on a street) | Cut; the beat did not earn its 8 seconds |
-| `bulletin-*`, `b1-*` first round | The wrong scene — a dead street, which is cut 5's image |
-| `V-LA`, `V-LA2`, `V-LA3`, `LITE-LA` | Superseded London-after rolls; see §8 |
+| `C4-p2-station`, `C4-airport1`, `C4-airport2` | The abstraction — emptying transit carrying no information about the story being read |
+| `C4-p3-studio-man`, `C4-p3-collapse`, `C4-p3-dark` | Set-decay as degradation; replaced by the package degrading |
+| `C4-p4-shibuya` | Cut for length; the London callback carries the ending alone |
+| `C4-mall*`, `C4-tokyo*`, `b3-wide`, `b1-*` | v1-era, already superseded |
 
 ---
 
 ## 8. Known defects, unresolved
 
-🔴 **`p4-london` drifts.** Veo would not lock off on that high-angle aerial plate — **four takes
-across three prompts and both tiers, all drift**. The mildest was kept (motion 12 against a
-locked-off ~5 elsewhere). Adding *"locked-off tripod… no pan, no tilt, no zoom, no drift; the
-edges of the frame sit on the same buildings in the last frame as the first"* reduced it and did
-not remove it. If it reads badly in the edit, the fix is a post counter-move, not another roll.
+🔴 **`C4V2-bank-empty` has a chair that morphs into another chair.** Spotted by Kai 2026-08-24.
+He will cut around it on the timeline; not worth a re-roll.
 
-🟡 **The two phase-4 callbacks do not rhyme.** Shibuya keeps a lit red bar on a dead screen;
-London's screens are fully dead. Offered and not yet done: re-derive `p4-london` with the same
-lit-red-strip detail.
+🟡 **Three clips drift into a slow push** (`bank-empty`, `exchange-empty`, and v1's `p4-london`)
+where a lock-off was specified. Kept — see §5.
 
-🟡 **`p2-airport2` has a real camera drift**, unlike the locked-off rest of phase 2. Inherited
-from the earlier round.
+🟡 **Beat 14 (`C4-studio-empty`, inherited from v1) no longer matches.** It is a small CRT-ish
+monitor shot and sits oddly against the new anchor studio. Re-shoot or drop.
 
 🟡 **A "Boots" shopfront is visible** in the `p1-london-b` plate. A release decision for Kai,
 separate from whether it generated.
 
+⬜ **The automated-caption beat that opens bulletin 3 has not been made.** Free in post; what it
+sits over is unruled — candidates are the frozen last frame of `bank-empty`, the empty studio,
+or colour bars.
+
 ⬜ **No narration exists for this cut, and none has been generated for any cut.**
 [`songs/narration.md`](../songs/narration.md) carries written boxes for cuts 1–3 only, still at
-`status: draft — nothing generated yet`. So every beat length in all four cuts is a guess,
-including the 8s assumed here — and cut 4 needs its boxes written before that guess can be tested.
+`status: draft`. Every beat length in every cut — including the 8s assumed here — is a guess.
 
-⬜ **Year cards** (2033/34/35) are still unruled — as is cut 3's `2032` card.
+⬜ **Year cards** (2033/34/35) are still unruled, as is cut 3's `2032` card.
