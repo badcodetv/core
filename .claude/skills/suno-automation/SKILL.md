@@ -1,6 +1,6 @@
 ---
 name: suno-automation
-description: Use when DRIVING Suno from code rather than by hand — loading a sheet's prompt boxes into suno.com/create, clicking Create, running the weirdness pair, filing takes into a workspace, listing what came back, or fixing a Suno automation call that silently did the wrong thing. Triggers on "automate Suno", "load this into Suno", "generate this in Suno", "run the pair", "click create", "put this in the gpom-story workspace", "paste the boxes for me", "what takes are in there", "the lyrics went in wrong", "it overwrote my styles", or any request to avoid pasting four boxes by hand. Mechanics only — what to WRITE in the boxes belongs to `suno-prompt`.
+description: Use when DRIVING Suno from code rather than by hand — loading a sheet's prompt boxes into suno.com/create, clicking Create, running the weirdness pair, constraining a track to a target length, filing takes into a workspace, listing what came back, or fixing a Suno automation call that silently did the wrong thing. Triggers on "automate Suno", "load this into Suno", "generate this in Suno", "run the pair", "click create", "make it 30 seconds", "constrain the length", "set the duration", "put this in the gpom-story workspace", "paste the boxes for me", "what takes are in there", "the lyrics went in wrong", "it overwrote my styles", or any request to avoid pasting four boxes by hand. Mechanics only — what to WRITE in the boxes belongs to `suno-prompt`.
 ---
 
 # Suno Automation
@@ -25,7 +25,7 @@ creation. This skill owns **programmatic driving over CDP**.
 ## Knowledge base
 
 📖 **[`docs/suno-gpt/automation.md`](../../../docs/suno-gpt/automation.md) is mandatory reading
-before changing any selector.** It carries the DOM map, the seven silent traps, the operating
+before changing any selector.** It carries the DOM map, the eight silent traps, the operating
 protocol and the verified/unverified table. Every workaround in the script exists because the
 obvious approach produced a plausible-looking wrong result.
 
@@ -88,6 +88,31 @@ which is **not yet known** — so both always run, and each pair is a data point
 
 Never generate at only one setting. **Record which won and why.**
 
+### 🔑 Timing — narration lands within ±10s of the picture
+
+Narration is cut against **built picture**, so a take that misses its budget costs an edit.
+**Ruled 2026-08-24: within 10 seconds of the cut's budget.** Set `durationSec` in the spec.
+
+| Cut | Budget | `durationSec` |
+| --- | --- | --- |
+| 1 · awakening | 56s | 60 |
+| 2 · the push | ~27.8s | 30 |
+| 3 · plant room | 40s | 45 |
+
+🔴 **Always aim slightly ABOVE the budget.** Suno's duration is a **target, not a contract**, and
+it **shortens reliably but repeatedly fails to stretch**. Long trims; short is a reshoot.
+
+🔴 **Two duration controls exist and only one is Advanced Mode's.** The number input with
+Custom/Auto is the **Simple** panel's, and it is **not linked** — writing to it does nothing,
+silently. Advanced's is the slider `[role="slider"][aria-label="Duration"]`, 10–360, step 5,
+inside **More Options** (collapsed by default; its trigger needs a **real mouse click**).
+
+🖐 For an exact value by hand: hit **Custom**, then **double-click the number** — it becomes a
+typeable text box. Automation uses the slider, whose 5s granularity is inside the ±10s tolerance.
+
+⬜ **Not yet proven:** that a set duration actually changes the take's length. One generation
+settles it — say so and it gets run.
+
 ### 🔑 Naming
 
 `<story>-<cut>-<revision>-w<weirdness>` — e.g. `gpom-cut1-A-w30`. The **letter is the prompt
@@ -99,7 +124,7 @@ A/B/C for scenes.
 Set the workspace **before** Create — it routes the output, and moving clips afterwards is
 manual. The workspace id lands in the URL as `?wid=<uuid>`.
 
-## The six traps that will bite you
+## The seven traps that will bite you
 
 Full detail in the knowledge base; this is the short list.
 
@@ -111,6 +136,7 @@ Full detail in the knowledge base; this is the short list.
 | **Navigation wipes the form** | Clicking Library or reloading clears everything. No draft recovery. | Never browse mid-load. Re-run `load`. |
 | **Shared right pane** | Opening the workspace picker replaces the clip list with the workspace browser, so a take listing comes back **empty though the takes exist**. | Click back into the workspace. **Never navigate** — that wipes the form. |
 | **Save-to naming** | The picker button's text is the *current workspace name*, and the label is a separate element. | Anchor on the `Save to...` container; take the **longest** match to read the name. |
+| **Two duration controls** | The Simple panel's number input is unlinked; writing to it changes nothing in Advanced. | Drive `[role="slider"][aria-label="Duration"]`. Expand More Options with a **real mouse click** first. |
 
 Two smaller ones: the Style box **truncates** at its 1,000 cap rather than refusing (the script
 asserts the length back), and `aria-label="Generate"` is the **Lyricist**, not Create — Create is

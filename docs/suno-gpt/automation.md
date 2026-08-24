@@ -20,7 +20,7 @@ and load-bearing:
 | **How to work** | [`session-method.md`](./session-method.md) | One variable per round; diagnose before rewording |
 
 Everything below was **proven live** on 2026-08-24 unless a row says otherwise. The
-distinction matters: this whole file exists because seven plausible-looking approaches
+distinction matters: this whole file exists because eight plausible-looking approaches
 silently produced the wrong result.
 
 ---
@@ -128,7 +128,7 @@ next to it. It changes under you.
 
 ---
 
-## 4. 🔴 The seven traps
+## 4. 🔴 The eight traps
 
 Each of these produces a *plausible-looking* result. None of them errors.
 
@@ -222,6 +222,36 @@ The label reads `Save to...`; the workspace name lives in a **sibling button**. 
   visit. Matching the picker button by text picked the sidebar nav instead. **Anchor on the
   `Save to...` label container** and take its button.
 
+
+### Trap 8 — there are TWO duration controls and only one is Advanced Mode's
+
+| | Simple panel | **Advanced panel** |
+| --- | --- | --- |
+| Control | `input[placeholder="Auto"]`, `type=number` | **`[role="slider"][aria-label="Duration"]`** |
+| Range | 1–300 | **10–360**, step **5** |
+| Toggles | `Custom` / `Auto` buttons | none in-panel |
+
+**They are not linked.** Setting the number input leaves the slider exactly where it was — so
+writing to it does nothing at all in Advanced Mode, silently. Verified by nudging the slider
+(180 → 175) while the input stayed on 32.
+
+Two further facts about the slider:
+
+- It lives inside **More Options**, which is **collapsed by default and unmounts its contents.**
+  "The duration control has disappeared" almost always means that section is shut — not that a
+  Voice hid it, which was a hypothesis worth testing and is **false** (verified on a clean page:
+  the control is present with `badcode newsreader` attached).
+- More Options' trigger is a React div that **ignores a native `el.click()`**. It needs a real
+  mouse click at the element's coordinates.
+
+⚠️ **A step of 5 means an exact target is often unreachable**, and a naive "press toward the
+target" loop **oscillates around it forever**. `setSlider` now stops as soon as a press stops
+getting closer. This bit Duration first but protects every slider.
+
+🖐 **Kai's manual route for an exact value:** choose **Custom**, then **double-click the number**
+— it becomes a text box you can type into. Not automated; the slider's 5-second granularity is
+inside our ±10s tolerance, so automation drives the slider.
+
 ---
 
 ## 5. The operating protocol
@@ -246,6 +276,23 @@ the rule is still being learned.
 
 **This is also a research programme.** Each pair is a data point on when 30 beats 60. Log the
 verdict with the pair so the rule can eventually be stated.
+
+### 🔑 Timing — narration must land within ±10s of the picture
+
+Narration is cut against built picture, so a take that misses the budget badly costs an edit.
+**Ruled 2026-08-24: a narration take should land within 10 seconds of its cut's budget.**
+
+| Cut | Budget | Set duration to |
+| --- | --- | --- |
+| 1 · awakening | 56s | ~60 |
+| 2 · the push | ~27.8s | ~30 |
+| 3 · plant room | 40s | ~45 |
+
+🔴 **Aim slightly ABOVE the budget, never below.** Suno's duration is a **target, not a
+contract**, and our own toolkit's §10 records that it **shortens reliably and repeatedly fails to
+stretch**. Long is trimmable; short is a reshoot.
+
+Set it in the spec as `durationSec`. Omit it for Auto.
 
 ### Naming
 
@@ -319,6 +366,10 @@ Honesty about this is the point of the table — several recon assumptions faile
 | **Form survives its own generation** | ✅ proven — style, excludes, lyrics, sliders, voice and title all intact afterwards |
 | Takes land in the selected workspace, titled | ✅ proven |
 | Reading clip rows back (title + duration) | ✅ proven |
+| Advanced duration slider sets and reads back (`Duration=30`) | ✅ proven |
+| The Simple number input is a different, unlinked control | ✅ proven |
+| An attached Voice hides the duration control | ❌ **disproved** — it does not |
+| **That a set duration actually changes the take's length** | ⬜ **not proven** — needs one generation |
 | Take/clip harvesting from the workspace list | ⬜ not attempted |
 | Model picker (changing v5.5 → other) | ⬜ not attempted; reads correctly |
 
@@ -450,3 +501,12 @@ when trap 2 fires.**
   over. One more trap found while generalising: **the workspace picker's button text is the
   current workspace name**, which is arbitrary — matching it by text picked the sidebar nav
   instead. Anchor on the `Save to...` label container.
+
+
+- **2026-08-24 (duration)** — Kai: narration must land within ±10s of the picture, so track length
+  needs controlling. Added `durationSec` to the spec and `setDuration()` to the script. Trap 8
+  found: **two duration controls exist and they are not linked** — the number input with
+  Custom/Auto belongs to Simple; Advanced's is a 10–360 slider inside the collapsed More Options
+  section. Writing to the wrong one does nothing, silently. `setSlider` hardened against a step
+  that cannot land on the target exactly (it used to oscillate). **Whether a set duration actually
+  binds is not yet proven** — it needs one generation.

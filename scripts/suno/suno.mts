@@ -40,6 +40,14 @@ export interface SunoSpec {
   audioInfluence?: number
   /** The pair. Ruled 2026-08-24: every attempt runs at both. */
   weirdness?: number[]
+  /**
+   * Target length in SECONDS (1–300). Omit for Auto.
+   *
+   * Suno treats this as a target, not a contract, and our own toolkit's §10 records that it
+   * shortens reliably and repeatedly fails to stretch. So set it slightly ABOVE the picture
+   * budget and trim in the edit, never below and hope it grows.
+   */
+  durationSec?: number
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -100,10 +108,17 @@ async function setSlider(page: Page, label: string, target: number): Promise<str
   const read = async () => Number(await s.first().getAttribute('aria-valuenow'))
   let cur = await read()
   let guard = 0
+  // The step is not always 1 — Duration moves in 5s — so an exact target may be unreachable and
+  // a naive loop oscillates around it forever. Stop as soon as a press stops getting us closer.
   while (cur !== target && guard++ < 300) {
     await page.keyboard.press(cur < target ? 'ArrowRight' : 'ArrowLeft')
     const next = await read()
-    if (next === cur) break
+    if (next === cur) break                                   // end stop
+    if (Math.abs(next - target) >= Math.abs(cur - target)) {   // overshot; step won't divide
+      await page.keyboard.press(next < cur ? 'ArrowRight' : 'ArrowLeft')
+      cur = await read()
+      break
+    }
     cur = next
   }
   return `${label}=${cur}`
@@ -253,6 +268,7 @@ async function verify(page: Page) {
          .filter(s => s.getBoundingClientRect().y > -50)
          .map(s => s.getAttribute('aria-label') + '=' + s.getAttribute('aria-valuenow')),
        credits: cr ? cr.getAttribute('aria-label') : null,
+       durationSec: (() => { const d = document.querySelector('[role="slider"][aria-label="Duration"]'); return d ? d.getAttribute('aria-valuenow') : 'not-mounted (More Options collapsed)'; })(),
      };`,
   )
 }
@@ -275,6 +291,7 @@ async function load(page: Page, spec: SunoSpec, weirdness?: number) {
     console.log(await attachVoice(page, spec.voice))
     console.log(await setSlider(page, 'Audio Influence', spec.audioInfluence ?? 50))
   }
+  if (spec.durationSec) console.log(await setDuration(page, spec.durationSec))
   if (spec.title) console.log('title:', await setTitle(page, spec.title))
   if (spec.workspace) console.log(await setWorkspace(page, spec.workspace))
 
@@ -285,6 +302,40 @@ async function load(page: Page, spec: SunoSpec, weirdness?: number) {
     problems.push(`style ${v.styleLen}/${spec.style.length} — TRUNCATED at the ${v.styleCap} cap?`)
   if (v.lyricParas !== paras) problems.push(`lyrics ${v.lyricParas} paragraphs, expected ${paras}`)
   return { verify: v, problems }
+}
+
+/**
+ * Target duration, in seconds.
+ *
+ * 🔴 Two duration controls exist and only one is ours. The `input[placeholder="Auto"]`
+ * (type=number, 1–300, with Custom/Auto toggles) belongs to the **Simple** panel — the two-panel
+ * trap again. Advanced Mode's is a **slider**, `[role="slider"][aria-label="Duration"]`, range
+ * **10–360**, step **5**. They are not linked: setting the number input leaves the slider where
+ * it was, so writing to it does nothing at all in Advanced Mode.
+ *
+ * The slider lives inside **More Options**, which is collapsed by default and unmounts its
+ * contents — so "the duration control has disappeared" almost always means that section is shut.
+ * Its trigger is a React div that ignores a native el.click(); it needs a real mouse click.
+ *
+ * Suno treats the number as a target, not a contract, and our own toolkit's §10 records that it
+ * shortens reliably and repeatedly fails to stretch — so aim slightly ABOVE the picture budget
+ * and trim in the edit, never below in the hope it grows.
+ */
+async function setDuration(page: Page, seconds: number): Promise<string> {
+  const mounted = async () =>
+    ((await page.locator('[role="slider"][aria-label="Duration"]').count()) as number) > 0
+
+  for (let i = 0; i < 3 && !(await mounted()); i++) {
+    const mo = page.getByText('More Options', { exact: true })
+    if (!(await mo.count())) break
+    await mo.last().scrollIntoViewIfNeeded().catch(() => {})
+    const box = await mo.last().boundingBox()
+    if (!box) break
+    await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2)
+    await page.waitForTimeout(1400)
+  }
+  if (!(await mounted())) return 'duration:more-options-would-not-open'
+  return setSlider(page, 'Duration', Math.round(seconds))
 }
 
 /** My Taste lives behind the profile menu and is ACCOUNT-WIDE — it affects every sheet. */

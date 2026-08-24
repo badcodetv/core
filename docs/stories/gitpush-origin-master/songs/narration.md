@@ -4,7 +4,7 @@ status: draft — one generation per scene (A/B/C), silence as default, sound de
 kind: spoken-word narration for the story video (not a song)
 covers: scenes/s00-awakening.md (56s) · scenes/s01-the-push.md (~27.8s) · scenes/plant-room.md (40s)
 model: v5.5 (cue-heavy — 5.5 obeys the bracket architecture, 4.5 shreds it)
-settings: all three scenes identical — style 75, audio 50, v5.5, BC-NEWSREADER attached, no duration set; EVERY attempt is a pair, weirdness 30 AND weirdness 60
+settings: all three scenes identical — style 75, audio 50, v5.5, BC-NEWSREADER attached, duration set per cut (60/30/45s); EVERY attempt is a pair, weirdness 30 AND weirdness 60
 voices: [BC-NEWSREADER (saved Voice) — spoken register ONLY, no chant]
 sibling: git-push-origin-master-orchestral.md
 ---
@@ -159,6 +159,22 @@ See §2: length is a budget, the four sync points are the constraint.
 ## 2. The timing plan
 
 Syllable counts at a slow newsreader pace of ~2.4 syllables/second. Add ~1s per full stop.
+
+### 🔑 Set the duration — within ±10s of the budget, ruled 2026-08-24
+
+**Narration is cut against built picture, so a take must land close.** Every generation now sets
+a target length; `durationSec` in the automation spec.
+
+| Cut | Budget | `durationSec` |
+| --- | --- | --- |
+| **1** · awakening | 56s | **60** |
+| **2** · the push | ~27.8s | **30** |
+| **3** · plant room | 40s | **45** |
+
+🔴 **Always aim slightly ABOVE the budget, never below.** Suno's duration is a target, not a
+contract, and it **shortens reliably but repeatedly fails to stretch**. Long trims in the edit;
+short is a reshoot. Mechanics and the two-controls trap:
+[`../../../suno-gpt/automation.md`](../../../suno-gpt/automation.md) §4 trap 8.
 
 ### 🔑 These numbers are a budget, not a constraint — ruled 2026-08-24
 
@@ -790,7 +806,7 @@ long time*).
      the Style box with the persona's *own* styles, which for `badcode newsreader` are the
      orchestral cut's: terrace chant, drum and bass, 174 BPM. The box looks populated afterwards,
      so this is silent.
-5. **Set no duration.**
+5. **Set the duration** — 60s / 30s / 45s per cut, always slightly above the budget. It shortens reliably and fails to stretch.
 6. **Name the track** — `gpom-cut1-A-w30`. The letter is the **prompt revision** and advances
    every time the prompt changes; the cut is always named so a bare letter is never ambiguous.
 7. **Save to…** → the **`gpom-story`** workspace, *before* generating. It routes the output;
