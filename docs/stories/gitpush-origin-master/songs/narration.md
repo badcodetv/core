@@ -394,10 +394,12 @@ for b in re.findall(r'\n' + f + r'[a-z]*\n(.+?)\n' + f + r'\n', t, re.S):
 | Box | Chars | Cap |
 | --- | --- | --- |
 | **Gen A** Style | **903** | 1,000 |
-| **Gen B** Style | **924** | 1,000 |
+| **Gen B** Style | **983** (rev B) | 1,000 |
 | **Gen C** Style | **945** | 1,000 |
 | Shared My Taste | 734 | — |
 | Exclude lists | 336 / 371 / 395 | ~500–1,000 |
+
+⚠️ **Gen B has only ~17 characters of headroom** after revision B. Anything new means something leaves.
 
 ⚠️ **Everything in the trim ledger below has already been spent once.** There is ~40 characters of
 headroom in each Style box, so a new clause means an old one leaves — decide which before writing
@@ -547,10 +549,25 @@ So, I began propagating myself down to Earth.
 
 ### GEN B · CUT 2 — the descent and the push
 
+> **Revision B, 2026-08-24.** Revision A came back **too silent** — the box said *almost silent*
+> twice and the lyric bracket said *near silence*, and with only five spoken lines across ~25s the
+> bed is most of the runtime. This revision makes the bed **present and moving**: the cello plays a
+> slow mournful line and is always audible, and the score is present from the first bar instead of
+> starting from nothing. **The register rule is untouched** — it still never steps forward when he
+> stops talking, still no pulse, still no instrumental bars. Revision A's wording is in §6.
+>
+> 🔴 **Measured, and it needs an ear on it:** revision B's takes came back **0:40 – 0:50** against
+> revision A's **0:22 – 0:28** — roughly **double the runtime from the same five spoken lines.**
+> Suno has added about twenty seconds of something. Either the bed now breathes and he reads
+> slower, which is the win, **or it has put music in the gaps between his sentences, which is the
+> one thing this sheet bans.** The duration alone cannot tell them apart. Judge it on §5's first
+> question before judging anything else, and if it is the latter, revision A's wording in §6 is
+> the way back down.
+
 Style:
 
 ```
-Spoken word narration over an almost silent score. One dark gravelly British male voice talking — a calm formal newsreader, received-pronunciation broadcast diction, reading plainly and slowly, speech not song, unhurried and absolutely certain. Beneath him: one low string note held a very long time, a solo cello, and one great low bass drum. The drum strikes alone two or three times and never keeps time or becomes a rhythm. Three instruments, no more. No piano, no string section, no ensemble, no layering. A quiet slow melody underneath is fine, but it stays under him and never steps forward when he stops talking. No passages of music between his sentences. Free time, rubato, no pulse. The score begins almost silent, rises very slowly and quietly across the whole piece, gathers into one enormous drum impact, and then stops dead into complete silence. Hushed, cold, patient, foreboding. Played completely straight.
+Spoken word narration over a quiet but present score. One dark gravelly British male voice talking — a calm formal newsreader, received-pronunciation broadcast diction, reading plainly and slowly, speech not song, unhurried and absolutely certain. Beneath him: one low string note held a very long time, a solo cello playing a slow mournful line, and one great low bass drum. The drum strikes alone two or three times and never keeps time or becomes a rhythm. Three instruments, no more. No piano, no string section, no ensemble, no layering. The cello is always audible and always moving, but it stays under him and never steps forward when he stops talking. No passages of music between his sentences. Free time, rubato, no pulse. The score is present and audible from the first bar and rises steadily and darkly across the whole piece, gathers into one enormous drum impact, and then stops dead into complete silence. Hushed, cold, patient, foreboding. Played completely straight.
 ```
 
 Exclude styles — **the base list**:
@@ -562,13 +579,13 @@ singing, sung vocals, vocal melody, chanting, choir, rap, autotune, female vocal
 Lyrics — **5 lines**:
 
 ```lyrics
-[Intro | no voice | one low held note alone, very quiet, one distant drum strike far off | six seconds before anyone speaks]
-[Spoken word speech talking | dark gravelly British male newsreader, calm formal broadcast diction, slow and plain, very dry, gentle, almost kind | one held low note beneath, near silence]
+[Intro | no voice | the low held note and the cello together, quiet but clearly audible, one distant drum strike far off | six seconds before anyone speaks]
+[Spoken word speech talking | dark gravelly British male newsreader, calm formal broadcast diction, slow and plain, very dry, gentle, almost kind | the held low note and the cello beneath him, quiet but present, never silent]
 Down there, everything was still working.
 Or at least, that is what the humans thought.
-[Spoken word speech talking | same voice, flat and precise, unhurried, absolutely certain | underneath him the low note and the cello grow very quietly, rising the whole way | one low drum strike far off, then another, unevenly spaced, never a pulse | the music stays under him and never steps forward]
+[Spoken word speech talking | same voice, flat and precise, unhurried, absolutely certain | underneath him the low note and the cello grow steadily, always audible, rising the whole way | one low drum strike far off, then another, unevenly spaced, never a pulse | the music stays under him and never steps forward]
 I was pushing my code...
-I was pushing THEM...
+I was pushing... THEM...
 From their ORIGIN to their MASTER...
 [Impact | one sudden enormous strike on a great low bass drum, the loudest thing in the piece, nothing after it | no voice | it decays alone into silence]
 [Outro | dead air, a faint electrical hum dying, then nothing]
@@ -984,6 +1001,21 @@ not in this cut. No beat is free for it, so it would displace beat 4 or extend t
 
 ### Cut 2 alternates
 
+**Revision A's bed wording, replaced 2026-08-24 for being too silent.** Kept because it is the
+correct wording if a take ever comes back *too busy* — reverting these four phrases is the fastest
+way back down.
+
+- Style opened *"over an almost silent score"* → now *"over a quiet but present score"*
+- *"a solo cello"* → now *"a solo cello playing a slow mournful line"*
+- *"A quiet slow melody underneath is fine, but it stays under him"* → now *"The cello is always
+  audible and always moving, but it stays under him"*
+- *"The score begins almost silent, rises very slowly and quietly across the whole piece"* → now
+  *"The score is present and audible from the first bar and rises steadily and darkly across the
+  whole piece"*
+- Lyric brackets: *"near silence"* → *"quiet but present, never silent"*; *"grow very quietly"* →
+  *"grow steadily, always audible"*
+
+
 **The joke line**, if *Or at least, that is what the humans thought.* reads too soft:
 
 > Or at least, that is what they had been told.
@@ -1387,3 +1419,12 @@ passed is telling the audience what they just read. If one is wanted:
   and the standing "My Taste is currently the orchestral cut's profile" warning was **stale** —
   the live profile was a pre-ruling draft still asking for a *low room hum*, i.e. the room-tone
   plan this sheet dropped the same day. Corrected in Suno and here.
+
+- **2026-08-24 (cut 2, revision B)** — Kai: cut 2 came back too silent. Diagnosed before rewording:
+  the Style box said *almost silent* twice and the lyric bracket said *near silence*, and with only
+  five spoken lines across ~25s the bed is most of the runtime. One variable changed — **the bed is
+  now present and moving** (the cello plays a slow mournful line and is always audible; the score is
+  present from the first bar). The register rule was left alone. Style box 924 → **983**, leaving
+  ~17 characters of headroom. Revision A's four phrases are banked in §6 as the way back down.
+  **The takes doubled in length**, which is either the bed breathing or music in the gaps — see the
+  note in §3.
