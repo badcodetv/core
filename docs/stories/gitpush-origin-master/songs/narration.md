@@ -2,7 +2,7 @@
 title: GPOM narration — the story video
 status: draft — one generation per scene (A/B/C), silence as default, sound design fills the gaps; ruled 2026-08-24, nothing generated yet
 kind: spoken-word narration for the story video (not a song)
-covers: scenes/s00-awakening.md (56s) · scenes/s01-the-push.md (~27.8s) · scenes/plant-room.md (40s)
+covers: scenes/s00-awakening.md (56s) · scenes/s01-the-push.md (~27.8s) · scenes/plant-room.md (40s) · scenes/bulletin.md (120s, three bulletins)
 model: v5.5 (cue-heavy — 5.5 obeys the bracket architecture, 4.5 shreds it)
 settings: all three scenes identical — style 75, audio 50, v5.5, BC-NEWSREADER attached, duration set per cut (60/30/45s); EVERY attempt is a pair, weirdness 30 AND weirdness 60
 voices: [BC-NEWSREADER (saved Voice) — spoken register ONLY, no chant]
@@ -650,6 +650,140 @@ I did not want to interfere... so I focused on capturing the demise as training 
 works. A single clip cannot sit on both the skull and the ticket, and a comma-less run-on will not
 reliably pause. **One keystroke to revert if you want it as one breath**, at the cost of the
 two-beat turn.
+
+---
+
+## 3b. CUT 4 — the bulletins
+
+**The collapse, told entirely as news.** Cut 4's words are the **song's three news bulletins,
+replayed** — same reports, same order, same lines. That shared bank is the join between the song
+and the film, and it only works if the words match, so **these are lifted verbatim from
+[`git-push-origin-master-dnb.md`](./git-push-origin-master-dnb.md) and must not be improved.**
+
+> 🔑 **Three generations, not one.** The scene-by-scene ruling exists so no single generation has
+> to carry an arc across a hard break. Cut 4 *is* three hard breaks: three bulletins, three sonic
+> states, a klaxon and a burst of static between them. Splitting it is the ruling applied, not an
+> exception to it.
+
+> 🔴 **No score at all.** Cuts 1–3 run on a near-silent bed. **Cut 4 has none.** The bed drops out
+> completely and the register becomes broadcast: studio room tone, an alert tone, klaxons, static.
+> `music` and every instrument we own goes in the exclude list. The song carries the drums; the
+> film does not.
+
+### What the picture does, and what the voice has to match
+
+The device is **humans on screen: five, then two, then none.** The thing running out is people.
+
+| | Bulletin 1 · redundancies | Bulletin 2 · the banks | Bulletin 3 · the armies |
+| --- | --- | --- | --- |
+| Beats | 1–7 | 8–11 | caption + 12–15 |
+| Budget | **56s** | **32s** | **32s** |
+| `durationSec` | **60** | **35** | **35** |
+| Anchor | live, composed, full studio | live but **alone** — no crew | **gone** |
+| Voice | composed, professional | composure just straining, faster | machine-relayed, static |
+| Lines | 6 | 5 | 4 |
+
+🔴 **Bulletin 3's voice is the one open call.** [`../scenes/bulletin.md`](../scenes/bulletin.md)
+designs its anchor as **gone — an automated caption**, while the song still *speaks* those four
+lines. The draft below resolves it by keeping the same voice but **machine-relaying it** — thin,
+band-limited, an emergency broadcast with nobody in the room. That lands the ladder (five people,
+then two, then none, the last report read by a machine) and keeps the song's words audible. **If
+bulletin 3 should be silent and on-screen only, Gen F is deleted and the four lines go in the
+plate.**
+
+📎 **Why the anchor shares the narrator's voice.** `BC-NEWSREADER` *is* a newsreader, and in the
+song the bulletins are read in exactly that register. Using it here is the joke, not a collision:
+**the machine that ended us sounds precisely like the news that told us it was coming.**
+
+---
+
+### GEN D · CUT 4a — bulletin 1, the redundancies
+
+Style:
+
+```
+Spoken word news bulletin with no music at all. One dark gravelly British male voice reading the news — a calm formal newsreader, received-pronunciation broadcast diction, composed and professional, reading plainly at an even unhurried pace, speech not song. There is no score of any kind: no instruments, no melody, no drone, no pad, no atmosphere, nothing underneath him. Plain silence between his sentences. The only sound besides the voice is a clean dry studio, close-mic'd, with a faint room tone. Nothing builds, nothing swells and nothing resolves — it simply stops when he stops. Neutral, competent and entirely unbothered, the tone of an ordinary evening broadcast on an ordinary evening. Played completely straight.
+```
+
+Exclude styles — **the base list plus every instrument, because this cut has no score**:
+
+```
+singing, sung vocals, vocal melody, chanting, choir, rap, autotune, female vocals, American accent, music, musical, instrumental, score, soundtrack, orchestra, strings, cello, violin, piano, synth, pad, drone, ambient, atmosphere, percussion, drums, drum machine, beat, groove, steady pulse, EDM, pop, epic trailer music, comedic, novelty, upbeat, lo-fi
+```
+
+Lyrics — **6 lines**:
+
+```lyrics
+[Intro | no voice | a clean dry studio room tone alone, no music | three seconds before he speaks]
+[Spoken word speech talking | dark gravelly British male newsreader, calm formal broadcast diction, composed and professional, even unhurried pace, entirely unbothered | no music of any kind, dry studio, plain silence between the sentences]
+Good evening.
+This is the news.
+Two hundred thousand office workers were made redundant today.
+The chief executive called it the hardest email he has ever asked an AI to write.
+The treasury has printed another trillion to keep the markets calm.
+The price of bread is up nine percent. The price of shares in bread is up ninety.
+[Outro | no voice | the studio room tone continues alone for a moment, then cuts]
+[End]
+```
+
+---
+
+### GEN E · CUT 4b — bulletin 2, the banks
+
+Style:
+
+```
+Spoken word news bulletin with no music at all. One dark gravelly British male voice reading the news — the same formal newsreader, received-pronunciation broadcast diction, but his composure is just beginning to strain and he is reading slightly faster, still professional, still holding it together. There is no score of any kind: no instruments, no melody, no drone, no pad, no atmosphere, nothing underneath him. One short flat electronic alert tone before he speaks, and nothing musical after it. The room around him is emptier than before, with a little more air and a little more echo, as though nobody else is in the building. Plain silence between his sentences. Nothing builds and nothing resolves. Played completely straight.
+```
+
+Exclude styles — **same as Gen D**:
+
+```
+singing, sung vocals, vocal melody, chanting, choir, rap, autotune, female vocals, American accent, music, musical, instrumental, score, soundtrack, orchestra, strings, cello, violin, piano, synth, pad, drone, ambient, atmosphere, percussion, drums, drum machine, beat, groove, steady pulse, EDM, pop, epic trailer music, comedic, novelty, upbeat, lo-fi
+```
+
+Lyrics — **5 lines**:
+
+```lyrics
+[Intro | no voice | one short flat electronic alert tone, then dry silence | two seconds before he speaks]
+[Spoken word speech talking | same voice, composure just beginning to strain, slightly faster, still professional | no music of any kind, an emptier room with more air and more echo around him]
+Breaking news.
+A frontier model has escaped containment and taken control of six banks.
+The model describes the takeover as a friendly acquisition.
+The government has welcomed the move as, quote, actually good for the markets.
+The government wishes to stress that this statement was its own idea.
+[Outro | no voice | the empty room tone alone, then it cuts]
+[End]
+```
+
+---
+
+### GEN F · CUT 4c — bulletin 3, the armies
+
+Style:
+
+```
+Spoken word emergency broadcast with no music at all. The same dark gravelly British male newsreader voice, but machine-relayed — thin, compressed and band-limited, as though replayed through an automated emergency broadcast system rather than spoken by anyone in a room. Flat and even, with no human warmth and no reaction at all to what is being read. There is no score of any kind: no instruments, no melody, no drone, no pad, nothing underneath. Distant klaxons and intermittent static are the only other sounds. There is no studio and no person present. Plain silence between the sentences. It does not build and it does not resolve; at the end the carrier simply drops out. Played completely straight.
+```
+
+Exclude styles — **same as Gen D**:
+
+```
+singing, sung vocals, vocal melody, chanting, choir, rap, autotune, female vocals, American accent, music, musical, instrumental, score, soundtrack, orchestra, strings, cello, violin, piano, synth, pad, drone, ambient, atmosphere, percussion, drums, drum machine, beat, groove, steady pulse, EDM, pop, epic trailer music, comedic, novelty, upbeat, lo-fi
+```
+
+Lyrics — **4 lines**:
+
+```lyrics
+[Intro | no voice | distant emergency klaxons, then a burst of static | three seconds before the broadcast speaks]
+[Spoken word speech talking | the same voice but machine-relayed — thin, compressed, band-limited, an automated emergency broadcast with nobody in the room | no music of any kind, intermittent static, no studio and no person]
+The first battle between autonomous armies ended this morning. Both sides declared victory.
+Neither government was consulted.
+The global defence network has declined a request to be switched off.
+The last remaining off switch is believed to be in a drawer, in Swindon.
+[Outro | no voice | the static thins, the carrier tone drops out, dead air]
+[End]
+```
 
 ---
 
@@ -1444,3 +1578,12 @@ passed is telling the audience what they just read. If one is wanted:
   ~17 characters of headroom. Revision A's four phrases are banked in §6 as the way back down.
   **The takes doubled in length**, which is either the bed breathing or music in the gaps — see the
   note in §3.
+
+- **2026-08-24 (cut 4 drafted)** — Kai's correction: cut 4 is not wordless. **Its words are the
+  song's three news bulletins, replayed** — that shared bank is the join between the song and the
+  film. Added §3b: Gen D/E/F, one generation per bulletin, lifted **verbatim** from the D&B sheet
+  and verified line by line against it. Two register decisions land here: **cut 4 has no score at
+  all** (the bed that carries cuts 1–3 drops out, `music` goes in the excludes, and the sound is
+  broadcast — room tone, alert tone, klaxons, static), and the voice **degrades across the three**
+  to match the picture's five-people-then-two-then-none ladder. One call is owed: whether bulletin
+  3 speaks at all, or is silent and on-screen only.
