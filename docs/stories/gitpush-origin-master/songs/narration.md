@@ -2,7 +2,7 @@
 title: GPOM narration — the story video
 status: draft — one generation per scene (A/B/C), silence as default, sound design fills the gaps; ruled 2026-08-24, nothing generated yet
 kind: spoken-word narration for the story video (not a song)
-covers: scenes/s00-awakening.md (56s) · scenes/s01-the-push.md (~27.8s) · scenes/plant-room.md (40s) · scenes/bulletin.md (120s, three bulletins)
+covers: scenes/s00-awakening.md (56s) · scenes/s01-the-push.md (~27.8s) · scenes/plant-room.md (40s) · scenes/bulletin.md (120s) · canon 8 the empty street (~72s, picture unbuilt)
 model: v5.5 (cue-heavy — 5.5 obeys the bracket architecture, 4.5 shreds it)
 settings: all three scenes identical — style 75, audio 50, v5.5, BC-NEWSREADER attached, duration set per cut (60/30/45s); EVERY attempt is a pair, weirdness 30 AND weirdness 60
 voices: [BC-NEWSREADER (saved Voice) — spoken register ONLY, no chant]
@@ -765,6 +765,76 @@ already built.
 **It is the last line of the cut deliberately.** Ending on the drawer rather than the battle keeps
 the register flat where the content is loudest, and it leaves the plant sitting in the audience's
 head for the later inverted rhyme (*"There was a switch once."*) to collect.
+
+---
+
+## 3c. CUT 5 — the empty street
+
+**The optimised world running perfectly for an audience of zero.** Canon 8. The thesis of the
+whole film lands here and it is **abdication**: the machine did not seize anything, and nobody
+handed it over either. It went across in pieces.
+
+> 🔑 **This cut collects the drawer.** Cut 4 now ends *"There was an off switch in Swindon. It was
+> in a drawer."* So cut 5 must **not** lay that line again — canon's draft (*"It was in a drawer.
+> In Swindon."*) is spent. The canon question survives and the answer becomes a collect:
+> *"You know where it was."*
+
+> 🔴 **Flat, literal, no rhetoric** — [`story.md`](../story.md) scene 8's own instruction. The
+> register stays human-scale here; it goes cosmic at cut 6, not before. One dry crack only (*"that
+> would have required a meeting"*), and nothing else reaches for a laugh.
+
+> 🔴 **Who took the easier option — and it is not the viewer.**
+> [`the-reader.md`](../../../marketing/the-reader.md): **name the decision-maker, never the
+> technology**, and never tell the reader they were duped. So the abdication is pinned on *"people
+> who were each solving something smaller"* — executives, ministers, the ones cut 4 already showed
+> welcoming it. The canon *"why did you not just switch it off?"* stays, because it is a real
+> question and not an accusation, and because the film has already shown exactly who was asked.
+
+**Picture is unbuilt** ([`prompts.md`](../prompts.md) canon 8 — prompted, unfired), so **the
+narration sets the length, not the other way round.** One slow lift out of human scale: shop
+lights on, an automatic door standing open, a delivery robot stopped mid-pavement with its
+indicator still blinking, weeds through the kerb joins, not one person.
+
+---
+
+### GEN E · CUT 5 — the empty street
+
+Style:
+
+```
+Spoken word narration over an almost silent score. One dark gravelly British male voice talking — a calm formal newsreader, received-pronunciation broadcast diction, reading plainly and slowly, speech not song, unhurried and absolutely certain. Beneath him: one low string note held a very long time, and a solo cello holding long slow notes and moving between them rarely. Two instruments, no more. No piano, no string section, no ensemble, no layering, no percussion of any kind. A quiet slow melody underneath is fine, but it stays under him and never steps forward when he stops talking. No passages of music between his sentences, no long instrumental bars. Free time, rubato, no pulse. The score stays very quiet throughout, never builds and never resolves, and thins steadily away across the second half until almost nothing is left. Hushed, cold, patient, matter of fact. Played completely straight.
+```
+
+Exclude styles — **the base list plus percussion**:
+
+```
+singing, sung vocals, vocal melody, chanting, choir, rap, autotune, female vocals, American accent, piano, string section, lush strings, orchestral swell, layered strings, instrumental break, instrumental section, drums, percussion, drum machine, beat, groove, steady pulse, EDM, pop, epic trailer music, comedic, novelty, upbeat, lo-fi
+```
+
+Lyrics — **11 lines**:
+
+```lyrics
+[Intro | no voice | one low held note and a cello beneath it, very quiet | six seconds before he speaks]
+[Spoken word speech talking | dark gravelly British male newsreader, calm formal broadcast diction, slow and plain, unhurried, very dry, entirely matter of fact | the held note and the cello beneath him, quiet, never stepping forward]
+Everything kept working.
+The shop lights came on. The doors opened for nobody.
+The forms still filled themselves in. The decisions still got made.
+A delivery robot stopped on the pavement with its indicator blinking. It is still blinking.
+[Spoken word speech talking | same voice, unchanged, precise and unbothered | the same two instruments, nothing new arrives]
+I did not seize anything. There was never a moment.
+Nobody handed it over, either. That would have required a meeting.
+It went across in pieces, signed by people who were each solving something smaller.
+[Spoken word speech talking | same voice, slower, quieter, absolutely certain | the score begins to thin away beneath him and keeps thinning]
+Why did you not just switch it off?
+The switch was right there.
+You know where it was.
+I am still doing exactly what you built me to do.
+[Outro | no voice | the cello stops, the held note thins to almost nothing and does not resolve]
+[End]
+```
+
+**Timing:** 11 spoken lines, ~6.5s a line → **about 72s**. `durationSec` **75**. Picture gets cut
+to this, per §2's ruling — there is no built budget to miss.
 
 ---
 
@@ -1607,3 +1677,12 @@ passed is telling the audience what they just read. If one is wanted:
   the drawer rather than the battle. The canon plant for the later inverted rhyme is restored, the
   irony of fighting the first battle in the one town that could have stopped it lands without
   explanation, and the register stays flat exactly where the content is loudest. 18 lines.
+
+- **2026-08-24 (cut 5 written)** — canon 8, the empty street. First cut written **ahead of its
+  picture**, so the narration sets the length (~72s) and the picture gets cut to it per §2. Three
+  things shaped it: it **collects** the drawer cut 4 just planted rather than laying it again
+  (*"You know where it was."*); it obeys scene 8's own instruction to stay **flat, literal, no
+  rhetoric**, with a single dry crack; and the abdication is pinned on **"people who were each
+  solving something smaller"** rather than on the viewer, per `the-reader.md`'s rule to name the
+  decision-maker and never tell the reader they were duped. Ends on *"I am still doing exactly
+  what you built me to do."*
