@@ -43,8 +43,17 @@ A hundred years later, there's a statue.
   [storyboard](./story.md#storyboard--scene-by-scene-video-canon)** — Jack's
   production guide for the story video. If anything else disagrees with the
   storyboard section, the storyboard wins.
+- **[`shot-list.md`](./shot-list.md)** — **the edit order**: every shot in the film in
+  the order it appears in the cut, one line each, plus the "start here next session"
+  list. The assembly view of the storyboard; `story.md` still wins on canon.
 - [`master-notes-2026-08-05.md`](./master-notes-2026-08-05.md) — the archived
   Kai + Jack session transcript the storyboard was distilled from.
+- **[`narration/`](./narration/README.md)** — **the narrator and the score**: the
+  ElevenLabs Voice Design prompt that makes him ([`voice.md`](./narration/voice.md)),
+  the tag-directed narration script in nine paste-ready chunks
+  ([`script.md`](./narration/script.md)), and six Suno prompts for the background
+  music, built from the DNA of *All Day to Complain*
+  ([`score.md`](./narration/score.md)).
 - [`characters/karen.md`](./characters/karen.md) — Karen Bell (stereotype → leader)
   — **plus the Flow Character ledger**: look + voice prompts (base voice Gacrux)
   and the portrait + full-body references in
