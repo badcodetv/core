@@ -1,6 +1,6 @@
 ---
 name: suno-prompt
-description: Use when turning a song idea into a Suno prompt — a style prompt, exclude-styles list, or lyrics — for BadCode music, AND when driving Suno itself: what to click, in what order, to get a result or fix a broken one. Triggers on "make a Suno prompt", "turn this into a song / track", "write lyrics for…", "optimize this for Suno", "give me a style prompt", "how do I do X in Suno", "what do I click", "how do I fix this vocal / change this word / split these stems", anything about Suno Studio, MIDI, stems, Voice/Persona or custom models, or any drum & bass / track idea clearly meant for Suno generation.
+description: Use when turning a song idea into a Suno prompt — a style prompt, exclude-styles list, or lyrics — for BadCode music, AND when a human is driving Suno by hand: what to click, in what order, to get a result or fix a broken one. Triggers on "make a Suno prompt", "turn this into a song / track", "write lyrics for…", "optimize this for Suno", "give me a style prompt", "how do I do X in Suno", "what do I click", "how do I fix this vocal / change this word / split these stems", anything about Suno Studio, MIDI, stems, Voice/Persona or custom models, or any drum & bass / track idea clearly meant for Suno generation. Driving Suno FROM CODE — loading a sheet into the boxes, clicking Create, running the weirdness pair, workspaces — is `suno-automation`.
 ---
 
 # Suno Prompt (BadCode)
