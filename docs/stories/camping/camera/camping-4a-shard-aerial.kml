@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Camping — Shard aerial, looking north</name>
+    <description>Blocking reference for the 2026 City shot. Camera ~670m south of
+    the Shard at 200m, looking due north. Nudge altitude and latitude to match the
+    drone frame.</description>
+    <Placemark>
+      <name>4a — Shard aerial (looking north)</name>
+      <Camera>
+        <longitude>-0.0865</longitude>
+        <latitude>51.4985</latitude>
+        <altitude>200</altitude>
+        <heading>0</heading>
+        <tilt>85</tilt>
+        <roll>0</roll>
+        <altitudeMode>absolute</altitudeMode>
+      </Camera>
+    </Placemark>
+  </Document>
+</kml>

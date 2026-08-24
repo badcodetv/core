@@ -46,6 +46,17 @@ So the scan surface includes at least:
 Never put a real person's name in *any* Flow field. Describe build, era dress and
 bearing instead, and name the Character something generic.
 
+**⚠️ It is not only real names — any trigger word in the Name field is permanent**
+*(2026-08-24)*. Camping's ruined-Tarquin Character was called `@homeless-Tarquin`, which
+puts [trigger 3](#a5-the-five-triggers-badcodes-own) — destitution — into **every prompt
+that casts him**, in a field nobody re-reads. Renamed to `@Future-Tarquin`: same character,
+same sheet, and the condition word is gone from the field while the story keeps it.
+
+**The rule that generalises: name a Character for *when* or *who*, never for their
+condition.** A Character Name is written once and then silently prepended to a hundred
+generations, so it is the worst possible place to spend a trigger. Era, role and story
+position — `Future`, `City`, `Young` — all cost nothing.
+
 ## A3. Harm categories
 
 Vertex surfaces 8-digit support codes under named categories: Violence, Sexual, Hate,

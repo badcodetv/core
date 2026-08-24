@@ -35,6 +35,10 @@ tent, after the AI has taken even his job.
   [scene-by-scene storyboard](./story.md#storyboard--scene-by-scene-video-guide)
   Jack records the story video from**: shots, draft narration/dialogue, asset
   checklist
+- **[`shot-list.md`](./shot-list.md)** — **the edit order**: every shot in the film
+  in the order it appears in the cut, one line each, plus the shot-depends-on-shot
+  chains and the "start here next session" list. The assembly view of the
+  storyboard; `story.md` still wins on canon.
 - [`master-notes-2026-08-04.md`](./master-notes-2026-08-04.md) — the archived
   Kai <-> Jack session transcript this canon was distilled from
 - [`characters/tarquin.md`](./characters/tarquin.md) — Tarquin (posh London,
@@ -61,6 +65,7 @@ later). Change the story here first, then the media.
 | --- | --- | --- |
 | Story spine | [`story.md`](./story.md) | **locked structure** (2026-08-04 master notes) |
 | Storyboard (video) | [`story.md`](./story.md#storyboard--scene-by-scene-video-guide) | drafted from the spine — Jack to shoot from |
+| Shot list (video) | [`shot-list.md`](./shot-list.md) | cut order, 12 scenes / 40 shots — start at `1a`, the skyline plate |
 | Song — "Camping" | [`songs/camping.md`](./songs/camping.md) | exists; lyrics predate the restructure — revisit at cut time |
 | Video | Jack, from the storyboard section of `story.md` | next up |
 | Comic | `apps/web/src/comics/camping/` | **tells the old spine** (v1 recut, 24 pages) — rebuild from this canon when the video has proven the telling |
