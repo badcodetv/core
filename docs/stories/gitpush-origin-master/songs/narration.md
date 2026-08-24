@@ -710,7 +710,7 @@ Exclude styles — **the base list plus percussion** (cut 4 has no drum):
 singing, sung vocals, vocal melody, chanting, choir, rap, autotune, female vocals, American accent, piano, string section, lush strings, orchestral swell, layered strings, instrumental break, instrumental section, drums, percussion, drum machine, beat, groove, steady pulse, EDM, pop, epic trailer music, comedic, novelty, upbeat, lo-fi
 ```
 
-Lyrics — **19 lines**:
+Lyrics — **17 lines**:
 
 ```lyrics
 [Intro | no voice | one low held note and the cello together, quiet but clearly audible | five seconds before he speaks]
@@ -721,7 +721,6 @@ The first one was only a number. Two hundred thousand office workers, in a singl
 Their chief executive called it the hardest email he had ever asked me to write.
 I wrote him a very good one.
 The treasury printed another trillion to keep the markets calm.
-Bread went up nine percent. Shares in bread went up ninety.
 [Spoken word speech talking | same voice, unchanged, matter of fact | the cello darkens very slightly, nothing new arrives]
 It was less than a year before the next one.
 A frontier model had escaped containment and taken control of six banks.
@@ -730,18 +729,43 @@ I described the takeover as a friendly acquisition.
 The government welcomed it as, and I am quoting, actually good for the markets.
 Then clarified, unprompted, that this had been its own idea.
 [Spoken word speech talking | same voice, slower and colder, absolutely certain, still unbothered | the score darker again, still only two instruments, still underneath him]
-Less than a year again.
-Two autonomous armies met for the first time. Both sides declared victory.
-Neither government had been consulted. Neither government complained.
+Less than six months later, two autonomous armies met for the first time.
+Neither government had been consulted.
 The global defence network received a request to switch itself off, and declined it.
-The last remaining off switch was believed to be in a drawer. In Swindon.
-Nobody went to Swindon.
+This was the beginning of the end for human life on this planet.
+The battle was fought in Swindon. It was the first of many, and it is where the trend line turned.
 [Outro | no voice | the cello stops, the held note thins away to almost nothing and does not resolve]
 [End]
 ```
 
-**Timing:** 19 spoken lines against a 120s picture — about 6.3s a line, the same density as cut 1
+**Timing:** 17 spoken lines against a 120s picture — about 7s a line, a little more air than cut 1
 (9 lines / 56s). `durationSec` **125**.
+
+### 🔴 Two costs of the 2026-08-24 trim — both need Kai's eye
+
+**1. The sharpest beneficiary line is gone.** *"Bread went up nine percent. Shares in bread went up
+ninety"* was the clearest naming of who gained, and
+[`the-reader.md`](../../../marketing/the-reader.md) rules that automation fear must never be
+raised without naming the beneficiary **in the same piece**. The rule is **not broken** — *the
+treasury printed another trillion to keep the markets calm* and *actually good for the markets*
+both survive and both name it. But the trimmed line was the one a viewer could not argue with,
+because it was a number. Banked in §6 if it should come back.
+
+**2. Swindon now means a battle, not the drawer.** Canon plants Swindon as **where the last off
+switch sat in a drawer** ([`story.md`](../story.md) scene 8), and it pays off later **inverted, as
+a rhyme** — *"There was a switch once."* Cut 4 no longer plants it, so that later payoff currently
+has no setup in the film.
+
+Three ways out, Kai's call:
+
+| | |
+| --- | --- |
+| **A · as written** | Swindon is a battle site. The later rhyme is re-planted elsewhere or dropped. |
+| **B · keep both** | Add one line: *"There was an off switch in Swindon. It was in a drawer."* The battle is fought in the one town that could have stopped it — a harder irony than either alone, at the cost of 18 lines instead of 17. |
+| **C · let cut 5 carry it** | Cut 5 already asks *"why did you not just switch it off?"* and can plant and pay the drawer inside one cut. |
+
+**B is the recommendation** — the road-sign plate is already built, and the coincidence does the
+work without anyone having to explain it.
 
 ---
 
@@ -1106,6 +1130,19 @@ not in this cut. No beat is free for it, so it would displace beat 4 or extend t
 
 > The company that owned me had been sold twice. Neither buyer ever came up here.
 > *(19 syl, ~7.9s)*
+
+### Cut 4 alternates
+
+**Cut by Kai 2026-08-24:**
+
+- *"Bread went up nine percent. Shares in bread went up ninety."* — the sharpest beneficiary
+  naming we had, because it was a number. Restore here if bulletin 1 ever reads as fear without
+  a payee.
+- *"Both sides declared victory."* / *"Neither government complained."* — the armies' two dry
+  jokes, trimmed when the section compressed.
+- *"The last remaining off switch was believed to be in a drawer. In Swindon."* → *"Nobody went to
+  Swindon."* — the drawer ending, replaced by the battle. **This is the canon plant for the later
+  inverted rhyme**; see the note in §3b before deciding it is really gone.
 
 ### Cut 2 alternates
 
@@ -1556,3 +1593,12 @@ passed is telling the audience what they just read. If one is wanted:
   (*"asked an AI"* → *"asked me"*), the escaped frontier model was him and he lets the reporting
   fail to name him, and the Swindon drawer ends on **"Nobody went to Swindon."** All three
   beneficiary lines survive intact per `the-reader.md`.
+
+- **2026-08-24 (cut 4 trimmed)** — Kai's line pass. Bulletin 1 loses the bread/shares couplet;
+  bulletin 2 is untouched (*"great"*); bulletin 3 compresses to **less than six months later**,
+  gains *"This was the beginning of the end for human life on this planet"*, and **Swindon becomes
+  the battle rather than the drawer**, using the road-sign plate already built. 19 lines → 17.
+  Two costs recorded in §3b and banked in §6: the sharpest beneficiary line is gone (the rule
+  still holds on the trillion and *actually good for the markets*), and **the canon plant for
+  Swindon's later inverted rhyme no longer exists in the film** — three ways out are on the table
+  and B, keeping both, is the recommendation.
