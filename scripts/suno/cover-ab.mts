@@ -31,10 +31,16 @@ import { readFileSync } from 'node:fs'
 import { connect, setSlider, setTitle, setLyrics, create, listTakes } from './suno.mts'
 import { VARIATIONS, styleFor, excludeFor, titleFor, type Variation } from './cover-variations.mts'
 
-/** Pinned for the whole set. The variable under test is the style box, and nothing else. */
-const WEIRDNESS = 30
-const STYLE_INFLUENCE = 50
-const AUDIO_INFLUENCE = 25
+/**
+ * Pinned for the whole set — normally the style box is the only thing under test, so the
+ * sliders don't move mid-comparison. Overridable via env var for a deliberate sweep (e.g.
+ * SUNO_WEIRDNESS=60 SUNO_STYLE_INFLUENCE=75 SUNO_AUDIO_INFLUENCE=15 npx tsx cover-ab.mts run …),
+ * which is itself a one-variable-at-a-time round — just with the sliders as the variable
+ * instead of the style box.
+ */
+const WEIRDNESS = Number(process.env.SUNO_WEIRDNESS ?? 30)
+const STYLE_INFLUENCE = Number(process.env.SUNO_STYLE_INFLUENCE ?? 50)
+const AUDIO_INFLUENCE = Number(process.env.SUNO_AUDIO_INFLUENCE ?? 25)
 
 /** The canonical words. `camping.md` §4 is the source of truth; the attached audio is not. */
 const SHEET = new URL('../../docs/stories/camping/songs/camping.md', import.meta.url).pathname
@@ -86,7 +92,7 @@ function guard(s: Record<string, unknown>, paras: number): string[] {
 }
 
 /** Fill one variation. Style, excludes and sliders only — the lyrics are never touched. */
-async function loadVariation(page: Page, v: Variation) {
+async function loadVariation(page: Page, v: Variation, title = titleFor(v)) {
   const style = styleFor(v)
   const exclude = excludeFor(v)
   await page.locator('[data-testid="create-form-styles-wrapper"] textarea').fill(style)
@@ -94,7 +100,7 @@ async function loadVariation(page: Page, v: Variation) {
   await setSlider(page, 'Style Influence', STYLE_INFLUENCE)
   await setSlider(page, 'Weirdness', WEIRDNESS)
   await setSlider(page, 'Audio Influence', AUDIO_INFLUENCE)
-  await setTitle(page, titleFor(v))
+  await setTitle(page, title)
   const s = await coverState(page)
   const bad: string[] = []
   if (s.styleLen !== style.length) bad.push(`style ${s.styleLen}/${style.length} — truncated at the 1000 cap?`)
@@ -103,7 +109,17 @@ async function loadVariation(page: Page, v: Variation) {
 }
 
 const [cmd, ...ids] = process.argv.slice(2)
-const pick = ids.length ? VARIATIONS.filter((v) => ids.includes(v.id)) : VARIATIONS
+// `run <id>x3` — repeat the same variation 3 times, each with a distinct title. Without this,
+// `create()` waits for two takes matching the title and would see the FIRST run's takes and
+// return immediately, reporting success for a round it never generated.
+const requests = (ids.length ? ids : VARIATIONS.map((v) => v.id)).flatMap((raw) => {
+  const m = raw.match(/^(.+?)x(\d+)$/)
+  const [id, n] = m ? [m[1], Number(m[2])] : [raw, 1]
+  const v = VARIATIONS.find((x) => x.id === id)
+  if (!v) throw new Error(`unknown variation id: ${id}`)
+  return Array.from({ length: n }, (_, i) => ({ v, title: n > 1 ? `${titleFor(v)} #${i + 1}` : titleFor(v) }))
+})
+const pick = requests.map((r) => r.v)
 
 if (cmd === 'lyrics') {
   // Writing the sheet's words over the ones the source came with. This is the ONLY thing in
@@ -164,22 +180,22 @@ if (cmd === 'lyrics') {
   console.log(`✅ cover attached: "${start.coverTitle}" (${start.coverDuration}) · ${paras} lyric paragraphs, matching camping.md §4`)
 
   if (cmd === 'load') {
-    const { state, problems } = await loadVariation(page, pick[0])
+    const { state, problems } = await loadVariation(page, requests[0].v, requests[0].title)
     console.log(JSON.stringify(state, null, 2))
     console.log(problems.length ? `🔴 ${problems.join(' · ')}` : '✅ loaded — nothing generated')
   } else {
     const done: string[] = []
-    for (const [i, v] of pick.entries()) {
-      console.log(`\n──────── ${i + 1}/${pick.length}  ${titleFor(v)}`)
-      const { state, problems } = await loadVariation(page, v)
+    for (const [i, { v, title }] of requests.entries()) {
+      console.log(`\n──────── ${i + 1}/${requests.length}  ${title}`)
+      const { state, problems } = await loadVariation(page, v, title)
       const bad = [...problems, ...guard(state, paras)]
       if (bad.length) {
         console.log('🔴 STOPPING — nothing spent on this round:', bad.join(' · '))
         break
       }
       console.log(`   ${state.sliders} · style ${state.styleLen} · exclude ${state.excludeLen}`)
-      console.log(`   ▶ ${await create(page, titleFor(v))}`)
-      done.push(v.id)
+      console.log(`   ▶ ${await create(page, title)}`)
+      done.push(title)
       // Re-check straight after: if the Create consumed the attachment, the next round would be
       // an ordinary generation wearing a cover's title, which is worse than a failure.
       const after = await coverState(page)
@@ -201,6 +217,8 @@ if (cmd === 'lyrics') {
   check           read the live cover form back, spend nothing
   load <id>       fill one variation, generate NOTHING
   run [ids...]    Create each in turn — 10 credits and 2 takes per id
+                  repeat one: \`run cover-11-dub-guitarx3\` — 3 separate Creates, titles suffixed #1 #2 #3
+                  sweep sliders: SUNO_WEIRDNESS=60 SUNO_STYLE_INFLUENCE=75 SUNO_AUDIO_INFLUENCE=15 npx tsx cover-ab.mts run …
 
 ${VARIATIONS.map((v) => `  ${v.id.padEnd(22)} ${v.name}`).join('\n')}`)
 }

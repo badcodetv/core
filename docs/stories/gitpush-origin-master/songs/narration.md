@@ -1,6 +1,7 @@
 ---
 title: GPOM narration — the story video
-status: draft — one generation per scene (A/B/C), silence as default, sound design fills the gaps; ruled 2026-08-24, nothing generated yet
+status: first pass generated 2026-08-24 — cuts 1-3, both weirdnesses, lengths on budget (§4); no take accepted yet, no stems split. Structure ruled 2026-08-24: one generation per scene, silence as default, sound design fills the gaps
+takes: cuts 1-3 generated into the `gpom-story` workspace as w30 + w60 pairs — judging and stem-splitting still to do. Cuts 4 and 5 not generated (cut 5's picture is unbuilt)
 kind: spoken-word narration for the story video (not a song)
 covers: scenes/s00-awakening.md (56s) · scenes/s01-the-push.md (~27.8s) · scenes/plant-room.md (40s) · scenes/bulletin.md (120s) · canon 8 the empty street (~72s, picture unbuilt)
 model: v5.5 (cue-heavy — 5.5 obeys the bracket architecture, 4.5 shreds it)
@@ -1344,6 +1345,14 @@ passed is telling the audience what they just read. If one is wanted:
    this sheet.
 
 ## Revision log
+
+- **2026-08-24 — the first full pass ran. Cuts 1, 2 and 3 exist.** All three generations went into
+  the `gpom-story` workspace as w30/w60 pairs and **came back essentially on budget** — cut 1
+  0:53–1:20 against 56s, cut 2 0:22–0:28 against ~27.8s, cut 3 0:43–0:48 against 40s. The earlier
+  expectation of two-to-three-minute returns was a guess and it was wrong for this configuration;
+  the near-silent bed and the short lyric block keep it honest. Lengths are logged in §4.
+  ⬜ **Nothing is accepted and no stems are split yet** — the judging order in §5 step 9 is the
+  next action, and the frontmatter now says so rather than claiming nothing was generated.
 
 - **2026-08-24 — 🔑 silence is the default; sound design fills the gaps.** Kai, on the room-tone
   plan: *"it feels like we would be able to edit sounds into the gap somehow… let's aim for empty

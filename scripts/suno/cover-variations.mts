@@ -231,7 +231,7 @@ export const titleFor = (v: Variation) => `Camping cover ${v.id.slice(6, 8)} - $
  * Kept short and parenthesised: `listTakes` slices row titles at 48 characters, and its
  * `\s+v\d` splitter would eat a bare ` v2`.
  */
-export const SET = ' (v3)'
+export const SET = ' (v4)'
 // v3 = the lyric timing pass of 2026-08-25 (camping.md §4: `I want change...` + the performance cues).
-// The words are unchanged from v2 but the layout is not, and layout is timing — so anything generated
-// after it gets the new suffix.
+// v4 = Kai's hand edit the same day: "pathetic" -> "it's pathetic", "sorroooooows," -> "sorrows," —
+// a real word/spelling change, not just layout, so it earns its own suffix.

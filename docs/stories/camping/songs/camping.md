@@ -196,9 +196,9 @@ please sir, can I FUCKIN, have some more?
 [Beat Transition]
 [Verse 2 | well-spoken posh voice, a completely different man | full-weight drum and bass carries straight on, drums flip, colder synths, sharper hats | amen rolls tearing across every fourth bar | the same guitar riff returns underneath, unchanged | nothing else playing at all]
 you are intent on living in a tent
-pathetic, a lack of work ethic
-getting parra lettic, 
-drowning your sorroooooows,
+it's pathetic, a lack of work ethic
+getting parra lettic,
+drowning your sorrows,
 prospects exist and now I insist
 that you just stop the grift 
 [mocking falsetto sneer]

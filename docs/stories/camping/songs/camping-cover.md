@@ -363,5 +363,47 @@ because the profile is what every *future* generation in every workspace inherit
 ### Settings
 
 Weirdness **30** · Style Influence **50** · Audio Influence **25** · **one Create = two takes**,
-per Kai ("just two"). The pair and the Audio Influence sweep come once the direction is
-confirmed.
+per Kai ("just two"). Superseded by round 12 below.
+
+---
+
+## 6. Round 12 — the slider sweep, 2026-08-25
+
+**Kai's move on 11:** Weirdness **30 → 60**, Style Influence **50 → 75**, Audio Influence
+**25 → 15**. All three loosened toward the model and away from the source in one step — more
+invention, stronger obedience to the style box, less pull from the reference audio. Same
+words, same style box as round 11: **the sliders are the only variable this round.**
+
+**Also folded in first: Kai's hand edit to `camping.md`** — `pathetic` → `it's pathetic`,
+`sorroooooows,` → `sorrows,` (dropping the stretch respelling). A real word change, so it gets
+its own suffix rather than riding on round 11's — see `cover-variations.mts`, `SET = ' (v4)'`.
+
+**Three takes, not two.** With a slider sweep as the variable rather than a style A/B, one pair
+is thin evidence for how much the model's own stochastic spread is doing versus the sliders —
+three gives a spread to actually compare.
+
+The runner didn't have a way to sweep sliders or repeat one variation before this round — both
+added to `cover-ab.mts`:
+
+```bash
+npx tsx scripts/suno/cover-ab.mts lyrics                                 # sync the hand edit
+SUNO_WEIRDNESS=60 SUNO_STYLE_INFLUENCE=75 SUNO_AUDIO_INFLUENCE=15 \
+  npx tsx scripts/suno/cover-ab.mts run cover-11-dub-guitarx3            # 3 Creates, titled #1 #2 #3
+```
+
+`xN` repeats one variation N times, each Create titled with a `#1`/`#2`/`#3` suffix — without
+it, `create()`'s "wait for two takes matching this title" would see the *first* run's takes
+and report success on a round it never generated, which is exactly the failure class the v1/v2
+lyrics bug came from.
+
+| Take | Verdict | Note |
+|---|---|---|
+| Dub + guitar (v4) #1 | ⬜ | W60 · SI75 · AI15 |
+| Dub + guitar (v4) #2 | ⬜ | W60 · SI75 · AI15 |
+| Dub + guitar (v4) #3 | ⬜ | W60 · SI75 · AI15 |
+
+**What to listen for, specifically:** Audio Influence dropped from 25 to 15 — the take should
+pull *less* from the source reference than round 11 did. Style Influence rose to 75, matching
+`camping.md`'s own accepted setting — the style box should be obeyed harder. Weirdness at 60 is
+the sheet's own house pair's upper value — more invention, and the first real test of whether
+that increases the one-voice regression risk this track has already had (§4c).
