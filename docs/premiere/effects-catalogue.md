@@ -414,6 +414,32 @@ register in two parameters.
 
 ---
 
+### Strobe Light — `AE.ADBE Strobe` (8 params) · measured 2026-08-24
+
+| Index | Param | Default |
+| --- | --- | --- |
+| 0 | Strobe Color | 🔴 unreadable (writable) — **defaults to WHITE** |
+| 1 | Blend With Original | 0 |
+| 2 | **Strobe Duration (secs)** | 0.5 |
+| 3 | **Strobe Period (secs)** | 1 |
+| 4 | Random Strobe Probablity | 0 |
+| 5 | **Strobe** (mode) | 0 |
+| 6 | Strobe Operator | 0 |
+| 7 | Random Seed | 0 |
+
+🔴 **Mode `1` ("Makes Layer Transparent") does not render at all** — verified byte-identical to
+baseline across a full period. **Mode `0` replaces the whole frame with Strobe Color.**
+
+🟢 **Flicker-to-black is mode 0 with Strobe Color set to black** — one effect instead of hand
+cutting, and the house alternative to slicing a track into 4-frame pieces:
+
+```
+params: { "0": {r:0,g:0,b:0}, "2": 0.04, "3": 0.2, "5": 0 }   // 1 frame black in every 5 @ 25fps
+```
+
+🔴 **Duration >= period disables it.** Duration 0.2 with period 0.2 renders as no effect at all.
+Full write-up in [`api-notes.md`](api-notes.md).
+
 ## Open questions — answer these live and record the answer here
 
 | Question | Why it matters | How to settle it |
@@ -427,3 +453,49 @@ register in two parameters.
 *Harvested 2026-08-21 from Premiere Pro 26.3.2. Re-run `premiere_list_effects` and
 `premiere_list_transitions` after any Premiere update — the counts here (106 / 118) are the
 check.*
+
+### Echo Glow — `AE.Impact_Echo_Glow_FX` (35 params) · measured 2026-08-24
+
+| Index | Param | Default |
+| --- | --- | --- |
+| 4 | **Anchor** | `[0.5, 0.5]` |
+| 5 | **Steps** | 8 |
+| 6 | **Intensity** | 80 |
+| 7 | Highlights Only | 60 |
+| 8 | **Range** | 75 |
+| 10 | **Speed** | 5 |
+| 12 | Outline | 50 |
+| 13 | Falloff | 25 |
+| 15 | Color | 🔴 unreadable (writable) |
+| 21 | Chromatic Aberration | 10 |
+| 23 | Source Opacity | 100 |
+
+🟢 **Anchor + Range + Speed are the three that matter.** Unlike Volumetric Rays it **animates on
+its own** (Speed 5 by default), so a held shot gains motion with no keyframing — which is why it
+beat Rays on the camping music video's stage plate.
+
+🔴 **At defaults, Wonder Glow, Glint and Mirror are near-invisible** on a bright plate (measured
+same session). Echo Glow is the one of that family that reads immediately.
+
+### VR Digital Glitch — `AE.Mettle SkyBox Digital Glitch` (38 params) · measured 2026-08-24
+
+🔴 **Indices 0–6 are 360/VR plumbing, not the look** (Frame Layout, Field of View, Point of
+Interest). On flat footage, leave them.
+
+| Index | Param | Default |
+| --- | --- | --- |
+| 7 | **Master Amplitude** | 100 — the single "how much" dial |
+| 9 | **Color Distortion** | 50 |
+| 10 | **Geometry Distortion X** | 50 |
+| 11 / 12 | Geometry Distortion Y / Z | 0 |
+| 13 | Distortion Complexity | 40 |
+| 14 | Distortion Rate | 50 |
+| 15 / 16 | Distortion / Color Evolution | 0 |
+| 26 | Sub Influence | 95 |
+| 31 | Noise Strength | 0 |
+| 37 | Random Seed | 0 |
+
+🟢 **Master Amplitude (7) scales the whole effect** — one number from destroyed to a hint.
+
+🔴 **Random Seed (37) defaults to 0 on every clip**, so two glitched clips corrupt *identically*.
+Vary it per clip.

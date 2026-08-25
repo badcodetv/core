@@ -1157,3 +1157,119 @@ So this file answers *what boxes exist*, never *which box is which*. **Describe 
 position and purpose** — "the top field is the name" — never by the name the file gives it.
 
 This does **not** imply the params are writable through UXP. That is still T11's open half.
+
+---
+
+## Strobe Light, measured 2026-08-24 (camping music video)
+
+`AE.ADBE Strobe`. Measured on `v2:8` of the `camping` sequence, every claim below confirmed by
+an exported frame read back with ImageMagick.
+
+### The parameters
+
+| Index | Param | Default | Notes |
+| --- | --- | --- | --- |
+| 0 | Strobe Color | 🔴 unreadable | Writable. **Defaults to pure white** |
+| 1 | Blend With Original | 0 | |
+| 2 | **Strobe Duration (secs)** | 0.5 | How long the strobe state lasts per cycle |
+| 3 | **Strobe Period (secs)** | 1 | The cycle length |
+| 4 | Random Strobe Probablity | 0 | *(Adobe's typo, not ours)* |
+| 5 | **Strobe** — the mode | 0 | `0` = operates on colour · `1` = "makes layer transparent" |
+| 6 | Strobe Operator | 0 | |
+| 7 | Random Seed | 0 | |
+
+### 🔴 Mode `1` ("Makes Layer Transparent") is a NO-OP in Premiere
+
+Set param 5 to 1 with duration 0.1 / period 0.2 and export three consecutive frames spanning a
+full period: **all three came back byte-identical to the un-effected baseline** (767,223 bytes).
+The same clip with param 5 = `0` and the same timings rendered a solid frame at 4.00s, so the
+phase was right and the strobe *was* firing — mode 1 simply does not render.
+
+Nothing was composited below the clip, so a working transparency would have shown black. It
+showed the picture. **Do not reach for mode 1 to punch holes in a layer.**
+
+### ✅ Mode `0` replaces the WHOLE FRAME with Strobe Color
+
+Not a tint, not a blend — the entire frame becomes one flat colour. Measured: `%k` = **1 unique
+colour**, mean pixel `#FFFFFF`, file 10,269 bytes.
+
+**So a flicker-to-black is mode 0 with Strobe Color written to black**, verified: `%k` = 1,
+mean pixel `#000000`, 10,273 bytes.
+
+```
+premiere_apply_effect({ clip: "v2:8", matchName: "AE.ADBE Strobe",
+  params: { "0": {r:0,g:0,b:0}, "2": 0.04, "3": 0.2, "5": 0 } })
+```
+
+At 25 fps that is **1 frame black in every 5** — duration and period are seconds, so divide by
+the frame rate to think in frames.
+
+### 🔴 Duration >= period disables the strobe entirely
+
+With duration 0.2 and period 0.2 the frame came back byte-identical to baseline. The intuition
+that a 100% duty cycle means "always strobing" is wrong — it means *never*. Keep duration
+strictly below period.
+
+### Reading a solid frame is the cheap way to test an effect
+
+`premiere_export_frame` returns `bytes`, and a flat frame compresses to ~10 KB against ~760 KB
+for picture. **The byte count alone tells you whether an effect fired**, with no image read and
+no context spent. `convert X.png -format %k info:` then confirms it is genuinely uniform.
+
+---
+
+## Transitions refused silently on a track that accepted every other edit, 2026-08-24
+
+On the `camping` music-video sequence, `premiere_add_transition` failed **twice** on V5 —
+`AE.ADBE Cross Dissolve New`, 0.48s, tried from both sides of the same cut (`at: "end"` on the
+outgoing clip and `at: "start"` on the incoming one). Both returned `TRANSACTION_FAILED`: Premiere
+accepted the call, the track's transition count did not move off 1.
+
+**The stock hint is "usually a locked track or a read-only project". It was neither.** In the same
+minute, on the same track, `premiere_clone_clip` and `premiere_trim_clip` both succeeded and were
+verified. A locked track would have refused those too.
+
+🔴 **`VideoTrack` exposes no lock accessor at all.** Its prototype is
+`subscribeToEvent · addEventListener · removeEventListener · dispatchEvent · name ·
+createSetNameAction · setMute · getMediaType · getIndex · id · isMuted · getTrackItems` — there is
+`isMuted` but **no `isLocked`**. So the hint names a cause the API cannot confirm or rule out.
+
+### Both cuts had genuine handles
+
+The outgoing clip used 0→3.08s of a 10s source (6.92s of handle); the incoming used inPoint 5.56
+of a longer source. This was not the no-handles case, which in any event yields a single-sided
+transition rather than a refusal.
+
+### Verified by picture, not by count
+
+Frames exported either side of the cut and read: 14.00s was pure outgoing clip, 14.28s pure
+incoming, **no blend at any point**. The count-based verification was telling the truth.
+
+### 🔴 An unreadable transition cannot be located without destroying it
+
+The track carried one pre-existing transition throughout. Because `getTrackItems(2, …)` returns a
+`null` object for every transition — confirmed again here, `getName`/`getStartTime`/`getEndTime`
+all throw — there is **no way to ask where it is**. `premiere_remove_transition` on a specific
+edge is a no-op when it guesses wrong, so locating one means probing edge by edge, and a correct
+guess *deletes* it. On someone's live cut that is not an acceptable search strategy.
+
+**Consequence: if a sequence has a transition you did not add, you cannot reason about it.** Ask
+the human what is on the cut, or hand the job over (`premiere-automation` §8).
+
+### The probe, for reuse
+
+```js
+const vt = await seq.getVideoTrack(4);
+Object.getOwnPropertyNames(Object.getPrototypeOf(vt));   // no isLocked
+const trans = await vt.getTrackItems(2, false);          // TrackItemType.TRANSITION === 2
+trans.length;                                            // countable
+await trans[0].getName();                                // throws — the item is null
+```
+
+`ppro.Constants.TrackItemType` is `{ EMPTY: 0, CLIP: 1, TRANSITION: 2, PREVIEW: 3, FEEDBACK: 4 }`.
+
+### Open
+
+Whether `add_transition` fails on *every* track in this project or only on this one was **not
+tested** — it would have meant mutating a clip the user was actively working on. Test it on a
+scratch sequence before concluding the tool is broken.
