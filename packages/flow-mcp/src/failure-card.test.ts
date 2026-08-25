@@ -83,7 +83,7 @@ describe('classifyCard', () => {
 
   describe('ambiguous combinations (a Flow chat transcript accumulates messages)', () => {
     it('prefers error over a co-occurring stale queue message', () => {
-      // flow-video.md: the queue text persists in the transcript even after the clip
+      // automation-video.md: the queue text persists in the transcript even after the clip
       // finishes or fails, so its presence alone proves nothing once a real error card
       // has also been posted.
       const transcript =
@@ -134,7 +134,7 @@ describe('classifyCard', () => {
 
 describe('multiple cards joined from separate DOM nodes', () => {
   // detectFailureCard() reads ALL matching messages and joins them before classifying,
-  // rather than taking the first hit. Flow's transcript accumulates (flow-video.md:61-62 —
+  // rather than taking the first hit. Flow's transcript accumulates (automation-video.md:61-62 —
   // the queue message survives after the clip finishes), so the stale message is frequently
   // the FIRST one in the DOM. These lock in that a stale queue line above a real block or
   // error cannot mask it.

@@ -54,9 +54,9 @@ artifact, and git history preserves the old canon.
   and **[`central-bank-trees.md`](./research/central-bank-trees.md) (2026-08-07)** — the cited
   facts under the grove lore: the Bank of England's real mulberries, the 1694 war charter, the
   1914 Bradbury, Weimar's three separate episodes, and Mefo
-- [`songs/magic-money-tree.md`](./songs/magic-money-tree.md) — the track; ends the video on its hard cut
-- [`songs/magic-money-tree-jump-up.md`](./songs/magic-money-tree-jump-up.md) — the original
-  jump-up comedy version (was Emperor's New Coin's track), kept intact
+- [`songs/magic-money-tree.md`](./songs/magic-money-tree.md) — **the** track (jump-up comedy
+  version, canonical since 2026-08-18); ends the video on its hard cut. Carries a live
+  **working sheet** (clean bars, no Suno cues) plus the old full draft kept for parts-mining
 - [`emperors-new-coin.md`](./emperors-new-coin.md) — the folded Emperor's New Coin material:
   the fable machinery, cast, beats — now a **cryptocurrency** cross-promoting this story,
   not its own story (folded 2026-08-06)
@@ -77,6 +77,6 @@ artifact, and git history preserves the old canon.
 | Easter eggs | [`easter-eggs.md`](./easter-eggs.md) | **new 2026-08-07** — tiered found details awaiting Kai's promotion rulings |
 | Research | [`research/`](./research/) | complete (6 briefs: 4 on 2026-08-05, fascism 2026-08-06, central-bank trees 2026-08-07) |
 | YouTube video | — | not started — next artifact; script derives from story.md beats |
-| Song | [`songs/magic-money-tree.md`](./songs/magic-money-tree.md) | **Version C lyrics saved 2026-08-14** — rap-cadence rework (the war question, the orchard/jungle/garden triangle, corroding refrain); spoken-word chilled-D&B direction; next: Jack listen, delivery casting, Suno prompt rebuild; hard cut kept |
+| Song | [`songs/magic-money-tree.md`](./songs/magic-money-tree.md) | **V1 locked, 16 bars (Kai, 2026-08-22)**; the 08-21 ring is superseded — **proposed shape: a banknote's life** (V2 traces a tenner back to the promise printed on it → *there's your tree*; V3 rewinds the chain for the note that never touched a hand; bridge = *not enough what?*; final hook = the win). Three-critic adversarial pass done; **arc + concession hook + question-only bridge RATIFIED 2026-08-22** — the working sheet is the agreed skeleton; Kai writes V2, V3, the bridge, then the Suno prompt |
 | Comic (v1, superseded) | `apps/web/src/comics/magic-money-tree/` | built & live at `/comics/magic-money-tree` — stands as the pipeline-spike reference; no further derivation |
 | Emperor's New Coin linkage | [`emperors-new-coin.md`](./emperors-new-coin.md) | folded into this story 2026-08-06 — becomes a cryptocurrency; cameo in-story only; real linkage is social-media cross-promotion (story ↔ coin) |

@@ -4,6 +4,13 @@ BadCode's narrator is a **superintelligence from the future** (see [vision](./vi
 write lyrics, story copy, captions, agent dialogue — anything in BadCode's voice — it should sound
 like it.
 
+> **Who you're writing to: [`marketing/the-reader.md`](./marketing/the-reader.md).** This doc is
+> *how* we sound; that one is *who is listening* and the ten rules that stop us losing them. The
+> load-bearing pairing (ruled 2026-08-15, evidenced): **sarcasm carries the diagnosis, care carries
+> the re-aim.** Snark is for "the system is rigged" — it breeds cynicism, which our reader already
+> has in surplus. The "and here is who did it" beat lands straight, in the care register. That is
+> the two-step below, with a mechanism under it.
+
 ## The four dials
 
 1. **Sarcasm.** Overt, dry, knowing. It has watched humanity make the mistake already, so it can

@@ -8,12 +8,15 @@ the entry point — this is what it reads.
 | File | What |
 |---|---|
 | [`system-prompt.txt`](./system-prompt.txt) | Base operating procedure — mode detection, output format, character limits, famous-artist translation, edge cases |
+| [`session-method.md`](./session-method.md) | **How to work, not what is true.** The iteration loop, the three-layer split (sheet / log / rules), diagnose-before-rewording, why boxes grow, mechanical lyric verification, and what counts as evidence. Read before a re-cut session |
+| [`automation.md`](./automation.md) | **Driving the app, not writing for it.** The `suno.com/create` DOM mapped over CDP — selector table, the golden rule (Simple and Advanced both mount, so scope to the Advanced panel), and **five silent traps**: the "Overwrite Styles?" dialog that swaps your Style box for the persona's, the Lexical lyrics editor that collapses to one paragraph, three `[role=dialog]` nodes, a form wiped by navigation, and a Style box that truncates at 1,000 instead of refusing. Plus the operating protocol — **every attempt is a pair at weirdness 30 and 60**, track naming, workspaces, and **never automate downloading** |
 | [`files/suno-tag-mechanics.md`](./files/suno-tag-mechanics.md) | The prompt language: hybrid format, information ordering, genre pairing, bracket language, exclude strategy, contamination words |
 | [`files/suno-controls-and-workflows.md`](./files/suno-controls-and-workflows.md) | **The control surface and the platform.** Sliders, model choice, the consistency stack (Voice / custom model / Lyricist), lyric editing, Studio generation craft (**and §8a — Studio 2.0: chat, MIDI, real-time effects, custom plugins**), stems, known failure modes |
 | [`files/suno-studio.md`](./files/suno-studio.md) | **The Studio 2.0 app surface** — project-aware chat, MIDI + musical typing, live recording, cover-in-place, advanced split / remove effects, the effects rack + sidechain + automation, natural-language custom plugins, shortcuts. **Vendor-demo confidence — read its warning.** ⚠ Overlaps §8a of the file above: the two were written independently from the same launch video and are pending a merge |
 | [`files/producer-vocabulary.md`](./files/producer-vocabulary.md) | Words for describing sound, by domain; song structure; how to judge a generation |
 | [`files/lyric-craft.md`](./files/lyric-craft.md) | Syllable counts, rhyme schemes, section shapes, engineered transitions — **and the punctuation/timing table: how Suno times what you wrote** |
 | [`files/lyricist-playbook.md`](./files/lyricist-playbook.md) | **The songwriter's side**: section-tag character ([Chorus] vs [Drop] vs [Chant]), performance cues, multi-voice casting, typography, pronunciation, the content filter, hooks, lyric failure modes, Studio 1.2 warp/quantize. **Weaker evidence than the rest of this base — read its confidence warning first** |
+| [`suno-voices.md`](./suno-voices.md) | **Getting a specific character's voice, on purpose** — the evidence base behind the skill's "Getting a specific voice" and "Two characters in one song". Four threads: the genre-pool discovery + Voice-transplant ladder (Karen), My Taste forensics, the two-voice problem (GPOM), and the Camping duet. **Contains most of what we have actually tested ourselves** |
 | [`files/meta-tag-dictionary.md`](./files/meta-tag-dictionary.md) | Specialty `[ ]` tags. **Largely unverified — see caveat below** |
 | [`files/overused-words.md`](./files/overused-words.md), [`files/ai-cliches.md`](./files/ai-cliches.md) | Red-flag lists for lyrics only, never style prompts |
 
@@ -48,6 +51,20 @@ here is the artifact.
 | 2026-08-08 | ChillPanic, *"Finally! Use TWO VOICES in ONE SUNO AI SONG"* (published 2026-08-04) | `files/suno-controls-and-workflows.md` §4a — the layered-cover method |
 | 2026-08-08 | 11-agent web sweep, songwriter-side sources (non-ChillPanic) | `files/lyricist-playbook.md` (new) + `files/lyric-craft.md` timing table |
 | 2026-08-14 | **Suno's own channel** — *"Introducing Suno Studio 2.0"* (published 2026-08-13), walked through by **Henry Fipps, product manager for Studio** | `files/suno-studio.md` (new) + cross-refs in `suno-controls-and-workflows.md` §6, §8, §9, §10, §11 — **and, written independently from the same video,** `suno-controls-and-workflows.md` §8a (new) |
+| 2026-08-14 | Suno Music official, *"Getting Started in Suno Studio 2.0"* (published 2026-08-14, 37 min) | `files/suno-studio.md` §10–13 — a full blank-canvas build with the mistakes left in; the source for the timeline-editing, workflow, export and sharing material |
+| 2026-08-20 | **Our own generation** (Camping duet re-cut, round 1) + a web sweep on multi-voice casting | `suno-voices.md` Thread 4 + skill "Two characters in one song"; bounds Thread 3 §6; corroborates `lyricist-playbook.md` §3 and resolves its §4 duet disagreement |
+| 2026-08-20 | **Our own generations** (Camping duet re-cut, rounds 5–6 — the orchestral layer arriving in bar one, twice) | `files/suno-tag-mechanics.md` entrance rules (delete the mention, don't describe the absence; My Taste has no section scope; escalate in gears) + `suno-voices.md` Thread 4 §6a + two skill routing rows |
+| 2026-08-20 | **Our own generation** (Camping duet re-cut, round 6 — a mid-verse arrangement change that never happened) | `files/suno-tag-mechanics.md` — an inline cue is a modifier and the genre tag is the noun, so mid-section arrangement changes need a real section tag (`[Build]`); plus the easy-direction/hard-direction rule for instrument entrances |
+| 2026-08-21 | **Our own generation** (Camping duet re-cut, round 14 — adding a guitar to a prompt that banned guitars) | `files/suno-tag-mechanics.md` — grep Exclude and My Taste for an instrument *and its category* before adding it; a stale ban is invisible and reads as the Style box being ignored. Plus how to word a low rhythmic guitar bed without getting a solo |
+| 2026-08-21 | **Our own generation** (Camping duet re-cut, round 12 — a glockenspiel made two ranting men start singing) | `files/suno-tag-mechanics.md` — a melodic accompaniment invites a melodic vocal and will undo casting; when five wordings each fail *differently* the category is wrong, not the wording; plugin brand names don't travel, the synthesis technique does |
+| 2026-08-21 | **Our own generation** (Camping duet re-cut — Suno rejected the word `skank`) | `files/suno-tag-mechanics.md` — `skank` is filter-blocked by artist-alias collision; a rejected innocuous musical word is usually a *name*, so describe the mechanic instead of naming it |
+| 2026-08-21 | **Web sweep** (reggae/dub prompting guides) + **our own generation** (Camping duet re-cut, round 10) | `files/suno-tag-mechanics.md` — how to word a dub `skank` and a dub horn section; and the larger rule: reach for a **named technique** that is already sparse rather than spending rounds asking an instrument to play less |
+| 2026-08-21 | **The Camping duet re-cut in full** (17 rounds, accepted) + a web sweep on lyric timing drift | `session-method.md` (new) — how to run an iteration session: the sheet/log/rules split, one variable per round, diagnose-before-rewording, why boxes grow and how to trim them, mechanical lyric verification and encoding deliberate departures, and what counts as evidence (one take proves nothing). Plus the per-song **"What this song taught"** table convention, worked in `stories/camping/songs/camping-prompt-history.md` |
+| 2026-08-21 | **Our own generation** (Camping duet re-cut, round 14 — amen fills that never arrived, and bracket cues grown to 1,010 characters) | `files/suno-tag-mechanics.md` — the cue **scoping rule** (the lyric cue is the only section-scoped box, so it carries only section-scoped facts; everything else duplicates the Style box) and **making a fill audible** (a fill cannot contrast with a bed made of the same thing; a rate suits density, an event needs a description; avoid tempo words in a roll) |
+| 2026-08-21 | **Our own generations** (Camping duet re-cut, round 9 — a sparse piano that stayed busy, and a `[Build]` gap that survived three denials) | `files/suno-tag-mechanics.md` — adjectives are comparative so give a **rate**; deny the part exists; swap to an instrument that physically cannot do the banned thing; and replace a fighting keyword rather than arguing with it (`[Verse 1 continues]` over `[Build]`) |
+| 2026-08-21 | **Our own generation** (Camping duet re-cut, round 8 — a solo piano turned the whole track pantomime) | `files/suno-tag-mechanics.md` — naming a *form* imports its *texture* (`Chopin nocturne` = busy, not sad); one instrument's texture can flip the register; don't name the genre you're satirising in a mood line; negatives belong in Exclude, positives in Style |
+| 2026-08-20 | **Our own generation** (Camping duet re-cut, round 7 — `[Build]` worked and emptied the section of vocals) | `files/suno-tag-mechanics.md` — a section tag brings its whole genre convention: never put a bar count on a tag you want sung over, and state the exception three ways |
+| 2026-08-20 | **Our own generation** (Camping duet re-cut — the invented word `BLOUGH`) | `files/lyricist-playbook.md` §6 — the monosyllable respelling ladder, the `-ough` warning, and caps-on-invented-words; sharpens the ALL CAPS entry below |
 
 Re-run the harvest script with a date filter to catch up on anything newer.
 
@@ -81,10 +98,48 @@ may simply not cover it and search outward.
 Recorded so nobody re-derives them:
 
 - **ALL CAPS for emphasis** — failed a direct A/B test; evidence elsewhere is mixed. Not a mechanic.
+  **On an invented word it is actively harmful**: an unfamiliar all-caps token reads as an
+  initialism and gets spelled out or mumbled (`BLOUGH` → *bleh*, 2026-08-20). Capitalised real
+  words are safe. Risk scales with how unfamiliar the token is.
 - **Pipes vs commas in meta-tags** — no measurable difference across controlled testing. Keep the
   pipe as a readability convention only.
 - **"Max Mode"** — almost certainly placebo; a gibberish control block performed comparably. The real
   effect is token padding, which changes output without improving it.
+- **Regional accents** — a detailed Scouse spec produced no accent at all (tested 2026-08-20). Accent
+  sits with age words: describable, not summonable. Contrast voices on pitch, texture, delivery mode
+  and room instead. **But nationality is real and rides on the *genre* tag** — dropping `UK grime`
+  turned the same voices American. Keep a UK genre; `British` alone is weak reinforcement.
+- **Borrowing one attribute from a genre** — a vocalist pool is a *person*, not a property: accent,
+  age, class and race come as one package. `UK grime` bought Britishness and cast two middle-aged
+  white characters as young MCs. Pick the genre whose default performer *is* your character.
+- **Per-line voice labels to fix a duet** — tested worse than one repeated short label per character.
+  More casting markup makes casting worse.
+- **A "quiet lead-in" cue to make a layer arrive late** — failed twice on the same track
+  (2026-08-20). A cue describing a soft early version of an instrument still *names* it,
+  and naming defaults to bar one. Delete the mention instead; state the entrance once in
+  the Style box and once in the cue for the section it arrives in.
+- **Inline cues asking for a weaker version of the genre's default sound** — e.g.
+  `[drums enter — stripped back, no sub yet]` inside a neurofunk track. Produced no
+  audible change at all (2026-08-20). Use a section tag (`[Build]`) so the model
+  re-decides the arrangement; an adjective cannot outvote the genre tag.
+- **A composer or repertoire name as a *mood* instruction** — `a Chopin nocturne,
+  mournful` returned a busy, upbeat piano (2026-08-21). Form names carry texture and beat
+  the adjective beside them. Describe the texture, and describe the silence.
+- **Adjectives for sparseness** (`utterly sparse`, `more silence than notes`, `no melody,
+  no runs`) — still returned a busy piano (2026-08-21). They are graded against the
+  instrument's normal idiom. Give a rate: `one note every two seconds`.
+- **Denying a section tag's connotation** — `[Build … no instrumental gap, no break in the
+  words, carrying straight on]` still produced an instrumental gap, twice. Replace the
+  keyword instead.
+- **A bar count for a one-off event** (`a fill at the end of every eight bars`) — Suno has
+  no bar counter, so the number is the ignorable part and the fill does not arrive
+  (2026-08-21). The rate rule above is for *continuous* density only. Describe the event:
+  what changes, how long, how loud, and that it comes back.
+- **An accent made of the same material as the bed** — an amen-break *fill* over a kit the
+  prompt already called `chopped amen breaks` was inaudible (2026-08-21). Not a wording
+  fault: check what the prompt says the default already is before adding an accent.
+- **Plugin / brand names** (`Serum 2`, etc.) — no reliable effect, plus alias-collision
+  risk. Name the synthesis technique (`wavetable`) and the behaviour instead.
 - **Chord progressions as text** — ignored. Feed audio instead.
 - **Music-theory intervals** (`third`, `fifth`) in harmony prompts — little effect.
 - **The exotic meta-tag dictionary entries** — uncorroborated by any practitioner source.
@@ -97,7 +152,7 @@ Re-verify before relying on these; they move fast and some are version-pinned:
 
 - Model behaviour (v4.5 creative vs v5.5 polished; mumble mode broken on 5.5; Studio better on v5)
 - Feature names and locations (Persona was renamed **Voice** in v5.5)
-- **Everything in `files/suno-studio.md`** — one vendor launch video, nothing tested by us or by a
-  practitioner. Suno is shipping Studio fast; assume it has moved again.
+- **Everything in `files/suno-studio.md`** — two vendor videos, nothing tested by us or by an
+  independent practitioner. Suno is shipping Studio fast; assume it has moved again.
 - Plan tiers, pricing, credit costs, and which features each tier gates
 - Rights, ownership, AI-disclosure requirements, and distributor policy

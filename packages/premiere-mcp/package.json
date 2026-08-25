@@ -1,0 +1,36 @@
+{
+  "name": "@badcode/premiere-mcp",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "badcode \u2014 MCP server that drives Adobe Premiere Pro over a WebSocket bridge to a UXP panel.",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "types": "./src/index.ts",
+  "bin": {
+    "badcode-premiere-mcp": "./src/server.ts"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.panel.json",
+    "test": "vitest run",
+    "build:panel": "tsx scripts/build-panel.ts",
+    "build:panel:watch": "tsx scripts/build-panel.ts --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "ws": "^8.18.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@adobe/premierepro": "^26.3.0",
+    "@types/node": "^22.10.0",
+    "@types/ws": "^8.5.13",
+    "esbuild": "^0.21.5",
+    "tsx": "^4.19.2",
+    "vitest": "^2.1.8"
+  }
+}

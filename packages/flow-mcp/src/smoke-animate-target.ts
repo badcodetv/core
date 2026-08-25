@@ -1,6 +1,6 @@
 /**
  * Manual end-to-end check for ANIMATE TARGETING on a CLUTTERED project — NOT part of CI.
- * SPENDS CREDITS (Veo 3.1 - Fast; the gate has quoted 10 credits, not the 20 in flow-video.md).
+ * SPENDS CREDITS (Veo 3.1 - Fast; the gate has quoted 10 credits, not the 20 in automation-video.md).
  *
  * The bug this exists for: on a project with many stills, generateVideo would animate the wrong
  * tile. A fresh project cannot test it — the sole-tile fallback in chooseAnimateTarget makes it

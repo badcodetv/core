@@ -1,0 +1,183 @@
+{
+  "project": {
+    "name": "t7-sequence.prproj",
+    "path": "\\\\?\\D:\\badcode-videos\\_smoke\\t7-sequence.prproj"
+  },
+  "sequence": {
+    "name": "s01-from-media",
+    "guid": "264ae46c-1954-4955-a716-18a42922d907",
+    "timebase": "10160640000",
+    "frameSize": {
+      "w": 1280,
+      "h": 720
+    },
+    "end": 56,
+    "playhead": 0
+  },
+  "videoTracks": [
+    {
+      "index": 0,
+      "name": "Video 1",
+      "muted": false,
+      "items": [
+        {
+          "index": 0,
+          "name": "s00v3-SEQUENCE.mp4",
+          "start": 0,
+          "end": 56,
+          "duration": 56,
+          "inPoint": 0,
+          "outPoint": 56,
+          "mediaPath": "C:\\Users\\kai\\Desktop\\gpom-s00\\final\\s00v3-SEQUENCE.mp4",
+          "disabled": false,
+          "speed": 1,
+          "components": [
+            {
+              "index": 0,
+              "matchName": "AE.ADBE Opacity",
+              "displayName": "Opacity",
+              "params": [
+                {
+                  "index": 0,
+                  "name": "Opacity",
+                  "value": 100,
+                  "timeVarying": false
+                },
+                {
+                  "index": 1,
+                  "name": "Blend Mode",
+                  "value": 18,
+                  "timeVarying": false
+                },
+                {
+                  "index": 2,
+                  "name": "Blend Mode",
+                  "value": 0,
+                  "timeVarying": false
+                }
+              ]
+            },
+            {
+              "index": 1,
+              "matchName": "AE.ADBE Motion",
+              "displayName": "Motion",
+              "params": [
+                {
+                  "index": 0,
+                  "name": "Position",
+                  "value": [
+                    0.5,
+                    0.5
+                  ],
+                  "timeVarying": false
+                },
+                {
+                  "index": 1,
+                  "name": "Scale",
+                  "value": 100,
+                  "timeVarying": false
+                },
+                {
+                  "index": 2,
+                  "name": "Scale Width",
+                  "value": 100,
+                  "timeVarying": false
+                },
+                {
+                  "index": 3,
+                  "name": " ",
+                  "value": true,
+                  "timeVarying": false
+                },
+                {
+                  "index": 4,
+                  "name": "Rotation",
+                  "value": 0,
+                  "timeVarying": false
+                },
+                {
+                  "index": 5,
+                  "name": "Anchor Point",
+                  "value": [
+                    0.5,
+                    0.5
+                  ],
+                  "timeVarying": false
+                },
+                {
+                  "index": 6,
+                  "name": "Anti-flicker Filter",
+                  "value": 0,
+                  "timeVarying": false
+                },
+                {
+                  "index": 7,
+                  "name": "Crop Left",
+                  "value": 0,
+                  "timeVarying": false
+                },
+                {
+                  "index": 8,
+                  "name": "Crop Top",
+                  "value": 0,
+                  "timeVarying": false
+                },
+                {
+                  "index": 9,
+                  "name": "Crop Right",
+                  "value": 0,
+                  "timeVarying": false
+                },
+                {
+                  "index": 10,
+                  "name": "Crop Bottom",
+                  "value": 0,
+                  "timeVarying": false
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "transitions": []
+    },
+    {
+      "index": 1,
+      "name": "Video 2",
+      "muted": false,
+      "items": [],
+      "transitions": []
+    },
+    {
+      "index": 2,
+      "name": "Video 3",
+      "muted": false,
+      "items": [],
+      "transitions": []
+    }
+  ],
+  "audioTracks": [
+    {
+      "index": 0,
+      "name": "Audio 1",
+      "muted": false,
+      "items": [],
+      "transitions": []
+    },
+    {
+      "index": 1,
+      "name": "Audio 2",
+      "muted": false,
+      "items": [],
+      "transitions": []
+    },
+    {
+      "index": 2,
+      "name": "Audio 3",
+      "muted": false,
+      "items": [],
+      "transitions": []
+    }
+  ],
+  "markers": []
+}

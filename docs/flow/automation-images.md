@@ -1,8 +1,16 @@
-# Google Flow — UI recipe + automation map (from the spike)
+# Automation — images: the UI recipe and selector map
 
-> Recorded 2026-06-25 from the first successful automated generation+harvest.
-> This is the input contract for hardening the loop into `badcode flow`.
-> Driven by Playwright MCP attached over CDP to a WSLg Chromium logged into Flow.
+**How our automation drives Flow for stills**, as opposed to how Flow behaves for anyone —
+that split is the whole point of this folder, see [`README.md`](./README.md).
+
+> Recorded 2026-06-25 from the first successful automated generation+harvest, and kept
+> current since — the last live corrections are dated 2026-08-12 in place.
+> This is the input contract behind `@badcode/flow-mcp`; `packages/flow-mcp/src/flow-client.ts`
+> cites this file by line number in ~19 places, so **renumbering it breaks those citations.**
+> Driven by Playwright over CDP to a WSLg Chromium logged into Flow.
+>
+> *Moved here 2026-08-20 from `docs/superpowers/`, which is a plans-and-specs archive it never
+> belonged in — the superpowers plugin is not installed and has not been for some time.*
 
 ## TL;DR — the loop that works
 
@@ -182,7 +190,7 @@ Key corrections to the spike-era selectors above:
   `🍌 Nano Banana Pro · crop_16_9 · x1` config button). Tabs: `imageImage` / `videocamVideo`;
   aspect tabs render as `<ligature><ratio text>` (`crop_16_916:9`, `crop_landscape4:3`, …);
   count `x1` / `x2` / `x3` / `x4`. Full popover map, including the video half and its **clip
-  duration** tabs, is in [`flow-video.md`](./flow-video.md) — it is one popover serving both
+  duration** tabs, is in [`automation-video.md`](./automation-video.md) — it is one popover serving both
   media types, not an image-only control.
   - ⚠️ **Count is `x1`, not `1x`** (this line said `1x` until 2026-08-12). A click-if-present
     guard on `1x` silently leaves the count alone, so "one image" generates and bills two, and

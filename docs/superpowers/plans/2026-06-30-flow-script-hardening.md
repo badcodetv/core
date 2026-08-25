@@ -12,7 +12,7 @@
 
 - **Node ESM**: all source is `type: module`; imports use no extension rewriting beyond existing convention (relative imports, no `.js` suffixes in source — match existing files like `flow-client.ts`).
 - **Selectors located by ARIA role + accessible name/placeholder/text, never by snapshot ref** (`eNNN` refs go stale). Match the existing style in `flow-client.ts`.
-- **Never ship a selector not watched succeed live.** Every UI-driving change ends in a green live smoke run, and the observed selectors are recorded in `docs/superpowers/flow-selectors.md`.
+- **Never ship a selector not watched succeed live.** Every UI-driving change ends in a green live smoke run, and the observed selectors are recorded in `docs/flow/automation-images.md`.
 - **Live validation runs from the worktree**: `npx tsx packages/flow-mcp/src/<smoke>.ts` (executes worktree source). The live `mcp__flow__*` MCP tools reflect the **main** checkout until merge + session restart — do not use them to validate worktree edits.
 - **Recon uses the raw `mcp__playwright__*` tools** attached to the same CDP Chrome; recon is browser-state, independent of worktree source.
 - **Harvest stays the signed-URL trick**: `page.request.get(getMediaUrlRedirect?name=<id>)` → `resp.url()` signed CDN URL → write to disk (see `harvest.ts`). No UI download button, no image bytes through model context.
@@ -42,7 +42,7 @@ If `flow_status` returns `NOT_RUNNING`, the browser is not up / CDP not reachabl
 - `packages/flow-mcp/src/flow-client.ts` — **modify.** Add `openProject`, `createCharacter`, `generateBatch`; extend `generateImage` with `{ character? }`; validate `refine` and `generateVideo` live.
 - `packages/flow-mcp/src/server.ts` — **modify.** Register `flow_open_project`, `flow_create_character`, `flow_generate_batch`; add optional `character` to `flow_generate_image`.
 - `packages/flow-mcp/src/smoke-status.ts`, `smoke-core.ts`, `smoke-batch.ts`, `smoke-character.ts`, `smoke-video.ts` — **new.** Per-action manual live smokes.
-- `docs/superpowers/flow-selectors.md` — **modify.** Record observed selectors per action.
+- `docs/flow/automation-images.md` — **modify.** Record observed selectors per action.
 - `.claude/skills/make-comic/SKILL.md` — **modify.** Add the plan → batch → iterate workflow section.
 
 ---
@@ -57,7 +57,7 @@ Replaces "always create a blank New project" with "open camping-v2." Pure pickin
 - Modify: `packages/flow-mcp/src/flow-client.ts` (add `openProject`, keep `ensureProject` as fallback)
 - Modify: `packages/flow-mcp/src/server.ts` (register `flow_open_project`)
 - Create: `packages/flow-mcp/src/smoke-status.ts`, `packages/flow-mcp/src/smoke-core.ts`
-- Modify: `docs/superpowers/flow-selectors.md`
+- Modify: `docs/flow/automation-images.md`
 
 **Interfaces:**
 - Produces:
@@ -239,12 +239,12 @@ Then validate open specifically by adding a one-off log — run `smoke-core.ts` 
 
 - [ ] **Step 11: Record selectors + commit**
 
-Update `docs/superpowers/flow-selectors.md`: add an "Open existing project" row with the confirmed projects-list selector and the navigate-by-href finding.
+Update `docs/flow/automation-images.md`: add an "Open existing project" row with the confirmed projects-list selector and the navigate-by-href finding.
 
 ```bash
 git add packages/flow-mcp/src/flow-client.ts packages/flow-mcp/src/server.ts \
   packages/flow-mcp/src/smoke-status.ts packages/flow-mcp/src/smoke-core.ts \
-  docs/superpowers/flow-selectors.md
+  docs/flow/automation-images.md
 git commit -m "feat(flow-mcp): openProject + flow_open_project, live-validated on camping-v2"
 ```
 
@@ -256,7 +256,7 @@ The methods exist but were never run live. Validate and fix selectors against th
 
 **Files:**
 - Modify: `packages/flow-mcp/src/flow-client.ts` (only if recon shows selector drift)
-- Modify: `docs/superpowers/flow-selectors.md`
+- Modify: `docs/flow/automation-images.md`
 - (Uses `smoke-core.ts` from Task 1.)
 
 **Interfaces:**
@@ -284,10 +284,10 @@ Expected: prints `opened:`, `image:` (with width/height and bytes > 1000), `refi
 
 - [ ] **Step 4: Record + commit**
 
-Update `flow-selectors.md` create-bar rows to observed truth (mark them "confirmed live 2026-06-30").
+Update `automation-images.md` create-bar rows to observed truth (mark them "confirmed live 2026-06-30").
 
 ```bash
-git add packages/flow-mcp/src/flow-client.ts docs/superpowers/flow-selectors.md
+git add packages/flow-mcp/src/flow-client.ts docs/flow/automation-images.md
 git commit -m "fix(flow-mcp): live-validate generateImage + refine on camping-v2"
 ```
 
@@ -502,7 +502,7 @@ The consistency unknown. Recon-heavy — the character flow was never spiked. If
 - Modify: `packages/flow-mcp/src/flow-client.ts` (add `createCharacter`)
 - Modify: `packages/flow-mcp/src/server.ts` (register `flow_create_character`)
 - Create: `packages/flow-mcp/src/smoke-character.ts`
-- Modify: `docs/superpowers/flow-selectors.md`
+- Modify: `docs/flow/automation-images.md`
 
 **Interfaces:**
 - Produces:
@@ -518,11 +518,11 @@ With camping-v2 open (raw `mcp__playwright__*` tools), drive it by hand once and
 3. Capture the name input and the reference-image upload control (is it a file chooser, drag-drop, or "Add Media" reuse?).
 4. Capture the save/confirm control and how a finished character appears (so generation can reference it).
 
-Record every captured selector in `flow-selectors.md` under a new "Characters" section as you go.
+Record every captured selector in `automation-images.md` under a new "Characters" section as you go.
 
 - [ ] **Step 2: Decision gate**
 
-If the flow is a simple sidebar form (open → name → upload → save), continue. If it is a multi-step wizard / requires generating a character sheet first / has no deterministic anchors, STOP: write findings to `flow-selectors.md`, report to the user that characters need their own sub-design, and end this task. (Tasks 1–4 already delivered the fast loop.)
+If the flow is a simple sidebar form (open → name → upload → save), continue. If it is a multi-step wizard / requires generating a character sheet first / has no deterministic anchors, STOP: write findings to `automation-images.md`, report to the user that characters need their own sub-design, and end this task. (Tasks 1–4 already delivered the fast loop.)
 
 - [ ] **Step 3: Implement `createCharacter` from the captured selectors**
 
@@ -595,7 +595,7 @@ Expected: `character: { name: 'SmokeKaren' }`, `CHARACTER SMOKE OK`, and the cha
 
 ```bash
 git add packages/flow-mcp/src/flow-client.ts packages/flow-mcp/src/server.ts \
-  packages/flow-mcp/src/smoke-character.ts docs/superpowers/flow-selectors.md
+  packages/flow-mcp/src/smoke-character.ts docs/flow/automation-images.md
 git commit -m "feat(flow-mcp): createCharacter + flow_create_character, live-validated"
 ```
 
@@ -608,7 +608,7 @@ Extend `generateImage` so a slide can pin a character for consistency.
 **Files:**
 - Modify: `packages/flow-mcp/src/flow-client.ts` (extend `generateImage`)
 - Modify: `packages/flow-mcp/src/server.ts` (add optional `character` to `flow_generate_image`)
-- Modify: `docs/superpowers/flow-selectors.md`
+- Modify: `docs/flow/automation-images.md`
 
 **Interfaces:**
 - Produces: `generateImage(prompt: string, outPath: string, opts?: { character?: string }): Promise<ImageResult>` — backward compatible (no opts = today's behaviour). When `opts.character` is set, the prompt is composed so Flow attaches the named character before generating.
@@ -667,11 +667,11 @@ Run: `npx tsx packages/flow-mcp/src/smoke-character.ts <ref.jpg>` → prints `ch
 
 - [ ] **Step 5: Record + commit**
 
-Update `flow-selectors.md` with the character-attach mechanism.
+Update `automation-images.md` with the character-attach mechanism.
 
 ```bash
 git add packages/flow-mcp/src/flow-client.ts packages/flow-mcp/src/server.ts \
-  packages/flow-mcp/src/smoke-character.ts docs/superpowers/flow-selectors.md
+  packages/flow-mcp/src/smoke-character.ts docs/flow/automation-images.md
 git commit -m "feat(flow-mcp): generateImage with optional character reference"
 ```
 
@@ -684,11 +684,11 @@ Heaviest, last. The method exists but the spec flags its selectors (credit gate,
 **Files:**
 - Modify: `packages/flow-mcp/src/flow-client.ts` (fix `generateVideo` selectors as recon dictates)
 - Create: `packages/flow-mcp/src/smoke-video.ts`
-- Modify: `docs/superpowers/flow-selectors.md`
+- Modify: `docs/flow/automation-images.md`
 
 **Interfaces:**
 - Consumes: existing `generateVideo(imagePath, motion, outPath, model?)`, `waitForVideo`, `contentTypeOf`.
-- Produces: a *validated* `generateVideo`. Cross-check against `docs/superpowers/flow-video.md` (the existing recipe contract) and reconcile any divergence.
+- Produces: a *validated* `generateVideo`. Cross-check against `docs/flow/automation-video.md` (the existing recipe contract) and reconcile any divergence.
 
 - [ ] **Step 1: Live recon of image→video**
 
@@ -696,7 +696,7 @@ With camping-v2 open and a harvested frame on disk, drive Animate by hand (raw `
 
 - [ ] **Step 2: Reconcile `generateVideo` with observed reality**
 
-Edit `flow-client.ts` `generateVideo` to match (the current body uploads via Add Media then `submitPrompt` — recon may show Animate is attached differently). Keep harvest via `waitForVideo` + `contentTypeOf`. Update `docs/superpowers/flow-video.md` if the recipe changed.
+Edit `flow-client.ts` `generateVideo` to match (the current body uploads via Add Media then `submitPrompt` — recon may show Animate is attached differently). Keep harvest via `waitForVideo` + `contentTypeOf`. Update `docs/flow/automation-video.md` if the recipe changed.
 
 - [ ] **Step 3: Create the video smoke**
 
@@ -727,7 +727,7 @@ Expected: `video:` with an `.mp4` path, bytes > 10000, `VIDEO SMOKE OK`. Play th
 
 ```bash
 git add packages/flow-mcp/src/flow-client.ts packages/flow-mcp/src/smoke-video.ts \
-  docs/superpowers/flow-selectors.md docs/superpowers/flow-video.md
+  docs/flow/automation-images.md docs/flow/automation-video.md
 git commit -m "fix(flow-mcp): live-validate generateVideo (image->video) on camping-v2"
 ```
 

@@ -221,5 +221,5 @@ Narrower, single-surface smoke scripts also live in `src/`: `smoke-status.ts`,
 project/args it expects.
 
 ## Selector contract
-`docs/superpowers/flow-selectors.md` (images) and `docs/superpowers/flow-video.md` (video).
+`docs/flow/automation-images.md` (images) and `docs/flow/automation-video.md` (video).
 If Flow's UI drifts, fix `src/flow-client.ts` and update those docs.

@@ -48,7 +48,7 @@ so is absent from the accessibility tree Playwright queries. `getByText` still w
 selector in that panel is CSS + text on purpose.
 
 **Costs observed:** the gate for a Fast clip quoted **10 credits**, not the 20 recorded in
-`flow-video.md`. Treat every credit figure in that doc as unverified until re-checked.
+`automation-video.md`. Treat every credit figure in that doc as unverified until re-checked.
 
 ### ✅ CLOSED — "image aspect lands one generation late" was never a race
 
@@ -102,9 +102,9 @@ defensive, it is a silent failure with a bill attached.
   distance **0.1 to the source vs 99.9 to a decoy** still in the same project, and the frame is
   visibly the still we uploaded. Veo 3.1 - Fast, 77s.
 - **The compose-bar popover is mapped** (`smoke-compose-popover.ts`) and written up in
-  `flow-video.md`. It carries a full **per-turn** config for both media types — including
+  `automation-video.md`. It carries a full **per-turn** config for both media types — including
   **clip duration (4s/6s/8s/10s)**, which was not known to be controllable at all, and which
-  `animate-slide` has been taking Flow's 8s default for by accident. `flow-video.md`'s claim
+  `animate-slide` has been taking Flow's 8s default for by accident. `automation-video.md`'s claim
   that aspect is settable only in the Settings panel is corrected in place.
 
 **Still to do:** one `/mcp` reconnect to confirm the tool wrapper end to end — the server runs
@@ -131,7 +131,7 @@ changed.
 
 **Open decision for Kai, not blocking:** `flow_generate_video` now defaults to
 **Veo 3.1 Fast (20 credits)**, not Quality (100). The reasoning is the 5× spread and that
-nothing should silently spend at the top tier. But `flow-video.md` records our actual
+nothing should silently spend at the top tier. But `automation-video.md` records our actual
 workflow as Quality, and the one clip we ever validated was Quality. Recommendation:
 keep Fast as the default and have `animate-slide` pass Quality explicitly at its
 motion-prompt approval gate, which is already the credit-spend checkpoint — that matches
@@ -208,7 +208,7 @@ deliberately.
 
 - [ ] Open Settings on a **fresh** project and confirm the recorded claim that it defaults
       to **Omni Flash** — the whole reason `ensureVideoSettings` exists
-- [ ] ⚠️ **GUESSED:** the model menu's *option row* shape. `flow-video.md` maps the
+- [ ] ⚠️ **GUESSED:** the model menu's *option row* shape. `automation-video.md` maps the
       trigger's accessible name but never the opened menu. Code assumes a plain button
       named exactly for the model (`flow-client.ts:1020`)
 - [ ] ⚠️ **GUESSED:** aspect/count tab scoping (`flow-client.ts:1006`). The model dropdown
@@ -250,12 +250,12 @@ deliberately.
       it does, whether it is genuinely the rename field or something unrelated
 - [ ] ⚠️ **GUESSED:** the literal `"Untitled Project"` fallback, extrapolated from the
       confirmed `"Untitled Character"`. Verify the real default
-- [ ] Rename is **expected to fail** (`flow-selectors.md:280` — fill and keystrokes both
+- [ ] Rename is **expected to fail** (`automation-images.md:280` — fill and keystrokes both
       revert on blur). Confirm it fails *gracefully*: `flow_create_project` must return the
       project's **actual** name, never the requested one. If a rename approach is ever found
       that survives blur, that is a genuine discovery worth recording
 - [ ] **Not covered by design:** the fully anchor-less div tile variant
-      (`flow-selectors.md:269-276`). No selector for it exists anywhere, so
+      (`automation-images.md:269-276`). No selector for it exists anywhere, so
       `flow_list_projects` degrades (never throws) but cannot see those tiles. `id`-based
       open is the workaround. If you can reproduce the variant, **map it** — that closes a
       long-standing gap
@@ -287,6 +287,6 @@ deliberately.
 ## Recording what you learn
 
 **Every ⚠️ GUESSED marker resolved in this pass must be written into
-`docs/superpowers/flow-selectors.md` or `flow-video.md`** with the real selector, and the
+`docs/flow/automation-images.md` or `automation-video.md`** with the real selector, and the
 marker removed from the code. That is what turns this from a one-off validation into
 knowledge the next session inherits — the same reason those maps exist at all.

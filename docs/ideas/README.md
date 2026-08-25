@@ -64,6 +64,8 @@ scannable metadata lives in the table.
 | [The BadCode Government](badcode-government.md) | a shadow cabinet of agents, rewriting its manifesto daily against the real one | software | seed |
 | [Agent Orange as Art](agent-orange-as-art.md) | show the machine — art as code, and how BadCode itself runs | video · software | seed |
 | [Ask Not](ask-not.md) | JFK inverted: ask what your country can do for a politician | video | seed |
+| [The Asteroid](the-asteroid.md) | full "Armageddon" beats, no rock ever shown — the AI is the asteroid | comic · music | seed |
+| [Nature Abhors a Vacuum](nature-abhors-a-vacuum.md) | lightning is an imbalance being corrected — so is a billionaire class | comic · music | seed |
 
 ## Graduated & canon (the rest of the map)
 

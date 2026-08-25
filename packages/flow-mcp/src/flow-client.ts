@@ -23,6 +23,21 @@ import { existsSync, readFileSync } from 'node:fs'
 import { jpegSize } from './jpeg-size'
 import { dumpLines } from './page-dump'
 import { chooseVideoMode, refineRequestError, videoRequestError } from './video-mode'
+import {
+  sceneUrl,
+  parseSceneUrl,
+  parseAnySceneUrl,
+  extendModelFromLabel,
+  sceneExtendError,
+  ADD_CLIP_BUTTON_RE,
+  EXTEND_MENU_ITEM_RE,
+  EXTEND_CHIP_RE,
+  SAVE_FRAME_RE,
+  SAVED_FRAME_QUERY,
+  fromTimecode,
+  SKIP_NEXT_RE,
+  type FramePosition,
+} from './scene'
 import { classifyCard, newCardsSince, ANY_CARD_RE, type CardState } from './failure-card'
 import { parseMediaOptions, SCRAPE_MEDIA_OPTIONS, type RawMediaOption, type MediaListItem } from './media-list'
 import { parseCharacters, SCRAPE_CHARACTERS, type RawCharacterRow, type CharacterListItem } from './character-list'
@@ -38,12 +53,12 @@ const TURN_TIMEOUT_MS = 90_000
  */
 const DEFAULT_MODEL = process.env.FLOW_MODEL ?? 'Nano Banana Pro'
 export type VideoAspect = '16:9' | '9:16'
-// flow-video.md:15 records 16:9 / 1x as the persisted defaults (though it warns to re-check
+// automation-video.md:15 records 16:9 / 1x as the persisted defaults (though it warns to re-check
 // them every project), so that's the aspect/count pair this client asserts by default.
 const DEFAULT_VIDEO_ASPECT: VideoAspect = '16:9'
 /**
  * Video's per-tier credit spread is far steeper than the image models' — Lite 10 / Fast 20 /
- * Quality 100 (flow-video.md:16) — so, unlike DEFAULT_MODEL for images, silently defaulting an
+ * Quality 100 (automation-video.md:16) — so, unlike DEFAULT_MODEL for images, silently defaulting an
  * unrequested call to the top tier would risk a 5-10x spend the caller never asked for. Fast is
  * the deliberate middle: a real step up from Lite for the price of a fifth of Quality. A caller
  * who wants Quality's 100 credits asks for it explicitly via the `model` option.
@@ -86,11 +101,30 @@ export interface MediaResult { path: string; mediaId: string }
  * carried it. Absent = the expected path ran.
  */
 export interface VideoResult extends MediaResult {
-  via?: 'frames-fallback'
+  /**
+   * 'frames-fallback' — generateVideo's Animate path degraded and Frames carried it.
+   * 'scene-extend'   — the clip came from Scene Builder's Extend, not the compose bar, so it
+   *                    ran on whatever tier Flow pins Extend to rather than the requested one.
+   */
+  via?: 'frames-fallback' | 'scene-extend'
   /** Every clip the turn produced, when `count` asked for more than one. */
   candidates?: MediaResult[]
   /** Set when fewer clips arrived than were asked for — the ones that did are still valid. */
   partial?: boolean
+}
+/**
+ * What an Extend produces: a LONGER SCENE, not a new clip file. There is no path/mediaId here
+ * because Flow does not emit one — export the assembled scene with the scene editor's Download
+ * control, or pull stills out of it with flow_scene_save_frame.
+ */
+export interface SceneExtendResult {
+  sceneId: string
+  url: string
+  durationSeconds: number
+  previousDurationSeconds?: number
+  addedSeconds?: number
+  model: string | null
+  via: 'scene-extend'
 }
 export interface CharacterRef { name: string }
 export interface FlowStatus { loggedIn: boolean; projectOpen: boolean; url: string }
@@ -210,7 +244,7 @@ export class FlowClient {
    * `id` navigates straight to `/project/<id>` via `page.goto`, following ensureProjectRoot's
    * existing navigation pattern (goto, then wait for the prompt box to hydrate) rather than
    * touching the grid at all — this is the reliable path when a tile has lost its `<a href>`
-   * (flow-selectors.md:269-276: those tiles are invisible to SCRAPE_PROJECTS, and even a
+   * (automation-images.md:269-276: those tiles are invisible to SCRAPE_PROJECTS, and even a
    * successful synthetic click on one does not navigate), since it never needs a tile to click.
    *
    * `name` keeps the original grid-scan behaviour unchanged.
@@ -261,7 +295,7 @@ export class FlowClient {
    * ambiguous between "still hydrating" and "genuinely zero projects" — so the window is short
    * (a few seconds), not 90s of blocking on what might just be an empty account.
    *
-   * Never throws on the href-less-tile bug (flow-selectors.md:269-276) — see
+   * Never throws on the href-less-tile bug (automation-images.md:269-276) — see
    * `toProjectSummaries` — so a partial list beats an error.
    */
   async listProjects(): Promise<ProjectSummary[]> {
@@ -279,10 +313,10 @@ export class FlowClient {
   }
 
   /**
-   * ⚠️ GUESSED locator: flow-selectors.md:280 records only that fill()/keystrokes on the
+   * ⚠️ GUESSED locator: automation-images.md:280 records only that fill()/keystrokes on the
    * project title textbox both revert on blur — no accessible name or selector for the field
    * itself is recorded anywhere. `promptBox()` is known to have NO accessible name
-   * ("no own placeholder text", flow-selectors.md), so scoping to a NAMED textbox here at
+   * ("no own placeholder text", automation-images.md), so scoping to a NAMED textbox here at
    * least cannot collide with it. Best-effort only: if nothing matches, or the fill doesn't
    * survive blur (the documented, expected outcome), this silently no-ops — `createProject`
    * never trusts this value, it always reads the real name back afterward via the projects
@@ -303,7 +337,7 @@ export class FlowClient {
 
   /**
    * Read whatever the project is ACTUALLY named right now. Never trusts a requested rename —
-   * renaming is documented as un-automatable (flow-selectors.md:280) — so this re-derives the
+   * renaming is documented as un-automatable (automation-images.md:280) — so this re-derives the
    * name from Flow's own state, in order of confidence, and never throws:
    *   1. The projects-list tile matching `id` (SCRAPE_PROJECTS/toProjectSummaries — the same
    *      evidenced mechanism openProject/pickProject already rely on).
@@ -347,7 +381,7 @@ export class FlowClient {
    * `name` is BEST-EFFORT — see attemptRenameProject/readProjectName. The caller MUST use the
    * returned `name`, never the one it passed in: renaming a Flow project via the title textbox
    * is documented as un-automatable (fill and keystrokes both revert on blur,
-   * flow-selectors.md:280), so this attempts it, then reports back whatever Flow actually
+   * automation-images.md:280), so this attempts it, then reports back whatever Flow actually
    * settled on rather than assuming the attempt worked.
    *
    * Ends back inside the new project (readProjectName briefly leaves to confirm the name via
@@ -374,7 +408,7 @@ export class FlowClient {
     return { id, name: actualName }
   }
 
-  // --- Click hardening (mapped live 2026-07-14, flow-selectors.md "Click reliability on WSLg") ---
+  // --- Click hardening (mapped live 2026-07-14, automation-images.md "Click reliability on WSLg") ---
   // Playwright's actionability "stable" check stalls on this UI (persistent animation) and
   // trusted CDP pointer input can silently miss, so each control type gets the recipe that
   // actually fires its handler. A bare click with default actionability is banned in this file.
@@ -413,7 +447,7 @@ export class FlowClient {
   /**
    * Reveal a hover-only overlay (a media tile's `more_vert` action button, which only mounts
    * on hover) via synthetic pointer/mouse events, NOT Playwright's coordinate-based `.hover()`.
-   * flow-selectors.md:236-242 documents coordinate input as untrustworthy on this rig — the
+   * automation-images.md:236-242 documents coordinate input as untrustworthy on this rig — the
    * WSLg window's input pipeline scales coordinates, so a trusted pointer move can land on the
    * wrong element (or the right element at the wrong point) even where a click with the same
    * mechanism would at least fail loudly. A hover has no "did it land" signal of its own, so
@@ -739,7 +773,7 @@ export class FlowClient {
   /**
    * Force the create bar into image mode at the requested output count (1–4), model and
    * aspect ratio. `aspect` is optional and, when omitted, is left entirely untouched — Flow's
-   * own default is already 16:9 (flow-selectors.md:174: "Default is already Image · 16:9 ·
+   * own default is already 16:9 (automation-images.md:174: "Default is already Image · 16:9 ·
    * 1x, so ensureImageMode is idempotent"), unlike video's Settings panel which resets to the
    * wrong tier per project, so there is no landmine here that requires asserting a default.
    * Idempotent — when the config trigger's label already shows the target state
@@ -801,7 +835,7 @@ export class FlowClient {
     await imageTab.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     await this.tabClick(imageTab)
     // Aspect tabs render as "<icon ligature><ratio text>", with the human ratio text ALWAYS
-    // LAST (confirmed live: "crop_16_916:9", "crop_landscape4:3" — flow-selectors.md:172-174),
+    // LAST (confirmed live: "crop_16_916:9", "crop_landscape4:3" — automation-images.md:172-174),
     // so anchoring on the ratio text alone needs no icon-name guessing at all — unlike
     // aspectAlreadySelected's short-circuit above, which has to guess the icon (see compose.ts).
     if (aspect) {
@@ -846,7 +880,7 @@ export class FlowClient {
    * Reads ALL matching messages and classifies them together, rather than the first hit.
    * classifyCard's precedence resolves ambiguity WITHIN one string, so taking `.first()` would
    * discard the other matches before precedence could ever apply — and Flow's transcript
-   * accumulates rather than replaces (flow-video.md:61-62: the queue message survives even
+   * accumulates rather than replaces (automation-video.md:61-62: the queue message survives even
    * after the clip finishes). A stale "waiting in the queue" sitting above a real block or
    * error would then mask it, which is exactly the retry-forever failure this probe exists to
    * prevent.
@@ -1605,10 +1639,10 @@ export class FlowClient {
 
   /**
    * Assert Flow's Settings-panel "Video generation default" — model, aspect, output count —
-   * mapped at flow-video.md:12-23 and :113-116. Unlike the image compose bar's `crop_` trigger,
+   * mapped at automation-video.md:12-23 and :113-116. Unlike the image compose bar's `crop_` trigger,
    * these live behind a dedicated panel and there is no per-turn control on the create bar
    * itself, so a video call that skips this inherits whatever the PROJECT last had — and
-   * ⚠️ that **resets to Omni Flash on a fresh project** (flow-video.md:20). Skipping this call
+   * ⚠️ that **resets to Omni Flash on a fresh project** (automation-video.md:20). Skipping this call
    * is exactly the bug this task exists to fix: a caller asking for Veo 3.1 Quality could
    * silently get an Omni Flash clip at the wrong aspect.
    *
@@ -1707,7 +1741,7 @@ export class FlowClient {
       }
     }
 
-    // Count tabs are `x1`…`x4` — uniformly x-first. flow-video.md recorded the single-output
+    // Count tabs are `x1`…`x4` — uniformly x-first. automation-video.md recorded the single-output
     // tab as "1x" and the code followed it; the live panel says "x1" (confirmed 2026-08-12),
     // so asking for one clip matched nothing and silently left the count at whatever it was.
     const countTab = videoSection
@@ -2166,7 +2200,7 @@ export class FlowClient {
    *
    * Loads TWICE when the first attempt comes up empty: a Flow project load can throw a
    * client-side exception and render a completely black page with no compose bar at all
-   * (flow-video.md's SUBMIT_FAILED note, and observed again 2026-08-12 — a wedged page then
+   * (automation-video.md's SUBMIT_FAILED note, and observed again 2026-08-12 — a wedged page then
    * fails every later call in the run with an unrelated-looking timeout). A second load
    * reliably fixes it, so do it here rather than leaving the wedge for the next caller.
    */
@@ -2300,7 +2334,7 @@ export class FlowClient {
    *
    * Throws ANIMATE_NOT_FOUND (mapped in toToolError) on timeout rather than EVER falling back
    * to "hover every tile and take the first that offers Animate" — that blind scan is exactly
-   * the fragility this task replaces (flow-video.md's "open rough edge": it timed out on
+   * the fragility this task replaces (automation-video.md's "open rough edge": it timed out on
    * re-runs once the project filled with test media, and worse, a media-rich project has no
    * guarantee the first Animate-capable tile it finds is the one we just uploaded). A clear,
    * fast failure beats a silent wrong-image animate.
@@ -2444,7 +2478,7 @@ export class FlowClient {
    *     unpassable prompt is most expensive.
    *   - `error` ("Oops, something went wrong") re-approves the credit gate to retry, same
    *     behaviour this loop always had.
-   *   - `queued` is benign (flow-video.md:41-49) — the misleading `warning Failed`-looking icon
+   *   - `queued` is benign (automation-video.md:41-49) — the misleading `warning Failed`-looking icon
    *     that can render alongside it must never be read as a reason to stop waiting. It now
    *     EXTENDS the deadline: confirmed live 2026-08-12, Flow queued a clip "due to high
    *     demand" and had still not produced it 8 minutes later. Failing at the normal timeout
@@ -2579,6 +2613,226 @@ export class FlowClient {
     } catch {
       return `TIMEOUT: nothing finished in ${secs}s (and the page could not be read for a diagnostic).`
     }
+  }
+
+  // ---------------------------------------------------------------------------------------
+  // Scene Builder
+  //
+  // Flow's per-clip editor at /project/<projectId>/edit/<sceneId>. It carries three things the
+  // compose bar does not: Extend (a true continuation, generated with the clip's own context
+  // rather than a still), Save Frame (harvest the playhead frame straight into the project),
+  // and a scene-level prompt box. Mapped live 2026-08-18 — see src/scene.ts for why the
+  // 2026-08-12 sweep concluded Extend did not exist.
+  // ---------------------------------------------------------------------------------------
+
+  /** The project id from the current URL, so scene navigation never needs it passed in. */
+  private currentProjectId(): string {
+    const m = /\/project\/([0-9a-f-]{36})/i.exec(this.page.url())
+    if (!m) throw new Error('NO_PROJECT_OPEN')
+    return m[1]!
+  }
+
+  /** Navigate into a scene, unless we are already in it. */
+  async openScene(sceneId: string): Promise<{ projectId: string; sceneId: string; url: string }> {
+    const here = parseSceneUrl(this.page.url())
+    if (here?.sceneId === sceneId) return { ...here, url: this.page.url() }
+    const projectId = here?.projectId ?? this.currentProjectId()
+    const url = sceneUrl(projectId, sceneId)
+    await this.page.goto(url, { waitUntil: 'domcontentloaded' })
+    // The timeline is the last thing to render; waiting on it means every later click lands.
+    await this.page
+      .getByRole('button', { name: ADD_CLIP_BUTTON_RE })
+      .first()
+      .waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    return { projectId, sceneId, url }
+  }
+
+  /**
+   * Put the compose bar into extend mode and report which tier Flow pinned it to.
+   *
+   * Arming spends nothing — Create stays disabled until the prompt has text — so this is safe
+   * to call to READ the tier. Returns the normalised model name, or null when Flow renders its
+   * unsubstituted "{{modelName}}" placeholder.
+   */
+  private async armExtend(): Promise<string | null> {
+    await this.ensureComposeVisible()
+    // The timeline menu opens on POINTERDOWN, not click: forceClick's synthetic
+    // HTMLElement.click() leaves it shut and the wait below then burns its full timeout
+    // (measured 2026-08-18, first live run of this method). pointerClick is the one that
+    // works; forceClick stays as a fallback in case the handler ever moves.
+    const addClip = this.page.getByRole('button', { name: ADD_CLIP_BUTTON_RE }).first()
+    const item = this.page.getByRole('menuitem', { name: EXTEND_MENU_ITEM_RE }).first()
+    let opened = false
+    for (const click of [this.pointerClick.bind(this), this.forceClick.bind(this)]) {
+      await click(addClip).catch(() => {})
+      if (await item.isVisible({ timeout: 5_000 }).catch(() => false)) {
+        opened = true
+        break
+      }
+    }
+    if (!opened) {
+      throw new Error('SCENE_ADD_CLIP_MENU_NOT_OPEN: the timeline\'s Add Clip button did not open its menu, so Extend could not be reached. The menu opens on pointerdown; if both click paths now fail, re-map the control against the live scene editor.')
+    }
+    const label = (await item.textContent()) ?? ''
+    await this.pointerClick(item).catch(async () => await this.forceClick(item))
+    // The chip is the only positive proof the mode took. Without it a later submit would
+    // generate an ordinary clip and bill for it, which looks like success and is not.
+    const chip = this.page.getByRole('button', { name: EXTEND_CHIP_RE }).first()
+    await chip.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS }).catch(() => {
+      throw new Error('SCENE_EXTEND_NOT_ARMED: the Extend menu item was clicked but the compose bar never entered extend mode, so a submit here would have generated an ordinary clip and charged for it. Aborted before spending anything.')
+    })
+    return extendModelFromLabel((await chip.textContent()) ?? label)
+  }
+
+  /** Leave extend mode without generating — used to read the tier, and to clean up on failure. */
+  private async disarmExtend(): Promise<void> {
+    const chip = this.page.getByRole('button', { name: EXTEND_CHIP_RE }).first()
+    if (await chip.count()) await this.forceClick(chip).catch(() => {})
+  }
+
+  /** Which tier Flow currently pins Extend to, without generating anything. */
+  async sceneExtendModel(sceneId?: string): Promise<{ model: string | null }> {
+    if (sceneId) await this.openScene(sceneId)
+    const model = await this.armExtend()
+    await this.disarmExtend()
+    return { model }
+  }
+
+  /**
+   * Continue a clip from its own end, with the model's context — Flow's Extend.
+   *
+   * The tier is NOT ours to choose: Extend runs on whatever Flow pins it to (Veo 3.1 Lite on
+   * 2026-08-18), regardless of the compose bar's model. The tier actually used is returned so
+   * the caller can see what they bought rather than assume.
+   */
+  async sceneExtend(req: {
+    prompt: string
+    sceneId?: string
+  }): Promise<SceneExtendResult> {
+    const problem = sceneExtendError(req)
+    if (problem) throw new Error(problem)
+    if (req.sceneId) await this.openScene(req.sceneId)
+    else if (!parseAnySceneUrl(this.page.url())) {
+      throw new Error('NOT_IN_SCENE: flow_scene_extend must run inside a scene editor. Pass sceneId, or open a clip in Flow first — the scene id is the uuid after /edit/ in the URL.')
+    }
+    const model = await this.armExtend()
+    const before = await this.readSceneDuration()
+    try {
+      await this.submitPrompt(req.prompt)
+    } catch (err) {
+      await this.disarmExtend()
+      throw err
+    }
+    // An Extend does NOT emit a new clip into the gallery — it APPENDS A SEGMENT to a scene and
+    // navigates to /scene/<newId>. Waiting for a new video media item (the compose-bar harvest)
+    // therefore waits forever: the first live run timed out at 480s on an Extend that had
+    // already succeeded, with a 15s scene sitting on screen. Success is the scene growing.
+    const deadline = Date.now() + VIDEO_TIMEOUT_MS
+    while (Date.now() < deadline) {
+      const card = await this.detectFailureCard()
+      if (card === 'blocked') throw new Error('POLICY_BLOCKED')
+      const now = await this.readSceneDuration()
+      if (now !== null && (before === null || now > before + 0.5)) {
+        const at = parseAnySceneUrl(this.page.url())
+        return {
+          sceneId: at?.sceneId ?? req.sceneId ?? '',
+          url: this.page.url(),
+          durationSeconds: now,
+          ...(before !== null ? { previousDurationSeconds: before } : {}),
+          addedSeconds: before !== null ? Math.round((now - before) * 100) / 100 : undefined,
+          model,
+          via: 'scene-extend',
+        }
+      }
+      await this.page.waitForTimeout(VIDEO_POLL_MS)
+    }
+    throw new Error(await this.timeoutError(VIDEO_TIMEOUT_MS))
+  }
+
+  /**
+   * The scene's total length, from the player's right-hand "MM:SS:FF" readout.
+   *
+   * There are two timecodes side by side — playhead then total — so this reads the LAST one.
+   */
+  private async readSceneDuration(): Promise<number | null> {
+    const codes = await this.page
+      .locator('div,span')
+      .filter({ hasText: /^\d{2}:\d{2}:\d{2}$/ })
+      .allTextContents()
+      .catch(() => [] as string[])
+    const parsed = codes.map((c) => fromTimecode(c.trim())).filter((n): n is number => n !== null)
+    return parsed.length ? Math.max(...parsed) : null
+  }
+
+  /**
+   * Save the frame under the playhead into the project as an image asset.
+   *
+   * This is the frame-chaining workflow Flow already has: the saved frame becomes a normal
+   * gallery item, usable as the startImage of the next generation without a download round
+   * trip. position "end" parks the playhead at the clip's last frame first, which is the only
+   * position chaining ever actually wants.
+   */
+  async sceneSaveFrame(opts?: {
+    sceneId?: string
+    position?: FramePosition
+  }): Promise<{ mediaId?: string; position: FramePosition; playhead?: string }> {
+    const here = parseSceneUrl(this.page.url())
+    const sceneId = opts?.sceneId ?? here?.sceneId
+    if (!sceneId) throw new Error('NOT_IN_SCENE: flow_scene_save_frame must run inside a scene editor. Pass sceneId, or open a clip in Flow first.')
+    const scene = await this.openScene(sceneId)
+    const position = opts?.position ?? 'current'
+    // Detect the new asset through the ASSET PICKER, not scrapeMediaNames().
+    //
+    // scrapeMediaNames() reads media rendered in the page, and the scene editor does not render
+    // the project gallery — so a frame that saved perfectly reported no mediaId (measured on the
+    // first live run, 2026-08-18: the asset was there in flow_list_media all along). The picker
+    // is the only surface that sees it. Two picker opens is slow, but this is not a hot path and
+    // a silently-missing id is worse: the whole point of the tool is handing the caller an id to
+    // chain from.
+    const savedIds = async (): Promise<Set<string>> =>
+      new Set(
+        (await this.listMedia({ query: SAVED_FRAME_QUERY }))
+          .map((m) => m.mediaId)
+          .filter((id): id is string => Boolean(id)),
+      )
+    const before = await savedIds()
+    // listMedia asserts image mode on the compose bar, which can leave the scene — go back.
+    await this.openScene(scene.sceneId)
+    if (position === 'end') await this.parkPlayheadAtEnd()
+    const save = this.page.getByRole('button', { name: SAVE_FRAME_RE }).first()
+    await save.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS }).catch(() => {
+      throw new Error('SAVE_FRAME_NOT_FOUND: the player overlay had no Save Frame control. It only renders once a clip is loaded and the player has painted a frame.')
+    })
+    const playhead = await this.readPlayhead()
+    await this.pointerClick(save).catch(async () => await this.forceClick(save))
+    const deadline = Date.now() + TURN_TIMEOUT_MS
+    while (Date.now() < deadline) {
+      await this.page.waitForTimeout(POLL_MS)
+      for (const id of await savedIds()) {
+        if (!before.has(id)) return { mediaId: id, position, ...(playhead ? { playhead } : {}) }
+      }
+    }
+    // Not an error: Save Frame gives no confirmation of its own, and the asset may simply not
+    // have surfaced yet. The caller can find it with flow_list_media.
+    return { position, ...(playhead ? { playhead } : {}) }
+  }
+
+  /** Park the playhead on the clip's last frame — the only position chaining ever wants. */
+  private async parkPlayheadAtEnd(): Promise<void> {
+    const next = this.page.getByRole('button', { name: SKIP_NEXT_RE }).first()
+    if (await next.count()) await this.pointerClick(next).catch(() => {})
+    await this.page.waitForTimeout(POLL_MS)
+  }
+
+  /** The player's "MM:SS:FF" readout, when it can be found. */
+  private async readPlayhead(): Promise<string | undefined> {
+    const tc = await this.page
+      .locator('div,span')
+      .filter({ hasText: /^\d{2}:\d{2}:\d{2}$/ })
+      .first()
+      .textContent()
+      .catch(() => null)
+    return tc?.trim() ?? undefined
   }
 
   /** Whether the cached CDP attachment (and its page) is still usable. */

@@ -9,7 +9,7 @@
 **Tech Stack:** TypeScript (ESM, Node ≥22), `@modelcontextprotocol/sdk`, `playwright`, `zod`, `vitest`.
 
 **Spec:** `docs/superpowers/specs/2026-06-27-flow-mcp-and-art-direction-design.md`
-**Contract doc (Flow UI recipe):** `docs/superpowers/flow-selectors.md` — the authoritative selector/harvest map; keep it in sync if selectors drift.
+**Contract doc (Flow UI recipe):** `docs/flow/automation-images.md` — the authoritative selector/harvest map; keep it in sync if selectors drift.
 
 ## Global Constraints
 
@@ -650,7 +650,7 @@ Expected: PASS (2 assertions).
 
 - [ ] **Step 5: Write `packages/flow-mcp/src/flow-client.ts`**
 
-> Selectors come from `docs/superpowers/flow-selectors.md` and `docs/superpowers/flow-video.md`. If Flow's UI drifts, fix them here AND update those docs.
+> Selectors come from `docs/flow/automation-images.md` and `docs/flow/automation-video.md`. If Flow's UI drifts, fix them here AND update those docs.
 
 ```ts
 import { chromium, type Browser, type Page } from 'playwright'
@@ -749,7 +749,7 @@ export class FlowClient {
     const chooser = this.page.waitForEvent('filechooser')
     await this.page.getByRole('button', { name: /Add Media/i }).click()
     await (await chooser).setFiles(imagePath)
-    // Attach as animation source, then prompt + create. (See flow-video.md.)
+    // Attach as animation source, then prompt + create. (See automation-video.md.)
     await this.submitPrompt(motion)
     // Video is ready when the media's content-type is video/*.
     const name = await this.waitForVideo(VIDEO_TIMEOUT_MS)
@@ -777,7 +777,7 @@ export class FlowClient {
 }
 ```
 
-> NOTE for the implementer: `generateVideo` covers the documented happy path. The credit-approval gate, model pre-selection (Veo 3.1 — Quality), and `more_vert → Animate` attachment described in `flow-video.md` are refined against the live tool during the Task 8 smoke run; capture any selector corrections back into `flow-video.md`. Video is exercised by the smoke script only after images work end to end.
+> NOTE for the implementer: `generateVideo` covers the documented happy path. The credit-approval gate, model pre-selection (Veo 3.1 — Quality), and `more_vert → Animate` attachment described in `automation-video.md` are refined against the live tool during the Task 8 smoke run; capture any selector corrections back into `automation-video.md`. Video is exercised by the smoke script only after images work end to end.
 
 - [ ] **Step 6: Typecheck**
 
@@ -1018,7 +1018,7 @@ try {
 
 Pre-req: a separate terminal running `./scripts/flow-chrome.sh`, logged in.
 Run: `npx tsx packages/flow-mcp/src/smoke.ts`
-Expected: prints `status: { loggedIn: true, ... }`, then `generated: {...}` with a >1KB file, then `SMOKE OK`. If selectors have drifted, fix `flow-client.ts` + update `flow-selectors.md`, then re-run.
+Expected: prints `status: { loggedIn: true, ... }`, then `generated: {...}` with a >1KB file, then `SMOKE OK`. If selectors have drifted, fix `flow-client.ts` + update `automation-images.md`, then re-run.
 
 - [ ] **Step 3: Write `packages/flow-mcp/README.md`**
 
@@ -1043,7 +1043,7 @@ All `outPath` values are absolute; the server never decides where comic assets l
 `npx tsx packages/flow-mcp/src/smoke.ts` (needs a logged-in Flow window).
 
 ## Selector contract
-`docs/superpowers/flow-selectors.md` (images) and `docs/superpowers/flow-video.md` (video).
+`docs/flow/automation-images.md` (images) and `docs/flow/automation-video.md` (video).
 If Flow's UI drifts, fix `src/flow-client.ts` and update those docs.
 ````
 

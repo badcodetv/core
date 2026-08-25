@@ -1,6 +1,6 @@
 ---
 name: animate-slide
-description: Use to turn a single comic slide into a scroll-scrubbed video clip via Google Flow (image→video / Veo), then weave it into the comic. Triggers on "turn this slide into a video", "animate panel N", "animate this slide", "add motion to <panel>". Points at an existing bucket-pipeline comic; reuses the Flow video recipe (docs/superpowers/flow-video.md) + assets-build + @badcode/comic AnimationWidget.
+description: Use to turn a single comic slide into a scroll-scrubbed video clip via Google Flow (image→video / Veo), then weave it into the comic. Triggers on "turn this slide into a video", "animate panel N", "animate this slide", "add motion to <panel>". Points at an existing bucket-pipeline comic; reuses the Flow video recipe (docs/flow/automation-video.md) + assets-build + @badcode/comic AnimationWidget.
 ---
 
 # Animate Slide (BadCode)
@@ -20,7 +20,7 @@ the bucket → `badcode assets-build` (renditions/poster/manifest) →
 |---|---|
 | `CLAUDE.md` | What BadCode is; repo map |
 | `docs/voice.md` | Load-bearing tone — applies to motion prompts too |
-| `docs/superpowers/flow-video.md` | How the Flow video tools work underneath — selectors, the frame slots, the completion signal, the mp4 harvest. Reference material for when a call fails; not needed to run this skill. |
+| `docs/flow/automation-video.md` | How the Flow video tools work underneath — selectors, the frame slots, the completion signal, the mp4 harvest. Reference material for when a call fails; not needed to run this skill. |
 | `packages/comic/AUTHORING.md` | Mandatory before the `.tsx` widget swap |
 
 ## Scope guard — bucket pipeline only
@@ -52,26 +52,12 @@ does not read `comic.meta.ts` for animations; Karen's 9 working animations aren'
 
 ## Flow engine (required before generating)
 
-Video generation runs through the **`flow` MCP server**, not by driving the browser by hand.
-Call `flow_status` once before producing:
+**Invoke the `flow-automation` skill.** It owns getting the browser up, the tool surface, and
+every failure mode — including the two that bite this skill specifically: a cluttered project
+degrading the animate path (`ANIMATE_NOT_FOUND`), and video mode poisoning the asset picker.
 
-- `{ loggedIn: true }` → you are ready.
-- `NOT_RUNNING` → the browser is down. Launch it yourself, backgrounded, from your shell:
-  `./scripts/flow-chrome.sh`. It renders via WSLg (so the user sees it) and exposes CDP on
-  `:9222`. Poll `curl -s http://localhost:9222/json/version` until it returns JSON, then call
-  `flow_status` again. The login persists in `.flow-profile/`, so a relaunch is already signed
-  in — the user only ever logs in the very first time.
-- `loggedIn: false` → ask the user to sign in; nothing else here will work.
-
-Then open the working project once with `flow_open_project`. **Prefer a project that is not
-full of test media**: the animate path identifies the still you just uploaded by diffing the
-tile grid, and that diff degrades in a project holding dozens of items (observed failing with
-`ANIMATE_NOT_FOUND` at ~30 items, 2026-08-12, and working immediately in a fresh project).
-`flow_create_project` gives you a clean one.
-
-For what the tools do underneath — the compose bar, the frame slots, the completion signal,
-the mp4 harvest — see **`docs/superpowers/flow-video.md`**. You should not need it to run this
-skill; read it when something fails.
+The short version: `flow_status` → if `NOT_RUNNING`, bring Chrome up yourself, never bounce it
+to the user → `flow_open_project`, preferring one **not** full of test media.
 
 ---
 
@@ -84,8 +70,7 @@ user start things by hand.
 1. **Start the dev server yourself**, backgrounded: `npm run dev` (from repo root). Read the
    port from its output (`http://localhost:<port>/comics/<comic>`) — it's `5173` unless taken.
    **Print the URL** so the user can open it on their side too if they like.
-2. **Ensure the shared browser** is up (`flow_status`; launch `./scripts/flow-chrome.sh`
-   backgrounded if it reports `NOT_RUNNING`).
+2. **Ensure the shared browser** is up (`flow_status`; on `NOT_RUNNING` see **`flow-automation`** §1).
 3. **Open the comic in the shared browser**: `browser_navigate` to
    `http://localhost:<port>/comics/<comic>`. This one Chromium is **both** what the user sees
    (WSLg) **and** what you screenshot (CDP) — so you're always looking at the same thing. When
@@ -244,9 +229,9 @@ the move between them. ⚠️ Then the prompt should name **only the connecting 
 two stills already carry the content, and describing the scene again makes drift worse. An
 `endImage` needs a Veo 3.1 tier (Omni Flash rejects a last frame) and cannot be passed alone.
 
-If it fails, read the error's `hint` — every failure mode here (policy block, wrong duration for
-the tier, a frame Flow rejected) names its own fix. `POLICY_BLOCKED` in particular means
-**rewrite, never retry**: see `docs/flow/failure-modes.md`.
+If it fails, read the error's `hint`, then **`flow-automation` §3** — every failure mode names
+its own fix, and they do not all want the same response. `POLICY_BLOCKED` means **rewrite,
+never retry**; an audio failure means **retry unchanged**.
 
 ### Step 5: Judge the clip
 
@@ -349,7 +334,7 @@ panel: <N>
 image_key: img/<iNN>.<ext>         # the static source image in the bucket
 anim_key: anim/<key>               # e.g. anim/a10
 flow_media_id: <uuid>              # the Flow media name from getMediaUrlRedirect
-model: <as Flow reports it>        # the model name from flow-video.md / the Flow UI
+model: <as Flow reports it>        # the model name from automation-video.md / the Flow UI
 status: done                       # planned | done
 ---
 
@@ -390,9 +375,9 @@ Do not restart completed work. Do not re-generate a clip that already renders co
 1. Open `docs/stories/<story>/storyboard/pNN.md` and read the recorded motion prompt.
 2. Re-prompt Flow in the **same session** if it is still open — "just like that but
    `<change>`". If the session is closed, start fresh from **step 2 of the loop** (re-stage
-   the source image and re-upload it to Flow per `flow-video.md`) before re-prompting — a new
+   the source image and re-upload it to Flow per `automation-video.md`) before re-prompting — a new
    Flow session has no reference image until you re-stage it.
-3. Re-harvest the clip (follow `flow-video.md`).
+3. Re-harvest the clip (follow `automation-video.md`).
 4. Re-upload and re-run `assets-build` (step 6 above) — the manifest entry updates in place.
 5. **Append a revision line** to the `pNN.md` Revisions log:
    ```

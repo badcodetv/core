@@ -3,7 +3,7 @@
 > Brainstormed with Kai, 2026-06-25. This is the **video** half of the Flow automation
 > work that the [image loop spec](./2026-06-20-flow-automation-loop-design.md) explicitly
 > deferred ("Video / frames→video generation. Same harness, added once images work").
-> Images now work end-to-end (`docs/superpowers/flow-selectors.md` + the `make-comic`
+> Images now work end-to-end (`docs/flow/automation-images.md` + the `make-comic`
 > skill's Flow engine); this spec adds the video path.
 
 ## Goal
@@ -47,7 +47,7 @@ in production use by the Karen comic** (9 working animations):
 - **The Flow harvest trick** — a generated media's source is an authenticated same-origin
   redirect (`getMediaUrlRedirect?name=<uuid>`); `page.request.get(...)` follows it server-side
   with the browser's cookies and yields a **signed, publicly-fetchable CDN URL** that `curl`
-  writes to disk. Documented in `docs/superpowers/flow-selectors.md`.
+  writes to disk. Documented in `docs/flow/automation-images.md`.
 
 What is **not** built: the Flow **video** UI recipe (how a source image enters image→video
 mode, where the motion prompt goes, the completion signal, aspect-ratio control) and a skill
@@ -80,11 +80,11 @@ image slides and animations.
 
 ## The two new artifacts
 
-### 1. Flow **video** recipe — `docs/superpowers/flow-video.md` (spike-first)
+### 1. Flow **video** recipe — `docs/flow/automation-video.md` (spike-first)
 
 The Flow image→video UI is unobserved, so Phase 1 is a **Claude-in-the-loop spike** that
 drives one real slide end-to-end and records the recipe, exactly as the image spike produced
-`flow-selectors.md`. The recipe must capture:
+`automation-images.md`. The recipe must capture:
 
 - **How a source image enters image→video mode** — selecting an existing image / ingredient
   and invoking "animate"/video (Veo), and where the motion prompt is typed.
@@ -97,7 +97,7 @@ drives one real slide end-to-end and records the recipe, exactly as the image sp
 - **A selector/step map** located by ARIA role + accessible name (refs from `browser_snapshot`
   go stale), kept in one place for the skill to lean on.
 
-**Deliverable:** one real Karen slide animated and live in the comic, plus `flow-video.md` as
+**Deliverable:** one real Karen slide animated and live in the comic, plus `automation-video.md` as
 the input contract for the skill. This task **gates** the skill — we cannot write recipe steps
 for a UI we have not observed.
 
@@ -108,7 +108,7 @@ Triggers: *"turn this slide into a video"*, *"animate panel N"*, *"animate this 
 produce**); never generates before the prompt is approved.
 
 **Read-first** (the skill lists these): `CLAUDE.md`, `docs/voice.md` (the motion prompt is
-BadCode voice), `docs/superpowers/flow-video.md` (the recipe), `packages/comic/AUTHORING.md`
+BadCode voice), `docs/flow/automation-video.md` (the recipe), `packages/comic/AUTHORING.md`
 (mandatory before the `.tsx` swap).
 
 **Flow-connection preamble** — reused from `make-comic`'s "Flow engine" (CDP up? Playwright
@@ -125,7 +125,7 @@ MCP available? walk through `./scripts/flow-chrome.sh` + restart if not).
    motion prompts"* section in the skill, referencing `docs/voice.md`: restrained, deliberate
    camera moves (slow push-in, drift, parallax) that **serve the beat, not spectacle**;
    received-wisdom-from-the-future restraint over flashy motion.
-4. **Drive Flow** per `flow-video.md`: provide the source image (and `to` image if tweening) +
+4. **Drive Flow** per `automation-video.md`: provide the source image (and `to` image if tweening) +
    the motion prompt; generate; poll for completion.
 5. **Judge** the clip (read the poster / a sampled frame) against the panel intent + house
    style. If weak, refine in the **same Flow session** ("like that, but slower / less camera
@@ -149,7 +149,7 @@ incomplete step.
 
 ### Phase 1 — Spike (Claude-in-the-loop)
 Drive Flow's image→video on one real Karen slide via Playwright-over-CDP against the
-logged-in session. Record `docs/superpowers/flow-video.md` (recipe + selector/step map) and
+logged-in session. Record `docs/flow/automation-video.md` (recipe + selector/step map) and
 land one animated slide live in Karen. **Gates Phase 2.**
 
 ### Phase 2 — Write the skill
@@ -177,9 +177,9 @@ are deterministic `gsutil`/`assets-build`/edit commands.
 
 | Risk | Mitigation |
 | --- | --- |
-| Flow video UI unobserved / churns | **Spike-first**: record `flow-video.md`; locate by ARIA role + accessible name, not stale refs; keep the selector map in one place |
+| Flow video UI unobserved / churns | **Spike-first**: record `automation-video.md`; locate by ARIA role + accessible name, not stale refs; keep the selector map in one place |
 | Video generation latency (slower than images) | Poll a DOM/network **completion signal**, never a fixed sleep — same discipline as images |
-| Clip aspect ≠ comic page aspect | The spike **pins the target ratio/size**; record how in `flow-video.md` |
+| Clip aspect ≠ comic page aspect | The spike **pins the target ratio/size**; record how in `automation-video.md` |
 | Heavier rate limits / session cost for video | Human-paced first runs on the persistent profile; per-slide (not batch) by design |
 | mp4 harvest auth differs from images | Spike **confirms** video media resolves via the same signed-URL path before relying on it |
 | Target comic is on the local/v1 manifest (no bucket pipeline) | The skill checks `basePath`; if not `comics-v2/…`, it stops and explains the comic must be migrated to the bucket pipeline first |
@@ -190,7 +190,7 @@ are deterministic `gsutil`/`assets-build`/edit commands.
   harvested via the signed-URL path, uploaded to `comics-v2/karen/anim/<key>/video.mp4`, built
   by `assets-build` into renditions/poster, and renders as a scroll-scrubbed `AnimationWidget`
   in Karen (`npm run typecheck` + the comic renders in `npm run dev`).
-  `docs/superpowers/flow-video.md` is recorded.
+  `docs/flow/automation-video.md` is recorded.
 - **Phase 2:** `/animate-slide <comic> <panel> '<motion prompt>'` runs the loop — stage →
   generate → judge → upload → build → swap the page → record — producing a scroll-scrubbed clip
   in place of the slide's static image, with the exact prompt logged in `pNN.md`, and the skill

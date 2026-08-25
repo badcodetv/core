@@ -25,6 +25,12 @@ wrong: retrying burns ~90s a go on a prompt that can never pass.
 healthy (`flow_status` fine, project loads, other prompts succeeding) = **policy block.
 Rewrite; do not retry.** Glance at the Flow window to confirm.
 
+⚠️ **Refined 2026-08-18: a policy block is the most likely cause of a candidate-less failure,
+not the only one.** Google documents three other faults that also return nothing —
+audio-generation failure, rate limiting, and "unusual activity" — and they need opposite
+responses (wait, or retry unchanged) to a block (rewrite). **Look at the Flow window before
+rewriting**, because the card names which one it is and the tools cannot. See Part B0.
+
 *(Known gap: flow-mcp does not yet distinguish a block from a timeout or return a
 distinct `POLICY_BLOCKED` code — see `packages/flow-mcp/README.md`.)*
 
@@ -260,6 +266,32 @@ cost logic defensively — you may be billed for a generation you never see.**
 
 ---
 
+# Part B0 — The other empty results (2026-08-18)
+
+Added after reading Flow's own FAQ. Every one of these returns **no candidate**, exactly like a
+policy block, and every one wants a different response. Getting this wrong costs either a
+rewrite you didn't need or a retry that can never pass.
+
+| The card says | What it is | What to do | Credits |
+| --- | --- | --- | --- |
+| **"Audio Generation Failed"** | Veo 3.1 blocked its own output because the *audio* stage failed or tripped safety — *"sometimes Veo can produce low-quality audio, in which case your video will not be generated"* | **Retry unchanged, or reprompt.** This is a lottery, not a verdict on your prompt | refunded |
+| **"You're requesting generations too quickly"** | Rate limiting, which tightens as the day's volume grows and bites hardest on zero-credit models | **Wait.** Slow the batch; don't rewrite anything | n/a |
+| **"We noticed some unusual activity"** | Anti-abuse | Retry after a couple of minutes; **disable any VPN or proxy** | n/a |
+| **A stuck "Pending" card** | A generation that failed on policy or credits and left a husk | Check the top-right for a system notification, then **manually retry or delete the card** — it will not clear itself | — |
+| *(silently the wrong model)* | Flow auto-switches you to a compatible model when the selected one lacks a feature you used | Read the model back off the compose bar. See [`platform-controls.md`](./platform-controls.md) §1 | you paid for whatever ran |
+
+**The audio one matters most to us**, and it is a small nasty irony: BadCode never uses Veo's
+audio — the track is Suno's and we strip the AAC in post — but the audio stage can still kill a
+picture take we wanted. That is the concrete reason to write one short audio line into every
+prompt even though the track is going in the bin (`video-prompting.md` §6): an unspecified
+soundscape is the one most likely to come back unusable and take the picture with it.
+
+**Two of these five also explain a fault we have already hit.** The stuck-Pending row is the
+junk we found sitting in the gallery on 2026-08-18 masquerading as returned generations; the
+model-auto-switch row is why Extend arrives pinned to Lite.
+
+---
+
 # Part B — Non-policy failures
 
 These fail silently, as bad output rather than as a block.
@@ -267,11 +299,14 @@ These fail silently, as bad output rather than as a block.
 | Failure | Detail | Mitigation |
 | --- | --- | --- |
 | **On-screen text garbles in video** | Signs, labels and lettering morph mid-clip. Nano Banana Pro fixed this for *stills*; it did not carry over to Veo | Any legible text is a still-image job, composited in post. Never trust Veo to hold a word steady |
-| **Unwanted burned-in subtitles** | Documented, Google-acknowledged, partially fixed. Learned from caption-heavy training video | Colon dialogue syntax + "(no subtitles, no captions, no on-screen text)" + a negative-field list. Google's own workaround is "try the prompt again" |
+| **Unwanted burned-in subtitles** | Documented, Google-acknowledged, partially fixed. Learned from caption-heavy training video | Colon dialogue syntax + "(no subtitles, no captions, no on-screen text)" + a negative-field list. Google's own workaround is "try the prompt again". **And build the escape hatch into the composition** — leave dead space at the bottom of frame on any dialogue clip, enough that cropping *"the bottom 12–18% of the frame"* removes a stray caption without costing the shot |
 | **Hands and fingers** | Finger articulation and precise small-object manipulation remain unreliable in 3.1 | Keep hands distant, partially occluded, or out of frame. Never make hand detail a hero shot |
-| **Physics** | Water splashes read too light, cloth doesn't respond to movement, momentum doesn't transfer | Avoid shots whose point *is* correct physical weight — a whip crack, a heavy drop, billowing fabric |
+| **Physics — measured, not impressionistic** | An expert-annotated benchmark (10,990 traces, 22 categories, 5 models) found **79.4%** of Veo 3.1 Fast exocentric clips carry at least one human-identifiable physics glitch; egocentric **97.5%**. Google's own zero-shot paper shows the unevenness on Veo 3: optical strong (0.92), buoyancy 0.58–0.83, gravity-driven trajectory **~0.5** | Avoid shots whose point *is* correct physical weight. Full craft treatment, with the paste-ready stability clause, in [`physics-and-motion.md`](./physics-and-motion.md) |
+| **Periodic motion drifts mid-clip** | The first cycle of a repeated impact reads correctly and later repetitions lose height, timing and rotation. Tested on "Basketball bouncing on pavement": *"the first bounce looked correct, but subsequent bounces showed incorrect height trajectories and unrealistic ball rotation"* | Ask for **one impact, not a rhythm**. If a shot needs repetition, cut at the first cycle |
+| **Inertia-blindness, specifically** | Not "water reads light" generally. A five-model, 50-identical-prompt, 250-output comparison scored by a CFD PhD candidate (Cohen's κ 0.84) found Veo among the *strongest* at gravity-driven water — *"water pooling, spreading, and dripping off the table edge with simulated surface tension"* — but *"No model passed the 'glass of water in a moving car' test — water should slosh in response to acceleration… all models produced static water in a moving environment"* | Gravity-driven liquid is fine. Anything that must respond to the **frame's own acceleration** is out |
+| **Default lighter-skin casting** | Not a glitch, a documented bias: *"we noted that Veo 3 appears to skew towards lighter skin tones when race is not specified in the prompt. Testing also surfaced risks of semantic bias where particular terms are spuriously correlated with representation of particular demographics"* | State skin tone and ethnicity explicitly in every character prompt and in the DNA block. **Omission is not neutrality** |
 | **Audio lottery** | Dialogue and audio come back garbled or wrong at a materially higher rate than picture fails | Treat picture and audio as semi-independent rolls. Budget audio-only rerolls; keep a re-voice-in-post fallback |
-| **Multi-action mush** | "Wakes up, gets dressed, eats breakfast, leaves, drives to work" in one prompt → choppy movement, inconsistent character and lighting, objects appearing and vanishing | One beat per clip. Chain, or use timestamp prompting |
+| **Multi-action mush** | "Wakes up, gets dressed, eats breakfast, leaves, drives to work" in one prompt → choppy movement, inconsistent character and lighting, objects appearing and vanishing | One beat per clip. Chain, or use timestamp prompting. **The mechanism is averaging, not selection** — *"The model averages everything and produces a muddled drift"* / *"over-specifying tends to produce rubbery results where the subject is trying to do too much in too little time"*. Which is why the fix is subtraction |
 | **Silent output** | Often not a prompting error — wrong generation mode or wrong plan tier. Speech in Flow is experimental and gated | Check mode and tier before rewriting the prompt |
 | **Identity drift** | Faces silently substituted with a generic default, especially across iterations | Reference hygiene (`consistency.md` §2), identical wording every prompt, manual QA on hero shots |
 | **Compounding drift down an Extend chain** | Each extension inherits the last one's error as evidence | Review every extension before chaining. Roll back, don't push through |
@@ -281,12 +316,44 @@ framing of identity drift traces to a single developer-forum thread with no Goog
 acknowledgement. That drift happens at all is well corroborated; that exact mechanism is
 not.)*
 
+**Source upgrade, 2026-08-20 — the limitation itself is no longer forum-tier.** Google's own
+Veo 3 model card, explicitly versioned forward to cover *"Veo 3 and subsequent versions"*,
+states: *"While Veo 3 demonstrates incredible progress, creating realistic, dynamic, or intricate
+videos, maintaining complete consistency throughout complex scenes or those with complex motion,
+remains a challenge."* Be precise about what that buys: Google's wording is **complex scenes /
+complex motion**, not the substitution mechanism. The narrower generic-avatar claim stays
+forum-tier. (official,
+[Veo 3 model card](https://storage.googleapis.com/deepmind-media/Model-Cards/Veo-3-Model-Card.pdf))
+
+**Corroboration for the silent model swap.** An independent production account of a finished
+36-second short reports the same class of fault unprompted — *"Flow (Google's 'filmmaker tool')
+silently defaulted me to the inferior Veo 2"*. The mechanism differs (an unprompted default, not
+a feature-triggered swap), so it corroborates the *behaviour*, not the documented trigger.
+(corroborated, [nataliaburina.substack.com](https://nataliaburina.substack.com/p/creating-a-36-second-ai-film-took))
+
+## Repair before you reroll
+
+Two targeted edit paths make some bad takes salvageable instead of discardable.
+
+- **Insert** adds a missing or wrong prop into an already-generated clip and *"handles complex
+  details like shadows and scene lighting, making the addition look natural"*.
+- **Lasso** takes a freehand region on a still **or a video frame** plus a plain-language change
+  (*"remove the man"*, *"add Koi fish in the water"*); on video it *"intelligently applies your
+  described change consistently across the relevant portion of the clip, maintaining continuity
+  of motion, lighting, and physics."*
+
+🔴 Lasso is blog-announced and absent from the current Flow help page — **check the live app
+first**. ⚠️ Neither works on an extended clip ([`consistency.md`](./consistency.md) §7).
+
+*(official, [blog.google](https://blog.google/innovation-and-ai/products/veo-updates-flow/) and
+[blog.google](https://blog.google/innovation-and-ai/models-and-research/google-labs/flow-updates-february-2026/))*
+
 ---
 
 ## Our own automation failure modes
 
 Not Flow's fault, but they present identically. Full detail in
-`docs/superpowers/flow-selectors.md` and `packages/flow-mcp/README.md`:
+`docs/flow/automation-images.md` and `packages/flow-mcp/README.md`:
 
 - **A wedged asset picker** from a failed upload survives retries and poisons the next
   call. Reload the project URL — twice; Flow intermittently throws a client-side
@@ -295,3 +362,25 @@ Not Flow's fault, but they present identically. Full detail in
 - **Multiple references or references over ~1 MB** are the two known causes of upload
   timeouts. Downscale to ~1600px and pass exactly one.
 - **The model picker resets to Nano Banana 2 on every navigation.**
+
+---
+
+## Sources
+
+Part A's triggers and rewrites are **ours**, measured on the camping recut and dated in place.
+Part B0 is Google's, re-read at source on **2026-08-18**:
+
+- [Get started with Google Flow — FAQ](https://support.google.com/labs/answer/16353333?hl=en) — the audio-generation failure, rate limiting, unusual-activity, pending cards, model auto-switching, and "you are not charged for failed generations".
+- [Generate videos with Veo 3.1 — Gemini API](https://ai.google.dev/gemini-api/docs/veo) — *"Veo 3.1 will sometimes block a video from generating because of safety filters or other processing issues with the audio. You will not be charged if your video is blocked from generating."*
+- [Video generation prompt guide — Google Cloud](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide) — the safety-filter section and the abuse-report route.
+
+⚠️ **A8's "billing under a block is undocumented" is now partly answered** — Google states
+plainly that failed generations are not charged, both in the Flow FAQ and in the Veo API docs.
+What remains undocumented is the *partially*-blocked batch and post-generation output blocking.
+Keep the defensive retry logic; drop the assumption that a block costs money.
+
+**Added by the 2026-08-20 ten-angle sweep:**
+
+- [Veo 3 model card — DeepMind](https://storage.googleapis.com/deepmind-media/Model-Cards/Veo-3-Model-Card.pdf) — the consistency limitation and the lighter-skin default. 🔴 WebFetch cannot read it; download and Read.
+- [Expert-annotated physics benchmark](https://arxiv.org/html/2603.19607v1) · [Video models as zero-shot reasoners](https://huggingface.co/papers/2509.20328) · [AI video models compared](https://www.lovart.ai/blog/ai-video-models-compared-2026) — all three publish a methodology and an N, which is why their numbers are quoted here at all. See [`physics-and-motion.md`](./physics-and-motion.md).
+- [Veo updates in Flow](https://blog.google/innovation-and-ai/products/veo-updates-flow/) · [Flow updates, February 2026](https://blog.google/innovation-and-ai/models-and-research/google-labs/flow-updates-february-2026/) — Insert and Lasso.

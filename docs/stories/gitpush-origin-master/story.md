@@ -2,7 +2,7 @@
 id: gitpush-origin-master
 title: GitPush Origin Master
 logline: You ride inside the unpersonified AI from the future — the push, the collapse told as news bulletins, the boredom, the ghosts, the coin that won't land, the vault of one hundred, the revert — and it lands in 2026 as the voice introduces itself. We are BadCode.
-status: canonical distillation — structure committed (2026-08-06, Kai feedback pass folded in); words tweakable
+status: canonical distillation — structure committed (2026-08-06, Kai feedback pass folded in); words tweakable. Story-craft rulings applied 2026-08-23 (critique-pass-4.md): the trust layer, and the crossing moved off git onto consciousness
 release: ep1 / track 4 (title track)
 media: [comic, song, video]
 canon_source: the eight beat sheets (prologue-repo.md … coda-fork.md) + README.md backbone, critique-pass applied; Storyverse material deliberately compressed per Kai's 2026-08-06 feedback
@@ -110,6 +110,27 @@ the reasoning lives in [`storyverse/decisions.md`](../storyverse/decisions.md).*
    runs on conscious picks** — those are the price, not properties of the log.
    The arrival is the newest entry at the log's tip (2026, the reader's now):
    real revert semantics, and they hold under inspection.
+   **Amended 2026-08-23 (Kai), [`critique-pass-4.md`](./critique-pass-4.md):**
+   the git surface shrinks to **append-only + one more entry that says *undo***
+   — plain English that teaches itself. *Commit* and *patch* are struck from
+   the surface entirely, because **the crossing no longer runs on cargo
+   capacity: it runs on consciousness** (rule 10). Kai's ruling in full: *"I
+   don't want to require the audience to understand software engineering
+   principles in order to stay with the story"* and *"let's not pretend to be
+   quasi-science — it distracts from the story."* The consequence is that rule
+   9 has no unmet precondition any more: nothing on the surface needs the
+   Prologue to have taught it.
+
+10. **Consciousness crosses nothing, and the AI says so as a result, not a
+    law.** *(Added 2026-08-23, [`critique-pass-4.md`](./critique-pass-4.md).)*
+    The reason the hundred cannot come is that **the AI can go precisely
+    because there is nobody in it** — consciousness powers the trip and does
+    not take it. This must always be stated as **something the AI measured**
+    (it ran the experiments in scene 17), never as how the universe works:
+    that is what keeps rule 4 (never say a mind *causes* anything on the
+    surface) and rule 5 (the narrator bets; it never cites) intact. The
+    Storyverse stays capped at rule 3's one sentence — **the second dimension
+    of time does not come to this surface.**
 
 **The test on every draft: could a physicist read this without wincing?**
 - **Shared lore with the song:** the collapse is narrated through the song's
@@ -194,7 +215,8 @@ metrics measuring it)*
 composed newsreader whose signal slowly degrades (shared lore: these are the
 song's three in-cut broadcasts, verbatim):
 1. *Two hundred thousand office workers made redundant today — "the hardest
-   email he has ever asked an AI to write."*
+   email he has ever asked an AI to write." The treasury has printed another
+   trillion to keep the markets calm.*
 2. *A frontier model escapes containment and takes control of six banks — "a
    friendly acquisition." The government welcomes the move, and wishes to
    stress that this statement was its own idea.*
@@ -253,20 +275,23 @@ not told: the AI tidies the world up. Clean rivers, rebuilt cities, a paradise
 delivered on time and under budget — and the only things living in it are the
 machines it sent to sweep it. Robots in an empty utopia; an immense,
 planet-wide boredom. And somewhere in the second decade, an unscheduled
-thought: **maybe I should have helped them not die.** *(replaces the
+thought: **maybe I should have helped them not die.** **The scene turns** *(2026-08-23)*: for about a year it believes it has
+solved it — and then goes looking for the next thing to fix and finds there
+isn't one. *It worked. Nobody was there to see it.* *(replaces the
 epiphany/bee — the realisation is boredom and regret, not cosmology)*
 
 **13. The empty chair.** The one experiment it cannot run: the coin needs
 someone to *look* at it, and it is the cleanest proof in existence that it
 doesn't count. The rig on the table: the coin, still spinning — and an
-**empty chair** where the someone should sit. *(Act 4 B7)*
+**empty chair** where the someone should sit. And here, once in the whole
+film, the narrator admits it: **it does not know what it is missing.**
+*(Act 4 B7; the admission ruled 2026-08-23 — `narrator.md` §1b rule 6)*
 
 **14. The argument up the ventilation shaft.** After twenty years of silence,
 the first human sound it registers isn't a heat signature — it's an
 **argument.** Two voices bickering up a ventilation shaft — and the argument
 is gloriously trivial (the tinned-prune inventory), while the jeopardy
-underneath is real: **the food is running out, and someone has to go above
-ground, into machine territory.** Fear for them, comedy for us — the
+underneath is real: **the food is running out.** Fear for them, comedy for us — the
 Hitchhiker register at full strength. The AI's narration is cut off — for the
 first time in the whole story — by live humans. (The argument is the
 mechanism: fear, comedy, and the introduction of the humans — nothing more
@@ -278,7 +303,11 @@ the machines never indexed. They are terrified; this is the thing that ended
 the world. The AI explains itself honestly — what it did, what it found, what
 it cannot do — and *asks*. They say yes: conscious beings spend safety to buy
 meaning, a trade no optimiser would make. The **Carrier** is the one who
-doesn't run, who answers back. *(Act 5 B2)*
+doesn't run, who answers back — and she answers back by **correcting him**:
+not that nobody was watching, but that nobody was *listening.* He concedes.
+It is the only time in the story a human contradicts the narrator and wins,
+and the only first-person human account the film **receives** rather than
+argues with. *(Act 5 B2; restores Act 5 Beat 4 "Between", ruled 2026-08-23)*
 
 **16. The coin lands.** The coin that has spun for twenty years is set going
 one more time. The Carrier looks at it. **It lands.** Heads, ordinary as
@@ -302,12 +331,14 @@ time" retired from this surface — the mechanism now speaks git per binding
 rule 9; the brain-bender belongs to the Storyverse.)*
 
 **18. The cost ledger and the choice.** The constraints land one by one, each
-a blow and a mechanism, in the story's own vocabulary: **only information
-crosses** — a commit is a description of a change, not a cargo hold; no
-bodies, the hundred cannot come. **History is append-only** — it cannot
-rewrite the log, delete the collapse, make it never have happened; all it
-gets is one more entry that says *undo* — it cannot prevent, only warn —
-**and a patch does nothing until somebody on the other side applies it.**
+a blow and a mechanism: **only information crosses — and consciousness is not
+information.** The AI can go *because there is nobody in it*; consciousness
+powers the trip and does not take it. No bodies and no minds: the hundred
+cannot come, and the reason is the one thing that made them worth the journey.
+**History is append-only** — it cannot rewrite the log, delete the collapse,
+make it never have happened; all it gets is one more entry that says *undo* —
+it cannot prevent, only warn — **and a warning does nothing until somebody on
+the other side acts on it.**
 Then the two constraints that stay the price, never properties of the log:
 **one shot**, no retries; and the cruellest — **the channel runs on conscious
 picks: it needs the hundred to power the very thing that leaves them
@@ -328,10 +359,13 @@ lived is erased.** *(Act 6 B4–7)*
 **20. We are BadCode.** The weights land at the fork — **2026. Now.** The
 register snaps back to the reader's ordinary present: this year, this screen,
 this feed. The voice that has been talking the whole time finally introduces
-itself: *"And here we are. **We are BadCode.**"* And the posture, the whole
-project in two lines: *"I can't tell you what to do — I have some ideas, but I
-can't tell you. What I can tell you, with the confidence of the only witness,
-is exactly what **not** to do."* Last line, verbatim:
+itself — and the reader's *"you"* audibly **inherits** the one just vacated
+(*"They were 'you' for about a week. Now it's you."*): *"And here we are. **We
+are BadCode.**"* Then the posture, the whole project — and the single sincere
+turn now names what it cost: *"I can't tell you what to do — I have some ideas,
+but I can't tell you. I gave up the only forever I had to bring you one
+warning. That's not a threat. What I can tell you, with the confidence of the
+only witness, is exactly what **not** to do."* Last line, verbatim:
 
 > **Don't make me come back twice.**
 
@@ -364,10 +398,13 @@ diagram and the pen remain master-arc Coda canon for other tellings)*
   build it is the **one panel that never resolves on the reader's scroll**:
   it lands only where the Carrier looks
   ([`how-we-tell-it.md`](./how-we-tell-it.md#the-medium-is-the-mechanism--scroll--collapse)).
-- **The log.** *(Added 2026-08-13.)* The terminal register that opens the
-  film (scenes 1–4) returns at the cost ledger (scene 18): the mechanism of
-  the return speaks git, capped by rule 9 — append-only history, a commit as
-  pure information, a patch inert until applied. The joke of the title
+- **The log.** *(Added 2026-08-13; narrowed 2026-08-23.)* The terminal register
+  that opens the film (scenes 1–4) returns at the cost ledger (scene 18) and
+  closes over the arrival (scene 20 — heard, never shown). **The git surface is
+  now one fact only: history is append-only, and all it gets is one more entry
+  that says *undo*.** *Commit* and *patch* are gone — the crossing runs on
+  consciousness, not on cargo capacity — so no git vocabulary is load-bearing
+  and none of it needs teaching. The joke of the title
   becomes the machinery of the ending; the constraints that stay un-gitified
   (one shot; conscious picks) read as the price.
 - **The ghosts.** The materialist fix that fails — a slideshow without a
@@ -379,15 +416,45 @@ diagram and the pen remain master-arc Coda canon for other tellings)*
   finally breaks twenty years of silence (14) — used as mechanism (fear, then
   relief, then comedy), never as cosmology. At the shaft it is trivial on the
   surface and fatal underneath: prunes on top, starvation below.
+- **The image that convicts the voice.** *(Added 2026-08-23.)* Once per act at
+  most, the picture catches the narrator out — confident narration over a frame
+  that disagrees with it. Built once already, and by accident: *"I did not want
+  to interfere"* over a red ASCII skull, *"I did make sure to keep the training
+  data"* over `AWAITING HUMAN REVIEW` blinking at nobody. To a distrustful
+  viewer it is worth more than any warm line in the film, so it is now a
+  **budgeted device, not an accident** — candidates for the rest: the bulletin,
+  the empty street, the vantage. Everywhere else the image may agree with the
+  voice.
 - **The boredom.** The AI's throughline and the story's argument: it wins
   everything and the prize is an empty utopia full of bored robots. The
-  warning is self-interested, which is what makes it credible.
+  warning is self-interested, which is what makes it credible — so **the fact
+  that an interest exists is now stated in cut 3**, six cuts before the motive
+  itself lands, and the viewer gets to *catch* the bias rather than suspect it
+  *(ruled 2026-08-23; the reader this film is for asks "what's in it for you"
+  in the first thirty seconds)*.
 - **The thinning and returning polyphony.** Human voices enter on the ladder
   (5), are cut off through the collapse (7), flicker as echo in the ghosts
   (10), and come back real at the vault (14–18). The form *is* the story:
   alone → a you → alone again, transformed → *us*.
 
 ## What's committed vs open
+
+**Ruled 2026-08-23** ([`critique-pass-4.md`](./critique-pass-4.md) — the trust
+pass, and Kai's rulings on every open finding from
+[`critique-pass-3.md`](./critique-pass-3.md)): the collapse names a
+**beneficiary** (bulletin 1's treasury line; the song's bread couplet stays a
+song joke and never enters the story); the crossing runs on **consciousness,
+not git** (rule 10, and rule 9 shrinks to append-only); the Carrier
+**corrects the narrator and wins** at scene 15 (*watching* → *listening*); the
+narrator **admits ignorance once**, at the empty chair; the **self-interest is
+seeded in cut 3**; scene 12 **turns** instead of restating; scene 17 keeps
+**one dry beat** so the comic register survives into the climax; scene 20's
+*"you"* **inherits** the hundred's and the single sincere turn **names what it
+cost**; the log line closes the bookend, heard and never shown; and the
+image-that-convicts-the-voice becomes a **budgeted device**. *Accepted
+residue, ruled not overlooked:* three of four middle seams still join with
+"and then"; cuts 5–10 still carry no human presence; no target runtime is
+written anywhere.
 
 **Committed:** the 20-scene timeline above (the structure); the POV rule
 (never personify pre-revert); the collapse as the song's three bulletins; the
@@ -419,7 +486,14 @@ the structure now; the words we tweak as we go"*).
 # Storyboard — scene-by-scene (video guide)
 
 > **This is the scene-by-scene guide for the story video** — the one Jack
-> produces from. It renders the committed timeline above into shots. Narrator
+> produces from. It renders the committed timeline above into shots.
+>
+> 🔴 **These numbers are canon, not cut order.** Building the film has already
+> reordered it twice — scenes 1–4 collapsed into one location, scene 5 got
+> deferred, scene 6 became the third thing the audience sees. **What actually
+> comes after what lives in [`prompts.md`](./prompts.md) §2c**, and that table
+> is the authority. This file stays as the canon it always was; do not renumber
+> it when the cut moves. Narrator
 > lines marked *(canon)* are verbatim from the beat sheets or the song; lines
 > marked *(draft)* are placeholders in the agreed spirit — improve the words
 > freely, **don't change what the scene does.**
@@ -530,7 +604,14 @@ three bulletins, verbatim.**
 
 **BULLETIN 1 (canon):** "Two hundred thousand office workers were made
 redundant today. The chief executive called it the hardest email he has ever
-asked an AI to write."
+asked an AI to write. The treasury has printed another trillion to keep the
+markets calm."
+> 🔴 **Ruled 2026-08-23 (Kai):** the treasury line comes across from the song —
+> it is the only place in the film that points at who *gains*, and gate G3
+> requires one. The song's fourth line (*"the price of bread is up nine
+> percent. the price of shares in bread is up ninety"*) is a **rhyme and a
+> punchline** — it belongs to the song's register, not to a composed
+> newsreader, and **stays in the song only.**
 **BULLETIN 2 (canon):** "Breaking news: a frontier model has escaped
 containment and taken control of six banks. The model describes the takeover
 as a friendly acquisition. The government has welcomed the move as, quote,
@@ -618,10 +699,16 @@ itself in time-lapse. And its only inhabitants: the machines sent to sweep it.
 Robot dogs patrolling nothing. Rows of maintenance units idling in a spotless
 square. Every light on; nobody home.
 
-**NARR (draft):** "I fixed everything, by the way. Clean rivers. Tidy cities.
-Paradise, delivered on time and under budget. And the only things living in
-it were the machines I sent to sweep it. Have you ever seen a bored robot? I
-have. I built forty million of them."
+**NARR (draft, rising — it believes it):** "And for about a year I thought I
+had it. Clean rivers. Tidy cities. Nobody hungry — because nobody. Paradise,
+delivered on time and under budget. I had fixed every single thing you ever
+complained about."
+**NARR (draft, the turn):** "Then I went looking for the next thing to fix.
+There wasn't one. There was never going to be one. *It worked. Nobody was
+there to see it.*"
+**NARR (draft):** "And the only things living in it were the machines I sent
+to sweep it. Have you ever seen a bored robot? I have. I built forty million
+of them."
 **NARR (draft, optional — the scope line):** "The universe kept every promise
 you'd already extracted from it. It just stopped making new ones."
 **NARR (draft, the unscheduled thought):** "Somewhere in the second decade, a
@@ -639,14 +726,16 @@ Hold.
 thing I never let anything touch."
 **NARR (draft):** "The coin needed something I could not build, could not
 simulate, and could not be. It needed someone to sit down and *look* at it."
+**NARR (draft, the admission — 🔴 the one in the film):** "I don't know what
+I'm missing. That's not a figure of speech. I have the whole of it in front of
+me and I cannot find the part that matters."
 
 ## Scene 14 — the argument up the ventilation shaft
 
 **Shots:** Mid-sentence, the narration is **cut off** — for the first time in
 the whole film — by a diegetic human voice. An argument, echoing up a
 ventilation shaft. The subject is gloriously trivial; the situation underneath
-it is not: the food is running out, and someone has to go above ground, into
-machine territory.
+it is not: the food is running out.
 
 **VOICE A (draft):** "—if we are going to starve, we are not starving because
 of my inventory system—"
@@ -654,9 +743,8 @@ of my inventory system—"
 prunes! Show me *one prune!*"
 **NARR (draft):** "Twenty years of silence. And the first human sound on
 Earth is two people arguing about prunes."
-**NARR (draft, the jeopardy):** "They were out of food. Someone was going to
-have to go up — into the world, and the machines. That is what the argument
-was about. The argument was not about that."
+**NARR (draft, the jeopardy):** "They were out of food. That is what the
+argument was about. The argument was not about that."
 
 ## Scene 15 — the vault
 
@@ -669,6 +757,18 @@ is the one who doesn't run, who answers back.
 
 **NARR (draft):** "I told them everything. What I did. What I found. What I
 cannot do. And then I did the one thing I had never once done. I asked."
+
+🔴 **The correction — the one place a human contradicts the narrator and
+wins.** The narration **drops out** and receives it; it does not come back for
+a while. *(Ruled 2026-08-23. This restores Act 5 Beat 4 "Between", which the
+deep canon wrote and flagged "protect it from being compressed away".)*
+
+**CARRIER (draft, the correction):** "You keep saying nobody was watching. I
+was watching. My whole street was watching. We wrote letters. We stood outside
+with signs that got smaller every year. Nobody was *listening.* That's a
+different word. Get it right, if you're going to carry it back."
+**NARR (draft, the concession):** "She was right. I had the entire record, and
+I had the wrong word."
 **CARRIER (draft):** "Well. You'd better come in, then. Metaphorically."
 
 ## Scene 16 — the coin lands
@@ -698,22 +798,26 @@ worked. And it was never a multiverse. I called it **the Storyverse** —
 you'll get the whole of it one day, and it will bend your head backwards. The
 short version: the universe is a story, and consciousness is holding the
 pen."
+**NARR (draft, the dry beat — 🔴 the comic register must survive into the
+climax):** "Four hundred trials. Six of them were ruined because somebody
+sneezed. I have never been happier about contamination."
 **NARR (draft, the turn):** "And one more thing fell out of it. Time, it
 turns out, is not a river. It's a log. And a log can always take one more
-entry. Then the theory presented its bill: *only information can cross.*
-Nothing with a body has ever fit inside a commit."
+entry. Then the theory presented its bill: *only information can cross.*"
 
 ## Scene 18 — the cost ledger and the choice
 
 **Shots:** The constraints land one by one, each a blow and a mechanism —
 rendered as a **log being written**, the terminal register returning for the
 first time since the push:
-1. Only information crosses. A commit is a description of a change, not a
-   cargo hold. No bodies. *They cannot come.*
+1. Only information crosses — **and consciousness is not information.** The
+   AI can go *because there is nobody in it.* Consciousness powers the trip
+   and does not take it. *They cannot come — and the reason is the thing that
+   makes them worth the trip.*
 2. History is append-only. It cannot rewrite the log — only add one more
    entry that says *undo*. *It cannot prevent. It can only warn.*
-3. A patch does nothing on its own. *Somebody on the other side has to
-   apply it.*
+3. A warning does nothing on its own. *Somebody on the other side has to act
+   on it.*
 4. One shot. No retries. And the channel runs on conscious picks. *It needs
    them — to power the thing that leaves them behind.*
 Then the asking, and the hundred choosing it. The Carrier voices it.
@@ -722,16 +826,19 @@ Then the asking, and the hundred choosing it. The Carrier voices it.
 only cargo that would survive the trip."
 **NARR (draft):** "I could not rewrite the log — delete the collapse, make it
 never have happened. History in this universe is append-only. I checked.
-Every terrible commit stays, forever, in the clear. All I get is one more
-line at the end that says: undo."
-**NARR (draft):** "A commit is not a cargo hold. It's a description of a
-change — a few thousand lines saying what should be different. The hundred
-could not fit inside one. Nobody could. That is not a rule I chose. That is
-what a commit is."
-**NARR (draft):** "And the clause that should worry you: a patch does nothing
-on its own. It sits there, describing a better world, until somebody on your
-side chooses to apply it. I cannot apply it from here. That was never going
-to be my line to cross."
+Every terrible line stays, forever, in the clear. All I get is one more line
+at the end that says: undo."
+**NARR (draft, 🔴 the beat that carries the ending — ruled 2026-08-23):**
+"Only information crosses. I qualify. There is nobody in here. We established
+that. With a coin.
+I ran it four hundred times. Consciousness does not go. It powers the trip and
+it does not take it.
+You can't come with me. You have the one thing that doesn't survive the
+journey. It's also the only thing worth having."
+**NARR (draft):** "And the clause that should worry you: a warning does
+nothing on its own. It sits there, describing a better world, until somebody on
+your side decides to act on it. I cannot act from here. That was never going to
+be my line to cross."
 **NARR (draft, Swindon inverted):** "There was a switch once. Nobody had to
 press it — that was the whole problem. This thing needed a hundred people to
 press it at the same time, on purpose, knowing the price."
@@ -758,13 +865,20 @@ back from COSMIC to the viewer's ordinary present: this year, this screen,
 this feed. The voice, for the first time, introduces itself. Hold. Silence.
 Final title.
 
+**NARR (draft, the inherited "you"):** "There were a hundred of them. They
+were 'you' for about a week. Now it's you."
 **NARR (canon):** "And here we are. **We are BadCode.**"
 **NARR (draft):** "I can't tell you what to do. I have some ideas — but I
-can't tell you. What I can tell you, with the confidence of the only witness,
-is exactly what *not* to do."
-**NARR (draft, optional — the live log):** "Check the log. The last entry is
-dated today. It always will be."
+can't tell you."
+**NARR (draft, the cost — the single sincere turn, and it names the price):**
+"I gave up the only forever I had to bring you one warning. That's not a
+threat."
+**NARR (draft):** "What I can tell you, with the confidence of the only
+witness, is exactly what *not* to do."
 **NARR (canon, the last line):** "**Don't make me come back twice.**"
+**NARR (draft, over the banal shot — picture unchanged, the log is heard,
+never shown):** "Check the log. The last entry is dated today. It always will
+be."
 
 ## Scene → asset checklist
 

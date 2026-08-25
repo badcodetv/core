@@ -4,7 +4,7 @@
 > branch `feat/flow-automation-spike` (the "Magic Money Tree" build) into a
 > repeatable, gated skill — the way `superpowers:brainstorming` prescribes a
 > workflow. See [[flow-automation-integration]] and
-> `docs/superpowers/flow-selectors.md`.
+> `docs/flow/automation-images.md`.
 
 ## Goal
 
@@ -117,7 +117,7 @@ Per the locked decision, image stages **require Flow connected** and ensure it:
    --resume` so `.mcp.json` loads; confirm a signed-in screenshot.
 3. Once connected, always auto-generate.
 
-Generation/harvest mechanics follow `docs/superpowers/flow-selectors.md` — the
+Generation/harvest mechanics follow `docs/flow/automation-images.md` — the
 agent-driven prompt, the per-panel routine (fill prompt → submit → wait on
 completion → identify newest `getMediaUrlRedirect` image → resolve the signed CDN
 URL via `page.request` → `curl` to disk), and the Flow **Character** workflow.
@@ -132,7 +132,7 @@ URL via `page.request` → `curl` to disk), and the Flow **Character** workflow.
   `getMediaUrlRedirect` image → resolve signed URL via `page.request` → `curl` to
   disk → write record), including multi-character casting.
 - **Points at (for depth, not duplicated):** `docs/storytelling.md`,
-  `docs/voice.md`, the `new-story` skill, `docs/superpowers/flow-selectors.md`,
+  `docs/voice.md`, the `new-story` skill, `docs/flow/automation-images.md`,
   and `packages/comic/AUTHORING.md`.
 
 ## Resume & progress

@@ -92,7 +92,7 @@ of these is **one call, no browser steps**:
 | `flow_character_info` | Sets the free-text note Flow's scene agent reads. |
 
 Full selector map and the failure modes behind each fix:
-[`docs/superpowers/flow-selectors.md`](../docs/superpowers/flow-selectors.md)
+[`docs/flow/automation-images.md`](../docs/flow/automation-images.md)
 ("Characters, re-mapped live 2026-08-11"). Pure bits are unit-tested in
 `compose.ts` / `compose.test.ts`.
 

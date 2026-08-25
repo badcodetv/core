@@ -272,6 +272,12 @@ clone's source material.** Worth checking whenever a lead is being asked to do t
 Added 2026-08-08 from GPOM's D&B cut; **corrected the same day** after an adversarial review caught
 the first version overstating it.
 
+> **Bounded 2026-08-20 by Thread 4 §1 — read that before applying this at scale.** Everything below
+> was observed on a **four-line** chorus. Camping tried the same lever across a **sixteen-line
+> verse** and it failed: parentheses state a position in the *mix*, not an identity, so a section
+> with no lead line to answer gets the lead filled in line by line. **Short answer lines against a
+> present lead — not a whole verse.**
+
 The observed facts, across many takes: with **all four** chorus lines parenthesised and a section
 cue explicitly silencing the lead, the crowd took the three short slogan lines reliably — and the
 fourth line, the only long syntactically-complete clause, went to the *lead* voice anyway, every
@@ -382,3 +388,232 @@ hundreds of untrained ragged voices, massed like a football terrace`) rather tha
 midpoint. And count the nouns: a single choral noun (`choir`, `congregation`, `cathedral`, `hall`,
 or the verb `singing`) will out-vote several rough adjectives, especially when an orchestra elsewhere
 in the prompt is pulling the same way.
+
+---
+
+## Thread 4 — the Camping duet (2026-08-20)
+
+Context: "Camping" is a two-hander — Bob (weathered Scouse) and Tarquin (posh London) — released
+with a saved Voice attached, which made both men the same performer. This thread is the re-cut that
+tried to separate them. **Round 1 generated and failed on three counts, which makes most of what
+follows *tested* rather than asserted** — rare in this corpus, and it is why these entries outrank
+the blog-sourced material in `files/lyricist-playbook.md` §4 where they disagree.
+
+### 1. Parentheses are a mix-position mechanism, not a name tag — and they don't scale to a verse
+
+**This bounds Thread 3 §6.** That entry established the lead/paren seam as per-line and called
+parens "the strongest per-section casting lever the platform has." It was derived from a **four-line**
+GPOM chorus. Camping tested the same lever across a **sixteen-line verse** and it broke down: the
+voice ping-ponged *within* the verse instead of holding Tarquin for it.
+
+The mechanism explains why. Parentheses mean **"backing singer standing slightly back from the
+mic"** — Suno drops the level, adds spatial reverb, shifts the pitch. It is a statement about
+*position in the mix*, not about *identity*. So a section of nothing but parenthesised lines is a
+section of nothing but backing lines, and the lead slot — which does not go away — gets filled by
+whatever is nearest, in and out, line by line.
+
+**The working rule:** the paren slot holds a **short answer line against a present lead**. It cannot
+carry a whole verse that has no lead to answer. If a character needs a section to themselves,
+parentheses are the wrong tool, and reaching for them harder makes it worse (§3).
+
+### 2. Regional accent does not render. Contrast on pitch and texture instead
+
+A detailed Scouse spec — adenoidal Merseyside drawl, softened hard consonants, rising sing-song
+line ends — produced **no accent whatever**. This is Thread 2 §1 again (the genre tag owns the
+vocalist pool) with accent added to the list of weak words alongside age: *describable, not
+summonable.*
+
+The replacement, and it is the practical takeaway of the whole thread — **cast on axes the model
+renders readily**:
+
+| Axis | Why it works |
+|---|---|
+| **Pitch** — low/deep vs higher/light | The most mechanical contrast available; renders near-always |
+| **Texture** — gravelly, torn, smoke-worn vs clean, crisp, smooth | Ordinary timbre vocabulary, well represented in training data |
+| **Delivery mode** — rapped on the grid vs spoken behind the beat | A category difference, not an adjective difference (Thread 3 §3) |
+| **Room** — close and dry vs wide and reverberant | Treatment and distance are casting, not mixing (Thread 3 §4) |
+
+Four axes stacked put two solo adult men genuinely far apart without ever naming a region. Accent
+is a thing you write in the **canon file** and hear in your own head; it is not a thing you order
+from Suno.
+
+### 2a. But nationality rides on the *genre tag* — and stripping accents can strip it by accident
+
+**The trap that follows directly from §2, and we walked into it.** Round 2 removed every accent word
+and both men came back **American**.
+
+The released take had carried `dark neurofunk with **UK grime influence**` in the genre stack.
+Round 2's rewrite dropped it while cleaning out the accent language. The Britishness had never been
+coming from "adenoidal Merseyside" or "clipped RP" at all — it was coming from the **genre**, which
+owns the vocalist pool (Thread 2 §1). Take out the UK genre and the pool reverts to its default,
+which is American.
+
+Three rules:
+
+- **Nationality is a genre lever, not an adjective lever.** `UK grime`, `UK garage`, `grime`,
+  `UK hip hop` are the strongest British-vocal controls available, because they are pool-selecting
+  words. `British` is a weak adjective by comparison — useful as reinforcement, useless alone.
+- **Front-load the UK genre**, and let `British` repeat several times after it. Redundant
+  reinforcement is a real technique for a term being ignored.
+- **When you strip a failing spec, check what else it was quietly holding up.** The accent language
+  was dead weight *and* load-bearing at the same time: dead for the region, load-bearing for the
+  nation, because the genre tag was sat in the same clause.
+
+### 2b. A genre tag carries a whole *performer*, not one attribute — pick the tradition, not the nationality
+
+**The trap on the other side of §2a, walked into one round later.** `UK grime` fixed the
+nationality and immediately miscast both men: Camping came back sung by young Black British MCs,
+when Bob is a weathered fifty-something white homeless Merseyside man and Tarquin a late-forties
+white City banker — both of whom **we have comic panels of**.
+
+The rule: **a vocalist pool is a person, not a property.** Accent, age, class and race arrive
+together as one package, and choosing a genre for one of them means accepting its defaults for all
+the rest. There is no such thing as borrowing a genre's nationality without its performer.
+
+**So choose the genre whose default performer *is* your character.** For a middle-aged white
+British man ranting over a beat, `British post-punk spoken word` is the pool — every bit as British
+as grime, and the right bloke. It also keeps our own **cast performance traditions, not
+demographics** rule (Thread 3 §7) intact: naming a tradition the model has heard performed does the
+casting precisely, and no demographic adjective ever has to go in the prompt.
+
+**A starter map for BadCode's British registers:**
+
+| Character | Pool that casts them | Not |
+|---|---|---|
+| Weathered working-class British bloke, 40s–60s | British post-punk spoken word; Britpop snarl; British performance poet | grime, drill, road rap — young MC by default |
+| Posh / establishment British | BBC English, newsreader, after-dinner speaker | "posh" alone, `clipped RP` — register words without a tradition |
+| Young British street voice | grime, UK drill, road rap | — this is where grime is *correct* |
+
+**Cross-medium corollary, new and load-bearing for us:** when a character already exists as an
+**image** — a comic panel, a character sheet — the voice has to match the picture, and "sounds
+British" is not the bar. Check a generated voice against the character sheet, not just against the
+style prompt. A song and a comic that disagree about who someone is will read as two different
+characters.
+
+**Class register survives where regional accent doesn't** — name it as a *performance tradition* the
+model has heard: `BBC English`, `newsreader`, `after-dinner speaker` land where `clipped RP` and
+`Scouse` don't. This is Thread 2 §4's "name a performance tradition" rule, applied to class instead
+of to genre.
+
+### 3. More casting markup makes casting worse
+
+Round 1 answered a casting problem by adding casting markup to every line. That is the exact
+failure the external guidance names — *"adding more labels can sometimes make a duet worse"* — and
+it is now corroborated by a take we generated. **Treat dense per-line voice markup as a smell, not
+a fix.** One fixed short label per character, repeated **identically** (`[low gravelly voice]`,
+`[high clean voice]`), beats a freshly-worded description each time: varied wording reads as a new
+character.
+
+### 4. Cue density has a tempo cost — the playbook's warning gets its first observation
+
+Round 1 carried a bracket cue roughly every two lines and **broke into double time** for a stretch.
+Two suspects, not separated: syllable cramming (the documented machine-gun rush, `lyric-craft.md`),
+and cue density chopping a verse into micro-sections that each re-decide their own phrasing.
+
+This matters because `files/lyricist-playbook.md` §3 warns against dense multi-clause cues and is
+flagged there as *contradicting BadCode house practice*. **It now has a supporting observation.**
+The house style isn't overturned — GPOM's dense cues produced a track we like — but "cue overload"
+graduates from a named suspect to a suspect with a case, and **a tempo fault is now a reason to
+strip cues before anything else.** `[Beat Transition]` between sections is the cheap reset.
+
+### 4a. A tempo fault is usually a *consistency* fault, and the fix is line breaks
+
+Round 2/3 came back rushed, with lines "not starting at the start of the bar". Measuring the sheet
+turned a vague complaint into a number: **only 5 of 48 lines were over the density ceiling.** The
+problem was the **spread**, not the speed.
+
+The rule doing the damage is in [`files/lyric-craft.md`](./files/lyric-craft.md): the first line of
+a section sets the bar length, and every later line is force-fit into that slot. Camping's bridge ran
+**9 → 15 syllables** against a 12-syllable opening line, so the long ones crammed. Cram is what
+"rushed and off the bar" sounds like.
+
+**Measure before prescribing.** Count syllables per line, per section, and look at the *range*. A
+section with a spread of 6+ has a timing problem waiting whatever its mean. This takes one throwaway
+script and it converts an unactionable note ("feels rushed") into a list of specific lines.
+
+**Line breaks are the tempo control, and they change no words** — which makes them the right lever
+whenever a lyric is locked (a released track, someone else's words, a re-cut). Splitting a
+15-syllable line into 7 + 8 halves the density *and* buys a second phrase. Reach for this before
+commas and long before the Style box.
+
+**The asymmetry that decides which way to err:** a short line gets **stretched**, which sounds
+deliberate; a long line gets **crammed**, which sounds broken. Break shorter when unsure.
+
+**Also a stress problem, not only a density one.** Lines opening on a run of unstressed function
+words (*"and you looking to…"*, *"in having the manager…"*) are pickups: the model starts them early
+or crams them to force the stress onto the downbeat. This is why lines inside the safe band still
+land off the bar.
+
+**Multiple spaces are not a pause mechanism** — worth knowing because it is an intuitive thing to
+try. The vocabulary that works is comma / full stop / line break / ellipsis / in-word hyphen.
+
+**The ceiling is honest: the sheet gets phrasing close, Studio gets it exact.** Warp markers +
+Quantize (and `Clip Settings → On Beat`) are the post-generation answer to a line that will not sit
+on the grid. Re-roll first — phrasing varies between takes on an identical sheet.
+
+### 5. Ask whether it is actually a duet before reaching for duet machinery
+
+The most useful realisation of the thread, and it is structural rather than technical. Camping
+*looks* like a two-hander but is really **two solo verses separated by a 32-bar instrumental drop**,
+plus one traded bridge. The verses never overlap — so there was never a two-voices-in-one-section
+problem to solve there, and every lever spent on it was wasted.
+
+**Check the song's shape first.** Where two characters share a section, you have a casting problem.
+Where they merely take turns across an instrumental, you have **a seam you can cut on** — and
+cutting is strictly better than casting, because the voices never share a generation and there is
+nothing to average.
+
+Corollary: a genuinely traded section (Camping's bridge) is *short alternating complete lines*,
+which is the one duet shape the external guidance calls easiest to stabilise. So the hard-looking
+part is the tractable part, and the easy-looking part is where you cut.
+
+### 6. A saved Voice is right for one-voice-per-generation, and wrong for anything else
+
+The released take's root fault. A Voice binds the lead slot for the whole track and has **no
+section scope** (Thread 3 §1) — external sources put it plainly: *"a Persona is not a separate
+singer lane."* Attaching one to a two-hander guarantees one performer.
+
+But the inverse is the good news: once the song is **cut into one generation per character**, a
+saved Voice per character is exactly the supported case and the strongest version of the plan.
+**The Voice wasn't the wrong tool; it was the right tool on the wrong unit of work.**
+
+### 6a. Arrangement is casting's neighbour — hold the band back the way you hold a voice back
+
+Not a voice finding, but it surfaced in the same thread and the mechanism is the one
+this file keeps rediscovering: **naming a thing puts it in the track, and describing a
+quiet version of it still names it.**
+
+Camping's orchestra was asked to arrive at the drop. It arrived at bar one — twice —
+because (a) a strings paragraph sat in **My Taste**, which has no section scope, and
+(b) the lyric sheet carried a lead-in cue, `[one low cello note holds underneath,
+building into the drop]`. The lead-in reads as *these instruments exist*, and existence
+defaults to bar one.
+
+**The fix that worked was subtraction:** strings removed from My Taste entirely, the
+lead-in cue **deleted** rather than moved, and the entrance stated once in the Style box
+and once in the drop cue. **Delete the mention; don't describe the absence.**
+
+The second half of it is that a reveal needs something to reveal. Camping's verse-one
+header asked for `amen break + deep sub`, so the verse and the drop were the same
+weight and the drop had nowhere to go. The arrangement now climbs in **gears** — no
+drums → loose kit with no sub → full weight *and* the strings together — so one moment
+carries two reveals.
+
+Full detail, with the transferable recipe, is in
+[`files/suno-tag-mechanics.md`](./files/suno-tag-mechanics.md) under the unity sentence.
+
+### 7. What we still don't know
+
+Round 2 (texture contrast, zero parentheses, one cue per section) is **drafted and ungenerated** —
+see [`../stories/camping/songs/camping.md`](../stories/camping/songs/camping.md). Open
+questions it should settle: whether stripping cues fixes the tempo; whether the four-axis contrast
+separates two solo verses without any slot mechanism at all; and what stripping the cues costs in
+delivery. Update this thread with the answers.
+
+### Sources
+
+External guidance quoted above, harvested 2026-08-20:
+[multiple Personas in one song](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/can-suno-use-multiple-personas-duets-bands-ai-casts) ·
+[duet & harmony guide](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/duet-harmony-theme-meta-tags-suno) ·
+[brackets, vocal tags & lyric formatting](https://paddystudio.com/blog/suno-song-structure-and-vocal-tags/).
+All assertion-grade; the round-1 failures they agree with are ours and are tested.

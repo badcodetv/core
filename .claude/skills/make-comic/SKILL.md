@@ -17,6 +17,11 @@ duplicate them.
   & economics first; story over sermon). All prose and captions match it.
 - `docs/storytelling.md` — the method: one load-bearing idea, real grounding,
   beats. Don't reinvent it.
+- The **`story-craft`** skill — Build mode for Stage 1 (the causal theme sentence, the
+  costed object, the ending first) and Stage 4 (beats joined by but/therefore; every
+  panel carries weight alone; the duo-specific caption test; the one long gutter; the
+  one silent panel — `docs/story-craft/forms.md` §1). Run `checklist.md` §0 (the gates)
+  and §6 (comic rows) before Stage 4 is approved.
 - The **`new-story`** skill — captures the `docs/stories/<story>/` canon. Stages 1, 2, 4
   delegate to its method.
 - `packages/flow-mcp/README.md` — the `flow` MCP server (tools, prerequisites).
@@ -88,8 +93,8 @@ Per image: the art-direction skill plans + critiques the prompt, calls
 `flow_generate_image({ prompt, outPath })` (or `flow_refine` to correct in-session),
 and records the prompt + revision in `docs/stories/<story>/storyboard/pNN.md`.
 
-Prerequisite: `./scripts/flow-chrome.sh` running and logged in (see
-`packages/flow-mcp/README.md`). Do NOT puppeteer Flow via the Playwright MCP by hand.
+Prerequisite: **invoke `flow-automation`** — it brings the browser up, opens the project, and
+owns every failure mode. Do NOT puppeteer Flow via the Playwright MCP by hand.
 
 For **every named character**: invoke **`badcode-art-direction`** with the character's
 `sheet` description; harvest the portrait to `docs/stories/<story>/characters/img/<name>.jpg`,
@@ -113,6 +118,11 @@ record** below.
 ---
 
 ## Stage 4 — Storyboard
+
+> **Craft gate:** before asking for approval, run the `story-craft` pass on the storyboard —
+> gates (`docs/story-craft/checklist.md` §0), structure (§2: but/therefore, the turn per
+> scene, the midpoint) and the comic rows (§6.1–6.4). Captions that only confirm what the
+> panel shows are cut here, not after the images are fired.
 
 Discuss the panel sequence (beats → panels). Write `docs/stories/<story>/storyboard/index.md`
 (an overview: numbered panels, each with a one-line intent and which characters
@@ -152,8 +162,8 @@ Per image: the art-direction skill plans + critiques the prompt, calls
 `flow_generate_image({ prompt, outPath })` (or `flow_refine` to correct in-session),
 and records the prompt + revision in `docs/stories/<story>/storyboard/pNN.md`.
 
-Prerequisite: `./scripts/flow-chrome.sh` running and logged in (see
-`packages/flow-mcp/README.md`). Do NOT puppeteer Flow via the Playwright MCP by hand.
+Prerequisite: **invoke `flow-automation`** — browser up, project open, failures owned.
+Do NOT puppeteer Flow via the Playwright MCP by hand.
 
 **Budget this stage for policy blocks.** Flow's usage filter silently blocks a large
 share of prompts, and over CDP a block is indistinguishable from a timeout — on the
@@ -192,59 +202,11 @@ tier (measured 2026-08-12), so twenty slides is minutes, not an afternoon.
 
 ### The unattended loop (how to actually leave it running)
 
-A batch does not fail all-or-nothing. It returns `{ items, failed, partial }`, and the two
-failure kinds mean opposite things:
+**`flow-automation` §5 owns this** — the resume mechanic, the two failure kinds that mean
+opposite things, and the three-round stop rule. Read it before leaving a batch running.
 
-- **`POLICY_BLOCKED` is about that one prompt.** The batch records it and carries on. It leaves
-  a hole, and the hole is a prompt that needs **rewriting, never retrying** — the same prompt
-  will be blocked forever.
-- **Anything else** (`TIMEOUT`, `SUBMIT_FAILED`, a raw Playwright error) is about the
-  **session**. The batch stops there deliberately, because a wedged page will fail the next
-  prompt too.
-
-So the loop is:
-
-```
-round 1: flow_generate_batch({ prompts, outDir, resume: true })
-         │
-         ├─ failed is empty ────────────────────────────────► done
-         │
-         ├─ POLICY_BLOCKED entries ──► rewrite those prompts in place
-         │                             (badcode-art-direction → "Usage-policy blocks")
-         │                             then re-run the SAME list, resume: true
-         │
-         └─ any other code ──────────► the session is hurt, not the prompt.
-                                       flow_status, re-open the project, re-run
-                                       the SAME list, resume: true
-```
-
-**`resume: true` is what makes re-running free.** It skips any prompt whose output file is
-already on disk, so round 2 only pays for the holes. Same prompts, same `outDir`, every time.
-Deleting one bad image and re-running regenerates exactly that one.
-
-**Stop after three rounds** and report what is still missing. A prompt that survives two
-rewrites is a storyboard problem, not a prompting problem — take it back to the human.
-
-⚠️ **Never re-run a `POLICY_BLOCKED` prompt unchanged**, even in a later round. It cannot pass,
-and it costs a full turn-timeout to learn that again.
-
-⚠️ **Twenty prompts per call.** Longer lists get chunked; each chunk is its own loop.
-
-⚠️ **Credits do not roll over and there are no top-ups** (`docs/flow/platform-controls.md` §2).
-A long run can hard-stall until the billing cycle turns. We have never mapped what Flow's UI
-does at zero credits, so expect it to look like a `TIMEOUT` — if a run starts failing at the
-session level and `flow_status` is healthy, check the credit balance by eye before retrying.
-
-**Budget this stage for policy blocks.** Flow's usage filter silently blocks a large share of
-prompts, and over CDP a block is indistinguishable from a timeout — on the camping recut it was
-over half of all generations. Better than any retry loop: avoid the triggers when *writing the
-storyboard*. Real brand names and legible wordmarks, likeness phrasing, stacked destitution,
-institutional text. If a sign or headline is load-bearing for a beat, plan it as a comic text
-overlay rather than baked into the image. Rules + rewrite table: **`badcode-art-direction`**.
-
-Precondition: the Flow browser is up and logged in (`./scripts/flow-chrome.sh`, then
-`flow_status` → `loggedIn: true`) and the project is opened with `flow_open_project`. Prefer a
-project that is not already full of test media.
+The one comic-specific rule: **a prompt that survives two rewrites is a storyboard problem,
+not a prompting problem.** Take it back to the human rather than a third rewrite.
 
 ---
 

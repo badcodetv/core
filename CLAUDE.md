@@ -45,10 +45,14 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
 | `docs/ideas/` | The idea inbox — raw ideas (minimal prose) before they become stories | …you have a new idea to park, or want to develop one |
 | `docs/marketing/` | Marketing & release plans — reaching people, not making the thing | …it's a channel/campaign/launch plan |
 | `docs/misc/` | Catch-all for what fits nowhere else | …in doubt |
-| `docs/suno-gpt/` | Suno-prompting toolkit (operating procedure + reference files) | …you're turning a song idea into a Suno prompt |
-| `docs/flow/` | Google Flow **prompt craft** — writing and debugging a prompt (Nano Banana + Veo), camera vocabulary, consistency, policy blocks. Paired with the `flow-prompt` skill | …you're writing or debugging a Flow prompt |
+| `docs/suno-gpt/` | Suno toolkit — prompting (operating procedure + reference files) **and** [`automation.md`](./docs/suno-gpt/automation.md), the create-page DOM map + the five silent traps + the pair/naming/workspace/no-download protocol | …you're turning a song idea into a Suno prompt, or driving Suno from code |
+| `docs/flow/` | Google Flow toolkit (Nano Banana + Veo prompt craft, policy blocks, consistency) | …you're writing or debugging a Flow prompt |
 | `docs/google-flow/` | Google Flow **engine behaviour** — evidence-tiered research into what the models (Nano Banana, Omni Flash) actually do, with a refresh protocol. **New engine findings go here** — see [`docs/google-flow/README.md`](./docs/google-flow/README.md). *(⚠ Overlaps `docs/flow/`; the two trees were written independently and a consolidation call is still owed.)* | …a generation came back wrong, or you learned something about an engine |
-| `.claude/skills/` | `new-idea`, `new-marketing-idea`, `new-story`, `suno-prompt`, `make-comic`, `edit-panel`, `animate-slide`, `music-video-short`, `new-image`, `badcode-art-direction`, `flow-prompt` — orchestrators for parking an idea, capturing a marketing/distribution play, story capture, Suno prompting, the full idea→comic pipeline, editing an existing panel image, animating a finished panel, the full idea→short-form music-video pipeline (Suno track + Flow clips + edit plan), standalone brand imagery, the BadCode comic register, and Google Flow prompt craft | …you're capturing an idea or marketing play, developing a story, making a track, building a comic, editing a panel, animating a slide, making a short, making a brand image, or writing a Flow prompt |
+| `docs/premiere/` | Premiere Pro bridge — [`recipes.md`](./docs/premiere/recipes.md) (the cookbook), [`effects-catalogue.md`](./docs/premiere/effects-catalogue.md) (every effect installed), [`mogrt-catalogue.md`](./docs/premiere/mogrt-catalogue.md) (the 77 free motion-graphics templates), [`setup.md`](./docs/premiere/setup.md), [`api-notes.md`](./docs/premiere/api-notes.md) | …you're putting anything on a Premiere timeline |
+| `packages/premiere-mcp` | `@badcode/premiere-mcp` — the MCP server + UXP panel that drive Premiere from WSL ([tool reference](./packages/premiere-mcp/README.md)) | …you're changing the bridge itself |
+| `docs/video-fx/` | Which tool for the job — lane choice (Flow / sourcing / ffmpeg / Premiere), the free stack, the 20 research briefs, [`delivery.md`](./docs/video-fx/delivery.md) (**the QC gate before anything ships** — run `scripts/delivery-qc.sh`) and [`footage-sources.md`](./docs/video-fx/footage-sources.md) (68 footage sources, tiered green/amber/red). **No paid plugins, no paid footage** | …you're choosing an effect, wondering if a tool exists, looking for real footage, or about to upload |
+| `docs/story-craft/` | Story-craft toolkit (`story-craft` skill) — [`principles.md`](./docs/story-craft/principles.md) (30 graded principles + 16 house rulings), [`checklist.md`](./docs/story-craft/checklist.md) (the adversarial review pass), [`narrator.md`](./docs/story-craft/narrator.md), [`forms.md`](./docs/story-craft/forms.md), [`evidence.md`](./docs/story-craft/evidence.md), [`case-studies.md`](./docs/story-craft/case-studies.md); [`symptoms.md`](./docs/story-craft/symptoms.md) (**start here** when something is wrong and you don't know what) and [`briefs.md`](./docs/story-craft/briefs.md) (every "brief NN" resolved to its section) | …you're making a story more engaging or reviewing whether it is |
+| `.claude/skills/` | `new-idea`, `new-marketing-idea`, `new-story`, `suno-prompt`, `suno-automation`, `make-comic`, `edit-panel`, `animate-slide`, `music-video-short`, `new-image`, `badcode-art-direction`, `flow-prompt`, `flow-automation`, `video-fx`, `premiere-automation`, `find-footage`, `story-craft` — orchestrators for parking an idea, capturing a marketing/distribution play, story capture, Suno prompting, driving Suno from code, the full idea→comic pipeline, editing an existing panel image, animating a finished panel, the full idea→short-form music-video pipeline (Suno track + Flow clips + edit plan), standalone brand imagery, the BadCode comic register, Google Flow prompt craft, driving the Flow browser, choosing which tool and which effect (plus the delivery gate), driving Adobe Premiere Pro, sourcing real footage we are allowed to publish, and making a story grip (the research-backed craft + the adversarial review pass) | …you're capturing an idea or marketing play, developing a story, making a track, automating Suno, building a comic, editing a panel, animating a slide, making a short, making a brand image, writing a Flow prompt, deciding how to achieve an effect or whether a file is ready to upload, cutting video in Premiere, looking for archive/stock footage, or asking whether a story engages |
 | `packages/comic` | `@badcode/comic` — code-first comic rendering library (authoring guide: [`AUTHORING.md`](./packages/comic/AUTHORING.md)) | …you're building the viewer |
 | `apps/web` | The website (Vite + React + TS SPA) | …you're building pages/routes |
 | `chain/` | Anchor workspace + Docker toolchain — [`README`](./chain/README.md), [`TESTING`](./chain/TESTING.md) | …you're writing an on-chain program |
@@ -88,6 +92,22 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
   stems, **Suno Studio 2.0** (project-aware chat, MIDI, effects rack, natural-language custom
   plugins — [`files/suno-studio.md`](./docs/suno-gpt/files/suno-studio.md)), and the things Suno
   reliably gets wrong (half-time drums, niche D&B subgenres).
+- **Drive Suno from code (stop pasting four boxes):** run the **`suno-automation`** skill
+  (`.claude/skills/suno-automation/`). The **mechanics half** of Suno, where `suno-prompt` is the
+  craft — the same split as `flow-automation` / `flow-prompt`. It loads a sheet's Style, excludes,
+  lyrics, sliders, Voice, title and workspace into `suno.com/create` in **one command** over CDP
+  (the same Chrome Flow uses), clicks Create, and runs **the pair**. Tool:
+  [`scripts/suno/suno.mts`](./scripts/suno/suno.mts); knowledge base:
+  [`docs/suno-gpt/automation.md`](./docs/suno-gpt/automation.md) — the DOM map, the five silent
+  traps and the verified/unverified table. **Three facts save the most time:** attaching a Voice
+  offers to **overwrite your Style box** with the persona's own styles and the box looks populated
+  afterwards, so the answer is *always* **Keep Current**; the lyrics editor is **Lexical**, so a
+  programmatic fill collapses every line into one paragraph — **verify by counting paragraphs, never
+  characters**; and **navigating away wipes the whole form**, with no draft recovery. **We never
+  automate downloading** — Suno is capping downloads per month, so that allowance is only ever
+  spent by a human. Every attempt runs as a **pair at weirdness 30 and 60**, because which one wins
+  is still an open question.
+
 - **Write or debug a Flow prompt:** run the **`flow-prompt`** skill
   (`.claude/skills/flow-prompt/`). The Suno toolkit's counterpart for images and video —
   it owns **platform craft** (how Nano Banana and Veo actually behave) while the
@@ -98,6 +118,70 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
   vocabulary with reliability tiers, consistency/reference discipline, platform controls
   and credits, and the policy-block triggers and rewrites. **A policy block looks exactly
   like a timeout** — that one fact is the biggest time-saver in the whole toolkit.
+
+- **Put something on a Premiere timeline:** run the **`premiere-automation`** skill
+  (`.claude/skills/premiere-automation/`). Premiere Pro is the **third tool** alongside Flow
+  and ffmpeg: a UXP panel inside Premiere on Windows dials out to a WebSocket server in WSL,
+  and a session gets **27 tools** — import, build and re-cut a sequence, trim, transitions,
+  markers, any installed effect with keyframes, and `export_frame` so it can **see** what it
+  just did. Knowledge base: [`docs/premiere/`](./docs/premiere/README.md) —
+  **[`recipes.md`](./docs/premiere/recipes.md) is the cookbook** (build a cut, push in,
+  dissolve, grade, composite a Flow element, export and look, plus the things that flatly do
+  not work); [`effects-catalogue.md`](./docs/premiere/effects-catalogue.md) is a live inventory
+  of all **106 effects and 118 transitions** installed;
+  [`setup.md`](./docs/premiere/setup.md) is the one-time per-machine install;
+  [`api-notes.md`](./docs/premiere/api-notes.md) is what the API actually does versus what
+  Adobe claims. **Two facts save the most time:** no tool returns a whole timeline (you get a
+  per-track summary plus the complete state on disk to `jq`), and **every edit tool acts on the
+  ACTIVE sequence** — a human clicking another timeline tab silently redirects your next call.
+  **We own no paid plugins and are not buying any**: for fire, smoke and weather, generate the
+  element in Flow on black and key it in. Choosing between Flow, ffmpeg and Premiere for a given
+  job is the **`video-fx`** skill, below.
+- **Decide how to achieve an effect — and whether the file is ready to ship:** run the
+  **`video-fx`** skill (`.claude/skills/video-fx/`). The **judgement half** of video, where
+  `premiere-automation` is the mechanics. Reach for it on "what effect does X", "how do I make it
+  look like…", "which tool should I use", "do we need a plugin for this", or "is this ready to
+  upload". It owns **lane choice** — five lanes now: **Flow** invents what does not exist,
+  **sourcing** (`find-footage`) fetches what really happened, **ffmpeg** does what must be exact,
+  **Premiere** is where it becomes an edit, and **After Effects is not installed**. Then it routes
+  the "what effect does X" question into the live catalogues — **106 effects, 118 transitions and
+  77 MOGRTs already installed**, so the answer is usually there before anyone searches the web.
+  Knowledge base: [`docs/video-fx/`](./docs/video-fx/README.md). **Two facts save the most time:**
+  **never end an answer at "buy X"** — state the free route, and if there isn't one say so and let
+  Kai decide; and **nothing ships unmeasured** — `scripts/delivery-qc.sh` before every upload,
+  because `camping.mp4` shipped full-range with no colour tag and every value below 16 crushed to
+  black, which for a film made of shadows is not a grading nuance, it is the picture
+  ([`delivery.md`](./docs/video-fx/delivery.md)).
+- **Find real footage (and check we may publish it):** run the **`find-footage`** skill
+  (`.claude/skills/find-footage/`). The **fifth lane** alongside Flow, ffmpeg and Premiere:
+  footage that *already exists* and is free to use. Reach for it on "is there a royalty-free clip
+  of…", "find archive footage of…", or "is this clip safe to use?" The lane rule is simple —
+  **if the thing is real and already filmed, source it; if it never existed, invent it in Flow.**
+  Knowledge base: [`docs/video-fx/footage-sources.md`](./docs/video-fx/footage-sources.md) —
+  **68 sources tiered 🟢/🟡/🔴**, counts dated, with an end-to-end runbook from query to a
+  hash-checked file Premiere can open — and a **verification table stating exactly which claims
+  were proven live and which were only read**, because several of the originals failed re-run. **Two facts save the most time:** archive.org's
+  `licenseurl` is **uploader-asserted**, so "it's on the Internet Archive" is not a licence and
+  nothing amber ships without a per-item human check; and **"royalty-free" is a pricing model, not
+  a permission** — the stock houses' EULAs routinely bar political use, which is the one thing all
+  our work is. **We buy no footage**: the free tier is US federal film, newsreel, NASA and Commons
+  CC0, and if the subject isn't there the answer is a public-domain still or Flow, never a quote
+  from British Pathé.
+- **Make a story grip, or review whether it does:** run the **`story-craft`** skill
+  (`.claude/skills/story-craft/`). The internet's storytelling craft, researched once (24 briefs,
+  2026-08-22) and kept: [`docs/story-craft/`](./docs/story-craft/README.md) —
+  **[`principles.md`](./docs/story-craft/principles.md)** (thirty principles, each graded
+  academic / practitioner / house-ruling, plus the sixteen rulings where the gurus disagree),
+  **[`checklist.md`](./docs/story-craft/checklist.md)** (the ~40-question adversarial review pass
+  and the coverage-sheet format), the narrator pattern, per-form craft (scroll comic, narrated
+  video with the house VO markup, D&B lyrics, the serialised run), the evidence table with the
+  never-cite list, and the case studies. **Build mode** while drafting beats, scripts, captions or
+  lyrics inside `new-story` / `make-comic` / `music-video-short` / `suno-prompt`; **Review mode**
+  for "does this land?" — gates first (the-reader.md's rules), one layer per pass, notes not fixes,
+  findings adversarially verified, the arc held fixed. Three facts save the most time: **the moral
+  is never stated, the beneficiary always is**; **tell the audience about the bomb** (the narrator's
+  foreknowledge is free dramatic irony — never a withheld box); and **irony is decoded through prior
+  belief**, so every sarcastic line is paired with an undeniable on-screen consequence.
 - **Record an idea (the inbox):** run the **`new-idea`** skill
   (`.claude/skills/new-idea/`). It parks an idea the second it pops as a
   minimal-prose file under [`docs/ideas/`](./docs/ideas/README.md) and adds a
@@ -155,6 +239,22 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
 
 - [`docs/vision.md`](./docs/vision.md) — origin story, mission, themes
 - [`docs/voice.md`](./docs/voice.md) — tone guide with do/don't
+- **[`docs/marketing/the-reader.md`](./docs/marketing/the-reader.md) — WHO THE WORK IS FOR. Read
+  before writing any story, song or public copy.** Ruled 2026-08-15: the target is a working-class
+  UK reader drifting right because the economy failed them — *not* anti-AI advocates and not the
+  converted left. Ten evidence-backed rules, and the traps that cost us the reader if we trip them:
+  never "you've been duped"; never deny immigration's real costs (proportionality instead); name the
+  decision-maker, never the technology; **never raise automation fear without naming the beneficiary
+  in the same piece** (unaimed, it demonstrably feeds nativism). Evidence:
+  [`docs/misc/2026-08-15-target-reader-research.md`](./docs/misc/2026-08-15-target-reader-research.md),
+  whose §7 lists what nobody has measured — don't assert those.
+- **[`docs/using-ai.md`](./docs/using-ai.md) — how we talk about making the work with AI.** Read it
+  before writing any public-facing copy that touches AI. **It is armour, not the campaign** — the
+  honest account for when someone asks about our method, never the register the work leads with.
+  It carries the two-layer disclosure, the never-say list (including "we can't afford to commission"
+  and "AI is inevitable" — both actively counterproductive), and the standing commitments that make
+  the position honest rather than clever. Evidence:
+  [`docs/misc/2026-08-15-anti-ai-research.md`](./docs/misc/2026-08-15-anti-ai-research.md).
 - **[`docs/stories/gitpush-origin-master/`](./docs/stories/gitpush-origin-master/README.md)** — the whole GPOM story canon, one folder. Start at its `README.md` (the **backbone**: orientation, the fork, the production tracker, and the act sequence — Prologue → 6 acts → Coda — from the push to the time machine). Inside:
   - [`discovery-timeline.md`](./docs/stories/gitpush-origin-master/discovery-timeline.md) — how the Storyverse got proven: the bad-branch fictional history 2026–2054 (the four beats, the vault, the revert)
   - [`future-proof.md`](./docs/stories/gitpush-origin-master/future-proof.md) — the good-branch epic: redesigning politics with software-engineering tenets
@@ -165,7 +265,8 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
   - [`doctrine.md`](./docs/stories/storyverse/doctrine.md) — the spine in plain clothes: every claim, its tier, its totem, and the *never say* list
   - [`decisions.md`](./docs/stories/storyverse/decisions.md) — what the research settled, and the open calls still owed a human ruling
   - [`research/`](./docs/stories/storyverse/research/README.md) — seven cited research briefs (QM interpretations, idealism, dimensions & time, decoherence, theology, the meaning crisis, SF precedent)
-- [`docs/storytelling.md`](./docs/storytelling.md) — how we craft a story
+- [`docs/storytelling.md`](./docs/storytelling.md) — how we craft a story; the craft research behind it is
+  [`docs/story-craft/`](./docs/story-craft/README.md) (the `story-craft` skill)
 
 ## Coins
 

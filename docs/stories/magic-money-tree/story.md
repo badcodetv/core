@@ -482,12 +482,18 @@ right against the misuse of the system.
 
 ## Open questions
 
-1. **Song lyrics — reworked 2026-08-14 (Version C in the song file):**
-   rap-cadence sheet built on the corroding refrain, the "how'd a broke little
-   island pay for the Blitz?" detonator, and the Marx/Hayek/Keynes triangle as
-   orchard/jungle/garden. Remaining: Jack listen, delivery casting (spoken-word
-   register — JCC energy), the Marx-slogan ruling, the '79 book-slam
-   verification, Suno prompt rebuild.
+1. **Song lyrics — a banknote's life, 2026-08-22 (Kai):** the jump-up comedy
+   version is the canonical and only song. **V1 is locked (16 bars, Kai's).**
+   The 08-21 ring (the song carrying the war) is **superseded**: the song's own
+   narrative is now *follow the money* — a bloke traces a tenner back hand by
+   hand, through his own tax, to the promise printed on it (*there's your
+   tree*), watches the other note that never touched a hand, asks *not enough
+   what?*, and lands on the win. Song and video still stand alone; the only
+   history left in the song is one optional memory bar. Shape, critics'
+   rulings, sources and guardrails are in
+   [`songs/magic-money-tree.md`](./songs/magic-money-tree.md) under *The
+   shape*. **Ratified 2026-08-22** (arc as written, concession hook, bridge
+   question-only). Kai writes V2, V3, the bridge; then the Suno prompt.
 2. **Script** — next artifact: the full narration + dialogue script derived
    from these beats (a `script.md` in this folder), before any visual work.
 3. **The easter-egg promotions** — [`easter-eggs.md`](./easter-eggs.md)

@@ -1,9 +1,15 @@
-# Google Flow — image→video recipe (from the spike)
+# Automation — video: the image→video recipe and selector map
 
-> Recorded 2026-06-25 from the first successful automated image→video generation.
-> The **video** companion to [`flow-selectors.md`](./flow-selectors.md) (which covers images).
-> This is the input contract the `animate-slide` skill drives. Playwright MCP attached over
-> CDP to a WSLg Chromium logged into Flow (ULTRA plan).
+**How our automation drives Flow for motion.** The video companion to
+[`automation-images.md`](./automation-images.md).
+
+> Recorded 2026-06-25 from the first successful automated image→video generation; live
+> corrections since are dated in place, most recently 2026-08-12.
+>
+> This is the input contract behind `@badcode/flow-mcp`'s video half. Playwright over CDP to a
+> WSLg Chromium logged into Flow (ULTRA plan).
+>
+> *Moved here 2026-08-20 from `docs/superpowers/` — see the note in `automation-images.md`.*
 
 ## TL;DR — the loop that works
 
@@ -105,7 +111,7 @@ async (page) => {
 ```
 
 Then `curl "<signed url>" -o clip.mp4` from the shell (no `fs` in the run_code sandbox — it has
-only `page`). Confirm `file clip.mp4` → `ISO Media, MP4`. **Same mechanism as `flow-selectors.md`,
+only `page`). Confirm `file clip.mp4` → `ISO Media, MP4`. **Same mechanism as `automation-images.md`,
 just a `<video>` source instead of an `<img>`.**
 
 ## Selectors observed (volatile — prefer roles/text over snapshot refs)
@@ -280,7 +286,7 @@ end-to-end image→video flow is PROVEN**: a clean run produced a real, harvesta
 **1.96 MB MP4** (`ISO Media, MP4`) through the exact path below. Corrections + the one
 remaining rough edge:
 
-- **No-space accessible names** (same rule as `flow-selectors.md`): the recipe's spaced names
+- **No-space accessible names** (same rule as `automation-images.md`): the recipe's spaced names
   don't match `getByRole`. Use `/add\s*Add Media/i`, menuitem `/upload\s*Upload media/i`,
   `/motion_blur\s*Animate/i`, submit `/arrow_forward\s*Create/i`.
 - **Add Media is a menu**, not a direct chooser: `Add Media` → menuitem `Upload media` → file

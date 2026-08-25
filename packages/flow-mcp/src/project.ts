@@ -1,5 +1,5 @@
 /**
- * `href` is optional: KNOWN ISSUE (flow-selectors.md:269-276) — the projects grid can render
+ * `href` is optional: KNOWN ISSUE (automation-images.md:269-276) — the projects grid can render
  * a tile as a bare `<div>` with no `<a href>` at all. SCRAPE_PROJECTS can only discover tiles
  * that ARE anchors (that is the only evidenced selector we have — no locator for the div-only
  * variant is recorded anywhere, so recovering ITS name blind is out of scope here, same as any
@@ -56,7 +56,7 @@ export function toProjectSummaries(tiles: ProjectTile[]): ProjectSummary[] {
  * For each project anchor we climb ancestors and take the first own-text node that is short and
  * is not an edit/delete affordance label. Untitled projects fall back to their date label.
  *
- * ⚠️ KNOWN GAP (flow-selectors.md:269-276): the projects grid can render a tile as a bare
+ * ⚠️ KNOWN GAP (automation-images.md:269-276): the projects grid can render a tile as a bare
  * `<div>` with NO `<a>` at all — this loop is rooted at `a[href*=…]`, so those tiles are
  * structurally invisible to it, not merely missing an href to read. No selector for that
  * div-only variant is recorded anywhere (blind Wave A work cannot invent one — same rule as

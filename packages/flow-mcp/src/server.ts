@@ -57,6 +57,13 @@ function toToolError(err: unknown): ToolResult {
   if (msg.startsWith('VIDEO_DURATION_UNAVAILABLE')) return fail('VIDEO_DURATION_UNAVAILABLE', msg, 'Only Gemini Omni Flash makes 10s clips; every Veo 3.1 tier caps at 8s (confirmed live 2026-08-12 — the 10s tab is absent from the DOM, not merely disabled). Either drop to 8s or pass model "Omni Flash".')
   if (msg.startsWith('VIDEO_DURATION_NOT_APPLIED')) return fail('VIDEO_DURATION_NOT_APPLIED', msg, 'The duration tab was clicked but the config trigger never showed it — aborted before spending credits, because an ignored duration returns a healthy-looking clip of the wrong length. The tab names in the compose popover have probably drifted; re-map with packages/flow-mcp/src/smoke-duration.ts.')
   if (msg.startsWith('VIDEO_END_ONLY_UNSUPPORTED')) return fail('VIDEO_END_ONLY_UNSUPPORTED', msg, 'Flow has first-frame and first+last-frame generation, but not last-frame-alone (live-tested 2026-08-12 on Veo 3.1 Fast and Lite — the slot fills and is then flagged invalid). Pass a startImage as well, or describe the opening in the prompt and use text-to-video.')
+  if (msg === 'NO_PROJECT_OPEN') return fail('NO_PROJECT_OPEN', 'No Flow project is open.', 'Open one with flow_open_project first — scene tools read the project id out of the current URL.')
+  if (msg.startsWith('NOT_IN_SCENE')) return fail('NOT_IN_SCENE', msg, 'A scene id is the 36-character uuid after /edit/ in a Flow scene URL — clicking any clip in the project grid opens it. It is NOT the clip\'s media id.')
+  if (msg.startsWith('SCENE_ID_INVALID')) return fail('INVALID_ARGS', msg, 'Copy the uuid after /edit/ in the Flow URL.')
+  if (msg.startsWith('SCENE_EXTEND_EMPTY_PROMPT')) return fail('INVALID_ARGS', msg, 'Describe what happens next in the continuation.')
+  if (msg.startsWith('SCENE_ADD_CLIP_MENU_NOT_OPEN')) return fail('SCENE_ADD_CLIP_MENU_NOT_OPEN', msg, 'Confirm you are in a scene editor (/edit/<sceneId>) with a loaded clip. If the timeline is there but the menu will not open, Flow has changed the control — re-map it before retrying.')
+  if (msg.startsWith('SCENE_EXTEND_NOT_ARMED')) return fail('SCENE_EXTEND_NOT_ARMED', msg, 'Flow\'s Add Clip menu has probably drifted. Re-map it against the live scene editor before retrying; do NOT fall back to an ordinary generation, which silently produces a different shot.')
+  if (msg.startsWith('SAVE_FRAME_NOT_FOUND')) return fail('SAVE_FRAME_NOT_FOUND', msg, 'Let the scene player load and paint a frame, then retry.')
   if (msg.startsWith('VIDEO_FRAMES_UNAVAILABLE')) return fail('VIDEO_FRAMES_UNAVAILABLE', msg, 'Only the Veo 3.1 tiers accept a LAST frame; Omni Flash rejects it (its End slot comes back with an error badge, live-confirmed 2026-08-12). Pass model "Veo 3.1 Fast" (or Lite/Quality), or drop endImage.')
   if (msg.startsWith('VIDEO_REFINE_NO_SOURCE') || msg.startsWith('VIDEO_REFINE_NO_PROMPT')) return fail('INVALID_ARGS', msg)
   if (msg.startsWith('VIDEO_REFINE_NOT_A_MEDIA_ID')) return fail('INVALID_ARGS', msg, 'Refine works on a clip that is already in the Flow project, addressed by the mediaId flow_generate_video returned — not by the .mp4 you saved. If you no longer have that id, list the project media with flow_list_media.')
@@ -75,7 +82,7 @@ function toToolError(err: unknown): ToolResult {
 
 /**
  * Flow's documented image aspect ratios (docs/flow/image-prompting.md §9), Nano Banana 2's
- * extras included. Selector-confirmed against the live tab list (flow-selectors.md:172-174)
+ * extras included. Selector-confirmed against the live tab list (automation-images.md:172-174)
  * for exactly two: "16:9" and "4:3". The rest are wired through the identical `ensureImageMode`
  * tab-matching path (which needs no icon-name knowledge, just the ratio text) but are UNTESTED
  * against the real DOM — flag any failures for Wave B live validation.
@@ -673,3 +680,86 @@ server.registerTool(
 
 const transport = new StdioServerTransport()
 await server.connect(transport)
+
+server.registerTool(
+  'flow_scene_open',
+  {
+    title: 'Open a Flow scene (Scene Builder)',
+    description:
+      "Open a clip's scene editor at /project/<projectId>/edit/<sceneId> — Flow's Scene Builder — and wait for its timeline to render. This is the surface that carries Extend, Save Frame and the scene-level prompt box, none of which exist on the compose bar. sceneId is the 36-character uuid AFTER /edit/ in a Flow scene URL; clicking any clip in the project grid navigates there, so it is the id a user pastes. It is NOT a media id — clip media ids never match scene ids, which is the usual source of confusion. The project id is read from the currently open project, so open the project first. Returns { projectId, sceneId, url }.",
+    inputSchema: { sceneId: z.string().min(1) },
+  },
+  async ({ sceneId }) => {
+    try {
+      return await withClient(async (c) => ok(await c.openScene(sceneId)))
+    } catch (err) {
+      return toToolError(err)
+    }
+  },
+)
+
+server.registerTool(
+  'flow_scene_extend',
+  {
+    title: 'Extend a clip into a longer scene (Scene Builder)',
+    description:
+      "Continue a clip from its own end using Flow's Extend. Unlike generating from a still, Extend hands the model the clip's own context, so motion, lighting and subject carry across the join. Use it for RUNWAY — a long continuous bed under narration — and use flow_generate_video with startImage/endImage when you need to control exactly where a shot lands.\n\n⚠️ IT DOES NOT PRODUCE A FILE. Extend appends a segment to a SCENE and navigates to /scene/<newId>; no new clip appears in the gallery and there is no mp4 to save, which is why this tool takes no outPath. Success is the scene getting longer, and that is what comes back: { sceneId, url, durationSeconds, previousDurationSeconds, addedSeconds }. To get an mp4 out, use the scene editor's Download control in the browser; to get stills out, use flow_scene_save_frame. (Learned the hard way 2026-08-18: waiting for a new clip made a successful Extend look like a 480s timeout.)\n\n⚠️ THE TIER IS NOT YOURS TO CHOOSE: Flow pins Extend to one model regardless of the compose bar (observed as Veo 3.1 Lite on 2026-08-18, on an account offering Fast and Quality freely). The tier used comes back as `model` — read it rather than assuming, and treat Extend as a quality trade. Observed adding ~7s per Extend, not the full 8.\n\nRuns inside the scene editor: pass sceneId, or call flow_scene_open first.",
+    inputSchema: {
+      prompt: z.string().min(1),
+      sceneId: z.string().min(1).optional(),
+    },
+  },
+  async ({ prompt, sceneId }) => {
+    try {
+      return await withClient(async (c) =>
+        ok(await c.sceneExtend({ prompt, ...(sceneId ? { sceneId } : {}) })),
+      )
+    } catch (err) {
+      return toToolError(err)
+    }
+  },
+)
+
+server.registerTool(
+  'flow_scene_save_frame',
+  {
+    title: 'Save a frame from a scene (Scene Builder)',
+    description:
+      "Save the frame under the scene player's playhead into the project as an image asset, using Flow's own Save Frame control. This is the frame-to-frame chaining workflow built in: the saved frame lands in the gallery and can be used as the startImage of the next generation with no download, no ffmpeg and no re-upload. position 'end' parks the playhead at the clip's last frame first — which is the position chaining almost always wants — and 'current' (the default) takes wherever the playhead already sits. Runs inside the scene editor: pass sceneId, or call flow_scene_open first. Returns { mediaId?, position, playhead? }; mediaId is absent when the asset had not surfaced in the gallery scrape before the wait elapsed, which does not mean it failed to save.",
+    inputSchema: {
+      sceneId: z.string().min(1).optional(),
+      position: z.enum(['current', 'end']).optional(),
+    },
+  },
+  async ({ sceneId, position }) => {
+    try {
+      return await withClient(async (c) =>
+        ok(
+          await c.sceneSaveFrame({
+            ...(sceneId ? { sceneId } : {}),
+            ...(position ? { position } : {}),
+          }),
+        ),
+      )
+    } catch (err) {
+      return toToolError(err)
+    }
+  },
+)
+
+server.registerTool(
+  'flow_scene_extend_model',
+  {
+    title: 'Read which tier Extend is pinned to',
+    description:
+      "Report which model Flow currently pins Scene Builder's Extend to, WITHOUT generating anything. Extend arms rather than fires — Flow keeps its Create button disabled until the prompt box has text — so this is free to call, and it is the honest way to find out what an Extend would cost in quality before committing to one. Returns { model }, normalised to the compose bar's spelling (Flow writes the label hyphenated, e.g. \"Extend (Veo 3.1 - Lite)\" → \"Veo 3.1 Lite\"). model is null when Flow renders its unsubstituted \"{{modelName}}\" placeholder, a templating bug seen live on 2026-08-18 — null means 'could not read it', never 'no tier'.",
+    inputSchema: { sceneId: z.string().min(1).optional() },
+  },
+  async ({ sceneId }) => {
+    try {
+      return await withClient(async (c) => ok(await c.sceneExtendModel(sceneId)))
+    } catch (err) {
+      return toToolError(err)
+    }
+  },
+)

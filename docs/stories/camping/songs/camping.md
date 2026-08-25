@@ -1,124 +1,647 @@
 ---
-title: Camping
-status: drafting
-suno:
-  style: >-
-    Drum and bass, dark neurofunk with UK grime influence, 174 BPM. Dystopian,
-    confrontational, weary and sardonic, minor key. Heavy rolling Reese bassline
-    and deep sub, chopped Amen breaks, industrial stabs. A two-hander between two
-    male voices in tension: first a thick Scouse Liverpool street-poet — adenoidal
-    Merseyside drawl, softened "ck" sounds, rising sing-song intonation, weathered
-    and working-class, lo-fi like a cheap phone mic; second a posh sneering London
-    voice — clipped, smug, mocking, dripping condescension. Both deliver raw
-    spoken-word rap, aggressive yet vulnerable. Gritty lo-fi vocal texture, dark
-    industrial production, hard social commentary.
-  exclude: >-
-    liquid dnb, jump up, happy hardcore, pop, autotune, clean sung melody, polished
-    studio vocal, American accent, soft female vocal, warm acoustic guitar, jazz,
-    chillhop, uplifting, major key, orchestral
+title: Camping (duet re-cut)
+status: ACCEPTED at round 17, 2026-08-21 — the prompt below is the one that worked. Change it only against a specific fault — rounds 1-14 generated and diagnosed; the orchestral direction is abandoned
+released_take: ./camping-released.md
+history: ./camping-prompt-history.md
 bpm: 174
+model: v5.5
+settings: style influence 75 · weirdness 30 · audio influence n/a (fresh generation) · NO saved Voice
 voices: [bob, tarquin]
 ---
+# Camping — the song
 
-# Camping (song)
+**The live prompt sheet for the "Camping" track.** Same words as the released take, rebuilt
+from the ground up as a **true duet**: the released version used a saved Voice, so Bob and
+Tarquin came out sounding like the same man.
 
-Two voices: **Bob** (Scouse, weathered) and **Tarquin** (posh London, sneering).
-See [`../characters/bob.md`](../characters/bob.md) and
-[`../characters/tarquin.md`](../characters/tarquin.md).
+**Nothing here changes a word.** The lyrics are the released ones, verified line by line
+(see §4). What changed is everything *around* the words — casting, arrangement, timing,
+pronunciation.
 
-> **Provenance:** these lyrics predate the 2026-08-04 story restructure
-> ([`../story.md`](../story.md)) — the track and Jack's music video already
-> exist, so the song stands as released. Known drift from current canon: the
-> bridge gives Tarquin the "got the sack / broke my back" slide (Bob's ruin is
-> now the 2008 crash), and the lyric says "M3" where the story's load-bearing
-> car is the X8 wank tank. Reconcile only if the song is ever re-cut.
+| | |
+|---|---|
+| **The four boxes to paste** | §1–§4 below, plus §5 settings |
+| **The released take** | [`./camping-released.md`](./camping-released.md) — Jack's video is built on it |
+| **How we got here** | [`./camping-prompt-history.md`](./camping-prompt-history.md) — fourteen rounds, what failed and why |
+| **The general lessons** | promoted into [`docs/suno-gpt/`](../../../suno-gpt/README.md) — they apply to any track |
+
+---
+
+## The contrast stack
+
+Six axes, no accents and no demographics. Every one is something Suno renders readily,
+and the **Tradition** row is the load-bearing one — it decides who the model casts.
+
+| | Bob | Tarquin |
+|---|---|---|
+| **Pitch** | low, deep | higher, light |
+| **Texture** | gravelly, torn, smoke-worn | clean, smooth, crisp |
+| **Tradition** | British post-punk spoken-word rant | BBC English newsreader register |
+| **Delivery** | ranted over the beat, half-shouted, half-muttered | spoken, unhurried, talking down at you |
+| **Age/class** | weathered, fifties, working-men's club | late forties, plummy, boardroom |
+| **Room** | close, dry | wide, roomy |
+
+**One fixed short label per man, repeated identically** — `[gravelly ranting voice]`
+and `[well-spoken posh voice]`. Not a freshly-worded description each time: varied
+wording reads as a new character, and consistency is the thing the model latches
+onto.
+
+---
+
+## The four Suno boxes — accepted, round 17
+
+**This is the accepted prompt** — round 17, signed off 2026-08-21. Seventeen rounds of
+casting, arrangement, timing and pronunciation work land here, and the reasoning behind
+every clause is in §4a–§4f. **Change it only against a fault you can name in a take**, and
+when you do, read §4e first: nearly every regression in this sheet came from a box growing
+rather than from a clause being wrong.
+
+Paste **all four** boxes every round; never trust what a box
+already contains. Everything below this heading is current; the round log above and the
+appendices below (§4a–§4c) are **history and reasoning**, kept because the diagnoses are
+reusable — they are not instructions, and nothing in them is pasted anywhere.
+
+### 1. My Taste
+
+Swap in for the session, restore your house profile after. My Taste biases every
+generation, cannot be turned off, and can only be replaced.
+
+```
+Vocals: British post-punk spoken word — two white British men in their late forties and fifties, ranting and talking over the beat rather than singing. One is low, gravelly, smoke-worn and nasal, half-shouting and half-muttering into a cheap close mic: a working-men's-club voice. The other is higher, clean and plummy BBC English, precise and unhurried, talking down at you from a wide room. Ranted spoken word over sung melody, every time. Raw over polished.
+
+Music: dark UK drum and bass and neurofunk at 174 BPM, minor key. Rolling Reese bass, deep sub, dry chopped breakbeats, industrial stabs. Drum fills that tear across a whole bar every few bars: chopped amen rolls, snares tumbling over each other, loud and right at the front of the mix, then straight back into the groove. Arrangements that climb in steps and hold things back: a track that opens on one unaccompanied instrument and does not show its full weight until the drop. Space used as an instrument: long empty stretches, one sound at a time, nothing playing that does not need to. Big aggressive wavetable synthesizers doing the work an orchestra would do elsewhere: screaming detuned leads, hard-synced and formant-morphing, growling gnarly mid-range, filters swept by hand. No orchestral instruments and no piano anywhere. Cold, grimy, relentless, and rock steady in tempo from start to finish. A British record, made in Britain, about Britain.
+
+Register: bleak, bitter and angry, played completely straight. Whatever is funny lives in the words alone — the music never winks, never nudges, never plays along.
+
+Subject: British class, money, work, and the people the economy left behind.
+```
+
+### 2. Style
+
+**Under 1,000 characters, and it runs close.** A maxed box outvotes its own vocal clauses,
+and these voices took four rounds to win — so the arrangement clause is always the first
+suspect when casting regresses, and always the first thing trimmed. The live trim ledger
+is in §4c.
+
+**Two load-bearing clauses that must never be cut.** `British post-punk spoken word` is
+what holds the casting: the genre tag owns the vocalist pool, and a pool carries a whole
+**performer** — accent, age, class and race as one package. Post-punk spoken word's
+default performer is a middle-aged white British man ranting over a beat, which is Bob;
+grime's is a young Black British MC, which is why grime was dropped. And the **unity
+sentence** (`so the synth and the break are one piece of music, not a remix of one by the
+other`) is what stops the second layer sounding bolted on.
+
+**If the voices drift American again**, the genre tag is the cause — grime used to carry
+the nationality. Escalate `British post-punk` and add `Britpop` before adding any rap
+genre back.
+
+```
+Dark UK drum and bass, neurofunk, 174 BPM, minor key — British post-punk spoken word on top, ranted over the beat. Verse one, a weathered British man in his fifties: low, gravelly, smoke-worn, nasal, half-shouted and half-muttered, bone dry. Verse two, a well-spoken British man: higher, clean, plummy BBC English, talking down from a wide room. Four steps: one long low detuned synth note; then the voice over a low palm-muted electric guitar riff — distorted rock tone, one short figure repeating, never a solo, never chords, running under every vocal section; then a dry chopped breakbeat under the vocal, no bass; then the drop, guitar out, kit at full weight, Reese sub and a screaming detuned wavetable lead cut against it, so synth and break are one piece of music, not a remix of one by the other. Every four bars the drums tear into a chopped amen roll for a whole bar, snares tumbling over each other, loud up front, then straight back in. Grim and bitter, played straight, steady tempo.
+```
+
+### 3. Exclude Styles
+
+`double time` and `tempo change` are in here specifically to answer the timing
+fault — the exclude box takes what you want gone as positive keywords.
+
+```
+singing, sung verses, sung chorus, melodic vocal, vocal melody, vocal hooks, crooning, clean sung melody, autotune, harmonies, grime MC, UK drill, road rap, trap, hip hop, young MC, American accent, American vocal, US rap, transatlantic, southern drawl, ragga MC, toasting, Jamaican accent, dancehall vocal, soprano, operatic vocals, vibrato, angelic voices, sustained vocal notes, female vocal, choir, orchestral strings, violins, cello, string section, piano, glockenspiel, brass band, marching band, oompah, dixieland, guitar solo, lead guitar, shredding, guitar strumming, power chords, acoustic guitar, wah, live rock band, epic trailer music, reggae, dub, ska, music hall, vaudeville, pantomime, ragtime, honky-tonk, liquid dnb, jump up, pop, lo-fi, jaunty, playful, whimsical, bouncy, comedic, novelty, parody, uplifting, major key, double time, tempo change, half-time, slow tempo
+```
+
+`backing vocals` and `harmonies` stay out of the excludes — we're not using the
+backing slot this round, but banning it outright tends to strangle more than it
+protects.
+
+### 4. Lyrics
+
+**Words checked mechanically, not by ear — and the departures are now deliberate.** The
+re-cut began as a verbatim rebuild of the released take
+([`./camping-released.md`](./camping-released.md)); at round 17 Kai made three considered
+word changes to the final cut. They are listed below and encoded in the check, so the
+script still catches *accidental* drift. **That matters more than it sounds:** a check that
+always fails is a check nobody reads, and silent drift is exactly how three words went
+missing earlier in this sheet without anyone hearing it.
+
+| Departure | Released | Final cut | Note |
+|---|---|---|---|
+| respelling ×4 | — | `parra lettic`, `shatoe nerf doo pap`, `blaow`, `the last part` | spelling only, the word is unchanged (§4b) |
+| verse 2 | `get fucked all day and pay no rent` | `getting fucked all day and paying no rent` | +2 syllables, moving a 9 toward the section's 10-syllable slot |
+| bridge | `park, in the rain and the dark, fast start` | `park, in the rain and the fucking dark` | **costs a rhyme leg** — `fast start` was the setup for `the AI does the fast part` two lines later. Kai's call, made with the take in his ears |
+
+Line breaks also differ — see §4a — and those change timing, not words. Re-run the check
+after any edit:
+
+```bash
+# from docs/stories/camping/songs/ — strips cues, punctuation and respellings, then diffs
+python3 - <<'EOF'
+import re,io,difflib
+def lyr(p):
+    b=re.search(r'```lyrics\n(.*?)```',io.open(p,encoding='utf-8').read(),re.S).group(1)
+    return [l.strip().strip('()') for l in b.split('\n') if l.strip() and not l.strip().startswith('[')]
+def norm(ls):
+    t=' '.join(ls).lower()
+    for x,y in [('parra lettic','paralytic'),('shatoe nerf doo pap','W'),('châteauneuf-du-pap','W'),
+                ('blaow','blough'),('the last part','a cast part'),
+                # deliberate round-17 word changes — keep the check clean so real drift shows
+                ('getting fucked all day and paying no rent','get fucked all day and pay no rent'),
+                ('park, in the rain and the fucking dark','park, in the rain and the dark, fast start')]:
+        t=t.replace(x,y)
+    return ' '.join(re.sub(r'[^a-z ]','',t).split())
+a,b=norm(lyr('camping-released.md')),norm(lyr('camping.md'))
+print("IDENTICAL:",a==b)
+for d in difflib.unified_diff(a.split(),b.split(),lineterm='',n=2):
+    if d[0] in '-+' and not d.startswith(('---','+++')): print(" ",d)
+EOF
+```
+
+**Structural rules the sheet obeys**, each bought with a failed round: **zero
+parentheses** (they are a mix-position mechanism, not a name tag — round 1); **one cue per
+section**, carrying the voice label in fixed repeated wording; **no cue inside a verse**,
+because every mid-verse bracket tried inserted an instrumental gap (rounds 6–10) — a
+section *header* carries the mid-verse arrangement change instead; and **no `half-time`
+anywhere**, a known Suno blind spot that thins the arrangement instead of halving the
+drums.
 
 ```lyrics
-[Intro | dark ambient pad, distant city hum | no drums | 8 bars building tension]
-[Verse 1 | Bob | thick Scouse spoken-word | half-time amen + deep sub | weary, confrontational]
-Once again and you catching my eye,
+[Intro — 8 bars | one long low detuned synth note, completely alone, held and slowly filtering open | a texture, not a tune, no melody | distant city hum far underneath | no drums, no bass, no guitar]
+[Verse 1 | gravelly ranting voice | the low synth note holds underneath | no drums and no bass for the first half of this verse, then a dry chopped breakbeat comes in under the vocal and runs to the drop | amen rolls tearing across every fourth bar | the words never stop, no instrumental passage in this verse]
+Once again, and you catching my eye,
 and you looking to the side in shame, but why
-[bass swells | agitation rising]
 now, let me explain, how I'm just poor
-[angry | clipped and bitter, hard hit on the caps]
-you KEEP ON WALKING through that Wait trose door
-[spoken | dry, close-mic, half-muttered]
-presenting yourself with your shiny teeth
-fucking sense of entitlement and self belief
-[wry, sardonic lilt]
-I get that you think your deals are slick
-[whisper | conspiratorial, near-silence]
-but I bet that you paid for your wheels on tick!
-[shout | sudden, full chest | drums snap to full break]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick!
 cash from the bank for your wank tank
-[spoken | deflating, muttered]
 let me count up all the cans that I drank
-[rising agitation]
 I'm not alone and I'm sick of this crap
-this widening gap, now let's go snap snap
-[syncopation: light | playful menace]
+this widening gap, now let's — go snap snap
 crackle and pop, I want change,
 not from your pocket but at the top
-[diminuendo | pull back, mock-polite]
 in the meantime though let me hold that door
-[shout, desperate | cracking, raw, begging]
 please sir, can I FUCKIN, have some more?
-[Drop | Instrumental | 32 bars, no vocals]
-[heavy Reese bassline drop | full amen | dark, rolling, relentless]
-[midpoint: filter sweep + reverb stab, breathe, then re-drop harder]
-[Verse 2 | Tarquin | posh sneering London | clipped, smug, mocking]
-[beat-switch | drums flip, colder synths, sharper hats]
+[Drop — instrumental, 8 bars, no vocals | the kit hits full weight and the sub bass drops for the first time | amen rolls tearing across every fourth bar | the guitar drops out here | the wavetable lead tears in over the break]
+[Beat Transition]
+[Verse 2 | well-spoken posh voice, a completely different man | full-weight drum and bass carries straight on, drums flip, colder synths, sharper hats | amen rolls tearing across every fourth bar | the same guitar riff returns underneath, unchanged | nothing else playing at all]
 you are intent on living in a tent
-get fucked all day and pay no rent
-[bored, drawling condescension]
+getting fucked all day and paying no rent
 it's a lack of work ethic, quite pathetic
-getting paralytic and you just don't get it
-[crisp, sing-song taunt]
+getting parra lettic and you just don't get it
 prospects exist and you just resist
 and now I insist that you just stop the grift
-[mocking | falsetto sneer, theatrical]
 What about if we taxed the rich?
-Oh my, here's the sitch, speak to the hand bitch!
-[spoken | smug, self-satisfied]
+Oh my, here's the sitch, SPEAK TO THE HAND BITCH!
 I work hard to pay for my yard
 an I pay my tax on all my stacks
-[dismissive flick]
 you want change but my pockets are empty
-the only thing I'm changing is the lanes in my M3
-[patronising, slowing to land the jab]
-if you worked hard then you could have plenty, fenty,
+the only thing I'm changing
+is the lanes in my M3
+if you worked hard, then you could have plenty, fenty,
 all you seem to now do, is resent me.
-[dismissive | drawled, bored, contemptuous]
 wealth gap? fuckin what a load of crap
-now please let me drink my Châteauneuf-du-Pap
-[Drop | Instrumental | 32 bars, no vocals | variation]
-[heavier, more distorted than the first | neuro bass growl]
-[strip to sub + ticking hat, build toward the bridge]
-[Bridge | the turn | half-time breakdown: drums halve, strip back | two voices trading, intimate]
-[Bob | weary, breathless | fast internal-rhyme, almost stumbling]
+now please let me drink my shatoe nerf doo pap
+[Drop — instrumental, 8 bars, no vocals | everything heavier and more distorted than the first drop — neuro bass growling underneath, the amen rolls harder and longer, the lead screaming higher]
+[Beat Transition]
+[Bridge | the turn | drums strip right back, intimate | the two men trade, both close and dry in the same cold room now | the guitar riff sparser and quieter here, still one repeating figure, never a tune]
+[gravelly ranting voice]
 Oh shit, here we both are, living in a car
-park, in the rain and the dark, fast start
-[Tarquin | weary | same broken cadence, posh edges worn off]
+park, in the rain and the fucking dark
+[well-spoken posh voice]
 went down the wrong track, then I got the sack,
-then I drank, broke my back, now I'm in a cast part
-[Both | unison | realisation lands | bass re-enters underneath]
+then I drank, broke my back, now I'm in the last part
+[both men together, doubled]
 the AI does the fast part, now, the real question is
-will it allow, because it's in charge now, blough
-[Tarquin | flat, hollow]
+will it allow, because it's in charge now, blaow
+[well-spoken posh voice]
 you see as it turns out, there is very little clout,
 in having the manager or any of the c-suite about
-[Bob | bitter, knowing]
+[gravelly ranting voice]
 the speed the robots replaced us was quicker
 and sicker than when the government debased us
-[Tarquin | reflective | drop to near-spoken, vulnerable]
+[well-spoken posh voice]
 back to that time when we very first met,
 I do regret that I judged you, I was wrong,
-[Bob | warm | a small smile in the voice]
+[gravelly ranting voice]
 yet I don't begrudge you, let's get along
 let's make a happy ending for this song
-[Tarquin | resigned, gentle]
+[well-spoken posh voice]
 well we don't have long and it might go wrong
-[fade out | diminuendo | voice and bass dissolve into static]
+[Outro — 8 bars | both voices together | diminuendo, voice, guitar and bass dissolve into static]
 but by the time it hits, we'll be gone
 [end]
 ```
+
+### 4a. The timing pass — why lines land off the bar
+
+**The mechanism.** Suno allocates a musical **phrase per lyric line**, then fits that
+line's syllables into it. Delivery speed is syllable density per line — no tempo
+instruction touches it. And the compounding rule: **the first line of a section sets
+the bar length for the whole section**, and every later line is force-fit into that
+same slot. A section that runs 9 syllables → 15 doesn't smoothly speed up. It
+**crams** — and cramming is what "rushed, and not starting at the start of the bar"
+sounds like.
+
+**What the measurements said.** Only 5 of 48 lines were genuinely over the density
+ceiling, so this was never mainly a speed problem — it was a **consistency** problem.
+Before the pass:
+
+| Section | Range | Mean |
+|---|---|---|
+| Verse 1 | 7–12 | 9.7 |
+| Verse 2 | 8–**14** | 10.4 |
+| Bridge | 9–**15** | **11.4** |
+
+The bridge was worst on both counts, which is where it would be most audible.
+After the pass: bridge max 15 → 13, mean 11.4 → 10.0.
+
+**The second mechanism, and it explains the off-the-bar feel specifically.** Suno puts
+vocal stress on the downbeat. A line that opens with a run of unstressed function
+words — *"and you looking to…"*, *"in having the manager…"*, *"the only thing I'm
+changing…"* — is a pickup, so the model either starts it early or crams it to force
+alignment. **Mismatched stress reads as rushed even at a safe syllable count.**
+
+### The three levers, none of which change a word
+
+1. **Line breaks — the strongest.** Each line gets its own phrase, so splitting a
+   15-syllable line into 7 + 8 halves the density *and* buys a second bar. This is the
+   main tool, and it costs nothing but layout.
+2. **Commas — a comma marks a stress boundary; the pause is the side effect.** Tested
+   on the GPOM chorus: what matters is **how many stress units you carve the line
+   into**, not how many commas you used. Two commas beat zero *and* beat three on the
+   same line. Say the line aloud as you'd perform it and put a comma where you'd
+   breathe — usually two or three units, never one-per-word.
+3. **Don't describe metre in the Style box.** Tested trap: `one word per beat, locked
+   to the grid` reads as precision but *is* a slow, drawled delivery. Describe the
+   density you want (`rattled off fast, no space between the words`), never a beat count.
+
+**Asymmetry worth knowing:** a line that's too short gets **stretched**, which sounds
+deliberate. A line that's too long gets **crammed**, which sounds broken. When in
+doubt, break it shorter.
+
+**Multiple spaces do nothing.** Not a documented mechanism — Suno's pause vocabulary is
+the comma (a beat), the full stop (full break + pitch reset), the line break (longer
+pause), the ellipsis (trailing drift) and a hyphen inside a word (stretches the note).
+The double space in the snap-snap line has been swapped for an em dash, which is a real
+longer-than-a-comma pause.
+
+### What changed in the lyrics block above
+
+Words untouched. Five lines re-shaped:
+
+| Line | Was | Now |
+|---|---|---|
+| `the only thing I'm changing / is the lanes in my M3` | 14 syl, one line | 7 + 6, split |
+| ~~`in having the manager / or any of the c-suite about`~~ | **15 syl** — worst in the song | **NOT APPLIED** — see below |
+| ~~`you see as it turns out, / there is very little clout,`~~ | 13 syl | **NOT APPLIED** — see below |
+| `if you worked hard, then you could have plenty, fenty,` | 13 syl, 2 stress units | comma added → 3 units |
+| `now let's — go snap snap` | double space | em dash |
+
+Revert any of them by rejoining the lines — nothing else depends on the split.
+
+**Two of the five were never actually applied, and the sheet claimed they were** (found
+2026-08-21, by measuring the file rather than trusting it). Both are in the **bridge** —
+already the worst section on range and mean — and one of them is the 15-syllable line this
+very table calls the worst in the song. The bridge's opening line sets an 11-syllable slot,
+so that line is force-fit into it, which is the textbook cause of *"the words fall behind
+the beat and catch up by the end of the section"*. Left unsplit in the final cut because
+Kai signed the take off with it; **it is the first thing to try if that section is ever
+re-cut**, as:
+
+```
+in having the manager
+or any of the c-suite about
+```
+
+**The transferable lesson is about the document, not the song: a note recording an
+*intended* edit reads identically to one recording a *made* edit.** Measure the artifact,
+never the note about the artifact.
+
+**Still over budget and deliberately left:** `and sicker than when the government
+debased us` (13). Every available break falls mid-clause and would read worse than the
+cram. If it rushes, that's the one to hand to Studio.
+
+### If it still drifts — Studio warp and quantize
+
+The honest ceiling: the lyric sheet gets the phrasing close, **Studio gets it exact.**
+This is the literal answer to "the line doesn't start at the start of the bar", and it
+works after generation on any clip:
+
+1. Open the song in Studio, set BPM to **Manual** and type 174 — auto-detect drifts.
+2. Click the vocal clip's waveform to drop a **warp marker** at the drifting point (or
+   auto-place markers at every transient).
+3. Drag the marker to where the syllable should land. Time-stretches without changing
+   pitch.
+4. **Quantize** snaps the marked points to the tempo grid.
+5. Coarser, non-destructive alternative: click the clip, `4` for the sidebar, set
+   **Clip Settings → `On Beat`** rather than `Original Tempo` — locks the whole clip to
+   the project grid.
+6. If you split to fix a region, finish with **Heal Edits** to blend the seam.
+
+**And re-roll before any of this.** Phrasing varies between takes on an identical sheet;
+a re-roll is cheaper than surgery.
+
+### 4b. Pronunciation fixes — respelling is not a word change
+
+Suno has **no dictionary and no IPA**: it sounds words out from English spelling
+patterns. So the fix for a mispronounced word is always to **spell it the way it
+should sound**, not the way it's spelt. The word you hear is unchanged — only the
+spelling that produces it. That keeps the released lyric intact.
+
+| Was | Now | Why |
+|---|---|---|
+| `paralytic` → `paraletic` → `paralettic` → **`parra lettic`** | Took three goes, and the failures are the interesting part. The rhyme chain is **ethic / pathetic / paralytic / get it**, all on a short *-et-*, and the `y` spelling pulls the stressed vowel long. But **both single-word respellings kept coming out "paralytic"** — because they still *look like* the word, so the model recognises it and normalises back to the dictionary pronunciation. **Splitting it into two words defeats the recognition**, which is exactly why the wine worked. `parra` (double r → short *a*), `lettic` (double t → short *e*, as in athletic). Four syllables either way, so no timing cost. |
+| `Châteauneuf-du-Pap` | `shatoe nuff doo pap` → `shatoe narf doo pap` → **`shatoe nerf doo pap`** | Two faults in one word, and the second is the interesting one. The middle token then took one more pass by ear: `nuff` sat wrong, and `narf` reads as */nahf/* in a non-rhotic British mouth, which is closer to the French *neuf*. **The risk to know:** `ar` is only r-less if the voice stays British — if the accent ever drifts American this is the token that will sprout an R. The rest of the line was right first time. |
+| `BLOUGH` → **`blaow`** | Came out as neither `blow` nor `blau` — a mumbled `bleh`. **`-ough` is the least soundable-out cluster in English**: it maps to at least seven different vowels (*through, though, tough, cough, bough, thorough, hiccough*), so a model working from spelling patterns has no way to pick, and on a **nonsense** word there is no dictionary entry to fall back on either. `blaow` is an attested spelling (the grime/hip-hop ad-lib) that can only be read one way, and it lands the `allow / now / blaow` chain. |
+
+**Why the wine came out slow, and it wasn't the model being careless: a hyphen inside
+a word is a documented brake.** It makes the vocalist hold and bend the note.
+`Châteauneuf-du-Pap` carries **two** of them, so the line was being explicitly
+instructed to stretch exactly where it needed to rattle. Dropping the hyphens is the
+speed fix; the phonetic respelling is the pronunciation fix; and the circumflex goes
+because a model sounding words out from English patterns has no use for a French
+diacritic.
+
+The line stays comma-free on purpose — no punctuation reads as a **wall of words that
+gets rushed**, and rushed is the brief here. The `pap` spelling is load-bearing for the
+rhyme with `crap` in the line above, so it survives the respelling.
+
+**The rule both fixes share, and it's the reusable one: when a respelling keeps getting
+overridden, the model is recognising the underlying word — break it into separate words
+so it can't.** A single respelt token is still a token; two short ones aren't the word
+any more. Escalation ladder: respell → double the consonants → **split into words**.
+Ladder for this one if `parra lettic` still fails: `pa ra lettic`, then `parra let ick`.
+
+**The split rung is only available to multi-syllable words.** `paralytic` and
+`Châteauneuf-du-Pape` are four syllables each, so they had syllables to redistribute
+across two tokens at no timing cost. A **monosyllable cannot be split** without adding a
+beat to the line. For one-syllable words the ladder is shorter: **respell to an attested
+spelling** (one a human writer would actually use, so the model has seen it) → **double
+the vowel** (`blaaow`) → give it its own stress unit with a comma. `blaow` is rung one;
+`blaaow` is the untested fallback.
+
+**And take the word out of ALL CAPS if it isn't a real word.** Caps are already on our
+known-unreliable list as an emphasis mechanic, but on an invented word they carry a
+second, worse risk: an unfamiliar all-caps token reads as an **initialism**, and the
+model tries to spell it out or gives up and mumbles. The other shouts in this song —
+`KEEP ON WALKING`, `FUCKIN`, `SPEAK TO THE HAND BITCH!` — are real words and can't be
+misread that way, so they stay. **Caps are a risk in proportion to how unfamiliar the
+token is.** The shout is carried by the spelling instead: `blaow` *is* a shout in the
+tradition it comes from.
+
+The comma before it is restored from the released take as well. A comma marks a stress
+boundary, so `now, blaow` gives the payoff word its own unit to land on rather than
+tacking it onto the tail of the previous phrase — which is where a one-word shout wants
+to be.
+
+**Consistency rule:** if either word ever recurs, spell it the same way every time —
+inconsistent respelling reintroduces the error.
+
+**Still intermittent, deliberately untouched:** `pathetic` occasionally not landing in
+the chain. Intermittent means **re-roll**, not rewrite — don't respell a word that
+mostly works. If it becomes reliable-bad, `pathettic` is the untested fallback (the
+double consonant biasing the vowel short); try it once and keep it only if it wins.
+
+### 4c. The second layer — six attempts, and what finally fit
+
+**The short version, because this took six rounds.** Camping wanted *something* besides
+voice and drums. Five attempts came from outside the track's own genre and all five
+failed: GPOM's strings (sounded like GPOM), a dub piano and horn section (upbeat and
+bouncy), a glockenspiel and French horn (whimsical, and it made them sing). **The sixth
+tries the obvious thing instead — the synthesizers the genre already uses.**
+
+**Two rules came out of it that are worth more than the arrangement itself:**
+
+1. **A melodic accompaniment invites a melodic vocal.** The glock and horn gave the model
+   a tune under the verses, and it handed that tune to the singer — four rounds of casting
+   work undone by the *accompaniment*, with no vocal clause touched. **If a spoken-word
+   delivery starts drifting sung, look at what is playing underneath it.** The synth layer
+   is deliberately a *texture* under the verses (one held, filtering note; one repeating
+   stab) and only becomes a *lead* in the drops, where there is no vocal to influence.
+2. **When five wordings of the same idea each fail differently, the category is wrong,
+   not the wording.** Each orchestral attempt was fixed correctly and then failed in a new
+   way. That pattern is the signal to change direction rather than iterate again.
+
+**How the synths are worded.** Serum is the reference sound but **its name is not in the
+prompt** — plugin brand names are unreliable at best and an alias-collision risk at worst
+(see `skank`, below). The transferable term is **`wavetable`**, plus the behaviours that
+make the sound: `screaming detuned wavetable lead, hard-synced, bending, formant-morphing,
+gnarly mid-range`. `My Taste` adds `no orchestral instruments and no piano anywhere`, which is the
+line holding six rounds of orchestral wreckage out of the track — narrowed from
+`no acoustic instruments` in round 14, which was broad enough to block the guitar too.
+
+**Note on "dancehall".** Read as **dancefloor** D&B — big-room, main-stage synths — not
+the Jamaican genre, which is excluded along with the rest of the reggae direction.
+
+### 4d. Amen fills — why the first attempt was inaudible
+
+Round 14 asked for `an amen break rolls in as a fill at the end of every eight bars` and
+the fills did not arrive. Two causes, and the first one is the reusable finding.
+
+**1. The bed was already made of amen.** `My Taste` described the kit as
+`chopped amen breaks`, so the track's default drums *were* an amen break. A fill built
+from the same sample as the bed has nothing to contrast against, and an event you cannot
+distinguish from the background is an event that did not happen. **This is the piano
+failure again in a different costume** — "sparse piano" was graded against a piano's
+normal idiom and lost; an amen fill was graded against a bed of amen and lost. Fix: the
+bed is now `dry chopped breakbeats` and the word **amen** is reserved for the fill alone.
+
+**2. A rate is not enough for a discrete event.** "Rate beats adjective" (§4c, the piano)
+holds for the *density of something continuously playing*. A fill is an **event**, and
+Suno has no bar counter — the count is the most ignorable word in the sentence. What
+lands is the **sound and the contrast**: what the drums do differently, for how long, how
+loud, and that they come back. So the wording moved from a label plus a number to a
+description of the moment: *the drums tear into a chopped amen roll for a whole bar,
+snares tumbling over each other, loud and messy up front, then straight back in.* The
+interval was halved to four bars at the same time, but that is the least load-bearing
+word in it.
+
+**Deliberately not written: "double speed" or "double time".** Both are in the Exclude
+box for the timing fault, and naming a tempo word in the Style box risks the whole track,
+not just the fill. `snares tumbling over each other` buys the same impression of speed
+with no tempo word in it.
+
+### 4e. How long should a bracket cue be?
+
+The cues had grown to ten clauses and 1,010 characters on verse 1. They were cut to seven
+and 693 in round 15, with no section-scoped fact lost. The question behind it — *is Suno
+even reading all of this?* — has an evidenced answer both ways: **yes it reads them**
+(every arrangement win in this sheet came through a cue, and every accidental instrumental
+gap came from one), **but they compete** (round 1's double-time fault came from cue
+density). With ten clauses, none of them dominates.
+
+**The rule, and it is the mirror of the My Taste rule.** The lyric cue is the *only*
+section-scoped box we have. `My Taste` and the Style box are both global. So:
+
+| Box | Scope | Should carry |
+|---|---|---|
+| My Taste | none — global | only what plays from bar one |
+| Style | none — global, strongest | the whole-track truth |
+| **Lyric cue** | **section-scoped** | **only what is true of this section and not the others** |
+
+Everything else in a cue is duplication of the Style box, and duplication costs attention
+without adding scope. What that removed here: the guitar's tone spec (global — it is the
+same guitar in both verses, and the tone lives in the Style box), the wavetable lead's
+full spec (global), and three separate denials of melody in the intro. What stayed:
+entrance timing, the no-drums first half, "the guitar drops out here", drop 2's
+*relative to the first drop*, and the anti-gap guard — all facts about **this section**.
+
+**One deliberate exception.** The amen clause is *kept* in all four cues even though it is
+now global, because the same round is trying to make the fills louder, and thinning the
+repetition on the exact thing being boosted would be two changes fighting. Once the fills
+are audible, that clause is the next thing to drop.
+
+### The second test: is it derivable from the Style box?
+
+Scoping alone left verse 1 at 693 characters — still **eight times** the toolkit's own
+`under roughly 80 characters` guidance. So round 16 applied a harder filter, and a clause
+now has to pass **both**: section-scoped **and** not already implied by the Style box's
+`Four steps:` sentence, which is the full arrangement spec for the track.
+
+That sentence turned out to be doing most of the work the cues were repeating. Verse 1
+went **693 → 311**, six clauses; every cue in the song, 2,469 → 1,657.
+
+| Cut from verse 1 | Why it had no defence |
+|---|---|
+| the whole casting description | near word-for-word from the Style box, which *already* scopes it — it says "Verse one is a weathered British man in his fifties…". The **fixed short label** is the load-bearing part and it stays. |
+| the guitar's entrance spec and figure | Style's step two *is* the voice over the guitar riff |
+| `a short hard synth stab starts repeating once the beat is in` | already flagged as the first thing to cut if the pre-drop clutters — this took it |
+| the wavetable lead's spec (drop 1) | Style's step four, verbatim |
+
+**What survived, and why each one has a name.** The voice label (the switch between men is
+section-scoped and Style only says "verse one / verse two"); `the low synth note holds
+underneath` (Style orders the steps but never says the note carries); **`no drums and no
+bass for the first half of this verse, then a dry chopped breakbeat…`** — the single most
+load-bearing clause in the sheet, because Style says step three follows step two but not
+*where*; the amen clause (the deliberate duplicate above); and `the words never stop, no
+instrumental passage in this verse`, the anti-gap guard bought over rounds 6–10.
+
+**This is where the trimming stops being a decision and starts being a bet.** Every
+remaining clause has a reason that can be stated. Cutting further means cutting a
+hard-won guard on a guess, so the next cut should be settled by a generation, not by
+argument. The round-15 cues are archived in
+[`./camping-prompt-history.md`](./camping-prompt-history.md) as the revert target — put
+them back one cue at a time, verse 1 first, if arrangement regresses.
+
+**Honest limit on all of this:** we have never A/B'd cue length on this track. Long cues
+demonstrably *work* here; the claim is that they dilute, and it rests on round 1's
+density-driven timing fault plus the toolkit's general guidance. The round-16 take is the
+first real test of it.
+
+**Trim ledger — Style box, round 15.** Adding the amen sentence pushed the box to 1,040.
+Back to **989** by cutting, in this order: `hands to` → `,`; `, no melody` from the intro
+note (the intro cue says it twice more); `low down` from the guitar (`low palm-muted`
+already says it); `right at the front` → `up front`; `slam back into the groove` →
+`straight back in`; `one steady tempo` → `steady tempo`. Nothing cut from the casting
+clauses or the unity sentence, per the standing rule.
+
+### 4f. More guitar — bought with one global clause, not three cues
+
+Round 17 wanted *a little* more guitar. The instinct is to add a guitar clause to the
+bridge cue and the outro cue, which is exactly the growth round 16 just undid. **The
+cheaper move is to change its scope once, globally.** The Style box's guitar clause gained
+`running under every vocal section` — four words that put the riff under the bridge and
+the outro as well as the two verses, and the `then the drop, guitar out` clause still
+carves the drops out of it.
+
+That leaves the cues carrying only what the global sentence *cannot* say:
+
+- **Bridge** — `the guitar riff sparser and quieter here, still one repeating figure, never
+  a tune`. Its *presence* is derivable and was cut back out after the first draft; the
+  **character change** is not. And the guard matters here specifically: the bridge strips
+  the drums back, so it is the most exposed vocal in the song, and an exposed vocal over a
+  melodic accompaniment is the exact mechanism that made both men **sing** in round 12
+  (§4c). A palm-muted single-note figure is rhythmic rather than melodic, so the risk is
+  much lower than the glockenspiel was — but `never a tune` costs eleven characters and
+  buys insurance against the one failure that has actually happened.
+- **Outro** — the dissolve list gained the guitar: `voice, guitar and bass dissolve into
+  static`. Which instruments dissolve is a fact about that section alone.
+
+Cost: cues went 1,657 → 1,750, spending back 7% of round 16's trim on two sections
+gained. Style box 989 → 997, paid for out of the trim order (`Verse one is a` → `Verse
+one,`, `no bassline` → `no bass`, `loud and messy up front` → `loud up front`,
+`steady tempo throughout` → `steady tempo`).
+
+**The escalation ladder if it is still not enough guitar**, cheapest first: let the riff
+ride the first few bars of drop 1 before dropping out (costs the clean guitar-out contrast);
+open the intro on the riff instead of the synth note (already a parked option in Watch
+items, and it matches the *8 Mile* reference); make the figure move more often. **The last
+one is the risky rung** — "more notes" is the direction a solo lives in, and `never a solo,
+never chords` took a round to win.
+
+### 5. Settings
+
+Style influence **75** · weirdness **30** · **no saved Voice** · model **v5.5**.
+
+**No saved Voice is deliberate and load-bearing.** A Voice binds the lead slot for the
+whole track — it has no section scope — which is exactly what made Bob and Tarquin
+identical on the released take. Weirdness sits at 30 because a cue-heavy sheet wants
+obedience over invention.
+
+### If the delivery goes flat
+
+Stripping the cues is deliberate and it may cost performance — the released take's
+delivery came from them. If the take fixes the timing but the verses read
+monotonous, re-add **only these four**, on their own lines, and nothing else:
+
+```
+[whisper, conspiratorial]   → before "but I bet that you paid for your wheels on tick!"
+[shout, full chest]         → before "cash from the bank for your wank tank"
+[shout, cracking, begging]  → before "please sir, can I FUCKIN, have some more?"
+[mocking falsetto sneer]    → before "What about if we taxed the rich?"
+```
+
+Four cues across the whole song, at the four moments that actually change. That's
+the level the research calls minimal, and it keeps the peaks without chopping the
+verses into micro-sections.
+
+---
+
+## If a round still gives one voice — cut on the drop
+
+Likely, and worth planning for now: **stop asking one generation to be two men.**
+Camping's drop is still a natural edit point, and every source — ours and the
+web's — lands in the same place: generate separately, assemble in production.
+
+1. **Generation A — Bob's half.** Intro + verse 1 + drop. Style box describes
+   **one** voice: the low gravelly one. Lyrics box carries verse 1 only.
+2. **Generation B — Tarquin's half.** Verse 2 + drop, against the **same** style
+   foundation but describing **only** the high clean voice.
+3. **Generation C — the bridge.** This is the one place a single-generation duet
+   has a real chance: short alternating complete lines is the pattern that
+   stabilises best. Same four-axis contrast, short repeated labels.
+4. **Join at the drops** in any DAW, or in Studio with BPM set to Manual.
+
+The win is that the voices never share a generation, so there is nothing to
+average and nothing to swap. Casting stops being probabilistic. Say the word and
+I'll write the click-path, including the settings for each generation.
+
+**A saved Voice per character becomes correct at this point** — one Voice per
+generation is exactly the supported case, and it's the strongest version of this
+plan. It's what a Voice is for; round 1's mistake was attaching one to a track
+that needed two.
+
+---
+
+## Watch items
+
+- **"AI"** in the bridge may render as a word rather than the letters. If so,
+  respell `A-I` consistently everywhere it appears.
+- **ALL CAPS** ("FUCKIN", "SPEAK TO THE HAND BITCH!") is not a reliable shout mechanic on its own
+  — `KEEP ON WALKING` came out of caps in round 15 and gained a comma instead, which is the
+  more reliable mechanic anyway (a comma is a stress boundary; caps are not documented) —
+  and the sheet no longer carries the bracket cues that used to back them. If those lines
+  lose their force, the fix is the four-cue re-add list in *"If the delivery goes flat"*.
+  Both are safe to leave capitalised because they are **real words**; `blough` was not,
+  and its caps were dropped for exactly that reason (§4b).
+- **Verbatim: verified 2026-08-21, and it now is.** Three words had drifted and were
+  restored — `getting`/`paying` back to `get`/`pay`, and the missing `an` before
+  *"I pay my tax"*. The only intentional departures are the four respellings and
+  `the last part`, all listed in §4. **Re-run the check in §4 after every lyric edit**;
+  drift is silent and none of these were noticed by ear.
+- **The intro could open on the guitar** instead of the long synth note — it is what the
+  *8 Mile* reference track does, and it is rung two of the guitar escalation ladder (§4f).
+  Not taken, because it would cost the bare gear-one opening.
+- **One interpretive call:** the final line, unattributed in the released lyric,
+  is cued as **both men together**. Change it to the high clean voice alone if you
+  want the released reading.

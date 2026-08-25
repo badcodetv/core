@@ -23,7 +23,7 @@ has two structural problems:
 
 The project's own prior design already anticipated hardening the loop into a deterministic
 command (`docs/superpowers/specs/2026-06-20-flow-automation-loop-design.md`), and
-`docs/superpowers/flow-selectors.md` explicitly calls itself "the input contract for
+`docs/flow/automation-images.md` explicitly calls itself "the input contract for
 hardening the loop into `badcode flow`."
 
 ## Goal
@@ -49,7 +49,7 @@ Both are **project-scoped and auto-activate** when working in the repo (skills v
   logs into Google/Flow on the persistent profile. The server attaches to that browser; it
   does not automate login.
 - **Reference/character consistency is out of scope for v1.** The spike
-  (`flow-selectors.md`) flags this as the single biggest quality risk and as still needing
+  (`automation-images.md`) flags this as the single biggest quality risk and as still needing
   its own investigation. v1 generates single images from a prompt; consistency is future
   work.
 - **Flow's built-in "Make a Story" / "Develop a storyboard" agentic modes** are not used;
@@ -115,7 +115,7 @@ skill/orchestrator's job.
 | `flow_refine` | `{ prompt, outPath }` | `{ path, mediaId }` | Sends a follow-up correction in the **same** Flow session (matches the spike's "generate → judge → follow-up fix" reality), harvests the new active canvas. |
 
 ### Internals (moved off the model)
-- **Generation step sequence** (from `flow-selectors.md`): navigate
+- **Generation step sequence** (from `automation-images.md`): navigate
   `https://labs.google/fx/tools/flow` → ensure project (`button "add_2 New project"`) →
   type into the agent textbox (placeholder *"What do you want to create?"*) → submit
   (`button "arrow_forward Create"`) → wait for the assistant turn.
@@ -123,7 +123,7 @@ skill/orchestrator's job.
   `media.getMediaUrlRedirect` URL via Playwright's `page.request` (follows the 302 to the
   signed CDN URL with cookies, server-side), then **write the bytes to disk with `fs`**.
   Because the server runs in full Node (not the `browser_run_code_unsafe` VM sandbox), the
-  curl/sandbox handoff documented in `flow-selectors.md` is no longer needed.
+  curl/sandbox handoff documented in `automation-images.md` is no longer needed.
 - **Completion signals**: stills — new assistant paragraph + `button "Generated image"`
   present; video — poll the media URL's `content-type` until it is `video/*` (the spike's
   working signal; `videoWidth`/chat-text are unreliable). Never a fixed sleep.
@@ -140,7 +140,7 @@ skill/orchestrator's job.
 - Generation timeout → error carrying last-known state (project URL, whether a turn
   started); the skill decides whether to retry or refine.
 - Selector drift / unexpected DOM → fail loudly naming the step that broke;
-  `flow-selectors.md` remains the maintained input contract.
+  `automation-images.md` remains the maintained input contract.
 
 ## Component B — `badcode-art-direction` skill
 

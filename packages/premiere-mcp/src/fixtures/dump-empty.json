@@ -1,0 +1,71 @@
+{
+  "project": {
+    "name": "t7-sequence.prproj",
+    "path": "\\\\?\\D:\\badcode-videos\\_smoke\\t7-sequence.prproj"
+  },
+  "sequence": {
+    "name": "s00-empty",
+    "guid": "3f0c830c-43a6-4fb7-9cf0-54fb4c6bac54",
+    "timebase": "10594584000",
+    "frameSize": {
+      "w": 1920,
+      "h": 1080
+    },
+    "end": 0,
+    "playhead": 0
+  },
+  "videoTracks": [
+    {
+      "index": 0,
+      "name": "Video 1",
+      "muted": false,
+      "items": [],
+      "transitions": []
+    },
+    {
+      "index": 1,
+      "name": "Video 2",
+      "muted": false,
+      "items": [],
+      "transitions": []
+    },
+    {
+      "index": 2,
+      "name": "Video 3",
+      "muted": false,
+      "items": [],
+      "transitions": []
+    }
+  ],
+  "audioTracks": [
+    {
+      "index": 0,
+      "name": "Audio 1",
+      "muted": false,
+      "items": [],
+      "transitions": []
+    },
+    {
+      "index": 1,
+      "name": "Audio 2",
+      "muted": false,
+      "items": [],
+      "transitions": []
+    },
+    {
+      "index": 2,
+      "name": "Audio 3",
+      "muted": false,
+      "items": [],
+      "transitions": []
+    },
+    {
+      "index": 3,
+      "name": "Audio 4",
+      "muted": false,
+      "items": [],
+      "transitions": []
+    }
+  ],
+  "markers": []
+}

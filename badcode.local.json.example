@@ -1,0 +1,8 @@
+{
+  "_comment": "Copy to badcode.local.json (gitignored) and set mediaRoot for THIS machine. See design/2026-08-21-premiere-bridge-and-video-fx.md.",
+  "mediaRoot": "D:\\badcode-videos",
+  "premiere": {
+    "port": 7890,
+    "exportPreset": "C:\\Program Files\\Adobe\\Adobe Premiere Pro 2026\\MediaIO\\systempresets\\4E49434B_48323634\\01 - Match Source - High bitrate.epr"
+  }
+}

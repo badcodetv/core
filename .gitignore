@@ -42,3 +42,14 @@ chain/.solana/
 
 # Cached FRED series for the ENC backtest (m2-backtest.mjs fetches it on demand)
 design/research/2026-08-12-enc-tokenomics/m2sl.csv
+
+# Flow video takes. The repo has never tracked a .mp4 and shouldn't start: a single
+# scene's takes are ~155MB and git keeps every byte forever. The PROMPTS are the
+# artifact (scenes/*.md); the clips are re-generatable from them, and keepers belong
+# on the bucket / in the edit, not in history. Stills stay tracked — they are chain
+# anchors the prompts refer to, and they are small.
+docs/stories/**/storyboard/img/*.mp4
+docs/stories/**/scenes/**/*.mp4
+
+# Premiere bridge: per-machine media root + port (see design/2026-08-21-premiere-bridge-and-video-fx.md)
+badcode.local.json

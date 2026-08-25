@@ -3,7 +3,8 @@
 We are not pretending to be master storytellers. We'd rather **stand on the shoulders of giants** —
 study how great stories work and borrow their machinery — than wing it. This doc is the method.
 
-> Companion: [`how-we-tell-it.md`](./stories/gitpush-origin-master/how-we-tell-it.md) goes deeper on the one
+> Companion: [`story-craft/`](./story-craft/README.md) is the **craft** this method assumes — what makes a
+> story grip, researched and graded (the `story-craft` skill). And [`how-we-tell-it.md`](./stories/gitpush-origin-master/how-we-tell-it.md) goes deeper on the one
 > job this doc only gestures at — conveying the [Storyverse](./stories/storyverse/confession.md)'s
 > three big ideas (participatory
 > reality, hierarchical entanglement, multi-dimensional time) without losing the audience. The
@@ -37,6 +38,10 @@ characters, the beats, and the punchline — so the audience feels the point rat
 
 1. Write the **concept + background** for the story.
 2. Research storytelling techniques and comparable stories — find the machinery worth borrowing.
+   **Done once and kept (2026-08-22):** run the **`story-craft`** skill —
+   [`story-craft/principles.md`](./story-craft/principles.md) is the machinery, graded by evidence,
+   with the house rulings where the sources disagree; [`story-craft/checklist.md`](./story-craft/checklist.md)
+   is the review pass. Don't re-research per story; add to the toolkit when a story teaches it something.
 3. Draft **beats** (scene-by-scene), then **characters** (each visual/behavioural choice loaded with
    meaning), then **image/style direction**.
 4. Capture the story in its own folder, **`docs/stories/<story>/`** — `story.md` (concept,
