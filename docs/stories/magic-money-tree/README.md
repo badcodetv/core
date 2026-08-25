@@ -37,6 +37,12 @@ artifact, and git history preserves the old canon.
 ## Canon
 
 - [`story.md`](./story.md) — the re-founded spine: key concept, background, beats, open questions
+- [`documentary.md`](./documentary.md) — **PROPOSAL 2026-08-25 (Kai + Claude), not yet ruled:** the
+  **documentary cut** — real archive + one generated character (Keynes on the bench, answering only
+  in his own words), the debt ledger as spine, `YEAR · WHAT FOR · HOW MUCH · HOW LONG` receipt cards,
+  May's *shake* → the real mulberries as the punchline. Removes the fable layer and reverses the 08-06
+  ending ruling (fascism moves to Act 1 as history) — §6 states the fork; Kai decides. Research under
+  it: [`research/documentary-research-2026-08-25.md`](./research/documentary-research-2026-08-25.md)
 - [`the-grove.md`](./the-grove.md) — **the worldbuilding layer (2026-08-07)**: how a money tree
   actually works and its single limit, the tree inside every central bank, the Bank of England's
   four mulberries and the lime they cut down, the park tree's 1914 parentage, and the history
@@ -73,6 +79,7 @@ artifact, and git history preserves the old canon.
 | Medium | Where | Status |
 | --- | --- | --- |
 | Story spine | [`story.md`](./story.md) | **re-founded 2026-08-06**, **grove lore + second-pass rulings 2026-08-07** — frame locked, park = St James's, opening ascent canon; open: script, song, easter-egg promotions |
+| Documentary cut (proposal) | [`documentary.md`](./documentary.md) | **proposed 2026-08-25** — treatment complete (engine, 5-chapter beat sheet, ledger cards, fork vs story.md, gates, production plan); ten-lane research sweep same day; **awaiting Kai's ruling on the fork (§6) and the open questions (§10)** |
 | Grove lore | [`the-grove.md`](./the-grove.md) | **new 2026-08-07** — mechanism + family + history stops; fully cited |
 | Easter eggs | [`easter-eggs.md`](./easter-eggs.md) | **new 2026-08-07** — tiered found details awaiting Kai's promotion rulings |
 | Research | [`research/`](./research/) | complete (6 briefs: 4 on 2026-08-05, fascism 2026-08-06, central-bank trees 2026-08-07) |

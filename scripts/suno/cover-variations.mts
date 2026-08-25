@@ -181,6 +181,29 @@ export const VARIATIONS: Variation[] = [
     lift: ['orchestral strings', 'violins', 'cello', 'string section', 'brass band'],
     liftWhy: '`epic trailer music` stays banned — that is the clause holding this back from Hollywood',
   },
+  // ── Round 14, 2026-08-25. Kai: it all sounds too close to the source — try orchestral
+  // overlays on the winning direction. See camping-cover.md §7 for why "close to the source"
+  // is partly structural, not just an Audio Influence question. ──
+  {
+    id: 'cover-12-dub-guitar-strings',
+    name: 'Dub + guitar + strings',
+    thesis:
+      "Round 11's merge with a cold string section added — violins and cello holding underneath the guitar, out at the drop. Tests whether an orchestral layer is what breaks the resemblance to the source.",
+    middle:
+      "Four steps: a cold string section, violins and cello alone, one bleak sustained figure; then the voice over a low palm-muted guitar riff, strings holding underneath, one figure each, repeating, never a solo, never chords, under every vocal, tape delay throwing every line end across the bar; then a dry chopped breakbeat, sub bass first, nothing else; then the drop, guitar and strings out, kit at full weight, Reese sub and a screaming lead cut against it.",
+    lift: ['dub', 'orchestral strings', 'violins', 'cello', 'string section'],
+    liftWhy: 'dub as 07/11; strings/violins/cello/string section all banned outright by the accepted list',
+  },
+  {
+    id: 'cover-13-dub-guitar-horns',
+    name: 'Dub + guitar + horns',
+    thesis:
+      "Round 11's merge with a cold low brass section added instead — horns stabbing underneath the guitar, out at the drop. The other orchestral overlay Kai asked for.",
+    middle:
+      "Four steps: a cold low brass section alone, one bleak sustained figure; then the voice over a low palm-muted guitar riff, brass stabbing underneath, one figure each, repeating, never a solo, never chords, under every vocal section, tape delay throwing every line's end across the bar; then a dry chopped breakbeat, sub bass first, nothing else; then the drop, guitar and brass out, kit at full weight, Reese sub and a screaming lead cut against it.",
+    lift: ['dub', 'brass band'],
+    liftWhy: 'dub as 07/11; brass band banned outright — marching band/oompah/dixieland stay banned, same guard as 02',
+  },
   // ── Round 11, 2026-08-25. Not part of the A/B: the merge of the two winners. ──
   {
     id: 'cover-11-dub-guitar',
@@ -231,7 +254,15 @@ export const titleFor = (v: Variation) => `Camping cover ${v.id.slice(6, 8)} - $
  * Kept short and parenthesised: `listTakes` slices row titles at 48 characters, and its
  * `\s+v\d` splitter would eat a bare ` v2`.
  */
-export const SET = ' (v4)'
+export const SET = ' (v6)'
 // v3 = the lyric timing pass of 2026-08-25 (camping.md §4: `I want change...` + the performance cues).
 // v4 = Kai's hand edit the same day: "pathetic" -> "it's pathetic", "sorroooooows," -> "sorrows," —
 // a real word/spelling change, not just layout, so it earns its own suffix.
+// v5 = round 13, 2026-08-25. v3's punctuation fix for "I want change" did not survive generation
+// (Kai heard the same cram in the round-11 take), so the orphan line is MERGED into its neighbour
+// instead of decorated — a real line-count change, not layout on top of unchanged words.
+// v6 = Kai's hand edit, same session: verse 2 line reordered, "it's pathetic, a lack of work
+// ethic" -> "a lack of work ethic, it's pathetic," — landed AFTER v5's Create had already fired,
+// so the v5 pair carries the OLD order. Nothing wasted: v5 still answers round 13's actual
+// questions (Weirdness 40, Duration 200s, Audio Influence 10). v6 is queued for whenever the
+// next credit is spent.

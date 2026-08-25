@@ -28,7 +28,7 @@
  */
 import type { Page } from 'playwright'
 import { readFileSync } from 'node:fs'
-import { connect, setSlider, setTitle, setLyrics, create, listTakes } from './suno.mts'
+import { connect, setSlider, setTitle, setLyrics, setDuration, create, listTakes } from './suno.mts'
 import { VARIATIONS, styleFor, excludeFor, titleFor, type Variation } from './cover-variations.mts'
 
 /**
@@ -41,6 +41,10 @@ import { VARIATIONS, styleFor, excludeFor, titleFor, type Variation } from './co
 const WEIRDNESS = Number(process.env.SUNO_WEIRDNESS ?? 30)
 const STYLE_INFLUENCE = Number(process.env.SUNO_STYLE_INFLUENCE ?? 50)
 const AUDIO_INFLUENCE = Number(process.env.SUNO_AUDIO_INFLUENCE ?? 25)
+// Auto (Suno's own default) unless set. A target, not a contract — Suno "shortens reliably and
+// repeatedly fails to stretch" (suno.mts's own SunoSpec docs), so treat this as a ceiling to aim
+// under, not a floor.
+const DURATION_SEC = process.env.SUNO_DURATION_SEC ? Number(process.env.SUNO_DURATION_SEC) : undefined
 
 /** The canonical words. `camping.md` §4 is the source of truth; the attached audio is not. */
 const SHEET = new URL('../../docs/stories/camping/songs/camping.md', import.meta.url).pathname
@@ -100,6 +104,7 @@ async function loadVariation(page: Page, v: Variation, title = titleFor(v)) {
   await setSlider(page, 'Style Influence', STYLE_INFLUENCE)
   await setSlider(page, 'Weirdness', WEIRDNESS)
   await setSlider(page, 'Audio Influence', AUDIO_INFLUENCE)
+  if (DURATION_SEC) await setDuration(page, DURATION_SEC)
   await setTitle(page, title)
   const s = await coverState(page)
   const bad: string[] = []
@@ -210,7 +215,7 @@ if (cmd === 'lyrics') {
   }
   await browser.close()
 } else {
-  console.log(`badcode cover-ab — the Camping cover A/B set. Pinned: W=${WEIRDNESS} SI=${STYLE_INFLUENCE} AI=${AUDIO_INFLUENCE}
+  console.log(`badcode cover-ab — the Camping cover A/B set. Pinned: W=${WEIRDNESS} SI=${STYLE_INFLUENCE} AI=${AUDIO_INFLUENCE} Duration=${DURATION_SEC ?? 'Auto'}
 
   lyrics          write camping.md §4 into the page, generate NOTHING
   plan            print the ten style boxes, touch nothing
@@ -219,6 +224,7 @@ if (cmd === 'lyrics') {
   run [ids...]    Create each in turn — 10 credits and 2 takes per id
                   repeat one: \`run cover-11-dub-guitarx3\` — 3 separate Creates, titles suffixed #1 #2 #3
                   sweep sliders: SUNO_WEIRDNESS=60 SUNO_STYLE_INFLUENCE=75 SUNO_AUDIO_INFLUENCE=15 npx tsx cover-ab.mts run …
+                  target a length: SUNO_DURATION_SEC=200 npx tsx cover-ab.mts run …          # a target, not a contract
 
 ${VARIATIONS.map((v) => `  ${v.id.padEnd(22)} ${v.name}`).join('\n')}`)
 }

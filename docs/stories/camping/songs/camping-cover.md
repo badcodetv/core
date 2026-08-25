@@ -72,6 +72,15 @@ is touched.
 whatever the *source song* was last generated with — so if `camping.md` moves again, `lyrics`
 has to run again too. `check` reports the paragraph count; `run` compares the actual words.
 
+🟡 **The Exclude Styles fill occasionally truncates, and `run` catches it before spending
+anything.** Seen twice on 2026-08-25, both times as part of a two-variation `run` — the
+SECOND variation's exclude box came back a fraction of its expected length (117/831,
+169/871). The style box and everything else in the same load were correct; only the exclude
+field was short. Cause unconfirmed — plausibly the input's own React re-render firing between
+the previous variation's Create and this load's `.fill()`. **Not dangerous**: the length
+check in `loadVariation` catches it and `run` stops before the Create button is ever clicked,
+so no credit has been lost to it. The fix so far is just retrying the one id that failed.
+
 ### Two deviations from the house rules, both deliberate
 
 **No weirdness pair.** The house rule runs every attempt at 30 and 60. Here weirdness is pinned
@@ -407,3 +416,74 @@ pull *less* from the source reference than round 11 did. Style Influence rose to
 `camping.md`'s own accepted setting — the style box should be obeyed harder. Weirdness at 60 is
 the sheet's own house pair's upper value — more invention, and the first real test of whether
 that increases the one-voice regression risk this track has already had (§4c).
+
+---
+
+## 7. Round 13 — "I want change" restructured, and round 14 — why it still sounds close
+
+**Round 13, 2026-08-25.** Three asks: Weirdness 60 → **40**, a length target (**200s**, read
+from "maybe 320" as 3:20), and a real fix for `I want change` since round 11's punctuation
+trick didn't survive generation. All three landed:
+
+- **The line-merge fix** — see `camping.md` Watch items. Round 11's ellipsis/comma approach
+  decorated an orphan line without removing it; round 13 merges `I want change,` into its
+  neighbour, so there is no 3-syllable line left for the model to absorb. Words unchanged,
+  line count down by one — which also serves the "get through it faster" ask, for free.
+- **`SUNO_DURATION_SEC` added to the runner.** Cover mode's Duration control had never been
+  driven from code before this round. It's the same soft target the rest of the toolkit
+  already knows about — "shortens reliably, fails to stretch" — set at exactly what was asked
+  (200s) rather than padded, so the take reveals whether it undershoots here too.
+- **Audio Influence dropped again, 15 → 10** — testing Kai's own diagnosis that the bracket
+  cues weren't landing because the source reference was pulling too hard on delivery.
+
+One take, `Dub + guitar (v5)`, W40 · SI75 · AI10 · Duration 200s.
+
+**Round 14, 2026-08-25 — the resemblance question.** Kai: *"it all sounds very, very similar
+to the other song. I wonder if this is a problem."* This has a concrete, checkable answer, not
+a guess, and it's worth stating plainly:
+
+**Three separate things are all pulling every take back toward the source, and only one of
+them is the Audio Influence slider.**
+
+1. **The style box's `HEAD` and `TAIL` are word-for-word the source's own accepted style.**
+   `camping.md` §2 — casting, both voice descriptions, 174 BPM, the amen-fill clause,
+   `played straight` — carries unchanged into every variation in this set. Only the ~450–500
+   character *middle* differs. Roughly half the box, by design, asks for the same record.
+2. **The words are the same words.** Same rhyme scheme, same syllable rhythm, same rhyme
+   payoffs — a cover with an unchanged lyric is going to phrase like the original almost by
+   construction, independent of anything on the create form.
+3. **Cover mode's audio anchor**, which is the one lever that's actually been swept —
+   25 → 15 → 10 across rounds 11–13 — and is the one thing the sliders in this workflow can
+   move.
+
+**So: is this a problem?** Only if the goal moved from *"a cover of Camping"* to *"a new song
+that happens to share its lyric."* If it's still a cover, sounding recognisably like its source
+is doing its job, not failing it — reasons 1 and 2 are structural and would hold at Audio
+Influence 0. **If it's a problem, the fix isn't another cover-mode round — it's editing the
+style box's casting sentence itself**, which is the one thing every variation has deliberately
+held fixed, because it's what keeps Bob and Tarquin two different men (§0's whole premise).
+That's a bigger, riskier move than anything tried so far and hasn't been taken without asking.
+
+**The orchestral overlays Kai asked for, as the first probe of this question** — two new
+variations, both round 11's merge with a layer added, arrangement only, `HEAD`/`TAIL` and the
+words still untouched:
+
+| # | Name | What's added | Excludes lifted |
+|---|---|---|---|
+| 12 | **Dub + guitar + strings** | violins and cello, cold and sustained, holding under the guitar; out at the drop | `dub`, `orchestral strings`, `violins`, `cello`, `string section` |
+| 13 | **Dub + guitar + horns** | a cold low brass section, stabbing under the guitar; out at the drop | `dub`, `brass band` |
+
+Same settings as round 13 — W40 · SI75 · AI10 · Duration 200s — so the only variable is the
+new layer.
+
+| Take | Verdict | Note |
+|---|---|---|
+| Dub + guitar (v5) | ⬜ | W40 · SI75 · AI10 · Duration 200s |
+| Dub + guitar + strings (v6) | ⬜ | round 14 — does an orchestral layer break the resemblance? |
+| Dub + guitar + horns (v6) | ⬜ | round 14 |
+
+**If these still sound close and Kai wants that fixed rather than accepted**, the next honest
+step is a controlled experiment: run the same style box through ordinary **Create** mode (no
+source attached at all) and compare. That isolates cover mode's audio anchor from reasons 1
+and 2 above — if the Create-mode take *also* sounds like Camping, the resemblance was never
+really about Audio Influence.

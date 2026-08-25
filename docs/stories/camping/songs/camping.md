@@ -1,6 +1,6 @@
 ---
 title: Camping (duet re-cut)
-status: ACCEPTED at round 17, 2026-08-21 — the prompt below is the one that worked. Change it only against a specific fault — rounds 1-14 generated and diagnosed; the orchestral direction is abandoned. LYRICS LAYOUT amended 2026-08-25 (cover round 11) — timing pass on "I want change" + six performance cues; words unchanged from Kai's 2026-08-25 rewrite; the §4 check's baseline is stale (see Watch items)
+status: ACCEPTED at round 17, 2026-08-21 — the prompt below is the one that worked. Change it only against a specific fault — rounds 1-14 generated and diagnosed; the orchestral direction is abandoned. LYRICS LAYOUT amended 2026-08-25 (cover round 13) — the "I want change" orphan line MERGED into its neighbour (round 11's punctuation fix did not work, see Watch items); six performance cues from round 11 kept; the §4 check's baseline is stale (see Watch items)
 released_take: ./camping-released.md
 history: ./camping-prompt-history.md
 bpm: 174
@@ -187,7 +187,7 @@ you got cheese but I want Cheddar
 [change tone to spoken word]
 I can't live like this forever
 [shouting]
-I want change...
+I'm not insane, I want change, 
 not from your pocket, but at the top
 in the meantime though, let me hold that door
 [shout, cracking, begging]
@@ -196,7 +196,7 @@ please sir, can I FUCKIN, have some more?
 [Beat Transition]
 [Verse 2 | well-spoken posh voice, a completely different man | full-weight drum and bass carries straight on, drums flip, colder synths, sharper hats | amen rolls tearing across every fourth bar | the same guitar riff returns underneath, unchanged | nothing else playing at all]
 you are intent on living in a tent
-it's pathetic, a lack of work ethic
+a lack of work ethic, it's pathetic, 
 getting parra lettic,
 drowning your sorrows,
 prospects exist and now I insist
@@ -636,18 +636,21 @@ that needed two.
 
 ## Watch items
 
-- **`I want change...` — the timing pass, 2026-08-25 (cover round 11).** The fault Kai heard
-  on the Dub cover: *"I want change"* and *"not from your pocket but at the top"* crammed into
-  one bar. The mechanism is §4a's: verse 1 opens on a 9-syllable line, which sets the slot;
-  `I want change,` is **3 syllables**, too short to stretch into it, so the model merged it
-  with the next line — 12 syllables in one bar. Fixed with the §4a levers only, **no words
-  changed**: the ellipsis (trailing drift, lets the line hold its own bar), Kai's `[shouting]`
-  cue directly above it (a bracket line is a phrase boundary), and a comma each on the two
-  lines after it (`not from your pocket, but at the top` / `in the meantime though, let me
-  hold that door`). **If it still merges**, the escalation is `I want chaaange...` — a
-  stretch, not a word change (§4b). **Also over budget and deliberately untouched:**
-  `fucking sense of entitlement, and self belief` at 12 in a 9-slot, the next cram
-  candidate if verse 1 still rushes.
+- **`I want change` — round 11's punctuation fix did NOT work. Round 13, 2026-08-25, merged
+  the line instead.** §4a's punctuation levers (ellipsis + commas, no words changed) were the
+  first attempt and Kai heard the same cram in the round-11 take — the orphan line was still
+  being absorbed into its neighbour. **The actual fix removes the orphan rather than
+  decorating it**: `I want change,` was its own 3-syllable line, too short to hold a bar on
+  its own by definition — no amount of punctuation makes a 3-syllable line the same *length*
+  as its neighbours. It is now merged into one line, `I want change, not from your pocket,
+  but at the top` (12 syllables, in range with the rest of the verse), so there is nothing
+  left for the model to absorb it into. This also drops the passage from four lines to three,
+  which is the same lever as §4a's line-break rule run in reverse — **fewer lines, tighter
+  pacing**, which is separately what round 13 was asked for. Kept: `[shouting]` above it, now
+  covering the whole merged line. **If it STILL crams**, the next escalation is a full stop
+  instead of the first comma — a harder break than a comma, forcing two phrases rather than
+  one. **Also over budget and deliberately untouched:** `fucking sense of entitlement, and
+  self belief` at 12 in a 9-slot, the next cram candidate if verse 1 still rushes.
 - 🔴 **The §4 verbatim check is DEAD as of the 2026-08-25 lyric rewrite.** Its baseline is
   `camping-released.md`, which carries the *old* words (`let me count up all the cans`,
   `speak to the hand`); the sheet has moved on and the check now fails on ~80 words by

@@ -321,7 +321,7 @@ async function load(page: Page, spec: SunoSpec, weirdness?: number) {
  * shortens reliably and repeatedly fails to stretch — so aim slightly ABOVE the picture budget
  * and trim in the edit, never below in the hope it grows.
  */
-async function setDuration(page: Page, seconds: number): Promise<string> {
+export async function setDuration(page: Page, seconds: number): Promise<string> {
   const mounted = async () =>
     ((await page.locator('[role="slider"][aria-label="Duration"]').count()) as number) > 0
 
