@@ -83,7 +83,7 @@ const PRELUDE = `
 const ev = (page: Page, body: string, ...args: unknown[]) =>
   page.evaluate(`((...a) => {${PRELUDE}${body}})(${args.map((a) => JSON.stringify(a)).join(',')})`)
 
-async function connect(): Promise<{ browser: Browser; page: Page }> {
+export async function connect(): Promise<{ browser: Browser; page: Page }> {
   const browser = await chromium.connectOverCDP(ENDPOINT)
   const ctx = browser.contexts()[0]
   if (!ctx) throw new Error('NO_CONTEXT — is scripts/flow-chrome.sh running?')
@@ -101,7 +101,7 @@ async function connect(): Promise<{ browser: Browser; page: Page }> {
  * and the step is 1. The `next === cur` break matters: at an end stop the value stops moving
  * and the loop would otherwise spin to its guard.
  */
-async function setSlider(page: Page, label: string, target: number): Promise<string> {
+export async function setSlider(page: Page, label: string, target: number): Promise<string> {
   const s = page.locator(`[role="slider"][aria-label="${label}"]`)
   if (!(await s.count())) return `${label}=absent`
   await s.first().focus()
@@ -146,7 +146,7 @@ async function setLyrics(page: Page, text: string): Promise<number> {
 }
 
 /** React-controlled input: a plain `.value =` is swallowed on the next render. */
-async function setTitle(page: Page, value: string) {
+export async function setTitle(page: Page, value: string) {
   return ev(
     page,
     `const inp = [...panel().querySelectorAll('input[placeholder="Song Title (Optional)"]')].filter(live)[0];
@@ -246,7 +246,7 @@ async function attachVoice(page: Page, name: string): Promise<string> {
 }
 
 /** Read everything back. Paragraph count is the only check that catches the Lexical trap. */
-async function verify(page: Page) {
+export async function verify(page: Page) {
   return ev(
     page,
     `const st = document.querySelector('[data-testid="create-form-styles-wrapper"] textarea');
@@ -364,7 +364,7 @@ async function setTaste(page: Page, text: string): Promise<string> {
 }
 
 /** Click Create and wait for takes carrying `title` to appear. 10 credits, 2 takes per click. */
-async function create(page: Page, title: string, timeoutMs = 240000): Promise<string> {
+export async function create(page: Page, title: string, timeoutMs = 240000): Promise<string> {
   // 🔴 aria-label="Create song". NOT aria-label="Generate" — that is the Lyricist.
   const clicked = await ev(
     page,
@@ -389,7 +389,7 @@ async function create(page: Page, title: string, timeoutMs = 240000): Promise<st
  * comes back empty even though the takes exist. Click back into the current workspace to restore
  * the clip list. Deliberately a click, not a navigation: navigating would wipe the create form.
  */
-async function ensureClipList(page: Page): Promise<string> {
+export async function ensureClipList(page: Page): Promise<string> {
   const n = await ev(page, `return document.querySelectorAll('[aria-label="Select clip"]').length;`)
   if ((n as number) > 0) return 'clip-list'
   const name = await ev(
@@ -421,7 +421,7 @@ async function ensureClipList(page: Page): Promise<string> {
 }
 
 /** Read the clip rows back: title + duration. Rendering clips report a null duration. */
-async function listTakes(page: Page, filter = '') {
+export async function listTakes(page: Page, filter = '') {
   await ensureClipList(page)
   return ev(
     page,
@@ -471,7 +471,10 @@ function extract(file: string, section: string, tasteSection = 'The shared profi
 
 // ─────────────────────────────────────────────────────────────────────────────
 
-const [cmd, ...rest] = process.argv.slice(2)
+// Only dispatch when run directly — `cover-ab.mts` imports the helpers above, and an
+// unguarded top-level dispatch would print the usage banner on every import.
+const IS_CLI = !!process.argv[1] && /suno\.mts$/.test(process.argv[1])
+const [cmd, ...rest] = IS_CLI ? process.argv.slice(2) : ['__imported__']
 
 if (cmd === 'extract') {
   const [file, section, tasteSection] = rest
@@ -514,7 +517,7 @@ if (cmd === 'extract') {
     console.log(JSON.stringify(await listTakes(page, base), null, 2))
   }
   await browser.close()
-} else {
+} else if (IS_CLI) {
   console.log(`badcode suno — drive suno.com/create over CDP. See docs/suno-gpt/automation.md
 
   status                          read the create form back
