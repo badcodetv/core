@@ -181,6 +181,26 @@ export const VARIATIONS: Variation[] = [
     lift: ['orchestral strings', 'violins', 'cello', 'string section', 'brass band'],
     liftWhy: '`epic trailer music` stays banned — that is the clause holding this back from Hollywood',
   },
+  // ── Round 11, 2026-08-25. Not part of the A/B: the merge of the two winners. ──
+  {
+    id: 'cover-11-dub-guitar',
+    name: 'Dub + guitar',
+    thesis:
+      'Kai picked 07 Dub soundsystem, and liked 03 for the guitar. This is 07 with the second guitar from 03 — ' +
+      'the dub desk (tape delay on the line ends, spring on the snare, sub first) over two guitars. Where the two ' +
+      'disagreed at step three (dub: sub bass first; guitar: no bass) dub wins, because dub is the one that was chosen.',
+    // 07's box ran 996 and 03's 973; the union was 1101. Trimmed to 990 by cutting only what the lyric cues
+    // already say (`detuned`, `under the vocal`) and adjectives (`heavy`, `thin`, `electric`). Nothing cut
+    // from casting, the `never a solo, never chords` guard, or `under every vocal section` (§4f).
+    middle:
+      "Four steps: one long synth note; then the voice over a low palm-muted guitar riff with a chorus-pedal " +
+      "jangle over it, one short figure each, repeating, never a solo, never chords, under every vocal section, " +
+      "tape delay throwing every line's end across the bar, spring reverb on the snare; then a dry chopped " +
+      'breakbeat, sub bass first, nothing else; then the drop, guitars out, kit at full weight, Reese sub and a ' +
+      'screaming wavetable lead cut against it.',
+    lift: ['dub'],
+    liftWhy: 'as 07 — `reggae`, `ska`, `ragga MC` and `Jamaican accent` stay banned; we want the mixing desk, not the genre',
+  },
 ]
 
 /** Drop the lifted keywords out of the accepted list, leaving the commas tidy. */
@@ -211,4 +231,7 @@ export const titleFor = (v: Variation) => `Camping cover ${v.id.slice(6, 8)} - $
  * Kept short and parenthesised: `listTakes` slices row titles at 48 characters, and its
  * `\s+v\d` splitter would eat a bare ` v2`.
  */
-export const SET = ' (v2)'
+export const SET = ' (v3)'
+// v3 = the lyric timing pass of 2026-08-25 (camping.md §4: `I want change...` + the performance cues).
+// The words are unchanged from v2 but the layout is not, and layout is timing — so anything generated
+// after it gets the new suffix.

@@ -1,6 +1,6 @@
 ---
 title: Camping (duet re-cut)
-status: ACCEPTED at round 17, 2026-08-21 — the prompt below is the one that worked. Change it only against a specific fault — rounds 1-14 generated and diagnosed; the orchestral direction is abandoned
+status: ACCEPTED at round 17, 2026-08-21 — the prompt below is the one that worked. Change it only against a specific fault — rounds 1-14 generated and diagnosed; the orchestral direction is abandoned. LYRICS LAYOUT amended 2026-08-25 (cover round 11) — timing pass on "I want change" + six performance cues; words unchanged from Kai's 2026-08-25 rewrite; the §4 check's baseline is stale (see Watch items)
 released_take: ./camping-released.md
 history: ./camping-prompt-history.md
 bpm: 174
@@ -156,9 +156,15 @@ EOF
 
 **Structural rules the sheet obeys**, each bought with a failed round: **zero
 parentheses** (they are a mix-position mechanism, not a name tag — round 1); **one cue per
-section**, carrying the voice label in fixed repeated wording; **no cue inside a verse**,
-because every mid-verse bracket tried inserted an instrumental gap (rounds 6–10) — a
-section *header* carries the mid-verse arrangement change instead; and **no `half-time`
+section**, carrying the voice label in fixed repeated wording; **no *arrangement* cue inside
+a verse**, because every mid-verse arrangement bracket tried inserted an instrumental gap
+(rounds 6–10 — the `Build` keyword brought its genre convention with it) — a section
+*header* carries the mid-verse arrangement change instead. **Performance cues are the
+exception**: `[shout, full chest]` modifies the voice, not the arrangement, and carries no
+structural keyword. The block now carries six — Kai's two (`[change tone to spoken word]`,
+`[shouting]`) plus the four from *"If the delivery goes flat"* (§5), added 2026-08-25 on
+cover round 11. **If the verse chops into micro-sections, pull `[whisper, conspiratorial]`
+first**, it is the one furthest from the passage under repair; and **no `half-time`
 anywhere**, a known Suno blind spot that thins the arrangement instead of halving the
 drums.
 
@@ -172,15 +178,19 @@ you keep on walking, through that Wait trose door
 presenting yourself, with your shiny teeth
 fucking sense of entitlement, and self belief
 I get, that you think your deals are slick
+[whisper, conspiratorial]
 but I bet, that you paid for your wheels on tick!
+[shout, full chest]
 cash from the bank for your wank tank
 four tonnes of steel, just to get a meal deal
 you got cheese but I want Cheddar
 [change tone to spoken word]
 I can't live like this forever
-I want change,
-not from your pocket but at the top
-in the meantime though let me hold that door
+[shouting]
+I want change...
+not from your pocket, but at the top
+in the meantime though, let me hold that door
+[shout, cracking, begging]
 please sir, can I FUCKIN, have some more?
 [Drop — instrumental, 8 bars, no vocals | the kit hits full weight and the sub bass drops for the first time | amen rolls tearing across every fourth bar | the guitar drops out here | the wavetable lead tears in over the break]
 [Beat Transition]
@@ -191,6 +201,7 @@ getting parra lettic,
 drowning your sorroooooows,
 prospects exist and now I insist
 that you just stop the grift 
+[mocking falsetto sneer]
 What about if we taxed the rich?
 What do you think this is, BITCH!
 I work hard to pay for my yard
@@ -625,6 +636,24 @@ that needed two.
 
 ## Watch items
 
+- **`I want change...` — the timing pass, 2026-08-25 (cover round 11).** The fault Kai heard
+  on the Dub cover: *"I want change"* and *"not from your pocket but at the top"* crammed into
+  one bar. The mechanism is §4a's: verse 1 opens on a 9-syllable line, which sets the slot;
+  `I want change,` is **3 syllables**, too short to stretch into it, so the model merged it
+  with the next line — 12 syllables in one bar. Fixed with the §4a levers only, **no words
+  changed**: the ellipsis (trailing drift, lets the line hold its own bar), Kai's `[shouting]`
+  cue directly above it (a bracket line is a phrase boundary), and a comma each on the two
+  lines after it (`not from your pocket, but at the top` / `in the meantime though, let me
+  hold that door`). **If it still merges**, the escalation is `I want chaaange...` — a
+  stretch, not a word change (§4b). **Also over budget and deliberately untouched:**
+  `fucking sense of entitlement, and self belief` at 12 in a 9-slot, the next cram
+  candidate if verse 1 still rushes.
+- 🔴 **The §4 verbatim check is DEAD as of the 2026-08-25 lyric rewrite.** Its baseline is
+  `camping-released.md`, which carries the *old* words (`let me count up all the cans`,
+  `speak to the hand`); the sheet has moved on and the check now fails on ~80 words by
+  design. It no longer catches drift because it cannot tell drift from the rewrite. **It
+  needs a new baseline** — the current block, frozen, once these words are signed off — and
+  until then "re-run the check after every edit" is not a guard, it is a ritual.
 - **"AI"** in the bridge may render as a word rather than the letters. If so,
   respell `A-I` consistently everywhere it appears.
 - **ALL CAPS** ("FUCKIN", "SPEAK TO THE HAND BITCH!") is not a reliable shout mechanic on its own

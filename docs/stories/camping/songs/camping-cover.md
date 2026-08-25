@@ -1,6 +1,6 @@
 ---
 title: Camping (cover) — the A/B set
-status: LISTENING — v2 set generated 2026-08-25 (Weirdness 30), awaiting verdicts. v1 is void (stale lyrics) — see §4.
+status: ROUND 11 — Kai picked 07 Dub soundsystem (+ 03's guitar). Merged style + lyric timing pass, generating 2026-08-25. v1 void, v2 judged — see §4–§5.
 source_song: https://suno.com/song/299ef991-d51d-4384-a92f-974342a89714  # "Camping W - 75/65", v5.5, 3:56
 parent_sheet: ./camping.md
 released_take: ./camping-released.md
@@ -240,14 +240,15 @@ re-run alone once the other nine confirmed.
 |---|---|---|
 | 01 Strings intro (v2) | ⬜ | |
 | 02 Bitter brass (v2) | ⬜ | |
-| 03 More guitar (v2) | ⬜ | |
+| 03 More guitar (v2) | 🟡 the guitar | not the winner, but its second guitar goes into round 11 |
 | 04 Blues (v2) | ⬜ | |
 | 05 Soul (v2) | ⬜ | first Create timed out, retried alone |
 | 06 Shoegaze wall (v2) | ⬜ | |
-| 07 Dub soundsystem (v2) | ⬜ | |
+| 07 Dub soundsystem (v2) | ✅ **the one** | Kai, 2026-08-25 — the direction. Its cram at *"I want change"* is the fault round 11 fixes |
 | 08 English folk intro (v2) | ⬜ | |
 | 09 Industrial (v2) | ⬜ | |
 | 10 Full orchestral (v2) | ⬜ | |
+| **11 Dub + guitar (v3)** | ⬜ | the merge — §5. One Create, two takes, W30 |
 
 **What to listen for**, in this order — the failure modes this track has already had:
 
@@ -257,3 +258,110 @@ re-run alone once the other nine confirmed.
 3. **Did the new layer actually arrive**, or did the exclude list quietly veto it?
 4. **Is it still played straight?** Soul, brass and folk all pull toward a wink. The words are
    the only thing allowed to be funny.
+
+---
+
+## 5. Round 11 — the merge, 2026-08-25
+
+**Kai's verdict on the v2 set: 07 Dub soundsystem.** With 03's guitar folded in. The other
+eight are not pursued.
+
+This round moves **three things at once**, which the house rule forbids, and Kai asked for all
+three by name — so they are listed here as three, so a fault can be traced to one of them:
+
+| # | Change | Where |
+|---|---|---|
+| 1 | **Style: 07 + 03 merged** | the box below, 990/1000 |
+| 2 | **Timing pass on `I want change`** | `camping.md` §4 — ellipsis + two commas, no words changed |
+| 3 | **Performance cues** | `camping.md` §4 — the four from its §5 *"If the delivery goes flat"*, plus Kai's two |
+
+### The style box
+
+`HEAD` and `TAIL` are byte-identical to 03 and 07, so this is a merge and not a third thing.
+Where the two middles disagreed at step three — dub says *sub bass first*, guitar says *no
+bass* — **dub wins**, because dub is the one that was chosen. The union ran 1,101; trimmed to
+990 by cutting only what the lyric cues already carry (`detuned`, `under the vocal`) and
+adjectives (`heavy`, `thin`, `electric`). Nothing cut from the casting, the `never a solo,
+never chords` guard, or `under every vocal section`.
+
+```
+Dark UK drum and bass, neurofunk, 174 BPM, minor key — British post-punk spoken word on top, ranted over the beat. Verse one, a weathered British man in his fifties: low, gravelly, smoke-worn, nasal, half-shouted and half-muttered, bone dry. Verse two, a well-spoken British man: higher, clean, plummy BBC English, talking down from a wide room. Four steps: one long synth note; then the voice over a low palm-muted guitar riff with a chorus-pedal jangle over it, one short figure each, repeating, never a solo, never chords, under every vocal section, tape delay throwing every line's end across the bar, spring reverb on the snare; then a dry chopped breakbeat, sub bass first, nothing else; then the drop, guitars out, kit at full weight, Reese sub and a screaming wavetable lead cut against it. Every four bars the drums tear into a chopped amen roll for a whole bar, snares tumbling over each other, loud up front, then straight back in. Grim and bitter, played straight, steady tempo.
+```
+
+**Excludes:** the accepted list minus `dub` — exactly as 07.
+
+### The timing fix, and why it is a layout change and not a bar-count change
+
+Kai's hearing: *cash / four tonnes / Cheddar / forever* is one four-bar group, *I want change
+/ not from your pocket / in the meantime / please sir* the next — and *I want change* was
+being folded into the bar after it. The mechanism is `camping.md` §4a's: **the first line of
+a section sets the phrase slot for the whole section**, and verse 1 opens on nine syllables.
+`I want change,` is **three**. A line that short cannot be stretched to fill a nine-slot, so
+the model merged it with the next line and crammed twelve syllables into one bar. Not a
+grouping error — an orphan line.
+
+The fix uses the three levers §4a names, and changes **no words**:
+
+| Line | Was | Now | Lever |
+|---|---|---|---|
+| `I want change,` | 3 syllables, comma | `I want change...` | ellipsis = trailing drift — the line holds its bar |
+| *(above it)* | — | `[shouting]` | Kai's cue; a bracket line is a phrase boundary |
+| `not from your pocket but at the top` | 1 stress unit | `not from your pocket, but at the top` | comma = stress boundary |
+| `in the meantime though let me hold that door` | 1 stress unit | `in the meantime though, let me hold that door` | comma |
+
+**If it still merges:** `I want chaaange...` — a stretch, not a word change (§4b). **Next
+cram candidate if verse 1 still rushes:** `fucking sense of entitlement, and self belief`,
+twelve syllables in the nine-slot, deliberately untouched this round.
+
+### The performance cues
+
+Kai asked for more square-bracket control over each part. `camping.md` §5 already held the
+answer in reserve — *"If the delivery goes flat — re-add only these four"* — so those four go
+in, at the four moments that change, alongside the two Kai had already placed:
+
+```
+[whisper, conspiratorial]    → before "but I bet, that you paid for your wheels on tick!"
+[shout, full chest]          → before "cash from the bank for your wank tank"
+[change tone to spoken word] → before "I can't live like this forever"        (Kai's)
+[shouting]                   → before "I want change..."                       (Kai's)
+[shout, cracking, begging]   → before "please sir, can I FUCKIN, have some more?"
+[mocking falsetto sneer]     → before "What about if we taxed the rich?"
+```
+
+The shape that gives verse 1's back half: **shout → spoken → shout → begging.** Each of
+Kai's two groups opens loud and closes changed.
+
+**Two named risks.** Six one-clause cues across ten lines is denser than §5's "four across the
+whole song"; if the verse chops into micro-sections, **pull `[whisper, conspiratorial]`
+first** — it is furthest from the passage under repair. And `[mocking falsetto sneer]` is the
+one cue that could make Tarquin *sing*, which is the failure that has actually happened on
+this track (§4c); the exclude list is holding the line, but if he sings, that cue goes.
+
+### My Taste — deliberately NOT changed this round
+
+Kai asked that the Style box and My Taste both be overwritten to match. **The Style box is.
+My Taste is not, on purpose**, for three reasons that each stand alone:
+
+1. **It is already compatible.** The current profile (`camping.md` §1) says nothing about
+   guitars and nothing about dub — it does not fight either. And **07 Dub soundsystem was
+   generated under it.** The sound Kai picked is proof the profile allows it.
+2. **It would be a fourth variable** in a round already carrying three.
+3. **`setTaste` is unverified.** The function exists in `suno.mts`, but `automation.md` has
+   never recorded it working — and My Taste is account-wide, changes every generation in every
+   workspace, and cannot be turned off, only replaced.
+
+**The draft, ready to apply as its own step** — the current *Music* paragraph with two
+sentences added after `industrial stabs.`:
+
+```
+A low palm-muted electric guitar riff under the voice, one short figure repeating, never a solo, never chords — an indie band's guitar on a drum and bass record. Dub soundsystem mixing: tape delay throwing the ends of vocal lines across the bar, spring reverb on the snare, the sub bass first and everything else stripped back.
+```
+
+Apply it if round 11 lands and the direction is confirmed — then the profile should carry it,
+because the profile is what every *future* generation in every workspace inherits.
+
+### Settings
+
+Weirdness **30** · Style Influence **50** · Audio Influence **25** · **one Create = two takes**,
+per Kai ("just two"). The pair and the Audio Influence sweep come once the direction is
+confirmed.
