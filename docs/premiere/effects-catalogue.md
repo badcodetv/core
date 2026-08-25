@@ -499,3 +499,40 @@ Interest). On flat footage, leave them.
 
 🔴 **Random Seed (37) defaults to 0 on every clip**, so two glitched clips corrupt *identically*.
 Vary it per clip.
+
+### Camera Shake — `AE.Impact_Camera_Shake_FX` (47 params) · measured 2026-08-25
+
+🔴 **This one breaks the Impact index-4 rule.** The real controls start at **7**, and there is a
+second boilerplate block in the middle (indices 32–38) as well as the usual tail.
+
+| Index | Param | Default | What it does |
+| --- | --- | --- | --- |
+| 3 | Scale | 50 | Prescale — only live if `Apply Prescale` (2) is on |
+| 7 | Seed | 0 | Reroll the shake pattern |
+| 9 | Camera Mode | 1 | — |
+| 10–24 | Strafe / Stride / Roll ×5 | varies | ⚠️ **Five unlabelled triplets** — see below |
+| 25 | Lean (deg) | 0 | — |
+| 26 | **Variation** | 20 | How irregular the motion is |
+| 27 | **Stabilize** | 25 | Pulls back to centre; higher = less drift |
+| 28 | **Speed** | 100 | Frequency — judder vs sway |
+| 29 | **Auto Scale** | `true` | Scales up to hide edges |
+| 30 | **Master** | 100 | Global amount |
+| 31 | Edge Behavior | 0 | Only matters with Auto Scale off |
+| 34 | Enable Motion Blur | `true` | — |
+| 35 | **Motion Blur** | 20 | Strong at default on an already-blurred source |
+
+🔴 **Strafe / Stride / Roll appear FIVE times (10–24) and the API cannot tell them apart.** The
+group labels Premiere shows in the UI are the blank-named params, so all five triplets read
+identically over the bridge. **Which is amplitude and which is frequency is unproven.** Drive it
+from **Master (30)** and **Speed (28)** instead, unless someone maps the triplets by hand in the GUI
+and records the answer here.
+
+🟢 **Leave Auto Scale (29) on.** Measured live on a 1.16s close-up at full defaults: no black edges
+at any sampled frame despite large displacement. It costs a slight crop in — which is worth knowing
+if the shot has to match framing with untreated neighbours.
+
+🟢 **It animates on its own**, like Echo Glow and unlike Volumetric Rays — no keyframing needed for
+a held shot. Verified across two frames 0.4s apart: framing and blur both changed.
+
+⚠️ **Defaults are strong.** On a plate that already carries motion blur they compound. For a hit
+rather than a handheld wander: Master ~70, Speed ~160, Stabilize ~40, Motion Blur ~12.

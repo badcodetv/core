@@ -294,3 +294,72 @@ read, located or safely searched for — see the api-note. **Kai should find it 
   Not established.
 - **Audio crossfades**, if any are wanted — no API exists for them at all; they are hand work.
 - **Any title text** — `Simple Text` styling is writable, the words are not.
+
+## Camera Shake on the scream close-up — 2026-08-25
+
+**Applied at Kai's request** to the clip he had selected in Premiere.
+
+| Clip | Track | Span | Source | Effect | Settings |
+| --- | --- | --- | --- | --- | --- |
+| `v3:3` | V4 | 13.00 → 14.16 (1.16s / 29f) | `clips/badcode guy/8.mp4`, in-point 3.2 | `AE.Impact_Camera_Shake_FX` | **defaults** |
+
+The plate is an extreme close-up of the scream against a stadium crowd, with a gentle push-in
+already baked into the source. Before this the clip carried **Opacity + Motion only** — Scale 100,
+Position centred, no keyframes.
+
+**Why this clip:** `badcode guy/8.mp4` appears three times in the cut — 8.08s (Volumetric Rays),
+**13.00s (was bare)**, 15.24s (Volumetric Rays). It was the only untreated one of the three.
+Camera Shake was chosen over matching the rays because **nothing else in the sequence shakes**, and
+a 29-frame full-volume scream is where a physical hit pays.
+
+**Verified by exported frame, read by eye:**
+
+| Frame | Bytes | What it shows |
+| --- | --- | --- |
+| `scratchpad/sel-13.5.png` | 1,994,088 | **before** — the bare clip at 13.5s |
+| `scratchpad/shake-default-13.5.png` | 1,948,211 | same timecode, frame displaced and motion-blurred |
+| `scratchpad/shake-default-13.9.png` | 2,165,325 | framing shifted again, blur lighter — **it animates** |
+
+🟢 **Auto Scale (param 29, default `true`) holds** — no black edges at either sample, despite the
+amplitude. That is what makes defaults usable here without a compensating Motion scale.
+
+⚠️ **Defaults are strong on this plate.** Master 100 with Motion Blur 20 smears the crowd
+noticeably, and Auto Scale crops in a touch, so framing no longer matches the other two `8.mp4`
+appearances exactly. Fine as a one-shot accent; would not survive being used as a run. The dials if
+it needs pulling back: **Master (30)** 100 → ~70, **Speed (28)** 100 → ~160 for judder rather than
+sway, **Stabilize (27)** 25 → ~40 to kill the drift, **Motion Blur (35)** 20 → ~12.
+
+🔴 **Not saved.** Left live in Premiere on purpose so it can be walked back with undo.
+
+### Camera Shake — `AE.Impact_Camera_Shake_FX` (47 params), measured 2026-08-25
+
+Impact boilerplate as usual at both ends; the real controls sit from index 7. **Strafe / Stride /
+Roll each appear five times** (indices 10–24) as five unlabelled triplets — the group headers
+Premiere shows in the UI are the blank-named params, so the triplets cannot be told apart from the
+API alone. **Which triplet is amplitude and which is frequency is unproven** — drive the effect
+from `Master` and `Speed` instead unless someone maps them by hand in the GUI.
+
+| Index | Param | Default | What it does |
+| --- | --- | --- | --- |
+| 3 | Scale | 50 | Prescale, only live with `Apply Prescale` |
+| 7 | Seed | 0 | Reroll the shake pattern |
+| 9 | Camera Mode | 1 | — |
+| 10–24 | Strafe / Stride / Roll ×5 | see note | Five unlabelled triplets; mapping unproven |
+| 25 | Lean (deg) | 0 | — |
+| 26 | **Variation** | 20 | How irregular the motion is |
+| 27 | **Stabilize** | 25 | Pulls the frame back to centre; higher = less drift |
+| 28 | **Speed** | 100 | Frequency — judder vs sway |
+| 29 | **Auto Scale** | `true` | Scales up to hide edges. 🟢 Leave on |
+| 30 | **Master** | 100 | Global amount. The one dial to reach for first |
+| 31 | Edge Behavior | 0 | Only matters with Auto Scale off |
+| 34 | Enable Motion Blur | `true` | — |
+| 35 | **Motion Blur** | 20 | Strong at default on a blurred source |
+
+🔴 **The timeline has moved again since the 2026-08-24 entries.** As read on 2026-08-25 the
+sequence has **six video tracks** (V1 empty, V2 10, V3 9, V4 11, V5 4, V6 34) and 68 video clips —
+V5/V6 are no longer the A/B trial tracks described above. **Every clip ref recorded earlier in this
+file is stale.** Re-read before acting on any of them.
+
+⚠️ **A1–A5 remain muted, A6 only.** The selected clip's own linked audio (`a2:2`) is on a muted
+track, so the scream itself is not heard. Flagged to Kai on 2026-08-25; **not changed** — presumed
+deliberate.

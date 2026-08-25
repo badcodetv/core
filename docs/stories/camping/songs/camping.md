@@ -174,10 +174,11 @@ fucking sense of entitlement, and self belief
 I get, that you think your deals are slick
 but I bet, that you paid for your wheels on tick!
 cash from the bank for your wank tank
-let me count up all the cans that I drank
-I'm not alone and I'm sick of this crap
-this widening gap, now let's — go snap snap
-crackle and pop, I want change,
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+[change tone to spoken word]
+I can't live like this forever
+I want change,
 not from your pocket but at the top
 in the meantime though let me hold that door
 please sir, can I FUCKIN, have some more?
@@ -185,20 +186,19 @@ please sir, can I FUCKIN, have some more?
 [Beat Transition]
 [Verse 2 | well-spoken posh voice, a completely different man | full-weight drum and bass carries straight on, drums flip, colder synths, sharper hats | amen rolls tearing across every fourth bar | the same guitar riff returns underneath, unchanged | nothing else playing at all]
 you are intent on living in a tent
-getting fucked all day and paying no rent
-it's a lack of work ethic, quite pathetic
-getting parra lettic and you just don't get it
-prospects exist and you just resist
-and now I insist that you just stop the grift
+pathetic, a lack of work ethic
+getting parra lettic, 
+drowning your sorroooooows,
+prospects exist and now I insist
+that you just stop the grift 
 What about if we taxed the rich?
-Oh my, here's the sitch, SPEAK TO THE HAND BITCH!
+What do you think this is, BITCH!
 I work hard to pay for my yard
-an I pay my tax on all my stacks
+Payin my tax with a platinum card
 you want change but my pockets are empty
-the only thing I'm changing
-is the lanes in my M3
+the only thing I'm changing, is the lane in my M3
 if you worked hard, then you could have plenty, fenty,
-all you seem to now do, is resent me.
+all you now seem to do, is resent me.
 wealth gap? fuckin what a load of crap
 now please let me drink my shatoe nerf doo pap
 [Drop — instrumental, 8 bars, no vocals | everything heavier and more distorted than the first drop — neuro bass growling underneath, the amen rolls harder and longer, the lead screaming higher]
@@ -206,14 +206,14 @@ now please let me drink my shatoe nerf doo pap
 [Bridge | the turn | drums strip right back, intimate | the two men trade, both close and dry in the same cold room now | the guitar riff sparser and quieter here, still one repeating figure, never a tune]
 [gravelly ranting voice]
 Oh shit, here we both are, living in a car
-park, in the rain and the fucking dark
+park, rained on in the fucking dark
 [well-spoken posh voice]
 went down the wrong track, then I got the sack,
 then I drank, broke my back, now I'm in the last part
 [both men together, doubled]
 the AI does the fast part, now, the real question is
-will it allow, because it's in charge now, blaow
-[well-spoken posh voice]
+will it allow, because it's in charge now...
+[pause | well-spoken posh voice]
 you see as it turns out, there is very little clout,
 in having the manager or any of the c-suite about
 [gravelly ranting voice]
@@ -223,12 +223,12 @@ and sicker than when the government debased us
 back to that time when we very first met,
 I do regret that I judged you, I was wrong,
 [gravelly ranting voice]
-yet I don't begrudge you, let's get along
-let's make a happy ending for this song
-[well-spoken posh voice]
-well we don't have long and it might go wrong
+yet I don't begrudge you,
+it's us and them now
+[pause | well-spoken posh voice]
+well we don't have long
 [Outro — 8 bars | both voices together | diminuendo, voice, guitar and bass dissolve into static]
-but by the time it hits, we'll be gone
+and by the time it hits, we'll be gone
 [end]
 ```
 
