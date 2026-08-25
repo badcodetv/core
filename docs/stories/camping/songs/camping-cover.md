@@ -1,6 +1,6 @@
 ---
 title: Camping (cover) — the A/B set
-status: RUNNING — ten style variations through Suno Cover mode, 2026-08-25. Weirdness pinned at 30.
+status: LISTENING — v2 set generated 2026-08-25 (Weirdness 30), awaiting verdicts. v1 is void (stale lyrics) — see §4.
 source_song: https://suno.com/song/299ef991-d51d-4384-a92f-974342a89714  # "Camping W - 75/65", v5.5, 3:56
 parent_sheet: ./camping.md
 released_take: ./camping-released.md
@@ -41,13 +41,14 @@ it is not worth automating.
 Everything after that is the runner:
 
 ```bash
+npx tsx scripts/suno/cover-ab.mts lyrics          # write camping.md §4 into the page, generate NOTHING
 npx tsx scripts/suno/cover-ab.mts plan            # print the ten boxes, touch nothing
 npx tsx scripts/suno/cover-ab.mts check           # read the live form back, spend nothing
 npx tsx scripts/suno/cover-ab.mts load <id>       # fill one variation, generate NOTHING
 npx tsx scripts/suno/cover-ab.mts run [ids...]    # 10 credits and 2 takes per id
 ```
 
-### The three cover-mode facts, all established live on 2026-08-25
+### The four cover-mode facts, all established live on 2026-08-25
 
 🟢 **The attachment survives its own generation.** This was the open question and the reason
 the runner re-checks after every Create. It does survive: ten Creates ran back to back off one
@@ -58,12 +59,18 @@ drops it and the whole form with it, and there is no draft recovery — it costs
 re-setup. `connect()` only calls `goto()` when the URL is not already `/create`, which is what
 makes the tooling safe here. Nothing in this workflow may navigate.
 
-🔴 **The lyrics come with the source and are never written.** As of 2026-08-25 the words in the
-page are **ahead of `camping.md` §4** — twelve blocks differ, including `SPEAK TO THE HAND
-BITCH!`, `let's make a happy ending for this song` and `and it might go wrong`. Writing the
-sheet's lyrics in would silently downgrade the track to an older cut. The runner asserts the
-paragraph count is unchanged before every Create and aborts if it moved. **The sheet still owes
-a sync.**
+🔴 **The attached audio carries the words it was generated from — not necessarily the current
+ones.** This was learned the expensive way: the v1 set (below) ran against a stale attachment
+whose lyrics predated a rewrite in `camping.md` §4, and all twenty takes sang the old words —
+`SPEAK TO THE HAND BITCH!`, `let's make a happy ending for this song` — none of it usable.
+`camping.md` §4 is the single source of truth for the words; the page is not. `run` now
+**refuses to spend a credit** unless the words on the page match the sheet exactly, and `lyrics`
+is the one command that writes them in — the only place in this whole workflow the lyrics box
+is touched.
+
+🟢 **A re-attach does not carry the old lyrics forward.** Re-doing Remix ▸ Cover by hand loads
+whatever the *source song* was last generated with — so if `camping.md` moves again, `lyrics`
+has to run again too. `check` reports the paragraph count; `run` compares the actual words.
 
 ### Two deviations from the house rules, both deliberate
 
@@ -219,18 +226,28 @@ Dark UK drum and bass, neurofunk, 174 BPM, minor key — British post-punk spoke
 One row per take. **Diagnose before rewording** — see
 [`session-method`](../../../suno-gpt/session-method.md).
 
+**v1 (2026-08-25, no suffix) is VOID.** All ten ran against a stale attachment carrying lyrics
+from before a rewrite — see the fourth cover-mode fact above. Left in the workspace rather than
+deleted, on the chance "the old words sounded better here" turns out to be a real finding, but
+**do not listen to these expecting the current words.**
+
+**v2 (2026-08-25, `(v2)` suffix) is the live set** — generated after `lyrics` synced the page to
+`camping.md` §4 and `run` verified the match before every Create. `05 Soul (v2)` needed a manual
+retry: its first Create timed out waiting for takes to register and produced nothing, so it was
+re-run alone once the other nine confirmed.
+
 | Take | Verdict | Note |
 |---|---|---|
-| 01 Strings intro | ⬜ | |
-| 02 Bitter brass | ⬜ | |
-| 03 More guitar | ⬜ | |
-| 04 Blues | ⬜ | |
-| 05 Soul | ⬜ | |
-| 06 Shoegaze wall | ⬜ | |
-| 07 Dub soundsystem | ⬜ | |
-| 08 English folk intro | ⬜ | |
-| 09 Industrial | ⬜ | |
-| 10 Full orchestral | ⬜ | |
+| 01 Strings intro (v2) | ⬜ | |
+| 02 Bitter brass (v2) | ⬜ | |
+| 03 More guitar (v2) | ⬜ | |
+| 04 Blues (v2) | ⬜ | |
+| 05 Soul (v2) | ⬜ | first Create timed out, retried alone |
+| 06 Shoegaze wall (v2) | ⬜ | |
+| 07 Dub soundsystem (v2) | ⬜ | |
+| 08 English folk intro (v2) | ⬜ | |
+| 09 Industrial (v2) | ⬜ | |
+| 10 Full orchestral (v2) | ⬜ | |
 
 **What to listen for**, in this order — the failure modes this track has already had:
 

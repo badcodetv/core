@@ -131,7 +131,7 @@ export async function setSlider(page: Page, label: string, target: number): Prom
  *
  * (A human pasting is fine: a real clipboard paste fires Lexical's own paste handler.)
  */
-async function setLyrics(page: Page, text: string): Promise<number> {
+export async function setLyrics(page: Page, text: string): Promise<number> {
   const lyr = page.locator('[aria-label="Lyrics editor"]')
   await lyr.click()
   await page.keyboard.press('ControlOrMeta+a')

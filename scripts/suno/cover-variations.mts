@@ -196,4 +196,19 @@ export const styleFor = (v: Variation) => HEAD + v.middle + TAIL
  * listening to ten of them — a slug in the clip list tells you nothing at the moment it matters.
  * Kept under 48 characters: `listTakes` slices the row title there.
  */
-export const titleFor = (v: Variation) => `Camping cover ${v.id.slice(6, 8)} - ${v.name}`
+export const titleFor = (v: Variation) => `Camping cover ${v.id.slice(6, 8)} - ${v.name}${SET}`
+
+/**
+ * Which run of the set this is. It exists because `create()` waits for two takes whose title
+ * matches, and a re-run under the old titles would match the OLD takes instantly and return
+ * without ever waiting for the new ones — ten Creates that all report success and are never
+ * actually checked.
+ *
+ * v2 = the first set generated against the corrected lyrics. v1 inherited the source song's
+ * older words and is superseded; it is left in the workspace rather than deleted, because
+ * "the old lyrics sounded better here" is a finding we might yet want.
+ *
+ * Kept short and parenthesised: `listTakes` slices row titles at 48 characters, and its
+ * `\s+v\d` splitter would eat a bare ` v2`.
+ */
+export const SET = ' (v2)'
