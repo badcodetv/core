@@ -240,7 +240,15 @@ high-frequency energy across all three clips, whole-frame, with no model preserv
 skin texture better than another. Character identity held on all three. Neither invented
 dialogue (all clips −43 to −46 dB mean, room tone only).
 
-**Ruling: keep `"Veo 3.1 Fast"` as the `flow_generate_video` default.** The arena is won on
+**⚠️ Superseded 2026-08-25 — Jack rules Omni Flash, always.** Watching the actual output
+across the camping shots, the call is that Omni Flash is clearly better on our footage.
+**Generate all video on Omni Flash unless a shot needs one of the two things it cannot do:**
+it **rejects a last frame**, so the first+last-frame interpolation lock is Veo-only; and on
+2026-08-25 it lost both faces on Frames on a big expression arc where Veo held them
+([the tab-rule bound](../google-flow/omni-flash.md)). Raise those at the time; do not switch
+silently. The ruling below stands only as the record of what the A/B measured.
+
+**Ruling (superseded): keep `"Veo 3.1 Fast"` as the `flow_generate_video` default.** The arena is won on
 bright, busy, generic prompts; our register is dark, single-source-lit and identity-critical,
 and the ranking did not survive the move. ⚠️ **Bounds:** n=3 clips, one plate, one near-static
 prompt. This rules out a *large* Omni Flash advantage here. It does not rule out a small one,

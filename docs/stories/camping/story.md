@@ -65,9 +65,17 @@ holiday. Without ever seeing a tent, we already like Bob.
 
 ### 3. The crash
 
-The car crash happens on screen. **No narration. We do not say who died** — we
-just show the crash, and when we later meet Bob alone, the reader joins the
-dots themselves. (Decided: spelling out the wife's death — or hanging it on a
+**The crash is never shown. No narration. We do not say who died.** The laugh in
+scene 2 is cut to black mid-sound and the impact happens in the black. The only
+image is what is left afterwards: **the dashboard, and the indicator still
+ticking.** Needles dead at zero, grit thrown across the top of the dash, the
+verge climbing at a wrong angle beyond the windscreen, and the green telltale
+blinking patiently at nobody — the last thing he did was signal a turn. Held
+tight enough that no seats are in frame, because two empty seats would say both
+of them were gone and Bob survives. The prop does the exposition so nobody has
+to, exactly as the newspaper does, and the sound carries more of it than the
+picture. When we later meet Bob alone, the reader joins the dots
+themselves. (Decided: spelling out the wife's death — or hanging it on a
 wank-tank driver — is too much. Leave it blank.) Fade to 2026.
 
 ### 4. 2026 — the Shard
@@ -219,6 +227,13 @@ smoke — **and the rising embers become the bad code.** End.
   newspaper.
 - **The newspaper is planted in scene 1** *(2026-08-24)*. Background, unremarked,
   face hidden behind it. It turns the scene-11 hand-off into a callback.
+- **The crash is never shown** *(2026-08-25)*. Supersedes *"the car crash happens
+  on screen"*. Cut to black mid-laugh out of scene 2, impact in the black, then one
+  held still — her road atlas in the verge. Two reasons, either sufficient:
+  withholding the darkest beat is the stronger telling (*Saga* #42's blacked-out
+  panels; Haneke shoots the aftermath, not the act), and a generated car crash is
+  among the few things the engines reliably cannot do. The atlas names nobody, so
+  *"we never say who died"* survives intact.
 - **Day/night:** possibly Shard interior by day, drive-away by night. "Ah,
   details." Open.
 

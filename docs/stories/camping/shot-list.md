@@ -9,6 +9,11 @@
 
 ## ⚠️ Next session — start here
 
+> **Shot 2026-08-25:** **2a** (exterior, the car on the lane) and **2b** (Bob and his wife
+> in the front seats) are both accepted as stills *and* as clips. 2b's laugh clip ran on
+> **Veo 3.1 with the still as the start frame** — Omni Flash on Frames lost both faces once
+> the motion stopped being near-static ([why](../../google-flow/omni-flash.md)).
+
 - [ ] **1a — shoot the 2008 skyline plate.** Everything else in the City is derived from it.
       Generate it clean, keep the original file, and do not lose it: **4a is an edit of this
       frame**, not a second generation.
@@ -32,8 +37,9 @@ men before the plot starts, so the rest of the film can dismantle it.*
 - **1d The newspaper plant** — background, someone reading a paper, **face behind it**, 2008 headline. Nobody looks at it, the narrator never mentions it. It pays off in 11b.
 - **2a An ordinary car on an ordinary road** — luggage. A holiday.
 - **2b Bob driving, his wife beside him** — younger, brighter-eyed. The job stays deliberately unremarkable.
-- **3a The crash** — **no narration at all.** We never show or say who died.
-- **3b Silence** — sound design carries it: impact, then nothing. Let the audience join the dots when Bob reappears alone.
+- **3a The crash — never shown.** Cut to black mid-laugh straight out of 2b; the impact happens in the black. **No narration at all.** We never show or say who died.
+- **3b The indicator, still ticking** — the only image the crash gets. Close on the dashboard binnacle: needles dead at zero, grit thrown across the top of the dash, and through the windscreen the verge climbing at a wrong angle. The green indicator telltale blinks on, patiently, at nobody — **the last thing he did was signal a turn.** No seats and no cabin in frame: two empty seats would read as *both* of them gone, and Bob survives. The tick carries the scene. *(Alternates shot and kept: the road atlas face-down in the verge with the biro route ending mid-page; broken glass on wet tarmac; the amber corner lamp in the grass — the wider version of this same idea, and a candidate to precede it.)* *(Canon: [`story.md` beat 3](./story.md).)*
+- **3c Silence** — sound design carries it: impact, then nothing. Let the audience join the dots when Bob reappears alone.
 
 **Transition:** fade through black to 2026.
 
@@ -96,7 +102,7 @@ Three places where a later shot is *made from* an earlier one. Break the chain a
 | --- | --- | --- |
 | **1a** 2008 skyline | **4a** 2026 skyline | Edit the tower out, the Shard in. One local change on an unchanged frame. Never a fresh generation. |
 | **6c** Bob's tent POV | **10a** Tarquin's wake-up | Identical framing — door-flap letterbox, low horizon. Only the world outside changes. |
-| **1d** the planted paper | **11b → 12c** hand-off, then kindling | Same object. Plant it unremarked or the callback is just a coincidence. |
+| **1d** the planted paper | **11b → 12c** hand-off, then kindling | **The callback is the newspaper as an image, not the same physical object** *(ruled 2026-08-25)* — 1d is 2008 and 11c's paper has to date to 2031, so one object could never do both. Plant it unremarked; a man behind a paper is the whole rhyme. |
 
 ## Standing rules for every shot
 

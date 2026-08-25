@@ -713,6 +713,16 @@ In Ingredients the text must carry the staging. This is the
 [references-vs-frames asymmetry](#the-two-modes-want-opposite-prompts) confirmed from our own
 work rather than inherited from the vendor table.
 
+> **⚠️ Bound — a big expression arc voids the "both" row. `[observed 2026-08-25]` (Camping 2b.)**
+> The `both → Frames` row's justification is *"face drift over a **near-static** clip is small"*,
+> and that precondition is load-bearing. The same accepted plate, same tab: a near-static ask
+> (one blink, one breath) held both faces; **the same plate asked for a full laugh lost them.**
+> What was accepted instead was **Veo 3.1 with that still as the start frame**, with the head
+> movement trimmed out of the laugh and wardrobe/staging reinforced in text.
+> **n=1 each way** — per the discipline note above this is a bound on when the row applies, not
+> a capability claim about either engine. **Ask what the shot demands of the face before
+> choosing the tab, not just what must survive.**
+
 ### ⚠️ Pull-back is structurally riskier than push-in
 
 **Karen §2j.1x, 2026-08-17.** A high aerial was asked to **rise and pull back** while the
