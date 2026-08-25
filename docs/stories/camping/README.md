@@ -35,6 +35,10 @@ tent, after the AI has taken even his job.
   [scene-by-scene storyboard](./story.md#storyboard--scene-by-scene-video-guide)
   Jack records the story video from**: shots, draft narration/dialogue, asset
   checklist
+- **[`shot-list.md`](./shot-list.md)** — **the edit order**: every shot in the film
+  in the order it appears in the cut, one line each, plus the shot-depends-on-shot
+  chains and the "start here next session" list. The assembly view of the
+  storyboard; `story.md` still wins on canon.
 - [`master-notes-2026-08-04.md`](./master-notes-2026-08-04.md) — the archived
   Kai <-> Jack session transcript this canon was distilled from
 - [`characters/tarquin.md`](./characters/tarquin.md) — Tarquin (posh London,
@@ -61,6 +65,8 @@ later). Change the story here first, then the media.
 | --- | --- | --- |
 | Story spine | [`story.md`](./story.md) | **locked structure** (2026-08-04 master notes) |
 | Storyboard (video) | [`story.md`](./story.md#storyboard--scene-by-scene-video-guide) | drafted from the spine — Jack to shoot from |
+| Shot list (video) | [`shot-list.md`](./shot-list.md) | cut order, 12 scenes / 40 shots — **scenes 1–3 shot; next is 4a, an edit of the 1a plate** |
+| Flow prompt ledger | [`prompts.md`](./prompts.md) | verbatim prompts as **restore points**, backfilled from 2026-08-25. ⚠️ Scene 1's are missing — 4a depends on the 1a plate |
 | Song — "Camping" | [`songs/camping.md`](./songs/camping.md) | **accepted prompt** — duet re-cut, same words, rebuilt casting so Bob and Tarquin stop blending. Signed off at round 17, 2026-08-21 |
 | Song — released take | [`songs/camping-released.md`](./songs/camping-released.md) | the published version, and the lyric-fidelity reference. Jack's video is cut to it |
 | Song — prompt history | [`songs/camping-prompt-history.md`](./songs/camping-prompt-history.md) | archive: what failed in each of the 17 rounds and why, plus the previous cue sets as revert targets |

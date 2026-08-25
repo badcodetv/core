@@ -52,6 +52,11 @@ about the financial crash.* Then: meet young Tarquin, up-and-coming star of the
 trading desk, betting heavily on leveraged ETFs, a great career ahead of him —
 **he was the reason 2008 hit.** A plucky young prick. We blame him.
 
+**Plant the newspaper here.** Somewhere in the background of this scene, someone
+is reading a newspaper — unremarked, never pointed at. It is the same object Bob
+hands Tarquin in scene 11, and the audience should only realise that on the
+second prop, not the first.
+
 ### 2. 2008 — meet Bob
 
 Meet Bob: a normal, nice guy — a middle manager, and the job must stay
@@ -60,15 +65,26 @@ holiday. Without ever seeing a tent, we already like Bob.
 
 ### 3. The crash
 
-The car crash happens on screen. **No narration. We do not say who died** — we
-just show the crash, and when we later meet Bob alone, the reader joins the
-dots themselves. (Decided: spelling out the wife's death — or hanging it on a
+**The crash is never shown. No narration. We do not say who died.** The laugh in
+scene 2 is cut to black mid-sound and the impact happens in the black. The only
+image is what is left afterwards: **the dashboard, and the indicator still
+ticking.** Needles dead at zero, grit thrown across the top of the dash, the
+verge climbing at a wrong angle beyond the windscreen, and the green telltale
+blinking patiently at nobody — the last thing he did was signal a turn. Held
+tight enough that no seats are in frame, because two empty seats would say both
+of them were gone and Bob survives. The prop does the exposition so nobody has
+to, exactly as the newspaper does, and the sound carries more of it than the
+picture. When we later meet Bob alone, the reader joins the dots
+themselves. (Decided: spelling out the wife's death — or hanging it on a
 wank-tank driver — is too much. Leave it blank.) Fade to 2026.
 
 ### 4. 2026 — the Shard
 
 The mirror of scene 1: the same City-of-London framing, but now it's **the
-Shard**, and the year reads **2026**. Tarquin runs the biggest private equity
+Shard**, and the year reads **2026**. **Not a re-shoot — a replacement.** The
+2008 skyline plate is generated first and this shot is *edited out of it*, the
+NatWest Tower swapped for the Shard and nothing else touched, so the match is
+guaranteed rather than hoped for. Tarquin runs the biggest private equity
 firm in the country. The current play: **buying up all the social housing they
 can get their hands on — in lots of cases not even renting it out, because the
 asset inflation makes more money than the rent ever would.** What a brilliant
@@ -180,8 +196,11 @@ smoke — **and the rising embers become the bad code.** End.
 - **The POV rhyme.** Bob's view out of the tent (scene 6/8 world) and Tarquin's
   wake-up view (scene 10) are the same framing — the audience realises the two
   men are one position before anyone says it.
-- **The newspaper.** Time-machine proof and AI reveal in one hand-off, then
-  kindling. The prop does the exposition so nobody has to.
+- **The newspaper.** Planted in the background of scene 1, handed over in
+  scene 11, burnt in scene 12. Time-machine proof and AI reveal in one hand-off,
+  then kindling. The prop does the exposition so nobody has to — and because it
+  was there from the first minute, the hand-off reads as a callback rather than
+  a convenience.
 - **The audio is a parallel universe.** Narrator recorded, sound effects from
   libraries — never relying on a generation model for the audio track.
 
@@ -200,6 +219,21 @@ smoke — **and the rising embers become the bad code.** End.
 - **The five missing years are never explained.** Bob asks *him* where he's
   been. We are a superintelligence from the future; we are allowed to warp
   space and time. The story overtakes reality and that's fine — it's fiction.
+- **The skyline swap is an edit, not a second generation** *(2026-08-24)*. Shoot
+  the 2008 plate, then replace the NatWest Tower with the Shard on that same
+  frame using the Shard reference. Matched framing is the whole device; two
+  independent generations will not match. Yes, the rest of the 2008 skyline
+  survives into 2026 — the swap *is* the timestamp, and fiction wins, as with the
+  newspaper.
+- **The newspaper is planted in scene 1** *(2026-08-24)*. Background, unremarked,
+  face hidden behind it. It turns the scene-11 hand-off into a callback.
+- **The crash is never shown** *(2026-08-25)*. Supersedes *"the car crash happens
+  on screen"*. Cut to black mid-laugh out of scene 2, impact in the black, then one
+  held still — her road atlas in the verge. Two reasons, either sufficient:
+  withholding the darkest beat is the stronger telling (*Saga* #42's blacked-out
+  panels; Haneke shoots the aftermath, not the act), and a generated car crash is
+  among the few things the engines reliably cannot do. The atlas names nobody, so
+  *"we never say who died"* survives intact.
 - **Day/night:** possibly Shard interior by day, drive-away by night. "Ah,
   details." Open.
 
@@ -246,6 +280,16 @@ structure. None are canon-required; take them where they make a scene stronger:
 young Tarquin (mid-20s variant — see [`characters/tarquin.md`](./characters/tarquin.md))
 mid-deal, cocky, admired.
 
+**This skyline is a plate, not just a shot.** Scene 4 is made by editing the
+Shard into *this* frame — generate it clean, keep the original, and treat it as
+an asset that gets reused rather than re-shot.
+
+**Plant the newspaper.** In the background, someone reads a paper — a 2008
+headline, unremarked, never framed as important. Keep the reader's **face behind
+the paper**: it hides a likeness the engine cannot hold anyway (see the
+Ingredients note in `docs/google-flow/omni-flash.md`), and an anonymous commuter
+plants better than a character.
+
 **Reader's set-up:** before anyone appears they should think *"this is going to
 be about the financial crash."*
 
@@ -274,6 +318,12 @@ meet Bob again. Sound design carries this scene (impact, then silence).
 
 **Shot:** The **mirror of Scene 1** — same skyline framing, but now **the
 Shard**, and the year reads **"2026"**. Inside: Tarquin, older, at the top.
+
+**How it's made:** take the Scene 1 plate and **edit the NatWest Tower out and
+the Shard in**, anchored on the Shard reference image. One small, local ask on an
+unchanged frame — which is the change the engines actually honour. Do *not*
+prompt a fresh 2026 skyline and hope it rhymes; the matched framing is the device
+and a second generation will not hold it.
 
 **NARR (draft):** "Eighteen years later. Tarquin runs the biggest private
 equity firm in the country. The current plan: buy up every piece of social
@@ -418,15 +468,15 @@ MENU / ▸ STAY PUT` — "THANK YOU FOR BANKING WITH US.")*
 
 | Scene | Needs | Reference |
 | --- | --- | --- |
-| 1 | NatWest Tower skyline + "2008"; young-Tarquin variant | `characters/tarquin.md` (young variant note) |
+| 1 | NatWest Tower skyline + "2008" (**keep the plate**); young-Tarquin variant; background newspaper reader, face behind the paper | `characters/tarquin.md` (young variant note) |
 | 2 | Ordinary car, Bob + wife | `characters/bob.md` |
 | 3 | The crash (wordless) | sound design only |
-| 4 | Shard skyline + "2026"; Tarquin at the top | mirror Scene 1 framing |
+| 4 | Shard skyline + "2026" — **edited from the Scene 1 plate**; Shard reference image; Tarquin at the top | mirror Scene 1 framing |
 | 5 | Night drive, homeless streets, the face-drop hold | `characters/wank-tank.md` |
 | 6 | Waitrose car park, tent, tent-POV framing (lock it) | `characters/tent.md`, `style.md` |
 | 7 | Consulting room | — |
 | 8 | Car park standoff, two-bay parking | scene 6 location |
 | 9 | Welsh retreat, ceremony fire, water reflection, blink | `style.md` (warmth rules) |
 | 10 | Ruined car park, tent-POV rhyme (same framing as 6), fire | `characters/tent.md` |
-| 11 | The newspaper prop (date + AI headline) | — |
+| 11 | The newspaper prop (date + AI headline) — callback to the Scene 1 plant | scene 1 |
 | 12 | Fire, newspaper burn, ember→bad-code rise | `style.md` |

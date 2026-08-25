@@ -33,9 +33,11 @@ with Karen, freestyling into the mic.
 
 ## Flow Character
 
-**Flow Character:** name `TODO — exact tile name as it appears in Flow's picker` ·
-project `TODO` · **created by hand in Flow by Kai/Jack**, not by
-`flow_create_character`.
+**Flow Character:** name `Aarron` ·
+id `3b541072-9db8-4d3b-96a0-1dd7b6fd3670` ·
+project `da8feea7-0574-437b-8ff9-97da233a0a4f` (*"Aug 10, 12:51 PM"*) ·
+**Confirmed live 2026-08-14.** ·
+**created by hand in Flow by Kai/Jack**, not by `flow_create_character`.
 
 > **Naming — settled 2026-08-11 (Kai).** The character is **Aarron**. *Ari at
 > Home* is the **real-life reference** we cast against, not his name and not a

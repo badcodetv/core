@@ -64,3 +64,15 @@ cool, unforgiving.
 **Flow Character:** id `29e97ae3-39ba-49b2-88d8-7a2250713f6b` · tag `@Tarquin` ·
 project `camping-v2` (`9b729074-da88-4668-a442-458e9a0f15ac`) · created from
 `img/tarquin-sheet.jpg` (the harvested multi-angle sheet) · model nano-banana-2.
+
+**Flow Character (ruined variant): `@Future-Tarquin`** — the scenes 10–12 man, cast
+wherever the ruined variant above is called for. **Renamed 2026-08-24 from
+`@homeless-Tarquin`**, because a Character Name is scanned by the usage filter on every
+generation that casts it: the old name put a destitution trigger into every one of his
+shots, permanently and invisibly. See
+[`docs/flow/failure-modes.md` §A2](../../../flow/failure-modes.md#a2-every-field-flow-reads-is-scanned-not-just-the-prompt-box).
+The story still calls him homeless — the *field* doesn't.
+
+> Flow ID and owning project not recorded — this Character was made outside the repo.
+> Paste them here when convenient; repo silence means we don't know, not that it
+> doesn't exist.

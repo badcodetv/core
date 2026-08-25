@@ -221,7 +221,16 @@ export class FlowClient {
    */
   private async ensureProjectRoot(): Promise<void> {
     await this.ensureProject()
-    if (/\/project\/[0-9a-f-]+\/?$/.test(this.page.url())) return
+    if (/\/project\/[0-9a-f-]+\/?$/.test(this.page.url())) {
+      // ⚠️ The URL alone stopped being proof that the compose bar is on screen (2026-08-14).
+      // The redesign's left-nav sections — Characters, Scenes, Uploads — swap the pane WITHOUT
+      // touching the URL, and the prompt box does not exist on them. `ensureCharactersSection()`
+      // leaves the page in exactly that state, so `listCharacters()` followed by any generate
+      // failed on a missing prompt box while the URL looked perfectly correct.
+      //
+      // Re-navigating is the reset: `goto` on the bare project URL lands back on All Media.
+      if (await this.promptBox().isVisible().catch(() => false)) return
+    }
     const m = this.page.url().match(/\/project\/([0-9a-f-]+)/)
     if (!m) throw new Error('NOT_IN_PROJECT')
     await this.page.goto(`${FLOW_URL}/project/${m[1]}`, { waitUntil: 'domcontentloaded' })
@@ -532,7 +541,7 @@ export class FlowClient {
       const open = await this.characterNameField().inputValue().catch(() => '')
       if (open === name) return
     }
-    await this.ensureProjectRoot()
+    await this.ensureCharactersSection()
     const link = this.page.locator(`a[href*="/character/"]:has(img[alt="${name}"])`).first()
     try {
       await link.waitFor({ state: 'visible', timeout: 15_000 })
@@ -542,6 +551,40 @@ export class FlowClient {
     await this.forceClick(link)
     await this.page.waitForURL(/\/character\/[0-9a-f-]+/, { timeout: TURN_TIMEOUT_MS })
     await this.characterNameField().waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+  }
+
+  /**
+   * Put the project on its **Characters** section.
+   *
+   * Flow's 2026-08 redesign moved character cards off the project root and behind a left-nav
+   * "Characters" button; the root now renders media tiles only, so `a[href*="/character/"]`
+   * matches nothing there. Confirmed live 2026-08-14: `listCharacters()` returned `[]` on the
+   * project holding Karen, Susan and Aarron, and returned all three the instant that nav
+   * button was clicked. The old code's assumption ("character cards on the project root",
+   * mapped 2026-08-11) held for exactly three days.
+   *
+   * The button carries a material-symbols ligature in its own text, so its accessible name is
+   * `accessibility_newCharacters` — matched here the same way `openAssetPicker` matches
+   * `add_2 Create`, with `\s*` absorbing the (absent) gap. Its classes are hashed and useless.
+   *
+   * No-ops when the button is absent, so this stays safe on the older layout.
+   */
+  private async ensureCharactersSection(): Promise<void> {
+    await this.ensureProjectRoot()
+    const nav = this.page
+      .locator('button')
+      .filter({ hasText: /^accessibility_new\s*Characters$/i })
+      .first()
+    if (!(await nav.count())) return
+    await this.forceClick(nav)
+    // Best-effort: the section swaps in without a URL change, so there is no navigation to
+    // await. A character anchor appearing is the real done-signal; an empty Characters section
+    // legitimately never produces one, hence the catch rather than a throw.
+    await this.page
+      .locator('a[href*="/character/"]')
+      .first()
+      .waitFor({ state: 'visible', timeout: 10_000 })
+      .catch(() => {})
   }
 
   /** Leave the character editor (Done persists the edits and returns to the project root). */
@@ -562,7 +605,7 @@ export class FlowClient {
    * generalised to every character card rather than one named lookup.
    */
   async listCharacters(): Promise<CharacterListItem[]> {
-    await this.ensureProjectRoot()
+    await this.ensureCharactersSection()
     // The project root's grid hydrates AFTER navigation, so a single immediate read returns []
     // on a project that plainly has characters — the same silent race listMedia and
     // listProjects were both already fixed for, and this was the third instance. Seen live
@@ -1020,7 +1063,7 @@ export class FlowClient {
       // An inline character chip is now in the box — append, never fill().
       await box.evaluate((el) => (el as HTMLElement).focus())
       await this.page.keyboard.press('End')
-      await this.page.keyboard.type(` ${prompt}`)
+      await this.appendPromptText(prompt)
     } else {
       await box.fill(prompt) // media chips live outside the box and survive fill()
     }
@@ -1028,6 +1071,29 @@ export class FlowClient {
     const canvases = await this.waitForNewCanvases(before, numOutputs, TURN_TIMEOUT_MS)
     const candidates = await this.harvestCandidates(canvases, outPath, numOutputs)
     return { candidates, ...(canvases.length < numOutputs ? { partial: true } : {}) }
+  }
+
+  /**
+   * Append text to the prompt box after an inline chip, **without submitting on newlines**.
+   *
+   * ⚠️ This is a real, expensive bug fixed on 2026-08-14. The two cast paths appended with
+   * `keyboard.type()`, which dispatches genuine key events — so every `\n` in a multi-line
+   * prompt arrived as **Enter, and Flow's prompt box submits on Enter**. A ~2,000-character
+   * house-style prompt was therefore fired as ~15 separate generations, one per line, each
+   * seeing a fragment: the project filled with junk images titled "Optics with soft edges",
+   * "Visible film grain and dust", "Vibrant color palette with warm…", and the returned
+   * "result" was whatever the last fragment produced. It cost real credits and looked exactly
+   * like a bad prompt rather than a broken client.
+   *
+   * `insertText` dispatches an `input` event carrying the whole string and emits no keydown at
+   * all, so newlines land as text. It is also why this cannot use `fill()`: that would wipe
+   * the character chip the caller just attached.
+   *
+   * Only the **cast** paths were affected — the uncast path already used `fill()` — which is
+   * why this survived until the first multi-line prompt with a Character in it.
+   */
+  private async appendPromptText(prompt: string): Promise<void> {
+    await this.page.keyboard.insertText(` ${prompt}`)
   }
 
   /**
@@ -1050,14 +1116,37 @@ export class FlowClient {
     // The `@` route works in EVERY mode because the prompt box exists in every mode, so it is
     // the fallback rather than a mode-flip: flipping the bar would drag model/aspect/count state
     // along with it, which is exactly what a read-only listing must not do.
-    if (!(await trigger.count())) {
+    //
+    // ⚠️ PROMOTED FROM FALLBACK TO FIRST CHOICE, 2026-08-14. Flow's redesign kept a button whose
+    // accessible name still matches `/add_2\s*Create/i` ("add_2Create", no gap) but no longer
+    // wires it to the asset picker — so `trigger.count()` was truthy, the `@` branch was skipped,
+    // the click opened something else, and every character attach burned its full 90s timeout.
+    // Counting a trigger is not evidence that it still does the job; opening the dialog is. The
+    // `@` route was verified live against the new layout the same day (project dropdown, tabs
+    // All/Images/Characters/Uploads, "upload Upload media", a "Search assets" box and an
+    // "Add to Prompt" button), so it now leads and the button is the fallback.
+    const tryAt = async (timeout: number): Promise<boolean> => {
       const box = this.promptBox()
       await box.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
       await box.evaluate((el) => (el as HTMLElement).focus())
+      await this.page.keyboard.press('End')
       await this.page.keyboard.type('@')
-      await uploadBtn.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
-      return dialog
+      try {
+        await uploadBtn.waitFor({ state: 'visible', timeout })
+        return true
+      } catch {
+        // Sweep the stray '@' before trying the button, or it rides along into the prompt —
+        // fatal to the cast paths, which append rather than fill.
+        const text = (await box.textContent().catch(() => null)) ?? ''
+        if (text.replace(/[​﻿]/g, '').trim() === '@') await box.fill('')
+        return false
+      }
     }
+    if (!(await trigger.count())) {
+      if (await tryAt(TURN_TIMEOUT_MS)) return dialog
+      throw new Error('ASSET_PICKER_UNAVAILABLE')
+    }
+    if (await tryAt(10_000)) return dialog
     await trigger.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     // Native click opens this trigger (proven live on a fresh CDP connection); the synthetic
     // pointer sequence only works once the dialog has mounted before. Try native, then fall back.
@@ -1187,7 +1276,23 @@ export class FlowClient {
     await charactersTab.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     await this.tabClick(charactersTab)
     // Select the tile carrying the character's name, then attach it.
-    const tile = dialog.getByText(name, { exact: true }).first()
+    //
+    // ⚠️ Target the OPTION, not "any element whose text is the name" (2026-08-14). Two reasons
+    // the old `getByText(name, { exact: true }).first()` was unsafe:
+    //
+    //  - On the **All** tab a character option's text is `"SusanCharacter"` — name plus kind,
+    //    concatenated, exactly like the media tiles' `"…Image"`. It reads as exactly the name
+    //    ONLY on the Characters tab, so the whole call hung on the tab click having landed.
+    //  - Even there, four elements have text exactly `"Susan"` (nested wrappers plus a span).
+    //    `.first()` is DOM order, so it can return an ancestor rather than the clickable option,
+    //    and a click on the wrapper selects nothing.
+    //
+    // `img[alt="<name>"]` inside `[role="option"]` is the unambiguous handle, and it is the same
+    // shape `character-list.ts` already scrapes.
+    const tile = dialog
+      .locator('[role="option"]')
+      .filter({ has: this.page.locator(`img[alt="${name}"]`) })
+      .first()
     await tile.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     await this.forceClick(tile)
     // Clicking the tile ATTACHES and closes the picker by itself — so a hard wait on
@@ -1198,6 +1303,19 @@ export class FlowClient {
     const addToPrompt = this.page.getByRole('button', { name: /add to prompt/i }).first()
     if (await addToPrompt.isVisible().catch(() => false)) await this.forceClick(addToPrompt)
     await this.closeAssetPicker()
+    // ⚠️ VERIFY. Every step above is best-effort — the tab may not switch, the tile click may
+    // land on a wrapper, "Add to Prompt" may or may not exist — and NONE of them threw. So a
+    // failed cast used to sail straight through and generate an UNCAST image that looks
+    // plausible and is quietly the wrong person. That is the worst possible failure: it costs
+    // credits, it is invisible in the tool result, and you only notice rounds later when the
+    // face keeps changing. Reported by Kai 2026-08-14 — "it keeps making another woman".
+    //
+    // An attached character renders as a chip OUTSIDE the contenteditable (which is why the
+    // prompt box is empty and `img[alt="<name>"]` is absent — the chip's alt is generic).
+    const chip = this.page.locator('img[alt="Character reference image"]').first()
+    if (!(await chip.isVisible().catch(() => false))) {
+      throw new Error(`CHARACTER_ATTACH_FAILED: ${name} did not attach to the prompt`)
+    }
   }
 
   /** Character cast + scene text + submit (append after the inline chip — fill() wipes it). */
@@ -1206,7 +1324,7 @@ export class FlowClient {
     const box = this.promptBox()
     await box.evaluate((el) => (el as HTMLElement).focus())
     await this.page.keyboard.press('End')
-    await this.page.keyboard.type(` ${prompt}`)
+    await this.appendPromptText(prompt)
     await this.clickSubmit()
   }
 

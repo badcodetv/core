@@ -43,8 +43,17 @@ A hundred years later, there's a statue.
   [storyboard](./story.md#storyboard--scene-by-scene-video-canon)** — Jack's
   production guide for the story video. If anything else disagrees with the
   storyboard section, the storyboard wins.
+- **[`shot-list.md`](./shot-list.md)** — **the edit order**: every shot in the film in
+  the order it appears in the cut, one line each, plus the "start here next session"
+  list. The assembly view of the storyboard; `story.md` still wins on canon.
 - [`master-notes-2026-08-05.md`](./master-notes-2026-08-05.md) — the archived
   Kai + Jack session transcript the storyboard was distilled from.
+- **[`narration/`](./narration/README.md)** — **the narrator and the score**: the
+  ElevenLabs Voice Design prompt that makes him ([`voice.md`](./narration/voice.md)),
+  the tag-directed narration script in nine paste-ready chunks
+  ([`script.md`](./narration/script.md)), and six Suno prompts for the background
+  music, built from the DNA of *All Day to Complain*
+  ([`score.md`](./narration/score.md)).
 - [`characters/karen.md`](./characters/karen.md) — Karen Bell (stereotype → leader)
   — **plus the Flow Character ledger**: look + voice prompts (base voice Gacrux)
   and the portrait + full-body references in
@@ -63,6 +72,31 @@ A hundred years later, there's a statue.
   pep talk that starts the whole thing — named 2026-08-11) — **plus her Flow
   Character ledger**: look + voice prompts (base voice Kore) and references in
   [`characters/img/`](./characters/img/)
+- **Scene briefs** — written in-repo, unfired, expected to change. The opposite
+  standing to `prompts.md`: revise these freely, and never mistake one for a
+  restore point.
+  - [`prompts-act1-setup.md`](./prompts-act1-setup.md) — §1.2–§1.5: the office
+    beats, the fish lunch and the cleaner's viewpoint, the firing (including the
+    Sean AI screen and the webcam pair), and the bar. Eleven plates plus a
+    ten-frame Polaroid recipe.
+  - [`prompts-river-drop.md`](./prompts-river-drop.md) — §1.6, the phone in the
+    river. **§2g.13 accepted 2026-08-14** after four failed rounds; the
+    post-mortems are the most useful part of the file.
+  - [`prompts-morning-after.md`](./prompts-morning-after.md) — §1.7, the end of
+    Act 1. Seven plates including the Karen/Susan matched pair and the closing
+    frame of the act, plus the accepted clips.
+  - [`prompts-act2-escalation.md`](./prompts-act2-escalation.md) — **Act 2**, the
+    escalation formula. §2j. Plates first, clips after. The aerial is the master:
+    the later rungs are re-fires of it with one line swapped, because **sameness
+    is the point** in this section.
+  - [`prompts-act4-manager.md`](./prompts-act4-manager.md) — **Act 4**, the ultimate
+    manager. §4a. Carries two standing rulings: everything is a **film crew on a film
+    set** (the word "news" is banned after four policy refusals), and the President is
+    **fictional, non-resembling and shot from behind**.
+  - [`prompts-act3-viral.md`](./prompts-act3-viral.md) — **Act 3**, viral. §3a. The
+    first act with two people in it, which is the hard part: two figures in
+    relative motion interpenetrate and it is not fixable by prompting, so the
+    two-hander is shot as singles and the crowd is stills only.
 
 ## Production tracker
 
