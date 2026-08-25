@@ -9,17 +9,26 @@
 
 ## ⚠️ Next session — start here
 
-> **Shot 2026-08-25:** **2a** (exterior, the car on the lane) and **2b** (Bob and his wife
-> in the front seats) are both accepted as stills *and* as clips. 2b's laugh clip ran on
-> **Veo 3.1 with the still as the start frame** — Omni Flash on Frames lost both faces once
-> the motion stopped being near-static ([why](../../google-flow/omni-flash.md)).
+> **Status 2026-08-25.** **Scenes 1, 2 and 3 are shot.** 1a–1d (skyline, trading floor,
+> young Tarquin, the newspaper plant) were made in an earlier session; 2a, 2b and 3b were
+> made on 2026-08-25, stills and clips both. 3a is not a generation — it is a cut to black.
+> The next unshot scene is **4**, and it starts with an *edit*, not a generation.
+>
+> ⚠️ **Prompts now live in [`prompts.md`](./prompts.md).** It is backfilled from 2026-08-25
+> onward. **Scene 1's prompts are not recorded anywhere** — paste them in if they still
+> exist, because 4a is an edit of 1a and there is currently no way to rebuild that plate.
+>
+> 2b's laugh clip is the one shot generated on **Veo 3.1** rather than Omni Flash — Omni
+> lost both faces once the motion stopped being near-static
+> ([why](../../google-flow/omni-flash.md)).
 
-- [ ] **1a — shoot the 2008 skyline plate.** Everything else in the City is derived from it.
-      Generate it clean, keep the original file, and do not lose it: **4a is an edit of this
-      frame**, not a second generation.
-- [ ] **1d — the newspaper plant.** Background reader, face behind the paper. Decide the 2008
-      headline (it should not compete with the 2026 one).
+- [ ] **4a — the skyline swap.** Take the **1a** plate and replace the NatWest Tower with the
+      Shard. An edit of that exact frame; never a fresh generation.
 - [ ] **Get the Shard reference image** ready for the 4a swap.
+- [ ] **Record scene 1's prompts** in [`prompts.md`](./prompts.md), 1a most of all.
+- [ ] **Record the Flow Characters** that scene 1 must have used — `@Tarquin-2008` has no id
+      in [`characters/tarquin.md`](./characters/tarquin.md), and neither does `@Bob-2008` or
+      Bob's wife.
 - [ ] **Lock 6c** — Bob's POV out of the tent. It is the single most reused framing in the film
       (10a is the same shot five years on); shoot it once, deliberately, and everything after
       inherits it.

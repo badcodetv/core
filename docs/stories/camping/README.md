@@ -65,7 +65,8 @@ later). Change the story here first, then the media.
 | --- | --- | --- |
 | Story spine | [`story.md`](./story.md) | **locked structure** (2026-08-04 master notes) |
 | Storyboard (video) | [`story.md`](./story.md#storyboard--scene-by-scene-video-guide) | drafted from the spine — Jack to shoot from |
-| Shot list (video) | [`shot-list.md`](./shot-list.md) | cut order, 12 scenes / 40 shots — start at `1a`, the skyline plate |
+| Shot list (video) | [`shot-list.md`](./shot-list.md) | cut order, 12 scenes / 40 shots — **scenes 1–3 shot; next is 4a, an edit of the 1a plate** |
+| Flow prompt ledger | [`prompts.md`](./prompts.md) | verbatim prompts as **restore points**, backfilled from 2026-08-25. ⚠️ Scene 1's are missing — 4a depends on the 1a plate |
 | Song — "Camping" | [`songs/camping.md`](./songs/camping.md) | **accepted prompt** — duet re-cut, same words, rebuilt casting so Bob and Tarquin stop blending. Signed off at round 17, 2026-08-21 |
 | Song — released take | [`songs/camping-released.md`](./songs/camping-released.md) | the published version, and the lyric-fidelity reference. Jack's video is cut to it |
 | Song — prompt history | [`songs/camping-prompt-history.md`](./songs/camping-prompt-history.md) | archive: what failed in each of the 17 rounds and why, plus the previous cue sets as revert targets |
