@@ -1,6 +1,6 @@
 ---
 title: All Day to Complain
-status: round 16 endorsed by Kai (2026-08-11) — the four boxes below are the ones that made the track
+status: round 20 (2026-08-11) — reference changed from Bond ballad to blues-rock delivery; sax named, beeps on the beat
 mode: advanced
 model: v5.5
 style_influence: 90
@@ -15,13 +15,44 @@ voices: [karen, front-desk clerk, official, government voice, president]
 production notes and the revision log follow them. Edit the blocks here — they are
 the source of truth; the frontmatter carries only settings.
 
-> **⭐ These four boxes are the endorsed take.** Kai confirmed on 2026-08-11 that
-> the round-16 Style / Exclude / Lyrics / My Taste below — exactly as they stand,
-> at 90/60 with no Voice attached — are what produced the version of this song we
-> like. They were handed back verbatim and verified byte-for-byte against this
-> file. **Do not "improve" them without a specific complaint to answer**, and if
-> you do, copy them into [the baseline](#the-takes-we-liked-the-baseline) as Take
-> C's replacement first. Sixteen rounds of this file are the argument for why.
+> **⭐ These four boxes are round 20: Take C, a saxophone, beeps on the beat, and
+> a completely rebuilt chorus.** Take C (round 16) is the version Kai liked —
+> *"the test prompt"* — preserved verbatim in
+> [the baseline](#the-takes-we-liked-the-baseline). Rounds 17–19 are **dead**:
+> Kai's verdict was *those prompts made it worse*. Round 20 is built from Take C
+> again, and the diff is printed here in full:
+>
+> | # | Where | Change |
+> |---|---|---|
+> | 1 | Lyrics | `le-e-evel` → `level` — the one fix Kai confirmed worked |
+> | 2 | Lyrics | **intro cue**: beeps `locked to the beat, the only percussion` |
+> | 3 | Lyrics | **chorus 1, chorus 2 and final chorus cues** rebuilt |
+> | 4 | Style | **`a smoky baritone saxophone`** named in the band list |
+> | 5 | Style | the **last sentence** (the chorus clause) rebuilt |
+> | 6 | Exclude | `belted chorus` deleted — one word, order otherwise untouched |
+>
+> Payments, because all four boxes are full: duplicated clerk casting out of the
+> Verse 2/3 cues, and `dramatic sighs`, `unhurried`, `gone sinister` and `and
+> flat` out of the Style box — **each of which is still stated in My Taste or in a
+> lyric cue.** No instrument word was cut, no line was added, and no performed
+> lyric changed except #1.
+>
+> **The reference changed, and that is the point of this round.** Rounds 17–19
+> chased a Bond *ballad* — swell, grandeur, a held note over an orchestra. The
+> new brief names a blues-rock record and asks for *how it builds then delivers a
+> powerful chorus where the singer gives their all.* Those are opposite
+> mechanisms: one gets big by adding sustain, the other by **hitting**. Take C's
+> own phrase `title-sequence swell` is deleted.
+>
+> **⚠️ My Taste has to be swapped too.** It sits *upstream* of the style box
+> (proven at round 4) and Take C's copy still says `a small restrained choir…
+> kept low in the mix` and `she stays level and dry through the choruses` —
+> which is a direct instruction to undo this round. Paste the My Taste box below
+> or the fix fights itself.
+>
+> **All four boxes are effectively full** — 992/1,000, 585, 4,998/5,000,
+> 1,992/2,000. Two spare characters in the lyric box. Anything added displaces
+> something.
 
 > **Re-paste all four every round: Style, Exclude, Lyrics, My Taste.** "Reuse
 > Prompt" silently carries the *old* lyrics forward, and a stale lyric box is
@@ -30,7 +61,7 @@ the source of truth; the frontmatter carries only settings.
 
 ## Style
 
-974 chars, and **the band is round 8's again** — the take Kai and Jack liked.
+999 chars against a 1,000 ceiling, and **the band is round 8's again** — the take Kai and Jack liked.
 Rounds 9–14 are not the baseline; the prompts recorded under
 [The takes we liked](#the-takes-we-liked-the-baseline) are, and both of
 them are `Boom Bap` at **86 BPM** built on the hold-muzak conceit. Round 15
@@ -77,12 +108,111 @@ became `a small restrained choir low in the mix`, and she is now explicitly
 `level and dry against it` on the choruses. **The swell was not touched** — see
 the log for why that distinction is the whole fix.
 
+**Round 20 changes the same clause again, and this time the reference changed.**
+Rounds 17–19 all chased a *Bond title ballad* — swell, grandeur, a held note over
+an orchestra. Kai's verdict on all three: **worse.** The new brief names a
+different record entirely and it is not a ballad:
+
+> *the "all day to complain" chorus should sound like **"Way Down We Go"** —
+> especially how it builds then delivers a powerful chorus where the singer gives
+> their all.*
+
+Plus two concrete restorations: **the saxophone** and **the phone beeping with
+the beat at the beginning**. And the standing constraint: as close to Take C as
+possible otherwise.
+
+### Why the reference change matters more than it looks
+
+**A title-song swell and a blues-rock chorus are opposite mechanisms.** The swell
+gets big by *adding sustain* — strings, brass, timpani, everything long and
+smooth, with the singer riding on top of it. The reference Kai has now named gets
+big by *hitting*: the band lands together, dry, heavy and in the room, and the
+singer is at full throat with a crowd of voices in unison behind them. It is
+**weight and commitment**, not grandeur.
+
+Three rounds of "swell" language have been steering directly away from what he
+wanted, which is the simplest explanation on record for why each one came back
+underwhelming. `title-sequence swell` — Take C's own phrase, kept through
+rounds 17, 18 and 19 — is **deleted at round 20.**
+
+**The tempo is not the problem, and now there is proof.** The reference track is
+**~82 BPM in B♭ minor** ([SongBPM](https://songbpm.com/@kaleo/way-down-we-go),
+[Hooktheory](https://www.hooktheory.com/theorytab/view/kaleo/way-down-we-go)) —
+four BPM off this track's 86, in a minor key, and described as *somber,
+mid-energy*. Whatever is missing, **it was never the tempo**, and this is the
+fourth independent confirmation of that in this file. Do not touch the BPM.
+
+**What the production actually does**, and it maps onto this track almost
+uncomfortably well: a **thick rumbling bass and staccato piano chords**, and a
+deliberately **dry, "in-the-room" drum and bass sound to give physical weight and
+intimacy** — plus one structural trick, **the crash cymbal held back until the
+last third of the song**
+([The Singles Jukebox](https://thesinglesjukebox.com/kaleo-way-down-we-go/)).
+We already have a dry close-mic'd record, an upright bass and a Rhodes. **The
+Rhodes going hammered and staccato on the chorus is one word of cue text**, and
+the withheld crash is free.
+
+### The clause: what changed and what it cost
+
+| Take C | Round 20 |
+|---|---|
+| `opens into a title-sequence swell` | **`the whole band hits together, dry and heavy`** |
+| `a small restrained choir low in the mix on the answers` | **`a room of voices singing the hook in unison with her`** |
+| `her level and dry against it` | **`she gives it everything — full-throated, raw, gritty`** |
+| — | **`the sax honking`** |
+
+`sustained strings, low brass and timpani` survives verbatim: the orchestra is
+still there, it just stops being the *point*.
+
+**`she gives it everything` finally overturns this file's oldest rule.** Since
+round 1 the doctrine has been *she never joins them; the size is the band's,
+never hers.* Kai has now said three times in a row that the chorus is
+underwhelming, and the third time named a record whose entire chorus **is** the
+singer giving their all. The rule was protecting a joke that does not need
+protecting — she is still deadpan on every `That's OK`, which is where the joke
+actually lives. **The hook is hers.**
+
+### The saxophone: it was never in the prompt
+
+**Worth stating plainly, because it changes how to fix it: no version of this
+prompt has ever contained the word "saxophone".** Searched across the whole song
+file and every take. The sax Kai remembers was **Suno's own inference** —
+soul-jazz and spy-thriller both imply horns — which means it arrives or doesn't
+arrive at random, and no amount of re-rolling reliably returns it.
+
+**And our own exclude list is working against it.** Exclusions are guidance
+rather than a mute, and they suppress *genre-implied* instruments: excluding
+`smooth jazz`, `jazz singer` and `scat` — which this file added to keep a
+crooner out of the lead slot — also suppresses the horn those genres would have
+supplied. The documented fix is **not** to delete the exclusion (that would let
+the crooner back in, which is exactly what it is there to stop) but to **pair the
+exclusion with a positive replacement: name the instrument explicitly in the
+Style box** ([Jack Righteous](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/negative-prompting-suno-v5-guide),
+[usesuno](https://usesuno.com/guide/negative-prompts/)).
+
+So `a smoky baritone saxophone` now sits in the band list next to the muted
+trumpet, and it is given a chorus job in the cues (`honking`, then `dirtier`,
+then `blaring`). **Baritone, deliberately** — it doubles the prowling chromatic
+bass line, which is the spy sound, and it honks rather than sweetens, which is
+the aggression. If it comes back too smooth or too smooth-jazz, change one word:
+`baritone` → `baritone`, `smoky` → `raw`.
+
+### The beeps: already in the box, now in the section
+
+`touch-tone beeps as percussion` has been in the Style box since round 8 and
+never left. But the Style box describes the *whole song*, and Kai wants them
+audible **at the beginning, locked to the beat** — which is a section instruction
+and therefore belongs in the intro cue. That cue now reads
+`touch-tone beeps locked to the beat, the only percussion`, and the words *the
+only percussion* are the load-bearing part: they give the beeps a job no other
+instrument is competing for, before `brushed drums slide in` two lines later.
+
 **No gender word anywhere in the box** (round 14) and **no negation** — the
 "not singing, no melody" construction describes a male rapper and generated one
 (round 3). Everything the lead must not do lives in Exclude Styles.
 
 ```
-A mature New York woman on the phone — expressive alto, rich chest voice, warm midrange, rhythmic spoken-singing that opens into real melodic lines. Patronising, polite, certain she is right: nasal complaint curls on the line ends, dramatic sighs, over-enunciated consonants, stretched sweetheart phrases. Close-mic'd and dry. She starts patient and amused, tightens verse by verse, then drops to a bare speaking voice on the bridge. Under her, Hip Hop, Boom Bap at 86 BPM, unhurried, arranged like a 60s spy-thriller film score: a cheap on-hold muzak loop gone sinister — telephone-EQ'd Rhodes and muted trumpet on an unresolved minor-ninth, prowling chromatic upright bass, brushed drums, touch-tone beeps as percussion. Telephone clerks answer from far behind the beat, band-passed and flat. On the chorus it opens into a title-sequence swell: sustained strings, low brass and timpani, a small restrained choir low in the mix on the answers, her level and dry against it.
+A mature New York woman on the phone — expressive alto, rich chest voice, warm midrange, rhythmic spoken-singing that opens into real melodic lines. Patronising, polite, certain she is right: nasal complaint curls on the line ends, over-enunciated consonants, stretched sweetheart phrases. Close-mic'd and dry. She starts patient and amused, tightens verse by verse, then drops to a bare speaking voice on the bridge. Under her, Hip Hop, Boom Bap at 86 BPM, arranged like a 60s spy-thriller film score: a cheap on-hold muzak loop — telephone-EQ'd Rhodes, muted trumpet and a smoky baritone saxophone on an unresolved minor-ninth, prowling chromatic upright bass, brushed drums, touch-tone beeps as percussion. Telephone clerks answer from far behind the beat, band-passed. On the chorus the whole band hits together, dry and heavy: sustained strings, low brass and timpani, the sax honking. She gives it everything — full-throated, raw, gritty — a room of voices singing the hook in unison with her.
 ```
 
 > **Three vocal categories, and that is deliberate:** her (solo, close, dry,
@@ -100,7 +230,7 @@ A mature New York woman on the phone — expressive alto, rich chest voice, warm
 
 ## Exclude styles
 
-600 chars, and **this list changed philosophy, not just contents.** It is the
+585 chars, and **this list changed philosophy, not just contents.** It is the
 longest it has ever been, on purpose: it is now the *only* thing holding the
 lead in the middle of the road, because the Style box no longer pushes her to
 one extreme.
@@ -123,10 +253,29 @@ that produced vocals Kai endorsed.
    back, which is about as clean a piece of evidence as this file contains. They
    sit first because front-loading is the documented fix for a word being
    ignored.
-2. **Guard the lead from the diva end.** `belted chorus, Broadway belting, operatic soprano,
+   **Round 19 moved those four words to the back of the list; round 20 puts them
+   back at the front, where Take C had them.** The brief is *as close to the
+   pasted prompt as possible*, the reorder was never shown to help, and round 20
+   has much stronger positive levers than a reordering — a named saxophone, a
+   room of voices, and `gives it everything` in the Style box. **Keep this as a
+   lever, not a default:** if the chorus comes back thin, moving `screeching,
+   squealing, shrill, piercing soprano` to the end of the list is a free,
+   reversible way to take emphasis off the guard without losing it.
+2. **Guard the lead from the diva end.** `Broadway belting, operatic soprano,
    excessive melisma, gospel lead, soul diva, sultry, breathy pop vocal`. Note
    what is *not* here: `soulful`, `warm alto`, `melodic`. The excess is banned;
    the quality is wanted.
+   **`belted chorus` is deleted at round 17, and it is the only deletion.** Round
+   16 added it to stop the screech and it did — but it is the one entry in this
+   list that bans *power* rather than a *timbre*, and the chorus we now want is,
+   in plain terms, a belted chorus. **It stays deleted at round 18** — round 17
+   proved it was not the *cause* of the flop, but nothing about round 18 wants it
+   back. Everything around it survives and is doing
+   the actual anti-screech work: `Broadway belting` (the bright, forward,
+   theatrical belt — the wrong kind), `operatic soprano` and `piercing soprano`
+   (head register — the wrong height), `excessive melisma` (runs — the wrong
+   activity), `soul diva` (the wrong idiom). What is left permitted is a dark
+   chest-voice belt on long notes, which is exactly the target and nothing else.
 3. **Guard the lead from going dead.** `monotone vocals, flat spoken delivery,
    emotionless narration` — "flat" was the complaint, and a flat *lead* is one
    of the ways to get there. `shouted vocals, screaming` stay: she never raises
@@ -144,18 +293,25 @@ that produced vocals Kai endorsed.
 opposite reason — that round wanted a *bigger* chorus. It is the specific failure
 mode of "lush stacked choir" and it caps the answers without touching the band.
 
+**Round 17 keeps it excluded even though the choir is now big again, and that is
+deliberate.** A gospel choir is not a small choir — it is a *different* choir:
+call-and-response, riffing, bright, out in front. What round 17 asks for is a
+film choir — wide, dark, sustaining under the lead, singing nothing of its own.
+`gospel choir` is the cheapest available guard against the first turning up when
+you ask for the second, and it costs the swell nothing.
+
 **`orchestral` stays out of the list** (removed round 9): the chorus swell *is*
 strings, low brass and timpani, and that one word vetoes all three. **`uptempo`
 and `dance` stay out too** — see the log on why 86 BPM is not the thing that was
 too slow.
 
 ```
-screeching, squealing, shrill, piercing soprano, belted chorus, gospel choir, nonstop nasal honk, cartoon voice, childish voice, grating novelty vocal, broad sitcom caricature, monotone vocals, flat spoken delivery, emotionless narration, Broadway belting, operatic soprano, excessive melisma, gospel lead, soul diva, sultry, breathy pop vocal, autotune, whisper vocals, shouted vocals, screaming, smooth jazz, jazz singer, scat, surf rock, spaghetti western, kazoo, slide whistle, circus, honky tonk piano, drum and bass, jungle, trap hi-hats, drill, edm, dubstep, chill, laid-back, relaxed delivery
+screeching, squealing, shrill, piercing soprano, gospel choir, nonstop nasal honk, cartoon voice, childish voice, grating novelty vocal, broad sitcom caricature, monotone vocals, flat spoken delivery, emotionless narration, Broadway belting, operatic soprano, excessive melisma, gospel lead, soul diva, sultry, breathy pop vocal, autotune, whisper vocals, shouted vocals, screaming, smooth jazz, jazz singer, scat, surf rock, spaghetti western, kazoo, slide whistle, circus, honky tonk piano, drum and bass, jungle, trap hi-hats, drill, edm, dubstep, chill, laid-back, relaxed delivery
 ```
 
 ## Lyrics
 
-**4,923 chars, against Suno's 5,000 ceiling.** Round 15's first draft was 5,025
+**4,998 chars, against Suno's 5,000 ceiling — two spare.** Round 15's first draft was 5,025
 and would not paste — the bracket cues are half the box (~2,650 chars against
 ~2,280 of actual performed lines), so they are what to cut when it overflows.
 **Cut redundant casting before anything else:** the clerks were described in the
@@ -164,8 +320,155 @@ Verse 2 and 3 cues. One layer of that is direction; four is padding. Never buy
 headroom by deleting a line she sings, and never by deleting a cue that marks a
 *change* — those are what the arrangement is built out of.
 
+**Every cue that names an instrument is Take C's, verbatim.** That is the rule
+round 17 broke and standing problem 11 now enforces: the intro's `cheap on-hold
+muzak loop — Rhodes on an unresolved minor-ninth`, the lead's `expressive alto,
+close and dry` entrance, both pre-choruses, the instrumental break, the bridge's
+wah guitar and clavinet, Verse 3's drums and strings, and the outro are
+untouched.
+
+**The chorus cues cost ~180 chars and are paid for from exactly one place:** the
+duplicated clerk description in the **Verse 2** and **Verse 3** cues. That casting
+survives in three other places — the Style box, the Verse 1 cue, and a per-line
+`[clerk]` tag above every clerk line — so nothing about the clerks is lost, and
+**no instrument word was cut, no performed line was removed and no line was
+added.**
+
+> **If you want literally zero deviation outside the choruses**, put those two
+> phrases back and buy the space inside chorus 1 instead: dropping
+> ` over the minor-major ninth` and ` | a wide choir under her` from its cue
+> frees 47 chars, which is most of it. The chord and the choir are both stated in
+> My Taste, so the loss is emphasis rather than information.
+
+### The `le-e-evel` fix — why she said *level* like a machine
+
+Kai's complaint: on *"There is always a level above the le-e-evel"* she says
+**level** in a strange, artificial, AI way that does not fit. **The cause is in
+the lyric box, not the voice**, and it is a device this file introduced itself.
+
+`le-e-evel` is a **melisma spelling** — the documented way to stretch a vowel
+across several notes ([`../../../suno-gpt/files/lyricist-playbook.md`](../../../suno-gpt/files/lyricist-playbook.md) §5).
+It works on an *open* vowel, which is why `lo-o-ovely` and `ti-i-ime` elsewhere
+in this lyric have never drawn a complaint. It fails on **level**, because the
+syllable being stretched is `-vel` — a schwa plus a syllabic *l*, a vowel with
+almost nothing in it. Asked to hold a note on a vowel that barely exists, the
+model synthesises one, and a synthesised vowel is precisely what "AI voice"
+sounds like. The model has no dictionary and no phonetics; it sounds words out
+from spelling patterns, so a spelling that describes an impossible sound gets an
+invented one ([Jack Righteous](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/suno-v5-5-pronunciation-fix-guide-best-practices-for-wrong-or-unclear-lyrics),
+[Hook Genius](https://hookgenius.app/learn/fix-suno-pronunciation/)).
+
+**The fix is deletion, not correction** — the same rule round 16 used. The word
+is now spelled `level`, plainly, in both places it appears in the line, matching
+the clerk's `at this level` two lines above. **Consistency across every
+recurrence is itself a documented requirement**: a word spelled two ways gets
+performed two ways.
+
+**Do not answer this by respelling it phonetically** (`lev-ull`, `LEH-vul`). The
+guidance is explicit that you respell only words that have actually failed *as
+words* — and `level` never did. It failed as a *stretch*. Adding a second
+spelling device on top of the first is how you get a second artefact.
+
+**What replaces the stretch, since the line still needs its threat:** the cue
+now reads `[lead: sweetheart stretched, the threat spoken flat]`. `Sweeeetheart`
+keeps its stretch — it is an open vowel and it is the character's signature —
+and the punchline lands *spoken and flat*, which is a better reading of a veiled
+threat than a sung one anyway.
+
+> **The watch-item.** `Take your ti-i-ime` in the final chorus is the last
+> melisma spelling in the box, and it sits inside a section round 17 rebuilds.
+> It is on `/aɪ/`, an open vowel, and it has never misbehaved — so it stays. But
+> if a stretched artefact turns up *there*, this is the cause, and the fix is the
+> same one: delete the hyphens.
+
+### The chorus: what round 20 does
+
+**The chorus lyric is untouched — not one word added, removed or reordered.** All
+the work is in the three cues, which is deliberate: the Style box is
+position-weighted and its last sentence is the weakest seat in the prompt (see
+the Style section), while bracket cues are section-scoped and are the surface
+v5.5 follows most exactly here.
+
+**The cues now describe a band hitting, not an orchestra swelling.** Every one of
+these is lifted from how the named reference actually works — dry and in the
+room, thick bass, staccato keys, the crash cymbal withheld until late — rather
+than from the Bond-ballad vocabulary of rounds 17–19:
+
+| | Chorus 1 | Chorus 2 | Final chorus |
+|---|---|---|---|
+| **Band** | the whole band hits together — dry and heavy; sustained strings, low brass, timpani, **the baritone sax honking under it** | heavier: **bass thicker, sax dirtier, the Rhodes hammered and staccato** | **the crash cymbal finally arrives** and the whole record opens up; the sax blaring |
+| **Cymbal** | **no crash cymbal yet** | **still no crash cymbal** | **arrives** |
+| **Her** | **gives it everything: full-throated, raw, gritty, no politeness left** | digs in harder, **rasp on every line** | **gives absolutely everything**, holds the last note until the band cuts |
+| **Voices** | **a room of voices sings the hook in unison** | louder with her | **at full roar with her** |
+
+**The withheld crash cymbal is the single cheapest device in the round**, and it
+is the one that produces "it builds, then it delivers". A record that has not
+used its brightest, most obvious accent for three minutes has an enormous card
+left to play, and playing it once, late, is worth more than any amount of added
+instrumentation. It costs eleven words across three cues.
+
+**"A room of voices in unison" is the biggest change to the sound of the
+chorus.** Take C's choir *answers* her, sweetly, like hold music, low in the mix —
+three separate instructions to stay small and stay separate. The reference has a
+crowd singing the hook *with* the singer. **The call-and-response is preserved
+where the joke lives** — the clerks' `(I'm sorry, I can't help you)` lines are
+untouched — and the unison arrives only on the hook and its echo.
+
+> **Why this does not break the character.** The rule was *she never joins them,
+> she never rises to them*. She still doesn't: every `That's OK` is deadpan, and
+> the clerks still get nothing. What changed is that the **hook** stopped being an
+> answer to a clerk and became the thing she is actually saying. She is not
+> shouting at a functionary; she is stating the title with a room behind her.
+
+**`shouted vocals` and `screaming` stay excluded and the lyrics stay in normal
+case.** Caps plus belt direction is a documented route to genuinely shouted
+vocals, which would cross from *committed* into *losing the character*.
+
+**`tempo unchanged` stays in the chorus-2 cue**, and the reference now proves the
+point rather than just asserting it: that record is ~82 BPM to our 86. Round 11
+bought grandeur with a half-time chorus and Kai heard it as *way too slow*; round
+14 then overcorrected the BPM. **Whatever is missing, it has never been tempo.**
+
+**The beat drop after "all day to complain" is left completely alone.** Round 17
+added a cue to protect it and the pacing got *worse*; Take C produces it with no
+cue at all.
+
+### Variant B — the sparser hook, if round 20 still under-delivers
+
+**This is round 18's chorus lyric, kept because it is the next lever and it is
+the one thing round 19 chose not to spend.** Two lines added to each chorus,
+nothing deleted:
+
+> `Take your time —`
+> **`I've got all day.`**
+> **`All day.`**
+> `I've got all day to complain,`
+> `(all day to complain, all day to complain)`
+
+**Why it would work.** The chorus is six clipped trade lines and one payoff — a
+*verse* shape wearing a chorus label, with nowhere to put a long note. The
+documented fix for a chorus that will not grow is counter-intuitive: **reduce
+lyric density and widen repetition**
+([SunoPromptPro](https://www.sunopromptpro.com/en/guides/suno-chorus-prompts),
+[Jack Righteous](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/emotion-layered-chorus-suno-guide)).
+Three statements of the same idea, each shorter than the last, each landing on an
+**open vowel she can hold** — *day*, *day*, *complain* — and sung alone with the
+clerks and choir out of the way.
+
+**Cost:** 81 chars, so it needs the two clerk-casting phrases to stay cut plus
+~80 more from the chorus cues. **It fits the round-20 reference better than it
+fitted the Bond one** — a crowd singing a short repeated phrase in unison is
+exactly what that chorus is built from.
+
+**Variant C — a key change up a semitone on the final chorus.** Written
+`[Final Chorus: key change up a semitone | …]`; an upward modulation is the other
+reliable chill trigger and Suno has a documented tag form for it. Held back from
+round 19 because tags are hints rather than commands and a modulation over a
+looped boom-bap bed is the likeliest thing here to come back wrong — but it is
+five words and it is independent of everything else, so it is a cheap roll.
+
 ```lyrics
-[Intro | dial tone into a cheap on-hold muzak loop — Rhodes on an unresolved minor-ninth | touch-tone beeps as percussion]
+[Intro | dial tone into a cheap on-hold muzak loop — Rhodes on an unresolved minor-ninth | touch-tone beeps locked to the beat, the only percussion]
 [telephone announcement: bland, polished, corporate]
 (Thank you for calling. Your call is important to us.)
 (Press one for claims. Press two for appeals.)
@@ -186,10 +489,10 @@ Three's fine. I'm free at three. Three is lo-o-ovely to me.
 [clerk]
 (There's really nothing further I can do at this level)
 [lead: sweetheart stretched into a veiled threat]
-Sweeeetheart. There is always a level above the le-e-evel.
+Sweeeetheart. There is always a level above the level.
 [Pre-Chorus | drums thin to a rimshot | the muzak loop opens up, a low brass swell rising underneath]
 So put down the script, and pick up the phone
-[Chorus | a timpani hit lands on the downbeat and the strings arrive | a small choir answers, sweet as hold music, low in the mix | lead answers dry and unmoved, never joins them]
+[Chorus | the whole band hits together — dry and heavy | sustained strings, low brass, timpani, the baritone sax honking under it | no crash cymbal yet | she gives it everything: full-throated, raw, gritty, no politeness left | a room of voices sings the hook in unison]
 (I'm sorry, I can't help you)
 That's OK.
 (You'll have to wait in line)
@@ -198,7 +501,7 @@ That's OK.
 Take your time —
 I've got all day to complain,
 (all day to complain, all day to complain)
-[Verse 2 | wider melodic range, more irritated | dry sighs between the lines | clerks still band-passed and distant | muted trumpet answers her in the gaps]
+[Verse 2 | wider melodic range, more irritated | dry sighs between the lines | muted trumpet answers her in the gaps]
 Regional office, Thursday. Rain on the glass.
 (Ms Bell, I've escalated it, that's all I can pass)
 Borough office, Tuesday, and they gave me a code.
@@ -209,7 +512,7 @@ State house, Friday, and they put me on the good hold:
 Vivaldi. Second movement. I know where it folds.
 [Pre-Chorus | drums thin to a rimshot | the brass swell rises higher than before]
 So put down the script, and pick up the phone
-[Chorus | bigger — strings and low brass together, timpani underneath, tempo unchanged | the choir a little fuller, still restrained and low | lead level and dry against it, never joins them]
+[Chorus | heavier — the bass thicker, the sax dirtier, the Rhodes hammered and staccato | tempo unchanged | still no crash cymbal | she digs in harder, rasp on every line | the room of voices louder with her]
 (I'm sorry, I can't help you)
 That's OK.
 (You'll have to wait in line)
@@ -232,12 +535,12 @@ every system you ever built
 runs on people hanging up.
 [drums ease back in, soft]
 So don't.
-[Verse 3 | the performance comes back, strained at the edges | determined, never shouted | fatter drums | clerks band-passed and distant to the last | low strings creep in, building]
+[Verse 3 | the performance comes back, strained at the edges | determined, never shouted | fatter drums | low strings creep in, building]
 Deputy Secretary. Somebody's aide's aide.
 (Ma'am, this line is for emergencies) — well. Look what I made.
 Chief of Staff at midnight, sounding tired and small,
 (Who IS this woman?) — Karen. From the payphone. That's all.
-[Final Chorus | the biggest swell — all of it in the band | huge strings, low brass and timpani, grand as a film title sequence | the choir at its fullest but still low in the mix | lead flat, dry and unbothered, refusing to be impressed, never joins them]
+[Final Chorus | the crash cymbal finally arrives and the whole record opens up — huge strings, low brass, timpani, the sax blaring, grand as a film title sequence | she gives absolutely everything and holds the last note until the band cuts | the room of voices at full roar with her]
 (I'm sorry, I can't help you)
 That's OK.
 (There is nobody above me)
@@ -257,7 +560,7 @@ Mm. Hold, please.
 
 ## My Taste profile
 
-Swap this in for the duration of this track (1,985 of 2,000 chars — there is no
+Swap this in for the duration of this track (1,940 of 2,000 chars — there is no
 room left in it; anything added has to displace something). The box
 **cannot be saved empty**, so there is no "off" — the only move is to replace the
 BadCode house profile with one that pulls the same way as the song. **Keep a copy
@@ -265,11 +568,11 @@ of the house profile before overwriting, and restore it afterwards.** Also toggl
 **My Styles** off while you're in the dialog.
 
 ```
-Vocals: Expressive mature American altos with a New York accent — rich chest voice, warm midrange, tasteful vibrato, moving between rhythmic spoken-singing, melodic lines and short soulful phrases. Patronising, intrusive, certain she is right: nasal complaint curls on the line ends, dramatic sighs, over-enunciated corrections, stretched sweetheart phrases. A likeable, charismatic voice performing irritating behaviour — the whine is an accent she puts on. Close-mic'd and dry. Backing, in two kinds that never blend into her or into each other: single telephone voices answering from far behind the beat, band-passed, distant, spoken and flat; and a small restrained choir singing the chorus answers, sweet as hold music, low in the mix.
-Core sound: Dusty 86 BPM boom bap and soul-jazz built out of telephone hold-muzak, touch-tone beeps and dial tone, arranged like a 60s spy-thriller film score — the muzak loop sitting on an unresolved minor-ninth, a prowling chromatic upright bass, muted trumpet, brushed drums. Warm, unhurried and sincere: the comedy lives entirely in the voice and the words, never in the music.
+Vocals: Expressive mature American altos with a New York accent — rich chest voice, warm midrange, tasteful vibrato, moving between rhythmic spoken-singing, melodic lines and short soulful phrases. Patronising, intrusive, certain she is right: nasal complaint curls on the line ends, over-enunciated corrections, stretched sweetheart phrases. A likeable, charismatic voice performing irritating behaviour — the whine is an accent she puts on. Close-mic'd and dry. Backing, in two kinds that never blend into her or into each other: single telephone voices answering from far behind the beat, band-passed, distant, spoken and flat; and a room of voices singing the chorus hook in unison with her.
+Core sound: Dusty 86 BPM boom bap and soul-jazz built out of telephone hold-muzak, touch-tone beeps and dial tone, arranged like a 60s spy-thriller film score — the muzak loop sitting on an unresolved minor-ninth, a prowling chromatic upright bass, muted trumpet, a smoky baritone saxophone, brushed drums. Warm, unhurried and sincere: the comedy lives entirely in the voice and the words, never in the music.
 Production: Cheap on-hold loops that never resolve, telephone-EQ'd Rhodes, vinyl crackle, band-passed phone-line tone on the background voices.
-Choruses only: it opens into a title-sequence swell — sustained strings, low brass, timpani, unresolved tension — under a small choir kept low in the mix. She stays level and dry through the choruses: the size is the band's, never hers. The tempo never drops.
-Dynamics: the sections contrast hard — small dry verses, one wide loud chorus, one bare intimate bridge. Nothing sits at the same level for long.
+Choruses only: the whole band hits together, dry and heavy in the room — sustained strings, low brass, timpani, honking baritone sax, unresolved tension. She gives it everything: full-throated, raw and gritty. The tempo never drops.
+Dynamics: the sections contrast hard — small dry verses, one enormous chorus, one bare intimate bridge. Nothing sits at the same level for long.
 Lyrics & mood: Bureaucratic escalation, hold queues, benefits offices, being passed up a ladder of functionaries. Dry sarcasm, weaponised politeness, American working-class grievance.
 Structure: Call-and-response choruses, a fixed hook answered by a functionary, one spoken bridge where the voice drops its edge.
 ```
@@ -287,6 +590,12 @@ Advanced mode, model **v5.5**, style influence **90**, weirdness **60**, and
 > is what round 16 ran and what Kai kept. The running order sketched below
 > (*"if it is still flat, three at 80/65"*) was never needed — the first rung
 > landed. Keep the sliders here unless a new complaint arrives.
+>
+> **Round 17 leaves all three alone.** It arrived with three complaints and none
+> of them is a slider problem: a melisma spelling, a chorus clause, and one word
+> in the exclude list are all *box* faults with *box* fixes. Moving a slider in
+> the same round would make the A/B unreadable, which is the mistake round 14
+> made and paid for.
 
 > ### Round 15: run it Voice-off, and turn the randomness on
 >
@@ -549,6 +858,55 @@ once, which is what round 15 does:
 section changes) rather than prompting for them. **Do not answer "flat" by adding
 instruments** — that is how the box reached 986 chars and came back "too weird".
 
+### 10. Typographic stretch markers are a live hazard on the lead line
+
+New at round 17, and cheap to avoid. `word-o-ord` melisma spellings and `word~`
+sustains are documented devices, but they instruct the model to hold a note on
+whatever vowel the spelling implies — and **on a weak vowel (a schwa, a syllabic
+`l`/`n`/`r`) there is nothing to hold, so the model invents one.** That invented
+vowel is the "AI voice" artefact, and it cost this file the best line in Verse 1
+for a whole round.
+
+*Rule:* stretch markers only on open vowels (`lo-o-ovely`, `ti-i-ime`,
+`Sweeeetheart`), never on `-el`, `-en`, `-er`, `-le`. If a line needs weight and
+its vowels won't take a stretch, **put the weight in the bracket cue instead**
+(`the threat spoken flat`) — the cue is the reliable control surface on this
+track, and it cannot mispronounce anything.
+
+*Corollary, and it is why the chorus fix avoided typography entirely:* round 17
+wanted long sustained notes on the hook and put that instruction in the **cues**
+(`long held notes, no runs`), not in the lyric as `complai~n`. The round that
+discovers a stretch marker breaking a line is the wrong round to add three more.
+
+### 11. The lyric cues are a second copy of the band, and trimming them moves it
+
+**New at round 18, proven the expensive way, and it is the most actionable entry
+in this list.** Round 17 needed ~150 chars for new chorus cues and took them from
+cue text it judged redundant — the intro's `cheap on-hold muzak loop — Rhodes on
+an unresolved minor-ninth` became `the on-hold muzak loop`, and the lead's
+entrance lost `expressive alto, close and dry`. Every word removed was
+demonstrably present in the Style box. It still changed the record: Kai's first
+sentence back was *it changed the instrumental way too much.*
+
+**Why the reasoning was wrong.** "It is already in the Style box" treats the two
+boxes as one spec with duplicates. They are not. The Style box describes the
+**whole song**; a lyric cue describes **one moment**, and on this track the cues
+are the stronger surface (v5.5 follows them exactly — see *How to generate*).
+Naming the Rhodes and the minor-ninth *at the intro* is what makes the loop the
+song's opening statement rather than one item in a list of eight instruments.
+Deleting it does not remove information — **it removes emphasis at a specific
+point in time**, and emphasis at a point in time is the whole reason cues exist.
+
+*Rule, and it is absolute now:* **never buy character headroom from a cue that
+names an instrument.** Take it from duplicated *vocal casting* (the clerks are
+described four times over), from adjectives, or from your own new text. If a
+round genuinely cannot fit inside 5,000 chars without cutting an instrument
+word, **the round is too big** — split it.
+
+*This supersedes half of point 6.* Diffing cue instruments against Style-box
+instruments is still worth doing — but the answer to a mismatch is **add the
+missing cue**, never delete the "extra" one.
+
 ### One process change worth more than any of the above
 
 **Freeze the voice and iterate only the band.** For fourteen rounds each round
@@ -578,10 +936,29 @@ on, change one thing per round, three rolls each.**
   moment the swell is present everywhere it stops being an arrival and becomes
   the genre, which is precisely what round 9 did wrong. **Verses small is not a
   compromise on the grandeur — it is the mechanism that produces it.**
+  **Amended again at round 18: the biggest thing in the chorus is the silence
+  in front of it.** Two rounds were spent adding *material* to a chorus that
+  flopped — a wider choir, a bigger voice, more brass — and the thing that
+  actually produces the physical reaction is a **hole**: the arrangement cutting
+  out for one bar and then landing all at once. The corollary is uncomfortable
+  and worth writing down: when this chorus underwhelms, the instinct to add
+  another instrument is **always wrong**, and has now been wrong at rounds 9, 12
+  and 17. Take something away instead.
+
+  **Amended at round 17:** for sixteen rounds the second half of this rule was
+  *the grandeur is the band's, never hers*, and that is what produced a chorus
+  that swelled while nobody sang it. The rule now is **the grandeur is the band's
+  and the hook line's, and never the answers'.** She is dry and unimpressed on
+  every `That's OK` — the joke is untouched — and full-voiced on *I've got all
+  day to complain*, which is the title, the thesis and the only line in the song
+  that is actually hers.
 - **The vocal is an arc, not a state.** Brittle and put-upon in Verse 1, sighing
   and exasperated in Verse 2, thin and strained by Verse 3. She never raises her
-  voice — the tightening *is* the escalation. The one place she's genuinely
-  unbothered is the last line of the track, which is the payoff.
+  voice **to them** — the tightening *is* the escalation, and every reply to a
+  clerk stays level and dry. The belted chorus hook is not an exception to this:
+  she is not shouting at a functionary, she is stating the title over an
+  orchestra, alone, with the clerks and the choir out of the way. The one place she's genuinely unbothered is the last line of the
+  track, which is the payoff.
 - **The bridge is the drop in temperature.** The edge comes off entirely: worn
   down, not performing. It only lands because everything around it is wound tight.
 - **Parentheses are the mechanism.** `( )` renders as backing/secondary vocal, so
@@ -593,8 +970,80 @@ on, change one thing per round, three rolls each.**
 
 ## How to generate
 
-**Generate fresh, don't cover.** Cover reinterprets the *melody* — and the melody
-and phrasing are exactly the defect. Studio multitrack vocal-cover is the wrong
+### Read this first: a fresh roll re-rolls the band
+
+**Round 17's real lesson, and it cost a round.** Until round 16 there was no take
+worth protecting, so every round was a fresh roll and nobody noticed what that
+costs. Now there is one. Kai's round-17 verdict — *it changed the instrumental
+way too much* — has **two** causes, and only one of them was fixable in the box:
+
+1. **Cue text that named instruments got shortened** to buy room for the chorus.
+   That is a real, avoidable, prompt-level regression, and round 18 reverts it in
+   full (standing problem 11).
+2. **It was a fresh generation.** Even with a byte-identical prompt, a new roll
+   re-rolls the arrangement — the loop, the drum feel, the trumpet answers, the
+   pacing. **No prompt can hold those still.** Only reusing the existing audio
+   can.
+
+So: if the ask is *"variants of the test prompt"*, roll fresh and expect to hunt
+— that is the deal, and it is why round 18 froze every band word it could. If the
+ask is *"this song, but the chorus"*, do not roll at all. Use the section route
+below; it is the only thing that actually guarantees the verses survive.
+
+### Repairing the song you have, without re-rolling it
+
+**Route 1 (preferred) — Replace Section, one chorus at a time.** Three-dot menu →
+**Edit** opens the Song Editor: the track appears as a waveform split into the
+sections Suno detected. Highlight the chorus region, paste that region's updated
+lyrics and cues, generate alternates, preview, commit, **Save as new song**. Suno
+regenerates *only* the selected region and the rest of the song is untouched.
+Pro/Premier only. ([Replace Section guide](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/replace-section-suno-editor),
+[Song Editor workflow](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/song-editor-in-suno-v5-workflow))
+
+The rules that actually matter on this track:
+
+- **End the selection *before* the line `I've got all day to complain,`.** The
+  beat slamming in after it is the one moment Kai singled out as working, and it
+  lives in the section transition. Anything outside the region is not
+  regenerated and therefore cannot be lost. **This is the only reliable way to
+  keep it** — round 17 tried to protect it with a cue instead and made the pacing
+  worse. Everything round 18 adds (the silence, the stabs, the belt, the two
+  sparse lines) sits *before* that line, which is what makes this cut possible.
+- **Take a little more region than you need at the front**, since too short a
+  selection generates badly — but not so much that you swallow the pre-chorus.
+  The rimshot-and-rising-swell build is working; it is what makes the flop
+  audible, and it becomes the payoff the moment the chorus lands.
+- **Replace whole lines, never one or two words.** Single-word surgery forces new
+  phonemes into a fixed slot and glitches audibly.
+- **The melody being rewritten is the point.** The guides list "Suno sometimes
+  alters the melody on 10–30s fragments" as a hazard. Here it is the deliverable.
+- **One chorus per pass, and A/B each.** Quality degrades with repeated
+  sequential replacements, and previously generated blocks can't be reused in
+  replacement mode — so do the strongest chorus first and learn from it.
+- **Don't chase it.** If two passes on one chorus don't land, change tools rather
+  than burn credits on the same selection.
+
+In **Studio**, the equivalent is the **Replace** verb — *regenerates over the
+selection, ignoring its melody, using the rest of the arrangement as context* —
+which is a one-line description of this round's ask. Set BPM to Manual **86**,
+fill Exclude Styles, and clear it between generations.
+
+**Route 2 (fallback) — a fresh roll of the four boxes** at v5.5, 90/60,
+Voice-off. Use it if the account isn't Pro or the Editor degrades the audio.
+It re-rolls the whole song, so budget several takes, and keep Take C.
+
+**If seams are audible after Editor surgery**, the documented smoother is a Cover
+of the edited song with the same style and lyrics — but Cover reinterprets melody
+across the *whole* track, so run it at audio influence **35–40** (the workhorse
+band: preserves melody with minimal quality loss) and treat it as a last resort
+rather than a step.
+
+### For a fresh roll
+
+**Generate fresh, don't cover.** Cover reinterprets the *melody* — and until
+round 16 the melody and phrasing were the defect everywhere. **Round 17 narrows
+this:** the melody is now wrong in the *chorus only*, which is why a section
+Replace is the right tool above and a whole-track Cover still is not. Studio multitrack vocal-cover is the wrong
 tool here despite fitting the brief on paper — it regenerates the lead vocal only
 and **loses the backing vocals for that section**, and this song is built on them
 (the parenthetical clerk lines, the call-and-response chorus).
@@ -661,14 +1110,24 @@ Kai on 2026-08-11 as *"the direction we want to go in for this song"* — they a
 where this was heading. **Take C is round 16, and it arrived**: Kai confirmed the
 same day that it is the version of the song we like. **C outranks A and B, and
 all three outrank every round in the log below.** Anything in this file that
-contradicts C is a superseded experiment, not a standard.
+contradicts C is a superseded experiment, not a standard — **with exactly two
+exceptions**, both raised by Kai *against* C: the `level` artefact (fixed at
+round 17, confirmed) and the chorus (rounds 17 and 18). Kai's own name for these
+boxes is **"the test prompt"**, and the ask is *variants of it* — its pacing and
+everything outside the chorus are, in his words, almost perfect.
+
+**C is therefore the base every future round rebases onto, not merely a
+fallback.** Round 18 was rebuilt from the boxes below rather than from round 17,
+which is the only reason the band came back. Do the same next time: start here,
+re-apply the two known-good fixes, then change one thing.
 
 ### Take C — round 16, the endorsed take ⭐
 
-**It is the top of this file, unchanged.** The Style, Exclude, Lyrics and My
-Taste boxes in the first four sections *are* Take C — Kai handed the four boxes
-back verbatim after the take landed, and they were diffed byte-for-byte against
-the file before this note was written. Nothing needed restoring.
+**Preserved here in full, because round 17 edits the top of the file.** Take C
+is no longer "the top of this file, unchanged" — round 17 answers three
+complaints against it, so the four boxes Kai ran are copied down here verbatim,
+lifted straight out of the file before the edit rather than retyped. This is the
+rule the section itself set at round 16, honoured on its first test.
 
 So this take, unlike B, is **fully reconstructible**: all four inputs are here,
 plus the settings (v5.5, style influence **90**, weirdness **60**, **no Voice
@@ -680,6 +1139,123 @@ never was.
 someone answers a new complaint by rewriting the Style box, the endorsed take
 stops being reconstructible and this file is back to archaeology. Copy the four
 boxes down here first, then edit upward.
+
+Style (974 chars):
+
+```
+A mature New York woman on the phone — expressive alto, rich chest voice, warm midrange, rhythmic spoken-singing that opens into real melodic lines. Patronising, polite, certain she is right: nasal complaint curls on the line ends, dramatic sighs, over-enunciated consonants, stretched sweetheart phrases. Close-mic'd and dry. She starts patient and amused, tightens verse by verse, then drops to a bare speaking voice on the bridge. Under her, Hip Hop, Boom Bap at 86 BPM, unhurried, arranged like a 60s spy-thriller film score: a cheap on-hold muzak loop gone sinister — telephone-EQ'd Rhodes and muted trumpet on an unresolved minor-ninth, prowling chromatic upright bass, brushed drums, touch-tone beeps as percussion. Telephone clerks answer from far behind the beat, band-passed and flat. On the chorus it opens into a title-sequence swell: sustained strings, low brass and timpani, a small restrained choir low in the mix on the answers, her level and dry against it.
+```
+
+Exclude (600 chars):
+
+```
+screeching, squealing, shrill, piercing soprano, belted chorus, gospel choir, nonstop nasal honk, cartoon voice, childish voice, grating novelty vocal, broad sitcom caricature, monotone vocals, flat spoken delivery, emotionless narration, Broadway belting, operatic soprano, excessive melisma, gospel lead, soul diva, sultry, breathy pop vocal, autotune, whisper vocals, shouted vocals, screaming, smooth jazz, jazz singer, scat, surf rock, spaghetti western, kazoo, slide whistle, circus, honky tonk piano, drum and bass, jungle, trap hi-hats, drill, edm, dubstep, chill, laid-back, relaxed delivery
+```
+
+Lyrics (4,923 chars):
+
+```lyrics
+[Intro | dial tone into a cheap on-hold muzak loop — Rhodes on an unresolved minor-ninth | touch-tone beeps as percussion]
+[telephone announcement: bland, polished, corporate]
+(Thank you for calling. Your call is important to us.)
+(Press one for claims. Press two for appeals.)
+(Press three to speak to an adviser.)
+[lead enters alone | expressive alto, close and dry | clipped, already impatient | brushed drums slide in]
+Three.
+[Verse 1 | rhythmic spoken-singing with melodic movement | patronisingly polite | nasal complaint curls on the line ends | clerks are telephone voices — band-passed, far away, spoken and flat | muted trumpet over a prowling chromatic upright bass]
+Monday. Nine-oh-five. Got a chair and a flask,
+thirty years of service and one simple ask.
+[telephone-filtered clerk]
+(Ma'am, I'm only the front desk, I can't authorise that)
+[lead: dry and condescending]
+Then fetch me the desk that sits behind the desk you sat at.
+[clerk]
+(My supervisor's in a meeting, she's not free until three)
+[lead: rising melodic phrase, playful complaint curl]
+Three's fine. I'm free at three. Three is lo-o-ovely to me.
+[clerk]
+(There's really nothing further I can do at this level)
+[lead: sweetheart stretched into a veiled threat]
+Sweeeetheart. There is always a level above the le-e-evel.
+[Pre-Chorus | drums thin to a rimshot | the muzak loop opens up, a low brass swell rising underneath]
+So put down the script, and pick up the phone
+[Chorus | a timpani hit lands on the downbeat and the strings arrive | a small choir answers, sweet as hold music, low in the mix | lead answers dry and unmoved, never joins them]
+(I'm sorry, I can't help you)
+That's OK.
+(You'll have to wait in line)
+That's OK.
+(Somebody will be with you)
+Take your time —
+I've got all day to complain,
+(all day to complain, all day to complain)
+[Verse 2 | wider melodic range, more irritated | dry sighs between the lines | clerks still band-passed and distant | muted trumpet answers her in the gaps]
+Regional office, Thursday. Rain on the glass.
+(Ms Bell, I've escalated it, that's all I can pass)
+Borough office, Tuesday, and they gave me a code.
+(A caseworker will call you) — nobody phoned.
+Week three, a councilman's assistant, weak constitution but will do for now.
+(Hold, Ma'am, give me a second) — he thinks I'll just throw in the towel.
+State house, Friday, and they put me on the good hold:
+Vivaldi. Second movement. I know where it folds.
+[Pre-Chorus | drums thin to a rimshot | the brass swell rises higher than before]
+So put down the script, and pick up the phone
+[Chorus | bigger — strings and low brass together, timpani underneath, tempo unchanged | the choir a little fuller, still restrained and low | lead level and dry against it, never joins them]
+(I'm sorry, I can't help you)
+That's OK.
+(You'll have to wait in line)
+That's OK.
+(Somebody will be with you)
+Take your time —
+I've got all day to complain,
+(all day to complain, all day to complain)
+[Instrumental break | the muzak loop turns into the full spy riff — brass stabs, timpani, prowling bass | four bars, then it drops away]
+[Bridge | warm half-time telephone funk — wah guitar and clavinet alone, close and intimate | no strings, no brass]
+[muffled telephone dialogue layered and overlapping, four voices deep, low in the mix]
+[she drops the performance — worn down, quiet, not acting]
+Six weeks in a phone box on Lexington and Third,
+sun, snow, sun again, and not one word.
+They automated my floor. Kept the hold music though.
+The machine can do my job — it just can't do slow.
+[spoken word speech talking | flat and tired, all the fight out of it | one chord]
+And here's the part they never printed in the manual, dear:
+every system you ever built
+runs on people hanging up.
+[drums ease back in, soft]
+So don't.
+[Verse 3 | the performance comes back, strained at the edges | determined, never shouted | fatter drums | clerks band-passed and distant to the last | low strings creep in, building]
+Deputy Secretary. Somebody's aide's aide.
+(Ma'am, this line is for emergencies) — well. Look what I made.
+Chief of Staff at midnight, sounding tired and small,
+(Who IS this woman?) — Karen. From the payphone. That's all.
+[Final Chorus | the biggest swell — all of it in the band | huge strings, low brass and timpani, grand as a film title sequence | the choir at its fullest but still low in the mix | lead flat, dry and unbothered, refusing to be impressed, never joins them]
+(I'm sorry, I can't help you)
+That's OK.
+(There is nobody above me)
+That's OK.
+(Ma'am — I'm putting you through)
+Take your ti-i-ime —
+I've got all day to complain,
+(all day to complain, all day to complain)
+[Outro | everything drops to phone-line only | one held Rhodes chord | no drums]
+(Hello? ... Karen? This is the President.)
+[silence: 1s]
+[finally unbothered — low, light, victorious]
+Mm. Hold, please.
+[power-off drop: click, dial tone, the muzak loop resumes and fades]
+[end]
+```
+
+My Taste (1,985 chars):
+
+```
+Vocals: Expressive mature American altos with a New York accent — rich chest voice, warm midrange, tasteful vibrato, moving between rhythmic spoken-singing, melodic lines and short soulful phrases. Patronising, intrusive, certain she is right: nasal complaint curls on the line ends, dramatic sighs, over-enunciated corrections, stretched sweetheart phrases. A likeable, charismatic voice performing irritating behaviour — the whine is an accent she puts on. Close-mic'd and dry. Backing, in two kinds that never blend into her or into each other: single telephone voices answering from far behind the beat, band-passed, distant, spoken and flat; and a small restrained choir singing the chorus answers, sweet as hold music, low in the mix.
+Core sound: Dusty 86 BPM boom bap and soul-jazz built out of telephone hold-muzak, touch-tone beeps and dial tone, arranged like a 60s spy-thriller film score — the muzak loop sitting on an unresolved minor-ninth, a prowling chromatic upright bass, muted trumpet, brushed drums. Warm, unhurried and sincere: the comedy lives entirely in the voice and the words, never in the music.
+Production: Cheap on-hold loops that never resolve, telephone-EQ'd Rhodes, vinyl crackle, band-passed phone-line tone on the background voices.
+Choruses only: it opens into a title-sequence swell — sustained strings, low brass, timpani, unresolved tension — under a small choir kept low in the mix. She stays level and dry through the choruses: the size is the band's, never hers. The tempo never drops.
+Dynamics: the sections contrast hard — small dry verses, one wide loud chorus, one bare intimate bridge. Nothing sits at the same level for long.
+Lyrics & mood: Bureaucratic escalation, hold queues, benefits offices, being passed up a ladder of functionaries. Dry sarcasm, weaponised politeness, American working-class grievance.
+Structure: Call-and-response choruses, a fixed hook answered by a functionary, one spoken bridge where the voice drops its edge.
+```
 
 **What C changed from A and B** — the short version, with the reasoning in the
 round-15 and round-16 log entries: the Bond moved *into* the beat rather than
@@ -770,6 +1346,447 @@ been prompt-dead in this file for rounds because `rock guitar` was excluded whil
 the box named no guitar at all.
 
 ## Revision log
+
+**2026-08-11 (rounds 17–19, outcome) — all three rejected.** Kai: *those prompts
+made it worse.* Take C is handed back for the third time as the base. The three
+rounds are kept in this log because their reasoning is the map of a dead end, and
+the dead end is worth naming precisely: **all three were chasing the wrong
+reference.** Rounds 17, 18 and 19 read "Skyfall / Bond-like" as a *ballad* brief
+and answered it with swell, grandeur, sustain and a held note over an
+orchestra — progressively more of it each round. The one thing they never tried
+was making the band **hit**.
+
+**2026-08-11 (round 20) — the reference changes, and so does the mechanism.**
+New brief: the chorus should sound like **"Way Down We Go"** — *especially how it
+builds then delivers a powerful chorus where the singer gives their all* — plus
+**bring the saxophone back** and **the phone beeping with the beat at the
+beginning**, staying as close to Take C as possible otherwise.
+
+### Swell and hit are opposite mechanisms
+
+A title-song chorus gets big by **adding sustain**: long strings, brass, timpani,
+the singer riding on top. The record Kai has now named gets big by **hitting**:
+the band lands together, dry, heavy and in the room, the singer at full throat,
+a crowd in unison behind them. **Weight and commitment, not grandeur.** Three
+rounds of swell language were steering away from the target, which is the
+simplest explanation on record for why each came back underwhelming. Take C's own
+`title-sequence swell` is deleted at round 20.
+
+**The tempo is exonerated, for the fourth time.** The named reference is **~82
+BPM in B♭ minor** — four off this track's 86, minor key, *somber, mid-energy*.
+Whatever is missing has never been the tempo.
+
+**Three production details map onto this track almost exactly**, and each became
+one piece of cue text: a **thick rumbling bass and staccato piano chords** (the
+Rhodes goes hammered and staccato on chorus 2); a deliberately **dry,
+"in-the-room" drum and bass sound for physical weight** (we are already
+close-mic'd and dry — the cue now says so at the chorus); and **the crash cymbal
+withheld until the last third of the song**.
+
+**The withheld crash is the cheapest device in the round and the one that
+produces "builds, then delivers".** A record that has not touched its brightest
+accent for three minutes has an enormous card left to play. `no crash cymbal
+yet` → `still no crash cymbal` → `the crash cymbal finally arrives`. Eleven words.
+
+### She gives it everything — the oldest rule in this file, overturned
+
+Since round 1 the doctrine has been *she never joins them; the size is the
+band's, never hers.* Kai has now called the chorus underwhelming three times
+running and named a record whose chorus **is** the singer giving their all. The
+rule was protecting a joke that does not need protecting: she is still deadpan on
+every `That's OK`, the clerks still get nothing, and the call-and-response is
+untouched. **What changed is that the hook stopped being an answer to a clerk and
+became the thing she is actually saying.** `a room of voices sings the hook in
+unison` replaces a choir that *answered* her sweetly, low in the mix — three
+separate instructions to stay small and stay separate.
+
+`shouted vocals` and `screaming` stay excluded and every lyric stays in normal
+case: caps plus belt direction is a documented route to genuinely shouted vocals,
+which crosses from committed into losing the character.
+
+### The saxophone was never in the prompt
+
+**Worth stating plainly, because it changes the fix: no version of this prompt
+has ever contained the word "saxophone".** Searched across the whole file and
+every recorded take. The sax Kai remembers was **Suno's own inference** —
+soul-jazz and spy-thriller both imply horns — so it arrives at random and
+re-rolling will not reliably return it.
+
+**And our exclude list is suppressing it.** Exclusions are guidance, not a mute,
+and they suppress *genre-implied* instruments: `smooth jazz`, `jazz singer` and
+`scat` are in the list to keep a crooner out of the lead slot, and they take the
+horn down with them. The documented fix is **not** to delete the exclusion —
+that lets the crooner back in, which is the whole reason it exists — but to
+**pair it with a positive replacement and name the instrument explicitly**. So
+`a smoky baritone saxophone` now sits next to the muted trumpet, with a chorus
+job in the cues: `honking` → `dirtier` → `blaring`. **Baritone deliberately** —
+it doubles the prowling chromatic bass, which is the spy sound, and it honks
+rather than sweetens.
+
+### The beeps
+
+`touch-tone beeps as percussion` has been in the Style box since round 8 and
+never left — but the Style box describes the whole song, and Kai wants them at
+**the beginning, locked to the beat**, which is a section instruction. The intro
+cue now reads `touch-tone beeps locked to the beat, the only percussion`. *The
+only percussion* is the load-bearing half: it gives the beeps a job nothing else
+is competing for, two lines before `brushed drums slide in`.
+
+### What is frozen
+
+**The Style box keeps every character sentence and every band word**, minus four
+phrases that are each still stated elsewhere (`dramatic sighs` → Verse 2 cue and
+My Taste; `unhurried` → My Taste and the BPM; `gone sinister` → the minor-ninth;
+`and flat` → the Verse 1 cue). The BPM, the loop, the Rhodes, the trumpet, the
+minor-ninth, the prowling bass, the brushed drums and the beeps are untouched.
+
+**The lyrics differ from Take C in six places**, by diff: the intro cue, the
+`level` line, the three chorus cues, and the duplicated clerk casting in the
+Verse 2/3 cues. **Nothing added, no other performed line changed.** The
+pre-choruses, instrumental break, bridge, Verse 3 and outro are verbatim — the
+pre-chorus build was left alone deliberately, because *drums thin to a rimshot
+under a rising brass swell* is already the run-up this reference wants; what was
+missing was the landing.
+
+**Settings unchanged: v5.5, 90/60, no Voice attached.**
+
+### If it still isn't right — one lever, three rolls
+
+1. **Chorus still not big enough** → **Variant B**, the sparser hook. It suits
+   this reference better than it suited the Bond one: a crowd singing a short
+   repeated phrase in unison is exactly what that chorus is made of.
+2. **Sax absent or too smooth** → `smoky` → `raw`, and add `honking baritone sax`
+   to the chorus-1 cue's front. If still absent, drop `smooth jazz` from the
+   excludes and watch the lead for a crooner.
+3. **Chorus thin** → move `screeching, squealing, shrill, piercing soprano` to
+   the end of the exclude list. Free and reversible.
+4. **She sounds shouty rather than committed** → `no politeness left` out of the
+   chorus-1 cue first; `raw, gritty` second. Do not add `screaming` back — it is
+   already excluded.
+
+**Do not answer any of these by adding an instrument.** Wrong at rounds 9, 12,
+17 and 18.
+
+**2026-08-11 (round 19) — rebased on Take C again, and the reason the chorus
+kept under-delivering.** Kai pasted Take C back verbatim (verified byte-identical
+to the baseline) with: *make it sound like this, with the changes we want, as
+close to the prompt as possible — analyse and optimise, and make the chorus more
+aggressive, powerful and Bond-like.* So round 19 is built from Take C, not from
+round 18, and the diff is six edits, five of them the chorus.
+
+### The finding that reframes rounds 17 and 18
+
+**The style box is a position-weighted list, and our chorus clause is its last
+sentence.** Community testing is consistent that the front of a Suno style prompt
+carries far more weight than the back, with returns falling off after roughly the
+first dozen tags, and that reordering an identical word set changes the output.
+Our chorus instruction sits at roughly token 180 of ~200 — **the weakest seat in
+the prompt.**
+
+That is the best explanation this file has for a symptom it could not place:
+*every chorus edit gets obeyed and none of them lands hard.* Rounds 17 and 18
+both answered "the chorus is weak" by writing a better version of that sentence,
+which is the one edit whose leverage was structurally capped.
+
+**The fix is not to promote it.** What sits in front of it is the lead-vocal
+identity — eight rounds and a Voice transplant of hard-won text — and trading her
+position for the chorus is a mistake this file already made at round 9. **The
+chorus needs to stop depending on the style box.** Bracket cues are
+section-scoped, are not subject to this decay, and are the surface v5.5 follows
+most exactly here. So round 19 puts the muscle in the three chorus cues and uses
+the style clause only to **stop vetoing them** — deleting `a small restrained
+choir low in the mix` and `her level and dry against it`, which were literal
+instructions for a chorus that does not arrive.
+
+This is why round 19 is a smaller diff than round 18 and should hit harder.
+
+### The aggression is a technique, not an adjective
+
+Kai asked for aggressive, powerful and Bond-like. Each has a specific, documented
+source, and none of them required a new instrument:
+
+- **Growling plunger-muted brass stabs.** The *Goldfinger* brass was made
+  deliberately dirty — plunger mutes on the trumpets with players adding a
+  throaty growl as they blew — with fanfares and "howls" written in at the
+  session, and stabs functioning as ornament over a dissonant chord rather than
+  as melody. **We already have a muted trumpet in the box**; this is that
+  instrument played the aggressive way, on the chorus only. `shrill` is the
+  natural word and is in our own exclude list; `growling` is not.
+- **The held final note.** The most famous vocal moment in Bond title songs is
+  Bassey's final sustained note on *Goldfinger*, held long enough that she
+  reportedly fainted at the mic. The final-chorus cue now asks for exactly that:
+  *holds the last note enormous and unbroken until the band cuts.* One event, at
+  one moment, in an arrangement already built to support it — which is a better
+  answer to *"I want goosebumps"* than anything spread across a section.
+- **`powerful, commanding` instead of more size words.** The vocal-prompt guides
+  separate *character* words (gritty, raspy, husky) from *delivery* words
+  (powerful, belted, commanding, declarative), and report the delivery words as
+  the ones that move the performance. Round 18 said `huge belted chest voice` —
+  three character words and a size. Round 19 says what she is *doing*.
+- **`grit and rasp on the note`** in chorus 2, lifted from **Take B**, whose
+  vocals Kai liked (*"controlled rasp and tasteful vibrato"*).
+- **One bar of cut-out before the chorus lands.** Sudden dynamic contrast is the
+  most reliable frisson trigger there is, the track already had the run-up and no
+  jump, and it costs nothing.
+
+**And one thing deliberately avoided: ALL CAPS.** Caps plus belt tags is a
+documented way to trigger genuinely shouted vocals, which would lose the
+character — the joke is that she never raises her voice at anyone.
+`shouted vocals, screaming` stay excluded and every lyric stays in normal case.
+
+### What is frozen, and how it was verified
+
+**The Style box differs from Take C by one sentence**, checked
+sentence-by-sentence. `sustained strings, low brass and timpani` is Take C's own
+list in Take C's own order.
+
+**The lyrics differ in six places**, checked by diff: the `level` line, the three
+chorus cues, and the duplicated clerk casting in the Verse 2 and Verse 3 cues
+(the only payment — that casting survives in three other places). **Nothing was
+added, no instrument word was cut, and no other performed line changed.** The
+intro cue, entrance cue, both pre-choruses, the instrumental break, the bridge,
+Verse 3 and the outro are Take C's, verbatim.
+
+**The exclude list keeps every word it had except `belted chorus`**, which
+literally vetoes the ask. `screeching, squealing, shrill, piercing soprano` move
+from the front to the back — the guard survives, the emphasis doesn't, and it is
+reversible in one move.
+
+**Settings unchanged: v5.5, 90/60, no Voice attached.**
+
+### If it still isn't right — one lever, three rolls
+
+1. **Chorus still under-powered** → **Variant B**, the sparser hook (round 18's
+   two added lines, kept in the Lyrics section). This is the biggest remaining
+   move and the one round 19 chose not to spend, because the brief was minimum
+   diff.
+2. **Wants one more Bond device** → **Variant C**, `key change up a semitone` on
+   the final chorus. Five words, independent of everything else.
+3. **Chorus goes screechy** → move the four screech words back to the front of
+   the exclude list before touching the Style box.
+4. **Chorus sounds sour** → delete ` over the minor-major ninth` from chorus 1.
+5. **Still polite** → delete `soul diva` from the excludes. Held back because it
+   is a *global* vocal guard and the verses are known-good; change it alone and
+   check the verses.
+
+**Do not answer any of these by adding an instrument.** That instinct has now
+been wrong at rounds 9, 12 and 17.
+
+**2026-08-11 (round 17, outcome) — one fix landed, one missed, one regression.**
+Kai on the round-17 takes: *the "level" lyric is fixed* ✅; *it got rid of the
+[bad] melody* ✅; *but it changed the instrumental way too much — I wanted that to
+stay the same* ❌; and *the chorus still isn't changed enough — it needs more
+aggression and power in an Adele-Skyfall / Bond-theme way. I want goosebumps,
+instead of this generic underwhelming chorus* ❌. He also named the target
+explicitly for the first time: **the round-16 boxes are "the test prompt", and
+what he wants are variants of it** — its pacing and the rest of the song were
+*almost perfect*.
+
+**The regression is the more useful failure of the two**, because it was
+self-inflicted and is now a standing rule. Round 17 bought its new chorus cues by
+shortening cue text that named instruments, on the reasoning that the Style box
+already said the same words. It does — but a cue is emphasis *at a point in
+time*, not a duplicate fact, and removing it moved the band. Written up as
+[standing problem 11](#11-the-lyric-cues-are-a-second-copy-of-the-band-and-trimming-them-moves-it),
+with the rule: **never buy character headroom from a cue that names an
+instrument.**
+
+**The miss is the more interesting one.** Round 17 gave the chorus *permission*
+to be big — chest voice, held notes, a wide choir, `belted chorus` out of the
+excludes — and permission turned out not to be a device. Nothing in it created an
+**event**. That is the whole thesis of round 18.
+
+**2026-08-11 (round 18) — rebased on Take C; the entire budget spent on impact.**
+Built from **Take C, not from round 17**: the four boxes were reconstructed from
+the preserved baseline and re-edited, so every byte outside the choruses is the
+test prompt's again, verified by diff. Two round-17 changes were carried forward
+(the `level` spelling fix and its cue, and `belted chorus` out of the exclude
+list); every other round-17 edit outside the choruses was reverted.
+
+### The diagnosis: permission is not a device
+
+Round 17 asked for a big chorus. Round 18 asks for **specific things to happen**,
+because the research is consistent that chills come from *events* — a violated
+prediction and its resolution — not from size
+([frisson summary](https://weraveyou.com/2026/03/frisson-music-goosebumps-science-explained/),
+[Monvie](https://monviemindwellness.com/blog/the-science-behind-the-goosebumps-understanding-frisson-in-music)).
+Four events, in order of how much each is expected to buy:
+
+1. **One bar of silence, then everything at once.** The most reliable frisson
+   trigger there is: a quiet passage erupting into full orchestral force. This
+   track already had the run-up — a pre-chorus that thins to a rimshot under a
+   rising brass swell — and no jump. **The hole is worth more than the volume**,
+   and it is free.
+2. **A sparser hook, so there is somewhere to put a long note.** The chorus was
+   six clipped trade lines and one payoff — a verse shape wearing a chorus label.
+   Two lines added, nothing deleted: `I've got all day. / All day.` Fewer words,
+   held longer, on open vowels, **sung alone** with the clerks and choir out of
+   the way. Reducing density is the documented fix for a chorus that won't grow,
+   and it also gives her the register *leap* that does the lifting.
+3. **Biting brass stabs.** The aggression Kai asked for, and the actual signature
+   of the spy-thriller sound — Barry's stabs over a dissonant chord, used as
+   ornament rather than melody. `shrill` would be the natural word and is in our
+   own exclude list; `biting` gets the edge without the collision.
+4. **A key change up a semitone on the final chorus.** The second documented
+   chill trigger, with a documented Suno tag form. **The most deletable thing in
+   this round** — tags are hints, and a modulation over a looped boom-bap bed is
+   the likeliest thing here to come back wrong.
+
+Also: `a controlled rasp on the note` in chorus 2 — grit on the tone, lifted from
+**Take B**, whose vocals Kai liked. `screaming` and `shouted vocals` stay
+excluded; that is the line between aggression and losing the character.
+
+### What is frozen, and how it was verified
+
+**The Style box changed by exactly one sentence** — checked sentence-by-sentence
+against Take C, same count, one difference. `sustained strings, low brass and
+timpani` is Take C's own instrument list in Take C's own word order. Her voice,
+her arc, the BPM, the muzak loop, the minor-ninth, the prowling bass, the brushed
+drums, the touch-tone beeps and the clerks are byte-identical.
+
+**The lyrics changed in seven places, all listed**: the `level` line and its cue;
+the three chorus cues; the three hook insertions; and — as the *only* payment —
+duplicated clerk casting out of the Verse 2 and Verse 3 cues plus `layered and`
+from the bridge dialogue cue. **The intro cue, the entrance cue, both
+pre-choruses, the instrumental break, the bridge, Verse 3's drums and strings,
+and the outro are Take C's, verbatim.** No instrument word was cut anywhere.
+
+**One deletion worth naming: round 17's `[the full beat slams in under the echo]`
+cue is gone.** It was added to protect the beat drop Kai likes, and the pacing
+came back *worse*. Take C produced that slam with no cue at all. **The way to
+keep a thing this arrangement does well is to stop describing it.**
+
+**The exclude list keeps all its words and reorders four of them.**
+`screeching, squealing, shrill, piercing soprano` move from the front to the
+back: front position is emphasis, and four screech-guards leading the list sit
+directly upstream of a box now asking her to belt. The guard survives, the
+emphasis doesn't — reversible in one move.
+
+**Settings unchanged: v5.5, 90/60, no Voice attached.** Nothing in this round's
+complaints is a slider problem, and moving one would make the A/B unreadable.
+
+**All four boxes are now effectively full** — 993/1,000, 585, **4,998/5,000**,
+1,990/2,000. There are two spare characters in the lyric box. Anything added
+displaces something.
+
+### If it still isn't right
+
+One lever, three rolls, in this order:
+
+1. **Final chorus off-key or fighting the loop** → delete `: key change up a
+   semitone`. Independent of everything else.
+2. **Still underwhelming** → delete `soul diva` from the exclude list. It was
+   added when the target was *no diva at all*; the chorus now wants exactly that
+   scale. Held back this round only because it is a *global* vocal guard and the
+   verses are known-good — so change it alone, and check the verses.
+3. **Chorus screeches again** → move the four screech words back to the front of
+   the exclude list before touching anything in the Style box.
+4. **The silence reads as a mistake rather than a drop** → `one bar of silence`
+   → `a half-bar of silence` in the chorus-1 cue.
+
+**Do not answer any of these by adding an instrument.** That instinct has now
+been wrong at rounds 9, 12 and 17.
+
+**2026-08-11 (round 17) — three complaints against the endorsed take, and
+nothing else moves.** Kai on Take C: *the prompt is the best one yet*, but (1) on
+*"there is always a level above the level"* she says **level** in a strange AI
+way that does not fit; (2) **the chorus has an awful melody** — the whole song
+builds towards it and then it flops — and it needs to be **grand and powerful,
+like a Bond title ballad**; (3) **the rest of the song stays exactly as it is**,
+and specifically the beat slamming in after *"all day to complain"* is very well
+timed and must survive.
+
+This is the first round with a take worth protecting, so the shape of the round
+is different: **the default is "change nothing", and every edit below had to
+argue for itself.** Take C's four boxes were copied verbatim into
+[the baseline](#the-takes-we-liked-the-baseline) before a byte was touched, per
+the rule round 16 wrote — its first test, honoured.
+
+### 1. `level` — the file did this to itself
+
+`le-e-evel` is a melisma spelling, added by this file to stretch the punchline.
+Melisma spellings work on open vowels — `lo-o-ovely` and `ti-i-ime` have never
+drawn a complaint — and **fail on `-vel`, a schwa plus a syllabic *l*: a vowel
+with nothing in it to hold.** Suno has no dictionary and no phonetics; asked to
+sustain a note on a vowel that barely exists, it synthesises one, and a
+synthesised vowel is exactly what "AI voice" sounds like. Fixed by **deleting the
+hyphens**, not by respelling — respelling is for words that fail *as words*, and
+`level` never did. The cue absorbs the lost drama instead: `[lead: sweetheart
+stretched, the threat spoken flat]`. Full reasoning in the Lyrics section.
+
+### 2. The chorus — round 16 removed the power along with the screech
+
+**The diagnosis is that round 16 overshot, and this round is the correction.**
+Kai's round-15 complaint was *too screechy and too much*; round 16 answered it by
+shrinking the chorus **vocals** — `a small restrained choir low in the mix`, her
+`level and dry against it`, and `belted chorus` into the exclude list. It fixed
+the screech. It also wrote down, in three separate boxes, an instruction for a
+chorus that never arrives: **the band swells and nobody sings it.** That is the
+flop, and it is the pre-chorus build that makes it audible.
+
+**Screech and power are different axes, and round 16 collapsed them.** Round 17
+separates them again:
+
+| Axis | Round 16 | Round 17 |
+|---|---|---|
+| Register | banned the height *and* the power | height still banned (`piercing`/`operatic soprano`), power restored (**full chest voice**) |
+| Activity | banned runs | runs still banned (`excessive melisma`) — grandeur is **duration**, not activity |
+| Idiom | banned gospel and Broadway | still banned — a dark chest belt is neither |
+| Size | shrank the choir | choir is **wide and sustaining *under* her**, not answering over her |
+
+**One word left the exclude list: `belted chorus`.** It is the only entry that
+banned power rather than a timbre, and the chorus now wanted is, plainly, a
+belted chorus. `gospel choir` deliberately **stays** — a big choir and a gospel
+choir are different choirs, and we want the film one.
+
+**The reference, checked rather than assumed.** The canonical Bond-adjacent
+ballad runs at ~76 BPM in a minor key with **a minor ninth as its harmonic
+code**, a large real orchestra, and a chorus that lifts by swelling under a
+chest-voice lead — never by speeding up
+([Wikipedia](https://en.wikipedia.org/wiki/Skyfall_(song)),
+[Hooktheory](https://www.hooktheory.com/theorytab/view/adele/skyfall)). This
+track has had that exact chord under the hold-muzak loop since round 15 and the
+orchestra since round 8. **The only missing piece was a lead who sings on it** —
+which is why this round is one clause in the Style box and three rewritten cues,
+not a new arrangement. Per the rule this file has held since round 3, **the
+reference is never named in any box**: franchise and artist names trip moderation
+and steer worse than description.
+
+**`tempo unchanged` survives in the chorus-2 cue.** Round 11 bought grandeur with
+a half-time chorus and Kai heard it as *way too slow*; round 14 then
+overcorrected the BPM. The grandeur here is register and duration and **never
+tempo**.
+
+### 3. The moment that must not move
+
+The beat slamming in after *"all day to complain"* was never written down — it
+was Suno's own section transition, and an undescribed event is exactly what
+disappears when you regenerate around it. It now has its own cue line in all
+three choruses. **The stronger protection is procedural**, and it is why *How to
+generate* gained a whole new first section: **repair the existing song with
+Replace Section and end the selected region before that line**, so the slam is
+never regenerated at all.
+
+### What it cost, and what did not change
+
+The chorus cues cost ~150 chars against a 5,000 ceiling that was already at
+4,923. Paid for exactly as the Lyrics section prescribes — **redundant casting
+first**: clerk descriptions out of the Verse 2 and Verse 3 cues (they survive in
+the Style box, the Verse 1 cue and the per-line `[clerk]` tags), and
+`expressive alto, close and dry` out of the lead's entrance cue (it is the first
+sentence of the Style box). Final sizes: Style **996/1,000**, Exclude **585**,
+Lyrics **4,946/5,000**, My Taste **1,987/2,000**.
+
+**Not changed, deliberately:** every performed line except the `le-e-evel`
+spelling; the verses, pre-choruses, instrumental break, bridge and outro; the
+band; the BPM; the settings (**v5.5, 90/60, no Voice attached** — round 16's
+configuration landed on the first rung and nothing in this round's complaints is
+a slider problem).
+
+**If the chorus now comes back screechy**, the repair is one word — `full chest
+voice` → `full chest voice, low in her range` — and *not* putting `belted chorus`
+back. If it comes back small again, `a wide choir` → `a huge choir`. One lever,
+three rolls, per the process rule below.
 
 **2026-08-11 (round 16, outcome) — ⭐ it worked, and this one is the take.** Kai
 returned the four boxes with *"here is the prompt that made the suno song i

@@ -117,6 +117,47 @@ sermonise it.
 A tween (`to` end-keyframe) is for a **deliberate visual argument** — the camera travels from
 one position to another because the panel idea demands it. Not for motion variety.
 
+### What the model cannot do, whichever model it is
+
+**Added 2026-08-14**, paid for with five rounds on one four-second shot (the Karen river
+drop). These are properties of video diffusion, not of Veo or Omni, so they survive an
+engine change. Engine-specific craft lives in
+[`docs/google-flow/omni-flash.md`](../../../docs/google-flow/omni-flash.md) — check it
+before writing a prompt for a named engine.
+
+- **⚠️ Never ask for a falling, thrown or dropped object rendered in flight.** There is
+  no physics engine behind any of these models — only the absorbed statistical pattern
+  that unsupported things move downward — and per-frame drift compounds. Ours flew
+  upward, landed on invented terrain, and bounced, across four rewrites.
+  **Every frame the object is airborne on screen is a frame the model can get wrong,
+  and it will use them all.**
+
+  | Instead of | Do |
+  |---|---|
+  | render the fall | render the **release**, and let the object leave frame within a few frames |
+  | render the landing | let it be a **sound**, delayed by the right beat |
+  | one continuous shot covering the event | **cut** — a wide that stages it, an insert that loses it, the aftermath |
+
+  This is not a compromise. A real camera never catches a whole accidental fall, so the
+  occluded version is *also* the more truthful shot. Restraint is authority here too.
+
+- **Name the shutter when anything moves fast.** `shot at 24fps with a 180-degree
+  shutter, so anything moving fast smears with natural motion blur.` Models render fast
+  motion sharp in every frame, which is the single loudest AI tell; a real camera smears
+  it. `[confirmed 2026-08-14]` — it turned a phone drop from a crisp artefact into a
+  streak, with no post pass needed.
+
+- **State constraints positively.** Most of these engines have no negative-prompt
+  support and `no…`/`don't…` phrasing backfires, putting the unwanted thing into the
+  prompt as content. Write `the bridge lights hold steady`, not `the bridge does not
+  move`. (`no cuts` and `no dialogue` are vendor idiom and safe.)
+
+- **Name exactly one ambient motion.** Given none, models tend to animate the whole
+  frame; given one — *"the reflections shift on the dark water"* — the rest settles.
+
+- **Prefer the shorter duration.** Drift compounds per frame, so 4s is meaningfully
+  safer than 10s on anything with real motion in it. Don't default to the maximum.
+
 Discuss the motion prompt with the user. Don't generate until it's approved.
 
 ---

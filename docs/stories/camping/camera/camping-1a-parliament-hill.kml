@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Camping — Parliament Hill, looking south to the City</name>
+    <description>Blocking reference for shot 1a, the 2008 skyline plate. Ground-level
+    camera on Parliament Hill, Hampstead Heath, looking south-south-east at the City
+    cluster ~7km away. Matches the 200mm long-lens framing in the 1a prompt.</description>
+    <Placemark>
+      <name>1a — Parliament Hill (looking south to the City)</name>
+      <Camera>
+        <longitude>-0.1570</longitude>
+        <latitude>51.5595</latitude>
+        <altitude>100</altitude>
+        <heading>145</heading>
+        <tilt>88</tilt>
+        <roll>0</roll>
+        <altitudeMode>absolute</altitudeMode>
+      </Camera>
+    </Placemark>
+  </Document>
+</kml>
