@@ -66,6 +66,15 @@ reusable — they are not instructions, and nothing in them is pasted anywhere.
 Swap in for the session, restore your house profile after. My Taste biases every
 generation, cannot be turned off, and can only be replaced.
 
+> 🔴 **This was not in the box during rounds 1–17, and nobody noticed.** Read back live on
+> 2026-08-26, `My Taste` was still holding the **GPOM newsreader** profile — *"**one** dark
+> gravelly British male voice… **pure spoken narration**… **Music I love: almost nothing**"* —
+> so every Camping generation was arguing with a global demand for one narrator and near-silence,
+> for a two-man duet with a full arrangement. **Read My Taste back at the start of every
+> session**: it belongs to no sheet, survives reloads, and is invisible from the create form.
+> `npx tsx scripts/suno/style-ab.mts check` prints it. The full finding and what it invalidates:
+> [`camping-style.md`](./camping-style.md) §1.
+
 ```
 Vocals: British post-punk spoken word — two white British men in their late forties and fifties, ranting and talking over the beat rather than singing. One is low, gravelly, smoke-worn and nasal, half-shouting and half-muttering into a cheap close mic: a working-men's-club voice. The other is higher, clean and plummy BBC English, precise and unhurried, talking down at you from a wide room. Ranted spoken word over sung melody, every time. Raw over polished.
 
@@ -187,23 +196,25 @@ you got cheese but I want Cheddar
 [change tone to spoken word]
 I can't live like this forever
 [shouting]
-I'm not insane, I want change, 
-not from your pocket, but at the top
-in the meantime though, let me hold that door
+I might be insane but I do want change, 
+let's see what we can arrange!
+now, I insist that I hold that door
 [shout, cracking, begging]
 please sir, can I FUCKIN, have some more?
 [Drop — instrumental, 8 bars, no vocals | the kit hits full weight and the sub bass drops for the first time | amen rolls tearing across every fourth bar | the guitar drops out here | the wavetable lead tears in over the break]
 [Beat Transition]
 [Verse 2 | well-spoken posh voice, a completely different man | full-weight drum and bass carries straight on, drums flip, colder synths, sharper hats | amen rolls tearing across every fourth bar | the same guitar riff returns underneath, unchanged | nothing else playing at all]
 you are intent on living in a tent
-a lack of work ethic, it's pathetic, 
-getting parra lettic,
-drowning your sorrows,
+it's a lack of work ethic, it's pathetic, 
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
 prospects exist and now I insist
 that you just stop the grift 
 [mocking falsetto sneer]
 What about if we taxed the rich?
-What do you think this is, BITCH!
+[shout, angry]
+what the fuck you think this is, BITCH!
+[well-spoken posh voice]
 I work hard to pay for my yard
 Payin my tax with a platinum card
 you want change but my pockets are empty

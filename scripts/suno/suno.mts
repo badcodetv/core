@@ -159,7 +159,7 @@ export async function setTitle(page: Page, value: string) {
 }
 
 /** Set the destination workspace. Must happen BEFORE Create — it routes the output. */
-async function setWorkspace(page: Page, name: string): Promise<string> {
+export async function setWorkspace(page: Page, name: string): Promise<string> {
   const opened = await ev(
     page,
     // The Save-to control sits OUTSIDE panel(), below the form next to Create. Do NOT match the
@@ -339,7 +339,7 @@ export async function setDuration(page: Page, seconds: number): Promise<string> 
 }
 
 /** My Taste lives behind the profile menu and is ACCOUNT-WIDE — it affects every sheet. */
-async function setTaste(page: Page, text: string): Promise<string> {
+export async function setTaste(page: Page, text: string): Promise<string> {
   await ev(page, `const b = document.querySelector('[data-testid="profile-menu-button"]'); if (b) b.click();`)
   await page.waitForTimeout(1000)
   const opened = await ev(
@@ -361,6 +361,24 @@ async function setTaste(page: Page, text: string): Promise<string> {
   await page.waitForTimeout(2500)
   await page.keyboard.press('Escape')
   return `taste:${saved}`
+}
+
+/** Read My Taste back. The half `setTaste` never had, and the reason it stayed unverified. */
+export async function getTaste(page: Page): Promise<string | null> {
+  await ev(page, `const b = document.querySelector('[data-testid="profile-menu-button"]'); if (b) b.click();`)
+  await page.waitForTimeout(1000)
+  const opened = await ev(
+    page,
+    `const el = [...document.querySelectorAll('button,[role="menuitem"],div')].filter(x => live(x) && /^my taste$/i.test(c(x.textContent))).pop();
+     if (!el) return 'no-menu-item'; el.click(); return 'opened';`,
+  )
+  if (opened !== 'opened') return null
+  await page.waitForTimeout(2000)
+  const box = page.locator('textarea[maxlength="2000"]')
+  const text = (await box.count()) ? await box.first().inputValue() : null
+  await page.keyboard.press('Escape')
+  await page.waitForTimeout(600)
+  return text
 }
 
 /** Click Create and wait for takes carrying `title` to appear. 10 credits, 2 takes per click. */

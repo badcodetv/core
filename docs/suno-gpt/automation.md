@@ -351,7 +351,11 @@ Honesty about this is the point of the table — several recon assumptions faile
 | --- | --- |
 | CDP attach to the Flow Chrome reaches Suno | ✅ proven |
 | Style box fills to exactly 903 chars, counter agrees | ✅ proven |
-| Exclude styles fills | ✅ proven |
+| Exclude styles fills | 🟡 **proven but flaky** — see the truncation row |
+| **Exclude box truncates on a multi-id run** | 🔴 **proven, four times** — 2026-08-25/26, EVERY time on the *second* variation of a run: 117/831, 169/871, 180/695. The kept prefix length varies, which rules out a `maxlength` and reads like stale React state winning a race against `.fill()`. Fix: clear → blur → refill → blur → read back, retry ×4 (`fillChecked` in `style-ab.mts`). A length assertion before Create is what makes a bad fill free |
+| **`setTaste` writes My Taste** | ✅ **proven 2026-08-26** — read back at 1207/1207 chars. Previously listed nowhere because "it clicked Save" is not evidence; `getTaste` is the read-back half and is now in `suno.mts` |
+| **My Taste is account-wide and outlives everything** | 🔴 **proven, expensively** — it belongs to no sheet, survives reloads, is invisible from the create form, and applies to every generation. On 2026-08-26 it was found still holding the *GPOM newsreader* profile ("**one** dark gravelly British male voice… **pure spoken narration**… **Music I love: almost nothing**") through fourteen Camping cover rounds. **Read it back at the start of every session, back it up before writing it, restore it after.** See [`camping-style.md`](../stories/camping/songs/camping-style.md) §1 |
+| **Create mode is identifiable by its sliders** | ✅ proven — Weirdness + Style Influence only; no Audio Influence control exists with nothing attached. The cheapest proof a run is not secretly a cover |
 | Lyrics land as 15 real paragraphs via per-line insert | ✅ proven |
 | `fill()` collapses lyrics to one paragraph | ✅ proven (that's how we found it) |
 | Sliders driven by keyboard, step 1, read back from `aria-valuenow` | ✅ proven for all three |
@@ -369,7 +373,7 @@ Honesty about this is the point of the table — several recon assumptions faile
 | Advanced duration slider sets and reads back (`Duration=30`) | ✅ proven |
 | The Simple number input is a different, unlinked control | ✅ proven |
 | An attached Voice hides the duration control | ❌ **disproved** — it does not |
-| **That a set duration actually changes the take's length** | ⬜ **not proven** — needs one generation |
+| **That a set duration actually changes the take's length** | 🟡 **partly** — 2026-08-25, a 200s target moved takes from 4:30–4:46 to 4:07–4:24. It shortens, it does not obey: treat it as a ceiling to aim under, never a floor |
 | Take/clip harvesting from the workspace list | ⬜ not attempted |
 | Model picker (changing v5.5 → other) | ⬜ not attempted; reads correctly |
 
