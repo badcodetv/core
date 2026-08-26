@@ -71,7 +71,8 @@ artifact, and git history preserves the old canon.
   ending's receipts (no publishable photo of the mulberries exists — the Bank's own words do).
   **§10 corrections and §11 never-say/could-not-verify lists are binding on any script**
 - [`songs/magic-money-tree.md`](./songs/magic-money-tree.md) — **the** track (jump-up comedy
-  version, canonical since 2026-08-18); ends the video on its hard cut. Carries a live
+  version, canonical since 2026-08-18; **shape ruled 2026-08-26: four theme verses — money /
+  shake / starve / plant**, the film's verbs; triangle ruled out); ends the video on its hard cut. Carries a live
   **working sheet** (clean bars, no Suno cues) plus the old full draft kept for parts-mining
 - [`emperors-new-coin.md`](./emperors-new-coin.md) — the folded Emperor's New Coin material:
   the fable machinery, cast, beats — now a **cryptocurrency** cross-promoting this story,

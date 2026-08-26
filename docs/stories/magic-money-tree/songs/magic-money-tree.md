@@ -27,16 +27,196 @@ prim politician's "there is no magic money tree" — which the song spends three
 minutes disproving.
 
 The point: the limit isn't money, it's what we actually build — *we can afford
-what we can create*. Since 2026-08-22 the song's own story is **a banknote's
-life**: a bloke traces a tenner back hand by hand to the promise printed on it
-(*there's your tree*), watches the other note that never touched a hand, and
-lands on the win — see *The shape* below. The 08-21 ring is superseded.
+what we can create*. Since **2026-08-26** the song is **four verses cut around a theme each** — V1
+(locked) establishes *money*; then **shake**, **starve**, **plant**: the three
+verbs the documentary cut puts on every card. Two failures and the one thing
+that worked, in that order, and the crowd says the verb — see *The shape*
+below. The 08-22 banknote arc and the 08-21 ring are superseded.
 
 Flow/beat reference: <https://www.youtube.com/watch?v=OJM8yJTn_I0> ("Don't Get
 High On Your Own Supply" — East Coast / mafioso hip-hop; here the flow is moved
 onto bouncy jump-up D&B).
 
-## The shape — follow the money (AGREED 2026-08-22, Kai)
+## The shape — shake, starve, plant (RULED 2026-08-26, Kai)
+
+**Rulings, 2026-08-26 (Kai):** the banknote arc of 08-22 is **superseded** —
+its parts are mined below, it is no longer the shape. The song is **not a story
+in sequence**. It is **four verses cut around a theme each**: V1 (locked, as
+written) is the establisher — *hey, money*; then **shake**, **starve**,
+**plant** — the three verbs the documentary cut
+([`../documentary.md`](../documentary.md) §2b) puts on every card, in that
+order. The song is the argument for *we can afford what we can actually do*
+made the way the film makes it: two failures and the one thing that worked,
+and the crowd says the verb. **Kai writes every bar** — each slot below is a
+brief, never a line. **The economic triangle (Marx / Hayek / Keynes) is not in
+the song** — ruled out the same day, see below.
+
+**Not the film's story.** The film runs the ledger in sequence; the song plays
+over its closing montage (the century's cards flashing past) and shares only
+its verbs, its refrain and its hard cut. A story-song would fight the pictures;
+a theme-song sits on them.
+
+### Why this shape (over the trace)
+
+- **It's writable.** The trace was a cage — a backwards chain, a pointer word
+  on every link, through the listener's tax, never a mortgage. A theme per
+  verse is the process that works: Kai writes, the structure holds.
+- **The arrangement performs the verbs.** *Shake* is the first full drop —
+  chaos, air-horns, rewinds, the press speeding up. *Starve* is the breakdown —
+  drums cut to nothing, the bloke over a click; the cuts are literal. *Plant* is
+  the big drop, the bass rooted. Breakdown → build → drop is what a jump-up
+  track already does at 2:30, so starve → plant is the genre's own shape.
+- **The order is the film's order and the ruling's order.** Shake → starve is
+  Germany 1923 → 1931; plant is Britain 1940–48; and it puts **the limit before
+  the permission** — the one sequencing rule the song has. Landing on plant is
+  landing on the win.
+- **The refrain corrodes better.** After shake, *(there is no magic money tree)*
+  sounds *fair* — the politician has a point. After starve it's cruel. After
+  plant it's absurd. That is the film's *honour the prior, then split it*, done
+  by repetition — and it's why the final answer is earned, not shouted.
+
+### The map
+
+```
+INTRO  politician, dry             "I'm afraid there is no magic money tree."
+V1     MONEY  · 16 · locked        the wound — the theme established
+HOOK   the concession — a shrug
+V2     SHAKE  · 16 · first drop, chaos     wheelbarrows + the deck in the Med; a chooser in each; money that never did a shift
+HOOK   — now it sounds fair
+V3     STARVE · 8–12 · drums cut, half-time   by decree, without a vote; "there is no money"; the nurse; the vote
+       exit bar: not enough WHAT? — you can print the money, you can't print the nurse
+BUILD  (optional) · 8 · the days run — numbers, never years
+V4     PLANT  · 16 · the big drop  the trace in four bars → THERE'S YOUR TREE; the Spitfire lines; hospitals on the biggest debt ever; outgrown, never paid off
+FINAL  same call, the answer changes      …you can't SHAKE it — you PLANT it
+OUTRO  politician, beat gone       "…there is no magic money tree."   → the film's hard cut
+```
+
+### The four conditions — or it's three essays
+
+- 🔴 **Each verse is a scene with a chooser, never a definition.** Shake: *they
+  paid the strikers by printing* / *a man in a meeting pointed it at the fund*.
+  Starve: *by decree, without a vote* / *"there is no money"* — to a nurse.
+  Plant: *they asked, and built it anyway*. The bloke comments; he never
+  explains. If a bar explains, it's a caption.
+- 🔴 **The two German burns stay in separate verses, in order, and starve owns
+  the vote.** The structure does this for free — it's the one real advantage of
+  theme-verses over a story. Wheelbarrows → Hitler never leaks into the shake
+  verse (the vote came from the deflation; the Nazis polled 2.6% *after* the
+  hyperinflation).
+- 🔴 **"Balance" is not the moral — the verb is.** As a lyric, *balance* reads as
+  centrist mush and the reader hears "both sides." The film's sharper version:
+  money is the easy part, the work is the limit. Two failures and the one thing
+  that worked; the crowd says *plant*.
+- 🔴 **"An argument for why Keynesian economics is good" is the writer's brief,
+  never a line.** The song is the Keynes corner without the name — the bloke's
+  *never read a book* is the whole point, and this file already threw out
+  *says Keynes! forty-two!* for putting a dead economist in the chant.
+
+### The triangle — ruled out (2026-08-26)
+
+Kai asked whether Marx / Hayek / Keynes maps onto the verbs. It doesn't, and the
+joke runs backwards: **Hayek isn't shake** — Austrians are hard money, and
+Brüning's 1931 deflation *is* the Austrian medicine, so Hayek = starve; **but
+Hayek is also shake in practice** — QE to asset holders was Osborne's "monetary
+activism", the same corner doing both verbs at once (the film's synthesis line).
+A triangle can't hold a corner that owns two edges. **Marx isn't on the axis** —
+ownership of the means of production says nothing about how much money to
+issue; "Marx = the printer" is the right's line, not a fact, and it hands the
+reader the monetarist story the never-say list bans. **Kept as Kai's private
+map:** two failure corners and one that works *is* the song's shape. The starve
+verse may carry *let it burn* (Mellon's "liquidate", no name); the shake verse
+*print and pray*. Nobody gets named.
+
+### The verse briefs (slots, not lines)
+
+- **V2 — SHAKE (16, the first drop, chaos).** *Mood:* everything falling in;
+  the bounce goes haywire; air-horns, a rewind if it wants one. *What it shows:*
+  money that never did a shift — **the wheelbarrows** (1923: a choice to print
+  against work the state itself had stopped — the Ruhr; the notes came out
+  perfect, correct serial numbers, worth nothing; *print past the shifts and
+  it's paper, mate*) and **the deck in the Med** (the old still shot: born at a
+  desk, not a till; handed to a fund — *"hot potato"*, the Bank's own words;
+  bought a thing that already existed; price up, rent up, nothing built; not
+  touched in four years). *The chooser:* the government that printed rather than
+  taxed; *a man in a meeting* who pointed it at the fund — V1's *have a guess*
+  comes back as the name-shaped hole. *Exit:* into the hook, which now sounds
+  fair. 🔴 Never "printing caused inflation" / "wages worth less" — the joke is
+  the limit, not the monetarist story. 🔴 Person-free. 🔴 Never wheelbarrows →
+  Hitler.
+- **V3 — STARVE (8–12, half-time, the drums cut).** *Mood:* the colour drops
+  out; bitter, then still. *What it shows:* refusing money to work that is
+  standing idle — **by decree, without a vote**; six million; the vote that
+  followed (**starve owns it**); then **"there is no money"** — to a nurse;
+  frozen, then one per cent; *a cut is only a saving if somebody else can use
+  the work — nobody could, so it wasn't a saving, it was just less*. *The
+  chooser:* whoever signed the decree; whoever said the line. *Exit bar, over
+  the thinned drums:* **not enough WHAT? — you can print the money, you can't
+  print the nurse.** (The nurse enters the song here, once, as a word,
+  unnamed — still person-free.) 🔴 Never "you've been duped" — the trick is
+  shown being run on her. 🔴 The fascism turn is one bar-pair, by
+  juxtaposition, and it lives here, never in shake. 🔴 Never "nobody asked how
+  we'd pay for it."
+- **BUILD — the days run (optional, 8, the drums coming back).** Call and
+  response, **numbers never years** — *a war? twelve. a war? three. the banks?
+  twenty-three. ten votes? twenty-four. a virus? nine. pensions? five. a nurse?
+  — (there is no magic money tree).* The video shows the cards under it. In or
+  out is Kai's call; the shape works without it.
+- **V4 — PLANT (16, the big drop, the bass rooted).** *Mood:* permission; the
+  win. *Opens on the trace, compressed to four bars* — *where's it from? her
+  wages, the ward, my tax, the Bank — a promise backed by the next shift —*
+  **there's your tree** (the reveal is printed on the tenner in the listener's
+  wallet; 🔴 never "nothing under it", never a mortgage, and it passes *through*
+  the listener's tax and keeps going). Then what planting looks like: *nobody
+  shouted "how will you pay for it" at a Spitfire* — the money didn't wait to
+  be earned, it bought the work; **the hospitals on the biggest debt in our
+  history**; *outgrown, never paid off* — like a school blazer; *they made the
+  rentiers pay for the hospitals*. Optional one-bar jokes: the bank that says
+  no to you was chartered to say yes to a war, in a fortnight (1694 ✅); four
+  mulberries in the Bank's courtyard, planted during the war — *never a year*.
+  🔴 Never "it was free" (rationing to 1954, a 30% devaluation, charges by
+  1951). 🔴 Never "we printed the war" — *money was never what we were short
+  of.* 🔴 Never "Bradbury."
+- **FINAL HOOK — the answer changes.** Same call as every hook; in this round
+  the paper gag gives way to the permission: **you can't SHAKE it — you PLANT
+  it.** The verb was set up in V2 (the bloke's mouth), so it lands as a receipt.
+  The Keynes verbatim — *"Anything we can actually do we can afford"* — may
+  follow as a spoken tag under the last hook; **never in the chant.** (This
+  amends the 08-22 ruling that the afford line is the hook's answer — Kai,
+  2026-08-26.)
+- **OUTRO — unchanged.** The politician says the short line one last time over
+  no beat; the song has spent three minutes making it absurd; the film's hard
+  cut lands on it. The song's politician never says *shake* — the real one does,
+  in the clip, ninety seconds earlier in the film. The bloke owns the verb.
+
+### How the hook corrodes now
+
+Same words, four meanings, so Kai never rewrites it: **a shrug** after V1 (*I
+don't know much*), **fair** after shake (*…you can't just print, can you*),
+**cruel** after starve, **permission** at the end — where the last line swaps
+the gag for the verb.
+
+### Bar budget and arrangement
+
+V1 16 · hook 4 · V2 16 · hook 4 · V3 8–12 · build 0–8 · V4 16 · final hook 4–8
+· outro — roughly 3:15–3:45 at 172. The starve breakdown is a production cue
+(*drums out / half-time*), added at the very end when the words are settled —
+the working sheet stays clean bars.
+
+### Mined from the banknote arc (08-22)
+
+- the tree reveal (*there's your tree*) → V4's opening four bars
+- the deck in the Med / the still shot → V2
+- *not enough what? — receipts? you run out of shifts* → V3's exit, now in
+  pub form: *you can't print the nurse*
+- the rewind (air-horn, *pull it up*) → a V2 texture, optional
+- the 1694 fortnight joke → V4, optional
+- the concession hook and its corrosion → unchanged, re-scheduled above
+
+## The banknote arc — follow the money (AGREED 2026-08-22 · SUPERSEDED 2026-08-26 — parts to mine)
+
+> **Superseded 2026-08-26 (Kai)** by the theme shape above. Kept because the
+> briefs below are still the best writing on each device — the trace, the
+> still shot, the bridge — and those devices moved into the new slots.
 
 **Rulings, 2026-08-22 (Kai):** V1 is locked at 16 bars. The 08-21 ring
 (now → war → build → now) is **reopened and superseded** — its parts are mined
@@ -433,6 +613,25 @@ until someone writes the brief. Two details the movements compress:
   condition, never before it.
 - ⚪ **The win is in the final hook's answer, not in the bridge.**
 
+**Added by the theme shape, 2026-08-26:**
+
+- 🔴 **Each verse is a scene with a chooser, never a definition.** If a bar
+  explains, it's a caption.
+- 🔴 **Shake and starve are separate verses, in order; starve owns the vote.**
+  Wheelbarrows → Hitler never appears in the shake verse.
+- 🔴 **Never "balance" as the moral.** The verb is the moral: *you plant it.*
+- 🔴 **Never "Keynesian" / "Keynes" in a lyric.** The argument, not the label —
+  the bloke never read a book. The verbatim may sit as a spoken tag only.
+- 🔴 **The triangle stays out.** No Marx, no Hayek, no "rule of the jungle" /
+  "property is theft" — see *The triangle — ruled out*.
+- 🔴 **The film's never-says bind the song** ([`../documentary.md`](../documentary.md)
+  §2b, §7): never "we don't make anything", never "currency debasement" as a
+  claim (V1's bar 11 is locked and reads as setup), never "you have to be
+  productive before you can spend", never "they printed and the houses went up",
+  never offshoring as the *cause*.
+- ⚪ **The nurse enters once, as a word, in the starve exit bar.** Unnamed.
+- ⚪ **The build is optional and numbers-only.** If a year is said, it's history.
+
 ### Idea parking lot
 
 - **Money as energy that wants to move** (Kai, 2026-08-18). **Recommendation:
@@ -453,10 +652,13 @@ until someone writes the brief. Two details the movements compress:
 the very end, when the words are settled. One line = one bar at 172 (double-time
 16th flow, 8–11 syllables a line).
 
-**2026-08-22:** the sheet below is the **agreed banknote skeleton** — V1
-locked, the concession hook seeded, and three slots for Kai (V2 the trace, V3
-the rewind + still shot, the bridge) with each slot's brief in brackets. The
-brackets are instructions, not lyrics; delete them as the bars land.
+**2026-08-26 (later):** Kai asked for example verses in each slot — Claude's seeds are
+installed below each brief, marked disposable. **They are not the draft**; Kai rewrites.
+
+**2026-08-26:** the sheet below is the **ruled theme skeleton** — V1 locked, the
+concession hook seeded, and four slots for Kai (V2 shake, V3 starve, the
+optional build, V4 plant) with each slot's brief in brackets. The brackets are
+instructions, not lyrics; delete them as the bars land.
 
 **Status 2026-08-22 (Kai): V1 is approved in full — all 16 bars below are
 Kai's and locked.** A committed merge conflict (d799bd1, two V1s stapled
@@ -491,36 +693,100 @@ never read a book — (there is no magic money tree)
 can't tell ya what a bond yield be
 but I know that paper comes from a tree
 
-[Verse 2 — the trace, backwards — 16 — KAI TO WRITE]
-(bar 1 re-asks the question: V1 opened on "where does it go?", this opens on
- "where's it from?" · a "got it off / got it off" chain with the same pointer
- word on every link · boss ← punter ← her wages ← the ward ← MY TAX, and keep
- going ← Treasury ← Bank ← "I promise to pay the bearer" · say the promise once,
- sneer-exit · the title lands at the bottom: there's your tree · never a
- mortgage · never "nothing under it" · never "receipt" here)
+[Verse 2 — SHAKE — 16 — first drop, chaos — KAI TO WRITE]
+(theme, not story: money that never did a shift · the wheelbarrows — a choice
+ to print against work the state had stopped; the notes came out perfect,
+ worth nothing; print past the shifts and it's paper, mate · the deck in the
+ Med — born at a desk not a till, "hot potato" (the Bank's own words), bought
+ a thing that already existed, not touched in four years · a chooser in each:
+ the government that printed rather than taxed; "a man in a meeting" · never
+ "printing caused inflation" / "wages worth less" · never wheelbarrows →
+ Hitler · person-free)
 
-[Hook — repeat — now it means "found it"]
+(EXAMPLE — Claude, 2026-08-26 — disposable; Kai rewrites)
+so shake it then — go on, give it a go
+Berlin did once — wheelbarrows, ya know
+told a whole valley: down tools, we'll pay
+printed the wages — nobody working that day
+notes came out lovely — numbers, the crest
+worth nowt — no shift behind 'em. that's the test
+print past the shifts and it's paper, mate
+that's the wheelbarrow. that's shaking it. great.
+fast forward — same shake, nicer suit
+note born at a desk — never touched a till — cute
+straight to a fund — "hot potato" — I quote
+"raise the value of those assets" — their note
+bought a flat that was already there — price up
+rent up — nowt built — never did a shift. stuck.
+man in a meeting pointed it — guess where:
+deck in the Med. four years. not touched. shaken. there.
 
-[Verse 3 — the other note — 16 — KAI TO WRITE]
-(8: THE REWIND — air-horn, pull it up, the V2 chain again with the money going
- the other way, same hands, not getting it · 8: THE STILL SHOT — one note,
- every verb negative: born at a desk not a till, handed to a fund — "hot
- potato", the Bank's own words — bought a thing that already existed, price
- up rent up nothing built, a deck in the Med, not touched in four years · "a
- man in a meeting" chose — V1's "have a guess" comes back · PERSON-FREE: no
- names, no gowns, no figures)
+[Hook — repeat — now it sounds fair]
 
-[Bridge — not enough what? — half-time, drums thin — 6 max — KAI TO WRITE]
-(one idea: "how do they pay for it when there's not enough?" — not enough
- WHAT? receipts? you don't run out of receipts, you run out of shifts · the
- limit, once, as a joke: print past the shifts and it's paper, mate · never
- "wages worth less" · no history)
+[Verse 3 — STARVE — 8–12 — half-time, drums cut — KAI TO WRITE]
+(theme, not story: refusing money to work that's standing idle · by decree,
+ without a vote; six million; the vote that followed — starve owns it · "there
+ is no money" — to a nurse; frozen, then one per cent · a cut is only a saving
+ if somebody else can use the work — nobody could · EXIT BAR: not enough WHAT?
+ — you can print the money, you can't print the nurse · never "you've been
+ duped" · the nurse unnamed · fascism one bar-pair, by juxtaposition, here only)
+
+(EXAMPLE — Claude, 2026-08-26 — disposable; Kai rewrites — half-time, spoken, dry)
+now the other burn. same place, a few years on.
+cut the wages. cut the dole. by decree — no vote.
+six million, stood idle. then they voted.
+the wheelbarrows didn't do that. the cuts did.
+fast forward. a note on a desk: "there is no money."
+a nurse asks for a rise — and gets the line. (there is no magic money tree)
+frozen. then one per cent. cheers for the clap, though.
+"saved her wage" — did ya? who covered her shift?
+no one. so ya saved nowt. ya just made it less.
+not enough WHAT? — you can print the money. you can't print the nurse.
+
+[Build — the days run — 8 — OPTIONAL — KAI'S CALL]
+(call and response, numbers never years: a war? twelve. a war? three. the
+ banks? twenty-three. ten votes? twenty-four. a virus? nine. pensions? five.
+ a nurse? — (there is no magic money tree) · the video shows the cards)
+
+[Verse 4 — PLANT — 16 — the big drop — KAI TO WRITE]
+(opens on the trace in four bars: where's it from? her wages, the ward, MY
+ TAX and keep going, the Bank — a promise backed by the next shift — THERE'S
+ YOUR TREE · never "nothing under it", never a mortgage · then what planting
+ looks like: nobody shouted "how will you pay for it" at a Spitfire — the
+ money bought the work · the hospitals on the biggest debt in our history ·
+ outgrown, never paid off · they made the rentiers pay for the hospitals ·
+ optional one-liners: chartered to say yes to a war in a fortnight; four
+ mulberries, planted during the war, never a year · never "it was free" ·
+ never "we printed the war" · never "Bradbury")
+
+(EXAMPLE — Claude, 2026-08-26 — disposable; Kai rewrites)
+so where's it from? this tenner — trace it back:
+boss — punter — her wages — the ward — my tax —
+keep going: Treasury — Bank — and the Bank? — see:
+"I promise to pay" — the next shift. THERE'S YOUR TREE.
+here's how ya plant one — money's the easy bit
+broke little island — bombs due — no kit
+no one asked a Spitfire "how we paying for you?"
+money bought the work — the work soaked it through
+war's done. most debt we've ever had. so — cuts?
+nah. hospitals. free at the door. no buts.
+houses. pensions. sick pay. biggest bill we've seen.
+never paid it — outgrew it — blazer at thirteen
+who paid? the lenders — paid back in shrunk pounds, mate
+and that bank that says no? — built to say yes. wait:
+a war? twelve days. and four trees out the back —
+planted in the war, a foot of dirt. ya PLANT it. fact.
 
 [Final hook — the win — the answer changes]
-(same call as the hook; in THIS round the crowd talks over the politician's
- parenthetical with the afford line — "anything we can actually do we can
- afford" is the exact Keynes; "we can afford what we can create" may follow
- as the gloss · the paper gag gives way to the permission)
+(same call as the hook; in THIS round the paper gag gives way to the verb —
+ "you can't SHAKE it — you PLANT it" · the Keynes verbatim "anything we can
+ actually do we can afford" may follow as a spoken tag, never in the chant)
+
+(EXAMPLE last line — disposable)
+I don't know much — (there is no magic money tree)
+never read a book — (there is no magic money tree)
+can't tell ya what a bond yield be
+but ya can't SHAKE it — (there is no—) — nah. ya PLANT it.
 
 [Outro — the politician, beat gone]
 "…there is no magic money tree."
