@@ -300,7 +300,7 @@ second in the edit without a regenerate. Cut picture to the VO, not the other wa
 > ⚠️ **The `.mp4` paths below are gitignored.** A single scene's takes run to ~155MB and git
 > keeps every byte forever, so the clips live on disk only. **The prompts in this file are the
 > artifact** — every clip is re-generatable from them. Keepers are mirrored to
-> `/mnt/d/badcode-videos/gitpush-origin-master/s00/`. Stills **are** tracked: they are the chain anchors the
+> `/mnt/d/badcode-videos/gitpush-origin-master/clips/s00/`. Stills **are** tracked: they are the chain anchors the
 > prompts start from.
 
 | Asset | Path | Status |
@@ -473,7 +473,7 @@ Kai's rewrite after watching v2: **open on two flashing lights and nothing else*
 board, hold, pull out to the satellite, **cut** to Earth. No dive — ruled too ambitious, and a cut
 is the stronger edit anyway.
 
-> ⚠️ `.mp4` paths are gitignored. Keepers mirror to `/mnt/d/badcode-videos/gitpush-origin-master/s00/`.
+> ⚠️ `.mp4` paths are gitignored. Keepers mirror to `/mnt/d/badcode-videos/gitpush-origin-master/clips/s00/`.
 
 ## The beats as built
 
@@ -585,7 +585,7 @@ faint distant stars barely visible"* — and explicitly ban galaxy, nebula, star
 Kai: *"That entire sequence is perfect."* Committed under the rule in
 `.claude/skills/flow-automation/SKILL.md` §9.
 
-**The video is NOT in this repo.** It lives at `/mnt/d/badcode-videos/gitpush-origin-master/s00/final/s00v3-SEQUENCE.mp4`.
+**The video is NOT in this repo.** It lives at `/mnt/d/badcode-videos/gitpush-origin-master/clips/s00/final/s00v3-SEQUENCE.mp4`.
 
 ## The three images that are committed
 

@@ -27,8 +27,8 @@ import numpy as np
 import subprocess, tempfile, os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SRC  = '/mnt/d/badcode-videos/gitpush-origin-master/plant-room/stills/plant-room-dashboard-v2-a.jpg'
-DST  = '/mnt/d/badcode-videos/gitpush-origin-master/plant-room/takes/C5-DASHBOARD-1080.mp4'
+SRC  = '/mnt/d/badcode-videos/gitpush-origin-master/clips/plant-room/stills/plant-room-dashboard-v2-a.jpg'
+DST  = '/mnt/d/badcode-videos/gitpush-origin-master/clips/plant-room/takes/C5-DASHBOARD-1080.mp4'
 W, H, FPS, SECS = 1920, 1080, 24, 8
 COLS = ROWS = 6
 TURN = 10          # frames a single tile takes to go green -> amber -> red

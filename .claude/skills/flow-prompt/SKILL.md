@@ -8,16 +8,20 @@ description: Use when writing or debugging a prompt for Google Flow — a still 
 How to get what you asked for out of Google Flow. This skill owns **platform craft** —
 how Veo and Nano Banana actually behave. It does **not** own the BadCode look.
 
-## The two things that are not this skill's job
+## The things that are not this skill's job
 
 | Question | Answer lives in |
 | --- | --- |
+| ***What should this shot BE?*** — framing, depth, light design, angle, what it's for | **`shot-craft`** — the cinematography judgement layer. **Consult it BEFORE writing any prompt for a shot that hasn't been designed yet** |
 | *What should a BadCode panel look like?* | `badcode-art-direction` — 35mm documentary register |
 | *What should a BadCode brand image look like?* | `new-image` — near-black monolith register |
 | *What is this specific story's style and cast?* | `docs/stories/<story>/prompts.md` |
 | *How do I make Flow do what I asked?* | **here** |
 
-A finished prompt is usually **register (from a skill) + craft (from here)**. Read both.
+A finished prompt is **design (`shot-craft`) + register (an art-direction skill) + phrasing
+(here)** — three separate jobs. The design step is the one that gets skipped, and it is the one
+that decides whether the shot is interesting rather than merely correct. If you were handed a
+*shot spec*, phrase it; if you were handed only a subject, get the spec first.
 Never let this skill's example prompts leak their *look* into BadCode work — teal-and-orange
 grading and glossy commercial beauty shots appear here as vocabulary, not as
 recommendations.

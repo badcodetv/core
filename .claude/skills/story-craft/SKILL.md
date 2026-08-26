@@ -14,6 +14,12 @@ Make the thing grip. Two modes, one knowledge base:
   pass** ([`docs/story-craft/checklist.md`](../../../docs/story-craft/checklist.md)) and deliver a
   coverage sheet.
 
+**Boundary with `shot-craft`:** story-craft owns what a sequence *means* — the argument, the
+beat, whether it earns its place. `shot-craft` owns what the frame *is* — composition, light,
+angle, cutting rhythm. A cut that is flat because the shots don't step is shot-craft; a cut that
+is flat because the beat isn't earning is here. When unsure, ask whether re-framing every shot
+would fix it.
+
 This skill does **not** own the story's argument (that is the canon under `docs/stories/`), the
 reader (`docs/marketing/the-reader.md`), or the tone (`docs/voice.md`). It owns the *machinery* —
 how an idea becomes something a distrustful person finishes, remembers and repeats.

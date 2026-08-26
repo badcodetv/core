@@ -6,7 +6,7 @@
 > - **The automation half has moved into the `flow-automation` skill** (launching the browser,
 >   the tool surface, the failure decision table, batches, verifying output). No skill points
 >   here any more. `flow-automation` is the front door.
-> - **The prompt-craft half is still below**, waiting for `scene-prompt` to absorb it. When it
+> - **The prompt-craft half is still below**, waiting for `flow-prompt` to absorb it. When it
 >   does, this file goes.
 >
 > Nothing new should be added here. Add to the skill, or to the file in `docs/flow/` that owns
@@ -23,7 +23,7 @@ and asked the user to do something the agent could have done.
 
 ## 1. A policy block looks exactly like a timeout
 
-*(Destined for `scene-prompt` — this is about how to WRITE, not how to drive.)*
+*(Destined for `flow-prompt` — this is about how to WRITE, not how to drive.)*
 
 The single biggest time-saver in the whole toolkit. Over half the generations on the camping
 recut were blocked by the usage filter, not slow — and over CDP a block is indistinguishable
@@ -66,7 +66,7 @@ translatable, and unblockable.
 
 ## 2. Casting a recurring character
 
-*(Destined for `scene-prompt` — the discipline. The `character` parameter that implements it
+*(Destined for `flow-prompt` — the discipline. The `character` parameter that implements it
 is `flow-automation`'s.)*
 
 A recurring character must read as the **same person** in every frame, and that likeness comes

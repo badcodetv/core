@@ -9,7 +9,7 @@ automation half moved in from `docs/superpowers/`):
 
 | Half | What it is | Files | Skill |
 | --- | --- | --- | --- |
-| **Craft** — platform-generic | How the *tool* behaves. True for anyone using Flow, ours or not. | `image-prompting` · `video-prompting` · `camera-vocabulary` · `physics-and-motion` · `consistency` · `failure-modes` · `post-production` | **`scene-prompt`** *(not yet built)* |
+| **Craft** — platform-generic | How the *tool* behaves. True for anyone using Flow, ours or not. | `image-prompting` · `video-prompting` · `camera-vocabulary` · `physics-and-motion` · `consistency` · `failure-modes` · `post-production` | **`flow-prompt`** |
 | **Automation** — ours | How *our* code drives it: DOM roles, selectors, completion signals, harvest. Useless to anyone not running `@badcode/flow-mcp`. | `automation-images` · `automation-video` · `platform-controls` | ✅ **`flow-automation`** |
 
 `platform-controls` sits on the automation side because what it answers — which tier supports
@@ -32,7 +32,7 @@ Same split as [`docs/suno-gpt/`](../suno-gpt/README.md) and the `suno-prompt` sk
 
 | File | What | Read when |
 | --- | --- | --- |
-| [`operating.md`](./operating.md) | ⚠️ **Dissolving.** Its automation half became the `flow-automation` skill; the policy-block triggers and casting discipline wait here for `scene-prompt` | Nothing points here any more. Don't add to it |
+| [`operating.md`](./operating.md) | ⚠️ **Dissolving.** Its automation half became the `flow-automation` skill; its prompt-craft half belongs to `flow-prompt` (`failure-modes.md`, `consistency.md`) | Nothing points here any more. Don't add to it |
 | [`image-prompting.md`](./image-prompting.md) | Nano Banana / Pro still-image craft, editing, rendered text | Generating or editing any still |
 | [`video-prompting.md`](./video-prompting.md) | Veo text→video, image→video, frames, audio, dialogue | Any motion work |
 | [`camera-vocabulary.md`](./camera-vocabulary.md) | Shot/move/lens/lighting/grade terms, with reliability tiers | Writing the camera clause |

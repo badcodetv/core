@@ -29,6 +29,12 @@ drive anything.
 
 ## What this skill is not
 
+> **🔴 "Why does this look flat / boring / generic / like AI?" is NOT this skill.**
+> That is a shot-*design* question and belongs to **`shot-craft`**
+> (`docs/cinematography/symptoms.md`). Reaching for an effect to fix a badly designed frame is
+> the most expensive wrong turn available here — no filter fixes a frame with one depth plane
+> and no motivated light.
+
 | Question | Skill | It answers |
 | --- | --- | --- |
 | **What should I reach for?** | **this skill** | Which lane, which effect, what it costs, is it even installed |

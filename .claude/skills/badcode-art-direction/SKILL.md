@@ -14,6 +14,19 @@ reviewing output — lives in ONE place: `flow-automation`.**
 Read it before your first flow call. It is not restated here, deliberately: six skills used to
 carry six drifting copies of it, and the copies disagreed.
 
+## Design the shot before you art-direct it
+
+This skill owns the **register** — what a BadCode panel *looks* like. It does not own what the
+shot *is*: framing, depth layers, where the light comes from, camera height, what is withheld.
+
+**Consult `shot-craft` first** for any panel that has not been designed yet, and take a shot spec
+from it. Register plus a badly designed frame still produces furniture — on brand, and inert.
+
+Two gates from there that bite hardest on our register:
+**one bright anchor inside the darkness** (uniform near-black reads as a broken file, not as
+mood), and **a visible cost in any monumental frame** (scale without a cost reads as celebration
+of the power it means to indict).
+
 ## Identity — what a BadCode panel looks like
 
 These are not aspirations; they are consistent across camping, magic-money-tree, and karen. Hold them.

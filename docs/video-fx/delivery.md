@@ -82,6 +82,58 @@ Keep the extra shadow precision in the *master*. Convert on the way out.
 
 ---
 
+## 🔴 Near-black — why our register is the hardest case to deliver
+
+From the 2026-08-26 cinematography sweep, brief 20. Craft side lives in
+[`../cinematography/`](../cinematography/README.md); the delivery side is here.
+
+**Banding is arithmetic, not taste.** 8-bit delivery gives 256 steps per channel. A dark
+gradient occupies a small slice of that range, so the quantisation steps become visible as
+bands. **A**
+
+**Dither and grain are the fix, and they work the way film grain did for free for a century** —
+randomised noise breaks the hard edge between quantisation steps so the eye reads a smooth
+gradient. **Add deliberate grain to any near-black sequence before encode.** **A** (mechanism)
+
+**🔴 The counter-intuitive corollary: more denoising makes banding worse.** A cleanly denoised
+dark frame is the *most* likely to band after re-encode, because you removed the noise that was
+masking the steps. Never denoise a near-black sequence on the way out.
+
+**Compression punishes near-black structurally.** Encoders spend bits where rate-distortion maths
+says they matter, and dark, low-contrast, low-detail regions are exactly where they spend least —
+which is our entire frame. **A (mixed)** — the principle is engineering fact; which artifact
+dominates (banding vs blocking) depends on codec and bitrate.
+
+**Crushing and lifting are opposite and both destructive applied blind.** Crushing discards
+shadow detail permanently once baked into a delivered file; lifting keeps it but flattens
+contrast into mud. The craft is choosing per shot, not picking a side. **p**
+
+**🔴 Never eyeball a dark frame.** A waveform monitor or false-colour overlay is the only
+reliable way to know whether a shadow sits at "deep but present" or has already fallen off the
+bottom of the scale. The direction is real; **specific IRE targets are house convention, not
+physics** — do not quote a number as a standard. **A** (what scopes measure)
+
+**Our viewer is close to worst case.** A phone, in daylight, glossy panel: ambient light
+reflecting off the screen adds real luminance to what should be pure black, crushing perceived
+contrast before compression even enters the picture. "It looks fine on my monitor" is not
+evidence. **A**
+
+**The practitioner workaround for platform compression** — expose slightly brighter and grade
+down rather than delivering true-dark — is repeated creator-forum wisdom, not a controlled study.
+**p — informed folklore, test before adopting.**
+
+### Additions owed to `scripts/delivery-qc.sh`
+
+Not yet implemented — this is the list, from brief 20:
+
+1. Colour range tag present and matching content *(the `camping.mp4` bug — already covered above)*
+2. Shadow floor: report the percentage of pixels sitting at 0, to catch clipping before upload
+3. Banding probe on the darkest region of a sample of frames
+4. Grain/noise floor present in near-black sequences — flag a suspiciously clean dark frame
+5. A phone-in-daylight simulation check (elevated black level) as an advisory, not a gate
+
+---
+
 ## What local QC cannot tell you
 
 🔴 **Every platform re-encodes what you upload.** `ffprobe` and `signalstats` prove your file is

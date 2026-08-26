@@ -155,6 +155,26 @@ it describes the machine, not the project.
 **The media root is a default, not a cage.** It is where `premiere_open_project({ story })` puts
 story projects. A project anywhere else opens fine by path and needs no root at all — see §3.
 
+### 🔑 Every project's footage lives in its own `clips/` — ruled 2026-08-26
+
+```
+<mediaRoot>/<story>/<story>.prproj
+<mediaRoot>/<story>/clips/<scene>/          # takes, candidates, rejects
+<mediaRoot>/<story>/clips/<scene>/final/    # the approved cut of that scene
+```
+
+**A project's media never sits at the project root and never sits on the Desktop.** When Flow
+generates for a story that has a Premiere project open, `flow-automation` derives its output
+folder from `premiere_status().project.path` and writes into that project's `clips/`, creating it
+if missing. That is the same folder you import from, so **`premiere_import` paths are always
+`<project>/clips/…`** and media can never go offline because someone tidied a Desktop.
+
+**Import the individual takes, not just the assembled cut.** An `ffmpeg` concat of a scene's beats
+is a *preview* — it lets you see the shape in one file, and it is the wrong thing to cut with. The
+timeline wants every take, including the rejected ones, so a montage can be re-ordered and
+re-trimmed in Premiere rather than re-rendered in `ffmpeg`. One bin per cut, named `NN-<cut-id>`.
+GPOM's are `01-s00-orbital` … `06-vantage` (209 clips, imported 2026-08-26).
+
 ### §1c — Not installed: the full walkthrough
 
 **Do not paraphrase this from memory. Walk the user through

@@ -4,7 +4,7 @@ cut: 6
 canon: story.md scene 9 ("bored")
 plates_locked: 2026-08-24
 runtime: 56s (7 beats x 8s; uneven durations still owed — see §3)
-scratch: /mnt/c/Users/kai/Desktop/gpom-vantage/
+scratch: /mnt/d/badcode-videos/gitpush-origin-master/clips/vantage/
 state: BUILT — 7 beats, 56s, rough cut at final/CUT6-ROUGH.mp4
 ---
 

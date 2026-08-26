@@ -5,8 +5,8 @@ canon: story.md scene 7
 built: 2026-08-23
 rebuilt: 2026-08-24
 runtime: 120s (15 beats × 8s)
-scratch: /mnt/c/Users/kai/Desktop/gpom-bulletin-v2/
-supersedes: the 13-beat build of 2026-08-23 (/mnt/c/Users/kai/Desktop/gpom-bulletin/)
+scratch: /mnt/d/badcode-videos/gitpush-origin-master/clips/bulletin-v2/
+supersedes: the 13-beat build of 2026-08-23 (/mnt/d/badcode-videos/gitpush-origin-master/clips/bulletin/)
 ---
 
 # Cut 4 — `bulletin`

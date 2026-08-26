@@ -42,10 +42,10 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 import numpy as np
 import subprocess, tempfile, os, sys
 
-SRC  = sys.argv[1] if len(sys.argv) > 1 else '/mnt/d/badcode-videos/gitpush-origin-master/plant-room/stills/C5-desk-b.jpg'
-DST  = sys.argv[2] if len(sys.argv) > 2 else '/mnt/d/badcode-videos/gitpush-origin-master/plant-room/takes/C5-CONSOLE-v2.mp4'
+SRC  = sys.argv[1] if len(sys.argv) > 1 else '/mnt/d/badcode-videos/gitpush-origin-master/clips/plant-room/stills/C5-desk-b.jpg'
+DST  = sys.argv[2] if len(sys.argv) > 2 else '/mnt/d/badcode-videos/gitpush-origin-master/clips/plant-room/takes/C5-CONSOLE-v2.mp4'
 RECT = sys.argv[3] if len(sys.argv) > 3 else '372,227,1003,577'      # measured on C5-desk-b
-FONT = '/mnt/d/badcode-videos/gitpush-origin-master/s01/assets/Mx437_IBM_VGA_9x16.ttf'
+FONT = '/mnt/d/badcode-videos/gitpush-origin-master/clips/s01/assets/Mx437_IBM_VGA_9x16.ttf'
 W, H, FPS, SECS = 1920, 1080, 24, 8
 
 GREEN = (150, 255, 170)

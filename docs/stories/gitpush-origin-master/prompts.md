@@ -151,9 +151,9 @@ one place — this table. Reordering the film is a table edit, not a rename.
 | 2 | `s01` *(grandfathered)* | Hong Kong, the CRT, `git push origin master` | 1–4 | ✅ **BUILT** · 27.8s |
 | 3 | `plant-room` | 2032. The vast hall, and the console going red | 6 | ✅ **BUILT** · 40s — §3c |
 | 4 | `bulletin` | the collapse as news | 7 | ✅ **BUILT** · 104s, 13 beats — [`scenes/bulletin.md`](./scenes/bulletin.md) |
-| 5 | `empty-street` | the conveniences still humming | 8 | ⬜ prompted, unfired |
-| 6 | `vantage` | planet-wide, perfect, empty | 9 | ⬜ prompted, unfired |
-| 7 | `ghosts` | the materialist fix, and the check | 10 | ⬜ prompted, unfired |
+| 5 | `empty-street` | the conveniences still humming | 8 | ✅ **BUILT** · 5 beats, `clips/empty-street/final/CUT5-ROUGH.mp4` (2026-08-24) |
+| 6 | `vantage` | planet-wide, perfect, empty | 9 | ✅ **BUILT** · 7 beats, `clips/vantage/final/CUT6-ROUGH.mp4` (2026-08-24) |
+| 7 | `ghosts` | the materialist fix, and the check | 10 | 🟡 **plates locked, no video fired** — 7 stills in `clips/ghosts/locked/` (2026-08-24) |
 | 8 | `coin` | 🔒 the coin spinning — **TOTEM LOCK** | 11 | ⬜ prompted, unfired |
 | 9 | `robots` | utopia, delivered, for nobody | 12 | ⬜ prompted, unfired |
 | 10 | `chair` | the empty chair — the deepest point | 13 | ⬜ prompted, unfired |

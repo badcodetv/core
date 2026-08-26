@@ -1,6 +1,6 @@
 ---
 name: flow-automation
-description: Use when DRIVING Google Flow — bringing the browser up, calling the flow MCP tools, recovering from a failed or hung call, running a batch, or changing @badcode/flow-mcp itself. Triggers on "generate this in Flow", "the flow call failed/hung/timed out", "flow_status says NOT_RUNNING", "run the batch", "why did that tool return nothing", "add a Flow tool", or any tool-level step inside make-comic, animate-slide, edit-panel, music-video-short, badcode-art-direction or new-image. Mechanics only — what to WRITE in the prompt belongs to scene-prompt; what it should LOOK like belongs to badcode-art-direction (panels) and new-image (brand imagery).
+description: Use when DRIVING Google Flow — bringing the browser up, calling the flow MCP tools, recovering from a failed or hung call, running a batch, or changing @badcode/flow-mcp itself. Triggers on "generate this in Flow", "the flow call failed/hung/timed out", "flow_status says NOT_RUNNING", "run the batch", "why did that tool return nothing", "add a Flow tool", or any tool-level step inside make-comic, animate-slide, edit-panel, music-video-short, badcode-art-direction or new-image. Mechanics only — what the shot should BE belongs to shot-craft, what to WRITE in the prompt belongs to flow-prompt, and what it should LOOK like belongs to badcode-art-direction (panels) and new-image (brand imagery).
 ---
 
 # Flow Automation
@@ -16,7 +16,8 @@ guidance drifts.
 | Job | Skill | Question it answers |
 | --- | --- | --- |
 | **Driving it** | **this skill** | Why did the call fail? What tool? How do I not spend credits twice? |
-| **Writing for it** | `scene-prompt` | What words go in the box? |
+| **Designing the shot** | `shot-craft` | What should this shot BE? |
+| **Writing for it** | `flow-prompt` | What words go in the box? |
 | **The BadCode look** | `badcode-art-direction` (panels) · `new-image` (brand) | What should it look like? |
 
 If you are choosing adjectives, you are in the wrong skill.
@@ -173,7 +174,7 @@ your upload by diffing the tile grid, and that diff degrades in a cluttered proj
 
 | Symptom | Almost certainly | Do |
 | --- | --- | --- |
-| No candidate, session healthy, **twice** | **Policy block** | **Rewrite, never retry.** Triggers + rewrite table: `scene-prompt`. Glance at the window to confirm |
+| No candidate, session healthy, **twice** | **Policy block** | **Rewrite, never retry.** Triggers + rewrite table: `flow-prompt` (`docs/flow/failure-modes.md`). Glance at the window to confirm |
 | `POLICY_BLOCKED` | Same, detected | Same. In a batch it is *one prompt's* problem — the batch carries on |
 | Card reads **"Audio Generation Failed"** | Veo killed its own output over audio | **Retry unchanged.** Credits refunded. Not a prompt verdict |
 | **"You're requesting generations too quickly"** | Rate limit, tightens with the day's volume | **Wait.** Rewriting changes nothing |
@@ -306,7 +307,7 @@ explain most of what you will see.
 list in one session. **Always pass `resume: true`.**
 
 1. **Plan every prompt first**, and get them agreed. That is the gate; everything after is
-   machinery. (Prompt planning is `scene-prompt`'s job, not this skill's.)
+   machinery. (Prompt planning is `flow-prompt`'s job; shot design is `shot-craft`'s. Neither is this skill's.)
 2. **Batch-generate.**
 3. **Review all N together**, never one at a time.
 4. **Iterate only the weak ones** — `flow_refine` for a same-session correction, `edit-panel`
@@ -328,7 +329,7 @@ round 1: flow_generate_batch({ prompts, outDir, resume: true })
          │
          ├─ failed is empty ────────────────────────────────► done
          │
-         ├─ POLICY_BLOCKED entries ──► rewrite those prompts in place (scene-prompt),
+         ├─ POLICY_BLOCKED entries ──► rewrite those prompts in place (flow-prompt),
          │                             then re-run the SAME list, resume: true
          │
          └─ any other code ──────────► the session is hurt, not the prompt.
@@ -456,21 +457,41 @@ close it.
 
 ### While you are working: nothing goes in the repo
 
-Everything — every still, every take, every contact sheet — lives in the scene's scratch folder:
+Everything — every still, every take, every contact sheet — lives in the scene's scratch folder.
+**🔑 Where that folder is depends on one question, asked before the first generation: is there a
+Premiere project?** (Ruled 2026-08-26, Kai.)
+
+**Ask it by calling `premiere_status` first.** It is the cheapest call in the bridge and it always
+answers — the `project.path` it returns is the whole decision.
+
+| `premiere_status` says | Scratch root | Why |
+| --- | --- | --- |
+| a project is open | **`<dirname(project.path)>/clips/<scene>/`** | the edit and the footage live together; Premiere never goes offline-media |
+| no project / bridge down | `~/Desktop/<story>-<scene>/` | nowhere better to put it; migrate later |
 
 ```
-<mediaRoot>/<story>/<scene>/          # takes, candidates, rejects: the whole mess
-<mediaRoot>/<story>/<scene>/final/    # only what has been approved
+<project>/clips/<scene>/          # takes, candidates, rejects: the whole mess
+<project>/clips/<scene>/final/    # only what has been approved
 ```
 
-`mediaRoot` is the one in `badcode.local.json` — `D:\badcode-videos` on this machine, so GPOM's
-plant-room scratch is `/mnt/d/badcode-videos/gitpush-origin-master/plant-room/`. **Scratch folders
-used to live on the Desktop and no longer do** (moved 2026-08-23); anything still pointing at
-`~/Desktop/gpom-*` is stale.
+**Create `clips/` if it is not there** — `mkdir -p` it, do not error and do not fall back to the
+Desktop just because the folder is missing. Never write generated media to the project root: it
+belongs one level down, in `clips/`, beside the other scenes.
+
+Worked example — GPOM's project is `/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj`,
+so the plant-room scratch is `/mnt/d/badcode-videos/gitpush-origin-master/clips/plant-room/`, and
+the bulletin's is `.../clips/bulletin/`. **Scratch folders used to live on the Desktop and no
+longer do** (the last five were migrated 2026-08-26); anything still pointing at `~/Desktop/gpom-*`
+is stale.
 
 Kai watches from there, so **name files so a human can tell them apart** and tell him the folder,
 never a bare filename. `.mp4` is gitignored anyway (`docs/stories/**/storyboard/img/*.mp4`); the
 discipline you have to keep yourself is not committing the stills.
+
+**Why this rule exists.** Scratch on the Desktop and scratch on `D:` drifted apart, and it stopped
+being obvious where any given scene's footage was — the fear was that clips had been *lost*, when
+in fact they had merely been split across two homes. One root, derived from the open project, ends
+that class of question.
 
 ### At the commit gate: Kai approves a cut
 
