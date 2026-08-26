@@ -558,6 +558,238 @@ to stop keeps going.
 
 ---
 
+### 6c — Bob's POV from inside the tent · **still** · accepted · 🔒 THE LOCK
+
+Accepted 2026-08-26. **The most reused framing in the film** — 10a is this shot five years on,
+and the rhyme is the whole device.
+
+> ## 🔒 6c was derived from the scene-8 frame, and 10a derives from 6c
+>
+> The tent-interior POV existed first as a **scene-8** frame (the X8 filling the doorway — see
+> below). 6c was made from it by **anchoring on that frame and changing only what is beyond the
+> doorway**, so the doorway shape, the camera height, the horizon and the whole foreground are
+> **inherited rather than re-derived**. That is why the rhyme is guaranteed instead of hoped for.
+>
+> **Do the same again for 10a, from 6c** — because 6c is the one with the *empty* bay, which is
+> the surface the ruined car park has to be built into.
+>
+> **The car is never mentioned in the prompt.** Anything named in a keep-list is an instruction
+> to draw it, so *"remove the car"* would have kept it; describing the bay as empty removed it.
+
+```prompt
+Use the attached image as the reference. Keep the doorway of the tent exactly as it is: the same shape and size of opening in the same place in the frame, the same tied-back flap, the same seams, zip tape and mesh panel, the same faded blue-grey fabric filling the rest of the frame, the same camera height and level angle, the same sleeping bag and blankets across the bottom, the same forearm and hand holding a bottle in the lower left, the same flat grey overcast light, the same muted colour and grain.
+
+Change only what can be seen through the doorway. The parking bay directly outside is empty wet tarmac with worn white bay markings running across it, and beyond it the far side of the car park: a few ordinary parked cars in the middle distance, the glazed barrel-roofed trolley shelter, the Waitrose store front with its green sign, a lamp column, and the flat pale grey sky above.
+
+Nothing is happening out there and nobody is in view.
+
+A documentary press photograph on 35mm film — fine natural grain, muted cool-neutral colour, flat overcast daylight through the doorway the only light source, the inside of the tent dim and close, the tarmac outside a little brighter by comparison, the fabric falling away to near-black at the edges.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**✅ The Waitrose fascia is visible through the opening, at a size where `W-AI-trose` will still
+read.** [`shot-list.md`](./shot-list.md) currently puts that gag in **10c**; it can now land in
+**10a itself**, through the door flap, in the framing the audience has already been taught. Worth
+ruling on before scene 10 is shot.
+
+**Its clip: breathing is the motion.** The sleeping bag over his legs rises and falls — a large
+soft form, low risk, and the only thing that needed saying, which is that *a living man is lying
+in here*. The hand and bottle are pinned (fine articulation is a documented weak spot), the door
+is pinned open with its physical reason, and the parked cars and trolley shelter are pinned
+positively because a car park is a rank of near-identical objects. **The audio does the rest** —
+rain on taut nylon a foot from your head is what living in a tent sounds like.
+
+> ### ⚠️ Rain on the lens is an **exterior** move only *(ruled 2026-08-26)*
+>
+> It was free realism on [6a](#6a--first-sight-of-the-tent--still--accepted) and 6b because the
+> camera stood outdoors in the weather. **Inside the tent it is physically impossible**, and an
+> impossible optic is the same class of error as asking for a reflection in a pane the set does
+> not have — the documented cause of the model rebuilding the world to make the shot possible.
+> The weather moved to the doorway and the audio instead.
+
+---
+
+## Scene 8 — the wank tank arrives
+
+### 8 — the tent POV with the X8 in the doorway · **still** · accepted · the master frame
+
+**Banked 2026-08-26.** Generated before 6c and **6c was made from it** — so although it belongs
+to scene 8 in the cut, it is the origin of the tent-POV geometry the film reuses three times.
+
+The X8 fills Bob's doorway. That is the class map in one frame and it needs no narration: a tent,
+a hand round a bottle, and a hundred-thousand-pound car parked where the view used to be. The
+Waitrose fascia sits top right, so the scene-10 payoff has a home in the same composition.
+
+> ⚠️ **Prompt not recorded** — this frame predates the ledger entry and was made before the
+> session. Paste it in if it still exists in Flow.
+
+---
+
+## Scene 7 — therapy
+
+### 7a — the consulting room · **still** · accepted
+
+Round 3, accepted 2026-08-26. Cast with **`@Tarquin`**.
+
+**Rounds 1 and 2 had the room and lost the face.** The wardrobe and the set landed first time; the
+expression came back as mild weariness, which could have been anything. Canon's note is *genuinely
+baffled*, and the line it carries is *"What **is** this feeling?"* — a man meeting an emotion for
+the first time and finding it unacceptable.
+
+**What fixed it was writing the face as anatomy and naming the wrong readings.** *"Stopped halfway
+through a sentence… the next word has not arrived"*, *"the inner ends of his eyebrows pulled up
+and towards each other, putting a small vertical crease between them"*, and then: *"this is not
+weariness, not amusement, not sadness and not calm."* Describing it as *baffled* gets a mood;
+describing the muscles gets the face. The parted lips are repeated in `Constraints:` so they
+survive.
+
+**✅ The engine improved on the brief and should be allowed to.** The prompt asked him to stare at
+the ceiling; the frame has him **looking straight at the therapist**. That is better and it is
+now canon — *"What is this feeling?"* is a question **addressed to someone**. Staring at the
+ceiling is a man working it out alone; looking at the therapist is a demand for an answer, which
+is funnier and truer to a man who has always been able to buy one.
+
+```prompt
+A documentary press photograph of a man at a therapy session. This is a news picture, not an advertisement.
+
+Subject: The man in the reference image, lying back on a low upholstered couch with his ankles crossed and his shoes still on. He is dressed for a weekday afternoon with nothing to prove: plain dark blue jeans, a fine-gauge navy cashmere roll-neck, a quilted olive gilet still zipped over it, and polished tan suede tasselled loafers worn with no socks, so a band of bare ankle shows above each shoe. A plain heavy gold signet ring on his little finger and an old, expensive, slightly scuffed steel watch. His hands rest on his stomach, one on top of the other. Everything he has on is soft, costly and quietly ridiculous, and he looks entirely out of place — he has not worked out how to lie down properly.
+
+Composition: 35mm lens at f/2.8, camera at seated height in the corner of the room behind and to the side of the therapist's armchair, so the out-of-focus dark shoulder and the back of the therapist's head cut into the foreground on the right and we look past them at him. He lies along the lower half of the frame, left of centre, with a lot of plain wall and quiet room above him. The horizon is not quite level.
+
+Action: He is staring up at the ceiling, not at the therapist, and he has just stopped halfway through a sentence. His lips are parted and stay parted, as though the next word has not arrived. The inner ends of his eyebrows are pulled up and towards each other, putting a small vertical crease between them and a short row of creases across the middle of his forehead. His eyes are wide and unfocused, aimed at nothing. His head is tipped slightly back and a little to one side. He looks like a man being asked a question he cannot answer, about a feeling he has never had before and does not want. This is not weariness, not amusement, not sadness and not calm. Unposed, caught mid-moment, unaware of the camera.
+
+Location: A tasteful, quiet, expensive consulting room in London. A plain wall in a soft warm-grey, one framed abstract print hung slightly low, a mid-century wooden armchair, a wool rug over floorboards, a side table with a box of tissues and a glass of water, a stack of journals, a plant that needs watering, a radiator under a sash window. It is comfortable rather than grand — money that does not announce itself. There is a faint worn patch on the arm of the couch where hands have rested.
+
+Style: Shot on 35mm Kodak Portra 400, fine natural grain, soft warm-neutral colour. One sash window camera-left is the only light source — flat grey daylight coming in low and even, leaving the far side of the room in soft shadow. Calm, still and unhurried. Real skin with visible pores, uneven tone and a matte sheen rather than gloss. His face is naturally asymmetric.
+
+Constraints: No face other than his is visible. The therapist is seen only from behind. Nothing in the frame carries readable text. His lips stay parted.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+> ### ⚠️ Ask for patina, not wear, on anything expensive *(2026-08-26)*
+>
+> *"A faint worn patch on the arm of the couch where hands have rested"* came back as **a ragged
+> hole with the foam showing**. The engine escalates *wear* into *damage*, and in a room whose
+> whole job is **money-quiet** a hole undercuts the class read.
+>
+> **Kept anyway** — the face took three rounds and is the entire shot; re-rolling to fix a small
+> blemish risks losing it. **Next time write the patina**: *"the fabric slightly flattened and
+> darker where hands have rested."* Same signal, no damage.
+
+**Two canon facts came out of this frame:**
+
+- **The therapist is a man** — grey-haired, soft beige jacket over a blue shirt, seen from behind
+  in the near foreground. Canon never specified a gender; the frame decided it. Recorded in
+  [`style.md`](./style.md), and it matters because 7b is his shot.
+- **Tarquin's leisure wardrobe is now locked** in
+  [`characters/tarquin.md`](./characters/tarquin.md) — jeans, cashmere roll-neck, gilet zipped
+  indoors, suede loafers, no socks. **Posh, not flash.** Salmon cords were tried first and tipped
+  into caricature.
+
+**Its clip: he finishes the sentence, then waits.** The mouth closes over about a second and the
+expression holds — one motion with a settle, so it has somewhere to stop instead of drifting. The
+wait is deliberate: it is the silence 7b's punchline drops into. The audio is the silence too —
+a radiator tick, a couch creak, London through old glass. *Money-quiet* is a sound as much as a
+look.
+
+---
+
+### 7b — the therapist's verdict · **still** · accepted
+
+Round 2, accepted 2026-08-26. **No Flow Character cast** — two reference images instead.
+
+**Round 1 sat Tarquin up.** The reverse angle got the axis and the light side right — therapist
+frame-left, window camera-right, correct for a flip of 7a — but the foreground shoulder was
+upright at the therapist's eye level, so the two frames could not cut: 7a has him lying back on
+the couch with his ankles crossed. The therapist's eyeline was level too, aimed at a seated man.
+
+**What fixed it was dropping the camera to couch height and putting his feet in shot.** The
+camera goes low — *"at the height of a man lying on a couch, roughly a metre off the floor,
+placed just behind and to the side of his head"* — and the crossed ankles in tan suede tasselled
+loafers sit in the near foreground. **The feet do the continuity that a face would have had to
+do**, and they carry the class read on their own: bare ankles above suede in a therapist's
+consulting room is the whole joke about him, with nobody in frame to say it.
+
+> ### 🎯 Two reference images, no Character *(2026-08-26)*
+>
+> The therapist has **no Flow Character and no sheet**, and his face still held across two
+> generations. The method: attach **the accepted 7a frame** (room, couch, light, geometry) and
+> **the round-1 frame** (his face), and cast nothing.
+>
+> **Casting `@Tarquin` here would have been wrong** — his face is not in the shot, and a cast
+> Character is an instruction to *include* that person, which fights the one-face constraint.
+> A third identity input would also have made the engine arbitrate against the therapist, who is
+> the fragile one. **Cast a Character when the face is the shot; use references when it isn't.**
+
+**✅ The engine improved on the brief twice, and both were kept.**
+
+- **The eyeline went into the lens.** The prompt asked for *"down and just past the lens to
+  camera-right"*; he looks straight down the barrel. It costs one *"unaware of the camera"* and
+  it is worth it — **this is the matching half of 7a's improvement.** 7a asked him to stare at
+  the ceiling and he looked at the therapist, which made *"What is this feeling?"* a question
+  addressed to someone. 7b is the answer addressed back. The camera sits at Tarquin's head, so
+  that is where the eyeline lands. **The film spends its one direct address here, on the
+  punchline.**
+- **The ankles came back sharp and large.** The prompt said *"thrown well out of focus, a soft
+  shape only."* In focus is funnier and the bare ankle is legible, which soft shapes would have
+  lost. Kept.
+
+```prompt
+A documentary press photograph of a man at a therapy session. This is a news picture, not an advertisement. It is the reverse angle of the reference frame: the same room, the same couch, the same afternoon, shot from the other end.
+
+Subject: The grey-haired man in the reference images — the therapist — seated in his mid-century wooden armchair. The same face, the same build and the same clothes: an oatmeal fine-knit crew-neck jumper over a pale blue open-collar shirt, navy trousers, reading glasses pushed up onto the top of his head. Early sixties, kind, unremarkable and entirely unbothered. His notebook is closed on his knee with the pen capped and laid on top of it — he has stopped taking notes because he has reached a conclusion.
+
+Composition: 50mm lens at f/2.0. The camera is low, at the height of a man lying on a couch, roughly a metre off the floor, placed just behind and to the side of that man's head so we look up the length of the couch at the therapist. The therapist sits centre-left of frame, from the knees up. His eyeline goes down and just past the lens to camera-right, aimed at the reclining man's face and not at us. In the near foreground at the bottom right, thrown well out of focus, a pair of crossed ankles in polished tan suede tasselled loafers with a band of bare ankle showing above each shoe, resting on the end of a low upholstered couch. The sash window and the pale wall fall away camera-right. The horizon is not quite level.
+
+Action: He has just finished a short sentence and is waiting for it to land. His mouth is closed, the corners level. His eyebrows sit level and relaxed, with no lift and no furrow. His eyes are steady and hold the look a beat longer than is comfortable, with the faint creases at the outer corners of a man who has thought about something and finished thinking. His head is very slightly tilted. He is completely calm. This is not a joke, not a smirk, not concern, not sympathy and not drama — he looks exactly as he would recommending a change of diet. Unposed, caught mid-moment, unaware of the camera.
+
+Location: A tasteful, quiet, expensive consulting room in London, matching the reference frame. A plain wall in a soft warm-grey behind him, one framed abstract print hung slightly low, a wool rug over floorboards, a sash window camera-right with a radiator beneath it, and further off a side table with a box of tissues and a glass of water. Comfortable rather than grand — money that does not announce itself.
+
+Style: Shot on 35mm Kodak Portra 400, fine natural grain, soft warm-neutral colour. The sash window camera-right is the only light source — flat grey daylight coming in low and even, leaving the far side of the room in soft shadow. Calm, still and unhurried. Real skin with visible pores, uneven tone and a matte sheen rather than gloss. His face is naturally asymmetric.
+
+Constraints: No face other than his is visible. Nothing in the frame carries readable text. His mouth stays closed. His expression stays completely level. The crossed ankles in the foreground stay out of focus.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**One canon change came out of this frame:**
+
+- **The therapist's face is now held on screen.** [`style.md`](./style.md) ruled on 2026-08-26
+  that he is *"only ever seen from behind or in lost profile, so no second face has to be
+  held."* **Amended the same day: 7b holds it, and only 7b.** The verdict is funnier delivered
+  by a face, and the continuity cost is nil because he never appears again — one shot, one
+  reference image, done.
+
+> ### ⚠️ Open — the shoulder colour *(2026-08-26)*
+>
+> [7a's prompt](#7a--the-consulting-room--still--accepted) describes the therapist's foreground
+> shoulder as *"the out-of-focus **dark** shoulder"*. He is in an **oatmeal** jumper in both 7b
+> frames. If 7a's frame really did come back dark, the pair does not cut and one of the two has
+> to move. **Check the 7a frame** — the ledger cannot settle this, only the picture can.
+
+**Two notes for the grade:** the round came back **brighter than 7a**, with warm sunlit brick
+visible through the sash window, against 7a's flat grey daylight and shadowed far side. **Fix it
+in Premiere, not with a re-roll** — the face and the geometry cost two rounds and are not worth
+risking for a stop of exposure. The notebook also came back open with the pen in hand, losing the
+*"he has stopped writing"* beat. Not worth a round either.
+
+**Its clip: he holds.** The pen settles flat, one slow blink, one small breath that lifts the
+shoulders, and then he simply waits out the shot — eyeline fixed, mouth closed, expression
+unchanged. The same one-motion-with-a-settle shape as 7a. The wait is the shot: it is the
+silence the narrator's punchline drops into, and it is the second half of the pause 7a opened.
+Audio is the room only — the radiator ticking as it warms, one couch creak, London traffic
+through old glass.
+
+---
+
 ---
 
 ## Scene 2 — 2008, meet Bob

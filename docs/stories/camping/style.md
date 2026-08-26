@@ -23,7 +23,13 @@ the skill, never as an override.
   Class-coded and recognisable. *(After-state Easter eggs: the W-AI-trose sign
   with only the A and I lit; the clamped dead wank tank.)*
 - **The consulting room** (Scene 7) — tasteful, warm-neutral, money-quiet; the
-  comedy plays against its calm.
+  comedy plays against its calm. **The therapist is a man** *(ruled 2026-08-26 from the accepted
+  7a frame)* — grey-haired, in a soft beige jacket over a blue shirt, seated in the near
+  foreground with his back to camera. Canon never specified a gender; the frame did.
+  **Amended 2026-08-26: his face is held once, in 7b, and nowhere else.** The rule was that he is
+  only ever seen from behind or in lost profile so no second face has to be held — but the verdict
+  is funnier delivered by a face, and the continuity cost is nil because he never appears again:
+  one shot, one reference image. Everywhere else he stays a back and a shoulder.
 - **The Welsh retreat clearing** (Scene 9) — executive dome tents by a river,
   fog, a small ceremony fire; damp, late-70s film-negative texture on
   exteriors.

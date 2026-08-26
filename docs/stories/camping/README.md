@@ -65,7 +65,7 @@ later). Change the story here first, then the media.
 | --- | --- | --- |
 | Story spine | [`story.md`](./story.md) | **locked structure** (2026-08-04 master notes) |
 | Storyboard (video) | [`story.md`](./story.md#storyboard--scene-by-scene-video-guide) | drafted from the spine — Jack to shoot from |
-| Shot list (video) | [`shot-list.md`](./shot-list.md) | cut order, 12 scenes / 38 shots — **scenes 1–5 shot (4c dropped), 6a + 6b done; next is the 6c lock** |
+| Shot list (video) | [`shot-list.md`](./shot-list.md) | cut order, 12 scenes / 38 shots — **scenes 1–7 and 8a shot (4c dropped), 6c locked; 8b in progress — next session starts there** |
 | Flow prompt ledger | [`prompts.md`](./prompts.md) | verbatim **still** prompts as restore points (video prompts not recorded, ruled 2026-08-26). **complete through scene 4** — 1a, 1b, 1c, 2a, 4a all recovered 2026-08-26 |
 | Song — "Camping" | [`songs/camping.md`](./songs/camping.md) | **accepted prompt** — duet re-cut, same words, rebuilt casting so Bob and Tarquin stop blending. Signed off at round 17, 2026-08-21 |
 | Song — released take | [`songs/camping-released.md`](./songs/camping-released.md) | the published version, and the lyric-fidelity reference. Jack's video is cut to it |

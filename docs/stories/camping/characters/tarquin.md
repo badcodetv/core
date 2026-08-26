@@ -45,6 +45,13 @@ these:
   overcoat over an open-collar pale shirt, no tie; flat-front trousers; an
   expensive understated watch; a plain heavy signet ring. Everything well cut and
   a little soft from desk life.
+- **The leisure register (Scene 7, and anywhere he is off duty)** *(added 2026-08-26)*: plain
+  dark blue jeans with turn-ups, a fine-gauge navy cashmere roll-neck, a quilted olive gilet
+  still zipped over it indoors, and polished tan suede tasselled loafers worn **with no socks**,
+  so a band of bare ankle shows. Signet ring and the old scuffed steel watch stay. **Posh, not
+  flash** — old money is soft, expensive and slightly absurd; it never sparkles. The bare ankles
+  are the joke and they are load-bearing. *(Salmon cords were tried first and tipped into
+  caricature; jeans read as a real kind of moneyed Englishman rather than a costume of one.)*
 - Demeanour: chin slightly up, the resting expression of a man appraising and
   finding wanting. Caught mid-sneer or mid-dismissal, never posed or heroic.
 - **The young-Tarquin variant (Scene 1, 2008):** the same bone structure in his
@@ -122,3 +129,55 @@ rendered look.
 
 This also keeps the [§A2 usage-filter problem](../../../flow/failure-modes.md#a2-every-field-flow-reads-is-scanned-not-just-the-prompt-box)
 at arm's length — fewer Character Names is fewer fields being scanned.
+
+---
+
+## 👔 `@Tarquin-new` — the leisure Character *(2026-08-26)*
+
+**Flow Character (leisure variant): `@Tarquin-new`** — created by Jack 2026-08-26, cast wherever
+he is off duty. Id and owning project not recorded; paste them in.
+
+> ⚠️ **The name will age badly.** It is policy-safe — *new* is not a trigger word, so it does not
+> repeat the `@homeless-Tarquin` mistake — but it says nothing about *when* or *who*, and the next
+> leisure Character will have nowhere to go. Not worth renaming a working Character over; worth
+> knowing before Character number four.
+
+**Why it exists.** The wardrobe would not survive a generation. Across four rounds of **8b(i)**,
+casting `@Tarquin` and either describing the outfit, attaching a clothing reference, or saying
+nothing at all **all returned an olive leather bomber jacket over a printed graphic t-shirt** —
+which is not *posh, not flash*, and the print also breaks the no-readable-text rule. The
+wardrobe needed to live in a Character's Body, not in a prompt.
+
+### The reference plates
+
+Two studio plates, generated in the ordinary Nano Banana 2 image tool — **not** through Flow's
+Characters UI, and **with no Character cast**:
+
+1. **A head-and-shoulders portrait** — the face, on a plain mid-grey wall in flat frontal light.
+2. **The full-length plate** — accepted 2026-08-26, generated **from that portrait as the only
+   reference**. Front on, arms at his sides, whole figure in frame, every garment legible.
+
+**The order matters and is worth reusing.** Fix the face in a portrait first, then build the
+full figure *from the portrait* — the reference is doing one job at a time, and the outfit can
+be described at length without competing with a face description.
+
+**The plate's prompt is a plain record shot, deliberately.** *"Soft, flat, even
+daylight-balanced light from the front with no strong shadows, no rim light, no mood and no
+atmosphere. This is a plain record shot, not a portrait."* House style is 35mm documentary; a
+reference plate is the one place it is wrong, because mood costs legibility.
+
+**Overriding a reference's clothes without tripping the filter.** The portrait wore the wrong
+outfit, so the full-length prompt had to keep the face and drop the clothes. What works:
+*"Keep the same face, the same hairstyle, the same build and the same colouring, unchanged"*,
+then *"His clothing is different from the reference and is described here in full. He is not
+wearing the jacket or the t-shirt from the reference photograph."* **Never** *"same face, same
+bone structure"* — that is [trigger 2](../../../flow/failure-modes.md#a5-the-five-triggers-badcodes-own).
+
+### ⚠️ The bare ankles do not survive — and they are the joke
+
+Three plates in a row put the turn-ups **straight down onto the shoe**, hiding the bare ankle,
+even with the requirement written twice including once in `Constraints:`. *"Turned up at the
+ankle"* and *"a band of bare ankle shows"* both describe a result the engine will not aim at.
+
+**Next attempt: give it a landmark, not a height** — *"the jeans are turned up above the ankle
+bone."* A bone is a thing that can be found; a band is not. Untested.
