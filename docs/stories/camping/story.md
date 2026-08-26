@@ -284,8 +284,11 @@ mid-deal, cocky, admired.
 Shard into *this* frame — generate it clean, keep the original, and treat it as
 an asset that gets reused rather than re-shot.
 
-**Plant the newspaper.** In the background, someone reads a paper — a 2008
-headline, unremarked, never framed as important. Keep the reader's **face behind
+**Plant the newspaper.** In the background, someone reads a paper — headline
+**`CRISIS ON WALL STREET`** *(settled 2026-08-26)*, unremarked, never framed as
+important. **It lives inside the trading-floor shot, not a shot of its own**
+*(ruled 2026-08-26)*: far down the row, small, half-turned, a chair back and a
+monitor arm crossing it. A shot that exists only to plant announces itself. Keep the reader's **face behind
 the paper**: it hides a likeness the engine cannot hold anyway (see the
 Ingredients note in `docs/google-flow/omni-flash.md`), and an anonymous commuter
 plants better than a character.

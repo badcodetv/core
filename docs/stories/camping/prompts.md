@@ -2,7 +2,7 @@
 story: camping
 kind: record — prompts typed into Flow by hand, not a generation brief
 flow_project: camping-v2 (`9b729074-da88-4668-a442-458e9a0f15ac`)
-updated: 2026-08-25
+updated: 2026-08-26
 ---
 
 # Camping — Flow prompt ledger
@@ -23,21 +23,24 @@ verbatim so any frame can be rebuilt from the same words.
 
 Started 2026-08-25, so everything shot before that date is missing its words.
 
-| Shot | Status | Why it matters |
-| --- | --- | --- |
-| **1a** the 2008 skyline plate | **shot, prompt not recorded** | 🔴 The worst gap. **4a is an edit of this exact frame** — if 1a is ever lost there is no way to rebuild it and the whole City chain dies with it. |
-| **1b** the trading floor | shot, prompt not recorded | |
-| **1c** young Tarquin mid-deal | shot, prompt not recorded | Also has no `@Tarquin-2008` Character recorded — see [`characters/tarquin.md`](./characters/tarquin.md). |
-| **1d** the newspaper plant | shot, prompt not recorded | |
-| **2a** the car on the lane (still) | shot, prompt not recorded | The 2a *video* prompt below is recorded; the still's is not. |
+**1a, 1b, 1c and the 2a still were recovered 2026-08-26** and are recorded in full below — the worst gap is closed.
 
-**If those prompts still exist in a Flow history or a note, paste them in.** Everything
-below this line is verbatim.
+✅ **No gaps remain.** Every still shot through scene 4 is recorded verbatim below. The one
+outstanding item is not a missing prompt: **4a's entry is byte-identical to 1a's**, because 4a
+is an edit of that frame, and the wording of the *swap* itself was never written down.
+
+*(1d was struck from the shot list on 2026-08-26 — 1b absorbed the newspaper plant. It is not
+a missing prompt; it is not a shot.)*
 
 ---
 
 ## Conventions
 
+- **Stills only** *(ruled 2026-08-26)*. The ledger records **still prompts**, because those are
+  the ones that take rounds to get right and are worth a restore point. **Video prompts are
+  self-explanatory** — they continue from an accepted still and say what moves — and are not
+  worth recording going forward. The video prompts already in this file stay; they are not a
+  precedent.
 - Every prompt ends with `Thanks.`
 - Never name a repo character in a prompt — say *"the man in the reference image"*.
 - **Video is generated on Omni Flash** (ruled 2026-08-25). The one accepted exception is
@@ -45,7 +48,240 @@ below this line is verbatim.
 
 ---
 
+## Scene 1 — 2008, the City
+
+### 1a — the 2008 skyline plate · **still** · accepted · 🔒 the plate
+
+**Recovered 2026-08-26**, from Jack, after it turned out not to exist anywhere in the repo,
+in git history, in the dangling objects or on disk. It had only ever lived in Flow. This is
+**the single most important restore point in the film** — 4a is made from this frame.
+
+**Reference image:** [`camera/reference/1a-framing-reference-shard-aerial.png`](./camera/reference/1a-framing-reference-shard-aerial.png)
+— a present-day aerial with the Shard dead centre, the City cluster behind, St Paul's right
+and the river across the lower third. It supplies the **framing, altitude and composition**;
+the prompt then does the era, swapping the hero tower for the old NatWest Tower and stripping
+the modern cluster out by name. ⚠ Provenance of that reference is not recorded — paste in
+where it came from when convenient.
+
+Note the technique worth keeping: the hero tower is **described, never named** — three
+chevron-shaped shafts around a central core, bronze-dark glass, a lattice mast — and the
+modern towers are excluded as *shapes* (tapering spire, curved top, wedge) rather than as
+names. Same for the Gherkin, the 1960s slabs and St Paul's, all described and none named.
+
+```prompt
+SCENE:
+
+Subject: a single tall dark office tower standing dead centre of frame, filling the middle third from top to bottom, seen from the air from slightly above its midpoint, with a low old city spread wide behind and below it.
+
+Environment: the City of London as it stood in 2008, before the current cluster of glass towers was built. The hero tower is a 1980 office block built as three chevron-shaped shafts cantilevered around a central core, stepping down to three different heights, clad in bronze-dark glass with strong vertical ribbing and a slim lattice mast on the roof; it stands completely clear of everything around it and is by far the tallest thing in the frame. Behind and beside it the city is low and dense — Portland stone and red brick blocks of six to ten storeys, church spires, flat grey roofs and rooftop plant. One rounded glass tower with a diagonal diamond lattice stands a little way off to one side, and two dark flat-topped 1960s slabs sit nearer the middle. A wide grey-brown river crosses the lower third of the frame with a road bridge to the right, and a domed stone cathedral sits among the rooftops on the right. Two construction cranes stand over the low roofs in the middle distance. The sky above the hero tower is completely empty.
+
+Camera: wide lens, high aerial, hovering level with the upper third of the hero tower and looking very slightly down, the tower centred and dead vertical, the horizon high in the frame. Deep focus, sharp from the tower all the way to the horizon.
+
+Lighting: a cold clear spring morning, the sun low and hard from the left throwing long shadows east across the rooftops. The hero tower's dark glass reads almost black against a pale sky, and one band of windows partway up its face catches the low sun and flares bright. Distance haze softens the far horizon into flat grey layers.
+
+Details: cinematic, filmic contrast, fine 35mm grain, atmospheric haze between camera and far city. No modern glass towers of any kind — no tapering glass spire, no curved-top tower, no wedge-shaped tower, no cluster of tall towers behind the hero. Keep every sign, banner and rooftop marking free of readable lettering.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+> ⚠ **1a does not end with the house `Thanks.` convention preceded by a Details block in the
+> usual order** — it is recorded exactly as typed. Do not tidy it. It is a restore point.
+
+### 1b — the trading floor · **still** · accepted
+
+**Recovered 2026-08-26.** Two things in this prompt are ahead of canon — see the notes
+under it.
+
+The era is carried by the *stock*, not by a date: Superia 400 pushed a stop, with the green
+fluorescent bias called for explicitly. Faces are solved the way the standing rule says to —
+**every person is turned away or in lost profile and no face is legible anywhere**, so the
+engine is never asked to hold twenty likenesses. The `Constraints:` block is doing real work:
+it re-states the windowless interior and the turned-away crowd as hard rules after they have
+already been described, which is the belt-and-braces pattern for the things that break.
+
+```prompt
+SCENE:
+
+Hyper-realistic documentary photograph, shot on 35mm Fujicolor Superia 400 pushed one stop — fine natural grain, a green bias off the fluorescent light, muted and cool. Naturalistic motivated lighting only, no lens flares, calm observational tone. The photographer is standing at the end of an aisle in a working office and has not been noticed.
+
+Subject: A deep open-plan trading floor in the City of London, 2008, seen down the length of it. Long unbroken rows of desks running away from the camera into the far end of the room, banks of slim flat-panel LCD monitors on articulated steel arms four and six to a desk, thin dark plastic bezels, all carrying dense rows of figures in amber and green on black. Perhaps twenty people at the desks in white shirtsleeves, jackets slung over chair backs, ties loosened — roughly a third of them women, and the floor visibly mixed across Black, South Asian, East Asian, Middle Eastern and white, of a range of ages and builds, spread evenly through both rows rather than grouped together — every one of them seen from behind or in lost profile, hunched toward their screens, none facing the camera and no face legible anywhere in the frame.
+
+Action: Ordinary working chaos rather than drama. One man stands with a phone handset to his ear. Another leans across to a colleague's desk. Far down the row, small in the frame and well off to one side, one person has tipped their chair back and is holding an open broadsheet newspaper up in front of them, the paper hiding their face completely; a chair back and a monitor arm partly cross in front of them, and the front page is turned only half toward the camera. The headline is small but still readable in heavy black sans-serif capitals: "CRISIS ON WALL STREET". No masthead, brand or other lettering on the page is legible — only that one line. It is easy to miss and nobody in the room is looking at it. Nobody is celebrating and nobody is panicking.
+
+Environment: Curling Post-it notes stuck to monitor bezels, loose printouts heaped and spilling, abandoned coffee cups, a suit jacket fallen half off a chair, cardboard boxes shoved under a desk. A grid of fluorescent tubes fills the ceiling, and the floor stretches back further than the light does.
+
+Camera and framing: 35mm lens at f/2.8, held at standing chest height, the aisle running away slightly off-centre so the room falls to the right rather than sitting square. The near edge of a monitor and a chair back cut into the foreground on the left, dark and completely out of focus. Focus sits on the desks in the near-middle distance and the far end of the room softens away. The frame is very slightly tilted.
+
+Light: Only what is in the room — the hard fluorescent ceiling grid, flat and green, blowing out to pure white in the tubes themselves, and the cold spill of the screens across the desktops. The undersides of the desks go to crushed black. Uneven exposure, a few blown highlights, no fill light anywhere.
+
+Constraints: this is a windowless interior — every wall and ceiling is solid, and the only light in the room comes from the ceiling tubes and the monitors. Every person is turned away from the camera and the newspaper reader's face stays hidden behind the paper. Keep it plain and unglamorous, the way an ordinary press photograph of an office actually looks.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+> ### 📌 Two things this prompt settles that canon still lists as open
+>
+> **1. ✅ The newspaper plant lives in 1b. 1d no longer exists** *(ruled 2026-08-26)*. The
+> shot list used to carry the plant as its own shot, **1d**. In the frame that was actually
+> made it is *inside the trading floor*: far down the row, small, half-turned, one chair back
+> and a monitor arm crossing it. That is the better plant — **a shot that exists only to plant
+> announces itself**, and a plant the audience notices has failed. 1b absorbed it; the film is
+> one shot shorter.
+>
+> **2. The 2008 headline is decided: `CRISIS ON WALL STREET`.** Canon's *Still open* list has
+> "the 2008 headline on the planted newspaper" as undecided. It isn't any more — heavy black
+> sans-serif capitals, no masthead, nothing else on the page legible.
+
+---
+
+### 1c — young Tarquin mid-deal · **still** · accepted
+
+**Recovered 2026-08-26.** Cast with the **`@Tarquin-2008` Flow Character** — which does exist,
+correcting the 2026-08-25 note in [`characters/tarquin.md`](./characters/tarquin.md).
+
+Same stock and same room as [1b](#1b--the-trading-floor--still--accepted) — Superia 400 pushed
+a stop, the green fluorescent bias, the identical `Constraints:` block. That is what makes the
+two frames cut together.
+
+> ### 🎯 The lesson worth keeping: describe the face only to *fight* the Character
+>
+> 1c has a Character attached **and** a long face description, which looks like a contradiction
+> until you read which way it points. Every clause is aimed at one job — **age him down hard**:
+> no nasolabial lines, no hollow cheekbones, no soft jaw, no temple recession, a full low
+> hairline, the unformed fullness of a young man. The description is not re-specifying the face,
+> it is **overriding the Character's default age in a named direction**.
+>
+> The inverse is the 4b problem: describing his face there had no direction to pull in, so it
+> just added drift, and he came back older than he should be. **Rule: attach the Character and
+> say nothing about the face — unless you are pushing it somewhere it will not go on its own,
+> and then say exactly which way.**
+>
+> Note the anti-CGI details doing the other half of the work: individual eyebrow hairs, razor
+> burn along the jaw, redness at the nostrils, matte not gloss, *"one eye fractionally smaller,
+> the nose not quite straight"*. Deliberate asymmetry is the single cheapest defence against
+> the rendered look.
+
+```prompt
+SCENE:
+
+Hyper-realistic documentary photograph, shot on 35mm Fujicolor Superia 400 pushed one stop — fine natural grain, a green bias off the fluorescent light, muted and cool. Naturalistic motivated lighting only, no lens flares, calm observational tone. The photographer is standing in the aisle of a working office and has not been noticed.
+
+Subject: The young man in the reference image, twenty-five years old, in a white shirt with the sleeves shoved up past his elbows, the collar open, and a wide tie in broad diagonal orange and blue stripes pulled loose and hanging off to one side. His suit jacket is slung over the back of the chair behind him. Age him down hard — he is twenty-five: no lines from nose to mouth, no hollowing under the cheekbones, no softening under the jaw, no recession at the temples. The hairline is full and low, the forehead smooth, the jawline clean, and the cheeks still carry the slightly unformed fullness of a young man rather than an adult's hard planes. Slim, but not gaunt. Real skin under hard office light — visible pores, individual eyebrow hairs, faint razor burn along the jaw, uneven tone with redness at the nostrils, a matte sheen rather than gloss. His face is naturally asymmetric: one eye fractionally smaller, the nose not quite straight.
+
+Action: He is half out of his seat, his weight going down through one splayed hand on the desk, a phone handset wedged between his shoulder and his ear, talking into it. His other hand holds a printout down at his side, slightly blurred by its own movement. His mouth is closed, his chin lifted, his brows level and relaxed, his eyes narrowed slightly and aimed at one screen, one corner of the mouth pulled back and held there. The face is doing very little. Unposed, caught mid-gesture, unaware of the camera.
+
+Environment: A deep open-plan trading floor, 2008. Banks of slim flat-panel LCD monitors on articulated steel arms, four and six to a desk, thin dark plastic bezels, carrying dense rows of figures in amber and green on black. The desk in front of him is a mess — curling Post-it notes stuck to the bezels, loose printouts shoved into a heap, a cold coffee. Behind him the row of desks runs away into the room as backs, shoulders and the tops of chairs, all soft and unreadable.
+
+Camera and framing: 50mm lens at f/2, from just below his eye height and slightly off to one side. He sits left of centre with empty room to his right, and the near edge of a monitor cuts into the foreground on the left, dark and completely out of focus, eating the left quarter of the frame. Focus sits on his eyes and everything nearer and further falls away fast. The frame is very slightly tilted.
+
+Light: Only what is in the room — a hard fluorescent ceiling grid, flat and green, blowing out to pure white in the tubes themselves, and the cold wash off the screens onto his face and throat from below. The undersides of the desks go to crushed black. Uneven exposure, a few blown highlights, no fill light anywhere.
+
+Constraints: this is a windowless interior — every wall and ceiling is solid, and the only light in the room comes from the ceiling tubes and the monitors. His mouth stays closed throughout. Keep it plain and unglamorous, the way an ordinary press photograph of an office actually looks.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Character attached:** `@Tarquin-2008`. Note the prose still says *"the young man in the
+reference image"* and never names him — the Character is the attachment, the prose stays
+anonymous. That is the convention working as intended, not a contradiction of it.
+
+---
+
+## Scene 4 — 2026, the Shard
+
+### 4a — the 2026 skyline · **still** · accepted
+
+**Recorded 2026-08-26, from Jack.**
+
+> ⚠️ **This is byte-for-byte identical to [1a](#1a--the-2008-skyline-plate--still--accepted)**
+> — same words, including *"the City of London as it stood in 2008"* and the exclusion of *"no
+> tapering glass spire"*. Recorded as supplied and confirmed by Jack when queried.
+>
+> The reading that makes it consistent: **4a is an edit of the 1a frame, not a generation**,
+> which is exactly what [`story.md` beat 4](./story.md#scene-4--2026-the-shard) says it should
+> be. So the prompt that *rebuilds* 4a is 1a's prompt — it gets you the plate — and the swap on
+> top of it is the small local edit canon describes. The two are one restore point, kept twice
+> so neither shot depends on the other's entry surviving.
+>
+> **Still not written down anywhere: the wording of the swap itself.** If there was a typed edit
+> instruction — replace the hero tower with the Shard, change the year to 2026 — it belongs
+> here. Paste it in when convenient.
+
+```prompt
+SCENE:
+
+Subject: a single tall dark office tower standing dead centre of frame, filling the middle third from top to bottom, seen from the air from slightly above its midpoint, with a low old city spread wide behind and below it.
+
+Environment: the City of London as it stood in 2008, before the current cluster of glass towers was built. The hero tower is a 1980 office block built as three chevron-shaped shafts cantilevered around a central core, stepping down to three different heights, clad in bronze-dark glass with strong vertical ribbing and a slim lattice mast on the roof; it stands completely clear of everything around it and is by far the tallest thing in the frame. Behind and beside it the city is low and dense — Portland stone and red brick blocks of six to ten storeys, church spires, flat grey roofs and rooftop plant. One rounded glass tower with a diagonal diamond lattice stands a little way off to one side, and two dark flat-topped 1960s slabs sit nearer the middle. A wide grey-brown river crosses the lower third of the frame with a road bridge to the right, and a domed stone cathedral sits among the rooftops on the right. Two construction cranes stand over the low roofs in the middle distance. The sky above the hero tower is completely empty.
+
+Camera: wide lens, high aerial, hovering level with the upper third of the hero tower and looking very slightly down, the tower centred and dead vertical, the horizon high in the frame. Deep focus, sharp from the tower all the way to the horizon.
+
+Lighting: a cold clear spring morning, the sun low and hard from the left throwing long shadows east across the rooftops. The hero tower's dark glass reads almost black against a pale sky, and one band of windows partway up its face catches the low sun and flares bright. Distance haze softens the far horizon into flat grey layers.
+
+Details: cinematic, filmic contrast, fine 35mm grain, atmospheric haze between camera and far city. No modern glass towers of any kind — no tapering glass spire, no curved-top tower, no wedge-shaped tower, no cluster of tall towers behind the hero. Keep every sign, banner and rooftop marking free of readable lettering.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Blocking:** [`camera/camping-4a-shard-aerial.kml`](./camera/camping-4a-shard-aerial.kml) —
+670m south of the Shard at 200m, looking due north, tilt 85.
+
+---
+
+---
+
 ## Scene 2 — 2008, meet Bob
+
+### 2a — the car on the lane · **still** · accepted
+
+**Recovered 2026-08-26.** The still the 2a video continues from.
+
+The whole prompt is an argument for **boring**: *"unremarkable and a few years old"*, *"nothing
+about the car is expensive, sporty or distinctive"*, *"ordinary to the point of boring"*, *"no
+golden light, no drama"*. Bob's ordinariness is the point of the scene, and it is carried by
+the car and the road before he is ever seen. The engine's default is to make things handsome,
+so plainness has to be asked for repeatedly and in those words.
+
+Two other things it does deliberately: **nothing legible anywhere** — no badges, no number
+plates, and a road sign explicitly carrying no readable text, which is the same lettering
+discipline as 1a and 1b; and the car is **already small and already leaving**, so the shot is
+a departure from the first frame rather than becoming one.
+
+```prompt
+SCENE:
+
+Hyper-realistic documentary photograph, shot on 35mm Kodak Ektachrome — fine natural grain, muted cool-neutral colour, naturalistic daylight only, no lens flares, calm observational tone. The photographer is standing on the verge of a road and the car is simply passing.
+
+Subject: An ordinary silver five-door family estate car from the mid-2000s, unremarkable and a few years old, with a black plastic roof box strapped to the roof bars and the back seats piled with bags visible through the rear side window. No badges, brand names or number plates are legible anywhere on it. Nothing about the car is expensive, sporty or distinctive.
+
+Action: The car is driving away from the camera along the road at ordinary speed, already some distance off and small in the frame, its wheels and the hedgerow closest to the lens softened by a little motion blur. There is no other traffic.
+
+Environment: A plain two-lane British A-road on a flat, dull stretch of countryside — worn tarmac with a faded white centre line, a scruffy hedgerow running along both verges, a ploughed field and a line of bare trees beyond, a wooden telegraph pole. A road sign stands at the verge with nothing legible on it. Everything is ordinary to the point of boring.
+
+Camera and framing: 50mm lens at f/4, held low at about waist height from the grass verge, the road running away slightly right of centre so the frame is not symmetrical. The car sits small in the middle distance with a lot of empty road and a lot of flat grey sky above it. The frame is very slightly tilted.
+
+Light: Flat overcast daylight, no sun and no shadows, the sky a featureless pale grey and slightly overexposed. Muted, cold and unflattering — no golden light, no drama.
+
+Details: Fine natural film grain, slightly desaturated colour, a soft and very slightly missed focus on the far hedgerow.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+> ⚠️ **Continuity note.** 2a's still specifies a **two-lane British A-road** with a faded white
+> centre line; the 2a *video* prompt below calls the same location a **single-track lane**, and
+> so does [`shot-list.md`](./shot-list.md) and the scene-3 alternates ("the edge of a wet
+> single-track English country lane"). The road that actually made it into the frame is the
+> A-road. Worth settling before the scene-3 verge shots have to match it.
 
 ### 2a — the car on the lane · **video** · accepted
 

@@ -73,6 +73,52 @@ shots, permanently and invisibly. See
 [`docs/flow/failure-modes.md` §A2](../../../flow/failure-modes.md#a2-every-field-flow-reads-is-scanned-not-just-the-prompt-box).
 The story still calls him homeless — the *field* doesn't.
 
-> Flow ID and owning project not recorded — this Character was made outside the repo.
-> Paste them here when convenient; repo silence means we don't know, not that it
-> doesn't exist.
+**Flow Character (2008 variant): `@Tarquin-2008`** — confirmed in use 2026-08-26, cast on shot
+1c.
+
+> Flow IDs and owning projects for `@Future-Tarquin` and `@Tarquin-2008` are not recorded —
+> both were made outside the repo. Paste them here when convenient; repo silence means we
+> don't know, not that it doesn't exist.
+
+## ✅ How the variants are actually made — reference image, not a Character *(2026-08-25)*
+
+> ⚠️ **Corrected 2026-08-26: `@Tarquin-2008` does exist.** Shot **1c** was cast with it — see
+> [`prompts.md`](../prompts.md#1c--young-tarquin-mid-deal--still--accepted). The claim below
+> that it does not exist was wrong. What survives is the *method*: a separate Character is
+> **not required** for a variant, and a reference image plus prose does the job. Where a
+> Character does exist, cast it.
+
+**A separate Flow Character is not required for a variant.** The age and condition variants
+above can be made by **attaching a reference image of the character and describing the change
+in the prompt** — younger, older, more wrecked. A missing Character is not a blocker.
+
+So a variant prompt reads *"the man in the reference image, here in his mid-twenties — the
+same bone structure and features, but leaner in the face, with full dark hair, unlined skin
+and no grey"*, and never names him. **Do not treat a missing Character as a blocker**, and
+do not go and make one: the prose descriptions above are the spec, and the reference image
+plus those words is the whole mechanism. Bob's wife has no Character and needs none.
+
+**The prose stays anonymous either way.** Even when a Character *is* attached, the prompt
+still says *"the young man in the reference image"* and never names him — 1c does exactly
+this. The Character is the attachment; the words stay clean.
+
+## 🎯 When to describe his face, and when not to *(2026-08-26)*
+
+Two shots settled this between them, and they point opposite ways for the same reason.
+
+- **Describe the face only to push it somewhere it will not go on its own — and name the
+  direction.** 1c attaches `@Tarquin-2008` *and* carries a long face description, every clause
+  aimed at one job: **age him down hard**. No nasolabial lines, no hollow cheekbones, no soft
+  jaw, no temple recession, a full low hairline, *"the slightly unformed fullness of a young
+  man"*. That is an override, not a re-specification, and it works.
+- **Otherwise say nothing about the face.** In **4b** the face was described with no direction
+  to pull in, so the words only added drift and he came back **older than he should be**. The
+  fix is to cast `@Tarquin` and describe **clothes and expression only**.
+
+Worth stealing from 1c regardless of variant: **deliberate asymmetry** — *"one eye fractionally
+smaller, the nose not quite straight"* — plus razor burn, visible pores, redness at the
+nostrils and a matte rather than glossy sheen. It is the cheapest defence there is against the
+rendered look.
+
+This also keeps the [§A2 usage-filter problem](../../../flow/failure-modes.md#a2-every-field-flow-reads-is-scanned-not-just-the-prompt-box)
+at arm's length — fewer Character Names is fewer fields being scanned.

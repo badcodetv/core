@@ -9,23 +9,30 @@
 
 ## ⚠️ Next session — start here
 
-> **Status 2026-08-25.** **Scenes 1, 2 and 3 are shot.** 1a–1d (skyline, trading floor,
-> young Tarquin, the newspaper plant) were made in an earlier session; 2a, 2b and 3b were
-> made on 2026-08-25, stills and clips both. 3a is not a generation — it is a cut to black.
-> The next unshot scene is **4**, and it starts with an *edit*, not a generation.
+> **Status 2026-08-26.** **Scenes 1, 2 and 3 are shot, and so is 4a.** 1a–1c (skyline,
+> trading floor, young Tarquin) were made in an earlier session; 2a, 2b
+> and 3b were made on 2026-08-25, stills and clips both. 3a is not a generation — it is a cut
+> to black. **4a — the skyline swap — is done.** **4b is shot but not accepted**: the first
+> version reads sad rather than king-of-the-world, and is being re-run casting `@Tarquin` with
+> only clothes and expression described (naming his face drifts him older than he should be).
+> After 4b the next unshot scene is **5**.
 >
-> ⚠️ **Prompts now live in [`prompts.md`](./prompts.md).** It is backfilled from 2026-08-25
-> onward. **Scene 1's prompts are not recorded anywhere** — paste them in if they still
-> exist, because 4a is an edit of 1a and there is currently no way to rebuild that plate.
+> ⚠️ **Prompts live in [`prompts.md`](./prompts.md), and the ledger is now stills-only** —
+> video prompts are self-explanatory and are not recorded going forward *(ruled 2026-08-26)*.
+> **1a, 1b, 1c and the 2a still were all recovered on 2026-08-26**; 1a was the film's worst
+> gap and it is now closed, with its framing reference saved beside it. **Nothing is missing.** 4a is recorded but shares 1a's exact text — the swap wording was never typed down.
 >
 > 2b's laugh clip is the one shot generated on **Veo 3.1** rather than Omni Flash — Omni
 > lost both faces once the motion stopped being near-static
 > ([why](../../google-flow/omni-flash.md)).
 
-- [ ] **4a — the skyline swap.** Take the **1a** plate and replace the NatWest Tower with the
-      Shard. An edit of that exact frame; never a fresh generation.
-- [ ] **Get the Shard reference image** ready for the 4a swap.
-- [ ] **Record scene 1's prompts** in [`prompts.md`](./prompts.md), 1a most of all.
+- [x] **4a — the skyline swap.** Done 2026-08-26. ⚠️ Its prompt is not recorded — paste it in.
+- [x] **Record 1a's prompt** — recovered 2026-08-26, with its framing reference image.
+- [x] **Record 1b's prompt** — recovered 2026-08-26.
+- [ ] **4b — Tarquin at the top.** Re-run for the king-of-the-world read; cast `@Tarquin` and
+      describe clothes and expression only, never his face.
+- [x] **Record 1c and the 2a still** — recovered 2026-08-26.
+- [x] **Record 4a's prompt** — recorded 2026-08-26. ⚠️ It is byte-identical to 1a's; the wording of the *swap* itself is still not written down.
 - [ ] **Record the Flow Characters** that scene 1 must have used — `@Tarquin-2008` has no id
       in [`characters/tarquin.md`](./characters/tarquin.md), and neither does `@Bob-2008` or
       Bob's wife.
@@ -43,7 +50,7 @@ men before the plot starts, so the rest of the film can dismantle it.*
 - **1a The skyline** — City of London, the **old NatWest Tower** dominant, a huge **"2008"**. The reader should think *financial crash* before a single face appears. **This is a plate — 4a is made from it.**
 - **1b The trading floor** — screens everywhere, shirtsleeves, fluorescent glare.
 - **1c Young Tarquin mid-deal** — cocky, admired, leveraged ETFs. *He was the reason 2008 hit.*
-- **1d The newspaper plant** — background, someone reading a paper, **face behind it**, 2008 headline. Nobody looks at it, the narrator never mentions it. It pays off in 11b.
+- ~~**1d The newspaper plant**~~ — **struck 2026-08-26: absorbed into 1b.** The plant is *inside* the trading floor — far down the row, small, half-turned, a chair back and a monitor arm crossing it, face behind the paper, headline `CRISIS ON WALL STREET`. A shot that exists only to plant announces itself, so it stopped being a shot. It still pays off in 11b.
 - **2a An ordinary car on an ordinary road** — luggage. A holiday.
 - **2b Bob driving, his wife beside him** — younger, brighter-eyed. The job stays deliberately unremarkable.
 - **3a The crash — never shown.** Cut to black mid-laugh straight out of 2b; the impact happens in the black. **No narration at all.** We never show or say who died.
@@ -92,7 +99,7 @@ men before the plot starts, so the rest of the film can dismantle it.*
 ## The reveal and the ending
 
 - **11a Face to face** — recognition. *"I remember you. I saw you just… yesterday."*
-- **11b The hand-off** — Bob gives him **the newspaper**. **Callback to 1d.** *"That was like five years ago. Look at the date."*
+- **11b The hand-off** — Bob gives him **the newspaper**. **Callback to the plant in 1b.** *"That was like five years ago. Look at the date."*
 - **11c Tarquin reads** — the date does the time, the headline does the AI. One prop, two jobs. Hold. *"It's not the drugs."*
 - **11d Bob's man-sized empathy** — *"Where the f*** have you been, then? You alright?"* The five missing years are **never explained**.
 - **12a The two of them by the fire** — in the car park, **not** the woods. Faces changed: almost a smile.
@@ -111,14 +118,14 @@ Three places where a later shot is *made from* an earlier one. Break the chain a
 | --- | --- | --- |
 | **1a** 2008 skyline | **4a** 2026 skyline | Edit the tower out, the Shard in. One local change on an unchanged frame. Never a fresh generation. |
 | **6c** Bob's tent POV | **10a** Tarquin's wake-up | Identical framing — door-flap letterbox, low horizon. Only the world outside changes. |
-| **1d** the planted paper | **11b → 12c** hand-off, then kindling | **The callback is the newspaper as an image, not the same physical object** *(ruled 2026-08-25)* — 1d is 2008 and 11c's paper has to date to 2031, so one object could never do both. Plant it unremarked; a man behind a paper is the whole rhyme. |
+| **1b** the planted paper *(inside the trading floor)* | **11b → 12c** hand-off, then kindling | **The callback is the newspaper as an image, not the same physical object** *(ruled 2026-08-25)* — the plant is 2008 and 11c's paper has to date to 2031, so one object could never do both. Plant it unremarked; a man behind a paper is the whole rhyme. **The plant lives inside 1b** *(ruled 2026-08-26)* — it was never worth its own shot. |
 
 ## Standing rules for every shot
 
 - **The narrator carries all inner states** — thoughts, freak-outs, U-turns — over **held** images. We never animate a character emoting; that is where the AI-slop uncanny valley lives.
 - **Audio is a parallel universe** — recorded narration plus sound-effect libraries. Never model-generated audio.
 - **Animation is spent sparingly** — the blink (9c→10a), the fire (10b), the embers (12d). That is the budget.
-- **Faces in the background will not survive a generation.** The engine re-renders any person in a reference rather than continuing them. Where a face doesn't need to be legible, hide it — 1d's newspaper reader is the model for this.
+- **Faces in the background will not survive a generation.** The engine re-renders any person in a reference rather than continuing them. Where a face doesn't need to be legible, hide it — the newspaper reader planted in 1b is the model for this.
 - **Warmth is an argument, not decoration** — only the gold headlights (5a), the ceremony fire (9a), and the fire in the ruins (10b–12d). Everywhere else: muted, cool, unforgiving.
 
 ## Still open
@@ -126,6 +133,6 @@ Three places where a later shot is *made from* an earlier one. Break the chain a
 Canon deliberately leaves these until they're funny — none of them block shooting:
 
 - The exact narrator wording throughout, and **the closing line** (*"Well. We were both wrong, weren't we"* is a draft).
-- The 2008 headline on the planted newspaper (1d).
+- ~~The 2008 headline on the planted newspaper.~~ **Settled: `CRISIS ON WALL STREET`**, in the 1b frame — see [`prompts.md`](./prompts.md#1b--the-trading-floor--still--accepted). **1d is also settled: struck, absorbed into 1b.**
 - Day/night for the Shard — interior by day, drive-away by night? *"Ah, details."*
 - Where the remaining salvage lands: *"Bob. My name's Bob, mate"* (11–12), Moonwhisper Ascending as the shaman (9a), and whether the 12e stinger is used at all.
