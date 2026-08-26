@@ -31,7 +31,7 @@ the exact despair he spent his life disarming.
 
 **Anchor lines (real, verbatim — see [`../research/economics-of-money-creation.md`](../research/economics-of-money-creation.md)
 and [`../research/fascism-and-the-wealth-gap.md`](../research/fascism-and-the-wealth-gap.md)):**
-- "Anything we can actually do we can afford." (BBC, 2 April 1942)
+- "Anything we can actually do we can afford." (BBC talk; printed in *The Listener*, 2 April 1942 — broadcast date ⚠️ unconfirmed, see `research/documentary-research-2026-08-25.md` §2)
 - Inflation is "a demand in excess of the physical possibilities of supply." (same broadcast)
 - "You don't build houses with money… Do you mean that there won't be enough
   bricks and mortar and steel and cement?" (the architect exchange)

@@ -53,10 +53,19 @@ between them:
 1. **Is the underlying footage's copyright expired or waived?**
 2. **Is *this file*, from *this source*, clear for *us* to publish?**
 
-A 1940 Ministry of Information reel answers **probably yes** to (1) — Crown copyright on
-pre-June-1957 Crown-published material is generally expired, though ⚠️ **that line is
-search-snippet-sourced, not read off legislation** (see the verification table), so don't restate
-it as settled law — and **no** to (2) if you pull it from IWM,
+A 1940 Ministry of Information reel answers **probably NOT** to (1) — 🔴 **corrected 2026-08-25,
+read off legislation.gov.uk:** UK copyright in a *film* runs under CDPA 1988 **s.13B** — 70 years
+from the end of the year of death of the last to die of the principal director, screenplay author,
+dialogue author and composer — and s.13B "contains no special provisions for works created by the
+Crown"; the 125-years / 50-from-publication Crown rule in **s.163** is expressly limited to
+"a literary, dramatic, musical or artistic work" and does not reach films. So *Listen to Britain*
+(McAllister d.1962) may be in copyright to end-**2032** and *London Can Take It!* (Watt d.1987) to
+end-**2057**; only a Jennings-solo film (d.1950) is plausibly expired. The old line here ("pre-June-1957
+Crown material generally expired") was search-snippet folklore and is withdrawn. A NARA/FedFlix
+"public domain" tag on a British MOI film reflects the **US** position (non-renewal), not UK
+clearance — and BadCode publishes from the UK. Evidence and the per-title workings:
+[`../stories/magic-money-tree/research/documentary-research-2026-08-25.md`](../stories/magic-money-tree/research/documentary-research-2026-08-25.md) §1.
+And still **no** to (2) if you pull it from IWM,
 because IWM licenses its own print under its own terms regardless.
 
 ### The single most dangerous misconception

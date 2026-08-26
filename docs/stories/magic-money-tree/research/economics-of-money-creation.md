@@ -8,7 +8,7 @@
 
 **Exact wording:** *"Assuredly we can afford this and much more. **Anything we can actually do we can afford.**"*
 
-**Source:** BBC radio broadcast, **2 April 1942**, "How Much Does Finance Matter?", part of a BBC series on post-war planning. Reprinted in *Collected Writings of J.M. Keynes*, Vol. XXVII. **Kai's paraphrase "we can afford what we can create" is a close gloss but NOT the quote** — Keynes's version is about *doing* (deploying real labour and materials). Use the exact line; let a character gloss it.
+**Source:** BBC radio talk "How Much Does Finance Matter?", part of a BBC series on post-war planning — **printed in *The Listener* on 2 April 1942** (CW XXVII pp.264–70). ⚠️ **Corrected 2026-08-25:** 2 April is the *print* date; no source gives a distinct broadcast date and BBC Genome was unreachable — say "on the BBC, spring 1942" until Genome is read. Reprinted in *Collected Writings of J.M. Keynes*, Vol. XXVII. **Kai's paraphrase "we can afford what we can create" is a close gloss but NOT the quote** — Keynes's version is about *doing* (deploying real labour and materials). Use the exact line; let a character gloss it.
 
 Context: Keynes proposing ~£50m for theatres, concert halls, galleries, communal dining in post-war reconstruction.
 
