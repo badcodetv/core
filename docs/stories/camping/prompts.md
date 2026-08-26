@@ -236,6 +236,328 @@ Thanks.
 
 ---
 
+### 4b — Tarquin at the top · **still** · accepted
+
+Second round, accepted 2026-08-26. **Round 1 came back sad** — head tipped down, eyes on the
+floor, the whole frame reading melancholy instead of king-of-the-world, and he read older than
+he should. Two things fixed it.
+
+**1. Cast `@Tarquin` and stop describing his face.** Round 1 described it with no direction to
+push in, so the words only added drift. See the rule in
+[`characters/tarquin.md`](./characters/tarquin.md#-when-to-describe-his-face-and-when-not-to-2026-08-26).
+The one face clause that survives here is directional and points *away* from age.
+
+**2. Name the failure in `Constraints:`.** *"He is not sad, not tired, not thoughtful, not
+brooding, and he is not looking down."* Chin and eyeline are then restated after already being
+described in `Action:` — the same belt-and-braces as 1b. That is what actually turned it.
+
+Worth keeping: the empty office is reframed in the **camera** block, not the environment block —
+*"space he can afford rather than space he is lost in."* Same room, opposite reading. That is
+where round 1's melancholy was leaking in.
+
+```prompt
+SCENE:
+
+Hyper-realistic documentary photograph, shot on 35mm Kodak Ektachrome — fine natural grain, muted cool-neutral colour, naturalistic daylight only, no lens flares, calm observational tone. The photographer is standing at the far end of a large office and the man has not noticed.
+
+Subject: The man in the reference image, in a crisp pale shirt open at the collar with no tie, the cuffs fastened, tucked into flat-front charcoal trousers with a plain dark leather belt. An expensive understated steel watch and a plain heavy signet ring. A heavy charcoal wool overcoat is thrown over the back of a chair behind him. Everything well cut and quietly expensive, nothing loud and nothing branded. He is in his late forties and no older — do not deepen the lines from nose to mouth, do not hollow the eyes, and do not add grey or slackness beyond what the reference already carries.
+
+Action: He owns the view. He stands a couple of paces back from the glass, turned three-quarters away from the camera, looking out over the city. His chin is lifted and his head is level, his eyeline going out across the rooftops and not down at the floor. His shoulders are back and open, his weight even on both feet, one hand loose in his trouser pocket and the other hanging easy at his side. His mouth stays closed with the corners drawn back and held into the beginning of a private, satisfied smirk, his lower eyelids relaxed, his brows level, the skin around his eyes untroubled. Pleased with himself, amused, entirely unbothered. Unposed, caught mid-moment, unaware of the camera.
+
+Environment: A near-empty corner office high in a glass tower in London. Floor-to-ceiling glass on two sides meeting at the corner, a pale stone floor, a long plain desk pushed away to one side with a single chair, no papers on it and nothing on the walls. Beyond the glass, London runs away flat and grey to a hazy horizon under a blank overcast sky. No signage, branding or readable lettering anywhere in the room or outside it.
+
+Camera and framing: 35mm lens at f/2.8, held at chest height, static. He stands right of centre and small against the glass, with the city and the empty floor carrying the rest of the frame, so the emptiness around him reads as space he can afford rather than space he is lost in. The near edge of the desk cuts into the foreground on the left, dark and completely out of focus. Focus sits on him. The frame is very slightly tilted.
+
+Light: Only daylight through the glass — a flat white glare off the overcast sky, cool and even, coming at him from the front and side, with the ceiling above him in shadow. No sun, no fill light, no warmth anywhere.
+
+Details: Real skin under flat window light — visible pores, a faint razor shadow along the jaw, uneven tone, a matte sheen rather than gloss. His face is naturally asymmetric. Fine natural film grain. Faint reflections of the room hanging in the window glass.
+
+Constraints: He is not sad, not tired, not thoughtful, not brooding, and he is not looking down. His chin stays up and his eyeline stays out over the city. His mouth stays closed. Keep it plain and unglamorous, the way an ordinary press photograph of an office actually looks.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Character attached:** `@Tarquin`.
+
+> **Two notes carried forward, neither blocking.** The accepted frame reads *pleasant* rather
+> than *appraising and finding wanting*, which is softer than
+> [the character sheet](./characters/tarquin.md) asks for — worth knowing at **5d**, where the
+> beat is his smile *fading*, and a benign smile has less distance to travel. And the face came
+> back cleaner and more handsome than the sheet's *"eats well and sleeps badly"*, which is the
+> direct cost of casting the Character and saying nothing: you get what it carries. If a later
+> Tarquin shot needs the wear, the fix is one clause on the **worn** axis, not the **older**
+> one.
+
+---
+
+## Scene 5 — 2026, the drive home
+
+### 5a — the wank tank leaves the Shard · **still** · accepted
+
+Round 3, accepted 2026-08-26. **The first two rounds are the most useful failure in the film so
+far**, because the same prompt produced them both and the fault was entirely mine.
+
+**Round 1 came back a car advert** — mirror-wet empty street, glowing lights, perfect bokeh, not a
+person in sight. The prompt had asked for a car that was *"immaculate, recently valeted, water
+beading on the paint"*, *"glossy"*, on *"wet tarmac holding long smeared reflections"*. Every one
+of those is a detailing-advert brief. It also carried *"the gloss reads as obscene rather than
+aspirational"* — **a connotation is not an instruction**; the engine draws the gloss and drops the
+reading. And it stacked four light sources, against the one-key-light rule.
+
+**What fixed it was the world, not the adjectives:** dirt (road film up the doors, salt haze,
+spray behind the arches), people (an umbrella across the lens, a man waiting to cross), and street
+clutter (bins, cones, an open inspection cover, a patched repair). Full post-mortem:
+[`docs/google-flow/nano-banana-2.md` — advert vocabulary commissions an advert](../../google-flow/nano-banana-2.md).
+
+Written in **Nano Banana Pro's slot order** — Subject · Composition · Action · Location · Style —
+which promotes Composition above Action, and opens by naming the use case.
+
+```prompt
+A documentary press photograph for a newspaper feature about London property wealth. This is a news picture, not an advertisement.
+
+Subject: A blacked-out BMW X8 — the enormous flagship BMW SUV, tall and flat-fronted, with a huge vertical stacked double-kidney grille filling the nose and split headlights: thin horizontal LED daytime-running strips set high across the top of each front wing, with separate main headlamp blocks below them. Long slab flank, high beltline, shallow band of privacy glass, big dark alloys. It is a working car in a London winter — rain-flecked, a grey film of road dirt up the lower doors and sprayed back behind the wheel arches, salt haze across the tailgate. An ordinary British number plate, too dirty and too blurred by movement to read.
+
+Composition: 35mm lens at f/2.8, camera at standing height on the far pavement. The car sits low in the frame and off to the left, and the out-of-focus dark shoulder and umbrella of a pedestrian passing close to the lens cut into the right-hand third. The horizon is not quite level. The bottom third of the frame falls away into shadow.
+
+Action: The car is pulling out from the kerb and swinging past the camera, its front three-quarter coming round, headlights on and throwing forward across the wet road. Behind it a man in a soaked overcoat waits at the kerb to cross, looking the other way. Nobody is aware of the camera.
+
+Location: Tooley Street at the foot of the Shard, London, at night in the rain. The Shard rises out of the top of the frame directly behind the car — an enormous tapering glass spire, its facets going up into low cloud. Down one side, London stock brick and the blank arch of a railway viaduct; a bus stop, a soaked A-board folded against a wall, bin bags stacked at the kerb, traffic cones round an open inspection cover, worn white road markings and a patched repair in the tarmac.
+
+Style: Shot on 35mm Fujicolor Superia 1600, handheld, ISO 1600, natural grain visible through the shadows. The car's own headlights are the only warm light in the frame and the only source that matters — everything they do not reach falls to cold, murky near-black. Muted, cold and unglamorous, the way a press photographer's frame looks when they did not have time to set up. Slight motion blur on the wheels and on the passing pedestrian. No lens flare.
+
+Constraints: The number plate is unreadable, and no shop name, street sign, poster or lettering anywhere in the frame is legible.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+> **Two accepted deviations.** The bus-stop roundel came back legible against the constraint —
+> kept, because it says *London* instantly and it is a logo rather than lettering. And the frame
+> is more *composed* than a snatched press photo (the Shard centred in the gap, a level horizon);
+> kept, because the front three-quarter is what makes the car readable and breaking the geometry
+> risks losing it. The grit is 5b's job.
+
+**The clip took three rounds too, and both failures are now engine findings**
+([multi-waypoint duplication](../../google-flow/omni-flash.md) and
+[walking extras morphing on Frames](../../google-flow/omni-flash.md)). What worked: **one
+continuous motion with a duration and no destination, every person pinned still.**
+
+---
+
+### 5b — through the glass · **still** · accepted
+
+Accepted 2026-08-26, first round. **The most sensitive frame in the film** — these are the people
+the work is for ([`the-reader.md`](../../marketing/the-reader.md)), so the brief is never
+picturesque, never pitiable, never a study.
+
+Three clauses carry that, and they are worth reusing anywhere the film looks at someone poor:
+
+- **`Action:` opens with *"Nothing is happening."*** Nobody begs, performs, suffers visibly or
+  notices the car.
+- **The camera is a passenger, not an observer** — a slot cut out of a black window frame, focus
+  just past the glass, the doorway already sliding toward the edge.
+- **The `Style:` block ends by naming the failure**: *"Nothing here is beautiful, dramatic or
+  arranged; it looks the way something looks when you pass it at twenty miles an hour."* The
+  engine's instinct is to make this *moving*, and moving is exactly wrong.
+
+```prompt
+A documentary press photograph for a newspaper feature about rough sleeping in London. This is a news picture, taken from a moving car, and the photographer did not stop.
+
+Subject: Two people bedded down for the night in the recessed doorway of a closed shop — sleeping bags, flattened cardboard under them, a rucksack, a rolled blanket, a supermarket carrier bag tucked in at the side. Ordinary winter coats, ordinary people. Both are hooded or turned away with their heads down, and no face is legible.
+
+Composition: 50mm lens at f/2, camera inside a car at seated shoulder height, looking out through the side window. The doorway sits right of centre and is already sliding toward the edge of the frame. The dark inner edge of the window frame and the top of the door cut heavily into the left and the bottom, black and completely out of focus, so the view is a slot rather than an open frame. A few rain beads sit sharp on the outside of the glass with the street soft behind them. Focus falls just past the glass.
+
+Action: Nothing is happening. One of them is sitting up with their knees drawn to their chest, looking down the street at nothing. Neither of them looks at the car. The street slides past with mild horizontal motion blur.
+
+Location: A wet side street off Borough High Street, London, at night in the rain. A shuttered shopfront, a granite kerb, wet pavement, a chained bike stand, a burst bin bag, chewing gum trodden into the paving, a puddle standing in a broken kerbstone.
+
+Style: Shot on 35mm Fujicolor Superia 1600, ISO 1600, natural grain visible through the shadows. One hard sodium street lamp above and behind the doorway is the only light source — it catches the wet pavement at the doorway's mouth and leaves everything inside the recess in near-black. Muted, cold and unglamorous. Nothing here is beautiful, dramatic or arranged; it looks the way something looks when you pass it at twenty miles an hour.
+
+Constraints: No face is legible. No shop name, sign, poster or lettering anywhere is readable.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+> **Deviation, accepted.** The frame came back **warmer than specified** — the sodium lamp fills
+> the street rather than just catching the doorway's mouth, and one man's face reads in profile
+> against the constraint. Kept: the warmth is motivated by a real sodium lamp rather than invented,
+> and it is the only light in frame. Worth knowing against
+> [`style.md`](./style.md)'s warmth budget, which does not list this scene.
+
+---
+
+### 5c — Tarquin chuckles · **still** · accepted · 🔒 the pair's only plate
+
+Accepted 2026-08-26. Cast with **`@Tarquin`**.
+
+The anti-advert pass from 5a applied to an interior. **The brochure sentence went** — *"black
+leather, illuminated trim, faceted crystal-effect gear selector"* is a spec list, the interior
+version of *"immaculate and recently valeted"* — and a week of his life went in instead: a
+takeaway cup in the console holder, a folded parking ticket by the gear selector, a dry-cleaning
+tag, scuffing where his cuff rests, grit on the mat. Environmental imperfection is the counter
+that lives in the world rather than the capture, and it is what stops a cabin reading as a
+showroom.
+
+One light: the dashboard glow from below. Street light is explicitly bounded — *"too weak to
+light anything"* — so it cannot become a second key.
+
+```prompt
+A documentary press photograph of a man driving home alone at night. This is a news picture, not an advertisement.
+
+Subject: The man in the reference image, in a crisp pale shirt open at the collar with no tie, a heavy charcoal wool overcoat still on over it, seatbelt across his chest, both hands resting easy on the top of the steering wheel. An expensive understated steel watch and a plain heavy signet ring. This is a British right-hand-drive car and the camera faces rearward, so he appears on the LEFT of the frame. Seen from the chest up.
+
+Composition: 50mm lens at f/2, camera low on the dashboard against the windscreen, looking back at him, angled very slightly up so it catches the underside of the jaw and a lot of dark roof lining above his head. He sits left of centre with the empty passenger side dark and open to the right. The near edge of the dashboard and the top of the steering wheel cut into the bottom of the frame, out of focus. Focus sits on his eyes. The frame is very slightly tilted.
+
+Action: He has just amused himself. He is watching the road somewhere off to the side of the camera, not looking at it. His chin is up. His lips stay together but the corners are pulled back and held, his cheeks pushed up, his lower eyelids raised and the skin at the outer corners of his eyes creased — a closed-mouth chuckle he is having entirely on his own. No teeth. Pleased, unbothered, slightly cruel. Unposed, caught mid-moment, unaware of the camera.
+
+Location: Inside a blacked-out BMW X8, the enormous flagship BMW SUV, at night in London. A thick flat-bottomed steering wheel with the round BMW badge visible at the centre of its hub, and a wide curved digital display sweeping across the dashboard. It has been lived in: a takeaway coffee cup jammed in the console holder, a folded parking ticket wedged by the gear selector, a dry-cleaning tag, scuffing on the leather where his cuff rests, a scatter of grit on the mat. He is alone in the car. Through the side window behind him the wet night street slides past.
+
+Style: Shot on 35mm Fujicolor Superia 1600, ISO 1600, natural grain through the shadows. The dim cold glow of the dashboard display from below is the only light source in the car — it picks out his jaw and the front of his coat and leaves the rest of the cabin in near-black. Street light going past behind him reads as soft smeared streaks through the side glass, too weak to light anything. Cold, uneven and unflattering. Real skin with visible pores, a faint razor shadow along the jaw, uneven tone and a matte sheen rather than gloss. His face is naturally asymmetric.
+
+Constraints: He is alone in the car. His mouth stays closed. The round BMW badge on the steering wheel hub is visible. Nothing else in the frame carries readable text.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### 5d — the smile fades · **animated from 5c** · accepted
+
+> ## ⚠️ Canon changed here — 5d has no still of its own
+>
+> [`style.md`](./style.md) rules that *"faces do the emotional work in stillness — the Scene 5
+> smile-fade is a held shot, not an animation"*, and the
+> [chains table](./shot-list.md) had 5c and 5d as a matched pair of stills cut together.
+> **Jack overrode that on 2026-08-26 and animated the fade instead**, from the 5c plate. It
+> worked, and it is accepted. **There is no 5d still**, so the pair is now one plate and two
+> clips.
+>
+> **Run on Veo 3.1 Fast, not Omni Flash** — the second documented exception after
+> [2b's laugh](#2b--the-laugh--video--accepted), and for the same reason: a face that has to
+> *change* while the shot is not near-static is the boundary Omni loses faces at.
+
+**The craft that made it hold**, all of it inherited from 2b: the head is pinned to the headrest
+and the hands to the wheel, because every degree the head turns is facial detail the engine has to
+invent; appearance is **restated in text** as the anti-drift lever; the change is written as
+**muscles, never as an emotion** — corners, cheeks, lower eyelids, creases, chin; and the face is
+**given somewhere to stop** (*"then his face stays exactly like that for the rest of the shot"*),
+because a face that is changing keeps changing until it lands on something, and the something it
+lands on is always sadness.
+
+**5c's own clip** is a pure hold — he keeps the expression for all eight seconds, and the chuckle
+is put in the **audio** (*"one quiet amused breath out through his nose"*) rather than the face.
+Both clips keep the exterior unresolvable: *"only darkness and a few soft points of light drifting
+slowly past"*, after
+[a resolvable street duplicated the shopfronts](../../google-flow/omni-flash.md).
+
+---
+
+## Scene 6 — the Waitrose car park
+
+### 🖼 The plate — `camera/reference/waitrose-car-park-plate.png`
+
+**The car park is a fixed set from 2026-08-26 onward.** An existing high-aerial frame supplies
+the geography — the Waitrose fascia in green livery, the glazed barrel-roofed trolley shelter,
+the brick retail unit, the painted bays, the tent pitched **in a bay** — and every scene-6 shot
+is generated **anchored on it** rather than described from scratch.
+
+Two canon corrections came out of it, both cases of **the asset beating the spec**:
+
+- **The tent is blue and grey, not green.** [`characters/tent.md`](./characters/tent.md) said
+  green; the plate says blue. The tent has to be one object in every appearance and one of them
+  already existed, so the plate wins.
+- **✅ The Waitrose name is on the sign, readable.** This was an open call; the plate settles it.
+  The scene-10 **W-AI-trose** gag needs the fascia established here or the payoff has nothing to
+  land on. Recorded in [`style.md`](./style.md).
+
+⚠️ **The plate itself is closer to 8a than 6a** — it has the X8 already parked beside the tent,
+from a high angle over wet tarmac, which is 8a's description almost word for word. Bank it there.
+
+### 6a — first sight of the tent · **still** · accepted
+
+Accepted 2026-08-26, first round, **reference-anchored on the plate**. Note how short the prompt
+is: the reference carries the set, the light and the look for free, so the prompt does one job —
+*keep this place, move the camera here* — and a long re-description would only compete with it.
+
+**The car is never mentioned.** Anything named in a keep-list is an instruction to draw it, so
+"remove the car" would have kept it; describing the surrounding bays as empty removes it.
+
+```prompt
+Use the attached image as the reference for the location. Keep the same supermarket car park exactly as it is: the same Waitrose store front and green sign, the same glazed barrel-roofed trolley shelter, the same brick retail unit, the same painted parking bays and wet tarmac, the same blue and grey dome tent pitched in its bay, the same overcast winter light and the same muted colour and grain.
+
+Change only the camera: move it down to standing height at the far edge of the car park, about twenty-five metres from the tent, looking across the tarmac at it slightly from the side. 50mm lens at f/4. The tent sits small and low in the frame and right of centre, with a lot of empty wet tarmac between the camera and it. The roof of a parked car cuts into the foreground on the left, dark and completely out of focus. The horizon is not quite level.
+
+The parking bays immediately around the tent are empty. A woman pushes a trolley back to the shelter in the middle distance, turned away from the camera. Nothing else is happening and nobody is aware of the camera.
+
+A documentary press photograph on 35mm film — fine natural grain, muted cool-neutral colour, flat overcast daylight the only light source, even and shadowless, the sky pale grey and slightly overexposed. The tent is not made pitiable or picturesque; it is simply there, in the corner, where nobody has to look at it.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Its clip took three rounds and produced two rules**, both now in
+[`omni-flash.md`](../../google-flow/omni-flash.md):
+
+- ⚠️ **A hinged thing given wind settles shut and stays shut.** *"The loose fabric of the tent
+  stirs"* closed the door flap and left it closed. Fixed by **naming which fabric moves** (the
+  taut flysheet skin, the guy-ropes — the door excluded by not being included) and **pinning the
+  door open with a physical reason**: *"rolled and tied back inside the tent"*, which is a fact
+  the engine can hold rather than an instruction to obey.
+- ✅ **Rain on the lens is free realism.** *"Raindrops land on the front of the lens itself and
+  sit there as soft round out-of-focus blobs, bending the light behind them."* Near-field,
+  abstract, nothing to duplicate — and it turns the frame from a view into a photograph somebody
+  stood in the rain to take. **Worth reaching for on any wet exterior.**
+
+---
+
+### 6b — the three reactions · **still** · accepted
+
+Accepted 2026-08-26, first round, anchored on the plate.
+
+**The apologetic mime is carried by hands and shoulders, never a face** — palms up, shoulders
+around the ears, still walking. A gesture reads from behind; an expression does not. That is what
+lets the whole crowd stay turned away, which is what makes five people safe to generate at all.
+
+People are placed **by landmark, not by vector**: *"on the line people walk between the store
+entrance and the parked cars"* is a spot that exists in the reference and can be checked against
+it. *"Further down the car park"* is a direction, and unclaimed space gets treated as free.
+
+The one constraint that matters is `Nobody stops walking.` The moment someone stops, the scene
+becomes about kindness and the beat dies.
+
+```prompt
+Use the attached image as the reference for the location. Keep the same supermarket car park exactly as it is: the same Waitrose store front and green sign, the same glazed barrel-roofed trolley shelter, the same brick retail unit, the same painted parking bays and wet tarmac, the same blue and grey dome tent pitched in its bay, the same overcast winter light and the same muted colour and grain.
+
+Change the camera: move it down to standing height on the tarmac about eight metres from the tent, on the line people walk between the store entrance and the parked cars, looking along that line so it runs away from the camera diagonally. 35mm lens at f/2.8. The tent sits low and small at the right-hand edge of the frame, easy to miss. The out-of-focus shoulder and arm of a shopper passing close to the lens cut into the foreground on the left. The horizon is not quite level.
+
+Five or six shoppers are walking along that line between the store entrance and the parked cars, carrying bags-for-life and pushing trolleys, in ordinary winter coats — roughly half of them women, a range of ages and builds, and the group visibly mixed across Black, South Asian, East Asian and white. Every one of them is seen from behind or in lost profile and no face is legible anywhere in the frame.
+
+Three things are happening at once and none of them is stopping. The shopper walking nearest to the tent keeps his head turned away from it and his eyes on the middle distance. A woman a few steps behind him has half-turned toward the tent and lifted both palms in a small apologetic shrug, her shoulders up around her ears, still walking — a no-change mime made without breaking stride. Everyone else streams past without registering it at all. Nobody is aware of the camera.
+
+A documentary press photograph on 35mm film — fine natural grain, muted cool-neutral colour, flat overcast daylight the only light source, even and shadowless, the sky pale grey and slightly overexposed. Mild motion blur on the nearest walkers. Plain and unglamorous, the way an ordinary press photograph of a car park actually looks.
+
+Constraints: No face is legible. Nobody stops walking.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Its clip is the film's crowd test — five people in relative motion, and it held.** What carried
+it: **keep the formation** (*"same direction, same pace, holding the same spacing, nobody
+overtakes"*), which is the documented counter to figures interpenetrating; **every face already
+out of the shot**, so there is no likeness to lose; and the mime given **one motion and a settle**
+— hands drop, then she keeps walking — because a held shrug looks wrong and a change with nowhere
+to stop keeps going.
+
+---
+
 ---
 
 ## Scene 2 — 2008, meet Bob

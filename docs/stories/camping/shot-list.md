@@ -12,10 +12,11 @@
 > **Status 2026-08-26.** **Scenes 1, 2 and 3 are shot, and so is 4a.** 1a–1c (skyline,
 > trading floor, young Tarquin) were made in an earlier session; 2a, 2b
 > and 3b were made on 2026-08-25, stills and clips both. 3a is not a generation — it is a cut
-> to black. **4a — the skyline swap — is done.** **4b is shot but not accepted**: the first
-> version reads sad rather than king-of-the-world, and is being re-run casting `@Tarquin` with
-> only clothes and expression described (naming his face drifts him older than he should be).
-> After 4b the next unshot scene is **5**.
+> to black. **4a — the skyline swap — is done.** **4b is accepted** at round 2 —
+> round 1 read sad, and was fixed by casting `@Tarquin`, dropping the face description and
+> naming the failure in a `Constraints:` block. **4c the boardroom is dropped.** **Scene 5 is shot** — 5a, 5b, 5c and 5d,
+> stills and clips. **6a and 6b are shot.** Next is the
+> **6c** lock. The car park is now a fixed set — see the plate in `prompts.md`.
 >
 > ⚠️ **Prompts live in [`prompts.md`](./prompts.md), and the ledger is now stills-only** —
 > video prompts are self-explanatory and are not recorded going forward *(ruled 2026-08-26)*.
@@ -29,8 +30,14 @@
 - [x] **4a — the skyline swap.** Done 2026-08-26. ⚠️ Its prompt is not recorded — paste it in.
 - [x] **Record 1a's prompt** — recovered 2026-08-26, with its framing reference image.
 - [x] **Record 1b's prompt** — recovered 2026-08-26.
-- [ ] **4b — Tarquin at the top.** Re-run for the king-of-the-world read; cast `@Tarquin` and
-      describe clothes and expression only, never his face.
+- [x] **4b — Tarquin at the top.** Accepted 2026-08-26, round 2.
+- [x] **5a — the wank tank leaves the Shard.** Still and clip accepted 2026-08-26, three rounds each.
+- [x] **5b — through the glass.** Still and clip accepted 2026-08-26.
+- [x] **5c/5d.** Accepted 2026-08-26. ⚠️ **5d was animated from the 5c plate, not shot as a
+      second still** — overriding `style.md`. One plate, two clips; 5d ran on Veo 3.1 Fast.
+- [x] **6a — first sight of the tent.** Still and clip accepted 2026-08-26, anchored on the plate.
+- [x] **6b — the three reactions.** Still and clip accepted 2026-08-26.
+- [ ] **6c — the POV lock.** 🔒 The most reused framing in the film; 10a inherits it exactly.
 - [x] **Record 1c and the 2a still** — recovered 2026-08-26.
 - [x] **Record 4a's prompt** — recorded 2026-08-26. ⚠️ It is byte-identical to 1a's; the wording of the *swap* itself is still not written down.
 - [ ] **Record the Flow Characters** that scene 1 must have used — `@Tarquin-2008` has no id
@@ -63,7 +70,7 @@ men before the plot starts, so the rest of the film can dismantle it.*
 
 - **4a The skyline again** — **1a with the NatWest Tower replaced by the Shard**, year reads **"2026"**. An *edit of the plate*, anchored on the Shard reference. The skyline is the timestamp.
 - **4b Inside, top of the Shard** — Tarquin older, king of the world. Social housing bought and left empty; asset inflation beats rent.
-- **4c** *(texture, optional)* — a boardroom *"let's circle back…"*.
+- ~~**4c** *(texture, optional)* — a boardroom *"let's circle back…"*.~~ **Dropped 2026-08-26.** 4a and 4b already say *he won*; the boardroom says *corporate meetings are vacuous*, which is a different and smaller target and the one part of scene 4 not about the film's argument.
 
 ## The crack in the armour
 
@@ -118,12 +125,20 @@ Three places where a later shot is *made from* an earlier one. Break the chain a
 | --- | --- | --- |
 | **1a** 2008 skyline | **4a** 2026 skyline | Edit the tower out, the Shard in. One local change on an unchanged frame. Never a fresh generation. |
 | **6c** Bob's tent POV | **10a** Tarquin's wake-up | Identical framing — door-flap letterbox, low horizon. Only the world outside changes. |
+| ~~**5c** Tarquin chuckling → **5d** the smile fades~~ | — | **Chain dissolved 2026-08-26.** It was to be two stills and a cut, per [`style.md`](./style.md). Jack animated the fade from the 5c plate instead and it held, so **5d has no still** and there is nothing to match. Run on Veo 3.1 Fast — a changing face on a non-static shot is where Omni loses it. |
 | **1b** the planted paper *(inside the trading floor)* | **11b → 12c** hand-off, then kindling | **The callback is the newspaper as an image, not the same physical object** *(ruled 2026-08-25)* — the plant is 2008 and 11c's paper has to date to 2031, so one object could never do both. Plant it unremarked; a man behind a paper is the whole rhyme. **The plant lives inside 1b** *(ruled 2026-08-26)* — it was never worth its own shot. |
 
 ## Standing rules for every shot
 
 - **The narrator carries all inner states** — thoughts, freak-outs, U-turns — over **held** images. We never animate a character emoting; that is where the AI-slop uncanny valley lives.
-- **Audio is a parallel universe** — recorded narration plus sound-effect libraries. Never model-generated audio.
+- **Audio is a parallel universe — and the one hard rule is NO DIALOGUE** *(amended 2026-08-26)*.
+  Every Flow video prompt ends `No dialogue, no music.` **Generated sound effects are wanted**:
+  rain, tyres, wind, an engine, a trolley's wheels on wet tarmac, a train behind a viaduct. They
+  make a clip read as captured rather than rendered and they sit under narration without fighting
+  it. **Generated speech does not** — Jack records the narration afterwards and anything spoken
+  collides with it and wastes the clip. Non-verbal human sound tied to an on-screen action is
+  fine (2b's laugh, 5c's amused breath) as long as it carries no words. *(This supersedes the
+  original rule, "never model-generated audio", which barred the effects too.)*
 - **Animation is spent sparingly** — the blink (9c→10a), the fire (10b), the embers (12d). That is the budget.
 - **Faces in the background will not survive a generation.** The engine re-renders any person in a reference rather than continuing them. Where a face doesn't need to be legible, hide it — the newspaper reader planted in 1b is the model for this.
 - **Warmth is an argument, not decoration** — only the gold headlights (5a), the ceremony fire (9a), and the fire in the ruins (10b–12d). Everywhere else: muted, cool, unforgiving.

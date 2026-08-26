@@ -17,9 +17,14 @@ character: **the same tent in every appearance.**
 
 ## Visual (house style: hyper-realistic documentary photography)
 
-- A cheap two-person dome tent, originally green and grey, now faded and
-  algae-stained, guy-ropes frayed, one pole bowed so a corner sags. A patch of
-  duct tape over a tear; the flysheet beaded with rain or frost.
+- **⚠️ Corrected 2026-08-26 from the plate: the tent is BLUE and grey, not green.** The
+  existing Waitrose car-park plate
+  ([`camera/reference/waitrose-car-park-plate.png`](../camera/reference/waitrose-car-park-plate.png))
+  is the authority — a cheap two-person dome tent in faded **blue and grey**, pitched in a
+  parking bay. The spec below said green; **the asset wins**, because this tent has to be the
+  same object in every appearance and one of them already exists. Match the plate, not the words.
+- A cheap two-person dome tent, faded and weathered, guy-ropes frayed, one pole bowed so a
+  corner sags. A patch of duct tape over a tear; the flysheet beaded with rain or frost.
 - Pitched in the corner of a Waitrose car park against a low wall and a trolley
   bay — class-coded location, recognisable at a glance.
 - **Interior-POV variant (lock the framing):** from inside, the world seen

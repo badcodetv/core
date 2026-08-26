@@ -13,8 +13,12 @@ the skill, never as an override.
 - **The City, 2026** (Scene 4) — the **same skyline framing** now led by the
   Shard: cold glass, flat fluorescent + grey daylight, self-satisfied, no
   warmth. The two city shots are a matched pair — the skyline is the timestamp.
-- **The Waitrose car park** (Scenes 6, 8; ruined in 10–12) — wet tarmac, low
-  wall, trolley bay, the tent in the corner. The same place in its before
+- **The Waitrose car park** (Scenes 6, 8; ruined in 10–12) — wet tarmac, painted bays, a
+  glazed barrel-roofed trolley shelter, the tent pitched **in a bay**, and the **Waitrose
+  fascia in its green livery, readable**. Plate:
+  [`camera/reference/waitrose-car-park-plate.png`](./camera/reference/waitrose-car-park-plate.png).
+  **✅ Ruled 2026-08-26: the real name is on the sign** — the scene-10 `W-AI-trose` gag needs it
+  established here, and a blurred fascia would kill the payoff. The same place in its before
   (ordinary, overcast) and after (frost, tents, wreckage, a burning fire).
   Class-coded and recognisable. *(After-state Easter eggs: the W-AI-trose sign
   with only the A and I lit; the clamped dead wank tank.)*
