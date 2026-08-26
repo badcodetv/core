@@ -13,13 +13,23 @@ the skill, never as an override.
 - **The City, 2026** (Scene 4) — the **same skyline framing** now led by the
   Shard: cold glass, flat fluorescent + grey daylight, self-satisfied, no
   warmth. The two city shots are a matched pair — the skyline is the timestamp.
-- **The Waitrose car park** (Scenes 6, 8; ruined in 10–12) — wet tarmac, low
-  wall, trolley bay, the tent in the corner. The same place in its before
+- **The Waitrose car park** (Scenes 6, 8; ruined in 10–12) — wet tarmac, painted bays, a
+  glazed barrel-roofed trolley shelter, the tent pitched **in a bay**, and the **Waitrose
+  fascia in its green livery, readable**. Plate:
+  [`camera/reference/waitrose-car-park-plate.png`](./camera/reference/waitrose-car-park-plate.png).
+  **✅ Ruled 2026-08-26: the real name is on the sign** — the scene-10 `W-AI-trose` gag needs it
+  established here, and a blurred fascia would kill the payoff. The same place in its before
   (ordinary, overcast) and after (frost, tents, wreckage, a burning fire).
   Class-coded and recognisable. *(After-state Easter eggs: the W-AI-trose sign
   with only the A and I lit; the clamped dead wank tank.)*
 - **The consulting room** (Scene 7) — tasteful, warm-neutral, money-quiet; the
-  comedy plays against its calm.
+  comedy plays against its calm. **The therapist is a man** *(ruled 2026-08-26 from the accepted
+  7a frame)* — grey-haired, in a soft beige jacket over a blue shirt, seated in the near
+  foreground with his back to camera. Canon never specified a gender; the frame did.
+  **Amended 2026-08-26: his face is held once, in 7b, and nowhere else.** The rule was that he is
+  only ever seen from behind or in lost profile so no second face has to be held — but the verdict
+  is funnier delivered by a face, and the continuity cost is nil because he never appears again:
+  one shot, one reference image. Everywhere else he stays a back and a shoulder.
 - **The Welsh retreat clearing** (Scene 9) — executive dome tents by a river,
   fog, a small ceremony fire; damp, late-70s film-negative texture on
   exteriors.

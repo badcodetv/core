@@ -326,6 +326,48 @@ worth adding per-scene, because they live in the *world*, not the capture:
 > **environmental imperfection · mid-action instead of pose · off-centre and not-quite-level
 > framing · a foreground occluder.**
 
+### ⚠️ Advert vocabulary commissions an advert `[observed 2026-08-26]`
+
+**Camping 5a, round 2.** The prompt asked for a car that was *"immaculate, recently valeted,
+water beading on the paint"*, *"glossy"*, on *"wet tarmac holding long smeared reflections"*,
+turning its lit front three-quarter toward the lens. What came back was a flawless automotive
+commercial — mirror-wet street, empty road, glowing DRLs, perfect bokeh, not a human being in
+sight. **Every one of those words is a detailing-advert brief**, and the engine executed it
+faithfully.
+
+The prompt also carried the line *"the gloss reads as obscene rather than aspirational."* **A
+statement of how an image should be *read* is not an instruction a model can act on** — it draws
+gloss and drops the reading. Intent lands on Nano Banana **Pro** only where it is
+[a structural instruction](#pro-is-a-different-animal-it-plans-before-it-draws) ("this panel must
+rhyme with the previous one"), never as a request for a connotation.
+
+**The counters, in the order that mattered:**
+
+| The advert tell | What to write instead |
+| --- | --- |
+| glossy, immaculate, valeted, beading water | **A working vehicle**: rain-flecked, road film up the lower doors, salt haze, dirt behind the wheel arches |
+| wet tarmac full of long mirror reflections | Wet road, but **broken up** — grit, a drain, worn markings, a patched repair |
+| an empty street at night | **Put people in it.** A sterile environment is the named slop tell; one passer-by not looking at anything fixes it |
+| hero front three-quarter, centred, lit | **Off-centre, not quite level, partly occluded** by something crossing the foreground |
+| a connotation you want the viewer to feel | Nothing. Say what is *in* the frame and let the frame do it |
+
+**And the lighting rule was broken in the same prompt** — it stacked cold sodium lamps, blue-white
+tower glass, gold headlights flaring at the lens and warm wash on a wall. That is four ideas, and
+[the rule is one key light with a stated direction plus its consequences](#5-anti-slop-restated-from-the-photorealism-pass).
+Four sources is how a frame gets *lit* rather than *photographed*.
+
+**Web pass, same date, one addition worth keeping:** the word **`photorealistic` is now noise** —
+it appears in so much training data beside CGI and digital painting that it no longer
+discriminates, and it averages toward the waxy look it is meant to prevent `[community]`. The
+working substitute is the stack we already use: **named camera body, named stock, a stated ISO,
+one positioned light, surface imperfection, and asymmetry.** Our house preamble says
+*"hyper-realistic documentary photograph"* rather than *"photorealistic"*, which is the right
+side of this line already — do not drift back.
+
+Sources: [Why "photorealistic" doesn't work in AI prompts](https://roo.beehiiv.com/p/why-photorealistic-doesn-t-work-in-ai-prompts-and-what-to-write-instead) `[community]` ·
+[Nano Banana Pro prompting tips — blog.google](https://blog.google/products-and-platforms/products/gemini/prompting-tips-nano-banana-pro/) `[vendor]` ·
+[Nano Banana 2 — blog.google](https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/) `[vendor]`
+
 ### The root cause, and the one habit to keep
 
 > *"Vague prompts produce vague images, and most people are working from vague prompts —

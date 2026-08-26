@@ -931,6 +931,121 @@ backs of heads, silhouettes, and a screen filling the frame have no likeness to 
 same removal rule that fixed two-figure interpenetration: when a thing cannot be prompted stable,
 stop drawing it.
 
+### ⚠️ A hinged thing given wind will settle shut and stay shut `[observed 2026-08-26]`
+
+**Camping 6a.** The clip asked for *"the loose fabric of the tent stirs a little in the wind."*
+The **door flap swung closed and stayed closed** — killing the open doorway the shot needed.
+
+**Closed is a stable state, and a general instruction to move finds it.** This is the same
+mechanic as [giving a face somewhere to stop](#-ask-it-to-continue-a-state-never-to-reach-one-observed),
+read from the other end: a thing that *can* settle will settle, and once settled it has no reason
+to move again. Doors, flaps, gates, curtains, lids, anything hinged or hanging.
+
+**Two fixes, both cheap:**
+
+1. **Name which fabric moves.** *"Loose fabric"* is an invitation to animate the one part that
+   matters. *"The taut skin of the flysheet ripples and the guy-ropes tremble"* excludes the door
+   by simply not including it.
+2. **Pin the openable thing open, positively, with a duration** — and give the reason, because a
+   secured door is a physical fact the engine can hold: *"the door flap is rolled and tied back at
+   the side and stays open for the whole shot."*
+
+**Do not write *"the door does not close"*** — that names closing into a model that
+[cannot subtract it](#-negatives-do-not-work-and-they-actively-backfire).
+
+### 🔴 The world outside a moving car duplicates — make it unresolvable `[observed 2026-08-26]`
+
+**Camping 5c.** A near-static interior: the man holds his expression, the car drives, and *"beyond
+the windows the night city slides steadily past as soft smeared streaks of cold light."* His face
+held perfectly. **The background produced duplicate shopfronts** — the same parade of shops
+arriving more than once.
+
+**Third sighting of one mechanism.** A subject travelling past a rank of near-identical objects
+arrives at faces the start frame never showed, and nothing holds the model to inventing the same
+one twice — [GPOM's server cabinets](../flow/physics-and-motion.md) under a dolly,
+[5a's car](#-a-multi-waypoint-trajectory-duplicates-the-subject-observed-2026-08-26) under its own
+trajectory, and now **a street seen from a moving vehicle**, which is the same trap wearing a
+window. Shopfronts, railings, parked cars, lamp columns, terraced houses: **anything a road is
+lined with is a repeating rank.**
+
+**The documented fix — take the camera out — is not available** when the whole premise is that the
+car is moving. The one that works instead is to **remove the resolvable detail rather than the
+motion**:
+
+> Beyond the windows there is only darkness and a few soft points of light drifting past, too dark
+> and too far out of focus to make out.
+
+**Nothing resolvable cannot duplicate.** State it positively — describe the darkness and the light
+points as what is *there* — because *"no shopfronts"* names shopfronts into a model that
+[cannot subtract them](#-negatives-do-not-work-and-they-actively-backfire).
+
+Second lever, cheap: **slow the implied travel.** *"Drifts slowly past"* generates less new world
+per second than *"slides steadily past"*, and on an interior shot nobody can tell the difference.
+
+### ⚠️ On **Frames**, a walking extra morphs — stillness is the only thing that holds them `[observed 2026-08-26]`
+
+**Camping 5a, round 2.** The trajectory was cut back to nothing — the car idles, the rain falls,
+one pedestrian *"keeps walking slowly across the foreground."* The car held. **The people morphed
+and changed anyway.**
+
+This is worth recording because it looks like it contradicts the tab rule.
+[Frames continues the actual pixels](#-the-tab-rule--amended-2026-08-18-ingredients-holds-identity-frames-holds-staging)
+and is the mode that holds a face — but that only survives while the person is **not being asked
+to move**. A person instructed to walk has to be redrawn in every position the plate never showed,
+and Frames has no more claim on the second position than Ingredients does. **Frames holds pixels,
+not people. The moment a person moves, they are being generated.**
+
+Consistent with the two earlier sightings that produced BadCode's
+[demote-it-to-sound rule](#slop-counters-specific-to-motion-community) — a background walker
+vanishing mid-stride (Karen §2j.5v) and reflected traffic coming back *"very strange"* (§2h.6v).
+
+**The order to try things in:**
+
+1. **Hold them still, stated positively** — *"the man with the umbrella stays where he is"*. A
+   person who does not move is pixels being continued, and this is free.
+2. **Demote them to sound** — footsteps on wet pavement carry a populated street perfectly well,
+   and a sound never grows a second leg.
+3. **Crop the plate** so they are out of frame. The removal rule: when a thing cannot be prompted
+   stable, stop drawing it.
+
+**Never**: describe them more carefully. A second attempt at the same motion is the expensive way
+to learn the same thing.
+
+### 🔴 A multi-waypoint trajectory duplicates the subject `[observed 2026-08-26]`
+
+**Camping 5a.** A locked-off plate of a car at a junction was animated with this trajectory:
+*pulls forward* → *swings away to the right* → *drives off down the road* → *shrinks* → *until it
+is out of the frame*. **The car came back duplicated, several copies going in different
+directions.**
+
+**Five waypoints is five positions the model has to invent, and it has no obligation to invent
+the same car twice.** This is the same mechanism as
+[the GPOM server cabinets](../flow/physics-and-motion.md) regenerating under a camera move — a
+subject arriving somewhere the start frame never showed is a subject being drawn again. There the
+camera travelled; here the subject did. **The failure is not "vehicles are hard": it is that a
+path with intermediate states is a sequence of fresh generations wearing one noun.**
+
+It also broke three rules already in this file at once, which is what made it certain rather than
+unlucky:
+
+| Rule | What 5a did |
+| --- | --- |
+| [Ask it to *continue* a state, never to *reach* one](#-ask-it-to-continue-a-state-never-to-reach-one-observed) | *"until it is out of the frame"* is a destination, and every waypoint before it is another one |
+| [Three to four sentences; the lever is subtraction](#length-three-to-four-sentences-and-the-lever-is-subtraction) | Seven distinct motions — car, wheels, spray, headlights sweeping, wipers twice, pedestrian crossing *and clearing*, a man rocking on his feet |
+| [The change/adherence trade is a straight line](#-the-changeadherence-trade-is-a-straight-line) | The biggest possible ask — the subject leaves the picture — so it delivered the exit and abandoned the frame |
+
+**The rule to keep: one subject, one continuous motion, no intermediate states, and never a
+destination.** *"The car drives steadily away down the road"* is one instruction. *"The car pulls
+out, turns, straightens and leaves"* is four, and the model will show you all four.
+
+**⚠️ And an occluder must occlude.** The umbrella in the foreground was put there to cover the
+turn — the [confirmed fix](#what-we-actually-confirmed-2026-08-14) for hard motion — but the
+prompt then asked it to *clear the frame*, which is another motion with its own destination. **An
+occluder that is instructed to leave is not an occluder; it is a second subject.**
+
+**The cheapest fix for a departure is to not shoot the departure.** A car that simply sits and
+idles is zero change from the plate, and the cut does the leaving for free.
+
 ### Slop counters specific to motion `[community]`
 
 Additions to the table in the previous section:
