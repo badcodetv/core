@@ -39,7 +39,7 @@ const WORKSPACE = process.env.SUNO_WORKSPACE ?? 'camping-duet'
 
 /** 🔴 BUMP EVERY ROUND. `create()` waits for two takes matching the title, so a reused title
  *  matches the PREVIOUS round's takes and reports a success it never generated. */
-const SET = ' (g1)'
+const SET = ' (g2)'
 const STYLE_INFLUENCE = 75
 const WEIRDNESS = 45
 const AUDIO_INFLUENCE = 25

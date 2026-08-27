@@ -213,7 +213,7 @@ looks at any code. Check **Help ▸ About**.
 | Premiere | Status |
 | --- | --- |
 | 26.3.2 | ✅ everything in this repo was built and proven here |
-| 25.6.6 | 🟡 **loads** — floor lowered to 25.0.0 on 2026-08-27 for exactly this. Not yet exercised beyond loading |
+| 25.6.6 | 🟢 **loads and connects** — confirmed on Jack's machine 2026-08-27 once the floor came down to 25.0.0. Editing tools not yet exercised there |
 | below 25.0 | ⬜ untested, and the floor will refuse it |
 
 ⚠️ **The floor is a declaration, not a tested boundary.** 25.0.0 says "we have no evidence it

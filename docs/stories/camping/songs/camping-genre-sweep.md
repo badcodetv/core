@@ -75,240 +75,266 @@ The runner **throws offline** if any lane is missing any of its three fences.
 
 ---
 
+## 🔴 g2 — the lanes were 78% identical, and that was the real bug
+
+Kai, 2026-08-27, looking at the take list: *"it looks like every single style prompt is exactly the
+same."* He was right, and the measurement is worse than the screen implied. Between any two g1
+lanes:
+
+| Box | Identical | Unique |
+|---|---|---|
+| Style | 644 of 829 chars | **22%** |
+| My Taste | 936 of 1109 chars | **16%** |
+| Exclude | 731 of 731 chars | **0%** |
+| Lyrics | all of it | 0% (correct — it is the same song) |
+
+**And the unique 22% sat at character 528**, behind a shared HEAD, so Suno's take list — which
+shows the opening of the Style box — displayed the *same first 200 characters* for all ten.
+
+🔴 **This was a design error, not a display artefact.** g1 held a common HEAD and TAIL constant on
+purpose, to isolate genre as the single variable. That is good experimental method and it is the
+wrong instrument for this job: Kai asked to **lean all the way into each style**, and Jack's
+complaint that everything sounds samey is the predictable consequence of ten prompts that agree on
+78% of their words — including every production instruction (`mixed like a dub soundsystem`,
+`dry, raw and close-mic'd`, `chopped amen breakbeats`), which is precisely the vocabulary that
+decides what a record *sounds* like.
+
+**What g2 changes.** Each lane is now written **from scratch in its own idiom**. Only three things
+are shared, because only three things are actually the song:
+
+1. **The casting** — two British men, spoken, barked, never sung.
+2. **174 BPM drum and bass as the foundation** — Jack's brief was genres *over* the drum and bass.
+3. **The words.**
+
+Everything else is the genre's own language. Neurofunk is `surgical, on the grid, wide precise
+stereo`; jungle is `cut raw to cheap tape — hiss, saturation, clipping`; boom-bap is `mixed almost
+mono, sampler-crushed`; metal is `quad-tracked, mids scooped`. **The genre clause now comes first**,
+so the take list shows what each one is.
+
+The exclude spine shrank from sixty terms to **eleven** — only what is true in every genre — and
+the rest is per-lane. A shared ban list is itself a flattening force: `guitar` banned across the
+board is a decision about *sound*, and it was being applied to lanes built on guitars.
+
 ## Lanes
 
 ### Lane `neurofunk` — Neurofunk
 
-*style 829 · exclude 731 · taste 1109*
+*style 618 · exclude 281 · taste 673*
 
 ```style
-Dark drum and bass at 174 BPM, minor key, full tempo and relentless — no half-time anywhere, no breakdown that drops the pace. Chopped amen breakbeats rolling hard the whole way, sub bass underneath. British spoken-word vocal on top, barked and metrical, locked to the beat and rising in force as it goes — spat, not crooned, never sung, no chorus, no hook. Verse one, a weathered British man in his fifties: low, gravelly, smoke-worn. Verse two, a well-spoken British man: higher, clean, plummy BBC English, from a wide room. A growling, morphing reese bass is the lead instrument — metallic, technical and machine-precise, edits snapping tight, ratcheting percussion, cold sci-fi menace, and no melody anywhere. Dry, raw and close-mic'd — no polish, no radio sheen. Bleak, hostile and aggressive from the first bar to the last.
+Neurofunk at 174 BPM, minor key. A growling reese bass morphs bar to bar and is the only melodic thing in the record. Drums surgical and snapping: tight cracking snare, clipped hats, every edit exactly on the grid. Cold metallic sound design, sci-fi menace, filtered risers into each drop, deep clean sub, wide precise stereo. Loud, controlled and machine-perfect. Bleak and clinical. Two British men trade the verses, spoken and locked hard to the beat — one weathered, gravelly and smoke-worn in his fifties, the other higher, clean and plummy BBC English. Barked and rising in force, never sung, no chorus, no hook.
 ```
 
 ```taste
-Vocals: British spoken-word — barked, metrical, locked to the beat at full 174 and rising in force, spat rather than crooned, never sung and never rapped over a melody. Two white British men in their late forties and fifties, and they must stay two different men. One is low, gravelly and smoke-worn, into a cheap close mic: a working-men's-club voice. The other is higher, clean and plummy BBC English, unhurried, from a wide room.
+Vocals: two white British men in their late forties and fifties, and they must stay two different men — one low, gravelly and smoke-worn into a cheap close mic, the other higher, clean and plummy BBC English. Spoken and barked, locked to the beat, rising in force. Never sung, never a chorus.
 
-Music: dark drum and bass at 174 BPM, minor key, full tempo and relentless. No half-time, no breakdown that kills the pace. Chopped amen breakbeats rolling hard, sub bass first and loudest. No chorus anywhere on this record. The lead instrument is a growling, morphing reese bass — metallic, technical, machine-precise, with ratcheting percussion and cold sci-fi menace. No melody instrument at all.
+Music: neurofunk at 174 BPM. A morphing growling reese bass is the lead and the only melody. Surgical snapping drums, clipped hats, everything exactly on the grid. Cold metallic sound design, sci-fi menace, deep clean sub, wide precise stereo.
 
-Register: bleak, dystopian, angry and completely serious. Dry, raw and close-mic'd — no polish, no radio sheen. Machine-cold, hostile and aggressive. Never anthemic, never jaunty, never feel-good.
+Register: clinical, bleak, machine-perfect and menacing.
 
 Subject: British class, money, work, and the people the economy left behind.
 ```
 
 ```exclude
-sung verses, sung chorus, vocal hooks, clean sung melody, crooning, autotune, harmonies, nu metal, rap rock, pop punk, post-grunge, emo, radio rock, arena rock, anthemic, big chorus, gang vocals, polished production, grime MC, UK drill, road rap, trap, young MC, American accent, ragga MC, Jamaican accent, choir, orchestral strings, violins, piano, marching band, oompah, dixieland, reggae, ska, 2 tone, offbeat guitar, skank rhythm, music hall, pantomime, liquid dnb, jump up, feel good, festival, happy hardcore, bright synths, euphoric, pop, jaunty, bouncy, comedic, parody, uplifting, major key, half-time, halftime, slow tempo, tempo change, vamp, outro jam, guitar, acoustic guitar, power chords, guitar solo, live rock band
+sung chorus, vocal hooks, clean sung melody, autotune, American accent, half-time, slow tempo, comedic, parody, uplifting, major key, guitar, live rock band, acoustic instruments, jungle breaks, lo-fi, tape hiss, warm analogue, jazzy chords, liquid dnb, jump up, euphoric, festival
 ```
 
 ### Lane `jungle` — Jungle
 
-*style 830 · exclude 742 · taste 1092*
+*style 585 · exclude 292 · taste 668*
 
 ```style
-Dark drum and bass at 174 BPM, minor key, full tempo and relentless — no half-time anywhere, no breakdown that drops the pace. Chopped amen breakbeats rolling hard the whole way, sub bass underneath. British spoken-word vocal on top, barked and metrical, locked to the beat and rising in force as it goes — spat, not crooned, never sung, no chorus, no hook. Verse one, a weathered British man in his fifties: low, gravelly, smoke-worn. Verse two, a well-spoken British man: higher, clean, plummy BBC English, from a wide room. 1994 jungle: amen breaks chopped fine and ragged, timestretched hits flying across the bar, a huge round sub underneath, rowdy and raw off cheap tape, pirate-radio energy, no MC toasting. Dry, raw and close-mic'd — no polish, no radio sheen. Bleak, hostile and aggressive from the first bar to the last.
+1994 jungle at 174 BPM. Amen breaks chopped fine and ragged, timestretched hits flung across the bar, ride cymbal chattering, fills that fall over themselves. A huge round sub bass under everything. Cut raw to cheap tape — hiss, saturation, clipping, no polish anywhere. Rowdy pirate-radio energy, dub sirens and air-horn stabs. Dark, alive and rough. Two British men trade the verses, spoken and locked hard to the beat — one weathered, gravelly and smoke-worn in his fifties, the other higher, clean and plummy BBC English. Barked and rising in force, never sung, no chorus, no hook.
 ```
 
 ```taste
-Vocals: British spoken-word — barked, metrical, locked to the beat at full 174 and rising in force, spat rather than crooned, never sung and never rapped over a melody. Two white British men in their late forties and fifties, and they must stay two different men. One is low, gravelly and smoke-worn, into a cheap close mic: a working-men's-club voice. The other is higher, clean and plummy BBC English, unhurried, from a wide room.
+Vocals: two white British men in their late forties and fifties, and they must stay two different men — one low, gravelly and smoke-worn into a cheap close mic, the other higher, clean and plummy BBC English. Spoken and barked, locked to the beat, rising in force. Never sung, never a chorus.
 
-Music: dark drum and bass at 174 BPM, minor key, full tempo and relentless. No half-time, no breakdown that kills the pace. Chopped amen breakbeats rolling hard, sub bass first and loudest. No chorus anywhere on this record. 1994 jungle: amen breaks chopped fine and ragged, timestretched hits, a huge round sub, rowdy and raw off cheap tape, pirate-radio energy and no MC toasting.
+Music: 1994 jungle at 174 BPM. Amen breaks chopped fine and ragged, timestretched hits, chattering ride, a huge round sub. Cut raw to cheap tape — hiss, saturation, clipping. Dub sirens and air-horn stabs, pirate-radio energy.
 
-Register: bleak, dystopian, angry and completely serious. Dry, raw and close-mic'd — no polish, no radio sheen. Machine-cold, hostile and aggressive. Never anthemic, never jaunty, never feel-good.
+Register: rowdy, dark, rough and alive. Never clean, never polished.
 
 Subject: British class, money, work, and the people the economy left behind.
 ```
 
 ```exclude
-sung verses, sung chorus, vocal hooks, clean sung melody, crooning, autotune, harmonies, nu metal, rap rock, pop punk, post-grunge, emo, radio rock, arena rock, anthemic, big chorus, gang vocals, polished production, grime MC, UK drill, road rap, trap, young MC, American accent, ragga MC, Jamaican accent, choir, orchestral strings, violins, piano, marching band, oompah, dixieland, reggae, ska, 2 tone, offbeat guitar, skank rhythm, music hall, pantomime, liquid dnb, jump up, feel good, festival, happy hardcore, bright synths, euphoric, pop, jaunty, bouncy, comedic, parody, uplifting, major key, half-time, halftime, slow tempo, tempo change, vamp, outro jam, guitar, acoustic guitar, power chords, guitar solo, live rock band, neurofunk
+sung chorus, vocal hooks, clean sung melody, autotune, American accent, half-time, slow tempo, comedic, parody, uplifting, major key, guitar, live rock band, neurofunk, clean modern production, polished mix, ragga MC, Jamaican accent, liquid dnb, jump up, euphoric, happy hardcore, piano riff
 ```
 
 ### Lane `industrial` — Industrial metal
 
-*style 832 · exclude 761 · taste 1116*
+*style 559 · exclude 288 · taste 667*
 
 ```style
-Dark drum and bass at 174 BPM, minor key, full tempo and relentless — no half-time anywhere, no breakdown that drops the pace. Chopped amen breakbeats rolling hard the whole way, sub bass underneath. British spoken-word vocal on top, barked and metrical, locked to the beat and rising in force as it goes — spat, not crooned, never sung, no chorus, no hook. Verse one, a weathered British man in his fifties: low, gravelly, smoke-worn. Verse two, a well-spoken British man: higher, clean, plummy BBC English, from a wide room. Industrial metal on top: hammering sheet-metal percussion doubling the kick, a detuned guitar chugging in short violent bursts, clanging factory noise, everything overdriven and mechanical. Dry, raw and close-mic'd — no polish, no radio sheen. Bleak, hostile and aggressive from the first bar to the last.
+Industrial metal over a 174 BPM breakbeat. Hammering sheet-metal percussion doubling the kick, a detuned guitar chugging in short violent bursts, clanging factory noise, a distorted machine drone holding underneath. Everything overdriven and squashed to the edge of the meter, cold, rusted and mechanical. Brutal and inhuman. Two British men trade the verses, spoken and locked hard to the beat — one weathered, gravelly and smoke-worn in his fifties, the other higher, clean and plummy BBC English. Barked and rising in force, never sung, no chorus, no hook.
 ```
 
 ```taste
-Vocals: British spoken-word — barked, metrical, locked to the beat at full 174 and rising in force, spat rather than crooned, never sung and never rapped over a melody. Two white British men in their late forties and fifties, and they must stay two different men. One is low, gravelly and smoke-worn, into a cheap close mic: a working-men's-club voice. The other is higher, clean and plummy BBC English, unhurried, from a wide room.
+Vocals: two white British men in their late forties and fifties, and they must stay two different men — one low, gravelly and smoke-worn into a cheap close mic, the other higher, clean and plummy BBC English. Spoken and barked, locked to the beat, rising in force. Never sung, never a chorus.
 
-Music: dark drum and bass at 174 BPM, minor key, full tempo and relentless. No half-time, no breakdown that kills the pace. Chopped amen breakbeats rolling hard, sub bass first and loudest. No chorus anywhere on this record. Industrial metal on top: hammering sheet-metal percussion doubling the kick, a detuned guitar chugging in short bursts, clanging factory noise, everything overdriven and mechanical.
+Music: industrial metal over a 174 BPM breakbeat. Hammering sheet-metal percussion doubles the kick, a detuned guitar chugs in short violent bursts, factory noise clangs, a distorted machine drone sits underneath. Overdriven and squashed to the edge.
 
-Register: bleak, dystopian, angry and completely serious. Dry, raw and close-mic'd — no polish, no radio sheen. Machine-cold, hostile and aggressive. Never anthemic, never jaunty, never feel-good.
+Register: brutal, rusted, cold and inhuman.
 
 Subject: British class, money, work, and the people the economy left behind.
 ```
 
 ```exclude
-sung verses, sung chorus, vocal hooks, clean sung melody, crooning, autotune, harmonies, nu metal, rap rock, pop punk, post-grunge, emo, radio rock, arena rock, anthemic, big chorus, gang vocals, polished production, grime MC, UK drill, road rap, trap, young MC, American accent, ragga MC, Jamaican accent, choir, orchestral strings, violins, piano, marching band, oompah, dixieland, reggae, ska, 2 tone, offbeat guitar, skank rhythm, music hall, pantomime, liquid dnb, jump up, feel good, festival, happy hardcore, bright synths, euphoric, pop, jaunty, bouncy, comedic, parody, uplifting, major key, half-time, halftime, slow tempo, tempo change, vamp, outro jam, guitar solo, shred, hair metal, symphonic metal, gothic metal, power ballad, melodic lead guitar
+sung chorus, vocal hooks, clean sung melody, autotune, American accent, half-time, slow tempo, comedic, parody, uplifting, major key, guitar solo, shred, hair metal, symphonic metal, gothic metal, power ballad, melodic lead guitar, clean guitar, acoustic guitar, orchestral strings, choir
 ```
 
 ### Lane `breakcore` — Digital hardcore
 
-*style 830 · exclude 730 · taste 1101*
+*style 573 · exclude 273 · taste 664*
 
 ```style
-Dark drum and bass at 174 BPM, minor key, full tempo and relentless — no half-time anywhere, no breakdown that drops the pace. Chopped amen breakbeats rolling hard the whole way, sub bass underneath. British spoken-word vocal on top, barked and metrical, locked to the beat and rising in force as it goes — spat, not crooned, never sung, no chorus, no hook. Verse one, a weathered British man in his fifties: low, gravelly, smoke-worn. Verse two, a well-spoken British man: higher, clean, plummy BBC English, from a wide room. Digital hardcore: breakbeats overdriven until they clip, distorted kicks, sirens and alarms cutting across, sudden stutter edits, riot noise underneath, the whole mix pushed into the red. Dry, raw and close-mic'd — no polish, no radio sheen. Bleak, hostile and aggressive from the first bar to the last.
+Digital hardcore at 174 BPM and feeling faster. Breakbeats overdriven until they clip and tear, kicks blown out, gunshot snares, sudden stutter edits and hard gates. Sirens and alarms cutting across, riot noise and crowd chaos underneath. The mix shoved into the red on purpose — distortion IS the production. Violent, chaotic and hostile. Two British men trade the verses, spoken and locked hard to the beat — one weathered, gravelly and smoke-worn in his fifties, the other higher, clean and plummy BBC English. Barked and rising in force, never sung, no chorus, no hook.
 ```
 
 ```taste
-Vocals: British spoken-word — barked, metrical, locked to the beat at full 174 and rising in force, spat rather than crooned, never sung and never rapped over a melody. Two white British men in their late forties and fifties, and they must stay two different men. One is low, gravelly and smoke-worn, into a cheap close mic: a working-men's-club voice. The other is higher, clean and plummy BBC English, unhurried, from a wide room.
+Vocals: two white British men in their late forties and fifties, and they must stay two different men — one low, gravelly and smoke-worn into a cheap close mic, the other higher, clean and plummy BBC English. Spoken and barked, locked to the beat, rising in force. Never sung, never a chorus.
 
-Music: dark drum and bass at 174 BPM, minor key, full tempo and relentless. No half-time, no breakdown that kills the pace. Chopped amen breakbeats rolling hard, sub bass first and loudest. No chorus anywhere on this record. Digital hardcore: breakbeats overdriven until they clip, distorted kicks, sirens and alarms, sudden stutter edits, riot noise underneath, the mix pushed into the red.
+Music: digital hardcore at 174 BPM. Breakbeats overdriven until they clip and tear, blown-out kicks, gunshot snares, stutter edits, sirens and alarms, riot noise underneath. The mix is deliberately in the red — distortion is the production.
 
-Register: bleak, dystopian, angry and completely serious. Dry, raw and close-mic'd — no polish, no radio sheen. Machine-cold, hostile and aggressive. Never anthemic, never jaunty, never feel-good.
+Register: violent, chaotic, hostile and political.
 
 Subject: British class, money, work, and the people the economy left behind.
 ```
 
 ```exclude
-sung verses, sung chorus, vocal hooks, clean sung melody, crooning, autotune, harmonies, nu metal, rap rock, pop punk, post-grunge, emo, radio rock, arena rock, anthemic, big chorus, gang vocals, polished production, grime MC, UK drill, road rap, trap, young MC, American accent, ragga MC, Jamaican accent, choir, orchestral strings, violins, piano, marching band, oompah, dixieland, reggae, ska, 2 tone, offbeat guitar, skank rhythm, music hall, pantomime, liquid dnb, jump up, feel good, festival, happy hardcore, bright synths, euphoric, pop, jaunty, bouncy, comedic, parody, uplifting, major key, half-time, halftime, slow tempo, tempo change, vamp, outro jam, guitar solo, shred, melodic synths, hair metal, gabber, hardstyle
+sung chorus, vocal hooks, clean sung melody, autotune, American accent, half-time, slow tempo, comedic, parody, uplifting, major key, guitar solo, shred, melodic synths, clean production, polished mix, gabber, hardstyle, happy hardcore, euphoric, trance, orchestral strings
 ```
 
 ### Lane `hardpunk` — Hardcore punk
 
-*style 810 · exclude 762 · taste 1107*
+*style 559 · exclude 299 · taste 654*
 
 ```style
-Dark drum and bass at 174 BPM, minor key, full tempo and relentless — no half-time anywhere, no breakdown that drops the pace. Chopped amen breakbeats rolling hard the whole way, sub bass underneath. British spoken-word vocal on top, barked and metrical, locked to the beat and rising in force as it goes — spat, not crooned, never sung, no chorus, no hook. Verse one, a weathered British man in his fifties: low, gravelly, smoke-worn. Verse two, a well-spoken British man: higher, clean, plummy BBC English, from a wide room. Hardcore punk guitar on top: fast downstroke power chords buzzing at full tempo through a cheap trebly amp, in short violent bursts, no melody, no harmony and no solo. Dry, raw and close-mic'd — no polish, no radio sheen. Bleak, hostile and aggressive from the first bar to the last.
+Hardcore punk over a 174 BPM breakbeat. Fast downstroke power chords buzzing through a cheap trebly amp, distorted bass guitar shadowing them, drums played like a live kit — ride bell, crash on every turnaround, cymbals bleeding into everything. Cut in a room in one take, mid-heavy and shouty. Furious, shambolic and urgent. Two British men trade the verses, spoken and locked hard to the beat — one weathered, gravelly and smoke-worn in his fifties, the other higher, clean and plummy BBC English. Barked and rising in force, never sung, no chorus, no hook.
 ```
 
 ```taste
-Vocals: British spoken-word — barked, metrical, locked to the beat at full 174 and rising in force, spat rather than crooned, never sung and never rapped over a melody. Two white British men in their late forties and fifties, and they must stay two different men. One is low, gravelly and smoke-worn, into a cheap close mic: a working-men's-club voice. The other is higher, clean and plummy BBC English, unhurried, from a wide room.
+Vocals: two white British men in their late forties and fifties, and they must stay two different men — one low, gravelly and smoke-worn into a cheap close mic, the other higher, clean and plummy BBC English. Spoken and barked, locked to the beat, rising in force. Never sung, never a chorus.
 
-Music: dark drum and bass at 174 BPM, minor key, full tempo and relentless. No half-time, no breakdown that kills the pace. Chopped amen breakbeats rolling hard, sub bass first and loudest. No chorus anywhere on this record. Hardcore punk guitar on top: fast downstroke power chords buzzing at full tempo through a cheap trebly amp, in short violent bursts, with no melody, no harmony and no solo.
+Music: hardcore punk over a 174 BPM breakbeat. Fast downstroke power chords through a cheap trebly amp, distorted bass shadowing, drums played like a live kit with cymbals bleeding into everything. Cut in a room in one take.
 
-Register: bleak, dystopian, angry and completely serious. Dry, raw and close-mic'd — no polish, no radio sheen. Machine-cold, hostile and aggressive. Never anthemic, never jaunty, never feel-good.
+Register: furious, shambolic, urgent and cheap-sounding.
 
 Subject: British class, money, work, and the people the economy left behind.
 ```
 
 ```exclude
-sung verses, sung chorus, vocal hooks, clean sung melody, crooning, autotune, harmonies, nu metal, rap rock, pop punk, post-grunge, emo, radio rock, arena rock, anthemic, big chorus, gang vocals, polished production, grime MC, UK drill, road rap, trap, young MC, American accent, ragga MC, Jamaican accent, choir, orchestral strings, violins, piano, marching band, oompah, dixieland, reggae, ska, 2 tone, offbeat guitar, skank rhythm, music hall, pantomime, liquid dnb, jump up, feel good, festival, happy hardcore, bright synths, euphoric, pop, jaunty, bouncy, comedic, parody, uplifting, major key, half-time, halftime, slow tempo, tempo change, vamp, outro jam, guitar solo, shred, hair metal, harmonized twin lead, melodic lead guitar, chiming guitar, jangle
+sung chorus, vocal hooks, clean sung melody, autotune, American accent, half-time, slow tempo, comedic, parody, uplifting, major key, guitar solo, shred, hair metal, harmonized twin lead, melodic lead guitar, chiming guitar, jangle, pop punk, skate punk, polished production, gang vocals, big chorus
 ```
 
 ### Lane `bigbeat` — Big beat
 
-*style 819 · exclude 736 · taste 1112*
+*style 557 · exclude 266 · taste 652*
 
 ```style
-Dark drum and bass at 174 BPM, minor key, full tempo and relentless — no half-time anywhere, no breakdown that drops the pace. Chopped amen breakbeats rolling hard the whole way, sub bass underneath. British spoken-word vocal on top, barked and metrical, locked to the beat and rising in force as it goes — spat, not crooned, never sung, no chorus, no hook. Verse one, a weathered British man in his fifties: low, gravelly, smoke-worn. Verse two, a well-spoken British man: higher, clean, plummy BBC English, from a wide room. Big beat: fat distorted breaks squashed by heavy compression, rising filtered noise sweeps, a swaggering dirty bassline, all attack and swing, loud and grimy rather than bleak. Dry, raw and close-mic'd — no polish, no radio sheen. Bleak, hostile and aggressive from the first bar to the last.
+Big beat at 174 BPM. Fat compressed breaks squashed flat by heavy limiting, huge live-sounding drums, filtered noise sweeps rising into every drop, a swaggering dirty bassline and acid squelch underneath. Loud, grimy and cocksure — a party record with the lights off and something wrong in the room. Mean rather than bleak. Two British men trade the verses, spoken and locked hard to the beat — one weathered, gravelly and smoke-worn in his fifties, the other higher, clean and plummy BBC English. Barked and rising in force, never sung, no chorus, no hook.
 ```
 
 ```taste
-Vocals: British spoken-word — barked, metrical, locked to the beat at full 174 and rising in force, spat rather than crooned, never sung and never rapped over a melody. Two white British men in their late forties and fifties, and they must stay two different men. One is low, gravelly and smoke-worn, into a cheap close mic: a working-men's-club voice. The other is higher, clean and plummy BBC English, unhurried, from a wide room.
+Vocals: two white British men in their late forties and fifties, and they must stay two different men — one low, gravelly and smoke-worn into a cheap close mic, the other higher, clean and plummy BBC English. Spoken and barked, locked to the beat, rising in force. Never sung, never a chorus.
 
-Music: dark drum and bass at 174 BPM, minor key, full tempo and relentless. No half-time, no breakdown that kills the pace. Chopped amen breakbeats rolling hard, sub bass first and loudest. No chorus anywhere on this record. Big beat: fat distorted breaks squashed by heavy compression, rising filtered noise sweeps, a swaggering dirty bassline, all attack and swing — loud and grimy rather than bleak.
+Music: big beat at 174 BPM. Fat compressed breaks squashed by heavy limiting, huge live-sounding drums, filtered noise sweeps into every drop, a swaggering dirty bassline, acid squelch.
 
-Register: bleak, dystopian, angry and completely serious. Dry, raw and close-mic'd — no polish, no radio sheen. Machine-cold, hostile and aggressive. Never anthemic, never jaunty, never feel-good.
+Register: loud, grimy, swaggering and mean — a party record with something wrong in the room.
 
 Subject: British class, money, work, and the people the economy left behind.
 ```
 
 ```exclude
-sung verses, sung chorus, vocal hooks, clean sung melody, crooning, autotune, harmonies, nu metal, rap rock, pop punk, post-grunge, emo, radio rock, arena rock, anthemic, big chorus, gang vocals, polished production, grime MC, UK drill, road rap, trap, young MC, American accent, ragga MC, Jamaican accent, choir, orchestral strings, violins, piano, marching band, oompah, dixieland, reggae, ska, 2 tone, offbeat guitar, skank rhythm, music hall, pantomime, liquid dnb, jump up, feel good, festival, happy hardcore, bright synths, euphoric, pop, jaunty, bouncy, comedic, parody, uplifting, major key, half-time, halftime, slow tempo, tempo change, vamp, outro jam, guitar solo, shred, acid house, trance, hair metal, melodic lead guitar
+sung chorus, vocal hooks, clean sung melody, autotune, American accent, half-time, slow tempo, comedic, parody, uplifting, major key, guitar solo, shred, hair metal, trance, happy hardcore, feel good, festival anthem, sung chorus, orchestral strings, acoustic guitar
 ```
-
-### The g2 four — added 2026-08-27 on Jack and Kai's picks
-
-`hiphop`, `grime`, `grunge` and `metal`. 🔴 **The MC and accent bans came out of the shared spine
-and moved into the lanes**, because they were written for a sheet that had no hip-hop in it:
-`grime MC`, `UK drill`, `road rap`, `young MC`, `ragga MC` and `Jamaican accent` are banned in the
-eight lanes that do not want them and **allowed in `hiphop` and `grime`, which are made of them**.
-`American accent` stays banned everywhere — the casting is British in every lane.
-
-`metal` is the one lane where **`guitar solo` is allowed**: Jack asked for pure metal and a metal
-lane without one is not the thing he asked for. It is fenced instead by banning the melodic
-versions of it — `hair metal`, `glam metal`, `shred`, `sweep picking`, `harmonized twin lead`,
-`power metal`, `symphonic metal` — so what is left is a short savage one. `grunge` keeps its solo
-ban: the loud-quiet swing is the point, and `post-grunge` (the radio version) stays banned too.
 
 ### Lane `hiphop` — Boom-bap hip-hop
 
-*style 888 · exclude 722 · taste 1149*
+*style 569 · exclude 280 · taste 650*
 
 ```style
-Dark drum and bass at 174 BPM, minor key, full tempo and relentless — no half-time anywhere, no breakdown that drops the pace. Chopped amen breakbeats rolling hard the whole way, sub bass underneath. British spoken-word vocal on top, barked and metrical, locked to the beat and rising in force as it goes — spat, not crooned, never sung, no chorus, no hook. Verse one, a weathered British man in his fifties: low, gravelly, smoke-worn. Verse two, a well-spoken British man: higher, clean, plummy BBC English, from a wide room. A dusty boom-bap hip-hop layer on top — a filtered soul sample chopped hard on an MPC, vinyl crackle and tape hiss over everything, a fat swung snare landing across the breakbeat, scratched turntable cuts, all head-nod weight and no melody line. Dry, raw and close-mic'd — no polish, no radio sheen. Bleak, hostile and aggressive from the first bar to the last.
+Boom-bap hip-hop over a 174 BPM breakbeat. A filtered soul sample chopped hard on an MPC, vinyl crackle and tape hiss over everything, a fat swung snare cracking across the break, upright bass walking underneath, scratched turntable cuts on the turnarounds. Warm, dusty and narrow — mixed almost mono, sampler-crushed. Grimy and heavy. Two British men trade the verses, spoken and locked hard to the beat — one weathered, gravelly and smoke-worn in his fifties, the other higher, clean and plummy BBC English. Barked and rising in force, never sung, no chorus, no hook.
 ```
 
 ```taste
-Vocals: British spoken-word — barked, metrical, locked to the beat at full 174 and rising in force, spat rather than crooned, never sung and never rapped over a melody. Two white British men in their late forties and fifties, and they must stay two different men. One is low, gravelly and smoke-worn, into a cheap close mic: a working-men's-club voice. The other is higher, clean and plummy BBC English, unhurried, from a wide room.
+Vocals: two white British men in their late forties and fifties, and they must stay two different men — one low, gravelly and smoke-worn into a cheap close mic, the other higher, clean and plummy BBC English. Spoken and barked, locked to the beat, rising in force. Never sung, never a chorus.
 
-Music: dark drum and bass at 174 BPM, minor key, full tempo and relentless. No half-time, no breakdown that kills the pace. Chopped amen breakbeats rolling hard, sub bass first and loudest. No chorus anywhere on this record. A dusty boom-bap hip-hop layer on top — a filtered soul sample chopped on an MPC, vinyl crackle and tape hiss, a fat swung snare across the breakbeat, scratched turntable cuts. Head-nod weight, never a melody line.
+Music: boom-bap hip-hop over a 174 BPM breakbeat. A filtered soul sample chopped on an MPC, vinyl crackle and tape hiss, a fat swung snare across the break, upright bass, scratched turntable cuts.
 
-Register: bleak, dystopian, angry and completely serious. Dry, raw and close-mic'd — no polish, no radio sheen. Machine-cold, hostile and aggressive. Never anthemic, never jaunty, never feel-good.
+Register: warm, dusty, narrow and sampler-crushed. Grimy and heavy, never slick.
 
 Subject: British class, money, work, and the people the economy left behind.
 ```
 
 ```exclude
-sung verses, sung chorus, vocal hooks, clean sung melody, crooning, autotune, harmonies, nu metal, rap rock, pop punk, post-grunge, emo, radio rock, arena rock, anthemic, big chorus, gang vocals, polished production, American accent, choir, orchestral strings, violins, marching band, oompah, dixieland, reggae, ska, 2 tone, offbeat guitar, skank rhythm, music hall, pantomime, liquid dnb, jump up, feel good, festival, happy hardcore, bright synths, euphoric, pop, jaunty, bouncy, comedic, parody, uplifting, major key, half-time, halftime, slow tempo, tempo change, vamp, outro jam, trap, trap hi-hats, mumble rap, drill, road rap, young MC, guitar, guitar solo, live rock band, jazz rap, conscious rap, smooth soul hook
+sung chorus, vocal hooks, clean sung melody, autotune, American accent, half-time, slow tempo, comedic, parody, uplifting, major key, trap, trap hi-hats, mumble rap, drill, road rap, guitar, live rock band, jazz rap, conscious rap, smooth soul hook, R&B vocal, modern polished mix
 ```
 
 ### Lane `grime` — UK grime
 
-*style 854 · exclude 714 · taste 1117*
+*style 576 · exclude 286 · taste 627*
 
 ```style
-Dark drum and bass at 174 BPM, minor key, full tempo and relentless — no half-time anywhere, no breakdown that drops the pace. Chopped amen breakbeats rolling hard the whole way, sub bass underneath. British spoken-word vocal on top, barked and metrical, locked to the beat and rising in force as it goes — spat, not crooned, never sung, no chorus, no hook. Verse one, a weathered British man in his fifties: low, gravelly, smoke-worn. Verse two, a well-spoken British man: higher, clean, plummy BBC English, from a wide room. A UK grime layer on top — cold square-wave bass stabs, icy sparse synth hits landing in eights, eski clicks and metallic percussion, skeletal and menacing, pirate-radio energy, everything hard, dry and unlovely. Dry, raw and close-mic'd — no polish, no radio sheen. Bleak, hostile and aggressive from the first bar to the last.
+UK grime over 174 BPM drum and bass. Cold square-wave bass stabs, icy sparse synth hits landing in eights, eski clicks and metallic percussion, an arrangement with holes punched through it. Cheap FM synths, everything dry, hard and unlovely, nothing sweetened. Pirate-radio menace, skeletal and minimal, built to sound wrong on good speakers. Two British men trade the verses, spoken and locked hard to the beat — one weathered, gravelly and smoke-worn in his fifties, the other higher, clean and plummy BBC English. Barked and rising in force, never sung, no chorus, no hook.
 ```
 
 ```taste
-Vocals: British spoken-word — barked, metrical, locked to the beat at full 174 and rising in force, spat rather than crooned, never sung and never rapped over a melody. Two white British men in their late forties and fifties, and they must stay two different men. One is low, gravelly and smoke-worn, into a cheap close mic: a working-men's-club voice. The other is higher, clean and plummy BBC English, unhurried, from a wide room.
+Vocals: two white British men in their late forties and fifties, and they must stay two different men — one low, gravelly and smoke-worn into a cheap close mic, the other higher, clean and plummy BBC English. Spoken and barked, locked to the beat, rising in force. Never sung, never a chorus.
 
-Music: dark drum and bass at 174 BPM, minor key, full tempo and relentless. No half-time, no breakdown that kills the pace. Chopped amen breakbeats rolling hard, sub bass first and loudest. No chorus anywhere on this record. A UK grime layer on top — cold square-wave bass stabs, icy sparse synth hits in eights, eski clicks and metallic percussion, skeletal and menacing, pirate-radio energy, hard and dry.
+Music: UK grime over 174 BPM drum and bass. Cold square-wave bass stabs, icy sparse synth hits in eights, eski clicks, metallic percussion, cheap FM synths, an arrangement full of holes.
 
-Register: bleak, dystopian, angry and completely serious. Dry, raw and close-mic'd — no polish, no radio sheen. Machine-cold, hostile and aggressive. Never anthemic, never jaunty, never feel-good.
+Register: cold, hard, skeletal, menacing and deliberately unlovely.
 
 Subject: British class, money, work, and the people the economy left behind.
 ```
 
 ```exclude
-sung verses, sung chorus, vocal hooks, clean sung melody, crooning, autotune, harmonies, nu metal, rap rock, pop punk, post-grunge, emo, radio rock, arena rock, anthemic, big chorus, gang vocals, polished production, American accent, choir, orchestral strings, violins, marching band, oompah, dixieland, reggae, ska, 2 tone, offbeat guitar, skank rhythm, music hall, pantomime, liquid dnb, jump up, feel good, festival, happy hardcore, bright synths, euphoric, pop, jaunty, bouncy, comedic, parody, uplifting, major key, half-time, halftime, slow tempo, tempo change, vamp, outro jam, trap, drill, road rap, young MC, ragga MC, Jamaican accent, guitar, guitar solo, live rock band, afroswing, smooth R&B, sung hook
+sung chorus, vocal hooks, clean sung melody, autotune, American accent, half-time, slow tempo, comedic, parody, uplifting, major key, trap, drill, road rap, ragga MC, Jamaican accent, guitar, live rock band, afroswing, smooth R&B, sung hook, warm analogue, lush pads, orchestral strings
 ```
 
 ### Lane `grunge` — Grunge
 
-*style 877 · exclude 764 · taste 1132*
+*style 579 · exclude 298 · taste 634*
 
 ```style
-Dark drum and bass at 174 BPM, minor key, full tempo and relentless — no half-time anywhere, no breakdown that drops the pace. Chopped amen breakbeats rolling hard the whole way, sub bass underneath. British spoken-word vocal on top, barked and metrical, locked to the beat and rising in force as it goes — spat, not crooned, never sung, no chorus, no hook. Verse one, a weathered British man in his fifties: low, gravelly, smoke-worn. Verse two, a well-spoken British man: higher, clean, plummy BBC English, from a wide room. A grunge guitar layer on top — thick detuned fuzz chords dragging half a hair behind the beat, sludgy and downtuned through a blown speaker, sudden loud-quiet swings, feedback left ringing between them, no solo and no polish anywhere. Dry, raw and close-mic'd — no polish, no radio sheen. Bleak, hostile and aggressive from the first bar to the last.
+Grunge over a 174 BPM breakbeat. Thick detuned fuzz chords dragging half a hair behind the beat, downtuned through a blown speaker, sudden loud-quiet swings that fall away to almost nothing and slam back, feedback left ringing in the gaps. Bass guitar fat and woolly. Recorded flat and mid-heavy, no click, no gloss. Sludgy, bitter and dragging. Two British men trade the verses, spoken and locked hard to the beat — one weathered, gravelly and smoke-worn in his fifties, the other higher, clean and plummy BBC English. Barked and rising in force, never sung, no chorus, no hook.
 ```
 
 ```taste
-Vocals: British spoken-word — barked, metrical, locked to the beat at full 174 and rising in force, spat rather than crooned, never sung and never rapped over a melody. Two white British men in their late forties and fifties, and they must stay two different men. One is low, gravelly and smoke-worn, into a cheap close mic: a working-men's-club voice. The other is higher, clean and plummy BBC English, unhurried, from a wide room.
+Vocals: two white British men in their late forties and fifties, and they must stay two different men — one low, gravelly and smoke-worn into a cheap close mic, the other higher, clean and plummy BBC English. Spoken and barked, locked to the beat, rising in force. Never sung, never a chorus.
 
-Music: dark drum and bass at 174 BPM, minor key, full tempo and relentless. No half-time, no breakdown that kills the pace. Chopped amen breakbeats rolling hard, sub bass first and loudest. No chorus anywhere on this record. A grunge guitar layer on top — thick detuned fuzz chords dragging behind the beat, sludgy and downtuned through a blown speaker, sudden loud-quiet swings, feedback left ringing. No solo, no polish.
+Music: grunge over a 174 BPM breakbeat. Thick detuned fuzz chords dragging behind the beat through a blown speaker, loud-quiet swings, feedback ringing in the gaps, fat woolly bass. Recorded flat and mid-heavy.
 
-Register: bleak, dystopian, angry and completely serious. Dry, raw and close-mic'd — no polish, no radio sheen. Machine-cold, hostile and aggressive. Never anthemic, never jaunty, never feel-good.
+Register: sludgy, bitter, dragging and unpolished.
 
 Subject: British class, money, work, and the people the economy left behind.
 ```
 
 ```exclude
-sung verses, sung chorus, vocal hooks, clean sung melody, crooning, autotune, harmonies, nu metal, rap rock, pop punk, post-grunge, emo, radio rock, arena rock, anthemic, big chorus, gang vocals, polished production, American accent, choir, orchestral strings, violins, marching band, oompah, dixieland, reggae, ska, 2 tone, offbeat guitar, skank rhythm, music hall, pantomime, liquid dnb, jump up, feel good, festival, happy hardcore, bright synths, euphoric, pop, jaunty, bouncy, comedic, parody, uplifting, major key, half-time, halftime, slow tempo, tempo change, vamp, outro jam, grime MC, UK drill, road rap, trap, young MC, ragga MC, Jamaican accent, guitar solo, shred, hair metal, harmonized twin lead, melodic lead guitar, chiming guitar, jangle, britpop
+sung chorus, vocal hooks, clean sung melody, autotune, American accent, half-time, slow tempo, comedic, parody, uplifting, major key, guitar solo, shred, hair metal, harmonized twin lead, melodic lead guitar, chiming guitar, jangle, britpop, post-grunge, radio rock, polished production, big chorus
 ```
 
 ### Lane `metal` — Metal
 
-*style 891 · exclude 801 · taste 1161*
+*style 546 · exclude 313 · taste 645*
 
 ```style
-Dark drum and bass at 174 BPM, minor key, full tempo and relentless — no half-time anywhere, no breakdown that drops the pace. Chopped amen breakbeats rolling hard the whole way, sub bass underneath. British spoken-word vocal on top, barked and metrical, locked to the beat and rising in force as it goes — spat, not crooned, never sung, no chorus, no hook. Verse one, a weathered British man in his fifties: low, gravelly, smoke-worn. Verse two, a well-spoken British man: higher, clean, plummy BBC English, from a wide room. A pure metal layer on top — fast tremolo-picked riffs and palm-muted galloping chugs on a downtuned guitar, double-kick drumming doubling the breakbeat, pinch harmonics screaming out of it, and one short savage solo, aggressive rather than melodic. Dry, raw and close-mic'd — no polish, no radio sheen. Bleak, hostile and aggressive from the first bar to the last.
+Pure metal over a 174 BPM breakbeat. Fast tremolo-picked riffs and palm-muted galloping chugs on a downtuned guitar, double-kick drumming doubling the break, pinch harmonics screaming out of the riff, and one short savage solo — aggressive, not melodic. Guitars quad-tracked, mids scooped, tight, loud and total. Two British men trade the verses, spoken and locked hard to the beat — one weathered, gravelly and smoke-worn in his fifties, the other higher, clean and plummy BBC English. Barked and rising in force, never sung, no chorus, no hook.
 ```
 
 ```taste
-Vocals: British spoken-word — barked, metrical, locked to the beat at full 174 and rising in force, spat rather than crooned, never sung and never rapped over a melody. Two white British men in their late forties and fifties, and they must stay two different men. One is low, gravelly and smoke-worn, into a cheap close mic: a working-men's-club voice. The other is higher, clean and plummy BBC English, unhurried, from a wide room.
+Vocals: two white British men in their late forties and fifties, and they must stay two different men — one low, gravelly and smoke-worn into a cheap close mic, the other higher, clean and plummy BBC English. Spoken and barked, locked to the beat, rising in force. Never sung, never a chorus.
 
-Music: dark drum and bass at 174 BPM, minor key, full tempo and relentless. No half-time, no breakdown that kills the pace. Chopped amen breakbeats rolling hard, sub bass first and loudest. No chorus anywhere on this record. A pure metal layer on top — fast tremolo-picked riffs and palm-muted galloping chugs on a downtuned guitar, double-kick doubling the breakbeat, pinch harmonics, and one short savage solo that is aggressive rather than melodic.
+Music: pure metal over a 174 BPM breakbeat. Fast tremolo-picked riffs and palm-muted galloping chugs on a downtuned guitar, double-kick doubling the break, pinch harmonics, one short savage solo. Quad-tracked guitars, scooped mids.
 
-Register: bleak, dystopian, angry and completely serious. Dry, raw and close-mic'd — no polish, no radio sheen. Machine-cold, hostile and aggressive. Never anthemic, never jaunty, never feel-good.
+Register: savage, tight, loud and total.
 
 Subject: British class, money, work, and the people the economy left behind.
 ```
 
 ```exclude
-sung verses, sung chorus, vocal hooks, clean sung melody, crooning, autotune, harmonies, nu metal, rap rock, pop punk, post-grunge, emo, radio rock, arena rock, anthemic, big chorus, gang vocals, polished production, American accent, choir, orchestral strings, violins, marching band, oompah, dixieland, reggae, ska, 2 tone, offbeat guitar, skank rhythm, music hall, pantomime, liquid dnb, jump up, feel good, festival, happy hardcore, bright synths, euphoric, pop, jaunty, bouncy, comedic, parody, uplifting, major key, half-time, halftime, slow tempo, tempo change, vamp, outro jam, grime MC, UK drill, road rap, trap, young MC, ragga MC, Jamaican accent, hair metal, glam metal, shred, sweep picking, harmonized twin lead, symphonic metal, gothic metal, power metal, power ballad, clean sung chorus
+sung chorus, vocal hooks, clean sung melody, autotune, American accent, half-time, slow tempo, comedic, parody, uplifting, major key, hair metal, glam metal, shred, sweep picking, harmonized twin lead, symphonic metal, gothic metal, power metal, power ballad, clean sung chorus, orchestral strings, acoustic intro
 ```
 
 ---
