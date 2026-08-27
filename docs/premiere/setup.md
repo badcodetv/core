@@ -191,6 +191,39 @@ and you didn't press Load again, or developer mode isn't on.
 Premiere must be **running** before UDT will see it, and developer mode must be on with a
 restart after. If both are true and it still doesn't show, restart UDT.
 
+### 🔴 UDT says "failed to load the DevTools plugin"
+
+The banner is generic. It is almost always one of two things, and **UDT's log (the document icon
+on the plugin's row) names which** — read that before trying anything.
+
+**1. The wrong `manifest.json`.** There are two, and they look identical in a file browser:
+
+| Path | Loads? |
+| --- | --- |
+| `packages/premiere-mcp/panel/manifest.json` | 🔴 **No — this is source.** It has `manifest.json`, `index.html` and `icons/`, so it looks right, but `index.html` does `<script src="main.js">` and **`main.js` is only created by the build** |
+| `<mediaRoot>\_bridge\panel\manifest.json` | ✅ Yes — the build output |
+
+Check the folder you pointed UDT at contains a **`main.js` of about 50KB**. If it doesn't, run
+`npm run build:panel --workspace @badcode/premiere-mcp` and watch for
+`no media root configured — mirror skipped`, which means the build worked and wrote nothing.
+
+**2. The host version floor.** The manifest declares `host.minVersion`, and UDT refuses before it
+looks at any code. Check **Help ▸ About**.
+
+| Premiere | Status |
+| --- | --- |
+| 26.3.2 | ✅ everything in this repo was built and proven here |
+| 25.6.6 | 🟡 **loads** — floor lowered to 25.0.0 on 2026-08-27 for exactly this. Not yet exercised beyond loading |
+| below 25.0 | ⬜ untested, and the floor will refuse it |
+
+⚠️ **The floor is a declaration, not a tested boundary.** 25.0.0 says "we have no evidence it
+breaks below 26", not "this works". The panel uses `Application`, `Project`, `ProjectItem`,
+`TickTime`, `Markers`, `Color`, `PointF` and `Constants` — the core UXP surface — but individual
+methods arrived at different times. **`createSetSettingsAction` (the in-place frame-rate change in
+[`api-notes.md`](./api-notes.md)) is the kind of call most likely to be missing on an older host.**
+On a new version, run `premiere_status` first: a green light and a host version back means the
+transport is fine, and anything that fails after that fails one tool at a time.
+
 ---
 
 ## Where the rest of it lives
