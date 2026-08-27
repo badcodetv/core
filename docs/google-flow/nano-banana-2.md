@@ -728,6 +728,31 @@ discs, light trails and flare all need lamps, headlights, neon or specular highl
 have, the fix is to change the *time of day*, not the prompt — or to isolate with **exposure**
 instead of focus (underexpose ambient, light the subject) which works in any light.
 
+### 20. 🔴 If the named source cannot physically light the scene, the model invents fill `[confirmed 2026-08-27]`
+
+Camping **9a**, twice. A yurt interior lit by *"a cluster of candles on the rug, and nothing
+else"*, with the falloff written out at length — *"steeply from below, shadows thrown upward,
+above chest height everything falls away"*. **Both rounds came back with a soft even frontal
+fill from nowhere**, an evenly-lit lattice wall and a fully readable roof. Not one upward shadow
+in either frame.
+
+**This is [§6](#6--if-the-camera-cannot-physically-stand-there-the-model-rebuilds-the-set-observed)
+in the lighting domain.** Candles on a floor cannot light a room full of people, and the engine
+resolves the contradiction between *"a visible room full of people"* and *"only candles"* the
+same way it resolves an impossible camera — **by rebuilding the scene so the request becomes
+satisfiable.** It adds the light the picture would need.
+
+**So more falloff language does not help, and that is the trap** — the wording was not the
+problem and rewriting it harder spends rounds. **Give the light a source that could plausibly do
+the job, or shrink what needs lighting.** For 9a: a wood-burning stove low on one side, which is
+standard in a glamping yurt, lights every face from one low angle, leaves the far half of each
+face dark and gives the roof nothing. The candles then stay as a **bounded practical** — *"small
+points of flame, far too weak to light anything"* — which is [§5's](#5-anti-slop-restated-from-the-photorealism-pass)
+own phrasing for a practical that is allowed because it has a job.
+
+**The general rule:** a lighting instruction is a physics claim. If the physics does not close,
+the engine closes it for you.
+
 ### 19. 🔴 §2's "do not restate the reference" applies to PEOPLE, not just sets `[confirmed 2026-08-27]`
 
 Camping **8c(i)**. `@Bob` was cast **and** his canon appearance was pasted in as prose — beanie,

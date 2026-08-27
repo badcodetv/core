@@ -16,7 +16,7 @@
 > round 1 read sad, and was fixed by casting `@Tarquin`, dropping the face description and
 > naming the failure in a `Constraints:` block. **4c the boardroom is dropped.** **Scene 5 is shot** — 5a, 5b, 5c and 5d,
 > stills and clips. **Scene 6 is shot**, and the scene-8 tent
-> POV is banked as the master frame. **Scene 7 is shot** — 7a and 7b both, stills and clips. **8a is shot** — still and clip. **8b is shot.** **Next session starts at 8c**, which lost its plan when 8b changed shape — read the entry below before writing anything. The car park is now a fixed set — see the plate in `prompts.md`.
+> POV is banked as the master frame. **Scene 7 is shot** — 7a and 7b both, stills and clips. **8a is shot** — still and clip. **Scene 8 is shot** (8c(ii) still outstanding). **Scene 9 is under way** — 9a shot, 9b's still shot; **next session starts at 9b's clip and 9c**. ⚠️ **Scene 9 moved indoors** — the river-bank clearing is dropped for a yurt; see the scene-9 entries. The car park is now a fixed set — see the plate in `prompts.md`.
 >
 > ⚠️ **Prompts live in [`prompts.md`](./prompts.md), and the ledger is now stills-only** —
 > video prompts are self-explanatory and are not recorded going forward *(ruled 2026-08-26)*.
@@ -150,8 +150,24 @@ men before the plot starts, so the rest of the film can dismantle it.*
 
 *(The forest-drive scene is **dropped** — do not shoot it.)*
 
-- **9a The Welsh retreat, night** — dome tents by the river, a small ceremony fire, the shaman says her piece, Tarquin grabs his knee.
-- **9b The kick-in** — cut straight to it. *"F*** me, that kicked in quick."*
+- **9a The retreat, night — a yurt interior.** ✅ **Shot 2026-08-27**, still and clip.
+  ⚠️ **Changed 2026-08-27: the river-bank clearing is dropped.** Jack had a yurt frame already, and
+  it is the better location for a reason canon did not have — **he falls asleep in a round fabric
+  shelter he paid for and wakes in a round fabric shelter he did not.** The jump device is told in
+  objects before anyone says a word, and the yurt/tent rhyme carries it. Camera **inside** the
+  circle, off the centre line; **he is the only one with his eyes open**; nobody has noticed him.
+  **The knee-grab lives in the clip, not the still** — the still is the moment before, which is
+  what a plate should be. *(The shaman's line is not shot: she is a shape in the circle and the
+  narration carries the beat. No Character and no sheet, per the 7b precedent.)*
+- **9b The kick-in — his eye, macro.** ✅ **Still shot 2026-08-27**; clip written, unrun. Pupil
+  blown wide with the candle flames reflected in it, everything else black. **A pupil is a fact,
+  not an expression** — the one way to play "it kicked in" without animating a man emoting, which
+  is the standing rule. It also lands the **eye motif for the third time** (9b wide → 9c closes →
+  10a opens), which is the minimum for a motif to be clocked at all.
+  🔴 **Open — check the eye colour.** The macro came back brown/amber; his eyes read pale in the
+  accepted 8c(ii) frame. A Character may not bind on a crop this tight. **It has to match 9c and
+  10a**, and 10a is the wake-up, so an eye that changes colour across the jump breaks the film's
+  biggest device.
 - **9c The water, his reflection** — the narrator does the fragility-of-existence beat. **No AI mention here.** His **eyes close…**
 - **10a …and open — 6c's exact framing.** Inside the tent, looking out. The rhyme lands before anyone says anything.
 - **10b Outside: chaos** — frost, tents, wreckage, and **a fire burning** — likely the only animated element in the scene.
