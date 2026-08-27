@@ -136,6 +136,49 @@ Every round is one of these. Naming which one you are doing is the discipline.
 Within one atom you may run as many slider rounds as you like — that is the cheap axis, and it is
 where the pair at weirdness 30/60 lives.
 
+### 🔴 BOLD, NOT MEEK — a genre experiment rewrites the prompt, it does not patch it
+
+Kai's ruling, 2026-08-27: *"the idea of changing a single sentence inside the style to represent a
+new style, I would call a meek effort. So let's do a bold effort… completely change the style
+prompt when we are in this mode of experimenting with different styles."*
+
+The four-box rule above says the boxes move **together**. It does not say how far, and that gap
+produced two failed sweeps: ten "different genres" built from one shared skeleton with a swapped
+clause. They were atomic *and* meek, and they sounded like one record ten times.
+
+**Measure it before spending.** Take the longest run of identical text between any two variations'
+Style boxes:
+
+| Longest shared run | Verdict |
+|---|---|
+| **> 40% of the prompt** | 🔴 meek — this is one prompt with a costume. Rewrite before running |
+| **10–40%** | 🟡 check *what* is shared: production language shared = still meek |
+| **< 10%, and only the cast** | ✅ bold |
+
+*(Camping's sweep: 644 chars / 78% shared at g1 → 69 chars / 10% at g3, where those 69 characters
+are the casting phrase and nothing else.)*
+
+**What may be shared, and it is a short list:** the cast, the words, and the one musical constant
+the brief actually names (for Camping: a 174 BPM drum-and-bass foundation). **Everything else
+belongs to the variation** — and two categories matter more than the genre noun itself:
+
+- 🔑 **Mix and production language decides how a record sounds.** `wide, surgical, mastered loud
+  and airless` versus `mid-heavy, narrow, tape hiss and clipping left in` versus `crushed to
+  twelve bits, almost mono, no highs` are three different records. Ten variations that all say
+  *"dry, raw and close-mic'd"* are one record. **If the production sentence is shared, the sweep
+  is meek no matter how different the genre words are.**
+- 🔑 **Vocal delivery belongs to the genre too.** Camping g1 said *"barked and metrical, locked to
+  the beat"* in all ten lanes, so ten genres arrived in one voice. Keep only the delivery rules
+  that are the *song* (for Camping: two named men, `never sung`) and let the genre own the rest —
+  spat, chanted, rapped, roared, half-yelled, screamed.
+
+**Excludes go per-variation, and each one bans the OTHER variations' sounds.** A shared ban list
+is itself a flattening force: it applies one aesthetic decision to every lane, and it will happily
+ban `guitar` on a lane built out of guitars.
+
+**Write each variation EXTREME, not tasteful.** The point of a sweep is to find the edges so an ear
+can choose; a tasteful spread returns ten versions of what you already had.
+
 ### 🔑 How sheets must be written
 
 **Each experiment is a self-contained block holding all four boxes**, separate from every other

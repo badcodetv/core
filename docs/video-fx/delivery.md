@@ -162,3 +162,47 @@ measured result here.
 **No scope readback exists inside Premiere.** No UXP API exposes Lumetri Scopes values, so QC
 happens on the rendered file, after export, or by eye in the Lumetri Scopes panel. That is a
 job to hand to the human — see the `premiere-automation` skill §8.
+
+---
+
+## 🔴 The photosensitivity gate — run it before ANY upload with a flash, strobe or alarm
+
+**Tool: [`scripts/photosensitivity-check.py`](../../scripts/photosensitivity-check.py).** Takes a
+list of clips, prints a table, exits non-zero on a fail.
+
+```bash
+python3 scripts/photosensitivity-check.py clips/**/*.mp4
+```
+
+It implements the **WCAG 2.3.1 / Harding** tests rather than eyeballing it:
+
+| Term | Definition used |
+| --- | --- |
+| Relative luminance | `0.2126R + 0.7152G + 0.0722B` on **linearised** sRGB, 0–1. Linearising matters — gamma-encoded values overstate changes in the shadows, which is most of our work |
+| Transition | ΔL ≥ **0.10** where the darker state is < **0.80**, across ≥ **25%** of the frame |
+| Flash | a pair of **opposing** transitions |
+| Fail | more than **3 flashes in any 1-second window** |
+| Red flash | the same, on area changing into or out of **saturated red** (`R/(R+G+B) ≥ 0.8`) — a separate and stricter risk, and the one an ALARM beat trips |
+
+⚠️ **Stated simplification:** the standard measures flashing area inside any 10° visual field;
+this measures it across the whole frame. That is **conservative for a full-frame flash and
+permissive for a small intense one**. A clip that passes with a small, bright, localised strobe
+still deserves a human look.
+
+🔑 **Always prove the gate can fail.** The script was validated against two synthetic clips — a
+10Hz full-frame black/white strobe and a 10Hz saturated-red strobe. Both return **20 flashes/second
+and FAIL**, and the red test fires only on the red one. A gate that has never failed is not
+evidence of anything.
+
+⚠️ **ffmpeg's own `photosensitivity` filter is not a useful reporter.** With `bypass=1` it logs
+nothing, even on a clip it would gut. The only way to read it is to run it *without* bypass and
+measure what it changed: on the synthetic strobe it crushed the luma swing from **250 → 75**; on
+GPOM's red-alert beat, **55.5 → 55.3**, i.e. it found nothing. Useful as a second opinion, useless
+as a report.
+
+### GPOM `gpom-s01` — first full pass, 2026-08-27
+
+All **19 live beats PASS**, general and red. Worst cases: `HK-b3-pushin` and `B6-POST-v1` at
+**2 general flashes/second** against a limit of 3, and **zero red flashes anywhere** — including
+the red-alert beat, because it was built as two slow beacon sweeps that never reach black rather
+than as a strobe. The thing that made it a better shot also made it safe.

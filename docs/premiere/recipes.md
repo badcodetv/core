@@ -524,3 +524,65 @@ session.** That file is why the next person does not pay for the same lesson.
 🔴 **An MCP reconnect does not kill the old server** — it orphans it holding the bridge port. This
 is now the most likely reason a working bridge suddenly stops working, and the error names a port
 rather than the cause.
+
+---
+
+## Grading with Lumetri — the param map, and measure before you touch it
+
+`Lumetri Color` (`AE.ADBE Lumetri`) exposes **130 params**, most of them unnamed group headers.
+Set by **index**; the names are ambiguous and several are literally `" "`.
+
+| Index | Param | Index | Param |
+| --- | --- | --- | --- |
+| 14 | Temperature | 21 | Highlights |
+| 15 | Tint | 22 | Shadows |
+| 16 | Saturation *(basic)* | 23 | **Whites** |
+| 19 | Exposure | 24 | **Blacks** |
+| 20 | Contrast | 42 | Vibrance *(creative)* |
+
+🔴 **`Blacks` is far more aggressive than the slider suggests, and it is compressive.** Measured on
+a hazy night exterior, 2026-08-27:
+
+| Blacks | 5th-percentile luma | % of frame below 16 |
+| --- | --- | --- |
+| 0 | 23.5 | 0.3% |
+| **−9** | **16.7** | **3.4%** |
+| −20 | 0.5 | **15.1%** |
+| −45 | 0.0 | **30.7%** |
+
+At −20 a *sixth of the frame* is already crushed — which is the `camping.mp4` failure
+([`../video-fx/delivery.md`](../video-fx/delivery.md)) reproduced on purpose. Working figure near
+zero is **≈1.15 luma per unit**, falling off fast. **Never reach past about −12 without measuring.**
+
+### The method that works
+
+Grading by eye through a remote bridge does not work — you cannot trust a monitor you are not
+looking at. Do this instead:
+
+1. **Measure every beat first**: `% below 16`, p5, median, p95, p99, mean RGB. It tells you what
+   the actual mismatch is, which is rarely what it looks like.
+2. **Apply Lumetri, change ONE param, export a frame, measure.** Two points give you the scaling
+   for that param on that shot; a third confirms whether it is linear (it usually isn't).
+3. **Then look at the picture.** The numbers say whether it is safe; only the eye says whether it
+   is right.
+
+⚠️ **A clip already carrying `Scale` (a 720p source fitted to 1080 sits at 150) needs its "before"
+frame rendered the same way** — `scale=1920:1080` in ffmpeg — or you are comparing two different
+crops and the histogram lies.
+
+### GPOM `gpom-s01` — what the measurement found, 2026-08-27
+
+The note in the tracker said *"exteriors sit lighter and hazier than interiors."* Half right, and
+the useful half was the other one:
+
+| | Problem | Numbers |
+| --- | --- | --- |
+| Cuts 1–2 | **No black floor.** The Hong Kong descent has 0.3% of frame below 16 and a p5 of 23.5 — nothing in the picture is black, so it floats | fix: `Blacks −9` → p5 16.7 |
+| Cut 3 | 🔴 **Crushed AND capped.** The aisle has **57.7% of frame below 16** and tops out at 183. It isn't dark-by-design, it's clipped with no bright anchor | fix: `Whites +40, Blacks +8, Contrast +6` → 1.6% below 16, p99 204 |
+
+🔑 **That second row is [`../cinematography/principles.md`](../cinematography/principles.md) §R1's
+central problem showing up as a histogram.** Darkness reads as depth only when one small region is
+deliberately brighter; uniform near-black reads as a broken file. The plant room had been graded
+*into* the failure. Lifting the whites gave it the bright anchor and lifting the blacks off the
+clip gave the shadows somewhere to live — and it reads *darker*, not lighter, because the shadows
+now have shape.
