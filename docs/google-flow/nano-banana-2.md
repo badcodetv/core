@@ -728,6 +728,67 @@ discs, light trails and flare all need lamps, headlights, neon or specular highl
 have, the fix is to change the *time of day*, not the prompt — or to isolate with **exposure**
 instead of focus (underexpose ambient, light the subject) which works in any light.
 
+### 19. 🔴 §2's "do not restate the reference" applies to PEOPLE, not just sets `[confirmed 2026-08-27]`
+
+Camping **8c(i)**. `@Bob` was cast **and** his canon appearance was pasted in as prose — beanie,
+oversized charity-shop coat, hoodie, stubble, age, weathering. **The outfit came back wrong.**
+
+**The rule was already here and was being applied to only half the problem.** The fourth pass §2
+says a prose re-description competes with the attached reference and is a known drift source; the
+repo had internalised that for **locations** and not for **characters**. Same mechanism, same fix.
+
+**Rule: a Character cast or a reference attached means no appearance description at all.** Not
+wardrobe, age, build, hair, skin or grooming. Write *"the man from the character reference"*.
+
+**What still belongs in the prompt, because the reference cannot carry it:** what the person is
+**doing** — posture, action, position in frame — and the **face as muscle description** (brows,
+eyelids, mouth, where the eyes are aimed), per
+[`image-prompting.md` §4a](../flow/image-prompting.md). Action and expression are not appearance.
+
+**The one narrow exception:** where the figure is too small or too turned away for the Character
+to bind at all (§12), prose is the only lever left — camping's forty-metre 8b long lens. **A face
+in frame at any workable size means the reference carries it.**
+
+⚠️ **A "keep the same" clause is not a loophole.** Camping 8c(ii), same day: *"the lower legs and
+shoes of a man standing on the tarmac, **in the same dark jeans and tan shoes as in the reference
+image**"* was caught immediately. Wrapping the garment in a preservation verb still puts the
+garment in the prompt, and the prompt then competes with the reference exactly as §2 describes.
+Write *"the standing man from the reference image"*.
+
+*(Ruled by Jack: "please don't describe the character when there is a reference image or
+character attached, because Flow messes it up.")*
+
+### 18. 🔴 "Their face is not visible" does not hide a face. Only geometry does `[confirmed 2026-08-27]`
+
+Camping **8b(i)**, round 1. An over-the-shoulder with a foreground figure whose face was
+explicitly excluded twice — *"Only his back is in view. His face is turned away and is not in the
+picture."* The engine returned him in **three-quarter profile with a fully rendered, invented
+face**: cheek, beard, ear and eye all legible, sharper than the depth of field allowed for.
+
+**The instruction was not partially obeyed. It was inverted** — the engine appears to read a
+named body part as a request to render it. This is the same failure class as
+[§6](#6--if-the-camera-cannot-physically-stand-there-the-model-rebuilds-the-set-observed) and the
+camping camera-height finding: *stating a constraint does not bind; stating its physical
+consequence does.*
+
+**The fix that works is occlusion the engine has to honour to draw the scene at all:** put the
+camera square behind the skull so the back of the head physically hides the rest, push the figure
+close enough to the lens to be far out of focus, and **describe the result, not the rule** —
+*"the back of his head faces us squarely and hides the whole of the rest of his head behind it;
+the picture holds only the hair on the back of his skull, his collar and his coat."* If a cheek
+still survives, **delete the head from the frame** and keep only a shoulder — a body part that
+is not in the picture cannot grow a face.
+
+**Why it costs more than a re-roll.** An invented face in frame is an **uncast character**. It
+has no Character and no reference, so every later shot containing that person now has a likeness
+to match that was never designed — which is exactly what camping's one-face-per-generation
+method exists to prevent. Sibling of
+[§12](#12--a-character-binds-to-a-face-no-face-in-the-shot-no-likeness-observed): a Character
+binds to a face, and **an unbound face is a liability, not a blank**.
+
+**Standing rule, now confirmed rather than inferred:** where a face does not need to be legible,
+**hide it with the camera**, never with a sentence.
+
 ### Sources for this section
 
 - [Google — prompting tips for Nano Banana Pro](https://blog.google/products/gemini/prompting-tips-nano-banana-pro/) `[vendor]`

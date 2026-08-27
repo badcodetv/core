@@ -16,7 +16,7 @@
 > round 1 read sad, and was fixed by casting `@Tarquin`, dropping the face description and
 > naming the failure in a `Constraints:` block. **4c the boardroom is dropped.** **Scene 5 is shot** — 5a, 5b, 5c and 5d,
 > stills and clips. **Scene 6 is shot**, and the scene-8 tent
-> POV is banked as the master frame. **Scene 7 is shot** — 7a and 7b both, stills and clips. **8a is shot** — still and clip. **Next session starts at 8b**, which is mid-flight: see the entry below before writing anything. The car park is now a fixed set — see the plate in `prompts.md`.
+> POV is banked as the master frame. **Scene 7 is shot** — 7a and 7b both, stills and clips. **8a is shot** — still and clip. **8b is shot.** **Next session starts at 8c**, which lost its plan when 8b changed shape — read the entry below before writing anything. The car park is now a fixed set — see the plate in `prompts.md`.
 >
 > ⚠️ **Prompts live in [`prompts.md`](./prompts.md), and the ledger is now stills-only** —
 > video prompts are self-explanatory and are not recorded going forward *(ruled 2026-08-26)*.
@@ -52,10 +52,45 @@
 - [x] **8a — the wank tank takes two bays.** Still and clip already shot. **The car park plate
       _is_ 8a** — it was banked as a plate before the scene existed, and the X8 in it is already
       across the lines. Nothing was regenerated.
-- [ ] ⏸ **8b — the two men lock eyes. IN PROGRESS, start here.** Ruled to be **two singles,
-      not a two-shot** — one face per generation, which is the only method this film has ever
-      got a face out of. `8b(i)` is Tarquin, `8b(ii)` is Bob's reverse (not yet written).
-      **The angle is solved and the wardrobe is solved; the face is not.** Full state below.
+- [x] **8b — the two men lock eyes. SHOT 2026-08-27**, still and clip. **Redesigned three times
+      before it landed**: a lone low single (four rounds, the face read sad), an
+      over-the-shoulder (an invented face arrived in the foreground), a from-inside-the-car
+      shot (good, never re-run), and finally **a long-lens two-shot from forty metres**, which
+      won by taking faces out of the argument entirely. Prompt in
+      [`prompts.md`](./prompts.md#8b--the-two-men-long-lens--still--accepted-2026-08-27).
+      ⚠️ **Open note from the cut:** the clip reads a little awkward — *"they are just staring
+      at each other being close together"*. Kept for now because the beat matters; a revisit is
+      owed. The likely cause is that the frame has no unresolved question left in it once both
+      men are settled and facing each other — the fix, if we take it, is to catch one of them
+      mid-action rather than parked.
+- [ ] **8c — the two judgement beats.** ⚠️ **The old plan is void**: 8c was to reuse 8b's two
+      singles, and 8b is now one two-shot, so 8c has no setups to inherit. **Proposed 2026-08-27:
+      shoot what each man looks at, not their faces** — `8c(i)` the tent inside one painted bay,
+      `8c(ii)` the X8's wheel across two. The judgement lines are narration, so the pictures are
+      free to carry the argument instead of a performance, and the rhyme is the painted lines.
+      Faces stay withheld until the grace beats in 11–12. `8c(i)` is **the tent with Bob in the mouth of it**, `@Bob` cast — written, unrun.
+      ⚠️ **Corrected 2026-08-27 (Jack):** the first draft showed the tent empty, which fails
+      [gate 2](../../cinematography/principles.md) — the gate names the visible cost as *a body
+      that failed, someone the system is failing*, and **a tent alone is an object, not a cost**.
+      The reduction only reads if the man is visibly there and still being looked past. It is
+      also the first shot in the sequence where `@Bob` can actually bind, because at three metres
+      there is finally a face for it to hold.
+      ⚠️ **Corrected again 2026-08-27 (Jack): stop describing the character.** Round 1 cast `@Bob`
+      *and* pasted his canon appearance in as prose, and the outfit came back wrong. **A cast
+      Character or an attached reference means no appearance description at all** — only what he
+      is doing and his face as muscle description. Recorded as
+      [`nano-banana-2.md` §19](../../google-flow/nano-banana-2.md).
+- [x] **8c(i) — Bob in the mouth of the tent. SHOT 2026-08-27**, still and clip. ⚠️ **Jack chose
+      the described version** over the reference-only one, and it is the best face in the film so
+      far — but **this Bob does not match the `@Bob` Character** (longer hair, different coat).
+      **Owed: rebuild `@Bob` from this accepted frame**, because he still has to be the same man
+      in 10d and all of 11–12.
+- [ ] **8c(ii) — the wheel across two painted lines.** Written 2026-08-27, unrun. **The pair
+      inverts**: 8c(i) sits at Tarquin's standing eye height looking down at a man, 8c(ii) at
+      Bob's ground level looking up at a machine. Same rain, opposite power — the original 8b
+      idea, finally working because objects carry it instead of faces. **Bob gets a face at the
+      moment he is judged; Tarquin gets only his car**, and earns his face later in the tent and
+      by the fire. The rhyme is the painted line: one man inside one bay, one car across two.
 - [ ] **Record the scene-8 tent-POV prompt** — the master frame all three POVs come from, and its
       words are not in the ledger.
 - [x] **Record 1c and the 2a still** — recovered 2026-08-26.
@@ -176,53 +211,157 @@ One round came back looking **out through the tent doorway** — a letterbox vig
 would kill the rhyme. The prompt now says *"only a blurred band along the bottom edge — no
 doorway opening is visible."* Keep it.
 
-### Still open: the face
+### Ruled 2026-08-27 — the face was never the problem
 
-**Four rounds, the same failure every time — he reads sad.** Head dropped forward, brow slightly
-drawn. This inverts the beat: 8b is where the crack from 5d gets *slammed shut*, so a troubled
-Tarquin here means scene 5's turn never closed and 8c's *"get a job"* lands on a man who does not
-mean it.
+**Four rounds failed the same way, he reads sad.** Run through the `shot-craft` skill on
+2026-08-27, the cause is upstream of the wording:
 
-Two fixes are written into the pending prompt and **neither has been run yet**:
+- **Gate 1.** 8b(i)'s job is *the crack from 5d slams shut* — a change of inner state, handed
+  entirely to a micro-expression on a still face. That breaks this file's own standing rule:
+  **the narrator carries all inner states.** The shot was designed to do the one thing the film
+  says pictures here do not do.
+- **Gate 2 — visible cost.** Low lens, luxury SUV, one man filling the frame against sky is the
+  grammar of power, and the only cost in frame was deliberately blurred to a band along the
+  bottom edge. [`principles.md`](../../cinematography/principles.md) §23 makes a visible cost
+  mandatory on any monumental frame; §24 adds that meaning it ironically does not protect us.
+- **One status cue, not stacked.** [`frame.md`](../../cinematography/frame.md) §4 — *combine two
+  or three, never rely on one*. The design leaned wholly on camera height, and §20 grades
+  *"low angle equals power"* **A (mixed)** — real but weak and context-dependent, **not** the
+  free win this file previously claimed.
+- **Principle 3.** The eye goes to faces first, and his face was around 40% of frame height, so
+  a brow a few percent off carried the whole shot.
+- **The lens numbers were impossible.** 85mm at four metres yields a chest-up frame, not
+  knees-up; the engine resolved the contradiction by tightening, which magnified the very
+  micro-expression that kept failing.
+- **The prompt named the emotion.** *"not sad, not tired, not troubled, not thoughtful, not
+  brooding"* — Nano Banana has no negative-prompt field, so those were five sad-words in the
+  scene description. [`image-prompting.md`](../../flow/image-prompting.md) §4a and §7.
 
-- **Shallow, not down.** *"Looking down at something below him"* makes the engine drop the whole
-  head. Bob is sitting three metres away — that is an 8–10° glance. Written as *"the person is
-  close and only a little lower than him, so his eyes travel down only a small amount"*, with the
-  head *"tilted a fraction back"* and the chin pushed forward.
-- **Reuse 4b's proven wording.** *"His mouth stays closed with the corners drawn back and held.
-  His lower eyelids are relaxed, his brows are level, and the skin around his eyes is
-  untroubled."* That exact phrasing produced a working smirk on 4b instead of melancholy.
+### The redesign — put the camera where Bob's head is, and shoot the beat *before*
 
-**The test on the round:** cover the bottom half of the frame. If the eyes and brow could pass
-for mild sadness, it is still wrong — it should look like nothing much is happening to him.
+**Two changes, both from [`docs/cinematography/`](../../cinematography/README.md).**
+
+**One — an over-the-shoulder from Bob's eyeline**, Bob a back and a shoulder in the near
+foreground. The low angle stops being a style choice and becomes a **point of view**: the
+audience is sat on wet tarmac being looked down at, so 8c's *"get a job"* lands on the viewer.
+Three problems close at once — **gate 2 passes** because the cost is now the nearest and largest
+plane rather than a blurred band; Tarquin's face shrinks to where a small error no longer carries
+the shot; and the tent leaves the frame entirely, taking the 6c-letterbox hazard with it. This is
+[ruling R2](../../cinematography/principles.md) being spent on purpose — the tight human-scale
+frame as the deliberate exception inside a machine-scale story, which is exactly what a character
+beat is for.
+
+**Two — the moment moves earlier, and this is the bigger fix.**
+[`stills.md`](../../cinematography/stills.md) §1: *"a still only holds attention if it contains
+an unresolved question… **resting poses die fast**, and this is the most common reason a
+technically good generated still is boring."* Every version so far described a **finished**
+action — *having just got out*, *already finished looking*, *has not stepped away*. So the frame
+resolved, and the only thing left to carry it was a face holding an expression, which is the one
+thing four rounds proved this engine will not do.
+
+**So shoot the instant before.** He is **halfway out of the car** — one foot down taking his
+weight, one leg still inside, a hand on the door frame, body off balance inside the door's arc,
+head still turning and his eyes only just arriving on Bob. That is Cartier-Bresson's decisive
+moment as `stills.md` defines it: **geometry and event locking at once**, not peak drama. Three
+consequences:
+
+- **The face no longer has to perform.** It is caught in transit, which is the reliable defeat
+  for the overacted generated expression.
+- **The unresolved question is free and it is the right one** — *is he getting out, or getting
+  back in?* Bob is not worth getting all the way out of the car for. The argument is in the
+  posture, where a generator can actually hit it.
+- **The tilt earns its keep.** [`registers.md`](../../cinematography/registers.md): converging
+  verticals from a tilted-up lens read **unstable and dynamic**, which now serves the *during*
+  reading instead of just leaning the car.
+
+⚠️ **This bends the "two singles, never a two-shot" ruling** — but only in letter. Bob is a back
+and a shoulder, **one face in frame**, which is this file's own rule for faces that need not be
+legible. **A human call; not yet run.**
 
 ### The pending prompt — 8b(i), unrun
 
 Attach the **8a car park frame**. Cast **`@Tarquin-new`**. Nothing else. Enhance Prompt **off**.
 
 ```prompt
-Use the attached car park image as the reference for the location: the same painted bays and wet tarmac, the same rows of ordinary small cars, the same overcast winter light, the same muted colour and grain, and the same black BMW X8.
+Generate a still photograph. Use the attached car park image as the reference for the location: the same painted bays and wet tarmac, the same rows of ordinary small cars, the same overcast winter light, the same muted colour and grain, and the same black BMW X8.
 
-The man from the character reference is standing on the wet tarmac beside the open driver's door of that X8, having just got out of it. A key fob is loose in one hand.
+Camera: an over-the-shoulder medium shot on a 50mm lens at f/4, from about three and a half metres away. The lens sits low, at the height of a seated person's eyes, and tilts upward. Because it is this low and tilted, the horizon crosses the frame at the height of the standing man's hips, the underside of his jaw is visible, the roofline of the X8 rises above his shoulder, the vertical lines of the car and the open door lean inward toward the top of the frame, and his head and shoulders sit against flat pale grey sky.
 
-Camera: the lens is one metre above the tarmac, tilted upward at him from about four metres away, 85mm at f/2.8. Because the camera is this low, his head and shoulders are against nothing but flat pale grey sky, the horizon line crosses the frame at the height of his hips, we can see the underside of his jaw, and the roofline of the X8 rises above his shoulder. He stands right of centre, from the knees up, and fills a good deal of the frame. Along the very bottom edge only, a soft out-of-focus band of wet blue and grey tent nylon.
+Nearest the lens and slightly soft: the dark shoulder and the back of the head of a second man sitting on the ground in a heavy coat, filling the bottom-left corner and running off both edges of the frame. Only his back is in view. His face is turned away and is not in the picture.
 
-Behind him there is no building of any kind. Beyond him is open wet tarmac with painted bays running away, and a distant row of ordinary parked cars sitting as a low band near the bottom of the frame, thrown out of focus. Above all of it, a large area of empty pale grey sky. The supermarket and its trolley shelter are away to the right, outside the frame, and are not visible anywhere in the picture.
+Beyond him, right of centre and framed from about the knees up: the man from the character reference, caught halfway out of the open driver's door of that X8. One foot is flat on the wet tarmac taking his weight, the other leg is still inside the car, and one hand grips the top of the door frame as he rises. His body is mid-movement and off balance, still inside the arc of the open door, not yet standing straight and not yet turned to face out. This is the instant before he is out of the car, not after.
 
-Action: He has glanced at someone sitting on the ground a few metres away, below him and to his left. The person is close and only a little lower than him, so his eyes travel down only a small amount and the angle is shallow. His head does not tip forward at all — if anything it is tilted a fraction back, and his chin is pushed slightly forward and up, so he is looking down along his nose. His mouth stays closed with the corners drawn back and held. His lower eyelids are relaxed, his brows are level, and the skin around his eyes is untroubled — no crease between the brows, no lines across the forehead, nothing tightened anywhere in the face. He is entirely unbothered, pleased with himself, and already finished looking. Unposed, caught mid-moment, unaware of the camera.
+His head is still turning toward the seated man and his eyes have only just arrived there, travelling a few degrees below level toward the bottom-left of the frame. His chin is up and pushed slightly forward and his head is tilted a fraction back, so he is looking along his nose. His brows are level and relaxed, his lower eyelids are relaxed, his forehead is smooth and his jaw is loose. His mouth is closed with the corners very slightly drawn back. Caught mid-movement and unposed, unaware of the camera, his eyeline passing just left of the lens and never into it.
 
-A documentary press photograph on 35mm film — fine natural grain, muted cool-neutral colour, flat overcast daylight the only light source, even and shadowless, the sky pale grey and slightly overexposed. Real skin with visible pores, uneven tone and a matte sheen rather than gloss. His face is naturally asymmetric. Fine rain in the air, and raindrops landing on the front of the lens itself and sitting there as soft round out-of-focus blobs.
+Behind them: open wet tarmac with painted bays running away, then a distant row of ordinary parked cars as a low out-of-focus band, and above all of it a large area of empty pale grey sky, unbroken from edge to edge. The supermarket and its trolley shelter are far off to the right, well outside the frame.
 
-Constraints: He is not sad, not tired, not troubled, not thoughtful and not brooding. His head does not drop forward and his brow is not furrowed. His chin stays up and only his eyes travel down, and only slightly. His mouth stays closed. Nothing on his clothing carries a printed graphic, design or lettering. No supermarket, no shop front, no sign and no building of any kind is visible anywhere in the frame. His head and shoulders are against plain sky. The tent is only a blurred band along the bottom edge — no doorway opening is visible. His eyeline goes past the lens, never into it. No face other than his is visible. Nothing in the frame carries readable text.
+Light: the overcast sky is the only source, one soft light directly overhead — flat and shadowless across the tarmac, with shadow falling under the car's sills and under the standing man's jaw and brow.
+
+A documentary press photograph on 35mm film — fine natural grain, muted cool-neutral colour, the sky pale grey and slightly overexposed. Hyper-realistic skin texture with visible pores, uneven tone, slight asymmetry and a matte sheen rather than gloss. Fine rain in the air, and raindrops sitting on the front of the lens itself as soft round out-of-focus blobs. Every surface in the frame is plain and unlettered.
 
 Compose for a 16:9 frame.
 
 Thanks.
 ```
 
-**If it blocks, strip in this order, one per run — never re-roll unchanged:** `black BMW X8` →
-*a large black luxury SUV*; then `wet blue and grey tent nylon` → *wet blue and grey fabric*;
-then drop the interpretive sentence in `Action:` and keep only the anatomy.
+**Choosing between candidates — [`stills.md`](../../cinematography/stills.md) §6, in this
+order**, before any judgement about quality:
+
+1. **Is there an unresolved question?** Could he plausibly be getting back *in*? If it reads as
+   settled, reject regardless of how good it looks.
+2. **Do geometry and event arrive together** — the over-the-shoulder lines up at the same instant
+   his eyes land?
+3. **Are the three depth layers separated?**
+4. **Is there a visible cost** — does the foreground read as a person rather than a dark blur?
+5. **Did the Character land on the _standing_ man?** Two figures and one cast Character is the
+   new risk this design introduces.
+
+Only then: cover the bottom half of the frame; if the eyes and brow could pass for mild sadness,
+it is still wrong.
+
+**If it blocks, one change per run — never re-roll unchanged:** `black BMW X8` → *a large black
+luxury SUV*; then `in a heavy coat` → cut.
+
+### Round 1 — 2026-08-27, not accepted: a random man arrived
+
+**Everything the redesign was for landed.** The mid-exit pose came back exactly as specced — one
+foot down, one leg still in the car, hand on the door frame, body off balance inside the door's
+arc — and **the face is not sad**. Brow level, mouth closed, eyeline shallow. Four rounds of that
+failure are closed; moving the moment earlier was the fix.
+
+**What failed is new.** The foreground figure came back in **three-quarter profile with a fully
+invented face** — cheek, beard, ear and eye all legible, and sharper than f/4 at that distance
+allows — despite the prompt excluding it twice: *"Only his back is in view. His face is turned
+away and is not in the picture."*
+
+**That is an uncast character**, and it is the expensive kind of wrong: a likeness with no
+Character and no reference behind it, which every later shot with Bob in it would then have to
+match. It is this file's own standing rule firing — *faces in the background will not survive a
+generation* — and it is now recorded as an engine finding at
+[`nano-banana-2.md` §18](../../google-flow/nano-banana-2.md).
+
+**The fix, in the prompt above:** hide the face with **geometry**, not with a sentence. Camera
+square behind the skull so the back of the head occludes the rest, the figure close enough to the
+lens to be far out of focus, and the result described rather than the rule stated — the same
+lesson as the camera height, which was ignored three times as a number and obeyed first time as a
+consequence. **If round 2 still shows a cheek, delete the head from the frame** and keep only a
+shoulder: a body part that is not in the picture cannot grow a face.
+
+**Two watch-items unrelated to the face:** whether the standing man matches 4b / 5c / 7a, and the
+number plates on the distant parked cars, which came back with characters on them.
+
+### ⚠️ The superseded design, kept as a record
+
+The original 8b(i) was a **lone single** — Tarquin alone against sky, tent a blurred bottom band,
+85mm at four metres, and a five-clause `Constraints:` block negating the emotion. **Four rounds,
+never accepted.** It is preserved in git history at `4296d25`; do not restore it without reading
+the ruling above first.
+
+A second draft on 2026-08-27 fixed the phrasing and the framing but kept a **finished** action —
+*"having just got out"*, *"already finished looking"*. It was never run, and it would have failed
+the same way: `stills.md` §1 says a resting pose dies regardless of how well it is composed. That
+is the lesson worth keeping — **when a face will not perform, move the moment earlier rather than
+describing the face harder.**
 
 **8b(ii), Bob's reverse, is not written.** It is the same setup inverted: camera at standing
 height looking **down** into the tent mouth, cast `@Bob`, one face, the X8 as an out-of-focus

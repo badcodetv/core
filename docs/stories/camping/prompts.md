@@ -2,7 +2,7 @@
 story: camping
 kind: record — prompts typed into Flow by hand, not a generation brief
 flow_project: camping-v2 (`9b729074-da88-4668-a442-458e9a0f15ac`)
-updated: 2026-08-26
+updated: 2026-08-27
 ---
 
 # Camping — Flow prompt ledger
@@ -1100,3 +1100,51 @@ Audio: a sudden clatter of wings and alarm calls, then wind and nothing else.
 
 Thanks.
 ```
+
+---
+
+## Scene 8 — the car park
+
+### 8b — the two men, long lens · **still** · accepted 2026-08-27 · 🔒
+
+**Accepted round 1 of this design, after seven rounds across three earlier designs.** The
+shot Jack picked out of the whole scene — *"the blurryness and rain makes it so the details
+don't matter and it looks really cool."*
+
+**Reference:** the 8a car park plate, as the location. **Characters cast:** `@Tarquin-new`
+and `@Bob` — ⚠️ neither binds at this distance ([`nano-banana-2.md` §12](../../google-flow/nano-banana-2.md)),
+so the men are carried by the prose, not the Characters. Bob's description is lifted from
+[`characters/bob.md`](./characters/bob.md).
+
+**Why this design won.** Three earlier ones failed: a lone low single (four rounds, the face
+read sad), an over-the-shoulder (an invented face appeared in the foreground —
+[§18](../../google-flow/nano-banana-2.md)), and a from-inside-the-car shot (good, but needed
+`@Bob` and never got a second run). **The long lens solved the face problem by removing faces
+from the argument** — at forty metres through rain, no likeness has to hold. It is also the
+one shot in camping that reaches for **British social realism** — Loach's long lens from a
+distance ([`registers.md` §4](../../cinematography/registers.md)) — the register `R1` names as
+closest to our reader's own visual vocabulary and which we had never used.
+
+```prompt
+Generate a still photograph. Use the attached car park image as the reference for the location: the same painted bays and wet tarmac, the same rows of ordinary small cars, the same overcast winter light, the same muted colour and grain, and the same black BMW X8.
+
+Camera: a long telephoto lens, 200mm at f/4, from about forty metres away across the car park, at the chest height of a standing person and level, not tilted. The long lens flattens the whole scene onto one plane, so the rows of cars, the two men and the far side of the car park are stacked on top of one another with almost no sense of distance between them. Running across the very bottom of the frame and thrown completely out of focus, the wet roofs of two ordinary parked cars in the near row, which the camera is looking between.
+
+In the middle distance, small in the frame and seen side on: the black BMW X8, stopped square across the painted white line between two parking bays and filling both of them, its driver's door standing open. Pitched in the very next bay, close enough that the open door almost reaches it, a cheap two-person dome tent in faded blue and grey, sagging at one corner where a pole is bowed, a square of duct tape over a tear in the flysheet.
+
+The two men are only three or four metres apart with nothing between them but wet tarmac. Standing on the tarmac beside the open door, the man from the first character reference: an olive gilet over a dark jumper, dark jeans, standing straight and still, his head up and turned toward the seated man, looking at him. Sitting on the ground at the mouth of the tent, the man from the second character reference: a white British man of about fifty, weathered older, in a dark woollen beanie and a charity-shop coat a size too big worn over a hoodie and more layers, everything grimed and soft from being lived in. He sits hunched with his knees drawn up and his hands pushed into his sleeves, turned toward the standing man. Both men are far away and small, and both are softened by distance and by the rain in the air between them and the camera, so no detail of either face can be made out.
+
+Behind them: more painted bays running away, a far row of ordinary parked cars stacked flat by the long lens, and a narrow band of empty pale grey sky along the top of the frame. No building of any kind stands behind them.
+
+Light: the overcast sky is the only source, flat and shadowless across the whole car park, the tarmac dark and wet and the sky pale grey and slightly overexposed.
+
+A documentary press photograph on 35mm film taken from a long way off — fine natural grain, muted cool-neutral colour, compressed perspective, shallow focus falling away in front of and behind the two men. Heavy fine rain falling through the whole frame, visible as streaks against the pale sky and the dark cars. Every surface in the frame is plain and unlettered.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+⚠️ **Known and accepted:** the faces read slightly strange at full size. **Left alone
+deliberately** — they are tiny and rain-softened, and the fix for them is not a better still,
+it is keeping the clip near-static so the engine has no reason to re-render them.
