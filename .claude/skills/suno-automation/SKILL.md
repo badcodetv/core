@@ -276,6 +276,41 @@ voices in the Style box — which is all the Camping sheets — must abort when 
 because a Voice beats the Style box and the take will sound *plausible*, just not cast.
 `cover-genre.mts` carries the reference implementation (`EXPECT_VOICE` / `NO_VOICE`).
 
+### 🔴 CHECK THE MODE BEFORE THE BOXES — the most expensive miss so far (2026-08-27)
+
+**The create form has FOUR mode tabs — Simple · Audio · Custom · Cover — and an
+`Audio / Voice / Inspo` attachment row. Filling the four boxes clears NONE of it.**
+
+So a form inherited in **Cover** mode with a source attached **silently generates covers of
+somebody else's track**, carrying that track's arrangement — while `status` reports style,
+excludes, lyrics, sliders, title and workspace all perfectly correct.
+
+📎 **What it cost:** two GPOM narration pairs (revisions A and B, **40 credits**) were generated as
+covers of a Camping source left attached by another session. Both void. And it produced a
+convincing false diagnosis — "there is music under my dry read" was blamed on the taste box and on
+audio-influence bleed from the cloned Voice. **Those were real bugs and worth fixing, but the cover
+attachment was the dominant cause and nobody had looked at it.**
+
+🔑 **The lesson generalises: `status` reads the boxes, not the KIND of thing being made.** A
+green-looking form is not a safe form.
+
+`load` now calls `formMode(page)` **before it fills anything** and aborts when the mode is not
+`custom` or when anything is attached. Pass `mode: 'cover'` in the spec when a cover is genuinely
+wanted. ⬜ **The check reports; it does not clear.** Removing an attachment is still a human act —
+the selectors have had exactly one live read and are otherwise unverified.
+
+### 🔴 ONE SUNO TAB, EVER — Kai's ruling, 2026-08-27
+
+*"I'm going to say that we're never going to run more than one Suno tab at a time, because I think
+we're getting in a real mess here."*
+
+**Not one session per channel. One tab, full stop.** Everything that matters is account-level — the
+create form, its mode and attachments, My Taste, the Voice list, the credit pool — so two tabs are
+two hands on one instrument. The freedom token below manages the handover **between** sessions; it
+does not make them concurrent.
+
+**If another session is working, WAIT.** Do not open a second tab to be helpful.
+
 ### 🔑 THE FREEDOM TOKEN — `MUST_REPLACE_HERE`
 
 **Kai's ruling, 2026-08-27. A lock file in reverse.** My Taste **cannot be saved empty** — a

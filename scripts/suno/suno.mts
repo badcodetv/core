@@ -73,6 +73,19 @@ export interface SunoSpec {
    */
   taste?: string
   applyTaste?: boolean
+  /**
+   * 🔴 Which MODE the create form must be in. Default `'custom'` — a plain generation.
+   *
+   * The form has FOUR mode tabs (Simple · Audio · Custom · Cover) and an Audio/Voice/Inspo
+   * attachment row, and **none of it is cleared by filling the four boxes.** A session that
+   * leaves the form in **Cover** mode with a source attached hands the next session a form that
+   * silently generates COVERS of somebody else's track — carrying that track's arrangement, which
+   * looks exactly like "music is leaking into my dry read".
+   *
+   * Proven 2026-08-27: two GPOM narration pairs (revisions A and B, 40 credits) were generated as
+   * covers of a Camping source left attached by another session. Both are void.
+   */
+  mode?: 'custom' | 'cover'
   /** Saved Voice display name, e.g. "badcode newsreader". */
   voice?: string
   /** Base title. `pair` appends `-w30` / `-w60`. */
@@ -393,6 +406,38 @@ export async function verify(page: Page) {
 
 /** Load all four boxes plus voice, title and workspace. Does NOT generate. */
 /**
+ * What MODE is the form in, and is anything attached?
+ *
+ * 🔴 The single most expensive thing we have failed to check. Filling style/excludes/lyrics does
+ * not clear a mode tab or an attached audio source, so an inherited form generates the wrong KIND
+ * of thing while every box reads correctly.
+ *
+ * ⬜ **Selectors UNVERIFIED beyond a single live read on 2026-08-27.** They report; they do not
+ * yet clear. Clearing an attachment is still a human act.
+ */
+export async function formMode(page: Page): Promise<{ mode: string | null; attached: string | null }> {
+  const raw = await ev(
+    page,
+    `const c = s => (s||'').replace(/\\s+/g,' ').trim();
+     const live = e => e && e.offsetParent !== null;
+     const tabs = [...document.querySelectorAll('[role=tab],button')].filter(live)
+       .filter(x => /^(simple|audio|custom|cover)$/i.test(c(x.innerText)));
+     const on = tabs.find(x => x.getAttribute('aria-selected') === 'true'
+       || /(selected|active)/i.test(String(x.className)));
+     // A Cover/Audio source shows as a clip card with a title next to the attachment row.
+     const row = [...document.querySelectorAll('div')].find(e => live(e) && c(e.textContent) === 'AudioVoiceInspo');
+     const near = row && row.parentElement ? c(row.parentElement.textContent) : '';
+     const src = near.replace('AudioVoiceInspo', '').trim();
+     return JSON.stringify({ mode: on ? c(on.innerText) : null, attached: src ? src.slice(0, 80) : null });`,
+  )
+  try {
+    return JSON.parse(raw as string)
+  } catch {
+    return { mode: null, attached: null }
+  }
+}
+
+/**
  * Fill a box and PROVE it took.
  *
  * 🔴 The exclude box truncates on a repeated fill — proven five times now (117/831, 169/871,
@@ -422,6 +467,26 @@ async function load(page: Page, spec: SunoSpec, weirdness?: number) {
     await page.goto(CREATE_URL, { waitUntil: 'domcontentloaded' })
     await page.waitForTimeout(4000)
   }
+  // 🔴 MODE FIRST. Filling boxes does not clear a mode tab or an attached source, and an
+  // inherited Cover form generates a cover of someone else's track with every box reading right.
+  const want = spec.mode ?? 'custom'
+  const fm = await formMode(page)
+  if (fm.mode && fm.mode.toLowerCase() !== want) {
+    throw new Error(
+      `create form is in ${fm.mode.toUpperCase()} mode, expected ${want.toUpperCase()}` +
+        (fm.attached ? ` with "${fm.attached}" attached` : '') +
+        `. Filling the boxes will NOT clear it — switch the tab and remove the attachment by hand, ` +
+        `then re-run. (Set \`mode: 'cover'\` in the spec if a cover is actually what you want.)`,
+    )
+  }
+  if (want === 'custom' && fm.attached) {
+    throw new Error(
+      `create form has "${fm.attached}" ATTACHED as a source. A plain generation must have nothing ` +
+        `attached — otherwise the take inherits that track's arrangement. Remove it by hand and re-run.`,
+    )
+  }
+  console.log(`mode: ${fm.mode ?? 'unknown'}${fm.attached ? ` · attached: ${fm.attached}` : ' · nothing attached'}`)
+
   // 🔑 THE ATOM: taste + style + exclude + lyrics change together or not at all.
   if (spec.applyTaste === false) {
     console.log('taste: SKIPPED (slider-only round — no prompt box may change either)')

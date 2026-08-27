@@ -1296,3 +1296,39 @@ await trans[0].getName();                                // throws — the item 
 Whether `add_transition` fails on *every* track in this project or only on this one was **not
 tested** — it would have meant mutating a clip the user was actively working on. Test it on a
 scratch sequence before concluding the tool is broken.
+
+## 🟢 A sequence's frame rate CAN be changed in place (2026-08-27)
+
+Received wisdom is that you rebuild the sequence. You don't. `sequence.getSettings()` returns a
+settings object carrying `setVideoFrameRate`, and `sequence.createSetSettingsAction(settings)`
+applies it through the normal transaction path — clips, effects and keyframes all survive.
+
+```js
+const project  = await helpers.activeProject();
+const seq      = await helpers.activeSequence(project);
+const settings = await seq.getSettings();
+settings.setVideoFrameRate(ppro.FrameRate.createWithValue(24));
+helpers.withTransaction(project, 'sequence to 24fps', ca => {
+  ca.addAction(seq.createSetSettingsAction(settings));
+});
+```
+
+`ppro.FrameRate.createWithValue(24)` yields `ticksPerFrame = 10584000000`
+(254016000000 ÷ 24). 25fps is 10160640000. The sequence's `timebase` field is that number, so it
+is how you check the change landed.
+
+**What it does to the edit:** every clip start and end **requantises to the new grid**, and on a
+25 → 24 move that is a *correction*, not damage. Beats that had been forced off their true length
+came back exact — a 3.500s clip that 25fps had rounded to 3.48s went back to 3.500s, and a 13.875s
+clip that read 13.88 went back to 13.875.
+
+⚠️ **One clip lost its last frame** (timeline duration 8.2917s against a source out-point of
+8.3333s). Check every clip's `end - start` against its media length afterwards and re-trim; it is
+a single `premiere_trim_clip` call.
+
+⚠️ **Keyframes do not move** — they are stored in ticks, not frames. But a rendered frame at a
+given second WILL differ from before, because the old rate was conforming the media by duplicating
+frames and the new one is not. A non-zero diff across the change is correct. Verify by looking at
+the picture, not by diffing against the old render.
+
+🔑 **Back the `.prproj` up first.** It is one `cp` and the project lives outside git.

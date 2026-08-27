@@ -1,6 +1,6 @@
 ---
 title: Camping (half-time cover) — genre overlays on the accepted h12 take
-status: ROUND c2 — 2026-08-27, the anti-cheese pass. c1 rejected by Jack as "too early 2000s cheesy".
+status: ROUND c4 — 2026-08-27, the flair pass (operatic intro + one guitar solo) over c3c's grid. Verdict pending.
 source_take: "Camping HT AJ rap-rock W45 (h12)" (03:14) — attached by hand, song page → ⋯ → Remix ▸ Cover
 parent_sheet: ./camping-halftime.md
 words_canon: ./camping.md  # §4 — the words, unchanged by this experiment
@@ -135,23 +135,61 @@ Subject: British class, money, work, and the people the economy left behind.
 ```
 
 
+**Lane D — flair post-punk (913 chars).** 🎸 **Lane A plus exactly two flourishes**, and
+nothing else changed — so a c4 take set against its c3c twin at the same Audio Influence and
+Weirdness isolates the flair and nothing but the flair. Kai, 2026-08-27: *"a kind of operatic
+woman's voice might be a good bit of flair. A kind of guitar solo might be a good bit of flair."*
+
+🔴 **Both flourishes are cheese vectors and are fenced as such.** An operatic soprano over a
+dance beat is one bar away from trance-diva; a guitar solo is one bar away from the hair-metal
+sound Jack already rejected. The fence is that **both are placed, brief and non-melodic**: the
+voice is a *sampled* wordless phrase heard through tape hiss (the jungle/rave tradition of
+lifting an aria, not a symphonic-metal duet), and the solo is eight atonal howling bars, not a
+tune. `symphonic metal`, `gothic metal`, `power ballad`, `shred`, `harmonized twin lead`,
+`hair metal`, `diva house` and `trance vocal` all go into §3 in the same round to hold the line.
+
+```
+Dark industrial drum and bass, 174 BPM, minor key, mixed like a dub soundsystem — flat deadpan British spoken-word vocal on top, ranted and metrical, locked to the beat at full 174, never sung, no chorus, no hook. Verse one, a weathered British man in his fifties: low, gravelly, smoke-worn. Verse two, a well-spoken British man: higher, clean, plummy BBC English, from a wide room. A wiry post-punk guitar throughout — trebly angular single-note lines, staccato, dissonant, natural amp distortion, never a power chord. Two flourishes and no others: the track opens on one wordless operatic soprano phrase, sampled and far off through tape hiss, cut dead by the first breakbeat; and one short howling guitar solo, eight bars, atonal and feeding back, arriving at the last drop only. Dry, raw and close-mic'd — no reverb wash, no polish, no radio sheen. Bleak, mechanical and hostile, never anthemic, never jaunty.
+```
+
+```taste
+Vocals: flat deadpan British spoken-word — ranted, metrical, locked to the beat at full 174, never sung and never rapped. Two white British men in their late forties and fifties, and they must stay two different men. One is low, gravelly and smoke-worn, into a cheap close mic: a working-men's-club voice. The other is higher, clean and plummy BBC English, unhurried, from a wide room. The only other voice on the record is a wordless operatic soprano, sampled and distant, used at the top and never developed.
+
+Music: dark industrial drum and bass at 174 BPM, minor key, mixed like a dub soundsystem. Sub bass first and loudest, everything stripped back around it. Dry chopped breakbeats and amen rolls tearing across the bar. No chorus anywhere on this record. Guitars are wiry, trebly and dissonant — angular single-note figures, staccato and percussive, natural amp distortion, never power chords, never a hummable riff. Exactly one guitar solo exists on the record: eight bars at the last drop, atonal and howling with feedback, never melodic and never virtuosic.
+
+Register: bleak, dystopian, angry and completely serious. Dry, raw and close-mic'd — no reverb wash, no polish, no radio sheen. Machine-cold and hostile. Never anthemic, never jaunty, never feel-good.
+
+Subject: British class, money, work, and the people the economy left behind.
+```
+
+
 ## 3. Exclude Styles
 
-**883 characters** — under the 933 this field has been proven to hold (see
+**924 characters** — under the 933 this field has been proven to hold (see
 [`camping-halftime.md`](./camping-halftime.md) §3; it truncates silently rather than refusing, and
 the runner asserts the length back).
 
-**Restored after h12 lifted them:** `singing`, `sung verses`, `sung chorus`, `melodic vocal`,
-`vocal melody`, `vocal hooks`, `clean sung melody`. **Newly banned, aimed squarely at Jack's
-note:** `nu metal`, `rap rock`, `pop punk`, `post-grunge`, `emo`, `radio rock`, `arena rock`,
-`anthemic`, `big chorus`, `gang vocals`, `polished production`. **`power chords` is banned again**
-— it is the pop-punk signature and lane A/B both say `never a power chord` in the style box too.
+🔴 **This list moved with lane D — the four-box atom.** Five bans were **lifted for c4 because
+they contradicted the flourishes Kai asked for**, and an exclude that fights the style box is how
+we have burned credits twice before (h10 asked for a lead guitar while `guitar solo` was banned;
+h11 asked for dub piano while `piano` was banned). Lifted: **`soprano`**, **`operatic vocals`**,
+**`female vocal`**, **`vibrato`** (the intro flourish) and **`guitar solo`** (the last-drop
+flourish). `instrumental break` went with them — eight bars of solo needs somewhere to sit.
 
-`guitar solo` is banned again as well: post-punk is figures, not solos. `live rock band` stays
-**lifted** — real instruments are still wanted, and the register words control what kind.
+**Bare `singing`, `melodic vocal` and `vocal melody` also had to go**, because a sung operatic
+phrase is all three. The structural bans that actually protect the two men are **kept**:
+`sung verses`, `sung chorus`, `vocal hooks`, `clean sung melody`, `crooning`, `harmonies`. So the
+record still cannot grow a sung hook — it can only carry one wordless sampled line.
+
+**Ten new bans replace them**, aimed at the two ways this flair turns to cheese:
+`symphonic metal`, `gothic metal`, `power ballad`, `shred`, `sweep picking`,
+`harmonized twin lead`, `hair metal`, `blues rock`, `guitar hero` (the solo) and `diva house`,
+`trance vocal`, `new age` (the voice). `choir` stays banned — one distant soprano, never a massed
+one. `power chords` stays banned. `extended intro` stays banned: the flourish is brief or it is
+not a flourish.
 
 ```
-singing, sung verses, sung chorus, melodic vocal, vocal melody, vocal hooks, clean sung melody, crooning, autotune, harmonies, nu metal, rap rock, pop punk, post-grunge, emo, radio rock, arena rock, anthemic, big chorus, gang vocals, polished production, grime MC, UK drill, road rap, trap, young MC, American accent, ragga MC, Jamaican accent, soprano, operatic vocals, vibrato, female vocal, choir, orchestral strings, violins, cello, piano, marching band, oompah, dixieland, power chords, guitar strumming, acoustic guitar, guitar solo, reggae, ska, 2 tone, offbeat guitar, upstroke guitar, skank rhythm, music hall, pantomime, liquid dnb, jump up, feel good, festival, happy hardcore, bright synths, euphoric, pop, jaunty, bouncy, comedic, parody, uplifting, major key, double time, tempo change, slow tempo, long instrumental, extended intro, instrumental break, vamp, outro jam
+sung verses, sung chorus, vocal hooks, clean sung melody, crooning, autotune, harmonies, nu metal, rap rock, pop punk, post-grunge, emo, radio rock, arena rock, anthemic, big chorus, gang vocals, polished production, symphonic metal, gothic metal, power ballad, shred, sweep picking, harmonized twin lead, hair metal, blues rock, guitar hero, diva house, trance vocal, new age, grime MC, UK drill, road rap, trap, young MC, American accent, ragga MC, Jamaican accent, choir, orchestral strings, violins, cello, piano, marching band, oompah, dixieland, power chords, guitar strumming, acoustic guitar, reggae, ska, 2 tone, offbeat guitar, upstroke guitar, skank rhythm, music hall, pantomime, liquid dnb, jump up, feel good, festival, happy hardcore, bright synths, euphoric, pop, jaunty, bouncy, comedic, parody, uplifting, major key, double time, tempo change, slow tempo, long instrumental, extended intro, vamp, outro jam
 ```
 
 ## 4. Lyrics — untouched
@@ -163,6 +201,36 @@ refuses to spend a credit if they have drifted.
 ---
 
 ## 5. Round log
+
+### c4 — 2026-08-27, the flair round. 12 takes, **verdict pending**.
+
+Kai pulled a keeper out of c3c (`7e189d33-0e73-4549-a5ae-30bb61cf50fc`) and asked for flourish:
+*"in the introduction, a kind of operatic woman's voice might be a good bit of flair. A kind of
+guitar solo might be a good bit of flair."* c4 is **lane D — lane A plus exactly those two things
+and nothing else**, run over c3c's identical grid (AI 10/25 × W 30/45/60, SI 75), so any take can
+be A/B'd against its c3c twin with the flair as the only difference.
+
+🔴 **The exclude list was banning the brief.** `soprano`, `operatic vocals`, `female vocal`,
+`vibrato` and `guitar solo` were all still banned from the anti-cheese pass, and bare `singing`,
+`melodic vocal` and `vocal melody` bar a sung phrase of any kind. Caught offline, before a credit
+was spent — the third time this sheet's own excludes have fought its own style box (h10: lead
+guitar, h11: dub piano). **Standing rule: a prompt round reads §3 out loud against the new style
+box before it runs.** Ten replacement bans went in to fence the two cheese vectors the flourishes
+open (`symphonic metal`, `power ballad`, `shred`, `hair metal`, `guitar hero`, `diva house`,
+`trance vocal`, `new age`…), and the bans protecting the two deadpan men were all kept.
+
+🔴 **Duration is Auto again, and the c3c claim is retracted.** This runner previously pinned 240
+on the reasoning that it was "a ceiling that does not bind". It binds: **every c3c take came back
+3:59–4:00 against 3:10–3:44 on Auto** in every earlier round, so ~45s of invented material was
+padded into a cover of a 3:14 source and c3c is **not length-comparable** to c1–c3b. c4 runs on
+Auto, and `guard()` now **aborts on a mounted Duration slider** rather than trusting what it
+finds — Auto is a declared state like any other, not an absence of one.
+
+**What went right, and is worth keeping as the shape of a clean run:** the form was reset by hand
+to a single song (Kai, 2026-08-27: no more switching between two Suno sheets), the freedom token
+was found intact, all six Creates passed the Voice / cover / lyric-paragraph / style-length /
+exclude-length guards, and the token was written back at the end. Twelve takes, all in
+`camping-duet`, all titled `(c4)`.
 
 ### c3b — 2026-08-27, the clean re-run of c3 under the four-box rule.
 

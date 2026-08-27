@@ -93,7 +93,7 @@ const LANES = lanes()
  *    generated. c3 re-runs post-punk at AI 10/25 — two of its six (AI10 W45, AI25 W45) are
  *    byte-identical to c2's titles without this suffix.
  */
-const SET = ' (c3c)'
+const SET = ' (c4)'
 
 /**
  * The round: which lanes, and the slider grid over them. c2 swept lane with Weirdness pinned;
@@ -101,7 +101,7 @@ const SET = ' (c3c)'
  * time across rounds, which is the whole method.
  */
 const ROUND = {
-  lanes: ['postpunk'],
+  lanes: ['flair'],
   audioInfluences: [10, 25],
   weirdnesses: [30, 45, 60],
 }
@@ -200,16 +200,29 @@ function guard(s: Record<string, unknown>, paras: number): string[] {
         : `🔴 A VOICE IS ATTACHED ("${s.voice}") and this sheet casts its voices in the Style box — remove it in the create form`,
     )
   }
+  // 🔴 DURATION. On Auto the slider is absent; a mounted one is a custom length someone else set,
+  //    and it silently rewrites how long every take is (c3c: 3:59–4:00 against 3:10–3:44 on Auto).
+  const dur = (s.sliders as string[]).find((x) => x.startsWith('Duration='))
+  if (DURATION_SEC === null && dur) bad.push(`🔴 Duration is pinned (${dur}) — this sheet runs on Auto; clear it in More Options`)
+  if (DURATION_SEC !== null && dur !== `Duration=${DURATION_SEC}`) bad.push(`🔴 Duration reads ${dur ?? 'Auto'}, expected ${DURATION_SEC}`)
   return bad
 }
 
 /**
- * 🔴 DURATION. The control is a soft target that shortens reliably and fails to stretch, so it is
- *    pinned ABOVE the ~3:20 these takes come back at rather than left wherever it was found. On
- *    2026-08-27 a concurrent session left it at 180 (3:00), which would silently have clipped
- *    every take; c1–c3 ran with it unmounted (Auto). 240 is a ceiling that does not bind.
+ * 🔴 DURATION — AUTO, AND ASSERTED AS AUTO.
+ *
+ *    The claim this constant used to carry ("240 is a ceiling that does not bind") is FALSE, and
+ *    c3c is the evidence: all twelve of its takes came back 3:59–4:00 against 3:10–3:44 on Auto in
+ *    every earlier round. The control does not behave like a ceiling — it behaves like a target,
+ *    and it stretches as readily as it shortens. Pinning it to 240 padded ~45s of invented
+ *    material into a cover of a 3:14 source and made c3c non-comparable to everything before it.
+ *
+ *    So the declared state is Auto, which on this page means the slider is NOT MOUNTED AT ALL.
+ *    That is still a declaration under the inheritance-is-a-bug rule, and it is still asserted:
+ *    a mounted Duration slider means someone set a custom length and the guard aborts. Set this
+ *    to a number only for a sheet that genuinely wants a fixed length.
  */
-const DURATION_SEC = 240
+const DURATION_SEC: number | null = null
 
 async function loadVariation(page: Page, v: Variation, title = titleFor(v)) {
   const style = v.lane.style
@@ -231,7 +244,7 @@ async function loadVariation(page: Page, v: Variation, title = titleFor(v)) {
   await setSlider(page, 'Style Influence', STYLE_INFLUENCE)
   await setSlider(page, 'Weirdness', v.weirdness)
   await setSlider(page, 'Audio Influence', v.audioInfluence)
-  await setDuration(page, DURATION_SEC)
+  if (DURATION_SEC !== null) await setDuration(page, DURATION_SEC)
   await setTitle(page, title)
   const s = await coverState(page)
   if (fills.some((f) => f.startsWith('🔴'))) bad.push(`fill: ${fills.join(' · ')}`)

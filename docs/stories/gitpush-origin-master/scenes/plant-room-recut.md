@@ -469,9 +469,11 @@ positions, the last blinking on `lt(mod(t-0.86,0.72),0.44)`. Then `frei0r=glow:0
 
 ## Still owed
 
-- [ ] 🔴 **fps.** The sequence is **25fps**; every clip here is **24fps**. Premiere conforms for
-      viewing, but the post builds should be re-rendered at 25 (free) and a decision taken on the
-      Veo clips before delivery.
+- [x] ✅ **fps — settled 2026-08-27.** The sequence is now **24fps**, matching every clip. Changed
+      **in place** rather than by rebuilding (`docs/premiere/api-notes.md` — `setVideoFrameRate` +
+      `createSetSettingsAction`), so nothing was relaid and no effect was lost. It also *fixed*
+      two beats the 25fps grid had been rounding: `HK-b2-tower` 3.48 → **3.500s**, `B5-POST-v2`
+      13.88 → **13.875s**.
 - [ ] B2 runs 6s against a 5s beat — trim 1s, or keep and re-budget.
 - [ ] Veo-generated audio on A1, 83.56–128.56 (6 clips) — Kai removing by hand.
 - [ ] The Premiere layer the plan always called for: B1's 3-layer parallax push, **B3's
