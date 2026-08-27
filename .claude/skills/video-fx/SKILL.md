@@ -48,7 +48,16 @@ drive anything.
 
 ## Step 1 — Lane choice, before anything else
 
-**Five lanes.** Pick by what the job actually needs, not by habit.
+> **🔴 Read this before the table. Ruled 2026-08-26 (Kai): the lanes are LAYERS, not alternatives.**
+> On any shot where the world moves *and* the camera moves — most of them — you build all three:
+> **Veo animates the world with the camera locked, Premiere moves the camera over the finished
+> clip, ffmpeg does what must be exact.** Veo's regeneration bug is caused by camera translation,
+> so locking the camera stops it firing; the move is then rigid by construction, any length, exact
+> easing, free. **Method: [`hybrid-method.md`](../../../docs/video-fx/hybrid-method.md).**
+> It also carries the standing rule that **8 seconds is not a limit** — chain the last frame of
+> one clip into the first of the next — and the list of what ffmpeg can do that Premiere cannot.
+
+**Five lanes.** Pick by what the job actually needs, not by habit — and remember they compose.
 
 | Lane | Reach for it when | Why |
 | --- | --- | --- |
@@ -69,9 +78,23 @@ drive anything.
 
 ## Step 2 — "What effect does X?"
 
-🔴 **Check the catalogue before searching the web.** 106 effects and 118 transitions are already
-installed, harvested live and grouped by what you would actually ask for:
-[`docs/premiere/effects-catalogue.md`](../../../docs/premiere/effects-catalogue.md).
+🔴 **There are TWO catalogues and the answer is always both.** *(Ruled 2026-08-26, Kai.)* Asked
+"what effects can we apply" — or browsing for one — **list Premiere and ffmpeg together**, never
+one of them.
+
+| Catalogue | Holds | Live count |
+| --- | --- | --- |
+| [`docs/premiere/effects-catalogue.md`](../../../docs/premiere/effects-catalogue.md) | Premiere effects + transitions + measured param indices | **106 effects · 118 transitions** |
+| [`docs/video-fx/ffmpeg-catalogue.md`](../../../docs/video-fx/ffmpeg-catalogue.md) | ffmpeg filters **and the frei0r plugin shelf** | **319 video filters · 133 frei0r plugins** |
+
+🔴 **Check both before searching the web.** Between them the answer is nearly always already
+installed. `./scripts/ffmpeg-catalogue.sh` re-harvests the ffmpeg side after an upgrade.
+
+**Eight things only ffmpeg can do** — and the first one bites constantly: **Premiere's API cannot
+write a string at all**, so any automated text is `drawtext`. Also ffmpeg-only: real blend modes,
+`geq` per-pixel maths with a time variable, `photosensitivity` (run it on any strobe or alarm
+sequence), `displace`/`remap`, `sendcmd`, headless `vidstab`, and the measurement filters the
+delivery gate asserts on. The table is in the ffmpeg catalogue's opening section.
 
 | The ask | Go to |
 | --- | --- |
@@ -84,7 +107,10 @@ installed, harvested live and grouped by what you would actually ask for:
 | Text on screen | effects-catalogue § *Text and graphics without a MOGRT*, **or** the 77 installed templates in [`mogrt-catalogue.md`](../../../docs/premiere/mogrt-catalogue.md) |
 | Dissolves and which one | effects-catalogue § *The ones you will actually use* |
 | A concrete tool call for any of it | [`docs/premiere/recipes.md`](../../../docs/premiere/recipes.md) — the cookbook |
-| An ffmpeg filter | [`docs/flow/post-production.md`](../../../docs/flow/post-production.md) first, then briefs 12–18 |
+| An ffmpeg filter | [`docs/video-fx/ffmpeg-catalogue.md`](../../../docs/video-fx/ffmpeg-catalogue.md) to browse; [`docs/flow/post-production.md`](../../../docs/flow/post-production.md) for a tested recipe |
+| Text on screen, **automated** | 🔴 ffmpeg `drawtext` — Premiere's API cannot set a string. ffmpeg-catalogue § *Text and generators* |
+| An audio fade, duck or loudness pass | 🔴 ffmpeg — Premiere has **no audio-transition API at all**. ffmpeg-catalogue § *Audio* |
+| Which layer does this belong to? | [`docs/video-fx/hybrid-method.md`](../../../docs/video-fx/hybrid-method.md) |
 
 **Not in the catalogue?** Read [`docs/video-fx/README.md`](../../../docs/video-fx/README.md)
 § *What we deliberately don't own* — it names the free route for every paid tool we refuse.

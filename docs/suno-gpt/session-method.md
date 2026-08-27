@@ -9,6 +9,29 @@ spent on a mistake the process below would have caught in one.
 
 ---
 
+## 🔑 One variable per round — and the four boxes are ONE variable
+
+*Ruled 2026-08-27 by Kai, after a shared My Taste box biased fourteen Camping rounds.*
+
+**A "style" is four boxes, not one:** My Taste, Style, Exclude styles, Lyrics. They describe the
+same sound, so **they change together or not at all.** Changing three of four leaves a hybrid
+nobody designed — and My Taste, being account-wide and invisible from the create page, is always
+the one left behind.
+
+**So "one variable per round" has exactly two readings, and you name which before you start:**
+
+| Level | What moves | What must NOT move |
+| --- | --- | --- |
+| **Prompt round** | **all four boxes**, as one atom | — |
+| **Slider round** | audio influence · style influence · weirdness | **every prompt box** |
+
+Changing a prompt *and* a slider in one round teaches you nothing. Within one atom, run as many
+slider rounds as you like — that is the cheap axis, and the weirdness 30/60 pair lives there.
+
+**Write each experiment as a self-contained block holding all four boxes**, with the taste as a
+```taste fence inside it. A shared taste section is the old model and it is how profiles get
+stranded. Mechanics: [`automation.md`](./automation.md); enforcement is in `suno.mts`.
+
 ## The three layers, and why they must stay separate
 
 Every session produces three different kinds of writing. Mixing them is how a toolkit rots.

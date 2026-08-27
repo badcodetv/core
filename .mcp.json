@@ -6,7 +6,7 @@
         "-y",
         "@playwright/mcp@latest",
         "--cdp-endpoint",
-        "http://localhost:9222"
+        "http://localhost:${FLOW_CDP_PORT:-9222}"
       ]
     },
     "flow": {

@@ -12,6 +12,10 @@ coverage/
 
 # Flow automation: persistent, logged-in Chrome profile (never commit — holds Google session)
 .flow-profile/
+.flow-profile-*/
+
+# Browser channel locks — PID files, per-machine, never shared
+.flow-channels/
 
 # Flow automation: scratch screenshots from the Playwright/CDP browser workflow
 # (keep the folder + its README, ignore the captured PNGs)

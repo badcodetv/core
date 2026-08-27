@@ -1,9 +1,9 @@
 /**
  * badcode — drive Suno's create page over CDP.
  *
- * Attaches to the already-logged-in Chrome that `scripts/flow-chrome.sh` launches (CDP 9222,
- * the same browser Flow uses). Never launches or kills a browser: close() on a connectOverCDP
- * browser only detaches.
+ * Attaches to the already-logged-in Chrome on THIS SESSION'S CHANNEL — the same browser Flow
+ * uses. Get one with `./scripts/browser-channel.sh claim`; never pick a port by hand. Never
+ * launches or kills a browser: close() on a connectOverCDP browser only detaches.
  *
  * The DOM map, the five silent traps and the operating protocol are documented in
  * docs/suno-gpt/automation.md. Read it before changing anything here — every workaround below
@@ -18,17 +18,59 @@
  * This file must stay `.mts`: tsx transforms `.ts` as CJS and rejects top-level await.
  */
 import { chromium, type Browser, type Page } from 'playwright'
-import { readFileSync } from 'node:fs'
+import { readFileSync, readdirSync, writeFileSync } from 'node:fs'
 
-const ENDPOINT = 'http://localhost:9222'
+/**
+ * CHANNELS — one browser per Claude session (2026-08-26). Suno shares its session's Flow
+ * browser, so it must resolve the same channel rather than assuming 9222.
+ *
+ * Precedence: SUNO_CDP_ENDPOINT → FLOW_CDP_PORT → the channel this session's flow MCP server
+ * has locked → 9222. Get a channel with `./scripts/browser-channel.sh claim`; never pick a port.
+ */
+function resolveEndpoint(): string {
+  if (process.env.SUNO_CDP_ENDPOINT) return process.env.SUNO_CDP_ENDPOINT
+  if (process.env.FLOW_CDP_PORT) return `http://localhost:${process.env.FLOW_CDP_PORT}`
+  // A .flow-channels/<n>.lock names the channel a live session holds. Take that one, so Suno
+  // and Flow in the same session share a browser instead of racing for two.
+  try {
+    const dir = new URL('../../.flow-channels/', import.meta.url)
+    for (const f of readdirSync(dir).sort()) {
+      const m = /^(\d+)\.lock$/.exec(f)
+      if (!m) continue
+      const pid = Number(readFileSync(new URL(f, dir), 'utf8').trim().split(/\s+/)[0])
+      // Signal 0: EPERM means it exists but is another user's — still alive.
+      let alive = false
+      try {
+        process.kill(pid, 0)
+        alive = true
+      } catch (e) {
+        alive = (e as NodeJS.ErrnoException)?.code === 'EPERM'
+      }
+      if (alive) return `http://localhost:${9221 + Number(m[1])}`
+    }
+  } catch {
+    /* no lock dir yet — fall through to the default */
+  }
+  return 'http://localhost:9222'
+}
+const ENDPOINT = resolveEndpoint()
 const CREATE_URL = 'https://suno.com/create'
+/** Where `taste <file>` stashes the previous account-wide profile before overwriting it. */
+const BACKUP = new URL('.my-taste-backup.txt', import.meta.url).pathname
 
 /** A scene's four boxes plus how to file and grade it. */
 export interface SunoSpec {
   style: string
   exclude: string
   lyrics: string
-  /** Shared My Taste block. Only written when `applyTaste` is set — it is account-wide. */
+  /**
+   * 🔑 My Taste — the FOURTH BOX, and part of the atom (Kai, 2026-08-27).
+   *
+   * It is account-wide, so it is the one box that persists between runs and the one that
+   * silently biases a generation it was never written for. **`load` writes it every time** and
+   * REFUSES a spec without it, because a prompt change means all four boxes change together.
+   * Set `applyTaste: false` ONLY for a deliberate slider-only round, where no prompt moves.
+   */
   taste?: string
   applyTaste?: boolean
   /** Saved Voice display name, e.g. "badcode newsreader". */
@@ -83,17 +125,93 @@ const PRELUDE = `
 const ev = (page: Page, body: string, ...args: unknown[]) =>
   page.evaluate(`((...a) => {${PRELUDE}${body}})(${args.map((a) => JSON.stringify(a)).join(',')})`)
 
+/**
+ * 🔴 OUR TAB, NOT HIS (2026-08-27). Kai works in his own Suno and Flow tabs in the same browser,
+ * in parallel with a session. Two things here used to trample that:
+ *
+ *   1. Taking the FIRST suno.com tab grabbed whichever was his.
+ *   2. With no Suno tab at all, the old code called goto() on `pages()[0]` — which with a Flow
+ *      tab in slot 0 silently threw away his Flow session. It now opens a NEW tab.
+ *
+ * 🔴 The tab is claimed by a **sessionStorage marker, not an index.** CDP's page order is NOT
+ *    creation order and it reshuffles — observed live: a freshly opened tab reported index 2 and
+ *    listed at index 0 seconds later. sessionStorage is per-tab and survives same-origin
+ *    navigation, so the mark still identifies the tab after Kai does Remix ▸ Cover inside it,
+ *    which is the whole point — the cover attaches in OUR tab and stays findable.
+ *
+ * If the marked tab is gone we fall back to the only Suno tab, and refuse when several are open
+ * rather than guess at his. A wrong tab is never silent anyway: the cover workflows abort on the
+ * missing attachment before spending a credit.
+ */
+const TAB_MARK = '__badcode_suno_tab'
+
+async function isOurs(p: Page): Promise<boolean> {
+  try {
+    return (await p.evaluate(`sessionStorage.getItem(${JSON.stringify(TAB_MARK)})`)) === '1'
+  } catch {
+    return false // cross-origin, closed, or mid-navigation — not a tab we can claim
+  }
+}
+
 export async function connect(): Promise<{ browser: Browser; page: Page }> {
   const browser = await chromium.connectOverCDP(ENDPOINT)
   const ctx = browser.contexts()[0]
-  if (!ctx) throw new Error('NO_CONTEXT — is scripts/flow-chrome.sh running?')
-  let page = ctx.pages().find((p) => p.url().includes('suno.com'))
-  if (!page) {
-    page = ctx.pages()[0] ?? (await ctx.newPage())
-    await page.goto(CREATE_URL, { waitUntil: 'domcontentloaded' })
-    await page.waitForTimeout(4000)
+  if (!ctx) throw new Error('NO_CONTEXT — is a browser channel up? ./scripts/browser-channel.sh claim')
+  const suno = ctx.pages().filter((p) => p.url().includes('suno.com'))
+
+  for (const p of suno) if (await isOurs(p)) return { browser, page: p }
+
+  if (suno.length === 1) return { browser, page: suno[0] }
+  if (suno.length > 1) {
+    throw new Error(
+      `${suno.length} Suno tabs open and none is marked as ours — one of them is Kai's.\n` +
+        '   Run: npx tsx scripts/suno/suno.mts open-tab   (then re-attach the cover in that tab)',
+    )
   }
+
+  const page = await ctx.newPage()
+  await page.goto(CREATE_URL, { waitUntil: 'domcontentloaded' })
+  await page.waitForTimeout(4000)
+  await page.evaluate(`sessionStorage.setItem(${JSON.stringify(TAB_MARK)}, '1')`)
   return { browser, page }
+}
+
+/** Every open tab, flagged with whether it is the one this tooling drives. */
+export async function listTabs(): Promise<string> {
+  const browser = await chromium.connectOverCDP(ENDPOINT)
+  const ctx = browser.contexts()[0]
+  if (!ctx) throw new Error('NO_CONTEXT — is a browser channel up? ./scripts/browser-channel.sh claim')
+  const out: string[] = []
+  for (const [i, p] of ctx.pages().entries()) {
+    let t = ''
+    try {
+      t = await p.title()
+    } catch {
+      /* a tab mid-navigation has no title yet — the URL is enough to identify it */
+    }
+    out.push(`[${i}] ${(await isOurs(p)) ? '👈 OURS  ' : '         '}${p.url().slice(0, 90)}\n              ${t}`)
+  }
+  await browser.close()
+  return out.join('\n')
+}
+
+/** Open a dedicated, marked Suno tab. Never touches an existing one. */
+export async function openTab(): Promise<void> {
+  const browser = await chromium.connectOverCDP(ENDPOINT)
+  const ctx = browser.contexts()[0]
+  if (!ctx) throw new Error('NO_CONTEXT — is a browser channel up? ./scripts/browser-channel.sh claim')
+  for (const p of ctx.pages()) {
+    // Drop a stale mark first, so exactly one tab ever answers to it.
+    if (p.url().includes('suno.com') && (await isOurs(p))) {
+      await p.evaluate(`sessionStorage.removeItem(${JSON.stringify(TAB_MARK)})`).catch(() => {})
+    }
+  }
+  const page = await ctx.newPage()
+  await page.goto(CREATE_URL, { waitUntil: 'domcontentloaded' })
+  await page.waitForTimeout(4000)
+  await page.evaluate(`sessionStorage.setItem(${JSON.stringify(TAB_MARK)}, '1')`)
+  await page.bringToFront()
+  await browser.close()
 }
 
 /**
@@ -274,16 +392,59 @@ export async function verify(page: Page) {
 }
 
 /** Load all four boxes plus voice, title and workspace. Does NOT generate. */
+/**
+ * Fill a box and PROVE it took.
+ *
+ * 🔴 The exclude box truncates on a repeated fill — proven five times now (117/831, 169/871,
+ * 180/695, and 117/499 on 2026-08-27). The kept prefix length varies, which rules out a
+ * `maxlength` and reads like stale React state winning a race against `.fill()`. Clearing,
+ * blurring and refilling wins it. Ported from `style-ab.mts`, where it was fixed first and
+ * then never brought back here — which is how 2026-08-27 hit the same bug a fifth time.
+ */
+async function fillChecked(page: Page, selector: string, text: string, tries = 4): Promise<string> {
+  const el = page.locator(selector).first()
+  for (let i = 1; i <= tries; i++) {
+    await el.fill('')
+    await el.blur().catch(() => {})
+    await page.waitForTimeout(150)
+    await el.fill(text)
+    await el.blur().catch(() => {})
+    await page.waitForTimeout(250)
+    const got = await el.inputValue().catch(async () => (await el.textContent()) ?? '')
+    if (got.length === text.length) return i === 1 ? 'ok' : `ok (retry ${i})`
+    if (i === tries) return `🔴 ${got.length}/${text.length} after ${tries} tries`
+  }
+  return 'unreachable'
+}
+
 async function load(page: Page, spec: SunoSpec, weirdness?: number) {
   if (!page.url().includes('/create')) {
     await page.goto(CREATE_URL, { waitUntil: 'domcontentloaded' })
     await page.waitForTimeout(4000)
   }
-  if (spec.applyTaste && spec.taste) console.log('taste:', await setTaste(page, spec.taste))
+  // 🔑 THE ATOM: taste + style + exclude + lyrics change together or not at all.
+  if (spec.applyTaste === false) {
+    console.log('taste: SKIPPED (slider-only round — no prompt box may change either)')
+  } else if (!spec.taste) {
+    throw new Error(
+      'spec has no `taste`. The four boxes are one atom (2026-08-27): taste, style, exclude and ' +
+        'lyrics change together. Add a ```taste fence to the style block, or pass ' +
+        '`applyTaste: false` for a deliberate slider-only round.',
+    )
+  } else {
+    console.log('taste:', await setTaste(page, spec.taste))
+    const back = await getTaste(page)
+    if ((back ?? '').trim() !== spec.taste.trim()) {
+      throw new Error(`taste read-back MISMATCH (${(back ?? '').length}/${spec.taste.length}) — refusing to generate against the wrong global box`)
+    }
+    console.log('taste: ✅ read back identical')
+  }
 
-  await page.locator('[data-testid="create-form-styles-wrapper"] textarea').fill(spec.style)
-  await page.locator('input[placeholder="Exclude styles"]').first().fill(spec.exclude)
-  const paras = await setLyrics(page, spec.lyrics)
+  console.log('style:', await fillChecked(page, '[data-testid="create-form-styles-wrapper"] textarea', spec.style))
+  console.log('exclude:', await fillChecked(page, 'input[placeholder="Exclude styles"]', spec.exclude))
+  const paras = spec.lyrics.trim()
+    ? await setLyrics(page, spec.lyrics)
+    : (console.log('lyrics: INSTRUMENTAL — none written'), 0)
 
   console.log(await setSlider(page, 'Style Influence', spec.styleInfluence ?? 75))
   if (weirdness !== undefined) console.log(await setSlider(page, 'Weirdness', weirdness))
@@ -300,7 +461,11 @@ async function load(page: Page, spec: SunoSpec, weirdness?: number) {
   const problems: string[] = []
   if (v.styleLen !== spec.style.length)
     problems.push(`style ${v.styleLen}/${spec.style.length} — TRUNCATED at the ${v.styleCap} cap?`)
+  if (v.excludeLen !== spec.exclude.length)
+    problems.push(`exclude ${v.excludeLen}/${spec.exclude.length} — the truncation bug; fillChecked gave up`)
   if (v.lyricParas !== paras) problems.push(`lyrics ${v.lyricParas} paragraphs, expected ${paras}`)
+  if (spec.durationSec && !String(v.durationSec ?? '').startsWith(String(spec.durationSec)))
+    problems.push(`duration ${v.durationSec} — wanted ${spec.durationSec}s; More Options may not have opened`)
   return { verify: v, problems }
 }
 
@@ -334,7 +499,22 @@ export async function setDuration(page: Page, seconds: number): Promise<string> 
     await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2)
     await page.waitForTimeout(1400)
   }
-  if (!(await mounted())) return 'duration:more-options-would-not-open'
+  if (!(await mounted())) {
+    // 🔴 2026-08-27: the Advanced slider is GONE from the DOM. More Options is open (the exclude
+    // box lives in it and fills fine), yet `[role="slider"][aria-label="Duration"]` does not
+    // exist. The only duration control on the page is a `Duration / Custom / Auto` block holding
+    // `input[placeholder="Auto"][type=number]` (1-300) — the SIMPLE panel's twin, which Playwright
+    // reports as not visible and which our own notes record as unlinked. Diagnose, don't guess.
+    const why = await ev(
+      page,
+      `const c = s => (s||'').replace(/\\s+/g,' ').trim();
+       const mo = [...document.querySelectorAll('div')].some(e => c(e.textContent) === 'More Options');
+       const ex = !!document.querySelector('input[placeholder="Exclude styles"]');
+       const num = !!document.querySelector('input[placeholder="Auto"][type=number]');
+       return JSON.stringify({ moreOptionsPresent: mo, moreOptionsOpen: ex, simpleNumberInput: num });`,
+    )
+    return `duration:NO-ADVANCED-SLIDER ${why} — Suno's DOM changed; see automation.md`
+  }
   return setSlider(page, 'Duration', Math.round(seconds))
 }
 
@@ -459,7 +639,18 @@ export async function listTakes(page: Page, filter = '') {
   )
 }
 
-/** Pull the four boxes out of a markdown sheet by section heading. */
+/**
+ * Pull the four boxes out of a markdown sheet by section heading.
+ *
+ * 🔑 **The four boxes are ONE ATOM** (Kai, 2026-08-27). `taste`, `style`, `exclude` and `lyrics`
+ * describe the same sound and are never swapped apart — a half-changed set is a hybrid nobody
+ * designed. So taste is looked for **inside the style block first**, as a ```taste fence, and only
+ * falls back to a shared section for older sheets that predate the ruling.
+ *
+ * The old default (`tasteSection = 'The shared profile'`) encoded the *wrong* model: one taste
+ * shared across every variation. That is exactly how the GPOM newsreader profile sat under
+ * fourteen Camping rounds unnoticed.
+ */
 function extract(file: string, section: string, tasteSection = 'The shared profile') {
   const src = readFileSync(file, 'utf8')
   const F = '`'.repeat(3)
@@ -481,10 +672,26 @@ function extract(file: string, section: string, tasteSection = 'The shared profi
     const end = rest.search(/\n#{2,3} /)
     return end === -1 ? rest : rest.slice(0, end)
   }
-  const boxes = blocks(slice(new RegExp(section.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))))
-  if (boxes.length < 3) throw new Error(`expected 3 boxes in "${section}", found ${boxes.length}`)
-  const taste = blocks(slice(new RegExp(tasteSection)))[0]
-  return { style: boxes[0], exclude: boxes[1], lyrics: boxes[2], taste }
+  // Fences WITH their info string, so a ```taste block can be found by name inside the atom.
+  const labelled = (txt: string) => {
+    const re = new RegExp('\\n' + F + '([a-z]*)\\n([\\s\\S]*?)\\n' + F + '\\n', 'g')
+    const out: { label: string; body: string }[] = []
+    let m: RegExpExecArray | null
+    while ((m = re.exec(txt))) out.push({ label: m[1], body: m[2] })
+    return out
+  }
+  const own = slice(new RegExp(section.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')))
+  const tagged = labelled(own)
+  const boxes = tagged.filter((b) => b.label !== 'taste').map((b) => b.body)
+  // An INSTRUMENTAL atom has no lyrics — taste + style + excludes is the whole of it. That is a
+  // valid atom, not a short one: dry-and-separate means every cut has a wordless music half.
+  if (boxes.length < 2)
+    throw new Error(`expected at least style + excludes in "${section}", found ${boxes.length}`)
+  if (boxes.length === 2) boxes.push('')
+  // 🔑 Atom first: a ```taste fence inside this style block wins over any shared section.
+  const inAtom = tagged.find((b) => b.label === 'taste')?.body
+  const taste = inAtom ?? blocks(slice(new RegExp(tasteSection)))[0]
+  return { style: boxes[0], exclude: boxes[1], lyrics: boxes[2], taste, tasteFromAtom: !!inAtom }
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -497,6 +704,12 @@ const [cmd, ...rest] = IS_CLI ? process.argv.slice(2) : ['__imported__']
 if (cmd === 'extract') {
   const [file, section, tasteSection] = rest
   console.log(JSON.stringify(extract(file, section, tasteSection), null, 2))
+} else if (cmd === 'tabs') {
+  console.log(await listTabs())
+} else if (cmd === 'open-tab') {
+  await openTab()
+  console.log('✅ opened and marked a Suno tab — this tooling now drives that one and no other.')
+  console.log('   Do the Remix ▸ Cover attach IN THAT TAB.')
 } else if (cmd === 'status') {
   const { browser, page } = await connect()
   console.log(JSON.stringify(await verify(page), null, 2))
@@ -504,6 +717,22 @@ if (cmd === 'extract') {
 } else if (cmd === 'takes') {
   const { browser, page } = await connect()
   console.log(JSON.stringify(await listTakes(page, rest[0] ?? ''), null, 2))
+  await browser.close()
+} else if (cmd === 'taste') {
+  // My Taste is ACCOUNT-WIDE and invisible from the create form, so the docs require reading it
+  // back at the start of every session. `setTaste` existed for a year without this half.
+  const { browser, page } = await connect()
+  const before = await getTaste(page)
+  if (rest[0]) {
+    writeFileSync(BACKUP, before ?? '')
+    console.log(`backed up ${(before ?? '').length} chars to ${BACKUP}`)
+    console.log(await setTaste(page, readFileSync(rest[0], 'utf8').trim()))
+    const after = await getTaste(page)
+    console.log(after === readFileSync(rest[0], 'utf8').trim() ? '✅ read back identical' : '🔴 READ-BACK MISMATCH')
+    console.log(after)
+  } else {
+    console.log(before ?? '(empty)')
+  }
   await browser.close()
 } else if (cmd === 'load' || cmd === 'pair') {
   const spec: SunoSpec = JSON.parse(readFileSync(rest[0], 'utf8'))
@@ -513,8 +742,10 @@ if (cmd === 'extract') {
   if (cmd === 'load') {
     const { verify: v, problems } = await load(page, spec, weirdnesses[0])
     console.log(JSON.stringify(v, null, 2))
-    if (problems.length) console.log('🔴 PROBLEMS:', problems.join(' · '))
-    else console.log('✅ loaded — nothing generated; run `pair` or click Create')
+    if (problems.length) {
+      console.log('🔴 PROBLEMS — DO NOT GENERATE:', problems.join(' · '))
+      process.exitCode = 1
+    } else console.log('✅ loaded — nothing generated; run `pair` or click Create')
   } else {
     // The form survives its own generation, so the second half is a nudge + a retitle.
     const base = spec.title
@@ -539,6 +770,7 @@ if (cmd === 'extract') {
   console.log(`badcode suno — drive suno.com/create over CDP. See docs/suno-gpt/automation.md
 
   status                          read the create form back
+  taste [block.txt]               read My Taste; with a file, back up + write + verify
   extract <sheet.md> "<section>"  pull style/exclude/lyrics/taste out of a sheet
   load  <spec.json>               fill everything, generate NOTHING
   pair  <spec.json>               load, then Create at each weirdness (default 30 and 60)

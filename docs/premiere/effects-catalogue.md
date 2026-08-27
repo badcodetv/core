@@ -15,6 +15,11 @@ Companion files: [`recipes.md`](./recipes.md) turns these into concrete tool cal
 
 ---
 
+> **🔴 This is HALF the answer. Its twin is [`../video-fx/ffmpeg-catalogue.md`](../video-fx/ffmpeg-catalogue.md)**
+> — 319 video filters and the 133-plugin frei0r shelf. Ruled 2026-08-26 (Kai): asked what effects
+> we have, **list both, never one.** And eight things live only there — most importantly
+> **text**, because Premiere's API cannot write a string at all (see § *Text and graphics*).
+
 ## The one rule that saves the most time
 
 **There are no paid plugins here and we are not buying any** (Kai, 2026-08-21: *"they all sound far

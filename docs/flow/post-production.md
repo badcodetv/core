@@ -17,6 +17,14 @@ Every command below has been run on real BadCode footage — nothing here is cop
 | --- | --- |
 | Something in the world moves | **Veo.** That is what it is for, and it is very good at it |
 | **Only the camera moves** | **Post.** It is a scale-and-crop on one image, and Veo can only make it worse |
+| **Both** | 🟢 **Both, layered** — see the amendment below |
+
+> **🔴 Amended 2026-08-26 (Kai): this table stopped one row short.**
+> When the world moves *and* the camera moves, the answer is not to choose — it is **Veo with the
+> camera locked, then the camera move in post over the finished clip.** Veo's regeneration bug is
+> caused by camera *translation*, so locking the camera stops it firing, and the move is then rigid
+> by construction, any length, exact easing, free. Method:
+> [`../video-fx/hybrid-method.md`](../video-fx/hybrid-method.md).
 
 **This is not a fallback, it is a first choice.** On a camera-only move, post beats Veo on every
 axis at once:

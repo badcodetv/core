@@ -169,6 +169,11 @@ folder from `premiere_status().project.path` and writes into that project's `cli
 if missing. That is the same folder you import from, so **`premiere_import` paths are always
 `<project>/clips/…`** and media can never go offline because someone tidied a Desktop.
 
+🔴 **`clips/` is for media only — the words live in the repo.** Prompts, beat lists, motion
+plans and rulings belong in `docs/stories/<story>/scenes/<scene>.md`, not beside the footage.
+Ruled 2026-08-27 by Kai after a prompt sheet was written into `clips/` by mistake. See
+`flow-automation` §"That ruling is about MEDIA".
+
 **Import the individual takes, not just the assembled cut.** An `ffmpeg` concat of a scene's beats
 is a *preview* — it lets you see the shape in one file, and it is the wrong thing to cut with. The
 timeline wants every take, including the rejected ones, so a montage can be re-ordered and
@@ -201,6 +206,28 @@ Adobe's own tools and there is no automating them. Say so plainly, one step at a
 🔴 **The plugin stays in UDT's list between sessions, but Load must be pressed again every time
 Premiere restarts.** This is the single most common cause of a dead bridge. When you ask for it,
 say *why* — otherwise it reads as superstition.
+
+---
+
+## 1e. 🔴 Premiere owns the camera — the hybrid method, ruled 2026-08-26
+
+**Veo animates the world with its camera locked; Premiere moves the camera over the finished
+clip.** Veo's regeneration bug is caused by camera translation, so a move done here is rigid by
+construction, any length, exactly eased, free, and instant to re-try.
+
+- The move lives on the **`AE.ADBE Motion` intrinsic** (always component 1, on every clip already):
+  `0 Position` · `1 Scale` · `5 Anchor Point`, all **0–1 fractions of frame**, not pixels.
+- **Don't let it read as a slideshow:** hold 1–2s before moving; ease, never ramp; split the plate
+  into depth layers for real parallax rather than a flat zoom; and make something change
+  independently of the camera. One thing changing is a zoom, two is a shot.
+- Reach for `AE.Impact_Camera_Shake_FX` at **Master ~10** to make a held frame read as *a camera is
+  there* — it self-animates, no keyframing.
+
+🔴 **Some jobs must go to ffmpeg, not here** — most often on-screen text, because **the API cannot
+write a string at all** (`SimpleText` and MOGRT both throw `Illegal Parameter type`). The full list
+of what ffmpeg does that Premiere cannot is in
+[`docs/video-fx/hybrid-method.md`](../../../docs/video-fx/hybrid-method.md) §5, along with the rule
+that **8 seconds is not a limit** — chain Veo clips frame to frame.
 
 ---
 

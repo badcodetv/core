@@ -4,6 +4,9 @@ import { z } from 'zod'
 import { NAME, VERSION } from './version'
 import { FlowClient } from './flow-client'
 import { ok, fail, NOT_RUNNING_HINT, type ToolResult } from './result'
+import { resolveChannel, releaseLock, surveyChannels, profileFor, type Resolution } from './channel'
+import { fileURLToPath } from 'node:url'
+import { dirname, resolve as resolvePath } from 'node:path'
 
 /**
  * Cache the CDP attachment across tool calls: the stdio server process is long-lived, and
@@ -15,13 +18,40 @@ import { ok, fail, NOT_RUNNING_HINT, type ToolResult } from './result'
 let cached: FlowClient | null = null
 const DISCONNECTED_RE = /Target closed|browser has been closed|Target page, context or browser has been closed|ECONNRESET/i
 
+/**
+ * Repo root, for the .flow-channels/ lock directory. src/ -> package -> packages/ -> root.
+ */
+const REPO_ROOT = resolvePath(dirname(fileURLToPath(import.meta.url)), '..', '..', '..')
+
+/**
+ * The channel this server process owns. Resolved once, lazily, then held for the process
+ * lifetime — one Claude session, one browser. Nothing here asks the caller for a port: an
+ * explicit FLOW_CDP_PORT still wins, but the default is discovery + a PID lock, so two
+ * concurrent sessions land on different browsers without anyone choosing.
+ */
+let channel: Resolution | null = null
+
+async function currentChannel(): Promise<Resolution> {
+  channel ??= await resolveChannel(REPO_ROOT, 'flow')
+  return channel
+}
+
+// Give the channel back when this session ends, so the next one can reuse the browser.
+for (const sig of ['exit', 'SIGINT', 'SIGTERM'] as const) {
+  process.on(sig, () => {
+    if (channel && channel.how !== 'pinned') releaseLock(REPO_ROOT, channel.channel)
+    if (sig !== 'exit') process.exit(0)
+  })
+}
+
 async function withClient<T>(fn: (c: FlowClient) => Promise<T>): Promise<T> {
+  const ch = await currentChannel()
   for (let attempt = 0; attempt < 2; attempt++) {
     if (cached && !cached.isAlive()) {
       await cached.close().catch(() => {})
       cached = null
     }
-    cached ??= await FlowClient.connect()
+    cached ??= await FlowClient.connect(ch.endpoint)
     try {
       return await fn(cached)
     } catch (err) {
@@ -115,7 +145,31 @@ server.registerTool(
   },
   async () => {
     try {
-      return await withClient(async (c) => ok(await c.status()))
+      const ch = await currentChannel()
+      return await withClient(async (c) => ok({ ...(await c.status()), channel: ch.channel, port: ch.port, resolvedBy: ch.how }))
+    } catch (err) {
+      return toToolError(err)
+    }
+  },
+)
+
+server.registerTool(
+  'flow_channels',
+  {
+    title: 'Browser channels',
+    description:
+      'List the browser channels — a channel is one CDP port plus one Chrome profile. Shows which are running, which are claimed by a live session, and which this session owns. Use it to answer "which browser am I on" and to find a free one; you never need to pick a port by hand.',
+    inputSchema: {},
+  },
+  async () => {
+    try {
+      const mine = await currentChannel().catch(() => null)
+      const rows = await surveyChannels(REPO_ROOT)
+      return ok({
+        mine: mine ? { channel: mine.channel, port: mine.port, resolvedBy: mine.how, needsLaunch: mine.needsLaunch } : null,
+        channels: rows.map((r) => ({ ...r, profile: profileFor(r.channel), isMine: r.channel === mine?.channel })),
+        launch: 'Launch a channel with: ./scripts/browser-channel.sh up <n>   (or `claim` to be given a free one)',
+      })
     } catch (err) {
       return toToolError(err)
     }

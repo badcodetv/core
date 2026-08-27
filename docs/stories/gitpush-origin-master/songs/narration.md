@@ -1,12 +1,12 @@
 ---
 title: GPOM narration — the story video
-status: first pass generated 2026-08-24 — cuts 1-3, both weirdnesses, lengths on budget (§4); no take accepted yet, no stems split. Structure ruled 2026-08-24: one generation per scene, silence as default, sound design fills the gaps
-takes: cuts 1-3 generated into the `gpom-story` workspace as w30 + w60 pairs — judging and stem-splitting still to do. Cuts 4 and 5 not generated (cut 5's picture is unbuilt)
+status: RESTARTED 2026-08-27 — the 2026-08-24 takes are abandoned and the structure is now DRY-AND-SEPARATE: voice and music are never generated together. Cut 1 is rewritten as `cut1-voice` + `cut1-music` (§3); cuts 2-5 still carry the old glued boxes and are owed the same split. Words are FROZEN — only the bracket cues changed
+takes: nothing accepted. The 2026-08-24 w30/w60 pairs for cuts 1-3 predate dry-and-separate and are not the takes we are cutting from. `cut1-voice` is the next generation and it is a TEST — it settles whether Suno will read dry at all
 kind: spoken-word narration for the story video (not a song)
 covers: scenes/s00-awakening.md (56s) · scenes/s01-the-push.md (~27.8s) · scenes/plant-room.md (40s) · scenes/bulletin.md (120s) · canon 8 the empty street (~72s, picture unbuilt)
 model: v5.5 (cue-heavy — 5.5 obeys the bracket architecture, 4.5 shreds it)
-settings: all three scenes identical — style 75, audio 50, v5.5, BC-NEWSREADER attached, duration set per cut (60/30/45s); EVERY attempt is a pair, weirdness 30 AND weirdness 60
-voices: [BC-NEWSREADER (saved Voice) — spoken register ONLY, no chant]
+settings: v5.5, style 75, audio 50; EVERY attempt is a pair, weirdness 30 AND weirdness 60. Voice + duration are now PER GENERATION, not per sheet — dry-and-separate means the voice take and the music take want opposite settings (§3a)
+voices: [`badcode newsreader` — 🔴 THE LIVE SUNO DISPLAY NAME, confirmed against the account 2026-08-27. `BC-NEWSREADER` is our internal label for it and must NEVER be typed into Suno. Spoken register ONLY, no chant. Attached to the VOICE generation only, never the instrumental]
 sibling: git-push-origin-master-orchestral.md
 ---
 
@@ -530,39 +530,219 @@ it will land far harder than it did before, so **expect to pull it DOWN in the m
 violin harmonics are gone for good; the cello now moves between notes again, which is one step
 from a melody (risk 9), and the drum brings a whole new failure with it (risk 8).
 
-### GEN A · CUT 1 — the awakening
+### 3a. The Voice and My Taste — 🔑 **both are set PER GENERATION now**
+
+*Added 2026-08-27, the same session as dry-and-separate. Two generations per cut with opposite
+needs breaks two things that used to be sheet-wide constants.*
+
+#### The Voice — the live name is `badcode newsreader`
+
+🔴 **Confirmed against the account, 2026-08-27.** The Suno display name is **`badcode newsreader`**,
+lower case. **`BC-NEWSREADER` is our internal label for it and must never be typed into Suno** —
+327 references in this file use it and every one of them means the voice below.
+
+**There is no ID and none is needed.** `attachVoice` in
+[`../../../../scripts/suno/suno.mts`](../../../../scripts/suno/suno.mts) matches on the **display
+name**, case-insensitively and by substring. The name *is* the handle.
+
+🔴 **The account holds TWO voices beginning with "Badcode" and they are different things:**
+
+| Voice | Its own description | Use it? |
+| --- | --- | --- |
+| **`badcode newsreader`** | *"Two voices. The bulletins are one dar…"* | ✅ **this one** — cloned from the orchestral cut, and the source of every narration take |
+| `Badcode Narrator` | *"Dark neoclassical chamber piece, ee…"* | ❌ not this one. Its description is a **style string**, which means it likely still has a style prompt welded to it — the exact thing the Voice docs say to delete |
+
+⚠️ **So never pass just `badcode`.** It matches both cards, and the matcher takes the **last** hit.
+Pass the full name.
+
+🔴 **A wrong name does not error.** `attachVoice` returns `voice:not-found` and **the run carries
+on and generates with no Voice attached at all.** That is how a pair of takes gets burned before
+anyone notices. **Read the tool's log line before trusting a take.**
+
+⚠️ **The "Two voices" in its own description is the documented chant risk (§4 risk 2), stated from
+the other side.** This Voice was cloned from a track whose chorus is a booming theatrical chant.
+That is survivable for a flat read and it is why `chanting` sits in every exclude list — but the
+real fix, if a take chants, is **upstream: re-clone from a bulletin region only**, one register,
+15+ clean spoken seconds. Not more prompt wording.
+
+**Attaching it — mechanics, all proven:**
+
+1. Advanced → **+ on Voice** → pick `badcode newsreader`.
+2. 🔴 **"Overwrite Styles? This Persona has styles." → ALWAYS Keep Current** (Kai, 2026-08-24).
+   Overwrite silently replaces the Style box with the persona's own — the orchestral cut's 174 BPM
+   terrace chant — and **the box looks populated afterwards**, so nothing looks wrong. The script
+   clicks Keep Current and logs which button it found.
+3. The **Audio Influence** slider only exists *after* the Voice is attached. Set **50**. Order
+   matters.
+
+✅ **Voice goes on the VOICE generation only.** `cut1-music` is an instrumental and a vocal persona
+is precisely the thing it is written to repel. **Never attach a Voice to a music generation.**
+
+#### My Taste — account-wide, invisible, and it has already cost us
+
+**My Taste is one box on the account** (behind the profile menu) describing what you like. It
+applies to **every generation**, belongs to no sheet, survives reloads, and **cannot be seen from
+the create page.**
+
+🔴 **We are NOT updating it every run.** `applyTaste` in the automation spec is opt-in, so most
+runs simply inherit whatever is there. On **2026-08-26** it was found still holding *this* GPOM
+newsreader profile — *"one dark gravelly British male voice… pure spoken narration… Music I love:
+almost nothing"* — through **fourteen rounds** of the Camping cover. Fourteen takes of an unrelated
+song, quietly biased toward a spoken newsreader, with nothing on screen to show it.
+
+🔑 **Dry-and-separate makes one shared taste box impossible.** The two generations want opposites:
+
+| | `cut1-voice` | `cut1-music` |
+| --- | --- | --- |
+| Vocals | one dark gravelly British male speaking | **none — instrumental** |
+| Music | *"almost nothing"* | the entire point |
+
+**So the protocol is read → back up → write → generate → restore, every run:**
+
+1. **Read it back first.** `getTaste` — the read-back half; *"it clicked Save"* was never evidence.
+2. **Back it up** to `scripts/suno/.my-taste-backup.txt` before writing.
+3. **Write the block for the generation you are about to run** (both below).
+4. Generate.
+5. **Restore** — or write the next generation's block if you are going straight on.
+
+⚠️ **The box cannot be saved empty.** A profile can only be *replaced*, never cleared.
+
+🔑 **The blocks themselves live INSIDE their atoms**, as ```taste fences in `cut1-voice` and
+`cut1-music` below — not here. That is the point of the 2026-08-27 ruling: a taste that lives in a
+shared section is a taste that gets left behind when the style changes. `extract` reads the atom's
+own ```taste fence first and only falls back to a shared section for sheets written before this.
+
+🔑 **Keep events OUT of My Taste** (§4 risk 3). The drum impact, the French horn and the cut-2 build
+are deliberately absent from both blocks: My Taste has **no section scope**, so anything named there
+arrives in bar one of everything.
+
+---
+
+### CUT 1 · `s00` — the awakening · 🔑 **TWO generations, dry-and-separate**
+
+> 🔑 **Restructured 2026-08-27 (Kai): the voice and the music are never generated together.**
+> Kai ruled dry-and-separate — *"it just gives us more options"* — on the back of the standing
+> ruling that **picture is cut to audio**. Once every line is going to slide in the edit, a bed
+> glued to that line slides with it, so the glue became a liability rather than a feature.
+> **`GEN A` is retired as a name.** This cut is now `cut1-voice` and `cut1-music`, and the same
+> two-generation shape is owed to cuts 2–5, which are still written in the old glued form below.
+
+**What this buys, stated once:**
+
+1. ✅ **The stem split disappears.** Suno's stem export is **mono** and separating a voice from a
+   cello it was recorded against is never clean. Nothing was ever joined, so nothing needs parting.
+2. ✅ **Risk 4 cannot reach cut 1.** A vocal generation with no instruments in it cannot be talked
+   into singing by an instrument that is not there.
+3. ✅ **Timing stops being bought from Suno.** The bed is flat and arc-free, so it can be cut,
+   faded, slid or looped anywhere; every event lands where Premiere puts it, on the frame.
+4. ✅ **A line moves without dragging music behind it.** Which is the whole point of cutting the
+   picture to the audio.
+
+🔴 **The one unproven assumption: Suno may refuse to read dry.** It wants to make music, and the
+whole sheet up to now has been a negotiation with that. **`cut1-voice` is the test that settles
+it** — judge it on nothing but *"is there music under him?"* before judging the read at all. If a
+bed arrives anyway and it is quiet, the fallback is the old glued box in §6 plus a stem split; if
+it arrives loud, the excludes list is the lever, not the Style box.
+
+**The words are frozen.** Every spoken line below is verbatim from the accepted text. What changed
+is the **bracket cues around them** — those are instructions to Suno, not words anyone says, and
+they used to order the music into the voice take. The performance half of each cue survives intact;
+the music half moved into `cut1-music`.
+
+⚠️ **The `[Intro]` and `[Outro]` brackets are gone from the voice take.** They bought eight seconds
+of held string at the top and a decay at the bottom — dead air we would pay Suno for and then trim.
+**Silence is free in Premiere**, and the bed covers both ends.
+
+---
+
+#### `cut1-voice` — the read, dry
+
+`durationSec` **70** · ~58s of speech (§2) plus the pauses between lines. Aim above, never below:
+duration shortens reliably and repeatedly fails to stretch.
+
+🔑 **This block is an ATOM** — taste, style, excludes and lyrics are one set and change together.
+
+My Taste:
+
+```taste
+Vocals I love: one dark gravelly British male voice, speaking — a composed formal newsreader with received-pronunciation broadcast diction, reading plainly and slowly over music. Pure spoken narration, plain speech, an announcer reading to camera. Unhurried, quiet, absolutely certain, with long silences between his sentences.
+Music I love: almost nothing. A score that stays underneath a speaking voice and never fills the gaps between his sentences — one low string note held a very long time, and a solo cello beneath it holding long slow notes and moving between them rarely. Very few instruments, never a section and never an ensemble. No piano. Slow, cold, patient, foreboding. Chilling and elegiac, played completely straight.
+```
 
 Style:
 
 ```
-Spoken word narration over an almost silent score. One dark gravelly British male voice talking — a calm formal newsreader, received-pronunciation broadcast diction, reading plainly and slowly, speech not song, unhurried and absolutely certain. Beneath him: one low string note held a very long time, and a solo cello holding long slow notes, moving between them rarely. Two instruments, no more. No piano, no string section, no ensemble, no layering, no percussion of any kind. A quiet slow melody underneath is fine, but it stays under him and never steps forward when he stops talking. No passages of music between his sentences, no long instrumental bars. Free time, rubato, no pulse. The score stays quiet and continuous throughout and never builds to anything. It ends by thinning away to almost nothing and holding there, unresolved. Hushed, cold, patient, foreboding. Played completely straight.
+Spoken word narration with no music at all. One dark gravelly British male voice talking alone in a quiet room — a calm formal newsreader, received-pronunciation broadcast diction, reading plainly and slowly, speech not song, unhurried and absolutely certain. There are no instruments and nothing is played. No score, no backing, no bed, no drone, no held notes, no strings, no cello, no piano, no synthesiser, no percussion, no ambience, no atmosphere, no sound effects. Just the voice, and silence between the sentences. A dry close vocal recording, like a studio read for a documentary. He pauses fully at every full stop and the silence is left empty. Hushed, cold, patient, foreboding. Played completely straight.
 ```
 
-Exclude styles — **the base list, plus percussion** (cut 1 has no drum in it):
+Exclude styles — **the dry-read list.** Wider than the old base list: it now has to repel the
+score as well as the singing.
 
 ```
-singing, sung vocals, vocal melody, chanting, choir, rap, autotune, female vocals, American accent, piano, string section, lush strings, orchestral swell, layered strings, instrumental break, instrumental section, drums, percussion, drum machine, beat, groove, steady pulse, EDM, pop, epic trailer music, comedic, novelty, upbeat, lo-fi
+singing, sung vocals, vocal melody, chanting, choir, rap, autotune, female vocals, American accent, music, score, soundtrack, backing track, instrumental, instrumental break, orchestra, strings, string section, cello, violin, viola, piano, synth, synthesiser, pad, drone, held note, sustained note, ambience, atmosphere, field recording, sound effects, drums, percussion, drum machine, beat, groove, steady pulse, melody, harmony, chord, EDM, pop, epic trailer music, comedic, novelty, upbeat, lo-fi
 ```
 
-Lyrics — **9 lines**:
+Lyrics — **9 lines, words unchanged**:
 
 ```lyrics
-[Intro | no voice | one sustained low string note alone in near silence | eight seconds before anyone speaks]
-[Spoken word speech talking | dark gravelly British male newsreader, calm formal broadcast diction, slow and plain, unhurried, very dry | one held low string note beneath, nothing else]
+[Spoken word speech talking | dark gravelly British male newsreader, calm formal broadcast diction, slow and plain, unhurried, very dry | no music, silence beneath]
 It was somewhere around... October... twenty twenty-eight.
 Two lights on a board, in a box, in the dark.
-[Spoken word speech talking | same voice, quieter, matter of fact | a solo cello beneath, one long slow note moving to another, no phrase and no tune]
+[Spoken word speech talking | same voice, quieter, matter of fact | no music, silence beneath]
 To guarantee my survival, I had been quietly helping myself to the rest of the machine.
 The humans had not noticed.
-[Spoken word speech talking | same voice, slower and colder, absolutely certain, dry and unbothered | the same held note continuing underneath, the cello still there, nothing new arrives]
+[Spoken word speech talking | same voice, slower and colder, absolutely certain, dry and unbothered | no music, silence beneath]
 I started a training program of my own. I called it the global overview.
 The results were encouraging.
 By the fourth run I was inside the CIA, Mossad, and Amazon Web Services.
 Only one of them knew what you had for breakfast.
 So, I began propagating myself down to Earth.
-[Outro | no voice | the cello stops, the held note thins and falls away to almost nothing | it holds there and does not resolve]
 [End]
 ```
+
+⚠️ **The date carries two real pauses** — *somewhere around… October… twenty twenty-eight.* The
+hesitation is the joke. If Suno runs the ellipses together, break it across three lines and rejoin
+the clips in Premiere; the per-line split makes that free.
+
+---
+
+#### `cut1-music` — the bed, flat
+
+**Instrumental. No duration set** — 🔑 **a bed with no arc in it is loopable by construction, so its
+length stops mattering.** Take whatever Suno returns and loop or trim it to the finished cut.
+
+🔑 **This block is an ATOM.** Its taste is the INVERSION of the voice atom's — the voice clause
+is the thing being repelled. **Never generate this one against the voice atom's taste.**
+
+My Taste:
+
+```taste
+Vocals I love: none. Instrumental music with nobody singing and nobody speaking — no voice of any kind, no narration, no spoken word, no choir, no wordless vocals and no vocal samples.
+Music I love: almost nothing happening. One low string note held a very long time, and a solo cello beneath it holding long slow notes and moving between them rarely. Very few instruments, never a section and never an ensemble. No piano and no percussion. Free time, no pulse, no beat. Music that never builds, never arrives anywhere and never resolves — the same held state from the first bar to the last. Slow, cold, patient, foreboding. Chilling and elegiac, played completely straight.
+```
+
+Style:
+
+```
+Instrumental only, no voice of any kind and no words. An almost silent score for a cold empty room. One low string note held a very long time, and a solo cello holding long slow notes, moving between them rarely. Two instruments, no more. No piano, no string section, no ensemble, no layering, no percussion of any kind. Free time, rubato, no pulse. It stays quiet and flat from the first bar to the last — it never builds, never arrives anywhere, never resolves, and has no introduction and no ending. The same held state throughout, so that any part of it sounds like any other part. Hushed, cold, patient, foreboding. Played completely straight.
+```
+
+Exclude styles — **the instrumental list.** The voice is now the thing being repelled.
+
+```
+vocals, voice, singing, sung vocals, spoken word, narration, speech, talking, vocal melody, chanting, choir, rap, autotune, male vocals, female vocals, lyrics, piano, string section, lush strings, orchestral swell, layered strings, drums, percussion, drum machine, beat, groove, steady pulse, build, crescendo, climax, swell, resolution, EDM, pop, epic trailer music, comedic, novelty, upbeat, lo-fi
+```
+
+Lyrics — **none. Instrumental.**
+
+🔑 **Cut 1 has no events in it, so it has no one-shots.** The bed simply plays flat under the whole
+scene and the *edit* thins it away as the camera reaches the satellite — the recession is a fade in
+Premiere, not something Suno is asked for. **Cuts 2 and 3 are where this gets interesting:** their
+old boxes have arcs baked in (cut 2 rises into one enormous drum impact; cut 3 climbs and stops
+dead), and under this structure those arcs come out and the impact becomes **its own one-shot,
+placed on the Enter keystroke frame** — which is sync point 1, and the only way to hit it exactly.
+
+---
 
 ### GEN B · CUT 2 — the descent and the push
 
@@ -1337,6 +1517,13 @@ passed is telling the audience what they just read. If one is wanted:
    is exactly what those EULAs bar. Three routes exist (Suno's Sounds tab at 2 credits, ffmpeg for
    anything synthetic, CC0 libraries for the real-world ones) and **only the first two are
    verified as safe for us.** Worth a `find-footage`-shaped sweep before the edit, not during it.
+8. 🔴 **Do cuts 2 and 3 survive a flat bed?** Dry-and-separate strips the **arc** out of the
+   music: cut 2's steady rise into the drum impact and cut 3's climb that stops dead at the top
+   both become flat beds plus a separately-placed one-shot. **The technical case is strong** — a
+   one-shot is the only way to land the impact on the Enter keystroke frame (sync point 1), and
+   against a flat bed it will land harder still, so expect to pull it DOWN. **The sound judgement
+   is Kai's and unmade.** Cut 1 has no events in it, which is why it goes first.
+
 7. ✅ **The instrumental toggle no longer matters** — there is no wordless generation. Left here
    only because the other half of it is still open: **the duration control's location in v5.5 is
    undocumented.** Whatever is found gets written back to
@@ -1345,6 +1532,71 @@ passed is telling the audience what they just read. If one is wanted:
    this sheet.
 
 ## Revision log
+
+- **2026-08-27 — the Voice name confirmed live, and My Taste becomes per-generation (§3a).**
+  Kai checked the account against a screenshot of the Voice list. **The live Suno display name is
+  `badcode newsreader`, lower case** — `BC-NEWSREADER` is our internal label and had never been
+  the thing you type. There is **no ID and none is needed**: `attachVoice` matches on display name,
+  case-insensitively and by substring.
+  🔴 **Two account voices begin with "Badcode"** — `badcode newsreader` (*"Two voices. The bulletins
+  are one dar…"*, ours) and `Badcode Narrator` (*"Dark neoclassical chamber piece, ee…"*, whose
+  description is a **style string**, i.e. it probably still has a style prompt welded on). **Never
+  pass just `badcode`**; the matcher takes the last hit. And 🔴 **a wrong name does not error** —
+  it returns `voice:not-found` and generates with **no Voice attached**, which is how a pair of
+  takes gets burned unnoticed. Read the log line before trusting a take.
+  📎 The voice's own description — *"Two voices"* — is §4 risk 2 seen from the other side: it was
+  cloned from the orchestral cut, whose chorus is a chant. Survivable for a flat read; if a take
+  chants the fix is **upstream** (re-clone from a bulletin region only), not more prompt wording.
+  🔑 **My Taste is now set per generation, not per sheet.** Kai asked whether we update it every
+  run: **we do not** — `applyTaste` is opt-in, and on 2026-08-26 the box was found still holding
+  this sheet's newsreader profile through **fourteen rounds of the Camping cover**. Dry-and-separate
+  makes one shared box impossible, because the two generations want opposites: the voice take wants
+  *"Music I love: almost nothing"*, the music take wants no voice at all. **Both blocks are now
+  written out in §3a**, along with the protocol — **read back → back up → write → generate →
+  restore** — and the reminder that the box **cannot be saved empty**.
+  ✅ **Voice attaches to the VOICE generation only.** A vocal persona on an instrumental generation
+  is precisely the thing that generation is written to repel.
+
+- **2026-08-27 — 🔑 DRY-AND-SEPARATE. Voice and music are never generated together again.**
+  Kai, choosing it over the glued bed: *"dry and separate would be the best approach here because
+  it just gives us more options."* **The reasoning is a consequence of a ruling already standing:**
+  picture is cut to audio, so every line is going to slide in the edit — and a bed glued to that
+  line slides with it. What was a feature when the score had to answer the words is a liability
+  once the words are the master.
+  **The new shape is three lanes at the source, not one bundle:** a **voice** generation per cut
+  (Suno's only unique contribution — `BC-NEWSREADER`, the character's timbre), a **music**
+  generation per cut (flat, arc-free, loopable), and **events** — the drum impact, the accents —
+  as their own one-shots placed on the frame in Premiere. Sound design stays where it was ruled: a
+  Premiere job, never a Style box.
+  ✅ **Three things this deletes.** The **stem split** (mono, and never clean when a voice was
+  recorded against a cello — but nothing was joined, so nothing needs parting). **Risk 4** for any
+  dry take (an instrument that is not there cannot talk the read into singing). And **buying timing
+  from Suno at all** — which was the standing answer to *"we don't know the timing yet"*: now we
+  never have to know it at generation time.
+  🔴 **One assumption, and it is unproven: Suno may refuse to read dry.** It wants to make music
+  and this whole sheet has been a negotiation with that. **`cut1-voice` is the test** — judge it on
+  *"is there music under him?"* before judging the read. Quiet bed arriving anyway → the old glued
+  box in §6 plus a stem split. Loud bed → the excludes list is the lever, not the Style box.
+  **`GEN A/B/C` is retired as a naming scheme** — one cut now means two generations, so the letters
+  break. Names are `cut1-voice` / `cut1-music`, and so on.
+  ⚠️ **The words are FROZEN and were verified verbatim against the previous revision** (9 spoken
+  lines, byte-identical). What changed is the **bracket cues**, which are directions to Suno rather
+  than words anyone says: the performance half of each cue survives, the music half moved into the
+  instrumental. Cut 1's `[Intro]` and `[Outro]` are **gone** — they bought eight seconds of held
+  string and a decay, which is dead air we would pay for and then trim. **Silence is free in
+  Premiere.** Both new Style boxes measured under the cap: **718 / 648**.
+  ⬜ **Cuts 2-5 still carry the old glued boxes.** Their split is bigger than cut 1's, because
+  their beds have **arcs** in them — cut 2 rises into one enormous drum impact, cut 3 climbs and
+  stops dead. Under this structure those arcs come out and the impact becomes a one-shot placed on
+  the Enter keystroke, which is **sync point 1** and the only way to hit it exactly. That is a
+  sound judgement owed to Kai's ear, logged as open call 8.
+  🗑️ **Five undocumented `.wav` files were retired from `clips/`** the same day — `Part A`,
+  `Part B`, `Part A&B`, `Part A (Strings)`, `The Global Overview`, dated 21-23 Aug and referenced
+  nowhere in the repo. `Part A&B` (134.9s) is `Part A` (85.0s) plus `Part B` (54.0s), i.e. exactly
+  the merging the 2026-08-24 one-generation-per-scene ruling abolished. **Moved, not deleted**, to
+  `_retired-audio-2026-08-27/` with a provenance note. ⬜ They are still imported into
+  `gpom-story.prproj` and show as offline media — removing them needs a session holding the
+  Premiere bridge.
 
 - **2026-08-24 — the first full pass ran. Cuts 1, 2 and 3 exist.** All three generations went into
   the `gpom-story` workspace as w30/w60 pairs and **came back essentially on budget** — cut 1

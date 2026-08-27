@@ -16,7 +16,14 @@ is *what to reach for*. If you already know the effect and just need the call, y
 
 ## Lane choice — the decision that comes first
 
-Five lanes. Pick by what the job actually needs, not by habit.
+> **🔴 The lanes are LAYERS, not alternatives. Ruled 2026-08-26 (Kai).**
+> Where the world moves *and* the camera moves, you build all three: **Veo animates the world with
+> the camera locked, Premiere moves the camera over the finished clip, ffmpeg does what must be
+> exact.** Read **[`hybrid-method.md`](hybrid-method.md)** before choosing a lane — it also carries
+> the rule that **8 seconds is not a limit** (chain the last frame into the next clip's first) and
+> an audited list of what ffmpeg can do that Premiere cannot.
+
+Five lanes. Pick by what the job actually needs, not by habit — and remember they compose.
 
 | Lane | Reach for it when | Why |
 | --- | --- | --- |
@@ -55,11 +62,13 @@ freepik.com — any blog post describing their old CC tiers is stale).
 
 | Question | Go to |
 | --- | --- |
+| "How do I build a shot that needs both a living world and a moving camera?" · "Can we go longer than 8 seconds?" · "What can ffmpeg do that Premiere can't?" | 🟢 **[`hybrid-method.md`](hybrid-method.md)** — the three-layer method, the frame-chaining rule, and the audited ffmpeg/frei0r surface |
 | "Is this file ready to upload?" | 🟢 **[`delivery.md`](delivery.md)** — delivery specs and QC, plus `scripts/delivery-qc.sh`. **Run it before anything ships** |
 | "Is there a template for X?" | [`../premiere/mogrt-catalogue.md`](../premiere/mogrt-catalogue.md) — **77 MOGRTs already installed**, free, with every field they expose |
+| **"What effects can we apply?"** | 🟢 **BOTH catalogues, always** — [`../premiere/effects-catalogue.md`](../premiere/effects-catalogue.md) (106 effects, 118 transitions) **and** [`ffmpeg-catalogue.md`](ffmpeg-catalogue.md) (319 video filters, 133 frei0r plugins). Ruled 2026-08-26: never list one without the other |
 | "What effect does X?" (Premiere) | [`../premiere/effects-catalogue.md`](../premiere/effects-catalogue.md) — **all 106 effects and 118 transitions installed**, harvested live and grouped by what you would ask for |
 | "How do I apply it from here?" | [`../premiere/recipes.md`](../premiere/recipes.md) — concrete tool calls |
-| "What ffmpeg filter does X?" | [`docs/flow/post-production.md`](../flow/post-production.md) first (it owns the everyday recipes), then brief `12` below |
+| "What ffmpeg filter does X?" | 🟢 **[`ffmpeg-catalogue.md`](ffmpeg-catalogue.md)** to browse (incl. the frei0r shelf and the eight things only ffmpeg can do), then [`docs/flow/post-production.md`](../flow/post-production.md) for a tested recipe |
 | "Why did the API do that?" | [`../premiere/api-notes.md`](../premiere/api-notes.md) |
 | "Is there a royalty-free clip of X?" · "Is this clip safe to use?" | 🟢 **[`footage-sources.md`](footage-sources.md)** — **68 sources tiered green/amber/red**, counts dated, with the licence traps that look nothing like traps — and a verification table separating what was proven live from what was only read. The procedure is the **`find-footage`** skill; this is its reference |
 

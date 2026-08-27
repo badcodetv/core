@@ -514,6 +514,29 @@ param.createSetInterpolationAtKeyframeAction(tick, ppro.Constants.InterpolationM
 Scale 100 at 0s and 120 at 2s produced two keyframes reading back at the right times with the
 right values. `areKeyframesSupported()` is honest — every intrinsic param returns true.
 
+### 🔴 Keyframe `time` is CLIP-RELATIVE, not sequence time (2026-08-27)
+
+The T10 test above used a clip starting at 0, so the two readings agreed and the ambiguity never
+showed. It shows the moment a clip starts anywhere else.
+
+**A push on `s02-hong-kong.mp4` (sequence 55.72 → 83.56) was keyframed at 80.8 and 83.55 —
+sequence time. It rendered nothing at all.** The keyframes were created, read back at `t: 80.8`
+and `t: 83.55`, and reported `timeVarying: true` — the state file agreed with the request in every
+respect. They had simply landed **53 seconds past the end of a 27.84s clip**, so every rendered
+frame fell before the first keyframe and held its value.
+
+**Subtract the clip's `start` before keyframing.** Sequence 80.8 on that clip is clip-relative
+25.08.
+
+🔴 **The failure is silent and reads as "keyframes do not work."** Nothing errors, the state file
+looks correct, and `timeVarying` is true. The only test that catches it is exporting two frames
+inside the intended move and diffing them — identical frames mean the keyframes are outside the
+clip. Do that before concluding anything about the API.
+
+⚠️ **Keyframes outside a clip's span are kept, not rejected.** The stray pair above is still on
+that clip. They are never rendered, but they are in the file, and a later reader will see four
+keyframes where two were intended.
+
 ### The intrinsics cannot be removed
 
 `AE.ADBE Opacity` and `AE.ADBE Motion` are on every clip and Premiere's own UI will not delete

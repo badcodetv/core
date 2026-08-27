@@ -33,12 +33,49 @@ obvious approach produced a plausible-looking wrong result.
 
 ## Preflight
 
-Suno runs in **the same Chrome as Flow** — one browser, one login.
+Suno runs in **this session's channel — the same browser as Flow**, one login per profile.
 
 ```bash
-scripts/flow-chrome.sh                       # if not already up
-npx tsx scripts/suno/suno.mts status         # reads the create form back
+./scripts/browser-channel.sh claim suno       # picks + launches a channel, prints which
+npx tsx scripts/suno/suno.mts status          # reads the create form back
 ```
+
+### 🔑 Channels — ask for one, never pick a port (2026-08-26)
+
+A **channel** is one CDP port plus one Chrome profile, merged into one number. `suno.mts`
+resolves it as: `SUNO_CDP_ENDPOINT` → `FLOW_CDP_PORT` → **the channel this session's flow MCP
+server has locked** → 9222. So Suno and Flow in one session share a browser (correct), and two
+sessions never collide.
+
+Nothing to configure: run `claim`, read the channel it prints, get on with it.
+
+🔴 **`LOGGED_IN=no` means STOP and ask the user to sign in to Suno** in that window, naming the
+channel. A fresh profile is always logged out — relaunching only makes a second logged-out
+browser.
+### 🔴 ONE Suno session at a time — the channel system does NOT make Suno concurrent (2026-08-27)
+
+Browser channels give Flow safe concurrency because each channel is its own tab and profile.
+**Suno defeats that, twice over, and both are account-level:**
+
+1. **There is ONE create form.** It is a single shared surface. A second session running `load`
+   **wipes whatever the first was holding, with no draft recovery.**
+2. **My Taste is ONE account-wide box.** It cannot be turned off, is invisible from the create
+   page, and applies to every generation on the account regardless of channel.
+
+**So before touching Suno: check no other session is mid-run.** `status` is the tell — if the
+form holds a title and workspace belonging to another sheet, **stop and ask** rather than
+loading over it. Note the title, workspace, `styleLen`, `excludeLen` and sliders first, so the
+other session can reload.
+
+📎 **Proven the hard way 2026-08-27:** a GPOM narration session and a Camping session ran
+simultaneously. The GPOM session read `status`, found a Camping cover loaded (`camping-duet`,
+take c3), and loaded over it. Separately, the credit balance **dropped by 30 mid-session** —
+the other session generating — which is the other reliable tell.
+
+🔴 **We still never automate downloading.** Suno caps downloads per month and that allowance is
+only ever spent by a human. Two channels do not double it.
+
+Model: [`docs/flow/concurrent-sessions.md`](../../../docs/flow/concurrent-sessions.md).
 
 `status` failing with `NO_CONTEXT` means Chrome isn't up. `status` returning nulls means the
 create page isn't open — the script will navigate there itself on the next command.
@@ -66,6 +103,94 @@ npx tsx scripts/suno/suno.mts takes gpom-cut1
 `load` is always safe. `pair` costs **20 credits** (10 per Create, 2 takes each).
 
 ## The rules that are not negotiable
+
+### 🔑 THE ATOM — four boxes, one unit (Kai, 2026-08-27)
+
+**A "style" is not the Style box. A style is FOUR boxes**, and they describe one sound:
+
+| | |
+|---|---|
+| **My Taste** | account-wide, invisible from the create page, and the one that persists between runs |
+| **Style** | the arrangement |
+| **Exclude styles** | what it must not become |
+| **Lyrics** | the words and their bracket cues |
+
+🔴 **They change together or not at all.** Kai: *"if we're changing any of the prompts, we should
+change all of the prompts… it's an atomic action."* Changing three of four leaves a **hybrid nobody
+designed** — and because My Taste is the invisible one, it is always the one left behind.
+
+📎 **This is not theoretical.** The GPOM newsreader profile sat in My Taste under **fourteen**
+Camping cover rounds and a scouting set, demanding *one voice* for a two-man duet and *almost no
+music* for a drum-and-bass track. Every "genre X didn't work" finding from those rounds is unsafe.
+
+### 🔑 The two levels of change — and only two
+
+Every round is one of these. Naming which one you are doing is the discipline.
+
+| Level | What moves | What must NOT move |
+| --- | --- | --- |
+| **1 · Prompt round** | **all four boxes**, together | — |
+| **2 · Slider round** | audio influence · style influence · weirdness | **every prompt box.** Not one word |
+
+**A round that changes a prompt *and* a slider tells you nothing**, because two variables moved.
+Within one atom you may run as many slider rounds as you like — that is the cheap axis, and it is
+where the pair at weirdness 30/60 lives.
+
+### 🔑 How sheets must be written
+
+**Each experiment is a self-contained block holding all four boxes**, separate from every other
+experiment — so a variation can be heard as fully itself.
+
+Put the taste **inside the block** as a ```taste fence:
+
+````markdown
+#### variation-name
+
+My Taste:
+
+```taste
+Vocals I love: …
+Music I love: …
+```
+
+Style:
+
+```
+…
+```
+
+Exclude styles:
+
+```
+…
+```
+
+Lyrics:
+
+```lyrics
+…
+```
+````
+
+`extract` reads the atom's own ```taste fence **first**, and only falls back to a shared section
+for sheets written before this ruling. 🔴 **A shared taste section is the old, wrong model** — it
+is precisely how a profile gets left behind when the style changes.
+
+⚠️ **An INSTRUMENTAL atom has no lyrics** — taste + style + excludes is the whole of it, and that
+is valid, not short.
+
+### 🔑 What the tooling now enforces
+
+- **`load` writes My Taste every time** and **reads it back**, aborting on a mismatch rather than
+  generating against the wrong global box.
+- **`load` REFUSES a spec with no `taste`.** Pass `applyTaste: false` only for a deliberate
+  slider-only round — and then no prompt box may change either.
+- **`npx tsx scripts/suno/suno.mts taste [block.txt]`** reads it; with a file it backs up, writes
+  and verifies.
+
+⚠️ **This costs a few seconds per generation** (the profile menu, the save, the read-back). Kai
+ruled that latency worth paying: *"it might add an extra bit of latency… I think that's a thing we
+absolutely need to do."*
 
 ### 🔴 Never automate downloading
 
@@ -123,6 +248,38 @@ A/B/C for scenes.
 
 Set the workspace **before** Create — it routes the output, and moving clips afterwards is
 manual. The workspace id lands in the URL as `?wid=<uuid>`.
+
+---
+
+## 🔴 INHERITANCE IS A BUG. Declare the whole form, assert it, then Create.
+
+**Ruled 2026-08-27, after four separate versions of the same failure in one day.** The create form
+is **persistent, account-level and shared** — with a human, and with any other session. Every field
+you do not set this run is a field someone else set, and **none of them error**:
+
+| What leaked | How it looked | What it cost |
+| --- | --- | --- |
+| **My Taste** | invisible from the create page | fourteen Camping rounds under another song's profile |
+| **A saved Voice** | 🔴 the worst one — **overrides the casting outright**, silently | a two-man duet generated as one newsreader |
+| **Workspace** | takes simply appear somewhere else | twelve takes filed into another story, moved back by hand |
+| **Duration** | a number left behind by another sheet | every take clipped, or padded, with nothing saying so |
+
+**So a run must state its COMPLETE intended form state and verify the live form against it before
+clicking Create.** Not just the boxes it is changing this round. Concretely, assert **all** of:
+style length · exclude length · lyric paragraphs · My Taste (read back) · **attached Voice** ·
+workspace · Weirdness · Style Influence · Audio Influence · Duration · title · (covers) the
+attached audio.
+
+🔴 **Voices specifically: assert NO voice unless the sheet names one.** With none attached the
+control reads exactly `Voice`; attached, it reads the persona's **name**. A sheet that casts its
+voices in the Style box — which is all the Camping sheets — must abort when anything is attached,
+because a Voice beats the Style box and the take will sound *plausible*, just not cast.
+`cover-genre.mts` carries the reference implementation (`EXPECT_VOICE` / `NO_VOICE`).
+
+🔴 **And Suno is not concurrent.** Browser channels make *Flow* parallel; they do nothing here,
+because the create form, My Taste, the Voice list and the credit pool are all **account-level**.
+**One Suno session at a time.** Run `status` first, and if the form holds another sheet's title or
+workspace, stop and ask rather than loading over it.
 
 ## The seven traps that will bite you
 

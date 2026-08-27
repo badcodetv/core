@@ -102,6 +102,17 @@ minutes as photographs and spends its one moving shot exactly once.
 - The push-in is the one move an 8-second clip executes cleanly, and it means one thing —
   narrowing attention toward a realisation. Put something at the end of it worth arriving at.
 
+**🔴 Separate the two kinds of movement before you budget either.** *(Ruled 2026-08-26.)* A shot
+can have a **living world** and a **moving camera**, and they are built by different tools: Veo
+animates the world with its camera locked, and the camera move is done in post. So the scarce
+resource this budget governs is **camera movement**, not motion in general — a locked-off frame
+full of working machinery is not a "still", and it does not spend the budget. Neither is the
+8-second clip length a constraint on how long a beat runs; clips chain. Method:
+[`docs/video-fx/hybrid-method.md`](../../../docs/video-fx/hybrid-method.md).
+
+**And a still that truly holds still reads as a scanned photograph.** Give it a reason to feel
+photographed — a low-amplitude camera drift, one light changing, grain that lives.
+
 ---
 
 ## Diagnose mode

@@ -829,6 +829,36 @@ rack doors has pivots in it by definition, and no wording removes them — that 
 in post. What has changed is that hinging is now a **property of what you put in frame**, not a
 blanket capability limit on travelling moves.
 
+### ✅ Confirmed independently, and two more non-levers ruled out (2026-08-27)
+
+GPOM cut 3 ran eight locked-camera plates through Veo in one session. **Six held at 0–2px of
+drift over their full length.** The two that failed were the only two whose near field is a
+hinge-able surface — a gantry view down tiers of **rack doors**, and a tower wall of **louvre
+panels**. Both are named on the avoid list above. The rule predicted the result exactly.
+
+On those two, three variables were then tested and **none of them is a lever**:
+
+| Changed | Result |
+| --- | --- |
+| **Wording** — every travelling object deleted from the prompt | same slide, near-identical trajectory |
+| **Tier** — Veo 3.1 Lite instead of Fast | same slide. Tier is not the lever |
+| **Duration** — 4s instead of 8s | 🔴 **the SAME camera move, executed faster** — 268px by 3.9s versus 8px at 4s in the 8s take |
+
+🔴 **The duration result is the new one, and it kills a plausible fix.** *"Chain it in shorter
+segments so the drift stays small"* does not work: Veo performs the move it has decided on inside
+whatever duration you ask for, so a shorter clip is a **faster move, not a smaller one**. Chaining
+(§4) still breaks the 8-second cap on a shot Veo is holding still. It does **not** bound a camera
+Veo has decided to move.
+
+⚠️ **And post cannot rescue it either.** `vidstab` with `smoothing=0 relative=0` made the same
+shot *worse* (94px vertical). It smooths handheld shake; it cannot undo a camera translation that
+carries real parallax, because near and far fields move by different amounts and no single 2D
+transform fixes both. **A hinge-able near field means the shot is a locked plate. Decide that
+before the first roll, not after the fourth.**
+
+Full measurements and the post builds that replaced both shots:
+[`../stories/gitpush-origin-master/scenes/plant-room-recut.md`](../stories/gitpush-origin-master/scenes/plant-room-recut.md).
+
 ⚠️ Depth-cue layering in the source still (§3) remains a separate untested variable.
 
 **The rule that follows: a camera-only move on a still belongs in post, not in Veo.**

@@ -97,6 +97,25 @@ If you read nothing else:
    comic overlay?
 5. **Generate, look, subtract.** When it's wrong, remove a clause before adding one.
 
+## 🔴 Where the prompt gets written down
+
+**A prompt is repo content. Write it in the repo, then generate.**
+
+| What | Where |
+| --- | --- |
+| The pre-production board for a story — style prompt, guardrails, cast, cut order | `docs/stories/<story>/prompts.md` |
+| A specific scene's prompts and what actually got made | `docs/stories/<story>/scenes/<scene>.md` |
+| A standalone brand image | beside the image, per `new-image` |
+| **Never** | the Premiere project's `clips/` folder — that is for media only |
+
+Every generated image and clip keeps **its exact prompt plus a revision log**, which is what makes
+*"just like that, but change X"* one cheap step instead of a re-derivation. A prompt written
+somewhere unversioned loses that.
+
+Ruled 2026-08-27 by Kai, after a scene's prompt sheet was written out to `clips/` by mistake —
+the 2026-08-26 ruling that *generated media* lives in the open Premiere project's `clips/<scene>/`
+got over-applied to the words. Media out there, words in here.
+
 ## Debugging a failure
 
 **First: which kind of failure?**

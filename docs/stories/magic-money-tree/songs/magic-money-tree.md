@@ -674,18 +674,24 @@ They say, ya can't make money from a tree
 let's see, each day, not free, ay
 work and get paid though, earning that dough
 but where does it go? nobody knows!
+
 standards bleeding, land-lords needing
 quantitative easing, grandma FREEZING!
 means of production, means a reduction
+stimulus checks are next, get wrecked
+
 rent seeking? JUST ABOUT EATING!
 sorry, did I interrupt your meeting?
-stimulus checks are next, get wrecked
 incoming statement all about debasement
-here comes the piggy bank out of the basement
-apparently, there is no magic money tree
-yet it seems to me, that when the government
-has a mess, then they lean on the printing press
-and the magic part is who it made rich — have a guess
+liquidity events that nothing can prevent
+
+house hold rules need not apply
+you CAN get high on your own supply
+what's occuring, the printer is burring,
+
+
+
+the money pops up and the line goes up
 
 [Hook — the concession — 4 — SEED, Kai to rewrite]
 I don't know much — (there is no magic money tree)
@@ -704,6 +710,19 @@ but I know that paper comes from a tree
  Hitler · person-free)
 
 (EXAMPLE — Claude, 2026-08-26 — disposable; Kai rewrites)
+
+so what can you see if you squinted
+at the fat stacks of cash that you printed?
+well the ones who studied history
+would recognise you just stepped to misery
+
+hyper inflation is how to really fuck up a nation
+if you just control the printer then
+you will certainly cause an economic winter
+splashing the cash 
+
+
+
 so shake it then — go on, give it a go
 Berlin did once — wheelbarrows, ya know
 told a whole valley: down tools, we'll pay

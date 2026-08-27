@@ -11,6 +11,13 @@ long.** This file owns that.
 **The one question.** *What does this movement mean that stillness would not?* No answer, no
 move. **P**
 
+**🔴 House ruling, 2026-08-26 — ask it twice, because there are two movements.** *Does the world
+move?* and *does the camera move?* are separate questions with separate answers and separate tools:
+Veo animates the world with its camera locked, post moves the camera over the finished clip. The
+motion budget below governs **camera** movement only — a locked frame full of working machinery
+spends none of it. Nor does an 8-second generation cap set a beat's length; clips chain frame to
+frame. How: [`../video-fx/hybrid-method.md`](../video-fx/hybrid-method.md). **H**
+
 **Dolly and zoom are not interchangeable.** A dolly physically moves the camera, so the
 background parallax shifts and depth feels real. A zoom magnifies a flat image. If you want the
 viewer to feel they are *approaching* something, only one of the two does it. **A**

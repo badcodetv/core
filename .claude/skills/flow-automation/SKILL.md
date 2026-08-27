@@ -102,14 +102,44 @@ flow_status
 | `{ loggedIn: false }` | *Now* ask the user to sign in, in the window that just opened. Nothing else will work. |
 
 ```bash
-# 1. background, never foreground — it does not return
-./scripts/flow-chrome.sh
-# 2. wait for CDP
-for i in $(seq 1 20); do curl -s -m 2 http://localhost:9222/json/version >/dev/null && break; sleep 1; done
-# 3. flow_status again
+# ONE command. It picks a free channel, launches a browser if none is running, and prints
+# which one you got. Never choose a port yourself.
+./scripts/browser-channel.sh claim
+# -> CHANNEL=2 PORT=9223 LOGGED_IN=yes
 ```
 
-- Login persists in `.flow-profile/`, so a relaunch is normally already signed in.
+Then `flow_status` again. It reports `channel` and `port`, so you can always say which browser
+you are on.
+
+### 🔑 Channels — you ask for one, you never pick a port (2026-08-26)
+
+**A channel is one CDP port plus one Chrome profile, merged into a single number** so nobody has
+to track either. Channel 1 = 9222 + `.flow-profile` (the original, unchanged); channel N = 9221+N
+with its own profile.
+
+**The flow MCP server resolves its own channel** on first use — an explicit `FLOW_CDP_PORT` wins,
+otherwise it discovers a live, unclaimed browser and takes a PID lock on it. So two concurrent
+sessions land on different browsers **without anyone choosing**, and the lock dies with the
+process, so a crashed session never wedges a channel.
+
+| Want | Do |
+| --- | --- |
+| A browser to work in | `./scripts/browser-channel.sh claim` |
+| Which browser am I on? | `flow_channels` — or the `channel`/`port` on `flow_status` |
+| What is running right now? | `./scripts/browser-channel.sh list` |
+| A specific one | `./scripts/browser-channel.sh up 2` |
+
+🔴 **If `claim` reports `LOGGED_IN=no`, STOP and ask the user to sign in** in that window. Say
+which channel it is. Do not retry, and do not launch another browser — a fresh profile is always
+logged out, so relaunching just makes a second logged-out browser.
+🔴 **Never hard-code 9222** in a command you write. Use `browser-channel.sh port <n>`, or
+`${FLOW_CDP_PORT}` when it is set — a literal will poll another session's browser.
+🔴 **Credits and rate limits are per account**, so channels remove *our* bottleneck, not Google's.
+And the **Premiere bridge stays strictly one** — never two sessions on the timeline.
+
+Full model: [`docs/flow/concurrent-sessions.md`](../../../docs/flow/concurrent-sessions.md).
+
+- Login persists per channel profile, so a relaunch is normally already signed in.
 - **Don't relaunch between generations** — the MCP caches its CDP attachment.
 - It renders through WSLg, so the user can watch. That is often the fastest diagnosis available:
   **look at the window.**
@@ -125,11 +155,11 @@ your upload by diffing the tile grid, and that diff degrades in a cluttered proj
 
 ---
 
-## 2. The tool surface — 22 tools
+## 2. The tool surface — 23 tools
 
 | Group | Tools |
 | --- | --- |
-| **Session** | `flow_status` |
+| **Session** | `flow_status` (reports this session's channel + port) · `flow_channels` (what is running, what is claimed, which is mine) |
 | **Projects** | `flow_list_projects` · `flow_open_project` · `flow_create_project` |
 | **Stills** | `flow_generate_image` · `flow_edit_image` · `flow_refine` · `flow_generate_batch` |
 | **Video** | `flow_generate_video` · `flow_refine_video` |
@@ -194,6 +224,51 @@ clock, not the balance.
 
 Full taxonomy: [`failure-modes.md`](../../../docs/flow/failure-modes.md) — Part A policy,
 Part B0 the other empty results, Part B silent quality failures.
+
+---
+
+## 3b. 🔴 What Veo is FOR — the hybrid method, ruled 2026-08-26
+
+**Veo animates the world. It does not move the camera.**
+
+Veo's most expensive failure is **regeneration** — as objects leave and enter frame it invents
+their replacements and invents different ones. That bug is caused by camera *translation*. Lock
+the camera and it cannot fire.
+
+So on any shot where the world moves and the camera moves, build **both layers**:
+
+1. **Veo** — plate as `startImage`, prompt **motion only**, and say *"the camera does not move."*
+2. **Premiere / ffmpeg** — the camera move, over the finished clip. Rigid by construction, any
+   length, exact easing, free, instant to re-try.
+
+⚠️ Even a locked Veo clip drifts **34–66px over 8s**. Stabilise or crop; never plan a beat on a
+truly held Veo frame.
+
+### 🔴 Eight seconds is never a reason to shorten a beat
+
+The cap is per generation, not per shot. **Chain the frames:** the last frame of clip N becomes the
+first frame of clip N+1. Each clip starts from a real frame, so each stays rigid and the join is
+invisible.
+
+```bash
+ffmpeg -sseof -0.05 -i clipN.mp4 -update 1 -frames:v 1 -q:v 2 lastframe.jpg
+```
+
+`flow_scene_save_frame position:"end"` does the same inside Flow and lands the frame in the project
+as an asset — use that when the next generation needs to reference it.
+
+**Chain; do not pin an `endImage`.** Frames-to-Video *interpolates between two pictures* — Google
+documents it as a morph tool — and every inconsistency between the two images gets animated away as
+sliding joins and deforming structure. Measured on GPOM scene 0: dropping `endImage` took the same
+prompt from *"joins slide and deform throughout"* to *"completely rigid."* **Chaining buys
+rigidity; pinning buys arrival.**
+
+For a pull-back that lands frame-exact on an art-directed plate, chain **push-ins** from the
+destination and reverse them — [`docs/flow/post-production.md`](../../../docs/flow/post-production.md)
+§3.4b. ⚠️ Only works if nothing physical settles: dust, smoke and sparks read as running backwards.
+
+Full method, including what ffmpeg can do that Premiere cannot:
+[`docs/video-fx/hybrid-method.md`](../../../docs/video-fx/hybrid-method.md).
 
 ---
 
@@ -473,6 +548,24 @@ answers — the `project.path` it returns is the whole decision.
 <project>/clips/<scene>/          # takes, candidates, rejects: the whole mess
 <project>/clips/<scene>/final/    # only what has been approved
 ```
+
+### 🔴 That ruling is about MEDIA. The WORDS stay in the repo (2026-08-27)
+
+**`clips/` holds files you can watch. It never holds files you read.**
+
+| Artefact | Home |
+| --- | --- |
+| Stills, takes, contact sheets, animatics, the graded cut | **`<project>/clips/<scene>/`** |
+| Prompts, beat lists, motion plans, rulings, revision logs, the still-owed list | **the repo** — `docs/stories/<story>/scenes/<scene>.md`, and the pre-production board in `docs/stories/<story>/prompts.md` |
+
+**Why it is worth a rule of its own:** it was got wrong on 2026-08-26, one day after the media
+ruling landed, by writing a whole prompt sheet out to `clips/…/recut-plates/`. Kai caught it —
+*"in my mind, we work on prompts and reference stills inside the repository, and then larger
+video iterations happen inside the clips folder."* The media ruling never said otherwise; it just
+never said what does **not** go there, and a rule with one half stated gets applied to the other.
+
+A prompt in `clips/` is unversioned, ungreppable, invisible to every other session, and on a
+drive that is not backed up. **Write the prompt in the repo, then generate.**
 
 **Create `clips/` if it is not there** — `mkdir -p` it, do not error and do not fall back to the
 Desktop just because the folder is missing. Never write generated media to the project root: it
