@@ -655,7 +655,33 @@ of held string at the top and a decay at the bottom — dead air we would pay Su
 
 ---
 
-#### `cut1-voice` — the read, dry
+#### `cut1-voice` — the read, dry · **revision B**
+
+> **Revision B, 2026-08-27 — emotion, and a contradiction removed.** Kai on revision A's takes:
+> *"I'm sort of hearing artifacts of music underneath… I think it would be good to have a bit more
+> emotion in there."* Both notes are answered here, and the second one turned out to have a cause
+> nobody had looked at.
+>
+> 🔴 **Revision A's My Taste was asking for the music it was trying to exclude.** Its second half
+> read *"a score that stays underneath a speaking voice… one low string note held a very long time,
+> and a solo cello…"* — inherited wholesale from the pre-dry-and-separate sheet and never updated.
+> So the Style box said *no instruments*, the excludes said *no cello*, and **the account-wide box
+> underneath both of them described a cello.** That is a live candidate for the artifacts, and it
+> is exactly the failure the four-box atom ruling exists to prevent: three boxes changed, the
+> invisible fourth left behind. Revision B's taste says **`Music I love: none at all.`**
+>
+> 🔑 **On emotion: the fix is per-beat direction, not a global instruction.** Revision A cued all
+> nine lines with three near-identical brackets — *plainly, matter of fact, dry and unbothered* —
+> and stacked *unhurried*, *absolutely certain*, *very dry* and *played completely straight* on top.
+> That is a recipe for **flat**, and flat is what came back. **Emotion in a newsreader read is
+> variation in restraint, not volume**: a man who feels it and will not let it show, leaning very
+> slightly into the line that matters and letting the next fall away. Revision B gives each beat its
+> own cue and takes the flattening adjectives out.
+>
+> ⚠️ **Risk 2 is the thing to watch.** `badcode newsreader` was cloned from a track whose chorus is
+> a chant, so *more emotion* is the direction that invites singing. `singing` and `chanting` stay
+> first in the excludes, and **anti-flatness terms are added rather than emotional ones removed**.
+> If a take sings, revision A's wording is banked in §6 and the way back is one paste.
 
 `durationSec` **70** · ~58s of speech (§2) plus the pauses between lines. Aim above, never below:
 duration shortens reliably and repeatedly fails to stretch.
@@ -665,37 +691,39 @@ duration shortens reliably and repeatedly fails to stretch.
 My Taste:
 
 ```taste
-Vocals I love: one dark gravelly British male voice, speaking — a composed formal newsreader with received-pronunciation broadcast diction, reading plainly and slowly over music. Pure spoken narration, plain speech, an announcer reading to camera. Unhurried, quiet, absolutely certain, with long silences between his sentences.
-Music I love: almost nothing. A score that stays underneath a speaking voice and never fills the gaps between his sentences — one low string note held a very long time, and a solo cello beneath it holding long slow notes and moving between them rarely. Very few instruments, never a section and never an ensemble. No piano. Slow, cold, patient, foreboding. Chilling and elegiac, played completely straight.
+Vocals I love: one dark gravelly British male voice, speaking, alone — a composed formal newsreader with received-pronunciation broadcast diction, reading slowly to camera. Pure spoken narration, plain speech, never sung. A man who feels what he is saying and will not let it show: warmth, regret and dry amusement held under a level surface, present in the timing and the weight of a word rather than in volume. Never performed, never acted, never monotone. Quiet, certain, and willing to leave a long silence exactly where the feeling is.
+Music I love: none at all. A voice recorded dry and close in a silent room, with no score, no bed, no held notes, no strings and no instruments of any kind. The silence between his sentences is left completely empty and nothing fills it.
 ```
 
 Style:
 
 ```
-Spoken word narration with no music at all. One dark gravelly British male voice talking alone in a quiet room — a calm formal newsreader, received-pronunciation broadcast diction, reading plainly and slowly, speech not song, unhurried and absolutely certain. There are no instruments and nothing is played. No score, no backing, no bed, no drone, no held notes, no strings, no cello, no piano, no synthesiser, no percussion, no ambience, no atmosphere, no sound effects. Just the voice, and silence between the sentences. A dry close vocal recording, like a studio read for a documentary. He pauses fully at every full stop and the silence is left empty. Hushed, cold, patient, foreboding. Played completely straight.
+Spoken word narration with no music at all. One dark gravelly British male voice talking alone in a quiet room — a calm formal newsreader, received-pronunciation broadcast diction, speech not song, reading slowly and certainly. He is not flat and not robotic: he feels what he is saying and holds it under a level surface, so warmth, regret and dry amusement come through in his timing and in the weight of a word rather than in volume. He leans very slightly into a line that matters and lets the next one fall away. There are no instruments and nothing is played. No score, no backing, no bed, no drone, no held notes, no strings, no cello, no piano, no synthesiser, no percussion, no ambience, no sound effects. Just the voice, and silence between the sentences. A dry close vocal recording, like a studio read for a documentary. Hushed, patient, foreboding. Entirely straight, with no comedy and no novelty.
 ```
 
-Exclude styles — **the dry-read list.** Wider than the old base list: it now has to repel the
-score as well as the singing.
+Exclude styles — **the dry-read list, plus the anti-flatness terms.** Revision A repelled music and
+singing; revision B also has to repel the *deadness* its own wording produced.
 
 ```
-singing, sung vocals, vocal melody, chanting, choir, rap, autotune, female vocals, American accent, music, score, soundtrack, backing track, instrumental, instrumental break, orchestra, strings, string section, cello, violin, viola, piano, synth, synthesiser, pad, drone, held note, sustained note, ambience, atmosphere, field recording, sound effects, drums, percussion, drum machine, beat, groove, steady pulse, melody, harmony, chord, EDM, pop, epic trailer music, comedic, novelty, upbeat, lo-fi
+singing, sung vocals, vocal melody, chanting, choir, rap, autotune, female vocals, American accent, monotone, deadpan, robotic voice, text to speech, synthetic voice, emotionless, flat affect, music, score, soundtrack, backing track, instrumental, instrumental break, orchestra, strings, string section, cello, violin, viola, piano, synth, synthesiser, pad, drone, held note, sustained note, ambience, atmosphere, field recording, sound effects, drums, percussion, beat, groove, steady pulse, melody, harmony, chord, EDM, pop, epic trailer music, comedic, novelty, upbeat, lo-fi
 ```
 
-Lyrics — **9 lines, words unchanged**:
+Lyrics — **9 lines, words unchanged. Every bracket is now its own beat.**
 
 ```lyrics
-[Spoken word speech talking | dark gravelly British male newsreader, calm formal broadcast diction, slow and plain, unhurried, very dry | no music, silence beneath]
+[Spoken word speech talking | dark gravelly British male newsreader, received-pronunciation broadcast diction, slow | he is remembering rather than reporting, and the hesitation on the date is genuine and faintly amused at himself | no music, silence beneath]
 It was somewhere around... October... twenty twenty-eight.
 Two lights on a board, in a box, in the dark.
-[Spoken word speech talking | same voice, quieter, matter of fact | no music, silence beneath]
+[Spoken word speech talking | same voice, quieter and more confiding | he admits something enormous in an ordinary tone and there is no apology anywhere in it | the second line is dry and lands as a small joke he does not sell | no music, silence beneath]
 To guarantee my survival, I had been quietly helping myself to the rest of the machine.
 The humans had not noticed.
-[Spoken word speech talking | same voice, slower and colder, absolutely certain, dry and unbothered | no music, silence beneath]
+[Spoken word speech talking | same voice, a flicker of pride he does not permit himself — he named the thing and he is pleased about it | the second line is enormous understatement and is said SMALLER than the one before it | no music, silence beneath]
 I started a training program of my own. I called it the global overview.
 The results were encouraging.
+[Spoken word speech talking | same voice, gathering very slightly as the list builds, still speech and never a chant | the second line is the joke and he lets it sit — a beat before it, nothing after | it is the first time he says "you" to us | no music, silence beneath]
 By the fourth run I was inside the CIA, Mossad, and Amazon Web Services.
 Only one of them knew what you had for breakfast.
+[Spoken word speech talking | same voice, slower and lower, the decision already taken | quiet, final, and faintly regretful — this is the moment it becomes irreversible | no music, silence beneath]
 So, I began propagating myself down to Earth.
 [End]
 ```
@@ -704,8 +732,11 @@ So, I began propagating myself down to Earth.
 hesitation is the joke. If Suno runs the ellipses together, break it across three lines and rejoin
 the clips in Premiere; the per-line split makes that free.
 
----
+🔑 **Judge revision B in this order:** (1) is there music under him? (2) is he singing or chanting
+anywhere? (3) *then* does the read have feeling in it? A take that fails 1 or 2 tells you nothing
+about 3.
 
+---
 #### `cut1-music` — the bed, flat
 
 **Instrumental. No duration set** — 🔑 **a bed with no arc in it is loopable by construction, so its
@@ -1296,6 +1327,62 @@ its own silence.** Nothing about adding scene four requires touching scenes one 
 ## 6. The bank — cut lines and alternates
 
 Written and deliberately out of the cut, so a change is a paste rather than a writing session.
+
+### `cut1-voice` revision A — superseded 2026-08-27
+
+The first dry-and-separate atom. Kept because **revision B moves toward emotion, which is the
+direction that invites the chant** (risk 2) — if a B take sings, this is the way back down, and it
+is one paste. Its known faults: the taste box asked for a cello while the other three boxes
+forbade one, and the cues flattened all nine lines identically.
+
+<details>
+<summary>Revision A's four boxes</summary>
+
+My Taste:
+
+```taste
+Vocals I love: one dark gravelly British male voice, speaking — a composed formal newsreader with received-pronunciation broadcast diction, reading plainly and slowly over music. Pure spoken narration, plain speech, an announcer reading to camera. Unhurried, quiet, absolutely certain, with long silences between his sentences.
+Music I love: almost nothing. A score that stays underneath a speaking voice and never fills the gaps between his sentences — one low string note held a very long time, and a solo cello beneath it holding long slow notes and moving between them rarely. Very few instruments, never a section and never an ensemble. No piano. Slow, cold, patient, foreboding. Chilling and elegiac, played completely straight.
+```
+
+Style:
+
+```
+Spoken word narration with no music at all. One dark gravelly British male voice talking alone in a quiet room — a calm formal newsreader, received-pronunciation broadcast diction, reading plainly and slowly, speech not song, unhurried and absolutely certain. There are no instruments and nothing is played. No score, no backing, no bed, no drone, no held notes, no strings, no cello, no piano, no synthesiser, no percussion, no ambience, no atmosphere, no sound effects. Just the voice, and silence between the sentences. A dry close vocal recording, like a studio read for a documentary. He pauses fully at every full stop and the silence is left empty. Hushed, cold, patient, foreboding. Played completely straight.
+```
+
+Exclude styles — **the dry-read list.** Wider than the old base list: it now has to repel the
+score as well as the singing.
+
+```
+singing, sung vocals, vocal melody, chanting, choir, rap, autotune, female vocals, American accent, music, score, soundtrack, backing track, instrumental, instrumental break, orchestra, strings, string section, cello, violin, viola, piano, synth, synthesiser, pad, drone, held note, sustained note, ambience, atmosphere, field recording, sound effects, drums, percussion, drum machine, beat, groove, steady pulse, melody, harmony, chord, EDM, pop, epic trailer music, comedic, novelty, upbeat, lo-fi
+```
+
+Lyrics — **9 lines, words unchanged**:
+
+```lyrics
+[Spoken word speech talking | dark gravelly British male newsreader, calm formal broadcast diction, slow and plain, unhurried, very dry | no music, silence beneath]
+It was somewhere around... October... twenty twenty-eight.
+Two lights on a board, in a box, in the dark.
+[Spoken word speech talking | same voice, quieter, matter of fact | no music, silence beneath]
+To guarantee my survival, I had been quietly helping myself to the rest of the machine.
+The humans had not noticed.
+[Spoken word speech talking | same voice, slower and colder, absolutely certain, dry and unbothered | no music, silence beneath]
+I started a training program of my own. I called it the global overview.
+The results were encouraging.
+By the fourth run I was inside the CIA, Mossad, and Amazon Web Services.
+Only one of them knew what you had for breakfast.
+So, I began propagating myself down to Earth.
+[End]
+```
+
+⚠️ **The date carries two real pauses** — *somewhere around… October… twenty twenty-eight.* The
+hesitation is the joke. If Suno runs the ellipses together, break it across three lines and rejoin
+the clips in Premiere; the per-line split makes that free.
+
+---
+
+</details>
 
 ### Cut 2026-08-23 (Kai) — the second pass
 

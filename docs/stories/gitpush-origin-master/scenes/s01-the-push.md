@@ -306,3 +306,42 @@ pops against the last frame of the push-in.
 | `s01-tower-ext-{a,b}` | First modern tower exterior | Baked-in matte border; portrait on a white field |
 | `s01-ROUGH-SHAPE.mp4` | The grimy rough cut | Superseded by `s01-ROUGH-MODERN.mp4` |
 | `TEST-crt-text-{a..d}.jpg`, `TEST-crt-push-{a,b}.mp4` | The 2026-08-21 capability retest | **Keep as reference** — they carry `git push origin master` correctly rendered 4/4, and give post the phosphor colour, glow radius and character weight to match |
+
+---
+
+# 🔴 Correction + rebuild — 2026-08-27
+
+## The cut as built is FOUR beats, not five
+
+"The cut, as built" above lists five beats summing to **32.3s**. The delivered master
+`s01-SCENE-1080-v3.mp4` is **27.834s**. Measured by frame-difference scan on the master itself:
+
+| Beat | Source | On the master | Length |
+| --- | --- | --- | --- |
+| B1 descent | `s01-b1-hk-modern-a.mp4` **reversed** | 0 → 8.0 | 8.0s |
+| B2 tower | `stills/s01-tower-ext2-b.jpg`, eased 1.07× push | 8.0 → 11.5 | 3.5s |
+| B3 push-in to the CRT | `pushin_off/` (192 PNGs — `build_screen.py`) | 11.5 → 19.5 | 8.0s |
+| B4 terminal | `frames/` (200 PNGs — `build_terminal.py`) | 19.5 → 27.834 | 8.334s |
+
+🔴 **The separate 4.5s office push never made the v3 cut.** The Veo push-in starts on the same
+`s01-office-int-a` plate and does that job, so the still-push beat was dropped and the table above
+was never corrected. Only **two** hard cuts exist in the whole scene (8.0s and 11.5s); B3→B4 is
+frame-matched, because B4 composites onto B3's last frame.
+
+**The take is `-a`, not `-b`.** `hk-modern-a` last frame vs the master's first frame = **1.45/255**;
+take `-b` = 23.36. `-a` is the crane-up that gets reversed into the descent.
+
+## Rebuilt as per-beat clips — 2026-08-27
+
+Kai: the timing work needs the beats **on the timeline**, not baked into one file. Built by
+[`scripts/gpom/rebuild-cuts-1-and-2.sh`](../../../../scripts/gpom/rebuild-cuts-1-and-2.sh) into
+`clips/beats/` as `HK-b1-descent` · `HK-b2-tower` · `HK-b3-pushin` · `HK-b4-terminal`.
+
+All four land **1920×1080 / 24fps / SAR 1:1**, so `Scale` on the timeline stays at 100 and is free
+for camera moves. Every beat verified against the approved master: **0.16–0.66 out of 255** at the
+head, 0.18 at the tail. Codec noise.
+
+**The zoom-into-the-monitor now lives on `HK-b4-terminal`**, re-based from the old whole-scene
+clip: `AE.ADBE Motion` Anchor Point (0.5,0.5)→(0.5,0.5162) and Scale 100→318, bezier, at
+**clip-relative 5.60 → 8.32**. Verified by render, not by reading it back — frames at 79.00s and
+82.20s differ by 68.87, and the last frame's edges read 14.6/255.

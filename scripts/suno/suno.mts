@@ -432,6 +432,16 @@ async function load(page: Page, spec: SunoSpec, weirdness?: number) {
         '`applyTaste: false` for a deliberate slider-only round.',
     )
   } else {
+    // 🔑 THE FREEDOM TOKEN: only ever claim a box that is free, or one we already hold.
+    const owner = await tasteOwner(page)
+    if (owner !== null && owner.trim() !== spec.taste.trim()) {
+      throw new Error(
+        `My Taste is OWNED by another session — it reads ${JSON.stringify(owner.slice(0, 70))}… ` +
+          `not "${TASTE_FREE}". PAUSE AND ASK THE HUMAN; never load over it. ` +
+          `To take it deliberately: \`suno.mts taste-release\`.`,
+      )
+    }
+    console.log(owner === null ? 'taste: box is FREE — claiming' : 'taste: already ours — reclaiming')
     console.log('taste:', await setTaste(page, spec.taste))
     const back = await getTaste(page)
     if ((back ?? '').trim() !== spec.taste.trim()) {
@@ -544,6 +554,39 @@ export async function setTaste(page: Page, text: string): Promise<string> {
 }
 
 /** Read My Taste back. The half `setTaste` never had, and the reason it stayed unverified. */
+/**
+ * 🔴 THE FREEDOM TOKEN (Kai's ruling, 2026-08-27). A lock file in reverse.
+ *
+ * My Taste is account-wide, invisible from the create form, and cannot be saved empty — a profile
+ * can only be REPLACED. So there is no "unset" state to return to, and every session inherits
+ * whatever the last one left. On 2026-08-27 that cost four separate silent failures in one day.
+ *
+ * The protocol makes the free state explicit and loud:
+ *
+ *   · **Before generating:** My Taste MUST read exactly `MUST_REPLACE_HERE`. Anything else means
+ *     another session or a human owns the box — **stop and ask**, never load over it.
+ *   · **After generating:** write the token back. That is what hands the box to the next session.
+ *
+ * The token is deliberately nonsense: if anyone hand-generates while it is in force, they see
+ * gibberish in the box and know to fill it, instead of silently inheriting the wrong profile.
+ */
+export const TASTE_FREE = 'MUST_REPLACE_HERE'
+
+/** null when the box is free; otherwise the live text, so the caller can show it and stop. */
+export async function tasteOwner(page: Page): Promise<string | null> {
+  const live = (await getTaste(page))?.trim() ?? ''
+  return live === TASTE_FREE ? null : live
+}
+
+/** Hand the box back. Always run this when a generation round finishes, success or failure. */
+export async function releaseTaste(page: Page): Promise<string> {
+  await setTaste(page, TASTE_FREE)
+  const back = (await getTaste(page))?.trim()
+  return back === TASTE_FREE
+    ? `✅ My Taste released — reads "${TASTE_FREE}", free for the next session`
+    : `🔴 RELEASE FAILED — reads ${JSON.stringify(back?.slice(0, 60))}. Fix by hand before anyone else runs.`
+}
+
 export async function getTaste(page: Page): Promise<string | null> {
   await ev(page, `const b = document.querySelector('[data-testid="profile-menu-button"]'); if (b) b.click();`)
   await page.waitForTimeout(1000)
@@ -739,6 +782,7 @@ if (cmd === 'extract') {
   const { browser, page } = await connect()
   const weirdnesses = spec.weirdness ?? [30, 60]
 
+  try {
   if (cmd === 'load') {
     const { verify: v, problems } = await load(page, spec, weirdnesses[0])
     console.log(JSON.stringify(v, null, 2))
@@ -765,7 +809,13 @@ if (cmd === 'extract') {
     }
     console.log(JSON.stringify(await listTakes(page, base), null, 2))
   }
-  await browser.close()
+  // 🔑 Hand the box back. On the failure path too — a half-finished round still leaves a
+  // profile installed account-wide, which is the exact bug the token exists to stop.
+  } finally {
+    // Release on EVERY exit from a pair, thrown or clean.
+    if (cmd === 'pair') console.log(await releaseTaste(page).catch((e) => `🔴 release failed: ${e.message}`))
+    await browser.close()
+  }
 } else if (IS_CLI) {
   console.log(`badcode suno — drive suno.com/create over CDP. See docs/suno-gpt/automation.md
 

@@ -15,13 +15,14 @@
  *
  *   npx tsx scripts/suno/cover-genre.mts plan [ids...]
  *   npx tsx scripts/suno/cover-genre.mts check
- *   npx tsx scripts/suno/cover-genre.mts taste-backup | taste-restore
+ *   npx tsx scripts/suno/cover-genre.mts taste-release | taste-restore
  *   npx tsx scripts/suno/cover-genre.mts run [ids...]
  */
 import type { Page } from 'playwright'
 import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import {
   connect, setSlider, setTitle, setDuration, setLyrics, setTaste, getTaste, setWorkspace, verify, create, listTakes,
+  tasteOwner, releaseTaste, TASTE_FREE,
 } from './suno.mts'
 
 const SHEET = new URL('../../docs/stories/camping/songs/camping-halftime-cover.md', import.meta.url).pathname
@@ -286,32 +287,44 @@ if (cmd === 'plan') {
   console.log(problems.length ? `🔴 ${problems.join(' · ')}` : '✅ lyrics restored from camping-halftime.md §4 — nothing generated')
   await browser.close()
   if (problems.length) process.exit(1)
-} else if (cmd === 'taste-backup') {
+} else if (cmd === 'taste-release') {
+  // The ONLY sanctioned way to take the box off whoever holds it: back up what is there (so a
+  // real profile is never destroyed unrecoverably), then write the freedom token. Run this after
+  // confirming with the human that the current profile is finished with.
   const { browser, page } = await connect()
   const live = await getTaste(page)
-  if (!live) {
-    console.log('🔴 could not read My Taste — nothing saved, do NOT run')
-    await browser.close()
-    process.exit(1)
+  if (live && live.trim() !== TASTE_FREE) {
+    writeFileSync(BACKUP, live)
+    console.log(`backed up ${live.length} chars to ${BACKUP}`)
   }
-  writeFileSync(BACKUP, live)
-  console.log(`✅ saved ${live.length} chars to ${BACKUP}`)
+  console.log(await releaseTaste(page))
   await browser.close()
 } else if (cmd === 'taste-restore') {
+  // Escape hatch: put back whatever taste-release last displaced. Rarely needed — the freedom
+  // token, not a saved profile, is what a finished round should leave behind.
   if (!existsSync(BACKUP)) throw new Error(`no backup at ${BACKUP} — nothing to restore`)
   const want = readFileSync(BACKUP, 'utf8')
   const { browser, page } = await connect()
   console.log(await setTaste(page, want))
   const got = await getTaste(page)
-  console.log(shape(got ?? '') === shape(want) ? `✅ house My Taste restored (${want.length} chars)` : '🔴 restore did NOT take — fix by hand')
+  console.log(shape(got ?? '') === shape(want) ? `✅ restored the backed-up profile (${want.length} chars)` : '🔴 restore did NOT take — fix by hand')
   await browser.close()
 } else if (cmd === 'run') {
-  if (!existsSync(BACKUP)) {
-    console.log(`🔴 ABORT — no My Taste backup at ${BACKUP}. My Taste is account-wide and this run overwrites it.`)
-    console.log('   Run: npx tsx scripts/suno/cover-genre.mts taste-backup')
+  const { browser, page } = await connect()
+
+  // 🔴 GATE 1 — CLAIM. My Taste must read the freedom token, meaning nobody owns it. Anything
+  //    else is another session's or a human's profile and loading over it is how four separate
+  //    silent failures happened on 2026-08-27. Stop and ask; never assume it is abandoned.
+  const owner = await tasteOwner(page)
+  if (owner !== null) {
+    console.log(`🔴 ABORT — My Taste is NOT free. It reads (${owner.length} chars):`)
+    console.log(`   ${owner.slice(0, 220)}${owner.length > 220 ? '…' : ''}`)
+    console.log(`\n   Another session or a human owns this box. Confirm it is finished with, then:`)
+    console.log(`   npx tsx scripts/suno/cover-genre.mts taste-release   (backs it up, writes "${TASTE_FREE}")`)
+    await browser.close()
     process.exit(1)
   }
-  const { browser, page } = await connect()
+  console.log(`✅ My Taste is free ("${TASTE_FREE}") — claiming it for this run`)
   const start = await coverState(page)
   const paras = start.lyricParas as number
   const pre = guard(start, paras)
@@ -365,17 +378,19 @@ if (cmd === 'plan') {
   }
   console.log(`\n✅ generated: ${done.join(', ') || '(none)'}`)
   console.log(JSON.stringify(await listTakes(page, 'Camping cover'), null, 0))
-  console.log('\n🔴 My Taste is still set to the cover-run profile and is account-wide.')
-  console.log('   Run: npx tsx scripts/suno/cover-genre.mts taste-restore')
+  // 🔴 GATE 2 — RELEASE. Hand the box back so the next session finds it free. This runs on the
+  //    success path AND after a mid-run stop, because a half-finished round still leaves our
+  //    profile installed account-wide.
+  console.log(`\n${await releaseTaste(page)}`)
   await browser.close()
 } else {
-  console.log(`badcode cover-genre — indie rock / punk overlay experiments on the attached Camping cover.
+  console.log(`badcode cover-genre — genre-overlay experiments on the attached Camping cover.\n🔴 My Taste must read "${TASTE_FREE}" before a run, and is released back to it after.
 
   plan [ids...]     resolved boxes, offline
   check             live form + My Taste, spend nothing
-  taste-backup      save the house My Taste — REQUIRED before run
-  taste-restore     put it back — DO THIS AFTER
+  taste-release     back up whatever My Taste holds, then write the freedom token
+  taste-restore     escape hatch: put back whatever taste-release displaced
   run [ids...]      Create each in turn — 10 credits and 2 takes per id
 
-${VARIATIONS.map((v) => `  ${v.id.padEnd(18)} genre=${v.genre} AI=${v.audioInfluence} W=${v.weirdness}`).join('\n')}`)
+${VARIATIONS.map((v) => `  ${v.id.padEnd(18)} lane=${v.lane.name} AI=${v.audioInfluence} W=${v.weirdness}`).join('\n')}`)
 }

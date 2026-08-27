@@ -276,6 +276,28 @@ voices in the Style box — which is all the Camping sheets — must abort when 
 because a Voice beats the Style box and the take will sound *plausible*, just not cast.
 `cover-genre.mts` carries the reference implementation (`EXPECT_VOICE` / `NO_VOICE`).
 
+### 🔑 THE FREEDOM TOKEN — `MUST_REPLACE_HERE`
+
+**Kai's ruling, 2026-08-27. A lock file in reverse.** My Taste **cannot be saved empty** — a
+profile can only be *replaced* — so there is no neutral state to return to and every session
+inherits whatever the last one left. This makes the free state explicit and loud:
+
+| When | Rule |
+| --- | --- |
+| **Before any generation** | My Taste MUST read exactly `MUST_REPLACE_HERE`. **Anything else means someone owns the box — PAUSE AND ASK THE HUMAN.** Never load over it. |
+| **After any generation** | Write `MUST_REPLACE_HERE` back. That is what hands the box to the next session. Do it on the failure path too — a half-finished round still leaves a profile installed account-wide. |
+
+The token is deliberately nonsense: a human who hand-generates while it is in force sees gibberish
+in the box and knows to fill it, instead of silently inheriting the wrong song's profile.
+
+**Do NOT restore "the previous profile" afterwards.** That was the old behaviour and it was the
+bug: `taste-backup` captured whatever was ambient and `taste-restore` faithfully reinstalled it,
+so a leaked profile was preserved forever and looked like the house default.
+
+Helpers in `suno.mts`: `TASTE_FREE`, `tasteOwner(page)` (null when free, else the live text),
+`releaseTaste(page)`. Reference use: `cover-genre.mts` — gate 1 claims, gate 2 releases.
+Taking the box off someone is one explicit command that backs up first: `… taste-release`.
+
 🔴 **And Suno is not concurrent.** Browser channels make *Flow* parallel; they do nothing here,
 because the create form, My Taste, the Voice list and the credit pool are all **account-level**.
 **One Suno session at a time.** Run `status` first, and if the form holds another sheet's title or

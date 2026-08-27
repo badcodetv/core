@@ -628,3 +628,28 @@ throughout; every clip had its audio stripped.
 
 **The test this passes:** delete the scratch folder except `final/`, and the scene rebuilds from
 this repo plus that one video.
+
+---
+
+# Rebuilt as per-beat clips — 2026-08-27
+
+Kai: *"the satellite scene is perfect, I don't want to change that"* — and it hasn't been. What
+changed is that it is now **seven clips on the timeline instead of one**, so the timing can be
+edited. Built by [`scripts/gpom/rebuild-cuts-1-and-2.sh`](../../../../scripts/gpom/rebuild-cuts-1-and-2.sh)
+into `clips/beats/`:
+
+`EARTH-b1-macro` · `EARTH-b2-pullout1` · `EARTH-b3-pullout2` · `EARTH-b4-board` ·
+`EARTH-b5-reveal` · `EARTH-b6-orbit1` · `EARTH-b7-orbit2` — 8.000s each, 1920×1080, 24fps, SAR 1:1.
+
+Structure confirmed by frame-difference scan on the master: **exactly one hard cut, at 40.0s**
+(close hull → wide satellite, as documented). The other six joins are frame-matched. Every beat
+verified against `s01-earth.mp4` at 0.16–0.94 out of 255 — codec noise.
+
+## 🔴 The shipped master was a 24 → 25fps re-encode
+
+`s00v3-SEQUENCE.mp4` is **1400 frames at 25fps** for 1344 frames of material, so it carries ~56
+duplicated frames and the judder that comes with them. Every constituent is natively **24fps**
+(Veo's output rate). The rebuild uses the native frames, so that conversion is gone.
+
+It was also **1280×720 being scaled 150% by Premiere**. The rebuilt beats are lanczos-upscaled
+once at build time instead — same number of resamples, but `Scale` is now free for camera moves.
