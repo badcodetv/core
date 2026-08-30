@@ -7,6 +7,13 @@
 >
 > Written 2026-08-24. Numbering is `scene.shot` — scene numbers match the twelve beats in canon.
 
+> 🎬 **The Premiere assembly now exists and is mapped clip-by-clip:
+> [`assembly.md`](./assembly.md)** *(2026-08-30)* — all 34 clips in `new clips/`, in order,
+> untrimmed, matched to shot IDs by rendering and looking at every one. **Read it before cutting.**
+> It raises four things this file did not know: **`4a` is not on the timeline**, clips 2 and 3 may
+> be `1c` before `1b`, **scene 9 has seven clips and four have no shot ID**, and **`12a` was shot
+> in daylight where `12c` and `12d` are night.**
+
 ## ⚠️ Next session — start here
 
 > **Status 2026-08-26.** **Scenes 1, 2 and 3 are shot, and so is 4a.** 1a–1c (skyline,
