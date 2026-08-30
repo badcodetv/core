@@ -16,7 +16,25 @@
 > round 1 read sad, and was fixed by casting `@Tarquin`, dropping the face description and
 > naming the failure in a `Constraints:` block. **4c the boardroom is dropped.** **Scene 5 is shot** — 5a, 5b, 5c and 5d,
 > stills and clips. **Scene 6 is shot**, and the scene-8 tent
-> POV is banked as the master frame. **Scene 7 is shot** — 7a and 7b both, stills and clips. **8a is shot** — still and clip. **Scene 8 is shot** (8c(ii) still outstanding). **Scene 9 is under way** — 9a shot, 9b's still shot; **next session starts at 9b's clip and 9c**. ⚠️ **Scene 9 moved indoors** — the river-bank clearing is dropped for a yurt; see the scene-9 entries. The car park is now a fixed set — see the plate in `prompts.md`.
+> POV is banked as the master frame. **Scene 7 is shot** — 7a and 7b both, stills and clips. **8a is shot** — still and clip. **Scene 8 is shot** (8c(ii) still outstanding). **Scene 9 is under way** — 9a shot, 9b's still shot; **9b's clip and 9c are still owed**.
+> **Scene 10 is under way and ahead of scene 9.** ✅ **10a/10b are shot** (2026-08-28) — the tent-POV
+> night frame and its clip, and the camp wide and its clip, all with the lightning reveal.
+> Masters banked in `camera/reference/`. **Next in scene 10: 10c and 10d.**
+> 🔴 **The one thing scene 10 still depends on is 6c** — see the re-derivation item below.
+> *(Deferred by Jack 2026-08-28; kept open.)* **10c is written and unrun** —
+> [`prompts.md`](./prompts.md#10c--hes-out-and-its-his-car--still--written-2026-08-28-unrun).
+> ✅ **Scene 11 jumped the queue: `11b(i)` is shot** (2026-08-28) — Tarquin finds the newspaper
+> himself by torchlight, still and clip both accepted, round 4, master banked at
+> [`camera/reference/11b-newspaper-torchlight-ACCEPTED.png`](./camera/reference/11b-newspaper-torchlight-ACCEPTED.png).
+> 🔵 **The frontier is `12a` — the two of them by the fire — written 2026-08-28 and unrun**
+> ([revised weather version](./prompts.md#12a--the-two-of-them-by-the-fire--still--written-2026-08-28-unrun)),
+> and it is **the first shot in the film to put two faces in one frame**.
+> ✅ **12a's Bob question is ruled (Jack, 2026-08-29): cast the existing `@Bob` and accept the
+> break.** Seeing whether two faces hold in one frame at all is worth more right now than the
+> continuity, and the rebuild stays owed — see the `@Bob` item below.
+> ⚠️ **What that costs, stated so it is not discovered later:** `8c(i)`'s Bob becomes the odd
+> frame out, not `12a`'s. If `12a` lands, the debt is a **re-shoot of `8c(i)`** against the
+> Character, not a rebuild of the Character. Decide that only once `12a` is in the can. ⚠️ **Scene 9 moved indoors** — the river-bank clearing is dropped for a yurt; see the scene-9 entries. The car park is now a fixed set — see the plate in `prompts.md`.
 >
 > ⚠️ **Prompts live in [`prompts.md`](./prompts.md), and the ledger is now stills-only** —
 > video prompts are self-explanatory and are not recorded going forward *(ruled 2026-08-26)*.
@@ -39,8 +57,30 @@
 - [x] **6b — the three reactions.** Still and clip accepted 2026-08-26.
 - [x] **6c — the POV lock.** 🔒 Still and clip accepted 2026-08-26, derived from the scene-8 tent
       frame. **10a must be derived from 6c**, not rebuilt.
-- [ ] **Rule on the W-AI-trose gag** — the fascia is visible through 6c's doorway, so it can land
-      in **10a** rather than 10c, inside the rhyme instead of beside it.
+- [x] **Rule on the W-AI-trose gag — SETTLED 2026-08-28: it lands in 10a, and it is a POST job.**
+      Inside the rhyme rather than beside it. ⚠️ **Amended the same day, after two failed rounds:
+      Flow will not render it.** A five-part per-letter reconstruction against a reference showing
+      an intact sign was ignored outright, twice
+      ([`nano-banana-2.md` §21](../../google-flow/nano-banana-2.md)). **Flow now renders the sign
+      as one simple state — dead — and the two lit letters are composited afterwards.** That is
+      what [`image-prompting.md` §5](../../flow/image-prompting.md) already said about
+      load-bearing text, it makes the gag identical across all of 10–12 instead of re-rolled per
+      shot, and it takes the brand wordmark out of the prompt entirely
+      ([trigger 1](../../flow/failure-modes.md)).
+- [ ] 🔴 **Rule on the doorway chain.** The scene-10 plate was **not** derived from 6c: its
+      doorway is a tall rounded arch left of centre, where 6c is a letterbox with a low horizon.
+      **Both cannot be true and the jump rhyme depends on it.** Proposed: accept the scene-10
+      plate as the master for 10–12 and **re-derive 6c from it** — the direction the film's other
+      chain already ran. Until then the rhyme is hoped for, not guaranteed.
+- [ ] **Rule on the bottle in Tarquin's hand.** Inherited correctly from 6c and the scene-8
+      master, but on a man who just woke five years forward it reads *settled in, been here a
+      while*. Either play it as the joke deliberately, or the hand is empty. It is the first thing
+      in the frame the eye lands on.
+- [ ] **Rule on the light for 10a.** The chain rule says *only the world outside changes*, and the
+      scene-10 plate changes the light and the time as well. Cleanest split: 10a keeps 6c's flat
+      grey daylight so the rhyme lands before the ruin does, and the dusk frame carries 10b onward
+      into the 12a–12d fire. *(Canon's 10b frost is also absent — wet matches 6c better, so
+      probably amend canon rather than the frame.)*
 - [x] **7a — the consulting room.** Still and clip accepted 2026-08-26, three rounds on the face.
 - [x] **7b — the therapist's verdict.** Accepted 2026-08-26, round 2. Round 1 sat Tarquin up and
       would not cut against 7a; the fix was **dropping the camera to couch height and putting his
@@ -91,6 +131,65 @@
       idea, finally working because objects carry it instead of faces. **Bob gets a face at the
       moment he is judged; Tarquin gets only his car**, and earns his face later in the tent and
       by the fire. The rhyme is the painted line: one man inside one bay, one car across two.
+- [x] **10a/10b — the dead car park. ✅ SHOT 2026-08-28** — still and clip both accepted, plus the
+      camp wide (still and clip). **Round 1 run and rejected 2026-08-28** —
+      *"not much changed… doesn't look that much better."* 🔴 **Cause: killing the lamps and the
+      shop removed the only bright anchors and replaced them with four small equal fires, which
+      is four focal points, i.e. none.** Nothing in the frame is black and nothing is bright.
+      [`frame.md`](../../cinematography/frame.md)'s highest-value rule — *one bright anchor inside
+      the darkness, always* — was broken on purpose. **Round 2 fixes it with one big close drum
+      fire as the key light**, plus real blacks, rain visible only against the flame, and a
+      backlit silhouette figure carrying the focal point, the scale and gate 2's visible cost at
+      once. Prompt **written 2026-08-28, unrun** —
+      [`prompts.md`](./prompts.md#10a10b--round-2--still--written-2026-08-28-unrun).
+      **✅ Round 2 accepted as the look 2026-08-28** — *"this looks amazing"* — banked at
+      [`camera/reference/scene-10-round2-ACCEPTED.png`](./camera/reference/scene-10-round2-ACCEPTED.png).
+      ~~**Round 3 written, unrun:** one change only, the sky lifted so the shop front and its
+      fascia read.~~ **Superseded 2026-08-28 by the lightning reveal**, below.
+- [x] 🔒 **10b — the lightning reveal. ✅ SHOT 2026-08-28.** Design ruled by Jack, and it held —
+      the tent-POV clip and the camp-wide clip both landed, and **the same lightning strike can cut
+      across both angles**. Design ruled 2026-08-28 (Jack). The dark frame holds, then
+      **a lightning strike lights the whole car park for two or three frames** and the supermarket
+      name is legible — then back to dark, with only the two green letters glowing. **A three-stage
+      reveal instead of a static one**, and the film's thesis is delivered last. It beats round 3
+      because it buys recognition *without* spending the darkness that makes the frame work.
+      🔴 **Three layers, and only one is Flow's** — Flow makes the dark clip (camera locked, no
+      lighting change) and one lit still; **the flash, the letter comp and the thunder are post**,
+      because Veo cannot hold text through a lighting change and the timing must be exact
+      ([`hybrid-method.md`](../../video-fx/hybrid-method.md)). The lit still cannot be graded up
+      from the dark plate — lifting near-black gives noise, not light.
+      🔴 **Run ffmpeg `photosensitivity` before delivery** — mandatory on any strobing sequence,
+      and Premiere has no equivalent.
+      Prompt for the lightning frame written, unrun:
+      [`prompts.md`](./prompts.md#10bii--the-lightning-frame--still--written-2026-08-28-unrun).
+      ⚠️ **Spend the flourish once** — as the single device in ninety seconds it lands; as the
+      first of several it cheapens the rest.
+      ✅ **Amended 2026-08-28: the flash itself IS Flow's job; only the lettering is not.**
+      A global light change is squarely inside what the engine does. What it cannot do is
+      **invent legible lettering during that change** — the fascia is dark in the plate, so
+      there is no source for the word and any generated flash returns garbled text
+      ([`image-prompting.md` §5](../../flow/image-prompting.md),
+      [`nano-banana-2.md` §21](../../google-flow/nano-banana-2.md)). **So the clip prompt asks the
+      flash to light the frontage and its sign *panel*, and the word is comped onto those frames
+      in post.** Clip prompt handed over 2026-08-28 (not recorded — the ledger is stills-only per
+      the 2026-08-26 ruling). **Fallback if the flash makes the world drift:** revert to the
+      three-layer build — a dark clip with no lighting change, the separate lightning still
+      ([`prompts.md`](./prompts.md#10bii--the-lightning-frame--still--written-2026-08-28-unrun)),
+      and the flash cut in post.
+- [ ] 🔴 **Re-derive 6c from the accepted scene-10 frame.** Promoted 2026-08-28 from a tidy-up to
+      **the highest-value open item in scene 10.** Jack: *"this is supposed to be a big reveal that
+      he is in a similar position as Bob — this is the same car park he is in, in the future."*
+      **Recognition is carried by the framing rhyme, not by the sign** — the audience has to notice
+      they have sat in this doorway before. The scene-10 plate is not derived from 6c (rounded arch
+      versus letterbox), so the rhyme is currently hoped for and the shot is carrying a job its
+      composition does not support.
+- [ ] ~~**10a/10b — the dead car park.** Prompt **written 2026-08-28, unrun** —
+      [`prompts.md`](./prompts.md#10a10b--the-dead-car-park--still--written-2026-08-28-unrun).
+      Four changes off the new plate: every electric light dead, the W-AI-trose gag landed, the
+      camp re-dressed **British** (`the-reader.md` rule 4 — tarpaulin, oil drums and washing lines
+      read as a refugee camp and hand our reader the wrong cause for free), and buddleia woody in
+      the cracked tarmac to date the shot without narration. ⚠️ Sits on **trigger 3**; the
+      subtraction ladder is in the entry.~~ *(superseded by round 2, above)*
 - [ ] **Record the scene-8 tent-POV prompt** — the master frame all three POVs come from, and its
       words are not in the ledger.
 - [x] **Record 1c and the 2a still** — recovered 2026-08-26.
@@ -169,21 +268,105 @@ men before the plot starts, so the rest of the film can dismantle it.*
   10a**, and 10a is the wake-up, so an eye that changes colour across the jump breaks the film's
   biggest device.
 - **9c The water, his reflection** — the narrator does the fragility-of-existence beat. **No AI mention here.** His **eyes close…**
-- **10a …and open — 6c's exact framing.** Inside the tent, looking out. The rhyme lands before anyone says anything.
-- **10b Outside: chaos** — frost, tents, wreckage, and **a fire burning** — likely the only animated element in the scene.
-- **10c He crawls out into the ruined car park** — the **W-AI-trose** sign with only the A and I lit; the wank tank still in its two bays, dead and clamped.
+- **10a …and open — 6c's exact framing.** Inside the tent, looking out. The rhyme lands before anyone says anything. **The look is settled 2026-08-28** — night, one drum fire close as the key light, rain visible only against the flame, a hooded man in silhouette with his back to us, and the dead fascia catching the sky. ⚠️ **The framing is not settled**: see the 6c re-derivation item above.
+- **10b Outside: chaos** — frost, tents, wreckage, and **a fire burning** — likely the only animated element in the scene. **✅ The camp wide is shot 2026-08-28** —
+  [`scene-10-camp-wide-ACCEPTED.png`](./camera/reference/scene-10-camp-wide-ACCEPTED.png), a
+  rooftop vantage at ~15m rather than a drone survey (an aerial cannot carry scale, and a
+  helicopter view of a tented settlement is the read this film can least afford). Clip prompt
+  handed over the same day. 🔴 **Never ask for a camera move on this frame** — it is wall-to-wall
+  corrugated sheet, pallets, tarpaulins and van doors, which is the exact geometry Veo hinges;
+  any push-in is a **Premiere** move over the finished clip.
+- **10c He crawls out into the ruined car park** — the **W-AI-trose** sign with only the A and I lit *(**a post comp, ruled 2026-08-28** — Flow renders the fascia dead and the two green letters are composited, identically across every shot in 10–12)*; the wank tank still in its two bays, dead.
+  ⚠️ **"Clamped" is NOT from the Jack/Kai conversation** *(checked 2026-08-28, at Jack's prompt)*.
+  The word appears nowhere in [`master-notes-2026-08-04.md`](./master-notes-2026-08-04.md). It is
+  **salvage from the retired `camping` / `camping-v2` folders**, and
+  [`story.md`](./story.md#salvage-optional-easter-eggs-from-the-retired-versions) files it under
+  *"Salvage (optional Easter eggs from the retired versions) — none are canon-required."* It then
+  got copied into this file and into
+  [`characters/wank-tank.md`](./characters/wank-tank.md) as though it were settled.
+  **What IS in the transcript is the line it pays off** — Kai: *"I'm going to leave now and get
+  back in my car and go home."* The car being **dead and still there** is the payoff; the clamp is
+  one invented punchline for it, and it can go.
+  🔴 **A reason to drop it:** a wheel clamp implies a functioning enforcement authority. Nobody is
+  issuing parking tickets in a car park with a camp of hundreds in it and the shop dark — so the
+  gag quietly contradicts the world, and it aims at a smaller target (parking firms) than the film
+  does. **Proposed replacement, which says more:** the camp has *taken* the car — a tarpaulin
+  guyed off its roof rails, washing over a wing mirror, somebody sleeping in it. His property is
+  now shelter for the people he drove past. **A human call; the 10c prompt currently has the
+  clamp in it.**
 - **10d There's Bob.**
 
 ## The reveal and the ending
 
 - **11a Face to face** — recognition. *"I remember you. I saw you just… yesterday."*
 - **11b The hand-off** — Bob gives him **the newspaper**. **Callback to the plant in 1b.** *"That was like five years ago. Look at the date."*
+  ⚠️ **Changed in practice 2026-08-28: `11b(i)` is shot — Tarquin FINDS the paper himself**, first
+  person, by torchlight, walking out of the tent
+  ([still](./camera/reference/11b-newspaper-torchlight-ACCEPTED.png) and clip both accepted).
+  **So the headline reveal is already spent before Bob appears.**
+  ✅ **Resolved 2026-08-28 by the transcript, not by a new decision.** In
+  [`master-notes-2026-08-04.md`](./master-notes-2026-08-04.md) the beat was always **the date, not
+  the paper** — Jack: *"He goes, 'Did I see you around that time?' and he just points to the
+  date."* **So Tarquin finding it himself costs nothing.** Bob does not hand over a paper; he
+  reaches over and points at the masthead date on the one Tarquin is already holding, which is a
+  better staging of the same beat and needs no prop hand-off.
+  🔑 **Also from the transcript and missing from canon: it is the LAST newspaper ever printed.**
+  Kai raised the hole — *"in the world that we've just presented, newspapers wouldn't be printed"* —
+  and solved it in the line: *"this is the last newspaper printed."* That is why one exists in
+  2031, and it should be said out loud somewhere.
+  ✅ **And 12c is already justified in the transcript.** Kai worried they would not burn the last
+  newspaper on Earth; Jack settled it: *"I think they would burn it. They don't care what that is.
+  They're in survival mode."* Followed by Kai's standing note — *"there comes a time where we allow
+  the story to overtake reality."*
+  *(Minor: Kai says "four years after" once at ~00:44 and "five years" twice elsewhere. Canon's
+  five is right; the four is a slip of speech.)*
 - **11c Tarquin reads** — the date does the time, the headline does the AI. One prop, two jobs. Hold. *"It's not the drugs."*
 - **11d Bob's man-sized empathy** — *"Where the f*** have you been, then? You alright?"* The five missing years are **never explained**.
 - **12a The two of them by the fire** — in the car park, **not** the woods. Faces changed: almost a smile.
-- **12b Cans clinked** — the apology happens the man way. Nothing said straight.
-- **12c The newspaper goes on the fire.** It's cold. It burns.
+- ~~**12b Cans clinked**~~ — **struck as a SETUP 2026-08-29 (Jack):** *"basically the same as the
+  last one, they are just talking."* Same two men, same drum, same light, same distance — it does
+  nothing `12a` did not, which is [gate 1](../../cinematography/principles.md).
+  ⚠️ **The BEAT survives** — *the apology happens the man way, nothing said straight* lands inside
+  `12a`'s clip and the narration, and a clink is a **sound cue over `12a`**, not a picture.
+- **12c The newspaper goes on the fire.** It's cold. It burns. ✅ **STILL SHOT 2026-08-29**, round 2,
+  master at [`camera/reference/scene-12c-newspaper-burns-ACCEPTED.png`](./camera/reference/scene-12c-newspaper-burns-ACCEPTED.png).
+  **Round 1 was rejected on the hand alone** — pale, smooth, sharp-focused and splayed open like an
+  offering, on a man five years into a camp. **Fixed by describing the hand as anatomy and
+  condition rather than position** (the 7a move), and it landed in one.
+  🔑 **New standing rule: §19's "never describe a referenced character" is about CAST characters.
+  An unbound body part gets nothing unless described, and defaults to young, clean and generic.**
+  ✅ **CLIP SHOT 2026-08-29**, first take. Camera locked, the burn travels right-to-left, the hand
+  withdraws and stays gone.
+  🔑 **A finding worth keeping: this is the one shot in the film where morphing text costs
+  nothing.** Everywhere else a wobbling headline is an instant reject; here the words are *meant*
+  to be destroyed, so degradation behind the flame line reads as burning rather than as failure.
+  **That bought a burn we would never otherwise have risked.** Prompt written 2026-08-29 —
+  [`prompts.md`](./prompts.md#12c--the-newspaper-goes-on-the-fire--still--written-2026-08-29-unrun).
+  **An insert, not a two-shot** — no faces, one hand, the page flat across the flame and glowing
+  through from beneath. 🔴 **The still is the moment BEFORE the flame takes it**, one corner
+  browned only, because a curling burning page is exactly where a headline morphs; the burn-through
+  is the clip's job. 🔒 **Locked and angled down** — the tilt-up is spent once, in `12d`.
 - **12d Pan up with the smoke — the rising embers become the bad code.** Hold. End.
+  ✅ **PLATE SHOT 2026-08-29, first take** — master at
+  [`camera/reference/scene-12d-embers-plate-ACCEPTED.png`](./camera/reference/scene-12d-embers-plate-ACCEPTED.png).
+  🔑 **The frame beat the brief:** the two men run up ~40% of the tall frame rather than the
+  specified bottom fifth, which turns them into **a doorway the smoke rises through** — a
+  frame-within-a-frame the prompt never asked for, and the Premiere tilt now passes *between*
+  them. ⚠️ **So start the tilt on the drum and flame, not on their shoulders.** Written —
+  [`prompts.md`](./prompts.md#12d--the-tilt-up-embers-into-bad-code--still-plate--written-2026-08-29-unrun).
+  🔒 **This is the ONLY camera move in the film** — every shot in 10–12 was locked so this one
+  could move. Do not put a drift or a push anywhere else in scene 12.
+  🔴 **Three layers, one of them Flow's:** Flow makes a **9:16 vertical** locked plate (fire and
+  two silhouettes at the bottom, smoke and embers up the middle, storm sky at the top); **Premiere
+  does the tilt** across the tall plate, eased, ending exactly on the last narration word;
+  **ffmpeg comps the code**, because Premiere's API cannot set a string and Flow cannot render
+  legible characters through a change of light. Precedent:
+  [`docs/images/register-anchor.md`](../../images/register-anchor.md) — the commit log in the
+  original GPOM panel was an **overlay**, not a generation.
+  🔑 **The code ASCENDS where the anchor's descended** — same device, mirrored, opposite end of
+  the story.
+  🔴 **Recommended and open to argument: no wordmark in the frame.** Ending on a logo turns the
+  film into an advert; the mark goes on an end card after the hold.
 - **12e** *(optional stinger)* — an ATM: `EMPLOYMENT COLLAPSE SURVIVAL MENU / ▸ STAY PUT`. *"THANK YOU FOR BANKING WITH US."*
 
 ---

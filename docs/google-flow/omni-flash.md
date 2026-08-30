@@ -1505,3 +1505,197 @@ did not respond when fetched — **worth re-fetching and diffing against this se
 several ran their tests on third-party wrappers (Higgsfield, OpenArt, Cue AI) rather than in Flow —
 where limits, watermarks and filtering all differ. Where a claim above is Flow-specific it came from
 someone demonstrably inside Flow; treat the rest as directional.
+
+## Web pass — 2026-08-28: the six-dimension framework, Ingredients, and the anti-slop stack
+
+Run for camping 10b, after a generated lightning flash **morphed the supermarket wordmark**.
+
+### ✅ The official prompt framework is SIX dimensions, and one of them is text `[vendor via community]`
+
+> *"Shot framing and motion, style, lighting, location, action, and **text rendering** — covering
+> all six in one prompt consistently produces the best outputs."*
+
+**This is a material change to how we have been writing video prompts.** Ours have covered framing,
+action and style and left text to chance. **Text rendering is a first-class dimension on this
+model**, which is a partial walk-back of the older *"Veo cannot hold text in video"* position:
+the constraint is real for Veo 3.x, but Omni Flash is documented to have a text channel and it
+should be written to explicitly rather than avoided.
+
+**The attested syntax**, and it matches what we already do for stills — quote the string, name the
+typography, and **anchor the text to a visible event rather than letting it float**:
+
+> *"Display the word [X] in large white letters centered on screen for two seconds"* ·
+> *"Render the text [X] as glowing neon on the brick wall"* · anchor with *"at 5 seconds"* or
+> *"after the impact"*.
+
+⚠️ **Our own mitigation on top:** the fewer frames a word must survive, the less it morphs. If the
+text can be **dark and unreadable for most of the clip and legible only during one lit event**,
+the exposure window collapses from eight seconds to three frames. Design the beat that way.
+
+### ✅ Ingredients — what it is actually for, and the use that solves our text problem `[vendor]`
+
+Flow's **Ingredients** mode carries *"the same images for your character and key objects from one
+clip to the next"*. Add by drag, by `@` search of project assets, or by button; then **describe
+each reference's role in the prompt text** — Google's own example is *"With ingredients of a
+woman, a lava lamp, and a foggy street… `The woman, whose torso is the lava lamp, walks down the
+foggy street`"*.
+
+Two pieces of guidance worth keeping:
+
+- **"For the best results, provide subject or product references on a plain or segmented
+  background."** Same discipline as our golden-reference rule for stills — the crowded beautiful
+  shot is the worse reference.
+- **"Avoid conflicting direction between visual and text inputs."** The image-side §2 rule
+  (do not restate what the reference shows) restated for video.
+
+🔑 **The use that matters to us: a sign is a *key object*.** A wordmark the model has to
+reconstruct from a dark, blurred patch of the start frame **will morph** — that is what happened
+on camping 10b. Handing it a **clean flat crop of the fascia as an Ingredient** gives the
+lettering a source instead of a guess. This is the first time we have had a mechanism for
+in-video signage that is not "composite it in post".
+
+| Mode | Use it for |
+| --- | --- |
+| **Frames to Video** | Pinning exact start (and end) geometry. Our default for animating an accepted still |
+| **Ingredients** | Carrying a character or **key object** — including signage — consistently |
+| **Text to Video** | No visual anchor. Not our workflow |
+
+⚠️ **Untested by us: whether a pinned start frame and Ingredients can be combined in one
+generation.** If they cannot, the trade is *geometry certainty* versus *lettering certainty* —
+run the Ingredients version first, and fall back to Frames-to-Video plus a post comp if the
+framing drifts.
+
+### ✅ Anti-slop for video — what the field says, and the one item we reject
+
+Consistent across sources: **the tell is polish, and the counter is engineered imperfection.**
+Models train on *"a century of curated perfection"* and reproduce hyper-stylisation rather than
+observation.
+
+| Keep | Why |
+| --- | --- |
+| **Understated motion** — a near-static subject, ambient movement, **one** deliberate gesture | *"will almost always outperform a prompt packed with action verbs"*. Agrees with our own 1–2 motion-types rule |
+| **A named, positioned light setup** | *"believable light and shadow are among the strongest realism cues the eye accepts"* |
+| **A stock anchor** — *"shot on 16mm film, natural grain"* | Biases toward the imperfections audiences read as authentic |
+| **~50mm, human field of view** | Stylised focal lengths read as commercial |
+| **Rough, unpolished audio; no music bed** | Music is the polish tell. For us this is free — the track is Suno's and goes on in post |
+| **A loose edit; no aggressive grade** | Post-side, but it is the same instinct as our grain-in-shadows rule |
+
+🔴 **Rejected: "introduce accidental camera shake."** Widely recommended and **it contradicts our
+own house ruling** — [`motion-and-cutting.md` R7](../cinematography/motion-and-cutting.md):
+*handheld is a style, not truth; locked-off with the right content beats wobble every time.* It
+would also remove the locked camera that is our documented mitigation for the hinge/regeneration
+bug. **Our measured findings outrank the briefs.** Do not import it.
+
+Also restated and worth holding: **`photorealistic` and `cinematic` are noise words** — they
+appear beside CGI and digital painting throughout training data and average toward the waxy look
+they are meant to prevent. Name the stock, the ISO, the source and the imperfection instead.
+
+### 📐 Reference fact — the supermarket wordmark
+
+The 2018 John Lewis Partnership rebrand (Pentagram, Harry Pearce) put **Gill Sans** across the
+group, with a **green** palette for the supermarket; the pre-2018 mark is closest to **Futura BQ
+Book**. Naming *Gill Sans* gives the model a real, widely-known typeface to hold rather than a
+shape to invent.
+
+⚠️ **Naming the brand and the font together is [trigger 1](../flow/failure-modes.md)** — a legible
+real wordmark is the most reliable policy block there is. Expect it to need the subtraction ladder.
+
+### Sources for this section
+
+- [Google Flow Help — create videos / Ingredients](https://support.google.com/flow/answer/16353334?hl=en) `[vendor]`
+- [Google Omni prompting guide — the six dimensions, text syntax, reference stacking](https://promptslove.com/blog/google-omni-prompting-guide/) `[community]`
+- [Mastering Gemini Omni Flash — the five official Google tips](https://pasqualepillitteri.it/en/news/3513/mastering-gemini-omni-flash-video-prompting-guide) `[community]`
+- [The Drum — to make AI video look real, we have to make it look 'crap'](https://www.thedrum.com/industry-insight/to-make-ai-video-look-real-we-have-to-make-it-look-crap) `[community]`
+- [Imagine.art — AI slop in images and videos: how to fix it](https://www.imagine.art/blogs/ai-slop-in-images-and-videos) `[community]`
+- [Pentagram — the John Lewis Partnership identity](https://www.pentagram.com/work/the-john-lewis-partnership/story) `[vendor]` · [Dezeen](https://www.dezeen.com/2018/09/06/pentagrams-john-lewis-waitrose-rebrand-heartfelt-tribute-employees-design/) `[press]`
+
+## 🔴 Omni **1.1** Flash — shipped 2026-08-27, and it changes three of our standing rules `[vendor]`
+
+Found 2026-08-28 while researching camping's camp-wide clip. **This is days old — check which
+model Flow is actually serving before assuming any of it.**
+
+| New | What it says | What it changes for us |
+| --- | --- | --- |
+| **Scene extension** | Extends in **10s increments up to 40s total**, and the model *"analyzes up to 10 seconds of prior context — a leap from previous models that only referenced the final second"* | 🔑 Our chaining method exists because only the last frame carried over. **Ten seconds of context instead of one second** is a different tool. Re-test the "chain the last frame into the next" recipe in [`hybrid-method.md`](../video-fx/hybrid-method.md) |
+| **First and last frame control** | *"Specify the starting and ending frames of a shot"*, for *"complex camera orbits, zoom transitions, or seamless looping clips"* | The Frames-to-Video finding that it **interpolates rather than moves a camera** was measured on the old model. Worth a re-test before we keep quoting it |
+| **360p drafts** | *"Up to 60% faster and at a third of the cost compared to standard 720p"* | 🔑 **The most immediately useful thing here.** Any shot with real morph risk — a crowd, fine articulation, a lighting change — should be drafted at 360p to check the *motion* before spending on picture |
+| **4K upscaling** | Outputs at 1080p or 4K | ⚠️ **Corrected 2026-08-28, see below — it is an UPSCALE, not a native render, and it cannot repair text** |
+| **Video references** | *"Up to three seconds of video when crafting your scene"* | A **motion lock** — a mechanism we have never had. Untested |
+
+⚠️ **Also reported `[community]`: *"'oner', 'locked off', 'push in', 'dolly zoom' and 'orbit'
+function as technical commands — the model responds to them precisely."*** That is in direct
+tension with our own measured [*"static is not a lever"*](#static-is-not-a-lever--every-clip-drifts-measured-2026-08-21)
+finding. **Do not overwrite ours on a blog's say-so** — but it is now worth re-running that test
+on 1.1, because if it is true it removes a real constraint.
+
+### ✅ Crowd scenes — the frontier is exactly where we are working `[community 2026-08-28]`
+
+> *"Managing a crowd of twenty people with the same level of detail is still a frontier that the
+> 2027 models will address."*
+
+The field's own workaround is the one we arrived at independently: **minimal human motion —
+close-ups where only hair or clothing moves, slow head turns, and atmospheric shots where people
+are small in frame.** So for a camp wide, the design rule is not "animate the crowd well", it is
+**give two near figures one completed action each and let everyone else stay small and barely
+move.** A figure that crosses the frame is a figure that morphs.
+
+Second, related: *"clean up background clutter to prevent the video generator warping those
+elements."* We cannot clean a camp, but the corollary holds — **do not name background clutter in
+the prompt**, because naming it is what commissions motion in it.
+
+### Sources
+
+- [Google — build with Gemini Omni 1.1 Flash](https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/) `[vendor]`
+- [Gemini API — generate and edit videos with Omni Flash](https://ai.google.dev/gemini-api/docs/omni) `[vendor]`
+- [Dataconomy — Omni 1.1 Flash adds 4K upscaling](https://dataconomy.com/2026/08/28/google-gemini-omni-11-flash-ai-video-tools/) `[press]`
+- [is4.ai — the state of AI video generation in 2026](https://is4.ai/blog/our-blog-1/ai-video-generation-2026-what-works-what-doesnt-340) `[community]`
+- [zsky.ai — ultimate guide to AI video 2026](https://zsky.ai/blog/ultimate-guide-ai-video-2026) `[community]`
+
+
+### 🔴 The 360p draft is a MOTION check, never a text check — and upscaling repairs nothing `[vendor + community, 2026-08-28]`
+
+**Asked by Jack after the supermarket sign came back wrong in a 360p draft of the camp wide:
+*"is that because I did it in 360p and will it be fixed in the upscaling?"* The answer is no, and
+the reason matters.**
+
+**1. 1080p and 4K are upscaled, not natively generated.** Google's own API documentation says so.
+**So 720p is the real native ceiling on this model, and everything above it is an enlargement.**
+
+**2. An upscale enlarges flaws; it does not rebuild them.** The model card *independently flags
+text rendering accuracy as a known weakness*, and *"dense small-scale texture and legible
+on-screen detail do not enlarge properly."* Restated by the upscaling field generally:
+*"upscaling may sharpen detail or smooth some jitter, but it does not reliably rebuild exact
+letter geometry once frames disagree"*, and *"upscaling can't recover details that were never
+generated."* Worse, *"generic creative upscalers routinely turn small print into convincing
+nonsense"* — a confidently wrong word is harder to spot than a blurry one.
+
+**3. At 360p the sign was never going to be right, and that is a floor, not a failure.** A fascia
+occupying a tenth of a 360p frame is a few dozen pixels wide. There is physically nowhere to put
+eight letterforms. **Nothing was learned about the sign from that draft and nothing should be
+inferred from it.**
+
+⚠️ **This corrects the guidance given the same day.** "Draft at 360p" is right, and it must come
+with its scope stated:
+
+| Resolution | What it is for |
+| --- | --- |
+| **360p draft** | **Motion only** — morphing figures, hinging surfaces, fire behaviour, whether an event lands. Ignore all text, all fine texture, all faces |
+| **720p** | The only native render. **Every quality judgement happens here**, including the sign |
+| **1080p / 4K** | Delivery enlargement of an already-approved 720p take. Never a fix |
+
+🔑 **And the standing answer for signage in video gets stronger, not weaker.** Text must hold
+across *every frame* — the documented failure is *"AI video text changes between frames"* — so an
+eight-second clip with a prominent fascia is the hardest version of the ask. **On a locked-off
+camera the comp is trivial: no motion tracking at all, just a still patch held over the fascia
+region for the whole clip.** Five minutes in Premiere or ffmpeg, and it is right in every frame by
+construction.
+
+**Where in-prompt text is still worth trying:** where the word is **small, briefly lit, or both** —
+camping's tent-POV clip, where the sign is legible only during a flash, held. The exposure window
+is the variable.
+
+Sources: [XenoSpectrum — *"but 4K is upscaled"*](https://xenospectrum.com/en/google-gemini-omni-flash/) `[press]` ·
+[Neowin](https://www.neowin.net/news/google-unveils-gemini-omni-11-flash-that-can-create-4k-ai-videos-of-up-to-40-seconds/) `[press]` ·
+[Gemini API docs](https://ai.google.dev/gemini-api/docs/omni) `[vendor]` ·
+[Why AI video text changes between frames](https://aivid.video/blog/why-ai-video-text-changes-between-frames-and-how-to-fix-it) `[community]` ·
+[Topaz — AI text enhancer](https://www.topazlabs.com/tools/ai-text-enhancer) `[vendor]`

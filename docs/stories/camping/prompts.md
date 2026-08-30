@@ -1148,3 +1148,1489 @@ Thanks.
 ⚠️ **Known and accepted:** the faces read slightly strange at full size. **Left alone
 deliberately** — they are tiny and rain-softened, and the fix for them is not a better still,
 it is keeping the clip near-static so the engine has no reason to re-render them.
+
+---
+
+## Scene 10 — the wake-up, five years on
+
+### 🖼 The plate — `camera/reference/scene-10-ruined-car-park-plate.png`
+
+**Banked 2026-08-28.** The tent-POV out into the ruined car park, generated before this entry
+existed. It is now **the master frame for the whole 10–12 block**, the same way the scene-8 X8
+frame was the master for 6c.
+
+⚠️ **The chain runs the other way now, and this needs a ruling.** `shot-list.md` says
+*6c → 10a, by inheritance, never rebuilt from words*. This plate was not derived from 6c — its
+doorway is a tall rounded arch left of centre with a second fabric panel on the right, where 6c
+is a **letterbox** with a low horizon. **Both cannot be true.** The cheap resolution is to accept
+this frame as the master (it is the better picture and 10–12 all live in it) and **re-derive 6c
+from it**, which is the direction the film's other chain already ran. Until that is done, the
+jump rhyme is not guaranteed. *(Raised 2026-08-28, unresolved.)*
+
+**What the plate settles:** the bottle-in-hand foreground carries over from 6c and the scene-8
+master, so the hand is continuous across the jump — but on Tarquin it now reads *he has been
+here a while*, which is the opposite of a man who just woke. **Ruling owed** (see `shot-list.md`).
+
+### 10a/10b — the dead car park · **still** · written 2026-08-28, unrun
+
+**Reference:** the scene-10 plate, one image, nothing else. **No Character cast** — there is no
+face in the frame ([§12](../../google-flow/nano-banana-2.md)), and the figures at the fires are
+deliberately silhouettes ([§18](../../google-flow/nano-banana-2.md): hide a face with geometry,
+never with a sentence).
+
+**The four changes, and why each one is written as a consequence rather than an instruction.**
+
+1. **Every electric light dead.** Jack's note. Written with its consequences — no pool under the
+   lamp heads, the store frontage a black slab — because
+   [§9](../../google-flow/nano-banana-2.md) says a strong reference meets a bare change-list
+   halfway, and *"it is now night"* comes back as blue hour.
+2. **🔴 The physics has to close, or the engine invents fill.**
+   [§20](../../google-flow/nano-banana-2.md), confirmed on 9a the day before: kill every source
+   and the model rebuilds the scene so the picture becomes possible. So the prompt **hands it the
+   ambient on our terms** — the overcast dusk sky lights the car park flat and cold from above,
+   and the drum fires are the only warm light, low and thrown upward with a short reach. Two real
+   sources, both able to do the job named. **Do not answer a bad round with more falloff
+   language** — that is the documented trap.
+3. **The broken fascia carries the W-AI-trose gag.** Two letters still lit, everything else dead.
+   This resolves the open call in `shot-list.md` by landing the gag **in 10a, inside the rhyme**,
+   and it is also the cheapest fix for a real defect: the accepted plate's fascia reads
+   *"Woitrose"*, and killing the letters kills the mangled letterforms. ⚠️ **It also de-risks
+   [trigger 1](../../flow/failure-modes.md)** — the prompt never writes the brand name and never
+   asks for a legible real wordmark, only two quoted letters on a wrecked sign.
+4. **The camp is re-dressed British.** The plate reads as tarpaulin, oil drums and washing lines —
+   the grammar of a refugee camp, which hands our reader the wrong cause for free
+   ([`the-reader.md` rule 4](../../marketing/the-reader.md); the picture version of gate 2 in
+   [`cinematography/symptoms.md` §E](../../cinematography/symptoms.md)). Replaced with ordinary
+   high-street camping gear, shopping trolleys repurposed, and a split office swivel chair by a
+   fire. **It should read as a middle-class car boot sale that never went home.**
+
+**Plus one addition that does the most work for its length:** buddleia woody in the cracked
+tarmac. It dates the shot without a word of narration, which is the entire job of the jump.
+
+**Deliberately NOT in the prompt.** Smoke, haze and steam — the atmosphere family arrives free and
+overdelivers the moment it is named ([§10](../../google-flow/nano-banana-2.md)); the plate already
+has it. No weather noun either: the reference carries the wet, and the style paragraph is dropped
+because the reference carries the look ([§2](../../google-flow/nano-banana-2.md)).
+
+**Settings:** Enhance Prompt **off**. **2K or 4K** — 1K blurs small text and two letters have to
+survive ([`image-prompting.md` §5](../../flow/image-prompting.md)).
+
+```prompt
+Use the attached image as the reference for this shot. Keep the camera exactly where it is, and keep the whole inside of the tent exactly as it is: the same doorway opening at the same shape, size and place in the frame, the same fabric, seams, zip tape, mesh panel and patch, the same bedding across the bottom of the frame, the same empty bottles and cans lying on it, and the same forearm and hand holding a bottle at the lower left. Keep the geography beyond the doorway: the same wet cracked tarmac and puddles, the same broken glass, the same lamp columns in the same places, the same line of shelters away to the left, and the same supermarket frontage on the right.
+
+Change the following.
+
+Every electric light in the picture is dead. The lamp columns are cold dark metal with unlit glass heads, throwing no light at all and casting no pool of light on the tarmac beneath them. The supermarket behind its glass is completely black — no lighting inside, no glow at the windows, nothing visible through them — so the whole frontage reads as one dark slab beneath its sign.
+
+The sign's illuminated lettering is broken. Most of the letters are dead: their tubes cracked, their casings stained and streaked, one letter hanging loose from a bracket and another fallen away entirely, leaving a paler unweathered scar on the panel behind it. Only two letters still have power, the "a" and the "i", and they burn a hard flat green, slightly too bright and slightly unsteady, the one machine in the picture still working.
+
+The shelters are ordinary British high-street camping gear that has been lived in for years: faded dome tents and pop-ups in supermarket colours, one of them collapsed in on itself, guy lines tied off to shopping trolleys and to the concrete feet of the lamp columns, and bin bags and cheap woven shopping bags weighted around the skirts to hold them down. An office swivel chair with its foam split open stands beside one of the fires. Two shopping trolleys are in use, one as a washing rack and one as a barrow.
+
+Buddleia and coarse grass have grown up through the cracks in the tarmac and around the bases of the lamp columns, established long enough to have gone woody, so the place reads as years abandoned rather than days.
+
+Light: there are only two sources. The pale overcast dusk sky above is the ambient — cold and flat, laying a low blue-grey level across the whole car park with no bright highlight anywhere in it. The fires burning in the drums are the only warm light, and they sit low, so everything they reach is lit steeply from below: the undersides of the nearest tent fabric, the rims of the drums, and a short pool of orange on the wet tarmac that dies out within a few metres. Beyond the reach of the fires the car park falls away to near-black. The two lit letters on the sign are far too small and too far off to light anything.
+
+The people at the fires are distant and bent over the drums with their backs to us, reading only as dark shapes against their own firelight.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Choosing between candidates, in this order:**
+
+1. **Are the lamps and the store actually dark**, with no invented fill on the tarmac? This is the
+   change most likely to be met halfway.
+2. **Do only two letters burn**, and do they read as `a` and `i`?
+3. **Does the camp read British** — dome tents and trolleys, not tarpaulin and jerry cans?
+4. **Did anyone at the fires grow a legible face?** An invented face is an uncast character and
+   costs more than a re-roll ([§18](../../google-flow/nano-banana-2.md)).
+5. Only then: is the doorway still the plate's doorway?
+
+⚠️ **This prompt sits on [trigger 3](../../flow/failure-modes.md) — stacked destitution.** Burning
+drums plus a tent city plus an identifiable supermarket is the exact combination named. **If it
+blocks, one change per run, never a re-roll unchanged:**
+
+1. `The fires burning in the drums` → *the fires burning in their metal bins*
+2. Cut the sentence about the people at the fires entirely — the frame does not need them
+3. `supermarket frontage` / `supermarket` → *the shop frontage* / *the shop*
+
+### 10a/10b — round 1, not accepted: the lights went out and the picture got flatter
+
+Run 2026-08-28. Frame banked at
+[`camera/reference/scene-10-round2-lights-out.png`](./camera/reference/scene-10-round2-lights-out.png).
+Jack: *"Not much changed, the sign is now on and it doesn't look that much better."*
+
+**What landed:** the lamp heads are dark and throw no pools, the shop interior is black, the
+swivel chair and the buddleia are in. **What did not:** the sign, and the picture.
+
+#### 🔴 The diagnosis: killing the lights removed the anchor and left mid-grey
+
+[`symptoms.md` §A](../../cinematography/symptoms.md), three rows at once — *"I don't know where
+to look"* (no focal point, everything at the same visual weight), *"the dark bits look grey, not
+black"* (diffusion models pull toward mid-grey; near-black is structurally uphill), and
+*"it doesn't feel lit by anything."*
+
+**The cause is a design error in the prompt, not a wording error.** The lamps and the shop were
+the only bright anchors in the plate. The prompt removed both and replaced them with **four small
+equal fires spread across the frame** — which is four focal points, i.e. none. Nothing in the
+picture is black and nothing is bright; the whole exterior sits inside about two stops, and the
+brightest thing left is a flat pale sky.
+
+[`frame.md`](../../cinematography/frame.md): **one bright anchor inside the darkness, always** —
+the visual system measures darkness against the brightest region it can group into the same
+scene. Take the anchor away and you do not get night, you get murk. **This is the highest-value
+fix in that file and we broke it deliberately.**
+
+**So the fix is not more darkness. It is one big close fire**, which supplies all four missing
+things at once: a focal point, a warm key against a cold ambient, real falloff into real black,
+and a lit midground where there is currently a grey void.
+
+#### 🔴 The sign: two failures, so stop asking Flow for it
+
+Round 1 asked for a five-part lettering operation — cracked tubes, one letter hanging, one fallen,
+a scar on the panel, two named letters still lit — against a reference showing a clean lit sign.
+**The engine ignored all of it and kept the reference.** That is
+[§9](../../google-flow/nano-banana-2.md) (a strong reference wins ties) compounded by
+[§8](../../google-flow/nano-banana-2.md) (length costs adherence), and the standing fix when a
+shot is not landing is **to remove a clause, not add one.**
+
+**Ruled 2026-08-28: the W-AI-trose gag is a post job, not a Flow job.** It is load-bearing text,
+and [`image-prompting.md` §5](../../flow/image-prompting.md) already says load-bearing words
+belong in the overlay rather than the pixels — sharper, editable, and impossible to policy-block.
+[`CLAUDE.md`](../../../CLAUDE.md) puts on-screen text in the **ffmpeg** lane for the same reason.
+
+**The new division of labour:** Flow renders the sign as **one simple state — dead** (a single
+physical fact it can actually hold), and the two lit letters are composited afterwards. That also
+makes the gag identical across every shot in 10–12 instead of re-rolled each time, and it takes
+the brand wordmark out of the prompt entirely. The prompt now asks the fascia to stay a *slightly
+paler band* so the comp has a surface to sit on.
+
+### 10a/10b — round 2 · **still** · written 2026-08-28, unrun
+
+**Reference:** the round-1 frame above (it is now the closest thing to right). One image.
+
+**Four changes and nothing else — the prompt is deliberately ~40% shorter than round 1.** The
+keep-list is cut to the camera, the tent interior and the hand, because everything it was
+protecting outside is being changed anyway, and a long keep-list is attention the change-list
+is not getting.
+
+1. **One drum fire moved close and burning hard — the key light.** Written with its consequences
+   (a pool that reaches the tent mouth, the broken glass catching points of light, everything
+   black within ten metres) because [§9](../../google-flow/nano-banana-2.md) says a bare change
+   gets met halfway. The physics closes — a drum fire at four metres genuinely lights that much,
+   which is what [§20](../../google-flow/nano-banana-2.md) demands.
+2. **Real blacks.** The instruction that does the work is not *"darker"* but *"solid black shapes
+   with no detail in them at all"* — a consequence, not an adjective.
+3. **The sign dead**, as one state.
+4. **Rain, visible only where it crosses the firelight.** [§17](../../google-flow/nano-banana-2.md):
+   streaks need a source, and until now there wasn't one. Still an exterior element only — the
+   6c ruling that rain on the lens is physically impossible inside the tent stands.
+
+**Plus a figure at the near fire, in silhouette.** It is the focal point, the scale reference and
+[gate 2](../../cinematography/principles.md)'s visible cost in one object. **Backlit with their
+back to camera** — two geometric locks, per [§18](../../google-flow/nano-banana-2.md): hide a
+face with the camera and the light, never with a sentence.
+
+**Dropped from round 1, on purpose:** the buddleia and the swivel chair (both landed — restating
+them competes with the reference, [§2](../../google-flow/nano-banana-2.md)), and the long light
+paragraph.
+
+**Settings:** Enhance Prompt **off**. 2K is now fine — no text has to survive.
+
+```prompt
+Use the attached image as the reference. Keep the camera exactly where it is, and keep the inside of the tent exactly as it is: the same doorway, the same fabric, mesh panel and patch, the same bedding, bottles and cans across the bottom, and the same forearm and hand holding a bottle at the lower left. Keep the layout of the car park beyond it.
+
+Change the light, and change it a long way.
+
+One of the burning drums has been dragged close. It stands three or four metres beyond the doorway, off to the right, and it is burning hard, with flames standing well above the rim. It is the only real light in the picture. It throws a strong orange pool across the wet tarmac that reaches as far as the mouth of the tent, lights the inside edge of the doorway and the nearest folds of the bedding, and rakes low across the field of broken glass so that every piece catches its own point of light. The light falls off fast: ten metres past the drum there is nothing left of it.
+
+It is an hour later than in the reference and nearly dark. The sky has gone deep blue-black, with the last of the daylight only in a narrow band low down at the horizon. Everything not reached by the fire is a solid black shape against that sky with no detail inside it at all: the shop front is a black colonnade, the lamp columns are black poles, the far tents and the far side of the car park are one black mass. There is no other light anywhere in the frame — no lit windows, no lamps, no glow on the horizon.
+
+The sign above the shop front is dead. It is unlit, grimed and weather-streaked, and it reads only as a slightly paler grey band along the top of the black frontage, with no colour and no letters that can be made out.
+
+Standing at the near drum with their back to the camera, a single figure, close enough to stand about as tall as the doorway opening. The fire is between them and the far side of the car park, so they are lit only along their edges and are otherwise a solid black shape with nothing legible inside their outline.
+
+Fine rain is falling. It shows only where it crosses the firelight, as bright streaks close to the drum, and is invisible everywhere else.
+
+The shelters beyond are ordinary British high-street dome tents and pop-ups.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Choosing between candidates, in this order:**
+
+1. **Is there one obvious place to look?** If the eye still wanders, the fire is not big enough or
+   not close enough — push it closer before changing anything else.
+2. **Is anything in the frame actually black?** Cover the fire with a thumb; the rest should read
+   as shapes, not as grey texture. This is the round-1 failure and the one to be strict about.
+3. **Does the fire's pool physically reach the tent mouth**, and does the broken glass carry it?
+   That is the midground being filled, which is what the round-1 frame has a void where.
+4. **Did the figure stay a silhouette**, with no face and no legible detail?
+5. **Is the sign genuinely dead** — no green anywhere?
+
+**If it comes back flat again, the next change is time of day, not wording.** Full night with the
+fire as the only source. Do not spend another round writing the falloff harder — that is the
+documented trap ([§20](../../google-flow/nano-banana-2.md)).
+
+### 10a/10b — round 2, accepted as the look · 🔒 the new master
+
+Run 2026-08-28. Frame:
+[`camera/reference/scene-10-round2-ACCEPTED.png`](./camera/reference/scene-10-round2-ACCEPTED.png).
+Jack: *"This looks amazing… I like the fire popping because of the darkness and the ominousness,
+the guy with the hoodie with his back turned to the camera, I like all of it."*
+
+**Every element of the redesign landed.** One close drum fire as the key; real blacks; rain
+showing only where it crosses the firelight; a hooded figure holding as a pure silhouette with no
+face. **The round-1 failure is closed, and the fix was a lighting *design* change, not better
+wording** — worth remembering next time a frame reads flat.
+
+#### 🔴 Gate 1, stated by Jack and now canon: this shot's job is RECOGNITION
+
+> *"This is supposed to be a big reveal that he is in a similar position as Bob — this is the same
+> car park he is in, in the future."*
+
+**That is the first time the shot's job has been written down, and it changes two things.**
+
+1. **The location has to be legible**, which is the whole reason for round 3 below. A reveal the
+   audience cannot read is not a reveal.
+2. **🔴 It promotes the open doorway-chain ruling from tidiness to a dependency.** Recognition is
+   carried by the *framing rhyme* with 6c far more than by any sign — the audience is being asked
+   to notice they have sat in this doorway before. The scene-10 plate is **not** derived from 6c
+   (arch versus letterbox), so right now the rhyme is hoped for. **Re-derive 6c from this accepted
+   frame** and the reveal works with no signage at all; leave it and the shot is carrying a job its
+   composition does not support. *(Raised again 2026-08-28 — this is now the highest-value open
+   item in scene 10.)*
+
+### 10a/10b — round 3 · **still** · written 2026-08-28, unrun
+
+**Reference:** the accepted round-2 frame. **One change only — the sky.**
+
+**Why one change.** Round 2 is right and the risk in touching it is that a global exposure lift
+returns the round-1 mush. So the prompt raises **one named source** and then explicitly pins the
+level of every region that must not move, with the hierarchy stated as a fact —
+*"the fire is still by far the brightest thing in the picture."*
+
+**The sign: readable, and still dead.** The [2026-08-28 ruling](#10a10b--round-1-not-accepted-the-lights-went-out-and-the-picture-got-flatter)
+stands — Flow renders one simple state and the two lit letters are a post comp. Round 3 asks for
+the fascia to catch the sky as a **pale grimy band with the shop's name across it in unlit
+letters, dark against the panel**. That gives three things at once:
+
+- **Recognition** — the word is legible in dark relief, so the place is identified.
+- **A comp surface** — a flat panel with known letter positions, so the two green letters drop on
+  cleanly and identically across every shot in 10–12.
+- **The gag at full strength** — two lit letters on a dead fascia, in a frame this dark, become the
+  second brightest thing in the picture after the fire. Brighter than a fully lit sign ever was.
+
+⚠️ **The brand name is never written in the prompt** — the reference carries the word, and asking
+for a legible real wordmark is [trigger 1](../../flow/failure-modes.md), the most reliable block
+there is.
+
+**Settings:** Enhance Prompt **off**. **4K** — the letterforms have to hold their shape for the comp.
+
+```prompt
+Use the attached image as the reference. Keep everything in it as it is: the same camera position, the same tent interior, doorway, bedding, bottles and the same forearm and hand holding a bottle at the lower left; the same burning drum in the same place with the same flames; the same hooded figure standing with their back to the camera, still lit only along their edges and still a solid black shape with nothing legible inside their outline; the same falling rain; the same wet tarmac, puddles and broken glass; the same lamp columns, unlit.
+
+Change one thing: the sky.
+
+It is a little earlier in the evening. The sky is a deep blue that still holds real light in it, brightest in a wide band low across the horizon behind the buildings. That light is enough to separate the far side of the car park from the sky, so the shop front on the right now reads clearly as a building: the line of its roof, the row of columns along its frontage, and the long horizontal sign panel above them, which catches the sky and sits as a pale grimy band. The shop's name runs across that panel in unlit letters, dark against the paler panel, its shape readable but giving off no light of its own. There is still no light inside the shop and no lit window anywhere.
+
+Everything else keeps its level. The fire is still by far the brightest thing in the picture and still the only warm light; the tent interior, the ground in front of the doorway and everything beyond the reach of the fire stay exactly as dark as they are now.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Choosing between candidates:**
+
+1. **Is the fire still the brightest thing?** If the frame has lifted globally, reject — that is
+   round 1 coming back and it is the only real risk in this change.
+2. **Can you read the shop's name** in dark relief on the panel?
+3. **Are the tent interior and the near ground still black?**
+4. **Did the hooded figure stay a silhouette**, and is the rain still only visible against the fire?
+
+**If the whole frame lifts, do not ask for it darker again** — pin the sky as *"a deep blue with a
+band of light only behind the buildings on the right, and no light at all in the upper half of the
+sky"*, so the lift has one place it is allowed to happen.
+
+### 🔒 10a/10b — the lightning reveal · **design ruled 2026-08-28**
+
+**Jack's idea, and it is the best version of this shot yet:** keep the dark frame, and in the
+video **a lightning strike lights up the sign to reveal it.**
+
+**Why it beats both earlier plans.** Round 3 was going to lift the ambient so the sign reads,
+which buys recognition at the cost of the darkness that makes the frame work. The flash buys
+both, and it **sequences** them — which is the thing a static frame could never do:
+
+| Beat | What the audience gets |
+| --- | --- |
+| **1. The dark frame holds.** Fire, rain, the hooded man, near-black. | *Where is he?* The question is open. |
+| **2. FLASH — two or three frames.** The whole car park, hard and cold, the supermarket right there, the name legible. | **Recognition.** He is in Bob's car park. |
+| **3. Back to dark.** Two green letters still glowing on the dead fascia. | **`AI`.** The thesis, delivered last. |
+
+That is a three-stage reveal in about a second and a half, and the film's whole argument is in
+stage 3. [`stills.md`](../../cinematography/stills.md) and principle 25 both say the same thing —
+**withhold, and let the viewer's understanding lag the image.** A sign that is simply visible from
+frame one cannot do that.
+
+It also **spends the motion budget correctly.** [`shot-list.md`](./shot-list.md)'s standing rule
+allocates animation to the blink, the fire and the embers; a light changing inside a locked frame
+is not a camera move and does not spend the budget. And the flash is **motivated** — it is already
+raining hard in the plate, which is [§20](../../google-flow/nano-banana-2.md)'s requirement met
+before it is asked.
+
+#### 🔴 Do not ask Flow for the flash. It is three layers, and only one of them is Flow's.
+
+[`hybrid-method.md`](../../video-fx/hybrid-method.md) — the lanes are layers, and **ffmpeg owns
+anything that must be exact.** A flash that has to hit a narration beat and reveal specific
+lettering is the definition of exact. Worse, it is the one thing the engine is documented to fail:
+**Veo cannot hold text steady through a change** ([`image-prompting.md` §5](../../flow/image-prompting.md)),
+and a global lighting change is exactly what makes a model re-render everything in frame.
+
+| Layer | Lane | What it is |
+| --- | --- | --- |
+| The dark clip | **Flow** | The accepted frame, animated: fire flicker, rain, the figure shifting his weight. **Camera locked. No lighting change.** |
+| The lit frame | **Flow** | One still — the same frame under the flash. Prompt below. |
+| The flash itself | **Premiere / ffmpeg** | A 2–3 frame cut or fast dissolve to the lit still and back. Exact, free, re-timeable. |
+| The two green letters | **ffmpeg** | The comp already ruled on 2026-08-28. Sits on the dead fascia after the flash. |
+| Thunder | **post** | Synced. Not generated — the delay between flash and thunder is the free realism. |
+
+⚠️ **Physics check: lightning cannot light only the sign.** It is a huge distant source and it
+lights the whole car park hard and cold from one direction. That is *better* — for two frames the
+audience sees the full extent of the camp — but it means the lit frame is a **whole second
+generation**, not a grade. **Do not try to lift the dark plate in post**: raising a near-black
+frame produces noise, not a lit scene.
+
+🔴 **Mandatory before delivery: run ffmpeg's `photosensitivity` filter** on the finished sequence.
+[`hybrid-method.md`](../../video-fx/hybrid-method.md) line 152 — *"run it on any strobing or alarm
+sequence before delivery"*, and Premiere has nothing equivalent. A hard 2-frame flash is exactly
+what it exists for.
+
+### 10b(ii) — the lightning frame · **still** · written 2026-08-28, unrun
+
+**Reference:** the accepted dark frame. **One change: a lightning flash is happening.** Everything
+else in the picture is identical, because the two frames have to intercut on the same sprocket.
+
+**The sign does not need to be powered.** Under a flash it is *illuminated*, so the ask collapses
+to one simple state — a fascia panel and dark lettering revealed by an external light. That is the
+single-state instruction [§21](../../google-flow/nano-banana-2.md) says the engine can actually
+hold, and it is why this design succeeds where two rounds of per-letter reconstruction failed.
+
+**Settings:** Enhance Prompt **off**. **4K** — the letterforms have to hold for the comp.
+
+```prompt
+Use the attached image as the reference. Keep the camera exactly where it is and keep every object in the picture exactly where it is: the same tent interior, doorway, mesh panel and patch, the same bedding, bottles and cans, the same forearm and hand holding a bottle at the lower left, the same burning drum in the same place, the same hooded figure standing in the same position with their back to the camera, the same falling rain, the same wet tarmac, puddles and broken glass, the same tents beyond, and the same shop front and lamp columns in the same places.
+
+Change one thing: at this instant a sheet of lightning has gone off in the sky behind the buildings, and it is now the brightest light in the picture by a long way.
+
+It is a huge, distant, hard, cold blue-white source, and it lights the entire car park at once from high up and behind. Everything that was black is now visible: the whole width of the camp, the rows of shelters, the litter and the standing water, the far side of the car park. The wet tarmac has turned to a bright hard sheet reflecting the sky. The lamp columns and the hooded figure are now hard black silhouettes against a lit background, with the light wrapping their edges. Shadows are thrown long and sharp toward the camera. There is no warm light anywhere in the frame except the drum fire, which is still burning but is now much the weaker of the two and reads as a small orange core with almost no reach.
+
+The shop front on the right is fully lit by the flash. Its long horizontal sign panel above the frontage is clearly visible, weather-streaked and grimy, with the shop's name across it in unlit letters standing dark against the panel, sharp and readable. The sign gives off no light of its own and there is still no light inside the shop.
+
+The hooded figure is still lit only along their edges and is still a solid black shape with nothing legible inside their outline.
+
+A documentary press photograph on 35mm film, caught in a single frame of lightning: hard contrast, cold blue-white, deep sharp shadows, fine natural grain.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Choosing between candidates:**
+
+1. **Does it intercut?** Put it next to the dark frame — the doorway, the drum, the figure and the
+   bedding must not have moved by a pixel. This matters more than how good the frame is.
+2. **Is the shop's name sharp and readable**, dark on a lit panel?
+3. **Is the light cold and hard and from behind the buildings** — long shadows thrown toward the
+   camera, not a soft global lift?
+4. **Is the drum fire now the weaker source?** If it still dominates, the flash is not reading as
+   lightning.
+5. **Did the figure stay a silhouette?**
+
+⚠️ **One honest register note.** Lightning is the most *cinematic device* thing in a film that has
+otherwise earned everything by withholding. **As the single flourish in ninety seconds it lands;
+as the first of several it cheapens the rest.** Spend it here and nowhere else.
+
+### 10b(iii) — the camp wide · **still** · written 2026-08-28, unrun
+
+**The brief (Jack):** redo the aerial of the whole camp, make it cinematic, match the weather and
+time of day of the accepted night frame, with lightning illuminating the place alongside the
+barrel fires.
+
+#### 🔴 Read this before generating: the vantage is the problem, and the lightning fixes it for free
+
+**Three separate objections land on the same fact — the camera is too high.**
+
+1. **An aerial cannot carry scale.** [`symptoms.md`](../../cinematography/symptoms.md): *"from a
+   distance human proportions stop being legible and it reads as geometry."* This is the
+   **GPOM `vantage` finding**, learned the hard way and predating the research that explained it.
+   In the reference the figures are marks. A hundred marks is a map, not a hundred people.
+2. **🔴 It trips Sontag's formal markers.** [`registers.md`](../../cinematography/registers.md)
+   carries them as a checklist *because they are formal, not thematic*: **massing people into
+   ornamental patterns; turning people into things.** A drone survey of a hundred tiny figures
+   arranged in rows is a literal instance of both. The register file's central warning is that
+   the grammar is neutral and meaning it ironically does not protect you.
+3. **It is the news-helicopter shot.** This altitude and angle over a tented settlement is the
+   single most recognisable refugee-camp framing there is
+   ([`the-reader.md` rule 4](../../marketing/the-reader.md)) — and it is the read this film can
+   least afford, because our reader arrived at immigration *via* the economy.
+
+✅ **And the fix is already implied by Jack's own note.** **Lightning needs sky.** The reference
+frame is about 8% sky, so there is physically nowhere for a flash to happen. Getting sky into the
+frame means dropping the camera and tilting up — which **also** makes the people read as people,
+**also** breaks the survey angle, and **also** gives the frame the three depth planes it currently
+has none of. One change, four fixes.
+
+**So: a rooftop vantage at about fifteen metres, tilted up, top third of the frame sky.** Not an
+aerial — a place a person could stand. Foreground a barrel and two figures at human scale;
+midground the camp; background the dead supermarket; sky above it carrying the flash.
+
+#### The other changes
+
+- **British, not shanty.** Dome tents, touring caravans, awnings, pallets, shopping trolleys and
+  wheelie bins — the reference's tarpaulin-and-shack vocabulary is the same problem as objection 3,
+  in the props.
+- **One dominant near fire.** The lesson from the 10a sequence: many small equal fires is many
+  focal points, i.e. none.
+- **The sign needs no power.** The fascia is dark green lettering on a pale panel, so the flash
+  alone makes it legible — one simple state, which is what
+  [§21](../../google-flow/nano-banana-2.md) says the engine can hold.
+  ✅ **Naming `Gill Sans` is now proven** — it worked on the 10b clip.
+- **⚠️ 2K, not 4K.** [§22](../../google-flow/nano-banana-2.md), researched today: generating well
+  above native resolution is the primary cause of **tiling in crowd scenes**, and this frame is a
+  hundred shelters. The sign is a small region and can be checked; a cloned crowd cannot be fixed.
+
+**Reference: ONE — the aerial, for the place only.** The night look is prose because it *can* be
+written down, and [§3b](../../google-flow/nano-banana-2.md) reserves a second reference for what
+cannot be. Enhance Prompt **off**.
+
+```prompt
+Generate a still photograph. Use the attached image as the reference for the place only: the same supermarket building at the far side of its car park, the same camp of shelters filling the whole car park, the same industrial units and houses along the skyline behind, and the same dual carriageway running down the right-hand side.
+
+Camera: standing on a flat roof at the near edge of the car park, about fifteen metres up — high enough to see across the whole camp, low enough that the people in it are plainly people rather than marks. A 35mm lens. The camera is tilted up so the top third of the frame is open sky, the horizon runs just above the supermarket's roofline, the framing is slightly off level, and the supermarket sits a little right of centre rather than squared to the frame.
+
+Nearest the camera and a few metres below, partly cutting into the bottom corner of the frame: the corner of a shelter, and beside it an oil drum burning hard with two people at it, close enough to read clearly as people — one bent over feeding a broken pallet into it, the other half-turned away mid-step. This is the one strong warm light in the picture.
+
+Beyond them the camp runs away across the whole car park: ordinary British high-street dome tents and pop-ups, a few touring caravans, awnings guyed off shopping trolleys, stacked pallets, wheelie bins and standing water between them. No two shelters are alike — different sizes, colours, ages and states of collapse — and the people among them are walking, crouched or working, none of them posed or looking at the camera. Perhaps fifteen more oil drums are burning further off, each a small warm point lighting a metre around itself and nothing more.
+
+At the far side, the supermarket: dark, its glass black, no light inside it and no working lamp anywhere in the car park. Across the pale panel above its frontage the word "Waitrose" in lowercase green Gill Sans lettering, weather-stained and unlit, giving off no light of its own.
+
+Light: it is night, in the same weather as a heavy winter storm. The sky is deep blue-black with a narrow band of last light low across the horizon. At this instant a sheet of lightning has fired behind the buildings — a huge, distant, hard, cold blue-white source that lights the entire camp at once from high up and behind. Everything is briefly visible, the wet tarmac and the standing water have turned to bright hard sheets reflecting the sky, and long sharp shadows are thrown toward the camera. The drum fires stay warm and orange inside all that cold light, and the near one is still the warmest thing in the frame.
+
+Heavy rain is falling through the whole picture, showing brightest where it crosses the flash and the firelight. The buildings are square and true, their rooflines straight and unbroken.
+
+A documentary press photograph on 35mm film: natural grain visible in the shadows, muted cool colour, no colour grading push, and the picture slightly underexposed.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Choosing between candidates:**
+
+1. **Do the people read as people?** If they are marks, the camera is still too high and nothing
+   else matters.
+2. **Are there three depth planes** — the near drum and its two figures, the camp, the store — and
+   real sky above?
+3. **Is the near drum the warmest thing**, with the flash cold around it?
+4. **Any tiling?** Scan the shelters and the figures for repeats. This is the frame's specific
+   risk ([§22](../../google-flow/nano-banana-2.md)) — if it clones, drop the resolution before
+   touching the wording.
+5. **Is the word right**, and are the rooflines straight?
+
+⚠️ **This is the highest [trigger 3](../../flow/failure-modes.md) exposure in the film** — a tent
+city, burn barrels, a hundred figures and an identifiable supermarket in one prompt. **If it
+blocks, one change per run:**
+
+1. `oil drum` / `oil drums` → *metal bins*
+2. Cut `and the people among them are walking, crouched or working` — leave the camp unpeopled
+   except the two at the near drum
+3. Cut the quoted word and the font, and let the reference carry the fascia
+
+### 10c — he's out, and it's his car · **still** · written 2026-08-28, unrun
+
+**Canon:** *"He crawls out into the ruined car park — the W-AI-trose sign with only the A and I
+lit; the wank tank still in its two bays, dead and clamped."*
+
+#### The design — three decisions, each made against the shots either side
+
+**1. Ground level, and close. Not another elevated shot.** 10a is a low POV and 10b is a rooftop
+wide; a third distant frame would repeat a job, which
+[`motion-and-cutting.md` §4](../../cinematography/motion-and-cutting.md) names as the usual cause
+of a flat sequence. This beat is *his* recognition, so the camera has to be near him.
+
+**2. 🔑 From behind — and he becomes the hooded figure.** 10a and 10b both put a man in silhouette
+with his back to camera at a fire, and the audience has spent two shots looking at him. **Put
+Tarquin in that pose and the rhyme does the argument with no narration at all: he is now the
+man he was looking at.** It also keeps his face withheld until 11a, which is
+[`shot-list.md`](./shot-list.md)'s own standing rule for this stretch, and it removes the
+[§12](../../google-flow/nano-banana-2.md) problem — no face in frame means no Character to bind,
+so prose is the correct lever here rather than a cast.
+
+**The identifier is the gilet.** The same expensive olive gilet from 4b, 7a and 8b, five years
+wrecked. One object tells the audience who this is without a face, and states what happened to him
+in the same breath.
+
+**3. One frame, both objects.** The dead X8 and the sign in the same picture, with him between
+them. His car and the shop, both finished, and him standing in a car park he now lives in.
+**It also bookends 8a** — the same car, the same two bays, five years on — and
+[`symptoms.md`](../../cinematography/symptoms.md) calls the bookend *"the highest value, lowest
+cost structure we have."*
+
+**⚠️ No lightning in this one.** Ruled when the device was adopted: *spend the flourish once.* 10b
+has it; 10c is lit by fire and nothing else.
+
+#### The gag lands here, as stage two — and it is still a comp
+
+10a's flash reveals **the whole name**, which is recognition. 10c reveals that **only two letters
+still have power**, which is the joke. Full name first, reduction second — a better delivery than
+either shot could manage alone.
+
+🔴 **The fascia generates DEAD.** Two lit letters is a per-letter state, and
+[§21](../../google-flow/nano-banana-2.md) is explicit that a multi-part change to one object
+against a reference gets dropped rather than met halfway. The letters are composited, per the
+2026-08-28 ruling — identical across every shot in 10–12, and no
+[trigger 1](../../flow/failure-modes.md) exposure in the prompt.
+
+**And the comped letters need no spill.** A fascia forty metres off lights nothing at the camera's
+position, which is the same physics argument that kept the lit sign honest in 10a. The prompt says
+so, so the engine does not invent a green wash.
+
+**Reference: ONE — the accepted camp wide**, for the location, weather and night look. The X8 is
+prose because no accepted frame in scene 10 contains it. Enhance Prompt **off**. **2K.**
+
+```prompt
+Generate a still photograph. Use the attached image as the reference for the place, the weather and the light: the same supermarket car park filled with a camp of shelters, the same night, the same heavy rain, the same wet tarmac and standing water, the same oil drums burning through the camp, the same muted cool colour and grain.
+
+Camera: standing on the wet tarmac a few metres behind a man, at his shoulder height, on a 50mm lens. The framing is slightly off level and he sits left of centre rather than squared to the frame.
+
+Nearest the camera and filling the left of the frame from the bottom edge to two-thirds of the way up, seen from directly behind: the back and shoulders of a man standing still in the rain, his head slightly lowered. The back of his head faces us squarely and hides the whole of the rest of his head behind it; the picture holds only his wet hair, his collar and his shoulders. He wears a quilted olive gilet over a dark jumper, both filthy, soaked through and worn to the point of falling apart, the gilet split along one seam with the wadding coming out of it. His arms hang at his sides.
+
+In front of him, side on and filling the middle of the frame: a black BMW X8, stopped square across the painted white line between two parking bays and filling both of them, exactly where it was parked. It has not moved in years — the tyres are flat and perished, the paint is dulled under a skin of dirt and moss, the windows are opaque with grime, a wing mirror is gone, and a heavy steel wheel clamp is fitted to the front wheel. Shelters and rubbish have grown up around it and one guy line is tied off to its tow eye.
+
+Beyond it, at the far side of the car park: the supermarket, dark, its glass black, no light inside it and no working lamp anywhere. The long pale panel above its frontage is weather-stained and completely dead — the lettering across it is unlit and dark, giving off no light at all, and there is no green glow anywhere in the picture.
+
+Light: the burning drums are the only light. The nearest of them is off to the right and low, so the man, the car and the wet ground are lit warm and steeply from one side, and everything beyond the drums falls away to black. Rain is falling hard through the whole frame and shows brightest where it crosses the firelight.
+
+A documentary press photograph on 35mm film: natural grain visible in the shadows, muted cool colour, no colour grading push, slightly underexposed.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Choosing between candidates:**
+
+1. **Is the back of his head genuinely occluding?** No cheek, no ear, no profile —
+   [§18](../../google-flow/nano-banana-2.md), and an invented face here is an uncast character we
+   would then have to match in 11a.
+2. **Does the gilet read as the same garment, ruined?** That is the only thing telling the audience
+   who this is.
+3. **Is the car plainly dead** — flat tyres, clamp, grown into the camp — rather than merely parked?
+4. **Is the fascia truly dark**, with no green anywhere? The comp needs a clean surface.
+5. **Does he read as the hooded figure from 10a/10b?** Same pose, same distance, same back. If the
+   rhyme is not obvious at a glance, it is not landing.
+
+⚠️ **[Trigger 3](../../flow/failure-modes.md) exposure, plus a destitution-adjacent wardrobe
+description.** If it blocks, one change per run:
+
+1. Cut `soaked through and worn to the point of falling apart, the gilet split along one seam with
+   the wadding coming out of it` → *rain-soaked and long unwashed*
+2. `black BMW X8` → *a large black luxury SUV*
+3. Cut `Shelters and rubbish have grown up around it`
+
+### 11b(i) — the newspaper, found by torchlight · **still** · written 2026-08-28, unrun
+
+**The brief (Jack):** an earlier daylight frame of the newspaper exists but the weather is wrong.
+Redo it at night, **first person, Tarquin finding the paper on the ground with a torch, like a
+video game.**
+
+#### 🔑 The torch is not decoration — it solves four problems at once
+
+1. **It is one named source with a position**, which is the standing anti-slop fix for *"vague
+   nice lighting"*. The old frame is flat overcast with no traceable source.
+2. **It makes a focal point for free.** A hard narrow cone on the headline with everything else
+   black; [`frame.md`](../../cinematography/frame.md)'s *one bright anchor inside the darkness*,
+   arrived at by the world rather than by grading.
+3. 🔴 **It hides the body text physically, which is the whole point.** The old frame's biggest
+   slop tell is its **garbled body copy** — the model attempted columns of newsprint and produced
+   nonsense. **The beam only covers the top of the page**, so the rest is dark and rain-soaked and
+   we never ask the engine to render body text at all. The light does the censoring.
+   *(Same family as [§15](../../google-flow/nano-banana-2.md): describing something as unreadable
+   is strictly easier than describing it correctly.)*
+4. **It is motivated.** Nothing electric works in this world, so a torch is the only way to see
+   anything — established across 10a–10c.
+
+#### The POV, and what makes it read as first person rather than a game
+
+**Video models have no built-in concept of *camera as character*** `[community]`, so it has to be
+spelled out: whose eyes these are, that the camera **is** those eyes, and which parts of the body
+are in frame. **Body anchors are what stop a model silently switching to third person** — here,
+his hand at the bottom-right and his boot toes at the bottom edge. Camera height is stated as
+crouched, which the same sources flag as the POV height for *examining an object*.
+
+⚠️ **The thing that would make it read as a video game rather than a film is a perfectly level,
+perfectly stabilised frame.** So the off-level instruction is doing double duty, and the 35mm grain
+carries the rest. Jack's instinct is right — a torch cone in first person is the survival-horror
+signature — but the register has to stay documentary or it breaks the film.
+
+#### 🔴 The hand is the biggest generation risk in this shot
+
+**2026's hand failure is no longer finger count — it is fusion.** *"Held objects are 2026's new
+six fingers: the count is right, but they fuse with the cup handle, knife hilt, or phone bezel."*
+The field's fix is a negative prompt, which [backfires here](../../google-flow/nano-banana-2.md),
+so it is converted to the positive: **"five separate fingers, each one distinct, wrapped around
+the barrel, and the torch keeps its own shape clearly separate from the hand."**
+
+**Second mitigation, and the stronger one: put the hand close to the lens and throw it out of
+focus.** A hand that is soft cannot fuse legibly, and out-of-focus is easier to draw than correct.
+**Budget a reroll regardless** — the sources are unanimous that a meaningful percentage of
+generations still fail on hands.
+
+**Do not cast `@future-Tarquin`.** There is no face in a first-person shot, so
+[§12](../../google-flow/nano-banana-2.md) applies — a Character binds to a face, and with nothing
+to bind to it only competes with the prose. This is [§19](../../google-flow/nano-banana-2.md)'s
+narrow exception, where prose is the only lever left. **The gilet cuff is the identifier**, same
+as 10c.
+
+#### ⚠️ Two notes for a human
+
+**1. The headline names the technology, not the chooser.**
+[`the-reader.md` rule 5](../../marketing/the-reader.md) is explicit that *"the machines are
+coming"* produces fatalism, and rule 6 forbids raising automation fear without the beneficiary in
+the same piece. **The defence is that the picture names him** — the man reading it is the man who
+did it, and that irony is the beat. **That works only if the audience connects them**, so 11c has
+to keep him in frame with it. If we would rather not lean on that, an alternative that names the
+beneficiary inside the headline: `LAST UK WORKER LAID OFF · SHAREHOLDERS 'DELIGHTED'`. **A human
+call.**
+
+**2. This changes 11b.** Canon has **Bob handing him the paper** — *"that was like five years ago,
+look at the date"* — as the callback to the 1b plant. If Tarquin finds it himself, Bob loses that
+beat and the hand-off. Both can coexist (he finds it, and Bob later makes him look at the *date*,
+which is a different reveal), but somebody should decide.
+
+**⚠️ The date is not in this shot.** *"The date does the time"* is 11c's job and it is a second
+legible text element; two text targets in one frame doubles the risk. Shoot it as its own insert.
+
+**Reference: ONE — the accepted 10a night frame**, for weather, light and place. The newspaper
+composition is prose. Enhance Prompt **off**. **4K** — a headline has to hold.
+
+```prompt
+Generate a still photograph. Use the attached image as the reference for the place, the weather and the light: the same ruined supermarket car park at night, the same heavy rain, the same wet tarmac and standing water, the same shelters, the same muted cool colour and grain.
+
+This is a first-person point-of-view shot and the camera is the man's own eyes. He is crouched down low over the ground, so the camera sits about half a metre above the wet tarmac and tilts down at it, on a 35mm lens. The framing is slightly off level and what he is looking at sits right of centre rather than squared to the frame.
+
+Entering the frame from the bottom right corner, very close to the lens and thrown completely out of focus: his own hand holding a small metal torch. Five separate fingers, each one distinct, are wrapped around the barrel of the torch, and the torch keeps its own shape clearly separate from the hand. The cuff of a filthy quilted olive gilet shows at his wrist. Along the very bottom edge of the frame, also close and soft, the toes of his wet boots.
+
+The torch beam is the only light in the picture: a hard, narrow, slightly blue-white cone thrown down and to the left from the bottom right corner, which has just this moment landed on what he is looking at.
+
+Lying face up on the wet tarmac inside that beam, soaked flat and half in a puddle, a newspaper. Only the top of its front page is inside the beam, and across it the headline reads "BRITAIN'S LAST WORKER REPLACED BY AI" in heavy black condensed capitals. Below the headline the page runs out of the beam into darkness and the wet paper has gone translucent, so the columns underneath are unlit, blurred and soft, and the only legible words anywhere in the picture are that headline.
+
+Around it: wet tarmac, broken glass, flattened cans and plastic bags, all glittering sharply where the beam catches them and going to solid black where it does not. Far beyond the reach of the beam, the small orange glow of a drum fire somewhere out in the camp, lighting nothing.
+
+Rain falls hard through the beam, showing as bright streaks inside the cone of light and invisible outside it, and raindrops are landing on the wet page and in the puddle around it.
+
+A documentary press photograph on 35mm film: natural grain visible in the shadows, muted cool colour, no colour grading push, deep black shadows.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Choosing between candidates:**
+
+1. **The hand.** Five separate fingers, and is the torch a separate object from the hand? This is
+   the frame's most likely failure and the reason to reroll.
+2. **Does it read as first person?** Hand and boots both present, no third-person drift.
+3. **Is the headline exact**, and is everything below it genuinely unreadable rather than garbled
+   pretend-text? Garbled body copy is the failure this whole design exists to avoid.
+4. **Is the beam a hard cone with real black outside it**, rather than a general lift?
+5. **Is the frame off level?** A perfectly level POV reads as a game.
+
+⚠️ If it blocks: 1) cut `filthy` → *worn*; 2) cut the broken glass and cans; 3) drop the quoted
+headline and let the paper be unreadable, then comp the headline in post.
+
+#### ⚠️ Redesigned 2026-08-28 (Jack), before the crouched version was ever run
+
+**"Make it so he is standing up with the torch, then picks it up in the video, but in the image a
+first POV of him walking to the newspaper outside the tent."** The crouched draft above is
+superseded and kept only as a record. **Four things get better:**
+
+1. **The still gets an unresolved question.** [`stills.md` §1](../../cinematography/stills.md):
+   *a still only holds attention if it contains an unresolved question, and resting poses die
+   fast.* Crouched over the paper is **arrived**; walking toward it is **en route**. This is the
+   8b lesson repeating — *when the frame will not perform, move the moment earlier.*
+2. **The plate and the clip split correctly.** The still is the moment before; the clip completes
+   it. Same discipline as 9a, where the knee-grab lives in the clip and not the plate.
+3. **A standing torch rakes forward instead of pointing down** — the lit patch stretches away
+   along the ground and every piece of litter throws a long shadow **toward** the camera. That is
+   depth, for free, and it is the single most cinematic thing available in this shot.
+4. 🔑 **The reveal moves to where it is safe.** At four metres and a shallow angle the headline is
+   small and foreshortened — so **it is not legible in the still, and it should not be.** The
+   picture shows a pale rectangle at the far end of the beam and withholds what it says. **The
+   words resolve in the clip, at the moment he lifts it toward the lens** — large, frontal, and
+   only for the last second. That is the easiest text ask in the whole film, and there is **no
+   text risk in this still at all.**
+
+⚠️ **The clip is NOT a walking POV.** A first-person walk is camera translation, and this camp is
+wall-to-wall tents, pallets and corrugated sheet — the exact geometry Veo hinges. **The clip is
+the pick-up only**, camera near-static: the hand enters, takes the paper, lifts it into the beam.
+The walk is implied by the still, which is how it would be cut anyway.
+
+### 11b(i) — walking to the newspaper · **still** · written 2026-08-28, unrun · *supersedes the crouched draft*
+
+**Reference: ONE — the accepted 10a night frame.** No Character (no face). Enhance Prompt **off**.
+**2K** — no text has to survive.
+
+```prompt
+Generate a still photograph. Use the attached image as the reference for the place, the weather and the light: the same ruined supermarket car park at night, the same heavy rain, the same wet tarmac and standing water, the same shelters, the same muted cool colour and grain.
+
+This is a first-person point-of-view shot and the camera is the man's own eyes. He is standing and walking, so the camera is about a metre and a half above the wet tarmac and tilted down toward the ground ahead of him, on a 35mm lens. The framing is slightly off level.
+
+At the bottom of the frame, close to the lens: one of his boots, caught mid-stride with the heel off the ground and his weight still on the other foot. Entering from the bottom right corner, very close to the lens and thrown completely out of focus, his own hand holding a small metal torch — five separate fingers, each one distinct, wrapped around the barrel, and the torch keeping its own shape clearly separate from the hand. The cuff of a filthy quilted olive gilet shows at his wrist.
+
+Cutting into the left edge of the frame, close and dark: the corner of the tent he has just come out of, a taut guy line running out of it down to a peg in the tarmac.
+
+The torch beam is the only light in the picture. Because he is standing, it strikes the ground at a shallow angle and stretches away ahead of him as a long narrowing wedge of light. Every can, bag and shard of glass inside it throws a long hard shadow back toward the camera. Outside the wedge everything is solid black.
+
+Lying at the far end of that wedge, about four metres ahead on the wet tarmac and seen at a steep foreshortened angle: a newspaper, soaked flat and half in a puddle, a pale rectangle in the dark. It is too far away and too sharply angled for any of its printing to be made out — the page reads as a bright shape with grey texture on it and no readable words anywhere in the picture.
+
+Far beyond the beam, small and out of focus, the orange glow of a drum fire somewhere out in the camp, lighting nothing.
+
+Rain falls hard, showing as bright streaks inside the wedge of torchlight and invisible outside it, and pitting the surface of the puddles.
+
+A documentary press photograph on 35mm film: natural grain visible in the shadows, muted cool colour, no colour grading push, deep black shadows.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Choosing between candidates:**
+
+1. **Does it read as walking?** Boot mid-stride, heel up. A planted foot means the frame has
+   resolved and the shot is dead.
+2. **Is the beam a long shallow wedge** with litter throwing shadows *toward* the camera — not a
+   pool pointing straight down?
+3. **The hand** — five separate fingers, torch a distinct object, and soft. Still the likeliest
+   reroll.
+4. **Is the paper unreadable?** If the engine has written words on it, reject: this frame's job is
+   to withhold them.
+5. **Off level?** A perfectly level POV reads as a video game rather than a film.
+
+**Then the clip, once this is accepted:** camera near-static, the hand comes down into frame, takes
+the paper, and lifts it up into the torch beam toward the lens where the headline resolves. One
+action, no camera translation.
+
+### 11b(i) — walking to the newspaper, round 2 · **still** · written 2026-08-28, unrun
+
+**Two changes asked for by Jack: cast `@Future-Tarquin`, and make the headline readable.** Both
+were argued against above; both are now the brief. **Each one forces a further change, and those
+are the interesting part.**
+
+#### Casting the Character means the garment description has to come OUT
+
+[§19](../../google-flow/nano-banana-2.md), and Jack's own standing rule: **a Character cast means
+no appearance description at all.** So *"the cuff of a filthy quilted olive gilet"* is deleted —
+wrapping it in a keep-verb is not a loophole either (8c(ii) proved that the same day it was
+written).
+
+⚠️ **It will not bind a likeness** — there is no face in a first-person shot
+([§12](../../google-flow/nano-banana-2.md)). **But it is not wasted**, and this is the upside
+worth naming: on a POV frame the **sleeve is the only wardrobe in shot**, and a Character carries
+wardrobe. So casting it is the *right* way to get the correct sleeve — better than describing one,
+which is what kept coming back wrong on 8c(i).
+
+#### A readable headline forces the paper upright, and that is an improvement
+
+At four metres flat on the ground at a steep angle, a headline cannot be legible — that was the
+whole reason the previous draft withheld it. **So the paper has to stand up.** It is caught
+against a pallet and half upright, facing him, two metres away.
+
+**Three things get better, not worse:**
+
+- **It is physically motivated** — wind and rain drive loose paper against things; the earlier
+  daylight frame had it propped exactly this way.
+- **An upright page facing the beam square-on blazes white**, which makes it comfortably the
+  brightest object in the frame and hands the shot its focal point.
+- **It reads as the world showing him something**, rather than him finding litter.
+
+🔴 **The body-copy censor stays, and it is now load-bearing.** The old daylight frame's worst slop
+tell was **garbled newsprint** under the headline. The beam reaches the top of the page and the
+lower half stays soaked and dark, so the columns are never attempted.
+**Do not remove that clause to "improve" the picture.**
+
+**Resolution goes back up to 4K** — a headline has to survive, and 1K blurs small text
+([`image-prompting.md` §5](../../flow/image-prompting.md)).
+
+**Reference: the accepted 10a night frame. Character: `@Future-Tarquin`.** Enhance Prompt **off**.
+
+```prompt
+Generate a still photograph. Use the attached image as the reference for the place, the weather and the light: the same ruined supermarket car park at night, the same heavy rain, the same wet tarmac and standing water, the same shelters, the same muted cool colour and grain.
+
+This is a first-person point-of-view shot and the camera is the eyes of the man from the character reference. He is standing and walking, so the camera is about a metre and a half above the wet tarmac and tilted down toward the ground ahead of him, on a 35mm lens. The framing is slightly off level.
+
+At the bottom of the frame, close to the lens: one of his boots, caught mid-stride with the heel off the ground and his weight still on the other foot. Entering from the bottom right corner, very close to the lens and thrown completely out of focus, his own hand holding a small metal torch — five separate fingers, each one distinct, wrapped around the barrel, and the torch keeping its own shape clearly separate from the hand. His sleeve and wrist show at the edge of the frame.
+
+Cutting into the left edge of the frame, close and dark: the corner of the tent he has just come out of, a taut guy line running out of it down to a peg in the tarmac.
+
+The torch beam is the only light in the picture. Because he is standing, it strikes the ground at a shallow angle and stretches away ahead of him as a long narrowing wedge of light. Every can, bag and shard of glass inside it throws a long hard shadow back toward the camera. Outside the wedge everything is solid black.
+
+About two metres ahead, at the far end of that wedge: a newspaper, soaked and rain-flattened, blown up against the side of a broken wooden pallet so that it stands half upright and its front page faces him square on. The beam hits it flat and it is the brightest thing in the picture. Across the top of the page, inside the beam and sharply in focus, the headline reads "BRITAIN'S LAST WORKER REPLACED BY AI" in heavy black condensed capitals. Below the headline the page falls out of the beam into darkness and the wet paper has gone translucent and soft, so the columns underneath are unlit and blurred, and that headline is the only legible text anywhere in the picture.
+
+Far beyond the beam, small and out of focus, the orange glow of a drum fire somewhere out in the camp, lighting nothing.
+
+Rain falls hard, showing as bright streaks inside the wedge of torchlight and invisible outside it, pitting the puddles and running down the face of the page.
+
+A documentary press photograph on 35mm film: natural grain visible in the shadows, muted cool colour, no colour grading push, deep black shadows.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Choosing between candidates:**
+
+1. **Is the headline exact and sharp**, and is everything below it **unreadable rather than
+   garbled pretend-text**? Fake newsprint is the failure this design exists to prevent.
+2. **Does it still read as walking?** Heel up. A planted foot resolves the frame and kills it.
+3. **The hand** — five separate fingers, torch a distinct object, soft. Likeliest reroll.
+4. **Is the page the brightest thing**, with real black outside the wedge?
+5. **Did the sleeve come back as his wardrobe?** That is the only thing the Character can deliver
+   here — if it did not, the cast is doing nothing and the shot is fine without it.
+
+⚠️ **A quoted headline reinstates text-policy exposure.** No real institution is named, which is
+the [trigger 4](../../flow/failure-modes.md) line, so the risk is moderate. **If it blocks:**
+1) drop the quoted headline and let the page be a bright blank, then comp the words;
+2) `broken wooden pallet` → *a pile of rubbish*.
+
+### 11b(i) — round 3 · **still** · written 2026-08-28, unrun
+
+**Round 2 came back with his legs stretched out in front of him, as if he had fallen over.**
+
+#### 🔴 The cause: the reference was a seated POV, and it beat the prompt
+
+**The attached reference was the 10a tent frame — whose entire composition is a man's legs and
+sleeping bag stretching away toward a doorway.** The prompt asked for a *standing, walking* POV
+while handing the engine a picture of a *reclining* one, and
+[§9](../../google-flow/nano-banana-2.md) is explicit that a strong reference becomes the baseline
+every change is measured against **and wins the ties.** It did not disobey; it was given two
+authorities and took the picture.
+
+**Recorded as a working rule: on a POV shot, the reference's body position is inherited whether
+or not you asked for it.** A POV reference is never "just the location."
+
+#### The fix, in three parts — and the first one is to drop the reference entirely
+
+1. 🔑 **No location reference at all.** [§15](../../google-flow/nano-banana-2.md): *if the setting
+   keeps coming back wrong, check whether the shot needs a setting at all — ask what actually has
+   to be sharp.* **In this frame everything outside the torch beam is black.** There is almost no
+   set in the picture, so there is almost nothing for a location reference to carry, and the only
+   thing it was reliably carrying was the wrong posture. **`@Future-Tarquin` is the only
+   attachment.**
+2. **Say where the nearest ground is, not where the body is.** Writing *"he is standing"* is a
+   statement about a person the camera cannot see. **Writing that the bottom edge of the frame
+   falls on tarmac a metre in front of him is geometry** — and if the nearest ground is a metre
+   away, there is physically nowhere to put a pair of legs. Same lesson as camera height, which
+   was ignored three times as a number and obeyed first time as a consequence.
+3. **Delete the boots.** Round 2 kept a boot at the bottom edge as a POV anchor and that is the
+   toehold the legs grew from. [§18](../../google-flow/nano-banana-2.md)'s escalation applies
+   directly — *a body part that is not in the picture cannot grow.* **The hand and torch are
+   anchor enough**; the POV literature is explicit that hands alone lock first person.
+
+**Attachment: `@Future-Tarquin` only. No location image.** Enhance Prompt **off**. **4K.**
+
+```prompt
+Generate a still photograph. This is a first-person point-of-view shot at night: the camera is the eyes of the man from the character reference, and the picture shows only what he can see in front of him.
+
+He is walking forward across a car park and looking down at the ground ahead. The camera is at the eye height of a walking adult on a 35mm lens, angled down toward the ground in front of him. The nearest thing in the picture is wet tarmac about a metre ahead of him, so the whole bottom edge of the frame is wet ground running away from the camera. The framing is slightly off level.
+
+Entering from the bottom right corner, very close to the lens and thrown completely out of focus: his own hand, held out in front of him at chest height, holding a small metal torch. Five separate fingers, each one distinct, are wrapped around the barrel, and the torch keeps its own shape clearly separate from the hand. His sleeve and wrist show at the edge of the frame.
+
+Cutting into the left edge of the frame, close and dark: the corner of a small tent, with a taut guy line running out of it down to a peg in the tarmac.
+
+The torch beam is the only light in the picture. Held at chest height it strikes the ground at a shallow angle and stretches away ahead of him as a long narrowing wedge of light across the wet tarmac. Every can, bag and shard of broken glass inside that wedge throws a long hard shadow back toward the camera. Outside the wedge everything is solid black.
+
+About two metres ahead, at the far end of the wedge: a newspaper, soaked and rain-flattened, blown up against the side of a broken wooden pallet so that it stands half upright and its front page faces him square on. The beam hits it flat and it is the brightest thing in the picture. Across the top of the page, inside the beam and sharply in focus, the headline reads "BRITAIN'S LAST WORKER REPLACED BY AI" in heavy black condensed capitals. Below the headline the page falls out of the beam into darkness and the wet paper has gone translucent and soft, so the columns underneath are unlit and blurred, and that headline is the only legible text anywhere in the picture.
+
+Far beyond the beam, small and out of focus, the orange glow of a fire burning in a drum somewhere out in the camp, lighting nothing.
+
+Heavy rain is falling, showing as bright streaks inside the wedge of torchlight and invisible outside it, pitting the puddles on the tarmac and running down the face of the page.
+
+A documentary press photograph on 35mm film: natural grain visible in the shadows, muted cool colour, no colour grading push, deep black shadows.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Choosing between candidates:**
+
+1. **Is the bottom edge of the frame ground?** Nothing of him below the hand. This is the whole
+   point of the round.
+2. **Headline exact and sharp**, everything below it unreadable rather than garbled?
+3. **The hand** — five separate fingers, torch a distinct object, soft.
+4. **Is the beam a long shallow wedge** with shadows thrown toward the camera?
+5. **Off level**, and does the world outside the beam go properly black?
+
+**If a body still appears at the bottom of the frame**, do not describe the posture harder — that
+is the documented trap. **Delete the tent corner as well** and let the frame be nothing but the
+hand, the wedge of light and the page.
+
+### 11b(i) — round 4 · **still** · written 2026-08-28, unrun · *location reference restored*
+
+**Jack: "Please use the location image."** Round 3 dropped it because the reference was the cause
+of the fallen-over body. **The resolution is not to go without a reference — it is to use one
+that has no POV body in it at all.**
+
+🔑 **Use the accepted camp wide, not the tent frame.** It is elevated and there is no first-person
+body anywhere in it, so it can carry the place, the camp, the wet tarmac, the litter and the rain
+while teaching **nothing** about posture. That is the whole of
+[§24](../../google-flow/nano-banana-2.md) satisfied without giving anything up.
+
+**Two risks it brings, and the counters:**
+
+| Risk | Counter in the prompt |
+| --- | --- |
+| It is a **wide, elevated** frame and may pull the camera back up | **Name the reference's role and state the change as a change** ([§3](../../google-flow/nano-banana-2.md)'s keep/change buckets): keep the place, change the camera to down among it |
+| It is **brightly lit by a lightning flash** and may lift the whole frame out of torch-only darkness | State the light **positively and completely** — the torch is the only light, everything outside the wedge is solid black, there is no other source anywhere. Naming lightning to exclude it would only put it back in |
+
+**The two fixes from round 3 stay and matter more now, not less:** the bottom edge of the frame is
+**ground a metre ahead**, and there are **no boots** — geometry, not adjectives.
+
+**Attachments: the camp wide (location) + `@Future-Tarquin`.** Enhance Prompt **off**. **4K.**
+
+```prompt
+Generate a still photograph. Use the attached image as the reference for the place only: the same ruined supermarket car park at night, the same camp of shelters, the same wet cracked tarmac and standing water, the same scattered litter and broken glass, the same heavy rain, the same muted cool colour and grain.
+
+Two things are different from that image. The camera is now down among it rather than above it, and it is a first-person point-of-view shot: the camera is the eyes of the man from the character reference, and the picture shows only what he can see in front of him. And the torch in his hand is the only light in the whole picture — there is no other light source anywhere in the frame, and everything the torch does not reach is solid black.
+
+He is walking forward across the car park and looking down at the ground ahead. The camera is at the eye height of a walking adult on a 35mm lens, angled down toward the ground in front of him. The nearest thing in the picture is wet tarmac about a metre ahead of him, so the whole bottom edge of the frame is wet ground running away from the camera. The framing is slightly off level.
+
+Entering from the bottom right corner, very close to the lens and thrown completely out of focus: his own hand, held out in front of him at chest height, holding a small metal torch. Five separate fingers, each one distinct, are wrapped around the barrel, and the torch keeps its own shape clearly separate from the hand. His sleeve and wrist show at the edge of the frame.
+
+Cutting into the left edge of the frame, close and dark: the corner of a small tent, with a taut guy line running out of it down to a peg in the tarmac.
+
+Held at chest height, the torch strikes the ground at a shallow angle and its beam stretches away ahead of him as a long narrowing wedge of light across the wet tarmac. Every can, bag and shard of broken glass inside that wedge throws a long hard shadow back toward the camera.
+
+About two metres ahead, at the far end of the wedge: a newspaper, soaked and rain-flattened, blown up against the side of a broken wooden pallet so that it stands half upright and its front page faces him square on. The beam hits it flat and it is the brightest thing in the picture. Across the top of the page, inside the beam and sharply in focus, the headline reads "BRITAIN'S LAST WORKER REPLACED BY AI" in heavy black condensed capitals. Below the headline the page falls out of the beam into darkness and the wet paper has gone translucent and soft, so the columns underneath are unlit and blurred, and that headline is the only legible text anywhere in the picture.
+
+Far beyond the beam, small and out of focus, the orange glow of a fire burning in a drum somewhere out in the camp, lighting nothing.
+
+Heavy rain is falling, showing as bright streaks inside the wedge of torchlight and invisible outside it, pitting the puddles on the tarmac and running down the face of the page.
+
+A documentary press photograph on 35mm film: natural grain visible in the shadows, muted cool colour, no colour grading push, deep black shadows.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Choosing between candidates — the two reference risks first:**
+
+1. **Is the camera down among it**, first person, or has it drifted back up to the wide?
+2. **Is the torch the only light**, with real black outside the wedge — no leftover flash, no
+   ambient lift?
+3. **Is the bottom edge of the frame ground**, with nothing of him below the hand?
+4. **Headline exact and sharp**, everything below it unreadable rather than garbled?
+5. **The hand** — five separate fingers, torch a distinct object, soft.
+
+**If the frame comes back lifted or elevated, the reference is winning and the next move is to
+drop it** — [round 3](#11bi--round-3--still--written-2026-08-28-unrun) is the version without one,
+and §15 says this frame barely needs a set because almost all of it is black.
+
+**✅ ACCEPTED 2026-08-28, round 4** —
+[`camera/reference/11b-newspaper-torchlight-ACCEPTED.png`](./camera/reference/11b-newspaper-torchlight-ACCEPTED.png).
+The camp wide held the place without teaching a posture, the torch stayed the only light, the
+bottom edge is ground, and the headline is sharp with the body copy properly unreadable.
+
+> ### 💡 The clip's design, ruled by Jack: **move the light, not the camera**
+>
+> *"Just have it rain and him slightly move his flashlight, as if it is slight camera sway, but
+> slight flashlight sway."*
+>
+> **This is the right answer and it is worth keeping as a general move.** It buys the aliveness of
+> a handheld first-person shot while breaking none of our rules:
+> [R7](../../cinematography/motion-and-cutting.md) says handheld is a style not truth and
+> locked-off beats wobble; camera translation is what fires the regeneration/hinge bug; and
+> [`symptoms.md` §C](../../cinematography/symptoms.md) says a frame that never changes reads as a
+> photograph rather than a shot and needs *one* thing to move — *"light drift"* is the first
+> example it gives. **A drifting practical light is the locked-camera way to get all three.**
+>
+> **The text is the thing to protect.** Wet paper in wind is exactly what would flutter, and
+> flutter is where a headline morphs — so the paper is **pinned physically** (soaked and stuck to
+> the pallet), the headline gets **its own persistence instruction**, and **the beam never leaves
+> the page**, so the words are never partly lit. *(Clip prompt handed over 2026-08-28; not
+> recorded — the ledger is stills-only per the 2026-08-26 ruling.)*
+
+### 12a — the two of them by the fire · **still** · written 2026-08-28, unrun
+
+**Canon:** *"The two of them by the fire — in the car park, not the woods. Faces changed: almost a
+smile."* **This is the shot the whole film has been avoiding: two faces, both legible, both
+having to perform.**
+
+#### 🔴 Read first: two Characters in one frame is the known frontier
+
+> *"Two characters interacting in the same shot still produce identity blurring on every platform
+> as of mid-2026"* — features blend between them, faces swap, or one identity is lost entirely.
+> `[community 2026-08-28]`
+
+**Camping has never attempted it and has twice been redesigned to avoid it** — 2b needed Veo 3.1
+just to hold two faces through a laugh in a locked interior, and 8b only worked by going to a
+forty-metre long lens that took faces out of the argument. **Three things are in our favour here:**
+it is a *still* rather than a clip; both faces are at a workable size; and the two Characters are
+visually very unalike, which the same sources name as the thing that keeps identities separate.
+
+**The one new instruction that matters: anchor each Character to a screen position.** *"Character A
+on the left, Character B on the right"* is the documented fix, and it agrees with Google's own
+Ingredients guidance to **describe the role each reference plays** rather than let the model infer
+it. The prompt does this explicitly.
+
+🔴 **BLOCKER: `@Bob` is the wrong Bob.** [`shot-list.md`](./shot-list.md) records that the accepted
+**8c(i)** frame — the best face in the film so far — **does not match the `@Bob` Character**
+(longer hair, different coat), and that the Character is owed a rebuild from that frame. **Cast the
+old one here and this Bob will not be the Bob the audience met in scene 8.** Rebuild first, or
+accept a continuity break in the film's most important scene.
+
+**If identity still blurs after two rounds**, the field's reliable answer is to generate each man
+separately and composite — a real change of method, and a decision for a human.
+
+✅ **Ruled 2026-08-29 (Jack): cast the existing `@Bob` and accept the break.** The reasoning is
+sequencing, not indifference — **whether two Characters hold in one frame at all is the unknown
+that gates the whole ending**, and it is answerable today, where a Character rebuild is a detour
+that answers nothing. Run it with the Character we have.
+⚠️ **The debt inverts, and that is the point worth writing down.** If `12a` lands, `@Bob` is the
+Bob of `10d` and all of `11`–`12` — five shots — and `8c(i)` is the single frame that disagrees.
+**So the outstanding job becomes a re-shoot of `8c(i)`, not a rebuild of the Character.** Do not
+touch either until `12a` is accepted; both jobs are cheaper once the harder question is settled.
+
+#### The design — one fire, two faces, and the light is the argument
+
+**Gate 1.** The beat is that the class distance has closed. **So the frame must argue they are the
+same now, and the way to argue it is with light: one source, reaching both faces identically.**
+[`style.md`](./style.md) already says this fire is *"the one earned human warmth, the heat the
+whole story withheld, shared between the two men at the end."* **The shot is that sentence.**
+
+**Four changes from the reference, each fixing a named slop tell:**
+
+| Reference | Change | Why |
+| --- | --- | --- |
+| Both men **squarely flanking a centred barrel, facing the lens** | Off-centre, unmirrored, **both looking down into the flames** | Symmetry plus dead-centre plus eye contact with the lens is a *portrait*, not a scene. It is also the [`registers.md`](../../cinematography/registers.md) power grammar — and nobody warming their hands stares down a camera |
+| **Flat overcast daylight, fire lighting nobody** | **Night, the fire the only source, lighting both faces from below** | Continuity with all of 10–11, and it makes the light carry the argument instead of decorating it |
+| **Empty foreground** | **The flames break into the bottom of frame, out of focus** | Three depth planes, and it puts the camera *at* the fire rather than watching it |
+| **Lit green fascia** | Dead, letters comped | The 2026-08-28 ruling |
+
+🔑 **They do not look at each other.** That is the beat — canon's 12b is *"the apology happens the
+man way, nothing said straight."* Two men do not make eye contact for this. It also solves the
+lens-stare, gives both faces the same downward tilt into the same light, and **withholds the
+connection so the audience infers it** ([`stills.md`](../../cinematography/stills.md)).
+
+**Expression as anatomy, never as emotion** ([`image-prompting.md` §4a](../../flow/image-prompting.md),
+and the 7a lesson: *describing it as baffled gets a mood; describing the muscles gets the face*).
+*"Almost a smile"* is written as the mouth corners drawn back without parting, the outer eye
+corners creased, the brow level and loose.
+
+**The rain has stopped.** The storm running through 10a–11b eases to nothing here. The register
+change is carried by weather rather than stated, and it is motivated — storms pass. *(Keep the
+rain instead if that reads too neat; it is a one-clause change.)*
+
+⚠️ **Four hands over a fire is real risk** — held objects and fine articulation are the documented
+weak spot. They are written as **one simple shape**: flat, palms down, fingers together, lit from
+beneath so the tops stay in shadow. Check them first.
+
+**Attachments, earliest slots first: `@Bob`, `@Future-Tarquin`, then the reference image.** No
+appearance description for either man ([§19](../../google-flow/nano-banana-2.md)) — only position,
+action and face muscles. Enhance Prompt **off**. **4K** — the faces are the shot.
+
+```prompt
+Generate a still photograph. Use the attached image as the reference for the place only: the same supermarket car park filled with a camp of shelters, the same wet cracked tarmac and standing water, the same scattered litter and broken glass, the same burning oil drum, the same muted cool colour and grain.
+
+Two things are different from that image. It is now night, and the fire in the drum is the only light in the whole picture — there is no daylight, no lamp, no lit window, and the shop behind is dark with its sign unlit and giving off no light at all. And the camera is now down at the fire with the two men rather than standing back from them.
+
+Camera: a 50mm lens at chest height, just above the rim of the burning drum and about two metres from it, so the flames rise into the bottom of the frame very close to the lens and completely out of focus. The framing is slightly off level and the drum sits left of centre rather than squared to the frame.
+
+Standing beyond the drum on the left of the frame, framed from the waist up and turned about thirty degrees toward it: the man from the first character reference. Standing on the right of the frame, a little further back from the drum and turned more square on: the man from the second character reference. They are not the same distance from the fire and they are not mirrored.
+
+Both men have their hands held out over the flames, flat with the palms down and the fingers together, and both are looking down into the fire rather than at each other and never toward the camera. On each face the corners of the mouth are drawn very slightly back without the lips parting, the outer corners of the eyes are creased, and the brow is level and loose.
+
+Light: the fire in the drum is the only source in the picture. It sits below both faces, so both are lit from underneath by the same warm moving light — the undersides of their jaws, brows and hands catching it, the tops of their heads and shoulders falling into shadow, and both men lit identically by it. Beyond the reach of the fire the camp and the shop front fall away to solid black.
+
+The rain has stopped. The tarmac and the litter are still soaked and holding water, but nothing is falling through the frame and the air is still.
+
+A documentary press photograph on 35mm film: natural grain visible in the shadows, muted cool colour, no colour grading push, and skin rendered with its real texture and unevenness rather than smoothed.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Choosing between candidates — identity first:**
+
+1. 🔴 **Are they two distinct men**, and is each one the right man? Blending, swapping or one
+   identity collapsing is the frame's specific failure. Check against the 8c(i) Bob and the 4b/7a
+   Tarquin.
+2. **The hands.** Four of them over a fire. Simple flat shapes, correct count, not fused.
+3. **Is neither man looking at the camera**, and are they unmirrored and off-centre?
+4. **Is the fire the only light**, coming from below, and does it reach both faces the same?
+5. **Is the expression a muscle, not a mood?** Cover the mouths: the eyes alone should not read as
+   sad. Then cover the eyes: the mouths alone should not read as a grin.
+
+⚠️ [Trigger 3](../../flow/failure-modes.md) exposure. If it blocks: 1) `burning oil drum` →
+*a fire burning in a metal bin*; 2) cut `and broken glass`.
+
+#### ⚠️ Revised 2026-08-28 (Jack): rainy night, lit by the drum **and** lightning
+
+**"Make it match the weather and time of day from before — rainy night time, illuminated by the
+fire barrel and lightning."** The *"the rain has stopped"* idea is dropped; the storm runs through
+12a as it does through the rest of scene 10–11.
+
+**This does not break the *spend the flourish once* ruling, and the distinction is worth stating:**
+what was spent in 10b was **the flash as a reveal** — a strike that *showed him something*. What
+runs through the sequence is **the flash as weather**, which is just the environment and can
+recur as often as a storm does. **The rule holds as long as the 12a flash reveals nothing and
+lands on no beat.**
+
+🔴 **But it cannot be allowed to light the two men, because the fire lighting them identically
+*is* the shot's argument.** A flash washing over both faces would replace the one thing this frame
+exists to say. **So the lightning goes far behind them** — in the cloud beyond the buildings,
+lighting the sky and the far skyline and nothing nearer.
+
+✅ **And that placement is thematically right for free: the storm is moving away.** The worst of
+it is now behind them and receding, which the grace beat wants and which nobody has to say.
+
+**Everything else in the shot is unchanged.** Only the weather block is rewritten.
+
+```prompt
+Generate a still photograph. Use the attached image as the reference for the place only: the same supermarket car park filled with a camp of shelters, the same wet cracked tarmac and standing water, the same scattered litter and broken glass, the same burning oil drum, the same muted cool colour and grain.
+
+Two things are different from that image. It is now a wet night in a storm, and the camera is down at the fire with the two men rather than standing back from them.
+
+Camera: a 50mm lens at chest height, just above the rim of the burning drum and about two metres from it, so the flames rise into the bottom of the frame very close to the lens and completely out of focus. The framing is slightly off level and the drum sits left of centre rather than squared to the frame.
+
+Standing beyond the drum on the left of the frame, framed from the waist up and turned about thirty degrees toward it: the man from the first character reference. Standing on the right of the frame, a little further back from the drum and turned more square on: the man from the second character reference. They are not the same distance from the fire and they are not mirrored.
+
+Both men have their hands held out over the flames, flat with the palms down and the fingers together, and both are looking down into the fire rather than at each other and never toward the camera. On each face the corners of the mouth are drawn very slightly back without the lips parting, the outer corners of the eyes are creased, and the brow is level and loose.
+
+Light: the fire in the drum is the only light that reaches the two men, and it sits below both faces, so both are lit from underneath by the same warm moving light — the undersides of their jaws, brows and hands catching it, the tops of their heads and shoulders falling into shadow, and both men lit identically by it. Nothing else in the picture lights them. The shop behind is dark, its sign unlit and giving off no light at all, and there is no working lamp anywhere in the car park.
+
+Far behind them, low down and a long way off beyond the buildings, a sheet of lightning is flickering inside the cloud. It lights the sky a cold blue and picks out the roofline of the shop and the far edge of the camp as flat black silhouettes against it, and it reaches nothing nearer than that — the two men, the drum and the ground around them stay lit only by the fire. Beyond the fire's reach the camp falls away to solid black against that cold sky.
+
+Heavy rain is falling through the whole frame, running off the rim of the drum and off their shoulders, and showing brightest where it crosses the firelight and invisible in the dark beyond it.
+
+A documentary press photograph on 35mm film: natural grain visible in the shadows, muted cool colour, no colour grading push, and skin rendered with its real texture and unevenness rather than smoothed.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Two extra checks on top of the list above:**
+
+6. **Did the lightning stay in the background?** If it is lighting their faces or the ground around
+   the drum, reject — the fire lighting both men identically is the shot's whole argument, and a
+   flash over the top of it deletes that.
+7. **Is the sky the only thing it lit**, with the shop roofline and the far camp reading as flat
+   black silhouettes against it?
+
+---
+
+### 12b — ~~cans clinked~~ · **struck 2026-08-29 (Jack)**
+
+**"Basically the same as the last one, they are just talking."** Correct, and it fails
+[gate 1](../../cinematography/principles.md): the same two men, the same drum, the same light,
+the same distance — a second setup that does nothing the first did not. **A shot whose only new
+information is dialogue is not a shot in a film with no dialogue in the pictures.**
+
+⚠️ **Struck as a SETUP, not as a beat.** Canon's *"the apology happens the man way — nothing said
+straight"* still has to land. **It lands inside `12a`'s clip and in the narration**, which is where
+it always belonged: two men looking into a fire, not at each other, is already the whole gesture.
+If a clink is wanted it is a **sound cue over `12a`**, not a picture. *(No credits spent, nothing
+lost.)*
+
+### 12c — the newspaper goes on the fire · **still** · written 2026-08-29, unrun
+
+**Canon:** *"The newspaper goes on the fire. It's cold. It burns."* Plus the transcript ruling —
+Kai worried they would not burn the last newspaper on Earth, and Jack settled it: *"They don't
+care what that is. They're in survival mode."*
+
+#### The job — and it is the film's actual punchline
+
+**Gate 1.** `12a` showed us two men who have stopped being different. `12c` does something none of
+the film has done yet: **it destroys the object the whole story has been about, for warmth, without
+ceremony.** The headline we spent `11b` making legible — the last worker replaced, the last
+newspaper ever printed — is fuel. **The thesis is burned for heat, and nobody in the frame thinks
+it is a moment.** That is the sharpest thing in the film and it needs no narration at all.
+
+**So the shot must be an insert, not a two-shot.** No faces, one hand. `12a` spent the faces; a
+third wide of the same two men would flatten the ending.
+
+#### 🔑 The design — backlit newsprint, and the text survives because the flame has not taken it yet
+
+**The optical fact the shot is built on:** a sheet of newsprint held over a flame **goes
+translucent and glows**, and the columns of type read through it as dark lines. It is real, it is
+free, and it makes the paper the brightest object in a near-black frame without a single added
+light. `frame.md` §5's *one bright anchor* is the paper itself.
+
+🔴 **Protect the headline the way `11b` did.** Load-bearing text is our known failure
+([`image-prompting.md` §5](../../flow/image-prompting.md)) and `11b(i)` only won because the page
+was **flat, pinned and fully inside the light**. **A curling, burning page is exactly where a
+headline morphs.** So the still is the moment *before* the flame takes it: **the page lands flat
+across the fire, headline square to camera and fully readable, with only one corner browned and
+just catching.** The burn-through is the clip's job, over frames where the words are already
+established.
+
+**One piece of text only.** The masthead date is `11c`'s job. Two strings in one frame is how we
+lose both.
+
+| Layer | What |
+| --- | --- |
+| **Foreground** | Flame breaking into the bottom of frame, very close, thrown out of focus — and the hand entering from the right, releasing |
+| **Midground** | The newspaper, flat across the fire, glowing from beneath. **The focal point** |
+| **Background** | The far rim of the drum, then solid black |
+
+**Withheld: both faces, and whose hand it is.** A sleeve and a wrist. The audience knows both men
+are there because `12a` just showed them.
+
+#### 🔒 Camera: locked, and angled DOWN — because `12d` is the film's last camera move
+
+**This is a structural constraint, not a preference.** [`style.md`](./style.md) has the ending as
+*"the newspaper burns, the camera pans up, the rising embers become the bad code."* The motion
+budget says a single move in a still body of work lands with outsized force **and only if the
+stillness around it is real** — so **the tilt-up is spent once, in `12d`, and `12c` is locked.**
+
+`12c` looks **down** into the fire so the page can be seen flat. `12d` is a **separate setup** at
+the drum rim looking up. They join on a match to the flame, not a continuous move. **Do not put a
+drift or a push in `12c`** — it would spend the ending's move a shot early.
+
+#### Sequencing note
+
+**Ideally run after `12a` is accepted**, so this can attach the accepted `12a` frame and inherit
+its exact drum and firelight. Written now because it stands on its own — the frame is almost
+entirely flame and black, and the only set piece is the drum rim.
+
+**Attachments: the accepted camp wide (location) only.** No Character — there is no face and no
+body, only a sleeve, so casting one would offer identity and get nothing back.
+Enhance Prompt **off**. **4K** — the headline is the shot.
+
+```prompt
+Generate a still photograph. Use the attached image as the reference for the place and the fire only: the same ruined supermarket car park at night, the same rusted metal drum with a fire burning in it, the same heavy rain, the same muted cool colour and grain.
+
+Two things are different from that image. The camera is now right at the drum instead of standing back from it, and the fire in the drum is the only light in the whole picture — there is no daylight, no lamp, no lit sign, and everything the firelight does not reach is solid black.
+
+Camera: a 50mm lens held just above the rim of the drum and about half a metre from it, angled down into the fire, so the picture is almost entirely flame, paper and darkness. The framing is slightly off level and the drum is not squared to the frame.
+
+Lying flat across the top of the fire, filling the middle of the picture and square on to the camera: a single open sheet of newspaper. The flames are underneath it and behind it, so the paper is lit from below and has gone translucent and is glowing a hot orange, and the columns of type on it show through the glow as dark lines. Across the top of the sheet, sharply in focus and unobstructed, the headline reads "BRITAIN'S LAST WORKER REPLACED BY AI" in heavy black condensed capitals. That headline is the only legible text anywhere in the picture, and every other line of type on the page is too small and too soft to read.
+
+Only the far right corner of the sheet has caught: it has gone brown and is curling upward, with a thin line of flame creeping along that one edge. The rest of the page is still flat and intact.
+
+Entering from the right edge of the frame, close to the lens and thrown out of focus: a man's hand and forearm, palm down and fingers open, just having let the paper go. His sleeve is soaked. Nothing else of him is in the picture.
+
+Rising into the bottom of the frame, very close to the lens and completely out of focus: the flames themselves, a soft orange blur across the bottom edge.
+
+Beyond the paper, the far rim of the drum catches a hard orange edge of light, and past it the picture falls away to solid black. No part of the camp behind is visible.
+
+Heavy rain is falling, showing as bright streaks where it crosses the firelight, hissing off the drum rim, and invisible in the black beyond.
+
+A documentary press photograph on 35mm film: natural grain visible in the shadows, deep black shadows, no colour grading push.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Choosing between candidates — the text first:**
+
+1. 🔴 **Is the headline exact, sharp and complete?** This is the one string in the frame and the
+   whole beat is that we can read what is being destroyed. Garbled or partial is a reject.
+2. **Is the rest of the page properly unreadable** — soft and small — rather than garbled text
+   competing with the headline?
+3. **Is the paper glowing from underneath**, translucent with the type showing through, rather
+   than just a white sheet sitting on a fire?
+4. **Has only one corner caught?** If the whole page is alight the still has arrived too late and
+   the words go with it.
+5. **The hand** — one hand, five fingers, soft, and no face or body anywhere in frame.
+6. **Real black** beyond the drum, with no camp, no sign and no ambient lift.
+
+⚠️ [Trigger 3](../../flow/failure-modes.md) exposure, same as `12a`. If it blocks:
+1) `rusted metal drum with a fire burning in it` → *a metal bin with a fire in it*;
+2) drop the word `ruined`.
+
+**If the headline morphs after two rounds**, the fix is not another round — it is
+[`image-prompting.md` §5](../../flow/image-prompting.md)'s standing answer and the one we already
+took for the fascia: **generate the page blank or unreadable and comp the headline in post.** It
+is the same job as the `W-AI-trose` letters, on the same timeline, in the same pass.
+
+#### ✅ ACCEPTED 2026-08-29, round 2 — master at [`camera/reference/scene-12c-newspaper-burns-ACCEPTED.png`](./camera/reference/scene-12c-newspaper-burns-ACCEPTED.png)
+
+**Round 1** ([banked](./camera/reference/scene-12c-round1.png)) got the hard part first time — the
+headline exact and sharp, the body copy properly unreadable, real black past the drum, one corner
+caught. **It was rejected on one thing: the hand.** It came back pale, smooth, unweathered and
+**in sharp focus**, splayed palm-down like it was *presenting* the paper. On a man who has lived
+in a car park camp for five years it quietly contradicted all of 10–12, and it was the second
+thing the eye landed on.
+
+🔑 **The fix was the 7a move again: describe the hand as anatomy and condition, not as position.**
+Thick-knuckled, weathered and cracked, dirt engrained in the creases, short broken nails, a frayed
+soaked cuff — and the gesture changed from held-flat-open to **loosely curled and falling open**,
+releasing. Round 2 landed it in one.
+**Recorded as a general rule: [§19](../../google-flow/nano-banana-2.md)'s no-appearance-description
+rule applies to *cast characters*. An unbound body part is the opposite case — it gets nothing
+unless you describe it, and it will default to young, clean and generic.**
+
+⚠️ **The picture beat the prompt, and we kept the picture** *(the 7a shoulder-colour pattern
+again)*. The design's central optical idea was **backlit translucent newsprint glowing from
+beneath, with the type reading through it**. The engine did not do it — it front-lit an opaque
+sheet — and **that is better, because a glowing translucent page would have made the headline
+harder to read, and the headline is the entire shot.** The clause was dropped from round 2 rather
+than fought for.
+
+🟡 **Accepted with one known softness:** round 1's drum was squared and centred, reading slightly
+diagrammatic. Round 2's *"off to one side"* clause improved it. Not chased further — the black and
+the flame carry it.
+
+**⚠️ Open call, one line, does not block the run:** *whose hand is it?* The prompt says only "a
+man's hand", which is deliberate and probably right. **If we name one, it should be Bob's** — he
+is the one in survival mode and has been for five years, so him feeding it in without ceremony
+*is* Jack's *"they don't care what that is"*. **Tarquin's hand would read as guilt or as erasing
+evidence**, which is a different and much more literal beat than the one canon wants.
+
+### 12d — the tilt up, embers into bad code · **still (plate)** · written 2026-08-29, unrun
+
+**Canon:** *"Camera pans up with the smoke — the rising embers resolve into the bad code. Hold.
+End."* From the transcript, Kai: *"the camera just pans up into the sky and maybe the smoke could
+be the bad code. That's sick."*
+
+#### The job — the film's exit, and the narrator finally showing itself
+
+**Gate 1.** `12c` destroyed the object. `12d` leaves the world. **It is the only shot in the film
+that steps outside the story, and what it says is who has been talking for ninety seconds:** the
+narrator is a superintelligence from the future, and this frame makes it out of the sparks coming
+off a fire two men lit to stay warm. **The thing that ends us is assembled from what we burned.**
+Nobody says that; the picture does it.
+
+**Gate 2 is satisfied inside the move itself.** The tilt **starts on the cost** — the drum, the
+wreckage, the two men as black silhouettes — **and ends on abstraction.** That ordering is the
+whole reason it is a move and not a cut: we are carried from the men to the machine, and we can
+feel ourselves leaving them.
+
+**Gate 3.** Two named sources, and they are the film's palette in one gesture: **the fire from
+below, warm, the only earned heat in the story** ([`style.md`](./style.md)), and **the storm sky
+above, cold blue, the lightning that has been receding since `12a`.** The tilt travels warm to
+cool. That is the argument.
+
+#### 🔒 This is the only camera move in the film. Spend it here.
+
+[`motion-and-cutting.md` §1](../../cinematography/motion-and-cutting.md): *a single moving shot in
+a still body of work lands with outsized force — and only if the stillness around it is real.*
+Every shot in `10`–`12` has been locked, and `12c` was locked on purpose so this one could move.
+**Do not put a drift, a push or a sway anywhere in scene 12 except here.**
+
+#### 🔴 Three layers, and only the first is Flow's
+
+Same ruling as the `10b` lightning, for the same reason, and the register anchor already set the
+precedent — [`docs/images/register-anchor.md`](../../images/register-anchor.md) records that the
+species' commit log in the original GPOM panel was **a code overlay drawn descending a line of
+light**, not a generation.
+
+| Layer | Tool | What |
+| --- | --- | --- |
+| 1. The plate | **Flow** | A **9:16 vertical** clip, camera **locked**: fire and silhouettes at the bottom, smoke and embers rising through the middle, storm sky at the top |
+| 2. The move | **Premiere** | The tilt — a position keyframe travelling up the tall plate, eased, reframed to 16:9, ending held on sky |
+| 3. The code | **ffmpeg** | The embers resolving into glyphs |
+
+**Why the plate is vertical and the move is post.** [`hybrid-method.md`](../../video-fx/hybrid-method.md)
+is explicit — Veo animates the world with its camera locked and **post moves the camera**, and
+camera translation is what fires the regeneration bug. Generating tall gives us the travel, and
+Premiere gives us an exactly eased tilt that ends **exactly** on the last narration word, which a
+generator cannot be asked to time.
+
+**Why the code is ffmpeg.** Premiere's API cannot set a string at all
+([CLAUDE.md](../../../CLAUDE.md)), Flow cannot render legible characters through a change of light
+— proven twice on the fascia ([§21](../../google-flow/nano-banana-2.md)) and once on the flash —
+and **the bad code is brand, so it must be identical everywhere it appears rather than re-rolled
+per shot.**
+
+🔑 **The code ASCENDS here, where the anchor's descended.** Same device, mirrored, at the opposite
+end of the story. Worth doing deliberately.
+
+**Recommended treatment, and it is a call worth arguing with:** sparse thin monospace glyphs, cool
+pale — the register's *"one thin blade of cool light"* colour, not green, never Matrix — drifting
+up along the ember paths and mostly **illegible**. 🔴 **And no wordmark.** *The film ending on a
+logo turns the story into an advert*, and the closing narration has to be the last thing the
+audience takes. **The mark belongs on an end card after the hold, not fused into the final image.**
+
+#### The plate
+
+**Attachments, roles named explicitly:** the accepted `12c` frame **for the drum and the fire**,
+and the accepted camp wide **for the sky, the rain and the camp**. No Character — both men are
+black silhouettes and there is no face anywhere, so casting one offers identity and gets nothing
+back.
+Enhance Prompt **off**. **4K.** 🔴 **Vertical 9:16** — this is the one shot in the film that is not
+generated 16:9, and it is deliberate.
+
+```prompt
+Generate a still photograph in a tall vertical 9:16 format. Use the first attached image as the reference for the burning drum and its fire, and the second attached image as the reference for the place, the rain and the stormy night sky.
+
+The camera is low and a little behind two men who are standing at the fire, looking past them and steeply upward, so the picture is mostly sky.
+
+Across the very bottom of the tall frame: the top of the rusted drum with the fire burning in it, and on either side of it the heads and shoulders of two men, rendered as solid black silhouettes with no faces and no detail, rimmed along one edge by the firelight. They occupy only the bottom fifth of the picture.
+
+Rising from the fire and filling the whole middle of the tall frame: a column of smoke, thin and torn, drifting upward and spreading as it climbs. Carried up inside it, hundreds of small orange embers, brightest and densest just above the flames and thinning out as they rise, until near the top of the frame there are only a few isolated sparks still glowing.
+
+Filling the top half of the tall frame: a heavy stormy night sky, low cloud lit a cold blue from within by distant sheet lightning far away on the horizon. The cloud has real structure and depth rather than being flat.
+
+Light: the fire is the only warm light and it is at the very bottom, lighting the smoke from beneath so the lowest part of the column glows orange and the upper part goes cold and grey. The sky's cold blue is the only other light. Between them, the middle of the frame is dark. The picture travels from warm at the bottom to cold at the top.
+
+Heavy rain is falling through the whole frame, showing bright where it crosses the firelight at the bottom and as fine cold streaks against the cloud higher up.
+
+There is no text anywhere in the picture, no sign, no lettering, and no lit window or lamp of any kind.
+
+A documentary press photograph on 35mm film: natural grain visible in the shadows, muted cool colour, deep black shadows, no colour grading push.
+
+Compose for a tall vertical 9:16 frame.
+
+Thanks.
+```
+
+**Choosing between candidates:**
+
+1. 🔴 **Is it genuinely tall and is there enough travel?** The whole point is a plate Premiere can
+   tilt up through. If the composition is squashed into the middle there is nothing to move across.
+2. **Are the men only silhouettes**, faceless, confined to the bottom fifth? Any face detail and
+   we have accidentally shot another two-shot.
+3. **Does the frame travel warm to cold** from bottom to top, with a genuinely dark middle?
+4. **Do the embers thin out as they rise**, so there is somewhere for the code to take over?
+5. **No text anywhere** — the fascia must not creep back in.
+6. **Real black**, and cloud with structure rather than a flat grey wash.
+
+⚠️ [Trigger 3](../../flow/failure-modes.md): if it blocks, `rusted drum with the fire burning in
+it` → *a metal bin with a fire in it*.
+
+#### ✅ ACCEPTED 2026-08-29, first take — master at [`camera/reference/scene-12d-embers-plate-ACCEPTED.png`](./camera/reference/scene-12d-embers-plate-ACCEPTED.png)
+
+*"This one is really cool."* Landed in one. Genuinely tall with real travel, warm at the bottom
+and cold at the top with a dark middle, embers thinning as they rise, cloud with structure, no
+text anywhere.
+
+🔑 **The picture improved on the prompt, and we kept it.** The brief confined the two men to *"the
+bottom fifth"*; the frame runs them up roughly the lower **forty percent**, flanking the smoke
+column on both sides. **That is better, and it is a compositional idea the prompt did not have:
+the two silhouettes become a doorway the smoke rises through** — a frame-within-a-frame
+([`frame.md` §4](../../cinematography/frame.md)), which does the containment for free and makes
+the escape upward feel like an escape. It also means **the Premiere tilt passes between them**,
+which is a much better exit than rising off the top of two small heads. *(Third time this session
+the frame beat the brief — see the `12c` backlight note and 7a's shoulder.)*
+
+⚠️ **Consequence for the tilt:** the men are taller in frame than planned, so the usable travel
+starts higher up. **Set the tilt's start frame on the drum and the flame, not on the silhouettes'
+shoulders**, or the move begins on black.
+
+### 12d — the clip · **video** · handed over 2026-08-29
+
+🔴 **Generated 9:16, camera locked.** The tilt is Premiere's, over this tall plate. A generated
+camera move here would cost us the exact timing on the final narration word *and* put us on the
+translation bug. *(Prompt not recorded in full — the ledger is stills-only per the 2026-08-26
+ruling.)*

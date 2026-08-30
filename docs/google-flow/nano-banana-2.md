@@ -753,6 +753,124 @@ own phrasing for a practical that is allowed because it has a job.
 **The general rule:** a lighting instruction is a physics claim. If the physics does not close,
 the engine closes it for you.
 
+### 24. 🔴 On a POV shot the reference's **body position** is inherited, whether or not you asked `[observed 2026-08-28]`
+
+Camping **11b(i)**, round 2. The prompt asked for a **standing, walking** first-person POV and
+attached the accepted 10a frame *"for the place, the weather and the light"*. 10a is a POV from
+**inside a tent, lying down** — its defining composition is a man's legs and sleeping bag
+stretching away toward a doorway. **The frame came back with his legs stretched out in front of
+him as though he had fallen over.**
+
+**Nothing disobeyed.** [§9](#9--a-strong-reference-hedges-its-own-change-list-observed) says a
+strong reference is the baseline every change is measured against and wins the ties; the engine
+was handed two authorities on where the body goes and took the picture.
+
+**Rule: a POV reference is never "just the location."** It carries camera height, view direction
+and **posture**, and posture is the one nobody writes down. Before attaching a reference to a POV
+shot, ask what body it is teaching.
+
+**The fix that works is geometric, not adjectival.** *"He is standing"* is a statement about
+someone the camera cannot see. *"The nearest thing in the picture is wet tarmac about a metre
+ahead of him, so the whole bottom edge of the frame is wet ground"* is a fact the engine can
+check — **and if the nearest ground is a metre away there is nowhere to put a pair of legs.** Same
+shape as the camera-height lesson: ignored as a number, obeyed as a consequence.
+
+**And delete the anchor that the wrong body grew from.** Round 2 kept a boot at the bottom edge to
+lock the POV; that boot is what the legs attached to.
+[§18](#18--their-face-is-not-visible-does-not-hide-a-face-only-geometry-does-confirmed-2026-08-27)'s
+escalation generalises — *a body part that is not in the picture cannot grow.* Hands alone lock
+first person; the boots were never needed.
+
+### 22. ⚠️ Tiling and cloning in crowd scenes are a *resolution* problem, not only a prompt problem `[community 2026-08-28]`
+
+Researched for camping's ruined-car-park wide — a frame containing a hundred shelters and a
+hundred figures, which is the exact input that produces this.
+
+**The named failure:** *"tiling artifacts appear as repeating patterns — a face pattern repeating
+across a crowd, wallpaper-like repetition in textures, or structural elements that clone across
+the image."*
+
+**The primary cause is resolution mismatch** — generating well above the model's native resolution
+*"forces the model to tile its learned patterns"*. The secondary cause is an ambiguous count in
+the prompt.
+
+🔑 **This cuts against our standing "always 2K or 4K" habit, and the trade has to be made
+per-shot.** [`image-prompting.md` §5](../flow/image-prompting.md) says go high whenever a word
+must survive; this says going high is what makes a crowd repeat. **On a frame that is both — a
+crowd *and* a legible sign — the sign occupies a small region and the crowd occupies most of the
+frame, so 2K is the safer default and the sign is the thing to check first.**
+
+**The prompt-side counter, restated positively** (the community advice is a negative prompt, which
+[does not work here](#negatives-revisited) and puts the thing you are refusing into the prompt):
+**name the variety and name the counts.** *"No two shelters alike — different sizes, colours, ages
+and states of collapse"* does the work that `duplicate, clone, tiling` cannot.
+
+### 23. ✅ Fresh web advice usually arrives as negatives. Convert it before use `[2026-08-28]`
+
+Three separate sources this session gave their best guidance as negative prompts — *"no warped
+buildings, no melting objects, consistent architecture"*, *"duplicate, multiple, clone, tiling"*,
+*"no fantasy style"*. **On these engines that is the one construction guaranteed to backfire.**
+
+**The habit: read the negative for the failure it names, then write the positive consequence.**
+*"No warped buildings"* → *"the buildings are square and true, their rooflines straight and
+unbroken."* This is the same move as writing camera height as what it does rather than as a
+number, and it should be applied to every piece of borrowed advice before it reaches a prompt.
+
+### 21. 🔴 A multi-part change to one object loses outright to a reference showing it intact `[observed 2026-08-28]`
+
+Camping **10a**, round 1. The reference showed a clean lit supermarket fascia. The prompt asked
+for it broken in **five parts at once** — cracked tubes, one letter hanging from a bracket, one
+fallen away, a paler scar on the panel behind it, and two named letters still lit. **Every part
+was ignored and the reference's sign came back untouched and brighter.**
+
+**This is [§9](#9--a-strong-reference-hedges-its-own-change-list-observed) past its limit.** §9
+says a strong reference *meets a change halfway*; that holds for a change with one axis
+(*"it is now night"* → blue hour). **A change with five sub-clauses on one object does not get met
+halfway — it gets dropped**, because there is no halfway state for the engine to find. The other
+four changes in the same prompt, each a single fact, all landed.
+
+**Rule: one object, one new state.** *"The sign is dead — unlit, grimed, no colour"* is a state
+the engine can hold. A per-letter reconstruction is a compositing job described in prose.
+
+**And the second-order rule, which is the expensive one:** if the detail genuinely matters,
+**it has left the generator's lane.** Camping moved the W-AI-trose gag to a post comp on the
+second failure rather than a third prompt — load-bearing text was already
+[`image-prompting.md` §5](../flow/image-prompting.md)'s call, and this is the same boundary seen
+from the failure side.
+
+### 25. 🔴 §19 inverts for an UNBOUND body part — describe it or get young, clean and generic `[observed 2026-08-29]`
+
+**§19 says a cast Character or an attached reference means no appearance description at all.
+The opposite case is a body part with nothing bound to it, and it obeys the opposite rule.**
+
+Camping `12c` is an insert: a hand entering frame to drop a newspaper on a fire, no face, no
+body, **no Character cast** — there was no identity for one to hold. The prompt described the
+hand by **position and action only** — *"a man's hand and forearm, palm down and fingers open,
+just having let the paper go. His sleeve is soaked."*
+
+**What came back was a hand in its twenties** — pale, smooth, unblemished, short clean nails —
+**in sharp focus despite an explicit `thrown out of focus`**, splayed flat in a presenting
+gesture. On a character who has lived outdoors in a camp for five years it contradicted the
+entire act.
+
+**The fix was the §-4a move applied to a hand: describe it as anatomy and condition, not as
+position.** Thick-knuckled, weathered and reddened, cracked across the knuckles, dirt engrained
+in every crease and under short broken nails, scarred and hairy, a frayed soaked cuff — plus the
+gesture rewritten from *held flat and open* to **loosely curled and falling open**. **Round 2
+landed it first time.**
+
+| Case | Rule |
+| --- | --- |
+| Character cast, or reference attached | **§19** — no appearance description at all. Action and expression only |
+| **Body part with nothing bound to it** | **This section** — describe it fully as anatomy and condition, or the default arrives |
+
+🔑 **The default is not neutral, it is young, clean, symmetrical and middle-class.** Anywhere our
+work needs a body that has had a hard life, silence gets us the opposite of the story. Treat an
+unbound hand, forearm, neck or boot as **a prop that must be dressed**.
+
+⚠️ **`out of focus` on a foreground element is weakly obeyed and needs reinforcing** — round 1
+ignored it outright. Round 2's *"thrown completely out of focus so that it is a soft blur"* held.
+
 ### 19. 🔴 §2's "do not restate the reference" applies to PEOPLE, not just sets `[confirmed 2026-08-27]`
 
 Camping **8c(i)**. `@Bob` was cast **and** his canon appearance was pasted in as prose — beanie,
