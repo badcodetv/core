@@ -2335,6 +2335,89 @@ Thanks.
 7. **Is the sky the only thing it lit**, with the shop roofline and the far camp reading as flat
    black silhouettes against it?
 
+#### 🔴 Amended 2026-08-30: the reference is now the accepted `12c` frame, not the camp wide
+
+**Why this changed on its own, with nobody deciding anything.** `12a` was written on 2026-08-28,
+when the only night fire in the film was the small one in the scene-10 camp wide. Since then
+**`12c` and `12d` have both been shot and accepted — and they are the same drum, the same fire and
+the same rain, seconds later in story time.** They now come *after* `12a` in the cut and *before*
+it in production, which means the continuity flows backwards: **`12a` has to match them, not the
+plate it was written against.**
+
+**The one change: swap the location reference.** Everything else in the shot — the design, the
+lighting argument, the two-Character staging, the weather revision — is unchanged.
+
+| Was | Now |
+| --- | --- |
+| `@Bob`, `@Future-Tarquin`, **the accepted camp wide** *(place)* | `@Bob`, `@Future-Tarquin`, **the accepted `12c` frame** *(the drum, the fire, the rain, the grain)* |
+
+**Why not attach both.** Four slots at the identity frontier is the wrong thing to spend. Two
+Characters in one frame is already the unknown this shot exists to answer, and every extra
+reference is documented dilution. **The camp wide was only ever buying the ground and the
+silhouettes — and this frame is near-black beyond the fire's reach anyway, so prose covers it.**
+The drum is the thing that must match, and only `12c` has it.
+*(Fallback: if the tarmac, the standing water and the litter come back wrong, add the camp wide as
+a fourth attachment in round 2 — one change at a time.)*
+
+#### 📐 What the accepted frames now fix, checked against the images
+
+- 🔴 **The drum is RUSTED.** `12c` and the camp wide agree — bare rust-orange steel, wide mouth.
+  ⚠️ **`12d`'s drum came back pale galvanised grey, and it is the odd one out.** Not worth a
+  re-shoot: in `12d` it is a small firelit shape at the very bottom of a tall plate and the tilt
+  leaves it in the first second. **But `12a` must be rusted**, because `12a` is the shot that shows
+  the drum in context and `12c` is a hard cut away from it.
+- 🔑 **Tarquin's wardrobe is now established by two accepted frames** — `11b(i)` and `12c` both show
+  a **dark olive canvas jacket with a frayed cuff**, on a weathered hand. Both came from
+  `@Future-Tarquin` with no wardrobe description, so **the Character carries it and it stays
+  undescribed** ([§19](../../google-flow/nano-banana-2.md)). It becomes a **candidate check**, not
+  a prompt clause.
+- ✅ **`12c` and `12d` both go to solid black beyond the fire**, where `12a` keeps the shop
+  roofline and the far camp against the lightning. **That is the right direction, not a mismatch:**
+  `12a` establishes the place, then the sequence tightens to an insert and then to abstraction.
+  `12a` is the only shot in scene 12 that can place these two men, so it keeps its background.
+
+#### The gates, re-run — `12a` holds as designed
+
+1. **Job.** `11d` was Bob's line. `12a` is the first frame in ninety seconds with two legible
+   faces in it, and the class distance closing is argued by one fire reaching both of them
+   identically. Nothing before it does that.
+2. **Visible cost.** Two men warming their hands on a burning bin, in the rain, in a car park
+   they live in. Satisfied in frame.
+3. **Light source.** Named, in the world, and it is the shot's whole argument.
+
+```prompt
+Generate a still photograph. Use the attached image as the reference for the burning drum and for the look of the picture: the same rusted metal drum with a fire burning in it, the same size and colour of flame, the same heavy rain showing bright where it crosses the firelight, the same muted colour, deep black shadows and 35mm film grain.
+
+That image is a close insert of the drum on its own. This picture is pulled back from it, and there are two men standing at the fire on a wet night in a supermarket car park that has been filled with a camp of makeshift shelters.
+
+Camera: a 50mm lens at chest height, just above the rim of the burning drum and about two metres from it, so the flames rise into the bottom of the frame very close to the lens and completely out of focus. The framing is slightly off level and the drum sits left of centre rather than squared to the frame.
+
+Standing beyond the drum on the left of the frame, framed from the waist up and turned about thirty degrees toward it: the man from the first character reference. Standing on the right of the frame, a little further back from the drum and turned more square on: the man from the second character reference. They are not the same distance from the fire and they are not mirrored.
+
+Both men have their hands held out over the flames, flat with the palms down and the fingers together, and both are looking down into the fire rather than at each other and never toward the camera. On each face the corners of the mouth are drawn very slightly back without the lips parting, the outer corners of the eyes are creased, and the brow is level and loose.
+
+Light: the fire in the drum is the only light that reaches the two men, and it sits below both faces, so both are lit from underneath by the same warm moving light — the undersides of their jaws, brows and hands catching it, the tops of their heads and shoulders falling into shadow, and both men lit identically by it. Nothing else in the picture lights them. There is no working lamp anywhere in the car park, and no lit window and no lit sign of any kind.
+
+The ground around the drum is cracked tarmac, soaked and holding standing water that catches the firelight, with scattered litter, crushed cans and broken glass across it. Beyond the reach of the fire the camp of tarpaulins and makeshift shelters falls away into solid black.
+
+Far behind them, low down and a long way off beyond the buildings, a sheet of lightning is flickering inside the cloud. It lights the sky a cold blue and picks out the roofline of a low supermarket building and the far edge of the camp as flat black silhouettes against it, and it reaches nothing nearer than that — the two men, the drum and the ground around them stay lit only by the fire.
+
+Heavy rain is falling through the whole frame, running off the rim of the drum and off their shoulders, and showing brightest where it crosses the firelight and invisible in the dark beyond it.
+
+A documentary press photograph on 35mm film: natural grain visible in the shadows, muted cool colour, no colour grading push, and skin rendered with its real texture and unevenness rather than smoothed.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Two more checks, on top of the seven above:**
+
+8. **Is the drum rusted steel**, matching `12c` and the camp wide — not pale grey?
+9. **Is Tarquin in the dark olive canvas jacket** from `11b(i)` and `12c`? If `@Future-Tarquin`
+   came back in something else, that is the Character drifting and it is worth a re-roll, because
+   `12c`'s hand is the very next shot.
+
 ---
 
 ### 12b — ~~cans clinked~~ · **struck 2026-08-29 (Jack)**

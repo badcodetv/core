@@ -26,9 +26,21 @@
 > ✅ **Scene 11 jumped the queue: `11b(i)` is shot** (2026-08-28) — Tarquin finds the newspaper
 > himself by torchlight, still and clip both accepted, round 4, master banked at
 > [`camera/reference/11b-newspaper-torchlight-ACCEPTED.png`](./camera/reference/11b-newspaper-torchlight-ACCEPTED.png).
-> 🔵 **The frontier is `12a` — the two of them by the fire — written 2026-08-28 and unrun**
-> ([revised weather version](./prompts.md#12a--the-two-of-them-by-the-fire--still--written-2026-08-28-unrun)),
+> ✅ **The END of the film is shot (2026-08-29): `12c` and `12d` both landed** — the newspaper
+> burning (still and clip) and the vertical embers plate, masters banked in `camera/reference/`.
+> **`12b` is struck** (Jack, 2026-08-29) — it repeated `12a` and the beat survives as a sound cue.
+> 🔵 **The frontier is `12a` — the two of them by the fire — and it is now the only unshot frame
+> in scene 12.** Written 2026-08-28, **amended 2026-08-30 and still unrun**
+> ([the version to paste](./prompts.md#-amended-2026-08-30-the-reference-is-now-the-accepted-12c-frame-not-the-camp-wide)),
 > and it is **the first shot in the film to put two faces in one frame**.
+> 🔑 **The amendment, because it happened without anyone deciding it:** `12a` was written against
+> the scene-10 camp wide, but `12c` and `12d` have since been shot on the **same drum, same fire,
+> same rain** — so the continuity now flows backwards and **`12a` must match them.** The location
+> reference is swapped to the accepted `12c` frame and the camp wide is dropped, because four
+> attachments at the two-Character frontier is the wrong thing to spend.
+> ⚠️ **Noted, not fixed:** `12d`'s drum came back **pale grey** where `12c` and the camp wide are
+> **rusted**. `12d` keeps it — it is a small shape at the bottom of a tall plate that the tilt
+> leaves in the first second — but **`12a` must be rusted.**
 > ✅ **12a's Bob question is ruled (Jack, 2026-08-29): cast the existing `@Bob` and accept the
 > break.** Seeing whether two faces hold in one frame at all is worth more right now than the
 > continuity, and the rebuild stays owed — see the `@Bob` item below.
