@@ -74,18 +74,20 @@ folder before re-making anything.
 
 ### ✅ The scene-1 swap — DONE 2026-08-30
 
-Canon is `1a` skyline → **`1b` the trading floor** → **`1c` young Tarquin mid-deal**. The timeline
-runs skyline → **one man on the phone** → **the wide floor**, which is `1c` before `1b`.
+Canon is `1a` skyline → **`1b` the trading floor** → **`1c` young Tarquin mid-deal**. **As
+assembled, the timeline ran `1a → 1c → 1b`** — skyline, then one man on the phone, then the wide
+floor.
 
-✅ **Ruled by Jack 2026-08-30: swapped to canon order.** `3.mp4` (the floor) now plays at 10s and
-`2.mp4` (the man) at 18s. **The timeline and the shot list now agree.**
-⚠️ **Two mechanical facts learned doing it, worth keeping:** `premiere_move_clip` **does not move a
-clip's linked audio** — video and audio must be moved as separate calls or the take desyncs; and a
-move **silently dropped `narration.mp3` off A2**, so re-check other tracks after any move.
-*(It was the better order anyway — landing on the individual and then
-pulling out to the floor he is part of is a legitimate move. But it is not what the shot list says,
-and one of the two documents should change. *(This is the only place in the whole assembly where
-the order disagrees with canon.)*
+✅ **Ruled by Jack 2026-08-30: swapped to canon order.** `3.mp4` (the floor) now plays at 10s,
+`2.mp4` (the man) at 18s. **The timeline and the shot list agree again**, and this was the only
+place in the whole assembly where the order disagreed with canon.
+
+⚠️ **Two mechanical facts learned doing it, and both will bite the next re-order:**
+
+1. **`premiere_move_clip` does not move a clip's linked audio.** The video went and the audio
+   stayed, so the take desynced. **Move `v0:n` and `a0:n` as separate calls, always.**
+2. **A move silently dropped `narration.mp3` off A2 entirely** — not reported, just gone from the
+   returned state. **Re-check every other track after any move**, and re-insert what vanished.
 
 ### ⚠️ Scene 9 is much bigger on the timeline than in canon
 
