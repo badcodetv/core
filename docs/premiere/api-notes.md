@@ -1332,3 +1332,34 @@ frames and the new one is not. A non-zero diff across the change is correct. Ver
 the picture, not by diffing against the old render.
 
 🔑 **Back the `.prproj` up first.** It is one `cp` and the project lives outside git.
+
+---
+
+## 🔴 `premiere_export_frame` writes `.png.png` and then polls for `.png` `[observed 2026-08-30]`
+
+**Symptom: a 120-second wait, then `EXPORT_FAILED — "Premiere reported success but nothing
+appeared at …/frames/<seq>-<time>s.png within 120s"` — and the frame is there all along.**
+
+The bridge appends the format extension to a filename that already carries one. So a default
+export of `camping assembly` at 268s lands at:
+
+```
+frames/camping assembly-268s.png.png     ← what is written
+frames/camping assembly-268s.png         ← what is polled for, forever
+```
+
+**The export itself worked.** Premiere's "success" was true; the wait was looking at the wrong
+path. The failure mode is expensive because it is a **silent 120-second block per call** and it
+reads like a render failure or a missing-media problem, which sends you off checking `mediaPath`
+and output-directory permissions — neither of which is wrong.
+
+**Workarounds until it is fixed, cheapest first:**
+
+1. **Just read the doubled path.** `ls` the frames directory — the file is sitting there. This is
+   the whole fix in practice.
+2. **Pass an `outPath` with no extension**, so the appended one lands correctly.
+
+⚠️ **Do not conclude a frame export failed from the error alone.** Check the directory first.
+Two exports were reported as failures here and both had rendered correctly.
+
+*(The tool's own description says `waitForStableFile` guards this; it guards the wrong filename.)*
