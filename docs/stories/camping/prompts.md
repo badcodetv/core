@@ -2418,6 +2418,43 @@ Thanks.
    came back in something else, that is the Character drifting and it is worth a re-roll, because
    `12c`'s hand is the very next shot.
 
+#### ✅ ACCEPTED 2026-08-30 (Jack) — **and it answers the film's biggest open question**
+
+*"Forget 12a, the one we did works."* The shot was already made before the 2026-08-30 amendment
+was written, so **the amendment above was never needed and is superseded** — it is kept only
+because its two continuity findings (the rusted drum, the olive canvas jacket) stand on their own.
+
+🔑 **THE FINDING, and it is the most valuable one in the film so far: two Flow Characters
+held in one frame.** Camping had been redesigned twice to avoid exactly this — `2b` needed Veo 3.1
+to hold two faces through a laugh in a locked interior, and `8b` only worked by retreating to a
+forty-metre long lens that took faces out of the argument entirely. **The documented failure —
+features blending between the two men, faces swapping, one identity collapsing — did not happen.**
+
+**What we think bought it, worth reusing before it is forgotten:**
+
+1. **Each Character anchored to a named side of the frame** — *"on the left of the frame… on the
+   right of the frame"* — rather than left to the model to infer. This is the documented fix and it
+   is now house-tested.
+2. **A still, not a clip.** Identity has to hold for one frame, not through motion.
+3. **Two visually unalike men**, which the sources name as the thing that keeps identities apart.
+4. **No appearance description for either** ([§19](../../google-flow/nano-banana-2.md)) — only
+   position, action and face muscles.
+
+🔴 **So scene 11 is no longer gated.** `11a`, `11c` and `11d` are all two-men-talking
+frames, and they were the shots this unknown was blocking. **Go there next, while the recipe is
+fresh** — same anchoring, same stills-first discipline.
+
+⚠️ **The master is NOT banked in `camera/reference/`.** It exists in Flow only. Every
+other accepted frame in 10–12 has a file beside it, and `12a` is now a reference that `11a`,
+`11c` and `11d` will all want to match. **Save it as
+`camera/reference/scene-12a-two-men-fire-ACCEPTED.png`.**
+
+🔴 **The debt inverts, exactly as the 2026-08-29 ruling said it would.** `@Bob` is now the
+Bob of `10d` and all of `11`–`12` — five shots — and **`8c(i)` is the single frame
+that disagrees.** The outstanding job is therefore a **re-shoot of `8c(i)` against the Character**,
+*not* a rebuild of the Character. That is the cheaper of the two and it was the point of running
+`12a` first.
+
 ---
 
 ### 12b — ~~cans clinked~~ · **struck 2026-08-29 (Jack)**
@@ -2735,6 +2772,5 @@ the first take under the same rule ([`hybrid-method.md`](../../video-fx/hybrid-m
 | The tilt | **Premiere** | ⬜ owed — eased, reframed to 16:9, ending exactly on the last narration word. ⚠️ **Start the tilt on the drum and the flame, not on the silhouettes' shoulders** — the men run up ~40% of the frame, not the briefed bottom fifth |
 | The code | **ffmpeg** | ⬜ owed — ascending glyphs along the ember paths, cool pale, mostly illegible, no wordmark |
 
-⚠️ **Do not start the tilt or the comp until `12a` is in the can.** If `12a` forces a change to
-the fire, the drum or the weather, the plate's bottom fifth changes with it and the tilt gets built
-twice.
+✅ **Unblocked 2026-08-30** — this was waiting on `12a` in case it changed the fire, the drum or
+the weather and forced the tilt to be built twice. `12a` is shot, so both post jobs can start.

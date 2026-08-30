@@ -32,26 +32,26 @@
 > survives as a sound cue over it.
 > ⬜ **Two post jobs are now owed on `12d` and neither is Flow's** — **Premiere** does the tilt up
 > the tall plate (starting on the drum and flame, *not* the silhouettes' shoulders) and **ffmpeg**
-> comps the ascending code. ⚠️ **Both wait for `12a`** — if it changes the fire or the weather,
-> the plate's bottom changes with it and the tilt gets built twice.
-> 🔵 **The frontier is `12a` — the two of them by the fire — and it is now the only unshot frame
-> in scene 12.** Written 2026-08-28, **amended 2026-08-30 and still unrun**
-> ([the version to paste](./prompts.md#-amended-2026-08-30-the-reference-is-now-the-accepted-12c-frame-not-the-camp-wide)),
-> and it is **the first shot in the film to put two faces in one frame**.
-> 🔑 **The amendment, because it happened without anyone deciding it:** `12a` was written against
-> the scene-10 camp wide, but `12c` and `12d` have since been shot on the **same drum, same fire,
-> same rain** — so the continuity now flows backwards and **`12a` must match them.** The location
-> reference is swapped to the accepted `12c` frame and the camp wide is dropped, because four
-> attachments at the two-Character frontier is the wrong thing to spend.
-> ⚠️ **Noted, not fixed:** `12d`'s drum came back **pale grey** where `12c` and the camp wide are
-> **rusted**. `12d` keeps it — it is a small shape at the bottom of a tall plate that the tilt
-> leaves in the first second — but **`12a` must be rusted.**
-> ✅ **12a's Bob question is ruled (Jack, 2026-08-29): cast the existing `@Bob` and accept the
-> break.** Seeing whether two faces hold in one frame at all is worth more right now than the
-> continuity, and the rebuild stays owed — see the `@Bob` item below.
-> ⚠️ **What that costs, stated so it is not discovered later:** `8c(i)`'s Bob becomes the odd
-> frame out, not `12a`'s. If `12a` lands, the debt is a **re-shoot of `8c(i)`** against the
-> Character, not a rebuild of the Character. Decide that only once `12a` is in the can. ⚠️ **Scene 9 moved indoors** — the river-bank clearing is dropped for a yurt; see the scene-9 entries. The car park is now a fixed set — see the plate in `prompts.md`.
+> comps the ascending code. ✅ **Both are now UNBLOCKED** — they were waiting on `12a` in case it
+> changed the fire or the weather, and `12a` is shot.
+> ✅ **`12a` IS SHOT — and scene 12 is COMPLETE** (Jack, 2026-08-30: *"the one we did works"*).
+> The 2026-08-30 reference amendment was written after the fact and is superseded; its two
+> continuity findings are kept.
+> 🔑 **It answers the film's biggest open question: TWO Flow Characters hold in one frame.**
+> No blending, no swap, no identity lost. Camping had been redesigned twice to avoid this — `2b`
+> needed Veo 3.1 for two faces, `8b` retreated to a forty-metre lens. **The recipe: anchor each
+> Character to a NAMED SIDE of the frame, both in the earliest attachment slots, as a still.**
+> Recorded as [`nano-banana-2.md` §26](../../google-flow/nano-banana-2.md).
+> 🔴 **So scene 11 is no longer gated — `11a`, `11c` and `11d` are all two-men frames, and
+> that unknown was what was blocking them. Go there next, while the recipe is fresh.**
+> ⚠️ **`12a`'s master is not banked** — it lives in Flow only, where every other accepted frame in
+> 10–12 has a file. Save it as `camera/reference/scene-12a-two-men-fire-ACCEPTED.png`; `11a`, `11c`
+> and `11d` will all want to match it.
+> ✅ **The `@Bob` debt has now INVERTED, exactly as the 2026-08-29 ruling predicted.** `12a`
+> landed with the existing `@Bob`, so that Character is the Bob of `10d` and all of `11`–`12` —
+> five shots — and **`8c(i)` is the single frame that disagrees.** ⬜ **The owed job is a re-shoot
+> of `8c(i)` against the Character, NOT a rebuild of the Character.** That is the cheaper of the
+> two, and running `12a` first is what bought the choice. ⚠️ **Scene 9 moved indoors** — the river-bank clearing is dropped for a yurt; see the scene-9 entries. The car park is now a fixed set — see the plate in `prompts.md`.
 >
 > ⚠️ **Prompts live in [`prompts.md`](./prompts.md), and the ledger is now stills-only** —
 > video prompts are self-explanatory and are not recorded going forward *(ruled 2026-08-26)*.

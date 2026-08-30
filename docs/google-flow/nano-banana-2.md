@@ -868,6 +868,38 @@ landed it first time.**
 work needs a body that has had a hard life, silence gets us the opposite of the story. Treat an
 unbound hand, forearm, neck or boot as **a prop that must be dressed**.
 
+---
+
+### 26. ✅ TWO Characters DO hold in one frame — if each is anchored to a named side `[observed 2026-08-30]`
+
+**This overturns a working assumption, so it is worth stating plainly.** The field position we
+had recorded was *"two characters interacting in the same shot still produce identity blurring on
+every platform as of mid-2026"* — features blending between them, faces swapping, or one identity
+lost. **Camping had been redesigned twice to avoid it.**
+
+Camping `12a` put `@Bob` and `@Future-Tarquin` in one still — two faces, both legible, both lit by
+the same fire — **and both identities held.** Accepted by Jack.
+
+**Four things were true, and we do not yet know which are load-bearing:**
+
+| Condition | Grade |
+| --- | --- |
+| **Each Character anchored to a named side of the frame** — *"on the left of the frame… on the right of the frame"* — rather than left to the model to infer | 🔑 The one we believe did the work. It is also the field's documented fix, and it agrees with Google's own Ingredients guidance to **state the role each reference plays** |
+| A **still**, not a clip — identity holds for one frame, not through motion | Likely load-bearing. `2b` needed Veo 3.1 for two faces *through motion*, which is a different problem |
+| The two men are **visually very unalike** | Named by the sources as what keeps identities separate |
+| **No appearance description for either** (§19) | Standing rule; not specific to this case |
+
+⚠️ **What this does NOT license.** One accepted still is not a rule for clips, for more than two
+Characters, or for two similar-looking faces. **The claim is: two unalike Characters, side-anchored,
+in a still — observed once, worked once.**
+
+🔴 **Order of attachment mattered enough to record:** both Characters in the earliest slots,
+the location reference last.
+
+**Cost of the old assumption, so the saving is visible:** `8b` was pushed to a forty-metre long
+lens specifically to keep two faces out of one frame, which took the faces out of the argument.
+That retreat may not have been necessary.
+
 ⚠️ **`out of focus` on a foreground element is weakly obeyed and needs reinforcing** — round 1
 ignored it outright. Round 2's *"thrown completely out of focus so that it is a soft blur"* held.
 
