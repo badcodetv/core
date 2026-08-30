@@ -26,9 +26,14 @@
 > ✅ **Scene 11 jumped the queue: `11b(i)` is shot** (2026-08-28) — Tarquin finds the newspaper
 > himself by torchlight, still and clip both accepted, round 4, master banked at
 > [`camera/reference/11b-newspaper-torchlight-ACCEPTED.png`](./camera/reference/11b-newspaper-torchlight-ACCEPTED.png).
-> ✅ **The END of the film is shot (2026-08-29): `12c` and `12d` both landed** — the newspaper
-> burning (still and clip) and the vertical embers plate, masters banked in `camera/reference/`.
-> **`12b` is struck** (Jack, 2026-08-29) — it repeated `12a` and the beat survives as a sound cue.
+> ✅ **The END of the film is shot: `12c` and `12d` are both complete, stills and clips** — the
+> newspaper burning, and the vertical embers plate whose **clip landed 2026-08-30**. Masters banked
+> in `camera/reference/`. **`12b` is struck** (Jack, 2026-08-29) — it repeated `12a` and the beat
+> survives as a sound cue over it.
+> ⬜ **Two post jobs are now owed on `12d` and neither is Flow's** — **Premiere** does the tilt up
+> the tall plate (starting on the drum and flame, *not* the silhouettes' shoulders) and **ffmpeg**
+> comps the ascending code. ⚠️ **Both wait for `12a`** — if it changes the fire or the weather,
+> the plate's bottom changes with it and the tilt gets built twice.
 > 🔵 **The frontier is `12a` — the two of them by the fire — and it is now the only unshot frame
 > in scene 12.** Written 2026-08-28, **amended 2026-08-30 and still unrun**
 > ([the version to paste](./prompts.md#-amended-2026-08-30-the-reference-is-now-the-accepted-12c-frame-not-the-camp-wide)),

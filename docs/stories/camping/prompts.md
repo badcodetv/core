@@ -2711,9 +2711,30 @@ the frame beat the brief — see the `12c` backlight note and 7a's shoulder.)*
 starts higher up. **Set the tilt's start frame on the drum and the flame, not on the silhouettes'
 shoulders**, or the move begins on black.
 
-### 12d — the clip · **video** · handed over 2026-08-29
+### 12d — the clip · **video** · ✅ ACCEPTED 2026-08-30
 
 🔴 **Generated 9:16, camera locked.** The tilt is Premiere's, over this tall plate. A generated
 camera move here would cost us the exact timing on the final narration word *and* put us on the
 translation bug. *(Prompt not recorded in full — the ledger is stills-only per the 2026-08-26
 ruling.)*
+
+✅ **It worked** (Jack, 2026-08-30). **So the last shot of the film exists**, and with it the
+whole tail of scene 12 bar `12a`.
+
+🔑 **The locked-camera rule is now proven on the hardest frame we had for it.** `12d` is a
+tall plate of rising smoke and drifting embers — continuous, unstructured motion filling the middle
+of the frame, which is exactly the geometry that usually invites a generated drift. **Locking the
+camera and leaving the move to Premiere held.** That is the third clip in scene 10–12 to land on
+the first take under the same rule ([`hybrid-method.md`](../../video-fx/hybrid-method.md)).
+
+🔴 **What is now owed downstream, and none of it is Flow's:**
+
+| Layer | Tool | Status |
+| --- | --- | --- |
+| The plate | Flow | ✅ done — still and clip both |
+| The tilt | **Premiere** | ⬜ owed — eased, reframed to 16:9, ending exactly on the last narration word. ⚠️ **Start the tilt on the drum and the flame, not on the silhouettes' shoulders** — the men run up ~40% of the frame, not the briefed bottom fifth |
+| The code | **ffmpeg** | ⬜ owed — ascending glyphs along the ember paths, cool pale, mostly illegible, no wordmark |
+
+⚠️ **Do not start the tilt or the comp until `12a` is in the can.** If `12a` forces a change to
+the fire, the drum or the weather, the plate's bottom fifth changes with it and the tilt gets built
+twice.
