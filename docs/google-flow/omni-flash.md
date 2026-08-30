@@ -124,6 +124,26 @@ hypothesis. Source: the Karen river-drop clip (`docs/stories/karen/prompts-river
 > shot** — the same lesson twice. On this engine, when a clip fails, ask what the shot
 > is asking the model to do before rewriting a single word of it.
 
+## ⚠️ Open conflict: how long should an Omni prompt be? `[unresolved 2026-08-30]`
+
+Two sources, flatly opposed, neither house-measured:
+
+| Source | Claim |
+| --- | --- |
+| `[yt]` / `[community]`, this file's [Prompt craft](#prompt-craft) section | **Under ~50 words.** Longer prompts *"dilute focus and reduce output quality"* — billed as the single biggest difference from writing for Veo |
+| Practitioner guides, 2026 | Example prompts run **150–300 words**; *"density of specification matters more than brevity"* and the model *"does not 'fill in' missing creative direction well"* |
+
+**Do not treat either as settled.** The cheap experiment is running in camping `1y`: a ~170-word
+primary and a ~50-word fallback written for the same shot, same plate, same tab, to be fired in
+that order — [`prompts.md`](../stories/camping/prompts.md#1y--the-tide-coming-in--video--written-2026-08-30-unrun).
+🔑 **Whichever one produces the accepted clip should be recorded here**, because it settles the
+question for every clip after it.
+
+**What both sides agree on**, and what should therefore carry the weight regardless of length:
+**the opening words set the shot grammar.** Frame-lock first, camera second, action third — so a
+long prompt still spends its most reliable real estate on the two things that actually fail
+(the camera moving, and the model cutting).
+
 ## Identity & availability
 
 - "Create anything from any input — starting with video." Combines Gemini reasoning with

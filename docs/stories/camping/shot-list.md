@@ -14,6 +14,31 @@
 > *(2026-08-30)* — what each scene's narration must do, the three canon-silent stretches, the
 > ~250–320 word ceiling, and the rule that outranks the rest: **the scene-11 AI reveal has to reach
 > back to scene 4 and the man who owns it**, or the film becomes an anti-AI film by accident.
+> 📅 **Where the year goes: [`year-device.md`](./year-device.md)** *(2026-08-30)* —
+> ✅ **Ruled by Jack: 2031 goes to the narration**, so the on-screen year is a two-instance
+> device. 🔴 **The cloud-break version was run and FAILED** — the model inverted it into dark
+> smoke writing, and overcast has no contrast to give a hole in it. **The year has moved off the
+> establisher onto a Thames-foreshore insert pair, `1y` (2008) and `4y` (2026)** — the digits laid
+> in river weed on pale wet mud at low tide, the same frame twice, the tide line worse the second
+> time. 🔒 **So `1a` and `4a` are never regenerated.** Prompt written and unrun:
+> ✅ **`1y` IS SHOT** (Jack, 2026-08-30: *"the 8 is fine"*) — master banked at
+> [`camera/reference/1y-foreshore-2008-ACCEPTED.png`](./camera/reference/1y-foreshore-2008-ACCEPTED.png).
+> ⬜ **Its clip is written and unrun** — Omni Flash, Frames tab, the tide creeping up the mud to the
+> foot of the first numeral; camera locked, the push-in is a Premiere job:
+> [`prompts.md`](./prompts.md#1y--the-tide-coming-in--video--written-2026-08-30-unrun).
+> ✅ **`4y` IS SHOT** (Jack, 2026-08-30) — master banked at
+> [`camera/reference/4y-foreshore-2026-ACCEPTED.png`](./camera/reference/4y-foreshore-2026-ACCEPTED.png).
+> 🔒 **The year device is BUILT.** Side by side the two plates read as one place: same far bank,
+> stumps, cobbles, mooring ring, handrail, horizon, overcast and water level — only the digits and
+> eighteen years of rubbish differ.
+> ⬜ **Both clips are written and unrun**, and the motion inverts:
+> [`1y` — the tide coming in](./prompts.md#1y--the-tide-coming-in--video--written-2026-08-30-unrun)
+> (2008 being taken away) and
+> [`4y` — the tide going out](./prompts.md#4y--the-tide-going-out--video--written-2026-08-30-unrun)
+> (2026 laid bare). Camera locked on both; 🔴 **whatever push `1y` gets in Premiere, `4y` gets
+> identically** — the clock must behave the same way twice.
+> ⚠️ **Two `1y` takes exist and the master was swapped** — the wider take Jack handed over as the
+> `4y` reference governs; the first is kept as `1y-foreshore-2008-alt-round1a.png`.
 > 🔪 **The proposed re-cut is [`edit-plan.md`](./edit-plan.md)** *(2026-08-30, nothing
 > executed)* — the governing fact is that **`narration.mp3` is 150s against 272s of picture**, so
 > the average clip has to come down from 8.0s to about 4.6s. Seven edits, worst first.
@@ -244,7 +269,7 @@ men before the plot starts, so the rest of the film can dismantle it.*
 - **1c Young Tarquin mid-deal** — cocky, admired, leveraged ETFs. *He was the reason 2008 hit.*
 - ~~**1d The newspaper plant**~~ — **struck 2026-08-26: absorbed into 1b.** The plant is *inside* the trading floor — far down the row, small, half-turned, a chair back and a monitor arm crossing it, face behind the paper, headline `CRISIS ON WALL STREET`. A shot that exists only to plant announces itself, so it stopped being a shot. It still pays off in 11b.
 - **2a An ordinary car on an ordinary road** — luggage. A holiday.
-- **2b Bob driving, his wife beside him** — younger, brighter-eyed. The job stays deliberately unremarkable.
+- **2b Bob driving, his wife Jo beside him** — younger, brighter-eyed. The job stays deliberately unremarkable. *(She was named **Jo** 2026-08-30; ⬜ whether the film ever says it is deferred — see [`characters/bob.md`](./characters/bob.md).)*
 - **3a The crash — never shown.** Cut to black mid-laugh straight out of 2b; the impact happens in the black. **No narration at all.** We never show or say who died.
 - **3b The indicator, still ticking** — the only image the crash gets. Close on the dashboard binnacle: needles dead at zero, grit thrown across the top of the dash, and through the windscreen the verge climbing at a wrong angle. The green indicator telltale blinks on, patiently, at nobody — **the last thing he did was signal a turn.** No seats and no cabin in frame: two empty seats would read as *both* of them gone, and Bob survives. The tick carries the scene. *(Alternates shot and kept: the road atlas face-down in the verge with the biro route ending mid-page; broken glass on wet tarmac; the amber corner lamp in the grass — the wider version of this same idea, and a candidate to precede it.)* *(Canon: [`story.md` beat 3](./story.md).)*
 - **3c Silence** — sound design carries it: impact, then nothing. Let the audience join the dots when Bob reappears alone.

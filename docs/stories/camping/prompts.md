@@ -89,6 +89,690 @@ Thanks.
 > ⚠ **1a does not end with the house `Thanks.` convention preceded by a Details block in the
 > usual order** — it is recorded exactly as typed. Do not tidy it. It is a restore point.
 
+### 1a-year — the 2008 skyline with the year in the cloud · **still** · written 2026-08-30, unrun
+
+**Why this exists:** the year device — [`year-device.md`](./year-device.md). Jack ruled
+2026-08-30 that **2031 goes to the narration**, so the on-screen year is a two-instance device:
+`1a` = 2008, `4a` = 2026, same framing, same slot, one number changing.
+
+**This is a NEW PROMPT, not an edit** — the whole `1a` scene is restated and **the sky clause is
+the only thing that has changed**. One variable, so we know what did it.
+
+🔒 **The accepted `1a` is not overwritten and not deleted.** This is a variant. If it does not
+match, the fallback is an ffmpeg `drawtext` overlay on the existing frame and nothing is lost.
+
+**Reference image:** the **accepted `1a` master** (in Flow, not in this repo — see
+[`camera/reference/README.md`](./camera/reference/README.md)). Its role is **framing, altitude
+and composition**.
+🔴 **Do not attach the Wikimedia photographs in `camera/reference/`** — three of the four are
+CC BY-SA and their pixels must not survive into a frame we ship.
+
+**What changed from `1a`, and only this:**
+
+- The sky went from *"completely empty"* to **an overcast lid with the year torn clean out of it**.
+- The lighting clause gained *"under the cloud lid"* so a low hard sun and an overcast ceiling
+  are not contradicting each other.
+- The no-lettering rule gained one carve-out: **the numerals are the only legible characters in
+  the picture.**
+- Two anti-slop clauses added by name — no flare, no glow, no bloom; grain and haze asked for
+  explicitly. Bare "photorealistic" gets you plastic.
+
+⚠️ **Check the numerals at 100% before accepting.** Gibberish in-frame text is the most-cited
+tell there is. Isolated large numerals are the reliable case — but they are not a guarantee.
+
+```prompt
+SCENE:
+
+Generate a hyper-realistic documentary photograph on 35mm colour negative — fine natural grain, muted and cool, real atmospheric haze, slightly uneven exposure. Naturalistic motivated light only. No lens flare, no glow, no bloom, no halo.
+
+Subject: a single tall dark office tower standing dead centre of frame, filling the middle third from top to bottom, seen from the air from slightly above its midpoint, with a low old city spread wide behind and below it.
+
+Environment: the City of London as it stood in 2008, before the current cluster of glass towers was built. The hero tower is a 1980 office block built as three chevron-shaped shafts cantilevered around a central core, stepping down to three different heights, clad in bronze-dark glass with strong vertical ribbing and a slim lattice mast on the roof; it stands completely clear of everything around it and is by far the tallest thing in the frame. Behind and beside it the city is low and dense — Portland stone and red brick blocks of six to ten storeys, church spires, flat grey roofs and rooftop plant. One rounded glass tower with a diagonal diamond lattice stands a little way off to one side, and two dark flat-topped 1960s slabs sit nearer the middle. A wide grey-brown river crosses the lower third of the frame with a road bridge to the right, and a domed stone cathedral sits among the rooftops on the right. Two construction cranes stand over the low roofs in the middle distance.
+
+Sky: a high unbroken lid of flat grey overcast lies across the whole upper third of the frame. Torn out of that cloud, and nothing else, are the four numerals 2 0 0 8. They are very large, spanning most of the width of the frame, sitting high above the rooftops, with the hero tower's lattice mast rising in front of them. They are holes in the cloud showing pale sky behind — not writing, not light, not projected. The cloud has simply parted in that shape. The overall shape of each numeral is clean and unmistakable, while the actual cloud edge along it is soft and slightly ragged the way a real break in overcast is ragged. The numerals do not glow, do not cast beams, and do not light the city.
+
+Camera: wide lens, high aerial, hovering level with the upper third of the hero tower and looking very slightly down, the tower centred and dead vertical, the horizon high in the frame. Deep focus, sharp from the tower all the way to the horizon.
+
+Lighting: a cold spring morning, the sun low and hard from the left underneath the cloud lid, throwing long shadows east across the rooftops. The hero tower's dark glass reads almost black against the pale sky, and one band of windows partway up its face catches the low sun and flares bright. Distance haze softens the far horizon into flat grey layers.
+
+Details: cinematic, filmic contrast, fine 35mm grain, atmospheric haze between camera and far city. No modern glass towers of any kind — no tapering glass spire, no curved-top tower, no wedge-shaped tower, no cluster of tall towers behind the hero. Every sign, banner and rooftop marking is free of readable lettering: the four numerals in the cloud are the only legible characters anywhere in the picture.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**If accepted → the clip.** Omni Flash, **Frames** tab, this still as the start frame, **end slot
+empty** (Omni Flash errors on an end frame). Camera locked. The motion budget is spent on cloud
+drift and nothing else:
+
+```prompt
+The attached image is the locked opening frame. The camera does not move at all — no push, no pan, no drift, no reframe. The high overcast lid moves slowly left to right across the top of the frame, and the four numerals torn out of it hold their shape and their position while the cloud creeps around their edges. Haze shifts very slightly over the far city. Nothing else in the frame moves.
+
+Thanks.
+```
+
+**Then `4a`** — the same prompt with the hero tower swapped for the tapering glass spire, the
+modern cluster restored, and the numerals reading **2026 in the identical position**. Written
+only after the 2008 still is accepted, so the pair matches by construction.
+
+### 1a-year — round 1, **not accepted**: the model inverted the device, and the physics were against it
+
+Run 2026-08-30 against the accepted `1a` master. Two failures, and only one of them is phrasing.
+
+#### 🔴 The cause: "torn out of" is a **subtractive** instruction, and the model has no picture of one
+
+The prompt asked for *holes in the cloud showing pale sky behind — not writing, not light, not
+projected.* What came back is **four dark soot-coloured blobs sitting on top of a grey lid** —
+the exact inverse. The model does not have a trained visual for *an absence shaped like a
+numeral*; it does have one for **smoke writing**, so it substituted the nearest trope it owns.
+That trope is the thing [`year-device.md`](./year-device.md) explicitly **rejected** ("it puts an
+author in the sky where we want a narrator"), and the failure walked us straight into it.
+
+🔑 **The generalisable finding: ask for a dark object on a pale ground, never for a pale gap in a
+dark field.** Additive shapes render; subtractive ones invert. This applies to every future
+device on this film.
+
+#### 🔴 The second cause is worse, because no prompt fixes it: **overcast has no contrast to give**
+
+A hole in a flat grey lid shows **pale grey sky** behind it. Overcast grey against sky grey is
+almost no separation at all. To make four numerals read at that size the model needed contrast,
+and the prompt had banned the only two ways of getting it — *no glow, no bloom* forbade making
+them brighter, so the one route left was making them **darker**. The device asked for legibility
+and forbade the means. **It is self-defeating on the physics, not on the wording**, and a round 2
+with better phrasing would hit the same wall.
+
+#### ⚠️ It also broke the matched pair, which is the device's whole engine
+
+Comparing the return against the `1a` master: the rounded lattice tower moved from the left of
+frame to the right, the hero tower lost its stepped chevron shafts and came back a flat slab, the
+domed cathedral shifted, and the horizon dropped. **`1a` and `4a` match by being the same
+picture.** A sky rewrite that also re-rolls the skyline cannot found a pair.
+
+#### ✅ The ruling, 2026-08-30: **the cloud break is struck.** The year moves to the foreshore.
+
+Jack's alternative — [`year-device.md`](./year-device.md) tier 2, *seaweed on the Thames
+foreshore at low tide* — is promoted to the device. It was graded down only because it will not
+read at `1a`'s altitude, which is true and is **not an argument against the idea, only against
+putting it in that frame.** It gets its own frame. See `1y` below.
+
+🔒 **The accepted `1a` is untouched and its sky stays empty.** That is now a feature: with the
+year living somewhere else, the film's most important restore point is **never regenerated at
+all**, and neither is `4a`. The cloud prompt above is kept as the record of what was tried.
+
+### 1y — the year on the foreshore, 2008 · **still** · written 2026-08-30, unrun
+
+**Why this exists:** the year device, after the cloud break failed —
+[`year-device.md`](./year-device.md). Pairs with **`4y`** (2026), which is the identical frame
+with the skyline and the tide line changed. **The pair is the device; neither shot is worth
+running alone.**
+
+#### The design — and why the foreshore beats the sky on all four tests
+
+| Test | Cloud break | Foreshore |
+| --- | --- | --- |
+| **Contrast** | 🔴 grey on grey; needs a glow it is forbidden | ✅ near-black wet weed on pale reflective mud. The mud holds the sky and everything on it reads black |
+| **Slop resistance** | 🔴 crisp synthetic shape in a soft medium | ✅ ragged organic glyphs are what a viewer *expects* from weed, so the model's imprecision stops being a tell |
+| **Gate 2 — a visible cost in frame** | ⚠️ borrowed from the skyline below | ✅ built in, and it is the tide line: in 2026 the same digits are silted, and the plastic is tangled through them |
+| **Register** | 🔴 someone is *writing* in the sky — an author, not a narrator | ✅ the water left it there. Sediment, not authorship. **That is the BadCode claim exactly: this already happened, and here is what washed up** |
+
+**Two more things it buys that the sky version could not:**
+
+- 🔒 **`1a` and `4a` are never regenerated.** The year stops threatening the film's restore point.
+- 🔑 **It carries the graphic match *and* the number in one frame.** The foreshore is the one part
+  of London that looks the same in 2008 and 2026 — same mud, same stumps, same tide. So the pair
+  matches by construction, with no era-stripping, and the *only* things that differ are the small
+  hazy skyline over the wall and what the tide has done to the weed. The skyline pair says **the
+  city changed**; the foreshore pair says **the river did not, and it kept the receipt.**
+
+**The shot spec:**
+
+- **Job:** date the film, and plant the bookend, without stopping it. ~1.5–2s, before the `1a`
+  establisher.
+- **Depth:** ⚠️ three planes, all populated — near, the dark stone coping and rusted rail of the
+  river wall along the bottom edge; mid, the weed digits on open mud and a broken row of rotted
+  jetty stumps; far, the water, the opposite wall, and the hazy city above it.
+- **Focal point:** the digits, winning on **contrast** — the only near-black in a pale frame.
+- **Light:** flat overcast, no sun, no shadows. 🔑 **The wet mud is the bright anchor** and it
+  works by reflection, which is the inverse of our usual near-black rule and the reason this
+  frame is legible where the sky one was not.
+- **Camera:** high oblique from the top of the wall, ~5m above the mud, tilted down ~45° so the
+  numerals lie flat and read without distortion. It **rhymes with `1a`** — the film looks *down*
+  at both.
+- **Scale reference:** the jetty stumps and the mooring ring.
+- **Withheld:** no people. The tide wrote it and left.
+- **Motion:** the camera is locked. Water creeps at the far edge; one gull. Nothing else.
+
+**Reference image:** ⬜ **none.** New location, no composition to preserve, and nothing here has
+to match an existing plate. 🔴 **Do not attach the Wikimedia photographs in `camera/reference/`**
+— three of the four are CC BY-SA.
+
+⚠️ **Check the numerals at 100% before accepting**, and check them for the right failure: a weed
+`0` that has closed into a blob, or an `8` whose waist has filled in.
+
+```prompt
+SCENE:
+
+Generate a hyper-realistic documentary photograph on 35mm colour negative — fine natural grain, muted and cool, real atmospheric haze, slightly uneven exposure. Naturalistic motivated light only. No lens flare, no glow, no bloom, no halo.
+
+Subject: four numerals — 2 0 0 8 — lying flat on the exposed mud of a tidal river foreshore at low tide, seen from above and at an angle from the top of the river wall. They run across the middle of the frame, large and clearly readable at a glance.
+
+The numerals are made of real river weed, physically lying on the ground where the tide left it: long matted strands of green-black algae and bladderwrack, piled a few centimetres thick, soaked and dark and shining wet. They are objects on the mud, not writing, not drawn, not painted and not carved. The overall shape of each numeral is clean and unmistakable, while the actual edge of the weed is ragged and frayed, strung with loose strands, small shells and bits of debris, the way a real tide line is ragged. The wet grey-brown mud around them is pale, smooth and reflective and holds the flat white sky, so the weed reads almost black against it.
+
+Environment: a London tidal river foreshore at dead low water. Ribbed grey-brown mud and grey shingle, flat stones, chalk and worn brick rubble, a rusted iron mooring ring set into the stonework. A broken row of rotted black timber jetty stumps runs across the middle distance out toward the water. Beyond them the wide grey-brown river, and beyond that a high stone and brick embankment wall. Small and far off above that wall, softened by haze, the low roofs of an old city with one tall dark office tower standing clear of everything around it. In the immediate foreground along the bottom edge of the frame, the dark stone coping of the near river wall and a rusted iron handrail cross the corner.
+
+Camera: wide lens, standing on the top of the near river wall about five metres above the mud, tilted down roughly forty-five degrees and looking out across the foreshore, so the numerals lie flat and read clearly without perspective distortion and the far bank sits high in the frame. Deep focus, sharp from the weed in the near foreground all the way to the far city.
+
+Lighting: a cold overcast morning, no sun and no shadows, a flat white sky. The wet mud is the brightest thing in the picture — it reflects the pale sky and glares softly — and everything lying on it reads dark against it. Distance haze softens the far bank and the city into flat grey layers.
+
+Constraints: the numerals are dark weed on pale mud, never pale shapes in a dark field. Nothing in the sky at all — no writing, no smoke, no vapour trail, no break in the cloud. Nothing glows, nothing is lit from within, nothing casts a beam. No people anywhere in the frame, and no boats.
+
+Details: cinematic, filmic contrast, fine 35mm grain, real atmospheric haze between camera and the far bank. Every sign, marking and painted surface is free of readable lettering: the four numerals of weed are the only legible characters anywhere in the picture.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**If accepted → the clip.** Omni Flash, **Frames** tab, this still as the start frame, **end slot
+empty**. Camera locked; the motion budget is spent on water and one bird:
+
+```prompt
+The attached image is the locked opening frame. The camera does not move at all — no push, no pan, no drift, no reframe. The water at the far edge of the mud creeps very slightly, its surface moving. One gull crosses low over the foreshore and out of frame. The weed on the mud does not move at all and the four numerals hold their exact shape and position. Nothing else in the frame moves.
+
+Thanks.
+```
+
+**Then `4y` — 2026, and it is the same frame.** Written only once `1y` is accepted, so the pair
+matches by construction. Only three things change, and each of them is the point:
+
+- The tall dark office tower over the wall becomes **the tapering glass spire and the cluster
+  around it**, still small and still in haze.
+- The weed numerals read **2 0 2 6**, in the identical position and at the identical size.
+- 🔑 **The tide line has got worse.** The digits are half-silted and the weed is threaded through
+  with plastic — bags, bottles, a tangle of blue rope, a shopping trolley on its side among the
+  jetty stumps. Same river, same mud, eighteen years of what washed up.
+
+
+### 1y — round 1 · ✅ **ACCEPTED** (Jack, 2026-08-30: *"the 8 is fine"*) · 🔒 the year plate
+
+🖼 **Master banked:** [`camera/reference/1y-foreshore-2008-ACCEPTED.png`](./camera/reference/1y-foreshore-2008-ACCEPTED.png).
+This is the plate the clip is generated from and the plate `4y` must match.
+
+⚠️ **The round-2 rewrite below was written and never run — Jack accepted round 1 over it.** It is
+kept because its two diagnoses were real and `4y` will meet both of them, and because the far-bank
+ruling stands: `4y` copies **this** frame, skyline and all.
+
+**The two notes that survive into `4y`, now as continuity facts rather than defects:**
+
+- **The far bank in the accepted frame is generic riverside, not the City.** It is now canon for
+  the pair, so 🔴 **`4y` reproduces it unchanged** — same slab, same cluster, same wall. The
+  skyline change is `1a` → `4a`'s job and this pair must not compete with it.
+- **The camera is ~2–3m up at ~30°, not the 5m/45° asked for.** `4y` must match the accepted
+  frame, not the prompt. Copy the geometry off the plate.
+
+#### What the round-1 return got right, and must not be lost
+
+Run 2026-08-30. **The idea works and the failure mode has flipped.** The cloud version failed at
+the concept; this fails only at legibility, and both causes are geometry.
+
+- ✅ **Dark weed on pale reflective mud reads.** The sheet of water over the ribbed mud is the
+  bright anchor exactly as designed, the weed sits near-black on it, and there is no glow, no
+  bloom and no sun anywhere. The contrast problem that killed the cloud version is **solved**.
+- ✅ **Three depth planes, all populated** — brick rubble, cobbles, a rusted mooring ring and the
+  handrail near; weed and the broken row of jetty stumps mid; river and far bank beyond.
+- ✅ **Gate 2 comes free** — the rubble and broken tile are already the cost, and they have
+  somewhere to escalate to in `4y`.
+- ✅ Overcast, no shadows, no people, no boats, no readable lettering.
+
+#### ⚠️ The one reservation, overruled by Jack — the `8`
+
+At 100% the fourth glyph is **two disconnected pieces** — a top-right diagonal and a separate
+lower loop. It reads closer to `%` than to `8`. Context carries it at a glance, which is exactly
+why it is dangerous: **the one instance where the year has to be unambiguous is the one where it
+is guessed.**
+
+🔑 **The cause is foreshortening.** The prompt asked for ~5m of camera height and a ~45° down
+tilt; the return is nearer 2–3m and ~30°. The digits therefore lie in hard perspective and
+compress toward the far end of the row — and the `8`, being furthest, compresses most, so its
+waist opens. **Raise the camera and steepen the tilt and the glyph problem fixes itself**, before
+a single word about the weed changes.
+
+⚠️ Second-order: the water sheet has crept **over** the weed rather than stopping short of it,
+which softens every edge. Keep the water — it is doing the lighting — but hold it beyond the row.
+
+#### ⚠️ The far bank came back as a generic riverside, not the City
+
+The prompt asked for *low roofs of an old city with one tall dark office tower standing clear*.
+What arrived is a pale 1960s slab centre-frame with an unrelated cluster off to the right —
+**Wapping, not the City**, and the pale slab sits near the vanishing point where the eye goes.
+
+#### 🚫 Ruled and then overtaken: **strike the skyline entirely** — *superseded by the accepted round 1, which kept it.* The reasoning is kept because the conclusion it protects still holds: **the skyline must not change between `1y` and `4y`.**
+
+The reason to keep it was to let `4y` swap it. But the skyline change is **already carried by
+`1a` → `4a`**, and asking `1y` to carry it a second time buys a repetition and a generation risk
+for nothing. Removing it makes the device **purer**: `1y` and `4y` then differ in *only* the
+numerals and the tide line, which is the whole claim — **the river did not change, and it kept
+the receipt.** The steeper tilt of the round-2 camera removes it for free by putting the far bank
+at the top edge, and it takes the dead white sky band out with it.
+
+⚠️ **Two changes in one round, against the usual one-variable rule.** Accepted here because they
+are **orthogonal and both diagnosed rather than guessed** — camera geometry and what is on the
+far bank cannot mask each other, and the steeper tilt is the fix for both.
+
+### 1y — round 2 · **still** · written 2026-08-30 · 🚫 **not run, superseded by the accepted round 1**
+
+🔴 **No reference image, again.** The round-1 frame is *not* attached: the composition is the
+thing being changed, and a reference beats the prompt on composition every time
+([`nano-banana-2.md` §21, §24](../../google-flow/nano-banana-2.md)). Attaching it would reinstate
+the low camera that caused the failure.
+
+**What changed from round 1, and only this:**
+
+- **Camera up to ~8m and tilt down to ~55°**, so the numerals lie nearly flat to the lens and
+  stop foreshortening. Far bank pushed to the top edge; almost no sky.
+- **The `8` is named as a failure** in the `Constraints:` block — the house pattern from `4b`.
+- **The water is told to stop short of the weed.**
+- **The skyline clause is deleted**, and the far bank is told to be a plain wall.
+
+```prompt
+SCENE:
+
+Generate a hyper-realistic documentary photograph on 35mm colour negative — fine natural grain, muted and cool, real atmospheric haze, slightly uneven exposure. Naturalistic motivated light only. No lens flare, no glow, no bloom, no halo.
+
+Subject: four numerals — 2 0 0 8 — lying flat on the exposed mud of a tidal river foreshore at low tide, seen from high above and looking steeply down. They run across the middle of the frame, very large, and each one is unmistakable.
+
+The numerals are made of real river weed, physically lying on the ground where the tide left it: long matted strands of green-black algae and bladderwrack, piled a few centimetres thick, soaked and dark and shining wet. They are objects on the mud, not writing, not drawn, not painted and not carved. Each numeral is formed from one continuous unbroken band of weed of even thickness, so its shape is closed and complete and reads instantly: the two zeros are closed rings, and the eight is two closed loops joined at a clear narrow waist. The outer edge of the weed is ragged and frayed, strung with loose strands, small shells and bits of debris, the way a real tide line is ragged, but the shape underneath it stays clean. The wet grey-brown mud around them is pale, smooth and reflective and holds the flat white sky, so the weed reads almost black against it.
+
+Environment: a London tidal river foreshore at dead low water. Ribbed grey-brown mud and grey shingle, flat stones, chalk and worn brick rubble, a rusted iron mooring ring set into the stonework. A broken row of rotted black timber jetty stumps runs across behind the numerals out toward the water. Beyond them the wide grey-brown river, and along the very top edge of the frame the plain top of a far stone and brick embankment wall with a thin strip of flat white sky above it and nothing else. In the immediate foreground along the bottom edge, the dark stone coping of the near river wall, broken bricks and tile, and a rusted iron handrail crossing the corner.
+
+Camera: wide lens, high on the near river wall about eight metres above the mud, tilted steeply down at about fifty-five degrees, so the foreshore fills almost the whole frame, the numerals lie nearly flat to the lens with very little perspective compression, and the far bank sits right at the top edge. Deep focus, sharp from the rubble in the near foreground to the far wall.
+
+Lighting: a cold overcast morning, no sun and no shadows, a flat white sky. The wet mud is the brightest thing in the picture — it reflects the pale sky and glares softly — and everything lying on it reads dark against it. Distance haze softens the far wall into a flat grey layer.
+
+Constraints: the numerals are dark weed on pale mud, never pale shapes in a dark field. Every numeral is closed and continuous — no broken strokes, no gaps, no piece of a numeral detached from the rest, and the eight is never open at its waist. The mud under and around the numerals is wet and reflective but the standing water stops short of them, so the weed is not submerged and its edges stay sharp. No buildings and no towers of any kind on the far bank or anywhere on the horizon. No people, no boats, no birds. Nothing glows, nothing is lit from within, nothing casts a beam.
+
+Details: cinematic, filmic contrast, fine 35mm grain, real atmospheric haze between camera and the far wall. Every sign, marking and painted surface is free of readable lettering: the four numerals of weed are the only legible characters anywhere in the picture.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+⚠️ **Accept on the `8` alone.** Everything else in round 1 already passed. If the `8` still opens
+after this, **stop asking Flow for it** — the house precedent is the scene-10 sign, two failures
+then post — and the fallback is a clean plate with the weed digits comped in, or `drawtext`. That
+fallback is cheap here in a way it never was on the establisher.
+
+
+### 1y — the tide coming in · **video** · written 2026-08-30, unrun
+
+**Recorded despite the 2026-08-26 stills-only ruling**, because this one is not self-explanatory:
+it carries a design decision, a research pass and the reason the camera move is *not* in it.
+
+**Routing:** Omni Flash → **Frames** tab, the accepted `1y` master as the **start frame**, **end
+slot empty** (Omni errors on an end frame). Frames, not Ingredients, because
+[the composition is everything and Ingredients re-stages](../../google-flow/omni-flash.md#️-the-combined-mode-does-not-exist-in-flow).
+No Characters are needed, so the tabs being mutually exclusive costs nothing. 10s available; **generate the full 10s** even though the cut wants far less — the gesture needs runtime, and the last few seconds are the strongest.
+
+#### 🔑 The design: the film opens on the year already being taken
+
+The still is a photograph, and [`stills.md`](../../cinematography/stills.md) is blunt about what
+that costs: **a frame whose first and last frames match reads as a photo, not a shot**, and a held
+image only grips if it contains **an unresolved question**. So the clip needs one event, and it
+should be the one the location supplies for free.
+
+**The tide is coming in.** Over ten seconds the leading edge of the water creeps up the mud toward
+the numerals and reaches the foot of the first one just as the shot ends. It never covers them.
+
+Why this and not something else:
+
+- **It is the narrator's whole claim, stated in water.** The film opens with its own date already
+  being erased. *Received wisdom from a future that already went wrong* — and the first image is
+  the evidence going under.
+- **It sets up `4y` for free.** 2008 is being taken; by 2026 the same digits are silted and
+  plastic-threaded. The tide got it. **Same river, same mud, and it kept the receipt.**
+- 🔑 **It is the easy motion, not the hard one.** Google's own model card lists *scenes with
+  complex motion* as a known failure mode. A slow single-vector flood across a flat plane, with
+  everything else static, is close to the easiest thing this engine is ever asked to do.
+- **It is one system, not two.** Water advancing, weed stirring where it arrives, and the sky
+  reflection shifting are all *the same physical event*. That satisfies the **one main action per
+  clip** rule while still giving three visible things to look at.
+
+#### 🔴 The camera does NOT move — and that is not timidity, it is the house method
+
+[`hybrid-method.md`](../../video-fx/hybrid-method.md): **the generator animates the world with its
+camera locked; Premiere moves the camera** over the finished clip, rigid by construction and
+exactly eased. Camera translation is what triggers the regeneration bug, so locking it is also the
+cheapest reliability win available.
+
+⚠️ **And Omni defaults to cutting** — left alone it *"builds a short narrative from a few different
+shots."* `[yt]` For a slow single move that is the failure most likely to ruin the shot, so
+`single continuous shot, no cuts` and `locked off` are load-bearing, not decoration.
+
+**The move this shot wants, and where it goes:** ⬜ a **very slow push in** on the numerals across
+the back half — the push-in means *narrowing toward a realisation*, and what is at the end of it is
+the year. **That is a Premiere job on the finished clip**, not a clause in this prompt.
+⬜ Optional second post pass: a barely-perceptible luminance ramp as the overcast thins. Also not
+Flow's — it is an ffmpeg job precisely because it must be *imperceptible*, which is exactly the
+kind of exactness Flow cannot be trusted with.
+
+#### 🔴 Anti-slop, worked per tell — the two that actually threaten this shot
+
+Researched 2026-08-30; the general list is in [`year-device.md`](./year-device.md). Only the ones
+that bite here:
+
+| The tell | Why it threatens *this* clip | The clause that answers it |
+| --- | --- | --- |
+| 🔴 **In-scene text turning to gibberish** — the most-cited tell there is | **The numerals are made of weed, and the clip re-renders every surface every frame.** This is the shot's single biggest risk: the model has licence to reflow them | The weed numerals are named as **objects that do not move, shift or change shape**, and the water is told to **stop at the foot of the first numeral** so it never has a reason to touch them |
+| 🔴 **Flat, uncanny lighting** — *"AI's default aesthetic is 'pleasant cloudy afternoon'"* | ⚠️ **Our shot is literally an overcast morning.** We are starting inside the default | The plate already beats it — the light is *motivated by the wet mud*, which reflects the sky and does the work a key light would. Hold it: **name the mud as the bright thing** and let nothing else glow |
+| **Repeating texture tiling** — named risk on large surfaces | The ribbed mud is exactly that surface | Name the irregularity: the ripples **vary in size and spacing and are broken by stones and rubble** |
+| **Unnaturally smooth, floaty motion / no micro-jitter** | The usual fix is camera vibration — ⚠️ **we must not take it**, because inviting the camera to move is the failure above | Take it in the *water* instead: the flood edge **finds the ribs and hollows and fills them unevenly, never a straight line.** Irregularity is bought in the physics, not the camera |
+| **Too clean, no grain** | Bare "cinematic" gets plastic | `24fps, 180-degree shutter, fine 35mm grain` — the 24/180 clause is `[confirmed 2026-08-14]` as earning its place |
+| **Background figures with impossible gaits** | A gull would be lovely and is a known artefact class | 🔑 **Put the gull in the audio and not in the frame.** One call off-screen implies the world at zero render risk |
+| **Mirror / reflection breakdown** | We have a large wet reflective sheet | Ask only for the **diffuse sky** shifting on it. Never ask for an object's reflection |
+
+⚠️ **And define the bare surfaces.** `[confirmed 2026-08-17, Karen §2j.6sv]` — a clip block that
+never mentioned signage came back with writing crawling onto a sign. Under our no-legible-text rule
+the move is to give the model something specific to satisfy instead of a vacuum to fill, so the
+constraints line states it outright.
+
+#### ⚠️ A live conflict in the sources — read before you shorten this
+
+[`omni-flash.md`](../../google-flow/omni-flash.md) records `[yt]`/`[community]` advice to **keep
+Omni prompts under ~50 words**, because length *"dilutes focus and reduces output quality"* — the
+biggest single difference from writing for Veo. Fresh practitioner guidance (2026) says the
+opposite: example prompts run **150–300 words** and *"density of specification matters more than
+brevity."*
+
+**Unresolved, and neither side is house-measured.** The primary below is ~170 words and is written
+so the whole first half is the frame-lock and the camera, which is where adherence is decided. **A
+50-word fallback follows it.** If the primary drifts — the camera moves, or it cuts — fire the
+fallback before rewriting anything, and 🔑 **record which one worked**, because that settles the
+conflict for every clip after this one.
+
+**Primary:**
+
+```prompt
+The attached image is the locked opening frame.
+
+One continuous shot, no cuts. The camera is locked off on a tripod and does not move at all — no push, no pull, no pan, no tilt, no drift, no reframe. Shot on 35mm at 24 frames per second with a 180-degree shutter, fine natural grain, muted and cool and desaturated.
+
+The tide is coming in. Through the whole shot the leading edge of the water creeps slowly up the wet mud from the bottom of the frame toward the numerals — a thin advancing sheet that finds the ribs and hollows in the mud and fills them unevenly, never a straight line. The mud ripples it crosses vary in size and spacing and are broken by stones and rubble. It reaches the foot of the first numeral only at the very end and goes no further. Loose strands of weed at the outer edges stir a little where the water touches them. The pale sky reflected in the wet mud shifts slowly as the surface moves.
+
+The four weed numerals are solid objects lying on the ground. They do not move, do not shift, do not change shape and are never covered by the water. Nothing else in the frame moves.
+
+Constraints: no people, no boats, no birds and no vehicles anywhere in frame. No text, writing, signage or markings of any kind — every surface stays bare. Nothing glows and nothing is lit from within; the wet mud is the brightest thing in the picture. No lens flare, no bloom.
+
+Audio: water spreading thinly over mud and shingle, a low river hum, cold wind across open ground, and one gull calling somewhere off screen. No music, no voices and no dialogue.
+
+Thanks.
+```
+
+**Fallback, ~50 words** — fire this if the primary drifts, before rewriting a word of it:
+
+```prompt
+The attached image is the locked opening frame. One continuous shot, no cuts, camera locked off, no camera movement of any kind. The tide creeps slowly up the wet mud toward the numerals and stops at the first one. The weed numerals never move or change shape. 35mm, 24fps, fine grain. Audio: water over mud, wind, a distant gull. No music, no voices.
+
+Thanks.
+```
+
+#### What to check before accepting
+
+1. 🔴 **The numerals at 100%, on the last frame as well as the first.** Reflow is the risk; a `0`
+   that has thickened or an `8` that has opened between frame 1 and frame 240 kills the take.
+2. **Did the camera stay put?** Any push, drift or reframe → fallback prompt, not a rewrite.
+3. **Did it cut?** Same answer.
+4. **Is the water's edge ragged?** A straight advancing line is the floaty-motion tell wearing a
+   costume.
+5. **Nothing crawled onto a surface** — no writing on the far wall, the coping or the stumps.
+
+#### Then the post pass
+
+⬜ **Premiere:** the slow push in on the numerals over the back half, and the cut point. Use the
+**last few seconds**, where the water is closest — that is where the shot's question is sharpest.
+⚠️ [`edit-plan.md`](./edit-plan.md) wants clips down to ~4.6s average, and this insert was
+budgeted at 1.5–2s. **It is worth 3–4s** — a gesture that resolves cannot be paid for in two
+seconds, and the seconds should come out of the flabby middle of the film, not out of its first
+image. Jack's call.
+
+
+### ⚠️ Two `1y` takes exist — the master was swapped 2026-08-30
+
+Jack accepted the year plate on one take and then handed a **different, wider take** as the
+reference for `4y`. The second one governs, and it is the better frame: more foreshore, the jetty
+stumps read as a row rather than a clump, and — the thing that was ever in doubt — **the `8` is
+cleanly closed on both loops.**
+
+| File | Status |
+| --- | --- |
+| [`camera/reference/1y-foreshore-2008-ACCEPTED.png`](./camera/reference/1y-foreshore-2008-ACCEPTED.png) | 🔒 **the master.** The take Jack handed over as the `4y` reference. Everything downstream matches this one |
+| [`camera/reference/1y-foreshore-2008-alt-round1a.png`](./camera/reference/1y-foreshore-2008-alt-round1a.png) | The first accepted take, kept. Tighter framing, weaker `8` |
+
+⚠️ **The clip prompt above was written against the alt take.** Nothing in it needs changing — it
+describes motion and names no geometry — but **generate the clip from the master**, not the alt,
+or the film's opening shot and its 2026 rhyme will not be the same picture.
+
+### 4y — the year on the foreshore, 2026 · **still** · written 2026-08-30, unrun
+
+**The second and last instance of the film's clock.** Pairs with `1y`; the two are the device and
+neither is worth anything alone.
+
+#### 🔴 This is a REFERENCE job, not a restatement — and that is a change of method from `1a`/`4a`
+
+`4a` was made by re-firing `1a`'s text with the tower swapped, matching by identical wording. **We
+are not doing that here.** Jack supplied the accepted plate as a reference, and the house finding
+([`nano-banana-2.md` §2/§19](../../google-flow/nano-banana-2.md)) is that **you do not restate what
+a reference already shows** — restating it is what let a stale reference beat the prompt in
+`11b(i)` round 3. So the prompt below names the reference's role, then spends itself almost
+entirely on **the two deltas**.
+
+🔴 **The known risk this runs into is [§21](../../google-flow/nano-banana-2.md): *a multi-part
+change to one object loses outright to a reference showing it intact.*** The numerals *are* one
+object and they *are* the change, so the reference actively argues for keeping `2008`. Two
+mitigations are built in: **the reference's role is declared as location-only**, and the new
+numerals are stated **early, positively, and with the old value explicitly negated.**
+
+#### What changes, and it is exactly two things
+
+**1. The numerals read `2026`.** Same size, same position, same material, same laying.
+⚠️ **The risky glyph has moved from the `8` to the `6`** — a closed loop with an open tail is
+where weed digits fail. It is named as a failure in the prompt, the same pattern as `4b`.
+
+**2. Eighteen years of rubbish have washed up — and it is threaded *through* the weed, not piled
+on it.**
+
+🔑 **The decision that matters, and why the obvious bolder version was not taken.** The tempting
+image is *the 2026 digits made of plastic instead of weed* — the river still writing, with nothing
+left to write with. It is a better single picture and a worse **clock**: the device's engine is
+*same frame, one thing changed*, and swapping the material makes the eye read **a different thing**
+rather than **the same thing, later**. So the weed stays, and the plastic is tangled into it: at a
+glance it is the same black writing, close up it is half refuse. The argument survives, the match
+survives.
+
+⬜ **The bold version is still on the table** if Jack wants it — it is one clause, and it would be
+the film's most quotable frame. It just stops being a timestamp.
+
+**Gate 2 is where this shot gets its cost**, and it is literal: the tide line *is* the visible
+cost. ⚠️ **Restraint is the risk** — *one clean subject beats three ambiguous ones*
+([`symptoms.md`](../../cinematography/symptoms.md)), and a foreshore turned into a landfill
+cartoon loses the digits. **One hero object: the overturned trolley among the stumps** — which
+quietly rhymes with the Waitrose car park and its trolley shelter. Unbranded, because a readable
+fascia here would be both a gibberish-text risk and too cute; the car park owns that joke.
+
+#### 🔒 What must NOT change, and one of them is counter-intuitive
+
+- **The far bank stays exactly as it is.** No new towers, no glass spire, no cranes. Ruled: **the
+  skyline change is `1a` → `4a`'s job** and this pair must not compete with it. Change the
+  background and the eye reads *different place* instead of *same place, later*, and the claim —
+  **the river did not change, and it kept the receipt** — collapses.
+- **Same camera height and angle, same framing.** Copy it off the plate, not off the round-2
+  prompt that was never run.
+- **Same tide state, same shallow sheet of water over the ribbed mud.**
+- **Same flat overcast, no sun, no shadows.** Any light change reads as a different day and kills
+  the match.
+
+```prompt
+SCENE:
+
+Generate a hyper-realistic documentary photograph on 35mm colour negative — fine natural grain, muted and cool, real atmospheric haze, slightly uneven exposure. Naturalistic motivated light only. No lens flare, no glow, no bloom, no halo.
+
+The attached image is the reference for the location, the camera position, the framing and the light, and for nothing else. Reproduce all of that exactly: the same tidal river foreshore at the same state of tide, the same camera height and steep downward angle, the same broken row of rotted black timber jetty stumps, the same far bank with the same buildings standing on it, the same cobbles, brick rubble, mooring ring and rusted iron handrail crossing the bottom of the frame, the same flat white overcast with no sun and no shadows, and the same shallow sheet of water lying over the ribbed grey-brown mud. Nothing about the place itself has changed.
+
+Two things are different, and only these two.
+
+First, the numerals. They read 2 0 2 6. They do not read 2008. They are the same size and in the same position, laid across the middle of the frame the same way, and made of the same matted green-black river weed. Each numeral is one continuous unbroken band of even thickness so its shape is closed and reads instantly: the zero is a closed ring, the two twos match each other, and the six is a closed loop with one clear open tail curving up out of it.
+
+Second, eighteen years of rubbish have washed up. The weed forming the numerals is threaded through with plastic — grey wet wipes matted into the strands, a length of frayed blue rope, filaments of torn netting, a flattened bottle — so at a glance the numerals still read as dark weed writing, and close up they are half refuse. More of it lies scattered on the mud around them and gathered along the tide line among the jetty stumps: dirty plastic bottles, torn bags, a traffic cone on its side. A shopping trolley lies overturned in the shallow water among the stumps, rusted and half sunk into the mud.
+
+Constraints: the numerals stay dark against the pale reflective mud and stay completely legible — the rubbish is threaded through the weed, never piled over the shapes and never breaking a stroke. No people, no boats, no birds and no vehicles. No brand marks, logos, labels or readable lettering on the trolley, the bottles, the cone or anywhere else in the frame; every printed surface is worn blank, and the trolley carries no supermarket name. The buildings on the far bank are exactly as in the reference — no new towers, no tapering glass spire, no cranes. Nothing glows and nothing is lit from within; the wet mud is the brightest thing in the picture.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+#### What to check before accepting — and the first check is the whole point
+
+1. 🔴 **Put `1y` and `4y` side by side.** If the far bank, the stumps, the handrail, the cobbles or
+   the horizon have moved, **the device has failed**, whatever the digits look like. That is the
+   only test that matters.
+2. **`2026`, not `2008`** — §21 says the reference will argue for the old value. Check it first.
+3. **The `6` at 100%.** Closed loop, clear tail, tail not fused back into the loop.
+4. **The digits still read dark and clean** — rubbish threaded through, no stroke broken.
+5. **No lettering anywhere**, especially the trolley and the bottles.
+
+**If accepted → the clip.** Omni Flash, **Frames**, this still as the start frame, end slot empty,
+camera locked. 🔑 **The motion is the rhyme, and it inverts:** `1y` has the tide **coming in**,
+about to take the year. `4y` should have it **going out** — the water draining off the mud and
+leaving the digits and the rubbish behind, uncovered. The river took 2008 away; it has finished
+with 2026 and left it lying there.
+
+
+### 4y — round 1 · ✅ **ACCEPTED** (Jack, 2026-08-30) · 🔒 the pair is closed
+
+🖼 **Master banked:** [`camera/reference/4y-foreshore-2026-ACCEPTED.png`](./camera/reference/4y-foreshore-2026-ACCEPTED.png).
+
+**The test that mattered passed.** Side by side with `1y` the far bank is the same — same pale
+tower left of centre, same brick wall and its buildings right — and so are the jetty stumps, the
+cobbles, the mooring ring, the handrail across the bottom, the horizon, the overcast and the water
+level. 🔑 **The eye reads one place, twice.** That is the whole device, and it is now built.
+
+- ✅ **`2026`, not `2026`-shaped-`2008`.** §21's warning — the reference arguing for the old value
+  — did not bite. Declaring the reference **location-only** and negating `2008` explicitly appears
+  to be what did it; **reuse that shape whenever a reference has to be overruled on one element.**
+- ✅ **The `6` closed**, loop and tail both.
+- ✅ **The trolley landed** and is the frame's hero object exactly as designed — half sunk among
+  the stumps, unbranded, reading instantly.
+- ✅ **The blue rope threads *through* the digits** rather than over them; no stroke is broken.
+- ✅ No lettering, no people, no boats, no birds.
+
+⚠️ **The rubbish over-delivered slightly** — two traffic cones rather than one, and the near
+foreground is busier than `1y`'s. **Not a defect:** the busier frame *is* the eighteen-year delta,
+and the digits still win the frame on contrast. Recorded only because it is the thing to trim
+first if a future version of this pair feels cluttered.
+
+### 4y — the tide going out · **video** · written 2026-08-30, unrun
+
+**Routing:** identical to `1y` — Omni Flash → **Frames**, the accepted `4y` master as start frame,
+**end slot empty**, 10s, camera locked.
+
+#### 🔑 The motion inverts, and that inversion is the argument
+
+`1y` has the tide **coming in**, about to take the year. **`4y` has it going out.** The water
+drains off the mud and leaves the digits and the rubbish lying uncovered.
+
+- **2008 is being taken away.** The past going under, while you watch.
+- **2026 is being laid bare.** The river has finished with it and left it there. **The tide gave
+  the year back, and this is what came with it.**
+- It is also what an ebbing Thames physically does, so the whole beat is motivated and needs no
+  invention.
+
+⚠️ **`4y` should feel deader than `1y`, not livelier.** Advancing water is active and threatening;
+draining water is abandonment. That governs every small decision below — **when in doubt here,
+take life out of the frame, not add it.**
+
+**Consequently, and deliberately:**
+
+- ⬜ **No stirring plastic bag, no flapping sheet.** It was considered and cut. Same call as `1y`'s
+  gull: one physical system per clip, and here the second system would have added *life* to the
+  shot that most needs to lack it.
+- 🔑 **No gull in the audio either — and that is the point.** `1y` has one calling off screen.
+  `4y` has no bird at all. Nobody will notice consciously, and that is the correct amount of
+  noticing. In its place, **a low distant mechanical hum** — deliberately ambiguous between traffic
+  and something else, ⬜ and available to be sharpened into a drone if Jack wants the scene-11
+  reveal quietly planted this early. Left ambiguous by default because on-the-nose is the failure
+  mode there.
+- **The one detail that does move besides the water: the trolley.** As the level falls, more of it
+  comes clear. 🔑 **The gate-2 cost being *revealed* by the motion** rather than just sitting in
+  frame — the best thing in the shot, and it costs nothing because it is the same physical event.
+
+#### 🔴 The anti-slop risks that are NEW here, versus `1y`
+
+`1y`'s table still applies. These are the ones this frame adds:
+
+| The risk | Why it is new | The clause |
+| --- | --- | --- |
+| 🔴 **More objects = more things to morph.** Cones, bottles, bags, rope, sheeting | `1y` had bare mud; every added object is a chance for the model to reshape or drift it across 240 frames | **All the debris is named as static and told to stay exactly where it is.** This is the single most important line in the prompt after the numerals |
+| 🔴 **The trolley is a wire mesh grid** | Two named artefact classes at once — repeating texture tiling *and* thin-structure mangling, which models handle badly | It **does not move**; only the water level around it changes. Never ask the mesh to do anything |
+| ⚠️ **More printable surfaces** — bottles, bags, cone | `[confirmed 2026-08-17, Karen §2j.6sv]`: a clip block that never mentioned signage grew writing on a sign. More surfaces, more vacuum to fill | **Every printed surface stays worn blank**, restated in the clip block and not left to the plate |
+| **Larger area of moving water** | Reflection breakdown is a named tell | Ask only for the **diffuse sky** shifting. Never an object's reflection |
+
+**Primary:**
+
+```prompt
+The attached image is the locked opening frame.
+
+One continuous shot, no cuts. The camera is locked off on a tripod and does not move at all — no push, no pull, no pan, no tilt, no drift, no reframe. Shot on 35mm at 24 frames per second with a 180-degree shutter, fine natural grain, muted and cool and desaturated.
+
+The tide is going out. Through the whole shot the thin sheet of water lying over the mud drains slowly away toward the river, its edge retreating unevenly, finding the ribs and hollows and leaving them wet and glistening as it uncovers them. Around the sunken shopping trolley the level falls a little and more of the trolley comes clear of the water. The pale sky reflected in the wet mud shifts slowly as the surface drains.
+
+The four weed numerals are solid objects lying on the ground. They do not move, do not shift and do not change shape. All the rubbish — the traffic cones, the bottles, the bags, the rope, the sheeting and the trolley — lies completely still and stays exactly where it is. Nothing else in the frame moves.
+
+Constraints: no people, no boats, no birds and no vehicles. No text, writing, logos or labels of any kind — every printed surface stays worn blank. Nothing glows and nothing is lit from within; the wet mud is the brightest thing in the picture. No lens flare, no bloom.
+
+Audio: water draining and trickling away through mud and shingle, cold wind across open ground, and a low distant mechanical hum. No birds, no music, no voices and no dialogue.
+
+Thanks.
+```
+
+**Fallback, ~55 words:**
+
+```prompt
+The attached image is the locked opening frame. One continuous shot, no cuts, camera locked off, no camera movement of any kind. The tide goes out: the thin sheet of water drains slowly off the mud toward the river and uncovers it, and more of the sunken trolley comes clear. The weed numerals and all the rubbish stay completely still. 35mm, 24fps, fine grain. Audio: draining water, wind, a low distant hum. No birds, no music, no voices.
+
+Thanks.
+```
+
+🔴 **Fire whichever length worked for `1y`.** The two clips are a pair and were generated from the
+same plate lineage; a long prompt on one and a short prompt on the other introduces a variable the
+pair cannot afford. This is also the second half of the
+[prompt-length experiment](../../google-flow/omni-flash.md) — **record which one produced each
+accepted clip.**
+
+#### Check before accepting
+
+1. 🔴 **Numerals at 100% on the LAST frame as well as the first.** Reflow across 240 frames is the
+   risk, exactly as in `1y`.
+2. 🔴 **Did any of the rubbish move, drift or change shape?** New risk, and the likeliest one here.
+   Watch the cones and the trolley mesh specifically.
+3. Camera stayed put? Did it cut? → fallback prompt, not a rewrite.
+4. Is the retreating water edge ragged? A straight line is the floaty-motion tell in costume.
+5. Nothing crawled onto a surface — bottles, bags, cone, far wall.
+
+#### 🔴 The post pass, and the one decision it forces
+
+⬜ **Premiere: the same slow push in as `1y`, identically.** ⚠️ **Whatever camera move `1y` gets,
+`4y` gets** — the device is a clock, and a clock that behaves the same way twice is what makes it
+read as one. The content already changed; the grammar must not.
+
+⬜ **The tempting alternative, and the recommendation against it.** `4y` could **pull out** instead
+— widening to take in the rubbish, where `1y` pushes in to the year. It maps beautifully onto what
+each shot's information actually is. **Do not do it.** It breaks the grammar that makes the two
+frames read as one device, and it leaves `4y` ending wide, which is a weak button on the shot that
+opens the film's second act. *Recorded because it is a good idea and someone will have it again.*
+
+
 ### 1b — the trading floor · **still** · accepted
 
 **Recovered 2026-08-26.** Two things in this prompt are ahead of canon — see the notes

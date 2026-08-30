@@ -60,8 +60,14 @@ second prop, not the first.
 ### 2. 2008 — meet Bob
 
 Meet Bob: a normal, nice guy — a middle manager, and the job must stay
-deliberately unremarkable. Him and his wife are driving off somewhere — a
+deliberately unremarkable. Him and his wife **Jo** are driving off somewhere — a
 holiday. Without ever seeing a tent, we already like Bob.
+
+> **Jo — named 2026-08-30 by Jack**, after being "his wife" for the whole of development.
+> ⬜ **How far the name reaches is deferred** — she is Jo in canon, but whether the *film* says
+> it (scene 2's narration, and Bob's *"I wish my wife was here"* in scene 8) is not ruled.
+> Both drafts sit in [`characters/bob.md`](./characters/bob.md#jo--bobs-wife-named-2026-08-30-by-jack).
+> The two lines are **one decision, not two**.
 
 ### 3. The crash
 
@@ -303,11 +309,14 @@ reason 2008 hit."
 ## Scene 2 — 2008: meet Bob
 
 **Shot:** An ordinary car on an ordinary road. Bob (younger, brighter-eyed —
-see [`characters/bob.md`](./characters/bob.md)) driving, his wife beside him.
+see [`characters/bob.md`](./characters/bob.md)) driving, his wife **Jo** beside him.
 Luggage. A holiday.
 
 **NARR (draft):** "Meet Bob. Nice guy. Middle manager. Normal." — keep the job
 deliberately unremarkable; that's the point.
+⬜ **Unruled:** whether a fourth beat names her — *"…Normal. That's Jo."* See
+[`characters/bob.md`](./characters/bob.md#-open-how-far-the-name-reaches--deferred-by-jack-2026-08-30-well-see).
+**It is the same decision as Bob's scene-8 line.**
 
 ## Scene 3 — the crash
 
@@ -394,6 +403,9 @@ prolonging** — then Tarquin strides into the shop / drives off.
 **TARQUIN (draft):** "Get a job, you lazy c***."
 **BOB (draft):** "F***ing wank tanks. You're all pricks. …I wish my wife was
 here."
+⬜ **Unruled:** *"…I wish **Jo** was here."* 🔑 *My wife* is a category; a name is a person, and
+the line gets considerably worse to hear. ⚠️ Only works if she was named in scene 2 — an unheard
+name arriving at the emotional peak reads as a continuity error. **Both or neither.**
 
 The crack in the armour from Scene 5 slaps shut. Cut.
 

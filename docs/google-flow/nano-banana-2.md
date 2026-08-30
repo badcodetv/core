@@ -903,6 +903,79 @@ That retreat may not have been necessary.
 ⚠️ **`out of focus` on a foreground element is weakly obeyed and needs reinforcing** — round 1
 ignored it outright. Round 2's *"thrown completely out of focus so that it is a soft blur"* held.
 
+### 27. 🔴 Ask for an object, never an absence — a subtractive shape comes back **inverted** `[observed 2026-08-30]`
+
+Camping `1a-year` asked for the numerals **2 0 0 8 torn out of an overcast lid — holes in the
+cloud showing pale sky behind, not writing, not light, not projected.** The clause said what it
+was not, three ways, and restated *"the cloud has simply parted in that shape."*
+
+**What came back was the exact inverse: four dark soot-coloured shapes sitting *on* the cloud** —
+smoke writing, which is the one thing the shot was designed to avoid.
+
+🔑 **The cause is not disobedience, it is vocabulary.** The model has no trained visual for *an
+absence shaped like a glyph*; it has a large one for *smoke written across a sky*. Given a shape
+it can only render as a positive, it renders it as a positive and picks the trope it owns. Piling
+on more negations does not help — it has nothing to substitute *toward*.
+
+⚠️ **A second, independent failure rode along, and it is worth checking for separately:** the
+device was **self-defeating on contrast**. A hole in flat grey overcast shows *pale grey sky* —
+almost no separation. The prompt had also banned glow and bloom, so the only route left to make
+the shape legible was to make it **dark**. **Before blaming the wording, check whether the frame
+physically contains the contrast the instruction needs.** If it does not, no phrasing fixes it.
+
+**The rule:** state the thing as **a positive object with a material, sitting on a ground that
+contrasts with it.** Camping's fix moved the same four numerals from *holes in cloud* to *matted
+black river weed lying on pale wet mud* — additive, material named, ground named, contrast
+guaranteed by the ground reflecting the sky.
+
+**Related:** §23 (convert negatives into positives before use) — this is the sharpest case of it
+found so far, and it upgrades that entry from a phrasing preference to a **failure mode**.
+
+### 28. ⚠️ Ground-plane lettering breaks where it foreshortens — and the model under-delivers height `[observed 2026-08-30]`
+
+Camping `1y` asked for four numerals laid flat on a foreshore, shot from **five metres up at a
+45° down tilt**. The return came back nearer **two to three metres at ~30°** — a consistent
+under-delivery of both height and tilt, worth budgeting for on any stated camera elevation.
+
+**The consequence is specific and predictable:** a shallower angle puts the glyph row into hard
+perspective, and the numeral **furthest from the lens compresses most**. Three of the four
+rendered clean; the far one — an `8` — had its waist open into two disconnected pieces and read
+closer to `%`.
+
+🔑 **So when in-frame text lies on the ground, the fix for a malformed glyph is usually the
+camera, not the text clause.** Steepen the tilt until the row is near-flat to the lens and the
+compression that broke it is gone. Ask for more height and more tilt than you want, since some
+of it will not arrive.
+
+**Pair it with a closure clause** naming the specific failure — *each numeral is one continuous
+unbroken band, the eight is two closed loops joined at a clear narrow waist* — the same
+name-the-failure pattern as camping `4b`.
+
+### 29. ✅ To overrule a reference on ONE element: declare its role narrowly, then negate the old value `[observed 2026-08-30]`
+
+§21 says a reference showing an object intact **beats** a multi-part change instruction to that
+object. Camping `4y` had to run straight at that: the same foreshore plate, everything held, but
+the four weed numerals changing from `2008` to `2026` — one object, and it *is* the change.
+
+**It worked first time.** Two clauses appear to be why, and they are cheap to reuse:
+
+1. 🔑 **Declare the reference's role narrowly and exclusively** — *"the attached image is the
+   reference for the location, the camera position, the framing and the light, **and for nothing
+   else**."* Then list what to reproduce from it, item by item. The element you intend to change is
+   conspicuously **not on that list**, which is what stops the reference claiming authority over it.
+2. 🔑 **State the new value early and positively, then negate the old one explicitly** — *"They
+   read 2 0 2 6. They do not read 2008."* Naming the old value is what makes the negation
+   actionable; without it the model has nothing to push against.
+
+**Everything else in the frame was left to the reference and came back matching** — far bank,
+stumps, cobbles, handrail, horizon, overcast and water level all held well enough that the two
+plates read as one place. So this pattern does **not** cost you the reference's grip on the rest of
+the frame, which was the obvious worry.
+
+**Use it wherever a reference has to be overruled on exactly one element.** n=1, so it is a
+pattern, not a law — but it is a cheap first thing to try before falling back to a full
+restatement.
+
 ### 19. 🔴 §2's "do not restate the reference" applies to PEOPLE, not just sets `[confirmed 2026-08-27]`
 
 Camping **8c(i)**. `@Bob` was cast **and** his canon appearance was pasted in as prose — beanie,
