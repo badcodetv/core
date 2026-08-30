@@ -10,6 +10,10 @@
 > 🎬 **The Premiere assembly now exists and is mapped clip-by-clip:
 > [`assembly.md`](./assembly.md)** *(2026-08-30)* — all 34 clips in `new clips/`, in order,
 > untrimmed, matched to shot IDs by rendering and looking at every one. **Read it before cutting.**
+> 🗣 **Writing the narration? Start at [`narration-brief.md`](./narration-brief.md)**
+> *(2026-08-30)* — what each scene's narration must do, the three canon-silent stretches, the
+> ~250–320 word ceiling, and the rule that outranks the rest: **the scene-11 AI reveal has to reach
+> back to scene 4 and the man who owns it**, or the film becomes an anti-AI film by accident.
 > 🔪 **The proposed re-cut is [`edit-plan.md`](./edit-plan.md)** *(2026-08-30, nothing
 > executed)* — the governing fact is that **`narration.mp3` is 150s against 272s of picture**, so
 > the average clip has to come down from 8.0s to about 4.6s. Seven edits, worst first.

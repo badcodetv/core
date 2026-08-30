@@ -23,8 +23,8 @@
 | # | Shot | What is in the frame | Note |
 | --- | --- | --- | --- |
 | 1 | **1a** | City skyline, old NatWest Tower, Gherkin, St Paul's | ✅ |
-| 2 | **1c?** | One man at a trading desk, on the phone, holding a document | ⚠️ see *the scene-1 swap* |
-| 3 | **1b?** | Wide trading floor, rows of screens, shirtsleeves | ⚠️ see *the scene-1 swap* |
+| 2 | **1b** | Wide trading floor, rows of screens, shirtsleeves | ✅ **swapped into canon order 2026-08-30** — `3.mp4` now plays second |
+| 3 | **1c** | One man at a trading desk, on the phone, holding a document | ✅ `2.mp4` now plays third |
 | 4 | **2a** | The car on the lane, luggage on the roof | ✅ |
 | 5 | **2b** | Bob and his wife in the front seats, laughing | ✅ |
 | 6 | **3b** | Dashboard binnacle, green indicator telltale lit | ✅ |
@@ -72,12 +72,17 @@ Shard and the time jump is carried by nothing.
 **Either the clip was never exported, or it is outside `new clips/`.** Check the older `clips/`
 folder before re-making anything.
 
-### ⚠️ The scene-1 swap — clips 2 and 3 may be the wrong way round
+### ✅ The scene-1 swap — DONE 2026-08-30
 
 Canon is `1a` skyline → **`1b` the trading floor** → **`1c` young Tarquin mid-deal**. The timeline
 runs skyline → **one man on the phone** → **the wide floor**, which is `1c` before `1b`.
 
-**A human call, because it might be the better order anyway** — landing on the individual and then
+✅ **Ruled by Jack 2026-08-30: swapped to canon order.** `3.mp4` (the floor) now plays at 10s and
+`2.mp4` (the man) at 18s. **The timeline and the shot list now agree.**
+⚠️ **Two mechanical facts learned doing it, worth keeping:** `premiere_move_clip` **does not move a
+clip's linked audio** — video and audio must be moved as separate calls or the take desyncs; and a
+move **silently dropped `narration.mp3` off A2**, so re-check other tracks after any move.
+*(It was the better order anyway — landing on the individual and then
 pulling out to the floor he is part of is a legitimate move. But it is not what the shot list says,
 and one of the two documents should change. *(This is the only place in the whole assembly where
 the order disagrees with canon.)*
