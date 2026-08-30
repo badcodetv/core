@@ -464,8 +464,9 @@ explained**. Bob asks *him*.
 open — land the shared-humans note without going soft; see the decisions log
 above.)*
 
-*(Optional post-credits stinger: an ATM screen — `EMPLOYMENT COLLAPSE SURVIVAL
-MENU / ▸ STAY PUT` — "THANK YOU FOR BANKING WITH US.")*
+*(~~Optional post-credits stinger: an ATM screen — `EMPLOYMENT COLLAPSE SURVIVAL
+MENU / ▸ STAY PUT` — "THANK YOU FOR BANKING WITH US."~~ **Struck 2026-08-30 (Jack).** It was
+salvage from the retired folders, never in the transcript, and the film ends on the embers.)*
 
 ## Scene → asset checklist
 

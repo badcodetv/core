@@ -388,9 +388,13 @@ men before the plot starts, so the rest of the film can dismantle it.*
   the story.
   🔴 **Recommended and open to argument: no wordmark in the frame.** Ending on a logo turns the
   film into an advert; the mark goes on an end card after the hold.
-- **12e** *(optional stinger)* — an ATM: `EMPLOYMENT COLLAPSE SURVIVAL MENU / ▸ STAY PUT`. *"THANK YOU FOR BANKING WITH US."*
-  ⚠️ **NOT from the Jack/Kai conversation** *(checked 2026-08-30, at Jack's prompt — the same
-  check that caught "clamped").* No ATM, cash machine, stinger, post-credits, end card, logo or
+- ~~**12e** *(optional stinger)* — an ATM: `EMPLOYMENT COLLAPSE SURVIVAL MENU / ▸ STAY PUT`. *"THANK YOU FOR BANKING WITH US."*~~
+  🔒 **STRUCK 2026-08-30 (Jack): *"we will just leave that as the ending."*** `12d` is the
+  last frame of the film. **Scene 12 is closed at four shots — `12a`, `12c`, `12d`, and `12b`
+  struck.**
+  **Why it went, recorded because the check is reusable.**
+  ⚠️ **It was NOT from the Jack/Kai conversation** *(checked 2026-08-30, at Jack's prompt — the
+  same check that caught "clamped").* No ATM, cash machine, stinger, post-credits, end card, logo or
   wordmark appears anywhere in [`master-notes-2026-08-04.md`](./master-notes-2026-08-04.md). It is
   **salvage from the retired `camping` / `camping-v2` folders**, and
   [`story.md`](./story.md#salvage-optional-easter-eggs-from-the-retired-versions) files it under
