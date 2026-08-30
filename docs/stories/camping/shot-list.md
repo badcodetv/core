@@ -364,6 +364,10 @@ men before the plot starts, so the rest of the film can dismantle it.*
   browned only, because a curling burning page is exactly where a headline morphs; the burn-through
   is the clip's job. 🔒 **Locked and angled down** — the tilt-up is spent once, in `12d`.
 - **12d Pan up with the smoke — the rising embers become the bad code.** Hold. End.
+  ✅ **CONFIRMED AS THE END OF THE STORY 2026-08-30, from the transcript.** Jack asked whether
+  anything follows `12d`. **Nothing does.** This is where Kai and Jack stopped, in the words above,
+  and it is the only ending the conversation ever proposes. **`12d` is the last frame of the
+  film**; everything after it is packaging (end card, mark, credits), not story.
   ✅ **PLATE SHOT 2026-08-29, first take** — master at
   [`camera/reference/scene-12d-embers-plate-ACCEPTED.png`](./camera/reference/scene-12d-embers-plate-ACCEPTED.png).
   🔑 **The frame beat the brief:** the two men run up ~40% of the tall frame rather than the
@@ -385,6 +389,20 @@ men before the plot starts, so the rest of the film can dismantle it.*
   🔴 **Recommended and open to argument: no wordmark in the frame.** Ending on a logo turns the
   film into an advert; the mark goes on an end card after the hold.
 - **12e** *(optional stinger)* — an ATM: `EMPLOYMENT COLLAPSE SURVIVAL MENU / ▸ STAY PUT`. *"THANK YOU FOR BANKING WITH US."*
+  ⚠️ **NOT from the Jack/Kai conversation** *(checked 2026-08-30, at Jack's prompt — the same
+  check that caught "clamped").* No ATM, cash machine, stinger, post-credits, end card, logo or
+  wordmark appears anywhere in [`master-notes-2026-08-04.md`](./master-notes-2026-08-04.md). It is
+  **salvage from the retired `camping` / `camping-v2` folders**, and
+  [`story.md`](./story.md#salvage-optional-easter-eggs-from-the-retired-versions) files it under
+  *"none are canon-required"* — as *"possible post-credits"*, which is weaker still.
+  🔴 **And the transcript is positively against it, not merely silent.** The ending was
+  settled in one exchange and closed — Kai: *"the ending being the newspaper gets thrown in the
+  fire, the smoke, and then the camera just pans up into the sky and maybe the smoke could be the
+  bad code. That's sick."* Jack: *"All the embers."* Kai: *"that's brilliant — okay, let me take
+  a breath."* **The conversation then moves to structure and never returns to the ending.**
+  Kai's own word for the beat before it is **"mic drop"** — *"drop the mic because I think we've
+  told the story"* — and a stinger after a mic drop takes the mic back.
+  **A human call, but the recommendation is: cut `12e`.**
 
 ---
 
