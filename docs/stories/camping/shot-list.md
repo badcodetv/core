@@ -10,6 +10,9 @@
 > 🎬 **The Premiere assembly now exists and is mapped clip-by-clip:
 > [`assembly.md`](./assembly.md)** *(2026-08-30)* — all 34 clips in `new clips/`, in order,
 > untrimmed, matched to shot IDs by rendering and looking at every one. **Read it before cutting.**
+> 🔪 **The proposed re-cut is [`edit-plan.md`](./edit-plan.md)** *(2026-08-30, nothing
+> executed)* — the governing fact is that **`narration.mp3` is 150s against 272s of picture**, so
+> the average clip has to come down from 8.0s to about 4.6s. Seven edits, worst first.
 > It raises four things this file did not know: **`4a` is not on the timeline**, clips 2 and 3 may
 > be `1c` before `1b`, **scene 9 has seven clips and four have no shot ID**, and **`12a` was shot
 > in daylight where `12c` and `12d` are night.**
