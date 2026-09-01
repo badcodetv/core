@@ -59,7 +59,7 @@ for exactly this man:
 | 7 | `Madchester spoken vocal, Manchester spoken word` (candidate D) | ragged mid range, nicotine-worn, slurred | — superseded by Jack's pick before testing |
 | 8 | `Northern English storytelling, British spoken-word monologue` (candidate E) | warm ragged mid range | — superseded by Jack's pick before testing |
 | 9 | `Northern English spoken word, British kitchen-sink realism` (candidate F) | plain, hard, weathered mid range with grit | 🔴 **read like a poem** — and so was every round before it. The fault was the genre word, in all four boxes |
-| **10 — current** | **`Hip hop skit, album interlude, a spoken intro over a beat`** (A) · **`Audiobook narration, radio drama`** (B) | **deep, dry, weathered, ordinary speech rhythm** | ⬜ untested. **First round with no `spoken word` anywhere, prose lyrics, a beat allowed, and `deep` un-banned** |
+| **10 — current** | **`Trip hop skit, downtempo spoken interlude`** (A) · **`Audiobook narration, radio drama`** (B) | **deep, dry, weathered, ordinary speech rhythm** | ⬜ untested. **First round with no `spoken word` anywhere, prose lyrics, a beat allowed, and `deep` un-banned** |
 
 🔑 **What round 2 got wrong, and it is the lesson worth keeping: it moved two variables at once.**
 The pool was never the fault — the *pitch word* was. Swapping the pool out as well threw away the
@@ -386,17 +386,38 @@ Swap this in for the session and **restore the freedom token afterwards** — My
 generation, cannot be turned off, and is account-wide.
 
 ```taste
-Vocals: one male voice, and he is TALKING, not singing and not reciting. A deep, dry, weathered northern English working-class man in his forties, grit in the voice, hard northern consonants, close and dry right up on the microphone. Ordinary conversational speech rhythm — uneven sentence lengths, some sentences run together and some stop dead, exactly as a man talks. Bored, sarcastic and certain, giving nothing away, never signalling a joke. Music: one slow dusty low loop underneath, drums only, no melody and no chords. Register: grim and funny, played completely straight.
+Vocals: one male voice, and he is TALKING — not singing, not rapping, not reciting. A deep, dry, weathered northern English working-class man in his forties, real grit in the voice, hard northern consonants, close and dry right on the microphone. Ordinary conversational speech rhythm, uneven sentence lengths, some sentences running together and some stopping dead, exactly as a man talks. Bored, sarcastic and certain, giving nothing away, never signalling a joke. Music: one slow dusty drum loop underneath at 80 BPM, very low, no melody and no chords. Register: grim and funny, played completely straight.
 ```
 
-### Style — variant A · the skit 🥇
+### Style — variant A · the trip-hop skit 🥇
 
-**The recommended one.** Casts the form Jack named: a bloke talking over a beat, which is a real and
-heavily-recorded thing, where a northern man reciting over silence is a poetry record.
+**The recommended one, and the pool changed after research on 2026-09-01.** The first draft said
+`hip hop skit`, whose risk is named in §6: **that pool casts a young MC.** **Trip hop removes the
+risk structurally** and is a better fit on four counts at once:
+
+| | |
+|---|---|
+| **It is British by origin** | Bristol, not Atlanta. Nationality rides on the genre tag, and this tag is already ours |
+| **It is slow** | Downtempo, 80-ish BPM. The brief wants *unhurried and certain*, and for the first time the pool agrees instead of being fought |
+| **Its native vocal is a man half-talking, low** | Low, close, mumbled male delivery over a beat is the genre's signature — not a performance-poetry register, and not a rapper's |
+| **Its beats are dusty and unpitched** | Which is exactly the bed the melody-not-rhythm rule allows |
 
 ```
-Hip hop skit, album interlude, a spoken intro over a beat. A man talking to you, not performing and not reciting. Northern English, working class, forties. Deep, dry and weathered, grit in the voice, hard northern consonants, close and dry right up on the microphone. Ordinary speech rhythm — uneven sentence lengths, running some sentences together and letting others stop dead. Bored, sarcastic and certain; whatever is funny is in the words and he never signals it. Underneath, one slow dusty drum loop, very low, no melody, no chords.
+Trip hop skit, downtempo spoken interlude, a man talking over a beat, 80 BPM. Not singing, not rapping, not reciting — talking. Northern English, working class, forties: deep, dry and weathered, real grit in it, hard northern consonants, close and dry right on the microphone. Ordinary speech rhythm — uneven sentence lengths, some run together, some stop dead. Bored, sarcastic and certain, never signalling a joke. Underneath, one slow dusty drum loop, very low. Voice-forward mix, no singing, no chorus, no melody.
 ```
+
+🔧 **`80 BPM` is in the box deliberately** — naming a tempo is reported to stabilise rhythm, and a
+slow one buys unhurried delivery from the arrangement instead of from an adjective competing for
+attention. This is the round-6 pace problem solved by casting rather than by argument.
+
+⚠️ **`no singing, no chorus, no melody` sits in the Style box, against house doctrine**, which says
+negations belong in the Exclude box. Field-tested narration prompts put them in Style
+consistently, and both boxes carry them here. **If a take is otherwise good, this is the first
+thing to try removing** — it is the one place this sheet knowingly does both.
+
+🔴 **Trip hop's own failure mode, banned up front: the genre's other signature is a sung female
+lead** (the Bristol torch-song tradition). `female vocal, sung female vocal, torch song, jazz vocal,
+soul vocal, sultry, seductive` are in the Exclude box behind it.
 
 ### Style — variant B · the narrator, if A brings a rapper
 
@@ -418,7 +439,7 @@ Audiobook narration, radio drama, documentary voiceover. A man talking to you, n
 3. **`drums, drum kit, breakbeat, a cappella`-driven bans are LIFTED, pitched instruments are not.** The rule is **melody makes him sing, rhythm does not** — round 4's singing came from a glockenspiel and a French horn, not from a drum.
 
 ```
-singing, sung verses, sung chorus, melodic vocal, vocal melody, vocal hooks, crooning, chanting, autotune, harmonies, backing vocals, choir, spoken word, performance poetry, poetry slam, slam poetry, dub poetry, beat poetry, poetry reading, recital, recitation, declamatory, oratory, sermon, verse, stanza, rhyming, rhyme scheme, metrical, iambic, incantation, mantra, ritual, theatrical, dramatic reading, over-enunciated, elocution, female vocal, American accent, American vocal, transatlantic, southern drawl, US rap, grime MC, UK drill, road rap, young MC, rapping, bars, flow, trap, ragga MC, toasting, Jamaican accent, piano, glockenspiel, strings, violins, brass band, horns, guitar, acoustic guitar, melody, chord progression, chords, bassline, synth lead, pad, ambient pad, music hall, vaudeville, pantomime, ragtime, honky-tonk, jaunty, playful, whimsical, bouncy, comedic, novelty, parody, uplifting, epic trailer music, cinematic swell, film score, underscore, orchestral score, crime drama score, thriller score, suspense, tension strings, reverb, echo, telephone voice, lo-fi vocal, distorted vocal, vocoder, double time, tempo change, band, rock band, guitar band, live band, indie rock, post-punk band, full arrangement, instrumental intro, instrumental outro, instrumental break, monotone, robotic, machine voice, text to speech, computerised, fast delivery, rapid fire, breathless, hurried, frantic, manic, shouting, screaming, yelling, movie trailer voice, epic narrator, gentle, soft vocal, softly spoken, mellow, soothing, breathy, whispered, calm narration, polite, posh, plummy, RP, received pronunciation, BBC newsreader, after-dinner speaker, languid, wistful, stand-up comedy, comedy club, comedian, sitcom, laugh track, audience laughter, applause, live audience, cabaret, variety show, panto, kazoo, slide whistle, oompah, tuba, banjo, whistling
+singing, sung verses, sung chorus, melodic vocal, vocal melody, vocal hooks, crooning, chanting, autotune, harmonies, backing vocals, choir, spoken word, performance poetry, poetry slam, slam poetry, dub poetry, beat poetry, poetry reading, recital, recitation, declamatory, oratory, sermon, verse, stanza, rhyming, rhyme scheme, metrical, iambic, incantation, mantra, ritual, theatrical, dramatic reading, over-enunciated, elocution, female vocal, sung female vocal, torch song, jazz vocal, soul vocal, sultry, seductive, American accent, American vocal, transatlantic, southern drawl, US rap, grime MC, UK drill, road rap, young MC, rapping, bars, flow, trap, ragga MC, toasting, Jamaican accent, piano, glockenspiel, strings, violins, brass band, horns, guitar, acoustic guitar, melody, chord progression, chords, bassline, synth lead, pad, ambient pad, music hall, vaudeville, pantomime, ragtime, honky-tonk, jaunty, playful, whimsical, bouncy, comedic, novelty, parody, uplifting, epic trailer music, cinematic swell, film score, underscore, orchestral score, crime drama score, thriller score, suspense, tension strings, reverb, echo, telephone voice, lo-fi vocal, distorted vocal, vocoder, double time, tempo change, band, rock band, guitar band, live band, indie rock, post-punk band, full arrangement, instrumental intro, instrumental outro, instrumental break, monotone, robotic, machine voice, text to speech, computerised, fast delivery, rapid fire, breathless, hurried, frantic, manic, shouting, screaming, yelling, movie trailer voice, epic narrator, gentle, soft vocal, softly spoken, mellow, soothing, breathy, whispered, calm narration, polite, posh, plummy, RP, received pronunciation, BBC newsreader, after-dinner speaker, languid, wistful, stand-up comedy, comedy club, comedian, sitcom, laugh track, audience laughter, applause, live audience, cabaret, variety show, panto, kazoo, slide whistle, oompah, tuba, banjo, whistling
 ```
 
 ### Lyrics — all five chunks
@@ -430,6 +451,10 @@ identical to the 2026-09-01 rebuild; **the layout is not.**
 That is stanza layout, and Suno reads a section break as a musical event** — it lands the line,
 pauses, and restarts. That is the slam cadence drawn as a page, and no amount of wording fixes it.
 
+🔑 **Externally confirmed 2026-09-01:** the community field guide states plainly that **"line breaks
+signal phrase resets."** Twenty-nine lines is twenty-nine phrase resets — the machine was doing
+exactly what the page told it to.
+
 **So: one label per chunk, sentences run together into paragraphs, no parentheses, natural
 punctuation.** Pauses now fall where the *meaning* breaks instead of every nine words.
 `lyricist-playbook.md` §3 backs this — its narration recipe is **`[Monologue]`, a minimal style box
@@ -439,13 +464,30 @@ talking]` escalation ladder for narration.** The playbook already recorded the t
 ladder and the simplify rule; round 10 resolves it against the ladder. **Write the finding back into
 `docs/suno-gpt/` once a take proves it either way.**
 
-**One label, repeated identically:** `[Skit — a man talking, not performing]` — the label is a *description of the delivery*, not a
-genre word, which is the whole point. The only variation is the single `{WARM}` crack in chunk 5.
+**One label, repeated identically: `[Monologue]`.** It is a *talking* word with no genre attached,
+and it is the one both sources recommend — `lyricist-playbook.md` §3 and the Jack Righteous
+narration guide independently name `[Spoken narration]` / `[Monologue]`. The only variation is the
+single `{WARM}` crack in chunk 5.
+
+🔧 **The escalation ladder, if `[Monologue]` is ignored** — and note this ladder is *lateral*, not
+longer, per the simplify-don't-escalate rule:
+
+| Try | Why |
+|---|---|
+| 1 · **`[Monologue]`** | No genre word anywhere. The default |
+| 2 · **`[Spoken Word Narration]`** | ⚠️ Puts the poison phrase back in the lyrics box — but this is the **only** speech tag with a documented working example, and `Narration` qualifies it the way `spoken vocal` qualified `Madchester` in round 7. **Safe now in a way it was not before, because the Style box no longer selects the poetry pool** |
+| 3 · **`[Interlude]`** | A validated base tag meaning a non-sung section. Least direction, least to fight |
+| 4 · **No label at all** | Bare prose under a skit Style box. The purest form of *simplify rather than escalate*, and untried |
+
+🔴 **Invented tags are not documented as working.** The community field guide is explicit that it
+lists tested tags only and flags experimental ones as *"system may ignore"*. **So the label stays a
+bare recognised word** — an earlier draft of this round used `[Skit — a man talking, not performing]`,
+which is a description dressed as a tag and would most likely have been ignored silently.
 
 #### Chunk 1 — 2008
 
 ```lyrics
-[Skit — a man talking, not performing]
+[Monologue]
 
 Two thousand and eight. Tarquin, star trader on the NatWest floor, betting other people's houses on leveraged E.T.F.s. He is the reason it happens. Pain infliction usually looks this banal. Nice tie, though.
 
@@ -455,7 +497,7 @@ Meet Bob. Middle manager. Normal. Off for a few days with his wife Jo, away from
 #### Chunk 2 — 2026
 
 ```lyrics
-[Skit — a man talking, not performing]
+[Monologue]
 
 Eighteen years on. Tarquin runs the biggest private equity firm in the country. It buys social housing. It does not rent them out. Empty pays better than full — the price climbs either way.
 
@@ -467,7 +509,7 @@ His car heater broke last week. Worst four days of his life. Three ways past a m
 #### Chunk 3 — therapy
 
 ```lyrics
-[Skit — a man talking, not performing]
+[Monologue]
 
 Tarquin sought professional help. He'd felt a feeling, first time since the devil's lettuce at uni. The therapist explains that empathy for the homeless is not an emergency. It doesn't sink in.
 
@@ -477,7 +519,7 @@ So he gives up, and prescribes the strongest psychedelic known to man for his ca
 #### Chunk 4 — the car park
 
 ```lyrics
-[Skit — a man talking, not performing]
+[Monologue]
 
 Parks how he usually does. Bob is none too pleased. I'd say it's a Mexican standoff, but there are no stakes and no one gives a shit.
 
@@ -487,7 +529,7 @@ Bob calls them wank tanks. Most common vehicle in this car park. Tarquin clocks 
 #### Chunk 5 — Wales, and the newspaper
 
 ```lyrics
-[Skit — a man talking, not performing]
+[Monologue]
 
 Wales. Tarquin has never sat on a floor before. And somewhere in all that he works out that the distance between him and the man outside the supermarket is about four bad months and a bit of luck.
 
@@ -497,11 +539,11 @@ Bob's at the fire, telling him to look at the date. Twenty thirty-one. Last one 
 
 It's not the drugs. The headline says the machines took the jobs. It doesn't say who owns the machines. Same man who owns the flats.
 
-[warmer, quieter, still not performing]
+[Monologue — warmer, quieter]
 
 Where the hell have you been. You alright.
 
-[Skit — a man talking, not performing]
+[Monologue]
 
 The paper goes on the fire. Nobody says sorry; the cans do it. I know how this ends. I've never been sure about this bit. Watch what goes up.
 ```
