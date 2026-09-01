@@ -58,7 +58,8 @@ for exactly this man:
 | 6 | `Northern English punk poetry, Salford spoken word` (candidate A) | nasal, pinched, reedy | — superseded by Jack's pick before testing |
 | 7 | `Madchester spoken vocal, Manchester spoken word` (candidate D) | ragged mid range, nicotine-worn, slurred | — superseded by Jack's pick before testing |
 | 8 | `Northern English storytelling, British spoken-word monologue` (candidate E) | warm ragged mid range | — superseded by Jack's pick before testing |
-| **9 — current** | **`Northern English spoken word, British kitchen-sink realism`** (candidate F) | **plain, hard, weathered mid range with grit** | ⬜ untested |
+| 9 | `Northern English spoken word, British kitchen-sink realism` (candidate F) | plain, hard, weathered mid range with grit | 🔴 **read like a poem** — and so was every round before it. The fault was the genre word, in all four boxes |
+| **10 — current** | **`Hip hop skit, album interlude, a spoken intro over a beat`** (A) · **`Audiobook narration, radio drama`** (B) | **deep, dry, weathered, ordinary speech rhythm** | ⬜ untested. **First round with no `spoken word` anywhere, prose lyrics, a beat allowed, and `deep` un-banned** |
 
 🔑 **What round 2 got wrong, and it is the lesson worth keeping: it moved two variables at once.**
 The pool was never the fault — the *pitch word* was. Swapping the pool out as well threw away the
@@ -274,6 +275,69 @@ running in the other direction.
 English for what F is, and all three are the round-5 monotone bug wearing a different hat.
 `matter-of-fact`, `steady` and `unadorned` say the same thing with no pitch instruction attached.
 
+### 🔴 Round 10 — "it's being read like a poem", and why that was inevitable
+
+**Jack, 2026-09-01: *"it is spoken like it is a poem, I guess that is the problem with spoken word
+being in the prompt."*** That is the right diagnosis and it is worse than it looks. **`spoken word`
+is not a delivery mode. It is a performance-poetry genre** — slam, dub poetry, performance poetry —
+and its canonical delivery is *metrical, end-stopped and declamatory*. We asked for a poem.
+
+🔑 **And we asked 33 times.** `spoken word` appears in **every box in the atom**: the Style box pool
+word, the My Taste line, and **all 29 bracket cues**. There is no box left over for anything else to
+win in. Rounds 1–9 changed the adjectives around it and never touched the noun.
+
+**Three separate mechanisms were voting for a poem, not one.**
+
+| # | Cause | Why it makes a poem |
+|---|---|---|
+| 1 | **The genre word** | `spoken word` selects the poetry pool. A pool is a person, and this one is a performance poet |
+| 2 | 🔑 **The lyric LAYOUT** | 29 lines, each its own bracketed section, blank line either side. **Suno reads a section break as a musical event** — so it lands the line, pauses, and restarts. That *is* the slam cadence, drawn as a page. **This was never a wording problem** |
+| 3 | **The all-parentheses recipe** | Already flagged in this sheet as an untested suspect. Stacked on 1 and 2 it triple-votes for declamation |
+
+⚠️ **Cause 2 is the one nobody had looked at**, and the repo half-knew: `lyricist-playbook.md` §3 —
+*"when a cue is ignored, simplify rather than escalate… a tempo fault is now a reason to strip cues
+before trying anything else"* — and its narration recipe is **`[Monologue]`, a minimal style box, and
+short non-rhyming conversational sentences**, not a cue per line. Our escalation ladder
+(`[spoken word]` → `[spoken word speech]` → `[spoken word speech talking]`) came from the producer
+corpus and the playbook already records the tension. **This round resolves it against the ladder.**
+
+### 🔑 The reframe: stop fighting for a cappella. Ask for a thing that exists.
+
+**Jack's own idea is the fix, and it has a name — the *skit*.** A rapper talking over a beat before
+the rap is a real, heavily-recorded form: the **hip hop skit / album interlude / spoken intro**.
+
+**Suno cannot make silence.** So the two things we can actually ask for are:
+
+| What we ask for | What is in the training data | What we get |
+|---|---|---|
+| A northern man talking over **nothing** | Poetry recordings, almost exclusively | **A poem.** Nine rounds of evidence |
+| A northern man talking over **a low loop** | Skits, intros, interludes, radio drama, documentary VO — enormous | **A bloke talking** |
+
+🔑 **So the beat is not a cost, it is the casting mechanism** — and it is **free**, because
+[§5](#5-getting-the-voice-out--narration-is-a-stem-not-a-track) already delivers narration as a
+**vocal stem**. We were paying nine rounds of casting damage to avoid an instrument we throw away
+anyway. Jack's *"a whole song of just talking and we silence the instrumental in the studio"* is
+exactly the existing workflow, and it removes the `a cappella` fight that cost rounds 3 and 4 and
+about a third of the Exclude box.
+
+🔑 **The rule that replaces the a-cappella ban: MELODY makes him sing; RHYTHM does not.** This
+sheet's own evidence says so — *"British + spoken word + a bouncy **pitched** instrument is music
+hall"*, and round 4's singing was caused by a glockenspiel and a French horn. **Pitched instruments
+stay banned. A drum loop comes off the ban list**, because nothing about a drum invites a melody.
+
+### 🔧 A stale ban, running the other way: **deep**
+
+Rounds 1 and 4 came back *"too low"*, so `deep voice, low voice, bass voice, baritone, booming,
+boomy, sub bass` went in the Exclude box and have sat there for six rounds. **Jack now asks for
+"an interesting northern English deep voice."** Those bans would silently remove the exact thing
+being requested — the round-8 catch running in reverse. **`deep` is lifted and is back in the Style
+box.**
+
+⚠️ **Why it is safe to lift now, when it was not in round 2:** the fault in rounds 1 and 4 was
+*deep **and** monotone **and** unmodulated* — and round 5 found the real culprit was the word `flat`
+casting a monotone pitch. **Depth was convicted on the monotone's evidence.** With `flat` gone and
+conversational rhythm asked for explicitly, deep is a texture, not a drone.
+
 ### The northern accent — the only lever that exists
 
 🔴 **A bare accent adjective does nothing.** Tested on this story, 2026-08-20: a detailed Scouse
@@ -306,164 +370,140 @@ voice thread.
 [`the-reader.md`](../../../marketing/the-reader.md). Both words are now in the **Exclude** box, and
 the narrator is cast working-class again.
 
-## 2. Suno prompt — paste all four, in this order, every round
+## 2. Suno prompt — round 10, paste all four, in this order, every round
 
 **Never trust what a box already contains.** "Reuse Prompt" silently carries old lyrics forward,
 and a stale Lyrics box is inaudible as such — it just sounds like the Style box is being ignored.
 That cost the Karen track four rounds.
 
+🔑 **This is a whole-atom change** — all four boxes moved together, per the atom rule in
+`.claude/skills/suno-automation`. Round 9's boxes are recorded in the round log and are superseded.
+**Do not mix them**; a round-9 Style box under round-10 lyrics is a hybrid nobody designed.
+
 ### My Taste
 
-Swap this in for the session and **restore your usual profile afterwards** — My Taste biases every
-generation, cannot be turned off, and a stale profile is a competing identity fighting this one.
+Swap this in for the session and **restore the freedom token afterwards** — My Taste biases every
+generation, cannot be turned off, and is account-wide.
+
+```taste
+Vocals: one male voice, and he is TALKING, not singing and not reciting. A deep, dry, weathered northern English working-class man in his forties, grit in the voice, hard northern consonants, close and dry right up on the microphone. Ordinary conversational speech rhythm — uneven sentence lengths, some sentences run together and some stop dead, exactly as a man talks. Bored, sarcastic and certain, giving nothing away, never signalling a joke. Music: one slow dusty low loop underneath, drums only, no melody and no chords. Register: grim and funny, played completely straight.
+```
+
+### Style — variant A · the skit 🥇
+
+**The recommended one.** Casts the form Jack named: a bloke talking over a beat, which is a real and
+heavily-recorded thing, where a northern man reciting over silence is a poetry record.
 
 ```
-Vocals: one male voice only, plain and hard and weathered, mid range with grit in it, hard northern consonants and open vowels, speaking rather than singing, matter-of-fact and unadorned, steady and unhurried, giving nothing away. Northern English spoken-word delivery, close and dry right up on the microphone. Production: a cappella throughout. Voice alone, dead silence behind it. Register: grim, bitter and certain, played completely straight.
+Hip hop skit, album interlude, a spoken intro over a beat. A man talking to you, not performing and not reciting. Northern English, working class, forties. Deep, dry and weathered, grit in the voice, hard northern consonants, close and dry right up on the microphone. Ordinary speech rhythm — uneven sentence lengths, running some sentences together and letting others stop dead. Bored, sarcastic and certain; whatever is funny is in the words and he never signals it. Underneath, one slow dusty drum loop, very low, no melody, no chords.
 ```
 
-### Style
+### Style — variant B · the narrator, if A brings a rapper
+
+🔴 **A's one risk is its pool: `hip hop skit` can cast a young MC**, which is the exact failure mode
+§6 already lists. If take A is a 22-year-old, do not add adjectives — **switch pool to B**, which
+buys talking from the audiobook/radio tradition instead of the hip-hop one. Everything else in the
+atom is identical.
 
 ```
-Northern English spoken word, British kitchen-sink realism, a cappella. British. A plain, hard, weathered mid-range male voice with grit in it, hard northern consonants and open vowels, close and dry right up on the microphone. Matter-of-fact and unadorned — stating what happened and moving on, steady and unhurried, giving nothing away. Grim, bitter and certain, played completely straight; whatever is funny lives in the words alone. A cappella throughout, voice alone, dead silence behind it.
+Audiobook narration, radio drama, documentary voiceover. A man talking to you, not performing and not reciting. Northern English, working class, forties. Deep, dry and weathered, grit in the voice, hard northern consonants, close and dry right up on the microphone. Ordinary speech rhythm — uneven sentence lengths, running some sentences together and letting others stop dead. Bored, sarcastic and certain; whatever is funny is in the words and he never signals it. Almost nothing underneath.
 ```
 
 ### Exclude Styles
 
+🔑 **Three deliberate changes from round 9, and each one reverses a standing ban.**
+
+1. **The whole poetry pool is now banned** — `spoken word, performance poetry, poetry slam, dub poetry, recital, declamatory, verse, stanza, rhyming, metrical, incantation`. This is the round-10 fault named directly.
+2. **`deep, low voice, baritone, booming, sub bass` are LIFTED.** Jack asked for a deep voice; those bans would have silently removed it. See the stale-ban note in §1.
+3. **`drums, drum kit, breakbeat, a cappella`-driven bans are LIFTED, pitched instruments are not.** The rule is **melody makes him sing, rhythm does not** — round 4's singing came from a glockenspiel and a French horn, not from a drum.
+
 ```
-singing, sung verses, sung chorus, melodic vocal, vocal melody, vocal hooks, crooning, chanting, autotune, harmonies, backing vocals, choir, female vocal, American accent, American vocal, transatlantic, southern drawl, US rap, grime MC, UK drill, road rap, young MC, rapping, trap, hip hop, ragga MC, toasting, Jamaican accent, piano, glockenspiel, strings, violins, brass band, guitar, acoustic guitar, drums, drum kit, breakbeat, amen break, bassline, melody, chord progression, music hall, vaudeville, pantomime, ragtime, honky-tonk, jaunty, playful, whimsical, bouncy, comedic, novelty, parody, uplifting, epic trailer music, cinematic swell, reverb, echo, telephone voice, lo-fi, distorted vocal, double time, tempo change, band, rock band, guitar band, live band, indie rock, post-punk band, full arrangement, instrumental intro, instrumental outro, instrumental break, underscore, film score, ambient pad, synth pad, drone, room tone, atmosphere, sound design, deep voice, low voice, bass voice, baritone, booming, boomy, sub bass, monotone, robotic, machine voice, text to speech, vocoder, computerised, fast delivery, rapid fire, breathless, hurried, frantic, manic, shouting, screaming, yelling, punk rock, punk band, hardcore punk, baggy, indie dance, madchester band, funk guitar, wah guitar, dance beat, loose live drums, tambourine, congas, bongos, shaker, four to the floor, groove, jam, movie trailer voice, epic narrator, crime drama score, thriller score, suspense, tension strings, brooding score, orchestral score, gentle, soft vocal, softly spoken, mellow, soothing, breathy, whispered, calm narration, polite, posh, plummy, RP, received pronunciation, BBC newsreader, after-dinner speaker, languid, wistful, stand-up comedy, comedy club, comedian, sitcom, laugh track, audience laughter, applause, live audience, cabaret, variety show, circus, panto, kazoo, slide whistle, honky tonk piano, oompah, tuba, banjo, whistling
+singing, sung verses, sung chorus, melodic vocal, vocal melody, vocal hooks, crooning, chanting, autotune, harmonies, backing vocals, choir, spoken word, performance poetry, poetry slam, slam poetry, dub poetry, beat poetry, poetry reading, recital, recitation, declamatory, oratory, sermon, verse, stanza, rhyming, rhyme scheme, metrical, iambic, incantation, mantra, ritual, theatrical, dramatic reading, over-enunciated, elocution, female vocal, American accent, American vocal, transatlantic, southern drawl, US rap, grime MC, UK drill, road rap, young MC, rapping, bars, flow, trap, ragga MC, toasting, Jamaican accent, piano, glockenspiel, strings, violins, brass band, horns, guitar, acoustic guitar, melody, chord progression, chords, bassline, synth lead, pad, ambient pad, music hall, vaudeville, pantomime, ragtime, honky-tonk, jaunty, playful, whimsical, bouncy, comedic, novelty, parody, uplifting, epic trailer music, cinematic swell, film score, underscore, orchestral score, crime drama score, thriller score, suspense, tension strings, reverb, echo, telephone voice, lo-fi vocal, distorted vocal, vocoder, double time, tempo change, band, rock band, guitar band, live band, indie rock, post-punk band, full arrangement, instrumental intro, instrumental outro, instrumental break, monotone, robotic, machine voice, text to speech, computerised, fast delivery, rapid fire, breathless, hurried, frantic, manic, shouting, screaming, yelling, movie trailer voice, epic narrator, gentle, soft vocal, softly spoken, mellow, soothing, breathy, whispered, calm narration, polite, posh, plummy, RP, received pronunciation, BBC newsreader, after-dinner speaker, languid, wistful, stand-up comedy, comedy club, comedian, sitcom, laugh track, audience laughter, applause, live audience, cabaret, variety show, panto, kazoo, slide whistle, oompah, tuba, banjo, whistling
 ```
 
 ### Lyrics — all five chunks
 
-> ✅ **Rebuilt 2026-09-01 against [`../narration-brief.md`](../narration-brief.md).** The previous
-> version was Jack's transcript normalised for synthesis: **445 words, no scene 12, and three of the
-> brief's load-bearing jobs unwritten.** This one is **413 words across 29 lines** and every scene job
-> is carried. ⚠️ **Still over the 250–320 budget** — see [§7](#7-⚠️-what-is-still-open-before-the-full-run),
-> which now argues the budget is the thing that is wrong.
+🔴 **Reformatted 2026-09-01, and this is the biggest single change in the round.** The words are
+identical to the 2026-09-01 rebuild; **the layout is not.**
 
-The recipe is a **redundant word-cluster in the bracket, the line in parentheses beneath it**.
-Parentheses are normally the backing-vocal slot; **for spoken word they are an anchoring device
-for the primary line**, and that inversion is the mechanism.
+**Round 9 gave every one of the 29 lines its own bracketed section with a blank line either side.
+That is stanza layout, and Suno reads a section break as a musical event** — it lands the line,
+pauses, and restarts. That is the slam cadence drawn as a page, and no amount of wording fixes it.
 
-**Generate chunk 1 first and lock the Voice (§4) before running 2–5.** Run them without it and
-you get five different men. The chunks are written out here so the script is settled — not so
-they can all be fired off in one sitting.
+**So: one label per chunk, sentences run together into paragraphs, no parentheses, natural
+punctuation.** Pauses now fall where the *meaning* breaks instead of every nine words.
+`lyricist-playbook.md` §3 backs this — its narration recipe is **`[Monologue]`, a minimal style box
+and short non-rhyming conversational sentences**, and *"when a cue is ignored, simplify rather than
+escalate."* ⚠️ **This retires the `[spoken word]` → `[spoken word speech]` → `[spoken word speech
+talking]` escalation ladder for narration.** The playbook already recorded the tension between the
+ladder and the simplify rule; round 10 resolves it against the ladder. **Write the finding back into
+`docs/suno-gpt/` once a take proves it either way.**
 
-**Cues are deliberately short.** The Style box is global and already carries the voice, the drone
-and the register; the lyric cue is the **only section-scoped box we have**, so it holds only what
-is true of *this* section. Camping's own verse cue went 1,010 characters → 311 with nothing lost.
-
-**One fixed label, repeated identically.** `[spoken word speech talking]` never varies — varied
-wording reads as a new character. Only the delivery word after the pipe moves, and it moves
-exactly once in a meaningful way: the single `{WARM}` crack in chunk 5, which
-[`../narration-brief.md`](../narration-brief.md) says is worth more than every joke in the script
-and must not be spent before scene 11.
+**One label, repeated identically:** `[Skit — a man talking, not performing]` — the label is a *description of the delivery*, not a
+genre word, which is the whole point. The only variation is the single `{WARM}` crack in chunk 5.
 
 #### Chunk 1 — 2008
 
 ```lyrics
-[spoken word speech talking | deadpan, matter-of-fact | a cappella, voice alone from bar one]
-(Two thousand and eight. Tarquin, star trader on the NatWest floor, betting other people's houses on leveraged E.T.F.s.)
+[Skit — a man talking, not performing]
 
-[spoken word speech talking | deadpan, matter-of-fact, thrown away]
-(He is the reason it happens. Pain infliction usually looks this banal. Nice tie, though.)
+Two thousand and eight. Tarquin, star trader on the NatWest floor, betting other people's houses on leveraged E.T.F.s. He is the reason it happens. Pain infliction usually looks this banal. Nice tie, though.
 
-[spoken word speech talking | deadpan, matter-of-fact]
-(Meet Bob. Middle manager. Normal. Off for a few days with his wife Jo, away from the stress of it.)
-
-[spoken word speech talking | deadpan, matter-of-fact, thrown away]
-(Can you blame him, really.)
+Meet Bob. Middle manager. Normal. Off for a few days with his wife Jo, away from the stress of it. Can you blame him, really.
 ```
 
 #### Chunk 2 — 2026
 
 ```lyrics
-[spoken word speech talking | deadpan, matter-of-fact | a cappella, voice alone from bar one]
-(Eighteen years on. Tarquin runs the biggest private equity firm in the country. It buys social housing.)
+[Skit — a man talking, not performing]
 
-[spoken word speech talking | deadpan, matter-of-fact]
-(It does not rent them out. Empty pays better than full — the price climbs either way.)
+Eighteen years on. Tarquin runs the biggest private equity firm in the country. It buys social housing. It does not rent them out. Empty pays better than full — the price climbs either way.
 
-[spoken word speech talking | deadpan, matter-of-fact, thrown away]
-(What a brilliant businessman. He ditched the tie, at least.)
+What a brilliant businessman. He ditched the tie, at least. Driving home he spots this lot. Rates up one percent next week. You chaps'll have a few more mates soon.
 
-[spoken word speech talking | deadpan, matter-of-fact]
-(Driving home he spots this lot. Rates up one percent next week. You chaps'll have a few more mates soon.)
-
-[spoken word speech talking | deadpan, matter-of-fact, thrown away]
-(His car heater broke last week. Worst four days of his life.)
-
-[spoken word speech talking | deadpan, matter-of-fact]
-(Three ways past a man in a tent. Ignore him. Politely say no — ignoring him with manners. Or stop. Have a guess which one's rarest.)
+His car heater broke last week. Worst four days of his life. Three ways past a man in a tent. Ignore him. Politely say no — ignoring him with manners. Or stop. Have a guess which one's rarest.
 ```
 
 #### Chunk 3 — therapy
 
 ```lyrics
-[spoken word speech talking | deadpan, matter-of-fact | a cappella, voice alone from bar one]
-(Tarquin sought professional help. He'd felt a feeling, first time since the devil's lettuce at uni.)
+[Skit — a man talking, not performing]
 
-[spoken word speech talking | deadpan, matter-of-fact]
-(The therapist explains that empathy for the homeless is not an emergency. It doesn't sink in.)
+Tarquin sought professional help. He'd felt a feeling, first time since the devil's lettuce at uni. The therapist explains that empathy for the homeless is not an emergency. It doesn't sink in.
 
-[spoken word speech talking | deadpan, matter-of-fact]
-(So he gives up, and prescribes the strongest psychedelic known to man for his car crash of a personality.)
-
-[spoken word speech talking | deadpan, matter-of-fact, thrown away]
-(Forgive the pun.)
+So he gives up, and prescribes the strongest psychedelic known to man for his car crash of a personality. Forgive the pun.
 ```
 
 #### Chunk 4 — the car park
 
 ```lyrics
-[spoken word speech talking | deadpan, matter-of-fact | a cappella, voice alone from bar one]
-(Parks how he usually does. Bob is none too pleased.)
+[Skit — a man talking, not performing]
 
-[spoken word speech talking | deadpan, matter-of-fact, thrown away]
-(I'd say it's a Mexican standoff, but there are no stakes and no one gives a shit.)
+Parks how he usually does. Bob is none too pleased. I'd say it's a Mexican standoff, but there are no stakes and no one gives a shit.
 
-[spoken word speech talking | deadpan, matter-of-fact]
-(Bob calls them wank tanks. Most common vehicle in this car park.)
-
-[spoken word speech talking | deadpan, matter-of-fact]
-(Tarquin clocks him. Not a wrestle with his conscience — just a small acknowledgement that it's in there. Then he shuts it.)
+Bob calls them wank tanks. Most common vehicle in this car park. Tarquin clocks him. Not a wrestle with his conscience — just a small acknowledgement that it's in there. Then he shuts it.
 ```
 
 #### Chunk 5 — Wales, and the newspaper
 
 ```lyrics
-[spoken word speech talking | deadpan, matter-of-fact | a cappella, voice alone from bar one]
-(Wales. Tarquin has never sat on a floor before.)
+[Skit — a man talking, not performing]
 
-[spoken word speech talking | deadpan, matter-of-fact, one long unhurried sentence]
-(And somewhere in all that he works out that the distance between him and the man outside the supermarket is about four bad months and a bit of luck.)
+Wales. Tarquin has never sat on a floor before. And somewhere in all that he works out that the distance between him and the man outside the supermarket is about four bad months and a bit of luck.
 
-[spoken word speech talking | deadpan, matter-of-fact]
-(Thunder. He's out of the tent with his heart in his throat.)
+Thunder. He's out of the tent with his heart in his throat. Christ, that's strong stuff. Give it an hour.
 
-[spoken word speech talking | deadpan, matter-of-fact, thrown away]
-(Christ, that's strong stuff. Give it an hour.)
+Bob's at the fire, telling him to look at the date. Twenty thirty-one. Last one they ever printed.
 
-[spoken word speech talking | deadpan, matter-of-fact]
-(Bob's at the fire, telling him to look at the date.)
+It's not the drugs. The headline says the machines took the jobs. It doesn't say who owns the machines. Same man who owns the flats.
 
-[spoken word speech talking | deadpan, matter-of-fact]
-(Twenty thirty-one. Last one they ever printed.)
+[warmer, quieter, still not performing]
 
-[spoken word speech talking | deadpan, matter-of-fact]
-(It's not the drugs.)
+Where the hell have you been. You alright.
 
-[spoken word speech talking | deadpan, matter-of-fact]
-(The headline says the machines took the jobs. It doesn't say who owns the machines. Same man who owns the flats.)
+[Skit — a man talking, not performing]
 
-[spoken word speech talking | matter-of-fact, warmer, quieter]
-(Where the hell have you been. You alright.)
-
-[spoken word speech talking | deadpan, matter-of-fact]
-(The paper goes on the fire. Nobody says sorry; the cans do it.)
-
-[spoken word speech talking | deadpan, matter-of-fact]
-(I know how this ends. I've never been sure about this bit. Watch what goes up.)
+The paper goes on the fire. Nobody says sorry; the cans do it. I know how this ends. I've never been sure about this bit. Watch what goes up.
 ```
 
 ### What was changed from Jack's script, and why
@@ -582,6 +622,8 @@ The drone stem is a free ambient bed if it happens to be any good; throw it away
 | **The tag is ignored and he sings anyway** | Meta-tags are probabilistic | **Re-roll before rewriting.** Then escalate the cluster: `[spoken word]` → `[spoken word speech]` → `[spoken word speech talking]`. Redundancy is a real technique here, not a smell |
 | **It's gone comic or music-hall** | 🔑 **British + spoken word + a bouncy pitched instrument is music hall** — with no comedy word anywhere in the prompt | Diagnose by asking what changed in the *arrangement*, not by rereading mood words. Keep every pitched instrument out |
 | **It's echoing and processed** | A room or FX word in the Style box | The word `reverb` and friends are already in the excludes. `close and dry` is the positive form |
+| 🔴 **He's reciting — it sounds like a poem** | `spoken word` is a **performance-poetry genre**, not a delivery mode — and/or the lyrics are laid out one line per bracketed section, which Suno reads as stanzas and lands like slam | **Look at the LAYOUT before the wording.** Run the lyrics as continuous prose paragraphs under one label, and check no box anywhere says `spoken word`. See §1 round 10 |
+| **He's talking but he's 22** | Variant A's `hip hop skit` pool cast a young MC | **Switch to Style variant B** (audiobook / radio drama). Do not add adjectives to A — the pool is doing the casting |
 | **Something you asked for is simply missing** | A **stale ban** — invisible, and it reads as the Style box being ignored | Grep the Exclude box **and** My Taste for the thing, its **category**, and any whole-palette adjective |
 
 ## 7. ⚠️ What is still open before the full run
@@ -629,7 +671,8 @@ vowel changes the read, so `shit` → `shite` is a **performance** decision, not
 ### The order to do this in
 
 1. **Rule on the budget** (above). ⬅️ *nothing below is wasted either way, but the re-cut waits on it*
-2. **Run chunk 4 once** on the round-9 boxes — filter test and voice audition in one generation, ~20 credits as a pair.
-3. **Save the Voice** (§4) from the winning take, then run chunks 1, 2, 3 and 5 with it attached.
-4. **Restore Bob's word** in chunk 5 if the filter passed it.
-5. **Stems out** (§5) — hand Premiere the vocal stem, never the mix.
+2. **Run chunk 4 once** on the **round-10 variant A** boxes — filter test and the poem test in one generation, ~20 credits as a pair. **Judge it on one question first: is he talking, or reciting?** Voice quality is round 11's problem.
+3. **If he's reciting**, the layout change did not land — strip the chunk to a single paragraph with no label at all and re-roll before touching a word. **If he's a young MC**, switch to Style variant B and change nothing else.
+4. **Save the Voice** (§4) from the winning take, then run chunks 1, 2, 3 and 5 with it attached.
+5. **Restore Bob's word** in chunk 5 if the filter passed it.
+6. **Stems out** (§5) — hand Premiere the vocal stem, never the mix.
