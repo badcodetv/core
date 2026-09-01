@@ -335,10 +335,11 @@ singing, sung verses, sung chorus, melodic vocal, vocal melody, vocal hooks, cro
 
 ### Lyrics — all five chunks
 
-> 🔴 **These five chunks are NOT ready to paste — see [§7](#7-⚠️-what-is-still-open-before-the-full-run).**
-> Audited 2026-09-01: **445 words against a 250–320 budget**, scene 12 missing entirely, and three
-> of the brief's load-bearing jobs unwritten. The Style / Exclude / My Taste boxes above are round-9
-> ready; **the script is the open item.**
+> ✅ **Rebuilt 2026-09-01 against [`../narration-brief.md`](../narration-brief.md).** The previous
+> version was Jack's transcript normalised for synthesis: **445 words, no scene 12, and three of the
+> brief's load-bearing jobs unwritten.** This one is **413 words across 29 lines** and every scene job
+> is carried. ⚠️ **Still over the 250–320 budget** — see [§7](#7-⚠️-what-is-still-open-before-the-full-run),
+> which now argues the budget is the thing that is wrong.
 
 The recipe is a **redundant word-cluster in the bracket, the line in parentheses beneath it**.
 Parentheses are normally the backing-vocal slot; **for spoken word they are an anchoring device
@@ -362,13 +363,13 @@ and must not be spent before scene 11.
 
 ```lyrics
 [spoken word speech talking | deadpan, matter-of-fact | a cappella, voice alone from bar one]
-(Two thousand and eight. Meet Tarquin, a star trader on the NatWest floor, who bets heavily on leveraged E.T.F.s.)
+(Two thousand and eight. Tarquin, star trader on the NatWest floor, betting other people's houses on leveraged E.T.F.s.)
 
 [spoken word speech talking | deadpan, matter-of-fact, thrown away]
-(Pain infliction usually looks this banal. Nice tie, though.)
+(He is the reason it happens. Pain infliction usually looks this banal. Nice tie, though.)
 
 [spoken word speech talking | deadpan, matter-of-fact]
-(Meet Bob. Standard middle-manager bloke. Decides to get away with his wife Jo, away from the financial stress of it all.)
+(Meet Bob. Middle manager. Normal. Off for a few days with his wife Jo, away from the stress of it.)
 
 [spoken word speech talking | deadpan, matter-of-fact, thrown away]
 (Can you blame him, really.)
@@ -378,41 +379,38 @@ and must not be spent before scene 11.
 
 ```lyrics
 [spoken word speech talking | deadpan, matter-of-fact | a cappella, voice alone from bar one]
-(Twenty twenty-six. Tarquin runs the country's biggest private equity firm, the one that buys up social housing.)
-
-[spoken word speech talking | deadpan, matter-of-fact, thrown away]
-(The bastard looks very pleased with himself. He ditched the tie, at least.)
+(Eighteen years on. Tarquin runs the biggest private equity firm in the country. It buys social housing.)
 
 [spoken word speech talking | deadpan, matter-of-fact]
-(Driving home from work, he spots this lot and thinks. Interest rates up one percent next week. You chaps are going to have a few more mates soon. Cannot wait for my bonus.)
+(It does not rent them out. Empty pays better than full — the price climbs either way.)
 
 [spoken word speech talking | deadpan, matter-of-fact, thrown away]
-(It is a tad chilly, though...)
+(What a brilliant businessman. He ditched the tie, at least.)
 
 [spoken word speech talking | deadpan, matter-of-fact]
-(Bob spends his days in this oh-so-luxury tent, taking any charitable beer donations he can get his hands on.)
+(Driving home he spots this lot. Rates up one percent next week. You chaps'll have a few more mates soon.)
 
 [spoken word speech talking | deadpan, matter-of-fact, thrown away]
-(I don't know what's worse. The fact that his cause is not supported much. Or the fact that his donors judge the mere fact that he's an I.P.A. man. Fuck me.)
+(His car heater broke last week. Worst four days of his life.)
+
+[spoken word speech talking | deadpan, matter-of-fact]
+(Three ways past a man in a tent. Ignore him. Politely say no — ignoring him with manners. Or stop. Have a guess which one's rarest.)
 ```
 
 #### Chunk 3 — therapy
 
 ```lyrics
 [spoken word speech talking | deadpan, matter-of-fact | a cappella, voice alone from bar one]
-(Tarquin sought professional help, since he felt a feeling for the first time since he smoked the devil's lettuce at uni.)
+(Tarquin sought professional help. He'd felt a feeling, first time since the devil's lettuce at uni.)
 
 [spoken word speech talking | deadpan, matter-of-fact]
-(The therapist tries to explain that empathy for the homeless does not warrant an emergency appointment. It does not sink in.)
+(The therapist explains that empathy for the homeless is not an emergency. It doesn't sink in.)
 
 [spoken word speech talking | deadpan, matter-of-fact]
-(He eventually just says there is no helping him, and he needs the strongest psychedelic known to man to fix his car crash of a personality.)
+(So he gives up, and prescribes the strongest psychedelic known to man for his car crash of a personality.)
 
 [spoken word speech talking | deadpan, matter-of-fact, thrown away]
 (Forgive the pun.)
-
-[spoken word speech talking | deadpan, matter-of-fact]
-(Tarquin agrees that he needs to explore himself more, so he heads off to get supplies before his trip to Wales.)
 ```
 
 #### Chunk 4 — the car park
@@ -425,54 +423,108 @@ and must not be spent before scene 11.
 (I'd say it's a Mexican standoff, but there are no stakes and no one gives a shit.)
 
 [spoken word speech talking | deadpan, matter-of-fact]
-(Bob's mind is thrown into a tailspin every time he sees those wank tanks, as he calls them. Four by fours are the most common vehicle in this car park.)
+(Bob calls them wank tanks. Most common vehicle in this car park.)
 
 [spoken word speech talking | deadpan, matter-of-fact]
-(Tarquin locks on to a background figure. Not so much a wrestle with his conscience, but maybe a small acknowledgement that it is there... It being Bob.)
+(Tarquin clocks him. Not a wrestle with his conscience — just a small acknowledgement that it's in there. Then he shuts it.)
 ```
 
 #### Chunk 5 — Wales, and the newspaper
 
 ```lyrics
 [spoken word speech talking | deadpan, matter-of-fact | a cappella, voice alone from bar one]
-(He heads off to Wales for this spiritual retreat. Before taking the ayawaska, they insist on meditation. Tarquin has never sat on the floor before.)
+(Wales. Tarquin has never sat on a floor before.)
+
+[spoken word speech talking | deadpan, matter-of-fact, one long unhurried sentence]
+(And somewhere in all that he works out that the distance between him and the man outside the supermarket is about four bad months and a bit of luck.)
+
+[spoken word speech talking | deadpan, matter-of-fact]
+(Thunder. He's out of the tent with his heart in his throat.)
 
 [spoken word speech talking | deadpan, matter-of-fact, thrown away]
-(Safe to say it has kicked in...)
+(Christ, that's strong stuff. Give it an hour.)
 
 [spoken word speech talking | deadpan, matter-of-fact]
-(He's had enough, bless him. Time for bed.)
+(Bob's at the fire, telling him to look at the date.)
 
 [spoken word speech talking | deadpan, matter-of-fact]
-(Awoken by the sound of thunder, with his heart in his throat. Stepping out of his tent, he spots an old newspaper.)
+(Twenty thirty-one. Last one they ever printed.)
+
+[spoken word speech talking | deadpan, matter-of-fact]
+(It's not the drugs.)
+
+[spoken word speech talking | deadpan, matter-of-fact]
+(The headline says the machines took the jobs. It doesn't say who owns the machines. Same man who owns the flats.)
 
 [spoken word speech talking | matter-of-fact, warmer, quieter]
-(Warming his hands on the fire, Bob tries to calm him down, and tells him to pay attention to the date of the newspaper. Twenty thirty-one.)
+(Where the hell have you been. You alright.)
 
-[spoken word speech talking | deadpan, matter-of-fact, thrown away]
-(He takes the news well. Excuse the pun.)
+[spoken word speech talking | deadpan, matter-of-fact]
+(The paper goes on the fire. Nobody says sorry; the cans do it.)
+
+[spoken word speech talking | deadpan, matter-of-fact]
+(I know how this ends. I've never been sure about this bit. Watch what goes up.)
 ```
 
 ### What was changed from Jack's script, and why
 
-Every one of these is a **synthesis** change — the words a listener hears are unchanged.
+**Two passes are recorded here.** The first was synthesis-only. The second rebuilt the script.
+
+#### Pass 1 — synthesis normalisation (the listener hears no change)
 
 | Change | Why |
 |---|---|
 | `2008` → `Two thousand and eight`, `2026` → `Twenty twenty-six`, `2031` → `Twenty thirty-one` | Bare digits get read as digits, or sung |
-| 🔴 **Chunk 5's reveal year `2026` → `Twenty thirty-one`** | **Not a synthesis change — a canon bug.** The line named the same year as scene 4, so the reveal revealed nothing. [`../year-device.md`](../year-device.md) §*Ruled by Jack, 2026-08-30*: the on-screen clock is a **two-instance** device (2008 on `1a`, 2026 on `4a`) and **the third date is spoken, not shown** — *"the newspaper stops being a clock and goes back to being a prop."* This line **is** the film's third date. It is now the only place 2031 exists |
 | `ETFs` → `E.T.F.s`, `IPA` → `I.P.A.`, `1%` → `one percent`, `4x4's` → `four by fours` | Raw abbreviations and symbols are mispronounced. Normalise before synthesis, never after |
 | `Ayahuasca` → `ayawaska` | Respell for **sound**, not for the dictionary. **No hyphens** — an in-word hyphen stretches the note, so a hyphenated or foreign word renders slow by default |
 | `devils lettice` → `devil's lettuce` | The phrase is *devil's lettuce*; the original is a typo |
 | `em` → `him` | Dialect elision is a mispronunciation risk for no gain — the flatness carries the register |
-| Semicolons → full stops (×3) | Semicolons produce muddy pacing |
+| Semicolons → full stops | Semicolons produce muddy pacing |
 | `Can you blame em, really?` → `...really.` | 🔑 **A question mark lifts the pitch, which sounds eager. A full stop keeps it flat, which is the joke.** Same ruling as Karen's `Who knew.` |
 | `I don't know what's worse:` → `...worse.` | A colon does the same lift as a question mark |
-| `these lot` → `this lot` | Agreement |
 | `Uh,` dropped before `Nice tie though` | A filled pause is the first thing a music model swallows or sings. The comma before `though` does the same work reliably |
-| Ellipses **kept**, in three places | A trailing pause *with weight* — a real control, and each one is placed where a joke needs air before it lands |
+| Ellipses **kept**, in three places | A trailing pause *with weight* — a real control, placed where a joke needs air |
 
-## 3. Settings
+#### Pass 2 — the rebuild, 2026-09-01 (the listener hears a different script)
+
+🔴 **The canon bug, fixed first.** Chunk 5 told Tarquin to look at the newspaper's date and then said
+**"twenty twenty-six"** — the year the Shard already carries in scene 4. **The reveal revealed
+nothing.** [`../year-device.md`](../year-device.md) ruled on 2026-08-30 that the on-screen clock is a
+**two-instance** device (2008 on `1a`, 2026 on `4a`) and *"the third date is spoken, not shown — the
+newspaper stops being a clock and goes back to being a prop."* **That line is the film's third date,
+and now the only place 2031 exists in the whole script.**
+
+| Beat added | Brief's demand | The line |
+|---|---|---|
+| **Scene 1 · cause** | The trading floor reads as **cause**, not backdrop; keep the function of *"He was the reason 2008 hit"* | `betting other people's houses on leveraged E.T.F.s` + `He is the reason it happens.` |
+| **Scene 4 · the mechanism** | Housing bought and **left empty because asset inflation pays better than rent** | `It does not rent them out. Empty pays better than full — the price climbs either way.` |
+| **Scene 4 · the pairing** | Sarcasm **pinned to an undeniable consequence** in the same beat | `What a brilliant businessman.` now lands **after** the empty flats, not before. Previously it was pinned to nothing — the brief's own *sarcasm with no consequence* trap |
+| **Scene 5 · cold, not guilt** | *his car heater broke last week* — briefly cold, not sorry | `His car heater broke last week. Worst four days of his life.` replaces `It is a tad chilly, though...` |
+| **Scene 6 · the three reactions** | 🔑 The line aimed at the audience's own behaviour, which works because it never says *you* | `Ignore him. Politely say no — ignoring him with manners. Or stop. Have a guess which one's rarest.` |
+| **Scene 8 · the crack shuts** | Register that scene 5's crack **slaps shut** | `Then he shuts it.` |
+| **Scene 9 · the fragility** | The distance between him and that man is thinner than he thought — **and no AI** | `...is about four bad months and a bit of luck.` |
+| **Scene 10 · the irony** | The narrator does the freak-out **and still thinks it's the drugs** | `Christ, that's strong stuff. Give it an hour.` — the one moment the audience is ahead of him |
+| **Scene 11 · the last paper** | 🔑 From the transcript, still missing from canon; closes the *why does a paper exist* hole | `Last one they ever printed.` |
+| **Scene 11 · the reach-back** | ⬅️ **Whoever owns the AI owned the flats** — without it *"the film becomes an anti-AI film by accident"* | `It doesn't say who owns the machines. Same man who owns the flats.` |
+| **Scene 12 · the ending** | 🔴 The scene had **no narration at all**, so the `12d` tilt had no last word to be cut to | `The paper goes on the fire. Nobody says sorry; the cans do it.` then the close |
+| **The one admitted uncertainty** | A narrator that is never wrong reads as a device | `I know how this ends. I've never been sure about this bit.` |
+| **The last word, written first** | The `12d` tilt is timed to it, and the embers become the bad code | **`up`** — `Watch what goes up.` The tilt follows the smoke on the narrator's own instruction |
+| **Cadence** | The brief's named fix: **one long cosmic sentence among the short ones** | The scene-9 line is **27 words** against a 9-word median. Its cue carries `one long unhurried sentence` so the delivery opens out with it |
+
+| Beat cut | Why |
+|---|---|
+| The I.P.A. / beer-donations joke (38 words) | ⚠️ It aimed the contempt at **the people who donate** — ordinary passers-by. Against [`the-reader.md`](../../../marketing/the-reader.md) that is the Lee/Coe test failing: a hostile viewer seeing only that beat hears contempt for ordinary people. Scene 6's job is now done by the three reactions, which implicate without accusing |
+| `Tarquin agrees that he needs to explore himself more, so he heads off to get supplies` | Pure transit. Chunk 5 opens in Wales anyway |
+| `He's had enough, bless him. Time for bed.` | The picture does it |
+| `Safe to say it has kicked in...` | The kaleidoscope does it, louder |
+| `Bob spends his days in this oh-so-luxury tent` | The tent is on screen; narrating it is the brief's *lecture* trap |
+
+⚠️ **One line is held back from canon pending the filter test.** Story canon gives Bob *"Where the
+f\*\*\* have you been, then?"*; the script carries **`Where the hell have you been.`** If the
+throwaway generation shows the filter passes `gives a shit`, restore Bob's word — it is his register,
+and softening it is the only place this rebuild is quieter than canon.
+
+## 3. Settings## 3. Settings
 
 | Control | Set to | Why |
 |---|---|---|
@@ -534,68 +586,50 @@ The drone stem is a free ambient bed if it happens to be any good; throw it away
 
 ## 7. ⚠️ What is still open before the full run
 
-**Round 9's boxes are ready to paste. The Lyrics box is not** — audited against
-[`../narration-brief.md`](../narration-brief.md) on 2026-09-01, it is over budget, missing the
-ending, and missing three of the brief's load-bearing jobs. Fix the script before spending
-generations, or you pay for takes of lines that get cut.
+**All four boxes are now round-9 ready.** The script was rebuilt on 2026-09-01 (see the pass-2 table
+in §2) and every scene job in [`../narration-brief.md`](../narration-brief.md) is carried. Two things
+are left, and only one of them is a decision.
 
-### The length, measured
+### 🔴 The budget is over, and the budget is probably what is wrong
 
-| Chunk | Lines | Words | At 155 wpm |
-|---|---|---|---|
-| 1 — 2008 | 4 | 54 | ~21s |
-| 2 — 2026 | 6 | 119 | ~46s |
-| 3 — therapy | 5 | 92 | ~36s |
-| 4 — the car park | 4 | 84 | ~33s |
-| 5 — Wales | 6 | 96 | ~37s |
-| **Total** | **25** | **445** | **~172s** |
-
-🔴 **155 wpm is the ceiling, and the brief says an authoritative voice sits *under* it.** At a
-narrator's actual ~135 wpm this script is **~198 seconds of speech**, before the three canon-wordless
-stretches and before a single pause for a joke to land. Against the brief's **250–320 words** it is
-**39% over**, and against [`../edit-plan.md`](../edit-plan.md)'s 150s working shape it is a different
-film's length. **Roughly 130 words have to go** — and the gaps below want some of that budget back,
-so the real cut is deeper than 130.
-
-### Coverage against the brief — scene by scene
-
-| Scene | Brief's job | Script |
+| | Before | After the rebuild |
 |---|---|---|
-| 1 · 2008 Tarquin | Trading floor reads as **cause**, not backdrop | 🟡 *"bets heavily on leveraged E.T.F.s"* only **implies** it. The brief's load-bearing function — *"He was the reason 2008 hit"* — is not carried by any line |
-| 2 · 2008 Bob | Deliberately unremarkable | ✅ |
-| 3 · the crash | 🔇 **Silent** | ✅ correctly absent |
-| 4 · 2026, the Shard | **Eighteen years**; name the mechanism — housing bought and **left empty because asset inflation pays better than rent**; sarcasm **paired with the empty flats** | 🔴 Names the firm and the buying. **The mechanism, the emptiness and the eighteen years are all absent**, and *"looks very pleased with himself"* is sarcasm pinned to nothing on screen — the brief's own *Sarcasm with no consequence* trap. **Scene 11 depends on this beat**, so this is the most expensive gap in the sheet |
-| 5 · the drive | Tarquin's own contempt, then silence, then the **cold** U-turn — *his car heater broke last week* | 🟡 The contempt line is ✅. The U-turn is *"It is a tad chilly, though..."* — a narrator's aside, not the cold-empathy mechanism the brief specifies |
-| 6 · outside Waitrose | 🔑 **ignore / politely reject / engage** — *"have a guess which one's rarest"*, the line aimed at the audience's own behaviour | 🔴 Absent. The IPA joke occupies the slot instead — and ⚠️ it aims the contempt at **the people who donate**, which is worth re-testing against [`the-reader.md`](../../../marketing/the-reader.md) before it survives the cut |
-| 7 · therapy | Play for comedy, get out, punchline survives | ✅ the strongest chunk in the script |
-| 8 · the standoff | One beat each; the scene-5 crack **slaps shut** | ✅ |
-| 9 · the trip | 🔴 No mention of AI | ✅ clean |
-| 10 · the wake-up | The **narrator** does the freak-out and **still thinks it's the drugs** — the one time the audience is ahead of him | 🟡 *"Awoken by the sound of thunder..."* narrates the picture instead. The dramatic irony is not written |
-| 11 · the newspaper | *"It's not the drugs."* · 🔑 **the last newspaper ever printed** · Bob's *where the f\*\*\* have you been* · ⬅️ **the reach-back to scene 4** | 🟡 The date lands (✅ now 2031) and Bob calms him. **All four of the named jobs are missing** — and without the reach-back the brief says *"the film becomes an anti-AI film by accident, which is the one thing it is not"* |
-| 12 · the fire | The apology the man way; the closing line; **the `12d` tilt ends exactly on the last word** | 🔴 **The scene does not exist in the script.** It ends on *"He takes the news well. Excuse the pun."* — **there is currently no last word for the tilt to be cut to**, and the brief says to write that word first |
+| Words | 445 | **413** |
+| Lines | 25 | **29** |
+| At 155 wpm (the ceiling) | ~172s | **~160s** |
+| At ~135 wpm (a narrator's real pace) | ~198s | **~184s** |
+| Against the brief's 250–320 | +39% | **+29%** |
 
-### ⚠️ One trap the whole script trips
+**Thirty-two words came out while five required beats went in** — scene 4's mechanism, scene 6's three
+reactions, scene 11's reach-back, scene 12 in its entirety, and the long cosmic sentence. Getting to
+320 from here means **cutting a job the brief says must be done.**
 
-**Cadence monotony.** Twenty-five lines, every one a short-to-medium declarative. The brief's fix is
-named and unused: **one long cosmic sentence among the short ones.** There is nowhere in this script
-the narrator's voice opens out, and on a spoken-word generation that is also a *musical* problem —
-25 identical phrase-lengths is the audio equivalent of `edit-plan.md`'s 34 identical 8-second clips.
+🔑 **So the honest reading is that 250–320 was derived from the wrong number.** It was back-solved
+from `narration.mp3` at 150s — and [`../edit-plan.md`](../edit-plan.md) says that file is **dated 3
+August, before the entire 24–30 August production run**, and calls it *"a proxy for length, not the
+final track."* The same file measures the untrimmed picture at **272s**. A 184s narration sits
+comfortably inside that, and the brief's own governing rule is **"cut to the words, not the other way
+round."**
 
-### 🧪 The content filter — still untested, and now cheaper to test
+⬜ **Owed a ruling, and it is Jack's:** either the narration budget moves to **~180s** and the re-cut
+is retimed against it, or five brief-mandated beats get struck. **Do not cut the script to hit 150s
+by reflex** — that number's provenance is a superseded file.
 
-The script carries *"Fuck me"*, *"no one gives a shit"* and *"wank tanks"*; the scene-11 gap wants
-Bob's *"where the f\*\*\* have you been"* on top. Suno's filter is real and unpredictable.
+### 🧪 The content filter — one throwaway generation settles it
 
-🔑 **Test all of them in one throwaway generation, and make it chunk 4** — it already contains
-*"gives a shit"* and *"wank tanks"*, it is the **audition line's own chunk** (§4 step 2), and it is
-short. One generation settles the filter **and** casts round 9's voice. If it trips, respell for
-**sound**, never for the dictionary — and note that a respelling that changes the vowel changes the
-read, so `shit` → `shite` is a **performance** decision, not a workaround.
+The script carries *"gives a shit"* and *"wank tanks"*, and canon wants *"Where the f\*\*\* have you
+been"* restored in scene 11 if the filter allows it.
+
+🔑 **Make the test chunk 4.** It already contains both live phrases, it is the shortest chunk, and it
+holds the **audition line** from §4 step 2 — *"I'd say it's a Mexican standoff, but there are no stakes
+and no one gives a shit."* One generation therefore settles the filter **and** casts round 9, which is
+still untested. If it trips, respell for **sound**, never for the dictionary — and note that changing a
+vowel changes the read, so `shit` → `shite` is a **performance** decision, not a workaround.
 
 ### The order to do this in
 
-1. **Cut and rebuild the script** to 250–320 words against the table above. ⬅️ *this is the gate — everything below is wasted until it is done*
-2. **Write the last word first** (scene 12), because the `12d` tilt is timed to it.
-3. **Run chunk 4 once** on the round-9 boxes — filter test and voice audition in one generation.
-4. **Save the Voice** (§4), then run chunks 1–3 and 5 with it attached.
-5. **Stems out** (§5), and hand Premiere the vocal stem.
+1. **Rule on the budget** (above). ⬅️ *nothing below is wasted either way, but the re-cut waits on it*
+2. **Run chunk 4 once** on the round-9 boxes — filter test and voice audition in one generation, ~20 credits as a pair.
+3. **Save the Voice** (§4) from the winning take, then run chunks 1, 2, 3 and 5 with it attached.
+4. **Restore Bob's word** in chunk 5 if the filter passed it.
+5. **Stems out** (§5) — hand Premiere the vocal stem, never the mix.
