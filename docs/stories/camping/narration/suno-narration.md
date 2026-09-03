@@ -1759,6 +1759,147 @@ Manchester kitchen-sink drama narration, audiobook narration, documentary voiceo
 2. **Is the accent Manchester rather than generic northern?**
 3. **Has the echo stayed away?** `voice memo quality` is doing that job and is untouched.
 
+## 🔴 ROUND 19 — the boxes were voting against the accent 9 to 2 (2026-09-03)
+
+**Jack, after round 18: *"the accent is wrong."*** ✅ **And the boxes I handed over contain the
+conflict.** Round 18 asked for Manchester in the Style box while the Exclude box banned **nine words
+from the Manchester family** — the exact stale-ban trap
+[`suno-tag-mechanics.md`](../../../suno-gpt/files/suno-tag-mechanics.md) records as *"a ban is a
+CATEGORY vote, and the Exclude box can outvote the Style box."* Fifth occurrence on this sheet.
+
+### 🔑 The structural conflict, stated plainly — and this sheet already predicted it
+
+| | |
+|---|---|
+| **What produced the accent Jack called *"spot on"*** | `Madchester, Britpop` in the Style box (round 13) |
+| **What produced the delivery Jack called *"10 times better than anything"*** | **Deleting every music genre** from the Style box (round 17) |
+
+🔴 **Those are the same slot, and they want opposite things.** This is not a wording bug. Round 17's
+own §"What this costs" wrote the prediction down before the round was run:
+
+> *"The voice Jack liked at round 13 came from `Madchester, Britpop`. Removing them may lose it…
+> If the voice goes and the talking arrives, the next move is to add **one** music word back and
+> watch which fault returns."*
+
+**The voice went. The talking arrived. Round 19 is that prescription** — plus the ban audit that has
+to happen first, because you cannot ask for a pool that is banned.
+
+### The audit — all four boxes, counted by position (§4c)
+
+| Box | Manchester-coded | Neutral / US-coded |
+|---|---|---|
+| **My Taste** | `Manchester` ×1 | `audiobook`, `documentary` |
+| **Style** | `Manchester` ×2, `kitchen-sink` | `audiobook narration`, `documentary voiceover` |
+| 🔴 **Exclude** | **`Madchester, Britpop, baggy, indie, indie rock, post-punk band, jangly guitars, anthemic, singalong, terrace chant`** | `us rap, young mc, trap, jazz, soul` |
+| **Lyrics** | **none** | — |
+
+🔑 **Two findings out of it, both new:**
+
+1. 🔴 **The Exclude box votes 9-to-2 against the accent the Style box is asking for.** Round 12
+   unbanned this whole family *for exactly this reason*; round 17 re-banned it because round 17 had
+   stopped asking for the accent; round 18 started asking again and left the bans in.
+2. 🔴 **Two of the four words in genre position are accent-neutral.** `audiobook narration` and
+   `documentary voiceover` are professional-narration pools with no nationality — they are what made
+   the delivery work, so they stay, but un-nationalised they outvote `Manchester` 2:1 in the
+   strongest slot on the page. **Fix: nationalise them rather than delete them.**
+
+### Three smaller conflicts, fixed in the boxes below
+
+| Conflict | Why it is one | Fix |
+|---|---|---|
+| ⚠️ **`mouth barely opening`** vs **`vowels drawn out and bent`** | Physically contradictory — a closed mouth cannot make a drawn-out bent vowel, and both are articulation clauses, the strongest voice lever we have. Two of them cancelling is expensive | **Delete `mouth barely opening`** |
+| ⚠️ **`bent flat` / `hard flat vowels`** vs banned **`flat delivery, level delivery`** | The token `flat` is requested and banned on two different axes. §4b flags this exact word: *"`flat`/`level` are exactly what caused the round-5 monotone"* | **`bent flat` → `bent`** |
+| ⚠️ **`the same all the way through and never getting quieter`** | §4b: *"State loudness as loudness"* — `the same all the way through` is a pitch reading too | **→ `never getting louder and never getting quieter`** |
+
+### ⬜ Not changed this round — the lyric register, held for round 20
+
+🔑 **The Lyrics box is the biggest box in the prompt — 420 words, 2,320 characters — and it is
+written in formal standard English with zero Manchester coding.** Measured:
+
+- **Every negative is unelided:** `does not` ×2, `Cannot`, `It is`. Not one `doesn't`, `can't`, `it's`.
+- **Formal lexis in the narrator's own lines:** `pain infliction`, `banal`, `warrant`,
+  `acknowledgement`, `usually`, `insist`.
+- **RP lexis ventriloquised from Tarquin, but sung by the narrator:** `You chaps'll`, `a tad`,
+  `bless him`. **Suno has no ventriloquism model** — it sees posh words in the vocal line.
+
+⚠️ **Unverified as an accent lever.** [`lyricist-playbook.md`](../../../suno-gpt/files/lyricist-playbook.md)
+§6 rules *"respell phonetically for the sound you want"* for **single failing words**, and warns
+*"don't preemptively respell words that haven't actually failed."* Extending it to a whole box for
+**accent** is an inference, not a finding — but round 15's ruling that **layout in the Lyrics box
+votes as hard as the words** is the same class of claim, and it held. **Round 20 if round 19 misses.
+One axis at a time.**
+
+### 1 · My Taste
+
+```
+Vocals: one male voice, and he is TALKING — not singing, not rapping, not reciting. He is reading a story out loud the way an audiobook or a television documentary is read. A working-class Manchester man in his forties, born and raised in Manchester, telling you something across a table: mid-range, nasal and adenoidal, snarled through the nose, a sandpaper rasp on it, sneering and cocky. Chin up, jaw jutted forward. Hard flat Manchester vowels, drawn out and bent, leaned on and drooping at the ends of words. Glottal stops, dropped T's and dropped H's. A curled lip on every line. Recorded like a voice memo — close and dry right on the microphone, unproduced, no room and no echo on him at all. Free pacing — ordinary conversational speech, uneven sentence lengths, and every full stop is a real stop with a breath in it, pausing where the meaning breaks and never on a bar. His pitch swoops up inside a sentence and drops away at the end of it — never droning, never on one note. Bored, sarcastic and certain, giving nothing away, never signalling a joke. The voice stays loud and right in front the whole way through, never getting louder and never getting quieter. Music: one low ambient underscore underneath, no pulse and no rhythm and no drums of any kind, the same all the way through, no melody and no chords, nothing ever builds and nothing ever drops. Register: grim and funny, played completely straight.
+```
+
+### 2 · Style — 996/1000
+
+🔑 **`Britpop snarl` is the one music word going back, and it goes in slot 2, not slot 1.** Slot 1
+keeps the speech form that fixed the delivery. And it is a **vocal compound**, not a bare pool word —
+`snarl` names a mouth, which is this sheet's own *articulation beats attitude* rule.
+
+```
+Manchester kitchen-sink drama narration, Britpop snarl, Manchester documentary voiceover, northern English audiobook narration. One man talking, not singing. Working-class Manchester man in his forties. Mid-range voice, nasal and adenoidal, snarled through the nose, sandpaper rasp, sneering and cocky. Chin up, jaw jutted forward. Hard flat Manchester vowels, drawn out and bent, leaned on and drooping at the ends of words. Glottal stops, dropped T's and dropped H's. A curled lip on every line. Voice memo quality, close and dry right on the microphone, unproduced, no room. Free pacing, ordinary conversational speech, pausing where the meaning breaks and never on a bar. Every full stop is a full stop and he stops at it. His pitch swoops up inside a sentence and drops away at the end of it. Bored, sarcastic, deadpan. Underneath, one low ambient underscore, no pulse and no rhythm, never getting louder and never getting quieter. Voice loud and in front all the way, no singing, no melody.
+```
+
+### 3 · Exclude Styles — 15 bans deleted, every singing and melody ban kept
+
+**Deleted:** `indie rock, guitar band, post-punk band, rock band, live band, guitar, acoustic guitar,
+jangly guitars, baggy, Madchester, Britpop, indie, anthemic, singalong, terrace chant`.
+
+⚠️ **Unbanning is not requesting** — none of these go in the Style box. The documented trade is
+[`suno-tag-mechanics.md`](../../../suno-gpt/files/suno-tag-mechanics.md)'s: *"when the vocal is
+coming out as a stem, an unwanted band is an inconvenience and a wrong vocalist is a dead take."*
+**Narration ships as a vocal stem (§5), so a guitar costs nothing.** Every `singing / melody / chord /
+pitched instrument` ban stays, and those are what actually held the singing back — not these.
+
+```
+singing, sung verses, sung chorus, melodic vocal, vocal melody, vocal hooks, crooning, autotune, harmonies, backing vocals, choir, spoken word, performance poetry, poetry slam, dub poetry, beat poetry, poetry reading, recital, recitation, declamatory, verse, stanza, rhyming, metrical, incantation, theatrical recital, over-enunciated, elocution, female vocal, sung female vocal, torch song, jazz vocal, soul vocal, sultry, seductive, US rap, young MC, rapping, bars, flow, trap, piano, glockenspiel, strings, violins, horns, melody, chord progression, chords, synth lead, pad, deep voice, low voice, bass voice, baritone, booming, boomy, sub bass, chest voice, growl, monotone, flat delivery, level delivery, unmodulated, robotic, machine voice, text to speech, computerised, comedic, novelty, parody, jaunty, playful, whimsical, bouncy, uplifting, laugh track, audience laughter, applause, live audience, epic trailer music, cinematic swell, film score, orchestral score, thriller score, suspense, tension strings, movie trailer voice, epic narrator, reverb, echo, telephone voice, distorted vocal, vocoder, double time, tempo change, fast delivery, rapid fire, breathless, hurried, frantic, manic, shouting, screaming, yelling, gentle, soft vocal, softly spoken, mellow, soothing, breathy, whispered, calm delivery, languid, wistful, build, buildup, riser, drop, beat drop, pre-drop, breakdown, crescendo, decrescendo, swell, dynamic build, tension build, fade in, fade out, quiet passage, half time, vocal ducking, distant vocal, buried vocal, drums, drum kit, drum loop, percussion, breakbeat, beat, kick, snare, hi-hats, groove, four to the floor, pulse, metronome, quantized, on the beat, in time with the beat, rhythmic delivery, cadence, syncopation, bars, rap flow, chanting along, sing-song
+```
+
+### 4 · Lyrics — unchanged from round 16
+
+### Settings — unchanged
+
+**v5.5 · Weirdness 0 · Style influence 75 and 90 · Duration 240s.** Name `-F-si75-w0` / `-F-si90-w0`.
+
+### Judge it
+
+1. 🔑 **Is the accent back?** The whole point. `Britpop snarl` in slot 2 plus the family unbanned.
+2. 🔴 **Is he still talking?** The known cost. If he sings, `Britpop snarl` is too strong even in
+   slot 2 — and the answer is **not** a third wording: it is §4a below.
+3. **Has the echo stayed away?** `voice memo quality` untouched.
+
+### 🥇 If round 19 splits the difference — stop prompting and use the Voice
+
+🔴 **This sheet is 19 rounds deep on a conflict that has a mechanism, not a wording.** The
+`suno-prompt` skill's own stopping rule: *"if a vocal hasn't moved after ~2 rounds of style-prompt
+surgery, stop prompting — the voice you want probably isn't in the genre's vocalist pool, and no
+adjective stack jumps pools."*
+
+🔑 **And the accent already exists in a file.** Round 13's take is the one Jack called *"spot on"* —
+right accent, right age, right class.
+[`suno-controls-and-workflows.md`](../../../suno-gpt/files/suno-controls-and-workflows.md) §4 says a
+Voice built from a generation **"survives a total genre change."** That is precisely the seam this
+conflict needs: **accent from round 13, delivery from round 17's genre-free boxes.**
+
+1. Open the **round-13 take** → three dots → **Remix → Voice**.
+2. **Select the sub-region** where the accent is strongest — *fifteen clean seconds beat sixty
+   contaminated ones.* One consistent register; a clip that switches registers clones unstable.
+3. 🔴 **Delete the attached style prompt** so the voice is not welded to `Madchester, Britpop`. This
+   step is the whole point — skip it and you re-import the singing.
+4. Name it, then on a **round-17 generation**: Advanced → **+ on Voice** → choose it. **Audio
+   influence 40–60** (above 60 gives artifacts).
+5. Failure sign: if it comes back sung, the style prompt was not deleted in step 3.
+
+⚠️ **And the standing ruling on this page has not been overturned:**
+[`voice.md`](./voice.md) → *"every route that works COPIES an accent. None invent one."* Round 19 is
+the last cheap swing at inventing it. **The Voice transplant is the copy route inside Suno, at no
+extra cost** — and if that misses too, `voice.md`'s £0 answer is still sitting there unattempted.
+
 ## 5. Getting the voice OUT — narration is a stem, not a track
 
 🔴 **Never generate the narration and the score together.** [`../../karen/narration/README.md`](../../karen/narration/README.md)
