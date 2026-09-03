@@ -1587,6 +1587,92 @@ the round stays attributable — the sheet's own discipline: *"once an axis is c
 it."* If weirdness 0 fixes the random speeding-up, that is one setting doing what four rounds of
 prompt surgery could not.
 
+
+## 🆕 ROUND 17 — stop naming a music genre at all (2026-09-03)
+
+**Jack: *"weirdness 0 / style influence 75 and 90 sounds better, but the lyrics are still sung
+sometimes, he still doesn't pause after a sentence, it still is not talking. Forget what we've done,
+try something else."*** ✅ **Agreed. Sixteen rounds have all been variations of one idea, and this
+round abandons it.**
+
+### 🔑 The thing every round has had in common
+
+**Every prompt since round 1 has led with a MUSIC-SCENE pool word** — `Madchester`, `Britpop`,
+`skit`, `baggy`. §4c defended them because *"nationality rides on the genre"* and they were the only
+thing delivering a northern accent. **But a music pool's native vocal SINGS, sits on a bar, and comes
+with its scene's production.** That is the singing, the beat and the echo — **three faults, one
+cause, and it is the word we kept protecting.**
+
+🔴 **We have been buying the accent with the exact word that breaks the delivery.**
+
+### 🥇 The new idea: make the genre slot a SPEECH form that is already British
+
+**Do not name a music genre at all.** Put a *talking* form in the strongest slot — and pick one that
+carries the accent by itself, so nothing is lost when the music pool goes.
+
+| Lead | Why |
+|---|---|
+| 🥇 **`British kitchen-sink drama narration`** | 🔑 **This sheet's own variant F, listed 🟢 at the top of the file and never once tried.** Kitchen-sink *is* British working-class northern by definition — the accent arrives with the form instead of with a music scene. Its only flagged risk was inviting a film score, and `film score, orchestral score, thriller score` are all already banned |
+| **`audiobook narration`** | Long-form by definition. No grid anywhere in the corpus, and a heavily British one |
+| **`documentary voiceover`** | This sheet's own ladder rung 2, untried |
+| 🔑 **`voice memo quality, close and dry, unproduced, no room`** | **Jack's rapper instinct, correctly named.** Practitioner sources give *"voice memo quality"* and *"casual studio chatter"* for exactly the before-the-beat talking he described. It is a **recording context, not a music genre** — so it attacks the **echo** as well, which no ban ever could |
+
+⚠️ **Rejected: `[Sprechgesang]`.** It surfaces in guides as a spoken-vocal tag, but it literally means
+*speech-song* and is a **singing** technique. Wrong direction for a track already drifting sung.
+
+### 🔴 What this costs, stated plainly
+
+**The voice Jack liked at round 13 came from `Madchester, Britpop`.** Removing them may lose it. **That
+is the trade this round accepts** — and it is Jack's own call: *"forget what we've done, try something
+else."* If the voice goes and the talking arrives, the next move is to add **one** music word back and
+watch which fault returns.
+
+### The Exclude box changes too — and it has to
+
+🔑 **Round 12 UNBANNED the whole band/guitar family** (`indie rock, guitar band, post-punk band,
+guitar, jangly guitars`) for one reason: those bans were strangling the Madchester pool. **The pool is
+gone, so the reason is gone** — and they go back in, along with `Madchester, Britpop, baggy` themselves.
+
+⚠️ **The grep audit caught three collisions with the new Style box** — the exact stale-ban trap this
+sheet has hit four times. All three are fixed below: `calm narration` → **`calm delivery`**,
+`ambient pad` → dropped (`pad` already banned), `dramatic reading` → **`theatrical recital`**.
+
+### 1 · My Taste
+
+```
+Vocals: one male voice, and he is TALKING — not singing, not rapping, not reciting. He is reading a story out loud the way an audiobook or a television documentary is read. A working-class northern English man in his forties, telling you something across a table: mid-range, nasal and adenoidal, a sandpaper rasp on it, sneering and cocky. Hard flat northern vowels, dropped consonants, vowels leaned on and drooping at the ends of words. Recorded like a voice memo — close and dry right on the microphone, unproduced, no room and no echo on him at all. Free pacing — ordinary conversational speech, uneven sentence lengths, and every full stop is a real stop with a breath in it, pausing where the meaning breaks and never on a bar. His pitch swoops up inside a sentence and drops away at the end of it — never droning, never on one note. Bored, sarcastic and certain, giving nothing away, never signalling a joke. The voice stays loud and right in front the whole way through, never getting quieter. Music: one low ambient underscore underneath, no pulse and no rhythm and no drums of any kind, the same all the way through, no melody and no chords, nothing ever builds and nothing ever drops. Register: grim and funny, played completely straight.
+```
+
+### 2 · Style
+
+```
+British kitchen-sink drama narration, audiobook narration, documentary voiceover. One man talking, not singing. Northern English working-class man in his forties. Mid-range voice, nasal and adenoidal, sandpaper rasp, sneering and cocky. Hard flat northern vowels, dropped consonants, vowels leaned on and drooping at the ends of words. Voice memo quality, close and dry right on the microphone, unproduced, no room. Free pacing, ordinary conversational speech, uneven sentence lengths, pausing where the meaning breaks and never on a bar. Every full stop is a full stop and he stops at it. His pitch swoops up inside a sentence and drops away at the end of it. Bored, sarcastic, deadpan. Underneath, one low ambient underscore, no pulse and no rhythm, the same all the way through and never getting quieter. Voice loud and in front all the way, no singing, no melody.
+```
+
+### 3 · Exclude Styles
+
+```
+singing, sung verses, sung chorus, melodic vocal, vocal melody, vocal hooks, crooning, autotune, harmonies, backing vocals, choir, spoken word, performance poetry, poetry slam, dub poetry, beat poetry, poetry reading, recital, recitation, declamatory, verse, stanza, rhyming, metrical, incantation, theatrical recital, over-enunciated, elocution, female vocal, sung female vocal, torch song, jazz vocal, soul vocal, sultry, seductive, US rap, young MC, rapping, bars, flow, trap, piano, glockenspiel, strings, violins, horns, melody, chord progression, chords, synth lead, pad, deep voice, low voice, bass voice, baritone, booming, boomy, sub bass, chest voice, growl, monotone, flat delivery, level delivery, unmodulated, robotic, machine voice, text to speech, computerised, comedic, novelty, parody, jaunty, playful, whimsical, bouncy, uplifting, laugh track, audience laughter, applause, live audience, epic trailer music, cinematic swell, film score, orchestral score, thriller score, suspense, tension strings, movie trailer voice, epic narrator, reverb, echo, telephone voice, distorted vocal, vocoder, double time, tempo change, fast delivery, rapid fire, breathless, hurried, frantic, manic, shouting, screaming, yelling, gentle, soft vocal, softly spoken, mellow, soothing, breathy, whispered, calm delivery, languid, wistful, build, buildup, riser, drop, beat drop, pre-drop, breakdown, crescendo, decrescendo, swell, dynamic build, tension build, fade in, fade out, quiet passage, half time, vocal ducking, distant vocal, buried vocal, drums, drum kit, drum loop, percussion, breakbeat, beat, kick, snare, hi-hats, groove, four to the floor, pulse, metronome, quantized, on the beat, in time with the beat, rhythmic delivery, cadence, syncopation, bars, rap flow, chanting along, sing-song, indie rock, guitar band, post-punk band, rock band, live band, guitar, acoustic guitar, jangly guitars, baggy, Madchester, Britpop, indie, anthemic, singalong, terrace chant
+```
+
+### 4 · Lyrics — round 16's layout, unchanged
+
+**Do not change the words this round.** The layout was measured and fixed at round 16; leaving it
+frozen is what makes this round attributable to the genre swap.
+
+### Settings
+
+**v5.5 · Weirdness 0 · Style influence 75 and 90 · Duration 240s.** Jack confirmed weirdness 0
+*"sounds better"*, so it stays pinned. Name `-D-si75-w0` / `-D-si90-w0`.
+
+### Judge it
+
+1. 🔑 **Is he talking?** The whole point of the round.
+2. **Does he pause at full stops?** The `every full stop is a full stop and he stops at it` clause is new.
+3. **Is the echo gone?** `voice memo quality, unproduced, no room` is the first positive lever aimed at it.
+4. 🔴 **Is the voice still right?** The known cost. If the accent has gone but he is finally talking,
+   **that is progress, not failure** — accent is recoverable, delivery has not been.
+
 ## 5. Getting the voice OUT — narration is a stem, not a track
 
 🔴 **Never generate the narration and the score together.** [`../../karen/narration/README.md`](../../karen/narration/README.md)
