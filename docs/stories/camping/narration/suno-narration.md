@@ -1368,6 +1368,166 @@ advances when anything in the boxes changes, and the lyrics box did.
    answer is fewer, longer lines — not a return to paragraphs.
 3. **Echo** — expected to be unchanged. It is a post-production job, not a prompt one.
 
+
+## 🔑 ROUND 16 — measured the cram, and the form word was always too SHORT (2026-09-03)
+
+**Jack: *"still talking to the beat, he speeds up randomly, maybe more tags would do the trick"*** —
+and separately, *"unless there is a different way of saying talking to Suno, like how rappers do
+before a song starts."* **The second instinct is the better one. The first is backwards.**
+
+### 🔴 "More tags" is the wrong direction — and it is this exact symptom
+
+[`suno-voices.md`](../../../suno-gpt/suno-voices.md) §4, tested: *"cue density chopping a verse into
+**micro-sections that each re-decide their own phrasing**"* — and the ruling that follows is blunt:
+🔴 **"a tempo fault is now a reason to STRIP cues before anything else."**
+
+**"He speeds up randomly" is that finding's own description of itself.** We already carry exactly one
+label, so there is nothing left to strip — but adding more would make this fault worse, not better.
+
+### 🥇 The random speeding-up, measured
+
+*"Measure before prescribing."* [`lyric-craft.md`](../../../suno-gpt/files/lyric-craft.md): **the
+first line of a section sets the bar length, and every later line is force-fit into that slot.**
+
+🔴 **Round 15 opened three paragraphs on a very short line.** *"Two thousand and eight."* is five
+syllables; it set a five-syllable bar, and the eleven- and fourteen-syllable lines behind it crammed
+to fit. **Cram is what "speeds up randomly" sounds like.**
+
+| | Round 15 | **Round 16** |
+|---|---|---|
+| Paragraphs opening ≥3 syllables under their own mean | **3** | ✅ **0** |
+| Paragraphs flagged | 6 of 15 | **4 of 15** |
+| Worst spread | 16 | **9** |
+
+⚠️ **The four remaining spreads are deliberate and should stay.** They are the punchlines — *"Fuck
+me."*, *"Uh. Nice tie, though."*, *"Forgive the pun."* The asymmetry rule says a **short line gets
+stretched, which sounds deliberate; a long line gets crammed, which sounds broken.** Short outliers
+are the joke landing.
+
+### 🔑 Jack's instinct, and what it exposes: every form word we have tried names a SHORT section
+
+**`skit`** is a short section between songs. **`interlude`** is the same. So is the rapper's
+**`intro`** he is reaching for. 🔴 **That is why round 10's voice ducked and built toward something —
+we kept telling the model this was a short bit before the real thing starts.**
+
+🔑 **The script is three and a half minutes of one man talking. The forms that natively mean *a man
+talks, at length, with no beat* are different words entirely:**
+
+| Form word | Why it fits |
+|---|---|
+| 🥇 **`audiobook narration`** | Long-form by definition. Enormous corpus, no grid anywhere in it, and a heavily **British** one — which is free accent reinforcement in the strong genre slot rather than a weak adjective |
+| 🥇 **`documentary voiceover`** | The sheet's own ladder rung 2, untried. A man explaining something over an underscore |
+| **`radio drama`** | Same family, same rung |
+
+⚠️ **`monologue` stays** — it is the nationality-neutral talking form-word and it doubles the
+`[Monologue]` label. **These are added beside it, not instead of it.**
+
+### The two changes, and why they are separable
+
+They fix **different faults**, so a single generation still tells you which worked:
+
+| Change | Fixes | Risk |
+|---|---|---|
+| **A · Round 16 lyrics** (below) — layout only, not one word altered | The cramming and random speed-ups | Low |
+| **B · Style box:** after `Madchester monologue, Britpop snarl,` insert **`audiobook narration, documentary voiceover,`** | Talking *to the beat* | 🔴 A new pool word can move the voice. Freeze everything else |
+
+🔑 **Do A first if you only do one.** It cannot hurt the voice — it changes no words and no boxes.
+
+### Lyrics — round 16
+
+```
+[Monologue]
+
+Two thousand and eight. Meet Tarquin.
+Star trader on the NatWest floor,
+betting heavily on leveraged E.T.F.s.
+Pain infliction usually looks this banal.
+Uh. Nice tie, though.
+
+Meet Bob. Standard middle-manager bloke.
+Getting away for a few days with his wife Jo,
+away from the financial stress of it all.
+Can you blame 'em, really.
+
+Twenty twenty-six. Tarquin runs the country's
+biggest private equity firm,
+the one that buys up social housing.
+The bastard looks very pleased with himself.
+He ditched the tie, at least.
+
+Driving home from work he spots this lot,
+and thinks: rates up one percent next week.
+You chaps'll have a few more mates soon.
+Cannot wait for my bonus.
+It is a tad chilly, though.
+
+Bob spends his days in this luxury tent,
+taking any beer donations he can get.
+I don't know what's worse.
+That his cause is so rarely supported.
+Or that the ones who do judge him
+for being an I.P.A. man.
+Fuck me.
+
+Tarquin sought professional help. He'd felt a feeling,
+first time since the devil's lettuce at uni.
+The therapist tries to explain
+that empathy for the homeless
+does not warrant an emergency appointment.
+It does not sink in.
+
+So he gives up. There is no helping him.
+He needs the strongest psychedelic known to man
+to fix his car crash of a personality.
+Forgive the pun.
+
+Tarquin agrees he should explore himself more.
+So he heads off for supplies,
+before his trip to Wales.
+
+Parks how he usually does.
+Bob is none too pleased.
+I'd say it's a Mexican standoff,
+but there are no stakes,
+and no one gives a shit.
+
+Bob's mind is thrown into a tailspin
+every time he sees those wank tanks.
+Four by fours. Most common vehicle
+in this car park.
+
+Tarquin locks on to a background figure.
+Not a wrestle with his conscience —
+just a small acknowledgement
+that it is in there. It being Bob.
+
+He heads off to Wales for the retreat.
+Before they hand over the ayawaska,
+they insist on meditation.
+Tarquin has never sat on a floor before.
+Safe to say it has kicked in.
+He's had enough, bless him. Time for bed.
+
+Awoken by the sound of thunder,
+with his heart in his throat.
+Stepping out of the tent,
+he spots an old newspaper.
+
+Warming his hands on the fire,
+Bob tries to calm him down.
+Tells him to look at the date.
+Twenty thirty-one. Last one they ever printed.
+
+He takes the news well. Excuse the pun.
+```
+
+**Unchanged: My Taste, Exclude, v5.5, duration 240s, pair at 30/60.** Name `-C-w30` / `-C-w60`.
+
+⚠️ **Before pasting, grep the Exclude box for every noun in the Style box** — the sheet's own rule,
+after `underscore` was found banned while the Style box asked for one. **If you add `audiobook
+narration, documentary voiceover`, check neither `audiobook`, `documentary` nor `voiceover` is
+banned.** (`movie trailer voice` and `epic narrator` are banned; plain `narration` is not.)
+
 ## 5. Getting the voice OUT — narration is a stem, not a track
 
 🔴 **Never generate the narration and the score together.** [`../../karen/narration/README.md`](../../karen/narration/README.md)
