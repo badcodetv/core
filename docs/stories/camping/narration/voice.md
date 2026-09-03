@@ -233,6 +233,74 @@ If it has to stay synthetic — because the script will keep changing and re-rec
 then **Hume Octave at $14** is the one to move to, and the per-line acting instructions are worth
 more to this script than the voice design is.
 
+## 🔴 THE NORTHERN ACCENT IS NOT CANON (found 2026-09-03)
+
+**Constraints as of now: £0, nothing paid for, and the free AI tier rejected as awful.** That should
+have left nothing. It doesn't — because the requirement that broke every route was never a
+requirement.
+
+### Grep the canon. The word is not there.
+
+| File | Says "northern"? | Says "accent"? |
+|---|---|---|
+| [`docs/voice.md`](../../../voice.md) — **the house voice guide** | ❌ **No** | ❌ **No** |
+| [`../narration-brief.md`](../narration-brief.md) — **the narration brief** | ❌ **No** | ❌ **No** |
+
+🔑 **What the brief actually specifies is register, not geography:**
+
+> **Baseline `{FLAT}`** — certain, dry, administrative. The narrator knows how this ends.
+> **One `{WARM}` crack, spent once.** ~155 words/minute, *"and an authoritative voice sits under it."*
+
+🔴 **And the same BadCode narrator is General American on Karen** —
+[`../../karen/narration/voice.md`](../../karen/narration/voice.md): *"Native American English.
+General American with a faint Western ease."* **The house has never required a British narrator at
+all, let alone a northern one.**
+
+⚠️ **So where did it come from?** The Suno casting rounds, as a preference — and this page's own
+free-routes section already conceded it: *"if nobody to hand has the accent, a northern narrator is
+a **preference, not a requirement**. The brief's load-bearing traits are deadpan, unhurried, flat —
+and those are free."*
+
+**That preference is what fourteen Suno rounds, MiniMax, and the whole ElevenLabs run were spent
+chasing.** It is defensible on [`the-reader.md`](../../../marketing/the-reader.md) grounds — the
+target reader is working-class UK — but 🔴 **it is not written down as a rule anywhere, and it has
+now cost more than every other decision on this film combined.**
+
+## 🥇 THE £0 ANSWER — Jack or Kai reads it
+
+**One route satisfies every constraint at once:** free, not AI, no licence question, no watermark,
+no credits, no subscription, available today.
+
+| Constraint | Met? |
+|---|---|
+| £0 | ✅ |
+| Not paying for anything | ✅ |
+| Not AI slop | ✅ **Not AI at all** |
+| Commercial rights to publish | ✅ **Owned outright** |
+| The accent | ✅ **Real, because a real person has it** |
+| `{FLAT}`, unhurried, deadpan | ✅ The only thing the brief actually asks for, and it is a performance choice |
+
+🔑 **Whatever accent Jack or Kai has, it is a real human accent, which is more than any of the four
+engines managed.** If it is not Manchester, the film loses a preference and gains a narrator.
+
+### How to make a phone recording good enough
+
+This page already rules that *"a phone in a quiet room clears the bar for this film."* To clear it
+comfortably:
+
+1. **Room, not gear.** Soft furnishings kill reflections — record sitting on a bed, or inside a
+   wardrobe with clothes in it. 🔴 **Room echo is the one fault that cannot be fixed afterwards**,
+   and it is the exact fault that ruined the Suno takes.
+2. **A hand's width from the mouth, slightly off-axis** so plosives miss the mic.
+3. **Voice Memos is fine.** Record the whole thing in one pass, then again. Two passes.
+4. **One chunk at a time**, same as the TTS plan — every line is a cut point.
+5. **Clean up in Audacity** (free): noise reduction on a few seconds of room tone, then normalise.
+6. 🔴 **Do not add reverb or "warmth."** Dry and close is the register.
+
+⚠️ **The `{FLAT}` direction matters more than the voice.** Read it bored. Read it like someone who
+has told this story before and is not impressed by it. **Every take that "performs" is wrong,
+however good the voice** — which is the same note this page has given every engine.
+
 ## 🥇 THE WAY OUT (2026-09-03) — every route that works COPIES an accent. None invent one.
 
 **Jack: *"every free AI voice is awful, ElevenLabs doesn't work, Suno makes weird stuff, and I don't
