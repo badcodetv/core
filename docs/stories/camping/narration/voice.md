@@ -233,12 +233,13 @@ If it has to stay synthetic — because the script will keep changing and re-rec
 then **Hume Octave at $14** is the one to move to, and the per-line acting instructions are worth
 more to this script than the voice design is.
 
-## 🔑 THE RUN — ElevenLabs, new voice, 4,389 credits (2026-09-03)
+## 🔑 THE RUN — ElevenLabs, 4,057 credits (2026-09-03). ✅ The voice is already built.
 
-**Jack's call: ElevenLabs, design a new voice.** ⚠️ **4,389 credits (confirmed 2026-09-03) is
-enough for exactly one pass and one repair** — and the script grew, so the margin is now thin
-enough that 🔑 **the $6 Starter plan below is the answer, not a spending order.** It is needed for
-the commercial licence regardless.
+✅ **The voice exists — "Camping Narrator", confirmed in the UI 2026-09-03.** The repo never
+recorded it, so everything below about *designing* a voice is **history, already paid.** 🔑 **The
+only spend still ahead is the script: 2,609 of 4,057.** Rungs and vocabulary are kept because they
+are the fix if the saved voice turns out to have drifted American — the documented failure of this
+tier.
 
 🔑 **The paste-ready words live in [`elevenlabs-script.md`](./elevenlabs-script.md)** — the five
 chunks normalised, tagged and character-counted. This section is the *plan and the budget*; that
@@ -248,9 +249,9 @@ file is what goes in the box.
 
 | | Characters | Credits |
 |---|---|---|
-| **The whole script** (chunks 1–6 of `elevenlabs-script.md`) | **2,447** | **2,447** |
-| chunk 1 · 2 · 3 · 4 · 5 · 6 | 330 · 389 · 269 · 493 · 432 · 534 | same |
-| ⬜ chunk 8, if the ending comes back | +329 | 2,776 |
+| **The whole script** (chunks 1–6 of `elevenlabs-script.md`, tagged) | **2,609** | **2,609** |
+| chunk 1 · 2 · 3 · 4 · 5 · 6 | 363 · 420 · 269 · 525 · 459 · 573 | same |
+| ⬜ chunk 8, if the ending comes back | +357 | 2,966 |
 
 🔑 **1 credit = 1 character** on **Eleven v3** and **Multilingual v2** — the two models worth using
 here. (Flash/Turbo are 0.5, but they are the latency models and this is narration.)
@@ -266,15 +267,16 @@ generating three samples for you."* ⚠️ **Preview text must be 100–1,000 ch
 |---|---|---|
 | **6 screening designs** @ a **150-char** preview | 900 | 900 |
 | **1 confirmation design** @ the full **312-char** preview, on the winning prompt | 312 | 1,212 |
-| **Chunks 1–6, once** | 2,447 | 3,659 |
-| ⚠️ **Left for re-reads, against 4,389** | — | **730** |
+| ~~Voice design~~ | ✅ already paid | 0 |
+| **Chunks 1–6, once** | 2,609 | 2,609 |
+| ✅ **Left for re-reads, against 4,057** | — | 🥇 **1,448** |
 
 ⚠️ **730 buys one long chunk again and one short one** — chunk 6 (534) plus chunk 3 (269) is
 already 803, so it does not even cover the two longest. 🔴 **And if the ending comes back as chunk 8
 (+329), the margin falls to 401** — less than a single re-read of chunk 6. **That is not a safety
 margin, it is one mistake.**
 
-🔴 **What does NOT fit: two full script passes.** 2 × 2,447 = 4,894 — **more than the whole balance**, not even one
+🔴 **What does NOT fit: two full script passes.** 2 × 2,609 = 5,218 — **more than the whole balance**, not even one
 design attempt. **So the discipline is: design cheaply, render once, re-render only the chunks that
 fail.** Never re-render the whole script to fix one line.
 
@@ -285,10 +287,10 @@ fail.** Never re-render the whole script to fix one line.
    full-length confirmation — but you do not pay 312 to reject something.
 2. 🔑 **Make the preview text the audition line.** The design preview *is* the test, so auditioning
    costs nothing extra. Both preview texts below already contain the audition line.
-3. **Render chunk by chunk, never the whole script in one go.** A bad chunk then costs 269–534 to
-   redo instead of 2,447. ⚠️ **Whether v3 audio tags are billed as characters is unverified** — we could
-   not find it documented. The 2,256 above budgets as if they are; the script uses exactly one tag,
-   9 characters.
+3. **Render chunk by chunk, never the whole script in one go.** A bad chunk then costs 269–573 to
+   redo instead of 2,609. ⚠️ **Whether v3 audio tags are billed as characters is unverified** — we
+   could not find it documented. The 2,609 above budgets as if they are; the script carries twelve
+   tags, 162 characters.
 
 ### 🔴 The prompt is rewritten for Voice Design v3 — the old one is the wrong shape
 
@@ -363,7 +365,7 @@ set. Test the real profanity once on a short generation before committing the sc
 
 ### 🔴 Before spending anything: check the plan, not the balance
 
-**4,389 looks like a Free-tier remainder** (Free is 10,000 credits/month). If so, 🔴 **the output
+**4,057 looks like a Free-tier remainder** (Free is 10,000 credits/month). If so, 🔴 **the output
 carries no commercial licence and BadCode publishes this film.**
 
 🔑 **The fix is $6 and it removes the whole budget question:** **Starter — $6/month, 30,000 credits,

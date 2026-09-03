@@ -106,15 +106,15 @@ Two corrections and one confirmation:
 |---|---|
 | *"Six pastes lose prosody continuity because stitching doesn't work on v3"* | 🔴 True but **irrelevant**. Stitching is API-only. Studio would not have given it either |
 | *"Studio's free regenerations are the repair budget"* | ⚠️ The **Text to Speech box has them too** — and it is the one screen **both** sources agree on. The [announcement blog](https://elevenlabs.io/blog/two-free-regenerations) grants them to *"Speech Synthesis via the website"* and **denies them to Projects**; the [Studio docs](https://elevenlabs.io/docs/eleven-creative/products/studio) grant them to Studio. **This screen is the safe one** |
-| *"v3 takes 5,000 characters"* | ✅ Still true. The whole script is 2,447, so it *could* go in one paste |
+| *"v3 takes 5,000 characters"* | ✅ Still true. The whole script is 2,609, so it *could* go in one paste |
 
 🔑 **And chunking beats one big paste, for a reason that is purely about repair.** The free
 allowance is **two re-rolls per generation**, not per character:
 
 | Approach | Charged | Free re-rolls | A bad line costs |
 |---|---|---|---|
-| One paste of 2,447 | 2,447 | 2, covering all 2,447 | re-roll the **whole script** |
-| **Six chunks** | **2,447 — the same** | **12** | re-roll **one chunk (269–534)** |
+| One paste of 2,609 | 2,609 | 2, covering all 2,609 | re-roll the **whole script** |
+| **Six chunks** | **2,609 — the same** | **12** | re-roll **one chunk (269–573)** |
 
 **Same spend, six times the repair budget, and a bad line never costs you a good one.** This is
 exactly what [`../../karen/narration/script.md`](../../karen/narration/script.md) already does with
@@ -295,18 +295,18 @@ The paper goes on the fire. Nobody says sorry; the cans do it.
 
 ## The budget
 
-**Chunks 1–6 are 2,447 characters = 2,447 credits.** Chunk 8 would add 329.
+**Chunks 1–6 are 2,609 characters = 2,609 credits.** Chunk 8 would add 357.
 
 ⚠️ **That is not the whole spend.** Voice Design is charged too — the plan in [`voice.md`](./voice.md)
 is 6 screening designs at a 150-char preview (900) plus one confirmation at 312.
 
-**Balance confirmed 2026-09-03: 4,389 credits.**
+**Balance confirmed 2026-09-03: 4,057 credits.**
 
 | | Credits | Running |
 |---|---|---|
-| Designing the voice | 1,212 | 1,212 |
-| Chunks 1–6, once | 2,447 | 3,659 |
-| ⚠️ **Left, against 4,389** | — | **730** |
+| ~~Designing the voice~~ | ✅ already paid | 0 |
+| Chunks 1–6, once | 2,609 | 2,609 |
+| ✅ **Left, against 4,057** | — | **1,448** |
 | ⬜ *if chunk 8's ending comes back* | +329 | *leaves 401* |
 
 ### 🔴 To be clear about what is charged — the click-path does spend credits
@@ -319,16 +319,16 @@ is 6 screening designs at a 150-char preview (900) plus one confirmation at 312.
 |---|---|---|
 | ~~Voice design~~ | ✅ **Already done** | 0 |
 | **Generating each of the six chunks, first time** | 🔴 **Yes** | **2,609** |
-| **Running total before a single repair** | | **2,609 of 4,389 — leaves 1,780** |
+| **Running total before a single repair** | | **2,609 of 4,057 — leaves 1,448** |
 | Re-rolling a chunk, nothing changed | ✅ No | 0, twice per chunk |
 | Third re-roll of the same chunk | 🔴 Yes | 269–573 |
 | Any re-roll **after editing the text** | 🔴 Yes | full price |
-| ⬜ *if the ending returns as chunk 8* | 🔴 Yes | +357, leaves 1,423 |
+| ⬜ *if the ending returns as chunk 8* | 🔴 Yes | +357, leaves 1,091 |
 
-🥇 **1,780 left, plus twelve free re-rolls.** Comfortable — roughly three paid re-reads of the
-longest chunk on top of the free ones. **Credits are not the problem.**
+🥇 **1,448 left, plus twelve free re-rolls.** Still comfortable — roughly two paid re-reads of the
+longest chunk on top of the free ones.
 
-⚠️ **The tags cost 162 characters** across the six chunks (2,447 → 2,609). Worth it, and it is
+⚠️ **The tags cost 162 characters** across the six chunks (2,447 untagged → 2,609). Worth it, and
 still budget it can afford.
 
 🔑 **Read the button before every re-roll.** It says **Regenerate** while a free one remains, and
