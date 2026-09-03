@@ -63,7 +63,7 @@ Meet Tarquin. In 2008 he was a star trader, betting heavily on leveraged E.T.F.s
 
 Abbreviations are pre-normalised (`ETFs` → `E.T.F.s`, `IPA` → `I.P.A.`) because raw ones get
 mispronounced. Do the same to the full script before synthesis: `2008` → `twenty oh eight`,
-`4x4's` → `four-by-fours`, `1%` → `one percent`.
+`4x4's` -> **`4 by 4's`** (ruled by Jack 2026-09-01 by ear; re-test per engine), `1%` -> `one percent`.
 
 ## Sliders
 
@@ -233,7 +233,215 @@ If it has to stay synthetic — because the script will keep changing and re-rec
 then **Hume Octave at $14** is the one to move to, and the per-line acting instructions are worth
 more to this script than the voice design is.
 
+## 🔑 THE RUN — ElevenLabs, new voice, 4,739 credits (2026-09-01)
+
+**Jack's call: ElevenLabs, design a new voice. ✅ 4,739 credits is enough** — with a specific
+spending order. It is **not** enough to be casual: one careless second full pass eats the lot.
+
+🔑 **The paste-ready words live in [`elevenlabs-script.md`](./elevenlabs-script.md)** — the five
+chunks normalised, tagged and character-counted. This section is the *plan and the budget*; that
+file is what goes in the box.
+
+### The budget, measured not guessed
+
+| | Characters | Credits |
+|---|---|---|
+| **The whole script** (5 chunks, labels stripped, as rendered) | **2,256** | **2,256** |
+| chunk 1 · 2 · 3 · 4 · 5 | 334 · 549 · 317 · 322 · 734 | same |
+
+🔑 **1 credit = 1 character** on **Eleven v3** and **Multilingual v2** — the two models worth using
+here. (Flash/Turbo are 0.5, but they are the latency models and this is narration.)
+
+🔑 **Voice Design is charged on the PREVIEW TEXT only, once per attempt — and it returns three
+voices for that one charge.** ElevenLabs' own words: *"the only charge for using voice design is the
+number of credits to generate your preview text, which you are only charged once even though we are
+generating three samples for you."* ⚠️ **Preview text must be 100–1,000 characters.**
+
+### The plan that fits, with room to fix a bad chunk
+
+| Step | Spend | Running total |
+|---|---|---|
+| **6 screening designs** @ a **150-char** preview | 900 | 900 |
+| **1 confirmation design** @ the full **312-char** preview, on the winning prompt | 312 | 1,212 |
+| **The whole script, once** | 2,256 | 3,468 |
+| ✅ **Left for re-reads** | — | 🥇 **1,271** |
+
+**1,271 buys a re-read of chunk 5 (734) plus any one short chunk** — or all three short ones
+(334 + 317 + 322 = 973) with room over. It does **not** stretch to chunks 5 and 2 together (1,283).
+That is still a real safety margin.
+
+🔴 **What does NOT fit: two full script passes.** 2 × 2,256 = 4,512, leaving **227** — not even one
+design attempt. **So the discipline is: design cheaply, render once, re-render only the chunks that
+fail.** Never re-render the whole script to fix one line.
+
+**Three rules that make the margin hold:**
+
+1. 🔑 **Screen on a 150-char preview, confirm on 312.** Six attempts at 150 gives **eighteen candidate
+   voices** for 900 credits. Longer preview text makes a *more stable* voice, so the finalist gets one
+   full-length confirmation — but you do not pay 312 to reject something.
+2. 🔑 **Make the preview text the audition line.** The design preview *is* the test, so auditioning
+   costs nothing extra. Both preview texts below already contain the audition line.
+3. **Render chunk by chunk, never the whole script in one go.** A bad chunk then costs 317–734 to
+   redo instead of 2,256. ⚠️ **Whether v3 audio tags are billed as characters is unverified** — we could
+   not find it documented. The 2,256 above budgets as if they are; the script uses exactly one tag,
+   9 characters.
+
+### 🔴 The prompt is rewritten for Voice Design v3 — the old one is the wrong shape
+
+⚠️ **The three-paragraph prompt further down this page was written for the older Voice Design**,
+which rewarded long detailed prompts at low guidance. **v3 wants the opposite**, and its guidance is
+explicit: *"Describe age, accent, tone, pacing, and audio quality in a single sentence… The best
+prompts read like everyday speech — short, specific, and jargon-free."*
+
+🔑 **This is the exact trap that made MiniMax come back American** (see the five causes below): a
+long layered prompt gets averaged, and the average is General American. **Do not paste the old one
+into v3.**
+
+Their own worked example is the template to copy: *"Perfect audio quality. Elderly male, thick
+Scottish accent, slow and reflective, gravelly timbre."*
+
+**Rung 1 — paste this** (matches their order: quality → age/gender → accent → pacing → timbre, and
+carries the fourteen rounds of Suno casting: mid-range not deep, nasal, sneering):
+
+```
+Perfect audio quality. Middle-aged male, thick working-class northern English Manchester accent, slow and deadpan, mid-range nasal timbre with a sandpaper rasp.
+```
+
+**Rung 2 — if it drifts American or posh**, name the country and repeat the accent at both ends:
+
+```
+Perfect audio quality. Male in his forties, thick working-class northern English accent from Manchester, England. Slow, unhurried, deadpan, sarcastic. Mid-range nasal timbre, sandpaper rasp, never deep and never an announcer. Strong British northern accent throughout.
+```
+
+**Rung 3 — if it still drifts**, drop the city and buy the accent outright:
+
+```
+Perfect audio quality. Middle-aged male, thick British northern English accent, working class, slow and deadpan, mid-range and gravelly.
+```
+
+🔧 **Vocabulary rulings that carry over and are not up for re-litigation:**
+
+| Rule | Why |
+|---|---|
+| **`thick`**, never `slight` or `strong` | Tested — the intensity word that lands |
+| 🔴 **`mid-range`, never `deep`** | Fourteen Suno rounds. `deep` produced *too low* three times; what was wanted was **texture** (`rasp`, `grit`), not pitch. `suno-voices.md` §4b |
+| **`never boomy, never an announcer`** | Hard requirement — the reference sits low and the model will chase movie-trailer |
+| 🔴 **Never a room or FX word** — no `reverb`, `echo`, `room tone` | It degrades output and produced the echoing Suno takes. `Perfect audio quality` buys dry and close for free |
+| ⚠️ ElevenLabs' own caution on the word `accent` | *"if you mean intonation or emphasis patterns rather than a regional dialect, use those terms instead."* We mean the dialect, so it is correct here |
+
+### Preview texts
+
+**Screening preview — 150 chars.** Cheap, and it is the driest line in the film, which is the whole
+audition:
+
+```
+I'd say it's a Mexican standoff, but there are no stakes and nobody gives a toss. Bob calls them wank tanks. Most common vehicle in this car park, mind.
+```
+
+**Confirmation preview — 312 chars**, for the finalist only. Every line is idiom the model can only
+have learned from British speech:
+
+```
+Meet Bob. Standard middle-manager bloke, having a knees-up in a tent in a Waitrose car park. Meet Tarquin, who buys up council flats and leaves them empty, then drives off to Wales in a forty-grand motor to find himself. I'd say it's a Mexican standoff, but there are no stakes and nobody gives a toss. Bloody hell.
+```
+
+⚠️ **`toss` rather than the script's `shit`** while designing — keep the filter out of the variable
+set. Test the real profanity once on a short generation before committing the script.
+
+### Settings
+
+| Control | Set to | Why |
+|---|---|---|
+| **Guidance Scale** | 🔧 **~40%** for the short v3 prompt | The 30% ruling below was for the *long* prompt — ElevenLabs pair **low guidance with long detailed prompts**. A short prompt needs more adherence, not less. If it comes back artificial, drop toward 30 |
+| **Loudness** | **centre (0)** | It bakes into the saved voice; level in Premiere instead |
+| **Model, for the real reads** | **Eleven v3** | The one that takes audio tags — directly the brief's `{FLAT}` baseline and its one `{WARM}` crack. Stability **Natural**, Similarity ~75, Style 0 |
+| **Voice slot** | one | Saving a design consumes a voice slot, not credits |
+
+### 🔴 Before spending anything: check the plan, not the balance
+
+**4,739 looks like a Free-tier remainder** (Free is 10,000 credits/month). If so, 🔴 **the output
+carries no commercial licence and BadCode publishes this film.**
+
+🔑 **The fix is $6 and it removes the whole budget question:** **Starter — $6/month, 30,000 credits,
+and it is the cheapest plan that includes the Commercial License.** Thirty thousand credits is
+**thirteen full passes of this script.** If the balance shown is already a Starter balance, ignore
+this and run the plan above.
+
+### The order
+
+1. **Check the plan is Starter or above** (commercial licence). ⬅️ *before anything else*
+2. **Six screening designs** on rung 1, 150-char preview. Judge every one of the eighteen on the audition line: **flat and amused wins.** Any lift, any grandeur, any sense it knows it is funny is wrong.
+3. If all eighteen drift American or posh, go **rung 2**, then **rung 3**. Do not add adjectives to rung 1.
+4. **One confirmation design** on the winner, 312-char preview. Save it.
+5. **Render chunk by chunk**, in order, listening to each before starting the next.
+6. **Re-read only the chunks that fail.** 1,271 credits of margin, so one long chunk and a short one.
+7. 🔑 **Normalise before synthesis:** `E.T.F.s`, `I.P.A.`, `one percent`, `4 by 4's`, `Two thousand and eight`, `Twenty thirty-one`, `ayawaska`. Never after.
+
+## 🔑 RULED 2026-09-01 — go local, and clone the Suno take
+
+> ⚠️ **Superseded as the plan of record by the ElevenLabs run above (2026-09-01).** Kept because the
+> engine ranking and the licence table are still the right answer if ElevenLabs is abandoned.
+
+**Jack: *"it sounds good but there is still music. it sings it sometimes. should we just use a free
+ai voice?"*** ✅ **Yes.** Three faults in a row — American accent, delivery on the grid, music and
+occasional singing — and they all have the same root cause, which
+[`suno-narration.md`](./suno-narration.md) states outright: **Suno cannot make silence.** It is a
+music generator, so a bed is always there and a sung phrase is always one re-roll away. Fourteen
+rounds bought a voice, not a narration engine.
+
+### 🔑 What changed today, and it reorders this whole page
+
+**Yesterday's blocker was the reference clip.** Every free local route needs a northern English
+male sample to clone, and the best we had was a corpus stranger (OpenSLR 83) or an undertrained
+Piper voice.
+
+🥇 **We now have fifteen seconds of the exact narrator.** Round 13's Suno take is the one Jack
+called *"spot on"* — right accent, right age, right class, right attitude. **That is the reference
+clip**, and it makes every open-weights cloner on this page better than it was yesterday.
+
+```
+The approved Suno take (15s of clean voice)  →  a free MIT/Apache local cloner
+=  the exact narrator, no music, no grid, no singing, unlimited retakes, offline, £0
+```
+
+⚠️ **Take the clip from the VOCAL STEM, not the mix** — [`suno-narration.md`](./suno-narration.md)
+§5. A cloner will happily learn the drum loop as part of the timbre. Fifteen clean seconds beat
+sixty contaminated ones, which is the same rule as the Suno Voice transplant.
+
+✅ **No consent question here**, unlike the corpus route: the Suno voice is synthetic and generated
+on our own paid account. Nobody's voice is being cloned. The 🔴 **licence question that does matter
+is the model's weights** — see the table below.
+
+### The ranking, rebuilt on an RTX 4070 (12 GB, confirmed)
+
+| # | Model | Weights licence | Why |
+|---|---|---|---|
+| 🥇 **1** | **Chatterbox** (Resemble) | **MIT** — publishable | Clones from **5–10s**, ~2.3–3.5 GB VRAM, so it is comfortable on the 4070. **Beat ElevenLabs in a blind A/B — 63.8% of listeners preferred it**, and the Turbo variant ~65%. First open model with an **emotion-exaggeration dial**, which is directly the brief's `{FLAT}` baseline and its one `{WARM}` crack. ⚠️ Carries an inaudible **PerTh watermark** |
+| 🥈 **2** | **Qwen3-TTS** | **Apache 2.0** — publishable, unrestricted | 🔑 **Newer than this page** (Jan 2026, so it post-dates the 2026-08-31 survey). Zero-shot clone from **3 seconds**, and its pitch is explicitly that it *"preserves the speaker's identity, **accent** and nuances"* — which is the one axis every other route keeps losing. **Run it head-to-head with Chatterbox on the same clip** |
+| 3 | **Kokoro 82M** | Apache 2.0 | Highest Elo of the open models and the most-downloaded open TTS in the world — but **no cloning**, and all four British males are RP. **Wrong register, and it cannot learn ours.** Scratch track only |
+| 4 | **Piper `en_GB-northern_english_male`** | CC-BY-SA 4.0 | Instant, right accent, **documented artifacts**. Still the fastest scratch track to cut picture against |
+| 🔴 | **Higgs Audio v3** | non-commercial | Better features, wrong licence. **We publish** |
+| 🔴 | **VibeVoice** | research use only | Same |
+| 🔴 | **F5-TTS** | MIT code, **CC-BY-NC weights** | The code/weights trap. Same |
+| 🔴 | **XTTS-v2** | CPML non-commercial, and Coqui is gone so no licence can be bought | Same |
+
+### The order to do this in
+
+1. **Get the vocal stem** of the approved round-13 take — three dots → Get stems → advanced split (`suno-narration.md` §5).
+2. **Cut 15 clean seconds** of continuous speech, no bed bleed, one consistent register.
+3. **Install Chatterbox**, clone from the clip, and read the **audition line**: *"I'd say it's a Mexican standoff, but there are no stakes and no one gives a shit."* Flat and amused wins.
+4. **Do the same on Qwen3-TTS** with the identical clip and line. One variable, two engines.
+5. **Whichever wins, run the whole script** — it is free and unlimited, so re-record as the script changes rather than budgeting for it.
+6. **Attribution:** none owed if the clip is our own Suno output. ⚠️ Owed under CC-BY-SA only if you fall back to an OpenSLR or Piper clip.
+
+⚠️ **The tier-1 answer has not changed and is still worth saying: a native Sheffield human on
+Fiverr is $40–60 and one day.** The ruling further up this page still stands on its merits — this
+section is the answer to *"what if it stays synthetic and free."*
+
 ## Free routes only — 2026-08-31
+
+> ⚠️ **Superseded in part by the 2026-09-01 ruling above** — the reference-clip problem this section
+> works around is solved, so its Piper/OpenSLR ranking no longer applies. The licence table is still good.
 
 > 🔴 **Every hosted free tier fails the commercial-rights test.** ElevenLabs Free grants no
 > commercial licence and demands `elevenlabs.io` in the title; Hume's free and $3 tiers are

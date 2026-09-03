@@ -26,7 +26,7 @@ homeless man is already broken before Tarquin voices it.
 He is the story's moral centre. When Tarquin — the man who sneered "get a job"
 at him — crawls out of that same tent five years lost, Bob has every reason to
 gloat and instead reaches for the newspaper and a bit of blunt, man-sized
-kindness: *"Where the f*** have you been, then? You alright?"* His refusal to
+kindness: *"Where the fuck have you been, then? You alright?"* His refusal to
 pass the judgement that was passed on him is the whole argument.
 
 ## Jo — Bob's wife *(named 2026-08-30 by Jack)*
@@ -76,7 +76,7 @@ does.*
 
 **Scene 8 — if the name is spoken:**
 
-> **BOB:** "F***ing wank tanks. You're all pricks. …I wish Jo was here."
+> **BOB:** "Fucking wank tanks. You're all pricks. …I wish Jo was here."
 
 ⚠️ **Both or neither.** Naming her in scene 2 and not in scene 8 wastes it; naming her in scene 8
 alone breaks it.

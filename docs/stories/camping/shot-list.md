@@ -299,7 +299,7 @@ men before the plot starts, so the rest of the film can dismantle it.*
 - **7b The therapist's verdict** — *"You need the most powerful psychedelic known to man."* Keep the punchline exactly. **✅ Shot 2026-08-26.** Camera at couch height, the therapist alone in the room with Tarquin's crossed ankles in the foreground; the verdict is delivered **straight down the lens** — the film's one direct address. See [`prompts.md`](./prompts.md#7b--the-therapists-verdict--still--accepted).
 - **8a The wank tank swings in beside the tent** — straddling two bays. *"Two parking spaces. For that."*
 - **8b The two men lock eyes.**
-- **8c One beat of judgement each** — *"Get a job, you lazy c***"* / *"F***ing wank tanks."* No prolonging. The crack from 5d slaps shut. Cut.
+- **8c One beat of judgement each** — *"Get a job, you lazy cunt"* / *"Fucking wank tanks."* No prolonging. The crack from 5d slaps shut. Cut.
 
 ## The jump
 
@@ -377,7 +377,7 @@ men before the plot starts, so the rest of the film can dismantle it.*
   *(Minor: Kai says "four years after" once at ~00:44 and "five years" twice elsewhere. Canon's
   five is right; the four is a slip of speech.)*
 - **11c Tarquin reads** — the date does the time, the headline does the AI. One prop, two jobs. Hold. *"It's not the drugs."*
-- **11d Bob's man-sized empathy** — *"Where the f*** have you been, then? You alright?"* The five missing years are **never explained**.
+- **11d Bob's man-sized empathy** — *"Where the fuck have you been, then? You alright?"* The five missing years are **never explained**.
 - **12a The two of them by the fire** — in the car park, **not** the woods. Faces changed: almost a smile.
 - ~~**12b Cans clinked**~~ — **struck as a SETUP 2026-08-29 (Jack):** *"basically the same as the
   last one, they are just talking."* Same two men, same drum, same light, same distance — it does

@@ -28,7 +28,7 @@ Automation does not stop at the bottom. The same logic that replaces the
 warehouse and the call centre comes for the manager and the financier too. The
 smug man and the broken man are not different kinds of people — and this telling
 proves it both ways round: **Bob isn't just a wasteman — he's got a reason. And
-Tarquin isn't just a c*** — he's got empathy.** The story front-loads both
+Tarquin isn't just a cunt — he's got empathy.** The story front-loads both
 backstories so every judgement the audience makes gets dismantled by something
 they already know.
 
@@ -36,9 +36,9 @@ they already know.
 
 The big move from the master notes: **take what the old versions tried to do at
 the end and shift it to the beginning.** Meet Tarquin in 2008 — he was
-instrumental in the financial crisis: c***. Meet Bob in 2008 — nice guy, wife
+instrumental in the financial crisis: cunt. Meet Bob in 2008 — nice guy, wife
 died: that's sad. Fast-forward eighteen years: Tarquin's king of the world, Bob
-is f*****. It lines up before the story proper even starts, and the "aha"
+is fucked. It lines up before the story proper even starts, and the "aha"
 twists (Tarquin's empathy, the ayahuasca, the five-year jump) land on top of a
 foundation the reader already trusts.
 
@@ -105,13 +105,13 @@ week — you lot are going to have loads more mates. And I cannot wait for my
 bonus; I've laid heavy bets on it.* He laughs at his own joke — **and the smile
 fades.** Hold on the face; no narrator while it drops. Then the narrator lands
 the U-turn, and this is a *spell-it-out* moment (everything so far said "this
-guy's a c***" — the reversal earns plain words): there's another part of
+guy's a cunt" — the reversal earns plain words): there's another part of
 Tarquin, one he doesn't show on the outside, that feels uncomfortable with how
-he just reacted. Maybe he isn't as big a c*** as we all think.
+he just reacted. Maybe he isn't as big a cunt as we all think.
 
 The empathy itself stays small and sideways, never guilt: **he's imagining how
 cold it is out there — because his car heater broke last week.** "You'll have
-more mates next week, haha… f***ing hell, you lot must be cold."
+more mates next week, haha… fucking hell, you lot must be cold."
 
 ### 6. Bob outside Waitrose
 
@@ -137,7 +137,7 @@ transplant. Tarquin doesn't suddenly become some cool spiritual guy.
 Tarquin arrives at Waitrose — stocking up before the retreat — and parks the
 wank tank right by Bob's tent. Both men revert to type and both judgements are
 **short** — one beat each, no prolonging. Tarquin: *"Get a job, you lazy
-c***."* Bob: *"F***ing wank tanks — you're all pricks. I wish my wife was
+cunt."* Bob: *"Fucking wank tanks — you're all pricks. I wish my wife was
 here."* The crack in Tarquin's armour from scene 5 gets deliberately slapped
 back shut. Cut.
 
@@ -145,11 +145,11 @@ back shut. Cut.
 
 (The forest-drive scene is **dropped** — it added nothing.) At the Welsh
 retreat, keep the ceremony minimal: the shaman says her piece, Tarquin grabs
-his knee, and we cut straight to *"F*** me, that kicked in quick"* and the
+his knee, and we cut straight to *"Fuck me, that kicked in quick"* and the
 water drop. Then the narrator takes over: Tarquin has a profound moment about
 the fragility of human existence — that he could even end up like that homeless
 man he saw. **No mention of AI here.** The vision is not a literal preview of
-the future; it's *wind your neck in, d***head*. (The newspaper does the AI
+the future; it's *wind your neck in, dickhead*. (The newspaper does the AI
 reveal later — don't spend it early.) As the audience scrolls/watches, his
 **eyes close…**
 
@@ -157,7 +157,7 @@ reveal later — don't spend it early.) As the audience scrolls/watches, his
 
 **…and open — from exactly the perspective Bob had, inside the tent, looking
 out.** But outside is chaos; a fire burning (maybe the only animated element).
-The **narrator does the freak-out** — *what the f*** is going on* — so we never
+The **narrator does the freak-out** — *what the fuck is going on* — so we never
 have to animate Tarquin panicking (that's where AI slop lives). The gag that
 carries the scene: **he still thinks he's tripping.** *"This is a bad trip. I
 don't like it. I'm going to get in my car and go home."* He crawls out of the
@@ -170,7 +170,7 @@ That was like five years ago."* And Bob hands him the newspaper — *"see, look
 at the date."* **One prop, two jobs:** the date proves five years have passed,
 and the headline says the AI took the jobs — including his. This is also the
 moment the narrator (who has been treating all of this as a very strong trip)
-runs out of deniability. Then a flick of empathy, man-sized: *"Where the f***
+runs out of deniability. Then a flick of empathy, man-sized: *"Where the fuck
 have you been, then? You look in a much worse state than when I saw you last —
 you alright?"* Shared empathy, two humans in the same situation. AI took the
 last job. Drop the mic.
@@ -362,7 +362,7 @@ are going to have loads more mates. And I cannot *wait* for my bonus."
 **NARR (draft, after the hold — this is a spell-it-out moment):** "There's
 another part of Tarquin. One he doesn't show on the outside. And it's just
 occurred to him how cold it must be out there — his car heater broke last week.
-Maybe he isn't as big a c*** as we all think."
+Maybe he isn't as big a cunt as we all think."
 
 *(The empathy stays small and sideways — cold, not guilt.)*
 
@@ -400,8 +400,8 @@ Bob's tent *(Easter egg: straddling two bays — "Two parking spaces. For
 that.")*. The two men lock eyes. **One short beat of judgement each — no
 prolonging** — then Tarquin strides into the shop / drives off.
 
-**TARQUIN (draft):** "Get a job, you lazy c***."
-**BOB (draft):** "F***ing wank tanks. You're all pricks. …I wish my wife was
+**TARQUIN (draft):** "Get a job, you lazy cunt."
+**BOB (draft):** "Fucking wank tanks. You're all pricks. …I wish my wife was
 here."
 ⬜ **Unruled:** *"…I wish **Jo** was here."* 🔑 *My wife* is a category; a name is a person, and
 the line gets considerably worse to hear. ⚠️ Only works if she was named in scene 2 — an unheard
@@ -420,12 +420,12 @@ The crack in the armour from Scene 5 slaps shut. Cut.
 2. Cut straight to the kick-in.
 3. The water: Tarquin's reflection. His **eyes close with the scroll/cut…**
 
-**TARQUIN (draft):** "F*** me, that kicked in quick."
+**TARQUIN (draft):** "Fuck me, that kicked in quick."
 
 **NARR (draft, over the reflection):** "Tarquin has a profound moment about the
 fragility of human existence. That the distance between him and that man
 outside the supermarket is thinner than he thought." — **No AI mention here.**
-The vision is *wind your neck in, d***head* — not a preview. The newspaper does
+The vision is *wind your neck in, dickhead* — not a preview. The newspaper does
 the reveal later.
 
 ## Scene 10 — the wake-up
@@ -441,7 +441,7 @@ the reveal later.
 4. There's Bob.
 
 **NARR (draft — the narrator does the freak-out, and still thinks it's the
-drugs):** "What the f*** is going on. That… must be really strong stuff."
+drugs):** "What the fuck is going on. That… must be really strong stuff."
 
 **TARQUIN (draft):** "Bad trip. This is a bad trip. I don't like it. I'm going
 to get in my car and go home."
@@ -455,7 +455,7 @@ headline (AI TAKES THE JOBS — his included).** Tarquin reads. Hold.
 **TARQUIN (draft):** "I remember you. I saw you just… yesterday."
 **BOB (draft):** "No no no, mate. That was like five years ago. Here — look at
 the date."
-**BOB (draft, the man-sized empathy):** "Where the f*** have you been, then?
+**BOB (draft, the man-sized empathy):** "Where the fuck have you been, then?
 You look in a worse state than when I saw you last. You alright?"
 
 **NARR (draft):** "It's not the drugs." — the moment the trip stops being

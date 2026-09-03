@@ -14,6 +14,49 @@ voices: [narrator]
 > script's job list is [`../narration-brief.md`](../narration-brief.md). Built 2026-08-31 against
 > `docs/suno-gpt/` — every casting decision below is a **tested** finding from our own Camping
 > and Karen rounds, not a guess.
+>
+> **External sweep 2026-09-01** (round 10's research pass), four sources, all practitioner-grade:
+> [Jack Righteous — spoken narration workflow](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/suno-ai-spoken-narration-workflow)
+> (the labels, the prose layout, the negations-in-Style templates) ·
+> [Jack Righteous — spoken word guide](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/suno-ai-spoken-word-when-the-world-was-a-whisper) ·
+> [hookgenius — Suno prompt guide 2026](https://hookgenius.app/learn/suno-prompt-guide-2026/)
+> (⚠️ the dissent: *"Suno doesn't support 'don't do X' directly"*) ·
+> [roo — the formula that actually works](https://roo.beehiiv.com/p/suno-ai-prompt-guide-2026-copy-paste-templates-the-formula-that-actually-works)
+> (the 5–8 tag / 15–30 word ceiling, and *"short prompts expose conflicts; long prompts hide them"*).
+> **Second sweep 2026-09-01** (round 11, after round 10's take), two more:
+> [dynamic control guide](https://acetaggen.com/blog/silent-architect-pause-space-hard-cut-dynamic-control-suno)
+> (*"flat verse at constant volume"* is the default — a build has to be asked for; `[Energy: High]` as
+> an untested level lock) ·
+> [achieving specific vocal styles](https://www.anywiki.net/sunoai/achieving-specific-vocal-styles-in-suno-ai)
+> (*"adding a geographical location can dramatically influence the accent and delivery"*).
+>
+> **None of it is tested by us.** Where it conflicts with a finding in the round log, the round log wins.
+>
+> ✅ **Round 10's result is promoted out of this sheet**, per `session-method.md`: the talking recipe
+> is now [`suno-voices.md` Thread 5](../../../suno-gpt/suno-voices.md), the superseded parentheses
+> recipe is annotated in `files/suno-tag-mechanics.md`, and the `suno-prompt` skill carries
+> *"Getting a man to TALK"*.
+
+## 🔴 RULED 2026-09-01 — this sheet's job is now the VOICE, not the narration
+
+**Jack, after round 14: *"it sounds good but there is still music. it sings it sometimes."***
+
+✅ **The voice is won and it is worth keeping.** Fourteen rounds produced a northern, mid-range,
+intonating, deadpan working-class Manchester narrator, and Jack has confirmed it.
+
+🔴 **But Suno cannot deliver the narration, and the reason is structural, not a prompting failure.**
+This sheet's own §1 says it: **Suno cannot make silence.** It is a music generator. A bed is always
+present and a sung phrase is always one re-roll away — which is exactly the three faults that
+followed the voice being right: **music under it, occasional singing, and delivery on the grid.**
+
+🔑 **So the lane changes, and the fourteen rounds are not wasted — they are the input.** The
+approved take becomes the **reference clip** for a free local text-to-speech cloner, which has no
+bed, no bar and no melody by construction. **The ruling and the engine ranking are in
+[`voice.md`](./voice.md) → "RULED 2026-09-01 — go local, and clone the Suno take."**
+
+**What this sheet is still for:** generating the *reference clip*. Round 14 (A6) is still worth
+running once — a cleaner, bedless take makes a better clone — but **the full 21-line run does not
+happen here**, and §4's saved-Voice consistency stack is superseded by the cloner.
 
 ## ⚠️ Read this before you spend a generation
 
@@ -59,7 +102,11 @@ for exactly this man:
 | 7 | `Madchester spoken vocal, Manchester spoken word` (candidate D) | ragged mid range, nicotine-worn, slurred | — superseded by Jack's pick before testing |
 | 8 | `Northern English storytelling, British spoken-word monologue` (candidate E) | warm ragged mid range | — superseded by Jack's pick before testing |
 | 9 | `Northern English spoken word, British kitchen-sink realism` (candidate F) | plain, hard, weathered mid range with grit | 🔴 **read like a poem** — and so was every round before it. The fault was the genre word, in all four boxes |
-| **10 — current** | **`Trip hop skit, downtempo spoken interlude`** (A) · **`Audiobook narration, radio drama`** (B) | **deep, dry, weathered, ordinary speech rhythm** | ⬜ untested. **First round with no `spoken word` anywhere, prose lyrics, a beat allowed, and `deep` un-banned** |
+| **10** | **`Trip hop skit, 80 BPM, a man talking over a beat`** (A-min) · **`Audiobook narration, radio drama`** (B) | **deep, dry, weathered, ordinary speech rhythm** | ✅🔴 **HE TALKED.** Jack: *"ten times better, as the man talks not doing spoken word."* **The ten-round poetry fault is solved and the finding is promoted to `suno-voices.md` Thread 5.** Two new faults: **American accent**, and **the voice goes quiet as if waiting for a beat to drop** |
+| **11** | **`Madchester skit, British, 80 BPM, a man talking over a beat`** (A2) | `deep, dry, weathered, gritty` | 🔴 **Still American, and now too deep.** ✅ Talking held. **The Style box was not ignored — it was outvoted by the Exclude box**, which held 37 British-coded bans against 3 British words, `Madchester baggy` among them |
+| **12** | **`Madchester skit, Britpop snarl, Manchester, British`** (A4) | 🔑 **`mid-range, nasal and adenoidal, sandpaper rasp, sneering`** — depth re-banned | ⬜ untested. **Three changes: 45 British-coded bans cut from Exclude · `deep` → `mid-range` + nasal articulation (the Liam register) · pitch told to move** |
+| **13** | 🔑 **`Madchester monologue, Britpop snarl, Manchester, British`** (A5) — **`skit` is deleted** | unchanged from 12 — `mid-range, nasal and adenoidal, sandpaper rasp, sneering`, plus a sharper intonation clause | ⬜ untested. 🔴 **The accent audit found five American-coded signals still in the atom against two strong British ones.** `skit`, `over a beat`, `dusty` and the four `American …` bans are all gone; the depth and intonation fixes from 12 are untouched |
+| **14 — current** | **`Madchester monologue, Britpop snarl, Manchester, British`** (A6) — **voice casting untouched** | unchanged | ✅🔴 **THE VOICE IS RIGHT.** Jack: *"the voice is spot on now."* Accent, depth and intonation are all solved and **nothing in the voice clauses may be touched again.** New and final fault: **he is saying it TO THE BEAT instead of just talking.** Round 14 changes only the rhythm family — `80 BPM` deleted, the drum loop replaced by a pulse-less underscore, `free pacing` added |
 
 🔑 **What round 2 got wrong, and it is the lesson worth keeping: it moved two variables at once.**
 The pool was never the fault — the *pitch word* was. Swapping the pool out as well threw away the
@@ -370,7 +417,173 @@ voice thread.
 [`the-reader.md`](../../../marketing/the-reader.md). Both words are now in the **Exclude** box, and
 the narrator is cast working-class again.
 
-## 2. Suno prompt — round 10, paste all four, in this order, every round
+### 🔴 Round 13 — the accent audit: count what NAMES America, in every box
+
+**Jack, 2026-09-01: *"there must be something in there that is causing a conflict between the
+accents."*** There is, and it survived round 12 because round 12 only audited the **Exclude** box.
+🔑 **The Style box has been carrying an American word in genre position since round 10, and this
+sheet convicted that word itself in §4 of Thread 5 — then kept it.**
+
+`Madchester skit` is **a British place name welded to an American form-word**, in the one slot that
+decides accent. That is the conflict, written down, in the first two words of every round since 10.
+
+**The count that should have been run on both boxes at once** (`suno-voices.md` §4a's own rule,
+applied to the box it was not applied to):
+
+| Box | American-coded | British-coded |
+|---|---|---|
+| **Style (A4)** | 🔴 **`skit`** (genre position — *tested* as carrying US hip-hop gravity, Thread 5 §4) · **`a man talking over a beat`** (hip-hop framing — *over a beat* is the form's own phrase) · **`dusty` drum loop** (US boom-bap / crate-digging production vocabulary) | `Madchester`, `Britpop` (**pool words — strong**) · `Manchester`, `British`, `northern` (**adjectives — tested as buying nothing**) |
+| **Exclude** | 🔴 `American accent, American vocal, transatlantic, southern drawl` · `US rap, young MC, rapping, bars, flow, trap` | the poetry pool (kept deliberately) |
+| **My Taste** | `not rapping` | `working-class Manchester man` |
+
+🔑 **Strong British: 2. Strong American: 3.** Every round since 10 has been a coin-toss the American
+side was winning, and no amount of adjective surgery on `Manchester` / `British` / `northern` could
+change it — those are the exact words §2a and §4 both record as buying nothing.
+
+#### The four `American …` bans go, and here is the argument
+
+They have been in the Exclude box through **rounds 10, 11 and 12, and he was American in every
+one.** ✅ **They are tested as inert.** Two mechanisms could explain that, and both say delete:
+
+| | |
+|---|---|
+| **If §4 is right** — nationality is a genre lever and the Exclude box cannot reach it | they do nothing, so they are four words of dilution in a box the model reads |
+| **If §5's negation rule is right** — *"naming a thing puts it in the prompt however the rest of the sentence qualifies it"*, and `spoken word, not singing, no melody, no flow, no swagger` **generated a male rapper** | they are actively naming America four times against `Madchester` once |
+
+⚠️ **`US rap, young MC, rapping, bars, flow, trap` STAY.** They guard a different, real failure —
+*he's talking but he's 22* (§6) — and unlike the accent bans they have never been tested as inert.
+**They are the next cut if A5 still comes back American**, and that is round 14's lever, not this
+round's.
+
+#### What replaces `skit`, and the risk stated plainly
+
+🔴 **`skit` is the word that got him to TALK.** Deleting it is the one genuinely dangerous change in
+this round, and it could bring the poem back. **`monologue` takes its job** on three grounds:
+
+1. It is a **talking word with no nationality and no genre attached** — no US hip-hop gravity, and
+   not a poetry pool the way `spoken word` is.
+2. 🔑 **It matches the lyric label exactly.** `[Monologue]` is already the tested label in all five
+   chunks, so the Style box and the Lyrics box now say the same word — which is this sheet's own
+   redundant-reinforcement rule, for free.
+3. It cannot name a *section between the songs*, which is the documented cause of the round-10
+   ducking fault (Thread 5 §5). **Deleting `skit` may fix that too.**
+
+⚠️ **If he recites again, `skit` is the revert** — put `Madchester skit` back and cut the Exclude
+box's American bans instead, one axis at a time. **Do not go back to `spoken word` under any
+circumstances.**
+
+#### And the intonation, sharpened
+
+Round 12 wrote `pitch rising and falling as he talks`, which is true of every human speaker and
+therefore weak direction. **The Liam register's actual shape is a swoop up inside the sentence and a
+drop away at the end of it** — the opposite of the question-mark lift the script's punctuation is
+already avoiding. The clause is now `his pitch swoops up inside a sentence and drops away at the end
+of it`, and `drawn out` became **`leaned on`**, which is the vowel behaviour rather than a duration.
+
+### ✅🔴 Round 14 — the voice is right; he is talking TO THE BEAT
+
+**Jack, 2026-09-01: *"the voice is spot on now, however it still sounds like he is saying it to a
+beat, instead of just talking, which will not fit the narration."*** 🔑 **Accent, depth and
+intonation are closed.** The A5 voice clauses are the most expensive thing in this sheet — fourteen
+rounds — and **no round after this may edit a word of them.** This round touches the rhythm family
+and nothing else.
+
+#### The diagnosis: three things in the atom declare a grid, and the voice aligns to it
+
+| # | What says "there is a grid" | Why it locks the delivery |
+|---|---|---|
+| 1 | 🔴 **`80 BPM`** | A stated tempo **is** a grid. The community field guide's own words for BPM in the style field are *"**lock** BPM and key in the style field, and reuse the same values for every generation"* — it is the anchor you set when you want sections to splice on the beat. We put it in at round 10 to buy an unhurried delivery from the arrangement. **It bought a metronome instead.** |
+| 2 | 🔴 **`One plain drum loop`** | A metronome with a tone. This was the round-10 casting mechanism and it did its job — but see the correction below |
+| 3 | 🟡 `Madchester`, `Britpop snarl` | Music-scene pools; their native vocal sits on the bar. **Kept anyway** — they are what makes him northern, and §4c says never trade the accent |
+
+🔑 **The round-10 rule was half right, and this is the correction.** It read *"MELODY makes him
+sing; RHYTHM does not"*, and it was written to justify lifting the drum bans so the skit pool could
+cast a talker. It worked — and it hid the other half:
+
+> **Melody makes him sing. Rhythm makes him rap. Narration wants neither — it wants a bed with no
+> pulse.**
+
+A man performing to a bar is the same fault as a man reciting a poem: **a performance, not speech.**
+The skit recipe traded the poem for the bar and called it done.
+
+#### The fix: not silence, not a beat — a **bed**. The third option nobody tried
+
+⚠️ **The obvious move is to delete the bed, and it is the wrong one.** A cappella is what produced
+the ten-round poem, and Thread 5's whole finding is that *a man talking over nothing* barely exists
+in the training data. **Deleting the loop walks straight back into round 9.**
+
+✅ **The research says there is a third thing, and every practitioner narration template uses it: an
+UNDERSCORE** — a low, non-metrical ambient bed. Four independent 2026 guides describe narration the
+same way and **not one of them puts a drum under it:**
+
+| Source | The bed it prescribes |
+|---|---|
+| [Jack Righteous — narration workflow](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/suno-ai-spoken-narration-workflow) (documentary template) | `minimal ambient underscore, slow subtle pulse, low dynamics, voice-forward clean mix` |
+| The same guide's **poetry** template | 🥇 `close dry voice, sparse … ambient texture, **free pacing**, no melodic vocal` |
+| [The audiobook / storytelling prompt set](https://james-palm.medium.com/suno-ai-prompts-audiobook-storytelling-music-3761f7eec73f) | `restrained documentary instrumental … restrained dynamics leave space for narration` |
+| [The community field guide](https://github.com/mttkllr/suno-field-guide) | *"Hyphens = speed. Punctuation = breath. Line breaks = phrases."* — and **no tested `free time` / `rubato` / `no-tempo` tag exists**, so this is a Style-box job, not a meta-tag job |
+
+🥇 **`free pacing` is the single most valuable phrase the research turned up.** It is the only direct
+anti-grid instruction in the whole corpus, it comes from a worked narration template, and it says
+what we want in two words: *the pauses fall where he decides, not where the bar does.*
+
+⚠️ **What the research explicitly does NOT support:** there is no `[Free Time]`, `[Rubato]` or
+`[Ad Lib]` tag in any tested reference. The one adjacent finding — shifting each line 5–15 ms off the
+grid — is a **DAW** fix applied after generation, and it is worth knowing as the floor if prompting
+fails, since narration ships as a stem into Premiere anyway (§5).
+
+#### The four changes, all in the rhythm family
+
+| Out | In | Why |
+|---|---|---|
+| 🔴 **`80 BPM`** | *(deleted — no tempo stated at all)* | A number is a grid. Nothing in the corpus requires one, and its own guides call it a **lock** |
+| 🔴 **`One plain drum loop that never changes and never gets quieter`** | **`Underneath, one low ambient underscore, no pulse and no rhythm, the same all the way through and never getting quieter`** | Keeps the bed that casts a talker; removes the metronome he is talking to. **The level clause survives inside it** — the ducking fault stays fixed |
+| — | 🥇 **`Free pacing`**, front of the delivery clause | The corpus's one direct anti-grid phrase |
+| — | **`pausing where the meaning breaks and never on a bar`** | The positive form of *off the grid*, in plain language rather than a negation |
+
+⚠️ **What is deliberately NOT changed:** the whole voice clause, the pool words, and **every word of
+the script.** The lyrics are already the corpus's prescribed shape — prose paragraphs, natural
+punctuation, uneven sentence lengths, no rhyme — and *"line breaks = phrase/bar resets"* means
+editing them re-opens the phrasing question the round-10 layout fix already closed. **If the cadence
+is still gridded after A6, the lyrics are the next lever, not the voice.**
+
+#### 🔧 Exclude: the round-10 drum lift is reversed, knowingly
+
+Round 10 took `drums, drum kit, breakbeat` **off** the ban list under the melody-not-rhythm rule.
+That rule is now corrected, so they go back with the rest of the grid family behind them: `drums,
+drum kit, drum loop, percussion, breakbeat, beat, kick, snare, hi-hats, groove, four to the floor,
+pulse, metronome, quantized, on the beat, in time with the beat, rhythmic delivery, cadence,
+syncopation, bars, rap flow`.
+
+🔴 **Round 14 also caught a stale ban that would have strangled its own fix: `underscore` was
+banned.** It went in at round 4 inside `film score, underscore, orchestral score`, meaning *a film
+cue*. This round's Style box asks for **`one low ambient underscore`** — so the two boxes were about
+to contradict each other on the one word the whole round rests on, and the take would have come back
+with **no bed at all**, which is round 9, the poem. **`underscore` is lifted.** `film score,
+orchestral score, thriller score, cinematic swell` still keep an orchestra out; `melody, chord
+progression, chords, synth lead, pad, ambient pad` still keep it unpitched.
+
+⚠️ **That is the third stale ban in four rounds** (round 8's `warm`, round 12's 45 British words,
+round 13's `bassline`). 🔑 **The check is now part of the round, not an afterthought: before pasting,
+grep the Exclude box for every noun in the new Style box.** One minute, and it has cost four rounds.
+
+⚠️ **The round's real risk, stated plainly: the bed was the casting mechanism.** Weaken it too far
+and the poem comes back. **`ambient underscore`, `ambient bed`, `drone` and `room tone` are NOT
+banned** — that distinction is what the whole round rests on, and it is why this is a swap and not a
+deletion.
+
+#### If A6 is still on the grid — the ladder, in order
+
+| Try | Why |
+|---|---|
+| 1 · **Re-roll A6 twice** | Cadence is as probabilistic as everything else here, and the sheet's rule is re-roll before rewriting |
+| 2 · **B2 — form word to `Madchester documentary voiceover, radio drama`** | 🔑 Thread 5's reframe applied to rhythm: *ask for a form that exists.* The form that exists **with no beat** is documentary VO / radio drama / audiobook — variant B, skipped for eleven rounds only because it had no British lever. **§4c removed that objection**: `Madchester` supplies the accent, the form word supplies the un-gridded delivery. ⚠️ It changes the form word, the one thing that has ever moved the voice — **only after the re-rolls** |
+| 3 · **Widen the sentence-length spread in the lyrics** | `lyric-craft.md`: *measure syllables per line and look at the spread.* Even lengths let a bar pattern emerge; a 27-word sentence beside a 3-word one cannot sit on one |
+| 4 · **Ellipses, deliberately placed** | The field guide's pacing table names the ellipsis as the documented drag, and the script already keeps three |
+| 5 · **The floor — fix it in Premiere** | Nudge each line 5–15 ms off the grid on the vocal stem. Narration ships as a stem anyway (§5) |
+| ❌ **Never** | Delete the bed entirely, or re-open the voice clauses |
+
+## 2. Suno prompt — round 14, paste all four, in this order, every round
 
 **Never trust what a box already contains.** "Reuse Prompt" silently carries old lyrics forward,
 and a stale Lyrics box is inaudible as such — it just sounds like the Style box is being ignored.
@@ -386,7 +599,7 @@ Swap this in for the session and **restore the freedom token afterwards** — My
 generation, cannot be turned off, and is account-wide.
 
 ```taste
-Vocals: one male voice, and he is TALKING — not singing, not rapping, not reciting. A deep, dry, weathered northern English working-class man in his forties, real grit in the voice, hard northern consonants, close and dry right on the microphone. Ordinary conversational speech rhythm, uneven sentence lengths, some sentences running together and some stopping dead, exactly as a man talks. Bored, sarcastic and certain, giving nothing away, never signalling a joke. Music: one slow dusty drum loop underneath at 80 BPM, very low, no melody and no chords. Register: grim and funny, played completely straight.
+Vocals: one male voice, and he is TALKING — not singing, not reciting. A working-class Manchester man in his forties, telling you something across a table: mid-range, nasal and adenoidal, a sandpaper rasp on it, sneering and cocky. Hard flat northern vowels, dropped consonants, vowels leaned on and drooping at the ends of words. Close and dry right on the microphone. Free pacing — ordinary conversational speech, uneven sentence lengths, pausing where the meaning breaks and never on a bar, and his pitch swoops up inside a sentence and drops away at the end of it — never droning, never on one note. Bored, sarcastic and certain, giving nothing away, never signalling a joke. The voice stays loud and right in front the whole way through, never getting quieter. Music: one low ambient underscore underneath, no pulse and no rhythm and no drums of any kind, the same all the way through, no melody and no chords, nothing ever builds and nothing ever drops. Register: grim and funny, played completely straight.
 ```
 
 ### Style — variant A · the trip-hop skit 🥇
@@ -402,6 +615,206 @@ risk structurally** and is a better fit on four counts at once:
 | **Its native vocal is a man half-talking, low** | Low, close, mumbled male delivery over a beat is the genre's signature — not a performance-poetry register, and not a rapper's |
 | **Its beats are dusty and unpitched** | Which is exactly the bed the melody-not-rhythm rule allows |
 
+#### 🥇 A6 — the box that gets pasted (round 14)
+
+🔴 **The voice clauses are frozen.** Every word from `Working-class Manchester lad` to `drops away at
+the end of it` is byte-identical to A5, which Jack confirmed as spot on. **Only the tempo, the bed and
+the pacing move.**
+
+🔴 **Everything above this line is commentary. The block below is the whole Style box — paste it
+all, and paste nothing else.**
+
+```
+Madchester monologue, Britpop snarl, Manchester, British, one man talking, not singing. Working-class Manchester lad in his forties. Mid-range voice, nasal and adenoidal, sandpaper rasp, sneering and cocky. Hard flat northern vowels, dropped consonants, vowels leaned on and drooping at the ends of words. Close and dry on the microphone. Free pacing, ordinary conversational speech, pausing where the meaning breaks and never on a bar. His pitch swoops up inside a sentence and drops away at the end of it. Bored, sarcastic, deadpan. Underneath, one low ambient underscore, no pulse and no rhythm, the same all the way through and never getting quieter. Voice loud and in front all the way, no singing, no melody.
+```
+
+#### B2 — the fallback if A6 is still on the grid (step 2 of the ladder)
+
+Voice clauses identical again. **Only the form word changes** — `monologue` becomes the two forms
+where a man talks with no beat under him at all.
+
+```
+Madchester documentary voiceover, radio drama, Manchester, British, one man talking, not singing. Working-class Manchester lad in his forties. Mid-range voice, nasal and adenoidal, sandpaper rasp, sneering and cocky. Hard flat northern vowels, dropped consonants, vowels leaned on and drooping at the ends of words. Close and dry on the microphone. Free pacing, ordinary conversational speech, pausing where the meaning breaks and never on a bar. His pitch swoops up inside a sentence and drops away at the end of it. Bored, sarcastic, deadpan. Underneath, one low ambient underscore, no pulse and no rhythm, the same all the way through and never getting quieter. Voice loud and in front all the way, no singing, no melody.
+```
+
+#### A5 — round 13's box, superseded (the voice was right; the delivery was on the grid)
+
+
+**One axis moves this round: the American-coded words come out.** Everything the round-12 box did
+for depth and intonation is untouched, so if he is still too deep or still droning, that is A4's
+fix failing and not this one's.
+
+| Out | In | Why |
+|---|---|---|
+| `skit` | **`monologue`** | 🔴 The only American word in genre position, and *tested* as carrying US hip-hop gravity. `monologue` is a talking word with no nationality, and it **matches the `[Monologue]` lyric label** |
+| `a man talking over a beat` | **`one man talking, not singing`** | *over a beat* is hip hop's own phrase for exactly this. The speech act survives; the form's nationality does not |
+| `dusty` drum loop | **`plain` drum loop** | US boom-bap production vocabulary. `plain` says unpitched and unremarkable with no scene attached |
+| `pitch rising and falling` | **`swoops up inside a sentence and drops away at the end of it`** | Rising and falling is true of all speech. This is the Liam shape specifically — and it is the opposite of the question-mark lift |
+| `drawn out` | **`leaned on`** | Vowel behaviour, not duration. `drawn out` sits next to `languid`, which is banned |
+
+**Five British-coded words, zero American ones, 80 words.** ⚠️ Still over the 15–30-word external
+ceiling, knowingly: the trim ledger is unchanged — `Bored, sarcastic, deadpan` first, then
+`Working-class Manchester lad in his forties`.
+
+🔴 **Everything above this line is commentary. The block below is the whole Style box — paste it
+all, and paste nothing else.**
+
+```
+Madchester monologue, Britpop snarl, Manchester, British, 80 BPM, one man talking, not singing. Working-class Manchester lad in his forties. Mid-range voice, nasal and adenoidal, sandpaper rasp, sneering and cocky. Hard flat northern vowels, dropped consonants, vowels leaned on and drooping at the ends of words. Close and dry on the microphone. Ordinary conversational speech, his pitch swoops up inside a sentence and drops away at the end of it. Bored, sarcastic, deadpan. One plain drum loop that never changes and never gets quieter. Voice loud and in front all the way, no singing, no melody.
+```
+
+#### A4 — round 12's box, superseded (the accent audit found `skit` in it)
+
+
+🔴 **The accent fix in this round is mostly in the EXCLUDE box, not this one.** See the Exclude
+section below: eleven rounds of bans had accreted into 37 British-coded words against 3 in the Style
+box, so `Madchester` was outvoted before it started. **Fixing the Style box alone would not have
+worked, and did not.**
+
+**What changes here, and why — three things.**
+
+**1 · More British signal, front-loaded.** `Madchester skit, Britpop snarl, Manchester, British` —
+four British-coded words in the first six, which is the repo's redundant-reinforcement rule applied
+properly. `Britpop snarl` was cut back in round 4 for growing a guitar band; **it comes back
+deliberately.** 🟢 The trade is sound: narration ships as a **vocal stem** (§5), so an unwanted band
+is an inconvenience, while a wrong accent is a dead take. **Take the instrument risk, never the
+accent risk.**
+
+**2 · `deep` → `mid-range`, permanently.** Jack: *"the voice is too deep."* Rounds 1 and 4 said the
+same, the ban was lifted in round 10 on Jack's own "deep northern voice" request, and round 11
+reproduced the fault. 🔑 **The resolution: `deep` was never the right word for what was wanted.**
+What was wanted is *weight and grain* — those are **texture** words (`rasp`, `grit`, `sandpaper`),
+not **pitch** words. Pitch is now stated as `mid-range` and the depth family is back in Exclude for
+good.
+
+**3 · He has to intonate — the Liam Gallagher register, translated.** 🔴 **The name goes nowhere near
+a box** (house rule: artist names never enter the prompt; steer through the four axes Suno renders).
+Translated:
+
+| Axis | What Liam actually is | What goes in the box |
+|---|---|---|
+| **Pitch** | not deep — a nasal mid-range | `mid-range voice` |
+| **Texture** | adenoidal, sandpapery | `nasal and adenoidal, sandpaper rasp` |
+| **Articulation** | hard flat Manchester vowels, dropped consonants, vowels dragged out | `hard flat northern vowels, dropped consonants, vowels drawn out and drooping` |
+| **Delivery** | sneering, cocky, lazy, and it **moves** | `sneering and cocky` · `pitch rising and falling as he talks` |
+
+⚠️ **And the word `level` is gone from the ducking clause.** Round 11 wrote `exactly the same level
+start to finish` meaning *loudness* — but `level` is a **pitch** word too, and `flat`/`level` are
+precisely what caused the round-5 monotone. It now says `never changes and never gets quieter`.
+
+⚠️ **83 words, over the ceiling and knowingly so.** This round adds a whole axis (articulation and
+intonation) plus three extra British front-load signals. **If the take is good but muddy, the trim
+ledger is: `Bored, sarcastic, deadpan` first (derivable from `sneering and cocky`), then
+`Working-class Manchester lad in his forties`.**
+
+🔴 **Everything above this line is commentary. The block below is the whole Style box — paste it
+all, and paste nothing else.**
+
+```
+Madchester skit, Britpop snarl, Manchester, British, 80 BPM, a man talking over a beat. Working-class Manchester lad in his forties. Mid-range voice, nasal and adenoidal, sandpaper rasp, sneering and cocky. Hard flat northern vowels, dropped consonants, vowels drawn out and drooping. Close and dry on the microphone. Ordinary conversational speech, pitch rising and falling as he talks. Bored, sarcastic, deadpan. One dusty drum loop that never changes and never gets quieter. Voice loud and in front all the way, no singing, no melody.
+```
+
+#### A2 — round 11's box, superseded (still American, too deep)
+
+✅ **Round 10 worked on the thing it was built to fix. Do not touch that part of it.** The man
+talked. `Trip hop skit`, `a man talking over a beat`, prose lyrics under `[Monologue]` and the whole
+poetry pool in the Exclude box are now **tested and load-bearing** — the finding is promoted to
+[`suno-voices.md` Thread 5](../../../suno-gpt/suno-voices.md).
+
+🔴 **Two faults left, and this box changes exactly one clause for each.**
+
+**Fault 1 — he was American.** This is `suno-voices.md` §2a for the **third** time, and the trap was
+identical to round 2's: round 10 deleted `Northern English post-punk spoken word` to kill the poetry
+noun, and that phrase was **also the only British lever in the prompt**. Two things it proves:
+
+| | |
+|---|---|
+| 🔴 **Exclude bans do not control nationality** | `American accent, American vocal, transatlantic, southern drawl` were all in the box the whole time, and he was American anyway. Nationality is a **genre lever**, full stop |
+| 🔴 **`Trip hop` is too weak to survive `skit`** | Trip hop is Bristol by origin, but `skit` carries US hip-hop gravity and appears to beat it. A weak British word in front of a strong American one loses |
+
+🔑 **The fix is the front word, and it is a place, not an adjective.** `Madchester` is a
+**pool-selecting scene name** whose default performer is a northern working-class man half-talking
+over a loop — the exact character — and it is not a poetry pool. Externally corroborated: *"adding a
+geographical location can dramatically influence the accent and delivery."* `British` then repeats
+twice behind it, which is the sheet's own redundant-reinforcement rule.
+⚠️ **Madchester's own failure mode is a baggy guitar band**; `guitar, indie rock, guitar band, live
+band` are already in the Exclude box.
+
+**Fault 2 — the voice went quiet, as if waiting for a beat to drop.** This is an **arrangement**
+fault, not a vocal one, and the cause is in the pool word: **`skit` and `interlude` literally name a
+short section between the songs**, so the model builds toward whatever it thinks comes next and ducks
+the voice for tension on the way. ⚠️ **It is not Suno's default** — external guidance is that it
+gives *"flat verse at constant volume"* unless a build is tagged, so the build was **asked for**,
+which means the fix belongs in the Style box rather than in a new tag: `one dusty drum loop,
+unchanging, exactly the same level start to finish` + `voice loud and in front the whole way`, with
+the dynamics bans behind it in Exclude.
+
+**65 words, 423 characters** — four more words than A-min while carrying two extra jobs. What paid
+for them: `not singing` at the front (duplicated `no singing` at the back), `uneven sentence lengths`
+(derivable from the prose lyrics) and `never signalling a joke` (derivable from `deadpan`).
+
+⚠️ **This round moves two variables, and that is deliberate** — but they are **separable by ear**,
+so the round is still attributable:
+
+| What you hear | Which fix failed |
+|---|---|
+| Northern, but still ducks | the **level clause**. Escalate to the untested `[Energy: High]` lever (§6) |
+| Level, but still American | the **front word**. Go to A3 below |
+| Both still wrong | neither lever is strong enough — the pool is wrong, not the wording |
+
+🔴 **Everything above this line is commentary. The block below is the whole Style box — paste it
+all, and paste nothing else.**
+
+```
+Madchester skit, British, 80 BPM, a man talking over a beat. British northern English working-class man, forties. Deep, dry, weathered, gritty. Hard northern consonants. Close and dry on the microphone. Ordinary conversational speech rhythm. Bored, sarcastic, deadpan. One dusty drum loop, unchanging, exactly the same level start to finish. Voice loud and in front the whole way, no singing, no melody, no build, no drop.
+```
+
+#### A3 — the fallback if `Madchester` still comes back American
+
+`suno-voices.md` names `UK grime`, `UK garage`, `UK hip hop` as **the strongest British-vocal
+controls that exist**. We have avoided them for nine rounds for one good reason — §2b, *a pool is a
+person*, and these cast a **young MC**. But a young northern MC is a *different* wrong answer from an
+American, and it is one the Exclude box has a real chance against, where it has none against
+nationality.
+
+⚠️ **Updated round 13: `skit` came out of this box too.** The audit convicts it wherever it appears, and A3's whole argument is that `UK hip hop` and `British rap` are strong *British* pools — welding an American form-word to them repeats the exact mistake A5 is fixing. ⚠️ **A3 also drops the `US rap, young MC, rapping, bars, flow, trap` bans**, which would otherwise ban the pool it is casting (`suno-voices.md` §4a: never ban a genre adjacent to the pool you are casting). **Take the young-MC risk here — it is a different wrong answer from an American, and one the rest of the box can fight.**
+
+```
+UK hip hop monologue, British rap, Manchester, British, 80 BPM, one man talking, not singing. Working-class Manchester lad in his forties. Mid-range voice, nasal and adenoidal, sandpaper rasp, sneering and cocky. Hard flat northern vowels, dropped consonants, vowels leaned on and drooping at the ends of words. Close and dry on the microphone. Ordinary conversational speech, his pitch swoops up inside a sentence and drops away at the end of it. Bored, sarcastic, deadpan. One plain drum loop that never changes and never gets quieter. Voice loud and in front all the way, no singing, no melody.
+```
+
+#### A-min — round 10's box, superseded but tested
+
+**This is the box that proved the talking recipe**, and it is the revert target. Its only known
+faults are the two A2 fixes.
+
+
+🔴 **Trimmed 2026-09-01 after external research, and the trim is the point.** The prose draft below
+(**A-full**) is 82 words. Every current external guide puts the Style field at **5–8 comma-separated
+tags, 15–30 words**, warns that **over ten tags produces conflicting signals**, and states the reason
+plainly: *"short prompts expose conflicts; long prompts hide them… name one genre clearly instead of
+three loosely and Suno commits instead of averaging."* `lyricist-playbook.md` §3 independently
+prescribes a **minimal style box** for narration specifically. **A-full is over every one of those
+ceilings**, and rounds 1–9 are what a long box costs: nine rounds of adjective surgery inside a box
+where nobody could hear which word was doing what.
+
+```
+Trip hop skit, 80 BPM, a man talking over a beat, not singing. Northern English working-class man, forties. Deep, dry, weathered, real grit in it. Hard northern consonants. Close and dry on the microphone. Ordinary conversational speech rhythm, uneven sentence lengths. Bored, sarcastic, deadpan, never signalling a joke. One slow dusty drum loop, very low. Voice-forward mix, no singing, no melody.
+```
+
+**61 words, 400 characters, and every axis this sheet fought for is still in it** — pool, speech act,
+region and class, texture, room, rhythm, attitude, bed, mix. What came out was **duplication, not
+jobs**: `downtempo spoken interlude` (a second pool word next to `Trip hop skit`), `not rapping, not
+reciting` (both already in the Exclude box, where negations belong), `no chorus` (ditto), and the
+sentence connectives. ⚠️ **It is still twice the guides' word ceiling.** Getting to 30 means dropping
+the texture axis — which is Jack's explicit ask — or the room axis, which is what fixed the echoing
+take. **So the cut stops here, and a further cut is round 11's lever, not this round's.**
+
+#### A-full — the prose draft, kept as the fallback
+
+Paste this **only** if A-min comes back thin, generic, or under-specified — i.e. the fault is *too
+little direction*, not the wrong direction.
+
 ```
 Trip hop skit, downtempo spoken interlude, a man talking over a beat, 80 BPM. Not singing, not rapping, not reciting — talking. Northern English, working class, forties: deep, dry and weathered, real grit in it, hard northern consonants, close and dry right on the microphone. Ordinary speech rhythm — uneven sentence lengths, some run together, some stop dead. Bored, sarcastic and certain, never signalling a joke. Underneath, one slow dusty drum loop, very low. Voice-forward mix, no singing, no chorus, no melody.
 ```
@@ -410,21 +823,21 @@ Trip hop skit, downtempo spoken interlude, a man talking over a beat, 80 BPM. No
 slow one buys unhurried delivery from the arrangement instead of from an adjective competing for
 attention. This is the round-6 pace problem solved by casting rather than by argument.
 
-⚠️ **`no singing, no chorus, no melody` sits in the Style box, against house doctrine**, which says
-negations belong in the Exclude box. Field-tested narration prompts put them in Style
-consistently, and both boxes carry them here. **If a take is otherwise good, this is the first
-thing to try removing** — it is the one place this sheet knowingly does both.
-
-🔴 **Trip hop's own failure mode, banned up front: the genre's other signature is a sung female
-lead** (the Bristol torch-song tradition). `female vocal, sung female vocal, torch song, jazz vocal,
-soul vocal, sultry, seductive` are in the Exclude box behind it.
+✅ **`no singing, no melody` in the Style box is now externally corroborated, and the doctrine
+conflict is real.** House doctrine says negations go in the Exclude box. **Every field-tested
+narration template we can find puts them in Style** — the Jack Righteous 2026 narration workflow's
+three worked examples all end `voice-forward mix, no lead melody, no sung chorus` / `voice dominant,
+no singing, no chorus`. ⚠️ **And one 2026 guide flatly contradicts that**, saying Suno *"doesn't
+support 'don't do X' directly — be so specific about what you want that there's no room for what you
+don't."* **So this is an open split, not a settled rule.** Both boxes carry the negations here; if a
+take is otherwise good, **this is still the first thing to try removing.**
 
 ### Style — variant B · the narrator, if A brings a rapper
 
-🔴 **A's one risk is its pool: `hip hop skit` can cast a young MC**, which is the exact failure mode
-§6 already lists. If take A is a 22-year-old, do not add adjectives — **switch pool to B**, which
-buys talking from the audiobook/radio tradition instead of the hip-hop one. Everything else in the
-atom is identical.
+🔴 **A's residual risk is still its pool.** `skit` carries hip-hop gravity even with `trip hop` in
+front of it, and that pool casts a young MC — the exact failure mode §6 already lists. If take A is a
+22-year-old, do not add adjectives — **switch pool to B**, which buys talking from the
+audiobook/radio tradition instead of the hip-hop one. Everything else in the atom is identical.
 
 ```
 Audiobook narration, radio drama, documentary voiceover. A man talking to you, not performing and not reciting. Northern English, working class, forties. Deep, dry and weathered, grit in the voice, hard northern consonants, close and dry right up on the microphone. Ordinary speech rhythm — uneven sentence lengths, running some sentences together and letting others stop dead. Bored, sarcastic and certain; whatever is funny is in the words and he never signals it. Almost nothing underneath.
@@ -439,8 +852,50 @@ Audiobook narration, radio drama, documentary voiceover. A man talking to you, n
 3. **`drums, drum kit, breakbeat, a cappella`-driven bans are LIFTED, pitched instruments are not.** The rule is **melody makes him sing, rhythm does not** — round 4's singing came from a glockenspiel and a French horn, not from a drum.
 
 ```
-singing, sung verses, sung chorus, melodic vocal, vocal melody, vocal hooks, crooning, chanting, autotune, harmonies, backing vocals, choir, spoken word, performance poetry, poetry slam, slam poetry, dub poetry, beat poetry, poetry reading, recital, recitation, declamatory, oratory, sermon, verse, stanza, rhyming, rhyme scheme, metrical, iambic, incantation, mantra, ritual, theatrical, dramatic reading, over-enunciated, elocution, female vocal, sung female vocal, torch song, jazz vocal, soul vocal, sultry, seductive, American accent, American vocal, transatlantic, southern drawl, US rap, grime MC, UK drill, road rap, young MC, rapping, bars, flow, trap, ragga MC, toasting, Jamaican accent, piano, glockenspiel, strings, violins, brass band, horns, guitar, acoustic guitar, melody, chord progression, chords, bassline, synth lead, pad, ambient pad, music hall, vaudeville, pantomime, ragtime, honky-tonk, jaunty, playful, whimsical, bouncy, comedic, novelty, parody, uplifting, epic trailer music, cinematic swell, film score, underscore, orchestral score, crime drama score, thriller score, suspense, tension strings, reverb, echo, telephone voice, lo-fi vocal, distorted vocal, vocoder, double time, tempo change, band, rock band, guitar band, live band, indie rock, post-punk band, full arrangement, instrumental intro, instrumental outro, instrumental break, monotone, robotic, machine voice, text to speech, computerised, fast delivery, rapid fire, breathless, hurried, frantic, manic, shouting, screaming, yelling, movie trailer voice, epic narrator, gentle, soft vocal, softly spoken, mellow, soothing, breathy, whispered, calm narration, polite, posh, plummy, RP, received pronunciation, BBC newsreader, after-dinner speaker, languid, wistful, stand-up comedy, comedy club, comedian, sitcom, laugh track, audience laughter, applause, live audience, cabaret, variety show, panto, kazoo, slide whistle, oompah, tuba, banjo, whistling
+singing, sung verses, sung chorus, melodic vocal, vocal melody, vocal hooks, crooning, autotune, harmonies, backing vocals, choir, spoken word, performance poetry, poetry slam, dub poetry, beat poetry, poetry reading, recital, recitation, declamatory, verse, stanza, rhyming, metrical, incantation, dramatic reading, over-enunciated, elocution, female vocal, sung female vocal, torch song, jazz vocal, soul vocal, sultry, seductive, US rap, young MC, rapping, bars, flow, trap, piano, glockenspiel, strings, violins, horns, melody, chord progression, chords, synth lead, pad, ambient pad, deep voice, low voice, bass voice, baritone, booming, boomy, sub bass, chest voice, growl, monotone, flat delivery, level delivery, unmodulated, robotic, machine voice, text to speech, computerised, comedic, novelty, parody, jaunty, playful, whimsical, bouncy, uplifting, laugh track, audience laughter, applause, live audience, epic trailer music, cinematic swell, film score, orchestral score, thriller score, suspense, tension strings, movie trailer voice, epic narrator, reverb, echo, telephone voice, distorted vocal, vocoder, double time, tempo change, fast delivery, rapid fire, breathless, hurried, frantic, manic, shouting, screaming, yelling, gentle, soft vocal, softly spoken, mellow, soothing, breathy, whispered, calm narration, languid, wistful, build, buildup, riser, drop, beat drop, pre-drop, breakdown, crescendo, decrescendo, swell, dynamic build, tension build, fade in, fade out, quiet passage, half time, vocal ducking, distant vocal, buried vocal, drums, drum kit, drum loop, percussion, breakbeat, beat, kick, snare, hi-hats, groove, four to the floor, pulse, metronome, quantized, on the beat, in time with the beat, rhythmic delivery, cadence, syncopation, bars, rap flow, chanting along, sing-song
 ```
+
+🔴 **Round 12 CUT this box by 45 words, and that cut is the accent fix.** The ban list had grown
+across eleven rounds into a dense statement of *not British* — **37 British-coded bans against 3
+British words in the Style box** — so the Style box was not being ignored, it was being **outvoted**.
+Full evidence: [`suno-voices.md` §4a](../../../suno-gpt/suno-voices.md).
+
+| Removed, and why | Words |
+|---|---|
+| 🔴 **Self-cancelling** — added in the same round as `Madchester skit` | `Madchester baggy, jangly guitars` |
+| 🔴 **Madchester's whole sonic signature** — banning it banned the pool | `indie rock, guitar band, post-punk band, band, rock band, live band, guitar, acoustic guitar` |
+| 🔴 **Three of the four strongest British-vocal pools we have** | `grime MC, UK drill, road rap` |
+| **British class registers** | `RP, received pronunciation, BBC newsreader, after-dinner speaker, posh, plummy, polite` |
+| **British comedy registers** | `music hall, vaudeville, pantomime, panto, cabaret, variety show, oompah, sitcom, comedian, comedy club, stand-up comedy, kazoo, slide whistle, tuba, banjo, whistling` |
+
+**Two blocks were ADDED, both for the "too deep" fault:** `deep voice, low voice, bass voice,
+baritone, booming, boomy, sub bass, chest voice, growl` — 🔑 **`deep` is now banned permanently**, see
+§1 — and `flat delivery, level delivery, unmodulated` beside `monotone`, because this round asks for
+**intonation**.
+
+⚠️ **What is kept despite being British-coded: the poetry pool.** `spoken word, performance poetry,
+poetry slam, dub poetry` are the one thing in this sheet that is **tested as working** — they are what
+stopped the ten-round poem. The trade is deliberate.
+
+⚠️ **Round 13 deleted the American bans.** They sat in this box through rounds 10, 11 **and 12** and he
+was American every time — ✅ **tested inert**, three rounds running. And by this repo's own negation
+rule (`suno-voices.md` §5: *"naming a thing puts it in the prompt however the rest of the sentence
+qualifies it"* — `no flow, no swagger` **generated a male rapper**) they were the only four words in
+the whole atom that named America. **Gone: `American accent, American vocal, transatlantic, southern
+drawl`.**
+
+🔴 **Round 13 cut four more that were fighting the pool**, same rule as round 12's 45:
+
+| Removed | Why |
+|---|---|
+| **`bassline`** | 🔑 **Madchester's signature instrument.** Banning it bans the pool — §4a's exact ruling, missed in round 12. `melody, chord progression, chords, synth lead, pad` still keep pitched melody out |
+| **`mumbling, muttering, trailing off`** | 🔴 **That is the register Jack is asking for.** A slurred, swallowed, drooping delivery *is* the Manchester/Liam articulation. They were added in round 10 to fix the *ducking* fault — but ducking is a **loudness** fault and `vocal ducking, distant vocal, buried vocal` already cover it. **A level ban should never be spent on a delivery word** |
+| **`chanting`** | Terrace-coded and British. `singing, melodic vocal, sung verses` already do the job |
+| **`lo-fi vocal`** | Redundant next to `distorted vocal`, and it argues with the dusty-loop bed the pool wants |
+
+⚠️ **`US rap, young MC, rapping, bars, flow, trap` are deliberately KEPT.** They guard the *he's 22*
+failure (§6), which is a different fault and has never been tested as inert. **They are round 14's
+cut, not this round's** — and A3 above already drops them, because there they would ban the pool.
 
 ### Lyrics — all five chunks
 
@@ -468,6 +923,13 @@ ladder and the simplify rule; round 10 resolves it against the ladder. **Write t
 and it is the one both sources recommend — `lyricist-playbook.md` §3 and the Jack Righteous
 narration guide independently name `[Spoken narration]` / `[Monologue]`. The only variation is the
 single `{WARM}` crack in chunk 5.
+
+✅ **The prose layout is corroborated too, and by the same guide that named the label.** Its
+formatting rules for narration are, verbatim: *short sentences with natural punctuation · minimise
+rhyme patterns · **paragraph breaks between ideas** · avoid chorus repetition or verse structures ·
+write conversationally rather than as song lyrics.* Every one of those describes the chunks below and
+contradicts round 9's stanza layout. 🔑 **Two independent sources now say the same thing about
+narration, and neither of them is us** — which is as close to tested as this gets before a take.
 
 🔧 **The escalation ladder, if `[Monologue]` is ignored** — and note this ladder is *lateral*, not
 longer, per the simplify-don't-escalate rule:
@@ -557,7 +1019,7 @@ The paper goes on the fire. Nobody says sorry; the cans do it. I know how this e
 | Change | Why |
 |---|---|
 | `2008` → `Two thousand and eight`, `2026` → `Twenty twenty-six`, `2031` → `Twenty thirty-one` | Bare digits get read as digits, or sung |
-| `ETFs` → `E.T.F.s`, `IPA` → `I.P.A.`, `1%` → `one percent`, `4x4's` → `four by fours` | Raw abbreviations and symbols are mispronounced. Normalise before synthesis, never after |
+| `ETFs` -> `E.T.F.s`, `IPA` -> `I.P.A.`, `1%` -> `one percent`, `4x4's` -> **`4 by 4's`** | Raw abbreviations and symbols are mispronounced. Normalise before synthesis, never after. 🔧 **Ruled by Jack 2026-09-01: `4 by 4's`, not `four by fours`** — the spelled-out form was not getting it right by ear. ⚠️ Noted for the next engine: spelling numbers out is normally the safer form, so **re-test this one on any engine that is not Suno** |
 | `Ayahuasca` → `ayawaska` | Respell for **sound**, not for the dictionary. **No hyphens** — an in-word hyphen stretches the note, so a hyphenated or foreign word renders slow by default |
 | `devils lettice` → `devil's lettuce` | The phrase is *devil's lettuce*; the original is a typo |
 | `em` → `him` | Dialect elision is a mispronunciation risk for no gain — the flatness carries the register |
@@ -602,11 +1064,11 @@ and now the only place 2031 exists in the whole script.**
 | `Bob spends his days in this oh-so-luxury tent` | The tent is on screen; narrating it is the brief's *lecture* trap |
 
 ⚠️ **One line is held back from canon pending the filter test.** Story canon gives Bob *"Where the
-f\*\*\* have you been, then?"*; the script carries **`Where the hell have you been.`** If the
+fuck have you been, then?"*; the script carries **`Where the hell have you been.`** If the
 throwaway generation shows the filter passes `gives a shit`, restore Bob's word — it is his register,
 and softening it is the only place this rebuild is quieter than canon.
 
-## 3. Settings## 3. Settings
+## 3. Settings
 
 | Control | Set to | Why |
 |---|---|---|
@@ -665,7 +1127,10 @@ The drone stem is a free ambient bed if it happens to be any good; throw it away
 | **It's gone comic or music-hall** | 🔑 **British + spoken word + a bouncy pitched instrument is music hall** — with no comedy word anywhere in the prompt | Diagnose by asking what changed in the *arrangement*, not by rereading mood words. Keep every pitched instrument out |
 | **It's echoing and processed** | A room or FX word in the Style box | The word `reverb` and friends are already in the excludes. `close and dry` is the positive form |
 | 🔴 **He's reciting — it sounds like a poem** | `spoken word` is a **performance-poetry genre**, not a delivery mode — and/or the lyrics are laid out one line per bracketed section, which Suno reads as stanzas and lands like slam | **Look at the LAYOUT before the wording.** Run the lyrics as continuous prose paragraphs under one label, and check no box anywhere says `spoken word`. See §1 round 10 |
-| **He's talking but he's 22** | Variant A's `hip hop skit` pool cast a young MC | **Switch to Style variant B** (audiobook / radio drama). Do not add adjectives to A — the pool is doing the casting |
+| **He's talking but he's 22** | `skit` still carries hip-hop gravity, and that pool casts a young MC — `trip hop` in front of it reduces the risk, it does not remove it | **Switch to Style variant B** (audiobook / radio drama). Do not add adjectives to A — the pool is doing the casting |
+| 🔴 **The voice goes quiet, as if waiting for a beat to drop** | **An arrangement fault, not a vocal one.** `skit` and `interlude` literally name *a short section between the songs*, so the model builds toward what it thinks comes next and ducks the voice for tension. Round 10, tested | Fix in the **Style box**, not with a tag — external guidance is that Suno gives *"flat verse at constant volume"* unless a build is tagged, so the build was **asked for**. Positive form: `one loop, unchanging, exactly the same level start to finish` + `voice loud and in front the whole way`. Bans behind it in Exclude. **Only if that fails**, the untested lever: `[Energy: High]` at the section start is reported to lock the vocal level — one source, assertion-grade. ⚠️ ALL-CAPS is reported by the same source as *"less reliable than ellipsis"*, and `shouting` is in our Exclude box — do not reach for it |
+| 🔴 **He's American, and every box says British** | 🔑 **Something in the atom still NAMES America, and it is probably not in the box you are looking at.** Nationality is a **genre lever** — Exclude bans are tested inert across three rounds, and adjectives (`British`, `northern`, `Manchester`) buy nothing. What decides it is which nationality owns the *strong* slots: genre position, the form word, the production vocabulary | **Run the audit, both boxes at once, before touching a word.** Grep all four boxes for the wrong nationality's *whole family* — its scene names, its form words (`skit`, `interlude`, `cut`), its production slang (`dusty`, `boom bap`, `crate`), and the literal country adjective — then count strong-vs-strong. Round 13 found 3 American to 2 British with `Madchester` in the box. `suno-voices.md` §2a, Thread 5 §4 and §4c |
+| 🔴 **The voice is right but he's saying it TO the beat** | 🔑 **Something in the atom declares a grid and the voice aligns to it.** Three usual suspects, in order of strength: a stated **BPM**, a **drum loop** of any kind, and a music-scene pool word. ⚠️ **The round-10 rule was half right** — *melody makes him sing* is true, but **rhythm makes him RAP**, which is the same fault in different clothes | 🔴 **Do not delete the bed — that is how the poem came back in round 9.** **Swap the beat for a bed:** delete the BPM number entirely, replace the drum loop with `one low ambient underscore, no pulse and no rhythm`, and add **`free pacing`** plus `pausing where the meaning breaks, never on a bar`. Then ban the whole grid family in Exclude while leaving `underscore, ambient bed, drone, room tone` unbanned. Ladder if it persists: re-roll ×2 → form word to `documentary voiceover, radio drama` → widen the sentence-length spread → ellipses. §1 round 14 |
 | **Something you asked for is simply missing** | A **stale ban** — invisible, and it reads as the Style box being ignored | Grep the Exclude box **and** My Taste for the thing, its **category**, and any whole-palette adjective |
 
 ## 7. ⚠️ What is still open before the full run
@@ -701,7 +1166,7 @@ by reflex** — that number's provenance is a superseded file.
 
 ### 🧪 The content filter — one throwaway generation settles it
 
-The script carries *"gives a shit"* and *"wank tanks"*, and canon wants *"Where the f\*\*\* have you
+The script carries *"gives a shit"* and *"wank tanks"*, and canon wants *"Where the fuck have you
 been"* restored in scene 11 if the filter allows it.
 
 🔑 **Make the test chunk 4.** It already contains both live phrases, it is the shortest chunk, and it
@@ -713,8 +1178,20 @@ vowel changes the read, so `shit` → `shite` is a **performance** decision, not
 ### The order to do this in
 
 1. **Rule on the budget** (above). ⬅️ *nothing below is wasted either way, but the re-cut waits on it*
-2. **Run chunk 4 once** on the **round-10 variant A** boxes — filter test and the poem test in one generation, ~20 credits as a pair. **Judge it on one question first: is he talking, or reciting?** Voice quality is round 11's problem.
-3. **If he's reciting**, the layout change did not land — strip the chunk to a single paragraph with no label at all and re-roll before touching a word. **If he's a young MC**, switch to Style variant B and change nothing else.
+2. ✅ **Done, round 13 — and it answered its question: he is northern, and the voice is spot on.** Re-run chunk 4 on the **round-14 A6** boxes, ~20 credits as a pair at weirdness 30 and 60. 🔑 **One question this round: does he stop delivering to a bar?** The voice clauses are frozen and byte-identical, so anything wrong with the voice now is a re-roll, not a rewrite.
+3. **Then read the take against this table, and change ONE thing:**
+
+   | What you got | Change | Do not also |
+   |---|---|---|
+   | **Northern, but still ducks** | Add `[Energy: High]` under the `[Monologue]` label and re-roll | touch the Style box |
+   | **Talking freely, but the bed is dull or gone** | ✅ Nothing — the bed is a throwaway stem (§5). **Save the Voice** | re-add a drum to "fix" it |
+   | **Still on the grid** | Re-roll twice, then paste **B2** (`Madchester documentary voiceover, radio drama`) | delete the bed, or touch a voice clause |
+   | **Reciting again — it's a poem** | 🔴 The bed went too thin. Put a faint unpitched texture back (`low ambient underscore with a soft irregular tick`) — **not a drum loop** | go anywhere near `spoken word` |
+   | **The voice changed** | It is a re-roll, not a rewrite. A6's voice clauses are byte-identical to the take Jack approved | edit a single voice word |
+   | **Both still wrong** | Neither lever is strong enough — the **pool** is wrong, not the wording. Switch to **variant B** (audiobook / radio drama) | keep adding adjectives |
+   | **He's a young MC** | Switch to **variant B** | add adjectives — the pool is doing the casting |
+   | **He's reciting again** | 🔴 Something put a poetry word back. Grep all four boxes for `spoken`, `word`, `poetry` before anything else | touch a word of the script |
+   | **He's talking, northern and level** | ✅ Save the Voice (§4). Then try deleting `no singing, no melody` from the Style box — that settles §2's open split for free | change two things at once |
 4. **Save the Voice** (§4) from the winning take, then run chunks 1, 2, 3 and 5 with it attached.
 5. **Restore Bob's word** in chunk 5 if the filter passed it.
 6. **Stems out** (§5) — hand Premiere the vocal stem, never the mix.

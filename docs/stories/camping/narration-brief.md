@@ -93,7 +93,7 @@ thing it is not.
 - 🔑 **Say out loud that it is the last newspaper ever printed.** From the transcript and still
   missing from canon — it closes the hole (why does a paper exist in 2031?) and it is a better
   line than the explanation it replaces.
-- **Bob's empathy is man-sized and lands on Tarquin:** *where the f*** have you been? You alright?*
+- **Bob's empathy is man-sized and lands on Tarquin:** *where the fuck have you been? You alright?*
 - 🔴 **The five missing years are NEVER explained.** Not by Bob, not by the narrator, not ever.
 - ⬅️ **This is where the reveal must reach back to scene 4.** Whoever owns the AI owned the flats.
 

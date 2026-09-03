@@ -16,11 +16,11 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah,
 
-**Kai Davenport:** What a piece of s\*\*\*,
+**Kai Davenport:** What a piece of shit,
 
 **Jack Taylor:** because it it's quite old to be fair.
 
-**Kai Davenport:** man. This f\*\*\*\*\*\* thing. Honestly.
+**Kai Davenport:** man. This fucking thing. Honestly.
 
 **Jack Taylor:** I think
 
@@ -28,7 +28,7 @@ Aug 4, 2026
 
 **Jack Taylor:** it's
 
-**Kai Davenport:** are like, "Yeah, let's upgrade the Wi-Fi." It's like, "It doesn't matter a thing if your glasses are f\*\*\*\*\*." It's like a It's like taking your mom to an IMAX.
+**Kai Davenport:** are like, "Yeah, let's upgrade the Wi-Fi." It's like, "It doesn't matter a thing if your glasses are fucked." It's like a It's like taking your mom to an IMAX.
 
 **Jack Taylor:** um not
 
@@ -84,7 +84,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah. But it got us here. So
 
-**Kai Davenport:** well genuinely had we start right we're going to do this properly. We're going to write a story broad. We'd have locked ourselves into a s\*\*\* comic format. Do you see what I'm trying to say? And then like opportunity cost would be like oh we're not going to let go of that now because we put loads of work into it and
+**Kai Davenport:** well genuinely had we start right we're going to do this properly. We're going to write a story broad. We'd have locked ourselves into a shit comic format. Do you see what I'm trying to say? And then like opportunity cost would be like oh we're not going to let go of that now because we put loads of work into it and
 
 ### **00:05:05**
 
@@ -94,7 +94,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Heat.
 
-**Kai Davenport:** another like multi-day spend loads of time based on a whim that we re we we rewrite afterwards again. So I think we've reached the limit of like creative freedom to just f\*\*\* around and now we need to actually lock it down. Right. Anyway, now for the purpose of the Gemini notetaker, we are about to describe the uh canonical story board for the camping story that we are working on. Um and so I think the best way to do it if you agree Jack would be like a established a vague overall structure first and then go
+**Kai Davenport:** another like multi-day spend loads of time based on a whim that we re we we rewrite afterwards again. So I think we've reached the limit of like creative freedom to just fuck around and now we need to actually lock it down. Right. Anyway, now for the purpose of the Gemini notetaker, we are about to describe the uh canonical story board for the camping story that we are working on. Um and so I think the best way to do it if you agree Jack would be like a established a vague overall structure first and then go
 
 **Jack Taylor:** Yeah.
 
@@ -126,11 +126,11 @@ Aug 4, 2026
 
 **Jack Taylor:** All
 
-**Kai Davenport:** Um, but it's the mass purchasing of housing stock combined with debasement. But we don't need to let's not f\*\*\*\*\*\* throw debasement into this thread. That's too much. Uh, stop there. But yeah, it's private equity buying social housing and Tarkin being the top of that
+**Kai Davenport:** Um, but it's the mass purchasing of housing stock combined with debasement. But we don't need to let's not fucking throw debasement into this thread. That's too much. Uh, stop there. But yeah, it's private equity buying social housing and Tarkin being the top of that
 
 **Jack Taylor:** right.
 
-**Kai Davenport:** tree. What a brilliant businessman. And he drives his X8 wank tank home um, from there. I think that's the first scene, right? And so you're like, "Oh yeah, these d\*\*\*\*\*\*\*\* who are buying up social housing." Uh, the next scene should be Bob sat in his tent outside Waitros. I think we should either make it we should make that first scene daytime and the office scene daytime and when we cut to Bob daytime or we should make we've got this scene where the X8 drives away from the Shard,
+**Kai Davenport:** tree. What a brilliant businessman. And he drives his X8 wank tank home um, from there. I think that's the first scene, right? And so you're like, "Oh yeah, these dickhead\* who are buying up social housing." Uh, the next scene should be Bob sat in his tent outside Waitros. I think we should either make it we should make that first scene daytime and the office scene daytime and when we cut to Bob daytime or we should make we've got this scene where the X8 drives away from the Shard,
 
 **Jack Taylor:** Yeah.
 
@@ -182,7 +182,7 @@ Aug 4, 2026
 
 **Kai Davenport:** Yes.
 
-**Jack Taylor:** He goes and that's it. He doesn't it doesn't have to be a thought process. It just has to be him being like oh f\*\*\*\*\*\*
+**Jack Taylor:** He goes and that's it. He doesn't it doesn't have to be a thought process. It just has to be him being like oh fucking
 
 **Kai Davenport:** Yeah. No, I like that. Yeah. Yeah. So, so that that that works really well.
 
@@ -226,7 +226,7 @@ Aug 4, 2026
 
 **Kai Davenport:** Yeah.
 
-**Jack Taylor:** 2008 f\*\*\*\*\*\* lost his job and to to get away from all the stress he went on a holiday and he lost his wife
+**Jack Taylor:** 2008 fucking lost his job and to to get away from all the stress he went on a holiday and he lost his wife
 
 **Kai Davenport:** Yeah.
 
@@ -238,7 +238,7 @@ Aug 4, 2026
 
 **Kai Davenport:** Car carry on.
 
-**Jack Taylor:** Well, I I think it's I think it's um like in the way we're humanizing Tarkin. We need to sort of vindicate Bob because he can't just be this f\*\*\*\*\*\* guy, you
+**Jack Taylor:** Well, I I think it's I think it's um like in the way we're humanizing Tarkin. We need to sort of vindicate Bob because he can't just be this fucking guy, you
 
 ### **00:11:44**
 
@@ -254,7 +254,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Right.
 
-**Kai Davenport:** He's got a reason. In the same way that Tarquin isn't just a c\*\*\*, he's got empathy. This is great. This is really perfect for this story.
+**Kai Davenport:** He's got a reason. In the same way that Tarquin isn't just a cunt, he's got empathy. This is great. This is really perfect for this story.
 
 **Jack Taylor:** Yeah.
 
@@ -304,11 +304,11 @@ Aug 4, 2026
 
 **Jack Taylor:** It's like normal.
 
-**Kai Davenport:** Him and his wife are driving to somewhere. Accident with Wangtang driver. Um well that f\*\*\*\*\*\* escalated quickly, right? Cuz immediately it's just like um what you could even do.
+**Kai Davenport:** Him and his wife are driving to somewhere. Accident with Wangtang driver. Um well that fucking escalated quickly, right? Cuz immediately it's just like um what you could even do.
 
 **Jack Taylor:** Yeah.
 
-**Kai Davenport:** Oh, you know that trick that filmmakers do where they introduce the main character and then the main character dies within 10 minutes? You're like, "What the f\*\*\*?" And it turns out that wasn't actually even the main character,
+**Kai Davenport:** Oh, you know that trick that filmmakers do where they introduce the main character and then the main character dies within 10 minutes? You're like, "What the fuck?" And it turns out that wasn't actually even the main character,
 
 **Jack Taylor:** Right.
 
@@ -348,11 +348,11 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah.
 
-**Kai Davenport:** and then the second one can be shard. So it's like 200 8 like massive numbers on the screen looking at Nat West. f\*\*\*\*\*\*. This is going to be about the financial crash, isn't it? Is what the reader thinks before they've even seen Park. Right.
+**Kai Davenport:** and then the second one can be shard. So it's like 200 8 like massive numbers on the screen looking at Nat West. fucking. This is going to be about the financial crash, isn't it? Is what the reader thinks before they've even seen Park. Right.
 
 **Jack Taylor:** Right.
 
-**Kai Davenport:** And then you've got this plucky young f\*\*\*\*\*\*
+**Kai Davenport:** And then you've got this plucky young fucking
 
 **Jack Taylor:** Right.
 
@@ -392,7 +392,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah.
 
-**Kai Davenport:** of uh the biggest private equity they're buying up all the social housing he is like the king of the world and making loads of money um we then see him drive away from in the shard in that scene of uh seeing homeless people chuckling to himself, "Haha, well, you're going to have more friends next month when interest rates go up and I'm going to make a s\*\*\* ton cuz I've put a big bet on that." Facial expression changes,
+**Kai Davenport:** of uh the biggest private equity they're buying up all the social housing he is like the king of the world and making loads of money um we then see him drive away from in the shard in that scene of uh seeing homeless people chuckling to himself, "Haha, well, you're going to have more friends next month when interest rates go up and I'm going to make a shit ton cuz I've put a big bet on that." Facial expression changes,
 
 ### **00:18:34**
 
@@ -402,7 +402,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah.
 
-**Kai Davenport:** Some kind of some kind of compassionate comment for the narrator. You know, maybe Kin isn't the as big a c\*\*\* as we all think right now.
+**Kai Davenport:** Some kind of some kind of compassionate comment for the narrator. You know, maybe Kin isn't the as big a cunt as we all think right now.
 
 **Jack Taylor:** We like um I think in instead of addressing it like talk around it
 
@@ -422,7 +422,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Okay.
 
-**Kai Davenport:** drop with the narrator and it is a U-turn, right? It's like everything we've done is this guy's a c\*\*\*, this guy's a c\*\*\*, this guy's a c\*\*\*.
+**Kai Davenport:** drop with the narrator and it is a U-turn, right? It's like everything we've done is this guy's a cunt, this guy's a cunt, this guy's a cunt.
 
 ### **00:19:28**
 
@@ -440,7 +440,7 @@ Aug 4, 2026
 
 **Kai Davenport:** Yeah.
 
-**Jack Taylor:** how cold it is there cuz his car heater broke last week or whatever the f\*\*\*. You know what I meant? Like some some aspect he's sort of appealing
+**Jack Taylor:** how cold it is there cuz his car heater broke last week or whatever the fuck. You know what I meant? Like some some aspect he's sort of appealing
 
 **Kai Davenport:** Yeah, that's good. I like that.
 
@@ -454,7 +454,7 @@ Aug 4, 2026
 
 ### **00:20:15**
 
-**Kai Davenport:** Haha, but f\*\*\*\*\*\*, you lot must be cold.
+**Kai Davenport:** Haha, but fucking, you lot must be cold.
 
 **Jack Taylor:** Yeah.
 
@@ -474,7 +474,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Right.
 
-**Kai Davenport:** Right. So what we've done is set Tarin up as a c\*\*\*, explained that Bob's had trauma, explained that private equity is the problem,
+**Kai Davenport:** Right. So what we've done is set Tarin up as a cunt, explained that Bob's had trauma, explained that private equity is the problem,
 
 **Jack Taylor:** Yep.
 
@@ -546,7 +546,7 @@ Aug 4, 2026
 
 **Jack Taylor:** man.
 
-**Kai Davenport:** That's that's hilarious. Um yes. Yes. So, we'll call that the therapy scene which sets up the Iaska. It's not Clarkin just somehow all of a sudden is some cool d\*\*\*\*\*\*\*. He's He's more like,
+**Kai Davenport:** That's that's hilarious. Um yes. Yes. So, we'll call that the therapy scene which sets up the Iaska. It's not Clarkin just somehow all of a sudden is some cool dickhead. He's He's more like,
 
 **Jack Taylor:** Yeah,
 
@@ -570,11 +570,11 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah. All
 
-**Kai Davenport:** we we've then kind of almost slapped that back by the sarcasm of, you know, the only hope you've got is to go get off your face cuz you're clearly a lost cause. And I think this is the right balance of so Tarken reverts to type and goes, "I'll get a job, you lazy c\*\*\*." And Bob just goes,
+**Kai Davenport:** we we've then kind of almost slapped that back by the sarcasm of, you know, the only hope you've got is to go get off your face cuz you're clearly a lost cause. And I think this is the right balance of so Tarken reverts to type and goes, "I'll get a job, you lazy cunt." And Bob just goes,
 
 **Jack Taylor:** right.
 
-**Kai Davenport:** "f\*\*\*\*\*\* wank tank, you all f\*\*\*\*\*\* pricks. I wish my wife was here or something." But make that really short. The judgment doesn't need to be long and prolonged. Um, cut straight to the or or we maybe we uh I think we drop the car in the forest scene.
+**Kai Davenport:** "fucking wank tank, you all fucking pricks. I wish my wife was here or something." But make that really short. The judgment doesn't need to be long and prolonged. Um, cut straight to the or or we maybe we uh I think we drop the car in the forest scene.
 
 **Jack Taylor:** Uh yeah, it doesn't really add much, does it?
 
@@ -612,7 +612,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Right.
 
-**Kai Davenport:** So tell me what I did last Wednesday. I don't know, right? I can tell you what f\*\*\*\*\*\*
+**Kai Davenport:** So tell me what I did last Wednesday. I don't know, right? I can tell you what fucking
 
 **Jack Taylor:** Yeah.
 
@@ -636,7 +636,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Yep.
 
-**Kai Davenport:** Cool. You get that? Now to create that embedding space, you have to train an AI on data, right? It doesn't just there's not some magic algorithm that just knows this. You you have to say, "Look at all this text. Look at how all these words relate to each other. Understand their meaning. All of a sudden, it's obvious that king and queen, the only difference is gender, but they're very close in meaning." And boom. That's called an embedding model. Make sense? But it has to have been uh Oh, he's paused. s\*\*\*. Sorry. Yes. He's back. No, that's okay.
+**Kai Davenport:** Cool. You get that? Now to create that embedding space, you have to train an AI on data, right? It doesn't just there's not some magic algorithm that just knows this. You you have to say, "Look at all this text. Look at how all these words relate to each other. Understand their meaning. All of a sudden, it's obvious that king and queen, the only difference is gender, but they're very close in meaning." And boom. That's called an embedding model. Make sense? But it has to have been uh Oh, he's paused. shit. Sorry. Yes. He's back. No, that's okay.
 
 ### **00:30:07**
 
@@ -660,11 +660,11 @@ Aug 4, 2026
 
 ### **00:31:02**
 
-**Kai Davenport:** Therefore can predict what Right. Paul put those two things together. Here's the point that I'm making. Um, an embedded model has also been trained, right? So, if you rock up with uh s\*\*\* stains in urinals as a saying, right? It's gone, I've got no idea what you mean unless you put spaces in there.
+**Kai Davenport:** Therefore can predict what Right. Paul put those two things together. Here's the point that I'm making. Um, an embedded model has also been trained, right? So, if you rock up with uh shit stains in urinals as a saying, right? It's gone, I've got no idea what you mean unless you put spaces in there.
 
 **Jack Taylor:** Yep.
 
-**Kai Davenport:** That's a bad example actually, but like s\*\*\*
+**Kai Davenport:** That's a bad example actually, but like shit
 
 **Jack Taylor:** There you go.
 
@@ -696,7 +696,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah.
 
-**Kai Davenport:** so yeah, I think I think yeah, I think we we we I think the the scene the scene in the part. We should just have her saying the thing she said and him grabbing his knee. Brilliant. Um, we should then just cut to f\*\*\*\*\*\*,
+**Kai Davenport:** so yeah, I think I think yeah, I think we we we I think the the scene the scene in the part. We should just have her saying the thing she said and him grabbing his knee. Brilliant. Um, we should then just cut to fucking,
 
 **Jack Taylor:** Right.
 
@@ -744,7 +744,7 @@ Aug 4, 2026
 
 ### **00:33:37**
 
-**Kai Davenport:** It's more like wind your neck in d\*\*\*\*\*\*\*
+**Kai Davenport:** It's more like wind your neck in dickhead
 
 **Jack Taylor:** Yeah.
 
@@ -760,7 +760,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah.
 
-**Kai Davenport:** Um and and and and yeah, and so like then it's like opening his eyes from exactly the same perspective that Bob was, but with chaos outside. And like I think we need to do like a what the actual f\*\*\*
+**Kai Davenport:** Um and and and and yeah, and so like then it's like opening his eyes from exactly the same perspective that Bob was, but with chaos outside. And like I think we need to do like a what the actual fuck
 
 **Jack Taylor:** Yeah.
 
@@ -768,7 +768,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Needs to freak out. Yeah.
 
-**Kai Davenport:** Uh maybe the narrator does the what the f\*\*\*\*\*
+**Kai Davenport:** Uh maybe the narrator does the what the fuck's
 
 **Jack Taylor:** Yeah.
 
@@ -776,7 +776,7 @@ Aug 4, 2026
 
 ### **00:34:35**
 
-**Kai Davenport:** It's more just like Tarquin thinks to himself what the f\*\*\*
+**Kai Davenport:** It's more just like Tarquin thinks to himself what the fuck
 
 **Jack Taylor:** Right.
 
@@ -784,11 +784,11 @@ Aug 4, 2026
 
 **Jack Taylor:** I
 
-**Kai Davenport:** right. So, so Taco wakes up in in the tent. Same view as Bob. Narrator takes over. What the f\*\*\*\*\* happening? And and I think we're almost basically at the ending of the story because I think the ending of the story can be as simple as Tarquin and Bob a bit like in the song kind of like going hey I remember you this kind of like I I remember your face and Tquin going like yeah I saw you just
+**Kai Davenport:** right. So, so Taco wakes up in in the tent. Same view as Bob. Narrator takes over. What the fuck's happening? And and I think we're almost basically at the ending of the story because I think the ending of the story can be as simple as Tarquin and Bob a bit like in the song kind of like going hey I remember you this kind of like I I remember your face and Tquin going like yeah I saw you just
 
 **Jack Taylor:** Right.
 
-**Kai Davenport:** yesterday. What the f\*\*\*\*\* going on? Bob being like no no no mate that was like five years ago.
+**Kai Davenport:** yesterday. What the fuck's going on? Bob being like no no no mate that was like five years ago.
 
 ### **00:38:36**
 
@@ -810,7 +810,7 @@ Aug 4, 2026
 
 **Jack Taylor:** right.
 
-**Kai Davenport:** It's like five years have passed and by the way, this is why this is um why where the f\*\*\* have you been then or something like that?
+**Kai Davenport:** It's like five years have passed and by the way, this is why this is um why where the fuck have you been then or something like that?
 
 **Jack Taylor:** Yeah.
 
@@ -860,7 +860,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah.
 
-**Kai Davenport:** It's like um Taken wakes up. It's the narrator that goes like, "What the f\*\*\*\*\* happening? Where am I?" Um he leaves the
+**Kai Davenport:** It's like um Taken wakes up. It's the narrator that goes like, "What the fuck's happening? Where am I?" Um he leaves the
 
 **Jack Taylor:** Yeah.
 
@@ -872,17 +872,17 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah.
 
-**Kai Davenport:** They're like almost smile like happy to be together. You did that really well right in the music video because up until like f\*\*\*
+**Kai Davenport:** They're like almost smile like happy to be together. You did that really well right in the music video because up until like fuck
 
 ### **00:41:00**
 
 **Jack Taylor:** Okay.
 
-**Kai Davenport:** you d\*\*\*\*\*\*\*.
+**Kai Davenport:** you dickhead.
 
 **Jack Taylor:** Yeah.
 
-**Kai Davenport:** f\*\*\* you d\*\*\*\*\*\*\*. And at the end we're like ah well we both wrong weren't we?
+**Kai Davenport:** fuck you dickhead. And at the end we're like ah well we both wrong weren't we?
 
 **Jack Taylor:** Well,
 
@@ -896,7 +896,7 @@ Aug 4, 2026
 
 **Kai Davenport:** I think so. Well, the fire would be in the car park definitely.
 
-**Jack Taylor:** weird. Or does it does it have to be maybe they f\*\*\*
+**Jack Taylor:** weird. Or does it does it have to be maybe they fuck
 
 **Kai Davenport:** Let's not
 
@@ -960,7 +960,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Right. Right. Right.
 
-**Kai Davenport:** 2008 he was very much instrumental in the financial crisis c\*\*\* meet Bob 2008 nice guy wife died oh that's sad fast forward 18 years now Tarquin's king of the world of Bob is f\*\*\*\*\*. Okay. Yeah, that lines up. Um,
+**Kai Davenport:** 2008 he was very much instrumental in the financial crisis cunt meet Bob 2008 nice guy wife died oh that's sad fast forward 18 years now Tarquin's king of the world of Bob is fucked. Okay. Yeah, that lines up. Um,
 
 **Jack Taylor:** Right.
 
@@ -1020,7 +1020,7 @@ Aug 4, 2026
 
 **Jack Taylor:** yeah. That's fine. That's fine.
 
-**Kai Davenport:** newspaper printed. We have we've just f\*\*\*\*\*
+**Kai Davenport:** newspaper printed. We have we've just fucked
 
 **Jack Taylor:** Yeah,
 
@@ -1104,7 +1104,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah.
 
-**Kai Davenport:** the one the one thing. Let me share my screen real quick. The one thing with Sunno that I've forgotten that might be f\*\*\*\*\*\* us up.
+**Kai Davenport:** the one the one thing. Let me share my screen real quick. The one thing with Sunno that I've forgotten that might be fucking us up.
 
 ### **00:47:14**
 
@@ -1120,7 +1120,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Oh.
 
-**Kai Davenport:** It's There you go. It's this bot here that goes into every f\*\*\*\*\*\*
+**Kai Davenport:** It's There you go. It's this bot here that goes into every fucking
 
 **Jack Taylor:** Oh, this is definitely Yeah.
 
@@ -1178,7 +1178,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah.
 
-**Kai Davenport:** if I called resume uh actually let me just uh one second uh here. Um cuz it skill is really good and uh so when we're f\*\*\*\*\*\*
+**Kai Davenport:** if I called resume uh actually let me just uh one second uh here. Um cuz it skill is really good and uh so when we're fucking
 
 **Jack Taylor:** Right.
 
@@ -1238,7 +1238,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Okay.
 
-**Kai Davenport:** And and and the the the bit we've just worked out here um this f\*\*\*\*\*\* thing lives inside. So it doesn't matter what prompt we do,
+**Kai Davenport:** And and and the the the bit we've just worked out here um this fucking thing lives inside. So it doesn't matter what prompt we do,
 
 **Jack Taylor:** Right.
 
@@ -1278,7 +1278,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah.
 
-**Kai Davenport:** What's he going to say? See, there may Yeah, there may well be some crap in this repository that's f\*\*\*\*\*\* us up with the prompt. You're right. But there's nothing in the Karen prompt right now. If I get what we've currently got open that I can see that would be like everything is like be a Mooney Karen. Do you know what I mean? In the prompt.
+**Kai Davenport:** What's he going to say? See, there may Yeah, there may well be some crap in this repository that's fucking us up with the prompt. You're right. But there's nothing in the Karen prompt right now. If I get what we've currently got open that I can see that would be like everything is like be a Mooney Karen. Do you know what I mean? In the prompt.
 
 **Jack Taylor:** Right.
 
@@ -1302,7 +1302,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah.
 
-**Kai Davenport:** Exclude young voice youthful. Right. Exclude all the things he ended up doing. So I just wonder like why why the f\*\*\* is it being like it is?
+**Kai Davenport:** Exclude young voice youthful. Right. Exclude all the things he ended up doing. So I just wonder like why why the fuck is it being like it is?
 
 ### **00:56:26**
 
@@ -1382,9 +1382,9 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah.
 
-**Kai Davenport:** See, d\*\*\*\*\*\*\*.
+**Kai Davenport:** See, dickhead.
 
-**Jack Taylor:** What the f\*\*\*?
+**Jack Taylor:** What the fuck?
 
 **Kai Davenport:** Uh,
 
@@ -1406,13 +1406,13 @@ Aug 4, 2026
 
 **Jack Taylor:** out.
 
-**Kai Davenport:** And so I'm sort of struggling to think what word single word should I type in that box. Um and all of a sudden I'm thinking why don't we just guide it towards what we want Karen to do? Uh would that make sense? Um, so could you give me what to paste into the my taste box for the Karen song specifically, please? Thank you. Let's just go straight to full max. Give me Karen because if we get anywhere close then Oh, you know, I should have remembered this f\*\*\*\*\*\* thing, the the taste section.
+**Kai Davenport:** And so I'm sort of struggling to think what word single word should I type in that box. Um and all of a sudden I'm thinking why don't we just guide it towards what we want Karen to do? Uh would that make sense? Um, so could you give me what to paste into the my taste box for the Karen song specifically, please? Thank you. Let's just go straight to full max. Give me Karen because if we get anywhere close then Oh, you know, I should have remembered this fucking thing, the the taste section.
 
 ### **01:00:24**
 
 **Jack Taylor:** Sorry.
 
-**Kai Davenport:** mate, like once all of this is come together, it's going to be f\*\*\*\*\*\* sick.
+**Kai Davenport:** mate, like once all of this is come together, it's going to be fucking sick.
 
 **Jack Taylor:** Yeah. Yeah.
 
@@ -1548,7 +1548,7 @@ Aug 4, 2026
 
 **Jack Taylor:** that.
 
-**Kai Davenport:** I mean, I I think it's a f\*\*\*\*\*\* banging tune, but it's definitely still sexy Lauren Hill, right?
+**Kai Davenport:** I mean, I I think it's a fucking banging tune, but it's definitely still sexy Lauren Hill, right?
 
 ### **01:08:00**
 
@@ -1568,7 +1568,7 @@ Aug 4, 2026
 
 **Jack Taylor:** They do.
 
-**Kai Davenport:** done. Look. So, I think I might have f\*\*\*\*\* up by pasting the wrong lyrics in because look dead pan New York draw is sexy Lauren Hill again. So let's redo it with uh Okay,
+**Kai Davenport:** done. Look. So, I think I might have fucked up by pasting the wrong lyrics in because look dead pan New York draw is sexy Lauren Hill again. So let's redo it with uh Okay,
 
 **Jack Taylor:** Yeah.
 
@@ -1576,7 +1576,7 @@ Aug 4, 2026
 
 ### **01:08:53**
 
-**Kai Davenport:** That's why I'm like hang on. Why is this not Okay, so what does it say? Um one second. Your instinct is right. And simp since empty won't save. Okay. Paste this on the What? This is hang on. I haven't actually pasted that prompt in f\*\*\* sake.
+**Kai Davenport:** That's why I'm like hang on. Why is this not Okay, so what does it say? Um one second. Your instinct is right. And simp since empty won't save. Okay. Paste this on the What? This is hang on. I haven't actually pasted that prompt in fuck sake.
 
 **Jack Taylor:** That's probably me distracting you to be
 
@@ -1696,7 +1696,7 @@ Aug 4, 2026
 
 ### **01:13:47**
 
-**Kai Davenport:** Oh, we're we're fixing the kettle. Okay, let's f\*\*\*\*\*\* understand how kettles work, you know? And you you go down the f\*\*\*\*\*\* I can tell you about exactly how kettles work now cuz that's the only way I can fix the kettle. And then like the next day, what we doing? Still the kettle. Next day, finish the kettle. Okay, what we doing now? All the other the next right. That's the old world. The new world. What are we doing today? The kettle, the fridge, the washing machine, the satellite receiver, and the internet all at the same time.
+**Kai Davenport:** Oh, we're we're fixing the kettle. Okay, let's fucking understand how kettles work, you know? And you you go down the fucking I can tell you about exactly how kettles work now cuz that's the only way I can fix the kettle. And then like the next day, what we doing? Still the kettle. Next day, finish the kettle. Okay, what we doing now? All the other the next right. That's the old world. The new world. What are we doing today? The kettle, the fridge, the washing machine, the satellite receiver, and the internet all at the same time.
 
 **Jack Taylor:** And if it's not fixed immediately,
 
@@ -1732,7 +1732,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Right.
 
-**Kai Davenport:** So let's just do from scratch. I think we can go from scratch because it's the same, right? As in we're literally going to just create a new Come on. create but without the f\*\*\*\*\*\* stuff in there,
+**Kai Davenport:** So let's just do from scratch. I think we can go from scratch because it's the same, right? As in we're literally going to just create a new Come on. create but without the fucking stuff in there,
 
 **Jack Taylor:** Oh,
 
@@ -1796,7 +1796,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Yep.
 
-**Kai Davenport:** Oh, you f\*\*\*\*\*. Come on.
+**Kai Davenport:** Oh, you fucker. Come on.
 
 **Jack Taylor:** All right. It doesn't have to be exact. That's
 
@@ -1808,7 +1808,7 @@ Aug 4, 2026
 
 ### **01:18:42**
 
-**Kai Davenport:** Jack has not got infinite patience. Come on. All right. f\*\*\* it. f\*\*\* it.
+**Kai Davenport:** Jack has not got infinite patience. Come on. All right. fuck it. fuck it.
 
 **Jack Taylor:** Thank you.
 
@@ -1944,9 +1944,9 @@ Aug 4, 2026
 
 **Jack Taylor:** What the
 
-**Kai Davenport:** Oh, f\*\*\*
+**Kai Davenport:** Oh, fuck
 
-**Jack Taylor:** f\*\*\*?
+**Jack Taylor:** fuck?
 
 **Kai Davenport:** sake. Okay. Ah,
 
@@ -1990,7 +1990,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Right.
 
-**Kai Davenport:** it cuz surely other people are having this problem. So f\*\*\* man. Like
+**Kai Davenport:** it cuz surely other people are having this problem. So fuck man. Like
 
 **Jack Taylor:** Well, yeah, I'm sure we'll find a solution. Um, that's a good idea though, finding the sort of camera voices and then using it.
 
@@ -2058,21 +2058,21 @@ Aug 4, 2026
 
 **Jack Taylor:** I hate the ones that do
 
-**Kai Davenport's Presentation:** and I f\*\*\*\*\*\* see my face on some f\*\*\*\*\*\*
+**Kai Davenport's Presentation:** and I fucking see my face on some fucking
 
 **Jack Taylor:** it.
 
-**Kai Davenport's Presentation:** stupid or f\*\*\*\*\*\*
+**Kai Davenport's Presentation:** stupid or fucking
 
 ### **01:28:20**
 
 **Kai Davenport:** Oh, I've clearly watched this
 
-**Kai Davenport's Presentation:** thing, I'm going to f\*\*\*\*\*\* sue the s\*\*\* out of you.
+**Kai Davenport's Presentation:** thing, I'm going to fucking sue the shit out of you.
 
 **Kai Davenport:** already.
 
-**Kai Davenport's Presentation:** Do you f\*\*\*\*\*\* hear me?
+**Kai Davenport's Presentation:** Do you fucking hear me?
 
 **Jack Taylor:** High pitch loud.
 
@@ -2104,7 +2104,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah.
 
-**Kai Davenport:** okay, that didn't work. So, what else could it be? Oh, we're mentioning old people a lot. And yeah, I think you're right. Like there's still iterations to do knowing that we were throwing everything off. Okay. Good news first. What you're describing clean solo complaint exactly what voice actor demo reels and solo sketch. Right. Brilliant. Okay. Yes. See, it f\*\*\*\*\*\* knows, man. It's smart. Uh search to
+**Kai Davenport:** okay, that didn't work. So, what else could it be? Oh, we're mentioning old people a lot. And yeah, I think you're right. Like there's still iterations to do knowing that we were throwing everything off. Okay. Good news first. What you're describing clean solo complaint exactly what voice actor demo reels and solo sketch. Right. Brilliant. Okay. Yes. See, it fucking knows, man. It's smart. Uh search to
 
 **Jack Taylor:** Yeah.
 
@@ -2182,11 +2182,11 @@ Aug 4, 2026
 
 **Kai Davenport:** That's not good.
 
-**Jack Taylor:** That's it though. The basically because then we're f\*\*\*\*\*\*
+**Jack Taylor:** That's it though. The basically because then we're fucking
 
 **Kai Davenport:** That's it.
 
-**Jack Taylor:** with it. So you just need the base part and then we will f\*\*\*
+**Jack Taylor:** with it. So you just need the base part and then we will fuck
 
 ### **01:33:09**
 
@@ -2250,7 +2250,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Right.
 
-**Kai Davenport:** old lady singing is its point and that's what our problem is. Make sense. Soh okay I'm satisfied why we've got this problem now rather than like what the f\*\*\*.
+**Kai Davenport:** old lady singing is its point and that's what our problem is. Make sense. Soh okay I'm satisfied why we've got this problem now rather than like what the fuck.
 
 **Jack Taylor:** Right.
 
@@ -2298,7 +2298,7 @@ Aug 4, 2026
 
 **Kai Davenport:** Hi, why don't you pretend to be Karen? Let's see what happens. It's it's rewritten the file. So, let's try that first. Um, all day to complain. Here we are. Okay. Yeah, it's not. Okay. And have we got my taste? Yeah. Okay. So, let's start there. I want to All
 
-**Jack Taylor:** I reckon we do a low weirdness one as well because Bahigh f\*\*\*\*\*
+**Jack Taylor:** I reckon we do a low weirdness one as well because Bahigh fucked
 
 **Kai Davenport:** right.
 
@@ -2466,7 +2466,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Like keep everything else the same and then isolate the voice and then try and change it there.
 
-**Kai Davenport:** now that's another f\*\*\*\*\*\*
+**Kai Davenport:** now that's another fucking
 
 **Jack Taylor:** I think maybe we can do Sorry,
 
@@ -2514,7 +2514,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah.
 
-**Kai Davenport:** like we cuz what I love like the one I pinned is a f\*\*\*\*\*\* brilliant tune just the voice,
+**Kai Davenport:** like we cuz what I love like the one I pinned is a fucking brilliant tune just the voice,
 
 **Jack Taylor:** Yeah.
 
@@ -2538,7 +2538,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Yep.
 
-**Kai Davenport:** I'm just going I'm just going through it telling me what to do to test this out now. So, okay. Three dot menu on that song. Remix voice. What? Seriously? Remix. Oh, f\*\*\*\*\*\*. Voice. Okay. Um,
+**Kai Davenport:** I'm just going I'm just going through it telling me what to do to test this out now. So, okay. Three dot menu on that song. Remix voice. What? Seriously? Remix. Oh, fucking. Voice. Okay. Um,
 
 **Jack Taylor:** Ah.
 
@@ -2832,7 +2832,7 @@ Aug 4, 2026
 
 **Kai Davenport:** Right.
 
-**Jack Taylor:** So maybe we f\*\*\*
+**Jack Taylor:** So maybe we fuck
 
 **Kai Davenport:** So it's worth trying down here as well.
 
@@ -2840,7 +2840,7 @@ Aug 4, 2026
 
 **Kai Davenport:** Yeah.
 
-**Jack Taylor:** I think always 115 or zero cuz if it f\*\*\*\*
+**Jack Taylor:** I think always 115 or zero cuz if it fucks
 
 **Kai Davenport:** Weirdness down.
 
@@ -2944,7 +2944,7 @@ Aug 4, 2026
 
 **Kai Davenport's Presentation:** complain.
 
-**Kai Davenport:** Concept. Now we know the voice works. Maybe we get the language model to rewrite the chorus for us because the language model is assuming that we've got this like lovely musical fidelity going on. And what we're doing is no no no no sound like Karen. So the moment it's like and now I'm going to sing. It's gonna sound s\*\*\*. Right. So we might reconsider the whole structure of the song and so but but
+**Kai Davenport:** Concept. Now we know the voice works. Maybe we get the language model to rewrite the chorus for us because the language model is assuming that we've got this like lovely musical fidelity going on. And what we're doing is no no no no sound like Karen. So the moment it's like and now I'm going to sing. It's gonna sound shit. Right. So we might reconsider the whole structure of the song and so but but
 
 **Jack Taylor:** Yeah.
 
@@ -3036,7 +3036,7 @@ Aug 4, 2026
 
 **Kai Davenport:** the
 
-**Jack Taylor:** remix one by one, it takes hours. I don't think it does because I think we've I think that's b\*\*\*\*\*\*\*.
+**Jack Taylor:** remix one by one, it takes hours. I don't think it does because I think we've I think that's bollocks.
 
 ### **02:09:58**
 
@@ -3198,7 +3198,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah.
 
-**Kai Davenport:** Okay. Uh so all in the file what changed and why it should work in one generation one look change blah okay great so two supporting changes style prompt and exclude cool let's um go and just regenerate with this new thing then see what happens and then yeah I think we've done some f\*\*\*\*\*\* solid work today m like progress okay
+**Kai Davenport:** Okay. Uh so all in the file what changed and why it should work in one generation one look change blah okay great so two supporting changes style prompt and exclude cool let's um go and just regenerate with this new thing then see what happens and then yeah I think we've done some fucking solid work today m like progress okay
 
 **Jack Taylor:** Yeah. Awesome. Yeah.
 
@@ -3324,7 +3324,7 @@ Aug 4, 2026
 
 **Jack Taylor:** learning.
 
-**Kai Davenport:** And let let's also say that like I think possibly just us both f\*\*\*\*\*\* around with this like is a good thing because then it's we'll get there
+**Kai Davenport:** And let let's also say that like I think possibly just us both fucking around with this like is a good thing because then it's we'll get there
 
 **Jack Taylor:** Yeah.
 
@@ -3464,7 +3464,7 @@ Aug 4, 2026
 
 **Kai Davenport:** Yes, it's pinned.
 
-**Jack Taylor:** So, is the plan use that sort of voice with the old beat or or we like f\*\*\* the old beat.
+**Jack Taylor:** So, is the plan use that sort of voice with the old beat or or we like fuck the old beat.
 
 ### **02:25:15**
 
@@ -3474,7 +3474,7 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah,
 
-**Kai Davenport:** what the f\*\*\* is that? And B, that sounds amazing, right?
+**Kai Davenport:** what the fuck is that? And B, that sounds amazing, right?
 
 **Jack Taylor:** it has weird enough roots.
 
@@ -3528,7 +3528,7 @@ Aug 4, 2026
 
 **Kai Davenport's Presentation:** I'm sorry, I can't help you.
 
-**Kai Davenport:** f\*\*\*\*\*\*
+**Kai Davenport:** fucking
 
 **Jack Taylor:** I like
 
@@ -3576,21 +3576,21 @@ Aug 4, 2026
 
 **Jack Taylor:** Yeah. Yeah. Yeah.
 
-**Kai Davenport:** Okay. f\*\*\*\*\*\* banging. Well done, Jack. Um I'll So you're going to you're going to f\*\*\*
+**Kai Davenport:** Okay. fucking banging. Well done, Jack. Um I'll So you're going to you're going to fuck
 
 **Jack Taylor:** Excellent.
 
-**Kai Davenport:** around with a video version of the Karen storyboard and I'm going to f\*\*\* around with a text version of the camping story board. Oh, he's frozen. God damn it. He's back.
+**Kai Davenport:** around with a video version of the Karen storyboard and I'm going to fuck around with a text version of the camping story board. Oh, he's frozen. God damn it. He's back.
 
 **Jack Taylor:** There we go. Of course they did
 
-**Kai Davenport:** Yeah, that's all right. I was just saying, so you're going to f\*\*\*
+**Kai Davenport:** Yeah, that's all right. I was just saying, so you're going to fuck
 
 **Jack Taylor:** it.
 
 ### **02:28:28**
 
-**Kai Davenport:** around with a video version of the um Karen story board and I'm going to f\*\*\* around with a text version of the camping story board. That's That's the plan,
+**Kai Davenport:** around with a video version of the um Karen story board and I'm going to fuck around with a text version of the camping story board. That's That's the plan,
 
 **Jack Taylor:** Second.
 
@@ -3598,7 +3598,7 @@ Aug 4, 2026
 
 **Jack Taylor:** That's the front.
 
-**Kai Davenport:** Good stuff. Well, that was that's f\*\*\*\*\*\* satisfying after after how it felt about half an hour
+**Kai Davenport:** Good stuff. Well, that was that's fucking satisfying after after how it felt about half an hour
 
 **Jack Taylor:** Yeah.
 
