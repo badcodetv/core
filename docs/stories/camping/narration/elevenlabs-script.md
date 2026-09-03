@@ -2,8 +2,9 @@
 title: Camping — the narration script, optimised for ElevenLabs
 status: words are Jack's 2026-09-03 draft, optimised for synthesis — 3 content gaps open
 model: Eleven v3
-voice: ⚠️ not yet designed. Run voice.md → "THE RUN" steps 1–4 first
-settings: Stability Natural · Similarity 75 · Style 0
+voice: ✅ "Camping Narrator" — built and saved, confirmed in the UI 2026-09-03
+method: Text to Speech box, chunk by chunk (the Karen method)
+settings: Stability Natural (the slider's midpoint) — v3 exposes no Similarity or Style
 ---
 
 # The script, paste-ready for ElevenLabs
@@ -13,9 +14,10 @@ settings: Stability Natural · Similarity 75 · Style 0
 > factual fix. The voice-design plan and the budget are in [`voice.md`](./voice.md) → "THE RUN".
 > The job list is [`../narration-brief.md`](../narration-brief.md).
 
-⚠️ **The voice does not exist yet** — no `voice_id` is recorded anywhere in the repo. Run
-[`voice.md`](./voice.md) → "THE RUN" steps 1–4 (check the plan, six screening designs, confirm,
-save) **before** any of this goes in the box.
+✅ **The voice exists.** **"Camping Narrator"** is built and saved — confirmed in the ElevenLabs UI
+on 2026-09-03. The repo never recorded it, which is why earlier versions of this sheet said it did
+not exist. 🔑 **The design spend in [`voice.md`](./voice.md) → "THE RUN" is already paid** — that
+whole 1,212-credit plan is history, not a cost still ahead of you.
 
 ---
 
@@ -77,10 +79,12 @@ the gap is visible — not as a decision.
 
 | Control | Set to | Why |
 |---|---|---|
+| **Voice** | **Camping Narrator** | Already built and saved |
 | **Model** | **Eleven v3** | The only model that reads audio tags |
-| **Stability** | 🔑 **Natural** | ElevenLabs' own words: *Creative* is *"more emotional and expressive, but prone to hallucinations"*; *Robust* is *"highly stable, but less responsive to directional prompts."* **Natural** is *"closest to the original voice recording"* — the only setting that is both stable and directable |
-| **Similarity** | ~75 | |
-| **Style** | **0** | Style pushes performance. This narrator must never perform |
+| **Stability** | 🔑 **the slider's midpoint (Natural)** | ElevenLabs' own words: *Creative* is *"more emotional and expressive, but prone to hallucinations"*; *Robust* is *"highly stable, but less responsive to directional prompts."* **Natural** is *"closest to the original voice recording"* — the only setting both stable and directable |
+| **Language Override** | **off** | |
+| **Output Format** | MP3 44.1 kHz 128 kbps | Fine for a stem going into Premiere |
+| ~~Similarity~~ · ~~Style~~ | ⚠️ **not present on v3** | Earlier versions of this sheet said "Similarity 75 · Style 0". Those are v2 controls — the v3 panel does not show them |
 | **Speed** | *not exposed on v3* | Pacing comes from punctuation and chunk structure |
 
 ### ⚠️ Three pieces of common advice that are wrong for v3
@@ -89,42 +93,56 @@ the gap is visible — not as a decision.
 |---|---|
 | *"Use SSML `<break/>` for exact pauses"* | ElevenLabs' v3 doc: **"Eleven v3 does not support SSML break tags."** It is v2 advice — the tag gets read aloud or ignored. Pauses come from the ellipsis and from the edit |
 | *"Drop stability to 50–60%"* | That is v2's numeric slider. **v3's stability is a three-way choice**, not a percentage. Natural |
-| *"Use request stitching to keep long narration continuous"* | 🔴 **"Request stitching is not available for the `eleven_v3` model."** This is exactly why the ruling above is Studio rather than six pastes |
+| *"Use request stitching to keep long narration continuous"* | 🔴 **"Request stitching is not available for the `eleven_v3` model."** ⚠️ And it is **API-only** in any case — there is no stitching in either web screen, so it is not a reason to choose one over the other |
 
-## 🔑 RULED 2026-09-03 — build it in Studio, not the Speech Synthesis box
+## 🔑 RULED 2026-09-03 — the Text to Speech box, chunk by chunk. The Karen method.
 
-⚠️ **This reverses the earlier "paste one chunk at a time" instruction.** Four documented facts
-decide it, and three of them were not checked before:
+⚠️ **This replaces the Studio recommendation, which was wrong.** It rested on request stitching,
+and **request stitching is an API feature** (`previous_text` / `next_text`). Hand-driving the
+website, it was never available in *either* screen — so it was never a reason to prefer Studio.
+Two corrections and one confirmation:
 
-| Fact | Source | What it means here |
-|---|---|---|
-| **v3 takes 5,000 characters per generation** | [Models](https://elevenlabs.io/docs/overview/models) | The whole script is **2,447**. Chunking was never forced by a limit — earlier notes citing a 3,000 cap were wrong |
-| 🔴 **"Request stitching is not available for the `eleven_v3` model"** | [Request stitching](https://elevenlabs.io/docs/eleven-api/guides/how-to/text-to-speech/request-stitching) | Stitching (`previous_text`/`next_text`) is *the* mechanism that keeps prosody continuous across separate requests. **On v3 it does not exist.** So six separate pastes pay a drift cost with no fix available |
-| 🥇 **Two free regenerations per paragraph**, if text, voice and settings are unchanged | [Two free regenerations](https://elevenlabs.io/blog/two-free-regenerations) | This is the repair budget the 730-credit margin does not have |
-| 🥇 **Regenerate a paragraph — or just selected words** | [Studio](https://elevenlabs.io/docs/eleven-creative/products/studio) | One bad word costs nothing and does not touch the rest of the read |
+| What I said | What is actually true |
+|---|---|
+| *"Six pastes lose prosody continuity because stitching doesn't work on v3"* | 🔴 True but **irrelevant**. Stitching is API-only. Studio would not have given it either |
+| *"Studio's free regenerations are the repair budget"* | ⚠️ The **Text to Speech box has them too** — and it is the one screen **both** sources agree on. The [announcement blog](https://elevenlabs.io/blog/two-free-regenerations) grants them to *"Speech Synthesis via the website"* and **denies them to Projects**; the [Studio docs](https://elevenlabs.io/docs/eleven-creative/products/studio) grant them to Studio. **This screen is the safe one** |
+| *"v3 takes 5,000 characters"* | ✅ Still true. The whole script is 2,447, so it *could* go in one paste |
 
-🔑 **So manual chunk-by-chunk is the worst of the three options:** it takes the drift risk of
-splitting *and* forfeits Studio's free re-rolls. **One Studio project. Six paragraphs. They are the
-six chunks below, unchanged.**
+🔑 **And chunking beats one big paste, for a reason that is purely about repair.** The free
+allowance is **two re-rolls per generation**, not per character:
 
-⚠️ **The 250-character floor still applies — per paragraph.** ElevenLabs: *"very short prompts are
-more likely to cause inconsistent outputs. Encourage prompts greater than 250 characters."* Studio
-generates a paragraph at a time, so a paragraph is a generation. 🔴 **Do not let Studio's editor
-split these into their natural sentence paragraphs** — *"Fuck me."* alone is nine characters. **The
-blank lines inside each block below are line breaks within one paragraph, not paragraph breaks.**
+| Approach | Charged | Free re-rolls | A bad line costs |
+|---|---|---|---|
+| One paste of 2,447 | 2,447 | 2, covering all 2,447 | re-roll the **whole script** |
+| **Six chunks** | **2,447 — the same** | **12** | re-roll **one chunk (269–534)** |
+
+**Same spend, six times the repair budget, and a bad line never costs you a good one.** This is
+exactly what [`../../karen/narration/script.md`](../../karen/narration/script.md) already does with
+nine chunks, and it is why that worked.
 
 ### The click-path
 
-1. **Studio → New project.** Project settings → **Model: Eleven v3**, voice = the saved camping
-   narrator, **Stability Natural · Similarity 75 · Style 0**.
-2. **Paste chunk 1 as one paragraph.** Confirm the editor shows **one** block, not four.
-3. Repeat for chunks 2–6. Six paragraphs total.
-4. **Generate paragraph 1. Listen. Judge it on the audition line rules below** before generating 2.
-5. **Bad read → hit Regenerate, not Generate.** The button says *Regenerate* while a free re-roll
-   is left and shows how many remain. If it says **Generate**, you are about to be charged — you
-   changed the text or the voice.
-6. **One bad word → select just that word and regenerate it.** Do not re-read the paragraph.
-7. **Export per paragraph** into Premiere.
+1. **Text to Speech.** Voice = **Camping Narrator**. Model = **Eleven v3**.
+2. **Stability → the midpoint of the slider (Natural).** ⚠️ Not toward Robust: that is documented
+   as *"less responsive to directional prompts."* Not toward Creative: *"prone to hallucinations."*
+3. ⚠️ **There is no Similarity or Style control on v3** — the earlier "Similarity 75 · Style 0" in
+   this sheet was v2's settings. v3 exposes Stability, Language Override and Output Format only.
+   **Leave Language Override off.**
+4. **Output Format: MP3 44.1 kHz 128 kbps** is fine for a narration stem going into Premiere.
+5. **Paste chunk 1 alone. Generate. Listen.** Judge it on the rules below *before* chunk 2.
+6. **Bad read → Regenerate.** Free twice, then charged. ⚠️ **Do not touch the text** — an edit
+   forfeits both re-rolls for that chunk.
+7. **Download each chunk as its own file** as you accept it, and name it `chunk-N`.
+8. ⚠️ **Do not use "+ Add speaker."** That is v3's multi-speaker dialogue mode. This is one narrator.
+
+⚠️ **Three things forfeit a free re-roll:** editing the text, voice or model; **refreshing the
+page**; and **more than two hours** passing since the generation. So judge and re-roll a chunk in
+one sitting, and download before you walk away.
+
+⚠️ **The 250-character floor still binds.** ElevenLabs: *"very short prompts are more likely to
+cause inconsistent outputs. Encourage prompts greater than 250 characters."* ✅ Every chunk below
+clears it. 🔴 **Never paste a single line to fix a delivery** — *"Fuck me."* is nine characters.
+Re-roll the whole chunk and trim the audio.
 
 ## Three rules that decide the read
 
@@ -269,50 +287,23 @@ is 6 screening designs at a 150-char preview (900) plus one confirmation at 312.
 
 **Only *re*-generations are free. Every first generation is charged.**
 
+✅ **The voice is already built, so the 1,212 design spend is gone from this ledger.**
+
 | Step | Charged? | Cost |
 |---|---|---|
-| Six screening voice designs @ 150-char preview | 🔴 **Yes** | 900 |
-| One confirmation design @ 312-char preview | 🔴 **Yes** | 312 |
-| **Generating each of the six paragraphs, first time** | 🔴 **Yes** | **2,447** |
-| **Running total before a single repair** | | 🔴 **3,659 of 4,389** |
-| Re-rolling a paragraph, text and voice unchanged | ✅ No | 0, twice |
-| Re-rolling selected words, same conditions | ✅ No | 0, same allowance |
-| Third re-roll of the same paragraph | 🔴 Yes | 269–534 |
-| Any re-roll **after editing the text** | 🔴 Yes | full price — editing drops the converted status |
+| ~~Voice design~~ | ✅ **Already done** | 0 |
+| **Generating each of the six chunks, first time** | 🔴 **Yes** | **2,447** |
+| **Running total before a single repair** | | **2,447 of 4,389 — leaves 1,942** |
+| Re-rolling a chunk, nothing changed | ✅ No | 0, twice per chunk |
+| Third re-roll of the same chunk | 🔴 Yes | 269–534 |
+| Any re-roll **after editing the text** | 🔴 Yes | full price |
+| ⬜ *if the ending returns as chunk 8* | 🔴 Yes | +329, leaves 1,613 |
 
-**So the plan spends ~3,659 and leaves 730.** The free allowance is a *repair* budget, not a way to
-generate for nothing.
+🥇 **1,942 left, plus twelve free re-rolls.** That is a comfortable margin — roughly four paid
+re-reads of the longest chunk on top of the free ones. **Credits are not the problem.**
 
-### 🔑 Where the spend can actually come down
-
-**The 900 is the soft number, not the 2,447.** Voice Design charges the preview text **once per
-attempt and returns three voices for it**, so:
-
-| Screening attempts | Candidate voices | Cost | Leaves |
-|---|---|---|---|
-| 6 (the current plan) | 18 | 900 | 730 |
-| **4** | **12** | 600 | **1,030** |
-| 3 | 9 | 450 | 1,180 |
-
-⚠️ **Do not economise by shortening the script instead** — that is the part you cannot repair for
-free later, because editing text forfeits the re-rolls.
-
-### ⚠️ One conflict in ElevenLabs' own documentation, unresolved
-
-The [Studio help article](https://help.elevenlabs.io/hc/en-us/articles/30442535713937-Does-it-cost-credits-to-regenerate-in-Studio)
-and the [Studio docs](https://elevenlabs.io/docs/eleven-creative/products/studio) both say the two
-free regenerations apply **in Studio**. The older
-[announcement blog](https://elevenlabs.io/blog/two-free-regenerations) says the opposite: *"Free
-regenerations apply only to Speech Synthesis via the website, not in Projects or via API."*
-"Projects" is Studio's former name, so the blog is most likely stale — but it is not proof.
-
-🔑 **You do not have to resolve it before spending, because the UI tells you first.** The button
-says **Regenerate** when the re-roll is free and shows how many remain on hover; it says
-**Generate** when you are about to be charged. **Read the button every time. It is free to look.**
-
-⚠️ **Three things forfeit a free re-roll**, per the announcement blog: changing the text, voice or
-model; **refreshing the page**; and **more than two hours passing** since the original generation.
-So judge and re-roll a paragraph in the same sitting, not the next day.
+🔑 **Read the button before every re-roll.** It says **Regenerate** while a free one remains, and
+shows how many on hover; it says **Generate** when you are about to be charged. **Looking is free.**
 
 🔴 **What 730 does not cover is changing your mind about the words.** Every text edit forfeits that
 paragraph's free re-rolls and charges full price. **So settle the three content gaps before you
