@@ -146,15 +146,33 @@ Re-roll the whole chunk and trim the audio.
 
 ## Three rules that decide the read
 
-**1 · Almost no tags, and only ones that flatten.** 🔑 **Over-tagging is the single most
-recognisable tell of AI narration** — and ElevenLabs' own constraint is that **the voice must match
-the tag** (*"don't expect a whispering voice to suddenly shout with a `[shout]` tag"*).
+**1 · Tags — the Karen set, one per paragraph.** ⚠️ **Corrected 2026-09-03.** An earlier version of
+this sheet banned `[sarcastically]` and allowed only two tags in the whole script, arguing that
+[`docs/voice.md`](../../../voice.md)'s *"never signals a joke"* rule forbade them. 🔴 **That was my
+rule, not the house's.** [`../../karen/narration/script.md`](../../karen/narration/script.md) is the
+worked precedent, it uses five tags freely, and it is the one that worked.
 
-🔴 **`[sarcastic]` is banned here even though it exists.** [`docs/voice.md`](../../../voice.md) is
-explicit that this narrator **never signals a joke**; a tag that performs sarcasm is the satire trap
-wearing a TTS costume. The permitted set is the *anti*-performance tags only — `[understated]`,
-`[deliberate]`, `[drawn out]`, `[sighs]` — which push toward flat, which is the register. **One per
-chunk, maximum. Two are used in the whole script.**
+**The house set, copied from Karen's sheet:**
+
+| Tag | Job |
+|---|---|
+| `[understated]` | The workhorse. Deadpan, thrown away. Most of the jokes |
+| `[matter-of-fact]` | Stating a thing flatly that ought to be an outrage |
+| `[sarcastically]` | Used sparingly and only where the line is *already* sarcastic on the page |
+| `[deliberate]` | Slows a line that carries weight — a reveal, a fact |
+| `[drawn out]` | Stretches a beat for comic delay |
+| `[sighs]` | The one crack in the mask, chunk 8 only |
+
+🔑 **Karen's own rule, kept: one tag per paragraph, maximum.** Over-tagging is the most recognisable
+tell of AI narration, and ElevenLabs' constraint is that **the voice must match the tag** (*"don't
+expect a whispering voice to suddenly shout with a `[shout]` tag"*). 🔴 **Never `[shouts]`,
+`[excited]`, `[angry]`** — anything outside this narrator's range breaks him instantly.
+
+🔑 **Karen's parallel is exact and worth copying:** her sheet renders *"Nice train shot, though."* as
+its **own paragraph with `[matter-of-fact]`.** Camping's *"Nice tie, though."* now does the same.
+
+⚠️ **If a tag gets read aloud instead of performed** — it happens — delete that tag and let the
+punctuation carry the line.
 
 **2 · Strip the house VO markup — it is not for the TTS.**
 [`forms.md`](../../../story-craft/forms.md) marks pauses `/`, `//`, `///` and `[SIL n s]`. Those are
@@ -180,22 +198,28 @@ chunk, maximum. Two are used in the whole script.**
 
 ---
 
-## Chunk 1 — 2008 · 330 chars
+## Chunk 1 — 2008 · 363 chars
 
 ```
-Two thousand and eight. Meet Tarquin. Star trader on the NatWest floor, betting heavily on leveraged E.T.F.s. Pain infliction usually looks this banal. Uh. Nice tie, though.
+Two thousand and eight. Meet Tarquin. Star trader on the NatWest floor, betting heavily on leveraged E.T.F.s. Pain infliction usually looks this banal.
 
-Meet Bob. Standard middle-manager bloke. Getting away for a few days with his wife Jo, away from the financial stress of it all. Can you blame 'em, really.
+[matter-of-fact] Uh. Nice tie, though.
+
+Meet Bob. Standard middle-manager bloke. Getting away for a few days with his wife Jo, away from the financial stress of it all.
+
+[understated] Can you blame 'em, really.
 ```
 
-## Chunk 2 — 2026 · 389 chars
+## Chunk 2 — 2026 · 420 chars
 
 ```
-Twenty twenty-six. Tarquin runs the country's biggest private equity firm, the one that buys up social housing. The bastard looks very pleased with himself. He ditched the tie, at least.
+Twenty twenty-six. Tarquin runs the country's biggest private equity firm, the one that buys up social housing.
+
+[sarcastically] The bastard looks very pleased with himself. He ditched the tie, at least.
 
 Driving home from work, he spots this lot, and thinks: interest rates up one percent next week. You chaps are going to have a few more mates soon. Cannot wait for my bonus.
 
-It is a tad chilly, though.
+[understated] It is a tad chilly, though.
 ```
 
 ## Chunk 3 — Bob's tent · 269 chars
@@ -208,36 +232,38 @@ Bob spends his days in this oh-so-luxury tent, taking any charitable beer donati
 Fuck me.
 ```
 
-## Chunk 4 — therapy · 493 chars
+## Chunk 4 — therapy · 525 chars
 
 ```
 Tarquin sought professional help. He'd felt a feeling, first time since the devil's lettuce at uni.
 
-The therapist tries to explain that empathy for the homeless does not warrant an emergency appointment. It does not sink in.
+[matter-of-fact] The therapist tries to explain that empathy for the homeless does not warrant an emergency appointment. It does not sink in.
 
-So he gives up, and says there is no helping him. He needs the strongest psychedelic known to man to fix his car crash of a personality. Forgive the pun.
+So he gives up, and says there is no helping him. He needs the strongest psychedelic known to man to fix his car crash of a personality.
+
+[understated] Forgive the pun.
 
 Tarquin agrees that he needs to explore himself more. So he heads off to get supplies before his trip to Wales.
 ```
 
-## Chunk 5 — the car park · 432 chars
+## Chunk 5 — the car park · 459 chars
 
 ```
 Parks how he usually does. Bob is none too pleased.
 
-I'd say it's a Mexican standoff, but there are no stakes and no one gives a shit.
+[understated] I'd say it's a Mexican standoff, but there are no stakes and no one gives a shit.
 
 Bob's mind is thrown into a tailspin every time he sees those wank tanks, as he calls them. Four by fours. Most common vehicle in this car park.
 
-Tarquin locks on to a background figure. Not so much a wrestle with his conscience — just a small acknowledgement that it is in there... It being Bob.
+[deliberate] Tarquin locks on to a background figure. Not so much a wrestle with his conscience — just a small acknowledgement that it is in there... It being Bob.
 ```
 
-## Chunk 6 — Wales, and the newspaper · 534 chars
+## Chunk 6 — Wales, and the newspaper · 573 chars
 
 ```
 He heads off to Wales for this spiritual retreat. Before they hand over the ayawaska, they insist on meditation. Tarquin has never sat on a floor before.
 
-Safe to say it has kicked in...
+[drawn out] Safe to say it has kicked in...
 
 He's had enough, bless him. Time for bed.
 
@@ -245,9 +271,9 @@ Awoken by the sound of thunder, with his heart in his throat. Stepping out of th
 
 Warming his hands on the fire, Bob tries to calm him down. Tells him to pay attention to the date.
 
-Twenty thirty-one. Last one they ever printed.
+[deliberate] Twenty thirty-one. Last one they ever printed.
 
-He takes the news well. Excuse the pun.
+[understated] He takes the news well. Excuse the pun.
 ```
 
 ## ⬜ Chunk 8 — the ending. NOT in the draft, NOT to be rendered yet
@@ -258,14 +284,14 @@ He takes the news well. Excuse the pun.
 > rewritten, or get replaced.
 
 ```
-It's not the drugs. The headline says the machines took the jobs. It doesn't say who owns the machines. Same man who owns the flats.
+[deliberate] It's not the drugs. The headline says the machines took the jobs. It doesn't say who owns the machines. Same man who owns the flats.
 
 [sighs] Where the fuck have you been. You alright.
 
-The paper goes on the fire. Nobody says sorry; the cans do it. I know how this ends... I've never been sure about this bit. Watch what goes up.
-```
+The paper goes on the fire. Nobody says sorry; the cans do it.
 
----
+[understated] I know how this ends... I've never been sure about this bit. Watch what goes up.
+```
 
 ## The budget
 
@@ -292,15 +318,18 @@ is 6 screening designs at a 150-char preview (900) plus one confirmation at 312.
 | Step | Charged? | Cost |
 |---|---|---|
 | ~~Voice design~~ | ✅ **Already done** | 0 |
-| **Generating each of the six chunks, first time** | 🔴 **Yes** | **2,447** |
-| **Running total before a single repair** | | **2,447 of 4,389 — leaves 1,942** |
+| **Generating each of the six chunks, first time** | 🔴 **Yes** | **2,609** |
+| **Running total before a single repair** | | **2,609 of 4,389 — leaves 1,780** |
 | Re-rolling a chunk, nothing changed | ✅ No | 0, twice per chunk |
-| Third re-roll of the same chunk | 🔴 Yes | 269–534 |
+| Third re-roll of the same chunk | 🔴 Yes | 269–573 |
 | Any re-roll **after editing the text** | 🔴 Yes | full price |
-| ⬜ *if the ending returns as chunk 8* | 🔴 Yes | +329, leaves 1,613 |
+| ⬜ *if the ending returns as chunk 8* | 🔴 Yes | +357, leaves 1,423 |
 
-🥇 **1,942 left, plus twelve free re-rolls.** That is a comfortable margin — roughly four paid
-re-reads of the longest chunk on top of the free ones. **Credits are not the problem.**
+🥇 **1,780 left, plus twelve free re-rolls.** Comfortable — roughly three paid re-reads of the
+longest chunk on top of the free ones. **Credits are not the problem.**
+
+⚠️ **The tags cost 162 characters** across the six chunks (2,447 → 2,609). Worth it, and it is
+still budget it can afford.
 
 🔑 **Read the button before every re-roll.** It says **Regenerate** while a free one remains, and
 shows how many on hover; it says **Generate** when you are about to be charged. **Looking is free.**
@@ -346,6 +375,7 @@ Researched 2026-09-03. Every claim above that is marked with a quotation is from
 - [Text-to-speech best practices](https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices) — the >250-character stability floor
 - [Audio tags 101](https://elevenlabs.io/blog/v3-audiotags) — tag categories
 - [Audio tags: precision delivery control](https://elevenlabs.io/blog/eleven-v3-audio-tags-precision-delivery-control-for-ai-speech) — the pacing/emphasis tags (`[deliberate]`, `[drawn out]`, `[understated]`)
+- 🔑 **In-repo precedent: [`../../karen/narration/script.md`](../../karen/narration/script.md)** — the house tag set and the one-per-paragraph rule, proven on a finished film
 - [Models](https://elevenlabs.io/docs/overview/models) — **v3's 5,000-character limit**
 - [Stitching multiple requests](https://elevenlabs.io/docs/eleven-api/guides/how-to/text-to-speech/request-stitching) — 🔴 **"not available for the `eleven_v3` model"**
 - [ElevenCreative Studio](https://elevenlabs.io/docs/eleven-creative/products/studio) — v3 support, paragraph blocks, per-word regeneration, project limits
