@@ -233,6 +233,64 @@ If it has to stay synthetic — because the script will keep changing and re-rec
 then **Hume Octave at $14** is the one to move to, and the per-line acting instructions are worth
 more to this script than the voice design is.
 
+## 🔑 WHY KAREN WORKED AND CAMPING DID NOT (2026-09-03)
+
+**Jack: *"why did the custom voice work for Karen and not for camping — did I miss a setting?"***
+Two answers. The first is structural and is most of it. The second is three settings, and yes, they
+are probably wrong.
+
+### 1 · 🔑 Karen's target IS the model's default. Camping's is the opposite of it.
+
+[`../../karen/narration/voice.md`](../../karen/narration/voice.md) asks for **"Native American
+English. General American with a faint Western ease."** Camping asks for **thick working-class
+northern English.**
+
+**These models fall back to General American.** So every drift in Karen's design moved her *toward*
+what she was supposed to be — the failure mode was invisible because her target and the default are
+the same thing. **Every drift in camping's design moves it away from the target.** Karen was never a
+test of whether Voice Design holds an accent, because Karen never asked it to.
+
+🔴 **So "it worked for Karen" is not evidence the method works. It is evidence Karen was easy.**
+
+### 2 · Three settings, and ElevenLabs' docs say all three matter
+
+| Setting | What camping likely used | What the docs say | Verdict |
+|---|---|---|---|
+| **Guidance Scale** | Karen's **30%** is the number sitting in the more-familiar doc | 🔑 *"Higher values follow the prompt more rigidly… **High values: better for accent/tone accuracy when precision matters most.**"* | 🔴 **30% is the wrong end for an accent.** It cost Karen nothing because her accent was the default. It costs camping everything |
+| 🔴 **`Perfect audio quality.`** — the first words of camping's rung 1 | Present, at the front | *"Including these types of phrases **can sometimes reduce the accuracy of the prompt in general if the voice is very specific or niche.**"* And their own descriptor list is *Ok / Good / Very good / Excellent / Studio / Broadcast* — **"Perfect" is not on it** | 🔴 **A thick working-class northern English accent is exactly "specific or niche."** This phrase is probably buying dry audio at the cost of the accent |
+| **Preview text** | Unknown — if *"Generate Preview Text"* was left **on**, it is auto-written and accent-neutral | *"The preview text acts like a **performance script** — it sets the tone, pacing, and emotional delivery that the voice will attempt to match."* Longer is more stable | ⚠️ **Turn it OFF and paste the British-loaded 312-char text** below. An accent-neutral preview was already cause #5 in the MiniMax post-mortem |
+
+✅ **`thick` over `strong`** — the repo already had this right, and the docs confirm it.
+✅ **The word `accent`** is correct here, because we mean a regional dialect, which is the case
+their warning exempts.
+
+### 🔧 Corrected rung 1 — try this before cloning
+
+**Quality phrase removed, accent first and repeated at both ends, long enough to carry high
+guidance:**
+
+```
+A middle-aged man with a thick working-class northern English accent, from Manchester, England. Slow, unhurried and deadpan, landing every sarcastic line completely flat. Mid-range and nasal with a sandpaper rasp — never deep, never an announcer. Thick northern English accent throughout.
+```
+
+| Control | Set to | Why |
+|---|---|---|
+| **Guidance Scale** | 🔑 **45–50%**, not 30 | Accent accuracy is the entire problem, and the prompt above is long and detailed enough to carry it — *"longer, more detailed prompts handle higher guidance scales better."* Drop toward 40 only if it comes back robotic |
+| **Generate Preview Text** | 🔴 **OFF** | Paste the 312-char British-loaded text in "Preview texts" below |
+| **Loudness** | centre (0) | It bakes into the saved voice |
+
+**Cost: ~312 credits per attempt, and each attempt returns three voices.** Two attempts is 624 of
+4,057 — worth spending before falling back to a clone.
+
+⚠️ **If two corrected attempts still drift, stop and clone.** The ruling below stands, and the docs
+back it.
+
+### ✅ Confirmed while checking this: PVC does not work on v3
+
+Voice Design's own page: **"The v3 model does not currently support Professional Voice Clones."**
+So if a clone is made, it must be an **Instant Voice Clone** — which is what the section below
+already specifies.
+
 ## 🔴 RULED 2026-09-03 — the designed voice will not hold the accent. Clone the Suno take.
 
 **Symptom:** "Camping Narrator" is selected in the UI, Eleven v3 is selected, and the generation
