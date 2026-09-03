@@ -233,6 +233,70 @@ If it has to stay synthetic — because the script will keep changing and re-rec
 then **Hume Octave at $14** is the one to move to, and the per-line acting instructions are worth
 more to this script than the voice design is.
 
+## 🥇 THE WAY OUT (2026-09-03) — every route that works COPIES an accent. None invent one.
+
+**Jack: *"every free AI voice is awful, ElevenLabs doesn't work, Suno makes weird stuff, and I don't
+want to speak into a mic and convert it. Is there a solution I'm not seeing?"*** **Yes — two.**
+
+🔑 **First, the pattern behind every failure so far.** Suno, MiniMax and ElevenLabs Voice Design were
+all asked to **invent** a working-class northern English voice from a description. Every one of them
+averaged toward its training default and came back wrong. **Every route that has ever worked for a
+regional accent starts from a recording of a real person saying real words.** That is not a coincidence
+and it is not a tooling problem — it is what these models do.
+
+### 🔴 And the credits were never usable anyway
+
+**A Free-tier balance grants no commercial rights.** Third-party summaries of the terms are blunt:
+*"the free plan does not include commercial usage rights… you're barred from monetizing content made
+with it — no YouTube videos, no client work."* **BadCode publishes this film.** So the 3,688 credits
+were never spendable on it, whatever the accent had done. ⚠️ Verify against ElevenLabs' own terms
+before relying on this, but plan as if it is true.
+
+### 🥇 Option 1 — a real human. It is cheaper than a month of any subscription.
+
+| Route | Cost | Turnaround |
+|---|---|---|
+| **Fiverr, native Yorkshire / northern English** | **$40–60** for a script this length | **24 hours** |
+| Voquent / Voices.com / Voiceovers.co.uk | £100–£1000+, scaled by usage | 2–3 days, buys direction and a re-record |
+| **Someone we know, phone in a quiet room** | **£0** | Same day |
+
+🔑 **This page has recommended this three times since 2026-08-31 and it has never been tried.** It is
+**not slop by definition**, the accent is real, the licence is clean, and *"a native Sheffield human
+on Fiverr is cheaper than one month of any AI subscription."* **For a film whose narrator is the
+engine, $50 is the highest-leverage spend available.**
+
+### 🥈 Option 2 — the ElevenLabs Voice LIBRARY, which we never opened
+
+⚠️ **We have been *designing* voices when we could have been *picking* a real cloned one.** These are
+different products and only one of them works for accents.
+
+| | Voice **Design** (what we did) | Voice **Library** (untried) |
+|---|---|---|
+| What it is | A voice invented from a prompt | 🔑 **Professional Voice Clones of real people, "verified by a human"** |
+| Accent | Averaged toward the default — the whole failure | Real, because a real person had it |
+| Finding one | Describe and hope | ✅ *"When you select a language, the **Accent filter** will also become available"* |
+| Works on | v2 and v3 | 🔴 **v2 only** — *"the v3 model does not currently support Professional Voice Clones."* Jack is already on v2 |
+
+**Free to check right now:** Voices → Library → filter English → Accent → look for British / Northern.
+⚠️ Some library voices carry a **credit multiplier** (a 2× voice costs double), so read it before
+generating.
+
+### The one thing both options need
+
+🔑 **$6 Starter.** It carries the **commercial licence** the Free tier does not, plus **30,000
+credits — twelve full passes of this script** — and it unlocks Instant Voice Cloning. **It is the
+cheapest item in this entire investigation and it removes the licence problem, the credit problem and
+the Voice Library gate at once.**
+
+### What is NOT the answer
+
+- 🔴 **Another free local TTS.** Chatterbox and Qwen3 still need a clean reference clip and still
+  produce synthetic delivery. Jack has heard the tier and rejected it.
+- 🔴 **Speech-to-speech from Jack's own mic.** Explicitly rejected, and it inherits the same
+  synthetic quality.
+- 🔴 **More Suno rounds.** Fourteen rounds bought a voice, not a narration engine —
+  [`suno-narration.md`](./suno-narration.md): **Suno cannot make silence.**
+
 ## 🔴 CLOSED 2026-09-03 — ElevenLabs is abandoned for this narrator
 
 **Jack: *"it still did not fix the accent, I think we give up with ElevenLabs and move on."*** ✅
