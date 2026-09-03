@@ -83,21 +83,52 @@ the gap is visible — not as a decision.
 | **Style** | **0** | Style pushes performance. This narrator must never perform |
 | **Speed** | *not exposed on v3* | Pacing comes from punctuation and chunk structure |
 
-⚠️ **Ignore the widely-repeated advice to use SSML `<break/>` for pauses.** ElevenLabs' v3 doc is
-explicit: **"Eleven v3 does not support SSML break tags."** That advice is written for v2 and will
-either be read aloud or ignored.
+### ⚠️ Three pieces of common advice that are wrong for v3
 
-⚠️ **And ignore "drop stability to 50–60%".** That is the v2 numeric slider. v3's stability is a
-three-way choice, not a percentage.
+| Advice you will find | Why it is wrong here |
+|---|---|
+| *"Use SSML `<break/>` for exact pauses"* | ElevenLabs' v3 doc: **"Eleven v3 does not support SSML break tags."** It is v2 advice — the tag gets read aloud or ignored. Pauses come from the ellipsis and from the edit |
+| *"Drop stability to 50–60%"* | That is v2's numeric slider. **v3's stability is a three-way choice**, not a percentage. Natural |
+| *"Use request stitching to keep long narration continuous"* | 🔴 **"Request stitching is not available for the `eleven_v3` model."** This is exactly why the ruling above is Studio rather than six pastes |
 
-## 🔑 Three rules that decide the read
+## 🔑 RULED 2026-09-03 — build it in Studio, not the Speech Synthesis box
 
-**1 · Render one chunk at a time, in order.** ElevenLabs: *"very short prompts are more likely to
-cause inconsistent outputs. Encourage prompts greater than 250 characters."* ✅ Every chunk below
-clears 250. **Never split a chunk to fix one line** — you drop under the floor and the voice
-destabilises. Generate the whole chunk and trim the audio.
+⚠️ **This reverses the earlier "paste one chunk at a time" instruction.** Four documented facts
+decide it, and three of them were not checked before:
 
-**2 · Almost no tags, and only ones that flatten.** 🔑 **Over-tagging is the single most
+| Fact | Source | What it means here |
+|---|---|---|
+| **v3 takes 5,000 characters per generation** | [Models](https://elevenlabs.io/docs/overview/models) | The whole script is **2,447**. Chunking was never forced by a limit — earlier notes citing a 3,000 cap were wrong |
+| 🔴 **"Request stitching is not available for the `eleven_v3` model"** | [Request stitching](https://elevenlabs.io/docs/eleven-api/guides/how-to/text-to-speech/request-stitching) | Stitching (`previous_text`/`next_text`) is *the* mechanism that keeps prosody continuous across separate requests. **On v3 it does not exist.** So six separate pastes pay a drift cost with no fix available |
+| 🥇 **Two free regenerations per paragraph**, if text, voice and settings are unchanged | [Two free regenerations](https://elevenlabs.io/blog/two-free-regenerations) | This is the repair budget the 730-credit margin does not have |
+| 🥇 **Regenerate a paragraph — or just selected words** | [Studio](https://elevenlabs.io/docs/eleven-creative/products/studio) | One bad word costs nothing and does not touch the rest of the read |
+
+🔑 **So manual chunk-by-chunk is the worst of the three options:** it takes the drift risk of
+splitting *and* forfeits Studio's free re-rolls. **One Studio project. Six paragraphs. They are the
+six chunks below, unchanged.**
+
+⚠️ **The 250-character floor still applies — per paragraph.** ElevenLabs: *"very short prompts are
+more likely to cause inconsistent outputs. Encourage prompts greater than 250 characters."* Studio
+generates a paragraph at a time, so a paragraph is a generation. 🔴 **Do not let Studio's editor
+split these into their natural sentence paragraphs** — *"Fuck me."* alone is nine characters. **The
+blank lines inside each block below are line breaks within one paragraph, not paragraph breaks.**
+
+### The click-path
+
+1. **Studio → New project.** Project settings → **Model: Eleven v3**, voice = the saved camping
+   narrator, **Stability Natural · Similarity 75 · Style 0**.
+2. **Paste chunk 1 as one paragraph.** Confirm the editor shows **one** block, not four.
+3. Repeat for chunks 2–6. Six paragraphs total.
+4. **Generate paragraph 1. Listen. Judge it on the audition line rules below** before generating 2.
+5. **Bad read → hit Regenerate, not Generate.** The button says *Regenerate* while a free re-roll
+   is left and shows how many remain. If it says **Generate**, you are about to be charged — you
+   changed the text or the voice.
+6. **One bad word → select just that word and regenerate it.** Do not re-read the paragraph.
+7. **Export per paragraph** into Premiere.
+
+## Three rules that decide the read
+
+**1 · Almost no tags, and only ones that flatten.** 🔑 **Over-tagging is the single most
 recognisable tell of AI narration** — and ElevenLabs' own constraint is that **the voice must match
 the tag** (*"don't expect a whispering voice to suddenly shout with a `[shout]` tag"*).
 
@@ -107,7 +138,7 @@ wearing a TTS costume. The permitted set is the *anti*-performance tags only —
 `[deliberate]`, `[drawn out]`, `[sighs]` — which push toward flat, which is the register. **One per
 chunk, maximum. Two are used in the whole script.**
 
-**3 · Strip the house VO markup — it is not for the TTS.**
+**2 · Strip the house VO markup — it is not for the TTS.**
 [`forms.md`](../../../story-craft/forms.md) marks pauses `/`, `//`, `///` and `[SIL n s]`. Those are
 **executed in the edit**, by sliding the clip in Premiere. Only two marks survive into the box:
 `[sighs]` (a real v3 tag) and the **ellipsis**, which v3 documents as *"pauses and emphasis."*
@@ -234,17 +265,27 @@ is 6 screening designs at a 150-char preview (900) plus one confirmation at 312.
 | ⚠️ **Left, against 4,389** | — | **730** |
 | ⬜ *if chunk 8's ending comes back* | +329 | *leaves 401* |
 
-🔴 **730 is not a safety margin, it is one mistake.** Chunk 6 (534) plus chunk 3 (269) is already
-803 — the balance will not cover re-reading the two longest chunks. With the ending restored it
-falls to **401**, less than one re-read of chunk 6.
+✅ **730 is enough, because Studio's repairs are mostly free.** That was not true of the
+paste-a-chunk plan, and it is the second reason the ruling above went the way it did.
 
-🔑 **The fix is $6, and you need it anyway.** [`voice.md`](./voice.md) already rules it: **Starter
-is the cheapest plan carrying the Commercial License, and BadCode publishes this film** — a Free
-balance grants no commercial rights to the output at all. Starter is **30,000 credits, twelve full
-passes**, which ends the rationing entirely.
+| Repair | Cost in Studio |
+|---|---|
+| Re-roll a paragraph, text and voice unchanged | **0** — twice per paragraph |
+| Re-roll a few words inside a paragraph | **0**, same allowance |
+| Third re-roll of the same paragraph | Charged, 269–534 |
+| Any re-roll **after editing the text** | 🔴 Charged — editing drops the paragraph's converted status |
 
-⚠️ **So cutting words is not how you solve the credit problem.** Trimming 25 words saves ~140
-credits; the licence question is unsolved either way.
+🔑 **Twelve free regenerations across six paragraphs** is a far better repair budget than 730
+credits ever was. **730 then covers roughly two paid re-reads on top.**
+
+🔴 **What 730 still does not cover is changing your mind about the words.** Every text edit forfeits
+that paragraph's free re-rolls and charges full price. **So settle the three content gaps before
+you generate anything** — that is now the main way to waste this balance.
+
+⚠️ **The licence question is untouched by any of this.** [`voice.md`](./voice.md) rules it:
+**Starter ($6/month) is the cheapest plan carrying the Commercial License, and BadCode publishes
+this film.** A Free-tier balance grants no commercial rights to the output at all. 🔴 **Confirm the
+plan before generating** — credits are not the constraint any more; the licence is.
 
 ⚠️ **Whether v3 audio tags are billed as characters is unverified.** The counts above include them;
 it is 22 characters across the whole script.
@@ -272,7 +313,13 @@ there by sliding clips, per [`forms.md`](../../../story-craft/forms.md) — ever
 
 ## Sources
 
+Researched 2026-09-03. Every claim above that is marked with a quotation is from one of these.
+
 - [Prompting Eleven v3](https://elevenlabs.io/docs/best-practices/prompting/eleven-v3) — the tag list, the ellipsis/capitalisation rules, the three stability settings, "does not support SSML break tags", tag-voice matching
 - [Text-to-speech best practices](https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices) — the >250-character stability floor
 - [Audio tags 101](https://elevenlabs.io/blog/v3-audiotags) — tag categories
 - [Audio tags: precision delivery control](https://elevenlabs.io/blog/eleven-v3-audio-tags-precision-delivery-control-for-ai-speech) — the pacing/emphasis tags (`[deliberate]`, `[drawn out]`, `[understated]`)
+- [Models](https://elevenlabs.io/docs/overview/models) — **v3's 5,000-character limit**
+- [Stitching multiple requests](https://elevenlabs.io/docs/eleven-api/guides/how-to/text-to-speech/request-stitching) — 🔴 **"not available for the `eleven_v3` model"**
+- [ElevenCreative Studio](https://elevenlabs.io/docs/eleven-creative/products/studio) — v3 support, paragraph blocks, per-word regeneration, project limits
+- [Two free regenerations](https://elevenlabs.io/blog/two-free-regenerations) and [Does it cost credits to regenerate in Studio?](https://help.elevenlabs.io/hc/en-us/articles/30442535713937-Does-it-cost-credits-to-regenerate-in-Studio) — the free-re-roll allowance and what forfeits it
