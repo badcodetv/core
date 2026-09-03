@@ -81,6 +81,33 @@ Use pure tag format only when:
 
 ---
 
+## How Long the Style Box Should Be
+
+*Added 2026-09-01 from an external sweep during the Camping narration rounds. Practitioner-grade —
+four independent 2026 prompt guides agree, and it matches what our own rounds cost us.*
+
+**The character limit is a ceiling. The useful target is far below it.** The convergent external
+figure is **5–8 comma-separated tags, roughly 15–30 words**, with the warning that **more than ten
+tags produces conflicting signals** and that Suno then *averages* rather than commits.
+
+🔑 **The reason to care is debuggability, not quality.** *"Short prompts expose conflicts; long
+prompts hide them"* — when the box is short, changing one word makes an audible change you can
+attribute. When it is long, every word has pull and a bad take teaches you nothing. **Camping's
+narration spent nine rounds of adjective surgery inside an 80–105 word box** and could not tell which
+word was doing what; the diagnosis, when it came, was a single *noun* that had been there since
+round 1.
+
+**So when a prompt has failed several rounds running, cutting the box is a legitimate round of its
+own** — and the thing to cut is **duplication, not jobs**: a second pool word next to the first,
+negations that already sit in the Exclude box, and prose connectives. Keep one clause per axis
+(pool · speech act · pitch · texture · room · rhythm · attitude · bed · mix) and stop.
+
+⚠️ **Narration is the case where the ceiling bites hardest.** `lyricist-playbook.md` §3 prescribes a
+**minimal style box** for spoken delivery specifically, because every extra musical adjective is one
+more vote for a musical performance.
+
+---
+
 ## Order of Information Inside the Prompt
 
 Suno weights words at the beginning of the prompt more heavily. Lead with what matters most. The recommended ordering applies to both pure tag and hybrid formats:
@@ -461,7 +488,24 @@ I walk alone (in the night)
 
 Suno sings "I walk alone" as the lead vocal and "in the night" as a backing vocal or echo.
 
-**Exception — spoken word.** For narration, parentheses act as an *anchoring* device for the primary
+🔴 **Exception — spoken word. SUPERSEDED FOR NARRATION, 2026-09-01. Read the box below before you
+use the recipe that follows it.**
+
+> **Tested over ten Camping rounds:** the recipe below **produces a poem**, and it does so three
+> ways at once — `spoken word` is a performance-**poetry genre**, not a delivery mode; one bracketed
+> section per line is read as one *musical event* per line, which is the slam cadence drawn as a
+> page; and the parentheses triple-vote for declamation on top.
+>
+> **For a man TALKING, use `suno-voices.md` Thread 5 instead**: a **skit/interlude** pool word plus
+> `a man talking over a beat` in the Style box, the **whole poetry pool** in the Exclude box, and
+> **continuous prose paragraphs under one repeated `[Monologue]`** in the Lyrics box. The escalation
+> ladder below escalates the poison noun; the lateral ladder that replaces it is
+> **`[Monologue]` → `[Spoken Word Narration]` → `[Interlude]` → no label at all.**
+>
+> The recipe below is retained only for a **sung-adjacent Sprechgesang line inside a song** — a
+> single declaimed line in a musical context, which is what it was harvested from.
+
+For narration, parentheses act as an *anchoring* device for the primary
 spoken line, not a backing-vocal marker. The working recipe is a redundant word-cluster in the
 bracket plus the line itself in parentheses beneath it:
 
@@ -659,6 +703,50 @@ Right:
 ```
 piano, synths, vocals
 ```
+
+### 🔴 A ban is a CATEGORY vote, and the Exclude box can outvote the Style box
+
+*Tested 2026-09-01 on the Camping narration, and it cost two rounds.*
+
+The exclude box does not subtract one word. **It votes against the whole cultural family that word
+belongs to** — and because it is the box that grows every round and nobody re-reads, it quietly
+accumulates into a stronger statement than the Style box makes.
+
+**The worked case:** a Style box front-loaded with `Madchester skit, British, northern English` — 3
+British-coded words — kept generating an **American** vocal. The Exclude box held **37** British-coded
+bans, accreted over eleven rounds: British comedy (`music hall, panto, cabaret`), British class
+registers (`RP, BBC newsreader, posh`), three of the four strongest British-vocal pools
+(`grime MC, UK drill, road rap`), the whole guitar-band family — and, added in the same round as the
+Style-box fix, **`Madchester baggy`**. The pool's own signature was banned while the pool was being
+asked for, so the pool lost and the vocalist reverted to its default.
+
+**Three rules:**
+
+- 🔑 **Before blaming the Style box, count both boxes.** If the Exclude box holds more words from a
+  family than the Style box does, the Style box loses. One minute, and it reads exactly like the
+  Style box being ignored.
+- **Never ban a genre adjacent to the pool you are casting.** Banning `indie rock` to keep guitars
+  out of a `Madchester` prompt is banning Madchester.
+- **Prefer the positive form and take the instrument risk.** One clear `one dusty drum loop that
+  never changes` beats eight band bans — especially when the vocal is coming out as a stem, where an
+  unwanted band is an inconvenience and a wrong vocalist is a dead take.
+
+### ⚠️ The one documented exception: spoken narration keeps `no singing` in the Style box
+
+*Recorded 2026-09-01, and it is an open split rather than a ruling.*
+
+House doctrine above is that negations belong here and nowhere else. **Every field-tested narration
+template we can find breaks that rule**, ending the Style box with `voice-forward mix, no lead
+melody, no sung chorus` or `voice dominant, no singing, no chorus` — the Jack Righteous 2026 spoken
+narration workflow does it in all three of its worked examples.
+
+🔴 **And one 2026 guide contradicts it outright**, stating that Suno *"doesn't support 'don't do X'
+directly"* and that the fix is to over-specify what you do want until there is no room for what you
+don't.
+
+**Neither side is tested by us.** So: for narration only, carry the negation in **both** boxes, and
+treat the Style-box copy as **the first thing to delete** when a take is otherwise good — that
+deletion is a free experiment that settles the split. Write the answer back here.
 
 ### Strategy for full-song exclude prompts (Advanced Mode)
 
