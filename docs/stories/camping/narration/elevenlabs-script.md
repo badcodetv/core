@@ -265,22 +265,58 @@ is 6 screening designs at a 150-char preview (900) plus one confirmation at 312.
 | ⚠️ **Left, against 4,389** | — | **730** |
 | ⬜ *if chunk 8's ending comes back* | +329 | *leaves 401* |
 
-✅ **730 is enough, because Studio's repairs are mostly free.** That was not true of the
-paste-a-chunk plan, and it is the second reason the ruling above went the way it did.
+### 🔴 To be clear about what is charged — the click-path does spend credits
 
-| Repair | Cost in Studio |
-|---|---|
-| Re-roll a paragraph, text and voice unchanged | **0** — twice per paragraph |
-| Re-roll a few words inside a paragraph | **0**, same allowance |
-| Third re-roll of the same paragraph | Charged, 269–534 |
-| Any re-roll **after editing the text** | 🔴 Charged — editing drops the paragraph's converted status |
+**Only *re*-generations are free. Every first generation is charged.**
 
-🔑 **Twelve free regenerations across six paragraphs** is a far better repair budget than 730
-credits ever was. **730 then covers roughly two paid re-reads on top.**
+| Step | Charged? | Cost |
+|---|---|---|
+| Six screening voice designs @ 150-char preview | 🔴 **Yes** | 900 |
+| One confirmation design @ 312-char preview | 🔴 **Yes** | 312 |
+| **Generating each of the six paragraphs, first time** | 🔴 **Yes** | **2,447** |
+| **Running total before a single repair** | | 🔴 **3,659 of 4,389** |
+| Re-rolling a paragraph, text and voice unchanged | ✅ No | 0, twice |
+| Re-rolling selected words, same conditions | ✅ No | 0, same allowance |
+| Third re-roll of the same paragraph | 🔴 Yes | 269–534 |
+| Any re-roll **after editing the text** | 🔴 Yes | full price — editing drops the converted status |
 
-🔴 **What 730 still does not cover is changing your mind about the words.** Every text edit forfeits
-that paragraph's free re-rolls and charges full price. **So settle the three content gaps before
-you generate anything** — that is now the main way to waste this balance.
+**So the plan spends ~3,659 and leaves 730.** The free allowance is a *repair* budget, not a way to
+generate for nothing.
+
+### 🔑 Where the spend can actually come down
+
+**The 900 is the soft number, not the 2,447.** Voice Design charges the preview text **once per
+attempt and returns three voices for it**, so:
+
+| Screening attempts | Candidate voices | Cost | Leaves |
+|---|---|---|---|
+| 6 (the current plan) | 18 | 900 | 730 |
+| **4** | **12** | 600 | **1,030** |
+| 3 | 9 | 450 | 1,180 |
+
+⚠️ **Do not economise by shortening the script instead** — that is the part you cannot repair for
+free later, because editing text forfeits the re-rolls.
+
+### ⚠️ One conflict in ElevenLabs' own documentation, unresolved
+
+The [Studio help article](https://help.elevenlabs.io/hc/en-us/articles/30442535713937-Does-it-cost-credits-to-regenerate-in-Studio)
+and the [Studio docs](https://elevenlabs.io/docs/eleven-creative/products/studio) both say the two
+free regenerations apply **in Studio**. The older
+[announcement blog](https://elevenlabs.io/blog/two-free-regenerations) says the opposite: *"Free
+regenerations apply only to Speech Synthesis via the website, not in Projects or via API."*
+"Projects" is Studio's former name, so the blog is most likely stale — but it is not proof.
+
+🔑 **You do not have to resolve it before spending, because the UI tells you first.** The button
+says **Regenerate** when the re-roll is free and shows how many remain on hover; it says
+**Generate** when you are about to be charged. **Read the button every time. It is free to look.**
+
+⚠️ **Three things forfeit a free re-roll**, per the announcement blog: changing the text, voice or
+model; **refreshing the page**; and **more than two hours passing** since the original generation.
+So judge and re-roll a paragraph in the same sitting, not the next day.
+
+🔴 **What 730 does not cover is changing your mind about the words.** Every text edit forfeits that
+paragraph's free re-rolls and charges full price. **So settle the three content gaps before you
+generate anything** — that is the main way to waste this balance.
 
 ⚠️ **The licence question is untouched by any of this.** [`voice.md`](./voice.md) rules it:
 **Starter ($6/month) is the cheapest plan carrying the Commercial License, and BadCode publishes
