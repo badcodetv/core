@@ -1105,6 +1105,102 @@ a **Voice** trained on the same clip, used together. Minimum 6 files; upload the
 more times to build a model of one voice. Reserve it for when the voice is right and the drift is
 the only remaining problem.
 
+
+## 🥇 ROUND 14 — the WHOLE script, one generation (2026-09-03)
+
+✅ **Round 13 is validated.** It was logged ⬜ untested. **Jack has now heard it: *"it made something
+quite cool… I like this."*** So `Madchester monologue, Britpop snarl, Manchester, British` is the
+prompt of record, and 🔑 **`Britpop`, deleted at round 4 for summoning a guitar band, is rehabilitated
+— it came back at 13 and the take held.** The round-4 ruling is superseded.
+
+### 🔑 Why ONE generation, not six
+
+The opposite call from the ElevenLabs sheet, for a reason specific to Suno:
+
+| | |
+|---|---|
+| 🔴 **Suno drifts between generations** | Six takes is six different men. That drift is the reason narration left Suno in the first place. **One take is one voice, by construction** |
+| ✅ **It fits** | Lyrics box caps at **5,000 characters** on v4.5+/v5/v5.5. This script is **~2,450** |
+| ⚠️ **It is under the rushing threshold, but not by much** | Practitioner rule of thumb: *"~3,000 characters is the sweet spot before Suno starts to rush a song."* We are inside it — but this narration must be **unhurried**, so watch for rushing first, before anything else |
+| ✅ **The film cuts it apart anyway** | Every line is a cut point in Premiere, so a single long take costs nothing downstream |
+
+### ⚠️ Duration — aim ABOVE, because it will not stretch
+
+**~440 words at an unhurried ~135 wpm is roughly 200 seconds.** 🔴 **Set the duration slider to
+240s**, not 200 — [`suno-controls-and-workflows.md`](../../../suno-gpt/files/suno-controls-and-workflows.md)
+§5: *"the duration control reliably **shortens** but repeatedly **fails to stretch**."* The
+`suno-automation` rule is the same — **long trims; short is a reshoot.**
+
+🔴 **Two duration controls exist and only one works.** Advanced Mode's is the slider inside **More
+Options** (collapsed by default). The number input with Custom/Auto is the **Simple** panel's and is
+**not linked** — writing to it does nothing, silently.
+
+### The four boxes — paste in this order
+
+**1 · My Taste** *(Jack's round-13 block, unchanged)*
+
+```
+Vocals: one male voice, and he is TALKING — not singing, not reciting. A working-class Manchester man in his forties, telling you something across a table: mid-range, nasal and adenoidal, a sandpaper rasp on it, sneering and cocky. Hard flat northern vowels, dropped consonants, vowels leaned on and drooping at the ends of words. Close and dry right on the microphone. Free pacing — ordinary conversational speech, uneven sentence lengths, pausing where the meaning breaks and never on a bar, and his pitch swoops up inside a sentence and drops away at the end of it — never droning, never on one note. Bored, sarcastic and certain, giving nothing away, never signalling a joke. The voice stays loud and right in front the whole way through, never getting quieter. Music: one low ambient underscore underneath, no pulse and no rhythm and no drums of any kind, the same all the way through, no melody and no chords, nothing ever builds and nothing ever drops. Register: grim and funny, played completely straight.
+```
+
+**2 · Style** *(unchanged — 🔴 do not edit a prompt and its lyrics in the same round)*
+
+```
+Madchester monologue, Britpop snarl, Manchester, British, one man talking, not singing. Working-class Manchester lad in his forties. Mid-range voice, nasal and adenoidal, sandpaper rasp, sneering and cocky. Hard flat northern vowels, dropped consonants, vowels leaned on and drooping at the ends of words. Close and dry on the microphone. Free pacing, ordinary conversational speech, pausing where the meaning breaks and never on a bar. His pitch swoops up inside a sentence and drops away at the end of it. Bored, sarcastic, deadpan. Underneath, one low ambient underscore, no pulse and no rhythm, the same all the way through and never getting quieter. Voice loud and in front all the way, no singing, no melody.
+```
+
+**3 · Exclude Styles** *(unchanged)*
+
+**4 · Lyrics — the whole script, one `[Monologue]`, prose paragraphs**
+
+🔴 **The layout votes as hard as the words.** One label, repeated never; six paragraphs, not
+thirty-eight lines. *"Suno reads a line break as a phrase reset and a section break as a musical
+event, so one bracketed section per line IS the slam cadence drawn as a page."*
+
+```
+[Monologue]
+
+Two thousand and eight. Meet Tarquin. Star trader on the NatWest floor, betting heavily on leveraged E.T.F.s. Pain infliction usually looks this banal. Uh. Nice tie, though. Meet Bob. Standard middle-manager bloke. Getting away for a few days with his wife Jo, away from the financial stress of it all. Can you blame 'em, really.
+
+Twenty twenty-six. Tarquin runs the country's biggest private equity firm, the one that buys up social housing. The bastard looks very pleased with himself. He ditched the tie, at least. Driving home from work, he spots this lot, and thinks: interest rates up one percent next week. You chaps are going to have a few more mates soon. Cannot wait for my bonus. It is a tad chilly, though.
+
+Bob spends his days in this oh-so-luxury tent, taking any charitable beer donations he can get his hands on. I don't know what's worse. That his cause is so rarely supported. Or that the ones who do support it judge him for being an I.P.A. man. Fuck me.
+
+Tarquin sought professional help. He'd felt a feeling, first time since the devil's lettuce at uni. The therapist tries to explain that empathy for the homeless does not warrant an emergency appointment. It does not sink in. So he gives up, and says there is no helping him. He needs the strongest psychedelic known to man to fix his car crash of a personality. Forgive the pun. Tarquin agrees that he needs to explore himself more. So he heads off to get supplies before his trip to Wales.
+
+Parks how he usually does. Bob is none too pleased. I'd say it's a Mexican standoff, but there are no stakes and no one gives a shit. Bob's mind is thrown into a tailspin every time he sees those wank tanks, as he calls them. Four by fours. Most common vehicle in this car park. Tarquin locks on to a background figure. Not so much a wrestle with his conscience — just a small acknowledgement that it is in there. It being Bob.
+
+He heads off to Wales for this spiritual retreat. Before they hand over the ayawaska, they insist on meditation. Tarquin has never sat on a floor before. Safe to say it has kicked in. He's had enough, bless him. Time for bed. Awoken by the sound of thunder, with his heart in his throat. Stepping out of the tent, he spots an old newspaper. Warming his hands on the fire, Bob tries to calm him down. Tells him to pay attention to the date. Twenty thirty-one. Last one they ever printed. He takes the news well. Excuse the pun.
+```
+
+### What changed in the words, and why
+
+| Change | Why |
+|---|---|
+| **All ElevenLabs markup stripped** — `[understated]`, `<break time>` | Those are TTS controls. Suno would sing or speak them |
+| **`Safe to say it has kicked in.`** — ellipsis removed | Trailing ellipses are an ElevenLabs pause control. Suno gets its pauses from `free pacing` and full stops |
+| **Six chunks joined into six paragraphs** | Paragraph = phrase group. The chunk boundaries were an ElevenLabs credit-repair device and mean nothing here |
+| **Normalisation kept** — `Two thousand and eight`, `E.T.F.s`, `one percent`, `ayawaska` | Suno mispronounces raw numerals and initialisms the same way |
+| 🔴 **`Twenty thirty-one`** | The date is the reveal. `7da1604` fixed this once already |
+
+### Settings
+
+**v5.5** · Style influence **75** · Weirdness **run the pair at 30 and 60** · Duration **240s** ·
+Audio influence n/a. Name takes `camping-narration-full-A-w30` / `-w60`.
+
+### Judge it in this order — the first fault masks the rest
+
+1. 🔴 **Is he rushing?** The one new risk at this length. If yes, the fix is **not** a longer
+   duration — it is fewer words. Cut the ~25 dead words the ElevenLabs sheet names.
+2. **Does he drift** — accent, age or register — across three-plus minutes? This is the fault that
+   drove narration off Suno. If it drifts, the answer is chunking after all.
+3. **Is he talking, not reciting?** Rounds 1–13's whole war.
+4. **Accent.** The audition line is *"I'd say it's a Mexican standoff, but there are no stakes and
+   no one gives a shit."*
+
+⚠️ **Instrumental is discarded** — vocal stem only, three dots → Get stems → advanced split (§5). So
+judge the voice and ignore the bed entirely.
+
 ## 5. Getting the voice OUT — narration is a stem, not a track
 
 🔴 **Never generate the narration and the score together.** [`../../karen/narration/README.md`](../../karen/narration/README.md)
