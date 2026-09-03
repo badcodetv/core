@@ -1528,6 +1528,65 @@ after `underscore` was found banned while the Style box asked for one. **If you 
 narration, documentary voiceover`, check neither `audiobook`, `documentary` nor `voiceover` is
 banned.** (`movie trailer voice` and `epic narrator` are banned; plain `narration` is not.)
 
+
+## 🔑 SETTINGS — the pair has been running on the wrong axis (2026-09-03)
+
+**Jack: *"could the weirdness and style influence be messed with more?"*** ✅ **Yes, and this may be
+the largest untouched lever left.** Every round of this sheet has run the house pair — **weirdness 30
+and 60** — and that pair is built for *music*, where surprise is the point. **Narration is the
+opposite job.**
+
+### 🔴 Weirdness 60 is the creative setting, and "speeds up randomly" is what it sounds like
+
+| Source | On weirdness |
+|---|---|
+| [`suno-controls-and-workflows.md`](../../../suno-gpt/files/suno-controls-and-workflows.md) §1 | **0 = "maximum obedience. Use whenever you need an exact reproduction"** · **60–65 = "the creative sweet spot"** |
+| Suno's own help + practitioner guides | The scale runs **Safe → Chaos**. Low values give *"predictable, genre-accurate output"*; high values introduce *"unexpected instruments, **non-standard rhythms**, and surprising transitions"* |
+
+🔑 **"Non-standard rhythms" is the external documentation describing Jack's exact complaint.** A
+narration read must be *predictable* — that is the entire brief. **We have been asking for surprise
+in the one job that must not have any**, for sixteen rounds.
+
+⚠️ **One discrepancy, stated rather than resolved:** the repo says weirdness **50 is "effectively no
+randomness"**; external sources call 50 the *neutral midpoint of a Safe↔Chaos scale*, which is a
+weaker claim. **Either way 0 is safer than 60 here**, so the ruling does not depend on settling it.
+
+### 🥇 Style influence should go UP, because the prompt earned it
+
+§1: **75 is "the working default for a prompt you trust"**, 100 *"can over-tighten and degrade
+adherence"* — and the corpus's most-repeated tip is *"75, not 100."* **But the rule beside it is the
+one that applies:**
+
+> **"Push it up as your prompts get more specific — high style influence rewards good vocabulary and
+> punishes vague prose."**
+
+**This prompt is sixteen rounds of tested vocabulary.** External guidance agrees on where that lands:
+at **70–100%, "every tag is treated as a hard constraint."** 🔑 **A prompt whose every clause has
+been individually earned is exactly the case for pushing past 75.**
+
+### The ruling — pin weirdness, pair on style influence
+
+| | House default (used every round so far) | 🥇 **Narration setting** |
+|---|---|---|
+| **Weirdness** | pair at **30 / 60** | 🔴 **0, pinned. Not paired.** Maximum obedience |
+| **Style influence** | 75 | **pair at 75 / 90** |
+
+🔑 **The pair still runs — it just moves to the axis that matters.** Two takes:
+`camping-narration-C-si75-w0` and `-si90-w0`.
+
+⚠️ **Do not also jump to 100.** The corpus is consistent that 100 over-tightens and can *degrade*
+adherence, which would be a hard fault to diagnose on top of everything else. **90 first.**
+
+⚠️ **Sliders are Advanced/Studio only, and are reportedly absent on free-tier accounts.** If they are
+not visible, that is the reason.
+
+### Why this is worth a round on its own
+
+**It changes no words and no boxes.** Style, Exclude, My Taste and the lyrics are all untouched, so
+the round stays attributable — the sheet's own discipline: *"once an axis is confirmed right, freeze
+it."* If weirdness 0 fixes the random speeding-up, that is one setting doing what four rounds of
+prompt surgery could not.
+
 ## 5. Getting the voice OUT — narration is a stem, not a track
 
 🔴 **Never generate the narration and the score together.** [`../../karen/narration/README.md`](../../karen/narration/README.md)
