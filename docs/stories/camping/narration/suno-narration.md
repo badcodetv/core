@@ -1201,6 +1201,173 @@ Audio influence n/a. Name takes `camping-narration-full-A-w30` / `-w60`.
 ⚠️ **Instrumental is discarded** — vocal stem only, three dots → Get stems → advanced split (§5). So
 judge the voice and ignore the bed entirely.
 
+
+## 🔑 ROUND 15 — the layout was the brake, and I took it off (2026-09-03)
+
+**Jack on round 14: *"closer, but the voice sounds echo-ey and AI-ee, it talks too fast, and it does
+not pause at the end of sentences."*** Two different faults with two different owners.
+
+### 🔴 Fault 1 · Too fast, no sentence pauses — my error in round 14
+
+[`lyric-craft.md`](../../../suno-gpt/files/lyric-craft.md) §"Punctuation is the brake" states the
+mechanism outright:
+
+> **"Suno allocates a musical phrase per lyric *line*, then fits that line's syllables into it.
+> Delivery speed is a function of syllable density per line — not of any tempo instruction."**
+> **More syllables on one line → faster.** **No punctuation at all → a "wall of words" that gets
+> rushed.**
+
+🔴 **Round 14 put entire 60–90-word paragraphs on single lines.** Each paragraph became one musical
+phrase and Suno compressed it to fit. **The rushing was written into the layout**, and no Style-box
+word could have beaten it. Practitioner sources agree on the number: **"keep lines under 10–12
+words — longer lines get rushed regardless of punctuation."**
+
+⚠️ **And this looked like it was following the round-9 ruling, but it wasn't.** That ruling says the
+poem came from *"one line per **bracketed section**"* — many `[...]` labels making stanzas. It never
+said "no line breaks." **One label with line breaks inside it is a different thing from many labels.**
+
+🥇 **The fix, and the only change this round: uneven line breaks at meaning boundaries.**
+
+| | Round 14 | **Round 15** |
+|---|---|---|
+| Lines | 6 | **58** |
+| Words per line | **60–90** | **mean 7.6, range 2–15** |
+| Over 12 words | 6 of 6 | **1 of 58** |
+| Bracket labels | 1 | **1 — unchanged** |
+| Words | identical | **identical** |
+
+🔑 **Uneven is the point.** Even line lengths read as verse and bring the recital back; an uneven
+spread reads as speech. This is the sheet's own *"widen the sentence-length spread"* lever, applied
+to layout instead of prose.
+
+### ⚠️ Fault 2 · Echo — the POOL is wet, and the ban cannot reach it
+
+`reverb, echo` have been in the Exclude box for rounds and it still echoes. **That is the signature
+of an inert ban losing to a pool word**, which this sheet has now recorded four times.
+
+🔴 **`Madchester` and `Britpop` ARE reverb-drenched vocals.** That wash is the baggy production
+signature — it is not a defect the pool is adding by accident, it is what the pool *is*. And
+[`suno-voices.md`](../../../suno-gpt/suno-voices.md) is blunt that Exclude bans do not beat pool
+words.
+
+🔴 **So do NOT strip the pool to fix this.** `Madchester, Britpop` is what finally delivered the
+voice Jack likes after thirteen rounds. Removing it to chase a dry signal is the round-12 mistake in
+reverse — and this sheet already records what happens when you strip a clause without checking what
+it was holding up.
+
+🥇 **Fix it in post instead. The voice is right; the processing is wrong, and there is a tool for
+exactly that.**
+
+**Studio → right-click the clip → remove effects** → returns a **dry signal**. It works on imported
+audio as well as Suno's own, so the vocal stem can be stripped and re-processed to taste.
+⚠️ **Vendor-sourced (`suno-studio.md`), so this SHOULD work — it is not tested here.** Ten minutes
+settles it.
+
+**Order of operations:** three dots → Get stems → **advanced split** → keep the vocal stem →
+right-click → **remove effects**. The bed is being discarded anyway.
+
+### ⬜ "Are there Suno tags like ElevenLabs tags?" — honestly, no
+
+| | |
+|---|---|
+| `[Short Pause]`, `[Beat Transition]`, `[Musical Interlude]` | ⚠️ **Reported, never verified.** Suno publishes no tag list, so the whole vocabulary is folk knowledge. This toolkit's standing rule: **never promise a meta-tag will fire** |
+| **Line breaks, line length, punctuation** | ✅ **Tested, and the mechanism is understood.** This is Suno's real equivalent of an ElevenLabs audio tag, and it is more reliable than one |
+
+🔑 **The comma finding is tested by controlled A/B here:** a comma marks a **stress boundary**, and
+the delay is a side effect. Full stops give *"a complete break — full breath, pitch reset"*, which is
+precisely the *"pause at the end of sentences"* Jack is missing — and round 15 now has 58 of them
+doing that job instead of 6.
+
+### Lyrics — round 15. Same words, new layout.
+
+```
+[Monologue]
+
+Two thousand and eight.
+Meet Tarquin. Star trader on the NatWest floor,
+betting heavily on leveraged E.T.F.s.
+Pain infliction usually looks this banal.
+Uh. Nice tie, though.
+
+Meet Bob. Standard middle-manager bloke.
+Getting away for a few days with his wife Jo,
+away from the financial stress of it all.
+Can you blame 'em, really.
+
+Twenty twenty-six.
+Tarquin runs the country's biggest private equity firm,
+the one that buys up social housing.
+The bastard looks very pleased with himself.
+He ditched the tie, at least.
+
+Driving home from work, he spots this lot, and thinks:
+interest rates up one percent next week.
+You chaps are going to have a few more mates soon.
+Cannot wait for my bonus.
+It is a tad chilly, though.
+
+Bob spends his days in this oh-so-luxury tent,
+taking any charitable beer donations he can get his hands on.
+I don't know what's worse.
+That his cause is so rarely supported.
+Or that the ones who do support it judge him for being an I.P.A. man.
+Fuck me.
+
+Tarquin sought professional help.
+He'd felt a feeling, first time since the devil's lettuce at uni.
+The therapist tries to explain
+that empathy for the homeless does not warrant an emergency appointment.
+It does not sink in.
+
+So he gives up, and says there is no helping him.
+He needs the strongest psychedelic known to man
+to fix his car crash of a personality.
+Forgive the pun.
+
+Tarquin agrees that he needs to explore himself more.
+So he heads off to get supplies before his trip to Wales.
+
+Parks how he usually does.
+Bob is none too pleased.
+I'd say it's a Mexican standoff,
+but there are no stakes and no one gives a shit.
+
+Bob's mind is thrown into a tailspin
+every time he sees those wank tanks, as he calls them.
+Four by fours. Most common vehicle in this car park.
+
+Tarquin locks on to a background figure.
+Not so much a wrestle with his conscience —
+just a small acknowledgement that it is in there.
+It being Bob.
+
+He heads off to Wales for this spiritual retreat.
+Before they hand over the ayawaska, they insist on meditation.
+Tarquin has never sat on a floor before.
+Safe to say it has kicked in.
+He's had enough, bless him. Time for bed.
+
+Awoken by the sound of thunder, with his heart in his throat.
+Stepping out of the tent, he spots an old newspaper.
+
+Warming his hands on the fire, Bob tries to calm him down.
+Tells him to pay attention to the date.
+Twenty thirty-one. Last one they ever printed.
+
+He takes the news well. Excuse the pun.
+```
+
+**Everything else unchanged: My Taste, Style, Exclude, v5.5, duration 240s, pair at weirdness 30/60.**
+Name them `camping-narration-full-B-w30` / `-w60` — **B**, because the prompt revision letter
+advances when anything in the boxes changes, and the lyrics box did.
+
+### Judge round 15
+
+1. ✅ **Pace and sentence pauses** — the only thing that changed. If still rushed, cut words next, not duration.
+2. 🔴 **Did the recital come back?** The one risk of adding line breaks. If he starts reciting, the
+   answer is fewer, longer lines — not a return to paragraphs.
+3. **Echo** — expected to be unchanged. It is a post-production job, not a prompt one.
+
 ## 5. Getting the voice OUT — narration is a stem, not a track
 
 🔴 **Never generate the narration and the score together.** [`../../karen/narration/README.md`](../../karen/narration/README.md)
