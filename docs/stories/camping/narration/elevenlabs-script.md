@@ -1,6 +1,7 @@
 ---
 title: Camping — the narration script, optimised for ElevenLabs
-status: words are Jack's 2026-09-03 draft, optimised for synthesis — 3 content gaps open
+status: 🔴 ABANDONED 2026-09-03 — ElevenLabs could not hold the accent. The WORDS still stand;
+        the engine guidance below is post-mortem. See voice.md → "CLOSED 2026-09-03"
 model: Eleven v3
 voice: ✅ "Camping Narrator" — built and saved, confirmed in the UI 2026-09-03
 method: Text to Speech box, chunk by chunk (the Karen method)

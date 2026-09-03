@@ -233,6 +233,59 @@ If it has to stay synthetic — because the script will keep changing and re-rec
 then **Hume Octave at $14** is the one to move to, and the per-line acting instructions are worth
 more to this script than the voice design is.
 
+## 🔴 CLOSED 2026-09-03 — ElevenLabs is abandoned for this narrator
+
+**Jack: *"it still did not fix the accent, I think we give up with ElevenLabs and move on."*** ✅
+**Agreed, and the evidence below says it was never going to work.** Everything from here down is kept
+as the post-mortem, not as a plan.
+
+### What was tried, and what each attempt proved
+
+| Tried | Result |
+|---|---|
+| Voice Design → "Camping Narrator" → **v3** | Accent wrong |
+| Same voice → **Multilingual v2**, Similarity ~74, Style 0 | Accent still wrong |
+| Karen's tag set, break tags, corrected speed | Delivery levers. **None of them touch accent** |
+
+🔑 **Three independent findings all say the same thing, and they were available before any credits
+were spent:**
+
+1. **ElevenLabs' own troubleshooting** names the fix for accent drift as *"using an Instant Voice
+   Clone or a Professional Voice Clone"* — **not a designed voice.**
+2. **Similarity is defined as adherence to *"the original voice"*** — and a Voice Design voice has no
+   original recording, so the one control that would have held the accent had nothing to hold.
+3. **This page already ranked prompt-to-voice "Tier 3 — the weakest tier for accent"** on
+   2026-08-31, and listed five causes of exactly this drift.
+
+🔴 **And Karen was never evidence to the contrary.** Her brief asks for *"General American"*, which
+is the model's own fallback — so every drift moved her toward her target. **Karen never tested
+whether Voice Design holds an accent.**
+
+### What was learned that is worth keeping
+
+- **Voice Design cannot be trusted for a non-default accent.** Applies to any prompt-to-voice engine,
+  not just this one — the MiniMax post-mortem above reached the same conclusion independently.
+- **v2 and v3 are different tools.** v2 has Similarity, Speed, Style Exaggeration and `<break>`;
+  v3 has audio tags and none of those. **For a narrator whose problem is fidelity, v2 is the better
+  model** — worth remembering if we ever come back.
+- **`<break time="x.xs" />` works on v2 up to 3 seconds.** [`forms.md`](../../../story-craft/forms.md)
+  defers `//` and `///` to the Premiere edit because *"Suno cannot hit a timecode"* — that rationale
+  is engine-specific, and any engine with a break control can execute them in the read.
+- ⚠️ **Never settled:** whether v2 speaks or ignores `[understated]`. Not documented; Karen's takes
+  suggest ignored.
+
+### ➡️ Where this goes now — it is not back to square one
+
+**The [2026-09-01 ruling below still stands](#-ruled-2026-09-01--go-local-and-clone-the-suno-take),
+and it was made before ElevenLabs was tried.** Go local, clone round 13's Suno take — the one Jack
+called *"spot on"* — on **Chatterbox** (MIT) or **Qwen3-TTS** (Apache 2.0), both of which run on the
+4070.
+
+🥇 **The blocker that ruling had is gone.** It needed a reference clip of the right voice, and we now
+have one. **And cloning is exactly what ElevenLabs' own docs said the fix was** — we just do it
+somewhere free, unlimited, offline, and without the commercial-licence question that a Free-tier
+balance never resolved.
+
 ## 🔑 WHY KAREN WORKED AND CAMPING DID NOT (2026-09-03)
 
 **Jack: *"why did the custom voice work for Karen and not for camping — did I miss a setting?"***
