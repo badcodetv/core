@@ -340,12 +340,45 @@ The paper goes on the fire. Nobody says sorry; the cans do it.
 
 ## 🔊 The v2 chunks — paste these on Multilingual v2
 
-> **Use these, not the tagged ones above.** 🔴 **Multilingual v2 does not read audio tags — it speaks
-> them**, so every `[understated]` is gone. What replaces them is **`<break time="x.xs" />`**, which
+> **Use these, not the tagged ones above.** ⚠️ **Audio tags are a documented v3 feature**, so they are
+> removed here. 🔴 **What v2 actually DOES with a square-bracket tag — speak it or ignore it — is NOT
+> documented, and an earlier version of this sheet asserted "it speaks them" without a source. See
+> the open question below.** What replaces them is **`<break time="x.xs" />`**, which
 > is v2's *documented* pause control and works up to 3 seconds. ⚠️ *"Using too many break tags in a
 > single generation can cause instability. The AI might speed up, or introduce additional noises or
 > audio artifacts"* — so there are **one or two per chunk, at the comic beats only.** Delete any that
 > misbehave; the paragraph breaks still carry the rhythm.
+
+### 🔴 OPEN — did Karen's tags work on v2, and what does v2 do with a bracket?
+
+**Jack: *"we used tags for Karen and that was v2."*** ⚠️ **The repo cannot settle this.** Karen's
+[`voice.md`](../../karen/narration/voice.md), [`README.md`](../../karen/narration/README.md) and
+[`script.md`](../../karen/narration/script.md) all specify **Eleven v3** — but that is the *plan*.
+**Nothing anywhere records which model was actually used**, which is the same gap that hid the
+Camping Narrator's existence.
+
+| | Status |
+|---|---|
+| Audio tags are a **v3** feature | ✅ Documented |
+| `<break time="x.xs" />` works on **v2**, up to 3s | ✅ Documented |
+| v2 does not support **phoneme** tags | ✅ Documented |
+| 🔴 **What v2 does with `[understated]` — speaks it, or silently ignores it** | ❌ **Not documented anywhere I could find.** A search summary said *"would likely be read aloud"* — that is an inference, not a source |
+
+🔑 **Jack's own result is the strongest evidence available, and it points the other way:** if v2
+spoke the tags, Karen's takes would contain the audible word *"understated"*. They do not. **So on
+this account, v2 most likely ignores them silently** — in which case Karen's read was carried by the
+punctuation and paragraphing, and the tags were doing nothing.
+
+### Two free ways to settle it — spend nothing
+
+1. **History tab.** It records the **model** for every past generation. Open a Karen entry: it says
+   v2 or v3. That alone answers the question.
+2. **Listen to any Karen take** for an audible "understated" or "sarcastically."
+
+✅ **You do not need the answer before generating.** The v2 chunks below use **break tags only**,
+which are documented for v2 — so they are safe whichever way this falls. If History shows Karen ran
+on **v3**, the tagged chunks further up are the ones to use instead.
+
 
 ### v2 · Chunk 1 — 2008 · 374 chars
 
