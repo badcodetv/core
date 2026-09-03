@@ -35,16 +35,31 @@ same year the Shard already carries in scene 4, so the reveal revealed nothing."
 two-instance device and 2031 is spoken, not shown.** That line is the only place 2031 exists in the
 film.
 
-### 2 · 439 words against a 250–320 budget
+### 2 · 439 words — a pacing choice, not a hard limit
 
-[`narration-brief.md`](../narration-brief.md) sets the ceiling at **~155 words/minute**, *"and an
-authoritative voice sits under it"*, giving **≈250–320 words** — *"not 380, because three stretches
-are wordless."*
+⚠️ **Corrected 2026-09-03.** The 250–320 figure is not a wall. It is derived from
+`narration.mp3` being **150s**, and [`narration-brief.md`](../narration-brief.md) disclaims that
+file in the same breath: *"`narration.mp3` predates the whole production run. Treat 150s as the
+shape, not the target."*
 
-The draft is **439**. That is ~37% over, and it is the same overrun the 2026-09-01 audit found in
-the last draft (445). ⚠️ **Cutting is not a synthesis job** — but the lines most likely to go are
-the ones doing a job the picture already does: *"Stepping out of the tent, he spots an old
-newspaper"*, *"He heads off to Wales for this spiritual retreat"*, *"Time for bed."*
+🔑 **The brief's actual rule is "cut to the words, not the other way round."** So the script sets
+the film's length; the length does not cap the script.
+
+| | |
+|---|---|
+| Raw picture available | **272s** ([`edit-plan.md`](../edit-plan.md)) |
+| The 2026-08-30 edit plan's target | ~157s, chosen to match the **old** 150s narration |
+| **439 words at 155 wpm** (the ceiling) | **~170s** |
+| **439 words at ~135 wpm** (unhurried, which the brief wants) | **~195s** |
+
+**So the draft does not overrun the picture — it lengthens the film**, from a ~157s cut to roughly
+**175–200s**, and there is 272s of raw picture to draw on. The edit plan simply trims less.
+
+⚠️ **What it does cost is credits, and now that matters** — see the budget below.
+
+**If you do want it tighter**, the lines paying least are the ones the picture already tells:
+*"Stepping out of the tent, he spots an old newspaper"*, *"He heads off to Wales for this spiritual
+retreat"*, *"Time for bed."* Roughly 25 words, no joke lost.
 
 ### 3 · 🔴 The two beats that carry the politics are missing
 
@@ -210,17 +225,26 @@ The paper goes on the fire. Nobody says sorry; the cans do it. I know how this e
 ⚠️ **That is not the whole spend.** Voice Design is charged too — the plan in [`voice.md`](./voice.md)
 is 6 screening designs at a 150-char preview (900) plus one confirmation at 312.
 
+**Balance confirmed 2026-09-03: 4,389 credits.**
+
 | | Credits | Running |
 |---|---|---|
 | Designing the voice | 1,212 | 1,212 |
 | Chunks 1–6, once | 2,447 | 3,659 |
-| ✅ **Left, against 4,739** | — | **1,080** |
+| ⚠️ **Left, against 4,389** | — | **730** |
+| ⬜ *if chunk 8's ending comes back* | +329 | *leaves 401* |
 
-🔴 **1,080 is thinner than the last draft's margin** — it buys chunk 6 (532) plus chunk 4 (493) and
-nothing more. **Two full passes do not fit.** Render once, re-render only what fails.
+🔴 **730 is not a safety margin, it is one mistake.** Chunk 6 (534) plus chunk 3 (269) is already
+803 — the balance will not cover re-reading the two longest chunks. With the ending restored it
+falls to **401**, less than one re-read of chunk 6.
 
-🔑 **Settle the three content gaps first.** Rendering a 439-word script that is about to lose ~120
-words spends roughly 700 credits on lines that will not survive the cut.
+🔑 **The fix is $6, and you need it anyway.** [`voice.md`](./voice.md) already rules it: **Starter
+is the cheapest plan carrying the Commercial License, and BadCode publishes this film** — a Free
+balance grants no commercial rights to the output at all. Starter is **30,000 credits, twelve full
+passes**, which ends the rationing entirely.
+
+⚠️ **So cutting words is not how you solve the credit problem.** Trimming 25 words saves ~140
+credits; the licence question is unsolved either way.
 
 ⚠️ **Whether v3 audio tags are billed as characters is unverified.** The counts above include them;
 it is 22 characters across the whole script.

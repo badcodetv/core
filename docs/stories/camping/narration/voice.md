@@ -233,10 +233,12 @@ If it has to stay synthetic — because the script will keep changing and re-rec
 then **Hume Octave at $14** is the one to move to, and the per-line acting instructions are worth
 more to this script than the voice design is.
 
-## 🔑 THE RUN — ElevenLabs, new voice, 4,739 credits (2026-09-01)
+## 🔑 THE RUN — ElevenLabs, new voice, 4,389 credits (2026-09-03)
 
-**Jack's call: ElevenLabs, design a new voice. ✅ 4,739 credits is enough** — with a specific
-spending order. It is **not** enough to be casual: one careless second full pass eats the lot.
+**Jack's call: ElevenLabs, design a new voice.** ⚠️ **4,389 credits (confirmed 2026-09-03) is
+enough for exactly one pass and one repair** — and the script grew, so the margin is now thin
+enough that 🔑 **the $6 Starter plan below is the answer, not a spending order.** It is needed for
+the commercial licence regardless.
 
 🔑 **The paste-ready words live in [`elevenlabs-script.md`](./elevenlabs-script.md)** — the five
 chunks normalised, tagged and character-counted. This section is the *plan and the budget*; that
@@ -246,8 +248,9 @@ file is what goes in the box.
 
 | | Characters | Credits |
 |---|---|---|
-| **The whole script** (5 chunks, labels stripped, as rendered) | **2,256** | **2,256** |
-| chunk 1 · 2 · 3 · 4 · 5 | 334 · 549 · 317 · 322 · 734 | same |
+| **The whole script** (chunks 1–6 of `elevenlabs-script.md`) | **2,447** | **2,447** |
+| chunk 1 · 2 · 3 · 4 · 5 · 6 | 330 · 389 · 269 · 493 · 432 · 534 | same |
+| ⬜ chunk 8, if the ending comes back | +329 | 2,776 |
 
 🔑 **1 credit = 1 character** on **Eleven v3** and **Multilingual v2** — the two models worth using
 here. (Flash/Turbo are 0.5, but they are the latency models and this is narration.)
@@ -263,14 +266,15 @@ generating three samples for you."* ⚠️ **Preview text must be 100–1,000 ch
 |---|---|---|
 | **6 screening designs** @ a **150-char** preview | 900 | 900 |
 | **1 confirmation design** @ the full **312-char** preview, on the winning prompt | 312 | 1,212 |
-| **The whole script, once** | 2,256 | 3,468 |
-| ✅ **Left for re-reads** | — | 🥇 **1,271** |
+| **Chunks 1–6, once** | 2,447 | 3,659 |
+| ⚠️ **Left for re-reads, against 4,389** | — | **730** |
 
-**1,271 buys a re-read of chunk 5 (734) plus any one short chunk** — or all three short ones
-(334 + 317 + 322 = 973) with room over. It does **not** stretch to chunks 5 and 2 together (1,283).
-That is still a real safety margin.
+⚠️ **730 buys one long chunk again and one short one** — chunk 6 (534) plus chunk 3 (269) is
+already 803, so it does not even cover the two longest. 🔴 **And if the ending comes back as chunk 8
+(+329), the margin falls to 401** — less than a single re-read of chunk 6. **That is not a safety
+margin, it is one mistake.**
 
-🔴 **What does NOT fit: two full script passes.** 2 × 2,256 = 4,512, leaving **227** — not even one
+🔴 **What does NOT fit: two full script passes.** 2 × 2,447 = 4,894 — **more than the whole balance**, not even one
 design attempt. **So the discipline is: design cheaply, render once, re-render only the chunks that
 fail.** Never re-render the whole script to fix one line.
 
@@ -281,8 +285,8 @@ fail.** Never re-render the whole script to fix one line.
    full-length confirmation — but you do not pay 312 to reject something.
 2. 🔑 **Make the preview text the audition line.** The design preview *is* the test, so auditioning
    costs nothing extra. Both preview texts below already contain the audition line.
-3. **Render chunk by chunk, never the whole script in one go.** A bad chunk then costs 317–734 to
-   redo instead of 2,256. ⚠️ **Whether v3 audio tags are billed as characters is unverified** — we could
+3. **Render chunk by chunk, never the whole script in one go.** A bad chunk then costs 269–534 to
+   redo instead of 2,447. ⚠️ **Whether v3 audio tags are billed as characters is unverified** — we could
    not find it documented. The 2,256 above budgets as if they are; the script uses exactly one tag,
    9 characters.
 
@@ -359,13 +363,13 @@ set. Test the real profanity once on a short generation before committing the sc
 
 ### 🔴 Before spending anything: check the plan, not the balance
 
-**4,739 looks like a Free-tier remainder** (Free is 10,000 credits/month). If so, 🔴 **the output
+**4,389 looks like a Free-tier remainder** (Free is 10,000 credits/month). If so, 🔴 **the output
 carries no commercial licence and BadCode publishes this film.**
 
 🔑 **The fix is $6 and it removes the whole budget question:** **Starter — $6/month, 30,000 credits,
 and it is the cheapest plan that includes the Commercial License.** Thirty thousand credits is
-**thirteen full passes of this script.** If the balance shown is already a Starter balance, ignore
-this and run the plan above.
+**twelve full passes of this script**, which also ends the re-read rationing above. If the balance
+shown is already a Starter balance, ignore this and run the plan above.
 
 ### The order
 
@@ -374,7 +378,7 @@ this and run the plan above.
 3. If all eighteen drift American or posh, go **rung 2**, then **rung 3**. Do not add adjectives to rung 1.
 4. **One confirmation design** on the winner, 312-char preview. Save it.
 5. **Render chunk by chunk**, in order, listening to each before starting the next.
-6. **Re-read only the chunks that fail.** 1,271 credits of margin, so one long chunk and a short one.
+6. **Re-read only the chunks that fail.** 730 credits of margin — one long chunk and a short one, and nothing after that.
 7. 🔑 **Normalise before synthesis:** `E.T.F.s`, `I.P.A.`, `one percent`, `4 by 4's`, `Two thousand and eight`, `Twenty thirty-one`, `ayawaska`. Never after.
 
 ## 🔑 RULED 2026-09-01 — go local, and clone the Suno take
