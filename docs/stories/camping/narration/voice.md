@@ -233,6 +233,68 @@ If it has to stay synthetic — because the script will keep changing and re-rec
 then **Hume Octave at $14** is the one to move to, and the per-line acting instructions are worth
 more to this script than the voice design is.
 
+## 🔴 RULED 2026-09-03 — the designed voice will not hold the accent. Clone the Suno take.
+
+**Symptom:** "Camping Narrator" is selected in the UI, Eleven v3 is selected, and the generation
+still does not come back as the narrator.
+
+🔑 **The voice is not being ignored. The voice is wrong** — and ElevenLabs' own troubleshooting page
+says so in as many words:
+
+> **"Default/generated voices are primarily English and may carry an English accent."**
+> Documented fix for accent drift: **"Using an Instant Voice Clone or a Professional Voice Clone
+> trained on high-quality, consistent audio."**
+
+⚠️ **A "generated voice" is a Voice Design voice — exactly what THE RUN below builds.** So the
+platform's own guidance is that prompt-to-voice is the wrong tool for a specific regional accent,
+which is what this page already concluded twice from the other direction:
+
+- **§ Tier 3 — prompt-to-voice: "the weakest tier for accent."**
+- **§ 🇺🇸 → 🇬🇧 the accent fix:** five causes of American drift, none of which is a setting.
+
+### 🥇 The fix, and we already own the asset
+
+**[`suno-narration.md`](./suno-narration.md) round 13 is the take Jack called *"spot on"* — right
+accent, right age, right class, right attitude.** The 2026-09-01 ruling further down this page
+already said to clone it; it aimed the clip at *local* open-weights cloners because that was the
+cheap route. 🔑 **The same clip is an Instant Voice Clone in ElevenLabs, and IVC is the platform's
+own documented answer to accent drift.**
+
+```
+Round 13's Suno vocal stem  →  ElevenLabs Instant Voice Clone  →  Eleven v3
+=  the right accent, no music, no grid, no singing, and audio tags on top
+```
+
+### What the clip has to be
+
+| Requirement | Value | Source |
+|---|---|---|
+| Length | 🔑 **1–2 minutes.** 30s can work; **never exceed 3 minutes** — *"can, in some cases, even be detrimental"* | IVC docs |
+| Samples | Any number — *"the number of samples is irrelevant; what's important is the total run time"* | IVC docs |
+| Format | **MP3 192 kbps or above** | IVC docs |
+| Content | 🔴 *"no background noise, room reverb, or multiple speakers, at a consistent volume and tone"* | IVC docs |
+| Level | −23 to −18 dB RMS, true peak −3 dB | IVC docs |
+
+🔴 **Take it from the VOCAL STEM, never the mix** — three dots → Get stems → advanced split
+([`suno-narration.md`](./suno-narration.md) §5). *"The AI will mimic everything heard, including
+speed, inflections, accent, tonality, breathing pattern"* — which includes the drum loop if you
+leave it in.
+
+⚠️ **1–2 minutes is more than the 15 seconds the 2026-09-01 ruling called for.** That figure was
+sized for local cloners, which clone from 5–10s. **ElevenLabs wants a minute or two**, so take the
+longest clean continuous stretch of round 13, and stitch several clean stretches if one is short —
+the docs say sample count does not matter, only total runtime.
+
+✅ **No consent question.** The Suno voice is synthetic and generated on our own paid account.
+
+⚠️ **Unverified:** whether creating an IVC costs credits or only a voice slot. The IVC docs do not
+say. Budget as if it is free and check the balance after.
+
+### If the clone is still not right
+
+Then, and only then, go back to the Voice Design ladder in THE RUN below — rungs 1, 2, 3, in order,
+and do not add adjectives to rung 1.
+
 ## 🔑 THE RUN — ElevenLabs, 4,057 credits (2026-09-03). ✅ The voice is already built.
 
 ✅ **The voice exists — "Camping Narrator", confirmed in the UI 2026-09-03.** The repo never
