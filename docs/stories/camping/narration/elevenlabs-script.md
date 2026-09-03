@@ -95,6 +95,51 @@ the gap is visible — not as a decision.
 | *"Drop stability to 50–60%"* | That is v2's numeric slider. **v3's stability is a three-way choice**, not a percentage. Natural |
 | *"Use request stitching to keep long narration continuous"* | 🔴 **"Request stitching is not available for the `eleven_v3` model."** ⚠️ And it is **API-only** in any case — there is no stitching in either web screen, so it is not a reason to choose one over the other |
 
+## 🔑 MODEL CHOICE — v2 vs v3, and v2 is the better bet for camping (2026-09-03)
+
+**Jack was on Eleven Multilingual v2, not v3.** ⚠️ **That is not simply a mistake to undo.** The two
+models expose completely different controls, and v2's are the ones camping's problem needs.
+
+| | **Multilingual v2** | **Eleven v3** |
+|---|---|---|
+| 🔑 **Similarity** — *"how closely the AI should adhere to the original voice"* | ✅ **Yes** | 🔴 **No such control** |
+| 🔑 **Speed** — 0.7–1.2, and the brief wants **unhurried** | ✅ **Yes** | 🔴 **Not available** |
+| **Style Exaggeration** — 0 enforces "never perform" | ✅ Yes | 🔴 No |
+| **Audio tags** (`[understated]` etc.) | 🔴 **No — they get read aloud** | ✅ Yes |
+| **Request stitching** (prosody across chunks) | ✅ Yes | 🔴 *"not available for the `eleven_v3` model"* |
+| Characters per generation | 10,000 | 5,000 |
+| Professional Voice Clones | ✅ Yes | 🔴 *"does not currently support"* |
+
+🔑 **The trade is tags against voice fidelity, speed and continuity.** The reported fault is *"it is
+not doing the voice"* — and **Similarity is literally the control for that, and only v2 has it.**
+This sheet's own research says over-tagging is the AI-slop tell and punctuation does most of the
+work, so tags are the cheaper thing to give up.
+
+🔴 **If v2 is the model, every audio tag must come out of the chunks.** v2 does not read them; it
+speaks them. The tagged blocks below are the **v3** versions.
+
+### Jack's settings, judged
+
+From the 2026-09-03 screenshot, against ElevenLabs' *"most common setting is stability around 50,
+similarity around 75, and keeping style at 0"*:
+
+| Control | Set to | Verdict |
+|---|---|---|
+| **Similarity** | ~74 | ✅ Right |
+| **Stability** | ~48 | ✅ Right. Too low is *"overly random… speak too quickly"*; too high is *"monotonous"* |
+| **Style Exaggeration** | **0** | ✅ Right, and it is the register |
+| 🔴 **Speed** | **right of centre — faster than 1.0** | 🔴 **Wrong direction.** The brief wants unhurried. Drop to **0.9–0.95** |
+
+### ⚠️ But Similarity only bites on a clone
+
+*"The similarity slider dictates how closely the AI should adhere to **the original voice**."*
+🔑 **A Voice Design voice has no original recording** — it was generated from a prompt. So Similarity
+has far less to hold on to, which is why 74 did not rescue the read.
+
+🥇 **This is the third independent argument for the same conclusion:** clone round 13's Suno take as
+an **Instant Voice Clone**, then run it on **v2** with Similarity ~75. Then the slider has a real
+reference, the accent is one we already approved, and Speed and Style are there to shape it.
+
 ## 🔑 RULED 2026-09-03 — the Text to Speech box, chunk by chunk. The Karen method.
 
 ⚠️ **This replaces the Studio recommendation, which was wrong.** It rested on request stitching,
