@@ -91,7 +91,7 @@ the gap is visible — not as a decision.
 
 | Advice you will find | Why it is wrong here |
 |---|---|
-| *"Use SSML `<break/>` for exact pauses"* | ElevenLabs' v3 doc: **"Eleven v3 does not support SSML break tags."** It is v2 advice — the tag gets read aloud or ignored. Pauses come from the ellipsis and from the edit |
+| *"Use SSML `<break/>` for exact pauses"* | ⚠️ **Wrong for v3, RIGHT for v2 — and Jack is on v2.** *"Eleven v3 does not support SSML break tags"*, but v2 does, up to 3 seconds, and it is the **documented** pause control. An earlier version of this sheet told you to ignore this advice; that was correct only while we thought the model was v3. See the v2 chunks below |
 | *"Drop stability to 50–60%"* | That is v2's numeric slider. **v3's stability is a three-way choice**, not a percentage. Natural |
 | *"Use request stitching to keep long narration continuous"* | 🔴 **"Request stitching is not available for the `eleven_v3` model."** ⚠️ And it is **API-only** in any case — there is no stitching in either web screen, so it is not a reason to choose one over the other |
 
@@ -338,6 +338,85 @@ The paper goes on the fire. Nobody says sorry; the cans do it.
 [understated] I know how this ends... I've never been sure about this bit. Watch what goes up.
 ```
 
+## 🔊 The v2 chunks — paste these on Multilingual v2
+
+> **Use these, not the tagged ones above.** 🔴 **Multilingual v2 does not read audio tags — it speaks
+> them**, so every `[understated]` is gone. What replaces them is **`<break time="x.xs" />`**, which
+> is v2's *documented* pause control and works up to 3 seconds. ⚠️ *"Using too many break tags in a
+> single generation can cause instability. The AI might speed up, or introduce additional noises or
+> audio artifacts"* — so there are **one or two per chunk, at the comic beats only.** Delete any that
+> misbehave; the paragraph breaks still carry the rhythm.
+
+### v2 · Chunk 1 — 2008 · 374 chars
+
+```
+Two thousand and eight. Meet Tarquin. Star trader on the NatWest floor, betting heavily on leveraged E.T.F.s. Pain infliction usually looks this banal. <break time="0.7s" /> Uh. Nice tie, though.
+
+Meet Bob. Standard middle-manager bloke. Getting away for a few days with his wife Jo, away from the financial stress of it all. <break time="0.5s" /> Can you blame 'em, really.
+```
+
+### v2 · Chunk 2 — 2026 · 433 chars
+
+```
+Twenty twenty-six. Tarquin runs the country's biggest private equity firm, the one that buys up social housing. The bastard looks very pleased with himself. <break time="0.5s" /> He ditched the tie, at least.
+
+Driving home from work, he spots this lot, and thinks: interest rates up one percent next week. You chaps are going to have a few more mates soon. Cannot wait for my bonus.
+
+<break time="0.8s" /> It is a tad chilly, though.
+```
+
+### v2 · Chunk 3 — Bob's tent · 277 chars
+
+```
+Bob spends his days in this oh-so-luxury tent, taking any charitable beer donations he can get his hands on.
+
+I don't know what's worse. That his cause is so rarely supported. Or that the ones who do support it judge him for being an I.P.A. man.
+
+<break time="0.8s" /> Fuck me.
+```
+
+### v2 · Chunk 4 — therapy · 537 chars
+
+```
+Tarquin sought professional help. He'd felt a feeling, first time since the devil's lettuce at uni.
+
+The therapist tries to explain that empathy for the homeless does not warrant an emergency appointment. <break time="0.5s" /> It does not sink in.
+
+So he gives up, and says there is no helping him. He needs the strongest psychedelic known to man to fix his car crash of a personality. <break time="0.6s" /> Forgive the pun.
+
+Tarquin agrees that he needs to explore himself more. So he heads off to get supplies before his trip to Wales.
+```
+
+### v2 · Chunk 5 — the car park · 476 chars
+
+```
+Parks how he usually does. <break time="0.5s" /> Bob is none too pleased.
+
+I'd say it's a Mexican standoff, but there are no stakes and no one gives a shit.
+
+Bob's mind is thrown into a tailspin every time he sees those wank tanks, as he calls them. Four by fours. Most common vehicle in this car park.
+
+Tarquin locks on to a background figure. Not so much a wrestle with his conscience — just a small acknowledgement that it is in there... <break time="0.6s" /> It being Bob.
+```
+
+### v2 · Chunk 6 — Wales, and the newspaper · 577 chars
+
+```
+He heads off to Wales for this spiritual retreat. Before they hand over the ayawaska, they insist on meditation. Tarquin has never sat on a floor before.
+
+Safe to say it has kicked in...
+
+He's had enough, bless him. Time for bed.
+
+Awoken by the sound of thunder, with his heart in his throat. Stepping out of the tent, he spots an old newspaper.
+
+Warming his hands on the fire, Bob tries to calm him down. Tells him to pay attention to the date. <break time="1.0s" /> Twenty thirty-one. Last one they ever printed.
+
+<break time="0.8s" /> He takes the news well. Excuse the pun.
+```
+
+**v2 total: 2674 characters.** Against 3,688 that leaves **1014**, plus twelve free re-rolls.
+
 ## The budget
 
 **Chunks 1–6 are 2,609 characters = 2,609 credits.** Chunk 8 would add 357.
@@ -421,6 +500,9 @@ Researched 2026-09-03. Every claim above that is marked with a quotation is from
 - [Audio tags 101](https://elevenlabs.io/blog/v3-audiotags) — tag categories
 - [Audio tags: precision delivery control](https://elevenlabs.io/blog/eleven-v3-audio-tags-precision-delivery-control-for-ai-speech) — the pacing/emphasis tags (`[deliberate]`, `[drawn out]`, `[understated]`)
 - 🔑 **In-repo precedent: [`../../karen/narration/script.md`](../../karen/narration/script.md)** — the house tag set and the one-per-paragraph rule, proven on a finished film
+- [Best practices](https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices) — 🔑 **`<break time="x.xs" />` up to 3s on v2**, the instability warning, and the v3 punctuation alternatives being *"less consistent"*
+- [Do pauses and SSML phoneme tags work?](https://help.elevenlabs.io/hc/en-us/articles/24352686926609-Do-pauses-and-SSML-phoneme-tags-work-with-the-API) — 🔴 **Multilingual v2 does NOT support phoneme tags**, so pronunciation is bought by respelling (`E.T.F.s`, `ayawaska`) — which is what the normalisation rules already do
+- [Voice settings](https://elevenlabs.io/docs/speech-synthesis/voice-settings) — stability ~50, similarity ~75, style 0; Speed 0.7–1.2
 - [Models](https://elevenlabs.io/docs/overview/models) — **v3's 5,000-character limit**
 - [Stitching multiple requests](https://elevenlabs.io/docs/eleven-api/guides/how-to/text-to-speech/request-stitching) — 🔴 **"not available for the `eleven_v3` model"**
 - [ElevenCreative Studio](https://elevenlabs.io/docs/eleven-creative/products/studio) — v3 support, paragraph blocks, per-word regeneration, project limits
