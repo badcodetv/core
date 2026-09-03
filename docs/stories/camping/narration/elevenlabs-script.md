@@ -340,14 +340,21 @@ The paper goes on the fire. Nobody says sorry; the cans do it.
 
 ## 🔊 The v2 chunks — paste these on Multilingual v2
 
-> **Use these, not the tagged ones above.** ⚠️ **Audio tags are a documented v3 feature**, so they are
-> removed here. 🔴 **What v2 actually DOES with a square-bracket tag — speak it or ignore it — is NOT
-> documented, and an earlier version of this sheet asserted "it speaks them" without a source. See
-> the open question below.** What replaces them is **`<break time="x.xs" />`**, which
-> is v2's *documented* pause control and works up to 3 seconds. ⚠️ *"Using too many break tags in a
-> single generation can cause instability. The AI might speed up, or introduce additional noises or
-> audio artifacts"* — so there are **one or two per chunk, at the comic beats only.** Delete any that
-> misbehave; the paragraph breaks still carry the rhythm.
+> **Use these on Multilingual v2.** ✅ **Tags kept — Jack's call, 2026-09-03**, on the strength of
+> Karen having been generated on v2 with tags and working. That is direct evidence from the account
+> that matters, and it beats the undocumented inference this sheet briefly carried. **The tag set and
+> the one-per-paragraph density are Karen's.**
+>
+> 🥇 **Plus the thing Karen's sheet could not use:** **`<break time="x.xs" />`**, v2's *documented*
+> pause control, good to 3 seconds. Karen's sheet assumed v3, where SSML breaks do not work, so it
+> had to leave pauses to the edit. **On v2 the comic timing goes in the read.** ⚠️ *"Using too many
+> break tags in a single generation can cause instability — the AI might speed up, or introduce
+> additional noises or audio artifacts"*, so there are **at most two per chunk, at the biggest beats
+> only.**
+>
+> 🔴 **Chunk 1 is the test, and it is free to judge.** If you hear the word *"matter-of-fact"* spoken,
+> v2 does not take tags — delete every one and the punctuation carries it, exactly as before. If the
+> read simply lands flat and amused, tags work and nothing needs changing.
 
 ### 🔴 OPEN — did Karen's tags work on v2, and what does v2 do with a bracket?
 
@@ -380,90 +387,100 @@ which are documented for v2 — so they are safe whichever way this falls. If Hi
 on **v3**, the tagged chunks further up are the ones to use instead.
 
 
-### v2 · Chunk 1 — 2008 · 374 chars
+### v2 · Chunk 1 — 2008 · 363 chars
 
 ```
-Two thousand and eight. Meet Tarquin. Star trader on the NatWest floor, betting heavily on leveraged E.T.F.s. Pain infliction usually looks this banal. <break time="0.7s" /> Uh. Nice tie, though.
+Two thousand and eight. Meet Tarquin. Star trader on the NatWest floor, betting heavily on leveraged E.T.F.s. Pain infliction usually looks this banal.
 
-Meet Bob. Standard middle-manager bloke. Getting away for a few days with his wife Jo, away from the financial stress of it all. <break time="0.5s" /> Can you blame 'em, really.
+[matter-of-fact] Uh. Nice tie, though.
+
+Meet Bob. Standard middle-manager bloke. Getting away for a few days with his wife Jo, away from the financial stress of it all.
+
+[understated] Can you blame 'em, really.
 ```
 
-### v2 · Chunk 2 — 2026 · 433 chars
+### v2 · Chunk 2 — 2026 · 442 chars
 
 ```
-Twenty twenty-six. Tarquin runs the country's biggest private equity firm, the one that buys up social housing. The bastard looks very pleased with himself. <break time="0.5s" /> He ditched the tie, at least.
+Twenty twenty-six. Tarquin runs the country's biggest private equity firm, the one that buys up social housing.
+
+[sarcastically] The bastard looks very pleased with himself. <break time="0.5s" /> He ditched the tie, at least.
 
 Driving home from work, he spots this lot, and thinks: interest rates up one percent next week. You chaps are going to have a few more mates soon. Cannot wait for my bonus.
 
-<break time="0.8s" /> It is a tad chilly, though.
+[understated] It is a tad chilly, though.
 ```
 
-### v2 · Chunk 3 — Bob's tent · 277 chars
+### v2 · Chunk 3 — Bob's tent · 291 chars
 
 ```
 Bob spends his days in this oh-so-luxury tent, taking any charitable beer donations he can get his hands on.
 
-I don't know what's worse. That his cause is so rarely supported. Or that the ones who do support it judge him for being an I.P.A. man.
+[understated] I don't know what's worse. That his cause is so rarely supported. Or that the ones who do support it judge him for being an I.P.A. man.
 
 <break time="0.8s" /> Fuck me.
 ```
 
-### v2 · Chunk 4 — therapy · 537 chars
+### v2 · Chunk 4 — therapy · 547 chars
 
 ```
 Tarquin sought professional help. He'd felt a feeling, first time since the devil's lettuce at uni.
 
-The therapist tries to explain that empathy for the homeless does not warrant an emergency appointment. <break time="0.5s" /> It does not sink in.
+[matter-of-fact] The therapist tries to explain that empathy for the homeless does not warrant an emergency appointment. <break time="0.5s" /> It does not sink in.
 
-So he gives up, and says there is no helping him. He needs the strongest psychedelic known to man to fix his car crash of a personality. <break time="0.6s" /> Forgive the pun.
+So he gives up, and says there is no helping him. He needs the strongest psychedelic known to man to fix his car crash of a personality.
+
+[understated] Forgive the pun.
 
 Tarquin agrees that he needs to explore himself more. So he heads off to get supplies before his trip to Wales.
 ```
 
-### v2 · Chunk 5 — the car park · 476 chars
+### v2 · Chunk 5 — the car park · 503 chars
 
 ```
 Parks how he usually does. <break time="0.5s" /> Bob is none too pleased.
 
-I'd say it's a Mexican standoff, but there are no stakes and no one gives a shit.
+[understated] I'd say it's a Mexican standoff, but there are no stakes and no one gives a shit.
 
 Bob's mind is thrown into a tailspin every time he sees those wank tanks, as he calls them. Four by fours. Most common vehicle in this car park.
 
-Tarquin locks on to a background figure. Not so much a wrestle with his conscience — just a small acknowledgement that it is in there... <break time="0.6s" /> It being Bob.
+[deliberate] Tarquin locks on to a background figure. Not so much a wrestle with his conscience — just a small acknowledgement that it is in there... <break time="0.6s" /> It being Bob.
 ```
 
-### v2 · Chunk 6 — Wales, and the newspaper · 577 chars
+### v2 · Chunk 6 — Wales, and the newspaper · 595 chars
 
 ```
 He heads off to Wales for this spiritual retreat. Before they hand over the ayawaska, they insist on meditation. Tarquin has never sat on a floor before.
 
-Safe to say it has kicked in...
+[drawn out] Safe to say it has kicked in...
 
 He's had enough, bless him. Time for bed.
 
 Awoken by the sound of thunder, with his heart in his throat. Stepping out of the tent, he spots an old newspaper.
 
-Warming his hands on the fire, Bob tries to calm him down. Tells him to pay attention to the date. <break time="1.0s" /> Twenty thirty-one. Last one they ever printed.
+Warming his hands on the fire, Bob tries to calm him down. Tells him to pay attention to the date. <break time="1.0s" />
 
-<break time="0.8s" /> He takes the news well. Excuse the pun.
+[deliberate] Twenty thirty-one. Last one they ever printed.
+
+[understated] He takes the news well. Excuse the pun.
 ```
 
-**v2 total: 2674 characters.** Against 3,688 that leaves **1014**, plus twelve free re-rolls.
+**v2 total: 2741 characters.** Against 3,688 that leaves **947**, plus twelve free re-rolls.
 
 ## The budget
 
-**Chunks 1–6 are 2,609 characters = 2,609 credits.** Chunk 8 would add 357.
+**The v2 chunks are 2,741 characters = 2,741 credits.** Chunk 8 would add ~357.
 
 ⚠️ **That is not the whole spend.** Voice Design is charged too — the plan in [`voice.md`](./voice.md)
 is 6 screening designs at a 150-char preview (900) plus one confirmation at 312.
 
-**Balance confirmed 2026-09-03: 4,057 credits.**
+**Balance confirmed 2026-09-03: 3,688 credits.**
 
 | | Credits | Running |
 |---|---|---|
 | ~~Designing the voice~~ | ✅ already paid | 0 |
-| Chunks 1–6, once | 2,609 | 2,609 |
-| ✅ **Left, against 4,057** | — | **1,448** |
+| v2 chunks 1–6, once | 2,741 | 2,741 |
+| ✅ **Left, against 3,688** | — | **947** |
 | ⬜ *if chunk 8's ending comes back* | +329 | *leaves 401* |
 
 ### 🔴 To be clear about what is charged — the click-path does spend credits
@@ -475,15 +492,16 @@ is 6 screening designs at a 150-char preview (900) plus one confirmation at 312.
 | Step | Charged? | Cost |
 |---|---|---|
 | ~~Voice design~~ | ✅ **Already done** | 0 |
-| **Generating each of the six chunks, first time** | 🔴 **Yes** | **2,609** |
-| **Running total before a single repair** | | **2,609 of 4,057 — leaves 1,448** |
+| **Generating each of the six v2 chunks, first time** | 🔴 **Yes** | **2,741** |
+| **Running total before a single repair** | | **2,741 of 3,688 — leaves 947** |
 | Re-rolling a chunk, nothing changed | ✅ No | 0, twice per chunk |
-| Third re-roll of the same chunk | 🔴 Yes | 269–573 |
+| Third re-roll of the same chunk | 🔴 Yes | 291–595 |
 | Any re-roll **after editing the text** | 🔴 Yes | full price |
-| ⬜ *if the ending returns as chunk 8* | 🔴 Yes | +357, leaves 1,091 |
+| ⬜ *if the ending returns as chunk 8* | 🔴 Yes | +357, leaves 590 |
 
-🥇 **1,448 left, plus twelve free re-rolls.** Still comfortable — roughly two paid re-reads of the
-longest chunk on top of the free ones.
+✅ **947 left, plus twelve free re-rolls.** That is one paid re-read of the longest chunk (595) and
+the shortest (291) on top of the free ones. ⚠️ **Thinner than it was** — the tags and breaks cost
+294 characters over the bare script. Judge each chunk before starting the next.
 
 ⚠️ **The tags cost 162 characters** across the six chunks (2,447 untagged → 2,609). Worth it, and
 still budget it can afford.
