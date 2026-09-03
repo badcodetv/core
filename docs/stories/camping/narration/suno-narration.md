@@ -1673,6 +1673,92 @@ frozen is what makes this round attributable to the genre swap.
 4. 🔴 **Is the voice still right?** The known cost. If the accent has gone but he is finally talking,
    **that is progress, not failure** — accent is recoverable, delivery has not been.
 
+
+## 🥇 ROUND 18 — the accent, without naming the singer (2026-09-03)
+
+✅ **ROUND 17 IS THE BREAKTHROUGH.** Jack: ***"this has worked 10 times better than anything."***
+🔑 **Dropping the music genre entirely is the ruling of this whole sheet.** Seventeen rounds of
+adjectives could not do what deleting one word did. Record it as settled: **for narration, the genre
+slot takes a SPEECH form, never a music scene.**
+
+**Remaining fault: the accent, exactly as round 17 predicted it would be.**
+
+### 🔴 Why the accent went — it is §4c, on schedule
+
+**§4c: accent rides on the genre slot, and adjectives buy nothing.** Round 17 took `Madchester` and
+`Manchester` out of that slot and put `British` in — so the accent fell back to generic British.
+**This was written down as the cost before the round was run.**
+
+🥇 **The fix is not to bring the music pool back. It is to put Manchester into the strong slot
+as a modifier on the SPEECH form:**
+
+```
+British kitchen-sink drama narration   →   Manchester kitchen-sink drama narration
+```
+
+**Manchester is now in the genre position — where §4c says accent is decided — and it is still not a
+music genre.** That is round 17's logic extended rather than reversed.
+
+⚠️ **`Madchester` stays banned and `Manchester` is clear.** One is a music scene that sings; the
+other is a city. The Exclude box already makes that distinction and the grep audit confirms it.
+
+### 🔴 Liam Gallagher cannot be named, and does not need to be
+
+Jack asked for that voice specifically. 🔴 **Artist names do not go in the boxes** — Suno's content
+filter *"blocks silently and mislabels"*, and
+[`../../karen/narration/voice.md`](../../karen/narration/voice.md) sets the house method for exactly
+this: *"a blend of references, **none of which can be named to the engine** — descriptive traits
+steer better anyway."*
+
+🔑 **So the voice is specified by the mouth, per the sheet's own rule that articulation beats
+attitude.** What is new this round, and what each clause is buying:
+
+| Clause | What it is for |
+|---|---|
+| **`snarled through the nose`** | The defining quality. `nasal and adenoidal` was already there; the snarl is what sat on top of it |
+| **`Chin up, jaw jutted forward, mouth barely opening`** | Physical, not emotional — the posture that produces that sound |
+| **`drawn out and bent flat`** | The stretched, bent vowel |
+| **`Glottal stops, dropped T's and dropped H's`** | Manchester consonants, stated as articulation |
+| **`A curled lip on every line`** | The sneer as a mouth shape rather than a feeling |
+
+### What is deliberately NOT changed
+
+🔴 **Everything else is frozen** — Exclude box, lyrics, weirdness 0, style influence 75/90, duration.
+**One axis moves.** Round 17 proved the delivery works; the only question this round asks is whether
+the accent comes back without the delivery breaking.
+
+⚠️ **The Style box hit its 1,000-character ceiling** and two clauses were cut to fit, both because
+the new genre slot now supplies them free: `born and raised` (the city is in the genre word) and
+`uneven sentence lengths` (the round-16 lyric layout already does this). **Ceilings, not targets.**
+
+### 1 · My Taste
+
+```
+Vocals: one male voice, and he is TALKING — not singing, not rapping, not reciting. He is reading a story out loud the way an audiobook or a television documentary is read. A working-class Manchester man in his forties, born and raised there, telling you something across a table: mid-range, nasal and adenoidal, snarled through the nose, a sandpaper rasp on it, sneering and cocky. Chin up, jaw jutted forward, mouth barely opening. Hard flat Manchester vowels, drawn out and bent flat, leaned on and drooping at the ends of words. Glottal stops, dropped T's and dropped H's. A curled lip on every line. Recorded like a voice memo — close and dry right on the microphone, unproduced, no room and no echo on him at all. Free pacing — ordinary conversational speech, uneven sentence lengths, and every full stop is a real stop with a breath in it, pausing where the meaning breaks and never on a bar. His pitch swoops up inside a sentence and drops away at the end of it — never droning, never on one note. Bored, sarcastic and certain, giving nothing away, never signalling a joke. The voice stays loud and right in front the whole way through, never getting quieter. Music: one low ambient underscore underneath, no pulse and no rhythm and no drums of any kind, the same all the way through, no melody and no chords, nothing ever builds and nothing ever drops. Register: grim and funny, played completely straight.
+```
+
+### 2 · Style
+
+```
+Manchester kitchen-sink drama narration, audiobook narration, documentary voiceover. One man talking, not singing. Working-class man in his forties. Mid-range voice, nasal and adenoidal, snarled through the nose, sandpaper rasp, sneering and cocky. Chin up, jaw jutted forward, mouth barely opening. Hard flat Manchester vowels, drawn out and bent flat, leaned on and drooping at the ends of words. Glottal stops, dropped T's and dropped H's. A curled lip on every line. Voice memo quality, close and dry right on the microphone, unproduced, no room. Free pacing, ordinary conversational speech, pausing where the meaning breaks and never on a bar. Every full stop is a full stop and he stops at it. His pitch swoops up inside a sentence and drops away at the end of it. Bored, sarcastic, deadpan. Underneath, one low ambient underscore, no pulse and no rhythm, the same all the way through and never getting quieter. Voice loud and in front all the way, no singing, no melody.
+```
+
+### 3 · Exclude Styles — unchanged from round 17
+
+### 4 · Lyrics — unchanged from round 16
+
+### Settings — unchanged
+
+**v5.5 · Weirdness 0 · Style influence 75 and 90 · Duration 240s.** Name `-E-si75-w0` / `-E-si90-w0`.
+
+### Judge it
+
+1. 🔴 **Is he still talking?** If round 17's delivery has broken, `Manchester` in the genre slot has
+   pulled a music pool in with it after all — and the answer is to move it back to an adjective and
+   accept a weaker accent.
+2. **Is the accent Manchester rather than generic northern?**
+3. **Has the echo stayed away?** `voice memo quality` is doing that job and is untouched.
+
 ## 5. Getting the voice OUT — narration is a stem, not a track
 
 🔴 **Never generate the narration and the score together.** [`../../karen/narration/README.md`](../../karen/narration/README.md)
