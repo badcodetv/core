@@ -5,6 +5,60 @@
 > Karen's equivalent is [`../../karen/narration/voice.md`](../../karen/narration/voice.md) —
 > **a different narrator**, deliberately (see the last section).
 
+## ✅ RULED 2026-09-04 — the narrator exists, and it came from Hume Octave
+
+**Jack, after a day across two engines: *"got the voice."*** 🥇 **Hume Octave Voice Design produced
+it** — the register is a **pulp-horror-novelist narration**: portentous, gravelly, hammered
+emphasis, total sincerity, no self-awareness. The reference is described, never named.
+
+🔑 **This page picked Hume on 2026-08-31 and nothing tried it for four days.** It was ranked
+*"🥇 The pick"* in the prompt-to-voice survey below — accent in the prompt vocabulary, per-line
+acting instructions, and a 180-rater blind win over ElevenLabs Voice Design on **description-match**,
+which was always our exact failure. **ElevenLabs, Suno and Google AI Studio were all tried first.**
+
+### What worked, and it is short
+
+| | |
+|---|---|
+| **Engine** | Hume Octave → Voices → **Voice Design** |
+| **Prompt length** | 🔑 **~400 characters, three sentences.** The 954-character version under-performed — Hume's own examples are 1–3 sentences and the model *"interprets context holistically"*, not as a trait list |
+| **Structure** | Named character → role → personality → vocal qualities → delivery |
+| **The load-bearing idea** | **The low voice is an affectation** — a man performing gravitas he does not have. Not "make it deeper" |
+| **Sample text** | Octave reads meaning, so the audition text shapes the voice. Use the driest line in the script, never neutral filler |
+| ⚠️ **Never** | Markdown, emoji, symbols — *"unpredictable generations"* |
+
+### 🔴 THE LICENCE GATE — free-tier audio cannot ship
+
+**Hume's FAQ: *"Free and Starter plans are limited to non-commercial use only."*** 🔴 **This is the
+exact ElevenLabs trap this page caught late.** Do not render the film's narration on free credits.
+
+| Plan | Characters/month | Commercial |
+|---|---|---|
+| **Free** | 10,000 (~4 passes of the script) | 🔴 **No** — auditioning only |
+| 🥇 **Creator — $14/mo** (~$7 first month) | 140,000 | ✅ **Yes**, plus unlimited voice cloning |
+
+**The script is ~2,400 characters.** Audition on **one chunk**, not the whole thing, then upgrade
+before the take that gets used.
+
+### ⚠️ Premiere gotcha — Hume exports MONO, and Premiere would not display it
+
+**Found 2026-09-04.** The Octave download is **mono 48 kHz 16-bit**. Imported into `camping vid.prproj`
+it landed on A2 correctly by every API measure — right path, right length, not disabled — **and still
+showed red in the timeline.**
+
+🔑 **Fix: rewrite it as stereo.** Same samples duplicated to both channels, fresh RIFF header, no
+processing of any kind. It imported and displayed immediately.
+
+```
+Original : mono   · 48 kHz · 16-bit · 156.56s · peak -3.5 dBFS · 0 clipped samples
+Fixed    : stereo · 48 kHz · 16-bit · 156.56s · identical audio, rewritten header
+```
+
+**Two reasons it works:** a mono clip on a stereo track is the usual source of odd behaviour, and a
+new file forces Premiere to rebuild its `.cfa`/`.pek` conform cache rather than reuse one built from
+a partially-written or un-hydrated OneDrive file. ⚠️ **The project lives in OneDrive**, so
+Files-On-Demand placeholders are a standing suspect for any "media offline" in this project.
+
 ## 🔴 Higgsfield cannot design a voice from a prompt
 
 Higgsfield Audio is **presets + cloning only**. It bundles four engines — **Eleven v3, MiniMax
