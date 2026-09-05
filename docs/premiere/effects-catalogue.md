@@ -62,7 +62,7 @@ The look is near-black, one thin light, monumental. These are the tools that get
 | Want | Effect | Match name |
 | --- | --- | --- |
 | **Vignette** — darken the edges | Vignette | `AE.Impact_Vignette_FX` |
-| **Grain** | Noise | `AE.ADBE_Noise_FX` (legacy: `AE.ADBE Noise2`) |
+| **Grain** | Noise | 🔴 `AE.ADBE Noise2` — **`AE.ADBE_Noise_FX` is NOT installed**, see below |
 | **God rays / shafts of light** | Volumetric Rays | `AE.Impact_Volumetric_Rays_FX` |
 | Light leaks across the frame | Light Leaks | `AE.Impact_Light_Leaks_FX` |
 | Bloom on highlights | Wonder Glow · Echo Glow · Edge Glow | `AE.Impact_Wonder_Glow_FX` · `AE.Impact_Echo_Glow_FX` · `AE.Impact_Edge_Glow_FX` |
@@ -357,7 +357,26 @@ params and has 13 you would ever touch.
 | 15 | Opacity | 100 |
 | 16 | Master | 100 |
 
-### Noise — `AE.ADBE_Noise_FX` (23 params)
+### 🔴 Noise — the effect below is NOT on this machine. Use `AE.ADBE Noise2` (re-measured 2026-09-05)
+
+`premiere_list_effects({ query: "noise" })` returns exactly three effects, and `AE.ADBE_Noise_FX`
+is **not** one of them: `AE.ADBE Noise2` (Noise) · `AE.Mettle SkyBox Denoise` · `AE.Mettle SkyBox
+Fractal Noise`. The 23-param table below could not be reproduced and is kept only as a record of
+what a differently-configured install offered.
+
+**What is actually there — `AE.ADBE Noise2`, 3 params:**
+
+| Index | Param | Default | Note |
+| --- | --- | --- | --- |
+| 0 | Amount of Noise | 0 | 🔴 **0–100 PERCENTAGE, not 0–1.** 1 is invisible; **4 is a usable 1080p film grain** |
+| 1 | Noise Type | `true` | `false` = monochrome — what film grain wants |
+| 2 | Clipping | `true` | leave it |
+
+⚠️ **There is no Shadows/Midtones/Highlights split on this build**, so the "grain only in the
+shadows" idea below is not available — grain goes on whole and evenly. Applied at **4, mono,
+across all 39 clips of Camping** on 2026-09-05.
+
+### Noise — `AE.ADBE_Noise_FX` (23 params) · ⚠️ NOT INSTALLED HERE, see above
 
 | Index | Param | Default |
 | --- | --- | --- |

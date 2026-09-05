@@ -142,3 +142,80 @@ frame, both identities held. That was the unknown, and it is answered either way
 the last session and scene 9's extra footage may already cover them.
 `3a` (cut to black), `3c` (silence) and `5e` (narration) are not generations and never will be.
 `12b` and `12e` are struck.
+
+---
+
+## Premiere — grade, effects and markers pass (2026-09-05, by session over the bridge)
+
+**Project:** `Camping Comic/Camping Video NEW!/camping vid.prproj`
+**Sequence:** `camping assembly` — 1920×1080 @ **24fps**, **209.92s (3:29.9)**, 39 clips on V1
+**Scope:** Jack asked for exactly four things — effects, transitions, markers, grade — plus a
+ruling on music. Nothing else on the timeline was touched: **no clip was moved, trimmed, added or
+removed.**
+
+⚠️ **The map above is out of date.** The cut is now 39 clips / 209.9s, not 34 / 272s. Two clips
+that did not exist when it was written are in: **`0.mp4` = `1y`** (2008 foreshore, opens the film)
+and **`6.5.mp4` = `4y`** (2026 foreshore, at 27.79s, where `4a` was missing). Both verified by
+exported frame. Narration `narration/1-fixed.wav` (48 kHz stereo, **156.56s**) is laid on A2 in 13
+chunks and **every second of it is used** — source out-point 156.54s.
+
+### Applied
+
+| What | Where | Exactly |
+| --- | --- | --- |
+| **Grain** | 🔵 **all 39 clips** | `AE.ADBE Noise2` · param **0 = 4** (percentage), param **1 = false** (monochrome) |
+| **Night grade** | `v0:35` `v0:36` (`12a(i)`/`12a(ii)`) | `AE.ADBE Lumetri` · **14** Temperature −12 · **19** Exposure −0.8 · **20** Contrast +10 · **21** Highlights −20 · **22** Shadows −12 · **24** Blacks −8 |
+| **Vignette** | `v0:32`–`v0:37` (scenes 10–12) | `AE.Impact_Vignette_FX` · **4** Vignette 100 · **11** Feather 60 · **14** Chromatic Aberration 0 · **16** Master 35 |
+| **Fade up from black** | `v0:0` (`1y`) | Opacity (component 0, param 0) 0 @ 0.0s → 100 @ 0.75s, bezier |
+| **Fade to black** | `v0:38` (`12d`) | Opacity 100 @ 6.0s → 0 @ 7.96s, bezier |
+| **Markers** | 17, whole timeline | scene heads + `LAST NARRATION WORD` @ 197.21 + the `12d` pillarbox note |
+
+🔴 **Keyframe times above are CLIP-RELATIVE, not sequence time.** Sequence-time keyframes render
+nothing at all, silently — see [`api-notes.md`](../../premiere/api-notes.md).
+
+**Why grain is on every clip and not just the dark end:** it is a *delivery* requirement, not a
+look. 8-bit gives 256 steps, a dark gradient occupies a thin slice of them, and the steps show as
+banding after YouTube's encode; randomised noise breaks the step edge
+([`delivery.md`](../../video-fx/delivery.md) §near-black). Putting it only on scenes 10–12 would
+also have made a visible texture step at 168.04s. **Denoising a near-black sequence on the way out
+makes banding worse — never do it.**
+
+**Why the vignette stops at `v0:37`:** `v0:38` (`12d`) is still a pillarboxed 9:16 plate, so a
+vignette would darken the black bars rather than the picture. **It goes on once the tilt is built.**
+
+**Why no dissolves were added:** hard cuts are the register, and canon calls the `3a` crash a *cut*
+to black. Also mechanical — **13 clips sit at full source length, so they have no handles**; a
+dissolve on one of those is silently written as a single-sided frame-hold, which reads as a freeze.
+`AE.AE_Impact_Luma_Fade` (dissolve into black) is the one to reach for if we change our minds.
+
+**Verified by eye:** frame at **186s** exported and read — `12a` now reads night, fire is the key
+on both faces, shadows present and not crushed. Also read: 1.5s (`1y`), 31s (`4y`), 170s (`10a`),
+206s (`12d`).
+
+### 🎵 Music — ruled, and the answer is no
+
+**The "Camping" track is not missing from this cut; it has its own project** —
+`/mnt/d/badcode-videos/camping-music/camping.prproj`, Kai's hand cut, 236.4s.
+[`music-video.md`](./music-video.md) states plainly that it is *distinct from the story video*.
+**A3 stays empty and that is correct.**
+
+🔴 **What canon actually asks for here is sound design, and NONE of it is on the timeline:**
+
+- **Scene 3a, the crash** — `story.md` L325: *"Sound design carries this scene (impact, then
+  silence)."* L489: *"sound design only."* A1 and A2 are both silent across the 23.29–23.67 gap.
+- **Scene 12, the clink** — `narration-brief.md`: *"The clink is a sound cue, not a picture."*
+
+A score bed under the wordless stretches is **an open call for Jack**, not a canon one.
+
+### Needs a human
+
+- 🔴 **Audio crossfades.** 39 butt-cut clips on A1 with no dissolves anywhere. **There is no audio
+  transition API at all** — not a gap in our tools, a gap in Adobe's. Hand-drag Constant Power.
+- 🔴 **`scripts/delivery-qc.sh` cannot run: ffmpeg is not installed in this WSL.** Nothing ships
+  measured until it is. This is the film whose last render went out full-range with no colour tag.
+- 🟡 **The grade was judged on exported frames, not scopes** — no UXP API exposes Lumetri Scopes.
+  Eyeball it in the program monitor; `delivery.md` is blunt that a dark frame must never be
+  eyeballed alone, so the rendered-file check is the real gate.
+- 🟡 **Grain at 4 is a starting value.** One `premiere_set_param` per clip to change it.
+- ⬜ **Not saved by the session** — every change is its own `BadCode:` undo entry, so review then
+  save, or step back through them.
