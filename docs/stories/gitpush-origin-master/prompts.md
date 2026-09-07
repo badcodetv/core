@@ -162,7 +162,7 @@ one place — this table. Reordering the film is a table edit, not a rename.
 | 13 | `coin-lands` | 🔒 **TOTEM PAYOFF** | 16 | ⬜ prompted, unfired |
 | 14 | `experiments` | humans in the chair at last | 17 | ⬜ prompted, unfired |
 | 15 | `ledger` | the cost ledger and the choice | 18 | ⬜ not prompted — §5 register |
-| 16 | `crossing` | the lamps go out across the frame | 19 | ⬜ prompted, unfired |
+| 16 | `crossing` | the lamps go out across the frame, and do not come back | 19 | ⬜ prompted (**2 plates** — `crossing`, `crossing-after`), unfired |
 | 17 | `now` | the snap back to this year | 20 | ⬜ prompted, unfired |
 
 **Deferred, not cut:** `handover-ladder` (canon 5 — the green ✓ and its three rungs). Two reasons,
@@ -208,9 +208,11 @@ unfired cut; cuts 1–5 and the frozen narration for cuts 1–4 are untouched.*
 | **14** `experiments` | 17 | The bet clause (*"I can't prove that last part. I bet everything I had on it anyway."*) and the shortcut beat (*"It doesn't stack. It doesn't aim. It settles."*). | free — unfired |
 | **15** `ledger` | 18 | The why (a choice, not physics); the price (*"It takes all of it… The push spends the pusher."* — R11); **ninety-nine**; the no; the Carrier's line extended (*"Including the one who said no"*). Ledger item 2 reads *it cannot un-happen what happened.* | free — not yet prompted |
 | **16** `crossing` | 19 | One figure mid-hall beside a lamp that is not lit; two lights — **theirs do not come back** (R11), the machine's goes out once. **A second plate** for the last image: the dark hall and one lamp. Prompt amended in §3, `crossing-after` added. | free — unfired; one extra still |
+| **17** `now` | 20 | One clause added to the single sincere turn, naming the cost the ninety-nine paid (*"They gave up the only now they had."* — R11). **Picture unchanged**; VO only. | free — unfired |
 
-**Unchanged by these rulings:** cuts 1–5, 7–11 and 17; the songs; the frozen narration; the
-register drift; the coin's totem lock (cuts 8/13); the cut order; every asset id.
+**Unchanged by these rulings:** cuts 1–5 and 7–11; the songs; the frozen narration; the
+register drift; the coin's totem lock (cuts 8/13); the cut order; every asset id. **Every cut R11
+touches (15, 16, 17) is unfired**, and cut 16's second plate is the only new generation in the pass.
 
 ---
 
