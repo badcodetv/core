@@ -1332,3 +1332,210 @@ frames and the new one is not. A non-zero diff across the change is correct. Ver
 the picture, not by diffing against the old render.
 
 🔑 **Back the `.prproj` up first.** It is one `cp` and the project lives outside git.
+
+---
+
+## 🔴 `premiere_export_frame` writes `.png.png` and then polls for `.png` `[observed 2026-08-30]`
+
+**Symptom: a 120-second wait, then `EXPORT_FAILED — "Premiere reported success but nothing
+appeared at …/frames/<seq>-<time>s.png within 120s"` — and the frame is there all along.**
+
+The bridge appends the format extension to a filename that already carries one. So a default
+export of `camping assembly` at 268s lands at:
+
+```
+frames/camping assembly-268s.png.png     ← what is written
+frames/camping assembly-268s.png         ← what is polled for, forever
+```
+
+**The export itself worked.** Premiere's "success" was true; the wait was looking at the wrong
+path. The failure mode is expensive because it is a **silent 120-second block per call** and it
+reads like a render failure or a missing-media problem, which sends you off checking `mediaPath`
+and output-directory permissions — neither of which is wrong.
+
+**Workarounds until it is fixed, cheapest first:**
+
+1. **Just read the doubled path.** `ls` the frames directory — the file is sitting there. This is
+   the whole fix in practice.
+2. **Pass an `outPath` with no extension**, so the appended one lands correctly.
+
+⚠️ **Do not conclude a frame export failed from the error alone.** Check the directory first.
+Two exports were reported as failures here and both had rendered correctly.
+
+*(The tool's own description says `waitForStableFile` guards this; it guards the wrong filename.)*
+
+---
+
+## 🔴 There is NO adjustment-layer API anywhere in `ppro` (2026-09-05)
+
+Measured while grading Camping, where the obvious move was *one adjustment layer on V2, grade it
+once* instead of touching 39 clips.
+
+**It does not exist.** Enumerated live from the panel:
+
+- `Project`'s prototype: `getActiveSequence` · `setActiveSequence` · `createSequence` ·
+  `createSequenceFromMedia` · `getColorSettings` · `deleteSequence` · `getInsertionBin` ·
+  `openSequence` · `importSequences` · `importAEComps` · `importAllAEComps` · `importFiles` ·
+  `close` · `save` · `saveAs` · `getSequence` · `getSequences` · `getRootItem` · `pauseGrowing`.
+  **No `createAdjustmentLayer`, no synthetic/colour-matte/transparent-video creator of any kind.**
+- `ProjectUtils`: `getSelection` · `getProjectViewIds` · `getProjectFromViewId` ·
+  `getSelectionFromViewId`. Nothing.
+- `SequenceUtils`: `performSceneEditDetectionOnSelection` and three operation constants. Nothing.
+- The 60-odd exports on `ppro` contain no `AdjustmentLayer`, `SyntheticImport`, `ColorMatte` or
+  `TransparentVideo` type.
+
+**So a whole-timeline grade is either per-clip, or a hand-over.** The cheap hand-over: ask the
+human for **File ▸ New ▸ Adjustment Layer**, then `premiere_insert_clip` it onto V2 and grade it
+once. That is one GUI action against 39 × 2 transactions, and it is the right trade.
+
+## 🔴 `ppro.VideoFilterFactory.createComponent()` throws from `premiere_eval` (2026-09-05)
+
+Trying to batch effect application through eval — to avoid 39 round trips — fails at the factory:
+
+```js
+const comp = ppro.VideoFilterFactory.createComponent("AE.ADBE Noise2")   // Illegal Parameter type
+```
+
+`VideoFilterFactory` exposes `createComponent` · `getMatchNames` · `getDisplayNames`, and the
+match name is definitely valid (`premiere_list_effects` returns it and `premiere_apply_effect`
+applies it happily). The signature it actually wants was not determined.
+
+✅ **Good news, and the reason this cost nothing: the failure is CLEAN.** After the throw, a
+read-only sweep of all 39 clips' component chains showed **no partial state** — no half-applied
+effect on any clip in the intended batch. The transaction never opened.
+
+**Use `premiere_apply_effect` for effects, and take the round trips.** It also accepts `params`
+inline, so it is one call per clip, not two.
+
+## ⚠️ `AE.ADBE_Noise_FX` does not exist on this machine — it is `AE.ADBE Noise2` (2026-09-05)
+
+[`effects-catalogue.md`](./effects-catalogue.md) lists grain as `AE.ADBE_Noise_FX` with
+`AE.ADBE Noise2` as a legacy alternative, and tabulates 23 params for it.
+
+**`premiere_list_effects({ query: "noise" })` returns three effects and `AE.ADBE_Noise_FX` is not
+among them:** `AE.ADBE Noise2` (Noise) · `AE.Mettle SkyBox Denoise` · `AE.Mettle SkyBox Fractal
+Noise`. The one that exists has **3 params, not 23**:
+
+| Index | Param | Default | Note |
+| --- | --- | --- | --- |
+| 0 | Amount of Noise | 0 | 🔴 **0–100 as a PERCENTAGE, not 0–1.** Measured: 1 renders as invisible, 4 is a usable film grain at 1080p |
+| 1 | Noise Type | `true` | `false` = monochrome, which is what film grain wants |
+| 2 | Clipping | `true` | leave it |
+
+🔴 **The percentage scale is worth knowing before you guess.** A normalised guess of `1` looks
+like a no-op and reads as "the param did not write", when it wrote correctly and meant 1%.
+
+---
+
+## The eyelid / blink transition, and four API facts, 2026-09-05 (camping scene 9→10)
+
+Measured while rebuilding the 9c→10a eyelid on `camping assembly`. All four cost real time.
+
+### 🔴 `AE.Impact_Crop_FX` ("FI: Rounded Crop FX") is NOT an automation target
+
+It advertises exactly what an eyelid wants — independent `2 Left` / `3 Right` / `4 Top` /
+`5 Bottom`, plus `7 Feather` and `8 Roundness`. **It does not honour them.**
+
+- **Every crop edge clamps to 100.** Written 240 / 240 / 420 / 180, all four read back as `100`.
+- At that clamp it renders **a solid white frame**, not a crop. `0 Error occurred` stays `false`.
+- `8 Roundness` does nothing while Left/Right are 0 — there are no corners inside the frame to
+  round — and `7 Feather` never became visible at any value tested.
+
+**Use `AE.ADBE Linear Wipe` instead.**
+
+### ✅ `AE.ADBE Linear Wipe` is the eyelid tool — and angle 0 wipes from the BOTTOM
+
+Three clean params, all keyframable:
+
+| Index | Param | Notes |
+| --- | --- | --- |
+| 0 | Transition Completion | 0–100, % of frame eaten from the wipe edge |
+| 1 | **Wipe Angle** | 🔴 **0° eats from the BOTTOM up; 180° eats from the TOP down.** Measured by export, not assumed |
+| 2 | Feather | Pixels. 90–240 on a 1080 frame gives a genuinely soft lid; 110 is still fairly defined |
+
+**The eyelid recipe: two Linear Wipes on the same clip.** One at angle 180 (upper lid) carrying
+~70% of the travel, one at angle 0 (lower lid) carrying ~30%. **Never split it 50/50** — equal
+closure from both edges reads as a letterbox bar, not an eye, and that single fact was the whole
+problem with the first build. Give the upper lid the heavier feather (240 vs 190). Pair it with a
+Gaussian Blur ramp to ~45 and a Lumetri exposure ramp to about −2 stops that *leads* the geometry,
+because a real lid takes the light before it takes the picture.
+
+⚠️ **Motion's `Crop Top` / `Crop Bottom` cannot do this job.** They are hard-edged with no feather
+parameter, and Premiere renders Motion *after* the standard effect chain, so `AE.ADBE Edge Feather`
+applied as an ordinary effect softens nothing.
+
+⬜ **Still unsolved: the lid edge is straight.** Linear Wipe is a straight line by definition. A
+curved lid needs `AE.ADBE Gradient Wipe` driven by a radial ramp on a track above, or a hand-drawn
+ellipse opacity mask in Effect Controls — **the bridge exposes no mask API**.
+
+### 🔴 `premiere_set_param` with NO `time` is an UNRELIABLE way to clear a keyframe track
+
+Passing `time` adds a keyframe; omitting it is *supposed* to write a fixed value and drop the
+track. **It does that sometimes and silently does nothing other times, reporting success either
+way.** Measured 2026-09-05: four identical calls were issued to clear `Crop Top`/`Crop Bottom` on
+two clips; `v0:31` cleared, `v0:32` did **not** — both params stayed time-varying and kept
+animating. Nothing in the response distinguished the two.
+
+The failure is invisible until you render: the stale crop was still squeezing the picture into a
+thin band an hour later, and a whole eyelid rebuild was diagnosed against a clip that was still
+being cropped by the thing it was meant to replace.
+
+**Clear keyframes in `premiere_eval` instead, and read the flag back:**
+
+```js
+if (await prm.isTimeVarying()) {
+  helpers.withTransaction(p, 'untimevary', (ca) => ca.addAction(prm.createSetTimeVaryingAction(false)))
+}
+helpers.withTransaction(p, 'zero', (ca) => ca.addAction(prm.createSetValueAction(prm.createKeyframe(0), true)))
+// then ASSERT:
+await prm.isTimeVarying()   // must be false
+```
+
+🔴 **Never assume a clear worked.** `isTimeVarying()` is cheap and it is the only proof.
+
+### 🔴 `premiere_export_frame` ALWAYS reports EXPORT_FAILED — and the file is fine
+
+The panel writes `<outPath>.png` where `outPath` already ends in `.png`, so the frame lands at
+**`name.png.png`** and the poller — watching `name.png` — times out at 120s and raises
+`EXPORT_FAILED`. **The render succeeded.** Poll for the doubled extension yourself:
+
+```bash
+ls "$FRAMES/myframe.png.png"
+```
+
+Every frame in `frames/` carries the doubled suffix, which is the tell. ⬜ **Owed: fix the poller
+(or the writer) in the panel** so the tool stops lying about a render that worked.
+
+### Bulk parameter writing via `premiere_eval`
+
+`param.createSetValueAction(value)` throws **"Illegal Parameter type"** — the value must be wrapped
+in a Keyframe first, exactly as `panel/src/commands/effects.ts` does it:
+
+```js
+param.createSetValueAction(param.createKeyframe(value), true)
+```
+
+Keyframes are three separate transactions and **Actions do not compose**: arm the track
+(`createSetTimeVaryingAction(true)`), then `createAddKeyframeAction(k)` with `k.position = tick`,
+then `createSetInterpolationAtKeyframeAction(tick, ppro.Constants.InterpolationMode.BEZIER, true)`.
+Components are added with `ppro.VideoFilterFactory.createComponent(matchName)` +
+`chain.createAppendComponentAction(c)` — **re-fetch the chain afterwards**, indices only settle
+once the append has committed. This route graded all 39 clips in one call; the typed tools would
+have been ~250 round trips.
+
+### ⚠️ A transparent region rendered WHITE, not black — cause not isolated
+
+While the stale Motion Crop above was still live *alongside* the new Linear Wipes and the appended
+house-grade Lumetri, `premiere_export_frame` rendered the cut-away region **solid white** on a
+near-black clip on the bottom video track (V1, nothing beneath it). Zeroing the Motion Crop and
+leaving the Linear Wipes to do the work alone made the same region render **black**, as expected.
+
+⚠️ **Unverified which component caused it.** The original timeline — Motion Crop keyframed, no
+Lumetri appended — rendered its crop bars black, so Motion Crop alone is not sufficient to explain
+it; the combination is what produced white and the interaction was never isolated. **Recorded as a
+symptom, not a mechanism.**
+
+🔴 **Why it matters more here than elsewhere:** on a film that is near-black from scene 10 onward,
+a transparent region that resolves to white is not a subtle artefact — it is a full-frame flash.
+**Export a frame and look whenever you introduce transparency**, rather than trusting that "nothing
+beneath the bottom track" means black.

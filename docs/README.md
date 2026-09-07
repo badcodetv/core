@@ -20,6 +20,7 @@ and `new-story` scaffolds its canon folder.
 - [`shorts/`](./shorts/README.md) — short-form music-video packages (`music-video-short` skill)
 - [`images/`](./images/README.md) — standalone brand imagery catalogue (`new-image` skill)
 - [`suno-gpt/`](./suno-gpt/README.md) — Suno toolkit (`suno-prompt` skill): prompt language, the control sliders, the recurring-narrator stack, and what Suno reliably gets wrong
+- [`ai-studio/`](./ai-studio/README.md) — Google AI Studio **voice** toolkit (`gemini-3.1-flash-tts-preview`): the Composer UI map, the four-part prompt structure, the 5,000-voice library, audio tags, limits and traps. 🔑 The first engine that did not sound like AI — accent still open
 - [`flow/`](./flow/README.md) — Google Flow toolkit, two halves: **craft** (Nano Banana and Veo prompt craft, camera vocabulary, consistency, policy blocks) and **automation** (how `@badcode/flow-mcp` drives the browser — selectors, DOM roles, harvest)
 - [`premiere/`](./premiere/README.md) — Premiere Pro bridge (`premiere-automation` skill): the UXP panel + WebSocket setup that lets a session build and adjust timelines. **[`setup.md`](./premiere/setup.md) is the one-time, per-machine install — start there**
 - [`video-fx/`](./video-fx/README.md) — choosing the tool for a video job: the lane table (Flow invents / ffmpeg is exact / Premiere is the edit), the **no-paid-plugins** ruling and the free route instead, and the 20 research briefs. Driven by the `video-fx` skill; mechanics live in `premiere-automation` and `flow-prompt`

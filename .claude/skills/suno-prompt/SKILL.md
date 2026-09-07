@@ -265,9 +265,9 @@ This is where the quality actually comes from. After the user reports back:
    the prompt. Front-loading is a *fix*, not just an initial-ordering rule.
 4. **Re-roll before rewriting.** Meta-tags and cues are probabilistic — the same prompt often lands
    on the second generation. Don't rewrite a prompt that was merely unlucky.
-5. **Escalate a tag that's ignored** by adding redundant synonyms: `[spoken word]` →
-   `[spoken word speech]` → `[spoken word speech talking]`. Redundancy is a real technique, not a
-   smell.
+5. **Escalate a tag that's ignored** by adding redundant synonyms. Redundancy is a real technique,
+   not a smell. 🔴 **But not with `spoken word`** — that ladder is retired for narration (it
+   escalates a performance-poetry genre word); see "Getting a man to TALK" below.
 6. **Re-paste every box, every round — Style, Exclude, Lyrics, and My Taste.** "Reuse Prompt"
    silently carries the old lyrics forward, and a stale Lyrics box is inaudible as such — it just
    sounds like the style prompt is being ignored. (This cost the Karen track four rounds.)
@@ -469,6 +469,59 @@ than a second rapper:
 - **A dialogue chorus is call-and-response**, not alternating verses: the functionary's line in
   parentheses, the lead's fixed answer as the hook ("I'm sorry, I can't help you" / "That's OK").
 
+### 🔑 Getting a man to TALK, not perform — the tested recipe
+
+*Ruled 2026-09-01 on the Camping narration, after ten rounds. Full evidence:
+`docs/suno-gpt/suno-voices.md` Thread 5.*
+
+🔴 **Never put `spoken word` in any box.** It is a **performance-poetry genre** — slam, dub, spoken
+word night — not a delivery mode, and its canonical delivery is metrical and declamatory. Nine
+Camping rounds asked for it (33 mentions across four boxes) and got a poem every time; the round
+that removed it got a man talking.
+
+🔑 **Suno cannot make silence, so stop fighting for a cappella and ask for a form that exists.** A
+man talking over *nothing* exists in the data almost only as poetry recordings. A man talking over
+*a low loop* exists as skits, album interludes, spoken intros, radio drama and documentary VO —
+enormous. **The beat is the casting mechanism, not a cost**, and it is free when narration is coming
+out as a vocal stem anyway.
+
+| Box | What goes in |
+|---|---|
+| **Style** | a **skit / interlude** pool word · `a man talking over a beat` · a BPM · one **unpitched** bed · `voice-forward mix, no singing, no melody`. **No genre word containing "spoken" or "word"** |
+| **Exclude** | the **whole poetry pool**, named: `spoken word, performance poetry, poetry slam, dub poetry, beat poetry, recital, recitation, declamatory, oratory, verse, stanza, rhyming, metrical, incantation, dramatic reading, elocution` |
+| **Lyrics** | **`[Monologue]`, one label repeated identically**, then **continuous prose paragraphs** — natural punctuation, no rhyme, no parentheses. Ladder if ignored, lateral not longer: `[Monologue]` → `[Spoken Word Narration]` → `[Interlude]` → no label |
+| **My Taste** | the speech act first: *he is TALKING — not singing, not rapping, not reciting* |
+
+🔴 **The layout votes as hard as the words.** Suno reads a line break as a phrase reset and a
+section break as a musical event, so one bracketed section per line **is** the slam cadence drawn as
+a page. Look at the layout before you touch the wording.
+
+🔑 **The rule, corrected in round 14: MELODY makes him sing. RHYTHM makes him rap. Narration wants
+neither — it wants a bed with no pulse.** Keep every pitched instrument banned, and ban the grid
+family too; what stays unbanned is the **underscore** — `ambient bed, drone, room tone`.
+
+⚠️ **Three faults the skit pool does not fix, and all have levers elsewhere:**
+
+- **He's American.** Exclude-box bans do **not** control nationality — four `American …` bans failed
+  three rounds running. 🔴 **And never weld a foreign form-word to a native pool word:** `Madchester
+  skit` is a British place name plus an *American* form word in the same slot, and the model picks
+  rather than averages. **Run the accent audit — all four boxes at once** — grepping for the wrong
+  nationality's scene names, form words (`skit`, `interlude`), production slang (`dusty`, `boom bap`)
+  and the literal country adjective, then weight by **position**: genre position and the form word are
+  strong, nationality adjectives (`British`, `northern`) buy nothing. `monologue` is the
+  nationality-neutral talking form-word, and it doubles the `[Monologue]` lyric label.
+  `suno-voices.md` §2a, Thread 5 §4 and §4c.
+- 🔴 **The voice is right but he says it TO the beat.** *Rhythm makes him rap* — the same fault as
+  the poem, in different clothes. **Do not delete the bed** (that is how the poem came back). **Swap
+  the beat for a bed:** delete the BPM number, replace the drum loop with `one low ambient underscore,
+  no pulse and no rhythm`, add 🥇 **`free pacing`** and `pausing where the meaning breaks, never on a
+  bar`, and ban the grid family in Exclude while leaving `underscore, ambient bed, drone, room tone`
+  unbanned. `suno-voices.md` Thread 5 §6.
+- **His voice goes quiet, as if waiting for a beat to drop.** `skit` and `interlude` literally name
+  a *section between the songs*, so the model builds toward what it thinks comes next. Fix in the
+  Style box (`one loop, unchanging, exactly the same level start to finish` · `voice loud and in
+  front the whole way`) plus dynamics bans in Exclude. Thread 5 §5.
+
 ### The narrator problem
 
 BadCode needs one recurring voice across a whole release arc. That is a *feature* problem, not a
@@ -479,7 +532,8 @@ Lyricist). Two BadCode-specific notes:
   opera, a gospel preacher, a sardonic crooner. The genre mismatch is what breaks Suno out of its
   generic per-genre vocal default, and it's the cheapest route to a vocal no other Suno D&B track
   has. Audio influence 40–60 for the strongest effect.
-- **Narration segments** use the spoken-word recipe in `suno-tag-mechanics.md`, and it composes with
+- **Narration segments** use "Getting a man to TALK" below — **not** the spoken-word recipe in
+  `suno-tag-mechanics.md`, which is superseded for narration. It composes with
   a saved Voice — so the narrator can speak in one track and sing in the next as the same character.
 
 ### Drum & bass specifics — where Suno will fight you

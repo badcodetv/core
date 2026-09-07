@@ -728,6 +728,315 @@ discs, light trails and flare all need lamps, headlights, neon or specular highl
 have, the fix is to change the *time of day*, not the prompt — or to isolate with **exposure**
 instead of focus (underexpose ambient, light the subject) which works in any light.
 
+### 20. 🔴 If the named source cannot physically light the scene, the model invents fill `[confirmed 2026-08-27]`
+
+Camping **9a**, twice. A yurt interior lit by *"a cluster of candles on the rug, and nothing
+else"*, with the falloff written out at length — *"steeply from below, shadows thrown upward,
+above chest height everything falls away"*. **Both rounds came back with a soft even frontal
+fill from nowhere**, an evenly-lit lattice wall and a fully readable roof. Not one upward shadow
+in either frame.
+
+**This is [§6](#6--if-the-camera-cannot-physically-stand-there-the-model-rebuilds-the-set-observed)
+in the lighting domain.** Candles on a floor cannot light a room full of people, and the engine
+resolves the contradiction between *"a visible room full of people"* and *"only candles"* the
+same way it resolves an impossible camera — **by rebuilding the scene so the request becomes
+satisfiable.** It adds the light the picture would need.
+
+**So more falloff language does not help, and that is the trap** — the wording was not the
+problem and rewriting it harder spends rounds. **Give the light a source that could plausibly do
+the job, or shrink what needs lighting.** For 9a: a wood-burning stove low on one side, which is
+standard in a glamping yurt, lights every face from one low angle, leaves the far half of each
+face dark and gives the roof nothing. The candles then stay as a **bounded practical** — *"small
+points of flame, far too weak to light anything"* — which is [§5's](#5-anti-slop-restated-from-the-photorealism-pass)
+own phrasing for a practical that is allowed because it has a job.
+
+**The general rule:** a lighting instruction is a physics claim. If the physics does not close,
+the engine closes it for you.
+
+### 24. 🔴 On a POV shot the reference's **body position** is inherited, whether or not you asked `[observed 2026-08-28]`
+
+Camping **11b(i)**, round 2. The prompt asked for a **standing, walking** first-person POV and
+attached the accepted 10a frame *"for the place, the weather and the light"*. 10a is a POV from
+**inside a tent, lying down** — its defining composition is a man's legs and sleeping bag
+stretching away toward a doorway. **The frame came back with his legs stretched out in front of
+him as though he had fallen over.**
+
+**Nothing disobeyed.** [§9](#9--a-strong-reference-hedges-its-own-change-list-observed) says a
+strong reference is the baseline every change is measured against and wins the ties; the engine
+was handed two authorities on where the body goes and took the picture.
+
+**Rule: a POV reference is never "just the location."** It carries camera height, view direction
+and **posture**, and posture is the one nobody writes down. Before attaching a reference to a POV
+shot, ask what body it is teaching.
+
+**The fix that works is geometric, not adjectival.** *"He is standing"* is a statement about
+someone the camera cannot see. *"The nearest thing in the picture is wet tarmac about a metre
+ahead of him, so the whole bottom edge of the frame is wet ground"* is a fact the engine can
+check — **and if the nearest ground is a metre away there is nowhere to put a pair of legs.** Same
+shape as the camera-height lesson: ignored as a number, obeyed as a consequence.
+
+**And delete the anchor that the wrong body grew from.** Round 2 kept a boot at the bottom edge to
+lock the POV; that boot is what the legs attached to.
+[§18](#18--their-face-is-not-visible-does-not-hide-a-face-only-geometry-does-confirmed-2026-08-27)'s
+escalation generalises — *a body part that is not in the picture cannot grow.* Hands alone lock
+first person; the boots were never needed.
+
+### 22. ⚠️ Tiling and cloning in crowd scenes are a *resolution* problem, not only a prompt problem `[community 2026-08-28]`
+
+Researched for camping's ruined-car-park wide — a frame containing a hundred shelters and a
+hundred figures, which is the exact input that produces this.
+
+**The named failure:** *"tiling artifacts appear as repeating patterns — a face pattern repeating
+across a crowd, wallpaper-like repetition in textures, or structural elements that clone across
+the image."*
+
+**The primary cause is resolution mismatch** — generating well above the model's native resolution
+*"forces the model to tile its learned patterns"*. The secondary cause is an ambiguous count in
+the prompt.
+
+🔑 **This cuts against our standing "always 2K or 4K" habit, and the trade has to be made
+per-shot.** [`image-prompting.md` §5](../flow/image-prompting.md) says go high whenever a word
+must survive; this says going high is what makes a crowd repeat. **On a frame that is both — a
+crowd *and* a legible sign — the sign occupies a small region and the crowd occupies most of the
+frame, so 2K is the safer default and the sign is the thing to check first.**
+
+**The prompt-side counter, restated positively** (the community advice is a negative prompt, which
+[does not work here](#negatives-revisited) and puts the thing you are refusing into the prompt):
+**name the variety and name the counts.** *"No two shelters alike — different sizes, colours, ages
+and states of collapse"* does the work that `duplicate, clone, tiling` cannot.
+
+### 23. ✅ Fresh web advice usually arrives as negatives. Convert it before use `[2026-08-28]`
+
+Three separate sources this session gave their best guidance as negative prompts — *"no warped
+buildings, no melting objects, consistent architecture"*, *"duplicate, multiple, clone, tiling"*,
+*"no fantasy style"*. **On these engines that is the one construction guaranteed to backfire.**
+
+**The habit: read the negative for the failure it names, then write the positive consequence.**
+*"No warped buildings"* → *"the buildings are square and true, their rooflines straight and
+unbroken."* This is the same move as writing camera height as what it does rather than as a
+number, and it should be applied to every piece of borrowed advice before it reaches a prompt.
+
+### 21. 🔴 A multi-part change to one object loses outright to a reference showing it intact `[observed 2026-08-28]`
+
+Camping **10a**, round 1. The reference showed a clean lit supermarket fascia. The prompt asked
+for it broken in **five parts at once** — cracked tubes, one letter hanging from a bracket, one
+fallen away, a paler scar on the panel behind it, and two named letters still lit. **Every part
+was ignored and the reference's sign came back untouched and brighter.**
+
+**This is [§9](#9--a-strong-reference-hedges-its-own-change-list-observed) past its limit.** §9
+says a strong reference *meets a change halfway*; that holds for a change with one axis
+(*"it is now night"* → blue hour). **A change with five sub-clauses on one object does not get met
+halfway — it gets dropped**, because there is no halfway state for the engine to find. The other
+four changes in the same prompt, each a single fact, all landed.
+
+**Rule: one object, one new state.** *"The sign is dead — unlit, grimed, no colour"* is a state
+the engine can hold. A per-letter reconstruction is a compositing job described in prose.
+
+**And the second-order rule, which is the expensive one:** if the detail genuinely matters,
+**it has left the generator's lane.** Camping moved the W-AI-trose gag to a post comp on the
+second failure rather than a third prompt — load-bearing text was already
+[`image-prompting.md` §5](../flow/image-prompting.md)'s call, and this is the same boundary seen
+from the failure side.
+
+### 25. 🔴 §19 inverts for an UNBOUND body part — describe it or get young, clean and generic `[observed 2026-08-29]`
+
+**§19 says a cast Character or an attached reference means no appearance description at all.
+The opposite case is a body part with nothing bound to it, and it obeys the opposite rule.**
+
+Camping `12c` is an insert: a hand entering frame to drop a newspaper on a fire, no face, no
+body, **no Character cast** — there was no identity for one to hold. The prompt described the
+hand by **position and action only** — *"a man's hand and forearm, palm down and fingers open,
+just having let the paper go. His sleeve is soaked."*
+
+**What came back was a hand in its twenties** — pale, smooth, unblemished, short clean nails —
+**in sharp focus despite an explicit `thrown out of focus`**, splayed flat in a presenting
+gesture. On a character who has lived outdoors in a camp for five years it contradicted the
+entire act.
+
+**The fix was the §-4a move applied to a hand: describe it as anatomy and condition, not as
+position.** Thick-knuckled, weathered and reddened, cracked across the knuckles, dirt engrained
+in every crease and under short broken nails, scarred and hairy, a frayed soaked cuff — plus the
+gesture rewritten from *held flat and open* to **loosely curled and falling open**. **Round 2
+landed it first time.**
+
+| Case | Rule |
+| --- | --- |
+| Character cast, or reference attached | **§19** — no appearance description at all. Action and expression only |
+| **Body part with nothing bound to it** | **This section** — describe it fully as anatomy and condition, or the default arrives |
+
+🔑 **The default is not neutral, it is young, clean, symmetrical and middle-class.** Anywhere our
+work needs a body that has had a hard life, silence gets us the opposite of the story. Treat an
+unbound hand, forearm, neck or boot as **a prop that must be dressed**.
+
+---
+
+### 26. ✅ TWO Characters DO hold in one frame — if each is anchored to a named side `[observed 2026-08-30]`
+
+**This overturns a working assumption, so it is worth stating plainly.** The field position we
+had recorded was *"two characters interacting in the same shot still produce identity blurring on
+every platform as of mid-2026"* — features blending between them, faces swapping, or one identity
+lost. **Camping had been redesigned twice to avoid it.**
+
+Camping `12a` put `@Bob` and `@Future-Tarquin` in one still — two faces, both legible, both lit by
+the same fire — **and both identities held.** Accepted by Jack.
+
+**Four things were true, and we do not yet know which are load-bearing:**
+
+| Condition | Grade |
+| --- | --- |
+| **Each Character anchored to a named side of the frame** — *"on the left of the frame… on the right of the frame"* — rather than left to the model to infer | 🔑 The one we believe did the work. It is also the field's documented fix, and it agrees with Google's own Ingredients guidance to **state the role each reference plays** |
+| A **still**, not a clip — identity holds for one frame, not through motion | Likely load-bearing. `2b` needed Veo 3.1 for two faces *through motion*, which is a different problem |
+| The two men are **visually very unalike** | Named by the sources as what keeps identities separate |
+| **No appearance description for either** (§19) | Standing rule; not specific to this case |
+
+⚠️ **What this does NOT license.** One accepted still is not a rule for clips, for more than two
+Characters, or for two similar-looking faces. **The claim is: two unalike Characters, side-anchored,
+in a still — observed once, worked once.**
+
+🔴 **Order of attachment mattered enough to record:** both Characters in the earliest slots,
+the location reference last.
+
+**Cost of the old assumption, so the saving is visible:** `8b` was pushed to a forty-metre long
+lens specifically to keep two faces out of one frame, which took the faces out of the argument.
+That retreat may not have been necessary.
+
+⚠️ **`out of focus` on a foreground element is weakly obeyed and needs reinforcing** — round 1
+ignored it outright. Round 2's *"thrown completely out of focus so that it is a soft blur"* held.
+
+### 27. 🔴 Ask for an object, never an absence — a subtractive shape comes back **inverted** `[observed 2026-08-30]`
+
+Camping `1a-year` asked for the numerals **2 0 0 8 torn out of an overcast lid — holes in the
+cloud showing pale sky behind, not writing, not light, not projected.** The clause said what it
+was not, three ways, and restated *"the cloud has simply parted in that shape."*
+
+**What came back was the exact inverse: four dark soot-coloured shapes sitting *on* the cloud** —
+smoke writing, which is the one thing the shot was designed to avoid.
+
+🔑 **The cause is not disobedience, it is vocabulary.** The model has no trained visual for *an
+absence shaped like a glyph*; it has a large one for *smoke written across a sky*. Given a shape
+it can only render as a positive, it renders it as a positive and picks the trope it owns. Piling
+on more negations does not help — it has nothing to substitute *toward*.
+
+⚠️ **A second, independent failure rode along, and it is worth checking for separately:** the
+device was **self-defeating on contrast**. A hole in flat grey overcast shows *pale grey sky* —
+almost no separation. The prompt had also banned glow and bloom, so the only route left to make
+the shape legible was to make it **dark**. **Before blaming the wording, check whether the frame
+physically contains the contrast the instruction needs.** If it does not, no phrasing fixes it.
+
+**The rule:** state the thing as **a positive object with a material, sitting on a ground that
+contrasts with it.** Camping's fix moved the same four numerals from *holes in cloud* to *matted
+black river weed lying on pale wet mud* — additive, material named, ground named, contrast
+guaranteed by the ground reflecting the sky.
+
+**Related:** §23 (convert negatives into positives before use) — this is the sharpest case of it
+found so far, and it upgrades that entry from a phrasing preference to a **failure mode**.
+
+### 28. ⚠️ Ground-plane lettering breaks where it foreshortens — and the model under-delivers height `[observed 2026-08-30]`
+
+Camping `1y` asked for four numerals laid flat on a foreshore, shot from **five metres up at a
+45° down tilt**. The return came back nearer **two to three metres at ~30°** — a consistent
+under-delivery of both height and tilt, worth budgeting for on any stated camera elevation.
+
+**The consequence is specific and predictable:** a shallower angle puts the glyph row into hard
+perspective, and the numeral **furthest from the lens compresses most**. Three of the four
+rendered clean; the far one — an `8` — had its waist open into two disconnected pieces and read
+closer to `%`.
+
+🔑 **So when in-frame text lies on the ground, the fix for a malformed glyph is usually the
+camera, not the text clause.** Steepen the tilt until the row is near-flat to the lens and the
+compression that broke it is gone. Ask for more height and more tilt than you want, since some
+of it will not arrive.
+
+**Pair it with a closure clause** naming the specific failure — *each numeral is one continuous
+unbroken band, the eight is two closed loops joined at a clear narrow waist* — the same
+name-the-failure pattern as camping `4b`.
+
+### 29. ✅ To overrule a reference on ONE element: declare its role narrowly, then negate the old value `[observed 2026-08-30]`
+
+§21 says a reference showing an object intact **beats** a multi-part change instruction to that
+object. Camping `4y` had to run straight at that: the same foreshore plate, everything held, but
+the four weed numerals changing from `2008` to `2026` — one object, and it *is* the change.
+
+**It worked first time.** Two clauses appear to be why, and they are cheap to reuse:
+
+1. 🔑 **Declare the reference's role narrowly and exclusively** — *"the attached image is the
+   reference for the location, the camera position, the framing and the light, **and for nothing
+   else**."* Then list what to reproduce from it, item by item. The element you intend to change is
+   conspicuously **not on that list**, which is what stops the reference claiming authority over it.
+2. 🔑 **State the new value early and positively, then negate the old one explicitly** — *"They
+   read 2 0 2 6. They do not read 2008."* Naming the old value is what makes the negation
+   actionable; without it the model has nothing to push against.
+
+**Everything else in the frame was left to the reference and came back matching** — far bank,
+stumps, cobbles, handrail, horizon, overcast and water level all held well enough that the two
+plates read as one place. So this pattern does **not** cost you the reference's grip on the rest of
+the frame, which was the obvious worry.
+
+**Use it wherever a reference has to be overruled on exactly one element.** n=1, so it is a
+pattern, not a law — but it is a cheap first thing to try before falling back to a full
+restatement.
+
+### 19. 🔴 §2's "do not restate the reference" applies to PEOPLE, not just sets `[confirmed 2026-08-27]`
+
+Camping **8c(i)**. `@Bob` was cast **and** his canon appearance was pasted in as prose — beanie,
+oversized charity-shop coat, hoodie, stubble, age, weathering. **The outfit came back wrong.**
+
+**The rule was already here and was being applied to only half the problem.** The fourth pass §2
+says a prose re-description competes with the attached reference and is a known drift source; the
+repo had internalised that for **locations** and not for **characters**. Same mechanism, same fix.
+
+**Rule: a Character cast or a reference attached means no appearance description at all.** Not
+wardrobe, age, build, hair, skin or grooming. Write *"the man from the character reference"*.
+
+**What still belongs in the prompt, because the reference cannot carry it:** what the person is
+**doing** — posture, action, position in frame — and the **face as muscle description** (brows,
+eyelids, mouth, where the eyes are aimed), per
+[`image-prompting.md` §4a](../flow/image-prompting.md). Action and expression are not appearance.
+
+**The one narrow exception:** where the figure is too small or too turned away for the Character
+to bind at all (§12), prose is the only lever left — camping's forty-metre 8b long lens. **A face
+in frame at any workable size means the reference carries it.**
+
+⚠️ **A "keep the same" clause is not a loophole.** Camping 8c(ii), same day: *"the lower legs and
+shoes of a man standing on the tarmac, **in the same dark jeans and tan shoes as in the reference
+image**"* was caught immediately. Wrapping the garment in a preservation verb still puts the
+garment in the prompt, and the prompt then competes with the reference exactly as §2 describes.
+Write *"the standing man from the reference image"*.
+
+*(Ruled by Jack: "please don't describe the character when there is a reference image or
+character attached, because Flow messes it up.")*
+
+### 18. 🔴 "Their face is not visible" does not hide a face. Only geometry does `[confirmed 2026-08-27]`
+
+Camping **8b(i)**, round 1. An over-the-shoulder with a foreground figure whose face was
+explicitly excluded twice — *"Only his back is in view. His face is turned away and is not in the
+picture."* The engine returned him in **three-quarter profile with a fully rendered, invented
+face**: cheek, beard, ear and eye all legible, sharper than the depth of field allowed for.
+
+**The instruction was not partially obeyed. It was inverted** — the engine appears to read a
+named body part as a request to render it. This is the same failure class as
+[§6](#6--if-the-camera-cannot-physically-stand-there-the-model-rebuilds-the-set-observed) and the
+camping camera-height finding: *stating a constraint does not bind; stating its physical
+consequence does.*
+
+**The fix that works is occlusion the engine has to honour to draw the scene at all:** put the
+camera square behind the skull so the back of the head physically hides the rest, push the figure
+close enough to the lens to be far out of focus, and **describe the result, not the rule** —
+*"the back of his head faces us squarely and hides the whole of the rest of his head behind it;
+the picture holds only the hair on the back of his skull, his collar and his coat."* If a cheek
+still survives, **delete the head from the frame** and keep only a shoulder — a body part that
+is not in the picture cannot grow a face.
+
+**Why it costs more than a re-roll.** An invented face in frame is an **uncast character**. It
+has no Character and no reference, so every later shot containing that person now has a likeness
+to match that was never designed — which is exactly what camping's one-face-per-generation
+method exists to prevent. Sibling of
+[§12](#12--a-character-binds-to-a-face-no-face-in-the-shot-no-likeness-observed): a Character
+binds to a face, and **an unbound face is a liability, not a blank**.
+
+**Standing rule, now confirmed rather than inferred:** where a face does not need to be legible,
+**hide it with the camera**, never with a sentence.
+
 ### Sources for this section
 
 - [Google — prompting tips for Nano Banana Pro](https://blog.google/products/gemini/prompting-tips-nano-banana-pro/) `[vendor]`

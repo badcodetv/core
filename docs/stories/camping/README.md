@@ -49,6 +49,9 @@ tent, after the AI has taken even his job.
   [`characters/wank-tank.md`](./characters/wank-tank.md) — load-bearing object refs
 - [`style.md`](./style.md) — thin per-story style notes (locations, warmth
   rules, motifs)
+- [`year-device.md`](./year-device.md) — **where the year is shown.** ✅ Ruled 2026-08-30: a
+  two-instance device, and it lives on the **Thames foreshore** (`1y` 2008 / `4y` 2026), not on
+  the skyline — the cloud-break version was run and failed. Both plates are shot
 - [`songs/camping.md`](./songs/camping.md) — the "Camping" track (lyrics + Suno
   style/exclude; predates the restructure)
 

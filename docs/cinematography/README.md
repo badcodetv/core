@@ -28,6 +28,7 @@ A finished shot is **register** (from a story's canon and the art-direction skil
 | [`principles.md`](./principles.md) | **What we hold to be true** — 26 graded principles, the three gates, eight house rulings, and the one open ruling | First use in a conversation; when two pieces of advice conflict |
 | [`frame.md`](./frame.md) | Composition, depth, staging, light, colour, lens, height | Designing or judging a single image |
 | [`motion-and-cutting.md`](./motion-and-cutting.md) | Movement, sequence design, the cut, **and the method for re-cutting footage that already exists** | Any sequence; any "this cut isn't working" |
+| [`on-screen-time.md`](./on-screen-time.md) | **Putting the year (or the place) on screen** — the six families, the fixed-slot decisions, and what we can actually render | A film jumps in time; a caption or title card is proposed |
 | [`stills.md`](./stills.md) | The static frame — what holds a held image, word-and-picture, the gutter, duration | Our dominant form; choosing between generated candidates |
 | [`registers.md`](./registers.md) | The monumental register **and its problem**, awe, documentary, British social realism | Anything monumental; the money film; the register question |
 | [`evidence.md`](./evidence.md) | Grades, the corrections applied during distillation, **the never-cite list** | Before any claim or number reaches a brief, a note, or public copy |

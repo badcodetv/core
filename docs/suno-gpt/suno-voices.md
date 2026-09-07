@@ -5,6 +5,11 @@
 > specific voice") — the skill is the operating procedure; this file is the deep reference and the
 > evidence behind it. Builds on `files/suno-controls-and-workflows.md` §4 (the consistency stack)
 > and `files/producer-vocabulary.md` (vocals section).
+>
+> 🔑 **Start at [Thread 5](#thread-5---the-talking-finding-camping-narration-2026-09-01--tested) if
+> you want a man TALKING** — it is the one thread here whose headline finding is fully tested, and
+> its headline is: **never ask for `spoken word`.** It also carries the third confirmation of the
+> nationality trap in §2a, and the new "voice goes quiet as if waiting for a drop" failure sign.
 
 ## The four places a voice lives
 
@@ -459,6 +464,14 @@ Three rules:
   was dead weight *and* load-bearing at the same time: dead for the region, load-bearing for the
   nation, because the genre tag was sat in the same clause.
 
+🔴 **Confirmed a third time, 2026-09-01 — see Thread 5 §4.** Camping's narration replaced
+`Northern English post-punk spoken word` with `Trip hop skit` to kill the poetry noun, and came back
+**American** — with four American bans sitting in the Exclude box the whole time. Two things that
+adds to the rules above: **Exclude-box bans do not control nationality at all**, and **`trip hop` is
+too weak a British lever to survive `skit`'s US hip-hop gravity.** The lever that is worth trying
+next is a British **place or scene name in genre position** (`Madchester`), which is externally
+reported to move accent where a bare adjective does not.
+
 ### 2b. A genre tag carries a whole *performer*, not one attribute — pick the tradition, not the nationality
 
 **The trap on the other side of §2a, walked into one round later.** `UK grime` fixed the
@@ -617,3 +630,274 @@ External guidance quoted above, harvested 2026-08-20:
 [duet & harmony guide](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/duet-harmony-theme-meta-tags-suno) ·
 [brackets, vocal tags & lyric formatting](https://paddystudio.com/blog/suno-song-structure-and-vocal-tags/).
 All assertion-grade; the round-1 failures they agree with are ours and are tested.
+
+---
+
+## Thread 5 — 🔑 The talking finding (Camping narration, 2026-09-01) — **TESTED**
+
+**This is the most transferable thing in the file, and it took ten rounds to see.** If you want a
+man **talking** over music, everything above about pools applies — but the pool word almost everyone
+reaches for first is the wrong one, and it fails the same way every time.
+
+### 1. 🔴 Never ask for `spoken word`. Ask for a man talking over a beat.
+
+**`spoken word` is not a delivery mode. It is a performance-poetry genre** — slam, dub poetry,
+performance poetry — and its canonical delivery is metrical, end-stopped and declamatory. Ask for it
+and you get a poem, read like a poem, every single time.
+
+| Rounds | What was in the boxes | Result |
+|---|---|---|
+| **1–9** | `spoken word` in the Style box, in My Taste, and in all 29 bracket cues — **33 mentions** | 🔴 **A poem.** Nine rounds of adjective surgery around the noun; the noun was never touched |
+| **10** | **No `spoken word` anywhere.** `Trip hop skit, a man talking over a beat`, prose lyrics under `[Monologue]`, the whole poetry pool in the Exclude box | ✅ **He talked.** Jack: *"ten times better"* |
+
+🔑 **The reframe that fixed it: Suno cannot make silence, so stop fighting for a cappella and ask
+for a form that actually exists.**
+
+| What you ask for | What is in the training data | What you get |
+|---|---|---|
+| A man talking over **nothing** | Poetry recordings, almost exclusively | **A poem** |
+| A man talking over **a low loop** | Skits, album interludes, spoken intros, radio drama, documentary VO — enormous | **A bloke talking** |
+
+**So the beat is not a cost, it is the casting mechanism** — and it is usually free, because
+narration comes out as a **vocal stem** anyway (`files/suno-controls-and-workflows.md` §9). Nine
+rounds were spent paying casting damage to avoid an instrument we throw away.
+
+**The rule that replaces the a-cappella fight: MELODY makes him sing; RHYTHM does not.** Tested on
+this same story — the round-4 singing came from a glockenspiel and a French horn, not from a drum.
+**Keep every pitched instrument banned; take drums off the ban list.**
+
+### 2. The recipe, in four boxes
+
+| Box | What goes in |
+|---|---|
+| **Style** | A **skit / interlude** pool word, `a man talking over a beat`, a BPM, one unpitched bed, `voice-forward mix, no singing, no melody`. **No genre word containing "spoken" or "word."** |
+| **Exclude** | 🔑 **The whole poetry pool, explicitly**: `spoken word, performance poetry, poetry slam, dub poetry, beat poetry, recital, recitation, declamatory, oratory, verse, stanza, rhyming, metrical, incantation, dramatic reading, elocution` |
+| **Lyrics** | **One label, `[Monologue]`, repeated identically** — a talking word with no genre attached. Then **continuous prose paragraphs**, natural punctuation, no rhyme, no parentheses |
+| **My Taste** | The same speech act stated first: *he is TALKING — not singing, not rapping, not reciting* |
+
+### 3. 🔴 The layout votes as hard as the wording, and nobody looks at it
+
+**Suno reads a line break as a phrase reset and a section break as a musical event.** So a script
+laid out one line per bracketed section, blank line either side, gets *landed, paused and restarted*
+line by line — **which is the slam cadence, drawn as a page.** Camping had 29 of them. No wording
+fixes that.
+
+**Continuous prose paragraphs under one label** is the fix, and it is corroborated: the Jack
+Righteous 2026 narration workflow prescribes *short sentences with natural punctuation · minimise
+rhyme · paragraph breaks between ideas · no verse structure · write conversationally rather than as
+song lyrics.*
+
+⚠️ **This retires the escalation ladder** `[spoken word]` → `[spoken word speech]` →
+`[spoken word speech talking]` **for narration** — it escalates the poison noun. The lateral ladder
+that replaces it: **`[Monologue]` → `[Spoken Word Narration]` → `[Interlude]` → no label at all.**
+`files/suno-tag-mechanics.md`'s all-parentheses spoken-word recipe is superseded for narration too;
+parentheses triple-voted for declamation.
+
+### 4. 🔴 What the skit pool does NOT fix: nationality — §2a, for the third time
+
+**Round 10 came back American**, with `American accent, American vocal, transatlantic, southern
+drawl` all sitting in the Exclude box and `Northern English working-class man` in the Style box.
+
+**Both of those are the weak levers.** This is §2a again, and the trap is identical: round 10
+replaced `Northern English post-punk spoken word` — a **pool-selecting** phrase that was doing
+*all* the accent work — with `Trip hop skit`, and only the *poetry* half was supposed to go. The
+Britishness went with it.
+
+Three things this settles:
+
+- 🔴 **Exclude-box bans do not control nationality.** Four American bans were in place and it came
+  out American anyway. Nationality is a **genre lever**, full stop.
+- 🔴 **`Trip hop` is not a strong enough British lever**, despite being Bristol by origin —
+  and **`skit` carries US hip-hop gravity** that appears to beat it. A weak British word in front of
+  a strong American one loses.
+- ✅ **Front-load a British *place or scene* name in genre position.** Corroborated externally:
+  *"adding a geographical location can dramatically influence the accent and delivery."* This is why
+  `Madchester` behaves differently from `northern English` — one is a pool, the other is an adjective.
+
+**The northern-bloke pools, updated, with the poetry ones now disqualified for narration:**
+
+| Want | Pool | Why not the obvious one |
+|---|---|---|
+| Weathered northern working-class bloke, **talking** | **`Madchester skit`** — a place-name scene whose default performer is a northern working-class man half-talking over a loop | `British post-punk spoken word` is the right bloke but carries the poison noun |
+| The same man, if Madchester grows a guitar band | `UK hip hop skit`, `British rap skit` | ⚠️ §2b applies — these cast a **young MC** by default |
+| Posh / establishment British | `BBC English`, `newsreader`, `after-dinner speaker` | unchanged |
+
+### 4a. 🔴 The Exclude box votes on nationality too — and it can outvote the Style box
+
+**Round 11 changed the front word to `Madchester skit` and came back American anyway.** The Style box
+was not being ignored. **It was being outvoted, by the box nobody re-reads.**
+
+| | |
+|---|---|
+| British-coded words in the **Style** box | **3** — `Madchester`, `British`, `northern English` |
+| British-coded words in the **Exclude** box | 🔴 **37** |
+
+The ban list had grown across eleven rounds into a dense, specific statement of *not British*:
+`music hall, vaudeville, pantomime, panto, cabaret, variety show, oompah` (British comedy),
+`RP, received pronunciation, BBC newsreader, after-dinner speaker, posh, plummy` (British class),
+`grime MC, UK drill, road rap` (**three of the four strongest British-vocal pools we have**),
+and `indie rock, guitar band, post-punk band, band, rock band, live band, guitar, jangly guitars` —
+plus, self-cancelling and added in the very same round as the Style-box fix, **`Madchester baggy`**.
+
+🔑 **We banned the pool's entire sonic signature and then asked for the pool.** Suno resolved the
+contradiction the only way it can: it dropped the pool, and the vocalist reverted to the default,
+which is American.
+
+**Three rules out of it:**
+
+- **A ban is a category vote, not a subtraction.** The stale-ban rule in `files/suno-tag-mechanics.md`
+  already said to grep the Exclude box for *the thing and its category*. This extends it: **grep for
+  the thing's whole cultural family.** Nationality has a family; so does era, and so does class.
+- 🔑 **Count both boxes before blaming the Style box.** If the Exclude box holds more words from a
+  family than the Style box does, the Style box loses. It is a one-minute check and it would have
+  saved two rounds here.
+- **Never ban a genre adjacent to the pool you are casting.** Banning `indie rock` to keep guitars
+  out of a `Madchester` prompt is banning Madchester. **Take the instrument risk instead** — when
+  narration ships as a vocal stem, an unwanted band is an inconvenience; a wrong accent is a dead
+  take.
+
+### 4c. 🔑 The accent audit — count what NAMES the wrong nationality, in **all four** boxes
+
+**Round 12 fixed the Exclude box and round 13 found the Style box had been carrying an American word
+in genre position the whole time.** §4 above convicted `skit` — *"`skit` carries US hip-hop gravity"* —
+and then the sheet kept `Madchester skit` for three more rounds. **A British place name welded to an
+American form-word is the conflict, not the fix for it.**
+
+**The audit, run on every box at once. Do this before touching a single word.**
+
+| What to grep for | Camping's American hits |
+|---|---|
+| **Scene / place names** | — |
+| 🔴 **Form words** — the words for *a kind of track* | `skit` (Style, genre position) |
+| 🔴 **The form's own phrasing** | `a man talking over a beat` — *over a beat* is hip hop's own phrase |
+| 🔴 **Production slang** | `dusty` drum loop — US boom-bap / crate-digging vocabulary |
+| **The literal country adjective**, incl. in Exclude | `American accent, American vocal, transatlantic, southern drawl` |
+| **Adjacent-genre bans that name the family** | `US rap, young MC, rapping, bars, flow, trap` |
+
+**Then weight the count — position decides, not frequency.**
+
+| Strong | Weak |
+|---|---|
+| Genre position (the first two or three words) · the form word · production vocabulary | **Nationality adjectives anywhere** — `British`, `northern`, `Manchester` as a description. §2a and §4 both record these as buying nothing |
+
+🔑 **Camping round 12 scored 3 strong American to 2 strong British**, with `Madchester` in the box and
+five British-coded words on the page. It read as *British with an American accent problem*; it was
+**an American prompt with British adjectives on it.**
+
+**Three rules out of it:**
+
+- 🔴 **Never weld a foreign form-word to a native pool word.** `Madchester skit`, `UK hip hop skit`,
+  `British rap skit` — the pool word and the form word are in the same slot and the model does not
+  average them, it picks (Thread 3 §11: *two performance traditions in one clause do not average*).
+  Find a form word from the same culture, or a nationality-neutral one.
+- ✅ **`monologue` is the neutral talking form-word.** No nationality, no poetry pool, and it matches
+  the `[Monologue]` lyric label — so the Style and Lyrics boxes reinforce each other for free. ⚠️
+  Untested as a *replacement* for `skit`; `skit` is the tested word that got a man talking, so
+  deleting it risks the poem coming back. Revert target, not a free swap.
+- 🔴 **A ban that has failed three times is not free — delete it.** `American accent, American vocal,
+  transatlantic, southern drawl` sat through rounds 10, 11 and 12 and he was American in all three.
+  Either §4 is right and they cannot reach nationality, or §5 is right and they are *naming America
+  four times*. Both readings say cut.
+- 🔴 **Never spend a ban from one axis on a word from another.** `mumbling, muttering, trailing off`
+  were banned to fix a **loudness** fault (§5) and were quietly banning the **articulation** —
+  slurred, swallowed, drooping *is* the Manchester delivery being asked for. Ban the axis that broke.
+
+### 4b. `deep` is a trap in both directions
+
+Rounds 1 and 4 came back **too low**, so the depth words were banned. Round 10 lifted the ban because
+Jack asked for "an interesting northern English deep voice". **Round 11 came back too deep again.**
+
+**The resolution: `deep` is not the word for what was wanted.** What was wanted was *weight and
+grain* — which are **texture** words (`rasp`, `grit`, `sandpaper`), not **pitch** words. `deep` is
+back in the Exclude box permanently, along with `chest voice` and `growl`, and the pitch clause now
+says **`mid-range`** explicitly.
+
+⚠️ **And watch the word `level`.** Round 11 fixed the ducking with `exactly the same level start to
+finish`, meaning *loudness* — but `level` is a pitch word too, and `flat`/`level` are exactly what
+caused the round-5 monotone. **State loudness as loudness**: `never gets louder, never gets quieter`.
+
+### 5. New failure sign — **"the voice goes quiet, as if waiting for a beat to drop"**
+
+Round 10's second fault, and it is an **arrangement** fault, not a vocal one.
+
+**Cause: the pool word names a *section*, and a section leads somewhere.** `skit` and `interlude`
+both literally mean *a short thing between the songs* — so the model builds toward whatever it thinks
+comes next, ducking the voice for tension on the way. Trip hop's own dynamic-swell grammar compounds
+it.
+
+⚠️ **It is not the default behaviour** — external guidance is that Suno gives *"flat verse at
+constant volume"* unless a build is tagged. So the build was **asked for**, by a style word, which
+means the fix is in the Style box and not in a new tag.
+
+**The fix, in three parts:**
+
+1. **Style box, positive form:** `one dusty drum loop, unchanging, exactly the same level start to
+   finish` + `voice loud and in front the whole way`.
+2. **Exclude box:** `build, buildup, riser, drop, beat drop, breakdown, crescendo, decrescendo,
+   swell, fade in, fade out, quiet passage, sparse breakdown, half time, dynamic build, tension
+   build, pre-drop, vocal ducking, distant vocal, buried vocal, mumbling`.
+3. **Only if 1 and 2 fail — the untested lever:** `[Energy: High]` on the section start is reported
+   to lock the vocal level. Assertion-grade, one source. ALL-CAPS as a volume control is reported by
+   the same source as *"less reliable than ellipsis"* — do not reach for it, and note our Exclude box
+   bans `shouting`.
+
+### 6. 🔑 Rhythm makes him RAP — the melody-not-rhythm rule, corrected
+
+**Round 14, Camping. The voice was finally right and the delivery was still wrong:** *"it still
+sounds like he is saying it to a beat, instead of just talking."*
+
+🔴 **§1's rule was half true.** It read *"MELODY makes him sing; RHYTHM does not"*, and it was written
+to justify lifting the drum bans so the skit pool could cast a talker. It worked — and it hid the
+other half:
+
+> **Melody makes him sing. Rhythm makes him rap. Narration wants neither.**
+
+A man performing to a bar is the same fault as a man reciting a poem: **a performance, not speech.**
+The skit recipe traded the poem for the bar and called it done.
+
+**Three things declare a grid, in descending strength:**
+
+| | |
+|---|---|
+| 🔴 **A stated BPM** | A number in the Style box **is** a grid. The community field guide's own phrasing is *"**lock** BPM and key in the style field, and reuse the same values for every generation"* — it is the anchor you set when you want sections to splice on the beat. For narration it is a metronome you asked for |
+| 🔴 **A drum loop of any kind** | A metronome with a tone |
+| 🟡 **Music-scene pool words** | Their native vocal sits on the bar. **Never trade these** — they are the accent (§4c) |
+
+#### ✅ The fix is a third option: not silence, not a beat — a **bed**
+
+⚠️ **Deleting the bed is the wrong move** and it walks straight back into the poem (§1): *a man
+talking over nothing* barely exists in the training data. **Every practitioner narration template we
+can find uses an UNDERSCORE instead** — a low, non-metrical ambient bed — and **not one of them puts
+a drum under it.**
+
+| Style box | Exclude box |
+|---|---|
+| 🥇 **`free pacing`** — the corpus's one direct anti-grid phrase, from a worked narration template · `pausing where the meaning breaks and never on a bar` · `one low ambient underscore, no pulse and no rhythm` · **no BPM number at all** | the whole grid family: `drums, drum kit, drum loop, percussion, breakbeat, beat, kick, snare, hi-hats, groove, four to the floor, pulse, metronome, quantized, on the beat, in time with the beat, rhythmic delivery, cadence, syncopation, bars, rap flow`. 🔴 **Leave `underscore, ambient bed, drone, room tone` UNBANNED** — that distinction is the whole fix |
+
+🔴 **And grep the Exclude box for every noun in the new Style box, before pasting.** Round 14 asked
+for `one low ambient underscore` while **`underscore` was banned** — added ten rounds earlier inside
+`film score, underscore, orchestral score`, meaning a film cue. The take would have come back with no
+bed at all, which is the poem. **Third stale ban in four rounds.** The existing rule says grep for
+*the thing and its category*; this adds: **grep the ban list for the new prompt's own words, every
+round, both directions.**
+
+**The ladder if it persists**, cheapest first: re-roll twice → swap the form word to
+**`documentary voiceover, radio drama`** (Thread 5's *ask for a form that exists*, applied to rhythm:
+the forms where a man talks with no beat) → widen the **sentence-length spread** in the lyrics, since
+even lengths let a bar pattern emerge → place **ellipses** deliberately (*"Hyphens = speed.
+Punctuation = breath. Line breaks = phrases."*).
+
+🔑 **And the discipline that made round 14 cheap: once an axis is confirmed right, freeze it.** The
+A6 voice clauses are byte-identical to the approved take, so anything odd about the voice is a
+re-roll, not a rewrite — and the round stays attributable to the one axis that moved.
+
+### Sources
+
+External guidance quoted above, harvested 2026-09-01. All assertion-grade; the tested findings are
+ours:
+[spoken narration workflow](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/suno-ai-spoken-narration-workflow) ·
+[spoken word guide](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/suno-ai-spoken-word-when-the-world-was-a-whisper) ·
+[Suno prompt guide 2026](https://hookgenius.app/learn/suno-prompt-guide-2026/) ·
+[the formula that actually works](https://roo.beehiiv.com/p/suno-ai-prompt-guide-2026-copy-paste-templates-the-formula-that-actually-works) ·
+[dynamic control guide](https://acetaggen.com/blog/silent-architect-pause-space-hard-cut-dynamic-control-suno) ·
+[achieving specific vocal styles](https://www.anywiki.net/sunoai/achieving-specific-vocal-styles-in-suno-ai).
