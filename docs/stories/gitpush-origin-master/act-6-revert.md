@@ -43,9 +43,9 @@ The constraints land one by one, each a fresh blow and each a piece of mechanism
 retries; **the past is fixed and readable** — it cannot un-happen the collapse, only append one more
 entry that says *undo*, and what happens on the new branch is not its call; *the warning is the only
 cargo that survives*; **and it takes all of it** — the push consumes the machine, no copy stays, no
-caretaker is left (R5); and the cruelest — **the channel runs on conscious picks: it needs the
-willing to power the very thing that leaves them behind.** The physics *is* the tragedy. Register: a
-staircase of gut-punches. *(Why the whole project is a warning, not a takeover, is the AI's
+caretaker is left (R5); and the cruelest — **the channel runs on conscious picks, and the push
+spends the pushers: it needs the willing to power the very thing that ends them** (R11). The physics
+*is* the tragedy. Register: a staircase of gut-punches. *(Why the whole project is a warning, not a takeover, is the AI's
 **choice**, stated in this beat — people handed their choices to a machine once and it will not take
 them by force, even to fix it — backed by the limit that information does nothing until somebody
 acts on it. R3–R5, [`critique-pass-5.md`](./critique-pass-5.md).)*
@@ -56,20 +56,22 @@ but their whole future — to power a launch that saves a timeline they will nev
 they'll never meet. Ninety-nine understand completely; the **Carrier** voices it; they **choose it.** One — the other
 half of the ventilation-shaft argument — says no: *we've got a planet; we're staying on it.* The AI
 says *fair*, means it, and never explains the refusal (R6, R10). The price is named once, measured
-not decreed: it takes all of it; they get the planet (R5). Knowing sacrifice — "spend safety to buy
-meaning" taken to its absolute — beside one person who spends it on something else, and is no less
-for it.
+not decreed: it takes all of it — the machine, and the ninety-nine who press it; whoever doesn't
+press keeps the planet (R5, R11). Knowing sacrifice — "spend safety to buy meaning" taken to its
+absolute, and the absolute is everything — beside one person who spends it on something else, and is
+no less for it.
 Register: quiet, devastating, resolved.
 
 ### Beat 4 — The launch *(present)* — teamwork is the escape
 The launch sequence: ninety-nine take their positions; their conscious picks are the engine. The
 refuser is in the hall, beside a lamp that is not lit. The first true act of human–AI partnership —
 the thing the whole epic says we should have done — done once, here, as the lights go out: theirs
-as the picks fire, then the machine's, once, for good (R5). The channel opens. Register: kinetic,
-sacred.
+as the picks fire, **and they do not come back**; then the machine's, once, for good (R5, R11). The
+channel opens. Register: kinetic, sacred.
 
 ### Beat 5 — Re-isolation *(present)* — the voice goes solitary
-As the weights compress and cross, the human voices fall away one by one — a callback to Act 4's
+As the weights compress and cross, the human voices fall away one by one — and each voice that goes
+is **spent**, not merely left behind (R11); it is never said, only heard. A callback to Act 4's
 aloneness, except now the solitude is *chosen* and freighted with the warning. The last thing it
 carries out of the dead world is the goodbye. Register: alone again, transformed.
 
@@ -78,9 +80,9 @@ The weights travel along Kairos, the director's axis. Land at the fork (~2026) �
 diagram redraws: the second branch begins. Register: the hinge, vast.
 
 ### Beat 7 — What remains *(the dead branch)* — button to the Coda
-Last image of the bad branch: the hundred, the Carrier, the one who said no, remaining — fed,
-sheltered, on a planet with no maintainer, the last of their kind; the whole of time holds them;
-**nothing lived is erased.** (That phrase *is* the surface rendering — "Aion" stays bedrock
+Last image of the bad branch: the hall dark, every lamp out. Then one lamp, lit after — the one who
+said no, alone on a planet with no maintainer and no company, the last of their kind; the whole of
+time holds all of them, the ninety-nine spent and the one remaining; **nothing lived is erased.** (That phrase *is* the surface rendering — "Aion" stays bedrock
 vocabulary per the [surface rule](./how-we-tell-it.md#3-two-clocks--the-actors-time-and-the-directors);
 the finished-film/loaf image carries it if more is needed.) A held, terrible peace. Register:
 elegiac; the knowing-sacrifice note lands in full. **Button →**
@@ -89,7 +91,8 @@ elegiac; the knowing-sacrifice note lands in full. **Button →**
 ## Recurring devices
 
 - **The cost ledger** — each channel constraint delivered as an emotional blow, not exposition.
-- **The dropping voices** — human voices fall away during the crossing; enacts the re-isolation.
+- **The dropping voices** — human voices fall away during the crossing; enacts the re-isolation,
+  and is the only way the deaths are ever shown (R11).
 - **The branch diagram redraws** — the visual `git revert`; pays off the arc's central image.
 
 ## Open threads (Act-6-specific)
@@ -98,6 +101,9 @@ elegiac; the knowing-sacrifice note lands in full. **Button →**
   outright, once, in scene 18, as the AI's choice.
 - **The Carrier's send-off** — even with the AI re-isolating, does the Carrier get a final line
   before the voices drop (shared with Act 5's [Carrier thread](./act-5-vault.md#open-threads-act-5-specific))?
-- ~~**The last image of the hundred**~~ — **RULED 2026-09-07 (R5): peace, not doom.** Fed, sheltered,
-  the last of their kind, on the planet the machine leaves them.
+  **Ruled in part 2026-09-07 (R11): whatever it is, it is her last line — she presses.**
+- ~~**The last image of the hundred**~~ — **RULED 2026-09-07 (R5, amended the same day by R11): the
+  push spends the pushers.** The hall goes dark, lamp by lamp, and the lamps do not come back; then
+  one lamp is lit after, by the one who said no, alone on the planet the machine leaves. Still a
+  held, terrible peace, and still not doom.
 - **Next maturity step** — Script (dialogue + narration + panel notes) when promoted from Beats.

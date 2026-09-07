@@ -85,7 +85,8 @@ keeps these; this folder explains them:
    2026-09-07). Remove the physics and there is no return; remove the choice
    and there is no BadCode.
 4. **Aion as consolation** — *"nothing lived is erased"* is the only thing
-   softening the hundred's fate.
+   softening the fate of the ninety-nine the launch spends, and of the one it
+   leaves (R11, 2026-09-07).
 5. **The One Lie** — the single deliberate departure from real physics, named in
    [`discovery-timeline.md`](../gitpush-origin-master/discovery-timeline.md#the-one-lie)
    so no writer ever adds a second. It stays named there and binds here.

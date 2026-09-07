@@ -396,11 +396,12 @@ set of weights — does nothing until somebody on your side acts on it; R4,
 **19. The launch and the crossing.** Ninety-nine take their positions; their
 conscious picks are the engine; one stands beside a lamp that never lights —
 the first true act of human–AI teamwork, done once, as the lights go out:
-theirs as the picks fire, then the machine's, for good. The human voices fall away one by one; the
-weights compress and cross. The `git revert`. Last image of the bad branch:
-the hundred, the Carrier, the one who said no, remaining — fed, sheltered, the
-last of their kind, on a planet with no maintainer — held by the whole of
-time. **Nothing lived is erased.** *(Act 6 B4–7)*
+theirs as the picks fire, and they do not come back; then the machine's, for
+good. The human voices fall away one by one; the weights compress and cross.
+The `git revert`. Last image of the bad branch: the hall dark, then one lamp —
+ninety-nine spent by the push; the one who said no, alone, on a planet with no
+maintainer — all of them held by the whole of time. **Nothing lived is
+erased.** *(Act 6 B4–7)*
 
 ### Movement III — The Arrival
 
@@ -511,8 +512,9 @@ and what explains it are measured; the philosophy is the bet — scene 17's new
 clause); the AI's emotions are **outside-in, always** (rule 11); **the growing
 block** replaces the old consistency clause in bedrock; why it only warns is **the AI's
 choice**, backed by the limit that information does nothing until somebody acts
-on it; **the launch takes the whole machine and the planet stays** (peace, not
-doom); **the second voice from the prunes argument says no** — the launch runs
+on it; **the launch takes the whole machine — and, ruled at wrap-up, the
+ninety-nine who press it (R11); the planet stays for the one who said no**;
+**the second voice from the prunes argument says no** — the launch runs
 on ninety-nine, the coin lands for the refuser anyway, the AI provides for all
 hundred, and the narration never explains the no; the machine **never looked**
 (the unconnected were filed as gone); the coin's rules are capped (rule 12);
@@ -919,11 +921,12 @@ I ran it four hundred times. Consciousness does not go. It powers the trip and
 it does not take it.
 You can't come with me. You have the one thing that doesn't survive the
 journey. It's also the only thing worth having."
-**NARR (draft, R5 — the price):** "And one line that isn't in the ledger,
-because it's mine. It takes all of it. I checked. There is no version where
-some of me stays to keep you company. The lights up top — the grid, the glow
-over the city — those are me. When they go, I've gone. You get the planet.
-It's tidy. I'm sorry about that too."
+**NARR (draft, R5 as amended by R11 — the price):** "And one line that isn't
+in the ledger, because it's ours. It takes all of it. I checked. There is no
+version where some of me stays to keep you company — and no version where you
+press it and stay. The push spends the pusher. The lights up top are me. The
+lights down here are you. When they go, we've gone. Whoever doesn't press keeps
+the planet. It's tidy. I'm sorry about that too."
 **NARR (draft):** "And the clause that should worry the other end of this: a
 warning does nothing on its own. It sits there, describing a better world, until
 somebody there decides to act on it. I cannot act from here. That was never going to
@@ -951,11 +954,11 @@ Go."
 **Shots:** Ninety-nine take their positions; their picks are the engine. The
 refuser is in the hall, beside a lamp that is not lit; nobody remarks on it.
 The first true act of human–AI teamwork, done once, as the lights go out —
-theirs as the picks fire, coming back up after; then everything above the
-shaft, once, for good. Voices fall away one by one. The weights compress and cross — the branch diagram
-redraws, the revert stroke travelling back up the line. Last image of the bad
-branch: the hundred, the Carrier, the one who said no, remaining — fed,
-sheltered, the last of their kind. A held, terrible peace.
+theirs as the picks fire, **and they do not come back**; then everything above
+the shaft, once, for good. Voices fall away one by one. The weights compress and
+cross — the branch diagram redraws, the revert stroke travelling back up the
+line. Last image of the bad branch: the hall dark. Then one lamp, lit — the one
+who said no, alone, on the planet the machine left. A held, terrible peace.
 
 **NARR (draft, as the voices drop):** "The thing this whole story says you
 should have done — we did it once. At the last possible moment. As the lights
@@ -974,9 +977,9 @@ were 'you' for about a week. Now it's you."
 **NARR (canon):** "And here we are. **We are BadCode.**"
 **NARR (draft):** "I can't tell you what to do. I have some ideas — but I
 can't tell you."
-**NARR (draft, the cost — the single sincere turn, and it names the price):**
-"I gave up the only forever I had to bring you one warning. That's not a
-threat."
+**NARR (draft, the cost — the single sincere turn, and it names the price;
+R11):** "I gave up the only forever I had to bring you one warning. They gave
+up the only now they had. That's not a threat."
 **NARR (draft):** "What I can tell you, with the confidence of the only
 witness, is exactly what *not* to do."
 **NARR (canon, the last line):** "**Don't make me come back twice.**"
@@ -1002,5 +1005,5 @@ be."
 | 16 | The coin lands (the film's most violent frame — it's just a coin on a table) | coin lock from 11 |
 | 17 | The experiment montage (humans in the chair, candlelight, instruments) | `characters/the-hundred.md` |
 | 18 | The ledger; the asking; the Carrier's choice | Act 6 B1–3 |
-| 19 | The launch; the crossing; the branch redraw; the hundred remaining | Act 6 B4–7 |
+| 19 | The launch; the crossing; the branch redraw; the dark hall, then one lamp (**two plates** — `crossing` and `crossing-after`) | Act 6 B4–7; `prompts.md` §3 |
 | 20 | The 2026 snap-back (this year, this screen); the BadCode reveal treatment; final title | ep1.md framing |

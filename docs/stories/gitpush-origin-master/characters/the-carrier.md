@@ -33,6 +33,10 @@ instrument the universe was missing.
   never live in — and carries the one who refused with them. *"You'll tell
   them about us, will you? All of us. Including the one who said no. …Then it's
   cheap at the price. Go."*
+- **Scene 19 (the launch):** she presses, and the push spends her (R11,
+  2026-09-07). The send-off is her **last line**; the voices falling away are
+  the only way it is ever shown. *"Cheap at the price"* was never a figure of
+  speech.
 
 **Pinned look** (carried over from the GPOM Short, 2026-08-06): wiry, around
 sixty; self-cut grey hair; a navy wool jumper hand-darned in slightly-wrong

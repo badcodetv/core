@@ -206,8 +206,8 @@ unfired cut; cuts 1–5 and the frozen narration for cuts 1–4 are untouched.*
 | **12** `vault` | 15 | How they hid (*"I counted what was connected. They weren't."*); **the refuser's first line** (*"Speak for yourself"*) and the narrator declining to explain them. | free — unfired; a **third speaking human performance** |
 | **13** `coin-lands` | 16 | The incidental landing — the refuser glances at the rig on the way past and it lands. | free — unfired |
 | **14** `experiments` | 17 | The bet clause (*"I can't prove that last part. I bet everything I had on it anyway."*) and the shortcut beat (*"It doesn't stack. It doesn't aim. It settles."*). | free — unfired |
-| **15** `ledger` | 18 | The why (a choice, not physics); the price (*"It takes all of it… You get the planet."*); **ninety-nine**; the no; the Carrier's line extended (*"Including the one who said no"*). Ledger item 2 reads *it cannot un-happen what happened.* | free — not yet prompted |
-| **16** `crossing` | 19 | One figure mid-hall beside a lamp that is not lit; two lights — theirs come back, the machine's goes out once. Prompt amended in §3. | free — unfired |
+| **15** `ledger` | 18 | The why (a choice, not physics); the price (*"It takes all of it… The push spends the pusher."* — R11); **ninety-nine**; the no; the Carrier's line extended (*"Including the one who said no"*). Ledger item 2 reads *it cannot un-happen what happened.* | free — not yet prompted |
+| **16** `crossing` | 19 | One figure mid-hall beside a lamp that is not lit; two lights — **theirs do not come back** (R11), the machine's goes out once. **A second plate** for the last image: the dark hall and one lamp. Prompt amended in §3, `crossing-after` added. | free — unfired; one extra still |
 
 **Unchanged by these rulings:** cuts 1–5, 7–11 and 17; the songs; the frozen narration; the
 register drift; the coin's totem lock (cuts 8/13); the cut order; every asset id.
@@ -1098,13 +1098,32 @@ extinguishing.
 
 - **Light source:** the lamps themselves, going out across the frame
 - **The refuser (R6, 2026-09-07 — [`critique-pass-5.md`](./critique-pass-5.md)):** one figure
-  mid-hall beside a lamp that never lights; nobody remarks on it. The lamps are theirs and come
-  back up after; the machine's light is everything above the shaft, and goes out once (R5).
-- **Lint:** ✅ 2026-08-08 — nobody dies on screen; they are still there at the
-  end. This is a held, terrible peace, not a death scene.
+  mid-hall beside a lamp that never lights; nobody remarks on it. The lamps are theirs and **do not
+  come back** (R11); the machine's light is everything above the shaft, and goes out once (R5).
+- **Lint:** ✅ 2026-08-08, amended 2026-09-07 (R11) — nobody dies **on screen**;
+  the lamps go out and do not come back, and one is lit after (second plate
+  below). No bodies, no gore, nobody falling. A held, terrible peace.
 
 ```prompt
 Hyper-realistic photograph, 35mm film grain, warm low light against deep black, no lens flares, landscape orientation, deep unlifted shadows. A wide view down the length of the underground shelter hall, photographed from one end. A hundred people stand spaced evenly apart in the dark, each beside a small lamp, one figure mid-hall beside a lamp that is not lit, facing the far end of the hall — seen from behind and at distance, no face readable. Most of the lamps are still lit but a run of them nearest the camera have already gone out, so the near third of the hall is in complete darkness and the light recedes away from the viewer in a long diminishing line. Absolutely still. Calm, not panicked. No text, no fantasy effects.
+```
+
+---
+
+### crossing-after → `.../storyboard/img/crossing-after.jpg`  · canon 19 · band R2
+
+**The last image of the bad branch** — added 2026-09-07 (R11). The same hall a
+beat later: every lamp out, one lamp lit mid-hall, the one who said no beside
+it. It must read as the *same frame, later* — same camera position, same lens,
+same end of the hall as `crossing` above.
+
+- **Light source:** one lamp, mid-hall, and nothing else
+- **Lint:** no bodies, no gore, no debris, nobody fallen. The figure is seen
+  from behind and at distance, no face readable. The survival is neither reward
+  nor punishment and the picture says neither (R6/R10 — never diagnose).
+
+```prompt
+Hyper-realistic photograph, 35mm film grain, one small warm light against almost total black, no lens flares, landscape orientation, deep unlifted shadows. A wide view down the length of the same underground shelter hall, photographed from one end, the same camera position and lens as before. Every lamp along the hall is out and the hall is in complete darkness, except one small lamp lit alone in the middle distance. Beside it one figure stands, seen from behind and at distance, facing away down the dark hall, no face readable. Nobody else is present. Absolutely still. Calm, not panicked, not triumphant. No text, no fantasy effects.
 ```
 
 ---

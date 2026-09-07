@@ -49,7 +49,8 @@ that there is a number of them at all. Which is also exactly why the deathless
 AI is poor: nothing is scarce for it, so
 nothing has value — *that is what boredom is.* And it is why the hundred's trade
 (spending safety to buy meaning) is rational rather than tragic: they are the
-only ones in the story who can still pay full price. One claim, three anchors —
+only ones in the story who can still pay full price — and in the launch they do,
+literally (R11, 2026-09-07): the push spends the pushers. One claim, three anchors —
 the re-pricing, the AI's emptiness, the vault.
 
 **The reader's own door — the funniest outcome (folded in 2026-08-07, from

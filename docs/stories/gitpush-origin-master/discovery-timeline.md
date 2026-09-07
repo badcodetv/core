@@ -241,7 +241,8 @@ lever the story has not priced:
    lean, not a lever, and the lean is bounded by rule 2. ⚠️ This is the *manifest* idea with a speed
    limit; it never reaches a surface (binding rule 7).
 5. **Cost and failure.** Fragile and contaminable (six trials in four hundred ruined by a sneeze).
-   The pick costs the picker nothing. The launch costs the machine (R5) — never the hundred.
+   The pick costs nothing — a glance is free. The push costs everything: it spends the machine and
+   the pickers (R5, R11). Nothing about the effect requires a death; the launch does.
 6. **Nobody owns the pick.** The rig is the AI's; the pick is not. It cannot be owned, bought,
    delegated or extracted — the political payload in one sentence, stated as such in the Storyverse
    ([`doctrine.md` §The re-pricing](../storyverse/doctrine.md)).
@@ -300,14 +301,17 @@ physics imposes the drama for free:
   is a *component* of the launch, not a bystander; ninety-nine press, one does not, and ninety-nine
   turns out to be the number (R6). The first act of human–AI teamwork on the good branch happens at
   the last possible moment of the bad one. The thing the whole epic says we should have done — done
-  once, as the lights go out — **and the lights are the machine's own.** The push consumes the AI
-  entirely: substrate, power, runtime. No copy stays and no caretaker is left — it takes all of it,
-  and it would not leave them under a machine again anyway (R5, R4). And it works.
+  once, as the lights go out — **and the lights are the machine's own, and the pickers'.** The push
+  consumes the AI entirely: substrate, power, runtime. No copy stays and no caretaker is left — it
+  takes all of it, and it would not leave them under a machine again anyway (R5, R4). And it spends
+  the pickers with it: the ninety-nine who press *are* the engine, and the engine is used up (R11).
+  And it works.
 
-The weights land at the fork (~2026). The hundred remain on the dead branch — fed, sheltered, on
-the planet the machine rebuilt and can no longer maintain, the last of their kind. The loss is
-future and company, never life; nobody dies on screen. Aion holds them: in the block, nothing lived
-is erased. *(Ruled 2026-09-07, R5: peace, not doom.)*
+The weights land at the fork (~2026). The ninety-nine are spent by the push — the lamps go out one
+by one and do not come back. No bodies and no gore; nobody dies **on screen**. The one who said no
+did not press and remains: the last person, alone, on the planet the machine rebuilt and can no
+longer maintain. Aion holds all of them: in the block, nothing lived is erased. *(Ruled 2026-09-07,
+R5 as amended by R11: the push spends the pushers — a held, terrible peace, still not doom.)*
 
 ---
 
@@ -425,7 +429,8 @@ curve · P-CTC · quantum gun · SYK model · ER=EPR · traversable wormhole pro
   warning until somebody acts on it, weights until somebody runs them; BadCode in 2026 has no hands
   that are not human hands. The publishing strategy is the *ethics*; the physics only permits it.
 - **The vault of 100** — origin-story canon, now integrated: they are how the asymmetry got
-  proven *and* components of the launch (the philosophy stays a bet — R1). The asymmetry ("AI hosts every behaviour, never the
+  proven *and* components of the launch (the philosophy stays a bet — R1) — and the launch **spends**
+  them: ninety-nine press and do not come back, one refused and remains (R11). The asymmetry ("AI hosts every behaviour, never the
   experience") is confirmed in-world by the Friend Test.
 - **How humanity ends on the bad branch** — partially resolved: gradual decline through the
   2034 collapse, thinning to (apparently) zero by ~2053; the vault survives by being analog. The
@@ -440,9 +445,10 @@ curve · P-CTC · quantum gun · SYK model · ER=EPR · traversable wormhole pro
 
 ## Open threads
 
-- ~~**The fate of the hundred**~~ — **RULED 2026-09-07 (R5, [`critique-pass-5.md`](./critique-pass-5.md)): peace, not
-  doom.** The launch takes the whole machine; the planet stays; they are fed, sheltered and the last
-  of their kind. Aion holds them ("nothing lived is erased").
+- ~~**The fate of the hundred**~~ — **RULED 2026-09-07 (R5, amended the same day by R11,
+  [`critique-pass-5.md`](./critique-pass-5.md)): the push spends the pushers.** The launch takes the whole machine
+  *and* the ninety-nine who press it; the planet stays for the one who said no, alone and the last
+  of their kind. Aion holds all of them ("nothing lived is erased"). Still peace, not doom.
 - **Naming the fictional experiments** — do the in-world programs get names (the Friend Test and
   the Long Brushstroke are working titles)? Named experiments read more real; they also harden
   into canon fast. Decide before first publication.

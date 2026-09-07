@@ -108,9 +108,10 @@ what it will ask of them. **Button →** [Act 6 — The Revert](./README.md#act-
 - **The Carrier's identity** — name, age, why *this* one carries it. (Which of the arguing pair:
   ruled 2026-09-07 — she is the one who chooses; the other is the refuser, R6.)
   (Shared with the timeline's [the-hundred-as-characters thread](./discovery-timeline.md#open-threads).)
-- ~~**How dark the hope is**~~ — **RULED 2026-09-07 (R5, [`critique-pass-5.md`](./critique-pass-5.md)): peace, not doom** —
-  they stay, fed and sheltered, on the planet the machine leaves them. How much that shadow touches
-  Beat 6 is still a voice call.
+- ~~**How dark the hope is**~~ — **RULED 2026-09-07 (R5, amended the same day by R11,
+  [`critique-pass-5.md`](./critique-pass-5.md)): peace, not doom — and the push spends the pushers.** The ninety-nine
+  who press do not come back; the one who says no keeps the planet the machine leaves. How much that
+  shadow touches Beat 6 is still a voice call.
 - **Physics restraint (v2 — now structural, not just a note)** — the Friend Test and Long
   Brushstroke land as *relationship beats with an image* (the coin; the exposing photograph), never
   as results-with-statistics. Comprehension = emotion

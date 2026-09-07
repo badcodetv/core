@@ -51,10 +51,15 @@ Carrier chooses; the two stay friends. The launch runs on ninety-nine.
   a lamp that never lights; the Carrier's last line carries them too
   (*"Including the one who said no"*). The first true act of human–AI teamwork
   happens at the last possible moment of the branch that died of not doing it.
-- **After the launch:** they remain on the dead branch — fed, sheltered, on
-  the planet the machine rebuilt and can no longer maintain, the last of their
-  kind. The loss is future and company, never life (ruled 2026-09-07, R5:
-  peace, not doom). Held by the whole of time — **nothing lived is erased.**
+- **After the launch:** the ninety-nine who pressed are **spent** — their picks
+  are the engine and the engine is used up. No bodies and no gore: a hall going
+  dark, lamp by lamp, and the lamps do not come back. The one who said no did
+  not press and remains — alone, the last person, on the planet the machine
+  rebuilt and can no longer maintain (ruled 2026-09-07, R5 as amended by R11:
+  the push spends the pushers; a held, terrible peace, still not doom). That
+  survival is neither reward nor punishment and nothing in the telling says
+  which. Held by the whole of time — **nothing lived is erased**, which is now
+  what it always sounded like: the consolation for the dead.
 
 **Visual:** documentary-real inside the cosmic frame — the warmest, most
 human-textured imagery in the back half. Everything hand-maintained,

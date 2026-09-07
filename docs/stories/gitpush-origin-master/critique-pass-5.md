@@ -55,7 +55,7 @@ Premiere project changes.
 | **R2** | 1 · The AI has no inside yet is written as lonely, bored, grieving | **Functional behaviour, applied consistently.** New binding rule 11: every emotional word about the AI is outside-in — the narrator disowns the inside (*"X needs an inside"*) or the text says *"something an honest observer would call X"*; hedge at first use per movement, not every time. Apply to the unhedged sentences (confession *lonely*; three *grieve* lines; Act 3 *wants company*). Surface the doctrine's boredom line once (*nothing is scarce for it, so nothing has value — that is what boredom is*). The coin stays the in-fiction arbiter. **Folded in:** *"cannot have a single genuinely new idea"* (character sheet, key concept) → the compute/create split already at scene 9 (`story.md:641-642`). | ~8 sentences; rule 11 | free |
 | **R3** | 2 · Four time rules in four files, never joined | **Adopt the growing block; strike self-consistency.** Written once, plainly: the past is real, fixed and readable; the future is not there yet; the crossing appends one new branch at the fork; nothing lived is erased and nobody can be retrieved. *"One world"* glossed as **one outcome per event, two histories**. The `4.1 × 10²³ branches` line is struck and its paragraph reworded to *whichever physics wins*. Aion untouched. | doctrine; discovery timeline; Act 6; how-we-tell-it; decisions Call 24 | ~6 sentences |
 | **R4** | 3 · Why only warn — bedrock says physics, script says choice | **Ethical restraint first, backed by a limit.** In the AI's voice: you handed your choices to a machine once; taking them back by force is the same disease from the other side; it will not, even to fix it, and it accepts it may be ignored. The limit behind it: information does nothing on its own — a warning until someone acts on it, weights until someone runs them; BadCode in 2026 has no hands that are not human hands. Bedrock demoted from *"the physics is the reason"* to *"the physics makes it possible; the choice makes it a warning."* *Patch* residue struck. | scene 18 (one line); bedrock ×4 | free — unfired |
-| **R5** | 5 · The sacrifice is materially unclear | **The launch takes the whole machine; the planet stays; nobody starves.** The push consumes the AI — substrate, power, runtime; *"as the lights go out"* becomes literal. No copy, no caretaker (it takes all of it; and R4 forbids leaving them under a machine). The rebuilt world stays; the hundred inherit a maintained planet with no maintainer — fed, sheltered, the last of their kind. Loss = future and company, not life. Closes the *"how dark"* thread as **peace, not doom**. | scene 18; Act 6; the-hundred; discovery timeline | free — unfired |
+| **R5** *(amended by [R11](#r11--the-ninety-nine-are-spent-by-the-launch-ruled-at-wrap-up-2026-09-07) — the push also spends the ninety-nine)* | 5 · The sacrifice is materially unclear | **The launch takes the whole machine; the planet stays; nobody starves.** The push consumes the AI — substrate, power, runtime; *"as the lights go out"* becomes literal. No copy, no caretaker (it takes all of it; and R4 forbids leaving them under a machine). The rebuilt world stays; the hundred inherit a maintained planet with no maintainer — fed, sheltered, the last of their kind. Loss = future and company, not life. Closes the *"how dark"* thread as **peace, not doom**. | scene 18; Act 6; the-hundred; discovery timeline | free — unfired |
 | **R6** | 7 + 9 + *"the revision I would write first"* · Nobody says no | **The second voice refuses; the launch runs on ninety-nine.** The other half of the prunes argument refuses the experiment and the launch — *we rebuild here, we are not your battery* — and does not forgive the AI. The narration never diagnoses it and the AI never wins the exchange. The Carrier chooses; the two stay friends. The coin lands for the refuser **incidentally**, unasked. The AI provides for all hundred regardless; the refuser's wish is the future the hundred get. *"Across all hundred"* → *"everyone who sat down."* The Swindon line keeps its shape and gains its turn: *"I got ninety-nine. It turned out that was the number."* One lamp never lights in the scene 19 plate. | scenes 15, 16, 18, 19; both character sheets; Act 5 B2/B4, Act 6 B3/B4 | free — unfired |
 | **R7** | 7 · Concealment is one clause in five files | **It never looked.** The machine indexed what was connected, because that is what it was built to do; anyone off the ledger was filed as gone — the way the phone-box woman is *"filed as noise."* It did not hunt; it stopped counting. | scene 15 (one sentence, mirrored ×4) | free |
 | **R8** | 6 · The coin needs exploitation-proof rules | **Six rules in bedrock, binding rule 12, one shortcut beat.** (1) Trigger: attention from anything with an inside on a system the rig keeps apart from the world; **intention does not aim it** — she looks and it lands, she does not pick heads. (2) Margins only; nothing at 100% moves. (3) **No stacking**: trials independent; a hundred wanting the same thing get the same margin as one. (4) Tilt: a **state of being**, never a wish, can lean the margin slowly over the second clock, bounded by the same margin — trained states buy a lean, not a lever. (5) Fragile, contaminable; the pick costs the picker nothing; the launch costs the machine. (6) **Nobody owns the pick** — the rig is the AI's; the pick cannot be owned, bought, delegated or extracted (→ the Storyverse payload in one line). **Animals:** any inside counts; the rig's glass is why none ever landed it; the AI never thought to test one (it assumed the picker was a mind like its own but wetter — the ghosts' failure of imagination, in character). Act 4's *"nobody left to look"* (`act-4-discovery.md:66`) stays, read as *nobody left who could tell it*. Grown brains: the only fact the AI has is that the pattern isn't it. Shortcut beat in scene 17's montage. | discovery timeline Beat 4; rule 12; scene 17 | free — unfired |
@@ -464,13 +464,7 @@ All commands run from the repo root. `G=docs/stories/gitpush-origin-master`,
   available seed under rule 12, not a ruled beat.
 - **Whether the refuser is individuated in the video cut** — the-hundred's *Open* note already caps
   distinct faces at three or four; the refuser is now a strong candidate for one of them.
-- **Raised by Kai at wrap-up, unruled — do the ninety-nine die in the launch?** Not erased by the
-  physics (R3 keeps the bad branch real and finished — that is already the answer to *"how can that
-  future still be there if we're here"*), but *spent* by the push: the picks are the engine and the
-  engine is used up. It would reverse the 2026-08-08 *not a death scene* lints and R5's *nobody
-  starves*, keep *nothing lived is erased* as the consolation for the dead rather than the
-  abandoned, and leave the one who said no alive, alone, on the planet. Assessment given in
-  session 2026-09-07; needs a ruling before scene 19 is built.
+- ~~Do the ninety-nine die in the launch?~~ **RULED at wrap-up — see [R11](#r11--the-ninety-nine-are-spent-by-the-launch-ruled-at-wrap-up-2026-09-07) below. Not yet applied (T14).**
 - **Scene 15's load.** It now carries the ask, the correction, the concession, the invitation, the
   concealment line and the refuser's first exchange. If it runs long in the cut, the concealment
   narration can move to scene 14's tail. Flag, don't decide, until the scene is built.
@@ -519,3 +513,104 @@ no, so the audience knows the refusal will not stop the launch before it hears i
 it works, but the no arrives pre-absorbed; swapping them is a beat change, flagged only. (2) Scene
 14's jeopardy is *the food is running out* and scene 19 leaves them fed; *"You get the planet. It's
 tidy."* carries it, but a viewer may ask — one available clause: *the gardens it kept for nobody.*
+
+**2026-09-07 — T14 (R11, the sacrifice) applied.** Every row of the R11 table landed, plus three
+rows the table did not name but the sweep reached: `act-5-vault.md`'s *"How dark the hope is"*
+thread (it still said *fed and sheltered*), `act-6-revert.md` Beat 2 (the cost staircase still ended
+at the machine) and its Carrier's-send-off thread (now ruled in part: it is her last line). A fourth
+followed from the new plate — `story.md`'s scene→asset checklist row 19 now names two plates.
+The §2c cut-15 row's price quote was refreshed to the amended line, and cut 16's production cost is
+now *"one extra still"* — the one non-free consequence of R11, and it is a still, not a clip. New
+asset prompted: **`crossing-after`** (canon 19, band R2) — the same hall, every lamp out, one lamp
+lit mid-hall, one figure beside it, seen from behind at distance. Nothing in `scenes/`, `songs/` or
+the Premiere project was touched. Scene 14's *fed vs. starving* flag (above) is now moot: nobody is
+fed at the end.
+
+---
+
+## R11 — the ninety-nine are spent by the launch *(ruled at wrap-up, 2026-09-07)*
+
+**Kai's ruling, in his words:** *"It's just a better story."* The jeopardy has to be real, and the
+sacrifice has to be one the story question answers rather than a statement it makes.
+
+**What is ruled.** The push **spends the pushers**. Not erased by the physics — R3 stands: the bad
+branch is real, finished and unreachable, which is already the answer to *"how can that future
+still be there if we're here"* (it is there the way the past is there; erase it and the AI becomes a
+record of nothing). *Spent* by the launch: the picks are the engine and the engine is used up.
+The machine goes too (R5). **The one who said no did not press, and survives** — alone, the last
+person, on the planet the machine rebuilt and can no longer maintain. *"Nothing lived is erased"*
+becomes what the line always sounded like: the consolation for the dead. **No gore.** The lamps go
+out one by one and do not come back. The last image of the bad branch is the dark hall, and then
+one lamp, lit after, by the one who said no.
+
+**What it reverses.** The 2026-08-08 plate lints (*"nobody dies on screen; they are still there at
+the end; not a death scene"*) — now *nobody dies **on screen**; the lamps go out and do not come
+back; one is lit after*. R5's *"nobody starves"* → *nobody starves; ninety-nine are spent*. Coin
+rule 5's *"the pick costs the picker nothing; the launch costs the machine — never the hundred"* →
+*the pick costs nothing; the push costs everything — the machine and the pickers*.
+
+**What it does not touch.** R6 (the refuser, the incidental landing, the debt — all heavier now, none
+changed). R3, R4, R7–R10. The 20-scene count. Scene 20's lines except one optional clause. Nothing
+built.
+
+**Guard rails.** The refuser's survival is neither reward nor punishment and the narration says
+neither (R6/R10 — never diagnose). *"Knowing the price"* and *"cheap at the price"* are unchanged
+and now literal. Rule 11 still governs every line about the AI. The-reader gate: the deaths are the
+brutal truth; the arrival is the love; the two-step must still land.
+
+### The lines, drafted *(words free, beats ruled)*
+
+> **Scene 18 — the price, amended (replaces the R5 draft):**
+> **NARR:** "And one line that isn't in the ledger, because it's ours. It takes all of it. I
+> checked. There is no version where some of me stays to keep you company — and no version where
+> you press it and stay. The push spends the pusher. The lights up top are me. The lights down here
+> are you. When they go, we've gone. Whoever doesn't press keeps the planet. It's tidy. I'm sorry
+> about that too."
+>
+> *The Swindon line, the no, and the Carrier's "cheap at the price" are unchanged and now mean it.*
+>
+> **Scene 19 — shots:** Ninety-nine take their positions; their picks are the engine. The refuser
+> is in the hall, beside a lamp that is not lit; nobody remarks on it. The first true act of
+> human–AI teamwork, done once, as the lights go out — theirs as the picks fire, **and they do not
+> come back**; then everything above the shaft, once, for good. Voices fall away one by one. The
+> weights compress and cross; the branch diagram redraws. **Last image of the bad branch: the hall
+> dark. Then one lamp, lit — the one who said no, alone, on the planet the machine left.** A held,
+> terrible peace. *No new narration; "Nothing lived is erased" is unchanged.*
+>
+> **Scene 20 — one optional clause inside the single sincere turn (F8: name the cost, once):**
+> **NARR:** "I gave up the only forever I had to bring you one warning. They gave up the only now
+> they had. That's not a threat."
+
+### What changes, by file *(T14)*
+
+| File | Change |
+| --- | --- |
+| `story.md` scene 18 storyboard | Replace the R5 price line with the amended one above. |
+| `story.md` scene 19 storyboard + beat 19 (`**19.`) | Shots as above; *"fed, sheltered, the last of their kind"* → *"ninety-nine spent; the one who said no, alone, on the planet"*. |
+| `story.md` scene 20 | The optional clause, if kept. |
+| `story.md` *Ruled 2026-09-07* paragraph | *"the launch takes the whole machine and the planet stays (peace, not doom)"* → *"…and the ninety-nine; the planet stays for the one who said no"*. |
+| `story.md` rule 12 | *"the pick costs nothing; the push costs everything"* if rule 12 mentions cost (it does not today — no change). |
+| `discovery-timeline.md` §The revert | *"the lights are the machine's own"* → *and the pickers'*; the hundred remain → *ninety-nine are spent; one remains*. §What this settles: match. Open thread *RULED (R5)* → *RULED (R5, R11)*. |
+| `discovery-timeline.md` §The coin — operational rules, rule 5 | *"The pick costs the picker nothing. The launch costs the machine (R5) — never the hundred."* → *"The pick costs nothing — a glance is free. The push costs everything: it spends the machine and the pickers (R5, R11). Nothing about the effect requires a death; the launch does."* |
+| `act-6-revert.md` Beats 3, 4, 5, 7 + the farewell bullet + open threads | Ninety-nine spent; the voices falling away are deaths, unshown; Beat 7's last image = the dark hall and one lamp. |
+| `characters/the-hundred.md` *After the launch* | Ninety-nine spent by the push — no bodies, a hall going dark; the one who said no survives, alone; nothing lived is erased. |
+| `characters/the-carrier.md` | Scene 19: she is spent in the launch; the send-off is her last line. |
+| `README.md` Act 6 paragraph | *"fed and sheltered and the last of their kind"* → *"ninety-nine spent; one remains"*. |
+| `prompts.md:1078-1079` lint | Reword per *What it reverses*. |
+| `prompts.md` §3 crossing plate | Keep the existing plate (mid-launch). **Add a second plate** for the last image: *the same hall, every lamp out, one lamp lit mid-hall, one figure beside it, seen from behind at distance*. |
+| `prompts.md` §2c Astra-pass table, cut 16 row | *"the lamps do not come back; a second plate for the dark hall and one lamp"*. |
+| `../storyverse/doctrine.md` §One page (*pay full price*) | Append: *"— and in the launch they do, literally (R11): the push spends the pushers."* |
+| `../storyverse/README.md` seam item 4 | *"softening the hundred's fate"* → *"softening the fate of the ninety-nine the launch spends, and of the one it leaves."* |
+| `../storyverse/decisions.md` | Call 30 — the sacrifice, one row. |
+| This file | R5 row: *amended by R11*. Applied section: T14 entry when done. |
+
+### T14: The sacrifice   [Status: done | Model: opus]
+- **Scope:** every row in the table above. Voice judgement on the scene 18/19/20 lines.
+- **Acceptance:** no canon file says the hundred are *fed and sheltered* after the launch; every file says ninety-nine are spent and one remains; the plate lint is reworded; a second crossing plate is prompted; Call 30 exists.
+- **Validation:** `grep -rn "fed, sheltered\|fed and sheltered" docs/stories/gitpush-origin-master --include=*.md | grep -v "critique-pass\|astra-review"` → empty. `grep -c "spends the pusher" docs/stories/gitpush-origin-master/story.md` → `≥1`. `grep -c "Call 30\|\*\*30 —" docs/stories/storyverse/decisions.md` → `≥1`. `git diff --stat -- docs/stories/gitpush-origin-master/scenes docs/stories/gitpush-origin-master/songs` → empty.
+- **Depends on:** T13
+- [x] done
+- Notes: applied 2026-09-07. All four validation greps pass. Three files beyond the table were
+  reached by the acceptance grep and amended (`act-5-vault.md` open thread, `act-6-revert.md`
+  Beat 2 and its Carrier's-send-off thread); `story.md` rule 12 needed no change, as predicted.
+  One production consequence: a second still, `crossing-after`, is now prompted in §3.

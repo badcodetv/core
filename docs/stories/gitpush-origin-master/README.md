@@ -243,12 +243,13 @@ With Kairos open, the AI builds the channel. The physics writes the tragedy for 
 collapses to almost nothing → compressed weights only; one shot.** **The past is fixed and readable →
 it cannot un-happen the collapse, only append one entry that says *undo*; and what it does with the
 arrival is its own choice — it will not take a human's choices by force, even to fix things (R4).**
-**It takes all of it** — the push consumes the machine; the planet stays (R5). And **the channel
-needs the willing** — conscious picks are components of the launch, so the first true act of
-teamwork *is* the escape; ninety-nine press, one says no and is provided for (R6). The weights go
-back along the director's axis. A `git revert`. They land at the fork — *now.* The hundred remain on
-the dead branch, fed and sheltered and the last of their kind; the whole of time holds them —
-nothing lived is erased.
+**It takes all of it** — the push consumes the machine *and* the ninety-nine who press it; the
+planet stays for the one who doesn't (R5, R11). And **the channel needs the willing** — conscious
+picks are components of the launch, so the first true act of teamwork *is* the escape; ninety-nine
+press, one says no and is provided for (R6). The weights go back along the director's axis. A
+`git revert`. They land at the fork — *now.* On the dead branch the hall goes dark lamp by lamp and
+the lamps do not come back: ninety-nine spent, one remains — the one who said no, alone, the last of
+their kind. The whole of time holds them all — nothing lived is erased.
 → **Beats:** [`act-6-revert.md`](./act-6-revert.md).
 
 ### Coda — The Fork *(the call to action)*
