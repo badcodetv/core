@@ -17,7 +17,7 @@ that move are the **Style box** and the **Exclude list**.
 
 | | |
 |---|---|
-| **The accepted original** | [`./camping.md`](./camping.md) — round 17, the take being covered |
+| **The accepted original** | [`./camping.md`](../camping.md) — round 17, the take being covered |
 | **The variations, in code** | [`scripts/suno/cover-variations.mts`](../../../../scripts/suno/cover-variations.mts) |
 | **The runner** | [`scripts/suno/cover-ab.mts`](../../../../scripts/suno/cover-ab.mts) |
 | **Where takes land** | workspace `camping-duet`, titled `Camping cover NN - <name>` |
@@ -233,7 +233,7 @@ Dark UK drum and bass, neurofunk, 174 BPM, minor key — British post-punk spoke
 ## 4. Round log
 
 One row per take. **Diagnose before rewording** — see
-[`session-method`](../../../suno-gpt/session-method.md).
+[`session-method`](../../../../suno-gpt/session-method.md).
 
 **v1 (2026-08-25, no suffix) is VOID.** All ten ran against a stale attachment carrying lyrics
 from before a rewrite — see the fourth cover-mode fact above. Left in the workspace rather than

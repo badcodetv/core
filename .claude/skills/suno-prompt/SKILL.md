@@ -43,7 +43,7 @@ Read on demand. Never reproduce its content in your reply, and don't lecture the
 Read the sheet **in full** — never from memory, the user edits between turns — then its
 `-prompt-history.md` **"What this song taught"** table, which is five lines rather than the
 whole log. Worked example: `docs/stories/camping/songs/`, where `camping.md` is the accepted
-sheet, `camping-released.md` the lyric-fidelity reference, and `camping-prompt-history.md`
+sheet, `camping-released.md` the lyric-fidelity reference, and `archive/camping-prompt-history.md`
 the log. If the song rebuilds released words, run the sheet's verification script after
 **every** lyric edit — Camping lost three words across nine rounds and nobody heard it.
 

@@ -418,17 +418,23 @@ export async function verify(page: Page) {
 export async function formMode(page: Page): Promise<{ mode: string | null; attached: string | null }> {
   const raw = await ev(
     page,
-    `const c = s => (s||'').replace(/\\s+/g,' ').trim();
-     const live = e => e && e.offsetParent !== null;
-     const tabs = [...document.querySelectorAll('[role=tab],button')].filter(live)
-       .filter(x => /^(simple|audio|custom|cover)$/i.test(c(x.innerText)));
-     const on = tabs.find(x => x.getAttribute('aria-selected') === 'true'
-       || /(selected|active)/i.test(String(x.className)));
-     // A Cover/Audio source shows as a clip card with a title next to the attachment row.
-     const row = [...document.querySelectorAll('div')].find(e => live(e) && c(e.textContent) === 'AudioVoiceInspo');
-     const near = row && row.parentElement ? c(row.parentElement.textContent) : '';
-     const src = near.replace('AudioVoiceInspo', '').trim();
-     return JSON.stringify({ mode: on ? c(on.innerText) : null, attached: src ? src.slice(0, 80) : null });`,
+    `const tabs = [...document.querySelectorAll('[role=tab],button')].filter(live)
+       .filter(x => /^(simple|audio|custom|cover|extend)$/i.test(c(x.innerText)));
+     // 🔑 CALIBRATED 2026-08-27 against a known-clean form and a known-contaminated one.
+     // Clean:        tabs are Simple / Audio / Custom, and the attachment row's OWN text is
+     //               exactly "AudioVoiceInspo" (15 chars, nothing else).
+     // Contaminated: a fourth tab "Cover" appears, and a clip card sits by the row
+     //               ("Camping cover - post-punk AI25 W45v5.5Cover").
+     // So: a Cover/Extend tab existing IS the attachment signal. Do not walk up to the parent —
+     // that swallows the lyrics editor's placeholder and reads as a false positive.
+     const coverTab = tabs.find(x => /^(cover|extend)$/i.test(c(x.innerText)));
+     // 🔴 ONE signal only. Every attempt to also read the attachment row matched an ANCESTOR
+     // and dumped the whole form as a false positive — \`find\` returns the first div in
+     // document order, and the row's text is a substring of half the page.
+     const simple = tabs.find(x => /^simple$/i.test(c(x.innerText)));
+     const mode = coverTab ? c(coverTab.innerText).toLowerCase()
+       : (simple && simple.getAttribute('aria-selected') === 'true') ? 'simple' : 'custom';
+     return JSON.stringify({ mode, attached: coverTab ? c(coverTab.innerText) : null });`,
   )
   try {
     return JSON.parse(raw as string)
@@ -517,17 +523,38 @@ async function load(page: Page, spec: SunoSpec, weirdness?: number) {
 
   console.log('style:', await fillChecked(page, '[data-testid="create-form-styles-wrapper"] textarea', spec.style))
   console.log('exclude:', await fillChecked(page, 'input[placeholder="Exclude styles"]', spec.exclude))
-  const paras = spec.lyrics.trim()
-    ? await setLyrics(page, spec.lyrics)
-    : (console.log('lyrics: INSTRUMENTAL — none written'), 0)
+  // 🔴 An instrumental atom must CLEAR the editor, not skip it. Skipping leaves the previous
+  // run's lyrics in the box — which would sing the narration over the bed. `setLyrics` already
+  // select-alls and deletes before writing, so passing '' is the clear.
+  const paras = await setLyrics(page, spec.lyrics)
+  if (!spec.lyrics.trim()) console.log('lyrics: INSTRUMENTAL — editor cleared')
 
   console.log(await setSlider(page, 'Style Influence', spec.styleInfluence ?? 75))
   if (weirdness !== undefined) console.log(await setSlider(page, 'Weirdness', weirdness))
+  // 🔴 A Voice, like the mode and the attachment, SURVIVES a box fill. Omitting `voice` from a
+  // spec does NOT detach whatever the last run left on — so an instrumental generation silently
+  // carries a vocal persona. Proven 2026-08-27: `gpom-cut1music-A` was generated with
+  // `badcode newsreader` still attached because the music spec simply had no `voice` key.
+  //
+  // The clean detector is documented and verified: the Audio Influence slider EXISTS ONLY when a
+  // Voice is attached.
+  const voiceOn = async () =>
+    ((await page.locator('[role="slider"][aria-label="Audio Influence"]').count()) as number) > 0
   if (spec.voice) {
     console.log(await attachVoice(page, spec.voice))
     console.log(await setSlider(page, 'Audio Influence', spec.audioInfluence ?? 50))
+  } else if (await voiceOn()) {
+    throw new Error(
+      'a saved Voice is still ATTACHED (the Audio Influence slider is present) but this spec asks ' +
+        'for none — an instrumental generation would carry a vocal persona. Detach it by hand ' +
+        '(the Voice chip in the Advanced panel) and re-run, or set `voice` in the spec.',
+    )
+  } else {
+    console.log('voice: none attached ✅')
   }
-  if (spec.durationSec) console.log(await setDuration(page, spec.durationSec))
+  console.log(
+    spec.durationSec ? await setDuration(page, spec.durationSec) : await setDurationAuto(page),
+  )
   if (spec.title) console.log('title:', await setTitle(page, spec.title))
   if (spec.workspace) console.log(await setWorkspace(page, spec.workspace))
 
@@ -539,8 +566,10 @@ async function load(page: Page, spec: SunoSpec, weirdness?: number) {
   if (v.excludeLen !== spec.exclude.length)
     problems.push(`exclude ${v.excludeLen}/${spec.exclude.length} — the truncation bug; fillChecked gave up`)
   if (v.lyricParas !== paras) problems.push(`lyrics ${v.lyricParas} paragraphs, expected ${paras}`)
+  // ⚠️ Duration is a WARNING, never a blocker. A take of the wrong length is trimmable; a round
+  // that refuses to run is not. Suno treats the number as a target anyway.
   if (spec.durationSec && !String(v.durationSec ?? '').startsWith(String(spec.durationSec)))
-    problems.push(`duration ${v.durationSec} — wanted ${spec.durationSec}s; More Options may not have opened`)
+    console.log(`⚠️ duration reads ${v.durationSec}, wanted ${spec.durationSec}s — generating anyway`)
   return { verify: v, problems }
 }
 
@@ -561,36 +590,73 @@ async function load(page: Page, spec: SunoSpec, weirdness?: number) {
  * shortens reliably and repeatedly fails to stretch — so aim slightly ABOVE the picture budget
  * and trim in the edit, never below in the hope it grows.
  */
-export async function setDuration(page: Page, seconds: number): Promise<string> {
-  const mounted = async () =>
-    ((await page.locator('[role="slider"][aria-label="Duration"]').count()) as number) > 0
+/**
+ * Put duration back to AUTO.
+ *
+ * 🔴 Omitting `durationSec` does NOT clear a duration — the form keeps whatever the last run set,
+ * exactly like the mode, the attachment and the Voice. Proven 2026-08-27: eight takes came back at
+ * 1:05 apiece from specs with no `durationSec` at all, because an earlier round had set 65.
+ */
+export async function setDurationAuto(page: Page): Promise<string> {
+  // 🔑 The Duration block re-renders as you toggle it, so anchoring on its text ("DurationCustomAuto"
+  // vs just "Duration") is unreliable. The number input is stable and its PLACEHOLDER IS "Auto" —
+  // so an empty value IS Auto. Clear it through React's native setter, same as setTitle.
+  const res = await ev(
+    page,
+    `const inp = document.querySelector('input[placeholder="Auto"][type=number]');
+     if (!inp) return 'duration:no-input';
+     if (inp.value === '') return 'duration:AUTO (already)';
+     const set = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set;
+     set.call(inp, '');
+     inp.dispatchEvent(new Event('input', { bubbles: true }));
+     inp.dispatchEvent(new Event('change', { bubbles: true }));
+     inp.blur();
+     return 'cleared';`,
+  )
+  if (res !== 'cleared') return String(res)
+  await page.waitForTimeout(600)
+  const back = await ev(page, `const i = document.querySelector('input[placeholder="Auto"][type=number]'); return i ? i.value : 'gone';`)
+  return back === '' ? 'duration:AUTO ✅' : `duration:AUTO FAILED (still ${JSON.stringify(back)})`
+}
 
-  for (let i = 0; i < 3 && !(await mounted()); i++) {
-    const mo = page.getByText('More Options', { exact: true })
-    if (!(await mo.count())) break
-    await mo.last().scrollIntoViewIfNeeded().catch(() => {})
-    const box = await mo.last().boundingBox()
-    if (!box) break
-    await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2)
-    await page.waitForTimeout(1400)
-  }
-  if (!(await mounted())) {
-    // 🔴 2026-08-27: the Advanced slider is GONE from the DOM. More Options is open (the exclude
-    // box lives in it and fills fine), yet `[role="slider"][aria-label="Duration"]` does not
-    // exist. The only duration control on the page is a `Duration / Custom / Auto` block holding
-    // `input[placeholder="Auto"][type=number]` (1-300) — the SIMPLE panel's twin, which Playwright
-    // reports as not visible and which our own notes record as unlinked. Diagnose, don't guess.
-    const why = await ev(
-      page,
-      `const c = s => (s||'').replace(/\\s+/g,' ').trim();
-       const mo = [...document.querySelectorAll('div')].some(e => c(e.textContent) === 'More Options');
-       const ex = !!document.querySelector('input[placeholder="Exclude styles"]');
-       const num = !!document.querySelector('input[placeholder="Auto"][type=number]');
-       return JSON.stringify({ moreOptionsPresent: mo, moreOptionsOpen: ex, simpleNumberInput: num });`,
-    )
-    return `duration:NO-ADVANCED-SLIDER ${why} — Suno's DOM changed; see automation.md`
-  }
-  return setSlider(page, 'Duration', Math.round(seconds))
+export async function setDuration(page: Page, seconds: number): Promise<string> {
+  // Legacy path: older Suno had a real slider inside More Options.
+  if (((await page.locator('[role="slider"][aria-label="Duration"]').count()) as number) > 0)
+    return setSlider(page, 'Duration', Math.round(seconds))
+
+  // 🔑 CURRENT PATH (2026-08-27). Advanced Mode's duration is no longer a slider — it is a
+  // `Duration / Custom / Auto` block with a number input (1–300). Our notes called that "the
+  // Simple panel's twin, unlinked"; that is now out of date, and there is no slider to be
+  // unlinked FROM. The input reports as not visible to Playwright, so it is driven the way
+  // `setTitle` drives its React input: through the native value setter plus an input event.
+  const res = await ev(
+    page,
+    `const hosts = [...document.querySelectorAll('*')].filter(e => live(e) && /^DurationCustomAuto$/.test(c(e.textContent)));
+     const h = hosts[hosts.length - 1];
+     if (!h) return 'no-duration-block';
+     const custom = [...h.querySelectorAll('button')].find(b => /^custom$/i.test(c(b.innerText)));
+     if (!custom) return 'no-custom-button';
+     custom.click();
+     const inp = h.querySelector('input[type=number]') || document.querySelector('input[placeholder="Auto"][type=number]');
+     if (!inp) return 'no-number-input';
+     const set = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set;
+     set.call(inp, String(a[0]));
+     inp.dispatchEvent(new Event('input', { bubbles: true }));
+     inp.dispatchEvent(new Event('change', { bubbles: true }));
+     inp.blur();
+     return 'set:' + inp.value;`,
+    Math.round(seconds),
+  )
+  await page.waitForTimeout(700)
+  const back = await ev(
+    page,
+    `const i = document.querySelector('input[placeholder="Auto"][type=number]') ||
+       [...document.querySelectorAll('input[type=number]')].pop();
+     return i ? i.value : null;`,
+  )
+  return String(back) === String(Math.round(seconds))
+    ? `duration:${back}s ✅`
+    : `duration:UNCONFIRMED (${res}, reads back ${JSON.stringify(back)})`
 }
 
 /** My Taste lives behind the profile menu and is ACCOUNT-WIDE — it affects every sheet. */
@@ -667,6 +733,127 @@ export async function getTaste(page: Page): Promise<string | null> {
   await page.keyboard.press('Escape')
   await page.waitForTimeout(600)
   return text
+}
+
+
+/**
+ * 🔴 ATTACH COVER AUDIO WITHOUT NAVIGATING — discovered 2026-08-27.
+ *
+ * The create form has an `Add audio` control (aria-label starts "Add audio") which opens a picker
+ * with Browse / Uploads / Workspaces. Browse lists every clip in the library BY TITLE, so a cover
+ * source can be attached from code. Until this was found, cover mode required a human to open the
+ * song page and use ⋯ → Remix ▸ Cover, and the attachment could not be restored if it dropped.
+ *
+ * 🔴 IT DROPS. On 2026-08-27 a 12-cell cover round lost its attachment after the FIRST Create —
+ * the audio and the (attachment-supplied) lyrics both vanished while Style and Exclude survived.
+ * Earlier rounds saw an attachment survive six Creates, so the behaviour is not consistent and must
+ * not be assumed. Re-attach per cell and verify.
+ *
+ * Every click here must be a REAL MOUSE CLICK: these are React handlers that ignore el.click(),
+ * the same trap as the More Options trigger.
+ */
+export async function attachCover(page: Page, query: string, index = 0, wantDuration?: string): Promise<string> {
+  // A search usually matches BOTH takes of a pair, identical in title and different in length, so a
+  // round that must reproduce an exact source picks by duration rather than by luck of ordering.
+  if (wantDuration) {
+    for (let i = 0; i < 4; i++) {
+      const r = await attachCover(page, query, i)
+      if (r.includes(wantDuration)) return r
+      if (r.startsWith('attach:index')) return `attach:no take matching ${wantDuration} for "${query}"`
+      if (!r.startsWith('attach:ok')) return r
+    }
+    return `attach:no take matching ${wantDuration} for "${query}"`
+  }
+  const click = async (x: number, y: number) => { await page.mouse.click(x, y); await page.waitForTimeout(2200) }
+  const hit = async (loc: unknown): Promise<boolean> => {
+    const l = loc as { boundingBox: () => Promise<{ x: number; y: number; width: number; height: number } | null> }
+    const b = await l.boundingBox().catch(() => null)
+    if (!b) return false
+    await click(b.x + b.width / 2, b.y + b.height / 2)
+    return true
+  }
+
+  // 🔴 The Add-audio control TOGGLES and lives at the TOP of the create column, which is usually
+  //    scrolled out of view — a boundingBox on an off-screen element still returns coordinates, so
+  //    the click silently lands on empty page. Escape first (a panel left open by a previous call
+  //    would be closed by the click meant to open it), then scroll it into view, then click.
+  await page.keyboard.press('Escape')
+  await page.waitForTimeout(600)
+  const add = page.locator('button[aria-label^="Add audio"]').first()
+  await add.scrollIntoViewIfNeeded().catch(() => {})
+  await page.waitForTimeout(500)
+  if (!(await hit(add))) return 'attach:no-add-audio-button'
+  if (!(await hit(page.getByText('Browse', { exact: true }).first()))) return 'attach:no-browse-item'
+
+  // The modal is titled "Choose a song to Remix". Its own Search box is the LAST one on the page;
+  // the workspace pane behind it has one too.
+  const search = page.getByPlaceholder('Search').last()
+  if (!(await search.count())) return 'attach:no-search-box'
+  await search.fill(query)
+  await page.waitForTimeout(2500)
+
+  // 🔴 SCOPE THE REMIX BUTTON TO THE MODAL. Every clip row in the workspace pane behind the modal
+  //    also reveals a "Remix" control on hover, so an unscoped text match finds ~43 of them and
+  //    clicking one dismisses the modal without attaching anything.
+  const boxes = (await page.evaluate(
+    `(() => {
+      const c = (s) => (s || '').replace(/\\s+/g, ' ').trim()
+      let n = [...document.querySelectorAll('*')].filter(e => e.offsetParent !== null
+        && c(e.textContent) === 'Choose a song to Remix').pop()
+      while (n && !/Library/.test(c(n.innerText || ''))) n = n.parentElement
+      if (!n) return '[]'
+      const btns = [...n.querySelectorAll('button,[role="button"]')]
+        .filter(b => b.offsetParent !== null && c(b.innerText) === 'Remix')
+        .map(b => { const r = b.getBoundingClientRect(); return { x: r.x + r.width / 2, y: r.y + r.height / 2 } })
+      return JSON.stringify(btns)
+    })()`,
+  )) as string
+  const rows = JSON.parse(boxes) as { x: number; y: number }[]
+  if (!rows.length) return `attach:no-match-in-picker (${query})`
+  if (index >= rows.length) return `attach:index ${index} of ${rows.length} matches (${query})`
+  await click(rows[index].x, rows[index].y)
+  await page.waitForTimeout(1800)
+
+  // 🔴 "Overwrite Styles?" — the SAME trap as attaching a Voice. Picking a remix source offers to
+  //    replace your Style box with the source's own styles, and the answer is ALWAYS Keep Current:
+  //    the sheet is the prompt, and the source's styles are whatever it happened to be made with.
+  const kc = page.getByRole('button', { name: 'Keep Current', exact: true })
+  if (await kc.count()) {
+    await hit(kc.first())
+    await page.waitForTimeout(1200)
+  }
+
+  const got = await ev(
+    page,
+    `const m = c(document.body.innerText).match(/Audio Cover ([^]{0,60}?) \\d\\d:\\d\\d\\/(\\d\\d:\\d\\d)/);
+     return m ? c(m[1]) + ' ' + m[2] : null;`,
+  )
+  // 🔴 The remix picker leaves the right-hand pane on the library browser, and `listTakes` reads
+  //    the CLIP LIST from that pane — so without this, `create()` polls for takes it cannot see and
+  //    reports a timeout on takes that generated perfectly well (observed on cv2, 2026-08-27).
+  await ensureClipList(page).catch(() => {})
+  return got ? `attach:ok ${got} (${rows.length} matched, took #${index})` : 'attach:FAILED — no Audio Cover on the form'
+}
+
+
+/**
+ * Remove the attached cover source. The control is `aria-label="Clear audio condition"` on the
+ * attachment row; its sibling `Change condition type from Cover` switches Cover/Extend/etc.
+ *
+ * Safe to call in fresh mode because `attachCover` can put the source back in one command — before
+ * 2026-08-27 detaching was irreversible without a human on the song page, which is why the runner
+ * used to abort here instead.
+ */
+export async function detachCover(page: Page): Promise<string> {
+  const b = page.locator('button[aria-label="Clear audio condition"]').first()
+  if (!(await b.count())) return 'detach:nothing-attached'
+  await b.scrollIntoViewIfNeeded().catch(() => {})
+  const box = await b.boundingBox().catch(() => null)
+  if (!box) return 'detach:not-visible'
+  await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2)
+  await page.waitForTimeout(1500)
+  const still = await ev(page, `return /Audio Cover/.test(c(document.body.innerText)) ? 'yes' : 'no';`)
+  return still === 'no' ? 'detach:ok' : 'detach:FAILED — still attached'
 }
 
 /** Click Create and wait for takes carrying `title` to appear. 10 credits, 2 takes per click. */

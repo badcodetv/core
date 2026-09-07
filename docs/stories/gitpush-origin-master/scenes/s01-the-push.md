@@ -345,3 +345,276 @@ head, 0.18 at the tail. Codec noise.
 clip: `AE.ADBE Motion` Anchor Point (0.5,0.5)→(0.5,0.5162) and Scale 100→318, bezier, at
 **clip-relative 5.60 → 8.32**. Verified by render, not by reading it back — frames at 79.00s and
 82.20s differ by 68.87, and the last frame's edges read 14.6/255.
+
+---
+
+# 🆕 The descent ladder — rebuild, 2026-08-27
+
+**Kai, 2026-08-27, on the built scene:** the tower push is *"a bit tame, like there's very little
+actual zoom"*; the lit floor *"doesn't reflect once we're inside that building"*; and we cut from
+the whole Earth straight to among the skyscrapers, when there could be *"a view from like 30,000
+feet down onto Hong Kong before we then go into Hong Kong."* The office stays — *"I quite like the
+office just because it's so bare. It adds to the vibe."* **No street-level shots.**
+
+## Why the push was tame — measured, not felt
+
+The built B2 is an ffmpeg **1.07×** eased push on a 1376×768 still. Per
+[`post-production.md`](../../../flow/post-production.md) §4 that is the *native ceiling* — the
+tamest move the toolchain can make. Everything past it trades sharpness, and ~2.5× "looks like
+what it is." So the fix is not a bigger zoom. It is **route 2: two stills at two scales**, each
+used at native resolution, cut together. The step-in does the work a zoom cannot.
+
+⚠️ **Veo must not push into the facade.** A glass curtain wall is ranks of near-identical objects,
+which is the documented regeneration trigger (`plant-room-recut.md`). Camera locked; Premiere moves.
+
+## The ladder
+
+| # | Rung | Status | Secs |
+| --- | --- | --- | --- |
+| — | Satellite over Earth | scene 0's ending | — |
+| 1 | **30,000ft, straight down, night** | 🆕 `s01-aerial-30k` | ~5 |
+| 2 | Descent among the towers | `HK-b1-descent`, unchanged | 8.0 |
+| 3 | **The tower in its district** | 🆕 `s01-tower-v3`, replaces `s01-tower-ext2-b` | ~3 |
+| 4 | **The lit band, close** | 🆕 `flow_edit_image` off the approved rung-3 golden | ~3 |
+| 5 | The bare office, one CRT | `HK-b3-pushin`, unchanged | 8.0 |
+| 6 | The screen | `HK-b4-terminal`, unchanged | 8.3 |
+| 7 | The city, held, unchanged — the bookend | unruled | ~2.5 |
+
+**27.8s → ~37.8s.** Sanctioned by the narration sheet's *"a budget, not a constraint."*
+
+🔑 **The narrator's first line becomes literal.** *"Down there, everything was still working"*
+currently plays over a shot already among the towers. Over rung 1 it means what it says.
+
+## 🔑 Why rung 1 completes the motif, and why the vantage ruling does not block it
+
+Scene 0 opens on a macro **circuit board**, two LEDs blinking, and pulls out to reveal a satellite.
+`s01-hk-modern-b` was picked, in writing, because its grid of lit windows *"keeps the circuit-board
+rhyme with scene 0."* A city from 30,000ft at night, shot straight down, **is** a circuit board —
+lit traces, dark blocks, bright nodes. That is the **third** occurrence, which is where a motif
+gets clocked; two is a coincidence.
+
+🔴 **`vantage.md` ruled that "an aerial can never carry emptiness, because people were never
+visible from up there."** It does not apply here. That ruling governs aerials asked to prove
+**nobody is left**. Rung 1 is asked for the opposite — everything lit, ordered, working. The
+mechanism that failed there is not engaged.
+
+**The rule that stops it duplicating rung 2:** straight down, 75–90°, **no horizon and no sky**.
+With a horizon it becomes a pretty night flight and does rung 2's job; then it should be cut.
+
+## 🔑 The lights fix — the crack is a colour, not a fault
+
+The built B2's band is warm white and reads as an office at work; we then cut into a dark room lit
+by a green CRT. The rebuild makes the lit floor **dim, cold and faintly green** — *the wrong
+colour*. Nothing broken, nothing failing, no dystopia. One floor lit in a colour no modern office
+is lit in, and the audience cannot know why until we are inside.
+
+This is how the scene pays cinematography gate 2 without importing the collapse: **anachronism and
+absence, never decay.** The wide sets it up subtly; the close plate pays it off.
+
+## The prompts as sent — 2026-08-27, Nano Banana Pro, 16:9, 4 candidates each
+
+### Rung 1 · `s01-aerial-30k-{a,b,c,d}.jpg`
+
+```prompt
+Hyper-realistic documentary aerial photograph taken from very high altitude, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, calm observational tone, wide horizontal landscape composition filling the whole frame edge to edge. The camera points almost straight down at a large modern coastal city at night from about thirty thousand feet — there is no horizon and no sky anywhere in the frame, only the ground far below. The city reads as a vast orderly lattice of lit streets running in long straight lines across the frame, with dark rectangular blocks between them and small dense clusters of brighter light where the lines meet. A wide harbour and its channels cut through the lattice as smooth black voids, their edges traced by continuous bright lines along the waterfronts. Everything is very small and very far away — no individual building is distinguishable, no vehicles, no people. A thin even layer of atmospheric haze sits between the camera and the ground, softening the lights slightly, and one or two faint wisps of high cloud drift across the lower part of the frame, lit dimly from beneath by the city below them. Deep clean blacks, cool white and pale amber lights, everything orderly and well-maintained. Calm static observational framing, precise geometry. No readable text, no logos, no fantasy effects. No borders, no letterboxing, no white margins.
+```
+
+⚠️ **"Circuit board" is never said.** The geometry that produces the read is described instead —
+naming the simile risks Nano rendering an actual board.
+
+### Rung 3 · `s01-tower-v3-{a,b,c,d}.jpg`
+
+```prompt
+Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, calm observational tone, wide horizontal landscape composition filling the whole frame edge to edge. A modern city business district at night, photographed from another tall building at the same height. The dark glass curtain-wall flank of a tall contemporary office tower stands across the middle of the frame, its floors almost entirely unlit and black, its clean precise horizontal floor bands and vertical mullions catching only faint reflected light from the city. One single floor, low in the frame, is dimly lit from within — a long narrow horizontal band of weak, cold, faintly greenish light, much darker and duller than an ordinary lit office would be, the only lit thing on the whole building, and clearly the wrong colour beside the warm white lights of the city elsewhere in the picture. Down the left side of the frame, the black unlit corner of a nearer building stands in silhouette in the foreground, cropping the view. Far behind and below, other dark towers and a soft scatter of small distant city lights. Well-maintained modern architecture, no grime, no rust, no decay, no dereliction. No people. Any signage is small, distant and its lettering illegible. Calm static observational framing, deep clean blacks. No readable text, no logos, no fantasy effects. No borders, no letterboxing, no white margins.
+```
+
+🔴 **Defect in this roll: the city was not named, and the climate came back wrong.** The built B2
+prompt said *"modern Hong Kong business district"*; this one said only *"a modern city business
+district"*. Candidates c and d carry bare winter trees and what reads as snow or slush, and b/c/d
+read Eastern European. `HK-b1-descent` is unmistakably Victoria Harbour, so the geography breaks.
+**Re-roll owed with Hong Kong restored, plus subtropical / no snow / no bare winter trees, and
+"the neighbouring towers are also dark" to fix the second defect below.**
+
+🟡 **Second defect: "the only lit thing" did not hold.** Candidate a has many other lit windows on
+the subject tower and brightly lit neighbours, so the single band stops being singular.
+
+🟡 **Grade note, all four: the sky is light-pollution grey, not the register's deep clean black.**
+Realistic, and gradeable in post — not a re-roll reason on its own.
+
+## Status
+
+- [x] Rung 1 plates — 4 candidates, 0 credits
+- [x] Rung 3 plates — 4 candidates, 0 credits, **two defects logged above**
+- [ ] Kai picks rung 1 and rung 3 goldens ← **the still-approval gate**
+- [ ] Rung 3 re-roll with the geography and darkness fixes
+- [ ] Rung 4 close plate — `flow_edit_image` off the approved rung-3 golden, never a fresh generation
+- [ ] Any video: rung 1 needs one locked Veo clip for the drifting cloud; rungs 3–4 may need none
+- [ ] Retire `s01-tower-ext2-b.jpg` from `storyboard/img/` once rung 3 is locked
+
+## Roll 2 — Hong Kong named, 2026-08-27
+
+**Kai approved `s01-aerial-30k-a` and `s01-tower-v3-a` from roll 1**, ruled the city need not be
+named, then asked for the re-roll anyway *"just to see if we get something really cool"* — and for
+the same on the aerial. Roll 1's picks stand as the fallback; both files are kept.
+
+**It paid off on both.** The single change was naming Hong Kong (plus, on the tower, the
+`only lit window` / `neighbouring towers dark` / `no snow` clauses that fix roll 1's logged defects).
+
+### Rung 1 · `s01-aerial-30k-hk-{a,b,c,d}.jpg`
+
+Same prompt as roll 1 with *"a large modern coastal city"* → *"Hong Kong"*. Everything else verbatim.
+
+🟢 **`-a` is the best aerial in either roll — recommended golden.** Victoria Harbour is now a
+recognisable black S-curve through the middle of the frame, which does three jobs at once: it is
+the scale reference, it locks the geography to `HK-b1-descent`, and it keeps the dark-channel /
+lit-trace read. Cloud wisps sit clearly between camera and ground. `-d` is a close runner-up with
+slightly cleaner blacks.
+
+🔴 **`-b` must not be picked despite looking dramatic** — it has a curved **horizon** with cloud
+below it and a baked **vignette border**. It breaks the no-horizon rule that stops rung 1
+duplicating rung 2, and the border is the `s01-tower-ext` failure recurring.
+
+🟡 **`-c` is the "nice view from a plane" failure mode** — oblique, land and cloud reading as a
+horizon band along the top.
+
+⚖️ **The one thing roll 1's `-a` did better:** it was more abstract, so marginally more
+circuit-board. `hk-a` trades a little of that for a real, recognisable place. Judged worth it,
+because rung 2 is unmistakably Victoria Harbour and the geography now locks.
+
+### Rung 3 · `s01-tower-v4-hk-{a,b,c,d}.jpg`
+
+```prompt
+Hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, calm observational tone, wide horizontal landscape composition filling the whole frame edge to edge. A modern Hong Kong business district at night, subtropical, photographed from another tall building at the same height. The dark glass curtain-wall flank of a tall contemporary office tower stands across the middle of the frame, its floors entirely unlit and black, its clean precise horizontal floor bands and vertical mullions catching only faint reflected light from the city. One single floor, low in the frame, is dimly lit from within — a long narrow horizontal band of weak, cold, faintly greenish light, much darker and duller than an ordinary lit office would be, and clearly the wrong colour beside the warm white lights of the city. It is the only lit window anywhere on that tower, and every neighbouring tower in the picture is dark and unlit too, so that one band is the only lit thing in the whole frame. Down the left side of the frame, the black unlit corner of a nearer building stands in silhouette in the foreground, cropping the view. Far behind and below, dark towers and a soft scatter of small distant street lights. Well-maintained modern architecture, no grime, no rust, no decay, no dereliction. No snow, no bare winter trees, no frost. No people. Any signage is small, distant and its lettering illegible. Calm static observational framing, deep clean blacks. No readable text, no logos, no fantasy effects. No borders, no letterboxing, no white margins.
+```
+
+🟢 **`-c` is the best tower plate in either roll — recommended golden.** It solves roll 1's
+grey-sky note for free by **containing no sky at all** — the framing looks across and down at
+building tops, so the blacks are genuinely deep. The green band is the brightest, cleanest thing
+in the frame, wraps the corner, and is unmistakably the wrong colour. Real dark foreground
+bottom-left. The dense street and elevated road below read Hong Kong without a landmark.
+
+🟡 **`-b`'s sky is dusk, not night** — a deep blue-purple. Beautiful, and it fights the full-night
+descent shot either side of it.
+
+🟡 **`-a`** is close behind `-c` but the neighbouring towers on the right are lit, so *"the only lit
+thing"* softens again. **`-d`** is washed — pale grey sky, tower reads mid-grey not black.
+
+⚠️ **Snow and bare trees are gone in all four.** The climate clause worked.
+
+### Picks
+
+| Rung | Roll 1 (approved, kept as fallback) | Roll 2 (recommended upgrade) |
+| --- | --- | --- |
+| 1 · aerial | `s01-aerial-30k-a` | 🟢 `s01-aerial-30k-hk-a` |
+| 3 · tower | `s01-tower-v3-a` | 🟢 `s01-tower-v4-hk-c` |
+
+- [x] Rung 1 plates — 8 candidates across two rolls, 0 credits
+- [x] Rung 3 plates — 8 candidates across two rolls, 0 credits, roll 1's two defects fixed in roll 2
+- [ ] Kai confirms the roll-2 upgrade ← **the still-approval gate**
+- [ ] Rung 4 close plate — `flow_edit_image` off the confirmed rung-3 golden, never a fresh generation
+- [ ] Any video: rung 1 needs one locked Veo clip for the drifting cloud; rungs 3–4 may need none
+- [ ] Retire `s01-tower-ext2-b.jpg` from `storyboard/img/` once rung 3 is locked
+
+## 🔒 Goldens confirmed — Kai, 2026-08-27
+
+| Rung | Golden |
+| --- | --- |
+| 1 · aerial | **`s01-aerial-30k-hk-a.jpg`** |
+| 3 · tower wide | **`s01-tower-v4-hk-c.jpg`** |
+
+Roll 1's `s01-aerial-30k-a` and `s01-tower-v3-a` are superseded but kept on the scratch folder.
+
+## Rung 4 · the lit band, close — `s01-band-close-{a,b,c,d}.jpg`
+
+Built with `flow_edit_image` off the rung-3 golden, **never a fresh generation** — a second
+independent roll would have invented a different building and the step-in would not read as one
+tower. Prompt as sent:
+
+```prompt
+Using the provided image as the exact reference for the building, its glass curtain wall, its palette and its lighting, render the same tower photographed from much closer with a long lens. The single dimly lit floor — the narrow horizontal band of weak, cold, faintly greenish light — now runs across the middle of the frame and fills it from edge to edge, with several floors of dark unlit glass above it and several below. Keep the same building exactly: the same fine grid of vertical mullions and horizontal floor bands, the same corner where the facade turns, the same dark reflective glass, the same faint reflections of distant city lights in the unlit floors. The lit band stays weak, cold and faintly green, clearly the wrong colour, and it is still the only lit thing in the frame. The interior remains unreadable — we see glass, glare and the greenish glow through it, never a room, never furniture, never people. Deep clean blacks, 35mm film grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, calm static observational framing. No readable text, no logos, no fantasy effects. No borders, no letterboxing, no white margins.
+```
+
+✅ **Continuity held on all four** — same mullion grid, same corner geometry, same dark reflective
+glass, same band. The edit-off-golden route is the right one for a two-scale pair and should be
+the default whenever a step-in has to read as one building.
+
+🔑 **The test that decides this plate is not the band, it is the interior.** Rung 5 is the bare
+office and its emptiness is the reveal. If rung 4 shows readable desks, the reveal is spent a beat
+early.
+
+| Cand | Band | Green | Interior | Verdict |
+| --- | --- | --- | --- | --- |
+| a | clean straight run, corner turn right of centre | present | pale rectangles starting to read as desks | strong runner-up |
+| b | lower and thinner | moderate | partly readable | amber reflection blob lower-left distracts |
+| c | **most graphic** — full width, strongest horizontal | **weakest, nearly white** | least readable ✅ | the abstract option |
+| d | wraps a curved corner, band above centre with dark glass below | **strongest** | indistinct shapes only | 🟢 **recommended** |
+
+🔑 **A couple of faint warm windows in `-d` are a gain, not a defect.** *The wrong colour* only
+reads if a right colour is in frame to compare against: warm = normal, green = anomalous. A plate
+with no warm reference makes the green merely dark rather than wrong.
+
+🟡 **Drift to log: the band came back brighter than the prompt asked.** *"Weak, dim, much duller
+than an ordinary lit office"* rendered as a fairly bright band in all four. Defensible at this
+distance — we are far closer than in rung 3 — and it grades down in post if wanted. Do not re-roll
+for it; the continuity is worth more than the exposure.
+
+- [x] Rung 4 plates — 4 candidates, 0 credits
+- [ ] Kai picks the rung-4 golden ← **the still-approval gate**
+- [ ] Video: rung 1 needs one locked Veo clip for the drifting cloud. Rungs 3 and 4 are stills
+      pushed 1.07× in Premiere and need **no credits at all**
+- [ ] Assemble on the `gpom-s01` timeline; re-space the narration's cut-2 `t` values to the new ladder
+- [ ] Retire `s01-tower-ext2-b.jpg` from `storyboard/img/`; commit the three new goldens
+
+## Rung 4 golden — Kai, 2026-08-27
+
+**`s01-band-close-d.jpg`.** All three plates now locked:
+`s01-aerial-30k-hk-a` · `s01-tower-v4-hk-c` · `s01-band-close-d`.
+
+## Rung 1 animation — `s01-r1-aerial-{a,b}.mp4`, 40 credits
+
+Veo 3.1 Fast (matching `HK-b1-descent`), 8s, 2 candidates, start-image only. Motion prompt names
+the moving things **first and hard**, then locks the camera — the order that stopped Veo freezing
+the whole frame on this scene's first shoot:
+
+```prompt
+The thin wisps of cloud low in the frame drift slowly and steadily across the lit city beneath them, thinning and reforming as they travel. Across the whole city the countless small lights twinkle and shimmer faintly and continuously. A few tiny boat lights crawl very slowly across the black water of the harbour, leaving faint narrow wakes behind them. Nothing else in the frame changes. The camera does not move at all — no pan, no tilt, no zoom, no roll, no drift; it is locked off rigidly for the entire shot, as if bolted down.
+```
+
+### 🔴 A whole-frame difference number cannot tell drift from twinkle — and on a city at night it will read as drift
+
+The first measurement was **44/255 between the first and last frame** on both takes, against this
+scene's own references of 5.25 for normal motion and 0.88 for codec noise. That looked like a
+camera move and it was not.
+
+Fitting scale + translation left the residual almost unchanged (**46.6 and 44.2**), which is the
+tell: geometry was never the cause. Splitting an adjacent-frame difference by luminance settled it —
+the change lives **entirely in the lit pixels**, because thousands of small lights vary
+independently and no alignment can cancel that.
+
+| | take a | take b | reference |
+| --- | --- | --- | --- |
+| Camera pan over 8s | **58 px** (4.5% of width) | **14 px** (1.1%) | docs expect 34–66 px creep |
+| Camera scale over 8s | 0.98× | 0.98× | a 2% pull-back, both |
+| Adjacent-frame change | **11.67** | **5.03** | 5.25 = normal motion |
+| …in lit areas | 20.76 | 8.49 | — |
+| …in dark areas | 1.93 | **0.94** | 0.88 = codec noise |
+
+🟢 **Take `-b` is the pick.** Half the frame-to-frame change, so the lights *twinkle* rather than
+scintillate; the pan is a fifth of take a's; and its dark areas measure **0.94**, i.e. the water and
+sky are genuinely still and only the city is alive. Take `-a` is over-animated — at 11.67 the city
+sparkles, which reads as an effect.
+
+**The 2% pull-back and 14 px pan are kept, not fixed.** Both are inside the documented creep, both
+are motivated at this altitude, and Premiere is adding the real camera move over the top — a shot
+that truly holds still reads as a scanned photograph.
+
+🔑 **Method rule for any future night-city or star-field beat: never judge lock from a whole-frame
+mean.** Fit scale + translation for the camera, and split an adjacent-frame difference by
+luminance for the content. The two numbers answer different questions and the whole-frame mean
+answers neither.
+
+- [x] Rung 1 animation — 2 takes, 40 credits, `-b` selected
+- [ ] Upscale `-b` 1280×720 → 1920×1080 (1.5×, per `post-production.md` §2)
+- [ ] Rungs 3 and 4 to 1920×1080 stills with 1.07× eased pushes — **0 credits**
+- [ ] Assemble the six rungs on `gpom-s01`; re-space narration cut 2's `t` values
+- [ ] Retire `s01-tower-ext2-b.jpg` from `storyboard/img/`; commit the three new goldens

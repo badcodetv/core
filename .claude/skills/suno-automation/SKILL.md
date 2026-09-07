@@ -319,6 +319,25 @@ voices in the Style box — which is all the Camping sheets — must abort when 
 because a Voice beats the Style box and the take will sound *plausible*, just not cast.
 `cover-genre.mts` carries the reference implementation (`EXPECT_VOICE` / `NO_VOICE`).
 
+### 🔴 EVERYTHING ON THE FORM PERSISTS — the general law (2026-08-27)
+
+**Filling the four boxes changes the four boxes and NOTHING ELSE.** Every other piece of form state
+survives into the next run, and each one has now bitten us, in this order:
+
+| State | How it bit | Guard |
+| --- | --- | --- |
+| **Mode + attachment** | an inherited **Cover** form generated two narration pairs as covers of a Camping track — 40 credits, and a confident false diagnosis | `formMode()` aborts on wrong mode or any attachment |
+| **Saved Voice** | an *instrumental* generation ran with `badcode newsreader` still attached, because the spec simply had no `voice` key | `load` aborts if a Voice is on and the spec asks for none |
+| **Duration** | **eight takes came back at 1:05 apiece from specs with no `durationSec` at all** — an earlier round had set 65 and omitting the field cleared nothing | `setDurationAuto()` runs whenever `durationSec` is absent |
+
+🔑 **The law: OMITTING A FIELD IS NOT THE SAME AS CLEARING IT.** Any spec field that maps to form
+state must have an explicit "off" path, or the next run silently inherits the last one's setting.
+**Assume anything you did not actively set is still whatever the previous session left.**
+
+⚠️ **`status`'s `durationSec` is not trustworthy** — it kept reading `65` after the input was
+verified empty. The authoritative read is `input[placeholder="Auto"][type=number]`, whose
+**placeholder is "Auto", so an empty value IS Auto**.
+
 ### 🔴 CHECK THE MODE BEFORE THE BOXES — the most expensive miss so far (2026-08-27)
 
 **The create form has FOUR mode tabs — Simple · Audio · Custom · Cover — and an

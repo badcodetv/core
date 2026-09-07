@@ -22,7 +22,7 @@ pronunciation.
 |---|---|
 | **The four boxes to paste** | §1–§4 below, plus §5 settings |
 | **The released take** | [`./camping-released.md`](./camping-released.md) — Jack's video is built on it |
-| **How we got here** | [`./camping-prompt-history.md`](./camping-prompt-history.md) — fourteen rounds, what failed and why |
+| **How we got here** | [`./camping-prompt-history.md`](./archive/camping-prompt-history.md) — fourteen rounds, what failed and why |
 | **The general lessons** | promoted into [`docs/suno-gpt/`](../../../suno-gpt/README.md) — they apply to any track |
 
 ---
@@ -73,7 +73,7 @@ generation, cannot be turned off, and can only be replaced.
 > for a two-man duet with a full arrangement. **Read My Taste back at the start of every
 > session**: it belongs to no sheet, survives reloads, and is invisible from the create form.
 > `npx tsx scripts/suno/style-ab.mts check` prints it. The full finding and what it invalidates:
-> [`camping-style.md`](./camping-style.md) §1.
+> [`camping-style.md`](./archive/camping-style.md) §1.
 
 ```
 Vocals: British post-punk spoken word — two white British men in their late forties and fifties, ranting and talking over the beat rather than singing. One is low, gravelly, smoke-worn and nasal, half-shouting and half-muttering into a cheap close mic: a working-men's-club voice. The other is higher, clean and plummy BBC English, precise and unhurried, talking down at you from a wide room. Ranted spoken word over sung melody, every time. Raw over polished.
@@ -542,7 +542,7 @@ instrumental passage in this verse`, the anti-gap guard bought over rounds 6–1
 remaining clause has a reason that can be stated. Cutting further means cutting a
 hard-won guard on a guess, so the next cut should be settled by a generation, not by
 argument. The round-15 cues are archived in
-[`./camping-prompt-history.md`](./camping-prompt-history.md) as the revert target — put
+[`./camping-prompt-history.md`](./archive/camping-prompt-history.md) as the revert target — put
 them back one cue at a time, verse 1 first, if arrangement regresses.
 
 **Honest limit on all of this:** we have never A/B'd cue length on this track. Long cues

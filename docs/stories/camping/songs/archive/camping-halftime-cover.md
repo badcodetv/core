@@ -17,7 +17,7 @@ carries what each round was for and what it taught. Edit the markdown, not the s
 |---|---|
 | **The runner** | [`scripts/suno/cover-genre.mts`](../../../../scripts/suno/cover-genre.mts) |
 | **Where takes land** | workspace `camping-duet`, titled `Camping cover - <lane> AI<n> W<n>` |
-| **The words** | [`camping.md`](./camping.md) §4 is canon; cover mode inherits them and nothing here writes to the lyrics box |
+| **The words** | [`camping.md`](../camping.md) §4 is canon; cover mode inherits them and nothing here writes to the lyrics box |
 
 ---
 
@@ -46,7 +46,7 @@ is a new Create-mode take rather than another cover.
 **The register we are aiming at** is a real and documented British lineage — minimal abrasive
 beats under a ranted working-class spoken vocal, descending from The Fall, John Cooper Clarke,
 Ian Dury, The Streets and Linton Kwesi Johnson. It is also exactly the cultural register
-[`the-reader.md`](../../../marketing/the-reader.md) targets. 🔴 **It goes in as description, never
+[`the-reader.md`](../../../../marketing/the-reader.md) targets. 🔴 **It goes in as description, never
 as a band name** — Suno flagged `Linkin Park` live on 2026-08-26, so named artists are off the
 table for this sheet (same rule as a Flow policy block: describe the sound, never name the act).
 
@@ -296,7 +296,7 @@ produced plausible-looking output — which is what made them expensive.
 **The rule: a run declares its COMPLETE intended form state and verifies the live form against it
 before Create. Anything the run did not set this time is not trusted — inheritance is a bug, not a
 default.** Now written into
-[`.claude/skills/suno-automation/SKILL.md`](../../../../.claude/skills/suno-automation/SKILL.md)
+[`.claude/skills/suno-automation/SKILL.md`](../../../../../.claude/skills/suno-automation/SKILL.md)
 so it is not relearned per sheet, together with the standing rule that **Suno is account-level and
 only one session may drive it at a time** — browser channels parallelise Flow, not this.
 

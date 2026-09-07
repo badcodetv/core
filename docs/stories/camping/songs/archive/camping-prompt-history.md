@@ -7,12 +7,12 @@ song: ./camping.md
 # Camping — how the prompt got built
 
 **Archive.** Fourteen rounds of generate → listen → diagnose → fix, from 2026-08-20 to
-2026-08-21. The live prompt is [`./camping.md`](./camping.md); **nothing in this file is
+2026-08-21. The live prompt is [`./camping.md`](../camping.md); **nothing in this file is
 an instruction.** It is kept because the *failure analyses* are reusable, and because the
 same mistakes are easy to make twice.
 
 The lessons that generalise beyond this track have been promoted into
-[`docs/suno-gpt/`](../../../suno-gpt/README.md) — chiefly `files/suno-tag-mechanics.md`,
+[`docs/suno-gpt/`](../../../../suno-gpt/README.md) — chiefly `files/suno-tag-mechanics.md`,
 `files/lyricist-playbook.md` and `suno-voices.md` (Thread 4).
 
 ---
@@ -20,7 +20,7 @@ The lessons that generalise beyond this track have been promoted into
 ## What this song taught
 
 The one-minute version, for a future session that does not want to read seventeen rounds.
-Convention and reasoning: [`docs/suno-gpt/session-method.md`](../../../suno-gpt/session-method.md).
+Convention and reasoning: [`docs/suno-gpt/session-method.md`](../../../../suno-gpt/session-method.md).
 
 | What broke | Why | The fix | General rule now lives in |
 |---|---|---|---|
@@ -370,7 +370,7 @@ Suno handles best. Everywhere else, **the drop is a seam we can cut on.**
 > into `docs/suno-gpt/` where they apply to any track. Read it for why, never for what.
 
 Lifted from
-[`../../gitpush-origin-master/songs/git-push-origin-master-dnb.md`](../../gitpush-origin-master/songs/git-push-origin-master-dnb.md),
+[`../../gitpush-origin-master/songs/git-push-origin-master-dnb.md`](../../../gitpush-origin-master/songs/git-push-origin-master-dnb.md),
 which runs a real orchestra under 174 BPM drum and bass without either half
 sounding bolted on. **Added, not swapped** — no vocal clause, lyric line, line break
 or delivery cue was touched.

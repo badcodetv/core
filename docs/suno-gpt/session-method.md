@@ -158,7 +158,7 @@ complete set. **Treat a challenge as data, not as doubt to be reassured away.**
 
 Every `<song>-prompt-history.md` opens with a **"What this song taught"** table so a future
 session can absorb it in a minute without reading the log. Worked example:
-[`docs/stories/camping/songs/camping-prompt-history.md`](../stories/camping/songs/camping-prompt-history.md).
+[`docs/stories/camping/songs/archive/camping-prompt-history.md`](../stories/camping/songs/archive/camping-prompt-history.md).
 
 Columns: **what broke · why · the fix · where the general rule now lives.** The last column is
 the important one — an entry with nothing in it is a lesson that has not been promoted yet.

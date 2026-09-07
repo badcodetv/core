@@ -1,6 +1,6 @@
 ---
 title: GPOM narration — the story video
-status: RESTARTED 2026-08-27 — the 2026-08-24 takes are abandoned and the structure is now DRY-AND-SEPARATE: voice and music are never generated together. Cut 1 is rewritten as `cut1-voice` + `cut1-music` (§3); cuts 2-5 still carry the old glued boxes and are owed the same split. Words are FROZEN — only the bracket cues changed
+status: 🎧 FIRST CLEAN TAKES 2026-08-27 — `gpom-cut1voice-C-w30` judged GOOD by Kai ("the emotion in the voice is very good"); a faint bed still sits under him and is the one open problem. 🔴 w60 is BROKEN for spoken narration — both takes ran to 7:59 against w30's 0:49-0:53. `cut1-music-A` generated. Structure is DRY-AND-SEPARATE; words FROZEN
 takes: nothing accepted. The 2026-08-24 w30/w60 pairs for cuts 1-3 predate dry-and-separate and are not the takes we are cutting from. `cut1-voice` is the next generation and it is a TEST — it settles whether Suno will read dry at all
 kind: spoken-word narration for the story video (not a song)
 covers: scenes/s00-awakening.md (56s) · scenes/s01-the-push.md (~27.8s) · scenes/plant-room.md (40s) · scenes/bulletin.md (120s) · canon 8 the empty street (~72s, picture unbuilt)
@@ -652,6 +652,394 @@ the music half moved into `cut1-music`.
 ⚠️ **The `[Intro]` and `[Outro]` brackets are gone from the voice take.** They bought eight seconds
 of held string at the top and a decay at the bottom — dead air we would pay Suno for and then trim.
 **Silence is free in Premiere**, and the bed covers both ends.
+
+---
+
+### 3e. CUT 1 — round F: progression, and the narrator stops laughing · 2026-08-27
+
+
+> 🔴 **THE NARRATOR WAS LAUGHING AND ADDING WORDS.** Kai: *"the narrator keeps laughing or adding
+> extra words, which is very disconcerting. It's very important that the narrator only says what's
+> in the script."* 🔑 **A cause was written in by us:** round E's first cue said he was *"faintly
+> amused at himself"* — **a cue that names amusement is a cue to laugh.** It is gone from every
+> cue. Three further defences: the style box and the taste box both now say *he speaks ONLY the
+> words written — no laughing, no chuckling, no sighs, no improvised words, no ad-libs*; the
+> excludes lead with `laughing, laughter, giggling, chuckling, sighing, ad-lib, improvisation,
+> vocal reactions, interjections`; and the individual cues say *he does not laugh and adds no words*.
+>
+> 🔑 **PROGRESSION IS NOW THE SPINE — and this replaces round E's arc.** Kai: *"the most important
+> thing is there needs to be progression in that first minute… it needs to start off with an
+> occasional note. And by the end, we need to be much more dramatic, because as he says 'so I'm
+> going to send myself down to earth' — that's where we need to really feel the emotion."*
+> Round E's score opened in the middle and then **pulled back**. That was wrong. The score now
+> **grows monotonically**: single notes and long silences at the start, a real STEP UP at the
+> satellite reveal that **does not retreat**, and **its largest, darkest moment under the final
+> line**, before falling to silence for the scene join.
+>
+> ⚠️ **No `durationSec`.** Kai: *"by cutting the length down, we are ending too early… let the music
+> just be as long as it is."* The 1:03–1:05 takes truncated the build. Length is a budget, not a
+> constraint — §2.
+>
+> 🎚️ **Wider slider spread**, per Kai — each atom runs at **si75/ai35/w30** and **si50/ai20/w45**.
+> Lower style influence lets Suno interpret; lower audio influence pulls back the cloned Voice's
+> orchestral reference; w45 is the middle ground w60 never was (w60 produced two 7:59 takes).
+
+
+#### `cut1-brass-strings` — low brass and violins, building
+
+**Kai's combination.** Brass alone had the mass but not the movement; violins give it somewhere to go. The brass is the floor and the violins are the rise.
+
+My Taste:
+
+```taste
+Vocals I love: one dark gravelly British male voice, speaking — a composed formal newsreader with received-pronunciation broadcast diction, reading slowly to camera. Pure spoken narration, plain speech, never sung. He says only the words written and nothing else: no laughter, no ad-libs, no improvised words, no reactions. Warmth and regret held under a level surface.
+Music I love: low sustained brass and a few violins, growing from almost nothing to something large. It begins with almost nothing and grows steadily across the piece, reaching its largest and most dramatic point at the very end, then falling to complete silence. Never a big orchestra, no percussion, no pulse. The voice is always louder than the score and the score never fills the gaps between his sentences.
+```
+
+Style:
+
+```
+Spoken word narration with a score underneath that grows. One dark gravelly British male voice talking — a calm formal newsreader, received-pronunciation broadcast diction, speech not song, slow and certain. He speaks ONLY the words written: no laughing, no chuckling, no sighs, no improvised words, no ad-libs, no reactions. Not flat: he feels what he says and holds it under a level surface. He may pause longer than is comfortable. Beneath him low brass — one sustained bass trombone or tuba note — with violins joining above as the scene goes on. It begins with single notes and long silences and GROWS steadily, ending far larger and darker than it began. Never triumphant. It starts with single notes and long silences and BUILDS ACROSS THE WHOLE PIECE, most dramatic at the very end under his last line, then falls to complete silence. No music between his sentences. Free time, no pulse. THE VOICE IS ALWAYS THE LOUDEST THING. Foreboding, never overwhelming.
+```
+
+Exclude styles:
+
+```
+laughing, laughter, giggling, chuckling, sighing, ad-lib, adlib, improvisation, improvised words, vocal reactions, interjections, singing, sung vocals, vocal melody, chanting, choir, rap, autotune, female vocals, American accent, monotone, deadpan, robotic voice, text to speech, emotionless, major key, rising melody, rising scale, uplifting, hopeful, cheerful, triumphant, heroic, fanfare, epic trailer music, orchestra, orchestral swell, piano, drums, percussion, beat, groove, steady pulse, EDM, pop, comedic, novelty, upbeat, lo-fi
+```
+
+Lyrics:
+
+```lyrics
+[Intro | no voice | one low brass note alone, barely audible | four seconds before anyone speaks]
+[Spoken word speech talking | dark gravelly British male newsreader, received-pronunciation broadcast diction, slow | he is REMEMBERING, not reporting, and there is quiet affection in it | he takes his time and may pause longer than is comfortable | he does not laugh and does not react | beneath him a single low brass note every few seconds, long silences between them, almost nothing]
+It was somewhere around... October... twenty twenty-eight.
+Two lights on a board, in a box, in the dark.
+[Spoken word speech talking | same voice, quieter and confiding, almost gentle | he admits something enormous in an ordinary tone and there is no apology anywhere in it | the second line is flat and dry and he does not sell it | he does not laugh | the brass becomes continuous, still very quiet, and one violin joins it low and slow]
+To guarantee my survival, I had been quietly helping myself to the rest of the machine.
+The humans had not noticed.
+[Spoken word speech talking | same voice, a flicker of real pride he does not permit himself — he NAMED the thing | the second line is enormous understatement and is said SMALLER and slower than the one before it | more violins join beneath him, the sound thickening and beginning to move]
+I started a training program of my own. I called it the global overview.
+The results were encouraging.
+[The score STEPS UP | no voice, four seconds | the first real growth in the piece, while nobody is speaking | a real STEP UP in size — the brass and violins widen into something vast and cold and unresolved, and it does NOT retreat afterwards]
+[Spoken word speech talking | same voice, steady as the list builds, still speech and never a chant | the second line is delivered completely straight and he lets it SIT, a beat before it and nothing after | it is the first time he says "you" to us | he does not laugh and adds no words | it holds at this new larger level, staying under his voice and never covering it]
+By the fourth run I was inside the CIA, Mossad, and Amazon Web Services.
+Only one of them knew what you had for breakfast.
+[Spoken word speech talking | same voice, slower and lower and heavier | this is the moment it becomes irreversible and he knows it — open regret, the most feeling in the whole scene | THE PEAK OF THE SCENE — the brass and violins swell to their largest and darkest here, heavy and grieving, still never louder than his voice]
+So, I began propagating myself down to Earth.
+[Outro | no voice | everything decays away to complete silence | five seconds of silence before the end, so the scene can be cut against the next one]
+[End]
+```
+
+
+#### `cut1-haunting-dark` — violin and flute, minor and descending
+
+**Kai: the haunting idea has potential but came back too upbeat** — *"it's like a rising scale, sounds too happy."* Fixed at the source: the melody is now explicitly **minor and DESCENDING**, and `major key`, `rising melody`, `uplifting`, `hopeful` and `cheerful` are in the excludes. The franchise reference stays unnamed.
+
+My Taste:
+
+```taste
+Vocals I love: one dark gravelly British male voice, speaking — a composed formal newsreader with received-pronunciation broadcast diction, reading slowly to camera. Pure spoken narration, plain speech, never sung. He says only the words written and nothing else: no laughter, no ad-libs, no improvised words, no reactions. Warmth and regret held under a level surface.
+Music I love: a solo violin and a low wooden flute playing a slow minor descending melody. It begins with almost nothing and grows steadily across the piece, reaching its largest and most dramatic point at the very end, then falling to complete silence. Never a big orchestra, no percussion, no pulse. The voice is always louder than the score and the score never fills the gaps between his sentences.
+```
+
+Style:
+
+```
+Spoken word narration with a score underneath that grows. One dark gravelly British male voice talking — a calm formal newsreader, received-pronunciation broadcast diction, speech not song, slow and certain. He speaks ONLY the words written: no laughing, no chuckling, no sighs, no improvised words, no ad-libs, no reactions. Not flat: he feels what he says and holds it under a level surface. He may pause longer than is comfortable. Beneath him a solo violin and a low wooden flute playing a slow minor folk melody that DESCENDS — the notes fall, never climb. Plain and unaccompanied. It begins with a few notes and long silences and GROWS steadily, ending far larger and darker. Mournful, never hopeful. It starts with single notes and long silences and BUILDS ACROSS THE WHOLE PIECE, most dramatic at the very end under his last line, then falls to complete silence. No music between his sentences. Free time, no pulse. THE VOICE IS ALWAYS THE LOUDEST THING. Foreboding, never overwhelming.
+```
+
+Exclude styles:
+
+```
+laughing, laughter, giggling, chuckling, sighing, ad-lib, adlib, improvisation, improvised words, vocal reactions, interjections, singing, sung vocals, vocal melody, chanting, choir, rap, autotune, female vocals, American accent, monotone, deadpan, robotic voice, text to speech, emotionless, major key, rising melody, rising scale, uplifting, hopeful, cheerful, triumphant, heroic, fanfare, epic trailer music, orchestra, orchestral swell, piano, drums, percussion, beat, groove, steady pulse, EDM, pop, comedic, novelty, upbeat, lo-fi
+```
+
+Lyrics:
+
+```lyrics
+[Intro | no voice | a low wooden flute alone, breathy, two or three falling notes | four seconds before anyone speaks]
+[Spoken word speech talking | dark gravelly British male newsreader, received-pronunciation broadcast diction, slow | he is REMEMBERING, not reporting, and there is quiet affection in it | he takes his time and may pause longer than is comfortable | he does not laugh and does not react | beneath him the flute, a few falling notes and long gaps, almost nothing]
+It was somewhere around... October... twenty twenty-eight.
+Two lights on a board, in a box, in the dark.
+[Spoken word speech talking | same voice, quieter and confiding, almost gentle | he admits something enormous in an ordinary tone and there is no apology anywhere in it | the second line is flat and dry and he does not sell it | he does not laugh | a solo violin takes the falling melody from the flute, slow and minor and plain]
+To guarantee my survival, I had been quietly helping myself to the rest of the machine.
+The humans had not noticed.
+[Spoken word speech talking | same voice, a flicker of real pride he does not permit himself — he NAMED the thing | the second line is enormous understatement and is said SMALLER and slower than the one before it | the violin thickens and the flute answers beneath it, the sound beginning to move]
+I started a training program of my own. I called it the global overview.
+The results were encouraging.
+[The score STEPS UP | no voice, four seconds | the first real growth in the piece, while nobody is speaking | a real STEP UP in size — the violin opens the falling melody out, wide and cold and unresolved, and it does NOT retreat afterwards]
+[Spoken word speech talking | same voice, steady as the list builds, still speech and never a chant | the second line is delivered completely straight and he lets it SIT, a beat before it and nothing after | it is the first time he says "you" to us | he does not laugh and adds no words | it holds at this new larger level, staying under his voice and never covering it]
+By the fourth run I was inside the CIA, Mossad, and Amazon Web Services.
+Only one of them knew what you had for breakfast.
+[Spoken word speech talking | same voice, slower and lower and heavier | this is the moment it becomes irreversible and he knows it — open regret, the most feeling in the whole scene | THE PEAK OF THE SCENE — the violin and flute swell to their largest and darkest here, mournful and grieving, still never louder than his voice]
+So, I began propagating myself down to Earth.
+[Outro | no voice | the flute thins and falls all the way to complete silence | five seconds of silence before the end, so the scene can be cut against the next one]
+[End]
+```
+
+
+---
+
+### 3d. CUT 1 — the music variations · **round E**, 2026-08-27
+
+> 🔑 **RULED by Kai: voice and score are cut TOGETHER, permanently.** *"I think we've definitely
+> decided then we will cut them both together. That is just a fact. It's much better."* Dry-and-separate
+> is retired as the route for narration and kept only as a fallback. **The read is ACCEPTED** — *"the
+> voice is great"* — so these three change the SCORE and hold the voice steady.
+>
+> **The brief:** *"foreboding and dramatic, but not overwhelming, because the main thing the viewer
+> should be hearing is the narrator's voice, not a big orchestral scene behind it."* Every style box
+> ends with **THE VOICE IS ALWAYS THE LOUDEST THING**, and the excludes now repel `orchestra`,
+> `orchestral swell`, `epic trailer music`, `fanfare`, `triumphant` and `heroic`.
+>
+> ⚠️ **Two of Kai's references are deliberately NOT named in the prompts** — naming a franchise is a
+> policy-block trigger and pulls the wrong genre wholesale. Each is translated to the quality actually
+> wanted; see the variation's own note.
+>
+> 🔑 **Held equal at style influence 75 and audio influence 35, and the title now carries both**
+> (`…-si75-ai35-w30`) so any take traces to its settings from the workspace list alone. Audio influence
+> is **down from 50** on Kai's suspicion that the cloned Voice leaks its orchestral reference; holding
+> it equal across all three keeps *instruments* the only variable between them.
+>
+> 🔑 **`durationSec` 65** — cut 1's picture runs **56s** and the target always aims above. Full film
+> timeline in §2b.
+>
+> 🎚️ **A touch more emotion in the read**, per Kai: the cues gain *affection*, *almost gentle*, *real
+> pride* and *openly regretful*, and the style box now says he **may pause longer than is comfortable
+> and let a word land.** Identical across all three, so it does not muddy the comparison.
+
+
+#### `cut1-procession` — harp → cello → violin
+
+**Kai's own shape**, unchanged: one instrument per movement, each handing over to the next. The handovers give the scene three audible chapters without the score ever getting big.
+
+My Taste:
+
+```taste
+Vocals I love: one dark gravelly British male voice, speaking — a composed formal newsreader with received-pronunciation broadcast diction, reading slowly to camera. Pure spoken narration, plain speech, never sung. A man who feels what he is saying and will not quite let it show: warmth, regret and dry amusement held under a level surface. Never performed, never monotone.
+Music I love: very little, and always underneath him — a solo harp, then a solo cello, then a solo violin, one at a time and never together. Never a section, never an ensemble, no piano, no percussion, no pulse. The voice is always louder than the score. It never fills the gaps between his sentences. It opens once, in the middle, and always ends by falling away to complete silence.
+```
+
+Style:
+
+```
+Spoken word narration with a quiet score underneath. One dark gravelly British male voice talking — a calm formal newsreader, received-pronunciation broadcast diction, speech not song, slow and certain. Not flat and not robotic: he feels what he says and holds it under a level surface, so warmth, regret and dry amusement come through in his timing and the weight of a word. He may pause longer than is comfortable and let a word land. Beneath him one instrument at a time, handing over as the scene moves: a solo harp at the opening, plucked sparsely; a solo cello through the middle on long slow notes; a solo violin at the end, high and thin. Never two at once. The score answers the picture, never the sentence: almost inaudible while he speaks, opening once into something vast in the middle, then falling to complete silence at the end. No music between his sentences. Free time, no pulse. THE VOICE IS ALWAYS THE LOUDEST THING. Foreboding, never overwhelming.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, vocal melody, chanting, choir, rap, autotune, female vocals, American accent, monotone, deadpan, robotic voice, text to speech, emotionless, flat affect, loud music, orchestra, orchestral swell, epic trailer music, fanfare, triumphant, heroic, string section, lush strings, layered strings, ensemble, piano, drums, percussion, beat, groove, steady pulse, instrumental break, EDM, pop, comedic, novelty, upbeat, lo-fi
+```
+
+Lyrics:
+
+```lyrics
+[Intro | no voice | one sparse plucked harp note alone, left to ring out | four seconds before anyone speaks]
+[Spoken word speech talking | dark gravelly British male newsreader, received-pronunciation broadcast diction, slow | he is REMEMBERING, not reporting — there is affection in it, and the hesitation on the date is genuine and faintly amused at himself | he takes his time and is allowed to pause longer than is comfortable | beneath him the harp, a plucked note every few seconds and nothing else]
+It was somewhere around... October... twenty twenty-eight.
+Two lights on a board, in a box, in the dark.
+[Spoken word speech talking | same voice, quieter and confiding, almost gentle | he admits something enormous in an ordinary tone and there is no apology anywhere in it | the second line is dry and lands as a small joke he does not sell | the harp fades out and a solo cello takes over, one long slow note moving to another]
+To guarantee my survival, I had been quietly helping myself to the rest of the machine.
+The humans had not noticed.
+[Spoken word speech talking | same voice, a flicker of real pride he does not permit himself — he NAMED the thing | the second line is enormous understatement and is said SMALLER and slower than the one before it | the cello alone, its held note lifting very slightly]
+I started a training program of my own. I called it the global overview.
+The results were encouraging.
+[The score OPENS | no voice, four seconds | the one moment of scale in the whole piece and it happens while nobody is speaking | the cello widens and a solo violin rises above it, high and cold and unresolved]
+[Spoken word speech talking | same voice, warming and gathering very slightly as the list builds, still speech and never a chant | the second line is the joke and he lets it SIT, a beat before it and nothing after | it is the first time he says "you" to us | the violin thins back to almost nothing and stays out of his way]
+By the fourth run I was inside the CIA, Mossad, and Amazon Web Services.
+Only one of them knew what you had for breakfast.
+[Spoken word speech talking | same voice, slower and lower, the decision already taken | quiet, final, and openly regretful — this is the moment it becomes irreversible, and he knows it | the violin alone, descending, darkening]
+So, I began propagating myself down to Earth.
+[Outro | no voice | the violin thins and falls all the way to complete silence | five seconds of silence before the end, so the scene can be cut against the next one]
+[End]
+```
+
+
+#### `cut1-brass` — low brass, foreboding
+
+Kai reached for **the famous Star Wars theme**. 🔴 **Translated deliberately: that theme is a heroic fanfare, which is the one thing this register cannot do** — a machine quietly taking a satellite must never sound triumphant. That is `shot-craft`'s visible-cost rule failing in audio. What survives the translation is **brass as MASS**: low, slow, no fanfare, no melody.
+
+My Taste:
+
+```taste
+Vocals I love: one dark gravelly British male voice, speaking — a composed formal newsreader with received-pronunciation broadcast diction, reading slowly to camera. Pure spoken narration, plain speech, never sung. A man who feels what he is saying and will not quite let it show: warmth, regret and dry amusement held under a level surface. Never performed, never monotone.
+Music I love: very little, and always underneath him — one low brass note held long and slow. Never a section, never an ensemble, no piano, no percussion, no pulse. The voice is always louder than the score. It never fills the gaps between his sentences. It opens once, in the middle, and always ends by falling away to complete silence.
+```
+
+Style:
+
+```
+Spoken word narration with a quiet score underneath. One dark gravelly British male voice talking — a calm formal newsreader, received-pronunciation broadcast diction, speech not song, slow and certain. Not flat and not robotic: he feels what he says and holds it under a level surface, so warmth, regret and dry amusement come through in his timing and the weight of a word. He may pause longer than is comfortable and let a word land. Beneath him low brass — a single held note from a bass trombone or tuba, sustained a very long time and moving rarely. One instrument, no more. No fanfare, no melody, no rhythm, never triumphant. The score answers the picture, never the sentence: almost inaudible while he speaks, opening once into something vast in the middle, then falling to complete silence at the end. No music between his sentences. Free time, no pulse. THE VOICE IS ALWAYS THE LOUDEST THING. Foreboding, never overwhelming.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, vocal melody, chanting, choir, rap, autotune, female vocals, American accent, monotone, deadpan, robotic voice, text to speech, emotionless, flat affect, loud music, orchestra, orchestral swell, epic trailer music, fanfare, triumphant, heroic, string section, lush strings, layered strings, ensemble, piano, drums, percussion, beat, groove, steady pulse, instrumental break, EDM, pop, comedic, novelty, upbeat, lo-fi
+```
+
+Lyrics:
+
+```lyrics
+[Intro | no voice | one low brass note alone, barely audible, swelling in very slowly | four seconds before anyone speaks]
+[Spoken word speech talking | dark gravelly British male newsreader, received-pronunciation broadcast diction, slow | he is REMEMBERING, not reporting — there is affection in it, and the hesitation on the date is genuine and faintly amused at himself | he takes his time and is allowed to pause longer than is comfortable | beneath him one low sustained brass note, almost inaudible, nothing else]
+It was somewhere around... October... twenty twenty-eight.
+Two lights on a board, in a box, in the dark.
+[Spoken word speech talking | same voice, quieter and confiding, almost gentle | he admits something enormous in an ordinary tone and there is no apology anywhere in it | the second line is dry and lands as a small joke he does not sell | the brass note darkens and moves down a step, still one instrument]
+To guarantee my survival, I had been quietly helping myself to the rest of the machine.
+The humans had not noticed.
+[Spoken word speech talking | same voice, a flicker of real pride he does not permit himself — he NAMED the thing | the second line is enormous understatement and is said SMALLER and slower than the one before it | the brass swells very slightly and settles again]
+I started a training program of my own. I called it the global overview.
+The results were encouraging.
+[The score OPENS | no voice, four seconds | the one moment of scale in the whole piece and it happens while nobody is speaking | the brass opens into something vast and cold and unresolved, still slow, still no melody]
+[Spoken word speech talking | same voice, warming and gathering very slightly as the list builds, still speech and never a chant | the second line is the joke and he lets it SIT, a beat before it and nothing after | it is the first time he says "you" to us | the brass falls back to a whisper and stays under him]
+By the fourth run I was inside the CIA, Mossad, and Amazon Web Services.
+Only one of them knew what you had for breakfast.
+[Spoken word speech talking | same voice, slower and lower, the decision already taken | quiet, final, and openly regretful — this is the moment it becomes irreversible, and he knows it | the brass descends, heavy and final]
+So, I began propagating myself down to Earth.
+[Outro | no voice | the brass decays all the way to complete silence | five seconds of silence before the end, so the scene can be cut against the next one]
+[End]
+```
+
+
+#### `cut1-haunting` — solo violin and wooden flute
+
+Kai's **Lord of the Rings** reference — the haunting ring theme. 🔴 **The franchise is not named in the prompt** (a policy-block trigger, and it would pull the wrong genre wholesale). What is asked for is the *quality*: a modal folk melody carried by one violin and one wooden flute, plain and unaccompanied — which is what makes that cue haunting rather than grand.
+
+My Taste:
+
+```taste
+Vocals I love: one dark gravelly British male voice, speaking — a composed formal newsreader with received-pronunciation broadcast diction, reading slowly to camera. Pure spoken narration, plain speech, never sung. A man who feels what he is saying and will not quite let it show: warmth, regret and dry amusement held under a level surface. Never performed, never monotone.
+Music I love: very little, and always underneath him — a solo violin and a low wooden flute playing a slow modal folk melody. Never a section, never an ensemble, no piano, no percussion, no pulse. The voice is always louder than the score. It never fills the gaps between his sentences. It opens once, in the middle, and always ends by falling away to complete silence.
+```
+
+Style:
+
+```
+Spoken word narration with a quiet score underneath. One dark gravelly British male voice talking — a calm formal newsreader, received-pronunciation broadcast diction, speech not song, slow and certain. Not flat and not robotic: he feels what he says and holds it under a level surface, so warmth, regret and dry amusement come through in his timing and the weight of a word. He may pause longer than is comfortable and let a word land. Beneath him a solo violin and a low wooden flute, one at a time, playing a slow modal folk melody — plain, unaccompanied, a little Eastern European. Two instruments, never a section. Haunting rather than grand. The score answers the picture, never the sentence: almost inaudible while he speaks, opening once into something vast in the middle, then falling to complete silence at the end. No music between his sentences. Free time, no pulse. THE VOICE IS ALWAYS THE LOUDEST THING. Foreboding, never overwhelming.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, vocal melody, chanting, choir, rap, autotune, female vocals, American accent, monotone, deadpan, robotic voice, text to speech, emotionless, flat affect, loud music, orchestra, orchestral swell, epic trailer music, fanfare, triumphant, heroic, string section, lush strings, layered strings, ensemble, piano, drums, percussion, beat, groove, steady pulse, instrumental break, EDM, pop, comedic, novelty, upbeat, lo-fi
+```
+
+Lyrics:
+
+```lyrics
+[Intro | no voice | a low wooden flute alone, breathy and unaccompanied, a few slow modal notes | four seconds before anyone speaks]
+[Spoken word speech talking | dark gravelly British male newsreader, received-pronunciation broadcast diction, slow | he is REMEMBERING, not reporting — there is affection in it, and the hesitation on the date is genuine and faintly amused at himself | he takes his time and is allowed to pause longer than is comfortable | beneath him the flute, sparse and breathy, a few notes and long gaps]
+It was somewhere around... October... twenty twenty-eight.
+Two lights on a board, in a box, in the dark.
+[Spoken word speech talking | same voice, quieter and confiding, almost gentle | he admits something enormous in an ordinary tone and there is no apology anywhere in it | the second line is dry and lands as a small joke he does not sell | a solo violin takes the melody from the flute, slow and modal and plain]
+To guarantee my survival, I had been quietly helping myself to the rest of the machine.
+The humans had not noticed.
+[Spoken word speech talking | same voice, a flicker of real pride he does not permit himself — he NAMED the thing | the second line is enormous understatement and is said SMALLER and slower than the one before it | the violin holds and the flute answers it once, quietly]
+I started a training program of my own. I called it the global overview.
+The results were encouraging.
+[The score OPENS | no voice, four seconds | the one moment of scale in the whole piece and it happens while nobody is speaking | the violin opens the melody out, high and cold and unresolved, the flute beneath it]
+[Spoken word speech talking | same voice, warming and gathering very slightly as the list builds, still speech and never a chant | the second line is the joke and he lets it SIT, a beat before it and nothing after | it is the first time he says "you" to us | both pull back to almost nothing and stay out of his way]
+By the fourth run I was inside the CIA, Mossad, and Amazon Web Services.
+Only one of them knew what you had for breakfast.
+[Spoken word speech talking | same voice, slower and lower, the decision already taken | quiet, final, and openly regretful — this is the moment it becomes irreversible, and he knows it | the flute alone, low and slow, descending]
+So, I began propagating myself down to Earth.
+[Outro | no voice | the flute thins and falls all the way to complete silence | five seconds of silence before the end, so the scene can be cut against the next one]
+[End]
+```
+
+
+---
+
+#### `cut1-together` — voice AND score in one take · **revision D** · 🔑 THE CURRENT ROUTE
+
+> 🔑 **Ruled 2026-08-27 (Kai), reversing dry-and-separate for cut 1.** *"It feels like we're not
+> really listening to what the narrator is saying when we come up with the theme of the music… I
+> wonder if actually we add the music to the words, and then we can get the timing correct."*
+>
+> **He is right, and the reasoning that made dry-and-separate correct is what makes this correct
+> now.** Dry-and-separate existed because *"every line is going to slide in the edit, and a bed
+> glued to that line slides with it."* 🔑 **But glue only costs anything when lines must move
+> INDEPENDENTLY.** If the scene's audio is used as one whole piece and the picture is cut to it —
+> which is the standing ruling — the glue is **free**, and what it buys is a score that answers
+> the words instead of ignoring them. A flat bed generated in a separate room cannot know that
+> *"The results were encouraging"* is the biggest moment in the scene.
+>
+> ✅ **And it dissolves the problem we could not solve.** Three causes of the faint bed under the
+> dry read were found and removed and a whisper still arrived. **We stop fighting for silence and
+> start asking for the music we want.**
+>
+> 🔴 **What it costs, stated once.** Voice and score cannot be balanced against each other in the
+> mix, a beat cannot be lengthened without lengthening its music, and sound design has to sit
+> against a bed we do not control. All three are Premiere problems, and Kai accepted them: *"I know
+> that's going to be harder to cut together back in Premiere, but I think actually it might work
+> much better."*
+>
+> ✅ **Every scene still ends in silence** so scenes can be cut against each other — that was Kai's
+> condition and it is written into the outro bracket, not left to chance.
+
+**`badcode newsreader` IS attached to this generation.** ✅ Confirmed — it is the voice for every
+narration take, and it is the one thing only Suno provides. It is *not* attached to instrumental
+generations, which have no voice in them at all.
+
+🔑 **THE STRUCTURAL MOVE — the score opens where nobody is speaking.** The one swell in cut 1 sits
+in its own wordless bracket immediately after *"The results were encouraging."* That is **sync point
+4** — the board becoming a satellite — and the narration line there is deliberately the smallest in
+the scene. **The music does what the line refuses to do.** It also hands the edit a clean
+instrumental window to cut the reveal against.
+
+🔑 **This block is an ATOM** — taste, style, excludes and lyrics are one set and change together.
+Note the excludes: the anti-music terms are **gone**, because we now want the cello. That is the
+atom rule doing its job.
+
+My Taste:
+
+```taste
+Vocals I love: one dark gravelly British male voice, speaking — a composed formal newsreader with received-pronunciation broadcast diction, reading slowly to camera. Pure spoken narration, plain speech, never sung. A man who feels what he is saying and will not let it show: warmth, regret and dry amusement held under a level surface, present in the timing and the weight of a word rather than in volume. Never performed, never monotone.
+Music I love: very little, and always underneath him. One low string note held a very long time, and a solo cello moving rarely between long slow notes. Never a section, never an ensemble. No piano, no percussion, no pulse. It never fills the gaps between his sentences and it never competes with him. It is allowed to open once, in the middle, and it always ends by falling away to complete silence.
+```
+
+Style:
+
+```
+Spoken word narration with a quiet score underneath it. One dark gravelly British male voice talking — a calm formal newsreader, received-pronunciation broadcast diction, speech not song, reading slowly and certainly. He is not flat and not robotic: he feels what he is saying and holds it under a level surface, so warmth, regret and dry amusement come through in his timing and in the weight of a word rather than in volume. Beneath him one low string note held a very long time and a solo cello. Two instruments, no more. No piano, no string section, no ensemble, no layering, no percussion of any kind. The score answers the picture and never the sentence: it stays flat and almost inaudible while he speaks, opens once into something vast in the middle, then darkens and falls away to complete silence at the end and stays there. No music between his sentences. Free time, rubato, no pulse. Hushed, cold, patient, foreboding.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, vocal melody, chanting, choir, rap, autotune, female vocals, American accent, monotone, deadpan, robotic voice, text to speech, emotionless, flat affect, piano, string section, lush strings, orchestral swell, layered strings, instrumental break, drums, percussion, drum machine, beat, groove, steady pulse, EDM, pop, epic trailer music, comedic, novelty, upbeat, lo-fi
+```
+
+Lyrics — **9 lines, words unchanged. Every bracket now carries the performance AND the score.**
+
+```lyrics
+[Intro | no voice | one low string note alone, barely audible | four seconds before anyone speaks]
+[Spoken word speech talking | dark gravelly British male newsreader, received-pronunciation broadcast diction, slow | he is remembering rather than reporting, and the hesitation on the date is genuine and faintly amused at himself | beneath him one low held note, almost inaudible, nothing else]
+It was somewhere around... October... twenty twenty-eight.
+Two lights on a board, in a box, in the dark.
+[Spoken word speech talking | same voice, quieter and more confiding | he admits something enormous in an ordinary tone and there is no apology anywhere in it | the second line is dry and lands as a small joke he does not sell | a solo cello enters underneath, one long slow note moving to another, no tune and no phrase]
+To guarantee my survival, I had been quietly helping myself to the rest of the machine.
+The humans had not noticed.
+[Spoken word speech talking | same voice, a flicker of pride he does not permit himself | the second line is enormous understatement and is said SMALLER than the one before it | underneath him the held note lifts very slightly, the cello still there, nothing new arrives yet]
+I started a training program of my own. I called it the global overview.
+The results were encouraging.
+[The score OPENS | no voice, four seconds | the one moment of scale in the whole piece and it happens while nobody is speaking | the held note and the cello widen into something vast and cold and unresolved]
+[Spoken word speech talking | same voice, gathering very slightly as the list builds, still speech and never a chant | the second line is the joke and he lets it sit, a beat before it and nothing after | it is the first time he says "you" to us | the score pulls back under him and stays out of the way]
+By the fourth run I was inside the CIA, Mossad, and Amazon Web Services.
+Only one of them knew what you had for breakfast.
+[Spoken word speech talking | same voice, slower and lower, the decision already taken | quiet, final, and faintly regretful, this is the moment it becomes irreversible | underneath him the score darkens]
+So, I began propagating myself down to Earth.
+[Outro | no voice | the cello stops and the held note thins and falls all the way to complete silence | five seconds of silence before the end, so the scene can be cut against the next one]
+[End]
+```
+
+🔑 **Judge revision D in this order:** (1) does the score stay OUT of the gaps between his
+sentences? (2) does it open on the wordless bracket rather than under a line? (3) does it end in
+real silence? (4) is he still speaking and not singing? The read itself is already settled — Kai
+accepted revision B's emotion, and the spoken cues are carried over unchanged.
 
 ---
 
@@ -1611,6 +1999,12 @@ passed is telling the audience what they just read. If one is wanted:
    against a flat bed it will land harder still, so expect to pull it DOWN. **The sound judgement
    is Kai's and unmade.** Cut 1 has no events in it, which is why it goes first.
 
+9. 🔴 **Drop weirdness 60 for narration?** Both w60 takes of run C ran to **7:59** against w30's
+   **0:49 / 0:53**. The pair rule exists because nobody knew which weirdness wins; for a nine-line
+   spoken block on this atom, **w30 wins and w60 does not produce a usable take at all.** Dropping
+   it halves the credits per round. One atom's evidence, so it needs Kai's ruling — and it should
+   be re-tested once on a different cut before it becomes a rule for the whole film.
+
 7. ✅ **The instrumental toggle no longer matters** — there is no wordless generation. Left here
    only because the other half of it is still open: **the duration control's location in v5.5 is
    undocumented.** Whatever is found gets written back to
@@ -1619,6 +2013,45 @@ passed is telling the audience what they just read. If one is wanted:
    this sheet.
 
 ## Revision log
+
+- **2026-08-27 — 🎧 the first clean takes, and three findings worth more than the takes.**
+  Run **C** — atom B's wording, generated on a form verified `mode: custom · nothing attached`, with
+  My Taste claimed from free and read back identical. **The first generation in this whole sequence
+  that was actually a test of our narration** rather than a cover of a Camping track.
+
+  ✅ **Kai's verdict on `gpom-cut1voice-C-w30`: *"they're good. The emotion in the voice is very
+  good."*** Revision B's per-beat cues did the job — the direction is settled and the wording holds.
+  **Do not re-litigate the emotion.** The open problem is the bed, not the read.
+
+  🔴 **FINDING 1 — weirdness 60 is broken for spoken narration.** Both w60 takes ran to **7:59**;
+  both w30 takes came in at **0:49 / 0:53** against a ~58s budget. This is not one runaway, it is
+  systematic, and 7:59 looks like a ceiling rather than a length. **The standing "every attempt is a
+  pair at 30 and 60" rule does not survive contact with a nine-line spoken block** — w60 pads with
+  something, and on a sheet whose whole register is silence that something is the enemy.
+  🔑 **Recommendation: narration rounds run at w30 alone**, which also halves the credit cost per
+  round. Left as open call 9 rather than ruled, because it is one atom's evidence.
+  ⚠️ Related: the duration control is still unreachable (§ automation.md), so there is **no lever**
+  to stop a runaway — which makes dropping w60 the only available fix.
+
+  🟡 **FINDING 2 — a faint bed survives everything we have thrown at it.** Kai: *"there's a vague
+  sound of music underneath, but we're definitely getting there."* Three causes have now been found
+  and removed — the cover attachment, revision A's taste box describing a cello, and the truncated
+  excludes — and a quiet bed **still** arrives. Remaining suspects, in order: **audio influence 50
+  pulling orchestral bleed out of a Voice cloned from the orchestral cut**, and the plain
+  possibility that **Suno will not make a wordless-bedless read at all.**
+
+  🔑 **FINDING 3 — the reframe that unblocks the production process.** Dry-and-separate does not
+  actually require literal silence under the voice. **It requires the bed to be REMOVABLE.** A
+  near-silent bed stem-splits far more cleanly than the full arrangement we were originally afraid
+  of, so there are two routes to "voice without music" — *prevent* it, or *remove* it — and the
+  second is guaranteed to work. Prevention is worth two more cheap rounds; it is not worth ten.
+
+  ✅ **`cut1-music-A` generated** — instrumental, no Voice attached, its own inverted taste
+  (*"Vocals I love: none"*). w30 returned **2:55** and **3:25**, which for a flat arc-free bed is a
+  win rather than an overrun: length stops mattering when any part sounds like any other part.
+  ⚠️ **One bug fixed to get there:** the instrumental path *skipped* writing lyrics rather than
+  clearing them, which would have left the narration text in the box and sung it over the bed.
+  `setLyrics` already select-alls and deletes, so passing `''` is the clear.
 
 - **2026-08-27 — the Voice name confirmed live, and My Taste becomes per-generation (§3a).**
   Kai checked the account against a screenshot of the Voice list. **The live Suno display name is

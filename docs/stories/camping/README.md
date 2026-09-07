@@ -69,7 +69,7 @@ later). Change the story here first, then the media.
 | Flow prompt ledger | [`prompts.md`](./prompts.md) | verbatim **still** prompts as restore points (video prompts not recorded, ruled 2026-08-26). **complete through scene 4** — 1a, 1b, 1c, 2a, 4a all recovered 2026-08-26 |
 | Song — "Camping" | [`songs/camping.md`](./songs/camping.md) | **accepted prompt** — duet re-cut, same words, rebuilt casting so Bob and Tarquin stop blending. Signed off at round 17, 2026-08-21 |
 | Song — released take | [`songs/camping-released.md`](./songs/camping-released.md) | the published version, and the lyric-fidelity reference. Jack's video is cut to it |
-| Song — prompt history | [`songs/camping-prompt-history.md`](./songs/camping-prompt-history.md) | archive: what failed in each of the 17 rounds and why, plus the previous cue sets as revert targets |
+| Song — prompt history | [`songs/archive/camping-prompt-history.md`](./songs/archive/camping-prompt-history.md) | archive: what failed in each of the 17 rounds and why, plus the previous cue sets as revert targets |
 | Video | Jack, from the storyboard section of `story.md` | next up |
 | Music video (Premiere cut) | [`music-video.md`](./music-video.md) · `/mnt/d/badcode-videos/camping-music/` | **in progress** — Kai cutting; picture to 43.56s of 236.4s, flicker runs built by hand |
 | Comic | `apps/web/src/comics/camping/` | **tells the old spine** (v1 recut, 24 pages) — rebuild from this canon when the video has proven the telling |

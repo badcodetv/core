@@ -23,11 +23,11 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import {
   connect, setSlider, setTitle, setDuration, setLyrics, setTaste, getTaste, setWorkspace, verify, create, listTakes,
   tasteOwner, releaseTaste, TASTE_FREE,
-} from './suno.mts'
+} from '../suno.mts'
 
-const SHEET = new URL('../../docs/stories/camping/songs/camping-halftime-cover.md', import.meta.url).pathname
-const CANON = new URL('../../docs/stories/camping/songs/camping.md', import.meta.url).pathname
-const PARENT = new URL('../../docs/stories/camping/songs/camping-halftime.md', import.meta.url).pathname
+const SHEET = new URL('../../../docs/stories/camping/songs/archive/camping-halftime-cover.md', import.meta.url).pathname
+const CANON = new URL('../../../docs/stories/camping/songs/camping.md', import.meta.url).pathname
+const PARENT = new URL('../../../docs/stories/camping/songs/archive/camping-halftime.md', import.meta.url).pathname
 const BACKUP = new URL('./.my-taste-backup.txt', import.meta.url).pathname
 const WORKSPACE = process.env.SUNO_WORKSPACE ?? 'camping-duet'
 const STYLE_INFLUENCE = 75

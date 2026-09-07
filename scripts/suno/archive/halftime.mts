@@ -30,10 +30,10 @@ import type { Page } from 'playwright'
 import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import {
   connect, setSlider, setTitle, setLyrics, setDuration, setWorkspace, setTaste, getTaste, create, listTakes,
-} from './suno.mts'
+} from '../suno.mts'
 
-const SHEET = new URL('../../docs/stories/camping/songs/camping-halftime.md', import.meta.url).pathname
-const CANON = new URL('../../docs/stories/camping/songs/camping.md', import.meta.url).pathname
+const SHEET = new URL('../../../docs/stories/camping/songs/archive/camping-halftime.md', import.meta.url).pathname
+const CANON = new URL('../../../docs/stories/camping/songs/camping.md', import.meta.url).pathname
 const BACKUP = new URL('./.my-taste-backup.txt', import.meta.url).pathname
 const WORKSPACE = process.env.SUNO_WORKSPACE ?? 'camping-duet'
 

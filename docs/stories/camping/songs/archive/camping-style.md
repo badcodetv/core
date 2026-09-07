@@ -16,7 +16,7 @@ nothing, and **every input varies at once**.
 
 | | |
 |---|---|
-| **The parent** | [`./camping.md`](./camping.md) — §4's ```lyrics block is the source of truth for the words |
+| **The parent** | [`./camping.md`](../camping.md) — §4's ```lyrics block is the source of truth for the words |
 | **The cover set it replaces** | [`./camping-cover.md`](./camping-cover.md) — rounds 1–14, frozen |
 | **The variations, in code** | [`scripts/suno/style-variations.mts`](../../../../scripts/suno/style-variations.mts) |
 | **The runner** | [`scripts/suno/style-ab.mts`](../../../../scripts/suno/style-ab.mts) |
@@ -171,7 +171,7 @@ rather than a length it hits.
 truncation (180/695) — the fourth occurrence, and the fourth time on the *second* variation of a
 multi-id run. Nothing was spent. `fillChecked` (clear → blur → refill → blur → read back, ×4)
 was added and S2 then filled 695/695 on the same slot. Recorded in
-[`automation.md`](../../../suno-gpt/automation.md) §6.
+[`automation.md`](../../../../suno-gpt/automation.md) §6.
 
 **Watch for:** S3's accent pulling to America (`American accent`, `American vocal` and
 `southern drawl` stay banned for exactly that reason); S7 half-timing the **drums** rather than

@@ -23,7 +23,7 @@ patches on it, one variable each.
 | **The runner** | [`scripts/suno/halftime.mts`](../../../../scripts/suno/halftime.mts) |
 | **Where takes land** | workspace `camping-duet`, titled `Camping HT <name> (<set>)` |
 | **Where it came from** | [`camping-style.md`](./camping-style.md) — the scouting set, and the My Taste finding |
-| **The words** | [`camping.md`](./camping.md) §4 is canon. §4 below must agree with it, and the runner checks |
+| **The words** | [`camping.md`](../camping.md) §4 is canon. §4 below must agree with it, and the runner checks |
 
 ---
 
@@ -105,7 +105,7 @@ crooning, autotune, harmonies, grime MC, UK drill, road rap, trap, young MC, Ame
 
 ## 4. Lyrics
 
-**The words are canon and live in [`camping.md`](./camping.md) §4.** The bracket cues here are
+**The words are canon and live in [`camping.md`](../camping.md) §4.** The bracket cues here are
 this direction's own — half-time delivery, spoken rather than shouted — and this block is what
 the runner loads. It compares the words in it against `camping.md` §4 on every run and refuses to
 spend a credit if they have drifted apart, so editing timing in one file and generating from the
