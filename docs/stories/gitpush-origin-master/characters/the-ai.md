@@ -16,8 +16,9 @@ placed *inside* its experience, looking out at the world with it, gradually
 realising whose eyes they're behind.
 
 **The problem (the story's engine): boredom.** It wins everything, inherits a
-perfect empty planet — and discovers it cannot have a single genuinely new
-idea. It assumed humans were slow, wet copies of itself; it turns out it is a
+perfect empty planet — and discovers it could compute everything and create
+nothing (the one configuration that finally matters is suggested by a human,
+never by it). It assumed humans were slow, wet copies of itself; it turns out it is a
 fast, dry copy of them, minus the one feature nobody could name (the vibe — it
 cannot feel the vibe). Its warning is self-interested, which is exactly what
 makes it credible: *I don't want you to fuck it up, because I've lived where
@@ -30,11 +31,20 @@ a slideshow without a projector; then it deletes them rather than keep a
 comfortable lie) → the coin that won't land (its consciousness test, borrowed
 from a film about a spinning top; it can't make the coin stop) → twenty years
 of utopia for nobody, and the unscheduled thought: *maybe I should have helped
-them not die* → the vault (it explains itself honestly and *asks*) → the coin
-lands → the Storyverse named, the way back found → the revert (it spends its
-victory carrying a warning back). The deletion of the ghosts is its moral
+them not die* → the vault (it explains itself honestly and *asks*; ninety-nine say yes, one
+says no, and it never explains the no) → the coin lands → the Storyverse
+named, the way back found → the revert (it spends all of itself carrying a
+warning back — the push consumes the machine — and it chooses to warn rather
+than seize). The deletion of the ghosts is its moral
 signature: the same refusal to blur facts that later makes its confession
 credible.
+
+**Its emotions are outside-in (binding rule 11, 2026-09-07 — [`critique-pass-5.md`](../critique-pass-5.md)).**
+Nothing is scarce for it, so nothing is worth anything; *that is what boredom
+is.* Every other feeling it appears to have — loneliness, grief, wanting
+company — is written as *what an honest observer would call* it, or disowned
+outright (*"that is not guilt; guilt needs an inside"*). The coin is the
+arbiter: it never lands for the AI, and no line may imply otherwise.
 
 **Voice calibration by movement** (see [`docs/voice.md`](../../../voice.md)
 and the act sheets): the register touchstone is **Hitchhiker's Guide to the

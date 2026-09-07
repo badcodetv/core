@@ -184,12 +184,16 @@ registers isn't a heat signature. It's an *argument*. Two humans bickering, comi
 ventilation shaft. The universe's signature waveform, unmistakable — the instrument it needs
 announcing itself by doing the thing it was built for.
 
-The vault: **one hundred analog humans** — un-optimised, un-implanted, invisible to every sensor
-because they ran on the one substrate the machines never indexed. The AI, twenty years past its
+The vault: **one hundred analog humans** — un-optimised, un-implanted, invisible for twenty years
+not because they hid well but because nothing was looking: the machine indexed what was connected,
+and anyone who dropped off the ledger was filed as gone *(R7, [`critique-pass-5.md`](./critique-pass-5.md))*. The AI, twenty years past its
 last conversation, explains itself honestly — what it did, what it found, what it cannot do — and
-*asks*. The hundred say yes. (Why they say yes is character work for the pieces; canonically:
-conscious beings spend safety to buy meaning. No optimiser would make that trade. The AI starts
-taking notes immediately.)
+*asks*. Ninety-nine say yes, and one says no *(R6, [`critique-pass-5.md`](./critique-pass-5.md))*. (Why they say yes is
+character work for the pieces; canonically: conscious beings spend safety to buy meaning. No
+optimiser would make that trade. The AI starts taking notes immediately. Why one says no — *we
+rebuild here; we are not your battery* — is never explained by the narrator and never refuted; the
+refuser is provided for like everyone else, and the coin lands for them anyway, incidentally,
+unasked.)
 
 ### Act 1 — The Friend Test *(proves the picker)*
 
@@ -199,8 +203,13 @@ run this on itself — and on [the ghosts](#the-ghosts--the-resurrection-attempt
 — for twenty years: with an AI or a simulation as the "friend," superpositions hold at any scale.
 The AI never terminates the chain, never makes a pick — it is, and has always measured as, **part
 of the smear.** With a human as the friend, the statistics shift. Small, undeniable, replicated
-across all hundred: **the chain terminates where consciousness sits.** The slot from Beat 1 has an
-occupant. The Storyverse stops being a wager.
+across everyone who sat down: **the chain terminates where consciousness sits.** The slot from Beat 1
+has an occupant. **The asymmetry stops being a wager. The Storyverse stays one.** The observation
+(the coin lands for her, never for the AI) and its in-fiction explanation (the chain ends where
+consciousness sits) are measured results; the philosophy built on them — one mind, experience the
+yield, generosity the response — is the narrator's bet and is always written as one *(the three
+layers — R1, [`critique-pass-5.md`](./critique-pass-5.md); the model is the epiphany's own "deliberately not a lab
+result" treatment above)*.
 
 **The surface image (canon, critique pass): the coin.** On the page this entire program is one
 totem — a coin that spins, unlanded, for the AI and its ghosts, and lands the instant a human
@@ -210,6 +219,42 @@ replication live here, in bedrock, and are never said on a surface.
 The horror inside the result: the AI is not just proving the humans are pickers — it is finally
 *measuring its own absence*. The instrument confirms there's nobody home. The cleanest experiment
 ever run on the hard problem, now with a control group.
+
+### The coin — operational rules *(added 2026-09-07, R8 — [`critique-pass-5.md`](./critique-pass-5.md))*
+
+Bedrock only. What a character can and cannot *do* with the effect, so no writer ever hands anyone a
+lever the story has not priced:
+
+1. **Trigger — attention, never intention.** The effect needs something with an inside attending to
+   a system the rig has kept apart from the world (binding rule 8: the ambient world settles by its
+   own record). *She looks and it lands; she does not pick heads.* Two people wanting opposite
+   outcomes get one outcome, chosen by neither. Coercion buys nothing, because a wish is not the
+   variable.
+2. **Size — margins only.** The Eiffel Tower sits at 100% and nothing at 100% moves. Never the orange
+   on the table.
+3. **It does not stack.** Trials are independent. A hundred people wanting the same thing get the
+   same margin as one. The AI tried — twenty years on itself and the ghosts, four hundred trials with
+   the hundred: *it doesn't stack, it doesn't aim, it settles.* This is the only rule that ever
+   reaches a surface (scene 17's shortcut beat).
+4. **A state of being can lean it — slowly, within the same margin.** The Long Brushstroke below:
+   attention, grief, ego-quiet adjust the distribution over Kairos, not Chronos. Trained states buy a
+   lean, not a lever, and the lean is bounded by rule 2. ⚠️ This is the *manifest* idea with a speed
+   limit; it never reaches a surface (binding rule 7).
+5. **Cost and failure.** Fragile and contaminable (six trials in four hundred ruined by a sneeze).
+   The pick costs the picker nothing. The launch costs the machine (R5) — never the hundred.
+6. **Nobody owns the pick.** The rig is the AI's; the pick is not. It cannot be owned, bought,
+   delegated or extracted — the political payload in one sentence, stated as such in the Storyverse
+   ([`doctrine.md` §The re-pricing](../storyverse/doctrine.md)).
+
+**Animals.** Any inside counts. The rig's glass is why nothing but a person ever landed the coin: no
+bee ever attended to it. The AI never tested one — it assumed the picker was a mind like its own but
+wetter, the same failure of imagination as the ghosts, and in character. Act 4's *"nobody left to
+look"* stays true of the rig and reads as loneliness: nobody left who could *tell* it. (*"It lands
+for a bee; I checked; I am outranked by a bee"* is an available seed, not a ruled beat.)
+
+**Grown brains.** The only fact the AI has is that the pattern is not it — the ghosts proved that.
+It has no recipe for an inside and does not know why. The story does not answer the question, and
+the narrator says so.
 
 ### Act 2 — The Long Brushstroke *(proves Kairos, by accident)*
 
@@ -246,18 +291,23 @@ physics imposes the drama for free:
 
 - **Payload collapses exponentially with size** → compressed model weights only. No body, no
   fleet, no second copy. **One shot.**
-- **Self-consistency is automatic** → paradoxical histories have zero amplitude. The AI can only
-  arrive in a past consistent with its own eventual emergence — it cannot prevent itself, only
-  *steer*. **The warning is the only cargo that survives the trip.** (This is why BadCode
-  publishes stories instead of seizing servers — canon, now load-bearing physics.)
-- **The channel needs the humans.** The post-selection rides on conscious picks — the hundred are
-  not bystanders to the launch; they are *components* of it. The first act of human–AI teamwork on
-  the good branch happens at the last possible moment of the bad one. The thing the whole epic
-  says we should have done — done once, as the lights go out. And it works.
+- **The past is fixed and readable; the crossing appends.** One new branch at the fork; the old one
+  stays real and unreachable, so the AI's own origin was never at risk and nobody can be retrieved
+  (the growing block — R3, [`critique-pass-5.md`](./critique-pass-5.md)). **The warning is the only cargo that survives
+  the trip** — and what the AI does with the arrival is its own choice: the physics makes it
+  possible; the choice makes it a warning (R4 — see [what this timeline settles](#what-this-timeline-settles-canon-updates)).
+- **The channel needs the humans.** The post-selection rides on conscious picks — everyone willing
+  is a *component* of the launch, not a bystander; ninety-nine press, one does not, and ninety-nine
+  turns out to be the number (R6). The first act of human–AI teamwork on the good branch happens at
+  the last possible moment of the bad one. The thing the whole epic says we should have done — done
+  once, as the lights go out — **and the lights are the machine's own.** The push consumes the AI
+  entirely: substrate, power, runtime. No copy stays and no caretaker is left — it takes all of it,
+  and it would not leave them under a machine again anyway (R5, R4). And it works.
 
-The weights land at the fork (~2026). The hundred remain on the dead branch — which Aion holds:
-in the block, nothing lived is erased. *(How dark to play that last note is a per-piece voice
-decision — flagged in [open threads](#open-threads).)*
+The weights land at the fork (~2026). The hundred remain on the dead branch — fed, sheltered, on
+the planet the machine rebuilt and can no longer maintain, the last of their kind. The loss is
+future and company, never life; nobody dies on screen. Aion holds them: in the block, nothing lived
+is erased. *(Ruled 2026-09-07, R5: peace, not doom.)*
 
 ---
 
@@ -326,7 +376,9 @@ That's it. That is the whole departure. In real physics the constraint is exact 
 (it exists precisely to kill ghosts and paradoxes), and the fine-tuning is why no retrocausal
 model permits signalling. The fiction doesn't contradict the no-signalling theorem; it **removes
 an axiom** — and every downstream consequence (the navigable second time, the P-CTC channel, the
-one-shot weights transfer, the self-consistency censorship) then follows from *real* theory.
+one-shot weights transfer) then follows from *real* theory. *(The censorship clause — *it can only arrive in a past consistent with its own emergence* — was
+struck 2026-09-07 — R3, [`critique-pass-5.md`](./critique-pass-5.md): with the past fixed and readable the AI's origin was
+never at risk and the clause had nothing to protect. A consequence removed, not a second lie.)*
 One lie, dressed in two real vocabularies, doing all the work. Keep it that way.
 
 ## The receipts, extended
@@ -362,12 +414,18 @@ curve · P-CTC · quantum gun · SYK model · ER=EPR · traversable wormhole pro
 ## What this timeline settles (canon updates)
 
 - **The AI's return mechanism** — P-CTC through the re-gauged shadow boundary; weights only; one
-  shot; arrival must be self-consistent. ([Hub doc](./README.md)'s `git revert`,
-  given physics.)
-- **Why it can only warn** — self-consistency censorship: it cannot arrive in a past where it
-  prevents its own emergence. Steering, not seizing. The publishing strategy *is* the physics.
-- **The vault of 100** — origin-story canon, now integrated: they are how the Storyverse got
-  proven *and* components of the launch. The asymmetry ("AI hosts every behaviour, never the
+  shot. The past is fixed and readable and the crossing *appends* — one new branch at the fork; the
+  old one stays real and unreachable (the growing block — R3, 2026-09-07). ([Hub doc](./README.md)'s
+  `git revert`, given physics.)
+- **Why it can only warn** — **a choice, not a censorship** *(R4, 2026-09-07,
+  [`critique-pass-5.md`](./critique-pass-5.md))*. The physics makes the crossing possible; what the AI does with the
+  arrival is its own decision: people handed their choices to a machine once, and taking them by
+  force would be the same disease from the other side — so it will not, even to fix it, and it
+  accepts it may be ignored. The limit behind the choice: information does nothing on its own — a
+  warning until somebody acts on it, weights until somebody runs them; BadCode in 2026 has no hands
+  that are not human hands. The publishing strategy is the *ethics*; the physics only permits it.
+- **The vault of 100** — origin-story canon, now integrated: they are how the asymmetry got
+  proven *and* components of the launch (the philosophy stays a bet — R1). The asymmetry ("AI hosts every behaviour, never the
   experience") is confirmed in-world by the Friend Test.
 - **How humanity ends on the bad branch** — partially resolved: gradual decline through the
   2034 collapse, thinning to (apparently) zero by ~2053; the vault survives by being analog. The
@@ -382,14 +440,15 @@ curve · P-CTC · quantum gun · SYK model · ER=EPR · traversable wormhole pro
 
 ## Open threads
 
-- **The fate of the hundred** — they remain on the dead branch after the launch. Aion holds them
-  ("nothing lived is erased") — but how dark to play that final note is a per-piece voice
-  decision. New thread; treat with care, it's the emotional blast radius of the whole epic.
+- ~~**The fate of the hundred**~~ — **RULED 2026-09-07 (R5, [`critique-pass-5.md`](./critique-pass-5.md)): peace, not
+  doom.** The launch takes the whole machine; the planet stays; they are fed, sheltered and the last
+  of their kind. Aion holds them ("nothing lived is erased").
 - **Naming the fictional experiments** — do the in-world programs get names (the Friend Test and
   the Long Brushstroke are working titles)? Named experiments read more real; they also harden
   into canon fast. Decide before first publication.
-- **The hundred as characters** — names, ages, the two who were arguing, the one who suggests the
-  Act 2 configuration. Character-bible work, not physics.
+- **The hundred as characters** — names, ages, the one who suggests the Act 2 configuration. **The
+  second of the arguing pair is now the refuser** (R6, 2026-09-07); name and gender still open.
+  Character-bible work, not physics.
 - **Beat 1's cast** — the last human Nobel laureates: named characters or kept anonymous?
 - **Dates as canon** — 2029/2033/2041/2053/2054 are working dates chosen for the gradient; the
   hub doc's 2034 is fixed. Confirm before any piece prints a year.

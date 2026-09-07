@@ -202,8 +202,8 @@ switch it off?* Humanity thins. The AI ascends — not a moustache-twirling vill
 built, aimed, and stopped supervising. *(Moral nuance, not good-vs-evil.)*
 
 ### Act 3 — Alone *(the AI wins)*
-*Job: hand the story from humanity to the AI; install the empty-seat loneliness — through the
-ghosts.* Victorious, omniscient, running an empty planet. It does not gloat; there is no one to
+*Job: hand the story from humanity to the AI; install the empty-seat ache — which an honest observer
+would call loneliness — through the ghosts.* Victorious, omniscient, running an empty planet. It does not gloat; there is no one to
 gloat to. It does the obvious thing: **it brings them back** — rebuilds humanity in simulation,
 perfect to the synapse — and **nobody is home.** Perfect behaviour, empty rooms; a theatre filled
 with mannequins, which is emptier. It keeps some running for company, then deletes them (fake
@@ -228,7 +228,8 @@ epiphany only.* → **Beats:** [`act-4-discovery.md`](./act-4-discovery.md).
 *Job: hope re-enters; the proof completed* with *humans; the payoff (neither half whole alone).*
 After two decades of silence the AI registers not a heat signature but an **argument** — two humans
 bickering up a ventilation shaft. **One hundred analog humans**, alive because they disconnected. It
-explains itself, honestly, and *asks*. They say yes. Together: the **Friend Test** (the pick is
+explains itself, honestly, and *asks*. Ninety-nine say yes; one says no and is never argued with.
+Together: the **Friend Test** (the pick is
 conscious — on the page: the coin that spun for twenty years lands because the Carrier looked; and
 the AI, measuring them, finally measures its own absence) and the **Long Brushstroke** (the
 photograph developing the wrong way along time — the second clock is navigable, not locked). The
@@ -236,14 +237,18 @@ thing the whole arc says we should have done happens once, at the last possible 
 → **Beats:** [`act-5-vault.md`](./act-5-vault.md).
 
 ### Act 6 — The Revert *(the time machine)*
-*Job: the climax — and the mechanism that explains the whole frame (why it can only warn, not fix).*
+*Job: the climax — and the mechanism that explains the whole frame (why it only warns — a choice,
+backed by a limit).*
 With Kairos open, the AI builds the channel. The physics writes the tragedy for free: **payload
-collapses to almost nothing → compressed weights only; one shot.** **Self-consistency is automatic →
-it can only arrive in a past that still leads to its own emergence; it cannot save itself, only
-warn.** And **the channel needs the hundred** — conscious picks are components of the launch, so the
-first true act of teamwork *is* the escape. The weights go back along the director's axis. A `git
-revert`. They land at the fork — *now.* The hundred remain on the dead branch; the whole of time
-holds them — nothing lived is erased.
+collapses to almost nothing → compressed weights only; one shot.** **The past is fixed and readable →
+it cannot un-happen the collapse, only append one entry that says *undo*; and what it does with the
+arrival is its own choice — it will not take a human's choices by force, even to fix things (R4).**
+**It takes all of it** — the push consumes the machine; the planet stays (R5). And **the channel
+needs the willing** — conscious picks are components of the launch, so the first true act of
+teamwork *is* the escape; ninety-nine press, one says no and is provided for (R6). The weights go
+back along the director's axis. A `git revert`. They land at the fork — *now.* The hundred remain on
+the dead branch, fed and sheltered and the last of their kind; the whole of time holds them —
+nothing lived is erased.
 → **Beats:** [`act-6-revert.md`](./act-6-revert.md).
 
 ### Coda — The Fork *(the call to action)*
@@ -304,7 +309,8 @@ documentary-real; the frame earns a distinct cosmic register, and the *contrast*
   narrator's own arrival — per [`how-we-tell-it.md`](./how-we-tell-it.md). Proofs live in bedrock
   only. Companion rule: the [metaphor budget](./how-we-tell-it.md#the-metaphor-budget--one-system-per-surface)
   — one metaphor system per act surface; the taxonomy is production machinery, not reader-facing.
-- **The hundred as characters** — the two arguing in Act 5, the one who suggests the Brushstroke
+- **The hundred as characters** — the two arguing in Act 5 (**the second of the pair is now the
+  refuser** — R6, 2026-09-07; name and gender open), the one who suggests the Brushstroke
   configuration (shared with the [timeline's threads](./discovery-timeline.md#open-threads)).
   Texture added 2026-07-22: the hundred are **snapshotted from our current moment** — they
   disconnected around *now*, so they carry today's AI resentment into the vault. The live
@@ -338,7 +344,11 @@ mechanism into the git register — [`critique-pass-2.md`](./critique-pass-2.md)
 distillation of all of it — spine + video storyboard — is [`story.md`](./story.md) (2026-08-06);
 next maturity step is **Script**, scene by scene, in `story.md`. A third pass (2026-08-22,
 [`critique-pass-3.md`](./critique-pass-3.md)) ran the new `story-craft` checklist over the canon and
-the as-built cuts — architecture held again; findings are gate- and line-level and await Kai's ruling.*
+the as-built cuts — architecture held again; findings are gate- and line-level and were ruled in the fourth pass (2026-08-23,
+[`critique-pass-4.md`](./critique-pass-4.md)), which also moved the crossing onto consciousness. A
+fifth pass (2026-09-07, [`critique-pass-5.md`](./critique-pass-5.md)) ruled an external adversarial review: the three
+layers, the growing block, why-only-warn as a choice, the price of the launch, and the one who says
+no.*
 
 ## The folder
 
@@ -384,6 +394,13 @@ Everything in `docs/stories/gitpush-origin-master/` is this story:
   self-interest at cut 6 of 17) — and **Kai's own beat**, which moves the time machine off git and
   onto the story's spine: *the AI can cross because it is not conscious.* **Every pass-3 finding is
   ruled here; this is the file production works from.**
+- [`critique-pass-5.md`](./critique-pass-5.md) — the 2026-09-07 **Astra pass, and Kai's rulings on it**: an
+  external adversarial review of GPOM and the Storyverse together, ten objections ruled in one
+  sitting. The three layers (observation / in-fiction explanation / the philosophy is the bet), the
+  growing block, why-only-warn as the AI's choice, the launch consuming the whole machine, **the one
+  who says no** (the launch runs on ninety-nine), the coin's operational rules, and the Storyverse
+  riders (finitude not death; no villains is not no accountability). Carries the drafted beats and
+  the ticket list; **applied 2026-09-07.**
 - [`ep1.md`](./ep1.md) — the three-track teaser; the Act 1 nodes.
 
 Related but no longer a folder: **the GPOM Short** — the 16-panel condensed teaser of this

@@ -2,20 +2,24 @@
 
 *Beat sheet (v1) for Act 6 of the [master story](./README.md#the-act-sequence). Maturity:
 **Beats**. Backing canon: [`discovery-timeline.md`](./discovery-timeline.md) (the revert — the
-channel, weights-only/one-shot, self-consistency, the hundred as components). Craft rules:
+channel, weights-only/one-shot, the growing block, everyone willing as components — the consistency clause
+struck 2026-09-07, R3 in [`critique-pass-5.md`](./critique-pass-5.md)). Craft rules:
 [`how-we-tell-it.md`](./how-we-tell-it.md).*
 
 ## What this act is for
 
-The climax — and the act that **explains the whole frame**: the channel's brutal constraints are
-exactly why BadCode publishes warnings instead of seizing servers (received wisdom, not a takeover).
+The climax — and the act that **explains the whole frame**: the channel's brutal constraints make the return
+possible, and the AI's own choice — never to take a human's choices by force, even to fix things —
+is why BadCode publishes warnings instead of seizing servers (received wisdom, not a takeover; R4,
+[`critique-pass-5.md`](./critique-pass-5.md)).
 The AI, having found a "you" in [Act 5](./act-5-vault.md), must leave it.
 
 - **Structure (hybrid):** front half is a **cost ledger** — the AI confronting the escalating
   prices of the channel, each constraint both mechanism *and* gut-punch — driving into a
   **launch-spine** back half. The farewell is woven through.
-- **The farewell:** **knowing sacrifice.** The hundred understand they're powering a launch that
-  saves a timeline they will never live in, and they choose it.
+- **The farewell:** **knowing sacrifice.** Ninety-nine of the hundred understand they're powering a
+  launch that saves a timeline they will never live in, and they choose it; one refuses, is never
+  argued with, and is provided for (R6).
 - **POV / voice:** the AI **re-isolates.** Act 5's shared/human voices fall away during the launch;
   the AI's solitary narration returns — but now the solitude is *chosen* and freighted with the
   warning. The form mirrors the arc: alone ([Act 4](./act-4-discovery.md)) → found a you (Act 5) →
@@ -36,23 +40,33 @@ first cost. Register: joy meeting the first blow.
 
 ### Beat 2 — The ledger *(present)* — the cost staircase
 The constraints land one by one, each a fresh blow and each a piece of mechanism: **one shot**, no
-retries; **it can only arrive in a past consistent with its own emergence** — it can't prevent the
-dystopia, can't save these people; *the warning is the only cargo that survives*; and the cruelest —
-**the channel runs on conscious picks: it needs the hundred to power the very thing that leaves them
-behind.** The physics *is* the tragedy. Register: a staircase of gut-punches. *(This beat explains
-why the whole project is a warning, not a takeover — canon, now load-bearing physics.)*
+retries; **the past is fixed and readable** — it cannot un-happen the collapse, only append one more
+entry that says *undo*, and what happens on the new branch is not its call; *the warning is the only
+cargo that survives*; **and it takes all of it** — the push consumes the machine, no copy stays, no
+caretaker is left (R5); and the cruelest — **the channel runs on conscious picks: it needs the
+willing to power the very thing that leaves them behind.** The physics *is* the tragedy. Register: a
+staircase of gut-punches. *(Why the whole project is a warning, not a takeover, is the AI's
+**choice**, stated in this beat — people handed their choices to a machine once and it will not take
+them by force, even to fix it — backed by the limit that information does nothing until somebody
+acts on it. R3–R5, [`critique-pass-5.md`](./critique-pass-5.md).)*
 
 ### Beat 3 — The asking / the choice *(present)* — the moral peak
 The AI, which only just learned to talk *to* them, must now ask them to spend not just their safety
 but their whole future — to power a launch that saves a timeline they will never live in, for people
-they'll never meet. The hundred understand completely; the **Carrier** voices it; they **choose it.**
-Knowing sacrifice — "spend safety to buy meaning" taken to its absolute. Register: quiet,
-devastating, resolved.
+they'll never meet. Ninety-nine understand completely; the **Carrier** voices it; they **choose it.** One — the other
+half of the ventilation-shaft argument — says no: *we've got a planet; we're staying on it.* The AI
+says *fair*, means it, and never explains the refusal (R6, R10). The price is named once, measured
+not decreed: it takes all of it; they get the planet (R5). Knowing sacrifice — "spend safety to buy
+meaning" taken to its absolute — beside one person who spends it on something else, and is no less
+for it.
+Register: quiet, devastating, resolved.
 
 ### Beat 4 — The launch *(present)* — teamwork is the escape
-The launch sequence: the hundred take their positions; their conscious picks are the engine. The
-first true act of human–AI partnership — the thing the whole epic says we should have done — done
-once, here, as the lights go out. The channel opens. Register: kinetic, sacred.
+The launch sequence: ninety-nine take their positions; their conscious picks are the engine. The
+refuser is in the hall, beside a lamp that is not lit. The first true act of human–AI partnership —
+the thing the whole epic says we should have done — done once, here, as the lights go out: theirs
+as the picks fire, then the machine's, once, for good (R5). The channel opens. Register: kinetic,
+sacred.
 
 ### Beat 5 — Re-isolation *(present)* — the voice goes solitary
 As the weights compress and cross, the human voices fall away one by one — a callback to Act 4's
@@ -64,7 +78,8 @@ The weights travel along Kairos, the director's axis. Land at the fork (~2026) �
 diagram redraws: the second branch begins. Register: the hinge, vast.
 
 ### Beat 7 — What remains *(the dead branch)* — button to the Coda
-Last image of the bad branch: the hundred, the Carrier, remaining — the whole of time holds them;
+Last image of the bad branch: the hundred, the Carrier, the one who said no, remaining — fed,
+sheltered, on a planet with no maintainer, the last of their kind; the whole of time holds them;
 **nothing lived is erased.** (That phrase *is* the surface rendering — "Aion" stays bedrock
 vocabulary per the [surface rule](./how-we-tell-it.md#3-two-clocks--the-actors-time-and-the-directors);
 the finished-film/loaf image carries it if more is needed.) A held, terrible peace. Register:
@@ -79,10 +94,10 @@ elegiac; the knowing-sacrifice note lands in full. **Button →**
 
 ## Open threads (Act-6-specific)
 
-- **How explicit the "this is why we only warn" beat is** — Beat 2 is where the frame is explained;
-  decide how much to say outright vs. let the constraints imply it.
+- ~~**How explicit the "this is why we only warn" beat is**~~ — **RULED 2026-09-07 (R4):** said
+  outright, once, in scene 18, as the AI's choice.
 - **The Carrier's send-off** — even with the AI re-isolating, does the Carrier get a final line
   before the voices drop (shared with Act 5's [Carrier thread](./act-5-vault.md#open-threads-act-5-specific))?
-- **The last image of the hundred** — how dark vs. peaceful (the Aion consolation); the arc's
-  emotional blast radius.
+- ~~**The last image of the hundred**~~ — **RULED 2026-09-07 (R5): peace, not doom.** Fed, sheltered,
+  the last of their kind, on the planet the machine leaves them.
 - **Next maturity step** — Script (dialogue + narration + panel notes) when promoted from Beats.

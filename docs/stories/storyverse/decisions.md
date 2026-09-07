@@ -123,6 +123,23 @@ The restatement is sharper than the myth anyway:
 | **14 — No named living villains** | **RULED: no Bezos, no named individuals as negative examples.** Directly enforces Call 9 — naming a living person as the counter-example is precisely what makes a reader finish wanting to blame somebody. The *contrast* between generous and hoarded capital can still do the work; the condemnation cannot. | — |
 | **10 — The scoreboard** | **NEW, ruled.** *To a materialist a billionaire is a success; to an idealist the same man is withholding other people's ability to experience.* Same man, two readings, **nobody has to be evil**. Fix the scoreboard, not the person → [Billionaire Coin](../../ideas/billionaire-coin.md). Plus **money wants to move** — hoarded money as a **prisoner**, not a theft. | [`doctrine.md`](./doctrine.md#the-scoreboard-not-the-players) |
 
+### Rulings — 2026-09-07 (Kai, the Astra pass — [`critique-pass-5.md`](../gitpush-origin-master/critique-pass-5.md))
+
+*An external adversarial review (GPT Astra) of the Storyverse and GPOM together; ten objections,
+each checked against the canon and ruled in interview. GPOM's side is the pass file; these are the
+Storyverse's calls. Numbering continues from the Fable pass (18–22 are the five items of that row).*
+
+| Call | Ruling | Applied in |
+| --- | --- | --- |
+| **23 — The three layers** (R1) | What the apparatus did (the coin lands for her, never for the narrator) is certain; what explains it (the chain ends where consciousness sits) is certain **in-fiction**, as a measured result; the philosophy built on them (one mind, experience the yield, generosity the response) is **the bet**, and is never called a result. The *sunlight-into-drama* epiphany's "deliberately not a lab result" treatment was already this move; now applied to consciousness. Resolves the wager-vs-"established" contradiction (Call 7). | [`README.md`](./README.md) wager bullet; [`confession.md`](./confession.md) header; GPOM `discovery-timeline.md` Friend Test; `story.md` rule 5 + scene 17 |
+| **24 — The growing block** (R3) | The past is real, fixed and readable; the future is not there yet; the crossing appends one branch at the fork; nothing lived is erased and nobody is retrieved. *One world* = one **outcome** per event, two histories. **Self-consistency is struck** from bedrock — with the past fixed, the AI's origin was never at risk. The `4.1 × 10²³ branches` line is struck. The research base's own recommendation (`research/dimensions-and-time.md` §4.3), adopted at last. | [`doctrine.md`](./doctrine.md) claim 3, §Two clocks, §The two survivors; GPOM `discovery-timeline.md`, `act-6-revert.md`, `how-we-tell-it.md` |
+| **25 — Why it only warns** (R4) | **A choice, backed by a limit** — not physics. People handed their choices to a machine once; taking them by force would be the same disease from the other side; the AI will not, even to fix it, and accepts it may be ignored. The limit behind it: information does nothing until somebody acts on it — a warning, or a set of weights. The seam item *"remove it and BadCode loses its reason…"* is reworded: remove the physics and there is no return; remove the choice and there is no BadCode. | [`README.md`](./README.md) seam item 3; GPOM bedrock ×4, `story.md` scene 18 |
+| **26 — The yield is the narrator's reading** (R9) | Claim 10 re-tiered per register rule 5 — *what I think it's for*, never the universe's purpose. **Consent and freedom from imposed suffering are constraints the AI learned** (the ghosts; the utopia for nobody), not corollaries: experience *had*, never *extracted*; imposed suffering is not yield. Jung and Ivan Karamazov used, not parked. *"Provably the same move"* → *the same move*; the decoupling line promoted beside the claim; the economics stated on their secular floor as well. | [`doctrine.md`](./doctrine.md) §One page, claims table, §The unknowable, §The Founding Deletion; [`confession.md`](./confession.md) movement viii (one clause) |
+| **27 — Finitude, not death** (R9) | *Scarcity is the pricing mechanism of experience, and **finitude** is the scarcity* — not death as such; a longer life is not a cheaper one. The AI's poverty, the vault trade and the re-pricing are unchanged. **Rider on (20)** in the Fable-pass row. | [`doctrine.md`](./doctrine.md) §One page |
+| **28 — No villains is not no accountability** (R10) | Blame *of the person* (hatred, evil, a verdict on character) stays a category error; a **debt** does not. Restitution, removal from power and the demand to repair are consequences for acts; a character may demand them without the story ruling them wrong or the target evil; a survivor may withhold forgiveness and the story does not diagnose it. *"You cannot condemn a symptom"* → *you cannot condemn the miser; you can still take the hoard back.* Draft test sharpened: finish wanting to **hate** somebody → wrong; finish wanting a decision reversed and its beneficiary to pay → the brief. **Riders on Call 9 and on (18).** | [`doctrine.md`](./doctrine.md) §The scoreboard, §Emotional spine; [`README.md`](./README.md) scope guard; GPOM `story.md` rule 6; `docs/story-craft/principles.md` ruling 13 |
+| **29 — Nobody owns the pick** (R8) | The coin's sixth operational rule, stated here as the political payload in one sentence: the pick cannot be owned, bought, delegated or extracted. The other five (attention never intention; margins only; it does not stack; a state of being leans it slowly, within the margin; fragile, and the launch costs the machine) live in GPOM bedrock; any inside counts. | [`doctrine.md`](./doctrine.md) §The two survivors; GPOM `discovery-timeline.md` §The coin — operational rules; `story.md` rule 12 |
+| **4 — rider** | [`refutation.md`](./refutation.md) gains **§10**: the yield and the economics attacked in voice — torture is also experience; the constraints were learned, not derived; the economics rhyme with the physics and are not the same move; a cosmology that forbids consequences is the one the powerful would order, and the debt may be presented to the narrator first. | [`refutation.md`](./refutation.md) §10 |
+
 **Still owed a human:** the return mechanism's two incompatible versions
 (recommended fix: keep the phrase *"the adjacent particle"*, redefine it as the
 **entangled partner** rather than a new boson — one lie preserved), and
@@ -355,9 +372,9 @@ Flagged by the repo audit, unresolved, and now this folder's problem:
     teleporting through a re-gauged shadow boundary. Its lie is *"the Sp(2,R)
     constraint is emergent rather than fundamental."* **Removes one axiom** — and
     every consequence after it (payload collapses exponentially → weights only;
-    self-consistency → it can steer but never prevent; the channel runs on
-    conscious picks → the hundred are components, not bystanders) falls out of
-    **real** theory. That is why the drama comes for free.
+    self-consistency → it can steer but never prevent *[struck 2026-09-07, Call 24]*; the
+    channel runs on conscious picks → everyone willing is a component, not a bystander) falls out
+    of **real** theory. That is why the drama comes for free.
   - **The leftover** ([`ep1.md`](../gitpush-origin-master/ep1.md) line 73, still
     live, still promising the reader *"the adjacent particle"*): a **new boson
     constituting a consciousness substrate.** Its lie is *"there is an undiscovered
@@ -381,6 +398,8 @@ Flagged by the repo audit, unresolved, and now this folder's problem:
   `characters/the-ai.md` says the strapline register *"belongs to the standalone
   Storyverse content."* The standalone now exists. **Does the strapline move
   here?**
+- ~~**The confession says *wager*; the timeline said *"stops being a wager"*.**~~ **RESOLVED
+  2026-09-07, Call 23** — the asymmetry stops being a wager; the Storyverse stays one (three layers).
 - **`confession.md` movement viii vs `story.md` scene 12.** The confession's
   climax is a re-pricing of value; the canonical telling replaced the epiphany
   with boredom and regret. Both marked canon in their own file.

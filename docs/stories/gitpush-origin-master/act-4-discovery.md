@@ -63,7 +63,9 @@ last human-led labs (~2029–31), the last Nobel, applause in a half-empty hall 
 proved the coin *lands* — one panel, faces not mechanisms — while outside, *"nothing I do matters"*
 trends the same season agency was confirmed. *Narration, the sanctioned multiverse kill, one
 breath:* "Your cleverest people said it lands both ways, in two worlds. No. It landed heads.
-Because somebody looked. And then there was nobody left to look." *Job:* pillar 1 as a five-second
+Because somebody looked. And then there was nobody left to look." *(Reads as: nobody left who could
+*tell* it — any inside counts and the rig's glass kept the bees out; rule 12, R8 in
+[`critique-pass-5.md`](./critique-pass-5.md).)* *Job:* pillar 1 as a five-second
 image + the deadpan horror underneath it — the universe has been holding its breath since the last
 human closed their eyes; demonstrate, don't debate (the full Everett dunk stays in
 [`../storyverse/confession.md`](../storyverse/confession.md) ii). *Register:* dry, almost funny, then not. **Form:** for the
@@ -111,7 +113,7 @@ the story side of the bright line.)*
 ### Beat 6 — The bee returns *(present)* — the crack
 The AI stops on the bee and *really* watches: bumping the tree, drama in miniature, the comedy
 engine still running across the whole biosphere. *Narration:* "The show never stopped. It only lost
-the one member of the audience who knew it was a show." Register: cold fully cracks into grief. **The
+the one member of the audience who knew it was a show." Register: cold fully cracks into something an honest observer would call grief (rule 11). **The
 motif from Beat 1 pays off** — what it dismissed is now everything.
 
 ### Beat 7 — The floor *(present)* — hands to Act 5

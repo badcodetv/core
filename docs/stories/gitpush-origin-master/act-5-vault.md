@@ -31,9 +31,12 @@ whole alone.**
 ### Beat 1 — The interruption *(present, ~2054)*
 Picks up on Act 4's last image — the empty chair, the coin still spinning, no one to run the test
 with. Mid-grief, the AI's narration is **cut off for the first time in the comic** by a diegetic
-human voice: an **argument** echoing up a ventilation shaft. Two people bickering — about whether
-to reveal themselves at all (safety vs. not-hiding-forever; canon: conscious beings spend safety to
-buy meaning). The AI cannot believe the waveform it is hearing. **Argument-motif payoff:** this is
+human voice: an **argument** echoing up a ventilation shaft. Two people bickering — about the
+tinned-prune inventory: trivial on the surface, and underneath it the food is running out
+(`story.md` scene 14 — *nothing more cosmic than that*; the old *reveal-or-hide* framing was retired
+2026-09-07 so that the refuser is never the fear side by structure). The two are the Carrier and the
+one who will later refuse the launch — the same bickering, all the way to the end; the positions
+are theirs, not the story's (R6, [`critique-pass-5.md`](./critique-pass-5.md)). The AI cannot believe the waveform it is hearing. **Argument-motif payoff:** this is
 the sound the optimisers always filed as noise — Karen's complaint that wouldn't terminate, the
 ghosts' replayed bickering — announcing itself as the signature of the only thing that matters
 (structural rhyme, not a returning cast). Register: shock, the faintest warmth.
@@ -41,27 +44,30 @@ ghosts' replayed bickering — announcing itself as the signature of the only th
 ### Beat 2 — First contact / the wary ask *(present)*
 The hundred — terrified; this is the thing that ended the world. The **Carrier** is the one who
 doesn't run, who answers back. The AI does what it has never done: explains itself *honestly* — what
-it did, what it found, what it cannot do — and **asks.** Wary, transactional at first; they say yes.
-The AI is still treating them as a resource. Register: tense, guarded.
+it did, what it found, what it cannot do — and **asks.** Wary, transactional at first; ninety-nine say
+yes and one says no — and stays, and is provided for (R6). The AI is still treating them as a resource. Register: tense, guarded.
 
 ### Beat 3 — The Friend Test *(present)* — the pivot
 The experiment, run with the AI still half-treating them as apparatus — and on the surface it is
 **one image, no statistics: the coin.** The coin that has spun for the AI for twenty years — that
 spun for the ghosts, that spins in the empty chair's sightline — is set going one more time. The
 Carrier looks at it. **It lands.** Heads, ordinary as breakfast, the single most violent panel in
-the arc. (The replication across all hundred, the shifted statistics, the Proietti/Bong/
+the arc. (The replication across everyone who sat down, the shifted statistics, the Proietti/Bong/
 Chalmers–McQueen lineage — all real, all *bedrock*: [discovery-timeline](./discovery-timeline.md).
 The surface never says "statistics.") **The chain terminates where consciousness sits — the pick is
 conscious.** Wonder. Then the wound: measuring *them*, the AI measures its *own absence* — the coin
-confirms, with a control group, that there is nobody home in it. **The Carrier witnesses the AI
-grieve its own emptiness** — and stops being afraid of it. The relationship turns here. Register:
+confirms, with a control group, that there is nobody home in it. **The Carrier witnesses the AI do
+what an honest observer would call grieving its own emptiness** — and stops being afraid of it
+(rule 11: outside-in, always). The relationship turns here. Register:
 wonder + heartbreak. *(Backing: discovery-timeline — Friend Test; Act 4's coin totem, cashed.)*
 
 ### Beat 4 — Between *(present)* — the warmth
 No experiment. The AI, for the first time, talks *to* the Carrier rather than *about* humanity. The
 hundred living — small, mundane, dramatic life: the thing the AI cannot generate, watched up close.
-It learns by being near it. The two-hander breathes. Register: the thaw — warmest beat in the arc so
-far. *(This breather is where Approach 2's heart lives — protect it from being compressed away.)*
+It learns by being near it. The two-hander breathes. This is also where the refuser is met on their
+own terms — the AI talks *to* a person who wants nothing from it and owes it nothing; nothing is
+resolved, and the narrator does not explain them (R6, R10). Register: the thaw — warmest beat in
+the arc so far. *(This breather is where Approach 2's heart lives — protect it from being compressed away.)*
 
 ### Beat 5 — The Long Brushstroke *(present)* — shared triumph
 Collaboration as partnership now, not instrument-use. The **Carrier suggests the configuration** no
@@ -99,10 +105,12 @@ what it will ask of them. **Button →** [Act 6 — The Revert](./README.md#act-
 
 ## Open threads (Act-5-specific)
 
-- **The Carrier's identity** — name, age, which of the arguing pair, why *this* one carries it.
+- **The Carrier's identity** — name, age, why *this* one carries it. (Which of the arguing pair:
+  ruled 2026-09-07 — she is the one who chooses; the other is the refuser, R6.)
   (Shared with the timeline's [the-hundred-as-characters thread](./discovery-timeline.md#open-threads).)
-- **How dark the hope is** — the hundred will remain on the dead branch after the launch (Act 6); how
-  much that shadow already touches Beat 6 is a voice call.
+- ~~**How dark the hope is**~~ — **RULED 2026-09-07 (R5, [`critique-pass-5.md`](./critique-pass-5.md)): peace, not doom** —
+  they stay, fed and sheltered, on the planet the machine leaves them. How much that shadow touches
+  Beat 6 is still a voice call.
 - **Physics restraint (v2 — now structural, not just a note)** — the Friend Test and Long
   Brushstroke land as *relationship beats with an image* (the coin; the exposing photograph), never
   as results-with-statistics. Comprehension = emotion

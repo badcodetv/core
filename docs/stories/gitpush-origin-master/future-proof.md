@@ -127,6 +127,15 @@ everything equally" model, designed before electricity, let alone algorithmic fe
 the exploit surface a headline can swing. Decisions anchored to measured outcomes and informed
 participants are far harder to capture than decisions anchored to mood.
 
+⚠️ **The instrument's blind spot** *(added 2026-09-07 — R9, [`critique-pass-5.md`](./critique-pass-5.md))*. The
+Storyverse's central charge ([`doctrine.md` §The Founding Deletion](../storyverse/doctrine.md#the-founding-deletion))
+is that a measurement convenience hardened into *if it isn't in the accounts, it isn't real* — and
+everything that didn't fit (care, meaning, an afternoon) was deleted, twice. A politics that anchors
+authority in measurement and competence is the same kind of instrument, and **a better scoreboard
+can still exclude people.** Nothing on this page answers *who represents the person whose needs
+still do not fit the new instrument.* That is not a flaw to hide; it is the next story — see the
+open thread at the end.
+
 > These three are **borrowed from how we build resilient systems**, because a society *is* one. We
 > wrote software that can absorb constant change without falling over. We can write a politics that
 > does the same.
@@ -199,6 +208,10 @@ Three commitments for presentation:
 
 ## Open threads
 
+- **Who represents the person whose needs still do not fit the instrument?** *(opened
+  2026-09-07 — R9, [`critique-pass-5.md`](./critique-pass-5.md))* The Storyverse condemns exclusion by measurement;
+  this page proposes a politics built on it. A better scoreboard can still leave someone out, and
+  nobody here speaks for them. Fertile material for a subsequent story; not scheduled.
 - **The full in-voice epic** — Future Proof's equivalent of the Storyverse's confession, written
   once this plan settles. The three anchors above set its register.
 - **The Galileo piece (received from the Coda — critique pass, 2026-07).** The closing

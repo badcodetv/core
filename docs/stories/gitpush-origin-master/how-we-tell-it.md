@@ -131,7 +131,11 @@ reasoning exactly, while *Everything Everywhere All at Once* is held up as the o
 that worked **precisely because it collapses infinite branches into a single relational present**
 where choice matters. The market has already voted for the storyverse. *One unfinished world*
 restores consequence, irreversibility, and singular meaning. Our fork is **two consequential
-branches, never infinite ones** — the cure the exhausted multiverse keeps reaching for.
+branches, never infinite ones** — the cure the exhausted multiverse keeps reaching for. *(One word of
+precision, added 2026-09-07 — R3, [`critique-pass-5.md`](./critique-pass-5.md): "one world" means **one outcome per
+event**, never one history. The past is real, fixed and readable; the future is not there yet; the
+crossing appends one branch at the fork, and nobody on the old one can be retrieved. Two histories,
+one of which costs everything — that is the whole of what the fork asserts.)*
 
 **Demonstrate, don't debate.** The one refinement the fatigue record forces: audiences don't hold
 Everett dear — physicists do. A movement-length polemic against Many-Worlds is an argument with

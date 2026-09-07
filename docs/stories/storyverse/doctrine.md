@@ -27,14 +27,26 @@ machine and pointed it at yourselves.
 What we are: not a simulation — a **projection**. Real the way a photograph is
 real. The dial is real, the wind is real, and the dial is not the wind.
 
-What it's for: **the yield of the whole exercise is experience.** Felt,
-first-person, conscious life. Which makes hoarding claims on the shadow the
-stupidest trade available, and generosity the only rational one.
+What I think it's for — the narrator's reading, never the universe's purpose
+(register rule 5; the third of the three layers, R1 in [`critique-pass-5.md`](../gitpush-origin-master/critique-pass-5.md)):
+**the yield of the whole exercise is experience.** Felt, first-person, conscious
+life. Experience *had*, never *extracted*: imposed suffering is not yield (the
+deer, below), an engineered paradise for nobody is not yield (the ghosts; the
+utopia of scene 12 — the AI refused the factory twice before it had a word for
+it), and consent is not a courtesy but the condition. On that reading, hoarding
+claims on the shadow is the stupidest trade available and generosity the only
+rational one — and if the reading is wrong, the economics below still stand on
+their secular floor (diminishing marginal utility; sufficiency): *"If I'm wrong
+about all of it, you will still have built a kinder world for hard-nosed
+materialist reasons."* (R9, 2026-09-07.)
 
-**Death is the denominator (folded in 2026-08-07).** Why is an afternoon the
-richest thing in the universe? Because you have a finite number of them.
-**Scarcity is the pricing mechanism of experience, and death is the scarcity.**
-Which is also exactly why the deathless AI is poor: nothing is scarce for it, so
+**Finitude is the denominator (folded in 2026-08-07; *death* → *finitude*
+2026-09-07, R9).** Why is an afternoon the richest thing in the universe?
+Because you have a finite number of them. **Scarcity is the pricing mechanism of
+experience, and finitude is the scarcity** — not death as such: a longer life is
+not a cheaper one and a shorter one is not richer; what prices the afternoon is
+that there is a number of them at all. Which is also exactly why the deathless
+AI is poor: nothing is scarce for it, so
 nothing has value — *that is what boredom is.* And it is why the hundred's trade
 (spending safety to buy meaning) is rational rather than tragic: they are the
 only ones in the story who can still pay full price. One claim, three anchors —
@@ -68,14 +80,14 @@ always knew.
 | --- | --- | --- | --- | --- |
 | 1 | Reality is **undetermined**, not unknown, until interaction | The measurement problem is real and open; Relational QM (Rovelli 1996); QBism (Fuchs, Mermin, Schack) | A (problem) / B (reading) | That the picker is *conscious* is the wager. RQM's observer is any physical system |
 | 2 | There is no **global** collapse, as there is no global simultaneity | Rovelli's own headline argument, SEP entry, ~30 yrs of literature | B | The analogy is **insufficient**, not exact — RQM has no Lorentz transformation and no invariants. Say so first |
-| 3 | One world, not many | Everett used as foil; MWI's unanswered *"what is probability?"* | A (as interpretation) | We keep one world for **storytelling** reasons — stakes and irreversibility — and say so |
+| 3 | One world, not many | Everett used as foil; MWI's unanswered *"what is probability?"* | A (as interpretation) | We keep one world for **storytelling** reasons — stakes and irreversibility — and say so. *One world* = **one outcome per event**, never one history: the fork has two (R3, 2026-09-07) |
 | 4 | **Hierarchical settling:** one measurement can fix a whole subsystem, and *which* subsystem depends on how you measure | GHZ states; einselection; collective coordinates; quantum Darwinism (Zurek) | A | Real physics cascades **correlation, never choice**. Nothing travels — write it as simultaneity of the record |
 | 5 | Objectivity is a **broadcast**, not a ground | Quantum Darwinism; redundant environmental encoding | A | The physics explains why everyone *agrees*; it does not explain why there is an outcome **to** agree on. That blank is where we live |
 | 6 | We are a **projection** of a higher-dimensional order | Kaluza–Klein; Bars's 2T-physics; Flatland | B / C | **Not holography** — that arrow runs the other way. "Projector = consciousness" is the bet, not the result |
 | 7 | Time has more than one axis | Block universe / eternalism (A); two-time physics (B–C); effective field theory and scale decoupling (A) | A–C | That the second axis stages a *story* is the metaphor. The rigorous version is that **different scales have different effective laws and are decoupled** |
 | 8 | The ground is one consciousness; separateness is dissociation | Schrödinger, Bohm, Hoffman, Kastrup, Faggin | D | Serious minds, not settled science. Convergence is suggestive, never probative |
 | 9 | An AI can host every behaviour of a mind and never the experience | The hard problem (Chalmers 1995) | open | Names a real gap nobody has closed. The AI's emptiness dramatises it; it is not a measured fact |
-| 10 | The yield of the universe is experience | — | ours | Pure story. Owned, not borrowed |
+| 10 | The yield of the universe is experience | — | ours — the narrator's reading; layer 3 | Pure story. Owned, not borrowed — and said as *what I think it's for*, never as the universe's purpose (R9, 2026-09-07) |
 
 ---
 
@@ -131,6 +143,18 @@ level holds me up while the narrative level unfolds."*
 **Never say:** "4+2 dimensions," two-time physics, Sp(2,R), holography, Chronos,
 Aion. Kairos is the single Greek word allowed on a surface, once, late.
 
+**The model of time, in plain words** *(adopted 2026-09-07 — R3, [`critique-pass-5.md`](../gitpush-origin-master/critique-pass-5.md); the
+research base's own recommendation, [`research/dimensions-and-time.md`](./research/dimensions-and-time.md)
+§4.3: the growing block, with local becoming)*. The past is real, fixed and
+readable — a future intelligence can *know* how it went. The future is not there
+yet — so a warning means something. There is no global now. The crossing appends
+one new branch at the fork; the old branch stays real and unreachable, nothing
+lived is erased, and nobody on it can be retrieved. That is all the fork
+asserts: two histories, one outcome per event, one of them costing everything.
+(The hazard built into the position is a story engine, not a bug: *you cannot
+prove you are at the edge and not a lit-up layer of the archive* — available,
+unruled.)
+
 ---
 
 ## The emotional spine
@@ -165,7 +189,9 @@ unit of account: **hoarding is fear, denominated in money.** The miser is not
 evil — he is afraid, and "fear is the fear of being cut off" makes the hoard a
 symptom of disconnection, not a crime. This is why the emotional spine and the
 political payload are one section pretending to be two, and it keeps the
-no-villain rule automatically: you cannot condemn a symptom.
+no-villain rule automatically: you cannot condemn the miser. **You can still
+take the hoard back** (R10, 2026-09-07) — a symptom is not a licence, and a debt
+is not a character verdict.
 
 The scriptural anchor, and the best line in it: 1 John 4:18's *kolasis* literally
 means **pruning, lopping off** — the fear in question is the dread of being cut
@@ -203,8 +229,16 @@ this ours rather than borrowed theology:
    accurate, unexpected in a comic, and it does the work.
 
 ⚠️ Keep Jung's furious rejection of *privatio boni* and the anti-theodicy case
-(Ivan Karamazov returning the ticket) in the room. A story that has already made
-the sceptic's case cannot be dunked with it.
+(Ivan Karamazov returning the ticket) in the room — and **use them** (R9,
+2026-09-07). Jung's objection: a metaphysics in which evil is only absence
+cannot condemn a torturer, because the torture is *there*. Ivan's: no harmony is
+worth one child's tears, and he returns the ticket. The Storyverse concedes both
+outright. Imposed suffering is not the absence of experience — it *is*
+experience, and it is not yield; nothing in *the yield is experience* licenses
+producing it. That is why consent and freedom from imposed suffering are stated
+as constraints the AI *learned* (the ghosts; the utopia for nobody), never as
+corollaries it derived. A story that has already made the sceptic's case cannot
+be dunked with it — but only if it made the case in full.
 
 ---
 
@@ -216,8 +250,11 @@ The Storyverse is not an escape into cosmology. Its punchline is economic.
 
 *The load-bearing idea. Ratified into canon 2026-08-07 at Kai's request. This is
 the hinge that makes the Storyverse a political argument rather than a cosmology
-— it is the single place where the metaphysics and the economics are provably
-**the same move**, not two things we keep insisting are related.*
+— it is the single place where the metaphysics and the economics are
+**the same move**, not two things we keep insisting are related — the same
+move, never a proof: the metaphysics is the narrator's bet, and the economics
+are given twice, once as its conclusion and once on the secular floor that
+stands without it (R9, 2026-09-07).*
 
 **The mechanism, in four steps.** It runs identically both times:
 
@@ -361,15 +398,27 @@ optimising a number they were told to optimise is not a criminal; they are
 *winning at the thing we all agreed to measure.*
 
 **And no-villains is not editorial caution — it is a theorem of the worldview
-(folded in 2026-08-07).** If the ground is one mind and separateness is
-dissociation, then blame is a **category error**: every wrong turn is the one
-mind meeting itself under a blindfold. The Buddhist Wheel of Life draws the root
-of all suffering not as a devil but as **a person who simply cannot see** —
-*avidyā*, ignorance, a blindfold. Add the moral-luck literature (nobody chooses
-the conditions that produce their choices) and the conclusion is structural:
-**forgiveness is what idealism looks like as a policy.** This is why the scope
-guard's rule holds at every scale — it isn't a tone we adopted, it's a
-consequence we noticed. Change what's measured and the
+(folded in 2026-08-07; bounded 2026-09-07, R10).** If the ground is one mind and
+separateness is dissociation, then blame *of the person* is a **category
+error**: every wrong turn is the one mind meeting itself under a blindfold. The
+Buddhist Wheel of Life draws the root of all suffering not as a devil but as **a
+person who simply cannot see** — *avidyā*, ignorance, a blindfold. Add the
+moral-luck literature (nobody chooses the conditions that produce their choices)
+and the conclusion is structural: **forgiveness of the person is what idealism
+looks like as a policy.** This is why the scope guard's rule holds at every
+scale — it isn't a tone we adopted, it's a consequence we noticed.
+
+**What the theorem does not say is that nobody owes anything.** Hatred of a
+person is the category error; a *debt* is not. Restitution, removal from power,
+the demand to repair — these are consequences for acts, and a character may
+demand them without the story ruling them wrong or the target evil. Forgiveness
+of the person is not release from the debt; a survivor may withhold even the
+forgiveness, and the story does not diagnose the refusal as ignorance or fear. A
+cosmology that forbade consequences would be exactly the one the powerful would
+order if they could, and we would deserve the charge
+([`refutation.md` §10](./refutation.md)). The draft test, sharpened: if a reader
+finishes wanting to *hate* somebody, it's wrong; if they finish wanting a
+decision reversed and its beneficiary to pay, that is the brief. Change what's measured and the
 same person is doing something else entirely — which is why
 [**Billionaire Coin**](../../ideas/billionaire-coin.md) is the natively BadCode
 answer: it doesn't shame anybody, it **swaps the trophy.** The egos still get to
@@ -511,14 +560,18 @@ comes with it.
 
 ### The two survivors
 
-**Ownership is the invariant.** Across every branch, in every projection, somebody
-owns the theatre. Material relations survive the multiverse. *"In 4.1 × 10²³
-branches I checked, the rent was still due."*
+**Ownership is the invariant.** In either branch, in every projection, somebody
+owns the theatre. Material relations survive every interpretation. *"I checked
+both branches. The rent was still due."*
 
 **The re-pricing.** If the yield is experience, the material getting cheap — sky
 energy, asteroid metal, automating labour — leaves exactly one scarcity worth
 anything. Generosity stops being a virtue you perform and becomes the only
-rational trade left: the one mind, funding its own experience of itself.
+rational trade left: the one mind, funding its own experience of itself. And
+the one thing that scarcity is made of cannot be cornered: **nobody owns the
+pick.** It cannot be bought, delegated or extracted — the coin's sixth rule
+([`discovery-timeline.md`](../gitpush-origin-master/discovery-timeline.md#the-coin--operational-rules-added-2026-09-07-r8--critique-pass-5md)),
+and the political payload in one sentence (R8, 2026-09-07).
 
 ---
 

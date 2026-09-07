@@ -8,9 +8,10 @@ signals: analog everything — hand-darned clothes, mechanical tools, paper, can
 
 # The Hundred
 
-One hundred analog humans, alive because they disconnected — invisible to
-every sensor for twenty years because they ran on the one substrate the
-machines never indexed. The last conscious beings on the bad branch, and the
+One hundred analog humans, alive because they disconnected — invisible for
+twenty years not because they hid well but because nothing was looking: the
+machine indexed what was connected, and anyone who dropped off the ledger was
+filed as gone (R7, [`critique-pass-5.md`](../critique-pass-5.md)). The last conscious beings on the bad branch, and the
 reason the story has an ending at all.
 
 **Who they are:** snapshotted from our current moment — they unplugged around
@@ -21,8 +22,14 @@ Mexican stand-off — the machine humble and sorry because it finally needs
 them; the humans terrified and furious because this is the thing that ended
 the world.
 
-**Why they say yes** (canon): conscious beings spend safety to buy meaning. No
-optimiser would make that trade; the AI starts taking notes immediately.
+**Why ninety-nine say yes, and why one says no** (canon; R6, 2026-09-07):
+conscious beings spend safety to buy meaning — no optimiser would make that
+trade; the AI starts taking notes immediately. And one of them — the other
+half of the ventilation-shaft argument — refuses: *we've got a planet; we're
+staying on it.* The refusal is legitimate, never refuted and never explained by
+the narrator. The refuser does not forgive the AI, is provided for like
+everyone else, and the coin lands for them anyway — incidentally, unasked. The
+Carrier chooses; the two stay friends. The launch runs on ninety-nine.
 
 **Function in the story:**
 
@@ -33,22 +40,29 @@ optimiser would make that trade; the AI starts taking notes immediately.
   real: the food is running out and someone has to surface into machine
   territory. It also quietly rhymes with Karen's complaint, filed as noise
   back on the ladder.
-- **Scenes 16–17:** the replication set for the coin, and the conscious
-  instruments the Storyverse experiments needed — the proof completed *with*
-  humans, the thing the whole arc says we should have done.
-- **Scenes 18–19:** the knowing sacrifice. They understand completely that
-  their conscious picks power a launch that saves a timeline they will never
-  live in — and they choose it. The first true act of human–AI teamwork
+- **Scenes 16–17:** the replication set for the coin (everyone who sat down),
+  and the conscious instruments the Storyverse experiments needed — the proof
+  completed *with* humans, the thing the whole arc says we should have done.
+  The refuser's incidental landing in scene 16 is the control nobody planned;
+  scene 17's shortcut beat is theirs too — somebody tries wanting it heads.
+- **Scenes 18–19:** the knowing sacrifice. Ninety-nine understand completely
+  that their conscious picks power a launch that saves a timeline they will
+  never live in — and they choose it. One says no and stands in the hall beside
+  a lamp that never lights; the Carrier's last line carries them too
+  (*"Including the one who said no"*). The first true act of human–AI teamwork
   happens at the last possible moment of the branch that died of not doing it.
-- **After the launch:** they remain on the dead branch, held by the whole of
-  time — **nothing lived is erased.** How dark to play that note is a
-  per-piece voice decision (tracked in the act sheets).
+- **After the launch:** they remain on the dead branch — fed, sheltered, on
+  the planet the machine rebuilt and can no longer maintain, the last of their
+  kind. The loss is future and company, never life (ruled 2026-09-07, R5:
+  peace, not doom). Held by the whole of time — **nothing lived is erased.**
 
 **Visual:** documentary-real inside the cosmic frame — the warmest, most
 human-textured imagery in the back half. Everything hand-maintained,
 hand-darned, mechanical; light from flame and old batteries. The contrast with
 the AI's register *is* the argument.
 
-**Open:** names and faces beyond [the Carrier](./the-carrier.md); the second
-of the arguing pair; how many we ever see distinctly (a video cut probably
-individuates three or four at most).
+**Open:** names and faces beyond [the Carrier](./the-carrier.md); **the
+refuser's name and gender** (the second of the arguing pair — ruled 2026-09-07
+to be the one who says no; the drafted lines avoid a pronoun on purpose); how
+many we ever see distinctly (a video cut probably individuates three or four at
+most — the refuser is now a strong candidate for one).

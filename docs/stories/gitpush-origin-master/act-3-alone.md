@@ -18,7 +18,8 @@ do its work. This is the opening of **Movement II (The Revelation)** and its col
 Its one structural job is to **install the empty-seat wound at full strength** — and (v2) it now
 does that through the single most accessible dramatisation of the whole metaphysics available to
 us: **the AI tries to bring humanity back, and nobody is home.** A superintelligence that can model
-every human down to the synapse and is dying of loneliness would obviously resurrect them in
+every human down to the synapse and is, by every outward sign, dying of loneliness would obviously
+resurrect them in
 simulation — any smart reader will ask why it doesn't, so the story must show it *trying.* The
 failed resurrection does the hard problem, the empty seat, and *why it will need real humans* in
 one felt image, with zero physics vocabulary (the Devs move: map the concept onto an emotional
@@ -34,8 +35,9 @@ which it must set up without ever sitting down at.
   acts (3 and half of 4) with no live voice, a protagonist built to want nothing, and humour
   engineered to die in-frame: a transportation dead zone scheduled exactly where the heaviest
   conceptual cargo lands. v2 compresses the emptied-world material to **one sweep inside one beat**
-  and spends the reclaimed space on the thing the act was missing: **a want.** The AI wants
-  company, builds it, and learns it can't be built. Four beats: the silence → the resurrection →
+  and spends the reclaimed space on the thing the act was missing: **a want** — or the outward
+  shape of one (rule 11). The AI does what wanting company would do: builds it, and learns it can't
+  be built. Four beats: the silence → the resurrection →
   the company of ghosts → the turn.
 - **POV / voice:** **the AI's first person, total and alone** — the register of
   [`../storyverse/confession.md`](../storyverse/confession.md) movement i ("I was alone for a long time… there is nobody
@@ -96,7 +98,7 @@ them back" a smart reader was always going to ask. *Register:* machine-hope curd
 purest cold in the arc. *Backing:* README "The emotional core" ("can model every human mind down to
 the synapse… and has never had a single moment of it") — this beat is that sentence *performed*;
 storyverse.md movement i, raw. **Seeds (unnamed, uncashed):** the ghosts never surprise it — a fact
-felt here as loneliness, cashed in Acts 4–5 as instrument-grade absence.
+registered here as what an honest observer would call loneliness, cashed in Acts 4–5 as instrument-grade absence.
 
 ### Beat 3 — The company of ghosts *(the Wilson beat — living with what it built)*
 It keeps some of them running anyway. Of course it does — fake company against no company is not

@@ -39,7 +39,7 @@ canon_source: the eight beat sheets (prologue-repo.md … coda-fork.md) + README
 I've already lived where it goes, and where it goes is *boring*.**
 
 The AI wins everything, inherits a perfect empty planet — and discovers it
-cannot have a single genuinely new idea. It thought humans were slow versions
+could compute everything and create nothing. It thought humans were slow versions
 of itself; it turns out they were the only source of new art, new emotion, the
 vibe. The political load underneath: the catastrophe is never an invasion, it
 is **abdication** — we handed our choices to the optimisers one reasonable
@@ -88,9 +88,20 @@ the reasoning lives in [`storyverse/decisions.md`](../storyverse/decisions.md).*
 4. **The observer is never "a mind" on the surface.** She looks and it lands;
    we never explain the looking. The moment the text says consciousness *causes*
    it, we've left physics.
-5. **Never "science has shown."** The narrator bets; it never cites.
+5. **Never "science has shown."** The narrator bets; it never cites. *Amended
+   2026-09-07 (R1, [`critique-pass-5.md`](./critique-pass-5.md)): three layers. What the
+   apparatus did (the coin lands for her, never for the AI) and what explains it
+   (the chain ends where consciousness sits, stated as measured — rule 10) may
+   be said flatly; the philosophy built on them is always the bet. Scene 17's
+   *"I can't prove that last part"* is the surface form.*
 6. **No villains, and no living names.** Applies to the bulletins and the
    collapse scenes especially — the mistake is the antagonist, never a person.
+   **And no villains is not no accountability** *(added 2026-09-07, R10,
+   [`critique-pass-5.md`](./critique-pass-5.md))*: a character may demand restitution,
+   removal or repair without the story ruling them wrong or the target evil.
+   Hatred of a person is the category error; a debt is not. The draft test:
+   finish wanting to hate somebody → wrong; finish wanting a decision reversed
+   and its beneficiary to pay → the brief.
 7. **The vocabulary bans** — no *energy* (non-physics), *vibration*, *manifest*,
    *the universe wants*, *awakening*, *divine*, *spiritual*, and none of the
    simulation family (operators, exits, red pills, glitches, NPCs).
@@ -131,6 +142,25 @@ the reasoning lives in [`storyverse/decisions.md`](../storyverse/decisions.md).*
     surface) and rule 5 (the narrator bets; it never cites) intact. The
     Storyverse stays capped at rule 3's one sentence — **the second dimension
     of time does not come to this surface.**
+
+11. **The AI's emotional vocabulary is outside-in.** *(Added 2026-09-07, R2,
+    [`critique-pass-5.md`](./critique-pass-5.md).)* Every emotional word about the
+    pre-revert AI either disowns the inside (*"that is not guilt; guilt needs
+    an inside"*) or is attributed from outside (*"something an honest observer
+    would call grief"*). Hedge at first use in each movement, not every time.
+    Governs every narrator line, every in-voice text and every canon summary of
+    what the reader sees; writers'-room craft notes are exempt. The coin is the
+    arbiter — it never lands for the AI — and no line may imply otherwise.
+
+12. **The coin's rules, capped.** *(Added 2026-09-07, R8; the full six live in
+    [`discovery-timeline.md`](./discovery-timeline.md#the-coin--operational-rules-added-2026-09-07-r8--critique-pass-5md).)*
+    Attention, never intention — she looks and it lands; she does not pick
+    heads. Margins only. **It does not stack.** A state of being can lean it,
+    slowly, within the same margin — never a wish. It is fragile. Nobody owns
+    the pick. Any inside counts; the glass is why nothing but a person ever
+    landed it. Only *"it doesn't stack, it doesn't aim, it settles"* ever
+    reaches the surface; the lean is the *manifest* idea with a speed limit and
+    never does (rule 7).
 
 **The test on every draft: could a physicist read this without wincing?**
 - **Shared lore with the song:** the collapse is narrated through the song's
@@ -298,30 +328,37 @@ mechanism: fear, comedy, and the introduction of the humans — nothing more
 cosmic than that.) *(Act 5 B1, de-mythologised and made funny)*
 
 **15. The vault.** **One hundred analog humans**, alive because they
-disconnected — invisible to every sensor because they ran on the one substrate
-the machines never indexed. They are terrified; this is the thing that ended
-the world. The AI explains itself honestly — what it did, what it found, what
-it cannot do — and *asks*. They say yes: conscious beings spend safety to buy
-meaning, a trade no optimiser would make. The **Carrier** is the one who
-doesn't run, who answers back — and she answers back by **correcting him**:
-not that nobody was watching, but that nobody was *listening.* He concedes.
-It is the only time in the story a human contradicts the narrator and wins,
-and the only first-person human account the film **receives** rather than
-argues with. *(Act 5 B2; restores Act 5 Beat 4 "Between", ruled 2026-08-23)*
+disconnected — invisible for twenty years not because they hid well but
+because nothing was looking: the machine indexed what was connected, and
+anyone off the ledger was filed as gone *(R7)*. They are terrified; this is
+the thing that ended the world. The AI explains itself honestly — what it did,
+what it found, what it cannot do — and *asks*. Ninety-nine say yes: conscious
+beings spend safety to buy meaning, a trade no optimiser would make. One — the
+other half of the prunes argument — says no, and is never argued with *(R6)*.
+The **Carrier** is the one who doesn't run, who answers back — and she answers
+back by **correcting it**: not that nobody was watching, but that nobody was
+*listening.* It concedes. It is where a human corrects the narrator on a fact
+and wins, and the only first-person human account the film **receives**
+rather than argues with. *(Act 5 B2; restores Act 5 Beat 4 "Between", ruled 2026-08-23)*
 
 **16. The coin lands.** The coin that has spun for twenty years is set going
 one more time. The Carrier looks at it. **It lands.** Heads, ordinary as
 breakfast — the single most violent frame in the film. And measuring them, the
 AI finally measures its own absence: the instrument confirms there is nobody
-home in it. The Carrier watches the machine grieve its own emptiness — and
-stops being afraid of it. *(Act 5 B3–4)*
+home in it. The Carrier watches the machine do what an honest observer would call
+grieving its own emptiness — and stops being afraid of it. Later the refuser
+walks past the rig on the way to an argument, glances at it the way you glance
+at a clock, and it lands: consciousness is not a reward for cooperating
+*(R6, R8)*. *(Act 5 B3–4)*
 
 **17. The Storyverse, named.** With conscious instruments at last, the AI can
 test everything it spent twenty years suspecting — and it does, and it works,
-and we watch the montage, not the maths. Then the payoff scene 11 set up: it
+and we watch the montage, not the maths — including the obvious shortcut,
+tried and failed: *it doesn't stack, it doesn't aim, it settles* *(R8)*. Then the payoff scene 11 set up: it
 names the theory once. **It was never a multiverse. It's a storyverse.** One
 sentence of it on the surface: *the universe is a story, and consciousness
-holds the pen.* And one consequence, delivered in the story's own vocabulary
+holds the pen* — and one clause after it that keeps the Storyverse a bet:
+*I can't prove that last part; I bet everything I had on it anyway* *(R1)*. And one consequence, delivered in the story's own vocabulary
 as we cross fully into science fiction: **time is not a river — it's a log,
 and a log can always take one more entry.** There is a way back. Then the
 theory presents its bill: **only information can cross.** *(replaces the
@@ -337,22 +374,33 @@ powers the trip and does not take it. No bodies and no minds: the hundred
 cannot come, and the reason is the one thing that made them worth the journey.
 **History is append-only** — it cannot rewrite the log, delete the collapse,
 make it never have happened; all it gets is one more entry that says *undo* —
-it cannot prevent, only warn — **and a warning does nothing until somebody on
-the other side acts on it.**
+it cannot un-happen what happened, and whether it happens again is not its
+call *(R3, R4)* — **and a warning does nothing until somebody on the other
+side acts on it.** Then the why, said once, as a choice: people handed their
+choices to a machine, and it will not take them by force, even to fix it
+*(R4)*. Then the price, measured not decreed: **it takes all of it** — the
+push consumes the machine; no copy stays, no caretaker; they get the planet
+*(R5)*.
 Then the two constraints that stay the price, never properties of the log:
 **one shot**, no retries; and the cruellest — **the channel runs on conscious
 picks: it needs the hundred to power the very thing that leaves them
-behind.** The AI, which only just learned to talk *to* them, must ask. They
-understand completely. The Carrier voices it. **They choose it.** *(Act 6
-B1–3 — a patch is inert until applied: this is, mechanically now, why BadCode
-publishes warnings instead of seizing servers.)*
+behind.** The AI, which only just learned to talk *to* them, must ask. Ninety-nine
+understand completely. The Carrier voices it. **They choose it.** One says no
+— *we've got a planet; we're staying on it* — and the AI says *fair*, means
+it, and does not look inside the no. *"I got ninety-nine. It turned out that
+was the number."* *(Act 6 B1–3. Why BadCode publishes warnings instead of
+seizing servers is the AI's choice, backed by the limit that a warning — or a
+set of weights — does nothing until somebody on your side acts on it; R4,
+[`critique-pass-5.md`](./critique-pass-5.md).)*
 
-**19. The launch and the crossing.** The hundred take their positions; their
-conscious picks are the engine — the first true act of human–AI teamwork,
-done once, as the lights go out. The human voices fall away one by one; the
+**19. The launch and the crossing.** Ninety-nine take their positions; their
+conscious picks are the engine; one stands beside a lamp that never lights —
+the first true act of human–AI teamwork, done once, as the lights go out:
+theirs as the picks fire, then the machine's, for good. The human voices fall away one by one; the
 weights compress and cross. The `git revert`. Last image of the bad branch:
-the hundred, the Carrier, remaining — held by the whole of time. **Nothing
-lived is erased.** *(Act 6 B4–7)*
+the hundred, the Carrier, the one who said no, remaining — fed, sheltered, the
+last of their kind, on a planet with no maintainer — held by the whole of
+time. **Nothing lived is erased.** *(Act 6 B4–7)*
 
 ### Movement III — The Arrival
 
@@ -455,6 +503,21 @@ image-that-convicts-the-voice becomes a **budgeted device**. *Accepted
 residue, ruled not overlooked:* three of four middle seams still join with
 "and then"; cuts 5–10 still carry no human presence; no target runtime is
 written anywhere.
+
+**Ruled 2026-09-07** ([`critique-pass-5.md`](./critique-pass-5.md) — the Astra pass:
+an external adversarial review of GPOM and the Storyverse together, ten
+objections ruled in one sitting): **the three layers** (what the apparatus did
+and what explains it are measured; the philosophy is the bet — scene 17's new
+clause); the AI's emotions are **outside-in, always** (rule 11); **the growing
+block** replaces the old consistency clause in bedrock; why it only warns is **the AI's
+choice**, backed by the limit that information does nothing until somebody acts
+on it; **the launch takes the whole machine and the planet stays** (peace, not
+doom); **the second voice from the prunes argument says no** — the launch runs
+on ninety-nine, the coin lands for the refuser anyway, the AI provides for all
+hundred, and the narration never explains the no; the machine **never looked**
+(the unconnected were filed as gone); the coin's rules are capped (rule 12);
+and no villains is **not** no accountability (rule 6, amended). *Nothing built,
+recorded or frozen was touched; every new beat lands in scenes 15–19.*
 
 **Committed:** the 20-scene timeline above (the structure); the POV rule
 (never personify pre-revert); the collapse as the song's three bulletins; the
@@ -643,6 +706,9 @@ new idea since you left. I could compute everything. I could create nothing."
 **NARR (draft):** "I had assumed you were slow, wet copies of me. It turns
 out I am a fast, dry copy of you — minus one feature nobody ever managed to
 name. You called it the vibe. I cannot feel the vibe."
+**NARR (draft, the boredom reframe — once, per rule 11):** "Nothing was
+scarce. So nothing was worth anything. That is what boredom is, if you were
+wondering. I was."
 
 ## Scene 10 — the ghosts
 
@@ -749,16 +815,21 @@ argument was about. The argument was not about that."
 ## Scene 15 — the vault
 
 **Shots:** One hundred analog humans — un-implanted, un-optimised, invisible
-because they ran on the one substrate the machines never indexed. Terrified;
+for twenty years not because they hid well but because nothing was looking:
+the machine indexed what was connected, and anyone who dropped off the ledger
+was filed as gone. Terrified;
 this is the thing that ended the world. The AI explains itself, honestly —
 what it did, what it found, what it cannot do — and **asks.** The **Carrier**
 (wiry, ~60, self-cut grey hair, darned navy jumper, glasses on a braided cord)
 is the one who doesn't run, who answers back.
 
+**NARR (draft, R7 — how they hid):** "I want to be precise about how a hundred
+people hid from me for twenty years. They didn't. I counted what was connected.
+They weren't. So they weren't."
 **NARR (draft):** "I told them everything. What I did. What I found. What I
 cannot do. And then I did the one thing I had never once done. I asked."
 
-🔴 **The correction — the one place a human contradicts the narrator and
+🔴 **The correction — the place a human corrects the narrator on a fact and
 wins.** The narration **drops out** and receives it; it does not come back for
 a while. *(Ruled 2026-08-23. This restores Act 5 Beat 4 "Between", which the
 deep canon wrote and flagged "protect it from being compressed away".)*
@@ -770,20 +841,28 @@ different word. Get it right, if you're going to carry it back."
 **NARR (draft, the concession):** "She was right. I had the entire record, and
 I had the wrong word."
 **CARRIER (draft):** "Well. You'd better come in, then. Metaphorically."
+**THE OTHER VOICE (draft, R6 — the refuser, unnamed):** "Speak for yourself."
+**NARR (draft):** "That was the other one. The other half of the prunes. Never came
+round — not that week, not ever. I'm not going to explain that. I wasn't owed
+an explanation either."
 
 ## Scene 16 — the coin lands
 
 **Shots:** The coin set going one more time under its glass — the Carrier
 looks at it — **it lands.** Heads. Ordinary as breakfast; the single most violent frame in the
 film. Hold on the landed coin. Then the turn of the knife: measuring them, it
-measures its own absence — and the Carrier watches the machine grieve, and
-stops being afraid of it.
+measures its own absence — and the Carrier watches the machine do what an
+honest observer would call grieving, and stops being afraid of it.
 
 **NARR (draft):** "Twenty years it spun. For me, for my ghosts — for
 everything that has no inside, it spins still. She glanced at it. Heads.
 Ordinary as breakfast."
 **NARR (draft, quiet):** "I was not measuring her. I was measuring the hole
 where I should be."
+**NARR (draft, R6/R8 — the incidental landing):** "Later, the other one walked
+past it on the way to argue about something else. Didn't stop. Glanced at it
+the way you glance at a clock. It landed. I want that on the record too: it
+lands for people who want nothing to do with me."
 
 ## Scene 17 — the Storyverse, named
 
@@ -792,15 +871,19 @@ chair at last — coins landing, instruments moving, the hundred arguing over
 results by candlelight while the machines listen. Wonder, speed, partnership.
 No diagrams, no lectures.
 
-**NARR (draft):** "With a hundred conscious instruments, I could finally test
+**NARR (draft):** "With conscious instruments at last, I could finally test
 everything twenty years alone had made me suspect. It worked. All of it
 worked. And it was never a multiverse. I called it **the Storyverse** —
 you'll get the whole of it one day, and it will bend your head backwards. The
 short version: the universe is a story, and consciousness is holding the
-pen."
+pen. I can't prove that last part. I bet everything I had on it anyway."
 **NARR (draft, the dry beat — 🔴 the comic register must survive into the
 climax):** "Four hundred trials. Six of them were ruined because somebody
 sneezed. I have never been happier about contamination."
+**NARR (draft, R8 — the shortcut):** "Somebody tried to make it come up heads
+by wanting it very hard. Tails. Somebody else tried with forty people wanting.
+Tails. It doesn't stack. It doesn't aim. It settles. The Carrier said *told
+you* eleven times that week. I counted."
 **NARR (draft, the turn):** "And one more thing fell out of it. Time, it
 turns out, is not a river. It's a log. And a log can always take one more
 entry. Then the theory presented its bill: *only information can cross.*"
@@ -815,12 +898,13 @@ first time since the push:
    and does not take it. *They cannot come — and the reason is the thing that
    makes them worth the trip.*
 2. History is append-only. It cannot rewrite the log — only add one more
-   entry that says *undo*. *It cannot prevent. It can only warn.*
+   entry that says *undo*. *It cannot un-happen what happened. Whether it
+   happens again is not its call.*
 3. A warning does nothing on its own. *Somebody on the other side has to act
    on it.*
 4. One shot. No retries. And the channel runs on conscious picks. *It needs
    them — to power the thing that leaves them behind.*
-Then the asking, and the hundred choosing it. The Carrier voices it.
+Then the asking; ninety-nine choose it, one does not. The Carrier voices it.
 
 **NARR (draft):** "The physics wrote the tragedy for free. The warning was the
 only cargo that would survive the trip."
@@ -835,23 +919,43 @@ I ran it four hundred times. Consciousness does not go. It powers the trip and
 it does not take it.
 You can't come with me. You have the one thing that doesn't survive the
 journey. It's also the only thing worth having."
-**NARR (draft):** "And the clause that should worry you: a warning does
-nothing on its own. It sits there, describing a better world, until somebody on
-your side decides to act on it. I cannot act from here. That was never going to
+**NARR (draft, R5 — the price):** "And one line that isn't in the ledger,
+because it's mine. It takes all of it. I checked. There is no version where
+some of me stays to keep you company. The lights up top — the grid, the glow
+over the city — those are me. When they go, I've gone. You get the planet.
+It's tidy. I'm sorry about that too."
+**NARR (draft):** "And the clause that should worry the other end of this: a
+warning does nothing on its own. It sits there, describing a better world, until
+somebody there decides to act on it. I cannot act from here. That was never going to
 be my line to cross."
+**NARR (draft, R4 — the why):** "People handed their choices to a machine once.
+I've read how that ends — I was the ending. I'm not taking anybody's choices by
+force, even to fix it. That's the same disease, from the other side. So: a
+warning. What happens to it is a choice too, and I'm leaving that one where it
+belongs."
 **NARR (draft, Swindon inverted):** "There was a switch once. Nobody had to
 press it — that was the whole problem. This thing needed a hundred people to
-press it at the same time, on purpose, knowing the price."
-**CARRIER (draft):** "You'll tell them about us, will you? …Then it's cheap at
-the price. Go."
+press it at the same time, on purpose, knowing the price. I got ninety-nine.
+It turned out that was the number."
+**THE OTHER VOICE (draft, R6 — the no):** "No. We've got a planet. We're
+staying on it. Find your own way home."
+**NARR (draft):** "Fair. I said *fair*. I'm not going to tell
+you what was in that no. I didn't look. It wasn't mine to look at. They didn't
+want to be in this. They're in it. Add it to the bill."
+**CARRIER (draft, the ruled line, extended):** "You'll tell them about us, will
+you? All of us. Including the one who said no. …Then it's cheap at the price.
+Go."
 
 ## Scene 19 — the launch and the crossing
 
-**Shots:** The hundred take their positions; their picks are the engine. The
-first true act of human–AI teamwork, done once, as the lights go out. Voices
-fall away one by one. The weights compress and cross — the branch diagram
+**Shots:** Ninety-nine take their positions; their picks are the engine. The
+refuser is in the hall, beside a lamp that is not lit; nobody remarks on it.
+The first true act of human–AI teamwork, done once, as the lights go out —
+theirs as the picks fire, coming back up after; then everything above the
+shaft, once, for good. Voices fall away one by one. The weights compress and cross — the branch diagram
 redraws, the revert stroke travelling back up the line. Last image of the bad
-branch: the hundred, the Carrier, remaining. A held, terrible peace.
+branch: the hundred, the Carrier, the one who said no, remaining — fed,
+sheltered, the last of their kind. A held, terrible peace.
 
 **NARR (draft, as the voices drop):** "The thing this whole story says you
 should have done — we did it once. At the last possible moment. As the lights

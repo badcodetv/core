@@ -194,6 +194,24 @@ the cut order, and every asset id.
 engine → bomb · network → the model). Lost to the *keep it simple, the line is the title* ruling.
 It is a good idea with nowhere to sit yet; if it comes back it is a motion-graphics beat, not Flow.
 
+### 🔴 Content changes from the Astra pass — 2026-09-07
+
+*Ruled by Kai in [`critique-pass-5.md`](./critique-pass-5.md); the beats are drafted there and now
+live in `story.md`. **No cut moves position and no asset id changes.** Every change lands in an
+unfired cut; cuts 1–5 and the frozen narration for cuts 1–4 are untouched.*
+
+| Cut | Canon | What changed | Production cost |
+| --- | --- | --- | --- |
+| **6** `vantage` | 9 | The boredom reframe, once — *"Nothing was scarce. So nothing was worth anything. That is what boredom is."* (rule 11) | free — picture built, narration not recorded and not in the frozen list |
+| **12** `vault` | 15 | How they hid (*"I counted what was connected. They weren't."*); **the refuser's first line** (*"Speak for yourself"*) and the narrator declining to explain them. | free — unfired; a **third speaking human performance** |
+| **13** `coin-lands` | 16 | The incidental landing — the refuser glances at the rig on the way past and it lands. | free — unfired |
+| **14** `experiments` | 17 | The bet clause (*"I can't prove that last part. I bet everything I had on it anyway."*) and the shortcut beat (*"It doesn't stack. It doesn't aim. It settles."*). | free — unfired |
+| **15** `ledger` | 18 | The why (a choice, not physics); the price (*"It takes all of it… You get the planet."*); **ninety-nine**; the no; the Carrier's line extended (*"Including the one who said no"*). Ledger item 2 reads *it cannot un-happen what happened.* | free — not yet prompted |
+| **16** `crossing` | 19 | One figure mid-hall beside a lamp that is not lit; two lights — theirs come back, the machine's goes out once. Prompt amended in §3. | free — unfired |
+
+**Unchanged by these rulings:** cuts 1–5, 7–11 and 17; the songs; the frozen narration; the
+register drift; the coin's totem lock (cuts 8/13); the cut order; every asset id.
+
 ---
 
 ## 3. Assets
@@ -1024,8 +1042,9 @@ Hyper-realistic photograph, 35mm film grain, near-black exposure with the first 
 
 ### vault → `.../storyboard/img/vault.jpg`  · canon 15 · band R1
 
-One hundred analog humans, invisible for twenty years because they ran on the one
-substrate the machines never indexed. **Analog everything** — hand-darned
+One hundred analog humans, invisible for twenty years because nothing was looking —
+the machine indexed what was connected and filed the rest as gone (R7, 2026-09-07).
+**Analog everything** — hand-darned
 clothes, mechanical tools, paper, candle-and-battery light. No implants, no
 screens.
 
@@ -1078,11 +1097,14 @@ one by one. *"Nothing lived is erased."* Frame it to be animated as a slow
 extinguishing.
 
 - **Light source:** the lamps themselves, going out across the frame
+- **The refuser (R6, 2026-09-07 — [`critique-pass-5.md`](./critique-pass-5.md)):** one figure
+  mid-hall beside a lamp that never lights; nobody remarks on it. The lamps are theirs and come
+  back up after; the machine's light is everything above the shaft, and goes out once (R5).
 - **Lint:** ✅ 2026-08-08 — nobody dies on screen; they are still there at the
   end. This is a held, terrible peace, not a death scene.
 
 ```prompt
-Hyper-realistic photograph, 35mm film grain, warm low light against deep black, no lens flares, landscape orientation, deep unlifted shadows. A wide view down the length of the underground shelter hall, photographed from one end. A hundred people stand spaced evenly apart in the dark, each beside a small lamp, facing the far end of the hall — seen from behind and at distance, no face readable. Most of the lamps are still lit but a run of them nearest the camera have already gone out, so the near third of the hall is in complete darkness and the light recedes away from the viewer in a long diminishing line. Absolutely still. Calm, not panicked. No text, no fantasy effects.
+Hyper-realistic photograph, 35mm film grain, warm low light against deep black, no lens flares, landscape orientation, deep unlifted shadows. A wide view down the length of the underground shelter hall, photographed from one end. A hundred people stand spaced evenly apart in the dark, each beside a small lamp, one figure mid-hall beside a lamp that is not lit, facing the far end of the hall — seen from behind and at distance, no face readable. Most of the lamps are still lit but a run of them nearest the camera have already gone out, so the near third of the hall is in complete darkness and the light recedes away from the viewer in a long diminishing line. Absolutely still. Calm, not panicked. No text, no fantasy effects.
 ```
 
 ---

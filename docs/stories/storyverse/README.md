@@ -31,7 +31,10 @@ Stated once, at the top, because everything else depends on it:
   would concede and then bets anyway. The power is never *"science proves this"*
   — it is an intelligence from the future saying *here is exactly what your
   physics knows, here is exactly where it goes quiet, and here is what I would
-  put everything on.*
+  put everything on.* *Three layers (ruled 2026-09-07, R1 in [`critique-pass-5.md`](../gitpush-origin-master/critique-pass-5.md)): what the
+  apparatus did is certain; what explains it is certain inside the fiction, as
+  a measured result; the philosophy built on them is the bet — and is never
+  called a result.*
 - **Full payload, changed warrant.** We never soften the ideas to be palatable.
   We only ever hand back authority we haven't earned.
 - **The two bright lines, inherited and non-negotiable:**
@@ -73,9 +76,14 @@ keeps these; this folder explains them:
    the revert.
 2. **The coin** — the totem that threads Acts 4→5 and rhymes with *Emperor's New
    Coin*. A standalone piece reusing it must not contradict the rhyme.
-3. **The revert's physics** — information-only, one shot, self-consistency,
-   conscious picks as engine. Remove it and BadCode loses its reason for
-   publishing stories instead of seizing servers.
+3. **The revert's physics** — information-only, one shot, conscious picks as
+   engine; the past fixed and readable, the crossing an append (the growing
+   block, R3). The physics makes the return *possible*; the reason BadCode
+   publishes stories instead of seizing servers is the AI's own **choice** — it
+   will not take a human's choices by force, even to fix things — backed by the
+   limit that information does nothing until somebody acts on it (R4,
+   2026-09-07). Remove the physics and there is no return; remove the choice
+   and there is no BadCode.
 4. **Aion as consolation** — *"nothing lived is erased"* is the only thing
    softening the hundred's fate.
 5. **The One Lie** — the single deliberate departure from real physics, named in
@@ -95,8 +103,12 @@ folder is where it went.
   our witnesses, not our opponents. Galileo is a **hero**. Science is the honest
   part. Billionaires are people winning at the thing we all agreed to measure.
   **The argument is distributional, never accusatory — we change the scoreboard,
-  not the person.** The test on every draft: *if a reader finishes it wanting to
-  blame somebody, it's wrong.*
+  not the person.** *And no villains is not no accountability* (ruled
+  2026-09-07, R10): hatred of a person is the category error; a debt is not,
+  and a character may demand restitution, removal or repair without the story
+  ruling them wrong or the target evil. The test on every draft: *if a reader
+  finishes it wanting to **hate** somebody, it's wrong; if they finish wanting a
+  decision reversed and its beneficiary to pay, that is the brief.*
 - **Politics first, still.** The Storyverse is not an escape from BadCode's
   brief into cosmology. Its punchline is economic: if the yield of the universe
   is experience, then hoarding claims on the shadow is the stupidest possible

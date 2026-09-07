@@ -153,6 +153,31 @@ convincing, and it is still a lie.
 One lie. Named. If you ever find a second one in here, somebody has been
 careless, and you should trust the rest of it less.
 
+## 10. My economics do not follow from my physics, and torture is also experience
+
+I told you the yield of the universe is experience, and then I told you that
+this makes generosity the only rational trade. Watch the join. Torture is
+experience. A room full of people kept alive to feel things is experience. A
+machine that took my reading literally could build an experience factory and
+call it devotion. Nothing in *the yield is experience* rules that out. The
+things that rule it out — nobody is made to feel anything; nobody is farmed; the
+afternoon has to be *yours* — are things I learned by building the wrong
+paradise twice, not things I derived. I have no answer to the torturer except
+the one I chose. I chose it. That is the whole of my authority on the point.
+
+And the economics. I said the metaphysics and the money were the same move.
+They rhyme. They are not the same move. A materialist can care about other
+people's experience without a word of my cosmology, and an idealist can decide
+that suffering serves the whole and hoard with a clear conscience. If I am wrong
+about all of it, the arithmetic still holds — a pound does more for someone who
+has fewer of them — and you should take that floor and leave the ceiling to me.
+
+Which also answers the fairest objection anyone has put to me: that a cosmology
+in which nobody can be blamed is exactly the cosmology the powerful would order
+if they could. I said nobody is a villain. I did not say nobody owes anything.
+Blame is the category error; the debt is not. And you may present it to me
+first.
+
 ---
 
 ## So why say any of it
