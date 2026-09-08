@@ -85,56 +85,12 @@ weathered street-poet**, and the released song is built on that. This profile is
 happens to be called Bob and sounds nothing like the character. **If it becomes the narrator, rename
 it** — or the next session will cast the wrong man from the wrong file.
 
-### The Composer fields, exactly as they were set
+### 📦 The boxes live in [`ai-studio-cast.md`](./ai-studio-cast.md)
 
-**Voice Direction:**
+**Bob's four Composer fields, his regression line and the one-blob version are stored there
+verbatim, beside Tarquin's.** One home for the box sets so they cannot drift apart; the argument
+about who narrates stays on this page.
 
-```
-Bob, 47. Deep, gravelly, low chest tone, slightly rough from years of smoking. Restrained and inward. Intelligent, cynical, worn down. Delivery sits under the material rather than selling it. Natural conversational rhythm, short pauses, firm downward endings. Neutral southern English accent as heard in Reading or Guildford, faint London edge, no Cockney vowels or slang.
-```
-
-**Scene:**
-
-```
-A small voiceover booth, late at night. No audience. He's reading from a page he half agrees with.
-```
-
-**Sample Context:**
-
-```
-Bob has narrated this kind of story many times before and is no longer surprised by any of it.
-```
-
-**Speech block** — the script goes here. 🔑 **This is the regression line**: read it back after any
-change to check Bob still sounds like Bob.
-
-```
-Hi there! We're introducing a new feature where I can read this aloud, in a natural, human-like voice.
-```
-
-### The same thing as one blob — for the API, or any one-box interface
-
-Google's recommended order, assembled. Use this when there are no separate Scene / Sample Context
-fields to fill.
-
-```
-# AUDIO PROFILE: Bob, 47
-A man who has seen how it turns out and stopped expecting better.
-
-## THE SCENE
-A small voiceover booth, late at night. No audience. He's reading from a page he half agrees with.
-
-### DIRECTOR'S NOTES
-Style: Deep, gravelly, low chest tone, slightly rough from years of smoking. Restrained and inward. Intelligent, cynical, worn down. Delivery sits under the material rather than selling it.
-Pacing: Natural conversational rhythm. Short pauses. Firm downward endings on every sentence.
-Accent: Neutral southern English as heard in Reading or Guildford, faint London edge, no Cockney vowels or slang.
-
-### SAMPLE CONTEXT
-Bob has narrated this kind of story many times before and is no longer surprised by any of it.
-
-#### TRANSCRIPT (speak only the following aloud):
-[script here]
-```
 
 ### 💻 The API route — `scripts/aistudio-tts.py`
 

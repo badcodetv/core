@@ -13,6 +13,9 @@ flow_sheet_source:
 
 # Tarquin
 
+> 🎙️ **Speaking voice built 2026-09-08** — Google AI Studio, prebuilt voice `Zubenelgenubi`. The verbatim profile is in [`../narration/ai-studio-cast.md`](../narration/ai-studio-cast.md).
+
+
 **2008:** up-and-coming star of the trading desk in the old NatWest Tower,
 betting heavily on leveraged ETFs — *he was the reason 2008 hit.* A plucky
 young prick with a great career ahead of him.

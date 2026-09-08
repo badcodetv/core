@@ -13,6 +13,9 @@ flow_sheet_source:
 
 # Bob
 
+> 🎙️ **Speaking voice built 2026-09-08** — Google AI Studio, prebuilt voice `Algenib`. The verbatim profile is in [`../narration/ai-studio-cast.md`](../narration/ai-studio-cast.md).
+
+
 **2008:** a normal, nice guy — a middle manager, and the job is deliberately
 unremarkable. He and his wife **Jo** set off on a holiday. The crash is shown, never
 narrated; nobody on screen says who died. When we next meet Bob he is alone,
