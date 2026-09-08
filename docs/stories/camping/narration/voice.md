@@ -16,6 +16,10 @@ emphasis, total sincerity, no self-awareness. The reference is described, never 
 acting instructions, and a 180-rater blind win over ElevenLabs Voice Design on **description-match**,
 which was always our exact failure. **ElevenLabs, Suno and Google AI Studio were all tried first.**
 
+⚠️ **This ruling has a live challenger.** A second narrator — *"Bob"*, Algenib, built in AI Studio on
+2026-09-08 — is recorded in the next section. It has never been run against the real script or A/B'd
+against this take, so **the ruling stands until it is**.
+
 ### What worked, and it is short
 
 | | |
@@ -58,6 +62,88 @@ Fixed    : stereo · 48 kHz · 16-bit · 156.56s · identical audio, rewritten h
 new file forces Premiere to rebuild its `.cfa`/`.pek` conform cache rather than reuse one built from
 a partially-written or un-hydrated OneDrive file. ⚠️ **The project lives in OneDrive**, so
 Files-On-Demand placeholders are a standing suspect for any "media offline" in this project.
+
+## 🎙️ CANDIDATE 2026-09-08 — "Bob", built in Google AI Studio. Not yet judged against the Hume take
+
+**Kai built a narrator voice in AI Studio and it is recorded here verbatim.** It is a **candidate**,
+not a ruling: the Hume Octave take above is still the one that produced *"got the voice"*, and the
+two have never been compared on the same lines.
+
+| | |
+|---|---|
+| **Engine** | Google AI Studio — `aistudio.google.com/generate-speech`, **Composer** |
+| **Voice** | **Algenib** (Speaker settings → Current voice) |
+| **Model** | `gemini-3.1-flash-tts-preview` |
+| **Cost** | free tier, no billing account attached — see [`docs/ai-studio/README.md`](../../../ai-studio/README.md) |
+
+🔑 **The accent is southern, and that is allowed.** *"Neutral southern English as heard in Reading or
+Guildford"* contradicts nothing: the northern accent was ruled **a preference, not canon**, on
+2026-09-03 (see below), and the brief specifies *register* — deadpan, unhurried, flat — not geography.
+
+🔴 **But the name collides.** [`../characters/bob.md`](../characters/bob.md) casts Bob as a **Scouse
+weathered street-poet**, and the released song is built on that. This profile is a *narrator* who
+happens to be called Bob and sounds nothing like the character. **If it becomes the narrator, rename
+it** — or the next session will cast the wrong man from the wrong file.
+
+### The Composer fields, exactly as they were set
+
+**Voice Direction:**
+
+```
+Bob, 47. Deep, gravelly, low chest tone, slightly rough from years of smoking. Restrained and inward. Intelligent, cynical, worn down. Delivery sits under the material rather than selling it. Natural conversational rhythm, short pauses, firm downward endings. Neutral southern English accent as heard in Reading or Guildford, faint London edge, no Cockney vowels or slang.
+```
+
+**Scene:**
+
+```
+A small voiceover booth, late at night. No audience. He's reading from a page he half agrees with.
+```
+
+**Sample Context:**
+
+```
+Bob has narrated this kind of story many times before and is no longer surprised by any of it.
+```
+
+**Speech block** — the script goes here. 🔑 **This is the regression line**: read it back after any
+change to check Bob still sounds like Bob.
+
+```
+Hi there! We're introducing a new feature where I can read this aloud, in a natural, human-like voice.
+```
+
+### The same thing as one blob — for the API, or any one-box interface
+
+Google's recommended order, assembled. Use this when there are no separate Scene / Sample Context
+fields to fill.
+
+```
+# AUDIO PROFILE: Bob, 47
+A man who has seen how it turns out and stopped expecting better.
+
+## THE SCENE
+A small voiceover booth, late at night. No audience. He's reading from a page he half agrees with.
+
+### DIRECTOR'S NOTES
+Style: Deep, gravelly, low chest tone, slightly rough from years of smoking. Restrained and inward. Intelligent, cynical, worn down. Delivery sits under the material rather than selling it.
+Pacing: Natural conversational rhythm. Short pauses. Firm downward endings on every sentence.
+Accent: Neutral southern English as heard in Reading or Guildford, faint London edge, no Cockney vowels or slang.
+
+### SAMPLE CONTEXT
+Bob has narrated this kind of story many times before and is no longer surprised by any of it.
+
+#### TRANSCRIPT (speak only the following aloud):
+[script here]
+```
+
+### ⬜ What has not been done
+
+- ⬜ **Never run against the real script.** The only line heard is the generic feature-announcement
+  sample above — a sentence with none of the film's dryness in it
+- ⬜ **Never A/B'd against the Hume take.** Same chunk, both engines, same day is the round that rules
+- ⬜ **Licence unchecked for this use.** AI Studio's free tier bills nothing, but *commercial output
+  rights are a separate question* and this page has been caught by exactly that twice — ElevenLabs,
+  then Hume. **Settle it before the take that ships**
 
 ## 🔴 Higgsfield cannot design a voice from a prompt
 

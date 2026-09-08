@@ -2,7 +2,7 @@
 title: Google AI Studio — the voice toolkit
 engine: gemini-3.1-flash-tts-preview
 built: 2026-09-04
-status: 🟡 strong free engine, but the camping narrator went to Hume Octave 2026-09-04
+status: 🟡 strong free engine, but the camping narrator went to Hume Octave 2026-09-04. A second candidate ("Bob", Algenib) was built here 2026-09-08 and is unjudged
 ---
 
 # Google AI Studio — voice generation
@@ -396,7 +396,7 @@ before any AI Studio narration ships**, not after.
 | Voice | Google's label | For this narrator |
 |---|---|---|
 | **Charon** | Informative, lower pitch | 🟡 The documentary default. Clear, neutral, safe — and *neutral* is what this brief is not |
-| 🥇 **Algenib** | **Gravelly**, lower pitch | Closest to the gravel-baritone reference |
+| 🥇 **Algenib** | **Gravelly**, lower pitch | Closest to the gravel-baritone reference. ✅ **Used 2026-09-08** for the "Bob" narrator candidate — a **southern** English profile, not northern, and it worked. Boxes: [`../stories/camping/narration/voice.md`](../stories/camping/narration/voice.md) § CANDIDATE 2026-09-08 |
 | **Alnilam** | Firm — filed under **Narration** in the UI | 🟡 Worth a pass |
 | **Orus** | Firm | 🟡 Also recommended for narration |
 
