@@ -144,6 +144,30 @@ overhead buys omniscience for free and must earn *scale* separately: from above,
 collapses into geometry and pattern rather than absence. **P** (omniscience) / **A (mixed)** (the
 scale caveat)
 
+**21a — 🔑 H, confirmed twice: the overhead earns omniscience and *spends* the subject.**
+*(GPOM `vantage`; camping `8b-fog` A9, 2026-09-08.)* Both times the high wide produced a genuinely
+striking frame and both times the frame was **about the space, not about the people in it** — the
+emptiness read as pattern and design rather than as absence, exactly as principle 21 warns. Camping
+A9 came back roughly 95% car park floor and 2% men, against a brief that asked to *"pause on only
+the important parts."*
+
+**The tell to check before generating, not after: what percentage of the frame is the subject?**
+If the answer is "a few percent", the shot is an establisher and should be labelled one. It is not
+the shot that carries the beat.
+
+**The fix that keeps both:** high but **close**. Height buys the narrator's position; distance is
+what spends the people. They are separate variables (principle 19) and only one of them has to go.
+🔑 **And the second erasure is free from up there** — a long lens wide open dissolves the near
+ground while atmosphere dissolves the far, so the subject is the only thing left in focus in the
+world. **H**
+
+**21b — A composition where every element sits at the same distance, the same size and on one
+lateral line is a diagram, not a photograph.** *(Camping A9, 2026-09-08.)* Three objects evenly
+spaced across the frame *state* a comparison; the eye has no reason to prefer any of them and
+[the focal-point symptom](./symptoms.md) fires. **Stage the comparison in depth instead** — the
+term of the argument you want the viewer to meet first goes nearest and largest. A scene is a
+small argument, and depth order is the order its steps are read in. **H**
+
 ---
 
 ## 5. Register — the monumental problem

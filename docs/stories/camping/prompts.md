@@ -1835,6 +1835,1423 @@ it is keeping the clip near-static so the engine has no reason to re-render them
 
 ---
 
+### 8b-fog — the two men in the void · **still** · written 2026-09-08, unrun
+
+**Jack's ask, 2026-09-08:** *"this type of shot… where films pause on only one aspect, the
+important parts, almost like the matrix, everything else disappears, like we are in the
+characters' aetherial subconscious."* Same beat as [`8b`](#8b--the-two-men-long-lens--still--accepted-2026-08-27),
+same camera angle, **everything except the two men and their two objects removed.**
+
+**This is a REGISTER, not a shot.** If it works it should be used deliberately and rarely —
+principle 16's rule for a colour code applies to a frame device: **the power is in the rarity.**
+Two of these in a film is a language; five is a filter.
+
+#### What changes from `8b`, and why each one
+
+| Change | Why |
+|---|---|
+| **No location reference attached** | Jack's instruction. The reference *is* the car park, and the car park is what we are deleting |
+| 🔑 **Distance drops 40m → ~18m, lens 200mm → 135mm** | Jack wants the men to *"look more like themselves"*. [§12](../../google-flow/nano-banana-2.md) — **a Character binds to a face**, and at forty metres there is no face to bind to. `8b` carried both men in prose for exactly this reason. Faces must be big enough in frame or `@Bob` and `@Tarquin-new` do nothing. **The angle is unchanged** — level, chest height, side on |
+| **No appearance description for either man** | [§19](../../google-flow/nano-banana-2.md). With Characters cast, prose about wardrobe or age *overrules* them. Only action and expression |
+| **Each man anchored to a named side** | [§26](../../google-flow/nano-banana-2.md) — the one condition we believe carries two Characters in one still. Tarquin **left**, Bob **right**, matching `8b`'s geography |
+| **The foreground car roofs are replaced by tarmac and one painted line** | The cars go, but principle 1 does not: **an empty foreground is the most common cause of a flat frame.** The bay line running out of frame toward the lens does the same depth job for free |
+| **Fog, named and pushed** | The erasure device — see below |
+
+#### 🔑 The one finding that decides whether this works
+
+[§27](../../google-flow/nano-banana-2.md): **ask for an object, never an absence.** `1a-year`
+asked for numerals *torn out* of cloud and got soot-coloured numerals painted *on* it — the model
+has no trained visual for an absence, so it renders the nearest positive trope it owns.
+
+**"The other cars have disappeared" is an absence. Fog is an object.** The prompt therefore never
+asks for anything to be removed; it describes a substance that fills the frame from six metres out
+and states what the substance contains, which is more of itself.
+
+⚠️ **And [§10](../../google-flow/nano-banana-2.md) — the atmosphere family overdelivers when
+named — is normally a bug and is the feature here.** Naming fog usually makes it dominate the
+frame. That is the entire brief. **This is the one shot in the film where §10 should be pushed
+rather than deleted.** The counter-risk is that it overdelivers onto the subjects too, so the
+prompt states the visibility distance and that everything inside it stays sharp
+([§11](../../google-flow/nano-banana-2.md): an undefined background stacks; naming what stays
+sharp is what collapses it).
+
+#### The gates
+
+1. **Job:** the first frame in the film where the car park stops being a place and becomes a
+   proposition. `8b` says *two men, three metres apart, in a car park*. This says *two men, three
+   metres apart* — and the car park is only the paint under their feet.
+2. **Visible cost:** Bob on wet tarmac, the bowed pole, the taped tear. Present and legible at
+   eighteen metres, which is more than `8b` could show.
+3. **Light:** the overcast sky through fog — omnidirectional, shadowless. **One motivated
+   exception: the X8's own interior light and running lights.** 🔑 Tarquin's machine is the only
+   thing in the frame making light, and Bob has none. It is also the dark-frame anchor working in
+   reverse — in a pale void the eye needs the *darkest* object, and that is the car.
+
+⚠️ **The trade Jack should know about.** `8b` was accepted because *"the blurryness and rain makes
+it so the details don't matter and it looks really cool."* Coming in to eighteen metres to make
+the Characters bind **spends exactly that** — the faces now have to hold up. If they come back
+strange, the fix is not a better prompt, it is going back out to forty metres and losing the
+likeness. **Those two wants are in direct opposition and cannot both be had in one frame.**
+
+```prompt
+Generate a still photograph.
+
+Camera: a 135mm telephoto lens at f/4, standing on wet tarmac about eighteen metres away, at the chest height of a standing person and perfectly level, not tilted down or up. A medium-long two-shot of both men seen side on, in profile, standing on the same flat ground the camera stands on.
+
+On the left of the frame, standing on the tarmac beside the open driver's door of a black BMW X8: the man from the first character reference. He stands straight and still with his weight back, his chin slightly lifted, his mouth closed and level, his head turned toward the other man and his eyes aimed down at him. The X8 is stopped square across the painted white line between two parking bays and fills both of them, seen side on, its driver's door standing open toward the camera.
+
+On the right of the frame, sitting on the wet ground at the mouth of a cheap two-person dome tent in faded blue and grey: the man from the second character reference. He sits hunched with his knees drawn up and his hands pushed into his sleeves, his head turned up and toward the standing man, his brows level and his mouth closed. The tent sags at one corner where a pole is bowed, and a square of duct tape covers a tear in the flysheet.
+
+Three or four metres of empty wet tarmac lie between the two men, with the painted white line of one bay running across the ground between them. In the very front of the frame, close to the camera and running away from it toward the men, more wet tarmac and one more painted white bay line, catching the pale light on the water.
+
+The whole car park is filled with thick cold fog. Six metres past the men the fog closes into a flat unbroken wall of pale grey, and it fills the entire frame behind and above and to both sides of them, edge to edge and top to bottom. The painted bay lines and the wet tarmac fade out into that pale grey a few metres past the tent and are simply gone. There is nothing in the fog: no other vehicles, no buildings, no shop front, no lamp posts, no trees, no fence, no people, no horizon line and no sky. Only fog.
+
+Light: an overcast winter sky above the fog, so the light arrives from every direction at once, flat and completely shadowless, and the ground throws no shadows at all. The one exception is the car: the X8's interior light is on behind the open door and its running lights are lit, two small hard points of warm light in an otherwise entirely cold grey frame, laying a weak wash of light on the wet tarmac immediately around it. The black of the car is the darkest thing in the picture and the fog is the palest.
+
+A documentary press photograph on 35mm colour film: fine natural grain, muted cool-neutral colour, very low saturation. Everything in the picture is sharp and in focus, from the painted line in the foreground to the tent. Fine rain falls through the frame. Every surface in the frame is plain and unlettered, apart from the car's own badges.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+⬜ **Unrun.** Attach `@Tarquin-new` first, `@Bob` second, nothing else —
+[§26](../../google-flow/nano-banana-2.md) records that attachment order mattered enough to write
+down, and that the location reference goes last, which here means there is none.
+
+#### Round 1 — run 2026-09-08. The void works; the car and the craft do not
+
+**The erasure landed on the first try.** Fog closed the car park exactly as designed, the bay
+lines faded into it, and the two men held. **§27 is confirmed on the positive side:** asking for a
+*substance* rather than an *absence* produced the absence. **That is the finding worth keeping.**
+
+**Seven faults, in the order they cost the picture:**
+
+| # | Fault | Cause | Fix in round 2 |
+|---|---|---|---|
+| 1 | 🔴 **The car is not an X8** — it came back a boxy upright SUV with a squared roofline | The name alone is not enough. **X8 is a thin spot in the training data**, and a model given a marque it half-knows renders the marque's *average* | **Name it and draw it**: the fastback roofline dropping to a short rear deck, slim split headlights, the tall kidney grille, gloss black trim, big dark alloys |
+| 2 | 🔴 **Both objects face across each other; canon has them parallel** | The prompt described a stand-off, not the 8a geography Jack's aerial shows | The X8 sits **nose-in across two bays, rear three-quarter to the camera**, tail lights lit — the aerial's arrangement. It also breaks the mirror |
+| 3 | **Dead-centre symmetry** — men mirrored, fog band level, everything square | Nothing in the prompt asked for asymmetry, and symmetry is the model's resting state. It is [the named slop tell](../../google-flow/nano-banana-2.md#the-anti-slop-toolkit) | *"slightly off-centre and not quite level"*, and the car rotated out of broadside |
+| 4 | **Empty foreground** | Round 1 asked for tarmac and a painted line and got a bare bottom third — [principle 1](../../cinematography/principles.md), the commonest cause of a flat frame | A **foreground occluder**: the corner of one more painted bay and a kerb-edge puddle crossing the very bottom, close and soft |
+| 5 | **No rain in the air** | The ground was described as wet; the air was not. [§10](../../google-flow/nano-banana-2.md) — **weather nouns underdeliver and need magnitude shouted at them** | Rain named with consequence: rings on the standing water, the tent fabric darkened where it has soaked |
+| 6 | **No light anchor at all** — the frame is one uniform grey | The X8's interior light was asked for but is nearly invisible. In a **pale** void the eye needs the **darkest** object and one point of warmth | **The tail lights**, which is what Jack's own aerial already shows: two red bars and a red wash on the wet tarmac |
+| 7 | **Both men parked and posed** | The 8b lesson repeating — *when the frame will not perform, move the moment earlier.* Two men standing still facing each other has no unresolved question in it | **Mid-action**: Tarquin still closing the car door behind him, Bob mid-shift as he looks up |
+
+⚠️ **Also cosmetic and worth naming:** the tent came back new, the clothes came back clean, and a
+scatter of dark specks appeared on the tarmac — the model's generic "debris". **Environmental
+imperfection has to be specified or the engine supplies its own.**
+
+#### Written for Nano Banana Pro
+
+Three things changed in *how* these are written, from
+[Pro's own guidance](../../google-flow/nano-banana-2.md#pro-is-a-different-animal-it-plans-before-it-draws):
+
+- **Pro's slot order is Subject · Composition · Action · Location · Style · Constraints** —
+  composition promoted above action. All three prompts below follow it.
+- **Descriptive, not repetitive.** Pro penalises a long prompt with competing style statements
+  more than a short one. Round 1's texture words appeared twice; here they appear once, at the end.
+- 🔑 **Pro reasons before it draws, so a statement of *structural* intent lands.** Each prompt
+  opens by naming the job of the picture. ⚠️ This is **not** licence to state a connotation —
+  *"the gloss should read as obscene"* is still the failure recorded at 5a.
+
+🔴 **The vendor guidance says "if an image is 80% right, edit it rather than regenerate." We do
+not do that.** Our standing ruling is a new prompt every time; editing an existing generation has
+not worked here. Follow the house rule, not the guide.
+
+### 8b-fog · variant A — the fog limbo · **still** · written 2026-09-08, unrun
+
+```prompt
+A still photograph for a film. The job of this picture is to take a supermarket car park away and leave only the two men and the two things they own, standing on the paint.
+
+Camera: a 135mm lens at f/5.6, eighteen metres back, at the chest height of a standing person and level, framed slightly off-centre and not quite square to the bays, the way a photographer standing in the rain would actually hold it.
+
+Composition: on the left, a large black BMW X8, parked nose-in across the painted line between two bays and filling both, turned so the camera sees its rear three-quarter. It is a coupe-SUV: a long roofline sloping down into a short rear deck, slim split rear lights, a tall upright kidney grille, gloss black window trim, big dark alloy wheels. Its rear lights are lit and lay a weak red wash on the wet tarmac behind it. In the next bay to the right, parallel to the car and facing the same way, a cheap two-person dome tent in faded blue and grey, one corner sagging where a pole is bowed, a square of duct tape over a tear, the fabric darkened up one side where the rain has soaked it. Three or four metres of wet tarmac between them. Crossing the very bottom of the frame, close to the camera and soft, the corner of one more painted bay and a shallow puddle with rain rings spreading on it.
+
+Action: standing in the gap on the tarmac, a late-forties white British man from the City of London: dark hair greying at the temples and slicked straight back with product, a well-fed face just beginning to jowl with a slight sheen on it, broken capillaries at the nose, pale indoor skin — not a smooth idealised leading-man face. He wears a quilted olive gilet zipped over a fine-gauge navy roll-neck, dark blue jeans with turn-ups, and polished tan suede loafers with no socks so a band of bare ankle shows. He is still turned back from pushing the car door shut behind him, his weight on one foot, his chin lifted, his mouth closed and his eyes aimed down at the other man.
+
+Sitting on the wet ground at the mouth of the tent, a white British man of about fifty who has weathered to look older: grey-flecked stubble going on beard, deep lines, broken veins across wind-chapped cheeks, tired eyes with a wet shine — the wear plain on him and never smoothed into a handsome rough-sleeper. He wears a dark woollen beanie and a charity-shop coat a size too big with a broken zip, over a hoodie and more layers, everything grimed and softened by being lived in. He is mid-shift, one hand just out of his sleeve and pressed to the ground as he pushes himself straighter, his head turning up toward the standing man, his brows level.
+
+Location: thick cold fog fills the whole car park. Six metres past the tent the fog closes into a flat unbroken wall of pale grey and fills the frame behind, above and to both sides of them. The painted bay lines and the wet tarmac fade out into that grey and are gone. There is nothing in the fog and nothing beyond it: no other vehicles, no buildings, no shop front, no lamp posts, no trees, no fence, no other people, no horizon and no sky. The light comes down through the fog from an overcast winter sky, so it arrives from every direction at once and nothing on the ground casts a shadow. The only other light in the picture is the car's rear lights.
+
+Style: a documentary press photograph on Kodak Portra 400 at ISO 1600, unretouched, natural skin texture, fine grain in the shadows, muted cool-neutral colour and very low saturation. The black of the car is the darkest thing in the frame and the fog is the palest. Fine rain falls through the whole frame. The car is a working vehicle, not a clean one: rain-flecked, road film up the lower doors and dirt behind the wheel arches. Everything from the puddle in the foreground to the tent is sharp.
+
+Constraints: no lettering or signage anywhere except the car's own badges. 16:9.
+
+Thanks.
+```
+
+
+#### Variant A, round 1 — run 2026-09-08. The void and the car are solved. The people are not
+
+**Three of round 1's seven faults are fixed and stay fixed:** the car reads as a real coupé-SUV
+(it came back badged **X6**, which is the nearest car that actually exists — the silhouette
+description did the work the model name could not), the fog erasure is total, and the tail lights
+plus the foreground puddle give the frame its anchor and its front plane.
+
+🔴 **The clause that failed is the one that mattered most, and it failed for a reason we already
+have written down.** *"Not a smooth idealised leading-man face"* is a **negation**, and
+[§27](../../google-flow/nano-banana-2.md) is the standing finding that **this engine cannot render
+an absence** — given a negative it has nothing to substitute toward, so it draws its default and
+ignores the clause. Round 1 got a catalogue face with no jowl, no capillaries and no sheen, which
+is exactly the default. **Same mechanism as the 2008 numerals.**
+
+**Round 2 converts every negation about a person into anatomy.** Not *"not idealised"* but *the
+jaw softening under the chin, a thickened neck over the collar, pouches under the eyes, a red
+flush across the nose.* The engine can draw all of those.
+
+| Still wrong after round 1 | Cause | Round 2 |
+|---|---|---|
+| 🔴 **Both faces are catalogue-smooth** | negation, per above | positive anatomy, plus an explicit skin clause — pores, sebaceous sheen, under-eye shadow, facial asymmetry `[community]` |
+| 🔴 **Four metres apart; no eyeline connects** | the prompt gave a distance and never said the eyes meet. The beat is *the two men lock eyes* | **two metres**, Tarquin standing over him, and the eyeline stated in both directions |
+| **Everything on one plane across the middle** | [principle 1](../../cinematography/principles.md). The puddle gave a front plane and nothing links it to the middle | **Overlap**: Tarquin stands forward of the car and cuts across its rear wing; the tent's near guy line runs down into the puddle |
+| **No rain in the air, again** | [§10](../../google-flow/nano-banana-2.md) — **weather underdelivers and needs magnitude and consequences shouted at it.** *"Fine rain"* is the opposite of shouting | heavy rain, named against the dark car, running off the flysheet, flattening hair |
+| **Both men parked** | *mid-shift* is too weak a verb | one arrested physical action each, mid-stride and mid-flinch |
+| **The tent is new** | wear was described on one corner only | dirt at the skirt, mud up one side, a frayed guy line, cardboard under the groundsheet |
+| **Letterbox bars rendered into the picture** | never excluded | named in Constraints |
+
+⚠️ **The badge is now a decision for Jack.** The frame says `X6`. The X8 is thin in the training
+data and the model resolves it to the nearest real car; the *silhouette* is right either way.
+Leaving it, because chasing the badge risks losing the shape that finally worked.
+
+### 8b-fog · variant A2 — the fog limbo, faces fixed · **still** · written 2026-09-08, unrun
+
+```prompt
+A still photograph for a film. The job of this picture is to take a supermarket car park away and leave only the two men and the two things they own, two metres apart on the paint, looking at each other.
+
+Camera: a 135mm lens at f/5.6, sixteen metres back, at the chest height of a standing person and level, framed slightly off-centre and not quite square to the bays, the way a photographer standing in the rain would actually hold it.
+
+Composition: on the left, a large black BMW coupe-SUV, parked nose-in across the painted line between two bays and filling both, turned so the camera sees its rear three-quarter: a long roofline sloping down into a short rear deck, slim split rear lights, gloss black window trim, big dark alloy wheels. Its rear lights are lit and lay a red wash on the wet tarmac behind it. In the next bay to the right, parallel to the car and facing the same way, a cheap two-person dome tent in faded blue and grey, one corner sagging where a pole is bowed, a square of duct tape over a tear, the flysheet grey with old dirt along the skirt and a scuff of mud up one side, a frayed guy line running from its near corner down toward the camera, a flattened cardboard box pushed under the groundsheet where it meets the tarmac. The standing man is forward of the car and overlaps it, cutting across its rear wing. Crossing the very bottom of the frame, close to the camera and soft, the corner of one more painted bay and a shallow puddle with rain rings spreading across it, the red of the car's lights broken up in the water.
+
+Action: standing over the seated man at two metres, a white British man of forty-seven from the City of London. His dark hair is greying at the temples and slicked straight back with product, thinning enough at the front that the scalp shows through when it is wet. His jaw has softened under the chin and his neck thickens over his collar; there are pouches under his eyes and a red flush of broken capillaries across his nose and both cheeks, and his forehead and nose carry an oily sheen. His skin is pale and indoor, with open pores across the nose and a day of stubble coming through unevenly. His face is slightly asymmetric, the left eye a little lower than the right. He wears a quilted olive gilet zipped over a fine-gauge navy roll-neck, dark blue jeans with turn-ups, and polished tan suede loafers with no socks so a band of bare ankle shows, the loafers dark with water. He has stopped mid-stride with one foot still ahead of the other and his weight not yet settled, his chin lifted, his mouth closed and his eyes aimed straight down into the seated man's eyes.
+
+Sitting on the wet ground at the mouth of the tent, a white British man of fifty who looks sixty-five. Grey-flecked stubble is going on beard, patchy along the jaw. Deep lines cut across his forehead and out from the corners of his eyes; his cheeks are wind-chapped and broken-veined and raw at the edges; his lower eyelids sag away and his eyes are wet and red-rimmed. His nose has been broken and set crooked. His skin is weathered, coarse-grained and open-pored, and his hands are chapped and swollen at the knuckles with black in the creases. He wears a dark woollen beanie pulled low and soaked dark, and a charity-shop coat a size too big with a broken zip over a hoodie and more layers, everything greasy and shapeless from being lived in. He has flinched half upright, one hand out of his sleeve and flat on the wet tarmac taking his weight, the other still raised across his brow against the rain, his head turned up and his eyes meeting the standing man's.
+
+Location: thick cold fog fills the whole car park. Six metres past the tent the fog closes into a flat unbroken wall of pale grey and fills the frame behind, above and to both sides of them. The painted bay lines and the wet tarmac fade out into that grey and are gone. There is nothing in the fog and nothing beyond it: no other vehicles, no buildings, no shop front, no lamp posts, no trees, no fence, no other people, no horizon and no sky. The light comes down through the fog from an overcast winter sky, so it arrives from every direction at once and nothing on the ground casts a shadow. The only other light in the picture is the car's rear lights.
+
+Weather: it is raining hard, not drizzling. The rain is visible as streaks across the black of the car, it is running in threads off the tent's flysheet and dripping from its edge, both men's hair and shoulders are wet through, and the water is standing in sheets on the tarmac.
+
+Style: a documentary press photograph on Kodak Portra 400 at ISO 1600, unretouched, natural skin texture throughout, fine grain in the shadows, muted cool-neutral colour and very low saturation. The black of the car is the darkest thing in the frame and the fog is the palest. The car is a working vehicle: rain-flecked, road film up the lower doors, dirt behind the wheel arches. Everything from the puddle in the foreground to the tent is sharp.
+
+Constraints: no lettering or signage anywhere except the car's own badges. Fill the whole frame with the photograph, with no black bars, no letterbox borders and no white margin of any kind. 16:9.
+
+Thanks.
+```
+
+🔑 **The one habit to keep from this round:** when a person comes back generic, **look for a
+negation in the prompt before assuming the engine ignored you.** Every *"not a…"*, *"never…"*,
+*"no…"* about a body or a face is a clause the model cannot act on. Say what the face has, not
+what it lacks.
+
+
+#### 🔴 Why the men shift — audited 2026-09-08, and the prompt WAS fighting the canon
+
+**Jack asked the right question.** Two causes, and only one of them is the prompt.
+
+**Cause 1 — structural, and it is the bigger one. Nothing is attached, so identity is redrawn
+every run.** [§12](../../google-flow/nano-banana-2.md): a Character binds to a face; prose does
+not. Prose can hold **wardrobe, wear and posture**; it has no mechanism for *the same man twice*.
+Every run from a bare prompt is a fresh draw of a person who merely satisfies the adjectives.
+
+🔴 **And for Tarquin specifically this is a documented, already-paid-for failure.**
+[`characters/tarquin.md` §@Tarquin-new](./characters/tarquin.md) exists **because the wardrobe
+would not survive a generation**: across four rounds of `8b(i)`, casting `@Tarquin` and describing
+the outfit, attaching a clothing reference, or saying nothing at all **all returned an olive
+leather bomber over a printed graphic t-shirt.** The conclusion recorded then was that *the
+wardrobe needed to live in a Character's Body, not in a prompt.* **The no-attachment runs are
+walking back into that.**
+
+**Cause 2 — the prompt contradicted the character files.** Audited line by line. Nine faults.
+
+| # | In the prompt | The canon | Verdict |
+|---|---|---|---|
+| 1 | *"tired eyes... wet and red-rimmed"*, *"lower eyelids sag away"* | **"kind, tired eyes with a wet shine"** | 🔴 **Contradiction.** *Kind* was deleted. Bob is the story's moral centre and his eyes are what carry it; red-rimmed and sagging makes him pitiable instead |
+| 2 | *"He has flinched half upright... one hand raised across his brow"* | **"watchful but not aggressive; the stillness of someone used to being scrolled past"** | 🔴 **Contradiction.** A flinch is a startle. It turns him into a victim reacting, which is the read the whole story is built to prevent |
+| 3 | *"His nose has been broken and set crooked"* | nothing | 🔴 **Invention.** Not in canon, and a specific bone-geometry instruction the model re-interprets every run |
+| 4 | *"of fifty who looks sixty-five"* | "around fifty but weathered to look older" | 🔴 **Invention.** A hard number that pushes him past canon and moves the face |
+| 5 | *"his face is slightly asymmetric, the left eye a little lower than the right"* | nothing | 🔴 **Invention.** Borrowed from an anti-slop article, not from Tarquin |
+| 6 | *"broken capillaries across his nose and both cheeks"* | "broken capillaries at the nose" | ⚠️ **Drift.** Cheeks added |
+| 7 | signet ring and watch absent | **"Signet ring and the old scuffed steel watch stay"** | 🔴 **Omission.** Two identity objects dropped |
+| 8 | *"stopped mid-stride"* only | "chin slightly up, the resting expression of a man appraising and finding wanting" | 🔴 **Omission.** The one expression that is his |
+| 9 | Merseyside absent; *"tasselled"* and *"cashmere"* dropped | both in the lock | ⚠️ **Drift** |
+
+🔑 **And a third mechanism that is nobody's fault: more adjectives is not more consistency.** A
+face specified twelve ways has twelve dials, each of which can land differently. **Fewer,
+canonical markers vary less than many invented ones.** The A2 face descriptions were the longest
+in this file and produced the least stable man in it.
+
+#### What to do about it — Jack's call, and they are genuinely different films
+
+| | Cast `@Tarquin-new` + `@Bob` | Keep it prose-only |
+|---|---|---|
+| **Identity across shots** | ✅ Holds. It is the only mechanism that does | 🔴 Fresh man every run |
+| **Wardrobe** | ✅ Lives in the Character's Body — the reason `@Tarquin-new` was made | 🔴 The documented bomber-and-graphic-tee failure |
+| **What the prompt may say** | 🔴 **No appearance at all** ([§19](../../google-flow/nano-banana-2.md)) — action and expression only | everything below |
+| **Cost** | the face must be big enough in frame to bind, so the long-lens option closes | free, and Jack has asked for it |
+
+**A3 below is the prose-only version with all nine faults corrected** — every invention removed,
+every canon line restored, and the face cut back to the markers the character file actually
+names. It will still draw a different man each run; it will draw **the right kind of man**, and
+it will stop arguing with the files.
+
+### 8b-fog · variant A3 — canon-corrected, prose only · **still** · written 2026-09-08, unrun
+
+```prompt
+A still photograph for a film. The job of this picture is to take a supermarket car park away and leave only the two men and the two things they own, two metres apart on the paint, looking at each other.
+
+Camera: a 135mm lens at f/5.6, sixteen metres back, at the chest height of a standing person and level, framed slightly off-centre and not quite square to the bays, the way a photographer standing in the rain would actually hold it.
+
+Composition: on the left, a large black BMW coupe-SUV, parked nose-in across the painted line between two bays and filling both, turned so the camera sees its rear three-quarter: a long roofline sloping down into a short rear deck, slim split rear lights, gloss black window trim, big dark alloy wheels. Its rear lights are lit and lay a red wash on the wet tarmac behind it. In the next bay to the right, parallel to the car and facing the same way, a cheap two-person dome tent in faded blue and grey, one corner sagging where a pole is bowed, a square of duct tape over a tear, the flysheet grey with old dirt along the skirt and a scuff of mud up one side, a frayed guy line running from its near corner down toward the camera, a flattened cardboard box pushed under the groundsheet where it meets the tarmac. The standing man is forward of the car and overlaps it, cutting across its rear wing. Crossing the very bottom of the frame, close to the camera and soft, the corner of one more painted bay and a shallow puddle with rain rings spreading across it, the red of the car's lights broken up in the water.
+
+Action: standing over the seated man at two metres, a white British man in his late forties from the City of London. Dark hair greying at the temples, slicked straight back with product. A well-fed face that eats well and sleeps badly: a faint jowl beginning under the chin, a slight sheen on the forehead and nose, broken capillaries at the nose, pale indoor skin with open pores and a day of stubble coming through. He wears a quilted olive gilet zipped over a fine-gauge navy cashmere roll-neck, dark blue jeans with turn-ups, and polished tan suede tasselled loafers worn with no socks so a band of bare ankle shows, the loafers dark with water; a plain heavy signet ring on one hand and an old scuffed steel watch on the wrist. He has stopped mid-stride with one foot still ahead of the other and his weight not yet settled, his chin slightly up, his mouth closed, the resting expression of a man appraising the seated man and finding him wanting, his eyes aimed straight down into the seated man's eyes.
+
+Sitting on the wet ground at the mouth of the tent, a white British man of around fifty from Merseyside, weathered to look older. Grey-flecked stubble going on beard, deep lines, kind and tired eyes with a wet shine, broken veins across wind-chapped cheeks, coarse open-pored skin, bare chapped hands. He wears a dark woollen beanie pulled low and soaked dark, and a charity-shop coat a size too big with a broken zip over a hoodie and more layers, everything grimed and softened by being lived in. He sits slightly hunched, one hand out of his sleeve and flat on the wet tarmac beside him, still and unhurried and watchful rather than startled, his head turned up and his eyes meeting the standing man's.
+
+Location: thick cold fog fills the whole car park. Six metres past the tent the fog closes into a flat unbroken wall of pale grey and fills the frame behind, above and to both sides of them. The painted bay lines and the wet tarmac fade out into that grey and are gone. There is nothing in the fog and nothing beyond it: no other vehicles, no buildings, no shop front, no lamp posts, no trees, no fence, no other people, no horizon and no sky. The light comes down through the fog from an overcast winter sky, so it arrives from every direction at once and nothing on the ground casts a shadow. The only other light in the picture is the car's rear lights.
+
+Weather: it is raining hard, not drizzling. The rain is visible as streaks across the black of the car, it is running in threads off the tent's flysheet and dripping from its edge, both men's hair and shoulders are wet through, and the water is standing in sheets on the tarmac.
+
+Style: a documentary press photograph on Kodak Portra 400 at ISO 1600, unretouched, natural skin texture throughout, fine grain in the shadows, muted cool-neutral colour and very low saturation. The black of the car is the darkest thing in the frame and the fog is the palest. The car is a working vehicle: rain-flecked, road film up the lower doors, dirt behind the wheel arches. Everything from the puddle in the foreground to the tent is sharp.
+
+Constraints: no lettering or signage anywhere except the car's own badges. Fill the whole frame with the photograph, with no black bars, no letterbox borders and no white margin of any kind. 16:9.
+
+Thanks.
+```
+
+⬜ **If A3's man is still not Bob, the answer is not a longer description.** It is casting
+`@Bob` and `@Tarquin-new` and deleting every appearance sentence above — the configuration
+[§12](../../google-flow/nano-banana-2.md) calls *two sources agreeing*, and the only one that has
+ever held a face in this film.
+
+
+### 8b-fog · variant A4 — Characters cast, zero appearance · **still** · written 2026-09-08, unrun
+
+🔑 **This is [§12](../../google-flow/nano-banana-2.md)'s *reliable configuration*: the Character
+attached and nothing about the person in the text.** Jack's call, 2026-09-08, and it is the right
+one — it is the only arrangement that has ever held a face in this film.
+
+**Attach in this order and nothing else:** `@Tarquin-new` **first**, `@Bob` **second**, no
+location reference. [§26](../../google-flow/nano-banana-2.md) records that both Characters go in
+the earliest slots and that **each must be anchored to a named side of the frame** — Tarquin
+**left**, Bob **right** — which is the one condition we believe carries two Characters in one
+still.
+
+**Everything about how they look is gone from the prompt.** No age, no build, no hair, no skin, no
+wardrobe, no signet ring, no beanie. [§19](../../google-flow/nano-banana-2.md): a prose
+re-description competes with the attachment and **the prose wins**, which is how `8c(i)` came back
+in the wrong coat. `@Tarquin-new` exists precisely so the gilet lives in the Character's Body
+rather than in a sentence — so the sentence must not mention it.
+
+**What is left, and it is all that is allowed:** where each man is, what he is doing, and his face
+written as **muscles rather than feelings** ([`image-prompting.md`](../../flow/image-prompting.md)
+— *"AI does not understand feelings. It understands facial muscles."*). Note both faces are
+written as **doing almost nothing**: the file's own warning is that reaching for a scowl produces
+Angry Face, and restraint is what reads as real.
+
+⚠️ **The one thing to watch:** wetness. *"Wet through"* is a condition and is allowed; *"soaked
+beanie"* is wardrobe and is not. The rain is therefore described on the world and on the men only
+as water running off them.
+
+```prompt
+A still photograph for a film. The job of this picture is to take a supermarket car park away and leave only the two men and the two things they own, two metres apart on the paint, looking at each other.
+
+Camera: a 135mm lens at f/5.6, sixteen metres back, at the chest height of a standing person and level, framed slightly off-centre and not quite square to the bays, the way a photographer standing in the rain would actually hold it.
+
+Composition: on the left, a large black BMW coupe-SUV, parked nose-in across the painted line between two bays and filling both, turned so the camera sees its rear three-quarter: a long roofline sloping down into a short rear deck, slim split rear lights, gloss black window trim, big dark alloy wheels. Its rear lights are lit and lay a red wash on the wet tarmac behind it. In the next bay to the right, parallel to the car and facing the same way, a cheap two-person dome tent in faded blue and grey, one corner sagging where a pole is bowed, a square of duct tape over a tear, the flysheet grey with old dirt along the skirt and a scuff of mud up one side, a frayed guy line running from its near corner down toward the camera, a flattened cardboard box pushed under the groundsheet where it meets the tarmac. Crossing the very bottom of the frame, close to the camera and soft, the corner of one more painted bay and a shallow puddle with rain rings spreading across it, the red of the car's lights broken up in the water.
+
+Action: on the left of the frame, standing on the tarmac two metres from the tent and forward of the car so that he overlaps it and cuts across its rear wing, the man from the first character reference. He has stopped mid-stride with one foot still ahead of the other and his weight not yet settled, one hand loose at his side. His chin is slightly up, his brows relaxed and level, his mouth flat and closed, and his eyes are aimed steadily down at the seated man. His face is doing almost nothing.
+
+On the right of the frame, sitting on the wet ground at the mouth of the tent, the man from the second character reference. He sits slightly hunched with his knees drawn up, one hand out of his sleeve and flat on the wet tarmac beside him taking a little of his weight. His head is turned up toward the standing man, his brows level, his mouth closed, his eyes soft and engaged and holding the other man's gaze without hurry. He is still, and unhurried, and not startled.
+
+Neither man is posed and neither is aware of the camera. Rain is running off both of them.
+
+Location: thick cold fog fills the whole car park. Six metres past the tent the fog closes into a flat unbroken wall of pale grey and fills the frame behind, above and to both sides of them. The painted bay lines and the wet tarmac fade out into that grey and are gone. There is nothing in the fog and nothing beyond it: no other vehicles, no buildings, no shop front, no lamp posts, no trees, no fence, no other people, no horizon and no sky. The light comes down through the fog from an overcast winter sky, so it arrives from every direction at once and nothing on the ground casts a shadow. The only other light in the picture is the car's rear lights.
+
+Weather: it is raining hard, not drizzling. The rain is visible as streaks across the black of the car, it is running in threads off the tent's flysheet and dripping from its edge, and the water is standing in sheets on the tarmac.
+
+Style: a documentary press photograph on Kodak Portra 400 at ISO 1600, unretouched, fine grain in the shadows, muted cool-neutral colour and very low saturation. The black of the car is the darkest thing in the frame and the fog is the palest. The car is a working vehicle: rain-flecked, road film up the lower doors, dirt behind the wheel arches. Everything from the puddle in the foreground to the tent is sharp.
+
+Constraints: no lettering or signage anywhere except the car's own badges. Fill the whole frame with the photograph, with no black bars, no letterbox borders and no white margin of any kind. 16:9.
+
+Thanks.
+```
+
+⚠️ **If the faces come back too small to bind,** the lever is distance, not words — come in from
+sixteen metres to twelve and let the two men take more of the frame.
+[§12](../../google-flow/nano-banana-2.md): no face in the shot, no likeness, and there is no
+sentence that fixes that.
+
+⬜ **If the wardrobe comes back wrong even with `@Tarquin-new` cast**, do not add the gilet to the
+prompt — that is the `8c(i)` failure. Check the Character's Body instead.
+
+
+### 8b-fog · variant A5 — the forty-metre void · **still** · written 2026-09-08, unrun
+
+**Jack, 2026-09-08: the camera goes back out to where the accepted `8b` stands** — 200mm from
+about forty metres, chest height, level. The fog stays; the men get small again.
+
+🔴 **This distance changes what is possible, and two rules flip at once.**
+
+**1. Nothing is attached, and that is now the correct choice rather than a compromise.**
+[§12](../../google-flow/nano-banana-2.md): a Character binds to a **face**, and at forty metres
+through rain there is no face to bind to. Casting `@Tarquin-new` and `@Bob` here would do nothing
+at all — which is exactly what the accepted `8b` recorded: *"neither binds at this distance, so
+the men are carried by the prose, not the Characters."* **This is §12's named narrow exception.**
+
+**2. What the prose carries is SILHOUETTE, not appearance.** At forty metres the only legible
+facts about a man are his **shape, his posture and how dark he is**. So the prompt gives each man
+a stance and a mass and stops — no face, no features, no skin, and nothing that would be
+invisible at this range anyway. That satisfies Jack's *"don't describe their appearance"* in
+substance: **there is no face in this picture to describe.**
+
+🔴 **And a physics fault in variants A–A4 that this distance exposes.** Those prompts put the fog
+wall **six metres past the tent** — but a fog that erases everything past six metres also erases a
+camera standing at **forty**. The two men would not be visible at all. **The fog's visibility has
+to be set from the camera, not from the subject.**
+
+**Corrected: visibility about fifty metres.** The men are *just* inside it, so they come through
+pale, low-contrast and softened — which is the exact quality Jack accepted `8b` for in the first
+place (*"the blurryness and rain makes it so the details don't matter and it looks really
+cool"*) — and everything past them is gone. **The erasure and the softness are now the same
+effect** instead of two clauses fighting.
+
+🔑 **The foreground problem has a better answer here than a parked car.** With the rows deleted
+there is nothing to look between, so the near tarmac carries it: **the painted bay lines run away
+from the lens and converge toward the two men**, sharp and hard-edged at the bottom of the frame
+and dissolving as they go. Leading lines, depth, and the only geometry left in the world — the
+`the grid survives` idea from the alternates list, arriving for free.
+
+```prompt
+A still photograph for a film. The job of this picture is to take a supermarket car park away and leave only two small figures, a car and a tent, a long way off across an empty floor of wet paint.
+
+Camera: a 200mm telephoto lens at f/4, standing on the wet tarmac about forty metres away, at the chest height of a standing person and perfectly level, not tilted. The long lens flattens what is left of the scene onto one plane. The framing is slightly off-centre and not quite square to the bays, the way a photographer standing out in the rain would actually hold it.
+
+Composition: the two men and their two objects sit small in the middle band of the frame, taking up perhaps a third of its height. On the left, a large black BMW coupe-SUV, parked nose-in across the painted line between two bays and filling both, turned so the camera sees its rear three-quarter: a long roofline sloping down into a short rear deck, slim split rear lights, gloss black window trim, big dark alloy wheels. Its rear lights are lit and are the only colour in the picture, two small red marks with a soft red smear under them on the wet ground. In the next bay to the right, parallel to the car and facing the same way, a cheap two-person dome tent in faded blue and grey, one corner sagging where a pole is bowed, a square of duct tape over a tear, old dirt along its skirt. Running away from the camera along the bottom half of the frame, the painted white bay lines of the empty car park, hard-edged and bright with water where they are nearest the lens and converging toward the two men as they go, growing fainter until they dissolve.
+
+Action: standing on the tarmac between the car and the tent, a man in dark trousers and a bulky sleeveless jacket over a dark top, upright, his weight on one foot as though he has just stopped walking, his head turned down toward the ground beside the tent. Sitting on the wet ground at the mouth of the tent, a much bulkier and lower shape, a man hunched inside several layers with his knees drawn up and a dark cap on his head, his head tilted up toward the standing man. Three or four metres of empty wet tarmac between them. Both figures are small and softened by the distance and by the rain in the air between them and the camera, and no detail of either face can be made out.
+
+Location: thick cold fog fills the whole car park. Nothing is visible beyond about fifty metres, so the two men and their two objects sit right at the edge of what can still be seen, pale and low in contrast, and everything behind them is a flat unbroken wall of pale grey that fills the frame from side to side and top to bottom. The painted bay lines fade out into that grey a short way past the tent and are gone. There is nothing in the fog and nothing beyond it: no other vehicles, no buildings, no shop front, no lamp posts, no trees, no fence, no other people, no horizon and no sky. The light comes down through the fog from an overcast winter sky, so it arrives from every direction at once and nothing on the ground casts a shadow. The car's rear lights are the only other light in the picture.
+
+Weather: it is raining hard, not drizzling. The rain is visible as fine streaks falling across the whole frame, standing in sheets on the tarmac and breaking the reflections up.
+
+Style: a documentary press photograph on Kodak Portra 400 at ISO 1600, unretouched, fine grain in the shadows, muted cool-neutral colour and very low saturation, compressed perspective. The black of the car is the darkest thing in the frame and the fog is the palest. The car is a working vehicle: rain-flecked, road film up the lower doors, dirt behind the wheel arches. The bay lines nearest the camera are sharp.
+
+Constraints: no lettering or signage anywhere except the car's own badges. Fill the whole frame with the photograph, with no black bars, no letterbox borders and no white margin of any kind. 16:9.
+
+Thanks.
+```
+
+⚠️ **What this frame gives up.** At forty metres there is no eyeline, no expression and no
+likeness — the whole argument is carried by two silhouettes and the space between them. That was
+`8b`'s original bargain and Jack accepted it once already; it is worth knowing it is being made
+again, because **A4 and A5 cannot both be the same shot.** One is a two-hander about faces, the
+other is a two-hander about scale.
+
+
+#### 🔴 A5 ran and the men changed again — and this time the cause is in the prompt, not the engine
+
+**Two separate things are going on and they need separating.**
+
+**1. The faces will change every run and no prompt can stop that.** Nothing is attached; identity
+is a fresh draw. That is [§12](../../google-flow/nano-banana-2.md) and it is not a bug to fix.
+**At forty metres it also does not matter** — no face is legible in A5's output, and nobody
+watching can tell it is a different actor.
+
+**2. What DID matter, and was my error: A5 threw away the canon wardrobe colours.** Reducing
+Tarquin to *"dark trousers and a bulky sleeveless jacket over a dark top"* deleted four facts that
+[`characters/tarquin.md`](./characters/tarquin.md) fixes — **olive** gilet, **navy** roll-neck,
+**dark blue** jeans, **tan** loafers — and the run came back in **black trousers and black
+boots**. That is not the engine drifting. That is the prompt no longer asking.
+
+🔑 **The rule this settles: at forty metres, identity is CARRIED BY VALUE AND SHAPE, and those are
+the things that must be locked.** A face is invisible at this range; a pale olive block above blue
+legs above tan shoes is not. **Colour and silhouette are not "appearance" in the
+[§19](../../google-flow/nano-banana-2.md) sense** — there is no Character attached for them to
+argue with, and no face is being described. They are the only identity this shot has.
+
+#### 🔴 Canon gap found: Bob's coat has no colour
+
+[`characters/bob.md`](./characters/bob.md) fixes *"a charity-shop coat (a size wrong, zip
+broken)"* and **never says what colour it is** — where Tarquin's file pins every garment. That is
+why Bob's coat has come back a different shade in every round: **nothing has ever asked for one.**
+
+The accepted frames have converged on **pale sand/khaki**, and A6 below locks that. ⬜ **A ruling
+is owed** — if Jack agrees, the colour belongs in `bob.md`, not in one prompt.
+
+### 8b-fog · variant A6 — forty metres, silhouette locked · **still** · written 2026-09-08, unrun
+
+```prompt
+A still photograph for a film. The job of this picture is to take a supermarket car park away and leave only two small figures, a car and a tent, a long way off across an empty floor of wet paint.
+
+Camera: a 200mm telephoto lens at f/4, standing on the wet tarmac about forty metres away, at the chest height of a standing person and perfectly level, not tilted. The long lens flattens what is left of the scene onto one plane. The framing is slightly off-centre and not quite square to the bays, the way a photographer standing out in the rain would actually hold it.
+
+Composition: the two men and their two objects sit small in the middle band of the frame, taking up perhaps a third of its height, and are grouped close together so that the standing man is only three metres from the tent and stands directly in front of the car, overlapping its rear wing. On the left, a large black BMW coupe-SUV, parked nose-in across the painted line between two bays and filling both, turned so the camera sees its rear three-quarter: a long roofline sloping down into a short rear deck, slim split rear lights, gloss black window trim, big dark alloy wheels. Its rear lights are lit and are the only colour in the picture apart from the men, two small red marks with a soft red smear under them on the wet ground. In the next bay to the right, parallel to the car and facing the same way, a cheap two-person dome tent in faded blue and grey, one corner sagging where a pole is bowed, a square of duct tape over a tear, old dirt along its skirt. Running away from the camera along the bottom half of the frame, the painted white bay lines of the empty car park, hard-edged and bright with water where they are nearest the lens and converging toward the two men as they go, growing fainter until they dissolve.
+
+Action: standing on the tarmac between the car and the tent, a tall, narrow, upright man. He wears a pale olive sleeveless quilted gilet over a dark navy long-sleeved top, mid-blue denim jeans, and light tan shoes, and he is bare-headed with short dark hair. The olive of the gilet and the tan of the shoes are the two pale points on him. He stands with his weight on one foot as though he has just stopped walking, one hand loose at his side, his head turned down toward the seated man.
+
+Sitting on the wet ground at the mouth of the tent, a much lower and much wider shape: a man bundled inside several layers, his knees drawn up and his arms in close, so that he reads as a rounded bulk rather than a body. He wears a pale sand-coloured oversized coat over darker layers underneath, and a dark knitted cap pulled down, and the cap is the darkest point on him. His head is tilted up toward the standing man.
+
+Both figures are small and softened by the distance and by the rain in the air between them and the camera, and no detail of either face can be made out.
+
+Location: thick cold fog fills the whole car park. Nothing is visible beyond about fifty metres, so the two men and their two objects sit right at the edge of what can still be seen, pale and low in contrast, and everything behind them is a flat unbroken wall of pale grey that fills the frame from side to side and top to bottom. The painted bay lines fade out into that grey a short way past the tent and are gone. There is nothing in the fog and nothing beyond it: no other vehicles, no buildings, no shop front, no lamp posts, no trees, no fence, no other people, no horizon and no sky. The light comes down through the fog from an overcast winter sky, so it arrives from every direction at once and nothing on the ground casts a shadow. The car's rear lights are the only other light in the picture.
+
+Weather: it is raining hard, not drizzling. The rain is visible as fine streaks falling across the whole frame, standing in sheets on the tarmac and breaking the reflections up.
+
+Style: a documentary press photograph on Kodak Portra 400 at ISO 1600, unretouched, fine grain in the shadows, muted cool-neutral colour and very low saturation, compressed perspective. The black of the car is the darkest thing in the frame and the fog is the palest. The car is a working vehicle: rain-flecked, road film up the lower doors, dirt behind the wheel arches. The bay lines nearest the camera are sharp.
+
+Constraints: no lettering or signage anywhere except the car's own badges. Fill the whole frame with the photograph, with no black bars, no letterbox borders and no white margin of any kind. 16:9.
+
+Thanks.
+```
+
+#### The choice that is actually on the table
+
+**These two wants cannot both be satisfied in one frame, and no further rounds will change that.**
+
+| | **Stay at forty metres** (A6) | **Come in to twelve** (A4, closer) |
+|---|---|---|
+| **The look Jack accepted `8b` for** | ✅ kept | 🔴 gone — details start to matter |
+| **Same men across shots** | 🔴 never. Faces redraw every run | ✅ Characters bind and hold |
+| **What identity rests on** | wardrobe colour and body shape | the actual face |
+| **What the prompt may say** | colour and silhouette, no face | [§19](../../google-flow/nano-banana-2.md): nothing about them at all |
+
+⬜ **There is a third route nobody has tried: generate close, accept, then use the accepted frame
+as the reference for the wide.** It gets both — but it needs a reference image attached, which
+Jack has ruled out for this set. Worth revisiting if A6 still is not right.
+
+
+#### A6 ran — the register is proven. Two faults left, and both have known fixes
+
+**Verdict: this is the best frame of the set and the fog limbo now works as a register.** The
+void is total, the bay lines converge and carry the depth on their own, the red reflection under
+the car is the only colour and it earns its place, and the rain is finally in the air. The
+wardrobe held: olive, navy, blue, tan on Tarquin, sand and a dark cap on Bob. **Locking colour
+and silhouette instead of faces was the right call and should stay.**
+
+**Fault 1 — the faces are weird, and the fix is geometry, not description.**
+[§18](../../google-flow/nano-banana-2.md) is the standing rule and it applies exactly here:
+*"where a face does not need to be legible, hide it with the camera, never with a sentence."* At
+forty metres a face is about fifteen pixels and the engine renders features into it anyway, which
+is what produces the mush. Saying *"no detail of either face can be made out"* is a **rule**, and
+§18 records that a stated rule does not bind — **only a physical occlusion the engine must honour
+to draw the scene at all.**
+
+So A7 gives each man an occluder and **describes the result**:
+
+- **Tarquin's head is dropped far enough that the camera sees the crown of his skull**, not his
+  face — the front of his face is aimed at the tarmac
+- **Bob sits back inside the mouth of the tent** so the fabric arch cuts across above him and his
+  head is inside its shade, with the cap pulled down over his brow
+
+⚠️ **This is a real cost, stated plainly:** it removes the eyeline. The two men no longer look at
+each other, and `8b`'s beat is *the two men lock eyes*. **At forty metres that beat was never
+available** — it was not readable in A5 or A6 either. Better to stage the shot around what the
+distance can actually carry.
+
+**Fault 2 — the car grew a logo that is not BMW's.** Caused by the Constraints line: *"no
+lettering… except the car's own badges"* **permits a badge without specifying one**, so the engine
+invented a roundel. 🔴 **And "no badge" is the wrong fix** — [§27](../../google-flow/nano-banana-2.md),
+an absence comes back inverted. **Describe what a badge actually looks like at forty metres:** a
+small dark mark with no readable detail, above an unreadable yellow rectangle. That is true, it is
+positive, and it gives the engine something to draw.
+
+**Fault 3, mine, not Jack's:** the standing man is pressed against the car and the three-metre gap
+reads as one. A7 puts clear tarmac between all three shapes so they read as three separate things
+— the depth is already coming from the converging lines and does not need the overlap.
+
+✅ **RESOLVED 2026-09-08, after a third matted run — it was neither.** The clause *"no black
+bars, no letterbox borders"* is **an absence**, and [§27](../../google-flow/nano-banana-2.md)
+says an absence comes back inverted. Three requests, three mattes. The prompts also opened *"a
+still photograph **for a film**"*, which commissions a cinematic still, and a cinematic still has
+bars. **Never negate the frame in prose — set the ratio in Flow's toggle.** Written up as
+[§31](../../google-flow/nano-banana-2.md).
+
+### 8b-fog · variant A7 — faces hidden by geometry · **still** · written 2026-09-08, unrun
+
+```prompt
+A still photograph for a film. The job of this picture is to take a supermarket car park away and leave only two small figures, a car and a tent, a long way off across an empty floor of wet paint.
+
+Camera: a 200mm telephoto lens at f/4, standing on the wet tarmac about forty metres away, at the chest height of a standing person and perfectly level, not tilted. The long lens flattens what is left of the scene onto one plane. The framing is slightly off-centre and not quite square to the bays, the way a photographer standing out in the rain would actually hold it.
+
+Composition: the two men and their two objects sit small in the middle band of the frame, taking up about a third of its height, spread across three clearly separated shapes with wet tarmac visible between each of them. On the left, a large black BMW coupe-SUV, parked nose-in across the painted line between two bays and filling both, turned so the camera sees its rear three-quarter: a long roofline sloping down into a short rear deck, slim split rear lights, gloss black window trim, big dark alloy wheels. Its rear lights are lit and are the only colour in the picture apart from the men, two small red marks with a soft red smear under them on the wet ground. At this distance its badge is a small dark mark on the tailgate with no readable detail in it, above a plain yellow rectangle with no readable detail in it either. Two metres of clear wet tarmac to the right of the car, then the standing man, then three metres more, then a cheap two-person dome tent pitched in the next bay, parallel to the car and facing the same way, one corner sagging where a pole is bowed, a square of duct tape over a tear, old dirt along its skirt. Running away from the camera along the bottom half of the frame, the painted white bay lines of the empty car park, hard-edged and bright with water where they are nearest the lens and converging toward the two men as they go, growing fainter until they dissolve.
+
+Action: standing on the tarmac between the car and the tent, a tall, narrow, upright man. He wears a pale olive sleeveless quilted gilet over a dark navy long-sleeved top, mid-blue denim jeans, and light tan shoes, and he is bare-headed with short dark hair. The olive of the gilet and the tan of the shoes are the two pale points on him. He stands with his weight on one foot as though he has just stopped walking, one hand loose at his side, and his head is dropped so far toward the ground that the camera sees the crown of his skull and the top of his shoulders, with the whole front of his face aimed down at the tarmac and turned away from the lens.
+
+Sitting on the wet ground just inside the mouth of the tent, set back under it so the arch of the tent fabric cuts across above him and his head sits inside its shade, a much lower and much wider shape: a man bundled inside several layers, his knees drawn up and his arms in close, so that he reads as a rounded bulk rather than a body. He wears a pale sand-coloured oversized coat over darker layers underneath, and a dark knitted cap pulled down low over his brow. His head is tilted up toward the standing man, and the shade of the tent and the pulled-down cap cover the upper half of it.
+
+Location: thick cold fog fills the whole car park. Nothing is visible beyond about fifty metres, so the two men and their two objects sit right at the edge of what can still be seen, pale and low in contrast, and everything behind them is a flat unbroken wall of pale grey that fills the frame from side to side and top to bottom. The painted bay lines fade out into that grey a short way past the tent and are gone. There is nothing in the fog and nothing beyond it: no other vehicles, no buildings, no shop front, no lamp posts, no trees, no fence, no other people, no horizon and no sky. The light comes down through the fog from an overcast winter sky, so it arrives from every direction at once and nothing on the ground casts a shadow. The car's rear lights are the only other light in the picture.
+
+Weather: it is raining hard, not drizzling. The rain is visible as fine streaks falling across the whole frame, standing in sheets on the tarmac and breaking the reflections up. There is enough rain in the forty metres of air between the camera and the two men to soften them.
+
+Style: a documentary press photograph on Kodak Portra 400 at ISO 1600, unretouched, fine grain in the shadows, muted cool-neutral colour and very low saturation, compressed perspective. The black of the car is the darkest thing in the frame and the fog is the palest. The car is a working vehicle: rain-flecked, road film up the lower doors, dirt behind the wheel arches. The bay lines nearest the camera are sharp.
+
+Constraints: every surface in the picture is plain, with no writing, no signage, no logos and no readable markings of any kind anywhere. Fill the whole frame with the photograph, with no black bars, no letterbox borders and no white margin of any kind. 16:9.
+
+Thanks.
+```
+
+🔑 **The habit to keep:** two rounds in a row have been fixed by the same move — **stop stating a
+rule and state the physical situation that makes the rule true.** *"No face can be made out"*
+became *the crown of his skull faces the lens*; *"no badge"* became *a small dark mark with no
+readable detail.* [§18](../../google-flow/nano-banana-2.md) and
+[§27](../../google-flow/nano-banana-2.md) are the same finding wearing two hats.
+
+
+#### ✅ A7 RAN, 2026-09-08 — and it is the best frame of the entire `8b-fog` set
+
+**Jack ran the forty-metre A7 and it beat every variant after it.** Worth stating plainly because
+it reverses the direction this section had been travelling: **A8/A9's elevated wide was a detour.**
+A7 holds the beat, the men read as two people, the void is total, and — 🔑 **the rain is in the
+air**, which A9's could not manage. That is [§32](../../google-flow/nano-banana-2.md) confirmed
+from the other side: **A7 has a big black car and dark wet tarmac for the rain to fall against, so
+the rain renders.** A9 deleted the dark and lost it. Same prompt clause, opposite result, and the
+only difference is what was in the frame to see it against.
+
+⬜ **Characters stay uncast, and at this distance that is the right call, not an oversight**
+([§12](../../google-flow/nano-banana-2.md)) — forty metres gives no face to bind to. The
+[A12 casting note](#-correction-2026-09-08-jack-a12-should-cast-the-characters-and-i-had-inherited-the-wrong-default)
+applies only to the fourteen-metre design.
+
+#### The four faults, and where the fix comes from
+
+| Fault | Cause | Fix |
+|---|---|---|
+| 🔴 **The car rendered a full crisp roundel *and* model script on the tailgate** | The Constraints line said *"no lettering or signage anywhere **except the car's own badges**"* — **an explicit permission**, and the engine took it and over-delivered. Same shape as the A6 invented-roundel fault, one step along | Delete the exception. **State the optics instead:** at forty metres through rain a badge is too small to resolve, and there is no model script on the tailgate at all |
+| 🔴 **The tent is too bright, too clean, too new** | Described from prose (*"faded blue and grey"*) rather than from the asset. [`characters/tent.md`](./characters/tent.md) is explicit — **the plate is the authority, match the plate not the words** | Described below from the plate itself |
+| ⚠️ **The wet tarmac reads as one long mirror** | [The advert tell](../../google-flow/nano-banana-2.md#-advert-vocabulary-commissions-an-advert), verbatim: *"wet tarmac full of long mirror reflections"* is a detailing-advert brief. The plate does not look like that | **Break the reflections up** — water standing in irregular low places, dry-ish high places between |
+| 🔴 **Letterbox bars, fourth run** | [§31](../../google-flow/nano-banana-2.md) — the negation *is* the cause, and *"a still photograph for a film"* commissions the matte | Both clauses deleted. Ratio set in Flow's toggle |
+
+#### 🔑 The tent, read off the plate (`camera/reference/waitrose-car-park-plate.png`)
+
+**This is the analysis Jack asked for, and it is materially different from what we have been
+writing.** Every prompt in this section has said *"faded blue and grey"*, which is why we keep
+getting a bright blue tent with a grey skirt. The plate shows something else:
+
+- **The blue is only on the upper dome panels, and it is dusty and dark** — closer to slate or
+  worn denim than to a bright tent blue. It is not a colour that draws the eye.
+- **The rest of the tent — the whole lower body, the door panel and the sides — is pale
+  grey-silver**, nearer bone or oyster than silver.
+- 🔴 **It is dirty, and that is the single biggest difference.** Brown-grey mud staining runs along
+  the bottom edge and streaks up the lower panels. The A7 tent is clean.
+- **The fabric is slack, not taut** — sagging and wrinkled between the poles, the way a cheap tent
+  that has been up for weeks actually sits.
+- **The door is unzipped and open**, showing a dark interior with bedding as an unreadable dark
+  mass inside. A7's is zipped shut, which loses the fact that a man lives in it.
+- **Guy lines run out to the tarmac** — nothing can be pegged into a car park.
+
+⚠️ **The open door is a real gain, not a detail.** [`frame.md`](../../cinematography/frame.md) —
+*a frame-within-a-frame does narration's job for free.* A dark open doorway with belongings inside
+is the only thing in the picture that says **this is a home**, which is the whole argument of the
+scene. Add it.
+
+#### What the cinematography file adds
+
+- **Broken reflections are also a depth device, not only an anti-slop one.** Water pooled in the
+  low places and not the high ones gives the empty floor *surface variation*, which is what stops
+  a flat plane reading as a flat plane.
+- **Worn paint, from the plate:** the bay lines are faded to nothing in the driven lanes and bright
+  where cars do not run. Uniform crisp paint is the tell; the plate has neither.
+- ✅ **Leading lines that arrive.** The measured claim is that viewers fixate longer when a line
+  leads to a clear subject. A7 already does this — the bays converge on the two men. **Kept, and
+  stated explicitly so it survives.**
+- ⬜ **Kept as-is: the faces.** A7's geometry-hidden heads read fine at this size and Jack did not
+  flag them. [Shot-craft's rule](../../../.claude/skills/shot-craft/SKILL.md) — change one thing at
+  a time, and this round is already changing four.
+
+#### On the research pass
+
+The Nano Banana logo material yielded one usable rule — **quote on-image text, name the font and
+the surface it sits on, keep it to 1–4 words** `[community]` — which is why the badge below is
+handled as *optics* rather than as text: there is no string we want rendered.
+🔴 **The wet-reflection search returned nothing citable** — SEO prompt farms restating each other,
+which [`evidence.md`](../../cinematography/evidence.md) is explicit is not corroboration. **The
+reflection fix below comes from our own plate and our own advert-vocabulary finding instead**, and
+is the better source.
+
+### 8b-fog · variant A7b — A7 with the badge, the tent and the ground fixed · **still** · written 2026-09-08, unrun
+
+⚠️ **One call I made that Jack can cheaply reverse:** *"fix the car logo"* is read as **the badge
+over-rendered and grew model script**, so the fix is to make it unresolvable at forty metres. If it
+instead meant *the model designation is wrong* — the render reads X6, canon says X8 — that is a
+readable-text problem we cannot reliably solve, and the answer is still to remove the script.
+
+**Model: Nano Banana Pro. Nothing attached. Set 16:9 with Flow's landscape toggle.** Paste the
+block below into the **prompt box on Flow's image surface**:
+
+```prompt
+Generate a still photograph. The job of this picture is to take a supermarket car park away and leave only two small figures, a car and a tent, a long way off across an empty floor of wet paint.
+
+Camera: a 200mm telephoto lens at f/4, standing on the wet tarmac about forty metres away, at the chest height of a standing person and perfectly level, not tilted. The long lens flattens what is left of the scene onto one plane.
+
+Composition: the two men and their two objects sit small in the middle band of the frame, taking up about a third of its height, grouped close together so the standing man is three metres from the tent and stands directly in front of the car, overlapping its rear wing. On the left, a large black BMW coupe-SUV, parked nose-in across the painted line between two bays and filling both, turned so the camera sees its rear three-quarter: a long roofline sloping down into a short rear deck, slim split rear lights, gloss black window trim, big dark alloy wheels. Its rear lights are lit, two small red marks with a soft red smear under them on the wet ground. In the next bay to the right, parallel to the car and facing the same way, a cheap two-person dome tent. Running away from the camera along the bottom half of the frame, the painted white bay lines of the empty car park, converging toward the two men as they go and growing fainter until they dissolve.
+
+The car at this distance: the tailgate carries one small circular badge, too small for any shape inside it to be told apart, and the tailgate is otherwise completely bare — no model name, no lettering, no script, no numbers anywhere on the car. Below the badge sits a plain yellow rectangle with nothing written on it.
+
+The tent: its upper dome panels are a dusty, darkened blue, closer to slate or worn denim than to a bright tent blue, and the whole lower body, the door panel and the sides are a pale grey-silver nearer bone than silver. Brown-grey mud staining runs along the bottom edge and streaks up the lower panels. The fabric is slack and wrinkled between its poles rather than taut, one corner sagging where a pole is bowed, a square of duct tape over a tear. Thin guy lines run out from its corners and lie slack on the tarmac, weighted rather than pegged. The door is unzipped and standing open, and inside it is dark, with bedding and belongings piled as an unreadable dark mass.
+
+Action: standing on the tarmac between the car and the tent, a tall, narrow, upright man. He wears a pale olive sleeveless quilted gilet over a dark navy long-sleeved top, mid-blue denim jeans and light tan shoes, and he is bare-headed with short dark hair. He stands with his weight on one foot as though he has just stopped walking, one hand loose at his side, his head turned down toward the seated man.
+
+Sitting on the wet ground at the mouth of the tent, a much lower and much wider shape: a man bundled inside several layers, knees drawn up and arms in close, so that he reads as a rounded bulk rather than a body. He wears a pale sand-coloured oversized coat over darker layers and a dark knitted cap pulled down, the cap the darkest point on him. His head is tilted up toward the standing man. Both figures are small and softened by the distance and by the rain in the air between them and the camera.
+
+Ground: the tarmac is old and patched in mismatched shades of grey with tar seams between them. The painted bay lines are worn thin to almost nothing where cars have driven the lanes and bright and hard-edged where they have not. Rain has pooled in the low places and left the high places merely damp, so the reflections are broken into separate unequal patches with dull dry tarmac between them, never one continuous mirror.
+
+Location: thick cold fog fills the whole car park. Nothing is visible beyond about fifty metres, so the two men and their two objects sit right at the edge of what can still be seen, pale and low in contrast, and everything behind them is a flat unbroken wall of pale grey filling the frame from side to side and top to bottom. The bay lines fade into that grey a short way past the tent and are gone. The light comes down through the fog from an overcast winter sky, arriving from every direction at once, and nothing on the ground casts a shadow.
+
+Weather: it is raining hard, not drizzling. The rain is visible as fine streaks falling across the whole frame, clearest where it crosses the black of the car, and it breaks the surface of every pool of standing water.
+
+Style: an unretouched documentary press photograph on Kodak Portra 400 at ISO 1600, fine grain in the shadows, muted cool-neutral colour and very low saturation, compressed perspective. The black of the car is the darkest thing in the frame and the fog is the palest. The car is a working vehicle: rain-flecked, road film up the lower doors, dirt behind the wheel arches. The bay lines nearest the camera are sharp.
+
+Constraints: no writing, no signage, no logos, no numbers and no readable markings of any kind on any surface anywhere in the picture. Nothing in the fog and nothing beyond it: no other vehicles, no buildings, no shop fronts, no lamp posts, no trees, no fences, no other people, no horizon and no sky.
+
+Thanks.
+```
+
+#### A7b ran, 2026-09-08 — the tent fix landed hard. Two faults left and NEITHER should be re-prompted
+
+**Verdict: the best frame of the set and close to shippable.** The tent is transformed — muted
+slate-blue dome, bone-grey body, and real mud streaking up the lower panels. **It reads as lived-in
+rather than as a product**, which is what every previous round failed at. Reading the colour off
+the plate instead of off our own prose is the whole reason, and
+[`characters/tent.md`](./characters/tent.md) now carries it so it stops recurring. The rain is
+excellent — better than A7's — and it dimples every pool.
+
+#### 🔴 The letterbox: my §31 fix FAILED, and the finding needs downgrading
+
+**Both clauses were deleted — the negation *and* "for a film" — and the bars came back anyway.**
+Fifth consecutive matte. §31's causal claim is therefore **not supported**; it stands only as
+"don't negate the frame", which is good practice for other reasons.
+
+🔑 **New hypothesis, with evidence, and it points away from the prompt entirely.** The
+**`waitrose-car-park-plate`** — banked weeks ago, from a completely different prompt — **has the
+same black bars with the same thin white inner line.** And every image we have been reviewing is
+~1240×695, an odd non-round size: **these are screenshot crops of Flow's viewer, not downloaded
+originals.** A Flow download is 2K.
+
+⬜ **The test is free and takes a minute: download the original from Flow and look at its
+dimensions.** If it is 1920×1080 with no bars, we have spent five rounds of prompt engineering on
+Flow's UI chrome. **Nobody should write another clause about bars until that check is done.**
+
+#### 🔴 The badge got worse, and the cause is a rule we did not have
+
+The roundel came back **crisp**, with **"X6" script** beside it — more legible than before, despite
+a constraint line banning all lettering and an explicit optics sentence saying the badge is too
+small to resolve.
+
+🔑 **Naming a marque renders its badging, and no downstream constraint subtracts it.** *"A large
+black BMW coupe-SUV"* carries the roundel and the model script inside the prior; the ban arrives
+later and loses. This is [§27](../../google-flow/nano-banana-2.md)'s shape again — **you cannot
+subtract, you can only substitute** — and it now has a marque-specific case.
+
+⚠️ **And it confirms the ambiguous read from last round: the render says X6, canon says X8.** So
+"fix the logo" was about the model designation. **We cannot fix that in Flow.** Rendering "X8" is
+readable text on a small foreshortened surface, which is the least reliable thing the engine does,
+and it fights the no-lettering rule everywhere else in the frame.
+
+**The options, honestly, cheapest first:**
+
+1. ✅ **Paint it out.** It is one small dark patch on a still. Free, exact, thirty seconds, and it
+   is the [ffmpeg/exact lane](../../video-fx/hybrid-method.md) doing what that lane is for.
+2. **Turn the car further away from camera** so the tailgate foreshortens out of legibility —
+   costs a round, changes the composition Jack has already accepted.
+3. **Drop "BMW" and describe the body only** — risks the silhouette, and the standing instruction
+   is to name the marque. Not recommended.
+
+🔴 **Do not spend another generation on it.** The frame is otherwise right, and re-rolling risks
+the tent we just won.
+
+#### Two smaller misses, one of them mine
+
+- ⚠️ **The tarmac is still one mirror, and that clause was my fault.** I asked for *"the high
+  places merely damp… never one continuous mirror"* in the same prompt as *"raining hard, not
+  drizzling."* **In hard rain nothing stays dry.** The physics did not close, so the engine kept
+  the stronger claim — which is exactly [§32](../../google-flow/nano-banana-2.md) firing on our own
+  writing. **If broken reflections are wanted, the weather has to be "after the rain", not "during
+  it."** That is a real choice, not a phrasing fix.
+- ⬜ **The tent door did not open.** Bob is sitting where the door is, so the dark interior and the
+  bedding are behind him. Worth one attempt at moving him a foot to the side of the opening rather
+  than in front of it — but only bundled with something else, never on its own.
+
+### 8b-fog — the clip · **video** · ✅ **RAN AND ACCEPTED 2026-09-08**
+
+✅ **Jack: *"that worked."*** First-time pass. **The configuration that did it, for reuse:**
+**Omni Flash · Frames tab · the accepted still as frame 0 · no Character, no Ingredients ·
+camera locked in the prompt · one silhouette-scale change as the only human motion · ~105 words.**
+
+🔑 **Three things this confirms, and all three were predictions rather than guesses:**
+the [tab rule](../../google-flow/omni-flash.md#-the-tab-rule) — staging is what this shot could not
+survive losing, so Frames was right and Ingredients would have redrawn both men; the
+[hybrid ruling](../../video-fx/hybrid-method.md) — **the camera stayed locked and the frame
+survived intact**, where a camera move is the instruction most likely to have redrawn the tent; and
+**a silhouette beat carries at forty metres where a facial one cannot.**
+
+⬜ **The reflection risk did not fire** — but the motion was deliberately kept tiny and above the
+waterline, so this is not evidence the failure is not real. Still `n=1` against, and still worth
+respecting on the next clip.
+
+#### 🔴 Answer 1: yes to the push-in, no to asking Flow for it
+
+**The zoom is the right instinct and it is the one move an eight-second clip means something
+with** — [shot-craft](../../../.claude/skills/shot-craft/SKILL.md): *a push-in means narrowing
+attention toward a realisation.* But it must not be asked of Omni Flash.
+
+**[`hybrid-method.md`](../../video-fx/hybrid-method.md) §2, ruled 2026-08-26 — the world moves and
+the camera moves, so this is the hybrid row:**
+
+| Does the world move? | Does the camera move? | Build |
+|---|---|---|
+| **yes** (rain) | **yes** (the push) | 🟢 **Omni Flash locked, then move the camera in post** |
+
+🔑 **The reason is specific and it protects this exact frame.** Veo/Omni's expensive failure is
+**regeneration, and camera *translation* is what fires it** — measured on GPOM plant-room, clean at
+0–4s and visibly broken by 6s. **We have just spent four rounds getting this tent right. A camera
+move is the one instruction most likely to redraw it.** Locked, the bug cannot fire; the push is
+then a scale-and-crop on real pixels — rigid, exactly eased, any length, free, instantly re-triable.
+
+⬜ **Even if it were done in Flow, push-in is the safe direction** — it crops into pixels it already
+has, where a pull-back must invent new world on all four edges every frame. Not needed here, but
+worth knowing the asymmetry.
+
+#### ⚠️ A push-in has to arrive at something, and two men staring is not something
+
+*"Put something at the end of the push worth arriving at."* A held stare with nothing changing is
+**pushing on nothing**, and the move will read as decoration.
+
+🔑 **The payoff chosen, and why it is this one: the standing man's shoulders drop very slightly on
+an exhale, near the end.** It is the whole beat — the man with everything, deflating — and
+critically **it is a silhouette change, not a facial expression.** At forty metres a face carries
+nothing and a silhouette carries everything; this section has proved that four times. It also stays
+inside the near-static budget the Frames tab needs.
+
+#### 🔴 Answer 2: no Characters, and no Ingredients either — this is a Frames shot
+
+**[The tab rule](../../google-flow/omni-flash.md#-the-tab-rule) asks one question: what can this
+shot not survive losing?** The answer is **the staging** — the corrected tent, the car, the fog, the
+geography. → **Frames.**
+
+Three independent reasons Characters are wrong here:
+
+- **[§12](../../google-flow/nano-banana-2.md) — a Character binds to a face, and forty metres has
+  no face to bind to.** Same reason A7 was cast prose-only.
+- 🔴 **Characters live on Ingredients, and [Ingredients re-renders every person from scratch](../../google-flow/omni-flash.md#-ingredients-re-renders-faces--it-will-not-hold-an-unnamed-person).**
+  It treats the image as *material*, not as pixels to continue. **It would redraw both men — which
+  is precisely how we would lose the frame we are trying to keep.**
+- **[`flow-prompt`](../../../.claude/skills/flow-prompt/SKILL.md) rule 2 — when animating a still,
+  describe the motion ONLY.** The image already carries subject, scene and style; re-describing
+  makes it regenerate instead of animate.
+
+**And the prompt shape follows the tab, not the shot:** in Frames the image *is* frame 0, so the
+prompt is cut to motion, timing and audio. **An itemised preservation list is the right medicine
+for the wrong tab** and invites the drift it was meant to prevent.
+
+⬜ **Flagging one Veo-only capability rather than switching silently:** Veo 3.1 takes a first *and*
+last frame, and the same still in both slots is the strongest lock that exists. **Not used** — the
+standing preference is Omni Flash, and [`hybrid-method.md`](../../video-fx/hybrid-method.md)'s rule
+is never to pin an `endImage`, which morphs. A near-static Frames clip does not need it.
+
+#### 🔴 The top risk in this specific clip, and it is not the men
+
+**The bottom third of A7b is a mirror** — the car, the bay lines and both figures reflected in
+standing water. [Omni's one observed reflection failure](../../google-flow/omni-flash.md#-moving-objects-inside-a-reflection--one-observed-failure-and-the-mechanism-is-here)
+is exactly this: a reflection is **geometry twice over**, and the engine must hold where a thing is,
+where its mirror image lands, and how both move, every frame, with no world model.
+
+⚠️ `n=1`, so it is a flag not a law — **but it argues for keeping the motion tiny and above the
+waterline**, which is what the shoulder-drop does. **Do not add anything that moves in the lower
+third.** The independent 2026 tell-list names *"mirror/reflection breakdowns"* among the twelve most
+consistent AI-video tells `[community]`, which is weak corroboration of a mechanism we had already
+measured.
+
+#### Anti-slop, video edition — what is new versus the stills work
+
+A fresh pass, and most of it is post-production rather than prompt `[community]`:
+
+- ⚠️ **"Unnaturally smooth motion"** is a named tell. The counter is a **10–15% speed ramp in
+  Premiere** — not a prompt change. Cheap, worth trying on the finished clip.
+- ✅ **Film grain at 10–15% opacity** over the finished clip counters the too-clean look. We already
+  carry grain in the still's stock; this is the motion equivalent.
+- ✅ **"Lock lighting to one source, avoid mixed lighting descriptions, use slower moves, shorter
+  clips"** to prevent temporal flicker. All four are already house practice — the fog gives one
+  omnidirectional source and there is nothing to mix.
+- ⬜ **"Repeating texture tiling"** — a real risk with continuous rain over eight seconds. Nothing
+  to do at the prompt; worth *looking* for on playback.
+- 🔴 **Not adopted: "hand-morph frames"** is top of their list, and our hands are a few pixels at
+  forty metres. Named so nobody spends a clause on it.
+
+⚠️ **Prompt length is an [open conflict](../../google-flow/omni-flash.md#-open-conflict-how-long-should-an-omni-prompt-be)
+in our own file and is not settled.** The resolution we use is *the axis is kind, not length*:
+detail about **what the shot is** buys control; prescription about **how to achieve it** —
+timecoded beats, frame-by-frame narration, physics explanations — buys nothing. The block below is
+~105 words and every sentence is the first kind.
+
+**Model: Omni Flash. Tab: Frames. Attach the accepted A7b still as the frame — nothing else, no
+Character, no Ingredients.** Paste the block below into the **prompt box on the Frames tab**:
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame. The camera is locked off on a tripod and holds completely still for the whole shot.
+
+Near the end of the shot the standing man's shoulders drop very slightly as he breathes out. Otherwise both men stay exactly where they are, holding each other's look, their feet still.
+
+The rain keeps falling at the same rate across the whole frame and keeps breaking the surface of the standing water. Water runs down the back of the car.
+
+Audio: heavy rain on wet tarmac, rain drumming on the car roof and on the tent fabric, and a light wind. No music and no voices.
+```
+
+#### The post move, in Premiere
+
+**Scale the finished clip up by about 8–12% across its length with an ease in and an ease out**, so
+it arrives on the shoulder drop rather than passing through it. Rigid, exact, free, and re-triable
+without spending a generation.
+⚠️ **Nothing ships unmeasured** — `scripts/delivery-qc.sh` before anything leaves the machine
+([`delivery.md`](../../video-fx/delivery.md)).
+
+### 8b-fog · variant A8 — the high wide, the grid survives · **still** · written 2026-09-08, unrun
+
+**Jack picked the elevated very-wide, 2026-09-08.** The camera goes up and a long way back; the
+car park becomes a **grid of white lines running out into the fog** with three small shapes in the
+middle of it. This is the *"the grid survives"* option from the original alternates list, arriving
+by accident and turning out to be the best of them.
+
+**Two references, neither attached** — Jack's instruction is Characters only, no image:
+the elevated wide sets the **camera**, and the `8a` aerial sets the **car position and the tent
+colour** (mid-blue upper panels, grey-silver skirt, nose-in car in the bay immediately left of it,
+tail lights lit, yellow plate).
+
+#### 🔴 Two things this frame changes, from the cinematography file
+
+**1. [Principle 21](../../cinematography/principles.md) — the overhead is the narrator's
+position**, and it is exactly our narrator's gaze: detachment and dread rather than contempt.
+**But it carries a named cost: from above, an empty space collapses into geometry and pattern
+rather than absence** — it stops reading as *emptiness* and starts reading as *design*.
+
+🔑 **The fix is already in the frame and must not be lost: the two men are the scale reference.**
+[Principle 26](../../cinematography/principles.md) — a non-human subject has no legible size
+without a known-size object beside it. **One human figure visibly tiny against the grid is the
+single most load-bearing device available here.** Lose the figures and this becomes a wallpaper.
+
+**2. [Gate 2](../../cinematography/principles.md) — a monumental frame needs a visible cost.**
+This is a monumental composition: scale, symmetry, pattern. The cost is the seated man and his
+tent, and they are the reason the picture is an indictment and not an architectural render.
+**Both men must be legible as people, however small.**
+
+#### Anti-slop for this frame specifically
+
+The [toolkit's](../../google-flow/nano-banana-2.md#the-anti-slop-toolkit) four world-level
+counters are *environmental imperfection, mid-action, off-centre and not-quite-level, and a
+foreground occluder*. **Three of them have to work differently here:**
+
+| Counter | How it lands in this frame |
+|---|---|
+| **Environmental imperfection** | 🔑 **The ground carries it.** A car park this size is never uniform: patched tarmac in mismatched shades, a drain grating, lines faded in the worn lanes and freshly repainted elsewhere, water pooling in the low spots instead of evenly. **This is the single biggest anti-slop lever in a frame with nothing else in it** |
+| **Off-centre, not quite level** | the three shapes sit a little left of the centre line rather than dead on it |
+| **Foreground occluder** | not available — there is nothing left to put in front. **The nearest bay lines take the job**: hard-edged, bright and large at the bottom edge, running away |
+| **Mid-action** | at this scale, posture only — one figure upright, one low |
+
+⚠️ **Characters attached as instructed, and it is worth being honest about what they will do:
+nothing.** At this size a head is a few pixels; [§12](../../google-flow/nano-banana-2.md) — a
+Character binds to a face and there is no face here. They are attached because Jack asked and they
+cost nothing. **The identity that actually reads is colour and silhouette**, which is why the two
+wardrobe locks stay in the text even though a Character is cast — a deliberate, flagged departure
+from [§19](../../google-flow/nano-banana-2.md), taken because A5 proved that removing the colours
+loses the wardrobe and A6 proved that stating them holds it.
+
+```prompt
+A still photograph for a film. The job of this picture is to show how small the whole argument is: an empty car park the size of a field, and three things standing in the middle of it.
+
+Camera: a 35mm lens at f/8, raised about seven metres above the tarmac as if standing on the roof of a van, sixty metres back, tilted down just enough that the fog closes off the top third of the frame and the painted floor of the car park fills the rest. The framing sits a little left of true centre and is not quite level, the way a photographer holding a camera above their head in the rain would actually get it.
+
+Composition: the whole frame below the fog is an empty car park seen from above and behind, a grid of white painted bay lines running away from the camera and out to both edges, the lines large and hard-edged and bright with water at the bottom of the frame and growing finer and fainter as they go until they dissolve into the fog. Small in the middle distance and a little left of centre, three shapes and nothing else: a large black BMW coupe-SUV parked nose-in and facing away from the camera so that only its back is seen, filling one bay, with a long roofline sloping down into a short rear deck and slim split rear lights lit red, a small dark badge on the tailgate with no readable detail in it and a plain yellow rectangle below it with no readable detail either, the red of its lights smeared down onto the wet tarmac behind it. In the bay immediately to its right, a cheap two-person dome tent with bright mid-blue upper panels and a grey-silver skirt and door, its door facing the same way the car does, one corner sagging where a pole is bowed, a square of duct tape over a tear. Between the car and the tent, standing on the painted line, one upright figure.
+
+Action: the standing figure is a tall narrow man in a pale olive sleeveless quilted gilet over a dark navy top, mid-blue jeans and light tan shoes, bare-headed, standing still with his weight on one foot and his head turned down toward the tent. Sitting on the wet ground at the mouth of the tent, a much lower and wider shape: a man bundled inside several layers with his knees drawn up and his arms in close, in a pale sand-coloured oversized coat and a dark knitted cap, his head tilted up toward the standing man. Both are tiny in the frame, and it is the two of them that make the size of the car park readable at all.
+
+Location: the tarmac is old and uneven and has been repaired many times, so it runs in mismatched patches of grey and near-black with tar seams between them, one iron drain grating set into it, the paint worn thin to nothing where cars have driven the lanes and clean and bright where they have not. Rain has pooled in the low places and left the high places merely wet, so the reflections are broken up and unequal instead of one mirror. Thick cold fog fills the whole space: nothing is visible beyond about eighty metres, and behind and above the three shapes there is a flat unbroken wall of pale grey filling the frame from side to side. There is nothing in the fog and nothing beyond it: no other vehicles, no buildings, no shop front, no lamp posts, no trees, no fence, no other people, no horizon and no sky. The light comes down through the fog from an overcast winter sky, so it arrives from every direction at once and nothing casts a shadow. The car's rear lights are the only colour in the picture.
+
+Weather: it is raining hard, not drizzling. The rain is visible as fine streaks falling across the whole frame and as rings breaking the standing water.
+
+Style: a documentary press photograph on Kodak Portra 400 at ISO 1600, unretouched, fine grain in the shadows, muted cool-neutral colour and very low saturation. The black of the car is the darkest thing in the frame and the fog is the palest. The car is a working vehicle: rain-flecked, road film up the lower doors, dirt behind the wheel arches. The painted lines nearest the camera are sharp.
+
+Constraints: every surface in the picture is plain, with no writing, no signage, no logos and no readable markings of any kind anywhere. Fill the whole frame with the photograph, with no black bars, no letterbox borders and no white margin of any kind. 16:9.
+
+Thanks.
+```
+
+⬜ **The letterbox bars have now survived three runs of the same constraint.** Treat it as **Flow's
+own output framing until proven otherwise** and stop spending prompt words on it — one deliberate
+check would settle it.
+
+
+#### 🔴 The car has parked inside one bay for eight runs, and the clause has been wrong every time
+
+**Canon is explicit and it is the argument, not a detail.**
+[`assembly.md`](./assembly.md): *"8a — The X8 swinging in beside the tent, **across two bays**."*
+[`shot-list.md`](./shot-list.md): *"the rhyme is the painted line: **one man inside one bay, one
+car across two**."* A man is allowed one bay; the car takes two and nobody stops it. **If the car
+parks neatly, the picture loses its joke and its indictment in the same stroke.**
+
+**Every prompt in this file has said the same thing:** *"parked nose-in across the painted line
+between two bays and filling both."* **Eight runs, eight neatly parked cars.** That is not bad
+luck — it is [§18](../../google-flow/nano-banana-2.md) again, in its third costume:
+
+> *stating a constraint does not bind; stating its physical consequence does.*
+
+**"Across two bays" is a rule about parking.** The engine has an enormous trained prior for *car
+in a parking bay* and a vanishing one for *car straddling a line*, so it renders the prior and
+drops the clause. 🔑 **The fix is to stop describing the parking and describe the LINE:**
+
+- the painted line **runs underneath the car**, disappearing at its front and reappearing behind it
+- the car's body is **centred on the line**, not between two of them
+- **the wheels on one side are in one bay and the wheels on the other side are in the next**
+- the two bays it occupies are **the only ones a car could not park in**
+
+All four are things a picture contains. None of them is an instruction about behaviour.
+
+⚠️ **One change only this round.** The rest of A8 is reproduced word for word so the variable is
+known. **The tent is the next candidate** — it came back a bright saturated blue where canon says
+*faded blue and grey*, and it is now the loudest thing in a frame whose whole point is that
+nothing is loud. Left alone deliberately until the car is settled.
+
+⬜ **If the line still will not run under the car, the fallback is an angle, not a longer
+sentence:** park it **twenty degrees off the bay lines** so it cuts across them diagonally. A
+diagonal car in a rectilinear grid is unmistakable at any size, the engine has a prior for it
+(*badly parked car*), and it makes the same point — arguably harder. It is a departure from the
+`8a` aerial, so it is Jack's call, not a silent substitution.
+
+### 8b-fog · variant A9 — the car takes two bays · **still** · written 2026-09-08, unrun
+
+```prompt
+A still photograph for a film. The job of this picture is to show how small the whole argument is: an empty car park the size of a field, and three things standing in the middle of it.
+
+Camera: a 35mm lens at f/8, raised about seven metres above the tarmac as if standing on the roof of a van, sixty metres back, tilted down just enough that the fog closes off the top third of the frame and the painted floor of the car park fills the rest. The framing sits a little left of true centre and is not quite level, the way a photographer holding a camera above their head in the rain would actually get it.
+
+Composition: the whole frame below the fog is an empty car park seen from above and behind, a grid of white painted bay lines running away from the camera and out to both edges, the lines large and hard-edged and bright with water at the bottom of the frame and growing finer and fainter as they go until they dissolve into the fog. Small in the middle distance and a little left of centre, three shapes and nothing else.
+
+The first is a large black BMW coupe-SUV, seen from directly behind, with a long roofline sloping down into a short rear deck and slim split rear lights lit red, a small dark badge on the tailgate with no readable detail in it and a plain yellow rectangle below it with no readable detail either, the red of its lights smeared down onto the wet tarmac behind it. One of the white painted bay lines runs directly underneath this car: the line comes up the tarmac toward the camera, disappears beneath the middle of the car at its rear bumper, and reappears from under its nose on the far side. The car's body is centred on that line rather than between two lines, so its left wheels stand in one bay and its right wheels stand in the next one, and the two bays it is sitting in are the only two in the whole car park that another car could not use.
+
+The second is a cheap two-person dome tent with faded mid-blue upper panels and a worn grey-silver skirt and door, pitched inside a single bay two bays to the right of the car and squarely between that bay's two painted lines, its door facing the same way the car does, one corner sagging where a pole is bowed, a square of duct tape over a tear, old dirt along its skirt.
+
+The third is a man standing upright on the tarmac between them.
+
+Action: the standing man is tall and narrow, in a pale olive sleeveless quilted gilet over a dark navy top, mid-blue jeans and light tan shoes, bare-headed, standing still with his weight on one foot and his head turned down toward the tent. Sitting on the wet ground at the mouth of the tent, a much lower and wider shape: a man bundled inside several layers with his knees drawn up and his arms in close, in a pale sand-coloured oversized coat and a dark knitted cap, his head tilted up toward the standing man. Both are tiny in the frame, and it is the two of them that make the size of the car park readable at all.
+
+Location: the tarmac is old and uneven and has been repaired many times, so it runs in mismatched patches of grey and near-black with tar seams between them, one iron drain grating set into it, the paint worn thin to nothing where cars have driven the lanes and clean and bright where they have not. Rain has pooled in the low places and left the high places merely wet, so the reflections are broken up and unequal instead of one mirror. Thick cold fog fills the whole space: nothing is visible beyond about eighty metres, and behind and above the three shapes there is a flat unbroken wall of pale grey filling the frame from side to side. There is nothing in the fog and nothing beyond it: no other vehicles, no buildings, no shop front, no lamp posts, no trees, no fence, no other people, no horizon and no sky. The light comes down through the fog from an overcast winter sky, so it arrives from every direction at once and nothing casts a shadow. The car's rear lights are the only colour in the picture.
+
+Weather: it is raining hard, not drizzling. The rain is visible as fine streaks falling across the whole frame and as rings breaking the standing water.
+
+Style: a documentary press photograph on Kodak Portra 400 at ISO 1600, unretouched, fine grain in the shadows, muted cool-neutral colour and very low saturation. The black of the car is the darkest thing in the frame and the fog is the palest. The car is a working vehicle: rain-flecked, road film up the lower doors, dirt behind the wheel arches. The painted lines nearest the camera are sharp.
+
+Constraints: every surface in the picture is plain, with no writing, no signage, no logos and no readable markings of any kind anywhere. Fill the whole frame with the photograph, with no black bars, no letterbox borders and no white margin of any kind. 16:9.
+
+Thanks.
+```
+
+🔑 **Third confirmation of the same rule, and it is now the most reliable habit in this file:**
+*"no face can be made out"* became **the crown of his skull faces the lens**; *"no badge"* became
+**a small dark mark with no readable detail**; *"parked across two bays"* becomes **the line runs
+under the car and out the other side**. **Describe the picture, never the rule.**
+
+#### A9 ran — the register holds, and six faults came back. Four are known findings firing again
+
+**What landed, and must not be touched.** The tarmac is the win: mismatched patched greys, tar
+seams, a real iron drain grating, paint worn thin in the driven lanes and bright where it is not,
+water pooled unequally instead of one mirror. **That clause is the single biggest anti-slop lever
+in a frame with nothing else in it and it delivered exactly as designed.** The fog erasure is
+total, the void is complete, the badge came back unreadable ([§27](../../google-flow/nano-banana-2.md)
+worked), and the wardrobe held again on colour and silhouette alone.
+
+⬜ **And one accidental improvement worth keeping: the men came back bigger than "tiny".** They
+are legible as two people at a glance. [Gate 2](../../cinematography/principles.md) wants exactly
+that — a monumental frame needs a visible cost, and the cost has to be readable. **Do not ask for
+them smaller.** The clause *"both are tiny in the frame"* is dropped in A10 for this reason.
+
+| # | Fault | Cause | Fix in A10 |
+|---|---|---|---|
+| 1 | 🔴 **The camera is nowhere near seven metres up** — it reads about two to three, and the tilt is barely there | [§28](../../google-flow/nano-banana-2.md), **second confirmation**: a stated camera elevation is consistently under-delivered in both height and tilt. 🔑 **And this prompt sabotaged its own number** — *"as if standing on the roof of a van"* describes a vantage of about **two and a half metres**, which is precisely what came back. The analogy overruled the figure | Delete the number *and* the van. **Describe what a high camera sees**: the car's roof panel as a flat shape, the tent dome as a full oval, the men seen from above their heads with shoulders wider than feet |
+| 2 | 🔴 **Dead-centre one-point perspective, perfectly level** — the vanishing point sits on the centre line and the grid fans out symmetrically | *"a little left of true centre and not quite level"* is an **adjective**, and this is the fourth run to prove adjectives do not bind. Symmetry is [the named slop tell](../../google-flow/nano-banana-2.md#the-anti-slop-toolkit) and the model's resting state | **Turn the camera off-square to the bays.** Two-point perspective is a geometric fact the engine must honour to draw the floor at all: lines running diagonally, a vanishing point stated as sitting to the right |
+| 3 | 🔴 **The tent is the brightest and most saturated object in the picture** — a vivid stock-photo blue that beats the rear lights outright | The prompt contained a straight contradiction: *"faded mid-blue"* + *"very low saturation"* + *"the car's rear lights are the only colour."* Given an unresolvable brief the engine picks its strongest prior, and its prior for "dome tent" is a bright blue one | State it **comparatively and physically**: the blue has weathered chalky until it is closer to grey than blue, and the red of the lights is the most saturated thing in the frame *by a wide margin* |
+| 4 | 🔴 **No rain in the air at all** — the ground is wet, nothing is falling | 🔑 **The physics does not close, so the engine closed it.** [§20](../../google-flow/nano-banana-2.md): a weather instruction is a physics claim. Rain is only legible against something darker than it is, and this frame is a pale grey wall from edge to edge. Confirmed against the photography literature — backlighting or a dark background is the *only* way rain reads, and against a bright even sky there is no separation to see. Same shape as [§17](../../google-flow/nano-banana-2.md) (light streaks need lights) | **Give the rain the only dark thing in the frame.** Streaks legible where they cross the black flank and roof of the car and the black patches of wet tarmac; rings and bounce-spray on the standing water; and say plainly that against the fog it disappears into the grey |
+| 5 | 🔴 **Letterbox bars, third run running** | **This is [§27](../../google-flow/nano-banana-2.md) and we did not see it.** *"no black bars, no letterbox borders and no white margin of any kind"* is **an absence**, and an absence comes back inverted. Three requests, three mattes. 🔑 **And the prompt cued the matte in its own first five words** — *"A still photograph **for a film**"*, plus *"documentary press photograph"* and *"16:9"*, is a cinematic-still brief, and a cinematic still has bars | **Delete the negation entirely and delete *"for a film"*.** Stop asking for the absence and stop commissioning the thing. Set the ratio with Flow's own landscape toggle, not with prose |
+| 6 | ⚠️ **The car is parked neatly inside one bay** — the whole point of A9 was lost | [§21](../../google-flow/nano-banana-2.md) — a multi-part change to one object loses. The straddle was **four dependent clauses** (line comes up, disappears at the bumper, reappears at the nose, body centred on the line) describing a relationship that is nearly invisible from directly behind anyway | **Take the fallback this file already wrote.** See the ruling below |
+
+#### 🔴 One thing in A10 is Jack's call, not a silent substitution: the car is now parked at an angle
+
+The A8 entry pre-authorised this exactly — *"if the line still will not run under the car, the
+fallback is an angle, not a longer sentence: park it twenty degrees off the bay lines so it cuts
+across them diagonally."* The line has now failed once, so the fallback is live. **A diagonal car
+in a rectilinear grid is unmistakable at any size, the engine has a strong prior for it (*badly
+parked car*), and it makes the same point harder.** It also kills fault 2 for free.
+
+⚠️ **The cost, stated:** it is a departure from the `8a` aerial, where the car is nose-in and
+square. **To swap back**, replace the angle sentence with A9's straddle paragraph and lose nothing
+else.
+
+⚠️ **A10 bundles six changes, deliberately, against the one-change-at-a-time rule.** Five of them
+are mechanical faults with independent, evidenced fixes and running them singly costs five rounds.
+**The one genuinely unproven change is the oblique camera** (fault 2) — if A10 comes back worse
+rather than differently wrong, that is the clause to revert first.
+
+### 8b-fog · variant A10 — the high oblique · **still** · written 2026-09-08, unrun
+
+🔑 **Nothing attached. Set the aspect ratio with Flow's landscape toggle — the prompt no longer
+asks for it, on purpose.** Paste the block below into the **prompt box on Flow's image surface**:
+
+```prompt
+A still photograph. The job of this picture is to show how small the whole argument is: an empty car park the size of a field, and three things standing in the middle of it.
+
+Camera: a 35mm lens at f/8, looking down from a hydraulic access platform raised high above the tarmac, about sixty metres back from the three shapes. It is high enough that everything is seen substantially from above: the whole roof panel and rear window of the car read as flat shapes, the dome of the tent is a full rounded oval rather than a hump on the horizon, and the two men are seen from above the level of their heads, so that their shoulders are the widest part of them and their feet sit almost directly beneath. The painted floor of the car park fills the whole frame below the top quarter, and the fog closes off that top quarter.
+
+Composition: the camera is turned so that it is not square to the parking bays. The white painted bay lines run away diagonally across the frame instead of straight back toward the camera, converging on a vanishing point well over toward the right-hand side, and a second set of painted lines crosses them at an angle, so the floor reads as an oblique grid rather than a symmetrical fan. The lines are large and hard-edged and bright with standing water at the bottom left of the frame, and grow finer and fainter as they run back until they dissolve. The three shapes sit together in the middle distance, below and to the left of the centre of the frame, with clear empty tarmac between each of them.
+
+The first is a large black BMW coupe-SUV, seen from above and behind: a long roofline sloping down into a short rear deck, slim split rear lights lit red, a small dark badge on the tailgate with no readable detail in it and a plain yellow rectangle below it with no readable detail either, and the red of its lights laid down onto the wet tarmac behind it. It has been left at an angle of about twenty degrees to the painted lines, so that its body cuts across them diagonally rather than lying along them: its nose sits inside one bay and its tail swings out over the line into the next, and the painted lines run underneath it and out the other side. It is the only thing in the whole car park that is not square to the grid.
+
+The second is a cheap two-person dome tent, pitched squarely inside a single bay and lying neatly along that bay's painted lines the way the car does not, two bays further to the right of the car. Its upper panels are a blue that has weathered chalky and pale until it is closer to grey than to blue, and its skirt and door are a dirty worn grey-silver. One corner sags where a pole is bowed, a square of duct tape covers a tear, and old dirt runs along its skirt.
+
+The third is a man standing upright on the tarmac between the two.
+
+Action: the standing man is tall and narrow, in a pale olive sleeveless quilted gilet over a dark navy top, mid-blue jeans and light tan shoes, bare-headed, standing still with his weight on one foot and his head turned down toward the tent. Sitting on the wet ground at the mouth of the tent, a much lower and wider shape: a man bundled inside several layers with his knees drawn up and his arms in close, in a pale sand-coloured oversized coat and a dark knitted cap, his head tilted up toward the standing man. It is the two of them that make the size of the car park readable at all.
+
+Location: the tarmac is old and uneven and has been repaired many times, so it runs in mismatched patches of grey and near-black with tar seams between them, one iron drain grating set into it, the paint worn thin to nothing where cars have driven the lanes and clean and bright where they have not. Rain has pooled in the low places and left the high places merely wet, so the reflections are broken up and unequal instead of one mirror. Thick cold fog fills the whole space: nothing is visible beyond about eighty metres, and behind and above the three shapes there is a flat unbroken wall of pale grey filling the frame from side to side. There is nothing in the fog and nothing beyond it: no other vehicles, no buildings, no shop front, no lamp posts, no trees, no fence, no other people, no horizon and no sky. The light comes down through the fog from an overcast winter sky, so it arrives from every direction at once and nothing casts a shadow.
+
+Colour: the red of the car's rear lights is the most saturated thing in the picture by a wide margin, and the wet red smear it lays on the tarmac is the second. Every other colour in the frame — the tent, both men's clothes, the tarmac, the fog — is muted, chalky and close to grey.
+
+Weather: it is raining hard. The rain is legible only where it has something dark to fall against: fine bright streaks crossing the black flank and roof of the car and crossing the near-black patches of wet tarmac, rings breaking every pool of standing water, and a fine spray bouncing back up off the ground. Where it falls against the pale fog it simply disappears into the grey.
+
+Style: a documentary press photograph on Kodak Portra 400 at ISO 1600, unretouched, fine grain in the shadows, muted cool-neutral colour and very low saturation. The black of the car is the darkest thing in the frame and the fog is the palest. The car is a working vehicle: rain-flecked, road film up the lower doors, dirt behind the wheel arches. The painted lines nearest the camera are sharp.
+
+Constraints: every surface in the picture is plain, with no writing, no signage, no logos and no readable markings of any kind anywhere.
+
+Thanks.
+```
+
+### 🔴 Step back — A9 is a good picture of the wrong subject
+
+**A10 fixes six mechanical faults in a frame whose subject is already wrong.** Worth saying
+plainly before anyone spends another generation on it.
+
+**Jack's brief, at the top of this section:** *"films pause on only one aspect, **the important
+parts**, everything else disappears, like we are in the characters' aetherial subconscious."*
+
+**The important parts are the two men.** A9 is 95% car park floor and about 2% men. The device was
+*everything else disappears* — and the car park is the most present, most detailed, most lovingly
+elaborated thing in the frame. **The erasure is fighting the composition:** every painted line
+rendered is the car park refusing to go, and A9's sixty-word tarmac clause is us helping it stay.
+
+⚠️ **This is a repeat of a lesson the house already paid for.**
+[`symptoms.md`](../../cinematography/symptoms.md): *"The empty room isn't creepy, it's just empty —
+shot too wide or too high; from a distance human proportions stop being legible and it reads as
+geometry. **This is exactly what we found the hard way on the GPOM `vantage` cut.**"* The A8 entry
+quoted [principle 21](../../cinematography/principles.md)'s warning — *from above, an empty space
+collapses into geometry and pattern rather than absence* — and then walked into it anyway.
+
+**And the staging is a diagram, not a photograph.** Car left, man centre, tent right, all
+equidistant, all the same size, on one lateral line. That is an *illustration of a concept*.
+[`symptoms.md`](../../cinematography/symptoms.md) has both halves of it: *"I don't know where to
+look — everything at the same visual weight"* and *"scale contrast is stated rather than
+composed."*
+
+⬜ **Not a case for scrapping the elevated wide.** It is a real frame and it may well earn a place
+in the film as the *establisher* — the car park as a field, before we care about anyone. **It is
+just not 8b.** Keep A9/A10 as `8a-alt`, and let 8b be about the men.
+
+### 8b-fog · variant A11 — two erasures meeting on the subject · **still** · written 2026-09-08, unrun
+
+🔑 **The idea worth keeping from this whole run.** Jack asked for *everything else disappears*, and
+so far we have used exactly one device to do it: fog, which only erases what is **far**. **Add the
+second: a long lens wide open erases what is near.** Fog takes the world behind them, focus takes
+the ground in front of them, and the two erasures **meet on the two men**, who become the only
+solid objects in existence. That is Jack's *"pause on only the important parts"* rendered
+optically as well as atmospherically — and it is a stronger read of the brief than either the
+18m two-shot or the 60m wide.
+
+**And the physics closes** — which by [§32](../../google-flow/nano-banana-2.md) is the thing to
+check before writing any effect. A 135mm at f/2.8 focused fourteen metres out throws ground at
+five or six metres into genuine blur while holding all three shapes, which sit within a couple of
+metres of each other. Variant C tried shallow focus at ground level and had to delete the whole
+car park to make room for it; from up here the blur is free.
+
+#### The gates
+
+1. **Job:** the frame where the world stops existing and two men are left in it. `8b` says *two
+   men, three metres apart, in a car park.* A9 says *look how big the car park is.* **This says
+   there is no car park** — only the paint under their feet, and the two of them.
+2. **Visible cost:** Bob is now the **nearest, largest and only sharp-focused** thing in the
+   picture. In A9 he was a fleck. [Gate 2](../../cinematography/principles.md) is not satisfied by
+   a cost being technically present.
+3. **Light:** overcast through fog, omnidirectional, shadowless — with one motivated exception,
+   the car's own rear lights. 🔑 **Tarquin's machine is the only thing in the frame making light,
+   and Bob has none.**
+
+#### The three design changes under it
+
+| Change | Why |
+|---|---|
+| 🔑 **Staged in depth, not across the frame** — Bob nearest and lowest, Tarquin standing beyond him, the car furthest and receding | Kills the diagram. The eye now arrives **cost first, then the man, then the machine**, which is the argument in order. [Principle 5](../../cinematography/principles.md) — the composition steps instead of listing |
+| **The camera is high but CLOSE** | [Principle 21](../../cinematography/principles.md)'s overhead is the narrator's position and it is exactly Jack's *"aetherial subconscious"* — but it *"must earn scale separately."* Close keeps the people legible; the grid running away behind them keeps the scale |
+| ⚠️ **The tarmac clause is cut from sixty words to twelve** | Google's own guidance: *"a focused short prompt can beat a long prompt with competing styles or viewpoints."* A9 ran to seven hundred words and the longest, most vivid passage in it described **the thing we are trying to erase.** Enough imperfection to beat slop, no more |
+
+⚠️ **The car stays at twenty degrees across the bays** (the A8 fallback, taken in A10) — still
+Jack's call, still a departure from the `8a` aerial. Swap back by restoring A9's straddle paragraph.
+
+Nothing attached. **Set 16:9 with Flow's landscape toggle — the prompt does not ask for it, on
+purpose ([§31](../../google-flow/nano-banana-2.md)).** Paste the block below into the **prompt box
+on Flow's image surface**:
+
+```prompt
+Generate a still photograph. The job of this picture is to leave two men and the two things they own as the only solid objects in the world, with everything nearer than them and everything further than them dissolved away.
+
+Camera: a 135mm lens wide open at f/2.8, about fourteen metres back and raised well above the men so the camera looks down on them at a shallow angle. It is high enough that the tops of their heads and shoulders are seen, the dome of the tent reads as a full rounded oval rather than a hump, and part of the car's roof panel is visible as a flat shape. The wet ground fills the entire frame from edge to edge: there is no horizon and no sky anywhere in the picture. The camera is turned so it is not square to the parking bays, and the painted lines run away diagonally across the frame rather than straight back.
+
+Focus: the plane of focus falls exactly on the seated man. He, the standing man, the tent and the car are all sharp. The wet tarmac in the near third of the frame, closest to the camera, is thrown completely out of focus, so that the painted lines crossing it are soft bands of white with no edges and the rain rings on the standing water are soft discs.
+
+Composition: the three shapes are staged one behind the other going away from the camera, not side by side. Nearest and lowest, on the right, a man sitting on the wet ground at the mouth of a cheap two-person dome tent, seen from above and close enough to be the largest thing in the frame. Beyond him and to the left, a second man standing upright on the tarmac, smaller. Further away again and further left, a large black car parked at an angle across the painted lines. Clear empty tarmac lies between all three.
+
+Action: the seated man is bundled inside several layers with his knees drawn up and his arms held in close, in a pale sand-coloured oversized coat and a dark knitted cap, one hand pressed to the wet ground as he pushes himself straighter, his head tilted up toward the standing man. The standing man is tall and narrow, in a pale olive sleeveless quilted gilet over a dark navy top, mid-blue jeans and light tan shoes, bare-headed, his weight on one foot and his head turned down toward the seated man. Neither is posed; both are caught mid-movement.
+
+The tent is pitched squarely inside one bay and lies neatly along that bay's painted lines. Its upper panels are a blue that has weathered chalky and pale until it is closer to grey than to blue, its skirt and door a dirty worn grey-silver; one corner sags where a pole is bowed and a square of duct tape covers a tear.
+
+The car is a large black BMW coupe-SUV with a long roofline sloping into a short rear deck and slim split rear lights lit red, a small dark badge on the tailgate with no readable detail in it. It has been left at about twenty degrees to the painted lines so its body cuts across them diagonally, its nose in one bay and its tail swung out over the line into the next, and it is the only thing in the picture that is not square to the grid.
+
+Location: old patched tarmac in mismatched shades of grey with tar seams between them, water pooled unevenly in the low places. Thick cold fog fills everything: a short way past the car the painted lines pale out into flat grey and stop, and there is nothing beyond them at all — no other vehicles, no buildings, no shop front, no lamp posts, no trees, no fence, no other people. The light comes down through the fog from an overcast winter sky so it arrives from every direction at once, and nothing casts a shadow.
+
+Colour: the red of the car's rear lights is the most saturated thing in the picture by a wide margin, and the wet red it lays on the tarmac behind it is the second. Every other colour — the tent, both men's clothes, the ground, the fog — is muted, chalky and close to grey.
+
+Weather: it is raining hard. The rain is legible only where it has something dark to fall against: fine bright streaks crossing the black of the car and the dark layers both men are wearing, and rings breaking every pool of standing water. Where it falls against the pale fog it disappears into the grey.
+
+Style: a documentary press photograph on Kodak Portra 400 at ISO 1600, unretouched, natural skin texture, fine grain in the shadows, muted cool-neutral colour and very low saturation. The black of the car is the darkest thing in the frame and the fog is the palest. The car is a working vehicle: rain-flecked, road film up the lower doors, dirt behind the wheel arches.
+
+Constraints: every surface in the picture is plain, with no writing, no signage, no logos and no readable markings of any kind anywhere.
+
+Thanks.
+```
+
+### 8b-fog · variant A12 — written clean · **still** · written 2026-09-08, unrun
+
+**Jack, 2026-09-08: *"make the prompt forget everything else."*** Taken as: rebuild it from
+nothing, keep only what is evidenced, and let the erasure win. **A9 ran to seven hundred words and
+its longest, most loving passage described the car park — the thing the shot exists to delete.**
+A12 is **430**, and every clause that survived had to earn it.
+
+#### What the web pass changed, and the one place it contradicts us
+
+Two fresh sources, September 2026. Both independently confirm findings this file arrived at the
+hard way, which is worth noting as corroboration rather than news:
+
+| Finding | Source | What it changes here |
+|---|---|---|
+| 🔑 **"Adjectives do not render."** Replace them with visual facts | [fal, Nano Banana Pro guide](https://fal.ai/learn/tools/nano-banana-pro-prompting-guide) `[community]` | **Independent confirmation of [§30](../../google-flow/nano-banana-2.md) and [§33](../../google-flow/nano-banana-2.md).** *"slightly off-centre"*, *"not quite level"*, *"faded"*, *"very low saturation"* are adjectives, and all four have now failed on this shot. **Every one is replaced by a placement or a comparison** |
+| **Pro reasons about composition before it paints, and *"the more it knows about the job, the sharper its planning step gets"*** | fal `[community]` | The job sentence at the top is not decoration — it feeds the planning pass. Keep it, make it concrete |
+| ✅ **Negatives work as a scoped constraint block, not as floating absences** — *"no other props, no hands, no visible brand logos, no harsh specular hotspots on the metal"* | fal `[community]` | Squares with [§27](../../google-flow/nano-banana-2.md)/[§31](../../google-flow/nano-banana-2.md): an absence fails as a *subject*, works as a terminal constraint attached to named things. A9's markings constraint did work. **Kept, in the last slot, and nowhere else** |
+| ⚠️ **"One or two imperfection words per prompt. Three max. Over-correction makes images look intentionally degraded"** | [usetoolai](https://usetoolai.com/blog/how-to-create-ai-images-that-dont-look-like-ai-2026) `[community]` | 🔴 **This contradicts our own measured finding** that A9's tarmac clause was the single biggest anti-slop lever in the frame — and it demonstrably was. **Not adopted wholesale.** A9 stacked twelve-plus imperfections; A12 carries four. Middle taken deliberately, and the claim is logged as `[community]`, unverified against our own work |
+| **AI images give themselves away by being too clean, too evenly lit, too symmetrical, too composed** | usetoolai `[community]` | Nothing new — it is [the toolkit](../../google-flow/nano-banana-2.md#the-anti-slop-toolkit) restated |
+
+🔴 **One piece of their advice is on our never-cite list and is NOT used:** both slop guides
+recommend prompting for *"rule of thirds"*.
+[`evidence.md`](../../cinematography/evidence.md) grades the rule of thirds as perception **myth**
+— no supporting study, and the eye's measured priority is motion, faces, and lines that lead to a
+subject. **We compose to that instead**, which is why the bay lines in A12 converge on a person
+rather than on an empty vanishing point, as they did in A9.
+
+#### What the cinematography file put in the frame
+
+Four devices from [`frame.md`](../../cinematography/frame.md), none of which were in any earlier variant:
+
+- 🔑 **Status cues, deliberately inverted.** *"Closer to camera, larger in frame reads dominant;
+  smaller, further, turned away reads subordinate."* So **Bob is nearest and largest and Tarquin
+  is smaller and further** — the composition gives Bob the standing the world does not, and the
+  argument is made in geometry before a caption exists. This is the whole shot.
+- **Short-siding.** *"Subject near the edge looking away from the open space signals isolation and
+  unease."* Bob sits hard to the right with the entire empty half of the car park opening away to
+  his left. It manufactures the isolation and the negative space in one move.
+- **Leading lines that arrive somewhere.** Measured: viewers fixate longer when a line leads to a
+  clear subject than when it leads to nothing. A9's lines converged on empty tarmac. **A12's
+  converge on Bob.**
+- **Centrifugal, not centripetal.** One blurred painted line runs out through the bottom edge, so
+  the frame implies a world past itself instead of reading as a diorama.
+
+⚠️ **The "not quite level" ask is deleted rather than rewritten** — four failures, and shot-craft's
+rule is that the fix which works most often is *removing* a clause. The oblique grid carries the
+asymmetry on its own.
+
+Nothing attached. **Model: Nano Banana Pro. Set 16:9 with Flow's landscape toggle — the prompt
+does not ask for a ratio, on purpose ([§31](../../google-flow/nano-banana-2.md)).** Paste the block
+below into the **prompt box on Flow's image surface**:
+
+```prompt
+Generate a still photograph. The job of this picture: two men and the two things they own are the only solid objects left in the world. Everything nearer than them and everything further than them has dissolved away.
+
+Staging — three shapes on wet tarmac, arranged one behind the other going away from the camera, never side by side. Nearest, largest, and sitting close to the right-hand edge of the frame: a man on the ground at the mouth of a small dome tent, knees drawn up, one bare hand pressed to the wet ground as he pushes himself straighter, head tilted up. He wears a sand-coloured oversized coat and a dark knitted cap. Behind him and to the left, clearly smaller: a man standing, tall and narrow, in a pale olive quilted gilet over a dark navy top, mid-blue jeans and light tan shoes, bare-headed, his weight on one foot and his head turned down toward the seated man. Furthest away and smallest of the three: a large black BMW coupe-SUV with slim rear lights lit red, left at about twenty degrees across the painted bay lines so that its body cuts diagonally over them while the tent and the lines lie square. The entire left half of the frame is empty wet tarmac opening away from the seated man into nothing.
+
+Camera: a 135mm lens at f/2.8, fourteen metres back, raised high enough to look down on all three — the tops of both men's heads and shoulders are visible, the tent reads as a full rounded oval rather than a hump, and part of the car's roof panel shows as a flat shape. The camera is turned off-square to the parking bays, so the white painted lines run away diagonally across the frame and converge on the seated man.
+
+Focus: the plane of focus falls on the seated man. He, the standing man, the tent and the car are all sharp. The tarmac in the nearest third of the frame is thrown completely out of focus, so the painted lines crossing it are soft white bands with no edges and the rain rings on the standing water are soft discs. One of those blurred lines runs out through the bottom edge of the frame.
+
+Setting: thick cold fog. A short way past the car the painted lines pale out into flat grey and stop. There is no horizon and no sky anywhere in the picture.
+
+Light: overcast daylight coming down through the fog from above, arriving from every direction at once, so nothing casts a shadow. The car's rear lights are the only thing in the frame making light of its own.
+
+Colour: cool and close to grey throughout. The red of the car's rear lights, and the wet red it lays on the tarmac behind it, is the most saturated thing in the picture by a wide margin; nothing else comes near it. The tent's blue has weathered chalky until it is nearer grey than blue.
+
+Weather: hard rain, legible only where it has something dark to fall against — fine bright streaks crossing the black of the car and the dark layers both men are wearing, and rings breaking every pool of standing water. Where it falls against the pale fog it disappears into the grey.
+
+Style: an unretouched documentary press photograph on Kodak Portra 400 at ISO 1600. Natural skin texture. Fine film grain living in the shadows. The black of the car is the darkest thing in the frame and the fog is the palest.
+
+Wear: the tarmac is patched in mismatched greys with water pooled unevenly in the low places; one corner of the tent sags where a pole is bowed; the car is rain-flecked with road film up its lower doors.
+
+Constraints: no writing, no signage and no logos on any surface anywhere in the picture. No other vehicles, no buildings, no shop fronts, no lamp posts, no trees, no fences and no other people, either in the frame or in the fog.
+
+Thanks.
+```
+
+#### 🔴 Correction, 2026-09-08 (Jack): A12 should cast the Characters, and I had inherited the wrong default
+
+**A12 was written prose-only, carrying "nothing attached" forward from A5–A9. That reasoning does
+not survive A12's own geometry.** *"Nothing attached"* was correct for the forty- and sixty-metre
+variants for one reason only — [§12](../../google-flow/nano-banana-2.md), **a Character binds to a
+face, and at that distance there is no face to bind to.** A12 puts Bob **nearest, largest and in
+the plane of focus at fourteen metres.** That is the biggest, sharpest face in any variant of this
+shot, and it is exactly the condition §12 requires.
+
+**So A12 is the first frame since A4 where casting actually does something — and the version below
+is the one to run.**
+
+⚠️ **And the prose-only A12 carries the `8c(i)` bug in it.** *"a sand-coloured oversized coat and a
+dark knitted cap"*, *"a pale olive quilted gilet over a dark navy top"* —
+[§19](../../google-flow/nano-banana-2.md): with a Character cast, appearance prose **competes with
+the attachment and the prose wins.** `@Tarquin-new` exists for precisely this reason: across four
+rounds of `8b(i)`, describing the outfit returned an olive **leather bomber over a printed graphic
+tee** every time. **The gilet has to live in the Character's Body, not in a sentence.** Every
+appearance clause is deleted below.
+
+⬜ **No contradiction with A6, though it looks like one.** A5 losing the wardrobe and A6 holding it
+by naming the colours were both **prose-only at forty metres, with no Character attached** — in
+that regime the words are the only lever there is. With `@Tarquin-new` cast the wardrobe has a
+better home. Different regime, not a reversal.
+
+| | Attach | Reason |
+|---|---|---|
+| **Slot 1** | `@Bob` | 🔑 **Changed from A4's order, deliberately.** [§4](../../google-flow/nano-banana-2.md) — what must survive goes in the earliest slot, and in A12 Bob is the focal point, the nearest shape and the largest face. A4 put Tarquin first because A4's Tarquin was the prominent one |
+| **Slot 2** | `@Tarquin-new` | The leisure Character. **Not `@Tarquin`** — the gilet is in this one's Body |
+| **Nothing else** | — | No location reference. The reference *is* the car park and the car park is what we are deleting |
+
+✅ **[§26](../../google-flow/nano-banana-2.md)'s condition is met** — the one arrangement believed
+to carry two Characters in one still is each anchored to a named side. A12 stages in depth, but it
+also keeps canon's sides: **Bob right, Tarquin left.** Both are stated in the text below.
+
+🔴 **One flag that gets worse in this frame, not better.** The
+[2026-08-29 ruling](#12a--the-first-frame-of-the-vault) accepted that **`@Bob` is not the Bob of
+the accepted `8c(i)` frame** — the best face in the film — and that we cast the existing Character
+and take the break. **A12 makes Bob the largest face in the shot**, so that break is more visible
+here than anywhere it has been ruled on before. Worth knowing before the credit is spent; the
+ruling stands until Jack changes it.
+
+### 8b-fog · variant A12-cast — the running version · **still** · written 2026-09-08, unrun
+
+**Model: Nano Banana Pro. Attach `@Bob` first, `@Tarquin-new` second, no location reference. Set
+16:9 with Flow's landscape toggle.** Paste the block below into the **prompt box on Flow's image
+surface**:
+
+```prompt
+Generate a still photograph. The job of this picture: two men and the two things they own are the only solid objects left in the world. Everything nearer than them and everything further than them has dissolved away.
+
+Staging — three shapes on wet tarmac, arranged one behind the other going away from the camera, never side by side. Nearest, largest, and sitting close to the right-hand edge of the frame: the man from the first character reference, on the ground at the mouth of a small dome tent. He sits slightly hunched with his knees drawn up and one bare hand flat on the wet ground beside him, taking a little of his weight as he pushes himself straighter. His head is turned up toward the standing man, his brows level, his mouth closed, his eyes steady and unhurried. He is not startled and he is not posed, and his face is doing almost nothing.
+
+Behind him and to the left of the frame, standing on the tarmac and clearly smaller: the man from the second character reference. He has stopped mid-stride with his weight not yet settled and one hand loose at his side. His chin is slightly up, his brows relaxed, his mouth flat and closed, and his eyes are aimed down at the seated man. His face is doing almost nothing either. Neither man is aware of the camera, and rain is running off both of them.
+
+Furthest away and smallest of the three: a large black BMW coupe-SUV with slim rear lights lit red, left at about twenty degrees across the painted bay lines so that its body cuts diagonally over them while the tent and the lines lie square. The entire left half of the frame is empty wet tarmac opening away from the seated man into nothing.
+
+Camera: a 135mm lens at f/2.8, fourteen metres back, raised high enough to look down on all three — the tops of both men's heads and shoulders are visible, the tent reads as a full rounded oval rather than a hump, and part of the car's roof panel shows as a flat shape. The camera is turned off-square to the parking bays, so the white painted lines run away diagonally across the frame and converge on the seated man.
+
+Focus: the plane of focus falls on the seated man's face. He, the standing man, the tent and the car are all sharp. The tarmac in the nearest third of the frame is thrown completely out of focus, so the painted lines crossing it are soft white bands with no edges and the rain rings on the standing water are soft discs. One of those blurred lines runs out through the bottom edge of the frame.
+
+Setting: thick cold fog. A short way past the car the painted lines pale out into flat grey and stop. There is no horizon and no sky anywhere in the picture.
+
+Light: overcast daylight coming down through the fog from above, arriving from every direction at once, so nothing casts a shadow. The car's rear lights are the only thing in the frame making light of its own.
+
+Colour: cool and close to grey throughout. The red of the car's rear lights, and the wet red it lays on the tarmac behind it, is the most saturated thing in the picture by a wide margin; nothing else comes near it. The tent's blue has weathered chalky until it is nearer grey than blue.
+
+Weather: hard rain, legible only where it has something dark to fall against — fine bright streaks crossing the black of the car, and rings breaking every pool of standing water. Where it falls against the pale fog it disappears into the grey.
+
+Style: an unretouched documentary press photograph on Kodak Portra 400 at ISO 1600. Natural skin texture. Fine film grain living in the shadows. The black of the car is the darkest thing in the frame and the fog is the palest.
+
+Wear: the tarmac is patched in mismatched greys with water pooled unevenly in the low places; one corner of the tent sags where a pole is bowed; the car is rain-flecked with road film up its lower doors.
+
+Constraints: no writing, no signage and no logos on any surface anywhere in the picture. No other vehicles, no buildings, no shop fronts, no lamp posts, no trees, no fences and no other people, either in the frame or in the fog.
+
+Thanks.
+```
+
+### 8b-fog · variant B — the black limbo · **still** · written 2026-09-08, unrun
+
+⚠️ **This one changes the beat to night**, which scene 8 is not. Run it as a look test, not as a
+replacement — and note [principle 11](../../cinematography/principles.md): uniform near-black
+reads as a broken file, so the lit pool is doing structural work and must not be dimmed.
+
+```prompt
+A still photograph for a film. The job of this picture is to leave only the two men and the two things they own, standing in one pool of light with the world switched off around them.
+
+Camera: a 135mm lens at f/5.6, eighteen metres back, at the chest height of a standing person and level, framed slightly off-centre and not quite square to the bays.
+
+Composition: on the left, a large black BMW X8, parked nose-in across the painted line between two bays and filling both, turned so the camera sees its rear three-quarter. It is a coupe-SUV: a long roofline sloping down into a short rear deck, slim split rear lights, a tall upright kidney grille, gloss black window trim, big dark alloy wheels. In the next bay to the right, parallel to the car and facing the same way, a cheap two-person dome tent in faded blue and grey, one corner sagging where a pole is bowed, a square of duct tape over a tear. Three or four metres of wet tarmac between them. Crossing the very bottom of the frame, close and soft, the corner of one more painted bay and a shallow puddle with rain rings spreading on it.
+
+Action: standing in the gap on the tarmac, a late-forties white British man from the City of London: dark hair greying at the temples and slicked straight back with product, a well-fed face just beginning to jowl with a slight sheen on it, broken capillaries at the nose, pale indoor skin — not a smooth idealised leading-man face. He wears a quilted olive gilet zipped over a fine-gauge navy roll-neck, dark blue jeans with turn-ups, and polished tan suede loafers with no socks so a band of bare ankle shows. He is still turned back from pushing the car door shut behind him, his weight on one foot, his chin lifted, his mouth closed and his eyes aimed down at the other man.
+
+Sitting on the wet ground at the mouth of the tent, a white British man of about fifty who has weathered to look older: grey-flecked stubble going on beard, deep lines, broken veins across wind-chapped cheeks, tired eyes with a wet shine — the wear plain on him and never smoothed into a handsome rough-sleeper. He wears a dark woollen beanie and a charity-shop coat a size too big with a broken zip, over a hoodie and more layers, everything grimed and softened by being lived in. He is mid-shift, one hand just out of his sleeve and pressed to the ground as he pushes himself straighter, his head turning up toward the standing man, his brows level.
+
+Location: night. A single sodium car park lamp stands just outside the top of the frame and slightly to the left, and it is the only light in the world. It throws one hard-edged oval of orange light onto the wet tarmac that reaches just past the tent and no further, wet reflections stretching from it toward the camera, and both men and both objects stand inside that oval with the tops of their heads and the roof of the car catching it hardest. Everything outside the oval falls off fast into complete black: no other vehicles, no buildings, no shop front, no other lamps, no trees, no fence, no other people, no horizon and no sky, only black. The car's rear lights are lit and are the one other point of colour, two small red bars deep in the dark.
+
+Style: a documentary press photograph on Kodak Portra 400 pushed to ISO 3200, unretouched, natural skin texture, coarse grain living in the shadows, muted colour. The blacks are deep but not empty. Fine rain falls through the whole frame and is visible where it crosses the lamplight. The car is a working vehicle, not a clean one: rain-flecked, road film up the lower doors and dirt behind the wheel arches.
+
+Constraints: no lettering or signage anywhere except the car's own badges. 16:9.
+
+Thanks.
+```
+
+### 8b-fog · variant C — the shallow-focus dissolve · **still** · written 2026-09-08, unrun
+
+🔴 **The riskiest of the three.** [§26](../../google-flow/nano-banana-2.md) records that
+`out of focus` is **weakly obeyed and needs reinforcing** — round 1 of 8b ignored it outright and
+only *"thrown completely out of focus so that it is a soft blur"* held. The phrasing below uses
+that exact shape, twice, on purpose.
+
+```prompt
+A still photograph for a film. The job of this picture is to keep the whole car park in the frame and let the lens delete it, so that only the two men and the two things they own are solid and everything else is a smear of grey.
+
+Camera: a 200mm lens wide open at f/2, eighteen metres back, at the chest height of a standing person and level, framed slightly off-centre and not quite square to the bays. The plane of focus is extremely narrow and falls exactly on the two men.
+
+Composition: on the left, a large black BMW X8, parked nose-in across the painted line between two bays and filling both, turned so the camera sees its rear three-quarter. It is a coupe-SUV: a long roofline sloping down into a short rear deck, slim split rear lights, a tall upright kidney grille, gloss black window trim, big dark alloy wheels. Its rear lights are lit. In the next bay to the right, parallel to the car and facing the same way, a cheap two-person dome tent in faded blue and grey, one corner sagging where a pole is bowed, a square of duct tape over a tear. Three or four metres of wet tarmac between them.
+
+Action: standing in the gap on the tarmac, a late-forties white British man from the City of London: dark hair greying at the temples and slicked straight back with product, a well-fed face just beginning to jowl with a slight sheen on it, broken capillaries at the nose, pale indoor skin — not a smooth idealised leading-man face. He wears a quilted olive gilet zipped over a fine-gauge navy roll-neck, dark blue jeans with turn-ups, and polished tan suede loafers with no socks so a band of bare ankle shows. He is still turned back from pushing the car door shut behind him, his weight on one foot, his chin lifted, his mouth closed and his eyes aimed down at the other man.
+
+Sitting on the wet ground at the mouth of the tent, a white British man of about fifty who has weathered to look older: grey-flecked stubble going on beard, deep lines, broken veins across wind-chapped cheeks, tired eyes with a wet shine — the wear plain on him and never smoothed into a handsome rough-sleeper. He wears a dark woollen beanie and a charity-shop coat a size too big with a broken zip, over a hoodie and more layers, everything grimed and softened by being lived in. He is mid-shift, one hand just out of his sleeve and pressed to the ground as he pushes himself straighter, his head turning up toward the standing man, his brows level. Both men are sharp, and so are the car and the tent beside them.
+
+Location: an ordinary British supermarket car park on a wet winter afternoon under an overcast sky, rows of small parked cars behind the two men and more rows in front of them. Every one of those rows is thrown completely out of focus so that it is a soft blur with no edges and no readable shape, dissolved into flat bands of grey and dull colour. In front of the two men, the roofs of the nearest parked cars cross the very bottom of the frame, also thrown completely out of focus so that they are a soft dark blur. The light comes from the overcast sky alone and nothing casts a shadow. The car's rear lights are the only other light in the picture.
+
+Style: a documentary press photograph on Kodak Portra 400 at ISO 1600, unretouched, natural skin texture, fine grain in the shadows, muted cool-neutral colour and very low saturation. Fine rain falls through the whole frame. The car is a working vehicle, not a clean one: rain-flecked, road film up the lower doors and dirt behind the wheel arches.
+
+Constraints: no lettering or signage anywhere except the car's own badges. 16:9.
+
+Thanks.
+```
+
+⬜ **All three unrun.** 🔴 **Nothing is attached — no Character, no location reference, no image of
+any kind** (Jack, 2026-09-08). Both men are carried entirely by prose lifted from
+[`characters/tarquin.md`](./characters/tarquin.md) and [`characters/bob.md`](./characters/bob.md).
+
+**This is [§12](../../google-flow/nano-banana-2.md)'s narrow exception, taken deliberately.**
+[§19](../../google-flow/nano-banana-2.md) bans appearance prose *when a Character is cast*, because
+the two sources argue and the prose wins. With nothing cast there is no argument, and prose is the
+only lever there is — the same position `8b` was in at forty metres.
+
+⚠️ **What it costs: likeness is not guaranteed between runs.** The wardrobe and the wear are locked
+by the words; the *face* is a fresh draw every time. If a frame from this set is accepted and then
+has to match its neighbours, that is the moment to cast the Characters — not before.
+
+🔑 **The two clauses doing the anti-slop work are the ugly ones, and both come straight out of the
+character files:** *"not a smooth idealised leading-man face"* and *"the wear named and never
+smoothed into a handsome rough-sleeper."* Round 1 returned two stock actors precisely because
+neither clause was in the prompt.
+
+**Run A first**, then B, then C — one at a time, so the variable stays known.
+
+---
+
 ## Scene 10 — the wake-up, five years on
 
 ### 🖼 The plate — `camera/reference/scene-10-ruined-car-park-plate.png`

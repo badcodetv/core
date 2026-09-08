@@ -25,6 +25,22 @@ character: **the same tent in every appearance.**
   same object in every appearance and one of them already exists. Match the plate, not the words.
 - A cheap two-person dome tent, faded and weathered, guy-ropes frayed, one pole bowed so a
   corner sags. A patch of duct tape over a tear; the flysheet beaded with rain or frost.
+- 🔑 **Read off the plate properly, 2026-09-08 — "faded blue and grey" was too vague and kept
+  returning a bright clean tent.** Use this instead, and prefer it to the line above:
+  - **The blue is on the upper dome panels only, and it is dusty and darkened** — closer to slate
+    or worn denim than to a bright tent blue. It should not draw the eye.
+  - **The whole lower body, the door panel and the sides are pale grey-silver**, nearer bone or
+    oyster than silver.
+  - 🔴 **It is dirty.** Brown-grey mud staining along the bottom edge, streaking up the lower
+    panels. This is the difference that keeps getting lost.
+  - **The fabric is slack and wrinkled between the poles, never taut** — a cheap tent that has
+    been up for weeks.
+  - **The door is unzipped and open**, a dark interior with bedding and belongings as an
+    unreadable dark mass. ⚠️ **Keep the door open wherever the shot allows** — a dark open doorway
+    with possessions inside is the only thing in a frame that says *someone lives here*, and
+    [`frame.md`](../../../cinematography/frame.md)'s frame-within-a-frame does the narration for
+    free. A zipped tent is just an object.
+  - **Guy lines run out slack onto the tarmac, weighted not pegged** — nothing pegs into a car park.
 - Pitched in the corner of a Waitrose car park against a low wall and a trolley
   bay — class-coded location, recognisable at a glance.
 - **Interior-POV variant (lock the framing):** from inside, the world seen

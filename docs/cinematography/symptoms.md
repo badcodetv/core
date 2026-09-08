@@ -28,6 +28,8 @@ BadCode work.
 | "The building's big but not scary" | Scale is unmeasurable — nothing of known size in frame | Add a doorway, a stair, a vehicle, a figure. Size without a reference is abstraction *(principle 26)* |
 | "The empty room isn't creepy, it's just empty" | Shot too wide or too high — from a distance human proportions stop being legible and it reads as geometry | Get close and low enough that a doorway, a desk, a seat-back still reads as human-sized. **This is exactly what we found the hard way on the GPOM `vantage` cut** |
 | "The person doesn't look small enough" | Scale contrast is stated rather than composed | The figure must be *in* the frame with the thing, on a legible depth plane — not cut to separately |
+| 🔴 "It looks amazing but it isn't about anything" | The subject is a few percent of the frame — a high wide that became an establisher without anyone deciding it should be | Ask what percentage of the frame the subject occupies. Keep the height, lose the distance; height and distance are separate variables *(principle 21a)* |
+| "It reads like a diagram / an infographic" | Every element at the same distance, the same size, evenly spaced on one lateral line | Stage the comparison in **depth**. Whichever term the viewer should meet first goes nearest and largest *(principle 21b)* |
 
 ## B. Light and colour
 

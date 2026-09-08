@@ -976,6 +976,135 @@ the frame, which was the obvious worry.
 pattern, not a law — but it is a cheap first thing to try before falling back to a full
 restatement.
 
+### Fifth web pass — 2026-09-08 `[community]`
+
+Two sources, run against the camping `8b-fog` failures. **Most of it corroborates findings this
+file already reached from production, which is the useful part** — independent arrival, not news.
+
+- 🔑 **"Adjectives do not render."** Replace every load-bearing adjective with a visual fact or a
+  comparison. **This is [§30](#30--a-physical-analogy-overrules-a-stated-number--and-it-is-how-28-keeps-happening-observed-2026-09-08)
+  and [§33](#33--an-unresolvable-colour-brief-is-settled-by-the-engines-strongest-object-prior-observed-2026-09-08)
+  arrived at independently**, and it is the shortest statement of the habit this whole file keeps
+  rediscovering: *describe the picture, never the rule.*
+- **Pro plans composition before it paints, and *"the more it knows about the job, the sharper its
+  planning step gets."*** The job sentence at the top of our prompts is feeding the reasoning pass,
+  not decorating it. Keep it concrete and keep it first.
+- ✅ **Negatives belong in a terminal, scoped constraint block** — *"no other props, no hands, no
+  visible brand logos, no harsh specular hotspots on the metal"* — **not floating in the body.**
+  This squares §27 and §31 with the fact that our markings constraint has always worked: an absence
+  fails as a *subject*, succeeds as a closing constraint attached to named things.
+- **Prompt shape:** seven slots — subject · action · setting · style · composition & camera ·
+  lighting & colour · constraints. A superset of what we already use.
+- ⚠️ 🔴 **"One or two imperfection words per prompt, three max — over-correction makes images look
+  intentionally degraded."** **Contradicted by our own measurement:** camping A9's twelve-plus
+  imperfection tarmac clause was the single strongest anti-slop element in the frame and delivered
+  exactly as designed. **Not adopted.** Logged as `[community]`, unverified against our work; the
+  working compromise is roughly four, and the real rule is probably *specific to the subject, not
+  counted*.
+- **`photorealistic` remains noise** — restated by both sources, consistent with the 2026-08-14 pass.
+
+Sources: [Nano Banana Pro prompting guide — fal](https://fal.ai/learn/tools/nano-banana-pro-prompting-guide) `[community]` ·
+[Creating AI images that don't look like AI — usetoolai](https://usetoolai.com/blog/how-to-create-ai-images-that-dont-look-like-ai-2026) `[community]`
+
+🔴 **One piece of their advice we reject outright:** both slop guides recommend prompting for
+*"rule of thirds"*. [`cinematography/evidence.md`](../cinematography/evidence.md) grades it a
+**myth** — no supporting study, and the measured priority is motion, faces, and lines that lead to
+a subject. **Compose lines onto a subject instead of onto a grid intersection.**
+
+### 30. 🔴 A physical analogy overrules a stated number — and it is how §28 keeps happening `[observed 2026-09-08]`
+
+Camping `8b-fog` A9 asked for a camera *"raised about seven metres above the tarmac **as if
+standing on the roof of a van**, sixty metres back."* It came back at roughly **two to three
+metres**, barely tilted — which is exactly the height of a van roof.
+
+🔑 **The engine did not ignore the elevation. It obeyed the wrong half of the sentence.** A number
+is an abstraction; *the roof of a van* is a picture the model already owns, and given both it
+draws the picture. **Second confirmation of [§28](#28--ground-plane-lettering-breaks-where-it-foreshortens--and-the-model-under-delivers-height-observed-2026-08-30)'s
+height under-delivery, with a mechanism attached: check every analogy for the value it smuggles
+in.** An analogy chosen to make a number vivid will quietly replace it.
+
+**The fix is the file's standing habit — describe the picture, never the rule, and here never the
+number either.** State what a camera at that height *sees*: the roof panel of the car as a flat
+shape, a tent dome as a full oval rather than a hump, figures seen from above the level of their
+heads so shoulders are wider than feet. Those are facts the engine must satisfy geometrically.
+
+### 31. 🔴 §27 catches the OUTPUT FRAME too: "no letterbox bars" produces letterbox bars `[observed 2026-09-08, n=3]`
+
+Camping `8b-fog`, three consecutive runs, each asking *"Fill the whole frame with the photograph,
+with no black bars, no letterbox borders and no white margin of any kind."* **All three came back
+matted.** This was logged twice as *"unverified whether it is the model or Flow's output framing"*
+— it is neither. It is
+[§27](#27--ask-for-an-object-never-an-absence--a-subtractive-shape-comes-back-inverted-observed-2026-08-30)
+firing on a part of the image nobody thought of as content.
+
+⚠️ **And the same prompts commissioned the matte in their own opening words.** *"A still
+photograph **for a film**"*, plus *"documentary press photograph"* and *"16:9"*, is a brief for a
+**cinematic still** — and a cinematic still has bars. The negation was arguing with the subject line.
+
+🔴 **DOWNGRADED 2026-09-08 — the fix was tried and FAILED.** Camping A7b deleted both the negation
+and the words *"for a film"*, and the bars came back regardless: five consecutive mattes. **The
+causal claim above is not supported.** *Never negate the frame in prose* survives as good practice
+for [§27](#27--ask-for-an-object-never-an-absence--a-subtractive-shape-comes-back-inverted-observed-2026-08-30)
+reasons; the letterbox explanation does not.
+
+🔑 **The live hypothesis now points away from the prompt.** An accepted plate banked weeks earlier
+from an unrelated prompt carries **the same bars with the same thin white inner line**, and every
+sample under review is ~1240×695 — an odd size that indicates **a screenshot of Flow's viewer, not
+a downloaded original.** ⬜ **Test before writing another word about it: download the original and
+read its dimensions.** If it is 2K and clean, the matte is Flow's UI, not the model.
+
+### 34. 🔴 Naming a marque renders its badging, and no downstream constraint removes it `[observed 2026-09-08]`
+
+Camping A7b named *"a large black BMW coupe-SUV"*, then stated the badge was too small to resolve
+and banned all lettering, script and numbers on the car in the Constraints block. **The roundel came
+back crisp and gained legible model script beside it** — more readable than the round before.
+
+**The marque name carries the badging inside the prior, and a ban arriving later loses to it.**
+Same shape as [§27](#27--ask-for-an-object-never-an-absence--a-subtractive-shape-comes-back-inverted-observed-2026-08-30):
+**you cannot subtract, only substitute.** There is no phrasing that names a brand and suppresses
+its emblem.
+
+**The three real options, cheapest first: paint it out afterwards** (a small still, seconds, exact);
+**turn the surface out of legibility** with geometry; or **drop the marque and describe the body
+shape only**, accepting silhouette drift. ⚠️ **Do not spend generations on it** — the badge is a
+thirty-second post fix and a re-roll risks whatever else the frame got right.
+
+### 32. 🔴 Weather is a physics claim, exactly like light — falling rain needs something dark to fall against `[observed 2026-09-08]`
+
+Camping `8b-fog` A9 asked for *"raining hard, not drizzling… visible as fine streaks falling
+across the whole frame and as rings breaking the standing water"* in a shot that is a **pale grey
+fog wall from edge to edge**. The ground came back wet and **not one drop came back in the air**.
+
+**This is [§20](#20--if-the-named-source-cannot-physically-light-the-scene-the-model-invents-fill-confirmed-2026-08-27)
+in the weather domain, and it generalises the entry beyond lighting.** Rain is only legible where
+it is brighter or darker than what is behind it; the photography literature is unanimous that
+backlighting or a dark background is the *only* way rain reads, and that against a bright even sky
+there is no separation to be had. `[community]` The engine was right and the prompt was wrong —
+same verdict as [§17](#17--light-streaks-need-lights--the-lighting-has-to-permit-the-technique-observed).
+
+**The fix is never more weather language. Find the dark thing already in the frame and give the
+rain to it:** streaks legible only where they cross the black car and the near-black patches of
+tarmac, rings and bounce-spray on the standing water, and a plain sentence saying that against the
+fog it disappears into the grey.
+
+⚠️ **The wider rule, now sighted in three domains — camera position (§6), lighting (§20) and
+weather (§32): any instruction that is physically impossible in the scene as described will be
+resolved by the engine, not refused.** It rebuilds the set, invents the fill, or drops the effect.
+**Before rewriting the clause, check whether the frame contains the contrast the clause needs.**
+
+### 33. ⚠️ An unresolvable colour brief is settled by the engine's strongest object prior `[observed 2026-09-08]`
+
+The same prompt said *"faded mid-blue upper panels"*, *"very low saturation"* and *"the car's rear
+lights are the only colour in the picture"* — three clauses that cannot all be true. What came
+back was a **vivid stock-photo blue tent**, the brightest and most saturated thing in frame,
+beating the rear lights outright and taking the eye off the two men.
+
+**Given a contradiction the model does not average, it picks the prior it holds most strongly** —
+and its prior for *dome tent* is a bright blue one. **State colour comparatively and physically,
+never as a rule about the palette:** *the blue has weathered chalky until it is closer to grey
+than to blue*, and *the red of the rear lights is the most saturated thing in the picture by a
+wide margin*. Both are checkable against the rendered image; *"the only colour"* is not.
+
 ### 19. 🔴 §2's "do not restate the reference" applies to PEOPLE, not just sets `[confirmed 2026-08-27]`
 
 Camping **8c(i)**. `@Bob` was cast **and** his canon appearance was pasted in as prose — beanie,
