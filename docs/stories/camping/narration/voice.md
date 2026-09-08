@@ -136,6 +136,40 @@ Bob has narrated this kind of story many times before and is no longer surprised
 [script here]
 ```
 
+### 💻 The API route — `scripts/aistudio-tts.py`
+
+**AI Studio's own "Get code" export, cleaned up into a runnable script (2026-09-08).** Same voice,
+same model, no browser — so the whole script can be rendered in chunks without clicking through
+the Composer.
+
+```
+export GEMINI_API_KEY=...
+python3 scripts/aistudio-tts.py chunk1.txt chunk1.wav
+```
+
+🔑 **The export uses a DIFFERENT heading shape to the one above** — `# Audio Profile` /
+`## Scene:` / `## Sample Context:` / `## Transcript:`, not `# AUDIO PROFILE` / `### DIRECTOR'S
+NOTES`. Google emits the first; our toolkit documents the second. **Which performs better is
+untested** — the script carries Google's shape verbatim because that is the one the working take
+came out of.
+
+**Four faults in the export, all fixed in the script, all found by reading it:**
+
+| Fault | What it does | Fix |
+|---|---|---|
+| 🔴 **One file per streamed chunk** | each gets its own RIFF header, so a paragraph returns a dozen unplayable fragments | concatenate the PCM, write one header at the end |
+| 🔴 **The Transcript field holds the profile** | it reads the character description aloud | transcript is a file you pass in |
+| ⚠️ **Writes mono** | the exact trap that made the Hume take show red in Premiere | writes **stereo** by default, same samples both channels, no processing |
+| **`ENTER_FILE_NAME_0`** | literal placeholder | output path is an argument |
+
+**The config the export proves** — these are Google's own values, not guesses: `temperature 1` ·
+`response_modalities: ["audio"]` · `PrebuiltVoiceConfig(voice_name="Algenib")` ·
+`gemini-3.1-flash-tts-preview` · returns **`audio/L16;rate=24000`, mono**.
+
+⬜ **The script has never been run.** Its header/stereo/mime helpers are unit-tested offline and
+correct; **the API path is unverified** — no key was used, because the licence question below is
+still open.
+
 ### ⬜ What has not been done
 
 - ⬜ **Never run against the real script.** The only line heard is the generic feature-announcement

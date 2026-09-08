@@ -118,6 +118,8 @@ will not admit it.
 ## The UI map — observed live 2026-09-04
 
 **URL:** `aistudio.google.com/generate-speech` · **Model:** `gemini-3.1-flash-tts-preview`
+
+💻 **There is an API route, and it is in the repo:** [`scripts/aistudio-tts.py`](../../scripts/aistudio-tts.py) — AI Studio's own **Get code** export, cleaned up. ✅ **The export proves the config**: `temperature 1`, `response_modalities: ["audio"]`, `PrebuiltVoiceConfig(voice_name=…)`, and audio returns as **`audio/L16;rate=24000`, mono**. 🔴 **The export has four faults** — one file per streamed chunk, the Transcript field holding the profile, mono output (the Premiere trap), and a literal `ENTER_FILE_NAME_0`. All four are fixed in the script; ⬜ its API path is **unrun**.
 (Run settings → the model card). Left sidebar → Playground.
 
 ⚠️ **Blog write-ups describe a different, older screen.** Trust this map, or a screenshot, over
