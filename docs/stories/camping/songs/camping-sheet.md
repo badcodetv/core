@@ -1413,7 +1413,192 @@ and by the time it hits, we'll be gone
 
 ---
 
+## 🥇 mr1 — the mod R&B holler, and the take Kai liked most
+
+**Ruled by ear, 2026-09-08: *"this is the song I liked the most."*** The boxes came out of a voice
+sweep on **2026-09-05** and were never written down at the time — they lived in a session
+transcript until Kai pasted three of them back and asked for the matching My Taste. They are
+recorded here verbatim.
+
+⚠️ **This lane predates the consolidation conventions.** It ran on the four-box set below with
+**its own lyrics** (`lyricsD`), not this sheet's § Lyrics. Running it through
+[`camping.mts`](../../../../scripts/suno/camping.mts) will therefore load the lane's three fences
+against the **live** cue sheet, which is a different performance. To reproduce the liked take,
+§ Lyrics must first be switched to `lyricsD` — the same one-line edit the § *Timing test* variants
+use.
+
+**The complaint going in was "every take is the same man, and the delivery is cheesy."** Three
+causes were found, and each is answered by one part of this lane.
+
+| What was wrong | Mechanism | Answered by |
+|---|---|---|
+| Every variant came back the same man | `British post-punk spoken word` sat in the **leading slot of the Style box and opened My Taste** — one pool voting in two boxes, and nothing downstream outvotes that | a pool-neutral `taste` fence with no genre words in the Vocals line, plus an entirely different lead tradition in `style` |
+| Cheesy, barked emphasis | caps are a **volume instruction**, exclamation marks push toward a shout, and `[shout…]` / `[mocking falsetto sneer]` are literal theatre directions | `lyricsD` — every one of them removed |
+| Homogenised vocalist | v5.5 is *"more polished and consistent, but blander"*; **v4.5+ gives different vocalists between generations** | 🔴 **the model, not a box** — this lane ran on **v4.5+**, not the sheet's v5.5 |
+
+**Sliders:** Style Influence **75** · Weirdness **30** · Audio Influence n/a (fresh, nothing
+attached) · **no saved Voice**.
+
+🔴 **Weirdness 30 is below this repo's own neutral of 50 and was never tested against it.** Whether
+the liked take is good *because of* 30 or *despite* it is open — the pair at 30/50 with every box
+frozen is the round that settles it, and it has not been run.
+
+🔴 **The exclude fence is 935 characters** and [`camping.mts`](../../../../scripts/suno/camping.mts)
+prints its budget as 933. Whether 933 is a real cap or a stale constant is **unverified** — if it is
+real, `slow tempo` loses its last two characters. It is left verbatim because this is the box the
+liked take actually ran with.
+
+### Lane `modrb` — 1960s mod R&B holler
+
+*style 899 · exclude 935 · taste 1761*
+
+Picked out of a four-way sweep of vocal traditions — **F** 1977 punk snarl · **G** mod R&B holler ·
+**H** British trip hop, half-spoken · **I** pub rock talking blues. This is G. The other three are
+not recorded: they were never generated once G landed.
+
+📎 **A small bloke with an enormous torn voice.** The lane works because it changes the *larynx*,
+not the adjective — hoarse and throaty where every previous round had been nasal and thin. Note
+that it does **not** ban depth or weight: `deep`, `chest voice` and `baritone` are banned in the
+narration sheet, where a voice kept coming back too deep, and importing that ban here on 2026-09-05
+took the size out of "an enormous raspy voice" and flattened the whole take. It was reverted the
+same evening.
+
+```style
+Dark UK drum and bass, neurofunk, 174 BPM, minor key. 1960s British mod R&B holler on top, hollered over the beat, never sung. Verse one: a weathered English man in his fifties - a small bloke with an enormous raspy voice, torn and hoarse at the top of every line, hard English consonants, throaty and unpolished, no vibrato, bone dry. Verse two: a well-spoken British man, higher, clean, plummy BBC English, wide room. Under every vocal a low palm-muted guitar riff, one short figure repeating, never a solo, never chords. At the drops it opens into a wall of chiming Britpop guitars strumming slow and wide at half speed over the kit at full weight, Reese sub, screaming wavetable lead, tambourine on every beat, so guitars, synth and break are one piece of music, not a remix of one by the other. Chopped amen rolls tearing across every fourth bar. Grim and bitter, played straight, steady tempo.
+```
+
+```taste
+Vocals: two English men in their late forties and fifties, talking over the beat rather than singing — there is no melody in either of them. One is low, gravelly, smoke-worn and nasal, close and bone dry on a cheap mic. The other is higher, clean and plummy BBC English, precise and unhurried, talking down at you from a wide room. Talking over singing, every time. Flat and unbothered over theatrical. Raw over polished.
+
+Music: dark UK drum and bass and neurofunk at 174 BPM, minor key. Rolling Reese bass, deep sub, dry chopped breakbeats, industrial stabs. Drum fills that tear across a whole bar every few bars: chopped amen rolls, snares tumbling over each other, loud at the front of the mix, then straight back into the groove. Arrangements that climb in steps: a track that opens on one unaccompanied instrument and does not show its full weight until the drop. Big aggressive wavetable synthesizers where an orchestra would be: screaming detuned leads, hard-synced and formant-morphing, growling gnarly mid-range. In the drops and outro only, a wall of chiming Britpop guitars, layered and doubled, strumming slow and wide at half the speed of the break, tambourine on every beat, so the guitars, the synths and the break are one piece of music, not a remix of one by the other. Under the vocals the guitar is only a low palm-muted figure, never chords, never a tune. No orchestral instruments and no piano anywhere. Cold, grimy, relentless, rock steady in tempo start to finish. A British record, made in Britain, about Britain.
+
+Register: bleak, bitter, angry, played completely straight. Whatever is funny lives in the words alone — the music never winks and never plays along.
+
+Subject: British class, money, work, and who the economy left behind.
+```
+
+```exclude
+singing, sung verses, sung chorus, melodic vocal, vocal melody, vocal hooks, crooning, clean sung melody, autotune, harmonies, grime MC, UK drill, road rap, trap, hip hop, young MC, American accent, American vocal, US rap, transatlantic, southern drawl, ragga MC, toasting, Jamaican accent, dancehall vocal, soprano, operatic vocals, vibrato, angelic voices, sustained vocal notes, female vocal, children's choir, choral harmony, orchestral strings, violins, cello, string section, piano, glockenspiel, brass band, marching band, oompah, dixieland, guitar solo, lead guitar, shredding, acoustic guitar, wah, mashup, bootleg, remix, rock remix, nu metal, rap rock, rapcore, grunge, punk, epic trailer music, reggae, dub, ska, music hall, vaudeville, pantomime, ragtime, honky-tonk, liquid dnb, jump up, pop, lo-fi, jaunty, playful, whimsical, bouncy, comedic, novelty, parody, uplifting, major key, double time, tempo change, slow tempo
+```
+
+### `lyricsD` — de-dramatised, what `modrb` ran with
+
+Every shout, falsetto and whisper cue deleted, caps lowercased, emphasis exclamation marks removed.
+The **words** are unchanged and still pass the `camping.md` §4 guard. What replaces the performance
+cues is per-section **arrangement** description — what plays and what does not.
+
+⚠️ **The known cost, and the sheet already warned of it:** stripping every performance cue may take
+the peaks with it. If it comes back monotone, re-add **one** cue only — `[quieter, close]` before
+*"but I bet, that you paid for your wheels on tick"*.
+
+```lyricsD
+[Intro — 8 bars | one long low detuned synth note, completely alone, held and slowly filtering open | a texture, not a tune, no melody | distant city hum far underneath | no drums, no bass, no guitar]
+[Verse 1 | gravelly ranting voice, flat and unbothered, never selling a line | the low synth note holds underneath | no drums and no bass for the first half of this verse, then a dry chopped breakbeat comes in under the vocal and runs to the drop | amen rolls tearing across every fourth bar | the words never stop, no instrumental passage in this verse]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change, 
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Drop — instrumental, 8 bars, no vocals | the kit hits full weight and the sub bass drops for the first time | amen rolls tearing across every fourth bar | the palm-muted riff opens out into a wall of chiming Britpop guitars, strumming slow and wide at half the speed of the kit, tambourine on every beat | the wavetable lead tears in over the top]
+[Beat Transition]
+[Verse 2 | well-spoken posh voice, a completely different man, dry and unbothered, never selling a line | full-weight drum and bass carries straight on, drums flip, colder synths, sharper hats | amen rolls tearing across every fourth bar | the guitar wall is gone, only the same palm-muted riff returns underneath, unchanged | nothing else playing at all]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic, 
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift 
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing, is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Drop — instrumental, 8 bars, no vocals | everything heavier and more distorted than the first drop — neuro bass growling underneath, the amen rolls harder and longer, the lead screaming higher, the guitar wall thicker and wider than before]
+[Beat Transition]
+[Bridge | the turn | drums strip right back, intimate | the two men trade, both close and dry in the same cold room now | the guitar riff sparser and quieter here, still one repeating figure, never a tune]
+[gravelly ranting voice]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[well-spoken posh voice]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together, doubled]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[well-spoken posh voice]
+you see as it turns out, there is very little clout,
+in having the manager or any of the c-suite about
+[gravelly ranting voice]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[well-spoken posh voice]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gravelly ranting voice]
+yet I don't begrudge you,
+it's us and them now
+[well-spoken posh voice]
+well we don't have long
+[Outro — 8 bars | both men together, and behind them a football terrace of hoarse untrained British men roaring the line with them in unison, massed and low, close and dry | the guitar wall comes back wide and slow underneath | then diminuendo, voices, guitars and bass dissolve into static]
+and by the time it hits, we'll be gone
+[end]
+```
+
+### 🔴 Three near-misses from the same evening — none of them is this lane
+
+| Variant | What changed | Verdict |
+|---|---|---|
+| **taste 1,786** (19:25) | `low` → `mid-range` + `sandpaper grit`; `growling` deleted from the synth line; ten growl bans added to exclude | 🔴 **Rejected — "the song is too flat."** Taking the *size* out of the voice is what did it |
+| **taste 1,851** (19:56) | the above reverted, except `Flat and unbothered over theatrical` → `Bored on the surface and furious underneath`; four narrow growl bans kept (`guttural, death growl, harsh vocals, screamed vocal`); four performance cues restored to the lyrics | 🟡 **Untested against the liked take.** It differs from the `taste` fence above by one sentence — a legitimate single-variable round if flatness returns |
+| **the jungle recut** (20:08) | `Dark UK drum and bass, neurofunk` → `1994 UK jungle`; guitars moved from drops-only to global; `reggae` and `dub` taken out of exclude | 🔴 **"None of those are like this one."** A different track |
+
+🔑 **The escalation nobody has run.** If two more traditions return the same man, that is
+convergence on the pool centroid and **no adjective jumps a pool**. The next lever is a **Voice
+transplant**: best 15 seconds of any take → ⋯ → Remix → Voice, **delete the attached style
+prompt**, then apply it to the take with the best delivery at audio influence 40–60. Unrun, and
+unverified.
+
+---
+
 ## Round log
+
+### mr1 — 2026-09-05, the vocal-tradition sweep. 🥇 **`modrb` RULED IN by ear, 2026-09-08.**
+
+Run outside this sheet, before the boxes had anywhere to live — the whole round survived only in a
+session transcript until Kai pasted the Style, Exclude and Lyrics back on 2026-09-08 and asked for
+the My Taste that went with them. Now filed as lane `modrb` above, with its own `lyricsD`.
+
+**The finding that unblocked it:** every previous variant had kept `British post-punk spoken word`
+in the **leading slot of the Style box** *and* at the head of `My Taste`. One pool, voting twice,
+from two boxes — which is why nine rounds of adjectives all returned the same man. The fix was not
+a better adjective, it was **removing the genre words from `My Taste` entirely** so the Style box
+could cast alone.
+
+📎 **Two levers were pulled that this sheet does not otherwise use:** the model dropped to **v4.5+**
+(different vocalists between generations, where v5.5 homogenises), and every performance cue came
+out of the lyrics — caps, exclamation marks and `[shout…]` directions are all volume instructions,
+and they were the cheese.
+
+🔴 **Two things are still unaudited.** No take from this round is filed in a workspace or linked
+anywhere — the audio exists only in Kai's Suno library. And the lane has never been run *from this
+sheet*, so its fences are recorded but not exercised.
+
 
 ### pv1 / vv1 — 2026-08-27, the voice search. ✅ **`v-pub` RULED IN.**
 
