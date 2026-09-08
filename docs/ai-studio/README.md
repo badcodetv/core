@@ -2,7 +2,7 @@
 title: Google AI Studio — the voice toolkit
 engine: gemini-3.1-flash-tts-preview
 built: 2026-09-04
-status: 🟡 strong free engine, but the camping narrator went to Hume Octave 2026-09-04. A second candidate ("Bob", Algenib) was built here 2026-09-08 and is unjudged
+status: 🟢 licence cleared 2026-09-08 — free tier, commercial use, £0, and no training on UK prompts. Strong free engine; the camping narrator went to Hume Octave 2026-09-04, but a second candidate ("Bob", Algenib) was built here 2026-09-08 and is unjudged
 ---
 
 # Google AI Studio — voice generation
@@ -113,7 +113,41 @@ will not admit it.
 | 🔑 How to be certain nothing bills | `aistudio.google.com/apikey` → **Billing Tier** column. **"Free tier / Set up billing"** means no billing account is attached and nothing can be charged. ✅ Confirmed on our key 2026-09-04 |
 | ⚠️ Tokens ≠ money | The token panel is a **quota/context** meter. On a free-tier key, exhausting it returns `429`, never an invoice |
 | 🔴 The one way to start paying | Clicking **"Set up billing."** Don't |
-| Data terms on the free tier | ⚠️ **"Human reviewers may read, annotate, and process your API input and output"**, and content is used to improve Google products. Only a **billing-enabled** project opts out. Our scripts publish anyway |
+| Data terms on the free tier | ✅ **CORRECTED 2026-09-08 — this row used to be wrong for us.** The training/human-review clause has a regional carve-out: *"If you're in the European Economic Area, Switzerland, or the **United Kingdom**, the terms under 'How Google uses Your Data' in **'Paid Services' apply to all Services, including Google AI Studio and unpaid quota** in the Gemini API, even though they are offered free of charge."* **We are in the UK, so the free tier does not feed training and a billing account buys us nothing on this axis.** Outside the UK/EEA/CH the old row stands |
+
+
+## ✅ THE LICENCE — checked 2026-09-08. Free tier, commercial use, £0
+
+🥇 **This is the one engine whose free tier we may actually ship.** ElevenLabs and Hume both bar
+commercial use on their free plans; Google does not. Quoted from Google's own terms so nobody
+re-derives it:
+
+| Question | Answer | The words |
+|---|---|---|
+| **Commercial use on the free tier?** | ✅ **Yes** | No non-commercial restriction exists. The only use restriction reads *"for developers building with Google AI models for **professional or business purposes**, not for consumer use"* — pointing towards business use, not away |
+| **Who owns the output?** | ✅ **Not Google** | *"**Google won't claim ownership over that content.**"* |
+| **Exclusive?** | ⚠️ **No** | *"Google may generate the same or similar content for others and… we reserve all rights to do so"* |
+| **Attribution?** | 🟡 **Defers to law** | *"you'll comply with applicable law… **which may require the provision of attribution to your users**"*. [`using-ai.md`](../using-ai.md) is stricter than this already |
+| **Training on our prompts?** | ✅ **Not in the UK** | the EEA/CH/UK carve-out above |
+
+### 🔴 SynthID — every take is watermarked, and the mark survives the edit
+
+**Google states all Gemini 3.1 Flash TTS audio carries an imperceptible SynthID watermark**, and
+that it is built to survive **trimming, noise, compression, cropping and filtering**. Anyone can
+check by uploading the clip to Gemini and asking.
+
+🔑 **This is not a problem for us and it is worth saying why.** Our position is already published:
+[`using-ai.md`](../using-ai.md) carries a two-layer disclosure that says we make the work with AI.
+A detectable watermark is **consistent with the honest account**. 🔴 **Do not plan around removing
+it** — it survives the edit, and trying would put us on the wrong side of our own page.
+
+### ⚠️ Preview, not GA
+
+`gemini-3.1-flash-tts-preview` is labelled **Preview** in Google's docs. ⬜ **Unverified** whether
+pre-GA contract terms (no SLA, may change or be withdrawn) attach on the AI Studio surface — that
+language lives in Google Cloud's Service Specific Terms, which is a different product. **Either way
+the practical rule is the same: render and archive the WAVs. Do not assume a voice will still exist
+in three months.**
 
 ## The UI map — observed live 2026-09-04
 

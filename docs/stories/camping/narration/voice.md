@@ -167,17 +167,61 @@ came out of.
 `gemini-3.1-flash-tts-preview` · returns **`audio/L16;rate=24000`, mono**.
 
 ⬜ **The script has never been run.** Its header/stereo/mime helpers are unit-tested offline and
-correct; **the API path is unverified** — no key was used, because the licence question below is
-still open.
+correct; **the API path is unverified** — no key has been spent yet. ✅ **The licence no longer
+blocks it** (next section).
+
+### ✅ THE LICENCE — CLEARED 2026-09-08. Free tier, commercial use, no subscription
+
+🥇 **Google AI Studio is the first engine on this page whose free tier we may actually ship.**
+ElevenLabs and Hume both turned out to bar commercial use on their free plans; Google does not.
+Read from Google's own terms, quoted here so nobody has to re-derive it.
+
+| Question | Answer | The words |
+|---|---|---|
+| **Can free-tier output be used commercially?** | ✅ **Yes.** No non-commercial restriction exists anywhere in the terms | The only use restriction is *"Use of Google AI Studio and Gemini API is for developers building with Google AI models for professional or business purposes, **not for consumer use**"* — which points **towards** business use, not away from it |
+| **Who owns the audio?** | ✅ **Not Google** | *"Some of our Services allow you to generate original content. **Google won't claim ownership over that content.**"* |
+| **Is it exclusive?** | ⚠️ **No** | *"You acknowledge that Google may generate the same or similar content for others and that we reserve all rights to do so."* Fine for a narrator; it is not a trademark |
+| **Attribution required?** | 🟡 **Conditionally** | *"you'll comply with applicable law in using generated content, **which may require the provision of attribution to your users**"* — it defers to law rather than imposing a credit. Our own [`docs/using-ai.md`](../../../using-ai.md) disclosure is stricter than this anyway |
+| **Does our prompt get used for training?** | ✅ **No — because we are in the UK** | 🔑 *"If you're in the European Economic Area, Switzerland, or the United Kingdom, the terms under 'How Google uses Your Data' in **'Paid Services' apply to all Services, including Google AI Studio and unpaid quota** in the Gemini API, even though they are offered free of charge."* Outside the UK/EEA/CH the unpaid tier **is** used to improve Google products, and human reviewers may read it |
+
+### 🔴 Two things that are NOT licence problems but must be planned for
+
+**1 · Every take carries a SynthID watermark.** Google states all Gemini 3.1 Flash TTS audio is
+watermarked with SynthID, imperceptibly, and that the mark is **built to survive trimming, noise,
+compression, cropping and filtering**. So:
+
+- 🔴 **Do not plan on removing it.** It survives the edit, and attempting removal is the wrong side
+  of [`docs/using-ai.md`](../../../using-ai.md) anyway
+- ✅ **It costs us nothing.** Our position is already published — the two-layer disclosure says we
+  make this with AI. A detectable watermark is *consistent* with the honest account, not a threat to it
+- ⚠️ **It is checkable by anyone** — upload the clip to Gemini and ask. Assume a journalist will
+
+**2 · The model is Preview, not GA.** `gemini-3.1-flash-tts-preview` is labelled Preview in Google's
+own docs. ⬜ **Unverified whether pre-GA contract terms (no SLA, can change or be withdrawn) attach
+here** — that language lives in Google Cloud's Service Specific Terms and this is the AI Studio
+surface, which is different. **The practical risk is real either way: render and archive the WAVs;
+do not assume the voice will still exist in three months.**
+
+### 💷 What this changes about the money
+
+| Engine | Free tier | Commercial on free? | To ship |
+|---|---|---|---|
+| **ElevenLabs** | credits | 🔴 No | subscription |
+| **Hume Octave** | 10,000 chars | 🔴 No — *"Free and Starter plans are limited to non-commercial use only"* | Creator, $14/mo |
+| 🥇 **Google AI Studio** | free quota | ✅ **Yes** | **£0** |
+
+⚠️ **This does not overturn the Hume ruling.** Hume produced *"got the voice"* and Google has not
+been heard on the real script. It removes **cost** as a reason to prefer one, which means the
+comparison is now purely about which one sounds right.
 
 ### ⬜ What has not been done
 
 - ⬜ **Never run against the real script.** The only line heard is the generic feature-announcement
   sample above — a sentence with none of the film's dryness in it
 - ⬜ **Never A/B'd against the Hume take.** Same chunk, both engines, same day is the round that rules
-- ⬜ **Licence unchecked for this use.** AI Studio's free tier bills nothing, but *commercial output
-  rights are a separate question* and this page has been caught by exactly that twice — ElevenLabs,
-  then Hume. **Settle it before the take that ships**
+- ✅ **Licence CLEARED 2026-09-08** — see the section below. Free tier, commercial use, no
+  ownership claim. This is the first engine on this page that does not need a subscription before
+  the take that ships
 
 ## 🔴 Higgsfield cannot design a voice from a prompt
 
