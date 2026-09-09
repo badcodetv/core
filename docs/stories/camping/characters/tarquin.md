@@ -16,9 +16,24 @@ flow_sheet_source:
 > 🎙️ **Speaking voice built 2026-09-08** — Google AI Studio, prebuilt voice `Zubenelgenubi`. The verbatim profile is in [`../narration/ai-studio-cast.md`](../narration/ai-studio-cast.md).
 
 
-**2008:** up-and-coming star of the trading desk in the old NatWest Tower,
-betting heavily on leveraged ETFs — *he was the reason 2008 hit.* A plucky
-young prick with a great career ahead of him.
+**2008:** up-and-coming star of the trading desk in the old NatWest Tower.
+🔴 **AMENDED 2026-09-09 by Jack: he SHORTED it.** He saw the crash coming, bet against the market,
+and **came out of the collapse without a scratch while everyone else went under.**
+*(Was: "betting heavily on leveraged ETFs — he was the reason 2008 hit.")* A plucky young prick
+with a great career ahead of him.
+
+> **Why the change, because it is not a small one.** *"He was the reason 2008 hit"* asks the
+> audience to believe one trader caused a global crash, and
+> [our reader](../../../marketing/the-reader.md) does not — their actual grievance is
+> **the crash happened, they paid, and the City was fine.** Shorting *is* that grievance.
+> It also makes him **one man across two decades** rather than two: right about money and wrong
+> about people in 2008, and again in 2026 when he buys social housing and leaves it empty because
+> asset inflation beats rent. And *without a scratch* in 2008 is the plant that
+> [scene 10](../shot-list.md) pays off — consequence arriving eighteen years late.
+>
+> ⚠️ **One line still needs Jack's eye:** [`story.md`](../story.md) has *"he was instrumental in
+> the financial crisis"*, which is the old reading. Nothing else in the canon depends on him
+> having caused it.
 
 **2026:** runs the biggest private equity firm in the country. The play: buy up
 all the social housing available — often not even renting it out, because asset
@@ -183,4 +198,24 @@ even with the requirement written twice including once in `Constraints:`. *"Turn
 ankle"* and *"a band of bare ankle shows"* both describe a result the engine will not aim at.
 
 **Next attempt: give it a landmark, not a height** — *"the jeans are turned up above the ankle
-bone."* A bone is a thing that can be found; a band is not. Untested.
+bone."* A bone is a thing that can be found; a band is not. ~~Untested.~~
+
+> ### ✅ `[confirmed 2026-09-09]` — the landmark works, first time
+>
+> Camping **7c** fired *"the turn-ups on his jeans sit above the ankle bone"* as the only ankle
+> clause, and **the bare ankle came back**, round 1, after three plates had failed it. One word
+> of difference: a **result** the engine has to aim at, versus a **landmark** it can find.
+>
+> 🔑 **The general rule, and it is the same one that fixed camera placement:** describe things
+> the model can *check against the picture* — a bone, a doorway, a railing, a spot between two
+> named objects — never a quantity, a band, a proportion or an outcome. See
+> [naming where the photographer stands](../../../google-flow/nano-banana-2.md#3c--name-where-the-photographer-stands-not-what-the-shot-looks-like);
+> this is the same finding arriving from the wardrobe side.
+
+## 🪑 He sits up; he does not lie down *(canon 2026-09-09, from the accepted 7c frame)*
+
+**Tarquin does not recline on a therapist's couch.** 7c's prompt asked for him *lying back along
+the couch*; the engine sat him upright with his legs stretched out and his ankles crossed, and it
+is better. A man lying flat has surrendered to the process. Tarquin sits in a consulting room the
+way he would sit in an airport lounge — present, paying, and not participating. **Write him
+sitting up from now on.**

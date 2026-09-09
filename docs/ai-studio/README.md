@@ -495,6 +495,27 @@ Found 2026-09-04 in [LiveKit's practical prompting guide](https://livekit.com/bl
 | ⚠️ **Failure modes** | CONTEXT bleeding into TRANSCRIPT when section boundaries are vague; empty responses and 500s (retry with backoff); **phonetic collisions between the character name and the opening word** |
 | **Length** | Examples run **200–400 words** for a full profile |
 
+### 🆕 The Voice Library applet — an audition route we have never used `[vendor]` 2026-09-09
+
+**Google's own guidance names a *Voice Library* applet inside AI Studio** for trying speech styles
+and voices before building anything: *"a great way to try out speech styles and voices with Gemini
+TTS… test the models in AI Studio before you start building."*
+
+⬜ **Untried.** This is the cheapest possible way to settle a voice-name choice — and
+[voice name is the only thing that can change the voice](#-ruled-2026-09-04--the-prompt-cannot-change-the-voice-only-the-voice-name-can),
+so it is the highest-leverage field there is. **Audition there before spending a build.**
+
+**Two rules the same pass corroborates independently of LiveKit** — worth noting because they now
+have vendor backing rather than one blog:
+
+- **The preamble is load-bearing.** *"Add a clear preamble instructing the model to synthesize
+  speech, and explicitly label where the actual spoken transcript begins."*
+- **Do not overspecify.** *"Don't feel you have to describe everything — sometimes giving the model
+  space to fill in the gaps helps naturalness."*
+
+**Source:** [Speech generation — Gemini API](https://ai.google.dev/gemini-api/docs/speech-generation) ·
+[Gemini Audio — DeepMind](https://deepmind.google/models/gemini-audio/speech-generation/) `[vendor]`
+
 ### ✅ And accent steering IS reliable — tested independently
 
 Simon Willison, testing 3.1 on launch day, swapped the accent line from **Brixton** to **Newcastle**
@@ -620,6 +641,273 @@ every other decision on this film combined."* **It is now formally dropped.**
    one produced either a caricature or the default.
 2. **Name the place, never the phonemes.** Spelling out vowels and dropped consonants produced
    *"too northern"* twice and *"weird"* once. The city name alone is the whole instruction.
+
+## 🔑 CONFIRMED 2026-09-09 — the REAL blob shape, taken from AI Studio's own export
+
+**Jack pasted the `Get code` export of the working Kore build.** It is the authoritative answer to
+a question this file has been guessing at: **how AI Studio actually assembles the four Composer
+fields into one prompt.** Verbatim shape:
+
+```
+Read the following transcript based on the audio profile.
+
+# Audio Profile
+<the Voice Direction, as one paragraph>
+
+## Scene:
+<the Scene>
+
+## Sample Context:
+<the Sample Context>
+
+## Transcript:
+<the words>
+```
+
+**The field-to-header mapping, now `[confirmed]` rather than inferred:**
+
+| Composer field | Header in the blob |
+| --- | --- |
+| **Voice Direction** | `# Audio Profile` — as **one paragraph**, with no `Style:` / `Pacing:` / `Accent:` sub-labels |
+| **Scene** | `## Scene:` |
+| **Sample Context** | `## Sample Context:` |
+| **Speech block** | `## Transcript:` |
+
+### 🔴 This contradicts two things this file told people to do
+
+1. 🔴 **There is no `PERFORMANCE` or `CONTEXT` section, and no `Style / Pacing / Accent`
+   sub-headings.** The blob format recorded in
+   [`ai-studio-cast.md`](../stories/camping/narration/ai-studio-cast.md) invented those and they
+   have never been confirmed. **AI Studio puts the entire performance direction in one prose
+   paragraph under `# Audio Profile`.**
+2. 🔴 **`## Sample Context:` is a multi-word header with a colon — and it works.** LiveKit's rule
+   is *"avoid apostrophes and multi-word section headers."*
+   🔑 **The nuance that survives: the apostrophe is the fault, not the word count.** `DIRECTOR'S
+   NOTES` fails; `Sample Context:` does not. **Restated: avoid apostrophes in headers. Multi-word
+   is fine, and the vendor's own tool does it.**
+
+✅ **And the preamble is confirmed from the vendor side** — AI Studio composes
+*"Read the following transcript based on the audio profile."* itself. Ours said *"Synthesize speech
+for the performance defined below. Speak ONLY the lines under TRANSCRIPT."* **Both work; theirs is
+shorter and is what the confirmed take actually used.**
+
+⚠️ **And the export still ships all four known faults** — a file per streamed chunk, a literal
+`ENTER_FILE_NAME_0`, `num_channels = 1` (mono, which Premiere shows red), and the Transcript field
+holding the profile. [`scripts/aistudio-tts.py`](../../scripts/aistudio-tts.py) is the same export
+with all four fixed. **Use the script, not a fresh paste.**
+
+**Stored:** [`docs/stories/camping/narration/profiles/nell-kore.md`](../stories/camping/narration/profiles/nell-kore.md)
+— the exact working prompt, de-indented, with `## Transcript:` left open.
+
+## ✅ CONFIRMED 2026-09-09 — `Kore` landed the camping narrator, first take
+
+**Jack: *"the Kore one works."*** The shortlist below is now `[confirmed]` where it was research,
+and **three claims in this file are promoted:**
+
+1. ✅ **`voice_name` owns the outcome.** The pick moved `Gacrux` → `Kore` on a *character* argument,
+   not a prose one, and that is what landed it. 🔑 **The open question this file asked — *does
+   firmness carry restraint better than lowness?* — is answered: yes.** Authority comes from
+   control, not depth.
+2. ✅ **The accent recipe works when it is one bounded vote.** *"A mild, everyday north London
+   accent, the kind nobody would remark on"*, once, plus a place in the Scene. **No class marker,
+   no phonetics, no iconic place name, no negation.** The prescribed phrasing in
+   [the three dials](#-three-dials-that-are-easy-to-confuse--placement-melody-and-accent-strength)
+   was right and had simply never been used.
+3. ✅ **[The unnamed-reference technique](#-the-unnamed-reference-technique--carried-over-and-it-still-applies)
+   is now 2-for-2** on this engine — it produced both *"that worked"* reads.
+
+⚠️ **And one earlier conclusion is retracted.** This file said the prose lever was *"exhausted"*
+after three failed rounds. **It was not — my prompts were wrong, the technique was fine.** Three
+rounds of rewording contributed nothing; **one voice-name change did it.**
+🔑 **The transferable rule: after two failed takes, change the voice before changing a word.**
+
+## 🎙️ THE FEMALE VOICE SHORTLIST — researched 2026-09-09
+
+**Jack's brief: a ready-made voice, English, woman, otherwise free.** Researched properly rather
+than guessed. **One of the two musts is deliverable from the voice list; the other is not.**
+
+### 🔑 The finding that decides it: only TWO of the 30 are female AND low-pitched
+
+A reviewer who listened to and classified **all thirty** voices reports flatly:
+***"I had the impression that there were few low-pitched feminine voices."*** `[community]`
+The two are **`Gacrux`** and **`Vindemiatrix`**. That is the whole field.
+
+🔑 **This matters more than any prompt wording, because
+[`voice_name` owns timbre](#-ruled-2026-09-04--the-prompt-cannot-change-the-voice-only-the-voice-name-can)** —
+placement is the one axis prose has never been able to move.
+
+| Voice | Google's descriptor | Gender | Pitch | Verdict for a 51-year-old with banked anger |
+| --- | --- | --- | --- | --- |
+| 🥇 **`Gacrux`** | **Mature and experienced** | Female `[vendor]` | **Low** `[community]` | **The pick.** The only voice in the set that starts in the right place on both axes at once. *Mature and experienced* is the character description, not an approximation of it |
+| 🥈 **`Kore`** | **Firm and confident** | Female `[vendor]` | Not classified low | **Do not skip it.** *Firm* is the trait contained anger actually needs, and **firmness may beat lowness** — [the three dials](#-three-dials-that-are-easy-to-confuse--placement-melody-and-accent-strength) are independent and we have never tested which one carries restraint. A real A/B, not a fallback |
+| 🥉 **`Vindemiatrix`** | **Gentle and kind** | Female `[vendor]` | **Low** `[community]` | Right pitch, wrong disposition — *gentle* fights the whole brief. Only if the other two come back too hard |
+| ❌ **`Schedar`** | Even and balanced | **Male** `[community]` | — | Ruled out on gender. Recorded because it is an easy mis-shortlist |
+| ❌ `Achernar` `Aoede` `Autonoe` `Callirrhoe` `Despina` `Erinome` `Laomedeia` `Leda` `Pulcherrima` `Sulafat` `Zephyr` | Soft · Breezy · Bright · Easy-going · Smooth · Clear · Upbeat · Youthful · Forward · Warm · Bright | Female | Higher | Every descriptor is the opposite of the brief. **`Leda` (Youthful) is wrong by two decades** |
+
+### 🔴 The second must is NOT deliverable from this list, and the evidence is now unambiguous
+
+**None of the thirty is a natively British voice.** They are American by default, and:
+
+- **The one reported British output was a glitch and could not be reproduced.** A developer-forum
+  user got `Enceladus` to come back in EN-GB and then: ***"I just can't get it to do it again.
+  It's switched back to American."*** `[community]`
+- 🔴 **Google's own staff answer to "how do I get British" is *"please guide the model through
+  prompting for British accent, it will work fine."*** `[vendor]` **That is precisely the route
+  this file has now disproved three times in one day**
+  ([the accent ruling](#-ruled-2026-09-09--the-accent-is-ridiculous-and-over-the-top-like-a-cartoon-five-causes)).
+
+> **So the position is honest and narrow: `Gacrux` gets us the woman and the register. It does not
+> get us England, and no wording will.**
+
+### ⬜ The one unknown left, and it is a 30-second check
+
+[This file recorded on 2026-09-04](#the-ui-map--observed-live-2026-09-04) that the picker offers
+***"Search 5,000+ voices"* with filters for Language · Accent · Gender · Age · Style**. ⚠️ **No
+external source corroborates it** — Google Cloud's own page says *380+ voices across 75+ languages*,
+and nothing found in the 2026-09-09 pass mentions a 5,000-voice library or an accent filter in AI
+Studio.
+
+🔴 **That filter is the only thing left that could give us a natively English female voice, and
+nobody has looked at it since the day it was written down.** **Open the picker, filter
+Accent → English, Gender → Female, and report what is actually in there.** Everything else about
+this problem is now settled; that is not.
+
+**If the filter turns out to be real** → pick from it, delete every accent word from the prose, done.
+**If it does not exist** → the three options in the accent ruling stand, and there is no fourth.
+
+**Sources:** [All 30 Gemini TTS voices compared](https://note.com/tsukubalab/n/n0f143277b947?hl=en) `[community]` — the gender/pitch classification ·
+[Gemini went British — Google AI Developers Forum](https://discuss.ai.google.dev/t/is-there-an-update-to-gemini-tts-gemini-went-british/87084) `[community]` `[vendor]` — the unreproducible glitch and the staff reply ·
+[Gemini-TTS — Google Cloud](https://docs.cloud.google.com/text-to-speech/docs/gemini-tts) `[vendor]` — the voice list and gender labels
+
+
+## 🔴 RULED 2026-09-09 — "the accent is ridiculous and over the top like a cartoon". Five causes.
+
+**Jack, on the Dez and Nev box sets.** Same complaint as the 2026-09-04 *"too northern and weird"*
+round, on a completely different accent — **so it is not the accent, it is how we ask for it.**
+Four of the five causes are in our own prompts and one is the engine.
+
+### 🔴 1. THE BIG ONE — the box audit is a BALANCE rule, not a MAXIMISE rule
+
+[The box audit](#-all-four-fields-vote--run-the-box-audit-before-every-generation) says *"never let
+a field sit neutral."* **That was written to diagnose an accent being outvoted 9-to-2. It was read
+as an instruction to put the accent in every box, and it is not.**
+
+The Dez build voted for London in **all four fields** — `Londoner`, `Brixton` ×2, `south-east
+London`, `working class` in the Voice Direction, `Brixton pub` in the Scene, `City of London` in
+the Sample Context, and `mate` in the transcript. **That is the accent dial at maximum.**
+
+> 🔑 **This is the same failure as stacked lighting in an image.** Four light sources make a frame
+> read as *lit* rather than photographed
+> ([the named tell](../google-flow/omni-flash.md#5-anti-slop-restated-from-the-photorealism-pass)).
+> **Four accent votes make a voice read as *performed* rather than spoken.** Nobody in real life
+> is doing their accent at you.
+
+**The rule, restated:** **one field carries the accent properly; one carries it lightly; the rest
+stay English without being regional.** A field that names a British place is not neutral — it just
+is not shouting. `[hypothesis 2026-09-09, untested]`
+
+### 🔴 2. Class markers are archetypes, and archetypes summon caricatures
+
+**`working class` is the same class of error as `deep`.** This file already documents that `deep`
+summons a movie-trailer read because it is an archetype rather than a measurement, and the fix was
+to state it as **pitch**. ⚠️ **`working class` has no measurement to fall back on** — it is
+*only* an archetype, and the rendering it pulls is a stereotype.
+
+**Cut it.** If the register matters, it belongs in the **words of the script**, which carry class
+far better than an adjective in a box.
+
+### 🔴 3. Phonetic instructions crept back in — and this file already banned them
+
+[The three-dials table](#-three-dials-that-are-easy-to-confuse--placement-melody-and-accent-strength)
+says of accent strength: *"Never say phoneme lists… **every 'too over the top' note traces to
+these**."*
+
+**The Nev build asked for `hard consonants`. The Dez build asked for `a little nasal`.** Both are
+phonetic instructions wearing a different coat. **Neither should have been written.**
+
+### 🔴 4. An iconic place name pulls a performed register
+
+**`Brixton` is documented and safe — it is Google's own worked example — but it is not *ordinary*.**
+Google's example is a **radio DJ**, which is a performance. ⬜ **Hypothesis: a place with a strong
+media identity returns the media version of it**, the way `deep` returns the trailer version.
+
+🔑 **And the fix was already written in this file and never used.** The three-dials table's own
+prescribed phrasing for accent strength is:
+
+> ***"a mild, everyday <city> accent, the kind nobody would remark on"***
+
+**Use that sentence.** It asks for the accent *and* bounds its strength in one clause, which is
+what neither build did.
+
+### 🔴 5. Nobody ever told it he is not performing
+
+Every box set so far describes **a character in a scene**, which is a casting brief, and a casting
+brief gets an actor. **Add the clause explicitly:**
+
+> ***"He is not doing an accent. This is simply how he talks, and he has never thought about it."***
+
+⚠️ **And audit the Scene for performance cues.** *"The back room of a Brixton pub, half a lager
+gone, telling it to one person"* is a scene that **invites a turn**. A scene should set a mood, not
+cast a character actor.
+
+### 🆕 6. And ~1 in 10 generations shifts accent on identical inputs `[community]` 2026-09-09
+
+> *"When calling the model twice with the same voice ID, the same text, and the same settings, the
+> second clip can come back sounding like a different narrator — different accent, different
+> pacing, or a subtly different timbre. **Roughly 1 in 10 generations shift accent or pacing.**"*
+
+🔴 **So some cartoon takes are a lottery, not a prompt fault.** **Re-roll twice before rewriting a
+single word.** This is the cheapest rule in the file and we have never applied it — every previous
+"too over the top" note may have been diagnosed against a single sample.
+
+### 🔴 ROUND 2, 2026-09-09 — still silly. The answer is ZERO accent words.
+
+**The mild-accent recipe below did not fix it either.** The remaining fault is simpler and bigger
+than all five causes above:
+
+> 🔑 **Every clause about the accent is an instruction to perform one — including the ones asking
+> for restraint.** *"A mild, everyday south London accent"* still contains **accent**.
+> *"She is not doing an accent"* contains it **twice**, and it is a **negation** — the construction
+> this whole toolkit already records as putting the thing straight into the prompt.
+
+**Do not ask for the accent at all. Remove every accent token from every field.**
+
+| Where the accent comes from | How |
+| --- | --- |
+| 🥇 **The voice** | The picker filters 5,000+ voices by **Accent** and **Gender**. Pick one that already is what you want. `voice_name` owns timbre; **this is the only field that has ever reliably carried an accent** |
+| 🥈 **The words** | Idiom, vocabulary and rhythm in the transcript carry class and region far better than any adjective. *"Nice tie, mate"* is doing more accent work than four boxes of prose |
+| ❌ **The prose** | Nothing. Zero tokens. Not even *mild* |
+
+### 🔴 And the honest conclusion after ~15 rounds across two sessions
+
+**This engine performs any accent that is not its default, and its default is General American.**
+That is not a prompting problem and no wording has beaten it. [The 2026-09-04
+post-mortem said it already](#-ruled-2026-09-04--northern-is-dropped-ask-for-an-accent-the-model-already-does)
+and we kept trying: *"Karen's target IS the model's default. Camping's is the opposite of it.
+Karen worked. That is the reason."*
+
+**Three real options. There is no fourth, and another rewrite is not one.**
+
+| | Option | Cost |
+| --- | --- | --- |
+| 🥇 | **A natively British voice from the library filter, with zero accent prose** | One audition session. Untried, and it is the only untried thing left |
+| 🥈 | **Accept General American** — the model's native register, and [Karen's narrator already is one and worked](../stories/karen/narration/voice.md) | The register mismatch with a UK-facing film — and it collapses the [one-house-narrator question](../stories/camping/narration/voice.md) in the same move |
+| 🥉 | **Go back to Hume Octave**, where accent sits in the prompt vocabulary by design and [the camping read was ruled *"got the voice"* on 2026-09-04](../stories/camping/narration/voice.md) | $14/mo for the commercial licence. **It already worked once** |
+
+⚠️ **Do not spend another session rewording a Voice Direction.** The prose lever is exhausted.
+
+### The corrected accent recipe, in order
+
+1. **Voice name first.** `voice_name` owns timbre and the picker labels every voice. Read the label.
+2. **One strong accent clause**, in Voice Direction, in the prescribed shape: *"a mild, everyday
+   south London accent, the kind nobody would remark on."*
+3. **One light anchor** elsewhere — a British place in the Scene, with no accent adjective attached.
+4. **The not-performing clause.**
+5. **No class markers. No phonetics. No iconic place names** unless the icon is what you want.
+6. **Re-roll twice** before touching the prose.
+
+**Sources for §6:** [Gemini TTS consistency issues — TTSAudit](https://ttsaudit.com/blog/google-cloud-tts-quality-issues) `[community]`
+
 
 ## 🔑 Three dials that are easy to confuse — placement, melody, and accent strength
 

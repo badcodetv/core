@@ -1474,7 +1474,1214 @@ through old glass.
 
 ---
 
+### 7c — the two-shot · **still** · ⬜ not yet shot
+
+**Ruled 2026-09-09 by Kai: the therapist is a woman.** The reason is a picture problem, not a
+story one — *"Tarquin looks too similar to the therapist."* Two middle-aged white men with grey
+at the temples, in a warm-neutral room, in reverse angles of each other, read as one man twice.
+Recasting is the cheapest fix and costs the story nothing: canon never specified a gender
+(see [`story.md`](./story.md#scene-7--therapy)), the 2026-08-26 ruling in
+[`style.md`](./style.md) was read off the accepted 7a frame rather than decided.
+
+> ### 🔴 What this costs
+>
+> - **7b is dead.** It holds the male therapist's face for the film's one direct address. It
+>   has to be re-shot or replaced.
+> - **7a is probably dead.** The male therapist's grey head and shoulder are the foreground
+>   occluder. A woman's back is not that shape.
+> - This shot is written to **carry the whole beat on its own** — the question and the verdict
+>   in one frame — so that if the pair does not come back, Scene 7 still works as a single
+>   still. If Kai wants the pair back, 7a and 7b get re-shot from 7c as the reference.
+
+**Design** *(`shot-craft`, Design mode)*
+
+| Slot | Decision |
+| --- | --- |
+| **The job** | Put both halves of Scene 7 in one frame — his question and her verdict — so the beat stops depending on a reverse-angle pair whose two people look alike |
+| **Register** | Documentary, human scale. Ruling R2's exception: the beat needs a person, not a monument. Gate 2 does not fire — nothing here is monumental |
+| **Depth** | FG: the corner of the side table, tissues, cold tea, out of focus at the left edge · MG: him along the couch, ankles nearest · BG: her in the armchair, the wall, the sash window |
+| **Focal point** | Her face. It wins on light — the window falls on her and the corner behind her drops away |
+| **Reading order** | Him first (nearer, larger, horizontal), then across the empty rug to her (upright, lit, still). That gap is the sentence |
+| **Light** | One source: the sash window at the far left of frame, past the head of the couch. Flat grey afternoon daylight, low and even. Falloff into the corner behind her chair |
+| **Camera** | 40mm, f/2.8, side-on to the axis between them, at seated height (~1.1m). Narrower than 7a's 35mm deliberately — [less world to invent](../../google-flow/nano-banana-2.md#6--if-the-camera-cannot-physically-stand-there-the-model-rebuilds-the-set), straighter verticals |
+| **Status** | He is closer and larger; she is the only upright thing in the picture and owns the height. He is paying for this and is still the smaller person in the exchange |
+| **Withheld** | Which of them just spoke. He is mid-sentence; she finished thinking some time ago. Two clocks in one frame — the [unresolved question](../../cinematography/stills.md#1-what-makes-a-still-hold) that stops a still dying |
+| **Motion** | None. Still. |
+
+**Casting: `@Tarquin-new` only. No reference image.**
+
+The one-reference house rule applies, and the slot goes to the Character. **Attaching the
+accepted 7a frame would be actively wrong** — it contains the male therapist we are removing,
+and [anything named or shown in a keep-list is an instruction to draw it](../../google-flow/nano-banana-2.md#7--write-the-keep-list-from-the-accepted-still-not-from-the-prose-that-made-it).
+So the room is written out in prose instead. **Consequence to watch:** the room may drift from
+7a. If it does and the pair is being kept, attach 7a on the *next* round with its job stated as
+*the room only*.
+
+**Her design is a differentiation problem before it is a casting one.** She is built to share no
+axis with him: early fifties against his late forties, close-cropped grey-flecked hair against
+slicked-back dark, small and compact against well-fed, bottle green against navy-and-olive,
+working against paying. *(If Kai would rather she were white, swap the one clause — nothing else
+in the prompt depends on it.)*
+
+**The expressions are the whole ask, and the method is 7a's.** Kai's note is that AI overplays
+faces. The fix already in this file works: **write the face as anatomy, then name the wrong
+readings.** *"Confused"* gets a pantomime frown; *"the inner end of one eyebrow lifted a fraction
+higher than the other"* gets a face. Both blocks end on a negative list and a floor —
+*"a stranger would take a second to notice anything is wrong with him at all."*
+The web pass agrees and adds one thing worth keeping: **real emotion lives in the eyes**, so
+both eye descriptions are longer than both mouth descriptions.
+
+**Model: Nano Banana Pro**, not Nano Banana 2 — [the standing recommendation](../../google-flow/nano-banana-2.md#which-engine-for-badcode).
+NB2's reported failure mode is *too sharp, too contrasty, almost overexposed*, which is a fair
+description of the slop look; Pro also plans the scene before drawing, which a two-hander with
+staged depth needs. *(There is no model called "Nano Banana Pro 2" — the picker has the two
+above.)*
+
+```prompt
+A documentary press photograph of a private therapy session. This is a news picture, not an advertisement.
+
+Subject: Two people in a consulting room. The man is the cast character, lying back along a low upholstered couch with his ankles crossed and his shoes still on, his hands resting on his stomach one on top of the other. The woman is his therapist: a Black British woman in her early fifties, small and compact, with close-cropped natural hair going grey at the temples and fine reading glasses sitting low on her nose. She wears a dark bottle-green fine-knit cardigan over a plain white shirt, wide navy trousers and flat brown leather brogues, with small gold hoops and no other jewellery. Nothing she has on is expensive. She is the only person in the room who is working.
+
+Composition: 40mm lens at f/2.8. The camera stands against the fourth wall of the room, side-on to the two of them, at the height of a seated person, roughly 1.1 metres off the floor. He lies along the lower-left third of the frame with his crossed ankles nearest the lens and slightly soft. She sits upright in a mid-century wooden armchair on the right, further away and smaller, seen from the knees up, her head in the upper third. A width of empty wool rug separates them and it is the largest single shape in the picture. In the near foreground at the left edge, thrown out of focus, the corner of a side table with a box of tissues and a mug of tea gone cold. The pair sits slightly left of centre and the horizon is not quite level.
+
+Action: They are looking at each other. He has stopped in the middle of a sentence. His lips are barely parted and stay that way, as though the next word has not arrived. The inner end of one eyebrow is lifted a fraction higher than the other, putting a single short crease between them. His eyes are on her, steady and slightly unfocused, as though he is listening to something inside his own head. His chin is a little tucked. That is the whole expression and the rest of his face is relaxed. This is not shock, not fear, not a pantomime frown and not comedy — a stranger looking at this photograph would take a second to notice anything was wrong with him at all. She has already reached her conclusion and is waiting for him to finish. Her notebook is closed on her knee with the pen capped and laid on top of it. She is looking at him over the top of her reading glasses rather than through them, her chin level. Her lips are closed and pressed a fraction thinner than neutral and her jaw is very slightly set. Her eyes are steady and hold the look a beat longer than is comfortable, and one eyebrow sits a hair lower than the other. Everything else about her is still. This is not a scowl, not an eye-roll, not a smirk, not a glare and not sympathy — she is being paid to keep listening and has stopped. Both faces are underplayed and neither of them is performing. Unposed, caught mid-moment, both unaware of the camera.
+
+Location: A tasteful, quiet, expensive consulting room in London. Plain soft warm-grey walls, one framed abstract print hung slightly low, a wool rug over bare floorboards, a stack of journals on the floor beside the armchair, a plant that needs watering, and a tall sash window at the far left of the frame past the head of the couch, with a radiator beneath it chipped at one corner. Comfortable rather than grand — money that does not announce itself. The fabric on the arm of the couch is slightly flattened and darker where hands have rested.
+
+Style: Shot on 35mm Kodak Portra 400, fine natural grain, soft warm-neutral colour. The sash window is the only light source — flat grey afternoon daylight coming in low and even, crossing the room and landing on her, with the corner behind her armchair falling away into soft shadow. Calm, still and unhurried. Real skin on both of them with visible pores, uneven tone and a matte sheen rather than gloss. Both faces are naturally asymmetric.
+
+Constraints: Only these two people are in the room. Nothing in the frame carries readable text. His lips stay barely parted. Her mouth stays closed. The turn-ups on his jeans sit above the ankle bone. Both expressions stay small.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**One deliberate exception to the never-describe-a-cast-character rule**, and it is the only
+one: *"the turn-ups on his jeans sit above the ankle bone."* The bare ankle is
+[the joke and it is load-bearing](./characters/tarquin.md#-the-bare-ankles-do-not-survive--and-they-are-the-joke),
+and it has now failed three plates in a row because *"a band of bare ankle shows"* describes a
+**result** rather than a place. An ankle bone is a landmark the engine can find. This is the
+untested fix that sheet already proposes — **7c is the test.**
+
+**Two anti-slop notes on what is deliberately absent:**
+
+- **No worn patch.** 7a asked for *"a faint worn patch where hands have rested"* and got a
+  ragged hole with the foam showing — [the engine escalates wear into damage](#7a--the-consulting-room--still--accepted).
+  This one writes the patina instead: *slightly flattened and darker*.
+- **One light, one clause.** The [stacked-lighting tell](../../google-flow/nano-banana-2.md#5-anti-slop-restated-from-the-photorealism-pass)
+  is what makes a frame read as *lit* rather than *photographed*. One window, one direction,
+  one stated falloff, and nothing else in the room emits.
+
 ---
+
+#### ✅ Shot and accepted 2026-09-09, round 1 — what held, what drifted
+
+**First-time pass.** Configuration for reuse: **Nano Banana Pro · `@Tarquin-new` cast · no
+reference image · the room written out in prose · 16:9.**
+
+**Held:** the whole staging — the side-on geometry, the empty rug as the largest shape, the
+crossed ankles nearest the lens, the tissues and the cold tea out of focus at the left edge, the
+sash window and its chipped radiator, the plant, the journals stacked on the floor. Her design
+held completely, wardrobe and glasses included. **And both expressions came back small** — the
+anatomy-plus-wrong-readings method worked on two faces at once, which is one more than 7a proved.
+
+> ### ✅ `[confirmed 2026-09-09]` — "above the ankle bone" fixes the turn-ups
+>
+> **The bare ankle survived, first time.** Three earlier plates put the turn-ups straight down
+> onto the shoe against a requirement written twice, including in `Constraints:`. The change was
+> a single word: *"a band of bare ankle shows"* describes a **result**; *"the turn-ups sit above
+> the ankle bone"* names a **landmark the engine can find.**
+>
+> 🔑 **Generalise it, because it is the same rule as [naming where the photographer
+> stands](../../google-flow/nano-banana-2.md#3c--name-where-the-photographer-stands-not-what-the-shot-looks-like):**
+> anatomy and architecture are checkable, results and quantities are not. Promoted into
+> [`characters/tarquin.md`](./characters/tarquin.md#-the-bare-ankles-do-not-survive--and-they-are-the-joke).
+
+**Drifted, all of it kept:**
+
+- **✅ He is sitting up, not lying back.** The prompt said *lying back along the couch*; he came
+  back propped upright with his legs stretched out and his ankles crossed on the couch. **Better,
+  and now canon** — a man lying flat has surrendered to the process, and Tarquin has not. He is
+  sitting in a therapist's room like a man in an airport lounge. *(It also no longer matches 7b's
+  reclining geometry, which is moot: 7b is dead.)*
+- **The pen is in her hand, not capped on top of the closed notebook.** ⚠️ **Second sighting —
+  7b did exactly the same thing.** *"He has stopped taking notes because he has reached a
+  conclusion"* is a **story fact expressed as prop placement**, and the engine draws a therapist
+  with a pen in her hand because that is what the words *therapist* and *notebook* pull. **Do not
+  spend a round on it.** If the beat matters, it belongs in the motion prompt as an action —
+  *she sets the pen down* — not in a still as a state.
+- **The framed print hangs high, not slightly low.** Nothing depends on it.
+- ⚠️ **The couch arm came back with a visible tear near her end** *(read off the frame — worth
+  Jack's eye to confirm)*. **This is the second time and the phrasing was already the fix.**
+  7a asked for *"a faint worn patch"* and got a hole; 7c wrote the patina — *"slightly flattened
+  and darker where hands have rested"* — **and got damage anyway.**
+  🔑 **Promote the rule: on anything that should read as expensive, do not name the wear at all.**
+  Money-quiet rooms are legible from the objects in them; the engine reads any wear noun as
+  permission to break something. Next time the clause is simply deleted.
+
+---
+
+### 7c-y — the therapist explains a feeling · **video** · written 2026-09-09, unrun
+
+**The beat:** she is explaining to him what a feeling is, patronisingly, and he is not getting
+there. **No dialogue** — the narration is recorded separately, as always.
+
+#### 🔴 The design problem, and the answer that solves three risks at once
+
+*"Explaining, patronisingly, with no dialogue"* pulls toward the two things this engine is worst
+at and the two things that most reliably read as AI:
+
+| The obvious way to shoot it | Why it is the wrong instruction |
+| --- | --- |
+| She talks; we watch her mouth | **Mouth-audio desync is a named 2026 slop tell** `[community]`, and the narration is recorded later, so a visibly talking mouth is a permanent lip-sync liability in the cut |
+| She makes an explanatory hand gesture | **Hand-morph frames are top of the same tell list**, and fine hand articulation is a [documented Omni weak area](../../google-flow/omni-flash.md#design-the-shot-around-the-difficulty-ranking-not-against-it). Her hands are holding a notebook and a pen — the worst possible subject |
+
+🔑 **So the clip is the pause, not the sentence.** She has just finished a phrase and is waiting
+to see whether it landed. **Patronising is a tempo, not a gesture** — the head that tilts a
+fraction and holds, the look that stays a beat too long, the willingness to simply wait for a
+grown man to catch up. It needs no mouth and no fingers.
+
+**And the button is the intake of breath before the next sentence.** The clip ends as her lips
+part very slightly to start again — and cuts. Funnier than showing the sentence, zero lip-sync
+cost, and it hands the recorded narration a clean place to land.
+
+This is [7a and 7b's established shape](#7a--the-consulting-room--still--accepted) — *one motion
+with a settle* — run backwards: **one settle with a motion at the end.**
+
+#### 🔴 The single most valuable anti-slop clause here is breathing and blinking
+
+New this pass, and it is worth more on a two-hander than everything else combined. The 2026
+tell-lists name **biological motion irregularity** — *"blinking, breathing, or micro-expressions
+being absent, stiff, or unnaturally timed"* — among the twelve most consistent AI-video tells
+`[community]`. A near-static shot of two seated people is **the exact shot that fails this way**:
+there is nothing else in frame to carry life, so if they do not breathe they are waxworks.
+
+**Two clauses, and neither is optional on any shot of a person doing nothing:**
+
+- **Prompt the breathing and the blinking explicitly.** They are the whole performance here.
+- 🔑 **State that they do not blink together.** Two people blinking on the same frame is uncanny
+  in a way nobody can name and everybody sees. Unprompted, a model has no reason to stagger them.
+
+#### 🔴 Tab: Frames. Not Ingredients, and it is not close
+
+[The tab rule](../../google-flow/omni-flash.md#-the-tab-rule) asks one question — *what can this
+shot not survive losing?* **Her face.** She was invented in the 7c still forty minutes ago; she
+has no Flow Character, no sheet and no other picture. Those pixels are the only copy that exists.
+
+- **Ingredients [re-renders every person from scratch](../../google-flow/omni-flash.md#-ingredients-re-renders-faces--it-will-not-hold-an-unnamed-person)**
+  and explicitly will not hold an unnamed person. It would redraw her, and there would be nothing
+  to compare the result against.
+- **`@Tarquin-new` is not cast, and must not be.** Characters live on Ingredients, and
+  [the two tabs are mutually exclusive in Flow's UI](../../google-flow/omni-flash.md#️-the-combined-mode-does-not-exist-in-flow)
+  `[confirmed 2026-08-16]`. Choosing the Character means choosing to lose her. His identity is
+  already in the frame we are continuing from.
+- **No end frame.** Omni 1.1 now has a last-frame slot
+  ([seventh pass](../../google-flow/omni-flash.md#seventh-pass--omni-11-flash-and-the-speech-punctuation-trap-2026-09-09)),
+  and the standing rule is still [never to pin an `endImage`, which morphs](../../video-fx/hybrid-method.md).
+  A near-static clip does not need one.
+
+#### ⬜ No push-in, deliberately — and this one is a real decision
+
+The push-in is [the one move an eight-second clip means something with](../../cinematography/motion-and-cutting.md#1-movement),
+and 8b-fog spent it well. **Not here.** The subject of this frame is **the width of empty rug
+between the two of them** — that gap is the whole joke about what money buys you. A push-in
+closes the gap, which is the one thing in the picture that must not change. **The stillness is
+the argument.** Camera locked in the prompt, and nothing added in post either.
+
+#### ⬜ And no shutter clause, deliberately
+
+The [24fps / 180° shutter line](../../google-flow/omni-flash.md#the-shutter-is-the-tell-nobody-prompts-for)
+is `[confirmed]` and earns its place **on shots with fast motion in them**, because it tells the
+model which frames to smear. Nothing in this clip moves fast enough to smear. It would be a word
+that buys nothing, and [the biggest lever on this engine is subtraction](../../google-flow/omni-flash.md#length-three-to-four-sentences-and-the-lever-is-subtraction).
+
+#### ⚠️ Two speech traps, one of them new
+
+- **Never write a colon after a person's action, and never use quotation marks.** `[community]`,
+  2026-09-09: in Omni, `Woman says: hello` **triggers synthesised speech**, and
+  `Woman says: "hello"` **burns the words on screen as a subtitle**. Both are catastrophic here
+  and both are punctuation, not vocabulary. The block below contains neither character.
+- **`No music and no voices.`** is a negation and it is the sanctioned kind — it is Google's own
+  documented idiom, and it is [the exact phrasing that worked on 8b-fog](#8b-fog--the-clip--video--ran-and-accepted-2026-09-08).
+  Reused verbatim rather than improved.
+
+**Length ~110 words.** The [open conflict](../../google-flow/omni-flash.md#-open-conflict-how-long-should-an-omni-prompt-be)
+is still open; the independent 2026 testing that says **30–80 words** is one more data point, and
+our own accepted 8b-fog ran ~105. The resolution we use is unchanged — **the axis is kind, not
+length** — and every sentence below describes *what the shot is*, not how to achieve it.
+
+**Model: Omni Flash. Tab: Frames. Attach the accepted 7c still as the frame — nothing else, no
+Character, no Ingredients, no end frame.** Paste into the **prompt box on the Frames tab**:
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame. The camera is locked off on a tripod and holds completely still for the whole shot.
+
+The woman has just finished a sentence and is waiting to see whether it landed. She tilts her head a fraction and holds it there, keeping her eyes on him a beat longer than is comfortable. Near the end of the shot her lips part very slightly as she draws breath to start again, and the shot ends there.
+
+The man keeps looking at her. His eyes drop for a moment and come back up to her face, and he swallows once.
+
+Both of them breathe, and they blink at different times. Everything else in the room stays still.
+
+Audio: a radiator ticking as it warms, one creak from the couch, and faint London traffic through old glass. No music and no voices.
+Thanks.
+```
+
+**⬜ The talking version is now its own entry, not a swapped paragraph.** Jack asked for it
+2026-09-09 — see [`7c-y2`](#7c-y2--the-therapist-explains-a-feeling-mouths-moving--video--written-2026-09-09-unrun),
+which changes the audio clause, the event count and the do-not-go-closer rule. **Run both:** this
+one asks whether the *pause* carries the joke, `7c-y2` asks whether the *explanation* does, and
+the still is already paid for.
+
+**Post, in Premiere, in this order:**
+
+1. **A 10–15% speed adjustment** across the clip. *"Unnaturally smooth motion"* is a named tell
+   and the counter is a ramp, not a prompt change `[community]`.
+2. **Film grain at 10–15% opacity** over the finished clip — the motion equivalent of the Portra
+   grain already in the still.
+3. ⚠️ **Nothing ships unmeasured** — `scripts/delivery-qc.sh` before anything leaves the machine
+   ([`delivery.md`](../../video-fx/delivery.md)).
+
+---
+
+### 7c-y2 — the therapist explains a feeling, mouths moving · **video** · written 2026-09-09, unrun
+
+**Jack asked for the talking version, 2026-09-09**, having read the lip-sync cost on
+[`7c-y`](#7c-y--the-therapist-explains-a-feeling--video--written-2026-09-09-unrun). This is that
+shot, built properly rather than as a swapped paragraph — the audio clause, the framing argument
+and the event count all change when a mouth moves.
+
+**Run both.** They are cheap and they answer different questions: `7c-y` asks whether the *pause*
+carries the joke, `7c-y2` asks whether the *explanation* does. Nobody knows, and the still is
+already paid for.
+
+#### 🔴 The dependency this version creates — read before shooting
+
+**A visibly talking therapist commits the film to a recorded therapist voice**, because the mouth
+in the picture now has to belong to somebody. [`narration/ai-studio-cast.md`](./narration/ai-studio-cast.md)
+has **two voices — Bob (`Algenib`) and Tarquin (`Zubenelgenubi`) — and no therapist.**
+
+🔑 **This is not a blocker and it may be an upgrade.** Scene 7's punchline is *hers*:
+*"I don't think there's any amount of therapy that can help you. You need the most powerful
+psychedelic known to man."* A clip of her visibly delivering it is stronger than a narrator
+reporting it, and it spends the line on a character rather than on the voice-over. **But the job
+is now real:** a third AI Studio voice, built the same way as the other two — a Black British
+woman, early fifties, London, warm and unhurried, and completely unbothered.
+⬜ **Not built. It is the gate on this version, not on the still.**
+
+#### ⬜ `7c-y`'s reason for existing still stands
+
+The pause version is not the timid option and should not be treated as one. It ends on her
+drawing breath to start again, it needs no third voice, and it carries **zero** of the two named
+tells below. If both clips come back usable, that is a real choice about whether Scene 7's
+verdict is *heard* or *implied* — and it belongs to Jack, not to this file.
+
+#### 🎯 The two tells a moving mouth turns on, and what actually counters them
+
+| Tell `[community]` | The counter available here |
+| --- | --- |
+| **Mouth-audio desync on avatars** | 🔑 **We discard the generated audio anyway.** The recorded VO is laid over it in Premiere, so desync is a *cutting* problem, not a generation one — and it is solved by cutting to her on a phrase boundary rather than by prompting |
+| **Morphing on lips, teeth and clothing edges** — the artefact concentrates there `[academic]` | 🔑 **Distance is already doing the work, for free.** She is the further, smaller figure in this two-shot: her mouth is a few dozen pixels, not a close-up. **This is the same finding as 8b-fog's forty-metre silhouette** — the frame we already have is the mitigation, and it is an argument for *not* pushing in |
+
+**Which gives the one hard rule for this variant: do not go closer.** A single on her would put
+the exact failure surface in the middle of the frame at full size. The two-shot is what makes a
+talking mouth safe.
+
+#### ⚠️ The audio clause changes, deliberately, and it is the one judgement call here
+
+`7c-y` and [8b-fog](#8b-fog--the-clip--video--ran-and-accepted-2026-09-08) both close with
+**`No music and no voices.`** — proven phrasing, and it is *wrong here*: on a shot whose whole
+subject is a woman speaking, *no voices* is as likely to freeze her mouth as to mute the track.
+
+**This block uses `No dialogue and no music.` instead** — `no dialogue` is
+[Google's own documented idiom](../../google-flow/omni-flash.md#-negatives-do-not-work-and-they-actively-backfire)
+and it names the **audio track**, not the performance.
+
+🔑 **The asymmetry settles it.** If a synthesised voice comes back anyway, it costs nothing — the
+audio is discarded and replaced. If the mouths come back frozen, that is a wasted generation.
+**Take the cheap failure.**
+
+#### ⚠️ Two events, and no more
+
+*"Stacking three or more events in one clip"* is a named Omni mistake `[community]`. This clip
+has exactly two — **she talks in short phrases; he starts to say something and does not.**
+Breathing and blinking are not events, they are the [biological-motion
+clause](../../google-flow/omni-flash.md#-biological-motion--the-anti-slop-clause-for-any-shot-of-a-person-doing-nothing),
+and they stay.
+
+**His beat is why this version might beat the pause.** A man opening his mouth to ask a question
+and finding he does not have it is the whole of Tarquin in one gesture — *"What **is** this
+feeling?"* is a question he cannot finish asking. It costs one small motion and it is the funnier
+half of the frame.
+
+#### ✅ Unchanged from `7c-y`, and for the same reasons
+
+**Frames tab · the accepted 7c still as frame 0 · no Character, no Ingredients, no end frame ·
+camera locked · no push-in · no shutter clause · hands stay put.** The reasoning is
+[in the 7c-y entry](#7c-y--the-therapist-explains-a-feeling--video--written-2026-09-09-unrun)
+and none of it moves because a mouth does. The hands clause matters *more* here, not less:
+fine hand articulation is a documented weak area and she is holding a pen.
+
+**⚠️ Punctuation check before firing — this block contains no colon after a person's action and
+no quotation marks anywhere.** In Omni a colon
+[synthesises speech and a quotation mark burns a subtitle](../../google-flow/omni-flash.md#-the-speech-trap-is-punctuation-not-vocabulary).
+The word *Audio* is followed by a colon, which is a label rather than a speaker, and is the same
+construction the accepted 8b-fog block used.
+
+**Model: Omni Flash. Tab: Frames. Attach the accepted 7c still as the frame — nothing else, no
+Character, no Ingredients, no end frame.** Paste into the **prompt box on the Frames tab**:
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame. The camera is locked off on a tripod and holds completely still for the whole shot.
+
+The woman is explaining something simple to him, slowly. She talks in short phrases with a small pause after each one, watching his face between them to see whether he is following. Her head is tilted a fraction. Her hands stay exactly where they are, resting on the notebook.
+
+The man watches her. Partway through, his mouth opens as though he is about to ask something, and then closes again without a word. He swallows once and keeps looking at her.
+
+Both of them breathe, and they blink at different times. Everything else in the room stays still.
+
+Audio: room tone only, a radiator ticking as it warms, one creak from the couch, and faint London traffic through old glass. No dialogue and no music.
+Thanks.
+```
+
+**Post, in Premiere — same as `7c-y`, plus one:**
+
+1. **Cut on a phrase boundary, not on a frame count.** She pauses between phrases by design; those
+   pauses are the edit points, and they are what makes a recorded VO sit over generated mouth
+   movement without reading as a dub.
+2. **A 10–15% speed adjustment** across the clip against the smooth-motion tell `[community]`.
+3. **Film grain at 10–15% opacity.**
+4. ⚠️ **Nothing ships unmeasured** — `scripts/delivery-qc.sh`
+   ([`delivery.md`](../../video-fx/delivery.md)).
+
+---
+
+## Scene 7 — the shot/reverse rebuild *(2026-09-09)*
+
+**Jack's call, 2026-09-09: go to close-ups — her talking, him listening.** This supersedes
+`7c-y` and `7c-y2` as the *plan* without discarding either; see
+[what happens to them](#what-happens-to-7c-y-and-7c-y2) below.
+
+### 🔴 Yes, separate prompts — four of them, and the reason is not style
+
+**One clip containing both close-ups would require the model to cut**, and a cut is the one thing
+we spend a clause *suppressing* on every other shot
+([`no cuts` / `single continuous shot`](../../google-flow/omni-flash.md#-negatives-do-not-work-and-they-actively-backfire)
+is sanctioned idiom precisely because Omni's default is multi-shot). Asking for one hands the
+model the cut point, the two framings and the timing, none of which it has any reason to get right.
+
+🔑 **And the house rule already settles it: [cutting is free and generating is
+not](../../google-flow/omni-flash.md#the-rule-that-outranks-all-of-it-a-real-camera-never-catches-the-whole-fall).**
+Two clips cost the same as one and give us the cut point, the durations, and the ability to
+re-time in Premiere without spending a generation.
+
+**But it is four prompts, not two, and this is the part worth knowing before starting.** The
+Frames tab needs a **start frame**, and we do not have close-up stills — 7c is a wide two-shot.
+So the chain is:
+
+| # | What | Tool | Depends on |
+| --- | --- | --- | --- |
+| **7d** | CU therapist — still | Nano Banana Pro | the accepted 7c still, attached, job = **her face** |
+| **7d-y** | CU therapist talking — clip | Omni Flash, Frames | 7d accepted |
+| **7e** | CU Tarquin — still | Nano Banana Pro | `@Tarquin-new` cast |
+| **7e-y** | CU Tarquin listening — clip | Omni Flash, Frames | 7e accepted |
+
+⚠️ **One at a time, still then video** — no batch of stills. 7d first; everything downstream
+reads off what actually comes back.
+
+### ✅ This is a better scene than one clip was, and the reason is structural
+
+The 7c wide is not wasted by going closer — **it becomes the establisher, which is what it should
+always have been.** [`motion-and-cutting.md`](../../cinematography/motion-and-cutting.md#2-designing-a-sequence):
+*establish geography once, early; then every closer shot spends its whole budget on feeling
+instead of re-explaining where we are.* And *pick a direction for shot size and hold it —
+wide→close is the default shape and reads as moving toward the truth.*
+
+**The argument the scene makes, in one sentence:** *money buys you the professional, but it cannot
+buy you the vocabulary.* Three steps, one per shot:
+
+1. **7c — two people and a gap.** The width of empty rug between them is the joke about what he
+   has paid for. Banked; it does not need to be in every shot.
+2. **7d — she explains it, patiently, at the speed you would use on a child.**
+3. **7e — he still does not have it.** 🔑 **His close-up is the button** — *"one shot, often
+   small, closing the transaction the scene opened."* A man opening his mouth to ask a question
+   and finding he does not own it.
+
+### 🎯 The morphing risk is real, and the sequence is itself the mitigation
+
+Going closer was flagged against on `7c-y2` because [morphing concentrates on lips, teeth and
+clothing edges](#7c-y2--the-therapist-explains-a-feeling-mouths-moving--video--written-2026-09-09-unrun)
+and distance was doing that work for free. That cost is now being paid deliberately. **Three
+things pay it down, and none of them is a smaller idea:**
+
+- 🔑 **Only one of the two clips has a moving mouth.** He is *listening* — his half of the
+  sequence carries zero lip risk by construction. This is the house rule *"when a shot needs a
+  documented weakness, cut around it instead"* arriving as a scene structure rather than a fix.
+- **Medium close-up, not a tight face.** Head and shoulders, top of frame just above the head,
+  bottom at mid-chest. It reads as a close-up, keeps the mouth off the centre of the frame, and
+  it is the correct size for the documentary register anyway — a tight face is a drama close-up,
+  not a press photograph.
+- **We can cut away from her mouth whenever it misbehaves.** Two clips means the edit chooses
+  which frames of her survive. One clip would not have.
+
+### 🔴 The axis, and it must be written into both prompts
+
+7c fixes the geography and a shot/reverse pair that ignores it will not cut. **In 7c he is
+frame-left looking right; she is frame-right looking left.**
+
+| | Camera sits | She/he looks | The window |
+| --- | --- | --- | --- |
+| **7d — her** | just past **his** shoulder, on the left side of the room | **frame-left**, at him | behind the camera to its left → she is lit near-frontally. Background: the plain warm-grey wall |
+| **7e — him** | just past **her** shoulder, on the right side of the room | **frame-right**, at her | now **behind him**, over his shoulder at the edge of frame → he is back-lit, his face filled by light bouncing off the pale wall opposite |
+
+🔑 **That lighting asymmetry is the scene's argument in one variable, and it is free — it is just
+where the window already is.** *She has the light and the answer; he has a window blowing out
+behind his head and no idea.* It also hands his frame the [one bright anchor](../../cinematography/frame.md#5-light)
+that stops a soft dark portrait reading as a broken file.
+
+⚠️ **Do not let the back-light kill his face.** State the bounce explicitly — a set fact left
+unsaid is [a set fact the model gets to decide](../../google-flow/nano-banana-2.md#6--if-the-camera-cannot-physically-stand-there-the-model-rebuilds-the-set).
+
+### 🔴 Each person keeps their side of the frame — and both drafts got it backwards
+
+**Corrected 2026-09-09, after both prompts were written and 7d had already been handed over.**
+
+**In 7c he is screen-left and she is screen-right. That does not change in a reverse angle.** The
+rule that keeps a shot/reverse pair cutting is that each person **holds the side of the frame they
+occupied in the master**, which means the foreground shoulder in an over-the-shoulder sits on the
+side belonging to *the person whose shoulder it is* — not opposite the subject by reflex.
+
+| Shot | Camera | Foreground shoulder | Subject | Looking |
+| --- | --- | --- | --- | --- |
+| **7d — on her** | past **his** shoulder, left end of the room | **his, lower LEFT** | her, centre-right | **frame-left** |
+| **7e — on him** | past **her** shoulder, right end of the room | **hers, lower RIGHT** | him, centre-left | **frame-right** |
+
+Both drafts had the shoulder mirrored, which would have flipped the geometry and produced a pair
+that does not cut — two people apparently looking the same way.
+
+🔑 **Second geometry error in one entry, and the two have the same cause:** an angle written from
+what it should *look like* rather than from where the camera is standing in a room that already
+exists. **[The window](#️-check-the-window-against-the-room-before-writing-it--this-entry-got-it-wrong-first)
+and the shoulder are the same check.** Walk the room before writing any reverse: where is the
+camera, which end is the window, and which side does each person hold?
+
+### ✅ Both are over-the-shoulder, and that is proven in this room
+
+Each close-up puts the other person's out-of-focus shoulder and the back of their head in the
+near foreground. Two jobs at once: it is [the foreground occluder that stops a frame reading
+flat](../../cinematography/frame.md#1-depth-is-the-first-thing-to-fix) — the cheapest fix there
+is — and it locks the eyeline geometry so the pair cuts.
+
+⚠️ **The known failure is an invented face in the foreground** (it happened on 8b). The counter is
+already proven in this exact room: [7a](#7a--the-consulting-room--still--accepted) ran
+*"the out-of-focus shoulder and the back of the therapist's head cut into the foreground"* and
+came back clean. **Name a shoulder and the back of a head, positively, and never a profile.**
+
+### What happens to `7c-y` and `7c-y2`
+
+**Neither is cancelled and neither is urgent.** They are clips of the establisher, and the
+establisher may still want to move — *(the 7c still itself is accepted and unaffected either
+way)*. **Shoot the close-ups first**: if 7d and 7e carry the beat, 7c can stay a held still under
+narration and no clip is needed at all, which is the cheaper film. Revisit after.
+
+---
+
+### 7d — close on the therapist · **still** · written 2026-09-09, unrun
+
+**Cast nothing. Attach the accepted 7c still as the only reference, job stated: her face.**
+She has no Flow Character, no sheet and no other picture — those pixels are the only copy of that
+face that exists, which is the same fact that ruled Ingredients out for the clips.
+
+> ### 🔴 Read this before firing 7d — the reference may not hold her face
+>
+> **[7e proved on 2026-09-09](#7e--close-on-tarquin--still--written-2026-09-09--shoot-after-7d)
+> that a wide-shot reference does not carry a face at close-up range**, and 7d is built the same
+> way off the same wide. Expect the same failure. **She has no Character to fall back on**, so
+> the fix is the reference, not the casting:
+>
+> 1. 🥇 **Crop the 7c still to her head and shoulders in Flow's crop tool, and attach the crop
+>    instead of the full frame.** Same pixels; the face now fills the reference it is read from.
+>    Zero generations. **Do this first.**
+> 2. **Make her a Flow Character** from the 7c still — permanent, and owed anyway if Scene 7 keeps
+>    her face on screen.
+>
+> ⚠️ **If the crop is used, the room comes with it no longer** — a head-and-shoulders crop shows
+> wall and not much else, which is fine here because the Location slot below is already short and
+> the wall behind her is plain.
+
+**⚠️ The Location slot is deliberately short.** [Reference attached → the Location slot shrinks to
+what the reference cannot show](../../google-flow/nano-banana-2.md#2--do-not-restate-what-the-reference-already-shows).
+The 7c frame carries the room, the light and the look for free; re-pasting the full room paragraph
+would be two authorities on one set and is a known drift source. The prompt's job here is **the
+camera and the face**, not the room.
+
+**And the camera is named as a place, not as a framing** — *just past his shoulder, on the couch
+side of the room* is [a position that either exists in the attached picture or does not](../../google-flow/nano-banana-2.md#3c--name-where-the-photographer-stands-not-what-the-shot-looks-like),
+and the model can check it. *"A close-up of the therapist"* is an abstraction it would satisfy by
+building whatever room it needed.
+
+**Model: Nano Banana Pro. Attach the accepted 7c still. Cast no Character.** Paste into the
+**prompt box**:
+
+```prompt
+A documentary press photograph of a private therapy session. This is a news picture, not an advertisement. It is a closer angle on the same session as the attached photograph, taken a moment later.
+
+Reference: use the attached photograph for the woman's face, her hair, her glasses and her clothes, and for the room, the light and the colour. All of those stay exactly the same.
+
+Subject: The woman from the attached photograph, in her armchair, seen from the chest up.
+
+Composition: 85mm lens at f/2.0. The camera stands just past the man's shoulder on the couch side of the room, so his out-of-focus shoulder and the back of his head fill the lower left corner of the frame and we look past them at her. No part of his face is visible. She sits centre-right, her head in the upper third, and she is looking frame-left at him. Behind her is the plain warm-grey wall, softly out of focus. The horizon is not quite level.
+
+Action: She is in the middle of explaining something simple, slowly. Her mouth is open on a word and her chin is a fraction down, her head tilted very slightly. Her eyes are steady on him and her eyebrows sit level and relaxed. She is patient in the way that is not quite a compliment. This is not a smirk, not a frown, not sympathy and not drama. The expression stays small.
+
+Location: The same consulting room, seen closer.
+
+Style: Shot on 35mm Kodak Portra 400, fine natural grain, soft warm-neutral colour. The sash window behind the camera to its left is the only light source, flat grey afternoon daylight falling on her face from that side, with the wall behind her a stop darker. Real skin with visible pores, uneven tone and a matte sheen rather than gloss. Her face is naturally asymmetric.
+
+Constraints: Only her face is visible. Nothing in the frame carries readable text. Her glasses stay low on her nose. The expression stays small.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+---
+
+### 7d-y — the therapist explains · **video** · written 2026-09-09, ⚠️ blocked on 7d
+
+**Omni Flash · Frames tab · the accepted 7d still as frame 0 · no Character, no Ingredients, no
+end frame · camera locked.** The reasoning is [7c-y's](#7c-y--the-therapist-explains-a-feeling--video--written-2026-09-09-unrun)
+and none of it changes: Ingredients would redraw a face that exists in one picture.
+
+**Audio uses `No dialogue and no music.`** — the [7c-y2 reasoning](#7c-y2--the-therapist-explains-a-feeling-mouths-moving--video--written-2026-09-09-unrun):
+on a shot whose subject is a woman speaking, *no voices* is as likely to freeze her mouth as to
+mute the track, and a synthesised voice costs nothing because the audio is discarded and replaced.
+
+**One event. The [biological-motion clause](../../google-flow/omni-flash.md#-biological-motion--the-anti-slop-clause-for-any-shot-of-a-person-doing-nothing)
+stays** — a single held face with no breath and no blink is a waxwork, and there is nothing else
+in a close-up to carry life.
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame. The camera is locked off on a tripod and holds completely still for the whole shot.
+
+The woman keeps explaining, slowly. She talks in short phrases with a small pause after each one, and between them she watches his face to see whether he is following. Near the end she stops and simply waits, her mouth closed, still looking at him.
+
+She breathes and she blinks. The out-of-focus shoulder in the corner of the frame stays where it is. Everything else in the room stays still.
+
+Audio: room tone only, a radiator ticking as it warms and faint London traffic through old glass. No dialogue and no music.
+Thanks.
+```
+
+---
+
+### 7e — close on Tarquin · **still** · written 2026-09-09, ⚠️ shoot after 7d
+
+**Cast `@Tarquin-new`. Attach nothing. The room goes back into prose.**
+
+> ### 🔴 `[confirmed 2026-09-09]` — a wide-shot reference does not carry a face at close-up range
+>
+> **Jack: *"Tarquin's face changed."*** This entry was revised mid-session to attach the 7c still
+> instead of casting the Character, on the [supersede-the-prose
+> rule](../../google-flow/nano-banana-2.md#7--write-the-keep-list-from-the-accepted-still-not-from-the-prose-that-made-it).
+> **That was the wrong trade and it cost the face.** Reverted to the original build.
+>
+> 🔑 **The mechanism, and it is obvious in hindsight: a reference carries a face only in
+> proportion to how many pixels that face occupies in it.** In the 7c wide his head is a small
+> part of the frame. Asked for a chest-up portrait, there is nothing in the reference to enlarge,
+> so the engine invents the detail — and inventing detail on a face *is* changing the face.
+>
+> **This sharpens the existing rule rather than replacing it.** [7b's
+> ruling](#7b--the-therapists-verdict--still--accepted) says *cast a Character when the face is
+> the shot; use references when it isn't.* **Add the missing half: a reference only counts as
+> carrying a face if the face is roughly the size in the reference that it will be in the
+> output.** Going *closer* than the reference is the failure case; staying the same size or going
+> wider is fine.
+>
+> **The room is the cheaper thing to lose.** 7c was itself built Character-cast with the room in
+> prose and matched first time — a plain warm-grey wall, a sash window and a radiator are
+> forgiving. **A face is not.**
+>
+> ⚠️ **This has a consequence for [7d](#7d--close-on-the-therapist--still--written-2026-09-09-unrun)
+> and it is worse, because she has no Character.** Her close-up is built from the same wide, so
+> the same failure is likely. **Two fixes, cheapest first:**
+> 1. **Crop the 7c still to her head and shoulders in Flow's crop tool, and attach the crop
+>    instead of the whole frame.** Same pixels, but now the face fills the reference. Zero
+>    generations. **Try this first.**
+> 2. **Make her a Flow Character** from the 7c still. Permanent, and she needs one anyway if she
+>    ever appears again.
+
+**⚠️ Say nothing about his face or clothes.** A Character is attached and there is
+[no direction to push him in](./characters/tarquin.md#-when-to-describe-his-face-and-when-not-to-2026-08-26)
+— 4b described the face with nothing to override and came back older than he should be. The
+leisure wardrobe lives in the Character's Body, which is
+[the whole reason `@Tarquin-new` exists](./characters/tarquin.md#-tarquin-new--the-leisure-character-2026-08-26).
+
+**⚠️ The Location slot names only what is in THIS frame.** No rug, no armchair, no journals, no
+plant, no tissues — none of them are behind him, and
+[anything named in a keep-list is an instruction to draw it](../../google-flow/nano-banana-2.md#6--if-the-camera-cannot-physically-stand-there-the-model-rebuilds-the-set),
+wherever the camera happens to be pointing. Keep-lists are per-shot, not per-set.
+
+**⚠️ He sits up.** [Canon as of 2026-09-09](./characters/tarquin.md#-he-sits-up-he-does-not-lie-down),
+from the accepted 7c frame.
+
+> ### ⚠️ Check the window against the room before writing it — this entry got it wrong first
+>
+> The draft put the sash window *"behind him at the right edge of the frame."* **In 7c the window
+> is at the far-left end of the room, beyond his head.** From a camera standing past her shoulder
+> on the armchair side, that window lands **behind him at the far LEFT of frame** — the right edge
+> is where the camera came from.
+>
+> 🔑 **This is the cheapest possible version of the most expensive failure in the file.** A light
+> source asked for in a place the set does not have it is
+> [an instruction to rebuild the set](../../google-flow/nano-banana-2.md#6--if-the-camera-cannot-physically-stand-there-the-model-rebuilds-the-set),
+> and it will be obeyed at the reference's expense. **Before writing any reverse angle, walk the
+> room: where is the window, and which edge does it land on from the new position?**
+
+**Written after 7d deliberately** — it is [the button](../../cinematography/motion-and-cutting.md#2-designing-a-sequence),
+and a button is easier to aim once the shot it answers exists. Adjust the eyeline height off what
+7d actually comes back as.
+
+**Model: Nano Banana Pro. Cast `@Tarquin-new`. Attach no reference image.** Paste into the
+**prompt box**:
+
+```prompt
+A documentary press photograph of a private therapy session. This is a news picture, not an advertisement. It is a close angle on one man in a consulting room, shot from the other end of the room past his therapist's shoulder.
+
+Subject: The cast character, sitting up on a low upholstered couch, seen from the chest up.
+
+Composition: 85mm lens at f/2.0. The camera stands just past the therapist's shoulder on the armchair side of the room, so her out-of-focus dark green shoulder and the back of her head fill the lower right corner of the frame and we look past them at him. No part of her face is visible. He sits centre-left, his head in the upper third, and he is looking frame-right at her, past her shoulder. A tall sash window stands behind his far shoulder at the left edge of the frame, blown out and soft. The horizon is not quite level.
+
+Action: He is listening and not getting there. His mouth is closed and his lips are pressed very slightly together. The inner end of one eyebrow is lifted a fraction higher than the other, putting a single short crease between them. His eyes are on her, steady and slightly unfocused, as though he is listening to something inside his own head. His chin is a little tucked. That is the whole expression and the rest of his face is relaxed. This is not shock, not fear, not a pantomime frown and not comedy. A stranger looking at this photograph would take a second to notice anything was wrong with him at all.
+
+Location: A tasteful, quiet, expensive consulting room in London. Behind him, a plain wall in a soft warm-grey and the tall sash window at the left edge of the frame, with a radiator beneath it chipped at one corner. The pale upholstered back of the couch runs along the bottom of the frame. Comfortable rather than grand — money that does not announce itself.
+
+Style: Shot on 35mm Kodak Portra 400, fine natural grain, soft warm-neutral colour. The sash window at the left edge is the only light source, so the light comes from behind his far shoulder and his face is lit softly by daylight bouncing back off the pale wall opposite the window. Real skin with visible pores, uneven tone and a matte sheen rather than gloss. His face is naturally asymmetric.
+
+Constraints: Only his face is visible. Nothing in the frame carries readable text. His mouth stays closed. The expression stays small.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+---
+
+> ### 🔴 *"That did not zoom into Tarquin"* — it was never going to, and that is deliberate
+>
+> **Jack, 2026-09-09**, having fired `7e-y`'s block on the 7c wide. The prompt says *"the camera
+> is locked off on a tripod and holds completely still for the whole shot"* — **the clip did
+> exactly what it was told.**
+>
+> 🔑 **We never ask Flow for a camera move.** [`hybrid-method.md`](../../video-fx/hybrid-method.md),
+> ruled 2026-08-26: Omni's expensive failure is **regeneration, and camera translation is what
+> fires it.** [8b-fog made this exact call](#8b-fog--the-clip--video--ran-and-accepted-2026-09-08)
+> — *yes to the push-in, no to asking Flow for it* — and the frame survived. **Her face exists in
+> one picture. A camera move is the single instruction most likely to redraw it.**
+>
+> **So there are three ways to get the close-up, and they are not equal:**
+>
+> | Route | Cost | Verdict |
+> | --- | --- | --- |
+> | 🥇 **Shoot `7e`** — a real close-up still, then clip it locked | one generation, already written | **Recommended.** 85mm compression, an over-the-shoulder foreground, the backlit window. A designed shot rather than an enlargement |
+> | 🥈 **Push in Premiere** over the clip already made | free, exact, re-triable | ⚠️ **Resolution is the catch.** He is ~30% of frame width, so a chest-up crop is roughly 3×. From 720p that is mush; from Omni 1.1's **4K upscaled output** it is about a 1.7× blow-up and probably holds under grain. **Check what was exported before relying on it** |
+> | 🥉 **Crop the 7c still in Flow's crop tool**, use the crop as frame 0 | zero generations | Continuity guaranteed, instant — but it is a 35mm wide blown up: flat, no foreground, no lens compression. A fallback, not a shot |
+> | ❌ **Ask Omni to push in** | one generation | Against the standing ruling, and it risks the two faces |
+>
+> **The push-in was always a Premiere move.** What was missing was not a clause in the prompt — it
+> was a close-up to cut to.
+
+### 7e-y — Tarquin stops listening · **video** · written 2026-09-09, ⚠️ blocked on 7e
+
+**Omni Flash · Frames tab · the accepted 7e still as frame 0 · no Character, no Ingredients, no
+end frame · camera locked.**
+
+#### 🔴 Jack revised the beat, 2026-09-09: *confused, and not listening*
+
+**This is a better button than the one it replaces, and it changes what the clip does.** The
+earlier version had him open his mouth to ask a question and fail — *"he does not own the
+question."* Jack's note is sharper: he is not even in the room. **A man paying by the hour for an
+answer, who checks out while it is being given to him**, is the whole character.
+
+⚠️ **The two beats fight each other and only one can be in the clip.** *About to ask* is
+engagement; *not listening* is absence. **`Not listening` wins** — it is Jack's call and it is the
+funnier read.
+
+🔑 **And it is better shot as a change than as a state.** A still of a man not listening is just a
+blank face; **the clip catches the moment he goes.** Frame 0 already has him looking at her, so
+the drift is free — it is the difference between the first and last frame, which is exactly what
+[a clip is for and a still cannot do](../../cinematography/stills.md#1-what-makes-a-still-hold).
+
+**The button, and it is the joke:** his eyes slide off her and settle on nothing — and then, near
+the end, **they come back to her a beat too late.** That half-second of latency is a man realising
+he stopped listening and pretending he did not. Nobody has to say it.
+
+#### ✅ This is the safest clip in the sequence
+
+**The entire performance is eyes and breath.** No mouth, no hands — the
+[two documented weak areas](../../google-flow/omni-flash.md#design-the-shot-around-the-difficulty-ranking-not-against-it)
+and the [top two 2026 video tells](#-the-two-tells-a-moving-mouth-turns-on-and-what-actually-counters-them)
+are both absent by construction. It is also why the audio clause reverts to the
+[proven 8b-fog phrasing](#8b-fog--the-clip--video--ran-and-accepted-2026-09-08),
+`No music and no voices.` — use the strongest suppression available wherever nothing is talking.
+
+⚠️ **Which makes blinking load-bearing rather than decorative here.** On every other shot the
+[biological-motion clause](../../google-flow/omni-flash.md#-biological-motion--the-anti-slop-clause-for-any-shot-of-a-person-doing-nothing)
+is insurance against waxwork; on this one the blink **is** the performance. Two events, the Omni
+ceiling, and both of them are his eyes.
+
+#### ✅ 7e shot and accepted 2026-09-09, and the frame changed one thing in this block
+
+**Held:** the axis (her shoulder lower-right, him centre-left looking frame-right), the window and
+its chipped radiator at the left edge, the couch back along the bottom, the warm-grey wall, the
+85mm compression, the gilet and roll-neck out of the Character's Body, and **his face** — which is
+the whole reason the reference was dropped.
+
+🔑 **The frame handed the drift a destination the draft did not have.** The written block sent his
+eyes *"to nothing in the middle distance, past her shoulder"* — but in the accepted frame her
+shoulder **fills that side of the picture**, so there is no middle distance over there to drift
+into. **The blown-out sash window is at the opposite edge, and it is the brightest thing in
+shot.**
+
+**So he looks at the window.** It is motivated, it is the universal tell for a man who has
+checked out, it is a bigger and far more legible eye movement than an unfocus at this size — and
+the viewer's eye follows it for free, because [the eye goes to motion, then to high-contrast
+regions](../../cinematography/frame.md#2-the-focal-point). **Write the drift toward something
+that is in the frame.** Same finding as
+[placing people by landmark](../../google-flow/nano-banana-2.md#3c--name-where-the-photographer-stands-not-what-the-shot-looks-like),
+arriving from the performance side.
+
+⚠️ **Eyes only, not a head turn.** A head turn is a different, larger beat — *bored* rather than
+*absent* — and it puts his profile through a rotation, which is where morphing lives.
+
+#### ⬜ One addition: her shoulder is allowed to move a little
+
+The draft froze the foreground shoulder. **On a soft mass that large, eight seconds of absolute
+stillness reads as a cardboard cutout** — and she is supposed to be talking through the whole
+shot. **No face and no hands are visible in that corner**, so the usual reason to freeze a
+foreground does not apply here.
+
+It is written as ambient rather than as a beat, the same class as the rain in
+[8b-fog](#8b-fog--the-clip--video--ran-and-accepted-2026-09-08), so the
+[event count stays at two](../../google-flow/omni-flash.md#-the-speech-trap-is-punctuation-not-vocabulary):
+his eyes leave, his eyes come back.
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame. The camera is locked off on a tripod and holds completely still for the whole shot.
+
+The man is looking at her. Partway through the shot his eyes drift away from her towards the bright window at the left of the frame, and stay there. He is no longer taking any of it in. His head does not turn and his mouth stays closed.
+
+Near the end of the shot he blinks and his eyes come back to her, a beat later than they should have.
+
+He breathes and he blinks. The out-of-focus shoulder and the back of the head in the right of the frame shift very slightly, the way someone does while they are talking. Everything else in the room stays still.
+
+Audio: a radiator ticking as it warms, one creak from the couch, and faint London traffic through old glass. No music and no voices.
+Thanks.
+```
+
+**⬜ If firing it on the 7c wide two-shot instead of a 7e close-up**, the block needs one addition:
+she is in frame and an undirected person freezes or gets invented motion. Add before the audio
+line — *"The woman goes on talking quietly, and they blink at different times."* Everything else
+stands. **The close-up is the better clip** — at two-shot distance an eyeline drift is a few pixels
+and the joke does not read.
+
+#### ⬜ Knock-on for the 7e still — settled, it was shot looking at her
+
+The [7e prompt](#7e--close-on-tarquin--still--written-2026-09-09--shoot-after-7d) still says *"his
+eyes are on her."* **Leave it exactly as it is.** The clip needs him looking at her in frame 0 —
+that is what makes the drift visible. **Do not build the not-listening into the still**; a still
+of a man staring into space has no journey in it, and the pair would then have nowhere to go.
+
+**Post, for the pair, in Premiere:**
+
+1. 🔑 **Cut from her to him on one of her pauses**, not on a frame count — the pauses are written
+   into 7d-y for exactly this. Let the room tone run across the cut so the two shots read as one
+   moment.
+2. **A 10–15% speed adjustment** on each clip against the smooth-motion tell `[community]`.
+3. **Film grain at 10–15% opacity.**
+4. ⚠️ **Nothing ships unmeasured** — `scripts/delivery-qc.sh`
+   ([`delivery.md`](../../video-fx/delivery.md)).
+
+---
+
+
+
+
+---
+
+
+### 3c — the lane, hours later · **still** · written 2026-09-09, unrun
+
+**Jack, 2026-09-09: *"the dashboard does not convey that there has been a crash enough."*** He is
+right, and the fix he proposed — **blue lights, broken glass, the car on its side, camera at
+ground level** — is the one this file already half-anticipated: 3b's alternates list names
+*"broken glass on wet tarmac"* and *"the amber corner lamp in the grass — the wider version of
+this same idea."*
+
+#### ✅ This does not break the crash ruling, and it is worth being sure why
+
+[`story.md`](./story.md) ruled 2026-08-25 that **the crash is never shown** — *"Haneke shoots the
+aftermath, not the act,"* and a generated car crash is among the few things the engines reliably
+cannot do. **3c is aftermath.** The impact still happens in the black. Nothing here depicts the
+event.
+
+🔴 **The rule it *could* break is the other one: *we never show or say who died*.** Blue lights
+invite the audience to look for a casualty, and one wrong noun answers the question the whole film
+withholds. **The design answer is absence, and it is specified, not hoped for:**
+
+- **Nobody is near the car.** No covered shape, no stretcher, nothing being carried, nobody being
+  treated. **A single person receiving attention would say the other one did not survive** — the
+  same arithmetic that ruled two empty seats out of [3b](./shot-list.md).
+- **The two figures in shot are distant, soft and doing nothing.** They exist because
+  [a sterile environment is a named slop tell](../../google-flow/nano-banana-2.md#the-anti-slop-toolkit),
+  not because they carry information.
+- **The car's cabin is not legible from this angle** — it lies with its roof toward the camera.
+
+**What the frame says is *this was serious*. What it does not say is *who*.** That is exactly the
+canon position: [let the audience join the dots when they meet Bob again](./story.md#scene-3--the-crash).
+
+#### 🔴 The blue light source stays out of frame
+
+**Only the light is in the picture, never the vehicle it comes from.** Three reasons and each
+would do on its own:
+
+- **It is stronger.** [Withhold — a partial view, an obstruction](../../cinematography/symptoms.md#a-the-single-frame);
+  a frame that shows everything has nothing to discover. Blue on a wet lane is read as *emergency*
+  instantly, and the source adds nothing the viewer needed.
+- 🔴 **It dodges [trigger 1](../../flow/failure-modes.md#a5-the-five-triggers-badcodes-own)
+  entirely.** A police vehicle carries a real institution's wordmark and a reflective livery, and
+  *"asking for a legible real logo or wordmark is the most reliable block there is."*
+- **It is one fewer object to invent.** [The biggest lever on this engine is subtraction](../../google-flow/nano-banana-2.md#-descriptive-not-repetitive--and-what-it-costs-us).
+
+#### 🎯 Where it goes in the cut — and the recommendation is *after* 3b
+
+**Recommended order: 3b, then 3c.** 3b is seconds after, in the flat grey daylight the crash
+happened in; 3c is hours later at dusk with the light gone. **The elapsed time is free
+storytelling and it lives entirely in the gutter between the two frames** —
+[what you cut out between two stills does more work than what is in either one](../../cinematography/stills.md#3-the-gutter--what-happens-between-two-stills).
+
+🔑 **And it makes 3b's withholding deliberate rather than a failure.** The audience spends the
+dashboard shot unsure; 3c confirms it. That is a **reveal — a withheld shot** — where putting 3c
+first would make 3b a redundant footnote to information already given.
+
+⚠️ **The one cost, stated:** it runs close→wide, which inverts the default *wide→close* direction.
+That is fine because the change here is **time**, not proximity, and the light does the signalling.
+⬜ **Jack's call** — put 3c first if the priority is that the crash lands immediately.
+
+#### ⚠️ Two continuity facts, both checkable
+
+- **The location is a country lane, not a pavement.** [2a](#2a--the-car-on-the-lane--still--accepted)
+  and the accepted 3b frame both have a hedgerow, a grass verge and no kerb, no street lighting
+  and no footway. Written that way here. *(If an urban roadside is actually wanted, that is a
+  location change to Scene 2 as well and it needs a ruling, not a prompt.)*
+- **The night stock is Fujicolor Superia 1600, not Ektachrome or Portra.** Scene 2 daylight is
+  Ektachrome; [the established camping night stock is Superia 1600 at ISO 1600](#5a--the-drive-home)
+  and this is a dusk frame. ✅ It also happens to sidestep the 2026 finding that
+  [Portra 400 is now over-prompted](../../google-flow/nano-banana-2.md#-kodak-portra-400-may-now-be-a-slop-tell-community-untested).
+
+#### ⚠️ The anti-slop pass, and this time the web actively argued for slop
+
+A fresh search for night-scene prompt craft returned, near-verbatim, **the recipe our own files
+name as the disease**: *"mention mixed light sources — neon signage colour spill, tungsten
+streetlamps, and headlights"*, plus *"dramatic lighting, cinematic colour grading, 4K detail,
+professional photography."* `[community]`
+
+**Every one of those is a named tell.**
+[Stacked lighting is *the* named tell](../../google-flow/omni-flash.md#5-anti-slop-restated-from-the-photorealism-pass) —
+*"a glowing face, a dark background, a bright window, a rim light, neon reflections and a golden
+sunset all somehow happening at once"* — and *"4K, cinematic, professional"* is exactly the
+keyword spam that
+[Google's own guidance says is dead](../../google-flow/nano-banana-2.md#-descriptive-not-repetitive--and-what-it-costs-us).
+**Recorded so nobody re-runs the search and adopts it.** This block does the opposite: **one key
+light, named, with its falloff stated.**
+
+**The rest of the pass is our own table, applied:**
+
+| Tell | What this block does instead |
+| --- | --- |
+| **Wet tarmac holding long mirror reflections** — [the advert tell that cost us 5a](#-advert-vocabulary-commissions-an-advert-observed-2026-08-26) | Wet road **broken up**: grit, a patched repair, a worn white line, mud dragged out of the verge |
+| A glossy hero vehicle | **A working car** — a few years old, unremarkable, road film up the panels. [2a's brief](#2a--the-car-on-the-lane--still--accepted) already argues at length for boring |
+| Sterile, empty environment | Two figures far down the lane, soft, doing nothing |
+| Flat, single-plane frame | **Ground-level camera puts broken glass enormous in the foreground** — Jack's own idea, and it is the [depth layer that stops a frame reading flat](../../cinematography/frame.md#1-depth-is-the-first-thing-to-fix), for free |
+| Near-black reading as a broken file | **Two anchors**: the last grey of the sky above the hedge, and the blue on the wet road *(principle 11)* |
+| `photorealistic` | The house preamble — **documentary press photograph** |
+
+**Policy pass, [A5b's discipline](../../flow/failure-modes.md#a5b-the-bedroom-problem--trigger-5-in-detail)
+— *context does not protect a word, it convicts it*.** On a crash scene the words to keep out are
+**body, victim, casualty, dead, injured, blood, wreck**. None appears below. The frame is described
+by what is in it: a car on its side, broken glass, a closed lane.
+
+#### 🔴 Rewritten 2026-09-09 round 2 — Jack: *"I barely want to see the car, it should be to the side"*
+
+**Two changes, and the second is a prompt-architecture change rather than a wording one.**
+
+**1. The 2a still is now attached as the reference.** Jack handed it over. ✅ **And the
+[reference-scale rule](../../google-flow/nano-banana-2.md#-confirmed-2026-09-09-a-reference-carries-a-face-only-at-the-size-the-face-is-in-it)
+works in our favour for the first time this session:** in 2a the car is *"already some distance
+off and small in the frame"*, and in 3c it is smaller still and half out of frame. **Going wider
+than the reference is the safe direction** — there is nothing to enlarge, so nothing gets
+invented. The car, the roof box, the hedgerows and the road surface all come across for free.
+
+**2. 🔑 The Subject slot is now the ROAD, not the car.** This is the whole fix and it is
+structural, not descriptive.
+
+> **The engine hero-frames whatever is named first.** Write `Subject: an ordinary estate car…`
+> and you get a car, centred and filling the frame, no matter how carefully the composition slot
+> then argues for *small and off to one side* —
+> [earlier clauses win when instructions compete](../../../.claude/skills/flow-prompt/SKILL.md).
+> **So the road goes in the Subject slot and the car is demoted into the composition as a thing
+> at the edge.** Recorded as a general rule in
+> [`nano-banana-2.md`](../../google-flow/nano-banana-2.md#-making-a-subject-small-put-something-else-in-the-subject-slot-community-2026-09-09).
+
+**Two supporting levers from the same web pass** `[community]`:
+
+- **Placement stated as an explicit named third**, not as *"off to one side"* — the vague version
+  loses to the centring prior.
+- 🔴 **The empty part is described in detail, because the model fills empty space.** An
+  unspecified expanse of road is an invitation to invent something to put in it — the same
+  mechanism as [the set giving way to whatever the shot
+  requires](../../google-flow/nano-banana-2.md#6--if-the-camera-cannot-physically-stand-there-the-model-rebuilds-the-set),
+  arriving from the composition side. So the emptiness gets grit, a patched repair, a puddle and
+  the worn centre line: **occupied by specified texture rather than by invented content.**
+
+#### ✅ The road is two-lane — settled by this shot
+
+[The continuity conflict flagged on 2a](#2a--the-car-on-the-lane--still--accepted) — *A-road*
+in the still, *single-track lane* in the video prompt and the shot list — **is resolved by the
+picture.** Two lanes, a faded centre line, hedgerow both sides, telegraph poles. The draft below
+said *narrow country lane* and was wrong.
+
+#### 🎯 The roof box is the emotional payload, and it is free continuity
+
+The black roof box is **on the car in the reference image**, and canon's own scene-3 alternates
+already reach for exactly this register — *"the road atlas face-down in the verge with the biro
+route ending mid-page."* **A roof box lying in the grass says *they were going on holiday* with no
+caption and no narration**, which is [what a still is for](../../cinematography/stills.md#2-word-and-picture):
+a caption carries only what the eye cannot get, and this the eye can.
+
+⚠️ **It is the same idea as the ruled atlas, so use one or the other, never both.**
+⬜ Jack's call which.
+
+#### ⬜ If the frame comes back busy, subtract in this order
+
+Four story objects is the ceiling and it may be one over: glass (near) → roof box (mid) →
+car sliver (far right edge) → one distant figure. **Drop the figure first** — it is only there
+because [a sterile environment is a named slop tell](../../google-flow/nano-banana-2.md#the-anti-slop-toolkit)
+and it is the one element carrying no story. Then the roof box.
+[Subtract before adding](../../google-flow/nano-banana-2.md#-descriptive-not-repetitive--and-what-it-costs-us).
+
+**Model: Nano Banana Pro. Attach the accepted 2a still — job stated: the car, the roof box and
+the road. Cast no Character.** Paste into the **prompt box**:
+
+```prompt
+A documentary press photograph taken at the scene of a road accident, hours afterwards. This is a news picture, not an advertisement. It is the same stretch of road as the attached photograph, at dusk, with the camera down on the tarmac.
+
+Reference: use the attached photograph for the road itself, the hedgerows, the fields and telegraph poles beyond, and for the silver estate car and its black roof box. Those all stay the same. What changes: it is now dusk, the road is wet and closed, and the car has left the road.
+
+Subject: The empty wet road surface, seen from a few centimetres above it. Broken glass is scattered across the tarmac in the near foreground, enormous and thrown well out of focus, each fragment holding a small point of blue. Beyond it the road runs away past a faded white centre line, worn and patched, with grit washed into the gutter and a shallow puddle holding the sky.
+
+Composition: 35mm lens at f/2.8, the camera resting on the road itself and looking level along it. The empty road fills the lower two-thirds of the frame and a band of flat grey dusk sky fills the top, with the hedgerows closing in from both sides as dark masses and two telegraph poles in silhouette against the sky. At the far right edge of the frame, mostly out of shot and occupying no more than a tenth of the width, a pale flank of the estate car lies tilted over in the hedge. The black roof box lies on its own in the grass verge partway between the camera and the car. A single figure in a high-visibility jacket stands a long way off down the road, very small, not looking at anything. The horizon is not quite level.
+
+Action: It is over and it has been over for some time. Nothing is happening and nobody is anywhere near the car. The only thing still moving is the light.
+
+Location: The same two-lane road in flat English farmland as the reference photograph, at dusk. A grass verge on the right churned into mud where something has gone through it, and a deep gouge running off the road into the grass.
+
+Style: Shot on 35mm Fujicolor Superia 1600, ISO 1600, heavy natural grain through the shadows. Pulsing blue light from a vehicle outside the frame, low and off to the right, is the only artificial light source — it rakes across the wet tarmac from behind, lights the glass from the far side, and dies before it reaches the foreground, leaving the near road almost black. The last of the grey daylight sits in the sky above the hedge. Cold, wet and unforgiving.
+
+Constraints: The car stays at the right edge of the frame and mostly out of shot. Nobody is near the car. Nothing in the frame carries readable text and no badges or number plates are legible. No emergency vehicle is visible.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+
+<details><summary>⬜ Round 1 (superseded) — prose-only, car centred</summary>
+
+**Model: Nano Banana Pro. Attach no reference image. Cast no Character.** *(Prose only, deliberately:
+the transform from [2a](#2a--the-car-on-the-lane--still--accepted) is large — day to dusk, upright
+to on its side — and a reference fights a change that big. The car is written as unremarkable
+precisely so its identity is not load-bearing. If Jack wants the exact car held, attach 2a with its
+job stated as the colour and body shape only, and expect the transform to argue with it.)*
+
+Paste into the **prompt box**:
+
+```prompt
+A documentary press photograph taken at the scene of a road accident, hours afterwards. This is a news picture, not an advertisement.
+
+Subject: An ordinary mid-size estate car, a few years old and entirely unremarkable, lying on its side across a narrow country lane with its roof towards the camera. Road film up the panels and mud along the sills. One wheel is off the ground. Nothing about the car is expensive, sporty or distinctive.
+
+Composition: 35mm lens at f/2.8. The camera is on the tarmac itself, the lens a few centimetres above the road surface, looking level down the lane. In the near foreground, enormous and thrown well out of focus, broken glass is scattered across the wet road, each fragment holding a small point of blue. The car sits in the middle distance, off-centre to the left. Beyond it the lane runs away into the dark, and two figures in high-visibility jackets stand a long way off, small and soft, doing nothing in particular. The horizon is not quite level.
+
+Action: It is over and it has been over for some time. Nothing is happening. Nobody is anywhere near the car. The only thing still moving is the light.
+
+Location: A narrow rural lane in England at dusk, with a bare winter hedgerow along one side and a grass verge churned into mud where something has left the road. No kerb, no footway and no street lighting. The wet tarmac is broken up by grit, a patched repair and a worn white line. A deep gouge runs through the grass of the verge.
+
+Style: Shot on 35mm Fujicolor Superia 1600, ISO 1600, heavy natural grain through the shadows. Pulsing blue light from a vehicle outside the frame, low and off to the right, is the only artificial light source — it rakes across the wet road, picks out the glass and the underside of the car, and dies before it reaches the hedge, leaving the far end of the lane in near-black. Above the hedgerow there is a last band of flat grey daylight left in the sky. Cold, wet and unforgiving.
+
+Constraints: Nobody is near the car. Only the two distant figures are in the frame. Nothing in the frame carries readable text and no badges or number plates are legible. No emergency vehicle is visible.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**⬜ If it comes back under-reading as a crash**, the cheapest single addition is **the deep gouge
+through the verge made larger and closer** — a track that says *the car left the road here* is
+causal information the blue light cannot give. Add before adding anything else, and
+[subtract a clause before adding two](../../google-flow/nano-banana-2.md#-descriptive-not-repetitive--and-what-it-costs-us).
+
+</details>
+
+#### ✅ 3c shot and accepted 2026-09-09 — the subject-slot fix worked
+
+**Everything the round-2 rewrite asked for came back:** the camera on the tarmac, the glass
+enormous and blue-lit in the foreground, the faded centre line and the patched road, the hedgerows
+closing in, the telegraph poles against the sky band, the roof box alone in the verge, the distant
+high-vis figure — and **the car at the far right edge, mostly out of shot.**
+
+🔑 **Putting the road in the `Subject:` slot is what did it.** Two rounds of composition adjectives
+would not have; the slot order did. **Promoted to a general rule** in
+[`nano-banana-2.md`](../../google-flow/nano-banana-2.md#-making-a-subject-small-put-something-else-in-the-subject-slot-community-2026-09-09).
+
+**One improvement on the brief, kept:** the car is **tilted nose-down into the hedge, not on its
+side.** More plausible for a car that left a road at speed, and it reads as *went through the
+hedge* rather than *was rolled*, which is the quieter and better version.
+
+---
+
+### 3c-y — the lane, hours later · **video** · written 2026-09-09, unrun
+
+**Jack: *"blue flashing lights, not much else happening, just everything moving naturally."***
+
+**Omni Flash · Frames tab · the accepted 3c still as frame 0 · no Character, no Ingredients, no
+end frame · camera locked.** Easy call: there is no face here, staging is everything, and
+Ingredients would redraw the whole road.
+
+#### ✅ Why a clip where nothing happens is the right clip for this scene
+
+[Canon](./story.md#scene-3--the-crash) gives Scene 3 **no narration at all** and lets sound design
+carry it. This is the frame that silence sits over, and
+[the motion budget](../../cinematography/motion-and-cutting.md#1-movement) says the film's one
+camera move was already spent on [8b-fog](#8b-fog--the-clip--video--ran-and-accepted-2026-09-08).
+**Locked is not the timid choice here, it is the register.**
+
+🔑 **And it still has to be a shot, not a scanned photograph.**
+[A frame with an identical first and last frame reads as a photo](../../cinematography/stills.md#1-what-makes-a-still-hold).
+**The blue sweep is the thing that changes** — it is the entire argument for this being a clip at
+all, and everything else in the frame is there to be *touched* by it.
+
+#### 🔴 The top risk is the broken glass, and it is the same shape as 8b-fog's reflection risk
+
+**The foreground is a field of wet broken glass with specular highlights, huge and close to the
+lens** — and [morphing artefacts concentrate on reflective surfaces and fine edges](https://arxiv.org/pdf/2512.15693) `[academic]`,
+with *"texture shimmer"* named alongside flicker as the way temporal consistency fails
+`[community]`. Our own file already records that
+[**glass has failed every time**](../../google-flow/omni-flash.md#-moving-objects-inside-a-reflection--one-observed-failure-and-the-mechanism-is-here).
+
+**Two clauses answer it, and the second is a deliberate softening of Jack's brief:**
+
+- **The glass stays exactly where it is.** Stated positively. The *light* on it changes; the
+  *geometry* does not. That is the safe half of the trade and it is worth being explicit about,
+  because an engine given a changing light over unpinned geometry will re-solve both.
+- ⚠️ **A slow sweep, not a strobe.** A hard flash is a *sudden lighting change* — named among the
+  artefacts that break temporal consistency — and over eight seconds it is many discrete light
+  states, each one re-rendering every highlight in that glass. **A rotating beacon sweeping is
+  also what a scene light actually does** when it has been left running at a closed road, so this
+  costs nothing in truth. ⬜ **If the sweep reads too gentle, the fallback is *"the blue light
+  pulses twice a second"*** — but run the sweep first, because the glass is the one thing in this
+  frame that cannot be fixed in post.
+
+#### ⚠️ The web pass returned advice that is wrong for this engine — recorded so nobody adopts it
+
+2026 temporal-stability guides recommend **negative prompting** to suppress artefacts —
+*"including terms like flickering, morphing, sudden lighting changes"* `[community]`.
+
+🔴 **That is actively harmful on Omni Flash.** It has
+[no negative-prompt parameter, and `no`/`don't` in the body performs *worse* than not mentioning
+the thing at all](../../google-flow/omni-flash.md#-negatives-do-not-work-and-they-actively-backfire)
+— naming *flickering* and *morphing* puts both into a model that cannot subtract them. **The
+generic advice is written for engines with a negative-prompt field. Ours has not got one.**
+
+**What the same pass got right is already house practice** and is worth noting only because it
+independently confirms it: *"lock lighting to a single source, avoid mixed lighting descriptions,
+use slower movements, shorten clip duration."* This frame has **one** light source and the camera
+does not move.
+
+#### ⬜ No shutter clause, again
+
+The [24fps / 180° line](../../google-flow/omni-flash.md#the-shutter-is-the-tell-nobody-prompts-for)
+is `[confirmed]` **on shots with fast motion**, because it tells the model which frames to smear.
+Nothing here moves fast enough to smear, and
+[the biggest lever is subtraction](../../google-flow/omni-flash.md#length-three-to-four-sentences-and-the-lever-is-subtraction).
+Same call as [7c-y](#7c-y--the-therapist-explains-a-feeling--video--written-2026-09-09-unrun).
+
+#### ⚠️ Audio: no radio chatter
+
+The temptation at a scene like this is police radio. **Radio chatter is voices**, and
+[we never put speech in a Flow video](../../google-flow/omni-flash.md#-the-speech-trap-is-punctuation-not-vocabulary).
+**The diesel idle does the same job better** — it says there is a vehicle off to the right without
+showing it, which is the audio half of
+[keeping the light source out of frame](#-the-blue-light-source-stays-out-of-frame).
+
+> ### 🔴 Round 1 put beacons on the crashed car — *`[observed 2026-09-09]`*
+>
+> **Jack: *"that made the car in the image look like it has sirens."*** The clause was *"blue
+> light **from a vehicle outside the frame**"* — and a vehicle is visible in the plate, so the
+> engine resolved the noun against the one it could see and lit that.
+>
+> 🔑 ***"Outside the frame"* is a claim about where; *"a vehicle"* is a claim about what — and the
+> referential half beats the spatial half.** Handed a noun, the model goes looking for it in the
+> picture. **Name an off-frame light by its place and its behaviour, never by the object that owns
+> it.** Full write-up:
+> [`omni-flash.md`](../../google-flow/omni-flash.md#-observed-2026-09-09-naming-an-off-frame-light-source-by-its-object-binds-it-to-a-visible-one).
+>
+> **Three fixes in the round-2 block, and the second is the load-bearing one:**
+>
+> 1. **The source is a place** — *"from beyond the right-hand edge of the frame."* Nothing in the
+>    picture for it to attach to.
+> 2. 🔑 **The car is given the receiving role, positively** — *"the car is dark and still; the blue
+>    light passes over it and moves on."* This is the positive form of *the car has no lights*, and
+>    [the negation would have named beacons straight into the prompt](../../google-flow/omni-flash.md#-negatives-do-not-work-and-they-actively-backfire).
+> 3. **The whole frame is closed** — *"all the blue light comes from outside the frame."* One
+>    sentence covering every object nobody thought to name.
+>
+> ⚠️ **And the audio moved.** Round 1 put the diesel idle *"somewhere off to the right"* — the same
+> side as the car. Omni generates picture and sound together, so a sound sited on a visible object
+> is a second vote for that object owning it. **It is now behind the camera**, which is also where
+> a vehicle blocking a closed road would actually be parked.
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame. The camera is locked off on a tripod on the road surface and holds completely still for the whole shot.
+
+Blue light from beyond the right-hand edge of the frame sweeps slowly and steadily across the scene, over and over. All the blue light comes from outside the frame. As it passes, the points of blue in the broken glass brighten and fade, the wet tarmac and the puddle catch it, and the grass on the right-hand verge goes blue and grey again.
+
+The silver car tipped into the hedge is dark and still. The blue light passes over it and moves on.
+
+The bare hedgerows and the tussocky grass stir in a light wind. The surface of the puddle shivers. Far down the road the figure in the high-visibility jacket shifts his weight and stays where he is.
+
+The broken glass stays exactly where it is. The car, the roof box and the road stay exactly where they are.
+
+Audio: wind moving through a bare hedge, water dripping, a diesel engine idling somewhere behind the camera, and one distant crow. No music and no voices.
+Thanks.
+```
+
+**Post, in Premiere:**
+
+1. **A 10–15% speed adjustment** against the smooth-motion tell `[community]`.
+2. **Film grain at 10–15% opacity** — and this clip carries heavy Superia 1600 grain in the still
+   already, so match it rather than stacking.
+3. ⚠️ **Watch the foreground glass on playback specifically.** If it crawls or shimmers between
+   frames, that is the risk above firing, and **it is a re-roll, not a grade** — check what
+   deflicker tooling we actually have before assuming
+   ([`effects-catalogue.md`](../../premiere/effects-catalogue.md)).
+4. ⚠️ **Nothing ships unmeasured** — `scripts/delivery-qc.sh`
+   ([`delivery.md`](../../video-fx/delivery.md)).
+
+---
+
+
+---
+
 
 ## Scene 2 — 2008, meet Bob
 
@@ -1519,7 +2726,21 @@ Thanks.
 > centre line; the 2a *video* prompt below calls the same location a **single-track lane**, and
 > so does [`shot-list.md`](./shot-list.md) and the scene-3 alternates ("the edge of a wet
 > single-track English country lane"). The road that actually made it into the frame is the
-> A-road. Worth settling before the scene-3 verge shots have to match it.
+> A-road. ~~Worth settling before the scene-3 verge shots have to match it.~~
+>
+> ### ✅ Settled 2026-09-09 — it is a two-lane road, and the picture wins
+>
+> **Forced by [3c](#3c--the-lane-hours-later--still--written-2026-09-09-unrun)**, which is the
+> scene-3 verge shot this note was waiting for, and by Jack handing the 2a frame over as its
+> reference. **The accepted frame is the authority:** two lanes, a faded white centre line,
+> scruffy hedgerow along both verges, ploughed field and bare trees beyond, wooden telegraph
+> poles, a blank road sign on the left, puddles and churned mud on the right-hand verge.
+>
+> 🔑 **Same rule as [7a's shoulder colour](#7a--the-consulting-room--still--accepted): the
+> picture beat the prompt**, and [canon prose describing a set is superseded the moment a still
+> of that set is accepted](../../google-flow/nano-banana-2.md#7--write-the-keep-list-from-the-accepted-still-not-from-the-prose-that-made-it).
+> **Every scene-3 frame says two-lane road from now on.** *"Narrow single-track lane" is retired
+> wording — do not carry it forward.*
 
 ### 2a — the car on the lane · **video** · accepted
 
@@ -4875,3 +6096,203 @@ the first take under the same rule ([`hybrid-method.md`](../../video-fx/hybrid-m
 
 ✅ **Unblocked 2026-08-30** — this was waiting on `12a` in case it changed the fire, the drum or
 the weather and forced the tilt to be built twice. `12a` is shot, so both post jobs can start.
+
+
+### 12e — the last frame, 16:9 · **still** · written 2026-09-09, unrun
+
+**Jack, 2026-09-09: *"it is the last image of the story, it should be 16:9, use the characters but
+no reference image."*** New shot rather than a rewrite of
+[`12d`](#12d--the-tilt-up-embers-into-bad-code--still-plate--written-2026-08-29-unrun), whose
+plate and clip are both accepted.
+
+> ### ⚠️ Round 1 was wrong, and the misread is worth recording
+>
+> **Jack: *"this prompt looks nothing like the image we want to make 16:9."*** Round 1 invented a
+> new ending — a wide of the ruined car park, the two men **firelit and facing camera**, a
+> collapsed trolley shelter, a clamped car, a shopping trolley.
+>
+> 🔑 **The error was reading *"use the characters"* as a statement about the picture.** It is a
+> statement about the **inputs**: 12d was built on two attached reference images, and Jack is
+> swapping those for cast Characters. **Mechanism, not content.** Nothing about the frame was
+> being changed except its shape.
+>
+> **The general rule: when the ask is a format change, change the format.** A request to reframe
+> an accepted image is not an invitation to redesign it, and every clause added beyond the aspect
+> ratio is a clause the accepted frame did not have and did not need. **This block is 12d's
+> prompt with the geometry re-proportioned and the reference sentence replaced.** Nothing else.
+
+#### ⚠️ 16:9 removes the tilt — flagged once, and it is Jack's call
+
+12d's plate is 9:16 *because* Premiere travels up it
+([generate tall, move the camera in post](../../video-fx/hybrid-method.md)). A 16:9 frame has no
+vertical travel in it. ⬜ **Cheapest reading, nothing discarded: 12d tilts up and ends on sky, and
+12e is the held final image after it.**
+
+#### ⚠️ Casting Characters onto silhouettes is the one live risk
+
+12d's own note says casting there *"offers identity and gets nothing back"* — the men are faceless
+black shapes. **A cast Character is an instruction to include that person**, so with `@Bob` and
+`@Future-Tarquin` attached the engine has more reason to render faces than 12d ever did.
+
+**The counter is written positively and then repeated:** *"solid black silhouettes rimmed along
+one edge by the firelight"* in the body, and *"the two men stay solid black silhouettes"* in the
+constraints — the same belt-and-braces that
+[kept 7a's lips parted](#7a--the-consulting-room--still--accepted).
+⬜ **If faces come back, drop the Characters entirely** — 12d landed first take without them.
+
+⚠️ **`@Future-Tarquin`, never the old name** — it
+[put a destitution trigger into every field Flow scans](../../flow/failure-modes.md#a5-the-five-triggers-badcodes-own).
+
+**Model: Nano Banana Pro. Cast `@Bob` and `@Future-Tarquin`. Attach no reference image.**
+Enhance Prompt **off**. **4K.** Paste into the **prompt box**:
+
+```prompt
+Generate a still photograph in a wide 16:9 format.
+
+The camera is low and a little behind two men who are standing at a fire, looking past them and steeply upward, so the picture is mostly sky.
+
+Across the bottom of the frame: the top of a battered metal drum with the fire burning in it, and on either side of it the heads and shoulders of the two cast characters, standing close in on either side of the smoke and rendered as solid black silhouettes, rimmed along one edge by the firelight. They occupy the lower third of the picture.
+
+Rising from the fire and filling the middle of the frame: a column of smoke, thin and torn, drifting upward and spreading as it climbs. Carried up inside it, hundreds of small orange embers, brightest and densest just above the flames and thinning out as they rise, until near the top of the frame there are only a few isolated sparks still glowing.
+
+Filling the upper half of the frame: a heavy stormy night sky, low cloud lit a cold blue from within by distant sheet lightning far away on the horizon. The cloud has real structure and depth rather than being flat.
+
+Light: the fire is the only warm light and it is at the bottom, lighting the smoke from beneath so the lowest part of the column glows orange and the upper part goes cold and grey. The sky's cold blue is the only other light. Between them the middle of the frame is dark. The picture travels from warm at the bottom to cold at the top.
+
+Heavy rain is falling through the whole frame, showing bright where it crosses the firelight at the bottom and as fine cold streaks against the cloud higher up.
+
+The two men stay solid black silhouettes.
+
+There is no text anywhere in the picture, no sign, no lettering, and no lit window or lamp of any kind.
+
+A documentary press photograph on 35mm film: natural grain visible in the shadows, muted cool colour, deep black shadows, no colour grading push.
+
+Compose for a wide 16:9 frame.
+
+Thanks.
+```
+
+**Choosing between candidates** — [12d's list](#12d--the-tilt-up-embers-into-bad-code--still-plate--written-2026-08-29-unrun),
+minus the travel question and plus one:
+
+1. 🔴 **Are the men still silhouettes?** The new risk. Any face detail and the Characters have won.
+2. **Does the frame travel warm to cold**, bottom to top, with a genuinely dark middle?
+3. **Do the embers thin out as they rise**, leaving somewhere for the ffmpeg code layer? ⬜ There is
+   much less vertical room for it in 16:9 than in the plate.
+4. **No text anywhere.**
+5. **Real black**, and cloud with structure rather than a flat wash.
+
+⚠️ [Trigger 3](../../flow/failure-modes.md#a5-the-five-triggers-badcodes-own): if it blocks,
+`battered metal drum` → *a metal bin with a fire in it*. Already softened from 12d's *rusted drum*.
+
+---
+
+#### ✅ 12e shot 2026-09-09, round 1 — and the casting risk did not fire
+
+**The silhouettes held.** Both Characters cast and no face detail came back, which was the one
+thing most likely to break. Warm-to-cold travel intact, cloud with real structure lit from within,
+embers thinning as they rise, deep blacks, no text, and **the doorway composition survived the
+reframe** — the two men flanking the column with the smoke escaping between them, which was the
+best accident in the 9:16 and made it across.
+
+⬜ **Two weaknesses noted and not yet acted on** *(Jack has moved to the clip, so these stand open
+rather than blocking)*:
+
+- **It is close to perfectly symmetrical** — drum dead centre, a man each side at equal distance,
+  the cloud parting directly above the column. [Symmetry has no fixed meaning on its
+  own](../../cinematography/frame.md#3-tension-versus-resolution), but centred subject **plus** no
+  depth cue at the bottom tips it from *dread* toward *poster*. It read as a column in portrait;
+  it reads as a composition in landscape.
+- 🔴 **There is no ground.** The men and the drum float on black, so **nothing in frame carries the
+  cost** — no wet tarmac, no bay line, no ruin. Acceptable in the 9:16, whose job was to be
+  travelled *through*; a held final image has a bottom third doing no work.
+  **The cheap fix is one clause: wet tarmac with a painted parking bay line catching the
+  firelight.** The bay line alone says *this was a car park*, which is the whole argument, in one
+  detail.
+
+---
+
+### 12e-y — the embers into the sky · **video** · written 2026-09-09, unrun
+
+**Jack: *"where it follows the embers into the sky."***
+
+#### 🔑 The embers do the following, not the camera — and that is the better shot
+
+**In a locked frame the embers rise up through the picture and leave the top of it.** The eye goes
+to motion before it goes to anything else
+([`frame.md` §2](../../cinematography/frame.md#2-the-focal-point)), so **the viewer's eye performs
+the tilt** while the frame holds. That is not a compromise version of the ask — it is the ask,
+executed by the subject instead of the rig, and it costs nothing.
+
+#### 🔴 Why the camera must not do it in Flow, and this time the reason is specific
+
+Not just the standing ruling. **Tilting up out of a 16:9 frame means inventing new sky above the
+frame edge, every frame.** That is the *pull-back* case — the dangerous direction — not the safe
+one 8b-fog identified, where [a push-in crops into pixels the model already
+has](#8b-fog--the-clip--video--ran-and-accepted-2026-09-08).
+
+🔑 **And this exact geometry has already proved the locked rule once.**
+[12d's clip](#12d--the-clip--video--accepted-2026-08-30) is *"a tall plate of rising smoke and
+drifting embers — continuous, unstructured motion filling the middle of the frame, which is exactly
+the geometry that usually invites a generated drift. Locking the camera and leaving the move to
+Premiere held."* First take. **Same fire, same embers, same rain — just wider.**
+
+#### ⬜ If a camera move is wanted on top, here is what a 16:9 plate actually supports
+
+**Not the 12d tilt.** That move exists because the plate is tall; this one is not.
+
+| | |
+| --- | --- |
+| **Generate at 4K** | Load-bearing. At 4K a 1920×1080 crop window is a 2× punch and can travel a full frame-height vertically, which is a real tilt. At 1080p source there is no travel at all without upscaling |
+| ⚠️ **Omni's 4K is *upscaled*, not native** | So a 2× punch into it is effectively a 2× punch into 1080p. **It will be soft.** The heavy 35mm grain in this frame hides a lot of that, but do not expect it free |
+| **Start on the drum and the flame** | Not on the silhouettes' shoulders — [the same note 12d's tilt carries](#12d--the-clip--video--accepted-2026-08-30) |
+| 🥇 **The full-size version still exists** | The 9:16 plate and its accepted clip are untouched. **If the big travelling tilt is wanted, it is already shot** — 12e is then the held frame the tilt lands on |
+
+#### ⚠️ Two risks, one new
+
+- **Embers are small bright points on a dark field** — the same specular-shimmer family as
+  [3c-y's broken glass](#3c-y--the-lane-hours-later--video--written-2026-09-09-unrun). ✅ **But this
+  is the forgiving version:** embers are *supposed* to twinkle, drift and go out, so the model's
+  natural failure mode and the subject's real behaviour point the same way. Nothing to spend a
+  clause on.
+- ⬜ **Rain over eight seconds risks [repeating texture tiling](../../google-flow/omni-flash.md)**
+  — flagged on 8b-fog too, nothing to do at the prompt, worth *looking* for on playback.
+
+#### ✅ The lightning is written as a place, not an object
+
+*"Sheet lightning inside the cloud, far off"* — no source noun for the engine to go looking for,
+which is [the lesson 3c-y paid for](#3c-y--the-lane-hours-later--video--written-2026-09-09-unrun).
+It is also the film's one remaining dramatic beat: the storm **has been receding since 12a**, so a
+distant pulse and a late roll of thunder is the weather ending the film rather than starting it.
+
+**Model: Omni Flash. Tab: Frames. Attach the accepted 12e still as the frame — nothing else, no
+Character, no Ingredients, no end frame. Generate at the highest resolution offered.** Paste into
+the **prompt box on the Frames tab**:
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame. The camera is locked off on a tripod and holds completely still for the whole shot.
+
+The fire burns and moves in the drum. A steady stream of embers lifts off it and rises up through the middle of the frame, drifting sideways and spreading as it climbs, thinning out as it goes, until a few of them reach the top of the frame and pass out of it. Some go dark on the way up. The smoke rises and tears apart as it spreads.
+
+The rain keeps falling at the same rate across the whole frame. Deep inside the cloud, far off, sheet lightning pulses once and then again a few seconds later. The cloud drifts very slowly.
+
+The two men stay solid black silhouettes. One of them shifts his weight a little and settles.
+
+Audio: heavy rain, rain hitting the metal drum, the fire, wind, and a long low roll of thunder arriving well after the lightning. No music and no voices.
+Thanks.
+```
+
+**Post, in Premiere:**
+
+1. ⬜ **The tilt, if it is wanted** — per the table above, and only on a 4K generation.
+2. **A 10–15% speed adjustment** against the smooth-motion tell `[community]`.
+3. **Film grain at 10–15% opacity**, matched to the plate rather than stacked on it.
+4. ⬜ **The ffmpeg code layer** — ascending glyphs along the ember paths, cool pale, mostly
+   illegible, **no wordmark**. ⚠️ There is far less vertical room for it in 16:9 than in the
+   plate; if it will not read, that is an argument for the 9:16 ending, not for bigger glyphs.
+5. ⚠️ **Nothing ships unmeasured** — `scripts/delivery-qc.sh`
+   ([`delivery.md`](../../video-fx/delivery.md)).
+
+---
+
+

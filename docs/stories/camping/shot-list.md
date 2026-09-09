@@ -137,8 +137,33 @@
       grey daylight so the rhyme lands before the ruin does, and the dusk frame carries 10b onward
       into the 12a–12d fire. *(Canon's 10b frost is also absent — wet matches 6c better, so
       probably amend canon rather than the frame.)*
+- [ ] 🔴 **Scene 7 is reopened — the therapist is now a woman.** Ruled 2026-09-09 by Kai: the male
+      therapist and Tarquin read as the same man in reverse angles. **7b is dead** (it holds his
+      face) and **7a is probably dead** (his head and shoulder are the foreground occluder).
+      Replacement is [**7c**, a side-on two-shot](./prompts.md#7c--the-two-shot--still---not-yet-shot),
+      written and unshot — it carries the question and the verdict in one frame, so the scene
+      stands even if the pair is never rebuilt. ✅ **7c still SHOT AND ACCEPTED 2026-09-09,
+      round 1.** **🔴 Jack went to close-ups 2026-09-09** — see
+      [Scene 7 — the shot/reverse rebuild](./prompts.md#scene-7--the-shot-reverse-rebuild-2026-09-09).
+      **7c becomes the establisher** and the scene runs wide→close: 7c (two people and a gap) →
+      **7d** (she explains, patiently) → **7e** (he still does not have it — the button).
+      **Four prompts, one at a time, still then video:** `7d` still → `7d-y` clip → `7e` still →
+      `7e-y` clip. **Next action: shoot `7d` — Nano Banana Pro, the 7c still attached as the only
+      reference with its job stated as her face, no Character.**
+      ⬜ [`7c-y`](./prompts.md#7c-y--the-therapist-explains-a-feeling--video--written-2026-09-09-unrun)
+      and [`7c-y2`](./prompts.md#7c-y2--the-therapist-explains-a-feeling-mouths-moving--video--written-2026-09-09-unrun)
+      are **parked, not cancelled** — they are clips of the establisher, and if the close-ups carry
+      the beat, 7c can stay a held still and neither is needed.
+- [ ] 🔴 **A third AI Studio voice is owed IF `7c-y2` wins.** A visibly talking therapist commits
+      the film to a recorded therapist voice, and
+      [`narration/ai-studio-cast.md`](./narration/ai-studio-cast.md) has only Bob and Tarquin.
+      Scene 7's punchline is hers, so this is plausibly an upgrade — but it is unbuilt, and it is
+      the gate on that clip, not on the still.
 - [x] **7a — the consulting room.** Still and clip accepted 2026-08-26, three rounds on the face.
-- [x] **7b — the therapist's verdict.** Accepted 2026-08-26, round 2. Round 1 sat Tarquin up and
+      ⚠️ **Superseded 2026-09-09** by the therapist recast — see the row above.
+- [x] **7b — the therapist's verdict.** Accepted 2026-08-26, round 2.
+      🔴 **Dead 2026-09-09** — it is the one shot that holds the male therapist's face. Re-shoot
+      from 7c or let 7c carry the beat alone. Round 1 sat Tarquin up and
       would not cut against 7a; the fix was **dropping the camera to couch height and putting his
       crossed ankles in the foreground**. **Two reference images and no Character** — the therapist
       has neither a Character nor a sheet and his face still held.
@@ -271,6 +296,7 @@ men before the plot starts, so the rest of the film can dismantle it.*
 - **2a An ordinary car on an ordinary road** — luggage. A holiday.
 - **2b Bob driving, his wife Jo beside him** — younger, brighter-eyed. The job stays deliberately unremarkable. *(She was named **Jo** 2026-08-30; ⬜ whether the film ever says it is deferred — see [`characters/bob.md`](./characters/bob.md).)*
 - **3a The crash — never shown.** Cut to black mid-laugh straight out of 2b; the impact happens in the black. **No narration at all.** We never show or say who died.
+- **3c The lane, hours later** — dusk, camera down on the tarmac, blue light off-frame, broken glass huge in the foreground — and **the car barely visible at the right edge**, with the roof box alone in the verge. Built on the 2a still as reference. **✅ Still shot 2026-09-09, round 2** (round 1 centred the car; the fix was putting the ROAD in the Subject slot). Clip `3c-y` written, unrun. Jack: *the dashboard does not convey the crash enough.* 🔴 **Nobody near the car** — one person being treated would say the other did not survive. Recommended **after** 3b, so the elapsed time lands in the gutter. Prompt in [`prompts.md`](./prompts.md#3c--the-lane-hours-later--still--written-2026-09-09-unrun).
 - **3b The indicator, still ticking** — the only image the crash gets. Close on the dashboard binnacle: needles dead at zero, grit thrown across the top of the dash, and through the windscreen the verge climbing at a wrong angle. The green indicator telltale blinks on, patiently, at nobody — **the last thing he did was signal a turn.** No seats and no cabin in frame: two empty seats would read as *both* of them gone, and Bob survives. The tick carries the scene. *(Alternates shot and kept: the road atlas face-down in the verge with the biro route ending mid-page; broken glass on wet tarmac; the amber corner lamp in the grass — the wider version of this same idea, and a candidate to precede it.)* *(Canon: [`story.md` beat 3](./story.md).)*
 - **3c Silence** — sound design carries it: impact, then nothing. Let the audience join the dots when Bob reappears alone.
 
@@ -296,7 +322,10 @@ men before the plot starts, so the rest of the film can dismantle it.*
 - **6b The three reactions** — customers stream past for their duck breast: don't look, apologetic no-change mime, nobody stops.
 - **6c Bob's POV from inside the tent** — door-flap letterbox, low horizon. **🔒 LOCKED 2026-08-26** — derived from the scene-8 tent frame, and **10a is derived from 6c**. Never rebuilt from words.
 - **7a The consulting room** — Tarquin on the couch, genuinely baffled. *"What is this… feeling?"* Play it for comedy.
-- **7b The therapist's verdict** — *"You need the most powerful psychedelic known to man."* Keep the punchline exactly. **✅ Shot 2026-08-26.** Camera at couch height, the therapist alone in the room with Tarquin's crossed ankles in the foreground; the verdict is delivered **straight down the lens** — the film's one direct address. See [`prompts.md`](./prompts.md#7b--the-therapists-verdict--still--accepted).
+- **7d The therapist, close** — she explains what a feeling is, at the speed you would use on a child. **⬜ Written 2026-09-09, unshot.** Over his shoulder, she looks frame-left, the window behind camera lights her.
+- **7e Tarquin, close — the button** — his eyes slide off her mid-sentence and come back a beat too late. *Confused, and not listening* — Jack revised the beat 2026-09-09. **✅ Still shot 2026-09-09** (round 2 — round 1 used the 7c wide as a reference and lost his face). Clip `7e-y` written. Over her shoulder, he looks frame-right, the window blown out at the left edge. *He has no light and no answer; she has both.*
+- **7c The two-shot — now the establisher** — both of them, side-on, and the width of empty rug between them. **✅ Still shot 2026-09-09, round 1. Clips `7c-y` / `7c-y2` written, parked** — she waits for it to land, he does not get there, and the shot ends on her drawing breath to start again. The therapist is now a woman ([`style.md`](./style.md)); this frame carries the whole of Scene 7 on its own. Prompt in [`prompts.md`](./prompts.md#7c--the-two-shot--still---not-yet-shot).
+- **7b The therapist's verdict** — *"You need the most powerful psychedelic known to man."* Keep the punchline exactly. 🔴 **Dead 2026-09-09 — the therapist recast female.** *(Was: ✅ Shot 2026-08-26.)* Camera at couch height, the therapist alone in the room with Tarquin's crossed ankles in the foreground; the verdict is delivered **straight down the lens** — the film's one direct address. See [`prompts.md`](./prompts.md#7b--the-therapists-verdict--still--accepted).
 - **8a The wank tank swings in beside the tent** — straddling two bays. *"Two parking spaces. For that."*
 - **8b The two men lock eyes.**
 - **8c One beat of judgement each** — *"Get a job, you lazy cunt"* / *"Fucking wank tanks."* No prolonging. The crack from 5d slaps shut. Cut.
@@ -384,6 +413,7 @@ men before the plot starts, so the rest of the film can dismantle it.*
   nothing `12a` did not, which is [gate 1](../../cinematography/principles.md).
   ⚠️ **The BEAT survives** — *the apology happens the man way, nothing said straight* lands inside
   `12a`'s clip and the narration, and a clink is a **sound cue over `12a`**, not a picture.
+- **12e The last frame, 16:9** — **12d re-proportioned to landscape**, same picture: drum and two black silhouettes along the bottom, embers up the middle, storm sky filling the top. Characters cast instead of reference images. **✅ Still shot 2026-09-09, silhouettes held.** Clip `12e-y` written, unrun — locked, the embers do the rising. *(Round 1 mistakenly redesigned the shot; the ask was a format change.)* ⚠️ 16:9 has no vertical travel, so either the 12d tilt goes or 12e is the held frame *after* it. Prompt in [`prompts.md`](./prompts.md#12e--the-last-frame-wide--still--written-2026-09-09-unrun).
 - **12c The newspaper goes on the fire.** It's cold. It burns. ✅ **STILL SHOT 2026-08-29**, round 2,
   master at [`camera/reference/scene-12c-newspaper-burns-ACCEPTED.png`](./camera/reference/scene-12c-newspaper-burns-ACCEPTED.png).
   **Round 1 was rejected on the hand alone** — pale, smooth, sharp-focused and splayed open like an

@@ -8,6 +8,7 @@ API access 30 Jun 2026. **Still public preview.**
 **fourth pass 2026-08-14** ([References vs frames](#references-vs-frames-the-prompt-has-to-change-shape)) ·
 **fifth pass 2026-08-14** ([Making a reference stick](#making-a-reference-stick-there-is-no-adherence-knob)) ·
 **sixth pass 2026-08-14** ([Making motion read as real](#making-motion-read-as-real)) ·
+**seventh pass 2026-09-09** ([Omni 1.1 Flash, and the speech-punctuation trap](#seventh-pass--omni-11-flash-and-the-speech-punctuation-trap-community-2026-09-09) — 🔴 **a colon triggers speech; a quotation mark burns a subtitle**) ·
 **Confirmed against our Flow session:** ~~never~~ **first confirmed run 2026-08-14** —
 see [What we actually confirmed](#what-we-actually-confirmed-2026-08-14).
 
@@ -501,6 +502,39 @@ documented phrasing: **`no dialogue`** for audio, and **`no cuts` / `single
 continuous shot`** for the shot lock. Both are recommended in Google's own guidance
 `[vendor]`, so treat them as idiom rather than as negation. Everything else gets the
 positive restatement.
+
+### 🔴 `[observed 2026-09-09]` Naming an off-frame light source by its OBJECT binds it to a visible one
+
+**Camping 3c-y round 1.** The clause was *"blue light **from a vehicle outside the frame** sweeps
+slowly across the scene."* A car is visible in the plate, tipped into a hedge. **The engine put
+flashing blue beacons on that car** — Jack: *"that made the car in the image look like it has
+sirens."*
+
+**The mechanism is binding, not disobedience.** *"Outside the frame"* is a claim about **where**;
+*"a vehicle"* is a claim about **what**. Handed a scene containing a vehicle, the model resolves
+the noun against the thing it can actually see and lights that. **The spatial half of the
+instruction loses to the referential half** — the same failure family as
+[a shot that needs a surface the set does not have](../google-flow/nano-banana-2.md#6--if-the-camera-cannot-physically-stand-there-the-model-rebuilds-the-set),
+where an unresolvable requirement gets resolved against whatever is available.
+
+> 🔑 **The rule: name an off-frame light by its PLACE and its BEHAVIOUR, never by the object that
+> owns it.** *"From beyond the right-hand edge of the frame"* is a direction, and there is nothing
+> in the picture for it to attach to. *"From a vehicle"*, *"from a police car"*, *"from a
+> streetlamp"* all hand the model a noun to go looking for.
+
+**Three clauses, and the second is the one that actually does the work:**
+
+| | Write |
+| --- | --- |
+| **Source as a place** | *"Blue light from beyond the right-hand edge of the frame"* — a direction, not an owner |
+| 🔑 **Assign the visible object the RECEIVING role, positively** | *"The car is dark and still. The blue light passes over it and moves on."* This is the positive form of *the car has no lights of its own* — and [a negation would have named beacons into the prompt](#-negatives-do-not-work-and-they-actively-backfire) |
+| **Close the whole frame** | *"All the light in the picture comes from outside it."* One sentence, and it covers objects nobody thought to name |
+
+⚠️ **Audit the audio line too.** The same round asked for *"the idle of a diesel engine somewhere
+off to the right"* — the same side as the car. Omni generates picture and sound together, so a
+sound placed on top of a visible object is a second vote for that object owning it. **Put off-frame
+sound behind the camera** where nothing can claim it.
+
 
 ### Length: three to four sentences, and the lever is subtraction
 
@@ -1452,6 +1486,97 @@ Independent of the physics, and consistent across every source `[community]`:
 - [The A to Z guide to Seedance 2.0 prompts](https://ethicalfounder.com/guide-to-seedance-2-0-prompts-claude-ai-video-prompt-generation/) `[community]` — 24fps / 180° shutter as the realism convention; motion blur must match the simulated shutter; describes another model, so treat the mechanism as directional and the token as cheap to try.
 - [How to add realistic motion blur and depth of field to AI video — Higgsfield](https://geo.higgsfield.ai/task/blog/how-to-add-motion-blur-depth-of-field-ai-video) `[community]` — shutter-speed prompting sets the expectation for how motion renders.
 - [5 ways to make AI video look less AI — Sunra](https://sunra.ai/blog/make-ai-video-look-less-ai) · [Why your AI videos look fake — Nemo](https://www.nemovideo.com/blog/why-ai-videos-look-fake-how-to-fix) · [Why AI video motion looks unnatural — AIVid](https://aivid.video/blog/why-ai-video-motion-looks-unnatural-and-how-to-fix-it) `[community]` — perfection as the tell; grain, wobble and imperfect focus; describe the operator, not the scene; grain and speed adjustment in post.
+
+## Seventh pass — Omni 1.1 Flash, and the speech-punctuation trap `[community]` 2026-09-09
+
+Run while writing camping **7c-y**, a near-static two-hander with no dialogue. Three findings,
+and the first two are things this file currently gets wrong.
+
+### 🔴 Omni **1.1** Flash shipped 2026-08-27 — five changes, two of which close open questions
+
+This file was researched 2026-08-12/14 against the launch model. `[community]`
+
+| Change | What it closes here |
+| --- | --- |
+| **First *and* last frame control** | *"Whether Omni has an end-frame slot"* is listed above under [what is still not confirmed](#what-we-actually-confirmed-2026-08-14). **It has one.** ⚠️ This does **not** change our practice: [`hybrid-method.md`](../../video-fx/hybrid-method.md)'s standing rule is never to pin an `endImage`, which morphs. It removes the *Veo-only* footnote from 8b-fog, nothing more |
+| **Scene extension to a 40-second cumulative cap** | The eight-second ceiling is even less of a beat-length constraint than [the chaining rule](../../video-fx/hybrid-method.md) already said |
+| **360p draft mode at half the credit cost of 720p** | 🔑 **A cheap way to test a shot before spending on it.** We have burned four-round sequences at full price more than once. Untried |
+| **1080p and 4K upscaled output** | Delivery-side; see [`delivery.md`](../../video-fx/delivery.md) |
+| **Working video references** — max 3 clips × 3s | Unexercised. ⚠️ *"Reference audio gets ignored entirely"* — describe sound in text |
+
+**`<FIRST_FRAME>@image` and `<LAST_FRAME>@image` tags are now documented** `[community]`, which
+is the syntax this file lists as [still untyped in Flow's prompt box](#the-first_frame-tag--a-documented-binding-mechanism-vendor).
+Still `[untested]` by us — the plain sentence *"The attached image is a frame from this shot"* is
+what has actually produced accepted clips, so do not swap it in blind.
+
+### 🔴 The speech trap is **punctuation**, not vocabulary
+
+The single most actionable finding of this pass, because it fires silently and neither character
+looks like an instruction. `[community]`
+
+| You write | Omni does |
+| --- | --- |
+| `Woman says: hello` | **Synthesises spoken audio.** The colon after a speaker's action is the documented trigger |
+| `Woman says: "hello"` | **Burns the words on screen as a subtitle.** Quotation marks render text visibly |
+| Neither character present | No speech, no titles |
+
+**Two house consequences, and both are absolute:**
+
+- **We never put dialogue in a Flow video** — the narration is recorded separately, always. So
+  **a colon after any person's action, and any quotation mark anywhere in a clip prompt, are
+  both bugs.** Read the block for those two characters before firing it.
+- It also explains the *other* half: our long-standing habit of writing `No music and no voices.`
+  is doing the job of suppressing an audio track the model would otherwise invent, and
+  [it is confirmed working](../stories/camping/prompts.md#8b-fog--the-clip--video--ran-and-accepted-2026-09-08).
+  Keep the exact phrasing.
+
+**Related, and it reinforces [the negation rule](#-negatives-do-not-work-and-they-actively-backfire):**
+the same source lists *"combining negative prompts with quotation marks"* among its eight named
+mistakes.
+
+### 🎯 Biological motion — the anti-slop clause for any shot of a person doing nothing
+
+The 2026 tell-lists name **biological motion irregularity** — *"the natural, subtle dynamic
+features of living beings, such as blinking, breathing, or micro-expressions being absent, stiff,
+or unnaturally timed"* — among the twelve most consistent AI-video tells `[community]`.
+
+**This is the tell that fires on *our* shots specifically.** The [motion budget](../cinematography/motion-and-cutting.md#1-movement)
+pushes us toward near-static clips, and a near-static clip of a seated person has nothing else in
+frame to carry life. A rain shot gets away with it; a therapy shot does not.
+
+**Two clauses, and neither is optional on a held shot of a person:**
+
+- **Prompt the breathing and the blinking explicitly.** On a still-body clip they *are* the
+  performance, and the model has no reason to add them unasked.
+- 🔑 **On any shot with two or more people, state that they blink at different times.** Synchronised
+  blinking is uncanny in a way viewers cannot name and always see. Nothing in a prompt staggers
+  them by default.
+
+⚠️ **Distinguish this from the [shutter clause](#the-shutter-is-the-tell-nobody-prompts-for).**
+That one is for shots with *fast* motion, where it tells the model which frames to smear; on a
+near-static clip it is a word that buys nothing and should be [subtracted](#length-three-to-four-sentences-and-the-lever-is-subtraction).
+The two are opposite ends of the same axis, not alternatives.
+
+### Length: one more data point, still not settled
+
+Independent 2026 testing puts the sweet spot at **30–80 words** — *"under 30 reads vague, over
+100 fights the model"* `[community]`. That lands against our own
+[accepted 8b-fog clip at ~105 words](../stories/camping/prompts.md#8b-fog--the-clip--video--ran-and-accepted-2026-09-08).
+
+**[The open conflict](#-open-conflict-how-long-should-an-omni-prompt-be) stays open**, and the
+resolution stays the same: **the axis is kind, not length.** Detail about *what the shot is* buys
+control; prescription about *how to achieve it* buys nothing. Camping `1y` is still the
+experiment that would settle it.
+
+### Sources for this section (2026-09-09)
+
+- [Gemini Omni 1.1 Flash review — Promptslove](https://promptslove.com/blog/gemini-omni-1-1-flash-review/) `[community]` — the five 1.1 changes; the colon/quotation-mark speech rule; 30–80 words; the eight named mistakes; the four-turn conversational limit
+- [Learn about Google Flow models & supported features](https://support.google.com/flow/answer/16352836?hl=en) · [Create videos in Google Flow](https://support.google.com/flow/answer/16353334?hl=en) `[vendor]` — text/frames/ingredients inputs, 360p at half the credit cost, Save frame
+- [AI Slop: 12 tells that a video was made by AI — Opus](https://www.opus.pro/blog/ai-slop-aesthetic-12-tells) · [AI video quality checklist — Green Frog Labs](https://greenfroglabs.com/blog/ai-video-quality-avoid-slop-appearance) `[community]` — biological motion irregularity; hand-morph frames; mouth-audio desync; the 10–15% speed ramp and 10–15% grain counters
+- [Skyra: AI-generated video detection via grounded artifact reasoning](https://arxiv.org/pdf/2512.15693) `[academic]` — morphing artefacts concentrate in hair, fingers, clothing edges and reflective surfaces
+
+**All `[untested]` against our own session** except where this file already says otherwise.
+
 
 ## Notes for BadCode `[untested]`
 

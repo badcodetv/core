@@ -23,13 +23,22 @@ the skill, never as an override.
   Class-coded and recognisable. *(After-state Easter eggs: the W-AI-trose sign
   with only the A and I lit; the clamped dead wank tank.)*
 - **The consulting room** (Scene 7) — tasteful, warm-neutral, money-quiet; the
-  comedy plays against its calm. **The therapist is a man** *(ruled 2026-08-26 from the accepted
-  7a frame)* — grey-haired, in a soft beige jacket over a blue shirt, seated in the near
-  foreground with his back to camera. Canon never specified a gender; the frame did.
-  **Amended 2026-08-26: his face is held once, in 7b, and nowhere else.** The rule was that he is
-  only ever seen from behind or in lost profile so no second face has to be held — but the verdict
-  is funnier delivered by a face, and the continuity cost is nil because he never appears again:
-  one shot, one reference image. Everywhere else he stays a back and a shoulder.
+  comedy plays against its calm. **🔴 The therapist is a WOMAN** *(ruled 2026-09-09 by Kai,
+  overturning the 2026-08-26 ruling)* — a Black British woman in her early fifties, close-cropped
+  natural hair going grey at the temples, reading glasses low on her nose, a bottle-green cardigan
+  over a white shirt. Small, compact, unbothered, and the only person in the room who is working.
+  **The reason is a picture problem, not a story one:** the male therapist and Tarquin were two
+  middle-aged white men with grey at the temples in reverse angles of the same warm-neutral room,
+  and they read as one man twice. Canon never specified a gender — the old ruling was read off a
+  frame, not decided.
+
+  **What it costs: 7b is dead and 7a is probably dead.** 7b holds the male therapist's face for
+  the film's one direct address; 7a uses his grey head and shoulder as the foreground occluder,
+  and a woman's back is not that shape. The replacement is
+  [**7c**](./prompts.md#7c--the-two-shot--still---not-yet-shot), a side-on two-shot written to
+  carry the whole beat — his question and her verdict — in one frame, so Scene 7 stands up even
+  if the reverse pair is never rebuilt. If the pair is wanted back, re-shoot 7a and 7b **from 7c**,
+  never from the old prose.
 - **The Welsh retreat clearing** (Scene 9) — executive dome tents by a river,
   fog, a small ceremony fire; damp, late-70s film-negative texture on
   exteriors.

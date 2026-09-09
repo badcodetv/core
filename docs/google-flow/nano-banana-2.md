@@ -6,6 +6,7 @@ see [Third pass](#third-pass--nano-banana-pro-and-the-anti-slop-toolkit), which 
 Pro-specific prompting and the engine recommendation live.
 **Researched:** 2026-08-12 · **second pass 2026-08-12** ·
 **third pass 2026-08-14** ([Pro, and the anti-slop toolkit](#third-pass--nano-banana-pro-and-the-anti-slop-toolkit)) ·
+**fifth pass 2026-09-09** ([the model names, and faces](#fifth-pass--the-model-names-and-faces-community-2026-09-09) — ⚠️ **there is no "Nano Banana Pro 2"**) ·
 **Confirmed against our Flow session:** never — everything here is
 `[vendor]` or `[community]` until a calibration run says otherwise (see [README](./README.md)).
 
@@ -505,6 +506,73 @@ direction, and the model treats unclaimed space as free — Karen §3a.1 round 2
 road. *"On the pavement beside the subway entrance railings, between the kiosk and the green
 globe posts"* is **a spot that exists in the attached reference and can be checked against it.**
 Place people the way you place cameras: by landmark, not by vector.
+
+### 🔴 `[confirmed 2026-09-09]` A reference carries a face only at the size the face is *in* it
+
+**Camping 7e.** A close-up was built by attaching an accepted **wide two-shot** and stating its
+job as *"the man's face, his hair and his clothes, and the room, the light and the colour."*
+The room came back right. **The face changed.**
+
+**The mechanism is arithmetic, not model behaviour.** In the wide, his head is a small part of the
+frame. Asked for a chest-up portrait, there is nothing in the reference to *enlarge* — so the
+engine invents the detail, and inventing detail on a face is changing the face.
+
+> **The rule, and it is the missing half of [§2's "do not restate what the reference already
+> shows"](#2--do-not-restate-what-the-reference-already-shows):** a reference only counts as
+> carrying a thing if that thing is **roughly the size in the reference that it will be in the
+> output**. **Going closer than the reference is the failure case.** Same size or wider is fine.
+
+**It also sharpens the casting rule** — *cast a Character when the face is the shot, use
+references when it isn't* — into something checkable: **compare the two framings before choosing.**
+If the output is tighter on a face than the reference is, the reference will not hold it, and the
+identity has to come from a Character or from a tighter reference.
+
+**Two cheap fixes when no Character exists** (the therapist's case — she was invented in one
+still and has no Character):
+
+1. **Crop the reference to the face and attach the crop.** Same pixels, but the face now fills the
+   frame it is being read from. Flow's [crop tool](#what-flows-image-surface-actually-gives-you)
+   makes a new image and keeps the original in history. Zero generations — **try this first**.
+2. **Make a Flow Character from the accepted still.** Permanent, and worth it the moment a
+   character is going to appear more than once.
+
+⚠️ **And the trade runs the other way for the *set*.** Dropping the reference to cast a Character
+means the room goes back into prose, which the
+[supersede-the-prose rule](#7--write-the-keep-list-from-the-accepted-still-not-from-the-prose-that-made-it)
+warns against. **Take that trade.** A plain wall, a window and a radiator are forgiving and
+re-describable; a face is neither. **Lose the room before you lose the face.**
+
+
+### 🎯 Making a subject small: put something *else* in the Subject slot `[community]` 2026-09-09
+
+**The engine hero-frames whatever you name first.** Write `Subject: an ordinary estate car…` and
+you get a car, centred, filling the frame — however carefully the composition slot then argues for
+small and off to one side. [Earlier clauses win when instructions compete](../flow/README.md), and
+`Subject` is the earliest clause there is.
+
+> 🔑 **The fix is to name the real subject of the picture, which is often not the object the
+> story is about.** For camping 3c — a crash scene where the car should be barely visible at the
+> frame edge — the Subject slot is **the wet road surface**, and the car is demoted into the
+> composition as a thing at the edge. The slot order does the work no adjective could.
+
+**Two supporting levers from the same pass** `[community]`:
+
+- **State placement as explicit layout**, in the vocabulary the guides use: *"subject in the lower
+  left third of frame, large expanse of empty road above and to the right, generous negative
+  space as a compositional element."* Vague *"off to one side"* loses to the centring prior;
+  a named third does not.
+- 🔴 **Describe the empty part in detail, because the model fills empty space.** *"Add
+  environmental specificity by describing the background in detail instead of leaving it
+  generic."* An unspecified expanse is an invitation to invent something to put in it —
+  **the same mechanism as [the set giving way to whatever the shot
+  requires](#6--if-the-camera-cannot-physically-stand-there-the-model-rebuilds-the-set), seen
+  from the composition side.** So the emptiness gets grit, a patched repair, a puddle, a worn
+  line: occupied by specified texture rather than by invented content.
+
+**Sources:** [Mastering negative space in AI image prompts — PromptAtlas](https://www.getpromptatlas.com/keywords/negative-space-techniques) ·
+[Composition and framing terms for image prompts — Prompt Architects](https://prompt-architects.com/blog/461-composition-and-framing-terms-for-image-prompts) ·
+[AI image composition tips — ZSky](https://zsky.ai/blog/ai-composition-tips) `[community]`
+
 
 ### 4. Slots: fewer is better, and order matters
 
@@ -1177,6 +1245,86 @@ binds to a face, and **an unbound face is a liability, not a blank**.
 - [How to keep characters consistent in Google Flow](https://veobulk.com/en/blog/consistent-characters-google-flow) `[community]`
 - [DetailMaster — can your text-to-image model handle long prompts?](https://arxiv.org/pdf/2505.16915) `[research]` — the length/adherence correlation
 - [Consistent style in Nano Banana image edits](https://sider.ai/blog/ai-tools/how-to-write-prompts-that-produce-consistent-style-in-nano-banana-image-edits) `[community]` — hair-and-wardrobe drift, keep-before-change ordering
+
+## Fifth pass — the model names, and faces `[community]` 2026-09-09
+
+Run while writing camping **7c**, on two questions Kai asked directly: *optimise this for
+"Nano Banana Pro 2"*, and *stop the engine overplaying facial expressions*.
+
+### ⚠️ There is no "Nano Banana Pro 2" `[vendor]` `[community]`
+
+The family, as of 2026-09-09, is **Nano Banana** (Gemini 2.5 Flash Image, Aug 2025) → **Nano
+Banana Pro** (Gemini 3 Pro Image, Nov 2025, GA May 2026) → **Nano Banana 2** (Gemini 3.1 Flash
+Image, 26 Feb 2026) → **Nano Banana 2 Lite**. Nothing called *Pro 2* has shipped.
+
+**The naming is genuinely misleading and will be asked again:** "2" is the *Flash* line and "Pro"
+is the older, larger model, so the higher number is not the better model. Engadget's framing is
+the clearest one-liner — *"Nano Banana 2 is a faster version of Nano Banana Pro."* In Flow's
+picker there are two entries: **Nano Banana 2** (default, all users, zero credits) and **Nano
+Banana Pro** (AI Pro / Ultra, tighter rate limit).
+
+**Our standing recommendation is unchanged** — [use Pro](#which-engine-for-badcode) where the
+job is *suppressing* sharpness and contrast, which is nearly all BadCode work.
+
+### 🎯 Faces: an emotion word gets a caricature; anatomy gets a face `[community]`
+
+The single highest-value finding of this pass, and it independently confirms what camping **7a**
+found the hard way on 2026-08-26.
+
+- **Writing `happy`, `sad`, `angry`, `confused` alone tells the model almost nothing**, and what
+  it fills in is the exaggerated version — a pantomime frown, a crying face, a grin. The counter
+  is to describe the **muscles**: which eyebrow end lifts, where the crease sits, whether the
+  lips part, where the chin points.
+- **Real emotion is small.** *"A tiny eyebrow raise or a slight jaw tighten looks more realistic
+  than extreme expressions."* Say so explicitly — an instruction that the expression **stays
+  small** is worth a clause in `Constraints:`.
+- **🔴 It lives in the eyes.** *"The eyes communicate more than any other facial feature, and if
+  the eyes look dead or mismatched, the whole image fails."* Working rule: **the eye description
+  should be longer than the mouth description.**
+- **Subtle expressions are a known weak spot** for commercial multimodal models, not a prompting
+  failure to be brute-forced — a peer-reviewed study of AI-generated emotional faces reports
+  exactly this. Budget a reroll rather than escalating the wording, because escalating the
+  wording is what produces the caricature.
+
+**And keep 7a's other half: name the wrong readings.** *"This is not weariness, not amusement,
+not sadness and not calm"* is the clause that did the work. It is a
+[style-family negation](#negatives-revisited), the one place negatives are allowed — short,
+one clause, everything else stated positively.
+
+**Add a floor, not just a ceiling.** 7c's phrasing is worth stealing: *"a stranger looking at
+this photograph would take a second to notice anything was wrong with him at all."* It bounds the
+performance from below in a way "subtle" does not.
+
+### ⚠️ Kodak Portra 400 may now be a slop tell `[community]` `[untested]`
+
+Uncomfortable, because it is in nearly every camping and Karen prompt we have written.
+
+> *"A few film stocks are now so over-prompted they read as trying to look like film — Portra 400
+> and Cinestill 800T especially. Reach for Gold 200, Ektachrome, or Ilford HP5 instead."*
+
+**One `[community]` source, no test behind it — do not act on this yet, and above all do not
+change stock mid-story.** Continuity beats a hypothesis: camping's accepted frames are Portra and
+a new stock would not cut against them. What it is worth is a **cheap calibration**: next time a
+*new* piece needs a look decided, run one plate on Portra 400 and one on Kodak Gold 200 with
+everything else identical, and look. Promote or delete after that.
+
+The rest of the pass restated what the [third-pass table](#the-anti-slop-toolkit) already has —
+that the 2026 tell is *"too good: too clean, too evenly lit, too symmetrical, too composed"*, and
+that the counters are a named body and focal length, a named stock, one positioned light, stated
+imperfections and asymmetry. **One addition worth keeping:** *"candid", "street photographer",
+"shot from the hip"* imply **a human behind the camera**, which is a different lever from
+imperfection keywords and cheaper than any of them.
+
+### Sources for this section (2026-09-09)
+
+- [Nano Banana 2 — blog.google](https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/) · [Nano Banana 2 and Nano Banana Pro are generally available — Google Cloud](https://cloud.google.com/blog/products/ai-machine-learning/nano-banana-2-and-nano-banana-pro-are-generally-available) `[vendor]` — the model line-up and the launch dates
+- [Google's Nano Banana 2 is a faster version of Nano Banana Pro — Engadget](https://www.engadget.com/ai/googles-nano-banana-2-is-a-faster-version-of-nano-banana-pro-160000695.html) · [TechCrunch](https://techcrunch.com/2026/02/26/google-launches-nano-banana-2-model-with-faster-image-generation/) `[community]` — the "2 is not newer than Pro" framing, and Flow's default
+- [How to create realistic facial expressions in AI images — Medium](https://medium.com/write-your-world/how-to-create-realistic-facial-expressions-in-ai-images-2026-guide-prompt-examples-63438c54c65f) `[community]` — emotion words vs anatomy; the eyes; keep it subtle
+- [AI-generated face images of emotional expressions — Journal of Nonverbal Behavior](https://link.springer.com/article/10.1007/s10919-026-00517-3) `[academic]` — subtle expressions are a measured weak spot
+- [How to create AI images that don't look like AI (2026)](https://usetoolai.com/blog/how-to-create-ai-images-that-dont-look-like-ai-2026) · [Pixova](https://www.pixova.io/blog/how-to-make-ai-images-look-less-like-ai) · [Hedra](https://www.hedra.com/blog/make-ai-images-look-real-photos-prompting) `[community]` — "too good" as the 2026 tell; the over-prompted film stocks; "candid / shot from the hip" as a human-behind-the-camera lever
+
+**All `[untested]` against our own session.**
+
 
 ## Notes for BadCode `[untested]`
 

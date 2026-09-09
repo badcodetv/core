@@ -1059,6 +1059,65 @@ buys the commercial licence. If Hume flattens it too, the finding is no longer a
 accent is not reliably promptable anywhere, and the choice becomes **an ElevenLabs library
 Yorkshire voice** or **a human**.
 
+## 🔴 OPEN — one entity, two saved voices, and the deciding window has already closed *(raised 2026-09-09)*
+
+**Jack asked whether camping's narrator is the same one as GPOM's — the perspective, not the timbre.**
+The repo answers half of it and flags the other half as a call nobody made.
+
+### ✅ Settled: it is the same entity, and it is named
+
+[`docs/story-craft/narrator.md` §2](../../../story-craft/narrator.md) is explicit — the satellites
+share one narrator, **Camping, Karen and the Magic Money Tree by name**, and the difference from
+GPOM is **function, not identity**:
+
+| | GPOM — the trunk | Camping / Karen — the satellites |
+| --- | --- | --- |
+| Arc | **Its one change arc**, told once: wins everything → bored → the ghosts → the coin → the vault → the revert | **Flat arc.** It already knows; its job is to be right about *this* case |
+| Subject | It is telling **its own story** | It is commenting on **someone else's** |
+| Thereafter | That arc becomes the backstory the sarcasm sits on | — |
+
+🔴 **The review rule that follows:** flag any satellite in which the narrator appears to **learn**
+something. That is the trunk's arc leaking, and it cheapens the one place it is meant to happen.
+
+🔑 **And GPOM's narrator is already *polyphonic*** — *"the superintelligence is the authoritative
+voice when it counts, but it is not the only voice; characters and other perspectives speak too"*
+([GPOM README](../../gitpush-origin-master/README.md)). **So the three-voice camping script is not
+a departure from the house — it is the trunk's own structure applied to a satellite.**
+
+### ⚠️ Not settled: whether one entity may wear more than one voice
+
+The section below asked for this call *"now, before either voice is saved and becomes a canon
+asset."* **Both are now saved.** ElevenLabs' *"Camping Narrator"* was confirmed built 2026-09-03,
+the Hume Octave read was ruled 2026-09-04, and
+[Karen's `narration/README.md`](../../karen/narration/README.md) states its voice is *"a canon
+asset, not a per-session improvisation… the narrator for every line of every act, forever."*
+**Two saved assets exist for one entity and the decision was never made.**
+
+⚠️ **And there is a contradiction nobody has flagged.** `narrator.md`'s carrier/cargo rule lists
+**"the flat delivery"** among the things fixed across the run, alongside the dials, the sign-on
+ritual and the refrain. Two accents and two registers reads as a carrier break.
+
+### 🥇 Recommended resolution — fixed grammar, variable timbre
+
+**Same entity, different voices, and the rule that makes it deliberate rather than accidental:**
+
+> **What is fixed across the run is the delivery *grammar* — flat baseline, one `{WARM}` crack per
+> piece, the refrain, dry certainty, one admitted uncertainty. What is free is the *timbre*.**
+
+🔑 **The justification is already in canon.** The narrator has no face — that is the standing
+no-personification rule — and it has no throat either. **It is not a person, so it has no more a
+real voice than it has a real body.** A borrowed voice per story is consistent with what it is; a
+single fixed timbre quietly implies a body.
+
+⚠️ **The cost, stated honestly:** a house voice is the strongest recognition asset a serialised run
+has, and `narrator.md` cites the precedent for it — Serling's suit and cigarette, unchanged across
+156 episodes, with only the disclosure varying. **Fixed grammar has to do that work instead, and
+it is a weaker hook than a timbre.**
+
+⬜ **Unruled. Jack's call.** If it goes the other way — one house voice — the cheaper direction is
+to make **Karen's** the house voice and re-audition camping, because camping's has been ruled twice
+in a fortnight and is the less settled of the two.
+
 ## Divergence from the Karen narrator — deliberate
 
 Karen's narrator is **General American, mid-range, explicitly "never deep."** This one is
