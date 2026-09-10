@@ -174,6 +174,10 @@ Lyrics *and* My Taste every round.
 
 ### 8. My Taste is an upstream vocal spec — and it cannot be turned off
 
+> 🔑 **Superseded 2026-09-10.** v6 added a **Personalize** switch, and Kai ruled it **always
+> off**, with My Taste no longer used — "then each song becomes an atomic unit." The per-track
+> profile procedure below is history; it is kept because it explains the leaks it was fighting.
+
 The profile-level "My Taste" text is applied to **every** generation, and ours contained a full
 competing vocal identity (male Scouse grime MC — the Camping voice), explaining a male-voice leak
 and dead descriptors (`adenoidal`, `rising intonation` were in *both* specs, so carried no signal).

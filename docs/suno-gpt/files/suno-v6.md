@@ -75,14 +75,17 @@ These labels are **proven** — they supersede the video readings in the table a
 | Duration | **Custom / Auto** | Auto |
 | Weirdness | 0–100, caption "Expected results" at 50 | 50 |
 | Style Influence | 0–100, caption "Moderate" at 50 | 50 |
-| Personalize | a single button labelled **My Taste** (plus an info icon) | not selected |
+| Personalize | a single button labelled **My Taste** (plus an info icon) | not selected — 🔑 **and it stays that way: always off** |
 
 🔴 **Suno switches the model on its own.** Our form showed a toast: *"Model changed — Model was
 automatically changed to support your selected conditions."* So a model you set is not a model
 that stays set — the loader reads it back after everything else, before Create.
 
-⬜ **Personalize is still unverified** — whether its "My Taste" button toggles the account-wide
-profile on and off, or opens it, has not been clicked through. Default it off.
+🔑 **Personalize is ALWAYS OFF, and we don't use My Taste** (Kai, 2026-09-10): *"stop trying to
+use the My Taste box and always have personalize off when we generate a song, because then each
+song becomes an atomic unit."* In our own logs My Taste only ever caused damage, never a better
+take. Each song is now its three boxes plus its settings, and nothing hidden. The loader forces
+Personalize off and refuses a spec that asks for it on.
 
 ### What the launch videos said (kept for the *what it does* column)
 
@@ -343,7 +346,7 @@ Uploaded audio passes an originality/rights check before it can be used.
   widens what's safe.
 - **Metatag doubt, one A/B:** a plain LLM-written prompt beat a metatag-heavy one on hip-hop.
   Consistent with our existing stance — prefer plain production language.
-- **The same four boxes do not reproduce an old take on v6** (tested: a v5 song's style + lyrics
+- **The same boxes do not reproduce an old take on v6** (tested: a v5 song's style + lyrics
   gave a different song on both v6 and Wild). An accepted v5.5 sheet is a **starting point**, not
   a recipe — see §10.
 - Exclude Styles, the 1,000-char Style cap and section tags carry over unchanged.
@@ -417,8 +420,9 @@ logged before and after.
    accepts on v6, and whether the words outside it keep the take.
 3. ✅ **Map the live create form** — done 2026-09-10 (§2's live table; `suno.mts` upgraded).
    Still open inside it: what Personalize's "My Taste" button does, and the Simple attach menu.
-4. **Personalize vs My Taste** — a distinctive profile, a pair with Personalize off and a pair
-   with it on. Decides whether the four-box atom keeps taste as a box.
+4. **The kazoo check** *(optional, confirms the 2026-09-10 ruling)* — put an absurd profile in My
+   Taste ("only kazoos and yodelling"), generate one plain pair with Personalize **off**. No kazoos
+   = the profile is kept out, and the box's contents stop mattering entirely.
 5. **Our D&B on v6 vs Wild** — grid round R1 (`automation.md` §9).
 6. **The narrator Voice on v6 and Wild** — quiet-section timbre, UK accent, sibilance.
 7. **Variety** — does it change how far apart the two takes are?

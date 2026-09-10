@@ -64,12 +64,13 @@ export interface SunoSpec {
   exclude: string
   lyrics: string
   /**
-   * 🔑 My Taste — the FOURTH BOX, and part of the atom (Kai, 2026-08-27).
+   * 🗄 RETIRED 2026-09-10 (Kai): "we should stop trying to use the My Taste box and always have
+   * Personalize off when we generate a song, because then each song becomes an atomic unit."
    *
-   * It is account-wide, so it is the one box that persists between runs and the one that
-   * silently biases a generation it was never written for. **`load` writes it every time** and
-   * REFUSES a spec without it, because a prompt change means all four boxes change together.
-   * Set `applyTaste: false` ONLY for a deliberate slider-only round, where no prompt moves.
+   * My Taste was the fourth box of the atom (2026-08-27) and in our own logs it only ever did
+   * harm — an account-wide profile leaking into songs it was never written for. v6's Personalize
+   * toggle ("Make variety match your taste") is now forced OFF on every load, and `load` no longer
+   * reads, writes or checks the box. A `taste` in an old sheet's spec is ignored.
    */
   taste?: string
   applyTaste?: boolean
@@ -118,10 +119,10 @@ export interface SunoSpec {
   /** Vocal Gender segment. Default `null` = neither selected. */
   vocalGender?: 'male' | 'female' | null
   /**
-   * Personalize — its single button reads "My Taste". Default `false`.
-   * ⬜ What it does is UNVERIFIED: reportedly the create-form switch for the account-wide My Taste.
+   * Personalize — its single button reads "My Taste". 🔑 **ALWAYS OFF** (Kai, 2026-09-10): it is
+   * forced off on every load and asserted off before every Create. Only `false` is accepted.
    */
-  personalize?: boolean
+  personalize?: false
   /** `grid` only: the axes to permute. Cells run model-outermost, weirdness-innermost. */
   grid?: GridAxes
 }
@@ -438,8 +439,11 @@ export async function setV6Controls(page: Page, spec: Partial<SunoSpec>): Promis
   }
   out.push(await setSegment(page, 'Max Mode', spec.maxMode ? 'On' : 'Off'))
   out.push(await setSegment(page, 'Vocal Gender', spec.vocalGender ? spec.vocalGender[0].toUpperCase() + spec.vocalGender.slice(1) : null))
-  out.push(await setSegment(page, 'Personalize', spec.personalize ? 'My Taste' : null))
-  // A click on the Personalize button may open the My Taste editor rather than toggle — close it.
+  // 🔑 Personalize is ALWAYS OFF (Kai, 2026-09-10) — the spec cannot turn it on.
+  if ((spec as { personalize?: unknown }).personalize === true)
+    throw new Error('spec asks for personalize: true — house rule since 2026-09-10 is Personalize ALWAYS OFF')
+  out.push(await setSegment(page, 'Personalize', null))
+  // In case a click ever opens the My Taste editor rather than toggling — close it.
   await page.keyboard.press('Escape')
   return out.join(' · ')
 }
@@ -455,7 +459,7 @@ async function checkV6(page: Page, spec: Partial<SunoSpec>, v: Record<string, un
   if (v.maxMode !== (spec.maxMode ? 'On' : 'Off')) p.push(`Max Mode reads ${v.maxMode}`)
   const g = spec.vocalGender ?? null
   if (String(v.vocalGender).toLowerCase() !== (g ?? 'none')) p.push(`Vocal Gender reads ${v.vocalGender}, wanted ${g ?? 'none'}`)
-  if (v.personalize !== (spec.personalize ? 'on' : 'off')) p.push(`Personalize reads ${v.personalize}`)
+  if (v.personalize !== 'off') p.push(`Personalize reads ${v.personalize} — house rule is ALWAYS OFF (2026-09-10)`)
   return p
 }
 
@@ -723,33 +727,10 @@ async function load(page: Page, spec: SunoSpec, weirdness?: number) {
   console.log(await setModel(page, spec.model))
   console.log(await setV6Controls(page, spec))
 
-  // 🔑 THE ATOM: taste + style + exclude + lyrics change together or not at all.
-  if (spec.applyTaste === false) {
-    console.log('taste: SKIPPED (slider-only round — no prompt box may change either)')
-  } else if (!spec.taste) {
-    throw new Error(
-      'spec has no `taste`. The four boxes are one atom (2026-08-27): taste, style, exclude and ' +
-        'lyrics change together. Add a ```taste fence to the style block, or pass ' +
-        '`applyTaste: false` for a deliberate slider-only round.',
-    )
-  } else {
-    // 🔑 THE FREEDOM TOKEN: only ever claim a box that is free, or one we already hold.
-    const owner = await tasteOwner(page)
-    if (owner !== null && owner.trim() !== spec.taste.trim()) {
-      throw new Error(
-        `My Taste is OWNED by another session — it reads ${JSON.stringify(owner.slice(0, 70))}… ` +
-          `not "${TASTE_FREE}". PAUSE AND ASK THE HUMAN; never load over it. ` +
-          `To take it deliberately: \`suno.mts taste-release\`.`,
-      )
-    }
-    console.log(owner === null ? 'taste: box is FREE — claiming' : 'taste: already ours — reclaiming')
-    console.log('taste:', await setTaste(page, spec.taste))
-    const back = await getTaste(page)
-    if ((back ?? '').trim() !== spec.taste.trim()) {
-      throw new Error(`taste read-back MISMATCH (${(back ?? '').length}/${spec.taste.length}) — refusing to generate against the wrong global box`)
-    }
-    console.log('taste: ✅ read back identical')
-  }
+  // 🔑 THE ATOM is style + exclude + lyrics (+ the settings) — Kai, 2026-09-10. My Taste is
+  // retired: Personalize is forced off in setV6Controls, and the account-wide box is never read,
+  // written or checked. A leftover `taste` from an old sheet is ignored, loudly.
+  if (spec.taste) console.log('taste: IGNORED — My Taste is retired; Personalize is always off (2026-09-10)')
 
   console.log('style:', await fillChecked(page, '[data-testid="create-form-styles-wrapper"] textarea', spec.style))
   console.log('exclude:', await fillChecked(page, 'input[placeholder="Exclude styles"]', spec.exclude))
@@ -1295,7 +1276,7 @@ if (cmd === 'extract') {
   await browser.close()
 } else if (cmd === 'controls') {
   // Set ONLY the v6 controls (model, Variety, Max Mode, Vocal Gender, Personalize) and read them
-  // back. Touches no prompt box and not My Taste — safe while another session owns the taste box.
+  // back. Touches no prompt box — a free way to check the v6 settings on the live form.
   const spec: Partial<SunoSpec> = JSON.parse(readFileSync(rest[0], 'utf8'))
   const { browser, page } = await connect()
   try {
@@ -1361,20 +1342,20 @@ if (cmd === 'extract') {
     }
     console.log(JSON.stringify(await listTakes(page, spec.title), null, 2))
   }
-  // 🔑 Hand the box back. On the failure path too — a half-finished round still leaves a
-  // profile installed account-wide, which is the exact bug the token exists to stop.
+  // (Until 2026-09-10 this released the My Taste freedom token. My Taste is retired, so there is
+  // no account-wide box to hand back — each song is its own unit.)
   } finally {
-    // Release on EVERY exit from a generating run, thrown or clean.
-    if (cmd !== 'load') console.log(await releaseTaste(page).catch((e) => `🔴 release failed: ${e.message}`))
     await browser.close()
   }
 } else if (IS_CLI) {
   console.log(`badcode suno — drive suno.com/create over CDP. See docs/suno-gpt/automation.md
 
   status                          read the create form back
-  taste [block.txt]               read My Taste; with a file, back up + write + verify
-  extract <sheet.md> "<section>"  pull style/exclude/lyrics/taste out of a sheet
-  controls <spec.json>            set + read back ONLY the v6 controls (no boxes, no My Taste)
+  taste [block.txt]               (retired from the flow) read My Taste; with a file, back up + write
+  extract <sheet.md> "<section>"  pull style/exclude/lyrics out of a sheet (a taste fence is ignored)
+  controls <spec.json>            set + read back ONLY the v6 controls (no prompt boxes)
+
+Personalize is ALWAYS OFF and My Taste is not used (Kai, 2026-09-10).
   load  <spec.json>               fill everything, generate NOTHING
   pair  <spec.json>               load, then Create at each weirdness (default 30 and 60)
   grid-plan <spec.json>           print the grid's cells and titles — spends nothing

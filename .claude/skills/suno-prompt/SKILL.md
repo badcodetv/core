@@ -93,7 +93,7 @@ skip straight to drafting if they clearly just want something fast.
 - Does this need to **match an existing track** (same narrator, same release)? If yes, go to the
   consistency stack in `suno-controls-and-workflows.md` §4 before writing anything.
 - Is the lead a **character** (a specific person, not just "a vocal")? If yes, read their canon
-  `voice:` frontmatter, check what's in **My Taste** before generating, and plan for the voice via
+  `voice:` frontmatter, and plan for the voice via
   "Getting a specific voice" below — character voices routinely need the Voice-transplant ladder,
   and knowing that up front saves rounds.
 
@@ -153,20 +153,21 @@ Always give the sliders. They are prompt-adherence controls, not platform trivia
 leaves the best advice on the floor.
 
 - **Simple:** Style block only.
-- **Advanced:** My Taste block, Style block, Exclude Styles block, then a one-line settings note.
+- **Advanced:** Style block, Exclude Styles block, then a one-line settings note (Personalize off).
   Lyrics only on request.
 - **Studio:** single-element style block + Exclude Styles (mandatory there — Studio leaks instruments
   constantly).
 
-**Always produce a per-track My Taste block** (Advanced work). My Taste biases *every* generation,
-cannot be turned off, and can only be replaced — a stale profile from the last track is a competing
-identity silently fighting this one (the Karen lesson: her profile would drag any later track toward
-her voice). So every track gets its own profile to swap in for the session: positive statements
-only, **vocals first**, pulling the same way as the Style prompt, no artist names, well under the
-2,000-char limit. Remind the user to restore (or swap to the next track's) profile afterwards.
+🔑 **Never produce a My Taste block, and Personalize is always OFF** (Kai, 2026-09-10): *"stop
+trying to use the My Taste box and always have personalize off when we generate a song, because
+then each song becomes an atomic unit."* In our own logs My Taste only ever did harm — an
+account-wide profile leaking into songs it wasn't written for (Karen's voice, Camping's bar-one
+strings, the newsreader under fourteen Camping rounds). Everything a song needs goes in its own
+boxes.
 
-**The generation workflow is four pastes, in order: My Taste → Style → Exclude Styles → Lyrics** —
-all four boxes, every round, from this session's blocks. Never trust what a box already contains.
+**The generation workflow is three pastes, in order: Style → Exclude Styles → Lyrics** — all
+three, every round, from this session's blocks — **plus the settings, with Personalize off**.
+Never trust what a box already contains.
 
 Default settings line, unless the situation calls for otherwise:
 
@@ -175,8 +176,8 @@ Default settings line, unless the situation calls for otherwise:
 > **60**, audio influence **40** (only if you're seeding from audio).
 
 State every v6 control, not just the sliders: v6 on Duration **Auto** runs longer than v5.5 did,
-and Personalize is reportedly the switch for My Taste. Variety, Personalize and Max Mode are
-**untested by us** — say so if the user asks what they do (`suno-v6.md` §2).
+and Personalize is **always off** by house rule. Variety and Max Mode are **untested by us** —
+say so if the user asks what they do (`suno-v6.md` §2).
 
 Adjust with reasons from `suno-controls-and-workflows.md` §1 — e.g. weirdness 0 and style influence
 100 for a lyric-swap cover; weirdness 0 for an exact reproduction; audio influence 75–85 when a
@@ -247,9 +248,9 @@ goes in, every time.
 | Exporting, pulling MIDI out, sharing a project with Jack | `suno-studio.md` §12 |
 | A character voice that won't come | "Getting a specific voice" below, then `suno-voices.md` |
 | Fusing two genres — an orchestra under a beat, strings on a club track | `suno-tag-mechanics.md` "The unity sentence". Name the lead genre, then state explicitly that the two are **one piece of music, not a remix of one by the other** — that clause is what stops a fusion sounding bolted on. Worked example: `stories/gitpush-origin-master/songs/git-push-origin-master-dnb.md` |
-| A layer arrives too early — strings/pads in bar one when you asked for them at the drop | `suno-tag-mechanics.md` "The unity sentence" → the entrance rules. Naming an instrument puts it in bar one by default, and a *lead-in* cue still names it. **Delete the mention rather than describing a quiet version**, and strip the instrument from **My Taste**, which has no section scope. Worked example: `stories/camping/songs/camping.md` §4c |
+| A layer arrives too early — strings/pads in bar one when you asked for them at the drop | `suno-tag-mechanics.md` "The unity sentence" → the entrance rules. Naming an instrument puts it in bar one by default, and a *lead-in* cue still names it. **Delete the mention rather than describing a quiet version**. Worked example: `stories/camping/songs/camping.md` §4c |
 | A fill, stab or one-off event never arrives | Check what the prompt says the **bed** already is — an amen fill over a kit described as `chopped amen breaks` has nothing to contrast with. Then describe the **event** (what changes, how long, how loud, that it returns) rather than a bar count: Suno has no bar counter. `suno-tag-mechanics.md` "Making a fill or a one-off event audible" |
-| An instrument you asked for simply isn't there | A **stale ban**. Grep the Exclude box *and* My Taste for the instrument, its **category**, and whole-palette adjectives (`machine-made`, `acoustic`). It reads as the Style box being ignored. `suno-tag-mechanics.md` |
+| An instrument you asked for simply isn't there | A **stale ban**. Grep the Exclude box for the instrument, its **category**, and whole-palette adjectives (`machine-made`, `acoustic`). It reads as the Style box being ignored. `suno-tag-mechanics.md` |
 | A spoken or rapped delivery starts drifting **sung** | Look at the **accompaniment**, not the vocal clauses. A melodic layer under a verse hands the model a tune and it gives it to the singer. `suno-tag-mechanics.md` |
 | Cues have grown huge and you suspect they're being ignored | They are read, but they compete. Apply the **scoping rule** (the lyric cue is the only section-scoped box) then the **derivability test** (is this already implied by the Style box's arrangement sentence?). Camping's verse cue went 1,010 → 311 with nothing lost. `suno-tag-mechanics.md` |
 | Several rewordings of the same idea each fail **differently** | The category is wrong, not the wording. Stop iterating and change direction — `session-method.md` |
@@ -305,7 +306,7 @@ This is where the quality actually comes from. After the user reports back:
 5. **Escalate a tag that's ignored** by adding redundant synonyms. Redundancy is a real technique,
    not a smell. 🔴 **But not with `spoken word`** — that ladder is retired for narration (it
    escalates a performance-poetry genre word); see "Getting a man to TALK" below.
-6. **Re-paste every box, every round — Style, Exclude, Lyrics, and My Taste.** "Reuse Prompt"
+6. **Re-paste every box, every round — Style, Exclude and Lyrics** (Personalize off). "Reuse Prompt"
    silently carries the old lyrics forward, and a stale Lyrics box is inaudible as such — it just
    sounds like the style prompt is being ignored. (This cost the Karen track four rounds.)
 7. **If a vocal hasn't moved after ~2 rounds of style-prompt surgery, stop prompting** — the voice
@@ -341,12 +342,12 @@ convergence at both low and high weirdness — weirdness perturbs within the poo
 - **The character in (nearly) every bracket cue.** A section header with no vocal direction falls
   back to the genre default *for that section*.
 
-**Check upstream before debugging downstream: My Taste.** The profile text biases every
-generation and can hold a full competing vocal identity. It **cannot be saved empty** — only
-replaced — and the "My Styles" toggle is just the suggestion wand, not the bias. Working move: swap
-in a per-track profile that pulls the same way as the song (Vocals field first), restore after.
-The implicit half (learned from your library and likes) has no off switch: thumbs-down every
-reject, one workspace per arc.
+**Check upstream before debugging downstream: is Personalize off?** Since 2026-09-10 we don't use
+My Taste — Personalize stays off so the account-wide profile shouldn't reach the song. If a
+foreign voice or instrument keeps leaking in anyway, suspect that premise first (it is not yet
+proven that Personalize off fully gates the profile — `suno-v6.md` §12 test 4). The implicit half
+(learned from your library and likes) has no off switch either way: thumbs-down every reject, one
+workspace per arc.
 
 **The escalation ladder, when prompting stalls:**
 
@@ -527,7 +528,6 @@ out as a vocal stem anyway.
 | **Style** | a **skit / interlude** pool word · `a man talking over a beat` · a BPM · one **unpitched** bed · `voice-forward mix, no singing, no melody`. **No genre word containing "spoken" or "word"** |
 | **Exclude** | the **whole poetry pool**, named: `spoken word, performance poetry, poetry slam, dub poetry, beat poetry, recital, recitation, declamatory, oratory, verse, stanza, rhyming, metrical, incantation, dramatic reading, elocution` |
 | **Lyrics** | **`[Monologue]`, one label repeated identically**, then **continuous prose paragraphs** — natural punctuation, no rhyme, no parentheses. Ladder if ignored, lateral not longer: `[Monologue]` → `[Spoken Word Narration]` → `[Interlude]` → no label |
-| **My Taste** | the speech act first: *he is TALKING — not singing, not rapping, not reciting* |
 
 🔴 **The layout votes as hard as the words.** Suno reads a line break as a phrase reset and a
 section break as a musical event, so one bracketed section per line **is** the slam cadence drawn as
@@ -542,7 +542,7 @@ family too; what stays unbanned is the **underscore** — `ambient bed, drone, r
 - **He's American.** Exclude-box bans do **not** control nationality — four `American …` bans failed
   three rounds running. 🔴 **And never weld a foreign form-word to a native pool word:** `Madchester
   skit` is a British place name plus an *American* form word in the same slot, and the model picks
-  rather than averages. **Run the accent audit — all four boxes at once** — grepping for the wrong
+  rather than averages. **Run the accent audit — all three boxes at once** — grepping for the wrong
   nationality's scene names, form words (`skit`, `interlude`), production slang (`dusty`, `boom bap`)
   and the literal country adjective, then weight by **position**: genre position and the form word are
   strong, nationality adjectives (`British`, `northern`) buy nothing. `monologue` is the
@@ -607,8 +607,8 @@ When a prompt or lyric is worth keeping, write it to `docs/stories/<story>/songs
 same file `new-story` step 4 produces. Frontmatter carries **metadata only** (`title, status, bpm,
 model, settings, voices`). Everything destined for a Suno input box lives in the **body as fenced
 code blocks** that copy clean — **never in frontmatter** (YAML `>-` blocks indent every line, which
-makes copy-pasting a pain). A `## Suno prompt` section carries all four, in paste order: **My Taste,
-Style, Exclude Styles**, then the lyrics in a `lyrics` block.
+makes copy-pasting a pain). A `## Suno prompt` section carries all three, in paste order: **Style,
+Exclude Styles**, then the lyrics in a `lyrics` block — no My Taste block (retired 2026-09-10).
 `docs/stories/gitpush-origin-master/songs/git-push-origin-master-orchestral.md` is the worked
 reference. Its D&B sibling (`…-dnb.md`) is the worked reference for **two cuts of one song**: when
 a track forks rather than iterates, give each cut its own file with a `sibling:` frontmatter key,

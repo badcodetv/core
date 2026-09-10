@@ -358,7 +358,7 @@ Honesty about this is the point of the table — several recon assumptions faile
 | **Exclude box truncates on a multi-id run** | ✅ **FIXED in `suno.mts` 2026-08-27** — `fillChecked` (clear → blur → refill → blur → read back, ×4) was ported over from `style-ab.mts`, where it had been fixed and then never brought back, which is how 2026-08-27 hit the same bug a **fifth** time at **117/499**. `load` now also **asserts `excludeLen`** and refuses to continue into `pair`. Previously: 🔴 **proven, four times** — 2026-08-25/26, EVERY time on the *second* variation of a run: 117/831, 169/871, 180/695. The kept prefix length varies, which rules out a `maxlength` and reads like stale React state winning a race against `.fill()`. Fix: clear → blur → refill → blur → read back, retry ×4 (`fillChecked` in `style-ab.mts`). A length assertion before Create is what makes a bad fill free |
 | **🔴 ALL form state survives a box fill — mode, attachment, Voice AND duration** | 🔴 **proven three times on 2026-08-27.** Omitting a spec field does not clear the control it maps to. Duration was the third: **eight takes returned at 1:05 from specs with no `durationSec`**, because an earlier round set 65. Guards now exist for all three. ⚠️ **`status.durationSec` is unreliable** — it kept reading `65` after the input was verified empty; the authoritative read is `input[placeholder="Auto"][type=number]`, whose placeholder is *Auto*, so **empty IS Auto**. 🔑 Suno also **replaced the Advanced duration slider with a `Duration / Custom / Auto` number box** (1-300), so `setSlider(page,'Duration',…)` had been writing to nothing |
 | **🔴 The form's MODE and ATTACHMENTS survive a box fill** | 🔴 **proven live 2026-08-27, at 40 credits.** The create form has four mode tabs (`Simple · Audio · Custom · Cover`) and an `Audio/Voice/Inspo` attachment row. **Filling style/excludes/lyrics clears none of it.** Two GPOM narration pairs were generated as **covers of a Camping source** left attached by another session, while `status` reported every box, slider, title and workspace correct. It also produced a false diagnosis — the "music under the dry read" was blamed on My Taste and on Voice bleed. `load` now calls `formMode(page)` first and aborts on a wrong mode or any attachment. ⬜ **It reports, it does not clear** — and the selectors have had one live read only |
-| **🔑 THE ATOM: taste + style + exclude + lyrics change together** | ✅ **ruled 2026-08-27 (Kai)** — *"if we're changing any of the prompts, we should change all of the prompts… it's an atomic action."* Two levels only: a **prompt round** moves all four boxes, a **slider round** moves audio/style influence and weirdness and **no prompt box at all**. `load` now writes My Taste **every time**, **reads it back**, and **refuses a spec without a `taste`**; `extract` reads a ```taste fence from **inside the style block first** and only falls back to a shared section for older sheets. 🔴 The old `tasteSection = 'The shared profile'` default encoded the wrong model and is how the GPOM profile sat under fourteen Camping rounds |
+| **🔑 THE ATOM: taste + style + exclude + lyrics change together** | 🔑 **Amended 2026-09-10 (Kai): My Taste retired, Personalize ALWAYS OFF — the atom is style + exclude + lyrics + settings; `load` no longer touches My Taste.** History: ✅ **ruled 2026-08-27 (Kai)** — *"if we're changing any of the prompts, we should change all of the prompts… it's an atomic action."* Two levels only: a **prompt round** moves all four boxes, a **slider round** moves audio/style influence and weirdness and **no prompt box at all**. `load` now writes My Taste **every time**, **reads it back**, and **refuses a spec without a `taste`**; `extract` reads a ```taste fence from **inside the style block first** and only falls back to a shared section for older sheets. 🔴 The old `tasteSection = 'The shared profile'` default encoded the wrong model and is how the GPOM profile sat under fourteen Camping rounds |
 | **`taste` CLI: read, back up, write, verify** | ✅ **added 2026-08-27.** `getTaste`/`setTaste` had existed for months with no CLI, so the protocol this document requires — *read it back at the start of every session* — was not actually runnable. `npx tsx scripts/suno/suno.mts taste` reads it; `taste <block.txt>` backs the old one up to `.my-taste-backup.txt`, writes the new one and **asserts the read-back matches** |
 | **`setTaste` writes My Taste** | ✅ **proven 2026-08-26** — read back at 1207/1207 chars. Previously listed nowhere because "it clicked Save" is not evidence; `getTaste` is the read-back half and is now in `suno.mts` |
 | **My Taste is account-wide and outlives everything** | 🔴 **proven, expensively** — it belongs to no sheet, survives reloads, is invisible from the create form, and applies to every generation. On 2026-08-26 it was found still holding the *GPOM newsreader* profile ("**one** dark gravelly British male voice… **pure spoken narration**… **Music I love: almost nothing**") through fourteen Camping cover rounds. **Read it back at the start of every session, back it up before writing it, restore it after.** See [`camping-style.md`](../stories/camping/songs/archive/camping-style.md) §1 |
@@ -385,9 +385,11 @@ Honesty about this is the point of the table — several recon assumptions faile
 | Take/clip harvesting from the workspace list | ⬜ not attempted |
 | **Model picker sets and reads back** (v6 → v6-wild → v6) | ✅ **proven 2026-09-10** via `controls` |
 | **Variety, Max Mode set and read back** (Normal → High → Normal, Off → On → Off) | ✅ **proven 2026-09-10** via `controls` |
-| **Vocal Gender / Personalize set** | 🟡 read back as *none* on a clean form; **setting** either has not been exercised. Whether Personalize's "My Taste" button toggles or opens a dialog is ⬜ unknown |
+| **Vocal Gender set** | 🟡 reads back as *none* on a clean form; **setting** Male/Female has not been exercised |
+| **Personalize** | 🔑 **always OFF by ruling (2026-09-10)** — we never turn it on, so what its "My Taste" button does when on no longer matters to us |
 | **Suno switches the model itself** | 🟡 **observed 2026-09-10** — a "Model changed… to support your selected conditions" toast; trigger unknown. `load` reads the model back last |
-| **`grid` / new-style `pair` generating** | ⬜ **not run** — needs Kai's go-ahead and a free My Taste box |
+| **`grid` / new-style `pair` generating** | ⬜ **not run** — needs Kai's go-ahead (credits) |
+| **Personalize forced off; `personalize: true` refused** | ✅ **proven 2026-09-10** via `controls` |
 | Simple-mode attach menu (Image / Video / playlist) | ⬜ not mapped |
 
 🔑 **The form survives its own generation** — proven 2026-08-24. So the pair is cheap: load once,
@@ -510,7 +512,7 @@ The table immediately below is what the launch-day videos predicted, kept becaus
 | --- | --- |
 | **v5.5 and older are gone**; the picker holds v6 / v6 Wild / v6 Mini **and your custom models** | `load` never sets the model at all — it reads whatever is selected. With model now an experiment axis that is the **inheritance bug** (2026-08-27 law) in its purest form. The `/^v\d/` read may also fail on `V6 Pro` / `Version 6 Pro` |
 | **Variety** 🆕 — stepped, default Normal, **mounted only with a v6-family model** | new form state that persists; conditionally mounted like Duration, so "absent" must be told apart from "not set" |
-| **Personalize** 🆕 — on/off, reportedly the create-form switch for **My Taste** | if it gates My Taste, the atom's taste box only bites when it is on — and a leftover *on* is an invisible bias. Must be set and read back every run |
+| **Personalize** 🆕 — on/off, reportedly the create-form switch for **My Taste** | a leftover *on* is an invisible bias. **Ruled 2026-09-10: always OFF**, forced and asserted every run; My Taste itself is no longer used |
 | **Max Mode** toggle, **Vocal Gender** | more persisting state |
 | Tabs read **Simple / Advanced** in every v6 source; "Custom" never seen; Audio/Cover possibly post-upload *modes* | `formMode()` expects `custom` — it may false-abort or, worse, false-pass |
 | The Simple **Add** menu takes Audio · Image · Video · Voice · playlist · styles, and **an attached song + text = an edit of that song** | the Cover trap in a new place: a song left attached in Simple turns a Create into an edit. `formMode()`'s attachment check must recognise the new chips |
@@ -528,8 +530,8 @@ The table immediately below is what the launch-day videos predicted, kept becaus
 4. ✅ **`grid`** + **`grid-plan`** + **`controls`**. `pair` is a one-axis grid. Every cell after the
    first re-asserts its controls, retitles, re-verifies, then Creates; the credit balance is logged
    around each Create.
-5. ⬜ **Run R1** below — needs Kai's go-ahead (it spends credits) **and a free My Taste box**:
-   on 2026-09-10 the box held another session's British-class profile, not `MUST_REPLACE_HERE`.
+5. ⬜ **Run R1** below — needs Kai's go-ahead, because it spends credits. (The My Taste box no
+   longer gates anything: retired 2026-09-10, Personalize always off.)
 
 ### The grid (proposal — Kai rules on it)
 
@@ -541,10 +543,10 @@ The atom rule and the pair survive unchanged: a **cell** is a slider round, so w
 | **R1 · model × pair** | {v6, v6 Wild} × weirdness {30, 60} | 4 | does Wild beat v6 on our sheets, and does the 30/60 winner flip between models? |
 | **R2 · Variety** | {lowest, Normal, highest} on R1's winner | 3 | does Variety move how far apart the two takes are? |
 | **R3 · Max Mode** | off / on | 2 | consistency against credit cost |
-| **R4 · Personalize** | off / on with a known My Taste | 2 | is Personalize the gate on My Taste? — settles the atom |
+| **R4 · the kazoo check** *(optional)* | an absurd My Taste ("only kazoos and yodelling") with Personalize **off** | 1 | confirms the ruling's premise — that Personalize off keeps the account-wide profile out of the song |
 
-**Baseline for every cell unless the round varies it:** Personalize **off**, My Taste written and
-read back, Max Mode off, Variety Normal, Style Influence 75, Vocal Gender unset unless the sheet
+**Baseline for every cell unless the round varies it:** Personalize **off** (always — never
+varied), Max Mode off, Variety Normal, Style Influence 75, Vocal Gender unset unless the sheet
 sets it, Duration explicit. **Never v6 Mini.**
 
 **Naming extends, it doesn't change:** `<story>-<cut>-<revision>-<model>-w<weirdness>` with the
@@ -569,6 +571,12 @@ when a prompt box moves.
   itself. `suno.mts` gained `model` (required) + four v6 fields with read-back, `controls`,
   `grid-plan` and `grid`; `pair` became a one-axis grid and titles gained the model. Proven by a
   `controls` round-trip (v6 → v6-wild / High / Max On → back). Not yet run: any generation on v6.
+
+- **2026-09-10 (My Taste retired)** — Kai: *"stop trying to use the My Taste box and always have
+  personalize off when we generate a song, because then each song becomes an atomic unit."* The
+  atom is now style + exclude + lyrics + settings. `load` forces Personalize off and asserts it,
+  refuses `personalize: true`, and no longer reads, writes or ownership-checks My Taste; the
+  freedom token and the post-run release are retired. Proven via `controls`.
 
 - **2026-08-24** — created. Full DOM recon of `suno.com/create` over CDP; five traps found and
   worked around; Gen A of the GPOM narration loaded end-to-end in one command (style 903,

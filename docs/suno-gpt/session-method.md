@@ -9,28 +9,29 @@ spent on a mistake the process below would have caught in one.
 
 ---
 
-## 🔑 One variable per round — and the four boxes are ONE variable
+## 🔑 One variable per round — and the three boxes are ONE variable
 
-*Ruled 2026-08-27 by Kai, after a shared My Taste box biased fourteen Camping rounds.*
+*Ruled 2026-08-27 by Kai, after a shared My Taste box biased fourteen Camping rounds. Amended
+2026-09-10: My Taste is retired and Personalize is always off — "then each song becomes an atomic
+unit."*
 
-**A "style" is four boxes, not one:** My Taste, Style, Exclude styles, Lyrics. They describe the
-same sound, so **they change together or not at all.** Changing three of four leaves a hybrid
-nobody designed — and My Taste, being account-wide and invisible from the create page, is always
-the one left behind.
+**A "style" is three boxes, not one:** Style, Exclude styles, Lyrics. They describe the same
+sound, so **they change together or not at all.** Changing some leaves a hybrid nobody designed.
+(My Taste used to be the fourth box; being account-wide and invisible, it was always the one left
+behind — which is why it is gone.)
 
 **So "one variable per round" has exactly two readings, and you name which before you start:**
 
 | Level | What moves | What must NOT move |
 | --- | --- | --- |
-| **Prompt round** | **all four boxes**, as one atom | — |
+| **Prompt round** | **all three boxes**, as one atom | — |
 | **Slider round** | audio influence · style influence · weirdness | **every prompt box** |
 
 Changing a prompt *and* a slider in one round teaches you nothing. Within one atom, run as many
 slider rounds as you like — that is the cheap axis, and the weirdness 30/60 pair lives there.
 
-**Write each experiment as a self-contained block holding all four boxes**, with the taste as a
-```taste fence inside it. A shared taste section is the old model and it is how profiles get
-stranded. Mechanics: [`automation.md`](./automation.md); enforcement is in `suno.mts`.
+**Write each experiment as a self-contained block holding all three boxes** — no taste fence.
+Mechanics: [`automation.md`](./automation.md); enforcement is in `suno.mts`.
 
 ## The three layers, and why they must stay separate
 
@@ -148,7 +149,7 @@ complete set. **Treat a challenge as data, not as doubt to be reassured away.**
 3. Skim [`files/suno-tag-mechanics.md`](./files/suno-tag-mechanics.md) and the
    [known-unreliable list](./README.md#known-unreliable-claims) so you don't re-run a
    documented dead end.
-4. Grep the Exclude box **and** `My Taste` for anything you plan to add — the instrument, its
+4. Grep the Exclude box for anything you plan to add — the instrument, its
    *category*, and any whole-palette adjective (`machine-made`, `acoustic`, `electronic`).
 5. Baseline generation before any change.
 

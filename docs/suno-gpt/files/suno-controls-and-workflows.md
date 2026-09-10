@@ -88,16 +88,12 @@ natural untested starting point on v6) is archived in
 
 1. **One workspace per release/arc.** Generations pile up fast; an undifferentiated workspace with
    thousands of songs becomes unusable.
-2. **Neutralise "My Taste"** — it silently biases every generation toward what you've made before:
-   contamination for a deliberately-designed release, and a suspected cause of v5.5 homogenisation.
-   *(Corrected 2026-08-05, verified against the live UI: there is **no off switch**. The dialog has
-   a 2,000-char free-text profile that **cannot be saved empty** — a profile can only be replaced,
-   never disabled — plus a "My Styles" toggle that governs only the magic-wand style-suggestion
-   button, not generation bias. Working procedure: swap in a per-track profile that pulls the same
-   way as the song, restore the house profile after. The written profile is only the explicit half —
-   Suno also learns from what you create, listen to, like and dislike, with no control surface;
-   mitigate by thumbs-downing every reject and keeping one workspace per arc. Full forensics:
-   [`../suno-voices.md`](../suno-voices.md) §8.)*
+2. **Keep "My Taste" out of it — Personalize always OFF** (Kai, 2026-09-10). My Taste silently
+   biased every generation toward what you'd made before, and in our logs it only ever did harm.
+   v6 added a **Personalize** switch on the create form; we keep it off and don't use the box, so
+   each song is its own boxes and settings. The *implicit* half — what Suno learns from what you
+   create, like and dislike — still has no control surface: thumbs-down every reject and keep one
+   workspace per arc. History and forensics: [`../suno-voices.md`](../suno-voices.md) §8.
 3. **Plan tier before you generate anything.** Free-plan output **never** gains commercial rights,
    even retroactively after upgrading. Anything you might release must be generated on a paid plan.
    Studio requires the top tier; the Editor and stems require at least Pro.

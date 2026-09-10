@@ -39,12 +39,12 @@ v6 retired v5.5 on 2026-09-09 and added form state. **Mapped live and wired into
 - **Every spec needs `model`** — `'v6'` or `'v6-wild'` (exact menu labels). `load` refuses without
   one, refuses anything older than v6, and warns on `v6-mini`.
 - It also sets and **reads back** `variety` (`off` · `normal` · `high` · `extra` · `max`, default
-  normal), `maxMode` (default false), `vocalGender` (default null = neither) and `personalize`
-  (default false). Omitting one sets its default — never "whatever was left".
+  normal), `maxMode` (default false) and `vocalGender` (default null = neither), and forces
+  **Personalize OFF — always** (Kai, 2026-09-10). Omitting a field sets its default — never
+  "whatever was left".
 - 🔴 **Suno can switch the model by itself** ("Model changed… to support your selected
   conditions"), so the model is read back **last**, after the Voice, before any Create.
-- **`controls <spec>`** sets and reads back only those five — no prompt box, no My Taste. Safe to
-  run while another session owns the taste box.
+- **`controls <spec>`** sets and reads back only those settings — no prompt box. Free.
 - **`grid-plan <spec>`** prints the cells and titles and spends nothing; **`grid <spec>`** loads
   the atom once, then Creates every cell of `spec.grid` (model × variety × maxMode × weirdness),
   logging the credit balance around each Create. **`pair` is now a one-axis grid.**
@@ -83,8 +83,8 @@ Browser channels give Flow safe concurrency because each channel is its own tab 
 
 1. **There is ONE create form.** It is a single shared surface. A second session running `load`
    **wipes whatever the first was holding, with no draft recovery.**
-2. **My Taste is ONE account-wide box.** It cannot be turned off, is invisible from the create
-   page, and applies to every generation on the account regardless of channel.
+2. ~~**My Taste is ONE account-wide box.**~~ No longer a reason since 2026-09-10 — we don't use it
+   and Personalize is always off. Reason 1 stands on its own, and so does Kai's one-tab rule.
 
 **So before touching Suno: check no other session is mid-run.** `status` is the tell — if the
 form holds a title and workspace belonging to another sheet, **stop and ask** rather than
@@ -107,7 +107,7 @@ create page isn't open — the script will navigate there itself on the next com
 ## The loop
 
 ```bash
-# 1 ── pull the four boxes straight out of the sheet (no transcription risk)
+# 1 ── pull the three boxes straight out of the sheet (no transcription risk)
 npx tsx scripts/suno/suno.mts extract \
   docs/stories/gitpush-origin-master/songs/narration.md "GEN A · CUT 1" > /tmp/spec.json
 
@@ -134,20 +134,25 @@ npx tsx scripts/suno/suno.mts takes gpom-cut1
 
 ## The rules that are not negotiable
 
-### 🔑 THE ATOM — four boxes, one unit (Kai, 2026-08-27)
+### 🔑 THE ATOM — three boxes + the settings, one unit (Kai, 2026-08-27; amended 2026-09-10)
 
-**A "style" is not the Style box. A style is FOUR boxes**, and they describe one sound:
+**A "style" is not the Style box. A style is THREE boxes**, and they describe one sound:
 
 | | |
 |---|---|
-| **My Taste** | account-wide, invisible from the create page, and the one that persists between runs |
 | **Style** | the arrangement |
 | **Exclude styles** | what it must not become |
 | **Lyrics** | the words and their bracket cues |
 
-🔴 **They change together or not at all.** Kai: *"if we're changing any of the prompts, we should
-change all of the prompts… it's an atomic action."* Changing three of four leaves a **hybrid nobody
-designed** — and because My Taste is the invisible one, it is always the one left behind.
+🔑 **My Taste is retired and Personalize is ALWAYS OFF** — Kai, 2026-09-10: *"we should stop
+trying to use the My Taste box and always have personalize off when we generate a song, because
+then each song becomes an atomic unit."* Until then My Taste was the atom's fourth box; it was
+account-wide and invisible, so it was always the one left behind. `load` now forces Personalize
+off, asserts it before every Create, and never reads, writes or checks My Taste.
+
+🔴 **The boxes change together or not at all.** Kai: *"if we're changing any of the prompts, we
+should change all of the prompts… it's an atomic action."* Changing some leaves a **hybrid nobody
+designed**.
 
 📎 **This is not theoretical.** The GPOM newsreader profile sat in My Taste under **fourteen**
 Camping cover rounds and a scouting set, demanding *one voice* for a two-man duet and *almost no
@@ -159,7 +164,7 @@ Every round is one of these. Naming which one you are doing is the discipline.
 
 | Level | What moves | What must NOT move |
 | --- | --- | --- |
-| **1 · Prompt round** | **all four boxes**, together | — |
+| **1 · Prompt round** | **all three boxes**, together | — |
 | **2 · Slider round** | audio influence · style influence · weirdness | **every prompt box.** Not one word |
 
 **A round that changes a prompt *and* a slider tells you nothing**, because two variables moved.
@@ -211,20 +216,12 @@ can choose; a tasteful spread returns ten versions of what you already had.
 
 ### 🔑 How sheets must be written
 
-**Each experiment is a self-contained block holding all four boxes**, separate from every other
-experiment — so a variation can be heard as fully itself.
-
-Put the taste **inside the block** as a ```taste fence:
+**Each experiment is a self-contained block holding all three boxes**, separate from every other
+experiment — so a variation can be heard as fully itself. No ```taste fence (retired
+2026-09-10); older sheets that have one still extract, and `load` ignores it loudly.
 
 ````markdown
 #### variation-name
-
-My Taste:
-
-```taste
-Vocals I love: …
-Music I love: …
-```
 
 Style:
 
@@ -245,25 +242,17 @@ Lyrics:
 ```
 ````
 
-`extract` reads the atom's own ```taste fence **first**, and only falls back to a shared section
-for sheets written before this ruling. 🔴 **A shared taste section is the old, wrong model** — it
-is precisely how a profile gets left behind when the style changes.
-
-⚠️ **An INSTRUMENTAL atom has no lyrics** — taste + style + excludes is the whole of it, and that
-is valid, not short.
+⚠️ **An INSTRUMENTAL atom has no lyrics** — style + excludes is the whole of it, and that is
+valid, not short.
 
 ### 🔑 What the tooling now enforces
 
-- **`load` writes My Taste every time** and **reads it back**, aborting on a mismatch rather than
-  generating against the wrong global box.
-- **`load` REFUSES a spec with no `taste`.** Pass `applyTaste: false` only for a deliberate
-  slider-only round — and then no prompt box may change either.
-- **`npx tsx scripts/suno/suno.mts taste [block.txt]`** reads it; with a file it backs up, writes
-  and verifies.
-
-⚠️ **This costs a few seconds per generation** (the profile menu, the save, the read-back). Kai
-ruled that latency worth paying: *"it might add an extra bit of latency… I think that's a thing we
-absolutely need to do."*
+- **`load` forces Personalize OFF** and asserts it before every Create; a spec with
+  `personalize: true` is refused.
+- **`load` never touches My Taste** — no read, no write, no ownership check. (Until 2026-09-10 it
+  wrote and read back the box every run; Kai had accepted that latency. It is gone.)
+- **`load` REFUSES a spec with no `model`.**
+- `npx tsx scripts/suno/suno.mts taste` still exists to *look* at the box when debugging a leak.
 
 ### 🔴 Never automate downloading
 
@@ -345,7 +334,8 @@ you do not set this run is a field someone else set, and **none of them error**:
 
 **So a run must state its COMPLETE intended form state and verify the live form against it before
 clicking Create.** Not just the boxes it is changing this round. Concretely, assert **all** of:
-style length · exclude length · lyric paragraphs · My Taste (read back) · **attached Voice** ·
+style length · exclude length · lyric paragraphs · **model** · Variety · Max Mode · Vocal Gender ·
+**Personalize OFF** · **attached Voice** ·
 workspace · Weirdness · Style Influence · Audio Influence · Duration · title · (covers) the
 attached audio.
 
@@ -409,11 +399,12 @@ does not make them concurrent.
 
 **If another session is working, WAIT.** Do not open a second tab to be helpful.
 
-### 🔑 THE FREEDOM TOKEN — `MUST_REPLACE_HERE`
+### 🗄 THE FREEDOM TOKEN — retired 2026-09-10
 
-**Kai's ruling, 2026-08-27. A lock file in reverse.** My Taste **cannot be saved empty** — a
-profile can only be *replaced* — so there is no neutral state to return to and every session
-inherits whatever the last one left. This makes the free state explicit and loud:
+**Retired with My Taste** (Kai, 2026-09-10: Personalize always off; we stop using the box).
+Nothing checks, claims or releases the box any more, and a profile sitting in it is no longer a
+reason to stop. Kept below as history — it was Kai's 2026-08-27 ruling, *a lock file in reverse*,
+for when the box was part of every generation:
 
 | When | Rule |
 | --- | --- |
