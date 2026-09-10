@@ -7,6 +7,11 @@ settings: audition style influence 85 / weirdness 60; production style influence
 voices: [narrator]
 ---
 
+> 🗄 **v5.5 sheet — archived 2026-09-10.** Suno v6 retired v5.5 on 2026-09-09 and all new Suno
+> work is v6, in the new UI. The takes this sheet made still exist and can be Covered onto v6;
+> the sheet cannot be re-run as written. A new round starts a v6 sheet — see
+> [`v5.5-era.md`](../../../suno-gpt/archive/v5.5-era.md) §5.
+
 # Narration on Suno — camping
 
 > **What this is:** the four paste-ready boxes and the click-path for generating the camping

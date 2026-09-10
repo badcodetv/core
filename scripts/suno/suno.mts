@@ -103,7 +103,41 @@ export interface SunoSpec {
    * budget and trim in the edit, never below and hope it grows.
    */
   durationSec?: number
+  /**
+   * 🔑 v6 (mapped live 2026-09-10) — the MODEL. **Required.** `'v6'`, `'v6-wild'` (the exact
+   * menu labels), or a custom model's exact name. v5.5 and older were retired on 2026-09-09.
+   *
+   * It is form state like every other control and it persists, so before v6 `load` silently
+   * generated on whatever model the last session left selected. Now a spec must name it.
+   */
+  model?: string
+  /** Variety step — how different the two takes of one Create are. Default `'normal'`. v6-family only. */
+  variety?: VarietyStep
+  /** The v6 Max Mode toggle (not the placebo code block). Default `false`. */
+  maxMode?: boolean
+  /** Vocal Gender segment. Default `null` = neither selected. */
+  vocalGender?: 'male' | 'female' | null
+  /**
+   * Personalize — its single button reads "My Taste". Default `false`.
+   * ⬜ What it does is UNVERIFIED: reportedly the create-form switch for the account-wide My Taste.
+   */
+  personalize?: boolean
+  /** `grid` only: the axes to permute. Cells run model-outermost, weirdness-innermost. */
+  grid?: GridAxes
 }
+
+export const VARIETY_STEPS = ['off', 'normal', 'high', 'extra', 'max'] as const
+export type VarietyStep = (typeof VARIETY_STEPS)[number]
+export interface GridAxes {
+  model?: string[]
+  variety?: VarietyStep[]
+  maxMode?: boolean[]
+  weirdness?: number[]
+}
+
+/** The model as it appears in a title: v6 → `v6`, v6-wild → `wild`, a custom model → its name. */
+export const modelTag = (m: string) =>
+  m.toLowerCase().replace(/^v6-/, '').replace(/[^a-z0-9]+/g, '').slice(0, 12) || 'model'
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Page-context helpers.
@@ -255,6 +289,176 @@ export async function setSlider(page: Page, label: string, target: number): Prom
   return `${label}=${cur}`
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// v6 controls — every selector below was read off the live form on 2026-09-10.
+//
+// · Model: a `button[aria-haspopup="menu"]` in the header beside the Simple/Advanced/Sounds tabs,
+//   text `v6`. The menu holds `[role=menuitemradio]` rows whose FIRST LEAF SPAN is the model id
+//   (`v6`, `v6-wild`, `v6-mini`, then any custom models), with `aria-checked`. It needs a REAL mouse
+//   click to open (React). Suno can also switch the model on its own — a "Model changed: Model was
+//   automatically changed to support your selected conditions" toast was seen — so `load` reads it
+//   back at the END, after the Voice, not just after setting it.
+// · Variety: `[role=slider][aria-label="Variety"]`, 0–4, `aria-valuetext` Off · Normal · High ·
+//   Extra · Max (descriptions: Exact style · Balanced variety · Distinct styles · Bold exploration ·
+//   Unreasonably varied). Default 1 = Normal. The Home key does NOT move it; arrows do.
+// · Vocal Gender (Male/Female), Duration (Custom/Auto), Max Mode (Off/On), Personalize (one
+//   button, "My Taste"): segmented buttons with NO aria state. The selected one carries the class
+//   `hxc-btn-variant-standard-*`; unselected ones `hxc-btn-variant-tertiary-*`.
+// · All of these live inside More Options, which collapses to a clipped box rather than unmounting —
+//   so coordinates are meaningless when it is shut and a mouse click lands on whatever is on top.
+//   Native `el.click()` works regardless, and `focus()` + arrows works for the sliders.
+// ─────────────────────────────────────────────────────────────────────────────
+
+/** Page-side helpers for the segmented rows. Interpolate into an `ev` body. */
+const SEG = `
+  const segRow = (label) => {
+    const s = [...document.querySelectorAll('span')].find(x => live(x) && c(x.textContent) === label);
+    if (!s) return null;
+    let r = s.parentElement;
+    for (let i = 0; i < 6 && r; i++, r = r.parentElement) if (r.querySelector('button')) return r;
+    return null;
+  };
+  const segOn = (b) => /hxc-btn-variant-standard/.test(String(b.className));
+  const seg = (label) => {
+    const r = segRow(label);
+    if (!r) return 'absent';
+    const s = [...r.querySelectorAll('button')].filter(segOn).map(b => c(b.innerText));
+    return s.length ? s.join('+') : 'none';
+  };
+`
+
+/** Click a segment option (or, with `null`, deselect whatever is selected) and read it back. */
+export async function setSegment(page: Page, label: string, option: string | null): Promise<string> {
+  const res = await ev(
+    page,
+    `${SEG}
+     const r = segRow(a[0]);
+     if (!r) return 'absent';
+     const bs = [...r.querySelectorAll('button')];
+     if (a[1] === null) {
+       const on = bs.filter(segOn);
+       if (!on.length) return 'already';
+       on.forEach(b => b.click());
+       return 'clicked';
+     }
+     const b = bs.find(x => c(x.innerText).toLowerCase() === String(a[1]).toLowerCase());
+     if (!b) return 'no-option (' + bs.map(x => c(x.innerText)).join('/') + ')';
+     if (segOn(b)) return 'already';
+     b.click();
+     return 'clicked';`,
+    label,
+    option,
+  )
+  if (res === 'already') return `${label}:${option ?? 'none'} (already)`
+  if (res !== 'clicked') return `${label}:${res}`
+  await page.waitForTimeout(600)
+  const back = await ev(page, `${SEG} return seg(a[0]);`, label)
+  const want = option ?? 'none'
+  return String(back).toLowerCase() === want.toLowerCase() ? `${label}:${back} ✅` : `${label}:MISMATCH (wanted ${want}, reads ${back})`
+}
+
+/** Open the model menu with a real mouse click. Returns false when it will not open. */
+async function openModelMenu(page: Page): Promise<boolean> {
+  const at = await ev(
+    page,
+    `const btns = [...document.querySelectorAll('button[aria-haspopup="menu"]')].filter(live);
+     let b = btns.find(x => /^v\\d/i.test(c(x.innerText)));
+     if (!b) {
+       // A custom model's name need not start with v — take the menu button on the tab row.
+       const tab = [...document.querySelectorAll('[role=tab]')].filter(live).pop();
+       if (tab) {
+         const t = tab.getBoundingClientRect();
+         b = btns.filter(x => { const r = x.getBoundingClientRect(); return Math.abs(r.y - t.y) < 30 && r.x > t.x; })
+           .sort((p, q) => p.getBoundingClientRect().x - q.getBoundingClientRect().x)[0];
+       }
+     }
+     if (!b) return null;
+     const r = b.getBoundingClientRect();
+     return JSON.stringify({ x: r.x + r.width / 2, y: r.y + r.height / 2 });`,
+  )
+  if (!at) return false
+  const { x, y } = JSON.parse(at as string)
+  await page.mouse.click(x, y)
+  await page.waitForTimeout(800)
+  return ((await page.locator('[role="menuitemradio"]').count()) as number) > 0
+}
+
+const RADIOS = `
+  const leaf = (r) => { const s = [...r.querySelectorAll('span')].find(s => !s.children.length); return c((s || r).textContent); };
+  const radios = [...document.querySelectorAll('[role="menuitemradio"]')];
+`
+
+/** The selected model, read from the menu (authoritative — the button text may abbreviate). */
+export async function getModel(page: Page): Promise<string | null> {
+  if (!(await openModelMenu(page))) return null
+  const name = await ev(page, `${RADIOS} const r = radios.find(r => r.getAttribute('aria-checked') === 'true'); return r ? leaf(r) : null;`)
+  await page.keyboard.press('Escape')
+  await page.waitForTimeout(400)
+  return (name as string | null) ?? null
+}
+
+export async function setModel(page: Page, name: string): Promise<string> {
+  if (!(await openModelMenu(page))) return 'model:NO-MENU'
+  const res = await ev(
+    page,
+    `${RADIOS}
+     const hit = radios.find(r => leaf(r).toLowerCase() === String(a[0]).toLowerCase());
+     if (!hit) return 'NOT-OFFERED (menu has: ' + radios.map(leaf).join(', ') + ')';
+     if (hit.getAttribute('aria-checked') === 'true') return 'already';
+     const r = hit.getBoundingClientRect();
+     return JSON.stringify({ x: r.x + r.width / 2, y: r.y + r.height / 2 });`,
+    name,
+  )
+  if (res === 'already' || !String(res).startsWith('{')) {
+    await page.keyboard.press('Escape')
+    await page.waitForTimeout(400)
+    return res === 'already' ? `model:${name} (already)` : `model:${res}`
+  }
+  const { x, y } = JSON.parse(res as string)
+  await page.mouse.click(x, y)
+  await page.waitForTimeout(1200)
+  const back = await getModel(page)
+  return back?.toLowerCase() === name.toLowerCase() ? `model:${back} ✅` : `model:MISMATCH (wanted ${name}, reads ${back})`
+}
+
+/**
+ * Set every v6 control from the spec, defaults included — because OMITTING A FIELD IS NOT
+ * CLEARING IT (the 2026-08-27 law). A spec with no `variety` means Normal, not "whatever was left".
+ */
+export async function setV6Controls(page: Page, spec: Partial<SunoSpec>): Promise<string> {
+  const out: string[] = []
+  const step = spec.variety ?? 'normal'
+  const idx = VARIETY_STEPS.indexOf(step)
+  if (idx < 0) throw new Error(`variety "${step}" is not one of ${VARIETY_STEPS.join(' / ')}`)
+  if (((await page.locator('[role="slider"][aria-label="Variety"]').count()) as number) === 0) {
+    out.push('Variety=ABSENT (only mounts for a v6-family model)')
+  } else {
+    await setSlider(page, 'Variety', idx)
+    out.push(`Variety=${await page.locator('[role="slider"][aria-label="Variety"]').first().getAttribute('aria-valuetext')}`)
+  }
+  out.push(await setSegment(page, 'Max Mode', spec.maxMode ? 'On' : 'Off'))
+  out.push(await setSegment(page, 'Vocal Gender', spec.vocalGender ? spec.vocalGender[0].toUpperCase() + spec.vocalGender.slice(1) : null))
+  out.push(await setSegment(page, 'Personalize', spec.personalize ? 'My Taste' : null))
+  // A click on the Personalize button may open the My Taste editor rather than toggle — close it.
+  await page.keyboard.press('Escape')
+  return out.join(' · ')
+}
+
+/** What the live form must read for this spec. Every mismatch is a reason not to spend credits. */
+async function checkV6(page: Page, spec: Partial<SunoSpec>, v: Record<string, unknown>): Promise<string[]> {
+  const p: string[] = []
+  const model = await getModel(page)
+  if (!spec.model || model?.toLowerCase() !== spec.model.toLowerCase())
+    p.push(`model reads ${model}, spec says ${spec.model} — Suno can switch it on its own ("Model changed")`)
+  const variety = spec.variety ?? 'normal'
+  if (String(v.variety).toLowerCase() !== variety) p.push(`Variety reads ${v.variety}, wanted ${variety}`)
+  if (v.maxMode !== (spec.maxMode ? 'On' : 'Off')) p.push(`Max Mode reads ${v.maxMode}`)
+  const g = spec.vocalGender ?? null
+  if (String(v.vocalGender).toLowerCase() !== (g ?? 'none')) p.push(`Vocal Gender reads ${v.vocalGender}, wanted ${g ?? 'none'}`)
+  if (v.personalize !== (spec.personalize ? 'on' : 'off')) p.push(`Personalize reads ${v.personalize}`)
+  return p
+}
+
 /**
  * The lyrics editor is Lexical. `fill()` drops the whole block into ONE <p> as a single text
  * node with raw \n characters — it renders convincingly and is structurally wrong, which for a
@@ -385,6 +589,9 @@ export async function verify(page: Page) {
      const ly = document.querySelector('[aria-label="Lyrics editor"]');
      const ti = [...panel().querySelectorAll('input[placeholder="Song Title (Optional)"]')].filter(live)[0];
      const cr = document.querySelector('[aria-label^="Credits remaining"]');
+     ${SEG}
+     const vs = document.querySelector('[role="slider"][aria-label="Variety"]');
+     const mb = [...document.querySelectorAll('button[aria-haspopup="menu"]')].filter(live).find(x => /^v\\d/i.test(c(x.innerText)));
      const ws = [...document.querySelectorAll('*')].filter(x => live(x)
        && /^Save to\\.\\.\\./.test(c(x.textContent)) && c(x.textContent).length < 60);
      return {
@@ -399,6 +606,13 @@ export async function verify(page: Page) {
          .filter(s => s.getBoundingClientRect().y > -50)
          .map(s => s.getAttribute('aria-label') + '=' + s.getAttribute('aria-valuenow')),
        credits: cr ? cr.getAttribute('aria-label') : null,
+       // v6 — the model button's text (the menu, via getModel, is authoritative).
+       modelButton: mb ? c(mb.innerText) : 'no v-named menu button (a custom model?)',
+       variety: vs ? vs.getAttribute('aria-valuetext') : 'absent',
+       maxMode: seg('Max Mode'),
+       vocalGender: seg('Vocal Gender'),
+       durationMode: seg('Duration'),
+       personalize: seg('Personalize') === 'My Taste' ? 'on' : seg('Personalize') === 'none' ? 'off' : seg('Personalize'),
        durationSec: (() => { const d = document.querySelector('[role="slider"][aria-label="Duration"]'); return d ? d.getAttribute('aria-valuenow') : 'not-mounted (More Options collapsed)'; })(),
      };`,
   )
@@ -418,8 +632,10 @@ export async function verify(page: Page) {
 export async function formMode(page: Page): Promise<{ mode: string | null; attached: string | null }> {
   const raw = await ev(
     page,
+    // 🔑 v6 (2026-09-10, live): the tabs are now Simple · ADVANCED · Sounds. "custom" stays our
+    // internal name for the full form, so 'custom' here means the Advanced tab. Sounds is its own mode.
     `const tabs = [...document.querySelectorAll('[role=tab],button')].filter(live)
-       .filter(x => /^(simple|audio|custom|cover|extend)$/i.test(c(x.innerText)));
+       .filter(x => /^(simple|advanced|sounds|audio|custom|cover|extend)$/i.test(c(x.innerText)));
      // 🔑 CALIBRATED 2026-08-27 against a known-clean form and a known-contaminated one.
      // Clean:        tabs are Simple / Audio / Custom, and the attachment row's OWN text is
      //               exactly "AudioVoiceInspo" (15 chars, nothing else).
@@ -432,8 +648,10 @@ export async function formMode(page: Page): Promise<{ mode: string | null; attac
      // and dumped the whole form as a false positive — \`find\` returns the first div in
      // document order, and the row's text is a substring of half the page.
      const simple = tabs.find(x => /^simple$/i.test(c(x.innerText)));
+     const sounds = tabs.find(x => /^sounds$/i.test(c(x.innerText)));
      const mode = coverTab ? c(coverTab.innerText).toLowerCase()
-       : (simple && simple.getAttribute('aria-selected') === 'true') ? 'simple' : 'custom';
+       : (simple && simple.getAttribute('aria-selected') === 'true') ? 'simple'
+       : (sounds && sounds.getAttribute('aria-selected') === 'true') ? 'sounds' : 'custom';
      return JSON.stringify({ mode, attached: coverTab ? c(coverTab.innerText) : null });`,
   )
   try {
@@ -492,6 +710,18 @@ async function load(page: Page, spec: SunoSpec, weirdness?: number) {
     )
   }
   console.log(`mode: ${fm.mode ?? 'unknown'}${fm.attached ? ` · attached: ${fm.attached}` : ' · nothing attached'}`)
+
+  // 🔑 v6: the MODEL, then the controls that only exist for a v6-family model.
+  if (!spec.model)
+    throw new Error(
+      'spec has no `model`. Since v6 (2026-09-09) the model is an experiment axis and persists like ' +
+        "every other control — name it: 'v6' or 'v6-wild' (or a custom model's exact name).",
+    )
+  if (/^v?[1-5](\.|$)/i.test(spec.model))
+    throw new Error(`model "${spec.model}" is retired — nothing older than v6 can generate since 2026-09-09.`)
+  if (/mini/i.test(spec.model)) console.log('⚠️ v6-mini: the free-tier model. House rule is never — continuing only because the spec asks.')
+  console.log(await setModel(page, spec.model))
+  console.log(await setV6Controls(page, spec))
 
   // 🔑 THE ATOM: taste + style + exclude + lyrics change together or not at all.
   if (spec.applyTaste === false) {
@@ -566,6 +796,8 @@ async function load(page: Page, spec: SunoSpec, weirdness?: number) {
   if (v.excludeLen !== spec.exclude.length)
     problems.push(`exclude ${v.excludeLen}/${spec.exclude.length} — the truncation bug; fillChecked gave up`)
   if (v.lyricParas !== paras) problems.push(`lyrics ${v.lyricParas} paragraphs, expected ${paras}`)
+  // Read the model back LAST — attaching a Voice can make Suno switch it without asking.
+  problems.push(...(await checkV6(page, spec, v)))
   // ⚠️ Duration is a WARNING, never a blocker. A take of the wrong length is trimmable; a round
   // that refuses to run is not. Suno treats the number as a target anyway.
   if (spec.durationSec && !String(v.durationSec ?? '').startsWith(String(spec.durationSec)))
@@ -989,6 +1221,38 @@ function extract(file: string, section: string, tasteSection = 'The shared profi
   return { style: boxes[0], exclude: boxes[1], lyrics: boxes[2], taste, tasteFromAtom: !!inAtom }
 }
 
+/**
+ * Expand a spec into grid cells. Model outermost (fewest model switches), weirdness innermost (so
+ * the pair sits side by side). An axis with one value is not written into the title.
+ */
+export function gridCells(spec: SunoSpec) {
+  const g = spec.grid ?? {}
+  if (!spec.model && !g.model?.length) throw new Error('spec has no `model` (and no grid.model) — v6 needs one')
+  const models = g.model ?? [spec.model as string]
+  const varieties = g.variety ?? [spec.variety ?? 'normal']
+  const maxes = g.maxMode ?? [spec.maxMode ?? false]
+  const ws = g.weirdness ?? spec.weirdness ?? [30, 60]
+  const cells: { model: string; variety: VarietyStep; maxMode: boolean; weirdness: number; title: string }[] = []
+  for (const model of models)
+    for (const variety of varieties)
+      for (const maxMode of maxes)
+        for (const weirdness of ws)
+          cells.push({
+            model,
+            variety,
+            maxMode,
+            weirdness,
+            title: [
+              spec.title,
+              modelTag(model),
+              varieties.length > 1 ? `var-${variety}` : '',
+              maxes.length > 1 ? (maxMode ? 'max' : 'nomax') : '',
+              `w${weirdness}`,
+            ].filter(Boolean).join('-'),
+          })
+  return cells
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 
 // Only dispatch when run directly — `cover-ab.mts` imports the helpers above, and an
@@ -1029,43 +1293,79 @@ if (cmd === 'extract') {
     console.log(before ?? '(empty)')
   }
   await browser.close()
-} else if (cmd === 'load' || cmd === 'pair') {
-  const spec: SunoSpec = JSON.parse(readFileSync(rest[0], 'utf8'))
+} else if (cmd === 'controls') {
+  // Set ONLY the v6 controls (model, Variety, Max Mode, Vocal Gender, Personalize) and read them
+  // back. Touches no prompt box and not My Taste — safe while another session owns the taste box.
+  const spec: Partial<SunoSpec> = JSON.parse(readFileSync(rest[0], 'utf8'))
   const { browser, page } = await connect()
-  const weirdnesses = spec.weirdness ?? [30, 60]
+  try {
+    if (spec.model) console.log(await setModel(page, spec.model))
+    console.log(await setV6Controls(page, spec))
+    const v = (await verify(page)) as Record<string, unknown>
+    console.log(JSON.stringify(v, null, 2))
+    const p = await checkV6(page, spec, v)
+    console.log(p.length ? `🔴 ${p.join(' · ')}` : '✅ every v6 control reads back as the spec says')
+  } finally {
+    await browser.close()
+  }
+} else if (cmd === 'load' || cmd === 'pair' || cmd === 'grid' || cmd === 'grid-plan') {
+  const spec: SunoSpec = JSON.parse(readFileSync(rest[0], 'utf8'))
+  // 🔑 `pair` is a grid with one axis: weirdness 30 and 60 on the spec's own model.
+  const cells = gridCells(cmd === 'grid' || cmd === 'grid-plan' ? spec : { ...spec, grid: undefined })
+  if (cmd === 'grid-plan') {
+    console.log(`${cells.length} Creates → ${cells.length * 2} takes, into workspace ${spec.workspace ?? '(unset!)'}`)
+    for (const c of cells) console.log(`  ${c.title}   model=${c.model} variety=${c.variety} max=${c.maxMode} w=${c.weirdness}`)
+    process.exit(0)
+  }
+  const { browser, page } = await connect()
 
   try {
   if (cmd === 'load') {
-    const { verify: v, problems } = await load(page, spec, weirdnesses[0])
+    const { verify: v, problems } = await load(page, { ...spec, ...cells[0], weirdness: [cells[0].weirdness], title: spec.title }, cells[0].weirdness)
     console.log(JSON.stringify(v, null, 2))
     if (problems.length) {
       console.log('🔴 PROBLEMS — DO NOT GENERATE:', problems.join(' · '))
       process.exitCode = 1
-    } else console.log('✅ loaded — nothing generated; run `pair` or click Create')
+    } else console.log('✅ loaded — nothing generated; run `pair` / `grid` or click Create')
   } else {
-    // The form survives its own generation, so the second half is a nudge + a retitle.
-    const base = spec.title
-    for (const [i, w] of weirdnesses.entries()) {
-      const title = `${base}-w${w}`
+    // The form survives its own generation, so every cell after the first is a slider round:
+    // re-assert the cell's controls (idempotent), retitle, re-verify, Create. No prompt box moves.
+    const credits = async () =>
+      Number(String(((await verify(page)) as Record<string, unknown>).credits ?? '').replace(/[^0-9]/g, '')) || null
+    for (const [i, cell] of cells.entries()) {
+      const cellSpec = { ...spec, ...cell, weirdness: [cell.weirdness] }
       if (i === 0) {
-        const { problems } = await load(page, { ...spec, title }, w)
+        const { problems } = await load(page, cellSpec, cell.weirdness)
         if (problems.length) {
           console.log('🔴 ABORTING before spending credits:', problems.join(' · '))
           break
         }
       } else {
-        console.log(await setSlider(page, 'Weirdness', w))
-        console.log('title:', await setTitle(page, title))
+        console.log(await setModel(page, cell.model))
+        console.log(await setV6Controls(page, cellSpec))
+        console.log(await setSlider(page, 'Style Influence', spec.styleInfluence ?? 75))
+        console.log(await setSlider(page, 'Weirdness', cell.weirdness))
+        console.log('title:', await setTitle(page, cell.title))
+        const v = (await verify(page)) as Record<string, unknown>
+        const p = await checkV6(page, cellSpec, v)
+        if (p.length) {
+          console.log(`🔴 ABORTING at ${cell.title} before spending credits:`, p.join(' · '))
+          break
+        }
       }
-      console.log(`▶ ${title}:`, await create(page, title))
+      const before = await credits()
+      console.log(`▶ ${cell.title}:`, await create(page, cell.title))
+      const after = await credits()
+      // v6 credit cost is unknown — every Create logs it until it is.
+      console.log(`   credits ${before} → ${after}${before && after ? ` (cost ${before - after})` : ''}`)
     }
-    console.log(JSON.stringify(await listTakes(page, base), null, 2))
+    console.log(JSON.stringify(await listTakes(page, spec.title), null, 2))
   }
   // 🔑 Hand the box back. On the failure path too — a half-finished round still leaves a
   // profile installed account-wide, which is the exact bug the token exists to stop.
   } finally {
-    // Release on EVERY exit from a pair, thrown or clean.
-    if (cmd === 'pair') console.log(await releaseTaste(page).catch((e) => `🔴 release failed: ${e.message}`))
+    // Release on EVERY exit from a generating run, thrown or clean.
+    if (cmd !== 'load') console.log(await releaseTaste(page).catch((e) => `🔴 release failed: ${e.message}`))
     await browser.close()
   }
 } else if (IS_CLI) {
@@ -1074,9 +1374,15 @@ if (cmd === 'extract') {
   status                          read the create form back
   taste [block.txt]               read My Taste; with a file, back up + write + verify
   extract <sheet.md> "<section>"  pull style/exclude/lyrics/taste out of a sheet
+  controls <spec.json>            set + read back ONLY the v6 controls (no boxes, no My Taste)
   load  <spec.json>               fill everything, generate NOTHING
   pair  <spec.json>               load, then Create at each weirdness (default 30 and 60)
+  grid-plan <spec.json>           print the grid's cells and titles — spends nothing
+  grid  <spec.json>               load once, then Create every cell of spec.grid
+                                  (model × variety × maxMode × weirdness)
   takes [titleFilter]             list clip rows with durations
 
-Create costs 10 credits and returns 2 takes. \`load\` never spends credits.`)
+Every spec needs \`model\` ('v6' | 'v6-wild'). Titles: <title>-<model>[-var-<step>][-max]-w<n>.
+v6 credit cost per Create is unknown — pair/grid log the balance around every Create.
+\`load\`, \`controls\` and \`grid-plan\` never spend credits.`)
 }

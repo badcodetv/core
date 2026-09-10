@@ -1,5 +1,9 @@
 # Suno v6 — what changed, and what it lets us do
 
+> 🔑 **House rule (Kai, 2026-09-10): all new Suno work is v6, in the new UI.** The v5.5 era is
+> archived in [`../archive/v5.5-era.md`](../archive/v5.5-era.md) — read it only to understand an
+> old sheet, or to Cover an old take onto v6.
+
 **v6 shipped 2026-09-09 and retired every older model from the create form.** This file is the
 v6 layer on top of the rest of `docs/suno-gpt/`. Where it disagrees with an older file on a
 *model* or *control* question, **this file wins** — the older files were written against v5.5.
@@ -57,6 +61,31 @@ presenters read as part of the name. **Custom models sit in the same dropdown**,
 
 ## 2. The create form on v6
 
+### ✅ Read off our own live form, 2026-09-10 (account `binocarlos`, Premier)
+
+These labels are **proven** — they supersede the video readings in the table after this one.
+
+| Control | Exact labels | Default on a clean form |
+|---|---|---|
+| Tabs | **Simple · Advanced · Sounds** (no "Custom" tab) | Advanced |
+| Model menu | **`v6`** *Pro* "Powerful. Versatile. Refined. Our best model yet." · **`v6-wild`** *Pro* "Best for experimental ideas." · **`v6-mini`** "A free, more efficient version of premium v6 models." · **Create Custom Model** *Beta* "Create a model based on your uploads (100 Credits)" | v6 |
+| Variety | a 5-step slider — **Off** "Exact style" · **Normal** "Balanced variety" · **High** "Distinct styles" · **Extra** "Bold exploration" · **Max** "Unreasonably varied" | Normal |
+| Max Mode | **Off / On** | Off |
+| Vocal Gender | **Male / Female** — neither selected is a valid state | neither |
+| Duration | **Custom / Auto** | Auto |
+| Weirdness | 0–100, caption "Expected results" at 50 | 50 |
+| Style Influence | 0–100, caption "Moderate" at 50 | 50 |
+| Personalize | a single button labelled **My Taste** (plus an info icon) | not selected |
+
+🔴 **Suno switches the model on its own.** Our form showed a toast: *"Model changed — Model was
+automatically changed to support your selected conditions."* So a model you set is not a model
+that stays set — the loader reads it back after everything else, before Create.
+
+⬜ **Personalize is still unverified** — whether its "My Taste" button toggles the account-wide
+profile on and off, or opens it, has not been clicked through. Default it off.
+
+### What the launch videos said (kept for the *what it does* column)
+
 Most of it is the form we know. What is **new or changed**:
 
 | Control (as read) | Where | Values | Default | What it does | Tier |
@@ -78,10 +107,10 @@ Most of it is the form we know. What is **new or changed**:
 still says "Confirm that model v5.5 is selected". Both predate v6 — Voice and custom models are
 tested working on v6.
 
-🔴 **For code-driving:** every new control is form state, and form state persists (the
-2026-08-27 law). Model, Variety, Personalize, Max Mode and Vocal Gender all need an explicit
-"set" and an explicit read-back, or a grid silently inherits the last run's values.
-`suno.mts` sets **none** of them yet — [`../automation.md`](../automation.md) §9.
+🔑 **For code-driving:** every new control is form state, and form state persists (the
+2026-08-27 law). Since 2026-09-10 `suno.mts` sets **and reads back** all five — model, Variety,
+Max Mode, Vocal Gender, Personalize — on every load and every grid cell, and refuses a spec with
+no `model`. Mechanics: [`../automation.md`](../automation.md) §9.
 
 ---
 
@@ -386,9 +415,8 @@ logged before and after.
    the null? Repeat with the **same text re-sung** (problem B) and with a one-occurrence target.
 2. **The same null test on Replace Section and Studio Regenerate Section** — smallest region each
    accepts on v6, and whether the words outside it keep the take.
-3. **Map the live create form** — tab labels, model button text, Variety's element and steps,
-   Personalize, Max Mode, Vocal Gender, the attach menu — and update `automation.md` +
-   `suno.mts`. **Blocks every automated v6 run.**
+3. ✅ **Map the live create form** — done 2026-09-10 (§2's live table; `suno.mts` upgraded).
+   Still open inside it: what Personalize's "My Taste" button does, and the Simple attach menu.
 4. **Personalize vs My Taste** — a distinctive profile, a pair with Personalize off and a pair
    with it on. Decides whether the four-box atom keeps taste as a box.
 5. **Our D&B on v6 vs Wild** — grid round R1 (`automation.md` §9).

@@ -20,6 +20,10 @@ Never let a request stall on "that's not really a prompt question."
 this skill exists to replace. Work in short rounds: ask the few questions that actually change the
 output, draft fast, then refine against what the user hears.
 
+🔑 **All new Suno work is v6, in the new UI** (Kai, 2026-09-10). Never propose v5.5 or older —
+it cannot generate. A song sheet with an archive banner is a v5.5 history sheet: a new round on
+that song starts a v6 sheet (`docs/suno-gpt/archive/v5.5-era.md` §5).
+
 ## The knowledge base lives in `docs/suno-gpt/`
 
 Read on demand. Never reproduce its content in your reply, and don't lecture the user about it.
@@ -421,10 +425,9 @@ cheap reset.
 **Once you've cut, a saved Voice per character is exactly right** — one Voice per generation is the
 supported case. The Voice is rarely the wrong tool; it's the right tool on the wrong unit of work.
 
-**Cue-heavy skit tracks invert the model rule:** v4.5's extra vocal variety isn't worth it when the
-track's architecture lives in dense bracket cues — 4.5 shreds the structure, v5.5 obeys it. Stay on
-5.5 and spend direction in the brackets. *(2026-09-09: both retired. The same logic says **v6, not
-Wild**, for a cue-heavy track — Wild drifts from the brief. Untested.)*
+**Cue-heavy skit tracks go on v6, not Wild.** When a track's architecture lives in dense bracket
+cues, the obedient model wins over the varied one — Wild drifts from the brief. Untested on v6;
+the v5.5-era evidence behind it is in `docs/suno-gpt/archive/v5.5-era.md` §3.
 
 ---
 

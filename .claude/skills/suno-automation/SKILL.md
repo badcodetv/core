@@ -31,23 +31,26 @@ obvious approach produced a plausible-looking wrong result.
 
 🛠 **The tool is [`scripts/suno/suno.mts`](../../../scripts/suno/suno.mts).**
 
-## 🔴 v6 (2026-09-09) — the loader is not safe on v6 yet
+## 🔑 v6 — all new Suno work is v6, in the new UI (Kai, 2026-09-10)
 
-v6 retired v5.5 and added form state: a **model** picker that is now an experiment axis (v6 /
-v6 Wild / Mini / custom models), a stepped **Variety** control, a **Personalize** toggle
-(reportedly the switch for My Taste), a **Max Mode** toggle and **Vocal Gender**. Every v6 source
-also shows **Simple / Advanced** tabs, where `formMode()` expects `custom`.
+v6 retired v5.5 on 2026-09-09 and added form state. **Mapped live and wired into `suno.mts` on
+2026-09-10** — [`automation.md`](../../../docs/suno-gpt/automation.md) §9:
 
-**`load` sets none of these — it doesn't even set the model.** By the *omitting ≠ clearing* law
-below, a run today generates on whatever the form was left on, and every check passes.
+- **Every spec needs `model`** — `'v6'` or `'v6-wild'` (exact menu labels). `load` refuses without
+  one, refuses anything older than v6, and warns on `v6-mini`.
+- It also sets and **reads back** `variety` (`off` · `normal` · `high` · `extra` · `max`, default
+  normal), `maxMode` (default false), `vocalGender` (default null = neither) and `personalize`
+  (default false). Omitting one sets its default — never "whatever was left".
+- 🔴 **Suno can switch the model by itself** ("Model changed… to support your selected
+  conditions"), so the model is read back **last**, after the Voice, before any Create.
+- **`controls <spec>`** sets and reads back only those five — no prompt box, no My Taste. Safe to
+  run while another session owns the taste box.
+- **`grid-plan <spec>`** prints the cells and titles and spends nothing; **`grid <spec>`** loads
+  the atom once, then Creates every cell of `spec.grid` (model × variety × maxMode × weirdness),
+  logging the credit balance around each Create. **`pair` is now a one-axis grid.**
 
-So: **no `pair` on v6 until [`automation.md`](../../../docs/suno-gpt/automation.md) §9's
-five-step plan has run** — one no-credit live DOM read, `SunoSpec` gains a **required** `model`
-plus `variety` / `personalize` / `maxMode` / `vocalGender` with read-back, `formMode()` fixed, then
-a **`grid`** command (one atom × many slider cells into one workspace — `pair` becomes a two-cell
-grid). §9 also carries the proposed **R1–R4 grid** and the extended naming
-`<story>-<cut>-<revision>-<model>-w<weirdness>`. What the controls *do* is `suno-prompt`'s side:
-[`suno-v6.md`](../../../docs/suno-gpt/files/suno-v6.md) §2.
+What the controls *do* is `suno-prompt`'s side: [`suno-v6.md`](../../../docs/suno-gpt/files/suno-v6.md) §2.
+The proposed first round, **R1 = {v6, v6-wild} × weirdness {30, 60}**, is in §9 and awaits Kai.
 
 ⚠️ **Credit cost per v6 Create is unknown** — the "20 credits a pair" below is v5.5-era. Read
 the balance before and after every Create until it's known.
@@ -109,7 +112,8 @@ npx tsx scripts/suno/suno.mts extract \
   docs/stories/gitpush-origin-master/songs/narration.md "GEN A · CUT 1" > /tmp/spec.json
 
 # 2 ── add how to file and grade it
-#      { ...boxes, voice, title, workspace, styleInfluence, audioInfluence, weirdness }
+#      { ...boxes, model, title, workspace, voice, styleInfluence, audioInfluence, weirdness,
+#        variety, maxMode, vocalGender, personalize, grid }   ← model is REQUIRED
 
 # 3 ── load everything. Spends NO credits.
 npx tsx scripts/suno/suno.mts load /tmp/spec.json
@@ -117,11 +121,16 @@ npx tsx scripts/suno/suno.mts load /tmp/spec.json
 # 4 ── or load AND generate both halves of the pair
 npx tsx scripts/suno/suno.mts pair /tmp/spec.json
 
-# 5 ── read the takes back
+# 5 ── or a whole grid: preview it (free), then run it
+npx tsx scripts/suno/suno.mts grid-plan /tmp/spec.json
+npx tsx scripts/suno/suno.mts grid /tmp/spec.json
+
+# 6 ── read the takes back
 npx tsx scripts/suno/suno.mts takes gpom-cut1
 ```
 
-`load` is always safe. `pair` costs **20 credits** (10 per Create, 2 takes each).
+`load`, `controls` and `grid-plan` are always safe. A v5.5 Create cost 10 credits for 2 takes;
+**the v6 cost is not yet known** — `pair` and `grid` print the balance around every Create.
 
 ## The rules that are not negotiable
 
@@ -308,8 +317,10 @@ settles it — say so and it gets run.
 
 ### 🔑 Naming
 
-`<story>-<cut>-<revision>-w<weirdness>` — e.g. `gpom-cut1-A-w30`. The **letter is the prompt
-revision** and advances every time the prompt changes. Never a bare letter: the sheets also use
+`<story>-<cut>-<revision>-<model>-w<weirdness>` — e.g. `gpom-cut1-A-v6-w30`,
+`gpom-cut1-A-wild-w60`; a grid that varies Variety or Max Mode adds `-var-<step>` / `-max`. The
+script builds these from the spec's `title` (the part up to the revision). The **letter is the
+prompt revision** and advances every time the prompt changes. Never a bare letter: the sheets also use
 A/B/C for scenes.
 
 ### 🔑 Workspaces

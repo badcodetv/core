@@ -75,23 +75,12 @@ covering your own recorded audio into an instrument.
 
 ## 2. Model choice — don't assume the highest number
 
-> 🔴 **Superseded 2026-09-09.** v6 retired v4, v4.5, v5 and v5.5 from the create form. The
-> choice is now **v6 / v6 Wild / v6 Mini** (plus custom models), and the hybrid move below
-> becomes **"hunt in v6 Wild, Cover the winner into v6"**. Read [`suno-v6.md`](./suno-v6.md) §1.
-> What follows is kept as history, and because Cover and Extend still work on old-model songs.
-
-- **v4.5 / 4.5+** — more musically *creative*. More varied instrumentation, more interesting tones,
-  different vocalists between generations.
-- **v5 / 5.5** — more *polished* and consistent, but blander, with harsher highs (excess energy
-  around 3.4 kHz, audible sibilance and hiss).
-
-**The hybrid move — generate in 4.5+ for the ideas, then Cover into 5.5 for the sonics.** Drag the
-track into remix → Cover → newest model → **weirdness 0, style influence 0, audio influence 35–40**.
-Result keeps the melody and arrangement, raises fidelity; instrument tones shift slightly. Below ~25
-it starts rewriting the song. **Remaster** (three dots → Create → Remaster, *Subtle* or *Normal* —
-never *High*) is the lighter-touch alternative for the same goal.
-
-Suno Studio is the exception: **v5 outperformed v5.5 inside Studio** for voice→instrument work.
+**All new Suno work is v6, in the new UI** (Kai, 2026-09-10). The choice is **v6** by default,
+**v6 Wild** to hunt, then **Cover the winner into v6** — [`suno-v6.md`](./suno-v6.md) §1. Never
+v6 Mini. The v4.5-vs-v5.5 guidance that used to live here (and the "ideas in 4.5, Cover into 5.5"
+hybrid move, whose Cover settings — weirdness 0, style influence 0, audio influence 35–40 — are the
+natural untested starting point on v6) is archived in
+[`../archive/v5.5-era.md`](../archive/v5.5-era.md) §1.
 
 ---
 
@@ -286,8 +275,8 @@ Put `[mumble mode]` then a lowercase `a` in the Lyrics box. Suno sings wordless 
 real phrasing; you then write lyrics into that rhythm. Mirrors how pop songwriters actually work
 (vowel shapes first, language after).
 
-**Version-critical: works on v4.5+, broken on v5.5** (5.5 sings real words instead). So: mumble on
-4.5+, then model-upgrade cover it to 5.5.
+**Version-critical, and untested on v6.** It worked on v4.5 and broke on v5.5 (history:
+[`../archive/v5.5-era.md`](../archive/v5.5-era.md) §2). Try it on v6 before relying on it.
 
 ---
 

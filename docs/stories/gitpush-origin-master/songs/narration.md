@@ -10,6 +10,11 @@ voices: [`badcode newsreader` — 🔴 THE LIVE SUNO DISPLAY NAME, confirmed aga
 sibling: git-push-origin-master-orchestral.md
 ---
 
+> 🗄 **v5.5 sheet — archived 2026-09-10.** Suno v6 retired v5.5 on 2026-09-09 and all new Suno
+> work is v6, in the new UI. The takes this sheet made still exist and can be Covered onto v6;
+> the sheet cannot be re-run as written. A new round starts a v6 sheet — see
+> [`v5.5-era.md`](../../../suno-gpt/archive/v5.5-era.md) §5.
+
 # GPOM narration — cuts 1, 2 and 3
 
 The narrator speaking over the picture. **Not the song.** Same character, same saved

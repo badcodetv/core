@@ -2,7 +2,7 @@
 title: Suno automation — the DOM, the traps, and the operating protocol
 status: recon complete and live-validated 2026-08-24 · no MCP server built yet
 scope: MECHANICS only — driving the Suno web app over CDP. What to WRITE in the boxes is `suno-prompt`.
-validated: Chrome for Testing 148, suno.com/create, Advanced Mode, v5.5, account `binocarlos`
+validated: Chrome for Testing 148, suno.com/create, Advanced Mode, v5.5, account `binocarlos` · v6 form re-mapped live 2026-09-10 (§9)
 ---
 
 # Suno automation
@@ -114,7 +114,10 @@ Every row verified live.
 | **Audio Influence** | `[role="slider"][aria-label="Audio Influence"]` | **only exists after a Voice is attached** |
 | **Voice** | `button[aria-label="Add Voice"]` | two of them — use `panel()` |
 | **Voice card** | ancestor with class `cursor-pointer` | a `div`, **no** `role="button"` |
-| **Model** | button whose text matches `/^v\d/` | read `v5.5`. 🔴 **v6 likely breaks this** — labels read on camera as `V6 Pro` / `Version 6 Pro` / `V6 - Wild`; match case-insensitively on `6` + `wild`/`mini`, never an exact string. Unmapped — §9 |
+| **Model button** | `button[aria-haspopup="menu"]` whose text matches `/^v\d/i` | ✅ 2026-09-10: reads `v6` / `v6-wild`. Opens only on a **real mouse click** |
+| **Model options** | `[role="menuitemradio"]`, first leaf `span` = id (`v6`, `v6-wild`, `v6-mini`, custom models), `aria-checked` | ✅ 2026-09-10. The menu, not the button, is authoritative (`getModel`) |
+| **Variety** | `[role="slider"][aria-label="Variety"]` | ✅ 0–4, `aria-valuetext` Off/Normal/High/Extra/Max, default 1. **Home key does nothing** — arrows only |
+| **Max Mode · Vocal Gender · Duration · Personalize** | the `span` label's row → its `button`s | ✅ no aria state: **selected = class `hxc-btn-variant-standard-*`**, unselected `…-tertiary-*`. Native `el.click()` works (they sit in the clipped More Options box) |
 | **Title** | `input[placeholder="Song Title (Optional)"]` | two of them — use `panel()` |
 | **Workspace** | button in `panel()` reading `Save to...<name>` | opens a picker |
 | **Workspace search** | `input[placeholder="Search or create..."]` | selects **or creates** |
@@ -380,8 +383,12 @@ Honesty about this is the point of the table — several recon assumptions faile
 | An attached Voice hides the duration control | ❌ **disproved** — it does not |
 | **That a set duration actually changes the take's length** | 🟡 **partly** — 2026-08-25, a 200s target moved takes from 4:30–4:46 to 4:07–4:24. It shortens, it does not obey: treat it as a ceiling to aim under, never a floor |
 | Take/clip harvesting from the workspace list | ⬜ not attempted |
-| Model picker (changing v5.5 → other) | ⬜ not attempted; reads correctly. 🔴 **Now load-bearing** — v6 made model an experiment axis, and `load` never sets it (§9) |
-| **Any v6 control** (Variety, Personalize, Max Mode, Vocal Gender, new tab labels, new attach types) | ⬜ **not read live once** — everything in §9 is from launch-day videos |
+| **Model picker sets and reads back** (v6 → v6-wild → v6) | ✅ **proven 2026-09-10** via `controls` |
+| **Variety, Max Mode set and read back** (Normal → High → Normal, Off → On → Off) | ✅ **proven 2026-09-10** via `controls` |
+| **Vocal Gender / Personalize set** | 🟡 read back as *none* on a clean form; **setting** either has not been exercised. Whether Personalize's "My Taste" button toggles or opens a dialog is ⬜ unknown |
+| **Suno switches the model itself** | 🟡 **observed 2026-09-10** — a "Model changed… to support your selected conditions" toast; trigger unknown. `load` reads the model back last |
+| **`grid` / new-style `pair` generating** | ⬜ **not run** — needs Kai's go-ahead and a free My Taste box |
+| Simple-mode attach menu (Image / Video / playlist) | ⬜ not mapped |
 
 🔑 **The form survives its own generation** — proven 2026-08-24. So the pair is cheap: load once,
 Create, then **nudge the slider and retitle**, Create again. No reload between halves. This is what
@@ -489,11 +496,13 @@ when trap 2 fires.**
 
 ---
 
-## 9. 🔴 v6 (2026-09-09) — the form changed and the loader has not been re-mapped
+## 9. 🔑 v6 (2026-09-09) — re-mapped live and wired in 2026-09-10
 
-**Status: every selector below is unverified.** The evidence is launch-day video, not a DOM read.
-Until step 1 of the plan below has run, **do not `pair` on v6** — a run would generate on whatever
-model and Variety the form was left on, and `load`'s checks would all pass.
+**All new Suno work is v6, in the new UI** (Kai, 2026-09-10). The form was read live over CDP on
+2026-09-10 (no credits spent) and `suno.mts` now sets and reads back every v6 control — the
+selectors are in §3, the proofs in §6. Steps 1–4 of the plan below are done; step 5 is not.
+The table immediately below is what the launch-day videos predicted, kept because it explains
+*why* each control matters.
 
 ### What changed on the form (from [`files/suno-v6.md`](./files/suno-v6.md) §2)
 
@@ -509,18 +518,18 @@ model and Variety the form was left on, and `load`'s checks would all pass.
 
 ### The plan — in order, nothing skipped
 
-1. **One live read, no credits.** `claim` a channel → `status` (another session? stop) → dump the
-   create form's DOM: tab labels, model button text + option list, Variety element / steps /
-   `aria-valuetext`, Personalize, Max Mode, Vocal Gender, attach menu. Write every selector into
-   §3 with **proven** beside it.
-2. **Extend `SunoSpec`**: `model` (**required** — a spec with no model refuses, like `taste`),
-   `variety`, `personalize`, `maxMode`, `vocalGender`. Each with an explicit off/default path, per
-   the *omitting ≠ clearing* law. `load` sets and **reads back** each; `status` reports each.
-3. **Fix `formMode()`** against the real v6 tab labels and attachment chips.
-4. **`grid`** — a new command: one atom × a list of cells (model × variety × weirdness …),
-   loaded once, then per cell nudge only the cell's controls, retitle, Create, read the credit
-   balance before and after. Same guards as `pair`; **`pair` becomes a two-cell grid.**
-5. Then, and only then, run **R1** below — with Kai's go-ahead, because it spends credits.
+1. ✅ **One live read, no credits** (2026-09-10). Tabs **Simple · Advanced · Sounds**; model menu
+   `v6` / `v6-wild` / `v6-mini` + Create Custom Model; Variety 0–4; segments by class. §3.
+2. ✅ **`SunoSpec` extended**: `model` (**required**), `variety`, `maxMode`, `vocalGender`,
+   `personalize`, each with a default path. `load` sets and reads back each; `status` reports each;
+   the model is read back **last** because Suno can switch it itself.
+3. ✅ **`formMode()` fixed** for Simple / Advanced / Sounds (`'custom'` still names the full form).
+   ⬜ The Simple attach chips (Image / Video / playlist) are not recognised yet.
+4. ✅ **`grid`** + **`grid-plan`** + **`controls`**. `pair` is a one-axis grid. Every cell after the
+   first re-asserts its controls, retitles, re-verifies, then Creates; the credit balance is logged
+   around each Create.
+5. ⬜ **Run R1** below — needs Kai's go-ahead (it spends credits) **and a free My Taste box**:
+   on 2026-09-10 the box held another session's British-class profile, not `MUST_REPLACE_HERE`.
 
 ### The grid (proposal — Kai rules on it)
 
@@ -551,6 +560,15 @@ when a prompt box moves.
   sweep (`docs/misc/2026-09-10-suno-v6-research.md`): what changed on the form, why `load` is now
   unsafe on v6 (it never sets the model), the five-step re-mapping plan, and the proposed R1–R4
   grid with the extended naming. **Nothing re-verified live yet.**
+
+- **2026-09-10 (v6, live)** — Kai: *all new Suno work is v6, in the new UI*; v5.5 archived
+  (`archive/v5.5-era.md`). The create form was read over CDP with no credits spent: tabs Simple ·
+  Advanced · Sounds; model menu of `menuitemradio`s; Variety a 0–4 slider (Off/Normal/High/Extra/Max;
+  Home key inert); Max Mode, Vocal Gender, Duration and Personalize are segmented buttons whose only
+  selected-state signal is a CSS class. A "Model changed" toast showed Suno switching the model by
+  itself. `suno.mts` gained `model` (required) + four v6 fields with read-back, `controls`,
+  `grid-plan` and `grid`; `pair` became a one-axis grid and titles gained the model. Proven by a
+  `controls` round-trip (v6 → v6-wild / High / Max On → back). Not yet run: any generation on v6.
 
 - **2026-08-24** — created. Full DOM recon of `suno.com/create` over CDP; five traps found and
   worked around; Gen A of the GPOM narration loaded end-to-end in one command (style 903,

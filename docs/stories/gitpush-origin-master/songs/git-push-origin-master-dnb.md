@@ -8,6 +8,11 @@ voices: [newsreader (male, dark gravelly RP — the bulletins, and nothing else)
 sibling: songs/git-push-origin-master-orchestral.md
 ---
 
+> 🗄 **v5.5 sheet — archived 2026-09-10.** Suno v6 retired v5.5 on 2026-09-09 and all new Suno
+> work is v6, in the new UI. The takes this sheet made still exist and can be Covered onto v6;
+> the sheet cannot be re-run as written. A new round starts a v6 sheet — see
+> [`v5.5-era.md`](../../../suno-gpt/archive/v5.5-era.md) §5.
+
 # git push origin master — drum & bass cut
 
 The club sibling of

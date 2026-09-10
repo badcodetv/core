@@ -8,6 +8,12 @@ workspace: camping-duet
 model: v5.5
 mode: Create (Advanced) — NOTHING attached
 ---
+
+> 🗄 **v5.5 sheet — archived 2026-09-10.** Suno v6 retired v5.5 on 2026-09-09 and all new Suno
+> work is v6, in the new UI. The takes this sheet made still exist and can be Covered onto v6;
+> the sheet cannot be re-run as written. A new round starts a v6 sheet — see
+> [`v5.5-era.md`](../../../../suno-gpt/archive/v5.5-era.md) §5.
+
 # Camping — the half-time direction
 
 **Kai, 2026-08-26: S7 take 1 is the one.** Dub soundsystem drum and bass, spoken vocal delivered

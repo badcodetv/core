@@ -8,6 +8,12 @@ model: v5.5
 settings: style influence 75 · weirdness 30 · audio influence n/a (fresh generation) · NO saved Voice
 voices: [bob, tarquin]
 ---
+
+> 🗄 **v5.5 sheet — archived 2026-09-10.** Suno v6 retired v5.5 on 2026-09-09 and all new Suno
+> work is v6, in the new UI. The takes this sheet made still exist and can be Covered onto v6;
+> the sheet cannot be re-run as written. A new round starts a v6 sheet — see
+> [`v5.5-era.md`](../../../suno-gpt/archive/v5.5-era.md) §5.
+
 # Camping — the song
 
 **The live prompt sheet for the "Camping" track.** Same words as the released take, rebuilt

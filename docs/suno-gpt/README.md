@@ -3,6 +3,11 @@
 The knowledge base behind the **`suno-prompt`** skill (`.claude/skills/suno-prompt/`). The skill is
 the entry point — this is what it reads.
 
+> 🔑 **House rule (Kai, 2026-09-10): all new Suno work is v6, in the new UI.** v5.5 was retired on
+> 2026-09-09; its model-specific knowledge is archived in [`archive/v5.5-era.md`](./archive/v5.5-era.md),
+> and the eleven song sheets pinned to v5.5 carry an archive banner. Start at
+> [`files/suno-v6.md`](./files/suno-v6.md).
+
 ## Files
 
 | File | What |
@@ -11,6 +16,7 @@ the entry point — this is what it reads.
 | [`session-method.md`](./session-method.md) | **How to work, not what is true.** The iteration loop, the three-layer split (sheet / log / rules), diagnose-before-rewording, why boxes grow, mechanical lyric verification, and what counts as evidence. Read before a re-cut session |
 | [`automation.md`](./automation.md) | **Driving the app, not writing for it.** The `suno.com/create` DOM mapped over CDP — selector table, the golden rule (Simple and Advanced both mount, so scope to the Advanced panel), and **five silent traps**: the "Overwrite Styles?" dialog that swaps your Style box for the persona's, the Lexical lyrics editor that collapses to one paragraph, three `[role=dialog]` nodes, a form wiped by navigation, and a Style box that truncates at 1,000 instead of refusing. Plus the operating protocol — **every attempt is a pair at weirdness 30 and 60**, track naming, workspaces, and **never automate downloading** |
 | [`files/suno-v6.md`](./files/suno-v6.md) | 🔑 **v6 (2026-09-09) — read first on any model or control question.** The three models and when to pick which, the new create-form controls (Variety, Personalize, Max Mode, Vocal Gender), **§3 the ladder for fixing one word / one bar / one phrase**, Studio click-paths on v6, new features worth suggesting unbidden, downloads and credits, what happens to our v5.5 back catalogue, and the prioritised test queue. **Day-one evidence — nothing measured yet.** Ledger: [`../misc/2026-09-10-suno-v6-research.md`](../misc/2026-09-10-suno-v6-research.md) |
+| [`archive/v5.5-era.md`](./archive/v5.5-era.md) | 🗄 **Archived 2026-09-10.** The v5.5-era model knowledge (4.5 vs 5.5, the hybrid move, mumble mode's version note, the cue-heavy rule, the old four-tab form and the placebo Max Mode block) and the list of song sheets still pinned to v5.5. Read only to understand an old sheet or to Cover an old take onto v6 |
 | [`files/suno-tag-mechanics.md`](./files/suno-tag-mechanics.md) | The prompt language: hybrid format, information ordering, genre pairing, bracket language, exclude strategy, contamination words |
 | [`files/suno-controls-and-workflows.md`](./files/suno-controls-and-workflows.md) | **The control surface and the platform.** Sliders, model choice, the consistency stack (Voice / custom model / Lyricist), lyric editing, Studio generation craft (**and §8a — Studio 2.0: chat, MIDI, real-time effects, custom plugins**), stems, known failure modes |
 | [`files/suno-studio.md`](./files/suno-studio.md) | **The Studio 2.0 app surface** — project-aware chat, MIDI + musical typing, live recording, cover-in-place, advanced split / remove effects, the effects rack + sidechain + automation, natural-language custom plugins, shortcuts. **Vendor-demo confidence — read its warning.** ⚠ Overlaps §8a of the file above: the two were written independently from the same launch video and are pending a merge |
@@ -155,8 +161,7 @@ Re-verify before relying on these; they move fast and some are version-pinned:
 
 - **Everything in `files/suno-v6.md`** — written the day after launch from videos and press; the
   in-app labels are still contested and nothing is measured. Re-sweep ~2026-09-17
-- Model behaviour (v4.5 creative vs v5.5 polished; mumble mode broken on 5.5; Studio better on v5)
-  — **all retired from the create form 2026-09-09**; kept as history and for Cover/Extend on old songs
+- The v5.5-era model behaviour is no longer volatile — it is **archived** (`archive/v5.5-era.md`)
 - Feature names and locations (Persona was renamed **Voice** in v5.5)
 - **Everything in `files/suno-studio.md`** — two vendor videos, nothing tested by us or by an
   independent practitioner. Suno is shipping Studio fast; assume it has moved again.
