@@ -1,6 +1,6 @@
 ---
 name: suno-prompt
-description: Use when turning a song idea into a Suno prompt — a style prompt, exclude-styles list, or lyrics — for BadCode music, AND when a human is driving Suno by hand: what to click, in what order, to get a result or fix a broken one. Triggers on "make a Suno prompt", "turn this into a song / track", "write lyrics for…", "optimize this for Suno", "give me a style prompt", "how do I do X in Suno", "what do I click", "how do I fix this vocal / change this word / split these stems", anything about Suno Studio, MIDI, stems, Voice/Persona or custom models, or any drum & bass / track idea clearly meant for Suno generation. Driving Suno FROM CODE — loading a sheet into the boxes, clicking Create, running the weirdness pair, workspaces — is `suno-automation`.
+description: Use when turning a song idea into a Suno prompt — a style prompt, exclude-styles list, or lyrics — for BadCode music, AND when a human is driving Suno by hand: what to click, in what order, to get a result or fix a broken one. Triggers on "make a Suno prompt", "turn this into a song / track", "write lyrics for…", "optimize this for Suno", "give me a style prompt", "how do I do X in Suno", "what do I click", "how do I fix this vocal / change this word / split these stems", "one word is wrong", "remove the music under that bar", "change the phrasing in that bar", "v6 or Wild", "what does Variety do", anything about Suno v6, Suno Studio, MIDI, stems, Voice/Persona or custom models, or any drum & bass / track idea clearly meant for Suno generation. Driving Suno FROM CODE — loading a sheet into the boxes, clicking Create, running the weirdness pair, workspaces — is `suno-automation`.
 ---
 
 # Suno Prompt (BadCode)
@@ -26,6 +26,7 @@ Read on demand. Never reproduce its content in your reply, and don't lecture the
 
 | File | What | Read when |
 |---|---|---|
+| `files/suno-v6.md` | 🔑 **Suno v6 (2026-09-09) — read FIRST.** v6 retired v5.5, so on any *model* or *control* question this file beats the older ones. The models (v6 / v6 Wild / Mini) and when to pick which, the new controls (**Variety**, **Personalize**, **Max Mode** toggle, **Vocal Gender**), **§3 the ladder for fixing one word / one bar / one phrase**, Studio click-paths on v6, **§5 the features worth suggesting unbidden**, downloads and credits, the v5.5 back catalogue, the test queue. **Day-one evidence: nothing measured yet — say "should", not "does"** | **First use in a conversation**, and any time a fix, a feature or a setting comes up |
 | `system-prompt.txt` | Base operating procedure — modes, output format, character limits, edge cases | First use in a conversation |
 | `session-method.md` | **How to work, not what is true** — the iteration loop, the sheet/log/rules split, diagnose-before-rewording, why boxes grow, mechanical lyric verification, what counts as evidence | **Any multi-round session on an existing song**: a re-cut, a "this isn't right yet" loop, or picking up a song someone else iterated on |
 | `files/suno-tag-mechanics.md` | Prompt language: hybrid format, ordering, genre pairing, bracket language, exclude strategy, contamination words | First use in a conversation |
@@ -63,6 +64,9 @@ skip straight to drafting if they clearly just want something fast.
 - **Which Suno mode?** Simple / Advanced / Studio. Ask once per conversation, remember it. This
   decides the output shape and the character budget. If Studio, ask **1.0 or 2.0 interface** — 2.0
   has the chat, MIDI and effects rack, and old projects open with a modal offering either.
+- **Which model?** Don't ask — default **v6**, and offer **v6 Wild** in one line when the brief is
+  a hunt (a texture, a drop idea, a niche sub-genre). Never v6 Mini. v5.5 no longer exists for new
+  generations (`suno-v6.md` §1).
 - **What is this song for?** A GPOM story beat, a standalone release, a comic soundtrack, an
   experiment? If it ties to canon, skim the story folder before drafting.
 - **What's the feeling, or the reference?** Take a fragment, a mood, an adjective, a track they like.
@@ -162,7 +166,13 @@ all four boxes, every round, from this session's blocks. Never trust what a box 
 
 Default settings line, unless the situation calls for otherwise:
 
-> Style influence **75**, weirdness **60**, audio influence **40** (only if you're seeding from audio).
+> Model **v6**, Variety **Normal**, Personalize **off**, Max Mode **off**, Vocal Gender **unset**
+> (or as the sheet says), Duration **set explicitly** — then style influence **75**, weirdness
+> **60**, audio influence **40** (only if you're seeding from audio).
+
+State every v6 control, not just the sliders: v6 on Duration **Auto** runs longer than v5.5 did,
+and Personalize is reportedly the switch for My Taste. Variety, Personalize and Max Mode are
+**untested by us** — say so if the user asks what they do (`suno-v6.md` §2).
 
 Adjust with reasons from `suno-controls-and-workflows.md` §1 — e.g. weirdness 0 and style influence
 100 for a lyric-swap cover; weirdness 0 for an exact reproduction; audio influence 75–85 when a
@@ -177,6 +187,21 @@ do I click", a vocal that won't move after prompt surgery, stems, Studio, MIDI, 
 one line without losing the song. Also fires **unbidden** — if the user asks for a prompt but the
 thing they actually want is a feature (a recurring narrator is Voice + custom model, not adjectives),
 say so in a line and give the path.
+
+🔑 **Suggest the feature unprompted — this is half the job.** Whenever we're talking about a song
+and the talk lands on one of these, say *"you can do that in Suno — here's how"* with the
+click-path, before anyone asks. Full table in `suno-v6.md` §5:
+
+- **"it's perfect except that one word"** → the v6 edit (attach the song in Simple + a one-sentence
+  instruction) — `suno-v6.md` §3 rung 1. **Not** a regeneration.
+- **"lose the music under that line"** → stems + a mute in Premiere (§3 rung 3).
+- **"that bar's phrasing is wrong"** → a Studio guide vocal (§3 rung 4) — and say plainly this makes
+  a new take, not a patch.
+- **"I can hum it"** → Add → Audio → record. **"the riff at 0:45"** → timestamp sampling.
+  **"drums from A, vocal from B"** → natural-language mashup. **"a song for this image/clip"** →
+  Add → Image / Video. **"an extra guitar under it"** → Studio chat, add a track.
+- **"the old v5.5 take, but better"** → Cover it on v6 (§10).
+- **"let's try loads and pick"** → the permutation grid (`automation.md` §9, `suno-automation`).
 
 **The output shape is a click-path, not prose.** Numbered steps, each one an action:
 
@@ -202,8 +227,12 @@ goes in, every time.
 
 | Want | Read |
 |---|---|
-| Consistent voice across a release; Voice / custom model / Lyricist | `suno-controls-and-workflows.md` §4, §4a |
-| Change lyrics without losing the song | §6 (four ranked methods) + `suno-studio.md` §4–5 |
+| 🔑 **One word wrong, one bar's backing out, one bar's cadence** — fix it without regenerating | **`suno-v6.md` §3** — the four problems (wrong word / badly sung / backing / cadence) and a ladder for each. Give the rung, its failure signs, and the honest "what still cannot be done" |
+| v6 vs v6 Wild; what Variety / Personalize / Max Mode do | `suno-v6.md` §1–2 |
+| Seeding from a hum, an image, a video; sampling at a timestamp; mashups; Edit vocals / Edit instruments | `suno-v6.md` §5 |
+| An accepted v5.5 take we want to keep | `suno-v6.md` §10 — Cover on v6; the old sheet will not reproduce it |
+| Consistent voice across a release; Voice / custom model / Lyricist | `suno-controls-and-workflows.md` §4, §4a — **plus `suno-v6.md` §7**: on v6, custom model + Voice together fixed a drifting vocal |
+| Change lyrics without losing the song | **`suno-v6.md` §3 first**, then §6 (four ranked methods) + `suno-studio.md` §4–5 |
 | A word mispronounced, or a rhyme that won't chain | `lyricist-playbook.md` §6 — respell for **sound**, and **respell the outlier to the rhyme chain, not the dictionary**. Strip in-word hyphens too: they stretch the note, so a hyphenated or foreign name renders slow by default. Intermittent = re-roll, not respell |
 | A delivery that's rushed, or lines that won't sit on the bar | `lyric-craft.md` "Punctuation is the brake" — **measure syllables per line per section and look at the spread**; line breaks are the tempo control and change no words. Then `lyricist-playbook.md` §9 for Studio warp/quantize |
 | Cover / Sample / Mashup / Sounds / speed | §7 |
@@ -230,11 +259,15 @@ goes in, every time.
 - **Mark untested claims.** Anything sourced only from `suno-studio.md` is a vendor demo — say
   "should" and "untested", not "does". Everything we verify gets written back to the doc.
 
-**The dream feature, when it comes up: re-singing one word in the same voice.** Suno cannot do it.
-Don't improvise a workaround — `suno-studio.md` §5 has the honest ladder (custom model first; isolate
-→ dry → cover-in-place second; sing it yourself third; the Editor last) and states plainly what's
-still missing, including that **Studio has no pitch correction at all**. Give the ladder, name the
-drift, let the user choose.
+**The dream feature, when it comes up: re-singing one word in the same voice.** *(Updated
+2026-09-10.)* **v6 claims it** — "change one word or line while leaving the rest intact" — and two
+testers heard a same-syllable word swap come back as the same take. So the first answer is now the
+v6 edit, **`suno-v6.md` §3 rung 1**. But be exact about what is known: it is by-ear only, nobody has
+null-tested it, it returns a *new clip*, multi-phrase edits on uploaded audio wrecked the backing
+3/3, and a word sung *badly* with the text unchanged is untested everywhere. Give the rung, its
+failure signs and the fallback ladder (§3 rungs 2–4, then `suno-studio.md` §5), and say that
+**Studio still has no pitch correction**. Offer to run §12 test 1 — the null test — the first time
+it matters on a real song.
 
 **Two answers to reach for before you reach for a better prompt.** Both are in `suno-studio.md` §11
 and both beat adjective-stacking:
@@ -390,7 +423,8 @@ supported case. The Voice is rarely the wrong tool; it's the right tool on the w
 
 **Cue-heavy skit tracks invert the model rule:** v4.5's extra vocal variety isn't worth it when the
 track's architecture lives in dense bracket cues — 4.5 shreds the structure, v5.5 obeys it. Stay on
-5.5 and spend direction in the brackets.
+5.5 and spend direction in the brackets. *(2026-09-09: both retired. The same logic says **v6, not
+Wild**, for a cue-heavy track — Wild drifts from the brief. Untested.)*
 
 ---
 
@@ -547,7 +581,12 @@ Lyricist). Two BadCode-specific notes:
    hour, not as a solution — and write the result back into the doc either way.
 2. **Niche subgenres fail; broad ones work.** Riddim came back as generic dubstep with none of the
    characteristic sound design — expect the same at neurofunk / liquid / jump-up level. **Mitigation:
-   describe the sound design and rhythm rather than relying on the subgenre name.** `producer-
+   describe the sound design and rhythm rather than relying on the subgenre name.** **v6 data
+   point (2026-09-09, ChillPanic):** a lazy `liquid DnB` prompt came back as two-step drums, while
+   an engineered one naming the drum mechanics (`jungle breaks, rapid chop, hyperdetail
+   percussion, dark synth bassline`) worked on both models. Same lesson, now on v6. v6 Wild is
+   deliberately "less tuned towards preferences" — the model to hunt niche D&B in, then Cover
+   into v6 (`suno-v6.md` §9). `producer-
    vocabulary.md` is exactly that toolkit — reese bass, sample-and-hold on the cutoff, amen break,
    sub layering, sparse drop.
 3. **Suno's harshness sits exactly where D&B lives** — brittle cymbals, sizzling hats, sibilance in
@@ -574,7 +613,10 @@ keep the shared material (the lyric/bulletin bank) in one file only, and say in 
 one is canonical.
 
 Record the **slider settings and the Suno model version** alongside the prompt — a prompt without
-them isn't reproducible, and model behaviour shifts between versions.
+them isn't reproducible, and model behaviour shifts between versions. On v6 that means `model:
+v6` / `v6-wild` / the custom model's name, **plus Variety, Personalize and Max Mode** — all three
+change the take and none is visible in the boxes. A sheet whose `model:` still says v5.5 is a
+**history** sheet: it cannot be re-run as written (`suno-v6.md` §10).
 
 If the song isn't tied to a story yet, offer to run **`new-story`** first. Curate — these feed the
 GPOM narrative; don't bulk-dump.

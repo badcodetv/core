@@ -114,7 +114,7 @@ Every row verified live.
 | **Audio Influence** | `[role="slider"][aria-label="Audio Influence"]` | **only exists after a Voice is attached** |
 | **Voice** | `button[aria-label="Add Voice"]` | two of them — use `panel()` |
 | **Voice card** | ancestor with class `cursor-pointer` | a `div`, **no** `role="button"` |
-| **Model** | button whose text matches `/^v\d/` | reads `v5.5` |
+| **Model** | button whose text matches `/^v\d/` | read `v5.5`. 🔴 **v6 likely breaks this** — labels read on camera as `V6 Pro` / `Version 6 Pro` / `V6 - Wild`; match case-insensitively on `6` + `wild`/`mini`, never an exact string. Unmapped — §9 |
 | **Title** | `input[placeholder="Song Title (Optional)"]` | two of them — use `panel()` |
 | **Workspace** | button in `panel()` reading `Save to...<name>` | opens a picker |
 | **Workspace search** | `input[placeholder="Search or create..."]` | selects **or creates** |
@@ -380,7 +380,8 @@ Honesty about this is the point of the table — several recon assumptions faile
 | An attached Voice hides the duration control | ❌ **disproved** — it does not |
 | **That a set duration actually changes the take's length** | 🟡 **partly** — 2026-08-25, a 200s target moved takes from 4:30–4:46 to 4:07–4:24. It shortens, it does not obey: treat it as a ceiling to aim under, never a floor |
 | Take/clip harvesting from the workspace list | ⬜ not attempted |
-| Model picker (changing v5.5 → other) | ⬜ not attempted; reads correctly |
+| Model picker (changing v5.5 → other) | ⬜ not attempted; reads correctly. 🔴 **Now load-bearing** — v6 made model an experiment axis, and `load` never sets it (§9) |
+| **Any v6 control** (Variety, Personalize, Max Mode, Vocal Gender, new tab labels, new attach types) | ⬜ **not read live once** — everything in §9 is from launch-day videos |
 
 🔑 **The form survives its own generation** — proven 2026-08-24. So the pair is cheap: load once,
 Create, then **nudge the slider and retitle**, Create again. No reload between halves. This is what
@@ -488,7 +489,68 @@ when trap 2 fires.**
 
 ---
 
+## 9. 🔴 v6 (2026-09-09) — the form changed and the loader has not been re-mapped
+
+**Status: every selector below is unverified.** The evidence is launch-day video, not a DOM read.
+Until step 1 of the plan below has run, **do not `pair` on v6** — a run would generate on whatever
+model and Variety the form was left on, and `load`'s checks would all pass.
+
+### What changed on the form (from [`files/suno-v6.md`](./files/suno-v6.md) §2)
+
+| Change | Why it bites automation |
+| --- | --- |
+| **v5.5 and older are gone**; the picker holds v6 / v6 Wild / v6 Mini **and your custom models** | `load` never sets the model at all — it reads whatever is selected. With model now an experiment axis that is the **inheritance bug** (2026-08-27 law) in its purest form. The `/^v\d/` read may also fail on `V6 Pro` / `Version 6 Pro` |
+| **Variety** 🆕 — stepped, default Normal, **mounted only with a v6-family model** | new form state that persists; conditionally mounted like Duration, so "absent" must be told apart from "not set" |
+| **Personalize** 🆕 — on/off, reportedly the create-form switch for **My Taste** | if it gates My Taste, the atom's taste box only bites when it is on — and a leftover *on* is an invisible bias. Must be set and read back every run |
+| **Max Mode** toggle, **Vocal Gender** | more persisting state |
+| Tabs read **Simple / Advanced** in every v6 source; "Custom" never seen; Audio/Cover possibly post-upload *modes* | `formMode()` expects `custom` — it may false-abort or, worse, false-pass |
+| The Simple **Add** menu takes Audio · Image · Video · Voice · playlist · styles, and **an attached song + text = an edit of that song** | the Cover trap in a new place: a song left attached in Simple turns a Create into an edit. `formMode()`'s attachment check must recognise the new chips |
+| Generation is much faster | shorten polls; keep every check |
+
+### The plan — in order, nothing skipped
+
+1. **One live read, no credits.** `claim` a channel → `status` (another session? stop) → dump the
+   create form's DOM: tab labels, model button text + option list, Variety element / steps /
+   `aria-valuetext`, Personalize, Max Mode, Vocal Gender, attach menu. Write every selector into
+   §3 with **proven** beside it.
+2. **Extend `SunoSpec`**: `model` (**required** — a spec with no model refuses, like `taste`),
+   `variety`, `personalize`, `maxMode`, `vocalGender`. Each with an explicit off/default path, per
+   the *omitting ≠ clearing* law. `load` sets and **reads back** each; `status` reports each.
+3. **Fix `formMode()`** against the real v6 tab labels and attachment chips.
+4. **`grid`** — a new command: one atom × a list of cells (model × variety × weirdness …),
+   loaded once, then per cell nudge only the cell's controls, retitle, Create, read the credit
+   balance before and after. Same guards as `pair`; **`pair` becomes a two-cell grid.**
+5. Then, and only then, run **R1** below — with Kai's go-ahead, because it spends credits.
+
+### The grid (proposal — Kai rules on it)
+
+The atom rule and the pair survive unchanged: a **cell** is a slider round, so within one grid
+**no prompt box moves**. v6 just adds two more slider-round axes — **model** and **Variety**.
+
+| Round | Varies | Creates | Answers |
+| --- | --- | --- | --- |
+| **R1 · model × pair** | {v6, v6 Wild} × weirdness {30, 60} | 4 | does Wild beat v6 on our sheets, and does the 30/60 winner flip between models? |
+| **R2 · Variety** | {lowest, Normal, highest} on R1's winner | 3 | does Variety move how far apart the two takes are? |
+| **R3 · Max Mode** | off / on | 2 | consistency against credit cost |
+| **R4 · Personalize** | off / on with a known My Taste | 2 | is Personalize the gate on My Taste? — settles the atom |
+
+**Baseline for every cell unless the round varies it:** Personalize **off**, My Taste written and
+read back, Max Mode off, Variety Normal, Style Influence 75, Vocal Gender unset unless the sheet
+sets it, Duration explicit. **Never v6 Mini.**
+
+**Naming extends, it doesn't change:** `<story>-<cut>-<revision>-<model>-w<weirdness>` with the
+model as `v6` / `wild` / the custom model's short name — e.g. `gpom-cut1-A-wild-w30`. Add
+`-var<step>` / `-max` only in the round that varies them. The revision letter still advances only
+when a prompt box moves.
+
+---
+
 ## Revision log
+
+- **2026-09-10 (v6)** — v6 shipped 2026-09-09 and retired v5.5. §9 added from the v6 research
+  sweep (`docs/misc/2026-09-10-suno-v6-research.md`): what changed on the form, why `load` is now
+  unsafe on v6 (it never sets the model), the five-step re-mapping plan, and the proposed R1–R4
+  grid with the extended naming. **Nothing re-verified live yet.**
 
 - **2026-08-24** — created. Full DOM recon of `suno.com/create` over CDP; five traps found and
   worked around; Gen A of the GPOM narration loaded end-to-end in one command (style 903,

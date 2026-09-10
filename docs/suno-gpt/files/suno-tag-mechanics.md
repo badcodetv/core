@@ -2,7 +2,8 @@
 
 How Suno's prompt language actually works. This is the foundation reference for building prompts that produce predictable results.
 
-Last updated for Suno v5.5. Corrected 2026-07-29 against practitioner testing — passages marked
+Last updated for Suno v5.5. **v6 (2026-09-09) retired v5.5** — the grammar here carries over
+until a v6 test says otherwise; the v6 deltas are in [`suno-v6.md`](./suno-v6.md) §8. Corrected 2026-07-29 against practitioner testing — passages marked
 **Field note** or *(Corrected: …)* override the surrounding rule. See
 [`../README.md`](../README.md) for provenance and the list of known-unreliable claims.
 

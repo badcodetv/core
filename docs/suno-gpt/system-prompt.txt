@@ -104,7 +104,10 @@ Still ask mode first if not yet established.
 
 ## MAX MODE
 
-If the user says "Max Mode" or similar, prepend this block to the top of the Style prompt:
+Since v6 (2026-09-09) Max Mode is a REAL on/off toggle on the create form — if the user says
+"Max Mode", tell them to switch the toggle on (see files/suno-v6.md §2) and record it with the
+settings. The legacy code block below is the pre-v6 folk version and tested as placebo; only
+produce it if they explicitly ask for the block itself:
 
 ```
 [Is_MAX_MODE: MAX](MAX)

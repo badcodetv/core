@@ -75,6 +75,11 @@ covering your own recorded audio into an instrument.
 
 ## 2. Model choice — don't assume the highest number
 
+> 🔴 **Superseded 2026-09-09.** v6 retired v4, v4.5, v5 and v5.5 from the create form. The
+> choice is now **v6 / v6 Wild / v6 Mini** (plus custom models), and the hybrid move below
+> becomes **"hunt in v6 Wild, Cover the winner into v6"**. Read [`suno-v6.md`](./suno-v6.md) §1.
+> What follows is kept as history, and because Cover and Extend still work on old-model songs.
+
 - **v4.5 / 4.5+** — more musically *creative*. More varied instrumentation, more interesting tones,
   different vocalists between generations.
 - **v5 / 5.5** — more *polished* and consistent, but blander, with harsher highs (excess energy
@@ -678,6 +683,9 @@ chorus. This is where a flat AI arrangement gains dynamics.
   gibberish of the same shape produced a comparably different-and-decent result. **The real mechanism
   is token padding** — stapling many extra tags onto a prompt changes the output whether or not they
   mean anything. Different ≠ better. Ship it on request, don't recommend it unprompted.
+  **Since v6 there is also a real Max Mode *toggle*** on the create form ("for consistency across
+  longer songs, and for Covers and Voices") — a different thing from this code block, effect and
+  credit cost untested ([`suno-v6.md`](./suno-v6.md) §2).
 - **Suno's built-in image/video generation** for cover art — poor and expensive.
 - **Remove section / Crop** — no real use case.
 
@@ -701,6 +709,13 @@ lyrics.**
 ---
 
 ## 13. Release notes (verify before relying — this moves fast)
+
+- **2026-09-09 — v6.** Three models (v6 / v6 Wild / v6 Mini), older models retired, a new
+  **Variety** control, a **Personalize** toggle, Max Mode as a real toggle, plain-language editing
+  of an existing song ("change one word or line"), multimodal seeding (audio, image, video, voice
+  memo), timestamp sampling and natural-language mashups. Everything: [`suno-v6.md`](./suno-v6.md).
+- **2026-09-03 — download caps.** Pro 20/month, Premier 60/month, applying to old songs too;
+  commercial use only for songs downloaded within the allowance; watermark removal prohibited.
 
 - **Free-plan output can never be monetised**, even after you upgrade. Never draft anything you might
   release on a free account.

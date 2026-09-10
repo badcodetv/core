@@ -10,6 +10,7 @@ the entry point — this is what it reads.
 | [`system-prompt.txt`](./system-prompt.txt) | Base operating procedure — mode detection, output format, character limits, famous-artist translation, edge cases |
 | [`session-method.md`](./session-method.md) | **How to work, not what is true.** The iteration loop, the three-layer split (sheet / log / rules), diagnose-before-rewording, why boxes grow, mechanical lyric verification, and what counts as evidence. Read before a re-cut session |
 | [`automation.md`](./automation.md) | **Driving the app, not writing for it.** The `suno.com/create` DOM mapped over CDP — selector table, the golden rule (Simple and Advanced both mount, so scope to the Advanced panel), and **five silent traps**: the "Overwrite Styles?" dialog that swaps your Style box for the persona's, the Lexical lyrics editor that collapses to one paragraph, three `[role=dialog]` nodes, a form wiped by navigation, and a Style box that truncates at 1,000 instead of refusing. Plus the operating protocol — **every attempt is a pair at weirdness 30 and 60**, track naming, workspaces, and **never automate downloading** |
+| [`files/suno-v6.md`](./files/suno-v6.md) | 🔑 **v6 (2026-09-09) — read first on any model or control question.** The three models and when to pick which, the new create-form controls (Variety, Personalize, Max Mode, Vocal Gender), **§3 the ladder for fixing one word / one bar / one phrase**, Studio click-paths on v6, new features worth suggesting unbidden, downloads and credits, what happens to our v5.5 back catalogue, and the prioritised test queue. **Day-one evidence — nothing measured yet.** Ledger: [`../misc/2026-09-10-suno-v6-research.md`](../misc/2026-09-10-suno-v6-research.md) |
 | [`files/suno-tag-mechanics.md`](./files/suno-tag-mechanics.md) | The prompt language: hybrid format, information ordering, genre pairing, bracket language, exclude strategy, contamination words |
 | [`files/suno-controls-and-workflows.md`](./files/suno-controls-and-workflows.md) | **The control surface and the platform.** Sliders, model choice, the consistency stack (Voice / custom model / Lyricist), lyric editing, Studio generation craft (**and §8a — Studio 2.0: chat, MIDI, real-time effects, custom plugins**), stems, known failure modes |
 | [`files/suno-studio.md`](./files/suno-studio.md) | **The Studio 2.0 app surface** — project-aware chat, MIDI + musical typing, live recording, cover-in-place, advanced split / remove effects, the effects rack + sidechain + automation, natural-language custom plugins, shortcuts. **Vendor-demo confidence — read its warning.** ⚠ Overlaps §8a of the file above: the two were written independently from the same launch video and are pending a merge |
@@ -64,6 +65,7 @@ here is the artifact.
 | 2026-08-21 | **Our own generations** (Camping duet re-cut, round 9 — a sparse piano that stayed busy, and a `[Build]` gap that survived three denials) | `files/suno-tag-mechanics.md` — adjectives are comparative so give a **rate**; deny the part exists; swap to an instrument that physically cannot do the banned thing; and replace a fighting keyword rather than arguing with it (`[Verse 1 continues]` over `[Build]`) |
 | 2026-08-21 | **Our own generation** (Camping duet re-cut, round 8 — a solo piano turned the whole track pantomime) | `files/suno-tag-mechanics.md` — naming a *form* imports its *texture* (`Chopin nocturne` = busy, not sad); one instrument's texture can flip the register; don't name the genre you're satirising in a mood line; negatives belong in Exclude, positives in Style |
 | 2026-08-20 | **Our own generation** (Camping duet re-cut, round 7 — `[Build]` worked and emptied the section of vocals) | `files/suno-tag-mechanics.md` — a section tag brings its whole genre convention: never put a bar count on a tag you want sung over, and state the exception three ways |
+| 2026-09-10 | **The v6 launch sweep** — 11 launch-day YouTube videos (the 10 Kai supplied + Busy Works Beats' v6-in-Studio video) distilled by 5 agents, a 20-agent Sonnet web sweep, then synthesise → adversarial critique (22 corrections) → revise. 367 findings | `files/suno-v6.md` (new) + the ledger `docs/misc/2026-09-10-suno-v6-research.md` + superseded-banners in `suno-controls-and-workflows.md` §2/§11/§13, `suno-studio.md` §5, `suno-tag-mechanics.md`, `system-prompt.txt` Max Mode + `automation.md` §9 (v6 form, unmapped) |
 | 2026-08-20 | **Our own generation** (Camping duet re-cut — the invented word `BLOUGH`) | `files/lyricist-playbook.md` §6 — the monosyllable respelling ladder, the `-ough` warning, and caps-on-invented-words; sharpens the ALL CAPS entry below |
 
 Re-run the harvest script with a date filter to catch up on anything newer.
@@ -103,8 +105,9 @@ Recorded so nobody re-derives them:
   words are safe. Risk scales with how unfamiliar the token is.
 - **Pipes vs commas in meta-tags** — no measurable difference across controlled testing. Keep the
   pipe as a readability convention only.
-- **"Max Mode"** — almost certainly placebo; a gibberish control block performed comparably. The real
-  effect is token padding, which changes output without improving it.
+- **"Max Mode" as a code block** — almost certainly placebo; a gibberish control block performed comparably. The real
+  effect is token padding, which changes output without improving it. **Not to be confused with the
+  real Max Mode toggle v6 added to the create form** (effect untested — `files/suno-v6.md` §2).
 - **Regional accents** — a detailed Scouse spec produced no accent at all (tested 2026-08-20). Accent
   sits with age words: describable, not summonable. Contrast voices on pitch, texture, delivery mode
   and room instead. **But nationality is real and rides on the *genre* tag** — dropping `UK grime`
@@ -150,7 +153,10 @@ Recorded so nobody re-derives them:
 
 Re-verify before relying on these; they move fast and some are version-pinned:
 
+- **Everything in `files/suno-v6.md`** — written the day after launch from videos and press; the
+  in-app labels are still contested and nothing is measured. Re-sweep ~2026-09-17
 - Model behaviour (v4.5 creative vs v5.5 polished; mumble mode broken on 5.5; Studio better on v5)
+  — **all retired from the create form 2026-09-09**; kept as history and for Cover/Extend on old songs
 - Feature names and locations (Persona was renamed **Voice** in v5.5)
 - **Everything in `files/suno-studio.md`** — two vendor videos, nothing tested by us or by an
   independent practitioner. Suno is shipping Studio fast; assume it has moved again.

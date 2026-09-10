@@ -163,6 +163,12 @@ the warp-marker fix.
 
 ## 5. Getting a specific word sung differently, in the same voice
 
+> 🔑 **Updated 2026-09-09 — read [`suno-v6.md`](./suno-v6.md) §3 first.** v6 added a
+> plain-language edit (attach the finished song in Simple, type "change the word X to Y… keep
+> everything else exactly the same") that two testers heard come back as the same take with only
+> the word changed. It is the new top rung. The ladder below is still the fallback, and still the
+> answer for a word sung *badly* with the text unchanged — which nobody has tested on v6.
+
 The thing we most want. **Studio 2.0 does not do it, and nothing in the update claims to.** What it
 does is put every primitive next to each other for the first time. The honest ladder, best first:
 

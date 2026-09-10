@@ -1,6 +1,6 @@
 ---
 name: suno-automation
-description: Use when DRIVING Suno from code rather than by hand — loading a sheet's prompt boxes into suno.com/create, clicking Create, running the weirdness pair, constraining a track to a target length, filing takes into a workspace, listing what came back, or fixing a Suno automation call that silently did the wrong thing. Triggers on "automate Suno", "load this into Suno", "generate this in Suno", "run the pair", "click create", "make it 30 seconds", "constrain the length", "set the duration", "put this in the gpom-story workspace", "paste the boxes for me", "what takes are in there", "the lyrics went in wrong", "it overwrote my styles", or any request to avoid pasting four boxes by hand. Mechanics only — what to WRITE in the boxes belongs to `suno-prompt`.
+description: Use when DRIVING Suno from code rather than by hand — loading a sheet's prompt boxes into suno.com/create, clicking Create, running the weirdness pair, constraining a track to a target length, filing takes into a workspace, listing what came back, or fixing a Suno automation call that silently did the wrong thing. Triggers on "automate Suno", "load this into Suno", "generate this in Suno", "run the pair", "click create", "make it 30 seconds", "constrain the length", "set the duration", "put this in the gpom-story workspace", "paste the boxes for me", "what takes are in there", "the lyrics went in wrong", "it overwrote my styles", or any request to avoid pasting four boxes by hand; also "mass generate", "run a grid", "try every permutation", "v6 vs Wild", "set the model", "set Variety". Mechanics only — what to WRITE in the boxes belongs to `suno-prompt`.
 ---
 
 # Suno Automation
@@ -30,6 +30,27 @@ protocol and the verified/unverified table. Every workaround in the script exist
 obvious approach produced a plausible-looking wrong result.
 
 🛠 **The tool is [`scripts/suno/suno.mts`](../../../scripts/suno/suno.mts).**
+
+## 🔴 v6 (2026-09-09) — the loader is not safe on v6 yet
+
+v6 retired v5.5 and added form state: a **model** picker that is now an experiment axis (v6 /
+v6 Wild / Mini / custom models), a stepped **Variety** control, a **Personalize** toggle
+(reportedly the switch for My Taste), a **Max Mode** toggle and **Vocal Gender**. Every v6 source
+also shows **Simple / Advanced** tabs, where `formMode()` expects `custom`.
+
+**`load` sets none of these — it doesn't even set the model.** By the *omitting ≠ clearing* law
+below, a run today generates on whatever the form was left on, and every check passes.
+
+So: **no `pair` on v6 until [`automation.md`](../../../docs/suno-gpt/automation.md) §9's
+five-step plan has run** — one no-credit live DOM read, `SunoSpec` gains a **required** `model`
+plus `variety` / `personalize` / `maxMode` / `vocalGender` with read-back, `formMode()` fixed, then
+a **`grid`** command (one atom × many slider cells into one workspace — `pair` becomes a two-cell
+grid). §9 also carries the proposed **R1–R4 grid** and the extended naming
+`<story>-<cut>-<revision>-<model>-w<weirdness>`. What the controls *do* is `suno-prompt`'s side:
+[`suno-v6.md`](../../../docs/suno-gpt/files/suno-v6.md) §2.
+
+⚠️ **Credit cost per v6 Create is unknown** — the "20 credits a pair" below is v5.5-era. Read
+the balance before and after every Create until it's known.
 
 ## Preflight
 
@@ -255,6 +276,10 @@ Style influence **75**, run once at **weirdness 30** and once at **weirdness 60*
 which is **not yet known** — so both always run, and each pair is a data point toward stating it.
 
 Never generate at only one setting. **Record which won and why.**
+
+**On v6 the pair is one row of a grid.** Model and Variety are new slider-round axes — a cell may
+change them and nothing else, and the pair runs inside every model the round tests (R1 is
+{v6, Wild} × {30, 60}). Proposed, awaiting Kai's ruling: `automation.md` §9.
 
 ### 🔑 Timing — narration lands within ±10s of the picture
 
