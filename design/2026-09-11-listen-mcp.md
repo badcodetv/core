@@ -361,7 +361,7 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - [x] done
 - Notes: 2026-09-11 — done. `bash -n` clean, one grep hit inside `logged_in()`, `list` runs (all 8 channels down at the time, so the new pattern is not exercised live; T3 records whether signed-out AI Studio redirects).
 
-### T3: Live map of AI Studio's chat page   [Status: in progress | Model: opus]
+### T3: Live map of AI Studio's chat page   [Status: blocked (every run 403s) | Model: opus]
 - **Scope:** a HUMAN-GATED discovery ticket. (a) Bring up a channel **≥ 2** for listening with
   `./scripts/browser-channel.sh up 2` (or the lowest free channel ≥ 2 per `list`) — never channel 1,
   which is Flow's. If it is not signed in, STOP and ask Kai/Jack to sign that window into **Jack's
@@ -687,3 +687,11 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
   feature."* Conditions: **tell Jack**, and keep the files in one folder if we can choose. The tool
   always runs in **Temporary chat** so conversations aren't kept; uploads land wherever AI Studio
   puts them (recorded in `docs/listening/automation.md` once seen). T3 resumes.
+- **2026-09-11 (T3) — 🔴 BLOCKED: every AI Studio generation is refused with 403.** After the Drive
+  ruling: the upload works (10 s tone → `322 tokens` chip, after a one-time "Start creating with
+  media" Acknowledge), but every run — 3.1 Pro with audio, 3.1 Pro text-only, 3.8 Flash text-only,
+  Temporary chat on and off, after a reload — shows *"An internal error has occurred."*, and the
+  network shows `MakerSuiteService/GenerateContent` → 403 `"The caller does not have permission"`.
+  So it is the account/session, not audio and not Pro. The prompt bar offers "Link a paid API key →
+  Set up billing" (not clicked). Needs a human to try a prompt by hand to tell a browser problem
+  from an account problem. Details: `docs/listening/automation.md` Trap 4.
