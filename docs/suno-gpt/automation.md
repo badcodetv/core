@@ -614,8 +614,78 @@ model `v6`).
 | Can Cover use **v6-wild**? | ✅ **Yes** — `setModel('v6-wild')` read back `v6-wild` with the source still attached; set back to `v6` after | answers `files/suno-v6.md` open question 13 for the create form (not for Remix/Extend) |
 | Does `detachCover` return the form to Custom? | ✅ **Yes** — `detach:ok`; mode custom, no Clear button, Audio Influence unmounted. 🔴 **But the source's words stay:** Style 994, Lyrics 18, Title = the source's title (**custom-leftover**) | cleared by hand afterwards (`fill('')`, `setLyrics('')`, `setTitle('')`) |
 
+### The three commands
+
+All three print JSON (or a plan) on stdout; every failure prints `CODE: message` on stderr and
+exits 1, and callers branch on the code. None of them navigates the Suno tab, and none downloads.
+
+```bash
+npx tsx scripts/suno/suno.mts takes [filter]                             # rows: title, dur, songId
+npx tsx scripts/suno/suno.mts record <songId|id8|title>                  # no credits
+npx tsx scripts/suno/suno.mts explore <spec.json> --round <N> [--yes]    # 20 credits with --yes
+npx tsx scripts/suno/suno.mts narrow <spec.json> <songId|id8|title> --round <N> [--yes]   # 20 with --yes
+```
+
+- **`record <key>`** plays the take in the create page and records the channel's own sink
+  (`badcode_ch<N>`), then writes two files **outside the repo** under `LISTEN_MEDIA_ROOT`
+  (default `/mnt/c/Users/kai/Desktop/suno-recordings`): `<slug>-<id8>.wav` (raw — what Claude
+  measures and hands to `listen_describe`) and `<slug>-<id8>.preview.mp3` (Kai's 8 kHz low-pass —
+  for the human only; 🔴 the filter never touches the raw file). It prints
+  `{ songId, title, durationSec, raw, preview, channel }`. Before recording it checks that the
+  **player's own `/song/<id>` link** is the pick, so the pair's same-titled twin can't be
+  recorded by mistake; it stops itself on `ended` because Suno auto-advances (above); it keeps
+  recording 1.5 s past the end with the player paused, then trims to the player's exact
+  `duration` (stopping at once lost the last ~0.4 s, still in PulseAudio's pipe).
+- **`explore <spec> --round N`** — decision 6 of the loop plan: one **v6** Create at weirdness 30 /
+  Style Influence 75 and one **v6-wild** Create at weirdness 60 / Style Influence 60, **Variety
+  Off**, Max Mode off, titles `<title>-r<N>-v6-w30` / `<title>-r<N>-wild-w60` (title ≤ 30 chars,
+  because `takes` truncates at 48). Without `--yes` it prints the cells and `20 credits (2
+  Creates)` and **never connects to a browser**.
+- **`narrow <spec> <key> --round N`** — decision 7: cover the pick with the spec's (refined)
+  boxes. Without `--yes` it resolves the pick and prints it, the two cells (`-ai75-w30` /
+  `-ai40-w30`, Style Influence 75, Variety Off, on the pick's model read from its title tag) and
+  the cost, and attaches nothing. With `--yes`: attach **by song ID** → prove the source is the
+  pick → write Style, Exclude and Lyrics over whatever the source brought (paragraph count and
+  words checked) → per cell set model, controls, sliders and title, re-check the source is still
+  attached, Create → **always detach**, and print `🔴 FORM LEFT IN COVER MODE` (exit 1) if the
+  detector still reads attached.
+- `--round` is **required** on both credit-spending commands: `create()` returns once any two
+  rows carry the title, so a reused title would "succeed" on an earlier round's takes.
+
+**Error codes**
+
+| Code | Means | Do |
+|---|---|---|
+| `TAKE_NOT_FOUND` | nothing visible matches the key (lists the visible titles) | the take must be in the create page's list — it is never scrolled |
+| `TAKE_AMBIGUOUS` | the key matches several takes (lists id8 + duration) — the normal case for a title, since a Create's two takes share it | pass the song ID (or its first 8 characters) |
+| `TAKE_RENDERING` | the take has no duration yet | wait for it to finish |
+| `PLAY_NOT_MAPPED` | the row's Play control is missing, or the player loaded a different song | re-map this section; don't guess |
+| `CAPTURE_SILENT` | Chrome's sound is not reaching `badcode_ch<N>`, or the recording is silent | `record` already tried moving Chrome's streams once. Otherwise **relaunch the channel** so `flow-chrome.sh` routes it — 🔴 that **loses the loaded create form and the marked tab**: `down <n>`, wait until the port stops answering, then `up <n>` |
+| `WRONG_CHANNEL` | the resolved browser has no Suno tab (e.g. the listen server's AI Studio browser), or the Suno tab is off `/create` | Suno follows only **`flow`-owned** channel locks; give a new browser its first tab with `open-tab` |
+| `INVALID_SPEC` | `narrow`'s pick has no `-v6-`/`-wild-` tag and the spec names no `model` | set `model` |
+
+**One relaunch after 2026-09-11.** A browser launched before `flow-chrome.sh` learned to make
+sinks plays to the default speaker; `record` moves its streams once, and a relaunch fixes it for
+good (at the cost above).
+
+### Verified
+
+| Claim | Status |
+|---|---|
+| `takes` returns a 36-char `songId` per finished row | ✅ 2026-09-11 — 15 rows, 15 distinct ids, matching the rows' `/song/` links |
+| `record` produces both files, not silent, duration = player's | ✅ 2026-09-11 — `870fbab1`: 65.321 s recorded for a 65.321 s take, peak −1.5 dB, form unchanged |
+| `record`'s preview is the right song with no tail of another | ⬜ human listen owed |
+| `explore` dry run spends nothing and never connects | ✅ 2026-09-11 — proven against an unreachable endpoint |
+| `explore --yes` makes 4 takes titled per decision 6 | ⬜ needs Kai's yes (20 credits) |
+| `narrow` dry run prints pick, cells, cost; attaches nothing | ✅ 2026-09-11 |
+| `narrow` attach-by-ID + detector + detach | ✅ 2026-09-11 — rehearsed live without a Create |
+| `narrow --yes` makes 4 covers and ends in Custom | ⬜ needs Kai's yes (20 credits) |
+| `WRONG_CHANNEL` on a browser with no Suno tab | ✅ 2026-09-11 — fresh channel 3 |
+
 ## Revision log
 
+- **2026-09-11 (§10, the commands)** — `record`, `explore` and `narrow` documented with their error
+  codes, the relaunch note and a Verified table (loop plan T12); `takes` now returns song IDs.
 - **2026-09-11 (§10, v6 Cover)** — Cover attach (by song ID via the artwork), detach, the
   three-state detector, Keep Current on a filled form only, and v6-wild in Cover, mapped live
   (loop plan T4b). No Create.

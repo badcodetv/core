@@ -616,7 +616,7 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - [ ] done
 - Notes:
 
-### T12: `automation.md` §10 — the listening loop's mechanics   [Status: pending | Model: sonnet]
+### T12: `automation.md` §10 — the listening loop's mechanics   [Status: done | Model: sonnet]
 - **Scope:** extend the §10 started in T4 with `record` / `explore` / `narrow` usage, the error
   codes, the relaunch-after-T6 note, the no-navigation rule, auto-advance, the Verified table rows
   (from T8–T10 live results), and a revision-log line.
@@ -626,8 +626,8 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - **Validation:** `awk '/^## 10\./,/^## Revision log/' docs/suno-gpt/automation.md | grep -cE '`(record|explore|narrow)'`
   → ≥ 3, and the same section contains `CAPTURE_SILENT`, `WRONG_CHANNEL` and a Verified table.
 - **Depends on:** T8, T9, T10
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — done. §10 gains the three commands' usage, the error-code table (TAKE_*, PLAY_NOT_MAPPED, CAPTURE_SILENT, WRONG_CHANNEL, INVALID_SPEC), the one-relaunch note and a Verified table (✅ where proven live today, ⬜ for the two 20-credit runs and the human preview listen). Revision-log line added. Validation greps pass (backticked command mentions ≥ 3; CAPTURE_SILENT, WRONG_CHANNEL, Verified all present). Update the ⬜ rows after T9/T10's live runs.
 
 ### T13: End-to-end — one real session through the loop   [Status: pending | Model: opus]
 - **Scope:** HUMAN-DRIVEN. **Requires the listen-mcp plan complete** (its T15). With Kai:
