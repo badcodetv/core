@@ -361,7 +361,7 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - [x] done
 - Notes: 2026-09-11 — done. `bash -n` clean, one grep hit inside `logged_in()`, `list` runs (all 8 channels down at the time, so the new pattern is not exercised live; T3 records whether signed-out AI Studio redirects).
 
-### T3: Live map of AI Studio's chat page   [Status: blocked — human sign-in needed | Model: opus]
+### T3: Live map of AI Studio's chat page   [Status: blocked (stop gate 2, Kai ruling needed) | Model: opus]
 - **Scope:** a HUMAN-GATED discovery ticket. (a) Bring up a channel **≥ 2** for listening with
   `./scripts/browser-channel.sh up 2` (or the lowest free channel ≥ 2 per `list`) — never channel 1,
   which is Flow's. If it is not signed in, STOP and ask Kai/Jack to sign that window into **Jack's
@@ -401,6 +401,16 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - **Depends on:** T1, T2
 - [ ] done
 - Notes: 2026-09-11 — (a) done: channel 2 is up (`./scripts/browser-channel.sh up 2`, fresh profile `.flow-profile-9223`) with a tab on AI Studio. It is **signed out**: AI Studio shows its marketing page at `https://aistudio.google.com/welcome` ("Get started") — it does NOT redirect to accounts.google.com. 🔴 **STOPPED at the gate:** someone must sign that window into Jack's Ultra account (`jacktttt330@…`). (b)–(c) not started.
+  2026-09-11 (later) — Jack signed channel 2 in (`jacktttt330@gmail.com`, ULTRA). Mapped live in
+  our own marked tab: new-chat URL (+ `?model=<id>`), model card + 16 model rows (Gemini 3.1 Pro
+  Preview present, not marked Paid; the new-chat default is Gemini 3 Flash Preview, marked Paid),
+  grounding switch (ON by default), temperature, thinking level, hidden file input, prompt box,
+  Run, More actions. 🔴 **Stop gate (2) HIT:** the Temporary chat banner reads verbatim *"Your
+  conversations won't be saved. However, any files you upload will be saved to your Google Drive.
+  Logging policy still applies even in Temporary chat."* User Settings has no save/Drive option.
+  Chats have a per-chat off switch (Temporary chat); uploads do not. Stopped before any upload;
+  `smoke-map.ts`, `studio-dom.ts` and the tone run are not done. Evidence:
+  `docs/listening/automation.md` (partial).
 
 ### T4: `scripts/audio-measure.py`   [Status: done | Model: sonnet]
 - **Scope:** implement per the Interfaces section. Mono input → `channels: 1`,
