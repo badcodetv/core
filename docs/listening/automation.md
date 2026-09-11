@@ -63,7 +63,10 @@ not marked Paid.** Whether it accepts audio is ⬜ (gate).
 Verbatim, from the Temporary chat banner (2026-09-11): *"Your conversations won't be saved.
 However, any files you upload will be saved to your Google Drive. Logging policy still applies even
 in Temporary chat."* No account-level switch was found. So every listen would leave its mp3 in
-**Jack's** Drive. This is the plan's stop gate (2); the ruling is Kai's.
+**Jack's** Drive. This was the plan's stop gate (2). **Ruled 2026-09-11 (Kai): accepted** — it is
+Jack's and Kai's shared workflow and Jack will use the tool himself; tell Jack, and keep the files
+together. The server always opens a **Temporary chat**, so only the audio lands in Drive, never
+the conversation.
 
 ### Trap 2 — Search grounding is on by default
 
