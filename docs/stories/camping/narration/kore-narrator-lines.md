@@ -10,7 +10,10 @@ status: ⬜ extracted and prepared, never rendered
 **Extracted from Jack's 2026-09-09 script.** Every `NARRATOR {FLAT}` line, in film order, nothing
 else. Bob's and Tarquin's lines are separate renders on their own voices.
 
-## 🔑 Render all nine in ONE pass, not nine
+> 🔴 **2026-09-11: the one-pass render (`nell.wav`) stopped mid-word in line 4 at 42.6s.** The
+> advice below is superseded — use [`render-chunks.md`](./render-chunks.md), three small renders.
+
+## ~~Render all nine in ONE pass, not nine~~ (superseded)
 
 ⚠️ **~1 in 10 generations shifts accent or pacing on identical inputs.** Nine separate renders is
 **nine chances to get a different narrator**; one pass is one voice state across the whole film.

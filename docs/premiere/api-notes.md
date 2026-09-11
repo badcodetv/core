@@ -1357,12 +1357,80 @@ and output-directory permissions — neither of which is wrong.
 
 1. **Just read the doubled path.** `ls` the frames directory — the file is sitting there. This is
    the whole fix in practice.
-2. **Pass an `outPath` with no extension**, so the appended one lands correctly.
+2. ~~**Pass an `outPath` with no extension**, so the appended one lands correctly.~~
+   🔴 **Probably does not work** `[2026-09-10]`: raw `ppro.Exporter.exportSequenceFrame` with an
+   extensionless filename (`"02"`) throws `Internal error : File Format is not supported` — the
+   extension is how it picks the format, and it then appends another one anyway. The typed tool
+   with an extensionless `outPath` is untested.
+3. 🔑 **Many frames: one eval, no waits** `[2026-09-10, camping, 35 frames in seconds]`. The raw
+   exporter in a loop, filename `"NN.png"`, then read the `NN.png.png` files it writes. The
+   typed tool costs 120s per frame while the bug stands; this costs nothing:
+
+   ```js
+   const seq = await helpers.activeSequence(await helpers.activeProject());
+   for (const [i, t] of times.entries())
+     await ppro.Exporter.exportSequenceFrame(seq, helpers.secondsToTick(t), `${i}.png`, winDir, 480, 270);
+   ```
+
+   `winDir` must be a **Windows** path — the raw API gets no WSL translation. It resolves before
+   the file is complete (see `exportSequenceFrame` returns `true`…), so `ls` before reading.
 
 ⚠️ **Do not conclude a frame export failed from the error alone.** Check the directory first.
 Two exports were reported as failures here and both had rendered correctly.
 
 *(The tool's own description says `waitForStableFile` guards this; it guards the wrong filename.)*
+
+---
+
+## Cutting pieces out of one long audio file — in-point MOVES the clip `[observed 2026-09-10]`
+
+Built camping's `0 synced` narration: 34 pieces cut from three long TTS renders, one eval.
+
+- **`createSetInPointAction` on a timeline audio clip shifts its START later by the in-point.** A
+  render dropped at 0.208s with in-point set to 0.24 ended up at 0.448s. Premiere keeps source
+  time locked to timeline time — it trims the head, it does not slide the clip.
+- **`createSetOutPointAction` keeps the start** and moves the end — that one behaves like a trim
+  from the tail. Same on video (V1 clips trimmed this way held their starts exactly).
+- **Recipe that worked for all 34:** overwrite the whole file at the target time `t` → set in and
+  out in one transaction → find the item again at `t + in` → `createMoveAction(-in)`. Place in
+  **forward time order per track**, because the overwrite briefly covers the full file length and
+  would clobber anything later on that track.
+- **Do not overwrite at `t − in` instead** to save the move: the full-length overwrite then reaches
+  *backwards* over pieces already placed on the same track.
+- `createOverwriteItemAction(item, time, 0, audioTrack)` with an audio-only item and an
+  `audioTrack` index one past the last track **creates the track** (A4 appeared on demand).
+- `TrackItem` has `getSpeed()` but **no speed setter and no frame-hold action** — a clip cannot be
+  made longer than its media from the API.
+
+### 🔴 Superseded 2026-09-11 — do not cut narration this way at all
+
+That build **sounded wrong and put words in the wrong place**: it split at every ≥0.45s pause
+(commas included) and one mislabelled piece played the wrong line over the wrong shot. Rebuilt the
+same day, and the method that works is **don't trim in Premiere**:
+
+1. Cut **one WAV per speaker block** outside Premiere (Python `wave`, no re-encode), at word
+   boundaries from faster-whisper word timestamps, keeping every internal pause.
+2. Place each file **whole** with `premiere_insert_clip` `mode: "overwrite"`, no in/out. The bridge's
+   FIFO queue makes a batch of non-overlapping inserts safe to send at once.
+
+Ledger with the full method: `docs/stories/camping/narration/timeline-build.md`.
+
+**Also learned 2026-09-11:**
+
+- **An audio clip's end is floored to the sequence frame grid.** A 20.29s WAV at 24fps lands as
+  20.25s (`outPoint` 20.25). Up to one frame lost from the tail — leave ≥0.1s of silent handle.
+- 🔴 **`createOverwriteItemAction` from raw eval threw `Invalid parameter`** with an item found by
+  walking `root.getItems()` → `FolderItem.cast(bin).getItems()` → `ClipProjectItem.cast(k)`. The
+  typed `premiere_insert_clip` (which uses `resolveProjectItem`) worked on the same file first time.
+  Cause not isolated — use the typed tool.
+- **Moving a V1 clip does not move its A1 audio**, even for clips that came in with sound. Move both
+  tracks, latest clip first, then compare starts.
+- **`Sequence.createCloneAction()` works as a one-call backup** — inside a transaction it adds
+  `<name> Copy` and leaves the original active.
+- **Community report (unverified here):** `createSetOutPointAction` treats its value as measured
+  from the track item's *sequence* start, not the source start
+  ([Adobe community](https://community.adobe.com/questions-729/uxp-premiere-pro-how-to-slip-edit-a-videocliptrackitem-razor-blade-equivalent-1624762)).
+  One more reason never to cut narration with in/out points.
 
 ---
 
