@@ -402,7 +402,7 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - [ ] done
 - Notes:
 
-### T4: `scripts/audio-measure.py`   [Status: pending | Model: sonnet]
+### T4: `scripts/audio-measure.py`   [Status: done | Model: sonnet]
 - **Scope:** implement per the Interfaces section. Mono input → `channels: 1`,
   `stereoCorrelation: null`, `sideToMidDb: null`. Digital silence → loudness fields null (ebur128
   prints `-inf`/`-70`; map `-inf` and values ≤ −70 to null), tempo confidence `none`.
@@ -421,8 +421,8 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - **Validation:** `python3 -m unittest scripts/test_audio_measure.py -v` → all pass;
   `python3 scripts/audio-measure.py <any wav>` prints valid JSON.
 - **Depends on:** —
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — done, 6/6 tests. Deviation: a 10 ms windowed sine click is too faint for librosa's median onset envelope (fewer than four beats, confidence `none`), so the test uses a 20 ms decaying noise burst; on that, both detectors agree and confidence comes out `high`, not the `unverified` the plan expected — the trusted path IS exercised.
 
 ### T5: `prepare.ts`   [Status: pending | Model: sonnet]
 - **Scope:** implement per Interfaces. `toLinuxPath` handles `X:\…` and `X:/…` (lower-cases the
