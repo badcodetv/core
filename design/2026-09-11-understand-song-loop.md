@@ -458,7 +458,7 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - [x] done
 - Notes: 2026-09-11 — done. `bash -n` clean; `up 3` → exactly one `badcode_ch3`; a repeat `up 3` refused and still one sink; `down 3` clean; modules 26/27 unloaded afterwards. The plan's idea of reading PULSE_SINK from `/proc/<pid>/environ` cannot work (Chrome blanks its environ for its process title), so routing was proven by playing a 4 s tone at 0.02 gain in a channel-3 tab: the stream landed on `badcode_ch3` and the loopback carried it to RDPSink. **Human confirmation:** Kai reported hearing "a noise in my headphone" at that moment — taken as the one-time audibility check. Known edge: if a sink exists but its loopback was unloaded by hand, the script does not restore the loopback.
 
-### T7: `takes` returns song IDs; `findTake`   [Status: pending | Model: sonnet]
+### T7: `takes` returns song IDs; `findTake`   [Status: done | Model: sonnet]
 - **Scope:** extend `listTakes` (`suno.mts:1130-1148`) to read each row's song ID with the T4
   selector and return `Take` (`take-row.mts`). Add
   `export async function findTake(page, key): Promise<Take>` using `matchTakes`, which throws
@@ -476,8 +476,8 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - **Validation:** `npx tsx scripts/suno/suno.mts takes` → JSON rows with 36-char `songId`.
   `npx vitest run --dir scripts` still passes.
 - **Depends on:** T4, T5
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — done. `takes` on the live page: 15 rows, 15 distinct 36-char song IDs, matching the rows' `/song/` links and the Cover picker's artwork (the human paste-into-a-browser check is still open, cheap, and not blocking). `resolveEndpoint` now skips any lock whose owner isn't `flow` (proven with a fake `listen` lock → stayed on 9222; a `flow` lock → followed). **Behaviour change:** `connect()` no longer opens a Suno tab in a browser that has none — it throws `WRONG_CHANNEL` (proven on a fresh channel 3) and points at `open-tab`; `requireCreate(page)` throws it for a Suno tab off /create. Also fixed: `listTakes` kept " V5.5 Spok" in titles because v6 prints the model tag in capitals (split is now case-insensitive). camping/cover-ab/style-ab still read title/dur only; their typecheck errors under a strict scratch config are pre-existing (`verify()` is `unknown`, `cover-variations.mts` is missing).
 
 ### T8: `record` command   [Status: pending | Model: opus]
 - **Scope:** `record <key>`. The capture module is loaded with a **dynamic `import()` inside this

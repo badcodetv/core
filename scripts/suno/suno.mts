@@ -21,7 +21,14 @@
 import { chromium, type Browser, type Page } from 'playwright'
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs'
 // take-row.mts is the pure half and imports nothing from here (a two-way import is an init cycle).
-import { exploreCells, modelTag } from './take-row.mts'
+import {
+  exploreCells,
+  matchTakes,
+  modelTag,
+  SEL_SELECT_CLIP,
+  SEL_SONG_LINK,
+  type Take,
+} from './take-row.mts'
 
 /**
  * CHANNELS — one browser per Claude session (2026-08-26). Suno shares its session's Flow
@@ -40,7 +47,12 @@ function resolveEndpoint(): string {
     for (const f of readdirSync(dir).sort()) {
       const m = /^(\d+)\.lock$/.exec(f)
       if (!m) continue
-      const pid = Number(readFileSync(new URL(f, dir), 'utf8').trim().split(/\s+/)[0])
+      const [pidRaw, owner] = readFileSync(new URL(f, dir), 'utf8').trim().split(/\s+/)
+      // 🔴 Only a FLOW session's lock names Suno's browser. The listen server holds its own lock
+      //    (owner `listen`) on the AI Studio browser; following that would drive Suno in Jack's
+      //    AI Studio window. (Loop plan T7, 2026-09-11.)
+      if (owner !== 'flow') continue
+      const pid = Number(pidRaw)
       // Signal 0: EPERM means it exists but is another user's — still alive.
       let alive = false
       try {
@@ -219,11 +231,21 @@ export async function connect(): Promise<{ browser: Browser; page: Page }> {
     )
   }
 
-  const page = await ctx.newPage()
-  await page.goto(CREATE_URL, { waitUntil: 'domcontentloaded' })
-  await page.waitForTimeout(4000)
-  await page.evaluate(`sessionStorage.setItem(${JSON.stringify(TAB_MARK)}, '1')`)
-  return { browser, page }
+  // 🔴 No Suno tab at all means this is probably not Suno's browser (e.g. the listen server's AI
+  //    Studio one). Opening a create tab here would drive Suno in the wrong account, so stop.
+  //    `open-tab` is the deliberate way to give a browser its first Suno tab. (Loop plan T7.)
+  await browser.close()
+  throw new Error(
+    `WRONG_CHANNEL: the browser on ${ENDPOINT} has no suno.com tab — it may not be Suno's browser.\n` +
+      '   If it IS the right browser, open one first: npx tsx scripts/suno/suno.mts open-tab',
+  )
+}
+
+/** Commands that need the create page call this; a Suno tab elsewhere is the wrong place. */
+export function requireCreate(page: Page): void {
+  if (!page.url().includes('suno.com/create')) {
+    throw new Error(`WRONG_CHANNEL: the Suno tab is on ${page.url()}, not suno.com/create — never navigate it from code (it wipes the form)`)
+  }
 }
 
 /** Every open tab, flagged with whether it is the one this tooling drives. */
@@ -1128,25 +1150,55 @@ export async function ensureClipList(page: Page): Promise<string> {
   return `restored:${clicked}`
 }
 
-/** Read the clip rows back: title + duration. Rendering clips report a null duration. */
-export async function listTakes(page: Page, filter = '') {
+/**
+ * Read the clip rows back: title, duration and song ID. Rendering clips report a null duration.
+ * The song ID is the row's `/song/<uuid>` link (mapped live 2026-09-11, automation.md §10) — the
+ * only thing that tells the two same-titled takes of one Create apart.
+ */
+export async function listTakes(page: Page, filter = ''): Promise<Take[]> {
   await ensureClipList(page)
   return ev(
     page,
-    `return [...document.querySelectorAll('[aria-label="Select clip"]')].map(sel => {
+    `return [...document.querySelectorAll(${JSON.stringify(SEL_SELECT_CLIP)})].map(sel => {
        let n = sel;
        for (let i = 0; i < 9 && n; i++, n = n.parentElement) {
          const t = c(n.innerText);
          if (t.length > 12) {
            const dur = (t.match(/\\b(\\d+:\\d\\d)\\b/) || [])[1] || null;
-           const title = t.replace(/^\\d+:\\d\\d\\s*/, '').split(/\\s+v\\d|\\s{2,}/)[0].slice(0, 48);
-           return { title, dur };
+           const title = t.replace(/^\\d+:\\d\\d\\s*/, '').split(/\\s+v\\d|\\s{2,}/i)[0].slice(0, 48); // /i: v6 prints the tag as "V5.5"
+           // Climb to the row that holds the song link, but never past a node holding a second
+           // row — that would be the list, and its first link belongs to another take.
+           let r = n;
+           for (let j = 0; j < 6 && r && !r.querySelector(${JSON.stringify(SEL_SONG_LINK)}); j++) r = r.parentElement;
+           const own = r && r.querySelectorAll(${JSON.stringify(SEL_SELECT_CLIP)}).length === 1 ? r.querySelector(${JSON.stringify(SEL_SONG_LINK)}) : null;
+           const m = own ? /\\/song\\/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/i.exec(own.getAttribute('href') || '') : null;
+           return { title, dur, songId: m ? m[1].toLowerCase() : null };
          }
        }
        return null;
      }).filter(x => x && (!a[0] || x.title.toLowerCase().includes(String(a[0]).toLowerCase())));`,
     filter,
-  )
+  ) as Promise<Take[]>
+}
+
+/**
+ * Resolve a key (full song ID, its first 8 characters, or a title) to exactly one finished take on
+ * the create page, or throw a CODE: message the caller can branch on.
+ */
+export async function findTake(page: Page, key: string): Promise<Take> {
+  const takes = await listTakes(page)
+  const hits = matchTakes(takes, key)
+  if (hits.length === 0) {
+    const visible = [...new Set(takes.map((t) => t.title))].slice(0, 20).join(' · ')
+    throw new Error(`TAKE_NOT_FOUND: nothing on the create page matches "${key}". Visible: ${visible || '(no rows)'}`)
+  }
+  if (hits.length > 1) {
+    const list = hits.map((t) => `${t.songId?.slice(0, 8) ?? '?'} (${t.dur ?? 'rendering'}) ${t.title}`).join(' · ')
+    throw new Error(`TAKE_AMBIGUOUS: "${key}" matches ${hits.length} takes — use a song id: ${list}`)
+  }
+  const take = hits[0]!
+  if (!take.dur) throw new Error(`TAKE_RENDERING: "${take.title}" has no duration yet — it is still generating`)
+  return take
 }
 
 /**
