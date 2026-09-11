@@ -326,7 +326,7 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 
 ## Tickets
 
-### T1: Scaffold `@badcode/listen-mcp` and expose Flow's helpers   [Status: pending | Model: sonnet]
+### T1: Scaffold `@badcode/listen-mcp` and expose Flow's helpers   [Status: done | Model: sonnet]
 - **Scope:** add the three sub-path exports to `packages/flow-mcp/package.json`; create the package
   skeleton (`package.json`, `tsconfig.json`, `src/version.ts`, `src/version.test.ts` asserting
   `NAME === 'badcode-listen'`); write `src/types.ts` with every type in the Interfaces section
@@ -340,8 +340,8 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - **Validation:** `npm install` → exit 0; `npm run typecheck -w @badcode/listen-mcp` → exit 0;
   `npm test -w @badcode/listen-mcp` → 1 passing; `npm test -w @badcode/flow-mcp` → all pass.
 - **Depends on:** —
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — done. The root tsconfig's `@badcode/*` path alias maps sub-paths wrongly (`packages/flow-mcp/channel/src`), so TS falls through to the package `exports`; typecheck and a tsx runtime import both confirmed.
 
 ### T2: Channel script recognises AI Studio as signed in   [Status: pending | Model: sonnet]
 - **Scope:** in `scripts/browser-channel.sh` `logged_in()` (`:50-57`) extend the "yes" regex to
