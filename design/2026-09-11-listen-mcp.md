@@ -343,7 +343,7 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - [x] done
 - Notes: 2026-09-11 — done. The root tsconfig's `@badcode/*` path alias maps sub-paths wrongly (`packages/flow-mcp/channel/src`), so TS falls through to the package `exports`; typecheck and a tsx runtime import both confirmed.
 
-### T2: Channel script recognises AI Studio as signed in   [Status: pending | Model: sonnet]
+### T2: Channel script recognises AI Studio as signed in   [Status: done | Model: sonnet]
 - **Scope:** in `scripts/browser-channel.sh` `logged_in()` (`:50-57`) extend the "yes" regex to
   `labs\.google/fx/tools/flow|suno\.com|aistudio\.google\.com`. Keep the `accounts.google.com`
   "no" check first (a sign-in redirect must still win).
@@ -358,8 +358,8 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
   signed-out state stays on `aistudio.google.com` rather than redirecting, record that in T3 — the
   script's `yes` for such a tab would then be wrong and `listen_status` is the authority.)
 - **Depends on:** —
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — done. `bash -n` clean, one grep hit inside `logged_in()`, `list` runs (all 8 channels down at the time, so the new pattern is not exercised live; T3 records whether signed-out AI Studio redirects).
 
 ### T3: Live map of AI Studio's chat page   [Status: pending | Model: opus]
 - **Scope:** a HUMAN-GATED discovery ticket. (a) Bring up a channel **≥ 2** for listening with

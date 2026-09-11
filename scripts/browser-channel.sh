@@ -52,7 +52,7 @@ logged_in() {
   tabs="$(curl -sf --max-time 2 "http://localhost:$(port_for "$1")/json/list" 2>/dev/null || true)"
   [ -z "$tabs" ] && { echo unknown; return; }
   if echo "$tabs" | grep -qE 'accounts\.google\.com|/signin'; then echo no
-  elif echo "$tabs" | grep -qE 'labs\.google/fx/tools/flow|suno\.com'; then echo yes
+  elif echo "$tabs" | grep -qE 'labs\.google/fx/tools/flow|suno\.com|aistudio\.google\.com'; then echo yes
   else echo unknown; fi
 }
 
