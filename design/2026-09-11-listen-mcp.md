@@ -361,7 +361,7 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - [x] done
 - Notes: 2026-09-11 — done. `bash -n` clean, one grep hit inside `logged_in()`, `list` runs (all 8 channels down at the time, so the new pattern is not exercised live; T3 records whether signed-out AI Studio redirects).
 
-### T3: Live map of AI Studio's chat page   [Status: pending | Model: opus]
+### T3: Live map of AI Studio's chat page   [Status: blocked — human sign-in needed | Model: opus]
 - **Scope:** a HUMAN-GATED discovery ticket. (a) Bring up a channel **≥ 2** for listening with
   `./scripts/browser-channel.sh up 2` (or the lowest free channel ≥ 2 per `list`) — never channel 1,
   which is Flow's. If it is not signed in, STOP and ask Kai/Jack to sign that window into **Jack's
@@ -400,7 +400,7 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
   for every selector constant in `studio-dom.ts`.
 - **Depends on:** T1, T2
 - [ ] done
-- Notes:
+- Notes: 2026-09-11 — (a) done: channel 2 is up (`./scripts/browser-channel.sh up 2`, fresh profile `.flow-profile-9223`) with a tab on AI Studio. It is **signed out**: AI Studio shows its marketing page at `https://aistudio.google.com/welcome` ("Get started") — it does NOT redirect to accounts.google.com. 🔴 **STOPPED at the gate:** someone must sign that window into Jack's Ultra account (`jacktttt330@…`). (b)–(c) not started.
 
 ### T4: `scripts/audio-measure.py`   [Status: done | Model: sonnet]
 - **Scope:** implement per the Interfaces section. Mono input → `channels: 1`,
@@ -657,3 +657,18 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 
 ## Discovered Issues Log
 (appended by executors during implementation)
+
+- **2026-09-11 (T3, gate) — AI Studio's signed-out state stays on `aistudio.google.com`.** A fresh
+  profile lands on `https://aistudio.google.com/welcome` (marketing page, "Get started"), not an
+  accounts.google.com redirect. So `browser-channel.sh`'s T2 pattern reports `LOGGED_IN=yes` for a
+  signed-out AI Studio tab (seen: channel 2 `yes` while signed out). As T2 anticipated,
+  `listen_status` is the authority; T11's `classifyPage` must treat `/welcome` as `signed-out`
+  (confirm once signed in that the signed-in app never uses `/welcome`).
+- **2026-09-11 — Flow moved to `flow.google.com`.** Channel 1's tabs are `https://flow.google.com/`,
+  not `labs.google/fx/tools/flow`. Two consequences: (1) Architecture decision 3 / `isListenCandidate`
+  must also treat a `flow.google.com` tab as a Flow browser, or listen could claim Flow's browser
+  (fix in T13, noted here as a scope-safety deviation); (2) `browser-channel.sh logged_in()` reads
+  channel 1 as `no` although it is signed in — its `accounts\.google\.com` "no" check matches the
+  `accounts.google.com/RotateCookiesPage` **iframe** that flow.google.com embeds, and the Flow "yes"
+  pattern no longer matches. Out of this plan's scope; owed a small fix (match only `type: page`
+  targets, add `flow\.google\.com`).
