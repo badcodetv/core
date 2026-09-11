@@ -73,6 +73,43 @@ if [ -z "$CHROME" ]; then
   exit 1
 fi
 
+# AUDIO (2026-09-11). Each channel plays into its own virtual speaker, so the listening loop can
+# record exactly what THIS Chrome plays (`parec`/ffmpeg on badcode_ch<N>.monitor) without spending
+# a Suno download and without catching another channel's sound. A loopback copies that speaker to
+# the default one, so live listening is unchanged.
+#
+# 🔴 Every PulseAudio step is best-effort: if pactl is missing or the WSLg audio server is not
+# ready, Chrome launches exactly as it always has. PULSE_SINK is set ONLY once the sink is
+# confirmed present — naming a sink that does not exist can leave Chrome with no audio at all.
+# Runs after the port-refusal check above and skips if the sink already exists, so a repeat
+# launch never stacks a second sink.
+CH=$(( PORT - 9221 ))
+SINK="badcode_ch$CH"
+has_sink() {
+  local sinks
+  sinks="$(pactl list short sinks 2>/dev/null)" || return 1
+  awk -v s="$SINK" '$2 == s { found = 1 } END { exit !found }' <<<"$sinks"
+}
+if ! command -v pactl >/dev/null 2>&1; then
+  echo "warning: pactl not found — launching without a per-channel audio sink (recording unavailable)." >&2
+elif ! pactl info >/dev/null 2>&1; then
+  echo "warning: PulseAudio not reachable — launching without a per-channel audio sink (recording unavailable)." >&2
+else
+  if ! has_sink; then
+    if pactl load-module module-null-sink sink_name="$SINK" \
+         sink_properties=device.description="BadCode_channel_$CH" >/dev/null 2>&1; then
+      pactl load-module module-loopback source="$SINK.monitor" sink=@DEFAULT_SINK@ latency_msec=60 >/dev/null 2>&1 \
+        || echo "warning: loaded $SINK but its loopback failed — this channel will record but not be audible." >&2
+    else
+      echo "warning: could not create audio sink $SINK — launching without it (recording unavailable)." >&2
+    fi
+  fi
+  if has_sink; then
+    export PULSE_SINK="$SINK"
+    echo "Audio sink: $SINK (record from $SINK.monitor)"
+  fi
+fi
+
 echo "Launching: $CHROME"
 echo "CDP port:  $PORT    profile: $PROFILE"
 if [ "$PORT" != "9222" ]; then

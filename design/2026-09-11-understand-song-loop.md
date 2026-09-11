@@ -433,7 +433,7 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - [ ] done
 - Notes:
 
-### T6: `flow-chrome.sh` routes each channel's sound through its own sink   [Status: pending | Model: sonnet]
+### T6: `flow-chrome.sh` routes each channel's sound through its own sink   [Status: done | Model: sonnet]
 - **Scope:** before launching Chrome, compute `CH=$((PORT-9221))` and `SINK=badcode_ch$CH`. If
   `pactl` exists and `$SINK` is not in `pactl list short sinks`, load
   `module-null-sink sink_name=$SINK` and
@@ -455,8 +455,8 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
   `./scripts/browser-channel.sh up 3 && pactl list short sinks | grep -c badcode_ch3` → `1`.
   `./scripts/browser-channel.sh down 3`.
 - **Depends on:** —
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — done. `bash -n` clean; `up 3` → exactly one `badcode_ch3`; a repeat `up 3` refused and still one sink; `down 3` clean; modules 26/27 unloaded afterwards. The plan's idea of reading PULSE_SINK from `/proc/<pid>/environ` cannot work (Chrome blanks its environ for its process title), so routing was proven by playing a 4 s tone at 0.02 gain in a channel-3 tab: the stream landed on `badcode_ch3` and the loopback carried it to RDPSink. **Human confirmation:** Kai reported hearing "a noise in my headphone" at that moment — taken as the one-time audibility check. Known edge: if a sink exists but its loopback was unloaded by hand, the script does not restore the loopback.
 
 ### T7: `takes` returns song IDs; `findTake`   [Status: pending | Model: sonnet]
 - **Scope:** extend `listTakes` (`suno.mts:1130-1148`) to read each row's song ID with the T4
