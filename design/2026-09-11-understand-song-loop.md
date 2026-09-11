@@ -323,7 +323,7 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - [x] done
 - Notes: 2026-09-11 — done. `npx vitest run --dir scripts` → 1 file, 14 tests; root `npm test` exit 0 across all 14 workspaces. The lock gained only the root vitest devDependency. `durToSeconds` throws on anything not M:SS / H:MM:SS.
 
-### T3: `capture.ts`   [Status: pending | Model: sonnet]
+### T3: `capture.ts`   [Status: done | Model: sonnet]
 - **Scope:** implement per Interfaces. `pactl` and `ffmpeg` are spawned with `execFile` (no shell).
   The pure parsers are unit-tested against captured real outputs (paste real `pactl list short sinks`
   and ffmpeg stderr samples into the test as fixtures). Add the `./capture` export.
@@ -351,8 +351,8 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - **Validation:** `npm test -w @badcode/listen-mcp` → all pass; `npm run typecheck -w @badcode/listen-mcp` → exit 0;
   `LISTEN_PULSE_IT=1 npm test -w @badcode/listen-mcp` → the integration test passes too.
 - **Depends on:** listen-mcp plan T1 (the package exists)
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — done: 97 unit tests pass (5 opt-in skipped), typecheck clean, `LISTEN_PULSE_IT=1` → 102/102 (twice); nothing left loaded. Deviations: (1) the plan's ffmpeg command could not pass its own 3 s start gate on WSLg PulseAudio 17 (no output file for ~4 s) — `-fragment_size 4096` and `-flush_packets 1` added; (2) an idle null sink delivers ~2 s blocks, so on a loopback-less sink the gate opens at 2.0–2.9 s and sound lands ~2 s in (firstSoundAt + trim remove it); `startRecording` takes an optional `{ startTimeoutMs }`; (3) ffmpeg's WAV header is 78 bytes, so the gate parses the RIFF chunks instead of assuming 44; (4) `startRecording` deletes a leftover `outWav` first. `ensureSink` on an existing sink returns `moduleIds: []` so a caller never unloads a sink it didn't create.
 
 ### T4: Live map — Play control, song ID and player on the create page   [Status: done | Model: opus]
 - **Scope:** HUMAN-GATED if the Suno channel is signed out (stop and ask). Spends no credits. With
