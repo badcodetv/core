@@ -515,7 +515,7 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - [x] done
 - Notes: 2026-09-11 — done, 12 tests. A token's own fraction is kept at its precision; otherwise shifted times round to whole seconds (so a fractional range start never prints a decimal the answer didn't have).
 
-### T10: `ledger.ts`   [Status: pending | Model: sonnet]
+### T10: `ledger.ts`   [Status: done | Model: sonnet]
 - **Scope:** implement per Interfaces and the Ledger file format. Slug: lower-case source name
   without extension, non-alphanumerics → `-`, collapsed, max 60 chars. Range label uses
   `formatTime` and an en dash. Never overwrite: append `-2`, `-3`… Use UTC in `at` and in the file
@@ -528,8 +528,8 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - **TDD:** yes
 - **Validation:** `npm test -w @badcode/listen-mcp` → all pass.
 - **Depends on:** T1 (types), T9
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — done, 6 tests. `sha256` is JSON-quoted too (the format example showed it bare, but the rule says every string value is quoted and every value must round-trip). Files are created with the `wx` flag, so two concurrent writers cannot clobber each other either.
 
 ### T11: `studio-dom.ts` classifiers   [Status: pending | Model: sonnet]
 - **Scope:** add pure functions over data the client will scrape: `classifyPage({ url, texts })`
