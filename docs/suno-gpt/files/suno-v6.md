@@ -96,7 +96,7 @@ Most of it is the form we know. What is **new or changed**:
 | **Model** | top of the form; also per track in Studio, in Studio chat, and in the Remix dialog | v6 / v6 Wild / v6 Mini / your custom models | ⬜ | picks the engine; v5.5 is gone | tested |
 | **Simple / Advanced** tabs | top | — | — | every v6 source says **Advanced**, none shows a "Custom" tab; Audio and Cover may now be *post-upload modes* (`Edit vocals` / `Edit instruments` / `Cover`) rather than tabs | tested (tabs) / untested (the rename) |
 | **Add** (the "+") | Simple | Audio · Image · Video · Voice · playlist · styles from your library | — | seeds the song from media. **A song attached here + an instruction = an EDIT of that song** (§3) | tested |
-| **Variety** 🆕 | More Options, **only with a v6-family model** | named steps, low → high: *Exact style* / "Clips use the same style" · **Normal** · *Balanced variety* · *Distinct styles* · **Unreasonably varied** (order assembled from garbled captions) | **Normal** (3 agree) | how different the **two takes of one Create** are from each other — variety *between* the pair, not within a song. One pro tester: "didn't seem to work for me." | tested (labels, default) / untested (effect) |
+| **Variety** 🆕 | More Options, **only with a v6-family model** | named steps, low → high: *Exact style* / "Clips use the same style" · **Normal** · *Balanced variety* · *Distinct styles* · **Unreasonably varied** (order assembled from garbled captions) | **Normal** (3 agree) | how different the **two takes of one Create** are from each other — variety *between* the pair, not within a song. **Mechanism (vendor, 2026-09-11):** Suno's v6 FAQ says Variety works by "adjusting and updating your style prompts… reduce the Variety slider to 0" to keep control ([help.suno.com/en/articles/13924481](https://help.suno.com/en/articles/13924481)) — so anything above **Off** lets Suno rewrite the Style box. One pro tester: "didn't seem to work for me." | tested (labels, default) / vendor (rewrites the Style box) / untested (audible effect) |
 | **Personalize** 🆕 | next to Variety | on / off | off (one account) | help text: "**Make variety match your taste**". Written evidence says it is "a Personalize toggle labelled **My Taste**" — i.e. the first create-form switch for My Taste. **If true, My Taste only bites when it is on.** 🔴 Unconfirmed live — see §12 test 4 | tested (label) / reported (the My Taste link) |
 | **Max Mode** | Advanced, near Variety | on / off | ⬜ | now a **real toggle**, not the viral code block (which remains placebo). Vendor-adjacent copy: "for consistency across longer songs, and for Covers and Voices". Credit cost **unknown** | tested (exists) / reported (effect) |
 | **Vocal Gender** | Advanced | Male / Female (others unknown) | ⬜ | pins the vocalist's gender; leave unset when a Voice supplies it | tested |
@@ -104,7 +104,7 @@ Most of it is the form we know. What is **new or changed**:
 | Audio Influence | More Options, **only with audio or a Voice attached** | 0–100 | ⬜ | unchanged — still the cheapest proof nothing is attached | tested |
 | Duration | Advanced | Auto / Custom | ⬜ | unchanged — but **v6 on Auto runs longer than v5.5 did in 5 of 7 genres** (folk 3:34 vs 2:39). Always set it | tested |
 | Limits | — | Simple 3,000 · Style 1,000 · Studio prompt 1,000 · max **8 minutes** per generation on all three models | — | Lyrics cap not re-checked | tested / vendor |
-| Create | bottom | — | — | still two takes per Create (implied by Variety's copy, nobody counted). Generation is **much faster** — a queue of six finished "almost instantly" | tested |
+| Create | bottom | — | — | still **two takes per Create** — Suno's v6 FAQ: "Each time you generate, you make two songs with a total cost of 10 credits." ([help.suno.com/en/articles/13924481](https://help.suno.com/en/articles/13924481), read 2026-09-11). Generation is **much faster** — a queue of six finished "almost instantly" | vendor (two takes) / tested (speed) |
 
 **Stale strings to ignore:** the Voice area still says "V5.5 powers…", and the Voices help page
 still says "Confirm that model v5.5 is selected". Both predate v6 — Voice and custom models are
@@ -229,7 +229,10 @@ For **problem D**, and for B when rungs 1–2 fail. A **fresh performance**, not
   with baked-in processing.
 - **Cover the whole song on v6** — an *upgrade* path, "pretty similar", not a fix (§10).
 - **Remaster** (⋯ → Create → Remaster) claims to keep "structure, lyrics, melody and vocal
-  performance" — vendor snippet only, v6 target unconfirmed.
+  performance" — vendor snippet only, v6 target unconfirmed. Three levels (vendor,
+  [help.suno.com/en/articles/8105281](https://help.suno.com/en/articles/8105281), read
+  2026-09-11): **Subtle** "very close to the original", **Normal** "slight variations", **High**
+  "possible changes to musical elements and vocals". Untested by us.
 - **An external voice-cloning tool** over a good performance in the wrong voice.
 - **Regenerate the song** — the old baseline.
 
@@ -353,7 +356,11 @@ Uploaded audio passes an originality/rights check before it can be used.
 - **A plain-language edit is a separate grammar** — full sentences, one change, scoped ("in the
   second verse only… keep everything else exactly the same"). Label which box it goes in, like
   Studio chat.
-- Unsourced, don't repeat as fact: that Variety rewrites your style prompt.
+- **Variety rewrites your Style box** — now vendor-sourced (2026-09-11): the v6 FAQ says it works
+  by "adjusting and updating your style prompts" and to "reduce the Variety slider to 0" to keep
+  control ([help.suno.com/en/articles/13924481](https://help.suno.com/en/articles/13924481)).
+  Above **Off**, the boxes you wrote are not the whole song — set Variety **Off** when the atom
+  must hold.
 
 ---
 
@@ -446,3 +453,9 @@ logged before and after.
   Lanewood Studios; Music Tech Info; MoneOnDaBeat; Arcade) + Suno's blog, release notes, pricing
   and help centre + press (TechCrunch, Music Ally, weraveyou, DMN, MBW). Ledger:
   [`docs/misc/2026-09-10-suno-v6-research.md`](../../misc/2026-09-10-suno-v6-research.md).
+- 2026-09-11 — a capped web sweep (13 searches) sourced two claims from Suno's own help centre:
+  Variety rewrites the Style box, and two takes per Create (v6 FAQ,
+  [help.suno.com/en/articles/13924481](https://help.suno.com/en/articles/13924481)); and added the
+  three Remaster levels ([help.suno.com/en/articles/8105281](https://help.suno.com/en/articles/8105281)).
+  §2 Variety and Create rows, §3 "Further down" and §8 updated. Max Mode's source unchanged.
+  Plan: `design/2026-09-11-understand-song-loop.md`.

@@ -33,10 +33,17 @@ prompts get more specific — high style influence rewards good vocabulary and p
 
 ### Weirdness — injected randomness
 
+> **Unsourced (2026-09-11).** Nothing but one practitioner's folk knowledge stands behind any row
+> of this table, the 0 and 50 rows included — and a capped web sweep on 2026-09-11 found **no
+> published slider test with a sample size**. Suno's own framing calls **50 the "normal" midpoint** (reported by
+> that sweep; no URL was kept for it), which is not the same claim as "no randomness"; our live v6
+> form captions 50 **"Expected results"** ([`suno-v6.md`](./suno-v6.md) §2). Treat every value
+> below as a starting hypothesis, ours included.
+
 | Value | Behaviour |
 |---|---|
-| 0 | Maximum obedience. Use whenever you need an exact reproduction (covers, lyric swaps, model upgrades) |
-| 50 (default) | Effectively *no* randomness |
+| 0 | Maximum obedience *(unsourced)*. Use whenever you need an exact reproduction (covers, lyric swaps, model upgrades) |
+| 50 (default) | Effectively *no* randomness *(unsourced — Suno calls 50 "normal", not "none")* |
 | **60–65** | **The creative sweet spot** — interesting without going off the rails |
 | 80+ | UI turns this red as a warning |
 | 90–100 | Glitch nonsense — but genuinely useful as free sample fodder (reversed beats, chopped vocals, IDM textures) |

@@ -286,7 +286,7 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 
 ## Tickets
 
-### T1: Fold the 2026-09-11 research into the Suno docs   [Status: pending | Model: sonnet]
+### T1: Fold the 2026-09-11 research into the Suno docs   [Status: done | Model: sonnet]
 - **Scope:** edit the docs listed in the File Structure rows for `suno-v6.md`, `automation.md`
   (the grid baseline only; §10 comes in T12) and `suno-controls-and-workflows.md`, using the facts
   and URLs in Context. Grade each claim with the existing evidence vocabulary of those files (e.g.
@@ -302,8 +302,8 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - **Validation:** `grep -n "13924481" docs/suno-gpt/files/suno-v6.md` → ≥ 1 hit;
   `grep -n -iE 'variety \**off' docs/suno-gpt/automation.md` → ≥ 1 hit.
 - **Depends on:** —
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — done. Both validation greps hit (suno-v6.md :99/:107/:361/:458; automation.md :549/:552/:568). Max Mode (:101) left alone — the plan gives it no source. `suno-controls-and-workflows.md` has no revision log, so the date sits in the note.
 
 ### T2: Root test script covers `scripts/`   [Status: pending | Model: sonnet]
 - **Scope:** root `package.json` `"test"` becomes
@@ -656,3 +656,10 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 
 ## Discovered Issues Log
 (appended by executors during implementation)
+
+- **2026-09-11 (T1):** `docs/suno-gpt/files/suno-v6.md` §6 (≈ lines 319–321) still says the
+  credit cost per v6 generation is "unknown" and that "the old '10 credits per Create' may not
+  hold". The FAQ quote now at §2 (Create row) says two songs cost 10 credits in total, so §6
+  contradicts it. Left unchanged (T1 says no other behaviour claims change); owed a one-line fix
+  or a ruling. Also: the "Suno calls 50 the normal midpoint" claim has no kept URL, and our live
+  form captions 50 "Expected results" — both are written into the note rather than choosing.

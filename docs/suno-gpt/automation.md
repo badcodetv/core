@@ -546,8 +546,15 @@ The atom rule and the pair survive unchanged: a **cell** is a slider round, so w
 | **R4 · the kazoo check** *(optional)* | an absurd My Taste ("only kazoos and yodelling") with Personalize **off** | 1 | confirms the ruling's premise — that Personalize off keeps the account-wide profile out of the song |
 
 **Baseline for every cell unless the round varies it:** Personalize **off** (always — never
-varied), Max Mode off, Variety Normal, Style Influence 75, Vocal Gender unset unless the sheet
+varied), Max Mode off, **Variety Off**, Style Influence 75, Vocal Gender unset unless the sheet
 sets it, Duration explicit. **Never v6 Mini.**
+
+⚠️ **Variety Off is the baseline, but not yet the code default** (2026-09-11). Suno's v6 FAQ says
+Variety works by "adjusting and updating your style prompts" — anything above Off lets Suno
+rewrite the Style box, which breaks the atom ([`files/suno-v6.md`](./files/suno-v6.md) §2).
+`pair` and `grid` still default to **Normal** in code (`suno.mts` — `spec.variety ?? 'normal'`),
+so a spec must say `"variety": "off"` explicitly (a grid's `variety` axis takes `["off"]`). R2
+still varies it on purpose.
 
 **Naming extends, it doesn't change:** `<story>-<cut>-<revision>-<model>-w<weirdness>` with the
 model as `v6` / `wild` / the custom model's short name — e.g. `gpom-cut1-A-wild-w30`. Add
@@ -557,6 +564,11 @@ when a prompt box moves.
 ---
 
 ## Revision log
+
+- **2026-09-11 (Variety Off)** — §9's grid baseline changed from Variety Normal to **Variety
+  Off**: Suno's v6 FAQ (help.suno.com/en/articles/13924481) says Variety works by rewriting the
+  style prompt. The code default in `pair`/`grid` is still Normal — changing it is out of scope of
+  `design/2026-09-11-understand-song-loop.md` (decision 11) — so specs must set `"variety": "off"`.
 
 - **2026-09-10 (v6)** — v6 shipped 2026-09-09 and retired v5.5. §9 added from the v6 research
   sweep (`docs/misc/2026-09-10-suno-v6-research.md`): what changed on the form, why `load` is now
