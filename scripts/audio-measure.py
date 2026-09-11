@@ -109,6 +109,8 @@ def centroid(mono: np.ndarray, sr: int) -> float:
 
 def tempo(path: str) -> dict:
     """Reuse scripts/beat-grid.py's analyse() — the hyphenated file name can't be imported normally."""
+    # Loading it this way would drop scripts/__pycache__/ into a shared checkout on every listen.
+    sys.dont_write_bytecode = True
     spec = importlib.util.spec_from_file_location('beat_grid', os.path.join(HERE, 'beat-grid.py'))
     if spec is None or spec.loader is None:
         raise RuntimeError('cannot load scripts/beat-grid.py')
