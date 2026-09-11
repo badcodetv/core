@@ -94,6 +94,21 @@ Set up billing** (🔴 never click "Set up billing"); opening it added `?project
 ("Default Gemini Project") to the URL, but the first failure happened before that. Cause unknown;
 the next test is a human typing a prompt by hand (in this window, and in a normal browser).
 
+**Narrowed later the same day:**
+- ✅ **The account is fine.** Kai typed "hello" in Jack's **normal browser** (dark theme, the saved
+  test chat opened from History) and Gemini 3.8 Flash answered *"Hello, nice to meet you."*
+- 🔴 **Channel 1 fails too** — the long-established Flow profile, same account, a fresh tab: 403. So
+  it is not the fresh profile.
+- 🔴 **Real keystrokes fail too** (`pressSequentially` + the Run button, and Ctrl+Enter).
+- 🔴 **Detached fails too** — prompt typed, the page scheduled to click Run 4 s later, CDP
+  disconnected before it fired: 403.
+- The channels run **Playwright's bundled Chromium** (`~/.cache/ms-playwright/chromium-1234`,
+  `Chrome/151.0.7922.34`, Linux UA) — `flow-chrome.sh` falls back to it because no branded Google
+  Chrome is installed in WSL. **Hypothesis (unproven):** AI Studio's `GenerateContent` refuses
+  non-branded Chromium, while Flow does not. The decisive test is a human pressing Run by hand in
+  the channel-2 window; the likely fix is a branded Google Chrome for the listening channel.
+  Do NOT spoof browser headers to get around it.
+
 ### Trap 5 — a first-use media dialog swallows the first upload
 
 The first file ever attached on an account opens *"Start creating with media in Google AI Studio"*

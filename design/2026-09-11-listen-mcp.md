@@ -695,3 +695,9 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
   So it is the account/session, not audio and not Pro. The prompt bar offers "Link a paid API key →
   Set up billing" (not clicked). Needs a human to try a prompt by hand to tell a browser problem
   from an account problem. Details: `docs/listening/automation.md` Trap 4.
+- **2026-09-11 (T3) — the 403 is the browser, not the account.** Kai ran "hello" in Jack's normal
+  browser: answered. Driven from code it fails on channel 1 too (the old Flow profile), with real
+  keystrokes, and even with CDP detached before Run fired. The channels run Playwright's bundled
+  **Chromium** (no branded Google Chrome in WSL). Hypothesis: AI Studio's GenerateContent rejects
+  unbranded Chromium. Decisive test: a human presses Run by hand in the channel-2 window. Likely fix:
+  launch the listening channel with branded Google Chrome (`CHROME_BIN`). Never spoof headers.
