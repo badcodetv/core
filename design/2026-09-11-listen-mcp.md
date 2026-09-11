@@ -458,7 +458,7 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - [x] done
 - Notes: 2026-09-11 — done, 8 tests; the real-script tone test takes ~1.1 s here (60 s timeout set).
 
-### T7: Lenses and `lens.ts`   [Status: pending | Model: sonnet]
+### T7: Lenses and `lens.ts`   [Status: done | Model: sonnet]
 - **Scope:** write the three lens files and the loader. Each file has frontmatter `name`,
   `description`, then a short instruction paragraph and `## ` headings that the answer must use.
   `music`: `## Overall impression`, `## Drums`, `## Bass`, `## Lead and vocals`,
@@ -479,8 +479,8 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - **TDD:** yes
 - **Validation:** `npm test -w @badcode/listen-mcp` → all pass.
 - **Depends on:** T1
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — done, 10 tests. Each lens heading carries a one-line guide under it (part of the body sent to Gemini). `loadLens` only accepts names from `listLenses`, so a name cannot walk out of the directory.
 
 ### T8: `prompt.ts`   [Status: pending | Model: sonnet]
 - **Scope:** `buildPrompt` returns, in order: the lens body; a `MEASURED FACTS — do not contradict
