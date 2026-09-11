@@ -1,5 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import {
+  classifyCoverState,
+  songIdFromArt,
   durToSeconds,
   parseSongId,
   matchTakes,
@@ -190,5 +192,48 @@ describe('durToSeconds', () => {
     [':20'],
   ])('throws on %j', (bad) => {
     expect(() => durToSeconds(bad)).toThrow(/durToSeconds/)
+  })
+})
+
+
+describe('songIdFromArt', () => {
+  it('reads the uuid from both artwork sizes', () => {
+    expect(songIdFromArt('https://cdn2.suno.ai/image_870fbab1-78fd-42e8-b52e-2bc44c901fa2.jpeg?width=360')).toBe('870fbab1-78fd-42e8-b52e-2bc44c901fa2')
+    expect(songIdFromArt('https://cdn2.suno.ai/image_large_870FBAB1-78fd-42e8-b52e-2bc44c901fa2.jpeg')).toBe('870fbab1-78fd-42e8-b52e-2bc44c901fa2')
+  })
+  it('is null without one', () => {
+    expect(songIdFromArt(null)).toBeNull()
+    expect(songIdFromArt('https://cdn-o.suno.com/sil-100.mp3')).toBeNull()
+  })
+})
+
+describe('classifyCoverState', () => {
+  const empty = { clearButton: false, typeLabel: null, cardText: null, cardArt: null, styleLen: 0, lyricParas: 1, title: '' }
+  it('custom-empty: nothing attached, empty boxes (as read live 2026-09-11)', () => {
+    expect(classifyCoverState(empty)).toEqual({ state: 'custom-empty' })
+  })
+  it('custom-leftover: a detached source leaves its words behind (live: 994 / 18 / title)', () => {
+    expect(classifyCoverState({ ...empty, styleLen: 994, lyricParas: 18, title: 'gpom-cut1F-haunting-dark-si50-ai20-w45' })).toEqual({
+      state: 'custom-leftover', styleLen: 994, lyricParas: 18, title: 'gpom-cut1F-haunting-dark-si50-ai20-w45',
+    })
+    expect(classifyCoverState({ ...empty, title: 'x' }).state).toBe('custom-leftover')
+  })
+  it('attached: reads mode, title, duration and song id from the live card', () => {
+    expect(classifyCoverState({
+      ...empty,
+      clearButton: true,
+      typeLabel: 'Change condition type from Cover',
+      cardText: 'Audio Cover gpom-cut1F-haunting-dark-si50-ai20-w45 00:05/01:05',
+      cardArt: 'https://cdn2.suno.ai/image_870fbab1-78fd-42e8-b52e-2bc44c901fa2.jpeg?width=360',
+      styleLen: 994, lyricParas: 18,
+    })).toEqual({
+      state: 'attached',
+      mode: 'Cover',
+      source: { title: 'gpom-cut1F-haunting-dark-si50-ai20-w45', dur: '1:05', songId: '870fbab1-78fd-42e8-b52e-2bc44c901fa2' },
+    })
+  })
+  it('attached wins over leftover text, and survives an unreadable card', () => {
+    const s = classifyCoverState({ ...empty, clearButton: true, typeLabel: null, styleLen: 5 })
+    expect(s).toEqual({ state: 'attached', mode: 'unknown', source: { title: null, dur: null, songId: null } })
   })
 })

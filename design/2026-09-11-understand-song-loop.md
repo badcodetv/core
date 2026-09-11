@@ -381,7 +381,7 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - [x] done
 - Notes: 2026-09-11 — done on channel 1 (signed in as binocarlos; relaunched after T6 so it has `badcode_ch1`), loopback muted during probes. Stop gate NOT hit: a native click on the row's artwork (`[role=button][aria-label="Play <title>"]`) plays without navigating. Song ID = the row's `a[href^="/song/"]`. Player = `audio#active-audio-play` (blob src); pause via `.pause()` or the playbar toggle; auto-advance confirmed (~1 s after `ended`, a new blob starts). `status` identical before/after (styleLen 0, lyricParas 1, title ""). Evidence in automation.md §10, constants in take-row.mts.
 
-### T4b: Live map — v6 Cover attach, detach and mode detection   [Status: pending | Model: opus]
+### T4b: Live map — v6 Cover attach, detach and mode detection   [Status: done | Model: opus]
 - **Scope:** HUMAN-GATED like T4, and spends no credits (never click Create). v6 Cover has never been
   driven from code. `formMode` detects cover from a "Cover" tab calibrated on the v5.5 UI
   (`automation.md:517` warns it "may false-abort or, worse, false-pass"), `suno-v6.md:97` suggests
@@ -405,8 +405,8 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - **Validation:** `npx tsx scripts/suno/suno.mts status` before and after → identical `styleLen`,
   `lyricParas`, `title`.
 - **Depends on:** T2, T4
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — done, no Create. Stop gate NOT hit: cover state is detected by `Clear audio condition` + `Change condition type from <X>` (v6 has no Cover tab), and the pick CAN be attached by song ID — picker rows and the attachment card both carry `image_<songId>` artwork. v6-wild works in Cover. `detachCover` returns to custom but leaves the source's Style/Lyrics/Title (custom-leftover). 🔴 On an empty form the source fills Style, Lyrics and Title silently; on a filled form Keep Current is offered and keeps ours. `status` identical before/after. Detector = `classifyCoverState` in take-row.mts (tested on the live strings).
 
 ### T5: `take-row.mts` pure helpers   [Status: done | Model: sonnet]
 - **Scope:** implement `parseSongId`, `matchTakes`, `exploreCells`, `narrowCells` and `mediaSlug`

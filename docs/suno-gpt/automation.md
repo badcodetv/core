@@ -596,8 +596,29 @@ flag is set, so the next song never reaches the recording.
 Each play adds one to the song's public play count (findings doc). Selectors live as exported
 constants in [`scripts/suno/take-row.mts`](../../scripts/suno/take-row.mts).
 
+### v6 Cover — attach, detach, detect (mapped live 2026-09-11)
+
+The first time v6 Cover was driven from code (loop plan T4b). Same browser and account as above,
+source = take `870fbab1` (`gpom-cut1F-haunting-dark-si50-ai20-w45`, 1:05, a v5.5 take). **Create
+was never clicked**; the form ended exactly as it started (`styleLen 0`, `lyricParas 1`, `title ""`,
+model `v6`).
+
+| Question | Answer | Evidence |
+|---|---|---|
+| Does the v5.5-era path still attach? | ✅ **Yes** — `Add audio - Browse, upload, or record audio` → menu `Workspaces · Uploads · Browse · Upload · Record` → **Browse** → modal "Choose a song to Remix" → its last `Search` box → the row's **Remix** button, all real mouse clicks | the form then showed an **Audio · Cover** card: `Audio Cover <title> 00:05/01:05` |
+| Can the pick be attached **by song ID**? | ✅ **Yes, via the artwork.** Picker rows (`[role=button]`, `aria-label="<title>. "`) have **no** `/song/` link, but each row's `img` src is `image_<songId>.jpeg`. Two same-titled takes of one Create had different ids (`7375ef7f…`, `870fbab1…`) | a row picked by `image_870fbab1` attached 870fbab1, and the card's own art read `image_870fbab1-…` |
+| 🔴 Does attaching touch the boxes? | **On an EMPTY form: yes, silently** — no Keep Current prompt; Style (0 → 994 chars), Lyrics (1 → 18 paragraphs) **and Title** were filled from the source. **On a FILLED form:** the **Keep Current** button is offered, and clicking it kept **both** our Style (16) and our Lyrics (2 paragraphs); the title stayed empty | two runs, one each way. `narrow` loads the sheet's boxes after attaching, so both cases end right — never assume the first |
+| A reliable detector | attached ⇔ `button[aria-label="Clear audio condition"]` exists; the mode is the suffix of `button[aria-label^="Change condition type from "]` (`Cover`); the source's title and length come from the card text, and its **song ID from the card art** (`img[alt^="Cover art for "]`) | `classifyCoverState` in `take-row.mts` separates custom-empty / custom-leftover / attached, tested on the live strings |
+| The v6 tabs in Cover | still **Simple · Advanced* · Sounds** — no Cover tab appears. `formMode()` still said `cover` only because the condition-type button's text is "Cover" | don't read mode from tabs on v6 |
+| Controls present in Cover | **Audio Influence** (mounted, 25), **Style Influence** (50), **Variety** (1, Normal), Weirdness — all present | `[role=slider]` list read while attached |
+| Can Cover use **v6-wild**? | ✅ **Yes** — `setModel('v6-wild')` read back `v6-wild` with the source still attached; set back to `v6` after | answers `files/suno-v6.md` open question 13 for the create form (not for Remix/Extend) |
+| Does `detachCover` return the form to Custom? | ✅ **Yes** — `detach:ok`; mode custom, no Clear button, Audio Influence unmounted. 🔴 **But the source's words stay:** Style 994, Lyrics 18, Title = the source's title (**custom-leftover**) | cleared by hand afterwards (`fill('')`, `setLyrics('')`, `setTitle('')`) |
+
 ## Revision log
 
+- **2026-09-11 (§10, v6 Cover)** — Cover attach (by song ID via the artwork), detach, the
+  three-state detector, Keep Current on a filled form only, and v6-wild in Cover, mapped live
+  (loop plan T4b). No Create.
 - **2026-09-11 (§10, the player)** — the create page's row Play control, song-ID link, player
   `<audio>`, pause and auto-advance mapped live (loop plan T4). No navigation, no Create.
 

@@ -133,3 +133,62 @@ export const SEL_PLAYBAR_PAUSE = 'button[aria-label="Playbar: Pause button"]'
 export const SEL_PLAYBAR_PLAY = 'button[aria-label="Playbar: Play button"]'
 /** 🔴 Suno plays the next row ~1 s after `ended`. A recorder must pause on `ended` and on any later `play`. */
 export const AUTO_ADVANCES = true
+
+// ─────────────────────────────────────────────────────────────────────────────
+// v6 Cover — attach, detach and mode detection, mapped live 2026-09-11 (automation.md §10).
+
+/** Present only while a source is attached. Its click detaches (a REAL mouse click — see detachCover). */
+export const SEL_CLEAR_CONDITION = 'button[aria-label="Clear audio condition"]'
+/** `aria-label="Change condition type from Cover"` — the suffix is the attachment's mode. */
+export const SEL_CONDITION_TYPE = 'button[aria-label^="Change condition type from "]'
+/** The attachment card's artwork: `image_<songId>.jpeg`. The Remix picker's rows carry the same img. */
+export const SEL_CONDITION_ART = 'img[alt^="Cover art for "]'
+/** Mounted only with audio (or a Voice) attached — never proof of Cover on its own. */
+export const SEL_AUDIO_INFLUENCE = '[role="slider"][aria-label="Audio Influence"]'
+
+/** The song ID inside a Suno artwork URL (`…/image_<uuid>.jpeg`, `image_large_<uuid>`). */
+export function songIdFromArt(src: string | null | undefined): string | null {
+  const m = /image_(?:large_)?([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/i.exec(src ?? '')
+  return m ? m[1].toLowerCase() : null
+}
+
+/** What the page shows, scraped by suno.mts — kept as plain data so the judgement is testable. */
+export interface CoverScrape {
+  /** `SEL_CLEAR_CONDITION` is on the page. */
+  clearButton: boolean
+  /** `aria-label` of `SEL_CONDITION_TYPE`, or null. */
+  typeLabel: string | null
+  /** The card's text, e.g. `Audio Cover <title> 00:05/01:05`, or null. */
+  cardText: string | null
+  /** The card artwork's `src`, or null. */
+  cardArt: string | null
+  styleLen: number
+  lyricParas: number
+  title: string
+}
+
+export type CoverState =
+  | { state: 'custom-empty' }
+  | { state: 'custom-leftover'; styleLen: number; lyricParas: number; title: string }
+  | { state: 'attached'; mode: string; source: { title: string | null; dur: string | null; songId: string | null } }
+
+/**
+ * The three states narrow needs to tell apart:
+ *   custom-empty    — nothing attached, boxes empty (an empty Lexical editor reads 1 paragraph)
+ *   custom-leftover — nothing attached, but boxes hold text (e.g. a detached source's words)
+ *   attached        — a source is attached; `mode` is the condition type (Cover, Extend, …)
+ * The attachment signal is the Clear button, not the mode tabs: v6's tabs read Simple · Advanced ·
+ * Sounds in every state, so the old v5.5 "Cover tab" check has nothing to look at.
+ */
+export function classifyCoverState(s: CoverScrape): CoverState {
+  if (s.clearButton) {
+    const mode = /^Change condition type from (.+)$/.exec(s.typeLabel ?? '')?.[1]?.trim() ?? 'unknown'
+    const m = /^Audio\s+\S+\s+(.*?)\s+\d{1,2}:\d{2}\/(\d{1,2}):(\d{2})$/.exec((s.cardText ?? '').replace(/\s+/g, ' ').trim())
+    const dur = m ? `${Number(m[2])}:${m[3]}` : null
+    return { state: 'attached', mode, source: { title: m ? m[1] : null, dur, songId: songIdFromArt(s.cardArt) } }
+  }
+  if (s.styleLen > 0 || s.lyricParas > 1 || s.title.trim() !== '') {
+    return { state: 'custom-leftover', styleLen: s.styleLen, lyricParas: s.lyricParas, title: s.title }
+  }
+  return { state: 'custom-empty' }
+}
