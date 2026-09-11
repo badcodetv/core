@@ -482,7 +482,7 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - [x] done
 - Notes: 2026-09-11 — done, 10 tests. Each lens heading carries a one-line guide under it (part of the body sent to Gemini). `loadLens` only accepts names from `listLenses`, so a name cannot walk out of the directory.
 
-### T8: `prompt.ts`   [Status: pending | Model: sonnet]
+### T8: `prompt.ts`   [Status: done | Model: sonnet]
 - **Scope:** `buildPrompt` returns, in order: the lens body; a `MEASURED FACTS — do not contradict
   these:` block containing duration, integrated loudness and true peak (when non-null) and tempo
   **only when** `tempo.confidence ∈ TRUSTED_TEMPO`; when a range was cut, one line "This clip is
@@ -498,8 +498,8 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - **TDD:** yes
 - **Validation:** `npm test -w @badcode/listen-mcp` → all pass.
 - **Depends on:** T6, T7
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — done, 8 tests. Numbers are rounded for the prompt (1 dp; tempo to a whole BPM); the stereo check covers both raw and rounded forms of the fixture values.
 
 ### T9: `remap.ts`   [Status: done | Model: sonnet]
 - **Scope:** implement `formatTime` and `remapTimestamps`. Match `\b(?:(\d+):)?(\d{1,2}):(\d{2})(?:\.\d+)?\b`
