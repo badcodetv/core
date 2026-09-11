@@ -443,7 +443,7 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - [x] done
 - Notes: 2026-09-11 — done, 22 tests (unit + ffmpeg integration). ffprobe failing to read a duration also reports FILE_NOT_FOUND ("is it audio?"), and a range is validated before any cut.
 
-### T6: `measure.ts`   [Status: pending | Model: sonnet]
+### T6: `measure.ts`   [Status: done | Model: sonnet]
 - **Scope:** spawn `<python> <opts.script> <wav>` (caller passes the absolute script path), parse
   stdout with `MeasurementsSchema`; non-zero exit or schema failure → `MEASURE_FAILED: …` with the
   last 500 chars of stderr. Integration tests set an explicit vitest timeout of 60 s (the librosa
@@ -455,8 +455,8 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - **TDD:** yes
 - **Validation:** `npm test -w @badcode/listen-mcp` → all pass.
 - **Depends on:** T4, T5
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — done, 8 tests; the real-script tone test takes ~1.1 s here (60 s timeout set).
 
 ### T7: Lenses and `lens.ts`   [Status: pending | Model: sonnet]
 - **Scope:** write the three lens files and the loader. Each file has frontmatter `name`,
