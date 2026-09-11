@@ -701,3 +701,12 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
   **Chromium** (no branded Google Chrome in WSL). Hypothesis: AI Studio's GenerateContent rejects
   unbranded Chromium. Decisive test: a human presses Run by hand in the channel-2 window. Likely fix:
   launch the listening channel with branded Google Chrome (`CHROME_BIN`). Never spoof headers.
+- **2026-09-11 (T3) — CONFIRMED + PAUSED.** Kai pressed Run by hand in the channel-2 window
+  ("Google Chrome for Testing" in its title bar): *"Failed to create interaction: permission
+  denied."* So AI Studio refuses Chrome for Testing itself; Jack's normal Chrome works. **Resume
+  here:** (1) Kai installs branded Google Chrome in WSL
+  (`cd /tmp && wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install -y ./google-chrome-stable_current_amd64.deb`);
+  (2) guard `scripts/flow-chrome.sh` so only the listening channel uses it (it currently prefers
+  `google-chrome` for every channel, and Flow/Suno profiles were made by the newer test build);
+  (3) relaunch channel 2 on a fresh profile, Jack signs in; (4) continue T3 from the tone run.
+  Optional later: check whether Suno streams a better file to branded Chrome (Widevine).
