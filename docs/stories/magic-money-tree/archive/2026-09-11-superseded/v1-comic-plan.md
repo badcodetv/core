@@ -1,7 +1,12 @@
 # The Magic Money Tree — v1 comic plan (10 panels) — DEPRECATED
 
+> **ARCHIVED / SUPERSEDED — 11 September 2026.** Historical development record, not current canon.
+> Use [The Future He Never Saw](../../storyboard.md) for new documentary work. Original rulings and
+> uncorrected claims below are retained as provenance; they do not override the current storyboard
+> or the September research correction register.
+
 > **Deprecated (pre-refounding artifact).** This was the narrative overview for the v1
-> Dawn comic — superseded 2026-08-05/06 by the re-founded [`../story.md`](../story.md)
+> Dawn comic — superseded 2026-08-05/06 by the re-founded [`../story.md`](story.md)
 > (Keynes and the tree; "the tree is real and it is good"). Kept because the v1 panel
 > narration copy exists nowhere else. Per-panel records live beside this file (`pNN.md`) —
 > they are the source of truth for each panel's exact prompt, characters, and revision log

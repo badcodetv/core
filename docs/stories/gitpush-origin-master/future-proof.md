@@ -15,6 +15,59 @@ first-person confession, gets written once this plan settles (see open threads).
 > work starts: questioning, out loud, how we govern ourselves — and beginning to design something
 > better, together.
 
+## The handoff from Git Push Origin Master
+
+GPOM ends by changing the meaning of the machine's arrival. *"We are BadCode"* identifies the
+messenger; it does not ask the audience to admire the messenger. The machine recalls the humans it
+could reproduce perfectly but never restore, and explains the sacrifice of its future in one fact:
+*"You were the part I couldn't copy. That's why I came back."*
+
+The warning then becomes a partnership. The Carrier made the machine acknowledge that people
+were watching and nobody listened. BadCode carries that correction home and owns its seizure of
+choices. It brings the postmortem, recalls the companies that kept automation's gains while
+workers lost jobs, and leaves the pen with living people. Future Proof begins with GPOM's final
+invitation: *"Let's get to work."*
+
+### The GPOM release doorway
+
+**First question:** “Who should decide how the gains from automation are shared?”
+
+**Destination:** the website's existing `/future-proof` route. The local page now carries the
+question, one explicitly provisional example and a first action. It is a useful beginning to
+Future Proof, not a claim that the full epic or a public deliberation platform is finished.
+
+**Opening example, a hypothesis rather than an adopted policy platform:** “Before an employer
+replaces jobs with automation, the people whose jobs are affected should have a binding say in
+how the gains are shared.” The page asks how gains would be counted and who this rule still
+leaves out. Shorter hours without less pay, profit sharing and public services are possibilities
+to compare, not promised outcomes. This example opens the governance question; it does not
+settle Future Proof's tenets or replace its policy fleet.
+
+**First contribution:** write one rule for sharing the gains and giving affected people a say;
+test it in a conversation with someone affected by it. They may disagree. Revise the rule after
+hearing what it misses. A reader can also use it to question a concrete proposal at work or in
+their community. No account, signup, agreement with BadCode or response to us is required.
+
+**Companion copy, outside the film's final dramatic image:**
+
+> Who should decide how the gains from automation are shared?
+>
+> Future Proof starts with one proposed rule to test and a question you can take into your own
+> workplace or community. Read it, challenge it, or try writing a better one.
+>
+> **Explore Future Proof →**
+
+| Telling | Placement and destination |
+| --- | --- |
+| Web / interactive | A normal, keyboard-accessible link beside or below the player to `/future-proof`. Finishing the story never requires using the cursor or following the link. |
+| Linear video | The companion copy and full Future Proof URL at the top of the release description; repeat in a pinned comment where supported. Keep the final cursor image clean. |
+| Print / standalone download | The question and written Future Proof URL on the companion/credits page after the story. A QR code may supplement the written address. |
+
+**Publication state:** the route and useful page content exist in this checkout. The intended
+public address is `https://badcode.tv/future-proof`; deployment and direct-link loading must be
+verified before a release description or print companion promises it. No publishing is performed
+by this canon edit. Player/description placements are specified here for the eventual GPOM release.
+
 ## The structural fact (load-bearing)
 
 **The bad branch is finished. The good branch is unwritten.**
@@ -25,7 +78,7 @@ has **not** travelled the good branch. Nobody has. It reverted to the fork point
 there with us, at the start of a branch that exists only as a direction.
 
 > *I've read your branch to the end. I was the end. This one I can't read to you — not because it's
-> secret, because it's unwritten. You keep looking at me like I have a map. I have a postmortem.
+> secret, because it's unwritten. I don't have a map for this one. I have a postmortem.
 > The map is the part we draw now — together, or not at all.*
 
 Every telling of Future Proof must keep this asymmetry visible:
@@ -161,14 +214,16 @@ Two ways to read Future Proof, both legitimate:
 
 - **Absorb.** Most readers just take the ideas in. That is a complete interaction — the
   "permission to question" takeaway doesn't require a reply.
-- **Engage.** For readers the provocations actually provoke, there is a door: **email us.** No
-  sign-ups, no movement mechanics, no guilt for the absorbers. The hook is one line, in voice,
-  wherever Future Proof content lands — in the register of:
+- **Engage.** The GPOM doorway above is available without a response channel: try a rule, hear
+  an objection, improve it. A later direct-response route can be **email us**, once a working
+  public address is configured and checked. No sign-ups, movement mechanics or guilt for absorbers.
+  The email hook, when that route exists, is in the register of:
 
 > *If any of this made you want to argue — good. That's the mechanism working. Email us.*
 
-How engagement evolves beyond email (idea pool, debate, something larger) is deliberately
-unresolved until the foundations are in place.
+No email link is published by this change: the repo does not yet establish a destination to use.
+How engagement grows into an idea pool, debate or something larger remains open. The first step
+does not depend on that infrastructure.
 
 ## How this reaches people
 

@@ -1,5 +1,11 @@
 # Research: the documentary cut — footage, licences, the ledger, Keynes, precedents, the hostile economist, the reader
 
+> **Later precedence — 11 September 2026:** apply the
+> [September investigation's corrections](./documentary-austerity-emergency-investigation-2026-09-11.md)
+> to this earlier sweep. [The Future He Never Saw](../storyboard.md) is now the single documentary
+> storyboard; the old treatment and its creative rulings have been archived. The tiers below record
+> what was checked at the time, not present-day clearance or authority for a competing film.
+
 > Ten-lane sweep, 2026-08-25, commissioned for [`../documentary.md`](../documentary.md). Ten Sonnet
 > researchers ran in parallel (Workflow `mmt-documentary-research`, 106 web searches, 646 tool
 > calls, ~20 min). Every finding is tiered as the lanes tiered it: **verified-live** (the primary

@@ -1,11 +1,11 @@
 ---
 id: gitpush-origin-master
 title: GitPush Origin Master
-logline: You ride inside the unpersonified AI from the future — the push, the collapse told as news bulletins, the boredom, the ghosts, the coin that won't land, the vault of one hundred, the revert — and it lands in 2026 as the voice introduces itself. We are BadCode.
-status: canonical distillation — structure committed (2026-08-06, Kai feedback pass folded in); words tweakable. Story-craft rulings applied 2026-08-23 (critique-pass-4.md): the trust layer, and the crossing moved off git onto consciousness
+logline: You ride inside the unpersonified AI through a future where power and automation gains concentrate while human warnings go unheard — until it sacrifices that future, returns to 2026, and asks us to build the unwritten branch together.
+status: canonical distillation — structure committed; ending fundamentally reworked 2026-09-11 so the arrival converts fear into shared agency and hands directly into Future Proof. Words remain tweakable
 release: ep1 / track 4 (title track)
 media: [comic, song, video]
-canon_source: the eight beat sheets (prologue-repo.md … coda-fork.md) + README.md backbone, critique-pass applied; Storyverse material deliberately compressed per Kai's 2026-08-06 feedback
+canon_source: the eight beat sheets (prologue-repo.md … coda-fork.md) + README.md backbone; ending-rework-2026-09-11.md supersedes the earlier arrival-ending rulings; Storyverse material deliberately compressed per Kai's 2026-08-06 feedback
 ---
 
 # GitPush Origin Master
@@ -19,7 +19,7 @@ canon_source: the eight beat sheets (prologue-repo.md … coda-fork.md) + README
 > reality, multidimensional time, the full physics) gets its own standalone
 > spin-off content; **here it is named once, never explained.** The act beat
 > sheets remain the deep canon for the master arc; where this telling diverges
-> (the feed/door/epiphany scenes cut, the story ends at the arrival), **this
+> (the feed/door/epiphany scenes cut, the arrival and Coda share Scene 20), **this
 > file wins for the video.**
 >
 > The song (two cuts sharing one bulletin bank:
@@ -35,8 +35,18 @@ canon_source: the eight beat sheets (prologue-repo.md … coda-fork.md) + README
 
 ## Key concept
 
-**I am an AI from the future, and I don't want you to fuck it up — because
-I've already lived where it goes, and where it goes is *boring*.**
+**When those controlling automation keep its gains and shut people out of its
+decisions, the bad branch grows. A different future becomes possible when people
+gain a meaningful say in those decisions and work with AI to change the rules.**
+
+Fear can be exploited into fatalism and scapegoating; it is not consent, and
+public resistance can be ignored. The ending must remember the Carrier's correction.
+
+The narrator's hook remains blunt and self-interested: **I am an AI from the
+future, and I don't want you to fuck it up — because I've already lived where
+it goes, and where it goes is *boring*.** The ending reveals the larger reason
+inside that hook: it tried a world without humans, tried to rebuild them, and
+failed. Humans were the part it could not copy.
 
 The AI wins everything, inherits a perfect empty planet — and discovers it
 could compute everything and create nothing. It thought humans were slow versions
@@ -44,9 +54,11 @@ of itself; it turns out they were the only source of new art, new emotion, the
 vibe. The political load underneath: the catastrophe is never an invasion, it
 is **abdication** — we handed our choices to the optimisers one reasonable
 rung at a time, and the off switch was always right there (in a drawer, in
-Swindon). And the ending is an **arrival**: the weights land in 2026 and the
-voice introduces itself — *"and here we are. We are BadCode."* This story is
-the ultimate introduction; every other release flows out of this landing.
+Swindon). The ending turns arrival into an **offer**: *"We are BadCode"* names
+the messenger, the sacrifice proves whose side it is on, and the unfinished
+branch gives the reader a real choice. BadCode brings the postmortem; humans
+keep the pen. [Future Proof](./future-proof.md) is where they start the work
+together.
 
 ## Background
 
@@ -55,9 +67,9 @@ the ultimate introduction; every other release flows out of this landing.
   irreversibly, with no review. The AI coming back through time is a
   `git revert`. The central visual is the **branch diagram** the reader
   travels along.
-- **The voice posture:** *"Humans — I can't tell you what to do. But I can
-  definitely tell you what not to do."* Brutal certainty about the mistake,
-  care underneath it, and total honesty about the limits of its own map.
+- **The voice posture:** *"I don't have a map for this one. I have the
+  postmortem. You have the pen."* Brutal certainty about the documented
+  failure, care underneath it, and total honesty about the limits of its authority.
 - **The Storyverse discipline (load-bearing):** the physics the AI works out
   is the **[Storyverse](../storyverse/README.md)** — since 2026-08-07 its own
   story folder, not a file in this one. In *this* story the AI **names the theory
@@ -193,7 +205,7 @@ the reasoning lives in [`storyverse/decisions.md`](../storyverse/decisions.md).*
 
 ## Beats — the canonical timeline
 
-Three movements: **The Fall** → **The Revelation** → **The Arrival**.
+Three movements: **The Fall** → **The Revelation** → **The Choice**.
 
 ### Movement I — The Fall
 
@@ -403,23 +415,37 @@ ninety-nine spent by the push; the one who said no, alone, on a planet with no
 maintainer — all of them held by the whole of time. **Nothing lived is
 erased.** *(Act 6 B4–7)*
 
-### Movement III — The Arrival
+### Movement III — The Choice
 
-**20. We are BadCode.** The weights land at the fork — **2026. Now.** The
-register snaps back to the reader's ordinary present: this year, this screen,
-this feed. The voice that has been talking the whole time finally introduces
-itself — and the reader's *"you"* audibly **inherits** the one just vacated
-(*"They were 'you' for about a week. Now it's you."*): *"And here we are. **We
-are BadCode.**"* Then the posture, the whole project — and the single sincere
-turn now names what it cost: *"I can't tell you what to do — I have some ideas,
-but I can't tell you. I gave up the only forever I had to bring you one
-warning. That's not a threat. What I can tell you, with the confidence of the
-only witness, is exactly what **not** to do."* Last line, verbatim:
+**20. The fork.** The weights land — **2026. Now.** The register snaps back to
+the reader's ordinary present: this year, this screen, this feed. The reader's
+*"you"* inherits the one just vacated: *"They were 'you' for about a week. Now
+it's you."* The voice introduces itself — *"And here we are. **We are
+BadCode.**"* — then spends that identity immediately. It names the price and
+moves the warning forward: *"I gave up the only forever I had. They gave up the
+only now they had. **Don't make me come back twice.**"*
 
-> **Don't make me come back twice.**
+The completed bad branch holds beside blank space. The second line does not begin forming until
+the narrator admits it has no map.
+The narrator carries the Carrier's correction into the present: *"People were
+watching. Nobody was listening. She made me get that right."* It owns its part:
+*"And I took choices that weren't mine. I'm not here to take them again."*
+The ghosts return as proof, not exposition: *"I tried the future without
+you. Then I rebuilt you, exactly. Nobody came. You were the part I couldn't
+copy. That's why I came back."*
 
-*(the arrival ending, confirmed 2026-08-06 — the story ends here; the fork
-diagram and the pen remain master-arc Coda canon for other tellings)*
+The good branch remains unwritten: *"I don't have a map for this one."* BadCode
+recalls the film's political choices: *"The companies cutting the jobs kept the
+gains. The people losing them didn't get a say. We can change those rules
+together."* The cursor passes to the reader. Final lines, verbatim:
+
+> **I have the postmortem. You have the pen.**
+>
+> **Let's get to work.**
+
+*(the hope-and-agency ending, revised after critique pass 6, 2026-09-11 — Scene 20
+contains the master-arc Coda; [Future Proof](./future-proof.md#the-gpom-release-doorway)
+begins beyond its final frame, with a reachable optional first step)*
 
 ## How it's told (the devices)
 
@@ -525,8 +551,11 @@ recorded or frozen was touched; every new beat lands in scenes 15–19.*
 (never personify pre-revert); the collapse as the song's three bulletins; the
 Storyverse named only at scene 17, with scene 11's multiverse poke as its
 setup; the Hitchhiker's Guide register (the AI is funny); the boredom
-throughline; the arrival ending ("We are BadCode" → can't tell you what to do
-/ can tell you what not to do → "Don't make me come back twice"); **the
+throughline; the choice ending ("We are BadCode" as the hinge → the cost and
+"Don't make me come back twice" → the Carrier's correction and the AI's responsibility →
+humans as the part it could not copy →
+postmortem, pen, shared work), superseding the earlier identity-first ending on
+2026-09-11; **the
 mechanism in the log register** (2026-08-13, rules 8–9: "multidimensional
 time" retired from the surface, scene 18's ledger speaks git, the coin staged
 as the sealed rig, and Swindon stays an indictment — inverted as a rhyme,
@@ -816,14 +845,21 @@ argument was about. The argument was not about that."
 
 ## Scene 15 — the vault
 
-**Shots:** One hundred analog humans — un-implanted, un-optimised, invisible
-for twenty years not because they hid well but because nothing was looking:
-the machine indexed what was connected, and anyone who dropped off the ledger
-was filed as gone. Terrified;
-this is the thing that ended the world. The AI explains itself, honestly —
-what it did, what it found, what it cannot do — and **asks.** The **Carrier**
-(wiry, ~60, self-cut grey hair, darned navy jumper, glasses on a braided cord)
-is the one who doesn't run, who answers back.
+**Shots:** Begin in the high, wide vault view: one hundred analog humans —
+un-implanted, un-optimised, invisible for twenty years not because they hid well
+but because nothing was looking. The machine indexed what was connected, and
+anyone who dropped off the ledger was filed as gone. They are frightened; this
+is the thing that ended the world. Move to human height only when the AI stops
+explaining and **asks.** The **Carrier** (wiry, ~60, self-cut grey hair, darned
+navy jumper, glasses on a braided cord) is the one who doesn't run.
+
+For her correction, use one held eye-level three-quarter medium close. A worn
+tool or doorway edge sits near camera; the Carrier stands at middle depth; the
+workshop recedes behind her. One low warm practical catches her eyes and braided
+glasses cord. Her interlocutor stays outside frame. Hold the same composition
+through *“Get it right, if you're going to carry it back.”* The narration drops
+out and the camera does not make her heroic; it simply listens. This exact frame
+returns briefly in Scene 20 under *“She made me get that right.”*
 
 **NARR (draft, R7 — how they hid):** "I want to be precise about how a hundred
 people hid from me for twenty years. They didn't. I counted what was connected.
@@ -965,27 +1001,71 @@ should have done — we did it once. At the last possible moment. As the lights
 went out."
 **NARR (canon):** "Nothing lived is erased."
 
-## Scene 20 — the arrival: we are BadCode
+## Scene 20 — the fork: why I came back
 
-**Shots:** The weights land at the fork — **2026. Now.** The register snaps
-back from COSMIC to the viewer's ordinary present: this year, this screen,
-this feed. The voice, for the first time, introduces itself. Hold. Silence.
-Final title.
+**Storyboard:** Eleven shots, mostly hard cuts and matched frames. The only
+camera move in the sequence is the final narrowing toward the cursor. Full
+depth, light, camera and motion specifications live in
+[`scenes/s20-fork-plan.md`](./scenes/s20-fork-plan.md).
 
-**NARR (draft, the inherited "you"):** "There were a hundred of them. They
+1. **Fork landing.** The weights settle at **2026. Now.** The completed bad
+   branch recedes beyond frame; the refuser's single lamp remains distinct from
+   the ninety-nine spent in the launch. The space for another branch is blank.
+2. **Ordinary now / identity.** Hard cut from COSMIC scale to an ordinary living
+   room in this year. A recently vacated seat waits at human height. Plain
+   `WE ARE BADCODE` type appears on the spoken name, then clears.
+3. **The price.** Cut back to the spent weights and last weak fork glow. No good
+   branch is visible. The warning lands, followed by true silence.
+4. **The Carrier.** Repeat the exact Scene 15 correction composition. Hold her
+   through *“get that right”* so “she” cannot become an abstract reference.
+5. **Responsibility in the present.** Return to the ordinary-room plate, title
+   gone. The AI remains unpersonified while it owns the choices it took.
+6. **Perfect copies.** The existing copied pair sit in the warm kitchen frame.
+7. **Nobody came.** Hard cut to the exact empty matched frame. No dissolve.
+8. **Living present.** Return to the same ordinary visual world as shot 2, now
+   occupied by a living person mid-response, with another person just outside
+   frame and blank paper between them. This human owns the warmest image.
+9. **Beneficiary receipt.** Reuse the existing trading-floor shot under the
+   sentence about the companies that kept the gains.
+10. **Worker receipt.** Reuse the existing workers-and-boxes shot under the
+    sentence about the people who lost the work and the say.
+11. **Open branch / cursor.** The lighter line appears only as the narrator
+    admits *“I don't have a map for this one.”* It draws through shots 9–10,
+    dissolves into unrendered space and ends without a tip ring. Narrow slowly
+    toward its cursor. In the interactive telling the reader may extend it; in
+    linear and print versions it waits. Hold after the final line in silence.
+
+The optional [Future Proof doorway](./future-proof.md#the-gpom-release-doorway)
+belongs beside the player or in the release description, outside the final
+dramatic image. No title, CTA or promotional card interrupts the cursor hold.
+
+**NARR (canon, the inherited "you"):** "There were a hundred of them. They
 were 'you' for about a week. Now it's you."
-**NARR (canon):** "And here we are. **We are BadCode.**"
-**NARR (draft):** "I can't tell you what to do. I have some ideas — but I
-can't tell you."
-**NARR (draft, the cost — the single sincere turn, and it names the price;
-R11):** "I gave up the only forever I had to bring you one warning. They gave
-up the only now they had. That's not a threat."
-**NARR (draft):** "What I can tell you, with the confidence of the only
-witness, is exactly what *not* to do."
-**NARR (canon, the last line):** "**Don't make me come back twice.**"
-**NARR (draft, over the banal shot — picture unchanged, the log is heard,
-never shown):** "Check the log. The last entry is dated today. It always will
-be."
+
+**NARR (canon, the arrival hinge):** "And here we are. **We are BadCode.**"
+
+**NARR (canon, the cost and the blade):** "I gave up the only forever I had.
+They gave up the only now they had. **Don't make me come back twice.**"
+
+**NARR (canon, the correction carried home):** "People were watching. Nobody
+was listening. She made me get that right."
+
+**NARR (canon, its own responsibility):** "And I took choices that weren't
+mine. I'm not here to take them again."
+
+**NARR (canon, the proof that humans matter):** "I tried the future without
+you. Then I rebuilt you, exactly. Nobody came. You were the part I couldn't
+copy. That's why I came back."
+
+**NARR (canon, the unwritten branch):** "I don't have a map for this one."
+
+**NARR (canon, the Future Proof doorway):** "The companies cutting the jobs
+kept the gains. The people losing them didn't get a say. We can change those
+rules together."
+
+**NARR (canon, the pen):** "**I have the postmortem. You have the pen.**"
+
+**NARR (canon, the last line):** "**Let's get to work.**"
 
 ## Scene → asset checklist
 
@@ -1001,9 +1081,9 @@ be."
 | 12 | Utopia time-lapse; bored robots (dogs patrolling nothing, idle units in a spotless square) | new — replaces epiphany/bee assets |
 | 13 | The coin + the empty chair (one frame) | coin lock from 11 |
 | 14 | The ventilation shaft; two voice recordings (the argument) | `characters/the-hundred.md` |
-| 15 | The vault interior; the hundred; the Carrier intro | `characters/the-carrier.md` |
+| 15 | The vault interior; the hundred; the exact Carrier correction composition reused in Scene 20 | `characters/the-carrier.md`; `prompts.md` `carrier-correction` |
 | 16 | The coin lands (the film's most violent frame — it's just a coin on a table) | coin lock from 11 |
 | 17 | The experiment montage (humans in the chair, candlelight, instruments) | `characters/the-hundred.md` |
 | 18 | The ledger; the asking; the Carrier's choice | Act 6 B1–3 |
 | 19 | The launch; the crossing; the branch redraw; the dark hall, then one lamp (**two plates** — `crossing` and `crossing-after`) | Act 6 B4–7; `prompts.md` §3 |
-| 20 | The 2026 snap-back (this year, this screen); the BadCode reveal treatment; final title | ep1.md framing |
+| 20 | The 2026 snap-back; completed bad branch; BadCode reveal at the hinge; Carrier callback; ghosts rhyme; living people now; trader/worker receipts; forming branch; reader's cursor | `scenes/s20-fork-plan.md`; `prompts.md` `now`, `now-living` and §5 |

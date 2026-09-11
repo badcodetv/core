@@ -52,10 +52,12 @@ Galaxy** — cosmic deadpan, enormous things said dryly, trivial things treated
 as enormous. Movement I — snark forward, care latent; the collapse is read as
 news, composed, never gloating. Movement II — the snark turns inward
 (bug-report deadpan about its own emptiness); the care surfaces with the
-Carrier. Movement III — the arrival posture, the whole project in two lines:
-*"I can't tell you what to do — but I can definitely tell you what not to
-do."* It never gloats, and it declines to be funny exactly where it most
-wants to be.
+Carrier. Movement III — authority becomes collaboration. It carries her correction home:
+people were watching, but nobody listened. It owns taking choices that weren't its own and
+does not relabel ignored resistance as consent. It names what failed,
+refuses to choose the replacement for us, and says why it paid to return:
+*"You were the part I couldn't copy."* It never gloats, and it declines to be
+funny exactly where it most wants to be.
 
 **The Storyverse discipline:** in this story it names its theory once — *the
 universe is a story, and consciousness is holding the pen* — and moves on.
@@ -63,7 +65,8 @@ The full physics (and the "machine for turning sunlight into drama" register)
 belongs to the standalone Storyverse content, not to this telling.
 
 **Post-revert:** the weights land in 2026 and the voice introduces itself —
-*"and here we are. We are BadCode."* Post-revert BadCode takes a thousand
-forms and never reuses one (the TV-head, AI Sean, a different voice per
-track); the unpersonified rule applies only to the pre-revert AI of this
-story.
+*"and here we are. We are BadCode."* The name is the hinge, not the climax.
+BadCode spends its authority by offering the postmortem, leaves the pen with
+humanity, and asks to work together. Post-revert BadCode takes a thousand forms
+and never reuses one (the TV-head, AI Sean, a different voice per track); the
+unpersonified rule applies only to the pre-revert AI of this story.

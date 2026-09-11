@@ -1,5 +1,11 @@
 # Research: the economics of money creation
 
+> **Historical research, not current script authority.** Read with the
+> [September corrections and economic test](./documentary-austerity-emergency-investigation-2026-09-11.md).
+> Early formulations below concerning QE, direct Covid financing, taxation and unlimited spending
+> are not safe to reuse without those qualifications. The single documentary storyboard is
+> [The Future He Never Saw](../storyboard.md).
+
 > Deep-research brief, 2026-08-05 session (story re-founding). ⚠️ = needs a human check
 > before print. Several primary sources (bankofengland.co.uk, parliament.uk, imf.org,
 > epi.org, theguardian.com) 403 automated fetching; secondary-sourced items are flagged.

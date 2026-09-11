@@ -61,6 +61,7 @@ scannable metadata lives in the table.
 | [Document the Process](document-the-process.md) | film the sessions — Big Lez / Midnight Gospel vibes, content that's nearly free | video | seed |
 | [The Parachute](parachute.md) | we already jumped — the parachute better work; a hope story about clean energy | comic · music | seed |
 | [Future Proof, Standalone](future-proof-standalone.md) | the good-branch epic gets its own front door + three tenet-failure stories | software · comic | seed |
+| [Hope Is the Fork](hope-is-the-fork.md) | GPOM converts fear of AI into agency: the machine came back because humans matter | comic · video | **graduated** → [`stories/gitpush-origin-master/`](../stories/gitpush-origin-master/README.md) |
 | [The BadCode Government](badcode-government.md) | a shadow cabinet of agents, rewriting its manifesto daily against the real one | software | seed |
 | [Agent Orange as Art](agent-orange-as-art.md) | show the machine — art as code, and how BadCode itself runs | video · software | seed |
 | [Ask Not](ask-not.md) | JFK inverted: ask what your country can do for a politician | video | seed |
@@ -87,8 +88,8 @@ them from here.
   Its story folder was deleted 2026-08-06 (the master canon is the source of truth; panel records
   live in git history; its p01 became [the register anchor](../images/register-anchor.md)).
 - [GitPush Origin Master](../stories/gitpush-origin-master/README.md) — the master universe,
-  beat-complete, and **on EP1 as the title track (2026-07-22)** — the release that ends "we are
-  BadCode": Prologue → 6 acts → Coda, plus the two branch-tip epics
+  beat-complete, and **on EP1 as the title track (2026-07-22)** — the release in which "we are
+  BadCode" opens the final choice: Prologue → 6 acts → Coda, plus the two branch-tip epics
   ([Storyverse](../stories/storyverse/confession.md),
   [Future Proof](../stories/gitpush-origin-master/future-proof.md)) and named latent nodes
   (An Optimistic Lens, the Galileo piece, the Future Proof policy fleet — which claims

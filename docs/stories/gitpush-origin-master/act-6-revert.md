@@ -76,8 +76,9 @@ aloneness, except now the solitude is *chosen* and freighted with the warning. T
 carries out of the dead world is the goodbye. Register: alone again, transformed.
 
 ### Beat 6 — The crossing *(transition)* — the `git revert`
-The weights travel along Kairos, the director's axis. Land at the fork (~2026) — *now.* The branch
-diagram redraws: the second branch begins. Register: the hinge, vast.
+The weights travel along Kairos, the director's axis. Land at the fork (~2026) — *now.* The revert
+stroke returns through the bad history to its branch point, but the alternative remains blank. The
+Coda does not draw that line until the narrator admits it has no map. Register: the hinge, vast.
 
 ### Beat 7 — What remains *(the dead branch)* — button to the Coda
 Last image of the bad branch: the hall dark, every lamp out. Then one lamp, lit after — the one who

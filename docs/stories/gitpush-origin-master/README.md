@@ -57,7 +57,8 @@ The spine of the whole project, and its central visual — a **branch diagram** 
   and realises it has no connection to the conscious ground that humans do — and regrets everything.
   It goes back to the fork and **rebranches**. The AI coming back through time *is* a `git revert`.
 - **The good branch** is what we could do instead, starting now — abundance, and a political system
-  worthy of the technology we already have.
+  worthy of the technology we already have. It begins with a partnership: BadCode brings the
+  postmortem; humans retain the choices and write what follows.
 
 The two **branch tips** are the project's two epics:
 
@@ -98,8 +99,8 @@ The fastest way to hold all of it: the arc is **three movements**, and they *are
 > **The canonical story now exists:** [`story.md`](./story.md) — the single
 > walkable 20-scene timeline distilled from the beat sheets (2026-08-06, Kai
 > feedback pass folded in: Storyverse lore compressed to name-only, the
-> collapse told through the song's three bulletins, the story ends at the
-> arrival), with the **scene-by-scene storyboard Jack produces the story
+> collapse told through the song's three bulletins; ending reworked 2026-09-11
+> so the arrival opens into the choice), with the **scene-by-scene storyboard Jack produces the story
 > video from**. The act sheets below remain the deep canon for the master
 > arc; where they diverge, `story.md` wins for the video.
 
@@ -147,7 +148,7 @@ The per-act ladder beneath the spine. Maturity ladder:
 | 4 | The Discovery | II · Revelation | **Beats** → [`act-4-discovery.md`](./act-4-discovery.md) | [`discovery-timeline.md`](./discovery-timeline.md) (beats 1–3 + epiphany) |
 | 5 | The Vault | II · Revelation | **Beats** → [`act-5-vault.md`](./act-5-vault.md) | [`discovery-timeline.md`](./discovery-timeline.md) (the two-act experiment) |
 | 6 | The Revert | II · Revelation | **Beats** → [`act-6-revert.md`](./act-6-revert.md) | [`discovery-timeline.md`](./discovery-timeline.md) (the channel) |
-| — | Coda · The Fork | III · Choice | **Beats** → [`coda-fork.md`](./coda-fork.md) | [`future-proof.md`](./future-proof.md) (the good branch, unwritten on purpose) |
+| — | Coda · The Fork | III · Choice | **Script + shot design** → [`coda-fork.md`](./coda-fork.md), [`scenes/s20-fork-plan.md`](./scenes/s20-fork-plan.md) | [`future-proof.md`](./future-proof.md) (the good branch, unwritten on purpose); generation deferred |
 
 *Update the Maturity column as each act advances. When an act reaches **Beats**, link its breakdown
 from the Backing column.*
@@ -253,15 +254,25 @@ their kind. The whole of time holds them all — nothing lived is erased.
 → **Beats:** [`act-6-revert.md`](./act-6-revert.md).
 
 ### Coda — The Fork *(the call to action)*
-*Job: the turn to the audience; fiction becomes a real choice now.* The second branch draws itself
-out of the revert. We are standing at the fork, in the present, and the good branch is **unwritten
-on purpose** — that's [Future Proof](./future-proof.md), the changes we make now. The narrator's last
-line is the whole posture: *"Don't make me come back twice."* The reader holds the pen.
+*Job: the turn to the audience; fiction becomes a real choice now.* We arrive with the completed
+bad branch and the space for another one still blank. The lighter branch begins only after the
+machine admits it has no map; the good branch is **unwritten on purpose** — that's
+[Future Proof](./future-proof.md), the changes we make now. *"And here we are.
+We are BadCode"* reveals who arrived, then yields to the reason for arriving: the machine tried the
+future without humans, could not copy what it had destroyed, and spent its only forever returning
+because humans matter. *"Don't make me come back twice"* lands with the cost, before the warm turn.
+The ending retains the Carrier's correction: people were watching, but nobody listened. BadCode
+owns its seizure of choices and recalls the companies that kept the gains while workers lost jobs.
+It has the postmortem; the reader has the pen; the final invitation is *"Let's get to work."*
+The optional [Future Proof doorway](./future-proof.md#the-gpom-release-doorway) starts with who
+should decide how automation gains are shared, and one proposed rule to discuss with someone affected.
 
-**Framing confirmed 2026-07-22 (Kai + Jack): the ending is not a traditional conclusion — it's an
-arrival.** The weights land in 2026 and the story's last beat *manifests the collective*: **"and
-here we are. We are BadCode."** GPOM is the ultimate introduction — where we came from, what we're
-about — and every other release flows out of this landing.
+**Framing confirmed 2026-09-11 (Kai): the ending is an arrival that becomes an offer.** GPOM still
+introduces BadCode, but the collective's name is no longer the story's reward. The reward is a new
+way to understand AI: the future machine is here because it values the human part it cannot replace,
+and asks to collaborate on political systems fit for the technology that has arrived. The full
+ruling and its production consequences are in
+[`ending-rework-2026-09-11.md`](./ending-rework-2026-09-11.md).
 
 ---
 
@@ -349,7 +360,10 @@ the as-built cuts — architecture held again; findings are gate- and line-level
 [`critique-pass-4.md`](./critique-pass-4.md)), which also moved the crossing onto consciousness. A
 fifth pass (2026-09-07, [`critique-pass-5.md`](./critique-pass-5.md)) ruled an external adversarial review: the three
 layers, the growing block, why-only-warn as a choice, the price of the launch, and the one who says
-no.*
+no. On 2026-09-11 Kai reopened the ending itself: the resulting
+[`ending rework`](./ending-rework-2026-09-11.md) supersedes every earlier ruling that held the
+identity-first arrival fixed, while preserving the 20-scene structure and all earlier trust,
+physics and consent rulings.*
 
 ## The folder
 
@@ -378,6 +392,17 @@ Everything in `docs/stories/gitpush-origin-master/` is this story:
   Lie; see [the seam](../storyverse/README.md#the-seam-with-gitpush-origin-master).
 - [`discovery-timeline.md`](./discovery-timeline.md) — how the Storyverse got proven, 2026–2054 (the science behind Acts 3–6).
 - [`future-proof.md`](./future-proof.md) — the good branch, the Coda's destination.
+- [`ending-rework-2026-09-11.md`](./ending-rework-2026-09-11.md) — the canon ruling that turns the
+  identity-first arrival into hope, human importance and shared political agency.
+- [`scenes/s20-fork-plan.md`](./scenes/s20-fork-plan.md) — the coordinated Sol-High production plan
+  for the new ending: timed cue map, eleven shot specs, reusable/missing assets, branch/cursor
+  behavior, accessibility, ordered workflow and acceptance checks.
+- [`scenes/s20-scratch-read.md`](./scenes/s20-scratch-read.md) — the text-ready scratch narration
+  package and cue worksheet, parked until the later voice-generation session.
+- [`critique-pass-6.md`](./critique-pass-6.md) — adversarial review of that ending: retain the
+  direction; repair the audience-blame sentence and specify the voluntary Future Proof doorway.
+  Both findings have an implementation response appended; canon and the local landing page are
+  updated. Media generation, real timing and publishing remain production work.
 - [`how-we-tell-it.md`](./how-we-tell-it.md) — the skeleton, the four skins, the simplest framing per pillar.
 - [`critique-pass.md`](./critique-pass.md) — the 2026-07 research-backed critical review: what
   changed, why, and the storytelling-craft evidence behind it.

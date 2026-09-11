@@ -4,6 +4,12 @@
 > 3–5 and the Coda (the ghosts; the coin; deadpan Act 4; Galileo moved out; beat renumbering).
 > This note remains accurate as a record of the v1 cross-read; where the two disagree,
 > `critique-pass.md` wins. Re-run a cohesion read at Script stage.
+>
+> **Coda superseded again (2026-09-11):** do not use this file's Coda dialogue, order or “wrong
+> answer” check for production. Current authority is [`coda-fork.md`](./coda-fork.md),
+> [`story.md`](./story.md#scene-20--the-fork-why-i-came-back) and
+> [`scenes/s20-fork-plan.md`](./scenes/s20-fork-plan.md). Earlier-act findings remain historical
+> evidence.
 
 *A one-time **note** (not a beat sheet) recording the cross-arc read of all eight beat sheets of the
 [GitPush Origin Master](./README.md) arc, now beat-complete end-to-end. It records: the cohesion

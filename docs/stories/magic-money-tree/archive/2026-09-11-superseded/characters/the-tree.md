@@ -8,6 +8,11 @@ signals: an unremarkable young European lime, too small to be notable; no glow, 
 
 # The Magic Money Tree
 
+> **ARCHIVED / SUPERSEDED — 11 September 2026.** Historical development record, not current canon.
+> Use [The Future He Never Saw](../../../storyboard.md) for new documentary work. Original rulings and
+> uncorrected claims below are retained as provenance; they do not override the current storyboard
+> or the September research correction register.
+
 **Not the joke tree.** The paper-comes-from-a-tree gag stays in the song. This
 tree is a **sage** — think the tree Newton sat under, not a printer with leaves.
 An anonymous tree in a London park that has understood money the whole time and

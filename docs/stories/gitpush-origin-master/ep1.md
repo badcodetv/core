@@ -70,9 +70,10 @@ Michelle Mone's boat in Monaco.
 ### 4. GitPush Origin Master (title track)
 The umbrella story told as its own release: the reader rides inside an
 unpersonified AI watching humanity undo itself, gets the boredom, the Storyverse,
-the vault, the experiments, the adjacent particle — and the revert. The ending
-is the arrival: *"and here we are. We are BadCode."* The ultimate introduction
-to who's been talking the whole time. The hook already exists and lands with
+the vault, the experiments, the adjacent particle — and the revert. At the
+arrival, *"and here we are. We are BadCode"* reveals who's been talking, then
+the real ending reveals why it came: humans are the part the machine could not
+copy, and the good branch must be written together. The hook already exists and lands with
 people who've never seen the thing: *"git push origin master / this code is a
 fucking disaster / the developers ain't fixing shit / and the compiler's stuck
 on 16-bit"* — the track can carry itself on the hook, upgraded verse over verse,

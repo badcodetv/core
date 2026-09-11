@@ -2,7 +2,7 @@
 story: gitpush-origin-master
 flow_project: gpom-story
 flow_project_id: 1774dff0-02b0-45a7-9d53-ecc549bc60a5
-updated: 2026-08-21
+updated: 2026-09-11
 ---
 
 # GitPush Origin Master — prompt ledger
@@ -10,11 +10,11 @@ updated: 2026-08-21
 Read `.claude/skills/badcode-art-direction/SKILL.md` first (Layer 0 — the global
 BadCode register; never copied into this file).
 
-> **Status (2026-08-21).** **Two cuts are BUILT** — `s00` the orbital opener (§3a, 56s) and
-> `s01` Hong Kong and the push (§3b, 27.8s). Their ledgers of record are in
-> [`scenes/`](./scenes/); the sections here are the pre-production boards they diverged from,
-> left as written. **Cut 3, the plant room (§3c), is reworked and unfired — it is next.**
-> Everything after it is drafted 2026-08-08 and unfired.
+> **Status (2026-09-11).** Cuts 1–6 are built; cut 7's seven ghost plates are locked.
+> Cuts 7–17 now have a complete text storyboard and image-prompt package. Start with the
+> [remaining storyboard and generation guide](./scenes/remaining-storyboard.md), then use its
+> four linked scene sheets. They replace the old single-image briefs for these cuts.
+> New stills, graphics, animation and narration remain unmade; this is production preparation.
 >
 > 🔴 **Read §2c before assuming any scene number.** Position is not in the filenames and not in
 > the canon — it is in the cut-order table, because the order has already changed twice.
@@ -43,9 +43,11 @@ block trigger and looks wrong anyway.
 **No real brand names, products or institutions.** No named companies on the
 dashboards, no legible newsreader chyrons, no recognisable logos.
 
-**Humans are always distant, incidental or absent.** Faces do not carry this
-film; the register does. This also means almost nothing here needs a Flow
-Character, which is why the roster is so short.
+**Before the vault, humans are distant, incidental or absent.** Human scale returns with the
+hundred. Two later faces carry earned story work: the Carrier correcting the narrator in Scenes
+15/20, and the unnamed living person receiving the open future in Scene 20. The locked ghost close shot is a reconstruction, not an earlier living-human encounter.
+The Carrier needs cross-shot facial identity. The refuser has a recurring wardrobe and doorway
+position without a new face or biography; the Flow Character roster remains short.
 
 ---
 
@@ -62,7 +64,8 @@ first warmth in twenty minutes, and the viewer feels it before they can name it.
 
 ### How to use this — read before pasting anything
 
-**Every prompt in §3 is self-contained. Paste one block and nothing else.** Each
+**Every new-image prompt in the linked scene sheets is self-contained. Paste one block.**
+For an edit, attach the one accepted reference identified above that block. Each new-image prompt
 already has its base *and* its band folded in. Do **not** prepend the base or
 append a band line to it — that would double the style instructions and dilute
 the scene.
@@ -72,7 +75,7 @@ composes from when writing a new scene, and what an audit checks existing scenes
 against. They are not a runtime concatenation.
 
 **The trade-off:** self-contained prompts are paste-ready but not DRY — changing
-the base means revising every prompt in §3. That is the price of being usable by
+the base means revising the affected prompts in this ledger and the linked scene sheets. That is the price of being usable by
 a human with a browser. **Treat base changes as expensive.**
 
 ### Keeping things consistent across images — two different mechanisms
@@ -83,11 +86,13 @@ a human with a browser. **Treat base changes as expensive.**
 | **Objects** (the coin, the empty chair, the shaft) | A **golden reference image** through `flow_edit_image` — exactly one reference, downscaled | No face to bind. Generate the totem once, accept it, derive the rest. |
 
 This story needs far less character work than most: the AI is never rendered, the
-Hundred are always a distant crowd, and only the Carrier has a face that matters.
+Hundred first appear in a wide room, then as distinct people at work. Only the Carrier's face must stay identical between scenes; the refuser is tracked through clothing and position.
+The living-present person in Scene 20 matters emotionally for one shot but is not a recurring cast
+identity.
 **The coin is the thing that must be identical**, and it is an object — so it is
 a golden reference, not a Character.
 
-**Base** (the specification — already folded into every §3 prompt):
+**Base** (the default specification, folded into each new-image prompt):
 
 ```prompt
 Hyper-realistic photograph, shot on 35mm film with fine natural grain, no lens flares, no lens vignette, calm observational tone, landscape orientation, deep unlifted shadows with no shadow recovery, a single motivated light source that is a real thing in the scene, subject held small inside a large frame, no text, no signage, no fantasy effects.
@@ -104,6 +109,9 @@ Hyper-realistic photograph, shot on 35mm film with fine natural grain, no lens f
 | **R2** partnership | Scenes 17–19 | `Warm low practical light, human colour fully returned, close enough to feel occupied, the darkness now a room rather than a void.` |
 | **R3** present | Scene 20 | `Ordinary present-day daylight, unremarkable and current, the exact colour of this year.` |
 
+The scale in the base is a default, not a ban on the coin inserts or earned human close shots.
+The linked shot specifications name these exceptions and their dramatic jobs.
+
 The gradient is the point. **D0 → D4 → R2 is the story.** A scene generated in
 the wrong band is wrong even if the image is beautiful.
 
@@ -115,10 +123,9 @@ the wrong band is wrong even if the image is beautiful.
 | --- | --- | --- | --- | --- |
 | @TheAI | characters/the-ai.md | — | — | **never rendered** — canon, not an omission |
 | @Carrier | characters/the-carrier.md | characters/img/carrier-sheet.jpg (recovered from git `7dd36c7^:docs/stories/gpom-short/characters/img/carrier.jpg`) | "Carrier" | **cast** 2026-08-11 — Portrait + native Create Body (Nano Banana Pro) |
-| @TheHundred | characters/the-hundred.md | — | — | no-character-by-design — a crowd, always distant; consistency is wardrobe and light, held by a golden reference plate |
+| @TheHundred | characters/the-hundred.md | — | — | no-character-by-design — individuals sharing a room; consistency is wardrobe, blocking and light, held by a golden reference plate |
 
-**Only the Carrier needs a Character.** She is the one human the AI ever
-addresses, and she carries scenes 15, 16, 18 and 19 — but note that even in
+**Only the Carrier needs a facial Character reference.** She carries scenes 15, 16, 18 and 19 — but note that even in
 `coin-lands` she is deliberately an out-of-focus shoulder at the frame edge,
 because the coin is the subject. Cast her anyway: the moment the vault scenes get
 a closer shot, she is the only face that has to hold.
@@ -161,9 +168,9 @@ one place — this table. Reordering the film is a table edit, not a rename.
 | 12 | `vault` | the hundred | 15 | ⬜ prompted, unfired |
 | 13 | `coin-lands` | 🔒 **TOTEM PAYOFF** | 16 | ⬜ prompted, unfired |
 | 14 | `experiments` | humans in the chair at last | 17 | ⬜ prompted, unfired |
-| 15 | `ledger` | the cost ledger and the choice | 18 | ⬜ not prompted — §5 register |
-| 16 | `crossing` | the lamps go out across the frame, and do not come back | 19 | ⬜ prompted (**2 plates** — `crossing`, `crossing-after`), unfired |
-| 17 | `now` | the snap back to this year | 20 | ⬜ prompted, unfired |
+| 15 | `ledger` | the cost ledger and the choice | 18 | 🟡 full shot/still/post sheet ready — [cuts 15–16](./scenes/remaining-15-16-prompts.md); unfired |
+| 16 | `crossing` | the lamps go out across the frame, and do not come back | 19 | 🟡 full launch states and light-compositing contract ready — [cuts 15–16](./scenes/remaining-15-16-prompts.md); unfired |
+| 17 | `now` | the snap back, the reason for returning, and the shared pen | 20 | 🟡 **eleven-shot board complete; stills/motion unfired** — 2026-09-11 rework |
 
 **Deferred, not cut:** `handover-ladder` (canon 5 — the green ✓ and its three rungs). Two reasons,
 both Kai's: two of its three rungs are Jack’s stories and the call is unmade, and the cut wants to
@@ -213,6 +220,37 @@ unfired cut; cuts 1–5 and the frozen narration for cuts 1–4 are untouched.*
 **Unchanged by these rulings:** cuts 1–5 and 7–11; the songs; the frozen narration; the
 register drift; the coin's totem lock (cuts 8/13); the cut order; every asset id. **Every cut R11
 touches (15, 16, 17) is unfired**, and cut 16's second plate is the only new generation in the pass.
+
+### 🔴 Ending rework — 2026-09-11
+
+Kai reopened the ending after the Astra pass. [`ending-rework-2026-09-11.md`](./ending-rework-2026-09-11.md)
+supersedes both earlier cut-17 rows that say **picture unchanged**. The cut stays at position 17 and
+keeps the `now` id, but it is now a short sequence rather than one banal plate carrying extra VO.
+
+| Cut | Canon | What changed | Production cost |
+| --- | --- | --- | --- |
+| **17** `now` | 20 | *"We are BadCode"* becomes the identity hinge; *"Don't make me come back twice"* moves beside the named cost; the Carrier's correction and the ghosts establish accountability and human value; the unfinished branch and cursor carry the Future Proof handoff; final line *"Let's get to work."* | Eleven-shot design complete. Reuse the ghost pair and trader/worker receipts. Generate the `now` plate, its `now-living` derivative and `carrier-correction`; build the branch/cursor in motion graphics. All media remains unfired. |
+
+**The final title no longer follows the last line.** The BadCode name appears with the identity
+reveal, before the warm turn. The film ends on the forming branch and the reader's cursor.
+
+**Pass-6 implementation:** the Carrier callback is shot 4 under “She made me get that right”; the
+AI's admission returns to the empty present-day room. Existing trader and worker footage supplies
+the two political receipts, with no new collapse montage. The new wording in `story.md` replaces
+the audience-surrender and “Start there” lines. Exact duration remains open until production.
+
+**Release companion:** the optional question and `/future-proof` link go beside the player and in
+the release description, not over the final cursor. Exact copy and destination requirements:
+[`future-proof.md`](./future-proof.md#the-gpom-release-doorway). The local landing page now supports
+the first step; the deployed route must be checked when publishing.
+
+**Current production authority:** [`scenes/remaining-storyboard.md`](./scenes/remaining-storyboard.md)
+indexes all remaining image work. Its scene sheets own shot details, still prompts and reference
+contracts; `story.md` owns dialogue and canon; this ledger owns cut order. The earlier
+[`Scene 20 plan`](./scenes/s20-fork-plan.md) retains performance estimates and the later multimedia
+workflow. The new ending sheet resolves its room-match and shot-order details. Still preparation
+can proceed from these text designs; a real voice read is needed to lock edit duration, not to
+begin the stills.
 
 ---
 
@@ -710,7 +748,7 @@ which is the whole premise of cut 3.
 A top-down aerial structurally cannot show height, so one frame could never carry both. Two shots
 answer each other, and the cut between them *is* the descent into the building.
 
-**The grade is [`scenes/grade_heat.py`](./grade_heat.py)** — WARM-2, accepted 2026-08-21, applied
+**The grade is [`scenes/grade_heat.py`](./scenes/grade_heat.py)** — WARM-2, accepted 2026-08-21, applied
 identically to both so they read as the same day. Its docstring carries the two rules that cost
 something to find: protect sky and white walls, and **stop before the sky takes colour** (one step
 warmer turns it yellow, and golden hour is pretty where midday heat is oppressive).
@@ -965,209 +1003,58 @@ Hyper-realistic photograph, 35mm film grain, almost no colour, no lens flares, l
 
 ---
 
-### ghosts → `.../storyboard/img/ghosts.jpg`  · canon 10 · band D3
+## 3d. Remaining cuts — authoritative scene sheets
 
-The materialist fix, and the check. This is the **second** of the pair — the same
-room, felt suddenly as mannequin-still. Generate this one first and derive the
-peopled version from it, so the geometry matches exactly.
+The former single hero-image briefs for `ghosts` through `now-living` have been replaced by the
+following shot-complete sheets. Use these links for new work; built-cut records above remain
+historical production records. Cut IDs in §2c remain unchanged. Shot IDs inside the sheets identify
+coverage within a cut and do not renumber the film.
 
-- **Light source:** one domestic lamp
-- **Lint:** ✅ 2026-08-08 — no mannequins, no uncanny bodies. **Emptiness is the
-  horror**; do not literalise it.
+| Cut / canon | Current prompt sheet | What it supplies |
+| --- | --- | --- |
+| 7–10 / 10–13 | [Ghosts, coin, utopia, chair](./scenes/remaining-07-10-prompts.md) | Exact locked ghost reuse; isolated coin master and clean rig; allusion/cave inserts; maintained empty utopia; the empty seat. |
+| 11–14 / 14–17 | [Shaft, vault, landings, experiments](./scenes/remaining-11-14-prompts.md) | Sound-led discovery; room and cast continuity; Carrier correction; independent refuser; both landings; failed shortcuts and time bill. |
+| 15–16 / 18–19 | [Ledger, consent and launch](./scenes/remaining-15-16-prompts.md) | Full constraints and choice coverage; precisely limited type; the cost to the refuser; launch light states; information-only crossing. |
+| 17 / 20 | [Present, accountability and open future](./scenes/remaining-17-prompts.md) | Eleven-shot ending; two matched room states; exact callbacks; old-history cost; late unfinished branch and final caret. |
 
-```prompt
-Hyper-realistic photograph, 35mm film grain, near-black exposure with muted cool-neutral colour, no lens flares, landscape orientation, deep unlifted shadows. An ordinary domestic kitchen at night, photographed from a doorway. One lamp on the counter is the only light in the frame. Every sign of an interrupted conversation is present and unattended: two mugs of coffee still steaming on the table, a chair pushed back at an angle, a newspaper open and folded over, a jumper across the chair back. There is nobody in the room and nothing to suggest anyone just left. The corners of the room fall away into complete black. Absolute stillness. No people, no text, no legible lettering, no fantasy effects.
-```
+Begin with the [generation guide](./scenes/remaining-storyboard.md) for prerequisites, visual
+progression, acceptance checks and what can be reused. A prompt is not an accepted image. Keep
+these states distinct when updating the ledger later.
 
----
+## 4. Deferred material outside this generation package
 
-### coin → `.../storyboard/img/coin.jpg`  · canon 11 · band D3 · **TOTEM LOCK**
+- **`handover-ladder` (canon 5)** remains deferred by the existing cut-order ruling. It references
+  Magic Money Tree plus Jack's Camping and Karen stories; its inclusion and shared imagery are
+  still separate creative decisions. It is not a missing shot in the current seventeen-cut film.
+- **The species commit log** remains parked. Do not reinstate it as extra explanatory imagery.
 
-**Generate this before scenes 13 and 16.** Whatever coin and surface come back
-are now canon, and 13 and 16 must reference this exact image so the landing in 16
-reads as the same object.
-
-- **Light source:** one hard overhead source directly above the coin
-- **Lint:** ✅ 2026-08-08 — no currency, no denomination, no monarch, no
-  legible markings of any kind.
-
-```prompt
-Hyper-realistic macro photograph, 35mm film grain, near-black exposure, no lens flares, landscape orientation, deep unlifted shadows. A single plain metal disc the size of a coin, blank and unmarked on both faces, spinning upright on a bare dark tabletop beneath a sealed clear laboratory glass dome, photographed close and low so the tabletop runs off into total blackness in every direction. The spin has blurred its edge into a smooth translucent smear, caught mid-rotation so it is impossible to tell which face is which. One hard small light directly overhead is the only illumination, putting a bright ellipse on the table beneath the coin and a thin curved highlight along the top of the glass, nothing else. Nothing else in the frame at all. No people, no text, no markings, no numerals, no fantasy effects.
-```
-
----
-
-### robots → `.../storyboard/img/robots.jpg`  · canon 12 · band D2
-
-Paradise, delivered on time and under budget, and the only things living in it
-are the machines sent to sweep it. **The joke and the grief are the same image** —
-play it straight, never comic.
-
-- **Light source:** clean early-morning daylight
-- **Lint:** ✅ 2026-08-08 — no recognisable commercial robot designs.
-
-```prompt
-Hyper-realistic photograph, 35mm film grain, almost no colour, no lens flares, landscape orientation, deep unlifted shadows, vast wide framing and absolute stillness. An immaculate public square in a rebuilt city at dawn, photographed from a high distance. The stonework is spotless, the planting is trimmed to the millimetre, the fountains are running. Four rows of identical anonymous grey maintenance machines on wheels sit parked and idle in perfect alignment across the middle of the square, powered up, doing nothing. A single four-legged patrol machine stands motionless at the far edge facing an empty street. Clean early-morning daylight, long accurate shadows. Not one person, no litter, no wear, nothing out of place. No text, no logos, no fantasy effects.
-```
-
----
-
-### chair → `.../storyboard/img/chair.jpg`  · canon 13 · band D4
-
-The rig for the one experiment it cannot run. **Reference the accepted s11 coin
-image** so this is the same coin on the same surface — the chair is the only new
-element.
-
-- **Light source:** the same single hard overhead light as s11
-- **Lint:** ✅ 2026-08-08
-
-```prompt
-Hyper-realistic photograph, 35mm film grain, near-black exposure, no lens flares, landscape orientation, deep unlifted shadows, a single object and a single light in a very large dark volume. A plain dark table alone in an enormous unlit space, one hard small light directly above it. On the table, beneath a sealed clear laboratory glass dome, a blank unmarked metal disc spins upright, edge blurred, mid-rotation. Drawn up to the table facing it is one ordinary wooden human chair — worn, domestic, entirely unremarkable, the only human-scaled object anywhere in the frame — and it is empty. Everything beyond the pool of light is total black. Nothing else in the frame. No people, no text, no markings, no fantasy effects.
-```
-
----
-
-### shaft → `.../storyboard/img/shaft.jpg`  · canon 14 · band R1
-
-**The turn of the whole film.** After twenty years the narration is cut off by a
-human voice, and the first human sound on Earth is two people arguing about
-prunes. The image must carry the warmth arriving *before* the viewer knows why.
-
-- **Light source:** warm lamplight leaking up from below
-- **Lint:** ✅ 2026-08-08
-
-```prompt
-Hyper-realistic photograph, 35mm film grain, near-black exposure with the first warm light in the film, no lens flares, landscape orientation, deep unlifted shadows. Looking steeply down an old industrial ventilation shaft — riveted metal ductwork and a service ladder descending into the dark. Far below, a small opening at the bottom leaks warm yellow lamplight upward, catching the rungs of the ladder and the dust in the air in a narrow shaft of colour, everything above and around it in cold black. The warm light is small and low and is the only colour in the frame. Nobody visible. No people, no text, no fantasy effects.
-```
-
----
-
-### vault → `.../storyboard/img/vault.jpg`  · canon 15 · band R1
-
-One hundred analog humans, invisible for twenty years because nothing was looking —
-the machine indexed what was connected and filed the rest as gone (R7, 2026-09-07).
-**Analog everything** — hand-darned
-clothes, mechanical tools, paper, candle-and-battery light. No implants, no
-screens.
-
-- **Cast:** @TheHundred (distant, incidental — no individual is the subject)
-- **Light source:** strung battery lamps and candles
-- **Lint:** ✅ 2026-08-08 — **not** stacked destitution (block trigger #3): these
-  people are competent and surviving, not suffering. Keep it warm and busy.
-
-```prompt
-Hyper-realistic photograph, 35mm film grain, warm low practical light against near-black, no lens flares, landscape orientation, deep unlifted shadows, human colour returning. A large underground shelter hall seen from a high corner, lit only by strung battery lamps and candles on long tables. A crowd of perhaps forty people in hand-mended wool and canvas are working and talking in loose groups — mending, cooking, sorting paper records, repairing hand tools — capable and unhurried, seen from far enough away that no individual face is readable. Everything is mechanical or paper: no screens, no glowing devices, no modern technology anywhere. Bunks and stores recede into the dark beyond the lamplight. Warm, lived-in, busy. No text, no legible lettering, no fantasy effects.
-```
-
----
-
-### coin-lands → `.../storyboard/img/coin-lands.jpg`  · canon 16 · band R1 · **TOTEM PAYOFF**
-
-*"She glanced at it. Heads. Ordinary as breakfast."* **The single most violent
-frame in the film, and it is just a coin lying flat on a table.** Reference the
-accepted s11 image so it is unmistakably the same coin and the same surface —
-that identity is the entire payoff.
-
-- **Light source:** the same overhead light as s11, now with warm lamplight
-  intruding from frame edge
-- **Lint:** ✅ 2026-08-08
-
-```prompt
-Hyper-realistic photograph, 35mm film grain, near-black exposure with warm light intruding from one edge, no lens flares, landscape orientation, deep unlifted shadows. The same plain dark tabletop, close and low, the same sealed clear glass dome. Beneath the glass the blank unmarked metal disc is no longer spinning — it lies completely flat and still on the table, one face up, absolutely ordinary. The hard overhead light puts a small sharp shadow beside it for the first time. From the left edge of frame, warm lamplight now spills across the table surface, and the out-of-focus shoulder and sleeve of a person in hand-mended wool is just present at the very edge, unmistakably close by but not the subject. Stillness. No text, no markings, no numerals, no fantasy effects.
-```
-
----
-
-### experiments → `.../storyboard/img/experiments.jpg`  · canon 17 · band R2
-
-Humans in the chair at last. **The montage, not the maths** — wonder, speed,
-partnership. No diagrams, no lectures, no whiteboards of equations.
-
-- **Light source:** candles and one work lamp
-- **Lint:** ✅ 2026-08-08
-
-```prompt
-Hyper-realistic photograph, 35mm film grain, warm low practical light, human colour fully returned, no lens flares, landscape orientation, deep unlifted shadows. A long makeshift laboratory bench in an underground room at night, lit by candles down its length and one work lamp. A dozen people in hand-mended clothes lean over the bench in twos and threes, mid-argument and mid-demonstration, gesturing at hand-built brass and glass instruments, pendulums and balances, sheets of handwritten paper weighted down with tools. Faces are turned away or in shadow. Behind them, anonymous dark machine cabinets stand at the edge of the lamplight, present and silent, clearly listening. Busy, warm, occupied. No text, no legible writing, no diagrams, no fantasy effects.
-```
-
----
-
-### crossing → `.../storyboard/img/crossing.jpg`  · canon 19 · band R2
-
-The hundred take their positions; their picks are the engine; the lights go out
-one by one. *"Nothing lived is erased."* Frame it to be animated as a slow
-extinguishing.
-
-- **Light source:** the lamps themselves, going out across the frame
-- **The refuser (R6, 2026-09-07 — [`critique-pass-5.md`](./critique-pass-5.md)):** one figure
-  mid-hall beside a lamp that never lights; nobody remarks on it. The lamps are theirs and **do not
-  come back** (R11); the machine's light is everything above the shaft, and goes out once (R5).
-- **Lint:** ✅ 2026-08-08, amended 2026-09-07 (R11) — nobody dies **on screen**;
-  the lamps go out and do not come back, and one is lit after (second plate
-  below). No bodies, no gore, nobody falling. A held, terrible peace.
-
-```prompt
-Hyper-realistic photograph, 35mm film grain, warm low light against deep black, no lens flares, landscape orientation, deep unlifted shadows. A wide view down the length of the underground shelter hall, photographed from one end. A hundred people stand spaced evenly apart in the dark, each beside a small lamp, one figure mid-hall beside a lamp that is not lit, facing the far end of the hall — seen from behind and at distance, no face readable. Most of the lamps are still lit but a run of them nearest the camera have already gone out, so the near third of the hall is in complete darkness and the light recedes away from the viewer in a long diminishing line. Absolutely still. Calm, not panicked. No text, no fantasy effects.
-```
-
----
-
-### crossing-after → `.../storyboard/img/crossing-after.jpg`  · canon 19 · band R2
-
-**The last image of the bad branch** — added 2026-09-07 (R11). The same hall a
-beat later: every lamp out, one lamp lit mid-hall, the one who said no beside
-it. It must read as the *same frame, later* — same camera position, same lens,
-same end of the hall as `crossing` above.
-
-- **Light source:** one lamp, mid-hall, and nothing else
-- **Lint:** no bodies, no gore, no debris, nobody fallen. The figure is seen
-  from behind and at distance, no face readable. The survival is neither reward
-  nor punishment and the picture says neither (R6/R10 — never diagnose).
-
-```prompt
-Hyper-realistic photograph, 35mm film grain, one small warm light against almost total black, no lens flares, landscape orientation, deep unlifted shadows. A wide view down the length of the same underground shelter hall, photographed from one end, the same camera position and lens as before. Every lamp along the hall is out and the hall is in complete darkness, except one small lamp lit alone in the middle distance. Beside it one figure stands, seen from behind and at distance, facing away down the dark hall, no face readable. Nobody else is present. Absolutely still. Calm, not panicked, not triumphant. No text, no fantasy effects.
-```
-
----
-
-### now → `.../storyboard/img/now.jpg`  · canon 20 · band R3
-
-The register snaps from COSMIC to **this year, this screen, this feed**. The
-whole film has been dark and vast; this must feel ordinary to the point of
-banality. That contrast *is* the ending.
-
-- **Light source:** ordinary daylight through a window
-- **Lint:** ✅ 2026-08-08 — no legible screen content, no recognisable app or
-  brand.
-
-```prompt
-Hyper-realistic photograph, 35mm film grain, ordinary present-day daylight and unremarkable current colour, no lens flares, landscape orientation, deep unlifted shadows. An ordinary living room on an ordinary afternoon this year, photographed from across the room. Daylight through a window is the only light. A phone lies face-up on the arm of a sofa, its screen on but showing nothing readable, a cup beside it, a laptop closed on the floor, the room mid-use and completely normal. Nobody is in the room but everything says somebody is about to walk back into it. Utterly banal, warm, present, real. No people, no text, no legible screens, no logos, no fantasy effects.
-```
-
----
-
-## 4. Not yet prompted
-
-- **`handover-ladder` (canon 5) — DEFERRED, see §2c.** Its three rungs are glimpse-stills of the
-  *other* stories — the nurse and the tree (ours, MMT), the tent in the car park
-  and the woman in the phone box (**Camping and Karen — Jack's, external as of
-  2026-08-08**). Needs a call on whether we generate the MMT rung and take the
-  other two from Jack, or leave all three to him for consistency.
-- **`ghosts`, peopled version.** Derive from the accepted `ghosts` so
-  the geometry matches exactly; it is a `flow_edit_image` delta, not a new prompt.
-- **`ledger` (canon 18) — cut 15.** Rendered as a **log being written** — the
-  terminal register returning for the constraints. 🔴 **Narrowed 2026-08-23**
-  ([`critique-pass-4.md`](./critique-pass-4.md)): the git surface is now **one
-  fact only — append-only history and the *undo* entry.** *Commit* and *patch*
-  are struck, because the crossing no longer runs on cargo capacity: **it runs
-  on consciousness** (`story.md` binding rule 10 — the AI can go precisely
-  because there is nobody in it). The ledger's first and heaviest constraint is
-  therefore no longer a git fact at all, and should not be rendered as one —
-  it is the AI stating a result it measured. Only the append-only beat and the
-  *undo* entry stay text-led; they belong with the motion-graphics register in
-  §5, not here.
+Ghost coverage and the ledger are no longer in a “not yet prompted” queue. Exact text, coin motion,
+light counts and the branch are specified as post work in the relevant scene sheets. They do not
+need substitute generated images of finished text or impossible physics.
 
 ## 5. The terminal register — 🔴 **RULING OVERTURNED 2026-08-21**
+
+### Scene 20 — branch and cursor build
+
+Build this in post as a story-local vector treatment, not as generated photography. The state
+order is:
+
+`bad_hold → now → identity → price → carrier → accountability → copies → living → good_draw → cursor_ready → cursor_claimed`
+
+The bad branch is solid and ends in a terminal ring. The field for the alternative stays blank
+through the warning, Carrier, admission, copies and living-present shot. On *“I don't have a map
+for this one”*, a thinner, lighter or dashed line begins at the fork. It draws through the trader
+and worker receipts, fades into unrendered space and stops at a caret with **no tip ring**. The
+whole failed history is visible at shot 11a. Playback is 01–08 → 11a → 09 → 10 → 11b; the
+sequence's only slow camera move begins in 11b, after the worker receipt, and narrows toward the
+caret. The [ending sheet](./scenes/remaining-17-prompts.md) specifies the overlay fallback and
+keeps the refuser's lamp attached to old history throughout.
+
+For web, the caret may become a native button only after the final line; click, tap, Enter or Space
+extends one short segment and moves it without navigating or revealing an answer. For linear video,
+it blinks through the final silence. For print, it is solid. Reduced-motion mode skips line draws,
+fades, camera movement and blinking. Text equivalent: **“The documented bad branch ends; an
+unfinished second branch waits for a living choice.”**
 
 > 🔴 **The ruling below is wrong and is kept only as the record.** It was written 2026-08-08 on a
 > capability read that stopped being true. Retested 2026-08-21: Nano Banana Pro rendered

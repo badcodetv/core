@@ -8,6 +8,11 @@ signals: three-piece suit, moustache, heavy-lidded eyes; carries papers he never
 
 # John Maynard Keynes
 
+> **ARCHIVED / SUPERSEDED — 11 September 2026.** Historical development record, not current canon.
+> Use [The Future He Never Saw](../../../storyboard.md) for new documentary work. Original rulings and
+> uncorrected claims below are retained as provenance; they do not override the current storyboard
+> or the September research correction register.
+
 The real man, historically *inspired* (Bernard Cornwell register, not biography):
 Britain's greatest economist at the lowest point of the war, sat on a park bench
 trying to solve an impossible sum — how a broke country pays for total war. He is
@@ -29,8 +34,8 @@ can never restart*. And it's why the final scene breaks him: **the ghost ends
 the story head in hands at the winter bench**, watching the wealth gap re-arm
 the exact despair he spent his life disarming.
 
-**Anchor lines (real, verbatim — see [`../research/economics-of-money-creation.md`](../research/economics-of-money-creation.md)
-and [`../research/fascism-and-the-wealth-gap.md`](../research/fascism-and-the-wealth-gap.md)):**
+**Anchor lines (real, verbatim — see [`../research/economics-of-money-creation.md`](../../../research/economics-of-money-creation.md)
+and [`../research/fascism-and-the-wealth-gap.md`](../../../research/fascism-and-the-wealth-gap.md)):**
 - "Anything we can actually do we can afford." (BBC talk; printed in *The Listener*, 2 April 1942 — broadcast date ⚠️ unconfirmed, see `research/documentary-research-2026-08-25.md` §2)
 - Inflation is "a demand in excess of the physical possibilities of supply." (same broadcast)
 - "You don't build houses with money… Do you mean that there won't be enough

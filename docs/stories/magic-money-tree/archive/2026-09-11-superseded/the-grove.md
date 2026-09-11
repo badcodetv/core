@@ -1,14 +1,19 @@
 # The Grove — how magic money trees actually work
 
+> **ARCHIVED / SUPERSEDED — 11 September 2026.** Historical development record, not current canon.
+> Use [The Future He Never Saw](../../storyboard.md) for new documentary work. Original rulings and
+> uncorrected claims below are retained as provenance; they do not override the current storyboard
+> or the September research correction register.
+
 > **Added 2026-08-07 (Kai's lore session).** The worldbuilding layer under the story:
 > what a magic money tree *is*, where they live, what the park tree's parentage is,
 > and the history the tree can teach Keynes from the bench. Every load-bearing fact
-> is cited in [`research/central-bank-trees.md`](./research/central-bank-trees.md).
+> is cited in [`research/central-bank-trees.md`](../../research/central-bank-trees.md).
 >
 > **This does not change the spine.** Keynes still talks to a tree; the tree is still
 > a sage, not a gag. What this adds is a *mechanism* (so the economics can be shown
 > instead of explained) and a *family* (so the tree can testify to history it
-> personally remembers). See [`story.md`](./story.md) for how it lands in the beats.
+> personally remembers). See [`story.md`](story.md) for how it lands in the beats.
 
 ## The one-line version
 
@@ -48,7 +53,7 @@ opinion:
 **Hollow fruit is the visual.** Wheelbarrows of perfect, worthless notes. And its
 opposite — the good fruit — is a note that gets *spent*, over and over, warm from
 being handled. This plugs straight into the existing flow-vs-freeze grammar
-([`research/ken-honda-happy-money.md`](./research/ken-honda-happy-money.md)):
+([`research/ken-honda-happy-money.md`](../../research/ken-honda-happy-money.md)):
 hollow = printed past capacity; frozen = printed correctly and then parked.
 **Two different failures.** The story has always been about the second. The lore now
 lets us *show* the first and dismiss it, which is exactly the move that earns us the
@@ -215,7 +220,7 @@ They spent the next fifty years finding out. Badly.
 - **The tree is still a sage, not a gag.** The grove is *mechanism and family*, not
   comedy. The tree gets one or two dry jokes about being a tree, total.
 - **Never a face. Never roots that walk.** Documentary realism holds
-  ([`characters/the-tree.md`](./characters/the-tree.md)). Performance is wind, light,
+  ([`characters/the-tree.md`](characters/the-tree.md)). Performance is wind, light,
   leaf-fall, and going bare out of season.
 - **The Garden Court mulberries are shown, never voiced.** They're too young to have
   anything to say, and that's the point. If we ever see them, it's footage of a

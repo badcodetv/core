@@ -1,5 +1,11 @@
 # The Emperor's New Coin — folded into Magic Money Tree
 
+> **Documentary scope — 11 September 2026:** the coin project and its development history below
+> are preserved. The new film follows [The Future He Never Saw](./storyboard.md), with no coin
+> cameo or promotion. Earlier fable premises are not documentary facts; the storyboard and
+> [September investigation](./research/documentary-austerity-emergency-investigation-2026-09-11.md)
+> supply the current economic qualifications.
+
 > **Status (2026-08-06, Kai):** Emperor's New Coin is **no longer its own story**.
 > It becomes a **cryptocurrency** that folds into the Magic Money Tree — the real
 > linkage is social-media cross-promotion (story ↔ coin), with at most a cameo

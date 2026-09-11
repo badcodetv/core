@@ -2,7 +2,7 @@
 name: the-carrier
 role: deuteragonist — the one human who answers back
 voice: "dry, unimpressed, practical; argues as easily as breathing; warmth carried in bluntness, never sentiment"
-sheet: none yet — look pinned below (inherited from the GPOM Short)
+sheet: characters/img/carrier-sheet.jpg — cast as the Flow Character `Carrier`
 signals: wiry ~60, self-cut grey hair, navy wool jumper hand-darned in slightly-wrong green, glasses on a braided cord
 ---
 

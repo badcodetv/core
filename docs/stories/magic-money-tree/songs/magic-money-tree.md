@@ -19,6 +19,13 @@ voices: [rapper, politician]
 
 # Magic Money Tree (song)
 
+> **Documentary separation — 11 September 2026:** [The Future He Never Saw](../storyboard.md) is
+> now the sole video storyboard. Approved lyrics and music-development history below are preserved;
+> old statements prescribing the film's ledger, montage or ending no longer govern that film.
+> This song is not appended in full by default. Historical documentary references resolve to the
+> [archived treatment](../archive/2026-09-11-superseded/documentary.md). The September research
+> corrections also apply if historical claims from these notes are reused in new work.
+
 **The canonical song file.** Bouncy jump-up D&B, comedic UK rap, 172 BPM. The
 liquid/spoken-word rework was deleted 2026-08-18 (Kai) — it lives in git history
 only; do not resurrect it. The dumb-genius payoff stands: the magic money tree is

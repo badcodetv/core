@@ -103,11 +103,26 @@ it went wrong" beat and let repetition argue.
 **Address is the default; the sincere turn is rationed** (ruling 1). The Guide register talks to
 "you" throughout — Pattison's second person, a narrator telling "you" what you cannot yet see (brief
 14). What is spent once, last, in the care register, aimed at the chooser, is the *sincere* turn
-(*"Don't make me come back twice"*). Direct address that **accuses** the viewer is reactance bait
+(GPOM: *"You were the part I couldn't copy"*; its harder *"Don't make me come back twice"* now
+lands before that turn). Direct address that **accuses** the viewer is reactance bait
 (brief 06); direct address that makes the reader **co-author** — Le Guin's Omelas, "perhaps it would
 be best if you imagined it as your own fancy bids" — implicates without accusing (brief 20). The one
 other licensed break is the *Big Short* confession: a mechanism too dry for a scene, explained
 straight to camera, once, mid-piece, about a trick being run on someone else (briefs 09, 16).
+
+**A creator identity reveal is a hinge, not the public-purpose payoff** *(GPOM ruling,
+2026-09-11).* If a long story reveals the name of the project that made it, spend the name
+immediately on the audience's question: why did this messenger come, what did it pay, and what
+changes for the reader? Ending on the name risks converting earned feeling into an advert. GPOM
+keeps *"We are BadCode"* as the arrival, then answers it with human importance and shared agency.
+
+**The final address must remember what the narrator learned** *(craft judgement from GPOM
+[pass 6](../stories/gitpush-origin-master/critique-pass-6.md), 2026-09-11).* If a human successfully
+corrected the narrator — people protested but were ignored — a final “you surrendered your choices”
+can quietly undo that learning. Compare the last judgement with the human testimony the story
+accepted. Review labels such as “hope” and “collaboration” against the actual dialogue and picture;
+the label itself is not evidence. Also distinguish an emotional invitation from a usable route
+into the next piece: a film's pictured cursor cannot substitute for a reachable next step.
 
 **Flat baseline, one crack.** The petty-omnipotent voice is funniest when composure holds and only
 *control* slips — GLaDOS, the Stanley Parable's narrator: formal diction colliding with a plot that

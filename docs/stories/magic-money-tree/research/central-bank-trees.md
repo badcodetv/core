@@ -12,7 +12,7 @@
 courtyard, and it planted them in the early 1940s because the oldest banknote it
 owns is made of tree.** We did not invent the premise of this story. We found it.
 
-Every load-bearing element of the lore in [`../the-grove.md`](../the-grove.md) has a
+Every load-bearing element of the lore in [the archived grove treatment](../archive/2026-09-11-superseded/the-grove.md) has a
 citation in this brief. That is the point: when the audience Googles it, it holds.
 
 ## 1. The Bank of England's mulberries (Garden Court, Threadneedle Street)
@@ -63,7 +63,7 @@ citation in this brief. That is the point: when the audience Googles it, it hold
   Baker's rebuild. The four mulberries are its **replacements**, not its companions.
 - **Story value:** the Bank of England removed the one old tree that had stood there
   since the 1780s and installed four young ones. In canon, the park tree is the
-  lime's child and does not know the parent is gone. See [`../the-grove.md`](../the-grove.md).
+  lime's child and does not know the parent is gone. See [the archived grove treatment](../archive/2026-09-11-superseded/the-grove.md).
 
 ## 4. What banknotes are actually made of (the joke's factual floor)
 

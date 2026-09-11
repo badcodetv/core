@@ -1,5 +1,10 @@
 # Easter eggs & found details — the 2026-08-07 deep pass
 
+> **ARCHIVED / SUPERSEDED — 11 September 2026.** Historical development record, not current canon.
+> Use [The Future He Never Saw](../../storyboard.md) for new documentary work. Original rulings and
+> uncorrected claims below are retained as provenance; they do not override the current storyboard
+> or the September research correction register.
+
 > Kai asked: *is there anything we've missed — any easter eggs, twists, or
 > interesting parts of the story?* This file is the answer: details found latent
 > in the material we already have, ranked by what they'd do for the film.
@@ -7,7 +12,7 @@
 > carries a recommendation; Kai rules on promotion before the script.
 >
 > Verified facts cited here are (or will be) anchored in
-> [`research/central-bank-trees.md`](./research/central-bank-trees.md) §12–16.
+> [`research/central-bank-trees.md`](../../research/central-bank-trees.md) §12–16.
 > ⚠️ = needs a verification pass before print.
 
 ## Tier 1 — recommend promoting to canon (verified, cheap, load-bearing)
@@ -103,7 +108,7 @@ after denying it existed, for ten votes. Not for the nurse. The tree's driest
 possible delivery: *"Twenty-four days."*
 
 **Recommendation:** insert into beat 7's chronology. Verified, already cited in
-[`research/theresa-may-question-time.md`](./research/theresa-may-question-time.md).
+[`research/theresa-may-question-time.md`](../../research/theresa-may-question-time.md).
 
 ### 6. The language of money is already botanical — politicians pray to the tree on camera
 

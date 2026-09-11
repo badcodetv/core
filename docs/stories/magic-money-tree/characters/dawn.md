@@ -8,6 +8,10 @@ signals: NHS scrubs, fob watch, lanyard — a lifetime of undervalued care work
 
 # Dawn
 
+> **Legacy comic asset reference only.** Retained for the original live comic and its editing
+> tools. Dawn is fictional and does not appear in the current documentary. New story work follows
+> [The Future He Never Saw](../storyboard.md); the old narration is not historical evidence.
+
 A nurse in her late fifties. She has kept strangers alive for thirty years and
 has nothing to show for it but sore feet and a kindness she refuses to spend
 down. Widowed. Her mother is in care she can barely fund. She is not a victim

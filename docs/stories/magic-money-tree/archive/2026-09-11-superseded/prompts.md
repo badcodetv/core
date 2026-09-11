@@ -7,13 +7,18 @@ updated: 2026-08-12
 
 # The Magic Money Tree — prompt ledger
 
+> **ARCHIVED / SUPERSEDED — 11 September 2026.** Historical development record, not current canon.
+> Use [The Future He Never Saw](../../storyboard.md) for new documentary work. Original rulings and
+> uncorrected claims below are retained as provenance; they do not override the current storyboard
+> or the September research correction register.
+
 Read `.claude/skills/badcode-art-direction/SKILL.md` first (Layer 0 — the global
 BadCode register; never copied into this file).
 
 > **Status: Layer 1 + totems + beat prompts drafted 2026-08-08.** Cover tested
 > manually by Kai. Everything below is **unfired** — no image has been generated
 > from these prompts yet. Front-runs T7/T9/T10 of
-> [`design/2026-08-08-story-covers-and-prompt-ledger.md`](../../../design/2026-08-08-story-covers-and-prompt-ledger.md).
+> [`design/2026-08-08-story-covers-and-prompt-ledger.md`](../../../../../design/2026-08-08-story-covers-and-prompt-ledger.md).
 
 ---
 
