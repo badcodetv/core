@@ -7,7 +7,7 @@
 > the orchestrator and pass. Do not expand scope; log surprises in the
 > Discovered Issues Log instead.
 
-Status: proposed
+Status: approved (Kai, 2026-09-11)
 Relates: `packages/flow-mcp` (the pattern this copies), `scripts/suno/suno.mts` (tab-marking
 pattern), `docs/ai-studio/README.md` (AI Studio account, quota and data terms),
 `scripts/beat-grid.py` (tempo measurement reused), session "claude-can-hear" 2026-09-11.
