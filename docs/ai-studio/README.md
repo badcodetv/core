@@ -468,14 +468,47 @@ nineteen rounds of rewording never found it because nobody counted.
 3. ⚠️ **One name, everywhere.** A profile called `Gaz` with a casting blurb about `Terry` is the
    documented top mistake — *"misaligning character identity with transcript content."*
 
-## Chunk or whole script? — test in chunks, deliver in one pass
+## 🔴 Chunk or whole script? — chunk small and check every take (revised 2026-09-11)
+
+**The old advice here was "deliver the whole script in one pass". It was wrong in practice.**
+
+✅ **Measured 2026-09-11 on camping** (every take transcribed word by word with faster-whisper):
+
+| Take | Pasted | Came back |
+| --- | --- | --- |
+| Kore, narrator | 9 lines | **42.6s, stops mid-word in line 4** |
+| Zubenelgenubi, Tarquin | 14 lines | **29.3s — skipped a whole line (T2), then stopped mid-word** |
+| Algenib, Bob | 5 lines | 49.2s, complete |
+
+**None of these is near the ~10-minute output ceiling.** It is a known defect in the preview model,
+not a limit:
+
+- ⬜ **Read:** AI Studio UI truncation on 3.1 Flash TTS — the model switches to text mid-render
+  (`"received text output from model, but only audio output modality is supported"`). **Google
+  reproduced it and escalated it, 2026-07-01**; no fix posted
+  ([forum](https://discuss.ai.google.dev/t/google-gemini-flash-tts-3-1-truncation-issues-persist/172943)).
+- ⬜ **Read:** the **streaming** endpoint truncates with `finishReason: OTHER` on HTTP 200 past
+  ~60–70s of audio (2 of 3 trials at ~70s); **non-streaming `generateContent` returned full audio**.
+  Google reproduced it 2026-06-23; no fix
+  ([forum](https://discuss.ai.google.dev/t/gemini-3-1-flash-tts-preview-streamgeneratecontent-truncates-audio-finishreason-other-past-60s-while-generatecontent-non-streaming-works/169063)).
+- ⬜ **Read:** cut-offs after two words ([forum](https://discuss.ai.google.dev/t/bug-report-gemini-3-1-flash-tts-preview-cuts-off-audio-after-two-words-and-freezes/179910)),
+  dropped and hallucinated lines in multi-speaker mode
+  ([forum](https://discuss.ai.google.dev/t/gemini-tts-multi-speaker-mode-7-critical-bugs-after-3-weeks-in-production-finishreason-other-truncation-voice-swapping-hallucinated-lines/132776/2)),
+  and a 2.5-era report of stopping at ~750 of 2,000 words
+  ([python-genai #922](https://github.com/googleapis/python-genai/issues/922)).
+  The working-around consensus: **treat a short take as a failure, compare expected against actual
+  duration, and retry.**
+- ⬜ **Unverified:** whether the AI Studio UI itself streams. Our takes cut well under 60s, so the
+  UI failure is not only the streaming one.
 
 | | |
 |---|---|
-| **While auditioning a voice** | 🥇 **One short chunk.** Fast, and the whole script tells you nothing chunk 1 does not |
-| **Once the voice is right** | 🥇 **The whole script, one generation.** 439 words ≈ 3 minutes, well inside the 16,384-token output ceiling |
-| **Why one pass wins** | 🔑 **Run-to-run drift is documented** — the same voice, text and settings *"can come back… different accent, pacing, or timbre."* Six chunks means six chances to draw a different narrator, and there is no request-stitching to paper over the seams |
-| **When to split anyway** | ⚠️ Google warns quality *"may drift"* past a few minutes. If it wanders, split at a **scene boundary**, never mid-beat |
+| **Rule** | 🥇 **≤ ~40 words (~15s) per generation**, split at a paragraph or scene boundary, never mid-sentence |
+| **Every take** | 🔑 **Check the last word.** Short, skipped or silent → re-roll the same chunk, same boxes. Better: transcribe it and diff against the script |
+| **Consistency** | Drift between takes is still real — keep Voice, Voice Direction and Scene **byte-identical** across chunks; change only Sample Context and the speech block |
+| **API route** | 🔴 [`scripts/aistudio-tts.py`](../../scripts/aistudio-tts.py) calls `generate_content_stream` — the mode reported to truncate. **Switch it to non-streaming `generate_content` before relying on it** (not done yet) |
+
+Worked example: [`../stories/camping/narration/render-chunks.md`](../stories/camping/narration/render-chunks.md).
 | **Pauses** | `[long pause]` can execute `forms.md`'s `//` marks in the read — but the `12d` tilt is timed to the last word, so ⚠️ **keep timing pauses in the Premiere edit** and use tags only for comic beats |
 
 ## 🔑 THE PROMPTING RULES THAT ARE NOT IN GOOGLE'S DOCS (LiveKit, 2026)
@@ -1062,13 +1095,19 @@ Spell it how it sounds, **before** synthesis, never after:
 A digit-colon opening gets read as a label. A question mark lifts the pitch, which sounds eager —
 **for a flat joke, use a full stop.**
 
+⚠️ **The flip side — a one-syllable interjection with a full stop can come out as a breath.**
+Camping's *"Twenty thirty-one, huh."* was heard by Jack (2026-09-11) as an exhale rather than a
+word. Fix: **`huh?`** so the pitch lifts and it is voiced, plus a Sample Context that says *every
+word clearly voiced*. Keep `[sighs]` / `[tired]` away from it — they add the breath back.
+⬜ Fix untested; fallbacks in [`render-chunks.md`](../stories/camping/narration/render-chunks.md).
+
 ## Limits and specs
 
 | | |
 | --- | --- |
 | **Input limit** | **8,192 tokens** (3.1 Flash TTS). ⚠️ Smaller than 2.5's 32k |
 | **Output limit** | **16,384 tokens** ≈ **10 minutes** of audio ⬜ *(token-per-second rate unverified)* |
-| 🔑 **Our whole script fits in one pass** | 439 words ≈ 3 minutes. **No chunking, no stitching** — the thing ElevenLabs v3 flatly could not do |
+| 🔴 ~~Our whole script fits in one pass~~ | **Fits on paper, fails in practice** — takes truncate at 29–43s and drop lines (2026-09-11). **Chunk ≤ ~40 words** — see [Chunk or whole script?](#-chunk-or-whole-script--chunk-small-and-check-every-take-revised-2026-09-11) |
 | **Sample rate / format** | **24 kHz, 16-bit PCM.** ⚠️ Below the 48 kHz house delivery standard — resample on the way into Premiere and run [`../video-fx/delivery.md`](../video-fx/delivery.md) before anything ships |
 | **Languages** | 70+, regional variants included |
 | **Speakers** | Multi-speaker supported; **2 speakers** per the API docs ⬜ (the Composer's *Add speech block* may allow more — untested) |
@@ -1085,7 +1124,8 @@ A digit-colon opening gets read as a label. A question mark lifts the pitch, whi
 | 🔴 **Direction in the wrong field** | Persona text in *Sample Context* under-steers the read | Persona → **Voice Direction**. Casting blurb → Sample Context |
 | ⚠️ **Describing the space** | `voice.md`: naming a room made a previous engine bake in **reverb** — *"bare room tone"* produced an echoing, processed voice | If a take sounds roomy, **empty the Scene field**. Say *close, dry, no room reverb* explicitly |
 | ⚠️ **Wrapper text gets spoken** | `SCRIPT TO READ:`, wrapping quotes, and a trailing **`Thanks.`** are all read aloud | The transcript box holds **words only**. 🔑 The *"end every prompt with Thanks"* rule is a **Flow** rule and does not apply here |
-| ⚠️ **Quality drift** | Google: quality *"may drift"* past a few minutes | Our script is 3 minutes; if it drifts, split at a scene boundary |
+| ⚠️ **Quality drift** | Google: quality *"may drift"* past a few minutes | Chunk small anyway — see the truncation row |
+| 🔴 **Silent truncation and skipped lines** (✅ seen 2026-09-11) | A take stops mid-word at 29–43s, or leaves out a whole line, with no error | **≤ ~40 words per take**, check the last word of every take, re-roll short ones. Known preview-model bug, acknowledged by Google, unfixed |
 | ⬜ **Profanity** | Chunk 3 is *"Fuck me."* Untested on this engine | If it refuses: **swap the word, never asterisk it** |
 | 🔴 **"Failed to generate voice: Precondition check failed."** (Voice Design, 2026-09-04) | `FAILED_PRECONDITION` means *"the request format may be fine, but you are not allowed to use that path from your current region or billing state."* 🔴 **Answered 2026-09-04: it is an ALLOWLIST, not billing.** A two-word description failed identically, so the feature is gated, not the text — and Google's custom-voice products are *"restricted to allow-listed users… contact a member of the sales team"*, with consent verification and an ethics review on top | 🔴 **Do not attach billing hoping to unlock it** — money is not the gate. Use the **Accent filter** instead: same copy route, free, no precondition |
 | ⬜ **Text instead of audio** | Reported failure: the model occasionally returns text tokens and errors | Re-run |

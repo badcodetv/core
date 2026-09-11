@@ -137,7 +137,10 @@ python3 scripts/aistudio-tts.py chunk.txt out.wav --voice Zubenelgenubi --profil
 
 ---
 
-## ✅ ALL LINES, ONE PROMPT — Jack's request, 2026-09-09
+## 🔴 ALL LINES, ONE PROMPT — Jack's request, 2026-09-09 · FAILED 2026-09-11
+
+> **Rendered as `tarquin.wav`: 29.3s, skipped "Twenty twenty-six…" entirely and stopped mid-word
+> in the therapy line.** Use [`render-chunks.md`](./render-chunks.md) — six small renders.
 
 **He asked for a single prompt with every Tarquin line in it.** Delivered below.
 ⚠️ **The one cost, stated once:** a single pass holds one voice state, so
