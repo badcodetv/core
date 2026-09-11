@@ -501,7 +501,7 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - [ ] done
 - Notes:
 
-### T9: `remap.ts`   [Status: pending | Model: sonnet]
+### T9: `remap.ts`   [Status: done | Model: sonnet]
 - **Scope:** implement `formatTime` and `remapTimestamps`. Match `\b(?:(\d+):)?(\d{1,2}):(\d{2})(?:\.\d+)?\b`
   semantics (H:MM:SS or M:SS/MM:SS with two-digit seconds < 60); ranges like `0:05–0:12` shift both
   ends. Tokens whose seconds field is not two digits or ≥ 60 are left alone.
@@ -512,8 +512,8 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - **TDD:** yes
 - **Validation:** `npm test -w @badcode/listen-mcp` → all pass.
 - **Depends on:** T1
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — done, 12 tests. A token's own fraction is kept at its precision; otherwise shifted times round to whole seconds (so a fractional range start never prints a decimal the answer didn't have).
 
 ### T10: `ledger.ts`   [Status: pending | Model: sonnet]
 - **Scope:** implement per Interfaces and the Ledger file format. Slug: lower-case source name
