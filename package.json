@@ -13,13 +13,14 @@
     "build": "npm run build --workspace @badcode/web",
     "preview": "npm run preview --workspace @badcode/web",
     "typecheck": "npm run typecheck --workspaces --if-present",
-    "test": "npm run test --workspaces --if-present"
+    "test": "npm run test --workspaces --if-present && vitest run --dir scripts"
   },
   "engines": {
     "node": ">=22"
   },
   "devDependencies": {
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
   },
   "overrides": {
     "@types/react": "^18.3.12",

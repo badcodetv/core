@@ -305,7 +305,7 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - [x] done
 - Notes: 2026-09-11 — done. Both validation greps hit (suno-v6.md :99/:107/:361/:458; automation.md :549/:552/:568). Max Mode (:101) left alone — the plan gives it no source. `suno-controls-and-workflows.md` has no revision log, so the date sits in the note.
 
-### T2: Root test script covers `scripts/`   [Status: pending | Model: sonnet]
+### T2: Root test script covers `scripts/`   [Status: done | Model: sonnet]
 - **Scope:** root `package.json` `"test"` becomes
   `"npm run test --workspaces --if-present && vitest run --dir scripts"`. `--dir` matters: a bare
   `vitest run scripts` is a path *substring* filter and also runs every copy under
@@ -320,8 +320,8 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - **TDD:** yes
 - **Validation:** `npx vitest run --dir scripts` → exactly 1 file passing; `npm test` → exit 0.
 - **Depends on:** —
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — done. `npx vitest run --dir scripts` → 1 file, 14 tests; root `npm test` exit 0 across all 14 workspaces. The lock gained only the root vitest devDependency. `durToSeconds` throws on anything not M:SS / H:MM:SS.
 
 ### T3: `capture.ts`   [Status: pending | Model: sonnet]
 - **Scope:** implement per Interfaces. `pactl` and `ffmpeg` are spawned with `execFile` (no shell).
