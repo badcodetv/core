@@ -540,7 +540,7 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - [x] done
 - Notes: 2026-09-11 — code done and validated: dry run prints both titles + `20 credits (2 Creates)` and exits 0 before `connect()` (proven with `SUNO_CDP_ENDPOINT=http://127.0.0.1:1`); no `--round` → exit 1; grid-plan output identical (scratch spec, 56 cells); 48/48 script tests. `--yes` filters the final take list to `<title>-r<N>-`. **Not yet done:** the live, human-gated `--yes` run (20 credits) — needs Kai's explicit yes.
 
-### T10: `narrow` command   [Status: pending | Model: opus]
+### T10: `narrow` command   [Status: done (live --yes run pending Kai's yes) | Model: opus]
 - **Scope:** `narrow <spec.json> <key> --round <N> [--yes]`, exactly per the Interfaces entry
   (dry run, then the five `--yes` steps, then detach and the final assert), using T4b's detector and
   attach-by-ID where T4b found it possible. The pick's model is read from its title tag (`-v6-` →
@@ -556,8 +556,8 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
   printed, exit 0; `npx tsx scripts/suno/suno.mts status` after a live run →
   mode custom, nothing attached.
 - **Depends on:** T4b, T7, T9
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — code done. Dry run (`narrow <spec> 870fbab1 --round 2`) printed the pick (title, 1:05, full song ID), both cells (`-r2-v6-ai75-w30` / `-ai40-w30`, style 75, Variety off) and 20 credits, exit 0, form unchanged; without `--round` → exit 1. Attach is BY SONG ID (`attachCoverById`, via the picker's `image_<id>` artwork, per T4b); state via `coverStateNow` = scrape + `classifyCoverState`. Rehearsed live without a Create: custom-empty → attach → attached Cover 870fbab1 1:05 → detach → custom-leftover (994/18/title) → cleared → custom-empty; `status` identical. `COVER_MODEL_UNSUPPORTED` not needed (T4b: Cover takes v6-wild). The `--yes` path always detaches in a `finally` and prints 🔴 FORM LEFT IN COVER MODE if the detector still reads attached. A pick title with no -v6-/-wild- tag and a spec with no model → INVALID_SPEC. **Not yet done:** the live `--yes` run (20 credits) — needs Kai's explicit yes.
 
 ### T11: The `music-session` skill and the suno-prompt hand-off   [Status: pending | Model: opus]
 - **Scope:** write `.claude/skills/music-session/SKILL.md`:

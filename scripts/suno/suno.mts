@@ -15,6 +15,7 @@
  *   npx tsx scripts/suno/suno.mts pair  <spec.json>          # load, create @w30, create @w60
  *   npx tsx scripts/suno/suno.mts explore <spec.json> --round <N> [--yes]   # dry run without --yes
  *   npx tsx scripts/suno/suno.mts takes [titleFilter]
+ *   npx tsx scripts/suno/suno.mts narrow <spec.json> <songId> --round <N> [--yes]   # cover the pick
  *   npx tsx scripts/suno/suno.mts record <songId|id8|title>   # record a take, no download
  *
  * This file must stay `.mts`: tsx transforms `.ts` as CJS and rejects top-level await.
@@ -23,9 +24,18 @@ import { chromium, type Browser, type Page } from 'playwright'
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs'
 // take-row.mts is the pure half and imports nothing from here (a two-way import is an init cycle).
 import {
+  classifyCoverState,
+  durToSeconds,
   exploreCells,
   matchTakes,
   mediaSlug,
+  narrowCells,
+  SEL_CLEAR_CONDITION,
+  SEL_CONDITION_ART,
+  SEL_CONDITION_TYPE,
+  type Cell,
+  type CoverScrape,
+  type CoverState,
   modelTag,
   SEL_PLAYER_AUDIO,
   SEL_ROW_PLAY,
@@ -1309,6 +1319,152 @@ export function gridCells(spec: SunoSpec) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// NARROW — cover the picked take with the refined boxes (loop plan T10, decision 7). v6 Cover was
+// mapped live on 2026-09-11 (automation.md §10): attach by song ID through the Remix picker's
+// artwork, detect by the Clear-audio-condition button, and expect the source to leave its words
+// behind on detach.
+
+/** Read the form's cover state as data and classify it (take-row.mts `classifyCoverState`). */
+export async function coverStateNow(page: Page): Promise<CoverState> {
+  const v = (await verify(page)) as Record<string, unknown>
+  const raw = (await page.evaluate(`(() => {
+    const c = (s) => (s || '').replace(/\\s+/g, ' ').trim();
+    const clear = document.querySelector(${JSON.stringify(SEL_CLEAR_CONDITION)});
+    const type = document.querySelector(${JSON.stringify(SEL_CONDITION_TYPE)});
+    const art = document.querySelector(${JSON.stringify(SEL_CONDITION_ART)});
+    let card = clear;
+    for (let i = 0; i < 8 && card; i++, card = card.parentElement) if (/\\d\\d:\\d\\d\\/\\d\\d:\\d\\d/.test(c(card.innerText))) break;
+    const m = card ? /Audio\\s+\\S+\\s+.*?\\d{1,2}:\\d{2}\\/\\d{1,2}:\\d{2}/.exec(c(card.innerText)) : null;
+    return { clearButton: !!clear, typeLabel: type ? type.getAttribute('aria-label') : null,
+             cardText: m ? m[0] : null, cardArt: art ? art.getAttribute('src') : null };
+  })()`)) as Pick<CoverScrape, 'clearButton' | 'typeLabel' | 'cardText' | 'cardArt'>
+  return classifyCoverState({
+    ...raw,
+    styleLen: Number(v.styleLen) || 0,
+    lyricParas: Number(v.lyricParas) || 0,
+    title: String(v.title ?? ''),
+  })
+}
+
+/**
+ * Attach `songId` as the Cover source. The Remix picker's rows have no /song/ link, but each row's
+ * artwork is `image_<songId>` — so search by title, then take the ONE row with that artwork. Two
+ * takes of one Create share a title (and often a duration), which is why title alone is not enough.
+ * Real mouse clicks throughout (React handlers ignore el.click() here — see attachCover).
+ */
+export async function attachCoverById(page: Page, songId: string, title: string): Promise<string> {
+  const click = async (x: number, y: number) => { await page.mouse.click(x, y); await page.waitForTimeout(2200) }
+  const hit = async (loc: ReturnType<Page['locator']>): Promise<boolean> => {
+    const b = await loc.boundingBox().catch(() => null)
+    if (!b) return false
+    await click(b.x + b.width / 2, b.y + b.height / 2)
+    return true
+  }
+  await page.keyboard.press('Escape')
+  await page.waitForTimeout(600)
+  const add = page.locator('button[aria-label^="Add audio"]').first()
+  await add.scrollIntoViewIfNeeded().catch(() => {})
+  await page.waitForTimeout(500)
+  if (!(await hit(add))) return 'attach:no-add-audio-button'
+  if (!(await hit(page.getByText('Browse', { exact: true }).first()))) return 'attach:no-browse-item'
+  const search = page.getByPlaceholder('Search').last()
+  if (!(await search.count())) return 'attach:no-search-box'
+  await search.fill(title)
+  await page.waitForTimeout(2500)
+  const pos = JSON.parse((await page.evaluate(`(() => {
+    const c = (s) => (s || '').replace(/\\s+/g, ' ').trim();
+    let n = [...document.querySelectorAll('*')].filter((e) => e.offsetParent !== null && c(e.textContent) === 'Choose a song to Remix').pop();
+    while (n && !/Library/.test(c(n.innerText || ''))) n = n.parentElement;
+    if (!n) return JSON.stringify({ err: 'no-picker' });
+    const rows = [...n.querySelectorAll('[role="button"]')].filter((r) => r.offsetParent !== null
+      && [...r.querySelectorAll('img')].some((i) => (i.getAttribute('src') || '').toLowerCase().includes('image_${songId}')));
+    const btns = rows.map((r) => [...r.querySelectorAll('button,[role="button"]')].find((b) => c(b.innerText) === 'Remix')).filter(Boolean);
+    if (btns.length !== 1) return JSON.stringify({ err: 'matches=' + btns.length });
+    const b = btns[0].getBoundingClientRect();
+    return JSON.stringify({ x: b.x + b.width / 2, y: b.y + b.height / 2 });
+  })()`)) as string) as { x?: number; y?: number; err?: string }
+  if (pos.err || pos.x === undefined || pos.y === undefined) {
+    await page.keyboard.press('Escape')
+    return `attach:${pos.err ?? 'no-position'} for ${songId.slice(0, 8)} ("${title}")`
+  }
+  await click(pos.x, pos.y)
+  // On a FILLED form Suno offers Keep Current (keeps our Style and Lyrics); on an empty one it
+  // silently copies the source's Style, Lyrics and Title. Either way the boxes are loaded after.
+  const kc = page.getByRole('button', { name: 'Keep Current', exact: true })
+  if (await kc.count()) await hit(kc.first())
+  await ensureClipList(page).catch(() => {})
+  return `attach:ok ${songId.slice(0, 8)}`
+}
+
+/** The pick's model from its title tag: `-v6-` → v6, `-wild-` → v6-wild, else the spec's. */
+export function modelFromTitle(title: string, fallback?: string): string {
+  if (/-v6-/.test(title)) return 'v6'
+  if (/-wild-/.test(title)) return 'v6-wild'
+  if (!fallback) throw new Error(`INVALID_SPEC: "${title}" carries no -v6-/-wild- tag and the spec names no \`model\` — say which model to cover on`)
+  return fallback
+}
+
+const lyricShape = (t: string) => t.split('\n').map((l) => l.trim()).filter(Boolean).join('\n')
+
+/** Run a narrow round's Creates. Returns problems; an empty list means every Create ran. */
+async function runNarrow(page: Page, spec: SunoSpec, pick: Take, cells: Cell[]): Promise<string[]> {
+  const songId = pick.songId!
+  const start = await coverStateNow(page)
+  if (start.state === 'attached' && start.source.songId !== songId) {
+    return [`the form already has ${start.source.songId?.slice(0, 8) ?? 'an unknown source'} attached — detach it by hand first`]
+  }
+  // 2. Attach by ID, 3. prove it is the pick.
+  if (start.state !== 'attached') console.log(await attachCoverById(page, songId, pick.title))
+  const st = await coverStateNow(page)
+  if (st.state !== 'attached' || st.mode !== 'Cover') return [`not in Cover mode after attaching (${JSON.stringify(st)})`]
+  if (st.source.songId !== songId) return [`attached ${st.source.songId} but the pick is ${songId}`]
+  if (pick.dur && st.source.dur && durToSeconds(st.source.dur) !== durToSeconds(pick.dur)) {
+    return [`attached source is ${st.source.dur}, the pick is ${pick.dur}`]
+  }
+  console.log(`✅ Cover source = ${songId.slice(0, 8)} "${st.source.title}" (${st.source.dur})`)
+
+  // 4. The refined boxes overwrite whatever the source brought (cover-ab.mts's lesson: the lyrics
+  //    come WITH the source unless the sheet's are written over them).
+  if (spec.voice) console.log('voice: IGNORED — narrow covers the pick; a Voice is a separate experiment')
+  console.log('style:', await fillChecked(page, '[data-testid="create-form-styles-wrapper"] textarea', spec.style))
+  console.log('exclude:', await fillChecked(page, 'input[placeholder="Exclude styles"]', spec.exclude))
+  const wrote = await setLyrics(page, spec.lyrics)
+  const v0 = (await verify(page)) as Record<string, unknown>
+  const got = (await page.evaluate(`[...document.querySelectorAll('[aria-label="Lyrics editor"] p')].map((p) => p.innerText).join('\\n')`)) as string
+  const problems: string[] = []
+  if (String(v0.styleLen) !== String(spec.style.length)) problems.push(`style ${v0.styleLen}/${spec.style.length}`)
+  if (spec.lyrics.trim() && Number(v0.lyricParas) !== wrote) problems.push(`${v0.lyricParas} lyric paragraphs, expected ${wrote}`)
+  if (lyricShape(got) !== lyricShape(spec.lyrics)) problems.push('the lyrics on the page do not match the sheet')
+  if (problems.length) return problems
+  console.log(spec.durationSec ? await setDuration(page, spec.durationSec) : await setDurationAuto(page))
+  if (spec.workspace) console.log(await setWorkspace(page, spec.workspace))
+
+  // 5. Per cell: controls, sliders, title, checks, source still attached — then Create.
+  const credits = async () =>
+    Number(String(((await verify(page)) as Record<string, unknown>).credits ?? '').replace(/[^0-9]/g, '')) || null
+  for (const cell of cells) {
+    const cellSpec = { ...spec, ...cell, weirdness: [cell.weirdness] }
+    console.log(await setModel(page, cell.model))
+    console.log(await setV6Controls(page, cellSpec))
+    console.log(await setSlider(page, 'Style Influence', cell.styleInfluence))
+    console.log(await setSlider(page, 'Audio Influence', cell.audioInfluence ?? 50))
+    console.log(await setSlider(page, 'Weirdness', cell.weirdness))
+    console.log('title:', await setTitle(page, cell.title))
+    const v = (await verify(page)) as Record<string, unknown>
+    const p = await checkV6(page, cellSpec, v)
+    const again = await coverStateNow(page)
+    // 🔴 The attachment has dropped after a Create before (automation.md, attachCover) — never assume.
+    if (again.state !== 'attached' || again.source.songId !== songId) p.push(`the Cover source is no longer ${songId.slice(0, 8)}`)
+    if (p.length) return [`at ${cell.title}: ${p.join(' · ')}`]
+    const before = await credits()
+    console.log(`▶ ${cell.title}:`, await create(page, cell.title))
+    const after = await credits()
+    console.log(`   credits ${before} → ${after}${before && after ? ` (cost ${before - after})` : ''}`)
+  }
+  return []
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // RECORD — the listening loop's ears (loop plan T8, 2026-09-11). Plays one take in the create page
 // and records Chrome's sound from the channel's own virtual speaker. 🔴 Spends NO download (Suno's
 // downloads are capped and human-only, §5 of automation.md) and never navigates (Trap 4).
@@ -1513,6 +1669,66 @@ if (cmd === 'extract') {
   const { browser, page } = await connect()
   console.log(JSON.stringify(await listTakes(page, rest[0] ?? ''), null, 2))
   await browser.close()
+} else if (cmd === 'narrow') {
+  // `narrow <spec.json> <songId|id8|title> --round <N> [--yes]` — decision 7. Dry run by default.
+  const roundAt = rest.indexOf('--round')
+  const pos = rest.filter((a, i) => !a.startsWith('--') && !(roundAt >= 0 && i === roundAt + 1))
+  const [specPath, key] = pos
+  const round = roundAt >= 0 ? Number(rest[roundAt + 1]) : NaN
+  if (!specPath || !key) {
+    console.error('narrow: usage: narrow <spec.json> <songId|id8|title> --round <N> [--yes]')
+    process.exit(1)
+  }
+  if (!Number.isInteger(round) || round < 1) {
+    console.error(
+      'narrow: --round <N> is required (a positive integer) — create() returns once any 2 rows carry the ' +
+        "title, so a reused title reports success on an earlier round's takes.",
+    )
+    process.exit(1)
+  }
+  const spec: SunoSpec = JSON.parse(readFileSync(specPath, 'utf8'))
+  let browser: Browser | null = null
+  try {
+    const c = await connect()
+    browser = c.browser
+    const page = c.page
+    requireCreate(page)
+    const pick = await findTake(page, key)
+    const model = modelFromTitle(pick.title, spec.model)
+    const cells = narrowCells(spec.title, round, model)
+    console.log(`narrow round ${round}: cover ${pick.songId} "${pick.title}" (${pick.dur}) on ${model}`)
+    for (const cell of cells)
+      console.log(`  ${cell.title}   model=${cell.model} audio=${cell.audioInfluence} style=${cell.styleInfluence} w=${cell.weirdness} variety=${cell.variety} max=${cell.maxMode}`)
+    console.log(`cost: ${cells.length * 10} credits (${cells.length} Creates)`)
+    if (!rest.includes('--yes')) {
+      // The dry run touches nothing: no attach, no lyric check (the pick's lyrics reach the page only on attach).
+      console.log('dry run — nothing attached, nothing spent. Re-run with --yes to generate.')
+    } else {
+      let problems: string[] = []
+      try {
+        problems = await runNarrow(page, spec, pick, cells)
+      } finally {
+        // Always leave the form out of Cover mode — load() refuses a Cover form, but a human
+        // clicking Create on it would cover the pick again.
+        console.log(await detachCover(page))
+        const end = await coverStateNow(page)
+        if (end.state === 'attached') {
+          console.log('🔴 FORM LEFT IN COVER MODE — fix by hand before the next load')
+          process.exitCode = 1
+        } else console.log(`form: ${end.state} (the source's words may remain; the next load overwrites them)`)
+      }
+      if (problems.length) {
+        console.log('🔴 ABORTED before spending credits on the rest:', problems.join(' · '))
+        process.exitCode = 1
+      }
+      console.log(JSON.stringify(await listTakes(page, `${spec.title}-r${round}-`), null, 2))
+    }
+  } catch (e) {
+    console.error((e as Error).message)
+    process.exitCode = 1
+  } finally {
+    await browser?.close()
+  }
 } else if (cmd === 'record') {
   // Errors print as `CODE: message` and exit 1 — callers branch on the code in the text.
   if (!rest[0]) {
@@ -1679,6 +1895,11 @@ Personalize is ALWAYS OFF and My Taste is not used (Kai, 2026-09-10).
                                   style 60, Variety off, Max Mode off. Without --yes: print the
                                   two cells and the cost, spend nothing. --round is required.
   takes [titleFilter]             list clip rows with durations and song IDs
+  narrow <spec.json> <songId|id8|title> --round <N> [--yes]
+                                  cover the pick with the spec's (refined) boxes: two Creates at
+                                  Audio Influence 75 and 40, weirdness 30, style 75, Variety off,
+                                  on the pick's model. Without --yes: print the pick, the cells and
+                                  the cost, attach nothing. Detaches the source afterwards
   record <songId|id8|title>       play one take in the create page and record it from the
                                   channel's own sink → <LISTEN_MEDIA_ROOT>/<slug>-<id8>.wav (raw,
                                   for Claude) + .preview.mp3 (low-passed, for the human). No
@@ -1687,5 +1908,5 @@ Personalize is ALWAYS OFF and My Taste is not used (Kai, 2026-09-10).
 Every spec needs \`model\` ('v6' | 'v6-wild'). Titles: <title>-<model>[-var-<step>][-max]-w<n>;
 explore: <title>-r<N>-v6-w30 and <title>-r<N>-wild-w60 (title ≤ 30 chars).
 v6 credit cost per Create is unknown — pair/grid/explore log the balance around every Create.
-\`load\`, \`controls\`, \`grid-plan\` and \`explore\` without --yes never spend credits.`)
+\`load\`, \`controls\`, \`grid-plan\`, and \`explore\` / \`narrow\` without --yes never spend credits.`)
 }
