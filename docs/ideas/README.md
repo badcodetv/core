@@ -67,6 +67,7 @@ scannable metadata lives in the table.
 | [Ask Not](ask-not.md) | JFK inverted: ask what your country can do for a politician | video | seed |
 | [The Asteroid](the-asteroid.md) | full "Armageddon" beats, no rock ever shown — the AI is the asteroid | comic · music | seed |
 | [Nature Abhors a Vacuum](nature-abhors-a-vacuum.md) | lightning is an imbalance being corrected — so is a billionaire class | comic · music | seed |
+| [The BadCode Robot](badcode-robot.md) | build the superintelligence out of the cheapest open-source parts — the build is the electronics lesson | video · software | seed |
 
 ## Graduated & canon (the rest of the map)
 
