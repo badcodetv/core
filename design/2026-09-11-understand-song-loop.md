@@ -354,7 +354,7 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - [ ] done
 - Notes:
 
-### T4: Live map — Play control, song ID and player on the create page   [Status: pending | Model: opus]
+### T4: Live map — Play control, song ID and player on the create page   [Status: done | Model: opus]
 - **Scope:** HUMAN-GATED if the Suno channel is signed out (stop and ask). Spends no credits. With
   the create page open in the one Suno tab (`npx tsx scripts/suno/suno.mts status` first; do NOT
   navigate), record in a scratch probe script (not committed):
@@ -378,8 +378,8 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - **Validation:** `npx tsx scripts/suno/suno.mts status` before and after → identical `styleLen`,
   `lyricParas`, `title`.
 - **Depends on:** T2
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — done on channel 1 (signed in as binocarlos; relaunched after T6 so it has `badcode_ch1`), loopback muted during probes. Stop gate NOT hit: a native click on the row's artwork (`[role=button][aria-label="Play <title>"]`) plays without navigating. Song ID = the row's `a[href^="/song/"]`. Player = `audio#active-audio-play` (blob src); pause via `.pause()` or the playbar toggle; auto-advance confirmed (~1 s after `ended`, a new blob starts). `status` identical before/after (styleLen 0, lyricParas 1, title ""). Evidence in automation.md §10, constants in take-row.mts.
 
 ### T4b: Live map — v6 Cover attach, detach and mode detection   [Status: pending | Model: opus]
 - **Scope:** HUMAN-GATED like T4, and spends no credits (never click Create). v6 Cover has never been

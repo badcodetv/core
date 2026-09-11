@@ -563,7 +563,43 @@ when a prompt box moves.
 
 ---
 
+## 10. Playback, recording and the listening loop
+
+Why this exists: the listening loop (`design/2026-09-11-understand-song-loop.md`) records a take by
+playing it in the create page and capturing Chrome's sound from the channel's own virtual speaker
+(`badcode_ch<N>`, made by `scripts/flow-chrome.sh`). That spends **no download** — downloads stay
+human-only (§5). 🔴 It must never leave the create page: navigating wipes the form (Trap 4).
+
+### The player, mapped live 2026-09-11
+
+Probed on channel 1, signed in as `binocarlos`, on the `gpom-story` workspace's rows, with the
+loopback muted so nothing reached the speakers. Nothing was created; the form read identically
+(`status`: `styleLen 0`, `lyricParas 1`, `title ""`) before and after.
+
+| Thing | Selector / how | Evidence (2026-09-11) |
+|---|---|---|
+| **Take row** | nearest ancestor of `[aria-label="Select clip"]` that contains `a[href*="/song/"]` | the row's own `div` has only a hashed CSS class (`css-8yp4m0`), so anchor on the Select-clip button, not the class |
+| **Song ID** | the row's `a[href^="/song/"]` → `/song/<uuid>` (also in the artwork `img` src, `image_<uuid>.jpeg`) | every finished row had one; two takes of one Create share a title but not an ID |
+| **Row Play** | `[role="button"][aria-label="Play <title>"]` inside the row — the artwork (`div.clip-image-container`) | a **native `el.click()` works**; no real mouse click needed. Its text is the duration (`1:05`) |
+| **Navigation?** | none | `location.href` stayed `https://suno.com/create` through play, pause and auto-advance |
+| **The audio** | `audio#active-audio-play` | `src` becomes a `blob:https://suno.com/…` URL about 1 s after Play; `duration` (65.401 for a `1:05` row), `currentTime`, `paused`, `ended` all readable. **Ignore `audio#silent-audio`** (`cdn-o.suno.com/sil-100.mp3`, 0.096 s) |
+| **Pause** | `audio#active-audio-play.pause()`, or `button[aria-label="Playbar: Pause button"]` | both stop it; the playbar toggles its label between `Playbar: Play button` and `Playbar: Pause button` |
+| **Seek** | set `currentTime` on the audio element | set to `duration − 2`, it played on from there |
+| 🔴 **Auto-advance** | **yes** | the `ended` event fired, and **about 1 s later a new `blob:` src loaded and started playing** the next row. A recorder must stop on `ended` itself — see below |
+| **Where the sound goes** | Chrome's sink-input lands on `badcode_ch1` | `pactl list short sink-inputs` showed the stream on the channel's own sink once Play started — a browser launched after T6 needs no stream moving |
+
+**Recording rule that falls out of auto-advance:** install an `ended` listener on
+`#active-audio-play` *before* pressing Play; on `ended`, set a flag and pause. Because the next
+song loads asynchronously (a new `blob:` src, ~1 s later), also pause on any `play` event once the
+flag is set, so the next song never reaches the recording.
+
+Each play adds one to the song's public play count (findings doc). Selectors live as exported
+constants in [`scripts/suno/take-row.mts`](../../scripts/suno/take-row.mts).
+
 ## Revision log
+
+- **2026-09-11 (§10, the player)** — the create page's row Play control, song-ID link, player
+  `<audio>`, pause and auto-advance mapped live (loop plan T4). No navigation, no Create.
 
 - **2026-09-11 (Variety Off)** — §9's grid baseline changed from Variety Normal to **Variety
   Off**: Suno's v6 FAQ (help.suno.com/en/articles/13924481) says Variety works by rewriting the

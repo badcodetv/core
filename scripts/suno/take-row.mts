@@ -113,3 +113,23 @@ export function mediaSlug(title: string, songId: string): string {
   const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'take'
   return `${slug}-${songId.toLowerCase().slice(0, 8)}`
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// The create page's player — mapped live 2026-09-11 (docs/suno-gpt/automation.md §10).
+// Selectors only; the browser code that uses them lives in suno.mts.
+
+/** One per take row. The row itself has only a hashed CSS class, so rows are found from this. */
+export const SEL_SELECT_CLIP = '[aria-label="Select clip"]'
+/** The row's song link, `/song/<uuid>` — the take's identity (decision 4). */
+export const SEL_SONG_LINK = 'a[href*="/song/"]'
+/** The row's Play control is its artwork: `aria-label="Play <title>"`. A native click works. */
+export const SEL_ROW_PLAY = '[role="button"][aria-label^="Play "]'
+/** The one element that plays takes. Its src becomes a `blob:` URL ~1 s after Play. */
+export const SEL_PLAYER_AUDIO = 'audio#active-audio-play'
+/** A 0.096 s silent clip Suno keeps around — never the take. */
+export const SEL_SILENT_AUDIO = 'audio#silent-audio'
+/** The playbar's toggle: its label reads `Playbar: Pause button` while playing. */
+export const SEL_PLAYBAR_PAUSE = 'button[aria-label="Playbar: Pause button"]'
+export const SEL_PLAYBAR_PLAY = 'button[aria-label="Playbar: Play button"]'
+/** 🔴 Suno plays the next row ~1 s after `ended`. A recorder must pause on `ended` and on any later `play`. */
+export const AUTO_ADVANCES = true
