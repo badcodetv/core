@@ -408,7 +408,7 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - [ ] done
 - Notes:
 
-### T5: `take-row.mts` pure helpers   [Status: pending | Model: sonnet]
+### T5: `take-row.mts` pure helpers   [Status: done | Model: sonnet]
 - **Scope:** implement `parseSongId`, `matchTakes`, `exploreCells`, `narrowCells` and `mediaSlug`
   per Interfaces and decisions 6–7. **Move `modelTag` from `suno.mts:140-141` into `take-row.mts`**
   and re-export it from `suno.mts` (`export { modelTag } from './take-row.mts'`), so `take-row.mts`
@@ -430,8 +430,8 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - **Validation:** `npx vitest run --dir scripts` → all pass; `npx tsx scripts/suno/suno.mts grid-plan <an existing spec>`
   → unchanged output (proves the `modelTag` move).
 - **Depends on:** T2
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — done, 48 tests in scripts/. No grid spec is committed anywhere, so `grid-plan` was proven unchanged on a scratch spec exercising modelTag's edge cases (56 cells; before/after output identical). suno.mts keeps a local binding (`import { modelTag }` + `export { modelTag }`) because gridCells still uses it. narrowCells shares the 30-char cap and both reject a non-positive/non-integer round. No tsconfig covers scripts/; a scratch strict tsconfig typechecked all three files clean.
 
 ### T6: `flow-chrome.sh` routes each channel's sound through its own sink   [Status: done | Model: sonnet]
 - **Scope:** before launching Chrome, compute `CH=$((PORT-9221))` and `SINK=badcode_ch$CH`. If

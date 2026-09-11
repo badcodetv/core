@@ -19,6 +19,8 @@
  */
 import { chromium, type Browser, type Page } from 'playwright'
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs'
+// take-row.mts is the pure half and imports nothing from here (a two-way import is an init cycle).
+import { modelTag } from './take-row.mts'
 
 /**
  * CHANNELS — one browser per Claude session (2026-08-26). Suno shares its session's Flow
@@ -136,9 +138,8 @@ export interface GridAxes {
   weirdness?: number[]
 }
 
-/** The model as it appears in a title: v6 → `v6`, v6-wild → `wild`, a custom model → its name. */
-export const modelTag = (m: string) =>
-  m.toLowerCase().replace(/^v6-/, '').replace(/[^a-z0-9]+/g, '').slice(0, 12) || 'model'
+/** The model as it appears in a title (v6 → `v6`, v6-wild → `wild`). Lives in take-row.mts. */
+export { modelTag }
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Page-context helpers.
