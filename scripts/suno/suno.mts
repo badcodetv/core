@@ -15,6 +15,7 @@
  *   npx tsx scripts/suno/suno.mts pair  <spec.json>          # load, create @w30, create @w60
  *   npx tsx scripts/suno/suno.mts explore <spec.json> --round <N> [--yes]   # dry run without --yes
  *   npx tsx scripts/suno/suno.mts takes [titleFilter]
+ *   npx tsx scripts/suno/suno.mts record <songId|id8|title>   # record a take, no download
  *
  * This file must stay `.mts`: tsx transforms `.ts` as CJS and rejects top-level await.
  */
@@ -24,7 +25,10 @@ import { readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import {
   exploreCells,
   matchTakes,
+  mediaSlug,
   modelTag,
+  SEL_PLAYER_AUDIO,
+  SEL_ROW_PLAY,
   SEL_SELECT_CLIP,
   SEL_SONG_LINK,
   type Take,
@@ -1305,6 +1309,187 @@ export function gridCells(spec: SunoSpec) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// RECORD — the listening loop's ears (loop plan T8, 2026-09-11). Plays one take in the create page
+// and records Chrome's sound from the channel's own virtual speaker. 🔴 Spends NO download (Suno's
+// downloads are capped and human-only, §5 of automation.md) and never navigates (Trap 4).
+
+/** Where recordings go — OUTSIDE the repo (media outside, words inside). */
+const MEDIA_ROOT = process.env.LISTEN_MEDIA_ROOT || '/mnt/c/Users/kai/Desktop/suno-recordings'
+
+export interface RecordResult {
+  songId: string
+  title: string
+  durationSec: number
+  raw: string
+  preview: string
+  channel: number
+}
+
+/** The PID of the Chrome browser process serving `port` (not a renderer) — for moveChromeStreams. */
+async function chromePidFor(port: number): Promise<number | null> {
+  const { execFileSync } = await import('node:child_process')
+  const ps = execFileSync('ps', ['-eo', 'pid=,args='], { encoding: 'utf8', maxBuffer: 16 << 20 })
+  for (const line of ps.split('\n')) {
+    if (line.includes(`--remote-debugging-port=${port}`) && !line.includes('--type=')) {
+      const pid = Number(line.trim().split(/\s+/)[0])
+      if (pid > 0) return pid
+    }
+  }
+  return null
+}
+
+/** Count Chrome's streams on `sink` (anything playing INTO it — the loopback reads its monitor, not it). */
+async function streamsOn(sink: string): Promise<number> {
+  const { execFileSync } = await import('node:child_process')
+  const env = { ...process.env, LC_ALL: 'C' }
+  const sinks = execFileSync('pactl', ['list', 'short', 'sinks'], { encoding: 'utf8', env })
+  const idx = sinks.split('\n').map((l) => l.split('\t')).find((f) => f[1] === sink)?.[0]
+  if (idx === undefined) return 0
+  const inputs = execFileSync('pactl', ['list', 'short', 'sink-inputs'], { encoding: 'utf8', env })
+  return inputs.split('\n').filter((l) => l.split('\t')[1] === idx).length
+}
+
+/** The player's state, read as plain data. `songId` comes from the playbar's own /song/ link. */
+const PLAYER_STATE = `(() => {
+  const a = document.querySelector(${JSON.stringify(SEL_PLAYER_AUDIO)});
+  const bar = [...document.querySelectorAll('[aria-label^="Playbar"]')];
+  let root = bar[0] || null;
+  while (root && !bar.every((x) => root.contains(x))) root = root.parentElement;
+  const link = root ? root.querySelector(${JSON.stringify(SEL_SONG_LINK)}) : null;
+  const m = link ? /\\/song\\/([0-9a-f-]{36})/i.exec(link.getAttribute('href') || '') : null;
+  return a ? { src: a.src || '', duration: a.duration, t: a.currentTime, paused: a.paused, ended: a.ended,
+    volume: a.volume, muted: a.muted, songId: m ? m[1].toLowerCase() : null,
+    flag: !!(window.__badcodeRec && window.__badcodeRec.ended), url: location.href } : null;
+})()`
+
+export async function recordTake(page: Page, key: string): Promise<RecordResult> {
+  requireCreate(page)
+  const cap = await import('@badcode/listen-mcp/capture')
+  const { mkdtempSync, mkdirSync, rmSync } = await import('node:fs')
+  const { tmpdir } = await import('node:os')
+  const { join } = await import('node:path')
+
+  const take = await findTake(page, key)
+  if (!take.songId) throw new Error(`TAKE_NOT_FOUND: "${take.title}" has no song link on its row`)
+  const songId = take.songId
+  const port = Number(new URL(ENDPOINT).port || 80)
+  const channel = port - 9221
+  const sink = cap.sinkName(channel)
+  await cap.ensureSink(sink)
+
+  // 3. Arm the stop BEFORE anything plays. Suno starts the next row ~1 s after `ended`
+  //    (automation.md §10), so the page itself pauses on `ended` — and on any `play` after it.
+  await page.evaluate(`(() => {
+    const a = document.querySelector(${JSON.stringify(SEL_PLAYER_AUDIO)});
+    if (!a) return;
+    window.__badcodeRec = { ended: false, armed: false };
+    if (!a.__badcodeRecHooked) {
+      a.__badcodeRecHooked = true;
+      a.addEventListener('ended', () => { const r = window.__badcodeRec; if (r && r.armed) { r.ended = true; a.pause(); } });
+      a.addEventListener('play', () => { const r = window.__badcodeRec; if (r && r.ended) a.pause(); });
+    }
+  })()`)
+
+  // 4. Press the row's Play (a native click works — §10), then pause at once.
+  const clicked = await page.evaluate(`(() => {
+    const link = document.querySelector('a[href="/song/${songId}"]');
+    let r = link;
+    for (let i = 0; i < 8 && r; i++, r = r.parentElement) {
+      if (r.querySelectorAll(${JSON.stringify(SEL_SELECT_CLIP)}).length === 1 && r.querySelector(${JSON.stringify(SEL_ROW_PLAY)})) break;
+    }
+    const btn = r && r.querySelector(${JSON.stringify(SEL_ROW_PLAY)});
+    if (!btn) return false;
+    btn.click();
+    return true;
+  })()`)
+  if (!clicked) throw new Error(`PLAY_NOT_MAPPED: no ${SEL_ROW_PLAY} inside the row of ${songId} — re-map §10`)
+  type Player = { src: string; duration: number; t: number; paused: boolean; ended: boolean; volume: number; muted: boolean; songId: string | null; flag: boolean; url: string }
+  const player = async () => (await page.evaluate(PLAYER_STATE)) as Player | null
+  let st: Player | null = null
+  for (let i = 0; i < 40; i++) {
+    await page.waitForTimeout(250)
+    st = await player()
+    if (st && st.songId === songId && st.src.startsWith('blob:') && Number.isFinite(st.duration) && st.duration > 0) break
+  }
+  await page.evaluate(`document.querySelectorAll('audio').forEach((a) => a.pause())`)
+  if (!st || st.songId !== songId || !Number.isFinite(st.duration)) {
+    throw new Error(`PLAY_NOT_MAPPED: pressed Play on ${songId} but the player loaded ${st?.songId ?? 'nothing'} (duration ${st?.duration})`)
+  }
+  const duration = st.duration
+
+  // 5. Chrome's stream must be on this channel's sink. A browser launched before flow-chrome.sh
+  //    made sinks plays to the default one: move it once, without a relaunch.
+  let streams = 0
+  for (let i = 0; i < 12 && !streams; i++) {
+    streams = await streamsOn(sink)
+    if (!streams) await page.waitForTimeout(250)
+  }
+  if (!streams) {
+    const pid = await chromePidFor(port)
+    if (pid) await cap.moveChromeStreams(sink, pid)
+    streams = await streamsOn(sink)
+  }
+  if (!streams) {
+    throw new Error(
+      `CAPTURE_SILENT: Chrome's sound is not reaching ${sink}, even after moving its streams. ` +
+        `Relaunch the channel so flow-chrome.sh routes it — 🔴 a relaunch LOSES the loaded create form and ` +
+        `the marked Suno tab: ./scripts/browser-channel.sh down ${channel}, wait until port ${port} stops ` +
+        `answering, then ./scripts/browser-channel.sh up ${channel}`,
+    )
+  }
+
+  // 6. Volume: the stream exists now, so pin it (one run came out 21 dB quiet without this).
+  await cap.pinVolume(sink)
+  const vol = (await page.evaluate(`(() => { const a = document.querySelector(${JSON.stringify(SEL_PLAYER_AUDIO)});
+    a.volume = 1; a.muted = false; a.currentTime = 0; return { volume: a.volume, muted: a.muted, t: a.currentTime }; })()`)) as { volume: number; muted: boolean; t: number }
+  if (vol.volume !== 1 || vol.muted) throw new Error(`CAPTURE_SILENT: the player would not unmute (volume ${vol.volume}, muted ${vol.muted})`)
+
+  // 7–9. Record, play from 0, stop at the end.
+  const tmp = mkdtempSync(join(tmpdir(), 'suno-record-'))
+  try {
+    const rawTmp = join(tmp, 'raw.wav')
+    const rec = await cap.startRecording(sink, rawTmp, { startTimeoutMs: 6000 })
+    await page.evaluate(`(() => { window.__badcodeRec.armed = true; document.querySelector(${JSON.stringify(SEL_PLAYER_AUDIO)}).play(); })()`)
+    const deadline = Date.now() + (duration + 30) * 1000
+    for (;;) {
+      await page.waitForTimeout(200)
+      const now = await player()
+      if (!now || now.flag || now.t >= duration - 0.05) break
+      if (now.songId !== songId) break // something else took the player — stop before recording it
+      if (Date.now() > deadline) {
+        await page.evaluate(`document.querySelectorAll('audio').forEach((a) => a.pause())`)
+        await rec.stop().catch(() => {})
+        throw new Error(`CAPTURE_TIMEOUT: ${songId} did not finish within ${Math.round(duration + 30)} s`)
+      }
+    }
+    await page.evaluate(`document.querySelectorAll('audio').forEach((a) => a.pause())`)
+    // The song's last ~0.4 s is still in PulseAudio's pipe when the player says it has ended
+    // (measured 2026-09-11: stopping at once gave 64.91 s of a 65.32 s take). The player is paused,
+    // so the next row can't leak in — keep recording a moment, then trim to the exact duration.
+    await page.waitForTimeout(1500)
+    await rec.stop()
+
+    // 10–12. Silent? Trim from the first sound to the player's exact duration; the preview is a copy.
+    if (await cap.isSilent(rawTmp)) {
+      throw new Error(`CAPTURE_SILENT: the recording of ${songId} is silent — check that ${sink} is Chrome's sink (pactl list sink-inputs)`)
+    }
+    const first = await cap.firstSoundAt(rawTmp)
+    mkdirSync(MEDIA_ROOT, { recursive: true })
+    const base = join(MEDIA_ROOT, mediaSlug(take.title, songId))
+    const raw = `${base}.wav`
+    const preview = `${base}.preview.mp3`
+    await cap.trim(rawTmp, first, duration, raw)
+    await cap.makePreview(raw, preview)
+
+    requireCreate(page) // never navigated
+    return { songId, title: take.title, durationSec: Math.round(duration * 1000) / 1000, raw, preview, channel }
+  } finally {
+    rmSync(tmp, { recursive: true, force: true })
+    await page.evaluate(`(() => { if (window.__badcodeRec) window.__badcodeRec.armed = false; })()`).catch(() => {})
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 
 // Only dispatch when run directly — `cover-ab.mts` imports the helpers above, and an
 // unguarded top-level dispatch would print the usage banner on every import.
@@ -1328,6 +1513,23 @@ if (cmd === 'extract') {
   const { browser, page } = await connect()
   console.log(JSON.stringify(await listTakes(page, rest[0] ?? ''), null, 2))
   await browser.close()
+} else if (cmd === 'record') {
+  // Errors print as `CODE: message` and exit 1 — callers branch on the code in the text.
+  if (!rest[0]) {
+    console.error('record: usage: record <songId|id8|title>')
+    process.exit(1)
+  }
+  let browser: Browser | null = null
+  try {
+    const c = await connect()
+    browser = c.browser
+    console.log(JSON.stringify(await recordTake(c.page, rest[0])))
+  } catch (e) {
+    console.error((e as Error).message)
+    process.exitCode = 1
+  } finally {
+    await browser?.close()
+  }
 } else if (cmd === 'taste') {
   // My Taste is ACCOUNT-WIDE and invisible from the create form, so the docs require reading it
   // back at the start of every session. `setTaste` existed for a year without this half.
@@ -1476,7 +1678,11 @@ Personalize is ALWAYS OFF and My Taste is not used (Kai, 2026-09-10).
                                   the listening loop's spread: v6 w30 style 75 + v6-wild w60
                                   style 60, Variety off, Max Mode off. Without --yes: print the
                                   two cells and the cost, spend nothing. --round is required.
-  takes [titleFilter]             list clip rows with durations
+  takes [titleFilter]             list clip rows with durations and song IDs
+  record <songId|id8|title>       play one take in the create page and record it from the
+                                  channel's own sink → <LISTEN_MEDIA_ROOT>/<slug>-<id8>.wav (raw,
+                                  for Claude) + .preview.mp3 (low-passed, for the human). No
+                                  download, no navigation, no credits
 
 Every spec needs \`model\` ('v6' | 'v6-wild'). Titles: <title>-<model>[-var-<step>][-max]-w<n>;
 explore: <title>-r<N>-v6-w30 and <title>-r<N>-wild-w60 (title ≤ 30 chars).

@@ -479,7 +479,7 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - [x] done
 - Notes: 2026-09-11 — done. `takes` on the live page: 15 rows, 15 distinct 36-char song IDs, matching the rows' `/song/` links and the Cover picker's artwork (the human paste-into-a-browser check is still open, cheap, and not blocking). `resolveEndpoint` now skips any lock whose owner isn't `flow` (proven with a fake `listen` lock → stayed on 9222; a `flow` lock → followed). **Behaviour change:** `connect()` no longer opens a Suno tab in a browser that has none — it throws `WRONG_CHANNEL` (proven on a fresh channel 3) and points at `open-tab`; `requireCreate(page)` throws it for a Suno tab off /create. Also fixed: `listTakes` kept " V5.5 Spok" in titles because v6 prints the model tag in capitals (split is now case-insensitive). camping/cover-ab/style-ab still read title/dur only; their typecheck errors under a strict scratch config are pre-existing (`verify()` is `unknown`, `cover-variations.mts` is missing).
 
-### T8: `record` command   [Status: pending | Model: opus]
+### T8: `record` command   [Status: done (human listen of the preview pending) | Model: opus]
 - **Scope:** `record <key>`. The capture module is loaded with a **dynamic `import()` inside this
   command**, so every other `suno.mts` command (and `cover-ab`, `camping`, `style-ab`) keeps working
   without listen-mcp installed. The steps:
@@ -515,8 +515,8 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
   `grep -n "@badcode/listen-mcp/capture" scripts/suno/suno.mts` → only a dynamic `import(` line, no
   top-level `import … from`.
 - **Depends on:** T3, T6, T7
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — built and run live on channel 1 (loopback muted during the runs): `record 870fbab1` → exit 0, both files under `/mnt/c/Users/kai/Desktop/suno-recordings/`; raw 65.321 s vs player 65.321 s (first attempt was 64.911 — the song's last ~0.4 s was still in PulseAudio's pipe at `ended`, so the recorder now keeps recording 1.5 s past the end with the player paused, then trims to the exact duration); max −1.5 dB (not silent); `status` identical before/after; one create tab, never navigated; the capture module is only a dynamic `import(`. The player's own `/song/<id>` link is checked before recording, so the pair's twin can't be recorded by mistake. `TAKE_NOT_FOUND` / `TAKE_AMBIGUOUS` verified. **Pending (human):** open `gpom-cut1f-haunting-dark-si50-ai20-w45-870fbab1.preview.mp3` and confirm it is that song with no tail of another.
 
 ### T9: `explore` command   [Status: done (live --yes run pending Kai's yes) | Model: sonnet]
 - **Scope:** add a per-cell `styleInfluence` to the pair/grid run loop (`suno.mts:1316-1343`). Each
