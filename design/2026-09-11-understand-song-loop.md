@@ -518,7 +518,7 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
 - [ ] done
 - Notes:
 
-### T9: `explore` command   [Status: pending | Model: sonnet]
+### T9: `explore` command   [Status: done (live --yes run pending Kai's yes) | Model: sonnet]
 - **Scope:** add a per-cell `styleInfluence` to the pair/grid run loop (`suno.mts:1316-1343`). Each
   cell sets `Style Influence` from the cell (existing grid cells keep `spec.styleInfluence ?? 75`).
   Then add `explore <spec.json> --round <N> [--yes]` using `exploreCells(spec.title, N)` (Variety
@@ -537,8 +537,8 @@ Channel number for `record`: from `resolveEndpoint()` (`suno.mts:30-55`), port �
   no Create; without `--round` → refuses with exit 1.
   `npx tsx scripts/suno/suno.mts grid-plan <an existing spec>` → same output as before the change.
 - **Depends on:** T5
-- [ ] done
-- Notes:
+- [x] done
+- Notes: 2026-09-11 — code done and validated: dry run prints both titles + `20 credits (2 Creates)` and exits 0 before `connect()` (proven with `SUNO_CDP_ENDPOINT=http://127.0.0.1:1`); no `--round` → exit 1; grid-plan output identical (scratch spec, 56 cells); 48/48 script tests. `--yes` filters the final take list to `<title>-r<N>-`. **Not yet done:** the live, human-gated `--yes` run (20 credits) — needs Kai's explicit yes.
 
 ### T10: `narrow` command   [Status: pending | Model: opus]
 - **Scope:** `narrow <spec.json> <key> --round <N> [--yes]`, exactly per the Interfaces entry

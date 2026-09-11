@@ -13,6 +13,7 @@
  *   npx tsx scripts/suno/suno.mts extract <sheet.md> "GEN A · CUT 1" > spec.json
  *   npx tsx scripts/suno/suno.mts load  <spec.json>
  *   npx tsx scripts/suno/suno.mts pair  <spec.json>          # load, create @w30, create @w60
+ *   npx tsx scripts/suno/suno.mts explore <spec.json> --round <N> [--yes]   # dry run without --yes
  *   npx tsx scripts/suno/suno.mts takes [titleFilter]
  *
  * This file must stay `.mts`: tsx transforms `.ts` as CJS and rejects top-level await.
@@ -20,7 +21,7 @@
 import { chromium, type Browser, type Page } from 'playwright'
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs'
 // take-row.mts is the pure half and imports nothing from here (a two-way import is an init cycle).
-import { modelTag } from './take-row.mts'
+import { exploreCells, modelTag } from './take-row.mts'
 
 /**
  * CHANNELS — one browser per Claude session (2026-08-26). Suno shares its session's Flow
@@ -1204,6 +1205,19 @@ function extract(file: string, section: string, tasteSection = 'The shared profi
 }
 
 /**
+ * One Create of the pair/grid/explore run loop. Every setting the loop re-asserts between Creates
+ * lives on the cell — Style Influence included, because `explore`'s two cells differ on it.
+ */
+export interface RunCell {
+  model: string
+  variety: VarietyStep
+  maxMode: boolean
+  weirdness: number
+  styleInfluence: number
+  title: string
+}
+
+/**
  * Expand a spec into grid cells. Model outermost (fewest model switches), weirdness innermost (so
  * the pair sits side by side). An axis with one value is not written into the title.
  */
@@ -1214,7 +1228,9 @@ export function gridCells(spec: SunoSpec) {
   const varieties = g.variety ?? [spec.variety ?? 'normal']
   const maxes = g.maxMode ?? [spec.maxMode ?? false]
   const ws = g.weirdness ?? spec.weirdness ?? [30, 60]
-  const cells: { model: string; variety: VarietyStep; maxMode: boolean; weirdness: number; title: string }[] = []
+  // Style Influence is not a grid axis: every grid/pair cell carries the spec's one value.
+  const styleInfluence = spec.styleInfluence ?? 75
+  const cells: RunCell[] = []
   for (const model of models)
     for (const variety of varieties)
       for (const maxMode of maxes)
@@ -1224,6 +1240,7 @@ export function gridCells(spec: SunoSpec) {
             variety,
             maxMode,
             weirdness,
+            styleInfluence,
             title: [
               spec.title,
               modelTag(model),
@@ -1290,13 +1307,54 @@ if (cmd === 'extract') {
   } finally {
     await browser.close()
   }
-} else if (cmd === 'load' || cmd === 'pair' || cmd === 'grid' || cmd === 'grid-plan') {
-  const spec: SunoSpec = JSON.parse(readFileSync(rest[0], 'utf8'))
-  // 🔑 `pair` is a grid with one axis: weirdness 30 and 60 on the spec's own model.
-  const cells = gridCells(cmd === 'grid' || cmd === 'grid-plan' ? spec : { ...spec, grid: undefined })
+} else if (cmd === 'load' || cmd === 'pair' || cmd === 'grid' || cmd === 'grid-plan' || cmd === 'explore') {
+  // `explore <spec.json> --round <N> [--yes]` — flags may sit anywhere after the command.
+  const roundAt = rest.indexOf('--round')
+  const specPath = rest.find((a, i) => !a.startsWith('--') && !(roundAt >= 0 && i === roundAt + 1))
+  if (!specPath) {
+    console.error(`${cmd}: missing <spec.json>`)
+    process.exit(1)
+  }
+  let round = 0
+  if (cmd === 'explore') {
+    // 🔴 --round is REQUIRED. create() returns as soon as any 2 rows carry the title, so a reused
+    //    title "succeeds" on an earlier round's takes without waiting for this round's.
+    round = roundAt >= 0 ? Number(rest[roundAt + 1]) : NaN
+    if (!Number.isInteger(round) || round < 1) {
+      console.error(
+        'explore: --round <N> is required (a positive integer). Every round needs its own titles — ' +
+          "create() returns once any 2 rows carry the title, so a reused title reports success on an earlier round's takes.",
+      )
+      process.exit(1)
+    }
+  }
+  const spec: SunoSpec = JSON.parse(readFileSync(specPath, 'utf8'))
+  let cells: RunCell[]
+  if (cmd === 'explore') {
+    // Decision 6: safe end + wild end, Variety off, Max Mode off, per-cell Style Influence.
+    try {
+      cells = exploreCells(spec.title, round)
+    } catch (e) {
+      console.error(`explore: ${(e as Error).message}`)
+      process.exit(1)
+    }
+  } else {
+    // 🔑 `pair` is a grid with one axis: weirdness 30 and 60 on the spec's own model.
+    cells = gridCells(cmd === 'grid' || cmd === 'grid-plan' ? spec : { ...spec, grid: undefined })
+  }
+  // A round's own takes only — `<title>-r<N>-` never matches another round's rows.
+  const takeFilter = cmd === 'explore' ? `${spec.title}-r${round}-` : spec.title
   if (cmd === 'grid-plan') {
     console.log(`${cells.length} Creates → ${cells.length * 2} takes, into workspace ${spec.workspace ?? '(unset!)'}`)
     for (const c of cells) console.log(`  ${c.title}   model=${c.model} variety=${c.variety} max=${c.maxMode} w=${c.weirdness}`)
+    process.exit(0)
+  }
+  if (cmd === 'explore' && !rest.includes('--yes')) {
+    // The dry run. Returns before connect(): no browser, no Create, nothing spent.
+    console.log(`explore round ${round}: ${cells.length} Creates → ${cells.length * 2} takes, into workspace ${spec.workspace ?? '(unset!)'}`)
+    for (const c of cells)
+      console.log(`  ${c.title}   model=${c.model} variety=${c.variety} max=${c.maxMode} w=${c.weirdness} style=${c.styleInfluence}`)
+    console.log(`cost: ${cells.length * 10} credits (${cells.length} Creates) — nothing spent. Re-run with --yes to generate.`)
     process.exit(0)
   }
   const { browser, page } = await connect()
@@ -1325,7 +1383,7 @@ if (cmd === 'extract') {
       } else {
         console.log(await setModel(page, cell.model))
         console.log(await setV6Controls(page, cellSpec))
-        console.log(await setSlider(page, 'Style Influence', spec.styleInfluence ?? 75))
+        console.log(await setSlider(page, 'Style Influence', cell.styleInfluence))
         console.log(await setSlider(page, 'Weirdness', cell.weirdness))
         console.log('title:', await setTitle(page, cell.title))
         const v = (await verify(page)) as Record<string, unknown>
@@ -1341,7 +1399,7 @@ if (cmd === 'extract') {
       // v6 credit cost is unknown — every Create logs it until it is.
       console.log(`   credits ${before} → ${after}${before && after ? ` (cost ${before - after})` : ''}`)
     }
-    console.log(JSON.stringify(await listTakes(page, spec.title), null, 2))
+    console.log(JSON.stringify(await listTakes(page, takeFilter), null, 2))
   }
   // (Until 2026-09-10 this released the My Taste freedom token. My Taste is retired, so there is
   // no account-wide box to hand back — each song is its own unit.)
@@ -1362,9 +1420,14 @@ Personalize is ALWAYS OFF and My Taste is not used (Kai, 2026-09-10).
   grid-plan <spec.json>           print the grid's cells and titles — spends nothing
   grid  <spec.json>               load once, then Create every cell of spec.grid
                                   (model × variety × maxMode × weirdness)
+  explore <spec.json> --round <N> [--yes]
+                                  the listening loop's spread: v6 w30 style 75 + v6-wild w60
+                                  style 60, Variety off, Max Mode off. Without --yes: print the
+                                  two cells and the cost, spend nothing. --round is required.
   takes [titleFilter]             list clip rows with durations
 
-Every spec needs \`model\` ('v6' | 'v6-wild'). Titles: <title>-<model>[-var-<step>][-max]-w<n>.
-v6 credit cost per Create is unknown — pair/grid log the balance around every Create.
-\`load\`, \`controls\` and \`grid-plan\` never spend credits.`)
+Every spec needs \`model\` ('v6' | 'v6-wild'). Titles: <title>-<model>[-var-<step>][-max]-w<n>;
+explore: <title>-r<N>-v6-w30 and <title>-r<N>-wild-w60 (title ≤ 30 chars).
+v6 credit cost per Create is unknown — pair/grid/explore log the balance around every Create.
+\`load\`, \`controls\`, \`grid-plan\` and \`explore\` without --yes never spend credits.`)
 }
