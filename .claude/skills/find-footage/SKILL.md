@@ -49,17 +49,19 @@ own terms regardless.
 
 | Tier | What it means | Do |
 | --- | --- | --- |
-| 🟢 **Green** | US federal work (17 USC §105), an institutional PD dedication, or CC0 — **and we verified it ourselves.** No credit owed, no clause to weigh | Download it. Still read the people-in-frame rule below |
-| 🟡 **Amber** | Mixed collection, inferred licence, attribution or ShareAlike obligation, a clause that might bite, or a source nobody ever authenticated against | 🔴 **Per-item check, and it does not ship until a human has answered.** See the hard stop |
+| 🟢 **Green** | US federal work (17 USC §105), an institutional PD dedication, or CC0 — **and we verified it ourselves.** No clause to weigh. *(An attribution-only licence is green too, since 2026-09-12 — record the credit string and carry it.)* | Download it. Still read the people-in-frame rule below |
+| 🟡 **Amber** | Mixed collection, inferred licence, **ShareAlike**, a clause that might bite, or a source nobody ever authenticated against | 🔴 **Per-item check, and it does not ship until a human has answered.** See the hard stop |
 | 🔴 **Red** | Paid house, non-commercial licence, embed-only, dead domain | Don't. Say so, name the free route, move on |
 
 **The seven green sources — memorise these, they answer most requests:**
 
 | Green source | For |
 | --- | --- |
-| `identifier:gov.archives.arc.*` (FedFlix/NARA) | US federal film, 2,107 items |
+| `identifier:gov.archives.arc.*` (FedFlix/NARA) | US federal film, 2,108 indexed — 🔴 **~25% are dead, see below** |
+| `identifier:gov.fdr.*` (FedFlix/FDR Library) | 154 items. Holds Capra's *Why We Fight* reels — **`gov.fdr.25.4` is the Dunkirk item** |
+| `identifier:gov.ntis.*` (FedFlix/NTIS) | US government transfers — where *Know Your Ally: Britain* survives |
 | `collection:nasa` | Mission footage, NASA TV, 13,733 items |
-| `identifier:gov.dod.dimoc.*` | US military, DIMOC-numbered, CC0 |
+| `identifier:gov.dod.dimoc.*` | US military, DIMOC-numbered, CC0. 🔴 **~40% are dead, see below** |
 | `collection:universal_newsreels` | Newsreel 1932–1967 — cleanest licence on the page, only 611 digitised |
 | `images-api.nasa.gov` | Every NASA centre. Keyless — and it **rejects `api_key` with HTTP 400** |
 | `svs.gsfc.nasa.gov/api` | Climate/ocean/ice viz. Hands you the literal mp4 URL |
@@ -67,6 +69,27 @@ own terms regardless.
 
 Everything else is amber or red. **Prelinger is amber except the `licenseurl:*` subset** (1,913 of
 10,459), which is green.
+
+### 🔴 A search hit is not an item — check liveness before you quote an identifier
+
+**New 2026-09-12.** archive.org's search index outlives its files. A withdrawn item looks like this:
+
+```bash
+curl -s  "https://archive.org/metadata/$ID"                                    # → {}  with HTTP 200
+curl -sL "https://archive.org/details/$ID" -o /dev/null -w '%{http_code}\n'    # → 404
+```
+
+**`{}` with a 200 means gone, not empty.** Random live samples: **3 of 12** `gov.archives.arc.*`
+and **4 of 10** `gov.dod.dimoc.*` items were unreachable — including
+`gov.dod.dimoc.30172`, which was the reference page's own flagship example. **Never quote an
+identifier you have not `/metadata/`-fetched in this session**, and when one is dead, **re-search by
+title** across `collection:usgovfilms` and `collection:prelinger` before giving up — that is how
+*Know Your Ally: Britain* and *Divide and Conquer* were both recovered.
+
+🟢 **Free preview trick:** every video item carries derivative thumbnails
+(`<id>.thumbs/<id>_NNNNNN.jpg`, the number is the **second offset**). A few hundred KB indexes a
+whole reel — `montage` them into a contact sheet and you can find a specific 80-second block before
+downloading a 370MB original. Full recipe in the reference page.
 
 ### 🔴 The hard stop — nothing amber gets published without a per-item check
 
@@ -91,7 +114,7 @@ community collections with an uploader-asserted PD Mark.** That is what amber pr
 | --- | --- | --- |
 | 1 | **Provenance.** Trusted identifier prefix or collection? An `@nasa.gov` / FedFlix (`carl@media.org`) / DIMOC uploader counts. **A personal email address does not** | Yes |
 | 2 | **Exact licence code**, not a substring. `creativecommons.org` also matches `by-nc-nd`. **BY / BY-SA / CC0 / PDM are four different answers** | Yes |
-| 3 | **Obligation.** Attribution or ShareAlike required? → **amber, not green** — we have no credits surface (see below) | Downgrade |
+| 3 | **Obligation.** Attribution alone is fine — **we carry credits** (ruled 2026-09-12); copy the exact credit string into the receipt. **ShareAlike still downgrades** | SA only |
 
 **Half B — a human answers these, out loud, before it ships:**
 
@@ -115,17 +138,38 @@ waives *copyright* and nothing else: NASA's own guidelines separately bar use of
 **Hardware, crowds, landscapes, launches: fine. A named person's face carrying an argument: Kai's
 call, every time.**
 
-### 🔴 CC-BY-NC is a hard kill · CC-BY needs a home we don't have
+### 🔴 CC-BY-NC is a hard kill · CC-BY is fine now · SA still bites
 
 - **NC:** "not primarily intended for commercial advantage." **We sell music.** Judged at the
   entity level — "we didn't charge for this comic" does not cure it. See `by-nc` or `by-nd` in a
   `licenseurl`, stop.
 - **SA:** not a commercial bar, but it forces the *finished piece* to be relicensed CC-BY-SA.
-  Editing a clip into a comic is an adaptation. Amber, human call.
-- **BY:** 🔴 **There is nowhere in BadCode to carry a credit.** No credits surface in
-  `@badcode/comic`, no end card, no tail slate. **Every attribution-requiring source is amber until
-  Kai rules on where a credit goes.** Don't improvise one — a credit we invent and quietly drop is
-  worse than not using the clip.
+  Editing a clip in is an adaptation. Amber, human call.
+- **BY:** ✅ **Settled 2026-09-12 — credits go in the video.** Kai: *"we very happily put credits
+  in."* An attribution requirement is a cost we pay, not a downgrade. **Two obligations follow:**
+  record the licence's exact credit string in the receipt JSON and the story's footage ledger
+  (OGL's is fixed; CC-BY's is per-file — read `extmetadata.Artist`/`Credit`, never compose your
+  own), and **never ship the clip without it.** 🔴 **Video only** — `@badcode/comic` still has no
+  credits surface, so a CC-BY *still in a comic* is still an open question.
+
+### 💷 There is a budget, and it is smaller than the archive houses' minimums
+
+✅ **Ruled 2026-09-12.** **£100 for the whole film, £200 at an absolute push.** Not per clip.
+Kai: *"I'd rather not if we can get away with it, but there's the option to pay a licence fee…
+we have to be very very price sensitive."*
+
+🔴 **Do not let this change the shape of an answer.** £200 does not reach BFI (cheapest tier
+**£840** + £14/sec, verified rate card), British Pathé, IWM or BBC Motion Gallery, and one
+Filmsupply clip ($109–219) is the entire budget. The free route is still the answer almost always.
+
+**Where it can go, in order:** a **per-image still licence** (the only category that reliably fits,
+and a push-in on a still is usually right anyway) → a **one-month subscription used hard**
+(Storyblocks £16–£35 — check its political-use clause first) → **nothing**, the expected outcome.
+🔴 **Never** pay a PD reseller (Footage Farm, CriticalPast, Periscope) for NARA/LoC material that
+is free at source.
+
+**Every spend is a stop gate.** Name the exact item, the exact terms, the price, and what it buys
+that free cannot — then **wait for Kai.** The budget is permission to *ask*, not to buy.
 
 ### 🔴 Strip the audio by default
 
@@ -271,7 +315,7 @@ the only thing that matters.
 | Green hit | *"`gov.dod.dimoc.30172`, CC0, FedFlix — green, safe to publish. Downloaded and conformed to `<path>`."* |
 | Amber hit | *"Found it on Prelinger but it has no `licenseurl` — amber. I can pull it; it needs a per-item check on the sponsor before it ships."* |
 | Only red exists | *"The only source is British Pathé, which is paid per-second and states none of its collection is PD. Free routes: a US federal compilation of the same event, or invent it in Flow."* |
-| Nothing exists free | Say so plainly and let Kai decide. **Never end at "buy it."** |
+| Nothing exists free | Say so plainly, **then** price the paid option against the £100/£200 ceiling and let Kai decide. 🔴 **Still never end at "buy it"** — the free route comes first, and "this costs £840, which is over budget" is a complete answer |
 
 🔴 **Never launder a tier.** If you could not cure an uploader-asserted claim, it stays amber. "It's
 obviously a War Department film" is a vibe, not a check.

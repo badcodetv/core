@@ -54,11 +54,28 @@ we may use it*.
 
 - **Magic Money Tree** — [`docs/stories/magic-money-tree/footage.md`](../stories/magic-money-tree/footage.md)
 
-## 🔴 The open question that gates the most material
+## ✅ Credits — settled 2026-09-12
 
-**BadCode has nowhere to carry a credit.** No credits surface in `@badcode/comic`, no end card, no
-tail slate. So every attribution-requiring licence is amber by house rule — including the **Open
-Government Licence**, which is otherwise exactly the permission we want and which covers the UK
-government documents four Magic Money Tree scenes are built on. **Kai owes a ruling on where a
-credit lives.** Don't improvise one: a credit we invent and quietly drop is worse than not using
-the material.
+Kai: *"If we need to add a credit into the video in order to then use footage, of course — where we
+can put that is in various places in the video, because we very happily put credits in."*
+
+**So an attribution requirement is a cost we pay, not a blocker.** This un-blocks the **Open
+Government Licence** (the whole UK government-document route), Commons CC-BY files, Europeana CC-BY,
+LoC and CERN.
+
+**Two obligations come with it.** Put the licence's **exact** credit string in the *Credit owed*
+column above and in the story's ledger — OGL's is fixed (*"Contains public sector information
+licensed under the Open Government Licence v3.0."*), CC-BY's is per-file, so read
+`extmetadata.Artist`/`Credit` rather than composing one. And **never ship the clip without it**: a
+credit we promised and dropped is worse than not using the material.
+
+🔴 **Video only.** `@badcode/comic` still has no credits surface, so a CC-BY *still in a scroll
+comic* remains open. And no credit cures ShareAlike, a non-commercial licence, or a political-use bar.
+
+## 💷 The budget — £100, hard stretch £200, per film
+
+Ruled 2026-09-12. **Not per clip.** It does **not** reach the UK archive houses: BFI's cheapest
+published tier is **£840 + £14/sec**, and Pathé, IWM and BBC Motion Gallery quote at broadcast
+scale. Best use is a **per-image still licence**; worst use is paying a PD reseller for NARA or LoC
+material that is free at source. **Every spend is a stop gate** — price it, say what it buys that
+free cannot, and wait for Kai. Log any committed spend in the ledger row before agreeing to it.

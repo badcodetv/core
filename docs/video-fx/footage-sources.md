@@ -39,6 +39,7 @@ ffmpeg to conform it, Premiere to cut it.
 | [The catalogue: 🟡 amber](#-amber--usable-with-a-per-item-check) | 27 sources, per-item check required |
 | [The catalogue: 🔴 red](#-red--do-not-use) | 34 sources, don't |
 | [Download mechanics](#download-mechanics) | Search → metadata → bytes → verify → conform → where it lands |
+| [💷 The budget](#-the-budget--100-hard-stretch-200-for-a-whole-film) | £100, stretch £200, whole film — what it does and does not buy |
 | [What we deliberately don't use](#what-we-deliberately-dont-use) | And the free route instead |
 | [Verification status](#verification-status) | 🔴 What was proven live vs only read. Load-bearing |
 | [Known gaps](#known-gaps--nobody-covered-these) | Territories nobody surveyed. Read before promising a subject |
@@ -99,12 +100,15 @@ was:**
 1. **Green means *verified by us*, not *ought to be fine*.** DVIDS, NARA v2 and Adobe Stock Free
    were rated green on documentation alone — no authenticated call was ever made to any of them.
    They are amber until someone makes one.
-2. **Green means no obligation we cannot discharge.** "CC-BY where we will actually carry the
-   credit" used to be a green criterion. **We have nowhere to carry a credit.** There is no credits
-   surface in `@badcode/comic`, no end-card convention, nothing. Until one exists and Kai rules on
-   where it lives, **every CC-BY and CC-BY-SA source is amber** — that alone moved ESO out of green.
-   See [Naming and disk layout](#naming-and-disk-layout) for the receipt convention and the open
-   question.
+2. **Green means no obligation we cannot discharge.** ✅ **Settled by Kai, 2026-09-12: we carry
+   credits.** *"If we need to add a credit into the video in order to then use footage, of course —
+   where we can put that is in various places in the video, because we very happily put credits
+   in."* So **an attribution requirement is no longer a reason to downgrade a source**: a plain
+   CC-BY or OGL obligation is dischargeable and does not by itself make a source amber. What still
+   downgrades: **ShareAlike** (it relicenses the finished film), any **non-commercial** clause
+   (a hard kill), and anything with a **political-use** or **endorsement** bar. See
+   [The credit surface](#-the-credit-surface--settled-2026-09-12) for where a credit actually goes
+   and what it must say.
 
 **🔴 Every green source can still contain an identifiable real person**, and no licence on this page
 clears what our cut implies about them. NASA, DVIDS, NPS, ESO, LoC and C-SPAN are *full* of named
@@ -138,8 +142,9 @@ otherwise is how a clause gets missed.
 2. **Licence string.** Read the exact code, not the substring. `creativecommons.org` also matches
    `by-nc-nd`. **BY / BY-SA / CC0 / PDM are different answers.** On Commons, read
    `extmetadata.LicenseShortName` — do not eyeball the page.
-3. **Obligation.** Does it require attribution or ShareAlike? If yes it is **amber, not green** —
-   we have no credits surface yet (see above).
+3. **Obligation.** Attribution alone is **fine** — we carry credits (ruled 2026-09-12); record the
+   exact credit line in the receipt so it reaches the end card. **ShareAlike is still a downgrade**:
+   it forces the finished film to be relicensed, and editing a clip in is an adaptation.
 
 **Half B — the human check (minutes, not seconds, and it cannot be automated):**
 
@@ -1091,8 +1096,9 @@ And ESO videos ship with **ESO's own music bed, explicitly outside the CC BY gra
 trap as NASA and SVS, which is why the audio rule at the top of this page is global.
 
 **House answer: strip the audio, prefer plates with no people in them, carry the ©ESO credit — and
-if a person is identifiable, it needs Kai's call, not a licence check.** Plus the standing CC-BY
-problem: we have no credits surface, so even a clean ESO plate is amber until we do.
+if a person is identifiable, it needs Kai's call, not a licence check.** ✅ **The credit itself is
+no longer the obstacle** (ruled 2026-09-12 — credits go in the video). What keeps ESO amber is the
+identifiable-people clause and the commercial-use bar, not the attribution.
 
 No API. HTML only, but the CDN paths are predictable:
 
@@ -1552,21 +1558,41 @@ backed up, which is why it lives in git and the video does not. The ledger row c
 source, tier, exact licence code, the credit line if one is owed, the Half B answers if it was
 amber, and which piece it went into.
 
-🔴 **Neither directory exists yet.** The first session to source a clip creates them and writes the
-ledger's header. Don't skip it and don't invent a different layout.
+✅ **Both now exist** — created 2026-09-12 by the Magic Money Tree sourcing pass:
+[`docs/footage/README.md`](../footage/README.md) is the ledger, and the receipts sit beside it as
+`archive.org--<identifier>.json`. Add rows; don't invent a different layout.
 
-#### 🔴 The credit surface — an open question, and it is why CC-BY is amber
+#### ✅ The credit surface — settled 2026-09-12
 
-Green used to include *"CC-BY where we will actually carry the credit."* **There is nowhere to carry
-a credit.** `@badcode/comic` has no credits surface, there is no end-card convention, the shorts
-have no tail slate, and no comic page has ever displayed an attribution line. Every other BadCode
-artifact has a home; this one has never been designed.
+**Kai's ruling, in his words:** *"If we need to add a credit into the video in order to then use
+footage, of course — where we can put that is in various places in the video, because we very
+happily put credits in."*
 
-Until Kai rules on where a credit goes, **every attribution-requiring source on this page is amber**
-— ESO, Commons' CC-BY/BY-SA majority, Europeana's CC-BY records, OGL/OPL material, CERN. The
-candidates worth ruling between are: a credits page on the site; a per-comic end card; a
-`## Credits` block in the story canon that renders; or a tail slate on video. **Ask, don't
-improvise** — a credit we invent and then quietly drop is worse than not using the clip.
+**So attribution is a cost we pay, not a blocker.** This page previously downgraded every
+attribution-requiring source to amber because BadCode had no credits surface. That reason is gone
+for **video**. Sources it un-blocks: **OGL and OPL** (UK government and Parliament documents — the
+whole UK route), Commons' CC-BY files, Europeana's CC-BY records, ESO, CERN, LoC, NPS' third-party
+credits.
+
+**What a session must now do instead of downgrading:**
+
+1. **Record the exact credit string the licence demands**, verbatim, in the item's receipt JSON and
+   in the story's footage ledger. OGL's is fixed: *"Contains public sector information licensed
+   under the Open Government Licence v3.0."* CC-BY's is per-file — read `extmetadata.Artist` and
+   `Credit`, don't compose your own.
+2. **Never ship the clip without the credit.** The ruling is *"of course we put credits in"*, not
+   *"attribution doesn't matter"*. A credit we promised and dropped is worse than not using the clip.
+3. **Carry it to the edit.** The credit belongs in the delivered video — an end card, a tail slate,
+   a lower-third, or an on-screen source caption where the shot appears. Placement is the editor's
+   call; **its existence is not**.
+
+🔴 **Three things this ruling does *not* cover.**
+- **Stills in the comics.** `@badcode/comic` still has no credits surface. The ruling is about
+  video. A CC-BY still in a scroll comic is still an open question.
+- **ShareAlike.** Still a downgrade — it relicenses the finished film, which is a different
+  question from carrying a line of text.
+- **Clauses that bar our use outright.** No credit cures a non-commercial licence, a political-use
+  ban, or an endorsement clause.
 
 ### Politeness
 
@@ -1582,13 +1608,61 @@ download workers against one host**, and treat 429/503 as *stop for a few minute
 
 ---
 
+## 💷 The budget — £100, hard stretch £200, for a whole film
+
+✅ **Kai's ruling, 2026-09-12,** replacing the flat *"we buy no footage"*: *"It's reasonable that
+we have a small budget… maximum 100, a huge push 200 but no more… I'd rather not if we can get away
+with it, but there's the option to pay a licence fee for some footage if we need to."*
+
+**So a licence fee is now askable. It is not a plan.** Read the number before you reach for it:
+
+| What £100–200 does **not** buy | Verified figure |
+| --- | --- |
+| **BFI archive footage** | £840 + £14/sec for *single-country TV, 5 years* — the cheapest line on their card, **4× the absolute ceiling before a single second is counted.** Live rate card, fetched 2026-08-22 |
+| **British Pathé, IWM, BBC Motion Gallery, Huntley** | All quote-based, no published floor, and all aimed at broadcast budgets. IWM's *free* tier separately bans campaigning use |
+| **Filmsupply** | $109/clip internal, $219/clip web — **one clip is the entire budget** |
+
+🔴 **The honest position: £200 does not reach the UK archive houses, and that was the gap the
+budget looked like it might close.** It does not. Their minimums are above our maximum before
+per-second charges begin.
+
+**Where the money can actually go, in order of sense:**
+
+1. **A per-image still licence.** A single archival still from a per-image library is the only
+   category that reliably lands inside £100, and [step 8](#find-footage-of-a-historical-event--start-here)
+   already says a push-in on a still is usually the right answer anyway. **This is the first place
+   to spend, not the last.**
+2. **A one-month subscription, used hard and cancelled.** Storyblocks is £16–£35/month (live page,
+   verified). 🔴 Check its EULA for a political-use bar before assuming — that clause, not the
+   price, is what usually kills stock for us.
+3. **Nothing.** Still the expected outcome for most beats.
+
+**Three rules that come with the budget.**
+
+- **£200 is the whole film, not a per-clip allowance.** Spending it twice is spending £400. Track
+  every commitment in the story's footage ledger before agreeing to it.
+- **Never spend on something that is free elsewhere.** The PD resellers — Footage Farm,
+  CriticalPast, Periscope Film — sell research and delivery on top of NARA and LoC material that
+  costs nothing at source. Paying them is paying for our own laziness.
+- **Every spend is a 🔴 stop gate.** Price it, name the exact item and the exact terms, say what it
+  buys that free cannot, and **wait for Kai.** The budget is permission to ask, not permission to buy.
+
+**What has not changed: never end an answer at "buy X."** State the free route first. If there
+genuinely isn't one, say so plainly, then price the paid option against the ceiling above and let
+Kai decide.
+
+---
+
 ## What we deliberately don't use
+
+*(Amended 2026-09-12: this table is now about **value**, not an absolute bar. A small budget exists
+— see above — but every row's free route is still the first answer.)*
 
 | Not used | Why | The free route we take instead |
 | --- | --- | --- |
-| **British Pathé, IWM, BFI** (UK archival) | Paid per-second; IWM's only free tier bans campaigning use **by name** | **US federal compilations of the same events** on archive.org (`gov.archives.arc.*`, War Dept bulletins, Capra's *Why We Fight*) — accept it won't carry a British uniform |
+| **British Pathé, IWM, BFI** (UK archival) | Paid per-second; IWM's only free tier bans campaigning use **by name**. 🔴 **And out of reach even with the budget** — BFI's cheapest tier starts at £840 | **US federal compilations of the same events** on archive.org (`gov.archives.arc.*`, `gov.fdr.*`, War Dept bulletins, Capra's *Why We Fight*) — accept it won't carry a British uniform — plus **Commons `PD-UKGov` stills**, which is where the British picture actually is |
 | **AP, Reuters/ITN, Getty Embed** (news wires) | Embed-only or internal-audience-only; nothing extractable | Wikimedia Commons for PD news film; Flow for anything that only needs to *look* like news |
-| **Footage Farm, CriticalPast, Periscope Film** (PD resellers) | They sell research and delivery on top of genuinely-PD material | **Go to the underlying source.** All three draw largely on NARA / LoC — which are free |
+| **Footage Farm, CriticalPast, Periscope Film** (PD resellers) | They sell research and delivery on top of genuinely-PD material. 🔴 **The worst possible use of the budget**: paying for material that is free at source | **Go to the underlying source.** All three draw largely on NARA / LoC — which are free |
 | **Storyblocks, Artgrid, Filmsupply, Shutterstock bulk, Adobe Stock paid** (subscription/per-clip) | Paid, no usable free tier | 🟡 **Adobe Stock Free** (1.1M+, free Adobe ID — but its terms bar implied political endorsement, so it is amber, not "commercial-cleared"), Pexels/Pixabay/Coverr within their clauses. For anything pointed, **Flow is the cleaner answer than any stock house** |
 | **Freepik / Videvo / Mazwai** | Consolidated into a plan-gated product; free tier needs attribution and reportedly withholds commercial rights | Pexels or Coverr |
 | **Musicbed** (music) | ~$99.99/mo for the tier we'd need | **Suno** — see the `suno-prompt` skill. We make our own music |
@@ -1687,7 +1761,7 @@ someone actually made the call in the research sweep and read the response.
 | Archive metadata's `width`/`height` describe the picture | `gov.fdr.25.4` metadata says **640×480**; `ffprobe` says **368×480, SAR 40:23, DAR 4:3, `field_order=tt`** | **Metadata gives the *display* size.** Probe the file for the coded size and the field order before conforming |
 | Counts as of 2026-08-22 | Re-counted 2026-09-12: `gov.archives.arc.*` **2,108** (was 2,107), `gov.dod.dimoc.*` **917**, `universal_newsreels` **611**, `gov.fdr.*` **154** | Counts hold; **reachability does not** — see the sampling above |
 | Universal Newsreel's PD basis was asserted but never quoted | IA's collection record, read verbatim: *"Universal City Studios gifted Universal Newsreel to the American people, put the newsreels into the public domain, and gave film materials to the National Archives in 1976."* | Quote captured. ⚠️ **Read on archive.org, not on a NARA page** — and every item's `uploader` is a personal address (`skipe@mindspring.com`), so the basis is **collection-level, not uploader-level** |
-| OGL v3 wording | Re-fetched live: *"copy, publish, distribute and transmit"*, *"adapt"*, *"exploit the Information commercially and non-commercially"*; attribution *"Contains public sector information licensed under the Open Government Licence v3.0."* | Confirmed unchanged. 🔴 **But OGL requires attribution, so by this page's own rule it is amber until BadCode has a credits surface** |
+| OGL v3 wording | Re-fetched live: *"copy, publish, distribute and transmit"*, *"adapt"*, *"exploit the Information commercially and non-commercially"*; attribution *"Contains public sector information licensed under the Open Government Licence v3.0."* | Confirmed unchanged. ✅ **Unblocked later the same day** — Kai ruled that credits go in the video, so an attribution obligation no longer downgrades a source. OGL is a usable route for video |
 | UK is "a paid line item" | **For film, yes. For stills, no.** Wikimedia Commons, licence-filtered live, returns a deep set of British WWII photographs tagged `PD-UKGov` (Crown copyright expired 50 years from creation) — VE Day in London at **5335×3941**, air-raid damage at **5163×4071** | **New: UK official WWII photography is a real stills route.** 🟡 Amber, not green — the Commons `Credit` field shows the files were **lifted from `media.iwm.org.uk`**, and IWM is red. Copyright probably expired; *this file from this host* is unanswered |
 | Commons "Public domain" can be trusted once `LicenseShortName` is filtered | Two rejects found in one query set: `Aneurin_Bevan_(1943).jpg` — photographer **Howard Coster, d. 1959**, so **UK copyright to 2029**, and the Commons page itself carries a third-party-claim warning; `Person_attlee2.jpg` — artist field reads **"Presumably Yousuf Karsh"** (d. 2002) with a fan-site credit | 🔴 **New trap: Commons' PD tag is a US-law determination.** For a British subject and a British audience, read the **author and their death date**, not the tag. `AttributionRequired: false` does not mean the work is free here |
 
@@ -1776,8 +1850,8 @@ federal film and shallow-to-empty on most of what BadCode's stories are actually
   death date, not the tag. (b) A real OGL document page was checked end to end — The National
   Archives' *Birth of the NHS 1948* page states in its footer *"All content is available under the
   Open Government Licence v3.0, except where otherwise stated"*, and identifies the NHS launch
-  leaflet as `INF 2/66`, p.15. 🔴 **The blocker is ours, not theirs: OGL requires a credit line and
-  BadCode has nowhere to put one.** Worked ledger:
+  leaflet as `INF 2/66`, p.15. ✅ **Unblocked the same day** — Kai ruled credits go in the video, so
+  OGL's one-line attribution is a cost we pay, not a bar. Worked ledger:
   [`docs/stories/magic-money-tree/footage.md`](../stories/magic-money-tree/footage.md).
 - **Archival TV news, 1960s–2000s.** The gap between `universal_newsreels` (stops 1967) and the paid
   wires. **American Archive of Public Broadcasting** is now listed 🟡 — but it is a finding aid with

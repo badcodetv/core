@@ -21,17 +21,28 @@ footage candidates* against the live archive and records what actually answered.
 
 | Tier | Means |
 | --- | --- |
-| 🟢 Green | US federal work, an institutional PD dedication, or CC0 — **and someone opened the licence in a session and said so.** No credit owed, no clause to weigh |
-| 🟡 Amber | Usable only after a **per-item human check**. Inferred licence, uploader-asserted PD, an attribution or ShareAlike obligation, or a host charging for its own print |
+| 🟢 Green | US federal work, an institutional PD dedication, CC0, **or an attribution-only licence whose credit we record** — and someone opened the licence in a session and said so |
+| 🟡 Amber | Usable only after a **per-item human check**. Inferred licence, uploader-asserted PD, a **ShareAlike** obligation, or a host charging for its own print |
 | 🔴 Red | Paid house, non-commercial licence, live copyright, or a clause that bars political use |
 
-🔴 **Two standing rules this film keeps tripping over.**
-1. **"Royalty-free" is a pricing model, not a permission.** Stock EULAs routinely bar political
-   use. This film is political argument end to end.
-2. **BadCode has nowhere to carry a credit.** No credits surface in `@badcode/comic`, no end card.
-   So *every attribution-requiring licence is amber* — including the Open Government Licence, which
-   is otherwise exactly the permission we want. **Kai owes a ruling on where a credit lives**; until
-   then the OGL route for the NHS and austerity beats cannot go green. See §5.
+**Two rulings from Kai, 2026-09-12, that set the shape of this film's sourcing.**
+
+✅ **1. Credits go in the video.** *"If we need to add a credit into the video in order to then use
+footage, of course — where we can put that is in various places in the video, because we very
+happily put credits in."* This **unblocks the Open Government Licence**, and with it scenes 06, 09,
+10 and 12 — the NHS leaflet, the 1944 White Paper, the 1948 pamphlet. The obligation it creates:
+record each licence's **exact** credit string here, and never ship the clip without it.
+
+💷 **2. There is a budget: £100 for the whole film, £200 at an absolute push.** *"I'd rather not
+if we can get away with it… we have to be very very price sensitive."* Not per clip.
+🔴 **It does not reach the UK archive houses** — BFI's cheapest tier is £840 + £14/sec before a
+second is counted, and Pathé, IWM and BBC Motion Gallery are all quote-based at broadcast scale. So
+the plan below does not change: free sources first, a **per-image still licence** as the one
+category that fits, and every spend a stop gate that waits for Kai.
+
+🔴 **And the rule that did not change: "royalty-free" is a pricing model, not a permission.**
+Stock EULAs routinely bar political use. This film is political argument end to end — so paying a
+stock house can leave us *less* free to publish than a PD reel we got for nothing.
 
 ---
 
@@ -50,10 +61,10 @@ four need nothing real at all and belong to Flow.
 | 06 | A job after the uniform | 1944 Employment Policy White Paper; Bevin presenting it 21 Jun 1944; Beveridge | A document + a still | 🇬🇧 **UK Crown / Hansard** — 🔴 **no free moving image exists** |
 | 07 | Victory does not come with a roof | VE Day in Britain; the 1945 election; Keynes on the American loan in the Lords | **Actuality (British)** + a still | 🔴 **Open** — see §3. US VE-Day film is American and must not stand in |
 | 08 | 21 April 1946 | Keynes's death | **One still, held** | Commons / library PD portrait 🟡 |
-| 09 | The promise gets a working day | The NHS opens, 5 Jul 1948; the launch leaflet | A document + stills | 🇬🇧 **TNA, OGL** (leaflet `INF 2/66`) — 🔴 no free moving image |
+| 09 | The promise gets a working day | The NHS opens, 5 Jul 1948; the launch leaflet | A document + stills | 🇬🇧 **TNA, OGL** (leaflet `INF 2/66`) — ✅ **unblocked by the credits ruling**; 🔴 still no free moving image |
 | 10 | The key in the door | Post-war council building into the 1950s | Actuality or stills | 🇬🇧 **Open** — Commons stills 🟡; no free film found yet |
 | 11 | The promise requires another shift | June 2010 Budget; nurses on *Question Time*, 2 Jun 2017 | Broadcast + Parliament AV | 🔴 **Red both ways.** BBC owns the programme; Parliament's AV terms bar our use. → subtitle cards + a silent timeline |
-| 12 | They knew about the magic | The September 1948 NHS pamphlet, TNA `MH 55/965` | A document | 🇬🇧 **TNA, OGL** 🟡 |
+| 12 | They knew about the magic | The September 1948 NHS pamphlet, TNA `MH 55/965` | A document | 🇬🇧 **TNA, OGL** — ✅ **unblocked by the credits ruling** |
 | 13 | What is actually missing? | Nothing specific — present-day hospital, training, building | Invented / generic | **Flow** |
 | 14 | A life to get back to | Nothing specific — an ordinary act of care | Invented | **Flow** (the storyboard forbids a falsely identified real patient) |
 
@@ -220,13 +231,18 @@ Verified live this session:
   under the Open Government Licence v3.0, except where otherwise stated."* The NHS launch leaflet on
   that page is catalogue reference **`INF 2/66`, page 15** — the document scene 09 wants.
 
-🔴 **So why is this amber?** Because OGL demands a credit line and **BadCode has nowhere to put
-one.** There is no credits surface in the comic library, no end card, no tail slate. The house rule
-is explicit: every attribution-requiring source is amber until Kai says where a credit lives. A
-credit we invent and quietly drop is worse than not using the material.
+✅ **Settled 2026-09-12 — this route is open.** It was amber for one reason: OGL asks for a credit
+line and BadCode had nowhere to put one. Kai has ruled that credits go in the video. So scenes 06,
+09, 10 and 12 — all documents, all OGL — are usable.
 
-**This is the single decision that unlocks the most footage in this film** — scenes 06, 09, 10 and
-12 are all documents, and all of them are OGL.
+**The credit this film owes, verbatim, once for all OGL material:**
+
+> Contains public sector information licensed under the Open Government Licence v3.0.
+
+🔴 **Two things still to watch.** OGL exempts **departmental logos, crests and the Royal Arms**
+except where they form an integral part of the document — a 1948 leaflet's own masthead is integral,
+a bolted-on crest is not. And TNA's footer says *"except where otherwise stated"*: check each item's
+own notice, not just the page.
 
 ---
 
@@ -238,7 +254,12 @@ credit we invent and quietly drop is worse than not using the material.
 | **Scene 11 — Osborne's June 2010 Budget statement** | parliamentlive.tv's own terms bar *"advertising, promotion… or financial gain"* and are **more restrictive than the Open Parliament Licence**. OPL does not cover live or archived AV at all | Hansard text under OPL, typeset over dated Red Book pages |
 | **Any UK archival film house** | IWM, BFI, British Pathé, Huntley: all paid, no free tier. IWM's free tier bans campaigning use by name | Stills, OGL documents, or Flow |
 
-**We buy no footage.** Where the free route does not exist, the answer above is the free route.
+💷 **Would the budget change any of these? No.** BFI's cheapest published tier is **£840 + £14
+per second** — four times the absolute ceiling before a single second is counted — and Pathé, IWM
+and BBC Motion Gallery publish no floor at all and quote at broadcast scale. **£200 does not buy one
+second of British archive film.** Where the free route does not exist, the answer above *is* the
+answer, and the budget is better spent on a **still licence** for a beat that has no free
+photograph — see §8.
 
 ---
 
@@ -296,8 +317,9 @@ duration=809.009011      # matches the declared length of 809.01
 
 | # | Open item | Who answers |
 | --- | --- | --- |
-| 1 | **Where does a credit line live?** Blocks the whole OGL route — scenes 06, 09, 10, 12 | 🔴 **Kai** |
-| 2 | Is a `PD-UKGov` photograph pulled from IWM's own media server clear for us? | 🔴 **Kai**, per item |
+| 1 | ~~Where does a credit line live?~~ | ✅ **Answered 2026-09-12 — in the video. OGL route open** |
+| 2 | Is a `PD-UKGov` photograph pulled from IWM's own media server clear for us? — **now the biggest single blocker**, because it gates the British picture in scenes 02, 07 and 10 | 🔴 **Kai**, one ruling covers the class |
+| 2b | 💷 Would **£100–200 on a per-image still licence** buy scene 07 or 10 something Commons cannot? Unpriced — needs a live check of a per-image library's terms *and* its political-use clause | Next pass, then 🔴 **Kai** approves the spend |
 | 3 | Is each chosen *Divide and Conquer* shot actuality or a dramatised insert? | A human watching it |
 | 4 | Scene 07 — British victory. Stills only, or is there a US-federal film containing British VE-Day material nobody has found? | Next pass |
 | 5 | Scene 10 — post-war council housing. Nothing searched yet | Next pass |
