@@ -55,13 +55,21 @@ fi
 
 # Resolve a browser binary.
 #
-# 🔴 BRANDED CHROME IS FOR THE LISTENING CHANNEL ONLY (2026-09-12).
+# 🔴 BRANDED CHROME IS FOR THE LISTENING CHANNEL ONLY — pending a ruling (2026-09-12).
 # AI Studio's GenerateContent refuses Chrome for Testing outright: pressed by hand it answers
 # "Failed to create interaction: permission denied." (listen-mcp T3, confirmed by Kai 2026-09-11).
-# So the listening channel must run real Google Chrome. Every OTHER channel must NOT: Flow's and
-# Suno's logged-in profiles were written by the newer Chrome-for-Testing build, and Chrome refuses
-# a user-data-dir written by a newer version — preferring branded Chrome globally would silently
-# lock us out of accounts we are already signed into.
+# So the listening channel MUST run real Google Chrome, and does.
+#
+# 🔴 CORRECTION, same day: an earlier version of this comment said branded Chrome would lock us
+# out of Flow's and Suno's profiles because they were written by a "newer" build. That is
+# BACKWARDS. Measured (thread 06, re-confirmed here): branded Google Chrome is 153.0.8010.36 and
+# Playwright's Chrome for Testing is 151.0.7922.34, with `.flow-profile` stamped 151. Chrome
+# refuses a profile written by a NEWER version, so branded Chrome opening those profiles is an
+# UPGRADE and is allowed. The one-way door runs the other way: once branded 153 has written a
+# profile (already true of `.flow-profile-9223`), Chrome for Testing 151 can never reopen it.
+#
+# So this guard is now plain conservatism, not protection: flipping every channel to branded
+# Chrome is irreversible per profile, so it waits for Kai to say so in this thread's window.
 LISTEN_CHANNEL="${LISTEN_CHANNEL:-2}"
 CHROME="${CHROME_BIN:-}"
 if [ -z "$CHROME" ] && [ "$(( PORT - 9221 ))" = "$LISTEN_CHANNEL" ]; then
@@ -106,18 +114,25 @@ CH=$(( PORT - 9221 ))
 SINK="badcode_ch$CH"
 has_sink() {
   local sinks
-  sinks="$(pactl list short sinks 2>/dev/null)" || return 1
+  sinks="$(timeout 3 pactl list short sinks 2>/dev/null)" || return 1
   awk -v s="$SINK" '$2 == s { found = 1 } END { exit !found }' <<<"$sinks"
 }
+# 🔴 EVERY pactl call is bounded by `timeout` (2026-09-12). WSLg's audio server can wedge — its
+# socket at /mnt/wslg/PulseServer still exists but answers nothing — and pactl then blocks with no
+# timeout of its own. That pushed the launch past `browser-channel.sh`'s 20 s readiness window, so
+# `up <n>` printed "failed to come up" with an EMPTY log while Chrome started fine seconds later.
+# Measured: `pactl info` still running at 6 s against the wedged server, 0.004 s against a healthy
+# one. A hung speaker must never stop a browser launching.
+pa() { timeout 3 pactl "$@"; }
 if ! command -v pactl >/dev/null 2>&1; then
   echo "warning: pactl not found — launching without a per-channel audio sink (recording unavailable)." >&2
-elif ! pactl info >/dev/null 2>&1; then
+elif ! pa info >/dev/null 2>&1; then
   echo "warning: PulseAudio not reachable — launching without a per-channel audio sink (recording unavailable)." >&2
 else
   if ! has_sink; then
-    if pactl load-module module-null-sink sink_name="$SINK" \
+    if pa load-module module-null-sink sink_name="$SINK" \
          sink_properties=device.description="BadCode_channel_$CH" >/dev/null 2>&1; then
-      pactl load-module module-loopback source="$SINK.monitor" sink=@DEFAULT_SINK@ latency_msec=60 >/dev/null 2>&1 \
+      pa load-module module-loopback source="$SINK.monitor" sink=@DEFAULT_SINK@ latency_msec=60 >/dev/null 2>&1 \
         || echo "warning: loaded $SINK but its loopback failed — this channel will record but not be audible." >&2
     else
       echo "warning: could not create audio sink $SINK — launching without it (recording unavailable)." >&2
