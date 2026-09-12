@@ -1,0 +1,794 @@
+{
+  "alternate_locations": {
+    "servers": [
+      {
+        "server": "dn720700.ca.archive.org",
+        "dir": "/0/items/gov.archives.arc.36070"
+      }
+    ],
+    "workable": [
+      {
+        "server": "dn720700.ca.archive.org",
+        "dir": "/0/items/gov.archives.arc.36070"
+      }
+    ]
+  },
+  "created": 1789210927,
+  "d1": "dn800305.us.archive.org",
+  "dir": "/0/items/gov.archives.arc.36070",
+  "files": [
+    {
+      "name": "__ia_thumb.jpg",
+      "source": "original",
+      "mtime": "1711913629",
+      "size": "7021",
+      "md5": "71a0beeafc569e2614db870aba25f454",
+      "crc32": "54dde981",
+      "sha1": "ff138614bbbf03d9d0db6a43443ac1e17122283b",
+      "format": "Item Tile"
+    },
+    {
+      "name": "gov.archives.arc.36070.gif",
+      "source": "derivative",
+      "format": "Animated GIF",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "52832c0fb230013793c4a6b7ba629ea0",
+      "mtime": "1271364443",
+      "size": "336943",
+      "crc32": "d5edec6",
+      "sha1": "9e96153a301627aeac33391a70877544ab18b5f6"
+    },
+    {
+      "name": "gov.archives.arc.36070.mpeg",
+      "source": "original",
+      "format": "MPEG2",
+      "md5": "4d57ed3c43241fe5d22aa0ea603e013e",
+      "mtime": "1271363418",
+      "size": "2598037291",
+      "crc32": "5eb74505",
+      "sha1": "3fee7ae2a7df3c5cbb6e9982c2552f74feca8500",
+      "length": "3194.27",
+      "height": "480",
+      "width": "640"
+    },
+    {
+      "name": "gov.archives.arc.36070.mpeg_meta.txt",
+      "source": "original",
+      "format": "Metadata",
+      "md5": "a30e7e2110618dc32a58706566ef8f80",
+      "mtime": "1271363422",
+      "size": "2347",
+      "crc32": "6f0f672c",
+      "sha1": "8bdffbedf74ef8a757925853ee00d8fabceaf2c1"
+    },
+    {
+      "name": "gov.archives.arc.36070.ogv",
+      "source": "derivative",
+      "format": "Ogg Video",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "464f7260cf101e758a433ae4b52e4f0e",
+      "mtime": "1271369990",
+      "size": "268910585",
+      "crc32": "50f22e58",
+      "sha1": "ec9be4cd759f87279a11aaa3d03d97ef7e8e9c6f",
+      "length": "3194.46",
+      "height": "304",
+      "width": "400"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_000001.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "bbf3aa37eef8d240685b7bff5bc8ba04",
+      "mtime": "1271363932",
+      "size": "858",
+      "crc32": "a996fdc5",
+      "sha1": "01623e96fccaf76c48163dc1e8dc8a8a0d217ad1"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_000060.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "127fd384e5c3d137222fbb7cd462f946",
+      "mtime": "1271363936",
+      "size": "5913",
+      "crc32": "7a3de2c7",
+      "sha1": "a2c9a6337dc32a756a4c34b14625830e090d3347"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_000120.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "ae0f6d98ae8eefc14ba7c257be6e8b13",
+      "mtime": "1271363941",
+      "size": "7015",
+      "crc32": "1147ab2c",
+      "sha1": "e92f76b0398f8e044529cc12c3d74b12ffd9be81"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_000180.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "b33d3bfa09c431dc0be2fb7fa562e934",
+      "mtime": "1271363946",
+      "size": "6806",
+      "crc32": "9fd17758",
+      "sha1": "5cb66a3d78113d590b0d105f498b715240e9cfab"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_000240.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "019fbb3f29b2aa527d05864a18e52c6d",
+      "mtime": "1271363950",
+      "size": "7181",
+      "crc32": "396a2cc7",
+      "sha1": "61ee6143a1b331801598c569169ed929d78f0c21"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_000300.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "afb4a6600a979df9afbbc9b21656e79e",
+      "mtime": "1271363955",
+      "size": "4338",
+      "crc32": "b01c9682",
+      "sha1": "457b2d572bcc25b65493d306cf35bbc92db1c9c3"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_000360.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "8d51a4d2db693be63d7a61015d8a7a96",
+      "mtime": "1271363960",
+      "size": "6716",
+      "crc32": "4bd28f5f",
+      "sha1": "30c4bec0c8e0c817afda0bbd63a34e02812f0688"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_000420.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "2f778504c5aef195ce747e53b27ff759",
+      "mtime": "1271363965",
+      "size": "7589",
+      "crc32": "5af87860",
+      "sha1": "a21f4280c09026f46a22297d411bff5eb6f26ab1"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_000480.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "e5ceee190780427a760ed048bfc0dd12",
+      "mtime": "1271363969",
+      "size": "5687",
+      "crc32": "9d57142a",
+      "sha1": "87be104461f5f5e12727765dc23c438ac89f3152"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_000540.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "d95053a15fe0e38a214419f413b2fb1e",
+      "mtime": "1271363974",
+      "size": "4697",
+      "crc32": "5d569292",
+      "sha1": "42bcecf3648ba1ff1d9447d2ec711994acb32c0f"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_000600.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "d5696d1bdb82e8593ecc5a6c67bae410",
+      "mtime": "1271363979",
+      "size": "7060",
+      "crc32": "d5bba1aa",
+      "sha1": "b8f9126ef92055f35fb9d358d8741e6dfcb06476"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_000660.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "8ed00af8432d068052dd4fff933832d0",
+      "mtime": "1271363983",
+      "size": "5820",
+      "crc32": "b73ad8f5",
+      "sha1": "1a15f852a2fdaf202e8685a6dbbb689d062e2e51"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_000720.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "9c54d33359a7248ca44463ba608b1487",
+      "mtime": "1271363988",
+      "size": "6054",
+      "crc32": "85499a0a",
+      "sha1": "d25323bb664476001a507c75aa33081d990b6870"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_000780.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "7512afacca0a05c80a48a96e67e15ee4",
+      "mtime": "1271363993",
+      "size": "3872",
+      "crc32": "ec5856d2",
+      "sha1": "b4a8feede3324acc327b135cd1eb6f2100f67fe8"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_000840.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "9bb24420ce22fa012d85512d863a8153",
+      "mtime": "1271363998",
+      "size": "5323",
+      "crc32": "879d75f8",
+      "sha1": "d878f3e02adbb46dc075271f0b3c963d5832195b"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_000900.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "e6e14445e2840a525bd75e2ed6018cc8",
+      "mtime": "1271364003",
+      "size": "4593",
+      "crc32": "b22c61e1",
+      "sha1": "016d1782aa8dadea7baf009231ad4c984a815ad2"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_000960.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "c64e7cc06499308961bf5740ec12b0c3",
+      "mtime": "1271364008",
+      "size": "5259",
+      "crc32": "1b4a9763",
+      "sha1": "973a940a6df3c8b13a1b42da028062a064535059"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_001020.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "dfa99481d1f394a85f1e0a18240c03b8",
+      "mtime": "1271364012",
+      "size": "5840",
+      "crc32": "5df1d290",
+      "sha1": "7e193d6ba3d5e0d121e2a2ba3ba48bd309be99c5"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_001080.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "4d68e0dfdfc805e94f4861b5c880b97c",
+      "mtime": "1271364017",
+      "size": "4710",
+      "crc32": "9b7fd095",
+      "sha1": "8878d4a5731970694aa0602f241815b422aefa33"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_001140.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "0d640f463b319294ebbf76568a3a27d9",
+      "mtime": "1271364022",
+      "size": "7308",
+      "crc32": "c89ab8c",
+      "sha1": "62e816820334ee0596e8361a73434c91db6e2d12"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_001200.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "e146dac2f77476c3268a8356205d7264",
+      "mtime": "1271364027",
+      "size": "7884",
+      "crc32": "4cfb3",
+      "sha1": "b5295589e8043dd064ceee8032f18475f16b410f"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_001260.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "1b125d669b9fa1c489170d3f339c22d8",
+      "mtime": "1271364031",
+      "size": "6794",
+      "crc32": "82b114c5",
+      "sha1": "f71f92160bc3dab1bcb79f4048c0fc11088db7b9"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_001320.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "5d84dc98fd8a78ed477ebc2ac6faaca3",
+      "mtime": "1271364036",
+      "size": "5295",
+      "crc32": "7b468a7d",
+      "sha1": "845a8bc91bb1bd51dfccb4d3b0754e2788d40d57"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_001380.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "887789d0581c115df9cf319e91d64155",
+      "mtime": "1271364041",
+      "size": "5383",
+      "crc32": "82072489",
+      "sha1": "4329b266cf3afe8af8c9cefd408269d2193f0479"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_001440.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "2aae6f6d68d4955c755de0f68f5c7cb0",
+      "mtime": "1271364046",
+      "size": "6009",
+      "crc32": "a865ddbf",
+      "sha1": "67d4c2aa4df2873aa7ca951663d1d212b3c76923"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_001500.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "1db6bb6fadc5e243fa660d8816518721",
+      "mtime": "1271364051",
+      "size": "5217",
+      "crc32": "78bb10b8",
+      "sha1": "c97d511ea4e683ba553b32171bccbc3880b37580"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_001560.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "f90bdf0d595677b97457b615e8d013fd",
+      "mtime": "1271364055",
+      "size": "5635",
+      "crc32": "85e59627",
+      "sha1": "31a31c0463d98d4e2c98d71945027eabe8609728"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_001620.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "97459ee56c093ed7ddd410ffa86128ed",
+      "mtime": "1271364060",
+      "size": "4342",
+      "crc32": "637bc657",
+      "sha1": "11bfa7b62ef36fc1eb1eb341763ed53ec535f76f"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_001680.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "d3fdaacb5a9ed5c2102ca0faa4d4d9f3",
+      "mtime": "1271364065",
+      "size": "4176",
+      "crc32": "7c6ed725",
+      "sha1": "c854cd3fa2d06b60eb79dfba5acae9c9d563978a"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_001740.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "ade4bdbf0f8237ab1ff50075c2d62db5",
+      "mtime": "1271364070",
+      "size": "4827",
+      "crc32": "ab30cfd7",
+      "sha1": "8c3981223d285e3c91d1b6343aa6e06a0e7c80e3"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_001800.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "63ae06003e1411cfa684b98fea691e56",
+      "mtime": "1271364074",
+      "size": "6527",
+      "crc32": "e25f5446",
+      "sha1": "78ea069db36db307ce4db245830c1561520270a9"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_001860.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "0edbb92f2c558b7235cb505281069464",
+      "mtime": "1271364079",
+      "size": "4238",
+      "crc32": "73616464",
+      "sha1": "931005077dbd331654f5aa6b5a07a08f58a72258"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_001920.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "a6ff9be80273a7ca0fd46cabb16b66c0",
+      "mtime": "1271364084",
+      "size": "2241",
+      "crc32": "7734b873",
+      "sha1": "48557e34c33cf74dbc9645e908c4ed11df2eb41c"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_001980.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "ba72af696d7e4fbc2d1adbcccc870ae5",
+      "mtime": "1271364088",
+      "size": "1970",
+      "crc32": "5dae3f74",
+      "sha1": "f6fee1e0c164b2eef9fe4c16b476efc761ae93ac"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_002040.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "074b620e3e9a96af9ea72ecd03fefc3b",
+      "mtime": "1271364093",
+      "size": "7067",
+      "crc32": "787cbe2c",
+      "sha1": "f6dd6c3f259de47642d8e704e2c46447897a2080"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_002100.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "ecf4f53f6a5582a144e483929016f6a1",
+      "mtime": "1271364098",
+      "size": "6270",
+      "crc32": "73b940b0",
+      "sha1": "18e22c5263837644feca867a971485b4e2f8941d"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_002160.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "291ba812c261a9019177096ca7872a3c",
+      "mtime": "1271364103",
+      "size": "5350",
+      "crc32": "ca899820",
+      "sha1": "fba590099589b9c4625d4cdcd42a92d805debe29"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_002220.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "1cb57be9cf345434f244549dff3223f5",
+      "mtime": "1271364107",
+      "size": "3863",
+      "crc32": "8e23ff80",
+      "sha1": "97f83d77e3d1a84dd1f8cbd94e0e7ebc630d5ee5"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_002280.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "8598b8d7f2f996ae6548bff6feccc006",
+      "mtime": "1271364112",
+      "size": "4120",
+      "crc32": "9a5d8dbb",
+      "sha1": "a907bf258f77367a5aa69283445776135ebb298b"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_002340.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "fe76c182c3f1f7cb81befb5c6689c1e5",
+      "mtime": "1271364116",
+      "size": "4834",
+      "crc32": "1aa6d2d0",
+      "sha1": "37259d4fa021f20357d57123e40a8fca9c6a0653"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_002400.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "65ccbd0f8bde569f730a78ee0d627d27",
+      "mtime": "1271364121",
+      "size": "6145",
+      "crc32": "12936429",
+      "sha1": "b9caad0b49c3eb397cc0a869236a657d35240118"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_002460.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "19ae8a10f53958c4ae17801217936628",
+      "mtime": "1271364126",
+      "size": "3509",
+      "crc32": "797fe340",
+      "sha1": "4c60f9cd7d14a37d50b99ac0466664c0fc9cbfca"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_002520.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "26946da8e8885878559db0003bf08828",
+      "mtime": "1271364131",
+      "size": "3165",
+      "crc32": "d9a86af0",
+      "sha1": "303e5acd467965cbf76b7352114a05a25c69942a"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_002580.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "0120d4bb745c348cd7ae25e11d51b504",
+      "mtime": "1271364135",
+      "size": "4196",
+      "crc32": "326789b3",
+      "sha1": "2310461e52a72ad82f01dafaf46d277225426da7"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_002640.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "7fca857edb378dfbd9dff9476491a163",
+      "mtime": "1271364140",
+      "size": "5192",
+      "crc32": "e1094c4e",
+      "sha1": "b926254f51ef4be00e661cee4dff8111996b6364"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_002700.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "72a6127e9dd1d57ac21335dddc7d3ef3",
+      "mtime": "1271364145",
+      "size": "4707",
+      "crc32": "9f8df28b",
+      "sha1": "df0f3885359d4f82a78ade098ecb72f99aab5d73"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_002760.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "28c3f40cac9ebf5a470524511e2290ec",
+      "mtime": "1271364149",
+      "size": "1114",
+      "crc32": "a17aa53a",
+      "sha1": "f9e2b3f12933711064157ad9d4453cf248868f39"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_002820.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "09d7a0e82983c1000d7644d01621ee2e",
+      "mtime": "1271364154",
+      "size": "4050",
+      "crc32": "dd7ee810",
+      "sha1": "f407f04216f73a66cb2ea336b43fd9ee21bed8fb"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_002880.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "cc26f30471b240ca57019150c9382200",
+      "mtime": "1271364159",
+      "size": "1858",
+      "crc32": "fd758852",
+      "sha1": "f6a1ebe5f9f5bad7cafd936948eaabc5c7c9ace7"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_002940.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "eb37a2867d823b672ed73a0aed3b3077",
+      "mtime": "1271364163",
+      "size": "5181",
+      "crc32": "da6e7503",
+      "sha1": "a58840f7cd73b086108f98737a4de81ba1835582"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_003000.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "dd5eb14896e7c98b0551b0a28679f461",
+      "mtime": "1271364168",
+      "size": "1453",
+      "crc32": "15744163",
+      "sha1": "361ab80169672c8acc3f3e2296b89633cdca5e06"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_003060.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "3cfaacbdddf40d88a149dcb579404336",
+      "mtime": "1271364173",
+      "size": "4586",
+      "crc32": "9a46022e",
+      "sha1": "aab6460c93be9e7ab9faf535f67eb6f3061a2039"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_003120.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "331cb8ee263c2ac052ac685d2c91afa3",
+      "mtime": "1271364177",
+      "size": "5538",
+      "crc32": "46845b0b",
+      "sha1": "dd8e1f4eaf88a184b3235299aea38e13366c32ca"
+    },
+    {
+      "name": "gov.archives.arc.36070.thumbs/gov.archives.arc.36070_003180.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "d31edb933dad962f7cda62ac91c9d789",
+      "mtime": "1271364182",
+      "size": "7885",
+      "crc32": "42deb2ab",
+      "sha1": "6bd0da02a9ca558efa9d8757d0337898740329a5"
+    },
+    {
+      "name": "gov.archives.arc.36070_512kb.mp4",
+      "source": "derivative",
+      "format": "512Kb MPEG4",
+      "original": "gov.archives.arc.36070.mpeg",
+      "md5": "3d3ef3a343b75a163a35c3a1f5cf38f5",
+      "mtime": "1271368071",
+      "size": "232060900",
+      "crc32": "61afb4c8",
+      "sha1": "b4d9cd693e27f7b74ae0b1683e3c8c1cbde860eb",
+      "length": "3194.46",
+      "height": "240",
+      "width": "320"
+    },
+    {
+      "name": "gov.archives.arc.36070_archive.torrent",
+      "source": "metadata",
+      "btih": "a6cd6980717b70d2b840ba04a0ca75810ebee1ba",
+      "mtime": "1756636912",
+      "size": "32265",
+      "md5": "2af01b286a3471d01e948952b4efda57",
+      "crc32": "491d2c29",
+      "sha1": "edb806ac8ad8785d35d5e6f18d6d8d2795882028",
+      "format": "Archive BitTorrent"
+    },
+    {
+      "name": "gov.archives.arc.36070_files.xml",
+      "source": "original",
+      "format": "Metadata",
+      "md5": "970c8baaf3a21107dfcdaabd355f5abe",
+      "summation": "md5"
+    },
+    {
+      "name": "gov.archives.arc.36070_meta.xml",
+      "source": "original",
+      "format": "Metadata",
+      "mtime": "1463435717",
+      "size": "2418",
+      "md5": "d71f80010c6e939ab9855f23197b4e10",
+      "crc32": "fa537570",
+      "sha1": "b0a46121d8c1a78726481ed8b559b96ed211f935"
+    },
+    {
+      "name": "gov.archives.arc.36070_reviews.xml",
+      "source": "original",
+      "mtime": "1756639663",
+      "size": "2401",
+      "md5": "0b3a1f2b4ad336873195316eb73a2f1f",
+      "crc32": "d5f1d8e3",
+      "sha1": "348389c62d8de34f86b9521d0fd3044e8385cf59",
+      "format": "Metadata"
+    }
+  ],
+  "files_count": 64,
+  "item_last_updated": 1756639664,
+  "item_size": 3099665431,
+  "metadata": {
+    "identifier": "gov.archives.arc.36070",
+    "creator": "National Archives and Records Administration",
+    "credits": "Uploaded by Public.Resource.Org",
+    "date": "1943",
+    "description": "Department of Defense. Department of the Army. Office of the Chief Signal Officer. (09/18/1947 - 02/28/1964)<br /><br />ARC Identifier 36070 / Local Identifier 111-OF-4 1943<br /><br />The Battle of Britain<br /><br />This motion picture film focuses on the British defense against German aerial warfare, August-December, 1940. It emphasizes the courage of the people and the skill of the Royal Air Force (RAF.) Reel 1 explains Adolf Hitler's plan for invading England after gaining air superiority. It shows Hitler in Paris and German troops ready for the invasion, Britons setting up defenses, training for civilian defense and manning machines. Reel 2 shows invasion defense training; citizens greeting Winston Churchill; and German planes bombing British convoys, coastal fortifications and airfields. RAF pilots man planes and down Germans. An English pilot is rescued in the Channel. In Reel 3, industrial cities are bombed but continue production. In September, the attacks are turned to London, to crush the spirit of the people. Children are sent from the city. Reel 4 consists mostly of activities during air raids. Footage shows damage and air raid shelters, scarred London landmarks, and General Hermann Goring. Reel 5 emphasizes the determination of the British people; citizens comment on the raids. English planes bomb a German target. Coventry is flattened in retaliation. Reel 6 records the London bombing on Christmas Eve, causing the largest fire in recorded history. Water is pumped from the Thames.<br /><br />DVD Copied by Tim Vollmer.",
+    "language": "English",
+    "licenseurl": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "mediatype": "movies",
+    "subject": "archives.gov;public.resource.org",
+    "title": "The Battle of Britain",
+    "collection": [
+      "FedFlix",
+      "usgovfilms",
+      "newsandpublicaffairs"
+    ],
+    "publicdate": "2010-04-15 20:29:28",
+    "uploader": "carl@media.org",
+    "addeddate": "2010-04-15 20:29:28",
+    "backup_location": "ia903605_8"
+  },
+  "reviews": [
+    {
+      "reviewbody": "This is a National Film Preservation Foundation print of Why We Fight: The Battle of Britain by Frank Capra.\n\nA different print is at\n\nhttp://www.archive.org/details/BattleOfBritain\n\nbut this is a much cleaner copy.",
+      "reviewtitle": "Why We Fight",
+      "reviewer": "Jilly9",
+      "reviewdate": "2012-01-12 11:57:56",
+      "createdate": "2012-01-12 11:57:56",
+      "stars": "5"
+    },
+    {
+      "reviewtitle": "Allies duped by the Jewish Bankers yet again, Allies should apologise for planning and starting WW2",
+      "reviewbody": "The last thing Hitler wanted was another great war.\"Basil Liddell Hart\n\nI see no reason why this war must go on.I am grieved to think of the sacrifices which it will claim.I would like to avert them.Hitler,Jul1940\n\nWe entered the war of our own free will, without ourselves being directly assaulted Churchill,Guild Hall Speech,Jul1943\n\nIn no country has historical blackout been more intense,effective than in Great Britain, ingeniously christened The Iron Curtain of Discreet Silence,nothing has been written to reveal  truth British responsible for WW2 and its disastrous results.Harry Elmer Barnes.Am Historian\n\nApr1939,Ambass Bullitt,said war decided upon.Karl Wiegand,Apr23,1944,Chicago Herald American\n\nI felt sorry for the German people.We were planning and we had the force to carry out our plans to obliterate a mighty nation.Admiral D Leahy;U.S Ambassador\n\nBritains,Lord Halifax reported as being 'redeemed'.He ordered beer.We laughed,joked\nH.Roth\narchive dot org/details/jwo-april-2025\n",
+      "stars": "1",
+      "reviewer": "greg7633",
+      "reviewdate": "2025-08-31 10:41:49",
+      "createdate": "2025-08-31 10:41:49",
+      "reviewer_itemname": "@greg7633"
+    },
+    {
+      "reviewtitle": "@greg7633",
+      "reviewbody": "I'm so glad I don't know you IRL; and I'm sorry to those that do.",
+      "stars": "5",
+      "reviewer": "westek12",
+      "reviewdate": "2025-08-31 11:27:39",
+      "createdate": "2025-08-31 11:26:49",
+      "reviewer_itemname": "@westek12"
+    }
+  ],
+  "server": "dn800305.us.archive.org",
+  "simplelists": {
+    "solo_manifest": {
+      "solo_manifest_dn800305": {
+        "sys_changed_by": {
+          "source": "task",
+          "task_id": "5448312664"
+        },
+        "sys_last_changed": "2026-06-18 08:42:00.021043"
+      }
+    }
+  },
+  "solo": true,
+  "uniq": 282680121,
+  "workable_servers": [
+    "dn800305.us.archive.org"
+  ]
+}

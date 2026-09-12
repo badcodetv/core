@@ -1,0 +1,651 @@
+{
+  "alternate_locations": {
+    "servers": [
+      {
+        "server": "dn721204.ca.archive.org",
+        "dir": "/0/items/gov.ntis.ava06858vnb1"
+      }
+    ],
+    "workable": [
+      {
+        "server": "dn721204.ca.archive.org",
+        "dir": "/0/items/gov.ntis.ava06858vnb1"
+      }
+    ]
+  },
+  "created": 1789211181,
+  "d1": "dn800208.us.archive.org",
+  "dir": "/0/items/gov.ntis.ava06858vnb1",
+  "files": [
+    {
+      "name": "__ia_thumb.jpg",
+      "source": "original",
+      "mtime": "1568382799",
+      "size": "6044",
+      "md5": "6451007f22d8723446421c93eb3a9f01",
+      "crc32": "9549ca69",
+      "sha1": "6ec6e20874f8ca9b58a52a44123f3ea3fd4a7257",
+      "format": "Item Tile",
+      "rotation": "0"
+    },
+    {
+      "name": "ava06858vnb1.gif",
+      "source": "derivative",
+      "format": "Animated GIF",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "84a7a4b179d1c106aa348935c08a6416",
+      "mtime": "1227630629",
+      "size": "423125",
+      "crc32": "42225e78",
+      "sha1": "301c61cbe3c47d36cc0fa882d1b6b3c14f494bb6"
+    },
+    {
+      "name": "ava06858vnb1.mpeg",
+      "source": "original",
+      "format": "MPEG2",
+      "md5": "37fe8905ad76f2bacf57ce4e9e09246b",
+      "mtime": "1223159501",
+      "size": "1540064187",
+      "crc32": "af726b17",
+      "sha1": "3face208c76af2941cbb9840f59fff6f6843532f",
+      "length": "2525.56",
+      "height": "480",
+      "width": "640"
+    },
+    {
+      "name": "ava06858vnb1.ogv",
+      "source": "derivative",
+      "format": "Ogg Video",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "8189bebc71ff4449d7ad132ed76f4393",
+      "mtime": "1227636545",
+      "size": "180870028",
+      "crc32": "c54bb528",
+      "sha1": "5d24363798a38d6b717228dd6385d61a5e7b3864",
+      "length": "2525.49",
+      "height": "304",
+      "width": "400"
+    },
+    {
+      "name": "ava06858vnb1_512kb.mp4",
+      "source": "derivative",
+      "format": "512Kb MPEG4",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "60f9785d2a0174120a3577a56f14f646",
+      "mtime": "1227634229",
+      "size": "183554981",
+      "crc32": "5070d0ba",
+      "sha1": "22f00cc520af419eec4ef0702e5cb3538fdd55b2",
+      "length": "2525.49",
+      "height": "240",
+      "width": "320"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_000001.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "31ab671ad28b3467f865ede0dd618fea",
+      "mtime": "1227629775",
+      "size": "5272",
+      "crc32": "760da733",
+      "sha1": "e2dcb771963647d3a319255efe56c76093d562fc"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_000060.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "2403938f1bd48b561718d933b3e3f324",
+      "mtime": "1227629787",
+      "size": "6226",
+      "crc32": "9df91519",
+      "sha1": "1784a580db9cabee13d636b78550e0a5e27b7c6b"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_000120.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "e6708bcd47090b852f6ad97cf3d09a2a",
+      "mtime": "1227629799",
+      "size": "6178",
+      "crc32": "ff89c0d1",
+      "sha1": "609a3e58bbcdfcbc241d60c29f99c85945ab95bb"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_000180.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "836d5a98374ed7d513ef9a220c960117",
+      "mtime": "1227629811",
+      "size": "6009",
+      "crc32": "ebb7535d",
+      "sha1": "b29f109b4f37c4e9a9f5df6eeeea4e92474c864c"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_000240.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "676c2e024e92fc02c8d93f59e6fdb55d",
+      "mtime": "1227629823",
+      "size": "7610",
+      "crc32": "c44ebfff",
+      "sha1": "022bfdd5faff126c1d550e62adee86b6090bb3a0"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_000300.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "177addc08959e630bde632c99f8521ad",
+      "mtime": "1227629835",
+      "size": "5615",
+      "crc32": "ece10b96",
+      "sha1": "0a4d0f31716f693a71ca6ce29364643994e2a826"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_000360.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "45fd6413847c2826755e04a4cc9e7384",
+      "mtime": "1227629847",
+      "size": "9359",
+      "crc32": "abf497d8",
+      "sha1": "e78023400620dea0e6c0b777fec4e5c70b2110f2"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_000420.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "98360a8a2e4264490057e962a2192722",
+      "mtime": "1227629859",
+      "size": "6628",
+      "crc32": "d9b8425c",
+      "sha1": "ee655ff7d02dcbe1c4d4187af80661916a2622d5"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_000480.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "0ed02a2a488c4cb76dd3b1da5892d5dc",
+      "mtime": "1227629871",
+      "size": "7247",
+      "crc32": "37b269fc",
+      "sha1": "9a2bfba44ceb702c602e9a6051650a63c591897d"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_000540.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "fa2be827391309df7bdb6b06c2e19be7",
+      "mtime": "1227629883",
+      "size": "7446",
+      "crc32": "345244d6",
+      "sha1": "23d89a9bb7eba7bff2fe2a2205fc1ee66b75d97c"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_000600.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "abc35530c49b71294197abf7e17992c9",
+      "mtime": "1227629893",
+      "size": "3665",
+      "crc32": "bf629dce",
+      "sha1": "f842c5e6412dfae97c6a75ad709722c9a36d54e7"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_000660.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "3aa0ca191b23cc82f8aa585278481252",
+      "mtime": "1227629905",
+      "size": "10439",
+      "crc32": "fff775ab",
+      "sha1": "a90885f4fe5dd181650df853dd7e5f3b9fbacb79"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_000720.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "7f25ea1a4f722eaf3ff7e6eb6fd29b97",
+      "mtime": "1227629917",
+      "size": "5087",
+      "crc32": "b7685774",
+      "sha1": "2b22d74fdb29a67872dc777e0a1fc9c3b1d88d9a"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_000780.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "2b4815caf740ca6b06a6224c0893dd3e",
+      "mtime": "1227629933",
+      "size": "5744",
+      "crc32": "fc95be0c",
+      "sha1": "7a2888c3335275843c0914574950e0d37c707186"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_000840.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "01762b0bf94de7ee4fc87ba16cafef59",
+      "mtime": "1227629946",
+      "size": "6798",
+      "crc32": "4af998e2",
+      "sha1": "fce819ff17958d477c7121a48d337071534c9473"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_000900.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "8a7d37683834198f3206498f11128b32",
+      "mtime": "1227629958",
+      "size": "8788",
+      "crc32": "5c3fcbd3",
+      "sha1": "7a3f28503a881813b504e46e580c27e6a430dff4"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_000960.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "78e94700bd426e115bc0b0b37db4e1e0",
+      "mtime": "1227629972",
+      "size": "4929",
+      "crc32": "633d7b1f",
+      "sha1": "6b6dba2644e899c76a40436d81219abe40558a46"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_001020.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "f20bbbe71b3d8c19b9719e07b28360d5",
+      "mtime": "1227629983",
+      "size": "8362",
+      "crc32": "9b2332c8",
+      "sha1": "5a448e75ad8c26389e3ba9783f0727a6e1ae6c2e"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_001080.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "28794e8660f427d05ac4db9e6e8faa99",
+      "mtime": "1227629996",
+      "size": "7628",
+      "crc32": "4f131f54",
+      "sha1": "dd0ce1b41ff1bb344d61d95cede1fc0c3ec28c01"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_001140.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "8ce2f7d0dfe8a73e0d879619f847183e",
+      "mtime": "1227630009",
+      "size": "9916",
+      "crc32": "f6c65dfd",
+      "sha1": "d668bf904e1ec722b0677b01b19277319eceb960"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_001200.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "da88c6a61b9d1be216c2647e6eaed6be",
+      "mtime": "1227630021",
+      "size": "7043",
+      "crc32": "58bdd073",
+      "sha1": "5b5f320b34a61971d78bddb2bcfe3521aabe4b3e"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_001260.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "a1a2b1bf307c77aa71dd4c0c083a9802",
+      "mtime": "1227630033",
+      "size": "6457",
+      "crc32": "6547783b",
+      "sha1": "49c402f32871bd3087150f4cff4b7718f0f8a581"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_001320.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "04dba7177e380ffc8db80b89ed286c50",
+      "mtime": "1227630046",
+      "size": "5952",
+      "crc32": "45bab507",
+      "sha1": "efd592b8c5b1f4c2121dceb9e6a143065fd93b3e"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_001380.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "60051f9ea01f297bd1bff38c7ca8c938",
+      "mtime": "1227630057",
+      "size": "8369",
+      "crc32": "5577ecd8",
+      "sha1": "8f8ef06a1a39ce18717f2719db2bbb54c8bdd17a"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_001440.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "790750ca307bd8a7d8699558125d9cb8",
+      "mtime": "1227630070",
+      "size": "8352",
+      "crc32": "a1bd3db7",
+      "sha1": "0add9a7c803c1aa3747163940511868f1a301175"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_001500.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "db6ea5cf04e10ff778196e21428d54c8",
+      "mtime": "1227630081",
+      "size": "8838",
+      "crc32": "fe29a0e7",
+      "sha1": "f5b51e7c57334942aad5aaa06775c9aa0c4bf973"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_001560.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "13529e6e6b9fae7a66c21632c7da4497",
+      "mtime": "1227630091",
+      "size": "6326",
+      "crc32": "4b1450d5",
+      "sha1": "bf4494c459b08325fb2ea838ed3044197e90f877"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_001620.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "14c18ea23d870d3de3f6ec6cefed6b5f",
+      "mtime": "1227630104",
+      "size": "7031",
+      "crc32": "461f5551",
+      "sha1": "88dfd6c1b3ccf1f7b2d5b732e809c1a993840321"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_001680.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "da389d19c2009d364d2f95672104aef9",
+      "mtime": "1227630116",
+      "size": "4847",
+      "crc32": "7bdb9a5e",
+      "sha1": "e2128e8dc86c208db0815b88092e6d026d5ffb08"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_001740.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "70a75bd765d3b5c631614b4a19a23f64",
+      "mtime": "1227630128",
+      "size": "6788",
+      "crc32": "95ef36b0",
+      "sha1": "637cf8991566a2e4e4522c69de28351688268a2c"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_001800.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "34010617ccf647a241ba985411f2a3b7",
+      "mtime": "1227630140",
+      "size": "8040",
+      "crc32": "9ece8acc",
+      "sha1": "9eb292602594af917d4982718a6610fd36d90be6"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_001860.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "b8bfd20661e0a74c113da2a506016036",
+      "mtime": "1227630153",
+      "size": "4702",
+      "crc32": "cb4ca485",
+      "sha1": "a8145d9df9a020782c20ee10e7a8eb1a65b43da8"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_001920.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "c737528c726897f5104927d9b4ff2cdb",
+      "mtime": "1227630165",
+      "size": "5798",
+      "crc32": "3bd5f661",
+      "sha1": "d46abf27d1104ece5ce180e44a4b90a1429df0d4"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_001980.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "d03345c67b0403a5f73206f0fb34f8dc",
+      "mtime": "1227630178",
+      "size": "6699",
+      "crc32": "e7fdf41e",
+      "sha1": "9afe39bd9b42ca543fdf21746e39b71b35cb1a91"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_002040.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "47b8145556d5c6453678d1d529b0b319",
+      "mtime": "1227630188",
+      "size": "7376",
+      "crc32": "97b827e1",
+      "sha1": "d60d18c359aaaed8029fa456b5972dcaac093c00"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_002100.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "d1c351f07d4f9971b04046c3c6a3796b",
+      "mtime": "1227630200",
+      "size": "5595",
+      "crc32": "85653e2e",
+      "sha1": "b08ef102865d187e6bd4d335c78eed24623b59df"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_002160.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "149d62d836bd0a2290afdc48e2281f05",
+      "mtime": "1227630212",
+      "size": "9097",
+      "crc32": "197fd37a",
+      "sha1": "e4396fe440578f719bdf8d90f8b918db6b04cd4a"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_002220.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "79ac950fd0c563122b58d68c7315edfa",
+      "mtime": "1227630224",
+      "size": "8310",
+      "crc32": "7c482084",
+      "sha1": "a80c443a6a8fc72a1ca8ab5a03d765fa57924394"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_002280.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "32a9fe642162cbcc221fc67c234ba8e6",
+      "mtime": "1227630236",
+      "size": "5805",
+      "crc32": "85007a2f",
+      "sha1": "0f4b3591d0c8d2ddb967e86c51c231ea0d223ff5"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_002340.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "2dacc7e42d410d50d445b4c84ed30ee0",
+      "mtime": "1227630244",
+      "size": "5291",
+      "crc32": "a4f356a2",
+      "sha1": "8aadb8476ff00c941b6c39bf0f300f9dbde6f599"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_002400.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "16141154f095cca2a10162b2c79d9926",
+      "mtime": "1227630250",
+      "size": "7017",
+      "crc32": "a51492c4",
+      "sha1": "4cef25aba2425006910913afb06f1c6ca4a7d439"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_002460.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "2ef7357b915c7f7d7787a187d02d2fbd",
+      "mtime": "1227630262",
+      "size": "6222",
+      "crc32": "a57e0baf",
+      "sha1": "3b7abd06b8a1d4e75a47d1a284cca8319b51af5d"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1.thumbs/ava06858vnb1_002520.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "ava06858vnb1.mpeg",
+      "md5": "689d618caeb3e65e015d325980638bc8",
+      "mtime": "1227630274",
+      "size": "4235",
+      "crc32": "41252c0f",
+      "sha1": "aadc1737c16012c276d913dc1100e9bdc93bed5b"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1_archive.torrent",
+      "source": "metadata",
+      "btih": "2e8583c8b803502e7c928a7bf9a6f53167686365",
+      "mtime": "1568407492",
+      "size": "38536",
+      "md5": "eb210fee83ae53280190e36b02671341",
+      "crc32": "edf832fd",
+      "sha1": "c03f21babf7d237c8d071e45a2ad4e762c9404c6",
+      "format": "Archive BitTorrent"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1_files.xml",
+      "source": "metadata",
+      "format": "Metadata",
+      "md5": "cc81acf74ef85996c569e607a199c89c",
+      "summation": "md5"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1_meta.xml",
+      "source": "metadata",
+      "format": "Metadata",
+      "mtime": "1772344526",
+      "size": "2018",
+      "md5": "db0d6dae7213332a4c5c464fc17c020a",
+      "crc32": "8e4fb4a5",
+      "sha1": "c2b27aaf934479ab350993fcedf78dae30d9dccc"
+    },
+    {
+      "name": "gov.ntis.ava06858vnb1_reviews.xml",
+      "source": "metadata",
+      "format": "Metadata",
+      "mtime": "1568407471",
+      "size": "182",
+      "md5": "4152ed7c33455167b67e1153216c1aff",
+      "crc32": "f66eed45",
+      "sha1": "44bac224609cae72e6acb889e37964ccab06e647"
+    }
+  ],
+  "files_count": 52,
+  "item_last_updated": 1772344526,
+  "item_size": 1905252237,
+  "metadata": {
+    "identifier": "gov.ntis.ava06858vnb1",
+    "title": "Know Your Ally  - Britain",
+    "creator": "Department of War",
+    "mediatype": "movies",
+    "collection": [
+      "FedFlix",
+      "usgovfilms",
+      "newsandpublicaffairs"
+    ],
+    "description": "The War Department\nSpecial Service Division\nArmy Service Forces\n\nWith the cooperation of The Signal Corps\nMusic by The Army Air Forces Orchestra\n\nKnow Your Ally - Britain\nAVA06858VNB1 - 1944\n\nNo. 1 of a Series: \"Know Your Allies and Know Your Enemies.\"\n\nThis film was prepared by the War Department to help you to know and understand one of your Allies.  Subsequent films of this series will deal with the other people beside whom we fight and with whom we stand or fall.\n\nImportant Note From NTIS: This program is considered of historical value and does not necessarily reflect current policy or plans of the sponsoring agency.",
+    "date": "1944",
+    "year": "1944",
+    "subject": "FedFlix; ntis.gov",
+    "licenseurl": "http://creativecommons.org/licenses/publicdomain/",
+    "publicdate": "2008-10-05 16:49:43",
+    "addeddate": "2008-10-05 16:44:57",
+    "uploader": "carl@media.org",
+    "updater": [
+      "malamud",
+      "malamud",
+      "malamud"
+    ],
+    "updatedate": [
+      "2008-10-05 17:57:51",
+      "2008-11-03 19:18:29",
+      "2008-11-04 20:52:54"
+    ],
+    "sound": "sound",
+    "color": "color",
+    "runtime": "42' 05\"",
+    "credits": "Uploaded by <a href=\"http://public.resource.org/\" rel=\"ugc nofollow\">Public.Resource.Org</a> under a <a href=\"http://public.resource.org/ntis_agreement.html\" rel=\"ugc nofollow\">joint venture</a> with <a href=\"http://www.ntis.gov/\" rel=\"ugc nofollow\">NTIS.</a>\n\nNarrated by Walter Huston.",
+    "language": "English",
+    "backup_location": "ia903602_15"
+  },
+  "reviews": [],
+  "server": "dn800208.us.archive.org",
+  "simplelists": {
+    "solo_manifest": {
+      "solo_manifest_dn800208": {
+        "sys_changed_by": {
+          "source": "task",
+          "task_id": "5417660007"
+        },
+        "sys_last_changed": "2026-06-05 01:29:03.774451"
+      }
+    }
+  },
+  "solo": true,
+  "uniq": 1300939677,
+  "workable_servers": [
+    "dn800208.us.archive.org"
+  ]
+}

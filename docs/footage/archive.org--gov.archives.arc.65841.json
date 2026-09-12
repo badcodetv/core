@@ -1,0 +1,416 @@
+{
+  "alternate_locations": {
+    "servers": [
+      {
+        "server": "dn721307.ca.archive.org",
+        "dir": "/0/items/gov.archives.arc.65841"
+      }
+    ],
+    "workable": [
+      {
+        "server": "dn721307.ca.archive.org",
+        "dir": "/0/items/gov.archives.arc.65841"
+      }
+    ]
+  },
+  "created": 1789200166,
+  "d1": "dn600300.us.archive.org",
+  "dir": "/0/items/gov.archives.arc.65841",
+  "files": [
+    {
+      "name": "__ia_thumb.jpg",
+      "source": "original",
+      "mtime": "1568382977",
+      "size": "6863",
+      "md5": "7e37282a1c9ef7341c7de1490deb5dfe",
+      "crc32": "0cc9bd90",
+      "sha1": "f5a59d487dedc439b915bd61616182202819f413",
+      "format": "Item Tile",
+      "rotation": "0"
+    },
+    {
+      "name": "gov.archives.arc.65841.gif",
+      "source": "derivative",
+      "format": "Animated GIF",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "a8f238fab23657bb51bab5265b37ae25",
+      "mtime": "1263106619",
+      "size": "248092",
+      "crc32": "38bd9a49",
+      "sha1": "d6b220af8e66585671a921a4ef074ded9648ff9f"
+    },
+    {
+      "name": "gov.archives.arc.65841.mpeg",
+      "source": "original",
+      "format": "MPEG2",
+      "md5": "d9ff99d56f596dfd71f3d9ba5aea752b",
+      "mtime": "1263106242",
+      "size": "1046524402",
+      "crc32": "2195437a",
+      "sha1": "e159d0c198a9ba32a6cea510756c26928b003199",
+      "length": "1286.63",
+      "height": "480",
+      "width": "640"
+    },
+    {
+      "name": "gov.archives.arc.65841.mpeg_meta.txt",
+      "source": "original",
+      "format": "Metadata",
+      "md5": "f29c7d019bf5e6a87cc514e5d6ee00f3",
+      "mtime": "1263106242",
+      "size": "4398",
+      "crc32": "1f43cbfc",
+      "sha1": "bbca2ce57d0da7c55596b02b7b18fc0131ae8c97"
+    },
+    {
+      "name": "gov.archives.arc.65841.ogv",
+      "source": "derivative",
+      "format": "Ogg Video",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "1bce4137a88f73a70569f906c96d0a3e",
+      "mtime": "1263108946",
+      "size": "108617643",
+      "crc32": "fd265c86",
+      "sha1": "681a8434d8cd11530b421432461ea4ab70eab006",
+      "length": "1287.02",
+      "height": "300",
+      "width": "400"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_000001.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "724220ca5a22e7e41b977970bead1523",
+      "mtime": "1263106380",
+      "size": "1068",
+      "crc32": "3219bbd1",
+      "sha1": "24bd958945d7338630ee369e120ee57f473bc6c6"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_000060.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "fb773a1ebc73a741b70f65c5ad7cf0d5",
+      "mtime": "1263106384",
+      "size": "6235",
+      "crc32": "bcbf29a1",
+      "sha1": "2d56bec198f04f3697498a542cbca7f3d1299f9d"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_000120.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "b97c128647ef33366ad906e1532ff0ca",
+      "mtime": "1263106390",
+      "size": "7769",
+      "crc32": "9ae47d9e",
+      "sha1": "f98a1e96cfd29710a42f09dfa9ab1130afd6778f"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_000180.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "2e4f88e5a26a6dff410325c01f11c62a",
+      "mtime": "1263106395",
+      "size": "4372",
+      "crc32": "8844ffd3",
+      "sha1": "b0a3294abb40a361964c73e045c57ccd1d4b3358"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_000240.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "58fe73c93618bfeddd20da2e041b9e87",
+      "mtime": "1263106401",
+      "size": "4093",
+      "crc32": "4a3b25d8",
+      "sha1": "38b14bec5730cad3be71328ff2db007e2f7a27f0"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_000300.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "48e00c464e8cb0ef9785547ffac68a94",
+      "mtime": "1263106406",
+      "size": "5916",
+      "crc32": "cdce6021",
+      "sha1": "5f474bb3e9d0ab1e154ff55955d5074a3a46d933"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_000360.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "9c1b602877f4b3881d4e17147bb4aa2f",
+      "mtime": "1263106411",
+      "size": "5019",
+      "crc32": "c2f78bef",
+      "sha1": "15bc911f7c52927d3ca1a403d0fecab78705a9bb"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_000420.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "21abf3a5a456d391963bb131c159712e",
+      "mtime": "1263106417",
+      "size": "2093",
+      "crc32": "feaf2ce1",
+      "sha1": "bed828d584f65bbd2009cf07c11787e0d7ba251f"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_000480.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "4ec60e09305ef9f864eade814d893e07",
+      "mtime": "1263106422",
+      "size": "5795",
+      "crc32": "1369b72f",
+      "sha1": "a6891b65f3cedba0f0e4e41c15d7314cb4d9532e"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_000540.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "84b85fcd1fb4dffb5d065d2b4e3f2025",
+      "mtime": "1263106427",
+      "size": "7875",
+      "crc32": "b000a0a3",
+      "sha1": "d12cf6977498c566e92fdf5ac7af1f082b6729b8"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_000600.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "41aa655b6819e0633cbd91cd12d8aaaa",
+      "mtime": "1263106433",
+      "size": "3187",
+      "crc32": "c2ce1f42",
+      "sha1": "cbe86f2bfbfdb9217d6bd8b9e17f700ad4b8d070"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_000660.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "abfde045e7a9dcdcd21c5c4d7202d001",
+      "mtime": "1263106438",
+      "size": "3588",
+      "crc32": "39575fd3",
+      "sha1": "d198fcf6d1075b3bfa0bc456f72fb381909bb890"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_000720.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "7d9bf9b393dd218a1d44ff073741d3c5",
+      "mtime": "1263106444",
+      "size": "6771",
+      "crc32": "d8bffd5c",
+      "sha1": "711ec1981e74307aeeed62e157d918ee9b6a0df9"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_000780.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "9bf7f699bb4004975e73a1048c6a3b87",
+      "mtime": "1263106449",
+      "size": "7901",
+      "crc32": "c9358c08",
+      "sha1": "54a4a1da8e4e246bd03aee00c391fbc6425d52ea"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_000840.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "b3f691064f2cc2827390ec4de2bd3f48",
+      "mtime": "1263106455",
+      "size": "9305",
+      "crc32": "6f6c36ba",
+      "sha1": "07501a9008e6c1cabee7ad36817d17d934c21bfc"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_000900.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "55f37ee80bc6f19652e92181db09ca2d",
+      "mtime": "1263106460",
+      "size": "7798",
+      "crc32": "d3b74744",
+      "sha1": "9cd7520a4723a3bb5917bd0d70fde9ddcd3beef3"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_000960.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "e0a3747f1822b26089352a2de5e72e4d",
+      "mtime": "1263106465",
+      "size": "4234",
+      "crc32": "d2671d55",
+      "sha1": "50fe8b86eb64f20c1843c84d536fa3501ccf21c0"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_001020.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "4a16307b22088d3e4b30e706ddc48b7b",
+      "mtime": "1263106471",
+      "size": "7920",
+      "crc32": "97411c71",
+      "sha1": "4722993bb0f46aad38eb422b80d547fa2930c7a7"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_001080.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "463e5dc205dc32c536705629649284ae",
+      "mtime": "1263106476",
+      "size": "4382",
+      "crc32": "3a39d39d",
+      "sha1": "36b6e5e1ce43006e054880a598dde8781dffb3df"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_001140.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "bd2c5b723937e55a70e15b5c058e7197",
+      "mtime": "1263106482",
+      "size": "9385",
+      "crc32": "74bd05b7",
+      "sha1": "9a050f5a2c89a3b6d80ee8c80da076eca3d34217"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_001200.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "d97e52b3414b219f23ca29eba36af930",
+      "mtime": "1263106487",
+      "size": "9375",
+      "crc32": "af5256bc",
+      "sha1": "855a65a8c60fb05725294690b387a3e36b049ca9"
+    },
+    {
+      "name": "gov.archives.arc.65841.thumbs/gov.archives.arc.65841_001260.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "5e94edb79173a5d3d2c79875309a7308",
+      "mtime": "1263106493",
+      "size": "5603",
+      "crc32": "feceedae",
+      "sha1": "60d392b7ec4920d6be8346945040171a24d68687"
+    },
+    {
+      "name": "gov.archives.arc.65841_512kb.mp4",
+      "source": "derivative",
+      "format": "512Kb MPEG4",
+      "original": "gov.archives.arc.65841.mpeg",
+      "md5": "6ee87e27ff2424a21807e8cea0862bb7",
+      "mtime": "1263108219",
+      "size": "93512550",
+      "crc32": "d5106c87",
+      "sha1": "c97d2a78507fea766603a9af0c97ae73a4b4a545",
+      "length": "1287.05",
+      "height": "240",
+      "width": "320"
+    },
+    {
+      "name": "gov.archives.arc.65841_archive.torrent",
+      "source": "metadata",
+      "btih": "d10e4368265c09b1d9ba3236222737de071fd577",
+      "mtime": "1577169412",
+      "size": "26083",
+      "md5": "08faf901ac36db80dbd7172d96d863b2",
+      "crc32": "227af570",
+      "sha1": "a206c5e36c77fc7d3bdf94e97fa04ffaa82e39d1",
+      "format": "Archive BitTorrent"
+    },
+    {
+      "name": "gov.archives.arc.65841_files.xml",
+      "source": "original",
+      "format": "Metadata",
+      "md5": "2651f3b53e5867cf4bdf1566dc841131",
+      "summation": "md5"
+    },
+    {
+      "name": "gov.archives.arc.65841_meta.xml",
+      "source": "original",
+      "format": "Metadata",
+      "mtime": "1781279361",
+      "size": "4480",
+      "md5": "c60f7ad82323f6df6e8fb05394eb6376",
+      "crc32": "77217532",
+      "sha1": "bf063e6d743af90e76c8cf9c279a2fbc85ac5d36"
+    },
+    {
+      "name": "gov.archives.arc.65841_reviews.xml",
+      "source": "original",
+      "mtime": "1568475971",
+      "size": "183",
+      "format": "Metadata",
+      "md5": "e7f6961210298a3d981b0b40018ad244",
+      "crc32": "4bf1657f",
+      "sha1": "0bd04df21f2cb848bab21b4f95586cbf1d3a4b59"
+    }
+  ],
+  "files_count": 32,
+  "item_last_updated": 1781279362,
+  "item_size": 1249074378,
+  "metadata": {
+    "identifier": "gov.archives.arc.65841",
+    "creator": "National Archives and Records Administration",
+    "credits": "Uploaded by Public.Resource.Org",
+    "description": "National Archives and Records Administration<br /><br />THE BATTLE FOR THE BEACHES<br /><br />Department of Defense. Department of the Air Force. (09/26/1947 - )<br /><br />ARC Identifier 65841 / Local Identifier 342-USAF-19152. Summary: Navy film of the training and struggle to obtain beaches in Pacific and European Areas. Combat scenes of WWII. Reel 1: 1) Several LS taken off shore looking at White Cliffs of Dover. 2) Several quick flash shots showing England. Civil defense in operation, civilians loading sand bags and erecting sand bag parapets around buildings. 3) CS home guard troops marching up road carring rifles. 4) CS home guard troopers standing along coastline looking out at sea. 5) LS looking out across English village. 6) CS Guards walking up along barbed wire fence erected on outskirts of village. 8) CS surf breaking upon rocky coastline. 9) Several quick shots German coastal defense showing camouflaged gun position, observers, heavy concrete, coastal gun positions. 10) German officer talking to other officers.11) CS LS erection of base for the coastal defense guns. 12) CS place coastal defense gun in position. 13) CS German anti-aircraft gun positions along coastline. 14) LS along coastline showing waves breaking in upon shore. 15) CS Marines coming in for landing on one of the islands showing landing craft, men marching through water, shells bursting along coastline. 16) CS dead soldiers lying in ditch along road. 17) Gen Mark Clark conferring with other officers. 18) CS crew of B-25 (named Smiling Jack) being congratulated by Gen. MacArthur. 19) Several shots of landing craft going in toward shore. 20) CS men unloading landing craft along shoreline. 21) Good action shots, men coming in and establishing beachhead showing jeeps, field pieces, troops, field pieces, troops, general battle action. 22) CS sign: \"Dunkirk.\" 23) CS anti-aircraft gun on English ship -- camera pans showing British troops on shore line waiting evacuation in bg. 24) LS across open terrain at several English tanks on cliff along coastline. 25) CS Hitler looking through binoculars across English coastline. 26) LS across water to the White Cliffs of Dover. 27) CS surf breaking upon rocky coastline. 28) CS Hitler and staff officers walking upon deck of ship. 29) LS through mast of sailing vessel at unidentified aircraft passing overhead. 30) CS large German coastal gun firing. 31) LS across water at White Cliffs of Dover. 32) CS English soldiers lining up in formation in open area -- barracks in bg. 33) CS English home guard doing manual of arms. 34) CS coastal defense observation post showing observers scanning horizon. 35) CS showing anti-aircraft gun positions along coastline. 36) LS back across ocean showing battle ship, in back of battleship can be seen large flat top English vessels. 37) CS English sailor standing in the observers position on ship scanning the sea with binoculars. 38) CSA Spitfire in flight. 39) LS Aerial, Spitfires diving diving down through the sky. Three aircraft in scene. 40) AS single Spitfire passing over cameraman's plane. 41) As formation of six B-26's passing directly over camera plane. 42) ADS B-26 in flight, low altitude, over water. 43) A single, SV B-26 in flight -- English insignia on side of aircraft. 44) ADS large harbor city. 45) LS across at large harbor city. 46) ACU camera in bomb bay showing bombs being released. 47) LS across water, showing bomb exploding near pier. 48) LS Same scene, bomb exploding directly on centor of pier.  good (Basic: 2 reels, 35mm, b&w, Dupe neg)<br /><br />Made possible by a donation from John and Paige Curran.",
+    "language": "English",
+    "licenseurl": "http://creativecommons.org/licenses/publicdomain/",
+    "mediatype": "movies",
+    "subject": "archives.gov;public.resource.org",
+    "title": "THE BATTLE FOR THE BEACHES",
+    "collection": [
+      "FedFlix",
+      "usgovfilms",
+      "newsandpublicaffairs"
+    ],
+    "uploader": "carl@media.org",
+    "publicdate": "2010-01-10 07:36:02",
+    "backup_location": "ia903604_24",
+    "addeddate": "2010-01-10 07:36:02"
+  },
+  "reviews": [],
+  "server": "dn600300.us.archive.org",
+  "servers_unavailable": true,
+  "simplelists": {
+    "solo_manifest": {
+      "solo_manifest_dn600300": {
+        "sys_changed_by": {
+          "source": "task",
+          "task_id": "5433570081"
+        },
+        "sys_last_changed": "2026-06-12 15:49:32.536489"
+      }
+    }
+  },
+  "solo": true,
+  "uniq": 534624082,
+  "workable_servers": [
+    "dn600300.us.archive.org"
+  ]
+}

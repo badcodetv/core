@@ -29,10 +29,16 @@ There is no unresolved fable/documentary fork and no alternative ending awaiting
 | Working narration | Included in the storyboard; not yet timed or recording-locked |
 | Research | September investigation complete; read older sources with its corrections |
 | Evidence checks before recording | Collate the 1942 Keynes quotation; authenticate any nurse/May excerpt and speaker attribution |
-| Scene design, media and edit | Not started by this storyboard pass; no generated assets or cleared footage claimed |
+| Scene design, media and edit | Not started by this storyboard pass; no generated assets claimed |
+| **Real footage — sourcing and clearance** | 🟡 **Pass 1 done, 2026-09-12** — [`footage.md`](./footage.md). The war beats have a verified free source and one file is on disk; the British, NHS and austerity beats are stills and documents, and the **OGL route is blocked on a Kai ruling about where a credit line lives** |
 
 ## Supporting material
 
+- **[Footage ledger](./footage.md)** — which beats need real footage, the source for each, the
+  licence **as verified in a session**, what is on disk, and the fallback where nothing free exists.
+  Read it before putting any archive material on a timeline. House reference:
+  [`docs/video-fx/footage-sources.md`](../../video-fx/footage-sources.md); receipts:
+  [`docs/footage/`](../../footage/README.md).
 - [Research library and precedence](./research/README.md).
 - [Completed austerity/emergency investigation, 11 September 2026](./research/documentary-austerity-emergency-investigation-2026-09-11.md)
   — evidence, corrections, adversarial economics and footage/rights leads. Its proposed film

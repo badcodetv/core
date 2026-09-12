@@ -239,7 +239,8 @@ has run these queries; treat them as leads, not as promises.
 | Subject | First stop | Notes |
 | --- | --- | --- |
 | **Space, flight, launches** | `collection:nasa`, images-api.nasa.gov, NASA SVS | The best-covered territory on the page by a distance |
-| **Military, war, the fall of France** | `gov.dod.dimoc.*`, `gov.archives.arc.*`, `universal_newsreels` | US federal compilations of European events — accept it won't carry a British uniform |
+| **Military, war, the fall of France** | `gov.fdr.*` (Capra's *Why We Fight* reels), `gov.archives.arc.*`, `gov.dod.dimoc.*`, `universal_newsreels` | US federal compilations of European events. 🔴 **Check each identifier is alive** — 25–40% of the `arc`/`dimoc` search index is 404. 🔴 And a Capra compilation mixes actuality with dramatised inserts: free to publish, but a human must decide per shot whether it is real |
+| **UK, WWII, official photography** | Wikimedia Commons, `PD-UKGov` — VE Day, the Blitz, ministers, at 5,000+ px | 🟡 **New 2026-09-12.** The answer to "UK is all paid" for *stills*. Amber: the files came off IWM's server. And Commons' PD tag is US law — read the photographer's death date |
 | **Factory floors, industry, machinery** | Prelinger (`licenseurl:*`) sponsored industrials; CERN's `type=FOOTAGE` (36 items, 🟡 licence) | 🔴 **The weakest territory we have.** See [Known gaps](#known-gaps--nobody-covered-these) |
 | **Protest, strikes, picket lines, labour, crowds** | *Unsurveyed.* Leads: Prelinger's sponsored-film and newsreel material; Commons `Category:Demonstrations`, `Category:Strikes`; `universal_newsreels` | 🔴 **For a collective whose subject is the ownership of the means of production, this is the most embarrassing gap on the page.** Nobody has run a single query. Run them and write the results back |
 | **Money, markets, trading floors, banks, budgets** | *Unsurveyed.* Leads: Prelinger sponsored finance/insurance films; `universal_newsreels` for crash/budget coverage; C-SPAN 🟡 for hearings | 🔴 Magic Money Tree and Emperor's New Coin both need this and it does not exist here yet |
@@ -250,12 +251,14 @@ has run these queries; treat them as leads, not as promises.
 
 ### Worked example — "find Dunkirk footage", end to end
 
-Three candidates the search turns up. **Only two of them are green, and the difference is the
-whole lesson.**
+Four candidates the search turns up, and **the differences are the whole lesson**: one is green, one
+is amber for a provenance reason, one *was* green and has since **vanished from archive.org while
+staying in its search index**, and one is the replacement.
 
 | Item | What it is | Verdict |
 | --- | --- | --- |
-| **`gov.dod.dimoc.30172`** — *Army in Action, Ep. III: Flames on the Horizon* | Covers the Fall of France, May–June 1940 | 🟢 **Green.** `licenseurl` = **CC0**, `collection: FedFlix / usgovfilms`. 🔴 **Correction, 2026-08-22:** this page used to say "posted by DoD's own DIMOC account" — it is not. The uploader is `carl@media.org` (Public.Resource.Org, the FedFlix operator). The identifier encodes DIMOC's record number; the *account* is FedFlix. Still green — trusted prefix, trusted operator, explicit CC0 — but the reason is FedFlix, not DIMOC |
+| **`gov.dod.dimoc.30172`** — *Army in Action, Ep. III: Flames on the Horizon* | Covers the Fall of France, May–June 1940 | ⛔ **GONE — 2026-09-12.** `/metadata/` returns `{}` with HTTP 200 and `/details/` returns **404 "Item cannot be found."** The item is no longer on archive.org, though the search index still lists identifiers like it. *(It was 🟢 green while it existed: `licenseurl` = CC0, `collection: FedFlix / usgovfilms`, uploader `carl@media.org` — Public.Resource.Org, the FedFlix operator, not DoD's own account, as the 2026-08-22 pass corrected.)* **Use `gov.fdr.25.4` below instead** |
+| **`gov.fdr.25.4`** — Frank Capra, *Divide and Conquer* (Why We Fight #3), Part 4 | **The replacement flagship.** The Dunkirk evacuation block runs ≈ **03:56–05:20** — verified frame by frame 2026-09-12 | 🟢 **Green.** `uploader: carl@media.org`, `collection: FedFlix / usgovfilms / newsandpublicaffairs`, `licenseurl` = **CC0**. Downloaded whole; md5 matched the declared `95f87bb3…` exactly. 🔴 **`gov.fdr.25.1` (Part 1) is dead**; parts 2, 3 and 4 are live. 🔴 **The coded picture is 368×480 with a 40:23 pixel aspect**, not the 640×480 the metadata advertises, and `field_order=tt` — interlaced |
 | **`Dividean1943_2`** — Frank Capra, *Divide and Conquer* (Why We Fight #3), Part II | Description states it covers *"the evacuation of the British forces at Dunkirk"* | 🟢 **Green.** `collection: prelinger`, US War Department production, textbook §105, `licenseurl` = `licenses/publicdomain/`. 🔴 **Name trap: three differently-named files on one item** — `_512kb.mp4` (55,557,824 B), `.mp4` (82,009,431 B), `_edit.mp4` (285,508,616 B) |
 | **`FB-56`** — War Department Film Bulletin 56, *The Western Battle Front, May–June 1940* | Captured German film compiled by the US Signal Corps. NARA description: *"Shows the Dunkirk evacuation; wreckage; and British POWs."* | 🟡 **Amber — and it was rated green here until 2026-08-22, which was wrong.** See below |
 
@@ -288,24 +291,100 @@ trust**, and "it's obviously a War Department film" is not a check, it is a vibe
    with the URL you read it from. **If you cannot cure it, it stays amber and needs Kai's call** —
    don't launder it by calling it green.
 
+#### 🔴 A search hit is not an item — archive.org's index outlives its files
+
+**New 2026-09-12, and it invalidated seven identifiers on this page and in the Magic Money Tree
+research in one afternoon.** `advancedsearch.php` happily returns identifiers for items that are no
+longer there. The item's absence looks like this:
+
+```
+curl -s  https://archive.org/metadata/gov.dod.dimoc.30172        # → {}   with HTTP 200
+curl -sL https://archive.org/details/gov.dod.dimoc.30172 -o /dev/null -w '%{http_code}'   # → 404
+```
+
+**`{}` with a 200 means gone, not empty.** There is no error, no redirect and no explanation.
+
+**How bad it is — sampled live 2026-09-12, random items, `mediatype:(movies)`:**
+
+| Prefix | Index says | Random sample | Dead |
+| --- | --- | --- | --- |
+| `gov.archives.arc.*` | 2,108 | 12 | **3 (25%)** |
+| `gov.dod.dimoc.*` | 917 | 10 | **4 (40%)** |
+
+Casualties found in one session: `gov.dod.dimoc.30172` *(this page's own flagship)*,
+`gov.fdr.25.1`, `gov.archives.arc.36080`, `gov.archives.arc.39190`, `gov.archives.arc.39139`,
+`111-of-16-r1-5`, `111-adc-4267`, `Dividean1943`.
+
+**Three rules follow.**
+1. **Never quote an identifier you have not `/metadata/`-fetched in this session.** A live search
+   result is not evidence the file exists. Prefer a scripted sweep that checks each hit:
+
+   ```bash
+   for ID in $(curl -s "https://archive.org/advancedsearch.php?q=$SCOPE+AND+mediatype%3A(movies)+AND+$Q&fl[]=identifier&rows=10&output=json" | jq -r '.response.docs[]?.identifier'); do
+     J=$(curl -s "https://archive.org/metadata/$ID")
+     [ "$J" = "{}" ] && { echo -e "$ID\tDEAD-404"; continue; }
+     echo "$J" | jq -r --arg id "$ID" '[$id,(.metadata.uploader//"-"),(.metadata.licenseurl//"-"),.metadata.title]|@tsv'
+   done
+   ```
+
+2. **A dead identifier is often recoverable by title, on another collection.** *Know Your Ally:
+   Britain* died twice (`111-of-16-r1-5`, `gov.archives.arc.36080`) and is alive as
+   **`gov.ntis.ava06858vnb1`**, same FedFlix uploader, same PD licence. *Divide and Conquer* is
+   alive as `gov.fdr.25.2/.3/.4` **and** as Prelinger's `Dividean1943_2/_3/_4`. Search
+   `collection:usgovfilms` and `collection:prelinger` by title before giving up.
+3. **The receipt JSON is not optional.** It is the only copy of the licence claim that survives the
+   item being withdrawn.
+
+#### 🟢 The free contact sheet — see inside a film without downloading it
+
+**New 2026-09-12.** Every archive.org video item carries derivative thumbnails at fixed intervals,
+listed in its metadata as `<id>.thumbs/<id>_NNNNNN.jpg`. They are a few KB each and the number in
+the filename is the **second offset**. That is a free, complete visual index of a 14-minute reel for
+about 300 KB — which is how the Dunkirk block in `gov.fdr.25.4` was located before a single byte of
+the 370 MB original was fetched.
+
+```bash
+ID=gov.fdr.25.4; mkdir -p "$ID"
+curl -s "https://archive.org/metadata/$ID" > "$ID/meta.json"
+for F in $(jq -r '.files[]|select(.name|test("thumbs?/.*\\.jpg$"))|.name' "$ID/meta.json"); do
+  curl -sL --max-time 30 -o "$ID/$(basename "$F")" "https://archive.org/download/$ID/$F"
+done
+cd "$ID"
+for f in $(ls *_0*.jpg | sort); do S=$((10#$(echo "$f" | grep -o '[0-9]\{6\}' | tail -1)))
+  convert "$f" -resize 220x -gravity south -background black -splice 0x16 \
+    -pointsize 13 -fill yellow -annotate +0+1 "$(printf '%d:%02d' $((S/60)) $((S%60)))" "lbl_$f"; done
+montage lbl_*.jpg -tile 6x -geometry +2+2 -background '#111' contact.jpg   # ← then look at it
+```
+
+Then narrow with a real scrub of the small `_512kb.mp4` derivative, or of the original once pulled:
+`ffmpeg -ss 220 -i raw.mpeg -t 190 -vf "yadif=1,fps=1/8,scale=320:-1" -vsync vfr f_%03d.jpg`.
+
+⚠️ **Two failure modes seen the same day.** Thumbnails 502'd persistently for one item
+(`gov.fdr.25.3` — all 16, three retries each) while its neighbours served fine, so a per-item
+derivative outage is normal; check `file -b` for `JPEG` and drop HTML. And a `_512kb.mp4` fetch
+through `archive.org/download` **redirected to a node that then timed out** — fall back to the node
+URL the metadata names directly: `https://<.server><.dir>/<name>`.
+
 #### The whole path, one block
 
 🔴 **This is the only end-to-end sequence on the page. Everything else is a fragment.** It runs
 query → metadata → largest original → download → md5 → duration → conform → ready for
-`premiere_import`, on the green `gov.dod.dimoc.30172` item.
+`premiere_import`, on the green `gov.fdr.25.4` item. *(It ran on `gov.dod.dimoc.30172` until that
+item was withdrawn — see the liveness trap above.)*
 
 ```bash
 set -euo pipefail
-ID=gov.dod.dimoc.30172
+ID=gov.fdr.25.4
 DEST="$MEDIA_ROOT/footage/archive.org/$ID"      # MEDIA_ROOT = premiere_status().mediaRoot, WSL form
 mkdir -p "$DEST"
 
 # 1. SEARCH — always scoped to a trusted collection/identifier prefix
-curl -s 'https://archive.org/advancedsearch.php?q=identifier%3Agov.dod.dimoc.*+AND+mediatype%3A(movies)+AND+%22fall+of+france%22&fl[]=identifier&fl[]=title&fl[]=licenseurl&rows=10&output=json' \
+curl -s 'https://archive.org/advancedsearch.php?q=identifier%3Agov.fdr.*+AND+mediatype%3A(movies)+AND+dunkirk&fl[]=identifier&fl[]=title&fl[]=licenseurl&rows=10&output=json' \
   | jq -r '.response.docs[] | [.identifier, .licenseurl, .title] | @tsv'
 
-# 2. METADATA — the receipt AND the only authoritative filename list
+# 2. METADATA — the receipt, the liveness check AND the only authoritative filename list
 curl -s "https://archive.org/metadata/$ID" > "$DEST/source-metadata.json"
+test "$(cat "$DEST/source-metadata.json")" != "{}" || { echo "ITEM IS GONE"; exit 1; }   # ← 2026-09-12
 jq -r '.metadata | {identifier,uploader,licenseurl,collection}' "$DEST/source-metadata.json"   # ← Half A runs on this
 
 # 3. PICK the largest true original (never guess a filename)
@@ -443,6 +522,19 @@ File ladder: `.mpeg` original MPEG2 at 1,362,977,061 bytes (the master), `_512kb
 121,791,529 B and `.ogv` at 141,034,116 B (auto-derivatives). For a 1.3GB source the `_512kb.mp4`
 is the practical "just works" pick.
 
+🔴 **2026-09-12: re-counted at 2,108 — and roughly a quarter of them are not there.** A random
+sample of 12 movie items found **3 returning `{}` / 404**. The count is the index; the index is not
+the shelf. [Check liveness per identifier.](#-a-search-hit-is-not-an-item--archiveorgs-index-outlives-its-files)
+
+**Two sibling prefixes on the same FedFlix operator, same basis, same tier — and they hold what
+`gov.archives.arc.*` has lost.** Both verified live 2026-09-12, uploader `carl@media.org`,
+collections `FedFlix / usgovfilms / newsandpublicaffairs`:
+
+| Prefix | Count | What it is | Verified item |
+| --- | --- | --- | --- |
+| `gov.fdr.*` | 154 | FDR Presidential Library transfers — includes all four Capra *Why We Fight* compilations | `gov.fdr.25.4` *Divide and Conquer (Part 4)*, CC0, md5-matched on a full download |
+| `gov.ntis.*` | — | National Technical Information Service transfers | `gov.ntis.ava06858vnb1` *Know Your Ally: Britain* (1943), `licenses/publicdomain/`, 2,525 s — **the live copy of a film whose two `arc`/`111-` identifiers are both dead** |
+
 #### archive.org `collection:nasa`
 
 **13,733 items** (verified). 🔴 **`collection:NASAarchive` returns zero** — the identifier is just
@@ -472,8 +564,15 @@ coverage. Browse it; don't rely on it for a named event.
 
 #### archive.org `gov.dod.dimoc.*` — DoD DIMOC records, via FedFlix
 
-Defense Imagery Management Operations Center records. Verified item `gov.dod.dimoc.30172` carries
-`licenseurl` = **CC0**.
+Defense Imagery Management Operations Center records. 917 movie items in the search index
+(2026-09-12).
+
+⛔ **2026-09-12: the item this entry was built on is gone.** `gov.dod.dimoc.30172` now returns
+`{}` from `/metadata/` and **404** from `/details/`, and a random sample of ten `gov.dod.dimoc.*`
+movie items found **four dead**. The prefix is still trustworthy where an item exists — but
+[check every identifier is alive](#-a-search-hit-is-not-an-item--archiveorgs-index-outlives-its-files)
+before quoting it. Live examples confirmed the same day: `gov.dod.dimoc.28398`, `.30110`, `.52590`,
+`.20369`, `.505614`, `.711279`.
 
 🔴 **Corrected 2026-08-22.** This entry previously claimed the items were posted by "DoD's own
 institutional account." **They are not.** Re-run live, `gov.dod.dimoc.30172`'s uploader is
@@ -1514,7 +1613,7 @@ someone actually made the call in the research sweep and read the response.
 | Collection counts **as of 2026-08-22**: Prelinger 10,459 / 1,913 with licence; **FedFlix 2,107 / 2,106 with licence**; nasa 13,733; feature_films 28,415 / 9,046; computerchronicles 634; universal_newsreels 611; `youtube-*` 2,059,500 | `rows=0` count queries. 🔴 **FedFlix was written here as 2,218 and had drifted to 2,107 — date-stamp every count** |
 | `collection:NASAarchive` returns **zero** | Live query |
 | Universal Newsreel has **no** May–July 1940 item | Live date-range query, `numFound: 0` |
-| The Dunkirk items are real files (FB-56, Dividean1943_2, gov.dod.dimoc.30172) | Full `/metadata/` fetch + range GET → HTTP 206 + `file` confirmed genuine ISO Media MP4. 🔴 **"All three are green" was the claim and it was wrong — see the 2026-08-22 corrections below** |
+| The Dunkirk items are real files (FB-56, Dividean1943_2, gov.dod.dimoc.30172) | Full `/metadata/` fetch + range GET → HTTP 206 + `file` confirmed genuine ISO Media MP4. 🔴 **"All three are green" was the claim and it was wrong — see the 2026-08-22 corrections below**. ⛔ **`gov.dod.dimoc.30172` was withdrawn from archive.org before 2026-09-12** — see the 2026-09-12 corrections |
 | Periscope Film's archive.org previews are **CC BY-NC-ND 4.0** | `licenseurl` read from raw JSON |
 | archive.org guessed-filename → 302→404; real file → 302→200 with exact byte match | `curl -sIL` |
 | Resume/integrity: 206 + Content-Range; truncated file's md5 ≠ declared md5 | Executed end to end |
@@ -1549,6 +1648,13 @@ someone actually made the call in the research sweep and read the response.
 | IWM's non-commercial licence exclusions + Delegated Authority | Both IWM policy pages fetched |
 | Getty Embed terms (verbatim) | gettyimages.co.uk/company/terms fetched |
 | Legal: 17 USC §105; CDPA ss.13B/77/87/163; CC0 and CC-BY-NC legalcode; EU Database Directive Arts.7/10; **Bridgeman v. Corel**; IA's own rights page | Direct primary-source fetches, all 200 |
+| **2026-09-12** — a whole green item downloaded and hash-matched end to end: `gov.fdr.25.4.mpeg`, 369,576,027 B, declared md5 `95f87bb33a241c239e10b59b5415eb75`, **matched**; sha256 `048f57d0…`; declared length 809.01 s vs `ffprobe` 809.009011 | Executed, file on disk |
+| **2026-09-12** — `ffprobe` disagrees with archive metadata on picture size: coded **368×480**, SAR **40:23**, DAR 4:3, `field_order=tt`, 30000/1001 fps | Executed on the downloaded file |
+| **2026-09-12** — item liveness: `{}`+HTTP 200 from `/metadata/` and 404 from `/details/` on 8 named identifiers; random samples 3/12 (`arc`) and 4/10 (`dimoc`) dead | Executed, both endpoints per identifier |
+| **2026-09-12** — index counts: `gov.archives.arc.*` 2,108 · `gov.dod.dimoc.*` 917 · `universal_newsreels` 611 · `gov.fdr.*` 154 | `rows=0` count queries |
+| **2026-09-12** — OGL v3 wording unchanged; TNA's *Birth of the NHS 1948* page footer reads *"All content is available under the Open Government Licence v3.0, except where otherwise stated"*, leaflet `INF 2/66` p.15 | Both pages fetched |
+| **2026-09-12** — Commons licence-filtered queries return British WWII official photography at 5335×3941 (`PD-UKGov`); and return two **live-copyright** files under the same "Public domain" tag (Howard Coster d.1959; "presumably Karsh") | `extmetadata` read per file, including `Artist`, `Credit`, `AttributionRequired` |
+| **2026-09-12** — archive.org per-item derivative thumbnails are a free second-indexed contact sheet | Fetched and montaged for `gov.fdr.25.2`/`.4`; located the Dunkirk block before downloading |
 
 ### Re-verified and corrected — 2026-08-22 critic pass
 
@@ -1568,6 +1674,26 @@ someone actually made the call in the research sweep and read the response.
 | The page is discoverable | `grep -rn "footage-sources" --include=*.md` returned **only this file** | `docs/video-fx/README.md`, `CLAUDE.md` and the `find-footage` skill now link here |
 | **OGL v3** was never surveyed | nationalarchives.gov.uk fetched verbatim: *"exploit the Information commercially"*, attribution-only, exemption list read | New amber entry; UK Known-gaps conclusion softened |
 | The end-to-end command block | Steps 1–3 + the metadata/duration steps of [The whole path](#the-whole-path-one-block) **executed live on `gov.dod.dimoc.30172`** — search returned the item, `jq` picked `gov.dod.dimoc.30172.mpeg` (949,987,612 B, md5 `114bfc74…`), declared length 1732.73s | Replaced the old block, which did not chain: its step 1 was elided and its steps 2–3 hardcoded an unrelated identifier |
+
+### Re-verified and corrected — 2026-09-12 Magic Money Tree pass
+
+🔴 **What failed this time was not licence optimism. It was assuming an identifier still exists.**
+
+| Claim as it stood | What the live re-run returned | What changed |
+| --- | --- | --- |
+| `gov.dod.dimoc.30172` is the flagship green item and the subject of the end-to-end runbook | `/metadata/` → `{}` **HTTP 200**; `/details/` → **404 "Item cannot be found"** | ⛔ **Item withdrawn.** Runbook re-pointed at `gov.fdr.25.4`; a liveness assert added as step 2; [new trap section](#-a-search-hit-is-not-an-item--archiveorgs-index-outlives-its-files) written |
+| The `gov.archives.arc.*` and `gov.dod.dimoc.*` families are dependable | Random live samples: **3 of 12** and **4 of 10** unreachable | **New rule: a search hit is not an item.** Every identifier must be `/metadata/`-checked in-session |
+| Dunkirk beat candidates `gov.fdr.25.1`, `111-of-16-r1-5`, `gov.archives.arc.39190`, `111-adc-4267` *(from the Magic Money Tree research ledger)* | All four **404** | Recovered by title where possible: *Know Your Ally: Britain* → **`gov.ntis.ava06858vnb1`** (live, FedFlix, PD); *Divide and Conquer* parts 2–4 → `gov.fdr.25.2/.3/.4` (live) |
+| Archive metadata's `width`/`height` describe the picture | `gov.fdr.25.4` metadata says **640×480**; `ffprobe` says **368×480, SAR 40:23, DAR 4:3, `field_order=tt`** | **Metadata gives the *display* size.** Probe the file for the coded size and the field order before conforming |
+| Counts as of 2026-08-22 | Re-counted 2026-09-12: `gov.archives.arc.*` **2,108** (was 2,107), `gov.dod.dimoc.*` **917**, `universal_newsreels` **611**, `gov.fdr.*` **154** | Counts hold; **reachability does not** — see the sampling above |
+| Universal Newsreel's PD basis was asserted but never quoted | IA's collection record, read verbatim: *"Universal City Studios gifted Universal Newsreel to the American people, put the newsreels into the public domain, and gave film materials to the National Archives in 1976."* | Quote captured. ⚠️ **Read on archive.org, not on a NARA page** — and every item's `uploader` is a personal address (`skipe@mindspring.com`), so the basis is **collection-level, not uploader-level** |
+| OGL v3 wording | Re-fetched live: *"copy, publish, distribute and transmit"*, *"adapt"*, *"exploit the Information commercially and non-commercially"*; attribution *"Contains public sector information licensed under the Open Government Licence v3.0."* | Confirmed unchanged. 🔴 **But OGL requires attribution, so by this page's own rule it is amber until BadCode has a credits surface** |
+| UK is "a paid line item" | **For film, yes. For stills, no.** Wikimedia Commons, licence-filtered live, returns a deep set of British WWII photographs tagged `PD-UKGov` (Crown copyright expired 50 years from creation) — VE Day in London at **5335×3941**, air-raid damage at **5163×4071** | **New: UK official WWII photography is a real stills route.** 🟡 Amber, not green — the Commons `Credit` field shows the files were **lifted from `media.iwm.org.uk`**, and IWM is red. Copyright probably expired; *this file from this host* is unanswered |
+| Commons "Public domain" can be trusted once `LicenseShortName` is filtered | Two rejects found in one query set: `Aneurin_Bevan_(1943).jpg` — photographer **Howard Coster, d. 1959**, so **UK copyright to 2029**, and the Commons page itself carries a third-party-claim warning; `Person_attlee2.jpg` — artist field reads **"Presumably Yousuf Karsh"** (d. 2002) with a fan-site credit | 🔴 **New trap: Commons' PD tag is a US-law determination.** For a British subject and a British audience, read the **author and their death date**, not the tag. `AttributionRequired: false` does not mean the work is free here |
+
+**Also new:** [the free contact sheet](#-the-free-contact-sheet--see-inside-a-film-without-downloading-it)
+— archive.org's per-item derivative thumbnails index a whole reel by second-offset for a few hundred
+KB, which is how a specific 84-second block was found inside a 14-minute film before downloading it.
 
 ⚠️ **Read but not re-verified in this pass:** the Open Parliament Licence wording and
 parliamentlive.tv's Downloading & Sharing terms. **parliament.uk returned a Cloudflare JS challenge
@@ -1640,6 +1766,19 @@ federal film and shallow-to-empty on most of what BadCode's stories are actually
   commercial exploitation with attribution. See [Open licences (UK)](#open-licences-uk--ogl-v3-and-opl-v3).
   Whether either reaches moving-image material is the open question, and it is answerable in an
   afternoon.
+  **Partly closed 2026-09-12.** Two concrete answers. (a) **UK *stills* are not a gap at all** —
+  Wikimedia Commons holds British official WWII photography tagged `PD-UKGov` (Crown copyright
+  expires 50 years from creation) at up to 5,000+ pixels: VE Day in London, air-raid damage,
+  ministers. 🟡 Amber only because the Commons `Credit` field shows the files were uploaded **from
+  IWM's own media server**, and IWM is red — copyright probably expired, *this file from this host*
+  unanswered. 🔴 And **Commons' PD tag is a US-law determination**: two files in one query set were
+  live UK copyright (a Howard Coster portrait, d.1959; a "presumably Karsh"). Read the author's
+  death date, not the tag. (b) A real OGL document page was checked end to end — The National
+  Archives' *Birth of the NHS 1948* page states in its footer *"All content is available under the
+  Open Government Licence v3.0, except where otherwise stated"*, and identifies the NHS launch
+  leaflet as `INF 2/66`, p.15. 🔴 **The blocker is ours, not theirs: OGL requires a credit line and
+  BadCode has nowhere to put one.** Worked ledger:
+  [`docs/stories/magic-money-tree/footage.md`](../stories/magic-money-tree/footage.md).
 - **Archival TV news, 1960s–2000s.** The gap between `universal_newsreels` (stops 1967) and the paid
   wires. **American Archive of Public Broadcasting** is now listed 🟡 — but it is a finding aid with
   user-borne rights assessment and US-IP restrictions, not a source of publishable files.
@@ -1689,8 +1828,11 @@ copy). Everything else in the red table is unconfirmed and marked as such.
 
 ## Status
 
-🟡 **Written 2026-08-22 from a multi-agent research sweep, and revised the same day after a critic
-pass re-ran every command and licence claim live.**
+🟡 **Written 2026-08-22 from a multi-agent research sweep, revised the same day after a critic pass
+re-ran every command and licence claim live, and revised again 2026-09-12 by the Magic Money Tree
+sourcing pass** ([corrections](#re-verified-and-corrected--2026-09-12-magic-money-tree-pass)) — which
+found the flagship green item **withdrawn from archive.org while still in its search index**, added
+the liveness rule and the free-contact-sheet technique, and opened UK stills as a real route.
 
 **68 sources as of 2026-08-22: 7 green, 27 amber, 34 red.** 🔴 **The green tier went from 12 to 7
 in that revision** — see [Re-verified and corrected](#re-verified-and-corrected--2026-08-22-critic-pass)
@@ -1702,7 +1844,9 @@ counting table rows, not by memory.)*
 **The failures clustered in licence interpretation, not in mechanics.** The download, verify and
 conform layer was re-run against the sources and came back exact — byte counts, md5s, HTTP codes,
 facet totals — and [the end-to-end runbook](#the-whole-path-one-block) had its search, metadata,
-file-selection and duration legs executed live on `gov.dod.dimoc.30172`. **The ffmpeg conform
+file-selection and duration legs executed live on `gov.dod.dimoc.30172` — **an item that has
+since been withdrawn; the 2026-09-12 pass re-pointed the runbook at `gov.fdr.25.4` and re-ran it
+there.** **The ffmpeg conform
 commands were not re-executed in this pass**; they were verified in the original sweep and are
 unchanged. What did not survive was the optimism: three green sources had never been called at all, two carried clauses aimed directly at
 political publishing, and the flagship worked example failed this page's own provenance check.

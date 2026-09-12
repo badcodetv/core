@@ -1,0 +1,340 @@
+{
+  "alternate_locations": {
+    "servers": [
+      {
+        "server": "dn721708.ca.archive.org",
+        "dir": "/0/items/gov.fdr.25.3"
+      }
+    ],
+    "workable": [
+      {
+        "server": "dn721708.ca.archive.org",
+        "dir": "/0/items/gov.fdr.25.3"
+      }
+    ]
+  },
+  "created": 1789191657,
+  "d1": "dn600304.us.archive.org",
+  "dir": "/0/items/gov.fdr.25.3",
+  "files": [
+    {
+      "name": "__ia_thumb.jpg",
+      "source": "original",
+      "mtime": "1658083235",
+      "size": "4333",
+      "md5": "c511d4f116cc479daac6994e76d73de4",
+      "crc32": "705a4f54",
+      "sha1": "727de57d8c5d11f9f4d47b5f884419ade1a67f16",
+      "format": "Item Tile",
+      "rotation": "0"
+    },
+    {
+      "name": "gov.fdr.25.3.gif",
+      "source": "derivative",
+      "format": "Animated GIF",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "2ab5f438298dcadab3b1513a20e2366c",
+      "mtime": "1282773468",
+      "size": "185916",
+      "crc32": "3912a67e",
+      "sha1": "0abc645d9166738c6ac9ade4f77dfa6d86450140"
+    },
+    {
+      "name": "gov.fdr.25.3.mpeg",
+      "source": "original",
+      "format": "MPEG2",
+      "md5": "690de18d33b8337487d789632cbd40d2",
+      "mtime": "1282773054",
+      "size": "606947871",
+      "crc32": "a0c2946d",
+      "sha1": "b9b5f565ebe674eb8176f352cf038f98b678284c",
+      "length": "918.66",
+      "height": "480",
+      "width": "640"
+    },
+    {
+      "name": "gov.fdr.25.3.mpeg_meta.txt",
+      "source": "original",
+      "format": "Metadata",
+      "md5": "9c08303e72e37ca7239165407d619039",
+      "mtime": "1282773054",
+      "size": "1459",
+      "crc32": "2d020c41",
+      "sha1": "13fe40a1c6ba05bf2cf6e597e63b1c94923a1393"
+    },
+    {
+      "name": "gov.fdr.25.3.ogv",
+      "source": "derivative",
+      "format": "Ogg Video",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "ef4a0d39a45b063322444315c09927e6",
+      "mtime": "1282774775",
+      "size": "69325181",
+      "crc32": "d3a3eccd",
+      "sha1": "edfb31cd4f56f634cd849a4ace4a127f331ea005",
+      "length": "918.69",
+      "height": "304",
+      "width": "400"
+    },
+    {
+      "name": "gov.fdr.25.3.thumbs/gov.fdr.25.3_000001.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "46d85838c51253ece2326167cc590948",
+      "mtime": "1282773173",
+      "size": "966",
+      "crc32": "d21e4a88",
+      "sha1": "e268b222f18ec4fff85fc3aa6fa58c8a2ada419b"
+    },
+    {
+      "name": "gov.fdr.25.3.thumbs/gov.fdr.25.3_000060.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "f2623f2bc5742b4b3c0c35e444a99192",
+      "mtime": "1282773181",
+      "size": "3268",
+      "crc32": "17512a6a",
+      "sha1": "ebaecc8a76d43eb6c3e3b728bdb261da8676181c"
+    },
+    {
+      "name": "gov.fdr.25.3.thumbs/gov.fdr.25.3_000120.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "b968e3e11d03242c81616472575c2142",
+      "mtime": "1282773191",
+      "size": "4283",
+      "crc32": "ba4e22a",
+      "sha1": "76206f2d4c8f2b564eb1395e99cbfb4f1e40cb89"
+    },
+    {
+      "name": "gov.fdr.25.3.thumbs/gov.fdr.25.3_000180.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "b335befc6561ee5a1f2a4c67d0e22f07",
+      "mtime": "1282773200",
+      "size": "5458",
+      "crc32": "bbfded89",
+      "sha1": "fab483a8d58471a9fd8ee7ffd3ac6a55f4188ad5"
+    },
+    {
+      "name": "gov.fdr.25.3.thumbs/gov.fdr.25.3_000240.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "765c7d6797059cd5ee56cce993f7ed53",
+      "mtime": "1282773210",
+      "size": "7398",
+      "crc32": "2b38658f",
+      "sha1": "771af1006dcbb88aae480c24cc2d80c061f2728c"
+    },
+    {
+      "name": "gov.fdr.25.3.thumbs/gov.fdr.25.3_000300.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "191d417fb3f47a38863295ce88219f18",
+      "mtime": "1282773219",
+      "size": "4341",
+      "crc32": "f4acdf1",
+      "sha1": "366fad41902a04087cfe5e03c59f00835fdd4413"
+    },
+    {
+      "name": "gov.fdr.25.3.thumbs/gov.fdr.25.3_000360.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "0a54f3bdadc3196dee9b668bdce68e82",
+      "mtime": "1282773228",
+      "size": "6106",
+      "crc32": "134dd686",
+      "sha1": "9c2382caef1118044c990e42f87493f7eb61cf57"
+    },
+    {
+      "name": "gov.fdr.25.3.thumbs/gov.fdr.25.3_000420.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "a66b6f63878666de856c07f7c5e2d4e7",
+      "mtime": "1282773238",
+      "size": "5611",
+      "crc32": "c824cb9d",
+      "sha1": "f26335fcfc7fd49cfb0e0d7529b8d1d05dd5cc8b"
+    },
+    {
+      "name": "gov.fdr.25.3.thumbs/gov.fdr.25.3_000480.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "69a443b286c5a380b82134c8aee5a392",
+      "mtime": "1282773247",
+      "size": "4001",
+      "crc32": "13ea29a8",
+      "sha1": "5d8c959b8aee4d3d82939d3d972cc5497e8e9838"
+    },
+    {
+      "name": "gov.fdr.25.3.thumbs/gov.fdr.25.3_000540.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "a6d16a8833daf8d58e6274b846417fc7",
+      "mtime": "1282773256",
+      "size": "5653",
+      "crc32": "f5c09cce",
+      "sha1": "d44dd6e666c7f65903e4f3e5ea06d291332759c9"
+    },
+    {
+      "name": "gov.fdr.25.3.thumbs/gov.fdr.25.3_000600.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "b844f0cf93a303cc931c480048a8042d",
+      "mtime": "1282773266",
+      "size": "4598",
+      "crc32": "62a40dc6",
+      "sha1": "1908dcaa0f0e3206ce5ec7beec118c602b25fc4b"
+    },
+    {
+      "name": "gov.fdr.25.3.thumbs/gov.fdr.25.3_000660.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "93164788b28ec22ec1219d09114fb54c",
+      "mtime": "1282773275",
+      "size": "7499",
+      "crc32": "b651a284",
+      "sha1": "a5a1689f6f2e2f590a3dda31693e76ce5d651c34"
+    },
+    {
+      "name": "gov.fdr.25.3.thumbs/gov.fdr.25.3_000720.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "a2a238f2ae485bf81a6bd4d15289b00a",
+      "mtime": "1282773285",
+      "size": "4270",
+      "crc32": "4c96ade",
+      "sha1": "c0b6ccd489ebff103bc2c9cc9aaacb63f0f09253"
+    },
+    {
+      "name": "gov.fdr.25.3.thumbs/gov.fdr.25.3_000780.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "b7f9b89bcc011a9b38741e0543228344",
+      "mtime": "1282773294",
+      "size": "7262",
+      "crc32": "9d3b3428",
+      "sha1": "c1d0305aaecd84bdd13d52f0b0f49bddc7e38e46"
+    },
+    {
+      "name": "gov.fdr.25.3.thumbs/gov.fdr.25.3_000840.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "54ec3ef7fdf494cd206f4e1bc91d1c65",
+      "mtime": "1282773304",
+      "size": "5846",
+      "crc32": "cda7b913",
+      "sha1": "7bef5d48923da56f7b3499b9d9e851e3a4664a31"
+    },
+    {
+      "name": "gov.fdr.25.3.thumbs/gov.fdr.25.3_000900.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "6e6846503d3189259dc9e79a22a171ce",
+      "mtime": "1282773313",
+      "size": "7152",
+      "crc32": "a6b97347",
+      "sha1": "684a0ee01d25b35291e87713c005644609391eeb"
+    },
+    {
+      "name": "gov.fdr.25.3_512kb.mp4",
+      "source": "derivative",
+      "format": "512Kb MPEG4",
+      "original": "gov.fdr.25.3.mpeg",
+      "md5": "54bb89542343f20538fcb8f5f69240bd",
+      "mtime": "1282774347",
+      "size": "66356076",
+      "crc32": "68a83ff2",
+      "sha1": "336e7b119110965182828649541705b1be6a80ca",
+      "length": "918.69",
+      "height": "240",
+      "width": "320"
+    },
+    {
+      "name": "gov.fdr.25.3_archive.torrent",
+      "source": "metadata",
+      "btih": "31bfb0911e75393c1fbd0473fc4be0ec8e5dc35f",
+      "mtime": "1664638711",
+      "size": "30457",
+      "md5": "d1e60d1435ae28eb99340acd6bf70129",
+      "crc32": "9be79c75",
+      "sha1": "fac14309049b391a55df3480196bd81405d8050e",
+      "format": "Archive BitTorrent"
+    },
+    {
+      "name": "gov.fdr.25.3_files.xml",
+      "source": "original",
+      "format": "Metadata",
+      "md5": "c16b575d033c2a12edc249bfc13e997d",
+      "summation": "md5"
+    },
+    {
+      "name": "gov.fdr.25.3_meta.xml",
+      "source": "original",
+      "format": "Metadata",
+      "mtime": "1466814688",
+      "size": "1521",
+      "md5": "38012ff4c8b5b20cb2bfd6d2d097d557",
+      "crc32": "1ea1c54a",
+      "sha1": "e85b3d985a05439caf4412268e0fd6c98fa61159"
+    }
+  ],
+  "files_count": 25,
+  "item_last_updated": 1664638711,
+  "item_size": 742936526,
+  "metadata": {
+    "identifier": "gov.fdr.25.3",
+    "creator": "FDR Presidential Library",
+    "credits": "Uploaded by Public.Resource.Org",
+    "date": "1945",
+    "description": "FDR Presidential Library<br /><br />Video 25<br /><br />Divide and Conquer (Part 3)<br /><br />Frank Capra and the War Department. Divide and Conquer Parts 1, 2, 3, 4 Public Domain Footage on 4 continuous discs, War Dept. film. Hitler needed to conquer Norway to gain air access to Great Britain. He easily conquers Norway. The Allies fight back and ultimately withdraw due to German air power. The Nazis continue into Belgium and Holland and then break through the Maginot Line. The Allies retreat at Dunkirk, the Nazis march into Paris. The Free French move into North Africa. The film ends with the hope that General de Gaulle will, with the help of the Allies, free France.<br /><br />",
+    "language": "English",
+    "licenseurl": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "mediatype": "movies",
+    "subject": "fdr.gov;public.resource.org",
+    "title": "Divide and Conquer (Part 3)",
+    "collection": [
+      "FedFlix",
+      "usgovfilms",
+      "newsandpublicaffairs"
+    ],
+    "publicdate": "2010-08-25 21:50:41",
+    "uploader": "carl@media.org",
+    "addeddate": "2010-08-25 21:50:41",
+    "backup_location": "ia903606_7"
+  },
+  "server": "dn600304.us.archive.org",
+  "servers_unavailable": true,
+  "simplelists": {
+    "solo_manifest": {
+      "solo_manifest_dn600304": {
+        "sys_changed_by": {
+          "source": "task",
+          "task_id": "5455877820"
+        },
+        "sys_last_changed": "2026-06-21 09:48:42.537098"
+      }
+    }
+  },
+  "solo": true,
+  "uniq": 2092778857,
+  "workable_servers": [
+    "dn600304.us.archive.org"
+  ]
+}

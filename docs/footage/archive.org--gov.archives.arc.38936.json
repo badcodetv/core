@@ -1,0 +1,283 @@
+{
+  "alternate_locations": {
+    "servers": [
+      {
+        "server": "dn721307.ca.archive.org",
+        "dir": "/0/items/gov.archives.arc.38936"
+      }
+    ],
+    "workable": [
+      {
+        "server": "dn721307.ca.archive.org",
+        "dir": "/0/items/gov.archives.arc.38936"
+      }
+    ]
+  },
+  "created": 1789211055,
+  "d1": "dn800309.us.archive.org",
+  "dir": "/0/items/gov.archives.arc.38936",
+  "files": [
+    {
+      "name": "__ia_thumb.jpg",
+      "source": "original",
+      "mtime": "1711259682",
+      "size": "9783",
+      "md5": "b02122c58d7f721c127077fd1d08586a",
+      "crc32": "0f8c58ff",
+      "sha1": "30b55663f78e2732064c216ded0e9336184579fb",
+      "format": "Item Tile"
+    },
+    {
+      "name": "gov.archives.arc.38936.gif",
+      "source": "derivative",
+      "format": "Animated GIF",
+      "original": "gov.archives.arc.38936.mpeg",
+      "mtime": "1301019146",
+      "size": "142595",
+      "md5": "266d64e8157ac2a3c183950db4e5193c",
+      "crc32": "2a783223",
+      "sha1": "70dddbcbe0cbd5fc9a5e96b1f2e245fcd45f85c5"
+    },
+    {
+      "name": "gov.archives.arc.38936.mpeg",
+      "source": "original",
+      "format": "MPEG2",
+      "mtime": "1301018465",
+      "size": "228617773",
+      "md5": "10d8b9916e434a5fffae91de0b083dad",
+      "crc32": "bc622d05",
+      "sha1": "5b85134b5acc23ee8904acd2b1d2327aad43a7c5",
+      "length": "281.14",
+      "height": "480",
+      "width": "640"
+    },
+    {
+      "name": "gov.archives.arc.38936.mpeg.idx",
+      "source": "derivative",
+      "format": "Video Index",
+      "original": "gov.archives.arc.38936.mpeg",
+      "mtime": "1301018945",
+      "size": "231856",
+      "md5": "f194cf1cde40b1e36543824e7abbeca0",
+      "crc32": "2ee9018e",
+      "sha1": "1f2a66aa6a9c11c10b4ecff46e97534786e0f258"
+    },
+    {
+      "name": "gov.archives.arc.38936.mpeg_meta.txt",
+      "source": "original",
+      "format": "Metadata",
+      "mtime": "1301018466",
+      "size": "1242",
+      "md5": "42ed1a36d916a2261882cbcdda1e387d",
+      "crc32": "ca6bd23e",
+      "sha1": "cf3e8ce4ea50f93e51b14bbbda36b507178a9b0c"
+    },
+    {
+      "name": "gov.archives.arc.38936.ogv",
+      "source": "derivative",
+      "format": "Ogg Video",
+      "original": "gov.archives.arc.38936.mpeg",
+      "mtime": "1301020039",
+      "size": "21456459",
+      "md5": "b090156b79f2dd747e6b8a6080616d9c",
+      "crc32": "109bc289",
+      "sha1": "38f048087864ebc9dcaa605353b3d830583a06f4",
+      "length": "281.24",
+      "height": "304",
+      "width": "400"
+    },
+    {
+      "name": "gov.archives.arc.38936.thumbs/gov.archives.arc.38936_000001.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.38936.mpeg",
+      "mtime": "1301018989",
+      "size": "2801",
+      "md5": "fe88bc3be89babd66cafb68a32373d1d",
+      "crc32": "ae53bc21",
+      "sha1": "e0bfb12e26231ec11fccb54175cacb8c6d207dc6"
+    },
+    {
+      "name": "gov.archives.arc.38936.thumbs/gov.archives.arc.38936_000027.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.38936.mpeg",
+      "mtime": "1301019001",
+      "size": "8005",
+      "md5": "27f6fcbd0312af6dcdd7967f5e52e0ea",
+      "crc32": "2e049f5e",
+      "sha1": "4ec676386385e560ee49d47a028ad3ab46119c39"
+    },
+    {
+      "name": "gov.archives.arc.38936.thumbs/gov.archives.arc.38936_000057.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.38936.mpeg",
+      "mtime": "1301019013",
+      "size": "3948",
+      "md5": "0539ea49ed4c58f81bd6d03bfd9767f7",
+      "crc32": "265566e5",
+      "sha1": "ee7009f078edd32acc0e416693058ccd1f80ddf7"
+    },
+    {
+      "name": "gov.archives.arc.38936.thumbs/gov.archives.arc.38936_000087.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.38936.mpeg",
+      "mtime": "1301019027",
+      "size": "5839",
+      "md5": "f9b4d624ad986636b794c39a6a8835d4",
+      "crc32": "c5316788",
+      "sha1": "9682196491bac2d5d0375cacd3d26f673325c8c7"
+    },
+    {
+      "name": "gov.archives.arc.38936.thumbs/gov.archives.arc.38936_000117.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.38936.mpeg",
+      "mtime": "1301019039",
+      "size": "4228",
+      "md5": "f8480fc5e6fc80abb0554aeb6b2f90a7",
+      "crc32": "4c5cefa",
+      "sha1": "a329b1acfea553e90a05cd32bea2bc88430b3c8b"
+    },
+    {
+      "name": "gov.archives.arc.38936.thumbs/gov.archives.arc.38936_000147.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.38936.mpeg",
+      "mtime": "1301019058",
+      "size": "4204",
+      "md5": "30bd3b7f389e781d3046e24002803940",
+      "crc32": "744aa696",
+      "sha1": "9a3239fad6111647f741b805ec2ab23d3ab29021"
+    },
+    {
+      "name": "gov.archives.arc.38936.thumbs/gov.archives.arc.38936_000177.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.38936.mpeg",
+      "mtime": "1301019069",
+      "size": "5384",
+      "md5": "40c4898b7086af912998b282d3f2652b",
+      "crc32": "fba2a7",
+      "sha1": "cfe8a49bd8e9bebec2f1e49bafa79338255fd620"
+    },
+    {
+      "name": "gov.archives.arc.38936.thumbs/gov.archives.arc.38936_000207.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.38936.mpeg",
+      "mtime": "1301019077",
+      "size": "5392",
+      "md5": "0847144641af17ebc2d7ef760219ec65",
+      "crc32": "2ec6586",
+      "sha1": "157ad4805f293b49caa462adba714a1bd14f4081"
+    },
+    {
+      "name": "gov.archives.arc.38936.thumbs/gov.archives.arc.38936_000237.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.38936.mpeg",
+      "mtime": "1301019080",
+      "size": "5105",
+      "md5": "ade8c03717c23ed62321255fc7a559f3",
+      "crc32": "a1f27526",
+      "sha1": "f6003309b03c5f8216058bcbbcd3224a8975a3f7"
+    },
+    {
+      "name": "gov.archives.arc.38936.thumbs/gov.archives.arc.38936_000267.jpg",
+      "source": "derivative",
+      "format": "Thumbnail",
+      "original": "gov.archives.arc.38936.mpeg",
+      "mtime": "1301019083",
+      "size": "8086",
+      "md5": "7816afc134e3844cd072ec240de83719",
+      "crc32": "bc23b9c0",
+      "sha1": "c1e25b4cef28d628d4fd8fb3da7910c6b0260ea8"
+    },
+    {
+      "name": "gov.archives.arc.38936_512kb.mp4",
+      "source": "derivative",
+      "format": "512Kb MPEG4",
+      "original": "gov.archives.arc.38936.mpeg",
+      "mtime": "1301019657",
+      "size": "21407196",
+      "md5": "371b3a025379112d6a2821754c8588ed",
+      "crc32": "0efc425c",
+      "sha1": "6b870eb5d85f834403962e91b6e883fb8b19f267",
+      "length": "281.24",
+      "height": "240",
+      "width": "320"
+    },
+    {
+      "name": "gov.archives.arc.38936_archive.torrent",
+      "source": "metadata",
+      "btih": "95814d40fc26b12fd373a85228c25cbebd0cf471",
+      "mtime": "1711259689",
+      "size": "12836",
+      "md5": "7d437af51282d49acc995bc378850935",
+      "crc32": "2d70a34e",
+      "sha1": "124cbb5072c8985bbe1e2ea560c2f7c5e0e3a267",
+      "format": "Archive BitTorrent"
+    },
+    {
+      "name": "gov.archives.arc.38936_files.xml",
+      "source": "original",
+      "format": "Metadata",
+      "md5": "7e9e401c1ab68ca3998100c76311018b",
+      "summation": "md5"
+    },
+    {
+      "name": "gov.archives.arc.38936_meta.xml",
+      "source": "original",
+      "format": "Metadata",
+      "mtime": "1467014727",
+      "size": "1263",
+      "md5": "96fae3a457ed91c846b6c98fd2ed99a9",
+      "crc32": "bc2c9315",
+      "sha1": "24238f64e9ba0a27c4e8d26aa4bc4859fbdd9ba8"
+    }
+  ],
+  "files_count": 20,
+  "item_last_updated": 1711259690,
+  "item_size": 271933995,
+  "metadata": {
+    "identifier": "gov.archives.arc.38936",
+    "creator": "National Archives and Records Administration",
+    "credits": "Uploaded by Public.Resource.Org",
+    "date": "1945",
+    "description": "National Archives and Records Administration - ARC 38936, LI 208-UN-29A - THE WAR ENDS IN EUROPE - DVD Copied by J. Williams.  Series: Motion Picture Films from \"United News\" Newsreels, compiled 1942 - 1945.  Crowds in Times Square celebrate news of V-E Day and people pray in churches. Pres. Truman announces the German surrender. U.S. and Russian troops meet at the Elbe. Shows Gen. Emil Reinhardt. Shows scenes of Nazi headquarters in Nuremberg.",
+    "language": "English",
+    "licenseurl": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "mediatype": "movies",
+    "subject": "archives.gov;public.resource.org",
+    "title": "THE WAR ENDS IN EUROPE",
+    "collection": [
+      "FedFlix",
+      "usgovfilms",
+      "newsandpublicaffairs"
+    ],
+    "publicdate": "2011-03-25 02:00:10",
+    "uploader": "carl@media.org",
+    "addeddate": "2011-03-25 02:00:10",
+    "backup_location": "ia903609_11"
+  },
+  "server": "dn800309.us.archive.org",
+  "simplelists": {
+    "solo_manifest": {
+      "solo_manifest_dn800309": {
+        "sys_changed_by": {
+          "source": "task",
+          "task_id": "5436475684"
+        },
+        "sys_last_changed": "2026-06-13 19:00:01.363137"
+      }
+    }
+  },
+  "solo": true,
+  "uniq": 1063821496,
+  "workable_servers": [
+    "dn800309.us.archive.org"
+  ]
+}
