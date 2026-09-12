@@ -645,6 +645,34 @@ so it gets beats.
 
 **Register: band D0**, and it is the last D0 in the film — the drain starts on the red.
 
+### 🔴 Added 2026-09-12 — the megacity opening, and why the cut felt boring
+
+**Kai, watching the assembly in Premiere:** cut 3 is boring in a way the cuts before it are not.
+The cause is structural and it is **two separate removals that stacked**, months apart, neither
+wrong on its own:
+
+- **Canon Scene 5** (the handover ladder) is deferred — §2c, "Deferred, not cut".
+- **Canon Scene 6** is a *split register*, half street-level humans and half the thing in the
+  basement (`story.md:668`). The cut as built kept only the basement half.
+
+So the film goes: a command typed in a world that looks fine → black → `2032` → a vast empty hall.
+**Every human on Earth disappears between two cuts and we never see the world that lost them.**
+
+**Five new opening beats, inside cut 3 — not a new cut, so this table does not renumber.**
+`2032` card (unchanged) → **N1 the wall** (600 m, long lens, the city stacks to every edge) →
+**N2 straight down** → **N3 the crossing** (30 m, thousands of people) → **N4 one person** →
+**N5 the green board nobody looks up at** → the existing C1–C5 descent into the hall.
+
+Two rhymes make it worth the money: it is the **only full vast frame in the film** (every other
+monumental frame — orbital hall, machine hall, `vantage` — is empty, so this one makes them
+subtractions); and N5's board is built to **this cut's own console recipe**, so the sequence runs
+**green above the crowd → red at the desk**.
+
+**Prompts and the grade spread: [`scenes/still-fine.md`](./scenes/still-fine.md).** That sheet is
+also the first run of **Variety mode** (`badcode-art-direction`), with **grade as the declared
+variable** — because running this band ladder end to end shows there is **no sunshine anywhere in
+it until the final scene**. Whichever grade wins gets a properly named band in §1.
+
 ### 🔴 Added 2026-08-23 — the self-interest seed (**the one paid change in the whole pass**)
 
 `story.md`'s own device list says *"the warning is self-interested, which is what makes it
