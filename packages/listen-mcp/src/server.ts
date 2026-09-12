@@ -14,7 +14,9 @@ import { dirname, join, resolve as resolvePath } from 'node:path'
 import { probe, releaseLock, type Resolution } from '@badcode/flow-mcp/channel'
 import { ok, fail } from '@badcode/flow-mcp/result'
 import { NAME, VERSION } from './version'
-import { StudioClient, defaultModelName } from './studio-client'
+import { StudioClient, StudioTransport, defaultModelName } from './studio-client'
+import { DEFAULT_API_MODEL, GeminiApi } from './gemini-client'
+import type { Transport } from './transport'
 import { launchCommand, resolveListenChannel } from './channel'
 import { listLenses } from './lens'
 import { measure } from './measure'
@@ -26,6 +28,18 @@ const LOG_DIR = join(REPO_ROOT, 'docs', 'listening', 'log')
 const MEASURE_SCRIPT = join(REPO_ROOT, 'scripts', 'audio-measure.py')
 
 const DISCONNECTED_RE = /Target closed|browser has been closed|Target page, context or browser has been closed|ECONNRESET/i
+
+/**
+ * Which transport a describe uses.
+ *
+ * 🔴 Default is `api`. The browser cannot run a generation at all — AI Studio returns 403 to a
+ * CDP-attached browser (docs/listening/automation.md Trap 4b) — so defaulting to it would mean
+ * every unqualified describe failing. `studio` remains available for the human-assisted path:
+ * it composes the chat and stops at Run.
+ */
+type TransportName = 'api' | 'studio'
+const apiKey = () => process.env.GEMINI_API_KEY?.trim() ?? ''
+const apiModelName = () => process.env.LISTEN_API_MODEL?.trim() || DEFAULT_API_MODEL
 
 let channel: Resolution | null = null
 let client: StudioClient | null = null
@@ -101,7 +115,10 @@ server.registerTool(
         browserUp,
         signedIn,
         lenses: listLenses(LENS_DIR),
-        defaultModel: defaultModelName(),
+        transport: apiKey() ? 'api' : 'studio (no GEMINI_API_KEY set)',
+        apiKeySet: !!apiKey(),
+        apiModel: apiModelName(),
+        studioModel: defaultModelName(),
         ...(browserUp ? {} : { hint: notRunningHint(ch) }),
       })
     } catch (err) {
@@ -136,25 +153,43 @@ server.registerTool(
       start: z.union([z.string(), z.number()]).optional().describe('Seconds or M:SS, source time.'),
       end: z.union([z.string(), z.number()]).optional(),
       question: z.string().optional().describe('Appended verbatim after the checklist.'),
-      model: z.string().optional().describe('Visible model-menu name; default Gemini 3.1 Pro.'),
+      model: z
+        .string()
+        .optional()
+        .describe(`Model id for the api transport (default ${DEFAULT_API_MODEL}), or the visible menu name for studio.`),
+      transport: z
+        .enum(['api', 'studio'])
+        .optional()
+        .describe(
+          'Default "api" — the Gemini API, fully automated. "studio" composes an AI Studio chat and ' +
+            'STOPS at Run for a human: the web page refuses CDP-driven generations (403).',
+        ),
       sunoBoxes: SunoBoxesSchema.optional(),
     },
   },
   async (args) => {
     const run = async () => {
-      const ch = await currentChannel()
-      if (!(await probe(ch.port))) return fail('NOT_RUNNING', 'the listening browser is not up', notRunningHint(ch))
+      const which: TransportName = (args.transport as TransportName | undefined) ?? 'api'
+      if (which === 'api' && !apiKey()) {
+        return fail('NO_API_KEY', 'GEMINI_API_KEY is not set', 'Add `export GEMINI_API_KEY=…` to .env, or pass transport "studio".')
+      }
+      if (which === 'studio') {
+        const ch = await currentChannel()
+        if (!(await probe(ch.port))) return fail('NOT_RUNNING', 'the listening browser is not up', notRunningHint(ch))
+      }
       try {
-        const result = await withStudio((studio) =>
-          describe(args, {
-            studio,
-            defaultModel: defaultModelName(),
-            lensDir: LENS_DIR,
-            logDir: LOG_DIR,
-            repoRoot: REPO_ROOT,
-            measure: (wav) => measure(wav, { script: MEASURE_SCRIPT }),
-          }),
-        )
+        const deps = (transport: Transport, model: string) => ({
+          transport,
+          defaultModel: model,
+          lensDir: LENS_DIR,
+          logDir: LOG_DIR,
+          repoRoot: REPO_ROOT,
+          measure: (wav: string) => measure(wav, { script: MEASURE_SCRIPT }),
+        })
+        const result =
+          which === 'api'
+            ? await describe(args, deps(new GeminiApi(apiKey()), apiModelName()))
+            : await withStudio((c) => describe(args, deps(new StudioTransport(c), defaultModelName())))
         return ok(result)
       } catch (err) {
         const msg = err instanceof Error ? err.message : String(err)

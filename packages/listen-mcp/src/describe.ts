@@ -16,10 +16,11 @@ import { buildPrompt } from './prompt'
 import { remapTimestamps } from './remap'
 import { rangeLabel, writeLedger as realWriteLedger, type LedgerRecord } from './ledger'
 import type { DescribeArgs, DescribeResult, Measurements } from './types'
-import type { Studio } from './studio-client'
+import type { Transport } from './transport'
 
 export interface DescribeDeps {
-  studio: Studio
+  /** Where the text comes from: the Gemini API, or a human-assisted browser. */
+  transport: Transport
   defaultModel: string
   lensDir: string
   logDir: string
@@ -28,8 +29,6 @@ export interface DescribeDeps {
   measure: (wavPath: string) => Promise<Measurements>
   writeLedger?: typeof realWriteLedger
   now?: () => Date
-  /** Reply budget. A long track on a Pro model is slow; default 8 minutes. */
-  replyTimeoutMs?: number
 }
 
 export async function describe(args: DescribeArgs, deps: DescribeDeps): Promise<DescribeResult> {
@@ -56,13 +55,11 @@ export async function describe(args: DescribeArgs, deps: DescribeDeps): Promise<
       sunoBoxes: args.sunoBoxes,
     })
 
-    await deps.studio.ensureSignedIn()
-    await deps.studio.newChat()
-    const modelShown = await deps.studio.selectModel(modelRequested)
-    await deps.studio.disableSearchGrounding()
-    await deps.studio.attachAudio(prep.mp3Path)
-    await deps.studio.submit(instruction)
-    const raw = await deps.studio.waitForReply(deps.replyTimeoutMs ?? 8 * 60_000)
+    const { text: raw, modelShown } = await deps.transport.run({
+      prompt: instruction,
+      audioPath: prep.mp3Path,
+      model: modelRequested,
+    })
 
     // Gemini times a cut clip from the clip's own zero. Shift it back so a timestamp in the
     // answer means the same thing as a timestamp in the source file.

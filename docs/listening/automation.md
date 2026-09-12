@@ -114,6 +114,45 @@ the next test is a human typing a prompt by hand (in this window, and in a norma
   the channel-2 window; the likely fix is a branded Google Chrome for the listening channel.
   Do NOT spoof browser headers to get around it.
 
+### Trap 4b — 🔴 SETTLED 2026-09-12: AI Studio refuses generations from a CDP-attached browser
+
+Branded Google Chrome fixed the **hand-typed** case and nothing else. Kai typed `hello` in the
+channel-2 window at 14:26 and Gemini answered. Driven from code in **that same window**, every
+generation still returns 403 `The caller does not have permission` on
+`MakerSuiteService/GenerateContent`.
+
+**Eliminated by measurement, one variable at a time (all on branded Chrome 153.0.8010.36):**
+
+| Suspect | Test | Result |
+|---|---|---|
+| The model | Gemini 3.1 Pro, text only | 403 in 5 s |
+| The model | Gemini 3.8 Flash, text only | 403 in 4.6 s |
+| Audio / file size | text only, no attachment | 403 — so not audio |
+| Prompt size | 30 characters | 403 |
+| Temporary chat | on **and** off | 403 both |
+| Search grounding | on **and** off | 403 both |
+| A tab we created | `ctx.newPage()` | 403 |
+| **A tab the HUMAN opened** | drove Kai's own tab, no navigation | **403** |
+| Chrome brand | `navigator.userAgentData.brands` → `Google Chrome 153` | genuine |
+| The obvious automation flag | `navigator.webdriver` | **false** — the page cannot see it |
+
+So it is not WSL, not the Chrome build, not the profile, not the tab, not the flags, not the model
+and not audio. The one remaining difference between a working run and a failing one is that **a CDP
+client is attached**. The page also calls `waa-pa.clients6.google.com/$rpc/…Waa/Create` — Web
+Application Attestation, Google's environment-integrity check — which is a plausible mechanism,
+though we have not proven that is the specific gate.
+
+🔴 **We do not engineer around this.** Spoofing headers, patching `navigator.webdriver`, or
+detaching the debugger to slip a click past an integrity check are all circumvention of a control
+the site is deliberately applying. The sanctioned programmatic route is the **Gemini API**, which
+exists for exactly this and needs no browser.
+
+**Consequence for the listen server:** the browser transport (`studio-client.ts`) is a
+**human-assisted** path only — it can compose the prompt and a human presses Run. Automated
+describes need an API transport. Everything else in the server is transport-independent: the lens,
+the prompt composer, the measurements, the timestamp remap and the ledger all stay exactly as they
+are. See `design/2026-09-12-listening-transport.md`.
+
 ### Trap 5 — a first-use media dialog swallows the first upload
 
 The first file ever attached on an account opens *"Start creating with media in Google AI Studio"*
@@ -143,6 +182,9 @@ Navigating the tab to the new-chat URL does **not** start a new chat — the old
 
 ## Revision log
 
+- **2026-09-12 (later)** — Trap 4b: the 403 is the CDP attachment, not the browser. Branded Chrome
+  fixed hand-typing only. Ten variables eliminated by measurement, including driving the human's own
+  tab. The browser transport is human-assisted only; automated describes need the API.
 - **2026-09-12** — the map is encoded in `studio-dom.ts` and driven by `studio-client.ts`;
   `listen_status` / `listen_describe` are live in `.mcp.json`; `flow-chrome.sh` now gives branded
   Chrome to the listening channel ONLY (other channels keep Playwright's Chromium, so Flow's and

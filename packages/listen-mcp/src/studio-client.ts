@@ -18,6 +18,7 @@ import { writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { tmpdir } from 'node:os'
 import { DEFAULT_MODEL, HOST, NEW_CHAT_URL, PAGE_SIGNS, SEL, SIGNED_OUT_PATH, TAB_MARK, TEXT } from './studio-dom'
+import type { DescribeRequest, DescribeResponse, Transport } from './transport'
 
 export type SignedIn = 'yes' | 'no' | 'unknown'
 export type PageState = 'ok' | 'signed-out' | 'rate-limited' | 'error'
@@ -29,6 +30,7 @@ export interface Studio {
   selectModel(name: string): Promise<string>
   disableSearchGrounding(): Promise<void>
   attachAudio(mp3Path: string): Promise<void>
+  fillPrompt(prompt: string): Promise<void>
   submit(prompt: string): Promise<void>
   waitForReply(timeoutMs: number): Promise<string>
 }
@@ -223,10 +225,15 @@ export class StudioClient implements Studio {
     }
   }
 
-  async submit(prompt: string): Promise<void> {
+  /** Fill the prompt and leave Run untouched — the browser path stops here for a human. */
+  async fillPrompt(prompt: string): Promise<void> {
     const box = this.page.locator(SEL.promptBox).first()
     await box.click()
     await box.fill(prompt)
+  }
+
+  async submit(prompt: string): Promise<void> {
+    await this.fillPrompt(prompt)
     const run = this.page.locator(SEL.runButton).first()
     const deadline = Date.now() + 15_000
     while ((await run.getAttribute('aria-disabled')) === 'true') {
@@ -281,3 +288,35 @@ export class StudioClient implements Studio {
 
 export const defaultModelName = (env: NodeJS.ProcessEnv = process.env): string =>
   env.LISTEN_MODEL?.trim() || DEFAULT_MODEL
+
+/**
+ * The browser as a Transport.
+ *
+ * 🔴 HUMAN-ASSISTED ONLY. AI Studio refuses every generation from a CDP-attached browser
+ * (`docs/listening/automation.md` Trap 4b), so this composes the chat — new Temporary chat, model
+ * picked, grounding off, audio attached, prompt filled — and then a HUMAN presses Run. It throws
+ * with that instruction rather than pretending, because a silent 403 that reads like a timeout is
+ * the exact failure this package exists to stop.
+ *
+ * Kept because composing the chat by hand is the tedious part, and because the DOM map is real
+ * work that should not rot. Automated describes use `GeminiApi`.
+ */
+export class StudioTransport implements Transport {
+  readonly name = 'studio'
+  constructor(private readonly client: StudioClient) {}
+
+  async run(req: DescribeRequest): Promise<DescribeResponse> {
+    await this.client.ensureSignedIn()
+    await this.client.newChat()
+    const modelShown = await this.client.selectModel(req.model)
+    await this.client.disableSearchGrounding()
+    if (req.audioPath) await this.client.attachAudio(req.audioPath)
+    await this.client.fillPrompt(req.prompt)
+    throw new Error(
+      `HUMAN_RUN_REQUIRED: the chat is composed and loaded on ${modelShown} — press Run in the ` +
+        `listening window, then paste the answer back. AI Studio refuses generations driven over ` +
+        `CDP (403, Trap 4b), and we do not work around an integrity check. For an automated ` +
+        `describe, use the api transport.`,
+    )
+  }
+}
