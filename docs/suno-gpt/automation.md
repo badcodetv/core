@@ -205,22 +205,34 @@ This confirms at the DOM level what
 gets the check for free: compare the source length against `textarea.value.length` after filling,
 and read Suno's own `n/1000` counter as a second opinion.
 
-🔑 **But the cap's real victim is the box automation never touched.** Measured 2026-09-12 across
-**33 camping lanes and every GPOM narration box**: not one was ever over the cap — the highest sit
-at 994, 983 and 997, which is three characters of headroom on the last. **Every box we paste from a
-sheet has been fine.** The one real violation was **grown by hand in the browser**, fusing clauses
-from several lanes into 1,186 characters; its drum mechanics were at the tail, so a request for
-174 BPM dark drum and bass arrived as **117 BPM indie breakbeat**, and nobody could hear why.
+🔑 **But the cap's real victim is the box automation never touched.** Measured 2026-09-12, twice
+and independently, across **the 33 camping lanes (highest 980, `angryvoice`; `modrb` 899), the
+accepted `camping.md` box (997) and every GPOM narration box (highest 994)**: **not one was ever
+over the cap.** Every box we have ever pasted from a sheet has been fine, and several sat within
+single digits of the limit.
+
+The one real violation is a box that **matches no sheet we can find**: The M3 Lane's Style box
+reads **1,186 characters** on its song page, the lane it descends from is 899, and it carries
+clauses from several other lanes. Its drum mechanics were at the tail, so a request for 174 BPM
+dark drum and bass arrived as **117 BPM indie breakbeat** — and nobody could hear why, because the
+meters called the tempo but never the cause.
+
+⚠️ **How that box came to exist is inference, not observation.** Growing it by hand in the create
+page fits the arithmetic and is the likeliest story, but nobody witnessed it, and a deleted sheet
+or an earlier Remix would fit too. The rule below stands on what was measured — a box from outside
+any sheet was the only one truncated — and should not be re-argued from the mechanism.
 
 So the rule is not "keep sheets short". It is:
 
 1. **Measure the sheet** — `python3 scripts/suno/measure-boxes.py <sheet.md>` before a paid round.
-2. 🔴 **Paste from the sheet; never type into the Style box.** A box typed into the browser is a
-   box nobody measured, and it is the only kind that has ever been truncated.
+2. 🔴 **Paste from the sheet; never type into the Style box.** A box that came from outside a sheet
+   is a box nobody measured, and it is the only kind that has ever been truncated.
 3. If a box must grow by hand, put the growth back in the sheet and measure it there.
 
-⚠️ **`Variety` above Off rewrites the Style box too** (§9), so a measured box is not a guarantee
-about what Suno finally read — only about what we sent.
+🔑 **A measured box is evidence about what we SENT, and never about what Suno READ.** `Variety`
+above Off rewrites the Style box outright (§9), and nothing tells you it happened. That gap is the
+whole reason the listening diff works: it compares the audio against the boxes rather than trusting
+either on its own.
 
 
 ### Trap 6 — the right-hand pane is shared
