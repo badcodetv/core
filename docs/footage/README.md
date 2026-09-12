@@ -31,7 +31,11 @@ there before adding a row.
 | `NARA - 541917` (Commons) | Wikimedia Commons · NARA | 🟡 | "Public domain" + NARA credit — **but its own description says *"part of the New York Times Paris Bureau Collection"***. Custody ≠ authorship | unknown | MMT sc.02 — first mass air raid on London, 7 Sep 1940. **Held back** | 2026-09-12 |
 | `INF 2/66` (TNA) | nationalarchives.gov.uk | 🟢 | **OGL v3**, stated in the page footer; 1948 Crown publication | ✅ *"Contains public sector information licensed under the Open Government Licence v3.0."* | MMT sc.09 — the NHS launch leaflet, 1837×2302. **On disk.** 🔴 It is the *Scotland* printing | 2026-09-12 |
 | `MH 55/965` (TNA) | nationalarchives.gov.uk | 🟢 | **OGL v3**, same footer | ✅ same OGL line | MMT sc.12 — the "no fairy wand was waved" pamphlet. 🔴 Published image is only ~900 px | 2026-09-12 |
-| IWM-sourced `PD-UKGov` stills (Commons) | Wikimedia Commons · **files uploaded from `media.iwm.org.uk`** | 🟡 | Commons says "Public domain" (Crown copyright expired 50 yrs from creation). **The file came off IWM's server, and IWM's free tier bans campaigning use** | none claimed | MMT sc.02, 07 **and** 10 — VE Day London, air-raid damage, prefab housing. 🔴 **One Kai ruling covers the class** | 2026-09-12 |
+| `HU 49414` (Commons) | Wikimedia Commons · file from `media.iwm.org.uk` | 🟢 | `PD-UKGov` — Crown copyright expired 50 yrs from creation; `AttributionRequired: false`. ✅ **Class cleared by Kai 2026-09-12.** Commons notes an *"anonymous American photographer"*, so it may not be Crown at all | none | MMT sc.07 — girls with Union Jacks in Battersea rubble, 5335×3941. **On disk** | 2026-09-12 |
+| `TR 2876` (Commons) | Wikimedia Commons · file from IWM | 🟢 | same basis | none | MMT sc.07 — **colour** VE Day crowd, Whitehall, in front of the Ministry of Health, 2480×1965. **On disk** | 2026-09-12 |
+| `HU 41808` (Commons) | Wikimedia Commons · file from IWM | 🟢 | same basis | none | MMT sc.07 — VE Day celebrations, 2480×1768. **On disk** | 2026-09-12 |
+| `HU 36188` (Commons) | Wikimedia Commons · file from IWM | 🟢 | same basis | none | MMT sc.02 — bus in a bomb crater, Balham, Oct 1940, 5163×4071. **On disk** | 2026-09-12 |
+| `HU 36157` (Commons) | Wikimedia Commons · file from IWM | 🟢 | same basis | none | MMT sc.02 — bomb damage, London, 1300×950. **On disk** | 2026-09-12 |
 
 🔴 **Two traps this table already caught.** *"NARA"* in a credit is **not** automatically a US
 federal work — `541917` is a donated *New York Times* photograph in NARA custody, and custody is not
@@ -58,6 +62,11 @@ identifier **verbatim** in the filename: it is the only durable link back to the
 | magic-money-tree | `s01-dunkirk` | `gov.fdr.25.4.mpeg` | 369,576,027 | `048f57d06d8267265f28b9ed6c33a5530083f98c74081689de668f91104a2a1f` |
 | magic-money-tree | `s07-victory` | `NARA-531280-ve-day.tif` | 8,439,281 | `c327a0276228814e407c8a3f35fc94f24a69ef65ddbd22aeaccfade87743fbb8` |
 | magic-money-tree | `s09-nhs-opens` | `INF-2-66-02-NHS-diagram-leaflet.jpg` | 999,844 | `e3bc369b9d3d08f7f3c837f33765683c25df01fa90a8cacd85d104312bab011d` |
+| magic-money-tree | `s07-victory` | `HU49414-battersea-girls-rubble.jpg` | 5,462,370 | `169dfadaf7aeba11e9a7251319df8d23cf95867e217c6ffc38ba43b54923afeb` |
+| magic-money-tree | `s07-victory` | `TR2876-crowd-ministry-of-health.jpg` | 2,644,032 | `20e2f0b29f039961e19cd6e89fd6cd40e19a87a0708cd049906017c989bca6ad` |
+| magic-money-tree | `s07-victory` | `HU41808-ve-day-celebrations.jpg` | 1,252,224 | `02a33bdfde045cb2548c869d473eba33a2af965e44b3e5dd3dc4337bbbf474a9` |
+| magic-money-tree | `s02-home-to-what` | `HU36188-balham-bus-crater.jpg` | 6,076,980 | `a7993ee3bc65bd6a0c178c8a6b1552fe298116fcabd89b78775f16dbd534956c` |
+| magic-money-tree | `s02-home-to-what` | `HU36157-bomb-damage-london.jpg` | 357,242 | `b0f4ea6320a9b5688e4c10129da074f0ac7a5a87025461f931251162e0f149dd` |
 
 ## Per-story ledgers
 

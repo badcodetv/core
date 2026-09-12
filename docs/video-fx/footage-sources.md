@@ -1762,6 +1762,7 @@ someone actually made the call in the research sweep and read the response.
 | Counts as of 2026-08-22 | Re-counted 2026-09-12: `gov.archives.arc.*` **2,108** (was 2,107), `gov.dod.dimoc.*` **917**, `universal_newsreels` **611**, `gov.fdr.*` **154** | Counts hold; **reachability does not** — see the sampling above |
 | Universal Newsreel's PD basis was asserted but never quoted | IA's collection record, read verbatim: *"Universal City Studios gifted Universal Newsreel to the American people, put the newsreels into the public domain, and gave film materials to the National Archives in 1976."* | Quote captured. ⚠️ **Read on archive.org, not on a NARA page** — and every item's `uploader` is a personal address (`skipe@mindspring.com`), so the basis is **collection-level, not uploader-level** |
 | OGL v3 wording | Re-fetched live: *"copy, publish, distribute and transmit"*, *"adapt"*, *"exploit the Information commercially and non-commercially"*; attribution *"Contains public sector information licensed under the Open Government Licence v3.0."* | Confirmed unchanged. ✅ **Unblocked later the same day** — Kai ruled that credits go in the video, so an attribution obligation no longer downgrades a source. OGL is a usable route for video |
+| UK official WWII **stills** are unusable because the Commons files came off IWM's server | Kai ruled 2026-09-12: **use them.** *"If copyright has expired, then that's great."* Crown copyright expired 50 years from creation; we take the file from Commons, never from IWM, so IWM's terms were never accepted; Commons records `AttributionRequired: false` | ✅ **Cleared as a class.** Five stills sourced the same day, two over 5,000 px, one in colour. 🔴 The residual risk is **not** copyright — they are identifiable real people, and what a cut implies about them is the [risk no licence closes](#-the-one-risk-a-licence-check-cannot-close) |
 | UK is "a paid line item" | **For film, yes. For stills, no.** Wikimedia Commons, licence-filtered live, returns a deep set of British WWII photographs tagged `PD-UKGov` (Crown copyright expired 50 years from creation) — VE Day in London at **5335×3941**, air-raid damage at **5163×4071** | **New: UK official WWII photography is a real stills route.** 🟡 Amber, not green — the Commons `Credit` field shows the files were **lifted from `media.iwm.org.uk`**, and IWM is red. Copyright probably expired; *this file from this host* is unanswered |
 | Commons "Public domain" can be trusted once `LicenseShortName` is filtered | Two rejects found in one query set: `Aneurin_Bevan_(1943).jpg` — photographer **Howard Coster, d. 1959**, so **UK copyright to 2029**, and the Commons page itself carries a third-party-claim warning; `Person_attlee2.jpg` — artist field reads **"Presumably Yousuf Karsh"** (d. 2002) with a fan-site credit | 🔴 **New trap: Commons' PD tag is a US-law determination.** For a British subject and a British audience, read the **author and their death date**, not the tag. `AttributionRequired: false` does not mean the work is free here |
 
@@ -1843,9 +1844,11 @@ federal film and shallow-to-empty on most of what BadCode's stories are actually
   **Partly closed 2026-09-12.** Two concrete answers. (a) **UK *stills* are not a gap at all** —
   Wikimedia Commons holds British official WWII photography tagged `PD-UKGov` (Crown copyright
   expires 50 years from creation) at up to 5,000+ pixels: VE Day in London, air-raid damage,
-  ministers. 🟡 Amber only because the Commons `Credit` field shows the files were uploaded **from
-  IWM's own media server**, and IWM is red — copyright probably expired, *this file from this host*
-  unanswered. 🔴 And **Commons' PD tag is a US-law determination**: two files in one query set were
+  ministers. ✅ **Cleared by Kai 2026-09-12** — the Commons `Credit` field shows the files were
+  uploaded from IWM's own media server, and IWM is red, but the Crown copyright has expired and we
+  take the file from **Commons**, not from IWM. Five were sourced the same day for the Magic Money
+  Tree: two over 5,000 px, and a VE Day crowd in Whitehall **in colour**. The residual risk is
+  identifiable people, not licence. 🔴 And **Commons' PD tag is a US-law determination**: two files in one query set were
   live UK copyright (a Howard Coster portrait, d.1959; a "presumably Karsh"). Read the author's
   death date, not the tag. (b) A real OGL document page was checked end to end — The National
   Archives' *Birth of the NHS 1948* page states in its footer *"All content is available under the

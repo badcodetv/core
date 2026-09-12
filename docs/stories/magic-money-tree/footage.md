@@ -3,7 +3,7 @@ id: magic-money-tree
 title: "Footage ledger — The Future He Never Saw"
 status: in-progress
 updated: 2026-09-12
-pass: 2 — war family verified; NHS documents open and on disk; one Kai ruling gates the British picture
+pass: 3 — war family, NHS documents and the British picture all sourced and on disk
 ---
 
 # Footage ledger — *The Magic Money Tree: The Future He Never Saw*
@@ -54,15 +54,15 @@ four need nothing real at all and belong to Flow.
 | # | Scene | What really happened in it | Needs | Source family |
 | --- | --- | --- | --- | --- |
 | 01 | Get them off the beach | Operation Dynamo, Dunkirk, 26 May – 4 Jun 1940 | **Actuality** | 🇺🇸 **US federal film** — War Department compilations of European events |
-| 02 | Home to what? | The coming peace; bomb damage; the debt figure; Keynes introduced | Actuality + a still + a figure card | US federal film · Commons stills 🟡 · OBR figure (typeset) |
+| 02 | Home to what? | The coming peace; bomb damage; the debt figure; Keynes introduced | Actuality + a still + a figure card | US federal film · ✅ **Commons `PD-UKGov` stills — cleared, two on disk** · OBR figure (typeset) |
 | 03 | The unemployed builder and the unbuilt house | **Nothing.** An explicitly labelled illustration | Invented | **Flow** — the storyboard says it must stay recognisable as an example |
 | 04 | The word "actually" | Bricks, training, capacity; the 1942 Keynes quotation | Generic industry + a text card | Prelinger industrials 🟡 · **Flow** · typography |
 | 05 | Britain did pay for the war | Rationing, war production, taxation, savings, convoys, Lend-Lease | **Actuality** | 🇺🇸 **US federal film** (a US film *about* Britain) + TNA documents |
 | 06 | A job after the uniform | 1944 Employment Policy White Paper; Bevin presenting it 21 Jun 1944; Beveridge | A document + a still | 🇬🇧 **UK Crown / Hansard** — 🔴 **no free moving image exists** |
-| 07 | Victory does not come with a roof | VE Day in Britain; the 1945 election; Keynes on the American loan in the Lords | **Actuality (British)** + a still | 🔴 **Open** — see §3. US VE-Day film is American and must not stand in |
+| 07 | Victory does not come with a roof | VE Day in Britain; the 1945 election; Keynes on the American loan in the Lords | **Actuality (British)** + stills | ✅ **Stills solved — four on disk, one in colour.** 🔴 Still no free British victory *film*; the US VE-Day reel is American and must not stand in. See §3 |
 | 08 | 21 April 1946 | Keynes's death | **One still, held** | Commons / library PD portrait 🟡 |
 | 09 | The promise gets a working day | The NHS opens, 5 Jul 1948; the launch leaflet | A document + stills | 🇬🇧 **TNA, OGL** (leaflet `INF 2/66`) — ✅ **unblocked by the credits ruling**; 🔴 still no free moving image |
-| 10 | The key in the door | Post-war council building into the 1950s | Actuality or stills | 🇬🇧 **Open** — Commons stills 🟡; no free film found yet |
+| 10 | The key in the door | Post-war council building into the 1950s | Actuality or stills | ✅ **Licence cleared** (Commons `PD-UKGov`) — 🔴 but everything found is only ~800 px, and no free film |
 | 11 | The promise requires another shift | June 2010 Budget; nurses on *Question Time*, 2 Jun 2017 | Broadcast + Parliament AV | 🔴 **Red both ways.** BBC owns the programme; Parliament's AV terms bar our use. → subtitle cards + a silent timeline |
 | 12 | They knew about the magic | The September 1948 NHS pamphlet, TNA `MH 55/965` | A document | 🇬🇧 **TNA, OGL** — ✅ **unblocked by the credits ruling** |
 | 13 | What is actually missing? | Nothing specific — present-day hospital, training, building | Invented / generic | **Flow** |
@@ -257,24 +257,44 @@ this session, has a deep set. Pick of the crop by size:
 | `Air_Raid_Damage_in_Britain_…_HU36188.jpg` | 5163×4071 | same | same |
 | `Bomb_Damage_in_London_…_HU36157.jpg` | 1300×950 | same | same |
 
-✅ **But scene 07 now has a British victory *still* that is green** — `NARA - 531280`, above.
-The IWM-sourced files below are better and wider; they are the ones the ruling is about.
+✅ **RULED BY KAI, 2026-09-12: use them.** *"If copyright has expired, then that's great… yes,
+please can we use the wartime photographs."* The files below are **cleared**, and scenes 02, 07 and
+10 are unblocked. 📝 The reasoning we are relying on, stated plainly so it can be checked later:
+these are 1940–45 photographs whose **Crown copyright expired 50 years after creation**; we take the
+file from **Wikimedia Commons**, never from IWM, so we have not accepted IWM's terms; and Commons
+records `AttributionRequired: false` on every one. 🔴 The standing residual risk is unchanged and
+is not a copyright one: **these are identifiable real people**, and what our cut implies about them
+is a separate question no licence closes.
 
-🟡 **Why these are amber and not green.** The *copyright* argument is strong: a 1945 photograph by
+✅ Scene 07 also has an independent green fallback that needs none of the above — `NARA - 531280`.
+
+📝 **Why they were amber until the ruling** (kept, because the reasoning is what a future session
+needs). The *copyright* argument is strong: a 1945 photograph by
 an official UK government photographer is Crown copyright, which expires 50 years from creation, so
 it genuinely is out of copyright — that is what Commons' `PD-UKGov` tag asserts. But the Commons
 `Credit` field shows the file was **lifted from IWM's own media server**, and IWM is red on our
 catalogue: its free tier expressly excludes *"fundraising or campaigning on behalf of
 organisations."* That is the two-questions split in its purest form — *is the work free?* probably
-yes; *is this file, from this host, clear for us?* unanswered. **Do not launder it to green.**
-
-🔴 **This one question now gates three scenes, not one.** Pass 2 traversed Commons' British
-post-war housing categories for scene 10 and found the same thing: *every* usable photograph
+yes; *is this file, from this host, clear for us?* was the gap — **now closed by Kai's ruling
+above.** It was one ruling about a class of file, and it covered scenes 02, 07 and 10 at once,
+because pass 2 found that *every* usable British post-war photograph on Commons
 (`Post War Planning and Reconstruction in Britain: the Construction of Temporary Housing`
 `D24220`–`D24230`, `Design Models of Prefabricated Housing` `D22070`–`D22075`) is credited to
-`media.iwm.org.uk`. **So scenes 02, 07 and 10 all wait on the same ruling** — and it is one ruling
-about a class of file, not a per-image chore. 🔴 Those housing files are also only **~800 px**,
-which is an inset, not a push-in.
+`media.iwm.org.uk`. 🔴 Those housing files are only **~800 px**, which is an inset, not a
+push-in — scene 10 is cleared but still wants a better picture.
+
+### ✅ The five that are on disk — and two of them are better than the brief asked for
+
+| File on disk | Source | Pixels | What it is |
+| --- | --- | --- | --- |
+| `s07-victory/HU49414-battersea-girls-rubble.jpg` ⭐ | `HU 49414` | **5335×3941** | **Two small girls waving Union Jacks in the rubble of Battersea, VE Day.** Commons' own note: *"snapped by an anonymous American photographer"* — so this one may not even be Crown work. **It is scene 07's thesis in one frame**: *"The celebration does not come with a roof."* |
+| `s07-victory/TR2876-crowd-ministry-of-health.jpg` ⭐ | `TR 2876` | 2480×1965 | **In colour.** The VE Day crowd filling Whitehall past the Cenotaph — and the building they are packed in front of is the **Ministry of Health**, from whose balcony Churchill addressed them. A colour 1945 British photograph that also happens to show the department that opens the NHS three years later. Cut scene 07 to scene 09 on it |
+| `s02-home-to-what/HU36188-balham-bus-crater.jpg` | `HU 36188` | **5163×4071** | A double-decker bus nose-down in a bomb crater, Balham, October 1940. *"There will still be homes to rebuild"* |
+| `s07-victory/HU41808-ve-day-celebrations.jpg` | `HU 41808` | 2480×1768 | VE Day celebrations, London |
+| `s02-home-to-what/HU36157-bomb-damage-london.jpg` | `HU 36157` | 1300×950 | Bomb damage, London. Smallest of the set; a cutaway, not a hero |
+
+Two of these are **over 5,000 pixels wide** — which means a slow push-in holds at 1080p with two
+and a half times the frame in reserve, and still has room at 4K.
 
 ---
 
@@ -362,6 +382,11 @@ convention `<mediaRoot>/<story>/clips/<scene>/` — the same shape as `gitpush-o
 | `s01-dunkirk` | `gov.fdr.25.4.mpeg` · 🟢 | 369,576,027 | `048f57d06d8267265f28b9ed6c33a5530083f98c74081689de668f91104a2a1f` |
 | `s07-victory` | `NARA-531280-ve-day.tif` · 🟢 (2813×3000) | 8,439,281 | `c327a0276228814e407c8a3f35fc94f24a69ef65ddbd22aeaccfade87743fbb8` |
 | `s09-nhs-opens` | `INF-2-66-02-NHS-diagram-leaflet.jpg` · 🟢 OGL, credit owed (1837×2302) | 999,844 | `e3bc369b9d3d08f7f3c837f33765683c25df01fa90a8cacd85d104312bab011d` |
+| `s07-victory` | `HU49414-battersea-girls-rubble.jpg` · 🟢 (5335×3941) | 5,462,370 | `169dfadaf7aeba11e9a7251319df8d23cf95867e217c6ffc38ba43b54923afeb` |
+| `s07-victory` | `TR2876-crowd-ministry-of-health.jpg` · 🟢 colour (2480×1965) | 2,644,032 | `20e2f0b29f039961e19cd6e89fd6cd40e19a87a0708cd049906017c989bca6ad` |
+| `s07-victory` | `HU41808-ve-day-celebrations.jpg` · 🟢 (2480×1768) | 1,252,224 | `02a33bdfde045cb2548c869d473eba33a2af965e44b3e5dd3dc4337bbbf474a9` |
+| `s02-home-to-what` | `HU36188-balham-bus-crater.jpg` · 🟢 (5163×4071) | 6,076,980 | `a7993ee3bc65bd6a0c178c8a6b1552fe298116fcabd89b78775f16dbd534956c` |
+| `s02-home-to-what` | `HU36157-bomb-damage-london.jpg` · 🟢 (1300×950) | 357,242 | `b0f4ea6320a9b5688e4c10129da074f0ac7a5a87025461f931251162e0f149dd` |
 
 **The command that fetched it, verbatim:**
 
@@ -401,11 +426,11 @@ duration=809.009011      # matches the declared length of 809.01
 | # | Open item | Who answers |
 | --- | --- | --- |
 | 1 | ~~Where does a credit line live?~~ | ✅ **Answered 2026-09-12 — in the video. OGL route open** |
-| 2 | Is a `PD-UKGov` photograph pulled from IWM's own media server clear for us? — **now the biggest single blocker**, because it gates the British picture in scenes 02, 07 and 10 | 🔴 **Kai**, one ruling covers the class |
+| 2 | ~~Is a `PD-UKGov` photograph pulled from IWM's own media server clear for us?~~ | ✅ **Answered 2026-09-12 — yes. Scenes 02, 07, 10 unblocked; five stills on disk** |
 | 2b | 💷 Would **£100–200 on a per-image still licence** buy scene 07 or 10 something Commons cannot? Unpriced — needs a live check of a per-image library's terms *and* its political-use clause | Next pass, then 🔴 **Kai** approves the spend |
 | 3 | Is each chosen *Divide and Conquer* shot actuality or a dramatised insert? | A human watching it |
 | 4 | Scene 07 — a green British VE-Day **still** now exists (`NARA - 531280`). A green British VE-Day **film** still does not | Next pass, low hope |
-| 5 | Scene 10 — searched. Everything found is IWM-sourced and ~800 px. Folded into question 2 | 🔴 **Kai** (question 2) |
+| 5 | Scene 10 — **cleared** by ruling 2, but everything found is only ~800 px. Wants a better picture, not a better licence | Next pass |
 | 5b | Scene 12 — `MH 55/965` is confirmed and OGL, but the published image is only ~900 px. A larger scan needs TNA Discovery or a reading-room order | Next pass |
 | 5c | Scene 09 — the leaflet on disk is the **Scotland** printing. Accept, crop, or find the England/Wales one | 🔴 **Kai**, small |
 | 6 | *Know Your Ally: Britain* (`gov.ntis.ava06858vnb1`) — 42 minutes, unwatched. The likeliest single source for scene 05 | Next pass |

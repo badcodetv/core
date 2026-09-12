@@ -152,6 +152,26 @@ call, every time.**
   own), and **never ship the clip without it.** 🔴 **Video only** — `@badcode/comic` still has no
   credits surface, so a CC-BY *still in a comic* is still an open question.
 
+### 🇬🇧 UK official WWII stills — cleared, and the answer to "UK is all paid"
+
+✅ **Ruled 2026-09-12.** British official photographs of 1939–45 are on Wikimedia Commons tagged
+`PD-UKGov` — **Crown copyright expires 50 years from creation** — at up to 5,000+ px, including
+colour. The Commons `Credit` field usually shows the file was uploaded **from `media.iwm.org.uk`**,
+and IWM is red on the catalogue. Kai's ruling: **use them anyway.** *"If copyright has expired, then
+that's great."* We take the file **from Commons, never from IWM**, so IWM's terms were never
+accepted, and Commons records `AttributionRequired: false`.
+
+**So for a British subject, two moves before you conclude anything is paid:**
+1. **Commons, licence-filtered** — VE Day, the Blitz, ministers, post-war housing are all there.
+2. **Look for the American photographer.** British subjects shot by US government photographers are
+   §105 US federal works at 3,000 px, credited *"U.S. National Archives and Records Administration"*.
+   🔴 But **"NARA" in a credit is not automatically §105** — read the description for a donated
+   third-party collection first (one London Blitz photo turned out to be a *New York Times* picture
+   in NARA custody, and custody is not authorship).
+
+🔴 **What is still unsolved for the UK is *film*, not stills**, and the residual risk on these
+photographs is **identifiable real people**, which no licence clears.
+
 ### 💷 There is a budget, and it is smaller than the archive houses' minimums
 
 ✅ **Ruled 2026-09-12.** **£100 for the whole film, £200 at an absolute push.** Not per clip.
