@@ -21,11 +21,16 @@ import { launchCommand, resolveListenChannel } from './channel'
 import { listLenses } from './lens'
 import { measure } from './measure'
 import { describe } from './describe'
+import { loadEnvFile } from './env-file'
 
 const REPO_ROOT = resolvePath(dirname(fileURLToPath(import.meta.url)), '..', '..', '..')
 const LENS_DIR = join(REPO_ROOT, 'docs', 'listening', 'lenses')
 const LOG_DIR = join(REPO_ROOT, 'docs', 'listening', 'log')
 const MEASURE_SCRIPT = join(REPO_ROOT, 'scripts', 'audio-measure.py')
+
+// 🔴 Before anything reads process.env. An MCP server is launched by the client, not from a
+// shell that has sourced .env, so without this GEMINI_API_KEY is absent in every real session.
+loadEnvFile(REPO_ROOT)
 
 const DISCONNECTED_RE = /Target closed|browser has been closed|Target page, context or browser has been closed|ECONNRESET/i
 
