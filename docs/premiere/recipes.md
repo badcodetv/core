@@ -122,6 +122,74 @@ the real `end` from the returned state and use that as the next `time`.
 
 ---
 
+## Recipe: sketch the cut with stills, before you buy any motion
+
+**Status: designed 2026-09-12, NOT YET RUN.** Every call below is a real tool with real arguments,
+but this sequence has not been executed end to end and the three unknowns at the bottom are
+genuinely unknown. Promote this block to proven — and delete the unknowns — only after a run.
+Written up in advance because the browser lane was blocked, not because it has been verified.
+
+**Why it exists.** Stills are free at the margin; Veo clips are not. Once a scene's plates are
+chosen, lay them on a timeline at guessed durations and *watch it*. That answers what no contact
+sheet can: how long a beat holds, whether it is five shots or three, whether the order works, and
+whether a colour argument lands in motion. Then — and this is the part that saves money —
+[`hybrid-method.md`](../video-fx/hybrid-method.md) §2's lane table says a shot whose world does not
+move and whose camera does is **post only, no credit spent**. Some of the stills you just cut
+together are already finished shots.
+
+```jsonc
+// 1. Import the accepted plates into their own bin
+premiere_import({
+  paths: ["/mnt/d/badcode-videos/<story>/clips/<scene>/N1.jpg",
+          "/mnt/d/badcode-videos/<story>/clips/<scene>/N2.jpg"],
+  bin: "<scene>-anim"
+})
+
+// 2. Make the animatic sequence from a PRESET, not from a still.
+//    A still carries no frame rate, so `fromItems` has nothing to match — and
+//    `create_sequence({name})` alone silently uses the project default (1080p/23.976 here).
+premiere_create_sequence({
+  name: "<scene>-anim",
+  preset: "/mnt/c/Program Files/Adobe/Adobe Premiere Pro 2026/Settings/SequencePresets/HD 1080p/HD 1080p 25 fps.sqpreset"
+})
+
+// 3. Lay them in order. Read the real `end` off each response for the next `time` —
+//    do not compute it (see "Placing the next shot at the end of the last one").
+premiere_insert_clip({ item: "N1.jpg", time: 0, mode: "overwrite", videoTrack: 0 })
+
+// 4. Set each beat's duration to what you are actually testing
+premiere_trim_clip({ clip: "v0:0", end: 2 })
+
+// 5. Give each still the camera move its finished shot would have.
+//    A held still with no move reads as a slideshow and will make a good shot look dead.
+premiere_set_param({ clip: "v0:0", component: 1, param: 1, value: 100, time: 0 })
+premiere_set_param({ clip: "v0:0", component: 1, param: 1, value: 108, time: 2, interpolation: "bezier" })
+
+// 6. Watch it
+premiere_export_sequence({ name: "<scene>-anim" })
+```
+
+**Then re-cut in the timeline, not in the prompt sheet.** Changing a duration is free; regenerating
+a plate is not. Reorder, shorten, and delete beats until the cut works, and only then update the
+scene sheet to match what survived.
+
+**The triage that pays for the whole exercise.** For each surviving beat ask the lane table's two
+questions — *does the world move?* and *does the camera move?* Beats where only the camera moves
+are **done**: the animatic clip is the deliverable, and it never needs Veo. Send only the rest.
+
+### Three things nobody has checked
+
+- **What duration a still gets on import.** Premiere has a default-still-duration preference; the
+  bridge exposes no way to read or set it, so step 4 exists to overwrite whatever it is. Unknown
+  whether `trim_clip` can *extend* a still past that default or only shorten it.
+- **Whether `create_sequence({ fromItems: [<a still>] })` works at all.** Step 2 uses a preset to
+  sidestep the question. If someone tries it, record the answer here.
+- **Whether a JPEG scales cleanly enough to push into.** A 1080-tall plate pushed to 115% is
+  resampling ~15% up. Generate plates larger than the sequence if the move is big — and check it
+  with `premiere_export_frame`, per rule 4.
+
+---
+
 ## Recipe: fill the frame when the source is smaller
 
 A 1280×720 clip in a 1920×1080 sequence renders **inset in black on all sides**. Scale it with the

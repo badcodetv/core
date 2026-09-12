@@ -52,16 +52,45 @@ camera-only move — it just stopped short. The full answer is:
 
 1. **Settle the look as a still.** Non-negotiable and unchanged — see the stills-first rule in
    `flow-automation`. The plate is the contract.
-2. **Name what moves in the world.** If nothing does, stop; this is a post shot.
-3. **Generate in Veo with the plate as `startImage`, prompting motion only, camera explicitly
+2. **Cut the stills together and watch them.** The animatic — see below. It decides durations,
+   order and which beats survive, and it tells you which shots are already finished. Skipping it
+   means buying motion for shots the cut was going to drop.
+3. **Name what moves in the world.** If nothing does, stop; this is a post shot.
+4. **Generate in Veo with the plate as `startImage`, prompting motion only, camera explicitly
    locked.** Say *"the camera does not move"* — Veo drifts 34–66px over 8s even when told to hold,
    so a locked-off beat still gets stabilised or cropped in post.
-4. **Design the camera move against the finished clip**, in Premiere on the `Motion` intrinsic
+5. **Design the camera move against the finished clip**, in Premiere on the `Motion` intrinsic
    (params `0 Position`, `1 Scale`, `5 Anchor Point` — all 0–1 fractions of frame), or in ffmpeg
    `zoompan` when the easing must be exact and repeatable.
-5. **Layer the effects.** Catalogue: [`../premiere/effects-catalogue.md`](../premiere/effects-catalogue.md).
+6. **Layer the effects.** Catalogue: [`../premiere/effects-catalogue.md`](../premiere/effects-catalogue.md).
    ffmpeg-only capabilities: §6 below.
-6. **Grade and grain last**, then the delivery gate ([`delivery.md`](delivery.md)).
+7. **Grade and grain last**, then the delivery gate ([`delivery.md`](delivery.md)).
+
+### The animatic — cut the stills before you buy the motion
+
+**Proposed by Kai, 2026-09-12. 🟡 Designed, not yet run** — the mechanics are written up at
+[`../premiere/recipes.md`](../premiere/recipes.md) → *"Recipe: sketch the cut with stills"*, with
+its own unknowns listed. Do not cite this section as proven until a scene has gone through it.
+
+Lay the accepted plates on a Premiere timeline at guessed durations, give each the camera move its
+finished shot would have, export, and watch. It costs nothing and it answers four things a contact
+sheet cannot: **how long a beat holds**, **whether it is five shots or three**, **whether the order
+works**, and **whether an argument built out of colour or scale survives being in motion**.
+
+🔑 **Why it is worth more to us than to most productions.** Our camera moves happen in post over a
+locked plate anyway — that is the whole point of §2. So a still on a timeline with a Motion
+keyframe is not a rough stand-in for the shot; **for every beat in the `no` / `yes` row of the
+table above it IS the shot.** The animatic is therefore a partial render, and the triage after it
+is where the money is saved: ask the table's two questions of each surviving beat, and send only
+the ones whose world actually moves.
+
+**The discipline that makes it work:** re-cut in the timeline, never in the prompt sheet. Changing
+a duration is free and regenerating a plate is not. Update the scene sheet at the end, to record
+what survived.
+
+**What would falsify this section:** an animatic whose chosen durations do not survive contact with
+the real Veo clips, or a "finished" post-only beat that visibly reads as a still once it sits next
+to generated motion. Record either here rather than quietly dropping the step.
 
 ### Make the move not read as a slideshow
 
