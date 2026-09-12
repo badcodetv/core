@@ -57,10 +57,10 @@ four need nothing real at all and belong to Flow.
 | 02 | Home to what? | The coming peace; bomb damage; the debt figure; Keynes introduced | Actuality + a still + a figure card | US federal film · ✅ **Commons `PD-UKGov` stills — cleared, two on disk** · OBR figure (typeset) |
 | 03 | The unemployed builder and the unbuilt house | **Nothing.** An explicitly labelled illustration | Invented | **Flow** — the storyboard says it must stay recognisable as an example |
 | 04 | The word "actually" | Bricks, training, capacity; the 1942 Keynes quotation | Generic industry + a text card | Prelinger industrials 🟡 · **Flow** · typography |
-| 05 | Britain did pay for the war | Rationing, war production, taxation, savings, convoys, Lend-Lease | **Actuality** | 🇺🇸 **US federal film** (a US film *about* Britain) + TNA documents |
-| 06 | A job after the uniform | 1944 Employment Policy White Paper; Bevin presenting it 21 Jun 1944; Beveridge | A document + a still | 🇬🇧 **UK Crown / Hansard** — 🔴 **no free moving image exists** |
+| 05 | Britain did pay for the war | Rationing, war production, taxation, savings, convoys, Lend-Lease | **Actuality** | ⭐ **SOLVED** — *Know Your Ally: Britain* (1944), the tax sequence at **38:45–39:30**. See §2f |
+| 06 | A job after the uniform | 1944 Employment Policy White Paper; Bevin presenting it 21 Jun 1944; Beveridge | A document + a still | ✅ **"Demand the Beveridge Plan" (1944), LSE Library, 1498×2396 — on disk.** Hansard text under OPL. 🔴 Still no free moving image |
 | 07 | Victory does not come with a roof | VE Day in Britain; the 1945 election; Keynes on the American loan in the Lords | **Actuality (British)** + stills | ✅ **Stills solved — four on disk, one in colour.** 🔴 Still no free British victory *film*; the US VE-Day reel is American and must not stand in. See §3 |
-| 08 | 21 April 1946 | Keynes's death | **One still, held** | Commons / library PD portrait 🟡 |
+| 08 | 21 April 1946 | Keynes's death | **One still, held** | ✅ `Keynes_Martin.jpg` — `PD-UK-unknown`, Harvard, 1348×1470. See §4 |
 | 09 | The promise gets a working day | The NHS opens, 5 Jul 1948; the launch leaflet | A document + stills | 🇬🇧 **TNA, OGL** (leaflet `INF 2/66`) — ✅ **unblocked by the credits ruling**; 🔴 still no free moving image |
 | 10 | The key in the door | Post-war council building into the 1950s | Actuality or stills | ✅ **Licence cleared** (Commons `PD-UKGov`) — 🔴 but everything found is only ~800 px, and no free film |
 | 11 | The promise requires another shift | June 2010 Budget; nurses on *Question Time*, 2 Jun 2017 | Broadcast + Parliament AV | 🔴 **Red both ways.** BBC owns the programme; Parliament's AV terms bar our use. → subtitle cards + a silent timeline |
@@ -237,6 +237,43 @@ Buckingham Palace frames and nothing else British. And archive.org's six `18-sfp
 
 ---
 
+## 2f. ⭐ Pass 4 — scene 05, and a 1944 US Army film that makes our argument for us
+
+`gov.ntis.ava06858vnb1` — *Know Your Ally: Britain*, War Department, Special Service Division, Army
+Service Forces, with the Signal Corps, 1944. 42 minutes. 🟢 Green, FedFlix, explicit PD. Indexed
+from its free thumbnails, then scrubbed.
+
+**Scene 05's narration is:** *"Britain didn't fight the war by discovering a cupboard of free money.
+It taxed. Borrowed. Directed production. Rationed goods."*
+
+**The film says it in pictures, with figures, between 38:45 and 39:30** — 45 seconds against a
+40-second scene:
+
+| Time | On screen |
+| --- | --- |
+| 38:57–39:00 | A hand stacking coins into columns |
+| **39:03–39:06** | **A newspaper front page: "BRITISH SPEND 49,000,000 PER DAY ON WAR"** |
+| **39:09–39:12** | Factory chimneys, caption burned in: **"EXCESS PROFITS TAX 100%"** |
+| **39:18–39:21** | A bricklayer and working men, caption: **"LOW INCOME TAX 29%"** |
+| **39:24–39:27** | A society wedding, caption: **"HIGH INCOME TAX 97½%"** |
+
+⭐ **Why this matters beyond scene 05.** A 1944 **United States Army** film, cutting a bricklayer
+against a society wedding to show who paid for the war, is the film's whole thesis stated by a
+source nobody can call partisan — and it *names the decision-maker*, which is
+[the-reader.md](../../marketing/the-reader.md)'s first rule. A government choosing a 97½% top rate
+is a decision, not a weather event.
+
+🔴 **State it carefully.** Those captions are **the film's own superimposed titles** — using them
+is quoting a 1944 War Department claim, not citing a statistic. The rates look right (UK top rates
+did approach 97½% and Excess Profits Tax was raised to 100%), **but this pass did not verify them
+against a primary source, so the narration must not assert them as fact until someone does.** Show
+the film saying it; don't have the narrator repeat it unchecked.
+
+**Also usable in the same reel**, for *"directed production"*: 35:30–37:15 is chimneys, a shell being
+machined, lorries, massed tanks and industrial landscape; 34:45 is an older worker at a machine.
+
+---
+
 ## 3. 🔴 Scene 07 has no British victory *footage*, and the obvious substitute is a lie
 
 `gov.archives.arc.38936` (*The War Ends in Europe*) is green, cheap and wrong. Its frames were
@@ -306,6 +343,18 @@ Found and rejected this session, both of which a careless pass would have shippe
 | --- | --- | --- |
 | `Aneurin_Bevan_(1943).jpg` | "Public domain" | Photographer **Howard Coster, died 1959**. UK copyright is life + 70 → **in copyright until 2029.** Commons itself carries a warning on the file that *"one or more third parties have made copyright claims… use of this image in the jurisdiction of the claimant… may be regarded as copyright infringement."* 🔴 **Red for a UK audience** |
 | `Person_attlee2.jpg` | "Public domain", 1559×2048 | Artist field reads **"Presumably Yousuf Karsh"** and the credit is a fan site (`ww2db.com`). Karsh died 2002 — if the attribution is right, this is firmly in copyright, and "presumably" is not a chain of title. 🔴 **Red** |
+
+**✅ Two more resolved this pass, by reading the Commons wikitext rather than the tag:**
+
+| File | Pixels | Licence template | Verdict |
+| --- | --- | --- | --- |
+| `Keynes_Martin.jpg` | 1348×1470 | **`{{PD-UK-unknown}}`** — anonymous work, source *Harvard University library*, 1930s | 🟢 **Scene 08's portrait.** Keynes with Kingsley Martin at Monk's House. Anonymous + 1930s puts it out of UK copyright, and the chain is an institution, not a blog |
+| `Signature_Anglo_American_loan_agreement_1945.jpg` | 692×574 | **`{{Flickr-no known copyright restrictions}}`**, Author: **The National Archives UK**, catalogue `CO 1069/778` | 🟢 **Scene 07's loan beat.** The actual signing, State Department, Washington, 6 Dec 1945 — *"Sitted from left to right: John Maynard Keynes, Lord Halifax, James Byrnes, Fred Vinson."* Scene 07 says *"Keynes negotiates an American loan"*; this is the moment. 🔴 Only 692×574 — a small frame, and *"no known copyright restrictions"* is an institution's disclaimer, not a grant. It sits inside Kai's expired-copyright ruling, but chase TNA's Flickr original for a bigger file |
+
+🔴 **And one more rejected**: `John_Maynard_Keynes_(1929).jpg` is tagged "Public domain" on Commons
+and credited to **gettyimages.fr**. A Getty-sourced file carrying a volunteer's PD tag is the worst
+chain on this page. Don't. (`1914_Oliver_Strachey…mw17626.jpg` is credited to **npg.org.uk** — the
+same sweat-of-the-brow claimant as the rejected Bevan portrait. Treat alike.)
 
 **Safe by comparison:**
 
@@ -387,6 +436,10 @@ convention `<mediaRoot>/<story>/clips/<scene>/` — the same shape as `gitpush-o
 | `s07-victory` | `HU41808-ve-day-celebrations.jpg` · 🟢 (2480×1768) | 1,252,224 | `02a33bdfde045cb2548c869d473eba33a2af965e44b3e5dd3dc4337bbbf474a9` |
 | `s02-home-to-what` | `HU36188-balham-bus-crater.jpg` · 🟢 (5163×4071) | 6,076,980 | `a7993ee3bc65bd6a0c178c8a6b1552fe298116fcabd89b78775f16dbd534956c` |
 | `s02-home-to-what` | `HU36157-bomb-damage-london.jpg` · 🟢 (1300×950) | 357,242 | `b0f4ea6320a9b5688e4c10129da074f0ac7a5a87025461f931251162e0f149dd` |
+| `s05-britain-paid` | `ava06858vnb1.mpeg` · 🟢 **720×480**, md5 matched | 1,540,064,187 | `3b07d8da7c826a442e986f860d5317969bc1354086cad9ec455ba3aecf70a3cf` |
+| `s06-job-after-uniform` | `LSE-1383-demand-the-beveridge-plan-1944.jpg` · 🟢 (1498×2396) | 601,413 | `59178ad07db2b0cdbbc8591d8680ea4ce64e1e4ea22430edf8e8054e781421ea` |
+| `s07-victory` | `TNA-CO1069-778-3-loan-signing-1945-orig.jpg` · 🟢 (799×676) | 335,711 | `99fd2c2828e0c4410b50e30b5f8610058955ef20671d2799f46d8086c1390f3e` |
+| `s08-keynes-dies` | `Keynes_Martin-monks-house.jpg` · 🟢 (1348×1470) | 453,054 | `2d81b4f51247736c5f2a0ead67ed688cb0e747b3a49a03f5fd29dc9f1146c876` |
 
 **The command that fetched it, verbatim:**
 
@@ -407,6 +460,10 @@ sample_aspect_ratio=40:23   display_aspect_ratio=4:3
 field_order=tt   r_frame_rate=30000/1001   bit_rate=3500000
 duration=809.009011      # matches the declared length of 809.01
 ```
+
+📝 **The scene 05 master is a different animal.** `ava06858vnb1.mpeg` probes at **720×480** —
+full NTSC D1, roughly twice the horizontal detail of the Dunkirk reel — also `field_order=tt`, so
+deinterlace it the same way. Its md5 matched the declared value on a 1.54 GB download.
 
 🔴 **Three practical consequences.**
 1. **The coded picture is 368×480, not the 640×480 the archive metadata advertises.** 640×480 is the
@@ -433,7 +490,9 @@ duration=809.009011      # matches the declared length of 809.01
 | 5 | Scene 10 — **cleared** by ruling 2, but everything found is only ~800 px. Wants a better picture, not a better licence | Next pass |
 | 5b | Scene 12 — `MH 55/965` is confirmed and OGL, but the published image is only ~900 px. A larger scan needs TNA Discovery or a reading-room order | Next pass |
 | 5c | Scene 09 — the leaflet on disk is the **Scotland** printing. Accept, crop, or find the England/Wales one | 🔴 **Kai**, small |
-| 6 | *Know Your Ally: Britain* (`gov.ntis.ava06858vnb1`) — 42 minutes, unwatched. The likeliest single source for scene 05 | Next pass |
+| 6 | ~~*Know Your Ally: Britain* — unwatched~~ | ✅ **Indexed and scrubbed. Scene 05 solved at 38:45–39:30; master on disk, md5 matched** |
+| 6b | 🔴 **Verify the 1944 film's tax figures against a primary source** before the narration repeats them (97½% top rate, 100% excess profits, £49m/day). Showing the film say it is safe; asserting it is not | Next pass |
+| 6c | Scene 07's loan-signing photo is only 799×676 even at TNA's Flickr original. Bigger scan = TNA Discovery / reading room | Next pass, low |
 | 7 | Pin Universal Newsreel's 1976 dedication at NARA rather than on archive.org | Next pass |
 
 ---

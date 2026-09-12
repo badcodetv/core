@@ -554,6 +554,40 @@ That item has **no mp4 derivative at all** — only the `.wmv` original (1,090,9
 low-res `.ogv` (143,414,853 B). Enumerate `files[]`, take the largest `source:"original"`,
 transcode locally.
 
+#### Wikimedia Commons → **Flickr Commons institutional streams** (LSE Library, The National Archives UK)
+
+🟢 **New 2026-09-12, and it goes some way to closing this page's two worst named gaps.**
+Several institutions push their own scans into **Flickr Commons**, which Wikimedia mirrors with the
+template `{{Flickr-no known copyright restrictions}}` and `AttributionRequired: false`. The two found
+while sourcing the Magic Money Tree, both verified live:
+
+| Stream | On Commons | Holds | Verified sizes |
+| --- | --- | --- | --- |
+| **LSE Library** (British Library of Political and Economic Science) | **2,345 files** | British *political and economic* history — the exact territory this page had zero sources for | Booth's *Printed Map Descriptive of London Poverty 1898–99*, **16 sheets up to 9650×7361 and 8031×10000** · suffrage parades and released-prisoner processions at **4671×3533–5096×6512** · Beveridge portraits at 1803×2619 · the 1944 *"Demand the Beveridge Plan"* campaign poster at 1498×2396 |
+| **The National Archives UK** | (not counted) | Crown photographic collections by catalogue reference | `CO 1069/778` — the signing of the Anglo-American loan, 6 Dec 1945, with Keynes at the table. 🔴 TNA's *own Flickr original* is only **799×676**; there is no bigger file on Flickr to chase |
+
+```bash
+# count / list an institution's Commons footprint
+curl -s 'https://commons.wikimedia.org/w/api.php?action=query&format=json&list=search&srsearch=insource%3A%22flickr.com%2Fphotos%2Flselibrary%22&srnamespace=6&srlimit=1&srinfo=totalhits' | jq -r '.query.searchinfo.totalhits'
+# an LSE collection is a TITLE PREFIX, not a category - use allimages, not search
+curl -s 'https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=allimages&gaiprefix=Printed%20Map%20Descriptive%20of%20London%20Poverty&gailimit=30&prop=imageinfo&iiprop=url|size|extmetadata' \
+  | jq -r '.query.pages[]|.imageinfo[0]|[.extmetadata.LicenseShortName.value,(.width|tostring)+"x"+(.height|tostring),.url]|@tsv'
+# and Flickr's own full-size original, when Commons holds a downscale:
+curl -s 'https://www.flickr.com/photos/<stream>/<photoid>/sizes/o/' | grep -oE 'https://live\.staticflickr\.com/[^"]*_o\.jpg'
+```
+
+🔴 **Read the tier honestly.** *"No known copyright restrictions"* is an **institution's
+disclaimer, not a licence grant** — it says the library is unaware of a restriction, and it can be
+wrong. It is green **for material old enough that the copyright has genuinely expired**, which is
+Kai's 2026-09-12 ruling; for anything that might be recent, check the date on the item first.
+
+🔴 **And read the numbers honestly too.** LSE's Commons footprint is 2,345 files, but the
+*"Demonstrations, Strikes, Marches, Processions"* set is **three files, all suffrage c.1908**. This
+is a real source for British political history, poverty mapping and the pre-1918 franchise fight —
+it is **not** the deep picket-line archive the [Known gaps](#known-gaps--nobody-covered-these)
+section is still asking for. LSE's own Flickr stream and archive catalogue are larger than the
+Commons mirror; neither was surveyed here.
+
 #### archive.org `collection:universal_newsreels`
 
 Universal City Studios' newsreels 1929–1967, **donated to NARA and placed in the public domain in
@@ -1817,7 +1851,9 @@ federal film and shallow-to-empty on most of what BadCode's stories are actually
 
 **Subjects with no source and no query run — the ones that matter most:**
 
-- **Protest, strikes, picket lines, labour organising, crowds.** **Zero sources, zero search
+- **Protest, strikes, picket lines, labour organising, crowds.** 🟡 **Barely opened 2026-09-12:**
+  LSE Library on Commons has suffrage parades and a released-prisoners procession at 4,700–5,100 px
+  — but that set is **three files**, all c.1908. The gap below stands. **Zero sources, zero search
   recipes, in a survey written for a collective whose subject is the ownership of the means of
   production.** Prelinger and Commons both hold this material and neither entry points at it.
   Leads: Prelinger sponsored/newsreel film, `collection:universal_newsreels`, Commons
@@ -1826,6 +1862,14 @@ federal film and shallow-to-empty on most of what BadCode's stories are actually
 - **Financial markets, trading floors, banks, budgets, economic policy.** Zero. **The Magic Money
   Tree and Emperor's New Coin both need it.** Leads: Prelinger's sponsored finance and insurance
   films, newsreel crash/budget coverage, C-SPAN 🟡 for hearings.
+  **Partly opened 2026-09-12** — for *stills*, **LSE Library's 2,345 Commons files** are British
+  political and economic history, including Booth's London poverty maps at up to 9650×7361. And one
+  seam of *film* was found by accident: a **1944 US War Department** film, *Know Your Ally: Britain*
+  (`gov.ntis.ava06858vnb1`, 🟢 PD, 720×480), carries a 45-second sequence at **38:45–39:30** of
+  coins, a "BRITISH SPEND 49,000,000 PER DAY ON WAR" front page, and burned-in captions reading
+  "EXCESS PROFITS TAX 100%", "LOW INCOME TAX 29%" and "HIGH INCOME TAX 97½%" cut against a
+  bricklayer and a society wedding. **Wartime films explaining an economy to a foreign audience are
+  where this subject hides** — look for them, not for stock footage of banks.
 - **Heavy industry, manufacturing, mining, energy, ports, automation.** The only real factory-floor
   or machinery material found is **CERN's 36-item FOOTAGE facet** (amber licence) and the **dead**
   EPA Region 2 clips. Everything else in the science territory skews space and earth-science.

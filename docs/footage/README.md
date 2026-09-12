@@ -36,6 +36,10 @@ there before adding a row.
 | `HU 41808` (Commons) | Wikimedia Commons · file from IWM | 🟢 | same basis | none | MMT sc.07 — VE Day celebrations, 2480×1768. **On disk** | 2026-09-12 |
 | `HU 36188` (Commons) | Wikimedia Commons · file from IWM | 🟢 | same basis | none | MMT sc.02 — bus in a bomb crater, Balham, Oct 1940, 5163×4071. **On disk** | 2026-09-12 |
 | `HU 36157` (Commons) | Wikimedia Commons · file from IWM | 🟢 | same basis | none | MMT sc.02 — bomb damage, London, 1300×950. **On disk** | 2026-09-12 |
+| `gov.ntis.ava06858vnb1` ⭐ | archive.org · FedFlix | 🟢 | `licenses/publicdomain/`; US War Dept 1944, §105 | none | MMT sc.05 — *Know Your Ally: Britain*. The war-tax sequence at **38:45–39:30**: "BRITISH SPEND 49,000,000 PER DAY ON WAR", "EXCESS PROFITS TAX 100%", "HIGH INCOME TAX 97½%". **Master on disk, 720×480, md5 matched** | 2026-09-12 |
+| `Keynes_Martin.jpg` (Commons) | Wikimedia Commons · Harvard | 🟢 | **`{{PD-UK-unknown}}`** — anonymous, 1930s | none | MMT sc.08 — Keynes at Monk's House, 1348×1470. **On disk** | 2026-09-12 |
+| `CO 1069/778` (Commons/Flickr) | Wikimedia Commons · **The National Archives UK** via Flickr Commons | 🟢 | `{{Flickr-no known copyright restrictions}}`; 1945 Crown photograph | none | MMT sc.07 — the Anglo-American loan being signed, Keynes at the table. **On disk.** 🔴 Only 799×676 even at Flickr's original | 2026-09-12 |
+| `IMAGELIBRARY/1383` (Commons/Flickr) | Wikimedia Commons · **LSE Library** via Flickr Commons | 🟢 | `{{Flickr-no known copyright restrictions}}`; anonymous 1944 campaign poster | none | MMT sc.06 — *"Demand the Beveridge Plan"*, 1498×2396. **On disk** | 2026-09-12 |
 
 🔴 **Two traps this table already caught.** *"NARA"* in a credit is **not** automatically a US
 federal work — `541917` is a donated *New York Times* photograph in NARA custody, and custody is not
@@ -67,6 +71,10 @@ identifier **verbatim** in the filename: it is the only durable link back to the
 | magic-money-tree | `s07-victory` | `HU41808-ve-day-celebrations.jpg` | 1,252,224 | `02a33bdfde045cb2548c869d473eba33a2af965e44b3e5dd3dc4337bbbf474a9` |
 | magic-money-tree | `s02-home-to-what` | `HU36188-balham-bus-crater.jpg` | 6,076,980 | `a7993ee3bc65bd6a0c178c8a6b1552fe298116fcabd89b78775f16dbd534956c` |
 | magic-money-tree | `s02-home-to-what` | `HU36157-bomb-damage-london.jpg` | 357,242 | `b0f4ea6320a9b5688e4c10129da074f0ac7a5a87025461f931251162e0f149dd` |
+| magic-money-tree | `s05-britain-paid` | `ava06858vnb1.mpeg` (720×480) | 1,540,064,187 | `3b07d8da7c826a442e986f860d5317969bc1354086cad9ec455ba3aecf70a3cf` |
+| magic-money-tree | `s06-job-after-uniform` | `LSE-1383-demand-the-beveridge-plan-1944.jpg` | 601,413 | `59178ad07db2b0cdbbc8591d8680ea4ce64e1e4ea22430edf8e8054e781421ea` |
+| magic-money-tree | `s07-victory` | `TNA-CO1069-778-3-loan-signing-1945-orig.jpg` | 335,711 | `99fd2c2828e0c4410b50e30b5f8610058955ef20671d2799f46d8086c1390f3e` |
+| magic-money-tree | `s08-keynes-dies` | `Keynes_Martin-monks-house.jpg` | 453,054 | `2d81b4f51247736c5f2a0ead67ed688cb0e747b3a49a03f5fd29dc9f1146c876` |
 
 ## Per-story ledgers
 
