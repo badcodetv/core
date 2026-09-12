@@ -83,6 +83,12 @@ If you read nothing else:
 
 ## Writing a prompt
 
+**A storyboard beat arrives as four different briefs, not one.** `badcode-art-direction` ->
+"Variety mode" decides the spread; this skill phrases each candidate. Write four genuinely
+different briefs — a different camera, palette, time of day or register in each — never one brief
+re-seeded. One of the four is the house register, and at least one breaks it on purpose.
+
+
 1. **Get the register from the owning skill first** (`badcode-art-direction` for panels,
    `new-image` for brand imagery, the story's `prompts.md` for story style). Don't invent
    a look here.

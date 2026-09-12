@@ -27,13 +27,53 @@ Two gates from there that bite hardest on our register:
 mood), and **a visible cost in any monumental frame** (scale without a cost reads as celebration
 of the power it means to indict).
 
+## Variety mode — proposing a storyboard still
+
+**Ruled 2026-09-12 (Kai).** Every image was coming back muted and dystopian. The cause was this
+skill: the register below is written as a *format*, so the generator was obedient rather than
+inspired. Images are free at the margin and video is not, so the choosing happens here.
+
+Variety mode is ON whenever a storyboard beat is being **chosen**. It is OFF once a plate is
+accepted: an accepted plate is house register, full stop.
+
+1. **A beat is proposed as a spread, not a pick.** Default **four candidates, each a different
+   idea** — different framing, camera distance, palette, register, time of day, or what is in
+   focus. Four seeds of one prompt is not a spread; it is one idea rendered four times, and it is
+   the thing this rule exists to stop.
+2. **The house register is one candidate, never all four.** At least one candidate deliberately
+   breaks the muted cool-neutral palette, so muted gets *chosen* rather than defaulted. State in
+   one line what each candidate's idea IS, so Kai picks between ideas, not between renders.
+3. **Name the declared variable.** A spread has one axis it is really testing — grade, distance,
+   time of day, what is in focus. Say which, and let the other axes follow from it honestly (you
+   cannot have hard sun and overcast in the same frame, so a grade spread is also a light spread).
+4. **Every gate still applies to every candidate.** A monumental frame carries a visible cost
+   (`docs/cinematography/principles.md` gate 2); the darkness has one deliberately brighter
+   region; no AI body, face or robot proxy; canon and totem contracts are not negotiable.
+   Variety is in how we look, never in what is true.
+5. **Hone like the music loop.** Kai picks -> describes the change in words -> refine **from the
+   pick**, reference-anchored, always from the golden original (`flow_edit_image`, the
+   `edit-panel` loop) -> narrow. Never re-derive from scratch after a pick.
+6. **Where variety does NOT apply.** A one-reference EDIT whose job is to *match* — a clean plate,
+   a before/after, an exact callback, a registered same-view change — is generated once, not four
+   times: its whole value is that it matches. A **contracted totem** (the coin rig, the chair, the
+   vault, a cast Character) may vary its camera, light and palette but never the object's spec.
+7. **Record every candidate, not just the winner.** All four exact prompts go in the story's
+   `prompts.md` / the beat's scene sheet with a one-line idea label, and the pick is marked.
+   "Like candidate C but warmer" must be one cheap step.
+8. **Kai approves every plate before any video credit is spent.** Standing rule, unchanged.
+
+**The R1 side-effect, stated honestly:** `docs/cinematography/principles.md` §R1 is 🔴 **open** —
+nobody has evidence that our near-black register is right for a working-class UK reader, nor that
+social realism is the fix. A spread that always contains a non-register candidate is the cheapest
+way to accumulate that evidence. It does not settle R1 and must not be written up as if it does.
+
 ## Identity — what a BadCode panel looks like
 
 These are not aspirations; they are consistent across camping, magic-money-tree, and karen. Hold them.
 
-1. **35mm documentary film look.** The house-style preamble is: *hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, calm observational tone, landscape orientation.* For exterior/overcast panels add: *late-70s/early-80s scanned film negative, subtle dust specks, gentle gate weave, vintage lens softness with mild halation around practical lights.* This is not a stylistic option — it is the format.
+1. **35mm documentary film look.** The house-style preamble is: *hyper-realistic documentary photograph, shot on 35mm film with fine natural grain, muted cool-neutral palette, naturalistic motivated lighting, no lens flares, calm observational tone, landscape orientation.* For exterior/overcast panels add: *late-70s/early-80s scanned film negative, subtle dust specks, gentle gate weave, vintage lens softness with mild halation around practical lights.* This is the format of a **finished** BadCode frame — what an accepted panel looks like. It is **not** a reason to propose only one look: while a storyboard beat is still being chosen, see **Variety mode** above, where the house register is one candidate of four.
 
-2. **Muted cool-neutral palette, warm only as argument.** Desaturated dark greens, slate greys, lifted blacks are the default. Warmth (the fluorescent ward strip, the TV's CRT glow, the BMW's headlights bleeding gold through fog) is reserved for panels where the contrast carries meaning — opulence, menace, a reveal. Do not warm the palette because the mood calls for something "cosy."
+2. **Muted cool-neutral palette, warm only as argument.** Desaturated dark greens, slate greys, lifted blacks are the default. Warmth (the fluorescent ward strip, the TV's CRT glow, the BMW's headlights bleeding gold through fog) is reserved for panels where the contrast carries meaning — opulence, menace, a reveal. Do not warm the palette because the mood calls for something "cosy." The one exception is **Variety mode**, and only at the proposal stage: one candidate in a spread breaks the palette on purpose, so the muted frame is chosen and not defaulted.
 
 3. **Observational framing, not heroic framing.** Characters are found by the camera, not posed for it. Dawn rests her forehead on one hand at a kitchen table — she does not look up at the camera. Tarquin is shot from a high drone angle over wet tarmac. Karen is seen at a fixed phone box while the world changes around her. Unusual angles (aerial, over-the-shoulder, tent-interior POV) are tools for encoding class position, not just visual interest.
 

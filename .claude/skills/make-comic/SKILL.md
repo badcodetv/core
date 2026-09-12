@@ -165,6 +165,13 @@ and records the prompt + revision in `docs/stories/<story>/storyboard/pNN.md`.
 Prerequisite: **invoke `flow-automation`** — browser up, project open, failures owned.
 Do NOT puppeteer Flow via the Playwright MCP by hand.
 
+**Storyboard stills go to Kai as a spread, not a pick.** Four candidates per beat, each a
+*different idea*, the house register only one of them — `badcode-art-direction` -> **"Variety
+mode"** owns the rule, including where it does *not* apply (match-edits and contracted totems).
+Plan all four briefs in the batch plan below, name the one axis the spread is testing, and
+**batch by scene, not by beat**, so Kai reviews once per scene. Honing is the music loop:
+pick -> describe the change -> refine from the pick.
+
 **Budget this stage for policy blocks.** Flow's usage filter silently blocks a large
 share of prompts, and over CDP a block is indistinguishable from a timeout — on the
 camping recut it was over half of all generations. Two no-candidate failures on a
@@ -181,7 +188,8 @@ For each `pNN.md` with `status: planned`: invoke **`badcode-art-direction`**, ca
 `status: done`, embed the image, record the **exact prompt** used, and add a
 revision line.
 
-**Gate:** present a contact sheet of all panels; reroll weak ones before Stage 6.
+**Gate:** present a contact sheet — for a beat in variety mode, **all four candidates with
+their one-line ideas**, not just your pick — then hone or reroll before Stage 6.
 
 ---
 
