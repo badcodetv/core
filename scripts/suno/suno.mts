@@ -1265,8 +1265,20 @@ function extract(file: string, section: string, tasteSection = 'The shared profi
     throw new Error(`expected at least style + excludes in "${section}", found ${boxes.length}`)
   if (boxes.length === 2) boxes.push('')
   // 🔑 Atom first: a ```taste fence inside this style block wins over any shared section.
+  //
+  // 🗄 Taste is RETIRED (2026-09-10) and `load` ignores it, so a sheet written on v6 has neither a
+  // ```taste fence nor a shared-profile section. Before 2026-09-12 the fallback threw
+  // `section not found: /The shared profile/` on every such sheet, which made a v6 sheet
+  // unextractable for a value nothing reads. The fallback is now best-effort.
   const inAtom = tagged.find((b) => b.label === 'taste')?.body
-  const taste = inAtom ?? blocks(slice(new RegExp(tasteSection)))[0]
+  let taste = inAtom
+  if (taste === undefined) {
+    try {
+      taste = blocks(slice(new RegExp(tasteSection)))[0]
+    } catch {
+      taste = undefined
+    }
+  }
   return { style: boxes[0], exclude: boxes[1], lyrics: boxes[2], taste, tasteFromAtom: !!inAtom }
 }
 

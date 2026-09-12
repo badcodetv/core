@@ -14,6 +14,11 @@ sibling: git-push-origin-master-orchestral.md
 > work is v6, in the new UI. The takes this sheet made still exist and can be Covered onto v6;
 > the sheet cannot be re-run as written. A new round starts a v6 sheet — see
 > [`v5.5-era.md`](../../../suno-gpt/archive/v5.5-era.md) §5.
+>
+> 🔑 **The v6 sheet exists: [`narration-v6.md`](./narration-v6.md) (written 2026-09-12).** Generate
+> from there. **This file stays the reasoning record** — why the palette is what it is, the full
+> risk register, the trim ledger, the banked alternates, and cuts 4 and 5, which the v6 sheet does
+> not cover yet.
 
 # GPOM narration — cuts 1, 2 and 3
 
