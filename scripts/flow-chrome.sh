@@ -54,11 +54,30 @@ if curl -sf --max-time 2 "http://localhost:$PORT/json/version" >/dev/null 2>&1; 
 fi
 
 # Resolve a browser binary.
+#
+# 🔴 BRANDED CHROME IS FOR THE LISTENING CHANNEL ONLY (2026-09-12).
+# AI Studio's GenerateContent refuses Chrome for Testing outright: pressed by hand it answers
+# "Failed to create interaction: permission denied." (listen-mcp T3, confirmed by Kai 2026-09-11).
+# So the listening channel must run real Google Chrome. Every OTHER channel must NOT: Flow's and
+# Suno's logged-in profiles were written by the newer Chrome-for-Testing build, and Chrome refuses
+# a user-data-dir written by a newer version — preferring branded Chrome globally would silently
+# lock us out of accounts we are already signed into.
+LISTEN_CHANNEL="${LISTEN_CHANNEL:-2}"
 CHROME="${CHROME_BIN:-}"
+if [ -z "$CHROME" ] && [ "$(( PORT - 9221 ))" = "$LISTEN_CHANNEL" ]; then
+  for c in "google-chrome" "google-chrome-stable" \
+           "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"; do
+    if command -v "$c" >/dev/null 2>&1 || [ -x "$c" ]; then CHROME="$c"; break; fi
+  done
+  if [ -z "$CHROME" ]; then
+    echo "Channel $LISTEN_CHANNEL is the LISTENING channel and needs branded Google Chrome," >&2
+    echo "which is not installed. AI Studio refuses Chrome for Testing. Install it with:" >&2
+    echo "  cd /tmp && wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install -y ./google-chrome-stable_current_amd64.deb" >&2
+    exit 1
+  fi
+fi
 if [ -z "$CHROME" ]; then
-  for c in \
-    "google-chrome" "google-chrome-stable" "chromium" "chromium-browser" \
-    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"; do
+  for c in "chromium" "chromium-browser"; do
     if command -v "$c" >/dev/null 2>&1 || [ -x "$c" ]; then CHROME="$c"; break; fi
   done
 fi

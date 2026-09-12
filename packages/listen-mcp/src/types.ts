@@ -41,6 +41,21 @@ export interface Lens {
   hash: string
 }
 
+/**
+ * The Suno boxes that produced a take — the left-hand side of a desired-vs-actual diff.
+ * Scraped off the take's own song page (which displays them, and even offers
+ * `Copy styles to clipboard`), so the diff is against what actually went in, not what a sheet
+ * says should have.
+ */
+export interface SunoBoxes {
+  style: string
+  exclude: string
+  /** Omitted for an instrumental. Carries the bracketed section cues as well as the words. */
+  lyrics?: string
+  /** Free text: model, weirdness, style influence, Variety — whatever was recorded. */
+  settings?: string
+}
+
 export interface DescribeArgs {
   /** Linux or Windows path (D:\x\y.mp3 or /mnt/d/x/y.mp3). */
   path: string
@@ -53,6 +68,8 @@ export interface DescribeArgs {
   question?: string
   /** Visible model-menu name; default LISTEN_MODEL ?? 'Gemini 3.1 Pro'. */
   model?: string
+  /** The prompt that produced this audio. Only meaningful with the `suno-diff` lens. */
+  sunoBoxes?: SunoBoxes
 }
 
 export interface DescribeResult {

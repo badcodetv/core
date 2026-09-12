@@ -52,7 +52,16 @@ describe('listLenses / loadLens', () => {
     expect(listLenses(dir)).toEqual(['alpha', 'zeta'])
   })
   it('throws LENS_NOT_FOUND listing the real lenses', () => {
-    expect(() => loadLens(LENS_DIR, 'jazz')).toThrow(/^LENS_NOT_FOUND: .*music, sfx, voice/)
+    // Asserts each lens is listed, not the exact roster: the list grows (suno-diff was added
+    // 2026-09-12) and a test that pins it fails on every new lens for no reason.
+    let thrown: Error | null = null
+    try {
+      loadLens(LENS_DIR, 'jazz')
+    } catch (e) {
+      thrown = e as Error
+    }
+    expect(thrown?.message).toMatch(/^LENS_NOT_FOUND: no lens "jazz"\. Available: /)
+    for (const name of ['music', 'sfx', 'voice']) expect(thrown?.message).toContain(name)
   })
   it('refuses a name that tries to leave the directory', () => {
     expect(() => loadLens(dir, '../zeta')).toThrow(/^LENS_NOT_FOUND/)

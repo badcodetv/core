@@ -361,7 +361,7 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
 - [x] done
 - Notes: 2026-09-11 — done. `bash -n` clean, one grep hit inside `logged_in()`, `list` runs (all 8 channels down at the time, so the new pattern is not exercised live; T3 records whether signed-out AI Studio redirects).
 
-### T3: Live map of AI Studio's chat page   [Status: blocked (every run 403s) | Model: opus]
+### T3: Live map of AI Studio's chat page   [Status: mapped; blocked only on a successful RUN (403) | Model: opus]
 - **Scope:** a HUMAN-GATED discovery ticket. (a) Bring up a channel **≥ 2** for listening with
   `./scripts/browser-channel.sh up 2` (or the lowest free channel ≥ 2 per `list`) — never channel 1,
   which is Flow's. If it is not signed in, STOP and ask Kai/Jack to sign that window into **Jack's
@@ -411,6 +411,15 @@ called as `analyse(path, 4, 8, None)`; `bpm` = its `bpm` key or null.
   Chats have a per-chat off switch (Temporary chat); uploads do not. Stopped before any upload;
   `smoke-map.ts`, `studio-dom.ts` and the tone run are not done. Evidence:
   `docs/listening/automation.md` (partial).
+  2026-09-12 — **the map is DONE and now encoded in code.** `src/studio-dom.ts` carries every
+  selector from §2 of `docs/listening/automation.md`, and T6-T9's routines are written against it
+  (`studio-client.ts`). What is still ⬜ is only what no one can know until one generation
+  succeeds: the running/done signal and whether the reply's `innerText` keeps headings. So
+  `waitForReply` deliberately trusts NO single indicator — it waits for the model turn's text to
+  stop growing for 4 s with Run re-enabled, which holds whatever spinner the page turns out to
+  use, and the first successful run must confirm it and update §2. `smoke-map.ts` was not written:
+  the map it would have printed exists, and a discovery script for an already-discovered page is
+  dead weight. 🔴 **Still blocked on branded Chrome** — the one human step.
 
 ### T4: `scripts/audio-measure.py`   [Status: done | Model: sonnet]
 - **Scope:** implement per the Interfaces section. Mono input → `channels: 1`,

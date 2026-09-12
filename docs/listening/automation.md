@@ -5,11 +5,16 @@ routines** — no model reads the page to decide a click. This file is the evide
 selector in [`packages/listen-mcp/src/studio-dom.ts`](../../packages/listen-mcp/src/studio-dom.ts).
 Format mirrors [`docs/suno-gpt/automation.md`](../suno-gpt/automation.md).
 
-> 🔴 **Status 2026-09-11: BLOCKED — every generation is refused (403).** Mapped live through the
-> upload and the submit. Then every run, on every model, with or without audio, in a Temporary or an
-> ordinary chat, came back *"An internal error has occurred."* — behind it, `GenerateContent`
-> returned **403 "The caller does not have permission"** (Trap 4). The Drive question (Trap 1) is
-> ruled. The reply's formatting and the running/done signal are ⬜ until one run succeeds.
+> 🔴 **Status 2026-09-12: the page is MAPPED and the code is written; blocked on one human step.**
+> Everything in §2 is read off the live page and is now encoded in
+> [`studio-dom.ts`](../../packages/listen-mcp/src/studio-dom.ts), with the routines in
+> `studio-client.ts` and the `listen` server registered in `.mcp.json`. What remains is **not a
+> mapping problem**: every generation is refused with **403 "The caller does not have permission"**
+> (Trap 4), because AI Studio rejects Chrome for Testing — pressed by hand it says *"Failed to
+> create interaction: permission denied."* **The fix is branded Google Chrome on the listening
+> channel** (guarded in `scripts/flow-chrome.sh` as of 2026-09-12 so no other channel switches
+> binary), then a human signs that window in. The reply's formatting and the running/done signal
+> stay ⬜ until one run succeeds, which is why `waitForReply` trusts no single indicator.
 
 ## 1. Connecting
 
@@ -138,6 +143,11 @@ Navigating the tab to the new-chat URL does **not** start a new chat — the old
 
 ## Revision log
 
+- **2026-09-12** — the map is encoded in `studio-dom.ts` and driven by `studio-client.ts`;
+  `listen_status` / `listen_describe` are live in `.mcp.json`; `flow-chrome.sh` now gives branded
+  Chrome to the listening channel ONLY (other channels keep Playwright's Chromium, so Flow's and
+  Suno's profiles are not locked out by a version downgrade). Still one human step: install Chrome,
+  sign in.
 - **2026-09-11 (later)** — Drive gate ruled; upload, chip, turns and Run mapped; Traps 4–6. Every
   generation 403s — T3 blocked on it.
 - **2026-09-11** — first live map (listen-mcp T3), stopped at stop gate (2) before any upload.

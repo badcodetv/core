@@ -84,3 +84,46 @@ describe('buildPrompt', () => {
     expect(buildPrompt(args)).toBe(buildPrompt(args))
   })
 })
+
+describe('renderSunoBoxes — the diff\'s left-hand side', () => {
+  const boxes = { style: 'Arena rock over drum and bass', exclude: 'sung chorus, major key', lyrics: '[Verse 1]\nwords' }
+
+  it('is only included when boxes are given', () => {
+    expect(buildPrompt({ lens, measurements: m() })).not.toContain('THE PROMPT THAT PRODUCED')
+    expect(buildPrompt({ lens, measurements: m(), sunoBoxes: boxes })).toContain('THE PROMPT THAT PRODUCED')
+  })
+
+  it('keeps the create form\'s order: style, exclude, lyrics', () => {
+    const p = buildPrompt({ lens, measurements: m(), sunoBoxes: boxes })
+    expect(p.indexOf('## Style box')).toBeLessThan(p.indexOf('## Exclude box'))
+    expect(p.indexOf('## Exclude box')).toBeLessThan(p.indexOf('## Lyrics box'))
+  })
+
+  it('carries every box verbatim, and counts the style box against the 1,000 cap', () => {
+    const p = buildPrompt({ lens, measurements: m(), sunoBoxes: boxes })
+    for (const v of [boxes.style, boxes.exclude, boxes.lyrics]) expect(p).toContain(v)
+    expect(p).toContain(`(${boxes.style.length} characters)`)
+  })
+
+  // 🔴 The failure mode the lens is written against: with the prompt in hand a model will
+  // confirm whatever it was told to expect. The warning must travel WITH the boxes.
+  it('warns against confirming a clause it cannot hear', () => {
+    const p = buildPrompt({ lens, measurements: m(), sunoBoxes: boxes })
+    expect(p).toMatch(/cannot hear a clause, the answer is "absent"/)
+  })
+
+  it('labels an empty box rather than dropping it — a missing exclude list is itself a finding', () => {
+    const p = buildPrompt({ lens, measurements: m(), sunoBoxes: { style: 'x', exclude: '' } })
+    expect(p).toContain('## Exclude box\n(empty — nothing was given to Suno in this box.)')
+  })
+
+  it('omits the lyrics heading for an instrumental', () => {
+    const p = buildPrompt({ lens, measurements: m(), sunoBoxes: { style: 'x', exclude: 'y' } })
+    expect(p).not.toContain('## Lyrics box')
+  })
+
+  it('puts the boxes before the headings, so the answer format is read last', () => {
+    const p = buildPrompt({ lens, measurements: m(), sunoBoxes: boxes })
+    expect(p.indexOf('THE PROMPT THAT PRODUCED')).toBeLessThan(p.indexOf('Answer using exactly these headings'))
+  })
+})
