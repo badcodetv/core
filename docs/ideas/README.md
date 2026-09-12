@@ -70,6 +70,10 @@ scannable metadata lives in the table.
 | [The BadCode Robot](badcode-robot.md) | build the superintelligence out of the cheapest open-source parts — the build is the electronics lesson | video · software | seed |
 | [The Agent Directory](agent-directory.md) | the early search engine for agent services — free to search, free to list, pay to be promoted | software | seed |
 | [The AI Tools Directory](ai-tools-directory.md) | scrape AI Samson's videos into a searchable index of every AI tool, tip and trick | software | seed |
+| [Make the Music Ourselves; Take Only the Voice](ableton-bed-suno-voice.md) | Suno becomes the newsreader, not the band — the bed is ours, in Ableton | music | parked |
+| [Ableton Automation](ableton-automation.md) | hands inside Ableton, the way `premiere-mcp` has hands inside Premiere | software · music | parked |
+| [Sound Design in Serum, by Computer Use](serum-via-computer-use.md) | an agent that turns the knobs — the camping track's reference synth, actually owned | software · music | parked |
+| [More Premiere Automation](premiere-automation-gaps.md) | the gaps the bridge's own notes admit — no on-screen text, no whole-timeline read | software · video | parked |
 
 ## Graduated & canon (the rest of the map)
 
