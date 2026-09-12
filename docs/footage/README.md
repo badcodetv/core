@@ -27,6 +27,16 @@ there before adding a row.
 | `gov.archives.arc.36070` | archive.org · FedFlix | 🟢 | CC0, same basis | none | MMT sc.02 (*The Battle of Britain*) — candidate, **unwatched** | 2026-09-12 |
 | `gov.ntis.ava06858vnb1` | archive.org · FedFlix | 🟢 | `licenses/publicdomain/`, same basis | none | MMT sc.05 (*Know Your Ally: Britain*, 1943) — candidate, **unwatched** | 2026-09-12 |
 | `gov.archives.arc.38936` | archive.org · FedFlix | 🟢 | CC0, same basis | none | 🔴 **Rejected for MMT sc.07** — it is an *American* VE Day (Times Square, Truman). Kept as context only | 2026-09-12 |
+| `NARA - 531280` (Commons) | Wikimedia Commons · NARA | 🟢 | "Public domain", credit *U.S. National Archives and Records Administration*, `AttributionRequired: false`; US federal work | none | MMT sc.07 — VE Day, English woman with Allied servicemen, 2813×3000. **On disk** | 2026-09-12 |
+| `NARA - 541917` (Commons) | Wikimedia Commons · NARA | 🟡 | "Public domain" + NARA credit — **but its own description says *"part of the New York Times Paris Bureau Collection"***. Custody ≠ authorship | unknown | MMT sc.02 — first mass air raid on London, 7 Sep 1940. **Held back** | 2026-09-12 |
+| `INF 2/66` (TNA) | nationalarchives.gov.uk | 🟢 | **OGL v3**, stated in the page footer; 1948 Crown publication | ✅ *"Contains public sector information licensed under the Open Government Licence v3.0."* | MMT sc.09 — the NHS launch leaflet, 1837×2302. **On disk.** 🔴 It is the *Scotland* printing | 2026-09-12 |
+| `MH 55/965` (TNA) | nationalarchives.gov.uk | 🟢 | **OGL v3**, same footer | ✅ same OGL line | MMT sc.12 — the "no fairy wand was waved" pamphlet. 🔴 Published image is only ~900 px | 2026-09-12 |
+| IWM-sourced `PD-UKGov` stills (Commons) | Wikimedia Commons · **files uploaded from `media.iwm.org.uk`** | 🟡 | Commons says "Public domain" (Crown copyright expired 50 yrs from creation). **The file came off IWM's server, and IWM's free tier bans campaigning use** | none claimed | MMT sc.02, 07 **and** 10 — VE Day London, air-raid damage, prefab housing. 🔴 **One Kai ruling covers the class** | 2026-09-12 |
+
+🔴 **Two traps this table already caught.** *"NARA"* in a credit is **not** automatically a US
+federal work — `541917` is a donated *New York Times* photograph in NARA custody, and custody is not
+authorship. And Commons' *"Public domain"* is a **US-law** finding: for a British subject read the
+photographer's death date, not the tag (a Howard Coster portrait tagged PD there runs to 2029).
 
 🔴 **Green here clears copyright and nothing else.** Every one of these films contains identifiable
 real people. Recutting them to carry an argument the original did not is defamation by false
@@ -46,6 +56,8 @@ identifier **verbatim** in the filename: it is the only durable link back to the
 | Story | Scene | File | Bytes | sha256 |
 | --- | --- | --- | --- | --- |
 | magic-money-tree | `s01-dunkirk` | `gov.fdr.25.4.mpeg` | 369,576,027 | `048f57d06d8267265f28b9ed6c33a5530083f98c74081689de668f91104a2a1f` |
+| magic-money-tree | `s07-victory` | `NARA-531280-ve-day.tif` | 8,439,281 | `c327a0276228814e407c8a3f35fc94f24a69ef65ddbd22aeaccfade87743fbb8` |
+| magic-money-tree | `s09-nhs-opens` | `INF-2-66-02-NHS-diagram-leaflet.jpg` | 999,844 | `e3bc369b9d3d08f7f3c837f33765683c25df01fa90a8cacd85d104312bab011d` |
 
 ## Per-story ledgers
 

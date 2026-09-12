@@ -3,7 +3,7 @@ id: magic-money-tree
 title: "Footage ledger — The Future He Never Saw"
 status: in-progress
 updated: 2026-09-12
-pass: 1 — war family verified; UK / NHS / austerity families still open
+pass: 2 — war family verified; NHS documents open and on disk; one Kai ruling gates the British picture
 ---
 
 # Footage ledger — *The Magic Money Tree: The Future He Never Saw*
@@ -166,7 +166,78 @@ re-searched by **title** across `collection:usgovfilms` and `collection:prelinge
 
 ---
 
-## 3. 🔴 Scene 07 has no British victory footage, and the obvious substitute is a lie
+## 2e. ✅ Pass 2 — the NHS documents, and an American way round the British problem
+
+Two things opened after Kai's rulings, both verified live 2026-09-12.
+
+### Scene 09 is solved, and the document writes our line better than we did
+
+The National Archives publishes the launch leaflet **`INF 2/66`** as a **1837×2302 JPEG** — a real
+scan, not a thumbnail, and tall enough to push into at 1080p with room to spare. The page it sits
+on states in its footer: *"All content is available under the Open Government Licence v3.0, except
+where otherwise stated."*
+
+```bash
+curl -A 'Mozilla/5.0' -o INF-2-66-02-NHS-diagram-leaflet.jpg \
+  "https://www.nationalarchives.gov.uk/wp-content/uploads/2019/03/INF-2-66-02-NHS-diagram-leaflet.jpg"
+# 999,844 B · 1837×2302 JPEG
+# sha256 e3bc369b9d3d08f7f3c837f33765683c25df01fa90a8cacd85d104312bab011d
+```
+
+**Credit owed, verbatim:** *Contains public sector information licensed under the Open Government
+Licence v3.0.*
+
+📝 **Read what it actually says.** The leaflet's own body text is a better version of scene 09's
+narration than scene 09's narration:
+
+> *"Anyone can use it—men, women and children. There are no age limits, and no fees to pay."*
+>
+> *"He will be paid, out of public funds to which all contribute as taxpayers."*
+
+That second line **is** the scene's beat — *"Public funding changed who faced the bill"* — in 1948's
+own words, in 1948's own typeface. Consider putting the document on screen and letting it say it.
+
+🔴 **One thing to see before it goes on screen.** This printing reads *"Issued by the Department
+of Health for Scotland"* and *"This advertisement appears in selected Sunday, Morning and Evening
+newspapers in Scotland."* True for Britain, but a viewer who reads the small print sees *Scotland*.
+Either accept it, crop below the rule, or find the England/Wales printing.
+
+*(OGL exempts crests — but only where they are not *"an integral part of a document"*. The Royal
+Arms printed at the head of the leaflet is integral. Fine.)*
+
+### Scene 12's source is confirmed, at a smaller size
+
+TNA's *The Foundation of the NHS* page carries **`MH 55/965`** and quotes the September 1948
+pamphlet verbatim — *"no fairy wand was waved on July 5th"*, with the advice not to *"expect
+miracles"*. Same OGL footer. 🔴 **But the document images on that page top out at ~900 px**, which
+is a partial or an inset, not a full-frame push. A bigger scan needs a Discovery-catalogue or
+reading-room route.
+
+*(That page also names ten more references worth knowing: `PREM 4/89/2`, `MH 55/907`,
+`CAB 66/46/24`, `PREM 8/844`, `BN 10/32` among them.)*
+
+### 🇺🇸 The way round the British picture problem: find the American photographer
+
+British subjects, photographed by **US** government photographers, are **US federal works** —
+🟢 genuinely green, no IWM question, no credit owed. Wikimedia Commons carries them credited
+*"U.S. National Archives and Records Administration"* at 3,000 px.
+
+| File | Pixels | Shows | Verdict |
+| --- | --- | --- | --- |
+| `Jubilant_American_soldier_hugs_motherly_English_woman… - NARA - 531280.tif` | 2813×3000 | VE Day, an English woman and Allied servicemen, faces lit up | 🟢 **Green.** NARA credit, `AttributionRequired: false`, no third-party collection note. **On disk** — 8,439,281 B, sha256 `c327a027…` |
+| `This_picture,_taken_during_the_first_mass_air_raid_on_London,_7th_September_1940… - NARA - 541917.tif` | 3000×2467 | The first mass raid on London | 🟡 **Amber, and only careful reading catches it.** Its own description says *"This image is part of the **New York Times Paris Bureau Collection**."* A newspaper's photograph in NARA custody is **not** a US federal work — custody is not authorship |
+
+🔴 **That second row is the general lesson: "NARA" in the credit is not automatically §105.**
+Read the description for a donated third-party collection before calling it green.
+
+**Checked and rejected:** *Special Film Project 186* — the US Army Air Forces' colour unit, which
+sounded like the answer for a colour British 1945. It shot Germany; Commons holds two low-resolution
+Buckingham Palace frames and nothing else British. And archive.org's six `18-sfp-*` items carry
+**no `licenseurl` and a personal uploader**, so they are amber even where the subject fits.
+
+---
+
+## 3. 🔴 Scene 07 has no British victory *footage*, and the obvious substitute is a lie
 
 `gov.archives.arc.38936` (*The War Ends in Europe*) is green, cheap and wrong. Its frames were
 scrubbed this session at 15-second intervals: **Times Square crowds, Truman announcing the surrender
@@ -186,14 +257,24 @@ this session, has a deep set. Pick of the crop by size:
 | `Air_Raid_Damage_in_Britain_…_HU36188.jpg` | 5163×4071 | same | same |
 | `Bomb_Damage_in_London_…_HU36157.jpg` | 1300×950 | same | same |
 
+✅ **But scene 07 now has a British victory *still* that is green** — `NARA - 531280`, above.
+The IWM-sourced files below are better and wider; they are the ones the ruling is about.
+
 🟡 **Why these are amber and not green.** The *copyright* argument is strong: a 1945 photograph by
 an official UK government photographer is Crown copyright, which expires 50 years from creation, so
 it genuinely is out of copyright — that is what Commons' `PD-UKGov` tag asserts. But the Commons
 `Credit` field shows the file was **lifted from IWM's own media server**, and IWM is red on our
 catalogue: its free tier expressly excludes *"fundraising or campaigning on behalf of
 organisations."* That is the two-questions split in its purest form — *is the work free?* probably
-yes; *is this file, from this host, clear for us?* unanswered. **Per-item human call. Do not launder
-it to green.**
+yes; *is this file, from this host, clear for us?* unanswered. **Do not launder it to green.**
+
+🔴 **This one question now gates three scenes, not one.** Pass 2 traversed Commons' British
+post-war housing categories for scene 10 and found the same thing: *every* usable photograph
+(`Post War Planning and Reconstruction in Britain: the Construction of Temporary Housing`
+`D24220`–`D24230`, `Design Models of Prefabricated Housing` `D22070`–`D22075`) is credited to
+`media.iwm.org.uk`. **So scenes 02, 07 and 10 all wait on the same ruling** — and it is one ruling
+about a class of file, not a per-image chore. 🔴 Those housing files are also only **~800 px**,
+which is an inset, not a push-in.
 
 ---
 
@@ -278,7 +359,9 @@ convention `<mediaRoot>/<story>/clips/<scene>/` — the same shape as `gitpush-o
 
 | Beat | File | Bytes | sha256 |
 | --- | --- | --- | --- |
-| `s01-dunkirk` | `gov.fdr.25.4.mpeg` | 369,576,027 | `048f57d06d8267265f28b9ed6c33a5530083f98c74081689de668f91104a2a1f` |
+| `s01-dunkirk` | `gov.fdr.25.4.mpeg` · 🟢 | 369,576,027 | `048f57d06d8267265f28b9ed6c33a5530083f98c74081689de668f91104a2a1f` |
+| `s07-victory` | `NARA-531280-ve-day.tif` · 🟢 (2813×3000) | 8,439,281 | `c327a0276228814e407c8a3f35fc94f24a69ef65ddbd22aeaccfade87743fbb8` |
+| `s09-nhs-opens` | `INF-2-66-02-NHS-diagram-leaflet.jpg` · 🟢 OGL, credit owed (1837×2302) | 999,844 | `e3bc369b9d3d08f7f3c837f33765683c25df01fa90a8cacd85d104312bab011d` |
 
 **The command that fetched it, verbatim:**
 
@@ -321,8 +404,10 @@ duration=809.009011      # matches the declared length of 809.01
 | 2 | Is a `PD-UKGov` photograph pulled from IWM's own media server clear for us? — **now the biggest single blocker**, because it gates the British picture in scenes 02, 07 and 10 | 🔴 **Kai**, one ruling covers the class |
 | 2b | 💷 Would **£100–200 on a per-image still licence** buy scene 07 or 10 something Commons cannot? Unpriced — needs a live check of a per-image library's terms *and* its political-use clause | Next pass, then 🔴 **Kai** approves the spend |
 | 3 | Is each chosen *Divide and Conquer* shot actuality or a dramatised insert? | A human watching it |
-| 4 | Scene 07 — British victory. Stills only, or is there a US-federal film containing British VE-Day material nobody has found? | Next pass |
-| 5 | Scene 10 — post-war council housing. Nothing searched yet | Next pass |
+| 4 | Scene 07 — a green British VE-Day **still** now exists (`NARA - 531280`). A green British VE-Day **film** still does not | Next pass, low hope |
+| 5 | Scene 10 — searched. Everything found is IWM-sourced and ~800 px. Folded into question 2 | 🔴 **Kai** (question 2) |
+| 5b | Scene 12 — `MH 55/965` is confirmed and OGL, but the published image is only ~900 px. A larger scan needs TNA Discovery or a reading-room order | Next pass |
+| 5c | Scene 09 — the leaflet on disk is the **Scotland** printing. Accept, crop, or find the England/Wales one | 🔴 **Kai**, small |
 | 6 | *Know Your Ally: Britain* (`gov.ntis.ava06858vnb1`) — 42 minutes, unwatched. The likeliest single source for scene 05 | Next pass |
 | 7 | Pin Universal Newsreel's 1976 dedication at NARA rather than on archive.org | Next pass |
 
@@ -330,7 +415,7 @@ duration=809.009011      # matches the declared length of 809.01
 
 ## 9. Provenance of this file
 
-Pass 1, 2026-09-12. Every licence statement above was fetched in that session; every "dead" was
+Passes 1 and 2, both 2026-09-12. Every licence statement above was fetched in that session; every "dead" was
 confirmed with both `/metadata/` and `/details/`. Corrections owed to
 [`docs/video-fx/footage-sources.md`](../../video-fx/footage-sources.md) are listed in §2c and §3 and
 have been written back there.
