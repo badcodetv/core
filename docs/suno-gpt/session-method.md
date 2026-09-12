@@ -51,6 +51,44 @@ saw it once. If no it is a log entry.
 song pays for again. Camping's history file exists because the promotion habit was there
 from round 1; the rules that came out of it are now doing work on tracks that do not exist yet.
 
+
+## How a sheet is SHAPED, so the tools can read it
+
+*Ruled 2026-09-12, after two sheets failed the same structural assumption on the same day, in
+opposite directions, and both failures were silent.*
+
+`suno.mts extract` pulls a sheet's boxes by heading. It slices a section to **the next heading of
+level 2 or 3**, then takes the fenced blocks inside it in order: Style, Exclude, Lyrics. So:
+
+🔑 **An atom is one `###` heading holding two or three fenced boxes, and nothing else.**
+
+| Break the rule this way | What extract does | What you hear |
+| --- | --- | --- |
+| Atoms as `####` under a shared `###` | reads the **first three fences in the whole group** — every later atom's boxes are invisible | the right boxes, **by luck of ordering**, until someone reorders the file. GPOM's archived v5.5 sheet has sections holding **6 and 17** boxes this way |
+| Each box under its **own** heading | the atom section holds one fence, or none — so extract takes whatever fence comes first, which may be a shell example | camping-v6, 2026-09-12: a shell example arrived as the Style box, every box shifted by one, and the lyrics were **dropped entirely** — a silent instrumental, nearly for 20 credits |
+| A `bash`/`python` fence inside an atom | counted as a box | as above |
+
+**Two more rules that fall out of it:**
+
+- **The extract key must be unique in the whole file.** `extract` takes the **first** place the key
+  appears, and a bare atom name matches the sheet's own prose long before it reaches the heading.
+  Use a key that only the heading can match — we use ``` `cut1-voice` — ``` (backtick and dash) —
+  and write it next to the atom.
+- **Never put a second fenced block inside an atom.** Examples and scripts live in `##` sections.
+
+**Check it mechanically rather than by eye:**
+
+    python3 scripts/suno/measure-boxes.py docs/stories/<story>/songs/<sheet>.md
+
+It reports every `###` section — measured, prose, or skipped and why — and exits non-zero if it
+found no atoms at all, if an atom holds more boxes than extract will read, or if a Style box is
+over Suno's cap. 🔑 **It reports the sections it skips on purpose**: the first version printed
+nothing and exited 0 in exactly the camping-v6 case, and silence reads like a pass.
+
+⚠️ **An older sheet whose boxes sit one per heading is not wrong, it is just not extractable** —
+`camping.md` is the example. Its boxes get pasted by hand, and the script says so rather than
+pretending.
+
 ---
 
 ## The loop

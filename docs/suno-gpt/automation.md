@@ -205,6 +205,23 @@ This confirms at the DOM level what
 gets the check for free: compare the source length against `textarea.value.length` after filling,
 and read Suno's own `n/1000` counter as a second opinion.
 
+🔑 **But the cap's real victim is the box automation never touched.** Measured 2026-09-12 across
+**33 camping lanes and every GPOM narration box**: not one was ever over the cap — the highest sit
+at 994, 983 and 997, which is three characters of headroom on the last. **Every box we paste from a
+sheet has been fine.** The one real violation was **grown by hand in the browser**, fusing clauses
+from several lanes into 1,186 characters; its drum mechanics were at the tail, so a request for
+174 BPM dark drum and bass arrived as **117 BPM indie breakbeat**, and nobody could hear why.
+
+So the rule is not "keep sheets short". It is:
+
+1. **Measure the sheet** — `python3 scripts/suno/measure-boxes.py <sheet.md>` before a paid round.
+2. 🔴 **Paste from the sheet; never type into the Style box.** A box typed into the browser is a
+   box nobody measured, and it is the only kind that has ever been truncated.
+3. If a box must grow by hand, put the growth back in the sheet and measure it there.
+
+⚠️ **`Variety` above Off rewrites the Style box too** (§9), so a measured box is not a guarantee
+about what Suno finally read — only about what we sent.
+
 
 ### Trap 6 — the right-hand pane is shared
 
