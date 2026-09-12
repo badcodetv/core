@@ -3,7 +3,7 @@ id: magic-money-tree
 title: "Footage ledger — The Future He Never Saw"
 status: in-progress
 updated: 2026-09-12
-pass: 3 — war family, NHS documents and the British picture all sourced and on disk
+pass: 5 — every scene resolved to a source or an honest gap; 15 assets on disk; one ruling owed
 ---
 
 # Footage ledger — *The Magic Money Tree: The Future He Never Saw*
@@ -62,7 +62,7 @@ four need nothing real at all and belong to Flow.
 | 07 | Victory does not come with a roof | VE Day in Britain; the 1945 election; Keynes on the American loan in the Lords | **Actuality (British)** + stills | ✅ **Stills solved — four on disk, one in colour.** 🔴 Still no free British victory *film*; the US VE-Day reel is American and must not stand in. See §3 |
 | 08 | 21 April 1946 | Keynes's death | **One still, held** | ✅ `Keynes_Martin.jpg` — `PD-UK-unknown`, Harvard, 1348×1470. See §4 |
 | 09 | The promise gets a working day | The NHS opens, 5 Jul 1948; the launch leaflet | A document + stills | 🇬🇧 **TNA, OGL** (leaflet `INF 2/66`) — ✅ **unblocked by the credits ruling**; 🔴 still no free moving image |
-| 10 | The key in the door | Post-war council building into the 1950s | Actuality or stills | ✅ **Licence cleared** (Commons `PD-UKGov`) — 🔴 but everything found is only ~800 px, and no free film |
+| 10 | The key in the door | Post-war council building into the 1950s | Actuality or stills | ✅ **Cleared, four on disk** — but **all capped at 800 px**. See §6b: the film's only real remaining gap |
 | 11 | The promise requires another shift | June 2010 Budget; nurses on *Question Time*, 2 Jun 2017 | Broadcast + Parliament AV | 🔴 **Red both ways.** BBC owns the programme; Parliament's AV terms bar our use. → subtitle cards + a silent timeline |
 | 12 | They knew about the magic | The September 1948 NHS pamphlet, TNA `MH 55/965` | A document | 🇬🇧 **TNA, OGL** — ✅ **unblocked by the credits ruling** |
 | 13 | What is actually missing? | Nothing specific — present-day hospital, training, building | Invented / generic | **Flow** |
@@ -396,6 +396,35 @@ own notice, not just the page.
 
 ---
 
+## 5b. 🔴 Scene 10 is the film's one remaining picture problem
+
+Licence-cleared, searched hard, and **every British post-war housing photograph on Commons is
+capped at 800 px** — because Commons holds IWM's *web derivative*, not a scan. Four are on disk and
+they are on-subject (*"Designs for the People's House"*, Newton Aycliffe new town, prefabricated
+houses, Welwyn Garden City), but 800 px in a 1920-wide frame is a 2.4× upscale.
+
+**What was tried and did not work**, so nobody repeats it:
+
+| Attempt | Result |
+| --- | --- |
+| Larger versions of the same IWM set | None. Every file in the `Post War Planning…` / `POST WAR PLANNING…` prefixes is 800 px |
+| Commons categories for the new towns (Harlow, Stevenage, Newton Aycliffe, Council houses in England) | Empty, or unrelated (a moth trap in Stevenage) |
+| A US federal film of European reconstruction — *Big Picture: The Changed Face of Europe* (`gov.archives.arc.2569840`, 🟢 CC0) | Indexed from thumbnails: continental Europe and Cold War politics, Brandenburg Gate, missiles. **Not British housing.** The trick that cracked scene 05 does not work twice |
+
+**Three ways out, in order of cost:**
+1. **Treat 800 px as an inset, not a plate.** Letterbox it, frame it as a document, caption it — the
+   scene is 35 seconds and the beat is *"a key in a front door"*, which a small honest photograph
+   can carry.
+2. **🔴 Kai's call: accept ShareAlike?** Geograph's very large British photographic archive is
+   CC-BY-SA, which we exclude **not** because of the credit — credits are settled — but because
+   ShareAlike would relicense **the finished film** as CC-BY-SA. For a collective that wants ideas to
+   spread that might be welcome rather than a cost, but it is a decision about the whole film, not
+   one shot, and it has never been put to him.
+3. **Flow.** The storyboard allows clearly distinguishable illustration, and a front door with a key
+   in it is not a thing whose *being real* is the point.
+
+---
+
 ## 6. Still red, and no free route exists
 
 | Beat | Why | What we do instead |
@@ -440,6 +469,10 @@ convention `<mediaRoot>/<story>/clips/<scene>/` — the same shape as `gitpush-o
 | `s06-job-after-uniform` | `LSE-1383-demand-the-beveridge-plan-1944.jpg` · 🟢 (1498×2396) | 601,413 | `59178ad07db2b0cdbbc8591d8680ea4ce64e1e4ea22430edf8e8054e781421ea` |
 | `s07-victory` | `TNA-CO1069-778-3-loan-signing-1945-orig.jpg` · 🟢 (799×676) | 335,711 | `99fd2c2828e0c4410b50e30b5f8610058955ef20671d2799f46d8086c1390f3e` |
 | `s08-keynes-dies` | `Keynes_Martin-monks-house.jpg` · 🟢 (1348×1470) | 453,054 | `2d81b4f51247736c5f2a0ead67ed688cb0e747b3a49a03f5fd29dc9f1146c876` |
+| `s10-key-in-the-door` | `MOW-T51849-designs-for-the-peoples-house.jpg` · 🟢 (800×614) | 69,090 | `0f6f0f8bdb3d25fe9d9e5296cc094840a587c26573396bb923087684d37495d4` |
+| `s10-key-in-the-door` | `MOW-T59586-newton-aycliffe-new-town.jpg` · 🟢 (800×584) | 72,056 | `688868033a1ef9b788c39e6992dc85a9ab6c753298769203957d3f86bfb74a2f` |
+| `s10-key-in-the-door` | `MOW-T4550-prefabricated-houses.jpg` · 🟢 (800×568) | 111,747 | `8827e30029a697556b889ef5a65863fc5cb3b772e5cfe3936328dbbe28d07c1c` |
+| `s10-key-in-the-door` | `D14962-welwyn-garden-city-model-new-town.jpg` · 🟢 (800×608) | 78,398 | `8cb7dc68a447cf7030164f5b9fb797ef13b4f1edeece5e4e42e6d7707dde2010` |
 
 **The command that fetched it, verbatim:**
 

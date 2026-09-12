@@ -75,6 +75,10 @@ identifier **verbatim** in the filename: it is the only durable link back to the
 | magic-money-tree | `s06-job-after-uniform` | `LSE-1383-demand-the-beveridge-plan-1944.jpg` | 601,413 | `59178ad07db2b0cdbbc8591d8680ea4ce64e1e4ea22430edf8e8054e781421ea` |
 | magic-money-tree | `s07-victory` | `TNA-CO1069-778-3-loan-signing-1945-orig.jpg` | 335,711 | `99fd2c2828e0c4410b50e30b5f8610058955ef20671d2799f46d8086c1390f3e` |
 | magic-money-tree | `s08-keynes-dies` | `Keynes_Martin-monks-house.jpg` | 453,054 | `2d81b4f51247736c5f2a0ead67ed688cb0e747b3a49a03f5fd29dc9f1146c876` |
+| magic-money-tree | `s10-key-in-the-door` | `MOW-T51849-designs-for-the-peoples-house.jpg` | 69,090 | `0f6f0f8bdb3d25fe9d9e5296cc094840a587c26573396bb923087684d37495d4` |
+| magic-money-tree | `s10-key-in-the-door` | `MOW-T59586-newton-aycliffe-new-town.jpg` | 72,056 | `688868033a1ef9b788c39e6992dc85a9ab6c753298769203957d3f86bfb74a2f` |
+| magic-money-tree | `s10-key-in-the-door` | `MOW-T4550-prefabricated-houses.jpg` | 111,747 | `8827e30029a697556b889ef5a65863fc5cb3b772e5cfe3936328dbbe28d07c1c` |
+| magic-money-tree | `s10-key-in-the-door` | `D14962-welwyn-garden-city-model-new-town.jpg` | 78,398 | `8cb7dc68a447cf7030164f5b9fb797ef13b4f1edeece5e4e42e6d7707dde2010` |
 
 ## Per-story ledgers
 
