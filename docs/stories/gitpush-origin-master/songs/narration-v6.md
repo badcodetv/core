@@ -164,6 +164,18 @@ it just stops obeying the last thing you wrote.
 ⚠️ **The three voice boxes have ~15 characters of headroom each. A new clause means an old one
 leaves — decide which before writing it, not after.**
 
+✅ **And the v5.5 takes were NOT truncated — measured 2026-09-12.** Every box in the archived sheet
+is under the cap: the highest are 994, 983, 967, 966, 949, 945, and `cut1-voice` revision B — the
+atom behind the take Kai accepted — is **911**. 🔑 **So truncation is not the explanation for the
+faint bed**, and the suspects in §0 stand unchanged. The three over-cap boxes were written *today*,
+carrying the v5.5 text forward and adding a sentence to it; they never reached Suno.
+
+⚠️ **But six of those v5.5 boxes sat between 930 and 994** — as little as six characters of
+headroom. Any round that had added a clause without measuring would have gone over in silence.
+Thread 05 lost a round to exactly that on 2026-09-12: a 1,186-character box asked for 174 BPM drum
+and bass and got 117 BPM indie breakbeat, because the drum mechanics were at the tail and the
+guitar clauses at the front survived. **Measure before you paste.**
+
 **What was already spent to get under the cap** (do not try to spend it twice): *with no comedy and
 no novelty* (both words are in the excludes, which is the enforcement); *no backing,* (`backing
 track` is excluded); *no held notes,* and *no synthesiser,* (both excluded); *no brass,* in cut 3
