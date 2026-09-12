@@ -256,11 +256,15 @@ valid, not short.
 
 ### 🔴 Never automate downloading
 
-Suno is introducing a licensing constraint that **caps downloads per month**. A script must
-never spend that metered allowance. Automation generates, names, files into a workspace, and
-**stops**. Downloading and stem-splitting stay deliberate human acts.
+Suno **caps downloads per month** — a **cost rule, not a permission one**. A script must never
+spend that metered allowance. Automation generates, names, files into a workspace, and **stops**.
+Downloading and stem-splitting stay deliberate human acts because the allowance is small.
 
 There is no download tool and there must not be one.
+
+✅ **Recording the player's output is not a download** and is explicitly allowed: it spends no
+allowance and is equivalent to pressing Play (Kai, 2026-09-12). That is how the listening loop
+gets a file — `suno.mts record`, and `docs/suno-gpt/automation.md` §10.
 
 ### 🔴 Credits are Kai's to spend
 

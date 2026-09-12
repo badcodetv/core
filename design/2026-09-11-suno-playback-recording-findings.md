@@ -7,9 +7,10 @@ Status: experiment complete. A proper tool is not built yet. Relates:
 
 Claude can't hear. The listening plan gives it ears (Gemini through AI Studio), but it needs an
 audio file, and **Suno downloads are human-only** because of the monthly allowance
-(`docs/suno-gpt/automation.md:335`). Kai's ruling today: recording the player's output is allowed
-**as a preview copy only**. It's an experiment. Anything released still goes through Suno's
-official download.
+(`docs/suno-gpt/automation.md:335`) — a cost rule, not a permission one. Recording the player's
+output is simply **automating the Play button**: same request, same stream, one more play on the
+song's count (Kai, 2026-09-12 — *"we're just automating pressing play"*). Releases still come from
+the official download, because that is the master and the recording is a 125 kbps stream copy.
 
 ## The method (proven live)
 
@@ -49,7 +50,6 @@ Gemini stays raw, or the brightness and loudness numbers are falsified.
 
 ## Open
 
-- Suno's terms of service have not been read on recording playback.
 - Whether a Windows browser receives a better stream is unverified (F12 → Network → `m4a`).
 - The "one Suno tab" and "navigating wipes the create form" rules apply. The experiment navigated
   a fresh create tab, and a tool must check form state first.

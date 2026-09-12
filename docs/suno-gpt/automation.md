@@ -334,15 +334,23 @@ manual.
 
 ### 🔴 Never automate downloading
 
-**Ruled by Kai, 2026-08-24.** Suno is about to introduce a licensing constraint that **limits
-downloads per month**. A script that downloads takes would burn a metered, finite allowance
-without anyone deciding to spend it.
+**Ruled by Kai, 2026-08-24.** Suno **caps downloads per month**. This is a **cost rule and
+nothing else**: a script that downloads takes would burn a metered, finite allowance without
+anyone deciding to spend it.
 
 - ❌ no automated WAV/MP3 download
 - ❌ no automated stem splitting
 - ✅ generate, name, file into a workspace, and **stop**
 
-Downloading stays a deliberate human act. This is a hard rule, not a default.
+Downloading stays a deliberate human act because the allowance is small, not because of any
+question about permission.
+
+✅ **Recording the player's output is fine and is not a download.** It spends no allowance and
+is equivalent to pressing Play (Kai, 2026-09-12 — *"we're just automating pressing play"*). That
+is how the listening loop gets a file: §10, and
+[`design/2026-09-11-suno-playback-recording-findings.md`](../../design/2026-09-11-suno-playback-recording-findings.md).
+The official download stays the route for a **release master**, because it is the master and a
+recording is a 125 kbps stream copy.
 
 ---
 

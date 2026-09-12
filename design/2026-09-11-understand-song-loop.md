@@ -20,8 +20,8 @@ BadCode develops drum & bass tracks in Suno with Claude writing the prompts. The
 trained in sound-design vocabulary, so the feedback loop ("what did you hear?") is weak. The
 listen-mcp plan gives Claude a way to describe an audio file. The recording findings prove Claude can
 get that file from Suno **without spending the monthly download allowance**, by recording the
-browser's playback into a silent virtual speaker (Kai ruled 2026-09-11: preview copies only, releases
-still go through the official download).
+browser's playback into a silent virtual speaker — which is automating the Play button and nothing
+more (Kai, 2026-09-12). Releases still come from the official download, because that is the master.
 
 Kai's workflow, in his words: *"generate one generation, three songs, oh I like that one… I can point
 you at an exact title of one Suno song and then you can… listen to it using our tool, then… give the
