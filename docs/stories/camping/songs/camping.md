@@ -85,6 +85,40 @@ Register: bleak, bitter, angry, played completely straight. Whatever is funny li
 Subject: British class, money, work, and who the economy left behind.
 ```
 
+## v6.0 ⭐ Kai's pick — r1b take d13ca10a (2026-09-13)
+
+**[d13ca10a](https://suno.com/song/d13ca10a-1aa4-41c5-a6f2-b13beeb2e164)** — `camping-r1b-stomp-v6-var-extra-nomax-w60`,
+Kai: *"a version that I'm a big fan of. Let's take this version."* It supersedes 44f46458 as the candidate.
+
+**Every setting that made it, and where each fact comes from:**
+
+| Setting | Value | Source |
+|---|---|---|
+| Model | **v6** (`chirp-hawk`) | Suno's record · title · our spec |
+| Weirdness | **60** | Suno's record (`weirdness_constraint 0.6`) · title `w60` |
+| Style Influence | **70** | Suno's record (`style_weight 0.7`) · spec — 🔴 **not in the title** |
+| Variety | **Extra** | Suno's record (`aug_creativity 3`) · title `var-extra` · form read-back |
+| Max Mode | **Off** | title `nomax` · form read-back before Create — **Suno's record has no field for it** |
+| Vocal Gender | **Male** | form read-back before Create (set by Kai, kept by the spec) — **not in Suno's record, not in the title** |
+| Duration target | **205 s** (Kai's 3:25) | spec — **not in Suno's record, not in the title** |
+| Personalize / My Taste | **Off** | asserted before Create |
+| Voice | none | asserted before Create |
+| Workspace | camping-Jack | Suno's record |
+| Created | 2026-09-13 14:45 UTC | Suno's record |
+| Exclude box | the r1 `stomp` exclude, verbatim | Suno's record = our box ✅ |
+| Lyrics box | the 44f46458 box, byte-identical — words = §4 | Suno's record ✅ |
+| **Style actually used** | 🔴 **Suno's own rewrite, below — NOT the stomp box** | Suno's record (`tags`) |
+
+🔑 **Variety Extra rewrote the Style box for this take**, so the prompt that made the sound Kai likes is
+this 431-char paraphrase, not our 866-char `stomp` box. **To build on this take, paste THIS as the
+Style box and set Variety Off** — otherwise Suno rewrites it again and the thing you liked is not what
+gets generated. Note what the rewrite added that the stomp box never said: `power-chord guitar`,
+`dual male… voices`, `dry intimate acapella breaks`, `dark sub-heavy compression`.
+
+```text
+Dark UK drum and bass: detuned wavetable lead, low palm-muted distorted power-chord guitar and heavy guitar wall, dual male spoken-word voices—gravelly half-shout and clean plummy baritone hardening into a shout—with dry intimate acapella breaks, dark sub-heavy compression, stomping floor toms, handclaps, chopped breakbeat, growling Reese sub, screaming detuned lead, reverb-soaked raw distortion, steady 174 BPM amen-roll drive.
+```
+
 ## v6.2 Round r1 — `stomp`
 
 **One variable, named before pasting: the Style + Exclude atom.** The Lyrics box is the candidate's
