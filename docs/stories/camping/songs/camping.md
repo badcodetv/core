@@ -201,7 +201,14 @@ workspace **camping-Jack**.
 | Round | Variable | Cost | Verdict |
 |---|---|---|---|
 | candidate | hand-grown in the browser, 2026-09-09 | — | Jack's pick; 117 BPM, not 174 |
-| r1 `stomp` | Style + Exclude atom | ⬜ unspent — needs Kai's yes | ⬜ |
+| r1 `stomp` | Style + Exclude atom (generated 2026-09-13, Kai's yes) | 2 Creates → 4 takes, balance unreadable (v6 credit-free promo) | ⬜ awaiting Kai's ear — w60: [15ca3559](https://suno.com/song/15ca3559-5c77-4a3a-98a1-db446cbb0716) · [3054b805](https://suno.com/song/3054b805-cffd-4876-a74c-169779b14013) · w30: [438f737c](https://suno.com/song/438f737c-374d-4ec5-b191-ee36a088b7ba) · [a3fff0e5](https://suno.com/song/a3fff0e5-f027-4310-853a-4ee07ba38b52) |
+
+✅ **Verified off Suno's own song records, all four takes:** workspace camping-Jack, Style Influence
+0.7, weirdness 0.6 / 0.3 as titled, **lyrics box byte-identical to the candidate's, words identical to
+§4.** 🔴 **Confound:** the candidate's record reads `aug_creativity 3`, these read `1`. If that field
+is Variety (steps off·normal·high·extra·max → 0–4), the candidate was **extra** and r1 ran at
+**normal** — a second variable moved. Next round: set `variety: 'extra'` to match, or treat it as its
+own slider round.
 
 # Camping — the song
 
