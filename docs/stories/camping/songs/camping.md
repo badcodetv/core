@@ -1,6 +1,6 @@
 ---
 title: Camping — the song (LIVE v6 sheet)
-status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). RESUME HERE — Kai: blues is the missed style, at 174 over a drum and bass beat (not jump up); round r8b `blues-dnb` (§v6.10) generated 2026-09-13 and awaits ears. Structure is now Verse 1 → Verse 2 → Bridge with no drops; both voices old (Bob a gravelly weathered Scouser, Tarquin a deep posh baritone). Earlier candidate d13ca10a (§v6.0). The v5.5 round-17 sheet below the v6 section is archived history.
+status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). RESUME HERE — direction is atmospheric intelligent D&B at 174 (LTJ Bukem-like, not jump up) + a bluesy slide guitar + a weathered busker voice (Seasick Steve delivery) that must NOT sound American; round r9 `atmos` (§v6.11) generated 2026-09-13, awaiting ears. Structure Verse 1 → Verse 2 → Bridge, no drops. The v5.5 round-17 sheet below the v6 section is archived history.
 candidate: https://suno.com/song/d13ca10a-1aa4-41c5-a6f2-b13beeb2e164
 brief: Jack via Kai 2026-09-13 — "more like Imagine Dragons (https://en.wikipedia.org/wiki/Imagine_Dragons) and less poppy". Kai 2026-09-13 — 174 BPM drum and bass (option A), not the take's 117.
 released_take: ./camping-released.md
@@ -117,6 +117,124 @@ gets generated. Note what the rewrite added that the stomp box never said: `powe
 
 ```text
 Dark UK drum and bass: detuned wavetable lead, low palm-muted distorted power-chord guitar and heavy guitar wall, dual male spoken-word voices—gravelly half-shout and clean plummy baritone hardening into a shout—with dry intimate acapella breaks, dark sub-heavy compression, stomping floor toms, handclaps, chopped breakbeat, growling Reese sub, screaming detuned lead, reverb-soaked raw distortion, steady 174 BPM amen-roll drive.
+```
+
+## v6.11 Round r9 — `atmos` (2026-09-13) — intelligent D&B, blues guitar, a British busker's voice
+
+**Kai on r8b:** *"the blues thing is good, but it might be a bit too much… an intelligent drum and bass beat, so like
+LTJ Bukem style. It's really important that we don't go too American… a Seasick Steve voice over a drum and bass
+beat with a blues guitar… The voice I think is good, it's just too American."* (Dictated as "LTJ Bookum" and "C6 Steve".)
+
+**Research → words** (no artist names in the boxes):
+
+| Reference | What it sounds like | Where it went |
+|---|---|---|
+| LTJ Bukem / *Logical Progression* | "ambient drum & bass… melodic elements float above the hard-hitting drums"; "ethereal keys, atmospheric sound effects, and lithe drum programming… rattling snares"; "basslines that hummed rather than thumped, chords that shimmered"; jazz-trained ear for "chords that glide rather than jab" ([DJ Mag](https://djmag.com/features/how-ltj-bukems-logical-progression-expressed-his-unique-vision-drum-bass), [Tracks & Tales](https://www.tracksandtales.co/blogs/listening-bar-albums/logical-progression-ltj-bukem-1996)) | `rolling, crisp breakbeats with rattling snares, a warm humming sub bass that rolls rather than thumps, shimmering jazz chords on Rhodes and soft ethereal pads floating above, spacious and weightless` |
+| Seasick Steve | a "gravelly, soulful voice" with "a punk sensibility"; slide guitar (a thimble slide), a home-made stomp box ([UK Music Reviews](https://www.ukmusicreviews.co.uk/gigreviews/gig-review-seasick-steve/), [Wikipedia](https://en.wikipedia.org/wiki/Seasick_Steve)) | `a gravelly, weathered old Liverpool busker… a talking, half-sung rasp, warm, soulful and worn`; `a battered slide guitar playing raw bluesy licks` |
+
+**The anti-American moves:** he is American, so only his *delivery* is borrowed and the accent is pinned to Liverpool;
+the Style never calls the voice "blues" (only the guitar); `English voices and English vowels throughout, never American`;
+the resonator is gone. Exclude bans `American accent, American vocal, Southern drawl, Delta blues, Mississippi blues,
+country blues, juke joint, hobo, gospel, resonator guitar, banjo, harmonica` on top of the country/americana bans.
+`liquid dnb` is **un-banned** (it neighbours the Bukem sound); jump up, wobble, neurofunk and dubstep stay banned.
+
+**Lyrics:** r8b's with the intro, Verse 1 and bridge kit notes moved to pads + slide + light breakbeat, and Bob's note made
+`Liverpool busker… thick Scouse accent, English vowels`. **All sung lines byte-identical.** Structure unchanged
+(Verse 1 → Verse 2 → Bridge). Settings as r8b: v6 · style influence 70 · weirdness 40 and 60 · Variety Off · Max Mode off ·
+Male · duration Auto · camping-Jack.
+
+### r9 takes (generated 2026-09-13, Kai's request — 2 Creates → 4 takes)
+
+| Weirdness | Takes |
+|---|---|
+| 40 | [56bd9c0c](https://suno.com/song/56bd9c0c-28ae-4f1d-99a4-d97a6cf50e98) · [2d297874](https://suno.com/song/2d297874-6c4e-419e-9ae0-1fe6b6efe089) |
+| 60 | [7ce89bcc](https://suno.com/song/7ce89bcc-b7b1-4604-94a3-f265a8fd1806) · [a67d7500](https://suno.com/song/a67d7500-2617-46be-a7fa-a18dd78965e0) |
+
+⬜ Awaiting ears — first checks: does the voice still sound American, and does the beat float (atmospheric) rather than bang?
+
+#### r9 `atmos`
+
+Style:
+
+```
+Atmospheric intelligent drum and bass at a steady 174 BPM, mid-90s UK jungle, very British. Light, rolling, crisp breakbeats with rattling snares, a warm humming sub bass that rolls rather than thumps, shimmering jazz chords on Rhodes and soft ethereal pads floating above, spacious and weightless. Over it, a battered slide guitar playing raw bluesy licks, answering the voice. Verse one: a gravelly, weathered old Liverpool busker who has seen it all, a thick Scouse accent, a talking, half-sung rasp, warm, soulful and worn. Verse two: an older posh London gentleman, a deep plummy baritone, clipped English RP. Then the two old men together. English voices and English vowels throughout, never American. Close, dry vocals over a deep, dreamy mix, minor key.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, Delta blues, Mississippi blues, country blues, juke joint, hobo, gospel, country vocal, southern vocal, twang, americana, bluegrass, resonator guitar, banjo, harmonica, young voice, boyish voice, teenage voice, high tenor, falsetto, breathy pop vocal, singer-songwriter, acoustic pop, indie folk, emo, shouting, screaming, jump up, wobble bass, neurofunk, dubstep, EDM drops, festival rave, heavy distorted bass, crowd noise, audience, applause, backing vocals, gang vocals, choir, female vocal, distorted electric guitar, power chords, wavetable lead, pop, glossy production, autotune, happy, uplifting, major key, slow tempo, half time, tempo change
+```
+
+Lyrics:
+
+```lyrics
+[Intro — 4 bars | soft floating pads and one lone bluesy slide guitar lick over a light rolling breakbeat, then straight in]
+[Verse 1 | a gravelly, weathered old Liverpool busker in his sixties who has seen it all, thick Scouse accent, English vowels, a growl and a croak soaked in whisky and smoke, low, unhurried, half-sung and moaning | no American pronunciation | a battered bluesy slide guitar, a light rolling breakbeat, warm sub and floating jazz chords underneath]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+[almost whispered, a low tired croak | nothing else | acapella]
+I can't live like this forever
+[the beat and slide guitar back in | the old voice rising into a rough bluesy growl, never a shout]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[a weary, bitter plea, low and gravelly, sung not shouted, the voice cracking on the last word]
+please sir, can I fuckin, have some more?
+[Verse 2 | straight in, no break | a completely different man, an older posh London gentleman, a deep plummy baritone, clipped, cold and worn at the edges | the slide guitar answers each line]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+[almost whispered, a low tired croak | nothing else | acapella]
+What about if we taxed the rich?
+[the beat and slide guitar back in | the posh voice rising, biting and bitter, still sung, never screamed]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing, is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Bridge | straight in, no break | the two old men together now, trading lines over the slide guitar and floating pads, the breakbeat stripped back to a quiet rolling pulse, close and weary]
+[the deep gravelly Scouse voice]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the deep posh voice]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both old men together, rough and low]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the deep posh voice]
+you see as it turns out, there is very little clout,
+in having the manager or any of the c-suite about
+[the deep gravelly Scouse voice]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the deep posh voice]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the deep gravelly Scouse voice]
+yet I don't begrudge you,
+it's us and them now
+[the deep posh voice, rising and cracking, then fading out]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
 ```
 
 ## v6.10 Round r8b — `blues-dnb` (2026-09-13) — blues over 174 drum and bass
