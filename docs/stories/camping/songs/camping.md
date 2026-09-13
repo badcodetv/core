@@ -1,6 +1,6 @@
 ---
 title: Camping — the song (LIVE v6 sheet)
-status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). RESUME HERE — direction is atmospheric intelligent D&B at 174 (LTJ Bukem-like, not jump up) + a bluesy slide guitar + a weathered busker voice (Seasick Steve delivery) that must NOT sound American; round r9 `atmos` (§v6.11) generated 2026-09-13, awaiting ears. Structure Verse 1 → Verse 2 → Bridge, no drops. The v5.5 round-17 sheet below the v6 section is archived history.
+status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). RESUME HERE — the voice must be ENGLISH; blues cast Americans. Round r10 `english` (§v6.12) ran six English genres (punk poet, Madchester, protest folk, Britpop, pub rock, UK garage/grime) × 4 takes over one shared 174 D&B beat, 2026-09-13 — awaiting Kai's and Jack's ears to pick the lane. Structure Verse 1 → Verse 2 → Bridge, no drops. The v5.5 round-17 sheet below the v6 section is archived history.
 candidate: https://suno.com/song/d13ca10a-1aa4-41c5-a6f2-b13beeb2e164
 brief: Jack via Kai 2026-09-13 — "more like Imagine Dragons (https://en.wikipedia.org/wiki/Imagine_Dragons) and less poppy". Kai 2026-09-13 — 174 BPM drum and bass (option A), not the take's 117.
 released_take: ./camping-released.md
@@ -117,6 +117,554 @@ gets generated. Note what the rewrite added that the stomp box never said: `powe
 
 ```text
 Dark UK drum and bass: detuned wavetable lead, low palm-muted distorted power-chord guitar and heavy guitar wall, dual male spoken-word voices—gravelly half-shout and clean plummy baritone hardening into a shout—with dry intimate acapella breaks, dark sub-heavy compression, stomping floor toms, handclaps, chopped breakbeat, growling Reese sub, screaming detuned lead, reverb-soaked raw distortion, steady 174 BPM amen-roll drive.
+```
+
+## v6.12 Round r10 — `english` (2026-09-13) — six English genres to cast an English voice
+
+**Kai on r9:** *"that's not quite working. We really need the Englishness… I think we might have thrown it with blues.
+So what English genre could we use to try and really trigger the English voice?"* Then: *"try all of these… four
+takes on each style"*, including UK garage storytelling / grime.
+
+**Why r5–r9 kept coming back American** — already in our own notes, `docs/suno-gpt/suno-voices.md` §2–2b: accent words
+(`Scouse`, `Liverpool`, `English vowels`) do not render; **the genre tag picks the singer, nationality included**; blues
+selects an American pool, and Exclude bans do not control nationality. r5 `accents` and r9 leaned on accent words — a
+miss that doc already predicted.
+
+**How r10 is built, from those notes:**
+- The English genre **leads** the Style box (genre position); the singer is described as that genre's own performer.
+- Tarquin is cast by **performance tradition**: `BBC newsreader voice` or `after-dinner speaker voice`, never `clipped RP`.
+- **One short, identical label per man** in the lyrics (`[the first man]`, `[the second man]`) — dense per-line casting makes it worse (§3).
+- The **beat is the one shared sentence** (a steady 174 D&B, light rolling breaks, warm sub, never jump up), so the genre
+  is the variable. Each lane owns its instruments, and its Exclude bans the *other* lanes' signatures.
+- The blues slide guitar is gone. Kai's r8 ruling stays: no aggressive shout on "have some more"; Verse 1 → Verse 2 → Bridge.
+- 🔴 `ukg` is a known risk: grime/garage cast **young** MCs (§2b) — run because Kai asked, and it tests that finding.
+
+Artist names are never in the boxes; they are here only to say what each lane is aiming at.
+**All sung lines byte-identical.** Settings: v6 · style influence 70 · weirdness 40 and 60 (4 takes a lane) · Variety Off ·
+Max Mode off · Male · duration Auto · camping-Jack.
+
+### r10 takes (generated 2026-09-13, Kai's request — 12 Creates → 24 takes)
+
+| Lane | Weirdness 40 | Weirdness 60 |
+|---|---|---|
+| `punkpoet` | [5bd9680e](https://suno.com/song/5bd9680e-cc0e-4e17-a171-eb9b8c7e8d6e) · [fd481990](https://suno.com/song/fd481990-0b53-4c58-bd63-5806c22d94f5) | [26b0b837](https://suno.com/song/26b0b837-7e68-4560-9ed1-7654f05694b8) · [3f5cd74f](https://suno.com/song/3f5cd74f-99af-4388-a27f-6181e1e72947) |
+| `madchester` | [45fa46be](https://suno.com/song/45fa46be-24f8-4aae-96a9-e8e146888274) · [e3176f11](https://suno.com/song/e3176f11-574f-431a-8d6d-85cb10249d94) | [8e77dda9](https://suno.com/song/8e77dda9-4bc9-487b-a93a-b91785b36c3f) · [1a3eb2b5](https://suno.com/song/1a3eb2b5-9241-48e2-9cf9-0e50fea38d83) |
+| `protestfolk` | [502d2806](https://suno.com/song/502d2806-1bb8-49c6-9448-e758fa9b6620) · [566a11ff](https://suno.com/song/566a11ff-206a-4034-94e7-afb2e002397b) | [515d4356](https://suno.com/song/515d4356-41ba-4d94-954f-0d4abe08d94e) · [7971107b](https://suno.com/song/7971107b-f1ee-4fc2-ab15-0be44d814f98) |
+| `britpop` | [65c68962](https://suno.com/song/65c68962-edf5-4966-b807-e5ea0983581d) · [33cbc9ed](https://suno.com/song/33cbc9ed-8163-46dc-ae5a-fe097b39e069) | [a5e3c593](https://suno.com/song/a5e3c593-0e3b-4aa1-b0f6-58b38cae45ae) · [f33e7d42](https://suno.com/song/f33e7d42-fad5-4741-8776-fe8c238f67b4) |
+| `pubrock` | [5a5cd692](https://suno.com/song/5a5cd692-8ec2-43cd-8073-c7fd3040ad65) · [2cf5a175](https://suno.com/song/2cf5a175-716d-4312-9744-cfbde07550a5) | [d7078d19](https://suno.com/song/d7078d19-bc05-49a1-b81c-b4c03f67d201) · [126723fe](https://suno.com/song/126723fe-8d9f-42e0-9043-242c4ac980f3) |
+| `ukg` | [82d91cb8](https://suno.com/song/82d91cb8-6e83-4482-ae8c-3fae026fbcb2) · [598c2a4d](https://suno.com/song/598c2a4d-df2a-4608-949c-eb6024806df5) | [c947ef41](https://suno.com/song/c947ef41-3845-4390-8222-10e92eab28dc) · [7523278d](https://suno.com/song/7523278d-e6dc-46a5-8b9f-d6ec22cad1c7) |
+
+✅ **Verified off Suno's records, all 24:** Style, Exclude and Lyrics verbatim (sung words unchanged), Variety Off held,
+sliders as titled. ⬜ Awaiting ears — the one question: **which lane casts an English Bob?**
+
+#### r10 `punkpoet` — English post-punk spoken word / punk poetry (Sleaford Mods, John Cooper Clarke, The Fall)
+
+Style:
+
+```
+English post-punk spoken word, punk poetry, over drum and bass. Verse one: a weathered working-class Englishman in his fifties rants his lines in a flat, thick, sardonic regional English accent, spoken not sung, deadpan and furious under his breath, an English punk poet. Verse two: a BBC newsreader voice, a posh older Englishman reading the news, clipped and cold, contempt in every vowel. Then the two men trade lines. Minimal and bare: a looping bassline and a sparse wiry guitar figure, dry and unpolished, recorded like a demo. Underneath it all, a steady 174 BPM drum and bass beat: light rolling breakbeats and a warm rolling sub bass, spacious, never jump up.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, blues, Delta blues, gospel, soul singer, US rap, trap, teenage voice, boyish voice, falsetto, autotune, female vocal, choir, crowd noise, audience, applause, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, major key, slow tempo, half time, tempo change, britpop, madchester, baggy, folk, pub rock, piano, grime MC, UK garage, 2-step
+```
+
+Lyrics:
+
+```lyrics
+[Intro — 4 bars | the beat alone, then straight in]
+[Verse 1 | the first man, a weathered English punk poet, spoken not sung, deadpan and furious]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+[almost whispered | nothing else | acapella]
+I can't live like this forever
+[the beat back in | the first man rising, never a scream]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[a weary, bitter plea, low, not shouted, cracking on the last word]
+please sir, can I fuckin, have some more?
+[Verse 2 | straight in, no break | the second man, a BBC newsreader voice, clipped and cold]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+[almost whispered | nothing else | acapella]
+What about if we taxed the rich?
+[the beat back in | the second man rising, biting and bitter]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing, is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Bridge | straight in, no break | the two men trade lines, the beat stripped back to a quiet rolling pulse]
+[the first man]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the second man]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the second man]
+you see as it turns out, there is very little clout,
+in having the manager or any of the c-suite about
+[the first man]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the second man]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the first man]
+yet I don't begrudge you,
+it's us and them now
+[the second man]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
+```
+
+#### r10 `madchester` — Madchester / baggy (Happy Mondays, Stone Roses)
+
+Style:
+
+```
+Madchester baggy over drum and bass. Verse one: a rough, lairy Manchester frontman in his fifties, a lazy nasal drawl, half-sung and half-spoken, cocky and knackered, a rave survivor. Verse two: a BBC newsreader voice, a posh older Englishman, clipped and cold. Then the two men trade lines. Shuffling baggy grooves, jangly guitar, loose tambourine and hand percussion, a hazy late-night warehouse feel, loose and swaggering. Underneath it all, a steady 174 BPM drum and bass beat: light rolling breakbeats and a warm rolling sub bass, spacious, never jump up.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, blues, Delta blues, gospel, soul singer, US rap, trap, teenage voice, boyish voice, falsetto, autotune, female vocal, choir, crowd noise, audience, applause, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, major key, slow tempo, half time, tempo change, post-punk, spoken word poetry, folk, pub rock, piano, grime MC, UK garage, 2-step, britpop
+```
+
+Lyrics:
+
+```lyrics
+[Intro — 4 bars | the beat alone, then straight in]
+[Verse 1 | the first man, a lairy Manchester frontman, lazy nasal drawl, half-sung]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+[almost whispered | nothing else | acapella]
+I can't live like this forever
+[the beat back in | the first man rising, never a scream]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[a weary, bitter plea, low, not shouted, cracking on the last word]
+please sir, can I fuckin, have some more?
+[Verse 2 | straight in, no break | the second man, a BBC newsreader voice, clipped and cold]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+[almost whispered | nothing else | acapella]
+What about if we taxed the rich?
+[the beat back in | the second man rising, biting and bitter]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing, is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Bridge | straight in, no break | the two men trade lines, the beat stripped back to a quiet rolling pulse]
+[the first man]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the second man]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the second man]
+you see as it turns out, there is very little clout,
+in having the manager or any of the c-suite about
+[the first man]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the second man]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the first man]
+yet I don't begrudge you,
+it's us and them now
+[the second man]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
+```
+
+#### r10 `protestfolk` — English protest-folk busker (Billy Bragg)
+
+Style:
+
+```
+English protest folk busker over drum and bass. Verse one: a lone English busker in his fifties with a thick Essex accent, singing plainly and bluntly with no polish, a raw political street singer, strumming a clanky, trebly electric guitar on his own. Verse two: an after-dinner speaker voice, a posh older Englishman, clipped, smug and cold. Then the two men trade lines. Honest and bare: one guitar and one voice on a street corner, a union-hall protest song. Underneath it all, a steady 174 BPM drum and bass beat: light rolling breakbeats and a warm rolling sub bass, spacious, never jump up.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, blues, Delta blues, gospel, soul singer, US rap, trap, teenage voice, boyish voice, falsetto, autotune, female vocal, choir, crowd noise, audience, applause, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, major key, slow tempo, half time, tempo change, post-punk, madchester, baggy, britpop, pub rock, piano, grime MC, UK garage, 2-step, trad folk, sea shanty, acoustic guitar
+```
+
+Lyrics:
+
+```lyrics
+[Intro — 4 bars | the beat alone, then straight in]
+[Verse 1 | the first man, a lone English protest busker, singing plainly and bluntly]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+[almost whispered | nothing else | acapella]
+I can't live like this forever
+[the beat back in | the first man rising, never a scream]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[a weary, bitter plea, low, not shouted, cracking on the last word]
+please sir, can I fuckin, have some more?
+[Verse 2 | straight in, no break | the second man, an after-dinner speaker voice, clipped, smug and cold]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+[almost whispered | nothing else | acapella]
+What about if we taxed the rich?
+[the beat back in | the second man rising, biting and bitter]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing, is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Bridge | straight in, no break | the two men trade lines, the beat stripped back to a quiet rolling pulse]
+[the first man]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the second man]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the second man]
+you see as it turns out, there is very little clout,
+in having the manager or any of the c-suite about
+[the first man]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the second man]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the first man]
+yet I don't begrudge you,
+it's us and them now
+[the second man]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
+```
+
+#### r10 `britpop` — Britpop snarl (Liam Gallagher)
+
+Style:
+
+```
+Britpop snarl over drum and bass. Verse one: an older English frontman with a nasal, sneering Britpop snarl, long drawn-out vowels, arrogant, weary and worn. Verse two: a BBC newsreader voice, a posh older Englishman, clipped and cold. Then the two men trade lines. Jangling English guitars held back to a low hum, a swaggering stomp, a mid-90s English guitar record folded under the breakbeats. Underneath it all, a steady 174 BPM drum and bass beat: light rolling breakbeats and a warm rolling sub bass, spacious, never jump up.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, blues, Delta blues, gospel, soul singer, US rap, trap, teenage voice, boyish voice, falsetto, autotune, female vocal, choir, crowd noise, audience, applause, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, major key, slow tempo, half time, tempo change, post-punk, madchester, folk, pub rock, piano, grime MC, UK garage, 2-step, guitar wall
+```
+
+Lyrics:
+
+```lyrics
+[Intro — 4 bars | the beat alone, then straight in]
+[Verse 1 | the first man, an older English frontman, a nasal sneering snarl]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+[almost whispered | nothing else | acapella]
+I can't live like this forever
+[the beat back in | the first man rising, never a scream]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[a weary, bitter plea, low, not shouted, cracking on the last word]
+please sir, can I fuckin, have some more?
+[Verse 2 | straight in, no break | the second man, a BBC newsreader voice, clipped and cold]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+[almost whispered | nothing else | acapella]
+What about if we taxed the rich?
+[the beat back in | the second man rising, biting and bitter]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing, is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Bridge | straight in, no break | the two men trade lines, the beat stripped back to a quiet rolling pulse]
+[the first man]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the second man]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the second man]
+you see as it turns out, there is very little clout,
+in having the manager or any of the c-suite about
+[the first man]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the second man]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the first man]
+yet I don't begrudge you,
+it's us and them now
+[the second man]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
+```
+
+#### r10 `pubrock` — Pub rock / rockney (Ian Dury, Chas & Dave)
+
+Style:
+
+```
+English pub rock, rockney, over drum and bass, dark not comic. Verse one: a cockney bloke in his fifties half-speaking and half-singing his lines like a pub raconteur, gravelly, cheeky and bitter, dropped aitches. Verse two: an after-dinner speaker voice, a posh older Englishman, clipped and pompous. Then the two men trade lines. A rolling pub piano and a chugging bar-room guitar, a sticky-floored London boozer at closing time. Underneath it all, a steady 174 BPM drum and bass beat: light rolling breakbeats and a warm rolling sub bass, spacious, never jump up.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, blues, Delta blues, gospel, soul singer, US rap, trap, teenage voice, boyish voice, falsetto, autotune, female vocal, choir, crowd noise, audience, applause, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, major key, slow tempo, half time, tempo change, post-punk, madchester, baggy, britpop, folk, grime MC, UK garage, 2-step, music hall, comedic, novelty
+```
+
+Lyrics:
+
+```lyrics
+[Intro — 4 bars | the beat alone, then straight in]
+[Verse 1 | the first man, a cockney pub raconteur, half-spoken, gravelly and bitter]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+[almost whispered | nothing else | acapella]
+I can't live like this forever
+[the beat back in | the first man rising, never a scream]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[a weary, bitter plea, low, not shouted, cracking on the last word]
+please sir, can I fuckin, have some more?
+[Verse 2 | straight in, no break | the second man, an after-dinner speaker voice, clipped and pompous]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+[almost whispered | nothing else | acapella]
+What about if we taxed the rich?
+[the beat back in | the second man rising, biting and bitter]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing, is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Bridge | straight in, no break | the two men trade lines, the beat stripped back to a quiet rolling pulse]
+[the first man]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the second man]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the second man]
+you see as it turns out, there is very little clout,
+in having the manager or any of the c-suite about
+[the first man]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the second man]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the first man]
+yet I don't begrudge you,
+it's us and them now
+[the second man]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
+```
+
+#### r10 `ukg` — UK garage storytelling / grime (The Streets)
+
+Style:
+
+```
+UK garage storytelling and grime over drum and bass. Verse one: an English storyteller talking his lines conversationally over the beat, a flat everyday English accent, observational and tired, spoken not rapped, like telling a mate a story at 4am. Verse two: a BBC newsreader voice, a posh older Englishman, clipped and cold. Then the two men trade lines. Skippy two-step garage shuffles and dark grime bass stabs folded into the drum and bass, cheap synth strings, night-bus melancholy. Underneath it all, a steady 174 BPM drum and bass beat: light rolling breakbeats and a warm rolling sub bass, spacious, never jump up.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, blues, Delta blues, gospel, soul singer, US rap, trap, teenage voice, boyish voice, falsetto, autotune, female vocal, choir, crowd noise, audience, applause, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, major key, slow tempo, half time, tempo change, post-punk, madchester, baggy, britpop, folk, pub rock, piano
+```
+
+Lyrics:
+
+```lyrics
+[Intro — 4 bars | the beat alone, then straight in]
+[Verse 1 | the first man, an English storyteller, talking conversationally, spoken not rapped]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+[almost whispered | nothing else | acapella]
+I can't live like this forever
+[the beat back in | the first man rising, never a scream]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[a weary, bitter plea, low, not shouted, cracking on the last word]
+please sir, can I fuckin, have some more?
+[Verse 2 | straight in, no break | the second man, a BBC newsreader voice, clipped and cold]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+[almost whispered | nothing else | acapella]
+What about if we taxed the rich?
+[the beat back in | the second man rising, biting and bitter]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing, is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Bridge | straight in, no break | the two men trade lines, the beat stripped back to a quiet rolling pulse]
+[the first man]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the second man]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the second man]
+you see as it turns out, there is very little clout,
+in having the manager or any of the c-suite about
+[the first man]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the second man]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the first man]
+yet I don't begrudge you,
+it's us and them now
+[the second man]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
 ```
 
 ## v6.11 Round r9 — `atmos` (2026-09-13) — intelligent D&B, blues guitar, a British busker's voice
