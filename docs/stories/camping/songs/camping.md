@@ -1,6 +1,6 @@
 ---
 title: Camping — the song (LIVE v6 sheet)
-status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). Candidate = d13ca10a (Kai's pick, §v6.0). RESUME HERE — Jack on r3: voice drowns the music, wants a more grunge voice and a less pop beat; round r4 (§v6.5, `rasp` spoken vs `sung` half-sung) generated 2026-09-13 and awaits Jack's ear and his answers to Kai's follow-up questions. The v5.5 round-17 sheet below the v6 section is archived history.
+status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). Candidate = d13ca10a (Kai's pick, §v6.0). RESUME HERE — Kai preferred r4 `sung`; round r5 `cast` (§v6.6: range / accents / texture — two voices made opposite) and Kai's round r6 `unplugged` acoustic experiment (§v6.7) generated 2026-09-13, awaiting Kai's and Jack's ears. The v5.5 round-17 sheet below the v6 section is archived history.
 candidate: https://suno.com/song/d13ca10a-1aa4-41c5-a6f2-b13beeb2e164
 brief: Jack via Kai 2026-09-13 — "more like Imagine Dragons (https://en.wikipedia.org/wiki/Imagine_Dragons) and less poppy". Kai 2026-09-13 — 174 BPM drum and bass (option A), not the take's 117.
 released_take: ./camping-released.md
@@ -117,6 +117,415 @@ gets generated. Note what the rewrite added that the stomp box never said: `powe
 
 ```text
 Dark UK drum and bass: detuned wavetable lead, low palm-muted distorted power-chord guitar and heavy guitar wall, dual male spoken-word voices—gravelly half-shout and clean plummy baritone hardening into a shout—with dry intimate acapella breaks, dark sub-heavy compression, stomping floor toms, handclaps, chopped breakbeat, growling Reese sub, screaming detuned lead, reverb-soaked raw distortion, steady 174 BPM amen-roll drive.
+```
+
+## v6.7 Round r6 — `unplugged` (2026-09-13) — Kai's crazy experiment
+
+**Kai:** *"a purely acoustic drum kit and an acoustic guitar, a bit like Nirvana's acoustic set, keeping it at the
+same tempo, drum and bass, but just with the feeling of the lyrics coming through the whole time… very sparse…
+and two singers."* The artist name is kept out of the boxes (Suno rejects artist names); the Style
+describes the sound instead. Casting uses the canon accents (Bob Scouse, Tarquin posh London).
+Every stage note is rewritten for acoustic instruments; **all sung lines byte-identical**. The Exclude bans every
+electronic sound and the country/americana drift v6 has with acoustic guitar.
+Settings: v6 · style influence 70 · **weirdness 40 and 60** · Variety Off · Max Mode off · Male · 205 s · camping-Jack.
+
+#### r6 `unplugged`
+
+Style:
+
+```
+Unplugged live acoustic session. A drum and bass rhythm at 174 BPM played by hand on a real acoustic drum kit: sparse, brushes and rimshots, a light skittering breakbeat on snare and hi-hat, kick used sparingly, lots of space. One steel-string acoustic guitar, strummed and picked, raw and close, fret squeaks left in. No electronics at all. Two British men singing, the words always up front and clear. Verse one: a rough, weary Scouse voice, low and raspy. Verse two: a completely different man, a posh London voice, clipped, cleaner and higher, cracking as it rises. In the bridge they trade lines and harmonise roughly. Intimate, dark and bare, a live acoustic set in one take in a cold room, minor key, steady tempo.
+```
+
+Exclude styles:
+
+```
+synth, synthesizer, electronic, EDM, drum machine, programmed drums, 808, sub bass, Reese bass, wobble bass, electric guitar, distortion, distorted guitar, power chords, wavetable lead, sampled breaks, 12-bit, dubstep, stadium rock, big rock drums, pop, glossy production, autotune, harmonies stacked, orchestral strings, piano, brass, female vocal, American accent, American vocal, country vocal, southern vocal, twang, americana, bluegrass, folk-pop, campfire singalong, happy, uplifting, major key, slow tempo, half time, tempo change
+```
+
+Lyrics:
+
+```lyrics
+[Intro — 8 bars | acoustic guitar alone, one low minor chord picked slowly and left ringing | no drums yet]
+[Verse 1 | a rough weary Scouse voice, sung low and raspy | no American pronunciation | the acoustic kit comes in on brushes, a light skittering breakbeat at 174, sparse | acoustic guitar strummed under every line | the words never stop]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+[whispering voice loosing hope | no music | acapella]
+I can't live like this forever
+[shouting | music again]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[louder more angry shouting]
+please sir, can I fuckin, have some more?
+[Instrumental — 8 bars, no vocals | the acoustic guitar strums harder, the kit switches to sticks, a busy rolling breakbeat on snare and toms, still fully acoustic, no electronics]
+[Beat Transition]
+[Verse 2 | a posh London voice, a completely different man, clipped, cleaner and sung higher | the kit drops back to brushes, sparse | the acoustic guitar picks one repeating figure]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+[whispering voice loosing hope | no music | acapella]
+What about if we taxed the rich?
+[shouting | music again]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing, is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Instrumental — 8 bars, no vocals | the most intense part of the song, the acoustic guitar hammered hard, sticks on the kit, rolling snare fills, still fully acoustic]
+[Beat Transition]
+[Bridge | the turn | almost nothing, one quiet guitar and a soft brushed pulse | the two men trade lines, close and bare in the same cold room]
+[the rough Scouse voice]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the posh London voice]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together, a rough harmony]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the posh London voice]
+you see as it turns out, there is very little clout,
+in having the manager or any of the c-suite about
+[the rough Scouse voice]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the posh London voice]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the rough Scouse voice]
+yet I don't begrudge you,
+it's us and them now
+[the posh London voice]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
+```
+
+### r6 takes (generated 2026-09-13, Kai's yes — 2 Creates → 4 takes)
+
+| Weirdness | Takes |
+|---|---|
+| 40 | [83714a2a](https://suno.com/song/83714a2a-46fc-4e0f-8628-133eaeeaf608) · [30f0ccd4](https://suno.com/song/30f0ccd4-565a-4580-a23d-bad533050a45) |
+| 60 | [360772ad](https://suno.com/song/360772ad-0dd9-447e-994e-d4da1e00cfdc) · [d93d81b0](https://suno.com/song/d93d81b0-18c7-4080-a47d-a178e2d4eea6) |
+
+✅ Verified off Suno's records: all three boxes verbatim (sung words unchanged), Variety Off held, 203–205 s. ⬜ Awaiting ears.
+
+## v6.6 Round r5 — `cast` (2026-09-13)
+
+**Kai on r4:** *"Sung sounds better, but it would be really great to have more variety. It all feels like the same
+voice sometimes."* **Diagnosis:** r4 `sung` described both men with the same words (raspy, strained, cracking),
+so Suno cast one voice twice. r5 keeps r4 `sung`'s music and exclude word-for-word and casts the two men
+as opposites, three ways. The casting sits in the Style, the Verse 1/2 stage notes **and** every bridge
+line's voice tag, so it is never contradicted. **All sung lines byte-identical.**
+
+| Version | Verse 1 man | Verse 2 man |
+|---|---|---|
+| `range` | deep low rough baritone | high thin nasal tenor |
+| `accents` (canon: bob.md, tarquin.md) | Scouse, thick Merseyside, adenoidal | posh London financier, clipped RP |
+| `texture` | wrecked, throat-shredded, screamed | clean, smooth, cold, cracks only at the end (`clean pop vocal, pretty vocal` un-banned) |
+
+Settings: v6 · weirdness 60 · style influence 70 · Variety **Off** for all three, plus `accents` once more at
+Variety **Extra** (Kai wants more variety; Suno will rewrite that one's Style) · Max Mode off · Male · 205 s · camping-Jack.
+
+### r5 takes (generated 2026-09-13, Kai's yes — 4 Creates → 8 takes)
+
+| Version | Takes |
+|---|---|
+| `range` · Variety Off | [8822ba2a](https://suno.com/song/8822ba2a-5714-4cf5-a072-62459851fa68) · [8fde72e0](https://suno.com/song/8fde72e0-f9a8-411e-8f74-8e77dcb92db3) |
+| `accents` · Variety Off | [818f1b1c](https://suno.com/song/818f1b1c-f91c-4bef-8ea0-5e3276726340) · [4931bea2](https://suno.com/song/4931bea2-703e-4908-b9c6-57a50ae24e43) |
+| `accents` · Variety **Extra** | [aac073e5](https://suno.com/song/aac073e5-0270-4d43-87d7-0bafbbfd1ba0) · [3b329137](https://suno.com/song/3b329137-b1d8-465f-af9c-6d59f69551e0) |
+| `texture` · Variety Off | [2dc945a4](https://suno.com/song/2dc945a4-f0f5-4ad7-9757-0f573d68dc82) · [9f1555e7](https://suno.com/song/9f1555e7-49b8-43fd-8cbd-54c8c0c91330) |
+
+✅ **Verified off Suno's records, all eight:** lyrics byte-identical (sung words unchanged), exclude verbatim;
+the six Variety-Off takes store our Style verbatim. The two Extra takes are Suno rewrites (both keep Scouse vs RP);
+aac073e5's adds `a pounding half-time rock drop` — a tempo change we never asked for.
+🔴 **Naming trap:** a grid with ONE Variety value leaves `-var-<step>` out of the title, so the Extra takes are
+also titled `camping-r5-accents-v6-w60` — tell them apart by song id (or `aug_creativity 3` on the record).
+⚠️ The first two `accents` attempts timed out with Suno's model menu left open over the lyrics box; nothing was
+created, and the third attempt ran clean.
+
+#### r5 `range`
+
+Style:
+
+```
+Heavy UK drum and bass at 174 BPM with a raw rock edge. Rolling dirty breakbeats and pounding live rock drums hit hard under every line, growling Reese sub, low palm-muted distorted guitar riff with tight gated stabs, detuned wavetable lead. Two British singers who sound nothing alike, half-sung and half-shouted. Verse one: a deep, low baritone, rough and raspy, gravel and smoke, weary. Verse two: a completely different man, a high, thin, nasal tenor, reedy and strained at the top of his range, sneering, tearing into a scream. In the bridge they trade lines, low rough voice against high thin voice. The vocals sit inside the mix, not on top of it: the band stays full and loud under every verse. Huge drops with one simple catchy lead hook. Dry grimy 12-bit crunched breaks, raw and in-your-face, never polished, steady tempo.
+```
+
+Exclude styles:
+
+```
+sung chorus, vocal hooks, crooning, autotune, harmonies, twang, americana, southern vocal, country vocal, grime MC, UK drill, road rap, trap, hip hop, young MC, American accent, American vocal, US rap, transatlantic, ragga MC, Jamaican accent, dancehall vocal, soprano, operatic vocals, vibrato, angelic voices, female vocal, children's choir, choral harmony, orchestral strings, violins, cello, string section, piano, brass band, marching band, guitar solo, lead guitar, shredding, acoustic guitar, wah, remix, rock remix, nu metal, rap rock, rapcore, epic trailer music, reggae, dub, ska, music hall, vaudeville, pantomime, liquid dnb, jump up, glossy production, sing-along chorus, radio pop, pop rock, lo-fi, jaunty, playful, whimsical, bouncy, comedic, novelty, parody, uplifting, major key, double time, tempo change, slow tempo, clean pop vocal, pretty vocal, shoegaze, reverb-washed guitars, sparse arrangement
+```
+
+Lyrics:
+
+```lyrics
+[Intro — 8 bars | one long low detuned synth note, completely alone, held and slowly filtering open | a texture, not a tune, no melody | distant city hum far underneath | no drums, no bass, no guitar]
+[Verse 1 | a deep low baritone, rough and raspy, half-sung, weary | British accent, no American pronunciation | the full beat, bass and guitar riff kick in under the first line and stay loud, the vocal sits inside the music, not on top | amen rolls tearing across every fourth bar | the words never stop, no instrumental passage in this verse]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+[whispering voice loosing hope | no music | acapella]
+I can't live like this forever
+[shouting | music again]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[louder more angry shouting]
+please sir, can I fuckin, have some more?
+[Drop — instrumental, 8 bars, no vocals | the kit hits full weight and the sub bass drops for the first time | amen rolls tearing across every fourth bar | the palm-muted riff opens out into tight gated guitar stabs, dry and close, locked to the kit | the wavetable lead tears in over the top]
+[Beat Transition]
+[Verse 2 | a completely different man, a high thin nasal tenor, reedy, strained at the top of his range, tearing into a scream | full-weight drum and bass carries straight on, drums flip, colder synths, sharper hats | amen rolls tearing across every fourth bar | the palm-muted riff and gated guitar stabs keep driving underneath | the music stays full and loud under the vocal]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+[whispering voice loosing hope | no music | acapella]
+What about if we taxed the rich?
+[shouting | music again]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing, is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Drop — instrumental, 8 bars, no vocals | everything heavier and more distorted than the first drop — neuro bass growling underneath, the amen rolls harder and longer, the lead screaming higher, the guitar stabs harder and tighter than before]
+[Beat Transition]
+[Bridge | the turn | drums strip right back, intimate | the two men trade, both close and dry in the same cold room now | the guitar riff sparser and quieter here, still one repeating figure, never a tune]
+[the low rough baritone]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the high thin tenor]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together, low and high]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the high thin tenor]
+you see as it turns out, there is very little clout,
+in having the manager or any of the c-suite about
+[the low rough baritone]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the high thin tenor]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the low rough baritone]
+yet I don't begrudge you,
+it's us and them now
+[the high thin tenor]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
+```
+
+#### r5 `accents`
+
+Style:
+
+```
+Heavy UK drum and bass at 174 BPM with a raw rock edge. Rolling dirty breakbeats and pounding live rock drums hit hard under every line, growling Reese sub, low palm-muted distorted guitar riff with tight gated stabs, detuned wavetable lead. Two British singers who sound nothing alike, half-sung and half-shouted. Verse one: a Scouse man from Liverpool, thick Merseyside accent, adenoidal, rough and raspy, a rising sing-song lilt. Verse two: a completely different man, a posh London financier, clipped upper-class RP, cold and sneering, cleaner and higher, cracking into a ragged scream. In the bridge they trade lines, Scouse against posh. The vocals sit inside the mix, not on top of it: the band stays full and loud under every verse. Huge drops with one simple catchy lead hook. Dry grimy 12-bit crunched breaks, raw and in-your-face, never polished, steady tempo.
+```
+
+Exclude styles:
+
+```
+sung chorus, vocal hooks, crooning, autotune, harmonies, twang, americana, southern vocal, country vocal, grime MC, UK drill, road rap, trap, hip hop, young MC, American accent, American vocal, US rap, transatlantic, ragga MC, Jamaican accent, dancehall vocal, soprano, operatic vocals, vibrato, angelic voices, female vocal, children's choir, choral harmony, orchestral strings, violins, cello, string section, piano, brass band, marching band, guitar solo, lead guitar, shredding, acoustic guitar, wah, remix, rock remix, nu metal, rap rock, rapcore, epic trailer music, reggae, dub, ska, music hall, vaudeville, pantomime, liquid dnb, jump up, glossy production, sing-along chorus, radio pop, pop rock, lo-fi, jaunty, playful, whimsical, bouncy, comedic, novelty, parody, uplifting, major key, double time, tempo change, slow tempo, clean pop vocal, pretty vocal, shoegaze, reverb-washed guitars, sparse arrangement
+```
+
+Lyrics:
+
+```lyrics
+[Intro — 8 bars | one long low detuned synth note, completely alone, held and slowly filtering open | a texture, not a tune, no melody | distant city hum far underneath | no drums, no bass, no guitar]
+[Verse 1 | a Scouse man from Liverpool, thick Merseyside accent, adenoidal, rough and raspy, half-sung | no American pronunciation | the full beat, bass and guitar riff kick in under the first line and stay loud, the vocal sits inside the music, not on top | amen rolls tearing across every fourth bar | the words never stop, no instrumental passage in this verse]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+[whispering voice loosing hope | no music | acapella]
+I can't live like this forever
+[shouting | music again]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[louder more angry shouting]
+please sir, can I fuckin, have some more?
+[Drop — instrumental, 8 bars, no vocals | the kit hits full weight and the sub bass drops for the first time | amen rolls tearing across every fourth bar | the palm-muted riff opens out into tight gated guitar stabs, dry and close, locked to the kit | the wavetable lead tears in over the top]
+[Beat Transition]
+[Verse 2 | a completely different man, a posh London financier, clipped upper-class RP, cold and sneering, cleaner and higher, cracking into a ragged scream | full-weight drum and bass carries straight on, drums flip, colder synths, sharper hats | amen rolls tearing across every fourth bar | the palm-muted riff and gated guitar stabs keep driving underneath | the music stays full and loud under the vocal]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+[whispering voice loosing hope | no music | acapella]
+What about if we taxed the rich?
+[shouting | music again]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing, is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Drop — instrumental, 8 bars, no vocals | everything heavier and more distorted than the first drop — neuro bass growling underneath, the amen rolls harder and longer, the lead screaming higher, the guitar stabs harder and tighter than before]
+[Beat Transition]
+[Bridge | the turn | drums strip right back, intimate | the two men trade, both close and dry in the same cold room now | the guitar riff sparser and quieter here, still one repeating figure, never a tune]
+[the Scouse man]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the posh London man]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together, Scouse and posh]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the posh London man]
+you see as it turns out, there is very little clout,
+in having the manager or any of the c-suite about
+[the Scouse man]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the posh London man]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the Scouse man]
+yet I don't begrudge you,
+it's us and them now
+[the posh London man]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
+```
+
+#### r5 `texture`
+
+Style:
+
+```
+Heavy UK drum and bass at 174 BPM with a raw rock edge. Rolling dirty breakbeats and pounding live rock drums hit hard under every line, growling Reese sub, low palm-muted distorted guitar riff with tight gated stabs, detuned wavetable lead. Two British singers who sound nothing alike. Verse one: a wrecked, throat-shredded voice, screamed and snarled, barely holding the melody. Verse two: a completely different man with a clean, smooth, controlled singing voice, precise and cold, almost pretty, which only cracks and breaks right at the end. In the bridge they trade lines, the ruined voice against the clean one. The vocals sit inside the mix, not on top of it: the band stays full and loud under every verse. Huge drops with one simple catchy lead hook. Dry grimy 12-bit crunched breaks, raw and in-your-face, never polished, steady tempo.
+```
+
+Exclude styles:
+
+```
+sung chorus, vocal hooks, crooning, autotune, harmonies, twang, americana, southern vocal, country vocal, grime MC, UK drill, road rap, trap, hip hop, young MC, American accent, American vocal, US rap, transatlantic, ragga MC, Jamaican accent, dancehall vocal, soprano, operatic vocals, vibrato, angelic voices, female vocal, children's choir, choral harmony, orchestral strings, violins, cello, string section, piano, brass band, marching band, guitar solo, lead guitar, shredding, acoustic guitar, wah, remix, rock remix, nu metal, rap rock, rapcore, epic trailer music, reggae, dub, ska, music hall, vaudeville, pantomime, liquid dnb, jump up, glossy production, sing-along chorus, radio pop, pop rock, lo-fi, jaunty, playful, whimsical, bouncy, comedic, novelty, parody, uplifting, major key, double time, tempo change, slow tempo, shoegaze, reverb-washed guitars, sparse arrangement
+```
+
+Lyrics:
+
+```lyrics
+[Intro — 8 bars | one long low detuned synth note, completely alone, held and slowly filtering open | a texture, not a tune, no melody | distant city hum far underneath | no drums, no bass, no guitar]
+[Verse 1 | a wrecked throat-shredded voice, screamed and snarled, barely holding the tune | British accent, no American pronunciation | the full beat, bass and guitar riff kick in under the first line and stay loud, the vocal sits inside the music, not on top | amen rolls tearing across every fourth bar | the words never stop, no instrumental passage in this verse]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+[whispering voice loosing hope | no music | acapella]
+I can't live like this forever
+[shouting | music again]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[louder more angry shouting]
+please sir, can I fuckin, have some more?
+[Drop — instrumental, 8 bars, no vocals | the kit hits full weight and the sub bass drops for the first time | amen rolls tearing across every fourth bar | the palm-muted riff opens out into tight gated guitar stabs, dry and close, locked to the kit | the wavetable lead tears in over the top]
+[Beat Transition]
+[Verse 2 | a completely different man, a clean smooth controlled singing voice, precise and cold, only cracking at the very end | full-weight drum and bass carries straight on, drums flip, colder synths, sharper hats | amen rolls tearing across every fourth bar | the palm-muted riff and gated guitar stabs keep driving underneath | the music stays full and loud under the vocal]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+[whispering voice loosing hope | no music | acapella]
+What about if we taxed the rich?
+[shouting | music again]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing, is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Drop — instrumental, 8 bars, no vocals | everything heavier and more distorted than the first drop — neuro bass growling underneath, the amen rolls harder and longer, the lead screaming higher, the guitar stabs harder and tighter than before]
+[Beat Transition]
+[Bridge | the turn | drums strip right back, intimate | the two men trade, both close and dry in the same cold room now | the guitar riff sparser and quieter here, still one repeating figure, never a tune]
+[the wrecked screaming voice]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the clean cold voice]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together, wrecked and clean]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the clean cold voice]
+you see as it turns out, there is very little clout,
+in having the manager or any of the c-suite about
+[the wrecked screaming voice]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the clean cold voice]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the wrecked screaming voice]
+yet I don't begrudge you,
+it's us and them now
+[the clean cold voice]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
 ```
 
 ## v6.5 Round r4 — Jack's note (2026-09-13)
