@@ -25,7 +25,7 @@ export function pickProject(tiles: ProjectTile[], name: string): string | null {
 
 /**
  * Pull the project id out of a Flow project href
- * ("/fx/tools/flow/project/<id>" or "https://labs.google/fx/tools/flow/project/<id>?x=y" →
+ * ("/project/<id>" or "https://flow.google.com/project/<id>?x=y" →
  * "<id>"). Returns undefined for a missing/malformed href rather than throwing — every caller
  * of this (flow_list_projects, flow_create_project's readback) needs to degrade gracefully on
  * the documented href-less-tile bug, not crash on it.
@@ -73,7 +73,7 @@ export const SCRAPE_PROJECTS = `() => {
     .join('')
     .trim()
   const out = []
-  for (const a of document.querySelectorAll('a[href*="/fx/tools/flow/project/"]')) {
+  for (const a of document.querySelectorAll('a[href*="/project/"]')) {
     const href = a.getAttribute('href') || ''
     let name = ''
     let node = a

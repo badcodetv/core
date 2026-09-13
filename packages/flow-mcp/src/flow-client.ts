@@ -1,6 +1,6 @@
-import { basename, join } from 'node:path'
+import { basename, dirname, join } from 'node:path'
 import { tmpdir } from 'node:os'
-import { writeFile } from 'node:fs/promises'
+import { mkdir, writeFile } from 'node:fs/promises'
 import { chromium, type Browser, type Locator, type Page } from 'playwright'
 import { collectNewCanvases, pickActiveCanvas, type CanvasImg } from './canvas'
 import { toCanvasImgs, SCRAPE_IMGS, type RawImg } from './dom'
@@ -43,7 +43,15 @@ import { parseMediaOptions, SCRAPE_MEDIA_OPTIONS, type RawMediaOption, type Medi
 import { parseCharacters, SCRAPE_CHARACTERS, type RawCharacterRow, type CharacterListItem } from './character-list'
 import { toAnimateTiles, chooseAnimateTarget, attachedWrongSource, type AnimateTile, type RawAnimateTile } from './animate-target'
 
-const FLOW_URL = 'https://labs.google/fx/tools/flow'
+/**
+ * ⚠️ MOVED 2026-09-13. Google rebuilt Flow (React → Angular) and moved it from
+ * `labs.google/fx/tools/flow` to `flow.google.com`; the old address now redirects. Projects are
+ * `/project/<id>` at the ROOT, the projects grid is `/`. See docs/flow/automation-2026-09-rebuild.md.
+ */
+const FLOW_URL = 'https://flow.google.com'
+/** The projects grid — the bare origin, with or without a trailing slash or query. */
+const PROJECTS_LIST_RE = /^https:\/\/flow\.google\.com\/?(\?.*)?$/
+const FLOW_HOST_RE = /^https:\/\/flow\.google\.com\//
 const DEFAULT_ENDPOINT = `http://localhost:${process.env.FLOW_CDP_PORT ?? '9222'}`
 const TURN_TIMEOUT_MS = 90_000
 /**
@@ -168,6 +176,9 @@ export class FlowClient {
    */
   private cardBaseline: string[] = []
 
+  /** The most recently harvested media id — what `refine` attaches on the rebuilt UI. */
+  private lastMediaId: string | null = null
+
   /** Attach to the already-logged-in Chrome launched by scripts/flow-chrome.sh. */
   static async connect(endpoint = DEFAULT_ENDPOINT): Promise<FlowClient> {
     const browser = await chromium.connectOverCDP(endpoint)
@@ -176,8 +187,8 @@ export class FlowClient {
     const pages = context.pages()
     // Prefer an already-open project page; fall back to any Flow page.
     let page =
-      pages.find((p) => /labs\.google\/fx\/tools\/flow\/project\//.test(p.url())) ??
-      pages.find((p) => p.url().includes('labs.google/fx/tools/flow'))
+      pages.find((p) => FLOW_HOST_RE.test(p.url()) && /\/project\//.test(p.url())) ??
+      pages.find((p) => FLOW_HOST_RE.test(p.url()))
     if (!page) {
       page = pages[0] ?? (await context.newPage())
       await page.goto(FLOW_URL, { waitUntil: 'domcontentloaded' })
@@ -188,7 +199,7 @@ export class FlowClient {
   async status(): Promise<FlowStatus> {
     const url = this.page.url()
     // Logged out → Flow bounces to an accounts/sign-in URL.
-    const loggedIn = !/accounts\.google\.com|signin/i.test(url) && url.includes('labs.google')
+    const loggedIn = !/accounts\.google\.com|signin/i.test(url) && FLOW_HOST_RE.test(url)
     const projectOpen = /\/project\//.test(url)
     return { loggedIn, projectOpen, url }
   }
@@ -259,7 +270,7 @@ export class FlowClient {
     if (!name) throw new Error('PROJECT_ID_OR_NAME_REQUIRED')
     // Always start from the projects list so the name match is honoured even if a
     // different project is already open.
-    if (/\/project\//.test(this.page.url()) || !this.page.url().includes('labs.google/fx/tools/flow')) {
+    if (/\/project\//.test(this.page.url()) || !FLOW_HOST_RE.test(this.page.url())) {
       await this.page.goto(FLOW_URL, { waitUntil: 'domcontentloaded' })
     }
     // The project grid hydrates AFTER domcontentloaded, so poll the scrape until the
@@ -299,7 +310,7 @@ export class FlowClient {
    * `toProjectSummaries` — so a partial list beats an error.
    */
   async listProjects(): Promise<ProjectSummary[]> {
-    if (!/\/fx\/tools\/flow\/?(\?.*)?$/.test(this.page.url())) {
+    if (!PROJECTS_LIST_RE.test(this.page.url())) {
       await this.page.goto(FLOW_URL, { waitUntil: 'domcontentloaded' })
     }
     const deadline = Date.now() + 15_000
@@ -393,7 +404,7 @@ export class FlowClient {
     // inside a project it has to go back to the list first, or it spends the full 30s timeout
     // waiting for a button that cannot be on the page (hit live 2026-08-12, calling
     // createProject straight after another smoke script left the browser inside a project).
-    if (!/\/fx\/tools\/flow\/?(\?.*)?$/.test(this.page.url())) {
+    if (!PROJECTS_LIST_RE.test(this.page.url())) {
       await this.page.goto(FLOW_URL, { waitUntil: 'domcontentloaded' })
     }
     await this.clickNewProjectButton()
@@ -420,6 +431,65 @@ export class FlowClient {
    * element entirely (observed live 2026-07-14: a force-click on "Add to Prompt" hit
    * "Upload media" and opened a second file chooser).
    */
+  /**
+   * Download one media item's ORIGINAL bytes to `outPath` through the tile's own
+   * `More options → Download` menu.
+   *
+   * ⚠️ REBUILT 2026-09-13. The old route fetched `labs.google/fx/api/trpc/media.getMediaUrlRedirect
+   * ?name=<id>`; on the rebuilt app that URL returns the SPA's HTML with a 200, so it "succeeds"
+   * and writes a web page to disk. The tile src (`flow.google.com/asb/<token>=s1600-rw`) is a
+   * RE-ENCODED copy — measured: `=s0` gives the right pixel size at HALF the bytes (250 KB vs
+   * 523 KB), and a video's tile src streams a 2.4 Mbps transcode of a 4.2 Mbps original. The
+   * Download menu is byte-identical to the signed `flow-content.google` original (md5 matched for
+   * both an image and a video), so it is the only route that gives us what Flow actually made.
+   *
+   * Images download on the first click; videos open a size submenu first, where
+   * "720p Original size" is the original (1080p/4K are paid upscales — never picked here).
+   */
+  private async harvestMedia(mediaId: string, outPath: string): Promise<void> {
+    this.lastMediaId = mediaId
+    const img = this.page.locator(`img[data-media-id="${mediaId}"]`).first()
+    if (!(await img.count())) {
+      // Pre-rebuild UI (or a surface that never renders a tile): keep the old redirect route.
+      await harvestToFile(this.page.request, mediaId, outPath)
+      return
+    }
+    const tile = this.page.locator('flow-image-tile, flow-video-tile').filter({ has: img }).first()
+    await this.downloadFromTile(tile, outPath)
+  }
+
+  /** Drive a tile's `More options → Download` menu and save what it produces. */
+  private async downloadFromTile(tile: Locator, outPath: string): Promise<void> {
+    await tile.scrollIntoViewIfNeeded().catch(() => {})
+    const more = tile.getByRole('button', { name: 'More options' })
+    await tile.hover().catch(() => {})
+    if (!(await more.isVisible().catch(() => false))) await this.hoverElement(tile)
+    await more.waitFor({ state: 'visible', timeout: 10_000 })
+    // Arm the listener BEFORE the click: an image downloads immediately on `Download`, and a
+    // listener armed afterwards misses it (measured — the first probe did exactly that).
+    const download = this.page.waitForEvent('download', { timeout: TURN_TIMEOUT_MS })
+    download.catch(() => {})
+    await more.click()
+    // Match on text, not accessible name: a submenu item's name also carries its arrow, so an
+    // anchored name regex missed it on freshly generated images (measured 2026-09-13).
+    const item = this.page.locator('.cdk-overlay-container [role="menuitem"]').filter({ hasText: /^\s*download\s*Download\s*$/ }).first()
+    await item.waitFor({ state: 'visible', timeout: 10_000 })
+    await item.click()
+    // Generated media opens a size submenu (uploads download at once). Only "Original size" is
+    // the untouched file; every other row is an upscale or a GIF, and the 4K one costs credits.
+    const original = this.page.locator('.cdk-overlay-container [role="menuitem"]').filter({ hasText: /Original size/i }).first()
+    const first = await Promise.race([
+      download.then(() => 'download' as const),
+      original.waitFor({ state: 'visible', timeout: 8_000 }).then(() => 'submenu' as const).catch(() => 'none' as const),
+    ])
+    if (first === 'submenu') await original.click()
+    const dl = await download
+    await mkdir(dirname(outPath), { recursive: true })
+    await dl.saveAs(outPath)
+    // The menu usually closes itself; an Escape on a closed menu is harmless.
+    await this.page.keyboard.press('Escape').catch(() => {})
+  }
+
   private async forceClick(locator: Locator): Promise<void> {
     await locator.evaluate((el) => (el as HTMLElement).click())
   }
@@ -490,9 +560,65 @@ export class FlowClient {
   }
 
   private promptBox(): Locator {
-    // Confirmed live 2026-06-30: the prompt box is a contenteditable div with role="textbox"
-    // and NO own placeholder text. A sibling <textarea> also exposes the textbox role.
-    return this.page.locator('div[role="textbox"][contenteditable="true"]').first()
+    // ⚠️ REBUILT 2026-09-13: a ProseMirror editor inside <flow-prompt-box>, with NO role at all
+    // (the old `div[role="textbox"]` matches nothing). A hidden <textarea> sits beside it.
+    // The pre-rebuild selector stays as a fallback for the character editor until that is mapped.
+    return this.page
+      .locator('flow-prompt-box [contenteditable="true"]')
+      .or(this.page.locator('div[role="textbox"][contenteditable="true"]'))
+      .first()
+  }
+
+  /**
+   * Replace the prompt box's text. ⚠️ `fill('')` does NOT clear the rebuilt ProseMirror box
+   * (measured 2026-09-13: the text survived it), so a second `fill` would APPEND to a stale
+   * prompt. Select-all + Backspace clears it; `insertText` then lands the prompt as one input
+   * event, so newlines never arrive as Enter (which submits — see appendPromptText).
+   */
+  private async setPrompt(text: string): Promise<void> {
+    const box = this.promptBox()
+    await box.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    await box.click()
+    await this.page.keyboard.press('ControlOrMeta+a')
+    await this.page.keyboard.press('Backspace')
+    if (text) await this.page.keyboard.insertText(text)
+  }
+
+  /** The compose bar's config trigger — "🍌 Nano Banana 2 crop_16_9 x2" / "Video · 720p · 8s crop_16_9 x2". */
+  private settingsTrigger(): Locator {
+    return this.page.getByRole('button', { name: 'Settings trigger' }).first()
+  }
+
+  /** Is the Settings popover open? Its mode radios only exist while it is. */
+  private settingsRadio(text: RegExp): Locator {
+    return this.page.locator('.cdk-overlay-container button[role="radio"]').filter({ hasText: text }).first()
+  }
+
+  private async openSettings(): Promise<void> {
+    if (await this.settingsRadio(/^imageImage$/).isVisible().catch(() => false)) return
+    await this.settingsTrigger().click()
+    await this.settingsRadio(/^imageImage$/).waitFor({ state: 'visible', timeout: 10_000 })
+  }
+
+  private async closeSettings(): Promise<void> {
+    if (await this.settingsRadio(/^imageImage$/).isVisible().catch(() => false)) {
+      await this.page.keyboard.press('Escape')
+      await this.settingsRadio(/^imageImage$/).waitFor({ state: 'hidden', timeout: 5_000 }).catch(() => {})
+    }
+  }
+
+  /** Leave Agent (chat) mode if it is on. The chip's `aria-pressed` is reliable on the rebuild. */
+  private async ensureAgentOff(): Promise<void> {
+    const chip = this.page.locator('flow-agent-mode-toggle-chip button').first()
+    if (!(await chip.count())) return
+    if ((await chip.getAttribute('aria-pressed')) === 'true') {
+      await chip.click()
+      await this.page.waitForFunction(
+        () => document.querySelector('flow-agent-mode-toggle-chip button')?.getAttribute('aria-pressed') === 'false',
+        undefined,
+        { timeout: 10_000 },
+      )
+    }
   }
 
   /**
@@ -504,6 +630,23 @@ export class FlowClient {
    * No-ops when the surface has no model picker.
    */
   private async ensureModel(model = DEFAULT_MODEL): Promise<void> {
+    // ⚠️ REBUILT 2026-09-13: Settings trigger → popover → "Select model family" → menuitems
+    // "🍌 Nano Banana Pro" / "🍌 Nano Banana 2" / "🍌 Nano Banana 2 Lite".
+    if (await this.settingsTrigger().count()) {
+      if (modelAlreadySelected(await this.settingsTrigger().textContent(), model)) return
+      await this.openSettings()
+      await this.page.locator('.cdk-overlay-container button[aria-label="Select model family"]').click()
+      const option = this.page
+        .locator('.cdk-overlay-container button[role="menuitem"]')
+        .filter({ hasText: new RegExp(`^\\s*🍌\\s*${escapeRegExp(model)}\\s*$`) })
+        .first()
+      await option.waitFor({ state: 'visible', timeout: 10_000 })
+      await option.click()
+      await this.closeSettings()
+      const label = (await this.settingsTrigger().textContent()) ?? ''
+      if (!modelAlreadySelected(label, model)) throw new Error(`MODEL_NOT_APPLIED: wanted ${model}, trigger shows "${label.trim()}"`)
+      return
+    }
     const bare = this.page.getByRole('button', { name: /Nano Banana.*arrow_drop_down/i }).first()
     const crop = this.page.getByRole('button', { name: /crop_/ }).first()
     let trigger: Locator
@@ -685,7 +828,7 @@ export class FlowClient {
     await this.selectCharacterView('portrait')
     const portraitMediaId = await this.currentCharacterMediaId()
     if (portraitMediaId && opts?.portraitOutPath) {
-      await harvestToFile(this.page.request, portraitMediaId, opts.portraitOutPath)
+      await this.harvestMedia(portraitMediaId, opts.portraitOutPath)
     }
 
     let bodyMediaId: string | undefined
@@ -693,7 +836,7 @@ export class FlowClient {
       await this.selectCharacterView('body')
       bodyMediaId = await this.currentCharacterMediaId()
       if (bodyMediaId && opts?.bodyOutPath) {
-        await harvestToFile(this.page.request, bodyMediaId, opts.bodyOutPath)
+        await this.harvestMedia(bodyMediaId, opts.bodyOutPath)
       }
     }
 
@@ -725,12 +868,12 @@ export class FlowClient {
     const box = this.promptBox()
     await box.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     await this.ensureModel(model)
-    await box.fill(text)
+    await this.setPrompt(text)
     const before = await this.snapshotMediaNames()
     await this.clickSubmit()
     if (settled) await settled.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
     const { name: mediaId } = await this.waitForNewCanvas(before, TURN_TIMEOUT_MS)
-    if (outPath) await harvestToFile(this.page.request, mediaId, outPath)
+    if (outPath) await this.harvestMedia(mediaId, outPath)
     return { path: outPath ?? '', mediaId }
   }
 
@@ -739,7 +882,11 @@ export class FlowClient {
     // asynchronously after the prompt fills — a click while it is still disabled is silently
     // swallowed (observed live 2026-07-14), so wait for enabled, click, and VERIFY the box
     // cleared (Flow empties the prompt on a successful submit); retry with Enter if not.
-    const submit = this.page.getByRole('button', { name: /arrow_forward\s*Create/i }).first()
+    // Rebuilt 2026-09-13: aria-label "Start generation" (text is just the icon, arrow_forward).
+    const submit = this.page
+      .getByRole('button', { name: 'Start generation' })
+      .or(this.page.getByRole('button', { name: /arrow_forward\s*Create/i }))
+      .first()
     const box = this.promptBox()
     const deadline = Date.now() + TURN_TIMEOUT_MS
     while (Date.now() < deadline) {
@@ -766,7 +913,7 @@ export class FlowClient {
   private async submitPrompt(prompt: string): Promise<void> {
     // Media-reference chips live OUTSIDE the contenteditable and survive fill(); only inline
     // character chips forbid it (submitWithCharacter appends instead).
-    await this.promptBox().fill(prompt)
+    await this.setPrompt(prompt)
     await this.clickSubmit()
   }
 
@@ -782,6 +929,7 @@ export class FlowClient {
   private async ensureImageMode(count = 1, model = DEFAULT_MODEL, aspect?: string): Promise<void> {
     // Wait for the create bar to hydrate (it renders after navigation).
     await this.promptBox().waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    if (await this.settingsTrigger().count()) return this.ensureImageModeRebuilt(count, model, aspect)
     // The bar toggles between "Agent" (conversational) and direct generation; the image config
     // (the "crop_…" button) only exists in generation mode. If it isn't showing we're in Agent
     // mode — click the Agent toggle to leave it. (Gating on crop_'s presence is more reliable
@@ -853,6 +1001,43 @@ export class FlowClient {
     // The label is local React state and lands in well under a second (measured ~80ms,
     // smoke-aspect-race.ts), so this is a settle-check, not a race workaround.
     await this.assertImageConfig(crop, countTab, aspect)
+  }
+
+  /**
+   * ensureImageMode for the 2026-09-13 Angular rebuild. The popover is a set of
+   * `button[role="radio"]` toggles (was Radix tabs): `imageImage`/`videocamVideo`, aspect
+   * `crop_16_916:9` …, count `x1`…`x4`, plus a "Select model family" menu. The trigger label
+   * reads "🍌 Nano Banana 2 crop_16_9 x2", so the same label helpers still short-circuit.
+   * Agent mode no longer hides the trigger, but it still changes what Enter does, so it is
+   * switched off explicitly.
+   */
+  private async ensureImageModeRebuilt(count: number, model: string, aspect?: string): Promise<void> {
+    await this.ensureAgentOff()
+    const trigger = this.settingsTrigger()
+    const countTab = `x${count}`
+    const label = () => trigger.textContent().then((t) => (t ?? '').replace(/\s+/g, ' ').trim())
+    const done = (l: string) =>
+      /Nano Banana/i.test(l) && modelAlreadySelected(l, model) && l.endsWith(countTab) && (!aspect || aspectAlreadySelected(l, aspect))
+    if (done(await label())) return
+    await this.openSettings()
+    if (!(await this.settingsRadio(/^imageImage$/).getAttribute('aria-checked').then((v) => v === 'true'))) {
+      await this.settingsRadio(/^imageImage$/).click()
+    }
+    if (aspect) {
+      const a = this.settingsRadio(new RegExp(`${escapeRegExp(aspect)}$`))
+      if (!(await a.count())) throw new Error(`ASPECT_UNAVAILABLE: ${aspect}`)
+      await a.click()
+    }
+    await this.settingsRadio(new RegExp(`^${countTab}$`)).click()
+    await this.closeSettings()
+    await this.ensureModel(model)
+    const deadline = Date.now() + 5_000
+    let l = await label()
+    while (!done(l) && Date.now() < deadline) {
+      await this.page.waitForTimeout(150)
+      l = await label()
+    }
+    if (!done(l)) throw new Error(`IMAGE_CONFIG_NOT_APPLIED: wanted ${model} ${countTab}${aspect ? ` + ${aspect}` : ''}, trigger shows "${l}"`)
   }
 
   /**
@@ -1006,7 +1191,7 @@ export class FlowClient {
     for (let i = 0; i < canvases.length; i++) {
       const c = canvases[i]!
       const path = candidateOutPath(outPath, i, numOutputs)
-      await harvestToFile(this.page.request, c.name, path)
+      await this.harvestMedia(c.name, path)
       // Measure the FILE we just wrote, not the page. The DOM cannot be trusted for this: the
       // on-screen box is a layout accident (a real 1376x768 image reported as 537x300), and
       // naturalWidth is 0 until the browser has decoded the image, which it usually has not by
@@ -1065,7 +1250,7 @@ export class FlowClient {
       await this.page.keyboard.press('End')
       await this.appendPromptText(prompt)
     } else {
-      await box.fill(prompt) // media chips live outside the box and survive fill()
+      await this.setPrompt(prompt) // ⚠️ chip survival across select-all on the rebuild: verify in smoke
     }
     await this.clickSubmit()
     const canvases = await this.waitForNewCanvases(before, numOutputs, TURN_TIMEOUT_MS)
@@ -1138,7 +1323,7 @@ export class FlowClient {
         // Sweep the stray '@' before trying the button, or it rides along into the prompt —
         // fatal to the cast paths, which append rather than fill.
         const text = (await box.textContent().catch(() => null)) ?? ''
-        if (text.replace(/[​﻿]/g, '').trim() === '@') await box.fill('')
+        if (text.replace(/[​﻿]/g, '').trim() === '@') await this.setPrompt('')
         return false
       }
     }
@@ -1172,7 +1357,7 @@ export class FlowClient {
     // the box holds nothing else: a stray character is harmless to a caller that fill()s the box
     // next, and fatal to one that appends (submitWithCharacter does exactly that).
     const text = (await this.promptBox().textContent().catch(() => null)) ?? ''
-    if (text.replace(/[​﻿]/g, '').trim() === '@') await this.promptBox().fill('')
+    if (text.replace(/[​﻿]/g, '').trim() === '@') await this.setPrompt('')
   }
 
   /**
@@ -1236,6 +1421,7 @@ export class FlowClient {
    * the alt text "A piece of media generated or uploaded by you…").
    */
   private async attachReferences(refPaths: string[]): Promise<void> {
+    if (await this.ingredientsButton().count()) return this.attachReferencesRebuilt(refPaths)
     const chip = this.page.locator('button:has(img[alt*="piece of media"])')
     const base = await chip.count() // pre-existing chips (e.g. left over on the bar) don't count
     for (let i = 0; i < refPaths.length; i++) {
@@ -1262,6 +1448,75 @@ export class FlowClient {
       }
       await this.closeAssetPicker()
     }
+  }
+
+  /** Rebuilt (2026-09-13) compose bar: the `+` that opens the ingredient picker. */
+  private ingredientsButton(): Locator {
+    return this.page.getByRole('button', { name: 'Add ingredients to the prompt box' }).first()
+  }
+
+  /** Attached reference chips — a strip ABOVE the editor, so clearing the text never touches them. */
+  private ingredientChips(): Locator {
+    return this.page.locator('flow-prompt-box flow-ingredient-chip')
+  }
+
+  /**
+   * Upload local files as prompt ingredients on the rebuilt picker.
+   *
+   * 🔴 The trap this is built around (measured 2026-09-13): the picker shows the upload as an
+   * option labelled "Uploading<file>" and "Add to prompt" is ENABLED the whole time. Clicking it
+   * then attaches whatever else the picker had — it attached the previous generation, silently,
+   * and the edit would have run against the wrong picture. So: wait for the option to lose its
+   * "Uploading" prefix, select THAT option explicitly, and only then add.
+   *
+   * There is no file <input> in the DOM until the chooser fires, so this listens for the chooser.
+   */
+  private async attachReferencesRebuilt(refPaths: string[]): Promise<void> {
+    const overlay = this.page.locator('.cdk-overlay-container')
+    for (const ref of refPaths) {
+      const base = await this.ingredientChips().count()
+      await this.ingredientsButton().click()
+      const upload = overlay.locator('button').filter({ hasText: /Upload media/ }).first()
+      await upload.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+      const chooser = this.page.waitForEvent('filechooser', { timeout: 15_000 })
+      await upload.click()
+      await (await chooser).setFiles(ref)
+      const name = basename(ref)
+      const ready = overlay
+        .locator('[role="option"]')
+        .filter({ hasText: new RegExp(`^\\s*${escapeRegExp(name)}`) })
+        .first()
+      await ready.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+      // Clicking the finished option ATTACHES it and closes the picker by itself (measured
+      // 2026-09-13) — the same shape the old character picker had. The Add button is only
+      // pressed if the picker is somehow still open afterwards.
+      await ready.click()
+      const add = overlay.locator('button').filter({ hasText: /^\s*Add to prompt\s*$/ }).first()
+      await this.ingredientChips().nth(base).waitFor({ state: 'visible', timeout: 10_000 }).catch(async () => {
+        if (await add.isVisible().catch(() => false)) await add.click()
+      })
+      await this.ingredientChips().nth(base).waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    }
+  }
+
+  /**
+   * Attach media ALREADY in the project as an ingredient, by id, through the tile's own
+   * `More options → Add to prompt`. Verified by the chip's src, which carries the media id.
+   */
+  private async attachMediaById(mediaId: string): Promise<void> {
+    const tile = this.page.locator('flow-image-tile').filter({ has: this.page.locator(`img[data-media-id="${mediaId}"]`) }).first()
+    await tile.waitFor({ state: 'attached', timeout: TURN_TIMEOUT_MS })
+    await tile.scrollIntoViewIfNeeded().catch(() => {})
+    await tile.hover().catch(() => {})
+    const more = tile.getByRole('button', { name: 'More options' })
+    if (!(await more.isVisible().catch(() => false))) await this.hoverElement(tile)
+    await more.click()
+    await this.page.locator('.cdk-overlay-container [role="menuitem"]').filter({ hasText: /Add to prompt/ }).first().click()
+    await this.page
+      .locator(`flow-prompt-box flow-ingredient-chip img[src*="${mediaId}"]`)
+      .first()
+      .waitFor({ state: 'visible', timeout: 15_000 })
+      .catch(() => { throw new Error(`REFERENCE_ATTACH_FAILED: ${mediaId}`) })
   }
 
   /**
@@ -1448,10 +1703,15 @@ export class FlowClient {
     if (opts?.model || opts?.aspect) {
       await this.ensureImageMode(1, opts.model, opts.aspect)
     }
+    // ⚠️ REBUILD 2026-09-13: a bare follow-up prompt no longer edits the last image — measured, it
+    // generated an unrelated street. The previous result has to ride along as an ingredient.
+    if ((await this.ingredientsButton().count()) && this.lastMediaId) {
+      await this.attachMediaById(this.lastMediaId)
+    }
     const before = await this.snapshotMediaNames()
     await this.submitPrompt(prompt)
     const { name } = await this.waitForNewCanvas(before, TURN_TIMEOUT_MS)
-    await harvestToFile(this.page.request, name, outPath)
+    await this.harvestMedia(name, outPath)
     return { path: outPath, mediaId: name }
   }
 

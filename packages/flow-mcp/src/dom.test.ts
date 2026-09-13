@@ -53,4 +53,15 @@ describe('toCanvasImgs', () => {
     const raw = [{ src: 'getMediaUrlRedirect?notname=x', width: 10, height: 10 }]
     expect(toCanvasImgs(raw)).toEqual([])
   })
+
+  // 2026-09-13 rebuild: the src is an opaque /asb/ token and the id lives on data-media-id.
+  it('takes the id from data-media-id when the src carries none', () => {
+    const raw = [
+      { src: 'https://flow.google.com/asb/AB-nOUYw=s1600-rw', mediaId: '52213672-0b5d-4807-bea2-5ccd5fa66ba0', width: 530, height: 298, naturalWidth: 1376, naturalHeight: 768 },
+      { src: 'https://www.gstatic.com/aitestkitchen/website/flow/icons/flow-music-icon.webp', width: 20, height: 20 },
+    ]
+    expect(toCanvasImgs(raw)).toEqual([
+      { name: '52213672-0b5d-4807-bea2-5ccd5fa66ba0', width: 530, height: 298, naturalWidth: 1376, naturalHeight: 768 },
+    ])
+  })
 })

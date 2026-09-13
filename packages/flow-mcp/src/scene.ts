@@ -25,7 +25,7 @@ export const SCENE_PATH_RE = /\/project\/([0-9a-f-]{36})\/edit\/([0-9a-f-]{36})/
 export const SCENE_COMPOSED_PATH_RE = /\/project\/([0-9a-f-]{36})\/scene\/([0-9a-f-]{36})/i
 
 export function sceneUrl(projectId: string, sceneId: string): string {
-  return `https://labs.google/fx/tools/flow/project/${projectId}/edit/${sceneId}`
+  return `https://flow.google.com/project/${projectId}/edit/${sceneId}`
 }
 
 /** Pull the ids back out of a scene-editor URL — this is the URL a user pastes from Flow. */

@@ -15,6 +15,12 @@ import type { CanvasImg } from './canvas'
  */
 export interface RawImg {
   src: string
+  /**
+   * The media UUID from the tile's own `data-media-id` attribute. Since the 2026-09-13 rebuild
+   * the src is an opaque `flow.google.com/asb/<token>` URL that carries NO id, so this is the
+   * only place the id lives. Absent on the pre-rebuild UI, where it was parsed from the src.
+   */
+  mediaId?: string
   width: number
   height: number
   naturalWidth?: number
@@ -24,6 +30,7 @@ export interface RawImg {
 /** The function string evaluated inside the page to scrape generated <img>s. */
 export const SCRAPE_IMGS = `() => [...document.querySelectorAll('img')].map(im => ({
   src: im.currentSrc || im.src || '',
+  mediaId: im.dataset.mediaId || undefined,
   width: im.getBoundingClientRect().width,
   height: im.getBoundingClientRect().height,
   naturalWidth: im.naturalWidth,
@@ -34,8 +41,7 @@ export const SCRAPE_IMGS = `() => [...document.querySelectorAll('img')].map(im =
 export function toCanvasImgs(raw: RawImg[]): CanvasImg[] {
   const out: CanvasImg[] = []
   for (const im of raw) {
-    if (!isMediaSrc(im.src)) continue
-    const name = parseMediaName(im.src)
+    const name = im.mediaId || (isMediaSrc(im.src) ? parseMediaName(im.src) : null)
     if (!name) continue
     // Natural size when the image has decoded, else fall back to the rendered box — a
     // not-yet-decoded <img> reports naturalWidth 0, and reporting 0x0 would be worse than
