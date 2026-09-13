@@ -1,7 +1,7 @@
 ---
 title: Camping — the song (LIVE v6 sheet)
-status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). Candidate take = The M3 Lane 44f46458 (Jack's pick). Next = round r1 `stomp`, drafted 2026-09-13, NOTHING generated. The v5.5 round-17 sheet below the v6 section is archived history.
-candidate: https://suno.com/song/44f46458-d0c2-40f6-a14a-2c331b805fa8
+status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). Candidate = d13ca10a (Kai's pick, §v6.0). RESUME HERE — round r3 `british` (§v6.4, 12 takes on base r2c tight+grit) sent to Jack for review 2026-09-13; next round waits on his and Kai's picks. The v5.5 round-17 sheet below the v6 section is archived history.
+candidate: https://suno.com/song/d13ca10a-1aa4-41c5-a6f2-b13beeb2e164
 brief: Jack via Kai 2026-09-13 — "more like Imagine Dragons (https://en.wikipedia.org/wiki/Imagine_Dragons) and less poppy". Kai 2026-09-13 — 174 BPM drum and bass (option A), not the take's 117.
 released_take: ./camping-released.md
 bpm: 174
