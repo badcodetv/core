@@ -119,6 +119,151 @@ gets generated. Note what the rewrite added that the stomp box never said: `powe
 Dark UK drum and bass: detuned wavetable lead, low palm-muted distorted power-chord guitar and heavy guitar wall, dual male spoken-word voices—gravelly half-shout and clean plummy baritone hardening into a shout—with dry intimate acapella breaks, dark sub-heavy compression, stomping floor toms, handclaps, chopped breakbeat, growling Reese sub, screaming detuned lead, reverb-soaked raw distortion, steady 174 BPM amen-roll drive.
 ```
 
+## v6.3 Round r2 — `street` (2026-09-13)
+
+**Brief, Kai on d13ca10a:** *"just like that, just with slightly more edgy, gritty, street-level sound. At the
+moment, it's a little bit too grunge-guitar-y… The guitars are good, I just think it's slightly grungy."*
+Kai confirmed the grunge is the **drops at 0:43 and 1:41**.
+
+**Diagnosis** (listening ledger `docs/listening/log/2026-09-13-153733-…-d13ca10a.md`, timings checked
+against a loudness scan): the drops turn the guitar into a wide, slow-strummed, reverb-washed wall. The
+tight palm-muted chug under the verses is the part Kai likes. Triggers: Style `heavy guitar wall` and
+`reverb-soaked raw distortion`, and the **lyric stage notes** that literally ask for `a wall of chiming
+Britpop guitars, strumming slow and wide`.
+
+**What moved** (Kai's yes to A, B, the combination and the stage notes):
+
+| Box | Change |
+|---|---|
+| Style (base = d13ca10a's rewrite, §v6.0) | **a** `heavy guitar wall`→`tight gated guitar stabs`, `reverb-soaked raw distortion`→`dry close raw distortion` · **b** `reverb-soaked raw distortion`→`dry grimy 12-bit crunched breaks, close and in-your-face` · **c** both |
+| Lyrics — stage notes only, **all 48 sung lines byte-identical** | Drop 1: `a wall of chiming Britpop guitars, strumming slow and wide at half the speed of the kit, tambourine on every beat` → `tight gated guitar stabs, dry and close, locked to the kit` · Verse 2: `the guitar wall is gone` → `the guitar stabs are gone` · Drop 2: `the guitar wall thicker and wider` → `the guitar stabs harder and tighter` |
+| Exclude | unchanged (d13ca10a's) |
+
+**Settings = d13ca10a's except Variety:** v6 · weirdness 60 · style influence 70 · **Variety Off** (so Suno
+cannot rewrite the Style box) · Max Mode off · Vocal Gender Male · 205 s · Personalize off · no Voice ·
+camping-Jack.
+
+#### r2a `tight`
+
+Style:
+
+```
+Dark UK drum and bass: detuned wavetable lead, low palm-muted distorted power-chord guitar and tight gated guitar stabs, dual male spoken-word voices—gravelly half-shout and clean plummy baritone hardening into a shout—with dry intimate acapella breaks, dark sub-heavy compression, stomping floor toms, handclaps, chopped breakbeat, growling Reese sub, screaming detuned lead, dry close raw distortion, steady 174 BPM amen-roll drive.
+```
+
+#### r2b `grit`
+
+Style:
+
+```
+Dark UK drum and bass: detuned wavetable lead, low palm-muted distorted power-chord guitar and heavy guitar wall, dual male spoken-word voices—gravelly half-shout and clean plummy baritone hardening into a shout—with dry intimate acapella breaks, dark sub-heavy compression, stomping floor toms, handclaps, chopped breakbeat, growling Reese sub, screaming detuned lead, dry grimy 12-bit crunched breaks, close and in-your-face, steady 174 BPM amen-roll drive.
+```
+
+#### r2c `tight + grit`
+
+Style:
+
+```
+Dark UK drum and bass: detuned wavetable lead, low palm-muted distorted power-chord guitar and tight gated guitar stabs, dual male spoken-word voices—gravelly half-shout and clean plummy baritone hardening into a shout—with dry intimate acapella breaks, dark sub-heavy compression, stomping floor toms, handclaps, chopped breakbeat, growling Reese sub, screaming detuned lead, dry grimy 12-bit crunched breaks, close and in-your-face, steady 174 BPM amen-roll drive.
+```
+
+### r2 takes (generated 2026-09-13, Kai's yes — 3 Creates → 6 takes, balance unreadable on the v6 promo)
+
+| Atom | Takes | Length |
+|---|---|---|
+| r2a `tight` | [e834dca5](https://suno.com/song/e834dca5-8812-4f95-9b9e-f90889472ebc) · [d061c008](https://suno.com/song/d061c008-d03b-45fc-86ae-8d27756765b4) | 🔴 **180 s, not 205** — the form's length read 180 before Create and the script generated anyway |
+| r2b `grit` | [177e2283](https://suno.com/song/177e2283-941f-4212-b59c-f6a364756238) · [4a230869](https://suno.com/song/4a230869-1b5b-4fb3-9ccb-c9fb8ba2a73a) | 204.8 s · 204.8 s |
+| r2c `tight + grit` | [8818b5e5](https://suno.com/song/8818b5e5-98f5-4d42-ad14-7be7e4a2551b) · [589de54a](https://suno.com/song/589de54a-be6f-4dfc-98c5-8250d908f022) | 204.0 s · 205.4 s |
+
+✅ **Verified off Suno's own song records, all six:** Style box stored **verbatim** (Variety Off held — no
+rewrite, `aug_creativity 0`), exclude verbatim, **lyrics box byte-identical to the r2 box** (sung words =
+d13ca10a's), style_weight 0.7, weirdness 0.6. Workspace was picked on the form; the song page no longer
+shows the project name, so it is not re-read from the record.
+⚠️ r2a's two takes are 25 s shorter, so if they sound rushed or cut, that is the length and not the prompt.
+
+#### r2 shared Exclude and Lyrics (all three atoms)
+
+Exclude styles:
+
+```
+singing, sung verses, sung chorus, melodic vocal, vocal melody, vocal hooks, crooning, clean sung melody, autotune, harmonies, twang, americana, southern vocal, country vocal, grime MC, UK drill, road rap, trap, hip hop, young MC, American accent, American vocal, US rap, transatlantic, ragga MC, Jamaican accent, dancehall vocal, soprano, operatic vocals, vibrato, angelic voices, sustained vocal notes, female vocal, children's choir, choral harmony, orchestral strings, violins, cello, string section, piano, brass band, marching band, guitar solo, lead guitar, shredding, acoustic guitar, wah, remix, rock remix, nu metal, rap rock, rapcore, grunge, epic trailer music, reggae, dub, ska, music hall, vaudeville, pantomime, liquid dnb, jump up, pop, glossy production, sing-along chorus, radio pop, pop rock, lo-fi, jaunty, playful, whimsical, bouncy, comedic, novelty, parody, uplifting, major key, double time, tempo change, slow tempo
+```
+
+Lyrics:
+
+```lyrics
+[Intro — 8 bars | one long low detuned synth note, completely alone, held and slowly filtering open | a texture, not a tune, no melody | distant city hum far underneath | no drums, no bass, no guitar]
+[Verse 1 | gravelly ranting voice, flat and unbothered, never selling a line | the low synth note holds underneath | no drums and no bass for the first half of this verse, then a dry chopped breakbeat comes in under the vocal and runs to the drop | amen rolls tearing across every fourth bar | the words never stop, no instrumental passage in this verse]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+[whispering voice loosing hope | no music | acapella]
+I can't live like this forever
+[shouting | music again]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[louder more angry shouting]
+please sir, can I fuckin, have some more?
+[Drop — instrumental, 8 bars, no vocals | the kit hits full weight and the sub bass drops for the first time | amen rolls tearing across every fourth bar | the palm-muted riff opens out into tight gated guitar stabs, dry and close, locked to the kit | the wavetable lead tears in over the top]
+[Beat Transition]
+[Verse 2 | well-spoken posh voice, a completely different man, dry and unbothered, never selling a line | full-weight drum and bass carries straight on, drums flip, colder synths, sharper hats | amen rolls tearing across every fourth bar | the guitar stabs are gone, only the same palm-muted riff returns underneath, unchanged | nothing else playing at all]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+[whispering voice loosing hope | no music | acapella]
+What about if we taxed the rich?
+[shouting | music again]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing, is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Drop — instrumental, 8 bars, no vocals | everything heavier and more distorted than the first drop — neuro bass growling underneath, the amen rolls harder and longer, the lead screaming higher, the guitar stabs harder and tighter than before]
+[Beat Transition]
+[Bridge | the turn | drums strip right back, intimate | the two men trade, both close and dry in the same cold room now | the guitar riff sparser and quieter here, still one repeating figure, never a tune]
+[gravelly ranting voice]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[well-spoken posh voice]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together, doubled]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[well-spoken posh voice]
+you see as it turns out, there is very little clout,
+in having the manager or any of the c-suite about
+[gravelly ranting voice]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[well-spoken posh voice]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gravelly ranting voice]
+yet I don't begrudge you,
+it's us and them now
+[well-spoken posh voice]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
+```
+
 ## v6.2 Round r1 — `stomp`
 
 **One variable, named before pasting: the Style + Exclude atom.** The Lyrics box is the candidate's
