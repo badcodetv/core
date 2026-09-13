@@ -1543,6 +1543,8 @@ export async function recordTake(page: Page, key: string): Promise<RecordResult>
   const port = Number(new URL(ENDPOINT).port || 80)
   const channel = port - 9221
   const sink = cap.sinkName(channel)
+  // Record on whichever PulseAudio this Chrome was launched against (WSLg or the private fallback).
+  await cap.useChannelAudioServer(join(import.meta.dirname, '..', '..'), channel)
   await cap.ensureSink(sink)
 
   // 3. Arm the stop BEFORE anything plays. Suno starts the next row ~1 s after `ended`

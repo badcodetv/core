@@ -27,7 +27,8 @@ export const sinkName = (channel: number): string => `badcode_ch${channel}`
 const tail = (s: string, n = 500): string => (s.length > n ? s.slice(-n) : s).trim()
 
 function pactl(args: string[]): Promise<string> {
-  return run('pactl', args, { env: { ...process.env, LC_ALL: 'C' }, maxBuffer: 8 << 20 }).then(
+  // timeout: a wedged PulseAudio answers nothing and pactl has no timeout of its own (2026-09-12/13).
+  return run('pactl', args, { env: { ...process.env, LC_ALL: 'C' }, maxBuffer: 8 << 20, timeout: 5_000 }).then(
     ({ stdout }) => String(stdout),
     (err: { stderr?: unknown; message: string }) => {
       throw new Error(`PULSE_FAILED: pactl ${args.join(' ')}: ${tail(String(err.stderr ?? '')) || err.message}`)
@@ -186,6 +187,24 @@ export const previewArgs = (inWav: string, outMp3: string): string[] => [
 export const trimArgs = (inWav: string, startSec: number, durSec: number, outWav: string): string[] => [
   '-v', 'error', '-y', '-ss', String(startSec), '-t', String(durSec), '-i', inWav, '-c:a', 'pcm_s16le', outWav,
 ]
+
+/**
+ * Point every pactl/ffmpeg this process spawns at the PulseAudio server channel <n>'s Chrome was
+ * launched against — WSLg's, or the private fallback from scripts/audio-server.sh. flow-chrome.sh
+ * writes it to `.flow-channels/<n>.pulse`; guessing the wrong server records silence. (Reading
+ * Chrome's /proc environ does not work: Chrome overwrites it for its process title.)
+ * Returns the server used, or null when the file is absent or empty (then the default stands).
+ */
+export async function useChannelAudioServer(repoRoot: string, channel: number): Promise<string | null> {
+  const { readFile } = await import('node:fs/promises')
+  try {
+    const server = (await readFile(resolve(repoRoot, '.flow-channels', `${channel}.pulse`), 'utf8')).trim()
+    if (server) process.env.PULSE_SERVER = server
+    return server || null
+  } catch {
+    return null
+  }
+}
 
 // ── the virtual speaker ──────────────────────────────────────────────────────────────────────────
 

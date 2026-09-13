@@ -112,6 +112,18 @@ has_sink() {
 # Measured: `pactl info` still running at 6 s against the wedged server, 0.004 s against a healthy
 # one. A hung speaker must never stop a browser launching.
 pa() { timeout 3 pactl "$@"; }
+# Pick the server BEFORE any pactl call: WSLg's when it answers, otherwise a private PulseAudio
+# (scripts/audio-server.sh, 2026-09-13). Chrome inherits PULSE_SERVER, and the recorder reads it
+# back out of Chrome's own environment, so the two can never disagree about which server is live.
+if command -v pactl >/dev/null 2>&1 && SERVER="$("$(dirname "$0")/audio-server.sh")"; then
+  export PULSE_SERVER="$SERVER"
+fi
+PRIVATE_AUDIO=0
+[ "${PULSE_SERVER:-}" = "unix:/tmp/badcode-pulse/native" ] && PRIVATE_AUDIO=1
+# Record the choice per channel. The recorder cannot read it back out of Chrome: Chrome rewrites
+# its own /proc/<pid>/environ for its process title (measured 2026-09-13 — it read as "om").
+mkdir -p "$ROOT/.flow-channels"
+printf '%s\n' "${PULSE_SERVER:-}" > "$ROOT/.flow-channels/$CH.pulse"
 if ! command -v pactl >/dev/null 2>&1; then
   echo "warning: pactl not found — launching without a per-channel audio sink (recording unavailable)." >&2
 elif ! pa info >/dev/null 2>&1; then
@@ -120,8 +132,12 @@ else
   if ! has_sink; then
     if pa load-module module-null-sink sink_name="$SINK" \
          sink_properties=device.description="BadCode_channel_$CH" >/dev/null 2>&1; then
-      pa load-module module-loopback source="$SINK.monitor" sink=@DEFAULT_SINK@ latency_msec=60 >/dev/null 2>&1 \
-        || echo "warning: loaded $SINK but its loopback failed — this channel will record but not be audible." >&2
+      if [ "$PRIVATE_AUDIO" = 1 ]; then
+        echo "note: private audio server — channel $CH records but is not audible in WSL." >&2
+      else
+        pa load-module module-loopback source="$SINK.monitor" sink=@DEFAULT_SINK@ latency_msec=60 >/dev/null 2>&1 \
+          || echo "warning: loaded $SINK but its loopback failed — this channel will record but not be audible." >&2
+      fi
     else
       echo "warning: could not create audio sink $SINK — launching without it (recording unavailable)." >&2
     fi
@@ -145,4 +161,4 @@ exec "$CHROME" \
   --user-data-dir="$PROFILE" \
   --no-first-run --no-default-browser-check \
   --no-sandbox \
-  "https://labs.google/fx/tools/flow"
+  "https://flow.google.com"
