@@ -152,6 +152,56 @@ other two were dropped because **they cost nothing and they were adjacent**, whi
 right posture: on a scene the filter is already primed for, do not spend generations
 defending a clause you do not need.
 
+### A5c. 🔴 **Disproven 2026-09-13** — machinery plus a named body part was NOT the cause `[inferred, then falsified]`
+
+**Read this before the entry below.** Camping `1m-l` **round 4 removed every machinery-plus-body
+phrase and was refused anyway.** The hypothesis recorded here is therefore wrong, or at least not
+sufficient. It is kept because the *method* it demonstrates is sound and the *conclusion* it drew
+is the warning: **a diff narrows the suspect list, it does not identify the clause.** Four phrases
+were swapped in one pass, none isolated, and the entry still read as if the prime suspect were
+established.
+
+🔑 **The two corrections worth carrying forward:**
+
+1. **With two blocked rounds and one that passed, diff the INTERSECTION.** What both refusals
+   share and the passing version lacks is a far smaller and better-founded set than what any one
+   refusal added. For `1m-l` that set is led by a single edit: **three anonymous shapes carrying
+   boxes became three aged, gendered, individuated people being made to carry their possessions
+   out into the dark** — [trigger 3](#a5-the-five-triggers-badcodes-own), *stacked destitution*,
+   arriving by **accumulation** rather than by any one word, beside a named real event. ⚠️ Also
+   inferred, also unisolated — **do not write it up as the cause until the ladder runs.**
+2. 🔑 **A policy block is free.** The refusal card says *"You have not been charged for this
+   generation."* So [A4](#a4-the-debugging-procedure)'s binary search by subtraction costs
+   **minutes, not credits**, and there is no economic case for a third guess. **After two failed
+   inferred diagnoses, measure.** Working and the ladder:
+   [`camping/prompts.md`](../stories/camping/prompts.md#1m-l--round-4-policy-block-jack-2026-09-13---and-it-disproves-the-round-2-diagnosis).
+
+⚠️ **The general lesson survives the specific one:** an individuation pass written for crowd
+realism can quietly convert a composition into a depiction of people being displaced. **Individuate
+by what a figure carries, wears and how far off they stand — not by age, gender and build.**
+
+---
+
+#### The original entry, kept as written `[inferred, untested]`
+
+**Camping `1m-l` round 2, 2026-09-12.** A lift-lobby still was refused. Round 1 of the same shot
+**generated** (and was rejected on quality), so the cause had to be in the four phrases round 2
+added — which is the cheapest diagnostic there is: **when a reworked prompt blocks, diff it
+against the version that ran, and clear everything both share.** It cleared a detailed
+face-age block and a real camera marque in one step.
+
+**Prime suspect:** *"the gap between the leading edges is already narrower than a man's
+shoulders, so the doors **crop him at both arms**."* `crop` is a photographer's word sitting in
+a photographer's paragraph — and A5b's mechanism still fires, because the sentence around it is
+**machinery closing on a body, naming the body parts it reaches.** The setting supplies the
+other reading.
+
+**The fix is the same shape as A5b's:** state the tight gap as **negative space** — *only a
+tall narrow slot of the car is still visible* — and never name what the machine is near.
+🔴 **Not isolated:** three other new phrases (*candid*, *"a thin young man"*, *press* for
+*newspaper*) were swapped in the same pass under the do-not-defend posture, so no single clause
+is proven. Full working: [`camping/prompts.md`](../stories/camping/prompts.md#1m-l--round-2-policy-block-jack-2026-09-12-it-says-it-violates-policies).
+
 ## A6. Rewrite patterns
 
 The filter scans **individual keywords, not overall intent.** Words with a violent second

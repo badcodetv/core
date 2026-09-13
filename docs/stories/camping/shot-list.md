@@ -292,6 +292,7 @@ men before the plot starts, so the rest of the film can dismantle it.*
 - **1a The skyline** — City of London, the **old NatWest Tower** dominant, a huge **"2008"**. The reader should think *financial crash* before a single face appears. **This is a plate — 4a is made from it.**
 - **1b The trading floor** — screens everywhere, shirtsleeves, fluorescent glare.
 - **1c Young Tarquin mid-deal** — cocky, admired, leveraged ETFs. *He was the reason 2008 hit.*
+- **1m The 80s job montage** *(2026-09-11, proposed — see below)*.
 - ~~**1d The newspaper plant**~~ — **struck 2026-08-26: absorbed into 1b.** The plant is *inside* the trading floor — far down the row, small, half-turned, a chair back and a monitor arm crossing it, face behind the paper, headline `CRISIS ON WALL STREET`. A shot that exists only to plant announces itself, so it stopped being a shot. It still pays off in 11b.
 - **2a An ordinary car on an ordinary road** — luggage. A holiday.
 - **2b Bob driving, his wife Jo beside him** — younger, brighter-eyed. The job stays deliberately unremarkable. *(She was named **Jo** 2026-08-30; ⬜ whether the film ever says it is deferred — see [`characters/bob.md`](./characters/bob.md).)*
@@ -301,6 +302,124 @@ men before the plot starts, so the rest of the film can dismantle it.*
 - **3c Silence** — sound design carries it: impact, then nothing. Let the audience join the dots when Bob reappears alone.
 
 **Transition:** fade through black to 2026.
+
+### 1m — the 80s job montage *(2026-09-11, proposed)*
+
+Jack asked for an 80s-style montage of young Tarquin at work, because 1b/1c read as AI slop.
+Diagnosis and the first prompt are in
+[`prompts.md`](./prompts.md#scene-1-montage--the-80s-job-montage-2026-09-11).
+
+**The argument: he gets richer while the floor empties.** 🔴 **An aspirational trader montage is
+exactly the grammar that gets read as celebration** (Bateman, *Wolf of Wall Street*; see
+[`principles.md`](../../cinematography/principles.md) §24). Doing it knowingly doesn't protect
+us, so gate 2 runs on every frame and the montage resolves on the cost rather than on the win.
+
+**Shape:** close → wide. Every frame is flash-lit except the last one, which is the pattern
+broken once. Stills cut on the beat, about 1s each, with any snap zooms done in Premiere. Only
+the last shot gets a clip. **Replaces 1b/1c's ~16s rather than adding to it:** the film is
+already long.
+
+**🔴 Re-based 2026-09-11 (Jack): the montage depicts the narration line by line**, and **no
+Character or reference is used**. `@Tarquin-2008` has come back reading mid-thirties twice (1c,
+1m-e round 1), so young Tarquin is written in prose. The first accepted frame of him then becomes
+the face reference for the rest of the montage.
+
+| # | Line it sits under | Frame | Visible cost |
+| --- | --- | --- | --- |
+| **1** | *"2008 trading floors, a cesspit of madness."* | **The pit**: high over the floor, everyone standing with arms up and phones, paper on the carpet, bodies smeared by motion blur | Wreckage underfoot |
+| **2** | *"Tarquin here,"* | **The intro**: him standing mid-word, biro cap in his teeth, tie flung over his shoulder, jabbing at a screen. ✅ **Still accepted 2026-09-11**; clip written | — |
+| **3** | *"shorting the stocks he knows will plummet;"* | **The key**: macro shot of his finger coming down on the key, a screen of red behind | — |
+| **4** | *"profiting off of the sinking ship."* | **The red**: his face lit by red columns, one corner of his mouth going | Red only ever means other people's money |
+| **5** | *"…this prick stands without a scratch."* | **He stands**: literally standing, shrugging his jacket on, untouched; behind him a man walks off with his desk in a box | The box |
+| **6** | *"Leveraged E.T.F.s. If you do not understand that, it is rather the point."* | **Two phones**: a handset at each ear, cords crossed. Premiere split-screen is the 80s grammar | — |
+| **7** | *"Some twat is going to lose a house over this trade, and I am never going to meet them."* | 🔑 **The house, the one cutaway**: an ordinary UK semi in flat daylight, no flash, a locksmith changing the front-door lock, bin bags of belongings on the drive, a child's bike. No faces. **He never meets them; the audience does.** ✅ **Still accepted 2026-09-11**; blur the plate in post | The whole frame |
+| **8** | *"That is not callousness. That is good business."* | **The button**: the floor at night, empty, his desk the only light, him leaning back alone. ✅ **Still accepted 2026-09-11** | The empty desks |
+| **c** | *"profiting off of the sinking ship."* | **The solo cheer**: one fist driven down at the end of a call, eyes still on the screen — and the floor behind him seated, silent and heads-down. ⬜ Written 2026-09-12 | The motionless floor, and the stripped desk beside him |
+| **m** | *"profiting off of the sinking ship."* | **Champagne in a coffee mug**: pouring into a chipped office mug without looking at it, so it overflows onto the printouts. ✅ **Still accepted 2026-09-12**; clip `1m-m` written, unrun | The man at the next desk with his head in his hands |
+| **p** | *"That is not callousness. That is good business."* | 🔑 **The count**: a 2008 note-counting machine sitting where his keyboard should be, riffling used notes into a blur, and **he never touches the money** — one hand on the machine's casing, eyes on its little display. Jack's *Push It to the Limit* frame, inverted: the capital works, the man supervises. ✅ **Still ACCEPTED 2026-09-13, round 1.** 🔑 **The machine came back stopped — §38 at n=3 — and that is the gift again: the clip starts it.** **Clip written 2026-09-13, unrun** — [prompts](./prompts.md#1m-p--the-count--still--written-2026-09-13-unrun). 🔴 **Highest celebration risk in the montage** — it is Scarface's own grammar. ⬜ **Sequence note: play it INTO `1m-8`**, which carries the same line and closes it on the empty floor | The notes themselves — used, soft, bank-banded, and **one torn and caught at the machine's throat.** 🔴 The montage's subtlest cost, flagged as such; the free upgrade is to cut from here to `1m-7` (the house) rather than to busy the frame |
+| **t** | *"Leveraged E.T.F.s. If you do not understand that, it is rather the point."* | 🔑 **The treadmill**: 5am in the firm's gym, flat-out run, mid-sentence into a naff ear-hook earpiece, a black window a metre in front of him with the City beyond it. **He is running as hard as he can toward a city he never reaches.** ✅ **Still ACCEPTED 2026-09-13, round 1**, with two recorded flaws (the machine's geometry is wrong; the light came back ambient rather than flash) — both accepted knowingly. **Clip written 2026-09-13, unrun** — [prompts](./prompts.md#1m-t--the-treadmill--still--written-2026-09-13-unrun). ⬜ **Human call: it could replace `1m-6` "two phones"**, which is unmade and needs a Premiere split-screen; `1m-t` makes the same argument in one frame with no post | The cleaner at the far end — the labour nobody photographs, and a kind of cost the montage has not used |
+| **l** | *"…this prick stands without a scratch."* | **The lift doors**: late evening, him alone in the lit car as three people carry their things out across a dark lobby, the doors closing on him. 🔴 **Round 1 rejected as slop 2026-09-12** — the doors came back open, the frame centred, and he wore a jacket *and* carried one. 🔴 **Round 2 was refused on policy** — diagnosed by diffing it against round 1, which generated; rounds 3 and 4 superseded — **round 4 blocked too**, which disproved the machinery-plus-body-part diagnosis. 🔑 **The block was the leavers' demographics** (*a woman in her forties*, *a man in his fifties*): individuating a crowd by age, gender and build turned the frame into a depiction of people being displaced. ✅ **Round 5 individuates by garment, carried object and distance instead, and was ACCEPTED first take on Nano Banana 2, 2026-09-13.** 🔑 **The doors came back fully open — and that is the better plate**, because it hands the clip its one action. **Clip written 2026-09-13, unrun** | The three carrying their things out |
+
+### The three added frames *(2026-09-12, Jack's ask — "more videos of 2008 Tarquin")*
+
+**Prompts:** [`prompts.md`](./prompts.md#1m-c--the-solo-cheer--still--written-2026-09-12-unrun) — `1m-c`, `1m-m`, `1m-l`,
+cast on **`@2008 - tarquin`**. Run one at a time in that order; each clip only after its still is accepted.
+
+✅ **`1m-m`'s still is accepted and its clip is written** *(2026-09-12)* — [`prompts.md`](./prompts.md#1m-m--the-clip--video--written-2026-09-12-unrun).
+🔴 **Its clip routes on Frames with NO Character**, unlike its still: the accepted plate is the only
+authority on the face we want, and `@2008 - tarquin` has read mid-thirties twice. ⬜ **Master not
+banked** — save the frame as `camera/reference/1m-m-champagne-mug-ACCEPTED.png`.
+
+🔴 **`1m-c` collides with `1m-5` "he stands" — they make the same argument, and `1m-5`'s action (shrugging a
+jacket on) is a resting pose where the cheer has an event ([`stills.md`](../../cinematography/stills.md) §1).
+**Recommendation: `1m-c` replaces `1m-5`.** A human call.
+
+🔑 **If `1m-1` "the pit" gets made, it must come before `1m-c`** — everyone's arms up, then only his. Free
+escalation, and it costs nothing to order it that way.
+
+⚠️ **Each cost is a different KIND on purpose** — a silent room, a broken body, an exodus with boxes — because
+`1m-e` already owns *one man carrying one box*, and three box-carriers across four frames would clone the cost
+rather than build it.
+
+⚠️ **These three are clips as well as stills, which bends the montage's "stills cut on the beat" grammar.**
+They are built as **locked-camera living stills**: the world moves, the camera does not, so they still cut as
+montage frames. `1m-l`'s moving element is the one worth the credit — the rectangle of light on the carpet
+narrowing to a line as the doors close. ✅ **Confirmed as the design 2026-09-13**, and it now also
+carries the montage's exit: the shot ends in near-black, so it cuts to anything. ⬜ **Open human
+call:** whether `1m-l` plays out as the montage's exit rather than as another one-second frame —
+the standing plan has `1m-8` as the button.
+
+🔑 **2 → 7 → 8 is already a complete argument** — him loving it, the cost, him alone and
+paid. Frames 1, 3, 4, 5 and 6 are optional texture. If any get added, 3 and 5 sharpen the
+argument most.
+
+
+### Candidate frames — the pompous-rich-wanker set *(2026-09-13, Jack's ask)*
+
+*"Tarquin being a pretentious asshole… pompous and rich in funny ways, sarcastic social commentary,
+like we did with Karen and the fish in the microwave."*
+
+#### 🔑 The two rules these were generated against
+
+**1. The Karen device is not the fish — it is the camera going inside the microwave.**
+[Karen 1.3b](../karen/shot-list.md) works because the vantage flips to **the cleaner's side of the
+glass**, and the read *what a knob* is hers, not the narrator's. So the generator is not *"what rich
+thing does he do"* — it is **"where does the person he is being a knob to stand, and can the camera
+stand there?"** A vantage that indicts needs no caption, which is
+[the moral-is-never-stated rule](../../story-craft/principles.md) in pictures.
+
+**2. Do not invent the excess. Observe it.** `[community]` — *when reality becomes sufficiently
+absurd, satire struggles to exaggerate; actual bankers already behave like caricatures*
+([The London Prat](https://prat.uk/london-business-satire/)). **The funniest option is always the
+documented small one**, which is also why *Trader Monthly*'s real trader-boxing night beats anything
+inventable.
+
+🔴 **And gate 2 still binds.** *Push It to the Limit* is celebration grammar
+([principle 24](../../cinematography/principles.md)), so **every candidate below names its cost, and
+no two costs are the same kind** — the montage's [standing rule](#the-three-added-frames-2026-09-12-jacks-ask--more-videos-of-2008-tarquin).
+
+⚠️ **These are candidates, not a plan.** The montage's own note says
+**2 → 7 → 8 is already a complete argument** and the film is already long. **Adding six would bloat
+it; pick two or three.** Ranked below.
+
+| # | The frame | The vantage that indicts | The cost, and its kind |
+| --- | --- | --- | --- |
+| 🥇 **`1m-s` the shoeshine** | A shoeshine stand by the station. A man kneeling at his feet, working. Tarquin reads a broadsheet and never lowers it | 🔑 **From the shoe-shiner's level, looking up past the shoe** at a face hidden behind a newspaper. The Karen flip, exactly | **A person on their knees**, and it is the only *servitude* cost in the montage. 🔑 **It also plants the newspaper he burns in [12c](./prompts.md#12c--the-newspaper-goes-on-the-fire--still--written-2026-08-29-unrun)** — the film's last image, set up in one second here |
+| 🥈 **`1m-v` the viewing** | An empty new-build flat. He keeps his coat on, never looks out of the window, takes a call. The estate agent waits | From **behind the agent**, in the doorway, so he is small in an empty room he will never live in | **A home treated as an asset** — and it rhymes hard with [`1m-7`](./prompts.md#1m-7--the-house--still--accepted-2026-09-11), the house someone loses. **Two frames, one argument: a flat to own, a house to lose.** New kind |
+| 🥉 **`1m-k` the two chairs** | His £1,200 ergonomic chair beside the temp's broken one, taped at the base. **No people in the frame at all** | Straight on at seat height, the two side by side, equal weight | **The taped chair.** A **pure-object frame** — a change of pace in a montage of faces, and the cheapest thing on this list to make |
+| 4 | **`1m-b` trader boxing** | Him in gumshield, gloves and suit trousers, having his hands taped by someone kneeling — while an audience eats steak | Low, from beside the kneeling hands | 🔑 **Real: *Trader Monthly* staged trader-vs-VP boxing nights in 2007** before an audience eating steak and drinking luxury vodka. **Cannot be exaggerated, so do not try.** Cost: the taping hands, and the steak |
+| 5 | **`1m-x` the meter** | Kerbside, a black cab waiting, engine running, four minutes gone. He finishes his call first | **From the driver's seat**, over the shoulder, through the windscreen | The meter and the driver's eyes in the mirror. **Puts the montage on the street**, which it currently never is |
+| 6 | **`1m-w` the second watch** | One enormous watch on his wrist, a second still in its box on the desk beside the printouts | Macro, desk height | *"Who had the fastest car, the biggest watch and the most expensive vodka"* is the documented culture `[community]`. **Weakest cost on the list** — flagged |
+| 7 | **`1m-z` the cup** | He drops a coffee cup **next to** the bin, not in it, and keeps walking, still talking | Static and wide, so the cup lands and he leaves frame | The cup on the floor. Petty, tiny, and the most Karen-scaled thing here. Good as a hard one-second cut |
+
+⬜ **Structural note, and it is the reason for the ranking.** The montage is currently **all interior
+and all work** — floor, floor, house, floor, gym, lobby, floor. **The shoeshine buys the street, the
+viewing buys a third location, and the chairs buy a frame with no face in it.** Those three fix the
+montage's shape as well as its jokes, which is why they are 1–3.
+
+🔴 **Unresolved and Jack's call:** whether any of these replace existing frames rather than adding to
+them. [`1m-c` already collides with `1m-5`](#the-three-added-frames-2026-09-12-jacks-ask--more-videos-of-2008-tarquin),
+and [`1m-t` was proposed as a replacement for `1m-6`](#).
 
 ## The mirror — 2026
 

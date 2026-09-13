@@ -877,6 +877,2710 @@ anonymous. That is the convention working as intended, not a contradiction of it
 
 ---
 
+## Scene 1 montage — the 80s job montage *(2026-09-11)*
+
+**Why it exists.** Jack, 2026-09-11, on 1b and 1c: *"these parts look ai-slop like and not
+interesting cinematically."* Design and shot list are in
+[`shot-list.md`](./shot-list.md#1m--the-80s-job-montage-2026-09-11-proposed). Diagnosis, read off
+the two frames (the cause is inferred, not tested):
+
+- 🔴 **The light could never have been hard.** Both prompts ask for *hard* fluorescent light with
+  *crushed black* under the desks, but a ceiling full of tubes is one huge soft source. The
+  physics doesn't allow a hard light there, so the engine closed it the other way: shadowless,
+  even, mid-grey
+  ([`nano-banana-2.md` §20](../../google-flow/nano-banana-2.md)). Writing it harder won't
+  change that. **Only a different light source will.**
+- **1b is a one-point corridor with the vanishing point in the middle**: rows of near-identical
+  white shirts in the same pose. That's the symmetry-and-cloning bundle
+  ([`symptoms.md`](../../cinematography/symptoms.md) A, *"it looks like AI"*).
+- **1c is a stock-photo archetype** (a man on the phone, leaning on a desk). Nothing is withheld
+  and there's no unresolved question ([`stills.md`](../../cinematography/stills.md) §1). He also
+  reads mid-thirties rather than twenty-five.
+
+**The montage register: direct on-camera flash, shutter dragged.** One hard source that exists
+in the world (the photographer's flash) answers gate 3. It falls away with distance, so
+foreground and background separate on their own. It freezes the subject while anything moving
+ghosts, which gives motion inside a still. Kept on Superia 400 so it can still cut against 1b/1c.
+`[untested]`
+
+### 1m-e — the box · **still** · written 2026-09-11, unrun
+
+Model **Nano Banana Pro**. Cast **`@Tarquin-2008`**. **No reference image**: attaching 1b or 1c
+would bring back the flat light this frame exists to fix, because a strong reference wins ties
+([`nano-banana-2.md` §9](../../google-flow/nano-banana-2.md)). Tarquin's appearance isn't
+described at all (the standing rule). The box man is unbound, so he *is* described
+([§25](../../google-flow/nano-banana-2.md)).
+
+```prompt
+SCENE:
+
+This is one frame of a fast-cut montage: six photographs of the same young trader across one day on a City of London trading floor in September 2008, the week the banks started failing. In this frame he is making money and the man behind him has just lost his job, and neither of them is looking at the other.
+
+Camera: a 35mm lens at seated eye height, level, about two and a half metres from the trader, the frame very slightly tilted. Nearest the lens, the back of an empty office chair crosses the bottom-left corner, dark and thrown completely out of focus.
+
+Subject: the man from the character reference, in the right half of the frame, seen from the knees up in three-quarter profile, turned toward a monitor just outside the right edge of the picture. He has tipped his chair back onto its two rear legs and is balancing there, one shoe lifting off the floor on its way up onto the edge of the desk, a telephone handset clamped between his shoulder and his ear, one hand braced flat on the desk to hold his balance. His eyes are aimed at that monitor, his lower eyelids pushed up slightly, his brows level. One corner of his mouth has pulled back and up and is holding there; his lips are closed. The expression is small.
+
+Behind him: the left half of the frame is the aisle, running away at a diagonal from the bottom-left toward the middle of the room. Four metres back along it, softer than the trader, a heavy-set man in his fifties walks away from the camera mid-stride, carrying a cardboard archive box in both arms. He is seen squarely from behind: the back of his head faces the lens and hides the rest of it, grey hair thinning at the crown, a creased white shirt coming untucked at the back, his suit jacket folded over the top of the box. The leaves of a desk plant, the corner of a picture frame and the handle of a mug stick up out of the box. Beyond him, rows of desks and monitors fade into the far end of the room.
+
+Light: a flash on top of the camera is the only strong light. It hits the trader hard from the front, puts a shine on his forehead and cheekbones and a hard-edged shadow under his jaw. It falls away fast with distance, so the man with the box is noticeably darker than the trader and the far room darker again, lit only by a dim green wash from the ceiling fluorescents and the cold glow of the screens. The shutter stayed open after the flash fired, so the walking man carries a faint blurred ghost of his own movement while the trader is frozen sharp.
+
+Style: a press photograph for a newspaper feature, shot on 35mm Fujicolor Superia 400 — visible grain in the shadows, muted cool colour, a green cast in the background from the tubes. The desks are cluttered with printouts, curling Post-it notes and cold coffee.
+
+Constraints: the man with the box is seen only from behind. The box, the monitors and every piece of paper carry no readable lettering.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**If the box man grows a face,** don't add another sentence. Take his head out of the frame and
+keep the shoulders and the box ([§18](../../google-flow/nano-banana-2.md)).
+
+### 1m-e — round 1, **not accepted** (Jack, 2026-09-11: *"it looks strange"*)
+
+- **The box man worked.** The back of his head hid his face, per §18. Keep that pattern.
+- 🔴 **The flash came back as a lamp** blowing out in the top-right corner, and the rest of the
+  room was evenly lit again. The Light paragraph named the flash as an object, so it was drawn as
+  one.
+- **The pose broke.** Tipped on two chair legs, a foot lifting and a hand braced are three
+  balance facts at once, and they came back as a half-sit on nothing.
+- **He read mid-thirties again, in a full grey suit.** That's the second time `@Tarquin-2008` has
+  come back too old (1c was the first). Jack: *"forget the reference image."*
+- **Every monitor came back blank black.** The inferred cause is that *"monitors carry no
+  readable lettering"* was satisfied by switching them off. Give screens content that is too
+  small or too blurred to read instead.
+
+### 1m-2 — "Tarquin here," the intro · **still** · ✅ **ACCEPTED 2026-09-11, round 1** (Jack: *"i like these three"*)
+
+**What landed:** it's caught mid-action, the flash reads as a hard light on him with the room
+falling to green, and the traders behind him are ghosted by motion blur. He reads late
+twenties, which is close enough. **What it changed:** the biro cap came back as a whole second
+biro in his teeth (funnier, kept), and the hair came back tousled rather than slicked, so check
+it against 4b. ⬜ Master not banked in `camera/reference/`.
+
+**Nano Banana Pro. No Character, no reference image**, so young Tarquin is described in full;
+the never-describe rule only applies when something is attached. **This frame becomes the face
+reference for every later montage frame.** The flash is now named as **camera hardware** in the
+Style line and as **consequences** in the Light line, never as an object in the room. The one
+deliberate change from house stock: a 2008 press DSLR instead of Superia film, because flash
+snapshots of 2008 were digital. `[untested]`
+
+```prompt
+SCENE:
+
+This is one frame of a fast-cut 1980s-style montage about a young City of London trader in September 2008, the week the banks began to fail. This frame introduces him: loud, busy and completely at home in the chaos.
+
+Camera: a 35mm lens at the height of his chest, level, about a metre and a half from him, the frame very slightly tilted. The top of the frame cuts off just above his head. Nearest the lens, the edge of a monitor crosses the left side of the frame, dark and thrown completely out of focus.
+
+Subject: a twenty-five-year-old white British man, lean, with thick dark hair slicked straight back with too much product and one strand come loose over his forehead. A narrow young face that has not filled out yet, a slightly crooked nose, one eye fractionally smaller than the other, faint razor burn along the jaw, redness at the nostrils, visible pores and a little shine across the forehead. A white shirt with the sleeves shoved above the elbows and damp patches under the arms, the collar open, and a wide tie in loud diagonal orange and blue stripes flipped back over his shoulder out of the way.
+
+Action: he stands leaning forward over his desk with a telephone handset clamped between his shoulder and his ear, talking round the cap of a biro clenched in his teeth. His right arm is thrust out across the frame, the biro jabbing at a screen just outside the right edge. His eyes are locked on that screen, wide open, the whites showing above the irises, the brows raised and drawn together at the inner ends. One corner of his mouth is pulled up around the pen cap.
+
+Behind him: the trading floor in the middle of a frantic morning. Other traders stand at their desks with phones and papers, some with an arm in the air, every one of them streaked sideways by motion blur so that no face behind him can be read. The monitors on every desk are switched on and glowing, packed with columns of tiny red and green figures far too small and soft to read.
+
+Light: the photograph was taken with a flash on top of the camera, fired straight at him. He is the brightest thing in the picture — the flash lays a flat, hard light across his face and shirt and a crisp dark shadow on the desk under his arm. It does not reach far, so the room behind him drops away into a dim green wash from the office fluorescents, and the shutter stayed open long enough that everyone moving back there has smeared into ghosts while he is frozen sharp.
+
+Style: a newspaper photograph of the 2008 financial crisis, shot on a Canon EOS-1D Mark III with a Speedlite — digital noise in the shadows, muted cool colour, a green cast from the tubes, harsh and unflattering. His desk is a mess: printouts, curling Post-it notes, a half-eaten sandwich in its cardboard packet, a cold coffee.
+
+Constraints: the only light sources are the camera's flash, which is behind the lens, and the ceiling fluorescents, which are above the top edge of the frame. Every screen, paper and label carries no readable lettering.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### 1m-7 — the house · **still** · ✅ **ACCEPTED 2026-09-11, round 1**
+
+🔴 **Post job owed:** the rear number plate is readable. Blur it in Premiere. The standing lamp
+came back as an ambiguous cone; at montage length it doesn't matter.
+
+**The one cutaway, and the pattern break:** daylight, no flash, no Tarquin. It sits under
+*"Some twat is going to lose a house over this trade, and I am never going to meet them."*
+**He never meets them; the audience does.** Nobody from the family is in frame, and their things
+are packed with care. [`the-reader.md`](../../marketing/the-reader.md) rule 1 applies: they are
+people who were wronged, not squalor. The locksmith is hidden by geometry (§18). No marques, no
+boards, no numbers. The same camera body as the rest of the montage keeps it one piece.
+
+### 1m-8 — "That is good business." the empty floor · **still** · ✅ **ACCEPTED 2026-09-11, round 1**
+
+It came back centred and symmetrical rather than angled. That works as the montage's full
+stop, so it's kept.
+
+**The button.** Everyone else has gone, some of them for good. He is a **silhouette against his
+own screens**, so no face is needed and no reference either (the too-small-to-bind exception).
+There is one bright anchor, which is his desk, and the rest is committed near-black. The empty
+rows are the visible cost. The long lens stacks the rows, and the room runs off at an angle,
+because a centred corridor was 1b's tell.
+
+**Research notes (2026-09-11, `[community]`, untested):**
+- *"Exposed for the glow"* plus a stated shadow fraction (*"four-fifths falls to black"*) is
+  vendor-blog advice for real darkness.
+- British settings drifting American is documented on Firefly, not on Google. The prompt names
+  UK materials and says *British* explicitly anyway.
+- Photographer names are avoided. Google's guide says to describe the style instead.
+
+**1m-7**
+```prompt
+SCENE:
+
+This is one frame of a fast-cut montage about a young City of London trader in September 2008. It is the only frame that leaves the trading floor: the house of people who are losing it because of his trade, people he will never meet. The only person in the picture is a locksmith.
+
+Camera: a 50mm lens at standing eye height, level, from the pavement on the opposite side of a quiet residential street in a town in the north of England, about twelve metres from the house. Nearest the lens, the rear corner of a parked car crosses the bottom-left of the frame, dark and thrown completely out of focus. The neighbouring houses are cut off by both edges of the frame, and the top of the frame cuts across the roofline, leaving only a thin strip of white sky.
+
+Subject: the front of an ordinary British 1950s semi-detached house, its front door right of centre. Grey pebbledash render with dark rain streaks under the window sills, a white uPVC front door and white uPVC windows with net curtains, a satellite dish bolted to the wall, a low brick garden wall with a gap for the drive, weeds pushing up through cracks in the concrete drive, a green wheelie bin by the side gate.
+
+Action: a locksmith kneels on the front step with his back square to the camera, his head bowed over the lock as he drills it out, an open toolbag beside his knee. The back of his head faces the lens and hides his face. On the drive, lined up neatly against the garden wall, are the household's belongings: black bin bags knotted at the top, a stack of cardboard boxes taped shut, a rolled-up duvet tied with string, a standard lamp laid on its side, and a child's small bike with stabilisers. Everything has been packed with care.
+
+Light: a flat grey overcast sky at late morning is the only light. It comes from above, leaving soft shadow under the eaves, under the window sills and beneath the car, and no hard shadows anywhere. The ground is dry and the air is still.
+
+Style: a newspaper photograph taken on a Canon EOS-1D Mark III by available light, with no flash — fine digital noise, muted cool colour, slightly underexposed, the white front door the brightest thing in the frame.
+
+Constraints: the locksmith is seen only from behind. House numbers, number plates, signs and labels carry no readable lettering. Every house, car and piece of street furniture is British.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**1m-8**
+```prompt
+SCENE:
+
+This is the last frame of a fast-cut montage about a young City of London trader in September 2008. It is late at night, everyone else has gone home, and he is the only person left on the trading floor.
+
+Camera: an 85mm lens at standing eye height, from behind him at the far end of a long open-plan trading floor, looking along the rows at a slight angle so the room recedes toward the right rather than straight down the middle. The long lens stacks the empty rows of desks tightly one behind another. Nearest the lens, filling the bottom-left corner: the back of an empty office chair pushed in under a cleared desk, and a cardboard box taped shut on the desktop, dark and thrown completely out of focus.
+
+Subject: well down the room, right of centre and small in the frame, one desk is still lit. The young man sits alone at it with his back to us, leaning back in his chair with his feet up on the desk and his hands laced behind his head. He is a dark silhouette against the bank of glowing monitors in front of him, the glow outlining his slicked-back hair, his shoulders and the soles of his shoes.
+
+Around him: rows of empty desks with their monitors switched off, chairs pushed in, a suit jacket left over one chair back, cardboard boxes on several cleared desks.
+
+Light: the only light on the floor is his own bank of monitors, a cold blue-white glow that outlines him, spills across his desk and dies within a couple of metres. The ceiling lights are off. The photograph is exposed for that glow, so roughly four-fifths of the frame falls to black: the dead screens of the empty rows catch only faint reflections of his, and the tops of the chair backs and boxes only just separate from the dark.
+
+Style: a newspaper photograph taken on a Canon EOS-1D Mark III by available light, with no flash, at ISO 3200 — coarse digital noise in the shadows, muted cool colour, deep underexposure everywhere except his desk.
+
+Constraints: his monitors are the only light source in the picture. Every screen carries no readable lettering.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+---
+
+## Scene 1 montage — the three added frames *(2026-09-12)*
+
+**Jack's ask:** *"we need more videos of 2008 tarquin… using the character `@2008 - tarquin` for all of them."*
+Design, costs and the running order: [`shot-list.md`](./shot-list.md#the-three-added-frames-2026-09-12-jacks-ask--more-videos-of-2008-tarquin).
+Run **one at a time** in the order below; each clip only after its still is accepted.
+
+**Model: Nano Banana Pro.** 🔴 **Not "Nano Banana Pro 2" — it does not exist**
+([§fifth pass](../../google-flow/nano-banana-2.md#-there-is-no-nano-banana-pro-2-vendor-community)), and
+**check Flow's picker before starting**: `[community]` reporting says it has defaulted to **Nano Banana 2
+Lite** since July 2026, so a session can be on Lite without anyone choosing it.
+
+**Cast `@2008 - tarquin`. No reference image** — one authority on the face
+([§3b](../../google-flow/nano-banana-2.md#3b--role-labels-do-not-make-a-second-reference-free--house-rule-one-reference),
+[§12](../../google-flow/nano-banana-2.md#12--a-character-binds-to-a-face-no-face-in-the-shot-no-likeness-observed)).
+Attaching the accepted `1m-2` frame **as well** would put two authorities on one face, which is the
+documented drift source.
+
+### What these three do differently from `1m-e`, which failed
+
+| `1m-e` round 1 did | These do |
+| --- | --- |
+| Named the flash as an object in the Light paragraph → **drew a lamp** | Flash named as **camera hardware** in Style, **consequences only** in Light, source positions pinned in `Constraints:` ([§35](../../google-flow/nano-banana-2.md#35--a-flash-described-as-an-object-in-the-room-is-drawn-as-a-lamp-observed-2026-09-11-n1)) |
+| *"The monitors carry no readable lettering"* → **switched every screen off** | Screens are **on** and carry content **too small and soft to read** |
+| Three balance facts at once → **a half-sit on nothing** | One physical action per frame, mid-travel |
+| `@Tarquin-2008` → **mid-thirties, twice** | One age-down clause naming the direction only, **restated in `Constraints:`** — the 1c pattern |
+
+### 🔬 What the 2026-09-12 web pass changed in the wording
+
+Full graded findings: [`nano-banana-2.md` §sixth web pass](../../google-flow/nano-banana-2.md#sixth-web-pass--2026-09-12-research-practitioner-vendor).
+Four landed in these prompts:
+
+- ✅ **Period accuracy is a factual constraint Google itself sanctions** — their own example is *"ensure
+  historical accuracy for the Victorian era"*. Each `Constraints:` block now carries **"Ensure historical
+  accuracy for 2008."** 🔴 **And it is a hedge, not a fix:** a `[research]` study measures generators
+  inserting modern hardware because they prioritise the *activity* over the era, and finds prompt-level
+  mitigation *"insufficient to fully counteract"* it. **Check every screen, handset and monitor on round 1.**
+- ✅ **Name both ends of the exposure or the model compensates in the shadows.** The flash frames now grant
+  the clipping on his shirt *and* ask the shadows to hold detail; `1m-l` asks for deep shadow that still
+  keeps a trace rather than going to solid black — which is also what
+  [`delivery.md`](../../video-fx/delivery.md) wants after the `camping.mp4` crush.
+- ✅ **Crowd realism is individuation, not adjectives** — state the count, and that no two are alike, and
+  what each is doing. `1m-c`'s eight and `1m-l`'s three are both written that way
+  ([§22](../../google-flow/nano-banana-2.md#22--tiling-and-cloning-in-crowd-scenes-are-a-resolution-problem-not-only-a-prompt-problem-community-2026-08-28)).
+- 🔑 **The 2008 on-camera-flash register is a documented look, and in it a crushed near-black background is
+  period-correct rather than a fault** — short flash range, cool blue-green white balance, highlights
+  clipping to featureless white, fine digital grain and mild chromatic noise. That is the one place the
+  general *"lift the blacks"* realism advice does not apply, and it is worth knowing while
+  [principles §R1](../../cinematography/principles.md) is open.
+
+⚠️ **The Portra-400 slop warning does not touch these** — the montage is deliberately a **2008 press DSLR**,
+not film, so there is no stock to swap.
+
+⬜ **If offered a resolution, take 2K, not 4K** — generating off native resolution is a named cause of
+crowd tiling, and `1m-c` has eight background figures. Flow documents no resolution picker, so this may not
+be a choice you get.
+
+### 1m-c — the solo cheer · **still** · written 2026-09-12, unrun
+
+**The job:** he has won, and nobody shares it. **The cost is the room** — everyone seated, heads down, not
+one of them looking at him, plus the stripped desk at his elbow.
+
+🔴 **This frame is the montage's highest celebration risk** ([principle 24](../../cinematography/principles.md):
+Bateman, *Wolf of Wall Street* — meaning it ironically does not protect us). Three things hold it down: the
+cheer is **one fist, mid-travel**, not both arms up; **his eyes never leave the screen**, so he is
+celebrating at a number rather than to a room; and `Constraints:` bounds the face from above — *a stranger
+would read concentration before they read triumph.*
+
+⚠️ **Known trade:** the background crowd is deliberately **still**, which gives up the cheapest
+crowd-realism lever there is (motion blur on background people). Individuation is carrying it instead. If
+the eight come back cloned, the fix is more individuation, **not** motion — the stillness is the argument.
+
+**Paste into:** Flow → image prompt box. **Character:** `@2008 - tarquin`. **No reference image.**
+
+```prompt
+SCENE:
+
+This is one frame of a fast-cut montage about a young City of London trader in September 2008, the week the banks began to fail. In this frame he has just won a trade and nobody on the floor is celebrating with him.
+
+Camera: a 35mm lens at the height of his chest, level, about two and a half metres from him, the frame very slightly tilted. He stands in the right third of the picture and the floor runs away behind him to the left, so the left half of the frame is deep room rather than empty space. The top edge of the frame cuts across just above his fist, so the picture is short of headroom. Nearest the lens, the corner of a monitor on a near desk crosses the bottom right, dark and thrown completely out of focus so that it is a soft blur.
+
+Subject: the man from the character reference, seen from the thighs up. He is twenty-five: keep the face lean and unlined, the hairline full and low, with no creases from nose to mouth, no hollowing under the cheekbones and no recession at the temples.
+
+Action: he is standing at his desk at the end of a telephone call. One fist has been driven down past his hip and is still moving; his other hand presses a telephone handset hard against his ear. His shoulders are up, his head pulled back an inch into them, his chin lifted. His eyes stay locked on a monitor just outside the right edge of the frame — lower lids pushed up, the skin tightened at the outer corners, brows drawn down and in. His lips are parted just enough to show the edges of his teeth and his jaw is set. The expression is small, and it is aimed at the screen rather than at the room.
+
+Behind him: the floor has gone quiet. Eight people sit at the desks down the room to the left, no two of them alike — different ages, builds, hair and shirts, some in jackets and some in shirtsleeves. Every one of them is seen from behind or in lost profile, heads down toward their screens; one has a hand flat on the desk, one has a hand over the mouth, one has pushed back from the desk and is staring at the floor. None of them is moving and none of them is looking at him. The desk immediately to his left has been stripped — the monitors gone, two cable tails hanging over the edge, a taped cardboard box squared up on the bare desktop, the chair pushed in.
+
+Environment: printouts trodden flat into the grey carpet tiles, a burst lever-arch file, a mug with a brown ring dried inside it, a desk fan turned to face the wall, a suit jacket fallen off the back of a chair. The monitors are the slim flat panels of 2008 on articulated steel arms, four and six to a desk, with thick dark plastic bezels.
+
+Light: the photograph was taken with a flash on top of the camera, fired straight at him. He is the brightest thing in the picture — a flat hard light across his shirt and the side of his face, and a crisp dark shadow of his arm thrown down onto the desk beside him. The front of his shirt clips to featureless white where the flash hits hardest, while the shadowed side of his face and the desk below him keep their detail rather than going to solid black. The flash does not reach far: four metres back the room is only a dim green wash from the ceiling tubes and the cold glow of the screens, and the far end of the floor falls away to almost nothing. Nobody behind him is moving, so nothing back there is blurred; the only movement in the photograph is his own, and the flash has frozen it.
+
+Style: a newspaper photograph of the 2008 financial crisis, shot on a Canon EOS-1D Mark III with a Speedlite — fine digital noise and mild chromatic noise in the shadows, a cool blue-green cast from the tubes, muted colour, unretouched with no skin smoothing, harsh and unflattering.
+
+Constraints: the only light sources are the camera's flash, which is behind the lens, and the ceiling fluorescent tubes, which are above the top edge of the frame. Every screen is switched on and carries columns of figures far too small and soft to read. Everyone behind him is seen from behind or in lost profile, so his is the only legible face in the picture. He is twenty-five years old. His expression stays small — a stranger looking at this photograph would read concentration before they read triumph. No brand names, logos or readable labels anywhere. Ensure historical accuracy for 2008, and every person, garment and object is British.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### 1m-m — champagne in a coffee mug · **still** · written 2026-09-12, unrun
+
+**The job:** he celebrates without looking, and it spills. **The cost is the man one desk away** with his
+head in his hands — gate 2's own words, *a body that failed*, and the only one in the montage that is a
+person rather than a box or an empty chair.
+
+🔑 **The detail the frame turns on: he is not looking at the mug.** It is why the mug overflows, it is why
+the printouts are ruined, and it says what a paragraph of narration would have to. His eyes stay on the
+screen.
+
+⚠️ **The bowed man is unbound — no Character, no reference — so he is described in full**
+([§25](../../google-flow/nano-banana-2.md#25--19-inverts-for-an-unbound-body-part--describe-it-or-get-young-clean-and-generic-observed-2026-08-29)):
+silence there returns young, clean and generic, which is the opposite of the beat. His face is hidden by
+**geometry**, never by a sentence ([§18](../../google-flow/nano-banana-2.md#18--their-face-is-not-visible-does-not-hide-a-face-only-geometry-does-confirmed-2026-08-27)).
+
+⚠️ **No marque on the bottle** — the label is turned away by geometry, because naming a brand renders its
+badging and no later ban removes it
+([§34](../../google-flow/nano-banana-2.md#34--naming-a-marque-renders-its-badging-and-no-downstream-constraint-removes-it-observed-2026-09-08)).
+
+**Paste into:** Flow → image prompt box. **Character:** `@2008 - tarquin`. **No reference image.**
+
+```prompt
+SCENE:
+
+This is one frame of a fast-cut montage about a young City of London trader in September 2008, the week the banks began to fail. In this frame he is pouring champagne into an office mug without looking at it, while the man at the next desk sits with his head in his hands.
+
+Camera: a 50mm lens at desk height, level, about a metre from the mug, the frame very slightly tilted and the desk running away to the left. The mug and the bottle are the nearest things in the picture and sit just in front of the plane of focus, soft but plainly readable; his face a little behind them is sharp. The far end of the room falls away completely.
+
+Subject: the man from the character reference, leaning in over his own desk, seen from the chest up behind the mug. He is twenty-five: keep the face lean and unlined, the hairline full and low, with no creases from nose to mouth, no hollowing under the cheekbones and no recession at the temples.
+
+Action: he is pouring from a small champagne bottle into a chipped white office mug with a brown tannin ring dried inside it. The mug is already overfull — the foam has risen over the lip and is running down the outside onto a heap of printouts, and he has not stopped pouring. His other hand is splayed flat on the desk taking his weight. He is not looking at the mug: his eyes are aimed at a monitor just outside the right edge of the frame, lower lids pushed up, brows level, one corner of his mouth pulled back and held there. The foil off the bottle has been torn away and dropped on the desk, and the bottle's label is turned away from the lens.
+
+Beside him: at the next desk along, a metre to the left and slightly behind, a heavy-set man in his fifties sits forward with his elbows on the desk and the heels of both hands pressed into his eye sockets, fingers pushed up into thinning grey hair, his head bowed so far that the top of his skull faces the lens and hides the whole of the rest of his head behind it. His shirt is creased and dark with sweat between the shoulder blades, his tie pulled loose and hanging off to one side, a wedding ring on one hand. He is not moving. Neither man is acknowledging the other.
+
+Environment: the desk is a mess — loose printouts heaped and sliding, curling Post-it notes stuck to the monitor bezels, a tangle of cables over the back edge, biro marks along the desk lip, a keyboard with one key missing. The monitors are the slim flat panels of 2008 on articulated steel arms, with thick dark plastic bezels.
+
+Light: the photograph was taken with a flash on top of the camera, fired straight across the desk. The foam at the rim of the mug and the wet ring spreading on the printouts are the brightest things in the picture, and the bottle throws a crisp dark shadow across the paper. The foam clips to featureless white at its brightest, while the shadowed side of his face and the desk surface keep their detail rather than going to solid black. The flash does not reach far: the man at the next desk is noticeably darker than the mug, and the room beyond the two of them is only a dim green wash from the ceiling tubes and the cold glow of the screens. The shutter stayed open after the flash fired, so the falling champagne is a soft continuous streak rather than separate drops, while the foam at the rim is frozen sharp.
+
+Style: a newspaper photograph of the 2008 financial crisis, shot on a Canon EOS-1D Mark III with a Speedlite — fine digital noise and mild chromatic noise in the shadows, a cool blue-green cast from the tubes, muted colour, unretouched with no skin smoothing, harsh and unflattering.
+
+Constraints: the only light sources are the camera's flash, which is behind the lens, and the ceiling fluorescent tubes, which are above the top edge of the frame. Every screen is switched on and carries columns of figures far too small and soft to read. The bowed man's own head hides his face, so the trader's is the only legible face in the picture. He is twenty-five years old. His expression stays small — a stranger looking at this photograph would read concentration before they read pleasure. No brand names, logos or readable labels anywhere, including on the bottle. Ensure historical accuracy for 2008, and every person, garment and object is British.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### 1m-m — the clip · **video** · written 2026-09-12, unrun
+
+**Recorded despite the [2026-08-26 stills-only ruling](#-next-session--start-here)**, because this
+one is not self-explanatory: it carries a routing call, a documented physics risk that is the
+subject of the shot, and a light that must be told to hold still.
+
+✅ **The still is accepted** (Jack handed the frame over, 2026-09-12).
+⬜ **Master not banked** — save it as `camera/reference/1m-m-champagne-mug-ACCEPTED.png`.
+
+**Routing:** Omni Flash → **Frames** tab, the accepted `1m-m` frame as the **start frame**, **end
+slot empty**. 10s available; **generate the full 10s** — the spread needs runtime and the last
+seconds are the strongest.
+
+🔴 **Frames, and no Character.** Two reasons, and the second is the one that decides it:
+
+1. **The composition is the shot** — the flash falloff, the metre of desk between the two men, the
+   geometry of the foam. [Ingredients re-stages](../../google-flow/omni-flash.md#️-the-combined-mode-does-not-exist-in-flow).
+2. 🔑 **The plate is the only authority on the face we want.** `@2008 - tarquin` has come back
+   reading mid-thirties **twice** (1c, `1m-e` round 1). Attaching it here would put a second and
+   older authority on a face the still already got right. The n=1 caution that
+   [Frames once lost a face](../../google-flow/omni-flash.md#frames-lost-the-face-ingredients-held-both-n1-each-way)
+   is real — **if the face drifts, the fix is a re-roll on Frames, not a switch to Ingredients.**
+
+#### 🔑 The design: the spill spreads while he does not look
+
+[A frame whose first and last frames match reads as a photo, not a shot](../../cinematography/stills.md#1-what-makes-a-still-hold),
+so the clip needs one event. **It is the wet ring creeping outward through the printouts.**
+
+Why that one and nothing else:
+
+- **It is the meaning, not decoration.** The still's whole argument is *he is not looking at the
+  mug.* A clip in which the damage visibly grows while his eyes stay on the screen makes that
+  argument a second time, in motion, with no narration.
+- 🔑 **It is the same physics class as [`1y`'s tide](#1y--the-tide-coming-in--video--written-2026-08-30-unrun)**
+  — a slow single-vector wetting across a flat plane with everything else static. Close to the
+  easiest thing this engine is ever asked to do.
+- **One system, three visible things.** Foam sliding, paper darkening, the streak falling are all
+  the same event, which satisfies *one main action per clip* while still giving the eye work.
+- **The cost gets a pulse.** The bowed man takes one breath. It is the only thing in the montage
+  that says the body is alive, and [minimal human motion is the field's own realism lever](https://magichour.ai/blog/realistic-ai-video-prompting) `[community]`.
+
+#### 🔴 The top risk is the liquid, and it is the subject of the shot
+
+`[academic]` **Video diffusion models fail fluids in two named ways**: *unstable fluid geometry —
+column breakage, sudden volume change, gravity-inconsistent bouncing or floating*, and
+*inconsistent fluid–container interaction — offset entry points, discontinuous liquid-level
+changes, splash directions misaligned with the applied force*
+([arXiv 2607.25321](https://arxiv.org/abs/2607.25321)). Practitioner guidance agrees and is blunter:
+*"for anything where the water's exact volume or splash shape has to be correct on delivery, this
+requires a different tool, not a better sentence"* `[community]`.
+
+**Four clauses answer it, and the first is free:**
+
+| The failure | The clause |
+| --- | --- |
+| **The level fails to rise** | 🔑 **We never ask it to.** The mug is *already* overfull in the plate, so volume conservation is out of scope by construction. This is the fluid equivalent of [never catching the whole fall](../../google-flow/omni-flash.md#the-rule-that-outranks-all-of-it-a-real-camera-never-catches-the-whole-fall) |
+| **The column breaks apart mid-air** | The stream is named as **one unbroken streak of the same width, in the same place** — the positive form of *it does not break up*, because [a negation would name breakage into the prompt](../../google-flow/omni-flash.md#-negatives-do-not-work-and-they-actively-backfire) |
+| **Splashes with the wrong momentum** | **No splash is ever requested.** The foam *slides* and the paper *darkens where it reaches* — wetting, not impact |
+| **Fast fluid rendered sharp** | The [24fps / 180° shutter clause](../../google-flow/omni-flash.md#the-shutter-is-the-tell-nobody-prompts-for), `[confirmed 2026-08-14]` on fast motion. The still already contains the streak, so the clip is only being asked to continue what is in frame |
+
+#### 🔴 Second risk: the light must be told to hold, and the word *flash* must not appear
+
+This is a **flash photograph** — one instant of light. Asked to animate it, the engine has every
+invitation to make the light an event: a second pop, a flicker, a lamp warming up.
+[§35 is explicit that a flash described as an object in the room is drawn as a lamp](../../google-flow/nano-banana-2.md#35--a-flash-described-as-an-object-in-the-room-is-drawn-as-a-lamp-observed-2026-09-11-n1),
+and `1m-e` round 1 proved it on the still side.
+
+🔑 **So the clip prompt never says "flash".** It states the light as a fact that holds —
+*"the light in the picture stays exactly as it is throughout"* — which is positive, names no
+source, and gives the model nothing to go looking for.
+
+#### ⚠️ Text: define the bare surfaces, again
+
+`[confirmed 2026-08-17, Karen §2j.6sv]` — a clip block that never mentioned signage came back with
+writing crawling onto a sign. This frame is **full** of surfaces that want lettering: Post-its,
+a heap of printouts, four screens. They are named as blank and as too small to read, and the
+screens are told to hold a **steady** glow, because
+[text changing between frames is the documented failure](../../google-flow/omni-flash.md#-the-360p-draft-is-a-motion-check-never-a-text-check--and-upscaling-repairs-nothing).
+
+#### ⚠️ Audio, and where the ringing phone goes
+
+**Behind the camera.** Omni generates picture and sound together, so a sound sited on a visible
+object is a second vote for that object owning it — the
+[3c-y finding](#3c-y--the-lane-hours-later--video--written-2026-09-09-unrun), learned the hard way.
+A telephone nobody answers says the floor is in trouble at **zero render risk**, and it is the
+audio half of the same argument the picture is making. **No music, no voices** —
+[we never put speech in a Flow video](../../google-flow/omni-flash.md#-the-speech-trap-is-punctuation-not-vocabulary).
+
+#### ⬜ The camera does not move, and no shake
+
+Any push is a **Premiere** job on the finished clip
+([`hybrid-method.md`](../../video-fx/hybrid-method.md)). And the widely-recommended
+*"add accidental camera shake"* is **rejected house-wide** —
+[`motion-and-cutting.md` R7](../../cinematography/motion-and-cutting.md#1-movement): handheld is a
+style, not truth. Irregularity is bought in the foam, not the camera.
+
+#### ⚠️ Length is still the open question
+
+The [~50-word / 150–300-word conflict](../../google-flow/omni-flash.md#️-open-conflict-how-long-should-an-omni-prompt-be-unresolved-2026-08-30)
+is unresolved and `1y`'s experiment is still unrun. **Fire the primary first**, matching the shape
+that has actually been producing accepted clips (frame-lock, camera, action, pins, shutter, audio);
+if it comes back diluted or re-staged, fire the fallback. 🔑 **Record which one won** — it is the
+same experiment.
+
+**Paste into:** Flow → **Frames to Video** prompt box. **Start frame:** the accepted `1m-m` image.
+**End frame:** empty. **No Character, no Ingredients.** Primary:
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame, as one single continuous shot with no cuts. The camera is locked off at the desk and holds completely still throughout, and the light in the picture stays exactly as it is.
+
+He keeps pouring. The champagne falls from the lip of the bottle into the mug as one unbroken soft streak, the same width and in the same place the whole time. The mug stays full to the brim. The foam standing over the rim swells and slides down the outside of the mug in slow uneven trails, and the wet ring in the heap of printouts creeps outward, the paper going dark and translucent where it reaches.
+
+He does not look down. His eyes stay exactly where they are, he blinks once, and the pulled-back corner of his mouth holds. The bottle tips fractionally further as the shot runs.
+
+The man at the next desk takes one slow breath, his shoulders lifting and settling. The heels of his hands stay pressed into his eyes and his head stays bowed.
+
+The desk, the monitors, the fallen paper cup, the biro and every sheet of paper stay exactly where they are. The screens hold a steady cold glow with columns of figures far too small and soft to read. The notes stuck to the monitors and the printouts on the desk are blank paper.
+
+Shot at 24fps with a 180-degree shutter, so the falling champagne smears into a soft streak while everything still is sharp.
+
+Audio: the fizz of foam, liquid running onto wet paper, the low hum of the room, and one telephone ringing unanswered somewhere behind the camera. No music and no voices.
+
+Thanks.
+```
+
+⬜ **Fallback, only if the primary comes back diluted or re-staged** — same tab, same start frame:
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame. Camera locked off, single continuous shot, no cuts, and the light stays as it is.
+
+He keeps pouring in one unbroken streak and does not look down. The foam slides down the outside of the mug and the wet ring creeps outward through the printouts. The man beside him takes one slow breath.
+
+Audio: fizz, liquid on paper, a telephone ringing behind the camera. No music and no voices.
+
+Thanks.
+```
+
+**Post, in Premiere:**
+
+1. ⬜ **Any push in is here, not in Flow** — and this frame has something worth arriving at: the mug.
+2. **A 10–15% speed adjustment** against the smooth-motion tell `[community]`.
+3. **Match the grain rather than stacking it** — the still already carries 2008 press-DSLR noise.
+4. ⚠️ **Watch the streak and the foam edge on playback.** If the column breaks, pulses or the mug's
+   level jumps, that is the fluid risk firing and **it is a re-roll, not a grade.**
+5. ⚠️ **Nothing ships unmeasured** — `scripts/delivery-qc.sh`
+   ([`delivery.md`](../../video-fx/delivery.md)).
+
+**Sources for this entry (2026-09-12):**
+[arXiv 2607.25321 — physics-grounded fluid video generation](https://arxiv.org/abs/2607.25321) `[academic]` ·
+[Prompt Architects — VFX and effects prompting](https://prompt-architects.com/blog/360-vfx-and-effects-prompting) `[community]` ·
+[Magic Hour — realistic AI video prompting, 10 pillars](https://magichour.ai/blog/realistic-ai-video-prompting) `[community]` ·
+[Promptessor — image-to-video prompts, the "living still"](https://promptessor.com/blog/image-to-video-prompts-how-to-animate-photos-products-characters-and-art-in-2026) `[community]` ·
+[Imagine.art — Omni Flash video generation guide](https://www.imagine.art/blogs/guide-to-gemini-omni-flash-video-generation) `[community]`
+
+
+### 1m-l — the lift doors · **still** · written 2026-09-12, unrun
+
+**The job:** he goes up, they go down. It is the cleanest statement of *without a scratch* the montage has,
+and it makes the argument with architecture instead of a face.
+
+🔑 **The pattern break is the light, and it is deliberate.** The floor frames are flash; this one is
+available light off the ceiling panel of the lift car. That gives the montage a rule worth keeping —
+**flash is the trading floor, available light is everywhere else** — which `1m-7` (daylight, the house) and
+`1m-8` (the glow of his own screens) already follow.
+
+🔑 **Why the lift and not a corridor:** the doorway is a frame-within-a-frame
+([principle 6](../../cinematography/principles.md)), so it states *contained* with no caption; the lit car
+is the one bright anchor in a dark frame (principle 11); and the nearest box-carrier is the foreground
+occluder, the visible cost and the motion blur all at once.
+
+⚠️ **It is set late evening on purpose.** A dark lobby in working daylight is a physics contradiction, and
+[§20](../../google-flow/nano-banana-2.md#20--if-the-named-source-cannot-physically-light-the-scene-the-model-invents-fill-confirmed-2026-08-27)
+says the engine closes those by inventing fill. The lobby lights being down to their night setting is what
+makes the car legitimately the brightest thing in the picture. **The cost: the famous box-carrying images
+of 2008 are daytime**, so this trades documentary familiarity for a frame that can actually hold darkness.
+A human call.
+
+🔴 **Face-size risk.** Google's own stated weakness for this model is *small faces*, and at three metres in
+a knees-up framing his face is not large. **If the likeness does not bind on round 1, move the camera in to
+a waist-up framing — do not add words about his face.**
+
+⚠️ **The handset is period-correct and deliberately unnamed** — *"a small black handset with a keyboard"*.
+2008 is the BlackBerry era (smartphones were roughly a fifth of handsets), and naming the marque would
+render its badging.
+
+**Clip note:** this is the one of the three worth the video credit. Camera locked; the moving element is the
+**rectangle of light on the carpet narrowing to a line and going out** as the doors close.
+
+**Paste into:** Flow → image prompt box. **Character:** `@2008 - tarquin`. **No reference image.**
+
+```prompt
+SCENE:
+
+This is one frame of a fast-cut montage about a young City of London trader in September 2008, the week the banks began to fail. It is late evening. In this frame he is going up alone in a lift while three people carry their belongings out across the lobby in front of him, and the doors are closing on him.
+
+Camera: a 35mm lens at standing chest height, level, about three metres back from the lift doors and off to one side, so the lit lift car sits right of centre and the dark lobby runs away to the left. The doors have begun to close and he is framed in the gap between them, visible from the knees up.
+
+Subject: the man from the character reference, standing alone in the middle of the lift car, facing out through the closing doors. He is twenty-five: keep the face lean and unlined, the hairline full and low, with no creases from nose to mouth, no hollowing under the cheekbones and no recession at the temples.
+
+Action: he has just lifted his eyes from a small black handset with a keyboard, held low in one hand, to the closing doors. His suit jacket is hooked over the other shoulder on one finger. His weight is on one leg, his shoulders dropped, his chin level. His eyes are aimed just past the nearest of the people crossing in front of him, at nothing in particular, his lids relaxed, his brows level and his lips closed. Nothing in his face is reacting to them.
+
+In front of him: three people are crossing the lobby between the camera and the lift, walking away to the left, carrying their things out. No two of them are alike — different heights, builds, hair and clothes. One carries a cardboard archive box in both arms with a coat folded over the top of it; one has a bulging canvas holdall on a shoulder; one holds a potted desk plant and a framed picture against the chest. All three are seen squarely from behind, so the backs of their heads face the lens and hide the rest of them. The nearest passes close enough to the lens to cross the bottom left of the frame as a dark shape, thrown completely out of focus so that it is a soft blur.
+
+Environment: the lift lobby of a City of London office tower — brushed stainless lift doors with a scuffed kick plate, a dark stone-tiled wall, grey carpet tiles with a worn track across them, a dented skirting board, a red fire extinguisher on a bracket. The lobby lights have gone down to their night setting and two of the recessed ceiling fittings are dead.
+
+Light: the only strong light in the picture is the fluorescent panel in the ceiling of the lift car. It is directly above him, so it lights the top of his head, his shoulders and the tops of his cheekbones and leaves his eye sockets and the underside of his jaw in shadow, and it throws a hard-edged rectangle of light out of the doorway onto the carpet in front of him. Nothing else reaches this far: the three people crossing are almost black shapes against that rectangle, and the back of the lobby falls away to nothing. The picture is exposed for the inside of the car, so roughly three-quarters of the frame sits in deep shadow, with the brushed stainless doors catching one thin edge of the light — and that deep shadow keeps a trace of detail rather than going to solid black. The exposure is long enough that the three crossing people are softened by their own movement while the inside of the car is sharp.
+
+Style: a newspaper photograph of the 2008 financial crisis, taken on a Canon EOS-1D Mark III by available light with no flash, at ISO 3200 — coarse digital noise and mild chromatic noise in the shadows, muted cool colour, unretouched with no skin smoothing, deeply underexposed everywhere except the inside of the lift car.
+
+Constraints: the lift car's ceiling panel is the only light source in the picture, and the floor indicator and the call buttons are above the top edge of the frame. The three people crossing are seen only from behind, so his is the only legible face in the picture. He is twenty-five years old. His expression stays small and unbothered — a stranger looking at this photograph would not be able to say what he is feeling at all. No brand names, logos or readable labels anywhere, including on the handset. Ensure historical accuracy for 2008, and every person, garment and object is British.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### 1m-l — round 1, **not accepted** (Jack, 2026-09-12: *"it looks like ai slop"*)
+
+✅ **What landed, and it is the whole idea — keep it.** Jack: *"I like that it makes him look evil
+and he is the only one winning whilst others are obviously fired and walking away."* The lit box,
+the dark lobby, the leavers with their things. **Round 2 changes execution, not the shot.**
+
+🔴 **He is wearing a jacket *and* carrying one.** Jack spotted it. The prompt said *"his suit jacket
+is hooked over the other shoulder"* and **never said what was on his body**, so the model supplied
+the default a City trader wears — and then also drew the one it was told about. New
+[§36](../../google-flow/nano-banana-2.md#36--a-carried-garment-with-no-worn-garment-stated-returns-both-observed-2026-09-12-n1);
+it is [§25](../../google-flow/nano-banana-2.md#25--19-inverts-for-an-unbound-body-part--describe-it-or-get-young-clean-and-generic-observed-2026-08-29)'s
+family — silence returns the generic default.
+
+**Six more, read off the frame:**
+
+| What came back | Cause |
+| --- | --- |
+| 🔴 **Dead-centre, symmetrical.** The prompt asked for the car *"right of centre"* and got it on the axis | A square-on lift door is a symmetry magnet and [the centring bias is documented](https://www.pixova.io/blog/how-to-make-ai-images-look-less-like-ai) `[community]`. **A composition adjective loses to an architectural feature.** New [§37](../../google-flow/nano-banana-2.md#37--a-square-on-architectural-feature-is-a-symmetry-magnet-and-a-composition-adjective-will-not-move-it-observed-2026-09-12) |
+| 🔴 **The doors are wide open.** The beat is *the doors closing on him* and it is simply absent | *"The doors have begun to close"* is a stage direction, and a lift door's prior is **open or shut**. New [§38](../../google-flow/nano-banana-2.md#38--a-mechanical-in-progress-state-returns-fully-open-or-fully-shut--give-it-a-physical-analogy-observed-2026-09-12) — the fix is [§30](../../google-flow/nano-banana-2.md#30--a-physical-analogy-overrules-a-stated-number--and-it-is-how-28-keeps-happening-observed-2026-09-08)'s lever, a **physical analogy** |
+| 🔴 **Two of the three leavers are the same man in the same dark suit** | *"No two of them are alike"* is an adjective. [Crowd realism is individuation](../../google-flow/nano-banana-2.md#-crowd-realism-is-individuation-not-adjectives-practitioner) — count, gender, age, dress and **distance apart**, stated |
+| 🔴 **A polished marble atrium.** Carpet tiles, dented skirting, fire extinguisher and scuffed kick plate all lost | Six worn nouns beat by one *"City of London office tower"* prior. The counter is [§29](../../google-flow/nano-banana-2.md#29--to-overrule-a-reference-on-one-element-declare-its-role-narrowly-then-negate-the-old-value-observed-2026-08-30)'s shape in the terminal `Constraints:` block — **name the surface, then negate the old value** |
+| 🔴 **It reads as a corporate-thriller poster, not a press photograph.** Glossy stone, mirror floor, no grain, smooth skin | The [aesthetic mode](../../google-flow/nano-banana-2.md#️-the-quality-word-kill-list-now-includes-cinematic) won over *"ISO 3200, coarse digital noise"*. The cheap lever not used: **a human behind the camera** — *candid*, *taken quickly*, [`[community]`](../../google-flow/nano-banana-2.md#-kodak-portra-400-may-now-be-a-slop-tell-community-untested) |
+| ⚠️ **The foreground occluder is a giant blurred head** filling a fifth of the frame, with a soft halo | The [fake-DoF tell](../../google-flow/nano-banana-2.md#️-fake-depth-of-field-has-its-own-tells-practitioner-community) firing at an occluder's edge. **Make the occluder an object, not a person** — nothing to halo and one fewer body to clone |
+| ⚠️ **Readable white lettering** on the thing the left-hand man carries | The `Constraints:` label ban did not reach an unnamed object. Name it: *plain brown, nothing printed* |
+
+⬜ **Also gone:** he is in a resting pose — standing still, facing forward, arms at his chest.
+[A resting pose dies fast; a still only holds if it contains an unresolved question](../../cinematography/stills.md#1-what-makes-a-still-hold).
+
+### 🔴 Model: there is still no "Nano Banana Pro 2" — re-verified 2026-09-12
+
+Asked for again, so re-checked live. **The family is unchanged:** Nano Banana → **Nano Banana Pro**
+(Gemini 3 Pro Image) → **Nano Banana 2** (Gemini 3.1 Flash Image, 26 Feb 2026) → **Nano Banana 2
+Lite**. *"2" is the Flash line and "Pro" is the larger model, so the higher number is not the better
+model.* Full write-up: [§fifth pass](../../google-flow/nano-banana-2.md#️-there-is-no-nano-banana-pro-2-vendor-community).
+
+**Use Nano Banana Pro**, as the rest of the montage did — it is the house pick where the job is
+*suppressing* sharpness and contrast, which is this frame exactly.
+⚠️ **Check Flow's picker before you start:** `[community]` reporting has Lite as the default since
+July 2026, so a session can be on Lite without anyone choosing it.
+⬜ **Take 2K, not 4K** — [off-native resolution is a named cause of duplication](../../google-flow/nano-banana-2.md#22--tiling-and-cloning-in-crowd-scenes-are-a-resolution-problem-not-only-a-prompt-problem-community-2026-08-28),
+and round 1 already cloned two of three figures.
+
+⚠️ **One `[community]` guide says to strip politeness — *"remove polite phrases like 'please'"* — to
+cut conversational filler.** No test behind it, and it collides with a standing house rule.
+**We keep the `Thanks.`** Noted so nobody re-derives it.
+
+### 1m-l — round 2 · **still** · written 2026-09-12, unrun
+
+**Six structural changes, and the first is the one that fixes the composition:**
+
+1. 🔑 **The LOBBY goes in the `Subject:` slot and the lift becomes a feature of it.** This is the
+   house-proven fix for exactly this symptom —
+   [3c round 1 centred the car and round 2 fixed it by putting the ROAD in Subject](#3c--the-lane-hours-later--still--written-2026-09-09-unrun),
+   and it is [§546's lever](../../google-flow/nano-banana-2.md#-making-a-subject-small-put-something-else-in-the-subject-slot-community-2026-09-09).
+   **Backed up by geometry:** the camera goes off the door plane, so the doorway is a leaning
+   rectangle and there is no axis for the model to snap to.
+2. **The gap is a physical analogy, not a stage direction** — *narrower than his shoulders, so the
+   doors crop him at both arms.* The same fact is then stated a second time by the light: a
+   **narrow strip** on the carpet, not a rectangle.
+3. 🔑 **He wears one jacket, it is on him, and he is the only suited figure in the picture.** That
+   kills the duplicate-jacket bug and does the argument's work at the same time: **the leavers are
+   in shirtsleeves and jumpers, he is dressed to go somewhere.** Class stated in cloth.
+4. 🔑 **The resting pose becomes one small gesture: he has just pressed the button.** His hand is
+   still up at the panel. It is mid-travel, it is the unresolved question the frame was missing,
+   and it makes the cruelty physical without a caption — *he closes the doors himself.*
+   ⚠️ **This is the one deliberate beat change.** [Principle 24](../../cinematography/principles.md)
+   is live on any frame that could read as celebration; the guard is that the gesture is **banal**
+   — a man pressing a lift button on his way home — and that `Constraints:` still bounds the face
+   from above. ⬜ **If it reads as pantomime villainy, revert the hand to the handset** and keep
+   everything else.
+5. **The occluder is an object** — two archive boxes left on the carpet. No halo, no clone.
+6. **A scoped negation block for the atrium**, and *candid / taken quickly* for the human behind
+   the camera.
+
+🔴 **Face-size risk is unchanged and now flagged twice.** Google's own stated weakness is *small
+faces*. **If the likeness does not bind on round 1, switch the lens to 85mm from the same standing
+position** — [long lenses are under-used](../../google-flow/nano-banana-2.md#14--long-lenses-are-under-used-and-hard-to-fake-community),
+it stacks the lobby, it keeps the asymmetric layout, and it grows his head without re-staging.
+**Do not add words about his face.**
+
+**Paste into:** Flow → image prompt box. **Model:** Nano Banana Pro (check the picker). **Aspect:**
+16:9. **Resolution:** 2K. **Character:** `@2008 - tarquin`. **No reference image.**
+
+```prompt
+SCENE:
+
+This is one frame of a fast-cut montage about a young City of London trader in September 2008, the week the banks began to fail. It is late evening. In this frame the lift doors are closing on him while three people carry their belongings out across the dark lobby, and he is the only one going up.
+
+Camera: a 35mm lens at standing chest height, level, taken quickly and candidly from about three metres out into the lobby and well over to the left, so the bank of lift doors runs away to the right at an angle and no wall in the room is square to the lens. The lit car sits left of centre and the dark lobby fills the right two-thirds of the picture. Nearest the lens, two cardboard archive boxes stacked on the carpet cross the bottom left corner, dark and thrown completely out of focus so that they are a soft blur.
+
+Subject: the lift lobby of an ordinary City of London office tower at night, worn rather than grand. Three brushed stainless lift doors set into a matt painted wall, scuffed kick plates, grey carpet tiles with a worn track across them, a dented skirting board, a red fire extinguisher on a bracket, a plastic waste bin. The lobby lights are down to their night setting, with only a few dim fittings still on far back.
+
+Action: the nearest of the three lift cars is lit and its doors are closing. The gap between the leading edges is already narrower than a man's shoulders, so the doors crop him at both arms and only a tall slot of the car interior is visible. The doorway is seen slightly from its left side, so it reads as a leaning rectangle rather than a square-on one.
+
+Him: the man from the character reference stands in that slot, seen from the thighs up, facing out. He is twenty-five: keep the face lean and unlined, the hairline full and low, with no creases from nose to mouth, no hollowing under the cheekbones and no recession at the temples. He is wearing his suit jacket, done up, over a shirt and tie, and he carries nothing over his arm. One hand is still raised to the button panel on the side wall inside the car, the fingers just coming off the buttons, because he has this second pressed one. The other hand holds a small black handset with a keyboard, low and forgotten. He is watching the closing gap, his chin level, his lids relaxed, his brows level, his lips closed. Nothing in his face is reacting to the people outside.
+
+In front of him: three people are walking away from the camera across the lobby to the right, into the dark, carrying their things out, strung out at different distances rather than walking together. Nearest is a woman in her forties in shirtsleeves, a coat over one arm and a bulging canvas holdall on the other shoulder, caught mid-stride with one heel off the carpet. Further back is a broad man in his fifties, grey and thinning on top, carrying a plain brown cardboard box level in both arms. Furthest and almost lost in the dark is a thin young man in a knitted jumper holding a potted desk plant and a framed picture against his chest. All three are seen squarely from behind, so the backs of their heads face the lens and hide the rest of them.
+
+Light: the fluorescent panel in the ceiling of the lift car is the only strong light in the picture. It is directly above him, so it lights the top of his head, his shoulders and the tops of his cheekbones and leaves his eye sockets and the underside of his jaw in shadow, and it throws a narrow hard-edged strip of light out of the closing doorway that runs diagonally across the carpet toward the bottom right of the frame. The picture is exposed for the inside of the car: the front of his shirt clips to featureless white, the three people walking away are near-black shapes cut out against the carpet, and the lobby around them holds a trace of detail in the deep shadow rather than going to solid black.
+
+Style: a candid press photograph of the 2008 financial crisis, taken on a Canon EOS-1D Mark III by available light with no flash, at ISO 3200 — coarse digital noise and mild chromatic noise in the shadows, muted cool colour, slightly missed focus at the edges, unretouched with no skin smoothing, harsh and unflattering.
+
+Constraints: the lift car's ceiling panel is the only light source in the picture, and the floor indicator above the doors is above the top edge of the frame. The lobby is worn and ordinary — carpet tiles rather than stone, a matt painted wall rather than marble, and a floor that reflects nothing. He wears one jacket and it is on his body. He is the only person in the picture wearing a suit jacket. The three people walking away are seen only from behind, so his is the only legible face in the picture. He is twenty-five years old. His expression stays small and unbothered — a stranger looking at this photograph would not be able to say what he is feeling at all. The cardboard boxes are plain brown with nothing printed on them, and there are no brand names, logos or readable labels anywhere, including on the handset. Ensure historical accuracy for 2008, and every person, garment and object is British.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Check these five on round 1, worst first:** the gap between the doors is actually narrow · the lift
+is off the centre axis · he has exactly one jacket and it is on him · the three leavers are three
+different people · the floor is carpet and does not reflect.
+
+### 1m-l — round 2, **policy block** (Jack, 2026-09-12: *"it says it violates policies"*)
+
+🔑 **The diagnosis is a diff, not a guess about the picture.** Round 1 of this exact shot
+**generated** — it was rejected on quality, not refused — so the block is in something round 2
+*added*. Everything shared by both rounds is cleared by that fact, including the two clauses
+that would otherwise be first suspects: the face-age block (*"keep the face lean and unlined…"*,
+[trigger 2](../../flow/failure-modes.md#a5-the-five-triggers-badcodes-own)-shaped) and the real
+camera marque, both of which passed unchanged in round 1.
+
+**Four things were new in round 2. All four are cut or swapped unrun**, per the standing posture
+from [A5b](../../flow/failure-modes.md#a5b-the-bedroom-problem--trigger-5-in-detail): *on a prompt
+the filter is already primed for, do not spend generations defending a clause you do not need.*
+🔴 **Cause is inferred from the diff, not tested** — no clause was isolated.
+
+| New in round 2 | Why it is a suspect | Round 3 |
+| --- | --- | --- |
+| 🔴 *"the doors **crop him at both arms**"*, with the gap *"narrower than a man's shoulders"* | **Prime suspect.** This is [A5b](../../flow/failure-modes.md#a5b-the-bedroom-problem--trigger-5-in-detail)'s mechanism exactly — *context does not protect a word, it convicts it*. *Crop* is a photographer's word in a photographer's paragraph, but here the sentence is machinery closing on a body and naming the body parts it reaches, which supplies the classifier's other reading | The narrow gap survives as a **negative space fact** — *only a tall narrow slot of the car is still visible* — and the arms are never mentioned. The §30 physical analogy is kept |
+| 🟡 *"taken quickly and **candidly**"* + *"a **candid press** photograph"* | *Candid* photographs *of people* is its own flagged phrase shape, and round 2 put it in twice. It was only ever there as the cheap [human-behind-the-camera lever](../../google-flow/nano-banana-2.md) against the glossy-poster failure | The lever is kept without the word: *taken in a hurry by someone crossing the lobby* |
+| 🟡 *"a **thin young man** in a knitted jumper"* | An age descriptor on a body descriptor. Google's classifier [fuzzy-matches young/teen/child](../../flow/failure-modes.md#a6-rewrite-patterns) and flags any subject who *could* be a minor regardless of context. Round 1 gave the three leavers no ages at all | *a slight man in a knitted jumper*. The individuation that §crowd-realism wanted is carried by build, dress and distance, which is what it asked for anyway |
+| 🟡 *"a **press** photograph of the 2008 financial crisis"* | Round 1 said *"a **newspaper** photograph of the 2008 financial crisis"* and passed. One word from a known-good line, next to a real event, on the [synthetic-news](../../flow/failure-modes.md#-synthetic-news-trigger--may-cause-reputational-risk-or-misrepresent-current-events) shelf | Reverted to round 1's exact passing wording. Free |
+
+⚠️ **Everything round 2 fixed is intact** — the lobby in the `Subject:` slot, the off-axis camera,
+one worn jacket on his body, the button-press gesture, the object occluder, the atrium negation.
+Round 3 is round 2 with four phrases changed.
+
+⬜ **If round 3 still blocks,** the next cut is the face-age block — *"keep the face lean and
+unlined… no hollowing under the cheekbones"* — which is likeness engineering on a cast Character
+and is [the house rule's own exception](./characters/tarquin.md) being stretched. Cut it whole and
+let `@2008 - tarquin` carry the age; do not rewrite it smaller.
+
+### 1m-l — round 3 · **still** · written 2026-09-12, unrun
+
+**Check these five on the result, worst first:** the gap between the doors is actually narrow ·
+the lift is off the centre axis · he has exactly one jacket and it is on him · the three leavers
+are three different people · the floor is carpet and does not reflect.
+
+**Paste into:** Flow → image prompt box. **Model:** Nano Banana Pro (check the picker — Lite is
+the silent default). **Aspect:** 16:9. **Resolution:** 2K. **Character:** `@2008 - tarquin`.
+**No reference image.**
+
+```prompt
+SCENE:
+
+This is one frame of a fast-cut montage about a young City of London trader in September 2008, the week the banks began to fail. It is late evening. In this frame the lift doors are closing on him while three people carry their belongings out across the dark lobby, and he is the only one going up.
+
+Camera: a 35mm lens at standing chest height, level, taken in a hurry by someone crossing the lobby, from about three metres out and well over to the left, so the bank of lift doors runs away to the right at an angle and no wall in the room is square to the lens. The lit car sits left of centre and the dark lobby fills the right two-thirds of the picture. Nearest the lens, two cardboard archive boxes stacked on the carpet cross the bottom left corner, dark and thrown completely out of focus so that they are a soft blur.
+
+Subject: the lift lobby of an ordinary City of London office tower at night, worn rather than grand. Three brushed stainless lift doors set into a matt painted wall, scuffed kick plates, grey carpet tiles with a worn track across them, a dented skirting board, a red fire extinguisher on a bracket, a plastic waste bin. The lobby lights are down to their night setting, with only a few dim fittings still on far back.
+
+Action: the nearest of the three lift cars is lit and its two doors have almost met. The gap left between their leading edges is narrower than a man's shoulders, so only a tall narrow slot of the car interior is still visible and the doors hide everything to either side of it. The doorway is seen slightly from its left side, so it reads as a leaning rectangle rather than a square-on one.
+
+Him: the man from the character reference stands in that slot, seen from the thighs up, facing out, with the edge of a door passing in front of each of his shoulders. He is twenty-five: keep the face lean and unlined, the hairline full and low, with no creases from nose to mouth, no hollowing under the cheekbones and no recession at the temples. He is wearing his suit jacket, done up, over a shirt and tie, and he carries nothing over his arm. One hand is still raised to the button panel on the side wall inside the car, the fingers just coming off the buttons, because he has this second pressed one. The other hand holds a small black handset with a keyboard, low and forgotten. He is watching the closing gap, his chin level, his lids relaxed, his brows level, his lips closed. Nothing in his face is reacting to the people outside.
+
+In front of him: three people are walking away from the camera across the lobby to the right, into the dark, carrying their things out, strung out at different distances rather than walking together. Nearest is a woman in her forties in shirtsleeves, a coat over one arm and a bulging canvas holdall on the other shoulder, caught mid-stride with one heel off the carpet. Further back is a broad man in his fifties, grey and thinning on top, carrying a plain brown cardboard box level in both arms. Furthest and almost lost in the dark is a slight man in a knitted jumper holding a potted desk plant and a framed picture against his chest. All three are seen squarely from behind, so the backs of their heads face the lens and hide the rest of them.
+
+Light: the fluorescent panel in the ceiling of the lift car is the only strong light in the picture. It is directly above him, so it lights the top of his head, his shoulders and the tops of his cheekbones and leaves his eye sockets and the underside of his jaw in shadow, and it throws a narrow hard-edged strip of light out of the closing doorway that runs diagonally across the carpet toward the bottom right of the frame. The picture is exposed for the inside of the car: the front of his shirt clips to featureless white, the three people walking away are near-black shapes cut out against the carpet, and the lobby around them holds a trace of detail in the deep shadow rather than going to solid black.
+
+Style: a newspaper photograph of the 2008 financial crisis, taken on a Canon EOS-1D Mark III by available light with no flash, at ISO 3200 — coarse digital noise and mild chromatic noise in the shadows, muted cool colour, slightly missed focus at the edges, unretouched with no skin smoothing, harsh and unflattering.
+
+Constraints: the lift car's ceiling panel is the only light source in the picture, and the floor indicator above the doors is above the top edge of the frame. The lobby is worn and ordinary — carpet tiles rather than stone, a matt painted wall rather than marble, and a floor that reflects nothing. He wears one jacket and it is on his body. He is the only person in the picture wearing a suit jacket. The three people walking away are seen only from behind, so his is the only legible face in the picture. He is twenty-five years old. His expression stays small and unbothered — a stranger looking at this photograph would not be able to say what he is feeling at all. The cardboard boxes are plain brown with nothing printed on them, and there are no brand names, logos or readable labels anywhere, including on the handset. Ensure historical accuracy for 2008, and every person, garment and object is British.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### 1m-l — round 4 · **still** · written 2026-09-13, unrun · *supersedes round 3*
+
+**Written after Jack re-ran the shot and hit the policy card again.** Round 4 is round 3 with
+**two changes**, and the first one is both the policy fix and the better picture.
+
+#### 🔑 1. The door state is told by the SHAPE OF THE LIGHT, not by what the machine does to his body
+
+[A5c](../../flow/failure-modes.md#a5c-trigger-5s-other-half--machinery-plus-a-named-body-part-inferred-untested)
+puts the block on *machinery closing on a body, naming the body parts it reaches*. Round 3 cut
+*"crop him at both arms"* but **kept two more instances of the same shape** — *"narrower than a
+man's shoulders"* and *"the edge of a door passing in front of each of his shoulders"*. Under the
+do-not-defend posture those go too.
+
+The replacement is not a weaker sentence, it is a better one:
+
+| Round 3 | Round 4 |
+| --- | --- |
+| *the gap … is narrower than a man's shoulders* | *a tall narrow slot about **a quarter of the doorway's full width**, so the lit interior reads as a **bright vertical band** rather than an open doorway* |
+| *the edge of a door passing in front of each of his shoulders* | *the doors hiding everything to either side of him* |
+
+**Why it is also the better frame:** the closing is now stated as an optical fact — a band of
+light — so [§38](../../google-flow/nano-banana-2.md#38--a-mechanical-in-progress-state-returns-fully-open-or-fully-shut--give-it-a-physical-analogy-observed-2026-09-12)'s
+physical analogy survives, [§30](../../google-flow/nano-banana-2.md#30--a-physical-analogy-overrules-a-stated-number--and-it-is-how-28-keeps-happening-observed-2026-09-08)
+is satisfied by a proportion of an object already in frame, and the **light does the narrative
+work instead of a stage direction**. No body part is named anywhere near the doors.
+
+#### 🔑 2. The `Style:` block was over-corrected, and that is its own slop tell
+
+`[community]` guidance is consistent and blunt: **one or two imperfection words, three at the
+absolute most, or the model over-corrects and the picture looks deliberately degraded**
+([Pixova](https://www.pixova.io/blog/how-to-make-ai-images-look-less-like-ai),
+[Miraflow](https://miraflow.ai/blog/how-to-make-ai-images-look-like-real-photos-prompt-tricks)).
+Round 3's style line carried **seven**: coarse digital noise, mild chromatic noise, muted cool
+colour, slightly missed focus at the edges, unretouched, no skin smoothing, harsh and unflattering.
+
+Round 4 keeps **three** — ISO 3200 noise, muted cool colour, no retouching — and drops the rest.
+🔴 ***slightly missed focus at the edges* is the one that had to go on craft grounds too**: it
+invites exactly the [fake-DoF halo](../../google-flow/nano-banana-2.md#️-fake-depth-of-field-has-its-own-tells-practitioner-community)
+that round 1 produced on the foreground occluder. This is also
+[shot-craft's standing note](../../../.claude/skills/shot-craft/SKILL.md) that when a frame is not
+landing, **the fix that works most often is removing a clause, not adding one.**
+
+#### ⚠️ Two smaller changes, both carried over from the diagnosis
+
+- **The camera drops to hip height**, taken by someone hurrying across the lobby. It is the
+  `[community]` *shot-from-the-hip* lever for a human behind the camera — which round 2 had
+  spent the flagged word *candid* on — it breaks the default chest-height-and-level frame that
+  [symptoms.md](../../cinematography/symptoms.md) names in the looks-like-AI bundle, and it puts
+  the carpet in the foreground so the picture has three populated depth planes.
+- 🔑 **His eyeline goes back to round 1's** — *just past the nearest of them, at nothing in
+  particular* — rather than round 3's *watching the closing gap*. It is the stronger beat and it
+  is the montage's own line: **he looks through the people it is happening to.** It also gives
+  the frame the gaze vector whose absence is a named slop tell.
+
+#### ⬜ Unchanged, and deliberately so
+
+Everything else is round 3, which is round 1's cleared text plus the structural fixes. **The
+face-age block and the camera marque both passed in round 1 and stay.** If round 4 still blocks,
+cut the face-age block whole — *"keep the face lean and unlined… no recession at the temples"* —
+and let `@2008 - tarquin` carry the age. Do not rewrite it smaller.
+
+#### 🔴 Model: Pro or NB2 is now an open A/B, not a settled call — corrected 2026-09-13
+
+There is still nothing called *Nano Banana Pro 2*: the family is Nano Banana → **Nano Banana
+Pro** → **Nano Banana 2** (the Flash line) → Nano Banana 2 Lite. **But the naming fact was being
+used to carry a quality claim it does not support, and that was wrong.** Nano Banana 2 leads Pro
+on human-preference Elo — **1,280 v 1,238** on Arena.ai and **1,264 v 1,220** on Artificial
+Analysis for text-to-image — while being ~4× faster and half the cost, and both models offer the
+same resolutions up to 4K. Full working and the caveats:
+[nano-banana-2.md](../../google-flow/nano-banana-2.md#-corrected-2026-09-13-nano-banana-2-beats-pro-on-the-leaderboards-community).
+
+**What that does and does not change for this frame.** Pro's one reported advantage is
+*"complex multi-element compositions… specific spatial relationships, layered lighting, and a
+particular mood"* — off-axis geometry, single-source falloff, three individuated figures at
+three distances, a foreground occluder. **That is `1m-l` exactly**, and it is where round 1
+failed. General-preference Elo is won on pretty single-subject pictures, which is the opposite
+of what this shot asks for.
+
+🔑 **So run round 4 as a two-generation A/B: the same text on Nano Banana Pro first, then on
+Nano Banana 2.** Pro goes first only on **continuity** — `1m-2`, `1m-7`, `1m-8` and `1m-m` were
+made on it and these frames cut at about one a second, where a look shift would show.
+⬜ **Record which one won.** Our own measured result outranks every leaderboard row, and it
+settles the default for the rest of the film.
+⚠️ **Never Nano Banana 2 Lite** — it is the small tier and it is the silent default in the picker.
+
+Google's own field order —
+*Subject · Action · Location · Composition · Style*, with constraints last — is what this block
+already uses `[vendor]`; take their structure and not their example style words, because
+*"cinematic"* is on our [quality-word kill list](../../google-flow/nano-banana-2.md#️-the-quality-word-kill-list-now-includes-cinematic).
+
+**Check these five on the result, worst first:** the slot between the doors is actually narrow ·
+the lift is off the centre axis · he has exactly one jacket and it is on him · the three leavers
+are three different people · the floor is carpet and does not reflect.
+
+⬜ **If the likeness does not bind,** switch the lens to 85mm from the same standing position and
+change nothing else. **Do not add words about his face.**
+
+**Paste into:** Flow → the image prompt box. **Model:** Nano Banana Pro (check the picker — Lite
+is the silent default). **Aspect:** 16:9. **Resolution:** 2K. **Character:** `@2008 - tarquin`.
+**No reference image.**
+
+```prompt
+SCENE:
+
+This is one frame of a fast-cut montage about a young City of London trader in September 2008, the week the banks began to fail. It is late evening, and he is going up while three people carry their belongings out.
+
+Camera: a 35mm lens held at hip height by someone hurrying across the lobby, so the camera sits low and the grey carpet fills the bottom of the picture. It is well over to the left of the lift doors, which run away to the right at an angle, so no wall in the room is square to the lens, and the frame is very slightly tilted. Nearest the lens, two stacked cardboard archive boxes left on the carpet cross the bottom left corner, dark and thrown completely out of focus so that they are a soft blur.
+
+Subject: the lift lobby of an ordinary City of London office tower at night, worn rather than grand — three brushed stainless lift doors set into a matt painted wall, scuffed kick plates, grey carpet tiles with a worn track across them, a dented skirting board, a red fire extinguisher on a bracket. The lobby lights are down to their night setting and only a few dim fittings are still on at the back.
+
+Action: the nearest lift car is lit and its two doors have almost met. What is left between their leading edges is a tall narrow slot about a quarter of the doorway's full width, so the lit interior reads as a bright vertical band rather than as an open doorway. The doorway is seen from its left side, so it leans rather than sitting square to the lens.
+
+Him: the man from the character reference is inside that band, seen from the waist up, facing out, with the doors hiding everything to either side of him. He is twenty-five: keep the face lean and unlined, the hairline full and low, with no creases from nose to mouth, no hollowing under the cheekbones and no recession at the temples. He wears his suit jacket, done up, over a shirt and tie, and carries nothing over his arm. One hand is still up at the button panel on the side wall of the car, the fingers just coming off it, because he has this second pressed a button. The other hand holds a small black handset with a keyboard, low and forgotten. His eyes are aimed just past the nearest of the people in front of him, at nothing in particular — lids relaxed, brows level, lips closed. Nothing in his face is reacting to them.
+
+In front of him: three people walk away from the camera across the lobby to the right, into the dark, carrying their things out, strung out at different distances rather than walking together. Nearest is a woman in her forties in shirtsleeves, a coat over one arm and a bulging canvas holdall on the other shoulder, caught mid-stride with one heel off the carpet. Further back is a broad man in his fifties, grey and thinning on top, carrying a plain brown cardboard box level in both arms. Furthest and almost lost in the dark is a slight man in a knitted jumper holding a potted desk plant and a framed picture against his chest. All three are seen squarely from behind, so the backs of their heads face the lens.
+
+Light: the fluorescent panel in the ceiling of the lift car is the only strong light in the picture. It is directly above him, lighting the top of his head, his shoulders and the tops of his cheekbones and leaving his eye sockets and the underside of his jaw in shadow. It throws one narrow hard-edged wedge of light out through the gap and across the carpet toward the bottom right of the frame, and the three people crossing that wedge are near-black shapes cut out against it. The picture is exposed for the inside of the car: the front of his shirt clips to featureless white, while the lobby around them keeps a trace of detail in the deep shadow rather than going to solid black.
+
+Style: a newspaper photograph of the 2008 financial crisis, taken on a Canon EOS-1D Mark III by available light with no flash at ISO 3200 — coarse digital noise in the shadows, muted cool colour, and no retouching or skin smoothing.
+
+Constraints: the lift car's ceiling panel is the only light source in the picture, and the floor indicator above the doors is above the top edge of the frame. The lobby is worn and ordinary — carpet tiles rather than stone, a matt painted wall rather than marble, and a floor that reflects nothing. He wears one jacket and it is on his body, and he is the only person in the picture wearing a suit jacket. The three people walking away are seen only from behind, so his is the only legible face in the picture. He is twenty-five years old. His expression stays small and unbothered — a stranger looking at this photograph would not be able to say what he is feeling at all. The cardboard boxes are plain brown with nothing printed on them, and there are no brand names, logos or readable labels anywhere, including on the handset. Ensure historical accuracy for 2008, and every person, garment and object is British.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### 1m-l — round 4, **policy block** (Jack, 2026-09-13) · 🔴 *and it disproves the round-2 diagnosis*
+
+**Round 4 removed every machinery-plus-body-part phrase and blocked anyway.** So
+[A5c](../../flow/failure-modes.md#a5c-trigger-5s-other-half--machinery-plus-a-named-body-part-inferred-untested)'s
+*"crop him at both arms"* was **not the cause**, or not the whole one. That entry is now corrected
+rather than confirmed.
+
+🔑 **The diff is now much sharper, because there are two blocked rounds and one that passed.**
+Round 1 generated. Rounds 2 and 4 both blocked. **The cause is almost certainly in what rounds 2
+and 4 SHARE and round 1 lacks** — everything unique to either blocked round is cleared by the
+other's failure, and everything in round 1 is cleared outright.
+
+**That intersection is small, and one item in it is much bigger than the rest:**
+
+| Shared by both blocked rounds, absent from round 1 | Read |
+| --- | --- |
+| 🔴 **The three leavers became individuated people** — *a woman in her forties in shirtsleeves*, *a broad man in his fifties, grey and thinning on top*, *a thin young / slight man in a knitted jumper* | **Prime suspect.** Round 1 described three anonymous shapes carrying things. Rounds 2 and 4 describe **aged, gendered, individuated people being made to carry their possessions out of a building into the dark** — which is [trigger 3](../../flow/failure-modes.md#a5-the-five-triggers-badcodes-own), *stacked destitution*, arriving by accumulation rather than by any one word, and sitting next to a named real event. The individuation we added for [crowd realism](../../google-flow/nano-banana-2.md#-crowd-realism-is-individuation-not-adjectives-practitioner) is the same edit that turned a composition into an eviction |
+| 🟡 *a **bulging** canvas holdall on the other shoulder* | A word with a body-adjacent second reading, attached to a woman and a body part in the same clause. Textbook [A5b](../../flow/failure-modes.md#a5b-the-bedroom-problem--trigger-5-in-detail) shape. Not in round 1 |
+| 🟡 *a woman in her forties in **shirtsleeves*** | *In shirtsleeves* literally means **without** an outer garment. On a woman, in a prompt the filter is already primed for, it is a clause we do not need |
+| 🟡 *He wears one jacket and it is **on his body*** | *Body* as a bare noun in a constraints list, for no gain — *he is wearing it* says the same thing |
+| ⬜ The lobby in `Subject:`, the object occluder, the button press, the scoped negations | Structural, no keyword surface. **Kept** |
+
+⚠️ **Two more cut on the do-not-defend posture, both unique to round 4 and therefore not
+suspects — they are simply free:** *held at **hip** height* and *one **heel** off the carpet*.
+Body nouns bought nothing.
+
+🔑 **A block is free, and that changes the economics of the search.** Flow's card says *"You have
+not been charged for this generation."* A [binary search by subtraction](../../flow/failure-modes.md#a4-the-debugging-procedure)
+therefore costs **minutes, not credits** — so if round 5 still blocks, stop guessing and run the
+ladder below. **Two inferred diagnoses have now failed; the next one should be measured.**
+
+### 1m-l — round 5 · **still** · written 2026-09-13, unrun · *supersedes round 4*
+
+**Round 5 is round 4 with the whole suspect set cut in one pass**, per
+[A5b](../../flow/failure-modes.md#a5b-the-bedroom-problem--trigger-5-in-detail)'s posture: on a
+prompt the filter is already primed for, do not spend generations defending a clause you do not
+need. **Every structural fix is kept** — the lobby in `Subject:`, the off-axis geometry, the slot
+told as a band of light, the object occluder, the three-clause `Style:` block.
+
+🔑 **The one change that matters: the leavers are individuated by what they CARRY, not by who
+they ARE.** No ages, no genders, no builds — distance, garment and object do the work, plus
+*"no two of them are the same height"*. That is what
+[crowd realism](../../google-flow/nano-banana-2.md#-crowd-realism-is-individuation-not-adjectives-practitioner)
+actually asked for, and it keeps the cost in frame without describing a queue of displaced people
+in words.
+
+⚠️ **The face-age block stays.** It is cleared by round 1 and he has read mid-thirties twice
+without it. It is the **last** thing to cut, not the next.
+
+**Paste into:** Flow → the image prompt box. **Model:** Nano Banana Pro first, then the same text
+on Nano Banana 2 — [the A/B is open](#-model-pro-or-nb2-is-now-an-open-ab-not-a-settled-call--corrected-2026-09-13).
+**Aspect:** 16:9. **Resolution:** 2K. **Character:** `@2008 - tarquin`. **No reference image.**
+
+```prompt
+SCENE:
+
+This is one frame of a fast-cut montage about a young City of London trader in September 2008, the week the banks began to fail. It is late evening, and he is going up while three people carry their things out.
+
+Camera: a 35mm lens held low, about a metre off the floor, by someone crossing the lobby at speed, so the grey carpet fills the bottom of the picture. It is well over to the left of the lift doors, which run away to the right at an angle, so no wall in the room is square to the lens, and the frame is very slightly tilted. Nearest the lens, two stacked cardboard archive boxes left on the carpet cross the bottom left corner, dark and thrown completely out of focus so that they are a soft blur.
+
+Subject: the lift lobby of an ordinary City of London office tower at night, worn rather than grand — three brushed stainless lift doors set into a matt painted wall, scuffed kick plates, grey carpet tiles with a worn track across them, a dented skirting board, a red fire extinguisher on a bracket. The lobby lights are down to their night setting and only a few dim fittings are still on at the back.
+
+Action: the nearest lift car is lit and its two doors have almost met. What is left between their leading edges is a tall narrow slot about a quarter of the doorway's full width, so the lit interior reads as a bright vertical band rather than as an open doorway. The doorway is seen from its left side, so it leans rather than sitting square to the lens.
+
+Him: the man from the character reference is inside that band, seen from the waist up, facing out, with the doors hiding everything to either side of him. He is twenty-five: keep the face lean and unlined, the hairline full and low, with no creases from nose to mouth, no hollowing under the cheekbones and no recession at the temples. He wears his suit jacket, done up, over a shirt and tie, and carries nothing over his arm. One hand is still up at the button panel on the side wall of the car, the fingers just coming off it, because he has this second pressed a button. The other hand holds a small black handset with a keyboard, low and forgotten. His eyes are aimed just past the nearest of the people in front of him, at nothing in particular — lids relaxed, brows level, lips closed. Nothing in his face is reacting to them.
+
+In front of him: three people are walking away from the camera across the lobby to the right, carrying their things out, strung out at different distances rather than walking together. The nearest, six or seven paces off, is in a pale shirt with a dark coat folded over one arm and a canvas holdall hanging from the other, caught mid-step. Half the room further back, a figure in a dark crew-neck jumper carries a plain brown cardboard box level in both arms. The furthest is almost lost at the back of the lobby, in a light knitted jumper, with a potted desk plant under one arm and a framed picture in the other hand. All three are seen squarely from behind, so the backs of their heads face the lens, and no two of them are the same height.
+
+Light: the fluorescent panel in the ceiling of the lift car is the only strong light in the picture. It is directly above him, lighting the top of his head, his shoulders and the tops of his cheekbones and leaving his eye sockets and the underside of his jaw in shadow. It throws one narrow hard-edged wedge of light out through the gap and across the carpet toward the bottom right of the frame, and the three people crossing that wedge are near-black shapes cut out against it. Past them the far end of the lobby falls away to nothing. The picture is exposed for the inside of the car: the front of his shirt clips to featureless white, while the lobby around them keeps a trace of detail in the deep shadow rather than going to solid black.
+
+Style: a newspaper photograph of the 2008 financial crisis, taken on a Canon EOS-1D Mark III by available light with no flash at ISO 3200 — coarse digital noise in the shadows, muted cool colour, and no retouching or skin smoothing.
+
+Constraints: the lift car's ceiling panel is the only light source in the picture, and the floor indicator above the doors is above the top edge of the frame. The lobby is worn and ordinary — carpet tiles rather than stone, a matt painted wall rather than marble, and a floor that reflects nothing. He is wearing exactly one jacket and he is the only person in the picture wearing a suit jacket. The three people walking away are seen only from behind, so his is the only legible face in the picture. He is twenty-five years old. His expression stays small and unbothered — a stranger looking at this photograph would not be able to say what he is feeling at all. The cardboard boxes are plain brown with nothing printed on them, and there are no brand names, logos or readable labels anywhere, including on the handset. Ensure historical accuracy for 2008, and every person, garment and object is British.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+#### ⬜ If round 5 blocks: stop guessing and run the ladder. Blocks are free.
+
+Fire **round 1's exact text** (the version that generated) and add round 5's blocks back **one at
+a time**, in this order — most-suspected last, so the first failure names the cause:
+
+1. Round 1 + round 5's `Camera:` and `Subject:` blocks *(the lobby swap and the object occluder)*
+2. …+ round 5's `Action:` and `Him:` blocks *(the slot-as-band, the button press, the single jacket)*
+3. …+ round 5's `Light:` and `Style:` blocks
+4. …+ round 5's `In front of him:` block ← **expected to be the one that fails**
+5. …+ round 5's `Constraints:` block
+
+**Whichever step fails is the answer**, and it goes in
+[`failure-modes.md`](../../flow/failure-modes.md) as `[confirmed]` rather than as a third guess.
+🔴 **Only if step 4 passes** does the face-age block become the suspect — cut it whole then, and
+let `@2008 - tarquin` carry the age.
+
+### 1m-l — round 5 ✅ **ACCEPTED 2026-09-13, first take, on Nano Banana 2**
+
+**Jack: *"NB2 is better, that prompt made this image."*** Round 5 passed policy **and** came back
+usable on the first generation, so the round-4 diagnosis holds up: **the demographics on the three
+leavers were the block.** Individuating by garment, carried object and distance does the crowd-realism
+job without describing displaced people in words.
+
+⬜ **Master not banked** — save it as `camera/reference/1m-l-lift-doors-ACCEPTED.png`.
+
+**✅ What landed:** the boxes as a soft foreground occluder, the three leavers reading as three
+different people in silhouette with their backs to us, the wedge of light thrown diagonally across
+the carpet, the worn lobby, and a face that reads twenty-five rather than mid-thirties.
+
+🔑 **What did NOT land is the best thing about it. The doors came back fully open** —
+[§38](../../google-flow/nano-banana-2.md#38--a-mechanical-in-progress-state-returns-fully-open-or-fully-shut--give-it-a-physical-analogy-observed-2026-09-12)
+firing for the third time, through a physical analogy, a proportion **and** a description of the
+light's shape. **Treat §38 as near-unbeatable on a still and stop paying for rounds against it.**
+The open doorway is the better plate anyway, because it hands the clip its one action: **the film
+does not need a photograph of doors nearly shut, it needs doors that shut.**
+
+⚠️ **The frame came back very slightly wider than 16:9** with thin bars at the sides. **Crop in
+Premiere; never mention bars in a prompt** —
+[§31](../../google-flow/nano-banana-2.md#31--27-catches-the-output-frame-too-no-letterbox-bars-produces-letterbox-bars-observed-2026-09-08-n3).
+
+### 1m-l — the clip · **video** · written 2026-09-13, unrun
+
+**Recorded despite the [2026-08-26 stills-only ruling](#conventions)**, on the same grounds as
+`1m-m`'s: it carries a routing call, a documented morph risk that is three-figures wide, and one
+deliberate rule-break that needs its reasoning kept.
+
+**Routing:** Omni Flash → **Frames** tab, the accepted `1m-l` frame as the **start frame**.
+**Duration 6s.** 🔴 **End slot EMPTY.** Omni 1.1 Flash added end frames on 2026-08-27 `[vendor]`
+and it is tempting here — but the house rule stands: **never pin an `endImage`, it morphs**
+([`hybrid-method.md`](../../video-fx/hybrid-method.md)). The doors have a stable destination
+without one.
+
+🔴 **Frames, and no Character** — the same call as
+[`1m-m`](#1m-m--the-clip--video--written-2026-09-12-unrun), for the same two reasons. The
+staging **is** the shot (the wedge, the occluder, three figures at three distances), and
+[Ingredients re-stages](#-the-tab-rule--amended-2026-08-18-ingredients-holds-identity-frames-holds-staging).
+And the plate is now **the only authority on a face that finally reads twenty-five** — attaching
+`@2008 - tarquin`, which has come back mid-thirties twice, would put an older second authority on
+it. The tab rule's *"a face in the shot → Ingredients"* line is overruled by its own **both** row:
+staging failure is unrecoverable, and his motion here is near-zero, which is that row's stated
+precondition.
+
+#### 🔑 The design: the doors perform the cut
+
+[A clip whose first and last frames match reads as a photo, not a shot](../../cinematography/stills.md#1-what-makes-a-still-hold),
+and this one has exactly one event — **the doors close and take the light with them.** The wedge
+on the carpet narrows to a band, to a strip, to a line, and goes out.
+
+Three reasons it is the right single action:
+
+- **It is the beat.** *"…this prick stands without a scratch"* — he is sealed into a lit box and
+  the room the cost is standing in goes dark. No narration needed.
+- 🔑 **It is a transition made in camera.** The shot ends in near-black, so it cuts to anything.
+  ⬜ **Worth considering in the edit: use it as the montage's exit** rather than as another
+  one-second frame — the cutting accelerates, then this one shot plays out and takes the light
+  away. That is a human call and it changes the montage's shape, so it is Jack's, not this file's.
+  *(The standing plan has `1m-8` as the button —
+  [2 → 7 → 8 is the complete argument](./shot-list.md).)*
+- 🔑 **It hides the risk.** See below.
+
+#### 🔴 The top risk is the three walkers, and the doors are the mitigation
+
+`[observed 2026-08-26]` **On Frames, a walking extra morphs** — camping `5a` held a car perfectly
+and the people changed anyway, because [Frames holds pixels, not people: the moment a person
+moves, they are being generated](#-on-frames-a-walking-extra-morphs--stillness-is-the-only-thing-that-holds-them-observed-2026-08-26).
+**This plate has three of them, all mid-stride.** The repo's stated fixes are hold them still,
+demote them to sound, or crop them out — and **all three are unavailable**, because the leavers
+walking away *is* [gate 2's visible cost](../../../.claude/skills/shot-craft/SKILL.md) and the
+frame fails without it.
+
+**Two things carry it instead, and the second is the reason to spend the credit:**
+
+1. ⚠️ **They are near-black silhouettes.** A morph is a redraw failure, and a cut-out shape with
+   no internal detail has very little to get wrong — no face, no hands, no garment seams.
+   🔴 **Inferred, not measured:** `5a`'s pedestrian was lit. **If they morph anyway, that is a
+   finding worth writing up**, because it would mean silhouetting does not buy what it looks like
+   it should.
+2. 🔑 **The shot's own event removes them.** Their only light is the wedge from the lift. As the
+   doors close, the wedge narrows and they lose their backlight — **so by the second half of the
+   clip the elements most likely to fail are unlit.** The risk and the runtime run in opposite
+   directions, which is the whole reason this shot is cheap to attempt.
+
+#### ⚠️ One rule is deliberately broken, and here is the cover
+
+[**Ask it to *continue* a state, never to *reach* one**](#-ask-it-to-continue-a-state-never-to-reach-one-observed)
+is the house rule, and *"the doors close"* is a state change by definition — there is no way to
+write this shot that obeys it.
+
+🔑 **The cover is that the prior is with us for once.** `[observed 2026-08-26]`
+[a hinged thing given any general instruction to move settles shut and stays shut](#-a-hinged-thing-given-wind-will-settle-shut-and-stay-shut-observed-2026-08-26)
+— camping `6a` lost a tent doorway to exactly this. **Closed is the engine's own attractor state.**
+Here that failure mode and the brief are the same thing, so the model is being asked to do what it
+already wants to do. It is the one shot in the film where 6a's bug is free labour.
+
+#### ⚠️ The shutter clause is deliberately absent
+
+The [24fps / 180° shutter token](#the-shutter-is-the-tell-nobody-prompts-for) is on nearly every
+BadCode clip, and it is **subtracted here on the file's own instruction**: it is for shots with
+*fast* motion, and on a near-static clip it is
+[a word that buys nothing](#-biological-motion--the-anti-slop-clause-for-any-shot-of-a-person-doing-nothing).
+Sliding doors and three people walking are both slow. **The biological-motion clause replaces it**
+— he breathes and blinks once, because a held shot of a person doing nothing is precisely where
+that tell fires.
+
+⚠️ **Every instruction is positive.** No *"he does not step forward"*, no *"they do not turn"* —
+[negatives backfire](#-negatives-do-not-work-and-they-actively-backfire), and each one would name
+the unwanted action into the shot. The only negation kept is `No music and no voices.`, which is
+`[confirmed]` working on 8b-fog.
+
+#### ⬜ Draft at 360p first — half credits, and it is this shot's exact use case
+
+[The 360p draft is a **motion** check](#-the-360p-draft-is-a-motion-check-never-a-text-check--and-upscaling-repairs-nothing):
+morphing figures and hinging surfaces, which is this clip's entire risk surface. **Ignore the face,
+the texture and the grain in it.** If the doors travel and the three silhouettes hold, promote to
+720p — that is the native ceiling, and 1080p/4K are upscales.
+
+**Paste into:** Flow → **Frames to Video** prompt box. **Start frame:** the accepted `1m-l` image.
+**End frame:** empty. **No Character, no Ingredients.** **Duration:** 6s. Primary:
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame, as one single continuous shot with no cuts. The camera is locked off and holds completely still throughout.
+
+The lift doors slide shut. They run in from both sides at the steady even speed of a real lift door, and the wedge of light lying across the carpet narrows as they come — to a band, then a strip, then a thin line that goes out, leaving the lobby in near-darkness.
+
+He stays exactly where he is and rides up. He breathes, blinks once, and goes on looking past the people in front of him, and his expression holds as it is.
+
+The three people carry on walking away from the camera at the same steady pace, their backs to the lens the whole time, and the dark takes them as the light leaves.
+
+The boxes, the carpet, the walls and the fire extinguisher stay exactly where they are.
+
+Audio: the hum of the lift motor, the doors running in their tracks and a soft clunk as they meet, footsteps going away on carpet, and the low hum of an empty building at night. No music and no voices.
+
+Thanks.
+```
+
+⬜ **Fallback, only if the primary comes back diluted or re-staged** — same tab, same start frame:
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame. Camera locked off, one continuous shot, no cuts.
+
+The lift doors slide shut at the steady speed of a real lift door, and the wedge of light on the carpet narrows with them to a thin line and goes out. He stays where he is, breathes and blinks once. The three people carry on walking away with their backs to the lens, and the dark takes them.
+
+Audio: the lift motor, the doors running and meeting, footsteps going away on carpet. No music and no voices.
+
+Thanks.
+```
+
+**Post, in Premiere:**
+
+1. ⬜ **Crop off the side bars** the plate came back with — this clip inherits them from frame 0.
+2. ⬜ **Any camera move is here, not in Flow** ([`hybrid-method.md`](../../video-fx/hybrid-method.md)) — though this shot wants none: the doors are the move.
+3. **Match the grain rather than stacking it** — the plate already carries ISO-3200 press-DSLR noise.
+4. ⚠️ **Watch the three silhouettes on playback**, not the doors. If a figure gains a limb, changes height or swaps what it is carrying, that is the `5a` morph firing through a silhouette — **a re-roll, not a grade**, and it goes in [`omni-flash.md`](../../google-flow/omni-flash.md) as a finding.
+5. ⚠️ **Nothing ships unmeasured** — `scripts/delivery-qc.sh`
+   ([`delivery.md`](../../video-fx/delivery.md)). This shot ends in near-black, which is the exact
+   condition that crushed `camping.mp4`.
+
+**Sources for this entry (2026-09-13):**
+[Flow models & supported features](https://support.google.com/flow/answer/16352836) `[vendor]` ·
+[Flow by Google — end frames in Omni 1.1 Flash](https://x.com/FlowbyGoogle/status/2093011783649001870) `[vendor]` ·
+[Magic Hour — realistic AI video prompting, 10 pillars](https://magichour.ai/blog/realistic-ai-video-prompting) `[community]` ·
+[Promptessor — image-to-video, the "living still"](https://promptessor.com/blog/image-to-video-prompts-how-to-animate-photos-products-characters-and-art-in-2026) `[community]` ·
+[Prompt Architects — still-image-to-video handoff prompts](https://prompt-architects.com/blog/242-from-still-image-to-ai-video-handoff-prompts) `[community]`
+
+**Sources for this entry (2026-09-13):**
+[Google Cloud — ultimate prompting guide for Nano Banana](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana) `[vendor]` ·
+[Max Woolf — Nano Banana Pro, with caveats](https://minimaxir.com/2025/12/nano-banana-pro/) `[practitioner]` ·
+[Pixova — how to make AI images look less like AI](https://www.pixova.io/blog/how-to-make-ai-images-look-less-like-ai) `[community]` ·
+[Miraflow — prompt tricks that actually work](https://miraflow.ai/blog/how-to-make-ai-images-look-like-real-photos-prompt-tricks) `[community]` ·
+[Hedra — make AI images look like real photos](https://www.hedra.com/blog/make-ai-images-look-like-real-photos-prompting) `[community]`
+
+
+### 1m-t — the treadmill · **still** · written 2026-09-13, unrun
+
+**Jack's ask, 2026-09-13:** *"him on a treadmill on the phone with an annoying headset as he runs."*
+
+⚠️ **It is still September 2008, not the 1980s.** The montage is called *the 80s job montage*
+because Jack asked for 80s **grammar** — flash frames cut on the beat — and its content is the week
+the banks failed. **A treadmill frame set in 1985 would break the year device.** The naff ear-hook
+Bluetooth earpiece is perfect *because* it is 2008, not despite it.
+
+#### The job: every other frame is him at a desk or leaving one. This is the one where he does not stop
+
+🔑 **And the gag is free geometry: he is running flat out toward a city he never gets to.** The
+black glass wall is a metre in front of him with the City's lights beyond it, and he does not move
+an inch. Nothing in the prompt has to say that; the room says it.
+
+**Where it sits:** proposed under *"Leveraged E.T.F.s. If you do not understand that, it is rather
+the point."* A man barking acronyms into an earpiece at a dead run **is** that line.
+⬜ **Human call: it could replace [`1m-6` "two phones"](./shot-list.md)**, which is unmade and needs
+a Premiere split-screen to work at all. `1m-t` makes the same argument in one frame with no post.
+
+#### 🔴 Gate 2: the cost is the cleaner, and it is a KIND the montage has not used
+
+The [standing rule on this montage](./shot-list.md) is that **each frame's cost is a different kind**
+— a silent room, a broken body, an exodus with boxes — because cloning the cost builds nothing.
+Used so far: wreckage underfoot, red columns, a stripped desk, an eviction, empty desks, a bowed
+man, three leavers.
+
+**This one is the labour nobody photographs.** Someone in a maintenance uniform working at the far
+end of the room at five in the morning, wiping a machine down, mop bucket beside them — the person
+who makes the room he is running in, who will never be on the call he is taking. It is
+[`the-reader.md`](../../marketing/the-reader.md)-shaped: the frame names who is actually working.
+
+🔑 **And the round-4 lesson is applied directly: no age, no gender, no build.** The cleaner is
+individuated by **uniform, task, equipment and distance** only. That is what
+[crowd realism](../../google-flow/nano-banana-2.md#-crowd-realism-is-individuation-not-adjectives-practitioner)
+asked for, and it is the phrasing that
+[got `1m-l` through after two refusals](#1m-l--round-4-policy-block-jack-2026-09-13---and-it-disproves-the-round-2-diagnosis).
+
+#### 🔴 Celebration risk is high and named
+
+[Principle 24](../../cinematography/principles.md): the rich-trader-at-the-gym montage is
+**American Psycho's** own grammar, and meaning it ironically does not protect us. Four guards, and
+none of them is a caption:
+
+1. **He is going nowhere.** The frame's literal content is effort without travel.
+2. **The flash is unflattering** — a hard frontal press flash at 5am, not gym-brand key light.
+   ⚠️ **Deliberately NOT the [fitness-photography register](https://miraflow.ai/blog/ai-prompts-fitness-brand-content-gym-ready-visuals-2026)**
+   the web will hand you for this subject: *"cinematic sports lighting"*, *"sweat sheen"* and
+   *"professional colour grading"* are aspirational-advertising words and every one of them is on
+   our [quality-word kill list](../../google-flow/nano-banana-2.md#️-the-quality-word-kill-list-now-includes-cinematic).
+3. **His body is never described.** No physique, no definition, no adjectives about how he looks —
+   which is both the celebration guard and the
+   [cosplay/hyperreal failure](https://minimaxir.com/2025/12/nano-banana-pro/) guard `[practitioner]`.
+4. **`Constraints:` bounds the face from above**, as on every montage frame: a stranger reads
+   effort and concentration before they read triumph.
+
+#### 🔑 The one detail the frame turns on: he is talking, not breathing
+
+He is **mid-sentence**, not gasping. A man who can hold a deal at that pace is the whole character
+in one observation, and it is the difference between this and a fitness photograph.
+
+#### ✅ Craft levers used, and one refused
+
+- **Three depth planes, foreground first** — the next machine's handrail crossing the bottom
+  corner, dark and out of focus. It is the named fix for flatness
+  ([symptoms.md](../../cinematography/symptoms.md)) and `[community]` guidance says the same:
+  *blurred foreground, subject midground, distant element background*.
+- 🔑 **The flash freezes flying sweat, and that is period-correct rather than a gloss.** An
+  on-camera flash at 1/1000s stops droplets in the air, which gives the frame
+  [implied motion in a still](https://miraflow.ai/blog/ai-prompts-fitness-brand-content-gym-ready-visuals-2026)
+  `[community]` without any fitness-advertising vocabulary. The belt and the deck carry a faint
+  ambient smear under the same drag-shutter clause
+  [`1m-m` used](#1m-m--champagne-in-a-coffee-mug--still--written-2026-09-12-unrun).
+- ✅ **`visible pores, not airbrushed`** — `[community]` names this as *the* clause that stops the
+  waxy default, and it earns its place here because a sweating face at flash range is the one
+  frame in the montage where skin is the largest thing in view.
+- 🔴 **Refused: the mirror wall.** A gym mirror would double him — *him running beside himself,
+  going nowhere twice* — and it is a good idea that this engine cannot be trusted with.
+  Reflections come back *"very strange"* `[observed]`, and a mirrored figure is a
+  [duplicate-subject](../../google-flow/omni-flash.md#-a-multi-waypoint-trajectory-duplicates-the-subject-observed-2026-08-26)
+  invitation. **The black window carries the same meaning with no reflection asked for.**
+- ⚠️ **No marque on anything** — the treadmill, the earpiece and the handset are described and
+  never named ([§34](../../google-flow/nano-banana-2.md#34--naming-a-marque-renders-its-badging-and-no-downstream-constraint-removes-it-observed-2026-09-08)).
+- ⚠️ **§35's confirmed flash recipe:** the hardware is named in `Style:`, the light is described
+  only as consequences in `Light:`, and the source positions are pinned in `Constraints:`.
+
+#### ⚠️ Policy audit before firing — a gym is an A5b setting
+
+[A5b](../../flow/failure-modes.md#a5b-the-bedroom-problem--trigger-5-in-detail): *the setting
+supplies the other reading.* A room full of bodies and sweat is exactly that shape, so the block was
+read back asking which words look bad quoted next to *gym*. **Written out:** any description of his
+build, *glistening*, *sheen*, *soaked through*, *bare*, and every garment word beyond the two
+needed. **Kept:** *the front of his top is dark with sweat*, which is
+[`1m-m`'s exact passing phrasing](#1m-m--champagne-in-a-coffee-mug--still--written-2026-09-12-unrun).
+
+**Model:** **Nano Banana 2** — it made the accepted `1m-l` first take, and that measured result
+outranks the leaderboards either way. **Check the picker; Lite is the silent default.**
+**Paste into:** Flow → the image prompt box. **Aspect:** 16:9. **Resolution:** 2K.
+**Character:** `@2008 - tarquin`. **No reference image.**
+
+**Check these five on the result, worst first:** he is mid-word rather than gasping · the row of
+machines runs away at an angle rather than square-on · the cleaner is present and far off ·
+nothing in the room carries a logo or a readable number · the window is black with distant lights,
+not a mirror.
+
+```prompt
+SCENE:
+
+This is one frame of a fast-cut montage about a young City of London trader in September 2008, the week the banks began to fail. It is five in the morning. In this frame he is running hard on a treadmill in his firm's gym and doing a deal at the same time.
+
+Camera: a 35mm lens at chest height, level, about two metres out and well over to the right, so the row of treadmills runs away to the left at an angle and no wall in the room is square to the lens. He is in the left third of the picture and the dark room carries the rest, and the frame is very slightly tilted. Nearest the lens, the handrail and console of the next machine along cross the bottom right corner, dark and thrown completely out of focus so that they are a soft blur.
+
+Subject: the man from the character reference, seen from the knees up, running on a treadmill and facing the camera's side of the room. He is twenty-five: keep the face lean and unlined, the hairline full and low, with no creases from nose to mouth, no hollowing under the cheekbones and no recession at the temples. He is in a plain dark technical running top and shorts, and the front of the top is dark with sweat.
+
+Action: he is at a flat-out run, both feet off the deck at the top of a stride, arms driving. He is in the middle of a sentence — his mouth is open on a word, his jaw set, his chin up — and he is talking rather than gasping. One hand has come off its swing to press two fingers against a small plastic earpiece hooked over his ear. His eyes are fixed straight ahead at nothing, lower lids pushed up, brows drawn down and in. Sweat is coming off his jaw and his hairline in separate droplets that hang in the air beside his head.
+
+On the machine: a chunky treadmill of 2008 with a moulded grey console, a row of rubber buttons and a small red dot-matrix display carrying figures too small and soft to read. A small black handset with a keyboard is propped face up on the console shelf. A folded towel hangs over the rail.
+
+Behind him: the gym is a long dark room at the end of the night, the ceiling lights down to a few dim fittings. A row of unused treadmills and weight machines recedes into the dark to the left. At the far end of the room, small and a long way off, someone in a maintenance uniform is wiping down a machine with a cloth, a mop bucket on wheels beside them, their back to the lens. Beyond the machines a floor-to-ceiling window is a flat black rectangle with a scatter of distant office lights in it.
+
+Light: the photograph was taken with a flash on top of the camera, fired straight at him. He is the brightest thing in the picture — a flat hard light across the front of his top and one side of his face, and a crisp dark shadow of his arm thrown onto the machine beside him. The wet patches on his top clip to featureless white where the flash hits hardest, while the shadowed side of his face keeps its detail rather than going to solid black. The droplets in the air beside his head are lit and frozen sharp. The flash does not reach far: four metres back the room is only a dim wash from the ceiling fittings, and the far end falls away to almost nothing, so the person working down there is a near-black shape. The shutter stayed open after the flash fired, so the running belt and the deck under his feet are smeared into a blur while he is frozen.
+
+Style: a newspaper photograph of the 2008 financial crisis, shot on a Canon EOS-1D Mark III with a Speedlite — fine digital noise in the shadows, a cool cast from the ceiling fittings, muted colour, and visible pores rather than airbrushed skin.
+
+Constraints: the only light sources are the camera's flash, which is behind the lens, and the ceiling fittings, which are above the top edge of the frame. The window at the far end is a flat black rectangle holding only distant lights, and nothing in the room reflects anything. The person working at the far end is seen only from behind, so his is the only legible face in the picture. He is twenty-five years old, and his build is not the subject of the photograph. His expression stays small — a stranger looking at this photograph would read effort and concentration before they read either triumph or distress. No brand names, logos or readable labels anywhere, including on the machine, the earpiece and the handset. Ensure historical accuracy for 2008, and every person, garment and object is British.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Sources for this entry (2026-09-13):**
+[Vofy — Nano Banana 2 photorealistic image generation](https://www.vofy.art/blog/nano-banana-2-photorealistic-image-generation) `[community]` ·
+[Leonardo.Ai — Nano Banana prompt guide](https://www.leonardo.ai/news/nano-banana-prompt-guide) `[community]` ·
+[Miraflow — gym-ready visuals](https://miraflow.ai/blog/ai-prompts-fitness-brand-content-gym-ready-visuals-2026) `[community]` *(cited for the implied-motion lever; its lighting vocabulary is rejected above)* ·
+[Wearview — how to fix AI skin texture](https://www.wearview.co/blog/fix-ai-skin-texture) `[community]` ·
+[Max Woolf — Nano Banana Pro, with caveats](https://minimaxir.com/2025/12/nano-banana-pro/) `[practitioner]`
+
+### 1m-t — round 1 ✅ **ACCEPTED 2026-09-13** (Jack) · with two recorded flaws
+
+⬜ **Master not banked** — save it as `camera/reference/1m-t-treadmill-ACCEPTED.png`.
+
+**✅ What landed:** the cleaner reads immediately — uniform, cloth, wheeled cart, back to the lens,
+far off and small, so **gate 2 is satisfied by a kind of cost the montage has not used**. The sweat
+frozen in the air beside his head is the best detail in the frame. The belt smeared while he is
+sharp — the drag-shutter clause worked. Mid-word rather than gasping, left third, the row running
+away at an angle, a black window with distant lights, real falloff to the back of the room.
+
+🔴 **Flaw 1 — the treadmill geometry is wrong.** He is running a metre and a half forward of his own
+console, so his machine reads as impossibly long and the next machine's handrail crosses his thighs.
+**Accepted knowingly:** at ~1s in a flash montage the eye reads *treadmill* and goes to his face
+long before it parses the machine. ⚠️ **It stops being harmless in the clip** — see the design note
+below, where it is the reason for one specific clause rather than a reason to re-shoot.
+
+⚠️ **Flaw 2 — the light came back ambient, not flash.** No hard frontal pop, no crisp arm shadow,
+no clipped highlight. Cut beside `1m-2` and `1m-m` this frame is in a slightly different register.
+**Accepted:** the montage already carries two deliberate non-flash frames (`1m-7`, `1m-l`), and a
+5am gym under its own ceiling fittings is a legitimate look. **Recorded so it is a known choice and
+not a drift nobody noticed.**
+
+⬜ **The foreground occluder never happened** — bottom right came back in focus. The blurred belt
+at bottom left does about half the job. Not worth a generation.
+
+### 1m-t — the clip · **video** · written 2026-09-13, unrun
+
+**Routing:** Omni Flash → **Frames** tab, the accepted `1m-t` frame as the **start frame**.
+🔴 **End slot EMPTY** — [never pin an `endImage`, it morphs](../../video-fx/hybrid-method.md).
+🔴 **No Character, no Ingredients** — the staging is the shot and the plate is the only authority on
+the face, the same call as [`1m-l`](#1m-l--the-clip--video--written-2026-09-13-unrun) and
+[`1m-m`](#1m-m--the-clip--video--written-2026-09-12-unrun).
+
+**Duration: 4 seconds.** 🔑 **Deliberately shorter than `1m-l`'s 6s, and for a stated reason.**
+`1m-l` needed runtime because the door travel *was* the event; this shot's event is a **loop**, so
+[the eighth pass applies exactly](../../google-flow/omni-flash.md#eighth-pass--2026-09-11-vendor-community):
+*for a montage beat cut to ~2s, generate 4s — fewer frames means less drift, and nothing is lost.*
+Running legs are the highest-drift content in the montage, so buying fewer frames is buying quality.
+
+#### 🔑 The design: the shot is a man going nowhere, so nothing may translate
+
+The one action is **he keeps running**. Everything else is pinned. And the clip's single most
+important clause is the one that says **he stays in the same place in the frame** — which is not a
+technical note, it is the entire joke. He is running flat out toward a city a metre away and the
+distance never changes.
+
+#### 🔴 Top risk: running legs are the worst case this engine has, and the fix is the shutter
+
+`[community]` **The named human-motion failures are exactly ours:** *"feet slide across the floor
+like there's no friction"*, *"arms swing at the wrong tempo"*, *"fingers merge together between
+frames"*, and floating limbs
+([AtlasCloud](https://www.atlascloud.ai/blog/tips/mastering-kling-3.0-10-advanced-ai-video-prompts-for-realistic-human-motion)).
+Independent artifact work sorts AI-video faults into four buckets, of which **movement/joint
+anomalies** is one ([arXiv 2504.21334](https://arxiv.org/pdf/2504.21334)) `[academic]`.
+
+**Four clauses answer it, and the first is the one that matters:**
+
+| The failure | The clause |
+| --- | --- |
+| 🔑 **Morphing legs / broken plate geometry** | **The [24fps 180° shutter clause](../../google-flow/omni-flash.md#the-shutter-is-the-tell-nobody-prompts-for), and here it is load-bearing rather than decorative.** At that cadence a sprinting leg *is* a smear — and **a blur cannot visibly morph**. It is the same reasoning as [a dropped object being a streak rather than a crisp phone in four positions](../../google-flow/omni-flash.md#the-rule-that-outranks-all-of-it-a-real-camera-never-catches-the-whole-fall), `[confirmed 2026-08-14]`. 🔑 **It also swallows flaw 1**: the plate's wrong machine geometry is least legible when the legs and deck are smeared, which is why the answer here is the shutter and **not** a crop |
+| **Gliding / sliding feet** | `[community]` names the fix: **state the foot contact** — *comes down under him and rolls through from heel to toe*. A named landing is the documented counter to the gliding-walk artifact |
+| **Arms at the wrong tempo** | *his free arm drives in time with his stride* — the tempo is tied to something already in frame rather than left free |
+| **Morphing hands** | 🔑 **His other hand does not move at all.** It stays pressed to the earpiece for the whole shot — which removes a moving hand from a clip that would otherwise have two, and is characterful: he is straining to hear over his own running |
+
+⚠️ **This is the exact inverse of the [`1m-l` call](#1m-l--the-clip--video--written-2026-09-13-unrun),
+where the shutter clause was deliberately subtracted.** That shot was slow — doors and walking — and
+the clause buys nothing on near-static motion. This one is the fastest thing in the film. **Same
+rule, opposite answer; the rule is about the motion, never about the house style.**
+
+#### ⚠️ The sweat droplets are deliberately not mentioned
+
+They are the best detail in the still, and asking for them would be asking for two things that
+fight: **the same shutter clause that saves the legs erases a flying droplet**, and
+[particle nouns have no volume control](../../google-flow/omni-flash.md#-particle-nouns-have-no-volume-control-observed-n2)
+`[observed, n=2]`, so a request risks a shower. **Silence lets frame 0's droplets do whatever they
+do at no cost.** The lever is subtraction.
+
+#### ⚠️ The cleaner works in place — no translation, ever
+
+[On Frames a *walking* extra morphs](../../google-flow/omni-flash.md#-on-frames-a-walking-extra-morphs--stillness-is-the-only-thing-that-holds-them-observed-2026-08-26)
+`[observed]`, because a person crossing ground has to be redrawn in positions the plate never
+showed. **A person working on the spot is much closer to pixels being continued.** So she is given a
+small repeated local action, her position is pinned positively, and she never takes a step. This is
+a softer ask than `1m-l`'s three walkers and should be safer — ⬜ **and if it still morphs, that is
+worth writing up**, because it would bound the finding to *motion* rather than to *translation*.
+
+#### ⚠️ He is visibly talking and there must be no voice
+
+House rule: [never dialogue in a Flow video](../../google-flow/omni-flash.md#-the-speech-trap-is-punctuation-not-vocabulary).
+`[2026-09-09]` **the speech trap is punctuation, not vocabulary** — a colon or a quotation mark
+followed by words is what produces speech, not the verb *talk*. So *"he goes on talking"* is safe as
+plain prose, carries no words, and is paired with the `[confirmed]` `No music and no voices.` line.
+**The narration sits over this frame anyway**, and silence under it is correct.
+
+#### ⬜ Draft at 360p first
+
+[A motion check, never a text or face check](../../google-flow/omni-flash.md#-the-360p-draft-is-a-motion-check-never-a-text-check--and-upscaling-repairs-nothing).
+**Watch three things and nothing else:** his feet make contact rather than gliding, the cleaner stays
+put, and he does not drift forward or back in frame. Ignore the face, the console and the grain.
+
+**Paste into:** Flow → **Frames to Video** prompt box. **Start frame:** the accepted `1m-t` image.
+**End frame:** empty. **No Character, no Ingredients.** **Duration:** 4s. Primary:
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame, as one single continuous shot with no cuts. The camera is locked off and holds completely still throughout, and the light stays exactly as it is.
+
+He keeps running at the same flat-out pace. Each foot comes down under him on the belt and rolls through from heel to toe before it leaves again, and the belt carries it away behind him, so he stays in the same place in the frame the whole time. His free arm drives in time with his stride. His other hand stays pressed to the earpiece for the whole shot. He goes on talking, his eyes fixed straight ahead, and his expression holds as it is.
+
+At the far end of the room the person in the maintenance uniform goes on wiping the same machine, staying exactly where they are with their back to the lens.
+
+The other machines, the towel over the rail, the handset on the console shelf, the window and the ceiling stay exactly where they are.
+
+Shot at 24fps with a 180-degree shutter, so his legs and the running belt smear into blur while his head and shoulders stay sharp.
+
+Audio: the slap and hum of the treadmill belt, his footfalls on the deck, hard steady breathing, and the low hum of an empty building at night. No music and no voices.
+
+Thanks.
+```
+
+⬜ **Fallback, only if the primary comes back diluted or re-staged** — same tab, same start frame:
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame. Camera locked off, one continuous shot, no cuts, and the light stays as it is.
+
+He keeps running at the same flat-out pace, each foot rolling heel to toe under him, staying in the same place in the frame. One hand stays pressed to the earpiece and he goes on talking. The person at the far end goes on wiping the same machine where they stand.
+
+Shot at 24fps with a 180-degree shutter, so his legs and the belt smear while his head stays sharp.
+
+Audio: the belt, his footfalls, steady breathing, the hum of an empty building. No music and no voices.
+
+Thanks.
+```
+
+**Post, in Premiere:**
+
+1. ⚠️ **Watch the feet on playback, not the face.** Gliding — a foot that slides rather than plants —
+   is the failure this clip is designed against, and it is **a re-roll, not a grade.**
+2. ⬜ **Any camera move is here, not in Flow** ([`hybrid-method.md`](../../video-fx/hybrid-method.md)).
+   ⚠️ **This shot wants none.** A push-in on a man going nowhere adds travel to the one frame whose
+   argument is that there is none.
+3. **Match the grain rather than stacking it.**
+4. ⚠️ **Nothing ships unmeasured** — `scripts/delivery-qc.sh` ([`delivery.md`](../../video-fx/delivery.md)).
+
+**Sources for this entry (2026-09-13):**
+[AtlasCloud — realistic human motion prompts](https://www.atlascloud.ai/blog/tips/mastering-kling-3.0-10-advanced-ai-video-prompts-for-realistic-human-motion) `[community]` ·
+[AtlasCloud — Omni Flash 1.1 image-to-video workflows](https://www.atlascloud.ai/blog/tips/gemini-omni-flash-1.1-image-to-video) `[community]` ·
+[arXiv 2504.21334 — visual artifact detection in generated video](https://arxiv.org/pdf/2504.21334) `[academic]` ·
+[Flow models & supported features](https://support.google.com/flow/answer/16352836) `[vendor]`
+
+### 1m-p — the count · **still** · written 2026-09-13, unrun
+
+**Jack's ask, 2026-09-13:** *"tarquin watching a money counting machine count pounds from 2008…
+think of the song Push It to the Limit, that's the vibe."*
+
+#### 🔴 Read this before the prompt: the reference is the exact thing principle 24 warns about
+
+*Push It to the Limit* **is** the good-times montage — Tony Montana's rise, ever larger bags of
+money, shot to be thrilling. [Principle 24](../../cinematography/principles.md) says satire that
+borrows power's grammar gets read as celebration by part of any audience, and
+[principle 23](../../cinematography/principles.md) gives the only reliable counter: **a visible
+cost.** Doing it knowingly is not a defence — Harron is on record being mystified that traders
+adopted Bateman.
+
+⚠️ **One thing genuinely argues for it, and it is structural rather than a let-off:** the Scarface
+montage exists *to set up the fall*. Camping is the fall — the whole film is this man in a field
+with a burning newspaper. **A rise montage in a film that is entirely a fall is doing the same
+structural job the reference did.** That is the case for making it; it is not a case for making it
+without a cost.
+
+#### 🔑 The staging is what inverts the reference: he never touches the money
+
+Scarface's montage has hands in cash. **Ours has a machine doing it and a man watching.** One hand
+rests on top of the counter — **on the machine, never on the notes** — and that single gesture is
+the film's thesis without a line of narration: the capital works, the man supervises.
+
+**It also happens to be exactly what Jack asked for** (*"watching a money counting machine"*), so
+the strongest version of this shot and the brief are the same shot.
+
+#### 🔴 Gate 2: this frame's cost is an OBJECT, and it is the montage's subtlest
+
+Costs used so far are all rooms and people — wreckage underfoot, red columns, a stripped desk, an
+eviction, empty desks, a bowed man, three leavers, the cleaner. **A ninth person would clone the
+cost rather than build it**, which the montage's [standing rule](./shot-list.md) forbids. So this
+one is carried by two things in the machine:
+
+1. **The notes are used.** Soft, creased, furred at the edges, banded in a bank's paper wrappers —
+   money that came out of hundreds of pockets, not crisp sheets off a press. *Where it came from is
+   in its texture.*
+2. 🔑 **One note has torn, and is caught at the machine's throat with a shred of it left behind.**
+   The machine damages what passes through it. It is small, it is an object, and it is the film's
+   argument in one detail.
+
+🔴 **Flagged honestly: this is weaker than `1m-l`'s three leavers or `1m-m`'s bowed man**, and gate
+2 is mandatory rather than advisory. ⬜ **If Jack wants it harder, the strongest available upgrade
+is a second frame, not a busier one** — cut from this to `1m-7` (the house, the locksmith, the bin
+bags) and the count is retrospectively paid for. **That is an edit decision and it is free.**
+
+#### ⚠️ The "Push It to the Limit" feeling is made in Premiere, not in this prompt
+
+Worth saying plainly so nobody tries to buy it with adjectives. The reference's energy is **cutting
+rate and music**, not a look: quick shots on the beat, rising scale. Our montage is already built
+that way — [flash frames at about one a second](./shot-list.md), and
+[the camera moves in Premiere, never in Flow](../../video-fx/hybrid-method.md).
+
+**So the frame's job is to be one hard, kinetic, frozen instant**, and the vibe is bought in the
+edit with a snap zoom onto the counter and a cut on the beat. 🔴 **Asking the prompt for "80s
+montage energy" would buy the [aesthetic mode](../../google-flow/nano-banana-2.md#️-the-quality-word-kill-list-now-includes-cinematic)
+and a glossy poster** — which is precisely what `1m-l` round 1 came back as.
+
+**The kinetic element inside the frame is the riffling notes**, smeared by the drag-shutter clause
+that worked on [`1m-m`'s champagne](#1m-m--champagne-in-a-coffee-mug--still--written-2026-09-12-unrun)
+and `1m-t`'s belt. Flash freezes him and the machine; the notes are an arc of blur.
+
+#### 🔴 Banknotes are a policy risk, and the shot's own physics solves it
+
+A British banknote carries a **real central bank's name**, legible denominations and **a real
+person's portrait** — [triggers 1, 2 and 4 at once](../../flow/failure-modes.md#a5-the-five-triggers-badcodes-own).
+External reporting agrees the industry side-steps it: *"AI generators don't replicate specific
+real-world currencies or exact denominations to comply with legal and ethical guidelines"*
+`[community]`.
+
+🔑 **The fix is geometry, not a ban** — and it is free, because it is what the shot looks like
+anyway:
+
+- **The stacked notes are seen edge-on**, so only the paper edges show. No face, no printing.
+- **Every note inside the machine is moving**, so its face is an arc of colour.
+- Both stated **positively**, because [§27 says a subtractive shape comes back inverted](../../google-flow/nano-banana-2.md#27--ask-for-an-object-never-an-absence--a-subtractive-shape-comes-back-inverted-observed-2026-08-30)
+  and *"no portrait on the notes"* would draw one.
+
+⚠️ **The colour is named and the institution is not** — *purple, mauve and brown*, which is what
+2008 sterling looks like without a word the classifier can match.
+
+#### ⚠️ One more risk: the model may "correct" the absurdity
+
+`[practitioner]` Nano Banana **normalises unusual input toward conventional interpretations** — the
+documented case is multiple references to *Ugly Sonic* returning normal Sonic
+([Max Woolf](https://minimaxir.com/2025/12/nano-banana-pro/)). **A cash counter on a trading desk is
+exactly the kind of thing it may quietly fix into a bank teller's window.** The counter is
+[§546's lever](../../google-flow/nano-banana-2.md#-making-a-subject-small-put-something-else-in-the-subject-slot-community-2026-09-09),
+already proven on `1m-l`: **the trading desk goes in the `Subject:` slot** and the machine is a
+feature sitting on it, with the monitors, the arms and the printouts named around it.
+
+**Model:** **Nano Banana 2**. **Paste into:** Flow → the image prompt box. **Aspect:** 16:9.
+**Resolution:** 2K. **Character:** `@2008 - tarquin`. **No reference image.**
+
+**Check these five on the result, worst first:** it is a trading desk and not a bank counter ·
+his hand is on the machine and not on the money · the stacked notes show edges rather than faces ·
+the torn note is present at the machine's throat · nothing in frame carries a readable word or number.
+
+```prompt
+SCENE:
+
+This is one frame of a fast-cut montage about a young City of London trader in September 2008, the week the banks began to fail. It is late at night. In this frame he is standing over a note-counting machine on his own desk, watching it work.
+
+Camera: a 35mm lens at desk height, level, about a metre and a half from the machine and well over to the left, so the run of desks goes away to the right at an angle and nothing in the room is square to the lens. The frame is noticeably tilted. Nearest the lens, the back corner of a monitor on the next desk crosses the bottom right, dark and thrown completely out of focus so that it is a soft blur.
+
+Subject: a trading desk at the end of the night — four slim flat panels of 2008 on articulated steel arms with thick dark plastic bezels, a keyboard shoved aside, printouts heaped and sliding, a tangle of cables over the back edge, a mug with a brown ring dried inside it. Sitting square in the middle of all of it, where a keyboard should be, is a small beige plastic note-counting machine of 2008 with a rubber feed wheel, a hinged hopper and a narrow red dot-matrix display carrying figures too small and soft to read.
+
+Action: the machine is running. A thick wedge of banknotes is stacked in its hopper and the notes are being pulled through the throat so fast that they are an arc of purple, mauve and brown blur, fanned between the feed wheel and the stacker. A note has torn on its way through and is caught at the throat, half of it still hanging there, with a small shred of paper on the desk beside the machine. The counted notes are landing in a block in the stacker, seen edge-on so that only the soft furred edges of the paper show.
+
+Him: the man from the character reference stands over the desk, leaning in, seen from the waist up behind the machine. He is twenty-five: keep the face lean and unlined, the hairline full and low, with no creases from nose to mouth, no hollowing under the cheekbones and no recession at the temples. His shirtsleeves are turned back and his tie is pulled loose. One hand rests flat on the top of the machine's casing and the other is in his trouser pocket, and neither hand is anywhere near the notes. His eyes are on the machine's little display rather than on the money — lower lids pushed up, brows level, one corner of his mouth pulled back and held there. The expression is small.
+
+Around the money: the used notes are soft, creased and furred along their edges, several of the bundles still in a bank's plain paper bands, one band snapped and lying on the desk. A few loose coins have been pushed to one side.
+
+Environment: the floor beyond the desk has gone dark for the night — the ceiling tubes down to a few dim fittings, the far end falling away to nothing, the other desks black shapes with the cold glow of standby screens on them.
+
+Light: the photograph was taken with a flash on top of the camera, fired straight across the desk. The machine and his face are the brightest things in the picture, and the machine throws a crisp dark shadow back across the printouts. The white of his shirt clips to featureless white where the flash hits hardest, while the shadowed side of his face and the desk below him keep their detail rather than going to solid black. The flash does not reach far: four metres back the room is only a dim green wash and the cold glow of the screens. The shutter stayed open after the flash fired, so the notes moving through the machine are smeared into a continuous arc while the stacked notes, the machine and the man are frozen sharp.
+
+Style: a newspaper photograph of the 2008 financial crisis, shot on a Canon EOS-1D Mark III with a Speedlite — fine digital noise in the shadows, a cool blue-green cast from the tubes, muted colour, and visible pores rather than airbrushed skin.
+
+Constraints: the only light sources are the camera's flash, which is behind the lens, and the ceiling tubes, which are above the top edge of the frame. This is a trading floor and the machine is sitting on a trader's own desk, with monitors on arms all around it. Every note in the machine is in motion, so its face is an arc of colour, and the notes in the stacks are seen edge-on so that only the paper edges show. His hand rests on the machine's casing and the money is untouched. His is the only face in the picture. He is twenty-five years old. His expression stays small — a stranger looking at this photograph would read concentration before they read pleasure. No brand names, logos or readable labels anywhere, and nothing in the picture carries a word or a number that can be made out. Ensure historical accuracy for 2008, and every person, garment and object is British.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Sources for this entry (2026-09-13):**
+[Scarface (Push It to the Limit) — the montage's structural job](https://en.wikipedia.org/wiki/Scarface_(Push_It_to_the_Limit)) `[community]` ·
+[a1.art — the currency-generation compliance position](https://a1.art/prompts/fake-banknotes) `[community]` ·
+[Max Woolf — Nano Banana Pro normalises unusual input](https://minimaxir.com/2025/12/nano-banana-pro/) `[practitioner]` ·
+[Wearview — visible pores, not airbrushed](https://www.wearview.co/blog/fix-ai-skin-texture) `[community]`
+
+### 1m-p — round 1 ✅ **ACCEPTED 2026-09-13** (Jack)
+
+⬜ **Master not banked** — save it as `camera/reference/1m-p-note-counter-ACCEPTED.png`.
+
+**✅ What landed:** the dead floor with its green tube wash and monitors on arms, the counter sitting
+where a keyboard should be, **his hand flat on the casing and the other in his pocket with the money
+untouched**, his eyes on the machine rather than the cash, the used banded bundles, the loose coins,
+the mug with its brown ring, and dark out-of-focus monitor backs occluding both bottom corners.
+The [`Subject:`-slot lever held](#-making-a-subject-small-put-something-else-in-the-subject-slot-community-2026-09-09) —
+it is unmistakably a trading desk and not a bank counter.
+
+🔑 **What did NOT land is, for the third time, the gift. The machine came back stopped** — the notes
+in the throat are static and sharp rather than an arc of blur, so it reads as a counter at rest.
+**See the n=3 note below; it hands the clip its one action, exactly as `1m-l`'s open doors did.**
+
+⚠️ **Two deviations accepted:** the light is the room's own tubes rather than a hard flash (second
+frame running — same call as [`1m-t`](#1m-t--round-1--accepted-2026-09-13-jack--with-two-recorded-flaws)),
+and the frame came back level rather than tilted. Neither is worth a generation.
+
+🔴 **The notes came back legible** — a banded bundle plainly reads its denomination. **It generated,
+so there was no policy problem on the still**, and the edge-on clause only partly took. ⚠️ **It is a
+live problem for the clip**, because [text re-solves per frame and flickers](#-the-360p-draft-is-a-motion-check-never-a-text-check--and-upscaling-repairs-nothing).
+Handled below by leaving the static bundles pinned and never asking the display to change.
+
+### 🔴 §38 at n=3 — a mechanical in-progress state is near-unbeatable, and it is worth planning around
+
+`[observed 2026-09-12, 2026-09-13 ×2]` Three shots have now asked Nano Banana for a machine
+**mid-action** and got the machine **at rest**:
+
+| Shot | Asked for | Came back |
+| --- | --- | --- |
+| `1m-l` rounds 1–5 | lift doors almost shut — via a stage direction, then a physical analogy, then a proportion, then the shape of the light | **fully open**, every time |
+| `1m-p` round 1 | notes riffling through the throat as an arc of blur | **stopped**, notes static and sharp |
+
+⚠️ **One counter-example, and it is instructive:** `1m-t`'s treadmill belt **did** come back smeared.
+The difference worth noting is that a belt is **one continuous surface** while doors and banknotes
+are **discrete objects with a start and an end state** — 🔴 **inferred from n=3, not tested.**
+
+🔑 **The planning consequence, which is the useful half:** stop spending rounds on it and **design
+the stillness in**. A plate of a machine at rest is not a failed frame — it is frame 0 of the clip
+where the machine starts. **The still shows the state; the clip shows the change.** That has now
+produced a better shot twice.
+
+### 1m-p — the clip · **video** · written 2026-09-13, unrun
+
+**Routing:** Omni Flash → **Frames** tab, the accepted `1m-p` frame as the **start frame**.
+🔴 **End slot EMPTY.** 🔴 **No Character, no Ingredients** — same call as `1m-l`, `1m-m` and `1m-t`.
+**Duration: 4 seconds** — the event is a **loop**, not a travel, so
+[the eighth-pass rule applies](#eighth-pass--2026-09-11-vendor-community): fewer frames, less drift,
+nothing lost. *(`1m-l` got 6s only because the door travel was itself the event.)*
+
+🔑 **This is the lowest-risk clip in the montage, and it is worth saying why: there is nobody else in
+it.** No walking extras, no cleaner, no crowd — the whole
+[Frames-morphs-a-moving-person problem](#-on-frames-a-walking-extra-morphs--stillness-is-the-only-thing-that-holds-them-observed-2026-08-26)
+is simply absent. **And both of his hands are already pinned by the plate** — one flat on the casing,
+one in his pocket — so the [named hand-morph risk](#eighth-pass--2026-09-11-vendor-community) has
+nowhere to fire. The only thing asked to move is a machine.
+
+#### 🔑 The design: the machine runs and the stacks do not change
+
+The one action leads its own sentence — **the notes riffle through the throat**. Everything else
+holds.
+
+🔴 **The hard half is deliberately outside the clip**, which is
+[`1m-m`'s champagne fix](#1m-m--the-clip--video--written-2026-09-12-unrun) reused. Paper being
+consumed from one stack and rebuilt into another is a **volume-conservation and object-interaction**
+problem, and that is the family video models are
+[documented to fail](https://arxiv.org/abs/2607.25321) `[academic]`. **So we never ask for it.**
+
+| The failure | The clause |
+| --- | --- |
+| 🔑 **The stacks visibly shrink or grow, wrongly** | **Never requested.** The hopper stack and the banded bundles on the desk are **pinned as unchanged**. Only the notes *at the throat* move. Volume conservation is out of scope by construction |
+| **Notes render as discrete flapping objects** | The throat is named as **an arc of blur of the same width in the same place** — the positive form, because [a negation would name breakage in](#-negatives-do-not-work-and-they-actively-backfire) |
+| **Fast paper rendered sharp** | The [24fps / 180° shutter clause](#the-shutter-is-the-tell-nobody-prompts-for). ⚠️ **In, as on `1m-t` and deliberately out on `1m-l`** — the rule is about the speed of the motion, never the house style |
+| 🔴 **The £20s flicker and re-solve** | `[community]` *AI video text changes between frames because each frame is reconstructed separately* ([aivid](https://aivid.video/blog/why-ai-video-text-changes-between-frames-and-how-to-fix-it)). The moving notes become **illegible by blur**, and the static bundles are **pinned**, so nothing legible is ever asked to change |
+
+#### 🔴 The count is NOT asked to climb, and that is a real subtraction
+
+The rising number is the *Push It to the Limit* beat and the temptation is obvious. **It is also a
+request for changing on-screen text, which is the single best-documented failure in this whole
+file.** The display is instead pinned to a steady red glow with figures too small to read.
+
+⬜ **If a climbing number is genuinely wanted, it is an ffmpeg job over the finished clip** —
+[the only lane that can write on-screen text](../../video-fx/hybrid-method.md), since Premiere's API
+cannot set a string at all. At this size in a one-second cut it almost certainly is not worth it.
+
+#### ✅ Two small things that sell "running" for free
+
+- 🔑 **The machine judders very slightly against the desk.** A real note counter does, it is the
+  cheapest possible proof the motor is under load, and it is one bounded local motion.
+  ⚠️ **The coins and the bundles are explicitly pinned so the judder does not spread** —
+  [particle nouns have no volume control](#-particle-nouns-have-no-volume-control-observed-n2).
+- **Biological motion**: he breathes and blinks once.
+  [On a held shot of a person doing nothing, that is the performance](#-biological-motion--the-anti-slop-clause-for-any-shot-of-a-person-doing-nothing),
+  and the model adds neither unasked.
+
+#### 🔑 The audio is the best thing in this shot
+
+A note counter's fast paper flutter is a genuinely great sound and it is doing the montage's work —
+**money as a machine noise.** Under it, the dead floor. No music, no voices.
+
+⬜ **Free button in the edit:** cut the clip's audio dead on the out-point. The flutter stopping is a
+harder full stop than any visual, and it costs nothing — **do it in Premiere, not by asking the
+machine to stop**, which would be a second action in a one-action clip.
+
+#### ⬜ Draft at 360p first
+
+[A motion check only](#-the-360p-draft-is-a-motion-check-never-a-text-check--and-upscaling-repairs-nothing).
+**Watch three things:** the throat blurs rather than flapping, the stacks stay the size they are, and
+his hand stays flat on the casing. **Ignore every note, number and label in the draft** — at 360p
+they are meaningless, and nothing about them should be inferred from it.
+
+**Paste into:** Flow → **Frames to Video** prompt box. **Start frame:** the accepted `1m-p` image.
+**End frame:** empty. **No Character, no Ingredients.** **Duration:** 4s. Primary:
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame, as one single continuous shot with no cuts. The camera is locked off and holds completely still throughout, and the light stays exactly as it is.
+
+The machine runs. The notes are pulled through its throat fast enough that they are one continuous arc of blurred colour, the same width and in the same place the whole time, and the machine judders very slightly against the desk as it works.
+
+The wedge of notes in the hopper and the banded bundles, the loose coins, the mug, the printouts and the keyboard all stay exactly where they are and stay the size they are.
+
+He stays leaning over the desk with one hand flat on top of the machine and the other in his pocket, both hands still. He keeps his eyes on the machine's little display, breathes, and blinks once, and his expression holds as it is.
+
+The screens around him hold a steady cold glow and the machine's small red display holds a steady glow, with figures on both far too small and soft to read. The dark far end of the floor stays dark and empty.
+
+Shot at 24fps with a 180-degree shutter, so the notes moving through the machine smear while everything still is sharp.
+
+Audio: the fast paper flutter of the counting machine, its motor under load, and the low hum of an empty floor at night. No music and no voices.
+
+Thanks.
+```
+
+⬜ **Fallback, only if the primary comes back diluted or re-staged** — same tab, same start frame:
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame. Camera locked off, one continuous shot, no cuts, and the light stays as it is.
+
+The machine runs: the notes at its throat become one continuous arc of blurred colour and it judders very slightly against the desk. The stacks, the coins and everything else on the desk stay exactly as they are. He stays leaning over it, both hands still, breathes and blinks once.
+
+Shot at 24fps with a 180-degree shutter, so the moving notes smear while everything still is sharp.
+
+Audio: the fast paper flutter of the machine, its motor, and the hum of an empty floor. No music and no voices.
+
+Thanks.
+```
+
+**Post, in Premiere:**
+
+1. 🔑 **This is the snap-zoom frame.** The *Push It to the Limit* energy is bought here, not in Flow —
+   push in hard on the counter and cut on the beat ([`hybrid-method.md`](../../video-fx/hybrid-method.md)).
+2. ⬜ **Cut the audio dead on the out-point** — the free button described above.
+3. ⬜ **Play it into `1m-8`**, which carries the same narration line and closes it on the empty floor.
+4. ⚠️ **Watch the throat and the stacks on playback, not his face.** Flapping discrete notes, or a
+   stack that changes size, is the paper-physics risk firing — **a re-roll, not a grade.**
+5. ⚠️ **Nothing ships unmeasured** — `scripts/delivery-qc.sh` ([`delivery.md`](../../video-fx/delivery.md)).
+
+**Sources for this entry (2026-09-13):**
+[aivid — why AI video text changes between frames](https://aivid.video/blog/why-ai-video-text-changes-between-frames-and-how-to-fix-it) `[community]` ·
+[Runway — image-to-video prompting guide](https://help.runwayml.com/hc/en-us/articles/48324313115155-Image-to-Video-Prompting-Guide) `[community]` ·
+[Luma — prompts that don't look AI-generated](https://lumalabs.ai/news/prompt-realistic-ai-videos) `[community]` ·
+[arXiv 2607.25321 — physics-grounded generation](https://arxiv.org/abs/2607.25321) `[academic]` ·
+[Flow models & supported features](https://support.google.com/flow/answer/16352836) `[vendor]`
+
+### 1m-v — the viewing · **still** · written 2026-09-13, unrun
+
+**Chosen by Jack 2026-09-13** alongside `1m-z` (the cup) and `1m-g` (the shoot).
+
+#### 🔑 It goes under `1m-7`'s line, and that is the whole idea
+
+*"Some twat is going to lose a house over this trade, and I am never going to meet them."*
+[`1m-7`](#1m-7--the-house--still--accepted-2026-09-11) already sits there — the locksmith, the bin
+bags, the child's bike. **Put the viewing under the same sentence and cut between them: one house he
+is buying, one house someone is losing, inside a single line of narration.** Nothing has to be said.
+It is free, and it is the strongest cut available in the montage.
+
+#### 🔑 The light register is deliberately NOT the montage's flash
+
+Both house frames are **flat, ordinary daylight with no flash**, and that is a design decision rather
+than a drift: **the flash frames are his world; the two daylight frames are the real one.** A frame
+that is not performing reads as simply true, which is what
+[gate 2 needs a cost frame to do](../../../.claude/skills/shot-craft/SKILL.md). Matching `1m-7`'s
+register is also what makes the cut between them read as *the same afternoon*.
+
+#### 🔑 The cost is geometric: he is standing above the houses people actually live in
+
+The window looks over **ordinary London terraced rooftops** — hundreds of real homes — and **he has
+his back to them.** He never looks out. That is the entire argument in one piece of blocking, and it
+needs no second person in frame.
+
+Underneath it, the second cost: **the flat has never been lived in.** Protective film still on the
+window frames, plastic on the worktop, a bare flex where a light should be, a pallet of packaging in
+the corner. **A home as a product.** New kind — every other cost in the montage is a person or a
+room that has been emptied; this one has never been filled.
+
+#### ⚠️ The occluder is the doorframe, not the agent
+
+[Round 1 of `1m-l` put a person in the near foreground and came back with a giant blurred head and a
+halo](#1m-l--round-1-not-accepted-jack-2026-09-12-it-looks-like-ai-slop) — the
+[fake-DoF tell](../../google-flow/nano-banana-2.md#️-fake-depth-of-field-has-its-own-tells-practitioner-community).
+**So the near occluder is the door edge and architrave**, which also states where the camera is
+standing. The agent stays in the midground with her back to us, giving the vantage without the halo.
+
+⚠️ **She is described by role, clothing and task only — no age, no build** — which is
+[the phrasing that got `1m-l` through after two refusals](#1m-l--round-4-policy-block-jack-2026-09-13---and-it-disproves-the-round-2-diagnosis).
+
+**Model:** **Nano Banana 2**. **Paste into:** Flow → the image prompt box. **Aspect:** 16:9.
+**Resolution:** 2K. **Character:** `@2008 - tarquin`. **No reference image.**
+
+**Check these five on the result, worst first:** the rooftops beyond the glass are ordinary houses
+rather than towers · he has his back to the window · the flat is unfinished and unfurnished · the
+near foreground is the doorframe and not a person · nothing carries a readable word.
+
+```prompt
+SCENE:
+
+This is one frame of a fast-cut montage about a young City of London trader in September 2008, the week the banks began to fail. In this frame he is being shown around an empty new flat he is buying, and he is on the phone throughout.
+
+Camera: a 28mm lens at standing height, level, taken from the doorway of the room and off to the left, so the walls run away at an angle and nothing is square to the lens. He is small, right of centre and low in the picture, with a lot of ceiling and window above him. Nearest the lens, the edge of the open door and its architrave cross the left side of the frame from top to bottom, dark and thrown completely out of focus.
+
+Subject: the empty living room of a brand-new flat that nobody has moved into. Bare engineered-wood floor, white walls with no pictures and no marks, recessed spotlights in the ceiling, a bare flex hanging where a light fitting should be. Protective blue film is still stuck to the window frames and along the edge of the kitchen worktop at the back, a strip of it peeling. A shrink-wrapped pallet of packaging stands in the far corner, and a roll of carpet protector runs across part of the floor. There is no furniture of any kind.
+
+Behind him: a floor-to-ceiling window and a narrow balcony fill the back wall, and beyond the glass, below him, the roofs of ordinary London terraced streets run away to a flat grey horizon — slate and tile, chimney stacks, aerials, back gardens, hundreds of houses people live in.
+
+Him: the man from the character reference stands a couple of paces into the room with his back to the window, seen from the knees up. He is twenty-five: keep the face lean and unlined, the hairline full and low, with no creases from nose to mouth, no hollowing under the cheekbones and no recession at the temples. He has kept his dark overcoat on over a suit, done up, and one hand is in its pocket. The other holds a small black handset with a keyboard to his ear. He is mid-call and half turned away from the room, his weight on one leg, his chin level, his eyes on the bare floor a few feet in front of him. His lids are relaxed and his lips are closed. Nothing in his face is interested in the flat.
+
+Also in the room: nearer the camera and to the left, an estate agent stands waiting with her back to the lens, in a plain dark work suit, a folder held against her side and a set of keys hanging from one finger. She is facing him and has stopped talking.
+
+Light: flat grey daylight through the window, and nothing else. It comes from behind him, so the room is lit evenly and softly, the window is the brightest thing in the picture, and his face is in its own shadow with only the light bouncing back off the bare white walls to fill it. The ceiling spotlights are switched off. There are no lamps, no sun and no warmth anywhere, and the bare floor takes a dull sheen from the window.
+
+Style: a newspaper photograph of the 2008 financial crisis, taken on a Canon EOS-1D Mark III by available daylight with no flash — fine digital noise, muted cool colour, and no retouching or skin smoothing.
+
+Constraints: daylight through the window is the only light source in the picture. The view beyond the glass is low ordinary housing — pitched roofs, chimneys and back gardens — and there are no tall towers and no glass buildings in it. The room is completely bare and unfinished. The estate agent is seen only from behind, so his is the only legible face in the picture. He is twenty-five years old. His expression stays small — a stranger looking at this photograph would read boredom before they read anything else. No brand names, logos or readable labels anywhere, including on the folder, the packaging and the handset. Ensure historical accuracy for 2008, and every person, garment and object is British.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### 1m-v — round 1 ✅ **handed over as the plate, 2026-09-13** (Jack)
+
+Jack asked for its clip, so it is treated as accepted. All five checks pass: ordinary terraced roofs
+and no towers, him in front of the window and not looking out, blue film still on the frames and the
+worktop, the doorframe as the near occluder, and no readable words. ⬜ **Whether he reads twenty-five
+is Jack's call, not this file's.** ⬜ **Master not banked**: save it as
+`camera/reference/1m-v-the-viewing-ACCEPTED.png`.
+
+🔑 **The plate brought one gift: the keys are hanging from her finger in plain view.** That is the
+clip's action. See below.
+
+### 1m-v — the clip · **video** · written 2026-09-13, unrun
+
+**Routing:** Omni Flash → **Frames** tab, with the accepted `1m-v` frame as the **start frame**.
+🔴 **Leave the end slot EMPTY** ([never pin an `endImage`](../../video-fx/hybrid-method.md)).
+🔴 **No Character and no Ingredients**, the same call as `1m-l`, `1m-m`, `1m-t` and `1m-p`: the staging
+is the shot, and the plate is the only authority on the face. **Duration: 4s.** Nothing travels, so
+fewer frames means less drift.
+
+#### 🔑 The design: the keys to a home, swinging on a finger nobody is looking at
+
+**The job:** the still says *he doesn't care*. The clip adds *she is waiting*, and it does that with
+the one object that ties the frame to `1m-7`. **The keys sway gently on her finger.**
+
+- 🔑 **It rhymes with `1m-7`.** Those two frames share one line of narration. There, a locksmith
+  changes a lock so a family's keys stop working. Here, a set of keys to a home hangs in the air
+  while the man buying it is on the phone. **The same object, taken away and ignored, in one
+  sentence.** It needs no words. 🔴 *Inferred, not tested in an edit.*
+- **It is a state that continues, not one being reached.** The keys are already hanging in frame 0.
+  A small pendulum has no destination, which is the
+  [house rule](../../google-flow/omni-flash.md#-ask-it-to-continue-a-state-never-to-reach-one-observed).
+- **It is the smallest thing in the frame that can move and still read**, and
+  [less motion is safer motion](../../google-flow/omni-flash.md#slop-counters-specific-to-motion-community).
+
+**His half is listening, not talking.** He breathes, blinks once and gives one small nod to the
+caller. 🔴 **His lips stay closed**, because
+[there is never dialogue in a Flow clip](#conventions) and a mouth moving with no sound is worse than
+either. The nod is the only thing he does, and it is aimed at the phone, not at the room.
+
+#### 🔴 Risks, and what each clause is there for
+
+| The risk | The clause |
+| --- | --- |
+| **A person who moves gets redrawn on Frames** ([5a](../../google-flow/omni-flash.md#-on-frames-a-walking-extra-morphs--stillness-is-the-only-thing-that-holds-them-observed-2026-08-26)) | Nobody walks. She stays where she is, with **her hand still and only the keys moving**. He stays where he is. Both are mostly dark shapes against the window, which leaves the model little detail to get wrong |
+| **Hand morph where the keys hang** | Her hand and the folder are pinned. The movement is the keys *below* the finger, not the finger itself |
+| **The view through the glass comes back changed or duplicated** ([anything seen through glass fails](../../google-flow/omni-flash.md#slop-counters-specific-to-motion-community)) | Nothing out there is asked to move: no birds, no smoke, no traffic. It is stated positively as holding exactly as it is. The audio line keeps traffic muffled and non-specific, so there is no noun for the model to put a car to |
+| **The hanging flex swings in sympathy** ([a hanging thing given any motion finds a state](../../google-flow/omni-flash.md#-a-hinged-thing-given-wind-will-settle-shut-and-stay-shut-observed-2026-08-26)) | Named once, in the list of things that stay still. There is no draught in the prompt to set it off |
+| **Daylight pulses or "grades" itself** | [The light is stated by its behaviour, not its source](../../google-flow/omni-flash.md#-animating-a-flash-photograph-never-write-the-word-flash-house-rule-2026-09-12): *the light stays exactly as it is* |
+| **Over-animation is the AI tell** | One motion each, both small. 🔑 The phrasing is *"breathes, blinks once"*, from the [biological-motion clause](#-biological-motion--the-anti-slop-clause-for-any-shot-of-a-person-doing-nothing), because a held shot of a person doing nothing is exactly where the frozen-mannequin look shows up |
+
+⚠️ **The shutter clause is deliberately left out**, as on `1m-l`. Nothing here moves fast, so it would
+be a word that buys nothing.
+⚠️ **Every instruction is positive.** The only negation kept is `No music and no voices.`, which is
+vendor idiom and `[confirmed]`.
+
+#### ⬜ Draft at 360p first
+
+This is [a motion check only](#-the-360p-draft-is-a-motion-check-never-a-text-check--and-upscaling-repairs-nothing).
+**Watch three things:** the keys sway and her hand stays still, his lips stay closed, and the roofs
+beyond the glass do not change. Ignore the faces and the grain at 360p. If all three hold, promote to
+720p.
+
+**Paste into:** Flow → **Frames to Video** prompt box. **Start frame:** the accepted `1m-v` image.
+**End frame:** empty. **No Character, no Ingredients.** **Duration:** 4s. Primary:
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame, as one single continuous shot with no cuts. The camera is locked off and holds completely still throughout, and the light in the picture stays exactly as it is.
+
+The bunch of keys hanging from the estate agent's finger sways gently back and forth, a small slow swing that carries on for the whole shot. Her hand and the folder stay still, and she stays facing him with her back to the lens.
+
+He stays standing where he is with the phone to his ear, listening. He breathes, blinks once and gives one small nod to the caller, his lips closed, and his expression holds as it is.
+
+The rooftops beyond the glass, the hanging flex, the rolled carpet, the worktop and the doorframe all stay exactly where they are.
+
+Audio: the quiet of an empty unfurnished room, the faint chink of the keys, and the muffled hum of the city through closed double glazing. No music and no voices.
+
+Thanks.
+```
+
+⬜ **Fallback, only if the primary comes back diluted or re-staged**: same tab, same start frame.
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame. Camera locked off, one continuous shot, no cuts, and the light stays as it is.
+
+The keys hanging from the estate agent's finger sway gently, and her hand stays still. He stays where he is with the phone to his ear, breathes, blinks once and gives one small nod, lips closed. Everything else in the room and beyond the glass stays exactly as it is.
+
+Audio: an empty room, the faint chink of keys, the muffled city through glass. No music and no voices.
+
+Thanks.
+```
+
+**Post, in Premiere:**
+
+1. 🔑 **Cut it against `1m-7` under the same line.** The house being bought, then the house being
+   lost. If a move is wanted, it is a slow push toward the keys, done here and
+   [not in Flow](../../video-fx/hybrid-method.md).
+2. **Hold the flat daylight grade apart from the flash frames.** The two daylight frames are the real
+   world, and matching `1m-7`'s grade is what makes them read as the same afternoon.
+3. **Match the grain rather than stacking it.**
+4. ⚠️ **Watch her hand and the keys on playback, not his face.** A finger that bends, or keys that
+   multiply or melt into the folder, is a re-roll, not a grade.
+5. ⚠️ **Nothing ships unmeasured**: run `scripts/delivery-qc.sh` ([`delivery.md`](../../video-fx/delivery.md)).
+
+**Sources for this entry (2026-09-13):**
+[Promptessor — image-to-video prompts in 2026](https://promptessor.com/blog/image-to-video-prompts-how-to-animate-photos-products-characters-and-art-in-2026) `[community]` ·
+[Pasquale Pillitteri — Gemini Omni Flash prompting guide, Google's five tips](https://pasqualepillitteri.it/en/news/3513/mastering-gemini-omni-flash-video-prompting-guide) `[community]` ·
+[Promptslove — Google Omni prompting guide](https://promptslove.com/blog/google-omni-prompting-guide/) `[community]` ·
+[Flow models & supported features](https://support.google.com/flow/answer/16352836) `[vendor]`
+
+### 1m-z — the cup · **spec only** · 2026-09-13 · *prompt to follow*
+
+**The frame:** an office corridor or a lift lobby. He is walking and talking, arm out, and he opens
+his fingers over a bin **and misses it by a foot** without breaking stride or looking. The cup is in
+the air.
+
+- 🔑 **The whole gag is that he does not look.** Same engine as `1m-m`'s champagne and `1m-l`'s
+  eyeline — he never looks at the consequence.
+- **Camera:** locked, wide, low, with the bin in the near midground and him walking out of frame. The
+  cup is caught mid-fall.
+- ⚠️ **The one hard clause is the falling cup.** [A real camera never catches the whole fall](../../google-flow/omni-flash.md#the-rule-that-outranks-all-of-it-a-real-camera-never-catches-the-whole-fall),
+  and a dropped object rendered sharp reads as pasted on. **It must be a streak**, which is the
+  [shutter clause](../../google-flow/omni-flash.md#the-shutter-is-the-tell-nobody-prompts-for)
+  `[confirmed 2026-08-14]` on exactly this — Karen's dropped phone.
+- **Cost:** the coffee already on the carpet from the last three, and the cleaner's black sack propped
+  against the wall. **Petty, Karen-scaled, and the cheapest frame on the list.**
+- ⬜ **Best used as a hard one-second cut**, probably the montage's shortest.
+
+### 1m-z — the cup · **still** · written 2026-09-13, unrun
+
+#### 🔴 Design change from the spec: the cup has already landed
+
+The spec caught the cup in mid-air. **[§38 at n=3](#-38-at-n3--a-mechanical-in-progress-state-is-near-unbeatable-and-it-is-worth-planning-around)
+says not to spend rounds on that.** A discrete object shown mid-action has come back at rest three
+times out of three. A cup that is asked to fall will come back in his hand or on the floor, and we
+cannot choose which.
+
+🔑 **So design the stillness in: the cup is on the carpet, and he is already walking away.** This loses
+nothing and gains two things:
+
+- **The gag still reads.** His hand is still out to the side, fingers open, and he is looking straight
+  ahead. *He let go of it and didn't look.*
+- 🔑 **It turns one act into a habit.** Two older cups lie by the same bin, and there are old brown
+  rings on the carpet around it. **He does this every day.** That is funnier than a one-off and
+  harder-hitting, and it is exactly [rule 2 of this set](./shot-list.md): observe, don't invent.
+- ⬜ **It hands the clip its action**, the same gift as `1m-l` and `1m-p`: the fresh spill spreads into
+  the carpet, or the cup rolls and settles.
+
+#### 🔑 The vantage: floor level, where the person who cleans it up kneels
+
+[The Karen rule](./shot-list.md): stand the camera where the person he is being a knob to stands.
+Nobody kneels by that bin except whoever cleans the carpet. **So the camera is on the floor beside the
+bin, looking up at him as he walks past.** The cups are the nearest things in the picture, and he is
+the tall figure in the middle distance.
+
+#### 🔴 Gate 2: the cost is the carpet, not the cleaner
+
+The spec had the cleaner's black sack in shot. 🔴 **Dropped: `1m-t`'s cost is already the cleaner**,
+and [the montage's standing rule](./shot-list.md) is no two costs of the same kind. **The cost here is
+the stains**: weeks of rings soaked into a carpet somebody else has to scrub, and a mess that has built
+up over time. *Petty contempt* is a new kind.
+
+#### ⚠️ Phrasing calls
+
+- **He is in three-quarter profile, crossing the frame, not walking straight away from the lens.** A
+  Character binds only to a visible face ([§12](../../google-flow/nano-banana-2.md#12--a-character-binds-to-a-face-no-face-in-the-shot-no-likeness-observed)),
+  and his eyes being fixed ahead is the joke. Seen from behind, the joke is gone.
+- **Deep focus, no occluder.** A floor-level flash photograph at a small aperture is sharp front to back,
+  which is how press flash looks, and it removes the
+  [fake-depth-of-field halo](../../google-flow/nano-banana-2.md#️-fake-depth-of-field-has-its-own-tells-practitioner-community)
+  that ruined `1m-l` round 1.
+- **The flash is named as hardware in Style and as consequences in Light**, with its position in
+  Constraints ([§35](../../google-flow/nano-banana-2.md#35--a-flash-described-as-an-object-in-the-room-is-drawn-as-a-lamp-observed-2026-09-11-n1)).
+- **The worn garments are stated**: shirtsleeves, loosened tie, no jacket
+  ([§36](../../google-flow/nano-banana-2.md#36--a-carried-garment-with-no-worn-garment-stated-returns-both-observed-2026-09-12-n1)).
+- **The cups are plain, with a brown card sleeve.** No coffee-chain branding is named, so none gets
+  drawn ([§34](../../google-flow/nano-banana-2.md#34--naming-a-marque-renders-its-badging-and-no-downstream-constraint-removes-it-observed-2026-09-08)).
+- **The walking blur on his trailing foot is allowed but not asked for.** Flash freezes him, and asking
+  for drag would be another in-progress state for §38 to refuse.
+
+**Model:** **Nano Banana 2**. **Paste into:** Flow → the image prompt box. **Aspect:** 16:9.
+**Resolution:** 2K. **Character:** `@2008 - tarquin`. **No reference image.**
+
+**Check these five on the result, worst first:**
+
+- The cup is on the carpet beside the bin, not in his hand and not in the bin
+- His eyes are ahead, not on the cup
+- The camera is really at floor level
+- The older cups and rings are there
+- Nothing carries a readable word
+
+```prompt
+SCENE:
+
+This is one frame of a fast-cut montage about a young City of London trader in September 2008, the week the banks began to fail. In this frame he has just dropped his empty coffee cup at a bin, missed it, and walked on without looking.
+
+Camera: a 24mm lens resting on the carpet, a few inches off the floor, a metre from the bin and angled up, so the ceiling shows at the top of the frame and he looms above the lens. The corridor runs away at an angle to the right and nothing is square to the lens. The picture is sharp from the nearest cup to the far end of the corridor.
+
+Subject: the carpet by the bin in an office corridor outside a trading floor. A small grey metal office bin stands left of centre, half full of paper. On the carpet a foot to the right of it lies a plain white paper coffee cup with a brown card sleeve, on its side, its plastic lid knocked off beside it and a fresh splash of coffee soaking into the carpet from its mouth. Two older empty cups of the same kind lie nearby, one crushed, and the grey carpet tiles around the bin are marked with old dried brown rings and splash marks, some faded, where cups have landed before.
+
+Him: the man from the character reference is walking past the bin from left to right, two strides beyond it, seen full length from below in three-quarter profile. He is twenty-five: keep the face lean and unlined, the hairline full and low, with no creases from nose to mouth, no hollowing under the cheekbones and no recession at the temples. He wears a white shirt with the sleeves turned back and a loosened tie, no jacket. One hand holds a small black handset with a keyboard to his ear. His other arm is still out to the side at hip height where he let the cup go, the fingers open and relaxed. His eyes look straight ahead down the corridor, his chin level, his mouth closed. Nothing in his face has noticed the cup.
+
+Environment: a plain 2008 office corridor — grey carpet tiles, pale walls with scuffs along them at trolley height, a strip of recessed ceiling tubes, a pair of lift doors far down on the left, a fire door with a wired-glass panel at the far end.
+
+Light: the photograph was taken with a flash on top of the camera, fired low across the carpet. The cups, the wet splash and the bin are the brightest things in the picture and each throws a crisp hard shadow along the carpet. His white shirt clips to featureless white where the flash hits hardest, while his trousers and the shadowed side of his face keep their detail rather than going to solid black. The flash falls off quickly down the corridor, and the far end is only a dim green wash from the ceiling tubes.
+
+Style: a newspaper photograph of the 2008 financial crisis, shot on a Canon EOS-1D Mark III with a Speedlite at a small aperture — fine digital noise and mild chromatic noise in the shadows, a cool blue-green cast from the tubes, muted colour, unretouched with visible pores rather than airbrushed skin, harsh and unflattering.
+
+Constraints: the only light sources are the camera's flash, which is behind the lens, and the ceiling tubes, which are above the top edge of the frame. The fresh cup lies on the carpet outside the bin, and both of his hands are empty apart from the handset. His is the only person and the only face in the picture. He is twenty-five years old. His expression stays small — a stranger looking at this photograph would read a man busy on a call before they read anything else. No brand names, logos or readable labels anywhere, including on the cups, the bin and the handset. Ensure historical accuracy for 2008, and every person, garment and object is British.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### 1m-z — the cup, v2 · **still** · written 2026-09-13, unrun · *supersedes v1 above*
+
+**Jack, 2026-09-13:** *"he needs to hold the cup in his hand and in the video drop it."*
+
+🔑 **Why this is right, not just different:** v1 put the event in the still, and the still was then a
+picture of *after*. v2 splits it the way `1m-l` and `1m-p` ended up splitting by accident: **the
+still shows the state and the clip shows the change.** A cup held in a hand is a stable state, so
+[§38](#-38-at-n3--a-mechanical-in-progress-state-is-near-unbeatable-and-it-is-worth-planning-around)
+has nothing to refuse. It is also a better still on its own terms, because *about to* is an
+[unresolved question](../../cinematography/stills.md#1-what-makes-a-still-hold) where *already
+happened* is not.
+
+**What changed from v1, and why:**
+
+- **The cup is in his hand**, held loosely by the rim at arm's length over the carpet **beside** the bin,
+  not over it. The miss is staged into frame 0, so the clip only has to let go.
+- **The cup is empty and its lid is on.** That means no splash in the clip, because
+  [liquids fail](../../google-flow/omni-flash.md#-fluids-fail-in-two-named-ways--and-the-design-fix-is-to-put-the-hard-half-outside-the-clip-academic--community-2026-09-12).
+  The old rings on the carpet still say *he does this every day*.
+- **He is level with the bin, not past it**, and still in mid-stride.
+- **Kept:** the floor-level vantage, the older cups and rings as the cost, the flash register, and no
+  other people.
+
+⚠️ **The risk to flag now for the clip:** on Frames,
+[a person who walks gets redrawn](../../google-flow/omni-flash.md#-on-frames-a-walking-extra-morphs--stillness-is-the-only-thing-that-holds-them-observed-2026-08-26).
+A clip where he drops the cup *and* walks out is two actions and a walking body. ⬜ **The clip's fallback
+is that he stops on his call beside the bin and lets go.** That is one action, no walking, and the gag
+survives. The still works for either.
+
+**Model:** **Nano Banana 2**. **Paste into:** Flow → the image prompt box. **Aspect:** 16:9.
+**Resolution:** 2K. **Character:** `@2008 - tarquin`. **No reference image.**
+
+**Check these on the result, worst first:**
+
+- The cup is in his hand, held out beside the bin rather than over it
+- His eyes are ahead, not on the cup or the bin
+- The camera is really at floor level
+- The older cups and rings are there
+- Nothing carries a readable word
+
+```prompt
+SCENE:
+
+This is one frame of a fast-cut montage about a young City of London trader in September 2008, the week the banks began to fail. In this frame he is walking past a bin on a call, holding his empty coffee cup out to one side, about to let go of it without looking.
+
+Camera: a 24mm lens resting on the carpet, a few inches off the floor, a metre from the bin and angled up, so the ceiling shows at the top of the frame and he looms above the lens. The corridor runs away at an angle to the right and nothing is square to the lens. The picture is sharp from the bin to the far end of the corridor.
+
+Subject: the carpet by the bin in an office corridor outside a trading floor. A small grey metal office bin stands left of centre, half full of paper. Two empty paper coffee cups lie on the carpet beside it, one on its side and one crushed, and the grey carpet tiles around the bin are marked with old dried brown rings and splash marks, some faded, where cups have landed before.
+
+Him: the man from the character reference is walking past the bin from left to right, level with it and a stride to its right, seen full length from below in three-quarter profile, mid-stride with his weight on his front foot. He is twenty-five: keep the face lean and unlined, the hairline full and low, with no creases from nose to mouth, no hollowing under the cheekbones and no recession at the temples. He wears a white shirt with the sleeves turned back and a loosened tie, no jacket. One hand holds a small black handset with a keyboard to his ear. His other arm hangs out to the side at hip height, and between his thumb and two fingers he holds a plain white paper coffee cup by its rim, loosely, with a brown card sleeve and its plastic lid on. The cup is out over the bare carpet beside the bin, not over the bin. His eyes look straight ahead down the corridor, his chin level, his mouth closed. Nothing in his face is thinking about the cup.
+
+Environment: a plain 2008 office corridor — grey carpet tiles, pale walls with scuffs along them at trolley height, a strip of recessed ceiling tubes, a pair of lift doors far down on the left, a fire door with a wired-glass panel at the far end.
+
+Light: the photograph was taken with a flash on top of the camera, fired low across the carpet. The bin, the cups and the stains are the brightest things in the picture and each throws a crisp hard shadow along the carpet. His white shirt and the cup in his hand clip to featureless white where the flash hits hardest, while his trousers and the shadowed side of his face keep their detail rather than going to solid black. The flash falls off quickly down the corridor, and the far end is only a dim green wash from the ceiling tubes.
+
+Style: a newspaper photograph of the 2008 financial crisis, shot on a Canon EOS-1D Mark III with a Speedlite at a small aperture — fine digital noise and mild chromatic noise in the shadows, a cool blue-green cast from the tubes, muted colour, unretouched with visible pores rather than airbrushed skin, harsh and unflattering.
+
+Constraints: the only light sources are the camera's flash, which is behind the lens, and the ceiling tubes, which are above the top edge of the frame. The cup is in his hand, held out beside the bin. His is the only person and the only face in the picture. He is twenty-five years old. His expression stays small — a stranger looking at this photograph would read a man busy on a call before they read anything else. No brand names, logos or readable labels anywhere, including on the cups, the bin and the handset. Ensure historical accuracy for 2008, and every person, garment and object is British.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### 1m-z v2 — round 1, **handed over as the plate, 2026-09-13** (Jack)
+
+Jack asked for its clip, so it is treated as accepted.
+
+- ✅ **What landed:** floor-level vantage looking up; cup held loosely by the rim beside the bin, not
+  over it; eyes ahead on the call; two old cups and a spread of dried rings; scuffed walls; lift doors;
+  a wired-glass fire door at the far end; nobody else in frame.
+- ⚠️ **Deviations, recorded not fixed:**
+  - **No flash again.** It came back lit by the teal ceiling tubes. That is the third montage frame to
+    do this, after `1m-t` and `1m-p`.
+  - **The old stain reads wet and fresh** rather than dried.
+  - **He may read older than twenty-five.** That is Jack's call.
+- ⬜ **Master not banked:** save it as `camera/reference/1m-z-the-cup-ACCEPTED.png`.
+- ⬜ **Crop the black border in Premiere.** The clip inherits it from frame 0.
+
+### 1m-z — the clip · **video** · written 2026-09-13, unrun
+
+**Routing:** Omni Flash → **Frames** tab, with the accepted `1m-z` v2 frame as the **start frame**.
+🔴 **Leave the end slot EMPTY.** 🔴 **No Character and no Ingredients**: the bin-and-cup geometry *is*
+the joke, and [Ingredients re-stages](../../google-flow/omni-flash.md#-the-tab-rule--amended-2026-08-18-ingredients-holds-identity-frames-holds-staging).
+**Duration: 4s**, because [a physics beat drifts per frame](../../google-flow/omni-flash.md#why-falling-objects-fail-and-what-actually-fixes-it)
+and 4s is the safest length.
+
+#### 🔑 The design: the fingers open, and he never breaks stride
+
+**The job:** the still asks *is he going to?* The clip answers yes, and shows that it cost him nothing.
+The drop leads its own sentence
+([the action the shot is for goes first](../../google-flow/omni-flash.md#️-the-action-the-shot-is-for-must-lead-its-own-sentence-observed)).
+
+- 🔑 **The fall is short, and that is the whole reason this is attemptable.** The house rule is that
+  [a real camera never catches the whole fall](../../google-flow/omni-flash.md#the-rule-that-outranks-all-of-it-a-real-camera-never-catches-the-whole-fall).
+  The cup cannot leave frame from a floor-level camera, but it is only about half a metre up. At real
+  speed that is a fraction of a second in the air, so **the model has only a few frames to get wrong.**
+  ⚠️ *The height is estimated from the plate, not measured.*
+- **It is empty with its lid on**, so there is no liquid to fail. It lands and tips onto its side, and
+  nothing more is asked of it.
+- **The shutter clause is in**, because the drop is the one fast motion. A falling cup rendered sharp
+  reads as pasted on ([confirmed on Karen's phone](../../google-flow/omni-flash.md#the-shutter-is-the-tell-nobody-prompts-for)).
+- 🔑 **The landing is carried by sound as much as picture:** a small, hollow, papery tap on carpet. That
+  is the most real thing in the clip, and it cannot morph.
+
+#### 🔴 The top risk is him walking, not the cup
+
+[On Frames, a person who moves gets redrawn](../../google-flow/omni-flash.md#-on-frames-a-walking-extra-morphs--stillness-is-the-only-thing-that-holds-them-observed-2026-08-26),
+and the tab rule's "Frames holds a face" row only applies to a
+[near-static clip](../../google-flow/omni-flash.md#-the-tab-rule--amended-2026-08-18-ingredients-holds-identity-frames-holds-staging).
+He is mid-stride toward a floor-level lens, so continuing to walk brings him closer and bigger. The
+community tells for this are **feet sliding on the floor, arms swinging at the wrong tempo, and fingers
+merging** `[community]`.
+
+**Three things limit it:**
+
+1. **Walking is a state he is already in, not one he has to reach.** He is mid-stride in frame 0, so it
+   is [a continuation](../../google-flow/omni-flash.md#-ask-it-to-continue-a-state-never-to-reach-one-observed).
+2. **At 4s at an unhurried pace, that is about two strides.** No destination is set and he is not asked
+   to leave frame.
+3. **The phone hand is pinned at his ear**, and the empty hand is only asked to relax after letting go.
+
+⬜ **If he morphs, the fallback below takes the walk out**: he stops on his call beside the bin and lets
+go. That is one action with no walking. It is less funny but much safer.
+
+#### ⚠️ Audio: nothing is placed on a visible object
+
+The lift doors and the ceiling tubes are both in frame.
+[A sound placed on a visible object is a vote for that object moving](../../google-flow/omni-flash.md#-observed-2026-09-09-naming-an-off-frame-light-source-by-its-object-binds-it-to-a-visible-one),
+so **no lift chime and no tube hum**, or the doors open and the lights flicker. The room tone is air
+conditioning, which has no object in frame. 🔴 **No speech from the handset**: `No music and no voices.`
+covers it, and the prompt has no colons after an action and no quotation marks
+([the speech trap](../../google-flow/omni-flash.md#-the-speech-trap-is-punctuation-not-vocabulary)).
+
+#### ⬜ Draft at 360p first
+
+This is [a motion check only](#-the-360p-draft-is-a-motion-check-never-a-text-check--and-upscaling-repairs-nothing).
+**Watch three things:** the cup falls as a quick streak and ends on the carpet (not floating, bouncing
+high or vanishing); his feet plant rather than slide; and the old cups stay where they are.
+
+**Paste into:** Flow → **Frames to Video** prompt box. **Start frame:** the accepted `1m-z` v2 image.
+**End frame:** empty. **No Character, no Ingredients.** **Duration:** 4s. Primary:
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame, as one single continuous shot with no cuts. The camera stays locked off on the floor and holds completely still throughout, and the light in the picture stays exactly as it is.
+
+His fingers open and the empty coffee cup drops straight down onto the carpet beside the bin, lands with its lid on and tips over onto its side.
+
+He keeps walking at the same unhurried pace, the phone held to his ear and his eyes on the corridor ahead, and his empty hand drops loosely to his side. His feet plant firmly on the carpet with each step.
+
+The bin, the paper in it, the two old cups on the floor and the stains on the carpet all stay exactly where they are.
+
+Shot at 24fps with a 180-degree shutter, so the falling cup smears while everything slow stays sharp.
+
+Audio: the small hollow papery tap of the cup landing on carpet, his footsteps muffled on carpet tiles, and the low hum of office air conditioning. No music and no voices.
+
+Thanks.
+```
+
+⬜ **Fallback, only if he morphs or his feet slide in the primary**: same tab, same start frame. He stops
+walking instead.
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame, as one single continuous shot with no cuts. The camera stays locked off on the floor and holds completely still, and the light stays exactly as it is.
+
+His fingers open and the empty coffee cup drops straight down onto the carpet beside the bin, lands with its lid on and tips over onto its side.
+
+He comes to a standstill where he is, the phone held to his ear and his eyes on the corridor ahead, breathes, blinks once, and lets his empty hand fall to his side. The bin, the two old cups and the stains stay exactly where they are.
+
+Shot at 24fps with a 180-degree shutter, so the falling cup smears while everything else stays sharp.
+
+Audio: the small hollow papery tap of the cup landing on carpet and the low hum of office air conditioning. No music and no voices.
+
+Thanks.
+```
+
+### 1m-z — the clip, v2 · **video** · written 2026-09-13, unrun · *supersedes both blocks above*
+
+**Jack, 2026-09-13, on the fallback's result:** *"it looks very ai slop like, also the coffee does not
+splash."*
+
+#### Diagnosis, before any rewrite
+
+🔴 **The clip was not seen by this file**, so these causes are **inferred from the prompt**, not
+observed.
+
+1. **An empty paper cup has no weight.** It is about the lightest object there is, so a model imitating
+   *falling* without mass makes it drift, float or flutter. That weightless motion is the single most
+   named "AI video" tell ([Why AI videos look fake](https://medium.com/@nandinilreddy/why-ai-videos-look-fake-and-how-physics-can-fix-it-bb84149831d8)).
+   **Coffee left in the cup gives it mass**, and it is also what Jack asked for.
+2. **"Comes to a standstill… breathes, blinks once" is a mannequin instruction.** A man mid-call does not
+   stop dead and hold still to drop a cup. The fallback swapped a morph risk for a stiffness tell.
+   **The walk goes back in**: he never breaks stride, which is also the joke.
+3. **Nothing told it the speed.** Unprompted, these models drift toward slow motion. The fix is the
+   positive phrase *at real speed* (see the negation-rewrite table in `omni-flash.md`).
+
+#### 🔴 The splash goes against a house rule, knowingly
+
+[`omni-flash.md` says never request a splash, ask for wetting](../../google-flow/omni-flash.md#-fluids-fail-in-two-named-ways--and-the-design-fix-is-to-put-the-hard-half-outside-the-clip-academic--community-2026-09-12),
+because splashes with the wrong momentum are one of the two documented fluid failures `[academic]`.
+Jack wants a splash, so it is **designed down to the smallest splash that still reads**:
+
+- **The impact is one instant**: the lid pops off and a short burst of coffee spatters out low across
+  the carpet. At real speed with the shutter clause, that is **a smear lasting a few frames**, which is
+  where [a real camera would lose it anyway](../../google-flow/omni-flash.md#the-rule-that-outranks-all-of-it-a-real-camera-never-catches-the-whole-fall).
+- **The rest of the clip is wetting**: a dark stain spreading out of the cup's mouth and soaking into
+  the carpet tiles. That is the easy class, like `1y`'s tide and `1m-m`'s spill.
+- **The sound carries the splat.** A wet slap on carpet cannot morph.
+- ⚠️ **If the splash comes back wrong** (droplets hanging, coffee bouncing, or flying the wrong way), keep
+  the landing and cut the splash from the prompt. **The spreading stain alone still reads as a spill.**
+
+**Routing unchanged:** Frames tab, the accepted `1m-z` v2 frame as the start frame, end slot empty, no
+Character, **4s**. ⬜ **Draft at 360p** and watch the cup's speed, the splash direction and his feet.
+
+**Paste into:** Flow → **Frames to Video** prompt box. **Start frame:** the accepted `1m-z` v2 image.
+**End frame:** empty. **No Character, no Ingredients.** **Duration:** 4s.
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame, as one single continuous shot with no cuts, everything happening at real speed. The camera sits locked off on the floor and the light stays exactly as it is.
+
+His fingers open and the paper cup, still a third full of coffee, drops fast and heavy onto the carpet beside the bin. On impact the lid pops off and a short burst of coffee spatters out low across the carpet tiles, and a dark stain spreads out from the cup's mouth and soaks into the carpet.
+
+He never breaks stride. He carries on walking at the same unhurried pace with the phone at his ear and his eyes on the corridor ahead, his empty hand swinging loosely back to his side, his feet planting on the carpet with each step.
+
+Shot at 24fps with a 180-degree shutter, so the falling cup and the flying coffee smear with motion blur while the bin and the old cups stay sharp and where they are.
+
+Audio: the wet slap of the cup and coffee hitting the carpet, his footsteps muffled on carpet tiles, and the low hum of office air conditioning. No music and no voices.
+
+Thanks.
+```
+
+**Post, in Premiere:**
+
+1. **Crop the black border.**
+2. 🔑 **Cut on the tap.** The montage cuts on the beat, and the cup hitting the carpet *is* a beat. Out
+   on the landing, or a frame after it.
+3. ⚠️ **Watch the cup and his feet on playback, not his face.** A cup that floats, bounces back up or
+   duplicates, or feet that slide, is a re-roll, not a grade.
+4. ⚠️ **Nothing ships unmeasured**: run `scripts/delivery-qc.sh` ([`delivery.md`](../../video-fx/delivery.md)).
+
+**Sources for this entry (2026-09-13):**
+[Atlas Cloud — realistic human motion prompts: sliding feet, arm tempo, merging fingers](https://www.atlascloud.ai/blog/tips/mastering-kling-3.0-10-advanced-ai-video-prompts-for-realistic-human-motion) `[community]` ·
+[Wearview — walking video from a single photo](https://www.wearview.co/blog/walking-video-from-single-photo) `[community]` ·
+[Promptessor — image-to-video prompts in 2026](https://promptessor.com/blog/image-to-video-prompts-how-to-animate-photos-products-characters-and-art-in-2026) `[community]` ·
+[Flow models & supported features](https://support.google.com/flow/answer/16352836) `[vendor]`
+
+### 1m-g — the shoot · **spec only** · 2026-09-13 · *prompt to follow*
+
+**Jack's ask:** *"fox hunting or bird shooting in the country like in The Gentlemen season 2."*
+
+🔴 **Bird shooting, not fox hunting.** Hounds and a fox is animal-cruelty imagery and a
+[likely refusal](../../flow/failure-modes.md#a3-harm-categories); a driven game shoot is an ordinary
+sporting picture. **And the shoot is the better idea anyway** — see below.
+
+🔑 **The research hands us the whole shot.** A British driven shoot works like this: **about twenty
+beaters walk through the woods driving birds toward eight men who stand still on numbered pegs**, and
+**a loader stands beside each man and hands him a reloaded gun** `[community]`
+([Garden & Gun](https://gardenandgun.com/feature/sporting-south-the-driven-way/),
+[driven grouse shooting](https://en.wikipedia.org/wiki/Driven_grouse_shooting)).
+**Twenty people walk toward you so that you do not have to move.** That is the class system as a
+sport, it is completely real, and it needs no exaggeration —
+[rule 2 of this set](./shot-list.md).
+
+- 🔑 **The Karen vantage: from the loader's position**, just behind and beside him, so we see what the
+  loader sees — the back of his head, his hand out for the gun without turning, and the line of
+  beaters coming out of the treeline toward them.
+- 🔑 **Gate 2, and it is a genuinely new kind: a line of people employed to walk toward him.** No
+  wreckage, no empty room, no box — labour as scenery.
+- 🔑 **The structural rhyme is the real reason to make it.** He begins the film **in a field with a
+  loader and twenty people working for him**, and ends it **in a field with a fire and nobody**
+  ([12a](#12a--the-two-of-them-by-the-fire--still--written-2026-08-28-unrun),
+  [12c](#12c--the-newspaper-goes-on-the-fire--still--written-2026-08-29-unrun)). **Camping is the
+  same location, stripped.**
+- ⚠️ **Policy design, decided before writing:** the gun is **broken open over his arm or being handed
+  across** — never aimed, never fired, and **no bird is shown hit.** The birds are specks over the
+  treeline. That keeps it a picture of a man standing still while others work, which is the shot we
+  want regardless.
+- ⚠️ **Period: early September 2008 is partridge, not pheasant** (pheasant opens 1 October) — and it
+  puts him in a field in the exact week the banks failed.
+- ⚠️ **Take The Gentlemen's *content*, not its look.** S2 is Tony Scott–inspired, anamorphic, smoke
+  and red `[community]` — glossy and saturated, which will not cut with this montage. **Tweed, the
+  formality and the absurd hierarchy are the borrowings; the register stays ours.**
+
+### 1m-z v3 — the drop is made by the CUT · 2026-09-13 · *supersedes every 1m-z clip above*
+
+**Jack, 2026-09-13:** *"Forget the cup dropping one, please make a new one where the model won't fuck
+it up."*
+
+🔑 **The fix is to stop asking any model for the drop at all.** The house rule in
+[`omni-flash.md`](../../google-flow/omni-flash.md#the-rule-that-outranks-all-of-it-a-real-camera-never-catches-the-whole-fall)
+already says so: *cut — a shot that stages it, an insert that loses it, and the aftermath.* **The
+audience makes the drop in the gap between two shots** ([the gutter](../../cinematography/stills.md#3-the-gutter--what-happens-between-two-stills)).
+Nothing falls, nothing splashes in motion, and nothing is stopped mid-stride.
+
+| Shot | What it is | What the model is asked to do |
+| --- | --- | --- |
+| **A** `1m-z` clip | The accepted plate: he walks on, cup still dangling from his fingers | **Continue a walk already in progress.** Nothing else moves. Only about 1s is used |
+| **B** `1m-z2` still | Floor-level insert: the cup on its side by the bin, lid off, coffee splashed across the tiles, still wet | **A still of an end state.** No motion, no airborne liquid, no person |
+| **The edit** | Hard cut A → B on the beat, with a wet papery slap on the cut | Premiere, plus a sound effect |
+
+**Why each is inside the engines' competence:**
+
+- **A:** walking that is already under way is a [continuation, not a new state](../../google-flow/omni-flash.md#-ask-it-to-continue-a-state-never-to-reach-one-observed).
+  **The montage uses only about a second of it**, and drift compounds over time, so the part we keep
+  is the safest part. The cup is pinned in his fingers.
+- **B:** a spill that has **already happened** is a flat stain on a flat floor, and there is
+  [no in-progress state for §38 to refuse](#-38-at-n3--a-mechanical-in-progress-state-is-near-unbeatable-and-it-is-worth-planning-around).
+  **He is not in it by framing, not by instruction.** It is a tight insert, so there is no *"the
+  corridor is empty"* absence for [§27](../../google-flow/nano-banana-2.md#27--ask-for-an-object-never-an-absence--a-subtractive-shape-comes-back-inverted-observed-2026-08-30)
+  to invert.
+- **B uses the accepted plate as a reference** for carpet, bin, cups and light, with the role declared
+  narrowly ([§29](../../google-flow/nano-banana-2.md#29--to-overrule-a-reference-on-one-element-declare-its-role-narrowly-then-negate-the-old-value-observed-2026-08-30)),
+  so the cut reads as the same corridor a second later.
+
+#### A — the clip · **video** · written 2026-09-13, unrun
+
+**Paste into:** Flow → **Frames to Video**. **Start frame:** the accepted `1m-z` v2 image. **End frame:**
+empty. **No Character, no Ingredients.** **Duration:** 4s. **In Premiere, use the first ~1s.**
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame, as one single continuous shot with no cuts, at real speed. The camera sits locked off on the floor and the light stays exactly as it is.
+
+He carries on walking at the same unhurried pace toward the right of the frame, the phone at his ear and his eyes on the corridor ahead, his feet planting on the carpet with each step. The paper cup stays hanging loosely from his fingertips by its rim, swinging slightly with his stride.
+
+The bin, the two old cups and the stains on the carpet stay exactly where they are.
+
+Audio: his footsteps muffled on carpet tiles and the low hum of office air conditioning. No music and no voices.
+
+Thanks.
+```
+
+#### B — `1m-z2` the aftermath · **still** · written 2026-09-13, unrun
+
+**Model:** **Nano Banana 2**. **Paste into:** Flow → image prompt box. **Aspect:** 16:9. **Resolution:** 2K.
+**Reference image:** the accepted `1m-z` v2 plate. **No Character**, because there is no person.
+
+**Check on the result:** it is the same carpet, bin and teal light · the cup lies on its side with the
+lid off beside it · the coffee is splashed flat across the tiles and still wet · no person or body part
+is in frame · no readable words.
+
+```prompt
+SCENE:
+
+The attached image is the reference for the location, the carpet, the bin, the old cups and the light, and for nothing else. This new photograph is taken a second later, down on the carpet right beside the bin.
+
+Camera: a 35mm lens lying on the carpet a few inches off the floor, half a metre from the base of the bin, looking along the floor, so the carpet tiles run away from the lens and the bottom of the bin fills the left side of the frame. The picture is sharp from the nearest tile to the skirting board.
+
+Subject: a white paper coffee cup with a brown card sleeve that has just been dropped. It lies on its side on the grey carpet tiles next to the bin, its plastic lid knocked off and lying upside down a hand's width away. Coffee has burst out of its mouth in a splash that fans across three carpet tiles — a wide wet dark-brown patch with a spray of drops and short streaks thrown out beyond it, all of it lying flat and still soaking in, glossy where it is freshest. The older dried brown rings and the two old crushed cups from the reference are just behind it, and the wet splash is darker and shinier than any of them.
+
+Light: the same cool teal fluorescent light from the ceiling tubes as the reference, falling evenly along the corridor, catching a dull shine on the wet coffee.
+
+Style: a newspaper photograph of the 2008 financial crisis, shot on a Canon EOS-1D Mark III by available light — fine digital noise in the shadows, muted colour, a cool blue-green cast from the tubes, no retouching.
+
+Constraints: the frame holds only the carpet, the bin, the cups, the lid and the spilled coffee. The coffee lies flat on the carpet. No brand names, logos or readable labels anywhere, including on the cups and the bin. Ensure historical accuracy for 2008, and every object is British.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Post, in Premiere:**
+
+1. Crop A's black border. Use about a second of A.
+2. 🔑 **Hard cut A → B on the beat**, with **a wet papery slap on the cut**. That sound does the whole
+   drop. ⬜ It needs a sound: a free library effect, or record a real cup on carpet.
+3. Hold B about a second, then cut out.
+4. ⬜ **Optional later:** a B clip where the wet stain slowly spreads into the carpet. That is the
+   easiest thing Omni does, and the next frame can be generated then if the cut wants more.
+5. ⚠️ **Nothing ships unmeasured**: run `scripts/delivery-qc.sh`.
+
+#### B — round 1, **handed over as the plate, 2026-09-13** (Jack)
+
+- ✅ **What landed:** floor-level insert, the steel bin on the left, the cup on its side with coffee still
+  in its mouth, the lid upside down, a wet splash fanned across the tiles, old rings, two crushed cups,
+  and the corridor running away. No person in frame.
+- ⚠️ **Deviations:** the bin came back as brushed steel rather than grey mesh, and the light is
+  neutral-cool rather than teal. Neither matters at a one-second cut.
+- ⬜ **Master not banked:** save it as `camera/reference/1m-z2-aftermath-ACCEPTED.png`.
+
+#### B — the clip: he walks past and kicks the cup · **video** · written 2026-09-13, unrun
+
+**Jack's ask:** *"either tarquin walks past and kicks the coffee cup, or walks past it sipping a similar
+cup, implying he is at fault."*
+
+🔑 **The kick, because the sip cannot happen in this frame.** The lens is on the carpet, and the top of
+the frame near the camera is only about a foot off the floor. **His hands and a cup at his mouth are
+above the picture.** The sip needs a different still, a higher camera with his torso in it. ⬜ That is
+a separate prompt if wanted.
+
+**Why the kick suits this plate:**
+
+- 🔑 **Only his shoes and trouser legs are in frame, so there is no face to lose.** The identity problem
+  that shapes every other clip in this montage does not exist here.
+- **The fault is shown, not implied.** He scuffs the evidence away and does not break stride.
+- **Frames holds the set** (bin, splash, crushed cups) and nothing about him needs binding.
+
+#### 🔴 The risks, and what each clause does
+
+| Risk | The clause |
+| --- | --- |
+| **A body entering an empty Frames plate is generated from scratch** ([walkers morph](../../google-flow/omni-flash.md#-on-frames-a-walking-extra-morphs--stillness-is-the-only-thing-that-holds-them-observed-2026-08-26)) | **Legs only, dark trousers and black shoes**, which is the lowest-detail body there is. One path: in from the right edge near the lens, away down the corridor. **Use about 1.5s**, the kick and one stride, before the receding legs have time to drift |
+| **Feet slide, legs double** `[community]` | *"Each shoe plants flat on the carpet and lifts"*, stated positively. A steady walk, no hurry |
+| **The kick is a contact event** (object interaction is a documented weak spot) | 🔑 **A scuff, not a punt.** The toe catches the cup mid-stride and it **skids and rolls a short way along the carpet**. That is one continuous motion with no destination named, and the paper cup is light enough that a short skid is the real behaviour. The shoe briefly covers the moment of contact, so there is [less to get wrong](../../google-flow/omni-flash.md#the-rule-that-outranks-all-of-it-a-real-camera-never-catches-the-whole-fall) |
+| **Weightless or slow-motion slop** | *At real speed*, plus the [shutter clause](../../google-flow/omni-flash.md#the-shutter-is-the-tell-nobody-prompts-for) so the cup and the shoe smear |
+| **The splash gets redrawn, or wet footprints get invented** | He steps on the dry carpet beside the splash, and the splash, lid, bin and crushed cups are pinned. [No fluid is asked to move](../../google-flow/omni-flash.md#-fluids-fail-in-two-named-ways--and-the-design-fix-is-to-put-the-hard-half-outside-the-clip-academic--community-2026-09-12) |
+| **Speech or subtitles** ([the punctuation trap](../../google-flow/omni-flash.md#-the-speech-trap-is-punctuation-not-vocabulary)) | No colon after an action, no quotation marks, `No music and no voices.` |
+
+⬜ **Draft at 360p.** Watch the number of legs and shoes, whether the feet slide, and whether the cup
+skids and settles or instead floats or bounces up.
+
+**Paste into:** Flow → **Frames to Video**. **Start frame:** the accepted `1m-z2` image. **End frame:**
+empty. **No Character, no Ingredients.** **Duration:** 4s. **Use about 1.5s.**
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame, as one single continuous shot with no cuts, at real speed. The camera lies locked off on the carpet and the light stays exactly as it is.
+
+A man in dark suit trousers and polished black shoes walks into the frame from the right edge close to the lens, heading away down the corridor, and only his legs and shoes are in the picture. As he passes, the toe of his shoe catches the fallen paper cup mid-stride and it skids and rolls a short way along the carpet. He never breaks stride and walks on away down the corridor, each shoe planting flat on the carpet and lifting.
+
+He steps on the dry carpet beside the splash. The spilled coffee, the lid, the bin and the two crushed cups stay exactly where they are.
+
+Shot at 24fps with a 180-degree shutter, so the moving shoe and the skidding cup smear with motion blur while everything still stays sharp.
+
+Audio: firm footsteps on carpet tiles, the light hollow scuff and rattle of a paper cup skidding across carpet, and the low hum of office air conditioning. No music and no voices.
+
+Thanks.
+```
+
+**Post:** crop the border · use about 1.5s from the step to the skid · 🔑 **cut out on the rattle** · if a
+leg doubles or the cup floats, **re-roll, don't grade** · run `scripts/delivery-qc.sh`.
+
+**Sources (2026-09-13):**
+[Atlas Cloud — sliding feet and merging limbs in AI human motion](https://www.atlascloud.ai/blog/tips/mastering-kling-3.0-10-advanced-ai-video-prompts-for-realistic-human-motion) `[community]` ·
+[Why AI videos look fake — weightless motion](https://medium.com/@nandinilreddy/why-ai-videos-look-fake-and-how-physics-can-fix-it-bb84149831d8) `[community]` ·
+[Imagine.art — Omni Flash prompts guide](https://www.imagine.art/blogs/gemini-omni-flash-prompts-guide) `[community]`
+
+### 1m-g — the shoot · **still** · written 2026-09-13, unrun
+
+#### 🔴 Two corrections to the spec before the prompt
+
+1. **The ending is not a field.** Canon puts the fire **in the Waitrose car park, not the woods**
+   ([`story.md`](./story.md)). The spec's *"same location, stripped"* is wrong. The rhyme that
+   survives is looser but still real: **outdoors, twenty people working so he doesn't have to move →
+   outdoors, a fire, and only one other man with him.** Don't claim it's the same place.
+2. **There is no "Nano Banana Pro 2."** The family is Nano Banana → Pro → 2 → 2 Lite
+   ([§ model names](../../google-flow/nano-banana-2.md#️-there-is-no-nano-banana-pro-2-vendor-community)).
+   **Use Nano Banana 2**, which is what made `1m-l` round 5, `1m-v` and `1m-z` v2, so the montage stays
+   consistent. ⬜ **If the beaters come back cloned or the line comes back centred, re-fire once on
+   Nano Banana Pro.** Pro is still the better pick for spatially complex frames with a crowd at distance
+   ([§ leaderboards](../../google-flow/nano-banana-2.md#-corrected-2026-09-13-nano-banana-2-beats-pro-on-the-leaderboards-community)).
+   ⚠️ Check the picker is not on **Lite**.
+
+#### 🔑 The design
+
+**The job:** it is the montage's only frame outside the City, and it gives the argument as a sport:
+**a line of people walks toward him so that he does not have to move.** The spec's research stands:
+beaters drive the birds toward Guns who stand at numbered pegs, and a loader hands each Gun his gun
+`[community]`.
+
+- 🔑 **Vantage: the loader's, the Karen rule.** A standing eye-height camera a pace behind him and to
+  his left. **The loader is the camera**, so the loader appears only as two hands entering the bottom
+  of frame holding the gun out. We see what the loader sees: the back of Tarquin's head, his hand held
+  back for the gun, and the field.
+- 🔑 **The gag is that he is on his phone.** His empty left hand is held back for the gun without
+  turning, while his right hand holds the handset low and his head is bent over its screen. **It
+  carries the montage's phone motif** (`1m-v`, `1m-z`), and it is the purest form of *doesn't look*:
+  twenty people are walking at him and he is reading an email.
+- 🔑 **A second, free detail: new money.** His tweed is **brand new**, stiff, with the fold creases still
+  in it. The loader's cuff is **old waxed cotton, worn pale at the seams**. The class line runs through
+  the handover, with no caption needed. *Observed, not invented:* the spec's rule 2.
+- 🔴 **Gate 2, a new kind of cost: labour as scenery.** About fifteen beaters come out of a strip of
+  cover a long way off. **It is the only cost in the montage made of people working rather than people
+  losing.**
+
+#### 🔴 The policy and slop design, decided before writing
+
+| Risk | The clause |
+| --- | --- |
+| **Firearms** ([harm categories](../../flow/failure-modes.md#a3-harm-categories)) | **One gun, broken open, barrels pointing at the grass, in the loader's hands.** Nobody is aiming, no gun is closed, and the words *shoot*, *fire* and *kill* describe nothing in the frame. It reads as a sporting picture because that is all it contains |
+| **Animals** | The partridges are **a few distant specks in the sky** above the beaters. No bird is on the ground and none is hit. No dog is close enough to read |
+| **The crowd clones or tiles** ([§22](../../google-flow/nano-banana-2.md#22--tiling-and-cloning-in-crowd-scenes-are-a-resolution-problem-not-only-a-prompt-problem-community-2026-08-28), [crowd individuation](../../google-flow/nano-banana-2.md#-crowd-realism-is-individuation-not-adjectives-practitioner)) | Count, spacing and what each carries: an **uneven** line, some half-hidden in the crop, flags at different heights, one stick raised. 🔴 **Individuated by garment, carried object and distance, never by age or gender.** That is [what got `1m-l` past two refusals](#1m-l--round-4-policy-block-jack-2026-09-13---and-it-disproves-the-round-2-diagnosis) |
+| **The loader's hands come back young, clean and generic** ([§25](../../google-flow/nano-banana-2.md#25--19-inverts-for-an-unbound-body-part--describe-it-or-get-young-clean-and-generic-observed-2026-08-29)) | Unbound, so described in full: weathered, reddened knuckles, a worn waxed cuff. No age word |
+| **Hands fuse where they meet** | **They do not meet.** The loader's hands stop about a foot short of his open palm. The frame is the second before the handover, so *about to* is again the unresolved question |
+| **Fake depth of field and halo** ([tells](../../google-flow/nano-banana-2.md#️-fake-depth-of-field-has-its-own-tells-practitioner-community)) | **Deep focus**, sharp from him to the hedge. Nothing is thrown out of focus, and the gun is kept clear of the lens |
+| **No face, so the Character binds nothing** ([§12](../../google-flow/nano-banana-2.md#12--a-character-binds-to-a-face-no-face-in-the-shot-no-likeness-observed)) | **A deliberate choice.** He is recognisable from the back of his head and his build, and the frame is about the hand, not the face. `@2008 - tarquin` is still attached for hair and build. ⚠️ **His clothes are described anyway**, because the new-tweed detail is the point, and the prose will override the Character's suit. That is intended |
+| **The Gentlemen / advert gloss** ([advert vocabulary](../../google-flow/nano-banana-2.md#️-advert-vocabulary-commissions-an-advert-observed-2026-08-26)) | Flat overcast September morning, stubble and muddy tramlines, a newspaper photograph. No *golden hour*, no *cinematic*, no haze named ([§10: atmosphere overdelivers](../../google-flow/nano-banana-2.md#10--the-atmosphere-family-is-rendered-for-free-and-overdelivers-when-named-observed-n3)) |
+| **Readable text** | The peg is a **plain wooden stake**, not a numbered card, because a number is text. The phone screen is a soft glow too small to read |
+
+**Model:** **Nano Banana 2**. **Paste into:** Flow → the image prompt box. **Aspect:** 16:9.
+**Resolution:** 2K ([off-native resolution clones crowds](../../google-flow/nano-banana-2.md#-crowd-realism-is-individuation-not-adjectives-practitioner)).
+**Character:** `@2008 - tarquin`. **No reference image.**
+
+**Check these six on the result, worst first:**
+
+- The gun is broken open and pointing at the ground, and nobody is aiming
+- His hand is held back for it while his head is down on the phone
+- The loader's hands stop short of his, with no fusion
+- The beaters are an uneven line of different figures, not clones
+- The camera is behind him at standing height
+- Nothing carries a readable word or number
+
+```prompt
+SCENE:
+
+This is one frame of a fast-cut montage about a young City of London trader in September 2008, the week the banks began to fail. In this frame he is standing at his peg on a driven partridge day in the English countryside, reading his phone, with one hand held back for his loader to put a gun in it, while a line of beaters walks toward him across the field.
+
+Camera: a 35mm lens at standing eye height, a pace behind him and to his left, level, taken from exactly where his loader stands. He fills the right third of the frame from the waist up, seen from behind and a little to the side, so the back of his head, his left ear and the edge of his cheek show and his eyes do not. The field runs away past him at an angle toward the left, and nothing is square to the lens. The picture is sharp from his shoulder to the far hedge.
+
+Subject: a wide September stubble field under a flat grey sky, muddy tractor tramlines running away across it, a short plain wooden peg stake in the stubble at his feet. About a hundred and fifty metres off, a strip of tall green game crop runs along the far side of the field in front of a dark hedgerow, and a long uneven line of about fifteen beaters is coming out of it toward him, spaced irregularly, some still waist-deep in the crop and some already out on the stubble. Each is a small distinct figure — a faded wax jacket, an orange waterproof, a flat cap, a woolly hat, one with a white flag held high on a cane, one with a flag held low, one tapping a stick, one pausing to untangle a flag from the crop. Far along the field to the left, two more men stand alone at their own pegs, small and still. A few tiny partridges are lifting as distant specks above the crop.
+
+Him: the man from the character reference, bareheaded, in a brand-new tweed shooting jacket that is still stiff, with the fold creases from the packaging plainly visible across the back and sleeves. His head is bent over a small black handset with a keyboard held low in his right hand, its screen a soft glow. His left arm is held back and out toward the camera at waist height, palm open and up, five separate relaxed fingers, waiting for a gun to be put in it without looking round. He is twenty-five, and the back of his neck and his ear are young and unlined.
+
+The loader: only the loader's two hands and forearms come into the bottom left of the frame, holding a side-by-side shotgun out toward him, broken open at the hinge with the barrels pointing down at the stubble and the empty breech showing. The hands are weathered, with reddened knuckles and dirt in the creases, and the cuffs are an old waxed cotton jacket worn pale along the seams. The hands stop about a foot short of his open palm.
+
+Light: flat grey overcast morning light from the whole sky, soft and shadowless, the stubble a dull straw colour, the tweed's colours muted, the far hedge a dark band.
+
+Style: a newspaper photograph of the 2008 financial crisis, shot on a Canon EOS-1D Mark III with a 35mm lens at a small aperture by available daylight — fine digital noise, muted colour, slight overexposure in the sky, no retouching.
+
+Constraints: the gun is broken open with its barrels pointing at the ground, and nobody in the picture is aiming or holding a closed gun. The loader is seen only as hands and cuffs. His face is turned away so that only his ear and the edge of his cheek show, and the beaters are too far away for any face to be made out. Each beater is a different figure in different clothes. The birds are only distant specks in the sky. The peg is a plain wooden stake and the phone screen is too small to read. No brand names, logos, numbers or readable labels anywhere. Ensure historical accuracy for 2008, and every person, garment and object is British.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Sources for this entry (2026-09-13):**
+[Sporting Gun — technique for driven partridge](https://sporting-gun.com/shooting/technique-for-shooting-driven-partridge/) `[community]` ·
+[What to expect on a driven game day — pegs, beaters' flags, loaders](https://www.shootinggirlwithanafro.com/post/what-to-expect-on-a-driven-game-day-pheasant-and-partridge-shooting-uk) `[community]` ·
+[The Stalking Directory — driven partridge, what to expect](https://www.thestalkingdirectory.co.uk/threads/driven-partridge-what-to-expect.70348/) `[community]` ·
+[Fliki — Nano Banana 2 prompting guide](https://fliki.ai/blog/nano-banana-2-prompting-guide) `[community]` ·
+[Miraflow — Nano Banana prompts that look like real photos](https://miraflow.ai/blog/50-nano-banana-prompts-that-look-like-real-photos-copy-paste) `[community]`
+
+### 1m-g — the shoot, v2 · **still** · written 2026-09-13, unrun · *supersedes v1 above*
+
+**Jack, 2026-09-13:** *"he should be aiming the gun at the sky cinematically."*
+
+#### 🔑 "Cinematically" is built with geometry, not the word
+
+*"Cinematic"* is on the [quality-word kill list](../../google-flow/nano-banana-2.md#️-the-quality-word-kill-list-now-includes-cinematic):
+it commissions glossy aesthetic mode, and so does *The Gentlemen*'s smoke-and-red look. **So the prompt
+never says it, and builds it from composition instead:**
+
+- 🔑 **One hard diagonal.** The raised barrels cut up across the grey sky from lower right to upper left,
+  against the flat horizontal line of beaters below. Horizontal versus diagonal is what makes it read as
+  an event rather than a pose.
+- **The camera drops to chest height** (the loader half-crouched, second gun ready), so he rises above
+  the horizon and the gun is against sky, not against field.
+- **The decisive moment:** the gun is mounted, cheek on the stock, the instant before the shot. Nothing
+  has happened yet, which [holds a still](../../cinematography/stills.md#1-what-makes-a-still-hold).
+
+#### 🔴 Gate 2 matters more now
+
+A man aiming a gun at the sky, shot from below, is **exactly the celebration grammar**
+[principle 24](../../cinematography/principles.md) warns about. The phone gag is gone (he needs both
+hands), so **the cost carries it**:
+
+- 🔑 **The loader's worn hands in the foreground, already holding his next gun**, so the labour is the
+  nearest thing to the lens.
+- **The beaters' line under the barrels**, the people walking toward him so he doesn't move.
+- 🔑 **New comic detail, replacing the phone:** a **blank price tag still hanging from the cuff** of his
+  brand-new tweed on its plastic tie, swinging under the raised arm. The fold creases stay. **He bought
+  the costume this week.** ⚠️ *Invented rather than observed*, and flagged as such. The tag is blank so
+  there is no text; delete that clause if it comes back reading as a label.
+
+#### 🔴 Policy design for a gun that is now aimed
+
+| Risk | The clause |
+| --- | --- |
+| **An aimed firearm** ([harm categories](../../flow/failure-modes.md#a3-harm-categories)) | Aimed **steeply up into empty grey sky, high above everything**, which is how a real driven shoot works (the gun never swings through the line). The prompt asks for the instant before the shot, so there is no firing, no muzzle flash and no smoke |
+| **Animals** | The partridges stay as distant specks over the crop, **away from where the barrels point**. No bird is hit or falling |
+| **A person in front of a gun** | The beaters are **far below and ahead, and the barrels point well above their heads into the sky**, stated positively |
+| **Hands fuse with the gun** ([2026's hand failure is fusion with held objects](../../google-flow/nano-banana-2.md)) | Named positively: separate fingers around the fore-end and grip. His hands are **mid-frame, not near the lens** |
+
+Everything else is kept from v1: the loader's vantage, deep focus, beaters individuated by garment,
+object and distance (never age or gender), the plain peg, and a flat overcast newspaper photograph.
+
+**Model:** **Nano Banana 2** (not Lite). **Paste into:** Flow → image prompt box. **Aspect:** 16:9.
+**Resolution:** 2K. **Character:** `@2008 - tarquin`. **No reference image.**
+
+**Check these on the result, worst first:**
+
+- The barrels point steeply up into empty sky, well above the beaters
+- There is no flash, smoke or falling bird
+- The loader's hands in the foreground hold a broken-open second gun
+- His fingers are separate from the gun
+- The beaters are different figures, not clones
+- The price tag is blank
+
+```prompt
+SCENE:
+
+This is one frame of a fast-cut montage about a young City of London trader in September 2008, the week the banks began to fail. In this frame he is standing at his peg on a driven partridge day in the English countryside, the gun mounted to his shoulder and aimed high into the sky, in the instant before he fires, while his loader waits behind him with his next gun and a line of beaters walks toward him across the field.
+
+Camera: a 35mm lens at chest height, a pace behind him and to his left, tilted slightly up, taken from exactly where his loader is half-crouched. He stands in the right half of the frame from the knees up, seen from behind and a little to the side, rising above the horizon, so the back of his head, his ear and the edge of his cheek pressed to the stock show and his eyes do not. His raised barrels make one long straight diagonal up across the grey sky from lower right to upper left. The field runs away past him at an angle toward the left, and nothing is square to the lens. The picture is sharp from the loader's hands to the far hedge.
+
+Subject: a wide September stubble field under a flat grey sky, muddy tractor tramlines running away across it, a short plain wooden peg stake in the stubble at his feet. About a hundred and fifty metres off, a strip of tall green game crop runs along the far side of the field in front of a dark hedgerow, and a long uneven line of about fifteen beaters is coming out of it toward him along the low horizon, spaced irregularly, some still waist-deep in the crop and some already out on the stubble. Each is a small distinct figure — a faded wax jacket, an orange waterproof, a flat cap, a woolly hat, one with a white flag held high on a cane, one with a flag held low, one tapping a stick. Far along the field to the left, two more men stand alone at their own pegs, small and still. A few tiny partridges are lifting as distant specks above the crop, far to the left of where his barrels point.
+
+Him: the man from the character reference, bareheaded, in a brand-new tweed shooting jacket that is still stiff, with the fold creases from the packaging plainly visible across the back and sleeves, and a small blank white card price tag still hanging from the cuff of his raised left sleeve on a thin plastic tie. He has a side-by-side shotgun mounted firmly into his shoulder, his cheek down on the stock, the barrels pointing steeply up into the empty sky high above the field and well above the heads of the beaters. His left hand is stretched along the fore-end and his right hand is on the grip, five separate fingers on each hand wrapped clearly around the wood. His weight is on his front foot. He is twenty-five, and the back of his neck and his ear are young and unlined.
+
+The loader: in the near bottom left of the frame, only the loader's two hands and forearms, holding a second side-by-side shotgun ready for him, broken open at the hinge with the barrels pointing down at the stubble. The hands are weathered, with reddened knuckles and dirt in the creases, and the cuffs are an old waxed cotton jacket worn pale along the seams.
+
+Light: flat grey overcast morning light from the whole sky, soft and shadowless, the stubble a dull straw colour, the tweed's colours muted, the far hedge a dark band, and the barrels a dull dark line against the pale sky.
+
+Style: a newspaper photograph of the 2008 financial crisis, shot on a Canon EOS-1D Mark III with a 35mm lens at a small aperture by available daylight — fine digital noise, muted colour, slight overexposure in the sky, no retouching.
+
+Constraints: the only gun that is closed is his, and it points steeply up into empty sky, high above every person and every bird in the picture. It is the moment before the shot, so the air is clear. The loader's gun is broken open and points at the ground, and the loader is seen only as hands and cuffs. His face is turned away so that only his ear and the edge of his cheek show, and the beaters are too far away for any face to be made out. Each beater is a different figure in different clothes. The birds are only distant specks in the sky. The price tag is a plain blank card. The peg is a plain wooden stake. No brand names, logos, numbers or readable labels anywhere. Ensure historical accuracy for 2008, and every person, garment and object is British.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### 1m-g v2 — round 1, **handed over as the plate, 2026-09-13** (Jack)
+
+- ✅ **What landed:** the loader's vantage, the barrels on a hard diagonal against a flat grey sky, the
+  loader's filthy weathered hands in the foreground with the second gun, the new tweed, **the blank
+  price tag**, the beaters in orange and wax jackets with flags, two other men at pegs far left, three
+  birds, the plain stake, stubble and maize.
+- ⚠️ **Deviations, accepted:**
+  - The guns came back **over-and-under**, not side-by-side.
+  - The tag hangs from the **jacket hem**, not the cuff.
+  - The beaters are a **near-neat line, closer** than 150m, and are standing rather than walking.
+  - The loader's gun **may be closed**.
+  - His cheek and brow are **more visible** than asked.
+- ⬜ **Master not banked:** save it as `camera/reference/1m-g-the-shoot-ACCEPTED.png`.
+
+#### 1m-g — the clip · **video** · written 2026-09-13, unrun
+
+#### 🔑 The design: he pulls, and misses
+
+**The event is one bang.** His shoulder takes the recoil, the barrels kick up and settle, and **the three
+birds fly on, untouched.**
+
+- 🔑 **The miss is the joke, and it is free.** The birds simply carry on across a blank sky, which is
+  the easiest motion there is (small specks on a plain ground). **Fifteen people walked a field so he
+  could miss.**
+- 🔑 **It also solves the policy problem.** No bird is hit or falls, so there is no animal harm to
+  classify.
+- **The price tag swings on the recoil**: one small pendulum, and the joke gets a pulse.
+- **The recoil is one fast motion that comes back to rest**: a jolt, not a journey.
+
+#### 🔴 The risks
+
+| Risk | The clause |
+| --- | --- |
+| **The filter reads word associations, not intent**: *"shoot"* is a known false-positive trigger `[community]` ([veo3ai](https://www.veo3ai.io/blog/veo-3-safety-filters-real-faces-logos-audio-prompt-rewrites-2026)) | 🔑 **The prompt never says *shoot*, *fire*, *gun*, *kill* or *hunt*.** It says **the 12-bore goes off**, **recoil** and **the barrels**. The sound is described as **a bang**. ⬜ Untested on Omni, so the fallback removes the discharge entirely |
+| **Muzzle flash or smoke overdelivers** ([particle nouns have no volume control](../../google-flow/omni-flash.md#️-particle-nouns-have-no-volume-control-observed-n2)) | **Never named.** A shotgun in daylight shows almost nothing. The bang and the recoil carry it |
+| **A rigid barrel bends or morphs while moving** | The kick is small: *"a hand's width, then settles back on the same line"*. That is one short movement back to its start |
+| **Fifteen walking figures morph and clone** ([walkers on Frames](../../google-flow/omni-flash.md#-on-frames-a-walking-extra-morphs--stillness-is-the-only-thing-that-holds-them-observed-2026-08-26)) | 🔑 **They came back standing, so they stay standing.** That is zero change from the plate. Only the flags stir. [Hold them still, stated positively](../../google-flow/omni-flash.md#-on-frames-a-walking-extra-morphs--stillness-is-the-only-thing-that-holds-them-observed-2026-08-26) |
+| **The loader's hands, or the second gun, drift** | Pinned as steady and holding |
+| **Slow motion or weightlessness** | *At real speed*, plus the [shutter clause](../../google-flow/omni-flash.md#the-shutter-is-the-tell-nobody-prompts-for) so the recoil smears |
+| **Voices, since beaters shout "over"** | `No music and no voices.` No colons after an action, no quotation marks |
+
+**Routing:** Omni Flash → **Frames**, with the accepted `1m-g` v2 image as the start frame. End slot empty.
+**No Character, no Ingredients**: the geometry of the field is the argument, and a near-static clip
+holds the face. **4s.** ⬜ **Draft at 360p** and watch the barrel stay straight, the birds keep flying
+rather than drop, and the beaters hold still.
+
+**Paste into:** Flow → **Frames to Video**. **Start frame:** the accepted `1m-g` v2 image.
+**End frame:** empty. **No Character, no Ingredients.** **Duration:** 4s. Primary:
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame, as one single continuous shot with no cuts, at real speed. The camera is locked off and holds completely still, and the flat grey light stays exactly as it is.
+
+After a moment the 12-bore goes off with a single hard bang. The recoil rocks his shoulder back and the barrels kick up a hand's width, then settle back onto the same line, and the white price tag swings on its tie at his hem.
+
+The three birds in the sky carry on flying steadily away to the left, untouched.
+
+The beaters stay standing in their line watching, and their flags stir in the breeze. The loader's weathered hands hold the spare 12-bore steady in the foreground, and the two men at the far pegs stay where they are.
+
+Shot at 24fps with a 180-degree shutter, so the recoil smears with motion blur while everything still stays sharp.
+
+Audio: one flat hard bang rolling away across open fields, the wind over the stubble and the maize, and a few distant rooks. No music and no voices.
+
+Thanks.
+```
+
+⬜ **Fallback, only if the primary is refused or comes back wrong**: same tab, same start frame. **No
+discharge.** He tracks the birds and they fly on. **Add the bang in Premiere** from a library effect.
+
+```prompt
+The attached image is a frame from this shot. Continue it from exactly this frame, as one single continuous shot with no cuts, at real speed. The camera is locked off and holds completely still, and the flat grey light stays exactly as it is.
+
+He holds his aim and swings the barrels slowly and smoothly a little to the left, following the three birds as they carry on flying steadily away across the sky, and the white price tag sways at his hem.
+
+The beaters stay standing in their line watching, and their flags stir in the breeze. The loader's weathered hands hold the spare 12-bore steady in the foreground.
+
+Audio: the wind over the stubble and the maize, and a few distant rooks. No music and no voices.
+
+Thanks.
+```
+
+**Post:** crop the border · 🔑 **cut in just before the bang and out as the birds clear**, about 1.5s ·
+if the barrel bends or a bird drops, **re-roll, don't grade** · run `scripts/delivery-qc.sh`.
+
+**Sources (2026-09-13):**
+[veo3ai — Veo safety filters read word associations; "shoot" false positives](https://www.veo3ai.io/blog/veo-3-safety-filters-real-faces-logos-audio-prompt-rewrites-2026) `[community]` ·
+[AI Free Forever — fixing Veo prompt errors](https://aifreeforever.com/blog/how-to-fix-veo-prompt-errors-and-get-better-ai-video-results) `[community]` ·
+[Why AI videos look fake — weightless motion](https://medium.com/@nandinilreddy/why-ai-videos-look-fake-and-how-physics-can-fix-it-bb84149831d8) `[community]`
+
+---
+
 ## Scene 4 — 2026, the Shard
 
 ### 4a — the 2026 skyline · **still** · accepted
@@ -2811,6 +5515,316 @@ Audio: the two of them laughing out loud over engine drone and road noise, wind 
 
 Thanks.
 ```
+
+### 2f — Bob and Jo filler set, outside the house · **video ×4** · written 2026-09-13, unrun
+
+**Jack, 2026-09-13:** *"We need more video of Bob to match the length of the narration… easy ones of
+Bob and his wife having coffee outside their house, about to get into their car, loading luggage and
+smoking cigarettes, all separate videos… I just need filler videos."*
+
+**The job is runtime, so the design is *easy*.** Every clip is one small, calm, continuing action; locked
+camera; flat overcast daylight in the 2a/2b register; about 8 seconds of *nothing going wrong*.
+
+**Routing, and the one real risk:**
+
+- **Omni Flash → Ingredients to Video**, with the **accepted `2b` still** as the only ingredient.
+  **Not Frames**, because there is no start frame of the house.
+- 🔴 **Do not attach `@Bob`.** That Character is the 2026 face, eighteen years older and damaged. Jo
+  has no Character.
+- 🔴 **Ingredients re-renders faces from a reference and does not reliably hold an unnamed likeness**
+  ([`omni-flash.md`](../../google-flow/omni-flash.md#️-ingredients-re-renders-faces--it-will-not-hold-an-unnamed-person-observed-2026-08-20)).
+  **So the framing keeps faces small**: medium-wide, three-quarter or side-on, never a close-up. That is
+  right for filler anyway, since it sits under narration and nobody is studying a face. If a face drifts,
+  re-roll.
+- **The reference is declared as people-only** ("not a frame from this shot"), or Ingredients will try
+  to put them back in the car.
+- **No appearance description of either of them** ([house rule](#conventions)); they keep the
+  fleece and the mauve top from the reference, because it is the same morning.
+- **The car is described, not referenced**, and **not named**, because a marque renders its badge
+  ([§34](../../google-flow/nano-banana-2.md#34--naming-a-marque-renders-its-badging-and-no-downstream-constraint-removes-it-observed-2026-09-08)).
+  It is matched to the 2a car: a silver mid-2000s estate with a black roof box.
+- **No dialogue**: they stay quiet, and every prompt ends `No music and no voices.`
+- **Smoke, steam and exhaust are kept thin and named once.**
+  [Particle nouns overdeliver](../../google-flow/omni-flash.md#️-particle-nouns-have-no-volume-control-observed-n2).
+
+**Paste into (all four):** Flow → Omni Flash → **Ingredients to Video** prompt box. **Ingredient:** the
+accepted `2b` still. **No Character.** **Aspect:** 16:9. **Duration:** 8s. One at a time.
+
+#### 2f-1 — coffee on the front step
+
+```prompt
+The attached image is a reference for the two people only — their faces, hair and clothes. It is not a frame from this shot. This shot takes place outside their house, the same morning, before they leave on holiday.
+
+A locked-off documentary shot on 35mm film. The camera stands at the edge of the pavement, about five metres away, level, looking across a small paved front drive at the front door of an ordinary red-brick semi-detached house in a British suburb in 2008. The man and the woman from the reference sit side by side on the front doorstep, seen full length and a little from the side, each holding a mug of coffee in both hands. Beside them on the drive is an ordinary silver mid-2000s estate car with a black plastic roof box on its roof bars, its back seats piled with bags.
+
+The two of them sit quietly and drink their coffee. He takes a slow sip. She leans her shoulder against his and looks over at the packed car. A faint thread of steam rises from each mug. They both breathe and blink naturally, at different moments.
+
+Flat grey overcast morning light, no sun and no shadows. Muted cool-neutral colour, fine film grain, and nothing legible anywhere, including the car's number plate.
+
+Audio: birdsong in the front gardens, a distant road somewhere behind the camera, and the small clink of a mug. No music and no voices.
+
+Thanks.
+```
+
+#### 2f-2 — about to get into the car
+
+```prompt
+The attached image is a reference for the two people only — their faces, hair and clothes. It is not a frame from this shot. This shot takes place outside their house, the same morning, as they are about to leave on holiday.
+
+A locked-off documentary shot on 35mm film. The camera stands on the front drive of an ordinary red-brick semi-detached house in a British suburb in 2008, level, about six metres in front of an ordinary silver mid-2000s estate car with a black plastic roof box on its roof bars, seen at an angle from the front corner. It is a British right-hand-drive car. Both front doors are open. The man from the reference stands at the open driver's door on the right side of the car and the woman stands at the open passenger door on the left, both seen from the waist up above the roof line.
+
+They look at each other across the car roof. He pats the roof twice with his flat hand. She gives a small smile and a nod. Then they both just stand there a moment longer, taking a last look at the house, breathing and blinking naturally.
+
+Flat grey overcast morning light, no sun and no shadows. Muted cool-neutral colour, fine film grain, and nothing legible anywhere, including the car's number plate.
+
+Audio: birdsong, a distant road somewhere behind the camera, and the dull thud of a hand on a car roof. No music and no voices.
+
+Thanks.
+```
+
+#### 2f-3 — loading the luggage
+
+```prompt
+The attached image is a reference for the two people only — their faces, hair and clothes. It is not a frame from this shot. This shot takes place outside their house, the same morning, as they pack for a holiday.
+
+A locked-off documentary shot on 35mm film. The camera stands on the pavement at the end of a small paved front drive of an ordinary red-brick semi-detached house in a British suburb in 2008, level, about six metres behind and to one side of an ordinary silver mid-2000s estate car with a black plastic roof box on its roof bars. The tailgate is open and the boot is already packed high with soft holdalls, a rucksack and coats. The man and the woman from the reference stand at the back of the car, seen full length and side-on.
+
+He pushes one more soft holdall firmly into the top of the packed boot, shoving it into place with both hands. She stands beside him holding a rolled-up sleeping bag, waiting her turn, and watches him with a patient look. They both breathe and blink naturally, at different moments.
+
+Flat grey overcast morning light, no sun and no shadows. Muted cool-neutral colour, fine film grain, and nothing legible anywhere, including the car's number plate.
+
+Audio: birdsong, a distant road somewhere behind the camera, and the soft rustle and thump of a holdall being pushed into a boot. No music and no voices.
+
+Thanks.
+```
+
+#### 2f-4 — a cigarette by the car
+
+```prompt
+The attached image is a reference for the two people only — their faces, hair and clothes. It is not a frame from this shot. This shot takes place outside their house, the same morning, before they leave on holiday.
+
+A locked-off documentary shot on 35mm film. The camera stands on the pavement, level, about five metres away, looking at the side of an ordinary silver mid-2000s estate car with a black plastic roof box on its roof bars, parked on the small paved front drive of an ordinary red-brick semi-detached house in a British suburb in 2008. The man and the woman from the reference lean side by side against the side of the car, seen full length, each holding a lit cigarette.
+
+They have a quiet cigarette together before the drive. He takes a slow drag and lets out a thin stream of smoke. She holds hers low by her side and looks up the street. They stay leaning against the car, relaxed, breathing and blinking naturally at different moments.
+
+Flat grey overcast morning light, no sun and no shadows. Muted cool-neutral colour, fine film grain, and nothing legible anywhere, including the car's number plate.
+
+Audio: birdsong, a distant road somewhere behind the camera, and a light breeze. No music and no voices.
+
+Thanks.
+```
+
+#### 2f-5 — Bob alone, a cigarette at the motorway services · *written 2026-09-13, unrun*
+
+**Jack's ask:** *"only Bob smoking at a UK motorway service station, with the Bob character attached."*
+
+🔴 **`@Bob` is the 2026 face**: eighteen years older, weathered, rough-sleeper clothes. The holiday is
+2008. This prompt attaches him anyway, **on Jack's instruction**. ~~It first carried an age-down
+clause and the 2008 fleece~~, and that made his hair drift ([revision 1](#2f-5--bob-alone-a-cigarette-at-the-motorway-services--written-2026-09-13-unrun)
+below). **The prompt now describes nothing about him.** If he needs to read as 2008, swap the Character
+for the `2b` still as the ingredient and re-run the same text.
+
+**Easy by design:** he stands still, takes one drag and exhales. **Nothing else in frame moves.** Parked
+cars and lorries stay still, and the motorway exists only as sound
+([demote it to sound](../../google-flow/omni-flash.md#slop-counters-specific-to-motion-community)).
+**The building's signs sit above the top of the frame**, so no services branding gets rendered.
+
+**Paste into:** Flow → Omni Flash → **Ingredients to Video**. **Ingredient:** `@Bob`. **Aspect:** 16:9.
+**Duration:** 8s.
+
+**Revision 1, 2026-09-13: the hair changed during the clip.** Jack: *"why is his hair changing in the
+video when the character is attached?"* **Cause: the prompt described him.** It gave an age
+(*thirty-two*), a younger, undamaged face, tidy stubble and a new outfit, which breaks
+[§19](../../google-flow/nano-banana-2.md#19--2s-do-not-restate-the-reference-applies-to-people-not-just-sets-confirmed-2026-08-27).
+The prose and `@Bob` were pulling against each other. ⚠️ *Inference, unverified:* the `@Bob` sheet shows
+him in a beanie in every view, so the Character never shows his hairline. Once the prose took the beanie
+off, the engine had to make up the top of his head, and it made it up differently as the clip went on.
+**Fix:** every appearance clause is deleted, *in 2008* and the holiday context go too, and nothing about
+the shot changes. 🔴 **Trade-off:** he will now come back as 2026 Bob, with the beanie, long hair and
+hoodie. If he has to read as 2008, the route is the `2b` still as the ingredient, not more prose.
+
+**Revision 2, 2026-09-13: a black border around the clip.** In Jack's screenshot the picture sits
+inside an uneven black frame with rounded corners, like a scanned film frame. ⚠️ **Inference,
+unverified:** the likely cause is *"shot on 35mm film"*, which asks for a photographed film frame, and
+the edges of a film frame are exactly that. **Fix:** the film-stock words are gone and the frame edge
+is not mentioned at all, because
+[§31](../../google-flow/nano-banana-2.md#31--27-catches-the-output-frame-too-no-letterbox-bars-produces-letterbox-bars-observed-2026-09-08-n3)
+found that asking for "no border" draws one. ⬜ **Free check still owed:** §31 also caught Flow's
+*viewer* adding bars that were not in the file. Download the clip and look at the original before
+blaming the prompt. **Fixed in the same pass:** the same screenshot has legible lettering on the
+building (*"The building's signs are above the top of the frame"* drew the signs), so that sentence
+now only describes what is behind him.
+
+**Revision 3, 2026-09-13: a camera on a stand showed up in the shot.** Jack: *"there is for some reason
+a camera on a stand in the video."* **Cause: revision 2 wrote *"a still, locked-off camera on a
+tripod. The camera stands in the car park"***, which is a camera, on a tripod, standing in the car
+park. The engine drew the object it was given (same mechanism as the signs in revision 2 and
+[§30](../../google-flow/nano-banana-2.md#30--a-physical-analogy-overrules-a-stated-number--and-it-is-how-28-keeps-happening-observed-2026-09-08)).
+**Fix:** the words *camera* and *tripod* are gone from the whole prompt, audio line included. The
+shot is described only as what we see and how far away it is. The framing is the same.
+
+**Revision 4, 2026-09-13: strip it to the bone.** Jack: *"make the prompt as simple as possible because
+it keeps adding shit like duplicate cigarettes."* 🔑 **Every extra noun was a new thing to draw.**
+Revisions 1–3 each fixed one object the prompt had asked for by accident (hair, border, signs, a
+camera), and the ashtray bin, the ash tap and the lorries were still asking for more. **Now there is one
+man, one cigarette, one place and one action.** No bin, no ash, no lorries, no framing numbers.
+
+```prompt
+The man from the character reference stands outside a British motorway service station on an overcast day, smoking a cigarette. He takes a slow drag and breathes out.
+
+Audio: distant motorway traffic. No music and no voices.
+
+Thanks.
+```
+
+**Post:** these are filler, so trim each to whatever the narration needs. ⚠️ **Watch faces on playback**:
+if either stops looking like the `2b` pair, re-roll. Run `scripts/delivery-qc.sh` before shipping.
+
+### 2g — the last good day: a services stop · **still → video ×3** · written 2026-09-13
+
+**Jack, 2026-09-13:** *"Tea on the car bonnet", "The chip thief", "Asleep in the passenger seat" —
+one at a time, avoid AI slop, optimise for Nano Banana, use the cinematography files.* Something light
+and nice before the crash. The craft basis is *Up*'s married-life montage: small, specific, slightly
+silly moments with no dialogue. The audience knows what is coming, so every warm frame is dramatic
+irony. 🔴 **No shot hints at blame for the crash** (no loose seatbelt, no eyes off the road): canon
+leaves the crash blank.
+
+**⬜ Next session, start here:**
+
+1. **2g-1 tea on the bonnet.** Still returned. Video written and unrun, so see how it came back.
+2. **2g-2 the chip thief.** Not written. Jo keeps stealing Bob's chips from a shared Burger King bag at a
+   plastic services table, and he notices on the third one.
+3. **2g-3 asleep in the passenger seat.** Not written. Jo dozes, Bob glances over at her and turns the
+   radio down.
+
+One shot at a time: still, then video. Run shot-craft first each time.
+**The other ideas from the same list are parked, not commissioned:** Little Chef fry-up, the road atlas
+route, pick 'n' mix, Tebay ducks, air guitar at a red light, feet on the dash, hand out of the window,
+the TomTom falling off, the static fight, the egg sandwich, sitting on the boot, the rain picnic, and the
+flask of tea.
+
+**Shared routing for all three stills:** Flow → **Nano Banana 2** (check the picker is not on 2 Lite;
+"Nano Banana Pro 2" does not exist). **One reference: the accepted `2b` still**, declared as the two
+people only. **No `@Bob`** (2026 face). **No appearance description**
+([§19](../../google-flow/nano-banana-2.md#19--2s-do-not-restate-the-reference-applies-to-people-not-just-sets-confirmed-2026-08-27)).
+**Faces no larger than in `2b`**, or the reference cannot carry them
+([reference-size rule](../../google-flow/nano-banana-2.md#-confirmed-2026-09-09-a-reference-carries-a-face-only-at-the-size-the-face-is-in-it)).
+Same stock and overcast register as 2a/2b so they cut together, minus *"hyper-realistic"*, which is on
+the [quality-word kill list](../../google-flow/nano-banana-2.md#️-the-quality-word-kill-list-now-includes-cinematic).
+
+#### 2g-1 — tea on the car bonnet · **still** · written 2026-09-13, unrun
+
+**Shot spec (shot-craft):**
+
+1. **Job:** the first time we see them *outside* the car, being daft with each other. Warmth, plus one
+   small joke the viewer gets in a second.
+2. **Register:** the human-scale exception ([R2](../../cinematography/principles.md)): eye level,
+   a tight two-shot, nothing monumental. No visible-cost gate, because nothing monumental is in frame.
+3. **Depth:** foreground is the silver bonnet running out of focus from the bottom edge. It carries the
+   **road atlas lying face-down**, which rhymes with the scene-3 alternate of the atlas face-down in the
+   verge. It is never pointed at. Midground is the couple leaning on the front wing. Background is the
+   car park, soft.
+4. **Focal point:** his face, winning on depth position and her gaze, since she is looking at him.
+5. **Light:** the flat overcast sky, and that is all. Scene 2's register.
+6. **Camera:** eye height, level, about four metres, 50mm, just off the car's front corner looking back
+   along the bonnet.
+7. **Withheld:** the services building and its signs. Only a low roofline, out of focus.
+8. **Unresolved question** ([stills §1](../../cinematography/stills.md)): he has **just burnt his
+   mouth on the tea**, and she is **holding in a laugh**. Both are mid-moment, not posed.
+
+**Anti-slop, per tell:**
+
+- **Grins with bright teeth:** mouths closed, and *"neither shows any teeth"*.
+- **Emotion words become caricature:** muscles instead of *happy*, the eyes described at more length
+  than the mouths, and *"the expressions are small"*.
+- **Dead or wandering eyes:** each person is given a thing to look at. He looks at his cup, she looks at
+  his face.
+- **Head angle defaults, especially on women:** both head angles are stated.
+- **Steam overdelivers** ([§10](../../google-flow/nano-banana-2.md#10--the-atmosphere-family-is-rendered-for-free-and-overdelivers-when-named-observed-n3)):
+  not named.
+- **Branded cups and number plates:** a scoped negation at the end, attached to named things
+  ([§27](../../google-flow/nano-banana-2.md#27--ask-for-an-object-never-an-absence--a-subtractive-shape-comes-back-inverted-observed-2026-08-30)).
+- **"British" alone is weak:** concrete UK features named (patched tarmac, painted bays, a low brick
+  services building), plus the era line.
+
+**Paste into:** Flow → **Nano Banana 2** → image prompt box. **Reference:** the accepted `2b` still,
+and nothing else. **Aspect:** 16:9. **Outputs:** 2.
+
+```prompt
+SCENE:
+
+Candid documentary photograph on 35mm Kodak Ektachrome. Fine natural grain, muted cool-neutral colour, flat overcast daylight only, calm observational tone.
+
+The attached image is a reference for the two people only — their faces, hair and clothes. It is not a frame from this shot. This photograph is taken the same day, outside, at a motorway service station stop on their drive.
+
+Camera and framing: Eye level and level, 50mm lens at f/2.8, standing just off the front corner of their car and looking back along the bonnet at the two of them, about four metres away. A medium two-shot from the hips up: the man and the woman from the reference lean back side by side against the front wing of the car. He is on the left of the frame and she is on the right, with a little more room on her side. The silver bonnet runs away from the bottom edge of the frame towards them, soft and out of focus nearest the lens, with a paper road atlas lying open and face-down on it. Focus sits on his face.
+
+Action: He has just taken a sip of tea that is far too hot. His head is tipped slightly back, his eyes are squeezed half shut and wet at the corners, his brows are drawn up in the middle, and his lips are pressed tightly together. He holds the paper cup out away from himself in one hand, looking down at it. She has turned her head three-quarters towards him and is looking straight at his face. Her lower eyelids are raised, the outer corners of her eyes are creased, and her lips are pressed together, holding in a laugh. She holds her own paper cup in both hands against her chest. Neither of them shows any teeth, and neither is looking at the camera or aware of it. The expressions are small, caught mid-moment and unposed.
+
+Environment: Their car is an ordinary silver mid-2000s estate with a black plastic roof box on its roof bars and bags piled on the back seats. Behind them, soft and out of focus, is a British motorway service-station car park: patched grey tarmac with painted white bay lines, a row of ordinary parked hatchbacks and estates, and the flat roofline of a low brick services building in the far distance.
+
+Light: Only the flat grey overcast sky. No sun, no shadows, cool and even, unflattering.
+
+Details: Real skin texture with visible pores and stubble, creased everyday clothes, fine natural film grain.
+
+Constraints: Ensure historical accuracy for Britain in 2008. The paper cups are plain white with no print. No logos, signs or readable number plates anywhere in the frame. Only the two of them are in the foreground.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Round 1 returned, 2026-09-13, and Jack took it straight to video.** What came back differs from the
+spec in three ways, and the picture wins from here on
+([§7](../../google-flow/nano-banana-2.md#7--write-the-keep-list-from-the-accepted-still-not-from-the-prose-that-made-it)):
+
+- **They sit on the front of the bonnet, facing the lens.** The spec had them leaning on the wing with
+  the bonnet receding. The result is square-on and centred, with the roof box dead centre, which is the
+  [§37 symmetry magnet](../../google-flow/nano-banana-2.md#37--a-square-on-architectural-feature-is-a-symmetry-magnet-and-a-composition-adjective-will-not-move-it-observed-2026-09-12).
+- **The atlas is face-up between them.** The face-down rhyme with scene 3 is lost.
+- **The services building is sharp in the background**, with its signs too small to read.
+
+Both expressions landed: his wince, and her holding in a laugh with her mouth closed.
+
+#### 2g-1 — tea on the car bonnet · **video** · written 2026-09-13, unrun
+
+**Tab: Frames**, with the returned still as frame one. Nothing here is a Flow Character, so
+[Ingredients would re-render both faces](../../google-flow/omni-flash.md#️-ingredients-re-renders-faces--it-will-not-hold-an-unnamed-person-observed-2026-08-20).
+The set and the framing also have to hold. 🔴 **The expression arc is kept small on purpose.**
+[2b's full laugh lost both faces on Frames](../../google-flow/omni-flash.md#-the-tab-rule---amended-2026-08-18-ingredients-holds-identity-frames-holds-staging),
+so she *stifles* the laugh (eyes narrow, shoulders shake, mouth stays shut) and never opens up.
+
+**Built from the 2026-09-13 web pass** ([`omni-flash.md`](../../google-flow/omni-flash.md#ninth-pass--2026-09-13-academic-community)):
+
+- **Speed stated** (*"at real speed"*, *"one short, sharp breath"*), because low motion is the trained
+  default.
+- **Each reaction tied to a trigger** (*"as he lowers the cup"*, *"watching him"*), not to a time.
+- **Her eyes move with the laugh**, so it doesn't read as a mouth-only mask.
+- **One small gesture each, not zero**, so nobody freezes like a statue.
+- **Breathing and blinking at different moments.**
+- **Motion only.** The frame carries the look.
+- 🔴 **No colon after anyone's action, and no quotation marks**
+  ([speech trap](../../google-flow/omni-flash.md#-the-speech-trap-is-punctuation-not-vocabulary)).
+  The draft had *"loses the fight with her laugh: her eyes…"*, and it was caught before handover.
+- **The camera stays locked** ([R7](../../cinematography/principles.md)). fal's "a tripod reads as an
+  ad" is logged as dissent and not followed.
+
+**Paste into:** Flow → **Omni Flash** → **Frames** → prompt box. **First frame:** the returned 2g-1
+still. **No end frame.** **Aspect:** 16:9. **Duration:** 8s.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. Locked-off camera, a single continuous shot, everything at real speed.
+
+As he lowers the hot cup, the man blows out one short, sharp breath through pursed lips and gives a quick small shake of his head, still frowning down at the tea. Watching him, the woman loses the fight with her laugh. Her eyes squeeze narrower, the corners of her pressed lips pull up, and her shoulders give two small shakes as her chin dips. Both of them breathe and blink naturally, at different moments. The parked cars stay where they are.
+
+Audio: distant motorway traffic and a light wind across the car park. No music and no voices.
+
+Thanks.
+```
+
+**Check before accepting:** both faces hold at the last frame, not just the first. The cups stay as
+single cups in their hands. Nobody speaks and her mouth stays shut. The cars in the background stay
+parked.
 
 ---
 

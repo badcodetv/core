@@ -9,6 +9,7 @@ API access 30 Jun 2026. **Still public preview.**
 **fifth pass 2026-08-14** ([Making a reference stick](#making-a-reference-stick-there-is-no-adherence-knob)) ·
 **sixth pass 2026-08-14** ([Making motion read as real](#making-motion-read-as-real)) ·
 **seventh pass 2026-09-09** ([Omni 1.1 Flash, and the speech-punctuation trap](#seventh-pass--omni-11-flash-and-the-speech-punctuation-trap-community-2026-09-09) — 🔴 **a colon triggers speech; a quotation mark burns a subtitle**) ·
+**eighth pass 2026-09-12** ([Fluids fail in two named ways](#-fluids-fail-in-two-named-ways--and-the-design-fix-is-to-put-the-hard-half-outside-the-clip-academic--community-2026-09-12) — 🔴 **start the clip after the hard part; never write the word *flash***) ·
 **Confirmed against our Flow session:** ~~never~~ **first confirmed run 2026-08-14** —
 see [What we actually confirmed](#what-we-actually-confirmed-2026-08-14).
 
@@ -384,6 +385,66 @@ Worth knowing before you design a shot around a subject:
 
 The instrument-playing entry is a live constraint for BadCode: a jazz-trio shot should keep the
 players near-static or in silhouette rather than asking for performance.
+
+### 🔴 Fluids fail in two named ways — and the design fix is to put the hard half outside the clip `[academic + community, 2026-09-12]`
+
+Found while writing camping's [`1m-m`](../stories/camping/prompts.md#1m-m--the-clip--video--written-2026-09-12-unrun),
+a shot whose subject **is** a pour. Not house-measured — read, not run — but it is specific enough
+to design against.
+
+> **Video diffusion models routinely violate elementary physics when generating fluids: liquid
+> columns break apart in mid-air, container water levels fail to rise as liquid is poured in, and
+> splashes disperse without regard to momentum or gravity.** The cause is training data: video-text
+> corpora carry almost no motion supervision, so models learn to **imitate the appearance of fluid
+> rather than its dynamics** — the same mechanism already recorded here for
+> [falling objects](#making-motion-read-as-real).
+
+The paper names two recurring families:
+
+| Family | What you see |
+| --- | --- |
+| **Unstable fluid geometry** | Column breakage, sudden volume change, gravity-inconsistent bouncing or floating |
+| **Bad fluid–container interaction** | Offset entry points, discontinuous liquid-level changes, splash directions that ignore the applied force |
+
+🔑 **The design rule, and it is the pour version of *a real camera never catches the whole fall*:
+start the clip after the hard part has already happened.** A vessel that is **already overfull** in
+the start frame never has to conserve volume, so the whole *level-change* family is out of scope by
+construction rather than by prompting. What is left — a stream continuing, foam sliding, paper
+wetting — is appearance, which is what the model is actually good at.
+
+**The three clauses that go with it**, all positive because
+[negation backfires here](#-negatives-do-not-work-and-they-actively-backfire):
+
+- **`one unbroken streak of the same width, in the same place`** — the positive form of *it does
+  not break up*. Naming *breakage* would name it in.
+- **Never request a splash.** Ask for **wetting**: *"the foam slides down the outside"*, *"the
+  paper goes dark where it reaches"*. A spreading stain is a slow single-vector event on a flat
+  plane, the same easy class as camping `1y`'s tide.
+- **The [24fps / 180° shutter clause](#the-shutter-is-the-tell-nobody-prompts-for)** — `[confirmed]`
+  on fast motion, and falling liquid is exactly that. It buys the streak instead of a sharp,
+  pasted-on column.
+
+⚠️ **And the honest limit, stated by the practitioners:** *"for anything where the water's exact
+volume, splash shape or surface behaviour has to be correct on delivery, this requires a different
+tool, not just a better sentence."* If a fluid has to be **exact**, that is an
+[ffmpeg or Premiere job](../video-fx/hybrid-method.md), not a prompt.
+
+Sources: [arXiv 2607.25321 — Physics-Grounded Fluid Video Generation](https://arxiv.org/abs/2607.25321) `[academic]` ·
+[Prompt Architects — VFX and effects prompting](https://prompt-architects.com/blog/360-vfx-and-effects-prompting) `[community]`
+
+### 🔴 Animating a flash photograph: never write the word *flash* `[house rule, 2026-09-12]`
+
+A frame lit by an on-camera flash is **one instant of light**. Asked to animate it, the engine has
+every invitation to turn the light into an event — a second pop, a flicker, a lamp warming.
+[Nano Banana §35](./nano-banana-2.md#35--a-flash-described-as-an-object-in-the-room-is-drawn-as-a-lamp-observed-2026-09-11-n1)
+already records that a flash *described as an object in the room* is drawn as a lamp, `[observed]`
+on the still side (camping `1m-e` round 1).
+
+🔑 **In a clip block, name no source at all.** State the light as a fact that holds:
+**`the light in the picture stays exactly as it is throughout`** — positive, ownerless, and there
+is nothing in the frame for the model to go looking for. Same shape as the
+[off-frame-light ruling](#-observed-2026-09-09-naming-an-off-frame-light-source-by-its-object-binds-it-to-a-visible-one):
+**a light named by its behaviour cannot bind to an object.**
 
 ### The two-part constraints-first frame (Veo-style, still useful)
 
@@ -1577,6 +1638,80 @@ experiment that would settle it.
 
 **All `[untested]` against our own session** except where this file already says otherwise.
 
+
+## Eighth pass — 2026-09-11 `[vendor]` `[community]`
+
+Run for the camping `1m-2` clip (a man jabbing a biro, Frames tab).
+
+- **Flow's Omni durations are 4, 6, 8 or 10 seconds** `[vendor]`
+  ([Flow models](https://support.google.com/flow/answer/16352836)). 🔑 **For a montage beat that
+  gets cut to ~2s, generate 4s.** Fewer frames means less drift, and nothing is lost.
+- ⚠️ **Extension conflict:** DeepMind's guide says 10s steps up to 40s, while Flow's help page
+  lists Omni extension as *"coming soon"*. Check the UI before planning around it.
+- **On Frames, prompt the motion only and refer to the subject generically.** Re-describing the
+  picture makes it invent variants ([Promptslove](https://promptslove.com/blog/gemini-omni-1-1-flash-review/)).
+  This is the video twin of the never-describe-a-referenced-character rule.
+- **Hands handling objects are the named weak spot** (typing, grabbing, passing things); walking
+  and standing are safe ([geminiomniprompts](https://geminiomniprompts.org/guide/)). Any shot
+  whose one action is a hand holding a prop is the risk case. Motion blur from the shutter
+  clause is the cheapest cover.
+- **Slow motion is the default tell** because small changes between frames are easier to keep
+  consistent. Give the action its speed (*"at real speed, short fast stabs"*).
+- **Explicit "no music" worked in only about half of one tester's runs.** Our
+  `No music and no voices.` is confirmed working on 8b-fog, so keep it, and also describe the sound
+  that is wanted.
+
+## Ninth pass — 2026-09-13 `[academic]` `[community]`
+
+Run for camping `2g-1` (a wince and a stifled laugh, Frames). **New or contradicting items only. Untested by us.**
+
+- 🔑 **Slow motion is a trained bias.** Preference tuning rewards low-motion clips because they glitch less.
+  State the speed, and consider 4–6s. This gives the mechanism behind the eighth pass's slow-motion note.
+  `[academic]` [arXiv 2506.03517](https://arxiv.org/abs/2506.03517)
+- **Tie reactions to a trigger, not a time.** *"As the tea touches his lip, he flinches"* rather than a
+  timecode. This is in tension with our *timecodes parse* note, and neither has been A/B tested. The same source
+  says four or more tracked subjects merge. `[community]`
+  [morphic](https://morphic.com/resources/how-to/gemini-omni-flash-1-1-guide)
+- **A mouth-only smile reads as a mask.** Write the eye squint alongside it: one main emotion, one small
+  secondary one. `[community]` [hailuoai](https://hailuoai.video/pages/knowledge/micro-expressions-realistic-human-ai-video)
+  (its "45% melt past 5.2s" figure has no source, so don't cite it)
+- ⚠️ **"Still" / "minimal movement" can freeze a person like a statue.** Ask for one small gesture, not zero.
+  This bounds our near-static habit. `[community]` [invideo](https://invideo.io/faq/why-do-ai-video-models-produce-frozen-statue-like/)
+- **Waxy skin comes from over-sharp output.** Fix it in post with a light blur plus grain, and never sharpen
+  or upscale to fix it. `[community]` [invideo](https://invideo.io/faq/how-do-you-fix-plasticky-or-waxy-looking-skin-in-ai/)
+- 🚫 **Dissent, not adopted:** fal says *"a locked-off frame reads as a tripod, and a tripod reads as an ad"*.
+  House ruling R7 rejects it. fal also says to name what must survive on Frames, which conflicts with our
+  motion-only rule. [fal](https://fal.ai/learn/tools/how-to-use-gemini-omni-flash-1-1)
+- **Not adopted:** a bracketed `[Audio: …]` line (atlascloud, unverified). Ours is confirmed working.
+
+## 🔑 On Ingredients with a Character, the shortest prompt won `[observed 2026-09-13, n=1]`
+
+Camping `2f-5`: `@Bob` smoking at a motorway services, Ingredients to Video. **Four rounds in one
+afternoon, and every failure was an object the prompt itself had named.**
+
+| Round | What the prompt said | What came back |
+| --- | --- | --- |
+| 1 | An age-down clause, stubble and a new outfit | His **hair changed** during the clip |
+| 2 | *"shot on 35mm film"*, *"the building's signs are above the top of the frame"* | A **black film-frame border**, and **legible signs** on the building |
+| 3 | *"a still, locked-off camera on a tripod. The camera stands in the car park"* | **A camera on a stand** in the shot |
+| 1–3 *(round not recorded)* | An ashtray bin, tapping ash, a cigarette | **Duplicate cigarettes** (Jack) |
+| 4 | Two sentences: who, where, weather, one action, plus the audio line | ✅ **Worked** (Jack: *"that worked"*) |
+
+The round-4 prompt, whole:
+
+> The man from the character reference stands outside a British motorway service station on an
+> overcast day, smoking a cigarette. He takes a slow drag and breathes out.
+> Audio: distant motorway traffic. No music and no voices.
+
+🔑 **Every noun is a thing to draw, including nouns that were meant as camera direction, a
+constraint or a reason.** *Camera*, *tripod*, *signs*, *film* and *ashtray* each got rendered. This is
+[§27](./nano-banana-2.md#27--ask-for-an-object-never-an-absence--a-subtractive-shape-comes-back-inverted-observed-2026-08-30)
+and [§30](./nano-banana-2.md#30--a-physical-analogy-overrules-a-stated-number--and-it-is-how-28-keeps-happening-observed-2026-09-08)
+on the video engine, and it pushes against the long, slot-filled prompts the rest of this file
+recommends. ⚠️ **n=1 and never A/B'd:** the short prompt ran after three long ones, not side by side.
+**Working rule until it is tested:** for a simple filler shot with a Character, start with the
+two-sentence form and add one clause only to fix something that actually came back wrong. The long
+form stays for shots whose framing is the point.
 
 ## Notes for BadCode `[untested]`
 

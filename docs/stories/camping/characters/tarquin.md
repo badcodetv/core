@@ -100,10 +100,26 @@ The story still calls him homeless — the *field* doesn't.
 
 **Flow Character (2008 variant): `@Tarquin-2008`** — confirmed in use 2026-08-26, cast on shot
 1c.
+⚠️ **It reads too old (2026-09-11).** Twice now (1c, and montage 1m-e round 1) it has come back
+mid-thirties rather than twenty-five, even with 1c's age-down prose. Jack dropped it for the
+montage. Young Tarquin is written in prose, and the first accepted montage frame becomes his
+reference.
 
 > Flow IDs and owning projects for `@Future-Tarquin` and `@Tarquin-2008` are not recorded —
 > both were made outside the repo. Paste them here when convenient; repo silence means we
 > don't know, not that it doesn't exist.
+
+**Flow Character (2008 variant, in use): `@2008 - tarquin`** — named by Jack 2026-09-12 and cast on the
+montage frames `1m-c`, `1m-m` and `1m-l`. Id and owning project not recorded; paste them in. It is not
+clear from the repo whether this is `@Tarquin-2008` renamed or a new Character built from the accepted
+`1m-2` frame — **if it is new, say so here**, because the whole reason the montage went to prose was that
+`@Tarquin-2008` twice came back mid-thirties.
+
+⚠️ **So the three prompts carry one deliberate exception to the never-describe rule**: a single age-down
+clause naming the direction only (*"He is twenty-five: keep the face lean and unlined…"*), and the age
+restated in `Constraints:`. That is [1c's sanctioned pattern](#-how-the-variants-are-actually-made--reference-image-not-a-character-2026-08-25) —
+an override in a named direction, not a re-specification — and it is the one thing to check first on
+round 1. If he comes back twenty-five without it, delete it.
 
 ## ✅ How the variants are actually made — reference image, not a Character *(2026-08-25)*
 

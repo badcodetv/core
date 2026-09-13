@@ -1263,8 +1263,96 @@ the clearest one-liner — *"Nano Banana 2 is a faster version of Nano Banana Pr
 picker there are two entries: **Nano Banana 2** (default, all users, zero credits) and **Nano
 Banana Pro** (AI Pro / Ultra, tighter rate limit).
 
-**Our standing recommendation is unchanged** — [use Pro](#which-engine-for-badcode) where the
-job is *suppressing* sharpness and contrast, which is nearly all BadCode work.
+🔴 **Corrected 2026-09-13 — "the higher number is not the better model" is a NAMING fact, and
+this file previously let it stand as a QUALITY fact. It is not one.** See
+[the benchmark check below](#-corrected-2026-09-13-nano-banana-2-beats-pro-on-the-leaderboards-community).
+
+**Our standing recommendation is narrowed** — [use Pro](#which-engine-for-badcode) where the job
+is *suppressing* sharpness and contrast **and** the composition is spatially complex, which is
+most BadCode work; but **Pro is no longer the blanket default**, and where the two disagree the
+answer is a two-generation A/B, not a leaderboard.
+
+**Update 2026-09-11 `[community]` `[unverified against Google]`:** there's now a third entry,
+**Nano Banana 2 Lite** (`gemini-3.1-flash-lite-image`, announced 2026-06-30). A third-party API
+wrapper says Flow's picker offers `nano-banana-2-lite`, `nano-banana-2` and `nano-banana-pro`,
+with **Lite the default since July 2026**
+([useapi.net](https://useapi.net/docs/articles/google-flow-nano-banana-compare),
+[blog.google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/)).
+**Check the picker before every session.** You may be on Lite without having chosen it. Still
+nothing called "Pro 2".
+
+⚠️ **Google's own style examples are slop tells.** Its prompting guides use *"cinematic colour
+grading with muted teal tones"*, *"cinematic lighting"* and *"golden hour backlighting"*, and
+the anti-slop literature names every one of those. **Take Google's *structure*, not its example
+styles.**
+
+### 🔴 Corrected 2026-09-13: Nano Banana 2 beats Pro on the leaderboards `[community]`
+
+**Asked directly — "surely NB2 is best for image quality" — and the honest answer is that the
+challenge was right and this file was wrong.** The naming fact (the "2" is the Flash line, Pro is
+the larger model) was being used here to carry a quality claim it does not support.
+
+**Human-preference Elo, text-to-image — NB2 wins, and not narrowly:**
+
+| Leaderboard | Nano Banana 2 | Nano Banana Pro |
+| --- | --- | --- |
+| Arena.ai, text-to-image | **1,280** | 1,238 |
+| Artificial Analysis, text-to-image | **1,264** | 1,220 |
+| Arena.ai, image editing | **1,401** *(preliminary, ~3,000 votes — inside the noise)* | 1,398 |
+| Artificial Analysis, image editing | 1,233 | **1,250** |
+
+Source: [DeepLearning.AI's *The Batch*](https://www.deeplearning.ai/the-batch/nano-banana-2-aka-gemini-3-1-flash-image-makes-edits-easier-and-faster)
+`[community]`. It also records NB2 as **~4× faster and roughly half the cost per image**, and
+**both models supporting the same resolutions** — 512, 1K, 2K and 4K across 14 aspect ratios. So
+the old "take 2K on Pro" advice is not a Pro-only capability.
+
+**🔑 Where Pro still wins, and it is the reason not to switch blindly.** fal's side-by-side
+review is mixed on photorealism (it gives a portrait to NB2 on detail, a product shot to Pro on
+restraint) but is unambiguous on one axis: Pro *"spends more time thinking before it renders"*
+complex multi-element compositions, and is the pick for scenes with *"specific spatial
+relationships, layered lighting, and a particular mood"*, because Gemini 3 Pro Image
+*"allocates more compute to understanding relationships between elements in your scene"*
+([fal](https://fal.ai/learn/tools/nano-banana-pro-vs-nano-banana-2)) `[community]`.
+
+⚠️ **That is exactly the BadCode frame.** Off-axis geometry, single-source falloff, an
+individuated background crowd at three distances, a foreground occluder — and it is precisely
+where camping `1m-l` round 1 failed (centred, two of three figures cloned, the worn surfaces
+lost). **So the leaderboard does not settle our case**, because general preference Elo is
+dominated by pretty single-subject images, which is the opposite of what we ask for.
+
+🔴 **Reseller "95% of Pro's quality" figures are marketing, not measurement.** Several API
+resellers repeat *"NB2 reaches ~95% of Pro's quality, Pro leads 5–8% on 4K texture and lighting"*
+with no method behind it. **Do not cite those numbers.**
+
+⬜ **The open question, and it is cheap to close:** fire one identical BadCode prompt on Pro and
+on NB2, back to back, and judge the pair. **Our own measured finding outranks every row above.**
+Until that runs, *neither* model is the house default by evidence — Pro is the default by
+**continuity**, because the accepted camping montage frames were made on it and the montage cuts
+at about one frame per second, where a look shift between frames would show.
+
+⚠️ **Nano Banana 2 Lite is not in this argument.** It is the small, fast, cheap tier and it is the
+silent default in Flow's picker. Never leave a session on it.
+
+### 35. ⚠️ A flash described as an object in the room is drawn as a lamp `[observed 2026-09-11, n=1]`
+
+Camping `1m-e`'s Light paragraph opened *"a flash on top of the camera is the only strong
+light"* and then gave its falloff. What came back was **a bright lamp blowing out in the
+top-right corner of the frame**, with the room evenly lit again. It's the §27 family: a light
+named as a noun gets placed in the picture. **Untested fix:** name the flash as *camera
+hardware* in the Style line (the body and the Speedlite), describe only its consequences in the
+Light line, and put the sources' positions in Constraints: *"the flash is behind the lens, the
+tubes are above the top edge of the frame."*
+
+> ✅ **`[observed 2026-09-11, n=1]` The fix worked first time.** Camping `1m-2` named *"a Canon
+> EOS-1D Mark III with a Speedlite"* in Style, described the flash only as consequences, and
+> pinned the source positions in Constraints. It came back as a proper on-camera flash: hard
+> light on the subject, the room falling to green, moving people ghosted. **Naming the hardware
+> brought in the whole photographic register; describing the light as an object brought in a
+> lamp.**
+
+**The same frame also came back with every monitor blank black.** The inferred cause is that
+*"the monitors carry no readable lettering"* was met by switching them off. Give screens
+content that is **too small or too soft to read** instead of forbidding the text.
 
 ### 🎯 Faces: an emotion word gets a caricature; anatomy gets a face `[community]`
 
@@ -1325,6 +1413,393 @@ imperfection keywords and cheaper than any of them.
 
 **All `[untested]` against our own session.**
 
+## Sixth web pass — 2026-09-12 `[research]` `[practitioner]` `[vendor]`
+
+Run while writing camping's three added montage frames (`1m-c`, `1m-m`, `1m-l`), on Jack's two asks:
+*optimise for Nano Banana Pro*, and *avoid AI slop*. **This is the first pass with real `[research]` in it** —
+peer-reviewed perception and era/culture studies rather than vendor blogs — and the research disagrees with
+the blogs about what the problem even is.
+
+### 🔑 The enemy is the register, not the artifact `[research]`
+
+511 participants' free-text reasons for calling an image AI, coded into 576 mentions: **stylistic artifacts
+190** (*"smoothness, irregular surfaces or overly polished materials"*), **semantics/logic 178**, **physics
+82**, **geometry 78**, **intuition 48**. Overall accuracy **63.7%**; against the best generator in the set
+people were right **29%** of the time. And against the strong models the artifact hunt collapses into
+register — participants wrote *"the whole style reminds me of AI, I cannot explain it exactly"* and *"too
+perfectly arranged."*
+
+A second study puts humans at **62% across ~287k judgements** (12.5k participants), with **portraits easiest
+to spot and natural and urban scenes hardest**.
+
+🔑 **Two consequences for us.** The thing to suppress is *too-perfectly-arranged*, not fingers and spelling —
+which is what this file's anti-slop table has been doing by instinct and can now claim evidence for. And our
+subjects (urban interiors, car parks, skylines) sit in the **hard** category; a face in close-up is the
+risky one.
+
+### ✅ Period accuracy is a vendor-sanctioned constraint — and a hedge, not a fix
+
+- **Google's own example of a factual constraint is era**: *"ensure historical accuracy for the Victorian
+  era."* `[vendor]` So **"Ensure historical accuracy for 2008."** is a legitimate `Constraints:` line and is
+  now in all three camping montage prompts.
+- 🔴 **But a `[research]` study measures generators inserting modern hardware because they prioritise the
+  activity over the era** — anachronism rates ~25% (SD3, 1930s), ~12–13% (FLUX.1), <5% (SDXL) — and finds
+  prompt-level mitigation *"insufficient to fully counteract learned stylistic tendencies."* It shifts the
+  bias; it does not remove it. ⚠️ **Their decade series stops at the 1990s, so 2008 is not measured by
+  anyone, and Nano Banana Pro was not tested.** **Check every screen, handset and monitor on round 1.**
+- **US/Global-North default is documented** — country-agnostic prompts *"default to Global-North,
+  modern-leaning depictions that flatten cross-country distinctions."* `[research]`
+- ⚠️ **So *"British"* on its own is weak.** The one practical UK account found says what worked was **naming
+  concrete British architecture and explicitly excluding the American features**, not adding the adjective.
+  `[community]`
+
+### 🔑 Iterative editing erodes cultural and era fidelity — external support for our no-edit rule
+
+The same `[research]` paper finds **image-to-image editing degrades cultural fidelity while metrics stay
+flat**, because models apply *"superficial cues (palette shifts, generic props) rather than era-consistent,
+context-aware changes."*
+
+⚠️ **This matters because Google's own guidance points the other way:** *"if an image is ~80% right, ask for
+the specific change instead of regenerating"* `[vendor-adjacent]`, and a practitioner source recommends
+fixing a bad background face by masking and re-prompting that region. **Our house rule is the opposite —
+always a new prompt, never an image edit — and it is now the better-evidenced position for anything carrying
+a period or a place.** Keep it.
+
+### ✅ Name both ends of the exposure, or the model compensates in the shadows `[practitioner]`
+
+*"Without blowing highlights"* / *"preserve highlight texture"* has to be paired with what the shadows do,
+or the engine protects the highlights by lifting everything else. Adopted in the camping montage prompts:
+the flash frames **grant** the clipping on his shirt and ask the shadows to hold detail; `1m-l` asks for deep
+shadow that **keeps a trace rather than going to solid black**.
+
+Related, and it is the same shape as [§20](#20--if-the-named-source-cannot-physically-light-the-scene-the-model-invents-fill-confirmed-2026-08-27):
+**mood words are exposure words.** *dramatic, cinematic, moody, noir* silently darken the whole frame, so a
+frame that needs dark *shape* rather than dark *everything* states the source and leaves the mood word out.
+`[community]`
+
+### 🔑 The 2008 on-camera-flash register — and the one place crushed black is correct
+
+A documented look, and it is exactly what camping's montage is reaching for: **direct undiffused on-camera
+flash, shutter fast enough that ambient barely registers, the background falling to a near-black crushed void
+past the flash's short range, cool blue-green white balance, highlights clipping to featureless white, fine
+digital grain and mild chromatic noise.** `[community]`
+
+🔑 **In this register a crushed near-black background is period-correct rather than a fault** — which is the
+one exception to the general realism advice below, and worth knowing because it is rare to get our register
+and the realism advice pointing the same way.
+
+⚠️ **Against it, two independent craft sources say the opposite for images generally:** keep the darkest
+shadow *just above* pure black, and *"lift the blacks slightly — pure black reads as digital."*
+`[practitioner]` `[community]` 🔴 **This is material to the open ruling
+[`cinematography/principles.md` §R1](../cinematography/principles.md) and must not be used to close it** —
+two craft blogs are not evidence about our reader, and the distinction they actually draw is **detail lost**
+versus **blacks lifted to dark grey**, which is a grading decision we make at delivery, not a prompt clause.
+
+### ✅ Crowd realism is individuation, not adjectives `[practitioner]`
+
+The named root cause is **under-specification**: an unconstrained crowd leaves *"nothing to disambiguate one
+face from the next"*, so the model fills in a statistically plausible pattern and bleeds features between
+faces. The fix is to **state how many distinct individuals, what each is doing, and how far apart they
+stand** — which is [§22](#22--tiling-and-cloning-in-crowd-scenes-are-a-resolution-problem-not-only-a-prompt-problem-community-2026-08-28)'s
+*name the variety and name the counts* arrived at from the other direction.
+
+- **Motion blur on background people is the cheapest crowd-realism lever there is.** `[community]` ⚠️ Not
+  always available: camping `1m-c` needs its background **still**, because the stillness is the argument. There
+  the only lever left is individuation.
+- **Off-native resolution is a named cause of duplication and tiling** `[community]`, which corroborates §22
+  and supports taking **2K over 4K on any frame with a crowd in it**.
+
+### ⚠️ Fake depth of field has its own tells `[practitioner]` `[community]`
+
+Not just *soft* — **segmentation halos** around the subject, people sliced at the frame edge, and a
+background that reads **painterly rather than defocused**. Our standing phrasing
+(*"thrown completely out of focus so that it is a soft blur"*,
+[§26](#26--two-characters-do-hold-in-one-frame--if-each-is-anchored-to-a-named-side-observed-2026-08-30))
+is still the right instruction; this is a thing to **check in the returned frame**, where it shows up at the
+occluder's edge.
+
+### ⚠️ The quality-word kill list now includes "cinematic"
+
+*"8K", "ultra-realistic", "hyperrealistic", "masterpiece", "beautiful"* — and **"cinematic"** — are reported
+to trigger the model's aesthetic mode and produce the glossy plastic look. `[practitioner]` **Note the
+collision already flagged in this file: Google's own examples use *"cinematic colour grading"* and
+*"cinematic lighting"*.** Take Google's structure, not its example styles. Our *"a newspaper photograph
+of…"* opener is on the right side of this.
+
+Also restated: **name humble gear rather than studio rigs**, and **avoid Portra 400 and CineStill 800T** in
+favour of Gold 200, Ektachrome or Ilford HP5. ⚠️ **Irrelevant where the shot is digital** — camping's montage
+names a 2008 press DSLR, so there is no stock to swap, and
+[the standing warning against changing stock mid-story](#-kodak-portra-400-may-now-be-a-slop-tell-community-untested)
+is unaffected.
+
+### ✅ Engine facts worth having straight `[vendor]`
+
+- **Thinking cannot be disabled.** Pro generates up to two uncharged interim *"thought images"* to refine the
+  composition before the final output; `thinking_level` is minimal or high. 🔑 **So the job sentence at the
+  top of our prompts is feeding the reasoning pass, not decorating it** — keep it concrete and keep it first.
+- **Google's own stated weaknesses:** *"can still struggle with small faces, accurate spelling, and fine
+  details"*, and *"masked editing, major lighting changes (like day to night), or blending multiple images
+  may sometimes produce unnatural results"*, and character consistency *"may not always get it right."*
+  🔑 **Small faces is the one to design around** — it is the vendor confirming
+  [§12](#12--a-character-binds-to-a-face-no-face-in-the-shot-no-likeness-observed) and
+  [the reference-size rule](#-confirmed-2026-09-09-a-reference-carries-a-face-only-at-the-size-the-face-is-in-it)
+  from the other side. **And *day-to-night* being named is a caution for any relight**, including the
+  scene-10 lightning work.
+- **Resolutions:** Pro 1K / 2K / 4K (value strings `"1K"`, `"2K"`, `"4K"`); NB2 adds 512px. On Vertex, **1K
+  and 2K are GA and 4K was still Preview** at the GA post (2026-05-29).
+- **Aspect ratios (Pro):** 1:1, 3:2, 2:3, 3:4, 4:3, 4:5, 5:4, 9:16, 16:9, 21:9. NB2 adds 1:4, 4:1, 1:8, 8:1.
+- **Flow:** its help page names **Nano Banana Pro, Nano Banana 2, Nano Banana 2 Lite** and gives **no
+  per-model numbers** for ratios, resolution or reference limits. You set **aspect ratio and number of
+  outputs** before generating; references are dragged into the prompt box; Characters are addressed as
+  `@Name`. Flow's own rule for references: *"your text prompt should complement, not contradict, your visual
+  inputs."*
+- **The 480-token prompt cap that circulates as a Gemini-image limit is Imagen 4 only** and does not apply
+  here. No documented Nano Banana prompt-length limit beyond model token limits.
+- **Labelled prompt sections are sanctioned, not a hack** — Google AI's own writeup uses
+  `Face Consistency:` / `Subject:` / `Graphics:` blocks for complex jobs. Our `SCENE: / Camera: / Subject: /
+  … / Constraints:` skeleton is the endorsed shape.
+
+### ⚠️ Positive framing versus exclude-lists is still unresolved — but our shape is corroborated
+
+Google says positive framing only (*"empty street"*, not *"no cars"*); **three practitioner sources report
+explicit exclude-lists working**, including hard ones (*"Do NOT introduce new characters/objects not present
+in the reference image"*). That is the same split this file resolved on 2026-09-08 —
+**negatives belong in a terminal, scoped constraint block attached to named things**, never floating in the
+body — and the resolution now has outside company. ⬜ **Cheap A/B nobody has run:** one frame with our
+`Constraints:` block, one without, everything else identical.
+
+### 🚫 Do not cite
+
+- **"95% consistency, tested across 500+ generations", "IDENTITY LOCK"** — SEO content with no methodology.
+- **"Viewers clock AI in under a second"** — asserted, no study.
+- **"Film grain searches +31%, motion blur +15%"** — no primary source; the named trend pages do not carry
+  the figures.
+- **Diffusion-specific fixes** (CFG values, VAE, emphasis weights) — Nano Banana Pro exposes none of those
+  controls.
+
+### ⬜ Could not verify
+
+- **Per-slot reference maxima for Pro.** The API docs break slots into categories and describe Pro as taking
+  *fewer* images than Flash; the developer blog says *"six high-fidelity shots… or as many as fourteen
+  standard inputs"*; DeepMind says five characters / fourteen objects. The Vertex spec tables would not load.
+  **Treat exact per-slot counts as unknown** — our one-reference house rule is unaffected.
+- **Flow's "3 ingredients per prompt" limit** — repeated widely, **not stated on the Flow help pages**.
+- **Whether Flow exposes 2K/4K today, and whether Pro is Ultra-only** — the Flow changelog needs sign-in.
+- **Any *measured* brightening or centring bias.** There is plenty of prompt advice for fighting both and no
+  source demonstrating either. Do not write it as a finding.
+- **2008 City trading-floor visual specifics** (CRT/TFT mix, monitor counts, lanyards, dress). ⬜ **If a
+  montage frame comes back wrong on period detail, the fix is to pull three or four dated 2008 editorial
+  frames and look**, not to write more prose. ⚠️ Licence check first — the
+  [`camera/reference/README.md`](../stories/camping/camera/reference/README.md) ruling on CC BY-SA pixels
+  applies to anything attached.
+
+**Useful context for a future "it went waxy" complaint:** a real Vertex-side quality regression ran
+**2026-05-07 → fixed 2026-05-15**, acknowledged by Google staff on their own forum, root cause undisclosed.
+`[community, first-party forum]`
+
+### 36. 🔴 A carried garment with no worn garment stated returns BOTH `[observed 2026-09-12, n=1]`
+
+Camping [`1m-l`](../stories/camping/prompts.md#1m-l--round-1-not-accepted-jack-2026-09-12-it-looks-like-ai-slop)
+round 1. The `Action:` block said *"his suit jacket is hooked over the other shoulder on one
+finger"* and **said nothing about what was on his body.** It came back with him **wearing a suit
+jacket and carrying a second one.** Jack: *"he is carrying his jacket over his shoulder whilst
+wearing one."*
+
+**Mechanism:** [§25](#25--19-inverts-for-an-unbound-body-part--describe-it-or-get-young-clean-and-generic-observed-2026-08-29)
+exactly — an unstated attribute returns the **generic default**, and the default for a City trader
+is a suit jacket. Naming the carried one did not displace the worn one; it added to it.
+
+🔑 **The rule, and it generalises past jackets:** **a garment described as carried, removed, slung
+or held is a claim about an object, not a claim about the body.** State the body separately. Bag,
+coat, hat, tie, lanyard — same shape.
+
+**Two clauses, and the second is the cheap insurance:**
+
+- In the body: **`he is wearing his suit jacket, done up, and he carries nothing over his arm.`**
+- In `Constraints:`: **`he wears one jacket and it is on his body.`** A count, in the terminal
+  scoped block where [negation is allowed](#negatives-revisited).
+
+⬜ **And check the wardrobe of everyone else while you are there.** `1m-l` round 2 turns the bug
+into the argument: **he is the only person in the picture wearing a suit jacket**, and the people
+being walked out are in shirtsleeves and a jumper. One clause, two jobs — the duplicate is
+impossible and the class difference is stated in cloth.
+
+### 37. 🔴 A square-on architectural feature is a symmetry magnet, and a composition adjective will not move it `[observed 2026-09-12]`
+
+Same frame. The `Camera:` block said *"the lit lift car sits **right of centre** and the dark lobby
+runs away to the left."* It came back **dead centre and near-symmetrical**, with the lift doors
+square to the lens and the lobby balanced either side.
+
+**This is the [`1b` tell](../stories/camping/prompts.md#scene-1-montage--the-80s-job-montage-2026-09-11)
+again in a different building** — the symmetry-and-cloning bundle,
+[`symptoms.md` A](../cinematography/symptoms.md). And the centring bias is reported independently:
+*"AI models default to centred, symmetrical compositions because that is what dominates their
+training data"* `[community]`.
+
+🔑 **The finding is about precedence: a strong architectural feature outranks a placement
+adjective.** A lift bank, a doorway, a corridor and a window each carry their own symmetry axis,
+and the model composes onto it. *Right of centre* is a preference; the axis is a structure.
+
+**Two levers, and the house one has already been proven twice:**
+
+| Lever | Why it works |
+| --- | --- |
+| 🔑 **Put the ROOM in the `Subject:` slot and demote the feature to a thing inside it** | [§546](#-making-a-subject-small-put-something-else-in-the-subject-slot-community-2026-09-09). This is exactly how [camping 3c round 2 was fixed](../stories/camping/prompts.md#3c--the-lane-hours-later--still--written-2026-09-09-unrun) after round 1 centred the car — *put the ROAD in Subject* |
+| **Take the camera off the feature's plane** | *"seen slightly from its left side, so it reads as a leaning rectangle rather than a square-on one"* — remove the axis and there is nothing to snap to. Cheaper than arguing with it |
+
+⚠️ **Do not reach for a numeric fix.** *"Subject at 30% from the left edge"* is the shape
+[§30](#30--a-physical-analogy-overrules-a-stated-number--and-it-is-how-28-keeps-happening-observed-2026-09-08)
+says loses. Move the camera instead.
+
+### 38. 🔴 A mechanical in-progress state returns fully open (or fully shut) — give it a physical analogy `[observed 2026-09-12]`
+
+Same frame, and it cost the beat outright. The prompt said the doors *"have begun to close"* and
+*"he is framed in the gap between them"* — **twice**. The lift came back **wide open**, and *the
+doors closing on him*, which is the entire point of the shot, is simply not in the picture.
+
+**Mechanism:** a lift door has two strong priors, **open** and **shut**, and *"has begun to close"*
+is a **stage direction** — a claim about time, which a still cannot hold. The model resolves it to
+the nearest state it knows. Same family as
+[§27](#27--ask-for-an-object-never-an-absence--a-subtractive-shape-comes-back-inverted-observed-2026-08-30):
+an instruction that is not a describable *shape* gets resolved into whatever is.
+
+🔑 **The fix is [§30](#30--a-physical-analogy-overrules-a-stated-number--and-it-is-how-28-keeps-happening-observed-2026-09-08)'s
+lever pointed at state instead of size: describe the geometry, not the process.**
+
+| Instead of | Write |
+| --- | --- |
+| `the doors have begun to close` | **`the gap between the leading edges is narrower than a man's shoulders, so the doors crop him at both arms`** |
+| `the door is ajar` | `the gap is about the width of a hand` |
+| `the drawer is half open` | `the drawer stands out from the cabinet by the length of a pencil` |
+
+⬜ **And say it twice, in two systems.** In `1m-l` round 2 the light restates the same fact — the
+car throws a **narrow strip** across the carpet rather than a rectangle — so the geometry has to be
+right in the shadow as well as in the metal. `[untested]`
+
+### 🔴 §38 at n=3 — a mechanical in-progress state is near-unbeatable. Design the stillness in `[observed 2026-09-13]`
+
+**Three camping frames have now asked for a machine mid-action and got the machine at rest**, through
+four different phrasings:
+
+| Shot | Asked for | Came back |
+| --- | --- | --- |
+| `1m-l` rounds 1–5 | lift doors almost shut — a stage direction, then a physical analogy, then a proportion of the doorway, then the shape of the light on the floor | **fully open**, every time |
+| `1m-p` round 1 | banknotes riffling through a counter's throat as an arc of blur | **stopped** — notes static and sharp |
+
+⚠️ **One counter-example worth keeping:** `1m-t`'s treadmill belt **did** come back smeared under the
+same drag-shutter clause. The difference is that a belt is **one continuous surface** while doors and
+banknotes are **discrete objects with a start and an end state** — 🔴 **inferred from n=3, untested.**
+
+🔑 **The useful half is the planning consequence, not the diagnosis: stop paying rounds against it.**
+A machine at rest is not a failed plate — **it is frame 0 of the clip in which the machine starts.**
+The still shows the state; the clip shows the change. That has now produced a *better* shot twice
+running: `1m-l`'s open doors became a clip that closes them and takes the light out of the room, and
+`1m-p`'s stopped counter became a clip that starts it.
+
+**Working:** [`camping/prompts.md`](../stories/camping/prompts.md#-38-at-n3--a-mechanical-in-progress-state-is-near-unbeatable-and-it-is-worth-planning-around).
+
+### ⚠️ Six worn nouns lose to one building prior — and the counter is a scoped negation `[observed 2026-09-12]`
+
+Same frame, worth recording because it is a *quantity* observation. The `Environment:` block named
+**scuffed kick plates, a dark stone-tiled wall, grey carpet tiles with a worn track, a dented
+skirting board, a red fire extinguisher, two dead ceiling fittings.** What came back was a
+**polished marble atrium with a mirror floor** — not one of the six survived.
+
+🔑 **Positive nouns describing wear do not defeat a luxury prior; they get absorbed into it.** The
+counter is the shape [§29](#29--to-overrule-a-reference-on-one-element-declare-its-role-narrowly-then-negate-the-old-value-observed-2026-08-30)
+already established for overruling a reference, moved into the terminal `Constraints:` block:
+**name the surface, then negate the old value.**
+
+> *"The lobby is worn and ordinary — carpet tiles rather than stone, a matt painted wall rather
+> than marble, and a floor that reflects nothing."*
+
+This is squarely inside the [2026-09-08 resolution](#negatives-revisited) — negatives are allowed
+**scoped, terminal and attached to named things** — and it now has outside company from the three
+practitioner sources reporting exclude-lists working
+([sixth web pass](#️-positive-framing-versus-exclude-lists-is-still-unresolved--but-our-shape-is-corroborated)).
+
+⚠️ **Related, and it is the register half of the same failure:** the frame came back reading as a
+**corporate-thriller poster** — glossy stone, mirror floor, smooth skin, no grain — despite the
+Style line naming *ISO 3200* and *coarse digital noise*. The lever that was available and unused is
+the cheapest one in this file: **a human behind the camera**. *"A candid press photograph… taken
+quickly"* is [a different instrument from imperfection keywords](#-kodak-portra-400-may-now-be-a-slop-tell-community-untested),
+and it costs four words.
+
+### 🚫 Rejected: "remove polite phrases like 'please'" `[community]` `[untested]`
+
+A Nano Banana Pro guide recommends stripping conversational filler and writing in
+*"command-line style syntax"*. **No test behind it**, and it collides with the standing house rule
+that every Flow prompt ends with `Thanks.` **We keep the `Thanks.`** Recorded so it is not
+re-derived every time someone reads a prompting guide.
+
+### Sources for this section (2026-09-12)
+
+**`[research]`** — [Frontiers, why people think an image is AI (511 participants, coded reasons)](https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1707336/full) ·
+[arXiv 2507.18640 — 62% across ~287k judgements](https://arxiv.org/abs/2507.18640) ·
+[REVEAL — forensic cue families](https://arxiv.org/html/2511.23158v2) ·
+[Synthetic History — era bias and anachronism rates](https://arxiv.org/abs/2505.17064) ·
+[Cultural Blindspots — editing erodes cultural fidelity](https://arxiv.org/abs/2510.20042) ·
+[AI-generated emotional faces (from the fifth pass, still the best source on subtle expression)](https://link.springer.com/article/10.1007/s10919-026-00517-3)
+
+**`[vendor]`** — [Nano Banana Pro prompting tips](https://blog.google/products-and-platforms/products/gemini/prompting-tips-nano-banana-pro/) ·
+[Ultimate prompting guide — Google Cloud](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana) ·
+[Gemini API image generation docs](https://ai.google.dev/gemini-api/docs/image-generation) ·
+[Google AI — Nano Banana Pro prompting strategies](https://dev.to/googleai/nano-banana-pro-prompting-guide-strategies-1h9n) ·
+[fal — Nano Banana Pro prompting guide](https://fal.ai/learn/tools/nano-banana-pro-prompting-guide) `[community]` ·
+[Higgsfield — Nano Banana Pro high-control prompting](https://higgsfield.ai/nano-banana-pro-prompt-guide) `[community]` ·
+[Pixova — making AI images look less like AI (the centring bias)](https://www.pixova.io/blog/how-to-make-ai-images-look-less-like-ai) `[community]` ·
+[ZSky — why your AI images look bad](https://zsky.ai/blog/why-ai-images-look-bad) `[community]` ·
+[DeepMind model page](https://deepmind.google/models/gemini-image/pro/) ·
+[NB2 + Pro generally available](https://cloud.google.com/blog/products/ai-machine-learning/nano-banana-2-and-nano-banana-pro-are-generally-available) ·
+[Flow — models and supported features](https://support.google.com/flow/answer/16352836?hl=en) ·
+[Flow — generating with references](https://support.google.com/flow/answer/16353334?hl=en)
+
+**`[practitioner]`** — [fal — Nano Banana Pro prompting guide](https://fal.ai/learn/tools/nano-banana-pro-prompting-guide) ·
+[Chase Jarvis — relighting an image](https://chasejarvis.com/blog/how-to-re-light-an-image-with-nano-banana-pro/) ·
+[getimg.ai — why AI skin looks fake (dated 17-model test)](https://getimg.ai/blog/why-ai-skin-looks-fake-how-to-make-it-real) ·
+[Hedra — making AI images look like real photos](https://www.hedra.com/blog/make-ai-images-look-like-real-photos-prompting) ·
+[Envato Elements — prompts for realistic images](https://elements.envato.com/learn/prompts-for-realistic-ai-images) ·
+[Prompt Architects — crowd faces](https://prompt-architects.com/blog/388-hands-faces-and-text-fixing-ais-classic-failures) ·
+[Beverly Boy — avoiding crushed blacks](https://beverlyboy.com/filmmaking/how-to-avoid-crushed-blacks-in-shadows/) ·
+[Fstoppers — spotting fake bokeh](https://fstoppers.com/post-production/can-spot-fake-bokeh-574880)
+
+**`[community]`** — [Miraflow — the 2008 flash register](https://miraflow.ai/blog/ai-flash-filter-prompts-2026) ·
+[VSCO — digital camera effect](https://www.vsco.co/learn/digital-camera-effect) ·
+[zsky — too-dark images](https://zsky.ai/blog/ai-image-too-dark-fix) ·
+[zsky — artifacts guide](https://zsky.ai/blog/ai-image-artifacts-guide) ·
+[Upsampler](https://upsampler.com/blog/make-ai-images-look-real) ·
+[Adobe forum — UK scenes drifting American](https://community.adobe.com/questions-404/proper-uk-representation-of-scenes-1477922/index2.html) ·
+[awesome-nanobanana-pro (prompt library)](https://github.com/ZeroLu/awesome-nanobanana-pro) ·
+[Vertex quality regression thread](https://discuss.ai.google.dev/t/low-image-quality-in-nano-banana-pro-2-on-vertex-ai-studio/144258)
+
+**Everything here is `[untested]` against our own Flow session except where it corroborates a finding this
+file already reached from production — and where it does, the production finding is the one that governs.**
+
+
+## Seventh web pass — 2026-09-13 `[vendor]` `[academic]` `[community]`
+
+Run for camping `2g` (light 2008 couple stills). **New or contradicting items only. None tested on our work.**
+
+- 🔴 **NB2 has Image Search grounding too**, which contradicts `docs/flow/image-prompting.md` §8 ("Pro only").
+  It **cannot search for people**, only places, buildings and species. ⬜ Unverified whether Flow exposes it.
+  `[vendor]` [blog.google](https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/) ·
+  [dev.to/googleai](https://dev.to/googleai/getting-the-most-out-of-nano-banana-2-502k)
+- ⚠️ **NB2 thinking is a switch, and Google says to leave it off by default.** Turn it on only for nonsense
+  results or complex spatial work. So *"the job sentence feeds the reasoning pass"* holds on Pro, and on NB2 only
+  when thinking is on. ⬜ Unverified whether Flow exposes it. `[vendor]` (same dev.to post)
+- 🔑 **AI faces are "hyper-average"**: symmetrical, smooth and attractive. The counter is distinctive,
+  non-average features, not generic imperfection. ⚠️ The studies used older GAN-type generators, and **this conflicts
+  with [§19](#19--2s-do-not-restate-the-reference-applies-to-people-not-just-sets-confirmed-2026-08-27)
+  whenever a reference is attached.** In that case the reference carries the face and §19 wins. It applies only to
+  unreferenced people. `[academic]` [Psych Sci 2023](https://journals.sagepub.com/doi/10.1177/09567976231207095) ·
+  [PubMed 2026](https://pubmed.ncbi.nlm.nih.gov/41705896/)
+- **Unreferenced people default to young, thin and attractive.** State age, build and skin as facts.
+  `[academic]` [PMC10737815](https://pmc.ncbi.nlm.nih.gov/articles/PMC10737815/)
+- **Women get more smiles and more downward head tilts** (DALL-E 2 only). State the head angle and mouth for
+  every figure, not just the lead. `[academic]` [arXiv 2305.10566](https://arxiv.org/abs/2305.10566)
+- **Emphasising happiness produces rows of small, bright teeth.** Use closed mouths, and give each person a named
+  thing to look at to fix dead eyes. `[community, unverified]`
+- 🚫 **Do not cite** the "AI teal-orange bias" article (anecdotal, Midjourney, 2024).
 
 ## Notes for BadCode `[untested]`
 
