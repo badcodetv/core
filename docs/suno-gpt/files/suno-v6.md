@@ -356,6 +356,12 @@ Uploaded audio passes an originality/rights check before it can be used.
 - **A plain-language edit is a separate grammar** — full sentences, one change, scoped ("in the
   second verse only… keep everything else exactly the same"). Label which box it goes in, like
   Studio chat.
+- 🔴 **PROVEN LIVE 2026-09-13: Variety rewrites the Style box, differently for every take.** Twelve
+  Camping takes at Variety normal and extra (with and without Max Mode) each stored a different
+  306–496-char paraphrase of an 866-char Style box as the song's `tags` — read off each song's own
+  suno.com record — and the paraphrases re-introduced clauses the box had removed ("wide chiming
+  guitar layers", "half-time drops", "androgynous… voice"). The Lyrics box stayed byte-identical.
+  Any prompt test at Variety above **Off** is testing Suno's rewrite. Evidence: `docs/stories/camping/songs/camping.md` §v6 round log.
 - **Variety rewrites your Style box** — now vendor-sourced (2026-09-11): the v6 FAQ says it works
   by "adjusting and updating your style prompts" and to "reduce the Variety slider to 0" to keep
   control ([help.suno.com/en/articles/13924481](https://help.suno.com/en/articles/13924481)).

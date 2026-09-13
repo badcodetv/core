@@ -209,6 +209,17 @@ workspace **camping-Jack**.
 is Variety (steps off·normal·high·extra·max → 0–4), the candidate was **extra** and r1 ran at
 **normal** — a second variable moved. Next round: set `variety: 'extra'` to match, or treat it as its
 own slider round.
+| r1b | slider round: Max Mode {off,on} × Variety {normal,extra}, weirdness 60, Vocal Gender **Male**, duration **205 s** (Kai's 3:25) — same three boxes | 4 Creates → 8 takes, balance unreadable | ⬜ awaiting Kai's ear — normal/no-max: [952d1459](https://suno.com/song/952d1459-c2e8-4b32-8480-5856b6e91e0e) · [b0a41b6d](https://suno.com/song/b0a41b6d-df4e-4209-b58c-7cbc6e0646ac) · normal/max: [60eb6383](https://suno.com/song/60eb6383-bf33-477f-ac90-7bf3f26b61eb) · [ae716aff](https://suno.com/song/ae716aff-fd31-4598-82b3-a40060729311) · extra/no-max: [d13ca10a](https://suno.com/song/d13ca10a-1aa4-41c5-a6f2-b13beeb2e164) · [5b753249](https://suno.com/song/5b753249-9123-447a-96af-f154094fa88a) · extra/max: [c4fc70bb](https://suno.com/song/c4fc70bb-beea-47b6-b0b3-9d37a8b81c07) · [4f56119c](https://suno.com/song/4f56119c-3139-463c-b26b-2eb498881675) |
+
+🔴 **PROVEN LIVE 2026-09-13 — Variety rewrites the Style box, per take.** Suno's stored `tags` for
+**all 12** r1/r1b takes is **not our 866-char box** but a different 306–496-char paraphrase per take
+(lyrics box untouched — byte-identical in all 12). The paraphrases add things we never asked for and
+removed on purpose: `androgynous post-punk spoken voice`, `stomping half-time drops`, `power-chord
+guitar`, `wide chiming guitar layers`, `sampler-led rhythmic stutter`. **So r1 and r1b tested Suno's
+rewrites of the stomp prompt, not the stomp prompt.** Both ran at Variety normal/extra, never Off —
+`docs/suno-gpt/files/suno-v6.md` §2 already said to set **Variety Off** when the atom is under test.
+The candidate's record stores its own 1,186-char box verbatim despite `aug_creativity 3`; why is
+unknown (it predates today, and it was over 1,000 chars). **Next round runs Variety Off.**
 
 # Camping — the song
 
