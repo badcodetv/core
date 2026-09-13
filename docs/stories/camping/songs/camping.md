@@ -119,6 +119,50 @@ gets generated. Note what the rewrite added that the stomp box never said: `powe
 Dark UK drum and bass: detuned wavetable lead, low palm-muted distorted power-chord guitar and heavy guitar wall, dual male spoken-word voices—gravelly half-shout and clean plummy baritone hardening into a shout—with dry intimate acapella breaks, dark sub-heavy compression, stomping floor toms, handclaps, chopped breakbeat, growling Reese sub, screaming detuned lead, reverb-soaked raw distortion, steady 174 BPM amen-roll drive.
 ```
 
+## v6.4 Round r3 — `british` (2026-09-13)
+
+**Brief, Kai after r2:** *"Nice one… generate a couple more with less weirdness… up and down with the
+weirdness. Maybe a bit less style influence… play with the variety… the prompt is pretty much there."*
+And: *"when he says entitlement, he sort of says an Americanism."* Kai picked **r2c `tight + grit`** as the
+base, the accent fix folded in now, and a little Variety.
+
+**Prompt change (one, small):** d13ca10a's rewrite had dropped the word **British** from the voices.
+- Style: `dual male spoken-word voices` → `dual male British spoken-word voices` (474 chars)
+- Lyrics, Verse 1 stage note only: added `British accent, hard British t's, no American pronunciation` —
+  **all sung lines byte-identical**
+- Exclude: unchanged
+
+```
+Dark UK drum and bass: detuned wavetable lead, low palm-muted distorted power-chord guitar and tight gated guitar stabs, dual male British spoken-word voices—gravelly half-shout and clean plummy baritone hardening into a shout—with dry intimate acapella breaks, dark sub-heavy compression, stomping floor toms, handclaps, chopped breakbeat, growling Reese sub, screaming detuned lead, dry grimy 12-bit crunched breaks, close and in-your-face, steady 174 BPM amen-roll drive.
+```
+
+**Slider spread** (all v6 · Max Mode off · Male · 205 s · Personalize off · camping-Jack):
+
+| Style influence | Variety | Weirdness |
+|---|---|---|
+| 70 | Off | 40 · 75 |
+| 55 | Off | 40 · 60 |
+| 70 | Normal · Extra (🔴 Suno rewrites the Style box) | 60 |
+
+Titles carry the style influence: `camping-r3-si<SI>-v6[-var-<step>]-w<W>`.
+
+### r3 takes (generated 2026-09-13, Kai's yes — 6 Creates → 12 takes, balance unreadable on the v6 promo)
+
+| Style influence · Variety · Weirdness | Takes |
+|---|---|
+| 70 · Off · **40** | [8f0cf51a](https://suno.com/song/8f0cf51a-6f26-4c59-8a91-1b9ea74a2f91) · [077a60f5](https://suno.com/song/077a60f5-9fca-4ccd-bb20-8e10a3a74b06) |
+| 70 · Off · **75** | [fb44ad20](https://suno.com/song/fb44ad20-ece0-48e9-b567-e95adbef2898) · [e8a7b928](https://suno.com/song/e8a7b928-60b5-4423-9485-a9b13be71ea6) |
+| **55** · Off · **40** | [c66170d3](https://suno.com/song/c66170d3-6021-4d77-b6cc-e9eb40b41d33) · [50c51a21](https://suno.com/song/50c51a21-75c7-4df4-b0d5-86986695e19c) |
+| **55** · Off · 60 | [a6bf2136](https://suno.com/song/a6bf2136-75d7-4160-91ee-be4a8575e251) · [f6ad8933](https://suno.com/song/f6ad8933-b60b-4422-8354-12e314078618) |
+| 70 · **Normal** · 60 | [ae3c6693](https://suno.com/song/ae3c6693-c579-47b7-a52f-557aaad5cb7e) · [df2dba26](https://suno.com/song/df2dba26-8242-46ce-a6b3-c49fcdd25967) |
+| 70 · **Extra** · 60 | [5d00a57b](https://suno.com/song/5d00a57b-e768-4046-857d-409c8ff81745) · [69fad111](https://suno.com/song/69fad111-ab17-4b29-95ca-1e363d25668f) |
+
+✅ **Verified off Suno's own song records, all twelve:** lyrics box byte-identical to the r3 box (sung words
+unchanged), exclude verbatim, style_weight / weirdness as titled. The eight Variety-Off takes store our
+474-char Style **verbatim** and run 204–205 s. The four Variety takes store Suno's rewrites (407–527
+chars), **all four kept `British`** and the tight gated stabs + 12-bit breaks; one (69fad111) adds
+`shifting into a stomping half-time breakdown`. Their length was not yet in the record when checked.
+
 ## v6.3 Round r2 — `street` (2026-09-13)
 
 **Brief, Kai on d13ca10a:** *"just like that, just with slightly more edgy, gritty, street-level sound. At the
