@@ -22,6 +22,12 @@ guidance drifts.
 
 If you are choosing adjectives, you are in the wrong skill.
 
+> 🔴 **2026-09-13: Google rebuilt Flow at `flow.google.com`.** Read
+> [`docs/flow/automation-2026-09-rebuild.md`](../../../docs/flow/automation-2026-09-rebuild.md)
+> before anything below — it says which tools work again (stills, edits, refine, framed video) and
+> which throw `FLOW_REBUILD_UNMAPPED` (characters, list_media, refine_video, Scene Builder). Older
+> selector notes in this skill and in `automation-*.md` describe the pre-rebuild app.
+
 ---
 
 ## 0. Before you open the browser at all

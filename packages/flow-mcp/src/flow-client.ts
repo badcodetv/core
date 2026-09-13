@@ -21,6 +21,7 @@ import { candidateOutPath } from './candidates'
 import { escapeRegExp, isBoxCleared, modelAlreadySelected, videoModelAlreadySelected, canonicalVideoModel, aspectAlreadySelected, videoDurationAlreadySelected, videoCountAlreadySelected } from './compose'
 import { existsSync, readFileSync } from 'node:fs'
 import { jpegSize } from './jpeg-size'
+import { mediaIdFromContentUrl } from './media-url'
 import { dumpLines } from './page-dump'
 import { chooseVideoMode, refineRequestError, videoRequestError } from './video-mode'
 import {
@@ -459,7 +460,7 @@ export class FlowClient {
   }
 
   /** Drive a tile's `More options → Download` menu and save what it produces. */
-  private async downloadFromTile(tile: Locator, outPath: string): Promise<void> {
+  private async downloadFromTile(tile: Locator, outPath: string): Promise<string> {
     await tile.scrollIntoViewIfNeeded().catch(() => {})
     const more = tile.getByRole('button', { name: 'More options' })
     await tile.hover().catch(() => {})
@@ -469,6 +470,11 @@ export class FlowClient {
     // listener armed afterwards misses it (measured — the first probe did exactly that).
     const download = this.page.waitForEvent('download', { timeout: TURN_TIMEOUT_MS })
     download.catch(() => {})
+    // The download's own URL is a blob, so catch the signed original Flow fetches to build it —
+    // `flow-content.google/<kind>/<uuid>` is the only place a VIDEO's media id is visible at all.
+    const contentUrls: string[] = []
+    const onRequest = (r: { url(): string }) => { if (r.url().includes('flow-content.google/')) contentUrls.push(r.url()) }
+    this.page.on('request', onRequest)
     await more.click()
     // Match on text, not accessible name: a submenu item's name also carries its arrow, so an
     // anchored name regex missed it on freshly generated images (measured 2026-09-13).
@@ -483,11 +489,28 @@ export class FlowClient {
       original.waitFor({ state: 'visible', timeout: 8_000 }).then(() => 'submenu' as const).catch(() => 'none' as const),
     ])
     if (first === 'submenu') await original.click()
-    const dl = await download
+    const dl = await download.finally(() => this.page.off('request', onRequest))
     await mkdir(dirname(outPath), { recursive: true })
     await dl.saveAs(outPath)
     // The menu usually closes itself; an Escape on a closed menu is harmless.
     await this.page.keyboard.press('Escape').catch(() => {})
+    return [dl.url(), ...contentUrls.reverse()].find((u) => mediaIdFromContentUrl(u)) ?? dl.url()
+  }
+
+  /** True on the 2026-09-13 Angular rebuild at flow.google.com. */
+  private isRebuilt(): boolean {
+    return FLOW_HOST_RE.test(this.page.url())
+  }
+
+  /**
+   * Fail in milliseconds, naming the feature, for any tool not yet re-mapped onto the rebuild —
+   * rather than letting it hunt for React-era controls and burn a 90 s timeout that looks like a
+   * policy block (the single most expensive confusion in this codebase).
+   */
+  private assertMappedOnRebuild(feature: string): void {
+    if (this.isRebuilt()) {
+      throw new Error(`FLOW_REBUILD_UNMAPPED: ${feature} has not been re-mapped onto the rebuilt Flow (flow.google.com, 2026-09-13) yet`)
+    }
   }
 
   private async forceClick(locator: Locator): Promise<void> {
@@ -748,6 +771,7 @@ export class FlowClient {
    * generalised to every character card rather than one named lookup.
    */
   async listCharacters(): Promise<CharacterListItem[]> {
+    this.assertMappedOnRebuild('listCharacters')
     await this.ensureCharactersSection()
     // The project root's grid hydrates AFTER navigation, so a single immediate read returns []
     // on a project that plainly has characters — the same silent race listMedia and
@@ -821,6 +845,7 @@ export class FlowClient {
     portraitMediaId?: string
     bodyMediaId?: string
   }> {
+    this.assertMappedOnRebuild('getCharacter')
     await this.openCharacterPage(name)
     const info = await this.characterInfoField().inputValue().catch(() => '')
     const hasBody = (await this.page.getByRole('button', { name: /^Body$/ }).first().count()) > 0
@@ -1370,6 +1395,7 @@ export class FlowClient {
    * whatever the picker currently renders.
    */
   async listMedia(opts?: { query?: string; limit?: number }): Promise<MediaListItem[]> {
+    this.assertMappedOnRebuild('listMedia')
     await this.ensureProjectRoot()
     // The picker is filtered to whatever the compose bar's current mode can USE: in a video
     // source mode it offers stills only, so a listing taken there reports zero clips in a
@@ -1728,6 +1754,7 @@ export class FlowClient {
     refImages: string[],
     opts?: { info?: string; body?: string; model?: string; bodyOutPath?: string },
   ): Promise<CharacterRef & { bodyMediaId?: string; bodyPath?: string }> {
+    this.assertMappedOnRebuild('createCharacter')
     await this.ensureProjectRoot()
     await this.forceClick(this.page.getByRole('button', { name: /accessibility_new\s*Characters/i }).first())
     await this.page.waitForURL(/\/characters\b/, { timeout: TURN_TIMEOUT_MS })
@@ -1752,6 +1779,7 @@ export class FlowClient {
     mediaTitle: string,
     opts?: { info?: string; body?: string; model?: string; bodyOutPath?: string },
   ): Promise<CharacterRef & { bodyMediaId?: string; bodyPath?: string }> {
+    this.assertMappedOnRebuild('createCharacterFromMedia')
     await this.ensureProjectRoot()
     await this.forceClick(this.page.getByRole('button', { name: /accessibility_new\s*Characters/i }).first())
     // NO waitForURL(/characters/) here: Characters is a sidebar VIEW, and after a hard goto the
@@ -1865,6 +1893,7 @@ export class FlowClient {
 
   /** Set (or replace) the character's free-text personality/appearance note. */
   async setCharacterInfo(name: string, info: string): Promise<CharacterRef> {
+    this.assertMappedOnRebuild('setCharacterInfo')
     await this.openCharacterPage(name)
     const field = this.characterInfoField()
     await field.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
@@ -1885,6 +1914,7 @@ export class FlowClient {
     prompt: string,
     opts?: { target?: 'portrait' | 'body'; model?: string; outPath?: string },
   ): Promise<MediaResult & { target: 'portrait' | 'body' }> {
+    this.assertMappedOnRebuild('editCharacter')
     await this.openCharacterPage(name)
     const target = opts?.target ?? 'portrait'
     const tab = this.page
@@ -2211,6 +2241,7 @@ export class FlowClient {
     // before a browser is touched: each one otherwise costs an upload, a fill and a credit.
     const problem = videoRequestError({ startImage, endImage, model: videoModel, durationSeconds: duration })
     if (problem) throw new Error(problem)
+    if (this.isRebuilt()) return await this.generateVideoRebuilt(req, videoModel, duration)
     if (chooseVideoMode(startImage, endImage) === 'frames') {
       return await this.framesToVideo({ motion, outPath, startImage, endImage, duration, videoModel, opts })
     }
@@ -2233,6 +2264,157 @@ export class FlowClient {
       const result = await this.framesToVideo({ motion, outPath, startImage, duration, videoModel, opts })
       return { ...result, via: 'frames-fallback' }
     }
+  }
+
+  /**
+   * generateVideo on the 2026-09-13 rebuild. One surface does everything now: the Settings
+   * popover carries Video/Image, Frames/Ingredients, aspect, model family, resolution, duration and
+   * count, so the old Agent-Settings-panel + Animate-menuitem choreography is gone.
+   *
+   *   1. Reload (frame slots persist for the page's life; a reload is the only certain clear).
+   *   2. Upload each local still to the project (top bar → Upload). The frame picker has no
+   *      upload button of its own.
+   *   3. Configure the popover, then read the trigger back — "Video · 720p · 8s crop_16_9 x1".
+   *   4. Fill Start/End through "Select a frame image": click the file, then Add to prompt.
+   *   5. Submit, wait for NEW video tiles to finish, download each via "720p Original size".
+   *
+   * A start frame alone animates it; start+end interpolates; neither is text-to-video (Frames
+   * mode with empty slots is not used for that — Ingredients mode is).
+   */
+  private async generateVideoRebuilt(req: VideoRequest, videoModel: string, duration: number): Promise<VideoResult> {
+    const { motion, outPath, startImage, endImage } = req
+    if (req.character) throw new Error('FLOW_REBUILD_UNMAPPED: casting a character into a video')
+    const count = req.count ?? 1
+    const aspect = req.aspect ?? DEFAULT_VIDEO_ASPECT
+    await this.ensureProject()
+    await this.reloadProject()
+    await this.ensureAgentOff()
+    for (const path of [startImage, endImage]) if (path) await this.uploadToProject(path)
+    await this.ensureVideoConfigRebuilt({ model: videoModel, aspect, duration, count, frames: Boolean(startImage || endImage) })
+    if (startImage) await this.fillFrameSlotRebuilt('Start', basename(startImage))
+    if (endImage) await this.fillFrameSlotRebuilt('End', basename(endImage))
+    await this.markTurnStart()
+    const before = await this.videoTileKeys()
+    await this.setPrompt(motion)
+    await this.clickSubmit()
+    const tiles = await this.waitForNewVideoTiles(before, count, VIDEO_TIMEOUT_MS)
+    const candidates: MediaResult[] = []
+    for (const [i, key] of tiles.entries()) {
+      const path = candidateOutPath(outPath, i, tiles.length)
+      const tile = this.page.locator('flow-video-tile').filter({ has: this.page.locator(`img[src="${key}"]`) }).first()
+      const url = await this.downloadFromTile(tile, path)
+      candidates.push({ path, mediaId: mediaIdFromContentUrl(url) ?? '' })
+    }
+    const first = candidates[0]!
+    return { ...first, ...(count > 1 ? { candidates } : {}), ...(tiles.length < count ? { partial: true } : {}) }
+  }
+
+  /** Upload a local file into the project through the top bar's Add media → Upload. */
+  private async uploadToProject(path: string): Promise<void> {
+    await this.page.getByRole('button', { name: 'Add media menu' }).click()
+    const item = this.page.locator('.cdk-overlay-container [role="menuitem"]').filter({ hasText: /^\s*upload\s*Upload\s*$/ }).first()
+    await item.waitFor({ state: 'visible', timeout: 10_000 })
+    const chooser = this.page.waitForEvent('filechooser', { timeout: 15_000 })
+    await item.click()
+    await (await chooser).setFiles(path)
+  }
+
+  /** Set every video control in the Settings popover and verify the trigger label. */
+  private async ensureVideoConfigRebuilt(c: { model: string; aspect: VideoAspect; duration: number; count: number; frames: boolean }): Promise<void> {
+    await this.openSettings()
+    const radio = (re: RegExp) => this.settingsRadio(re)
+    const checked = async (l: Locator) => (await l.getAttribute('aria-checked')) === 'true'
+    const pick = async (re: RegExp, what: string) => {
+      const l = radio(re)
+      if (!(await l.count())) throw new Error(`VIDEO_OPTION_UNAVAILABLE: ${what} on ${c.model}`)
+      if (!(await checked(l))) await l.click()
+    }
+    await pick(/^videocamVideo$/, 'Video mode')
+    await pick(c.frames ? /Frames$/ : /Ingredients$/, c.frames ? 'Frames' : 'Ingredients')
+    // Model before length and count: switching family changes which lengths exist (10s is Omni only).
+    const fam = this.page.locator('.cdk-overlay-container button[aria-label="Select model family"]')
+    if (!videoModelAlreadySelected((await fam.textContent()) ?? '', c.model)) {
+      await fam.click()
+      const item = this.page
+        .locator('.cdk-overlay-container button[role="menuitem"]')
+        .filter({ hasText: new RegExp(`^\\s*(volume_up)?\\s*${escapeRegExp(c.model)}\\s*$`) })
+        .first()
+      await item.waitFor({ state: 'visible', timeout: 10_000 }).catch(() => { throw new Error(`VIDEO_MODEL_UNAVAILABLE: ${c.model}`) })
+      await item.click()
+      if (!videoModelAlreadySelected((await fam.textContent()) ?? '', c.model)) {
+        throw new Error(`VIDEO_MODEL_NOT_APPLIED: wanted ${c.model}, shows "${((await fam.textContent()) ?? '').trim()}"`)
+      }
+    }
+    await pick(new RegExp(`${escapeRegExp(c.aspect)}$`), `aspect ${c.aspect}`)
+    const p720 = radio(/^720p$/)
+    if ((await p720.count()) && !(await checked(p720))) await p720.click()
+    await pick(new RegExp(`^${c.duration}s$`), `${c.duration}s`)
+    await pick(new RegExp(`^x${c.count}$`), `x${c.count}`)
+    await this.closeSettings()
+    // The label lags the popover (measured: read straight after Escape it still said 8s, and said
+    // 4s a moment later), so poll before calling it a failure.
+    const read = async () => ((await this.settingsTrigger().textContent()) ?? '').replace(/\s+/g, ' ').trim()
+    const good = (l: string) => /^Video\b/.test(l) && l.includes(`· ${c.duration}s`) && l.endsWith(`x${c.count}`) && aspectAlreadySelected(l, c.aspect)
+    const deadline = Date.now() + 6_000
+    let label = await read()
+    while (!good(label) && Date.now() < deadline) {
+      await this.page.waitForTimeout(200)
+      label = await read()
+    }
+    const ok = good(label)
+    if (!ok) throw new Error(`VIDEO_DURATION_NOT_APPLIED: wanted ${c.duration}s x${c.count} ${c.aspect}, trigger shows "${label}"`)
+  }
+
+  /**
+   * Put an already-uploaded file into a Start/End slot via "Select a frame image". The newest
+   * option with that exact filename wins (the list is Recent-first); an option still reading
+   * "Uploading…" is not a match, so this waits the upload out rather than picking a neighbour.
+   */
+  private async fillFrameSlotRebuilt(slot: 'Start' | 'End', fileName: string): Promise<void> {
+    const trigger = this.page.locator('flow-prompt-box .frame-trigger').nth(slot === 'Start' ? 0 : 1)
+    await trigger.locator('button.empty-chip').click()
+    const overlay = this.page.locator('.cdk-overlay-container')
+    const option = overlay.locator('[role="option"]').filter({ hasText: new RegExp(`^\\s*${escapeRegExp(fileName)}\\s*$`) }).first()
+    await option.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS }).catch(() => { throw new Error(`FRAME_SOURCE_NOT_FOUND: ${fileName}`) })
+    await option.click()
+    // Two behaviours, both measured 2026-09-13: sometimes the click only PREVIEWS and "Add to
+    // prompt" commits it; sometimes the click commits at once and the dialog (and its button)
+    // vanish. So wait on the slot itself, pressing Add only while it is genuinely still there.
+    const chip = trigger.locator('flow-image-ingredient-chip img')
+    const add = overlay.locator('button').filter({ hasText: /^\s*Add to prompt\s*$/ }).first()
+    const deadline = Date.now() + 15_000
+    while (!(await chip.isVisible().catch(() => false))) {
+      if (Date.now() > deadline) throw new Error(`FRAME_SLOT_NOT_FILLED: ${slot}`)
+      if (await add.isVisible().catch(() => false)) await add.click({ timeout: 2_000 }).catch(() => {})
+      await this.page.waitForTimeout(300)
+    }
+  }
+
+  /** Thumbnail srcs of the video tiles on screen — the only per-clip handle the rebuilt grid exposes. */
+  private async videoTileKeys(): Promise<Set<string>> {
+    const keys = await this.page.locator('flow-video-tile img.thumbnail').evaluateAll((els) => els.map((e) => (e as HTMLImageElement).src).filter(Boolean))
+    return new Set(keys)
+  }
+
+  /**
+   * Wait for `expected` new, FINISHED video tiles. A clip in progress has no thumbnail yet, so a
+   * new thumbnail src is the done signal. Policy blocks are polled every tick so they abort in
+   * seconds, not after eight minutes.
+   */
+  private async waitForNewVideoTiles(before: Set<string>, expected: number, timeoutMs: number): Promise<string[]> {
+    const deadline = Date.now() + timeoutMs
+    let grace = Number.POSITIVE_INFINITY
+    let found: string[] = []
+    while (Date.now() < Math.min(deadline, grace)) {
+      const card = await this.detectFailureCard()
+      if (card === 'blocked' && !found.length) throw new Error('POLICY_BLOCKED')
+      found = [...(await this.videoTileKeys())].filter((k) => !before.has(k))
+      if (found.length >= expected) return found.slice(0, expected)
+      if (found.length && grace === Number.POSITIVE_INFINITY) grace = Date.now() + VIDEO_SIBLING_GRACE_MS
+      await this.page.waitForTimeout(VIDEO_POLL_MS)
+    }
+    if (!found.length) throw new Error(await this.timeoutError(timeoutMs))
+    return found
   }
 
   /** The Animate-menuitem path: upload a still, find its tile, animate it. See generateVideo. */
@@ -2343,6 +2525,7 @@ export class FlowClient {
    * show the user what was changed.
    */
   async refineVideo(req: VideoRefineRequest): Promise<MediaResult & { originalPrompt: string }> {
+    this.assertMappedOnRebuild('refineVideo')
     const { mediaId, motion, outPath } = req
     const videoModel = canonicalVideoModel(req.model ?? DEFAULT_VIDEO_MODEL)
     const problem = refineRequestError({ mediaId, motion, model: videoModel, durationSeconds: req.durationSeconds })
@@ -2894,6 +3077,7 @@ export class FlowClient {
 
   /** Navigate into a scene, unless we are already in it. */
   async openScene(sceneId: string): Promise<{ projectId: string; sceneId: string; url: string }> {
+    this.assertMappedOnRebuild('openScene')
     const here = parseSceneUrl(this.page.url())
     if (here?.sceneId === sceneId) return { ...here, url: this.page.url() }
     const projectId = here?.projectId ?? this.currentProjectId()
@@ -2952,6 +3136,7 @@ export class FlowClient {
 
   /** Which tier Flow currently pins Extend to, without generating anything. */
   async sceneExtendModel(sceneId?: string): Promise<{ model: string | null }> {
+    this.assertMappedOnRebuild('sceneExtendModel')
     if (sceneId) await this.openScene(sceneId)
     const model = await this.armExtend()
     await this.disarmExtend()
@@ -2969,6 +3154,7 @@ export class FlowClient {
     prompt: string
     sceneId?: string
   }): Promise<SceneExtendResult> {
+    this.assertMappedOnRebuild('sceneExtend')
     const problem = sceneExtendError(req)
     if (problem) throw new Error(problem)
     if (req.sceneId) await this.openScene(req.sceneId)
@@ -3036,6 +3222,7 @@ export class FlowClient {
     sceneId?: string
     position?: FramePosition
   }): Promise<{ mediaId?: string; position: FramePosition; playhead?: string }> {
+    this.assertMappedOnRebuild('sceneSaveFrame')
     const here = parseSceneUrl(this.page.url())
     const sceneId = opts?.sceneId ?? here?.sceneId
     if (!sceneId) throw new Error('NOT_IN_SCENE: flow_scene_save_frame must run inside a scene editor. Pass sceneId, or open a clip in Flow first.')

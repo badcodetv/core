@@ -42,7 +42,7 @@ export function modelAlreadySelected(label: string | null, model: string): boole
  * been guessed wrong, and both matter (see canonicalVideoModel / videoModelAlreadySelected).
  */
 export const VIDEO_MODELS = [
-  'Omni Flash',
+  'Omni 1.1 Flash',
   'Veo 3.1 - Lite',
   'Veo 3.1 - Fast',
   'Veo 3.1 - Quality',
@@ -64,6 +64,8 @@ const normaliseModel = (s: string): string => s.toLowerCase().replace(/[^a-z0-9]
  */
 export function canonicalVideoModel(model: string): string {
   const want = normaliseModel(model)
+  // "Omni Flash" was renamed "Omni 1.1 Flash" in the 2026-09-13 rebuild; keep the old name working.
+  if (want === 'omniflash') return 'Omni 1.1 Flash'
   return VIDEO_MODELS.find(m => normaliseModel(m) === want) ?? model
 }
 
@@ -105,7 +107,7 @@ export type VideoDuration = (typeof VIDEO_DURATIONS)[number]
  * `1x`/`x1` bug that quietly billed for months. Ask for 10s on Veo and we throw instead.
  */
 export function maxDurationForModel(model: string): number {
-  return /omni\s*flash/i.test(canonicalVideoModel(model)) ? 10 : 8
+  return /omni.*flash/i.test(canonicalVideoModel(model)) ? 10 : 8
 }
 
 /**

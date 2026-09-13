@@ -32,3 +32,15 @@ describe('media-url', () => {
     )
   })
 })
+
+import { mediaIdFromContentUrl } from './media-url'
+describe('mediaIdFromContentUrl', () => {
+  it('reads the id from a signed original (the rebuilt Download fetches this)', () => {
+    expect(mediaIdFromContentUrl('https://flow-content.google/video/8101f28e-e861-4205-9ff8-c700ee482402?Expires=1789327873&KeyName=labs-flow-prod-cdn-key&Signature=x')).toBe('8101f28e-e861-4205-9ff8-c700ee482402')
+    expect(mediaIdFromContentUrl('https://flow-content.google/image/73230713-7eba-44f9-9e68-4be7c13a1911?Expires=1')).toBe('73230713-7eba-44f9-9e68-4be7c13a1911')
+  })
+  it('returns null for a blob or an /asb/ re-encode', () => {
+    expect(mediaIdFromContentUrl('blob:https://flow.google.com/abc')).toBe(null)
+    expect(mediaIdFromContentUrl('https://flow.google.com/asb/AB-nOUY=s1600-rw')).toBe(null)
+  })
+})

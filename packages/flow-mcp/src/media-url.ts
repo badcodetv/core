@@ -16,3 +16,13 @@ export function parseMediaName(src: string): string | null {
 export function mediaRedirectUrl(name: string): string {
   return `${REDIRECT_BASE}?name=${name}`
 }
+
+/**
+ * The media UUID inside a signed original URL — `https://flow-content.google/video/<uuid>?Expires=…`
+ * (or `/image/<uuid>`). That is what the rebuilt app's Download fetches, so a download's own URL
+ * names the media even though no tile carries the id for a video. Null for anything else.
+ */
+export function mediaIdFromContentUrl(url: string): string | null {
+  const m = /flow-content\.google\/(?:video|image)\/([0-9a-f-]{36})/i.exec(url)
+  return m ? m[1]! : null
+}

@@ -87,7 +87,9 @@ describe('canonicalVideoModel', () => {
 describe('videoModelAlreadySelected', () => {
   // The trigger glues the caret straight onto the name, with NO space: "Omni Flasharrow_drop_down".
   it('matches the real trigger label, whose caret text is not separated by a space', () => {
-    expect(videoModelAlreadySelected('Omni Flasharrow_drop_down', 'Omni Flash')).toBe(true)
+    // Renamed "Omni 1.1 Flash" in the 2026-09-13 rebuild; the old name still resolves to it.
+    expect(videoModelAlreadySelected('Omni 1.1 Flasharrow_drop_down', 'Omni Flash')).toBe(true)
+    expect(videoModelAlreadySelected('Omni 1.1 Flash arrow_drop_down', 'Omni 1.1 Flash')).toBe(true)
     expect(videoModelAlreadySelected('Veo 3.1 - Qualityarrow_drop_down', 'Veo 3.1 - Quality')).toBe(true)
   })
 

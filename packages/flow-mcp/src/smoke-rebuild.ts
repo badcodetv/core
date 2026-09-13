@@ -3,6 +3,7 @@
 //   status   — status + project list (no spend)
 //   image    — new scratch project, Nano Banana 2 x2 (shows 0 credits), harvest both, refine once
 //   edit     — reopen FLOW_SMOKE_PROJECT, upload FLOW_SMOKE_REF as a reference, edit x2, then refine the first
+//   video    — reopen FLOW_SMOKE_PROJECT, animate FLOW_SMOKE_REF on Veo 3.1 - Lite [Lower Priority] (0 credits), 4s x1
 // Every file is measured with ffprobe-free JPEG parsing and hashed, so a web page saved as .jpg fails loudly.
 import { mkdtemp, readFile } from 'node:fs/promises'
 import { createHash } from 'node:crypto'
@@ -42,6 +43,22 @@ try {
     for (const cand of e.candidates) console.log('edit candidate:', cand.mediaId, await describe(cand.path))
     const r = await c.refine('Keep everything. Make the phone box light green.', join(dir, 'r.jpg'), { model: 'Nano Banana 2' })
     console.log('refined:', r.mediaId, await describe(r.path))
+  }
+  if (stage === 'video') {
+    await c.openProject({ id: process.env.FLOW_SMOKE_PROJECT! })
+    const dir = await mkdtemp(join(tmpdir(), 'flow-rebuild-video-'))
+    const t0 = Date.now()
+    const v = await c.generateVideo({
+      motion: 'Locked-off camera. A slow drip of water falls from the ceiling light; puddles ripple. Nothing else moves.',
+      outPath: join(dir, 'v.mp4'),
+      startImage: process.env.FLOW_SMOKE_REF!,
+      ...(process.env.FLOW_SMOKE_END ? { endImage: process.env.FLOW_SMOKE_END } : {}),
+      model: 'Veo 3.1 - Lite [Lower Priority]',
+      durationSeconds: 4,
+      count: 1,
+    })
+    const buf = await readFile(v.path)
+    console.log('video:', v, 'bytes:', buf.length, 'seconds:', Math.round((Date.now() - t0) / 1000))
   }
   console.log(`REBUILD SMOKE (${stage}) OK`)
 } finally {
