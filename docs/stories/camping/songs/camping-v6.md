@@ -1,6 +1,6 @@
 ---
 title: Camping — the live v6 sheet (arena direction)
-status: DRAFT round a1 — awaiting Kai's ruling on the questions in §2 and an explicit yes before any credit is spent. Nothing generated.
+status: SUPERSEDED 2026-09-13 — folded into ./camping.md, the single source of truth for the Camping song (Kai). The a1 `arena` atom was never run; its reasoning fed camping.md round r1 `stomp`. Its words guard no longer applies (camping.md's first lyrics fence is now the candidate take's box).
 brief: Jack, 2026-08-27 — "we have lost the aggression and the pace, experiment with different genres over the drum and bass." Kai, 2026-09-12 — the reference band is Imagine Dragons (https://en.wikipedia.org/wiki/Imagine_Dragons).
 words_canon: ./camping.md  # §4 — frozen, not a variable in this sheet
 predecessor: ./camping-sheet.md  # the v5.5 genre sweep, archived 2026-09-10
@@ -9,6 +9,9 @@ workspace: camping-duet
 model: v6
 bpm: 174
 ---
+
+> 🗄 **Superseded 2026-09-13 — read [`camping.md`](./camping.md).** Kai made `camping.md` the single live
+> sheet. Nothing here was generated; kept for the reasoning behind the arena translation.
 
 # Camping on v6 — the arena direction
 

@@ -1,18 +1,207 @@
 ---
-title: Camping (duet re-cut)
-status: ACCEPTED at round 17, 2026-08-21 — the prompt below is the one that worked. Change it only against a specific fault — rounds 1-14 generated and diagnosed; the orchestral direction is abandoned. LYRICS LAYOUT amended 2026-08-25 (cover round 13) — the "I want change" orphan line MERGED into its neighbour (round 11's punctuation fix did not work, see Watch items); six performance cues from round 11 kept; the §4 check's baseline is stale (see Watch items)
+title: Camping — the song (LIVE v6 sheet)
+status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). Candidate take = The M3 Lane 44f46458 (Jack's pick). Next = round r1 `stomp`, drafted 2026-09-13, NOTHING generated. The v5.5 round-17 sheet below the v6 section is archived history.
+candidate: https://suno.com/song/44f46458-d0c2-40f6-a14a-2c331b805fa8
+brief: Jack via Kai 2026-09-13 — "more like Imagine Dragons (https://en.wikipedia.org/wiki/Imagine_Dragons) and less poppy". Kai 2026-09-13 — 174 BPM drum and bass (option A), not the take's 117.
 released_take: ./camping-released.md
-history: ./camping-prompt-history.md
 bpm: 174
-model: v5.5
-settings: style influence 75 · weirdness 30 · audio influence n/a (fresh generation) · NO saved Voice
+model: v6
+workspace: camping-Jack
 voices: [bob, tarquin]
 ---
 
-> 🗄 **v5.5 sheet — archived 2026-09-10.** Suno v6 retired v5.5 on 2026-09-09 and all new Suno
-> work is v6, in the new UI. The takes this sheet made still exist and can be Covered onto v6;
-> the sheet cannot be re-run as written. A new round starts a v6 sheet — see
-> [`v5.5-era.md`](../../../suno-gpt/archive/v5.5-era.md) §5.
+# Camping — v6 (live)
+
+> 🔑 **This file is the source of truth for the Camping song** (Kai, 2026-09-13). Everything above
+> the `# Camping — the song` heading is live; everything below it is the archived **v5.5** sheet
+> (round 17, 2026-08-21), kept because its diagnoses are reusable. `camping-v6.md` is folded in here.
+> **My Taste is not used and Personalize is always off** (Kai, 2026-09-10): every round carries its
+> whole direction in its own three boxes.
+
+| | |
+|---|---|
+| **Candidate take** | The M3 Lane — [44f46458](https://suno.com/song/44f46458-d0c2-40f6-a14a-2c331b805fa8), Jack's pick |
+| **Direction** | more like Imagine Dragons, **less poppy** — at **174 BPM** drum and bass (Kai ruled option A, 2026-09-13) |
+| **Next round** | r1 `stomp` below — Style + Exclude change as one atom, the take's own Lyrics box kept byte-for-byte |
+| **Listening ledger** | `docs/listening/log/2026-09-13-141503-…` (prompt diff) · `…-143500-…` (producer checklist) |
+
+## v6.1 The candidate, exactly as Suno recorded it
+
+Read off the song's own record on suno.com (2026-09-13), not from any sheet — **no sheet in this
+repo held this prompt**; it was grown by hand in the browser.
+
+- **Model** v6 (`chirp-hawk`) · **created** 2026-09-09 15:00 UTC · **workspace** camping-Jack
+- **Style Influence 70 · Weirdness 60** · `aug_creativity 3` (probably Variety — unverified)
+- **Style box 1,186 characters.** 🔴 Suno's record holds all 1,186, so we cannot prove the tail
+  was cut off — the 2026-09-12 "truncation" diagnosis is a hypothesis, not a finding. What IS
+  measured: it asked for 174 BPM and came out at **117.45 BPM**, both times we measured.
+- **My Taste:** the take predates the 2026-09-10 retirement, so the account-wide My Taste may have
+  been live when it generated; the song record has no field for it. The block Kai saved is at the
+  end of this section, as history — **never paste it**.
+
+**What the take actually is** — timings from a per-second loudness scan, contents only where two
+independent Gemini runs agreed:
+
+| Time | What happens |
+|---|---|
+| 0:00–0:20 | intro: a lone repeating low guitar riff over a dark synth drone, no drums |
+| 0:20–1:03 | verse 1: dry spoken voice, riff underneath, sparse drums arrive |
+| ~1:04 | the music cuts out for the whispered line (the `acapella` cue working) |
+| 1:06–1:27 | shouting returns, then drop 1: full drums, distorted wall, screaming lead |
+| 1:28–1:45 | verse 2, sparse again, riff underneath |
+| 1:46–1:49 | the music cuts out for the second whispered line |
+| 1:50–2:11 | shouting section, one short dip at 2:08 |
+| 2:12–2:33 | drop 2 — the loudest part of the song |
+| 2:34–2:50 | bridge, stripped back |
+| 2:52–3:01 | a dip, then one last loud push |
+| 3:02–3:20 | outro: riff and drone, one deep sub hit at 3:18 |
+
+**Kept by both listens:** the palm-muted riff is the spine; dry spoken and shouted vocals; the
+whisper-then-slam breaks; distorted-wall drops with a screaming lead. **Missing in both:** 174 BPM,
+amen rolls, bagpipes, Gregorian chant. **Leaked in:** sung "ooh" phrases despite the bans.
+**Disputed:** one voice or two — the listens disagree; settle it by ear at the bridge.
+
+**The words are identical to §4 below** (399 words each, checked 2026-09-13). The take's lyrics box
+differs from §4 only in **cues** — most importantly `[whispering voice loosing hope | no music |
+acapella]` where §4 has `[change tone to spoken word]`, which is what made the breaks.
+
+```text
+Dark UK drum and bass, neurofunk, 174 BPM in a minor key with a steady steppers groove; male 1960s British mod R&B hollers, first gravelly and weathered, second higher and plummy, never sung, bone-dry against reverb-drenched ballad space. A low palm-muted guitar figure repeats beneath every vocal, joined by synthesizer drones and distant Gregorian chant backing; bagpipe tones shadow the minor harmony. First verse begins over a solitary detuned synth texture, then dry chopped breakbeats and amen rolls enter; drops hit with full-weight drums, Reese sub, screaming wavetable lead, tambourine on every beat, and slow wide chiming Britpop guitar walls at half speed, all fused rather than remixed. Verse two flips colder drums and sharper hats while the guitar figure remains alone beneath the voice; the second drop grows heavier, more distorted, with longer amen tears, thicker guitars, and higher lead. Bridge strips back to intimate shared-room vocals, sparse riff, chant haze, and restrained steppers pulse. Keep hard English consonants, throaty unpolished attack, clean BBC diction, flat delivery, no vibrato, and no instrumental vocal gaps where lyrics specify continuous speech.
+```
+
+```text
+singing, sung verses, sung chorus, melodic vocal, vocal melody, vocal hooks, crooning,   clean sung melody, autotune, harmonies, grime MC, UK drill, road rap, trap, hip hop,   young MC, American accent, American vocal, US rap, transatlantic, southern drawl, ragga   MC, toasting, Jamaican accent, dancehall vocal, soprano, operatic vocals, vibrato,   angelic voices, sustained vocal notes, female vocal, children's choir, choral harmony,   orchestral strings, violins, cello, string section, piano, glockenspiel, brass band,   marching band, oompah, dixieland, guitar solo, lead guitar, shredding, acoustic guitar,   wah, mashup, bootleg, remix, rock remix, nu metal, rap rock, rapcore, grunge, punk, epic   trailer music, reggae, dub, ska, music hall, vaudeville, pantomime, ragtime,   honky-tonk, liquid dnb, jump up, pop, lo-fi, jaunty, playful, whimsical, bouncy,   comedic, novelty, parody, uplifting, major key, double time, tempo change, slow tempo
+```
+
+The My Taste block Kai saved (history only — not pasted, Personalize is off):
+
+```text
+Vocals: two English men in their late forties and fifties, talking over the beat rather than singing — there is no melody in either of them. One is low, gravelly, smoke-worn and nasal, close and bone dry on a cheap mic. The other is higher, clean and plummy BBC English, precise and unhurried, talking down at you from a wide room. Talking over singing, every time. Flat and unbothered over theatrical. Raw over polished.
+
+Music: dark UK drum and bass and neurofunk at 174 BPM, minor key. Rolling Reese bass, deep sub, dry chopped breakbeats, industrial stabs. Drum fills that tear across a whole bar every few bars: chopped amen rolls, snares tumbling over each other, loud at the front of the mix, then straight back into the groove. Arrangements that climb in steps: a track that opens on one unaccompanied instrument and does not show its full weight until the drop. Big aggressive wavetable synthesizers where an orchestra would be: screaming detuned leads, hard-synced and formant-morphing, growling gnarly mid-range. In the drops and outro only, a wall of chiming Britpop guitars, layered and doubled, strumming slow and wide at half the speed of the break, tambourine on every beat, so the guitars, the synths and the break are one piece of music, not a remix of one by the other. Under the vocals the guitar is only a low palm-muted figure, never chords, never a tune. No orchestral instruments and no piano anywhere. Cold, grimy, relentless, rock steady in tempo start to finish. A British record, made in Britain, about Britain.
+
+Register: bleak, bitter, angry, played completely straight. Whatever is funny lives in the words alone — the music never winks and never plays along.
+
+Subject: British class, money, work, and who the economy left behind.
+```
+
+## v6.2 Round r1 — `stomp`
+
+**One variable, named before pasting: the Style + Exclude atom.** The Lyrics box is the candidate's
+own, byte-for-byte, so anything that changes is the direction and nothing else. Settings stay the
+candidate's (Style Influence 70, Weirdness 60) for the same reason.
+
+**What moved, and why:**
+
+| Change from the candidate | Reason |
+|---|---|
+| 1,186 → **866** chars | under the 1,000 cap with room — no argument about truncation this time |
+| `neurofunk` + `1960s British mod R&B hollers` → `British post-punk spoken word, ranted over the beat` | mod R&B and ballad space are the likeliest drag toward 117; post-punk spoken word is the tag that held the casting on v5.5 (§2 below) |
+| added `hit with the weight of stadium rock: huge stomping floor toms and handclaps … drenched in reverb` | the Imagine Dragons engine — weight and stomp, **not** its sung choruses |
+| `half-shouted and strained` / `hardening into a shout` | the strained lift of the reference |
+| Britpop `chiming` guitar walls + tambourine → `a wall of heavy distorted guitars` | chime and tambourine are the pop end of this take; "less poppy" |
+| removed bagpipes, Gregorian chant, amen **tears** detail, 60s mod, ballad space | none of them arrived, and each spends characters |
+| added `Raw, heavy and grim, never polished` | less poppy, said positively |
+| Exclude: **added** `pop rock, radio pop, sing-along chorus, glossy production` | less poppy, said as bans |
+| Exclude: **added** `country vocal, southern vocal, americana, twang` | v6 drifts rock toward a country vocal (3/3 in `docs/suno-gpt/files/suno-v6.md` §9) |
+| Exclude: **removed** `punk` | it fought `post-punk` in the Style box |
+| Exclude: **trimmed** `oompah, dixieland, glockenspiel, ragtime, honky-tonk, bootleg, mashup, toasting, southern drawl` | nothing near them ever arrived; brings the box from 1,037 to 940 |
+
+### `stomp` — the r1 atom
+
+```
+Dark UK drum and bass at 174 BPM, minor key, hit with the weight of stadium rock: huge stomping floor toms and handclaps doubling a dry chopped breakbeat, drenched in reverb. British post-punk spoken word, ranted over the beat, never sung. Verse one, a weathered British man in his fifties: low, gravelly, smoke-worn, half-shouted and strained. Verse two, a well-spoken British man: higher, clean, plummy BBC English, hardening into a shout. A low palm-muted electric guitar riff, one short figure, repeats under every vocal, never a solo. Verses stay sparse and tense. Drops hit at full weight: stomping toms, claps, growling Reese sub, a screaming detuned wavetable lead and a wall of heavy distorted guitars, all one piece of music, not a remix. Every four bars the drums tear into an amen roll. Raw, heavy and grim, never polished, played straight, steady tempo.
+```
+
+```
+singing, sung verses, sung chorus, melodic vocal, vocal melody, vocal hooks, crooning, clean sung melody, autotune, harmonies, twang, americana, southern vocal, country vocal, grime MC, UK drill, road rap, trap, hip hop, young MC, American accent, American vocal, US rap, transatlantic, ragga MC, Jamaican accent, dancehall vocal, soprano, operatic vocals, vibrato, angelic voices, sustained vocal notes, female vocal, children's choir, choral harmony, orchestral strings, violins, cello, string section, piano, brass band, marching band, guitar solo, lead guitar, shredding, acoustic guitar, wah, remix, rock remix, nu metal, rap rock, rapcore, grunge, epic trailer music, reggae, dub, ska, music hall, vaudeville, pantomime, liquid dnb, jump up, pop, glossy production, sing-along chorus, radio pop, pop rock, lo-fi, jaunty, playful, whimsical, bouncy, comedic, novelty, parody, uplifting, major key, double time, tempo change, slow tempo
+```
+
+```lyrics
+[Intro — 8 bars | one long low detuned synth note, completely alone, held and slowly filtering open | a texture, not a tune, no melody | distant city hum far underneath | no drums, no bass, no guitar]
+[Verse 1 | gravelly ranting voice, flat and unbothered, never selling a line | the low synth note holds underneath | no drums and no bass for the first half of this verse, then a dry chopped breakbeat comes in under the vocal and runs to the drop | amen rolls tearing across every fourth bar | the words never stop, no instrumental passage in this verse]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+[whispering voice loosing hope | no music | acapella]
+I can't live like this forever
+[shouting | music again]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[louder more angry shouting]
+please sir, can I fuckin, have some more?
+[Drop — instrumental, 8 bars, no vocals | the kit hits full weight and the sub bass drops for the first time | amen rolls tearing across every fourth bar | the palm-muted riff opens out into a wall of chiming Britpop guitars, strumming slow and wide at half the speed of the kit, tambourine on every beat | the wavetable lead tears in over the top]
+[Beat Transition]
+[Verse 2 | well-spoken posh voice, a completely different man, dry and unbothered, never selling a line | full-weight drum and bass carries straight on, drums flip, colder synths, sharper hats | amen rolls tearing across every fourth bar | the guitar wall is gone, only the same palm-muted riff returns underneath, unchanged | nothing else playing at all]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+[whispering voice loosing hope | no music | acapella]
+What about if we taxed the rich?
+[shouting | music again]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing, is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Drop — instrumental, 8 bars, no vocals | everything heavier and more distorted than the first drop — neuro bass growling underneath, the amen rolls harder and longer, the lead screaming higher, the guitar wall thicker and wider than before]
+[Beat Transition]
+[Bridge | the turn | drums strip right back, intimate | the two men trade, both close and dry in the same cold room now | the guitar riff sparser and quieter here, still one repeating figure, never a tune]
+[gravelly ranting voice]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[well-spoken posh voice]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together, doubled]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[well-spoken posh voice]
+you see as it turns out, there is very little clout,
+in having the manager or any of the c-suite about
+[gravelly ranting voice]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[well-spoken posh voice]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gravelly ranting voice]
+yet I don't begrudge you,
+it's us and them now
+[well-spoken posh voice]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
+```
+
+### r1 settings
+
+Model **v6** · Style Influence **70** · Weirdness **60** (the candidate's) — plus the house pair at
+Weirdness **30** for comparison · Variety off · Max Mode off · Personalize **off** · no saved Voice ·
+workspace **camping-Jack**.
+
+### v6 round log
+
+| Round | Variable | Cost | Verdict |
+|---|---|---|---|
+| candidate | hand-grown in the browser, 2026-09-09 | — | Jack's pick; 117 BPM, not 174 |
+| r1 `stomp` | Style + Exclude atom | ⬜ unspent — needs Kai's yes | ⬜ |
 
 # Camping — the song
 
