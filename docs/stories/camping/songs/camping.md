@@ -1,6 +1,6 @@
 ---
 title: Camping — the song (LIVE v6 sheet)
-status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). Candidate = d13ca10a (Kai's pick, §v6.0). RESUME HERE — Kai preferred r4 `sung`; round r5 `cast` (§v6.6: range / accents / texture — two voices made opposite) and Kai's acoustic experiment — r6 `unplugged` (§v6.7, had a crowd) then r7 `bare` (§v6.8, no audience, the reference researched) — generated 2026-09-13, awaiting Kai's and Jack's ears. The v5.5 round-17 sheet below the v6 section is archived history.
+status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). RESUME HERE — Kai: blues is the missed style, at 174 over a drum and bass beat (not jump up); round r8b `blues-dnb` (§v6.10) generated 2026-09-13 and awaits ears. Structure is now Verse 1 → Verse 2 → Bridge with no drops; both voices old (Bob a gravelly weathered Scouser, Tarquin a deep posh baritone). Earlier candidate d13ca10a (§v6.0). The v5.5 round-17 sheet below the v6 section is archived history.
 candidate: https://suno.com/song/d13ca10a-1aa4-41c5-a6f2-b13beeb2e164
 brief: Jack via Kai 2026-09-13 — "more like Imagine Dragons (https://en.wikipedia.org/wiki/Imagine_Dragons) and less poppy". Kai 2026-09-13 — 174 BPM drum and bass (option A), not the take's 117.
 released_take: ./camping-released.md
@@ -117,6 +117,243 @@ gets generated. Note what the rewrite added that the stomp box never said: `powe
 
 ```text
 Dark UK drum and bass: detuned wavetable lead, low palm-muted distorted power-chord guitar and heavy guitar wall, dual male spoken-word voices—gravelly half-shout and clean plummy baritone hardening into a shout—with dry intimate acapella breaks, dark sub-heavy compression, stomping floor toms, handclaps, chopped breakbeat, growling Reese sub, screaming detuned lead, reverb-soaked raw distortion, steady 174 BPM amen-roll drive.
+```
+
+## v6.10 Round r8b — `blues-dnb` (2026-09-13) — blues over 174 drum and bass
+
+**Kai, mid-r8:** *"please let's stick to 174 with a drum and bass beat underneath (just not jump up)"*. So r8's
+brushed blues shuffle (174) and slow blues (87) are **off-brief** — kept below as history only.
+
+r8b keeps everything r8 settled — the old gravelly Scouse voice and the old posh baritone, the resonator slide
+guitar and call and response, no aggressive shout after Bob's verse, Verse 1 → Verse 2 → Bridge with no drops —
+and puts **a rolling, minimal 174 breakbeat with a deep sub** underneath. Exclude now bans `jump up, wobble bass,
+neurofunk, dubstep, EDM drops, festival rave, liquid dnb`; the electronic bans from r7/r8 are lifted.
+Lyrics: r8's, with the four kit notes changed from brushes to the breakbeat — **all sung lines byte-identical.**
+Settings as r8: v6 · style influence 70 · weirdness 40 and 60 · Variety Off · Max Mode off · Male · duration Auto · camping-Jack.
+
+### r8b takes (generated 2026-09-13, Kai's request — 2 Creates → 4 takes)
+
+| Weirdness | Takes |
+|---|---|
+| 40 | [32267a97](https://suno.com/song/32267a97-1fe7-433c-937b-a46cbddf05b6) · [a5fad519](https://suno.com/song/a5fad519-a84e-4602-92e7-63ba979a07d6) |
+| 60 | [3efa7436](https://suno.com/song/3efa7436-3a07-4aa5-8c1c-598b7eda124f) · [e463f090](https://suno.com/song/e463f090-4744-42ca-accb-6c5f8803d232) |
+
+✅ Verified off Suno's records (see commit). ⬜ Awaiting ears — first checks: is the voice old and gravelly, and is the beat D&B but not jump up?
+
+#### r8b `blues-dnb`
+
+Style:
+
+```
+Raw British blues over dark rolling drum and bass at a steady 174 BPM. A tight, rolling, minimal breakbeat with crisp snares and a deep round sub bass sits underneath, restrained and hypnotic, never busy. On top, fingerpicked resonator guitar with a glass bottleneck slide, metallic and moaning, answering the voice. The voices carry everything. Verse one: a deep, gravelly, weathered old man who has seen it all, a Liverpool accent, a growl and a croak soaked in whisky and smoke, low, unhurried, half-sung, moaning. Verse two: an older posh London gentleman, a deep plummy baritone, clipped, cold and worn. Then the two old men together. Call and response between voice and slide guitar. Smoky, close and dry, no audience, minor key, no polish.
+```
+
+Exclude styles:
+
+```
+young voice, boyish voice, teenage voice, high tenor, falsetto, breathy pop vocal, singer-songwriter, acoustic pop, indie folk, emo, shouting, screaming, jump up, wobble bass, neurofunk, dubstep, EDM drops, festival rave, liquid dnb, crowd noise, audience, applause, cheering, backing vocals, gang vocals, choir, female vocal, electric guitar, distorted power chords, wavetable lead, cello, strings, accordion, piano, organ, brass, pop, glossy production, autotune, reverb wash, American accent, country vocal, southern vocal, twang, americana, bluegrass, folk-pop, happy, uplifting, major key, slow tempo, half time, tempo change
+```
+
+Lyrics:
+
+```lyrics
+[Intro — 2 bars | one lone moaning slide on a resonator guitar, then straight in]
+[Verse 1 | a deep, gravelly, weathered old Scouser in his sixties who has seen it all, a growl and a croak soaked in whisky and smoke, low, unhurried, half-sung and moaning | no American pronunciation | fingerpicked resonator guitar with a bottleneck slide, a rolling drum and bass breakbeat and deep sub bass underneath]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+[almost whispered, a low tired croak | nothing else | acapella]
+I can't live like this forever
+[the beat and slide guitar back in | the old voice rising into a rough bluesy growl, never a shout]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[a weary, bitter plea, low and gravelly, sung not shouted, the voice cracking on the last word]
+please sir, can I fuckin, have some more?
+[Verse 2 | straight in, no break | a completely different man, an older posh London gentleman, a deep plummy baritone, clipped, cold and worn at the edges | the slide guitar answers each line]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+[almost whispered, a low tired croak | nothing else | acapella]
+What about if we taxed the rich?
+[the beat and slide guitar back in | the posh voice rising, biting and bitter, still sung, never screamed]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing, is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Bridge | straight in, no break | the two old men together now, trading lines over one fingerpicked guitar, the breakbeat stripped back to a quiet rolling pulse, close and weary]
+[the deep gravelly Scouse voice]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the deep posh voice]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both old men together, rough and low]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the deep posh voice]
+you see as it turns out, there is very little clout,
+in having the manager or any of the c-suite about
+[the deep gravelly Scouse voice]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the deep posh voice]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the deep gravelly Scouse voice]
+yet I don't begrudge you,
+it's us and them now
+[the deep posh voice, rising and cracking, then fading out]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
+```
+
+## v6.9 Round r8 — `blues` (2026-09-13) — the style we missed
+
+**Kai:** *"it's the blues is the style that we've missed this whole time."* Three instructions:
+1. **After Bob's first verse** ("please sir, can I fuckin, have some more?") — *"we shouldn't shout so aggressively"*.
+2. **The voice** — *"a deep gravelly older gentleman… a weathered gentleman that's seen it all, Tom Waits type"*;
+   the takes were giving *"Ed Sheeran before his voice broke… young plucky teenager"*.
+3. **Structure** — *"Bob's first go straight into Tarquin's first and then go straight into their combined verse together."*
+
+**What changed** (built on r7 `bare`; no artist names in the boxes):
+
+| | |
+|---|---|
+| Genre | raw British blues: fingerpicked **resonator guitar with a glass bottleneck slide**, alternating bass notes and treble strums, **call and response** between voice and slide, brushed kit shuffle ([Stringjoy](https://stringjoy.com/delta-blues-guitar/), [Delta blues overview](https://blueslegacystories.com/what-are-some-common-delta-blues-instruments/)) |
+| Voice | the Tom Waits reference written out: Daniel Durchholz's *"soaked in a vat of bourbon, left hanging in the smokehouse… run over with a car"* ([Duke Sonic Dictionary](https://sonicdictionary.duke.edu/items/metavoice-voice-described-using-taste.html)) → `a growl and a croak soaked in whisky and smoke`; **both men are old** now — Bob a weathered Scouser in his sixties, Tarquin an older posh gentleman with a deep plummy baritone (canon accents kept) |
+| Young voice banned | Exclude adds `young voice, boyish voice, teenage voice, high tenor, falsetto, breathy pop vocal, singer-songwriter, acoustic pop, indie folk, emo, shouting, screaming` |
+| No aggressive shout | Verse 1 `[shouting…]` → `rough bluesy growl, never a shout`; `[louder more angry shouting]` → `a weary, bitter plea, low and gravelly, sung not shouted, cracking on the last word`; Tarquin's shout → `biting and bitter, still sung, never screamed` |
+| Structure | **both instrumental drops and both `[Beat Transition]` tags deleted**; Verse 2 and the Bridge open `straight in, no break`; intro cut to 2 bars |
+| Tempo — two versions | `shuffle`: a fast driving blues train beat at **174** (Kai's ruling kept) · `slow`: a swaying blues at **87** = half of 174 (`slow tempo, half time` un-banned for it) |
+
+**All sung lines byte-identical** (only bracket notes changed or were deleted). Settings: v6 · style influence 70 ·
+weirdness 40 and 60 · Variety Off · Max Mode off · Male · **duration Auto** (the drops are gone, so a 205 s target
+would force filler) · camping-Jack.
+
+### r8 takes (generated 2026-09-13 — 🔴 off-brief after Kai's 174 D&B ruling, history only)
+
+| Version | Weirdness 40 | Weirdness 60 |
+|---|---|---|
+| `blues-shuffle` 174 | [31a8d555](https://suno.com/song/31a8d555-c830-4f13-972e-a876949b0463) · [20184bc5](https://suno.com/song/20184bc5-073e-4301-acd8-0feb55b44971) | [51f95733](https://suno.com/song/51f95733-9010-4eaf-99cf-5545d7cd8b0e) · [1bff157e](https://suno.com/song/1bff157e-86df-4cea-8e08-ca2135dfcdab) |
+| `blues-slow` 87 | [32648f47](https://suno.com/song/32648f47-a715-41bf-ab74-a1573347893c) · [6d8ce1e2](https://suno.com/song/6d8ce1e2-ee70-4be3-b565-aebcc13dee28) | [c7dbdc07](https://suno.com/song/c7dbdc07-f750-431a-a805-8359d52e3bbf) · [e5dd66d0](https://suno.com/song/e5dd66d0-24d8-42ea-8ed5-64818f425c1f) |
+
+✅ All eight verified off Suno's records: three boxes verbatim, sung words unchanged, sliders as titled.
+
+#### r8 `blues-shuffle` (174)
+
+Style:
+
+```
+Raw British blues, stripped bare, dark and weary. A fast, driving blues shuffle at a steady 174 BPM, a train beat on a small acoustic drum kit played with brushes, boom-chang, hypnotic. Fingerpicked resonator guitar with a glass bottleneck slide, metallic and moaning, alternating bass notes and treble strums, answering the voice. The voices carry everything. Verse one: a deep, gravelly, weathered old man who has seen it all, a Liverpool accent, a growl and a croak soaked in whisky and smoke, low, unhurried, half-sung, moaning. Verse two: an older posh London gentleman, a deep plummy baritone, clipped, cold and worn. Then the two old men together. Call and response between voice and slide guitar. Smoky and close, an empty room with no audience, one take, minor key, no polish.
+```
+
+Exclude styles:
+
+```
+young voice, boyish voice, teenage voice, high tenor, falsetto, breathy pop vocal, singer-songwriter, acoustic pop, indie folk, emo, shouting, screaming, crowd noise, audience, applause, cheering, whooping, shrieking, crowd singing along, live concert recording, arena, stadium, backing vocals, gang vocals, choir, harmonies stacked, female vocal, synth, electronic, EDM, drum machine, programmed drums, 808, sub bass, Reese bass, electric guitar, distorted power chords, wavetable lead, sampled breaks, cello, strings, accordion, piano, organ, brass, pop, glossy production, autotune, reverb wash, American accent, country vocal, southern vocal, twang, americana, bluegrass, folk-pop, happy, uplifting, major key, slow tempo, half time, tempo change
+```
+
+#### r8 `blues-slow` (87)
+
+Style:
+
+```
+Raw British blues, stripped bare, dark and weary. A slow, heavy, swaying blues at 87 BPM, a lazy dragging shuffle on a small acoustic drum kit played with brushes, half of a 174 pulse. Fingerpicked resonator guitar with a glass bottleneck slide, metallic and moaning, alternating bass notes and treble strums, answering the voice. The voices carry everything. Verse one: a deep, gravelly, weathered old man who has seen it all, a Liverpool accent, a growl and a croak soaked in whisky and smoke, low, unhurried, half-sung, moaning. Verse two: an older posh London gentleman, a deep plummy baritone, clipped, cold and worn. Then the two old men together. Call and response between voice and slide guitar. Smoky and close, an empty room with no audience, one take, minor key, no polish.
+```
+
+Exclude styles:
+
+```
+young voice, boyish voice, teenage voice, high tenor, falsetto, breathy pop vocal, singer-songwriter, acoustic pop, indie folk, emo, shouting, screaming, crowd noise, audience, applause, cheering, whooping, shrieking, crowd singing along, live concert recording, arena, stadium, backing vocals, gang vocals, choir, harmonies stacked, female vocal, synth, electronic, EDM, drum machine, programmed drums, 808, sub bass, Reese bass, electric guitar, distorted power chords, wavetable lead, sampled breaks, cello, strings, accordion, piano, organ, brass, pop, glossy production, autotune, reverb wash, American accent, country vocal, southern vocal, twang, americana, bluegrass, folk-pop, happy, uplifting, major key, tempo change
+```
+
+#### r8 shared Lyrics
+
+```lyrics
+[Intro — 2 bars | one lone moaning slide on a resonator guitar, then straight in]
+[Verse 1 | a deep, gravelly, weathered old Scouser in his sixties who has seen it all, a growl and a croak soaked in whisky and smoke, low, unhurried, half-sung and moaning | no American pronunciation | fingerpicked resonator guitar with a bottleneck slide, brushed kit shuffling underneath]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+[almost whispered, a low tired croak | nothing else | acapella]
+I can't live like this forever
+[guitar and brushes back in | the old voice rising into a rough bluesy growl, never a shout]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[a weary, bitter plea, low and gravelly, sung not shouted, the voice cracking on the last word]
+please sir, can I fuckin, have some more?
+[Verse 2 | straight in, no break | a completely different man, an older posh London gentleman, a deep plummy baritone, clipped, cold and worn at the edges | the slide guitar answers each line]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+[almost whispered, a low tired croak | nothing else | acapella]
+What about if we taxed the rich?
+[guitar and brushes back in | the posh voice rising, biting and bitter, still sung, never screamed]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing, is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Bridge | straight in, no break | the two old men together now, trading lines over one fingerpicked guitar and soft brushes, close and weary]
+[the deep gravelly Scouse voice]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the deep posh voice]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both old men together, rough and low]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the deep posh voice]
+you see as it turns out, there is very little clout,
+in having the manager or any of the c-suite about
+[the deep gravelly Scouse voice]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the deep posh voice]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the deep gravelly Scouse voice]
+yet I don't begrudge you,
+it's us and them now
+[the deep posh voice, rising and cracking, then fading out]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
 ```
 
 ## v6.8 Round r7 — `bare` (2026-09-13) — the acoustic experiment taken to its extreme
