@@ -13,6 +13,7 @@ coverage/
 # Flow automation: persistent, logged-in Chrome profile (never commit — holds Google session)
 .flow-profile/
 .flow-profile-*/
+.flow-profile.for-testing.bak/
 
 # Browser channel locks — PID files, per-machine, never shared
 .flow-channels/

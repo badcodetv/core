@@ -4,9 +4,9 @@
 #
 # Resolution order for the browser binary:
 #   1. $CHROME_BIN (explicit override)
-#   2. A system Chrome/Chromium on PATH (Linux/macOS)
-#   3. Playwright's bundled Linux Chromium (newest ~/.cache/ms-playwright/chromium-*).
-#      This is the preferred path under WSL: it runs INSIDE WSL, so its debug port
+#   2. Branded Google Chrome on PATH — EVERY channel, ruled by Kai 2026-09-13
+#   3. A system Chromium, then Playwright's bundled Linux Chromium — fallback only.
+#      Whichever wins must run INSIDE WSL, so its debug port
 #      is on WSL's own localhost — exactly where the Playwright MCP can attach —
 #      and it renders via WSLg. (A Windows-side chrome.exe is intentionally NOT
 #      used: under default WSL NAT networking its CDP port is not reachable here.)
@@ -55,36 +55,24 @@ fi
 
 # Resolve a browser binary.
 #
-# 🔴 BRANDED CHROME IS FOR THE LISTENING CHANNEL ONLY — pending a ruling (2026-09-12).
-# AI Studio's GenerateContent refuses Chrome for Testing outright: pressed by hand it answers
-# "Failed to create interaction: permission denied." (listen-mcp T3, confirmed by Kai 2026-09-11).
-# So the listening channel MUST run real Google Chrome, and does.
-#
-# 🔴 CORRECTION, same day: an earlier version of this comment said branded Chrome would lock us
-# out of Flow's and Suno's profiles because they were written by a "newer" build. That is
-# BACKWARDS. Measured (thread 06, re-confirmed here): branded Google Chrome is 153.0.8010.36 and
-# Playwright's Chrome for Testing is 151.0.7922.34, with `.flow-profile` stamped 151. Chrome
-# refuses a profile written by a NEWER version, so branded Chrome opening those profiles is an
-# UPGRADE and is allowed. The one-way door runs the other way: once branded 153 has written a
-# profile (already true of `.flow-profile-9223`), Chrome for Testing 151 can never reopen it.
-#
-# So this guard is now plain conservatism, not protection: flipping every channel to branded
-# Chrome is irreversible per profile, so it waits for Kai to say so in this thread's window.
-LISTEN_CHANNEL="${LISTEN_CHANNEL:-2}"
+# 🔴 BRANDED GOOGLE CHROME ON EVERY CHANNEL (Kai ruling, 2026-09-13).
+# AI Studio refuses Chrome for Testing outright, and Kai chose one browser everywhere over a
+# two-browser split. Branded Chrome (153) opening a Chrome-for-Testing (151) profile is an upgrade
+# and is allowed — but it is a ONE-WAY DOOR: CfT can never reopen a profile branded Chrome wrote.
+# The pre-switch profiles were copied to `.flow-profile*.for-testing.bak/` on 2026-09-13.
+# Chromium / Playwright's bundle below are a fallback for machines without branded Chrome only;
+# pointing them at a migrated profile will fail.
 CHROME="${CHROME_BIN:-}"
-if [ -z "$CHROME" ] && [ "$(( PORT - 9221 ))" = "$LISTEN_CHANNEL" ]; then
+if [ -z "$CHROME" ]; then
   for c in "google-chrome" "google-chrome-stable" \
            "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"; do
     if command -v "$c" >/dev/null 2>&1 || [ -x "$c" ]; then CHROME="$c"; break; fi
   done
-  if [ -z "$CHROME" ]; then
-    echo "Channel $LISTEN_CHANNEL is the LISTENING channel and needs branded Google Chrome," >&2
-    echo "which is not installed. AI Studio refuses Chrome for Testing. Install it with:" >&2
-    echo "  cd /tmp && wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install -y ./google-chrome-stable_current_amd64.deb" >&2
-    exit 1
-  fi
 fi
 if [ -z "$CHROME" ]; then
+  echo "warning: branded Google Chrome not found — falling back to Chromium. AI Studio will refuse it, and" >&2
+  echo "  a profile branded Chrome already wrote will not open. Install Chrome:" >&2
+  echo "  cd /tmp && wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install -y ./google-chrome-stable_current_amd64.deb" >&2
   for c in "chromium" "chromium-browser"; do
     if command -v "$c" >/dev/null 2>&1 || [ -x "$c" ]; then CHROME="$c"; break; fi
   done
