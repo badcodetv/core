@@ -1,6 +1,6 @@
 ---
 title: Camping — the song (LIVE v6 sheet)
-status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). Candidate = d13ca10a (Kai's pick, §v6.0). RESUME HERE — Kai preferred r4 `sung`; round r5 `cast` (§v6.6: range / accents / texture — two voices made opposite) and Kai's round r6 `unplugged` acoustic experiment (§v6.7) generated 2026-09-13, awaiting Kai's and Jack's ears. The v5.5 round-17 sheet below the v6 section is archived history.
+status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). Candidate = d13ca10a (Kai's pick, §v6.0). RESUME HERE — Kai preferred r4 `sung`; round r5 `cast` (§v6.6: range / accents / texture — two voices made opposite) and Kai's acoustic experiment — r6 `unplugged` (§v6.7, had a crowd) then r7 `bare` (§v6.8, no audience, the reference researched) — generated 2026-09-13, awaiting Kai's and Jack's ears. The v5.5 round-17 sheet below the v6 section is archived history.
 candidate: https://suno.com/song/d13ca10a-1aa4-41c5-a6f2-b13beeb2e164
 brief: Jack via Kai 2026-09-13 — "more like Imagine Dragons (https://en.wikipedia.org/wiki/Imagine_Dragons) and less poppy". Kai 2026-09-13 — 174 BPM drum and bass (option A), not the take's 117.
 released_take: ./camping-released.md
@@ -117,6 +117,131 @@ gets generated. Note what the rewrite added that the stomp box never said: `powe
 
 ```text
 Dark UK drum and bass: detuned wavetable lead, low palm-muted distorted power-chord guitar and heavy guitar wall, dual male spoken-word voices—gravelly half-shout and clean plummy baritone hardening into a shout—with dry intimate acapella breaks, dark sub-heavy compression, stomping floor toms, handclaps, chopped breakbeat, growling Reese sub, screaming detuned lead, reverb-soaked raw distortion, steady 174 BPM amen-roll drive.
+```
+
+## v6.8 Round r7 — `bare` (2026-09-13) — the acoustic experiment taken to its extreme
+
+**Kai on r6:** *"a large amount of crowd effects in the background… no crowd effects, no shrieking or general
+singing by the crowd… Nirvana Unplugged… raw, gritty, emotional lead singer… the emotional weight is just in the
+voice… just an acoustic guitar and an acoustic drum kit, but it still has that drum and bass speed… stripped it
+bare, everything to its true essence."*
+
+**Why r6 had a crowd:** its Style said `Unplugged live acoustic session` and `a live acoustic set in one take` —
+"live" and "set" cast an audience. r7 says `recorded close in an empty dark room with no audience` and bans the crowd.
+
+**What the research says the reference sounds like** (turned into words; no artist names in the boxes):
+
+| Fact | Where it went |
+|---|---|
+| Recast as "an introspective, lo-fi folk act"; a cover turned into "a harrowing, anguished lament" ([albumism](https://albumism.com/features/nirvana-mtv-unplugged-in-new-york-album-anniversary)) | `acoustic grunge lament`, `Harrowing, anguished` |
+| Stage dressed with lilies, black candles and a chandelier — Cobain: *"Like a funeral"* ([Wikipedia](https://en.wikipedia.org/wiki/MTV_Unplugged_in_New_York)) | `sombre and funereal` |
+| Voice "crusty and angelic", "meticulous rasp"; "fearlessly confessional"; the last line "jumps up an octave… strain so far he screams and cracks" ([albumism](https://albumism.com/features/nirvana-mtv-unplugged-in-new-york-album-anniversary), [Wikipedia](https://en.wikipedia.org/wiki/MTV_Unplugged_in_New_York)) | the voice sentence; the final bridge tag jumps an octave |
+| Grohl was nearly dropped for hitting too hard; the producer bought **wire brushes and sizzle sticks**, a pared-down kit ([Loudwire](https://loudwire.com/dave-grohl-nirvana-unplugged-supposed-to-be-disaster/)) | `small acoustic drum kit with wire brushes and sizzle sticks`, `small muffled kick` |
+| Cobain's acoustic (Martin D-18E) ran through a **Fender Twin Reverb** with a DS-2 and a Small Clone chorus ([guitar.com](https://guitar.com/features/artist-rigs/the-gear-used-on-nirvana-mtv-unplugged-in-new-york-album/)) | `steel-string acoustic guitar through a small valve amp, dark, woody and slightly dirty` |
+| Whole set in **one take** ([Wikipedia](https://en.wikipedia.org/wiki/MTV_Unplugged_in_New_York)) | `one take, no polish` |
+| The real set also had cello, accordion and bass | **banned** — Kai asked for guitar and kit only |
+
+**Lyrics:** stage notes only — shouting cues become `the voice straining and cracking` / `screamed until the voice
+breaks`, "no music" becomes "nothing else", the bridge is `bare and broken`. **All sung lines byte-identical.**
+Settings as r6: v6 · style influence 70 · weirdness 40 and 60 · Variety Off · Max Mode off · Male · 205 s · camping-Jack.
+
+### r7 takes (generated 2026-09-13, Kai's request — 2 Creates → 4 takes)
+
+| Weirdness | Takes |
+|---|---|
+| 40 | [71101001](https://suno.com/song/71101001-8dd0-4cf0-9fb6-9f0929a2db4e) · [912d9766](https://suno.com/song/912d9766-d43e-46d1-bba8-c88518de8a8a) |
+| 60 | [f8f058b8](https://suno.com/song/f8f058b8-1c7f-4744-bf10-197950358ef5) · [1fc2b93b](https://suno.com/song/1fc2b93b-233a-43db-9ad3-f7ceaa8cb455) |
+
+✅ Verified off Suno's records: all three boxes verbatim (sung words unchanged), Variety Off held, sliders as titled.
+Length not yet in the record when checked. ⬜ Awaiting ears — first check: is the crowd gone?
+
+#### r7 `bare`
+
+Style:
+
+```
+Stripped-bare acoustic grunge lament, sombre and funereal, recorded close in an empty dark room with no audience. A drum and bass rhythm at a steady 174 BPM played by hand on a small acoustic drum kit with wire brushes and sizzle sticks: a soft skittering breakbeat on brushed snare and hi-hat, a small muffled kick used sparingly, lots of space and silence. One steel-string acoustic guitar through a small valve amp, dark, woody and slightly dirty, strummed and picked. Nothing else. The emotional weight is carried entirely by the voices: raw, hoarse, fearlessly confessional, a worn rasp, crusty and fragile at once, quiet and weary, then straining up an octave until the voice screams and cracks. Two British men. Verse one, a rough Scouse voice, low and gravelly. Verse two, a completely different man, a posh London voice, higher and cleaner, breaking apart. Harrowing, anguished, intimate, minor key, one take, no polish.
+```
+
+Exclude styles:
+
+```
+crowd noise, audience, applause, cheering, whooping, shrieking, crowd singing along, live concert recording, arena, stadium, backing vocals, gang vocals, choir, harmonies stacked, female vocal, synth, electronic, EDM, drum machine, programmed drums, 808, sub bass, Reese bass, electric guitar, distorted power chords, wavetable lead, sampled breaks, bass guitar, cello, strings, accordion, piano, organ, brass, pop, glossy production, autotune, reverb wash, American accent, country vocal, southern vocal, twang, americana, bluegrass, folk-pop, campfire singalong, happy, uplifting, major key, slow tempo, half time, tempo change
+```
+
+Lyrics:
+
+```lyrics
+[Intro — 8 bars | one acoustic guitar alone in an empty dark room, a low minor chord picked slowly and left ringing | no drums yet | no audience, silence around it]
+[Verse 1 | a rough weary Scouse voice, low, hoarse and raw, every word carrying the weight | no American pronunciation | brushes come in on the snare, a soft skittering breakbeat at 174, sparse | acoustic guitar strummed quietly under every line | the words never stop]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+[whispering voice loosing hope | nothing else | acapella]
+I can't live like this forever
+[the voice straining and cracking | guitar and brushes again]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[screamed until the voice breaks]
+please sir, can I fuckin, have some more?
+[Instrumental — 8 bars, no vocals | the acoustic guitar strummed harder, sizzle sticks on the kit, a faster rolling breakbeat on snare and toms, still only guitar and drums]
+[Beat Transition]
+[Verse 2 | a posh London voice, a completely different man, clipped, higher and cleaner, fragile and exposed | brushes drop back, sparse | the acoustic guitar picks one repeating figure]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+[whispering voice loosing hope | nothing else | acapella]
+What about if we taxed the rich?
+[the voice straining and cracking | guitar and brushes again]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing, is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Instrumental — 8 bars, no vocals | the most intense moment, the acoustic guitar hammered hard, rolling snare fills, still only guitar and drums]
+[Beat Transition]
+[Bridge | the turn | almost nothing, one quiet guitar and a soft brushed pulse | the two men trade lines, close, bare and broken in the same cold room]
+[the rough Scouse voice]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the posh London voice]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together, raw and unpolished]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the posh London voice]
+you see as it turns out, there is very little clout,
+in having the manager or any of the c-suite about
+[the rough Scouse voice]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the posh London voice]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the rough Scouse voice]
+yet I don't begrudge you,
+it's us and them now
+[the posh London voice, jumping up an octave, straining until it screams and cracks]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
 ```
 
 ## v6.7 Round r6 — `unplugged` (2026-09-13) — Kai's crazy experiment
