@@ -1801,6 +1801,83 @@ Run for camping `2g` (light 2008 couple stills). **New or contradicting items on
   thing to look at to fix dead eyes. `[community, unverified]`
 - 🚫 **Do not cite** the "AI teal-orange bias" article (anecdotal, Midjourney, 2024).
 
+## Eighth web pass — 2026-09-14 `[academic]` `[community]`
+
+Run for camping `2g-2` (a chip stolen at a services table). **New items only. None tested on our work yet.**
+There is still no Nano Banana 2 prompting guide or model change dated after 2026-09-01, and still no
+"Nano Banana Pro 2": only knock-off domains use that name.
+
+- **Hands gripping an object render better than open hands. Hands near the face fail more often.**
+  `[community]` [zsky.ai](https://zsky.ai/blog/how-to-fix-ai-hands). Supported by
+  [GraspDiffusion, arXiv 2410.13911](https://arxiv.org/abs/2410.13911) `[academic]`, which tested older
+  diffusion models, not Nano Banana. §25 covers what a hand looks like; this covers how it's posed.
+- **Models miscount, and piles of overlapping objects do worst.** Gemini was among the nine systems tested.
+  `[academic]` [NumBench, arXiv 2608.28206](https://arxiv.org/html/2608.28206). Ask for *one* of the object
+  that matters, and keep any pile small.
+- **Food is a slop category of its own:** uniform texture and gloss, too-perfect arrangement, cutlery
+  melting into food. `[community]` [ico-optics](https://www.ico-optics.org/why-ai-food-photos-always-look-so-unnaturally-fake/) ·
+  [X-AIGD, arXiv 2601.19430](https://arxiv.org/abs/2601.19430) `[academic]`, which lists hand–object
+  contact and food as separate artifact categories.
+- **Brand eras:** Burger King changed its logo in 2021. ⬜ *Inferred, unverified:* since the model can pull
+  current imagery from search, naming a brand in a period shot probably gives the *current* badge, which is
+  §34 plus a period error.
+- **Name what someone is looking at, not "looking away".** `[community]`, tested on other engines. Confirms
+  the seventh pass.
+
+## Ninth web pass — 2026-09-14 `[academic]` `[community]`
+
+Run for camping `9-walk` (Tarquin walking up to a yurt at blue hour, the first frame of a clip). **New items
+only. None tested on our work yet.** There is still no model change and no "Nano Banana Pro 2".
+
+- **Walking figures:** generators swap which leg is nearer the camera when legs overlap. The counter-cue is
+  the arm opposite the forward leg swinging forward. `[academic]`
+  [arXiv 2312.07854](https://arxiv.org/pdf/2312.07854), older pipeline, not NB2. Describe the stride as a
+  shape (heel lifting, foot planted), not as *walking*. That is the §38 family.
+- **Choose frozen or blurred and say which**, or the model averages the two. `[community]`
+  [prompt-architects, 2026-09-02](https://prompt-architects.com/blog/359-sports-and-action-motion-prompts)
+- **A still meant as the first frame of a clip:** keep head and feet inside the frame with ground below,
+  and leave out motion blur and busy backgrounds. Cropped feet get invented and rarely match.
+  `[community]` [wearview, 2026-07-16](https://wearview.co/blog/walking-video-from-single-photo)
+- **Warm windows against a blue-hour sky is the real-estate HDR genre** (bracketed 3–5 stops). ⬜ *Inferred,
+  unverified:* the scene itself pulls toward a glossy poster, the same shape as *advert vocabulary commissions
+  an advert*. Counter it with "a single handheld exposure", both ends of the exposure named, and no *HDR*.
+  `[community]` kolorheaven · digital-photography-school
+- **The glamping slop look is fairy lights on canvas and trunks with a "warm ethereal glow".** Name the
+  objects in a final scoped constraint. `[community, weak]`
+- **Generated shadows fail on hard light and complex shapes, and soft shadows pass.** `[academic]`
+  [arXiv 2311.17138](https://arxiv.org/abs/2311.17138) (CVPR 2024, older models). Soft whole-sky light, such
+  as overcast or blue hour, is the easy case.
+
+### 🔴 Observed on `9-walk` round 1, 2026-09-14 (n=1)
+
+- **"The blue evening sky is the only light on him, dim and cool" came back as bright, even dusk.** The
+  frame was readable everywhere, and his face and clothes were fully lit. A time of day plus *dim* does not
+  darken the frame. Round 2 tries *"twenty minutes after sunset"*, *"falls away towards near-dark"* and a
+  figure against the sky.
+- ✅ **`@Tarquin-new` carried the whole outfit with zero wardrobe words**, including the sock-less loafers.
+
+## Tenth web pass — 2026-09-14 `[academic]` `[community]`
+
+Run for camping `9-walk` round 2 (the yurt large in the foreground, the man small far down a track). **New
+items only. None tested on our work yet.**
+
+- **Deep focus is the alternative to fake depth of field:** a wide lens, stopped down, with both the near
+  and far layers stated as sharp. Community advice phrases it as "no DOF blur"; convert it per §23.
+  `[community]` [prompt-architects](https://prompt-architects.com/blog/226-camera-and-lens-terms-that-change-your-ai-images)
+- **Frame slightly wider than needed** when the still will seed a clip, so the clip can reframe or push in.
+  `[community]` [film.fun, 2026-02-28](https://www.film.fun/articles/nano-banana-2-prompting-guide-frame-composition-and-reframing-for-ai-video)
+- **Vanishing points are a known failure:** parallel lines don't meet properly. A path or road is two
+  parallel lines. Check them, and curve the path rather than aiming it at the centre. `[academic]`
+  [ControlVP, arXiv 2512.07504](https://arxiv.org/abs/2512.07504), tested on SD, not NB2.
+- **A foreground object looks pasted on when its perspective or camera height doesn't match the scene.**
+  `[community, weak]` (product compositing sources)
+- **Small figures hold identity by silhouette and hair, not the face** (around 50px). Confirms §12.
+  `[community]` [theneuralpost, 2026-01-28](https://theneuralpost.com/2026/01/28/nano-banana-vs-the-world-why-character-consistency-is-finally-solved/)
+- **In image-to-video, a figure walking towards the camera morphs at the face first.** Counters: cast the
+  Character in the clip, slow the approach, and stop it before a medium shot. `[community, inferred]`
+  [wearview](https://www.wearview.co/blog/walking-video-from-single-photo)
+- 🚫 **Do not cite** felo.ai on "Nano Banana Next / 3". It's reseller rumour with no Google source.
+
 ## Notes for BadCode `[untested]`
 
 Hypotheses for the calibration run, not rules.

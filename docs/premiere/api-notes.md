@@ -1603,6 +1603,14 @@ Lumetri appended — rendered its crop bars black, so Motion Crop alone is not s
 it; the combination is what produced white and the interaction was never isolated. **Recorded as a
 symptom, not a mechanism.**
 
+✅ **Probable explanation, 2026-09-14 (`camping jack`, the same eyelid rebuilt):** the exported PNG is
+**RGBA (colour type 6)**, and the wiped region decodes as **`0,0,0,0` — fully transparent**, not white.
+Image viewers, including the Read tool's preview, paint transparency **white**. So a white region in a
+`premiere_export_frame` PNG is most likely **alpha, not a white render**, and the sequence plays black
+there. Check the pixel before diagnosing: the IHDR byte at offset 25 is the colour type, and inflate the
+IDAT to read the alpha. ⚠️ This doesn't explain the 2026-09-05 case where zeroing Motion Crop turned it
+black. That case is still unisolated.
+
 🔴 **Why it matters more here than elsewhere:** on a film that is near-black from scene 10 onward,
 a transparent region that resolves to white is not a subtle artefact — it is a full-frame flash.
 **Export a frame and look whenever you introduce transparency**, rather than trusting that "nothing

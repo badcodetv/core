@@ -1684,6 +1684,56 @@ Run for camping `2g-1` (a wince and a stifled laugh, Frames). **New or contradic
   motion-only rule. [fal](https://fal.ai/learn/tools/how-to-use-gemini-omni-flash-1-1)
 - **Not adopted:** a bracketed `[Audio: …]` line (atlascloud, unverified). Ours is confirmed working.
 
+## Tenth pass — 2026-09-14 `[vendor]` `[academic]` `[community]`
+
+Run for camping `9-walk` (a small figure walking towards a locked camera, Frames). **New or contradicting
+items only. Untested by us.**
+
+- 🔴 **The Gemini API takes a first frame AND a reference image in one request**:
+  `[# Sources <FIRST_FRAME>@Image1] [# References <IMAGE_REF_0>@Image2]`. `[vendor]`
+  [ai.google.dev/gemini-api/docs/omni](https://ai.google.dev/gemini-api/docs/omni), updated 2026-09-08.
+  This contradicts nothing yet: [the exclusive-mode rule](#what-we-actually-confirmed-2026-08-14) is a Flow
+  **UI** fact from 2026-08-16, before 1.1. ⬜ **Re-check at the UI** whether the Frames tab now accepts a
+  Character.
+- **Omni 1.1 end frames are desktop-only in Flow.** `[vendor]` (FlowbyGoogle post, search snippet only)
+- **Floaty, weightless walking is the reported Omni tell.** The counter is feet planting with weight and
+  friction, and arms swinging opposite the stride. `[community]`
+  [atlascloud](https://www.atlascloud.ai/blog/tips/seedance-2.0-vs-gemini-omni-flash)
+- **A walking face melts from low resolution plus too much movement.** `[community]`
+  [wearview, 2026-07-16](https://www.wearview.co/blog/walking-video-from-single-photo). ⚠️ It says nothing
+  about stopping distance, so *"stop before a medium shot"* is our inference.
+- **A flicker should be irregular, and every light change needs a visible source.** `[community]`
+  [prompt-architects, 2026-09-02](https://prompt-architects.com/blog/370-lighting-direction-in-ai-video-prompts)
+- **Puddle reflections can hold impossible content** (a three-legged reflected figure). `[academic]`
+  [arXiv 2406.08651](https://arxiv.org/pdf/2406.08651), stills. Confirms the reflection mechanism.
+- 🚫 **Not adopted:** atlascloud's *"smooth, locked tripod shot"*. On 2f-5 the word *tripod* drew a tripod.
+
+**Added the same day for camping `12e-bc` (a word revealed by lightning):**
+- **Omni renders prompted text "correct and readable", but has no typeface control.** Describe the font's
+  shapes. `[vendor]` [ai.google.dev/gemini-api/docs/omni](https://ai.google.dev/gemini-api/docs/omni)
+- **Quotation marks switch the text channel on.** Keep it short, all caps, high contrast. This is the
+  opposite side of [the speech trap](#-the-speech-trap-is-punctuation-not-vocabulary): one quoted string
+  with no person speaking. `[community]` openart, morphic
+- **Text holds best on flat, face-on surfaces with a still camera, and warps on soft or moving ones** (Veo 3).
+  `[community]` arsturn
+- **Write lightning as a whole-frame exposure spike**, or you get a drawn bolt that lights nothing. Name one
+  bolt and one strike point. `[community]` prompt-architects, morphic
+- **Real cloud-to-ground lightning restrikes 3–5 times, 40–80 ms apart**, so a realistic render may fail
+  the 3-flashes-per-second gate. `[academic]` Aldis, U. Arizona
+- **"Cyberpunk" brings cyan and magenta, RGB split and glitch.** Describe the letter shapes instead.
+  `[community, inferred]` fontvibe
+- **Text already in the first frame: don't write it again, and don't describe the logo.** Describe only
+  the change. *"Text rarely survives motion intact."* This limits the quoted-string note above, which is
+  for making text *appear*. `[community]`
+  [prompt-architects, 2026-08-27](https://prompt-architects.com/blog/242-from-still-image-to-ai-video-handoff-prompts)
+- **Logo lock plus Lock, Move, Land:** one lock sentence (exact shape, spacing and spelling), one intended
+  motion, then a stated resting frame. Hype words ("epic", "premium") reportedly trigger a redesign.
+  `[community]` renderforest 2026-05-19 · lightxeditor
+- **Fine texture boils under pulsing light** (Veo shimmer, Hailuo pulsing). Keep light on detailed surfaces
+  steady. `[community]` [unifab, 2026-09-10](https://unifab.ai/resource/remove-ai-video-flicker)
+- ⬜ **Whether a cut object stays cut is untested anywhere.** Morphing and object permanence are listed as
+  common failures. `[academic, indirect]` arXiv 2606.05328
+
 ## 🔑 On Ingredients with a Character, the shortest prompt won `[observed 2026-09-13, n=1]`
 
 Camping `2f-5`: `@Bob` smoking at a motorway services, Ingredients to Video. **Four rounds in one

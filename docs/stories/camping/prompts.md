@@ -5691,10 +5691,11 @@ leaves the crash blank.
 
 **⬜ Next session, start here:**
 
-1. **2g-1 tea on the bonnet.** Still returned. Video written and unrun, so see how it came back.
-2. **2g-2 the chip thief.** Not written. Jo keeps stealing Bob's chips from a shared Burger King bag at a
+1. ✅ **2g-1 tea on the bonnet.** Still and video both came back good (Jack, 2026-09-14).
+2. 🟡 **2g-2 the chip thief.** Still came back good. Video written 2026-09-14, unrun. Jo keeps stealing Bob's chips from a shared Burger King bag at a
    plastic services table, and he notices on the third one.
-3. **2g-3 asleep in the passenger seat.** Not written. Jo dozes, Bob glances over at her and turns the
+3. 🟡 **2g-3 asleep in the passenger seat.** Still written 2026-09-14, unrun. Bob's glance was dropped
+   so his eyes stay on the road. Jo dozes, Bob glances over at her and turns the
    radio down.
 
 One shot at a time: still, then video. Run shot-craft first each time.
@@ -5786,7 +5787,7 @@ spec in three ways, and the picture wins from here on
 
 Both expressions landed: his wince, and her holding in a laugh with her mouth closed.
 
-#### 2g-1 — tea on the car bonnet · **video** · written 2026-09-13, unrun
+#### 2g-1 — tea on the car bonnet · **video** · written 2026-09-13 · ✅ came back good 2026-09-14
 
 **Tab: Frames**, with the returned still as frame one. Nothing here is a Flow Character, so
 [Ingredients would re-render both faces](../../google-flow/omni-flash.md#️-ingredients-re-renders-faces--it-will-not-hold-an-unnamed-person-observed-2026-08-20).
@@ -5825,6 +5826,199 @@ Thanks.
 **Check before accepting:** both faces hold at the last frame, not just the first. The cups stay as
 single cups in their hands. Nobody speaks and her mouth stays shut. The cars in the background stay
 parked.
+
+#### 2g-2 — the chip thief · **still** · written 2026-09-14, unrun
+
+**Jack, 2026-09-14:** *"avoid AI slop, optimise for Nano Banana, use the cinematography files."* Eighth
+web pass run for it ([`nano-banana-2.md`](../../google-flow/nano-banana-2.md#eighth-web-pass--2026-09-14-academic-community)).
+
+**Shot spec (shot-craft):**
+
+1. **Job:** 2g-1 was the two of them laughing *together*. This one is a small private con, and the viewer
+   is in on it and he isn't. The joke should read in a second.
+2. **Register:** the human-scale exception (R2). Seated eye level, medium two-shot, nothing monumental.
+3. **Depth:** foreground is the near edge of the table and tray, soft. Midground is the two of them side by
+   side on a fixed bench. Background is the food court, dimmer and soft.
+4. **Focal point:** her hand with the one chip, which wins on **her gaze plus his**. Her eyes are on his
+   face and his eyes are away, so the eye goes to the hand between them.
+5. **Light:** one tall window along the left of the frame, flat overcast daylight through it. It lights
+   the side of their faces nearer the window, and the room falls off to the right. Both ends of the
+   exposure are named.
+6. **Camera:** seated eye height, level, 50mm, about two and a half metres, across the table and a little
+   to her side. That puts the window **at an angle, not square-on**, so it can't become a
+   [§37 symmetry magnet](../../google-flow/nano-banana-2.md#37--a-square-on-architectural-feature-is-a-symmetry-magnet-and-a-composition-adjective-will-not-move-it-observed-2026-09-12).
+   Faces stay no larger than in `2b`.
+7. **Withheld:** the counter, the signs and the brand. The only thing outside the window is a soft car park.
+8. **Unresolved question:** she has one chip lifted and **he hasn't noticed yet**. The catch is kept for
+   the video, so the still is the held breath before it.
+
+**Decisions and their reasons:**
+
+- 🔴 **No Burger King.** Naming a brand renders its badge, and no constraint removes it
+  ([§34](../../google-flow/nano-banana-2.md#34--naming-a-marque-renders-its-badging-and-no-downstream-constraint-removes-it-observed-2026-09-08)).
+  The badge would probably be the *2021* logo, which is wrong for 2008 (*unverified, inferred*), and it
+  would put a real company's mark in a political film. The chips come in **a plain paper bag torn open
+  flat on the tray**. Brand it in post if it's really wanted.
+- **The theft is frozen as geometry, not written as an action.** *"Steals"* and *"sneakily"* are
+  in-progress states of the [§38](../../google-flow/nano-banana-2.md#38--a-mechanical-in-progress-state-returns-fully-open-or-fully-shut--give-it-a-physical-analogy-observed-2026-09-12)
+  kind. So: one chip, between thumb and first finger, **a hand's width above the bag, her hand low over
+  the table** and nowhere near her mouth. Hands near a face fail more often *(community)*.
+- **One chip, and a small untidy pile.** Image models miscount, and overlapping piles do worst
+  *(NumBench 2026)*. Uniform, glossy, perfectly arranged food is its own slop tell.
+- **His near hand holds something**, a plain white paper cup, so it's a grip and not a spread hand.
+- **Each gaze has a named target.** His eyes are on the car park through the window, hers are on his
+  face. There are no emotion words: the expressions are muscles, eyes longer than mouths, closed mouths,
+  a floor (*"a stranger would take a second"*), and the wrong readings named.
+- 🔑 **Few nouns.** Every noun gets drawn (2f-5, revisions 1–4). No salt sachets, no ketchup, no
+  second meal, no phone, no lorries, no signs.
+- **Same stock and wording shape as 2g-1**, which came back good, so the two cut together.
+
+**Paste into:** Flow → **Nano Banana 2** → image prompt box. **Reference:** the accepted `2b` still, and
+nothing else. **No `@Bob`.** **Aspect:** 16:9. **Outputs:** 2.
+
+```prompt
+SCENE:
+
+Candid documentary photograph on 35mm Kodak Ektachrome. Fine natural grain, muted cool-neutral colour, flat overcast daylight, calm observational tone.
+
+The attached image is a reference for the two people only — their faces, hair and clothes. It is not a frame from this shot. This photograph is taken the same day, indoors, at a table in a British motorway service station food court, halfway through their drive.
+
+Camera and framing: Seated eye level and level, 50mm lens at f/2.8, from across the table and a little to her side, about two and a half metres away. A medium two-shot from the waist up: the man and the woman from the reference sit side by side on a fixed bench behind a small plastic table. He is on the left of the frame, nearer the window, and she is on the right. The near edge of the table and a plastic tray run across the bottom of the frame, soft and out of focus. On the tray, in front of him, a plain white paper bag has been torn open flat, with a small, untidy pile of chips on it, half eaten. The chips are bent, broken and uneven in colour. Focus sits on her hand and her face.
+
+Action: He has turned his head towards the window and is looking out at the car park, chewing, relaxed, with no idea anything is happening. His nearer hand is wrapped around a plain white paper cup on the table. She has turned her face three-quarters towards him and is watching his face closely. Her eyes are steady and a touch wider than usual, and her eyebrows are level. Her lips are pressed together over a mouthful, one cheek very slightly full. Her nearer hand has come across in front of him, low over the tray, holding a single chip between her thumb and first finger, lifted a hand's width above the bag. Neither of them shows any teeth, and neither is looking at the camera or aware of it. She is not grinning and not pulling a guilty face; a stranger would take a second to see she is up to something. Caught mid-moment and unposed.
+
+Environment: A tall window runs along the left side of the frame at an angle, with a soft, out-of-focus grey car park beyond it. Behind them and to the right, the food court is dimmer and soft: ordinary fixed tables and plastic seats, mostly empty.
+
+Light: Only the flat grey daylight coming in through the window from the left. It lights the side of their faces nearer the window, and the rest of the room falls away into a dimmer, cooler grey. The window is bright but not blown out, and the far side of the room is dim but still readable. No sun, no warmth, unflattering.
+
+Details: Real skin texture with visible pores and stubble, creased everyday clothes, fine natural film grain.
+
+Constraints: Ensure historical accuracy for Britain in 2008. The paper bag and the paper cup are plain white with no print. No logos, signs or readable text anywhere in the frame. Only the two of them sit at the table.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Check before accepting:** exactly one chip in her fingers, and her hand has five fingers. The bag and cup
+carry no logo. Her face reads as watchful, not as a grin. Both faces match `2b`. The window runs at an
+angle and hasn't turned into a centred backdrop.
+
+✅ **Came back good, 2026-09-14 (Jack).**
+
+#### 2g-2 — the chip thief · **video** · written 2026-09-14, unrun
+
+**Shot spec (shot-craft):** the still is the held breath, so this clip **spends it on the catch**. One
+beat: **his eyes come back from the window to her hand, she freezes, holds his look, and eats the chip
+anyway.** Her carrying on is the button. The camera stays locked (R7), and no camera movement is spent.
+
+**Built the same way as 2g-1's video, which came back good:**
+
+- **Tab: Frames**, with the accepted 2g-2 still as frame one. Nothing is a Flow Character.
+- **Motion only.** The frame carries the look, the food court and the bag.
+- **Speed stated, each reaction tied to a trigger, eyes described with every mouth, one small gesture
+  each, breathing and blinking at different moments.**
+- 🔴 **No colon after an action, and no quotation marks** (speech trap).
+
+**The two risks, and how the prompt handles them:**
+
+- 🔴 **His head turn.** In the still his face is turned towards the window. Every degree he turns shows face
+  that Frames has to invent, and invented face is where likeness goes (2b). So **his eyes move first and
+  his head turns only partway**, and the prompt never asks for him to face the lens.
+- ⚠️ **Her hand to her mouth.** Hands near a face fail more often (eighth web pass, community). It happens
+  **once, at the end, as a single short movement**. Fallback if the fingers or the chip melt: trim the clip
+  before she eats it. The freeze under his look is already the joke.
+
+**Paste into:** Flow → **Omni Flash** → **Frames** → prompt box. **First frame:** the accepted 2g-2 still.
+**No end frame.** **Aspect:** 16:9. **Duration:** 8s.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. Locked-off camera, a single continuous shot, everything at real speed.
+
+Still chewing, the man lets his eyes drift back from the window, and they land on the chip in her fingers. His head follows only partway round, and he stops chewing. One of his eyebrows lifts a little and his eyes narrow slightly. Seeing him look, the woman freezes with the chip in mid-air, her eyes fixed on his, and blinks once. Then, holding his look, she slowly lifts the single chip to her mouth and eats it, lips closed as she chews. The corners of his mouth twitch, and he gives a small slow shake of his head. Both of them breathe and blink naturally, at different moments. Everything on the tray stays where it is.
+
+Audio: the quiet hum of a service station food court, the clatter of a tray somewhere far off. No music and no voices.
+
+Thanks.
+```
+
+**Check before accepting:** both faces hold at the last frame, especially his after the turn. One chip
+in her fingers, which goes into her mouth and doesn't multiply or vanish. Nobody speaks and no teeth show.
+The chips on the tray stay put.
+
+#### 2g-3 — asleep in the passenger seat · **still** · written 2026-09-14, unrun
+
+**Shot spec (shot-craft):**
+
+1. **Job:** the last shot of them together before the crash, and the quietest. 2g-1 and 2g-2 were jokes
+   *between* them. This one is care nobody sees: she is asleep, and he turns the radio down so she stays
+   asleep. The crash comes after it, which makes it land hardest.
+2. **Register:** the human-scale exception (R2). Back inside the car, 2b's world, later the same day.
+3. **Depth:** foreground is the centre console and the car stereo, soft at the bottom edge. Midground is
+   the two of them in the front seats. Background is the luggage packed behind the seats, and the side
+   windows.
+4. **Focal point:** his hand on the volume knob, then his face. The hand wins on depth position, since it's
+   the nearest sharp thing, and his face wins on light.
+5. **Light:** the flat grey sky through the windscreen, **duller than in 2b**, because it's later in the
+   afternoon. It lights their faces from the front, and the back of the car falls away into shadow. It
+   matches 3b's grey, so the cut into the crash doesn't jump.
+6. **Camera:** on the dashboard, **a little to the passenger side of centre**, 24mm, looking back into the
+   car. It sits lower and wider than 2b, so the console fits in the frame, the faces come out **smaller than
+   in 2b** (the reference-size rule), and the frame isn't a copy of 2b.
+7. **Withheld:** her face, mostly. She is turned towards her window, asleep, so the reference has less to
+   carry, and the shot is about him.
+8. **Unresolved question:** his fingers are *on* the knob, mid-turn, with the volume on its way down.
+
+**Decisions and their reasons:**
+
+- 🔴 **Changed from the list: Bob does not glance over at her.** The 2g rule is *no eyes off the road*,
+  since canon leaves the crash blank and a driver looking at his wife right before it would point blame.
+  **His eyes stay on the road.** He turns the radio down by feel, and the care is in the hand, not the
+  look. ⬜ Jack's call if he wants the glance back.
+- **The road atlas slips face-down on her lap.** This finally lands the scene-3 rhyme that 2g-1 lost (the
+  atlas face-down in the verge). It is never pointed at.
+- **Both seatbelts are on**, stated as a fact rather than a negation, per the no-blame rule.
+- **The stereo is a plain built-in unit with a round volume knob and no readable display**, so it doesn't
+  render a brand or a station name. His fingers grip the knob, which is a safer pose than an open hand
+  (eighth web pass).
+- **Asleep is written as muscles**, not as *peaceful*: head tipped against the window, jaw loose, eyelids
+  fully shut, one hand slack. Emotion words get caricatured.
+- **No appearance description, and no `@Bob`.** The reference is declared as the people only, and the
+  luggage is described briefly as set.
+- **Same stock and wording shape as 2g-1 and 2g-2.**
+
+**Paste into:** Flow → **Nano Banana 2** → image prompt box. **Reference:** the accepted `2b` still, and
+nothing else. **No `@Bob`.** **Aspect:** 16:9. **Outputs:** 2.
+
+```prompt
+SCENE:
+
+Candid documentary photograph on 35mm Kodak Ektachrome. Fine natural grain, muted cool-neutral colour, flat overcast daylight, calm observational tone.
+
+The attached image is a reference for the two people only — their faces, hair and clothes. It is not a frame from this shot. This photograph is taken later the same day, in the late afternoon, inside their car on the motorway, as they drive on after a service station stop.
+
+This is a British right-hand-drive car. The camera faces backwards into the car, so the man driving appears on the LEFT of the frame and the woman in the passenger seat appears on the RIGHT.
+
+Camera and framing: 24mm lens at f/2.8, the camera resting low on the dashboard a little to the passenger side of centre, looking back into the car at the two people in the front seats. Both are seen from the waist up, fairly small in the frame. The centre console between the seats runs up from the bottom of the frame, with a plain built-in car stereo and its round volume knob closest to the lens, soft and slightly out of focus. Focus sits on his hand and his face.
+
+Action: He is driving, his eyes on the road ahead, looking just past the side of the camera and not into it. His right hand rests on the top of the steering wheel. His left hand has reached down to the stereo without looking, his fingers around the round volume knob, turning it down. His lips are together, the corners of his mouth only just lifted, and his eyes are soft and a little tired. She is fast asleep in the passenger seat, her head tipped sideways against the top of the seat and the window, her face turned mostly away from the camera towards her window, her eyelids fully shut and her jaw loose. One hand lies slack in her lap on an open road atlas that has slid over and lies face-down across her knees. Both are wearing their seatbelts across their chests. Neither is aware of the camera. Unposed, a quiet ordinary moment.
+
+Environment: The inside of an ordinary mid-2000s family car with grey cloth seats and a plain dark roof lining. Behind the front seats, soft holdalls and coats are packed high. Through the side windows, a grey motorway verge and embankment blur past.
+
+Light: Only the dull grey afternoon sky coming through the windscreen, lighting their faces evenly from the front, duller than midday. The back of the car falls away into shadow, and the side windows are pale grey but not blown out. No sun, no warmth, unflattering.
+
+Details: Real skin texture with visible pores and stubble, creased everyday clothes, fine natural film grain, slight motion blur in the verge through the side glass.
+
+Constraints: Ensure historical accuracy for Britain in 2008. The stereo's small display is dark and plain, with no readable text. No logos, badges or readable text anywhere in the frame. Only two people are in the car.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Check before accepting:** his eyes on the road and not on the lens. Her face stays mostly turned away and
+still reads as Jo. He has one left hand, on the knob, with five fingers. The stereo has no brand and no
+text. Both seatbelts are on. The atlas is face-down. He is on the left and she is on the right.
 
 ---
 
@@ -7484,6 +7678,279 @@ smoothed into a handsome rough-sleeper."* Round 1 returned two stock actors prec
 neither clause was in the prompt.
 
 **Run A first**, then B, then C — one at a time, so the variable stays known.
+
+---
+
+## Scene 9 — the retreat
+
+⚠️ **The 9a yurt interior and 9b eye prompts were never recorded here.** Both were shot 2026-08-27
+([`shot-list.md`](./shot-list.md)).
+
+### 9-walk — Tarquin walks up to the yurt · **still** · written 2026-09-14, unrun
+
+**Jack, 2026-09-14:** *"make an image of Tarquin walking up to the yurt, we need to make a video of
+that, start with the still"*, with the 9a interior attached for the look. It sits under the narration
+line *"He heads off to Wales for this spiritual retreat."* 🔑 **It also fills a hole in the cut.**
+Clip 26 in [`edit-plan.md`](./edit-plan.md), *"a man entering the dome"*, is in the **dropped** river-dome
+location. This is the yurt version of the same connective beat.
+
+**Web pass:** ninth, 2026-09-14, logged in
+[`nano-banana-2.md`](../../google-flow/nano-banana-2.md#ninth-web-pass--2026-09-14-academic-community).
+
+**Shot spec (shot-craft):**
+
+1. **Job:** a man who has never sat on a floor arrives at a round canvas tent in a Welsh field he has
+   paid a fortune for. He falls asleep in this round fabric shelter and wakes in one he didn't pay for
+   (10a), so the yurt's shape has to register here, from outside, before the interior.
+2. **Register:** documentary, human scale. Gate 2 isn't triggered, since nothing monumental is in frame.
+3. **Depth:** foreground is long wet grass tussocks, soft, at the bottom edge. Midground is him on the left
+   and the yurt on the right, at about the same distance. Background is bare trees, dark against the sky.
+4. **Focal point:** his face, which wins on position and on his gaze. The warm windows are the second
+   stop, and his eyeline leads to them.
+5. **Light:** 🔑 **the blue-hour sky is the only light on him**, dim and cool. **The yurt's two small
+   windows glow a weak warm orange from the candlelight inside (9a)**, and that is the one bright anchor
+   in a dark frame. They are a bounded practical: too weak to light the grass or him (§20). Both ends of
+   the exposure are named.
+6. **Camera:** 85mm, about nine metres from him, standing height, level, **off his path to the side**,
+   so he crosses left to right, angled slightly towards the lens. A long lens was chosen for three reasons:
+   - it stacks the yurt and the trees close behind him (§14);
+   - it gets a three-quarter face at a size the Character can hold (§12);
+   - it still fits his whole body plus a strip of grass below his feet.
+7. **Withheld:** the retreat. There's one yurt, no other guests, no car and no signs. The inside is
+   withheld too, and only the glow says anything is in there.
+8. **Unresolved question:** he is mid-stride towards a door he hasn't opened, with his face already
+   passing judgement on it.
+9. **What moves (for the clip):** he walks on to the door. The camera is locked.
+
+**Decisions and their reasons:**
+
+- 🔴 **Cast `@Tarquin-new` alone, and write nothing about how he looks.** The gilet lives in that
+  Character's Body ([8b-fog A12-cast](#8b-fog--variant-a12-cast--the-running-version--still--written-2026-09-08-unrun)).
+  The sock-less loafers on wet grass are the joke, but they're wardrobe, so they're not written; the
+  Character carries them. ⬜ *Unverified:* the repo doesn't record which Character 9a was cast on. If the
+  outfit doesn't match 9a, check the Character's Body before touching the prompt.
+- **No reference image for the yurt.** It's one reference (the Character), and the 9a still is an
+  interior anyway. The exterior is described: cream canvas, a shallow conical roof, a small painted
+  wooden door, and two small windows with the timber lattice showing through.
+- **The stride is written as a shape, not the word "walking"** (ninth pass). His left foot is planted
+  ahead, his right heel is lifting behind, and his right arm is swung a little forward, which is the
+  opposite arm to the front leg so the legs don't swap. **No motion blur**, because blur in a first
+  frame breaks image-to-video (ninth pass, community).
+- **His whole body is in frame, with grass below his feet.** Cropped feet get invented in the clip.
+- **Hands are empty.** Props in hands are the unsafe case on Omni (eighth pass). There's no holdall.
+- **No glamping-advert look.** No fairy lights, lanterns or string lights. The ground is dark wet grass
+  with a dull sheen, not a mirror. None of *HDR*, *cinematic* or *magical*. That look is the
+  bracketed real-estate-at-dusk genre, which is exactly what warm windows against a blue sky pull toward
+  (ninth pass, *inferred*).
+- **Expression is muscles, with the wrong readings named:** chin up, eyes on the yurt, brows faintly
+  drawn together, one corner of the mouth pulled in. Not nervous, not awed, not smiling.
+- **Stock:** Portra 400 pushed, matching 8b and 8b-fog, his last two scenes. Continuity beats the untested
+  Portra-is-slop note.
+
+**Paste into:** Flow → **Nano Banana 2** → image prompt box. **Character:** `@Tarquin-new` and nothing
+else. **No reference image.** **Aspect:** 16:9. **Outputs:** 2.
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 400 pushed to ISO 1600, a single handheld exposure. Visible grain in the shadows, muted cool colour, low saturation, calm observational tone.
+
+A field in rural Wales at blue hour, just after sunset. The man from the character reference is walking up to a yurt for a spiritual retreat.
+
+Camera and framing: 85mm lens at f/2.8, standing height and level, about nine metres from him, set off to the side of his path so he crosses the frame from left to right, angled slightly towards the camera. His whole body is in frame, from the top of his head to his feet, with a strip of wet grass below his shoes. He is on the left third of the frame. Long wet grass tussocks cross the very bottom of the frame close to the lens, soft and out of focus. Focus sits on his face.
+
+Action: His left foot is planted on the grass ahead of him and his right heel is lifting off the grass behind him, his right arm swung a little forward and his left arm a little back, his hands empty and loose. His head is turned towards the yurt and his eyes are on it. His chin is slightly up, his brows are drawn very slightly together, and one corner of his closed mouth is pulled in. It is the look of a man appraising something he has paid a lot for and is not yet sure about. He is not nervous, not awed and not smiling. He is frozen sharp, with no motion blur, and he is not aware of the camera.
+
+Environment: On the right of the frame, a few metres ahead of him and seen side-on, a single yurt: a low round wall of cream canvas, weathered and grubby near the ground, under a shallow conical canvas roof. A small painted wooden door faces him. Two small square windows in the canvas wall show the dark criss-cross of the timber lattice inside. The field between him and the door is open, uneven wet grass. Behind them, a line of bare winter trees stands black against the sky.
+
+Light: The deep blue evening sky is the only light on him, dim and cool, so his face and clothes are soft and low in contrast. The yurt's two small windows glow a weak warm orange from candlelight inside, the only warm light in the picture and too faint to light the grass or him. The windows are bright but not burnt out, the sky above the trees is still clearly blue, and the grass is dark but still shows its texture, with a dull wet sheen and no reflections.
+
+Details: Real skin texture, fine natural grain, dew on the grass, ordinary and unstyled.
+
+Constraints: Ensure the scene looks like present-day rural Britain. There is one yurt and only one person in the frame. The yurt and the trees carry no fairy lights, string lights or lanterns. No signs, logos or readable text anywhere in the frame.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Check before accepting:**
+- His face reads as Tarquin at this size. **If not, move closer, don't add words** (§12): go from nine
+  metres to seven.
+- His outfit matches 9a.
+- The legs are right: two feet, the rear heel up, the opposite arm forward.
+- No fairy lights or glow anywhere except the two windows.
+- The yurt is side-on and the door faces him.
+- No motion blur on him.
+- The ground isn't a mirror.
+
+### 9-walk — round 1, **not accepted** (Jack, 2026-09-14: *"too boring"*)
+
+**What held:** his face, the full outfit (gilet, jeans, sock-less loafers) from `@Tarquin-new` alone, the
+stride, and a good weathered yurt. **Keep all of that.**
+
+**Diagnosis** ([`symptoms.md`](../../cinematography/symptoms.md) A, *"it's fine but boring"* and *"it reads
+like a diagram"*):
+
+- **Eye level, side-on, and nothing withheld.** That is the recipe for furniture.
+- **The man and the yurt are the same size at the same distance, side by side on one line**, so there is
+  no depth order (principle 21b).
+- **It came back far brighter than blue hour.** "The sky is the only light on him" didn't darken it.
+
+**Jack's fix is the textbook one:** the yurt goes **nearest and largest**, and he goes far away down a path.
+
+### 9-walk — round 2 · **still** · written 2026-09-14, unrun
+
+**Tenth web pass:** 2026-09-14, logged in [`nano-banana-2.md`](../../google-flow/nano-banana-2.md#tenth-web-pass--2026-09-14-academic-community).
+
+**Shot spec (shot-craft), changes from round 1 only:**
+
+1. **Job (sharper):** the audience meets the thing he's paying for *before* him. The glowing round
+   shelter fills our side of the frame, and he's a small figure coming to it. That order sets up the 10a
+   rhyme.
+2. **Depth, in order:**
+   - **Foreground:** the yurt's weathered canvas wall and door, huge, cut off by the right and top frame
+     edges.
+   - **Midground:** a worn muddy track curving away up the field.
+   - **Background:** him on the track, small, where it tops a gentle rise, with the black treeline and
+     the last pale band of sky behind him.
+3. **Height, broken:** the camera is **low, at knee height**, tight against the canvas. Principle: break
+   height, light or information withheld.
+4. **Focal point:** him, winning on **the leading line (the track) and figure against sky**. His dark
+   shape sits against the palest part of the frame. The glowing door window is the second stop, and it is
+   the one bright anchor.
+5. **Lens:** 24mm, stopped down to f/8, **deep focus**. Both the canvas weave and the distant man are
+   sharp, which avoids the fake depth-of-field tells completely (tenth pass).
+6. **Light:** **later and darker** than round 1, twenty minutes after sunset, with the field falling
+   towards near-dark. The door window's candlelight lays a faint warm patch on the wet grass right beside
+   the door, about a metre away, which is physically possible (§20). It does not reach the track or him.
+   He is lit by the sky alone.
+7. **Withheld:** his face. At this distance it can't be read, and that's the right call for an arrival
+   (the clip brings him closer). The inside of the yurt is withheld too, only flame points behind the
+   lattice.
+8. **No dead-centre vanishing point:** the track **curves** from the bottom middle of the frame up to the
+   left. Parallel lines are a known failure (ControlVP), and a straight path is a symmetry magnet (§37).
+
+**Decisions:**
+
+- **The Subject is the track**, not the yurt or the man ([making a subject small](../../google-flow/nano-banana-2.md#-making-a-subject-small-put-something-else-in-the-subject-slot-community-2026-09-09)).
+- **The yurt is described from round 1's picture, not round 1's prose** (§7): cream canvas streaked with
+  green, a weathered grey plank door with a small glazed lattice window in its top half.
+- 🔴 **Still no description of him.** Round 1 proved the Character carries the outfit. At this size the
+  *face* won't bind (§12), which is fine because it's unreadable anyway. ⬜ **If the outfit is lost at this
+  distance**, that is [the one narrow exception](#8b-fog--variant-a12-cast--the-running-version--still--written-2026-09-08-unrun):
+  add the outfit then, not before.
+- **No "cinematic".** It's on the kill list. The cinema comes from the design: low, wide, deep, one warm
+  anchor, figure against sky.
+- **16:9, framed slightly wide**, so the clip can push in.
+- ⚠️ **For the clip, not now:** as he walks closer, Frames will invent his face. Plan to cast
+  `@Tarquin-new` in the video too, keep the walk slow, and stop him before a medium shot (tenth pass,
+  *unverified*).
+
+**Paste into:** Flow → **Nano Banana 2** → image prompt box. **Character:** `@Tarquin-new` and nothing
+else. **No reference image.** **Aspect:** 16:9. **Outputs:** 2.
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 400 pushed to ISO 1600, a single handheld exposure. Visible grain in the shadows, muted cool colour, low saturation, quiet observational tone.
+
+Subject: a worn, muddy track through wet grass in a field in rural Wales, twenty minutes after sunset, leading up a gentle rise to a yurt at a spiritual retreat.
+
+Camera and framing: 24mm lens stopped down to f/8, the camera held low at knee height, pressed close beside the canvas wall of the yurt and looking back along the track, so everything from the canvas beside the lens to the far treeline is sharp. The yurt fills the right third of the frame, very close and very large, running off the right-hand edge and the top of the frame. Its round wall is weathered cream canvas streaked with green, and at the left edge of it stands its door, a weathered grey plank door with a small glazed window in its top half showing a timber lattice. From the bottom middle of the frame, the track curves away to the left and up the rise, narrowing as it goes.
+
+Action: Far up the track, where it tops the rise, the man from the character reference walks down it towards the yurt, small in the upper left of the frame, his whole body visible from head to feet on the track. His left foot is planted ahead of him and his right heel is lifting behind, his right arm swung a little forward and his hands empty. He is too far away for his face to be made out. His dark shape stands out against the pale band of sky just above the treeline.
+
+Environment: Beyond him, a line of bare winter trees stands black along the top of the rise. Above the trees, the sky fades from a last pale grey-blue near the horizon to deep blue at the top of the frame. The grass either side of the track is long, dark and wet.
+
+Light: The fading evening sky is the only light on the field and on him, so the grass falls away towards near-dark and he is a dark figure against the sky. The small window in the door glows warm orange from candlelight inside, with points of candle flame behind the lattice, and it lays a faint warm patch on the wet grass just below the door and nowhere else. The window is bright but not burnt out, the sky above the trees is still clearly readable, and the darkest grass still shows a trace of texture.
+
+Details: Real canvas weave and grime, mud and puddled footprints in the track, dew on the grass, fine natural grain, ordinary and unstyled.
+
+Constraints: Ensure the scene looks like present-day rural Britain. There is one yurt and only one person in the frame. The yurt and the trees carry no fairy lights, string lights or lanterns. No signs, logos or readable text anywhere in the frame.
+
+Compose for a 16:9 frame, framed slightly wide.
+
+Thanks.
+```
+
+**Check before accepting:**
+- He's on the track, small, against the sky, and **still reads as Tarquin by the outfit**.
+- The track curves and doesn't run straight to the centre.
+- The yurt edge is big and doesn't look pasted on.
+- The only warm light is the door window and its patch of grass.
+- It's darker than round 1.
+- He's a single figure, with two legs, not cloned.
+
+### 9-walk — round 2 ✅ **ACCEPTED 2026-09-14** (Jack moved straight to the video)
+
+**It fixed the flatness:** the yurt is nearest and largest, and he is small against the palest sky. The
+candle in the door window is the one warm anchor, and the ruts lead to him.
+
+**Three differences from the prose, and the picture wins:**
+- **The track is two straight wheel ruts**, not a curve. They converge on him rather than on the frame
+  centre, so it works. `[observed]` *"curves away to the left"* was ignored.
+- **The warm patch at the door reads as an orange stain**, hard-edged with no falloff. **Fix it in the
+  grade**: desaturate and feather it.
+- **The sky is paler and earlier than asked**, which helps his silhouette.
+
+**At this size he is anonymous.** The outfit can't be read, so continuity with 9a is carried by the cut.
+
+### 9-walk — the clip · **video** · written 2026-09-14, unrun
+
+**Shot spec (shot-craft):**
+- **The world moves and the camera doesn't** (R7, the hybrid method). Any push-in is done in Premiere,
+  since the still was framed wide for it.
+- **One motion:** he walks steadily down the track towards us. The candle is the only other thing that
+  moves.
+- 🔑 **He stays far away.** Eight seconds of walking covers about ten metres, so he ends the clip still
+  small, well up the rise. **The design keeps him too small to need a face**, which is the whole risk
+  managed by geometry rather than by words. The door is never his destination (continue a state, never
+  reach one).
+
+**Tab: Frames**, with the accepted round-2 still as the first frame, and here is why:
+- **The composition *is* the shot.** Ingredients has rebuilt irreplaceable sets before (§2j.11v phone
+  booth, §2j.1 aerial), and a staging failure is unrecoverable.
+- ⚠️ **The risk:** on Frames, a walking person is being drawn fresh in every position and has morphed
+  before (camping 5a). It's accepted here because he stays small and backlit, and his outfit is in the
+  frame-zero pixels.
+- ⬜ **30-second free check first:** the Gemini API now takes a first frame *and* a reference image in one
+  call (tenth pass, official). Flow's UI blocked that on 2026-08-16, before Omni 1.1. **If the Frames tab
+  now lets you add `@Tarquin-new`, add it.**
+- **Fallback if he morphs:** Ingredients with the still and `@Tarquin-new`, in the short two-sentence form
+  that worked on 2f-5.
+
+**Anti-slop, per tell (tenth pass):**
+- **Floaty or moonwalking feet:** real walking speed, feet planting with weight in the mud, arms
+  swinging opposite the stride.
+- **Slow-motion bias:** *"at real walking speed"*.
+- **Candle overdelivery:** one clause, flickering *irregularly*, the flame only.
+- **Warping canvas:** no wind and no fabric named. A named breeze moves the yurt wall.
+- **Puddle reflections:** not mentioned. He walks the grass strip between the ruts, not through water.
+- **A tripod or camera drawn in** (2f-5 revision 3): no camera nouns. *"The view holds perfectly still"*.
+- **Speech trap:** no colon after his action and no quotation marks.
+
+**Paste into:** Flow → **Omni Flash** → **Frames** → prompt box. **First frame:** the accepted 9-walk
+round-2 still. **No end frame.** **Aspect:** 16:9. **Duration:** 8s. ⬜ Draft at 360p first to judge the
+walk.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed.
+
+The man on the rise keeps walking steadily down the grass strip between the two ruts towards us, at an ordinary walking pace, each foot planting with weight on the wet ground and his arms swinging opposite his stride. He is still a long way off at the end of the shot. Behind the glass in the door, the candle flame flickers irregularly.
+
+Audio: a quiet evening field, a rook calling far off, and the faint squelch of footsteps in wet grass. No music and no voices.
+
+Thanks.
+```
+
+**Check before accepting:**
+- One man, two legs, feet that plant and don't slide.
+- His outline and clothes stay the same from first frame to last.
+- The yurt canvas and door don't ripple or re-draw.
+- The candle flickers and doesn't turn into a fire.
+- No new figures, and the ruts and puddles stay put.
+- No camera or tripod appears, and nobody speaks.
 
 ---
 
@@ -9310,3 +9777,260 @@ Thanks.
 ---
 
 
+
+### 12e-bc — BADCODE revealed by lightning · **video** · written 2026-09-14, unrun
+
+**Jack, 2026-09-14:** *"BADCODE in a cyberpunk font, revealed in the sky by lightning illuminating it,
+and the lightning should hit one of the letters and leave it sliced with embers like a lightsaber."* Start
+frame: the accepted **12e** still. Web pass logged in
+[`omni-flash.md`](../../google-flow/omni-flash.md) (tenth pass, 2026-09-14).
+
+**Shot spec (shot-craft):**
+- **Job:** the film's signature. The future intelligence signs the last frame. It sits after the story's
+  real ending (12d), as packaging.
+- **Gate 2 (monumental):** the visible cost is already in frame. Two wrecked men at a burning drum sit
+  under the name.
+- **Gate 3 (light):** the only thing that can light letters in a night storm is **the strike itself**.
+  The fire is far too small.
+- **One event, not two:** the bolt that cuts the O **is** the light that reveals the word. It's one
+  strike (change/adherence trade).
+- **The camera stays locked** (12e rule).
+
+**Anti-slop and engine decisions:**
+- 🔴 **Text is on screen only while the sky is lit.** The fewer frames a word must survive, the less it
+  morphs (web pass 2026-08-28). The cut O is the only thing that has to hold afterwards.
+- **One quoted string, `"BADCODE"`, and no colons.** Quotation marks switch Omni's text channel on. This
+  is the one sanctioned exception to the no-quotes rule, since the speech trap needs a person speaking.
+- **No "cyberpunk" and no "neon".** "Cyberpunk" pulls cyan and magenta glow and glitch. The typeface is
+  described by shape instead: chamfered corners, straight uniform strokes, square counters.
+- **The letters are solid dark metal standing in the cloud**, not an overlay. A physical object holds its
+  shape better than floating type.
+- **The word *flash* is never written** (house rule). The light is named by what it does.
+- **The cut is "a thin glowing line of orange heat", with a few sparks.** A particle noun overdelivers,
+  and the drum already supplies embers.
+- **6s**: fewer frames for the letters to survive.
+
+🔴 **Known risk, and the honest odds:** a lightning flash already **morphed a wordmark** on camping 10b.
+A one-prompt clip that invents a word, spells it, cuts it and keeps it cut is four risks multiplied
+(research, unverified). **Draft at 360p.** If the letters garble, switch routes rather than rewording:
+1. **Nano Banana 2 still first**, with the letters and the cut O already faint in the cloud, then Frames
+   only lights what is already there.
+2. **ffmpeg** lays the exact word and cut over a Flow lightning clip.
+
+⚠️ **Before upload:** `python3 scripts/photosensitivity-check.py` (more than 3 flashes in one second
+fails, and real lightning restrikes).
+
+**Paste into:** Flow → **Omni Flash** → **Frames** → prompt box. **First frame:** the accepted 12e still.
+**No end frame.** **Aspect:** 16:9. **Duration:** 6s. ⬜ Draft at 360p first.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed.
+
+The rain keeps falling, the fire in the drum keeps burning and the two men sit where they are. About two seconds in, a single jagged bolt of lightning drops out of the clouds and the whole sky lights up bright white for a moment. In that light, enormous letters of dark weathered steel are revealed standing inside the storm clouds across the top of the frame, spelling "BADCODE" in a hard-edged futuristic typeface with sharp chamfered corners, straight strokes of even width and square inner shapes. The bolt strikes the letter O and cuts it cleanly in two with a diagonal slice, and the cut edges glow with a thin line of molten orange heat that drips a few sparks. The sky falls dark again and the letters sink back into the cloud, leaving only the glowing orange cut through the O still visible in the dark.
+
+Audio: heavy rain, the crackle of the fire, and one enormous crack of thunder as the bolt strikes. No music and no voices.
+
+Thanks.
+```
+
+**Check before accepting:**
+- It spells **B-A-D-C-O-D-E**, in that order, with no extra or melted letters.
+- There's one bolt, and it doesn't strobe.
+- The O stays cut and doesn't heal.
+- No cyan or pink neon.
+- The two men don't move or change.
+- The sparks stay a few, not a fireworks display.
+
+### 12e-bc — round 1 result, and round 2 · written 2026-09-14, unrun
+
+**Round 1, from Jack's frame:**
+- ✅ **"BADCODE" spelled correctly** in solid steel letters across the sky, and the cut O plus the sparks
+  landed.
+- ❌ **The font is a plain blocky slab.** Jack: *"make the font better, more cyberpunk like and combined
+  with the original badcode logo"*.
+- ⚠️ **The sky came back bright, like overcast daylight**, not night.
+- ⚠️ **The cut O reads as a white hole**, not a line of heat.
+
+**Round 2 changes, one reason each:**
+- **The C is the logo's curly brace** ([`docs/brand/`](../../brand/README.md)): red tip on top
+  (`#cc2b37`), blue tip underneath (`#2696d4`), in the logo's **"BadCode"** mixed case.
+- **"Cyberpunk" is now named, because Jack asked for it**, and its colour pull is fenced positively. The
+  only colours in the letters are the brace's red and blue tips, and the rest is steel lit by thin
+  cold-white edge lines.
+- **The letterforms are described:** wide, angular, cut horizontal gaps through each stroke, and clipped
+  corners.
+- **The sky stays night.** The lightning lights the letters, not the whole sky.
+- **The cut is a thin molten orange line, with no hole through it.**
+
+**Paste into:** Flow → **Omni Flash** → **Frames** → prompt box. **First frame:** the accepted 12e still.
+**No end frame.** **Aspect:** 16:9. **Duration:** 6s.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed. It stays a dark stormy night throughout.
+
+The rain keeps falling, the fire in the drum keeps burning and the two men sit where they are. About two seconds in, a single jagged bolt of lightning drops out of the clouds, and its cold white light catches enormous letters of dark brushed steel standing inside the storm clouds across the top of the frame, spelling "BadCode" in a cyberpunk film-title typeface: wide, angular letters with clipped corners, thin horizontal cuts sliced through every stroke, and a thin line of cold white light running along their edges. The C is drawn as a tall curly brace, its top tip glowing deep red and its bottom tip glowing bright blue, and those two tips are the only colour in the letters. The bolt strikes the letter o and slices it cleanly in two along a diagonal line, and the cut glows as a thin seam of molten orange heat that drips a few sparks. The lightning dies, the dark night returns and the letters sink back into the black clouds, leaving the red tip, the blue tip and the orange seam still glowing faintly in the dark.
+
+Audio: heavy rain, the crackle of the fire, and one enormous crack of thunder as the bolt strikes. No music and no voices.
+
+Thanks.
+```
+
+**Check before accepting:**
+- It reads **BadCode** with the brace as the C. Red is on top and blue underneath, and the order must
+  not flip.
+- No pink, purple or cyan.
+- The sky stays night.
+- The o's cut is a seam, not a hole.
+- The two men don't change.
+
+### 12e-bc — round 2 ❌ and round 3: design the logo as a STILL first · written 2026-09-14, unrun
+
+**Jack, 2026-09-14:** *"that made a terrible logo… it looks too much like the iron man logo. It should
+look like the cyberpunk 2049 logo, combined with the origins logo from black ops 2, our original logo,
+with an anime twist."*
+
+🔑 **Route change: the logo gets designed on a Nano Banana 2 still, not in a video clip.** A logo is a
+design that takes rounds, and every Omni roll costs a clip and reinvents the logo. The research route 2
+applies: **the still carries the logo in frame 0**, and the Frames clip afterwards only lights what is
+already there and cuts the o. Stills are also where the engine spells best.
+
+**The three references, translated into traits.** The game names are never written into Flow: a named
+trademark gets copied, and it can trip the filter.
+- ⬜ **"Cyberpunk 2049" is read as *Cyberpunk 2077*** (heavy forward slant, letters sliced by horizontal
+  glitch offsets, hard angular cuts). *Unverified which Jack meant. Blade Runner 2049's logo is a thin,
+  widely spaced sans, the opposite.*
+- **The *Black Ops 2* Origins logo:** ancient carved stone and old bronze, cracked and weathered, with
+  light glowing out of the cracks like a relic.
+- **Anime twist:** a thick clean black outline, hard-edged cel-shaded highlights, and crackling energy arcs
+  around the letters like a power-up.
+- **Our logo:** "BadCode", with the C as a curly brace, red tip on top and blue tip underneath.
+  🔑 **The cracks carry the meaning:** red glow through *Bad* (the timeline that went wrong), blue glow
+  through *ode* (the one sent back), and the brace is where the two meet.
+
+**Why round 2 read as Iron Man** (*inferred*): steel plus a single glowing seam plus red, on a heroic
+title, is the superhero-movie register. Round 3 swaps steel for cracked stone, adds the outline and slant,
+and has no gold or chrome.
+
+**Night-readable by construction:** the letters are dark, and **the glowing cracks are the bright anchor**,
+so the logo reads before any lightning. The clip then only has to light it up.
+
+**Paste into:** Flow → **Nano Banana 2** → image prompt box. **Reference:** the accepted **12e** still,
+and nothing else. **No Characters** (the silhouettes are in the reference). **Aspect:** 16:9.
+**Outputs:** 2.
+
+```prompt
+SCENE:
+
+The attached image is this exact scene and it is the reference for everything below the sky: keep the same two men as solid black silhouettes seen from behind, the same burning oil drum between them, the same sparks and smoke rising, the same falling rain and the same dark stormy night. The only change is a huge logo hanging in the storm clouds across the top of the frame.
+
+Logo: the word "BadCode", enormous, standing in the dark clouds above the two men. The letters lean forward at a hard slant and are wide, heavy and angular, with sharp clipped corners, and each letter is sliced through by two thin horizontal cuts with the pieces slightly offset sideways, like a glitch. The letters are made of ancient carved dark stone with old bronze edges, cracked, chipped and weathered like a relic. The C is a tall curly brace carved from the same stone, with its top tip glowing deep red and its bottom tip glowing bright blue. Deep red light glows out through the cracks in the letters B, a and d, and bright blue light glows out through the cracks in the letters o, d and e, and the two colours meet at the brace. Every letter has a thick clean black outline and hard-edged cel-shaded highlights along its top edges, like a hand-drawn anime title card, and thin crackling arcs of white electricity flicker around the edges of the letters.
+
+Light: it is night. The logo is dark stone, lit mainly by the red and blue light glowing from its own cracks and faintly by the storm, so it reads clearly against the black clouds without lighting up the sky. The fire below stays the brightest warm light in the frame, and the rain streaks catch a little of the red and blue.
+
+Constraints: The letters spell BadCode exactly, with a capital B, a lowercase a and d, the curly brace as the C, and a lowercase o, d and e. The only colours in the logo are the deep red, the bright blue, the dark stone, the old bronze edges and the white electricity. The two men stay solid black silhouettes. Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Check before accepting:**
+- It reads **BadCode**, with the brace as the C. Red is on top, blue underneath.
+- Red runs through Bad and blue through ode.
+- It reads as **relic stone and glitch plus anime**, not chrome or a superhero logo.
+- No pink, cyan or gold.
+- The silhouettes, the drum and the rain match 12e.
+
+**Then the clip:** once a still is accepted, a short Frames prompt has one bolt light it up and cut the o.
+
+### 12e-bc — round 4: round 3 without the cartoon · written 2026-09-14, unrun
+
+**Jack, 2026-09-14:** *"remove the cartoon elements and keep it realistic."* One change from round 3:
+- **Out:** the thick black outline, the cel-shaded highlights and the electricity arcs.
+- **In:** physical realism. It is a real object in real weather: rain running down the wet stone, cloud
+  wrapping round the letters so they sit *inside* the storm, and glow that falls off into the mist.
+- **No "hyper-realistic" or "cinematic".** Both are on the quality-word kill list, so the realism is
+  described physically.
+- **Kept:** the slant, the glitch slices, the relic stone and bronze, the brace, and red through *Bad*
+  with blue through *ode*.
+
+**Paste into:** Flow → **Nano Banana 2** → image prompt box. **Reference:** the accepted **12e** still
+only. **No Characters.** **Aspect:** 16:9. **Outputs:** 2.
+
+```prompt
+SCENE:
+
+The attached image is this exact scene and it is the reference for everything below the sky: keep the same two men as solid black silhouettes seen from behind, the same burning oil drum between them, the same sparks and smoke rising, the same falling rain and the same dark stormy night. The only change is a huge logo standing in the storm clouds across the top of the frame, photographed as a real physical object in real weather.
+
+Logo: the word "BadCode", enormous, standing inside the dark clouds above the two men. The letters lean forward at a hard slant and are wide, heavy and angular, with sharp clipped corners, and each letter is sliced through by two thin horizontal cuts with the pieces slightly offset sideways. The letters are made of ancient carved dark stone with worn bronze edges, cracked, chipped and weathered like a relic. The C is a tall curly brace carved from the same stone, with its top tip glowing deep red and its bottom tip glowing bright blue. Deep red light glows out through the cracks in the letters B, a and d, and bright blue light glows out through the cracks in the letters o, d and e, and the two colours meet at the brace. Rain runs down the wet stone and drips from the lower edges, and drifting cloud wraps around the bases of the letters so they sit inside the storm rather than in front of it.
+
+Light: it is night. The logo is dark wet stone, lit by the red and blue light from its own cracks, which spills a soft red and blue haze into the surrounding cloud and falls away into darkness, and faintly by the storm. It reads clearly against the black clouds without lighting up the sky. The fire below stays the brightest warm light in the frame, and the rain streaks catch a little of the red and blue.
+
+Details: real stone texture, rain-soaked surfaces, mist and fine natural grain, matching the look of the reference.
+
+Constraints: The letters spell BadCode exactly, with a capital B, a lowercase a and d, the curly brace as the C, and a lowercase o, d and e. The only colours in the logo are the deep red, the bright blue, the dark stone and the worn bronze edges. The two men stay solid black silhouettes. Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Check before accepting:**
+- It reads **BadCode**, with the brace as the C. Red is on top, blue underneath.
+- There's no outline and no drawn highlights.
+- The letters sit *in* the cloud and don't look pasted on.
+- The glow falls off into the mist.
+- The silhouettes, drum and rain match 12e.
+
+### 12e-bc — round 4 ✅ ACCEPTED 2026-09-14 (Jack: *"this one is great"*), and its clip · written 2026-09-14, unrun
+
+**The still:** cracked stone "Bad{ode" in the storm, red glow through *Bad*, blue through *ode*, the brace
+splitting the two, rain dripping off the letters, and cloud round their bases. Silhouettes, drum and rain
+as in 12e.
+
+**Shot spec (shot-craft):**
+- **Job:** the signature lands with one blow. The logo is already there, and the strike is punctuation.
+- **Lock, Move, Land** (web pass, community):
+  - **Lock:** the letters hold exactly.
+  - **Move:** one bolt hits the round letter right of the brace, and a glowing seam slices it.
+  - **Land:** it settles on a held final frame, which the film ends on.
+- **The camera stays locked** (12e rule), with the existing world motion only: rain, fire, sparks, slow
+  cloud.
+- **8s**, so the end has room to dwell after the strike.
+
+**Engine decisions (web pass 2026-09-14, logged in `omni-flash.md`):**
+- 🔴 **The word is never written and the logo is never described.** The image owns the lettering.
+  Quoting text that is already in frame probably invites a redraw (*inferred*). It's "the stone letters".
+- 🔴 **The target is "the round letter just to the right of the brace"**, not "the letter o", so the text
+  channel stays out of it (*inferred*).
+- **One lock sentence up front:** the letters keep their exact shape, spacing and spelling.
+- **The crack glow stays steady.** A pulsing light makes fine texture crawl (community), so only the cut
+  seam is new light.
+- **"A few sparks"**, because particle nouns overdeliver. The lightning light is named by what it does, and
+  the word *flash* isn't used.
+- **No hype words and no camera shake.**
+
+🔴 **Top risk:** the other letters redraw or re-spell when the lightning lights them. No source shows a
+model cutting one object while holding the rest. **Draft at 360p for motion.** **Fallback, no more
+rerolls:** generate the same clip with the logo removed, then lay the accepted still's logo back over it
+in Premiere (screen or luma), and do the cut there.
+
+⚠️ **Before upload:** `python3 scripts/photosensitivity-check.py`.
+
+**Paste into:** Flow → **Omni Flash** → **Frames** → prompt box. **First frame:** the accepted 12e-bc round-4
+still. **No end frame.** **Aspect:** 16:9. **Duration:** 8s. ⬜ Draft at 360p first.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed. The stone letters in the sky keep their exact shape, spacing and spelling for the whole clip, and the red and blue glow in their cracks stays steady.
+
+The rain keeps falling, the fire in the drum keeps burning with its sparks rising, the cloud drifts slowly around the bases of the letters, and the two men sit where they are. About three seconds in, a single jagged bolt of lightning drops out of the clouds behind the letters and strikes the round letter just to the right of the brace. For an instant cold white light washes across the whole sky and the wet stone. The bolt slices that one letter cleanly along a diagonal line, and the cut glows as a thin seam of molten orange heat that sheds a few sparks. The lightning is gone, the night returns, and the letters hang in the storm with the orange seam still glowing through the one sliced letter.
+
+Audio: heavy rain, the crackle of the fire, and one enormous crack of thunder as the bolt strikes, rolling away into the distance. No music and no voices.
+
+Thanks.
+```
+
+**Check before accepting:**
+- **Every other letter is identical first frame to last**: same spelling, same brace, red on the left, blue
+  on the right.
+- One bolt, no strobe, one sliced letter.
+- The seam stays and doesn't heal.
+- The crack glow doesn't crawl or boil.
+- No extra sparkles.
+- The two men don't change.

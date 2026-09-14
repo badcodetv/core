@@ -219,3 +219,34 @@ A score bed under the wordless stretches is **an open call for Jack**, not a can
 - 🟡 **Grain at 4 is a starting value.** One `premiere_set_param` per clip to change it.
 - ⬜ **Not saved by the session** — every change is its own `BadCode:` undo entry, so review then
   save, or step back through them.
+
+## Premiere — `camping jack` · the 27 → 28 blink (2026-09-14)
+
+**Project:** `…/Camping Video NEW!/camping jack/camping jack.prproj` · **Sequence:** `0 synced` (1920×1080 @ 24)
+**Built by:** a session over the bridge, following the eyelid recipe in
+[`docs/premiere/api-notes.md`](../../premiere/api-notes.md) (two Linear Wipes, upper lid heavier).
+
+| Clip | Timeline | What it is |
+| --- | --- | --- |
+| `v0:50` `27.mp4` | 214.583 → 217.625 | Dome POV from the bed, so the eyes **close** here |
+| `v0:51` `28.mp4` | 217.625 → 222.125 | Tent POV, so the eyes **open** here |
+
+**Chain on both clips:** `2 AE.ADBE Gaussian Blur 2` · `3 AE.ADBE Linear Wipe` (upper lid: angle 180,
+feather 240) · `4 AE.ADBE Linear Wipe` (lower lid: angle 0, feather 190). Keyframes are all bezier and
+**clip-relative**.
+
+- **27, close with a droop and a flutter.** Upper wipe: 1.617→0, 2.117→45, 2.367→32, 2.917→78.
+  Lower wipe: 0, 18, 12, 42 at the same times. Blur: 1.617→0, 2.917→60.
+- **28, open with a half-blink.** Upper wipe: 0.2→78, 0.55→48, 0.75→62, 1.4→0. Lower wipe: 42, 22, 28, 0
+  at the same times. Blur: 0→60, 1.7→0.
+
+**Looked at:** exported frames at 216.9, 217.3 and 218.15 show soft lids and an off-centre slit. The
+wiped area decodes as transparent (alpha 0), so it plays black on V1.
+
+**Needs a human**
+- ⬜ **Scrub 216–219.5 at speed** and judge the timing. Every number above is a first pass.
+- ⬜ **No exposure dip yet.** The recipe's Lumetri ramp to −2 stops, leading the lids, was left out.
+- ⬜ **The lid edge is straight** (a Linear Wipe limit, not solved).
+- ⬜ **Not undone:** a first Crop-based attempt was added and then removed. Undo history holds both, so
+  don't step back further than the `Linear Wipe` entries.
+- ⬜ **Saved** by the session at the end.
