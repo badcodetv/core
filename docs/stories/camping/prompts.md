@@ -7681,6 +7681,515 @@ neither clause was in the prompt.
 
 ---
 
+## Scene 8 fog coverage — five angles on the accepted fog frame · written 2026-09-15
+
+**Jack, 2026-09-15:** he attached the accepted fog two-shot plus the Characters and asked Flow for
+*"different shots of this"*. Five frames came back and he likes all five. His ask: **describe each
+angle, then write a proper prompt for each so the good version is made on purpose**, with the slop
+taken out, for Nano Banana, using the cinematography toolkit.
+
+**The beat these serve** (story discussion the same day, not yet canon): **Bob's panic.** The X8 is
+the trigger, the fog is the inside of his head, and he breathes his way back. Dialogue is deferred.
+Each spec below says which part of that beat its frame carries.
+
+### The five frames as returned, read with `shot-craft`
+
+| id | Angle | What is in it | Keep | Slop / fault to take out |
+|---|---|---|---|---|
+| **8f-low** | **Ground level**, a hand's height off the tarmac, wide lens, looking slightly up | Tarquin mid-stride, towering, centre-right. Bob at the tent mouth, right, knees up. X8 rear three-quarter, left, lights lit | Height puts us on Bob's ground. Tarquin's step is an unresolved moment | 🔴 **The hero splash**: a crown of droplets on the nearest puddle is a stock "rain" trope. **Bob faces the lens**, not either man |
+| **8f-high** | **Raised wide**, about 8m up, looking down about 30° | The trio small in the middle of an endless bay grid dissolving into fog | The field of empty bays is the isolation | 🔴 **Dead-centre and square to the grid**, so it reads as a diagram (the A9 note above). **The car sits inside one bay**, but canon has it straddling two |
+| **8f-tpov** | **Tarquin's POV**, standing eye height, looking down | His hands and watch at the bottom edge, holding a phone. Bob cross-legged, hand at chin, looking up into the lens. Tent right, empty bays to fog | 🔑 The phone. It says *content* without a word | 🔴 **Red spots on Bob's hoodie read as blood.** A wedding band where canon has a signet ring. ⚠️ **The phone is a new story beat**, not canon (see its spec) |
+| **8f-bpov** | **Bob's POV**, seated eye height, looking up | Bob's camo knees soft at the bottom. Tarquin standing over, full length. X8 behind him, left. Tent flysheet filling the right edge | 🔑 **The PTSD frame**: the car's red lights sit just behind the man looming over him | 🔴 **Tarquin dead centre and square to the lens**, a symmetry tell. The frown is edging toward a pantomime face |
+| **8f-top** | **Overhead**, straight down | Car, Tarquin, Bob and tent on the grid, rain streaks | The narrator's view. **The only angle where the two-bay joke reads** | 🔴 **The tent is collapsed flat.** 🔴 **Physics: rain seen from directly above comes toward the lens**, so it reads as specks and rings, never long streaks. The car's body is slightly warped |
+
+### Rulings every prompt in this set follows
+
+- **Model:** there is no "Nano Banana Pro 2" (see `nano-banana-2.md`). **Run on Nano Banana Pro**, the model the accepted fog set used, for continuity. NB2 is the A/B if a frame fights. 🔴 **Never Nano Banana 2 Lite for these**: Google's API docs say Lite takes no character references at all, and Lite is the free-plan default, so check the picker.
+- **Aspect ratio:** 16:9 with Flow's landscape toggle, never in the prompt (§31).
+- **Attach:** **the accepted fog two-shot always goes last**, and is named as the reference for **place, fog, car, tent and light**. A Character goes in front of it **only when that man's face is big enough to bind** (§12, and the reference-size rule). Where the men are as small as in the reference, or smaller, the reference carries them and **nothing is cast**.
+- **Never describe a referenced man.** Action, placement and face muscles only. **The one exception is an unbound body part** (§25): Tarquin's hands in `8f-tpov`, Bob's knees in `8f-bpov`.
+- **Delete atmosphere, give weather physics.** The reference carries the fog, so we don't name it harder (§10). Rain is described only where it has something dark to fall against (§32).
+- **Left and right always mean the frame**, never a man's own left (eleventh web pass).
+- **Kodak Portra 400 stays** for continuity, despite the untested slop warning.
+- **"Candid, taken quickly"** puts a human behind the camera. No "cinematic", no "rule of thirds" (never-cite list), and no "not quite level" (it failed four times on this shot).
+
+### 8f-bpov — Bob's eyes: the man, and the car behind him · **still** · written 2026-09-15, unrun
+
+**Shot spec**
+- **Job:** the trigger. We are on the ground where Bob lives, a man stands over us, and **the car's red lights sit just past his hip.** It is the one frame in which the car is behind the threat.
+- **Register:** documentary, human scale.
+- **Depth:**
+  - foreground: Bob's own knees, soft, and the tent flysheet on the right edge, soft
+  - midground: Tarquin, full length, two metres away
+  - background: the X8 ten metres back, then the fog
+- **Focal point:** Tarquin's face, which wins on height and sharpness. The red lights are the second place the eye lands.
+- **Light:** overcast sky through fog, shadowless. The rear lights are the only light source in frame.
+- **Camera:** seated eye height, tilted up. 35mm, a person's-eye lens.
+- **Withheld:** Bob's face. We only have his view.
+- **What moves (in the video):** the rear lights, Bob's knees rising and falling as he breathes. Decided when the still is accepted.
+
+**What changes from Jack's frame:** Tarquin moves off the centre line, with the car in the gap beside him. The expression is written as muscles. The knees are described (§25).
+
+**Attach:** `@Tarquin-new` first, then the accepted fog two-shot. **Not `@Bob`**: his face is not in frame, and a Character with nowhere to go puts a face where it shouldn't be.
+
+**→ Flow image surface · prompt box** (Nano Banana Pro · landscape · x2)
+
+```prompt
+Generate a still photograph. The job of this picture: we are sitting on the wet ground at the mouth of the tent, and the man who owns the car is standing over us with the car just behind him.
+
+References: the man from the character reference is the standing man. The attached photograph is the reference for the place, the fog, the black BMW X8, the tent and the light. Keep all of those the same as in the photograph.
+
+Camera: a first-person view from the eyes of a man sitting on the tarmac at the mouth of the tent, tilted up. A 35mm lens at f/5.6. The nearest thing in the picture is his own two knees, drawn up, crossing the bottom edge of the frame, soft and out of focus. The right-hand edge of the frame is the near side of the tent's flysheet, close to the lens and soft, with rain running down it.
+
+Composition: the standing man is about two metres away, seen from head to feet, standing to the right of the middle of the frame. On the left of the frame, in the open space beside him and about ten metres behind him, the X8 is parked side-on with its rear lights lit, so the lights sit level with his hip.
+
+Action: he has just stopped walking and his weight is settling back onto his heels, his arms hanging with his hands loose at his sides. His head is tipped down toward the lens. His brows are drawn very slightly together, his upper eyelids a little lowered, his mouth closed and flat, and his eyes are aimed straight down into the lens. The expression is small: a stranger would read it as mild distaste and nothing more.
+
+The knees: worn camouflage-print trousers, dark with rain across the tops and grimy at the seams.
+
+Light: overcast daylight coming down through the fog from every direction at once, so the standing man casts no shadow and his face is lit as evenly as the ground. The X8's rear lights are the only thing in the picture making light of their own, and their red lies in a broken streak on the wet tarmac under the car.
+
+Weather: rain shows as fine bright streaks where it crosses the black of the car and the standing man, and as rings in the standing water around his feet. Against the pale fog it disappears into the grey.
+
+Style: a candid documentary photograph taken quickly from the ground, on Kodak Portra 400 at ISO 1600. Unretouched, natural skin texture, fine grain in the shadows, muted cool colour.
+
+Constraints: the red of the rear lights is the most saturated colour in the picture by a wide margin. No writing on any surface except the car's own badge. No other vehicles, buildings or people anywhere in the fog.
+
+Thanks.
+```
+
+### 8f-low — ground level: the step toward him · **still** · written 2026-09-15, unrun
+
+**Shot spec**
+- **Job:** the approach, at Bob's height. The man steps in and the car waits behind. 🔑 **The one story change: Bob's eyes go to the car's rear lights, not to the man walking up to him.** That is the first sign that something other than Tarquin has hold of him, and it gives the frame its unresolved question: what is he looking at?
+- **Depth:**
+  - foreground: wet tarmac at the lens, with rain rings
+  - midground: Tarquin mid-stride, and Bob at the tent
+  - background: the X8, then the fog
+- **Focal point:** Bob's face, which is the nearest face and has the eyeline. Tarquin wins on height.
+- **Light:** as the reference. The rear lights are the only source.
+- **Camera:** a hand's height off the ground, three metres from the tent, a little up-tilt. 24mm at f/8 for deep focus, which avoids fake-bokeh tells.
+- **Withheld:** what Bob sees in the lights.
+
+**What changes from Jack's frame:** the splash crown goes (rings only). Tarquin's stride is written as a shape (ninth pass), and Bob's eyeline goes to the lights.
+
+**Attach:** `@Bob` first, `@Tarquin-new` second, the accepted fog two-shot last. Both faces are larger than in the reference, and each man is anchored to a named side (§26).
+
+**→ Flow image surface · prompt box** (Nano Banana Pro · landscape · x2)
+
+```prompt
+Generate a still photograph. The job of this picture: at the height of a man sitting on the ground, a second man steps in toward him, and the seated man is not looking at the man. He is looking past him at the car's rear lights.
+
+References: the man from the first character reference is the seated man. The man from the second character reference is the standing man. The attached photograph is the reference for the place, the fog, the black BMW X8, the tent and the light. Keep all of those the same as in the photograph.
+
+Camera: resting a hand's height above the wet tarmac, about three metres from the tent, tilted a little upward. A 24mm lens at f/8, so everything from the water nearest the lens to the car is sharp. The bottom third of the frame is wet tarmac close to the lens, with rain rings spreading across the standing water.
+
+Composition: on the right of the frame, the seated man sits on the ground at the mouth of the tent, the open doorway behind him. In the middle of the frame and a step nearer to him than the car, the standing man, tall in the frame, his head close to the top edge. On the left, about eight metres back, the X8 is seen from its rear three-quarter with its rear lights lit.
+
+Action: the standing man is caught mid-stride toward the seated man. His front foot is planted flat, his back heel is lifting off the tarmac, and the arm opposite his front leg has swung slightly forward. His head is tipped down toward the seated man, his mouth closed and his brows level. The seated man has his knees drawn up and his forearms resting on them, his hands hanging loose. His head has turned away from the standing man toward the left of the frame, and his eyes are fixed on the car's rear lights. His brows are lifted slightly at the inner ends, his eyes a little too wide, and his lips are just parted. The expression is small: a stranger would take a second to see that anything was wrong.
+
+Light: overcast daylight coming down through the fog from every direction at once, so nothing casts a shadow. The X8's rear lights are the only thing in the picture making light of their own.
+
+Weather: rain shows as fine bright streaks where it crosses the black of the car and both men, and as rings on every pool of standing water. Against the pale fog it disappears into the grey.
+
+Style: a candid documentary photograph taken quickly from the ground, on Kodak Portra 400 at ISO 1600. Unretouched, natural skin texture, fine grain in the shadows, muted cool colour.
+
+Constraints: the red of the rear lights is the most saturated colour in the picture by a wide margin. The standing water is broken only by small rain rings, with no droplets leaping out of it. No writing on any surface except the car's own badge. No other vehicles, buildings or people anywhere in the fog.
+
+Thanks.
+```
+
+### 8f-tpov — Tarquin's eyes, phone in hand · **still** · written 2026-09-15, unrun
+
+⚠️ **Story flag before spending a credit:** Flow invented **the phone**. Tarquin looking down at
+Bob with his phone out reads as *about to photograph him*. It's a strong beat (a man as content), but
+**it is not canon**, and it lands a second judgement on Tarquin in a scene ruled at one beat each. The
+prompt keeps it because Jack liked the frame. **Delete the phone sentence and the hands** if Jack
+rules it out.
+
+**Shot spec**
+- **Job:** the look down. Bob seen from the height of a man who has everything, framed by that man's own watch and phone. This is the only frame in the set where **Bob looks back.**
+- **Depth:**
+  - foreground: Tarquin's hands, the watch and the phone, soft
+  - midground: Bob and the tent
+  - background: empty bays fading into fog
+- **Focal point:** Bob's eyes, which win on being the only face and on eyeline.
+- **Camera:** a standing man's eye height, looking down about 35°. 28mm.
+- **Visible cost:** Bob on wet tarmac, and the empty grid around him.
+
+**What changes from Jack's frame:** the red marks come out (a colour comparison, not a wardrobe line). The hands are described (§25) with canon's signet ring and old steel watch. They **grip** the phone, because hands gripping an object render better (eighth pass). Bob's hand moves off his chin, because hands near the face fail more often.
+
+**Attach:** `@Bob` first, then the accepted fog two-shot. **Not `@Tarquin-new`**: his face is not in the picture.
+
+**→ Flow image surface · prompt box** (Nano Banana Pro · landscape · x2)
+
+```prompt
+Generate a still photograph. The job of this picture: through the eyes of a man standing over a man sitting on the ground, with his own phone in his hands, and the seated man looking straight back up at him.
+
+References: the man from the character reference is the seated man. The attached photograph is the reference for the place, the fog, the tent and the light. Keep all of those the same as in the photograph.
+
+Camera: a first-person view from the eye height of a tall standing man, looking down at about thirty-five degrees. A 28mm lens at f/5.6. The nearest thing in the picture is his own two hands at the bottom edge of the frame, close to the lens and soft.
+
+Composition: the seated man sits cross-legged on the wet tarmac about two and a half metres away, just left of the middle of the frame. The tent fills most of the right half of the frame beside him. Behind him and to the left, the painted bay lines run away over empty wet tarmac and pale out into the fog.
+
+The hands: the backs of a pale, indoor man's hands in his late forties, gripping a black phone low in front of him in both hands, its back toward the seated man. An old scuffed steel watch on one wrist and a plain heavy gold signet ring on one little finger.
+
+Action: the seated man has his forearms resting on his knees and his hands loosely clasped. His head is tipped back and his eyes are aimed straight up into the lens. His brows are level, his eyelids steady, his mouth closed, and his jaw set. His face is doing almost nothing: he is watching, not asking.
+
+Light: overcast daylight coming down through the fog from every direction at once, so nothing casts a shadow and the seated man's face is lit as evenly as the ground.
+
+Weather: rain shows as fine streaks where it crosses the dark tarmac and as rings in the standing water. Against the pale fog it disappears into the grey.
+
+Style: a candid documentary photograph taken quickly, on Kodak Portra 400 at ISO 1600. Unretouched, natural skin texture, fine grain in the shadows, muted cool colour.
+
+Constraints: there is nothing red anywhere in this picture. The dirt on the seated man is dull grey and brown. No writing on any surface. No vehicles, buildings or other people anywhere in the fog.
+
+Thanks.
+```
+
+### 8f-high — the raised wide: a field with two men in it · **still** · written 2026-09-15, unrun
+
+**Shot spec**
+- **Job:** the establisher. The car park is a field of empty bays and there is nothing in it but them. ⚠️ Per the A9 note above, this is **the scene's opening wide, not the argument.** Cut it early.
+- **Depth:** the soft painted lines crossing the bottom edge, then the trio, then the grid dissolving into fog.
+- **Focal point:** the trio, **low and left**, with open tarmac and fog on the right.
+- **Camera:** about eight metres up and twenty-five back, looking down about 30°. **Turned off the bay grid**, because a square-on grid is a symmetry magnet (§37). 50mm.
+- **Scale reference:** the two men.
+- **Canon fix:** the car straddles the line between two bays.
+
+**Attach:** the accepted fog two-shot **only**. The men are the same size as in the reference or smaller, so the reference carries them.
+
+**→ Flow image surface · prompt box** (Nano Banana Pro · landscape · x2)
+
+```prompt
+Generate a still photograph. The job of this picture: a supermarket car park seen from above as a wide field of empty parking bays, with nothing in it but one car, one tent and two men.
+
+References: the attached photograph is the reference for the two men, the black BMW X8, the tent, the fog and the light. Keep all of them the same as in the photograph, and keep the two men in the same poses.
+
+Camera: raised about eight metres above the tarmac and about twenty-five metres back, looking down at about thirty degrees. A 50mm lens at f/8, so the whole grid is sharp until the fog takes it. The camera is turned so it is not square to the parking bays: the painted lines run away diagonally across the frame from the lower right toward the upper left.
+
+Composition: the car, the two men and the tent sit together in the lower left of the frame. The X8 is parked across the painted line between two bays, its body over the line so that it takes up both bays. The standing man is just beyond it and the seated man and the tent are in the next bay along. The rest of the frame, all of the right side and the whole upper half, is empty bays, row after row, going paler and softer until the lines vanish into flat grey fog. The nearest painted lines cross the bottom edge of the frame.
+
+Light: overcast daylight coming down through the fog from every direction at once, so nothing casts a shadow. The X8's rear lights are the only thing making light of their own, and their red lies in a streak on the wet tarmac behind the car.
+
+Weather: rain shows as fine streaks against the dark tarmac.
+
+Style: a candid documentary photograph on Kodak Portra 400 at ISO 1600. Unretouched, fine grain in the shadows, muted cool colour. The tarmac is patched in mismatched greys with water pooled unevenly in the low places.
+
+Constraints: the red of the rear lights is the most saturated colour in the picture by a wide margin. No writing on any surface except the car's own badge. No other vehicles, buildings, lamp posts or people anywhere in the car park or the fog.
+
+Thanks.
+```
+
+### 8f-top — straight down: two spaces, for that · **still** · written 2026-09-15, unrun
+
+**Shot spec**
+- **Job:** the narrator's view, from the future and from above. **The two-bay joke is legible only from here**: the car over the line, and the tent squeezed into one bay beside it.
+- **Depth:** from directly above, depth becomes **pattern plus fog**. The fog thickens toward the frame edges, so the centre is the clearest.
+- **Focal point:** the car, the darkest and largest shape, **turned diagonally across the grid** while everything else lies square.
+- **Camera:** straight down, about fifteen metres up. 35mm.
+- **The physics that fixes the rain:** rain falls toward the lens, so it shows as short soft specks and rings, not streaks (§32's family). Tell the model the consequence, not the rule.
+- **The tent:** from above, a dome shows its two poles as a crossed X and a rounded top. Saying so is what stops it coming back flat.
+
+**Attach:** the accepted fog two-shot **only**. No faces are visible from above.
+
+**→ Flow image surface · prompt box** (Nano Banana Pro · landscape · x2)
+
+```prompt
+Generate a still photograph. The job of this picture: looking straight down on a wet car park from high above, where one car has taken two parking spaces and a man lives in a tent in the space beside it.
+
+References: the attached photograph is the reference for the black BMW X8, the tent, the two men, the fog and the light. Keep all of them the same as in the photograph.
+
+Camera: directly overhead, about fifteen metres up, pointing straight down at the ground. A 35mm lens at f/8.
+
+Composition: the white painted bay lines make a square grid across the whole frame. In the middle of the frame, the X8 is parked at an angle across the line between two bays, its roof and bonnet over both of them. It is the only thing in the picture that is not square to the grid. In the next bay to the right, the tent lies neatly inside its lines: seen from above, its dome is a rounded shape with its two poles crossing in an X over the top, and its open door faces the car. On the tarmac between them, the standing man is seen as the top of his head and his shoulders, and the seated man sits at the tent door with his knees drawn up.
+
+Light: overcast daylight coming down through the fog from every direction at once, so nothing casts a shadow. The X8's rear lights glow red at the back of the car.
+
+Weather: seen from directly above, the rain falls toward the lens, so it shows only as short soft specks in the air and as rings breaking every pool of standing water. A thin veil of fog lies over the whole car park and grows thicker toward the edges of the frame, where the grid lines pale into grey.
+
+Style: a candid documentary photograph on Kodak Portra 400 at ISO 1600. Unretouched, fine grain in the shadows, muted cool colour. The tarmac is patched in mismatched greys with water pooled unevenly in the low places, and the car's roof is rain-flecked.
+
+Constraints: the car's body is straight and undistorted, the same shape as in the reference photograph. No writing on any surface except the car's own badge. No other vehicles or people anywhere in the frame.
+
+Thanks.
+```
+
+### 8f-tpov — round 2, simple, no phone · **still** · written 2026-09-15, unrun
+
+**Jack, 2026-09-15:** *"Tarquin had a phone in his hand for some reason, please fix it in a new prompt, keep it simple."* **The phone is ruled out.**
+
+**The fix is geometric, not a ban** (§27: you cannot subtract, only substitute). **The hands are gone from the frame entirely.** The nearest thing in the picture is wet tarmac, so there is nothing for a phone to sit in. **The prompt is cut to about half** as asked. The job, camera, Bob's face, light and style survive.
+
+**Attach:** `@Bob`, then the accepted fog two-shot.
+
+```prompt
+Generate a still photograph. The job of this picture: looking down from the eyes of a standing man at a man sitting on the wet ground, who looks straight back up.
+
+References: the man from the character reference is the seated man. The attached photograph is the reference for the place, the fog, the tent and the light. Keep all of those the same as in the photograph.
+
+Camera: from the eye height of a tall standing man, looking down at about thirty-five degrees. A 28mm lens at f/5.6. The nearest thing in the picture is wet tarmac about a metre in front of the camera, so the whole bottom edge of the frame is wet ground.
+
+Composition: the seated man sits cross-legged on the tarmac about two and a half metres away, just left of the middle of the frame. The tent fills most of the right half of the frame. Behind him, empty painted bays run away and pale into the fog.
+
+Action: his forearms rest on his knees. His head is tipped back and his eyes are aimed straight up into the lens, his brows level and his mouth closed. His face is doing almost nothing.
+
+Light: overcast daylight through the fog, from every direction at once, so nothing casts a shadow.
+
+Style: a candid documentary photograph on Kodak Portra 400 at ISO 1600. Unretouched, natural skin texture, fine grain, muted cool colour.
+
+Constraints: nothing in the picture is red. No writing on any surface. No vehicles, buildings or other people in the fog.
+
+Thanks.
+```
+
+### 8f-low — the clip · **video** · written 2026-09-15, unrun
+
+**Jack's brief for every clip in this set, 2026-09-15:** *"interesting shots of them, not talking or
+making any facial expression."* Built on **the accepted 8f-low still**: Tarquin mid-stride between the
+X8 and the tent, Bob seated at the tent door looking up at him, the red tail lights broken up in the
+foreground puddle.
+
+**Shot spec (shot-craft)**
+- **Job:** the arrival lands. He finishes the step that brought him here and stands over a man who
+  doesn't move. The power shifts through **stillness**, not through a face.
+- **World moves, camera doesn't** (R7, hybrid method). The push-in happens in Premiere, a slow
+  8–10% scale toward the gap between the two men.
+- **Two beats for 8s:** (1) the step completes and his weight settles; (2) later, Bob's eyes drop from
+  Tarquin to the ground. That's a gaze, not an expression, and it's the power shift. **Everything else
+  is continuation**: rain, breath, one blink each.
+- **Why not have him keep walking:** a moving figure on Frames is redrawn in every position
+  (camping 5a). Two figures whose distance changes merge (Karen §2h.7v). A walk past Bob would also
+  send his reflection moving through the puddle, which is the documented reflection failure.
+  **A single completed step keeps the change small.**
+- **No expression, but not a statue:** ninth pass. "Minimal movement" freezes a person, so they
+  breathe and blink, at different moments.
+
+**Tab: Frames**, with the accepted 8f-low still as the first frame.
+- Both staging and two faces must hold, so it's the tab rule's "both" row: **Frames, with the motion
+  cut to almost nothing.**
+- ⬜ **30-second check:** if the Frames tab now accepts a Character (tenth pass says the API does),
+  add `@Tarquin-new` and `@Bob`.
+- **Fallback if a face drifts:** Ingredients, with the still plus both Characters, in the
+  two-sentence form that worked on 2f-5.
+
+**Anti-slop, per tell**
+- **Slow-motion bias:** say "at real speed".
+- **Floaty foot:** the heel comes down with weight.
+- **Statue freeze:** breathing, and one blink each at different moments.
+- **Mouth movement / speech:** "mouths closed", with no colon after an action and no quotation marks.
+- **Reflection trouble:** the reflection is not named (§10), and his motion is kept small.
+- **A tripod getting drawn:** no camera nouns. Write "the view holds perfectly still".
+- **"Cinematic" / hype words:** none used.
+
+**Paste into:** Flow → **Omni Flash** → **Frames** → prompt box. **First frame:** the accepted 8f-low
+still. **No end frame.** **16:9 · 720p · x2 · 8s** (8s kept as narration cover; the prompt carries a second beat so the back half doesn't drift). No 360p draft: retired
+2026-09-15, see `omni-flash.md` *Default settings*.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed.
+
+The standing man finishes the step he is in: his back foot comes forward and lands heel to toe on the wet tarmac beside the other, his weight settles onto both feet, and he stands looking down at the seated man.
+
+The seated man stays where he is, looking up at him and breathing slowly. Both men keep their brows relaxed and their jaws loose, their mouths closed throughout, and each blinks once, at different moments.
+
+Later in the shot, the seated man lowers his eyes from the standing man to the wet ground in front of his feet, and keeps them there while the standing man goes on looking down at him.
+
+Rain keeps falling at the same rate, breaking the standing water into rings and running down the back of the car.
+
+Audio: steady rain on wet tarmac, rain drumming on the car roof and pattering on the tent, and one wet footstep. No music and no voices.
+
+Thanks.
+```
+
+**Check before accepting:**
+- One step that lands with weight and doesn't glide. Two legs, and feet that stay planted.
+- Both faces stay the same people, with no mouth movement and no change of expression.
+- The blinks don't happen together.
+- The car, tent and bay lines don't ripple or redraw.
+- His reflection in the puddle moves with him and doesn't split.
+- No new people, no camera, no speech.
+
+### 8f-breathe — Bob alone in the fog, breathing · **video** · written 2026-09-15, unrun
+
+**The still:** the accepted `8f-tpov` round-2 frame. Bob sits cross-legged on wet tarmac beside the
+tent, hands on his knees, face tilted up. The car park is gone into fog and nobody else is there. **It
+missed as Tarquin's POV and was re-cast the same day as the breathing exercise**: the inside of
+Bob's head, where the car and the man have gone and he is bringing himself back.
+
+**Shot spec (shot-craft)**
+- **Job:** the calm after the trigger. The only frame in the scene with **one person and no threat in it**.
+  The emptiness does the argument: *nobody is coming, and he is dealing with it alone.*
+- **World moves, camera doesn't.** A slow push toward Bob happens in Premiere and ends on the closed eyes.
+- **Two beats for 8s** (the house default):
+  1. **Breath:** a slow, deep breath in, held briefly, and a long breath out, with shoulders and chest rising and falling.
+  2. **Eyes close** partway through the second breath, and stay closed.
+
+  That's eyelids, not an expression, and it's the beat's payoff.
+- **Not asked for:** a head move (bigger face redraw), hands moving (the weak spot, so they rest), the tent
+  moving (no wind), breath vapour (it's atmosphere, and named atmosphere overdelivers into smoke).
+- **Visible cost:** him on wet tarmac, the stains, and the empty field of bays.
+- **Light:** overcast through fog, shadowless, and steady (fine texture boils under changing light).
+
+**Tab: Frames.** One face, near-static motion, and the empty car park is the point, so it's the tab rule's
+"both" row. **Fallback if his face drifts at the eye close:** Ingredients with the still plus `@Bob`, in the
+short form.
+
+⚠️ **Already in frame 0 and not fixable in the clip:** the red-brown flecks on his hoodie. If they read as
+blood at full size, it's a grade or paint job in post.
+
+**What the web pass changed** (twelfth pass, `omni-flash.md`)
+- 🔑 **Lead with the breath, not the pose.** "Sits", "rests" and "gazes" as the main verb freeze a person.
+  The start frame already carries the pose.
+- **Breaths slightly different in length**, so it doesn't pulse like a metronome.
+- **The light stays even.** A shadow change across the face reads as the face redrawing.
+- **The fog is not named.** Fog pulsing is a model limit, not a prompt fix, and named atmosphere overdelivers.
+  Breath vapour is left for post if wanted.
+- **Audio names his breathing as close and slightly uneven.** It gives the model the sound it should make.
+
+**Paste into:** Flow → **Omni Flash** → **Frames** → prompt box. **First frame:** the accepted 8f-tpov round-2
+still. **16:9 · 720p · x2 · 8s · no end frame.**
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed.
+
+The man draws a slow, deep breath in, his chest and shoulders rising, holds it for a moment, and lets it out in a long breath, his shoulders dropping. He keeps breathing like that for the whole shot, each breath a little different in length.
+
+During his second breath his eyes close slowly, and they stay closed. His brows stay relaxed, his jaw loose and his mouth closed throughout, and his hands stay on his knees.
+
+Fine rain keeps speckling the wet tarmac around him. The tent stands still, and the light stays even and unchanged.
+
+Audio: light rain on wet tarmac and pattering on the tent, and close by, his own slow breathing, slightly uneven. No music and no voices.
+
+Thanks.
+```
+
+**Check before accepting (hands, then face, then edges):**
+- The hands stay whole on the knees.
+- The eyes close once and stay shut, and his face stays the same man through the close.
+- The breathing moves his shoulders and doesn't inflate his torso.
+- The fog stays steady and doesn't pulse. The tent doesn't ripple. The bay lines don't slide.
+- His reflection under him stays one shape.
+- No other people, no speech.
+
+### 8f-high — the clip · **video** · written 2026-09-15, unrun
+
+**The still:** the accepted `8f-high` take. The trio sits in the middle of an endless wet grid fading into
+fog, with heavy rain streaks and the X8's red lights lying in the tarmac.
+
+**Shot spec (shot-craft)**
+- **Job:** the establisher. The car park is a field and nothing is coming. ⚠️ **This take lines the car, the man
+  and the tent up on one lateral line** (symptoms.md: *"reads like a diagram"*), and the subject is a small
+  part of the frame (*"looks amazing but isn't about anything"*). **The clip can't fix composition. The edit
+  can:** `principles.md` 21a says *keep the height, lose the distance*, so a slow Premiere push-in toward the
+  trio across the clip makes the frame about them by the end.
+- **World moves, camera doesn't.**
+- **Two beats for 8s:**
+  1. **Continuation:** rain and stillness. The establishing seconds.
+  2. 🔑 **The car locks itself:** its indicators flash twice with a chirp, and **the seated man's shoulders
+     draw in at the flash.** It's a silhouette-scale reaction, which is the only kind that reads at this size
+     (8b-fog proved it). **And it's the trigger**: the indicator is the scene-2 crash callback from the PTSD
+     discussion. ⚠️ **Not yet approved by Jack. Delete the second paragraph to drop it**, and the clip becomes
+     pure establisher.
+- **Faces:** none legible, so there's no identity risk.
+
+**Tab: Frames.** The staging is the shot, and there are no faces to hold.
+
+**What the web pass changed** (thirteenth pass, `omni-flash.md`)
+- **The camera sentence names what is allowed to move.** Wide shots drift by default, and "movement only from…"
+  closes the rest without naming a camera.
+- **The flash has a cause (the lock), timing ("halfway", "quickly"), and the chirp in the same sentence.**
+- ⚠️ **"Twice" may come back as one or three flashes**, since video models are bad at counts. If the count
+  matters, add the flashes in post.
+- ⚠️ **Distant painted lines can crawl, and upscaling makes it worse.** Only upscale a take whose lines hold.
+
+**Paste into:** Flow → **Omni Flash** → **Frames** → prompt box. **First frame:** the accepted 8f-high take.
+**16:9 · 720p · x2 · 8s · no end frame.**
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still for the whole shot, with movement only from the rain, the car's lights and the seated man. A single continuous shot, everything at real speed.
+
+Heavy rain keeps falling across the whole car park at the same rate, breaking the standing water into rings. The two men stay where they are, the standing man looking down at the seated man.
+
+Halfway through the shot the car locks, and its orange indicators flash twice, quickly, with two short electronic chirps. At the flash, the seated man's shoulders draw up and in, and they stay there.
+
+Audio: heavy rain across a wide open car park and drumming on the car roof, then the two chirps of the car locking. No music and no voices.
+
+Thanks.
+```
+
+**Check before accepting:**
+- The bay lines and the fog edge stay put, with no crawl, swim or drift.
+- The flashes come from the car's own lights and nowhere else, and the red reflection doesn't split.
+- The seated man's shoulders move and he stays one shape. Neither man morphs.
+- The rain doesn't thin out or change direction.
+- No new people or cars, no speech.
+
+### 8f-top — the clip · **video** · written 2026-09-15, unrun
+
+**The still:** the accepted `8f-top` take. Straight down on patched wet tarmac, the X8 diagonal across two bays
+with its rear lights glowing red on the ground, Tarquin as the top of a head, Bob at the tent door.
+
+**Shot spec (shot-craft)**
+- **Job:** the narrator's view, from someone who already knows how it ends (principle 21). **Two spaces, for that.**
+- ✅ **Principle 21a passes:** this take is *high but close*. The car, both men and the tent fill a large share
+  of the frame, so it is about them, not about the grid.
+- **World moves, camera doesn't.** From straight down, any drift reads as a drone and breaks the god's-eye stillness.
+- **Two beats for 8s:**
+  1. **Rain from above:** fresh rings open on the wet tarmac and on the car's roof, all through the shot.
+  2. 🔑 **The rear lights go out, and the red on the ground goes with them.** It pairs with the lock in `8f-high`,
+     so the edit can cut on it. After it, the frame is all grey, with no warmth left in the picture.
+- **The men:** near-still. The seated man's head lowers. At this size only body shapes read, and nobody's
+  face is visible.
+
+**Tab: Frames.** The geometry is the shot, and there are no faces to hold.
+
+**What the web pass changed** (fourteenth pass, `omni-flash.md`)
+- **No "bird's eye" and no "drone".** Prompt libraries pair bird's eye with a 360° rotation, and a named drone
+  may get drawn. Write "the view looks straight down".
+- **Each rain ring has an end:** it spreads and fades.
+- **The light-off has a visible cause (the lock), a speed ("abruptly") and an end state in colour** ("dark wet grey").
+
+**Paste into:** Flow → **Omni Flash** → **Frames** → prompt box. **First frame:** the accepted 8f-top take.
+**16:9 · 720p · x2 · 8s · no end frame.**
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view looks straight down and holds perfectly still for the whole shot, with movement only from the rain, the car's rear lights and the seated man. A single continuous shot, everything at real speed.
+
+Rain keeps landing all over the wet tarmac and on the car's roof, each drop opening a small ring that spreads and fades. The standing man stays where he is, and the seated man slowly lowers his head.
+
+Halfway through the shot the car locks, and its rear lights switch off abruptly. The red glow on the wet ground behind the car goes with them, leaving dark wet grey.
+
+Audio: steady rain on open tarmac, a lighter patter on the car roof and the tent, and the short electronic chirp of the car locking. No music and no voices.
+
+Thanks.
+```
+
+**Check before accepting:**
+- The view doesn't rotate, drift or tilt, and the bay lines stay square.
+- The car stays rigid and doesn't slide. The lights go off once and stay off, and the red glow goes with them.
+- The two figures stay one shape each, and the tent holds its shape.
+- The rain rings don't turn into a pattern that repeats.
+- No new people, no speech.
+
+### Revision log — scene 8 fog coverage
+
+| id | Round | Model | Result | Verdict |
+|---|---|---|---|---|
+| all five | 0 | Flow, from the accepted fog two-shot + Characters, Jack's own ask | The five frames described in the table above | ✅ Jack likes all five. Prompts above are round 1 |
+| 8f-bpov | 1 | | | ⬜ |
+| 8f-low | 1 | | | ⬜ |
+| 8f-tpov | 1 | Nano Banana Pro | Tarquin's hands came back holding a phone | ❌ Jack: the phone has to go. Round 2 above removes the hands |
+| 8f-tpov | 2 | | | ⬜ |
+| 8f-high | 1 | | | ⬜ |
+| 8f-top | 1 | | | ⬜ |
+| 8f-low clip | 1 | Omni Flash · Frames · 720p · x2 · 8s | Clip from the accepted 8f-low still | ✅ Jack, 2026-09-15: *"those worked"* |
+| 8f-breathe clip | 1 | Omni Flash · Frames · 720p · x2 · 8s | Clip from the accepted 8f-tpov round-2 still | ✅ same |
+| 8f-high clip | 1 | Omni Flash · Frames · 720p · x2 · 8s | With the car-lock beat | ✅ same |
+| 8f-top clip | 1 | Omni Flash · Frames · 720p · x2 · 8s | Lights off on the lock | ✅ same |
+
+---
+
 ## Scene 9 — the retreat
 
 ⚠️ **The 9a yurt interior and 9b eye prompts were never recorded here.** Both were shot 2026-08-27

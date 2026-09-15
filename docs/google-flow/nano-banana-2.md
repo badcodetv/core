@@ -1878,6 +1878,41 @@ items only. None tested on our work yet.**
   [wearview](https://www.wearview.co/blog/walking-video-from-single-photo)
 - 🚫 **Do not cite** felo.ai on "Nano Banana Next / 3". It's reseller rumour with no Google source.
 
+## Eleventh web pass — 2026-09-15 `[vendor]` `[practitioner]`
+
+Run for the camping scene-8 fog coverage (`8f-*`: ground level, raised wide, two POVs, straight down). **New
+items only. None tested on our work yet.** Still no "Nano Banana Pro 2".
+
+- 🔴 **Per-model reference limits, from Google's API docs:**
+  - **NB2:** 4 character, 10 object, 3 style.
+  - **Pro:** 5 character, 6 object.
+  - **NB2 Lite:** 14 object, **no character or style references at all.**
+
+  This answers the "per-slot maxima" item above. So **a Character cast on Lite probably does nothing.**
+  ⬜ Unverified whether Flow enforces the API limits. `[vendor]`
+  [ai.google.dev](https://ai.google.dev/gemini-api/docs/image-generation)
+- **Flow's default model depends on the plan:** Pro for AI Ultra, Lite for free. This is now stated by Google, not just
+  the third-party wrapper. **Check the picker before attaching a Character.** `[vendor]`
+  [Flow help](https://support.google.com/flow/answer/16352836)
+- **Left and right are read from the viewer's side.** "On the left of the frame" is safe; "his left hand" may not
+  be. Bears on §26's side-anchoring. `[practitioner, untested]`
+  [lunostudio](https://www.lunostudio.ai/academy/nano-banana-photorealism)
+- **Identical catchlights in both eyes are a tell.** Overcast whole-sky light mostly avoids it. `[practitioner]`
+  [imagera, 2026-09-04](https://imagera.ai/blog/make-ai-images-look-real-2026)
+- **"Volumetric fog", "god rays" and "golden hour" are now template clichés** across prompt libraries. This fits §10:
+  leave light shafts in fog unnamed. `[practitioner, weak]`
+- **Weather-photo tells, from meteorologists:**
+  - distant vehicles come out warped or with blank black patches
+  - the scene is too calm for the weather shown
+
+  `[expert press]` [Fox Weather](https://www.foxweather.com/learn/real-or-fake-weather-photos-ai)
+- ⚠️ **Extreme angles (flat on the ground, straight overhead) may bring proportion errors**, attributed to thinner
+  training data. The claim couldn't be found at its likely source. **Unverified.** Check car bodies on `8f-top`.
+- **"Tilt-shift" on an aerial gives a miniature-model look.** Don't use it. `[practitioner, weak]`
+- 🔑 *Inferred, untested:* **seen from directly above, falling rain comes toward the lens**, so it should read as
+  specks and rings, not streaks. The first overhead Flow returned for `8f-top` drew long streaks. That is §32's
+  family: state the physical consequence.
+
 ## Notes for BadCode `[untested]`
 
 Hypotheses for the calibration run, not rules.
@@ -1943,3 +1978,33 @@ Flow — where model limits, watermarking and content filtering all differ. Some
 "Nano Banana 2" is demonstrably about **Nano Banana Pro** or the **original** Nano Banana; where a
 claim above is version-specific it came from someone visibly on the right model. Treat the rest as
 directional.
+
+### 39. ✅ Restyling OUR OWN accepted still holds identity, pose and set, even when reframed to 9:16 `[observed 2026-09-14, n=2]`
+
+The Loading Screen short (`docs/shorts/loading-screen/`) used **one attached reference**, camping
+`images/20.jpeg` (Tarquin by the open X8 door, 16:9). The prompt was *"Redraw the attached
+photograph as a hand-inked video-game loading-screen illustration… recomposed as a tall 9:16
+vertical poster"*, with a Reference block saying *"the only source for the man, his clothes, his pose, his
+expression… Keep all of those exactly… Change only the medium and the framing"*, plus Medium,
+Palette, Light and Constraints blocks. It ran on **Nano Banana 2**.
+
+**Both candidates** kept:
+- the face (recognisably the same man)
+- the turtleneck, gilet and jeans
+- the hand positions
+- the open door and the car's flank
+
+It recomposed to head-to-shins vertical correctly. It kept the car's badge off, because the
+constraint said "a plain dark shape": an object, not an absence, per §27.
+
+🔑 **This is the cheapest consistency route we have found for an illustrated variant:** don't cast
+or describe the character. Hand it the accepted photograph and change only the medium. It fits
+[§2](#2--do-not-restate-what-the-reference-already-shows) and the never-describe-a-referenced-character rule.
+
+⚠️ **What did not fully land:**
+- Line weight stayed fairly even rather than heavier on the outer contour.
+- "Shadows are solid black shapes" produced solid black on the car only, never on the figure.
+- One of the two takes ignored "matte paper with a faint paper tooth".
+
+Output is **768×1376** at "Original size". A 1080×1920 short needs the 2K upscale or a ~1.4× post
+scale.

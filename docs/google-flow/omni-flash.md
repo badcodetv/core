@@ -1734,6 +1734,101 @@ items only. Untested by us.**
 - ⬜ **Whether a cut object stays cut is untested anywhere.** Morphing and object permanence are listed as
   common failures. `[academic, indirect]` arXiv 2606.05328
 
+## Eleventh pass — 2026-09-15 `[vendor]` `[community]`
+
+Run for camping `8f-low` clip (a man completing one step toward a seated man, Frames). **New or contradicting
+items only. Untested by us.**
+
+- **Voice references in Flow work on Ingredients only**, and error on any other mode. `[vendor]`
+  [Flow help](https://support.google.com/flow/answer/16353334). No use to us (we never have speech), recorded
+  for completeness.
+- **The Gemini API docs (2026-09-08) warn that "overly descriptive prompts can lead to unintended changes."**
+  This confirms subtraction as the lever. `[vendor]` [ai.google.dev](https://ai.google.dev/gemini-api/docs/omni)
+- ⚠️ **DeepMind's camera vocabulary includes "film camera" and "webcam style".** Per the 2f-5 finding that every
+  noun gets drawn, *camera* nouns may appear in frame. ⬜ Unverified. `[vendor]`
+  [DeepMind guide](https://deepmind.google/models/gemini-omni/prompt-guide/)
+- 🔑 **Weightless walking comes from constant speed.** Real bodies speed up and slow down against gravity.
+  **"Heel to toe"** is reported to stop the glide on Veo 3.1, but not tested on Omni. `[community]`
+  [slopdetector](https://slopdetector.org/blog/how-to-spot-ai-slop) · [atlascloud](https://www.atlascloud.ai/blog/ai-updates/veo-3.1-prompt-guide)
+- **"Mouth closed throughout" plus "No dialogue, no music".** Leaving speech out entirely can still produce
+  mumbling. It is a state, not a negation, so it fits our rule. `[community]`
+  [prompt-architects](https://prompt-architects.com/blog/310-dialogue-and-lip-sync-in-ai-video)
+- **Faces as visible signals, not "neutral":** *"brow relaxed, jaw loose, one slow blink"*. `[community]`
+- **Weather nothing reacts to reads as pasted on.** Rain needs its consequences on surfaces: rings, runoff,
+  wet ground. Layer it by depth (near drops fast, far rain softer). Pick one dominant weather condition.
+  `[community]` [prompt-architects](https://prompt-architects.com/blog/360-vfx-and-effects-prompting)
+- **Fog reportedly generates well because it simplifies the background.** Single source, unverified.
+- 🚫 **Not adopted:** Luma's 0.5–0.75x slow motion and "subtle handheld" (contradicts the slow-motion finding
+  and R7). The `gemini-omni-flash-preview` API endpoint is deprecated on 2026-09-30, which is API only and not
+  Flow.
+
+## Twelfth pass — 2026-09-15 `[community]` `[academic]`
+
+Run for camping `8f-breathe` (a seated man breathing, eyes closing, fog, Frames). **New items only. Untested by us.**
+Nothing was found anywhere on **eyes closing on a held face** or **breath vapour** in AI video. Both are ours
+to observe.
+
+- 🔑 **A stillness verb as the main verb freezes the subject.** "Sitting / resting / gazing / posing" signals a
+  hold. Lead with a continuing motion and let the frame carry the pose. This gives the mechanism behind the
+  ninth pass's statue freeze. `[community]`
+  [prompt-architects](https://prompt-architects.com/blog/299-why-does-my-ai-video-barely-move)
+- **Fog that pulses is a capability limit, not a prompt fix.** Speed is the worst-followed fog control, and
+  density and texture follow well (Kling test). "Swirling" advice conflicts with "less high-frequency detail
+  boils less". On a locked frame, don't name fog motion. `[community]`
+  [prompt-architects](https://prompt-architects.com/blog/360-vfx-and-effects-prompting) ·
+  [runcomfy](https://comfyui-guides.runcomfy.com/ai-vfx/how-to-generate-fog-effect-with-ai-video-models-ai-vfx)
+- **A light change across a face reads as the face redrawing.** Keep the light steady through any face beat.
+  `[anecdotal]`
+- **Audible breathing:** *"his own breathing, close and slightly uneven"* names the target sound. `[community]`
+  [prompt-architects](https://prompt-architects.com/blog/150-prompting-audio-in-veo-3-1-sound-music-ambience)
+- **Real cold breath is inconsistent from one breath to the next, and films composite it in afterwards.** Put
+  it in post, not the prompt. `[community]`
+- **Reflections: MirrorWorld (Aug 2026) names Veo 3.1** for wrong content and frame-to-frame inconsistency.
+  `[academic]` [arXiv 2608.07463](https://arxiv.org/html/2608.07463)
+- **QC order: hands, then face, then edges.** If only the hands fail, cut before they show. If the face
+  fails, regenerate. `[community, unverified]`
+
+## Thirteenth pass — 2026-09-15 `[community]` `[academic]`
+
+Run for camping `8f-high` clip (a locked elevated wide, indicator double-flash, a silhouette reaction). **New items
+only. Untested by us.**
+
+- **Wide shots drift by default.** Leaving camera wording out is not a lock. Use one sentence that names what is
+  allowed to move (*"movement only from…"*), with no camera nouns. `[community]`
+  [creatide](https://creatide.ai/blog/ai-video-static-camera-stop-unwanted-zooms-and-pans)
+- ⚠️ **Distant repeating patterns crawl, and upscaling makes crawl more visible.** Deflicker before upscaling,
+  and only upscale a take whose fine lines hold. This is a caveat on the free-1080p delivery default.
+  `[community]` [unifab](https://unifab.ai/resource/remove-ai-video-flicker)
+- ⚠️ **Counts of repeated events are unreliable** (TemporalBench: action frequency is the worst category, in
+  understanding rather than generation). "Flash twice" may land as one or three. If the count matters, composite
+  it. `[academic]` [arXiv 2410.10818](https://arxiv.org/html/2410.10818v2)
+- **A light change needs a start state, a trigger and an end state**, and the sound goes in the same sentence as
+  its visible event. `[community]` confirms the tenth pass.
+- **Audio: one or two continuous ambience sources, and name the space** ("open", "reverberant"). Order effects as
+  they happen. `[community]`
+- **Nothing found** on painted bay lines swimming, a silhouette-scale reaction, or reflections updating with a
+  flash. All ours to observe.
+
+## Fourteenth pass — 2026-09-15 `[community]`
+
+Run for camping `8f-top` clip (a locked straight-down view, rear lights switching off). **New items only. Untested
+by us.**
+
+- ⚠️ **"Bird's eye" appears in prompt libraries paired with a slow 360° rotation**, so the phrase carries a move.
+  Write "the view looks straight down", and don't say "drone" (every noun gets drawn, by inference). `[community,
+  unverified on Omni]` [atlabs](https://www.atlabs.ai/blog/100-cinematic-camera-prompts-you-can-copy-2026)
+- **Overhead framing reads best as a pattern with the subject small inside it.** `[community]`
+  [morphic](https://morphic.com/resources/shots/birds-eye-view-shot)
+- **Give each ripple its end:** "spreads and fades before reaching the edge". `[community]`
+  [prompt-architects](https://prompt-architects.com/blog/360-vfx-and-effects-prompting)
+- **A light change: say the speed ("abruptly" / "over two seconds") and name the colour at each stage.** Don't write
+  "dimmer". A change with no visible cause reads as a bug. `[community]`
+  [prompt-architects](https://prompt-architects.com/blog/370-lighting-direction-in-ai-video-prompts)
+- **Tiny figures morph more when their outline is unclear.** A sharp start frame reduces it. `[community]`
+  [creatide](https://creatide.ai/blog/why-ai-video-motion-looks-unnatural-and-how-to-fix-it)
+- **Nothing found** on grids swimming from above, heads morphing when seen from above, or glow disappearing from a
+  wet surface.
+
 ## 🔑 On Ingredients with a Character, the shortest prompt won `[observed 2026-09-13, n=1]`
 
 Camping `2f-5`: `@Bob` smoking at a motorway services, Ingredients to Video. **Four rounds in one
@@ -2029,3 +2124,75 @@ Sources: [XenoSpectrum — *"but 4K is upscaled"*](https://xenospectrum.com/en/g
 [Gemini API docs](https://ai.google.dev/gemini-api/docs/omni) `[vendor]` ·
 [Why AI video text changes between frames](https://aivid.video/blog/why-ai-video-text-changes-between-frames-and-how-to-fix-it) `[community]` ·
 [Topaz — AI text enhancer](https://www.topazlabs.com/tools/ai-text-enhancer) `[vendor]`
+
+## 🔑 Default settings, ruled 2026-09-15 — no 360p drafts, 8s written with two beats `[observed + vendor + community]`
+
+**Jack, 2026-09-15:** *"'360p draft first' — these always come out awfully, and we always do 8 secs
+on videos for some reason."* Both habits were checked against the repo and a web pass. **Both are
+retired.**
+
+### Why the 360p draft is retired
+
+- 🔴 **A fresh 720p generation is a new take.** There is no seed, so a 360p draft does not predict the
+  720p clip `[community]` ([Runware](https://runware.ai/docs/models/google-gemini-omni-flash-1-1/guides/resolution-and-duration)).
+  The draft tests *the prompt*, not *the clip*, and at 360p it can't show faces or texture. That is
+  exactly the half our shots depend on.
+- **Flow can upscale a 360p clip to 720p for 0 credits** (Pro and Ultra) `[vendor]`
+  ([Flow help](https://support.google.com/flow/answer/16352836)). ⬜ **Unverified** whether that is an
+  upscaler or a re-render. If it is an upscaler, it enlarges a frame with too few pixels, which fits
+  "awful".
+- **Observed across camping:** Jack reports every 360p draft looked awful and didn't help the decision.
+  Our shots are near-static faces and texture in low light, which is what 360p can't show.
+- **Ruling:** **generate at 720p, x2.** Two real takes cost the same as the draft-then-final pair, and
+  both are usable. 360p stays available for one case: a big-motion physics gamble (crowd, falling object)
+  where the question is purely *does the motion break*.
+
+### Duration: 8s stays the default — amended the same day
+
+**Jack, 2026-09-15, overruling the shorter default:** *"the video being longer is helpful, so that when
+the narration goes over the clip's length, we have more video to put there as filler."* **8s is the
+default.** The extra seconds are coverage for the edit, not wasted runtime.
+
+**What still holds from the research is how to spend them:** Omni pads a single action stretched over a
+long clip, usually with drift `[community]`. So an 8s prompt has to **fill its 8s**:
+- **Beat 1:** the action the shot is for, at the start.
+- **Beat 2:** one small later beat, like a gaze moving or a weight shift, or the world visibly continuing.
+  It gives the back half something to do besides drift.
+- **Check the back half hardest.** That's where morphing and slow motion show up, and it's also where the
+  filler gets cut from.
+
+| Setting | Default | When to change it |
+|---|---|---|
+| Resolution | **720p** | Nothing native goes higher. 1080p/4K are upscales |
+| Outputs | **x2** | x1 for a re-roll of a nearly-right take |
+| Duration | **8s**, written with two beats | 4–6s only for a physics gamble where drift is the main risk |
+| Aspect | 16:9 | 9:16 for Shorts |
+| Delivery | **Upscale to 1080p (free)** only on an accepted take, for delivery | ❌ 4K costs 50 credits, needs Ultra, and can't add detail that was never generated |
+
+**Credits at 720p** `[community]`: 4s = 7 · 6s = 10 · 8s = 12 · 10s = 15, per output. This agrees with the
+UI reading below (8s x2 = 24). ⚠️ It supersedes the "30 credits per 10s" line earlier in this file.
+
+⬜ **Free check worth doing once:** take a 360p clip, run Flow's free 720p upscale, and compare it with a
+native 720p take. That settles whether the upscale is a re-render.
+
+## ✅ Omni 1.1 Flash keeps an ILLUSTRATED start frame illustrated `[observed 2026-09-14, n=1]`
+
+Loading Screen V1 (`docs/shorts/loading-screen/`) ran Frames with a start frame only: a Nano Banana 2
+hand-inked restyle of camping `20.jpeg`, at 16:9, 6s, 720p. The prompt opened with the frame's role and
+the medium lock (*"the picture stays a hand-inked drawing for the whole shot, every line crisp black
+ink and every colour flat"*), then gave the motion at real speed: ink rain, one breath, one blink, a
+hand flex and the foreground coat breathing. It ended with the audio line.
+
+- ✅ **It stayed a drawing for all six seconds.** No drift toward photoreal, the face held, and the
+  motion stayed small.
+- ⚠️ **It smoothed away the plate's paper tooth** and flattened the texture in the sky. If print texture
+  matters, put it back in post as a grain or paper overlay, not in the prompt.
+- ⚠️ A pale vertical streak appeared near his hand late in the clip, most likely a rain stroke it
+  failed to finish.
+- **Not attempted:** Omni doing the page turn itself. Web research (2026-09-14) found **no documented
+  convincing AI page turn in any model**, and warns that very different start and end frames give a
+  morph or a lens switch. The turn was built in ffmpeg instead.
+
+In Flow, the settings popover now shows **Frames | Ingredients** as a pair of toggles under
+**Image | Video**, plus **360p | 720p**, 4/6/8/10s and x1–x4. The credit line read *24 credits* for
+8s x2 at 720p.
