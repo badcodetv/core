@@ -250,3 +250,105 @@ wiped area decodes as transparent (alpha 0), so it plays black on V1.
 - ⬜ **Not undone:** a first Crop-based attempt was added and then removed. Undo history holds both, so
   don't step back further than the `Linear Wipe` entries.
 - ⬜ **Saved** by the session at the end.
+
+## Premiere — `camping jack` · one grade, camera moves, invisible cuts (2026-09-14)
+
+**Project:** `…/Camping Video NEW!/camping jack/camping jack.prproj` · **Sequence:** `0 synced` (1920×1080 @ 24, 254.33s, 59 clips on V1)
+**Built by:** a session over the bridge, for Jack's three picked jobs. **No clip was moved, trimmed, added or removed.**
+
+### 🔙 How to undo it
+
+| Scope | Do |
+| --- | --- |
+| **Everything** | Close the project, then replace `camping jack.prproj` with `backups/camping jack.pre-grade-moves-cuts.2026-09-14.prproj` (the file as it stood before this session touched it) |
+| **One job, this Premiere session** | Edit ▸ Undo. Every write is a `BadCode:` entry: grade = 3 per batch (`Lumetri on…`, `Noise2 on…`, `values on…`) × 5 batches + 2 test entries on `v0:52`; each keyframe and transition is its own entry |
+| **One job, later** | Grade: remove components `Lumetri Color` + `Noise` from each clip. Moves: clear Motion Scale/Position keyframes on the 7 clips below. Cuts: `premiere_remove_transition` at `end` of `v0:24` `v0:44` `v0:47` `v0:57`; clear Opacity keyframes on `v0:24` |
+
+`backups/camping jack.post-grade-moves-cuts.2026-09-14.prproj` is the saved result.
+
+### 1 · One grade for the whole film
+
+**On all 59 clips**, appended last in the chain (after the blink's wipes on `v0:50`/`v0:51`):
+
+| Effect | Params (by index) |
+| --- | --- |
+| `AE.ADBE Lumetri` | **16** Saturation 88 · **20** Contrast −6 · **21** Highlights −12 · **40** Faded Film 10 |
+| `AE.ADBE Noise2` | **0** Amount 3 (%) · **1** false (monochrome) |
+
+**Why these four:** the mismatch between the clips was the *ends* of the histogram, not the middle — AI clips arrive with inconsistent crushed blacks and clipped whites. Faded Film + a touch of negative contrast gives every clip the same soft black floor, Highlights −12 the same roll-off, Saturation 88 pulls the louder generations toward the muted register (`shot-list.md`: *muted, cool, unforgiving*). No temperature shift — it would have flattened the fire's warmth, which is an argument, not decoration.
+
+**Measured** — a mid-clip frame of every clip before and after, 480×270, full table in `camping jack/frames/grade-measure-2026-09-14.txt`:
+
+| Across 59 clips (mean) | Before | After |
+| --- | --- | --- |
+| % of frame below 16 | 14.6 (sd 14.6) | **10.8** (sd 11.9) |
+| % above 235 | 3.4 (sd 5.6) | **2.7** (sd 4.4) |
+| p5 | 15.2 | **20.3** |
+| median | 86.4 | 86.0 — mid-tones untouched |
+
+Worst crush is still the night car interiors and the `11b` torch frame (`v0:30` `v0:31` `v0:38` `v0:52`, 37–45% below 16, were 46–52%) — by design, they are night, and each has its bright anchor. No clip got darker. Read by eye on a contact sheet: night still reads night.
+
+### 2 · Subtle camera moves (Motion, component 1 — keyframes clip-relative, all bezier)
+
+| Clip | Shot | Move | Why |
+| --- | --- | --- | --- |
+| `v0:0` `0.mp4` | `1y` 2008 foreshore | Scale 100 @ 0 → 104 @ 2.625 | the year device |
+| `v0:25` `6.5.mp4` | `4y` 2026 foreshore | **identical** 100 @ 0 → 104 @ 2.625 | canon: *whatever push 1y gets, 4y gets identically* |
+| `v0:27` `7.mp4` | Tarquin at the Shard window | hold to 1.0, 100 → 106 @ 7.958 | the man at the top; attention narrows |
+| `v0:37` `15.3.mp4` | Tarquin in session | hold to 1.0, 100 → 105 @ 5.958 | the realisation beat |
+| `v0:45` `22.mp4` | yurt interior | hold to 1.0, 100 → 105 @ 7.958 | holds through the dissolve in, then drifts |
+| `v0:56` `33.mp4` | `12c` newspaper burning | hold to 0.5, 100 → 107 @ 6.667 | arrives on the headline |
+| `v0:57` `35.mp4` | end: storm, silhouettes, fire | Scale 112 → 100 and Position y 0.45 → 0.50, both 0.417 → 4.0 | **the owed `12d` tilt-up**, from the fire to the sky, landing exactly on `52.mp4`'s framing before the dissolve |
+
+⚠️ **The tilt is a compromise.** `12d` was designed on a 9:16 plate with real vertical travel; the cut now ends on the 16:9 `35.mp4`, which has none, so the move is a 12% overscan tilt that pulls out as it rises. Offset stays inside the overscan margin the whole way (0.05 vs 0.06) — **checked: no uncovered edge on any exported frame.**
+
+**Not moved, on purpose:** the tent POV pair (`v0:34` `14.mp4` / `v0:52` `30.mp4`, the locked 6c→10a rhyme), the blink clips (`v0:50`/`v0:51` — Motion would scale the lids with the picture), and everything short. No handheld drift — `motion-and-cutting.md` §1 (*handheld is not truth*), and seven moves is already the budget.
+
+### 3 · Invisible cuts
+
+All `ADBE Film Dissolve` (gamma-linear, so a dark frame doesn't dip muddy mid-blend):
+
+| Edge | Duration · alignment | Cut | Why |
+| --- | --- | --- | --- |
+| end of `v0:24` `5.5.mp4` | 1.0s · 0 (all after the cut) | crash aftermath → `4y` 2026 foreshore @ 69.92 | **the eighteen-year jump** — the wrecked car ghosts into 2026 |
+| end of `v0:44` `51.mp4` | 1.0s · 0 | walk to the yurt → yurt interior @ 187.58 | outside becomes inside |
+| end of `v0:47` `24.mp4` | 1.0s · 0 | mug POV → the kaleidoscope @ 204.58 | the trip lands |
+| end of `v0:57` `35.mp4` | 1.5s · 0.5 (centred) | storm → BadCode logo @ 249.79 | the logo resolves out of the storm |
+
+Alignment 0 is used where the incoming clip starts at in-point 0 (no head handles) — every outgoing clip has ≥1.6s of tail. **All two-sided; verified by frame.**
+
+**The crash (3a):** the existing 0.75s black gap at 65.125–65.875 stays exactly as it was, **entered on a hard cut** (a crash doesn't dissolve). New: `v0:24` fades **up out of the black** — Opacity (component 0, param 0) 0 @ 0 → 100 @ 0.708, bezier — so the aftermath surfaces rather than snapping on. Measured: alpha 87/255 at 66.2s.
+
+### Looked at
+
+Frames in `camping jack/frames/look-check/` at 65.0, 65.5, 66.2, 67.0 (crash) · 187.4, 188.08, 204.4, 205.08, 249.8 (dissolves) · 245.5, 247.4, 249.2 (tilt) · 78.7/85.5, 238.9/244.9 (pushes) · 1.3/2.6, 70.0/72.5 (1y/4y) · 216.9, 217.3, 218.15 (blink — alpha identical to the pre-grade frames, so the grain didn't break the lids).
+
+### Needs a human
+
+- ⬜ **Watch it at speed.** Every value is a first pass judged on stills. Moves in particular only read in motion.
+- ⬜ **The crash beat is 0.75s of black.** Kept, not lengthened — lengthening means rippling every track, and the narration is synced. If it should be longer, that's a hand edit.
+- ⬜ **Delivery QC still can't run** — no ffmpeg in WSL. `scripts/delivery-qc.sh` before upload.
+- ⬜ **No audio crossfades** at the four dissolves (no API). A1's clip audio butt-cuts under them.
+
+### 1b · Grade pushed stronger — same day, at Jack's request
+
+Jack watched the light pass and didn't notice it. **Same two effects on all 59 clips, stronger values** (read back on every clip):
+
+| Effect | Light pass (above) | **Now** |
+| --- | --- | --- |
+| `AE.ADBE Lumetri` 16 Saturation | 88 | **75** |
+| 20 Contrast | −6 | **−10** |
+| 21 Highlights | −12 | **−22** |
+| 40 Faded Film | 10 | **20** |
+| 110 Vignette Amount | 0 | **−1.2** |
+| `AE.ADBE Noise2` 0 Amount | 3 | **5** |
+
+| Across 59 clips (mean) | Original | Light | **Stronger** |
+| --- | --- | --- | --- |
+| % below 16 | 14.6 | 10.8 | **9.1** |
+| % above 235 | 3.4 | 2.7 | **1.2** |
+| median | 86.4 | 86.0 | **79.1** — the vignette and highlight pull |
+
+**No clip is more crushed than its original.** The blink's alpha is unchanged. Table: `camping jack/frames/grade-measure-stronger-2026-09-14.txt`.
+
+**Undo just this step:** put the "Light pass" column back, or restore `backups/camping jack.post-grade-moves-cuts.2026-09-14.prproj`. The saved result is `backups/camping jack.post-stronger-grade.2026-09-14.prproj`.

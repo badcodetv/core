@@ -44,4 +44,4 @@ This medium is produced by the **`music-video-short`** skill
 
 | Short | Idea | Status |
 |---|---|---|
-| _(none yet)_ | | |
+| [`loading-screen`](./loading-screen/README.md) | A late-2000s game loading-screen ink page flips over to reveal the real footage underneath. Pilot: camping, Tarquin in the car park | V1 built 2026-09-14, awaiting review |

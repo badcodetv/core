@@ -1502,7 +1502,9 @@ export class FlowClient {
     for (const ref of refPaths) {
       const base = await this.ingredientChips().count()
       await this.ingredientsButton().click()
-      const upload = overlay.locator('button').filter({ hasText: /Upload media/ }).first()
+      // 2026-09-14: the picker's upload control became an icon button — its visible text is just
+      // the `upload` ligature and "Upload media" lives only in aria-label — so match either.
+      const upload = overlay.locator('button[aria-label="Upload media"], button:has-text("Upload media")').first()
       await upload.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
       const chooser = this.page.waitForEvent('filechooser', { timeout: 15_000 })
       await upload.click()

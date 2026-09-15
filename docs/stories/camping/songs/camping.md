@@ -119,6 +119,135 @@ gets generated. Note what the rewrite added that the stomp box never said: `powe
 Dark UK drum and bass: detuned wavetable lead, low palm-muted distorted power-chord guitar and heavy guitar wall, dual male spoken-word voices—gravelly half-shout and clean plummy baritone hardening into a shout—with dry intimate acapella breaks, dark sub-heavy compression, stomping floor toms, handclaps, chopped breakbeat, growling Reese sub, screaming detuned lead, reverb-soaked raw distortion, steady 174 BPM amen-roll drive.
 ```
 
+## v6.5 Round r11 — `fast` (2026-09-15)
+
+**Brief, Jack 2026-09-15, on [598c2a4d](https://suno.com/song/598c2a4d-df2a-4608-949c-eb6024806df5)
+(`camping-r10-ukg-v6-w40`):** *"the song needs to be as fast as this part — 'you are intent on living
+in a tent / it's a lack of work ethic, it's pathetic' — so he needs rap faster for the whole song, but
+have a talking bit like at the beginning of a rap song, at the beginning. I also like the style of the
+voice and the Hans Zimmer orchestral part of the song so keep that layer as well as the drum and bass
+style which is the part of the beat he should rap to."*
+
+**The base, read off Suno's own record (2026-09-15)** — r10 is not logged anywhere else in the repo:
+v6 (`chirp-hawk`) · Style Influence **70** · Weirdness **40** · Variety **Off** (`aug_creativity 0`) ·
+204 s · created 2026-09-13 18:32 UTC. Its Style box asked for `spoken not rapped`, `conversationally`,
+`observational and tired`, `cheap synth strings` — the first four are why it drawls; the last is the
+"Hans Zimmer" layer Jack hears, which the box never named as an orchestra.
+⬜ **Not machine-listened** — `listen_describe` has no `GEMINI_API_KEY` in this environment, so the
+diagnosis is Jack's ear plus the record.
+
+**This is a prompt round — all three boxes move together, boldly:**
+
+| Box | Change from r10 | Why |
+|---|---|---|
+| Style | `storytelling … spoken not rapped, conversationally, tired` → **rapped fast and tight, locked to the grid, dense rapid-fire bars, no gaps** | the pace of the "tent" lines, for the whole song |
+| Style | `cheap synth strings` → a **real dark cinematic film-score orchestra** — low driving ostinato strings, brass swells, deep braams, big low drums; sparse under the bars, full between them, plus the unity sentence | keep the Zimmer layer, named properly so it can't collapse into a synth pad (`suno-tag-mechanics.md` "The unity sentence") |
+| Style | **added** the spoken intro over the orchestra alone | the talking bit before a rap record |
+| Style | voice casting kept: flat everyday English storyteller / posh older BBC newsreader, UK garage + grime pool | Jack likes the voices; the UK pool word is what keeps them British |
+| Exclude | r10's list **plus** `spoken word, slow flow, laid-back delivery, drawl, storytelling, boom bap, mumble rap, singing, sung chorus, melodic vocal, crooning, synth strings, synth pad, string pad` | ban the slow delivery pools and the cheap-strings reading; `boom bap` is the slow, American rap pool |
+| Lyrics | **new spoken intro, 5 lines** — 🔴 *new words, proposed, need Jack/Kai's OK* | there were no words for a talking intro |
+| Lyrics | every sung word of §4 unchanged; **line-end and incidental commas stripped** (internal rhyme pivots like `I get, that` / `it's a lack of work ethic, it's pathetic` kept) | a comma is a beat of inserted space; fewer stress breaks per line = faster (`lyric-craft.md` "Punctuation is the brake") |
+| Lyrics | the two **`[almost whispered | acapella]` breaks removed** — those lines are now rapped straight through | each break stops the song dead; Jack asked for pace the whole way. Restore them as a single variable if they're missed |
+| Lyrics | bridge `the beat stripped back to a quiet rolling pulse` → the beat keeps rolling, the orchestra swells, still rapped fast | the old cue invited a slowdown |
+
+#### r11 `fast` atom
+
+Style:
+
+```
+UK grime and garage MCs over dark 174 BPM drum and bass, fused with a real dark cinematic film-score orchestra. It opens with a spoken intro: the first man talking casually over the orchestra alone, no drums, like the talking intro on a rap record. Then the beat drops and the rest is rapped fast and tight, locked to the drum and bass grid, dense rapid-fire bars with no gaps, all the way through. Verse one: an English storyteller, a flat everyday English accent. Verse two: a posh older Englishman, a clipped cold BBC newsreader voice, rapping just as fast. Then the two men trade bars. Skippy two-step shuffles and dark grime bass stabs folded into rolling breakbeats and a warm rolling sub. The orchestra: low driving ostinato strings, huge brass swells, deep braams and big low drums, sparse under the bars and full weight between verses, so the orchestra and the break are one piece of music, not a remix. Dark, tense, relentless, never jump up.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, blues, gospel, soul singer, US rap, boom bap, mumble rap, trap, teenage voice, boyish voice, falsetto, autotune, singing, sung chorus, melodic vocal, crooning, spoken word, storytelling, slow flow, laid-back delivery, drawl, female vocal, choir, crowd noise, applause, jump up, wobble bass, neurofunk, dubstep, EDM drops, synth strings, synth pad, string pad, glossy production, happy, uplifting, major key, slow tempo, half time, tempo change, post-punk, madchester, britpop, folk, pub rock, piano
+```
+
+Lyrics:
+
+```lyrics
+[Intro | spoken, not rapped | the first man talking casually over the orchestra alone, no drums, like the talking intro on a rap record]
+Yeah... this one's about camping.
+Not the fun kind. No marshmallows.
+The kind where the tent's your address
+and the bloke in the big black motor thinks you picked it.
+Right. Let it drop.
+[Verse 1 | the beat drops in | the first man, rapped fast and tight on the grid, rapid-fire, no gaps]
+Once again and you catching my eye
+and you looking to the side in shame but why
+now let me explain how I'm just poor
+you keep on walking through that Wait trose door
+presenting yourself with your shiny teeth
+fucking sense of entitlement and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change
+let's see what we can arrange
+now I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Verse 2 | straight in, no break | the second man, a BBC newsreader voice, clipped and cold, rapped just as fast]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic
+getting parra lettic it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard then you could have plenty fenty
+all you now seem to do is resent me
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Bridge | straight in, no break | the two men trade bars, still rapped fast | the beat keeps rolling, the orchestra swells]
+[the first man]
+Oh shit here we both are living in a car
+park rained on in the fucking dark
+[the second man]
+went down the wrong track then I got the sack
+then I drank broke my back now I'm in the last part
+[both men together]
+the AI does the fast part now the real question is
+will it allow because it's in charge now
+[the second man]
+you see as it turns out there is very little clout
+in having the manager or any of the c-suite about
+[the first man]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the second man]
+back to that time when we very first met
+I do regret that I judged you, I was wrong
+[the first man]
+yet I don't begrudge you
+it's us and them now
+[the second man]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
+```
+
+#### r11 settings
+
+Model **v6** · Style Influence **70** · Variety **Off** (so Suno cannot rewrite the Style box) · Max Mode
+**off** · Vocal Gender **Male** · Personalize **off** · no Voice · Duration **180 s** (r10 ran 204 s on
+slower delivery; the same words rapped faster need less room, and a shorter target pushes the pace) ·
+workspace **camping-Jack** · the house pair at Weirdness **30 · 60** (r10 was 40). Titles
+`camping-r11-fast-v6-w30` / `-w60`.
+
+| Round | Variable | Cost | Verdict |
+|---|---|---|---|
+| r10 `ukg` | unlogged — read off Suno's record 2026-09-15 | — | Jack likes the voices, the orchestral layer and the "tent" lines' pace |
+| r11 `fast` | prompt round — all three boxes | ⬜ **loaded, not generated** — Create waits on Kai/Jack | ⬜ |
+
 ## v6.4 Round r3 — `british` (2026-09-13)
 
 **Brief, Kai after r2:** *"Nice one… generate a couple more with less weirdness… up and down with the

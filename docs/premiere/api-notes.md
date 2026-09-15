@@ -1615,3 +1615,35 @@ black. That case is still unisolated.
 a transparent region that resolves to white is not a subtle artefact — it is a full-frame flash.
 **Export a frame and look whenever you introduce transparency**, rather than trusting that "nothing
 beneath the bottom track" means black.
+
+---
+
+## Whole-film grade in 15 transactions, and five facts, 2026-09-14 (`camping jack`)
+
+Measured while putting Lumetri + grain on all 59 clips of `0 synced`. Recipe and values: `docs/stories/camping/assembly.md` §*one grade, camera moves, invisible cuts*.
+
+### ✅ Batched effect application through `premiere_eval` WORKS — one append per clip, many clips per transaction
+
+The 2026-09-05 note above (`createComponent()` throws *Illegal Parameter type*) did not reproduce. **`await ppro.VideoFilterFactory.createComponent('AE.ADBE Lumetri')` returned a usable token**, and a single `withTransaction` holding **12 `createAppendComponentAction`s on 12 different clips** committed cleanly. Three commits per batch — append effect A to all, append effect B to all, then every param set for every clip — so 59 clips was 5 evals and 15 undo entries, not ~240 typed calls. ⚠️ Cause of the earlier throw still unknown (a missing `await` is the likeliest guess, unverified).
+
+### 🔴 A commit invalidates the SEQUENCE handle too, and the error lies about why
+
+The "script object is no longer valid" rule above extends up to the sequence. Resolving a clip against a `Sequence` fetched **before** a commit threw:
+
+> *No clip at v0:0 — that track has 59 clips.*
+
+v0:0 plainly existed. **Re-fetch `helpers.activeSequence(await helpers.activeProject())` after every `withTransaction`**, not just the clip and chain. The appends in that batch had committed; only the step after failed.
+
+### ⚠️ `getStartValue()` in eval is doubly wrapped
+
+`(await param.getStartValue()).value` is an object; the number is **`.value.value`**. Stringify it and you get `[object Object]`, which reads like a failed write.
+
+### ✅ `ADBE Film Dissolve` applies through `premiere_add_transition`, and `alignment: 0` means entirely after the cut
+
+Verified by frame: `alignment: 0` on the **outgoing** clip's `end` put the whole 1s dissolve after the cut, using the outgoing clip's tail handles — the right choice when the incoming clip starts at in-point 0. `0.5` centres it. Film Dissolve blends in linear light, so a dark shot doesn't dip muddy mid-blend.
+
+### 🔴 A fade shows up ONLY in the PNG's alpha — a contact sheet that ignores partial alpha will say the fade didn't work
+
+A frame 0.33s into an Opacity 0→100 fade exported with **full-brightness RGB and alpha 87**. On V1 over nothing that plays as a dark frame; a viewer or a stats script that drops alpha shows it at full brightness. **Measure alpha before concluding an opacity keyframe is broken** — same root as the white-eyelid note above.
+
+⚠️ **Addendum, same day:** one eval running three param-only transactions of 20 clips each (~120 actions apiece) committed the first two, then failed while building the third, with the same misleading *"No clip at v0:57"*. **Nothing in that batch was half-applied.** Re-running the rest as two separate evals of 10 and 9 clips worked. So keep it to **one write transaction per eval** when the batches are large.

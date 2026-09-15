@@ -278,7 +278,7 @@ Full method, including what ffmpeg can do that Premiere cannot:
 
 ---
 
-## 4. The twenty-one laws
+## 4. The twenty-two laws
 
 These are why the client looks the way it does. Every one was paid for live. If you are
 changing `@badcode/flow-mcp`, they are the spec; if you are just calling tools, laws 1–5
@@ -379,6 +379,14 @@ explain most of what you will see.
     a project holding exactly one uploaded still cannot mis-pick. Then verify anyway — md5 every
     take against the ones you already have, and check the clip's **first frame against its plate**.
     File size, a healthy mediaId and a playable mp4 all prove nothing (laws 9–11).
+
+22. 🔴 **An `/mcp` reconnect orphans the old flow server, and it keeps the logged-in channel.**
+    Measured 2026-09-14: after a code fix and a reconnect, the old process still held channel 1's
+    lock (the signed-in browser). The new server resolved to channel 2, an empty profile, and
+    **caches that choice for its whole life**, so killing the orphan afterwards does not help.
+    **Before asking for a reconnect:** kill this session's own old server (trace it to the same
+    `claude` pid, as in `premiere-automation` §1d) and `browser-channel.sh release` its channel,
+    *then* reconnect. The new process then claims the running, signed-in browser.
 
 ---
 

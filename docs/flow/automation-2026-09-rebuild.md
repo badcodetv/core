@@ -73,3 +73,35 @@ all run live 2026-09-13 on free tiers.
 
 The MCP server runs the checkout's source but only reloads on restart — run `/mcp` and reconnect
 `flow` before the new code is what the tools call.
+
+## 2026-09-14 — two more drifts, found on the first reference edit of the day
+
+11. **A cookie-consent bar (`#glue-cookie-notification-bar-1`: Learn more / Agree / No thanks)
+    covers the compose bar on a freshly signed-in profile** and intercepts every click, so
+    `Settings trigger` times out at 30s while reporting the button "visible, enabled and stable".
+    Dismiss it once per profile; it does not come back.
+12. **The ingredient picker's upload control is now an icon button.** Its visible text is only the
+    `upload` ligature; "Upload media" is in `aria-label`. The old `filter({ hasText: /Upload media/ })`
+    waited the full 90s. `attachReferencesRebuilt` now matches
+    `button[aria-label="Upload media"], button:has-text("Upload media")`. The picker also gained a
+    category filter (`All ▾`) and a Search box.
+13. **A failed reference edit can leave the ingredient picker OPEN**, and the next call's
+    `Add ingredients` click is then intercepted by `flow-add-menu-asset-list` for 30s. Escape ×3
+    clears it. ⬜ Owed: `attachReferencesRebuilt` should press Escape when `aria-expanded="true"`.
+14. **Harvest can fail after a successful generation.** On `flow_edit_image`, the tile's
+    `More options` button stayed hidden because the hover did not register (law 7, WSLg). The
+    images were in the project the whole time. **Recovery that worked:** native `el.click()` on
+    `flow-image-tile button[aria-label="More options"]`, then the menu items `Download` and
+    `1K Original size`. This is the same menu, with `2K Upscaled` and `4K Upscaled` beneath them.
+    ⬜ Owed: replace the hover with an in-page click in the harvest path.
+15. **`ensureVideoConfigRebuilt` races the popover re-render.** On a project in Image mode, clicking
+    `Video` redraws the popover, and the immediate `Frames` lookup counted 0 and threw
+    `VIDEO_OPTION_UNAVAILABLE: Frames on Omni 1.1 Flash`. Nothing was spent. A retry worked, because
+    the project was now already in Video mode. ⬜ Owed: wait for the Frames radio after picking Video.
+16. **Video harvest has the same hover bug as stills, and its Download is different.** A video tile's
+    `Download` opens a size list (`270p Animated GIF · 720p Original size · 1080p Upscaled · 4K
+    Upscaled · 50 credits`) in the same menu. Arm `waitForEvent('download')` **before** clicking
+    `Download`, then click `720p Original size`.
+17. **The stale Omni end-frame guard.** `video-mode.ts` still refuses an `endImage` on the 10s-capable
+    model ("Omni rejects a last frame", true of 1.0). Omni 1.1 has end frames (desktop Flow). ⬜ Owed:
+    remove the guard, and batch it with 13–16 into ONE code change and ONE reconnect (skill law 22).
