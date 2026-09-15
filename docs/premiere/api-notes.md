@@ -528,6 +528,23 @@ frame fell before the first keyframe and held its value.
 **Subtract the clip's `start` before keyframing.** Sequence 80.8 on that clip is clip-relative
 25.08.
 
+🔴 **Correction, 2026-09-13: it is SOURCE time, not clip-relative — and on a still that is 3600s
+out.** "Clip-relative" was only right because every video clip tested had `inPoint: 0`. A JPEG
+inserted on the timeline comes back with **`inPoint: 3600`** (Premiere's still-image media starts
+at one hour), and a Scale pair keyframed at `1.5` / `5.5` on a 5.5s still rendered **byte-identical
+frames** at both ends — the keyframes sat an hour before the clip's media. Keyframed at
+**`3601.5` / `3605.5`** it moved. The rule that covers both: **keyframe time = `inPoint` +
+(sequence time − `start`)**. Read `inPoint` off the clip before keyframing, every time.
+🔴 **`trim_clip` with `inPoint` + `start` together does not slip the clip (2026-09-13).** Asked for
+`inPoint 1.5, outPoint 5, start 23.625, end 27.125` on an 8s clip at 23.625: it came back at
+**25.125 → 28.625** (the head was trimmed *and the clip moved later*), and a follow-up `start: 23.625`
+**extended the head back to `inPoint 0`** instead of moving it. The state also reported
+`outPoint: -1` / `0.5` for a clip that was visibly fine. So: to use a later slice of a clip, there is
+no reliable one-call slip — place it, trim only `end`, and choose the in-point by *where the clip
+starts*, or accept source 0. Verify the result by exporting a frame, not by reading `outPoint`.
+Also: a still at Scale 100 renders at **native pixel size** (a 1376×768 plate sits inset in black
+in a 1080p sequence), and `trim_clip({ end })` **can extend** a still past its 5s default.
+
 🔴 **The failure is silent and reads as "keyframes do not work."** Nothing errors, the state file
 looks correct, and `timeVarying` is true. The only test that catches it is exporting two frames
 inside the intended move and diffing them — identical frames mean the keyframes are outside the

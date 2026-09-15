@@ -618,3 +618,254 @@ answers neither.
 - [ ] Rungs 3 and 4 to 1920×1080 stills with 1.07× eased pushes — **0 credits**
 - [ ] Assemble the six rungs on `gpom-s01`; re-space narration cut 2's `t` values
 - [ ] Retire `s01-tower-ext2-b.jpg` from `storyboard/img/`; commit the three new goldens
+
+## Premiere — ladder imported, 2026-09-13
+
+Bin **`02-s01-ladder`** in `gpom-story.prproj`: the three goldens (`s01-aerial-30k-hk-a`,
+`s01-tower-v4-hk-c`, `s01-band-close-d`), both rung-1 Veo takes (`s01-r1-aerial-{a,b}`), and the
+runners-up (`aerial-30k-hk-d`, `tower-v4-hk-a`, `band-close-{a,c}`). **Not yet on the timeline** —
+`gpom-s01` still carries the old four beats at 55.7→83.5s.
+
+⚠️ Sizes: stills are **1376×768** and the Veo takes **1280×720** in a 1920×1080 sequence, so on the
+timeline they need Scale ≈140 / 150 just to fill frame, before any camera move.
+
+## Premiere — the ladder animatic, 2026-09-13
+
+**Kai, 2026-09-13:** loves the bare office; wants the new, more dramatic city plates leading up to
+it; *"just with images for a minute"* — stills first, cut video once the shape works.
+
+**Sequence:** `gpom-s02-test` in `gpom-story.prproj` — 1920×1080 @ 24, 43.46s. `gpom-s01` untouched.
+
+| Ref | Clip | Timeline | Camera (Motion, component 1) |
+| --- | --- | --- | --- |
+| `v0:0` | `EARTH-b7-orbit2` (scene 1's tail, for the cut-in) | 0 → 7.625 | — |
+| `v0:1` | `s01-aerial-30k-hk-a.jpg` | 7.625 → 13.125 | Scale 141 @ src 3601.5 → 152 @ 3605.5, bezier (1.5s hold, then push) |
+| `v0:2` | `HK-b1-descent` | 13.125 → 21.125 | — (gpom-s01's Lumetri Blacks −9 **not** copied) |
+| `v0:3` | `s01-tower-v4-hk-c.jpg` | 21.125 → 24.125 | Anchor = Position (0.48, 0.70) on the band; Scale 141 @ 3600.25 → 150 @ 3603, bezier |
+| `v0:4` | `s01-band-close-d.jpg` | 24.125 → 27.125 | Scale 142 @ 3600 → 152 @ 3603, bezier |
+| `v0:5` | `HK-b3-pushin` | 27.125 → 35.125 | — |
+| `v0:6` | `HK-b4-terminal` | 35.125 → 43.458 | Scale 100 → 318 and Anchor (0.5,0.5) → (0.5,0.5162), src 5.60 → 8.32, bezier — re-applied from `gpom-s01` |
+
+**Transitions:** `AE.ADBE Cross Dissolve New`, `at: "end"` of `v0:1`, 0.75s. Rendered two-sided
+(frame at 13.4s shows both plates). All other joins are hard cuts.
+
+**Looked at:** frames at 8.2, 13.0, 13.1, 13.4, 21.2, 24.0, 24.2, 27.0, 27.2, 43.0 — every push
+moves, every still fills frame, the terminal zoom lands inside the screen.
+
+**Needs a human / still owed**
+- Kai watches it in real time and rules on durations, the dissolve, and whether the stills feel dead
+- Scene 2 in this sequence starts at 7.625s, so *MASTER*/Enter (was 25.46s into the scene) is now ≈33.5s into the scene ≈ **41.1s** on this sequence. No audio is placed yet
+- Once ruled: swap the aerial still for `s01-r1-aerial-b` (upscaled), then move the cut into `gpom-s01`
+
+## Rungs 3 and 4 animated — 2026-09-13
+
+**Kai, 2026-09-13, on the animatic:** *"cutting this on different scenes… works really well"* — turn
+the stills into real video. Rung 1 already has its video (`s01-r1-aerial-b`, upscaled to
+`s01-r1-aerial-b-1080.mp4`, lanczos, 24fps, audio stripped). Rungs 3 and 4 get Veo, camera locked,
+Premiere keeps doing the push.
+
+Veo 3.1 Fast (matches `HK-b1-descent` and rung 1), 16:9, 8s, 2 candidates, start image only, one
+fresh Flow project per shot (law 19). Moving things named first and hard, lock last — the order
+that worked on rung 1. 🔴 **The green must not brighten** — Veo animated a screen powering up on
+this scene's first shoot, so the level is pinned in words.
+
+### Rung 3 · `s01-r3-tower-{a,b}.mp4` off `s01-tower-v4-hk-c.jpg`
+
+```prompt
+Far below, small vehicle headlights and tail lights crawl slowly and steadily along the elevated road and the streets at the bottom of the frame. The small distant city lights twinkle faintly and continuously. A thin veil of night haze drifts very slowly across the lower part of the frame. The single dim greenish lit floor on the tower stays at exactly the same dim level for the whole shot, with only a very faint, slightly uneven flicker, like old fluorescent tubes. The dark glass and every unlit building stay completely still and unchanged. Nothing else in the frame changes. The camera does not move at all — no pan, no tilt, no zoom, no roll, no drift; it is locked off rigidly for the entire shot, as if bolted down.
+```
+
+### Result — the gentle pass (superseded in intent the same hour)
+
+Generated on Veo 3.1 - Fast (the model string must now carry the dash: `"Veo 3.1 Fast"` throws
+`VIDEO_OPTION_UNAVAILABLE: Frames on Veo 3.1 - Fast`). Flow projects `5eaf1814-…` (tower) and
+`361923ef-…` (band). Picks: **tower `-a`** — still for its first ~4s, then tilts ~60px; only 0–3s is
+used. Take `-b` reframes wider and invents a highway. **Band `-a`** — no vertical drift, level holds.
+Laid on **V2** of `gpom-s02-test` over the stills (V1 kept as fallback), Veo audio removed,
+pushes re-keyed for 720p (tower 150→160, band 151→161; aerial video 100→108 + opacity fade
+src 5.125→5.5).
+
+🔴 **Defect seen at 13.0s:** the aerial fade shows a double image, because the video (2% pull-back
+and pan baked in) no longer lines up with the still under it inside the dissolve. Fix = drop the
+V1 aerial still and dissolve the video straight into the descent.
+
+🔴 **Kai, 2026-09-13, on this pass:** *"when we do videos here we should make them dramatic… at the
+moment we are trying to get some vague small animation going."* The locked-camera, twinkle-and-haze
+brief was the wrong brief for these three rungs.
+
+## The dramatic pass — Kai's picks, 2026-09-13
+
+Asked per shot; Kai took all three recommendations. Veo 3.1 - Fast, 16:9, 8s, 2 takes, one fresh
+Flow project each.
+
+| Rung | Pick | Who moves the camera | Why that split |
+| --- | --- | --- | --- |
+| 1 aerial | **Dive through cloud** | Veo | No glass grid in frame, and cloud crossing the lens masks what Veo re-invents |
+| 3 tower | **Fog & lightning, locked** | Premiere (bigger, faster push) | A curtain wall in a moving Veo camera is the documented regeneration trigger |
+| 4 band | **Veo push into the glass** | Veo | A straight push from one start image held on this scene before (`HK-b3-pushin`); it throws us into the office cut |
+
+### Rung 1 dramatic · `s01-r1-dive-{a,b}.mp4` off `s01-aerial-30k-hk-a.jpg`
+
+```prompt
+The camera dives fast, straight down toward the city, accelerating the whole way. Within the first seconds it plunges through the thin layer of cloud: wisps of cloud rush up past the lens and stream off the edges of the frame, lit from beneath by the city. Below them the lit city of Hong Kong rushes up toward the camera, the black harbour growing wider in the centre of the frame, the lattice of bright streets spreading outward and the clusters of light swelling as they get closer. The camera keeps pointing straight down the entire time — no horizon and no sky ever come into view. The city stays lit, orderly and fully working throughout, every light on. Powerful, vertiginous, relentless downward motion.
+```
+
+### Rung 3 dramatic · `s01-r3-storm-{a,b}.mp4` off `s01-tower-v4-hk-c.jpg`
+
+```prompt
+Thick banks of low night fog tear fast between the towers from right to left, streaming across the frame in front of and behind the buildings, lit amber from the streets below. Far below, the traffic on the elevated road and the streets streams as fast continuous rivers of white and red light, like a time-lapse. Once, midway through the shot, a single bright flash of lightning from off-frame lights up the whole dark glass facade of the tower for an instant, then it drops back to darkness. The single dim greenish lit floor stays lit and the same colour the whole time, the only steady light on the tower. The towers themselves stay perfectly rigid and unchanged. The camera does not move at all — it is locked off rigidly for the entire shot, as if bolted down.
+```
+
+### Rung 4 dramatic · `s01-r4-push-{a,b}.mp4` off `s01-band-close-d.jpg`
+
+```prompt
+The camera pushes forward fast and steadily, straight toward the single lit floor, closing the distance the whole way through the shot, until the band of weak cold greenish light and the glass in front of it fill the entire frame edge to edge. The vertical mullions and horizontal floor bands stay perfectly straight and rigid as they grow larger and slide out past the edges of the frame. The dark unlit floors above and below slide away out of frame. Through the glass the interior stays an unreadable greenish glow — no furniture, no people, no shapes resolve. The light stays the same dim, cold, faintly green colour throughout. Deliberate, driving, inevitable forward motion.
+```
+
+### Dramatic pass — results and the v2 animatic
+
+Flow projects: dive `4912de2c-…`, storm `4e930667-…`, push `d063a38b-…`. 12 clips across the day's
+two passes, Veo 3.1 - Fast.
+
+| Take | Verdict |
+| --- | --- |
+| 🟢 `s01-r1-dive-a` | Clean plunge: plate → cloud rushing past the lens (~2–4s) → rooftops and a lit spire straight down by 8s. No horizon. Used whole |
+| `s01-r1-dive-b` | More violent — heavy radial speed blur from ~5s. Kept as the alternative |
+| 🟢 `s01-r3-storm-b` | Fog tears in; **one big flash lights the whole facade at 3.08s** (frame mean 106 vs median 37.5). Green band holds. Camera creeps but the fog hides it |
+| `s01-r3-storm-a` | Several thin bolts drawn *in front of* the glass — reads as an effect |
+| 🟢 `s01-r4-push-b` | Drives in until the green glow fills frame at ~4.0s, then **regenerates and pulls back** — cut at 4.2s |
+| `s01-r4-push-a` | Clean push to ~3.3s, then the facade re-invents itself mid-move (the curtain-wall trigger, as predicted) |
+
+**Sequence `gpom-s02-test-v2`** (1920×1080 @ 24, 47.67s; `gpom-s02-test` kept as the gentle version):
+
+| Clip | Timeline | Camera |
+| --- | --- | --- |
+| `EARTH-b7-orbit2` | 0 → 7.625 | — |
+| `s01-r1-dive-a` | 7.625 → 15.625 | Scale 150 (720p fill); the dive is Veo's. Hard cut out |
+| `HK-b1-descent` | 15.625 → 23.625 | — |
+| `s01-r3-storm-b` (src 0 → 3.5) | 23.625 → 27.125 | Anchor = Position (0.48, 0.66); Scale 150 → 168 bezier. **Cut 0.42s after the flash** |
+| `s01-r4-push-b` (src 0 → 4.2) | 27.125 → 31.325 | Scale 150; the push is Veo's |
+| `HK-b3-pushin` | 31.333 → 39.333 | — |
+| `HK-b4-terminal` | 39.333 → 47.667 | Scale 100 → 318, Anchor → (0.5, 0.5162), src 5.60 → 8.32 |
+
+Veo audio removed from all three. **Looked at:** 9.0, 15.5, 23.7, 26.71 (flash on frame), 27.2, 31.25
+(glow fills), 31.375 (office), 47.5 (inside the screen).
+
+**Still owed:** Kai watches both sequences in real time · 🟡 push-b's last second shows **ceiling
+panels** through the glow — the "interior stays unreadable" test is borderline; if it spends the
+office reveal early, end at ~3.8s · the glow grades brighter and whiter than *"weak, dim"* · scene 2
+is now **~40s** against the old 27.8s — the narration's `t` values need re-spacing ·
+*MASTER*/Enter now lands ≈ **45.3s** on this sequence (5.96s into `HK-b4-terminal`).
+
+### Kai's notes on v2 — 2026-09-13
+
+*"On the descent video… a cloud effect. I don't think we needed that. It's a bit cheesy… On the
+zooming into the building… lightning effects and some cloud. Again, that's not really worked… The
+video itself is good."* Keep the moves, lose the weather. Both are baked into the Veo pixels, so:
+
+- **Tower** → swap `s01-r3-storm-b` for the clean `s01-r3-tower-a` (src 0–3.5, still before its
+  ~4s tilt) and keep v2's zoom (Scale 150 → 168). No credits.
+- **Dive** → re-roll, clear air:
+
+### Rung 1 dive, clear · `s01-r1-dive-clear-{a,b}.mp4` off `s01-aerial-30k-hk-a.jpg`
+
+```prompt
+The camera dives fast, straight down toward the city, accelerating the whole way. The air is perfectly clear: the few faint wisps of cloud far below stay small and sink away beneath the camera, and nothing ever passes in front of the lens. The lit city of Hong Kong rushes up toward the camera, the black harbour growing wider in the centre of the frame, the lattice of bright streets spreading outward and the clusters of light swelling into individual towers as they get closer. The camera keeps pointing straight down the entire time — no horizon and no sky ever come into view. The city stays lit, orderly and fully working throughout, every light on. No fog, no mist, no cloud, no lens effects, no light streaks, no motion-blur streaks. Powerful, vertiginous, relentless downward motion, crisp and clear.
+```
+
+**Result.** Veo ignored every negative: both clear takes swapped the cloud for a **radial
+hyperspace speed-streak** effect (take a ~0.7–3.3s, take b nearly throughout) — the same cheese
+in a different costume. Lesson worth keeping: *"fast dive" buys streaks on Veo 3.1 Fast whatever
+the negatives say.* But take **a** from **4.875s** is a clean straight-down dive between lit towers,
+so it was cut free in ffmpeg (`-ss 4.875 -t 3.125`, crf 14, audio stripped →
+`s01-r1-dive-clear-a-tail2.mp4`; the 3.875s cut still carried faint streaks).
+
+**`gpom-s02-test-v2` as rebuilt** (same 47.67s; only rungs 1 and 3 changed):
+
+| Clip | Timeline | Camera |
+| --- | --- | --- |
+| `s01-r1-aerial-b-1080` | 7.625 → 12.5 | Scale 100 @ 0.75 → 118 @ 4.875, bezier |
+| `s01-r1-dive-clear-a-tail2` | 12.5 → 15.625 | Scale 150; the dive is Veo's. Hard cut in from the aerial — a height step, not a continuous move |
+| `s01-r3-tower-a` (on **V2**, src 0 → 3.5) | 23.625 → 27.125 | Anchor = Position (0.48, 0.70); Scale 150 → 168 bezier |
+
+Everything else unchanged. **Looked at:** 8.5, 12.45 / 12.55 (either side of the step), 15.5,
+23.7, 27.05, 27.2, 47.5. 🟡 Aerial at Scale 118 is a second resample on a 1.5× upscale — watch for
+softness. 🟡 A faint white wisp remains at the right edge in the dive's first frames.
+
+### Kai's notes on v2 (rebuilt) — 2026-09-13
+
+- **`s01-r1-aerial-b`** *"should dive a lot more"* — the Premiere push (100 → 118) is the ceiling
+  on an upscaled 720p clip.
+- **`s01-r1-dive-clear-a`** *"the city is far too bright… it feels like we're in a time-lapse video
+  and loads of cars have left their lights streaking."* Baked in; a grade cannot remove trails.
+
+🔑 **Hypothesis: negative priming.** The clear prompt said *"no light streaks, no motion-blur
+streaks"* and got the most streaks of the day; the first dive prompt named neither and got none
+until the cloud. So this roll names **only what is wanted**: real-time traffic as single points,
+late night, dark city, a steady descent rather than a "fast dive". No streak/blur/time-lapse words.
+
+### Rung 1, one continuous descent · `s01-r1-descent-{a,b}.mp4` off `s01-aerial-30k-hk-a.jpg`
+
+```prompt
+The camera descends steadily straight down toward Hong Kong at night, smoothly gathering speed the whole way, like a helicopter dropping from very high altitude. The whole city grows larger in the frame: the black harbour widens, the grid of streets opens out, and individual skyscrapers rise up toward the camera until, by the end, the camera is sinking down between the tallest towers. Everything happens in real time at natural speed: the traffic far below moves slowly, each vehicle a single small point of light. It is very late at night and the city is dark and quiet: most office windows are unlit, the streets glow softly and dimly, and deep blacks fill the frame between the lights. The camera keeps pointing straight down the entire time, with no horizon and no sky. Clear air, crisp detail, calm and inevitable.
+```
+
+## Alternatives to the 30,000ft zoom — idea stills, 2026-09-13
+
+**Kai, 2026-09-13:** *"zoomed from 30,000 feet to zooming in is a bad way to do it… how could we
+create a dramatic city scene… come up with some other ideas and cut some images to see."*
+
+The brief each idea must pay: *"Down there, everything was still working"* — Hong Kong, night, lit
+and functioning, **no street level** (2026-08-27), **no weather** (cloud/lightning ruled cheesy
+today), **darker than the dive clip** (ruled too bright), and it must be able to hand off toward the
+one green floor. Drama comes from **vantage and scale**, not effects.
+
+| # | Idea | The drama | Hands off to |
+| --- | --- | --- | --- |
+| I1 | **The drop** — straight down a supertall's glass face from its roof edge | Vertigo; verticals converging on a street 400m down | tower → green floor |
+| I2 | **The canyon, looking up** — worm's-eye between towers | Monumental; the buildings close over you | the facade |
+| I3 | **The wall** — long lens across the harbour, towers stacked into one wall of windows, one floor green | Scale by compression; plants the green early | green floor close |
+| I4 | **The interchange** — overhead on a multi-level elevated highway weaving between towers | The machine city; circuit-board rhyme without altitude | descent |
+| I5 | **The harbour, low** — just above black water, skyline towering overhead | Monumental from below; still water vs lit wall | tower |
+| I6 | **The crown** — from a supertall's roof edge, the city spread out to the horizon | Command view; the narrator's vantage | the drop |
+
+Nano Banana Pro, 16:9, 2 candidates each → `clips/s01/stills/ideas/`. Shared tail on every prompt
+(named here once): *35mm documentary photograph, very late night, deep clean blacks, most office
+windows unlit, muted cool-neutral palette with warm sodium street light, every vehicle a single small
+sharp point of light, no readable text or logos, no borders.*
+
+### I1 · the drop
+```prompt
+Hyper-realistic documentary photograph looking straight down the vertical glass face of a supertall office tower in Hong Kong at night, taken from its roof edge. The tower's clean glass curtain wall and mullions run from the bottom of the frame down and away in steep converging perspective to the street more than four hundred metres below, where a narrow lit road and tiny vehicles as single small sharp points of light sit at the vanishing point. Neighbouring towers plunge down beside it in the same dizzying perspective. Very late at night: deep clean blacks, most office windows unlit, a few scattered lit windows, warm sodium light glowing up from the streets far below, muted cool-neutral palette, fine 35mm film grain, no lens flare. Well maintained, fully working city. No readable text, no logos, no borders.
+```
+
+### I2 · the canyon, looking up
+```prompt
+Hyper-realistic documentary photograph looking straight up from the base of a narrow canyon of supertall glass office towers in Hong Kong at night, wide lens. Four enormous towers rise from the edges of the frame and converge toward a small sliver of black night sky at the centre, their glass curtain walls and mullions forming steep converging lines. Very late at night: deep clean blacks, most office windows unlit, a scattering of lit windows, faint warm sodium light washing the lowest floors, muted cool-neutral palette, fine 35mm film grain, no lens flare. Monumental, oppressive scale. Well maintained architecture. No readable text, no logos, no borders.
+```
+
+### I3 · the wall
+```prompt
+Hyper-realistic documentary photograph across Victoria Harbour in Hong Kong at night on a very long telephoto lens, so the business district compresses into a single immense flat wall of office towers filling the entire frame edge to edge, no sky and no horizon visible. Thousands of windows in a precise grid; very late at night, so almost all of them are dark. Near the centre of the frame, one single floor of one tower is dimly lit in a weak cold faintly greenish light, clearly the wrong colour beside the few warm white lit windows elsewhere. Deep clean blacks, muted cool-neutral palette, fine 35mm film grain, no lens flare. Well maintained, fully working city. No readable text, no logos, no borders.
+```
+
+### I4 · the interchange
+```prompt
+Hyper-realistic documentary photograph looking steeply down from high above a vast multi-level elevated highway interchange in Hong Kong at night, its curved concrete ramps and flyovers weaving over and under each other between dark office towers. Vehicles on the ramps are single small sharp points of white and red light, frozen by a fast shutter, spaced along the lanes. Warm sodium street lamps trace every curve. Very late at night: deep clean blacks, most office windows in the surrounding towers unlit, muted cool-neutral palette, fine 35mm film grain, no lens flare. An orderly, precise, fully working machine city. No readable text, no logos, no borders.
+```
+
+### I5 · the harbour, low
+```prompt
+Hyper-realistic documentary photograph taken just above the black water of Victoria Harbour in Hong Kong at night, wide lens, camera very low. The still dark water fills the lower third of the frame with long soft reflections, and the wall of office towers on the far shore rises enormous above it, tilting slightly back, filling the upper frame. Very late at night: most office windows unlit, scattered lit windows and warm sodium waterfront lights, deep clean blacks in the sky and the water, muted cool-neutral palette, fine 35mm film grain, no lens flare. Monumental, silent scale. Well maintained, fully working city. No boats in the foreground, no readable text, no logos, no borders.
+```
+
+### I6 · the crown
+```prompt
+Hyper-realistic documentary photograph from the very top edge of a supertall office tower in Hong Kong at night, the dark metal edge of its roof crown cutting across the bottom of the frame in the foreground, and the entire city spread out far below to the horizon: other tower tops, the black harbour, and lit streets tracing the ground like a precise lattice. Very late at night: deep clean blacks, most office windows unlit, warm sodium street light, a faint dim glow at the horizon, muted cool-neutral palette, fine 35mm film grain, no lens flare. A commanding, vertiginous vantage. Well maintained, fully working city. No people, no readable text, no logos, no borders.
+```
+
+### Rung 4 (gentle, first pass) · `s01-r4-band-{a,b}.mp4` off `s01-band-close-d.jpg`
+
+```prompt
+Faint reflections of distant city lights slide very slowly across the dark unlit glass above and below the lit floor. The dim greenish light of the lit floor stays at exactly the same dim level for the whole shot, with only a very faint, slightly uneven flicker, like old fluorescent tubes. Behind the glass the interior stays dark and unreadable: nothing inside moves, no people, no shapes appear. The mullions, floor bands and the corner of the building stay perfectly rigid and unchanged. Nothing else in the frame changes. The camera does not move at all — no pan, no tilt, no zoom, no roll, no drift; it is locked off rigidly for the entire shot, as if bolted down.
+```

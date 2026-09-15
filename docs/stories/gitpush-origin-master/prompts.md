@@ -152,6 +152,30 @@ thing the audience sees. Numbering by canon position was always going to rot, so
 **Asset ids are minted from what a scene IS, and never renumbered.** Position lives in exactly
 one place — this table. Reordering the film is a table edit, not a rename.
 
+### 🔴 The short cut — ruled 2026-09-13, [`critique-pass-7.md`](./critique-pass-7.md) — **current order**
+
+Seventeen cuts become ten. Cuts 5, 6 and the unbuilt robots cut were one idea shot three times
+(a perfect world for nobody); they become the opening of the ghosts. The back half merges at the
+table — the shot sheets are unchanged and play in order inside each new cut. **No asset id changes.**
+
+| Cut | Id | What it is | Absorbs (old cut · canon) | State |
+| --- | --- | --- | --- | --- |
+| 1 | `s00` | the orbital opener | 1 · — | ✅ BUILT · 56s |
+| 2 | `s01` | Hong Kong, the CRT, the push | 2 · 1–4 | 🟡 BUILT 27.8s, rework to ~38s in progress |
+| 3 | `plant-room` | 2032, the hall, the gauges go red | 3 · 6 | 🟡 8-beat re-cut on timeline (~67s); megacity opening proposed |
+| 4 | `bulletin` | the collapse as news | 4 · 7 | ✅ BUILT · 120s (trim to be tested) |
+| 5 | `ghosts` | the empty world → brought back → nobody came → switched off | 5 `empty-street` · 8, 6 `vantage` · 9, 9 `robots` · 12, 7 `ghosts` · 10 | 🟡 beat list + 48s preview; **timeline build owed** — [`scenes/ghosts.md`](./scenes/ghosts.md) |
+| 6 | `coin` | the coin that won't land, ending on the empty chair | 8 · 11, 10 `chair` · 13 | ⬜ prompted, unfired |
+| 7 | `vault` | the prunes up the shaft, into the hundred, the correction | 11 `shaft` · 14, 12 · 15 | ⬜ prompted, unfired |
+| 8 | `coin-lands` | the coin lands; the experiments | 13 · 16, 14 `experiments` · 17 | ⬜ prompted, unfired |
+| 9 | `ledger` | the price, the choice, the lamps go out | 15 · 18, 16 `crossing` · 19 *(merge open)* | ⬜ sheets ready, unfired |
+| 10 | `now` | why I came back; the pen | 17 · 20 | ⬜ board complete, unfired |
+
+**Dropped from the short cut, kept on disk and in the bins:** `C5-door`, `C5-rise`, `C6-b2-airport`,
+`C6-b3-tube`, `C6-b4-club`, `C6-b5-park`, and the robots cut's unfired stills.
+
+### The seventeen-cut order — superseded 2026-09-13, kept for the record
+
 | Cut | Id | What it is | Canon | State |
 | --- | --- | --- | --- | --- |
 | 1 | `s00` *(grandfathered)* | the orbital opener — the AI wakes, descends | — | ✅ **BUILT** · 56s |
