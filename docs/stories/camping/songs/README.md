@@ -11,9 +11,10 @@ up carrying a cue (`[sarcastic, high pitched]`) that nobody reading `camping.md`
 | [`camping-released.md`](./camping-released.md) | The released take, kept as a fidelity reference | humans |
 | [`archive/`](./archive/) | Finished experiments, kept for their round logs and revert targets | nobody automated |
 
-🥇 **The lane to start from is `modrb`** — the 1960s mod R&B holler, ruled by ear on 2026-09-08
-(*"the song I liked the most"*). It carries its own lyric variant `lyricsD` and ran on **v4.5+**,
-not v5.5, so reproducing it takes two edits and not one — both spelled out in the sheet.
+⭐ **Canon (Kai, 2026-09-15): the UK garage take [598c2a4d](https://suno.com/song/598c2a4d-df2a-4608-949c-eb6024806df5)** —
+its three boxes and settings, copied from Suno's own record, are `camping.md` §v6.13. Since 2026-09-13
+`camping.md` is also the live v6 prompt sheet; the table above predates that, and `camping-sheet.md`
+is the v5.5-era sheet. (The 2026-09-08 `modrb` pick is superseded.)
 
 ## The one rule that matters
 
