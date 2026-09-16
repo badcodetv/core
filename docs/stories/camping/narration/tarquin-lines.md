@@ -7,6 +7,39 @@ status: ⬜ extracted and prepared, never rendered
 
 # Tarquin's lines
 
+## 🆕 The plea — scene 9, the bad trip · written 2026-09-16, unrendered
+
+**Jack, 2026-09-16: *"That's great."*** He pleads with what he thinks is God; Nell says it's his
+conscience ([`kore-narrator-lines.md`](./kore-narrator-lines.md)). It plays in voiceover over the `9-plea`
+clips in [`prompts.md`](../prompts.md), with his mouth closed in the picture. *"I would like to go to bed now,
+please."* already exists and follows it.
+
+**Settings:** Composer · Temperature 1 · Voice `Zubenelgenubi` · Voice Direction and Scene **unchanged**.
+Only Sample Context moves, per the method below. It's written in his in-control voice with one twist,
+because an over-emotional context lost Bob's voice (see B4 v2 in `bob-lines.md`).
+
+**→ Sample Context**
+
+```
+Tarquin is deep in a psychedelic trip, pleading with something he believes is God, and still arguing his case like a man who is used to winning.
+```
+
+🔴 **Two renders, not one.** The whole plea is about 80 words, and [`render-chunks.md`](./render-chunks.md)
+caps a chunk at about 45 words, since a long render stopped mid-word on 2026-09-11. It's split at the
+full stop after *foresight*, where his argument turns from defending himself to the flats.
+
+**→ Speech block · T-plea-1**
+
+```
+Please. I only wanted to make money. That's not a crime, that's the economy. I did everything right. Good school, good university, good job, and everyone clapped. I didn't crash the bloody market, I just saw it coming. That's not greed, that's foresight.
+```
+
+**→ Speech block · T-plea-2**
+
+```
+The flats… fine, the flats. I bought them. I just didn't put anyone in them, because they're worth more empty. I never hurt anybody. I never even met them… Who are all these people?
+```
+
 ## 🔴 Do NOT render these in one pass — and this is the opposite of the narrator's advice
 
 **The narrator has nine flat jabs and wants one voice state across all of them.** Tarquin does not.

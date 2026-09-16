@@ -1829,6 +1829,52 @@ by us.**
 - **Nothing found** on grids swimming from above, heads morphing when seen from above, or glow disappearing from a
   wet surface.
 
+## Fifteenth pass — 2026-09-16 `[community]` `[vendor]`
+
+Run for camping's `9-mug` trip clips: a still man, with the world around him changing (a timelapse, a
+colour glow, a reversed stream, spreading frost, breathing trees), all on Frames. **New or contradicting
+items only. Untested by us.**
+
+- 🔴 **A human figure inside a timelapse morphs.** *"A human figure in a time-lapse prompt forces the
+  model to choose between realistic human motion and compressed time. It cannot do both."* The
+  counter is to say outright that **only the world is sped up and he moves at real speed**. The
+  effect itself is common enough to exist as a preset ("subject still, world rushes around them",
+  Higgsfield *Timelapse Human*). `[community]`
+  [buildfastwithai](https://blog.buildfastwithai.com/best-ai-video-prompts) ·
+  [higgsfield](https://higgsfield.ai/motion/b4ba822f-9171-4547-997e-c86de335385e)
+- **A timelapse needs a named change agent**, or it comes back looking like a held still. Name the
+  thing that speeds up (mist, light, shadow). `[community]` [shoty](https://www.shoty.ai/community/use-cases/timelapse)
+- 🔑 **Models have no concept of "becoming", so describe the in-between phases** and where the change
+  starts and travels ("moving from the face outward"). **Describe what reacts to the effect**: light
+  on the surfaces it touches, and grass stiffening under frost. An effect nothing acknowledges reads
+  as pasted on, which matches the eleventh pass's weather note. `[community]`
+  [prompt-architects](https://prompt-architects.com/blog/360-vfx-and-effects-prompting)
+- **One primary motion and one reaction per clip.** *"Give it two equals and you get a tug-of-war."*
+  This agrees with our two-beat default only if the second beat is smaller. `[community]`
+  [prompt-architects](https://prompt-architects.com/blog/242-from-still-image-to-ai-video-handoff-prompts)
+- ⚠️ **Omni's API has a world-knowledge grounding toggle**, and one guide says to turn it off for
+  surreal content where physics should break. ⬜ **It isn't known whether Flow exposes it**, so check
+  the UI. `[community]` [promptslove](https://promptslove.com/blog/google-omni-prompting-guide/)
+- **Similes are nouns too (inferred from the 2f-5 table):** *"like lungs"* or *"like film played backwards"*
+  can draw a lung or a film border. Write the rhythm or the direction instead ("in the slow rhythm of
+  breathing", "as if time were running in reverse"). `[inferred]`
+- **Surreal ≠ slop words.** Leave *psychedelic*, *magical*, *surreal*, *ethereal* and *neon* out of the
+  prompt, because they are the same noise class as *cinematic*. Name the colours and the physical
+  change. `[inferred from the anti-slop section above]`
+
+## ⚠️ A fire plate on Frames came back with nothing happening `[observed 2026-09-16, n=2]`
+
+Camping `12c-embers`, Frames, first frame a close-up of a newspaper burning in a drum. **Round 1** asked for
+embers to rise and then *hang* in the air. **Round 2** asked only for the fire to flare and throw a heavy stream
+of embers upward. Jack on both: didn't work, then *"nothing happened"*. ⬜ The exact output wasn't described.
+
+- **Both prompts opened with *"The view holds perfectly still"***, which is what the [twelfth pass](#twelfth-pass--2026-09-15-community-academic)
+  calls a stillness verb: it freezes the subject.
+- **A flare is a *reach* for a new state, not a continuation** ([§ continue a state](#-ask-it-to-continue-a-state-never-to-reach-one-observed)).
+  The first frame showed a steady fire, so the engine kept it steady.
+- **Route taken instead:** the effect is designed into a Nano Banana **still** (the 12e-bc precedent), the camera
+  move into the drum is done in Premiere, and Omni only animates what is already in frame 0.
+
 ## 🔑 On Ingredients with a Character, the shortest prompt won `[observed 2026-09-13, n=1]`
 
 Camping `2f-5`: `@Bob` smoking at a motorway services, Ingredients to Video. **Four rounds in one

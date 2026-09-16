@@ -8461,6 +8461,583 @@ Thanks.
 - No new figures, and the ruts and puddles stay put.
 - No camera or tripod appears, and nobody speaks.
 
+### 9-mug — Tarquin holding the mug, the trip plate · **still** · written 2026-09-16, unrun
+
+**Jack, 2026-09-16:** *"we have to make one with a shot of Tarquin holding the mug, then psychedelic
+stuff happen around him … the camera in front of Tarquin of the first person pic, showing him holding
+the mug and his full body."* It's the reverse of clip 24 (the mug POV at the river dome, see
+[`assembly.md`](./assembly.md)), and it lengthens the trip. ⚠️ It's the river-dome location, which the
+shot list dropped for the yurt. Clips 24–27 are still in the cut, so this matches the cut, not canon.
+
+**Shot spec (shot-craft):**
+
+1. **Job:** show whose hands those were. Tarquin, alone, pleased with his purchase, standing in a
+   place that's about to bend around him. It's a **plate**: the trip happens *around* him, so he
+   needs room on every side.
+2. **Register:** documentary, human scale. Gate 2 isn't triggered.
+3. **Depth:**
+   - **Foreground:** the fast shallow stream and its rocks across the bottom of the frame.
+   - **Midground:** him on the mossy bank.
+   - **Background:** tall spruce going into the mist.
+4. **Focal point:** the mug and his face, which win on being centred and on the steam, the only bright
+   movement against the dark trees.
+5. **Light:** misty early-morning daylight, soft and cool, from the sky. Nothing else, and no warm
+   anchor is needed because it isn't a near-black frame. The dome is behind the camera and isn't lit
+   into the prompt, since a practical light that far off can't reach him (§20).
+6. **Camera:** from the dome's side of the stream, looking back at him. 50mm, about six metres away,
+   chest height, level. **He's dead centre**: symmetry is exactly what the kaleidoscope treatment needs
+   to mirror around, and the 25.mp4 kaleidoscope is centred too.
+7. **Withheld:** the dome. He's looking at it, just past the lens, so only his eyeline says it's
+   there.
+8. **What moves (for the clip):** steam, the stream, and then the trip. The camera is locked.
+
+**Decisions:**
+
+- 🔴 **Cast `@Tarquin-new` and write nothing about how he looks.** The navy sleeves in the POV match
+  its roll-neck.
+- **Attach the mug POV frame (clip 24's still) as a reference** for the mug, the moss and the stream,
+  and say plainly that this photograph is taken **from the other side of the stream**. Without that
+  sentence, a place reference pulls the composition back to the POV. ⬜ **If it comes back as a POV
+  again, drop the reference** and let the prose carry the place.
+- **The grip copies the POV:** left hand round the body of the mug, right hand through the handle,
+  held at chest height. Otherwise the cut from 24 jumps.
+- **Expression is muscles, with the wrong readings named:** chin slightly up, eyes over the rim towards
+  something past the lens, one corner of the mouth lifted. It's a man who thinks he's got his money's
+  worth. **Not serene, not spiritual.** Canon: *"Tarquin doesn't suddenly become some cool spiritual
+  guy."*
+- **Whole body with moss below his shoes**, because cropped feet get invented in a clip.
+- **Stock:** Portra 400, matching 9-walk.
+
+**Paste into:** Flow → **Nano Banana 2** → image prompt box. **Character:** `@Tarquin-new`.
+**Reference image:** the mug POV frame (clip 24). **Aspect:** 16:9. **Outputs:** 2.
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 400, a single handheld exposure. Visible grain in the shadows, muted cool colour, low saturation, quiet observational tone.
+
+The attached photograph shows this place and this mug from the man's own eyes. This photograph is taken from the other side of the stream, looking back at the man from the character reference as he stands on the mossy bank holding the mug.
+
+Camera and framing: 50mm lens at f/5.6, chest height and level, about six metres from him across the stream. He stands in the centre of the frame, facing the camera, his whole body in frame from the top of his head to his shoes, with a strip of moss below his feet and generous space above and to either side of him. Across the bottom of the frame, close to the lens, the fast shallow stream runs over dark rocks, white water breaking around them.
+
+Action: He holds the stoneware mug from the attached photograph at chest height in both hands, his left hand wrapped round the body of the mug and his right hand through the handle. Thin steam rises from it. He is looking over the rim of the mug at something just past the camera. His chin is slightly up and one corner of his closed mouth is lifted: the look of a man pleased with what he has paid for. He is not serene, not meditative and not smiling broadly, and he is not aware of the camera.
+
+Environment: Behind him, tall dark spruce trees rise out of the moss and fade into thick white morning mist, the nearest trunks sharp and the far ones only pale shapes. The bank is thick green moss and long wet grass.
+
+Light: Soft, cool, misty early-morning daylight from the overcast sky is the only light. It falls evenly on him and the bank, with gentle shadow under his chin and arms. The mist behind him is bright but not burnt out, and the darkest trunks still show their bark.
+
+Details: Real skin texture, wet moss, droplets on the grass, fine natural grain, ordinary and unstyled.
+
+Constraints: Ensure the scene looks like present-day rural Wales. He is the only person in the frame. No tents, domes, lanterns or buildings in the frame. No signs, logos or readable text anywhere in the frame.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Check before accepting:**
+- It's taken **from across the stream, looking at him**, and not a POV.
+- His face and outfit read as `@Tarquin-new`.
+- The grip matches clip 24: left hand round the mug, right hand through the handle.
+- His whole body is in frame with room around him, dead centre.
+- One mug, two hands, five fingers each.
+- He looks pleased with himself, not spiritual.
+
+### 9-mug — round 1, **not accepted** (Jack, 2026-09-16: *"he should not be smiling"*)
+
+**What held, so keep all of it:**
+- The camera is across the stream, not a POV, so the reference sentence worked.
+- He's centred with his whole body in frame and room around him.
+- The outfit is right: gilet, roll-neck, turned-up jeans and sock-less tan loafers.
+- The stream is in the foreground and the misty spruce are behind him.
+
+**What failed:** he's smiling. 🔑 **The prompt asked for it.** *"One corner of his mouth lifted"* and
+*"pleased with what he has paid for"* both describe a smile, and *"not smiling broadly"* names smiling
+into the prompt ([negatives backfire](../../google-flow/omni-flash.md#-negatives-do-not-work-and-they-actively-backfire)).
+
+**Round 2 changes the Action paragraph's expression sentences only.** Everything else is word for word
+the same. The expression now comes from canon's resting face, *"a man appraising and finding
+wanting"*: lips closed and flat, brows faintly drawn together, eyes cool and unimpressed. It's written
+only as what the face *is*, with no smile word anywhere.
+
+**Paste into:** Flow → **Nano Banana 2** → image prompt box. **Character:** `@Tarquin-new`.
+**Reference image:** the mug POV frame (clip 24). **Aspect:** 16:9. **Outputs:** 2.
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 400, a single handheld exposure. Visible grain in the shadows, muted cool colour, low saturation, quiet observational tone.
+
+The attached photograph shows this place and this mug from the man's own eyes. This photograph is taken from the other side of the stream, looking back at the man from the character reference as he stands on the mossy bank holding the mug.
+
+Camera and framing: 50mm lens at f/5.6, chest height and level, about six metres from him across the stream. He stands in the centre of the frame, facing the camera, his whole body in frame from the top of his head to his shoes, with a strip of moss below his feet and generous space above and to either side of him. Across the bottom of the frame, close to the lens, the fast shallow stream runs over dark rocks, white water breaking around them.
+
+Action: He holds the stoneware mug from the attached photograph at chest height in both hands, his left hand wrapped round the body of the mug and his right hand through the handle. Thin steam rises from it. He is looking over the rim of the mug at something just past the camera. His face is still and cool: his lips are closed and pressed flat, his brows are drawn very slightly together, and his eyes are narrowed a little, flat and unimpressed. It is the resting look of a man appraising something and finding it wanting. He is not aware of the camera.
+
+Environment: Behind him, tall dark spruce trees rise out of the moss and fade into thick white morning mist, the nearest trunks sharp and the far ones only pale shapes. The bank is thick green moss and long wet grass.
+
+Light: Soft, cool, misty early-morning daylight from the overcast sky is the only light. It falls evenly on him and the bank, with gentle shadow under his chin and arms. The mist behind him is bright but not burnt out, and the darkest trunks still show their bark.
+
+Details: Real skin texture, wet moss, droplets on the grass, fine natural grain, ordinary and unstyled.
+
+Constraints: Ensure the scene looks like present-day rural Wales. He is the only person in the frame. No tents, domes, lanterns or buildings in the frame. No signs, logos or readable text anywhere in the frame.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Check before accepting:** his mouth is flat, with neither corner lifted. The rest is round 1's list.
+
+### 9-mug — round 2 ✅ **ACCEPTED 2026-09-16** (Jack: *"this works"*)
+
+**The mouth is flat** and the look is cool, not smiling. He's centred, with his whole body in frame, and
+the stream is in the foreground. The mug is in both hands at his chest, and the misty spruce stand
+behind him. **It's a clean plate for the trip clips.** A reference copy, taken from Jack's screenshot
+rather than the Flow download, is saved as
+[`camera/reference/9-mug-ACCEPTED-screenshot.png`](./camera/reference/9-mug-ACCEPTED-screenshot.png).
+
+### 9-mug trip clips 1–5 · **video** · written 2026-09-16, unrun
+
+**Jack, 2026-09-16:** *"Please do each of these 1 to 5 in order"*: the five trip ideas on the accepted
+9-mug still, in this order: timelapse, colour glow, reversed stream, frost, breathing forest. Anti-slop and
+Omni research is the [fifteenth pass](../../google-flow/omni-flash.md#fifteenth-pass--2026-09-16-community-vendor).
+
+**Shot spec (shot-craft), shared by all five:**
+- **Job:** the trip happens *to the world* while the man at its centre stays exactly who he is, which
+  is the *wind your neck in* beat. **The world moves and the camera doesn't** (R7, hybrid method).
+  None of the five spends the camera budget.
+- **He stays still, but never a statue.** He breathes and blinks, mouth closed (ninth, eleventh and
+  twelfth passes). His hands never do anything, because hands holding props are the weak spot.
+- **Each effect has something that reacts to it**, and the light on his face stays steady (twelfth
+  pass). The exception is the timelapse, where the light change is the point, so it's flagged.
+
+**Tab: Frames, all five.** The composition is the shot, and Ingredients re-stages. He's full-length
+and small in frame, and the only change to him is breathing (the tab rule's "both" row).
+**Fallback if his face changes:** Ingredients with the still and `@Tarquin-new`, with the scene written
+out in full.
+
+**Anti-slop decisions:**
+- None of *psychedelic*, *surreal*, *magical*, *neon* or *cinematic*. The colours and the physical
+  change are named instead.
+- No similes that are nouns (*lungs*, *film*) and no camera nouns.
+- Every change is written as phases with a direction of travel. Each is a big change with a small reaction.
+- Grain and a 10–15% speed tweak are done in post if needed, not in the prompt. The film grade already
+  adds grain.
+- **Breath vapour isn't in the frost prompt.** It generates inconsistently, so add it in post (twelfth pass).
+
+**Settings for all five:** Flow → **Omni Flash** → **Frames** → prompt box. **First frame:** the accepted
+9-mug still. **No end frame.** 16:9 · 720p · x2 · 8s.
+
+#### 1 · The timelapse, he doesn't age a second
+
+🔴 **The biggest ask of the five.** A human in a timelapse is the documented morph case, so the prompt
+says outright that only the world speeds up. **If his face changes, delete the daylight sentence
+first** (light moving across a face reads as the face redrawing). Moss over his shoes was dropped:
+growth touching him adds a second morph risk.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it as a timelapse. The view holds perfectly still.
+
+Around the man, time runs fast: the mist streams between the tree trunks in quick rolling waves, and the stream smooths into a soft white blur over the rocks. Then the daylight in the forest sinks to a cold blue dusk over a few seconds and climbs back to grey morning. The man alone moves at real speed, standing where he is with the mug, breathing slowly and blinking once, his mouth closed throughout.
+
+Audio: wind rushing through the trees, rising and falling fast, the stream as one continuous hiss, and his slow breathing close by. No music and no voices.
+
+Thanks.
+```
+
+#### 2 · The colour floods in
+
+**The safest of the five.** It's a light change with a visible source (the moss), and it stops at his
+knees. The palette is violet, blue and gold, matching clip 25's kaleidoscope.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed.
+
+A soft glow of deep violet and warm gold rises out of the moss at the man's feet and spreads slowly outward across the whole bank, lighting each blade of grass from below and tinting the lowest mist and the legs of his jeans. Then the thin steam rising from his mug turns in on itself in slow curling spirals, catching the violet light. The light on his face stays the soft grey morning light. He stands with the mug, breathing slowly, and blinks once, his mouth closed throughout.
+
+Audio: the stream over the rocks, and a deep soft hum that swells as the glow spreads. No music and no voices.
+
+Thanks.
+```
+
+#### 3 · The stream runs backwards
+
+⚠️ **Fluids are the documented weak spot.** A **free fallback that's exact** is to reverse clip
+footage of the stream in ffmpeg/Premiere. Reversing the whole clip also reverses his breathing,
+which is subtle enough to read as wrong in the right way.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot.
+
+The stream across the front slows down until the white water hangs motionless over the rocks, glassy and frozen in mid-break. Then the water starts to run backwards, upstream, the white water drawing back into the rocks as if time were running in reverse. The man stands with the mug at real speed, breathing slowly, and blinks once, his mouth closed throughout.
+
+Audio: the rush of the stream slows and drains away to silence, then returns as a strange backwards rushing sound. No music and no voices.
+
+Thanks.
+```
+
+#### 4 · The cold gets in
+
+The broken car heater, made physical. The frost travels **towards** him and stops at the knees, so
+it never reaches his hands or face.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed.
+
+White frost creeps out from the edge of the stream and spreads across the moss towards the man, stiffening each blade of grass and furring it with ice crystals as it passes, while thin ice forms along the edges of the water. It reaches his shoes and climbs the legs of his jeans to his knees, whitening the denim. As the cold reaches him, his shoulders rise a little and draw in, and he breathes slowly and blinks, his mouth closed throughout.
+
+Audio: the stream, and a fine crackle of ice forming that grows louder as it spreads towards him. No music and no voices.
+
+Thanks.
+```
+
+#### 5 · The forest breathes
+
+⚠️ **Warping trunks next to him can drag his outline into the warp.** If his edges ripple, move the
+breathing to *"the trees in the mist behind him"* only. *"On the last breath"* is used, not a count,
+because counts of repeated events are unreliable (thirteenth pass).
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot.
+
+The two nearest tree trunks on either side of the man swell slowly outward and sink back in the slow rhythm of breathing, and every trunk in the forest behind them swells and eases in time with them. On the last breath the man breathes out with the forest, his shoulders falling as the trunks sink back. He stands with the mug and blinks once, his mouth closed throughout, and the stream keeps running over the rocks at real speed.
+
+Audio: a deep, slow breathing sound all around, as if the forest itself were breathing, over the rush of the stream. No music and no voices.
+
+Thanks.
+```
+
+**Check each before accepting, in this order:** hands and mug (one mug, fingers intact), then face
+(same man, no smile), then edges (his outline doesn't ripple into the effect). Also check nobody
+speaks and no second figure appears.
+
+### 9-mug trip clips, set 2 (ideas 1, 2, 4, 6, 9, 13, 15, 16) · written 2026-09-16, unrun
+
+**Jack, 2026-09-16:** *"Please do 1, 2, 4, 6, 9, 13, 15, 16."* These are from the second ideas list.
+Same spec, tab, settings, anti-slop rules and check order as set 1 above.
+
+**Settings for the six Flow clips:** Omni Flash → **Frames** → the accepted 9-mug still as the first frame · no end frame · 16:9 · 720p · x2 · 8s.
+
+#### 1 · The trees lean in
+
+🟡 The nearest trunks are at the frame edges, well clear of him, so the warp shouldn't catch his outline. If it does, keep the bending to the trees behind him.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot.
+
+Every spruce on both sides of the man slowly bends inward towards him from its base, the tops curving over the space above his head, needles shivering and the mist swirling where the branches pass through it. Then the trees slowly straighten back upright. The man stands with the mug at real speed, breathing slowly, and blinks once, his mouth closed throughout, and the stream keeps running over the rocks.
+
+Audio: deep creaking and groaning timber all around as the trees bend, then the stream alone. No music and no voices.
+
+Thanks.
+```
+
+#### 2 · The rain falls upwards
+
+🟡 Fast particles, so the shutter clause is in. Rings where the drops leave the water are the surface reacting.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot.
+
+Drops of water lift off the surface of the stream and off the wet moss and rise straight up past the man into the mist, a few at first and then a steady upward rain across the whole frame, leaving small rings on the water where they leave it. Shot at 24fps with a 180-degree shutter, so the rising drops smear into short bright streaks. The man stands with the mug at real speed, breathing slowly, and blinks once, his mouth closed throughout.
+
+Audio: the stream, and the patter of rain growing louder, strangely rising in pitch. No music and no voices.
+
+Thanks.
+```
+
+#### 4 · The mist clears in a ring
+
+⚠️ Fog motion is a known weak control (twelfth pass). Here it's the whole shot, so expect a reroll. The sharpening trunks inside the ring are what reacts.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed.
+
+The mist around the man draws back from him on every side, slowly opening into a clear round space about ten metres across with him at its centre, the tree trunks inside it turning sharp and dark while the mist beyond stays thick and white. Then the wall of mist around the clearing slowly turns, circling him. He stands with the mug, breathing slowly, and blinks once, his mouth closed throughout.
+
+Audio: the stream over the rocks, and a low soft rush of air as the mist pulls back. No music and no voices.
+
+Thanks.
+```
+
+#### 6 · Stars in daylight
+
+✅ The light on him never changes: the night sky is only in the top strip. Star trails are a common timelapse subject, so the engine has a reference for them.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot.
+
+Above the trees, the white mist slowly thins until a deep black night sky full of bright stars shows through across the top of the frame, while the forest, the bank and the man below stay in soft grey morning light. Then the stars begin to wheel slowly across the sky in long curved trails. The man stands with the mug at real speed, breathing slowly, and blinks once, his mouth closed throughout, and the stream keeps running over the rocks.
+
+Audio: the stream fades down to near silence, leaving his slow breathing close by. No music and no voices.
+
+Thanks.
+```
+
+#### 9 · Ticker tape
+
+🟡 Many small falling pieces, not one object, so there's no single fall for the eye to check. The paper is shredded, not confetti. Watch that none lands on his face or hands.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed.
+
+Thin strips of white shredded paper begin drifting down through the trees from above, a few at first and then thickly, turning and fluttering as they fall past the man and settle on the moss around his feet. Where the strips land on the stream they darken, soak through and are swept over the rocks as grey pulp. The man stands with the mug, breathing slowly, and blinks once, his mouth closed throughout.
+
+Audio: a soft papery patter all around, and far away a crowd cheering that slowly fades out under the stream. No dialogue and no music.
+
+Thanks.
+```
+
+#### 13 · The deer are watching
+
+🔴 Walking animals and new objects are the riskiest ask here (small figures in mist morph). If legs go wrong, drop the walk-in and have the deer already half-visible in the mist, lifting their heads.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed.
+
+Three red deer walk slowly out of the mist between the tree trunks, one to the left of the man and two to his right, each with a heavy, careful step, and stop at the back of the bank. Then all three lift their heads at the same moment and stare straight at the man, completely still. He stands with the mug, breathing slowly, and blinks once, his mouth closed throughout.
+
+Audio: the stream, a twig snapping under a hoof, then quiet except the water. No music and no voices.
+
+Thanks.
+```
+
+#### 15 and 16 · Premiere, no Flow
+
+**Two corrections to the ideas list, found in the catalogue:**
+- **15 is `Color Pass` (`PR.ADBE Color Pass`), not "Leave Color".** It keeps one picked colour and
+  greys everything else out, so it keys on colour, not on him. Pick the **blue of his jeans and
+  roll-neck**. His olive gilet is too close to the moss to keep without the moss coming back too.
+  ⚠️ The stream's blue-grey may survive as well, so tighten the similarity until it doesn't.
+- **16 is `Replicate` (`AE.ADBE Replicate`), and it tiles the whole frame, man included.** So it's
+  a grid of identical Tarquins, not a forest repeating behind one of him. Only the trees would need a
+  mask around him. ⬜ It's unrecorded whether the bridge can draw a mask.
+
+**Needs:** a finished clip on the timeline. Neither the still nor any trip clip is imported yet.
+
+### 9-plea — the bad trip, one clip per line of the plea · **video** · written 2026-09-16, unrun
+
+**Jack, 2026-09-16:** *"we need to make the trip about this, so can you depict this in the videos in
+pyschedelic bad trip vibes."* The plea:
+
+> Please. I only wanted to make money. That's allowed. / I did all the steps. The school, the
+> university, the job. Everyone said well done. / I didn't crash anything. I just saw it coming.
+> That's the job. / And the flats… I bought them. I just didn't put anyone in them. / I never meant to
+> hurt anyone. I never even met them.
+
+**This is now the trip's spine.** The earlier sets (1–5 and set 2) are spare coverage.
+
+**Research (2026-09-16), what it changed:**
+- **Bad trips are paranoia, guilt, being watched, and the world distorting as the inner state leaks
+  outward** (Grof: *"you perceive a sort of distortion of the world out there"*), with time distortion and
+  surfaces breathing. The film grammar is **dread by suggestion**: things in the corner of the eye
+  (*Jacob's Ladder*), warping surfaces and distorted sound (*Fear and Loathing*), POV plus internal
+  thoughts (*Enter the Void*).
+- **The AI-horror advice agrees with the house rules:** describe what feels *wrong*, not what's scary.
+  Use silhouettes and fog for presences, and a **long sustained low tone** instead of jump scares.
+  Don't use "spooky" words. **Good things turning wrong** (applause that goes on too long) unsettle
+  more than monsters.
+- 🔴 **No strobing.** It's a bad-trip cliché, and it fails the [photosensitivity
+  gate](../../video-fx/delivery.md).
+
+**Shot spec (shot-craft), all five:**
+- **Job:** each clip is one line of his excuse, **disproved by the world around him**, while he stands
+  still. The picture argues back against the voiceover. This is irony paired with an on-screen
+  consequence (story-craft).
+- **He never emotes** (canon: *"we never animate a character emoting"*). His **breathing is the only
+  escalation**: slow, then a little quicker, then quicker, then fast and shallow. His mouth stays
+  closed, so the plea is plainly in his head.
+- **The world moves and the camera doesn't** (R7). The light on his face stays steady wherever the
+  effect allows.
+- **Every image is from his own record:** money, the ladder he climbed, 2008, the empty flats, the
+  people. No AI and no preview of the future.
+
+**Tab and settings:** Omni Flash → **Frames** → the accepted 9-mug still as the first frame for **all
+five** · no end frame · 16:9 · 720p · x2 · 8s. All five start from the same still so a failure costs
+one
+clip. ⬜ **Option:** chain them, each clip's last frame into the next, so the trip builds up. It's
+stronger, but drift adds up.
+
+**Premiere layer (the escalation belongs here, not in the prompts):**
+- The grade drains a little sicker with every clip, going cool green-cyan in the shadows.
+- `Liquid Distortion` and `RGB Split` creep in only on D and E.
+- A low drone bed runs under all five.
+- Reverb grows on his voiceover.
+- **After E, cut in 4–6 frames each of faces we already have:** Bob, the man at the next desk (1m),
+  and the shoppers walking past (6b). ⚠️ Run `scripts/photosensitivity-check.py` on that stretch.
+
+#### A · "I only wanted to make money. That's allowed." · the stream turns to gold, then sludge
+
+🟡 Fluids. A slow thickening is appearance, not a splash, so it's the easier class. The blackening moss is the reaction.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot.
+
+The white water in the stream slowly thickens into molten gold, running heavier and slower over the rocks until it clogs between them. Then the gold dulls and darkens to a grey sludge, and the moss along the edge of the stream blackens where the sludge touches it. The man stands with the mug at real speed, breathing slowly, and blinks once, his mouth closed throughout.
+
+Audio: the rush of the stream turns into a thick metallic trickle of coins, then a low sustained hum underneath. No music and no voices.
+
+Thanks.
+```
+
+#### B · "I did all the steps." · the stones rise into steps that lead nowhere
+
+🟡 Several objects moving at once. If the steps come out mangled, cut to the rocks rising only and let the applause carry *well done*. The applause is a sound effect, not speech.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot.
+
+One after another, the rocks in the stream rise up out of the water with water pouring off them and settle into a flight of stone steps that climbs past the man's right side and on up into the mist, where the top step ends in empty white. The man stands with the mug at real speed, his breathing a little quicker, and blinks once, his mouth closed throughout.
+
+Audio: the grinding of heavy stone and water pouring off it, then slow applause from somewhere in the mist that goes on too long, each clap slower and further away. No music and no voices.
+
+Thanks.
+```
+
+#### C · "I didn't crash anything. I just saw it coming." · the flood goes round him
+
+✅ Water spreading across flat ground is the easy fluid class (like 1y's tide). 🔑 **It's canon made literal:** he came out of 2008 without a scratch while everyone else went under.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed.
+
+The stream swells and spills over its banks, and dark water spreads steadily across the moss on both sides of the man, flattening the grass and rising around the trunks of the trees, darkening the bark where it climbs. The small mound of moss he stands on stays dry, and the water flows around it on every side. He stands with the mug, breathing quicker, and blinks once, his mouth closed throughout.
+
+Audio: the rising roar of flood water all around, and under it a deep low rumble. No music and no voices.
+
+Thanks.
+```
+
+#### D · "And the flats… I just didn't put anyone in them." · the tower blocks go dark
+
+🔴 Rows of distant windows can crawl, and it gets worse when upscaled (thirteenth pass). The fog softening them is the counter. If they crawl, delete *"row by row"* and let them go dark together. The light on him stays steady.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot.
+
+Deep in the mist behind the trees, the dark shapes of tall concrete tower blocks slowly loom into view, softened by the fog. Their windows glow a dim warm yellow, and then, row by row from the top down, every window goes dark until the blocks stand black and empty behind the trees. The light on the man stays the soft grey morning light, and he stands with the mug at real speed, breathing quicker, and blinks once, his mouth closed throughout.
+
+Audio: the stream, a low wind moaning between high buildings, and a soft click as each row of windows goes dark. No music and no voices.
+
+Thanks.
+```
+
+#### E · "I never meant to hurt anyone. I never even met them." · the people he never met
+
+🔴 **Faces hidden by distance and fog, never by a sentence** (nano-banana-2 §18). They're ordinary people (a mother, an old man, a worker), not a homeless stereotype (the-reader rule 4). If any face resolves, move them further back into the fog.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed.
+
+The mist between the trees behind the man slowly thins, showing ordinary people standing among the trunks as dark silhouettes against the white: a woman holding a small child's hand, an old man in a flat cap, a man in a work jacket, and more further back. They stand completely still and all face towards him, too far away and too softened by the fog for any face to be seen. The man stands with the mug, his breathing fast and shallow, and blinks once, his mouth closed throughout.
+
+Audio: the stream fades away to silence, leaving only a low sustained tone and his fast, shallow breathing close by. No music and no voices.
+
+Thanks.
+```
+
+**Check each before accepting, in this order:** hands and mug, then face (same man, mouth closed,
+not acting scared), then his outline, then no readable text and nobody speaking.
+
+**Sources:** [Bad trip, Wikipedia](https://en.wikipedia.org/wiki/Bad_trip) ·
+[whatNerd, trippy drug films](https://whatnerd.com/trippy-drug-movies-psychedelic-experiences/) ·
+[Jacob's Ladder (1990)](https://en.wikipedia.org/wiki/Jacob%27s_Ladder_(1990_film)) ·
+[Kling, horror prompts](https://kling.ai/blog/horror-ai-video-prompts-color-grading-sound) ·
+[ZSky, horror prompts](https://zsky.ai/blog/ai-horror-art-prompts) ·
+[PMC, extended difficulties after psychedelics](https://pmc.ncbi.nlm.nih.gov/articles/PMC10597511/)
+
+### 9-plea — round 2, **too subtle** (Jack, 2026-09-16) · rewritten BIG · written 2026-09-16, unrun
+
+**Jack:** *"the ones before have been too subtle, this is the strongest psychedelic known to man, it
+should make a big impact visually."* Round 1 was built to keep the frame (small asks keep the
+frame). **This round deliberately trades frame-lock for impact** ([the change/adherence
+trade](../../google-flow/omni-flash.md#️-the-changeadherence-trade-is-a-straight-line)). Expect more
+redraws of the set, and possibly of him.
+
+**What changed:**
+- 🔑 **A shared trip layer opens every clip within the first second:** colours flood to full
+  intensity (acid-green moss, violet and magenta mist) and glowing geometric lattice patterns spread
+  over every surface. **Research:** ayahuasca visions typically begin with colour intensifying and
+  geometric patterns building in complexity. Serpents are the most reported motif (Shanon), so C's
+  flood now coils round him like a serpent.
+- ⚠️ **Not copied from Shipibo kené designs.** Those are a living people's sacred textile art. The
+  prompt says *"geometric lattice"*, generic.
+- **Each plea image goes from a background change to a world-scale event:** a gold river that rots
+  to black sludge, a colossal staircase crumbling as it climbs, a flood wall that splits around him,
+  tower blocks bursting out of the forest and going black, and a forest packed with silhouettes who
+  step towards him together.
+- **What doesn't change:** he stays centred, holds the mug and never acts scared. His breathing is
+  now hard throughout. No strobe (colours *pulse slowly*) and no saturated red.
+- **Premiere can push it further for free:** `Kaleido` mirrored around him, `Liquid Distortion`, `Echo
+  Glow`.
+- **Fallback if his face goes:** Ingredients with the still and `@Tarquin-new`, with the scene
+  written out. Or accept a redraw and cut away before his face reads.
+
+#### A · money · the gold river rots
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed.
+
+Within the first second every colour in the forest floods to full intensity: the moss turns acid green, the mist blazes violet and magenta, and glowing geometric lattice patterns spread across the trunks, the rocks and the ground, pulsing slowly. Then the stream erupts into a surging river of molten gold that pours uphill into the trees, gilding every trunk and branch until the whole forest shines gold. Then the gold rots: it blackens and melts, and thick black sludge drips from every branch and rains down around the man. He stands in the centre with the mug, breathing hard, and blinks, his mouth closed throughout.
+
+Audio: a roaring rush of pouring metal and the clatter of countless coins, then a deep wet dripping under a low droning hum. No music and no voices.
+
+Thanks.
+```
+
+#### B · the steps · a staircase to nowhere
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed.
+
+Within the first second every colour in the forest floods to full intensity: the moss turns acid green, the mist blazes violet and magenta, and glowing geometric lattice patterns spread across the trunks, the rocks and the ground, pulsing slowly. Then the rocks tear out of the stream and fly upward, stacking into a colossal stone staircase that spirals up past the man and into the sky, hundreds of steps high above the trees and still climbing. As fast as new steps form at the top, the lowest steps crumble and crash back into the stream in showers of stone and spray. He stands in the centre with the mug, breathing hard, and blinks, his mouth closed throughout.
+
+Audio: grinding stone and crashing water, and thunderous applause from everywhere at once that slows and deepens into a long low groan. No music and no voices.
+
+Thanks.
+```
+
+#### C · 2008 · the flood splits round him
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed.
+
+Within the first second every colour in the forest floods to full intensity: the moss turns acid green, the mist blazes violet and magenta, and glowing geometric lattice patterns spread across the trunks, the rocks and the ground, pulsing slowly. Then a towering wall of dark floodwater surges through the forest from both sides at once, bending the trees and swallowing the bank, and rears high above the man before splitting around the small mound of moss he stands on. The water coils around his mound like a vast serpent, circling him faster and faster in churning walls that rise on every side, while he stays completely dry in the middle. He stands in the centre with the mug, breathing hard, and blinks, his mouth closed throughout.
+
+Audio: the thundering roar of floodwater all around and a deep rumble shaking through it. No music and no voices.
+
+Thanks.
+```
+
+#### D · the flats · the blocks go black
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed.
+
+Within the first second every colour in the forest floods to full intensity: the moss turns acid green, the mist blazes violet and magenta, and glowing geometric lattice patterns spread across the trunks, the rocks and the ground, pulsing slowly. Then tall concrete tower blocks burst up out of the ground all around the man, splitting the trunks and throwing up earth, growing floor by floor into the sky until they tower over him on every side. Every window blazes with warm yellow light, then all at once every window goes black, and the dark, empty blocks lean in over him. He stands in the centre with the mug, breathing hard, and blinks, his mouth closed throughout.
+
+Audio: cracking wood, grinding concrete and deep booming as the blocks rise, then a sudden hollow silence with a low wind moaning between them. No music and no voices.
+
+Thanks.
+```
+
+#### E · the people he never met
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed.
+
+Within the first second every colour in the forest floods to full intensity: the moss turns acid green, the mist blazes violet and magenta, and glowing geometric lattice patterns spread across the trunks, the rocks and the ground, pulsing slowly. Then the mist tears open and the forest is packed with people as far as the eye can see, hundreds of ordinary men, women and children standing shoulder to shoulder between the trunks as dark silhouettes, their outlines glowing with shifting violet light, all facing the man. Then every one of them takes a single step towards him at the same moment, and the glowing patterns on the ground rush inward to his feet. He stands in the centre with the mug, breathing hard, and blinks, his mouth closed throughout.
+
+Audio: a deep drone rising to a roar, and hundreds of footsteps landing at once. No music and no voices.
+
+Thanks.
+```
+
+**Sources:** [Shanon, ayahuasca visualizations typology](https://www.researchgate.net/publication/233569909_Ayahuasca_visualizations-A_structural_typology) ·
+[Dr James Cooke, ayahuasca visions](https://www.drjamescooke.com/read/aya-visions) ·
+[Psychedelic Times, archetypes](https://psychedelictimes.com/the-universal-archetypes-of-ayahuasca-dreams-and-making-sense-of-your-own-visions/)
+
 ---
 
 ## Scene 10 — the wake-up, five years on
@@ -10543,3 +11120,205 @@ Thanks.
 - The crack glow doesn't crawl or boil.
 - No extra sparkles.
 - The two men don't change.
+
+### 12c-embers — the embers gather into the logo · **video (plate)** · written 2026-09-16, unrun
+
+**Jack, 2026-09-16:** *"i want this end frame … to somehow spell out badcode … would embers spelling it out
+in the sky be cool"*, then *"Embers gather into the logo please do this in a video prompt."* This is canon
+12d's original idea (*"the rising embers resolve into the bad code"*), moved onto the drum close-up.
+⬜ **Open:** does it **replace** the 12e-bc lightning reveal as the ending, or **hand over** to it? The film
+can't reveal the logo twice.
+
+**Three layers:**
+
+| Layer | Tool | What |
+| --- | --- | --- |
+| 1. The plate | **Flow** (this prompt) | The fire surges, embers lift off the paper and **gather and hang** in the dark band across the top of the frame |
+| 2. The logo | **ffmpeg** | The exact `docs/brand/logo/badcode-wordmark-reversed` fades in where the embers hang, filled with the flames' own flicker so it reads as made of fire. Then the embers drift off it |
+| 3. The hold | **Premiere** | Timing to the last narration word, and the handover to (or replacement of) 12e-bc |
+
+**Shot spec (shot-craft):**
+- **Job:** what the two men burned becomes the thing that has been talking all along. The narrator signs its
+  name in their fire.
+- **The camera stays locked.** 33.mp4 already has a Premiere push-in, and this plate stays still so the logo
+  can be laid over it exactly.
+- **Space for the logo:** the dark top band above the drum rim, across the frame, where there's only rain now.
+  The embers are told to go there.
+- **Light:** the fire is the only source, and the gathered embers glow faintly in the dark.
+
+**Engine decisions:**
+- 🔴 **No word, letter, logo or text noun anywhere in the prompt.** Every noun gets drawn (2f-5), and the paper's
+  printing is already in frame, so it isn't mentioned.
+- **"A thick swirl of embers"**, because we want many. Particle nouns have no volume control, so a lot is safe here.
+- **The embers hang instead of fading.** That's the one unreal thing and it's the point, said once, plainly.
+- **Shutter clause** for the fast embers leaving the flames, so they streak rather than look pasted on.
+- **Two beats:** the surge and lift, then the gathering and hanging.
+
+**Paste into:** Flow → **Omni Flash** → **Frames** → prompt box. **First frame:** the **last frame of `33.mp4`**,
+exported raw with no Premiere push-in (or `camera/reference/scene-12c-newspaper-burns-ACCEPTED.png`).
+**No end frame.** 16:9 · 720p · x2 · 8s.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still, a single continuous shot, everything at real speed.
+
+The fire in the drum surges up around the burning paper, and a thick swirl of glowing orange embers tears loose from it and rises fast into the dark above the rim of the drum, shot at 24fps with a 180-degree shutter so the fastest embers streak. Then, instead of fading, the embers slow and gather in the dark band across the top of the frame, hanging there in a long, loose, glowing cloud that drifts slowly from side to side, while the rain keeps falling through them and the fire below keeps burning.
+
+Audio: the fire roaring up and crackling, a soft rush of rising sparks, and steady rain. No music and no voices.
+
+Thanks.
+```
+
+**Check before accepting:**
+- The embers end up **hanging across the top band** with dark around them, which is where the logo goes.
+- No shapes, letters or symbols form by accident.
+- The drum, the paper and the hand at the right edge don't redraw.
+- The fire stays fire and doesn't strobe. ⚠️ Run `scripts/photosensitivity-check.py` after the composite.
+
+### 12c-embers — round 1 ❌ (Jack, 2026-09-16: *"That didn't work"*) and round 2
+
+⬜ **What came back isn't recorded.** Jack didn't say.
+
+**Likely cause, by the house rules:** round 1 asked for the one thing physics doesn't do, embers that
+*"instead of fading, slow and gather … hanging there"*. The engine has no footage of that to draw on, and
+[small asks keep the frame, big ones refuse or rebuild it](../../google-flow/omni-flash.md#️-the-changeadherence-trade-is-a-straight-line).
+There were also two motions and a shutter clause in one long sentence.
+
+**Round 2 moves the unreal part into post.** Flow is asked only for what real fire does: a flare, and a heavy
+stream of embers rising up through the dark top of the frame. **The gathering into the logo becomes the
+ffmpeg layer's job**, with the wordmark lit from the ember light as the embers pass through. The prompt is
+two plain sentences plus audio, with no shutter clause (it was subtracted).
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it. The view holds perfectly still.
+
+The fire in the drum flares up around the burning paper and throws a heavy, steady stream of glowing orange embers up into the dark above the drum, rising all the way through the top of the frame for the rest of the shot while the rain keeps falling.
+
+Audio: the fire roaring and crackling, and steady rain. No music and no voices.
+
+Thanks.
+```
+
+### 12c-embers — round 2 ❌ (*"nothing happened"*) → route change: 12f, the logo in the coals · **still** · written 2026-09-16, unrun
+
+**Jack, 2026-09-16:** *"nothing happened, maybe the camera goes into the barrel of lit firewood then it spells
+badcode out in the coals, or sparks."* The engine note is in
+[`omni-flash.md`](../../google-flow/omni-flash.md) (a fire plate on Frames came back with nothing happening).
+
+🔑 **Same route as 12e-bc, which worked: design the logo on a still first.** Stills are where the engine spells
+best, and a video clip reinvents the logo on every roll.
+
+| Layer | Tool | What |
+| --- | --- | --- |
+| 1. Into the barrel | **Premiere** | Push in on `33.mp4` down into the fire (it's already 100 → 107), then dissolve through the flames into 12f. A Flow camera move is where regeneration fires (hybrid method) |
+| 2. The logo in the coals | **Nano Banana 2** (this prompt) | Looking down into the bed of coals, where the glowing cracks spell the logo |
+| 3. It breathes | **Omni Flash, Frames** (after the still is accepted) | The coals glow brighter and dimmer, sparks lift off the letters, and rain hisses on them. Everything asked for is already in frame 0 |
+
+**Shot spec (shot-craft):**
+- **Job:** the film signs off. What the two men burned to stay warm is where the narrator's name was all along.
+- **Frame:** looking straight down into the drum. A crescent of the rusted rim at the frame edge ties it to 12c.
+  Below that is black charcoal and ash with the logo glowing through it. No flames cover the letters.
+- **The logo *is* the bright anchor**, and everything else is near-black. That's the "one bright region" rule.
+- **Brand:** the attached wordmark is the design. Red glow at the brace's top tip and blue at its bottom tip,
+  per [`docs/brand/README.md`](../../brand/README.md).
+
+**Paste into:** Flow → **Nano Banana 2** → image prompt box. **References, in order:** (1)
+`docs/brand/logo/badcode-wordmark-reversed-2400.png` (2) `camera/reference/scene-12c-newspaper-burns-ACCEPTED.png`.
+**No Characters.** 16:9 · 2 outputs.
+
+```prompt
+SCENE:
+
+The first attached image is the logo design to reproduce exactly. The second attached image shows the burning drum this photograph looks down into, and sets its look: the rusted metal, the firelight, the rain and the film grain.
+
+Documentary photograph looking straight down into the bottom of the rusted metal drum, close, at night. A thin crescent of the drum's rusted rim curves across one corner of the frame. Filling the rest of the frame is a bed of black charcoal, charred wood and grey ash from a fire that has burned down, with no tall flames left.
+
+Logo: glowing through the black charcoal, as cracks of burning orange ember light running through the coals, the word from the first attached image, spelled BadCode, with the same letter shapes and spacing and with the C as a curly brace. The top tip of the brace glows deep red and the bottom tip glows bright blue, exactly as in the logo design. The letters are formed by the embers themselves, glowing hottest along their centres and fading to dull red at their edges, with thin grey ash lying over parts of them, as if the fire had burned the word into the coals.
+
+Light: the glowing letters are the only light, lighting the nearby charcoal a soft orange and falling away to black at the edges of the frame. Raindrops fall into the drum and leave small dark wet spots and wisps of steam where they hit the embers.
+
+Details: real charcoal texture, ash, steam, rust and fine natural grain, matching the second reference.
+
+Constraints: The letters spell BadCode exactly, with a capital B, a lowercase a and d, the curly brace as the C, and a lowercase o, d and e. There is no other text anywhere in the frame. Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Check before accepting:**
+- It reads **BadCode**, with the brace as the C. Red tip on top, blue tip underneath.
+- The letters look **burned into the coals**, not a sticker on top.
+- The rim crescent and the rust match 12c.
+- No flames cover the letters, and there's no other text.
+
+### 12f — round 1 rewritten before running: **no brand brace, a coal lettering** · written 2026-09-16, unrun
+
+**Jack, 2026-09-16:** *"Do not do it in the badcode way with the bracket, just do it in a coal font that fits
+the scene."* 🔑 **So the brand wordmark reference is dropped, and the attachment is now only the 12c still.** No
+brace and no red/blue. It's a deliberate break from `docs/brand/`, Jack's ruling for this shot.
+
+**The lettering, described by shape (no font names, since the engine has no typeface control):** heavy,
+chunky capitals with rough, broken, uneven edges, as if cut roughly into the charcoal. Glowing hot along their
+centres and cooling to dull red at the edges. **All caps, `"BADCODE"` in quotation marks**, because short,
+all-caps, high-contrast quoted text is what the engines spell best (tenth pass).
+
+**Paste into:** Flow → **Nano Banana 2** → image prompt box. **Reference:** `camera/reference/scene-12c-newspaper-burns-ACCEPTED.png`
+only. **No Characters.** 16:9 · 2 outputs.
+
+```prompt
+SCENE:
+
+The attached image shows the burning drum this photograph looks down into, and sets its look: the rusted metal, the firelight, the rain and the film grain.
+
+Documentary photograph looking straight down into the bottom of the rusted metal drum, close, at night. A thin crescent of the drum's rusted rim curves across one corner of the frame. Filling the rest of the frame is a bed of black charcoal, charred wood and grey ash from a fire that has burned down, with no tall flames left.
+
+Lettering: across the middle of the coals, the word "BADCODE" glows through the black charcoal as burning embers. The letters are heavy, chunky capitals with rough, broken, uneven edges, as if cut roughly into the charcoal, each one glowing bright orange-yellow along its centre and cooling to dull red at its edges, with thin grey ash lying over parts of them, as if the fire had burned the word into the coals.
+
+Light: the glowing letters are the only light, lighting the nearby charcoal a soft orange and falling away to black at the edges of the frame. Raindrops fall into the drum and leave small dark wet spots and wisps of steam where they hit the embers.
+
+Details: real charcoal texture, ash, steam, rust and fine natural grain, matching the reference.
+
+Constraints: The word reads BADCODE exactly, seven capital letters, B A D C O D E. There is no other text anywhere in the frame. Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Check before accepting:** it spells BADCODE exactly, the letters look burned into the coals rather than laid on
+top, the rim and rust match 12c, and there's no other text.
+
+### 12f — ✅ still ACCEPTED 2026-09-16, and its clip · **video** · written 2026-09-16, unrun
+
+**The still:** BADCODE in chunky charred capitals glowing orange from inside, laid into a bed of charcoal in the
+drum, with a rusted rim at the top left and rain and steam at the right. It spells correctly. A reference copy
+from Jack's screenshot is at [`camera/reference/12f-badcode-coals-ACCEPTED-screenshot.png`](./camera/reference/12f-badcode-coals-ACCEPTED-screenshot.png).
+
+**Shot spec (shot-craft):**
+- **Job:** the last signature. The word breathes like a real fire, and one gust gives it a final flare.
+- **The camera is locked.** The push *into* the drum is Premiere's, on `33.mp4` into a dissolve.
+- **Two beats:** living embers, rain hissing and steam, then a breath of air makes the letters flare brighter
+  and throw up a few sparks before they settle.
+
+**Engine decisions:**
+- 🔴 **The word isn't written again and the letters aren't described.** Text already in frame 0 is locked by one
+  sentence and never re-spelled (tenth pass). *"Text rarely survives motion intact"*, so the letters themselves
+  don't move.
+- **No *"the view holds perfectly still"* this time.** On 12c-embers it froze the fire ([omni-flash note](../../google-flow/omni-flash.md)).
+  The prompt leads with the continuing motion and pins the camera in a clause.
+- **The glow flickers gently, not in a pulse.** Pulsing light makes fine texture boil (tenth pass). The flare is
+  one event with a cause (a breath of air), and then it settles.
+- **"A few sparks"**, because particle nouns overdeliver.
+
+**Paste into:** Flow → **Omni Flash** → **Frames** → prompt box. **First frame:** the accepted 12f still. **No end
+frame.** 16:9 · 720p · x2 · 8s.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it as one continuous shot, with the view fixed in place and everything moving at real speed. The glowing letters in the coals keep their exact shape, spacing and spelling for the whole clip.
+
+The embers glow and flicker gently and irregularly along the letters, raindrops land on the hot coals with small puffs of steam, and thin wisps of steam and smoke drift up through the frame. Halfway through, a breath of air moves across the drum and the letters glow brighter for a moment, sending a few small sparks lifting off them and drifting up out of the frame, then the glow settles back.
+
+Audio: rain pattering into the drum and hissing on the hot coals, a soft crackle of embers, and a low rush of air as the glow brightens. No music and no voices.
+
+Thanks.
+```
+
+**Check before accepting:** the letters stay spelled BADCODE and don't reshape, the charcoal texture doesn't crawl
+when the glow brightens, there are sparks but no flames covering the word, and nothing strobes. ⚠️ Run
+`scripts/photosensitivity-check.py`.

@@ -352,3 +352,31 @@ Jack watched the light pass and didn't notice it. **Same two effects on all 59 c
 **No clip is more crushed than its original.** The blink's alpha is unchanged. Table: `camping jack/frames/grade-measure-stronger-2026-09-14.txt`.
 
 **Undo just this step:** put the "Light pass" column back, or restore `backups/camping jack.post-grade-moves-cuts.2026-09-14.prproj`. The saved result is `backups/camping jack.post-stronger-grade.2026-09-14.prproj`.
+
+### 1c · The grade and grain carried to the new clips — 2026-09-16
+
+**Jack:** *"please do it for the rest of them."* The timeline had grown to **67 video clips** (66 on V1 and 1 on V2),
+and **14 had no grade**. Each got the 1b values exactly: `AE.ADBE Lumetri` 16 → 75 · 20 → −10 · 21 → −22 ·
+40 → 20 · 110 → −1.2, then `AE.ADBE Noise2` 0 → 5 · 1 → false, both appended last.
+
+| Ref | Clip | Starts |
+| --- | --- | --- |
+| `v0:40` `v0:41` `v0:42` `v0:43` | `53` `54` `56` `55` | 151.3 · 159.8 · 167.8 · 169.7 |
+| `v0:48` | `57` | 208.8 |
+| `v0:53`–`v0:59` | `58` `59` `60` `64` `62` `63` `65` | 236.3 → 280.4 |
+| `v0:65` | `66` | 309.2 |
+| `v1:0` (V2) | `56` | 157.3 |
+
+**Verified from the state file:** all 67 clips carry both effects, every Lumetri has identical parameter values
+(one group of 67), and every Noise does too (one group of 67). The first new Lumetri was diffed parameter by
+parameter against a graded clip and matched. It is still the last pair in every chain.
+
+**Undo:**
+- **Everything:** `backups/camping jack.pre-grade-new-clips.2026-09-16.prproj`, saved immediately before.
+- **In session:** Edit ▸ Undo, 28 `BadCode:` entries, 2 per clip.
+
+⚠️ The timeline has changed since 1b (runtime 254 → 317s, transitions 4 → 2), so the ref tables in the
+sections above are stale.
+
+**Needs a human:** watch 151–317s at speed. The V2 clip (`56.mp4` over `53`/`54`) is graded on its own layer.
+If it's a blend or partial overlay rather than a full cover, check it doesn't look double-graded.
