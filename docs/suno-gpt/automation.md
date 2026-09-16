@@ -390,6 +390,7 @@ Honesty about this is the point of the table — several recon assumptions faile
 | Claim | Status |
 | --- | --- |
 | CDP attach to the Flow Chrome reaches Suno | ✅ proven |
+| **Model menu mounts slower than 800ms (2026-09-16)** | ✅ **FIXED in `suno.mts` `openModelMenu`**. Since the menu gained a *Create Custom Model* entry, it can take >800ms to mount. The fixed wait read `model:NO-MENU`, aborted the run before Create (no credits lost), and left the menu open over the Lyrics editor, so the next fill timed out. It now waits up to 5s for `[role="menuitemradio"]`. Proven live: the retry loaded and created |
 | Style box fills to exactly 903 chars, counter agrees | ✅ proven |
 | Exclude styles fills | 🟡 **proven but flaky** — see the truncation row |
 | **Exclude box truncates on a multi-id run** | ✅ **FIXED in `suno.mts` 2026-08-27** — `fillChecked` (clear → blur → refill → blur → read back, ×4) was ported over from `style-ab.mts`, where it had been fixed and then never brought back, which is how 2026-08-27 hit the same bug a **fifth** time at **117/499**. `load` now also **asserts `excludeLen`** and refuses to continue into `pair`. Previously: 🔴 **proven, four times** — 2026-08-25/26, EVERY time on the *second* variation of a run: 117/831, 169/871, 180/695. The kept prefix length varies, which rules out a `maxlength` and reads like stale React state winning a race against `.fill()`. Fix: clear → blur → refill → blur → read back, retry ×4 (`fillChecked` in `style-ab.mts`). A length assertion before Create is what makes a bad fill free |

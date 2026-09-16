@@ -7,6 +7,53 @@ status: ⬜ extracted and prepared, never rendered
 
 # Bob's lines — all five
 
+## ✅ B4 v2 — the scene-8 trigger line. WORKED 2026-09-16 (Jack: *"That worked"*)
+
+**Replaces B4** (*"Fucking wank tanks, if only I could have..."*, A3 166.50 → 170.04). The brief:
+Jo's death was too subtle, so Bob has to give it away without saying it outright. Seeing the X8
+sets off his PTSD and he talks himself down.
+
+**Where the line comes from:**
+- **"We should've left early. I should've."** He starts with "we" and corrects it to "I", and
+  it pays off B1's *"She wanted to leave early… I said there was no rush"*. The guilt lands
+  without anyone explaining it.
+- **The breathing count and "Different car. Different fella."** The then-versus-now self-talk
+  taught in trauma-focused CBT (PTSD UK, Psychology Tools), and NHS breathing counts out to five.
+- **"Two-man tent, this. Just the one man."** The tent is the one they bought for the Wales trip.
+
+**What got it there, in order:**
+1. **The first Sample Context was too emotional.** *"A bad fright"*, *"fighting to get his body
+   back under control"* and *"every second of it costs him something"* all pushed the read toward
+   drama, and it stopped sounding like Bob.
+2. **The fix was Bob's original casting wording plus "a hundred times before".** It keeps the
+   feeling but plays it as something he has practised. Only that one field changed.
+3. **Changing the punctuation did not help.** Full stops turned into commas and a lower-case
+   "fucking" were rejected. The line is kept exactly as written.
+4. **"We bought this for the trip. I bought…" did not land.** When you only hear it, *this* points
+   at nothing, and *"I bought…"* trails off like a lost thought rather than a correction.
+
+⬜ **Timeline:** not placed yet. It runs about 10–12s against B4's 3.5s slot, so the scene-8
+picture has to hold longer or the line has to start earlier. B3 (*"Why is he taking two spaces?"*)
+can stay or go.
+
+Settings: Composer · Temperature 1 · Voice `Algenib` · Voice Direction and Scene **unchanged**, as
+below.
+
+**→ Sample Context** (B4 v2 only)
+
+```
+Bob is talking himself down after a bad moment, the way he has done a hundred times before. He has had a long time to get used to it and is not asking for sympathy.
+```
+
+**→ Speech block** (no tags)
+
+```
+We should've left early. I should've. Fucking wank tanks. Breathe, you daft sod. In, two, three, four, five. Different car. Different fella. Two-man tent, this. Just the one man.
+```
+
+⬜ **Assumed, not confirmed:** that the take that worked is option 8 exactly as above, with the
+tent-car-park Scene below rather than the voiceover-booth Scene in `profiles/bob-algenib.md`.
+
 ## 🔒 The box set is the 2026-09-08 build, unchanged — Jack ruled it 2026-09-09
 
 **Jack: *"do what was saved before for Bob, I don't want the voice to change."*** ✅ **All four

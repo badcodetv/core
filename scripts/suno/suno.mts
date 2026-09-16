@@ -418,8 +418,13 @@ async function openModelMenu(page: Page): Promise<boolean> {
   if (!at) return false
   const { x, y } = JSON.parse(at as string)
   await page.mouse.click(x, y)
-  await page.waitForTimeout(800)
-  return ((await page.locator('[role="menuitemradio"]').count()) as number) > 0
+  // Wait for the items rather than a fixed 800ms: since the "Create Custom Model" entry arrived
+  // (2026-09-16) the menu can take >800ms to mount, which read as NO-MENU and left it open.
+  return page
+    .locator('[role="menuitemradio"]')
+    .first()
+    .waitFor({ state: 'attached', timeout: 5000 })
+    .then(() => true, () => false)
 }
 
 const RADIOS = `
