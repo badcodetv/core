@@ -408,7 +408,8 @@ Honesty about this is the point of the table — several recon assumptions faile
 | Voice attaches; Overwrite dialog appears; Keep Current works | ✅ proven |
 | Title sets via the native value setter + `input` event | ✅ proven |
 | Workspace picker selects an existing workspace | ✅ proven (`gpom-story`) |
-| Workspace picker **creates** a new workspace | ⬜ **not tested** — input says "Search or create…" |
+| Workspace picker **creates** a new workspace | ✅ **proven live 2026-09-17** (`camping background music`). Typing a new name shows *"No workspaces"* and **no row**, so `setWorkspace` returns `workspace:no-row`. The create control is the small **+** button right of the input, `button[aria-label="Create new workspace"]`. A native click works, a *"New workspace created"* toast appears, and the next `load` picks the new row normally. ⬜ `setWorkspace` does not click it yet |
+| 🔴 **Duration: the number box and the slider disagree** | ✅ **proven live 2026-09-17.** `setDuration` wrote 45 to `input[placeholder="Auto"]` and read it back, while `[role=slider][aria-label=Duration]` still read **180**, left by an earlier song. `setDuration` now drives the slider too, whenever it exists (5s steps). **Then the camping score (18 Creates, targets 25–70s) came back within ~10s of target on every take, most within 1s. So a set duration DOES change the take's length on v6** |
 | Form is wiped by navigation | ✅ proven (accidentally) |
 | Whole Gen A set loads in one command | ✅ proven end-to-end |
 | **Create click** | ✅ proven — 10 credits per click, 2 takes per click |
@@ -434,8 +435,7 @@ Honesty about this is the point of the table — several recon assumptions faile
 Create, then **nudge the slider and retitle**, Create again. No reload between halves. This is what
 makes `suno_pair` a single call rather than two full loads.
 
-Two things still unproven: **creating a new workspace** through the picker (only selecting an
-existing one has been exercised), and **harvesting** beyond reading titles and durations off the
+One thing still unproven: **harvesting** beyond reading titles and durations off the
 clip rows.
 
 ---

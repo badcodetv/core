@@ -20,6 +20,19 @@ the scene. The profile is unchanged, including its own Sample Context.
 Tarquin thinks he's pleading his innocence before God. It isn't God. I'd know. It's his conscience. First time they've met.
 ```
 
+## 🆕 The parking jab · ✅ rendered 2026-09-17 (Jack: *"that worked"*)
+
+Jack: *"Tarquin parking in the only way he knows how"*, sarcastic and condescending. ⬜ **Probably lands on
+`8a`**, where the X8 straddles two bays (inferred, not confirmed). Profile, Scene and Sample Context are
+unchanged, so it stays the same Nell. The condescension comes from one documented `[sarcastic]` tag, not a
+custom emotion tag (those are weak), and from the ellipsis, which gives her a beat of looking at the car.
+
+**→ Speech block**
+
+```
+[sarcastic] Tarquin… parking in the only way he knows how.
+```
+
 **Extracted from Jack's 2026-09-09 script.** Every `NARRATOR {FLAT}` line, in film order, nothing
 else. Bob's and Tarquin's lines are separate renders on their own voices.
 

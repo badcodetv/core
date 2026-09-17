@@ -11322,3 +11322,350 @@ Thanks.
 **Check before accepting:** the letters stay spelled BADCODE and don't reshape, the charcoal texture doesn't crawl
 when the glow brightens, there are sparks but no flames covering the word, and nothing strobes. ⚠️ Run
 `scripts/photosensitivity-check.py`.
+
+### 10-rev — outside the tent looking in, Tarquin frozen · **still** · written 2026-09-17, unrun
+
+**Jack, 2026-09-17:** *"the camera outside the tent looking in at Tarquin, looking terrified. No exaggerated ai
+slop expressions."* It's the reverse of the accepted tent POV (night, rain, drum fire, hooded man in the
+doorway). ⬜ **Where it cuts in is inferred:** straight after the POV, so we see what the hooded man sees.
+
+**Shot spec (shot-craft):**
+- **Job:** the POV showed the threat. This shows what it does to him. It's the first time the untouchable man is scared.
+- **Register:** human scale, documentary. Not monumental, so gate 2 doesn't apply.
+- **Depth:** the wet door flap soft at frame left, rain in front of the doorway, then his face, then the back of the tent going black.
+- **Focal point:** his face. It's the one warm, bright area in a dark frame.
+- **Light:** the drum fire, behind the camera and to its left, coming in through the doorway. The left side of his face is lit and
+  the right side falls away. It closes physically (§20): he has pushed up toward the doorway, so the fire can reach him.
+- **Camera:** crouched at the doorway, at his eye height, level, 50mm, about 2.5m from him.
+- **Withheld:** the man he's looking at. Only his shadow is across the sleeping bag. Tarquin's eyes are aimed past the lens.
+- **Moves:** nothing. It's a still.
+
+**Engine decisions:**
+- 🔴 **Cast the Character and describe nothing about how he looks** (§19). Only posture and face muscles.
+- 🔑 **No emotion word anywhere.** Fear is written as its muscle pattern: inner brows raised and pulled together, flat
+  rather than arched (arched reads as surprise), upper lids lifted so white shows above the iris, tight lower lids,
+  lips parted and stretched a little sideways. The eyes get more words than the mouth. **The body freezes and he
+  holds his breath**, which is what real fear does, not a scream.
+- **"The expression stays small" is in Constraints** (fifth pass). If it still overplays, re-roll. Don't reword it harder.
+- **The bottle stays in his hand, forgotten.** It carries over from the POV and says more than the face does.
+- **No second person in the frame, and no named body parts** for anyone else (§18). The standing man is only a shadow.
+  ⬜ **If a figure appears, delete the shadow sentence first.**
+- **No tent reference attached.** A POV reference pulls the composition back to the POV and teaches it the body
+  position (§24). The tent goes into prose. **Fallback if the set drifts:** attach the POV and say it's the view from
+  the other end, like 9-mug round 2.
+- **Model: Nano Banana Pro.** "Pro 2" doesn't exist. Pro is the pick for a single-source low-light frame with an
+  occluder, and it's the model the accepted camping frames were made on.
+
+**Paste into:** Flow → **Nano Banana Pro** → image prompt box. **Cast:** `@Tarquin-new` (Jack's "future tarquin"). **Attach:** nothing else. 16:9 · x2.
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 800, a single handheld night exposure. Heavy grain in the shadows, muted colour, low saturation, unposed and imperfect.
+
+Camera and framing: 50mm lens at f/2.8, crouched just outside the open doorway of a small dome tent at night, level, at the height of a man propped up on his elbows, about two and a half metres from his face. The doorway fills the right two-thirds of the frame, slightly off-centre and not quite level. Across the left edge of the frame, close to the lens and soft out of focus, hangs the wet, sagging door flap of the tent. Rain falls between the lens and the doorway, the nearest drops caught as short orange streaks in the firelight.
+
+Action: Inside the tent, the man from the character reference lies in a sleeping bag with his feet toward the doorway and has pushed himself up onto his elbows. He has frozen halfway through the movement, his head pulled back a little and his chin drawn in. His eyes are aimed just above and to the left of the camera, at something standing outside. His inner brows are raised and pulled together, flat rather than arched, with faint lines across his forehead. His upper eyelids are lifted so a thin line of white shows above each iris, and his lower eyelids are tight. His lips are parted slightly and stretched a little to the sides. He is holding his breath. One hand still holds a brown beer bottle, forgotten, tilting against the sleeping bag. He is not aware of the camera.
+
+Environment: The tent is old and dirty, its pale fabric stained and sagging, with a torn patch on the left wall mended with tape. Empty brown beer bottles and crushed cans lie in the folds of a rumpled sleeping bag and a grey fleece blanket. Mud is trodden into the groundsheet at the doorway. Behind his head the back of the tent falls into darkness.
+
+Light: The only light is a fire burning in a metal drum outside, behind the camera and to its left. Its warm, uneven orange light comes in through the doorway from the left, lighting the left side of his face and the sleeping bag, while the right side of his face falls into shadow and the back of the tent goes nearly black. Across the lower half of the sleeping bag lies the long dark shadow of someone standing between the fire and the tent.
+
+Details: Real skin texture with a light sheen of sweat, condensation beading on the tent fabric, fine natural grain, ordinary and unstyled.
+
+Constraints: He is the only person in the frame. His expression stays small and real, held in the eyes. No signs, logos or readable text anywhere in the frame.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Check before accepting:** no second face or figure, the face reads as fear and not surprise (flat brows), no
+open-mouthed scream, the right side of his face really is dark (no invented fill), and the bottle hand hasn't morphed.
+
+### 10-rev — rewritten before running: the tent POV attached as the set reference · written 2026-09-17, unrun
+
+**Jack:** *"please use this as a reference image"*, the accepted tent POV (bottle in hand, hooded man by the drum
+fire). This follows the 9-mug round 2 pattern that got accepted:
+- **The reference's role is declared narrowly**, as the place seen from his own eyes, and then the camera is turned
+  round (§29).
+- **The set isn't restated.** The patch, bottles, cans and blanket come from the photo (§2). Only the back of the
+  tent, which the POV never shows, is written.
+- **Geometry, worked out from the POV:** the fire and the hooded man are right of the doorway looking out, so looking
+  in they're **camera-left**. That means the light comes from the left, his eyes aim above and left of the lens, and
+  the shadow lands on the left.
+- 🔴 **Risk (§24):** a POV reference pulls the frame back to the POV. The counter is stating what the frame physically
+  holds: the outside of the tent around the edges and his face in the doorway. **If it comes back as a POV again,
+  delete the door-flap sentence** and move the camera a metre further back.
+
+**Paste into:** Flow → **Nano Banana Pro** → image prompt box. **Cast:** `@Tarquin-new` (first slot). **Attach:**
+the accepted tent POV (second slot). 16:9 · x2.
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 800, a single handheld night exposure. Heavy grain in the shadows, muted colour, low saturation, unposed and imperfect.
+
+The attached photograph shows this tent, this car park and this fire from the man's own eyes as he lies inside. This photograph is taken from the opposite direction: from outside in the rain, near where the hooded figure stands, looking back in through the doorway at the man from the character reference.
+
+Camera and framing: 50mm lens at f/2.8, crouched just outside the open doorway, level, at the height of a man propped up on his elbows, about two and a half metres from his face. The outside of the tent, wet fabric streaked with dirt, fills the edges of the frame, and the doorway sits slightly right of centre and not quite level, with his face inside it. Across the left edge of the frame, close to the lens and soft out of focus, hangs the wet, sagging door flap. Rain falls between the lens and the doorway, the nearest drops caught as short orange streaks in the firelight.
+
+Action: The man from the character reference lies in the sleeping bag with his feet toward the doorway and has pushed himself up onto his elbows. He has frozen halfway through the movement, his head pulled back a little and his chin drawn in. His eyes are aimed just above and to the left of the camera, at someone standing outside. His inner brows are raised and pulled together, flat rather than arched, with faint lines across his forehead. His upper eyelids are lifted so a thin line of white shows above each iris, and his lower eyelids are tight. His lips are parted slightly and stretched a little to the sides. He is holding his breath. One hand still holds the brown beer bottle, forgotten, tilting against the sleeping bag. He is not aware of the camera.
+
+Environment: The bottles, cans, sleeping bag and blanket around him are the ones in the attached photograph. Behind his head the back wall of the tent falls into darkness.
+
+Light: The only light is the fire in the metal drum, outside, behind the camera and to its left. Its warm, uneven orange light comes in through the doorway from the left, lighting the left side of his face and the sleeping bag, while the right side of his face falls into shadow and the back of the tent goes nearly black. Across the left side of the sleeping bag lies the long dark shadow of someone standing between the fire and the tent.
+
+Details: Real skin texture with a light sheen of sweat, condensation beading on the tent fabric, fine natural grain, ordinary and unstyled.
+
+Constraints: He is the only person in the frame. His expression stays small and real, held in the eyes. No signs, logos or readable text anywhere in the frame.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### 10-rev — round 1 ❌ and round 2 · written 2026-09-17, unrun
+
+**Jack, on round 1:** *"make it consistent with the previous reference image shared, he should be sitting up, the tent
+should match and he should be looking scared."*
+
+**What came back:** a dirty grey-green dome with a small dark doorway, not the pale tent with its tall arched door.
+He was propped on his elbows, as written. His face read wary, not scared. ✅ **Keep:** the fire in frame left and the
+hooded man's shadow thrown across the tent. Neither was a complaint, and the shadow is the best thing in the frame.
+
+**Diagnosis, one cause each:**
+- **Tent:** 🔑 *inferred:* **my own clause "wet fabric streaked with dirt" overrode the reference.** A colour
+  and texture written in prose beats the attached photo (§9). Deleted. The tent's four defining features are now
+  named as belonging to the photo, narrowly, per §29: the pale off-white fabric, the tall rounded arch, the door
+  fabric gathered at one side, and the taped patch.
+- **Posture:** the prompt asked for elbows. Now he's sitting upright.
+- **Face:** the muscle pattern was too small to carry at this size. It isn't escalated into an emotion word. Instead,
+  **the body carries it**: he has pulled back from the doorway, his shoulders are raised, and his free hand grips the
+  sleeping bag at his chest. The eyes get stronger and more physical: fixed wide, white showing above the iris, his
+  face drained. His eyeline is almost into the lens, because the camera stands near the man he's looking at.
+
+**Paste into:** Flow → **Nano Banana Pro** → image prompt box. **Cast:** `@Tarquin-new` (slot 1). **Attach:** the
+accepted tent POV (slot 2). 16:9 · x2.
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 800, a single handheld night exposure. Heavy grain in the shadows, muted colour, low saturation, unposed and imperfect.
+
+The attached photograph shows this exact tent, this car park and this fire from the man's own eyes as he lies inside. This photograph is taken from the opposite direction: from outside in the rain, near where the hooded figure stands, looking back in through the doorway at the man from the character reference. It is the same tent as in the attached photograph: the same pale, almost white fabric, the same tall rounded arched doorway, the same door fabric gathered and tied back at one side, and the same torn square patch taped onto the inside wall.
+
+Camera and framing: 50mm lens at f/4, crouched outside the tent about three metres from the doorway, level with his face. The tall arched doorway fills most of the frame, slightly right of centre and not quite level, with him sitting inside it. The fire in the metal drum burns at the left edge of the frame, partly cut off by the edge. Rain falls between the lens and the doorway, the nearest drops caught as short orange streaks in the firelight.
+
+Action: The man from the character reference sits bolt upright in the sleeping bag, his legs inside it stretched toward the doorway. He has pulled his upper body back, away from the doorway, and his shoulders are raised and stiff. His free hand grips the top of the sleeping bag against his chest, and his other hand still holds the brown beer bottle, forgotten, at his side. His eyes are fixed wide on a point just above the camera lens, not blinking, with white showing above each iris. His inner brows are raised and pulled together, flat rather than arched, and his forehead is creased. His face has gone pale and slack, and his lips have fallen slightly apart. He is holding his breath. He is not aware of the camera.
+
+Environment: The bottles, cans, sleeping bag and blanket around him are the ones in the attached photograph. Behind him the back wall of the tent falls into shadow.
+
+Light: The only light is the fire in the metal drum at the left of the frame. Its warm, uneven orange light comes in through the doorway from the left, lighting the left side of his face and the pale fabric around the doorway, while the right side of his face falls into shadow. The tall black shadow of someone standing between the fire and the tent is thrown across the pale fabric on the left of the doorway.
+
+Details: Real skin texture with a light sheen of sweat, rain beading on the tent fabric, fine natural grain, ordinary and unstyled.
+
+Constraints: He is the only person in the frame. His expression stays real and unperformed, carried mostly by his eyes and his body. No signs, logos or readable text anywhere in the frame.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### 10-rev — round 2 ✅ still ACCEPTED 2026-09-17 (Jack: *"this is great"*), and its clip · **video** · written 2026-09-17, unrun
+
+**The still:** the pale tent and its taped patch match the POV. He sits upright in the sleeping bag, gripping it
+to his chest, with the bottle in his other hand and wide eyes. The drum fire is at frame left, and the hooded man's
+shadow is thrown tall across the tent. A reference copy from Jack's screenshot is at
+[`camera/reference/10-rev-tent-fear-ACCEPTED-screenshot.jpg`](./camera/reference/10-rev-tent-fear-ACCEPTED-screenshot.jpg).
+
+**Shot spec (shot-craft):**
+- **Job:** dwell. The threat never enters the frame. Only its shadow moves, and he reacts to it.
+- **Camera locked**, so it spends none of the camera budget. ⬜ **Optional push-in in Premiere** onto his face
+  across the 8s (a slow Motion scale, clip-relative keyframes). It's the one move that means "narrowing toward a
+  realisation".
+- **Two beats, the second smaller** (one primary motion, one reaction). Beat 1: the world is alive (the fire flickers,
+  so the shadow wavers; rain) and he's frozen but breathing. Beat 2: the shadow leans a little closer, and he flinches
+  back an inch and grips tighter.
+
+**Engine decisions:**
+- **Tab: Frames.** Both the set and the face matter, and the tab rule's "both" row says Frames with almost no motion.
+  No dialogue means no lip-sync to lose. **Fallback if his face changes:** Ingredients with the still in slot 1 and
+  `@Tarquin-new` in slot 2, same prompt.
+- 🔴 **No "the view holds perfectly still".** On 12c-embers it froze the fire. The camera is pinned in a clause and
+  the prompt leads with continuing motion (the 12f pattern).
+- **Biological motion is prompted outright:** fast shallow breathing, and one blink late in the clip. A frozen man who
+  doesn't breathe is the tell.
+- **The shadow's lean is a small reach, not a new state.** ⬜ **If a person walks into frame, or the shadow turns
+  into a figure, delete the lean sentence** and let the fire's flicker move the shadow on its own.
+- **His mouth stays slightly open and silent**, with no speech in the audio (standing rule). The audio carries
+  the threat: a single footstep in a puddle outside.
+- **No emotion words** (*terrified*, *scared*) and no slop words (*cinematic*, *dramatic*).
+
+**Paste into:** Flow → **Omni Flash** → **Frames** → prompt box. **First frame:** the accepted 10-rev still. **No end
+frame.** 16:9 · 720p · x2 · 8s.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it as one continuous shot, with the camera fixed in place and everything moving at real speed.
+
+The fire in the drum at the left keeps burning and flickering unevenly, rain streaks down through the firelight, and the tall shadow on the tent fabric wavers with the flames. Inside the tent the man sits rigid, staring at the same point, his chest rising and falling in quick shallow breaths, his hand clenched in the sleeping bag. About halfway through, a footstep splashes outside and the shadow on the tent leans slightly closer to the doorway. He flinches back a few centimetres, his grip tightens on the sleeping bag, and he blinks once, then keeps staring, his lips slightly parted and silent.
+
+Audio: heavy rain drumming on the tent fabric, the fire crackling and hissing in the rain, his quick shallow breathing close by, and one slow footstep in a puddle outside. No music and no voices.
+
+Thanks.
+```
+
+**Check before accepting:** his face stays the man in the still, the shadow stays a shadow (no figure enters the
+frame), the fire doesn't freeze, the hands holding the bottle and bag don't morph, and his mouth doesn't move as if
+talking.
+
+## 🚗 The BAD C0DE plate — planted in 5a and 8a, paid off dead and clamped · ruled 2026-09-17 (Jack)
+
+**Jack:** *"This is great… the wank tank's plate reads BAD C0DE. Plant it at the Shard (5a) and when he parks (8a),
+then pay it off at the end with the car dead and clamped in the rain."* The brainstorm is in
+[`ending-logo-ideas.md`](./ending-logo-ideas.md). 🔑 **This overrides the no-readable-plate rule for the X8 only.**
+Every other plate in the film stays unreadable. **One shot at a time, still then video.** Order: 8a first,
+because Jack described its clip. Then the payoff, then 5a.
+⬜ **5a is already accepted with an unreadable plate.** A new 5a insert, or a re-shoot, is owed later. Premiere
+can't track and replace a moving plate.
+
+### 8a-plate — the X8 rolls in to a stop beside the tent, the plate readable · **still** · written 2026-09-17, unrun
+
+**Shot spec (shot-craft):**
+- **Job:** plant the joke. The first time we can read the plate is the moment he takes two bays next to a man in a
+  tent. Nell's *"Tarquin… parking in the only way he knows how"* goes over it.
+- **Focal point:** the plate. It's the sharpest, brightest flat thing in the frame, at lens height.
+- **Camera:** low, at kerb height (about 60cm), beside the tent, so it's Bob's side of the car park. Front three-quarter,
+  so the grille identifies the car (the X8 memory rule). 50mm, about 4m from the nose.
+- **Depth:** a soft guy rope and the tent's flysheet edge in the foreground left, the car in the midground, and a
+  shopper with a trolley far behind, not looking.
+- **Light:** flat grey rain daylight as the key. The headlights are a bounded practical, lighting the rain in front of
+  the car and nothing else.
+- **The two bays are geometry, not a word:** the painted line between two bays runs straight under the middle of the car.
+- **Moves (for the clip):** the car rolls to a dead stop, with no camera move.
+
+**Engine decisions:**
+- **Model: Nano Banana Pro.** It's the best at text in the family, and "Pro 2" doesn't exist.
+- **Text rules (web, vendor and community):** the exact string in double quotes, the style described separately from
+  the words, short, and spelled out character by character. The zero is named, because O and 0 look almost the same
+  in the UK plate typeface anyway.
+- **Anti-advert (5a round 1's lesson):** a working car with road film, rain-flecked and not glossy. People and clutter
+  are in the world, one key light, off-centre and not level, with a foreground occluder.
+- **The plate is in sharp focus.** Only the wheels get motion blur, so the clip has a reason to stop.
+
+**Paste into:** Flow → **Nano Banana Pro** → image prompt box. **Attach:** nothing. 16:9 · x2.
+
+```prompt
+A documentary press photograph for a newspaper feature about wealth and homelessness in Britain. This is a news picture, not an advertisement.
+
+Subject: A blacked-out BMW X8, the enormous flagship BMW SUV, tall and flat-fronted, with a huge vertical stacked double-kidney grille filling the nose and split headlights: thin horizontal LED daytime-running strips set high across the top of each front wing, with separate main headlamp blocks below them. Long slab flank, high beltline, privacy glass, big dark alloys. It is a working car in a British winter: rain-flecked, a grey film of road dirt up the lower doors and sprayed behind the wheel arches. On the front bumper is a standard British front number plate, white with black characters in the standard UK number plate typeface, reading "BAD C0DE": the letters B, A, D, then a space, then the letter C, the number zero, the letter D and the letter E. The plate is clean enough to read and in sharp focus.
+
+Composition: 50mm lens at f/2.8, camera low at kerb height, about four metres from the front of the car, looking at its front three-quarter. The car sits right of centre, and the number plate is at the height of the lens. Across the left edge of the frame, close to the lens and soft out of focus, is the wet edge of a small dome tent's flysheet and one taut guy rope. The horizon is not quite level.
+
+Action: The car is rolling slowly into a parking space, the last metre before it stops, its wheels still turning with slight motion blur and its headlights on. It is parked badly: the white painted line between two parking bays runs straight under the middle of the car. Far behind it, a shopper pushes a trolley through the rain, head down, not looking.
+
+Location: A British supermarket car park on a wet winter afternoon. Worn white bay markings, puddles broken up by grit, a drain grate, a flattened coffee cup, and an abandoned trolley against a lamp post in the middle distance.
+
+Style: Shot on 35mm Kodak Portra 800, handheld, natural grain through the shadows. Flat grey daylight from the overcast sky is the only real light. The headlights light the rain falling just in front of the car and nothing else. Muted, cold and unglamorous, with steady rain visible against the dark car.
+
+Constraints: The number plate reads exactly "BAD C0DE". No other lettering, sign or poster anywhere in the frame is legible.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Check before accepting:** the plate spells B-A-D, space, C-0-D-E, with no extra or dropped characters. The car reads as
+the BMW (grille and split lights). The line runs under the middle of the car. It isn't glossy or advert-lit.
+
+### 8a-plate — round 1 (the wide) → round 2: very close on the grille and plate · written 2026-09-17, unrun
+
+**Round 1 came back well:** the X8 reads as the BMW, the plate reads `BAD CODE` (O and 0 look identical in the UK
+typeface, which is fine), the line runs under the car, and it's not advert-lit. ⚠️ **The tent came back green,**
+but canon says blue and grey (the Waitrose plate). A close-up crops it to a guy rope, so it doesn't matter here.
+The frame is saved at [`camera/reference/8a-plate-wide-round1-screenshot.png`](./camera/reference/8a-plate-wide-round1-screenshot.png).
+
+**Jack:** *"a very zoomed in version of the car and number plate, make it cinematic."*
+
+**Shot spec (shot-craft):** *"cinematic"* is a slop word, so it's turned into decisions:
+- **Job:** the read. The grille and plate are the whole frame, so the joke can't be missed.
+- **Lens:** 135mm at f/2, from about six metres, low at plate height. The long lens compresses and the car park
+  melts into soft grey behind.
+- **Frame:** the plate is lower-left of centre. The grille bars run out of the top of the frame, and one lit LED strip
+  cuts in at the right edge. It isn't symmetrical and doesn't show the whole car.
+- **Depth:** rain falling close to the lens as soft streaks, the tent's guy rope as a soft diagonal across the bottom
+  corner, the grille and plate razor sharp, then out-of-focus car park.
+- **Light:** flat overcast top light as the key, so the plate's white is the brightest area. The LED strip is a small
+  bounded practical.
+- **For the clip:** in close-up, a stop reads as the nose dipping and settling on its suspension.
+
+**Engine decisions:**
+- **The round-1 image is attached as the car reference**, declared narrowly as *this car*. The car isn't
+  re-described beyond its name. The plate string is quoted again, because a new still has to draw it.
+- **No *cinematic*, *epic* or *moody*.** The lens, aperture and composition do that job.
+
+**Paste into:** Flow → **Nano Banana Pro** → image prompt box. **Attach:** the round-1 wide. 16:9 · x2.
+
+```prompt
+A documentary press photograph, a tight telephoto detail shot. This is a news picture, not an advertisement.
+
+The attached photograph shows this exact car, this BMW X8, in this car park. This photograph is a much closer shot of its front.
+
+Composition: 135mm lens at f/2, camera low at the height of the number plate, about six metres away, slightly off to the car's left. The front of the car fills the whole frame: the lower half of the huge black kidney grille, the front bumper and the number plate. The plate sits left of centre, in the lower half of the frame. The vertical grille bars run out of the top edge, and the lit LED daytime-running strip of one headlight cuts in at the right edge. Across the bottom corner of the frame, close to the lens and soft out of focus, runs the taut guy rope of the tent from the attached photograph. Rain falls between the lens and the car, the nearest drops soft blurred streaks.
+
+Subject: The standard British front number plate, white with black characters in the standard UK number plate typeface, reading "BAD C0DE": the letters B, A, D, then a space, then the letter C, the number zero, the letter D and the letter E. The plate is in razor-sharp focus, with raindrops beading on it and a thin film of road grime along its lower edge. The black paint and grille around it are wet and dirty, spattered with grey road spray.
+
+Background: behind the car, the car park falls away into soft out-of-focus grey shapes, with no detail readable.
+
+Style: Shot on 35mm Kodak Portra 800, handheld, natural grain through the shadows. Flat grey overcast daylight from above is the only real light, so the white of the plate is the brightest area in the frame. Deep, muted blacks, cold and unglamorous. No lens flare.
+
+Constraints: The number plate reads exactly "BAD C0DE". No other lettering anywhere in the frame is legible.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### 8a-plate — round 2 ✅ still ACCEPTED 2026-09-17 (Jack: *"perfect"*), and its clip · **video** · written 2026-09-17, unrun
+
+**The still:** a tight shot of the grille, with a razor-sharp `BAD CODE` plate lower-left of centre, rain beading on
+the black paint, the LED strip lit at top right, the tent's guy rope a soft diagonal across the bottom, and the car park
+as soft grey. A reference copy from Jack's screenshot is at
+[`camera/reference/8a-plate-close-ACCEPTED-screenshot.png`](./camera/reference/8a-plate-close-ACCEPTED-screenshot.png).
+
+**Jack:** *"make the video for it, do what you want with it."*
+
+**Shot spec (shot-craft):**
+- **Job:** the dead stop, with the joke landing on the silence. In close-up a stop is the **nose dipping and rocking
+  back on its suspension**, not the car travelling, so the plate barely moves.
+- **Two beats, the second smaller:**
+  1. The car creeps its last few centimetres, dips and settles.
+  2. A beat later **the engine cuts and the LED strip goes dark**, leaving rain on a dead car. This rhymes with the
+     film's ending, where the car is dead in the rain.
+- **Camera locked**, so it spends none of the budget. Nell's parking line lands over the settle.
+
+**Engine decisions:**
+- **Tab: Frames.** No face, and the framing and plate are the shot, so the tab rule says Frames.
+- 🔴 **The plate string isn't quoted or spelled again.** Text already in frame 0 is locked by one sentence (tenth
+  pass: *"text rarely survives motion intact"*). The web advice agrees: small, slow motion, and name what stays in place.
+- **No "holds perfectly still".** The camera is pinned in a clause, and the motion leads (12f pattern).
+- ⚠️ **The lights going off is a reach for a new state.** If it's ignored, fine: the settle alone is the shot.
+  **If the plate letters warp, delete the dip sentence** and keep only rain and the lights going off.
+- **Audio does the weight:** tyres on wet grit, a short brake squeak, the engine dying, then rain on the bonnet
+  and a tick of hot metal. No music and no voices.
+
+**Paste into:** Flow → **Omni Flash** → **Frames** → prompt box. **First frame:** the accepted close-up. **No end
+frame.** 16:9 · 720p · x2 · 8s.
+
+```prompt
+The attached image is the first frame of this shot, and the clip continues directly from it as one continuous shot, with the camera fixed in place and everything moving at real speed. The number plate keeps its exact lettering, shape and position for the whole clip, and the rope in the foreground stays where it is.
+
+Rain keeps falling in front of the car and fresh drops land and run on the black paint. In the first seconds the car creeps the last few centimetres forward and brakes: the front dips down gently on its suspension, rocks back up and settles. Then it is still. A few seconds later the engine stops and the lit headlight strip at the top right goes dark, and the rain keeps falling on the parked car.
+
+Audio: tyres rolling slowly over wet grit, a short soft squeak of brakes, the engine running and then cutting out, then rain pattering on the bonnet and the faint ticking of hot metal. No music and no voices.
+
+Thanks.
+```
+
+**Check before accepting:** the plate letters never warp or change, the whole car doesn't slide sideways or grow,
+the rope doesn't jump, and the dip is small and physical, not a bounce.

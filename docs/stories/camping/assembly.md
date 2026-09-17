@@ -380,3 +380,94 @@ sections above are stale.
 
 **Needs a human:** watch 151–317s at speed. The V2 clip (`56.mp4` over `53`/`54`) is graded on its own layer.
 If it's a blend or partial overlay rather than a full cover, check it doesn't look double-graded.
+
+## Premiere — `camping jack` · narration and background-music levels (2026-09-17)
+
+**Jack:** *"Please use uxp to fix the volume for the narration and background music."* The score (A4, 9 clips from
+`background music/1–9.wav`) had been placed by hand, all at −20.4 dB. Narration (A3, 30 clips) was at 0 dB, except
+`a2:0` at +3.3.
+
+**Measured first** (Python over the WAVs, each clip's in→out segment, RMS over 100ms blocks above −45 dBFS, unweighted,
+so it only approximates LUFS):
+- **Nell and Tarquin** sit at −15 to −20 RMS.
+- 🔴 **Bob's recordings** (`narration/bob.wav`, `bob 2.wav`) sit at **−23 to −30**, 8–12 dB under everyone else.
+- **The music** sits at −16.5 to −19.8 RMS.
+
+🔑 **The Level scale, corrected:** `Level` is linear, and **0.17783 = 0 dB**, not −15 dB as
+`docs/premiere/api-notes.md` had it. Every untouched clip and every Channel Volume reads exactly 0.17783. So
+**dB = 20·log10(Level / 0.17783)**, and 1.0 = +15 dB, the UI maximum.
+
+### What was set
+
+| Track | Rule | Result |
+| --- | --- | --- |
+| **A3 narration** | each clip to **−17 dBFS RMS**, capped so peaks stay at or under −1 dBFS | −2.2 to +10.1 dB. Bob gets the most: `a2:21` +10.1 (peak-capped), `a2:15` +8.3, `a2:29` +7.0 |
+| **A4 music, cues 1–7** | **16 dB under the voice** (≈ −33 RMS) | −13.2 to −15.7 dB |
+| **A4 music, cues 8–9** | no narration from 260.4s, so ≈ −23 RMS | −6.5 / −6.4 dB |
+| **Lifts between lines** | +8 dB, 0.4s ramps, linear | Cue 3 (`a3:2`): the gaps at 85.4–87.3, 93.6–95.8 and 99.0–100.9 · Cue 7 (`a3:6`): the 5s breath at 209.2–214.2 and its tail from 260.4 |
+
+Keyframes are clip-relative (both clips have in-point 0). A1, the clips' own sound, was not touched.
+
+### 🔙 Undo
+
+- **Everything:** `backups/camping jack.pre-audio-levels.2026-09-17.prproj`, saved immediately before.
+- **In session:** Edit ▸ Undo, 5 `BadCode:` entries (1 static-levels transaction, then a time-varying and a keyframe
+  transaction per lifted clip).
+- **Saved 2026-09-17** at Jack's request ("Can you do it please"). The backup above is still the way back.
+
+### Needs a human
+
+- 🎧 **Listen at speed**, on speakers and on headphones:
+  - Is Bob's boosted room noise acceptable?
+  - Does the music still read in cues 1–7?
+  - Is the ending loud enough?
+- ⬜ **Not measured as a mix:** there's no ffmpeg here, so there's no loudness read of the exported film. Aim for about
+  −14 LUFS integrated for YouTube and check it with `scripts/delivery-qc.sh` once ffmpeg exists.
+
+### Levels v2 — narration flat, music further back (2026-09-17, same day)
+
+**Jack, on v1:** *"The narration at the beginning sounds weird now, maybe just turn it all down. The narration should be
+the main thing you hear, the background music should be in the background."*
+
+**Cause (inferred, not heard):** v1 gave each line its own gain. Nell's opening is one continuous read cut into five
+clips of `1.wav`, and those clips got +0.8, +2.4, −1.0, −2.1 and −0.2, so her level stepped up and down at every cut.
+
+| | v1 | **v2** |
+| --- | --- | --- |
+| Nell and Tarquin | per-line, −2.2 to +2.8 | **0 dB, flat** (the recordings are already −15 to −20 RMS) |
+| Bob, `bob.wav` | per-line, +1.5 to +8.3 | **+1.5 dB flat**, the most its loudest peak allows |
+| Bob, `bob 2.wav` | +10.1 / +6.8 | **+6.8 dB flat** |
+| Music, cues 1–7 | ≈16 dB under the voice (−33 RMS) | **−39 RMS, 14–22 dB under every line** (−19.2 to −21.7 dB) |
+| Lifts between lines | +8 dB | **+6 dB**, same gaps and ramps |
+| Music, cues 8–9 (no narration) | −6.5 dB | **−10.5 dB** (≈ −27 RMS) |
+
+**Saved.** Undo in session: 7 `BadCode:` entries. **Full revert:** `backups/camping jack.pre-audio-levels.2026-09-17.prproj`.
+
+### A1 clip sound — all 66 to −15 dB (2026-09-17, same day)
+
+**Jack:** *"Please make the clips volume like -15 db for all of them."* This is A1, the video clips' own sound.
+
+- **Before:** mixed. 48 clips sat at −25 to −25.6 dB and 18 at full 0 dB (v0 refs 2–5, 7–12, 14, 15, 17, 19, 21, 22, 38, 48, 62, 65).
+- **After:** all 66 read back at exactly −15 dB (Level 0.031623). One transaction, **saved**.
+
+⚠️ The 48 quiet clips went **up** 10 dB. Their sound effects may now compete with the narration.
+**Undo:** Edit ▸ Undo, 1 `BadCode:` entry, or `backups/camping jack.pre-audio-levels.2026-09-17.prproj` for every audio change today.
+
+### ↩️ Reverted — Jack is mixing by hand (2026-09-17, same day)
+
+**Jack:** *"Everything you have done to volume please revert back to normal. I am doing it manually, do not change what I
+have done."* Every clip was read first. **Only clips still holding exactly the value this session wrote were reverted.**
+
+- **Reverted to their pre-session values** (one `BadCode:` transaction, **not saved**):
+  - 29 narration clips: `a2:0` to +3.3 dB, the rest to 0 dB.
+  - Music cues 8 and 9 (`a3:7`, `a3:8`) to −20.4 dB.
+- **Left alone, because Jack had already changed them:**
+  - all of A1 (now −25.5 dB throughout)
+  - narration `a2:6`
+  - music `a3:0`, `a3:1`, `a3:3`, `a3:4`, `a3:5`
+  - 🔴 **`a3:2` (cue 3) and `a3:6` (cue 7):** these still carry the session's lift keyframes, but Jack has added his own
+    (14 and 7 keyframes, against the 12 and 6 written here). They're his to edit.
+- ✅ **Then the session's keyframes came off too** (Jack: *"remove your keyframes on cue 3 and cue 7 too"*):
+  - 12 removed from `a3:2`, 6 from `a3:6`, each matched on exact time and value.
+  - **Jack's own keyframes kept:** `a3:2` at 5.25s and 8.58s, `a3:6` at 1.67s.
+  - Two `BadCode:` undo entries, **not saved**. Nothing from this session's volume work remains on the timeline.

@@ -677,8 +677,7 @@ it costs nothing.
 | 0 | `Internal Volume Stereo` | Volume | 2 — `0 Mute` (bool), `1 Level` (linear gain, **not dB**) |
 | 1 | `Internal Channel Volume Stereo` | Channel Volume | 33 — `0 Bypass`, `1 Left`, `2 Right`, `3…32` blank |
 
-`Level` reads as a **linear multiplier** (0.1778 on this cut ≈ −15 dB), not the decibel figure the
-UI shows. Convert before quoting a number at a human.
+`Level` reads as a **linear multiplier**, not the decibel figure the UI shows. 🔴 **Corrected 2026-09-17:** **0.17783 is 0 dB**, not −15 dB. Every untouched clip's Level and every Channel Volume reads exactly 0.17783 (camping jack, 105 audio clips). So **UI dB = 20·log10(Level / 0.17783)**, and 1.0 = +15 dB, the UI ceiling. Writing through `createSetValueAction` in one transaction for 39 clips worked and read back exactly.
 
 ### 🔴 Audio effect match names are bare GUIDs — the prefix rule does not hold
 

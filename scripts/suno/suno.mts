@@ -904,6 +904,10 @@ export async function setDuration(page: Page, seconds: number): Promise<string> 
     Math.round(seconds),
   )
   await page.waitForTimeout(700)
+  // 🔴 2026-09-17: the number box read 45 while the Duration SLIDER still read 180 (left by an
+  // earlier song). The slider is the control verify() reports, so drive it too whenever it exists.
+  if (((await page.locator('[role="slider"][aria-label="Duration"]').count()) as number) > 0)
+    console.log('duration slider:', await setSlider(page, 'Duration', Math.round(seconds / 5) * 5))
   const back = await ev(
     page,
     `const i = document.querySelector('input[placeholder="Auto"][type=number]') ||
