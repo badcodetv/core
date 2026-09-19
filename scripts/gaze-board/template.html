@@ -1,0 +1,228 @@
+<title>The Gaze Lightbox</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Archivo:wght@400;500;700;800&display=swap">
+<style>
+  /* Deliberately single-theme: a lightbox table, dark ground so the photographs read true. */
+  :root {
+    --ground: #0f1210;
+    --table: #171b18;
+    --edge: #2a302b;
+    --ink: #dde2d8;
+    --dim: #8b948a;
+    --phosphor: #86e07f;
+    --maybe: #e2b25a;
+    --no: #d6604f;
+    --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    --sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    color-scheme: dark;
+  }
+  html { background: var(--ground); }
+  body { background: var(--ground); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.5; margin: 0; padding-inline: clamp(16px, 3vw, 40px); padding-block: 0 80px; }
+  header.top { padding-block: 36px 20px; display: grid; gap: 10px; max-width: 72ch; }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--phosphor); }
+  h1 { font-size: clamp(30px, 5vw, 50px); font-weight: 800; letter-spacing: -.02em; line-height: 1; margin: 0; text-wrap: balance; }
+  .lede { color: var(--dim); margin: 0; }
+  .tally { font-family: var(--mono); font-size: 13px; display: flex; flex-wrap: wrap; gap: 8px 18px; }
+  .t-keep { color: var(--phosphor); } .t-maybe { color: var(--maybe); } .t-no { color: var(--no); }
+
+  nav.shots { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--ground) 92%, transparent); backdrop-filter: blur(6px); border-bottom: 1px solid var(--edge); padding-block: 10px; margin-inline: calc(-1 * clamp(16px, 3vw, 40px)); padding-inline: clamp(16px, 3vw, 40px); display: flex; gap: 6px; overflow-x: auto; scrollbar-width: thin; }
+  nav.shots a { font-family: var(--mono); font-size: 12px; white-space: nowrap; text-decoration: none; padding: 5px 9px; border: 1px solid var(--edge); border-radius: 3px; color: var(--dim); }
+  nav.shots a:hover, nav.shots a:focus-visible { color: var(--ink); border-color: var(--dim); outline: none; }
+  nav.shots a .k { color: var(--phosphor); margin-left: 6px; }
+  .filters { display: flex; gap: 6px; flex-wrap: wrap; padding-block: 16px 0; }
+  .filters button { font: 500 12px var(--mono); background: transparent; color: var(--dim); border: 1px solid var(--edge); border-radius: 3px; padding: 5px 10px; cursor: pointer; }
+  .filters button[aria-pressed="true"] { color: var(--ground); background: var(--ink); border-color: var(--ink); }
+
+  section.shot { padding-block: 44px 8px; border-bottom: 1px solid var(--edge); scroll-margin-top: 60px; }
+  .shot-head { display: grid; gap: 4px; margin-bottom: 20px; max-width: 80ch; }
+  .shot-head .num { font-family: var(--mono); font-size: 12px; color: var(--dim); letter-spacing: .08em; text-transform: uppercase; }
+  .shot-head h2 { margin: 0; font-size: clamp(20px, 2.6vw, 28px); font-weight: 700; letter-spacing: -.01em; text-wrap: balance; }
+  .shot-head .job { margin: 0; color: var(--dim); }
+
+  .framing { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; padding-block: 14px; border-top: 1px dashed var(--edge); }
+  .framing:first-of-type { border-top: 0; }
+  .f-label { font-family: var(--mono); font-size: 12px; color: var(--dim); display: flex; gap: 10px; align-items: baseline; }
+  .f-label span { color: var(--ink); font-weight: 600; }
+  details.prompt summary { cursor: pointer; font-family: var(--mono); font-size: 12px; color: var(--dim); list-style: none; }
+  details.prompt summary::-webkit-details-marker { display: none; }
+  details.prompt summary::before { content: "+ "; color: var(--phosphor); }
+  details.prompt[open] summary::before { content: "− "; }
+  details.prompt p { margin: 6px 0 0; font-size: 13px; color: var(--dim); max-width: 90ch; }
+  .cands { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  @media (max-width: 640px) { .cands { grid-template-columns: minmax(0, 1fr); } }
+
+  figure.cand { margin: 0; background: var(--table); border: 1px solid var(--edge); border-radius: 2px; overflow: hidden; display: grid; }
+  figure.cand[data-v="keep"] { border-color: var(--phosphor); box-shadow: 0 0 0 1px var(--phosphor); }
+  figure.cand[data-v="maybe"] { border-color: var(--maybe); }
+  figure.cand[data-v="no"] img { opacity: .28; filter: grayscale(1); }
+  .frame { aspect-ratio: 1376 / 768; max-width: 100%; background: #0a0c0b; display: grid; place-items: center; }
+  .frame img { width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in; }
+  .frame .pending { font-family: var(--mono); font-size: 12px; color: var(--dim); }
+  figcaption { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 10px; flex-wrap: wrap; }
+  .key { font-family: var(--mono); font-size: 12px; color: var(--dim); }
+  .votes { display: flex; gap: 4px; }
+  .votes button { font: 600 12px var(--mono); background: transparent; border: 1px solid var(--edge); color: var(--dim); padding: 4px 9px; border-radius: 3px; cursor: pointer; }
+  .votes button:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+  .votes button[data-v="keep"][aria-pressed="true"] { background: var(--phosphor); border-color: var(--phosphor); color: var(--ground); }
+  .votes button[data-v="maybe"][aria-pressed="true"] { background: var(--maybe); border-color: var(--maybe); color: var(--ground); }
+  .votes button[data-v="no"][aria-pressed="true"] { background: var(--no); border-color: var(--no); color: var(--ground); }
+  .votes button:disabled { opacity: .4; cursor: default; }
+  .note { font-family: var(--mono); font-size: 12px; color: var(--dim); padding: 0 10px 10px; }
+  .note input { width: 100%; box-sizing: border-box; background: var(--ground); color: var(--ink); border: 1px solid var(--edge); border-radius: 3px; padding: 6px 8px; font: 13px var(--sans); }
+  .status { font-family: var(--mono); font-size: 12px; color: var(--dim); }
+
+  dialog.lb { padding: 0; border: 0; background: transparent; max-width: 96vw; max-height: 96vh; }
+  dialog.lb::backdrop { background: rgba(4, 6, 5, .92); }
+  dialog.lb img { max-width: 96vw; max-height: 88vh; display: block; }
+  dialog.lb p { font-family: var(--mono); font-size: 12px; color: var(--dim); margin: 8px 0 0; text-align: center; }
+  @media (prefers-reduced-motion: no-preference) { figure.cand { transition: border-color .15s; } }
+</style>
+
+<header class="top">
+  <div class="eyebrow">GPOM · the gaze · option stills</div>
+  <h1>What the machine watched</h1>
+  <p class="lede">Every shot from the data centre to Swindon, five framings each, two candidates per framing. Mark what you like: <b class="t-keep">keep</b>, <b class="t-maybe">maybe</b> or <b class="t-no">no</b>. Your marks are saved for everyone who opens this page, and Claude reads them to plan the next round. Click an image to see it full size.</p>
+  <div class="tally" id="tally"></div>
+  <div class="status" id="status">Connecting to saved picks…</div>
+</header>
+<nav class="shots" id="nav" aria-label="Shots"></nav>
+<div class="filters" role="group" aria-label="Show">
+  <button type="button" id="flt-all" data-f="all" aria-pressed="true">All</button>
+  <button type="button" id="flt-unmarked" data-f="unmarked" aria-pressed="false">Unmarked</button>
+  <button type="button" id="flt-keep" data-f="keep" aria-pressed="false">Keeps</button>
+  <button type="button" id="flt-maybe" data-f="maybe" aria-pressed="false">Maybes</button>
+</div>
+<main id="main"></main>
+<dialog class="lb" id="lb"><img id="lb-img" alt=""><p id="lb-cap"></p></dialog>
+
+<script>
+const DATA = /*DATA*/null;
+const picks = {};           // key -> {v, note}
+let db = null, filter = "all";
+const $ = (s, r = document) => r.querySelector(s);
+
+function el(tag, attrs = {}, kids = []) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "text") e.textContent = v; else if (v !== null && v !== undefined) e.setAttribute(k, v);
+  }
+  for (const k of kids) e.append(k);
+  return e;
+}
+
+function render() {
+  const nav = $("#nav"), main = $("#main");
+  nav.replaceChildren(); main.replaceChildren();
+  for (const s of DATA.shots) {
+    const keeps = s.framings.flatMap(f => f.cands).filter(c => picks[c.key]?.v === "keep").length;
+    const a = el("a", { href: "#s" + s.num }, [document.createTextNode(s.num + " " + s.group)]);
+    if (keeps) a.append(el("span", { class: "k", text: "★" + keeps }));
+    nav.append(a);
+
+    const sec = el("section", { class: "shot", id: "s" + s.num });
+    sec.append(el("div", { class: "shot-head" }, [
+      el("div", { class: "num", text: s.num + " · " + s.group }),
+      el("h2", { text: s.title }),
+      s.job ? el("p", { class: "job", text: s.job }) : ""
+    ]));
+    let shown = 0;
+    for (const f of s.framings) {
+      const cands = f.cands.filter(c => {
+        const v = picks[c.key]?.v;
+        if (filter === "all") return true;
+        if (filter === "unmarked") return c.src && !v;
+        return v === filter;
+      });
+      if (!cands.length) continue;
+      shown++;
+      const fr = el("div", { class: "framing" });
+      fr.append(el("div", { class: "f-label" }, [el("span", { text: "Framing " + f.n }), document.createTextNode(f.prompt.split(/[:.]/)[0].slice(0, 110))]));
+      fr.append(el("details", { class: "prompt" }, [el("summary", { text: "Full prompt" }), el("p", { text: f.prompt })]));
+      const grid = el("div", { class: "cands" });
+      for (const c of cands) grid.append(candidate(c, s, f));
+      fr.append(grid);
+      sec.append(fr);
+    }
+    if (shown) main.append(sec);
+  }
+  if (!main.children.length) main.append(el("p", { class: "lede", text: "Nothing matches this filter yet." }));
+  tally();
+}
+
+function candidate(c, s, f) {
+  const p = picks[c.key] || {};
+  const fig = el("figure", { class: "cand", "data-v": p.v || "" });
+  const frame = el("div", { class: "frame" });
+  if (c.src) {
+    const img = el("img", { src: c.src, alt: s.title + ", framing " + f.n + ", candidate " + c.key.slice(-1), loading: "lazy" });
+    img.addEventListener("click", () => { $("#lb-img").src = c.src; $("#lb-cap").textContent = c.key + " · " + f.prompt.slice(0, 140) + "…"; $("#lb").showModal(); });
+    frame.append(img);
+  } else frame.append(el("span", { class: "pending", text: "not generated yet" }));
+  fig.append(frame);
+  const votes = el("div", { class: "votes" });
+  for (const v of ["keep", "maybe", "no"]) {
+    const b = el("button", { type: "button", id: "v-" + c.key + "-" + v, "data-v": v, "aria-pressed": String(p.v === v), text: v });
+    if (!c.src || !db) b.disabled = true;
+    b.addEventListener("click", () => vote(c.key, p.v === v ? null : v));
+    votes.append(b);
+  }
+  fig.append(el("figcaption", {}, [el("span", { class: "key", text: c.key }), votes]));
+  if (p.v === "keep" || p.v === "maybe") {
+    const inp = el("input", { id: "n-" + c.key, type: "text", placeholder: "Note for the next round (optional)", value: p.note || "" });
+    inp.addEventListener("change", () => save(c.key, { v: p.v, note: inp.value.slice(0, 400) }));
+    fig.append(el("div", { class: "note" }, [inp]));
+  }
+  return fig;
+}
+
+function tally() {
+  const all = Object.values(picks);
+  const n = v => all.filter(p => p.v === v).length;
+  $("#tally").replaceChildren(
+    el("span", { text: DATA.done + " / " + DATA.total + " stills generated" }),
+    el("span", { class: "t-keep", text: n("keep") + " keep" }),
+    el("span", { class: "t-maybe", text: n("maybe") + " maybe" }),
+    el("span", { class: "t-no", text: n("no") + " no" })
+  );
+}
+
+async function save(key, body) {
+  if (!db) return;
+  try {
+    if (body.v) await db.doc("picks/" + key).set({ v: body.v, note: body.note || "", at: new Date().toISOString() });
+    else await db.doc("picks/" + key).delete();
+    $("#status").textContent = "Saved.";
+  } catch (e) {
+    $("#status").textContent = "Couldn't save that mark (" + (e?.code || "error") + "). View-only access can't mark picks.";
+  }
+}
+function vote(key, v) {
+  const prev = picks[key] || {};
+  if (v) picks[key] = { v, note: prev.note || "" }; else delete picks[key];
+  render();
+  save(key, v ? picks[key] : {});
+}
+
+for (const b of document.querySelectorAll(".filters button")) {
+  b.addEventListener("click", () => {
+    filter = b.dataset.f;
+    for (const o of document.querySelectorAll(".filters button")) o.setAttribute("aria-pressed", String(o === b));
+    render();
+  });
+}
+$("#lb").addEventListener("click", () => $("#lb").close());
+
+render();
+(async () => {
+  try { db = await window.claude?.use?.("db"); } catch { db = null; }
+  if (!db) { $("#status").textContent = "Picks can't be saved in this view — open the page on claude.ai to mark stills."; render(); return; }
+  $("#status").textContent = "Picks are saved for everyone.";
+  db.collection("picks").onSnapshot(snap => {
+    for (const k of Object.keys(picks)) delete picks[k];
+    for (const d of snap.docs) { const x = d.data(); if (x?.v) picks[d.id] = { v: x.v, note: x.note || "" }; }
+    const active = document.activeElement?.id;
+    render();
+    if (active) document.getElementById(active)?.focus();
+  }, err => { $("#status").textContent = "Lost the connection to saved picks (" + (err?.code || "error") + ")."; });
+})();
+</script>
