@@ -370,6 +370,33 @@ Uploaded audio passes an originality/rights check before it can be used.
 
 ---
 
+## 8b. The community sweep, 2026-09-21 — 🟡 practitioner tier, none of it measured by us
+
+Read on Jack's request ("research the internet for youtube tips on how to get the most out of v6").
+Every row below is **what practitioners say**, not what we have proven. Where it contradicts a
+measured finding of ours, ours wins.
+
+| Claim | Who says it | Our status |
+|---|---|---|
+| Start at **Weirdness 20 · Style Influence 75 · Variety Off** | [sunostyles](https://sunostyles.com/blog/suno-v6-settings), repeated by several guides | 🟡 close to ours (SI 80, weirdness paired 30/60). The source explicitly says *"not a claim that one preset wins"* |
+| **Weirdness 0 sounds stale; above 90 produces artifacts; 30–50 for a detailed prompt** | [Moe Lueker](https://moelueker.com/blog/suno-v6-guide) | 🟡 untested. Our w60 half of every pair sits above the recommended band on purpose — drift is how `1127446d` got the things Jack likes |
+| **Style Influence 40 for a vague prompt, 65+ for a precise one** | Moe Lueker | 🟡 consistent with our 80 |
+| **Variety above Off rewrites your Style box** | [Suno's own v6 FAQ](https://help.suno.com/en/articles/13924481) + every guide | ✅ **proven by us** 2026-09-13, twelve takes |
+| 🔑 **Max Mode is aimed at songs over two minutes**, and at keeping vocals and style consistent across a whole track | Suno via [Jack Righteous](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/inside-suno-v6-create-simple-advanced-sounds-guide), [weraveyou](https://weraveyou.com/2026/09/suno-v6-models-features-editing-sampling-advanced-mode/) | ⬜ **never tried by us, and every Camping take is 3 minutes plus.** This is the most obviously untested lever we own. Cost is "more credits", amount unstated |
+| **A constant-tempo clause reduces drift** — *"constant tempo, steady groove, no tempo changes, 4/4 time"* | [MixMasterAI](https://www.mixmasterai.co/suno-prompts/fix/wrong-tempo), [GenX Notes](https://blog.genxnotes.com/en/fix-suno-bpm-tempo-drift/) | 🟡 first used by us in r54 (Camping), unmeasured |
+| **D&B works at 170–175; above 180 drum resolution degrades** | MixMasterAI | 🟡 consistent with our 174 |
+| **Rap speed is set with musical units, not adjectives** — 16th-note subdivisions, ~16 syllables a bar, `double-time`, `rapid-fire`, `chopper`; and `laid-back`/`smooth` actively slow it | [HookGenius](https://hookgenius.app/learn/suno-hiphop-prompts/), [Undetectr](https://undetectr.com/blog/suno-prompts-for-hip-hop) | 🟡 the basis of r55's flow spec. **Do the arithmetic before pasting a number**: at 174 BPM, 16ths is 11.6 syllables a second, which no human does — eighths (5.8/sec) with 16th bursts is what "fast" actually means at this tempo |
+| **Avoid the words `fusion` and `meets`; say which layer belongs to which genre** | [SunoPromptPro](https://www.sunopromptpro.com/en/guides/suno-genre-combinations) | 🟡 agrees with our unity-sentence rule (`suno-tag-mechanics.md`) |
+| **Name two or three instruments, not a full band** | [Brahmstorm](https://brahmstorm.com/blog/suno-genre-blending-prompts-that-actually-work/) | 🟡 adopted in r55 |
+| **v6 follows the Style field more literally than v5.5** | most guides | 🟡 consistent with our r53 pivot to Style Influence 80 |
+
+🔴 **What nobody publishes:** any measured relationship between a setting and *vocal delivery
+speed*. Every "make it faster" tip is prompt wording. Our own measurement (r48, onsets/sec) is
+still the only evidence in this repo that anything moves that number — and the duration control,
+which no guide mentions as a pacing lever at all, is the one we can prove is obeyed.
+
+---
+
 ## 9. Vocals and drum & bass
 
 - **Duets:** explicit `Male vocal` / `Female vocal` under section tags gave a real alternating

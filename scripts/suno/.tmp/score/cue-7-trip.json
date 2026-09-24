@@ -1,0 +1,18 @@
+{
+  "style": "Instrumental dark cinematic trip score that starts serene and turns into a nightmare: a warm drone and soft reversed textures bloom into swirling detuned synths, backwards cymbals, a huge distorted orchestral swell and pounding war drums, overwhelming and disorienting.",
+  "exclude": "vocals, singing, choir, chanting, humming, psychedelic rock, electric guitar, sitar, trance, EDM drop",
+  "lyrics": "",
+  "title": "camping-score-7-trip-A",
+  "workspace": "camping background music",
+  "model": "v6",
+  "variety": "normal",
+  "maxMode": false,
+  "vocalGender": null,
+  "personalize": false,
+  "styleInfluence": 75,
+  "weirdness": [
+    30,
+    60
+  ],
+  "durationSec": 70
+}

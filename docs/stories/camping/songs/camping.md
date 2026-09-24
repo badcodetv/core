@@ -1,6 +1,6 @@
 ---
 title: Camping — the song (LIVE v6 sheet)
-status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). Candidate = d13ca10a (Kai's pick, §v6.0). RESUME HERE — round r3 `british` (§v6.4, 12 takes on base r2c tight+grit) sent to Jack for review 2026-09-13; next round waits on his and Kai's picks. The v5.5 round-17 sheet below the v6 section is archived history.
+status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). 🔑 CURRENT REFERENCE = 36d0b981 (camping-r71-wordsonly-v6-w40), Jack 2026-09-23: "the voice is cool, the begging being slow until the beat drops is nice, the pacing is perfect, chorus being quick keep that". RESUME HERE — r73 (§v6.65): those four things FROZEN byte-identical (cast, begging opening, Duration 190 s, quick words-only hook) and five different musical worlds built around them, lane clause FIRST — two orchestral (spiccato violins / harp + cellos) and three experimental (dub echo / industrial machine / grime square-wave). 20 takes, ALL UNHEARD. 🔑 NEXT: did the spine survive all five worlds, and is the orchestra actually wanted? Duration 190 s is settled: 36/36 on target and called "perfect" by ear. The v5.5 round-17 sheet below is archived history.
 candidate: https://suno.com/song/d13ca10a-1aa4-41c5-a6f2-b13beeb2e164
 brief: Jack via Kai 2026-09-13 — "more like Imagine Dragons (https://en.wikipedia.org/wiki/Imagine_Dragons) and less poppy". Kai 2026-09-13 — 174 BPM drum and bass (option A), not the take's 117.
 released_take: ./camping-released.md
@@ -118,6 +118,9163 @@ gets generated. Note what the rewrite added that the stomp box never said: `powe
 ```text
 Dark UK drum and bass: detuned wavetable lead, low palm-muted distorted power-chord guitar and heavy guitar wall, dual male spoken-word voices—gravelly half-shout and clean plummy baritone hardening into a shout—with dry intimate acapella breaks, dark sub-heavy compression, stomping floor toms, handclaps, chopped breakbeat, growling Reese sub, screaming detuned lead, reverb-soaked raw distortion, steady 174 BPM amen-roll drive.
 ```
+
+## v6.65 Round r73 — five worlds on a frozen spine: the take Jack likes, kept exactly, everything else free (2026-09-23)
+
+**Brief, Jack 2026-09-23, on [36d0b981](https://suno.com/song/36d0b981-5ffb-482b-9b9b-ab9e50f3a56b)
+(= `camping-r71-wordsonly-v6-w40`):** *"I like this one, the voice is cool, the begging being slow
+until the beat drops is nice, the pacing is perfect, chorus being quick keep that. Please build on
+this, keep all of the elements I like and make variations — only make some variations with
+orchestral elements, but be free with the other ones, as in experiment with it and make each
+generation vary from each other, whilst using this song as the base."*
+
+🔑 **This is the first round where the brief names exactly what is frozen and exactly what is free**,
+so the round is built as a **frozen spine + five worlds** rather than as either a variety round or a
+deepening round.
+
+### 🔒 Frozen — the four things he named, byte-identical in all five lanes
+
+| What he said | What is locked |
+|---|---|
+| *"the voice is cool"* | the r43 grime cast sentence, unchanged |
+| *"the begging being slow until the beat drops is nice"* | *"No drums at first: three lines of him alone, quiet and begging, then the beat drops on 'you keep on walking'"* — and the lyric cue now says **begging** and **unhurried** in as many words |
+| 🔑 *"the pacing is perfect"* | **Duration 190 s**, and the cast tail verbatim: *"eight-bar bursts traded between them, heavy and unhurried, every bar landing clean and on the grid, never hurried and never dragging"* |
+| *"chorus being quick keep that"* | *"The hook comes quick, a room of men saying it with him flat and low, words only"* |
+
+Plus the anti-ooh clause, which stays because r71 was the round that introduced it.
+✅ **And the Lyrics box is identical across all five lanes** — when the vocal is the thing being
+kept, the lyrics box has no business varying.
+
+### 🎛 Free — and the lane clause goes FIRST
+
+Each lane's world is written **before** the frozen spine, because Suno weights the opening tokens
+hardest: the first thing it reads is the thing that differs. Each lane moves its **drums**, its
+**instrument family and that family's job**, and its **production sentence**.
+
+| Lane | | The world |
+|---|---|---|
+| `spiccato` | 🎻 orchestral | tight rolling break, crisp dry snare; **spiccato violin stabs locked to the hats** playing the break's own pattern back, one lone violin answering him at the end of every bar |
+| `harpcello` | 🎻 orchestral | loose swung broken beat; **a harp running one arpeggio under the break like a hi-hat**, low cellos doubling the sub an octave up |
+| `dubecho` | 🧪 free | half-stepping with big gaps and an offbeat skank; **tape echo throwing his line-ends across a long spring reverb**, one siren sweeping the field |
+| `machine` | 🧪 free | relentless, no swing; **metallic clicks on the snares, hi-passed pots and pans on the kick, banging pipes and a construction-site clang**, a distorted machine loop grinding under it |
+| `square` | 🧪 free | one eight-bar loop, very clear single hits, no percussion layers; **detuned square-wave stabs and a gliding sine lead** carry the tune, filter opening at every turn |
+
+✅ **Asserted in the build:** the longest shared run between any two Style boxes is **498 chars — and
+it is the frozen spine, exactly**. No drum language, no instrument and no production sentence is
+shared between any two lanes. (This is deliberately *not* the sub-10% BOLD target: r69 was rejected
+for sharing 68–74% of a *body nobody asked to freeze*, whereas here 61–63% is shared **because Jack
+listed it**.)
+
+### The references behind the two experimental sound-designs
+
+| Lane | What went in the box | Source |
+|---|---|---|
+| `machine` | *metallic clicks layered on the snares · hi-passed pots and pans on the kick · banging pipes and a construction-site clang* — the actual practitioner recipe for industrial drums, rather than the word "industrial" | [DOA](https://www.dogsonacid.com/threads/how-to-make-industrial-style-drums.640083/), [ModeAudio](https://modeaudio.com/product/bolt-industrial-drum-samples) |
+| `square` | *detuned square-wave stabs and a gliding sine lead · very clear single hits and no percussion layers · the filter opening further at every turn · a twisty gliding bass* — grime's own synthesis, including Wiley's "twisty synth bass" and the genre's refusal to layer percussion | [Attack](https://www.attackmagazine.com/technique/tutorials/grime-synth-basics/), [MusicRadar](https://www.musicradar.com/tuition/tech/22-pro-grime-production-tricks-170428), [Wikipedia](https://en.wikipedia.org/wiki/Grime_music) |
+
+⚠️ **`dubecho` carries an extra ban block** — the repo's standing warning that a dub layer smuggles
+in its own vocalist (`ragga MC, toasting, Jamaican accent, dancehall vocal`) and, with an offbeat
+chord, the whole `ska, oompah, brass band` family. All banned in that lane only, so the dub
+*production* arrives without the dub *voice*.
+⚠️ **And the grime-synth lane never says "grime" as a genre word or names a tempo but 174** — naming
+the genre drags the track toward 140 BPM.
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender Male · Personalize off ·
+no Voice · **Duration 190 s** · workspace `camping-Jack` · weirdness **40 and 60**. 10 Creates, 20 takes.
+
+🔑 **The liked take is a w40.** Jack's three previous favourites were w60; this one is not, so
+weirdness remains genuinely unsettled and the pair still runs.
+
+### Generated 2026-09-23 — 10 Creates, 10 clean. Credits 8,880 → 8,780
+
+| Lane | | w40 | w60 |
+|---|---|---|---|
+| `spiccato` | 🎻 orchestral | [1dc611c3](https://suno.com/song/1dc611c3-be98-4ce5-bd79-db274a5b2946) (3:09) · [954f20c5](https://suno.com/song/954f20c5-bf4f-4ecc-8ea0-e06ab0f6c955) (3:09) | [504ea667](https://suno.com/song/504ea667-69d7-4d14-9d11-65e25c06bf45) (3:10) · [9466dc63](https://suno.com/song/9466dc63-96bf-487e-aca1-524e8dece7f1) (3:10) |
+| `harpcello` | 🎻 orchestral | [40c91647](https://suno.com/song/40c91647-f8bd-4284-a294-60c30127b6af) (3:10) · [02854716](https://suno.com/song/02854716-d906-43d2-91df-f4aa5229e4df) (3:09) | [67fa4f2b](https://suno.com/song/67fa4f2b-c793-43aa-bddc-5e906e02d4f1) (3:09) · [aa19093d](https://suno.com/song/aa19093d-dc40-482f-acd0-2335748ab91f) (3:10) |
+| `dubecho` | 🧪 free | [7722c22a](https://suno.com/song/7722c22a-64bb-4ab3-be5e-f19515cc2d04) (3:10) · [acecb8f6](https://suno.com/song/acecb8f6-46ad-4396-9137-53e58d6f2dcf) (3:10) | [e3324d4f](https://suno.com/song/e3324d4f-443f-49b0-969b-403fc7d9330e) (3:10) · [b27cf690](https://suno.com/song/b27cf690-888d-4ff6-a839-767c1b493220) (3:11) |
+| `machine` | 🧪 free | [0d773754](https://suno.com/song/0d773754-0e51-4297-925a-1cf254c07088) (3:10) · [401c086d](https://suno.com/song/401c086d-bb91-4238-9ddf-fd29af94a8fe) | [2eb264ad](https://suno.com/song/2eb264ad-9df1-40fa-84b7-54704451f3b9) (3:09) · [ca84dbaa](https://suno.com/song/ca84dbaa-351e-494a-9fdc-9f18aecd6dce) (3:10) |
+| `square` | 🧪 free | [833f1b0d](https://suno.com/song/833f1b0d-9152-4248-ab46-b44ac812d186) · [1220c06e](https://suno.com/song/1220c06e-00b4-4efa-a5e6-c72f6c2da286) | [0f264d79](https://suno.com/song/0f264d79-602a-4e64-b00f-4382a9d2c4c3) · [36619360](https://suno.com/song/36619360-2e1f-4dc3-a1c2-8551fb4b7383) |
+
+✅ **Ten Creates, ten clean**, 10 credits each. ✅ **Every measured take came back 3:09–3:11 against
+a 3:10 target** — 190 s has now been on target 36 times out of 36 across r70–r73, and it is the
+setting Jack has called *"perfect"* by ear.
+
+⬜ **Not heard.** Three questions:
+1. 🔑 **Did the frozen spine survive five different worlds?** If the voice, the begging opening or
+   the quick hook changes character in a lane, the lane's own language is overriding it — and the
+   fix is in that lane's clause, not in the spine.
+2. **Orchestral or free?** `spiccato` and `harpcello` are the two he asked for; `dubecho`, `machine`
+   and `square` are the experiments. This is the round that says whether the orchestra is actually
+   wanted or was a habit.
+3. **Which world?** Any of the five can become the next spine, and the frozen block travels with it
+   unchanged.
+
+### r73 spiccato atom
+
+Style:
+
+```
+Tight rolling drum and bass at 174, crisp dry snare, hats sprinting. Short spiccato violin stabs lock to the hats and play the break's own pattern back, and one lone violin answers him at the end of every bar. Chopped amen fills at every section turn. Close, dry, precise and mid-forward, like a pirate radio rip. No drums at first: three lines of him alone, quiet and begging, then the beat drops on 'you keep on walking'. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, eight-bar bursts traded between them, heavy and unhurried, every bar landing clean and on the grid, never hurried and never dragging.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, steady rap pace, lazy flow, slow flow, double-time, motormouth, major key, tempo change, slow tempo, half time, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, orchestral bed, symphony orchestra, full orchestra, string section, church organ, grand piano, harp, cello, tape echo, spring reverb, square-wave lead, sine lead, metallic percussion
+```
+
+### r73 harpcello atom
+
+Style:
+
+```
+Loose broken-beat drum and bass at 174, swung and off-kilter. A harp runs one arpeggio under the break like a hi-hat pattern, and low cellos double the sub an octave up in long bowed lines. Warm, wide and slightly blurred, the low end round rather than sharp, everything sitting a fraction behind the beat. No drums at first: three lines of him alone, quiet and begging, then the beat drops on 'you keep on walking'. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, eight-bar bursts traded between them, heavy and unhurried, every bar landing clean and on the grid, never hurried and never dragging.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, steady rap pace, lazy flow, slow flow, double-time, motormouth, major key, tempo change, slow tempo, half time, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, orchestral bed, symphony orchestra, full orchestra, string section, church organ, grand piano, spiccato, violin stabs, tape echo, spring reverb, square-wave lead, sine lead, metallic percussion
+```
+
+### r73 dubecho atom
+
+Style:
+
+```
+Half-stepping drum and bass at 174 with big gaps in it and a heavy offbeat skank chord, tape echo throwing the ends of his lines away across a long spring reverb, one siren sweeping the stereo field. Cavernous and wet, enormous empty space between the hits, the sub landing like a door closing. No drums at first: three lines of him alone, quiet and begging, then the beat drops on 'you keep on walking'. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, eight-bar bursts traded between them, heavy and unhurried, every bar landing clean and on the grid, never hurried and never dragging.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, steady rap pace, lazy flow, slow flow, double-time, motormouth, major key, tempo change, slow tempo, half time, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, orchestral bed, symphony orchestra, full orchestra, string section, church organ, grand piano, harp, cello, spiccato, violin stabs, square-wave lead, sine lead, metallic percussion, ragga MC, toasting, Jamaican accent, dancehall vocal, ska, oompah, brass band
+```
+
+### r73 machine atom
+
+Style:
+
+```
+Relentless mechanical drum and bass at 174 with no swing in it at all, snares layered with metallic clicks, hi-passed pots and pans on the kick, banging pipes and a construction-site clang for percussion, a distorted machine loop grinding underneath. Cold, abrasive and inhuman, mixed narrow and hard with no air in it at all. No drums at first: three lines of him alone, quiet and begging, then the beat drops on 'you keep on walking'. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, eight-bar bursts traded between them, heavy and unhurried, every bar landing clean and on the grid, never hurried and never dragging.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, steady rap pace, lazy flow, slow flow, double-time, motormouth, major key, tempo change, slow tempo, half time, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, orchestral bed, symphony orchestra, full orchestra, string section, church organ, grand piano, harp, cello, spiccato, violin stabs, tape echo, spring reverb, square-wave lead, sine lead
+```
+
+### r73 square atom
+
+Style:
+
+```
+Skippy drum and bass at 174 built on one eight-bar loop with very clear single hits and no percussion layers at all. Detuned square-wave stabs and a gliding sine lead carry the whole tune, the filter opening a little further at every turn, a twisty gliding bass underneath. Boxy, cheap, cold and deliberately unpolished, like it was made on a games console. No drums at first: three lines of him alone, quiet and begging, then the beat drops on 'you keep on walking'. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, eight-bar bursts traded between them, heavy and unhurried, every bar landing clean and on the grid, never hurried and never dragging.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, steady rap pace, lazy flow, slow flow, double-time, motormouth, major key, tempo change, slow tempo, half time, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, orchestral bed, symphony orchestra, full orchestra, string section, church organ, grand piano, harp, cello, spiccato, violin stabs, tape echo, spring reverb, metallic percussion
+```
+
+### r73 lyrics (identical in all five lanes)
+
+```lyrics
+[Verse 1 | no drums at all | gruff grime MC, quiet, close and begging, unhurried]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the amen drops on this line]
+[gruff grime MC, hurt and insistent, heavy and unhurried, every word clear]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[gruff grime MC, rising, close to cracking]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[gruff grime MC, a bitter plea]
+please sir, can I fuckin, have some more?
+[Chorus | the hook, the room saying it with him, words only]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break | cold grime MC, clipped and cold, fast and clear]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold grime MC, sharper]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the beat cuts dead for the first line, then everything back]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two grime MCs trade lines, close and overlapping]
+[gruff grime MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold grime MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both grime MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold grime MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff grime MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold grime MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff grime MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold grime MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | everything at once, the whole room saying it with him, words only]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.64 Round r72 — more reese, three ways, anchored to both liked takes (2026-09-23)
+
+**Brief, Jack 2026-09-23:** *"Also do more reese versions that vibe with the two songs I have shared
+and like."*
+
+🔑 **The reese is `1127446d`'s own signature** — *"a dark reese bass that grows meaner every
+section"* is a sentence from that take's own Style box. So "more reese versions that vibe with the
+two songs" is not a new direction: it is the first parent's bassline explored properly, with the
+second parent's drums, room and organ available as the variables.
+
+**Every lane leads on the reese** — *"a filthy reese bass IS the tune of this record, growing meaner
+every section"* in the first clause, because Suno weights the opening tokens heavily. Everything
+else moves.
+
+| Lane | The beat it sits on | Second element | Flow | Speed | Opens on |
+|---|---|---|---|---|---|
+| `reesegarage` | `1127446d`'s skippy UK garage two-step, swung hats, a shuffle that bounces | cheap synth strings stabbing on the offbeat | talky, conversational, long unhurried verses | **190 s** | reese and shuffle from the first bar |
+| `reeseamen` | `1b2aa79c`'s breakneck chopped amen, ragga swing, reverse crashes | a room saying the hook with him, flat and low, **words only** | eight-bar bursts, heavy and unhurried | **185 s** | the reese alone, four bars |
+| `reesehalf` | the drums pulled right back — a dry sparse roller, a rimshot, a hat and the sub | one solo violin holding a line an octave above the reese, bending where it bends | low and murky, single words drawn right out | **190 s** | violin and reese together, no drums |
+
+✅ **Measured bold:** longest shared run between any two Style boxes is **102 chars (15%)** and it is
+the mandated cast sentence. The reese clause and the anti-ooh clause are the brief's own constants.
+
+### Generated 2026-09-23 — 6 Creates, 6 clean. Credits 8,940 → 8,880
+
+| Lane | w40 | w60 |
+|---|---|---|
+| `reesegarage` | [3e06c8ac](https://suno.com/song/3e06c8ac-2608-4169-acde-568360ee518c) (3:09) · [e0de40f0](https://suno.com/song/e0de40f0-640a-43ba-9d44-b999eb6779df) (3:09) | [0e3fabc3](https://suno.com/song/0e3fabc3-f6a5-41ac-846c-29d09c0f9050) (3:09) · [cbf029cd](https://suno.com/song/cbf029cd-e6a7-4c52-bbb5-67e8490640f0) (3:09) |
+| `reeseamen` | [7d3e2ac0](https://suno.com/song/7d3e2ac0-7359-4698-8fdf-b720497c150e) (3:05) · [f52aee8a](https://suno.com/song/f52aee8a-9e5e-4a3f-aacb-bd0961f3700b) (3:04) | [b7646100](https://suno.com/song/b7646100-6d36-4f2c-a80e-aa79e4edfe56) (3:04) · [9fddb063](https://suno.com/song/9fddb063-8df0-4545-95a2-f550a6b84d42) (3:08) |
+| `reesehalf` | [28a3e1a6](https://suno.com/song/28a3e1a6-b16e-495c-b3da-54b5d18a0447) (3:10) · [f788e2f5](https://suno.com/song/f788e2f5-a4a1-4299-9130-236deed18f1e) (3:10) | [1f036f8a](https://suno.com/song/1f036f8a-c2e3-47f2-b638-256b9f3feca2) (3:10) · [f8041614](https://suno.com/song/f8041614-315d-4d01-a6c1-126cddaeb24b) (3:10) |
+
+⬜ **Not heard.** The question is which frame the reese wants: a garage shuffle under it, an amen
+assault around it, or nearly nothing at all so it carries the record alone.
+
+### r72 reesegarage atom
+
+Style:
+
+```
+A filthy reese bass IS the tune of this record, growing meaner every section, and it sits on a skippy UK garage two-step at 174 with swung hats and a shuffle that bounces. Reese and shuffle together from the very first bar, no intro. Cheap synth strings stab on the offbeat against them, never a pad. Chopped amen fills at every section turn. Every vocal sound is a word from the lyrics: no humming, no ooh-ing, no whoops, nothing wordless. Warm, bouncy and mid-forward, like a pirate radio rip, night-bus melancholy. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, talky and conversational, telling it to you at four in the morning, long unhurried verses.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, steady rap pace, lazy flow, double-time, motormouth, major key, tempo change, slow tempo, half time, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, orchestral bed, symphony orchestra, full orchestra, string section, church organ, grand piano, solo violin, male choir, crowd vocals, backing vocals, jungle, amen assault
+```
+
+### r72 reeseamen atom
+
+Style:
+
+```
+A filthy reese bass IS the tune of this record, growing meaner every section, dragged across breakneck chopped amen breaks at 174 that roll and re-chop every bar, ragga swing, reverse crashes into every turn. It starts on that reese alone for four bars with no drums. A room of men says the hook with him, flat and low, words only. Every vocal sound is a word from the lyrics: no humming, no ooh-ing, no whoops, nothing wordless. Big, live and room-y, like a rave taped off the desk. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, eight-bar bursts traded between them, heavy and unhurried, landing clean on the grid.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, steady rap pace, lazy flow, double-time, motormouth, major key, tempo change, slow tempo, half time, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, orchestral bed, symphony orchestra, full orchestra, string section, church organ, grand piano, solo violin, synth strings, garage shuffle, two-step garage
+```
+
+### r72 reesehalf atom
+
+Style:
+
+```
+A filthy reese bass IS the whole record at 174, growing meaner every section, with the drums pulled right back to a dry sparse roller that has almost nothing in it, a rimshot and a hat and the sub. It opens on one solo violin and that reese together, no drums at all, the violin holding a long line an octave above it and bending where it bends. Every vocal sound is a word from the lyrics: no humming, no ooh-ing, no whoops, nothing wordless. Narrow, cold and enormous underneath, nothing else in the room. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, low and murky, several octaves down, drawing single words right out with menace.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, steady rap pace, lazy flow, double-time, motormouth, major key, tempo change, slow tempo, half time, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, orchestral bed, symphony orchestra, full orchestra, string section, church organ, grand piano, synth strings, garage shuffle, two-step garage, male choir, crowd vocals, backing vocals, amen assault
+```
+
+### r72 lyrics (`reesehalf` shown — lanes differ only in the opening cue, the two MC delivery cues and the chorus cue)
+
+```lyrics
+[Verse 1 | the violin and the reese alone, no drums | gruff grime MC, close and bitter]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the drums arrive on this line]
+[gruff grime MC, hurt and insistent, low and murky, drawing single words out, menacing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[gruff grime MC, rising, close to cracking]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[gruff grime MC, a bitter plea]
+please sir, can I fuckin, have some more?
+[Chorus | the hook, him alone, no other voices]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break | cold grime MC, clipped and cold, fast and clear]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold grime MC, sharper]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the beat cuts dead for the first line, then everything back]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two grime MCs trade lines, close and overlapping]
+[gruff grime MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold grime MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both grime MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold grime MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff grime MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold grime MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff grime MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold grime MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | everything at once, still him alone on the hook]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.63 Round r71 — the jungle take Jack likes, with the oohs and the shouting taken out (2026-09-23)
+
+**Brief, Jack 2026-09-23, on [8aad7fe2](https://suno.com/song/8aad7fe2-8218-433e-b77a-8c820b071c81)
+(= `camping-r70-jungle-v6-w60`):** *"do this again but remove the weird shouting and 'oohs'. Please
+slow down the rapping but keep the vibe of the beats."*
+
+🔑 **A deepening round, and it is meant to look meek.** The three lanes share 55% of the Style box
+and that is correct: the beat sentence is held **verbatim** because Jack asked for it to be, the
+anti-ooh clause and the cast are the brief. The BOLD rule governs variety rounds; this is the
+opposite kind, and the build asserts the shared text is exactly the block that was meant to be
+shared.
+
+### 🔴 The oohs and the shouting were things WE asked for
+
+The ban list already held `shouting, screaming, roaring`, and they arrived anyway — the same shape
+as the autotune finding at r67. The Style box was positively summoning them:
+
+| r70 `jungle` said | What it routes to |
+|---|---|
+| *"a room of men **singing** the hook on their own"* | a wordless, pitched gang vocal |
+| *"the room comes back on every hook"* | ad-libs between the lines |
+| 🔴 *"high energy, **hyping each other**"* | a **hype man** — which is literally a performer whose job is whoops and shouts between bars |
+
+**So the fix is positive first, ban second.** Every lane now carries: *"Every vocal sound in the
+record is a word from the lyrics: no humming, no ooh-ing, no whoops, nothing wordless anywhere."*
+🆕 And the bans gained `ooh, oohs, ahhs, wordless vocals, vocal ad-libs, hype man, crowd shouts,
+whoops, vocal riffs, sung harmonies`. *"Hyping each other"* is deleted outright.
+
+📎 **This has a precedent in this very sheet:** §v6.1's listening notes on the original candidate
+recorded *"**Leaked in:** sung 'ooh' phrases despite the bans."* The leak is a year-old known
+behaviour on this song and it has never had a positive-form counter until now.
+
+### "Slow down the rapping, keep the vibe of the beats"
+
+| | r70 `jungle` | r71 |
+|---|---|---|
+| **Duration** | **175 s** — the fastest cell in the round, *and the only one that overshot its target* | 🔑 **190 s**, the top of the settled reliable bracket |
+| **Cast tail** | *"short sharp eight-bar bursts traded **fast** between them, **high energy, hyping each other**"* | *"eight-bar bursts traded between them, **heavy and unhurried**, every bar landing clean and on the grid, never hurried and never dragging"* |
+| **Lyric cues** | `short sharp bursts, high energy, clean on the grid` ×2 | `heavy and unhurried, every word clear` ×2 |
+| **The beat** | — | 🔑 **held byte-for-byte**: *"Breakneck jungle at 174: chopped amen breaks rolling and re-chopping every bar, ragga swing, reverse crashes into every turn, a deep round sub under it."* |
+
+⚠️ **`breakneck` is a speed word and it stays**, because it describes the drums and Jack asked for
+the beats to be kept. The slowing is done to the **rap** — Duration, the cast tail and the cues —
+and not to the drums. If the rap is still too fast, the next notch is 195 s, not a reworded beat.
+
+### The one variable: what the room does
+
+| Lane | The room |
+|---|---|
+| `wordsonly` | it stays, and says the hook with him — flat, low, **words only** |
+| `solo` | 🔴 **gone.** He carries every hook on his own; `backing vocals, male choir, crowd vocals, gang vocals` banned on top |
+| `lastonly` | he carries the hooks alone and the room joins him **only for the final chorus** |
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender Male · Personalize off ·
+no Voice · **Duration 190 s** · workspace `camping-Jack` · weirdness **40 and 60**. 6 Creates, 12 takes.
+
+### Generated 2026-09-23 — 6 Creates, 6 clean. Credits 9,000 → 8,940
+
+| Lane | w40 | w60 |
+|---|---|---|
+| `wordsonly` | [50ded0a5](https://suno.com/song/50ded0a5-3a0b-4282-90f7-1a749b05e2f3) (3:10) · [36d0b981](https://suno.com/song/36d0b981-5ffb-482b-9b9b-ab9e50f3a56b) (3:10) | [7797b0f8](https://suno.com/song/7797b0f8-4b2f-4486-8ba2-eb50f1ca919c) (3:10) · [b9e22c39](https://suno.com/song/b9e22c39-3462-4378-9cb6-952b689f2bab) (3:10) |
+| `solo` | [f0cbbb43](https://suno.com/song/f0cbbb43-7a70-4e44-b987-ac4239ebfa21) (3:09) · [26bb066f](https://suno.com/song/26bb066f-4cbd-4837-bf3d-96ae94d499a8) (3:10) | [55272352](https://suno.com/song/55272352-1ca9-4cf2-82b7-dfb32528a65e) (3:10) · [0bad9121](https://suno.com/song/0bad9121-c7b5-4641-97a0-f8056c93450c) (3:09) |
+| `lastonly` | [c0b1b309](https://suno.com/song/c0b1b309-8205-4884-9042-d30f9f1bcf1d) (3:09) · [603ed38c](https://suno.com/song/603ed38c-104a-45f5-8034-8f87c36ee363) (3:10) | [55257249](https://suno.com/song/55257249-5218-44ca-8849-dcbccf240ebe) (3:10) · [5c8a8edb](https://suno.com/song/5c8a8edb-0877-44ca-89ad-614f2e241e8d) (3:09) |
+
+✅ **All twelve came back 3:09–3:10 against a 3:10 target** — 190 s is now the best-behaved number
+this song has: 4/4 at r70, 12/12 here.
+
+⬜ **Not heard.** Three questions:
+1. 🔑 **Are the oohs and the shouting gone?** If they are still there with the positive clause in
+   place, the source is the **lyrics box** — the hook lines themselves — and not the Style box.
+2. **Is the rap slower without dragging?** 175 → 190 s is the whole lever.
+3. **Does the record still need the room?** `solo` is the test: if it sounds thin, the room was
+   doing arrangement work and `lastonly` is the compromise.
+
+### r71 wordsonly atom
+
+Style:
+
+```
+Breakneck jungle at 174: chopped amen breaks rolling and re-chopping every bar, ragga swing, reverse crashes into every turn, a deep round sub under it. It opens with a room of men saying the hook together on their own, flat and low, no drums and no instruments. A church organ answers them at the turns, and the room says the hook with him every time. Every vocal sound in the record is a word from the lyrics: no humming, no ooh-ing, no whoops, nothing wordless anywhere. Big, live and room-y, like a rave taped off the desk. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, eight-bar bursts traded between them, heavy and unhurried, every bar landing clean and on the grid, never hurried and never dragging.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, steady rap pace, lazy flow, double-time, motormouth, major key, tempo change, slow tempo, half time, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, orchestral bed, symphony orchestra, full orchestra, string section, grand piano, solo violin, synth strings, garage shuffle, two-step garage
+```
+
+### r71 solo atom
+
+Style:
+
+```
+Breakneck jungle at 174: chopped amen breaks rolling and re-chopping every bar, ragga swing, reverse crashes into every turn, a deep round sub under it. It opens with him alone on the hook, flat and close, no drums and no instruments and nobody with him. A church organ answers him at the turns, and he carries every hook on his own. Every vocal sound in the record is a word from the lyrics: no humming, no ooh-ing, no whoops, nothing wordless anywhere. Big, live and room-y, like a rave taped off the desk. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, eight-bar bursts traded between them, heavy and unhurried, every bar landing clean and on the grid, never hurried and never dragging.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, steady rap pace, lazy flow, double-time, motormouth, major key, tempo change, slow tempo, half time, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, orchestral bed, symphony orchestra, full orchestra, string section, grand piano, solo violin, synth strings, garage shuffle, two-step garage, backing vocals, male choir, crowd vocals, gang vocals
+```
+
+### r71 lastonly atom
+
+Style:
+
+```
+Breakneck jungle at 174: chopped amen breaks rolling and re-chopping every bar, ragga swing, reverse crashes into every turn, a deep round sub under it. It opens with a church organ alone at the turns of a slow figure, no drums. He carries the hooks on his own, and a room of men only joins him for the very last one, saying it flat and low. Every vocal sound in the record is a word from the lyrics: no humming, no ooh-ing, no whoops, nothing wordless anywhere. Big, live and room-y, like a rave taped off the desk. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, eight-bar bursts traded between them, heavy and unhurried, every bar landing clean and on the grid, never hurried and never dragging.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, steady rap pace, lazy flow, double-time, motormouth, major key, tempo change, slow tempo, half time, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, orchestral bed, symphony orchestra, full orchestra, string section, grand piano, solo violin, synth strings, garage shuffle, two-step garage, gang vocals
+```
+
+### r71 lyrics (`wordsonly` shown — lanes differ only in the two chorus cues)
+
+```lyrics
+[Verse 1 | no drums yet | gruff grime MC, close and bitter]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the amen drops on this line]
+[gruff grime MC, hurt and insistent, heavy and unhurried, every word clear]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[gruff grime MC, rising, close to cracking]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[gruff grime MC, a bitter plea]
+please sir, can I fuckin, have some more?
+[Chorus | the hook, the room saying it with him, words only]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break | cold grime MC, clipped and cold, fast and clear]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold grime MC, sharper]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the beat cuts dead for the first line, then everything back]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two grime MCs trade lines, close and overlapping]
+[gruff grime MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold grime MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both grime MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold grime MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff grime MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold grime MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff grime MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold grime MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | everything at once, the whole room saying it with him, words only]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.62 Round r70 — four records, not four mixes: the BOLD rule applied to the merged spine (2026-09-23)
+
+**Brief, Jack 2026-09-23:** *"all of those were way too similar to each other, please mix up the
+beat, the orchestral elements, the grime rap voice, speed and flow, experiment using the provided
+songs I said I want you to combine and build off of, whilst removing the bad parts."*
+
+### 🔴 He is right and the number is brutal: r69's lanes shared 68–74% of the Style box
+
+| r69 pair | Longest shared run |
+|---|---|
+| `merge` / `beatfirst` | 462 chars = **74%** |
+| `merge` / `opencold` | 461 chars = **74%** |
+| `beatfirst` / `opencold` | 461 chars = **68%** |
+
+The sheet's own BOLD rule puts **anything over 40% in the 🔴 meek band** — *"this is one prompt with
+a costume. Rewrite before running."* r69 was three copies of one 462-character body with a different
+opening sentence bolted on. **It was written to answer "combine the two" and it broke the variety
+rule doing it.** Both requirements are live at once and r70 holds both.
+
+### The rule this round obeys, and it is already in the repo
+
+*"A variety round moves THREE things per lane: the d&b subgenre, the instrument family, and the
+opening the track starts on — plus a different job for that family and a different production
+sentence."* Jack named **four** axes, so r70 moves five per lane — his four plus the opening — and
+nothing is shared but the cast sentence.
+
+📎 **And the drums are the right axis to lead with.** Practitioner consensus: *"your ear for drum
+programming will often tell you the sub-lane faster than the bass"*
+([United By Bass](https://www.unitedbybass.com/every-drum-bass-subgenre-you-need-to-know-2025-edition/),
+[Red Bull](https://www.redbull.com/ca-en/an-expert-guide-to-drum-n-bass-sub-genres)). So each lane's
+first clause is a different beat.
+
+🔑 **The flows are grime-internal, so Ruling 2 holds.** Grime's own tradition supplies four distinct
+cadences without leaving the pool: **8-bar** (concise, high-energy, rapid exchanges), **nu-shape
+16/32-bar** (longer, more complex verses), **eskibeat's** quirky syncopated off-beat phrasing, and
+**darkside's** slow, heavy, menacing delivery
+([Grokipedia](https://grokipedia.com/page/Grime_music), [Eskimo](https://en.wikipedia.org/wiki/Eskimo_(grime_beat))).
+⚠️ **The genre words themselves stay out of the boxes** — `eskibeat` names a 140 BPM beat and would
+drag the tempo. The cadences go in as description.
+
+### The four lanes — five axes moved per lane
+
+| Lane | Beat | Orchestral element and its **job** | Voice and flow | Speed | Opens on | Production |
+|---|---|---|---|---|---|---|
+| `garage` | skippy UK garage two-step, swung hats, a bouncing bassline | cheap synth strings **stabbing on the offbeat** with the shuffle | talky and conversational, long unhurried sixteen-bar verses | **190 s** | beat from bar one | warm, bouncy, mid-forward, a pirate radio rip |
+| `reese` | dry sparse minimal two-step roller, almost nothing in it | one solo violin **holding a line an octave above the reese**, bending where it bends | low and murky, drawing single words out with menace | **185 s** | the reese alone, four bars, no drums | narrow, cold, sub-heavy |
+| `jungle` | breakneck chopped amen re-chopping every bar, ragga swing, reverse crashes | a church organ **answering the room** at the turns | short sharp eight-bar bursts traded fast, hyping | **175 s** — the fastest | a room of men on the hook, unaccompanied | big, live, room-y, taped off the desk at a rave |
+| `piano` | soft rolling break, brushed hats, a sub that rolls rather than bites | a grand piano **answering him at the end of every line**, an octave higher each section | hurt and close, line ends half-sung flat and raw, never tuned | **190 s** | piano alone, three lines, then the beat | wide, warm, tape-soft |
+
+✅ **Measured bold, and asserted in the build:** the longest shared run between any two Style boxes
+is **102–124 chars (17–21%)**, and the build **fails** unless that run is contained in the mandated
+cast sentence plus `night-bus melancholy`. **No production language, no beat language and no
+instrument is shared between any two lanes.**
+
+✅ **And short — r69's finding is kept:** Style **600–639** chars, Exclude **453–474**, against the
+liked takes' 805/438 and the rejected r68's 990/948.
+
+### 🔑 Speed is a lane property this round
+
+Jack asked for speed and flow to vary, so **Duration varies with the lane** rather than being held
+constant: `jungle` 175 s · `reese` 185 s · `garage` and `piano` 190 s — the whole of the settled
+working bracket, spread across four different flows. It is deliberately confounded with the lane,
+because that is what "mix up the speed" asks for.
+
+### "Removing the bad parts" — the list, carried as bans
+
+Every complaint Jack has made about this song, kept as a ban in all four lanes and nothing else:
+`autotune, pitch-corrected vocals, cheesy` (the cheesy hook) · `shouting, screaming, roaring` (the
+shouting) · `steady rap pace` (the drag he disliked in `1127446d`) · `double-time, motormouth` (the
+takes that were way too fast) · `American accent, US rap, trap, female vocal` (casting) ·
+`jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production` (the aggression and the
+gloss) · `major key, happy, uplifting` · and the bed bans. 🔴 **`air horns` and `snarling` stay
+lifted**, and `distorted bass` and `rapid-fire` remain unbanned.
+
+✅ **Not one lyric word changed.** Only the opening cue, the `[Drop]` cue and the two MC delivery
+cues differ per lane, so the lyrics carry each lane's flow instead of fighting it.
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender Male · Personalize off ·
+no Voice · **Duration per lane (175/185/190)** · workspace `camping-Jack` · weirdness **40 and 60**.
+8 Creates, 16 takes.
+
+### Generated 2026-09-23 — 8 Creates, 16 takes. Credits 9,080 → 9,000
+
+| Lane | In one line | w40 | w60 |
+|---|---|---|---|
+| `garage` | skippy UK garage two-step, swung hats, a bouncing bassline + cheap synth strings stabbing on the offbeat with the shuffle | [4735d147](https://suno.com/song/4735d147-7b13-4da5-b247-d174ddbb1c93) (3:09) · [ca5d75c6](https://suno.com/song/ca5d75c6-b309-4e6f-8eaf-787d7f58c2d3) (3:10) | [b86f6223](https://suno.com/song/b86f6223-a95e-4673-a4ba-42682be5ae58) (3:09) · [035f8d67](https://suno.com/song/035f8d67-a4b0-4ad0-ac07-65451a8020ed) (3:09) |
+| `reese` | dry sparse minimal two-step roller, almost nothing in it + one solo violin holding a line an octave above the reese, bending where it bends | [ce117a3f](https://suno.com/song/ce117a3f-3fbf-4b71-a7f9-203d29a175a2) (3:04) · [3e2a516a](https://suno.com/song/3e2a516a-0ec2-4036-a351-5b3179a1fb02) (3:06) | [daf558be](https://suno.com/song/daf558be-0dcd-4618-bc28-79a11492b46d) (3:05) · [8d095d65](https://suno.com/song/8d095d65-c5fb-402a-8264-68cd475ff5b8) (3:05) |
+| `jungle` | breakneck chopped amen re-chopping every bar, ragga swing, reverse crashes + a church organ answering the room at the turns | [23424577](https://suno.com/song/23424577-7f04-4f34-802b-1bd35c97144d) (2:55) · [fe84c960](https://suno.com/song/fe84c960-ed8c-4468-9b2d-85b47a74eed7) (3:07) | [8aad7fe2](https://suno.com/song/8aad7fe2-8218-433e-b77a-8c820b071c81) (2:56) · [99663d09](https://suno.com/song/99663d09-1b16-4e00-bb73-cde2c2e6f7d2) (2:55) |
+| `piano` | soft rolling break, brushed hats, a sub that rolls rather than bites + a grand piano answering him at the end of every line, an octave higher each section | [257ed183](https://suno.com/song/257ed183-5fc7-4d8d-bcd4-e56345583f0c) (3:10) · [dcb256c1](https://suno.com/song/dcb256c1-4cea-4d7b-a9cd-6306a24f1faf) (3:09) | [e212f69d](https://suno.com/song/e212f69d-b749-4221-ab59-535774245219) · [222f885b](https://suno.com/song/222f885b-7782-4f32-ab52-94b2e5899aac) |
+
+⚠️ **`piano` w60 returned `create:timeout` twice before succeeding on the third attempt.** Both
+failures cost **0 credits** and produced **no takes** — verified against the take list and the
+balance before retrying, which is the only safe way to handle a timeout. 🔑 **A `create:timeout` is
+not necessarily a spent Create: check the take list and the credit balance before re-running.**
+
+✅ **Duration behaved as the bracket predicts, and the 175 s reading gets a third data point:**
+190 s → 3:09–3:10 (4/4) · 185 s → 3:04–3:06 (4/4) · **175 s → 2:55, 2:55, 2:56 and one 3:07** — the
+only overshoot in the round, in the only cell set to 175. **185–190 s is reliable; 175 s is not.**
+
+⬜ **Not heard.** Three questions:
+1. 🔑 **Do these four sound like four different records?** That is the round's whole point, and it
+   is now measurable as well as audible — if they still sound alike at 17% shared text, the
+   similarity is coming from somewhere other than the Style box, and the **lyrics box** is the next
+   place to look.
+2. **Which beat, and which orchestral job?** The two axes are independent and can be recombined
+   next round.
+3. **Which flow, and at which speed?** `jungle` at 175 s and `garage` at 190 s are the two extremes.
+
+### r70 garage atom
+
+Style:
+
+```
+Skippy UK garage two-step at 174, swung hats and a bassline that bounces instead of growling, the beat hitting hard from the very first bar with no intro. Cheap synth strings stab on the offbeat with the shuffle, never a pad and never a melody. Chopped amen fills at every section turn. Warm, bouncy and mid-forward, like a pirate radio rip, night-bus melancholy. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, talky and conversational, telling you a story at four in the morning, long unhurried sixteen-bar verses, riding the shuffle rather than the snare.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, steady rap pace, double-time, motormouth, shouting, screaming, roaring, major key, tempo change, slow tempo, half time, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, orchestral bed, symphony orchestra, full orchestra, string section, church organ, grand piano, solo violin, male choir, crowd vocals, amen assault, jungle
+```
+
+### r70 reese atom
+
+Style:
+
+```
+Dark minimal drum and bass at 174, a dry sparse two-step roller with almost nothing in it, and a filthy reese bass that IS the tune, growing meaner every section. It starts on that reese alone for four bars, no drums at all. One solo violin holds a long line an octave above the reese and bends where it bends, nothing else orchestral anywhere. Narrow, cold and sub-heavy, mixed so the bass is the loudest thing after the drums. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, low and murky, several octaves down, drawing single words right out with menace, unhurried but never dragging.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, steady rap pace, double-time, motormouth, shouting, screaming, roaring, major key, tempo change, slow tempo, half time, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, orchestral bed, symphony orchestra, full orchestra, string section, church organ, grand piano, synth strings, male choir, crowd vocals, garage shuffle, handclaps
+```
+
+### r70 jungle atom
+
+Style:
+
+```
+Breakneck jungle at 174: chopped amen breaks rolling and re-chopping every bar, ragga swing, reverse crashes into every turn, a deep round sub under it. It opens with a room of men singing the hook on their own, no drums and no instruments. A church organ answers them at the turns, and the room comes back on every hook. Big, live and room-y, like a rave taped off the desk. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, short sharp eight-bar bursts traded fast between them, high energy, hyping each other, every bar landing clean and on the grid.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, steady rap pace, double-time, motormouth, shouting, screaming, roaring, major key, tempo change, slow tempo, half time, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, orchestral bed, symphony orchestra, full orchestra, string section, grand piano, solo violin, synth strings, garage shuffle, two-step garage
+```
+
+### r70 piano atom
+
+Style:
+
+```
+Rolling drum and bass at 174 with a soft break, brushed hats and a deep round sub that rolls rather than bites. A grand piano opens it alone on a slow falling figure, three lines before any drums, then the beat lands on 'you keep on walking'. The piano answers him at the end of every line and comes back an octave higher each section. Wide, warm and tape-soft, night-bus melancholy. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, hurt and close, half-speaking and half-singing the ends of lines, flat and raw and never tuned, unhurried and clear.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, steady rap pace, double-time, motormouth, shouting, screaming, roaring, major key, tempo change, slow tempo, half time, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, orchestral bed, symphony orchestra, full orchestra, string section, church organ, male choir, crowd vocals, synth strings, garage shuffle, jungle
+```
+
+### r70 lyrics (`piano` lane shown — lanes differ only in the opening cue, the `[Drop]` cue and the two MC delivery cues)
+
+```lyrics
+[Verse 1 | piano alone, no drums | gruff grime MC, close and bitter]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the beat lands on this line]
+[gruff grime MC, hurt and insistent, hurt and close, half-speaking half-singing the line ends]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[gruff grime MC, rising, close to cracking]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[gruff grime MC, a bitter plea]
+please sir, can I fuckin, have some more?
+[Chorus | the hook, the room joining in]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break | cold grime MC, clipped and cold, fast and clear]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold grime MC, sharper]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the beat cuts dead for the first line, then everything back]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two grime MCs trade lines, close and overlapping]
+[gruff grime MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold grime MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both grime MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold grime MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff grime MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold grime MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff grime MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold grime MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | everything at once, the whole room]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.61 Round r69 — 🔴 THE RESET: the two liked takes merged, and the boxes cut back to their size (2026-09-23)
+
+**Brief, Jack 2026-09-23:** *"the newest generations are nothing like these two
+[[1127446d](https://suno.com/song/1127446d-abe8-4079-9bbe-6b281e12aa74)]
+[[1b2aa79c](https://suno.com/song/1b2aa79c-9b06-44e8-b463-63809306060b)]. Please start again and
+combine the two."*
+
+### 🔴 The diagnosis, with numbers: we over-specified the drift space shut
+
+Both takes Jack likes were made by boxes that were **disobeyed** — the sheet has said so since r47:
+*"every liked feature was a disobedience."* The piano opening, the orchestral violins and the sung
+chorus on `1127446d` are **all drift**; its box bans `piano`, names no orchestral instrument and
+contains no chorus. So the boxes do not describe the records — they describe the space the records
+drifted inside.
+
+**r67 and r68 kept adding instructions to that space until there was none left:**
+
+| | Style | Exclude | Lyric cues |
+|---|---|---|---|
+| `1127446d` (liked) | 805 | **438** | short |
+| `1b2aa79c` (liked) | 997 | 835 | 1,245 |
+| r68 (rejected) | 990 | **948** | **1,662** |
+| 🆕 **r69** | **625–758** | **443** | **677** |
+
+🔑 **The exclude box more than doubled the liked take's, and the cues grew by a third.** Our own rule
+says a bloated Exclude box out-votes the Style box, and that cues *"are read, but they compete."*
+Every r67/r68 addition was individually justified by a note from Jack — and collectively they turned
+a loose brief into a specification, which is exactly the failure the sheet already recorded once at
+r53–r57 (*"each tried to write the liked accidents in, and each got further away"*).
+
+**So r69 is a reset, not another iteration.** Every instruction added since r66 that Jack did not
+ask for by name is gone.
+
+### What each parent contributes — sentences lifted from their own boxes, verbatim where possible
+
+| From `1127446d` | From `1b2aa79c` |
+|---|---|
+| *a solid punchy beat, full breakbeats and a heavy rolling sub, never jump up, and the track builds from there* | *chopped amen fills at every section turn* (both had this) |
+| *skippy two-step garage shuffles folded into the drum and bass* | *handclaps on the backbeat* |
+| 🔑 *a dark **reese** bass that grows meaner every section* | 🔑 *a room of men answers him on the hook, low and close* |
+| *cheap synth strings* — the only orchestral word either box ever had | *a church organ at the turns* |
+| *night-bus melancholy* | the **grime cast** (Ruling 2), kept verbatim |
+
+🔴 **Three things from `1127446d` were deliberately NOT carried over.** Its cast (*a gravelly older
+English storyteller / a BBC newsreader*) loses to Ruling 2, which Jack made standing. Its
+*"steady rap pace"* is the one thing he has ever disliked about that take, so it stays **banned**
+rather than asked for. And its `piano` ban is gone — that ban was banning the opening he loves.
+
+### The one variable: which parent's opening the merged body wants
+
+| Lane | The opening |
+|---|---|
+| `merge` | **nothing said about the opening at all** — the largest drift space of the three |
+| `beatfirst` | `1127446d`'s opening: *the beat hits hard from the very first bar, no intro* |
+| `opencold` | `1b2aa79c`'s opening: no drums, a piano and a lone violin, three lines, then the beat on 'you keep on walking' |
+
+🔑 **`merge` says nothing about the opening on purpose.** It is the round's real bet: give Suno the
+merged body and let the arrangement drift, which is the only way either liked take was ever made.
+
+### The excludes, rebuilt from scratch at `1127446d`'s scale (443 chars)
+
+**Kept:** the nationality and vocalist guards, `jump up, wobble bass, neurofunk, dubstep, EDM drops,
+glossy production`, `major key, slow tempo, half time, tempo change`, `steady rap pace, double-time,
+motormouth`, `shouting, screaming, roaring`, `autotune, pitch-corrected vocals, gospel choir,
+cheesy`, and the bed bans.
+**Dropped:** `piano` · `choir, crowd noise, audience, applause` (the room is the point of the lane
+Jack likes) · `air horns, snarling` (Jack removed them by name) · and the whole accreted middle
+layer — the anti-loudness bans, the clarity bans, the cross-lane instrument bans, the drum-loss
+guards. 🔴 **Those drum-loss guards bought real protection at r65, so if the drums go soft in this
+round, that is the first block to put back — and it is the round's stated risk.**
+
+✅ **Not one lyric word changed** — asserted byte for byte, 80 lines. Only the cues shrank.
+
+### 🔑 And the shorter route, which is one human action, not a prompt
+
+Jack's actual request — *combine these two songs* — is a **feature**, and it is the one thing this
+automation cannot do (any attachment on the create form aborts `load` by design). **Suno v6's
+multi-song mashup**, `files/suno-v6.md` §5, marked *tested twice*:
+
+1. **Simple** mode → **Add** → drag both songs in (2–3 allowed).
+2. One plain-English instruction naming which element comes from which — e.g. *"the drums, the reese
+   and the grime vocal from the second one, the piano and violin opening and the string melody from
+   the first."*
+3. Create. **What it should sound like:** a single record carrying both, not a crossfade. **Failure
+   sign:** it returns a cover of one of them — check both songs actually attached before Create.
+
+**That is 10 credits and one drag, and it is a genuinely different mechanism from anything in this
+sheet.** Worth doing alongside r69 rather than instead of it — the prompt round is reproducible and
+the mashup is not.
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender Male · Personalize off ·
+no Voice · **Duration 185 s** · workspace `camping-Jack` · weirdness **40 and 60**. 6 Creates, 12 takes.
+
+⬜ **Style Influence stays at 75 so the box length is the only thing that moved.** If r69 is still
+too obedient, **SI 70 then 65 is the next lever** — it is the adherence control, and both liked
+takes are records of disobedience.
+
+### Generated 2026-09-23 — 6 Creates, 6 clean. Credits 9,140 → 9,080
+
+| Lane | Opening | w40 | w60 |
+|---|---|---|---|
+| `merge` | **nothing said about the opening at all** — the largest drift space of the three | [b3110997](https://suno.com/song/b3110997-7333-43b9-89ab-41e1831357c7) (3:04) · [fae9996d](https://suno.com/song/fae9996d-cbb5-4c88-a606-1f9cfd6e8a0e) (3:05) | [1672b535](https://suno.com/song/1672b535-60ab-4ebd-9b8f-738dc36fca09) (3:04) · [1a6e27d1](https://suno.com/song/1a6e27d1-fdd2-4fa6-ac34-94b0d5ded58a) (3:07) |
+| `beatfirst` | `1127446d`'s opening | [f2bbdfec](https://suno.com/song/f2bbdfec-2529-4714-8c62-6c5d783d0a85) (3:05) · [15ca6f44](https://suno.com/song/15ca6f44-ce51-47bd-a687-0823b87051c9) (3:05) | [ba4c3847](https://suno.com/song/ba4c3847-911f-49f8-b696-03d9d6284fd8) (3:05) · [ffa10291](https://suno.com/song/ffa10291-e7b6-4154-889c-0963e6dfc235) (3:05) |
+| `opencold` | `1b2aa79c`'s opening | [d98f3055](https://suno.com/song/d98f3055-46ec-46ec-ba9f-6b07a4abf50f) · [7158fdc9](https://suno.com/song/7158fdc9-0963-4a58-a852-87088a79cd87) | [a288159f](https://suno.com/song/a288159f-00fb-402a-b1a9-2837d54c3fca) · [9e6e9572](https://suno.com/song/9e6e9572-5617-48ab-a493-2d4de39029b2) |
+
+✅ **Six Creates, six clean** — 10 credits each, balance read around every one.
+✅ **Duration 185 s held a third time** (3:04–3:07 on the eight measured).
+
+⬜ **Not heard.** Three questions:
+1. 🔑 **Does it sound like a relative of the two takes again?** That is the whole round. If yes, the
+   diagnosis is confirmed and **short boxes become the house default for this song.**
+2. **Which opening?** Unspecified (`merge`) · beat-from-bar-one (`beatfirst`) · drumless piano and
+   violin (`opencold`).
+3. 🔴 **Did anything the stripped bans were holding back come back in** — soft drums, a tuned
+   chorus, an American vocal? Each has a named block ready to reinstate on its own.
+
+### r69 merge atom
+
+Style:
+
+```
+174 BPM drum and bass with grime over it: a solid punchy beat, full breakbeats and a heavy rolling sub, never jump up, and the track builds from there. Skippy two-step garage shuffles folded into the drum and bass, a dark reese bass that grows meaner every section, chopped amen fills at every section turn, cheap synth strings, handclaps on the backbeat, a church organ at the turns. A room of men answers him on the hook, low and close. Night-bus melancholy. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, fast and clear, never rushing and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, US rap, trap, teenage voice, falsetto, autotune, pitch-corrected vocals, female vocal, gospel choir, cheesy, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, major key, slow tempo, half time, tempo change, britpop, folk, pub rock, steady rap pace, double-time, motormouth, shouting, screaming, roaring, orchestral bed, symphony orchestra, full orchestra, string section
+```
+
+### r69 beatfirst atom
+
+Style:
+
+```
+174 BPM drum and bass with grime over it: a solid punchy beat, full breakbeats and a heavy rolling sub, never jump up, and the track builds from there. Skippy two-step garage shuffles folded into the drum and bass, a dark reese bass that grows meaner every section, chopped amen fills at every section turn, cheap synth strings, handclaps on the backbeat, a church organ at the turns. A room of men answers him on the hook, low and close. Night-bus melancholy. The beat hits hard from the very first bar, no intro. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, fast and clear, never rushing and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, US rap, trap, teenage voice, falsetto, autotune, pitch-corrected vocals, female vocal, gospel choir, cheesy, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, major key, slow tempo, half time, tempo change, britpop, folk, pub rock, steady rap pace, double-time, motormouth, shouting, screaming, roaring, orchestral bed, symphony orchestra, full orchestra, string section
+```
+
+### r69 opencold atom
+
+Style:
+
+```
+174 BPM drum and bass with grime over it: a solid punchy beat, full breakbeats and a heavy rolling sub, never jump up, and the track builds from there. Skippy two-step garage shuffles folded into the drum and bass, a dark reese bass that grows meaner every section, chopped amen fills at every section turn, cheap synth strings, handclaps on the backbeat, a church organ at the turns. A room of men answers him on the hook, low and close. Night-bus melancholy. It opens with no drums: a piano and a lone violin, the first MC close for three lines, then the beat lands on 'you keep on walking'. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, fast and clear, never rushing and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, US rap, trap, teenage voice, falsetto, autotune, pitch-corrected vocals, female vocal, gospel choir, cheesy, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, major key, slow tempo, half time, tempo change, britpop, folk, pub rock, steady rap pace, double-time, motormouth, shouting, screaming, roaring, orchestral bed, symphony orchestra, full orchestra, string section
+```
+
+### r69 lyrics (shared — the canon words, cues cut 1,662 → 677 chars)
+
+```lyrics
+[Verse 1 | gruff grime MC, close and bitter]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the beat arrives on this line]
+[gruff grime MC, hurt and insistent, fast and clear]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[gruff grime MC, rising, close to cracking]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[gruff grime MC, a bitter plea]
+please sir, can I fuckin, have some more?
+[Chorus | the hook, the room joining in]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break | cold grime MC, clipped and cold, fast and clear]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold grime MC, sharper]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the beat cuts dead for the first line, then everything back]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two grime MCs trade lines, close and overlapping]
+[gruff grime MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold grime MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both grime MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold grime MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff grime MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold grime MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff grime MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold grime MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | everything at once, the whole room]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.60 Round r68 — the orchestra back with a job, the voice turned down, the record made palatable (2026-09-23)
+
+**Brief, Jack 2026-09-23, again on [1b2aa79c](https://suno.com/song/1b2aa79c-9b06-44e8-b463-63809306060b):**
+*"remove the air horns and snarling, the grime voice should be aggressive but not so much so turn it
+down, he shouldn't shout. Also we have lost the orchestral elements so add some back and take
+another look at this song, and tone down the loud parts and the cheesy parts, make it more
+palatable."*
+
+Built on the r67 `answer` atom (§v6.59), which already carries the de-cheesed hook, Duration 185 s
+and the grime push. Four things change as constants; the **lane axis is which orchestral element
+comes back and what job it does.**
+
+### ✅ The two lifted bans — flagged last round, confirmed this round
+
+`air horns` and `snarling` were flagged at the end of r67 as grime-set signatures still banned by
+the "less aggressive" sweep. Jack has now removed them by name. **That is the sixth and seventh ban
+found fighting the brief, and the first two caught *before* they cost a round.** Both are out.
+
+### 🔴 "We have lost the orchestral elements" — correct, and here is exactly where they went
+
+The `chorale` lane Jack likes is the **least orchestral of r66's four**. Its only non-D&B instrument
+is *"a church organ holds chords at the turns only"* — the piano and the solo violin that open
+`1127446d`, the two things he has named as things he likes, are in the `odejoy`, `mars` and `fate`
+lanes and **not** in this one. So the diagnosis is exact, and the fix is to put them back **without
+repealing Ruling 1**.
+
+🔑 **Ruling 1 stands: the orchestra is a garnish with a JOB, never a bed, never the lead**
+(four measurements: a full film-score bed gives the weakest low end, the smallest dynamic range and
+the *slowest* rap). So every lane opens on a **felt piano and its own string element**, and that
+element then gets a **rhythmic or arrangement job against the break** for the rest of the record.
+The bed bans (`orchestral bed`, `symphony orchestra`, `string section`, `sustained string pad`,
+`lush pads`, `epic trailer music`) stay in all three lanes.
+⚠️ **Which is why lane 2 says "plucked cellos and violas" and not "string section"** — the ban would
+have fought the lane, so the lane is worded around it rather than the ban being lifted.
+
+### 🔑 "Aggressive but turned down, he shouldn't shout" — the Flowdan register
+
+The research names the thing precisely: Flowdan's *"distinctive murky low-pitch timbre, several
+octaves deeper than anyone else… the personification of dread"*, and a flow built on *"drawing out
+and repeating single words with bone-chilling menace"*
+([RBMA](https://daily.redbullmusicacademy.com/2018/08/voices-of-pirate-radio-grime/),
+[Wikipedia](https://en.wikipedia.org/wiki/Grime_(music_genre))). **That is aggression carried by
+pitch and menace instead of volume**, which is exactly the note.
+
+So r43's cast sentence keeps its verbatim core (*"loud and in front"* is a **mix position**, not a
+shout) and the tail becomes *"aggressive but held back, low and murky, menace not volume, never
+raising their voices, fast and clear."* 🆕 And `shouting, shouted vocals, hollering, bellowing` are
+banned for the first time, alongside the `screaming, roaring` that were already there.
+
+### 🔑 "Tone down the loud parts… make it more palatable" — dynamics, not level
+
+🔴 **The trap, stated rather than walked into:** r64 was told to take the aggression out, softened
+its production sentence (*"patient rather than violent"*) and **lost the drums entirely**. Turning
+this record down the naive way would repeat that exactly.
+
+The research says what "too loud" usually is, and it is not the fader. Harshness lives in the
+**2–6 kHz** band and sustained energy there is what produces listening fatigue
+([Levels](https://www.levelsmusicproduction.com/blog/why-do-my-high-frequencies-sound-harsh),
+[Mastering The Mix](https://www.masteringthemix.com/blogs/learn/understanding-the-different-frequency-ranges)),
+and **brickwalling squashes away the dynamic range so everything sounds the same volume**, costing
+punch and detail ([iZotope](https://www.izotope.com/community/blog/loud-mix),
+[MasteringBOX](https://www.masteringbox.com/learn/dynamic-range-and-loudness)). Our own toolkit
+already says Suno's harshness *"sits exactly where D&B lives — brittle cymbals, sizzling hats,
+sibilance in 2–6 kHz."*
+
+| Where it was loud | r67 | r68 |
+|---|---|---|
+| the drop | *"the drums alone and enormous"* | *"whole and controlled rather than louder"* |
+| the cycles | *"it empties and **slams back** three more times"* | *"it falls to almost nothing and returns three more times, **the quiet parts really quiet**"* |
+| the room | *"a stadium"*, *"barks"*, *"shouted not sung"* | *"low and close, half-spoken in unison, **a pub not a stadium**"* |
+| the top end | — | 🆕 *"hats brushed back"* + `sizzling hats, sibilant, harsh, abrasive` banned |
+| the master | — | 🆕 *"mixed with headroom, never brickwalled"* + `brickwalled, over-compressed, maximised, loudness war, wall of sound` banned |
+| the cheese | `cheesy` | 🆕 `corny, stadium rock, euphoric, football chant` added |
+
+🔑 **The drums are NOT described as quieter anywhere.** `Drums and sub loudest… never in front` is
+still in every lane, verbatim. **The loudness comes out of the mastering and the peaks; the drums
+keep their place in the balance.** That is the only way to give Jack what he asked for without
+buying r64's failure a second time.
+
+✅ **Not one lyric word changed** — asserted byte for byte, 80 lines, and the build fails if
+`barking`, `enormous` or `slams back` survive anywhere in the cues.
+
+### The three lanes — identical except which instrument returns and what it does
+
+| Lane | What opens with the piano | Its job for the rest of the record |
+|---|---|---|
+| `violin` | a lone violin | it **answers** the MC in the gap at the end of every bar, and doubles the bassline an octave up in the drops |
+| `pizz` | plucked cellos and violas ticking | it **plays the break's own pattern back** in short plucked sixteenths — percussion, not melody |
+| `cello` | one low cello holding | it **doubles the sub an octave up** in long bowed lines — weight from register, not from volume |
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender Male · Personalize off ·
+no Voice · **Duration 185 s** (unchanged — Jack has not commented on r67's pacing yet) · workspace
+`camping-Jack` · weirdness **40 and 60**. 6 Creates, 12 takes.
+
+### Generated 2026-09-23 — 6 Creates, 6 clean. Credits 9,200 → 9,140
+
+| Lane | The orchestral job | w40 | w60 |
+|---|---|---|---|
+| `violin` | **answers** the MC in the gap at the end of every bar, and doubles the bassline an octave up in the drops | [6e71e777](https://suno.com/song/6e71e777-e10d-4ea6-9584-376937502324) (3:04) · [0df113c2](https://suno.com/song/0df113c2-eca0-4da6-9b73-e20b5c68cdbe) (3:06) | [e425a5b3](https://suno.com/song/e425a5b3-4dc3-4141-81ce-211ac6c73f52) (3:03) · [87aeee9c](https://suno.com/song/87aeee9c-3574-43d5-954e-c77ddffa6214) (3:04) |
+| `pizz` | **plays the break's own pattern back** in short plucked sixteenths — percussion, not melody | [2f3cd143](https://suno.com/song/2f3cd143-4247-4a48-b5ca-2e06454b64ce) (3:05) · [030872cf](https://suno.com/song/030872cf-bc25-47de-831e-9cb628980b2b) (3:05) | [5764c19f](https://suno.com/song/5764c19f-e44d-4d06-8c39-fb39841a827c) (3:05) · [e986cabe](https://suno.com/song/e986cabe-370c-4afd-b445-8515f4df1965) (3:05) |
+| `cello` | **doubles the sub an octave up** in long bowed lines — weight from register, not from volume | [711e75d0](https://suno.com/song/711e75d0-1af9-49ee-97cb-438cddb230c7) · [9dbac783](https://suno.com/song/9dbac783-dc43-4a28-96b1-11b35fc689b2) | [2000687f](https://suno.com/song/2000687f-348b-4f5c-80ca-dc430d8d3632) · [3a6c47d4](https://suno.com/song/3a6c47d4-58ea-42a6-9fc2-fe06013a9264) |
+
+✅ **Six Creates, six clean** — 10 credits each, balance read before and after every one.
+✅ **Duration 185 s held again: eight of eight measured takes at 3:03–3:06 against a 3:05 target.**
+Across r67 and r68 that is **16/16 within ~2 s**, against two overshoots in sixteen at 175 s.
+**185 s is now the settled number for this song.**
+
+⬜ **Not heard.** Four questions, in order:
+1. 🔑 **Are the drums still there?** This round deliberately took loudness out of a record that r64
+   proved is easy to un-make. If the D&B has gone soft, the culprit is the *mastering* language and
+   it comes straight back out — the balance sentence is untouched.
+2. **Is the orchestra back, and is it a garnish or a bed?** If any lane sounds like a film score,
+   Ruling 1 was broken by the job description, not by the instrument.
+3. **Which job reads best** — answering (`violin`) · percussion (`pizz`) · register (`cello`)?
+4. **Is the voice aggressive without shouting?** If it now sounds bored rather than menacing, the
+   lever is `low and murky, menace not volume` going further, not the cast sentence coming back.
+
+### r68 violin atom
+
+Style:
+
+```
+UK grime MCs over jungle drum and bass, 174 BPM, D minor: chopped amen breaks, a deep round sub, handclaps, hats brushed back. Opens with no drums: a felt piano on a slow falling figure, a lone violin over it, first MC close for three lines. A beat of silence, then break and sub arrive on 'you keep on walking', controlled rather than louder; it falls to almost nothing and returns three more times, the quiet parts really quiet. The violin stays right through with a job: answering the MC at the end of every bar, doubling the bassline an octave up in the drops. Drums and sub loudest, piano and violin under them, never in front. A church organ at the turns only. The room answers him low and close, half-spoken in unison, a pub not a stadium. Mixed with headroom, never brickwalled. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, aggressive but held back, low and murky, menace not volume, never raising their voices, fast and clear.
+```
+
+Exclude styles:
+
+```
+autotune, pitch-corrected vocals, tuned vocals, vocoder, stacked harmonies, layered vocals, vocal doubles, gospel choir, EDM vocal, pop hook, anthemic chorus, singalong, football chant, cheesy, corny, stadium rock, euphoric, shouting, shouted vocals, hollering, bellowing, screaming, roaring, brickwalled, over-compressed, maximised, loudness war, wall of sound, sizzling hats, sibilant, harsh, abrasive, buried vocals, distant vocal, drowned in the mix, heavy vocal reverb, mumbled, double-time, chopper rap, motormouth, breathless, steady rap pace, lazy flow, slow flow, spoken word, trip hop, half-time drums, sparse percussion, drumless, slow build, distant drums, neurofunk, jump up, American accent, US rap, trap, female vocal, Jamaican accent, ragga MC, BBC newsreader, orchestral bed, symphony orchestra, string section, sustained string pad, lush pads, epic trailer music, major key, pizzicato, plucked strings, cello section, upright bass
+```
+
+### r68 pizz atom
+
+Style:
+
+```
+UK grime MCs over jungle drum and bass, 174 BPM, D minor: chopped amen breaks, a deep round sub, handclaps, hats brushed back. Opens with no drums: a felt piano on a slow falling figure, plucked cellos ticking under it, first MC close for three lines. A beat of silence, then break and sub arrive on 'you keep on walking', controlled rather than louder; it falls to almost nothing and returns three more times, the quiet parts really quiet. The plucked strings stay right through with a job: playing the break's own pattern back in short sixteenths, percussion not melody. Drums and sub loudest, piano and strings under them, never in front. A church organ at the turns only. The room answers him low and close, half-spoken in unison, a pub not a stadium. Mixed with headroom, never brickwalled. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, aggressive but held back, low and murky, menace not volume, never raising their voices, fast and clear.
+```
+
+Exclude styles:
+
+```
+autotune, pitch-corrected vocals, tuned vocals, vocoder, stacked harmonies, layered vocals, vocal doubles, gospel choir, EDM vocal, pop hook, anthemic chorus, singalong, football chant, cheesy, corny, stadium rock, euphoric, shouting, shouted vocals, hollering, bellowing, screaming, roaring, brickwalled, over-compressed, maximised, loudness war, wall of sound, sizzling hats, sibilant, harsh, abrasive, buried vocals, distant vocal, drowned in the mix, heavy vocal reverb, mumbled, double-time, chopper rap, motormouth, breathless, steady rap pace, lazy flow, slow flow, spoken word, trip hop, half-time drums, sparse percussion, drumless, slow build, distant drums, neurofunk, jump up, American accent, US rap, trap, female vocal, Jamaican accent, ragga MC, BBC newsreader, orchestral bed, symphony orchestra, string section, sustained string pad, lush pads, epic trailer music, major key, solo violin, violin melody, legato strings, cello section
+```
+
+### r68 cello atom
+
+Style:
+
+```
+UK grime MCs over jungle drum and bass, 174 BPM, D minor: chopped amen breaks, a deep round sub, handclaps, hats brushed back. Opens with no drums: a felt piano on a slow falling figure, one low cello under it, first MC close for three lines. A beat of silence, then break and sub arrive on 'you keep on walking', controlled rather than louder; it falls to almost nothing and returns three more times, the quiet parts really quiet. The cellos stay right through with a job: long bowed lines doubling the sub an octave up, weight from register not volume. Drums and sub loudest, piano and cellos under them, never in front. A church organ at the turns only. The room answers him low and close, half-spoken in unison, a pub not a stadium. Mixed with headroom, never brickwalled. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, aggressive but held back, low and murky, menace not volume, never raising their voices, fast and clear.
+```
+
+Exclude styles:
+
+```
+autotune, pitch-corrected vocals, tuned vocals, vocoder, stacked harmonies, layered vocals, vocal doubles, gospel choir, EDM vocal, pop hook, anthemic chorus, singalong, football chant, cheesy, corny, stadium rock, euphoric, shouting, shouted vocals, hollering, bellowing, screaming, roaring, brickwalled, over-compressed, maximised, loudness war, wall of sound, sizzling hats, sibilant, harsh, abrasive, buried vocals, distant vocal, drowned in the mix, heavy vocal reverb, mumbled, double-time, chopper rap, motormouth, breathless, steady rap pace, lazy flow, slow flow, spoken word, trip hop, half-time drums, sparse percussion, drumless, slow build, distant drums, neurofunk, jump up, American accent, US rap, trap, female vocal, Jamaican accent, ragga MC, BBC newsreader, orchestral bed, symphony orchestra, string section, sustained string pad, lush pads, epic trailer music, major key, pizzicato, plucked strings, solo violin, violin melody
+```
+
+### r68 lyrics (shared — the r67 words, cues turned down)
+
+```lyrics
+[Verse 1 | no drums, only the piano and the strings the track opens on | gruff grime MC, quiet, close and bitter, three lines only]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | one beat of silence, then the break and the Reese arrive together on this line, whole and controlled rather than louder]
+[gruff grime MC from here, hurt and insistent, aggressive but held back, low and murky, fast but every word clear, landing hard on every beat without raising his voice, never rushing and never pausing mid-line]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[gruff grime MC, more insistent, hurt, voice close to cracking but never shouting]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[gruff grime MC, a bitter plea, voice breaking]
+please sir, can I fuckin, have some more?
+[Chorus | the gruff grime MC says each line, the room answers the last three words back low and close, half-spoken in unison, nobody sings and nobody shouts]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat fuller than verse one | cold grime MC, fast but every word clear, clipped, cold and contemptuous, quiet menace rather than volume, every consonant landing]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold grime MC, sharper and colder, biting]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the beat cuts dead for the first line, one bare hurt voice, then everything returns fuller than the first chorus | the room answering low and close, nobody sings and nobody shouts]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | straight in, no break, the beat at its fullest | the two grime MCs trade lines fast and clear, close and overlapping, both hurt, neither raising his voice]
+[gruff grime MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold grime MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both grime MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold grime MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff grime MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold grime MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff grime MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold grime MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | the fullest moment of the record, everything at once, the whole room answering every line straight back at him low and close, nobody sings and nobody shouts]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.59 Round r67 — the liked take, de-cheesed: kill the autotune hook, slow the rap a notch, push the grime (2026-09-23)
+
+**Brief, Jack 2026-09-23, on [1b2aa79c](https://suno.com/song/1b2aa79c-9b06-44e8-b463-63809306060b)
+(= `camping-r66-chorale-v6-w60`):** *"this song is cool i like the vibes, please get rid of the
+autotune chorus it is too cheesy, please slow down the rap a bit, but it should stay fast, just not
+too fast, we should hear what he says, also add more of a grime voice to it. try a few variations."*
+
+🔑 **This is the round the sheet has been waiting for: the first DEEPENING round.** r49–r66 all
+widened. Jack has now named a take, so the spine is `chorale` and nothing else moves except the
+three things he asked for.
+
+### 🔴 The finding: `autotune` was ALREADY banned, and it still arrived
+
+`autotune` sat in r66 `chorale`'s exclude box the whole time. The chorus came back autotuned anyway,
+because **the Style box asked for it in the positive**:
+
+| What r66 said | What it routes to |
+|---|---|
+| *"a room of men **singing** the hook line together in **bare block harmony**"* | a tuned, stacked gang vocal — the EDM-chorus centroid |
+| *"half **singing** line ends"* (cast tail) | a pitched lead on the hook |
+| `[Chorus \| … half sung and half chanted …]` ×3 | the lyric cue voting for the same thing, and cues out-vote the Style box |
+
+🔑 **A ban does not beat a positive instruction; it only removes an option the model was not already
+being pushed toward.** Our own knowledge base says the same thing from the other side — *prefer the
+positive form and take the instrument risk* — and the practitioner guides say the reliable fix is a
+**three-part stack**: a positive Style-box target, matching section tags, and the exclude terms last
+([Jack Righteous](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/stop-suno-adding-crowd-vocals-choirs-backing-voices),
+[SongSmith](https://songsmith.studio/blog/suno-negative-prompts-guide)). That is what r67 does, and
+the lane axis is **which positive form** to use.
+
+### The three levers, one per complaint
+
+| Complaint | Lever | Why this one |
+|---|---|---|
+| **"autotune chorus, too cheesy"** | every word in the *singing* family deleted from the hook description in **all three boxes**, replaced by a positive un-tunable form (per lane), then the ban list widened to `pitch-corrected vocals, tuned vocals, vocoder, stacked harmonies, layered vocals, vocal doubles, EDM vocal, pop hook, anthemic chorus, singalong, cheesy` | deleting beats adding; the ban is the third line of defence, not the first |
+| **"slow the rap a bit, still fast, we should hear what he says"** | 🔑 **Duration 175 → 185 s**, plus `rapid-fire` **removed from the Style box** (and left unbanned) for *"spitting fast but every word clear, never rushing and never slowing for a punchline"*, plus a clarity clause in the mix sentence and `mumbled, buried vocals, drowned in the mix, heavy vocal reverb` banned | Duration is the only pacing lever ever proven obeyed on this song, and 185 s sits inside the settled 175–190 working bracket. 🔑 *"We should hear what he says"* is half a **mix** problem, not only a speed one |
+| **"more of a grime voice"** | `UK grime MCs` moved to the **first three tokens** of every Style box; `London pirate-radio energy, bars spat down the mic`; and — the strongest lever — **every lyric label renamed `gruff MC` → `gruff grime MC`, `cold MC` → `cold grime MC`** | Suno weights the opening tokens heavily, and the lyrics box out-votes the Style box on casting (§v6.51). Sixteen grime-labelled cues now vote for the pool every section |
+
+🔴 **Excludes audit — and one deliberate shrink.** The exclude box went **835 → 731 chars**. Our own
+rule: *if the Exclude box holds more words from a family than the Style box does, the Style box
+loses*. With a round whose whole point is pushing a vocal pool harder, the bloated cross-lane ban
+list inherited from r66 was dead weight, so every ban that was only there to keep r66's four lanes
+apart came out. What stayed: the pacing guards, the drum-loss guards that r64's failure bought, the
+aggression bans Jack has **not** complained about since, and the bed bans.
+⚠️ **Noted, not acted on:** `air horns` and `snarling` are grime-set signatures still banned as
+aggression. If a lane reads as not-grime-enough, they are the first two to lift.
+
+✅ **Not one lyric word changed** — cues stripped, words compared byte for byte, 80 lines held, and
+the build asserts `half sung` / `half chanted` are gone and that ≥12 `grime MC` labels are present.
+
+### The three lanes — all identical except HOW the hook is performed
+
+| Lane | The hook | The risk it tests |
+|---|---|---|
+| `terrace` | a crowd of men on **one flat note**, shouted not sung, never harmonised | nothing is left to tune — but does it stop being a hook? |
+| `answer` | **no melody at all**: he says the line, the room barks the last three words back | pure Hallelujah antiphony, de-pitched — does the chorus still lift? |
+| `raw` | still **sung**, but by one man, rough, flat and cracked, nobody behind him | 🔑 the hedge — Jack has liked a sung chorus since `1127446d`; he objected to **autotune**, not to singing |
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender Male · Personalize off ·
+no Voice · **Duration 185 s** · workspace `camping-Jack` · weirdness **40 and 60**. 6 Creates, 12 takes.
+
+### Generated 2026-09-23 — 6 Creates, 6 clean. Credits 9,260 → 9,200
+
+| Lane | What changed about the hook | w40 | w60 |
+|---|---|---|---|
+| `terrace` | the hook chanted flat on ONE note by a crowd, shouted not sung — nothing left to tune | [b4276153](https://suno.com/song/b4276153-b9ea-46a4-b18a-d36deb6b5696) (3:04) · [89c1dff6](https://suno.com/song/89c1dff6-a2ef-4f36-b2b5-a33d5f642e54) (3:04) | [ac657394](https://suno.com/song/ac657394-07c3-4896-ada3-361f2c7b562e) (3:05) · [c3afdf1d](https://suno.com/song/c3afdf1d-d8f8-4109-8bfa-0f0a21eca907) (3:06) |
+| `answer` | no hook melody at all: he says the line, the room barks the last three words back | [545f6755](https://suno.com/song/545f6755-bfd6-4a13-b43b-91c60d30190f) (3:05) · [e5995492](https://suno.com/song/e5995492-db0c-4092-96f0-dc026cfe8333) (3:04) | [50f30fd1](https://suno.com/song/50f30fd1-9176-47c9-b7e9-e0f0860cd72c) (3:04) · [00c17fdc](https://suno.com/song/00c17fdc-6f52-47d3-9418-82d1103ccacf) (3:04) |
+| `raw` | the hook still sung, but by ONE man, rough, flat and cracked, nobody behind him | [7b91af7f](https://suno.com/song/7b91af7f-4e7c-4e63-b8ea-631adef9ac7d) · [c6b9e8b0](https://suno.com/song/c6b9e8b0-1c09-4d39-b528-3605606ababe) | [9a0c4019](https://suno.com/song/9a0c4019-d080-415c-8fa1-ac4c198c3f78) · [6da84046](https://suno.com/song/6da84046-17cf-4246-9e45-35a173005266) |
+
+✅ **Six Creates, six clean** — 10 credits each, balance read before and after every one.
+
+✅ **And Duration 185 s behaved perfectly: eight of eight measured takes came back 3:04–3:06 against
+a 3:05 target.** 🔑 That is worth recording next to r66, where a **175 s** target overshot twice in
+sixteen takes. Two rounds now point the same way: **the tighter the target squeezes the same ~60
+lines, the likelier Suno treats it as a suggestion.** 185 s is both the pacing Jack asked for and
+the more reliable number.
+
+⬜ **Not heard.** Three questions, in order:
+1. 🔑 **Is the cheese gone?** If any lane still comes back tuned, the ban was never the problem and
+   the next move is the lyric cue, not the exclude box.
+2. **Which un-tuned hook still lifts?** `terrace` (a crowd on one note) · `answer` (barked
+   response) · `raw` (one cracked voice). If `raw` wins, Jack's sung chorus survives and only the
+   *tuning* ever needed to go.
+3. **Is the rap now audible without dragging?** 185 s is one notch slower than the take he liked.
+   If it drags, the answer is 180, not a rewording.
+
+### r67 terrace atom
+
+Style:
+
+```
+UK grime MCs over jungle drum and bass, 174 BPM, D minor: breakneck chopped amen breaks, a deep round sub, handclaps on the backbeat. Opens with no drums and no instruments: a crowd of men chanting the hook on one flat note, dry and untuned, then the first MC close for three lines. A beat of silence, then amen and sub hit on 'you keep on walking', the voices gone, the drums alone and enormous. It empties and slams back three more times. Every hook is that crowd on one flat note in unison, shouted not sung, never harmonised, never tuned. A church organ holds chords at the turns only. Drums and sub loudest, voices under them, never in front. Big, clean and open, nobody screaming. Vocals bone dry and right at the front, above the drums, every word audible. London pirate-radio energy. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast but every word clear, never rushing and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+autotune, pitch-corrected vocals, tuned vocals, vocoder, stacked harmonies, layered vocals, vocal doubles, gospel choir, EDM vocal, pop hook, anthemic chorus, singalong, cheesy, buried vocals, distant vocal, drowned in the mix, heavy vocal reverb, mumbled, double-time, chopper rap, motormouth, breathless, steady rap pace, lazy flow, slow flow, spoken word, trip hop, half-time drums, sparse percussion, drumless, slow build, distant drums, harsh, abrasive, screaming, roaring, snarling, air horns, neurofunk, jump up, American accent, US rap, trap, female vocal, Jamaican accent, ragga MC, BBC newsreader, orchestral bed, symphony orchestra, string section, major key, sung chorus melody, lead singer, crooning, vibrato, falsetto
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | no drums and no instruments at all | gruff grime MC, quiet, close and bitter, three lines only]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | one beat of silence, then the break and the Reese hit together on this line, the opening voices gone, the drums alone and enormous]
+[gruff grime MC from here, hurt and insistent, fast but every word clear, riding the top of the break, landing hard on every beat, never rushing and never pausing mid-line]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[gruff grime MC, rising, hurt, voice close to cracking]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[gruff grime MC, a bitter plea, voice breaking]
+please sir, can I fuckin, have some more?
+[Chorus | the hook chanted flat on one note by a crowd of men, dry and untuned, shouted not sung, no harmony]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat fuller than verse one | cold grime MC, fast but every word clear, clipped, cold and contemptuous, every consonant landing]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold grime MC, sharper and colder, biting]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the beat cuts dead for the first line, one bare hurt voice, then everything slams back bigger than the first chorus | the crowd back in, chanted flat on one note, no harmony]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | straight in, no break, the beat at its heaviest | the two grime MCs trade lines fast and clear, close and overlapping, both hurt]
+[gruff grime MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold grime MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both grime MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold grime MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff grime MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold grime MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff grime MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold grime MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | the biggest drop of the record, everything at once, the whole crowd chanting it flat on one note, no harmony and no tuning]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r67 answer atom
+
+Style:
+
+```
+UK grime MCs over jungle drum and bass, 174 BPM, D minor: breakneck chopped amen breaks, a deep round sub, handclaps on the backbeat. Opens with no drums and no instruments: one MC says the hook flat and close, a room barking the last three words back, then three lines more. A beat of silence, then amen and sub hit on 'you keep on walking', the voices gone, the drums alone and enormous. It empties and slams back three more times. Across the record the room answers him: he lands a line, they bark one word back flat in unison. Nobody sings a note. A church organ holds chords at the turns only. Drums and sub loudest, voices under them, never in front. Big, clean and open, nobody screaming. Vocals bone dry and right at the front, above the drums, every word audible. London pirate-radio energy. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast but every word clear, never rushing and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+autotune, pitch-corrected vocals, tuned vocals, vocoder, stacked harmonies, layered vocals, vocal doubles, gospel choir, EDM vocal, pop hook, anthemic chorus, singalong, cheesy, buried vocals, distant vocal, drowned in the mix, heavy vocal reverb, mumbled, double-time, chopper rap, motormouth, breathless, steady rap pace, lazy flow, slow flow, spoken word, trip hop, half-time drums, sparse percussion, drumless, slow build, distant drums, harsh, abrasive, screaming, roaring, snarling, air horns, neurofunk, jump up, American accent, US rap, trap, female vocal, Jamaican accent, ragga MC, BBC newsreader, orchestral bed, symphony orchestra, string section, major key, sung chorus melody, lead singer, crooning, vibrato, falsetto
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | no drums and no instruments at all | gruff grime MC, quiet, close and bitter, three lines only]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | one beat of silence, then the break and the Reese hit together on this line, the opening voices gone, the drums alone and enormous]
+[gruff grime MC from here, hurt and insistent, fast but every word clear, riding the top of the break, landing hard on every beat, never rushing and never pausing mid-line]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[gruff grime MC, rising, hurt, voice close to cracking]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[gruff grime MC, a bitter plea, voice breaking]
+please sir, can I fuckin, have some more?
+[Chorus | the gruff grime MC says each line, the room barks the last three words back flat and in unison, nobody sings]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat fuller than verse one | cold grime MC, fast but every word clear, clipped, cold and contemptuous, every consonant landing]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold grime MC, sharper and colder, biting]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the beat cuts dead for the first line, one bare hurt voice, then everything slams back bigger than the first chorus | the room barking the answers back, nobody sings]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | straight in, no break, the beat at its heaviest | the two grime MCs trade lines fast and clear, close and overlapping, both hurt]
+[gruff grime MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold grime MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both grime MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold grime MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff grime MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold grime MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff grime MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold grime MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | the biggest drop of the record, everything at once, the whole room barking every line straight back at him, nobody sings]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r67 raw atom
+
+Style:
+
+```
+UK grime MCs over jungle drum and bass, 174 BPM, D minor: breakneck chopped amen breaks, a deep round sub, handclaps on the backbeat. Opens with no drums and no instruments: one man alone singing the hook rough, flat and cracked, nobody with him, then the first MC close for three lines. A beat of silence, then amen and sub hit on 'you keep on walking', the voices gone, the drums alone and enormous. It empties and slams back three more times. Every hook is that one man alone, no voices behind him, no harmony; the lift comes from the drums. A church organ holds chords at the turns only. Drums and sub loudest, voices under them, never in front. Big, clean and open, nobody screaming. Vocals bone dry and right at the front, above the drums, every word audible. London pirate-radio energy. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast but every word clear, never rushing and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+autotune, pitch-corrected vocals, tuned vocals, vocoder, stacked harmonies, layered vocals, vocal doubles, gospel choir, EDM vocal, pop hook, anthemic chorus, singalong, cheesy, buried vocals, distant vocal, drowned in the mix, heavy vocal reverb, mumbled, double-time, chopper rap, motormouth, breathless, steady rap pace, lazy flow, slow flow, spoken word, trip hop, half-time drums, sparse percussion, drumless, slow build, distant drums, harsh, abrasive, screaming, roaring, snarling, air horns, neurofunk, jump up, American accent, US rap, trap, female vocal, Jamaican accent, ragga MC, BBC newsreader, orchestral bed, symphony orchestra, string section, major key, male choir, crowd vocals, gang vocals, group vocals, audience chant
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | no drums and no instruments at all | gruff grime MC, quiet, close and bitter, three lines only]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | one beat of silence, then the break and the Reese hit together on this line, the opening voices gone, the drums alone and enormous]
+[gruff grime MC from here, hurt and insistent, fast but every word clear, riding the top of the break, landing hard on every beat, never rushing and never pausing mid-line]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[gruff grime MC, rising, hurt, voice close to cracking]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[gruff grime MC, a bitter plea, voice breaking]
+please sir, can I fuckin, have some more?
+[Chorus | one man alone singing the hook rough, flat and cracked, no other voices and no harmony]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat fuller than verse one | cold grime MC, fast but every word clear, clipped, cold and contemptuous, every consonant landing]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold grime MC, sharper and colder, biting]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the beat cuts dead for the first line, then everything slams back bigger than the first chorus | still the one raw cracked voice, alone, no harmony]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | straight in, no break, the beat at its heaviest | the two grime MCs trade lines fast and clear, close and overlapping, both hurt]
+[gruff grime MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold grime MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both grime MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold grime MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff grime MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold grime MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff grime MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold grime MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | the biggest drop of the record, everything at once behind him, but still one raw cracked voice on top, alone and untuned]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.58 Round r66 — the three-canon fusion: D&B anthems × classical × the Chase & Status catalogue (2026-09-23)
+
+**Brief, Jack 2026-09-23:** *"So all the last generations were way too aggressive. Please combine the
+style of this [nine all-time D&B anthems] and these [nine famous classical works] and [ten Chase &
+Status tracks]. And make it something that builds off of
+[1127446d](https://suno.com/song/1127446d-abe8-4079-9bbe-6b281e12aa74), which is the original song.
+Please also research the internet, look through the repo, and use the skills."*
+
+### 🔑 The round this song has been circling: r64 lost the drums, r65 got them back and went too hard
+
+Three briefs in three days draw one narrow target, and r66 is the first round written to it directly.
+
+| Round | What was asked | What came back |
+|---|---|---|
+| **r61–r63** | aggression | *"way too aggressive"* |
+| **r64** | aggression out | *"the drum and bass has gone basically"* — the ban `distorted bass` took the Reese with it and `patient rather than violent` instructed it not to be D&B |
+| **r65** | drums back, anger back | too aggressive again |
+
+🔑 **So the two knobs are separate and r66 turns them opposite ways: the DRUMS stay loud, clean and
+in front; the RECORD stops being harsh.** The production sentence in every lane is some form of
+*loud, clean and open, nothing distorted* — never r64's *"patient"*, which is the word that
+un-made the drums.
+
+### 🔑 Jack's third list is the answer to his own first one
+
+His D&B list is heavier than last time — *The Nine*, *Messiah*, *Mr Happy*, *Tarantula*, *Baddadan*
+are techstep, neurofunk and jump-up, precisely the palette that has now been rejected twice. But the
+**Chase & Status catalogue he sent alongside it is dominated by the melodic, cinematic, sung ones** —
+*End Credits*, *Blind Faith*, *Time*, *Disconnect*, *Pieces*. That is the same duo doing enormous
+drums **without** harshness, and it is exactly the band the brief is asking for. **So the heavy
+tracks are taken for their scale, their riffs and their chants — never for their distortion.**
+
+### The references, translated (no artist, song or album name in any box)
+
+House rule (`docs/suno-gpt/system-prompt.txt`): no names in a prompt. Each reference is decomposed.
+
+| Reference | What went in the box | Source |
+|---|---|---|
+| **The Nine** — *"a crunching 2-step roller"*, snare-led rhythmic stumbles, eerie synths and one iconic horn | *a crunching two-step roller, snare-led and stumbling · one eerie synth horn stabbing across it* (→ `mars`) | [Buttondown](https://buttondown.com/Linenoise/archive/the-best-records-ever-to-wreck-a-genre-part-1-bad/), [A Bass Chronicle](https://abasschronicle.co.uk/history-sessions-keeping-bad-company/) |
+| **Messiah** — the heaviest neurofunk record there is: chopped breaks, syncopated snares, a cinematic drop | its **scale**, not its drive — *the drums alone and vast*, the room growing each cycle. 🔴 `neurofunk` stays banned | [Sonic State](https://sonicstate.com/news/2024/11/25/remaking-konflicts-messiah-/), [Neurofunk Radio](https://neurofunkradio.com/the-evolution-of-neurofunk-from-early-drum-and-bass-to-modern-soundscapes/) |
+| **Rock It** — a robotic riff bass built on a *Robot Rock* sample | *a robotic square-wave bass plays it an octave down* (→ `fate`) | [WhoSampled](https://www.whosampled.com/sample/15032/Sub-Focus-Rock-It-Daft-Punk-Robot-Rock/) |
+| **Mr Happy** — *"a riff, a really good riff… the attitude of every jump up song ever combined"* | the riff **is** the record: one figure on every instrument (→ `fate`). 🔴 `jump up` stays banned | [UKF](https://ukf.com/read/10-years-of-dj-hazard-dminds-mr-happy/) |
+| **Tarantula** — MC-led, brass instruments over Fresh's drums | *brass stabs answer it* (→ `fate`) | [PlanetPendulum](https://planetpendulum.fandom.com/wiki/Tarantula) |
+| **Baddadan** — jungle breaks, a hook half sung half chanted with a room answering | *breakneck chopped amen breaks, ragga swing · the room answers the MC* (→ `chorale`). 🔴 `air horns` stays banned | memory `camping-jack-reference-artists` |
+| **Atlantis**, **Brown Paper Bag**, **Valley of the Shadows** | already decomposed at r64 — the warm rolling break and the Rhodes/piano language survive into `odejoy`; 🔴 **Valley's time-stretch is deliberately NOT reused**, it is what blurred r64's drums | §v6.56 |
+| 🔑 **Ode to Joy** — the tune stated bare by cellos and basses, then handed upward through the orchestra, each statement adding a layer | *the piano states it low and bare, each section hands it up an octave to a new instrument, cello, violin, then the whole room* (→ `odejoy`) | [Cleveland Orchestra](https://www.clevelandorchestra.com/posts/beethovens-ode-to-joy), [Britannica](https://www.britannica.com/topic/Symphony-No-9-in-D-Minor) |
+| 🔑 **Mars, the Bringer of War** — strings *col legno battuto*, a dry rattling mechanical clatter; six horns in unison; snare, bass drum, glockenspiel and tam-tam | *violins hammer one dry rattling note with the wood of the bow · six horns hold one long flat note · glockenspiel and tam-tam at the edges* (→ `mars`) | [Indianapolis Symphony](https://www.indianapolissymphony.org/backstage/program-notes/holst-the-planets/), [music4beginner](https://music4beginner.com/holst-the-planets-mars-bringer-of-war-analysis/) |
+| 🔑 **Symphony No. 5** — short-short-short-LONG; the four-note cell is the acorn the whole symphony grows from, fragmented, inverted and sequenced | *the record is one four-note figure, three short, one long… inverted, up a third, cut in half, handed on, always those four notes* (→ `fate`) | [The Violin Channel](https://theviolinchannel.com/beethovens-fifth-symphony-a-complete-listening-guide-to-classical-musics-most-famous-four-notes/), [Eastman](https://www.esm.rochester.edu/beethoven/symphony-no-5/) |
+| 🔑 **Hallelujah Chorus** — block homophony where every voice hits the word together, alternating with unison lines and fugal runs | *they hit one word together in block harmony, one high voice running a fast line under* (→ `chorale`) | [Wikipedia](https://en.wikipedia.org/wiki/Hallelujah_Chorus), [phamoxmusic](https://phamoxmusic.com/hallelujah-chorus/) |
+| **Four Seasons**, **Clair de Lune**, **Canon in D**, **Boléro** | the solo violin and the piano opening are already the spine; Canon in D and Boléro were spent at r64 (`groundbass`, `bolero`) and are not repeated | §v6.56 |
+| ⬜ **The Blue Danube** | **deliberately unused for the second time** — a 3/4 waltz against a 174 4/4 grid fights the spine. Same ruling as r64 | — |
+| ⬜ **Mars's 5/4** | **deliberately dropped** — five beats against the 174 four-beat bar is the waltz problem again. The *col legno rattle* and the semitone climb carry Mars instead | — |
+
+### 🔑 Where the aggression was removed, precisely — four places, one word each
+
+| Lever | r65 | r66 |
+|---|---|---|
+| **Cast sentence** | *"both spitting fast, **furious** and emotional, voices close to cracking"* | **one word deleted.** Each lane keeps the speed clause verbatim (`rapid-fire on the 174 grid and never slowing for a punchline`) and closes with its own temper — `fast and hurt` · `fast and grim` · `fast and stinging` · `fast and raw-throated` |
+| **Lyric cues** | `furious and hurt` · `rising, angry` · `spitting the words` · `sneering and angry` · `both angry` · `half shouted` | `hurt and insistent` · `rising, hurt` · `biting` · `cold and contemptuous` · `both hurt` · **`half chanted`** |
+| **Excludes** | — | 🆕 `harsh, abrasive` added; `screaming, roaring, snarling, war drums, air horns, clipping, overdriven` kept |
+| **Production sentence** | *"Dry, close and loud"* | *loud, clean and open, nothing distorted* — **loud is retained deliberately**, because r64 proved that softening this sentence is what removes the drums |
+
+🔴 **`distorted bass` is NOT banned and `rapid-fire` is NOT banned.** Both were found fighting the
+brief in earlier rounds — the first is the Reese on Jack's own favourite take, the second is r43's
+own word for the delivery he asked for. See the excludes audit in §v6.57.
+
+✅ **Not one lyric word changed**, asserted in the build: every bracket cue is stripped from the r65
+and r66 blocks and the remaining text compared byte for byte, with the line count held at 80.
+
+🔑 **And the opening cue is now instrument-neutral** — `[Verse 1 | no drums at all, only the
+instrument the track opens on | …]`. The lyrics box out-votes the style box on arrangement (§v6.51),
+so naming the piano there would have overridden three of the four lanes' openings.
+
+### The four lanes
+
+| Lane | D&B anthem | Classical device | Chase & Status | Where the energy comes from instead of distortion |
+|---|---|---|---|---|
+| `odejoy` | Atlantis — warm rolling break | **Ode to Joy** — one tune handed upward | *End Credits* / *Blind Faith* — piano, tambourine, cinema | **rising** — the same tune an octave higher each section, minor until the last chorus |
+| `mars` | *The Nine* — crunching two-step roller | **Mars** — col legno rattle, six horns on one note | *Eastern Jam* / *Pieces* — dark and huge | **climbing** — every cycle a semitone up |
+| `fate` | *Rock It* / *Mr Happy* — the riff is the tune | **Beethoven 5** — one four-note cell, developed | *Tarantula* / *Hitz* — brass stabs, MC-led | **obsession** — one figure on every instrument, moved and inverted |
+| `chorale` | *Baddadan* — jungle breaks and a chant | **Hallelujah Chorus** — block antiphony | *BACKBONE* — a stadium behind a grime MC | **the room** — weight from the number of voices, not the volume |
+
+✅ **Bold, not meek:** longest shared run between any two Style boxes is **135 chars = 13.6%**, and
+it is the mandated cast sentence plus `both fast and `. No production language is shared.
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender Male · Personalize off ·
+no Voice · **Duration 175 s** · workspace `camping-Jack` · weirdness **40 and 60**. 8 Creates, 16 takes.
+
+🔑 **175 s, the fast half of the settled bracket** (155 s way too fast · **175–190 s the working
+range** · 195 s too slow · 200 s slower still). Jack's complaint this round is aggression, not
+pacing, so Duration is held at r65's faster cell rather than moved.
+
+### Generated 2026-09-23 — 8 Creates, 8 clean. Credits 9,340 → 9,260
+
+| Lane | What it is | w40 | w60 |
+|---|---|---|---|
+| `odejoy` | a grand piano states one tune low and bare, each section hands it up an octave — Atlantis × Ode to Joy × *End Credits* | [0d952144](https://suno.com/song/0d952144-950a-4da4-9e8e-a27d1011cae0) · [bf424e3d](https://suno.com/song/bf424e3d-e6c5-4e21-b604-90de75ef35f6) | [0d800f1a](https://suno.com/song/0d800f1a-bfe1-476a-8755-6914fde89dc5) (3:05) · [16944146](https://suno.com/song/16944146-9334-4ad3-950f-42cd816dd62c) (2:56) |
+| `mars` | timpani and wood-of-the-bow strings over a crunching two-step roller, every cycle a semitone higher — *The Nine* × Mars × *Eastern Jam* | [60a0153e](https://suno.com/song/60a0153e-2893-47f4-9f13-f1ec2a7a21db) (3:04) · [2904dc45](https://suno.com/song/2904dc45-ab05-4800-8f54-2aeef4313fa9) (2:55) | [a794f559](https://suno.com/song/a794f559-eef4-40ae-8445-6241d81d59b7) (2:59) · [37a0d0db](https://suno.com/song/37a0d0db-f2a1-4bc8-8f7e-47faf9b362ee) (2:55) |
+| `fate` | one four-note figure is the entire record — violins, square-wave bass and hats all play it — *Rock It* / *Mr Happy* × Beethoven 5 × *Tarantula* | [de2c4d80](https://suno.com/song/de2c4d80-34ed-4587-81a8-a115c20a63b1) (2:58) · [918c6acd](https://suno.com/song/918c6acd-e8d8-4c68-b253-fbf789d924da) (2:54) | [3484e698](https://suno.com/song/3484e698-7ec4-4fe8-9767-537f9538308a) (2:55) · [2bbf3c01](https://suno.com/song/2bbf3c01-39ef-489e-bb76-7bbdc65b7db7) (2:55) |
+| `chorale` | a room of men sings the hook unaccompanied, then answers every line in block harmony — *Baddadan* × the Hallelujah Chorus × *BACKBONE* | [0ec4d070](https://suno.com/song/0ec4d070-129c-4f22-bd45-ce162fd6fcbc) · [e3cf4d71](https://suno.com/song/e3cf4d71-6a32-4faa-b8d4-4bc60b321d4c) | [1b2aa79c](https://suno.com/song/1b2aa79c-9b06-44e8-b463-63809306060b) · [db7db097](https://suno.com/song/db7db097-9733-4fa8-81db-57a6b5304b9b) |
+
+✅ **Eight Creates, eight clean** — 10 credits each, balance read before and after every one.
+
+⚠️ **Two takes overshot the 175 s target** (`odejoy` w60 at 3:05 and `mars` w40 at 3:04 against a
+2:55 target); the rest landed 2:54–2:59. That is the **third** time a 175 s target has been treated
+as a suggestion. 🔑 **A long take had more room to slow down in — check the returned length before
+blaming the prompt.**
+
+⬜ **Not heard.** Four questions, in this order:
+1. 🔑 **Is the aggression gone without the drums going with it?** That is the whole round — r64 and
+   r65 each got one half. Every lane should still be *loud*.
+2. **Does the fusion read as one record**, or as an orchestra bolted onto a beat? `fate` is the
+   sharpest test: if the four-note figure is audible on the bass, the stabs and the hats, the idea
+   landed.
+3. **Which structural device carries best?** Rising (`odejoy`) · climbing (`mars`) · obsession
+   (`fate`) · the room (`chorale`). This is the question the round exists to answer.
+4. **Does the rap still keep up**, and does `odejoy` turning major in the last chorus read as earned
+   or as sentimental? That major turn is the one risk this round buys.
+
+### r66 odejoy atom
+
+Style:
+
+```
+Cinematic UK drum and bass, 174 BPM, D minor, grime over it: a warm rolling break, snare dry and close, a deep clean Reese fattening each section, tambourine on every beat. Opens with no drums: a grand piano alone on a slow falling figure, a lone violin over, first MC quiet and close for three lines, no bass. A beat of silence, then break and Reese land together on 'you keep on walking', the piano gone, the drums alone and huge. Four times it strips to nothing and returns fuller. One tune runs the record: the piano states it low and bare, each section hands it up an octave to a new instrument, cello, violin, then the whole room; minor throughout, major only in the last chorus. Drums and sub loudest, piano and violin under them, never in front. Loud, clean, open, nothing distorted. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both fast and hurt, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+double-time, chopper rap, motormouth, breathless, steady rap pace, lazy flow, slow flow, spoken word, downtempo, trip hop, half time, half-time drums, sparse percussion, drumless, beatless, ambient, soundtrack, underscore, slow build, smeared drums, muffled drums, distant drums, tempo change, clipping, overdriven, harsh, abrasive, screaming, roaring, snarling, war drums, air horns, neurofunk, jump up, wobble bass, dubstep, American accent, US rap, trap, autotune, female vocal, Jamaican accent, ragga MC, BBC newsreader, narrator voice, orchestral bed, symphony orchestra, full orchestra, string section, epic trailer music, sustained string pad, ambient wash, lush pads, uplifting, comedic, novelty, parody, pipe organ, church organ, timpani, col legno, brass stabs, square-wave bass, glockenspiel, tam-tam, male choir, gospel choir, wedding music, sentimental, easy listening
+```
+
+### r66 mars atom
+
+Style:
+
+```
+Dark militaristic drum and bass, 174 BPM, D minor, grime over it: a crunching two-step roller, snare-led and stumbling, hats dry, one eerie synth horn stabbing across it, a huge clean sub. Opens with no drums: a timpani thudding a slow figure while violins hammer one dry rattling note with the wood of the bow, first MC low and close for three lines, no bass. A beat of silence, then roller and sub arrive together on 'you keep on walking', the strings gone, the drums alone and vast. It empties and fills three more times, each a semitone higher. Under the rap the wooden strings keep rattling against the snare, six horns holding one long flat note at the turns. Drums and sub loudest, strings and horns under them, never in front. Cold, metallic, immense, glockenspiel and tam-tam at the edges. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both fast and grim, teeth clenched, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+double-time, chopper rap, motormouth, breathless, steady rap pace, lazy flow, slow flow, spoken word, downtempo, trip hop, half time, half-time drums, sparse percussion, drumless, beatless, ambient, soundtrack, underscore, slow build, smeared drums, muffled drums, distant drums, tempo change, clipping, overdriven, harsh, abrasive, screaming, roaring, snarling, war drums, air horns, neurofunk, jump up, wobble bass, dubstep, American accent, US rap, trap, autotune, female vocal, Jamaican accent, ragga MC, BBC newsreader, narrator voice, orchestral bed, symphony orchestra, full orchestra, string section, epic trailer music, sustained string pad, ambient wash, lush pads, uplifting, comedic, novelty, parody, grand piano, piano ballad, tambourine, square-wave bass, brass stabs, church organ, male choir, gospel choir, amen break, handclaps, major key
+```
+
+### r66 fate atom
+
+Style:
+
+```
+Riff-driven UK drum and bass, 174 BPM, C minor, grime over it: the record is one four-note figure, three short, one long. Short sharp violin stabs play it, a robotic square-wave bass plays it an octave down, the hats play its rhythm, brass stabs answer. Opens with no drums: those four notes alone on the violins, repeated and pulled apart, first MC close for three lines, no bass. A beat of silence, then break and bass hit that figure together on 'you keep on walking', the violins gone, the drums alone, massive. Three more times it falls to one stab and builds straight back. Every section the figure moves, inverted, up a third, cut in half, handed on, always those four notes. Drums and bass loudest, stabs under them, never in front. Tight, dry, mechanical, nothing distorted. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both fast and stinging, every syllable cut short, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+double-time, chopper rap, motormouth, breathless, steady rap pace, lazy flow, slow flow, spoken word, downtempo, trip hop, half time, half-time drums, sparse percussion, drumless, beatless, ambient, soundtrack, underscore, slow build, smeared drums, muffled drums, distant drums, tempo change, clipping, overdriven, harsh, abrasive, screaming, roaring, snarling, war drums, air horns, neurofunk, jump up, wobble bass, dubstep, American accent, US rap, trap, autotune, female vocal, Jamaican accent, ragga MC, BBC newsreader, narrator voice, orchestral bed, symphony orchestra, full orchestra, string section, epic trailer music, sustained string pad, ambient wash, lush pads, uplifting, comedic, novelty, parody, grand piano, pipe organ, church organ, timpani, col legno, glockenspiel, tam-tam, tambourine, male choir, gospel choir, amen break, handclaps, major key
+```
+
+### r66 chorale atom
+
+Style:
+
+```
+Jungle-rooted UK drum and bass, 174 BPM, D minor, grime over it: breakneck chopped amen breaks, ragga swing, a deep round sub, handclaps on the backbeat. Opens with no drums and no instruments: a room of men singing the hook line together in bare block harmony, then the first MC close for three lines. A beat of silence, amen and sub hit together on 'you keep on walking', the voices gone, the drums alone and enormous. It empties and slams back three more times. Across the record the room answers the MC: he lands a line, they hit one word together in block harmony, one high voice running a fast line under before the next bar. A church organ holds chords at the turns only. Drums and sub loudest, voices under them, never in front. Big, clean, open, a stadium, nobody screaming. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both fast and raw-throated, half singing line ends, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+double-time, chopper rap, motormouth, breathless, steady rap pace, lazy flow, slow flow, spoken word, downtempo, trip hop, half time, half-time drums, sparse percussion, drumless, beatless, ambient, soundtrack, underscore, slow build, smeared drums, muffled drums, distant drums, tempo change, clipping, overdriven, harsh, abrasive, screaming, roaring, snarling, war drums, air horns, neurofunk, jump up, wobble bass, dubstep, American accent, US rap, trap, autotune, female vocal, Jamaican accent, ragga MC, BBC newsreader, narrator voice, orchestral bed, symphony orchestra, full orchestra, string section, epic trailer music, sustained string pad, ambient wash, lush pads, uplifting, comedic, novelty, parody, grand piano, timpani, col legno, glockenspiel, tam-tam, square-wave bass, brass stabs, violin stabs, tambourine, major key
+```
+
+### r66 lyrics (shared — the r65 words, cues de-escalated, opening cue made instrument-neutral)
+
+```lyrics
+[Verse 1 | no drums at all, only the instrument the track opens on | gruff MC, quiet, close and bitter, three lines only]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | one beat of silence, then the break and the Reese hit together on this line, the opening instrument gone, the drums alone and enormous]
+[gruff MC from here, hurt and insistent, fast and packed, riding the top of the break, landing hard on every beat, never pausing mid-line]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[gruff MC, rising, hurt, voice close to cracking]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[gruff MC, a bitter plea, voice breaking]
+please sir, can I fuckin, have some more?
+[Chorus | the hook, half sung and half chanted, a room of voices joining in over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat fuller than verse one | cold MC, fast and clipped, cold and contemptuous, every consonant landing]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold MC, sharper and colder, biting]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the beat cuts dead for the first line, one bare hurt voice, then everything slams back bigger than the first chorus | half sung, half chanted]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | straight in, no break, the beat at its heaviest | the two MCs trade lines fast, close and overlapping, both hurt]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | the biggest drop of the record, everything at once, the whole room with them | half sung, half chanted]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.57 Round r65 — the tunnel fix: the drums back in front, the anger back in the voice (2026-09-22)
+
+**Brief, Jack 2026-09-22:** *"it is an angry song, with emotion in the voice, just not too aggressive,
+dont lose completely. `camping-r64-tunnel-v6-w60` this one is not bad, it needs work. The drum and
+bass has gone basically, it needs to drop on 'you keep on walking, through that Wait trose door'.
+And then the grime rapping needs to stay fast and keep up with the pace of the drum and bass."*
+
+Single-variable round on the lane Jack picked. The style fix is constant in every cell; the one
+thing that varies is **Duration**.
+
+### 🔴 "The drum and bass has gone" — four causes, all written by us in r64
+
+| Cause | The r64 text | Why it did it |
+|---|---|---|
+| **The drums were described as soft** | `a time-stretched break smeared and pitched down, layered three deep` | that is Valley of the Shadows' *technique*, but as a **prompt** it reads "blur the drums" |
+| **The production sentence killed it** | `Stone-room reverb, enormous and cold, patient rather than violent` | our own rule: **mix and production language decides how a record sounds**. *"Patient rather than violent"* is an instruction to not be drum and bass |
+| 🔴 **We banned the bass** | `distorted bass` in the exclude list | **a Reese IS a distorted bass**, and Jack's own favourite take is r19 `reese` |
+| **And then asked for a soft one** | `a vast round sub with no distortion on it` | positively instructed a characterless bass |
+
+🔴 **That third row is the fifth ban found fighting the brief, and the first we wrote ourselves in
+the same round it broke.** The other four were inherited from old boxes; this one was new in r64,
+added by the "aggression out" sweep, which took the bass design with it. **A ban written to remove a
+quality can remove the instrument that quality lives on.**
+
+### 🔴 "The rapping needs to stay fast" — two causes, and one of them is arithmetic
+
+1. **`one syllable to the beat on the 174 grid, never rushed`** is 2.9 syllables a second — a slow
+   rap. Drum and bass has **two pulses**: the drums sprint at 174 while the sub and the Reese roll at
+   what feels like half that, which is why DJ software reads a 174 track as 87
+   ([musegen](https://www.musegen.ai/blog/drum-and-bass-bpm),
+   [musictoolslab](https://musictoolslab.com/blog/drum-and-bass-bpm)). *"One syllable to the 174
+   beat"* reads as the **slow** pulse. The MC has to ride the fast top of the break — that tension
+   between a sprinting top end and a half-time backbeat is the drive
+   ([Se7en BPM](https://se7enbeatlab.com/bpm/grime/)).
+2. 🔴 **Duration was 200 s.** The sheet ruled **195 s "too slow"** at r55 — and r64 ran *slower than
+   the value already judged too slow*. Duration is the only pacing lever proved obeyed (12/12 at
+   r48, 24/24 at r54, ±1 s). **This round brackets r56's measured pair: 175 s and 190 s.**
+
+### 🔑 Why the drop didn't land — it was never about the drop
+
+The `[Drop]` tag has been in place since r60 and r64 kept it. What was missing is the **contrast**:
+a drop hits because of **what is removed before it**, not what arrives at it — cut the sub and the
+low end out of the build and the return feels enormous even when it is not louder
+([Point Blank](https://www.pointblankmusicschool.com/blog/how-to-make-your-drops-hit-harder-tips-for-edm-producers/),
+[KAN Samples](https://kansamples.com/blogs/learn/dnb-track-arrangement)). r64 had no held-back
+element: the organ opening simply "got bigger". So the gear ladder is now explicit, in the Style box
+**and** in the `[Drop]` cue:
+
+| Gear | What is playing |
+|---|---|
+| **one** | a cathedral organ alone. **No bass at all** — the low end is the held-back element |
+| **the hinge** | 🆕 **one beat of silence** |
+| **two** | break and Reese together, **the organ gone** — so the thing that arrives is the drums by themselves |
+
+That is the sheet's own "two reveals on one beat" rule (§4c) with the removal written in.
+
+### 🔑 Anger back in the voice, distortion still out of the record
+
+Jack: *"an angry song, with emotion in the voice, just not too aggressive, don't lose completely."*
+That is precisely r61's split — **aggression comes from delivery words; it does not come from
+distortion or from more syllables.** So:
+
+- ✅ **r43's proven cast sentence is restored VERBATIM AND ENTIRE**, including the back half r64 cut
+  and flagged as the first line to put back: *"both spitting fast, furious and emotional, voices
+  close to cracking, rapid-fire on the 174 grid and never slowing for a punchline."* Ruling 2 is
+  whole again, and it carries both things Jack asked for — the emotion **and** the speed.
+- ✅ **Ten lyric cues re-escalated to a middle setting** — `furious and hurt`, `voice close to
+  cracking`, `a bitter plea, voice breaking`, `spitting the words`, `half sung, half shouted`.
+  **`roaring` stays out**, asserted in the build; that was the too-far end.
+- ✅ **`clipping, overdriven, war drums, air horns, screaming, roaring, barking` stay banned.**
+  Angry voice, clean record.
+- ✅ **Still not one lyric word changed** — asserted byte-identical with cues stripped, as in r64.
+
+### 🔴 Excludes audit
+
+| Ban | Verdict |
+|---|---|
+| `distorted bass` | 🔴 **lifted** — it was banning the Reese |
+| `rapid-fire` | 🔴 **lifted** — it is r43's own word for the liked delivery, and it is *in* the cast sentence. Banning it was banning the brief |
+| `double-time`, `chopper rap`, `motormouth`, `auctioneer delivery`, `breathless` | **kept** — r55 proved that end is "way too fast" |
+| `steady rap pace` | **kept** — r58 proved that exact token is the drag |
+| 🆕 `downtempo, trip hop, half-time drums, sparse percussion, drumless, beatless, ambient, soundtrack, underscore, slow build, washed out, smeared drums, muffled drums, distant drums` | **added** — the r64 failure named directly as a ban |
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender Male · Personalize off ·
+no Voice · **Duration 175 s and 190 s** · workspace `camping-Jack` · weirdness **40 and 60**.
+4 Creates, 8 takes.
+
+### Generated 2026-09-22 — 4 Creates, 8 takes. Credits 9,380 → 9,340
+
+| Duration | w40 | w60 |
+|---|---|---|
+| **175 s** — the faster half | [d984764d](https://suno.com/song/d984764d-826d-4e7d-a7e6-21cef8b5de37) (2:57) · [eabba79c](https://suno.com/song/eabba79c-d829-49a1-8bbc-84130768d9a1) (3:07) | [27b0594c](https://suno.com/song/27b0594c-ac6a-4897-ac30-a16b571edb1d) (2:55) · [55f03d97](https://suno.com/song/55f03d97-fcc6-4fbd-9f54-1b1332864cb1) (2:55) |
+| **190 s** — the slower half | [5fb5790b](https://suno.com/song/5fb5790b-5659-43c3-8c0a-4f10014939c8) (3:09) · [bc156fdb](https://suno.com/song/bc156fdb-6d7f-4469-8ce8-2dd504c14648) (3:09) | [05fbc372](https://suno.com/song/05fbc372-38ec-4070-80ca-63da524e512b) (3:09) · [19e16bda](https://suno.com/song/19e16bda-c21b-4663-bf48-237cf7fdbb27) (3:10) |
+
+✅ **Four Creates, four clean**, 10 credits each, balance read before and after every one.
+
+⚠️ **One take missed its target and it matters for the listen.** Three of the four 175 s takes came
+back at **2:55–2:57** against a 2:55 target, but `eabba79c` came back at **3:07** — a **12-second
+overshoot**, only the second time in this song's history a set duration has missed by more than a
+second or two (the first was r55 at 155 s). 🔑 **So `eabba79c` is not a clean member of the 175 s
+cell**: it had twelve extra seconds to spread the same ~60 lines into, which is exactly the
+condition that makes a take sound slow. **If the 175 s half reads as dragging, check the other three
+before concluding anything.** ⬜ This is the second data point for the unverified r55 reading that a
+target squeezing the words harder is likelier to be treated as a suggestion — but 175 s was clean
+8/8 across r56, so the reading is now *less* well supported than it was, not more.
+
+⬜ **Not heard.** Four questions, in order, because each one gates the next:
+1. 🔑 **Are the drums back?** That is the round's whole point — every other fix is invisible if they
+   are not.
+2. **Does it drop on the Waitrose line**, with the beat of silence in front of it?
+3. **Does the rap keep up** — and is 175 s or 190 s the right pace? This is the cleanest pacing A/B
+   the song has ever had: the two cells are byte-identical apart from one number.
+4. **Is the anger back without the aggression?** r43's cast sentence is whole again, and
+   `clipping, overdriven, war drums, air horns, screaming, roaring` are still banned. If it now
+   reads as too much again, the lever is the *cues*, not the cast sentence.
+
+### r65 tunnel2 atom
+
+Style:
+
+```
+Heavy rolling UK drum and bass, 174 BPM, D minor, grime over it: the drums are the record, fast chopped amen breaks, snares cracking dry and close, hats sprinting, a filthy Reese growing meaner every section. It opens with no drums: a cathedral pipe organ alone on a slow falling figure, the first MC close and bitter for three lines, no bass at all. Then one beat of silence and the break and the Reese hit together on 'you keep on walking', the organ gone, the drums alone and enormous. It cuts to almost nothing and slams back three more times, each bigger; the quiet parts really quiet. Under the rap the organ returns only at the turns, a low pedal note and a siren; drums and bass far louder. Dry, close and loud, reverb only on the organ, night-bus melancholy. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+double-time, chopper rap, motormouth, auctioneer delivery, breathless, steady rap pace, measured recital, lazy flow, slow flow, half-time flow, chill, laid-back, rapping behind the beat, off-grid vocal, spoken word, downtempo, trip hop, half time, half-time drums, sparse percussion, drumless, beatless, ambient, soundtrack, underscore, slow build, washed out, smeared drums, muffled drums, distant drums, tempo change, drifting tempo, rubato, clipping, overdriven, war drums, air horns, screaming, roaring, barking, hardcore, neurofunk, jump up, wobble bass, dubstep, American accent, American vocal, US rap, trap, boom bap, autotune, female vocal, teenage voice, falsetto, Jamaican accent, ragga MC, male choir, BBC newsreader, posh storyteller, narrator voice, orchestral bed, symphony orchestra, full orchestra, string section, chamber music, epic trailer music, sustained string pad, ambient wash, lush pads, static arrangement, major key, happy, uplifting, comedic, novelty, parody
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a sad piano and a lone violin alone, no drums at all | gruff MC, quiet, close and bitter, three lines only]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | one beat of silence, then the break and the Reese hit together on this line, the organ gone, the drums alone and enormous]
+[gruff MC from here, furious and hurt, fast and packed, riding the top of the break, hitting hard on every beat, never pausing mid-line]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[gruff MC, rising, angry, voice close to cracking]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[gruff MC, a bitter plea, voice breaking]
+please sir, can I fuckin, have some more?
+[Chorus | the hook, half sung and half shouted, a room of voices joining in over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat harder than verse one | cold MC, fast and clipped, sneering and angry, every consonant landing]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold MC, sharper and colder, spitting the words]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the beat cuts dead for the first line, one bare angry voice, then everything slams back bigger than the first chorus | half sung, half shouted]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | straight in, no break, the beat at its heaviest | the two MCs trade lines fast, close and overlapping, both angry]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | the biggest drop of the record, everything at once, the whole room with them | half sung, half shouted]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.56 Round r64 — the canon round: ten D&B anthems × ten classical works, aggression out (2026-09-22)
+
+**Brief, Jack 2026-09-22:** *"So all the last generations were way too aggressive. Please combine the
+style of these [ten all-time drum and bass anthems] and these [ten famous classical works]. And make
+it something that builds off of this [1127446d](https://suno.com/song/1127446d-abe8-4079-9bbe-6b281e12aa74),
+which is the original song."*
+
+### 🔑 The aggression lived in three boxes, not one
+
+r61–r63 were built to a brief that asked *for* aggression, and it went in three places. Rewriting
+only the Style box would have left two thirds of it standing:
+
+| Box | What was in it | What it is now |
+|---|---|---|
+| **Style** | `filthy distorted Reese driven until it clips` · `an amen assault` · `slam in like a punch` | distortion banned outright; weight comes from **arrangement fullness**, never from drive |
+| **Cast sentence** | *"both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid"* | 🔴 **a stated departure from Ruling 2** — see below |
+| **Lyric cues** | `half-shouting, snarling and spitting every line` · `rising to a roar` · `roaring over each other` · `the whole room shouting it` | weary and direct · lifting, still controlled · close and overlapping · the whole room **singing** it |
+
+🔴 **Ruling 2 (always the grime voice) is held, but its back half is cut, and that is deliberate.**
+The pool word, the two-hander and the contrast pair are r43's proven sentence **verbatim** — *"Two
+English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold"*.
+Everything after that comma in r43's version is the aggression **and** the speed Jack has now
+rejected twice ("way too fast" at r55, "way too aggressive" here), so each lane closes with its own
+temper instead. **If the takes lose their bite, this is the first line to put back.**
+
+✅ **Not one lyric word changed.** The build script strips every bracket cue from the old and new
+blocks and asserts the remaining text is byte-identical, so the pacing/aggression levers moved and
+the words did not.
+
+### 🔑 Jack's ten D&B tracks are not one sound. They are two, and the brief picks one
+
+| The atmospheric half | The heavy half |
+|---|---|
+| Inner City Life · Atlantis · Brown Paper Bag · Shadow Boxing · Valley of the Shadows | Planet Dust · Pacman · Mr Happy · Tarantula · Original Nuttah |
+| orchestral, jazz, minimal, dark-but-spacious | **neurofunk, techstep, jump-up, ragga jungle** |
+
+The heavy half is, precisely, the palette r61–r63 just got rejected for. So this round is weighted
+to the atmospheric five. **Stated rather than smuggled** — if the reading is wrong, one lane swaps.
+
+### The twenty references, translated (no names in any box)
+
+Our own rule (`docs/suno-gpt/system-prompt.txt`) forbids artist, song, album or band names in a
+prompt, so every reference is decomposed into production description.
+
+| The reference | What went in the box | Source |
+|---|---|---|
+| **Inner City Life** — orchestral textures and soul over jungle breaks, *"timestretched… paranoia and tenderness"* | *soft time-stretched breaks smeared at their edges · warm analogue pads swelling at the turns · yearning and tender under the paranoia* | [Wikipedia](https://en.wikipedia.org/wiki/Inner_City_Life) |
+| **Atlantis** — the jazzy, atmospheric alternative to hardcore; a Rhodes floating over the breaks; swooping pads | *a Rhodes chording behind them* (→ `groundbass`) · the pad language in `innercity` | [The Vinyl Factory](https://www.thevinylfactory.com/features/an-introduction-to-ltj-bukem-in-10-records/), [Wikipedia](https://en.wikipedia.org/wiki/LTJ_Bukem) |
+| **Brown Paper Bag** — a live double bass, jazz-fusion instrumentation *instead of the rough menace of a Hoover synth* | *a plucked upright double bass · loose swinging breaks played like a real kit, brushes and rimshots · recorded warm in a real room* | [Insomniac](https://www.insomniac.com/music/roni-size-reprazent-brown-paper-bag/), [Wikipedia](https://en.wikipedia.org/wiki/New_Forms) |
+| **Shadow Boxing** — *"one of the most successful attempts at creating atmosphere in techstep"*; a coarse synth repeating through changing filters; *"jawside snares and gut-punch subs"* | *one coarse filtered synth figure, the filter opening further at each turn · gut-punch sub, jaw-snapping snares* | [RYM](https://rateyourmusic.com/release/single/nasty-habits/shadow-boxing-prototyped/), [Boomkat](https://boomkat.com/products/shadow-boxing-om-unit-remix) |
+| **Valley of the Shadows** — a NASA sample and a near-death account; three loops of one break time-stretched to extremes and slowed back down | *a time-stretched break smeared and pitched down, layered three deep · long sci-fi siren stabs* | [RA](https://ra.co/reviews/24963), [Wikipedia](https://en.wikipedia.org/wiki/Valley_of_the_Shadows) |
+| 🔑 **Boléro** — one snare ostinato repeated **169 times**, two melodies that never change, and a crescendo built *only* by handing the tune to more instruments | *built by accumulation: each section adds a single new instrument playing that same figure while nothing already there gets any louder · then a flute, then a clarinet, then a low saxophone, then the strings* | [The Listeners' Club](https://thelistenersclub.com/2021/05/03/bolero-ravels-sublime-orchestration-exercise/), [Tucson Symphony](https://www.tucsonsymphony.org/program-notes/ravel/bolero/) |
+| 🔑 **Canon in D** — an eight-chord ground bass (I–V–vi–iii–IV–I–IV–V) cycling **28 times** while three violins spin variations over it | *one eight-chord baroque cycle, the same descending steps coming round again every four bars · three violins weaving over that cycle · each section one violin falls away and another enters* | [Musiciangoods](https://musiciangoods.com/en-us/blogs/music-theory/music-theory-behind-canon-in-d), [Wikipedia](https://en.wikipedia.org/wiki/Pachelbel%27s_Canon) |
+| **Moonlight Sonata / Clair de Lune** | *a slow melancholy piano figure alone · the piano keeps turning that same dreamy figure over, one line at a time* | — |
+| **Toccata and Fugue in D minor** | *a cathedral pipe organ alone playing a slow falling figure that hangs and decays · the organ holds one low pedal note · stone-room reverb* | — |
+| **Four Seasons** | already in the spine as the solo violin — not spent again | — |
+| **Ode to Joy** | the male choir was r62's lane; not repeated | — |
+| ⬜ **Blue Danube** | **deliberately unused**: a 3/4 waltz against a 174 4/4 grid fights the spine we were told to build on | — |
+
+### 🔴 The excludes audit — the fourth inherited ban found fighting the brief
+
+| Ban | In since | Why it had to go | Where |
+|---|---|---|---|
+| `major key` | r19 (the source's own box) | **Canon in D is D major.** The ground-bass lane cannot exist under this ban | lifted in `groundbass` only |
+| `pipe organ` | r61 | **The Toccata is an organ.** | lifted in `tunnel` only |
+| `sustained string pad`, `ambient wash` | r61 | the atmospheric-jungle pad *is* that sound | lifted in `innercity` only |
+| `measured delivery` | r61, as anti-drag | "too aggressive" makes a measured delivery the thing we now want | lifted in all four |
+
+**What did NOT get lifted, and why:** `steady rap pace` stays banned in all four — r58 proved that
+exact token is the drag Jack disliked in the source, and "calmer" is not "draggier". And **Ruling 1's
+bed-scale bans stay in every lane** (`orchestral bed`, `symphony orchestra`, `full orchestra`,
+`string section`, `chamber music`, `epic trailer music`), with Ruling 1's balance sentence carried
+verbatim into all four: *"Drums and sub are the loudest thing in the mix, X sit under them, never in
+front."* Four confirmations say classical is a garnish; a brief asking for more classical does not
+repeal that, it raises the stakes on it.
+
+🆕 **And a new shared ban block, which is the round's actual lever:** `distorted bass, clipping,
+overdriven, shouting, screaming, roaring, snarling, barking, war drums, air horns, hardcore,
+neurofunk, jump up, wobble bass, dubstep` — the aggression named as a ban for the first time.
+
+### The four lanes
+
+| Lane | D&B archetype | Classical archetype | Where the energy comes from instead of distortion |
+|---|---|---|---|
+| `innercity` | atmospheric orchestral jungle | Moonlight Sonata / Clair de Lune | **density** — each cycle fuller, pads swelling at turns and falling away |
+| `bolero` | minimal darkstep, huge space | 🔑 Boléro | **accumulation** — one figure, one more instrument per section, nothing gets louder |
+| `groundbass` | live jazz-step, real kit | 🔑 Canon in D | **motion** — an upright bass walking a cycle that never resolves |
+| `tunnel` | darkcore, time-stretched break | Toccata and Fugue | **space** — a cold stone room and a low organ pedal, menace without volume |
+
+✅ **Bold, not meek** (the `suno-automation` measurement): longest shared run between any two Style
+boxes is **126 chars = 12.8%**, and it is *exactly* the cast sentence plus `night-bus melancholy` —
+the two things the rule explicitly permits sharing. **No production language is shared between
+lanes.**
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender Male · Personalize off ·
+no Voice · **Duration 200 s** · workspace `camping-Jack` · weirdness **40 and 60**. 4 Creates per
+pair, 8 Creates, 16 takes.
+
+### Generated 2026-09-22 — 8 Creates, 16 takes. Credits 9,460 → 9,380
+
+| Lane | Shorthand | w40 | w60 |
+|---|---|---|---|
+| `innercity` | time-stretched breaks, a melancholy piano turning one figure, pads at the turns | [a2d8baa7](https://suno.com/song/a2d8baa7-5746-4a99-839f-25faad01d446) · [1bec7904](https://suno.com/song/1bec7904-730f-4a13-a573-41d06e9fe83a) | [a8fb4f50](https://suno.com/song/a8fb4f50-43e0-4676-b85c-3b1e2e5f9ca0) (3:19) · [9e0f0532](https://suno.com/song/9e0f0532-5997-42bb-8c26-b9e81a2d023f) (3:19) |
+| `bolero` | one figure, one more instrument each section, nothing gets louder | [b5e8dd37](https://suno.com/song/b5e8dd37-28df-49ca-82c6-824d6fe3ec5b) (3:19) · [bdf88ad7](https://suno.com/song/bdf88ad7-93b3-4bfe-841d-83e48ea8924f) (3:20) | [db019f02](https://suno.com/song/db019f02-343d-4a78-85b3-002e252ba324) (3:19) · [ff76402d](https://suno.com/song/ff76402d-18b0-4cda-8138-705fd561815b) (3:19) |
+| `groundbass` | an upright double bass walking a baroque cycle, three violins over it | [6a8ae6a8](https://suno.com/song/6a8ae6a8-465c-498b-96e9-3031cff0070c) (3:20) · [5230730f](https://suno.com/song/5230730f-6048-46d7-ab13-a7dd7a09d461) (3:20) | [31d38311](https://suno.com/song/31d38311-b628-4a43-8089-9999bce64dd2) (3:19) · [9a3418b9](https://suno.com/song/9a3418b9-c21c-4c98-aecc-811e49db2896) (3:20) |
+| `tunnel` | a cathedral organ pedal, sirens, a break stretched and layered three deep | [fe33c66d](https://suno.com/song/fe33c66d-91e9-4cc9-b9bc-355603b0ea8f) (3:20) · [9ef0e4d9](https://suno.com/song/9ef0e4d9-de5b-4486-b7f4-2d487e8a248b) (3:20) | [5936ddc2](https://suno.com/song/5936ddc2-263b-4f30-aedc-ba49c238fe40) (3:18) · [93a985ac](https://suno.com/song/93a985ac-ac2d-4b1e-8776-6fc601107d51) |
+
+✅ **Eight Creates, eight clean** — no `create:timeout`, no re-runs, 10 credits each exactly as v6 has
+costed since r54. All sixteen came back **3:19–3:20** against the 200 s target, consistent with r48's
+±1 s finding.
+
+⬜ **Not heard.** The listening question is not "which lane is best" — it is **has the aggression
+actually gone, and did anything come with it?** In order: does `bolero` build without ever getting
+harsh (the accumulation idea is the round's real bet)? Does `groundbass` stay bitter now that the
+chord cycle is major, or does it go sentimental — the one risk the lifted `major key` ban buys? Does
+`tunnel` still feel like a threat with nothing distorted in it? And 🔴 **listen for what the cut cast
+sentence cost**: if the MCs now sound bored rather than weary, r43's back half goes back in first.
+
+### r64 innercity atom
+
+Style:
+
+```
+Atmospheric orchestral drum and bass, 174 BPM, minor key, grime over it: soft time-stretched breaks smeared and blurred at their edges, a warm round sub that rolls rather than bites, hats brushed back in the mix. It opens with no drums: a slow melancholy piano figure alone and a lone violin, the first MC quiet and close for three lines. Break and sub arrive together on 'you keep on walking', then it lifts and settles three more times, each fuller. Under the rap the piano keeps turning that same dreamy figure over, one line at a time; warm analogue pads swell at the turns and fall away again; a solo violin answers the hook. Drums and sub are the loudest thing in the mix, the piano and the pads sit under them, never in front. Yearning and tender under the paranoia, soft-edged and reverberant, night-bus melancholy. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, weary, one syllable to the beat on the 174 grid, never rushed.
+```
+
+Exclude styles:
+
+```
+double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, steady rap pace, lazy flow, slow flow, chill, lo-fi beats, half time, tempo change, drifting tempo, rubato, rapping behind the beat, off-grid vocal, spoken word, distorted bass, clipping, overdriven, shouting, screaming, roaring, snarling, barking, war drums, air horns, hardcore, neurofunk, jump up, wobble bass, dubstep, American accent, American vocal, US rap, trap, boom bap, autotune, female vocal, teenage voice, falsetto, Jamaican accent, ragga MC, male choir, BBC newsreader, posh storyteller, narrator voice, orchestral bed, symphony orchestra, full orchestra, string section, chamber music, epic trailer music, brass braams, static arrangement, happy, uplifting, comedic, novelty, parody, pipe organ, church organ, upright double bass, jazz, swing, brushed jazz kit, Rhodes, harpsichord, flute, clarinet, saxophone, snare ostinato, sirens, acid synth, major key
+```
+
+### r64 bolero atom
+
+Style:
+
+```
+Minimal dark drum and bass, 174 BPM, minor key, grime over it, built by accumulation: one sparse two-bar drum pattern and one coarse filtered synth figure, and each section adds a single new instrument playing that same figure while nothing already there gets any louder. It opens with no drums: a snare ticking quietly on its own and a lone violin, the first MC close for three lines. A deep clean unhurried sub enters on the line 'you keep on walking'. Then a flute takes the figure, then a clarinet, then a low saxophone, then the strings, then the room, the filter opening further at each turn. Drums and sub are the loudest thing in the mix, the melody instruments sit under them, never in front. Huge space, gut-punch sub, jaw-snapping snares, nothing distorted anywhere, cold and hypnotic, night-bus melancholy. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, patient and deadly, one syllable to the beat on the 174 grid, never rushed.
+```
+
+Exclude styles:
+
+```
+double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, steady rap pace, lazy flow, slow flow, chill, lo-fi beats, half time, tempo change, drifting tempo, rubato, rapping behind the beat, off-grid vocal, spoken word, distorted bass, clipping, overdriven, shouting, screaming, roaring, snarling, barking, war drums, air horns, hardcore, neurofunk, jump up, wobble bass, dubstep, American accent, American vocal, US rap, trap, boom bap, autotune, female vocal, teenage voice, falsetto, Jamaican accent, ragga MC, male choir, BBC newsreader, posh storyteller, narrator voice, orchestral bed, symphony orchestra, full orchestra, string section, chamber music, epic trailer music, brass braams, static arrangement, happy, uplifting, comedic, novelty, parody, pipe organ, church organ, Rhodes, upright double bass, jazz, swing, harpsichord, lush pads, sustained string pad, ambient wash, sirens, piano ballad, major key, laid-back
+```
+
+### r64 groundbass atom
+
+Style:
+
+```
+Live jazz-step drum and bass, 174 BPM, warm and acoustic, grime over it: loose swinging breaks played like a real kit, brushes and rimshots, a Rhodes chording behind them. The bassline is a plucked upright double bass walking one eight-chord baroque cycle, the same descending steps coming round again every four bars. It opens with no drums: three violins weaving over that cycle and no bass yet, the first MC close for three lines. The kit and the double bass come in together on the line 'you keep on walking'. Each section one violin falls away and another enters spinning a new line over the cycle. Drums and sub are the loudest thing in the mix, the violins and the Rhodes sit under them, never in front. Serene chords under a bitter story, played by a real band in a warm room, night-bus melancholy. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, conversational and weighty, one syllable to the beat on the 174 grid, never rushed.
+```
+
+Exclude styles:
+
+```
+double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, steady rap pace, lazy flow, slow flow, chill, lo-fi beats, half time, tempo change, drifting tempo, rubato, rapping behind the beat, off-grid vocal, spoken word, distorted bass, clipping, overdriven, shouting, screaming, roaring, snarling, barking, war drums, air horns, hardcore, neurofunk, jump up, wobble bass, dubstep, American accent, American vocal, US rap, trap, boom bap, autotune, female vocal, teenage voice, falsetto, Jamaican accent, ragga MC, male choir, BBC newsreader, posh storyteller, narrator voice, orchestral bed, symphony orchestra, full orchestra, string section, chamber music, epic trailer music, brass braams, static arrangement, happy, uplifting, comedic, novelty, parody, pipe organ, church organ, sirens, time-stretched breaks, sustained string pad, ambient wash, lush pads, flute, clarinet, snare ostinato, wedding music, easy listening, sentimental, smooth jazz, elevator music, acid synth
+```
+
+### r64 tunnel atom
+
+Style:
+
+```
+Dark cinematic drum and bass, 174 BPM, D minor, grime over it: a time-stretched break smeared and pitched down, layered three deep, a vast round sub with no distortion on it, long sci-fi siren stabs sweeping across the stereo field. It opens with no drums: a cathedral pipe organ alone playing a slow falling figure that hangs and decays, the first MC close for three lines. Break and sub arrive together on the line 'you keep on walking' and the room gets bigger three more times. Under the rap the organ holds one low pedal note against the siren, and its falling figure comes back a register higher at each turn. Drums and sub are the loudest thing in the mix, the organ sit under them, never in front. Stone-room reverb, enormous and cold, patient rather than violent, night-bus melancholy. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, low and menacing without ever shouting, one syllable to the beat on the 174 grid, never rushed.
+```
+
+Exclude styles:
+
+```
+double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, steady rap pace, lazy flow, slow flow, chill, lo-fi beats, half time, tempo change, drifting tempo, rubato, rapping behind the beat, off-grid vocal, spoken word, distorted bass, clipping, overdriven, shouting, screaming, roaring, snarling, barking, war drums, air horns, hardcore, neurofunk, jump up, wobble bass, dubstep, American accent, American vocal, US rap, trap, boom bap, autotune, female vocal, teenage voice, falsetto, Jamaican accent, ragga MC, male choir, BBC newsreader, posh storyteller, narrator voice, orchestral bed, symphony orchestra, full orchestra, string section, chamber music, epic trailer music, brass braams, static arrangement, happy, uplifting, comedic, novelty, parody, Rhodes, upright double bass, jazz, swing, brushed jazz kit, harpsichord, flute, clarinet, saxophone, lush pads, sustained string pad, ambient wash, snare ostinato, major key, laid-back
+```
+
+### r64 lyrics (shared — the r61 words, every cue de-escalated)
+
+```lyrics
+[Verse 1 | a sad piano and a lone violin alone, no drums at all | gruff MC, quiet, close and bitter, three lines only]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the bass and the break arrive together on this line, the first full weight of the record]
+[gruff MC from here, weary and direct, landing one syllable on each beat, hitting hard without raising his voice]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[gruff MC, lifting, more insistent, still controlled]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[gruff MC, a quiet bitter plea]
+please sir, can I fuckin, have some more?
+[Chorus | the hook, sung, a room of voices joining in over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the arrangement fuller than verse one | cold MC, clipped, precise and contemptuous, every consonant landing]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold MC, sharper and colder, biting]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the beat cuts dead for the first line, one bare voice, then everything returns fuller than the first chorus | sung]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | straight in, no break, the arrangement at its fullest | the two MCs trade lines, close and overlapping]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | the biggest moment of the record, everything at once, the whole room singing it | sung]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.55 Round r63 — a third wave: four more worlds on the frozen spine (2026-09-21)
+
+**Brief, Jack 2026-09-21:** *"Just keep going i dont want to influence this process negatively. Just
+do more of whatever that was thanks."*
+
+Same spine, no narrowing. The colours already spent across r59–r62 are strings, organ, thriller
+pizzicato, brass + timpani, harp/celesta/glass, wobble bass, war drums, acid, riot noise, rave
+piano, male choir, dub siren and industrial metal. Four new ones here.
+
+| Lane | Texture | Bass | The score's job | Voice |
+|---|---|---|---|---|
+| `brassband` | amen assault, relentless | filthy distorted Reese, driven till it clips | 🔑 **a northern colliery brass band** stabbing short and hard in the break's holes, cornets high and grieving over the drops, euphonium doubling the sub | Durham, blunt and hard |
+| `cimbalom` | chopped jungle, rapid and rolling | dark Reese growing meaner every section | a hammered cimbalom rattling a minor figure in sixteenths against the break, double bass sawing under — **struck strings as percussion** | Liverpool, quick and cutting |
+| `sludge` | mechanical breaks, snares tumbling | **a detuned palm-muted guitar figure doubling the distorted sub** | the guitar never plays chords, only that figure; a solo violin screams one line over each drop | Sheffield, flat and furious |
+| `barisax` | rolling jungle, amen fills at every turn | vast round sub, growling mid-range | a baritone sax honking one ugly riff on the offbeats, cello answering low — **the horn is rhythm, never a solo** | Croydon, snarling and nasal |
+
+🔑 **`brassband` is picked for the story, not only the sound.** A colliery band is the sound of
+exactly the towns this song is about; putting it over an amen break states the record's argument in
+one arrangement. The spine is stable enough now to spend a lane on meaning rather than novelty.
+
+📎 **`sludge` reaches back into the song's own history**: the palm-muted guitar figure was the spine
+of the v5.5 candidate (§v6.1) and of the retired My Taste block — *"under the vocals the guitar is
+only a low palm-muted figure, never chords, never a tune"*. It has never been tried against the
+amen-break arrangement.
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender Male · Personalize off ·
+no Voice · **Duration 200 s** · workspace `camping-Jack` · weirdness **40 and 60**. 8 Creates,
+16 takes.
+
+### Generated 2026-09-21 — 8 Creates, 16 takes
+
+| Lane | Shorthand | w40 | w60 |
+|---|---|---|---|
+| `brassband` | a colliery brass band stabbing in the break’s holes; Durham MC | [8d41406f](https://suno.com/song/8d41406f-73cc-4e96-a048-03933933d069) · [5cdbee3c](https://suno.com/song/5cdbee3c-74f7-4daa-b61a-5251aca01ea5) | [b226fe79](https://suno.com/song/b226fe79-705b-4ab6-8eb8-e77301f89cb4) · [81ae705c](https://suno.com/song/81ae705c-3686-4de5-80cd-1df2e3fc8350) |
+| `cimbalom` | a hammered cimbalom rattling 16ths against the break; Liverpool MC | [46cffbb5](https://suno.com/song/46cffbb5-cb72-4b7e-b3ce-2965e6ca0e0f) · [205c56a4](https://suno.com/song/205c56a4-e58c-42ac-a99c-8de3678f1581) | [8ace7938](https://suno.com/song/8ace7938-2be5-4e3b-843a-fe61c8cb7d82) · [6d4d324b](https://suno.com/song/6d4d324b-c305-47b3-aa6b-1a0d27a3d8b5) |
+| `sludge` | a detuned palm-muted guitar doubling the sub; Sheffield MC | [915944e0](https://suno.com/song/915944e0-5e7c-4677-8afe-7e506d707ac9) · [70a7c155](https://suno.com/song/70a7c155-6cf5-4817-9a66-79e875a457e8) | [ca4a5a53](https://suno.com/song/ca4a5a53-8213-4c21-9fc6-0b1608118b47) · [6a1f9794](https://suno.com/song/6a1f9794-a15b-4964-8869-1189eca4dee0) |
+| `barisax` | a baritone sax honking one ugly riff on the offbeats; Croydon MC | [eff85ba2](https://suno.com/song/eff85ba2-7061-42bd-87a2-b1fbe84ad5e3) · [a3c34691](https://suno.com/song/a3c34691-225b-4d10-b72e-9be47944c14c) | [7a143332](https://suno.com/song/7a143332-817b-4e8b-a3cd-3f70814ae903) · [02a1af09](https://suno.com/song/02a1af09-9439-45c2-9c47-a18843bb742c) |
+
+✅ **Eight Creates, eight clean.** Across r61-r63 the whole wave ran 22 Creates for **44 takes**, credits 9,890 → 9,640.
+
+⬜ **Not heard.** Two lanes here are worth a first listen for reasons beyond novelty: `brassband`, which is the sound of the towns the song is about put over an amen break, and `sludge`, which revives the palm-muted guitar figure that was the spine of the v5.5 candidate (§v6.1) and has never met these drums.
+
+### r63 brassband atom
+
+Style:
+
+```
+Dark aggressive UK drum and bass, 174 BPM, minor key, grime over it. It opens on a sad piano and a lone violin, no drums, the first MC quiet and close for three lines, so the drop lands like a punch. Then bass and break slam in together in one bar, on the line 'you keep on walking'. It breaks down and slams back three more times, each harder, the biggest two thirds in. Under the rap: an amen assault, breaks tearing across whole bars, relentless. A filthy distorted Reese under everything, driven until it clips. A northern colliery brass band stabs hard and short in the holes the break leaves, cornets high and grieving over the drops, euphonium doubling the sub. A hook returns three times, half sung half shouted, a room chanting it back. Brass in a cold hall, breaks dry and dirty, the two worlds cut together, night-bus melancholy under it. A Durham grime MC, blunt and hard, against a cold clipped MC who sneers, both on the 174 grid, hitting hard, never pausing mid-line or double-timing.
+```
+
+Exclude styles:
+
+```
+club anthem, festival house, EDM, big room, four on the floor, house, commercial dance, glossy production, radio pop, jump up, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, narrator voice, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, cimbalom, hammered dulcimer, distorted guitar, baritone saxophone, pipe organ, male choir, dub siren, rave piano, hoover, harp, celesta, tubular bells, muted piano, ticking pizzicato
+```
+
+### r63 cimbalom atom
+
+Style:
+
+```
+Dark aggressive UK drum and bass, 174 BPM, minor key, grime over it. It opens on a sad piano and a lone violin, no drums, the first MC quiet and close for three lines, so the drop lands like a punch. Then bass and break slam in together in one bar, on the line 'you keep on walking'. It breaks down and slams back three more times, each harder, the biggest two thirds in. Under the rap: chopped jungle breaks, rapid and rolling, fills across the bar. A dark Reese growing meaner every section, distorted at the drops. A hammered cimbalom rattles a minor figure in sixteenths against the break, a double bass sawing underneath: struck strings as percussion, never a melody on top. A hook returns three times, half sung half shouted, a room chanting it back. Close, wooden and nasty, hammers loud, slightly overdriven, night-bus melancholy under it. A Liverpool grime MC, quick and cutting, against a low deadpan MC, both on the 174 grid, hitting hard, never pausing mid-line or double-timing.
+```
+
+Exclude styles:
+
+```
+club anthem, festival house, EDM, big room, four on the floor, house, commercial dance, glossy production, radio pop, jump up, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, narrator voice, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, brass band, cornet, euphonium, distorted guitar, baritone saxophone, pipe organ, male choir, dub siren, rave piano, hoover, harp, celesta, tubular bells, muted piano
+```
+
+### r63 sludge atom
+
+Style:
+
+```
+Dark aggressive UK drum and bass, 174 BPM, minor key, grime over it. It opens on a sad piano and a lone violin, no drums, the first MC quiet and close for three lines, so the drop lands like a punch. Then bass and break slam in together in one bar, on the line 'you keep on walking'. It breaks down and slams back three more times, each harder, the biggest two thirds in. Under the rap: mechanical chopped breaks, snares tumbling over each other. A detuned palm-muted guitar figure doubling a distorted sub, low and slow. The guitar never plays chords, only that figure, and a solo violin screams one line over each drop: guitar as bass, violin the only voice above the break. A hook returns three times, half sung half shouted, a room chanting it back. Heavy, downtuned, filthy, amp hum left in, night-bus melancholy under it. A Sheffield grime MC, flat and furious, half-shouting, against a high sarcastic MC, both on the 174 grid, hitting hard, never pausing mid-line or double-timing.
+```
+
+Exclude styles:
+
+```
+club anthem, festival house, EDM, big room, four on the floor, house, commercial dance, glossy production, radio pop, jump up, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, narrator voice, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, brass band, cornet, euphonium, cimbalom, hammered dulcimer, baritone saxophone, pipe organ, male choir, dub siren, rave piano, hoover, harp, celesta, tubular bells
+```
+
+### r63 barisax atom
+
+Style:
+
+```
+Dark aggressive UK drum and bass, 174 BPM, minor key, grime over it. It opens on a sad piano and a lone violin, no drums, the first MC quiet and close for three lines, so the drop lands like a punch. Then bass and break slam in together in one bar, on the line 'you keep on walking'. It breaks down and slams back three more times, each harder, the biggest two thirds in. Under the rap: rolling jungle breaks, heavy and loose, amen fills at every turn. A vast round sub with a growling mid-range over it, biting at the drops. A baritone saxophone honks one ugly riff on the offbeats, a cello answering low down: the horn is rhythm, never a solo, never smooth. A hook returns three times, half sung half shouted, a room chanting it back. Raw and blaring, room horns against dry breaks, loud and ragged, night-bus melancholy under it. A Croydon grime MC, snarling and nasal, against a clipped contemptuous MC, both on the 174 grid, hitting hard, never pausing mid-line or double-timing.
+```
+
+Exclude styles:
+
+```
+club anthem, festival house, EDM, big room, four on the floor, house, commercial dance, glossy production, radio pop, jump up, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, narrator voice, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, brass band, cornet, euphonium, cimbalom, hammered dulcimer, distorted guitar, pipe organ, male choir, dub siren, rave piano, hoover, harp, celesta, tubular bells, smooth jazz, saxophone solo
+```
+
+*(Lyrics: the r61 box, unchanged — §v6.53.)*
+
+---
+
+## v6.54 Round r62 — more in the same direction: four new colours on the settled spine (2026-09-21)
+
+**Brief, Jack 2026-09-21:** *"Keep making more of this in this direction i liked a few of them."*
+
+⚠️ **Which ones he liked is not recorded** — "a few of them", no IDs. So this round **widens**: the
+spine is frozen and four textural worlds we have not tried get a run each. 🔑 **The moment the liked
+IDs are named, the next round should do the opposite — one lane, deepened** — so ask for them.
+
+### Frozen (nothing here moves)
+
+The drumless sad-piano-and-violin opening, three lines only · the drop landing **on the Waitrose
+line** as a `[Drop]` tag · four breakdown/drop cycles, the biggest two thirds in · an orchestral
+element with a **job** against the break · the hook half sung half shouted with a room chanting it
+back · two English grime MCs, controlled on the 174 grid, **never double-time** · aggression from
+delivery words, distortion and contrast.
+
+### The four new worlds
+
+| Lane | Texture | Bass | The score's job | Voice |
+|---|---|---|---|---|
+| `hardcore` | 1992 breakbeat hardcore | hoover howling under the drops + deep sub, both overdriven | **stabbed rave piano chords on the offbeats — the piano as percussion**, violin crying the same figure over them | Bristol, low and rugged, barking the ends of bars |
+| `choir` | amen assault, relentless | filthy distorted Reese driven till it clips | **a low male choir chants one dark line under every drop**, cello doubling the sub — voices as a bass instrument | Yorkshire, flat, hard, menacing |
+| `dubsiren` | rolling jungle, snares thrown into long delays | vast round sub + growling mid-range | cello sawing the sub's notes, **a dub siren screaming across the drops**, everything in tape delay | Nottingham, low and threatening |
+| `industrial` | mechanical breaks, clanking metal doubling the snare | distorted machine bass, square and cold | **bowed metal and detuned strings grinding on every turn**, violin in the gaps between lines | Essex, harsh and nasal, half-shouting |
+
+🔑 **`hardcore` is the interesting one for a specific reason:** it gives the piano Jack loves an
+*aggressive* job — hammered rave chords on the offbeats — instead of only the mournful one it has in
+the opening. That is the same instrument doing both halves of the record's emotional range.
+
+🔴 **Inherited-exclude audit, per the standing rule:** `choir`, `rave piano`, `hoover`, `dub siren`
+and `industrial percussion` were all on the ban list, inherited from the source's box, and all came
+off for the lanes that need them. `choir` had been banned in every Camping box since r19 and is this
+round's entire `choir` lane.
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender Male · Personalize off ·
+no Voice · **Duration 200 s** · workspace `camping-Jack` · weirdness **40 and 60**. 8 Creates,
+16 takes.
+
+### Generated 2026-09-21 — 8 Creates, 16 takes
+
+| Lane | Shorthand | w40 | w60 |
+|---|---|---|---|
+| `hardcore` | rave piano as percussion, hoover bass; Bristol MC | [3dfc5925](https://suno.com/song/3dfc5925-7816-4286-8d46-e2cb4766b8f3) · [e15f31f1](https://suno.com/song/e15f31f1-e7d1-4a7a-8568-107ea60ab82f) | [c36ce22b](https://suno.com/song/c36ce22b-a025-4b6b-a83c-65546a95c8ef) · [629108d6](https://suno.com/song/629108d6-8013-46a5-94b6-16da4cde7e15) |
+| `choir` | a low male choir as a bass instrument; Yorkshire MC | [0b52c757](https://suno.com/song/0b52c757-1162-4add-a8b5-36a07a8a1252) · [b00c285c](https://suno.com/song/b00c285c-f236-4c6a-b650-587957b94a2a) | [64747bf3](https://suno.com/song/64747bf3-e739-4e3e-9145-34ff3f8fda7b) · [0cfcee91](https://suno.com/song/0cfcee91-88e8-4064-9cc2-4038c08e3989) |
+| `dubsiren` | dub siren over jungle, snares into long delays; Nottingham MC | [5ca9b6a9](https://suno.com/song/5ca9b6a9-8d08-4052-a212-f699ba2e047c) · [e3c3632c](https://suno.com/song/e3c3632c-74d8-4828-856b-9239d474ad60) | [f5781e97](https://suno.com/song/f5781e97-4beb-4ccb-a0f9-df0b4e4cee00) · [ba6834f1](https://suno.com/song/ba6834f1-c372-41fc-9e07-850ec78c7a0f) |
+| `industrial` | clanking metal on the snare, bowed metal grinding; Essex MC | [54712a37](https://suno.com/song/54712a37-ca32-4c16-a698-d88dfb854978) · [51b698f2](https://suno.com/song/51b698f2-c75c-49dd-aace-09ca6557fb83) | [07a68b01](https://suno.com/song/07a68b01-cd58-4206-9853-e277b9b94b5f) · [fbfcae69](https://suno.com/song/fbfcae69-bde1-47f3-a6b8-dd71c886b201) |
+
+✅ **Eight Creates, eight clean results** — the first fully clean round since `create()` was fixed to restore the clip list before polling (§v6.53's bug note).
+
+⬜ **Not heard.** `hardcore` is the one to try first: it is the only lane in the whole run where the piano Jack likes has an **aggressive** job as well as a mournful one — hammered rave chords on the offbeats in the drops, the same instrument that opens the record alone.
+
+### r62 hardcore atom
+
+Style:
+
+```
+Dark aggressive UK drum and bass, 174 BPM, minor key, grime over it. It opens on a sad piano and a lone violin, no drums, the first MC quiet and close for three lines, so the drop lands like a punch. Then bass and break slam in together in one bar, on the line 'you keep on walking'. It breaks down and slams back three more times, each harder, the biggest two thirds in. Under the rap: chopped breakbeats in the 1992 hardcore way, amen fills at every turn. A hoover bass howling under the drops, a deep sub beneath it, both overdriven. Stabbed rave piano chords hammer the offbeats, a lone violin crying the same figure over them: the piano is percussion, hit like a drum. A hook returns three times, half sung half shouted, a room chanting it back. Loud, rowdy, dark, tape-hot, air horns at the turns, night-bus melancholy under it. A Bristol grime MC, low and rugged, barking the ends of bars, against a cold clipped MC, both on the 174 grid, hitting hard, never pausing mid-line or double-timing.
+```
+
+Exclude styles:
+
+```
+club anthem, festival house, EDM, big room, four on the floor, house, commercial dance, glossy production, radio pop, jump up, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, narrator voice, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, pipe organ, male choir, dub siren, clanking metal, industrial percussion, harp, celesta, tubular bells, timpani, low brass, muted piano, ticking pizzicato
+```
+
+### r62 choir atom
+
+Style:
+
+```
+Dark aggressive UK drum and bass, 174 BPM, minor key, grime over it. It opens on a sad piano and a lone violin, no drums, the first MC quiet and close for three lines, so the drop lands like a punch. Then bass and break slam in together in one bar, on the line 'you keep on walking'. It breaks down and slams back three more times, each harder, the biggest two thirds in. Under the rap: an amen assault, breaks tearing across whole bars, relentless. A filthy distorted Reese grinding under everything, driven until it clips. A low male choir chants one dark line under every drop, a cello doubling the sub: voices as a bass instrument with the break, never a church pad. A hook returns three times, half sung half shouted, a room chanting it back. Enormous and grim, long tails on the voices, dirty low end, night-bus melancholy under it. A Yorkshire grime MC, flat, hard and menacing, against a high sarcastic MC, both on the 174 grid, hitting hard, never pausing mid-line or double-timing.
+```
+
+Exclude styles:
+
+```
+club anthem, festival house, EDM, big room, four on the floor, house, commercial dance, glossy production, radio pop, jump up, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, narrator voice, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, rave piano, hoover, dub siren, clanking metal, industrial percussion, harp, celesta, tubular bells, timpani, low brass, muted piano, ticking pizzicato
+```
+
+### r62 dubsiren atom
+
+Style:
+
+```
+Dark aggressive UK drum and bass, 174 BPM, minor key, grime over it. It opens on a sad piano and a lone violin, no drums, the first MC quiet and close for three lines, so the drop lands like a punch. Then bass and break slam in together in one bar, on the line 'you keep on walking'. It breaks down and slams back three more times, each harder, the biggest two thirds in. Under the rap: rolling jungle breaks, heavy and loose, snares thrown into long delays at the turns. A vast round sub under everything, a mid-range bass growling on the drops. A cello saws the sub's own notes, a dub siren screaming across the drops, everything thrown into tape delay. A hook returns three times, half sung half shouted, a room chanting it back. Cavernous dub space, spring reverb, delay throws, heavy and dread, night-bus melancholy under it. A Nottingham grime MC, low and threatening, against a wiry fast-tongued MC who spits, both on the 174 grid, hitting hard, never pausing mid-line or double-timing.
+```
+
+Exclude styles:
+
+```
+club anthem, festival house, EDM, big room, four on the floor, house, commercial dance, glossy production, radio pop, jump up, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, narrator voice, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, rave piano, hoover, male choir, clanking metal, industrial percussion, harp, celesta, tubular bells, timpani, low brass, muted piano, ticking pizzicato
+```
+
+### r62 industrial atom
+
+Style:
+
+```
+Dark aggressive UK drum and bass, 174 BPM, minor key, grime over it. It opens on a sad piano and a lone violin, no drums, the first MC quiet and close for three lines, so the drop lands like a punch. Then bass and break slam in together in one bar, on the line 'you keep on walking'. It breaks down and slams back three more times, each harder, the biggest two thirds in. Under the rap: mechanical chopped breaks, clanking metal hits doubling the snare, nothing loose. A distorted machine bass, square and cold, biting at the drops. Bowed metal and detuned strings grind against the break on every turn, a violin playing one hard figure in the gaps between lines. A hook returns three times, half sung half shouted, a room chanting it back. Cold, industrial and brutal, everything slightly clipped, no warmth, night-bus melancholy under it. An Essex grime MC, harsh and nasal, half-shouting, against a flat deadpan MC, both on the 174 grid, hitting hard, never pausing mid-line or double-timing.
+```
+
+Exclude styles:
+
+```
+club anthem, festival house, EDM, big room, four on the floor, house, commercial dance, glossy production, radio pop, jump up, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, narrator voice, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, rave piano, hoover, male choir, dub siren, harp, celesta, tubular bells, timpani, low brass, muted piano, ticking pizzicato
+```
+
+*(Lyrics: the r61 box, unchanged — §v6.53.)*
+
+---
+
+## v6.53 Round r61 — the aggression, four ways (2026-09-21)
+
+**Brief, Jack 2026-09-21:** *"we have lost the aggression, like the song baddadan by chase and status
+it should be like that, remember to use the original song as a point of reference."*
+
+### 🔑 First, separate two things that keep getting conflated
+
+Jack has said **"way too fast"** (r55) and **"lost the aggression"** (r60). The trap is answering the
+second with the first. They are different levers:
+
+| Aggression comes from | It does **not** come from |
+|---|---|
+| **delivery words** — snarl, spit, bark, hiss, half-shout, roar (the r37/r46 finding, already in this sheet) | more syllables per second |
+| **distortion and bass design** | a higher BPM |
+| **contrast** — the quiet three-line opening is what makes the drop violent | removing the quiet opening |
+
+So the pacing guards are untouched: controlled, on the grid, **never double-time**, and the
+slow-delivery bans stay too.
+
+### Translating the reference without naming it
+
+Our own rule (`docs/suno-gpt/system-prompt.txt`) forbids artist, song, album or band names in a
+prompt, so the reference is decomposed instead:
+
+| The reference's sound | What went in the box | Source |
+|---|---|---|
+| breakneck jungle-leaning d&b, "all gas, no brakes"; classic jungle bass and chopped drums with modern MC vocals | *breakneck jungle breaks chopped to ribbons, an amen assault at every turn* | [Songfacts](https://www.songfacts.com/facts/chase-status/baddadan), [Ticketmaster](https://discover.ticketmaster.co.uk/music/the-best-chase-and-status-songs-ranked-63108/) |
+| 🔑 the bassline: **two sawtooth oscillators a fifth apart, LFO-modulated, distorted** | *two detuned sawtooths a fifth apart, an LFO wobbling them open and shut, distorted until it growls* | [Transmission Samples teardown](https://www.transmissionsamples.com/produce-baddadan-tutorial) |
+| acidy resonant synths | the `acid` lane's screaming resonant line | same |
+| MC chants traded between voices, ego-driven and blustering | the hook *half sung half shouted, a room chanting it back*; MCs trading and roaring over each other | Songfacts |
+
+🔴 **And the ban that had to go.** `wobble bass` has been in every Camping exclude list since r19 —
+inherited from the source's own box — and it is **the exact mechanism of the sound Jack just asked
+for**. Lifted in every lane, along with `EDM drops` and `crowd noise`. This is the third time an
+inherited exclude has been found fighting the brief (`piano` in r58, the uniformity clauses in r57).
+**Audit the inherited excludes against the brief every round.**
+
+⚠️ The MCs on that record rap in a ragga register, but they are English (its best-known voice is
+from East London). The grime-cast rule and the `Jamaican accent` ban both stand — **the menace is
+written as delivery, not as an accent.**
+
+### Kept from `1127446d`, as asked
+
+The drumless sad-piano-and-violin opening for three lines · the drop landing **on the Waitrose
+line** · four breakdown/drop cycles · an orchestral element with a job against the break · the hook ·
+night-bus melancholy under the violence.
+
+### The four lanes
+
+| Lane | The aggression is in… | Bass | Score | Cast |
+|---|---|---|---|---|
+| `wobble` | the bass design itself | two detuned sawtooths a fifth apart, LFO, distorted | hard string stabs on the drops, solo violin screaming over | deep menacing East London, half-shouting |
+| `wardrums` | percussion and martial weight | filthy distorted Reese, driven till it clips | violent staccato string ostinato in sixteenths, timpani on the turns | hoarse Birmingham, barking the ends of bars |
+| `acid` | shrillness and squeal | screaming resonant acid line over a distorted sub | lone violin screaming, low strings sawing the sub's notes | wiry nasal North London, snarling |
+| `riot` | rawness and noise | distorted sub plus growling mid-range, clipping | low brass stabs in the break's holes, strings shrieking on turns | South London, shouting over the beat, ragged |
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender Male · Personalize off ·
+no Voice · **Duration 200 s** · workspace `camping-Jack` · weirdness **40 and 60**. 8 Creates,
+16 takes.
+
+### Generated 2026-09-21 — 18 takes
+
+| Lane | The aggression | w40 | w60 |
+|---|---|---|---|
+| `wobble` | the bass itself — two detuned sawtooths a fifth apart, LFO, distorted; East London, half-shouting | [3c39c300](https://suno.com/song/3c39c300-364f-41e4-a88c-fd9d1fbc4ee4) · [594c7964](https://suno.com/song/594c7964-db1f-43eb-a6f3-7aed52a6e5da) | [f1f87e64](https://suno.com/song/f1f87e64-7bb5-462a-9f3c-c7e6588dfa77) · [1bd87b9c](https://suno.com/song/1bd87b9c-9306-47b4-b208-e5ad22d9d66c) |
+| `wardrums` | war drums doubling every kick, violent staccato strings in 16ths; Birmingham, barking | [55b2ebcc](https://suno.com/song/55b2ebcc-c417-4855-aaad-bffb9bb7c83e) · [a80c1acc](https://suno.com/song/a80c1acc-85dc-4c66-b1e3-3637bcaa5344) | [f61689a3](https://suno.com/song/f61689a3-d8e5-48de-9990-174f2ef301a6) · [ca7616bc](https://suno.com/song/ca7616bc-393b-4608-aad5-f90ee7f957d4) |
+| `acid` | a screaming resonant acid line over a distorted sub; North London, snarling | [84d450b6](https://suno.com/song/84d450b6-be9d-482c-b2e3-09479b3d08de) · [fd0b71df](https://suno.com/song/fd0b71df-3553-4079-80be-092555681dac) | [1a158945](https://suno.com/song/1a158945-110b-475e-9f28-48aa0cb37d8a) · [5c4c7588](https://suno.com/song/5c4c7588-a2e5-4e64-9d9f-a03e710f30c6) · [8f46a33c](https://suno.com/song/8f46a33c-627c-43b2-8a56-18fa67da6136) · [0844a1df](https://suno.com/song/0844a1df-ef45-4e09-8f56-dbb5a22d88ba) |
+| `riot` | clipping, sirens, a crowd roaring, low brass in the break’s holes; South London, shouting | [999db854](https://suno.com/song/999db854-f9a4-46aa-a23c-0f38a6eec4a7) · [4e4ca099](https://suno.com/song/4e4ca099-503e-4271-bec9-45a6da5c8176) | [ac551402](https://suno.com/song/ac551402-10ec-4e77-ac18-6e9611bff744) · [66ef791d](https://suno.com/song/66ef791d-6d3f-46e0-aebf-cc9565ff9f15) |
+
+🔴 **This round exposed a real bug in `suno.mts` and it is now fixed.** Three of the eight Creates reported `create:timeout — clicked, but takes did not appear in time` and were recorded as costing 0 credits; **two of them had generated perfectly well.** The cause is Trap 6: picking the workspace leaves the shared right-hand pane on the *workspace browser*, so `listTakes` returns `[]` while the takes exist. `create()` now calls `ensureClipList()` before every poll and waits 7 minutes instead of 4. ⚠️ Consequence for this table: `acid` w60 was re-run and so carries **six** takes, the first two from the original Create.
+
+🔴 **And a process bug worth not repeating:** the chained runs for r62/r63 used `until ! pgrep -f "suno.mts pair"` as a wait, which **matches the waiting shell itself**, so they never started. Chain rounds in one shell loop, never with a pgrep gate.
+
+### r61 wobble atom
+
+Style:
+
+```
+Dark aggressive UK drum and bass, 174 BPM, minor key, grime over it. It opens on a sad piano and a lone violin, no drums, the first MC quiet and close for three lines, so the drop lands like a punch. Then bass and break slam in together in one bar, on the line 'you keep on walking'. It breaks down and slams back three more times, each harder, the biggest two thirds in. Under the rap: breakneck jungle breaks chopped to ribbons, an amen assault at every turn. The bass is the record: two detuned sawtooths a fifth apart, an LFO wobbling them open and shut, distorted until it growls. Hard string stabs on the drops, a solo violin screaming over the top. A hook returns three times, half sung half shouted, a room chanting it back. Loud, distorted and raw, air horns and sirens at the turns, night-bus melancholy under it. A deep menacing East London grime MC half-shouting and spitting venom, against a cold clipped MC, both on the 174 grid, hitting hard, never pausing mid-line or double-timing.
+```
+
+Exclude styles:
+
+```
+club anthem, festival house, EDM, big room, four on the floor, house, commercial dance, glossy production, radio pop, jump up, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, narrator voice, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, pipe organ, harp, celesta, glass harmonica, tubular bells, timpani, war drums, low brass, muted piano, ticking pizzicato, acid synth, 303
+```
+
+### r61 wardrums atom
+
+Style:
+
+```
+Dark aggressive UK drum and bass, 174 BPM, minor key, grime over it. It opens on a sad piano and a lone violin, no drums, the first MC quiet and close for three lines, so the drop lands like a punch. Then bass and break slam in together in one bar, on the line 'you keep on walking'. It breaks down and slams back three more times, each harder, the biggest two thirds in. Under the rap: an amen assault, breaks tearing across whole bars, war drums doubling every kick. A filthy distorted Reese grinding underneath, driven until it clips. A violent staccato string ostinato saws sixteenths against the break, timpani on the turns. A hook returns three times, half sung half shouted, a room chanting it back. Martial, brutal and relentless, mixed hot and dirty, night-bus melancholy under it. A hoarse Birmingham grime MC barking and roaring the ends of bars, against a flat cold MC who hisses, both on the 174 grid, hitting hard, never pausing mid-line or double-timing.
+```
+
+Exclude styles:
+
+```
+club anthem, festival house, EDM, big room, four on the floor, house, commercial dance, glossy production, radio pop, jump up, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, narrator voice, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, pipe organ, harp, celesta, glass harmonica, tubular bells, muted piano, ticking pizzicato, acid synth, 303, wobble bass lead
+```
+
+### r61 acid atom
+
+Style:
+
+```
+Dark aggressive UK drum and bass, 174 BPM, minor key, grime over it. It opens on a sad piano and a lone violin, no drums, the first MC quiet and close for three lines, so the drop lands like a punch. Then bass and break slam in together in one bar, on the line 'you keep on walking'. It breaks down and slams back three more times, each harder, the biggest two thirds in. Under the rap: chopped jungle breaks, rolling and rapid, fills that tear across the bar. A screaming resonant acid line over a deep distorted sub, squealing at the drops. A lone violin screams over the drops and low strings saw the sub's notes. A hook returns three times, half sung half shouted, a room chanting it back. Acidic, shrill and nasty, everything slightly overdriven, night-bus melancholy under it. A wiry nasal North London grime MC, snarling, against a low deadpan MC who mutters threats, both on the 174 grid, hitting hard, never pausing mid-line or double-timing.
+```
+
+Exclude styles:
+
+```
+club anthem, festival house, EDM, big room, four on the floor, house, commercial dance, glossy production, radio pop, jump up, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, narrator voice, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, pipe organ, harp, celesta, glass harmonica, tubular bells, timpani, war drums, low brass, muted piano, ticking pizzicato
+```
+
+### r61 riot atom
+
+Style:
+
+```
+Dark aggressive UK drum and bass, 174 BPM, minor key, grime over it. It opens on a sad piano and a lone violin, no drums, the first MC quiet and close for three lines, so the drop lands like a punch. Then bass and break slam in together in one bar, on the line 'you keep on walking'. It breaks down and slams back three more times, each harder, the biggest two thirds in. Under the rap: raw chopped breaks, snares tumbling over each other, no space left in the bar. A distorted sub and a growling mid-range bass, clipping at the peaks. Low brass stabs punch the holes in the break and the strings shriek on the turns. A hook returns three times, half sung half shouted, a room chanting it back. Pirate-radio raw, clipping and shouting, sirens and a crowd roaring at the drops, night-bus melancholy under it. A South London grime MC shouting over the beat, ragged and furious, against a clipped contemptuous MC, both on the 174 grid, hitting hard, never pausing mid-line or double-timing.
+```
+
+Exclude styles:
+
+```
+club anthem, festival house, EDM, big room, four on the floor, house, commercial dance, glossy production, radio pop, jump up, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, narrator voice, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, pipe organ, harp, celesta, glass harmonica, tubular bells, timpani, war drums, muted piano, ticking pizzicato, acid synth, 303
+```
+
+### r61 lyrics (shared — the r60 cues with every performance direction sharpened)
+
+```lyrics
+[Verse 1 | a sad piano and a lone violin alone, no drums at all | gruff MC, quiet, close and bitter, three lines only]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the bass and the whole break slam in on this line, everything at once, as hard as the record gets so far]
+[gruff MC from here, half-shouting, snarling and spitting every line, hitting hard on the beat, never pausing mid-line]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[gruff MC, rising to a roar]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[gruff MC, a snarled bitter plea]
+please sir, can I fuckin, have some more?
+[Chorus | the hook, half sung and half shouted, a room of voices chanting it back over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat harder than verse one | cold MC, clipped, contemptuous, spitting every word]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold MC, rising to a shout, biting and vicious]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the beat cuts dead for the first line, bare shouted voice, then everything slams back harder than the first chorus | half sung, half shouted]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | straight in, no break, the beat at its heaviest | the two MCs trade lines, roaring over each other]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | the biggest drop of the record, everything at once, the whole room shouting it | half sung, half shouted]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.52 Round r60 — the drop lands on the Waitrose line, and five different grime voices (2026-09-21)
+
+**Brief, Jack 2026-09-21:** *"'you keep on walking, through that Wait trose door' this is where the
+drum and bass 'drop' should happen. Redo all of those with that in mind, also mix up the grime voice
+in each generation."*
+
+### 🔴 The bug this round found, and it explains a lot
+
+Every round since r58 inherited the **source's own lyric cues**, which say, in writing:
+
+```
+[Verse 1 | the full beat rolling under him from the first line | the first man, gravelly raspy
+ voice, …, an older English storyteller, not half time]
+[Verse 2 | … | the second man, a BBC newsreader voice, clipped and cold]
+```
+
+So while the **Style box** asked for two grime MCs over a drumless piano opening, the **Lyrics box**
+was asking for a **full beat in bar one** and casting **a storyteller and a newsreader**. Two boxes,
+two different songs — and the lyric labels sit next to the words actually being performed.
+
+🔑 **This is the same failure the v5.5 sheet already caught once** ("*two different castings for the
+same man*", the `voice not weird` row) and it came back because the lyrics box was inherited rather
+than rebuilt. **Every cue is now written from scratch**, and `BBC newsreader, posh storyteller,
+narrator voice` are in the excludes as a belt-and-braces guard.
+
+### The two changes asked for
+
+**1 · The drop is PLACED, not described.** A `[Drop]` section tag now sits immediately before
+*"you keep on walking, through that Wait trose door"* — so the first three lines are the drumless
+opening and the beat lands exactly there. A section **tag** is what makes Suno re-decide the
+arrangement; an inline adjective demonstrably does not (`suno-tag-mechanics.md`). The Style box says
+it in words as well — *"the sub and the break slam in together in one bar, on the line 'you keep on
+walking'"* — because a clause arguing with a genre convention wants saying twice.
+
+**2 · A different grime voice in every lane.** Five English grime registers, each with its own
+second voice for contrast:
+
+| Lane | First MC | Second MC |
+|---|---|---|
+| `violin` | deep gravelly South London, weighty and unhurried | clipped, cold, sneering London |
+| `organ` | harsh wiry East London, nasal and fast-tongued, old pirate-radio | flat, deadpan, quietly menacing |
+| `clock` | low, almost-spoken North London, menacing and held back | sharp, high, sarcastic, cuts every line short |
+| `brass` | hoarse roaring Birmingham, shouts the end of every bar | cold, clipped, bored and superior |
+| `glass` | Manchester, half-sings between the rapped lines, melodic | crisp, brittle, sarcastic |
+
+🔑 **The lyric labels stay `[gruff MC]` / `[cold MC]` in all five lanes** — one fixed short label per
+character is what stops a voice drifting mid-song. The *casting* varies in the Style box, which is
+where casting belongs.
+
+### And the four impact points are now in the lyrics too
+
+Drop 1 on the Waitrose line · chorus 1 with the break and the score together · **chorus 2 opens with
+the beat cut dead for a line, then slams back louder than the first** · `[Final Chorus]` as the
+biggest drop of the record. That is the four-cycle shape measured off the liked take (§v6.51),
+written into the section tags rather than left to the Style box to imply.
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender Male · Personalize off ·
+no Voice · **Duration 200 s** · workspace `camping-Jack` · weirdness **40 and 60**. 10 Creates,
+20 takes.
+
+### Generated 2026-09-21 — 10 Creates, 20 takes. Credits 10,020 → 9,920
+
+| Lane | Grime voices | w40 | w60 |
+|---|---|---|---|
+| `violin` | deep gravelly South London · clipped cold London | [812f8d1f](https://suno.com/song/812f8d1f-489f-47b6-b91b-ce6967dd0261) · [8d5c2850](https://suno.com/song/8d5c2850-6ff5-40ce-abe8-6705dfbe0223) | [04f6f0c1](https://suno.com/song/04f6f0c1-1ec0-4717-91f0-77218321453f) · [68e9763f](https://suno.com/song/68e9763f-4bd9-405d-8fc0-597d0b104d4f) |
+| `organ` | wiry nasal East London, pirate-radio · flat deadpan | [5d189cc7](https://suno.com/song/5d189cc7-d23d-4a83-ad7e-b1d08a80ef53) · [3f34b879](https://suno.com/song/3f34b879-094d-4970-9bc6-d422c78fd3eb) | [44676802](https://suno.com/song/44676802-600e-4845-860c-cf34257addc9) · [ad177122](https://suno.com/song/ad177122-6de3-4b58-912e-33301f816163) |
+| `clock` | low almost-spoken North London · sharp high sarcastic | [e9112e2a](https://suno.com/song/e9112e2a-2da3-47c1-8444-05eb389fd1c0) · [60760344](https://suno.com/song/60760344-b2c1-4c00-a974-0061dd27669f) | [7c66029d](https://suno.com/song/7c66029d-bd2b-4fac-82bb-35a87a33d40d) · [3185431d](https://suno.com/song/3185431d-eb73-4741-90f0-8a220e80ee00) |
+| `brass` | hoarse roaring Birmingham · cold bored superior | [b7ffe03f](https://suno.com/song/b7ffe03f-0f9b-4395-ae80-300c9d046f22) · [36aa2974](https://suno.com/song/36aa2974-d8fd-49d6-b4c4-a3b14e90b334) | [e4c4532e](https://suno.com/song/e4c4532e-3230-4e59-afff-3c85a49df06f) · [09307b3c](https://suno.com/song/09307b3c-debb-4438-8bdf-bbfb87ace069) |
+| `glass` | Manchester, half-sung · crisp brittle sarcastic | [4bfcc779](https://suno.com/song/4bfcc779-59f6-44e3-82d7-4d2e0e7f714a) · [07795d39](https://suno.com/song/07795d39-1195-4208-a943-5c4850d52549) | [f9a90137](https://suno.com/song/f9a90137-bbd3-41a6-b1ff-bb5eadc6613d) · [7345aaed](https://suno.com/song/7345aaed-a174-4bdd-91c9-7951cf306462) |
+
+⬜ **Not heard.** Two questions, in order. **1 · Does the drop land on the Waitrose line?** That is a yes/no about whether a `[Drop]` tag placed at a specific line is obeyed — and the answer is reusable on every song we make. **2 · Which grime voice?** Five different English registers over an otherwise identical record, so the voice is the only thing to judge between them.
+
+🔑 **If the drop lands but the record still sags after it**, the remaining suspect is the stretch between drop 1 and chorus 1, which is the one passage with no structural tag in it at all.
+
+### r60 violin atom
+
+Style:
+
+```
+Dark UK drum and bass, 174 BPM, minor key, grime over it. It opens on a sad piano and a lone violin with no drums at all, the first MC quiet and close over them for three lines. Then the sub and the break slam in together in one bar, on the line 'you keep on walking'. It breaks down and slams back three more times after that, each bigger, the biggest two thirds through; the quiet parts are quiet. Under the rap: chopped amen breaks, a rolling Reese sub, skippy two-step, fills at the turns. A solo violin and a string section play with the break, not over it: the violin answers the MC between lines, the low strings saw the sub's notes. A sung chorus hook returns three times, the only sung thing. Raw, dry, close, narrow and bright, night-bus melancholy. A deep gravelly South London grime MC, weighty and unhurried, trading with a clipped, cold, sneering London MC, both controlled and on the 174 grid, hitting hard, never pausing mid-line, never double-time.
+```
+
+Exclude styles:
+
+```
+rave, club anthem, festival, EDM, big room, euphoric, anthemic, four on the floor, house, commercial dance, glossy production, radio pop, jump up, wobble bass, dubstep, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, narrator voice, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, pipe organ, cathedral organ, harp, celesta, glass harmonica, vibraphone, tubular bells, timpani, war drums, low brass, trombone, tuba, muted piano, ticking pizzicato
+```
+
+### r60 organ atom
+
+Style:
+
+```
+Dark UK drum and bass, 174 BPM, minor key, grime over it. It opens on a cathedral pipe organ and low strings with no drums at all, the first MC quiet and close over them for three lines. Then the sub and the break slam in together in one bar, on the line 'you keep on walking'. It breaks down and slams back three more times after that, each bigger, the biggest two thirds through; the quiet parts are quiet. Under the rap: hard techstep breaks, machine hats, a cold metallic Reese. The organ holds one enormous minor chord under the drop and stabs on the offbeats elsewhere, low strings doubling the sub: the church and the break are one instrument. A sung chorus hook returns three times, the only sung thing. Cavernous, long reverb tails, huge low end, cold. A harsh, wiry East London grime MC, nasal and fast-tongued in the old pirate-radio way, trading with a flat, deadpan, quietly menacing MC, both controlled and on the 174 grid, hitting hard, never pausing mid-line, never double-time.
+```
+
+Exclude styles:
+
+```
+rave, club anthem, festival, EDM, big room, euphoric, anthemic, four on the floor, house, commercial dance, glossy production, radio pop, jump up, wobble bass, dubstep, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, narrator voice, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, solo violin, string section, harp, celesta, glass harmonica, vibraphone, tubular bells, timpani, war drums, low brass, trombone, tuba, muted piano, ticking pizzicato
+```
+
+### r60 clock atom
+
+Style:
+
+```
+Dark UK drum and bass, 174 BPM, minor key, grime over it. It opens on a muted piano and a ticking pizzicato with no drums at all, the first MC quiet and close over them for three lines. Then the sub and the break slam in together in one bar, on the line 'you keep on walking'. It breaks down and slams back three more times after that, each bigger, the biggest two thirds through; the quiet parts are quiet. Under the rap: cold skippy breaks, tight snares, a creeping Reese. A pizzicato ostinato ticks sixteenths against the break like a clock, a muted piano answers the snare, a cello doubles the sub: thriller-cold timekeeping inside the drums, not atmosphere. A sung chorus hook returns three times, the only sung thing. Narrow, clinical, tense, sudden when loud. A low, almost-spoken North London grime MC, menacing and held back, trading with a sharp, high, sarcastic MC who cuts every line short, both controlled and on the 174 grid, hitting hard, never pausing mid-line, never double-time.
+```
+
+Exclude styles:
+
+```
+rave, club anthem, festival, EDM, big room, euphoric, anthemic, four on the floor, house, commercial dance, glossy production, radio pop, jump up, wobble bass, dubstep, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, narrator voice, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, pipe organ, cathedral organ, harp, celesta, glass harmonica, vibraphone, tubular bells, timpani, war drums, low brass, trombone, tuba, soaring strings, lush strings
+```
+
+### r60 brass atom
+
+Style:
+
+```
+Dark UK drum and bass, 174 BPM, minor key, grime over it. It opens on a lone trombone and a struck timpani with no drums at all, the first MC quiet and close over them for three lines. Then the sub and the break slam in together in one bar, on the line 'you keep on walking'. It breaks down and slams back three more times after that, each bigger, the biggest two thirds through; the quiet parts are quiet. Under the rap: an amen assault, breaks tumbling and tearing, a filthy distorted sub. Low brass stabs land in the holes the break leaves, timpani doubling every kick: percussion inside the kit, never a bed and never a tune. A sung chorus hook returns three times, the only sung thing. Overdriven and tape-hot, loud and dirty, like a dubplate cut too hard. A hoarse, roaring Birmingham grime MC who shouts the end of every bar, trading with a cold, clipped, bored and superior MC, both controlled and on the 174 grid, hitting hard, never pausing mid-line, never double-time.
+```
+
+Exclude styles:
+
+```
+rave, club anthem, festival, EDM, big room, euphoric, anthemic, four on the floor, house, commercial dance, glossy production, radio pop, jump up, wobble bass, dubstep, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, narrator voice, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, pipe organ, cathedral organ, harp, celesta, glass harmonica, vibraphone, tubular bells, solo violin, string section, muted piano, ticking pizzicato
+```
+
+### r60 glass atom
+
+Style:
+
+```
+Dark UK drum and bass, 174 BPM, minor key, grime over it. It opens on a harp and a glass harmonica with no drums at all, the first MC quiet and close over them for three lines. Then the sub and the break slam in together in one bar, on the line 'you keep on walking'. It breaks down and slams back three more times after that, each bigger, the biggest two thirds through; the quiet parts are quiet. Under the rap: rolling liquid breaks, a deep round sub, warm and heavy, fills at every turn. Harp arpeggios ring in the gaps between rapped lines, a celesta doubles the hi-hats, a bowed vibraphone holds under the drops: glass and metal as percussion with the break. A sung chorus hook returns three times, the only sung thing. Wide, airy and shimmering, deep warm bottom. A Manchester grime MC who half-sings between the rapped lines, melodic and unhurried, trading with a crisp, brittle, sarcastic MC, both controlled and on the 174 grid, hitting hard, never pausing mid-line, never double-time.
+```
+
+Exclude styles:
+
+```
+rave, club anthem, festival, EDM, big room, euphoric, anthemic, four on the floor, house, commercial dance, glossy production, radio pop, jump up, wobble bass, dubstep, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, narrator voice, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, pipe organ, cathedral organ, timpani, war drums, low brass, trombone, tuba, muted piano, ticking pizzicato, solo violin, string section, distorted, industrial
+```
+
+### r60 lyrics (shared — only the `[Drop]` cue's instruments differ per lane)
+
+```lyrics
+[Verse 1 | a sad piano and a lone violin alone, no drums at all | gruff MC, quiet and close, three lines only]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the sub and the whole break slam in on this line, the violin and strings arriving with them]
+[gruff MC, controlled and weighty, hitting hard on the beat, never pausing mid-line]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[gruff MC, rising, never a scream]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[gruff MC, a weary bitter plea]
+please sir, can I fuckin, have some more?
+[Chorus | sung, the hook, the break and the score together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger than verse one | cold MC, clipped and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold MC, rising, biting and bitter]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the beat drops out for the first line, bare voice, then it all slams back louder than the first chorus | sung]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | straight in, no break, the beat at its biggest | the two MCs trade lines]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | the biggest drop of the record, everything at once | sung]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.51 Round r59 — the translatable prompt, critiqued, then varied five ways (2026-09-21)
+
+**Brief, Jack 2026-09-21:** *"with those generations, we lost the grime voice, the orchestral
+elements and the overall vibe of the song we are trying to improve. please research the internet and
+put into a prompt that is translatable from suno of the original song, and ask yourself using that
+prompt, to see what could be improved and use all of the previous advice. also all of the last
+generations sounded the same, i asked for different versions of the improved song that varied
+massively."*
+
+### 🔴 What r58 got wrong, plainly
+
+Told to "forget everything", r58 ran `1127446d`'s **own boxes verbatim**. Those boxes cast *an older
+English storyteller* and *a BBC newsreader*, ban `piano`, and **name no orchestral instrument at
+all** — the violins were drift, and drift did not repeat. So the grime voice and the orchestra were
+never asked for. 🔑 **The standing rule was in the repo the whole time** — *always the grime voice,
+never the r19-reese cast, even when building on that take* — and "forget everything" was applied to
+the rules instead of to the failed rounds. Both are back.
+
+### 🔑 The method Jack named: a prompt TRANSLATED FROM the song, not the box that made it
+
+The source's Style box is not a description of the song. The song is what **drift** made of that
+box. So the prompt is now built by the practitioner reverse-prompt method — **BPM · dominant
+texture · vocal character · mood/era · production quirk**
+([songsmith](https://songsmith.studio/blog/suno-reference-track-prompt-builder),
+[HookGenius](https://hookgenius.app/learn/suno-prompt-guide-2026/)) — filled in from the
+**measurement we already own** (§v6.39, `3eaed0b3`, per-2s band map):
+
+| Element | Measured value | How it reads in the box |
+|---|---|---|
+| BPM | 172 → 178 | `174 BPM` |
+| Opening | 0:00–0:22, harmonic 0.80–0.97 vs percussive 0.28–0.59 | *almost no drums for twenty seconds, the first MC quiet and close over them* |
+| The drop | 0:24–0:26, sub 0.36 → 0.81 **in two buckets** | *the sub and the break arrive together in one bar* |
+| 🔑 **The shape** | **three further breakdown/drop cycles** at 0:54–1:06, 1:44–1:50, 2:08–2:12; biggest 1:50–2:06 | *it breaks down and slams back three more times, each bigger, the biggest two thirds through* |
+| Dominant texture | rolling Reese + chopped break | per lane |
+| Mood / era | night-bus melancholy, grimy | per lane |
+| Production quirk | narrow (corr 0.90), bright (4.35 kHz), squashed (LRA 3.5) | per lane, plus *the quiet parts are quiet* |
+
+🔑 **The single most useful number in this table: the original has FOUR drops. Every rewrite we
+made had ONE.** That is the flatness Jack has been hearing, and it was measured in this repo on
+2026-09-18 without anyone reading it back into a prompt.
+
+### The self-critique — the description is not yet a good prompt
+
+Asked of the translated description: *what would still be wrong if we generated this?* Nine answers,
+all from rounds r53–r58:
+
+| # | Gap in the plain description | Fix applied |
+|---|---|---|
+| 1 | one drop, so it goes flat after 30 seconds | the **four measured cycles** written in |
+| 2 | the source's cast is a storyteller and a newsreader | the **grime cast**, deep South London + clipped cold |
+| 3 | `cheap synth strings` only produced violins by luck | the orchestra **named**, with a **job against the break** |
+| 4 | uniformity words (`never stops`, `throughout`) | none anywhere — they are flatness instructions |
+| 5 | "faster" overshot three rounds running | **controlled flow, never double-time**, banned in the excludes |
+| 6 | the M3 couplet drags | the **comma out**, `steady rap pace` gone |
+| 7 | the sung chorus was an accident | **written in** as real sections |
+| 8 | r56 came back too dance-like | the dancefloor family **banned** |
+| 9 | LRA 3.5 — squashed | *the quiet parts are quiet*, stated |
+
+### The five lanes — varied massively, on everything except what the song IS
+
+Shared, deliberately: the **shape** (the four-drop arc), the **words**, the **cast**. Different in
+every lane: the opening instruments, the drum texture, the orchestral family **and its job**, the
+production world, and the ban list. Longest shared run between any two Style boxes: **306 chars**,
+and every character of it is the shape, the chorus line and the cast.
+
+| Lane | Opens on | Drums | The score's job | Production |
+|---|---|---|---|---|
+| `violin` | sad piano + lone violin | chopped amen, rolling Reese, two-step | violin answers the MC between lines; low strings saw the sub's notes | raw, dry, close, narrow, bright |
+| `organ` | cathedral pipe organ + low strings | hard techstep, machine hats, metallic Reese | one enormous minor chord under the drop, offbeat stabs elsewhere | cavernous, long tails, huge low end |
+| `clock` | muted piano + ticking pizzicato | cold skippy breaks, tight snares, creeping Reese | pizzicato ticks sixteenths like a clock; piano answers the snare | narrow, clinical, tense, sudden |
+| `brass` | lone trombone + struck timpani | amen assault, tumbling breaks, filthy distorted sub | stabs in the break's holes; timpani doubles every kick | overdriven, tape-hot, dirty |
+| `glass` | harp + glass harmonica | rolling liquid breaks, deep round sub | harp rings in the gaps between lines; celesta doubles the hi-hats | wide, airy, shimmering |
+
+### Settings
+
+v6 · Style Influence **75** (the r47 value — obedient enough to hold the shape, loose enough to let
+the drift that made this song happen) · Variety **Off** · Max Mode off · Vocal Gender Male ·
+Personalize off · no Voice · **Duration 200 s** (the original's own 3:20) · workspace `camping-Jack`
+· weirdness **40 and 60**. 10 Creates, 20 takes.
+
+### Generated 2026-09-21 — 10 Creates, 20 takes. Credits 10,120 → 10,020
+
+| Lane | w40 | w60 |
+|---|---|---|
+| `violin` | [4ac87725](https://suno.com/song/4ac87725-44c6-47df-b84e-20752d80ffcd) · [a4b77c0b](https://suno.com/song/a4b77c0b-6b2e-425a-90f4-c29c4ec8eac2) | [66af11d2](https://suno.com/song/66af11d2-1ddf-4361-986f-481d3466b899) · [5dd85ffc](https://suno.com/song/5dd85ffc-968a-4692-93ad-4fe303585190) |
+| `organ` | [1aa754f6](https://suno.com/song/1aa754f6-166e-4209-9af7-9e49ec3f5232) · [206ccafc](https://suno.com/song/206ccafc-3e7d-4488-9bb0-bc10a9258d9a) | [9c7bb377](https://suno.com/song/9c7bb377-cfab-41af-81ee-d12e26169ee9) · [dfc99b33](https://suno.com/song/dfc99b33-e280-4371-9b46-bf9155693c9d) |
+| `clock` | [71d71495](https://suno.com/song/71d71495-5a8b-40e4-b676-61b56c50f27f) · [9816a242](https://suno.com/song/9816a242-e235-4176-a5ad-0812489055a7) | [6dd3b74e](https://suno.com/song/6dd3b74e-c647-4c89-9736-d0b52558ea3f) · [91d62cb9](https://suno.com/song/91d62cb9-648b-4448-884d-284d1721854b) |
+| `brass` | [f1d97ee1](https://suno.com/song/f1d97ee1-2d31-4226-bd6f-dfbd9979ae14) · [29494f5e](https://suno.com/song/29494f5e-9b9a-4059-913d-eeb318da4bc0) | [2223afbc](https://suno.com/song/2223afbc-6384-461a-8ae1-e95a0a7310e5) · [70b105d9](https://suno.com/song/70b105d9-a30a-4097-9ac2-894a212ab4cd) |
+| `glass` | [c12e504a](https://suno.com/song/c12e504a-9ebf-4981-9b82-58b7169c35bd) · [e101d5b6](https://suno.com/song/e101d5b6-6c79-46c5-a456-796ded8c2e66) | [8f2df6fe](https://suno.com/song/8f2df6fe-ac8f-40ca-9e90-851f53856d58) · [f817f6db](https://suno.com/song/f817f6db-f267-44d9-9e52-95c34271e918) |
+
+🔴 **These takes carry a bug found immediately afterwards and are compromised.** The Lyrics box inherited from r58 still said `[Verse 1 | the full beat rolling under him from the first line | … an older English storyteller …]` and `[Verse 2 | … a BBC newsreader voice …]`. So the Style box asked for two grime MCs over a drumless opening while the Lyrics box asked for a full beat in bar one and cast a storyteller and a newsreader. **Judge the orchestral colours off these if you like; do not judge the voice or the opening.** Fixed in r60 (§v6.52).
+
+### r59 violin atom
+
+Style:
+
+```
+Dark UK drum and bass, 174 BPM, minor key, grime over it. It opens on a sad piano and a lone violin with almost no drums for twenty seconds, the first MC quiet and close over them. Then the sub and the break arrive together in one bar and the record doubles in weight. It breaks down and slams back three more times, each bigger, the biggest two thirds through; the quiet parts are quiet. Under the rap: chopped amen breaks, a rolling Reese sub, skippy two-step, fills at the turns. A solo violin and a string section play with the break, not over it: the violin answers the MC between lines, the low strings saw the sub's notes. A sung chorus hook returns three times, the only sung thing. Raw, dry, close, narrow and bright, night-bus melancholy. Two English grime MCs: the first deep, gruff, South London, quiet and close at the start and hardening; the second clipped, cold, higher. Controlled flow on the 174 grid, hitting hard, never pausing mid-line, never double-time.
+```
+
+Exclude styles:
+
+```
+rave, club anthem, festival, EDM, big room, euphoric, anthemic, four on the floor, house, commercial dance, glossy production, radio pop, jump up, wobble bass, dubstep, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, pipe organ, cathedral organ, harp, celesta, glass harmonica, vibraphone, tubular bells, timpani, war drums, low brass, trombone, tuba, muted piano, ticking pizzicato
+```
+
+### r59 organ atom
+
+Style:
+
+```
+Dark UK drum and bass, 174 BPM, minor key, grime over it. It opens on a cathedral pipe organ and low strings with almost no drums for twenty seconds, the first MC quiet and close over them. Then the sub and the break arrive together in one bar and the record doubles in weight. It breaks down and slams back three more times, each bigger, the biggest two thirds through; the quiet parts are quiet. Under the rap: hard techstep breaks, machine hats, a cold metallic Reese. The organ holds one enormous minor chord under the drop and stabs on the offbeats elsewhere, low strings doubling the sub: the church and the break are one instrument. A sung chorus hook returns three times, the only sung thing. Cavernous, long reverb tails, huge low end, cold. Two English grime MCs: the first deep, gruff, South London, quiet and close at the start and hardening; the second clipped, cold, higher. Controlled flow on the 174 grid, hitting hard, never pausing mid-line, never double-time.
+```
+
+Exclude styles:
+
+```
+rave, club anthem, festival, EDM, big room, euphoric, anthemic, four on the floor, house, commercial dance, glossy production, radio pop, jump up, wobble bass, dubstep, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, solo violin, string section, harp, celesta, glass harmonica, vibraphone, tubular bells, timpani, war drums, low brass, trombone, tuba, muted piano, ticking pizzicato
+```
+
+### r59 clock atom
+
+Style:
+
+```
+Dark UK drum and bass, 174 BPM, minor key, grime over it. It opens on a muted piano and a ticking pizzicato with almost no drums for twenty seconds, the first MC quiet and close over them. Then the sub and the break arrive together in one bar and the record doubles in weight. It breaks down and slams back three more times, each bigger, the biggest two thirds through; the quiet parts are quiet. Under the rap: cold skippy breaks, tight snares, a creeping Reese. A pizzicato ostinato ticks sixteenths against the break like a clock, a muted piano answers the snare, a cello doubles the sub: thriller-cold timekeeping inside the drums, not atmosphere over them. A sung chorus hook returns three times, the only sung thing. Narrow, clinical, tense, sudden when loud. Two English grime MCs: the first deep, gruff, South London, quiet and close at the start and hardening; the second clipped, cold, higher. Controlled flow on the 174 grid, hitting hard, never pausing mid-line, never double-time.
+```
+
+Exclude styles:
+
+```
+rave, club anthem, festival, EDM, big room, euphoric, anthemic, four on the floor, house, commercial dance, glossy production, radio pop, jump up, wobble bass, dubstep, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, pipe organ, cathedral organ, harp, celesta, glass harmonica, vibraphone, tubular bells, timpani, war drums, low brass, trombone, tuba, soaring strings, lush strings
+```
+
+### r59 brass atom
+
+Style:
+
+```
+Dark UK drum and bass, 174 BPM, minor key, grime over it. It opens on a lone trombone and a struck timpani with almost no drums for twenty seconds, the first MC quiet and close over them. Then the sub and the break arrive together in one bar and the record doubles in weight. It breaks down and slams back three more times, each bigger, the biggest two thirds through; the quiet parts are quiet. Under the rap: an amen assault, breaks tumbling and tearing, a filthy distorted sub. Low brass stabs land in the holes the break leaves, timpani doubling every kick: percussion inside the kit, never a bed and never a tune. A sung chorus hook returns three times, the only sung thing. Overdriven and tape-hot, loud and dirty, like a dubplate cut too hard. Two English grime MCs: the first deep, gruff, South London, quiet and close at the start and hardening; the second clipped, cold, higher. Controlled flow on the 174 grid, hitting hard, never pausing mid-line, never double-time.
+```
+
+Exclude styles:
+
+```
+rave, club anthem, festival, EDM, big room, euphoric, anthemic, four on the floor, house, commercial dance, glossy production, radio pop, jump up, wobble bass, dubstep, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, pipe organ, cathedral organ, harp, celesta, glass harmonica, vibraphone, tubular bells, solo violin, string section, muted piano, ticking pizzicato
+```
+
+### r59 glass atom
+
+Style:
+
+```
+Dark UK drum and bass, 174 BPM, minor key, grime over it. It opens on a harp and a glass harmonica with almost no drums for twenty seconds, the first MC quiet and close over them. Then the sub and the break arrive together in one bar and the record doubles in weight. It breaks down and slams back three more times, each bigger, the biggest two thirds through; the quiet parts are quiet. Under the rap: rolling liquid breaks, a deep round sub, warm and heavy, fills at every turn. Harp arpeggios ring in the gaps between rapped lines, a celesta doubles the hi-hats, a bowed vibraphone holds under the drops: glass and metal as percussion with the break. A sung chorus hook returns three times, the only sung thing. Wide, airy and shimmering, deep warm bottom. Two English grime MCs: the first deep, gruff, South London, quiet and close at the start and hardening; the second clipped, cold, higher. Controlled flow on the 174 grid, hitting hard, never pausing mid-line, never double-time.
+```
+
+Exclude styles:
+
+```
+rave, club anthem, festival, EDM, big room, euphoric, anthemic, four on the floor, house, commercial dance, glossy production, radio pop, jump up, wobble bass, dubstep, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, laid-back, chill, mumbled, lazy flow, slow flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, Jamaican accent, ragga MC, BBC newsreader, posh storyteller, orchestral bed, sustained string pad, ambient wash, epic trailer music, one steady level, static arrangement, happy, uplifting, major key, comedic, parody, pipe organ, cathedral organ, timpani, war drums, low brass, trombone, tuba, muted piano, ticking pizzicato, solo violin, string section, distorted, industrial
+```
+
+*(All five share one Lyrics box — the source words, the M3 comma removed, the sung hook written in; it is the r58 `chorus` lyrics box, §v6.50.)*
+
+---
+
+## v6.50 Round r58 — back to the source: five variations on `1127446d` itself (2026-09-21)
+
+**Brief, Jack 2026-09-21:** *"Please forget everything and just focus on this one
+[1127446d](https://suno.com/song/1127446d-abe8-4079-9bbe-6b281e12aa74). Try and make variations of
+this, you have complete freedom to try and make the best possible song using that as inspiration."*
+
+### 🔑 The method inverts. Here is why
+
+Rounds r53–r57 all did the same thing: they **wrote in** the features Jack likes about `1127446d` —
+the drumless piano opening, the violins, the sung chorus — because the repo had proved those were
+**accidents**, drift at weirdness 60 against a box that banned `piano`, demanded a full beat from
+bar one, and contained no chorus. Five rounds of writing them in produced: timing weird → wrong
+pacing → way too fast → too dance-like → flat. **Every step away from the source's own boxes made it
+worse.**
+
+So r58 stops rewriting and goes back: **run the source's boxes, keep the drift space open, change
+exactly one thing per lane.**
+
+### 🆕 The source, recovered in full and stored for the first time
+
+Scraped live off `suno.com/song/1127446d-…` today **in a new tab** (never navigate the create tab —
+that wipes the form). The Style and Exclude match the sheet's recovered copy character for
+character; **the Lyrics box has never been in this repo before, only described.** It is below.
+
+What it actually contains, as data:
+
+| | |
+|---|---|
+| Style | **805 chars** |
+| Exclude | **438 chars**, including `piano`, `slow tempo`, `half time`, `tempo change` |
+| Lyrics | **64 lines, no chorus of any kind** |
+| Opening cue | `[Intro — 4 bars \| a solid, full drum and bass beat and heavy sub bass from the very first second, no vocal yet]` |
+
+🔑 **And the one thing Jack dislikes has a literal, findable cause.** The M3 line carries a **comma**
+— `the only thing I'm changing, is the lane in my M3` — and the voice cue says **`steady rap pace`**,
+six times across the box. Punctuation is the brake (`lyric-craft.md`) and the cue is the drag. Both
+are removable without touching anything else, which is what `m3fix` does.
+
+### The five lanes — one change each, in a ladder
+
+| Lane | Change from the source | The question it answers |
+|---|---|---|
+| `source` | **nothing. Verbatim**, Auto duration (as the original was made) | can we even get back to it? Every other lane is judged against this |
+| `m3fix` | the comma out of the M3 line; `steady rap pace` → `the same pace the whole way, never pausing mid-line` | does the *only* thing he dislikes go away without costing anything? |
+| `unban` | + `piano`, `slow tempo`, `half time`, `tempo change` removed from the excludes, and the `[Intro]` cue **deleted** | does the opening he loves happen more reliably when the box stops fighting it? (Deleting a mention beats describing an absence — `suno-tag-mechanics.md`) |
+| `chorus` | + the hook Suno invented written in as real `[Chorus]` sections | does naming the accident keep it, at the source's own settings? |
+| `wide` | the source verbatim at **weirdness 75 / 85** | drift made everything he likes. Does more drift make more of it, or break it? |
+
+### Settings
+
+v6 · Style Influence **70** (the source's value per §v6.45; ⬜ inferred, the song record does not
+expose it) · Variety **Off** · Max Mode off · Vocal Gender Male · Personalize off · no Voice ·
+workspace `camping-Jack`. `source` and `wide` run on **Auto duration** like the original; the three
+middle lanes are pinned to **200 s**, the source's own length. Weirdness **40 and 60** except `wide`
+at **75 and 85**. 10 Creates, 20 takes.
+
+### Generated 2026-09-21 — 10 Creates, 20 takes. Credits 10,220 → 10,120
+
+| Lane | Change | Lower weirdness | Higher weirdness |
+|---|---|---|---|
+| `source` | verbatim — the control | **w40** [56f27198](https://suno.com/song/56f27198-882e-4f5e-8e23-2c019fa48d66) · [a4e99581](https://suno.com/song/a4e99581-86eb-4f12-9548-a8c169b08086) | **w60** [4639d365](https://suno.com/song/4639d365-5719-4cfd-9c17-e3dc6ea03945) · [b503b8f2](https://suno.com/song/b503b8f2-cc71-40df-b784-c4dbf7bf2c6c) |
+| `m3fix` | the M3 comma + `steady rap pace` out | **w40** [02fd64ad](https://suno.com/song/02fd64ad-34ae-4233-864c-b83ba9fb3333) · [ebcc2670](https://suno.com/song/ebcc2670-e1f8-4faa-9a73-a1cc8641e28b) | **w60** [e77e4dfe](https://suno.com/song/e77e4dfe-a8df-4ddb-87a0-b44e51070150) (3:20) · [c2105116](https://suno.com/song/c2105116-1944-4e51-80be-427d294e9a7e) (3:20) |
+| `unban` | + four bans lifted, `[Intro]` cue deleted | **w40** [11f0b94c](https://suno.com/song/11f0b94c-f633-48a2-ab2e-493138d1ceac) (3:20) · [4a87e30b](https://suno.com/song/4a87e30b-e1ae-40d5-90b4-07ee71e9391c) (3:19) | **w60** [6261218d](https://suno.com/song/6261218d-c31d-4298-a156-0d206a007d1f) (3:19) · [637b719c](https://suno.com/song/637b719c-e4f3-4d4e-8185-cafc0be664c0) (3:20) |
+| `chorus` | + the invented hook written in | **w40** [8385d042](https://suno.com/song/8385d042-6e26-476f-9134-1c8de9343495) (3:19) · [cd4a61e8](https://suno.com/song/cd4a61e8-65c2-4d61-a3f6-37a6d3839b85) (3:20) | **w60** [c0001816](https://suno.com/song/c0001816-923a-4feb-8fc4-2909b39cab7f) · [21284ad9](https://suno.com/song/21284ad9-66e1-4fa3-99ff-20571a6bc66d) (3:19) |
+| `wide` | the source at high drift | **w75** [da6386d2](https://suno.com/song/da6386d2-6e49-4fab-9fac-3d0213bc42d5) (3:20) · [f62c5036](https://suno.com/song/f62c5036-77a8-4d54-b103-895dc9cc8c20) (3:20) | **w85** [84651b46](https://suno.com/song/84651b46-1903-4d62-b2d7-f3f7de6dc4a8) (3:19) · [b0f784cd](https://suno.com/song/b0f784cd-8205-419b-a311-978a055665b0) (3:20) |
+
+**Lengths:** the three pinned lanes came back **3:19–3:20** against a 200 s target, as expected. 🔑 **`wide` and `source` ran on Auto and also came back ~3:20** — which is within 2 seconds of the original `1127446d`'s own **3:22**, and is exactly what Auto should produce for these words in this box. ⬜ **But it cannot be proven from here:** `setDurationAuto` reported *`AUTO (already)`* on the `wide` lane immediately after a lane that set 200 s, and `status`'s duration read is documented as untrustworthy (the Simple panel's input is unlinked). So either Auto worked and agrees with the original, or the slider silently held 200. **Worth one cheap check before this is written down**: load a spec with no `durationSec` straight after a pinned one and read the Advanced slider directly.
+
+⬜ **Not heard.** The question, in order: **does `source` land near the take he loves?** That calibrates everything. Then `m3fix` — the one dislike gone at no cost? Then whether lifting the bans (`unban`) makes the piano opening arrive more reliably rather than by luck, whether naming the hook (`chorus`) keeps it, and whether more drift (`wide`) gives more of what drift gave us or breaks it.
+
+### r58 source atom — `1127446d`, verbatim
+
+Style:
+
+```
+A solid, punchy 174 BPM drum and bass beat hits hard from the very first bar, full breakbeats and a heavy rolling sub bass, never jump up, then the track builds from there, UK garage storytelling and grime over drum and bass, Verse one: an older English storyteller with a gravelly, raspy voice, rapping his lines at a steady rap pace over the beat, not double time and not half time, the rasp never slowing him down, a flat everyday English accent, tired, talky, like telling a mate a story at 4am, Verse two: a BBC newsreader voice, a posh older Englishman, clipped and cold, Then the two men trade lines, Skippy two-step garage shuffles folded into the drum and bass, a dark reese bass that grows meaner every section, chopped amen fills at every section turn, cheap synth strings, night-bus melancholy
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, blues, Delta blues, gospel, soul singer, US rap, trap, teenage voice, boyish voice, falsetto, autotune, female vocal, choir, crowd noise, audience, applause, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, major key, slow tempo, half time, tempo change, post-punk, madchester, baggy, britpop, folk, pub rock, piano
+```
+
+Lyrics:
+
+```lyrics
+[Intro — 4 bars | a solid, full drum and bass beat and heavy sub bass from the very first second, no vocal yet]
+[Verse 1 | the full beat rolling under him from the first line | the first man, gravelly raspy voice, steady rap pace, an older English storyteller, not half time]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[the first man, gravelly raspy voice, steady rap pace, rising, never a scream]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[the first man, gravelly raspy voice, steady rap pace, a weary bitter plea]
+please sir, can I fuckin, have some more?
+[Verse 2 | straight in, no break | the beat builds, bigger than verse one | the second man, a BBC newsreader voice, clipped and cold]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[the second man rising, biting and bitter]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing, is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Bridge | straight in, no break | the two men trade lines, the beat at its biggest]
+[the first man, gravelly raspy voice, steady rap pace]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the second man]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the second man]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[the first man, gravelly raspy voice, steady rap pace]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the second man]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the first man, gravelly raspy voice, steady rap pace]
+yet I don't begrudge you,
+we were on the same side all along
+[the second man]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
+```
+
+### r58 m3fix atom
+
+Style:
+
+```
+A solid, punchy 174 BPM drum and bass beat hits hard from the very first bar, full breakbeats and a heavy rolling sub bass, never jump up, then the track builds from there, UK garage storytelling and grime over drum and bass, Verse one: an older English storyteller with a gravelly, raspy voice, rapping his lines at the same pace the whole way over the beat, never pausing mid-line, not double time and not half time, the rasp never slowing him down, a flat everyday English accent, tired, talky, like telling a mate a story at 4am, Verse two: a BBC newsreader voice, a posh older Englishman, clipped and cold, Then the two men trade lines, Skippy two-step garage shuffles folded into the drum and bass, a dark reese bass that grows meaner every section, chopped amen fills at every section turn, cheap synth strings, night-bus melancholy
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, blues, Delta blues, gospel, soul singer, US rap, trap, teenage voice, boyish voice, falsetto, autotune, female vocal, choir, crowd noise, audience, applause, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, major key, slow tempo, half time, tempo change, post-punk, madchester, baggy, britpop, folk, pub rock, piano
+```
+
+Lyrics:
+
+```lyrics
+[Intro — 4 bars | a solid, full drum and bass beat and heavy sub bass from the very first second, no vocal yet]
+[Verse 1 | the full beat rolling under him from the first line | the first man, gravelly raspy voice, the same pace all the way, never pausing mid-line, an older English storyteller, not half time]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[the first man, gravelly raspy voice, the same pace all the way, never pausing mid-line, rising, never a scream]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[the first man, gravelly raspy voice, the same pace all the way, never pausing mid-line, a weary bitter plea]
+please sir, can I fuckin, have some more?
+[Verse 2 | straight in, no break | the beat builds, bigger than verse one | the second man, a BBC newsreader voice, clipped and cold]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[the second man rising, biting and bitter]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Bridge | straight in, no break | the two men trade lines, the beat at its biggest]
+[the first man, gravelly raspy voice, the same pace all the way, never pausing mid-line]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the second man]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the second man]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[the first man, gravelly raspy voice, the same pace all the way, never pausing mid-line]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the second man]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the first man, gravelly raspy voice, the same pace all the way, never pausing mid-line]
+yet I don't begrudge you,
+we were on the same side all along
+[the second man]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
+```
+
+### r58 unban atom
+
+Style:
+
+```
+A solid, punchy 174 BPM drum and bass beat hits hard from the very first bar, full breakbeats and a heavy rolling sub bass, never jump up, then the track builds from there, UK garage storytelling and grime over drum and bass, Verse one: an older English storyteller with a gravelly, raspy voice, rapping his lines at the same pace the whole way over the beat, never pausing mid-line, not double time and not half time, the rasp never slowing him down, a flat everyday English accent, tired, talky, like telling a mate a story at 4am, Verse two: a BBC newsreader voice, a posh older Englishman, clipped and cold, Then the two men trade lines, Skippy two-step garage shuffles folded into the drum and bass, a dark reese bass that grows meaner every section, chopped amen fills at every section turn, cheap synth strings, night-bus melancholy
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, blues, Delta blues, gospel, soul singer, US rap, trap, teenage voice, boyish voice, falsetto, autotune, female vocal, choir, crowd noise, audience, applause, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, major key, post-punk, madchester, baggy, britpop, folk, pub rock
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | the full beat rolling under him from the first line | the first man, gravelly raspy voice, the same pace all the way, never pausing mid-line, an older English storyteller, not half time]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[the first man, gravelly raspy voice, the same pace all the way, never pausing mid-line, rising, never a scream]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[the first man, gravelly raspy voice, the same pace all the way, never pausing mid-line, a weary bitter plea]
+please sir, can I fuckin, have some more?
+[Verse 2 | straight in, no break | the beat builds, bigger than verse one | the second man, a BBC newsreader voice, clipped and cold]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[the second man rising, biting and bitter]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Bridge | straight in, no break | the two men trade lines, the beat at its biggest]
+[the first man, gravelly raspy voice, the same pace all the way, never pausing mid-line]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the second man]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the second man]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[the first man, gravelly raspy voice, the same pace all the way, never pausing mid-line]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the second man]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the first man, gravelly raspy voice, the same pace all the way, never pausing mid-line]
+yet I don't begrudge you,
+we were on the same side all along
+[the second man]
+well we don't have long
+and by the time it hits, we'll be gone
+[end]
+```
+
+### r58 chorus atom
+
+Style:
+
+```
+A solid, punchy 174 BPM drum and bass beat hits hard from the very first bar, full breakbeats and a heavy rolling sub bass, never jump up, then the track builds from there, UK garage storytelling and grime over drum and bass, Verse one: an older English storyteller with a gravelly, raspy voice, rapping his lines at the same pace the whole way over the beat, never pausing mid-line, not double time and not half time, the rasp never slowing him down, a flat everyday English accent, tired, talky, like telling a mate a story at 4am, Verse two: a BBC newsreader voice, a posh older Englishman, clipped and cold, Then the two men trade lines, Skippy two-step garage shuffles folded into the drum and bass, a dark reese bass that grows meaner every section, chopped amen fills at every section turn, cheap synth strings, night-bus melancholy
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, blues, Delta blues, gospel, soul singer, US rap, trap, teenage voice, boyish voice, falsetto, autotune, female vocal, choir, crowd noise, audience, applause, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, major key, post-punk, madchester, baggy, britpop, folk, pub rock
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | the full beat rolling under him from the first line | the first man, gravelly raspy voice, the same pace all the way, never pausing mid-line, an older English storyteller, not half time]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[the first man, gravelly raspy voice, the same pace all the way, never pausing mid-line, rising, never a scream]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[the first man, gravelly raspy voice, the same pace all the way, never pausing mid-line, a weary bitter plea]
+please sir, can I fuckin, have some more?
+[Chorus | sung, the hook, the beat and the strings together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break | the beat builds, bigger than verse one | the second man, a BBC newsreader voice, clipped and cold]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[the second man rising, biting and bitter]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, the hook, the beat and the strings together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | straight in, no break | the two men trade lines, the beat at its biggest]
+[the first man, gravelly raspy voice, the same pace all the way, never pausing mid-line]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the second man]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the second man]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[the first man, gravelly raspy voice, the same pace all the way, never pausing mid-line]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the second man]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the first man, gravelly raspy voice, the same pace all the way, never pausing mid-line]
+yet I don't begrudge you,
+we were on the same side all along
+[the second man]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | sung, the biggest moment, the strings over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+*(`wide` is the `source` atom above, run at weirdness 75/85.)*
+
+---
+
+## v6.49 Round r57 — de-danced, and three attacks on FLATNESS (2026-09-21)
+
+**Brief, Jack 2026-09-21:** *"those generations were too dance-like, please look through the prompt
+for [1127446d](https://suno.com/song/1127446d-abe8-4079-9bbe-6b281e12aa74) and try to add elements
+of the thriller song from before. please try and not make it flat, they all sound flat and
+boring."*
+
+### 🔴 We wrote the flatness ourselves. Here are the three clauses
+
+| Clause, in every box since r53 | Why it was added | What it actually instructs |
+|---|---|---|
+| `the breaks never stop, not one bar` | r49 came back with 12–14 s holes | **nothing changes for three minutes** |
+| `the drums and the sub are the loudest thing in the mix throughout` | "not enough drum and bass" | **the balance never moves** |
+| `rapid-fire from here to the end` | the rap dragged | **one vocal weight for the whole song** |
+
+Each one fixed its bug and each one flattened the record. The same trap is already in this song's
+history — the v5.5 sheet's **"not flat"** row caught `one steady groove start to finish, never
+building, never dropping` doing exactly this, and the fix then was **gears**. 🔑 **All three clauses
+are now gone**, the guard is scoped instead (*the break does not drop out under the verses*), and
+the rule is promoted to `docs/suno-gpt/files/suno-tag-mechanics.md` so the next song does not pay
+for it again.
+
+**Two supporting causes, both fixed in every lane:** the two mid-song choruses carried **identical
+headers**, so they got identical performances; and the last chorus was a third `[Chorus]` rather
+than a `[Final Chorus]`, which is a fresh arrangement decision for free.
+
+### The de-dance
+
+r56 translated "like Chase and Status" into `big polished UK dancefloor drum and bass… rave stabs…
+club-ready`, and **the sheen is the dance-like part**. Kept: the weight — razor-sharp chopped
+breaks, the gnarly Reese. Gone: every dancefloor word, and `rave, rave stabs, club anthem, festival,
+EDM, big room, euphoric, anthemic, four on the floor, house, commercial dance, glossy club master`
+are now **banned**. The drums go back to `1127446d`'s own description, in its own words: *a solid,
+punchy 174 BPM drum and bass beat, full breakbeats and a heavy rolling sub, never jump up, skippy
+two-step shuffles folded in, a dark Reese growing meaner every section, chopped amen fills at every
+section turn, cheap synth strings, night-bus melancholy.*
+
+### The three lanes — one variable, the anti-flatness device
+
+Same spine, same words, same settings. **This is a controlled test, not a variety sweep**, so the
+lanes deliberately share their sound: the only thing that differs is *how* the record is made to
+move.
+
+| Lane | Device | What it does to the arrangement |
+|---|---|---|
+| `gears` | **escalation** | piano + violin alone → break and sub with **no strings at all** → pizzicato and strings arrive together at chorus 1 → verse 2 stripped back to the ticking and the sub → bridge heaviest → final chorus the piano over the break. Each gear is numbered **in the section header too**, which is free reinforcement |
+| `cutouts` | **subtraction** | everything cuts out for a line before each chorus leaving the voice bare, then the whole weight slams back on the downbeat; a bar of near-silence before the first drop; drums gone under the bridge's opening. 📎 This is the device that made the old v5.5 candidate work — *"the music cuts out for the whispered line"* (§v6.1) |
+| `conduct` | **performance + depth** | every section performed at a different weight (half-spoken → clipped and hardening → hard bitter edge → full out), and every layer at a different distance: sub at the bottom, break punching in the middle, piano the motif, strings wide and far behind, pizzicato **only in the gaps between vocal lines** |
+
+### Settings
+
+v6 · Style Influence **80** · Variety **Off** · Max Mode off · Vocal Gender **Male** · Personalize
+off · no Voice · **Duration 190 s** (the slower half of r56's bracket, since pace was not the
+complaint this time) · workspace `camping-Jack` · weirdness **30 and 60**. 6 Creates, 12 takes.
+
+### Generated 2026-09-21 — 6 Creates, 12 takes. Credits 10,280 → 10,220
+
+| Lane | Device | w30 | w60 |
+|---|---|---|---|
+| `gears` | escalation — the arrangement climbs in numbered gears | [09f8afe1](https://suno.com/song/09f8afe1-721b-4e4e-aa1c-612d746e7e40) · [492380b4](https://suno.com/song/492380b4-0f32-48f9-b545-b6fd317d67a6) | [85d55f42](https://suno.com/song/85d55f42-626c-4be7-b00f-62a35b6b2d6f) · [bf744390](https://suno.com/song/bf744390-acbf-4c31-b579-61cb9b726d04) |
+| `cutouts` | subtraction — the music drops out before each chorus | [05092198](https://suno.com/song/05092198-b65d-4593-bf81-ec60d8b41f58) · [d0731d3d](https://suno.com/song/d0731d3d-218f-40ec-a5b7-8b4386ae42f9) | [526ae4a8](https://suno.com/song/526ae4a8-ffde-4a53-b3dc-a38b64d9688d) · [19419769](https://suno.com/song/19419769-6f93-47e4-a705-6f5e6c1aa957) |
+| `conduct` | performance + depth — every section a different weight | [39f4bfaf](https://suno.com/song/39f4bfaf-9217-48c3-8ceb-9a5f0596d167) · [3954089b](https://suno.com/song/3954089b-a870-4990-847e-e3953a71d42e) | [94b19159](https://suno.com/song/94b19159-8d4d-44f8-b5d1-7fb349e0b0d2) · [f4d05fcf](https://suno.com/song/f4d05fcf-877b-4585-9060-5ba5a713cbcc) |
+
+All takes at **3:09–3:11** against a 190 s (3:10) target — a third round confirming the duration control is tight when the target leaves the words room.
+
+⬜ **Not heard.** The listening question is which device actually lifts the record, and it is answerable by ear alone because the three lanes share everything else: **does the arrangement climb (`gears`), does the silence hit (`cutouts`), or does the performance carry it (`conduct`)?** 🔑 Whichever wins goes into the spine permanently — and if none of them lifts it, the flatness is not arrangement and the next suspect is the **mix** (one level, everything the same distance), which is a different fix: `conduct`'s depth clause on its own, harder.
+
+### r57 gears atom
+
+Style:
+
+```
+A solid, punchy 174 BPM drum and bass beat, full breakbeats and a heavy rolling sub, never jump up: skippy two-step shuffles folded in, a dark Reese growing meaner every section, chopped amen fills at every section turn, cheap synth strings, night-bus melancholy. A thriller score inside the drums: a pizzicato ostinato ticking against the break like a clock, a muted piano answering the snare, a cello doubling the sub. It moves in gears: piano and violin alone, then break and sub with no strings at all, then pizzicato and strings arriving together at the first chorus, verse two stripped back to the ticking and the sub, the bridge heaviest, the last chorus the piano over the break. Every section is louder or thinner than the one before. Two English grime MCs trade verses, the first deep and gruff and South London, confident and unhurried, the second clipped and cold: controlled grime flow, one syllable to the beat with short staccato bursts, hitting hard, never rushed, never double-time.
+```
+
+Exclude styles:
+
+```
+rave, rave stabs, club anthem, festival, EDM, big room, euphoric, anthemic, four on the floor, house, commercial dance, radio dance, glossy club master, jump up, wobble bass, neurofunk, dubstep, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, sixteenth-note flow, laid-back, chill, mumbled, lazy flow, slow flow, half-time flow, spoken word, rapping behind the beat, off-grid vocal, half time, tempo change, drifting tempo, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, choir, Jamaican accent, ragga MC, orchestral bed, sustained string pad, ambient wash, epic trailer music, brass braams, one steady level, static arrangement, same all the way through, happy, uplifting, major key, comedic, novelty, parody
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, deep and close, quiet and emotional, unhurried]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+[Verse 1 continues — no pause, the same MC carrying straight on | a ticking pizzicato creeping in under the piano, the breaks rolling closer]
+now, let me explain, how I'm just poor
+[Drop | GEAR 2: the break and the heavy sub only, no strings anywhere yet]
+[gruff MC, controlled and weighty, one syllable to the beat, hitting hard, never rushing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | GEAR 3: the pizzicato and the strings arrive for the first time, with the break | sung, big and melodic]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | GEAR 2 again: stripped back to the ticking pizzicato and the sub, strings gone | cold MC, clipped and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | GEAR 3 again but heavier: the strings are back and the break rolls harder than the first chorus | sung, big and melodic]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | GEAR 4, the heaviest the record gets: everything at once, cello under every line | the two MCs trade lines]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | GEAR 5: the sad piano and the solo violin return over the break, the biggest moment | sung]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r57 cutouts atom
+
+Style:
+
+```
+A solid, punchy 174 BPM drum and bass beat, full breakbeats and a heavy rolling sub, never jump up: skippy two-step shuffles folded in, a dark Reese growing meaner every section, chopped amen fills at every section turn, cheap synth strings, night-bus melancholy. A thriller score inside the drums: a pizzicato ostinato ticking against the break like a clock, a muted piano answering the snare, a cello doubling the sub. Its dynamics come from taking things away: everything cuts out for a line before each chorus, leaving the voice bare, then the whole weight slams back on the downbeat. A bar of near-silence before the first drop, drums gone under the opening of the bridge. Nothing runs at one level for long. Two English grime MCs trade verses, the first deep and gruff and South London, confident and unhurried, the second clipped and cold: controlled grime flow, one syllable to the beat with short staccato bursts, hitting hard, never rushed, never double-time.
+```
+
+Exclude styles:
+
+```
+rave, rave stabs, club anthem, festival, EDM, big room, euphoric, anthemic, four on the floor, house, commercial dance, radio dance, glossy club master, jump up, wobble bass, neurofunk, dubstep, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, sixteenth-note flow, laid-back, chill, mumbled, lazy flow, slow flow, half-time flow, spoken word, rapping behind the beat, off-grid vocal, half time, tempo change, drifting tempo, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, choir, Jamaican accent, ragga MC, orchestral bed, sustained string pad, ambient wash, epic trailer music, brass braams, one steady level, static arrangement, same all the way through, happy, uplifting, major key, comedic, novelty, parody
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, deep and close, quiet and emotional, unhurried]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+[Verse 1 continues — no pause, the same MC carrying straight on | a ticking pizzicato creeping in under the piano, the breaks rolling closer]
+now, let me explain, how I'm just poor
+[Drop | one bar of near-silence, then the full breakbeat and the heavy rolling sub slam in together]
+[gruff MC, controlled and weighty, one syllable to the beat, hitting hard, never rushing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | the music cuts out under the first line, bare voice, then the whole weight slams back | sung, big and melodic]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in on the downbeat, no gap | cold MC, clipped and cutting, same controlled pace]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the drums cut dead for the first two words, then the whole weight slams back louder than the first chorus | sung, big and melodic]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the drums drop out for the first two lines, bare voices and cello, then the break returns mid-line | the two MCs trade lines]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | the music cuts out for one line, then the sad piano and the solo violin return over the break | sung, the biggest moment]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r57 conduct atom
+
+Style:
+
+```
+A solid, punchy 174 BPM drum and bass beat, full breakbeats and a heavy rolling sub, never jump up: skippy two-step shuffles folded in, a dark Reese growing meaner every section, chopped amen fills at every section turn, cheap synth strings, night-bus melancholy. A thriller score inside the drums: a pizzicato ostinato ticking against the break like a clock, a muted piano answering the snare, a cello doubling the sub. Every section is performed at a different weight and every layer sits at a different distance: sub at the bottom, break punching in the middle, piano the motif, strings wide and far behind, pizzicato only in the gaps between vocal lines. The voices go from close and half-spoken to a hard bitter edge. Two English grime MCs trade verses, the first deep and gruff and South London, confident and unhurried, the second clipped and cold: controlled grime flow, one syllable to the beat with short staccato bursts, hitting hard, never rushed, never double-time.
+```
+
+Exclude styles:
+
+```
+rave, rave stabs, club anthem, festival, EDM, big room, euphoric, anthemic, four on the floor, house, commercial dance, radio dance, glossy club master, jump up, wobble bass, neurofunk, dubstep, double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, sixteenth-note flow, laid-back, chill, mumbled, lazy flow, slow flow, half-time flow, spoken word, rapping behind the beat, off-grid vocal, half time, tempo change, drifting tempo, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, choir, Jamaican accent, ragga MC, orchestral bed, sustained string pad, ambient wash, epic trailer music, brass braams, one steady level, static arrangement, same all the way through, happy, uplifting, major key, comedic, novelty, parody
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, half-spoken, almost under his breath, right up on the mic]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+[Verse 1 continues — no pause, the same MC carrying straight on | a ticking pizzicato creeping in under the piano, the breaks rolling closer]
+now, let me explain, how I'm just poor
+[Drop | the full breakbeat and the heavy rolling sub land at once, the pizzicato in the gaps between lines only]
+[gruff MC, controlled and weighty, one syllable to the beat, hitting hard, never rushing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung wide and far back, the strings behind it, the break punching in front | big and melodic]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break | cold MC, quiet and clipped at first, hardening line by line]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung harder and closer than the first time, more strained, the strings pushed wider behind it | big and melodic]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, rising to a hard bitter edge, cello under every line]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | the biggest moment, sung full out, the sad piano and the solo violin over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.48 Round r56 — `1127446d` × thriller, and the pacing walked BACK (2026-09-21)
+
+**Brief, Jack 2026-09-21:** *"so combine this
+[song](https://suno.com/song/1127446d-abe8-4079-9bbe-6b281e12aa74) with the thriller versions,
+anytime ive asked for it to be faster it has gone rapidly which is way to fast. add more classical
+music elemets, make the drum and bass like chase and status, the grime rapper should be like
+stormzy."*
+
+### 🔴 The correction that matters most: we overshot, three rounds running
+
+| Round | What the box asked for | Verdict |
+|---|---|---|
+| r53 | `rapid-fire on the 174 grid and never slowing` | timing weird |
+| r54 | same, plus `every line landing square on the beat` | "not the right pacing vocally" |
+| r55 | `double-time, two syllables a beat, eighth notes with sixteenth bursts`, Duration 155 s | **"way too fast"** |
+
+🔑 **"Faster" never meant "more syllables per second" — it meant *don't drag and don't pause*.** The
+one thing Jack disliked about `1127446d` was a single couplet *slowing and pausing*, not the track's
+overall tempo. So r56 **removes every speed word from the Style box and bans them in the excludes**
+(`double-time, rapid-fire, chopper rap, motormouth, breathless, frantic, sixteenth-note flow`), and
+describes the delivery as *controlled* instead: **one syllable to the beat with short staccato
+bursts, hitting hard, never rushed.** The slow-delivery bans stay — slowness is still banned as
+*delivery*, never as tempo.
+
+**Duration is bracketed rather than guessed:** 195 s read as too slow, 155 s as way too fast, so this
+round runs the same atom at **175 s and 190 s** and lets the ear pick. Duration is still the only
+pacing lever we can prove is obeyed.
+
+### What "combine" means here, clause by clause
+
+| From `1127446d` (r19 `reese`, read off its own page) | From r55 `thriller` |
+|---|---|
+| the drumless opening: a lone sad piano and a solo violin, the first MC quiet and close | the pizzicato **ticking against the break like a clock** |
+| a solid punchy 174 with full breakbeats and a heavy rolling sub | the **muted piano answering the snare** |
+| skippy two-step shuffles folded into the d&b | the **cold low string**, now a **cello doubling the sub** |
+| a Reese that grows meaner every section, amen fills at every turn | |
+| `cheap synth strings`, night-bus melancholy | |
+| the sung chorus hook ×3 (Suno's own invention, kept) | |
+
+**"More classical elements"** is answered with *more players, each with a job*: the cello doubles the
+sub, string figures land on the section turns, the solo violin sings over the drops, the pizzicato
+keeps time. 🔴 This is the third round running at the *garnish, not a bed* finding — Jack's call,
+made knowingly. The only thing still banned is the **bed** (`orchestral bed, sustained string pad,
+ambient wash`), never the instruments.
+
+### 🔑 Two artist names, and why neither is in the box
+
+Our own rule (`docs/suno-gpt/system-prompt.txt`): **never the artist, song, album or band name in a
+prompt.** Both references are translated into description instead:
+
+| Jack said | What went in the box | Source for the translation |
+|---|---|---|
+| "drum and bass like **Chase and Status**" | *big polished UK dancefloor drum and bass, razor-sharp chopped breaks, skippy two-step, a gnarly Reese, rave stabs, club-ready* | [MusicTech](https://musictech.com/guides/essential-guide/chase-and-status-bass-garage-production-tutorial/), [MusicRadar](https://www.musicradar.com/tuition/tech/chase-and-status-how-to-build-dnb-beats-601206) — razor-sharp breaks, gnarly bass, jungle/garage roots, top-tier engineering. 🔑 Note `club-ready` and the polish: this is the first Camping lane that is **not** lo-fi, and `lo-fi, tape hiss, muddy mix` are banned for it |
+| "the grime rapper should be like **Stormzy**" | *deep, gruff, South London, confident and unhurried… controlled grime flow, one syllable to the beat with short staccato bursts* | [EntertainmentVoice](https://entertainmentvoice.com/2019/12/01/stormzy-delivers-a-relentless-uk-grime-flurry-on-heavy-is-the-head/), [Red Bull](https://www.redbull.com/gb-en/stormzy-10-best-tracks) — confident and direct, **conversational verses moving into staccato bursts**, control rather than speed. 🔑 That description *is* the pacing fix: the reference Jack picked is not a fast rapper, he is a heavy one |
+
+⚠️ **One judgement call, stated:** the song has two characters, so the deep South London register is
+given to the **gruff MC** and the second voice stays clipped and cold for contrast. If Jack wants
+both in that register, it is one clause.
+
+### Settings
+
+v6 · Style Influence **80** · Variety **Off** · Max Mode off · Vocal Gender **Male** · Personalize
+off · no Voice · **Duration 175 s and 190 s** · workspace `camping-Jack` · weirdness **30 and 60**.
+4 Creates, 8 takes.
+
+### Generated 2026-09-21 — 4 Creates, 8 takes. Credits 10,320 → 10,280
+
+| Duration | Weirdness | Takes |
+|---|---|---|
+| **175 s** — the faster half of the bracket | w30 | [cbc427b3](https://suno.com/song/cbc427b3-33d7-4f7c-bbc8-68694144b696) (2:56) · [2d6d7f70](https://suno.com/song/2d6d7f70-aeb1-4991-b5f2-5b7f81bf2fd9) (2:56) |
+|  | w60 | [cf940825](https://suno.com/song/cf940825-d47d-464d-b2f9-2ee5bea672a9) (2:54) · [6beadbc8](https://suno.com/song/6beadbc8-b9ac-48dd-a30e-ca578f18e6a6) (2:54) |
+| **190 s** — the slower half | w30 | [117dda65](https://suno.com/song/117dda65-a46d-46c2-b439-f2dd3c759f74) (3:09) · [3dd0f421](https://suno.com/song/3dd0f421-3bae-47b1-b77a-5cf91cb2c8c3) (3:10) |
+|  | w60 | [26cc639e](https://suno.com/song/26cc639e-d02e-4398-92ea-cc6c3ba77995) (3:10) · [1b4571e4](https://suno.com/song/1b4571e4-8412-4faf-a346-6983fe2bafb3) (3:10) |
+
+✅ **Both targets were obeyed exactly** — 175 s came back 2:54–2:56 and 190 s came back 3:09–3:10, all eight takes within ~1 s. 🔑 **That supports r55's unverified reading**: the duration control is tight at targets that leave the words room (175 s, 190 s, 195 s) and loosened only at **155 s**, where the same ~60 lines were squeezed hardest and two cells ran 8–23 s long. Two data points is not a rule, but it now points one way.
+
+⬜ **Not heard.** The listening question is a straight A/B: **at which duration does the flow sit right?** Everything else in the two cells is byte-identical, so a preference here is a clean reading on pace alone — the first round in this song's history where that is true.
+
+### r56 thrillerreese atom
+
+Style:
+
+```
+Big polished UK dancefloor drum and bass, 174 BPM, minor key: razor-sharp chopped breaks, skippy two-step, a gnarly Reese meaner every section, amen fills at the turns, rave stabs, club-ready. It opens with no drums: a lone sad piano and a solo violin, the first MC quiet and close for three lines, a ticking pizzicato creeping in till the drop. Then the score sits inside the drums: pizzicato ticking against the break like a clock, muted piano answering the snare, a cello doubling the sub, string figures on the turns, the solo violin over the drops, cheap synth strings behind. Strings and breaks are one piece of music, not a soundtrack over a track; drums and sub loudest. Night-bus melancholy. A sung chorus hook three times. Two English grime MCs trade verses: the first deep, gruff, South London, confident and unhurried, the second clipped and cold. Controlled grime flow, one syllable to the beat with short staccato bursts, hitting hard, on the 174 grid, never double-time, never rushed.
+```
+
+Exclude styles:
+
+```
+double-time, rapid-fire, chopper rap, motormouth, auctioneer delivery, breathless, frantic, hyperspeed rap, sixteenth-note flow, speed rap, laid-back, chill, mumbled, lazy flow, slow flow, half-time flow, measured recital, spoken word, rapping behind the beat, off-grid vocal, half time, tempo change, drifting tempo, rubato, American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, choir, Jamaican accent, ragga MC, jump up, wobble bass, neurofunk, dubstep, lo-fi, tape hiss, muddy mix, orchestral bed, sustained string pad, ambient wash, epic trailer music, brass braams, happy, uplifting, major key, comedic, novelty, parody
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, deep and close, quiet and emotional, unhurried]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+[Verse 1 continues — no pause, the same MC carrying straight on | a ticking pizzicato creeping in under the piano, the breaks rolling closer]
+now, let me explain, how I'm just poor
+[Drop | the full breakbeat and the heavy rolling sub land at once, the pizzicato ticking on through them]
+[gruff MC from here to the end, controlled and weighty, one syllable to the beat, hitting hard on the beat, never rushing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the solo violin and the strings take the chorus over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, clipped and cutting, same controlled pace]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the solo violin and the strings take the chorus over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the breaks at their heaviest, the cello under every line]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the sad piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.47 Round r55 — film-score lanes, and the vocal-pacing stack (2026-09-21)
+
+**Brief, Jack 2026-09-21, after hearing r54:** *"none of those were the right pacing vocally, please
+make a faster paced grime rapper rap to the beat of the drum and bass, with orchestral stuff
+interwoven in it, please make horror vibes, then action, adventure, thriller, please do film score
+genres."*
+
+### 🔴 Say the known risk once, then build it
+
+Three measured rounds (r43 Zimmer, r47 `cinematic`, r48 `grimescore`) found that **the more
+film-score a Camping lane carries, the slower the rap gets** — r48's score lane measured 4.6
+vocal-band onsets/sec against 5.4 for the take Jack had already called too slow — along with the
+weakest low end and the smallest dynamic range. r55 is a deliberate run *at* that finding because
+Jack asked for it, so every lane carries the counter-guards: the score is given a **rhythmic job
+inside the kit**, the drums are stated as louder than the orchestra, and the pacing stack below is
+run at full strength. **If the film-score lanes come back slow again, that is the fourth
+confirmation and the answer is a different genre axis, not a different wording.**
+
+### The pacing stack — four levers, because three of them have failed alone
+
+| # | Lever | Why this one |
+|---|---|---|
+| 1 | 🔑 **Duration 195 s → 155 s** | The same words in 20% less time. It is the only pacing lever that is not a prompt box, and v6 obeys a set duration to about ±1 s — 12/12 takes at r48, 24/24 at r54. Nothing in the Style box can quietly ignore it |
+| 2 | **The flow written in musical units** — *eighth notes with sixteenth bursts, two syllables a beat* | Practitioner consensus is that adjectives lose to subdivisions ([HookGenius](https://hookgenius.app/learn/suno-hiphop-prompts/)). 🔑 The arithmetic matters: at 174 BPM sixteenths is 11.6 syllables/sec, which is not a human — **eighths (5.8/sec) with 16th bursts is what fast means here**, and asking for 16ths outright would have produced a chipmunk or been ignored |
+| 3 | **The gaps banned** — *no pause at a line's end, never a bar left empty*, plus `[gruff MC, double-time… straight into the next line with no pause]` | r54's takes lost time *between* lines, not inside them |
+| 4 | **Excludes carry the pause family** — `sparse flow, pausing between lines, empty bars, half-time flow, slow flow` on top of the standing slow-delivery bans | Delivery bans are the safe place for slowness; tempo bans strangle the opening (r53) |
+
+### The lanes
+
+The variety axis is the **film-score genre**, so the d&b is written as **drum mechanics per lane**,
+not as a subgenre noun — `suno-v6.md` §9 has the v6 data point for that (a lazy `liquid DnB` came
+back as two-step drums; an engineered breakcore/jungle prompt worked on both models).
+
+| Lane | Score | Drums | The score's job inside the kit |
+|---|---|---|---|
+| `horror` | shrieking violin clusters, bowed metal, prepared piano | rapid chopped amen, hyperdetail percussion, distorted sub | shrieks land **on the snare**, low strings saw the sub's own notes |
+| `action` | pounding low brass, taiko, minor-key brass ostinato | machine-tight breaks, morphing Reese | taiko is **an extra drum inside the break**; brass only in the holes |
+| `adventure` | heroic french horn theme in a minor key, sweeping strings, tambourine | rolling jungle breaks, big warm sub, tumbling fills | horn cut into **short answers between the MCs' lines**; tambourine rides the break's hats |
+| `thriller` | ticking pizzicato, muted piano, one cold low string | cold skippy breaks, tight snares, creeping Reese | pizzicato **ticks sixteenths against the break like a clock**; piano answers the snare |
+
+### Settings
+
+v6 · Style Influence **80** · Variety **Off** · Max Mode off · Vocal Gender **Male** · Personalize
+off · no Voice · **Duration 155 s** · workspace `camping-Jack` · weirdness **30 and 60**, a pair per
+lane. 8 Creates, 16 takes.
+
+⬜ **The untested lever we still own: Max Mode.** Suno aims it squarely at *songs over two minutes*
+and at keeping vocals consistent across a whole track, and every Camping take is over three minutes.
+We have never switched it on. It is a slider round, so it costs nothing to design —
+`docs/suno-gpt/files/suno-v6.md` §8b.
+
+
+### Generated 2026-09-21 — 8 Creates, 16 takes. Credits 10,400 → 10,320 (10 per Create)
+
+| Lane | w30 | w60 |
+|---|---|---|
+| `horror` | [cacd1fbe](https://suno.com/song/cacd1fbe-13da-4f79-9bf2-8f23dc29bdcc) · [c67c5eaa](https://suno.com/song/c67c5eaa-c780-495d-b5c7-07f58c7daad6) | [2a1dbd2a](https://suno.com/song/2a1dbd2a-d78f-408e-b9b3-42ad08836b05) (2:36) · [9023a78d](https://suno.com/song/9023a78d-b159-40ac-85fd-887c98794cfc) (2:35) |
+| `action` | [db7ce97d](https://suno.com/song/db7ce97d-daec-45e3-8bb7-6ad92b9b3c2e) (2:43) · [160609ed](https://suno.com/song/160609ed-775d-4b33-b135-c155fa9e5f40) (2:43) | [41cd44a5](https://suno.com/song/41cd44a5-310c-4c61-beed-3ca15ff76a18) (2:35) · [1ead3273](https://suno.com/song/1ead3273-9da2-42fb-9cfd-ef144630af2f) (2:36) |
+| `adventure` | [7b66661b](https://suno.com/song/7b66661b-57bd-40bc-a404-7f1fcbae26df) (2:58) · [45e9eb31](https://suno.com/song/45e9eb31-7f91-4b9f-94f7-7b70d1640e06) (2:34) | [72367526](https://suno.com/song/72367526-7849-451d-9318-f959a31ceb45) (2:35) · [a52bb35a](https://suno.com/song/a52bb35a-568e-4516-917d-cc1217fefde5) (2:36) |
+| `thriller` | [2a14c5ca](https://suno.com/song/2a14c5ca-1498-4839-b05d-81a5e9a776a0) (2:35) · [40f25a9d](https://suno.com/song/40f25a9d-27a2-4586-85ae-2d22ac5d4ea7) (2:35) | [13c267a0](https://suno.com/song/13c267a0-dc1a-45f3-b66d-3f1cd489f644) (2:36) · [06edf42e](https://suno.com/song/06edf42e-8efa-400a-a693-8fae8c98fbce) (2:38) |
+
+🔑 **The duration lever held, but not as tightly as at 195 s.** Of the fourteen takes the list pane showed, **nine came back at 2:34–2:36** against a 155 s (2:35) target, two at 2:38, `action` w30 at **2:43** for both takes, and `adventure` w30 at **2:58** — a 23-second overshoot, the first time a set duration has missed by more than a second or two in any round (r48 12/12 ±1 s, r54 24/24 ±1 s). ⬜ **Unverified reading:** a target that squeezes the words harder is likelier to be treated as a suggestion — worth one more round before it is written down as a rule. **The two long takes are the ones to check first if a lane sounds slow**, since they had 8–23 extra seconds to spread the same words into.
+
+⬜ **Not heard and not measured.** The question this round asks is narrow: **is the rap fast enough now?** If yes, the film-score axis can be judged on its own merits. If it is still slow, the next lever is not wording — it is another 20 s off the duration, or Max Mode.
+
+### r55 horror atom
+
+Style:
+
+```
+174 BPM drum and bass: rapid chopped amen breaks, hyperdetail percussion, a distorted sub. Scored like a horror film: shrieking violin clusters, bowed metal, prepared piano. The shrieks land on the snare and the low strings saw the sub's own notes: the score plays the drums' rhythm, one machine, never a soundtrack over a track. Opens on the prepared piano alone, no drums, two lines, already flat out. Under line three the violins climb in semitones and the breaks stutter in early. Drums and sub loudest, breaks never stopping, everything on one 174 grid. Dry, close, horrible, no reverb to hide in. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline. They ride the break in eighth notes with sixteenth bursts, two syllables a beat, consonants like percussion, no pause at a line's end, never a bar left empty.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, choir, laid-back, chill, mumbled, lazy flow, slow flow, half-time flow, steady rap pace, measured delivery, sparse flow, pausing between lines, empty bars, spoken word, rapping behind the beat, off-grid vocal, drifting tempo, tempo change, rubato, comedic, novelty, parody, low brass hits, taiko, war drums, heroic brass, brass ostinato, french horn theme, soaring strings, orchestral tambourine, sleigh bells, ticking pizzicato, clock percussion, muted piano, cold sustained bass, lush strings, orchestral bed, ambient, calm, pretty, major key, uplifting
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a prepared piano thudding alone, no drums at all | gruff MC, close and quiet but already at full speed]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+[Verse 1 continues — no pause, the same MC carrying straight on | the violins climbing in semitones and the breaks stuttering in early]
+now, let me explain, how I'm just poor
+[Drop | the amen and the distorted sub tear in, violin shrieks landing on the snare]
+[gruff MC, double-time from here to the end, two syllables a beat, straight into the next line with no pause]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the shrieking strings take the chorus with the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, double-time, two syllables a beat, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the shrieking strings take the chorus with the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines at full speed, the breaks at their heaviest, bowed metal under every line]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the prepared piano returns under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+
+### r55 action atom
+
+Style:
+
+```
+174 BPM drum and bass: machine-tight breaks, a morphing Reese, hard rolling percussion. Scored like an action film: pounding low brass hits, taiko doubling the kick, a minor-key brass ostinato. The taiko sits inside the break as an extra drum and the brass hits land only where the break leaves a hole: part of the kit, not a layer above it. Opens on one low brass note and a taiko hit, no drums, two lines, flat out. Under line three the taiko doubles and doubles and the brass climbs. Break and Reese stay louder than the brass throughout, one 174 grid. Huge, hard, punchy, mastered loud, no air. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline. They ride the break in eighth notes with sixteenth bursts, two syllables a beat, consonants like percussion, no pause at a line's end, never a bar left empty.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, choir, laid-back, chill, mumbled, lazy flow, slow flow, half-time flow, steady rap pace, measured delivery, sparse flow, pausing between lines, empty bars, spoken word, rapping behind the beat, off-grid vocal, drifting tempo, tempo change, rubato, comedic, novelty, parody, shrieking violins, string shrieks, prepared piano, bowed metal, sul ponticello, french horn theme, soaring strings, orchestral tambourine, sleigh bells, ticking pizzicato, clock percussion, muted piano, cold sustained bass, lush strings, orchestral bed, ambient, gentle, pretty, sentimental, major key
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | one low brass note and a single taiko hit, no drums at all | gruff MC, close and quiet but already at full speed]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+[Verse 1 continues — no pause, the same MC carrying straight on | the taiko doubling and doubling and the brass climbing a step at a time]
+now, let me explain, how I'm just poor
+[Drop | the machine-tight break and the Reese slam in with the brass on the same beat]
+[gruff MC, double-time from here to the end, two syllables a beat, straight into the next line with no pause]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the brass takes the chorus alongside the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, double-time, two syllables a beat, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the brass takes the chorus alongside the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines at full speed, the breaks at their heaviest, taiko inside every bar]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, one low brass note returns over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+
+### r55 adventure atom
+
+Style:
+
+```
+174 BPM drum and bass: rolling jungle breaks, big warm sub, tumbling fills. Scored like an adventure film in a minor key: a heroic french horn theme, sweeping strings, orchestral tambourine. The horn theme is cut into short answers between the MCs' lines and the tambourine rides the break's hats: the score arrives as rhythm, never a bed. Opens on a lone french horn, no drums, two lines, spat fast over it. Under line three the strings sweep up and the break rolls in under them. Drums and sub above the orchestra throughout, break unbroken, one 174 grid. Wide, warm, cinematic but dirty, tape on the drums. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline. They ride the break in eighth notes with sixteenth bursts, two syllables a beat, consonants like percussion, no pause at a line's end, never a bar left empty.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, choir, laid-back, chill, mumbled, lazy flow, slow flow, half-time flow, steady rap pace, measured delivery, sparse flow, pausing between lines, empty bars, spoken word, rapping behind the beat, off-grid vocal, drifting tempo, tempo change, rubato, comedic, novelty, parody, shrieking violins, string shrieks, prepared piano, bowed metal, sul ponticello, low brass hits, taiko, war drums, heroic brass, brass ostinato, ticking pizzicato, clock percussion, muted piano, cold sustained bass, lush strings, orchestral bed, ambient, cheerful, festive, major key, fanfare, triumphant
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone french horn, no drums at all | gruff MC, close and quiet but already at full speed]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+[Verse 1 continues — no pause, the same MC carrying straight on | the strings sweeping up and the break rolling in underneath]
+now, let me explain, how I'm just poor
+[Drop | the jungle break and the warm sub arrive, the horn answering across the top]
+[gruff MC, double-time from here to the end, two syllables a beat, straight into the next line with no pause]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the horns and strings take the chorus with the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, double-time, two syllables a beat, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the horns and strings take the chorus with the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines at full speed, the breaks at their heaviest, horns answering each line]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the lone french horn returns over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+
+### r55 thriller atom
+
+Style:
+
+```
+174 BPM drum and bass: cold skippy breaks, tight snares, a low Reese that creeps. Scored like a thriller: a ticking pizzicato ostinato, muted piano notes, one cold low string. The pizzicato ticks sixteenths against the break like a clock and the piano answers the snare: timekeeping inside the drums, never atmosphere over them. Opens on the ticking pizzicato alone, no drums, two lines, close and fast. Under line three the ticking speeds up and the low string slides up into the drop. Break and Reese loudest, no gaps in the drums, everything on one 174 grid. Cold, tight, narrow, clinical. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline. They ride the break in eighth notes with sixteenth bursts, two syllables a beat, consonants like percussion, no pause at a line's end, never a bar left empty.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, choir, laid-back, chill, mumbled, lazy flow, slow flow, half-time flow, steady rap pace, measured delivery, sparse flow, pausing between lines, empty bars, spoken word, rapping behind the beat, off-grid vocal, drifting tempo, tempo change, rubato, comedic, novelty, parody, shrieking violins, string shrieks, prepared piano, bowed metal, sul ponticello, low brass hits, taiko, war drums, heroic brass, brass ostinato, french horn theme, soaring strings, orchestral tambourine, sleigh bells, lush strings, orchestral bed, ambient, warm, pretty, major key, jazzy
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a ticking pizzicato ostinato alone, no drums at all | gruff MC, close and quiet but already at full speed]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+[Verse 1 continues — no pause, the same MC carrying straight on | the ticking speeding up and a low string sliding upward into the drop]
+now, let me explain, how I'm just poor
+[Drop | the cold skippy break and the creeping Reese come in, the pizzicato ticking on through]
+[gruff MC, double-time from here to the end, two syllables a beat, straight into the next line with no pause]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the pizzicato and the strings take the chorus with the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, double-time, two syllables a beat, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the pizzicato and the strings take the chorus with the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines at full speed, the breaks at their heaviest, the piano answering every snare]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the ticking pizzicato returns under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.46 Round r54 — six lanes, varied on BOTH axes (2026-09-21)
+
+**Brief, Jack 2026-09-21, on the r53 optimised pair:** *"the optimised ones made the timing weird,
+the rap should be fast and to the beat, the beginning was too slow before the drop, it should be an
+exciting build up until then and the blend of orchestral elements with the drum and bass grime voice
+mix has not been done well enough, they should all be layered and compliment each other… the
+orchestral elements have been all the same, as well as the drum and bass, so make massively varied
+versions of all of them."* Reference to build on, again:
+[1127446d](https://suno.com/song/1127446d-abe8-4079-9bbe-6b281e12aa74).
+
+### The diagnosis — why the last three rounds sounded like one record
+
+r50–r53 varied **one** axis. Every lane opened on *"a lone sad piano and a solo violin"*, every lane
+said *"174 BPM UK drum and bass at full weight, chopped amen breaks"*, and only the guest instrument
+moved (guqin, steelpan, smallpipes, organ…). So the orchestral **opening** and the **drums** were
+literally the same text in every lane — which is exactly the complaint. r54 varies **both axes at
+once**: a different d&b subgenre *and* a different instrument family *and* a different job for that
+family, per lane.
+
+### The four fixes, and where each one lands
+
+| Complaint | Fix | Where it goes |
+|---|---|---|
+| **"the timing went weird"** | an explicit grid lock in every Style box — *one 174 grid, every rapped line square on the beat* — plus `drifting tempo, tempo change, rubato, rapping behind the beat, off-grid vocal` in every Exclude | Style + Exclude. Practitioner consensus is that a constant-tempo clause measurably reduces v6 drift ([MixMasterAI](https://www.mixmasterai.co/suno-prompts/fix/wrong-tempo), [GenX Notes](https://blog.genxnotes.com/en/fix-suno-bpm-tempo-drift/)) |
+| **"the rap should be fast and to the beat"** | the r43 cast sentence kept verbatim, and the rapid-fire cue restated **at the drop** (`every line landing square on the beat`) | Style + the lyric cue |
+| **"too slow before the drop — make it an exciting build up"** | r53's opening cue literally said **`slow and emotional`**; it now reads `urgent and already tense`, the opening is **two lines not three**, and line three gets a **build device** that differs per lane (timpani roll, filter sweep, gong + doubling hats, flutter-tongue riser, climbing strings, racing brushes) | lyric cue + Style |
+| **"the orchestral and the d&b aren't layered / don't complement"** | every lane states the orchestra's **rhythmic job** against the break — doubling the kick, doubling the Reese an octave up, doubling the hi-hats, answering the MC in the bar gap, playing the drums' own pattern — instead of describing a texture | Style, the `job` clause |
+
+🔑 **The build is written as `[Verse 1 continues — no pause…]`, never `[Build]`.** A `[Build]` tag
+reliably inserts eight **instrumental** bars with no vocal, and three explicit denials did not stop
+it — the noun wins (`docs/suno-gpt/files/suno-tag-mechanics.md`). A `Verse` tag is just as
+structural, so Suno re-decides the arrangement, but a verse is the sung part, so there is nothing to
+fill with music.
+
+### The six lanes
+
+| Lane | Subgenre | Family | The orchestra's job | Build device | Production |
+|---|---|---|---|---|---|
+| `brass` | jungle / amen | trombone, tuba, timpani | stabs in the break's holes, timpani doubles every kick | timpani roll + snare roll to 16ths | 1994 white label, tape-hot |
+| `cello` | techstep | solo cello, double bass | plays the Reese riff an octave up, note for note | bowing hardens + filter opens | surgical, cold, airless |
+| `bells` | rollers | tubular bells, glockenspiel, gongs | bells as a clock, glockenspiel doubles the hi-hats | gong swell + hats doubling | glossy, reverberant, club-loud |
+| `woodwind` | dark liquid | bass clarinet, flute | counter-line above the sub; flute answers each rapped line | flutter-tongue + soft riser | warm, close, tape, night-bus |
+| `spiccato` | darkstep | dry spiccato strings | 16ths locked to the break, playing the drums' pattern back | strings climb + distorted riser | dry, brutal, nearly mono |
+| `noir` | jazzstep | upright bass, muted trumpet | bass walks under the sub; trumpet answers between bars | brushes race + bass doubles up | smoky, valve, room, hiss |
+
+### Settings
+
+v6 · Style Influence **80** · Variety **Off** · Max Mode off · Vocal Gender **Male** · Personalize
+off · no Voice · **Duration 195 s** · workspace `camping-Jack` · **weirdness 30 and 60**, a pair per
+lane. 12 Creates, 24 takes.
+
+### BOLD check
+
+Longest shared run between any two Style boxes: **232 characters (23%)** — and it is **only the
+r43 cast sentence**, which the rules explicitly allow to be shared. No shared production language,
+no shared opening, no shared drum description. (r52's lanes shared ~640 characters including the
+opening, the balance clause and the unity clause.)
+
+
+### Generated 2026-09-21 — 12 Creates, 24 takes. Credits 10,540 → 10,420 (10 per Create)
+
+All 24 came back at **3:14–3:15** against a 195 s target, so the duration control held again.
+
+| Lane | w30 | w60 |
+|---|---|---|
+| `brass` | [4104ebd2](https://suno.com/song/4104ebd2-c5c9-4dae-b4da-abdebbcab8d0) · [87cfe2fb](https://suno.com/song/87cfe2fb-c23b-4c18-8720-3746619dee40) | [1061b21d](https://suno.com/song/1061b21d-634d-43d0-9b79-2f829f27042f) · [98fec011](https://suno.com/song/98fec011-f1a2-47cb-b6e0-4816a985f28a) |
+| `cello` | [65f736da](https://suno.com/song/65f736da-4281-43b4-a196-029e5c3a8e5c) · [8611b680](https://suno.com/song/8611b680-e701-4a1c-aa5c-06a937bf7ec1) | [2d011234](https://suno.com/song/2d011234-be7f-4d3b-8245-9630a84fd615) · [17be4012](https://suno.com/song/17be4012-2739-4e8f-835d-279816f18990) |
+| `bells` | [dd035800](https://suno.com/song/dd035800-d008-4fd7-9996-cf9d4086ae9a) · [c044ce9b](https://suno.com/song/c044ce9b-9c1f-408e-a67d-a37a25324203) | [92eebfe3](https://suno.com/song/92eebfe3-6a04-4e56-9749-9d85eec459ef) · [82310806](https://suno.com/song/82310806-3863-4dd6-b347-6b53c47fedf8) |
+| `woodwind` | [0ce2065c](https://suno.com/song/0ce2065c-8c5e-4d38-b2d9-2e54bec5cfb9) · [a9dbfd68](https://suno.com/song/a9dbfd68-606a-438c-9819-85821af9f4a2) | [439d7f03](https://suno.com/song/439d7f03-5144-40e9-81fa-f009f8be9aff) · [17ee1695](https://suno.com/song/17ee1695-1c92-44eb-8300-68194a49282d) |
+| `spiccato` | [765cf37b](https://suno.com/song/765cf37b-491b-46e5-8d82-84b7849424f9) · [f5432684](https://suno.com/song/f5432684-689d-4c4b-a4b8-f1257e3796a1) | [94368dec](https://suno.com/song/94368dec-a071-4947-b3f1-23a5d615aaa8) · [8459a880](https://suno.com/song/8459a880-2694-4da5-b9b5-a1626972744c) |
+| `noir` | [6842eeb3](https://suno.com/song/6842eeb3-58e4-4fd0-8d05-e9e668b56563) · [737b4f23](https://suno.com/song/737b4f23-456a-4c14-babd-281add0b59d7) | [c7ede46a](https://suno.com/song/c7ede46a-a71d-4872-8f0c-426eb773b16e) · [7eb9ef7f](https://suno.com/song/7eb9ef7f-c5d3-4ed9-b86c-2a04de1e5f06) |
+
+⬜ **Not heard and not measured.** The questions this round answers, in order: does the grid lock stop the weird timing · is the two-line opening with a build device exciting rather than slow · does giving the orchestra a *job* against the break finally make the two layers one record · and which family Jack wants to keep. 🔑 **Per-lane weirdness matters here** — r53 was the first real w30/w60 pair, and whether obedience or drift wins is still open.
+
+### r54 brass atom
+
+Style:
+
+```
+Jungle, 174 BPM, minor key, chopped amen breaks, grime over the top. Opens with no drums: one tolling low piano note and a lone trombone, two lines, tense from bar one. Under line three a timpani roll speeds up and a snare roll doubles to sixteenths: a build, not a ballad. Then the drop, the amen tearing in with a huge rolling sub, brass landing on the same beat. Trombone and tuba stab in the holes the break leaves, timpani doubling every kick: brass as percussion, written into the drums, not laid over them. Drums and sub loudest throughout, break never stopping, all of it on one 174 grid, every rapped line square on the beat. A big sung chorus hook three times, the only sung thing. Dubplate-loud, overdriven, tape-hot, like a 1994 white label. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, choir, laid-back, chill, mumbled, lazy flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, drifting tempo, tempo change, rubato, comedic, novelty, parody, solo cello, double bass, sawing strings, string quartet, chamber strings, tubular bells, glockenspiel, celesta, gongs, chimes, music box, bass clarinet, flute, flutter-tongue flute, oboe, woodwinds, spiccato strings, staccato string ostinato, violin section, string stabs, muted trumpet, upright bass, walking bass, brushed drums, jazz, swing, techstep, neurofunk, rollers, dancefloor drum and bass, liquid drum and bass, liquid funk, darkstep, amen assault, jazzstep, jazzy jungle, orchestral film score, epic trailer music, symphony orchestra, lush strings, glossy production, radio pop
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | one tolling low piano note and a lone trombone, no drums at all | gruff MC, quiet and close, urgent and already tense]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+[Verse 1 continues — no pause, the same MC carrying straight on | a timpani roll speeding up and a snare roll doubling underneath, the tension climbing into the drop]
+now, let me explain, how I'm just poor
+[Drop | the amen and the sub tear in at full weight and the brass stabs land on the same beat]
+[gruff MC, rapid-fire from here to the end, every line landing square on the beat, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the brass takes the chorus alongside the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the brass takes the chorus alongside the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the breaks at their heaviest, brass stabs answering every line]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the lone trombone returns over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+
+### r54 cello atom
+
+Style:
+
+```
+Techstep, 174 BPM, minor key, cold and mechanical, grime over the top. Opens with no drums: a solo cello and a double bass sawing one dark riff, two lines close over them. Under line three the bowing hardens and a low filter opens, hauling the track into the drop: rising, never slow. Then the drop, surgical metallic breaks, machine hats, a morphing Reese bass. The cello plays that Reese riff an octave up, note for note, so bass and strings are one instrument doubling itself, and the double bass answers each MC with two plucked notes. Break and Reese loudest, unbroken to the end, one rigid 174 grid, the rap exactly on the beat. A big sung chorus hook three times, the only sung thing. Surgical, wide and cold, airless, every transient sharpened. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, choir, laid-back, chill, mumbled, lazy flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, drifting tempo, tempo change, rubato, comedic, novelty, parody, low brass, trombone, tuba, timpani, brass stabs, fanfare, marching band, tubular bells, glockenspiel, celesta, gongs, chimes, music box, bass clarinet, flute, flutter-tongue flute, oboe, woodwinds, spiccato strings, staccato string ostinato, violin section, string stabs, muted trumpet, upright bass, walking bass, brushed drums, jazz, swing, jungle, amen jungle, ragga jungle, rollers, dancefloor drum and bass, liquid drum and bass, liquid funk, darkstep, amen assault, jazzstep, jazzy jungle, orchestral film score, epic trailer music, symphony orchestra, lush strings, warm, mellow, organic, live band
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a solo cello and a double bass sawing one dark riff, no drums at all | gruff MC, quiet and close, urgent and already tense]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+[Verse 1 continues — no pause, the same MC carrying straight on | the bowing hardening and a low filter opening underneath, hauling the track up into the drop]
+now, let me explain, how I'm just poor
+[Drop | surgical breaks and a morphing Reese slam in, the cello doubling the bass riff an octave up]
+[gruff MC, rapid-fire from here to the end, every line landing square on the beat, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the cello and the Reese play the hook together under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the cello and the Reese play the hook together under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the breaks at their heaviest, the double bass plucking between the lines]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the solo cello returns alone over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+
+### r54 bells atom
+
+Style:
+
+```
+Rolling dancefloor drum and bass, 174 BPM, minor key, grime over the top. Opens with no drums: tubular bells tolling, a glockenspiel picking a cold figure, two lines close. Under line three a gong swells and the hats come in alone, doubling and doubling: a fast build, not a slow intro. Then the drop, a relentless rolling break and a deep round sub that never lets go. The bells ring on the first beat of every eighth bar like a clock, the glockenspiel doubles the hi-hats note for note, a gong marks each turn: metal as percussion, cut into the break. Drums and sub own the mix, no gaps, one steady 174 grid, the rapping dead on the beat. A big sung chorus hook three times, the only sung thing. Huge, glossy, reverberant, long metal tails, loud for a club rig. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, choir, laid-back, chill, mumbled, lazy flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, drifting tempo, tempo change, rubato, comedic, novelty, parody, low brass, trombone, tuba, timpani, brass stabs, fanfare, marching band, solo cello, double bass, sawing strings, string quartet, chamber strings, bass clarinet, flute, flutter-tongue flute, oboe, woodwinds, spiccato strings, staccato string ostinato, violin section, string stabs, muted trumpet, upright bass, walking bass, brushed drums, jazz, swing, jungle, amen jungle, ragga jungle, techstep, neurofunk, liquid drum and bass, liquid funk, darkstep, amen assault, jazzstep, jazzy jungle, orchestral film score, epic trailer music, symphony orchestra, lush strings, lo-fi, tape hiss, muddy mix
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | tubular bells tolling and a glockenspiel over them, no drums at all | gruff MC, quiet and close, urgent and already tense]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+[Verse 1 continues — no pause, the same MC carrying straight on | a gong swelling and the hats arriving alone, doubling and doubling into the drop]
+now, let me explain, how I'm just poor
+[Drop | the rolling break and the deep sub slam in, a bell ringing across the first bar]
+[gruff MC, rapid-fire from here to the end, every line landing square on the beat, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the bells ring out through the chorus over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the bells ring out through the chorus over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the breaks at their heaviest, a gong on every turn]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the tubular bells return alone over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+
+### r54 woodwind atom
+
+Style:
+
+```
+Dark liquid drum and bass, 174 BPM, minor key, grime over the top. Opens with no drums: a bass clarinet low and slow, a flute breathing above it, two lines close. Under line three the flute flutter-tongues and a soft riser climbs, the room tightening bar by bar into the drop. Then the drop, warm rolling breaks with a deep sub beneath them, smooth but heavy. The bass clarinet runs a counter-line an octave above the sub, note for note, and the flute answers each rapped line in the gap at the bar's end: a third voice trading with the MCs, never a pad. Break and sub loudest, no holes, a constant 174 grid, every line landing on the beat. A big sung chorus hook three times, the only sung thing. Warm, deep and close, soft tape saturation, night-bus melancholy. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, choir, laid-back, chill, mumbled, lazy flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, drifting tempo, tempo change, rubato, comedic, novelty, parody, low brass, trombone, tuba, timpani, brass stabs, fanfare, marching band, solo cello, double bass, sawing strings, string quartet, chamber strings, tubular bells, glockenspiel, celesta, gongs, chimes, music box, spiccato strings, staccato string ostinato, violin section, string stabs, muted trumpet, upright bass, walking bass, brushed drums, jazz, swing, jungle, amen jungle, ragga jungle, techstep, neurofunk, rollers, dancefloor drum and bass, darkstep, amen assault, jazzstep, jazzy jungle, orchestral film score, epic trailer music, symphony orchestra, lush strings, harsh, industrial, distorted
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a bass clarinet low and slow with a flute breathing above it, no drums at all | gruff MC, quiet and close, urgent and already tense]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+[Verse 1 continues — no pause, the same MC carrying straight on | the flute flutter-tonguing and a soft riser climbing underneath, tightening into the drop]
+now, let me explain, how I'm just poor
+[Drop | warm rolling breaks and a deep sub arrive, the bass clarinet doubling the sub an octave up]
+[gruff MC, rapid-fire from here to the end, every line landing square on the beat, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the flute carries the hook with the break underneath]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the flute carries the hook with the break underneath]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the breaks at their heaviest, the flute answering each line]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the bass clarinet returns under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+
+### r54 spiccato atom
+
+Style:
+
+```
+Darkstep, 174 BPM, minor key, fast and violent, grime over the top. Opens with no drums: a dry spiccato string figure bouncing in sixteenths, no sustain, two lines spat over it. Under line three the strings climb a step at a time and a distorted riser rips up beneath: pure tension, over fast. Then the drop, an amen assault, breaks tumbling and tearing, a filthy distorted sub. That figure never stops and never swells: short dry sixteenths locked to the break, playing the drums' own pattern back at them, a rhythm part inside the kit. Drums and sub loudest in the room, breaks never stopping, one 174 grid, the rap flat on the beat. A big sung chorus hook three times, the only sung thing. Dry, brutal, nearly mono, no reverb anywhere, clipped at the edges. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, choir, laid-back, chill, mumbled, lazy flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, drifting tempo, tempo change, rubato, comedic, novelty, parody, low brass, trombone, tuba, timpani, brass stabs, fanfare, marching band, solo cello, double bass, sawing strings, string quartet, chamber strings, tubular bells, glockenspiel, celesta, gongs, chimes, music box, bass clarinet, flute, flutter-tongue flute, oboe, woodwinds, muted trumpet, upright bass, walking bass, brushed drums, jazz, swing, jungle, amen jungle, ragga jungle, techstep, neurofunk, rollers, dancefloor drum and bass, liquid drum and bass, liquid funk, jazzstep, jazzy jungle, orchestral film score, epic trailer music, symphony orchestra, lush strings, legato strings, sustained strings, ambient, reverb-drenched
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a dry spiccato string figure bouncing in sixteenths, no drums at all | gruff MC, quiet and close, urgent and already tense]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+[Verse 1 continues — no pause, the same MC carrying straight on | the strings climbing a step at a time and a distorted riser ripping underneath]
+now, let me explain, how I'm just poor
+[Drop | the amen assault and the distorted sub tear in, the strings locking to the break]
+[gruff MC, rapid-fire from here to the end, every line landing square on the beat, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the strings hammer through the chorus with the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the strings hammer through the chorus with the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the breaks at their heaviest, the strings sawing under every line]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the dry strings return alone over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+
+### r54 noir atom
+
+Style:
+
+```
+Jazzstep, 174 BPM, minor key, smoky and dangerous, grime over the top. Opens with no drums: an upright bass walking, a muted trumpet smearing above it, two lines tired and close. Under line three brushes race on a snare and the walking bass doubles its speed into the drop, a few bars only. Then the drop, chopped funk breaks and a fat round sub, swung but locked hard. The upright bass walks under the sub the whole way and the muted trumpet answers the MCs with one smeared phrase between their bars: players in the room with the break, not sampled over it. Break and sub loudest, drums never out, one hard 174 grid under the swing, every line on the beat. A big sung chorus hook three times, the only sung thing. Smoky, room-recorded, valve warmth, hiss left in. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, US rap, trap, boom bap, autotune, female vocal, teenage voice, boyish voice, falsetto, choir, laid-back, chill, mumbled, lazy flow, steady rap pace, measured delivery, spoken word, rapping behind the beat, off-grid vocal, drifting tempo, tempo change, rubato, comedic, novelty, parody, low brass, trombone, tuba, timpani, brass stabs, fanfare, marching band, solo cello, double bass, sawing strings, string quartet, chamber strings, tubular bells, glockenspiel, celesta, gongs, chimes, music box, bass clarinet, flute, flutter-tongue flute, oboe, woodwinds, spiccato strings, staccato string ostinato, violin section, string stabs, jungle, amen jungle, ragga jungle, techstep, neurofunk, rollers, dancefloor drum and bass, liquid drum and bass, liquid funk, darkstep, amen assault, orchestral film score, epic trailer music, symphony orchestra, lush strings, digital, surgical, clinical
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | an upright bass walking and a muted trumpet smearing above it, no drums at all | gruff MC, quiet and close, urgent and already tense]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+[Verse 1 continues — no pause, the same MC carrying straight on | brushes racing on a snare and the walking bass doubling its speed into the drop]
+now, let me explain, how I'm just poor
+[Drop | chopped funk breaks and a fat sub slam in, the upright bass walking on underneath]
+[gruff MC, rapid-fire from here to the end, every line landing square on the beat, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the muted trumpet takes the chorus over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the muted trumpet takes the chorus over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the breaks at their heaviest, the trumpet answering between the lines]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the muted trumpet returns over the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.45 Round r53 — `1127446d` optimised, read off its own page (2026-09-19)
+
+**Brief, Jack 2026-09-19:** *"please go to this
+[song](https://suno.com/song/1127446d-abe8-4079-9bbe-6b281e12aa74), look at all the prompts and
+optimise it as much as possible."*
+
+### ✅ Read live off the song page, not off this sheet
+
+Scraped from `suno.com/song/1127446d-…` on 2026-09-19 with the create tab's own browser. **Two
+things are now confirmed that the sheet only claimed:**
+
+1. **Its Style and Exclude boxes are the r19 `reese` boxes, byte for byte** — including `-piano`,
+   `-slow tempo`, `-half time`, `-tempo change`. ✅ The repo's claim was right.
+2. 🔑 **Its Lyrics box has NO CHORUS, and its `[Intro]` cue reads *"a solid, full drum and bass beat
+   and heavy sub bass from the very first second, no vocal yet"*.** So **both** of the things Jack
+   likes most — the slow piano opening and the sung chorus — are **inventions by Suno at weirdness
+   60, against an instruction that said the opposite.** §v6.39 inferred this from the boxes; this is
+   the direct confirmation, off the take's own page.
+
+### 🔑 The pivot this round makes
+
+While the prompt was wrong, **low adherence and high weirdness were doing the work** — every liked
+feature was drift. Now that the prompt *contains* those features, adherence stops being the enemy
+and becomes the tool. So the optimisation is not only better words, it is a **different slider
+posture**: Style Influence **70 → 80**, and a proper pair at weirdness **30 and 60** to measure
+whether the drift is still needed. Practitioner consensus for v6 is Style Influence **75-85** when
+you want to be obeyed, and Variety **0** so the box is not rewritten
+([Jack Righteous](https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/how-to-use-suno-s-advanced-sliders-weirdness-style-audio-influence),
+[Suno help](https://help.suno.com/en/articles/6141377),
+[sunostyles](https://sunostyles.com/blog/suno-v6-settings)).
+
+### Every change, and why
+
+| Change | From → to | Why |
+|---|---|---|
+| **`piano` un-banned** | exclude → gone | 🔴 The single most self-defeating word in the original. The piano he loves arrived *despite* a ban on it |
+| **`slow tempo`, `half time`, `tempo change` un-banned** | exclude → gone | They fight the three-line emotional opening and the build-then-drop shape he described |
+| **The slow delivery** | `steady rap pace, not double time and not half time` (Style) → `rapid-fire on the 174 grid and never slowing for a punchline` | The one thing he disliked is the one thing the old prompt **asked for**. Attacked as a positive, never as a tempo ban |
+| **Slowness banned as delivery instead** | added `laid-back, chill, mumbled, lazy flow, steady rap pace, measured delivery` | The safe place to put it — delivery words cannot strangle the opening |
+| **Cast** | storyteller + BBC newsreader → **the r43 grime MCs** | Jack's standing rule, 2026-09-19 |
+| **The opening written in** | nothing → `no drums: a lone sad piano and a solo violin… only for three lines` | Was drift; now instruction |
+| **The chorus written in** | no chorus in the box → `[Chorus]` x3 in the lyrics + `a big sung chorus hook returns three times` | Was drift; now instruction |
+| **Strings scoped** | `cheap synth strings` floating → `stay at the edges as colour only, never a film score, never the bed` | His classical ruling. `cheap synth strings` is kept because it is the layer he liked (r43) |
+| **Balance stated** | nothing → `the drums and the sub are the loudest thing in the mix throughout` | "not enough drum and bass" is a **balance** complaint; no previous round stated balance |
+| **Continuity stated** | nothing → `the breaks never stop, not one bar` | r49 measured 12-14 s holes in lanes that did not say it |
+| **Structure** | one 900-char run-on sentence | rebuilt as genre → gear one → gear two → garnish → balance → unity → hook → production → cast. Suno weights the first tokens hardest |
+
+### Settings
+
+v6 · Style Influence **80** · Variety **Off** · Max Mode off · Vocal Gender **Male** · Personalize
+off · no Voice · **Duration 195 s** · workspace `camping-Jack` · **Weirdness 30 and 60 — a real
+pair**, because whether the prompt still needs drift is exactly the open question.
+
+### Generated 2026-09-19 — 2 Creates, 4 takes. Credits 10,620 → 10,600
+
+| Cell | Takes |
+|---|---|
+| **w30** — obey the new box | [cd5390c4](https://suno.com/song/cd5390c4-e16f-413c-9a6b-d650d7b6c28a) · [b1d92d95](https://suno.com/song/b1d92d95-73ee-4396-a907-42271d49d0b3) |
+| **w60** — the reference's own setting | [cfcb9195](https://suno.com/song/cfcb9195-8f53-488d-95d7-1295483115da) · [d0bbb0a3](https://suno.com/song/d0bbb0a3-e513-4468-87bd-d135665c7d31) |
+
+🔑 **This pair answers a question no other round can:** if **w30 wins**, the prompt is now correct and
+every future round can stop gambling on drift. If **w60 still wins**, something Jack likes is *still*
+not written down, and the next job is to find out what.
+
+### r53 optimised atom
+
+Style:
+
+```
+Dark UK drum and bass at 174 BPM, grime over it, minor key. It opens with no drums: a lone sad piano and a solo violin, the first MC quiet and emotional over them, but only for three lines. Then the drop: the full beat slams in at once, chopped amen breaks and tears at every turn, skippy two-step shuffles in the roll, a dark Reese sub growing meaner every section. Cheap synth strings stay at the edges as colour only, never a film score, never the bed. The drums and the sub are the loudest thing in the mix throughout. The strings and the breaks are one piece of music, not a remix, and the breaks never stop, not one bar. A big sung chorus hook returns three times, the only sung thing. Night-bus melancholy, cold and grimy, dry close vocals, unpolished. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, blues, Delta blues, gospel, soul singer, teenage voice, boyish voice, falsetto, autotune, female vocal, choir, laid-back, chill, mumbled, lazy flow, steady rap pace, measured delivery, spoken word, jump up, wobble bass, dubstep, EDM drops, neurofunk, happy, uplifting, major key, comedic, novelty, parody, orchestral film score, epic trailer music, brass braams, war drums, full orchestra, symphony orchestra, string section, lush strings, chamber music, baroque, concerto, orchestral bed, mono mix, muddy mix, crowd noise, audience, applause, glossy production, radio pop
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.44 Round r52 — six researched fusions, all with a lineage to 174 (2026-09-19)
+
+**Brief, Jack 2026-09-19:** *"Please try different styles by researching the internet for what would
+work with [`1127446d`](https://suno.com/song/1127446d-abe8-4079-9bbe-6b281e12aa74), to make
+variations of it, plus all of the rules i have said that need to be in the song."*
+
+### 🔑 The lane-picking rule this round adds: choose scenes with a real lineage to 174 BPM
+
+r49 and r51 picked instrument families for **contrast** and grounded them afterwards. This round
+picks them the other way round: web research first, and a lane only ships if the fusion **already
+happened in British music**. Four of the six are not fusions at all — they are D&B's own family
+tree. That is the cheapest insurance against a lane sounding bolted on, which is the failure the
+unity sentence exists to patch.
+
+### The six lanes
+
+| Lane | Instrument family | Grounding |
+|---|---|---|
+| **`sinogrime`** | guqin, koto, pentatonic bells, kung-fu-film stabs | [Sinogrime](https://grime.fandom.com/wiki/Sinogrime) — a **real 2003 grime subgenre**: Wiley, Jammer, Terror Danjah and Ruff Sqwad sampling kung-fu films and East Asian instruments ([Radii](https://radii.co/article/sinogrime-explained)). The one lane that fuses with the grime cast by *lineage*, not by force |
+| **`bleep`** | naked sine bleeps, a colossal clean sub | [Bleep techno](https://en.wikipedia.org/wiki/Bleep_techno) — Sheffield/Bradford 1989-90, Warp, LFO and Unique 3. **It is jungle&rsquo;s actual ancestor:** Fabio and Grooverider played LFO at Rage, the night jungle was born, and its sub-bass obsession became the jungle trademark ([Kmag](https://kmag.co.uk/bleep-bass-breaks-real-roots-of-jungle/), [DJ Mag](https://djmag.com/features/how-lfos-frequencies-became-benchmark-90s-bleep-techno)) |
+| **`bassline`** | Korg organ stabs, warped speed-garage bass | [Bassline / 4x4](https://en.wikipedia.org/wiki/Bassline_(music_genre)) — South Yorkshire, out of the Niche club in Sheffield, **police-raided working-class club music** ([DJ Mag](https://djmag.com/features/history-bassline)). The most on-message scene in the list for a song about who got left behind |
+| **`drumfunk`** | the breakbeats themselves — almost no melody | [Drumfunk](https://rateyourmusic.com/genre/drumfunk/) — Paradox, Alaska, Equinox, Seba: hyper-detailed break science, **basslines and melody stripped back to put the drums front and centre** ([Ableton](https://www.ableton.com/en/blog/paradox-breakbeat-mastery/)). 🔑 **This lane exists to answer "not enough drum and bass" directly** — it is the one where the drums *are* the tune |
+| **`smallpipes`** | bellows-blown chanter, three drones | [Northumbrian smallpipes](https://en.wikipedia.org/wiki/Northumbrian_smallpipes) — north-east England, **closed chanter so the articulation is naturally staccato**, modal and drone-based, which is why it sits on a breakbeat where Highland pipes would not. The Darkening (2018-) already fuse them with electronics |
+| **`steelpan`** | tenor and cello pans, one minor figure | Notting Hill Carnival steel band — the Caribbean lineage jungle actually comes from, the same root as r49&rsquo;s `ragga` lane, but a **pitched-percussion** family nothing else here touches. Played slow and minor on purpose: the satire trap is real and carnival-happy would wreck the song |
+
+### ✅ Every rule you have given, and where it lives in these boxes
+
+| Rule | Where it is |
+|---|---|
+| **Build on `1127446d`** | the spine is byte-identical to r50/r51: the opening, the 174 mechanics, the sung chorus, the words |
+| **Three lines slow and emotional, then drop and get fast** | `OPEN` clause in every Style box + the `[Drop]` cue after line three |
+| **Fast from there, never slowing** | `rapid-fire on the 174 grid and never slowing for a punchline` — a **positive**, never a `slow tempo` ban |
+| **Always the grime voice** | r43's proven cast sentence, verbatim, in all six |
+| **Sung chorus** | stated in every Style box; `sung chorus` is never in an exclude list |
+| **No classical leading** | no bowed-string lane exists; classical **bed** words banned in all six; the solo violin survives in the three-line opening only |
+| **Drum and bass throughout** | `the breaks never stop, not one bar` + the unity sentence, per lane |
+| **Not enough drum and bass** | the balance clause — *"the drums and the sub are the loudest thing in the mix throughout"* — **plus `drumfunk`, a whole lane where the drums are the tune** |
+| **Varied** | six instrument families, none used in r49-r51, each leading the first tokens |
+| **British** | all six scenes are British; nationality rides on the genre word, never on adjectives |
+| **Words unchanged** | same 60 lines, again |
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender **Male** · Personalize
+off · no Voice · **Duration 195 s** · workspace `camping-Jack` · Weirdness **60**. Titles
+`camping-r52-<lane>-v6-w60`. Identical to r50 and r51, so all three rounds compare directly.
+
+### Generated 2026-09-19 — 6 Creates, 12 takes, workspace `camping-Jack`
+
+**Credits 10,680 → 10,620 — 10 per Create, 60 for the round.**
+
+| Lane | Takes |
+|---|---|
+| `sinogrime` | [265aac39](https://suno.com/song/265aac39-d11a-4229-a4e8-08e198b02f29) · [75620a76](https://suno.com/song/75620a76-1b05-4a65-9430-d5389f503b93) |
+| `bleep` | [34570090](https://suno.com/song/34570090-1ad5-46da-a28b-dec987865409) · [c3691721](https://suno.com/song/c3691721-cfa8-47a1-a8c0-e3a16487cf34) |
+| `bassline` | [9362a930](https://suno.com/song/9362a930-d7ae-4d8b-b22c-4435452ec671) · [ff126806](https://suno.com/song/ff126806-2d05-42d2-a35d-fe60cb66ef10) |
+| `drumfunk` | [cfbddf22](https://suno.com/song/cfbddf22-7bca-4037-acfc-3654de391e95) · [b00ade72](https://suno.com/song/b00ade72-4f0d-426f-b29a-a3930a85b6b1) |
+| `smallpipes` | [10f33b70](https://suno.com/song/10f33b70-c720-4f13-9e69-3c5a052ba355) · [fd9a88a9](https://suno.com/song/fd9a88a9-6136-4f39-9dee-9f95a0232a18) |
+| `steelpan` | [97634c19](https://suno.com/song/97634c19-b764-4a3f-91d9-163123ee9199) · [bcce24b8](https://suno.com/song/bcce24b8-fe81-422f-9818-82954f262d2d) |
+
+⬜ **Not measured and not heard.** 🔴 **Watch `steelpan` for the satire trap** — a steel band is the
+one lane here whose default register is *happy*, and the Style box fights it with words alone
+(`slow and mournful`, `never carnival-happy`, plus `soca, calypso, carnival crowd, festive` in the
+excludes). If it comes back cheerful, that is the trap firing and the lane should be dropped, not
+re-worded.
+
+### r52 sinogrime atom
+
+Style:
+
+```
+Sinogrime over drum and bass: plucked guqin and koto figures, pentatonic bells and kung-fu-film stabs, icy and ornamental. It opens with no drums - a lone sad piano and a solo violin - the first MC quiet and emotional over them, but only for three lines. Then the drop: 174 BPM UK drum and bass at full weight, chopped amen breaks, two-step shuffles, heavy rolling sub. The plucked strings ring through every verse and across every drop - the east and the breaks are one piece of music, not a remix - and the breaks never stop, not one bar. The drums and the sub are the loudest thing in the mix throughout; the guqin sits under them, never in front. Cold, glinting and hard, dry bells against dry drums. The sung chorus hook comes back three times. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jump up, wobble bass, dubstep, EDM drops, glossy production, radio pop, orchestral film score, epic trailer music, brass braams, war drums, full orchestra, symphony orchestra, string section, lush strings, chamber music, classical arrangement, baroque, concerto, orchestral bed, Chinese vocal, Mandarin vocal, erhu solo, guzheng recital, world music, new age, meditation, harmonica, slide guitar, post-punk guitar, Moog arpeggio, Motown horns, Hammond organ, bagpipes, steel pan, Rhodes piano
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r52 bleep atom
+
+Style:
+
+```
+Sheffield bleep and bass welded to drum and bass: naked sine bleeps, a colossal clean sub that moves the room, nothing else. It opens with no drums - a lone sad piano and a solo violin - the first MC quiet and emotional over them, but only for three lines. Then the drop: 174 BPM UK drum and bass at full weight, chopped amen breaks, two-step shuffles, and that sub under all of it. The bleeps pulse through every verse and across every drop - the bleeps and the breaks are one piece of music, not a remix - and the breaks never stop, not one bar. The drums and the sub are the loudest thing in the mix throughout; the bleeps sits under them, never in front. Spartan, enormous and northern, almost nothing in the mix but weight. A sung chorus hook returns three times. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jump up, wobble bass, dubstep, EDM drops, glossy production, radio pop, orchestral film score, epic trailer music, brass braams, war drums, full orchestra, symphony orchestra, string section, lush strings, chamber music, classical arrangement, baroque, concerto, orchestral bed, acid house, 303 squelch, rave hoover, happy hardcore, trance lead, harmonica, slide guitar, post-punk guitar, Motown horns, Hammond organ, bagpipes, steel pan, guqin, koto, Rhodes piano, brass band
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r52 bassline atom
+
+Style:
+
+```
+Sheffield bassline and speed garage crossed with drum and bass: hard Korg organ stabs and a warped wobbling garage bass, Niche club weight. It opens with no drums - a lone sad piano and a solo violin - the first MC quiet and emotional over them, but only for three lines. Then the drop: 174 BPM UK drum and bass at full weight, chopped amen breaks, two-step shuffles cut hard, deep sub. The organ stabs punch through every verse and across every drop - the stabs and the breaks are one piece of music, not a remix - and the breaks never stop, not one bar. The drums and the sub are the loudest thing in the mix throughout; the organ stabs sits under them, never in front. Rowdy, northern and cheap in the best way, unpolished. The sung hook returns three times. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jump up, wobble bass, dubstep, EDM drops, glossy production, radio pop, orchestral film score, epic trailer music, brass braams, war drums, full orchestra, symphony orchestra, string section, lush strings, chamber music, classical arrangement, baroque, concerto, orchestral bed, 4x4 house beat, diva vocal, garage singer, funky house, donk, happy hardcore, harmonica, slide guitar, post-punk guitar, Motown horns, bagpipes, steel pan, guqin, koto, Rhodes piano, brass band
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r52 drumfunk atom
+
+Style:
+
+```
+Drumfunk: hyper-detailed breakbeat science at 174 BPM, endless micro-edits of the amen and the apache, snares tumbling over each other, almost no melody at all. It opens with no drums - a lone sad piano and a solo violin - the first MC quiet and emotional over them, but only for three lines. Then the drop: the breaks take the whole record - chopped, re-chopped and never repeating, ghost notes and rolls filling every gap, one deep sub holding the bottom. The drums ARE the tune; there is nothing under the verses but breaks and sub, and the breaks never stop, not one bar. The drums are the loudest thing in the mix throughout and nothing is allowed in front of them. Dry, technical, relentless and cold. A sung chorus hook returns three times, the only melody. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jump up, wobble bass, dubstep, EDM drops, glossy production, radio pop, orchestral film score, epic trailer music, brass braams, war drums, full orchestra, symphony orchestra, string section, lush strings, chamber music, classical arrangement, baroque, concerto, orchestral bed, melodic pads, lead synth, piano house, ambient wash, harmonica, slide guitar, post-punk guitar, Motown horns, Hammond organ, bagpipes, steel pan, guqin, koto, Rhodes piano, brass band, Moog arpeggio
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r52 smallpipes atom
+
+Style:
+
+```
+Northumbrian smallpipes over drum and bass: a bellows-blown chanter on one staccato modal figure, three drones under it, cold north-east England. It opens with no drums - a lone sad piano and a solo violin - the first MC quiet and emotional over them, but only for three lines. Then the drop: 174 BPM UK drum and bass at full weight, chopped amen breaks, two-step shuffles, heavy rolling sub. The pipes keep piping through every verse and across every drop - the pipes and the breaks are one piece of music, not a remix - and the breaks never stop, not one bar. The drums and the sub are the loudest thing in the mix throughout; the pipes sits under them, never in front. Bleak, ancient and rained-on, reedy against hard dry drums. The sung hook returns three times. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jump up, wobble bass, dubstep, EDM drops, glossy production, radio pop, orchestral film score, epic trailer music, brass braams, war drums, full orchestra, symphony orchestra, string section, lush strings, chamber music, classical arrangement, baroque, concerto, orchestral bed, Highland bagpipes, military pipe band, ceilidh band, folk singer, sea shanty, morris dancing, jig, reel, harmonica, slide guitar, post-punk guitar, Motown horns, Hammond organ, steel pan, guqin, koto, Rhodes piano
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r52 steelpan atom
+
+Style:
+
+```
+A Notting Hill steel band welded to drum and bass: tenor and cello pans on one minor figure, played slow and mournful, never carnival-happy. It opens with no drums - a lone sad piano and a solo violin - the first MC quiet and emotional over them, but only for three lines. Then the drop: 174 BPM UK drum and bass at full weight, chopped amen breaks, ragga-jungle two-step, deep rolling sub. The pans ring through every verse and across every drop - the pans and the breaks are one piece of music, not a remix - and the breaks never stop, not one bar. The drums and the sub are the loudest thing in the mix throughout; the pans sits under them, never in front. Metallic, grieving and wet, pans outdoors against dry drums. The sung chorus lands three times. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jump up, wobble bass, dubstep, EDM drops, glossy production, radio pop, orchestral film score, epic trailer music, brass braams, war drums, full orchestra, symphony orchestra, string section, lush strings, chamber music, classical arrangement, baroque, concerto, orchestral bed, soca, calypso vocal, carnival crowd, whistles, party chant, patois vocal, dancehall toaster, happy, festive, harmonica, slide guitar, post-punk guitar, Motown horns, Hammond organ, bagpipes, guqin, koto, Rhodes piano
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.43 Round r51 — the grime cast, and no classical lane (2026-09-19)
+
+**Two rulings, Jack 2026-09-19:** *"anytime there has been elements of classical, it has been too
+much classical and not enough drum and bass, also always have the grime voice."*
+
+### 🔴 Both rulings invalidated r50's Style boxes, so the round was re-run
+
+r50 (§v6.42) was one hour old and wrong on both counts. It is kept as history — **its takes were
+never heard and its cast is now out of policy** — and this round is r50's six lanes with the two
+rulings applied. The lyrics, the settings and the spine are byte-identical to r50, so **the cast
+sentence, the `quartet` lane and the mix instruction are the only things that moved.**
+
+### Ruling 1 — classical is a garnish or it is nothing
+
+This is the **fourth** confirmation of the same finding (r43's Zimmer rounds, r47 `cinematic`, r48
+`grimescore`, now Jack's ear on the whole corpus), and the widest: it is not only film scores.
+
+- 🔴 **The `quartet` lane is dropped.** A string quartet leading the Style box is the exact failure
+  he named. It is replaced by **`bluesharp`** — British blues-boom harmonica and slide guitar, which
+  is bleak and filthy without a bow anywhere near it.
+- ✅ **What survives:** the **solo violin and piano in the three-line opening only** — he named "the
+  violins and stuff" as a thing he likes about `1127446d`. Garnish at the edge, never the bed.
+- 🔑 **The bans are at bed scale and never on the bare words `violin` or `classical`** — `full
+  orchestra, symphony orchestra, string section, lush strings, chamber music, classical arrangement,
+  baroque, concerto, orchestral bed`. Banning the instrument itself would kill the opening he likes:
+  that is the documented stale-ban failure, where the Style box merely *looks* ignored.
+- 🔑 **New in every lane, and the direct answer to "not enough drum and bass":** a positive mix
+  instruction — *"The drums and the sub are the loudest thing in the mix throughout; the X sits under
+  them, never in front."* Previous rounds only ever said the guest instrument plays *throughout*,
+  which is a presence instruction, not a **balance** one. This is the first round to state the
+  balance.
+
+### Ruling 2 — always the grime voice
+
+Standing from now on, not a per-round ask. Every lane carries **r43's proven cast sentence verbatim**
+(§v6.35): *"Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped
+and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174
+grid and never slowing for a punchline."*
+
+🔴 **r50 used the `1127446d` cast instead** — "a gravelly raspy older English storyteller… a clipped
+BBC newsreader" — on the reasoning that the reference take should be copied whole. Wrong: the spine
+to copy is the *arrangement*, and the voice is a separate, now-fixed decision. Lyric labels stay
+`[gruff MC]` / `[cold MC]`.
+
+### The six lanes
+
+| Lane | Instrument family | Why this one |
+|---|---|---|
+| **`liquid`** | warm Rhodes electric piano | the melancholy end of D&B itself — warm colour with the 174 spine untouched |
+| **`techstep`** | metallic industrial percussion, machine stabs | 1997 techstep is the coldest, most hostile D&B there is — maximum contrast with the sad piano |
+| **`bluesharp`** | cracked amplified harmonica, slide guitar | **replaces r50 `quartet`** — the British blues boom is filthy, bleak and completely un-classical |
+| **`postpunk`** | scraping chorused electric guitar | the bleak English guitar tradition; the original Camping candidate&rsquo;s palm-muted figure, never tried over these words |
+| **`analogue`** | Moog bass arpeggio, Juno pads | analogue hardware is a different way of making sound, not just a different genre |
+| **`motown`** | chopped soul horn stabs, upright piano | chopping old soul records IS how jungle was built — the fusion needs no defending |
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender **Male** · Personalize
+off · no Voice · **Duration 195 s** · workspace `camping-Jack` · Weirdness **60**. Titles
+`camping-r51-<lane>-v6-w60`. Held byte-identical to r50 so the two rounds are directly comparable.
+
+### Generated 2026-09-19 — 6 Creates, 12 takes, workspace `camping-Jack`
+
+**Credits 10,740 → 10,680 — 10 per Create, 60 for the round.**
+
+| Lane | Takes |
+|---|---|
+| `liquid` | [4d396e56](https://suno.com/song/4d396e56-b5f8-4608-a1f6-1566ca1216f9) · [382e8119](https://suno.com/song/382e8119-e63a-44c6-839b-7ea0c11ab0f2) |
+| `techstep` | [8c196a2d](https://suno.com/song/8c196a2d-200b-4334-9ced-c5b233f2f0c1) · [c1008398](https://suno.com/song/c1008398-316e-46ba-92ed-943fa37c99e4) |
+| `bluesharp` | [76cc57c8](https://suno.com/song/76cc57c8-cf55-403f-ad6a-dbd9db8167b9) · [fb2fb764](https://suno.com/song/fb2fb764-b20c-422e-8d68-d7860e3d0c0d) |
+| `postpunk` | [ffbfd602](https://suno.com/song/ffbfd602-28be-40cd-81f2-e4b913fee69e) · [168d90df](https://suno.com/song/168d90df-f4ab-46fa-8552-b98daac70c17) |
+| `analogue` | [dd5f5b66](https://suno.com/song/dd5f5b66-bcd2-4f13-a257-374a39c1b437) · [3162bd05](https://suno.com/song/3162bd05-b87e-452a-822e-0614e65f9280) |
+| `motown` | [7120ef8f](https://suno.com/song/7120ef8f-ffbb-4601-ab51-1fac9f9f8f2f) · [72d43179](https://suno.com/song/72d43179-c7e7-40eb-a1e4-272f13f23a4f) |
+
+⚠️ **The balance moved by 80 credits between r50 and r51 with no Create of ours in between**
+(10,820 → 10,740). Eight Creates happened from somewhere else — almost certainly Jack generating by
+hand in the same account. Recorded because a mid-session balance drop is the documented tell for a
+second session on the one create form.
+
+⬜ **Not measured and not heard.** The r49 pass (breaks-present %, longest gap, pairwise timbre
+distance) would now answer the exact complaint — **does the kit stay louder than the guest
+instrument** — and it spends no download allowance.
+
+### r51 liquid atom
+
+Style:
+
+```
+Liquid drum and bass led by a warm Rhodes electric piano. It opens with no drums - a lone sad piano and a solo violin - the first MC quiet and emotional over them, but only for three lines. Then the drop: 174 BPM UK drum and bass at full weight, chopped amen breaks, skippy two-step shuffles folded into the roll, a deep rolling sub. The Rhodes plays on through every verse and over every drop; the Rhodes and the breaks are one piece of music, not a remix, and the breaks never stop, not for one bar. The drums and the sub are the loudest thing in the mix throughout; the Rhodes sits under them, never in front. Warm and soulful under bleak words, night-bus melancholy, raw and never glossy. The sung chorus hook comes back three times. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jump up, wobble bass, dubstep, EDM drops, glossy production, radio pop, orchestral film score, epic trailer music, brass braams, war drums, full orchestra, symphony orchestra, string section, lush strings, chamber music, classical arrangement, baroque, concerto, orchestral bed, soul diva, R&B vocal, smooth male singer, crooner, sung verses, melodic rap, liquid vocal hook, harmonica, slide guitar, industrial percussion, post-punk guitar, chorused guitar, Moog arpeggio, analogue synth lead, Motown horns, tambourine, brass band
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r51 techstep atom
+
+Style:
+
+```
+Techstep drum and bass, 1997 cold: metallic industrial percussion, detuned machine stabs, a growling Reese bass. It opens with no drums - a lone sad piano and a solo violin - the first MC quiet and emotional over them, but only for three lines. Then the drop: hard 174 BPM breakbeats chopped to splinters, two-step shuffles in the roll, sub pressure that never lifts. The machine stabs hammer through every verse and over every drop - the metal and the breaks are one piece of music, not a remix - and the breaks never stop, not for one bar. The drums and the sub are the loudest thing in the mix throughout; the metal sits under them, never in front. Hostile, claustrophobic, bone dry, corroded. A sung chorus hook returns three times. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jump up, wobble bass, dubstep, EDM drops, glossy production, radio pop, orchestral film score, epic trailer music, brass braams, war drums, full orchestra, symphony orchestra, string section, lush strings, chamber music, classical arrangement, baroque, concerto, orchestral bed, robot vocal, vocoder, sci-fi spoken sample, MC hype chants, ragga toaster, rave stabs, Rhodes piano, harmonica, slide guitar, post-punk guitar, Moog arpeggio, Motown horns, tambourine, soul sample, brass band
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r51 bluesharp atom
+
+Style:
+
+```
+British blues-boom harmonica over drum and bass: one cracked amplified harmonica riff, a dirty slide guitar answering, 1966 Soho basement. It opens with no drums - a lone sad piano and a solo violin - the first MC quiet and emotional over them, but only for three lines. Then the drop: 174 BPM UK drum and bass at full weight, chopped amen breaks, two-step shuffles, heavy rolling sub. The harmonica wails through every verse and across every drop - the harp and the breaks are one piece of music, not a remix - and the breaks never stop, not for one bar. The drums and the sub are the loudest thing in the mix throughout; the harmonica sits under them, never in front. Filthy and hungover, valve-amp dirt against cold drums. The sung hook returns three times. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jump up, wobble bass, dubstep, EDM drops, glossy production, radio pop, orchestral film score, epic trailer music, brass braams, war drums, full orchestra, symphony orchestra, string section, lush strings, chamber music, classical arrangement, baroque, concerto, orchestral bed, blues singer, howling vocal, Delta blues, twelve-bar, jug band, folk vocal, skiffle, Rhodes piano, industrial percussion, post-punk guitar, chorused guitar, Moog arpeggio, analogue synth lead, Motown horns, tambourine, brass band
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r51 postpunk atom
+
+Style:
+
+```
+Bleak English post-punk guitar over drum and bass: one scraping chorused guitar figure, a high melodic bass line, a grey northern room. It opens with no drums - a lone sad piano and a solo violin - the first MC quiet and emotional over them, but only for three lines. Then the drop: 174 BPM UK drum and bass at full weight, rolling amen breaks, two-step shuffles, heavy sub. The guitar figure repeats under every verse and rings out across every drop - the guitar and the breaks are one piece of music, not a remix - and the breaks never stop, not for one bar. The drums and the sub are the loudest thing in the mix throughout; the guitar sits under them, never in front. Overcast, severe, tape-flat, nothing polished. The sung hook returns three times. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jump up, wobble bass, dubstep, EDM drops, glossy production, radio pop, orchestral film score, epic trailer music, brass braams, war drums, full orchestra, symphony orchestra, string section, lush strings, chamber music, classical arrangement, baroque, concerto, orchestral bed, indie sung vocal, post-punk singing, baritone crooner, shoegaze vocal, goth vocal, Rhodes piano, harmonica, slide guitar, industrial percussion, Moog arpeggio, analogue synth lead, Motown horns, tambourine, brass band
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r51 analogue atom
+
+Style:
+
+```
+Analogue 1980s synth hardware driving drum and bass: a Moog bass arpeggio in sixteenths, cold Juno pads and tape delay. It opens with no drums - a lone sad piano and a solo violin - the first MC quiet and emotional over them, but only for three lines. Then the drop: 174 BPM UK drum and bass at full weight, chopped amen breaks, two-step shuffles, a growling sub under the arpeggio. The arpeggio runs unbroken beneath every verse and straight through every drop - the synths and the breaks are one piece of music, not a remix - and the breaks never stop, not for one bar. The drums and the sub are the loudest thing in the mix throughout; the arpeggio sits under them, never in front. Airless and mechanical. A sung chorus hook comes round three times. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jump up, wobble bass, dubstep, EDM drops, glossy production, radio pop, orchestral film score, epic trailer music, brass braams, war drums, full orchestra, symphony orchestra, string section, lush strings, chamber music, classical arrangement, baroque, concerto, orchestral bed, synthpop vocal, vocoder, robot vocal, 80s pop singer, new romantic croon, Rhodes piano, harmonica, slide guitar, post-punk guitar, chorused guitar, industrial percussion, Motown horns, tambourine, brass band
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r51 motown atom
+
+Style:
+
+```
+Chopped 1960s soul records over drum and bass: cracked horn stabs, upright piano vamp, tambourine, vinyl crackle, cut like a 1995 jungle plate. It opens with no drums - a lone sad piano and a solo violin - the first MC quiet and emotional over them, but only for three lines. Then the drop: 174 BPM UK drum and bass at full weight, amen breaks torn across the turns, two-step shuffles, deep rolling sub. The horn stabs punch through every verse and across every drop - the samples and the breaks are one piece of music, not a remix - and the breaks never stop, not one bar. The drums and the sub are the loudest thing in the mix throughout; the horn stabs sits under them, never in front. Dusty, cracked, sampler-crunched. The sung chorus hook lands three times. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jump up, wobble bass, dubstep, EDM drops, glossy production, radio pop, orchestral film score, epic trailer music, brass braams, war drums, full orchestra, symphony orchestra, string section, lush strings, chamber music, classical arrangement, baroque, concerto, orchestral bed, soul singer, gospel vocal, diva, doo-wop harmony, backing singers, female soul vocal, Motown singing, Rhodes piano, harmonica, slide guitar, post-punk guitar, chorused guitar, Moog arpeggio, analogue synth lead, industrial percussion
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.42 Round r50 — six instrument families on the `1127446d` spine (2026-09-19) 🔴 SUPERSEDED BY r51
+
+> 🔴 **Out of policy within the hour.** Jack ruled on 2026-09-19 that **classical elements always
+> come out too classical and not enough drum and bass**, and that the **grime voice is standing**.
+> This round's `quartet` lane leads on a string quartet and all six lanes carry the `1127446d`
+> storyteller/newsreader cast, so every Style box here is superseded by §v6.43 r51. The twelve
+> takes were never heard. Kept for the reasoning and for the r51 diff — **do not re-run these boxes.**
+
+**Brief, Jack 2026-09-19:** *"Keep trying more varied styles making sure to use this
+[song](https://suno.com/song/1127446d-abe8-4079-9bbe-6b281e12aa74) as the one we like and want to
+build upon."*
+
+### 🔑 The spine is now fixed, and only the instrument family moves
+
+r49 proved the lever — **six lanes each led by a different instrument family sat 1.7x further apart
+than three lanes that differed only in production language.** It also changed too much at once: its
+lanes replaced the cast, the arrangement and the colour together, so a lane that failed could not be
+told from a spine that failed.
+
+This round **freezes everything `1127446d` is liked for** and moves one thing. Held constant,
+byte-identical across all six lanes:
+
+- **The opening** — no drums, a lone sad piano and a solo violin, the first MC quiet and emotional,
+  **three lines only**, then the drop. (Jack, on `r19-reese-w60`: *"I like that it slows down with
+  the first lyrics in an emotional way with the piano"*.)
+- **The D&B mechanics** — 174 BPM, chopped amen breaks, skippy two-step shuffles folded into the
+  roll, heavy rolling sub.
+- **The cast** — the gravelly raspy older English storyteller and the clipped BBC newsreader, both
+  rapid-fire on the grid, never slowing. (*"this part … slowed down and paused when he rapped it,
+  this should be fast."*)
+- **The sung chorus**, three times. (*"the chorus being sung is cool"*.)
+- **The words** — the same 60 lines, unchanged again.
+
+**Moved:** the instrument family that leads the Style box and plays all the way through.
+
+### The six lanes
+
+| Lane | Instrument family | Why this one |
+|---|---|---|
+| **`liquid`** | Rhodes electric piano, lush chords | Liquid D&B is the genre&rsquo;s own melancholy lane — the warm end of the same 174 BPM, so the spine survives untouched while the colour changes completely |
+| **`techstep`** | metallic industrial percussion, machine stabs | 1997 techstep (Ed Rush &amp; Optical, No U-Turn) is the coldest, most hostile D&B there is — the maximum contrast with a sad piano |
+| **`quartet`** | two violins, viola, cello | Jack named &ldquo;the violins and stuff&rdquo; as a thing he likes; a four-player quartet sawing one figure is that, without the film-score bed the measurements keep punishing |
+| **`postpunk`** | scraping chorused electric guitar, melodic bass | the bleak English guitar tradition — and the original Camping candidate&rsquo;s palm-muted guitar figure is the one instrument from the very first take nobody has tried over these words |
+| **`analogue`** | Moog bass arpeggio, Juno pads, tape delay | analogue hardware is a different sound-generation method, not just a different genre — hiss, drift and a running arpeggio nothing else in the list can make |
+| **`motown`** | chopped soul horn stabs, upright piano, tambourine | chopping old soul records IS how jungle was built (Goldie, 1995), so the fusion needs no justification — and it gives Jack back a piano in a completely different register |
+
+### ⚠️ Deliberate departure: the BOLD check is not the gate this round
+
+Longest shared run across the fifteen Style-box pairs is **266 characters** against r49's 228 —
+and that is the point, not a failure. The shared run *is* the spine: the opening, the D&B mechanics
+and the cast sentence, held byte-identical so that **the instrument family is the only variable**.
+r49 answered "are these different enough"; r50 answers "which instrument, on the record we already
+like". 🔴 **Do not copy this number forward as a new BOLD baseline** — it applies only while a
+liked reference is being built on.
+
+### 🔑 Every lane still bans its own genre's singers
+
+The r40 `opera` house rule holds: naming a tradition summons its vocalists with its instruments.
+`soul diva, R&B vocal` in `liquid`, `opera vocal, classical soprano, choir` in `quartet`,
+`soul singer, gospel vocal, doo-wop harmony` in `motown`, `synthpop vocal, vocoder` in `analogue`,
+`indie sung vocal, post-punk singing` in `postpunk`, `robot vocal, vocoder` in `techstep`. Each lane
+also bans the other five families so nothing bleeds. **`sung verses` is banned where it is a risk;
+`sung chorus` never is** — that is the feature.
+
+🔑 **`orchestral film score`, `epic trailer music` and `brass braams` are banned in every lane,
+including `quartet`** — three measured rounds say a full score bed costs the low end, the dynamics
+and the rap speed. The quartet is four players in a room, not an orchestra.
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender **Male** · Personalize
+off · no Voice · **Duration 195 s** (18/18 on target across r48 and r49) · workspace `camping-Jack`
+· Weirdness **60**. Titles `camping-r50-<lane>-v6-w60`.
+
+**Weirdness 60, not the pair, and this one is evidenced:** the take being built on is a **w60**
+generation, and §v6.39's diagnosis is that every feature Jack likes — the piano, the violins, the
+sung chorus — arrived as **weirdness-60 drift against the prompt**. Running the spine anywhere else
+would be changing a second variable. 🔴 The r49 note still stands: re-run the winning lane as a
+proper pair before drawing any weirdness conclusion.
+
+### Generated 2026-09-19 — 6 Creates, 12 takes, workspace `camping-Jack`
+
+All six lanes loaded and created clean: model, Variety Off, Max Mode off, Vocal Gender Male,
+Personalize off, no Voice, Duration 195 s, Style Influence 75, Weirdness 60, title and workspace all
+read back before each Create. **Credits 10,880 → 10,820 — 10 per Create, 60 for the round.**
+
+| Lane | Takes |
+|---|---|
+| `liquid` | [19e8a049](https://suno.com/song/19e8a049-59a6-4eec-8bb7-3c8ecc68dfc8) · [a046cf64](https://suno.com/song/a046cf64-66e2-4713-b5b9-93dd3b09794d) |
+| `techstep` | [c539579d](https://suno.com/song/c539579d-1712-425f-9ac7-72eb7e630bf9) · [9d4cbb5d](https://suno.com/song/9d4cbb5d-22e9-48e0-b67a-67c991d167e9) |
+| `quartet` | [bff53b6c](https://suno.com/song/bff53b6c-d4cc-4c79-9d58-0fc9e36c2ff3) · [835b9b51](https://suno.com/song/835b9b51-5a76-4cac-b2a6-ed87aaab70fb) |
+| `postpunk` | [f160f477](https://suno.com/song/f160f477-1f7d-4dba-9e82-d79accba995e) · [fef10d5b](https://suno.com/song/fef10d5b-1d1e-4ac1-a412-8eb505d5c1cf) |
+| `analogue` | [f0491d0d](https://suno.com/song/f0491d0d-d663-49fd-998b-55ee9edf6bb2) · [41dddba1](https://suno.com/song/41dddba1-1386-4432-b205-a531537a0926) |
+| `motown` | [c748f143](https://suno.com/song/c748f143-69dd-4101-964f-8c036e8da092) · [02d0ccbb](https://suno.com/song/02d0ccbb-93c6-4b5e-aac8-d109b7027340) |
+
+⬜ **Not measured and not heard.** The r49 measurement pass (breaks-present percentage, longest gap,
+pairwise timbre distance) has not been run on these — say the word and it runs off `suno.mts record`,
+which spends no download allowance. 🔴 **Watch `liquid` and `motown` for the r49 `jazzstep` / `ragga`
+fault** — a genre with a built-in habit of dropping to the band left 12-14 s holes in the breaks.
+
+⬜ **The reference `1127446d` is still not in a workspace**, so `record` cannot reach it and nothing
+here can be measured against it directly. One human drag into `camping-Jack` fixes that for good.
+
+### r50 liquid atom
+
+Style:
+
+```
+Liquid drum and bass led by a warm Rhodes electric piano and deep lush chords. It opens with no drums - a lone sad piano and a solo violin - the first MC quiet, close and emotional over them, but only for three lines. Then the drop: 174 BPM UK drum and bass at full weight, chopped amen breaks, skippy two-step shuffles folded into the roll, and a deep rolling sub that never lets go. The Rhodes and the chords play on through every verse and over every drop; the Rhodes and the breaks are one piece of music, not a remix, and the breaks never stop, not for one bar. Warm and soulful under bleak words, night-bus melancholy, wide and deep, mixed raw and never glossy. The sung chorus hook comes back three times. Two British men rap fast and tight on the 174 grid, the same breakneck pace from first line to last: a gravelly raspy older English storyteller, flat and talky, then a clipped BBC newsreader, cold and just as fast.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jump up, wobble bass, dubstep, EDM drops, glossy production, radio pop, orchestral film score, epic trailer music, brass braams, war drums, soul diva, R&B vocal, smooth male singer, crooner, sung verses, melodic rap, liquid vocal hook, string quartet, industrial percussion, post-punk guitar, chorused guitar, Moog arpeggio, analogue synth lead, Motown horns, tambourine, brass band
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r50 techstep atom
+
+Style:
+
+```
+Techstep drum and bass, 1997 cold: metallic industrial percussion, detuned machine stabs and a filthy growling Reese bass. It opens with no drums - a lone sad piano and a solo violin - the first MC quiet, close and emotional over them, but only for three lines. Then the drop: hard 174 BPM breakbeats chopped to splinters, two-step shuffles buried deep in the roll, and sub pressure that does not lift. The machine stabs hammer through every verse and over every drop - the metal and the breaks are one piece of music, not a remix - and the breaks never stop, not for one bar. Hostile, claustrophobic and sci-fi, drums bone dry and close, every surface corroded, no warmth anywhere. A sung chorus hook returns three times, the one melodic thing in it. Two British men rap fast and tight on the 174 grid, the same breakneck pace from first line to last: a gravelly raspy older English storyteller, flat and talky, then a clipped BBC newsreader, cold and just as fast.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jump up, wobble bass, dubstep, EDM drops, glossy production, radio pop, orchestral film score, epic trailer music, brass braams, war drums, robot vocal, vocoder, sci-fi spoken sample, MC hype chants, ragga toaster, rave stabs, Rhodes piano, lush chords, string quartet, violin section, post-punk guitar, Moog arpeggio, Motown horns, tambourine, soul sample, brass band
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r50 quartet atom
+
+Style:
+
+```
+A bleak string quartet welded to drum and bass: two violins, a viola and a cello sawing one repeating minor figure, bowed hard near the bridge, four players in a cold room, never a film score. It opens with no drums - a lone sad piano and a solo violin - the first MC quiet, close and emotional over them, but only for three lines. Then the drop: 174 BPM UK drum and bass at full weight, chopped amen fills at every turn, two-step shuffles in the roll, heavy rolling sub. The quartet keeps sawing through every verse and right across every drop - the strings and the breaks are one piece of music, not a remix - and the breaks never stop, not for one bar. Chamber-close and dusty against dry drums, grieving, never lush and never epic. Three times a sung chorus hook returns. Two British men rap fast and tight on the 174 grid, the same breakneck pace from first line to last: a gravelly raspy older English storyteller, flat and talky, then a clipped BBC newsreader, cold and just as fast.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jump up, wobble bass, dubstep, EDM drops, glossy production, radio pop, orchestral film score, epic trailer music, brass braams, war drums, opera vocal, classical soprano, choir, choral, art song, lieder, full orchestra, symphony orchestra, lush strings, cinematic swell, Rhodes piano, industrial percussion, post-punk guitar, Moog arpeggio, analogue synth lead, Motown horns, tambourine, brass band
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r50 postpunk atom
+
+Style:
+
+```
+Bleak English post-punk guitar over drum and bass: one scraping chorused electric guitar figure and a high melodic bass line, played flat in a grey northern room. It opens with no drums - a lone sad piano and a solo violin - the first MC quiet, close and emotional over them, but only for three lines. Then the drop: 174 BPM UK drum and bass at full weight, rolling amen breaks, skippy two-step shuffles folded into the roll, heavy sub underneath. The guitar figure repeats under every verse and rings out right across every drop - the guitar and the breaks are one piece of music, not a remix - and the breaks never stop, not for one bar. Industrial, overcast and severe, thin plate reverb, tape-flat production, nothing polished. The sung hook returns three times, big and melodic. Two British men rap fast and tight on the 174 grid, the same breakneck pace from first line to last: a gravelly raspy older English storyteller, flat and talky, then a clipped BBC newsreader, cold and just as fast.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jump up, wobble bass, dubstep, EDM drops, glossy production, radio pop, orchestral film score, epic trailer music, brass braams, war drums, indie sung vocal, post-punk singing, baritone crooner, shoegaze vocal, goth vocal, Rhodes piano, string quartet, industrial percussion, Moog arpeggio, analogue synth lead, Motown horns, tambourine, brass band
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r50 analogue atom
+
+Style:
+
+```
+Analogue 1980s synth hardware driving drum and bass: a Moog bass arpeggio running sixteenths, cold Juno pads and tape delay, hardware hiss on everything. It opens with no drums - a lone sad piano and a solo violin - the first MC quiet, close and emotional over them, but only for three lines. Then the drop: 174 BPM UK drum and bass at full weight, chopped amen breaks, skippy two-step shuffles folded into the roll, a growling sub under the arpeggio. The arpeggio runs unbroken beneath every verse and straight through every drop - the synths and the breaks are one piece of music, not a remix - and the breaks never stop, not for one bar. Airless, mechanical and nocturnal, narrow and cold, machine-made on purpose. A sung chorus hook comes round three times. Two British men rap fast and tight on the 174 grid, the same breakneck pace from first line to last: a gravelly raspy older English storyteller, flat and talky, then a clipped BBC newsreader, cold and just as fast.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jump up, wobble bass, dubstep, EDM drops, glossy production, radio pop, orchestral film score, epic trailer music, brass braams, war drums, synthpop vocal, vocoder, robot vocal, 80s pop singer, new romantic croon, Rhodes piano, string quartet, post-punk guitar, chorused guitar, industrial percussion, Motown horns, tambourine, brass band
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r50 motown atom
+
+Style:
+
+```
+Chopped 1960s soul records over drum and bass: cracked horn stabs, an upright piano vamp, tambourine and vinyl crackle, sampled and chopped like a 1995 jungle plate rather than played live. It opens with no drums - a lone sad piano and a solo violin - the first MC quiet, close and emotional over them, but only for three lines. Then the drop: 174 BPM UK drum and bass at full weight, amen breaks torn across the turns, skippy two-step shuffles folded into the roll, deep rolling sub. The horn stabs punch through every verse and across every drop - the samples and the breaks are one piece of music, not a remix - and the breaks never stop, not for one bar. Dusty, hot and cracked against cold drums, sampler-crunched, loud and unpolished. The sung chorus hook lands three times. Two British men rap fast and tight on the 174 grid, the same breakneck pace from first line to last: a gravelly raspy older English storyteller, flat and talky, then a clipped BBC newsreader, cold and just as fast.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jump up, wobble bass, dubstep, EDM drops, glossy production, radio pop, orchestral film score, epic trailer music, brass braams, war drums, soul singer, gospel vocal, diva, doo-wop harmony, backing singers, female soul vocal, Motown singing, Rhodes piano, string quartet, post-punk guitar, chorused guitar, Moog arpeggio, analogue synth lead, industrial percussion
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the whole arrangement arrives with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the whole arrangement and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.41 Round r49 — six vibes, six instrument families, D&B all the way through (2026-09-18)
+
+**Brief, Jack 2026-09-18:** *"they are not varied enough, make ones with different vibes and
+instruments. Their should be drum and bass elements throughout... also remember this
+https://suno.com/song/1127446d-abe8-4079-9bbe-6b281e12aa74 this is the one we are trying to improve
+upon."*
+
+### 🔴 The reference was wrong for two rounds
+
+Jack's actual target is **[`1127446d`](https://suno.com/song/1127446d-abe8-4079-9bbe-6b281e12aa74)**,
+3:22, auto-titled *"Once again, and you catching my eye,"* — Suno names a take from its first line
+when no title is set, so this one was **made by hand, not by our automation**, which is why it never
+appeared in a `takes` listing and why r47 guessed `3eaed0b3` instead. That guess was flagged
+unconfirmed in §v6.39 and it was wrong.
+
+✅ **The diagnosis survives intact:** `1127446d` carries the **byte-identical r19 `reese` Style and
+Exclude boxes** (checked off its own song page). So everything in §v6.39's "everything Jack likes
+happened AGAINST the prompt" table still applies — `piano` banned, no orchestral word, no chorus in
+the lyrics, and `steady rap pace, not double time` asking for the delivery he disliked.
+
+🔑 **Rule this earns: a take's title is evidence about how it was made.** An auto-title taken from
+the first lyric line means no title was set, which means our tooling did not make it. Ask for the
+**song ID**, never the title.
+
+### Why r47 and r48 were not varied enough
+
+Both rounds passed the BOLD check on the letter and failed it in spirit. r48's three lanes were
+`grimedrop` / `grimescore` / `grimeraw` — **one genre with three production sentences**. The shared
+run was only 27-31%, but every lane was still grime-over-D&B with strings dialled up or down. The
+rule's own words: *"Ten variations that all say dry, raw and close-mic'd are one record."*
+
+🔑 **What actually makes a lane different is the named instrument.** Confirmed externally this round:
+*"Suno is extremely sensitive to named instruments, and a single instrument can completely shift the
+output"*, and *"lead with genre - Suno weights the first 3-5 tokens heavily"*
+([Medium prompt guide](https://medium.com/@abhisheksd2003/the-ultimate-suno-ai-prompt-guide-with-clear-tested-examples-2d827ffe8b3a),
+[Suno prompt playbook](https://suno.ing/tutorials/suno-prompt-playbook/)). So each lane now **opens
+on a different instrument family in its first tokens**, and the D&B mechanics follow immediately.
+
+### 🔑 "Drum and bass elements throughout" is an arrangement instruction, not a genre one
+
+Jack's second ask. A fusion that alternates reads as a remix. Every lane therefore states the
+**unity sentence** — *"the X and the breaks are one piece of music, not a remix"* — and says in
+words that the guest instrument plays *through* the drops rather than between them. The three-line
+slow opening he asked for in r48 is kept, but **each lane opens on its own instrument**, not the
+piano: that is the structure he asked for and the variety he is asking for now, at the same time.
+
+### The six lanes — all six are British traditions
+
+| Lane | Instrument family | Grounding |
+|---|---|---|
+| **`pitband`** | Northern colliery brass band — cornets, tenor horns, euphonium, marching bass drum | [British brass band](https://en.wikipedia.org/wiki/British_brass_band), Grimethorpe and Easington; [Hackney Colliery Band](https://www.wahwah45s.com/artists/the-hackney-colliery-band/) already fuses brass with electronica. **A pit band for a song about who got left behind is the most on-message instrument in the list** |
+| **`jazzstep`** | Bristol jazzstep — walking upright bass, Rhodes, muted trumpet, brushed ride | [Jazzstep](https://electronicmusic.fandom.com/wiki/Jazzstep); [Roni Size & Reprazent](https://en.wikipedia.org/wiki/Roni_Size_%26_Reprazent) won the Mercury Prize in 1997 playing D&B with a live band |
+| **`ragga`** | 1994 ragga jungle — melodica, dub sirens, air horns, spring reverb, tape hiss | [Jungle music](https://en.wikipedia.org/wiki/Jungle_music); 1994 was the ragga-jungle year (*Incredible*, *Original Nuttah*), and the dub siren comes from King Tubby |
+| **`dhol`** | Asian Underground — dhol, tabla, sitar drone, sarangi | [Asian Underground](https://en.wikipedia.org/wiki/Asian_underground); Talvin Singh's *Anokha* (1997) and [Asian Dub Foundation](https://en.wikipedia.org/wiki/Asian_Dub_Foundation), who fused jungle with dhol in London |
+| **`organ`** | Cathedral pipe organ plus a dirty Hammond | no fusion precedent needed — it is the biggest, coldest instrument in Britain and the maximum contrast with a breakbeat |
+| **`rave`** | 1992 breakbeat hardcore — orchestral hit stabs, Mentasm hoover, euphoric rave piano | gives Jack back the **piano** he liked, in a completely different register: white-label rave, not sad ballad |
+
+✅ **BOLD check passed properly this time.** Across all **fifteen** lane pairs the longest shared run
+is **228 characters** — the 226-char cast sentence plus two. Genre, instruments, arrangement and
+production sentence are *entirely* different in every lane. Compare r48's 27-31%.
+
+### 🔑 Every lane bans its own genre's singers
+
+House rule, from the r40 `opera` finding: **the genre names the music, not the voice.** Naming a
+tradition summons its vocalists along with its instruments, so each lane's Exclude box bans the
+vocal family its own Style box would otherwise drag in — `patois vocal, dancehall toaster` in
+`ragga`, `bhangra vocal, qawwali` in `dhol`, `choir, Gregorian chant` in `organ`, `scat, crooner` in
+`jazzstep`, `male voice choir, oompah` in `pitband`, `diva vocal, happy hardcore vocal` in `rave`.
+Each lane also bans **all five other lanes' instrument families**, so nothing bleeds.
+
+Words unchanged again: the same 60 lines, the same chorus built from lines already in the song.
+
+### ⚠️ One deliberate deviation: no weirdness pair this round
+
+Standing rule is every attempt runs at two weirdness settings. **This round runs six lanes at
+weirdness 50 only** — one Create each, 12 takes, the same spend as r47 and r48. The trade is
+deliberate: r47 and r48 both ran w40/w60 and **nobody has listened to either**, so the pair has
+bought no information yet, while lane breadth is exactly what Jack has now asked for twice. 50 is
+the midpoint of the two settings already used, held constant so the lanes compare cleanly.
+🔴 **Re-run the winning lane as a proper pair before drawing any weirdness conclusion.**
+
+Settings: v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender **Male** ·
+Personalize off · no Voice · **Duration 195 s** (proven in r48: 12/12 at 3:14-3:16) · workspace
+`camping-Jack` · Weirdness **50**. Titles `camping-r49-<lane>-v6-w50`.
+
+### Generated and measured 2026-09-18 — 6 Creates, 12 takes, workspace `camping-Jack`
+
+One take per lane recorded and measured. **All six came back 194-197 s** against the 195 s target,
+so Duration is now **18 for 18** across r48 and r49.
+
+#### ✅ The variety complaint is answered, and it is measurable
+
+Each take was reduced to a timbre fingerprint (20 MFCC means + standard deviations, spectral
+contrast, chroma) and the lanes compared pairwise. Bigger distance = more different-sounding.
+
+| Round | lanes | pairwise timbre distance (min / mean / max) |
+|---|---|---|
+| **r48** grime lanes | 3 | 0.085 / **0.098** / 0.119 |
+| **r49** instrument lanes | 6 | 0.103 / **0.168** / 0.278 |
+
+🔑 **r49's lanes sit 1.7x further apart on average and 2.3x further at the extremes** — and r49's
+*closest* pair (0.103) is nearly as far apart as r48's *furthest* (0.119). The two rounds barely
+overlap. **Naming a different instrument family in the opening tokens is what produced variety;
+rewriting the production sentence, which is all r48 did, did not.**
+
+#### ✅ "Drum and bass elements throughout" — measured, and two lanes fall short
+
+Percentage of the track after 0:45 where the percussive component is above 40% of its 85th
+percentile — i.e. the kit is actually playing — and the longest continuous stretch without it.
+
+| Lane | takes | breaks present | longest gap |
+|---|---|---|---|
+| `pitband` | [630cbd21](https://suno.com/song/630cbd21-a528-4728-bf2d-52e958dc4bbc) · [f084de49](https://suno.com/song/f084de49-681d-4ba0-975d-485b5a4e4079) | 98% | 3s |
+| `jazzstep` | [577815af](https://suno.com/song/577815af-1aac-4069-afc7-831e96a8654a) · [03727477](https://suno.com/song/03727477-a677-4055-8a3c-be53d9caa413) | 84% | 14s |
+| `ragga` | [dd69b5d4](https://suno.com/song/dd69b5d4-f2bb-4837-9a74-08954222fdd4) · [6d8129de](https://suno.com/song/6d8129de-d8d2-45ba-aaa8-72e3408a0cb6) | 89% | 12s |
+| `dhol` | [922c0ec9](https://suno.com/song/922c0ec9-3632-4b13-811a-cbb22b2cbbd1) · [1341bfbd](https://suno.com/song/1341bfbd-4656-42cf-ad13-62d5f38987d0) | 95% | 3s |
+| `organ` | [245adc25](https://suno.com/song/245adc25-4cd2-475a-a070-2e85696dfe00) · [c0b36e4a](https://suno.com/song/c0b36e4a-cbd3-42fc-ae05-98bd339c7230) | 92% | 4s |
+| `rave` | [49616711](https://suno.com/song/49616711-b2e2-4ed3-ba51-9f644bb6ffde) · [8b1a06e9](https://suno.com/song/8b1a06e9-f8c2-4206-8061-18ac384ebf25) | 97% | 3s |
+| *reference* `1127446d`'s twin `3eaed0b3` | — | 93% | 4s |
+
+- ✅ **`pitband` (98%), `rave` (97%), `dhol` (95%) and `organ` (92%)** all match or beat the
+  reference, with no gap longer than four seconds. The breaks genuinely run throughout.
+- 🟡 **`jazzstep` (84%, a 14 s gap) and `ragga` (89%, a 12 s gap)** do not. Both genres have a
+  built-in habit of dropping to the band or to the dub, and the Style boxes did not forbid it.
+  **If either wins on the ear, add an explicit "the breaks never stop, not for one bar" clause.**
+
+#### 🔴 The reference take cannot be recorded, and the reason is a tooling limit
+
+`record 1127446d` returns `TAKE_NOT_FOUND`. It is not in `camping-Jack`, nor in `camping background
+music` (36 rows) nor the workspace matching `camping` (118 rows), all scanned to the bottom.
+
+🔑 **`record` can only reach a take that is in a workspace shown on the create page.** A take with no
+workspace lives in the Library, which the create page never lists — and a hand-made take (which this
+is, per its auto-title) usually has no workspace. **The fix is one human drag into `camping-Jack`.**
+⬜ Worth a `WORKSPACE_ONLY` error code so the message says this instead of listing three titles.
+
+This costs nothing analytically: `1127446d` carries byte-identical boxes to `3eaed0b3`, which **is**
+recorded and measured, so the baseline row above stands.
+
+#### ⬜ Still not heard
+
+Whether a colliery band over a breakbeat is glorious or ridiculous is not a question a spectrum
+answers. Six previews are on Jack's desktop. `listen_describe` still has no `GEMINI_API_KEY`.
+
+### r49 pitband atom
+
+Style:
+
+```
+Northern English colliery brass band welded to drum and bass. Cornets, tenor horns, trombones and a huge euphonium playing one bleak hymn-like figure, with a marching bass drum. It opens on a lone cornet with no drums at all, and the first MC comes in over it quiet, slow and emotional - but only for three lines. Then the drop: fast 174 BPM UK drum and bass, hard chopped jungle breaks, rolling percussion and a heavy growling Reese sub - and the band never stops, stabbing on the downbeats through every verse and blaring over every drop. The band and the breaks are one piece of music, not a remix. Proud, grieving and industrial, brass recorded in a cold hall, breaks close and dry. Two English grime MCs trade verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, choir, choral, hymn singing, male voice choir, oompah, marching band parade, comedy brass, jazz, upright double bass, Rhodes, muted trumpet, brushed drums, reggae, dub, melodica, dub siren, tape hiss, dhol, tabla, sitar, Indian classical, bhangra, pipe organ, church organ, Hammond organ, sacred, liturgical, rave piano, orchestral hit stabs, hoover synth, 1992 hardcore, breakbeat hardcore
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the strings arrive with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the strings and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the strings and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r49 jazzstep atom
+
+Style:
+
+```
+Bristol jazzstep: live-band drum and bass with a walking upright double bass, warm Rhodes chords, a muted trumpet and brushed ride cymbals. It opens on the upright bass and the Rhodes alone with no drums at all, and the first MC comes in over them quiet, slow and emotional - but only for three lines. Then the drop: fast 174 BPM chopped jungle breaks and a deep round sub underneath, and the jazz band keeps playing right through - the double bass walking under the breaks, the trumpet answering every line. The band and the breaks are one piece of music, not a remix. Smoky, loose and live, played by humans in a room, warm and unquantised. Two English grime MCs trade verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, jazz vocals, scat, crooner, lounge singer, soul singer, smooth jazz, elevator music, big band swing, brass band, cornet, euphonium, tenor horn, colliery band, reggae, dub, melodica, dub siren, tape hiss, dhol, tabla, sitar, Indian classical, bhangra, pipe organ, church organ, Hammond organ, sacred, liturgical, rave piano, orchestral hit stabs, hoover synth, 1992 hardcore, breakbeat hardcore
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the strings arrive with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the strings and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the strings and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r49 ragga atom
+
+Style:
+
+```
+Raw 1994 ragga jungle at 174 BPM: Amen and Think breaks chopped to ribbons, a vast round sub, dub sirens, air-horn stabs, spring reverb throws, tape hiss and saturation left in. A lone melodica carries the tune. It opens on that melodica alone with no drums at all, and the first MC comes in over it quiet, slow and emotional - but only for three lines. Then the drop: the breaks tear in and never stop, timestretched snares smeared across the bar, sirens rising through every section. The dub and the breaks are one piece of music, not a remix. Mid-heavy, narrow and hot, a dubplate cut in a bedroom at two in the morning. Two English grime MCs trade verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, patois vocal, dancehall toaster, ragga vocal, reggae singer, Jamaican accent, toasting, roots reggae vocal, brass band, cornet, euphonium, tenor horn, colliery band, jazz, upright double bass, Rhodes, muted trumpet, brushed drums, dhol, tabla, sitar, Indian classical, bhangra, pipe organ, church organ, Hammond organ, sacred, liturgical, rave piano, orchestral hit stabs, hoover synth, 1992 hardcore, breakbeat hardcore
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the strings arrive with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the strings and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the strings and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r49 dhol atom
+
+Style:
+
+```
+Asian Underground drum and bass: a hammering dhol and fast tabla locked to chopped jungle breaks, with a low sitar drone and a keening sarangi line over the top. It opens on the sitar drone and one tabla with no kit at all, and the first MC comes in over them quiet, slow and emotional - but only for three lines. Then the drop: fast 174 BPM breaks and a heavy growling Reese sub crash in, the dhol doubling the snare through every bar and the tabla rolling under the whole record. The Indian percussion and the breaks are one piece of music, not a remix. Hypnotic, urgent and dark, dense and close. Two English grime MCs trade verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, bhangra vocal, Punjabi vocal, Bollywood vocal, qawwali, Hindi lyrics, Indian singing, new age, meditation, world music, brass band, cornet, euphonium, tenor horn, colliery band, jazz, upright double bass, Rhodes, muted trumpet, brushed drums, reggae, dub, melodica, dub siren, tape hiss, pipe organ, church organ, Hammond organ, sacred, liturgical, rave piano, orchestral hit stabs, hoover synth, 1992 hardcore, breakbeat hardcore
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the strings arrive with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the strings and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the strings and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r49 organ atom
+
+Style:
+
+```
+A vast cathedral pipe organ over drum and bass, with a dirty Hammond organ growling underneath it. The organ plays one slow minor figure like a funeral voluntary. It opens on that organ alone with no drums at all, and the first MC comes in over it quiet, slow and emotional - but only for three lines. Then the drop: fast 174 BPM UK drum and bass, hard chopped breaks and a heavy growling Reese sub, and the organ holds its chords straight through, swelling into the drops until it is louder than everything. The organ and the breaks are one piece of music, not a remix. Enormous, cold and sacred, a huge stone room against bone-dry drums. Two English grime MCs trade verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, choir, choral, gospel choir, hymn, cathedral choir, operatic vocals, Gregorian chant, ambient, drone music, brass band, cornet, euphonium, tenor horn, colliery band, jazz, upright double bass, Rhodes, muted trumpet, brushed drums, reggae, dub, melodica, dub siren, tape hiss, dhol, tabla, sitar, Indian classical, bhangra, rave piano, orchestral hit stabs, hoover synth, 1992 hardcore, breakbeat hardcore
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the strings arrive with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the strings and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the strings and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r49 rave atom
+
+Style:
+
+```
+1992 British breakbeat hardcore rave crashed into modern drum and bass: stabbing orchestral hit samples, a screaming Mentasm hoover, a rolling euphoric rave piano riff and a pitched-up siren. It opens on that rave piano riff alone with no drums at all, and the first MC comes in over it quiet, slow and emotional - but only for three lines. Then the drop: fast 174 BPM chopped breaks and a filthy sub, the orchestral hits stabbing on every turnaround and the hoover tearing across the drops. The rave stabs and the breaks are one piece of music, not a remix. Bright, hard and nostalgic, loud and a bit cheap, mixed like a white label. Two English grime MCs trade verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, US rap, American rap, trap, boom bap, teenage voice, boyish voice, autotune, female vocal, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, crowd noise, applause, diva vocal, female rave vocal, happy hardcore vocal, MC hype chants, happy hardcore, gabber, trance, EDM festival, brass band, cornet, euphonium, tenor horn, colliery band, jazz, upright double bass, Rhodes, muted trumpet, brushed drums, reggae, dub, melodica, dub siren, tape hiss, dhol, tabla, sitar, Indian classical, bhangra, pipe organ, church organ, Hammond organ, sacred, liturgical
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the strings arrive with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the strings and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the strings and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.40 Round r48 — three lines slow, then grime (2026-09-18)
+
+**Brief, Jack 2026-09-18, on r47:** *"'Once again, and you catching my eye, / and you looking to the
+side in shame, but why / now, let me explain, how I'm just poor' this is the only part that should be
+slower and emotional, then it should drop and get fast. also do a grime voice this time."*
+
+Two asks, and r47's measurements already said what to do about the first one.
+
+| Ask | Into the boxes |
+|---|---|
+| **only those three lines slow** | r47 gave the piano **six** lines plus a standalone `[Intro]`, and measured 44-64s of it against r19's 25. The instrumental intro is **deleted** — the record now opens on the first sung word, as Jack described it ("it slows down *with the first lyrics*") — and the `[Drop]` cue moves up to land after line three. The Style box says it in words too: `but only for three lines` |
+| **then drop and get fast** | the drop cue carries the whole arrangement (`the breakbeats and the heavy sub slam in at full weight`), and one cue pins the flow for the rest of the song: `rapid-fire from here to the end, never slowing`. In the Style box the pace is a **positive** — `rapid-fire on the 174 grid and never slowing for a punchline` — never a `slow tempo` ban, which is what strangled the emotional opening in the pre-r47 rounds |
+| **grime voice** | r43's **proven** cast sentence, verbatim: *"Two English grime MCs trade verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking"* (§v6.35). It keeps the gruff/clipped contrast **inside** the grime pool, so the two men stay different without leaving the pool Jack asked for |
+
+### 🔴 Two traps this round had to dodge
+
+- **r43's exclude list bans `singing, sung chorus, melodic rap, vocal melody, harmonies`.** Jack
+  likes the sung chorus, so the grime casting was lifted from r43 and its **excludes were not**.
+  Copying a proven atom wholesale would have deleted the feature he asked to keep.
+- **`slow tempo` and `half time` stay OUT of the excludes.** They are the obvious fix for "make it
+  fast" and they are the wrong one — they fight the three-line piano opening, which is the thing he
+  likes most. Slowness is attacked as **delivery** instead: `laid-back, chill, mumbled, lazy flow`.
+
+### 🔑 Fewer cues, because he asked for speed
+
+Bracket cues went **23 → 17**, and the per-couplet cues inside both verses are gone in favour of one
+fixed short label per MC (`[gruff MC]`, `[cold MC]`), repeated identically. A bracket every couplet
+chops a verse into micro-sections that each re-decide their phrasing — the first thing to strip when
+a delivery needs to be fast (`suno-prompt`, "Two characters in one song").
+
+✅ **Verified mechanically: all 60 lyric lines are byte-identical to r47.** No words added, none
+lost. The chorus is still built from `I can't live like this forever` and `I might be insane but I
+do want change`.
+
+### The three lanes, and the question they settle
+
+r47 measured something worth exploiting: **the more orchestral the lane, the less the bass dropped**
+(`cinematic` had the lowest drop and the lowest sub peak of all four takes). These three lanes put
+that on the axis deliberately, from least orchestral to most.
+
+| Lane | The bet |
+|---|---|
+| **`grimedrop`** | almost no score — piano and solo violin at the edges, everything else is breaks and Reese. Mixed `so every drop hits hardest` |
+| **`grimescore`** | r43's hybrid film score at full strength: ostinato, braams, `cheap synth strings`, violin over the top. The most "orchestral mix" |
+| **`grimeraw`** | eskibeat grime welded to D&B, square-wave stabs, sublow, `mixed loud and mean like a pirate radio dubplate`. No score at all |
+
+**Bold check:** the longest run shared by any two Style boxes is **228-230 chars = 27-31%**, and that
+run *is* the 226-char cast sentence. Every production sentence is different. Cast and words shared,
+nothing else — which is what the rule allows.
+
+Settings: v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender **Male** ·
+Personalize off · no Voice · **Duration 195 s (new this round)** · workspace `camping-Jack` ·
+Weirdness {40, 60}. 🔴 **Duration is set because r47 ran away** — 4:38 and 4:55 on Auto against
+r19's 2:46. 195 aims slightly above a ~3:00 target, because Suno's duration shortens reliably and
+fails to stretch. ⚠️ r17 saw a Custom duration coincide with a doubled credit cost; ⬜ still never
+isolated, and the counter read `null` again this round so the spend is **unrecorded**.
+
+### Generated 2026-09-18 — 6 Creates → 12 takes, workspace `camping-Jack`
+
+Form asserted before every Create; every load read back style, excludes, **77 lyric paragraphs**,
+model, Variety, Max Mode, Vocal Gender, Personalize, Duration, title and workspace.
+
+| Lane | w40 | w60 |
+|---|---|---|
+| `grimedrop` | [53d24ba0](https://suno.com/song/53d24ba0-1b0f-435b-94a4-b81f5ada92c3) · [3002960d](https://suno.com/song/3002960d-f6b4-42ad-9ca0-97bec3c1fddf) | [6b0f7ad5](https://suno.com/song/6b0f7ad5-8881-49ad-8398-d613fe904e0a) · [e00dec11](https://suno.com/song/e00dec11-bba4-4a78-b480-f0c4b6d10331) |
+| `grimescore` | [b831e7af](https://suno.com/song/b831e7af-c94d-46b7-9e3b-64f24809e9d4) · [e2f9f815](https://suno.com/song/e2f9f815-d041-42b2-a72f-1b8bb804b558) | [5b2efc5b](https://suno.com/song/5b2efc5b-04fb-4113-a5ad-2aeaa9d89335) · [11b7d33d](https://suno.com/song/11b7d33d-b383-4033-ac7c-3cd69b8b79d5) |
+| `grimeraw` | [0858dc29](https://suno.com/song/0858dc29-9f43-4224-923e-18d3c6c4f67c) · [43156cd8](https://suno.com/song/43156cd8-d233-456a-89b7-af3811135fff) | [3ebe6a11](https://suno.com/song/3ebe6a11-7c32-49e3-84b5-317657a0cb8b) · [230273cd](https://suno.com/song/230273cd-4b9e-4c8f-a29c-9b3f116cd42f) |
+
+⬜ **Nobody has listened yet**, and this machine still cannot (`listen_describe` has no
+`GEMINI_API_KEY`). Recordings + band maps of one w60 take per lane are in progress; whether the
+opening really is three lines, whether the MCs read as grime, and whether the M3 couplet is finally
+fast are all open.
+
+🟡 **Cosmetic tool bug spotted:** with Duration on Custom, `status` reports
+`durationMode: "Male+Off+Off+camping-Jack"` — a selector picking up neighbouring segmented buttons.
+`durationSec` and the Duration slider both read correctly, so nothing is at risk; logged, not fixed.
+
+### Measured 2026-09-18 — what landed, and the one lane to avoid
+
+One w60 take per lane recorded (`suno.mts record`, no download spent) and measured against Jack's
+pick and r47's best.
+
+#### ✅ Duration is proven. 12 takes out of 12.
+
+Every take came back **3:14-3:16** against a 195 s target, across all three lanes and both weirdness
+settings. That closes the standing ⬜ in `docs/suno-gpt/automation.md` §"Timing" — *"Not yet proven:
+that a set duration actually changes the take's length"*. **It does, to within about a second**, and
+it fixed r47's runaway (4:38 and 4:55 on Auto) in one move.
+
+⚠️ The credit counter read `null` again, so it is still **unknown** whether a Custom duration costs
+double, which was r17's suspicion. Two rounds have now used it without being able to price it.
+
+#### The lane comparison
+
+| Take | length | drop x | sub peak | RMS spread | vocal-band rate, 20-60s |
+|---|---|---|---|---|---|
+| ⭐ `r19-reese-w60` (Jack's pick) | 2:46 | 1.9x | 36.7 | 6.9 dB | 5.4 /s |
+| `r47-reesestrings-w60` | 2:56 | 2.7x | 33.8 | 11.3 dB | 8.9 /s |
+| 🥇 **`r48-grimedrop-w60`** | **3:16** | 2.2x | 36.8 | **11.6 dB** | **10.8 /s** |
+| `r48-grimescore-w60` | 3:15 | 2.4x | **26.0** | 9.0 dB | 🔴 **4.6 /s** |
+| `r48-grimeraw-w60` | 3:14 | 1.9x | **40.3** | 10.5 dB | 10.0 /s |
+
+- 🥇 **`grimedrop` is the pick on the numbers** — fastest vocal-band activity, the widest dynamic
+  range of any take across both rounds, and a sub peak matching Jack's favourite.
+- 🔴 **`grimescore` is the lane to avoid.** It is *slower than the take Jack complained about*
+  (4.6 /s against r19's 5.4) and has the weakest low end of all five. **Third independent
+  confirmation** that the more film score a Camping lane carries, the less it behaves like drum and
+  bass — after r43's Zimmer rounds and r47's `cinematic`.
+- 🔑 **So the orchestral layer is a garnish here, not a bed.** `grimedrop` carries piano and one
+  solo violin at the edges and beats the full-score lane on every axis Jack named.
+
+#### ⬜ What the measurements cannot settle
+
+- **Whether the slow part is really only three lines.** The 2 s band maps show sub rising from
+  ~0.03 to 0.29-0.43 at **0:10-0:12** in both `grimedrop` and `grimescore`, against 0:22-0:26 in r19
+  and 0:44 in r47 — so the opening is clearly much shorter and the timing is about right for three
+  lines. But energy cannot tell a third line from a fourth. 🟡 **Treat as indicative, not proven.**
+- **Whether the MCs read as grime**, whether the chorus is sung, whether the intro instrument is a
+  piano, and whether the M3 couplet is finally fast. All still ⬜ — no ears, human or machine.
+- ⚠️ **The vocal-band rate is a proxy, not a syllable count.** It is onset density in 300 Hz-3 kHz
+  after HPSS removes the drums, so pitched instruments land in it too. It is only trustworthy as a
+  *relative* comparison between takes of the same song, which is how it is used above.
+
+🟡 **Tool caveat:** `record` reported `durationSec: 288.16` for `6b0f7ad5` while writing a correct
+196.4 s file (the take is 3:16). The written file is right and complete; the reported number was not.
+⬜ Cause unknown — suspect the player's `duration` was read before the take's own blob finished
+loading.
+
+### r48 grimedrop atom
+
+Style:
+
+```
+It opens on a lone sad piano and a solo violin with no drums at all, and the first MC comes in over them quiet, slow and emotional - but only for three lines. Then the breakbeats and a heavy growling Reese sub slam in at full weight and never let go: fast 174 BPM UK drum and bass, hard rapid chopped jungle breaks, rolling hyperdetailed percussion, amen fills tearing across every section turn. The piano and the solo violin come back under the drops, with cheap synth strings and night-bus melancholy behind them. A big sung chorus hook returns three times. Huge, deep and clean, sub-heavy, mixed so every drop hits hardest. Two English grime MCs trade verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, blues, gospel, soul singer, US rap, American rap, trap, boom bap, UK drill, teenage voice, boyish voice, autotune, female vocal, choir, choral, operatic vocals, crowd noise, audience, applause, jump up, wobble bass, dubstep, EDM, liquid dnb, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, orchestral film score, string ostinato, brass braams, eskibeat, square wave lead, lo-fi, tape hiss
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the strings arrive with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the strings and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the strings and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r48 grimescore atom
+
+Style:
+
+```
+It opens on a lone sad piano and a solo violin with no drums at all, and the first MC comes in over them quiet, slow and emotional - but only for three lines. Then the drop: dark 174 BPM drum and bass, rolling chopped breakbeats and a heavy growling Reese sub, fused with a hybrid film score - cheap synth strings, a fast urgent string ostinato, deep braams swelling between verses and a lone violin crying over the top - so the score and the break are one piece of music, not a remix. A big sung chorus hook returns three times. Rich, layered and cinematic, wide stereo, every part in its own space, vocals dead centre. Two English grime MCs trade verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, blues, gospel, soul singer, US rap, American rap, trap, boom bap, UK drill, teenage voice, boyish voice, autotune, female vocal, choir, choral, operatic vocals, crowd noise, audience, applause, jump up, wobble bass, dubstep, EDM, liquid dnb, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, eskibeat, square wave lead, pirate radio, lo-fi, tape hiss, narrow stereo, gritty lo-fi
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the strings arrive with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the strings and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the strings and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r48 grimeraw atom
+
+Style:
+
+```
+It opens on a lone sad piano with no drums at all, and the first MC comes in over it quiet, slow and emotional - but only for three lines. Then it goes straight to war: eskibeat grime energy welded to 174 BPM drum and bass, square-wave grime lead stabs, a filthy sublow Reese, hard chopped breaks and gunfinger sirens, sparse and mean. The piano returns alone between the drops. A big sung chorus hook returns three times. Raw, gritty, mid-heavy and narrow, mixed loud and mean like a pirate radio dubplate, no polish anywhere. Two English grime MCs trade verses, loud and in front, one gruff and raw, one clipped and cold, both spitting fast, furious and emotional, voices close to cracking, rapid-fire on the 174 grid and never slowing for a punchline.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, blues, gospel, soul singer, US rap, American rap, trap, boom bap, UK drill, teenage voice, boyish voice, autotune, female vocal, choir, choral, operatic vocals, crowd noise, audience, applause, jump up, wobble bass, dubstep, EDM, liquid dnb, laid-back, chill, mumbled, lazy flow, spoken word, happy, uplifting, major key, comedic, novelty, parody, mono mix, muddy mix, orchestral film score, string ostinato, brass braams, cinematic score, glossy production, polished, wide stereo
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | a lone sad piano and a solo violin, no drums at all | gruff MC, quiet and close, slow and emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | the breakbeats and the heavy sub slam in at full weight, the strings arrive with them]
+[gruff MC, rapid-fire from here to the end, never slowing]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the strings and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break, the beat bigger | cold MC, rapid-fire, sharp and cutting]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the strings and the breaks together]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two MCs trade lines, the beat and the score at their biggest]
+[gruff MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.39 Round r47 — Jack's `reese` favourite, with the accidents written in (2026-09-18)
+
+**Brief, Jack 2026-09-18, on `camping-r19-reese-v6-w60`:** *"what i like about it is; the drum and
+bass with the orchestral mix, like the violins and stuff, i like that it slows down with the first
+lyrics in an emotional way with the piano, then it kicks up again with the drum and bass, so i like
+that it builds up and then drops the bass like drum and bass songs do (think chase and status) the
+chorus being sung is cool, this part "you want change but my pockets are empty / the only thing I'm
+changing, is the lane in my M3" slowed down and paused when he rapped it, this should be fast."*
+
+### 🔴 The round that was never logged
+
+`camping-r19-reese-v6-w40` / `-w60` (six takes, 2026-09-15 18:37, workspace `camping-Jack`) is **not
+in this sheet** — §v6.11 r19 is `dancin-174`. The `reese` boxes were recovered off the song page on
+2026-09-18 and are recorded at the bottom of this section as **r19 `reese` atom (recovered)**.
+
+### 🔑 Everything Jack likes happened AGAINST the prompt
+
+Recovered boxes vs. what he heard. This is the whole diagnosis:
+
+| What Jack likes | What the r19 `reese` boxes actually said |
+|---|---|
+| the emotional **piano** intro | 🔴 **`piano` is in the Exclude box.** It arrived anyway |
+| it **slows down** for the first lyrics | 🔴 Style: *"a solid, punchy 174 BPM drum and bass beat hits hard from the very first bar"*; the `[Intro]` cue: *"a solid, full drum and bass beat and heavy sub bass from the very first second"*. Both disobeyed |
+| the **violins** / orchestral mix | only `cheap synth strings` — no orchestral word anywhere. A weirdness-60 drift |
+| the **sung chorus** | 🔴 **there is no chorus in the lyrics.** Suno invented a sung hook out of existing lines |
+| **builds up then drops** | Excludes ban `slow tempo` and `tempo change`, which fight exactly that shape |
+
+**And the one thing he dislikes is the one thing the prompt asked for.** Style, verbatim: *"rapping
+his lines at a steady rap pace over the beat, **not double time and not half time**"* — plus a comma
+mid-line in `the only thing I'm changing, is the lane in my M3`, and a Verse 2 cue reading *"clipped
+and cold"*. The prompt requested a measured delivery and got one.
+
+🔑 **So the fix is not a better prompt, it is writing the accidents in.** Four lucky rolls at
+weirdness 60 will not repeat; named, they will.
+
+### Measured off the recording (`3eaed0b3`, 2:45)
+
+Recorded with `suno.mts record` (no download spent), measured with `scripts/audio-measure.py` and a
+per-2s band map. **−14.2 LUFS · true peak −1.4 dBTP · LRA 3.5 LU · stereo correlation 0.90 ·
+side/mid −12.6 dB · centroid 4.35 kHz.**
+
+| Section | Evidence |
+|---|---|
+| **0:00–0:22 the bit he loves** | RMS 0.042–0.060, harmonic energy 0.80–0.97 against percussive 0.28–0.59 — 22 seconds of quiet pitched material with almost no kit |
+| **0:24–0:26 the drop** | sub 0.36 → 0.81, percussive 0.40 → 0.87 in two buckets |
+| **0:54–1:06 · 1:44–1:50 · 2:08–2:12** | three more breakdown/drop cycles — the shape he calls Chase & Status |
+| **1:50–2:06 the biggest section** | RMS peaks 0.113, air and percussive both 1.00 |
+| 🟡 **tempo drift** | local tempo 86.1 (=172 double) for 0:00–1:36, then **89.1 (=178)** to the end — a ~3.5% speed-up despite `tempo change` being banned. ⬜ Not heard, only measured |
+
+⬜ **Not machine-listened.** This machine has no `GEMINI_API_KEY`, so `listen_describe` cannot run;
+everything above is measurement plus the recovered boxes, never a listen.
+
+### Three lanes
+
+The words do not change (Jack quoted the M3 couplet approvingly — **no new lyrics were invented**;
+the sung chorus is built from lines already in the song). What changes is the arrangement and the
+production sentence.
+
+| Lane | The bet |
+|---|---|
+| **A · `cinematic`** | the r17 `violin` film-score language fused onto the r19 casting — war drums, brass braams, string ostinato, solo violin. The biggest reading of "orchestral" |
+| **B · `pianolead`** | the piano is the lead instrument of the whole record and never leaves, hammered harder through the drop. The most emotional reading |
+| **C · `reesestrings`** | r19 `reese` itself, with the four accidents named. The conservative lane — same song, fixed |
+
+Common to all three: a drumless piano + solo violin opening that the **first verse is rapped over**;
+a riser and a full-weight drop partway through verse one; a **written sung chorus** three times;
+`piano`, `slow tempo` and `tempo change` **out of the excludes**; and the pace guard moved into the
+Style box as a positive (`fast and tight on the 174 grid, the same breakneck pace from the first line
+to the last`) instead of `steady rap pace, not double time`.
+
+Settings: v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender **Male** ·
+Personalize off · no Voice · Duration **Auto** · workspace `camping-Jack`. Grid: **Weirdness
+{40, 60}** — 60 because that is where Jack's take lives, 40 because the features that used to arrive
+by luck are now written down and should not need the drift. Titles `camping-r47-<lane>-v6-w40|w60`.
+
+🔑 **No new words.** The chorus is built from `I can't live like this forever` and `I might be insane
+but I do want change`, both already in the song. The only text edit anywhere is the comma removed
+from `the only thing I'm changing, is the lane in my M3` — Jack's one complaint, and punctuation is
+the brake.
+
+### Generated 2026-09-18 — 6 Creates → 12 takes, workspace `camping-Jack`
+
+Form asserted before every Create (style/exclude lengths, 83 lyric paragraphs, model v6, Variety
+Off, Max Mode off, Vocal Gender Male, Personalize off, no Voice, title, workspace). ⚠️ The credit
+counter read `null` throughout — the balance could not be captured, so **the spend is unrecorded**.
+At the v5.5 rate of 10 per Create that is ~60; ⬜ unverified on v6.
+
+| Lane | w40 | w60 |
+|---|---|---|
+| `cinematic` | [8a054334](https://suno.com/song/8a054334-6d58-40da-8db2-67e8a2454bf4) · [f49761f6](https://suno.com/song/f49761f6-df37-42eb-aca7-20b00b3e7c79) | [ed73b695](https://suno.com/song/ed73b695-b758-4f13-b3a8-047b1c1500b0) · [534c3125](https://suno.com/song/534c3125-1b1d-4c83-a84e-22a577cd2758) |
+| `pianolead` | [7c366d5b](https://suno.com/song/7c366d5b-5515-4b28-b2a8-9c0df770ae37) · [97a343e9](https://suno.com/song/97a343e9-6d6a-4839-8a35-e9ebfbc589b0) | [f9e73275](https://suno.com/song/f9e73275-5ab6-472c-acd3-2f48f2919ec7) · [8db3c075](https://suno.com/song/8db3c075-e2fa-4923-905b-542aa26f043a) |
+| `reesestrings` | [990770c5](https://suno.com/song/990770c5-4410-47c7-9f92-bbcb4aa74c1f) · [b87b9e5f](https://suno.com/song/b87b9e5f-ce48-4b59-bb22-56a5a92ef1ca) | [64bd2dee](https://suno.com/song/64bd2dee-4428-411b-ac32-b0c4a8bc0a55) · [14805fbd](https://suno.com/song/14805fbd-efe2-4a9a-8fec-a847537855cd) |
+
+### ✅ Measured: the two things Jack asked for both landed
+
+One w60 take per lane was recorded (`suno.mts record`, no download spent) and compared against
+Jack's pick on the same measurements. `intro` = seconds before RMS first holds above 70% of the
+body level for four consecutive seconds; `drop x` = body RMS ÷ intro RMS; the last column is a
+crude 95th/10th-percentile RMS spread, a proxy for how far the arrangement travels.
+
+| Take | length | intro | drop x | sub peak | RMS spread |
+|---|---|---|---|---|---|
+| ⭐ `r19-reese-v6-w60` (Jack's pick) | 2:46 | 25s | 1.9x | 36.7 | 6.9 dB |
+| `r47-reesestrings-v6-w60` | **2:56** | 44s | **2.7x** | 33.8 | 11.3 dB |
+| `r47-cinematic-v6-w60` | 4:38 | 53s | 2.4x | 32.0 | 8.4 dB |
+| `r47-pianolead-v6-w60` | 4:55 | 64s | 2.5x | **51.9** | **12.8 dB** |
+
+- ✅ **The drumless opening is no longer an accident.** 44–64 seconds of it in every lane, against
+  25 in the take that produced it by luck. Writing it in worked.
+- ✅ **The drop got deeper everywhere** — 2.4–2.7x against 1.9x, and the RMS spread went from 6.9 dB
+  to 8.4–12.8 dB. That is the build-and-drop shape Jack named, measured.
+- 🟡 **`cinematic` is the weakest lane on the thing he cares most about.** Lowest drop, lowest sub
+  peak, smallest spread: the film-score layer takes room the Reese wants. **The more orchestral the
+  lane, the less the bass drops.**
+- 🔑 **`pianolead` has the biggest low end of all four** (sub peak 51.9 against ~33) and the widest
+  spread. Counter-intuitive and the most interesting result of the round.
+- 🔴 **Length ran away on Duration Auto.** 4:38 and 4:55 against r19's 2:46 — the three written-in
+  chorus blocks plus v6's long Auto. Only `reesestrings` (2:56) is near the liked take. Next round
+  sets Duration explicitly; ⚠️ r17 saw Custom duration coincide with a doubled credit cost
+  (⬜ never isolated).
+
+⬜ **Not heard, by anyone or anything.** These are measurements of energy, not a listen: whether the
+intro instrument is a **piano** rather than strings, whether the **sung chorus** arrived, and whether
+the **M3 couplet is fast** are all still open. This machine has no `GEMINI_API_KEY`, so
+`listen_describe` cannot run — see the machine note in `docs/listening/automation.md`.
+
+### r47 cinematic atom
+
+Style:
+
+```
+It opens with no drums at all: a lone sad piano and a solo violin crying over it, and the first verse comes in quiet over them. Then a riser and the whole thing slams in - aggressive UK drum and bass at a fast 174 BPM, hard rapid chopped jungle breaks, rolling percussion and a heavy growling Reese sub, relentless. Fused with a real epic orchestral film score: pounding war drums, huge low brass braams, a fast urgent string ostinato and the solo violin screaming over the top, with cheap synth strings doubling the real ones. Rich layered arrangement, wide stereo headphone mix, breaks and strings hard left and right, vocals dead centre. A big sung chorus hook returns three times. Two British men rap fast and tight on the 174 grid, the same breakneck pace from the first line to the last: first a gravelly raspy older English storyteller, flat everyday accent, then a posh clipped BBC newsreader, just as fast. The orchestra, the violin and the breaks are one piece of music, not a remix.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, blues, Delta blues, gospel, soul singer, US rap, trap, boom bap, teenage voice, boyish voice, falsetto, autotune, female vocal, choir, crowd noise, audience, applause, jump up, wobble bass, dubstep, EDM drops, happy, uplifting, major key, half time, comedic, novelty, parody, mono mix, muddy mix, two-step garage, skippy garage, synth pad, string pad, glossy pop, radio pop, lo-fi, narrow stereo
+```
+
+Lyrics:
+
+```lyrics
+[Intro | a lone sad piano and a solo violin, no drums at all, no bass]
+[Verse 1 | still no drums, only the piano and the violin | the first man, gravelly raspy voice, quiet and close, almost talking, emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+[the strings swell and a riser builds underneath]
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+[Drop | the breakbeats and the heavy sub slam in at full weight, the strings arrive with them]
+[Verse 1 continues | the first man, gravelly raspy voice, fast and tight on the grid now, never slowing]
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[the first man, rising, never a scream]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[the first man, a weary bitter plea]
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the strings and the breaks together, both men]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break | the beat bigger than verse one | the second man, a BBC newsreader voice, clipped and cold, rapping fast and tight]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[the second man rising, biting and bitter]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+[the second man, same breakneck pace, spat straight through, no pause and no slowing]
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the strings and the breaks together, both men]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | straight in, no break | the two men trade lines, the beat and the orchestra at their biggest]
+[the first man, gravelly raspy voice, fast and tight]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the second man]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the second man]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[the first man, gravelly raspy voice, fast and tight]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the second man]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the first man, gravelly raspy voice, fast and tight]
+yet I don't begrudge you,
+we were on the same side all along
+[the second man]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r47 pianolead atom
+
+Style:
+
+```
+A sad piano is the lead instrument of this whole record. It opens alone with a solo violin, no drums at all, and the first verse is rapped quiet and close over it. Then a riser and 174 BPM drum and bass slams in underneath - rolling chopped breakbeats and a heavy growling Reese sub - but the piano keeps playing the same figure right through the drop, hammered harder, and real violins and violas rise behind it, with cheap synth strings under them. Night-bus melancholy. Warm, deep and unpolished, close and emotional rather than glossy, the piano loud and in front the whole way. A big sung chorus hook returns three times. Two British men rap fast and tight on the 174 grid, the same breakneck pace from the first line to the last: first a gravelly raspy older English storyteller with a flat everyday accent, then a posh clipped BBC newsreader, just as fast. The piano, the strings and the breaks are one piece of music, not a remix.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, blues, Delta blues, gospel, soul singer, US rap, trap, boom bap, teenage voice, boyish voice, falsetto, autotune, female vocal, choir, crowd noise, audience, applause, jump up, wobble bass, dubstep, EDM drops, happy, uplifting, major key, half time, comedic, novelty, parody, mono mix, muddy mix, orchestral fanfare, war drums, brass braams, neurofunk, wall of sound, glossy production, radio pop
+```
+
+Lyrics:
+
+```lyrics
+[Intro | a lone sad piano and a solo violin, no drums at all, no bass]
+[Verse 1 | still no drums, only the piano and the violin | the first man, gravelly raspy voice, quiet and close, almost talking, emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+[the strings swell and a riser builds underneath]
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+[Drop | the breakbeats and the heavy sub slam in at full weight, the strings arrive with them]
+[Verse 1 continues | the first man, gravelly raspy voice, fast and tight on the grid now, never slowing]
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[the first man, rising, never a scream]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[the first man, a weary bitter plea]
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the strings and the breaks together, both men]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break | the beat bigger than verse one | the second man, a BBC newsreader voice, clipped and cold, rapping fast and tight]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[the second man rising, biting and bitter]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+[the second man, same breakneck pace, spat straight through, no pause and no slowing]
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the strings and the breaks together, both men]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | straight in, no break | the two men trade lines, the beat and the orchestra at their biggest]
+[the first man, gravelly raspy voice, fast and tight]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the second man]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the second man]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[the first man, gravelly raspy voice, fast and tight]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the second man]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the first man, gravelly raspy voice, fast and tight]
+yet I don't begrudge you,
+we were on the same side all along
+[the second man]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r47 reesestrings atom
+
+Style:
+
+```
+It opens with no drums at all: a lone sad piano and a solo violin, and the first verse comes in quiet and emotional over them. Then a riser and a solid punchy 174 BPM drum and bass beat slams in at full weight, full breakbeats and a heavy rolling sub. UK garage storytelling and grime over drum and bass, skippy two-step shuffles folded into the drum and bass, a dark reese bass that grows meaner every section, chopped amen fills at every section turn. Real violins and violas over the top with cheap synth strings under them, night-bus melancholy, the strings and the breaks one piece of music. A big sung chorus hook returns three times. Two British men rap fast and tight on the 174 grid, the same breakneck pace from the first line to the last: first a gravelly raspy older English storyteller with a flat everyday accent, tired and talky, then a posh clipped BBC newsreader, cold and just as fast.
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, blues, Delta blues, gospel, soul singer, US rap, trap, boom bap, teenage voice, boyish voice, falsetto, autotune, female vocal, choir, crowd noise, audience, applause, jump up, wobble bass, dubstep, EDM drops, happy, uplifting, major key, half time, comedic, novelty, parody, mono mix, muddy mix, orchestral film score, war drums, brass braams, neurofunk, glossy production, radio pop
+```
+
+Lyrics:
+
+```lyrics
+[Intro | a lone sad piano and a solo violin, no drums at all, no bass]
+[Verse 1 | still no drums, only the piano and the violin | the first man, gravelly raspy voice, quiet and close, almost talking, emotional]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+[the strings swell and a riser builds underneath]
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+[Drop | the breakbeats and the heavy sub slam in at full weight, the strings arrive with them]
+[Verse 1 continues | the first man, gravelly raspy voice, fast and tight on the grid now, never slowing]
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[the first man, rising, never a scream]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[the first man, a weary bitter plea]
+please sir, can I fuckin, have some more?
+[Chorus | sung, big and melodic, the strings and the breaks together, both men]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break | the beat bigger than verse one | the second man, a BBC newsreader voice, clipped and cold, rapping fast and tight]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[the second man rising, biting and bitter]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+[the second man, same breakneck pace, spat straight through, no pause and no slowing]
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung, big and melodic, the strings and the breaks together, both men]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | straight in, no break | the two men trade lines, the beat and the orchestra at their biggest]
+[the first man, gravelly raspy voice, fast and tight]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[the second man]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both men together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[the second man]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[the first man, gravelly raspy voice, fast and tight]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[the second man]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[the first man, gravelly raspy voice, fast and tight]
+yet I don't begrudge you,
+we were on the same side all along
+[the second man]
+well we don't have long
+and by the time it hits, we'll be gone
+[Chorus | sung, the last time, the piano and the solo violin return under the break]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r19 `reese` atom (recovered 2026-09-18, never logged at the time)
+
+Recovered off `suno.com/song/3eaed0b3-…`. Kept verbatim so r47 can be diffed against it.
+
+Style:
+
+```
+A solid, punchy 174 BPM drum and bass beat hits hard from the very first bar, full breakbeats and a heavy rolling sub bass, never jump up, then the track builds from there, UK garage storytelling and grime over drum and bass, Verse one: an older English storyteller with a gravelly, raspy voice, rapping his lines at a steady rap pace over the beat, not double time and not half time, the rasp never slowing him down, a flat everyday English accent, tired, talky, like telling a mate a story at 4am, Verse two: a BBC newsreader voice, a posh older Englishman, clipped and cold, Then the two men trade lines, Skippy two-step garage shuffles folded into the drum and bass, a dark reese bass that grows meaner every section, chopped amen fills at every section turn, cheap synth strings, night-bus melancholy
+```
+
+Exclude styles:
+
+```
+American accent, American vocal, Southern drawl, country vocal, twang, americana, blues, Delta blues, gospel, soul singer, US rap, trap, teenage voice, boyish voice, falsetto, autotune, female vocal, choir, crowd noise, audience, applause, jump up, wobble bass, neurofunk, dubstep, EDM drops, glossy production, happy, uplifting, major key, slow tempo, half time, tempo change, post-punk, madchester, baggy, britpop, folk, pub rock, piano
+```
+
+Takes, workspace `camping-Jack`, 2026-09-15 18:37:
+
+| Cell | Takes |
+|---|---|
+| w40 | [8c2c9f4c](https://suno.com/song/8c2c9f4c-8ff3-498a-a73a-e1cf0f132fda) 2:56 · [95e1b065](https://suno.com/song/95e1b065-67ea-4e5d-9faf-aa77d0f5274b) 3:02 · [fc8c918b](https://suno.com/song/fc8c918b-f905-4f04-8d1f-3764fd093e8e) 3:08 |
+| w60 | ⭐ [3eaed0b3](https://suno.com/song/3eaed0b3-d343-4d0f-9126-f35a88b0115a) 2:45 — **Jack's pick** · [271b2903](https://suno.com/song/271b2903-8acf-49cb-855c-b76039111653) 3:18 · [74316abf](https://suno.com/song/74316abf-225e-4d44-87e2-b03709dead06) 2:58 |
+
+⚠️ Jack named the title, not a take id; `3eaed0b3` is assumed to be the pick because it is the
+first w60 row. ⬜ **Unconfirmed** — the other two w60 takes are different generations.
+
+---
 
 ## v6.38 Round r46 — the liked talking blues, FAST and as dark and aggressive as it goes (2026-09-16)
 

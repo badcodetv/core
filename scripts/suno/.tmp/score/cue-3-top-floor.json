@@ -1,0 +1,18 @@
+{
+  "style": "Instrumental cold minimal electronic score at 90 BPM: an icy analogue synth arpeggio and glassy high pads over a slow sub pulse, sleek, expensive and emotionally detached, a city at night from the top floor. Spacious and sparse, a steady bed under narration.",
+  "exclude": "vocals, singing, choir, humming, acoustic guitar, piano, orchestral, lo-fi, hip hop, happy",
+  "lyrics": "",
+  "title": "camping-score-3-top-floor-A",
+  "workspace": "camping background music",
+  "model": "v6",
+  "variety": "normal",
+  "maxMode": false,
+  "vocalGender": null,
+  "personalize": false,
+  "styleInfluence": 75,
+  "weirdness": [
+    30,
+    60
+  ],
+  "durationSec": 40
+}

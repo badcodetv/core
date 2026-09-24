@@ -1,0 +1,18 @@
+{
+  "style": "Instrumental dry deadpan chamber underscore at 70 BPM: a hesitant plucked pizzicato motif, a soft ticking clock pulse and a single low clarinet, awkward, patient and quietly absurd, played completely straight. Steady, minimal variation, lots of air.",
+  "exclude": "vocals, singing, humming, comedic, cartoon, whimsical, quirky, kazoo, ukulele, whistling, drums",
+  "lyrics": "",
+  "title": "camping-score-5-couch-A",
+  "workspace": "camping background music",
+  "model": "v6",
+  "variety": "normal",
+  "maxMode": false,
+  "vocalGender": null,
+  "personalize": false,
+  "styleInfluence": 75,
+  "weirdness": [
+    30,
+    60
+  ],
+  "durationSec": 25
+}

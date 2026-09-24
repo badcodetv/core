@@ -420,7 +420,7 @@ Honesty about this is the point of the table — several recon assumptions faile
 | **The Duration slider can be ABSENT while More Options is open** | 🟡 **observed 2026-08-27, cause unknown.** The exclude box was visible and filling fine — so More Options was plainly open — yet `[role="slider"][aria-label="Duration"]` was **not in the DOM** and no click on More Options would mount it; only Weirdness, Style Influence and Audio Influence were present. Later in the same session `status` read back `Duration=240`, so **the slider is not gone** — it is conditionally mounted and we do not know the condition. `setDuration` now returns `duration:NO-ADVANCED-SLIDER` plus a live diagnosis rather than the misleading `more-options-would-not-open` |
 | The Simple number input is a different, unlinked control | ✅ proven |
 | An attached Voice hides the duration control | ❌ **disproved** — it does not |
-| **That a set duration actually changes the take's length** | 🟡 **partly** — 2026-08-25, a 200s target moved takes from 4:30–4:46 to 4:07–4:24. It shortens, it does not obey: treat it as a ceiling to aim under, never a floor |
+| **That a set duration actually changes the take's length** | ✅ **yes, and on v6 it is tight** — 2026-09-18 (Camping r48), a 195 s target produced **12 takes out of 12 at 3:14–3:16**, across three Style boxes and two weirdness settings: about ±1 s, obeyed not merely bounded. 🔑 And the same lyrics on **Auto** that day (r47) ran **4:38 and 4:55** — on v6, Auto runs long, so set the number. *(Superseded reading, v5.5-era 2026-08-25: a 200 s target moved takes from 4:30–4:46 only to 4:07–4:24 — shortening without obeying. Either v6 changed, or the earlier target was simply below what those lyrics could fit.)* ✅ **And it does NOT cost double** — proven live 2026-09-21 (Camping r54): **twelve v6 Creates at Duration 195 s cost exactly 10 credits each**, counter read before and after every Create (10,540 → 10,420). So a v6 Create is 10 credits for 2 takes, custom duration included |
 | Take/clip harvesting from the workspace list | ⬜ not attempted |
 | **Model picker sets and reads back** (v6 → v6-wild → v6) | ✅ **proven 2026-09-10** via `controls` |
 | **Variety, Max Mode set and read back** (Normal → High → Normal, Off → On → Off) | ✅ **proven 2026-09-10** via `controls` |
@@ -600,6 +600,26 @@ model as `v6` / `wild` / the custom model's short name — e.g. `gpom-cut1-A-wil
 when a prompt box moves.
 
 ---
+
+## 9b. `setLyrics` — the actionable click is intercepted on some layouts (2026-09-18)
+
+✅ **Proven live, and fixed in `suno.mts`.** On Jack's machine (window 1908x822, branded-Chrome
+channel 1) `page.locator('[aria-label="Lyrics editor"]').click()` never cleared its retry loop:
+Playwright reported first the panel's `useResizer-resizable-container` and then the **Style
+textarea itself** as intercepting pointer events, and the command died with a `TimeoutError` after
+the Style box, the excludes and every control had already been written.
+
+🔴 **The failure is silent in the worst way.** `load` had already set style (903), excludes (466),
+model, Variety, Vocal Gender, Personalize and the workspace; only `lyricParas` stayed at **1**. A
+`status` read afterwards looks almost entirely healthy — which is the same lesson as §"a
+green-looking form is not a safe form".
+
+**The fix is the documented native-click recipe:** try the actionable click with an 8 s timeout,
+and on failure `scrollIntoView` + `el.click()` + `el.focus()` in-page, asserting that the editor (or
+a descendant) really took focus before typing. Focus is all the keyboard insertion needs; the
+Lexical line-by-line insert below is unchanged, and `lyricParas` still verifies it.
+
+⬜ **Not known:** which window sizes trigger it. It did not fire on Kai's machine in any prior round.
 
 ## 10. Playback, recording and the listening loop
 
@@ -784,3 +804,34 @@ good (at the cost above).
   section. Writing to the wrong one does nothing, silently. `setSlider` hardened against a step
   that cannot land on the target exactly (it used to oscillate). **Whether a set duration actually
   binds is not yet proven** — it needs one generation.
+
+## 🔑 `create:timeout` is not necessarily a spent Create (2026-09-23, Camping r70)
+
+One cell (`camping-r70-piano-v6-w60`) returned `create:timeout — clicked, but takes did not appear in
+time` **twice in a row**, then succeeded on the third identical attempt. Both failures:
+
+- cost **0 credits** (balance read before and after each), and
+- produced **no takes** (verified with `takes <prefix>` before retrying).
+
+**So the protocol on a timeout is: read the take list AND the credit balance before re-running.**
+If takes exist or the balance dropped, the Create landed and a retry double-spends; if neither
+moved, retry is free and — on this evidence — may simply work. ⬜ Cause unknown: the form read back
+correct (`styleLen` and `title` both right) on every attempt, so this looks like a queue-side
+failure rather than a DOM one. One occurrence in 40+ Creates across r66–r70.
+
+## 🔴 `takes` only sees the rows the clip list has RENDERED (2026-09-23)
+
+The right-hand clip list is **virtualised**: `listTakes` reads the DOM, so takes that have scrolled
+out are simply absent — and the command returns a short list with no error. Camping r71's twelve
+takes returned as **two** immediately after r72 was generated, although every Create had reported
+`create:ok` and the credit balance had dropped for each.
+
+🔑 **A short `takes` result is not evidence that takes are missing.** Cross-check the credit
+balance first. To collect them all, scroll the list and union the results —
+[`scripts/suno/scan-takes.mts`](../../scripts/suno/scan-takes.mts) does exactly that (connect,
+`listTakes`, scroll every tall scroll container, repeat, dedupe by song id) and recovered 40/40
+takes across r70–r72.
+
+**Practical rule: capture the song ids from the `pair` output as it runs.** `pair` prints the take
+list at the end of each Create, and that is the only moment the ids are guaranteed visible.
+

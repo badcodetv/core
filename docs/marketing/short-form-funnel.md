@@ -14,7 +14,8 @@ rolling).
 ## The levers
 
 - **Cut the music videos into short-form clips** — TikTok / YouTube Shorts /
-  Reels. The camping video already proves the material is worth an EP; the shorts
+  Reels. 🔑 **How, concretely, is [`shorts-factory.md`](./shorts-factory.md)** — the
+  drive inventory, the 9:16 format, the hook bank, the tool and batch 1. The camping video already proves the material is worth an EP; the shorts
   are the trailer network for it.
 - **The meme tier** — "fuck it, 10 seconds" content that stands alone but
   advertises the universe: [Kill Bots, Stand Down](../ideas/kill-bots-stand-down.md),

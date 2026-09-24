@@ -515,7 +515,22 @@ async function checkV6(page: Page, spec: Partial<SunoSpec>, v: Record<string, un
  */
 export async function setLyrics(page: Page, text: string): Promise<number> {
   const lyr = page.locator('[aria-label="Lyrics editor"]')
-  await lyr.click()
+  // 🔴 Playwright's actionable click is intercepted on some window sizes: the Style textarea and the
+  // panel's `useResizer-resizable-container` both sit over the editor and the retry loop never
+  // clears (2026-09-18, Jack's machine, 1908x822). Fall back to the native-click recipe — focus it
+  // in-page, then type — which is what the knowledge base prescribes for a control in a scroll
+  // container. Focus is all the keyboard insertion below actually needs.
+  try {
+    await lyr.click({ timeout: 8000 })
+  } catch {
+    const focused = await lyr.evaluate((el: HTMLElement) => {
+      el.scrollIntoView({ block: 'center' })
+      el.click()
+      el.focus()
+      return document.activeElement === el || el.contains(document.activeElement)
+    })
+    if (!focused) throw new Error('lyrics:no-focus — the editor would not take focus (click intercepted, native click did not focus)')
+  }
   await page.keyboard.press('ControlOrMeta+a')
   await page.keyboard.press('Delete')
   const lines = text.split('\n')
@@ -1117,7 +1132,7 @@ export async function detachCover(page: Page): Promise<string> {
 }
 
 /** Click Create and wait for takes carrying `title` to appear. 10 credits, 2 takes per click. */
-export async function create(page: Page, title: string, timeoutMs = 240000): Promise<string> {
+export async function create(page: Page, title: string, timeoutMs = 420000): Promise<string> {
   // 🔴 aria-label="Create song". NOT aria-label="Generate" — that is the Lyricist.
   const clicked = await ev(
     page,
@@ -1130,6 +1145,11 @@ export async function create(page: Page, title: string, timeoutMs = 240000): Pro
   const deadline = Date.now() + timeoutMs
   while (Date.now() < deadline) {
     await page.waitForTimeout(6000)
+    // 🔴 Trap 6: picking the workspace leaves the shared right-hand pane on the workspace BROWSER,
+    // so `listTakes` returns [] while the takes are generating perfectly well. Without this the
+    // wait reports `create:timeout` on a Create that worked — proven live 2026-09-21, three cells
+    // of Camping r61 reported timeout and two of them had in fact generated.
+    await ensureClipList(page)
     const takes = (await listTakes(page, title)) as unknown[]
     if (takes.length >= 2) return `create:ok (${takes.length} takes)`
   }

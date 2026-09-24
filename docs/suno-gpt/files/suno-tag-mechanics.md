@@ -222,6 +222,48 @@ an explicit step ladder in the Style box and mirror it in the section headers: n
 arriving on the same beat. Two reveals landing at once is the whole payoff of holding a
 layer back, and it costs one sentence.
 
+🔴 **The Lyrics box out-votes the Style box on casting, silently. Rebuild inherited cues, never
+inherit them.** *(Camping, 2026-09-21.)* A lyrics box carried forward from an earlier round still
+read `[Verse 1 | the full beat rolling under him from the first line | … an older English
+storyteller …]` and `[Verse 2 | … a BBC newsreader voice …]`, while the Style box asked for two
+grime MCs over a drumless opening. **The lyric cues won**, and three rounds were spent wondering
+where the voice had gone. The cues sit next to the words being performed; the Style box is a
+description of the record.
+
+Two habits that prevent it:
+- **When a round changes the cast or the arrangement, rewrite every section cue from scratch** —
+  a lyrics box is not a neutral carrier of words, it is half the prompt.
+- **Assert it in code.** A build script that edits cues should fail when a phrase from the old
+  casting survives (`assert "newsreader" not in lyrics`), because a replace that silently no-ops
+  looks exactly like a replace that worked.
+
+Also: **place a structural moment, do not describe it.** "The drop should land on *this* line" is a
+`[Drop]` tag immediately above that line — a section tag is what makes Suno re-decide the
+arrangement. Saying it in the Style box as well is worth doing when the instruction fights a genre
+convention, but the tag is what does the work.
+
+🔴 **The anti-hole clauses are anti-DYNAMICS clauses. Never write a uniformity word.**
+*(Camping, 2026-09-21 — four rounds of "flat and boring" traced to three clauses we wrote
+ourselves.)* Guards added for good reasons quietly instruct the model to never change:
+
+| The clause | Why it was added | What it actually says |
+|---|---|---|
+| `the breaks never stop, not one bar` | a round came back with 12–14 s holes | *no dynamics for three minutes* |
+| `the drums and the sub are the loudest thing in the mix throughout` | "not enough drum and bass" | *the balance never moves* |
+| `rapid-fire from here to the end` | the rap dragged | *one vocal weight for the whole song* |
+
+Each fixed its bug and each flattened the record. 🔑 **The words to watch are `never`, `throughout`,
+`from here to the end`, `every bar`, `start to finish`** — a uniformity word is a flatness
+instruction wearing a fix's clothes. **Scope the guard to where the bug was instead**: *the break
+does not drop out under the verses* says the same thing and leaves the choruses free.
+
+And the cheap corollary, from the same round: **two sections that carry the same header get the
+same performance.** Three identical `[Chorus]` cues is a flat record by construction — number them
+by weight, and make the last one a different tag (`[Final Chorus]`) so it is a fresh arrangement
+decision. Practitioner agreement: *"many AI tracks feel flat all the way through"* because every
+section sits at the same vocal weight ([HookGenius](https://hookgenius.app/learn/suno-prompt-guide-2026/)),
+and section tags do nothing unless they also say **how** to move between sections.
+
 **An inline cue is a modifier; the genre tag is the noun — so a mid-section arrangement
 change needs a section *tag*.** Asking for a weaker version of the genre's default kit
 (`[drums enter — a loose stripped-back break, no sub yet]` inside a `dark neurofunk`

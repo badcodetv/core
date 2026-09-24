@@ -1,0 +1,82 @@
+{
+  "camping-r64-tunnel-v6-w60": [
+    [
+      "5936ddc2-263b-4f30-aedc-ba49c238fe40",
+      "3:18"
+    ],
+    [
+      "93a985ac-ac2d-4b1e-8776-6fc601107d51",
+      null
+    ]
+  ],
+  "camping-r64-tunnel-v6-w40": [
+    [
+      "fe33c66d-91e9-4cc9-b9bc-355603b0ea8f",
+      "3:20"
+    ],
+    [
+      "9ef0e4d9-de5b-4486-b7f4-2d487e8a248b",
+      "3:20"
+    ]
+  ],
+  "camping-r64-groundbass-v6-w60": [
+    [
+      "31d38311-b628-4a43-8089-9999bce64dd2",
+      "3:19"
+    ],
+    [
+      "9a3418b9-c21c-4c98-aecc-811e49db2896",
+      "3:20"
+    ]
+  ],
+  "camping-r64-groundbass-v6-w40": [
+    [
+      "6a8ae6a8-465c-498b-96e9-3031cff0070c",
+      "3:20"
+    ],
+    [
+      "5230730f-6048-46d7-ab13-a7dd7a09d461",
+      "3:20"
+    ]
+  ],
+  "camping-r64-bolero-v6-w60": [
+    [
+      "db019f02-343d-4a78-85b3-002e252ba324",
+      "3:19"
+    ],
+    [
+      "ff76402d-18b0-4cda-8138-705fd561815b",
+      "3:19"
+    ]
+  ],
+  "camping-r64-bolero-v6-w40": [
+    [
+      "b5e8dd37-28df-49ca-82c6-824d6fe3ec5b",
+      "3:19"
+    ],
+    [
+      "bdf88ad7-93b3-4bfe-841d-83e48ea8924f",
+      "3:20"
+    ]
+  ],
+  "camping-r64-innercity-v6-w60": [
+    [
+      "a8fb4f50-43e0-4676-b85c-3b1e2e5f9ca0",
+      "3:19"
+    ],
+    [
+      "9e0f0532-5997-42bb-8c26-b9e81a2d023f",
+      "3:19"
+    ]
+  ],
+  "camping-r64-innercity-v6-w40": [
+    [
+      "a2d8baa7-5746-4a99-839f-25faad01d446",
+      "null"
+    ],
+    [
+      "1bec7904-730f-4a13-a573-41d06e9fe83a",
+      "null"
+    ]
+  ]
+}
