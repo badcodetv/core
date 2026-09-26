@@ -1,6 +1,6 @@
 ---
 title: Camping — the song (LIVE v6 sheet)
-status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). 🔑 CURRENT REFERENCE = 36d0b981 (camping-r71-wordsonly-v6-w40), Jack 2026-09-23: "the voice is cool, the begging being slow until the beat drops is nice, the pacing is perfect, chorus being quick keep that". RESUME HERE — r73 (§v6.65): those four things FROZEN byte-identical (cast, begging opening, Duration 190 s, quick words-only hook) and five different musical worlds built around them, lane clause FIRST — two orchestral (spiccato violins / harp + cellos) and three experimental (dub echo / industrial machine / grime square-wave). 20 takes, ALL UNHEARD. 🔑 NEXT: did the spine survive all five worlds, and is the orchestra actually wanted? Duration 190 s is settled: 36/36 on target and called "perfect" by ear. The v5.5 round-17 sheet below is archived history.
+status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). 🔴 STANDING RULE (Jack 2026-09-24): never double-time rap. 🔑 THE STYLE IS FOUND (Jack 2026-09-24): r77's `jamrock`/`bundem` boxes — keep them. RESUME HERE — r86 (§v6.77): 2ffbd6b9 × Gnome Dub psychedelic dub, two lanes; unheard. r85 (§v6.76): r77 bundem take 2ffbd6b9 combined with the Psychedelic Desert Chill Beats mix (oud, hand drums, drone, cavernous dub), two lanes; unheard. r84 (§v6.75): more Make It Bun Dem + varied pop, the voice like the reference's, and a Disconnect experiment; unheard. r83 (§v6.74): a new reggae+dubstep song from Dub Zone's mix, three worlds; r82 (§v6.73): 3a433539 with passion not gravel, melodica/horns lanes; both unheard. r80 (§v6.72): five pop-reggae lanes with a SUNG tenor hook, after Jack's pick ae937a18 (r79 poppolish w40); unheard. r79 (§v6.71): r77 jamrock fused with modern pop. r78 (§v6.70): r77 exactly, with the voices made deep, low and gravelly (Style cast clause + 4 bans + cue labels only). r77 (§v6.69) is the style round. The v5.5 round-17 sheet below is archived history.
 candidate: https://suno.com/song/d13ca10a-1aa4-41c5-a6f2-b13beeb2e164
 brief: Jack via Kai 2026-09-13 — "more like Imagine Dragons (https://en.wikipedia.org/wiki/Imagine_Dragons) and less poppy". Kai 2026-09-13 — 174 BPM drum and bass (option A), not the take's 117.
 released_take: ./camping-released.md
@@ -118,6 +118,1598 @@ gets generated. Note what the rewrite added that the stomp box never said: `powe
 ```text
 Dark UK drum and bass: detuned wavetable lead, low palm-muted distorted power-chord guitar and heavy guitar wall, dual male spoken-word voices—gravelly half-shout and clean plummy baritone hardening into a shout—with dry intimate acapella breaks, dark sub-heavy compression, stomping floor toms, handclaps, chopped breakbeat, growling Reese sub, screaming detuned lead, reverb-soaked raw distortion, steady 174 BPM amen-roll drive.
 ```
+
+## v6.77 Round r86 — r77 `bundem` take 2ffbd6b9 × *Gnome Dub* (2026-09-26)
+
+**Brief, Jack 2026-09-26:** combine [2ffbd6b9](https://suno.com/song/2ffbd6b9-3f10-442d-b40c-d7f6dc777c58) with
+[*Gnome Dub — 90 Minutes of Psychedelic Dub Reggae*](https://www.youtube.com/watch?v=NX_QMlFxDSw) (Futuristic Sound).
+This was Jack's first brief of the afternoon. His *"forget all that"* meant **don't let the other prompts influence
+this one**, not "cancel it". So r86 is built only from r77 `bundem` and this reference, and r85 (desert) is **not** an input.
+
+**How it was heard:** four 60 s samples (3:00, 25:00, 50:00, 75:00) played and recorded, no download; heard by `gemini-3-flash-preview`.
+Heard: one-drop at ~85 **and** half-time at ~140 (one sample was 4/4 steppers); a **deep, clean, melodic sub** is the loudest
+thing in the mix; a **mournful, airy trumpet** lead, a synth flute, and a **bubbling, squelchy acid synth**; offbeat organ/piano chops;
+a **spring-reverb snare**; long tape feedback delay; filter sweeps; **drop-outs to bass and echo**; sirens; swirling phased pads.
+Measured: darker and wider than the take (centroid 1.4–2.0 kHz vs 3.85 kHz; side/mid −12 to −13 dB vs −18 dB).
+**Not carried:** its female and wordless vocal textures. The same voice rule as r85 applies (`gruff` → `fiery`), and every double-time ban is kept.
+
+| Lane | World |
+|---|---|
+| `gnome-step` | bundem's 140 half-time spine and drops, re-dressed: spring-reverb snare, the clean sub loud, a trumpet answering him, the acid synth in the gaps, drops as a **slow, deep, rounded** wobble |
+| `gnome-dub` | the reference's world at 85 one-drop: trumpet and flute trading phrases in tape echo, the sub swelling into half-time dubstep weight only for the hook |
+
+Settings as r85: v6 · Style Influence 75 · Variety Off · Max Mode off · Vocal Gender Male · Personalize off · no Voice ·
+Duration 240 s · workspace `camping-Jack` · weirdness 40 and 60. Exclude = r77 `bundem`'s plus `brostep, screeching lead`.
+Specs: `scripts/suno/.tmp/r86/`.
+
+### Generated 2026-09-26 — 4 Creates, 4 clean. Credits 8,160 → 8,120
+
+| Lane | w40 | w60 |
+|---|---|---|
+| `gnome-step` | [cc3d6237](https://suno.com/song/cc3d6237-b6da-4b68-ab7c-5a2fe87293a0) · [18eeaab4](https://suno.com/song/18eeaab4-bb7c-4fdd-9f1f-2a9133a75193) | [d1ef0661](https://suno.com/song/d1ef0661-e591-4001-8b57-3d0e64feb229) · [905ea376](https://suno.com/song/905ea376-e35e-4826-bc56-ab1d07a9161b) |
+| `gnome-dub` | [e71ca5fb](https://suno.com/song/e71ca5fb-0e0b-4c47-9dc0-dcee4ea15bdf) · [decd2bab](https://suno.com/song/decd2bab-243e-4cf1-8dee-3902a16b82ba) | [95288584](https://suno.com/song/95288584-4494-49a6-8113-b145a18b8199) · [198db8b9](https://suno.com/song/198db8b9-91a2-4d45-be54-365d028cbca3) |
+
+⬜ **Not heard.**
+
+### r86 `gnome-step` atom
+
+Style:
+
+```
+Psychedelic reggae dubstep at 140, half-time: kick on the one, a woody snare cracking on the three with a spring reverb splash, a deep, clean, melodic sub walking loud under offbeat organ chops. A mournful trumpet answers him with long tape echo, and a bubbling acid synth squelches in the gaps. Snare rolls build into drops where the sub swells into a slow, deep, rounded wobble, then back to the riddim. Dub drop-outs to bass and echo, filter sweeps, a dub siren, swirling phased pads, dark and wide. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two ragga dancehall MCs trade the verses, toasting, loud and in front, one fiery and raw, one clipped and cold, riding the slow half-time pulse, heavy and unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, singing, sung hook, melodic chorus, soulful vocal, crooning, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, major key, happy, uplifting, glossy production, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, drum and bass, jungle, amen break, trance, big room, brostep, screeching lead
+```
+
+### r86 `gnome-dub` atom
+
+Style:
+
+```
+Psychedelic dub reggae at 85, heavy one-drop: a round kick and woody snare on the three with a spring reverb splash, tight hats, a deep, clean, melodic sub carrying the tune, offbeat organ chops. A mournful trumpet and an airy flute trade phrases drenched in tape feedback echo, a bubbling acid synth swirls through. The sub swells into a heavy half-time dubstep weight for the hook, then falls back. Dub drop-outs to bass and echo, filter sweeps, sirens, phased pads, dark, wide and hypnotic. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two ragga dancehall MCs trade the verses, toasting, loud and in front, one fiery and raw, one clipped and cold, riding the slow half-time pulse, heavy and unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, singing, sung hook, melodic chorus, soulful vocal, crooning, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, major key, happy, uplifting, glossy production, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, drum and bass, jungle, amen break, trance, big room, brostep, screeching lead
+```
+
+Lyrics: identical to r85 (r77 `bundem`'s box, `gruff ragga MC` → `fiery ragga MC`).
+
+## v6.76 Round r85 — r77 `bundem` take 2ffbd6b9 × *Psychedelic Desert Chill Beats* (2026-09-26)
+
+**Brief, Jack 2026-09-26:** *"try a different experiment of combining"* [2ffbd6b9](https://suno.com/song/2ffbd6b9-3f10-442d-b40c-d7f6dc777c58)
+(r77 `bundem` w40) *with* [*Psychedelic Desert Chill Beats*](https://www.youtube.com/watch?v=njwi8lK0jzU) (ANATOLIAN PRODUCTION, 95 min).
+Replaces a first brief the same afternoon (Gnome Dub, `NX_QMlFxDSw`), which was heard and dropped.
+
+**How it was heard:** four 60 s samples of the mix (2:00, 25:00, 50:00, 80:00) played and recorded, no download, plus the take
+itself; described by **`gemini-3-flash-preview`**, because `gemini-3.5-flash` returned 429 on this key.
+
+| | The take 2ffbd6b9 | The desert mix (all four samples agree) |
+|---|---|---|
+| Groove | 174 intro, reggae verses at half-time, wobble drops at 0:41 / 1:39 / 2:36 | ~85–95 BPM, lazy swung shuffle, half-time dub feel |
+| Lead | buzzy saw synth, harsh 2–4 kHz in the drops | plucked **oud / saz** in Hijaz / Phrygian-dominant, over **one drone chord** |
+| Percussion | snappy electronic snare | **darbuka, riq**, congas, shakers |
+| Space | measured narrow: side/mid −18 dB; centroid 3.85 kHz | measured wide: −2 to −5 dB; dark: centroid 1.2–2.2 kHz; cavernous hall reverb, dub tape delay |
+| 🔴 Fault | **double-time bridge at 2:08** — breaks Jack's standing rule | — |
+
+**Not carried:** the mix's female and wordless vocals (canon casts men, and the words-only rule stands).
+**One voice change:** `gruff` → `fiery` in the Style cast and in the lyric cue labels (Jack's r82 rule: no gravel words).
+The words are r77's, identical (asserted in `build.py`); the Bridge's *slow and heavy* cue and every double-time ban are kept.
+
+| Lane | World |
+|---|---|
+| `desert-step` | r77 `bundem`'s spine at 140 half-time, with the palette swapped: oud skanks and Hijaz answers, darbuka and riq, one drone chord, **rounded** drops (no screeching lead), cavernous reverb |
+| `desert-downtempo` | the reference's world at 90: trip-hop dub shuffle, oud runs, hand drums, the bass swelling into half-time dubstep weight only for the hook |
+
+Settings: v6 · Style Influence 75 · Variety Off · Max Mode off · Vocal Gender Male · Personalize off · no Voice ·
+Duration 240 s · workspace `camping-Jack` · weirdness 40 and 60. Exclude = r77 `bundem`'s plus `brostep, screeching lead, bollywood, belly dance`.
+Specs and builder: `scripts/suno/.tmp/r85/`.
+
+### Generated 2026-09-26 — 4 Creates, 4 clean. Credits 8,200 → 8,160
+
+| Lane | w40 | w60 |
+|---|---|---|
+| `desert-step` | [fae53a9d](https://suno.com/song/fae53a9d-4fd7-40fc-98ac-b823f488f5f9) · [a2701a63](https://suno.com/song/a2701a63-2824-400e-9f26-6cd87c1ea03d) | [6a75d029](https://suno.com/song/6a75d029-ac17-4bfb-b9de-9063408b5ca6) · [f08d4b70](https://suno.com/song/f08d4b70-debd-4f9a-9e4b-ecc21f15231f) |
+| `desert-downtempo` | [a1138bb8](https://suno.com/song/a1138bb8-0326-473c-a1bc-ff5add706d26) · [608c0225](https://suno.com/song/608c0225-4bdc-4a43-a2f9-b02e1b5c08fd) | [a5362c4f](https://suno.com/song/a5362c4f-5812-4702-9e81-e5ea555d85ca) · [fdfbc3cb](https://suno.com/song/fdfbc3cb-568b-41f2-b706-2648fa6f89a1) |
+
+⬜ **Not heard.** Listen for: (1) does the oud arrive, and in which slot; (2) any double-time, above all in the Bridge; (3) accent — does the desert palette pull the MCs away from ragga.
+
+### r85 `desert-step` atom
+
+Style:
+
+```
+Reggae dubstep at 140, half-time and swung: kick on the one, a dry cracking snare on the three, darbuka and riq rolling in the offbeats, a deep round sub walking under offbeat oud skanks. A plucked oud answers him in a Hijaz scale over one dark drone chord. Snare rolls build into drops where the sub swells into a slow, heavy, rounded wobble, then back to the riddim. Cavernous hall reverb, long tape echo on his line-ends, a dub breakdown to end. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two ragga dancehall MCs trade the verses, toasting, loud and in front, one fiery and raw, one clipped and cold, riding the slow half-time pulse, heavy and unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, singing, sung hook, melodic chorus, soulful vocal, crooning, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, major key, happy, uplifting, glossy production, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, drum and bass, jungle, amen break, trance, big room, brostep, screeching lead, bollywood, belly dance
+```
+
+### r85 `desert-downtempo` atom
+
+Style:
+
+```
+Psychedelic desert dub at 90, trip hop downtempo with a lazy swung shuffle: a muffled deep kick, a woody snare, darbuka, riq and shakers, a round melodic sub under a plucked oud playing Hijaz runs over one hypnotic drone chord. The bass swells into a heavy half-time dubstep weight for the hook, then falls back. Cavernous hall reverb, long dub tape echo, dusty, dark, wide and slow. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two ragga dancehall MCs trade the verses, toasting, loud and in front, one fiery and raw, one clipped and cold, riding the slow half-time pulse, heavy and unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, singing, sung hook, melodic chorus, soulful vocal, crooning, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, major key, happy, uplifting, glossy production, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, drum and bass, jungle, amen break, trance, big room, brostep, screeching lead, bollywood, belly dance
+```
+
+Lyrics: r77 `bundem`'s box with `gruff ragga MC` → `fiery ragga MC` (`scripts/suno/.tmp/r85/*.json`).
+
+## v6.75 Round r84 — more *Make It Bun Dem* with a little varied pop, and an experiment with *Disconnect* (2026-09-26)
+
+**Brief A, Jack 2026-09-26:** *"make songs more like"* [*Make It Bun Dem*](https://www.youtube.com/watch?v=BGpzGu9Yp6Y)
+— *"this is the vibe, please add a small amount of varied pop elements … but reggae dubstep is the main thing, also i
+like the voice in this song try and make it like this."*
+**Brief B, Jack 2026-09-26:** *"try an experiment of combining the reggae with the vibes of"*
+[*Disconnect*](https://www.youtube.com/watch?v=bE3Kvqyef_E).
+
+**The voice, as Gemini heard it** (two verse clips, 12–52 s and 118–168 s, played and recorded, no download): a young male
+Jamaican singjay, bright and chesty, commanding, a chant with a minor-key lilt, syncopated and a touch behind the beat,
+phrase-ends doubled, upfront with a slapback echo. 🔴 **Two things it heard were deliberately NOT written:** its *grit*
+(Jack's r82 rule — no gravel words for Camping voices) and its *6–8 words per bar* (never double-time). The same voice
+sentence is shared by all four lanes — it is the cast.
+
+**Disconnect: measured, not heard.** Gemini was out (429 quota, then 503). Measured: ~172 BPM; the drop at −5.8 LUFS and
+a 3.9 kHz spectral centroid (very loud, very bright) against −15.8 LUFS in the intro. ⬜ Everything else in its lanes
+(euphoric-melancholic, big emotional minor chords, anthemic festival drop) is **unverified prior knowledge**. Its female
+vocal was not carried over — canon casts men.
+
+| Lane | World | The pop touch / the Disconnect idea |
+|---|---|---|
+| `bunpop-keys` | r77 `bundem`'s sound, rewritten | bright piano chords + handclaps under a sung, catchy hook |
+| `bunpop-gloss` | the same | a hooky synth pluck, a polished wide radio mix, a filtered pop lift into each drop |
+| `disconnect-roll` | 174 rolling D&B married to reggae | organ skank + siren woven in, the voice on the half-time pulse, euphoric anthemic drop |
+| `disconnect-switch` | reggae one-drop at 87 → pulse doubles to 174 D&B and back | same pulse, so the tempo never changes — only the feel |
+
+⚠️ The two `bunpop` lanes share their riddim sentence on purpose (the brief names the reference); only the pop touch differs.
+Lyrics: r81's cue-free box, word for word, no bracket cues. Settings: v6 · Style Influence 75 · Variety Off · Max Mode off ·
+Vocal Gender Male · Personalize off · no Voice · Duration 240 s · workspace `camping-Jack` · weirdness 40 and 60.
+Specs and builder: `scripts/suno/.tmp/r84/`.
+
+### Generated 2026-09-26 — 8 Creates, 8 clean. Credits 8,280 → 8,200
+
+| Lane | w40 | w60 |
+|---|---|---|
+| `bunpop-keys` | [3a27729f](https://suno.com/song/3a27729f-4f75-4e10-93af-eef63d611442) · [ebe2472d](https://suno.com/song/ebe2472d-5de3-4d7d-b9b8-4a47133d2b19) | [3e88c0ad](https://suno.com/song/3e88c0ad-018f-495d-8e39-c16b05de05b7) · [2a75e7e1](https://suno.com/song/2a75e7e1-be8e-40ba-8e20-b05073990767) |
+| `bunpop-gloss` | [2c54b0e9](https://suno.com/song/2c54b0e9-7787-4ed2-9106-c68eff69e4ae) · [414642ad](https://suno.com/song/414642ad-392a-4191-8b1c-1bfd469090a8) | [d0c86f65](https://suno.com/song/d0c86f65-01e3-4d15-9689-8d18d5ff9289) · [f2726df5](https://suno.com/song/f2726df5-39e8-4e44-861a-e10f83095815) |
+| `disconnect-roll` | [f721c900](https://suno.com/song/f721c900-e5b7-45c8-9b68-c139d47641fa) · [d24cf0e7](https://suno.com/song/d24cf0e7-3383-46e4-9b96-bfa8492b71f1) | [dfcfc916](https://suno.com/song/dfcfc916-4170-4322-8660-6cfcf6b5231e) · [2f8704ca](https://suno.com/song/2f8704ca-b795-4bda-a66f-08cdb53da823) |
+| `disconnect-switch` | [3c191bfc](https://suno.com/song/3c191bfc-7535-4a72-986d-9af92bc5e543) · [d63811a6](https://suno.com/song/d63811a6-7ded-49fb-9a7e-8133bc088485) | [80764acd](https://suno.com/song/80764acd-98d2-45d3-9917-b0bb7f821929) · [3cb46493](https://suno.com/song/3cb46493-8f26-48fa-925e-87b3293e24ca) |
+
+⬜ **Not heard.**
+
+### r84 `bunpop-keys` atom
+
+Style:
+
+```
+Reggae dubstep at 140, half-time: a punchy kick on the one, a sharp metallic snare cracking on the three, swung offbeat hats, a clean round sub walking under offbeat brass skanks. Snare rolls build into drops where the bass tears into a growling formant wobble and a screeching laser lead, then back to the clean riddim. Dub sirens, tape echo, a dub breakdown to end. A touch of pop: warm bright piano chords and handclaps lift the hook, and he sings the hook clean and catchy. A young Jamaican singjay leads, male, bright and chesty with a commanding edge, half-chanting, half-singing in patois with a minor-key lilt, fiery and full of feeling, syncopated and laid back behind the beat, the ends of his phrases doubled for weight, upfront with a short slapback echo, every word clear.
+```
+
+Exclude styles:
+
+```
+double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, autotune, pitch-corrected vocals, gravelly voice, female vocal, American accent, synth pluck, four-on-the-floor, glossy, choir, strings, trap, reggaeton, tropical house, drum and bass
+```
+
+### r84 `bunpop-gloss` atom
+
+Style:
+
+```
+Reggae dubstep at 140, half-time: a punchy kick on the one, a sharp metallic snare cracking on the three, swung offbeat hats, a clean round sub walking under offbeat brass skanks. Snare rolls build into drops where the bass tears into a growling formant wobble and a screeching laser lead, then back to the clean riddim. Dub sirens, tape echo, a dub breakdown to end. A touch of pop: a bright, hooky synth pluck riff answers him, a polished wide radio mix, and a short filtered pop lift into each drop. A young Jamaican singjay leads, male, bright and chesty with a commanding edge, half-chanting, half-singing in patois with a minor-key lilt, fiery and full of feeling, syncopated and laid back behind the beat, the ends of his phrases doubled for weight, upfront with a short slapback echo, every word clear.
+```
+
+Exclude styles:
+
+```
+double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, autotune, pitch-corrected vocals, gravelly voice, female vocal, American accent, piano, handclaps, choir, strings, trap, reggaeton, tropical house, drum and bass, lo-fi, tape hiss
+```
+
+### r84 `disconnect-roll` atom
+
+Style:
+
+```
+Rolling drum and bass at 174 married to reggae: a fast, crisp two-step breakbeat and a deep, rolling, driving bass, with an offbeat organ skank and a dub siren woven through, while the voice rides the slow half-time pulse like a reggae riddim. Euphoric and heartbroken at once: big emotional minor chords, wide lush pads, a soaring anthemic festival drop, bright, huge and loud. He sings the hook big and open. A young Jamaican singjay leads, male, bright and chesty with a commanding edge, half-chanting, half-singing in patois with a minor-key lilt, fiery and full of feeling, syncopated and laid back behind the beat, the ends of his phrases doubled for weight, upfront with a short slapback echo, every word clear.
+```
+
+Exclude styles:
+
+```
+double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, autotune, pitch-corrected vocals, gravelly voice, female vocal, American accent, wobble, brostep, screeching lead, trap, jungle, amen break, lo-fi, tape hiss, choir, strings, dubstep
+```
+
+### r84 `disconnect-switch` atom
+
+Style:
+
+```
+Reggae at 87, heavy one-drop, rimshot on the three, a warm walking sub and offbeat organ skank, dub echo on his line-ends. Then the pulse doubles into euphoric, rolling drum and bass at 174: a crisp two-step break, a huge rolling bass, big emotional minor chords and wide shimmering pads, bright, loud and arena-sized, his voice still riding the slow pulse on top. It drops back into the reggae and lifts again. A young Jamaican singjay leads, male, bright and chesty with a commanding edge, half-chanting, half-singing in patois with a minor-key lilt, fiery and full of feeling, syncopated and laid back behind the beat, the ends of his phrases doubled for weight, upfront with a short slapback echo, every word clear.
+```
+
+Exclude styles:
+
+```
+double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, autotune, pitch-corrected vocals, gravelly voice, female vocal, American accent, wobble, brostep, screeching lead, trap, jungle, amen break, choir, strings, piano, lo-fi
+```
+
+## v6.74 Round r83 — a new song from Dub Zone's dub reggae mix, reggae + dubstep, three worlds (2026-09-26)
+
+**Brief, Jack 2026-09-26:** *"a new set of generations based entirely off of this video and nothing else"* —
+[Dub Zone, "NEW Dub Reggae Mix"](https://www.youtube.com/watch?v=kTSQfQOEJMk) (62 min, 19 tracks). *"it has to be
+reggae with some dubstep and the lyrics … have to be the same, otherwise you have complete freedom."*
+
+**How it was heard:** four 75 s samples recorded by playing the video (`scripts/suno/.tmp/record-yt-seg.mts`, no
+download) at 0:40, 19:40, 37:40, 57:40. Gemini described 1, 3 and 4; **sample 2 (19:40) unheard** (API 503).
+What they share: one-drop (~80, or half-time 135–140 — the bridge to dubstep), a **mournful minor melodica lead**,
+a **horn section taking the B-section**, spring-reverbed guitar skank over a low 16th-note organ bubble, dub
+siren + **drop-outs to bass and drums**, tape delay on the last snare of a phrase, warm dark vintage mix. Sample 1
+alone: a clean smooth male singer singing doom words over a breezy groove. Research: reggaestep sits at 140
+half-time, and its drops "follow reggae melody patterns" (Wikipedia, *Reggaestep*).
+
+**Freedom taken:** nothing from r77–r82 carried over except the words (canon-identical, asserted in
+`scripts/suno/.tmp/r83/build.py`) and the standing bans on double-time and autotune. The hook and verses may be
+**sung**; light section tags allowed. Each lane's excludes ban the other lanes' sounds.
+
+| Lane | World | Voice |
+|---|---|---|
+| `rootsstep` | roots dub at 140 half-time, melodica → horns, dub drop-outs; drops turn the sub into a slow deep wobble | roots reggae singer, sung |
+| `sunnydoom` | sample 1's trick: breezy hi-fi reggae at 80, sung sweetly; the hook falls into crushing dubstep | smooth young English singer |
+| `deepdub` | deep dub / meditative dubstep (no wobble), vast sub, echo, drop-outs to bass and voice | Rasta chanter, half-sung |
+
+Settings: v6 · Style Influence 75 · Variety Off · Max Mode off · Vocal Gender Male · Personalize off · no Voice ·
+Duration 240 s · workspace `camping-Jack` · weirdness 40 and 60.
+
+### Generated 2026-09-26 — 6 Creates, 6 clean. Credits 8,340 → 8,280
+
+| Lane | w40 | w60 |
+|---|---|---|
+| `rootsstep` | [4e84d225](https://suno.com/song/4e84d225-8879-40eb-bc2c-d93722a27941) · [110c6a2b](https://suno.com/song/110c6a2b-e3c9-44d8-b469-e7abba806c31) | [9cd7d217](https://suno.com/song/9cd7d217-e002-4984-8a51-dc9fc9192cf3) · [83b63a4d](https://suno.com/song/83b63a4d-4694-4fa6-ba29-7e32857e0df1) |
+| `sunnydoom` | [8dd43043](https://suno.com/song/8dd43043-525d-4819-b02f-43a7738d20a1) · [7d0d6e64](https://suno.com/song/7d0d6e64-982e-4b7d-a0d2-ee56e1a5a6c9) | [d7b13e06](https://suno.com/song/d7b13e06-7ca1-4dff-a8f8-ee51e83a8caa) · [8628ce31](https://suno.com/song/8628ce31-e8ad-4b0e-bff4-7b72b45af811) |
+| `deepdub` | [cec3d4e6](https://suno.com/song/cec3d4e6-bb98-4b8c-afa8-8a11fd099296) · [b33998e3](https://suno.com/song/b33998e3-69a7-4ccf-beef-92041ae29e02) | [07d9d06f](https://suno.com/song/07d9d06f-3b2c-4d0b-95e9-edda86ee99cb) · [847fa416](https://suno.com/song/847fa416-788b-4398-a951-f3df705fa985) |
+
+⬜ **Not heard.**
+
+### r83 `rootsstep` atom
+
+Style:
+
+```
+Roots dub reggae meets dubstep at 140, half-time one-drop: kick and side-stick together on the three, a deep round sub rolling a minor riff, a spring-reverbed guitar skank on the offbeat, a quiet rolling organ bubble, a mournful melodica carrying the tune and a warm horn section taking over in the chorus. Dub drop-outs to bass and drums, a dub siren, tape delay thrown off the last snare of the phrase. The drops turn the sub into a slow, deep, heavy dubstep wobble under the same one-drop, then fall back into the dub. Warm, dark, smoky, spacious, vintage tape. A roots reggae singer, male, Jamaican, mournful and soulful, rich and in tune, sings the verses and the hook, every word clear, unhurried.
+```
+
+Exclude styles:
+
+```
+double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, autotune, pitch-corrected vocals, screeching lead, brostep, riser, EDM build, trap, pop, bright, female vocal, choir, strings, piano, rock guitar
+```
+
+### r83 `sunnydoom` atom
+
+Style:
+
+```
+Breezy modern reggae at 80, clean one-drop, rimshot on the three, tight closed hats, a round melodic walking bassline, a clean muted guitar skank and organ stab, a bright plaintive melodica hook between lines, polished hi-fi, crisp and warm. A smooth young male singer, clear English accent, sings the words sweetly and calmly as if nothing is wrong, the doom in the words against the sunshine in the music. Then the ground gives way: the hook drops into a dark, crushing half-time dubstep bass, heavy growling wobble and a deep sub, the singer still calm on top, then back to the sunshine. Plate reverb and timed delay on the voice and the melodica.
+```
+
+Exclude styles:
+
+```
+double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, autotune, pitch-corrected vocals, ragga, toasting, rap, gravelly voice, shouting, vintage tape hiss, lo-fi, spring reverb, dub siren, horns, trap hats, female vocal, choir, strings
+```
+
+### r83 `deepdub` atom
+
+Style:
+
+```
+Deep dub and meditative dubstep at 140, half-time: a bone-dry kick and a cracking side-stick, hypnotic steppers pressure, a vast clean sub-bass rolling underneath like weather, sparse spring-reverbed skank chords that throw into long feedback echo, a distant melodica phrase answering, a single horn hit echoing into the dark. The whole thing drops out to just bass and voice, then crashes back in. Smoky, nocturnal, dark and wide, tape-saturated, huge low end, very sparse. A Rasta chanter, deep-set and fiery, chants and half-sings the lines with total conviction, laid back behind the beat, every word clear, his line-ends thrown into dub echo.
+```
+
+Exclude styles:
+
+```
+double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, autotune, pitch-corrected vocals, wobble, growl bass, brostep, screeching lead, riser, EDM, pop, polished, bright, major key, female vocal, choir, strings, piano, guitar solo
+```
+
+Lyrics: the r81 cue-free words with per-lane section tags — see each `r83/*.json`.
+
+## v6.73 Round r82 — 3a433539 with passion, not gravel: pop polish, singjay hook, melodica or horns (2026-09-26)
+
+**Brief, Jack 2026-09-26, on [3a433539](https://suno.com/song/3a433539-0507-4d9e-b714-d134c0e1e509):** *"The deep gravel
+throated part of the prompt is ruining it … when i said aggression i meant the passion in the fast paced reggae
+voice"* — then *"please try all of these"*, of seven ideas:
+
+1. **Passion, not gravel** — voice clause `Fiery, commanding ragga deejays, urgent and full of feeling, every line
+   meant`; every texture word (gravel, gruff, growl, hoarse, rasp, bark, chest) gone from the Style box (asserted),
+   `gravelly voice, growling, gruff, raspy voice` banned. r77's `one gruff and raw` → `one fiery and commanding`.
+2. **Intensity, not tempo** — `laid back behind the beat` kept; double-time bans kept.
+3. **r79's pop mix sentence, word for word** (asserted) — answers the listen's "dull, muffled, near-mono".
+4. **Dark minor synth pluck** — inside that sentence.
+5. **Organ carries the chords**, `synth brass` banned (the "thin MIDI brass" intro).
+6. **Singjay hook**, half chatting half singing — `singing, sung hook, melodic chorus, soulful vocal` un-banned;
+   `sung verses, smooth R&B tenor` banned so it doesn't repeat r80.
+7. **The something else** — lane `melodica` (melodica riff) vs lane `horns` (live trumpet/trombone/tenor sax
+   doubling the hook; `brass band` un-banned in that lane only).
+
+Base = r77 `jamrock` riddim; Lyrics = r81's cue-free box (no structure). Settings as r83.
+
+### Generated 2026-09-26 — 4 Creates, 4 clean. Credits 8,380 → 8,340
+
+| Lane | w40 | w60 |
+|---|---|---|
+| `melodica` | [ce06efba](https://suno.com/song/ce06efba-b5f5-4c6e-bf43-82104d0e6121) · [02e261dd](https://suno.com/song/02e261dd-6818-44e5-8eb4-f608e295927c) | [1a4eda03](https://suno.com/song/1a4eda03-ec3b-4727-933e-a6fb3fd3379a) · [d8811a76](https://suno.com/song/d8811a76-e553-47ef-a78b-58be2a0ff660) |
+| `horns` | [fa547f0b](https://suno.com/song/fa547f0b-0200-4bb6-81b8-d9c116d2465a) · [13255788](https://suno.com/song/13255788-cb00-4f54-9cd3-fbeeb8d8df00) | [c7d8db93](https://suno.com/song/c7d8db93-98d5-4f90-a7d5-a957b9c75c83) · [fdf675b6](https://suno.com/song/fdf675b6-f8af-4cfe-a464-5b341cbf9f7b) |
+
+⬜ **Not heard.**
+
+### r82 `melodica` atom
+
+Style:
+
+```
+Fiery, commanding ragga deejays, urgent and full of feeling, every line meant, laid back behind the beat. Heavy half-time reggae hip-hop riddim at 80: a deep punchy kick on the one, a dry cracking rimshot snare on the three, tight eighth-note hats, a massive warm walking sub carrying the tune, sparse and dark, dub sirens, tape delay and spring reverb thrown off his line-ends and the snare. A church organ carries the chords. A melodica plays the catchy riff, dark and plaintive, answering every line. Polished radio-ready mix, crisp punchy compressed drums, the sub loud and round, a crisp open top end, wide stereo, a dark minor-key synth pluck hooking the loop, a wide warm pad lifting under every hook. The hook is a passionate singjay, half chatting half singing, catchy, natural and untuned. Every vocal sound is a word from the lyrics. Two ragga dancehall MCs trade the verses, toasting, loud and in front, one fiery and commanding, one clipped and cold, unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, crooning, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, major key, happy, uplifting, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, brass band, dubstep, wobble bass, EDM drops, drum and bass, jungle, amen break, risers, steel drums, ukulele, pan flute, beach, summer vibes, calypso, sung verses, smooth R&B tenor, synth brass, gravelly voice, growling, gruff, raspy voice
+```
+
+### r82 `horns` atom
+
+Style:
+
+```
+Fiery, commanding ragga deejays, urgent and full of feeling, every line meant, laid back behind the beat. Heavy half-time reggae hip-hop riddim at 80: a deep punchy kick on the one, a dry cracking rimshot snare on the three, tight eighth-note hats, a massive warm walking sub carrying the tune, sparse and dark, dub sirens, tape delay and spring reverb thrown off his line-ends and the snare. A church organ carries the chords. Live trumpet, trombone and tenor sax play a punchy riff doubling the hook. Polished radio-ready mix, crisp punchy compressed drums, the sub loud and round, a crisp open top end, wide stereo, a dark minor-key synth pluck hooking the loop, a wide warm pad lifting under every hook. The hook is a passionate singjay, half chatting half singing, catchy, natural and untuned. Every vocal sound is a word from the lyrics. Two ragga dancehall MCs trade the verses, toasting, loud and in front, one fiery and commanding, one clipped and cold, unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, crooning, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, major key, happy, uplifting, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, dubstep, wobble bass, EDM drops, drum and bass, jungle, amen break, risers, steel drums, ukulele, pan flute, beach, summer vibes, calypso, sung verses, smooth R&B tenor, synth brass, gravelly voice, growling, gruff, raspy voice
+```
+
+
+## v6.72 Round r80 — pop-reggae lanes with a SUNG hook, after ae937a18 (2026-09-26)
+
+**Brief, Jack 2026-09-26, on [ae937a18](https://suno.com/song/ae937a18-5da9-4c60-9569-b4e0ca1e218b)
+(= `camping-r79-poppolish-v6-w40`):** *"i like this version … combined with more of a pop music style …
+like a post malone version, drake, rihanna, or something where they have combined pop and reggae like …
+"Rude" by MAGIC!, "Angel" / "It Wasn't Me" by Shaggy, "Beautiful Girls" by Sean Kingston, "Pon de Replay"
+by Rihanna, "Replay" by Iyaz … Please keep the reggae vibes though."* 🔴 No artist or song name in any box.
+
+**What the take actually is** (Gemini listen, `docs/listening/log/2026-09-26-115443-…`): ~83 BPM half-time
+steppers, minor; deep clean sub; organ bubble + muted guitar skank tucked back; a synth pluck counter-line;
+brassy pad intro; tape-delay throws. 🔑 **The hook came out SUNG — a clean, soaring male tenor** — against a
+box that said "words only". 🔴 **Verse 2 went double-time** (1:37–1:51, 2:01–2:24) — the standing rule broken.
+
+**Research (web, 2026-09-26):** every reference has a **sung hook over toasted/rapped verses** — "It Wasn't
+Me" is literally a gravelly baritone toaster on the verses and a light R&B singer on the hook, our cast.
+Rude (Db major, 72 felt), Angel (F# major, ~85), It Wasn't Me (C major, 96), Beautiful Girls (A major,
+"Stand By Me" loop, 65 felt) are **sunny/major**; Pon de Replay (F# minor, 100, handclap riddim), Replay
+(F# minor, 91, autotuned), Controlla (Bb minor, 92), One Dance (Bb minor, 104), Work (C# Dorian, 92) are
+**minor**. Post Malone: reverb-wet melodic lead over guitar, mostly Melodyne not audible autotune.
+
+**The ruling this round makes:** the hook is **sung** from r80 (Jack's references + the liked take's own
+drift override the r41 words-only rule for the hook only; verses stay toasted). Autotune stays banned
+(r66, "too cheesy"). Replay's core sound *is* autotune, so it is folded into `doowop` rather than copied.
+
+| Lane | Reference (never in a box) | Key | Hook |
+|---|---|---|---|
+| `toasterhook` | It Wasn't Me / Angel | major allowed | smooth soaring R&B tenor |
+| `onedroppop` | Rude | major allowed | clean tenor, sing-along chorus |
+| `doowop` | Beautiful Girls / Replay | major allowed | clean tenor — bright chords against bitter words |
+| `clapriddim` | Pon de Replay / Work | minor | **chanted** call-and-response (the control lane: no singing) |
+| `nightdancehall` | Controlla / One Dance / Post Malone | minor | soft melancholy tenor, wet arena reverb |
+
+Every lane keeps the reggae anchors the listen found — **organ bubble + muted skank**, sub, dub delay — and
+r79 `poppolish`'s mix sentence (polished, compressed, crisp open top, wide stereo) verbatim.
+
+**Boxes vs r79 `poppolish`** (asserted in `scripts/suno/.tmp/r80/build.py`):
+- Style: lane clause first, then the mix sentence, then the hook sentence, then r77's cast sentence verbatim.
+- Exclude (sung lanes): `singing, sung hook, melodic chorus, soulful vocal, crooning` deleted, `sung verses`
+  added; `sung harmonies, autotune, pitch-corrected vocals` kept. Major lanes also drop `major key, happy,
+  uplifting`. `nightdancehall` drops `trap`.
+- Lyrics: words canon-identical (asserted). The three chorus cues → `sung by the soaring male tenor`
+  (`clapriddim`: `the MC calls, the room chants it back, words only`). Double-time guard: `[cold ragga MC,
+  sharper, still unhurried]` → `[cold ragga MC, harder, still slow and unhurried]`.
+
+Settings as r79: v6 · Style Influence 75 · Variety Off · Max Mode off · Vocal Gender Male · Personalize off ·
+no Voice · **Duration 240 s** · workspace `camping-Jack` · weirdness **40 and 60**.
+
+### Generated 2026-09-26 — 10 Creates, 10 clean. Credits 8,500 → 8,400
+
+| Lane | w40 | w60 |
+|---|---|---|
+| `toasterhook` | [b2cc0568](https://suno.com/song/b2cc0568-d313-4984-90a7-542cc6e8b63f) · [e221408c](https://suno.com/song/e221408c-996b-48c4-a487-11adef4effd6) | [b0597319](https://suno.com/song/b0597319-a87e-41a5-a04d-d5cbcac6c719) · [4bc3f086](https://suno.com/song/4bc3f086-a503-4092-aaa1-3ebf280320c4) |
+| `onedroppop` | [e4544e66](https://suno.com/song/e4544e66-e722-4fca-8ae0-6871cb735b5b) · [1505a657](https://suno.com/song/1505a657-bae9-4ab7-93a6-138f76411ee3) | [f7fb4107](https://suno.com/song/f7fb4107-133f-4061-9bd2-5fba7b225177) · [e4e7d984](https://suno.com/song/e4e7d984-80bd-43df-9d8a-1acf86a8d829) |
+| `doowop` | [3a950a4c](https://suno.com/song/3a950a4c-2328-40fe-8a2e-9861505fe4f2) · [26e0857c](https://suno.com/song/26e0857c-4422-405d-907f-d475bd86e975) | [1fd0c976](https://suno.com/song/1fd0c976-8331-47e7-bb0f-38aa39ada41a) · [ca3b284d](https://suno.com/song/ca3b284d-e902-40fe-9d1c-0b55bfa43eff) |
+| `clapriddim` | [f5153947](https://suno.com/song/f5153947-d9ab-46d4-9220-824d1e389379) · [58cc0906](https://suno.com/song/58cc0906-1a0a-4eed-a36b-4045e3dd0be7) | [72934005](https://suno.com/song/72934005-f82f-4a64-b2ee-e25d9ce9ce2e) · [8c5e3559](https://suno.com/song/8c5e3559-5ad2-4913-8494-f357e594c87c) |
+| `nightdancehall` | [159e159c](https://suno.com/song/159e159c-234e-45e9-a7a1-fa8710514529) · [5f7ea430](https://suno.com/song/5f7ea430-5d70-4bb7-8f6a-1bd03973538f) | [2236c18d](https://suno.com/song/2236c18d-fd0a-4f05-b89a-37cd23511e68) · [a8abc5c4](https://suno.com/song/a8abc5c4-4420-4884-b139-ab6ebf6f22e8) |
+
+⬜ **Not heard.** Listen for: (1) is the reggae still there; (2) is the hook sung, clean, untuned; (3) 🔴 any
+double-time in verse 2; (4) do the major lanes read as irony or as cheese against the words.
+
+### r80 `toasterhook` atom
+
+Style:
+
+```
+Reggae hip-hop crossover pop at 90: a laid-back hip-hop pocket with a dancehall accent, a funky walking bassline, a muted offbeat guitar skank, an organ bubble, a dub siren at the turns. Polished radio-ready mix, crisp punchy compressed drums, the sub loud and round, a crisp open top end, wide stereo. The hook is sung by one smooth, soaring male R&B tenor, a simple catchy melody, natural and untuned. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two ragga dancehall MCs trade the verses, toasting, loud and in front, one gruff and raw, one clipped and cold, riding the slow half-time pulse, heavy and unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, brass band, dubstep, wobble bass, EDM drops, drum and bass, jungle, amen break, risers, steel drums, ukulele, pan flute, beach, summer vibes, calypso, sung verses
+```
+
+### r80 `onedroppop` atom
+
+Style:
+
+```
+Reggae pop fusion, one-drop at 72: live drums with the rimshot on the three, a clean offbeat guitar skank, a round melodic bassline, bright organ bubble, tape delay on the line-ends. Polished radio-ready mix, crisp punchy compressed drums, the sub loud and round, a crisp open top end, wide stereo. The hook is sung by one clean, soaring male tenor, a big simple sing-along chorus, natural and untuned. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two ragga dancehall MCs trade the verses, toasting, loud and in front, one gruff and raw, one clipped and cold, riding the slow half-time pulse, heavy and unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, brass band, dubstep, wobble bass, EDM drops, drum and bass, jungle, amen break, risers, steel drums, ukulele, pan flute, beach, summer vibes, calypso, sung verses
+```
+
+### r80 `doowop` atom
+
+Style:
+
+```
+Doo-wop reggae pop at 65, half-time: a fifties bass-and-chord loop, a sparse offbeat skank, an organ bubble, finger snaps, a light one-drop, the sweet bright chords against the bitter words. Polished radio-ready mix, crisp punchy compressed drums, the sub loud and round, a crisp open top end, wide stereo. The hook is sung by one clean, soaring male tenor, a simple catchy melody, natural and untuned. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two ragga dancehall MCs trade the verses, toasting, loud and in front, one gruff and raw, one clipped and cold, riding the slow half-time pulse, heavy and unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, brass band, dubstep, wobble bass, EDM drops, drum and bass, jungle, amen break, risers, steel drums, ukulele, pan flute, beach, summer vibes, calypso, sung verses
+```
+
+### r80 `clapriddim` atom
+
+Style:
+
+```
+Minor-key dancehall pop at 100: a syncopated handclap riddim, big bouncing dancehall drums, a deep sub, an organ bubble and muted skank tucked underneath, dub echo on the line-ends. Polished radio-ready mix, crisp punchy compressed drums, the sub loud and round, a crisp open top end, wide stereo. The hook is a chant: the MC calls it and a room answers it back, catchy and repeated, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two ragga dancehall MCs trade the verses, toasting, loud and in front, one gruff and raw, one clipped and cold, riding the slow half-time pulse, heavy and unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, singing, sung hook, melodic chorus, soulful vocal, crooning, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, major key, happy, uplifting, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, brass band, dubstep, wobble bass, EDM drops, drum and bass, jungle, amen break, risers, steel drums, ukulele, pan flute, beach, summer vibes, calypso
+```
+
+### r80 `nightdancehall` atom
+
+Style:
+
+```
+Nocturnal minor-key dancehall pop at 92: a sparse dancehall drum with a dry rim, a deep sub, hypnotic minor piano chords, a muted guitar skank, an organ bubble, wet arena reverb on the hook. Polished radio-ready mix, crisp punchy compressed drums, the sub loud and round, a crisp open top end, wide stereo. The hook is sung by one soft, melancholy male tenor, a simple catchy melody, natural and untuned. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two ragga dancehall MCs trade the verses, toasting, loud and in front, one gruff and raw, one clipped and cold, riding the slow half-time pulse, heavy and unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, major key, happy, uplifting, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, brass band, dubstep, wobble bass, EDM drops, drum and bass, jungle, amen break, risers, steel drums, ukulele, pan flute, beach, summer vibes, calypso, sung verses
+```
+
+### r80 lyrics — sung lanes (`toasterhook`, `onedroppop`, `doowop`, `nightdancehall`)
+
+```lyrics
+[Verse 1 | gruff ragga MC, quiet, close and begging, unhurried]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+[Verse 1, second half | gruff ragga MC, more energy from here, same tempo, heavy and unhurried, every word clear]
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | sung by the soaring male tenor]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | cold ragga MC, clipped and cold, heavy and unhurried, every word clear]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold ragga MC, harder, still slow and unhurried]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | sung by the soaring male tenor]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two ragga MCs take turns, slow and heavy, space between every line]
+[gruff ragga MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold ragga MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both ragga MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold ragga MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff ragga MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold ragga MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff ragga MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold ragga MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | sung by the soaring male tenor]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+### r80 lyrics — `clapriddim`
+
+```lyrics
+[Verse 1 | gruff ragga MC, quiet, close and begging, unhurried]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+[Verse 1, second half | gruff ragga MC, more energy from here, same tempo, heavy and unhurried, every word clear]
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | the MC calls, the room chants it back, words only]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | cold ragga MC, clipped and cold, heavy and unhurried, every word clear]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold ragga MC, harder, still slow and unhurried]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the MC calls, the room chants it back, words only]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two ragga MCs take turns, slow and heavy, space between every line]
+[gruff ragga MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold ragga MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both ragga MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold ragga MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff ragga MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold ragga MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff ragga MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold ragga MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | the MC calls, the room chants it back, words only]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.71 Round r79 — r77 `jamrock` fused with modern pop, three lanes (2026-09-26)
+
+**Brief, Jack 2026-09-26, on [3a433539](https://suno.com/song/3a433539-0507-4d9e-b714-d134c0e1e509)
+(= `camping-r77-jamrock-v6-w40`):** *"i like it but i think it needs the reggae style to be combined with
+more of a pop music style, to modernise it a bit and make it more palatable, that might be wrong but it is
+worth a try."*
+
+**What the take actually is** (Gemini listen, `docs/listening/log/2026-09-26-113303-…`): opens on solo
+synth-brass chords (not the organ the box names), heavy boom-bap/dub loop, sine-like sub, patois ragga lead,
+and a **soulful, melodic hook** despite "words only" in the box — drift Jack likes. Dated by: a dull, recessed
+top end, near-mono (stereo correlation 0.973), thin dry MIDI brass. 🔴 It also goes **double-time at ~2:49**
+in the bridge — against the standing rule; the Bridge cue already asks for slow and heavy.
+
+**Research (web, 2026-09-26):** the fusions that stay dark and minor are trap dancehall (Skillibeng; Koffee
+"Toast" ~100), Drake "Controlla" (~92, minor), Major Lazer "Lean On" (98, G minor), dancehall pop at "Shape of
+You"'s 96. Pop-reggae (MAGIC!) and tropical house are major-key and beachy — out. Prompt guides (untested by us)
+say a bare "reggae pop" genre word waters down and "tropical" pulls to the beach; pop comes from production
+words (polished, punchy, compressed, sidechained, 808). Gemini's own pop advice — autotune, vocal chops, 16th-
+note hat rolls — is **rejected** (no autotune, nothing wordless, never double-time).
+
+**The round: frozen spine + three worlds.** r77's vocal/hook spine and Lyrics box are byte-identical in every
+lane (asserted in `scripts/suno/.tmp/r79/build.py`); the lane clause goes first.
+
+| Lane | What moves |
+|---|---|
+| `poppolish` | smallest step — r77's riddim **verbatim**, plus a pop mix sentence: polished, compressed, crisp open top end, wide stereo, dark minor pluck, warm pad under the hook |
+| `dancehallpop` | dark minor-key dancehall pop at 96 — dancehall bounce, claps, 808 sub, marimba/mallet riff, sidechained offbeat chords; siren, tape delay, organ kept |
+| `trapdancehall` | dark trap dancehall at 92, half-time — gliding 808, dancehall bounce, **steady sparse** trap hats (no rolls: speed risk), sidechained minor chords |
+
+**Exclude audit:** `glossy production` deleted (it banned the polish being asked for); `trap` deleted in the
+`trapdancehall` lane only; appended `steel drums, ukulele, pan flute, beach, summer vibes, calypso` (the beach
+pull). `major key, happy, uplifting, reggaeton, tropical house` kept — they hold the dark register.
+
+Settings as r77: v6 · Style Influence 75 · Variety Off · Max Mode off · Vocal Gender Male · Personalize off ·
+no Voice · **Duration 240 s** · workspace `camping-Jack` · weirdness **40 and 60**.
+
+### Generated 2026-09-26 — 6 Creates, 6 clean. Credits 8,560 → 8,500
+
+| Lane | w40 | w60 |
+|---|---|---|
+| `poppolish` | [ae937a18](https://suno.com/song/ae937a18-5da9-4c60-9569-b4e0ca1e218b) (4:00) · [d9f43af9](https://suno.com/song/d9f43af9-b4c6-4c4b-b769-7023bf6d222e) (3:59) | [af4289cc](https://suno.com/song/af4289cc-7d4a-4bfa-bd4c-5bc4a37f9f75) (4:01) · [48daded0](https://suno.com/song/48daded0-c996-432e-b7d2-341d7de106da) (4:02) |
+| `dancehallpop` | [386b47ea](https://suno.com/song/386b47ea-835b-4088-821c-52dbc32bedf0) (3:59) · [d4bee658](https://suno.com/song/d4bee658-b4a1-4f42-9f68-1bfbd8391440) (3:59) | [b94e3e58](https://suno.com/song/b94e3e58-e13e-4d6a-9543-58dfa5580a30) (4:00) · [d28274f9](https://suno.com/song/d28274f9-df67-489b-aaa5-d00fad105f33) (4:00) |
+| `trapdancehall` | [cb4f46ca](https://suno.com/song/cb4f46ca-3462-4b2c-acce-445689116791) · [71af15d4](https://suno.com/song/71af15d4-bfb0-48c7-ac4c-5f541de173db) | [ac5b5bec](https://suno.com/song/ac5b5bec-40f0-4ce3-aedd-3ba13dc8211c) · [9be114bf](https://suno.com/song/9be114bf-eb97-42f0-9b8a-b72249bbde79) |
+
+✅ **Jack's pick, 2026-09-26: [ae937a18](https://suno.com/song/ae937a18-5da9-4c60-9569-b4e0ca1e218b)** (`poppolish` w40) — *"I like this version"*; built on in r80 (§v6.72). Other takes: listen for (1) does it sound more modern without losing the riddim; (2) any beach/tropical
+drift; (3) any double-time, especially over the trap hats; (4) does the melodic hook survive.
+
+⬜ **Not yet tried, the obvious next lever:** let the hook be **sung** (pop is carried by a sung hook, and the
+liked take's hook already drifted melodic). That breaks the r41 words-only rule, so it is Jack's call.
+
+### r79 `poppolish` atom
+
+Style:
+
+```
+Heavy half-time reggae hip-hop riddim at 80: a deep punchy kick on the one, a dry cracking rimshot snare on the three, tight eighth-note hats, a massive warm walking sub carrying the tune. One hypnotic loop, sparse and dark, a dub siren sweeping in at every section, tape delay and spring reverb thrown off his line-ends and the snare. A church organ answers at the turns. Polished radio-ready mix, crisp punchy compressed drums, the sub loud and round, a crisp open top end, wide stereo, a dark minor-key synth pluck hooking the loop, a wide warm pad lifting under every hook. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two ragga dancehall MCs trade the verses, toasting, loud and in front, one gruff and raw, one clipped and cold, riding the slow half-time pulse, heavy and unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, singing, sung hook, melodic chorus, soulful vocal, crooning, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, major key, happy, uplifting, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, brass band, dubstep, wobble bass, EDM drops, drum and bass, jungle, amen break, risers, steel drums, ukulele, pan flute, beach, summer vibes, calypso
+```
+
+### r79 `dancehallpop` atom
+
+Style:
+
+```
+Dark minor-key dancehall pop at 96: a bouncing dancehall drum pattern, tight snappy claps, a deep booming 808 sub, a moody marimba and plucked mallet riff looping in a minor key, sidechained synth chords pumping on the offbeat, crisp, polished and modern. A dub siren sweeps in at every section, tape delay thrown off his line-ends. A church organ answers at the turns. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two ragga dancehall MCs trade the verses, toasting, loud and in front, one gruff and raw, one clipped and cold, riding the slow half-time pulse, heavy and unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, singing, sung hook, melodic chorus, soulful vocal, crooning, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, major key, happy, uplifting, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, brass band, dubstep, wobble bass, EDM drops, drum and bass, jungle, amen break, risers, steel drums, ukulele, pan flute, beach, summer vibes, calypso
+```
+
+### r79 `trapdancehall` atom
+
+Style:
+
+```
+Dark trap dancehall at 92, half-time: a hard 808 sub gliding under the tune, a dancehall kick and snare bounce, crisp trap hi-hats kept steady and sparse, sidechained minor-key synth chords, a dark plucked mallet riff, a polished modern mix, loud and wide. Dub siren at every section, tape delay on his line-ends. A church organ answers at the turns. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two ragga dancehall MCs trade the verses, toasting, loud and in front, one gruff and raw, one clipped and cold, riding the slow half-time pulse, heavy and unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, singing, sung hook, melodic chorus, soulful vocal, crooning, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, major key, happy, uplifting, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, brass band, dubstep, wobble bass, EDM drops, drum and bass, jungle, amen break, risers, steel drums, ukulele, pan flute, beach, summer vibes, calypso
+```
+
+Lyrics: **the r77 lyrics block (§v6.69), byte-identical.**
+
+---
+
+## v6.70 Round r78 — r77 exactly, with low gravelly voices (2026-09-24)
+
+**Brief, Jack 2026-09-24:** *"we have found our musical style … keep the style references … the voices
+are quite high pitched in timbre"* — he named two ragga/dancehall MCs with *"very low gravelly voices"*
+— *"recut another example, but with much lower gravelly voices … without changing anything else."*
+
+🔑 **r77's style is now THE style.** 🔴 The named MCs are never written into a box — translated.
+
+| Box | The only change from r77 (asserted in `scripts/suno/.tmp/r78/build.py`) |
+|---|---|
+| Style (both) | `Two ragga dancehall MCs trade the verses, toasting, loud…` → `Two ragga dancehall MCs with deep, low, gravelly voices trade the verses, toasting from the chest, rough and husky, loud…` |
+| Exclude (both) | appended `high-pitched vocals, nasal vocals, thin voice, young voice` |
+| Lyrics | every cue `ragga MC` → `deep gravelly ragga MC`; words canon-identical |
+
+Settings unchanged: v6 · Style Influence 75 · Variety Off · Max Mode off · Vocal Gender Male ·
+Personalize off · no Voice · **Duration 240 s** · workspace `camping-Jack` · weirdness **40 and 60**.
+
+⚠️ **If the voices still come back high,** the next lever is a saved **Voice** built from a low,
+gravelly take — adjectives are weak against the genre's default vocalist (skill: "Getting a specific voice").
+
+### Generated 2026-09-24 — 4 Creates, 4 clean. Credits 8,620 → 8,580
+
+Sheet asserted byte-identical to the loaded specs before Create.
+
+| Lane | w40 | w60 |
+|---|---|---|
+| `jamrock` | [11080c2a](https://suno.com/song/11080c2a-1748-420d-9cf1-958f35de5348) (3:59) · [aa2fac23](https://suno.com/song/aa2fac23-80a0-4ac5-92d8-171db5ed468d) (4:00) | [a4c1aec5](https://suno.com/song/a4c1aec5-0688-426e-bafd-c61f22476b2e) (4:00) · [e7afbf86](https://suno.com/song/e7afbf86-7055-4dba-a1c5-122021b83ba7) (4:00) |
+| `bundem` | [f5030074](https://suno.com/song/f5030074-bed0-4028-8a0d-24fbf2adbd80) (3:59) · [ba01ebe8](https://suno.com/song/ba01ebe8-e364-43e4-b1ee-041ec042471a) (3:59) | [907a5e12](https://suno.com/song/907a5e12-b6e0-48f5-9ba7-337cb99cca73) (4:00) · [d2485e42](https://suno.com/song/d2485e42-2307-4bfa-9607-a25dba586d9b) (4:00) |
+
+⬜ **Not heard.** The one question: are the voices audibly lower and gravelly than r77's?
+
+### r78 jamrock atom
+
+Style:
+
+```
+Heavy half-time reggae hip-hop riddim at 80: a deep punchy kick on the one, a dry cracking rimshot snare on the three, tight eighth-note hats, a massive warm walking sub carrying the tune. One hypnotic loop, sparse and dark, a dub siren sweeping in at every section, tape delay and spring reverb thrown off his line-ends and the snare. A church organ answers at the turns. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two ragga dancehall MCs with deep, low, gravelly voices trade the verses, toasting from the chest, rough and husky, loud and in front, one gruff and raw, one clipped and cold, riding the slow half-time pulse, heavy and unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, singing, sung hook, melodic chorus, soulful vocal, crooning, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, major key, happy, uplifting, glossy production, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, brass band, dubstep, wobble bass, EDM drops, drum and bass, jungle, amen break, risers, high-pitched vocals, nasal vocals, thin voice, young voice
+```
+
+### r78 bundem atom
+
+Style:
+
+```
+Reggae dubstep at 140, half-time: kick on the one, a sharp metallic snare cracking on the three, reggae swing in the offbeat hats, a clean round sub walking under offbeat synth-brass skanks for the verses. Snare rolls and risers build into drops where the bass turns into a tearing, growling formant wobble with a screeching laser lead, then back to the clean riddim. Dub sirens, long tape echo on his line-ends, a sparse dub-echo breakdown to end. A church organ answers at the turns. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two ragga dancehall MCs with deep, low, gravelly voices trade the verses, toasting from the chest, rough and husky, loud and in front, one gruff and raw, one clipped and cold, riding the slow half-time pulse, heavy and unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, singing, sung hook, melodic chorus, soulful vocal, crooning, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, major key, happy, uplifting, glossy production, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, drum and bass, jungle, amen break, trance, big room, high-pitched vocals, nasal vocals, thin voice, young voice
+```
+
+### r78 lyrics (ONE block, shared by both lanes)
+
+```lyrics
+[Verse 1 | gruff deep gravelly ragga MC, quiet, close and begging, unhurried]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+[Verse 1, second half | gruff deep gravelly ragga MC, more energy from here, same tempo, heavy and unhurried, every word clear]
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | the room says the hook with him, spoken flat, words only]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | cold deep gravelly ragga MC, clipped and cold, heavy and unhurried, every word clear]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold deep gravelly ragga MC, sharper, still unhurried]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | spoken flat]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two deep gravelly ragga MCs take turns, slow and heavy, space between every line]
+[gruff deep gravelly ragga MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold deep gravelly ragga MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both deep gravelly ragga MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold deep gravelly ragga MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff deep gravelly ragga MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold deep gravelly ragga MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff deep gravelly ragga MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold deep gravelly ragga MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | the whole room saying it with him, spoken flat, words only]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.69 Round r77 — r76's sound, ragga dancehall voices, one energy step in Bob's verse (2026-09-24)
+
+**Brief, Jack/Kai 2026-09-24:** r76's sound is *"very close … I would not in any way change the style or
+exclude styles"*, except:
+1. *"remove any reference of Grime MC"* — and then *"we should not have English in there at all because
+   we're leaning into the ragga Jamaican dancehall vibe."*
+2. *"remove any large structural Suno prompts … it's interpreting the timing in a very weird way."* The
+   `[Drop]` cue sat one line early.
+3. 🔑 **The rule for Bob's verse:** the first half is *"Once again…"* to *"…wheels on tick"*; the second
+   half starts at *"cash from the bank for your wank tank"*, exactly halfway. **One energy step, at that
+   line — more energy, same tempo — and no change of tempo or energy anywhere inside either half.**
+
+### What changed from r76 — nothing else
+
+| Box | Change |
+|---|---|
+| Style (both) | `Two English grime MCs trade the verses, loud` → `Two ragga dancehall MCs trade the verses, toasting, loud` |
+| Style `jamrock` | 🔴 deleted *"It opens on a low tense drone with him alone, quiet and begging, and the riddim slams in with the siren on 'you keep on walking'."* — it named the too-early line as the drop |
+| Style `bundem` | 🔴 deleted *"It opens on the synth-brass with him alone, quiet and begging, and the first drop lands on 'you keep on walking'."* — same reason |
+| Exclude | unchanged |
+| Lyrics | words canon-identical (asserted). `[Drop]` deleted; the three voice cues **inside** the verse's halves deleted (*hurt and insistent* before *"you keep on walking"*, *raw, close to cracking* before *"I might be insane"*, *a bitter plea* before *"please sir"*); **one cue added at "cash from the bank"**: *more energy from here, same tempo*. `straight in, no break`, `the beat cuts dead…` and `everything at once` removed. Every `MC` → `ragga MC`. The Bridge's *slow and heavy, space between every line* **kept** — it is the double-time fix |
+
+⚠️ **Two risks to listen for.** (1) `bundem`'s *"Snare rolls and risers build into drops"* is a sound
+sentence and was kept — but Suno places its drops itself, and one landing inside a half would break the
+rule. (2) Toasting tends to speed up (the reference's toaster went double-time in his builds); the
+double-time bans and *riding the slow half-time pulse* stay.
+
+Settings unchanged from r76: v6 · Style Influence 75 · Variety Off · Max Mode off · Vocal Gender Male ·
+Personalize off · no Voice · **Duration 240 s** · workspace `camping-Jack` · weirdness **40 and 60**.
+
+### Generated 2026-09-24 — 4 Creates, 4 clean. Credits 8,660 → 8,620
+
+Sheet asserted byte-identical to the loaded specs before Create.
+
+| Lane | w40 | w60 |
+|---|---|---|
+| `jamrock` | [3a433539](https://suno.com/song/3a433539-0507-4d9e-b714-d134c0e1e509) (4:00) · [8e6a0aa7](https://suno.com/song/8e6a0aa7-6d9d-4ebb-8013-c6169b8bed22) (4:00) | [8338090f](https://suno.com/song/8338090f-fde4-4459-8d5e-7631ab8f2b80) (3:59) · [714b0837](https://suno.com/song/714b0837-541c-47e8-a56a-836257561af4) (3:59) |
+| `bundem` | [2ffbd6b9](https://suno.com/song/2ffbd6b9-3f10-442d-b40c-d7f6dc777c58) (4:00) · [97c7b0d8](https://suno.com/song/97c7b0d8-007e-4ad8-91aa-a1de92d414d7) (4:00) | [c829ccee](https://suno.com/song/c829ccee-c3ae-4744-81c5-b212fbb737fc) (4:00) · [66d28d14](https://suno.com/song/66d28d14-1571-4b57-8d5e-bf775a9b6a9e) (4:00) |
+
+⬜ **Not heard.** Listen for: (1) does Bob's energy step land exactly on *"cash from the bank"* and
+nowhere else; (2) any double-time; (3) do the ragga voices arrive, and is the hook spoken.
+
+### r77 jamrock atom
+
+Style:
+
+```
+Heavy half-time reggae hip-hop riddim at 80: a deep punchy kick on the one, a dry cracking rimshot snare on the three, tight eighth-note hats, a massive warm walking sub carrying the tune. One hypnotic loop, sparse and dark, a dub siren sweeping in at every section, tape delay and spring reverb thrown off his line-ends and the snare. A church organ answers at the turns. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two ragga dancehall MCs trade the verses, toasting, loud and in front, one gruff and raw, one clipped and cold, riding the slow half-time pulse, heavy and unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, singing, sung hook, melodic chorus, soulful vocal, crooning, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, major key, happy, uplifting, glossy production, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, brass band, dubstep, wobble bass, EDM drops, drum and bass, jungle, amen break, risers
+```
+
+### r77 bundem atom
+
+Style:
+
+```
+Reggae dubstep at 140, half-time: kick on the one, a sharp metallic snare cracking on the three, reggae swing in the offbeat hats, a clean round sub walking under offbeat synth-brass skanks for the verses. Snare rolls and risers build into drops where the bass turns into a tearing, growling formant wobble with a screeching laser lead, then back to the clean riddim. Dub sirens, long tape echo on his line-ends, a sparse dub-echo breakdown to end. A church organ answers at the turns. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two ragga dancehall MCs trade the verses, toasting, loud and in front, one gruff and raw, one clipped and cold, riding the slow half-time pulse, heavy and unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, singing, sung hook, melodic chorus, soulful vocal, crooning, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, major key, happy, uplifting, glossy production, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, drum and bass, jungle, amen break, trance, big room
+```
+
+### r77 lyrics (ONE block, shared by both lanes — edit here)
+
+```lyrics
+[Verse 1 | gruff ragga MC, quiet, close and begging, unhurried]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+[Verse 1, second half | gruff ragga MC, more energy from here, same tempo, heavy and unhurried, every word clear]
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+please sir, can I fuckin, have some more?
+[Chorus | the room says the hook with him, spoken flat, words only]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | cold ragga MC, clipped and cold, heavy and unhurried, every word clear]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold ragga MC, sharper, still unhurried]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | spoken flat]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two ragga MCs take turns, slow and heavy, space between every line]
+[gruff ragga MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold ragga MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both ragga MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold ragga MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff ragga MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold ragga MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff ragga MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold ragga MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | the whole room saying it with him, spoken flat, words only]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.68 Round r76 — 36d0b981 in two reference worlds: a heavy reggae hip-hop loop, and reggae dubstep (2026-09-24)
+
+**Brief, Jack 2026-09-24:** *"make a version of [36d0b981] that sounds like
+[Welcome To Jamrock](http://youtube.com/watch?v=_GZlJGERbvE) and
+[Make It Bun Dem](https://www.youtube.com/watch?v=BGpzGu9Yp6Y) — listen to all of it and make something cool."*
+
+🔴 **The artists are never named in a box** (standing rule) — each reference is translated into its
+sound. Both were heard in full by Gemini from a played-back recording (no download):
+[Jamrock log](../../../listening/log/2026-09-24-102809-ref-damian-marley-welcome-to-jamrock.md) ·
+[Bun Dem log](../../../listening/log/2026-09-24-102844-ref-skrillex-damian-marley-make-it-bun-dem.md).
+
+| | Reference 1 → lane `jamrock` | Reference 2 → lane `bundem` |
+|---|---|---|
+| Drums | half-time reggae/hip-hop at ~80, punchy kick on the one, **dry cracking rimshot on the three**, tight 8th hats | half-time at 140, **metallic snare on the three**, reggae swing in the offbeat hats |
+| Bass | **massive warm walking sub carrying the tune** | clean round walking sub in the verses → **tearing, growling formant wobble** in the drops |
+| Harmony | one hypnotic loop, sparse | **offbeat synth-brass skanks** |
+| Dub | **siren at every section**, tape delay + spring reverb on vocal and snare | sirens, long tape echo, a dub-echo breakdown to end |
+| Shape | no drops — the riddim slams in with the siren (their 0:07) | **snare-roll builds into drops**, back to the clean riddim between |
+| Not taken | the patois toaster (the grime cast stays), the news-broadcast intro (non-lyric words) | the **double-time during the builds** — banned; vocal chops — banned |
+
+### Kept from 36d0b981
+
+The grime cast's voice half · the begging opening, now landing on *"you keep on walking"* as the
+riddim slam / first drop · the quick hook said flat by the room · the church organ at the turns.
+
+### 🔴 Never double-time — r75's Bridge fixed
+
+r75 went double-time **in the Bridge in both heard takes**. The Bridge cue *"trade lines, close and
+overlapping"* → *"take turns, slow and heavy, space between every line"*; *"rising"* → *"raw …
+unhurried"*; *"sharper"* → *"sharper, still unhurried"*. **Duration 240 s** (up from 230). The hook
+cues now say **spoken flat** (r75 sang it despite the bans).
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender Male · Personalize off ·
+no Voice · **Duration 240 s** · workspace `camping-Jack` · weirdness **40 and 60**. 4 Creates, 8 takes.
+
+### Generated 2026-09-24 — 4 Creates, 4 clean. Credits 8,700 → 8,660
+
+| Lane | w40 | w60 |
+|---|---|---|
+| `jamrock` | [8666e993](https://suno.com/song/8666e993-bcb1-42c0-89da-8bb53d295ce7) (3:59) · [e2cc1257](https://suno.com/song/e2cc1257-926d-4177-9cd0-19c8f9c4b49d) (4:00) | [ad1704a4](https://suno.com/song/ad1704a4-f3f7-4e62-ba4e-7fe2127a6bf1) (4:00) · [8c78c01d](https://suno.com/song/8c78c01d-c2c0-412d-b6e2-f6c4894cdae6) (3:59) |
+| `bundem` | [f42269d4](https://suno.com/song/f42269d4-497d-4816-9fff-da7c85db90fa) (4:00) · [67dcb449](https://suno.com/song/67dcb449-8567-4a0b-8fdb-4ab7366c9759) (3:59) | [9e12809f](https://suno.com/song/9e12809f-62f0-44f3-a75e-eefd456e68f1) (4:00) · [d8019776](https://suno.com/song/d8019776-1689-40e8-87e2-a3fe3832dba0) (3:59) |
+
+⬜ **Not heard — by anyone yet.** Both w40 takes are recorded (`suno-recordings/camping-r76-*`),
+but the Gemini key hit its quota (429 `QUOTA_EXCEEDED`) before either listen ran. ⚠️ The `jamrock`
+take recorded at 229 s although it lists at 3:59 — the second time a long take has recorded short
+(r74 230 s did too). Unchecked whether the recorder or the listing is wrong.
+
+### r76 jamrock atom
+
+Style:
+
+```
+Heavy half-time reggae hip-hop riddim at 80: a deep punchy kick on the one, a dry cracking rimshot snare on the three, tight eighth-note hats, a massive warm walking sub carrying the tune. One hypnotic loop, sparse and dark, a dub siren sweeping in at every section, tape delay and spring reverb thrown off his line-ends and the snare. It opens on a low tense drone with him alone, quiet and begging, and the riddim slams in with the siren on 'you keep on walking'. A church organ answers at the turns. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, riding the slow half-time pulse, heavy and unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, singing, sung hook, melodic chorus, soulful vocal, crooning, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, major key, happy, uplifting, glossy production, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, brass band, dubstep, wobble bass, EDM drops, drum and bass, jungle, amen break, risers
+```
+
+### r76 bundem atom
+
+Style:
+
+```
+Reggae dubstep at 140, half-time: kick on the one, a sharp metallic snare cracking on the three, reggae swing in the offbeat hats, a clean round sub walking under offbeat synth-brass skanks for the verses. Snare rolls and risers build into drops where the bass turns into a tearing, growling formant wobble with a screeching laser lead, then back to the clean riddim. Dub sirens, long tape echo on his line-ends, a sparse dub-echo breakdown to end. It opens on the synth-brass with him alone, quiet and begging, and the first drop lands on 'you keep on walking'. A church organ answers at the turns. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, riding the slow half-time pulse, heavy and unhurried, every word clear.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, vocal chops, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, singing, sung hook, melodic chorus, soulful vocal, crooning, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, major key, happy, uplifting, glossy production, reggaeton, tropical house, ska, oompah, orchestral bed, symphony orchestra, string section, grand piano, drum and bass, jungle, amen break, trance, big room
+```
+
+### r76 lyrics (both lanes)
+
+```lyrics
+[Verse 1 | riddim stripped back | gruff grime MC, quiet, close and begging, unhurried]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | everything drops in on this line]
+[gruff grime MC, hurt and insistent, heavy and unhurried, every word clear]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[gruff grime MC, raw, close to cracking, unhurried]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[gruff grime MC, a bitter plea]
+please sir, can I fuckin, have some more?
+[Chorus | the room says the hook with him, spoken flat, words only]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break | cold grime MC, clipped and cold, heavy and unhurried, every word clear]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold grime MC, sharper, still unhurried]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the beat cuts dead for the first line, then everything back, spoken flat]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two grime MCs take turns, slow and heavy, space between every line]
+[gruff grime MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold grime MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both grime MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold grime MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff grime MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold grime MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff grime MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold grime MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | everything at once, the whole room saying it with him, spoken flat, words only]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.67 Round r75 — the reference's elements back, around the reggae passage; the rap never double-time (2026-09-24)
+
+**Brief, Jack 2026-09-24, on r74:** *"it has lost all other elements from the song i referenced, please
+add the other themes back, also never do double time with the rapping, remember that please."*
+
+🔑 **Standing rule from here: never double-time rap** (on every song). The reference itself went
+*"rapid-fire"* after its drop, and r74's 30829e04 sped up at 2:03.
+
+### What comes back from 36d0b981 (its r71 box + what Gemini heard)
+
+The amen drop on *"you keep on walking"* with a snare roll into it · amen breaks chopped and rolling,
+reverse crashes into every turn · the deep growling sub · the church organ answering at the turns ·
+the room of men saying the hook with him, flat and low, words only · *big, live and room-y, like a rave
+taped off the desk* · the cast sentence's voice half (*two English grime MCs … one gruff and raw, one
+clipped and cold*).
+
+**And the reggae passage stays:** one-drop, ragga swing, rim on the three, warm walking sub, clean
+organ skank on the offbeats, feedback delay on his line-ends.
+
+### 🔴 The double-time fix — positive first, bans second
+
+| Removed (summoned speed) | Added |
+|---|---|
+| *breakneck* · *eight-bar bursts traded* · *every bar landing clean and on the grid* (at 174 the grid is double-time) | *riding the slow half-time pulse under the breaks, heavy and unhurried, every word clear* |
+| r71 bans that banned the wanted pace: `slow tempo, half time, lazy flow, steady rap pace` (+ `tempo change`, which banned the flip) | Exclude: `double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth` |
+| — | r74 sang the hook → `singing, sung hook, melodic chorus, soulful vocal, crooning, roots reggae singer, lovers rock` |
+
+**Duration 230 s** on both lanes — the words get the room the reggae passage's pace needs.
+
+### The one variable: where the jungle lives
+
+| Lane | Shape |
+|---|---|
+| `raggajungle` | the reference's own shape — one-drop opening, amen drop on *"you keep on walking"*, and the organ skank rides on over the breaks |
+| `switch` | verses on the one-drop riddim, **every hook flips into jungle**, then back to the riddim |
+
+Lyrics canon-identical (asserted) and identical across lanes; the drop cue is neutral: `[Drop | everything drops in on this line]`.
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender Male · Personalize off ·
+no Voice · **Duration 230 s** · workspace `camping-Jack` · weirdness **40 and 60**. 4 Creates, 8 takes.
+
+### Generated 2026-09-24 — 4 Creates, 4 clean. Credits 8,740 → 8,700
+
+| Lane | w40 | w60 |
+|---|---|---|
+| `raggajungle` | [fd6b6732](https://suno.com/song/fd6b6732-6e7e-4602-a519-4c3d41f11e58) (3:50) · [1592c303](https://suno.com/song/1592c303-1b9d-41b0-86a6-2ef727a5de09) (3:50) | [edaedc29](https://suno.com/song/edaedc29-6480-492e-a672-a7af09a3a488) (3:49) · [283e3d87](https://suno.com/song/283e3d87-e24b-4f47-a4de-3747ecb3bda1) (3:50) |
+| `switch` | [d30f9328](https://suno.com/song/d30f9328-21bd-4cd7-94fa-81b9e013244a) (3:49) · [e11ff6d0](https://suno.com/song/e11ff6d0-be48-418e-836f-7c98931750d6) (3:49) | [363b8451](https://suno.com/song/363b8451-e5e7-4236-910f-2f51534e0e73) (3:50) · [c39dc7fc](https://suno.com/song/c39dc7fc-8541-46df-a9b2-da06fc9e58d5) (3:50) |
+
+### Heard by Gemini, 2026-09-24 — one take per lane (w40)
+
+Logs: [fd6b6732](../../../listening/log/2026-09-24-095504-camping-r75-raggajungle-v6-w40-fd6b6732.md) ·
+[d30f9328](../../../listening/log/2026-09-24-095330-camping-r75-switch-v6-w40-d30f9328.md).
+
+| | `raggajungle` fd6b6732 | `switch` d30f9328 |
+|---|---|---|
+| ✅ Elements back | church organ 0:00, reggae skank 0:13–0:32, snare roll 0:28, reverse crashes, growling sub, jungle on the hooks | reggae skank 1:30–1:49, jungle 2:23–3:18, reverse crashes, growling sub, organ |
+| 🔴 **Double-time rap** | **2:38–3:05** | **2:23–2:56** |
+| 🔴 Hook | sung melodically | sung melodically (by a high voice) |
+| 🔴 Oohs | in every chorus | choruses + outro from 3:19 |
+| Drop on *"you keep on walking"* | no — lands in half-time grime at 0:33; jungle arrives on the hooks | no — the line is at 0:44 |
+
+🔴 **The double-time is in the same place in both takes: the Bridge**, which is the densest block of
+lyrics and the only cue that says *trade lines, close and overlapping*. The Style box's pace clause
+and the fast-rap bans held everywhere else. Fix to try: the Bridge cue rewritten as slow turn-taking
+with space, `overlapping` deleted, and a longer Duration.
+
+🔴 **The sung hook and the oohs survived their bans** (`singing, sung hook, melodic chorus, ooh,
+wordless vocals` are all in Exclude) — so something positive is summoning them. Unverified suspect:
+`reggae` / `one-drop` pulling in its singer on the hook, since r71 (no reggae words) had the room
+*saying* it.
+
+### r75 raggajungle atom
+
+Style:
+
+```
+Ragga jungle at 174 that opens as a one-drop reggae riddim with ragga swing: rim click on the three, a warm walking sub, a clean organ skanking on the offbeats, his line-ends thrown into feedback delay. Three lines of him alone on it, quiet and begging, then a snare roll and the amen breaks drop on 'you keep on walking', chopped and rolling, reverse crashes into every turn, a deep sub growling under it, the organ skank riding on over the breaks. A church organ answers at the turns. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Big, live and room-y, like a rave taped off the desk. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, riding the slow half-time pulse under the breaks, heavy and unhurried, every word clear.
+```
+
+### r75 switch atom
+
+Style:
+
+```
+Verses on a one-drop reggae riddim with ragga swing: rim click on the three, a warm walking sub, a clean organ skanking on the offbeats, his line-ends thrown into feedback delay. It opens on the riddim with him alone, quiet and begging. Every hook flips into ragga jungle at 174, amen breaks chopped and rolling, reverse crashes, a deep sub growling, then drops back to the riddim for the next verse. A church organ answers at the turns. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Big, live and room-y, like a rave taped off the desk. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, riding the slow half-time pulse under the breaks, heavy and unhurried, every word clear.
+```
+
+### r75 Exclude styles (both lanes)
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, singing, sung hook, melodic chorus, soulful vocal, crooning, roots reggae singer, lovers rock, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, double-time, double-time rap, fast rap, rapid-fire flow, chopper rap, speed rap, motormouth, major key, happy, uplifting, glossy production, jump up, wobble bass, dubstep, EDM drops, reggaeton, tropical house, ska, brass band, oompah, orchestral bed, symphony orchestra, string section, grand piano
+```
+
+### r75 lyrics (both lanes)
+
+```lyrics
+[Verse 1 | one-drop riddim, organ skank | gruff grime MC, quiet, close and begging, unhurried]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[Drop | everything drops in on this line]
+[gruff grime MC, hurt and insistent, heavy and unhurried, every word clear]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[gruff grime MC, rising, close to cracking]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[gruff grime MC, a bitter plea]
+please sir, can I fuckin, have some more?
+[Chorus | the hook, the room saying it with him, words only]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break | cold grime MC, clipped and cold, heavy and unhurried, every word clear]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold grime MC, sharper]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the beat cuts dead for the first line, then everything back]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two grime MCs trade lines, close and overlapping]
+[gruff grime MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold grime MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both grime MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold grime MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff grime MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold grime MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff grime MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold grime MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | everything at once, the whole room saying it with him, words only]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
+
+## v6.66 Round r74 — the whole song as the reggae passage: 0:11–0:21 of 36d0b981, stretched to the full length (2026-09-24)
+
+**Brief, Jack 2026-09-24, on [36d0b981](https://suno.com/song/36d0b981-5ffb-482b-9b9b-ab9e50f3a56b):**
+*"this part of the song 'Once again, and you catching my eye, / and you looking to the side in shame,
+but why / now, let me explain, how I'm just poor' has reggae vibes and is awesome, i like the voice
+the beat the timing everything … make it so the whole song sounds like that."*
+
+### What the passage actually is — heard, not guessed
+
+Gemini listen, 0:00–0:45 ([log](../../../listening/log/2026-09-24-092430-camping-r71-wordsonly-v6-w40-36d0b981.md)).
+The three lines run **0:11–0:21**, and the box never asked for any of it: r71 said *"no drums"* there
+and got a **one-drop reggae groove** instead.
+
+| Element | 0:11–0:21 (the passage) | after the 0:32 drop |
+|---|---|---|
+| Tempo feel | half-time, ~85–87 | double-time D&B, ~170–175 |
+| Drums | soft rim click on the three (one drop), quiet steady closed hat | punchy breakbeat, snare on 2 and 4 |
+| Bass | deep, warm, round sub walking a syncopated line | distorted neuro growl |
+| Keys | clean warm organ **skanking on the offbeats** | — |
+| Space | hall reverb + feedback delay on his line-ends (*"poor"* at 0:21) | reverbs cut, dry |
+| Voice | slow, lots of space between phrases; Gemini calls it a toasted chant | fast, dry, on the grid |
+| Top end | dark, dull, warm | bright, harsh |
+
+⚠️ Gemini hears a **patois** accent in the passage. Accent claims from a listen are weak, and the cast
+sentence says *English grime MCs* — so the cast sentence is held **verbatim** (it made the voice) along
+with *ragga swing*, the one word in r71's box that plausibly summoned the reggae.
+
+### The build
+
+- 🔑 **Style = the passage described**, lane-first, then r71's hook clause and cast sentence verbatim.
+  No `amen`, `jungle` or `174` anywhere in Style or cues (asserted).
+- 🔴 **Inherited bans audited** — five of them banned the passage itself and are gone: `slow tempo`,
+  `half time`, `slow flow`, `lazy flow`, `church organ`. Added the whole jungle/D&B family (the drop is
+  what is being removed) and reggae's **singer** family (`roots reggae singer, crooning, sung melody,
+  lovers rock`) — genre names the music, not the voice. `toasting` / `ragga MC` are **deliberately not
+  banned** this time (r73 `dubecho` banned them): they may be exactly the voice Jack likes.
+- **Lyrics: canon words byte-identical** (asserted); three cues retargeted — Verse 1 *organ, sub and
+  rim click only … begging*, `[Drop | the amen…]` → *the full riddim comes in on this line*, and Verse
+  2's *fast and clear* → *heavy and unhurried*.
+
+### 🔑 The one variable: Duration
+
+The passage delivers **three lines in ~10 s**. At that rate the full lyric needs ~210 s of voice, so
+190 s (the *"perfect"* pacing of the D&B version) would pack the words ~20% tighter than the bit he
+loves. Both lanes are byte-identical boxes; only Duration moves.
+
+| Lane | Duration | Tests |
+|---|---|---|
+| `onedrop190` | 190 s | the proven, liked pacing |
+| `onedrop230` | 230 s | the passage's own pacing |
+
+### Settings
+
+v6 · Style Influence **75** · Variety **Off** · Max Mode off · Vocal Gender Male · Personalize off ·
+no Voice · workspace `camping-Jack` · weirdness **40 and 60**. 4 Creates, 8 takes.
+
+### Generated 2026-09-24 — 4 Creates, 4 clean. Credits 8,780 → 8,740
+
+| Lane | w40 | w60 |
+|---|---|---|
+| `onedrop190` | [30829e04](https://suno.com/song/30829e04-6afd-4382-b434-1a8f9e893646) (3:09) · [b5cce912](https://suno.com/song/b5cce912-f4f0-4165-a817-47d4709d1c6d) (3:10) | [1faec70a](https://suno.com/song/1faec70a-112b-49b8-802b-244b3d22916d) (3:10) · [46c5ba6d](https://suno.com/song/46c5ba6d-3d9f-49e4-900c-73bea6c7c36e) (3:10) |
+| `onedrop230` | [5410ecb5](https://suno.com/song/5410ecb5-aff6-4f81-a8da-1f538020de1b) (3:49) · [3cb17057](https://suno.com/song/3cb17057-1e0e-430c-b438-b199e3f84844) (3:49) | [c0963e98](https://suno.com/song/c0963e98-1884-4e7e-8ef8-cf72f08ea024) (3:49) · [3e268638](https://suno.com/song/3e268638-c82f-493a-8211-553ee9e5ae0d) (3:50) |
+
+✅ **All eight on target** — 230 s obeyed to the second on its first outing (4/4); 190 s is now 40/40.
+
+### Heard by Gemini, 2026-09-24 — one take per lane (w40)
+
+Logs: [30829e04](../../../listening/log/2026-09-24-093543-camping-r74-onedrop190-v6-w40-30829e04.md) ·
+[5410ecb5](../../../listening/log/2026-09-24-093609-camping-r74-onedrop230-v6-w40-5410ecb5.md).
+
+| | `onedrop190` 30829e04 | `onedrop230` 5410ecb5 |
+|---|---|---|
+| Reggae start to end? | ✅ one-drop the whole way, no D&B/jungle anywhere | ✅ same — *"no busy drum breaks or fills"* |
+| Organ skank | ✅ from 0:22 on | ✅ from 0:00 on |
+| Voice | London accent, half-spoken half-toasted, slow and spacious | London grime accent, rapped/toasted, relaxed, wide spaces |
+| Measured tempo | 86 BPM (unverified) | 136 (unverified — contradicts Gemini's 87; one-drop confuses the beat tracker) |
+| Gemini's score vs the target | 9/10 | 10/10 |
+
+🔴 **New fault, both takes: the hook is SUNG** — a clean, melodic male voice on *"I can't live like
+this forever"*, in the intro and every chorus. That breaks the locked *quick, words-only* hook
+([[§v6.65]]) and the no-singing rule. Likely cause: `reggae` pulls its singer in on the hook even with
+the singer family banned (*genre names the music, not the voice*). Next lever, if Jack agrees: put
+`singing, sung hook, melodic chorus, soulful vocal` in Exclude and name the hook's delivery in its
+own cue, before touching anything else.
+
+⚠️ **Unresolved:** the 230 s take lists at 3:49 on the create page but recorded at 189.9 s, and
+Gemini heard it end at 3:09. Either the recording cut short or the listing is wrong — unchecked.
+
+### r74 onedrop atom (both lanes — Duration is the only difference)
+
+Style:
+
+```
+One-drop reggae riddim at 87 with ragga swing: a soft rim click on the three, a deep warm round sub walking a syncopated line, a clean warm organ skanking on every offbeat. Dark and warm, the top end rolled off, the ends of his lines thrown into feedback delay and a big hall reverb, plenty of space between his phrases, like a sound system taped off the desk. It opens on organ, sub and rim click alone with him quiet and begging, and the full riddim comes in on 'you keep on walking'. The riddim drops out and slams back in at the turns. The hook comes quick, a room of men saying it with him flat and low, words only. Every vocal sound is a word from the lyrics, nothing wordless anywhere. Two English grime MCs trade the verses, loud and in front, one gruff and raw, one clipped and cold, eight-bar bursts traded between them, heavy and unhurried, every bar landing clean and on the grid, never hurried and never dragging.
+```
+
+Exclude styles:
+
+```
+ooh, oohs, ahhs, wordless vocals, vocal ad-libs, hype man, crowd shouts, whoops, vocal riffs, sung harmonies, shouting, screaming, roaring, American accent, US rap, trap, autotune, pitch-corrected vocals, female vocal, cheesy, steady rap pace, double-time, motormouth, major key, tempo change, happy, uplifting, glossy production, drum and bass, jungle, amen break, breakbeat, rolling breaks, snare roll, risers, build-up, EDM drops, reese bass, distorted bass, growl bass, neurofunk, jump up, wobble bass, dubstep, roots reggae singer, crooning, sung melody, lovers rock, reggaeton, tropical house, ska, brass band, oompah, orchestral bed, symphony orchestra, string section, grand piano
+```
+
+Lyrics:
+
+```lyrics
+[Verse 1 | organ, sub and rim click only | gruff grime MC, quiet, close and begging, unhurried]
+Once again, and you catching my eye,
+and you looking to the side in shame, but why
+now, let me explain, how I'm just poor
+[the full riddim comes in on this line]
+[gruff grime MC, hurt and insistent, heavy and unhurried, every word clear]
+you keep on walking, through that Wait trose door
+presenting yourself, with your shiny teeth
+fucking sense of entitlement, and self belief
+I get, that you think your deals are slick
+but I bet, that you paid for your wheels on tick
+cash from the bank for your wank tank
+four tonnes of steel, just to get a meal deal
+you got cheese but I want Cheddar
+I can't live like this forever
+[gruff grime MC, rising, close to cracking]
+I might be insane but I do want change,
+let's see what we can arrange
+now, I insist that I hold that door
+[gruff grime MC, a bitter plea]
+please sir, can I fuckin, have some more?
+[Chorus | the hook, the room saying it with him, words only]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Verse 2 | straight in, no break | cold grime MC, clipped and cold, heavy and unhurried, every word clear]
+you are intent on living in a tent
+it's a lack of work ethic, it's pathetic,
+getting parra lettic, it seems that you are just a bum
+drowning your sorrow until tomorrow comes
+prospects exist and now I insist
+that you just stop the grift
+What about if we taxed the rich?
+[cold grime MC, sharper]
+what the fuck you think this is, bitch
+I work hard to pay for my yard
+Payin my tax with a platinum card
+you want change but my pockets are empty
+the only thing I'm changing is the lane in my M3
+if you worked hard, then you could have plenty, fenty,
+all you now seem to do, is resent me.
+wealth gap? fuckin what a load of crap
+now please let me drink my shatoe nerf doo pap
+[Chorus | the beat cuts dead for the first line, then everything back]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[Bridge | the two grime MCs trade lines, close and overlapping]
+[gruff grime MC]
+Oh shit, here we both are, living in a car
+park, rained on in the fucking dark
+[cold grime MC]
+went down the wrong track, then I got the sack,
+then I drank, broke my back, now I'm in the last part
+[both grime MCs together]
+the AI does the fast part, now, the real question is
+will it allow, because it's in charge now...
+[cold grime MC]
+you see as it turns out, there is very little clout,
+in having the manager or any of the see sweet about
+[gruff grime MC]
+the speed the robots replaced us was quicker
+and sicker than when the government debased us
+[cold grime MC]
+back to that time when we very first met,
+I do regret that I judged you, I was wrong,
+[gruff grime MC]
+yet I don't begrudge you,
+we were on the same side all along
+[cold grime MC]
+well we don't have long
+and by the time it hits, we'll be gone
+[Final Chorus | everything at once, the whole room saying it with him, words only]
+I can't live like this forever
+I can't live like this forever
+I might be insane but I do want change
+I can't live like this forever
+[end]
+```
+
+---
 
 ## v6.65 Round r73 — five worlds on a frozen spine: the take Jack likes, kept exactly, everything else free (2026-09-23)
 

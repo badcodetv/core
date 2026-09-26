@@ -9,6 +9,7 @@ up carrying a cue (`[sarcastic, high pitched]`) that nobody reading `camping.md`
 | [`camping.md`](./camping.md) | **The words canon**, and the story behind them. The `` ```lyrics `` block here is the guard: every runner compares the page's words against it and refuses to spend a credit if they have drifted. **Words only — cues are not its business.** | every runner, as the guard |
 | [`camping-sheet.md`](./camping-sheet.md) | **The live prompt.** Style lanes (one Style + Taste + Exclude each), the single lyric cue sheet, sliders, and the round log. Editing this file *is* editing the prompt. | [`scripts/suno/camping.mts`](../../../../scripts/suno/camping.mts) |
 | [`camping-released.md`](./camping-released.md) | The released take, kept as a fidelity reference | humans |
+| [`camping-r86-gnome-step.md`](./camping-r86-gnome-step.md) | **Saved prompt (Jack, 2026-09-26):** the r86 `gnome-step` boxes — 2ffbd6b9 × Gnome Dub psychedelic dub, all three boxes + settings, ready to paste | humans / `suno.mts pair scripts/suno/.tmp/r86/gnome-step.json` |
 | [`archive/`](./archive/) | Finished experiments, kept for their round logs and revert targets | nobody automated |
 
 🥇 **The lane to start from is `modrb`** — the 1960s mod R&B holler, ruled by ear on 2026-09-08
