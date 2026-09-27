@@ -1,6 +1,6 @@
 ---
 title: Camping — the song (LIVE v6 sheet)
-status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). 🔴 STANDING RULE (Jack 2026-09-24): never double-time rap. 🔑 THE STYLE IS FOUND (Jack 2026-09-24): r77's `jamrock`/`bundem` boxes — keep them. RESUME HERE — r86 (§v6.77): 2ffbd6b9 × Gnome Dub psychedelic dub, two lanes; unheard. r85 (§v6.76): r77 bundem take 2ffbd6b9 combined with the Psychedelic Desert Chill Beats mix (oud, hand drums, drone, cavernous dub), two lanes; unheard. r84 (§v6.75): more Make It Bun Dem + varied pop, the voice like the reference's, and a Disconnect experiment; unheard. r83 (§v6.74): a new reggae+dubstep song from Dub Zone's mix, three worlds; r82 (§v6.73): 3a433539 with passion not gravel, melodica/horns lanes; both unheard. r80 (§v6.72): five pop-reggae lanes with a SUNG tenor hook, after Jack's pick ae937a18 (r79 poppolish w40); unheard. r79 (§v6.71): r77 jamrock fused with modern pop. r78 (§v6.70): r77 exactly, with the voices made deep, low and gravelly (Style cast clause + 4 bans + cue labels only). r77 (§v6.69) is the style round. The v5.5 round-17 sheet below is archived history.
+status: LIVE — the single source of truth for the Camping song (Kai, 2026-09-13). 🔴 STANDING RULE (Jack 2026-09-24): never double-time rap. 🔑 THE STYLE IS FOUND (Jack 2026-09-24): r77's `jamrock`/`bundem` boxes — keep them. RESUME HERE — r93 (§v6.84): Reggae is Life (AI-made ref); DIAGNOSIS — r87–r91 asked for a SLOW voice at 240 s; r93 = urgent/driving voice, slow family banned, Duration 205; unheard. r92 (§v6.83): Strictly Dub trippy mix, the aggressive voice in TONE words front-loaded, soft timbres banned; unheard. r91 (§v6.82): Vintage Dub Reggae mix, five more aggressive voices front-loaded; unheard. r90 (§v6.81): No Love Allowed reggae version, the aggressive voice FRONT-LOADED in every box; unheard. r89 (§v6.80): Liquid Rasta underwater dub, five new aggressive Rasta voice types; unheard. r88 (§v6.79): Road To Zion, aggressive Rasta voice in every lane (STANDING), five voice types; unheard. r87 (§v6.78): a fresh reggae dubstep song from Dub Zone's *Dub Reggae From the Roots* (youtube 6qtLueAbAj8), five different lanes, no base take, carry-over audited; unheard. r86 (§v6.77): 2ffbd6b9 × Gnome Dub psychedelic dub, two lanes; unheard. r85 (§v6.76): r77 bundem take 2ffbd6b9 combined with the Psychedelic Desert Chill Beats mix (oud, hand drums, drone, cavernous dub), two lanes; unheard. r84 (§v6.75): more Make It Bun Dem + varied pop, the voice like the reference's, and a Disconnect experiment; unheard. r83 (§v6.74): a new reggae+dubstep song from Dub Zone's mix, three worlds; r82 (§v6.73): 3a433539 with passion not gravel, melodica/horns lanes; both unheard. r80 (§v6.72): five pop-reggae lanes with a SUNG tenor hook, after Jack's pick ae937a18 (r79 poppolish w40); unheard. r79 (§v6.71): r77 jamrock fused with modern pop. r78 (§v6.70): r77 exactly, with the voices made deep, low and gravelly (Style cast clause + 4 bans + cue labels only). r77 (§v6.69) is the style round. The v5.5 round-17 sheet below is archived history.
 candidate: https://suno.com/song/d13ca10a-1aa4-41c5-a6f2-b13beeb2e164
 brief: Jack via Kai 2026-09-13 — "more like Imagine Dragons (https://en.wikipedia.org/wiki/Imagine_Dragons) and less poppy". Kai 2026-09-13 — 174 BPM drum and bass (option A), not the take's 117.
 released_take: ./camping-released.md
@@ -118,6 +118,782 @@ gets generated. Note what the rewrite added that the stomp box never said: `powe
 ```text
 Dark UK drum and bass: detuned wavetable lead, low palm-muted distorted power-chord guitar and heavy guitar wall, dual male spoken-word voices—gravelly half-shout and clean plummy baritone hardening into a shout—with dry intimate acapella breaks, dark sub-heavy compression, stomping floor toms, handclaps, chopped breakbeat, growling Reese sub, screaming detuned lead, reverb-soaked raw distortion, steady 174 BPM amen-roll drive.
 ```
+
+## v6.84 Round r93 — *Reggae is Life*, and the likely real cause: we were asking for a SLOW voice (2026-09-27)
+
+**Brief, Jack 2026-09-27** (7th time, same words), built off ["Damian Marley ft. Eminem – Reggae is Life" | Mohib Beats](https://www.youtube.com/watch?v=5eQHur_rCU4).
+⚠️ **Not a real collaboration** — Mohib Beats makes AI "Damian Marley ft. X" tracks; the same song's other upload is titled
+"Official AI Music Video". So the aggressive Rasta voice Jack is pointing at was very likely made by an AI music model — reachable.
+
+**Heard** (flash-preview for seg 1, flash-lite for 2–4; librosa ~83): one-drop 83–95, tight dry kit, rim clicks, thick melodic DI
+bass, sharp staccato offbeat guitar, Hammond / e-piano, spring reverb + tape throws; a tenor on the hook and a percussive patois
+toaster. 🔑 **Where the aggression comes from, per Gemini:** *"the explosive delivery of consonants"*, *"pushing chest voice, not
+screaming"*, *"urgent lyrical delivery"*, *"steady, fast pace"*.
+
+🔴 **Diagnosis:** r87–r91 all told the voice to be slow — `never hurrying`, `unhurried`, `behind the beat`, `laid back`, `never
+rushing`, `sitting late on the pulse`, `without ever hurrying`, `slow and huge` — on **Duration 240 s**, which spreads 66 lines thin.
+Slow reads as not aggressive. Jack said it at r82: *"the PASSION in the fast paced reggae voice."* **r93 changes pace, not voice
+type:** urgency/drive words (`urgent and driving`, `pressing forward`, `pushing hard from the chest`, `restless`, `pressing ahead of
+the groove`), the slow family banned (`lazy flow, drowsy, sleepy, laid-back vocal`), **Duration 205 s**. `double-time` stays banned —
+urgent is not double-time. Carry-over audit incl. r87–r92: 0.
+
+| Lane | Voice | Riddim |
+|---|---|---|
+| `lifeline` | hard patois toaster on verses + strong belting tenor hook | the reference: roots one-drop 86, dry kit, Hammond, tape throws, sub under hooks |
+| `urgent` | singjay pressing forward, consonants exploding | woody one-drop 90, e-piano, dubstep weight under the loudest lines |
+| `bounce` | Jamaican deejay rapping, punchy staccato, hungry | reggae hip-hop bounce 88, handclap snare, half-speed wobble drop |
+| `westindian` | mature West Indian singer belting at a driving pace | rolling one-drop 92, saturated bass, organ, sub under choruses |
+| `percussive` | low baritone ragga deejay, syllables like drum hits, pressing ahead | dry one-drop 84, rubbery DI bass, snarling drops |
+
+Settings: as r88 **except Duration 205 s**.
+
+### Generated 2026-09-27 — 10 Creates. Credits 7,525 → 7,425
+
+| Lane | w30 | w60 |
+|---|---|---|
+| `lifeline` | [2a4276a7](https://suno.com/song/2a4276a7-7448-4bdf-adc5-b91c8f1c9b6d) · [18901cc4](https://suno.com/song/18901cc4-d1b4-43fb-9d0d-91437bf922bd) | [80f98f1a](https://suno.com/song/80f98f1a-3298-4430-9d49-4bb7b0b12e52) · [352ebceb](https://suno.com/song/352ebceb-13f5-4c97-b9fe-0ad7914ba5c4) |
+| `urgent` | [56b47412](https://suno.com/song/56b47412-30a7-4a83-ab8c-9794a02975c8) · [d693077b](https://suno.com/song/d693077b-1504-4118-b0d4-9f18ce170583) | [d13b3cb1](https://suno.com/song/d13b3cb1-a9fa-4787-8dd4-15a1941f72e4) · [97c4ba33](https://suno.com/song/97c4ba33-2ea3-48e1-92f0-c83e4eb08142) |
+| `bounce` | [c4b11a18](https://suno.com/song/c4b11a18-0814-445c-a7c6-ca1ebeb63ca8) · [2f354b05](https://suno.com/song/2f354b05-b56e-45f2-ae8b-1b228a3967c8) | [536f63b1](https://suno.com/song/536f63b1-eb84-4bec-836c-86d75e89c229) · [60db1f6d](https://suno.com/song/60db1f6d-56a5-4c91-9826-4637c092e68b) |
+| `westindian` | [b089f669](https://suno.com/song/b089f669-9695-4ba8-babe-d9742910ca25) · [a39b2652](https://suno.com/song/a39b2652-f202-4a95-aeaf-4d98c0fd2e5d) | [f4282094](https://suno.com/song/f4282094-2b8f-419c-b26f-dd438ba92653) · [8fda2733](https://suno.com/song/8fda2733-5e4e-4fa3-b0c8-7841699ae806) |
+| `percussive` | [87b210f0](https://suno.com/song/87b210f0-ebcc-4693-90bd-f8cbe70035ad) · [de362c09](https://suno.com/song/de362c09-4bce-4558-b54f-fc8f8e916671) | [28a80aaa](https://suno.com/song/28a80aaa-491f-497b-a90d-7f994eadf869) · [145ab798](https://suno.com/song/145ab798-1a59-40c6-9707-45eda2778732) |
+
+⬜ **Not heard.**
+
+### r93 `lifeline` atom
+
+Style:
+
+```
+Hard patois toaster, male, explosive consonants, pushing chest voice, urgent and driving, attacking every verse, while a strong soaring tenor belting the hook with fire. Roots one-drop, 86 bpm, tight dry kit with rim clicks, a thick melodic bass, sharp staccato offbeat guitar, Hammond underneath, spring reverb and tape throws on the vocal tails, with dubstep sub-bass surging under each hook.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, growl, female vocal, soft vocal, breathy, mellow, crooning, lazy flow, drowsy, sleepy, laid-back vocal, trap, synth brass, steel pan
+```
+
+### r93 `urgent` atom
+
+Style:
+
+```
+Rasta singjay, male, urgent and pressing forward, part singing, part chanting, pushing hard from the chest, every consonant exploding, fast steady pace, voice climbing when the anger rises. A warm woody one-drop at 90, electric piano chords, offbeat skank, deep round bass, and heavy dubstep weight dropping in beneath the loudest lines.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, growl, female vocal, soft vocal, breathy, mellow, crooning, lazy flow, drowsy, sleepy, laid-back vocal, organ, horns, trap, whispered
+```
+
+### r93 `bounce` atom
+
+Style:
+
+```
+Jamaican deejay rapping over reggae, male, punchy staccato flow, forward-leaning and hungry, every bar pushed hard, confident and cutting. A reggae hip-hop bounce at 88, punchy kick, crisp handclap snare, choppy upstroke guitar, a warm pulsing bass, and a half-speed dubstep drop with a crushing wobble.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, growl, female vocal, soft vocal, breathy, mellow, crooning, lazy flow, drowsy, sleepy, laid-back vocal, one-drop, organ, sung hook, choir
+```
+
+### r93 `westindian` atom
+
+Style:
+
+```
+West Indian roots singer, male, mature, rich and passionate, belting with a driving pace, singing hard with conviction and heat, chatting the rapid lines with bite. A driving rolling one-drop at 92, heavy saturated bass, bright washy cymbals, a warm organ, spring reverb and offbeat delay throws, and dubstep sub-bass climbing under the choruses.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, growl, female vocal, soft vocal, breathy, mellow, crooning, lazy flow, drowsy, sleepy, laid-back vocal, falsetto, trap, clap, electric piano
+```
+
+### r93 `percussive` atom
+
+Style:
+
+```
+Percussive ragga deejay, male, low baritone, loud and punchy, spitting each syllable like a drum hit, hard attack, restless and relentless, pressing ahead of the groove. A dry, tight, eighty-four bpm one-drop, rim clicks, a rubbery DI bass, staccato guitar stabs, tape delay throws, and snarling dubstep drops that hand the song to the bass.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, growl, female vocal, soft vocal, breathy, mellow, crooning, lazy flow, drowsy, sleepy, laid-back vocal, singing, sung hook, organ, horns
+```
+
+Lyrics: `scripts/suno/.tmp/r81/lyrics.txt` verbatim — no cues.
+
+## v6.83 Round r92 — *Strictly Dub — Trippy Dub Groove*, the voice in TONE words, front-loaded (2026-09-27)
+
+**Brief, Jack 2026-09-27** (6th time, same words), built off [STRICTLY DUB • Best of TRIPPY Dub Groove 2023 [Seven Beats Music]](https://www.youtube.com/watch?v=VVmgwyRyk_M) (1 h 57).
+
+**Heard — lower confidence** (`gemini-3.5-flash-lite`, full models out of quota; 4 × 60 s): slow hypnotic trippy dub ~86–90
+(librosa); sparse organic kit, rimshots, wet shakers + woodblocks in slapback; a four-note sub ostinato; ghostly delayed guitar
+through a low-pass sweep; spring reverb, long tape feedback, filtered sirens, phased pads; dark, saturated, rolled-off highs; one
+four-on-the-floor dub-club track; the only voice a calm French spoken word. Research: D-Echo Project (PT) = dub/funk/jazz/electronica,
+Mountaindub = dub/psybient (Bandcamp, Sonichits). 🔑 Suno reggae guides: **tone/technique words carry a voice better than mood
+words**, and a laid-back reggae bed pulls against "aggressive" (HookGenius, Lyro, Jack Righteous).
+
+🔑 **What changed vs r90–r91:** the front-loaded voice sentence is written in **tone and technique** words — `loud`, `powerful`,
+`hard chest voice`, `hard attack`, `projected … through a megaphone`, `staccato`, `booming`, `belting` — instead of mood words; the
+excludes now ban soft **timbres** (`soft vocal, breathy, whispered, mellow, crooning, spoken word`). Gravel still banned. One uniformity
+phrase (`all the way through`) caught and removed. Carry-over audit incl. r87–r91: 0.
+
+| Lane | Voice (tone words) | Riddim |
+|---|---|---|
+| `ostinato` | ragga toaster, loud, hard chest voice, hard attack | slow hypnotic dub, four-note sub spell, woodblocks, dubstep lorry-hits |
+| `megaphone` | militant street orator through a megaphone, clipped, cutting | dark phased dub, spring snare, sirens, sub wall |
+| `clubdub` | dancehall deejay, staccato, shouted phrase-ends | four-on-the-floor dub club → half-speed wobble breakdowns |
+| `booming` | deep booming chest voice, huge projection | haunted single-note guitar in delay, dubstep pressure |
+| `beltdub` | singjay belting high chest voice, strained, ringing + hard chat | ambient leads, self-oscillating tape echo, snarling drops |
+
+Settings as r88.
+
+### Generated 2026-09-27 — 10 Creates. Credits 7,625 → 7,525
+
+| Lane | w30 | w60 |
+|---|---|---|
+| `ostinato` | [48ff8f67](https://suno.com/song/48ff8f67-d793-4f9e-b9d5-844e72bef6c2) · [7fa9015d](https://suno.com/song/7fa9015d-306c-4569-8962-00a5cf150679) | [17fabf4a](https://suno.com/song/17fabf4a-706d-4cd4-8135-3986c4be0901) · [4fe7bc40](https://suno.com/song/4fe7bc40-9fa1-44ea-855f-25c5fb3850d1) |
+| `megaphone` | [5fa3e4ce](https://suno.com/song/5fa3e4ce-b2b8-4c0b-9b9a-e472db1b3cc2) · [44391dce](https://suno.com/song/44391dce-18c8-4bba-9307-9bb203b55f08) | [b0323782](https://suno.com/song/b0323782-048b-4715-8281-be20d4585997) · [774321a8](https://suno.com/song/774321a8-87e1-4c7e-befa-d1355195211e) |
+| `clubdub` | [8a42d0df](https://suno.com/song/8a42d0df-04e0-42ed-9883-db5460a6c934) · [55329c87](https://suno.com/song/55329c87-6565-4b25-ba00-d527664f7b83) | [42ff00f0](https://suno.com/song/42ff00f0-21fe-42e2-b82f-566679227571) · [4b4ffa46](https://suno.com/song/4b4ffa46-4568-4e53-a777-c1faf1a6ea2e) |
+| `booming` | [32fc7e05](https://suno.com/song/32fc7e05-d279-4723-a17f-ddf17bf9fe73) · [84699bb7](https://suno.com/song/84699bb7-b8a8-4d31-8a96-412bb2fc4485) | [b175bb2a](https://suno.com/song/b175bb2a-26eb-45cd-a354-bc790c347220) · [1b948e4a](https://suno.com/song/1b948e4a-53ad-4ada-a70c-07ffecf50359) |
+| `beltdub` | [1eeda2ce](https://suno.com/song/1eeda2ce-a08e-4696-890e-210102e508bf) · [7eac92a8](https://suno.com/song/7eac92a8-380d-47e2-b91e-44cd8116b924) | [00c33877](https://suno.com/song/00c33877-4e88-4db7-af3b-57a694880964) · [cae789e2](https://suno.com/song/cae789e2-1ec7-4825-b546-6c16aefa8580) |
+
+⬜ **Not heard.**
+
+### r92 `ostinato` atom
+
+Style:
+
+```
+Ragga toaster, male, loud and powerful, hard chest voice, every syllable struck with a hard attack, patois, forceful. Beneath him: slow hypnotic dub, a four-note sub-bass figure repeating like a spell, sparse rimshots, woodblocks and shakers bouncing in slapback, a ghostly guitar skank in a low-pass sweep, while dubstep sub-bass hits like a lorry under his hooks.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, female vocal, soft vocal, breathy, whispered, mellow, crooning, spoken word, French, four-on-the-floor, bright pop
+```
+
+### r92 `megaphone` atom
+
+Style:
+
+```
+Militant Rasta street orator, male, projected and loud like he is shouting through a megaphone, clipped, cutting, every word hurled into the street, commanding. Dark, phased, trippy dub underneath: deep kick, snare with a long spring tail, swirling tape echo, filtered sirens drifting across, heavy saturated low end, a wall of dubstep sub rising where he is loudest.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, female vocal, soft vocal, breathy, whispered, mellow, crooning, spoken word, French, sweet, pop, acoustic
+```
+
+### r92 `clubdub` atom
+
+Style:
+
+```
+Dancehall deejay, male, sharp and punchy, staccato bursts, loud shouted edges on the ends of phrases, hyped and hard. A dub club groove, kick on all four beats, deep sub pumping with the kick, rolling electronic hats, pitched-down chant loops in reverb, filter sweeps, then half-speed dubstep breakdowns, a thick wobbling bass.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, female vocal, soft vocal, breathy, whispered, mellow, crooning, spoken word, French, one-drop, acoustic, sweet
+```
+
+### r92 `booming` atom
+
+Style:
+
+```
+Deep-voiced Rasta deejay, male, low booming chest voice, heavy and forceful, huge projection, words dropped like hammers, dread and uncompromising. A slow warm trippy dub with a haunted single-note guitar melody lost in delay, sparse organic drums, wet percussion, rolled-off highs, and massive dubstep sub pressure beneath each hook.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, female vocal, soft vocal, breathy, whispered, mellow, crooning, spoken word, French, high-pitched, four-on-the-floor
+```
+
+### r92 `beltdub` atom
+
+Style:
+
+```
+Rasta singjay, male, belting in a high powerful chest voice, strained with intensity, loud and ringing, flipping into hard-hitting chat between sung lines. A dark hypnotic dub with ambient synth leads held long, a tape echo spiralling into self-oscillation, spring reverb crashes, filtered sirens, and dubstep drops with the sub-bass snarling.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, female vocal, soft vocal, breathy, whispered, mellow, crooning, spoken word, French, falsetto, four-on-the-floor, acoustic
+```
+
+Lyrics: `scripts/suno/.tmp/r81/lyrics.txt` verbatim — no cues.
+
+## v6.82 Round r91 — *Vintage Dub Reggae — Roots Rasta Classics*, five more aggressive voices, front-loaded (2026-09-27)
+
+**Brief, Jack 2026-09-27** (5th time, same words), built off [Vintage Dub Reggae | Roots Rasta Classics](https://www.youtube.com/watch?v=eRqugbxaK14) (33 min).
+
+**Heard — lower confidence:** every full Gemini model was out of quota; the five 60 s clips were described on `gemini-3.5-flash-lite`.
+Despite the title the mix is **modern digital reggae/dancehall**: drum-machine one-drop/steppers, a deep round sub, synth-brass
+carrying hooks, a steel-pan/marimba pluck, delay throws and plate on vocal endings, male patois voices half-sung half-chatted,
+passionate and "defiant". Clip 1 was instrumental hip-hop (probably an ad; ignored). librosa: 129–136 = a ~65–68 reggae pulse read
+double (the describe tool's own tempo returned 132.51 for all five — broken). Research: 70s roots brought a "wailing"/"thunderous"
+dread vocal; deejays toasted in chant cadences on police brutality (Michel Conci, Grokipedia *Big Youth*/*U-Roy*).
+
+Voice front-loaded as r90. Carry-over audit incl. r87–r90: 0.
+
+| Lane | Voice | Riddim |
+|---|---|---|
+| `thunder` | thunderous dread chanter, booming, wailing, wrathful | stark digital one-drop, synth brass, dubstep under the hooks |
+| `sufferah` | ghetto-youth singjay raging for the poor, voice breaking | one-drop, steel-pan pluck, collapses into dubstep weight |
+| `digital` | mid-80s digital ragga deejay, cocky, percussive | drum machine + fat synth bass, half-speed dubstep sections |
+| `scorn` | scornful chat-over deejay mocking the rich man | steppers, synth-brass stabs answering, stomping dubstep drops |
+| `defiant` | full-throated defiant roots singer, fury and conviction | synth-brass hooks, bouncing sub, dubstep swells |
+
+Settings as r88.
+
+### Generated 2026-09-27 — 10 Creates. Credits 7,725 → 7,625
+
+| Lane | w30 | w60 |
+|---|---|---|
+| `thunder` | [0cdea3aa](https://suno.com/song/0cdea3aa-0cb2-4d0e-938c-d76a19596b26) · [a3fd6400](https://suno.com/song/a3fd6400-d75e-473e-80ac-f047533368c4) | [31d2cf54](https://suno.com/song/31d2cf54-b08e-47a4-8c7a-3700e459e821) · [91e1fb5e](https://suno.com/song/91e1fb5e-5e29-46d7-94b3-0d985b302c12) |
+| `sufferah` | [937805c9](https://suno.com/song/937805c9-18be-48c2-a13a-94bd4f4fe681) · [033bdca0](https://suno.com/song/033bdca0-850d-441f-bc67-481c2b5c8629) | [668fca0f](https://suno.com/song/668fca0f-1a78-494d-9f84-96ab0eff77cc) · [b7b025e6](https://suno.com/song/b7b025e6-2d24-4624-ad76-3b0a5644c574) |
+| `digital` | [ad56e282](https://suno.com/song/ad56e282-77b6-4fe1-90fc-d94a35b40023) · [34e72528](https://suno.com/song/34e72528-43a6-4cd9-a0e1-9e736c168687) | [1a98245e](https://suno.com/song/1a98245e-70f0-44a4-9fa5-3d59d32b01cd) · [ec08a555](https://suno.com/song/ec08a555-5578-4daf-bd87-e027b1b67e7d) |
+| `scorn` | [a768ece7](https://suno.com/song/a768ece7-2236-4995-a8d7-931014c4c1d7) · [579d9e5f](https://suno.com/song/579d9e5f-11d4-4d52-8dc3-3d749d828eba) | [5d10c778](https://suno.com/song/5d10c778-2eae-4fd1-a528-ef7497b4f1d5) · [3c325986](https://suno.com/song/3c325986-0440-40f4-ad65-bdc856d2c865) |
+| `defiant` | [5b37dc07](https://suno.com/song/5b37dc07-0163-4428-8606-491f4854d2b2) · [75783010](https://suno.com/song/75783010-3bb3-455e-876f-87199bcfdfa8) | [a824b03f](https://suno.com/song/a824b03f-64c8-4158-9dfc-12e96c68e424) · [aeeec922](https://suno.com/song/aeeec922-f1e7-4192-bef5-994432aed1e3) |
+
+⬜ **Not heard.**
+
+### r91 `thunder` atom
+
+Style:
+
+```
+Thunderous dread chanter, a Rasta voice booming like a storm over the town, wailing and roaring the words, massive and wrathful, rolling each line out slow and huge. Under him: a stark digital reggae riddim, drum machine one-drop, a deep rounded sub, synth-brass swells, and a dubstep bass that detonates beneath every hook.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, female vocal, lovers rock, sweet, crooning, gentle, smooth, pop, steel pan
+```
+
+### r91 `sufferah` atom
+
+Style:
+
+```
+Sufferer's cry: a ghetto youth singjay, high and desperate, raging for the poor, half-singing half-shouting his grievance, bitter, hurt and furious, voice breaking with anger. Digital reggae one-drop, a steel-pan pluck hook, round sub, echo repeats trailing him, and when his anger peaks the low end collapses into dubstep weight.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, female vocal, lovers rock, sweet, crooning, calm, smooth, brass, choir
+```
+
+### r91 `digital` atom
+
+Style:
+
+```
+Mid-eighties digital ragga deejay, cocky and attacking, percussive syllables punched like drum hits, fierce, bold, trash-talking, riding the riddim hard. A stark drum machine riddim, a fat synth bass, a marimba-style pluck, reverb claps, then crushing dubstep sections at half speed with the synth bass growling.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, female vocal, lovers rock, singing, crooning, sweet, mellow, brass, acoustic, organ
+```
+
+### r91 `scorn` atom
+
+Style:
+
+```
+Scornful Rasta chat-over deejay, mocking and sarcastic, laughing at the rich man, sneering and cutting, contemptuous, every word a jab, never hurried. A modern digital reggae groove, steppers kick, synth-brass stabs answering his lines, deep sub, echoing rimshots, dubstep drops that stomp on the beat like a boot.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, female vocal, lovers rock, singing, crooning, sweet, gentle, steel pan, choir
+```
+
+### r91 `defiant` atom
+
+Style:
+
+```
+Defiant roots singer, full-throated and passionate, a Jamaican voice singing with fury and conviction, uplifting but angry, fists up, hitting the high notes hard, chatting the fast lines with fire. Digital reggae with a synth-brass section carrying the hooks, a round bouncing sub, sixteenth shakers, echoes flung off the close of each phrase, and dubstep sub swells under the choruses.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, female vocal, lovers rock, sweet, crooning, whispered, falsetto, steel pan
+```
+
+Lyrics: `scripts/suno/.tmp/r81/lyrics.txt` verbatim — no cues.
+
+## v6.81 Round r90 — *No Love Allowed (Reggae Version)*, the aggressive voice FRONT-LOADED (2026-09-27)
+
+**Brief, Jack 2026-09-27** (4th time, same words): aggressive Rasta reggae vocals always, varied per song; built off
+[Rihanna – No Love Allowed (Reggae Version) | Musical Styles](https://www.youtube.com/watch?v=Ffm6uHx49uM).
+
+🔑 **The lever changed, not just the voice.** The complaint repeated across r87–r89, so every Style box now **opens with the voice
+sentence**, on a pool word whose default performer is aggressive (`Ragga deejay`, `Militant roots warrior chant`, `Dancehall badman
+deejay`, `Rasta roots singer belting with fury`, `Conscious Rasta deejay raging`) — suno-prompt: the genre word picks the vocalist
+pool, and front-loading fixes a stubborn word. The reference is sweet pop-reggae with a soulful woman, which pulls the pool the wrong
+way, so `female vocal, romantic, lovers rock, R&B` are banned in every lane (the reference's own voice, not a habit).
+
+**Heard** (Gemini 3.5-flash; segment 2 unheard, quota): one-drop 76–88, kick + rimshot on three, swung eighth hats, a deep melodic
+syncopated bass, clean offbeat guitar/organ stabs, brass pads before the chorus, hall reverb, feedback tape delay on vocal tails,
+smooth rolled-off top; intimate verse → intense soaring chorus. Research: original on *Unapologetic* (2012), prod. No I.D., "a bubbly,
+dubbed-out groove" (Rihanna Wiki, Songfacts, Boomshots). Carry-over audit incl. r87–r89: 0.
+
+| Lane | Voice (front of the box) | Riddim |
+|---|---|---|
+| `ragga` | furious ragga deejay, stabbing syllables | the reference's bubbly one-drop at 76, dubstep sub under hooks |
+| `warrior` | militant roots commander, every line an order | half-time march at 88, hooks drop into dubstep wobble |
+| `badman` | dancehall badman, menacing, cold, low | dark minor dub, siren, snarling dubstep drops |
+| `belter` | roots singer: verses chatted bitter, hook belted in fury, male harmonies | polished one-drop at 80, brass swells |
+| `babylon` | conscious deejay raging at Babylon and the police | sirens + handclaps one-drop at 84, dubstep breakdowns |
+
+Settings as r88.
+
+### Generated 2026-09-27 — 10 Creates. Credits 7,825 → 7,725
+
+| Lane | w30 | w60 |
+|---|---|---|
+| `ragga` | [5337569d](https://suno.com/song/5337569d-159c-45e5-afa0-5c8ae804cbbe) · [879a3c4e](https://suno.com/song/879a3c4e-efe4-4abb-9dd1-35ed321f901a) | [6167bb66](https://suno.com/song/6167bb66-fcb1-44f3-872d-68c2069db6ee) · [829ae6c2](https://suno.com/song/829ae6c2-1747-46ed-b901-4e997952335f) |
+| `warrior` | [ae2d50ab](https://suno.com/song/ae2d50ab-9c99-4964-8101-3c6bd0a81296) · [f46e38c0](https://suno.com/song/f46e38c0-6ba8-4778-adff-5bf5f7b776fa) | [6b5ee1c7](https://suno.com/song/6b5ee1c7-0c3e-496d-8cf2-b2812e80b786) · [baf03359](https://suno.com/song/baf03359-e82f-4482-9ee5-9f4d9468832f) |
+| `badman` | [21e6368a](https://suno.com/song/21e6368a-e81c-4c67-ad06-96a4ff2802bb) · [803d6990](https://suno.com/song/803d6990-ebf3-4552-a9fc-43b2e6b6b2f1) | [1959dc4f](https://suno.com/song/1959dc4f-c750-4af6-8701-49f7936719f5) · [4b109ada](https://suno.com/song/4b109ada-4494-43bb-86e9-3b02381f1e75) |
+| `belter` | [be2b451a](https://suno.com/song/be2b451a-5cb8-41d5-a76f-884e44624496) · [4ef2411e](https://suno.com/song/4ef2411e-a07d-4b9c-8db7-59fe573b8e4c) | [fb75b8b4](https://suno.com/song/fb75b8b4-d817-4c86-9017-f2e844b9ba6b) · [2a382169](https://suno.com/song/2a382169-3dc6-4c48-aa58-6b476ef80484) |
+| `babylon` | [e24f2e0a](https://suno.com/song/e24f2e0a-9af5-47d3-aef1-9302fee149b9) · [fa7abe49](https://suno.com/song/fa7abe49-af8c-412d-9c67-fde2ee3e9ace) | [b65242ca](https://suno.com/song/b65242ca-05b2-4272-8b83-328328b083ea) · [a0c22659](https://suno.com/song/a0c22659-dd8d-4ef5-9f9c-262004d8c5b3) |
+
+⬜ **Not heard.**
+
+### r90 `ragga` atom
+
+Style:
+
+```
+Ragga deejay vocal, furious and Jamaican, toasting hard with fire in every word, stabbing the syllables, heated and relentless, laid back in the pocket. The riddim: a bubbly, dubbed-out pop-reggae one-drop, 76 bpm, kick and rimshot on three, clean offbeat organ stabs, a deep syncopated bass, brass pads rising, feedback tape delay repeating his final words, and a dubstep sub that falls under every hook.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, female vocal, romantic, lovers rock, R&B, sweet, crooning, smooth, gentle
+```
+
+### r90 `warrior` atom
+
+Style:
+
+```
+Militant roots warrior chant, a Rasta commander leading the charge, marching words, stern, loud and unbending, every line an order. Under him a half-time reggae march at 88, rimshot cracking, a heavy walking bass, guitar chops, hall reverb, and when he hits the hook the ground drops into a massive dubstep wobble, then marches on.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, female vocal, romantic, lovers rock, R&B, sweet, crooning, pop, playful, brass pads
+```
+
+### r90 `badman` atom
+
+Style:
+
+```
+Dancehall badman deejay, menacing, cold, low-pitched and hard, threatening every line, sneering, dangerous, stalking the beat without ever hurrying. A dark minor version of a dubbed-out reggae groove: sparse rimshot one-drop, a bass that prowls, organ stabs drenched in echo, dub siren, and dubstep drops in which the bass snarls like a dog on a chain.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, female vocal, romantic, lovers rock, R&B, sweet, crooning, singing, bright, brass, harmonies, playful
+```
+
+### r90 `belter` atom
+
+Style:
+
+```
+Rasta roots singer belting with fury: the verses chatted hard and bitter, then the hook sung at full power, soaring, anguished and furious, cracking with emotion, male harmonies roaring behind him. A polished pop-reggae groove, one-drop, eighty beats a minute, with offbeat guitar, a melodic rounded bass, swelling brass pads before each hook, hall reverb, and a dubstep sub pulse under the big moments.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, female vocal, romantic, lovers rock, R&B, sweet, crooning, gentle, whispered, falsetto
+```
+
+### r90 `babylon` atom
+
+Style:
+
+```
+Conscious Rasta deejay raging at Babylon and the police, confrontational, shouting down the system, righteous anger boiling over, clear and hard, sitting back on the groove. The riddim: sirens and handclaps over a rolling one-drop, 84 bpm, a thick bubbling bass, choppy guitar, echo on the snare, then dubstep breakdowns with a crushing half-time sub and screaming siren sweeps.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, female vocal, romantic, lovers rock, R&B, sweet, crooning, smooth, brass, harmonies
+```
+
+Lyrics: `scripts/suno/.tmp/r81/lyrics.txt` verbatim — no cues.
+
+## v6.80 Round r89 — *Liquid Rasta — Deep Underwater Dub*, aggressive Rasta voices, five NEW voice types (2026-09-27)
+
+**Brief, Jack 2026-09-27** (r88's words again): aggressive Rasta reggae vocals always, the voice varying per song, built off
+[Liquid Rasta | Deep Underwater Dub | Futuristic Sound](https://www.youtube.com/watch?v=GY1ni6Uwzn0) (2 h psychedelic dub mix).
+
+**How it was heard:** five 60 s clips (2:00, 30:00, 1:00:00, 1:30:00, 1:56:40), no download. 🔴 **Two were polluted by YouTube
+mid-roll adverts** (clip 3 from 0:25, clip 5 "tropical pop") and one Gemini call per clip hit the flash-preview quota. Trusted:
+clips 1, 4 and clip 3's first half — slow one-drop 72–80, offbeat skank, warm deep melodic sub, melodica/organ and a vintage
+vibrato synth lead, heavy tape delay and feedback echo, filter sweeps, spring-reverb snare, hall reverb, soft pads, a rolled-off
+"underwater" top, processed female vocal chops as texture. Research: psydub = flanging/phasing and LPF sweeps as fader rides
+(Bass Culture, Grokipedia *Psydub*); aggressive voice types = fire chanter, percussive ragga toaster, rebel wailer, Nyabinghi
+chant leader, clashing deejays (Wikipedia *Ragga*, DancehallMag).
+
+**Voices are all new against r88.** Carry-over audit (`r89/carryover.py`, incl. r87–r88): 0 shared 4-word runs. No cues.
+
+| Lane | World | Voice |
+|---|---|---|
+| `firechant` | low-passed underwater one-drop at 74; the filter tears open onto a colossal dubstep sub | Rasta fire chanter, spiritual wrath, "fire!" |
+| `rebelwail` | spacious liquid dub at 78, Hammond, spring snare, sub wobbling when the band falls away | rebel roots singer, high and cutting, sung in anger |
+| `nyabinghi` | funde + repeater drums over a 140 half-time dubstep kick, drones, phaser, bubbles | Nyabinghi chant leader, incantatory battle cries |
+| `clash` | murky one-drop snapping into growling 140 dubstep and back | TWO Rasta deejays clashing, high vs low |
+| `alien` | futuristic space dub at 72, flanged skank, female chops in delay, bubbling arpeggio | Rasta deejay broadcasting from the future, cold fury |
+
+Settings: as r88 (v6 · SI 75 · Variety Normal · Max off · Male · Personalize off · no Voice · 240 s · camping-Jack · w30/w60).
+
+### Generated 2026-09-27 — 10 Creates. Credits 7,925 → 7,825
+
+| Lane | w30 | w60 |
+|---|---|---|
+| `firechant` | [1a99e66b](https://suno.com/song/1a99e66b-0411-47ee-b74e-e82e14e8525b) · [c226833c](https://suno.com/song/c226833c-0371-47bb-b294-4cfa143ebf80) | [efbbdc7f](https://suno.com/song/efbbdc7f-1b0f-488e-a73a-6a1a50e3d82a) · [8fa824d0](https://suno.com/song/8fa824d0-9a95-4f42-820e-1db5072ef4d9) |
+| `rebelwail` | [0ed8e665](https://suno.com/song/0ed8e665-1982-4942-9ff6-4229a5294294) · [fda3197f](https://suno.com/song/fda3197f-9d1d-4a8e-ba64-ce3435351d4c) | [dc38eb9c](https://suno.com/song/dc38eb9c-9be3-4fb5-a361-5635630d4ba6) · [6aef7cb6](https://suno.com/song/6aef7cb6-e0d3-427a-98eb-5fd0ff32dd73) |
+| `nyabinghi` | [589ff1d5](https://suno.com/song/589ff1d5-f8a9-47ad-817a-ab6983183b4c) · [c26c51d7](https://suno.com/song/c26c51d7-fac8-4939-ac93-5f8899ed7fb5) | [b2041e5a](https://suno.com/song/b2041e5a-9626-46ef-b68a-5bc88678c7e1) · [47629127](https://suno.com/song/47629127-2c5e-4154-aad4-ced26c22a634) |
+| `clash` | [c541ed0b](https://suno.com/song/c541ed0b-2035-4b1c-992c-eaad85ad179e) · [5d420a9e](https://suno.com/song/5d420a9e-35ab-41fa-bcbd-a65b18fc7c4d) | [572bbf1d](https://suno.com/song/572bbf1d-d4f2-47fb-b483-cba2f8ada07d) · [db405216](https://suno.com/song/db405216-59fb-45ee-98f2-1ceb483db33e) |
+| `alien` | [82279323](https://suno.com/song/82279323-e413-4020-8913-e3fcc37e3595) · [cbfbd642](https://suno.com/song/cbfbd642-bd8c-4ffe-942d-382dc94127f5) | [a929c727](https://suno.com/song/a929c727-8ed9-4bbc-a181-fde9d332bf08) · [7bc075d9](https://suno.com/song/7bc075d9-65de-4669-8d7c-d93541d5b05d) |
+
+⬜ **Not heard.**
+
+### r89 `firechant` atom
+
+Style:
+
+```
+Deep underwater dub, one-drop at 74, the whole band low-passed as if heard through the sea, a melodica and offbeat skank drowned in tape echo, bubbling resonant filter. Then the filter tears open and a colossal dubstep sub erupts beneath. Over it a Rasta fire chanter, blazing and furious, spiritual wrath in every line, chanting like he is burning Babylon down, sharp and ferocious, hurling 'fire!' between lines, unrushed and heavy on the beat.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, calm, mellow, crooning, sweet, lovers rock, female lead
+```
+
+### r89 `rebelwail` atom
+
+Style:
+
+```
+Spacious liquid dub reggae at 78, a warm Hammond, spring-reverbed snare, a skanking guitar dripping echo, a deep round bass singing the melody, hall reverb like an ocean cave, and whenever the band falls away the sub bends and wobbles like dubstep. A rebel roots singer, high and cutting, wailing the words in pure anger, sung with his whole chest, pleading then accusing, raw, defiant and on fire, each line ending in a cry thrown into echo.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, toasting, rap, sweet, crooning, lovers rock, soft, female lead, drum machine
+```
+
+### r89 `nyabinghi` atom
+
+Style:
+
+```
+Nyabinghi drums meet cosmic dub: a funde heartbeat and a repeater drum rolling over a slow 140 half-time dubstep kick, a bottomless sub, drone pads, bubbles and feedback echoes swirling, phaser on everything, deep and ritual. A Nyabinghi chant leader, fierce and incantatory, commanding like a war drum, calling down judgement line by line with total authority, every hook a battle cry, ancient and furious.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, guitar, horns, pop, bright, sweet, crooning, calm, female lead
+```
+
+### r89 `clash` atom
+
+Style:
+
+```
+Soundclash from the deep: a murky one-drop with a vintage vibrato synth lead and tape echo, that snaps into huge 140 half-time dubstep with a growling, gnashing bass wobble, then sinks back underwater. Two Rasta deejays clashing, one sharp and high, one booming and low, trading the verses like insults, hostile, cocky and aggressive, each trying to bury the other, toasting hard but never rushing, patois thick.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, singing, crooning, mellow, calm, sweet, choir, female lead, acoustic
+```
+
+### r89 `alien` atom
+
+Style:
+
+```
+Futuristic space dub, a slow alien-planet one-drop, 72 bpm: flanged skank, a quivering vintage synth lead, ghostly female vocal chops smeared in delay, a resonant arpeggio bubbling like water, filter sweeps opening and closing like breath, and a heavy dubstep sub rolling in waves. A Rasta deejay broadcasting from the future through an echo chamber, commanding and furious, spitting warnings with cold fury, every word clear and heavy, dropping behind the beat.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, crooning, sweet, mellow, acoustic, horns, organ, bright pop
+```
+
+Lyrics: `scripts/suno/.tmp/r81/lyrics.txt` verbatim — no cues.
+
+## v6.79 Round r88 — *Road To Zion*, aggressive Rasta voices in every lane, each a different voice (2026-09-27)
+
+**Brief, Jack 2026-09-27:** *"We have lost the aggresive rasta vocals, that should always stay reggae and aggressive, but make
+the voice vary, whilst remainging reggae in each song. please make a song bassed off of"* [Damian Marley ft. Nas, "Road To Zion"](https://www.youtube.com/watch?v=I3g7UkOf5u4).
+🔑 **Standing from here: every lane has an aggressive Rasta reggae vocal; the TYPE of voice varies.** r87's sweet/calm singers were the miss.
+
+**How it was heard:** four segments (0:00, 1:15, 2:30, 3:30) played on channel 1, no download; Gemini (`gemini-3-flash-preview`):
+reggae-swung boom-bap at ~92, knocking kick, wood-crack snare, round melodic bass, a minor-key plucked (kora/nylon) loop and a
+melancholy Rhodes, a sampled sung hook loop, dub throws, vinyl crackle, warm analogue; a Jamaican deejay with sharp aggressive
+consonants, behind the beat, a chanted hook, shouted ad-libs. Research: produced by Stephen Marley, samples Ella Fitzgerald's
+"Russian Lullaby", 93 BPM (Wikipedia, GetSongBPM); Damian's fire comes from the hardcore dancehall deejays he saw at Sunsplash,
+his production from Sly & Robbie's early-80s digital roots (KCBD / Wikipedia *Welcome to Jamrock*).
+
+**Carry-over audit:** `scripts/suno/.tmp/r88/carryover.py` against every earlier spec incl. r87 — 0 shared 4-word runs after 16
+stock phrases were reworded. Longest run shared between lanes: 16 characters. No cues in Lyrics. Never gravel/rasp words
+(`raspy, gravelly` banned in every lane — Gemini called the reference "raspy", Jack ruled that out at r82); never double-time.
+
+| Lane | World | Voice (aggressive, Rasta, varied) |
+|---|---|---|
+| `zionwalk` | closest to the reference: 92 reggae-rap, kora/nylon minor loop, sampled soul hook, crackle, sub under the hook | young fiery Rasta deejay, consonants like punches |
+| `pulpit` | 140 militant reggae on a slow dubstep crawl, minor Rhodes warning phrase, roaring sub | thundering Rasta preacher, judgement on Babylon |
+| `bashment` | early-80s digital dancehall riddim, gunshot snare, dubstep drops into snarling wobble | hardcore dancehall deejay, explosive, confrontational |
+| `singjay` | roots one-drop at 80, Hammond, sampled wailing hook, drops into dubstep weight | high-tenor Rasta singjay, sung cries + furious chat |
+| `elder` | the Ella-style 1940s lullaby record chopped over reggae hip-hop beats + dubstep sub, siren | Rasta elder deejay, deep, bitter, hammering |
+
+Settings: v6 · Style Influence 75 · Variety Normal · Max Mode off · Vocal Gender Male · Personalize off · no Voice · Duration 240 s ·
+workspace `camping-Jack` · weirdness 30 and 60.
+
+### Generated 2026-09-27 — 10 Creates, 10 clean. Credits 8,025 → 7,925
+
+| Lane | w30 | w60 |
+|---|---|---|
+| `zionwalk` | [507942bf](https://suno.com/song/507942bf-47f8-48b3-8ece-f5ee75eac580) · [4b916599](https://suno.com/song/4b916599-42cf-436e-8282-bfaf962ab95e) | [2db633b2](https://suno.com/song/2db633b2-209d-417d-99fc-78ddab4c491f) · [35022e5e](https://suno.com/song/35022e5e-85fc-4a7d-a199-b570a02f16c3) |
+| `pulpit` | [d1b0aded](https://suno.com/song/d1b0aded-febb-40eb-9641-127c6c56aafc) · [8d3b7b13](https://suno.com/song/8d3b7b13-ec0d-4745-94ca-d55fc9db0d03) | [2c6064c3](https://suno.com/song/2c6064c3-dba4-458c-89b9-e45455487b6d) · [37d83c66](https://suno.com/song/37d83c66-fc9f-4936-af69-67a705326643) |
+| `bashment` | [30d02117](https://suno.com/song/30d02117-4209-4033-8dda-8803b1ac0559) · [043a17f4](https://suno.com/song/043a17f4-9723-4eea-8a09-f9c0fb413f44) | [2a98fc17](https://suno.com/song/2a98fc17-0d74-4bcf-baa8-8c66b74125e8) · [d45ba67f](https://suno.com/song/d45ba67f-eb99-4ddd-9a7b-76e3a9cd9442) |
+| `singjay` | [1fc07d92](https://suno.com/song/1fc07d92-f4f9-401b-9959-f0a2227d8f88) · [4bfc475f](https://suno.com/song/4bfc475f-47c7-4781-9bba-bf2becbe8441) | [8d593874](https://suno.com/song/8d593874-be28-4a4b-9865-e8dbd5879b0a) · [f750559f](https://suno.com/song/f750559f-3487-4aef-8ffe-d4b01187da5b) |
+| `elder` | [36766606](https://suno.com/song/36766606-a7cf-4a85-be0e-c4219088c456) · [e8f4709a](https://suno.com/song/e8f4709a-0020-4d8d-80b4-1e5da74b272a) | [f9d7cf5d](https://suno.com/song/f9d7cf5d-81a0-4838-9392-37d139b3748a) · [5d296fba](https://suno.com/song/5d296fba-0578-4978-8d59-a301f62c14d9) |
+
+⬜ **Not heard.**
+
+### r88 `zionwalk` atom
+
+Style:
+
+```
+Conscious reggae-rap crossover, 92 bpm, a knocking boom-bap kit with a reggae swing, a wood-crack snare, a round melodic bass walking under a sorrowful minor loop plucked on kora and nylon guitar, a sampled soul voice looping the hook far away, vinyl crackle, warm analogue saturation, dub echo flung off his last words, a deep sub dropping in under the hook. A young Rasta deejay with righteous fire, spitting every consonant like a punch, furious and precise, riding behind the beat, then chanting the hook with his chest out. Shouted 'boom' and 'yeah man' ad-libs in the echo.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, mellow, crooning, American rapper, trap hats, orchestra, wobble bass
+```
+
+### r88 `pulpit` atom
+
+Style:
+
+```
+Dark militant reggae, 140 bpm, its body a slow dubstep crawl: slow crushing drums, an offbeat skank chop, a mournful minor Rhodes phrase repeating like a warning, and a massive dubstep sub that rises and roars at every turn of the song. A Rasta preacher at the pulpit, thundering and prophetic, chanting judgement on Babylon with total fury, deep chest voice, every line a sermon, measured and heavy with long echoes on his last words. Black, heavy, cinematic, reverb-soaked.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, sweet, crooning, pop, bright, kora, acoustic, vinyl crackle, horns
+```
+
+### r88 `bashment` atom
+
+Style:
+
+```
+Hardcore digital dancehall riddim, early eighties drum machine and a fat synth bassline, stark and minimal, a Casio-style stab, snare cracking like a gunshot, then dubstep drops: the synth bass mutates into a filthy, snarling wobble and the drums go half speed. A dancehall deejay in full fury, explosive, hyped and confrontational, punching every word out at the crowd, commanding the dance, patois heavy, riding the riddim tight but never rushing. Sound system hype, raw and loud, lo-fi digital grit.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, singing, crooning, mellow, piano, strings, kora, organ, polished
+```
+
+### r88 `singjay` atom
+
+Style:
+
+```
+Roots one-drop, 80 bpm, rimshot and kick landing together, a deep walking bass, a Hammond holding soft chords, a looped sampled singer wailing a two-word hook from an old record, dub delays everywhere, crackle and warmth. Then the bass drops into a slow dubstep weight under the one-drop. A Rasta singjay, high tenor, burning with passion, flipping between soaring sung cries and furious chatted bursts, pleading then attacking, raw emotion, always sitting late on the pulse.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, autotune, boom-bap, drum machine, piano, horns, brostep, trap
+```
+
+### r88 `elder` atom
+
+Style:
+
+```
+An old 1940s jazz lullaby record, strings and a clarinet, crackling and warped, chopped into a sorrowful minor loop over hard-hitting reggae hip-hop beats with a bottomless dubstep sub-bass, dub siren, spring echo. A Rasta elder deejay with a deep, commanding voice, bitter and fiery, toasting like he has seen it all and is done being patient, every word hard and clear, lazy on the beat but hitting like a hammer, the hook chanted as a warning. Dusty, smoky, cavernous, huge low end.
+```
+
+Exclude styles:
+
+```
+double-time, chopper, raspy, gravelly, youthful, sweet, crooning, synth, drum machine, bright, kora, pop
+```
+
+Lyrics: `scripts/suno/.tmp/r81/lyrics.txt` verbatim — no cues.
+
+## v6.78 Round r87 — a reggae dubstep song from *Dub Reggae From the Roots*, five lanes, nothing carried over (2026-09-27)
+
+**Brief, Jack 2026-09-27:** *"make a song not using any suno song as something to go off of … Just use this video
+[Dub Zone, "Dub Reggae From the Roots | Organic Reggae Set & Dubwise Mix 2025"](https://www.youtube.com/watch?v=6qtLueAbAj8)
+as inspiration to make the reggae dubstep song … make all of them different from each other. no restrictions or guidance …
+look through whatever prompt you make … to see if there is any old prompts still in there that carried over."*
+
+**How it was heard:** five 60 s clips played on channel 1 (no download) at 1:00, 17:00, 30:00, 43:20, 56:20; Gemini
+(`gemini-3-flash-preview`) briefed each (ledger `docs/listening/log/2026-09-27-*-ref-dubroots-*`). The mix is **organic
+roots reggae, not dub-heavy**: rockers and steppers at ~70/140 and ~100, one-drop at ~80; a militant Jamaican roots singer;
+**a horn section lifting the hooks**; acoustic guitar chops; Hammond bubble; shaker/tambourine; flute-like leads; tape
+delay on line-ends and snare splashes; clean, warm, bass-heavy. Research: reggaestep keeps 140 half-time and its drops
+follow reggae melody (Wikipedia, *Reggaestep*); Tubby-style dub = spring reverb, tape echo fed back on itself, the desk as an instrument.
+
+**Freedom taken:** no Suno take as a base; **no bracket cues at all** (the r81 cue-free words, canon-identical);
+each lane is a different record — tempo, drum pattern, bass design, voice and mix all move. Only Jack's standing
+`double-time` ban survives. 🔑 **Carry-over audit** (`scripts/suno/.tmp/r87/carryover.py`): every 4-word run of each Style box checked
+against every earlier spec's Style/Exclude and this sheet's live section — **0 shared**; the habitual `female vocal, choir`
+removed. Lanes share at most 7 characters with each other. Remaining exclude words are single generic terms, each
+banning another lane of *this* round.
+
+| Lane | World (from which clip) | Voice |
+|---|---|---|
+| `rockers` | militant rockers 140/70 + a horn hook; the floor splits into a vast dubstep sub (1:00) | stern Jamaican roots singer |
+| `steppers` | UK sound-system steppers at 100, four-to-the-floor, wobbling sub, siren, raw near-mono (17:00) | toasting deejay |
+| `barefoot` | acoustic one-drop at 80, no electrics, a hidden sub that grows till the campfire shakes (30:00) | two men trading, soulful + plain English |
+| `dubwise` | psychedelic dubwise, the desk as instrument, self-feeding echo, woozy sub (tags "psy dub", 56:20) | trance-like Rasta chanter |
+| `brassdrop` | sunny big-band reggae; horns trade phrases with growl-bass drops, festival mix (43:20) | warm optimistic Caribbean singer |
+
+Settings: v6 · Style Influence 75 · **Variety Normal** · Max Mode off · Vocal Gender Male · Personalize off · no Voice ·
+Duration 240 s · workspace `camping-Jack` · weirdness 30 and 60.
+
+### Generated 2026-09-27 — 10 Creates, 10 clean. Credits 8,125 → 8,025
+
+| Lane | w30 | w60 |
+|---|---|---|
+| `rockers` | [95823693](https://suno.com/song/95823693-d27a-472e-90b7-bf21cc504c3d) · [ce7cf4e1](https://suno.com/song/ce7cf4e1-3164-4c3b-bca1-943b9a060899) | [a6bf7cd1](https://suno.com/song/a6bf7cd1-b708-4e78-89f0-90348b346884) · [84475ea6](https://suno.com/song/84475ea6-19a6-4eeb-af3a-7b7821c02b8d) |
+| `steppers` | [6139fce3](https://suno.com/song/6139fce3-70f8-4422-bda8-5202358a9774) · [3b3644f2](https://suno.com/song/3b3644f2-c0c8-4e6d-8260-880a4332b1a7) | [702050c3](https://suno.com/song/702050c3-9216-431d-9502-271863398905) · [1e5e91e5](https://suno.com/song/1e5e91e5-c914-43ee-b7bc-0c540084af0f) |
+| `barefoot` | [8de86ce1](https://suno.com/song/8de86ce1-2ba2-4973-ac78-f25c11f520ea) · [6712eaf0](https://suno.com/song/6712eaf0-2e47-4f76-a647-0201015d0851) | [2cdcde9d](https://suno.com/song/2cdcde9d-870f-42d4-b459-dba7aad44fa3) · [5f5bb975](https://suno.com/song/5f5bb975-9e30-41dd-b16f-20c0598ad253) |
+| `dubwise` | [94265178](https://suno.com/song/94265178-2047-40c4-9cd7-f3ed7f387fe4) · [6f63ce0c](https://suno.com/song/6f63ce0c-7db3-4969-926a-06dffac56298) | [b8f4a47f](https://suno.com/song/b8f4a47f-a579-433b-a5ce-c7518c64b1d5) · [a23e6579](https://suno.com/song/a23e6579-6748-448f-aa4a-e785cb6ac386) |
+| `brassdrop` | [c00f5f18](https://suno.com/song/c00f5f18-dbbd-4c85-90f2-9871d1fe82f8) · [46fa57e2](https://suno.com/song/46fa57e2-d233-462d-96ac-daf22d74cb9a) | [61df72d3](https://suno.com/song/61df72d3-82c9-4f72-bbe4-b0b7234e47ca) · [6c482853](https://suno.com/song/6c482853-fab5-408c-9b69-9513dc237013) |
+
+⬜ **Not heard.**
+
+### r87 `rockers` atom
+
+Style:
+
+```
+Militant rockers reggae crossed with heavy dubstep at 140, felt at 70. Punchy dry kick on every beat, a sharp snare crack in a short plate, an acoustic guitar chopping the offbeat, a Hammond bubble ticking underneath, a brass section of trumpet and tenor sax blaring a defiant hook. Where the brass lifts, the floor splits open into a slow, enormous dubstep sub that swallows the room, then the rockers groove marches back. A middle-aged Jamaican roots singer, stern and prophetic, preaching every word with conviction, never hurrying, the tail of each line caught in quarter-note echo. Modern, clean, thick bottom end, crisp top.
+```
+
+Exclude styles:
+
+```
+double-time, acoustic folk, flute, synth brass, four-on-the-floor, lo-fi, tape hiss, spring reverb, siren, self-oscillating feedback
+```
+
+### r87 `steppers` atom
+
+Style:
+
+```
+UK sound system steppers, four-to-the-floor kick at 100 thudding like a heartbeat, rimshot on two and four, sixteenth hats, a monstrous sub-bass line built to shake a speaker stack, then dubstep weight: the sub slowly wobbles and growls under the steppers march. A brass synth stab answers each line, tape echo splashes off the snare, a siren wails through the breaks. A sound system deejay toasting over the riddim, chatting the words with swagger and fire, riding loose and relaxed on the pulse. Raw, heavy, near mono, built for a dance in a warehouse at three in the morning.
+```
+
+Exclude styles:
+
+```
+double-time, acoustic guitar, folk, flute, horn section, polished pop, hall reverb, singing, crooning, bright
+```
+
+### r87 `barefoot` atom
+
+Style:
+
+```
+Barefoot acoustic one-drop reggae at 80 that sits on a secret: a sub so deep you feel it more than hear it. Dry acoustic guitar skanking the offbeat, a second acoustic picking little folk licks, shaker and tambourine, kick and rim landing as one on beat three, no electric instruments. Under it, a dubstep sub-bass and a lumbering stomp creep in and grow until the whole campfire is shaking, then vanish. Two men trade the verses and meet on the hook, one warm and soulful, one plain and English, gentle, unhurried, close to the mic. Intimate, organic, bone dry, room sound.
+```
+
+Exclude styles:
+
+```
+double-time, horns, brass, synth, organ, siren, heavy wobble, growl bass, big room, electric guitar, toasting
+```
+
+### r87 `dubwise` atom
+
+Style:
+
+```
+Psychedelic dubwise, slow and heavy at 140 with a half-speed pulse, the mixing desk played like an instrument. A lazy one-drop, a rubbery sub-bass, organ chords and a flute-like lead that keep getting muted mid-phrase, spring reverb crashes, a tape echo left to feed back on itself until it screams, filters sweeping the whole band down to bass and kick. The dubstep is in the low end: a slow, deep, woozy sub wobble breathing under the echoes. A Rasta chanter, calm and trance-like, half-sung, half-spoken, drifting in and out of the echo, patient and laid back. Hazy, smoky, cavernous, analogue, full of holes and space.
+```
+
+Exclude styles:
+
+```
+double-time, brass section, horns, acoustic folk, four-on-the-floor, bright polished pop, big room, screeching lead, clean dry vocal
+```
+
+### r87 `brassdrop` atom
+
+Style:
+
+```
+Sunny big-band reggae meets modern dubstep, 140 bpm. Upstroke electric skank, a bouncing P-bass, a full horn section of trumpets, trombone and sax blasting bright riffs, a warm Hammond, tight bright drums. The horns set up every drop, then a crunching growl bass and huge half-time drums crash in and trade phrases with the brass, call and answer, before the sunshine returns. A soulful Caribbean singer, warm and optimistic, singing these grim words sweetly like a summer anthem, relaxed and behind the beat. Clean, bright, punchy, wide stereo, festival main stage.
+```
+
+Exclude styles:
+
+```
+double-time, acoustic, folk, flute, shaker, lo-fi, tape hiss, spring reverb, siren, dark ambient, toasting
+```
+
+Lyrics: `scripts/suno/.tmp/r81/lyrics.txt` verbatim — no cues.
 
 ## v6.77 Round r86 — r77 `bundem` take 2ffbd6b9 × *Gnome Dub* (2026-09-26)
 

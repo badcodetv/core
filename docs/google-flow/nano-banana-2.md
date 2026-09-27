@@ -1913,6 +1913,18 @@ items only. None tested on our work yet.** Still no "Nano Banana Pro 2".
   specks and rings, not streaks. The first overhead Flow returned for `8f-top` drew long streaks. That is §32's
   family: state the physical consequence.
 
+## Twelfth web pass — 2026-09-27 `[vendor]` `[practitioner]`
+
+Run for the Camping music video v2 stills (`mv2-*`: both men filmed from behind). **New items only. None tested on our work yet.** There is still no "Nano Banana Pro 2".
+
+- ⚠️ **"Over the shoulder" is ambiguous.** It can be read as the subject *looking back* over their own shoulder, which turns the face toward the lens. Name whose back is in the foreground and which way each figure faces instead. `[practitioner]` [morphic](https://morphic.com/resources/shots/over-the-shoulder-shot) This is §18's family, so keep using geometry and never the phrase.
+- **Orientation defaults are strong, and only structural reference images reliably fix them.** `[community, anecdotal, GPT-4o/DALL-E, 2024]` [OpenAI forum](https://community.openai.com/t/image-gneration-is-great-but-struggles-with-left-right-direction/1245598) ⬜ Not measured on NB2 or Pro.
+- **More kill-list words: "professional", "modern", "clean", "high quality".** Replace "professional lighting" with a direction and a falloff. `[practitioner]` [RedHub, 2026-09-22](https://blog.redhub.ai/ai-slop-look) · [Envato, 2026-08-13](https://elements.envato.com/learn/prompts-for-realistic-ai-images)
+- ✅ **Flow's help page lists three image models**: Pro (the Ultra default), NB2, and NB2 Lite (the free default). This confirms the eleventh pass. `[vendor]` [Flow help](https://support.google.com/flow/answer/16352836?hl=en)
+
+- **Sign text on Pro:** short strings are far more reliable, and handwritten or script styles are the *least* accurate for spelling, because the model treats them as a style rather than as letters. One practitioner's 47-hour test (not a benchmark) measured short phrases at about 100%, under 15 words at about 95%, 15–30 words at about 80%, and over 30 words at about 60%. Typos are still reported. `[practitioner]` [picassoia](https://blog.picassoia.com/how-nano-banana-pro-handles-text-in-images) · [humai](https://www.humai.blog/i-spent-47-hours-testing-nano-banana-pros-text-rendering-for-infographics-heres-everything-i-learned-and-what-nobody-tells-you/) **House use:** 2–6 words in block capitals, one sign per frame, 2K.
+- ⚠️ **"Neon signs in the rain" in Asia is the cyberpunk default.** The photographic source of the look (Liam Wong, *TO:KY:OO*) is openly Blade Runner-derived. Real night streets are lit by **fluorescent lightboxes, which go green on film** (Greg Girard's Kowloon), and Hong Kong's neon is being removed (1,119 removal orders in one year). AI "kanji" are near-miss glyphs. So name lightboxes and keep the signage unreadable. `[practitioner]` [Creative Review](https://www.creativereview.co.uk/former-ubisoft-designer-liam-wongs-cyberpunk-photos-of-nocturnal-tokyo/) · [HKFP](https://hongkongfp.com/2023/04/16/its-disappearing-very-fast-hong-kongs-fading-neon-heritage-shines-a-spotlight-on-the-craft/) · [Language Log](https://languagelog.ldc.upenn.edu/nll/?p=62610)
+
 ## Notes for BadCode `[untested]`
 
 Hypotheses for the calibration run, not rules.
