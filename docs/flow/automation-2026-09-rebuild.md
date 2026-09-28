@@ -105,3 +105,33 @@ The MCP server runs the checkout's source but only reloads on restart — run `/
 17. **The stale Omni end-frame guard.** `video-mode.ts` still refuses an `endImage` on the 10s-capable
     model ("Omni rejects a last frame", true of 1.0). Omni 1.1 has end frames (desktop Flow). ⬜ Owed:
     remove the guard, and batch it with 13–16 into ONE code change and ONE reconnect (skill law 22).
+
+## 2026-09-28: the Camping mv2 26-clip run (Omni 1.1 Flash, Frames, 720p, 8s, x1)
+
+18. **A projects page now opens with an agent side panel** (`flow-agent-panel`, "Hi Kai, what would you like to
+    create?"). Its prompt box is `flow-creative-agent-prompt-box`, **not** `flow-prompt-box`, so
+    `flow_create_project` timed out at 90 s waiting for the classic box. **Close the panel** (its `Close` button)
+    and `flow-prompt-box` comes back. A "Flow is now on iOS" changelog modal (`Get started`) also opens once.
+19. **The first upload in a profile raises a "Rights to use this image" dialog** (`Cancel` / `I agree`) behind a
+    `cdk-overlay-backdrop`, which intercepts the Settings trigger for 30 s. Click `I agree` once.
+20. 🔴 **`flow_generate_video` can no longer see its own finished clip.** It waits for `flow-video-tile img.thumbnail`.
+    A finished tile now carries `img[src^="https://flow-content.google/image/"]` until it is hovered, then
+    `video[src]` (sometimes `flow-content.google/video/<uuid>`, sometimes an `/asb/` transcode). The call ran until
+    the MCP idle timeout (1816 s) with the clip sitting finished in the grid. ⬜ Owed: fix `videoTileKeys`.
+21. 🔴 **The tile grid virtualises, so tile COUNT is not a completion signal.** Past ~8 tiles on screen, a new clip
+    does not raise `flow-video-tile` count. Detect by **key**: the newest tile is index 0, and its media src (with
+    `?` stripped) is not in the set captured before submit. A "Failed" card is also a new index-0 tile. Its text
+    carries the reason.
+22. **"We noticed some unusual activity" is transient.** Jack's rule: **a real page refresh, then retry after
+    ~10 s**, and no pause between clips. It hit about 1 in 5 submissions. One clip (07) needed 6 tries; the rest
+    cleared in 1–2. **Same rule for `FRAME_SLOT_NOT_FILLED`**, which tended to follow a refresh. Upload each plate
+    once per project and reuse it; re-uploading on every retry piles up duplicates.
+23. **A download that times out is not a failed generation.** Retry only the download (Escape, reload, `More
+    options → Download → 720p Original size`). Never resubmit: the clip is already rendered and billed. That mistake
+    nearly cost a second render of clip 18.
+24. **Killing a runner mid-submit double-bills.** A clip submitted just before a kill still renders (clip 08: two
+    copies, about 12 credits). Swap runners only between a `saved` line and the next `submitted` line.
+
+The runner used (a scratch script, not committed) imported `FlowClient` from `packages/flow-mcp/src/flow-client.ts`
+and called its private primitives: `reloadProject`, `uploadToProject`, `ensureVideoConfigRebuilt`,
+`fillFrameSlotRebuilt`, `setPrompt` and `clickSubmit`. Items 20–21 are the parts to fold back into `flow-client.ts`.

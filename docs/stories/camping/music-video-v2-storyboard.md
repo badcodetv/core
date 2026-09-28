@@ -1,6 +1,6 @@
 # Camping — music video v2: the storyboard ("Signs")
 
-Ruled 2026-09-27 by Jack. Background, research and superseded ideas:
+Ruled 2026-09-27 by Jack. **Every still's latest prompt, paste-ready, in one file: [`music-video-v2-stills-prompts.md`](./music-video-v2-stills-prompts.md).** Background, research and superseded ideas:
 [`music-video-v2.md`](./music-video-v2.md). Story canon: [`story.md`](./story.md).
 
 ## 🔑 Signs are BLANK in Flow, and the text goes on in post (ruled 2026-09-27, Jack)
@@ -108,31 +108,30 @@ no lip sync, and no dialogue in Flow video.
 | 19 | V2 | "WEALTH GAP?" / "WHAT A LOAD OF CRAP" (the wine label) | Yacht deck, a bottle poured, the label turned to the lens | The sneer |
 | 20 | Hook 2 | — | Tokyo, dawn: blue tarp shelters along the Sumida river wall; a bench with steel dividers, a rolled bedroll beneath | The refusal is global |
 | 21 | Hook 2 | "I CAN'T LIVE LIKE THIS FOREVER" | Hong Kong: ⚠️ *re-staged with s12:* the window seat from shot 12 now empty at dawn, his sign left propped against the glass; the divided bench under the flyover can carry it instead | Moved on |
-| 22 | Hook 2 | — | Hellshire: a woman frying fish in a cookshop with the sea at its door; fishermen haul a boat; ⚠️ *was "kids flip off the bow": no kids (Jack 2026-09-28), so re-stage with adults* | Joy, and the sea taking it |
+| 22 | Hook 2 | — | Hellshire: a woman frying fish in a cookshop with the sea at its door; fishermen haul a boat; ⚠️ *was "kids flip off the bow": no kids (Jack 2026-09-28), so re-stage with adults* | ✂️ **CUT 2026-09-28 (Jack): weird and random** |
 | 23 | Hook 2 | "I MIGHT BE INSANE" | Bob again, looking straight into the lens | Home |
 | 24 | Bridge | "HERE WE BOTH ARE" + "LIVING IN A CAR PARK" | The ruined car park, five years on: both men side by side facing the lens, one sign each | The jump, with no narration |
 | 25 | Bridge | "THE AI DOES THE FAST PART" | Tarquin tries to sit on his own building's ledge; the studs stop him | Locked out by his own spikes |
-| 26 | Bridge | "WE WERE ON THE SAME SIDE ALL ALONG" | Their two signs turned to face each other, over the drum fire | The turn |
+| 26 | Bridge | "WE WERE ON THE SAME SIDE ALL ALONG" | ⚠️ *Re-staged 2026-09-28:* their two cards meet edge to edge into one sign facing the lens, and the men turn to face each other, over the drum fire | The turn |
 | 27 | Final hook | "I CAN'T LIVE LIKE THIS FOREVER" ×5 · 🃏 *"Billionaire wealth rose $2.5tn in 2025 — about the wealth of the poorest 4.1 billion people. — Oxfam, Jan 2026"* | Beat-cut: Kingston man, Negril vendor, Hong Kong sign, Bob, Tarquin, each holding the hook | Everyone, same words |
 | 28 | Outro | — | Every sign on the fire; the embers become bad code | The film's own ending |
 
-### ▶ Resume here (updated 2026-09-28)
+### ▶ Resume here (updated 2026-09-28, evening): the first cut is BUILT
 
-- **Stills, in progress.** Prompts for **s1–s19** are written below, each under its own `### sN` heading, with
-  every round kept.
-- **s19 is on round 3**, the steward on the yacht, with no reference attached. The result hasn't been seen yet.
-- **Next up is s20** (Tokyo, the blue tarps on the Sumida), then s21–s28.
-- **No result is logged for s1–s18.** Jack generated as he went, and only s7 (round 2), s10 (round 2, no kids),
-  s12 (moved to the fast-food window) and s19 got feedback.
-- **Standing rules for this film:**
-  - one prompt per turn, no batches
-  - every sign blank in Flow
-  - Nano Banana Pro · 16:9 · x2 · 2K
-  - no kids
-  - no readable lettering except the X8's `BAD C0DE` plate and badge
-- **Re-staging owed:** s21 (it follows s12's move to the window) and s22 (no kids).
-- **After all 28 stills:** the video prompts (Omni Flash, camera locked), one per turn, each written against its
-  accepted still.
+- ✅ **The stills are done** (s1–s28, s22 cut). The paste-ready prompts are in
+  [`music-video-v2-stills-prompts.md`](./music-video-v2-stills-prompts.md).
+- ✅ **27 videos made** on Omni 1.1 Flash · Frames · 720p · 8s · x1. The prompts, a verdict per clip and the Premiere
+  record are in [`music-video-v2-video-prompts.md`](./music-video-v2-video-prompts.md).
+- ✅ **Premiere:** sequence `music video v2` in `…\Camping Comic\music video\music video.prproj`, cut to the Suno
+  take's own word timings.
+  - lyrics on the signs themselves (Permanent Marker, Cinzel, DotGothic16)
+  - the stat card at 8 s
+  - the fire at the end
+  - a "BADCODE" end card flashing on at 238.3 s
+- 🔧 **Rebuild kit** (scripts, sign corners, timings): [`scripts/camping-mv2/`](../../../scripts/camping-mv2/README.md).
+- ⬜ **Open:** Jack's review of the cut. Known soft spots are 15 (drift), 18 (the gantry leaves frame), 19 (the label
+  is tiny, so push in), the mouth movement in 05, 13 and 22, and the extra hand in 27's first 2 s. The delivery QC
+  still needs running before any upload.
 
 **Order re-ruled 2026-09-28 (Jack): all 28 stills first, then the videos.** Still one prompt at a time, in shot
 order, starting at shot 1. Each video prompt is written later against its own accepted still.
@@ -1134,6 +1133,553 @@ Light: A hazy white sun, high and bright. The steward stands out in the glare, h
 Details: Real skin texture, dried salt on the rail, a smear on the steel ice bucket, fine natural grain, ordinary and unstyled.
 
 Constraints: Only these three people are in the frame. The face of the label is plain cream paper from edge to edge. No labels, logos, uniform badges or boat names anywhere in the frame carry readable lettering.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Round 3 result, 2026-09-28 (Jack): Tarquin left out of the frame.**
+- 🔴 **Diagnosis:** round 3 put him behind the steward, "soft and out of focus", described after him, and it added
+  a deckhand. A soft figure placed behind the subject and mentioned second is the easiest thing for the engine to
+  drop. *(Inference, unverified: the deckhand may have filled the "three people" count in his place.)*
+- **Round 4, one change:** Tarquin is moved from the soft background to a **sharp co-subject in the right foreground**
+  and described **first**. The steward sits in the midground, still square to the lens. Light, cost, the deckhand
+  and the label are unchanged. f/8, so both men are sharp.
+
+Nano Banana Pro · 16:9 · x2 · 2K. **No Character, no reference.**
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 800, a single handheld exposure on the aft deck of a large white motor yacht at anchor, on a hot, hazy afternoon. Fine grain, muted colour, unposed and imperfect.
+
+Camera and framing: 40mm lens at f/8, held at seated eye height just behind and beside a guest's deck chair, so that both men in the frame are sharp. Two men share the frame. On the right, in the foreground and filling the right third, the guest sits in the shade of a canvas awning, seen side-on. On the left of centre, about three metres further away, a steward stands out on the open deck in the sun, facing the camera straight on. The frame is not quite level.
+
+The guest, in the right foreground, sharp: a white man in his late forties with dark hair greying at the temples and slicked straight back, a well-fed face with a faint jowl, a slight sheen and broken veins at the nose, and pale indoor skin. He wears an open-collared pale linen shirt, navy trousers and tan suede loafers with no socks, a heavy signet ring and an old steel watch. He lounges in a cushioned deck chair. His right arm is stretched out across the frame toward the steward, holding up an empty wine glass by the stem, while his head is turned the other way, toward the sea on the right, his chin slightly raised. He does not look at the steward.
+
+The steward, in the midground, sharp: a butler-steward in his late fifties, heavy-browed, with a long, slightly crooked nose, deep lines from nose to mouth and thinning grey hair combed straight back: an ordinary face, not a handsome one. He wears a crisp, pressed white high-collared steward's jacket with a row of brass buttons and white cotton gloves, and stands very straight in the full glare, square to the camera. He holds a bottle of red wine upright in front of the middle of his chest with both hands, one gloved hand around its neck and the other cupping its base, fingers clear of the label, the label facing the lens squarely. He looks at the bottle, his face composed and expressionless. The empty glass hangs in the air between the two men.
+
+The label: a flat rectangle of thick cream paper on the front of the bottle, its face plain cream from edge to edge: an even, matt, slightly textured surface. The bottle is a standard-size dark green glass wine bottle, in proportion to the steward's gloved hands.
+
+Environment: The white fibreglass and teak aft deck, a low table in the shade beside the guest with a white cloth, a crumpled napkin and a steel ice bucket, a coil of rope by the rail, and at the far left of the frame, small and in the background, a deckhand in a navy polo shirt on her knees wiping the steel rail with a cloth. Beyond the rail, the flat, pale sea and a faint line of hills in the haze.
+
+Light: A hazy white sun, high and bright. The steward stands out in the glare, his white jacket bright but keeping its folds; the guest sits in the cooler shade of the awning. The sky is the brightest part of the frame and may burn out to white; the faces, the bottle and the label keep their detail.
+
+Details: Real skin texture, dried salt on the rail, a smear on the steel ice bucket, fine natural grain, ordinary and unstyled.
+
+Constraints: The guest in the right foreground and the steward in the midground are both clearly in the frame, with the deckhand small in the background: three people in all. The face of the label is plain cream paper from edge to edge. No labels, logos, uniform badges or boat names anywhere in the frame carry readable lettering.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Round 4, revised before generating (Jack, 2026-09-28): attach `@Tarquin-new`.** Following the
+referenced-character rule, all of the guest's appearance prose is removed (face, hair, skin, linen, loafers, ring,
+watch). Only his position, action and expression are left. The steward and the deckhand keep their prose, because
+nothing is attached for them. ⚠️ *Watch for:* the Character may bring his charcoal overcoat onto the yacht, since
+nothing in the prompt now names his clothes.
+
+Nano Banana Pro · 16:9 · x2 · 2K. **Attach: Character `@Tarquin-new`.**
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 800, a single handheld exposure on the aft deck of a large white motor yacht at anchor, on a hot, hazy afternoon. Fine grain, muted colour, unposed and imperfect.
+
+Camera and framing: 40mm lens at f/8, held at seated eye height just behind and beside a deck chair, so that both men in the frame are sharp. Two men share the frame. On the right, in the foreground and filling the right third, the man from the character reference sits in the shade of a canvas awning, seen side-on. On the left of centre, about three metres further away, a steward stands out on the open deck in the sun, facing the camera straight on. The frame is not quite level.
+
+The man from the character reference, in the right foreground, sharp: he lounges in a cushioned deck chair. His right arm is stretched out across the frame toward the steward, holding up an empty wine glass by the stem, while his head is turned the other way, toward the sea on the right, his chin slightly raised, his eyelids half lowered and his mouth set in a bored line. He does not look at the steward.
+
+The steward, in the midground, sharp: a butler-steward in his late fifties, heavy-browed, with a long, slightly crooked nose, deep lines from nose to mouth and thinning grey hair combed straight back: an ordinary face, not a handsome one. He wears a crisp, pressed white high-collared steward's jacket with a row of brass buttons and white cotton gloves, and stands very straight in the full glare, square to the camera. He holds a bottle of red wine upright in front of the middle of his chest with both hands, one gloved hand around its neck and the other cupping its base, fingers clear of the label, the label facing the lens squarely. He looks at the bottle, his face composed and expressionless. The empty glass hangs in the air between the two men.
+
+The label: a flat rectangle of thick cream paper on the front of the bottle, its face plain cream from edge to edge: an even, matt, slightly textured surface. The bottle is a standard-size dark green glass wine bottle, in proportion to the steward's gloved hands.
+
+Environment: The white fibreglass and teak aft deck, a low table in the shade beside the deck chair with a white cloth, a crumpled napkin and a steel ice bucket, a coil of rope by the rail, and at the far left of the frame, small and in the background, a deckhand in a navy polo shirt on her knees wiping the steel rail with a cloth. Beyond the rail, the flat, pale sea and a faint line of hills in the haze.
+
+Light: A hazy white sun, high and bright. The steward stands out in the glare, his white jacket bright but keeping its folds; the man in the deck chair sits in the cooler shade of the awning. The sky is the brightest part of the frame and may burn out to white; the faces, the bottle and the label keep their detail.
+
+Details: Real skin texture, dried salt on the rail, a smear on the steel ice bucket, fine natural grain, ordinary and unstyled.
+
+Constraints: The man from the character reference in the right foreground and the steward in the midground are both clearly in the frame, with the deckhand small in the background: three people in all. The face of the label is plain cream paper from edge to edge. No labels, logos, uniform badges or boat names anywhere in the frame carry readable lettering.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Moved on from s19 (Jack, 2026-09-28): "next please".** The round 4 result (with `@Tarquin-new` attached) isn't
+logged.
+
+### s20 — Tokyo, dawn · the blue tarps · still · written 2026-09-28, handed over 2026-09-28 (result not yet logged)
+
+**Spec (shot-craft):**
+- **Job:** Hook 2 opens abroad with no sign and no ask. The refusal is built into a city on the other side of the
+  world. It cuts straight in from s19's yacht, and that cut does the pairing: the wine at anchor, then the tarps on
+  the river. No sign here, because begging is illegal in Tokyo (see the research rules above).
+- **Register:** documentary, human scale, Portra 800, a single handheld exposure (continuity with the mv2 stills).
+- **Gate 2, visible cost:** a bench whose steel dividers make it impossible to lie on, with a rolled bedroll pushed
+  **underneath** it. Someone sleeps on the ground under a bench built so they can't sleep on it. That is the spikes,
+  in Tokyo.
+- **Depth:**
+  - **FG:** the divided bench, sharp, left of frame, with the bedroll beneath.
+  - **MG:** the blue tarp shelters in a tidy row along the flood wall of the riverside walk. One older man sweeps
+    the paving in front of his, seen three-quarters from behind, so he's upright and working, never in distress.
+  - **BG:** the river, a low steel bridge and far-bank towers in the dawn haze.
+- **Focal point:** the bedroll under the bench, which wins on depth position. The eye then travels up the row of
+  tarps to the sky.
+- **Light:** dawn, with the sun not yet up behind the far bank. The pale sky over the far bank and its reflection
+  on the water are the one bright anchor. The walk sits in cool blue shade, and the tarps glow a flat, saturated
+  blue, the one strong colour.
+- **Camera:** seated height (the height of the bench seat, and Bob's eye line from s1), on a 35mm at f/8, looking
+  diagonally along the walk. Height and angle are stated separately: seat height, level.
+- **Withheld:** the sweeper's face, and whoever slept in the bedroll.
+- **Moves in video (later):** the broom and the water. Camera locked.
+- ⬜ **Check:** stray Japanese signage or pseudo-kanji on the flood wall, and whether the bench dividers come back as
+  armrests on a normal bench (they must split the seat into single places).
+
+Nano Banana Pro · 16:9 · x2 · 2K. No Character, no reference.
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 800, a single handheld exposure at dawn on a paved riverside walk along the Sumida River in Tokyo, in early winter. Fine grain, muted colour, unposed and imperfect.
+
+Camera and framing: 35mm lens at f/8, held level at the height of a bench seat, looking diagonally along the riverside walk. In the left foreground, large and sharp, stands a public bench, and the walk runs away from it past a row of shelters toward the river bend. The frame is not quite level.
+
+The bench: a plain public bench of grey steel slats, divided into three single seats by two curved steel bars bolted across the seat, so that nobody can lie along it. Pushed underneath the bench, on the paving, lies a rolled-up bedroll: a thin grey blanket rolled around a flattened piece of cardboard and tied with string.
+
+The shelters: along the concrete flood wall on the right, a tidy row of five small shelters made of bright blue plastic tarpaulin stretched over timber frames and tied down with rope, each one neat and squared off, a pair of shoes set side by side outside one of them. In front of the third shelter, an older man in a dark padded jacket and a knitted hat sweeps the paving with a long bamboo broom, seen three-quarters from behind, his back straight.
+
+Environment: The paved walk, clean and swept, a low railing along the water's edge, the wide grey-green river, a low steel bridge downstream and the tall glass towers of the far bank standing in the dawn haze.
+
+Light: The sun has not yet risen behind the far bank. The pale sky above the far bank and its reflection on the water are the brightest part of the frame. The walk, the bench and the shelters sit in cool blue shade, and the blue of the tarpaulins is the one strong colour in the picture.
+
+Details: Dew on the steel slats of the bench, frayed edges of the tarpaulins, a plastic basin and a folded towel beside one shelter, fine natural grain, ordinary and unstyled.
+
+Constraints: One person in the frame, the man with the broom. The flood wall, the shelters and the bench are plain and weathered, and nothing anywhere in the frame carries readable lettering.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### s21 — "I CAN'T LIVE LIKE THIS FOREVER" · Hong Kong, dawn · still · written 2026-09-28, handed over 2026-09-28 (result not yet logged)
+
+**Spec (shot-craft), re-staged to follow s12's move to the window:**
+- **Job:** "moved on". It's the same window as s12 a few hours later. He's gone, and the sign is left behind,
+  propped against the glass and still facing the street. The hook is now said by an empty seat.
+- **Why this staging and not the divided bench:** it's a match cut on s12. The same lens, height and framing make
+  the absence the only change, and absence is the one thing a still can show in a single step. The bench under the
+  flyover stays in the bank.
+- **Gate 2, visible cost:** the empty stool, his paper cup left on the counter, and the sign he couldn't carry to
+  work. A passer-by walks through the frame without turning his head.
+- **Depth:** a commuter passing across the left edge in the foreground, soft · the glass, the propped sign and the
+  empty stool · a cleaner mopping the floor at the back of the restaurant (the working day has started).
+- **Light:** grey dawn after the rain. The restaurant's fluorescent interior is still the brightest area, but it
+  has gone thin against the daylight. The wet pavement holds the sky. No neon.
+- **Camera:** identical to s12: outside, square to the glass, about a metre off it, at seated eye height, on a 35mm.
+  f/4 this time, so the back of the room reads.
+- **The sign:** leaning upright against the inside of the glass on the counter, face out, almost flat to the lens.
+- **Withheld:** where he went.
+- **No reference by default.** If s12's picked still is attached to hold the set, the man in it tends to come back
+  (a strong reference hedges its own change list, `nano-banana-2.md` §9). So match it with prose first.
+- ⬜ **Check:** the stool is truly empty, and there's no stray lettering on the window or the menus.
+
+Nano Banana Pro · 16:9 · x2 · 2K. No Character, no reference.
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 800, a single handheld exposure at dawn in Sham Shui Po, Hong Kong, just after a night of rain. Fine grain, muted colour, unposed and imperfect.
+
+Camera and framing: 35mm lens at f/4, held outside on the wet pavement about a metre from the plate-glass window of a 24-hour fast-food restaurant, facing the glass squarely, at the eye height of someone sitting just inside it. Across the left edge of the frame, close to the lens and soft out of focus, a commuter in a dark raincoat walks past, looking straight ahead along the street. The frame is not quite level.
+
+The window seat: inside, a narrow counter runs along the window with a row of high stools. The stool a little right of centre is empty. On the counter in front of it stands a half-drunk paper cup, and leaning upright against the inside of the glass beside the cup, face out to the street, stands a large cardboard sign, almost flat to the lens and perfectly still.
+
+The sign: a torn flap of brown corrugated cardboard about the size of a newspaper, with ragged edges. Its front is plain, bare brown card: an even, flat, matt surface with the faint ridges of the corrugation showing through, facing the camera so the whole face of it is in view.
+
+Environment: Behind the counter, the restaurant's interior, almost empty: rows of plastic tables and fixed seats, and at the back of the room a woman in a cleaner's grey tunic mopping the floor, her head down. Beads of rain still cling to the glass, and the pavement at the bottom of the frame is wet and reflects the pale sky.
+
+Light: Grey, even dawn light from an overcast sky over the street. The restaurant's white fluorescent lights are still on and the interior is still the brightest part of the frame, but thin and faintly green against the daylight. No neon anywhere.
+
+Details: Water beading on the glass, a smear of fingerprints where the sign touches it, a crumpled napkin by the cup, fine natural grain, ordinary and unstyled.
+
+Constraints: Two people in the frame: the passing commuter and the cleaner at the back. The stool by the sign is empty. The face of the cardboard sign is plain bare card from edge to edge. No signs, menus, logos, labels or window lettering anywhere in the frame carry readable lettering.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### s22 — Hellshire · the cookshop and the sea · still · written 2026-09-28, handed over 2026-09-28 (result not yet logged)
+
+**Spec (shot-craft), re-staged with adults only (Jack, 2026-09-28):**
+- **Job:** joy, working. It's the one shot in Hook 2 with laughter in it, and the sea is already at the door. It
+  follows two absences (the Tokyo sweeper, the empty seat), so it has to be alive.
+- **Staging:** from inside the cookshop, looking out through its open front, which gives the storyboard's "the sea
+  at its door" literally. In the foreground a woman fries fish and laughs with a customer. Out on the waterline,
+  three fishermen haul a canoe up onto what's left of the beach. That replaces "kids flip off the bow".
+- **Gate 2, visible cost ("the sea taking it"):** the beach is a thin strip. Sandbags line the cookshop's front
+  step, the waves reach them, and a broken concrete slab where the next shop stood lies in the surf. ⚠️ *Hellshire's
+  beach erosion is from memory, **not checked**. Verify before any caption or public claim leans on it. The picture
+  doesn't need a number.*
+- **Depth:** FG her, the pot of oil and the fish, sharp · MG the open front, the sandbags and the fishermen with
+  the canoe · BG the broken slab in the surf and the flat sea.
+- **Light:** the white noon glare through the open front is the bright anchor. Inside, the shade is lit by that
+  doorway and the blue gas flame under the pot. The falloff runs from the door back into the room.
+- **Camera:** standing height, level, just behind and to the left of the counter, on a 28mm at f/5.6.
+- **Colour:** the painted canoe and her apron carry the colour. Everything painted is plain paint, because Jamaican
+  boats often carry painted names, so no lettering.
+- **Moves in video (later):** the oil, the waves, the haul. Camera locked.
+
+Nano Banana Pro · 16:9 · x2 · 2K. No Character, no reference.
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 400, a single handheld exposure inside a small beachside fish cookshop at Hellshire, Jamaica, at noon. Fine grain, warm natural colour, unposed and imperfect.
+
+Camera and framing: 28mm lens at f/5.6, held level at standing height just behind and to the left of the cook's counter, looking out through the cookshop's wide open front straight onto the sea. The cook fills the right foreground; the bright open front fills the centre of the frame. The frame is not quite level.
+
+The cook, in the right foreground, sharp: a Jamaican woman in her fifties, broad-shouldered, with her hair tied up in a bright headwrap and a stained yellow apron over a faded T-shirt. She lifts a whole fried red snapper out of a big blackened pot of bubbling oil with a wire scoop, and she is laughing with her head thrown back, her eyes creased shut, at something a customer on the other side of the counter has said. The customer, a lean older Jamaican man in a vest and a straw hat, leans on the counter grinning.
+
+The sea at the door: the cookshop's front step is a line of sandbags, and a thin strip of wet sand is all that is left between the step and the water. A small wave washes right up to the sandbags. On that strip, three Jamaican fishermen in their thirties and forties, in shorts and wet T-shirts, lean their weight back on a rope, hauling a long wooden fishing canoe painted plain turquoise and red up out of the surf. Out in the shallows beyond them, a broken slab of concrete floor, the foundation of a shop that is gone, lies tilted in the waves.
+
+Environment: Inside, a rough plank counter, a blue gas burner under the pot, a tray of fried fish and festival dumplings, a stack of plastic plates, a fan turning on a shelf, and walls of weathered painted board. Beyond the open front, the flat turquoise sea and a pale hazy horizon.
+
+Light: The white glare of the noon sun through the open front is the brightest part of the frame; the sea and sand outside may burn toward white but keep their shapes. Inside, the cookshop sits in warm shade, lit from the open front and by the small blue flame under the pot, and the cook's face and the fish keep their detail.
+
+Details: Real skin texture, sweat on her forearms, the shimmer of heat over the oil, sand on the floorboards, fine natural grain, ordinary and unstyled.
+
+Constraints: Everyone in the frame is an adult: the cook, the customer and the three fishermen. The canoe, the walls and every surface are plain paint and weathered wood, and nothing anywhere in the frame carries readable lettering.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**s22 CUT (Jack, 2026-09-28): "weird and random".** The cookshop had no sign and no beneficiary, and nothing later
+calls back to it. Its "cost" was erosion, which nobody decided. Hook 2 now runs Tokyo (s20) → Hong Kong (s21) → Bob
+(s23). The prompt above is kept as a record only.
+
+### s23 — "I MIGHT BE INSANE" · Bob at home · still · written 2026-09-28, handed over 2026-09-28 (result not yet logged)
+
+**Spec (shot-craft):**
+- **Job:** home, after the world. It's the closest the film gets to Bob. The line is about his own head, so the
+  camera goes to his face, and it's the first time the frame is tight on him. Straight into the lens.
+- **Not a repeat of s3 or s13:** s3 was seated outside Waitrose by day with a woman turning away. s13 was standing,
+  three metres off, at dusk. s23 is **night, at the tent, close**: the head, shoulders and sign. It's the first time
+  in the mv2 stills that we see where he sleeps.
+- **Staging:** he sits in the open doorway of the tent in its parking bay, with the sign held up at his chest. The
+  dark tent interior with his bedding is the one thing that says someone lives here (`characters/tent.md`: keep the
+  door open).
+- **Gate 2, visible cost:** his breath in the cold air, frost on the flysheet, the sleeping bag round his legs.
+- **Light:** a single white LED car-park lamp high on the right is the key and the bright anchor. The tent's dark
+  mouth behind him falls to near-black and keeps a trace of the bedding.
+- **Camera:** seated eye height, level, straight on, about a metre and a half, on a 50mm at f/2.8. The sign is sharp
+  and the tent behind it goes soft.
+- **Face:** muscle description only, with `@Bob` cast. The tent is written in prose from `characters/tent.md`,
+  because it's an object and not the Character.
+
+Nano Banana Pro · 16:9 · x2 · 2K. Cast `@Bob`.
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure in a British supermarket car park on a freezing winter night. Heavy grain in the shadows, muted colour, unposed and imperfect.
+
+Camera and framing: 50mm lens at f/2.8, held level at seated eye height about a metre and a half from the man from the character reference, facing him straight on. He sits a little right of centre in the open doorway of a small dome tent, framed from the top of his head to just below the sign, which is sharp; the tent behind him falls soft. The frame is not quite level.
+
+Action: He sits in the tent's doorway with a sleeping bag pulled up over his legs, and holds a large cardboard sign up against his chest with both hands, his fingers gripping only its outer edges, the card facing the lens squarely and held perfectly still. He looks straight into the lens: his brows are drawn slightly together, his mouth is closed, his eyes are steady and very tired. A faint cloud of breath hangs in front of his face.
+
+The sign: a torn flap of brown corrugated cardboard about the size of a newspaper, with ragged edges and one corner mended with brown parcel tape. Its front is plain, bare brown card: an even, flat, matt surface with the faint ridges of the corrugation showing through, facing the camera flat so the whole face of it is in view.
+
+The tent: a cheap two-person dome tent pitched in a parking bay, its upper panels a dusty, darkened slate blue and its lower body and door panels a dirty pale grey, stained brown with mud along the bottom edge, the fabric slack and wrinkled between the poles. Its door is unzipped and open behind him, and inside is a dark mass of bedding and bags. Frost glitters on the flysheet.
+
+Environment: The wet tarmac of the parking bay with a faded white bay line running under the tent, and beyond it, soft and dark, the empty car park at night.
+
+Light: A single white LED car-park lamp high on the right of the frame is the only light. It falls across his face and the sign from the right and is the brightest thing in the picture. The open doorway of the tent behind him falls into near-black that keeps a trace of the bedding.
+
+Details: Real skin texture, frost on the tent fabric, his breath in the cold air, fine natural grain, ordinary and unstyled.
+
+Constraints: Only this one man is in the frame. The face of the cardboard sign is plain bare card from edge to edge. No signs, logos, labels, shop fascia or number plates anywhere in the frame carry readable lettering.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### s24 — "HERE WE BOTH ARE" + "LIVING IN A CAR PARK" · the jump · still · written 2026-09-28, handed over 2026-09-28 (result not yet logged)
+
+**Spec (shot-craft):**
+- **Job:** the bridge's jump, with no narration. For the first time the two men stand level, side by side, the same
+  distance from the lens, each with a sign. Every earlier two-shot kept them apart (s5: one seated, one walking
+  away). The equal framing is the argument.
+- **Where:** the same car park five years on, from the film's scene 10: the camp, the burning drums, the dead
+  shop. The dead X8 stands behind them, filling its two bays, and bookends s6–s7.
+- **Two Characters, anchored by side (§26), as in s5:** Bob on the right, Tarquin on the left. Bob gets no
+  description. Tarquin's **five-years-on change is described as a change**, per the variants rule (reference plus
+  prose for the condition), with no garments named.
+- **Faces:** both into the lens, mouths closed. Bob is steady. Tarquin's eyes are a fraction too wide, because he
+  has just arrived.
+- **Gate 2, visible cost:** the camp behind them and the car that has been left to die. The frame is made of cost.
+- **Light:** a burning oil drum low and just out of frame at the front right is the key, lighting both faces and
+  both cards warm. Deep behind them, one more drum burns between the tents. The dead shop is dark. Rain shows only
+  against the fire.
+- **Camera:** chest height, level, straight on, about three metres, on a 35mm at f/5.6, so both men and both cards
+  are sharp. This is the one symmetrical two-shot in the film.
+- **No location reference:** the accepted camp wide has a readable fascia, and the rule here is no lettering. So
+  the camp is written in prose, matched to `scene-10-camp-wide-ACCEPTED.png`.
+- ⬜ **Check:** both cards square and clean, hands on the edges, the X8 plainly dead, and no fascia lettering.
+
+Nano Banana Pro · 16:9 · x2 · 2K. Cast `@Bob` (slot 1), `@Tarquin-new` (slot 2).
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure in the car park of a closed-down British supermarket that has become a camp of shelters, on a cold wet night. Heavy grain in the shadows, muted colour, unposed and imperfect.
+
+Camera and framing: 35mm lens at f/5.6, held level at chest height about three metres from two men standing side by side, facing them straight on, so that both men and both signs are sharp. They stand shoulder to shoulder at the same distance from the lens, framed from just above their heads to the knees. On the right of the frame stands the man from the first character reference. On the left of the frame stands the man from the second character reference, five years on from how he looks in his reference: thinner in the face, unshaven, his hair long and matted with rain, his clothes filthy and worn through.
+
+Action: Each man holds his own large cardboard sign flat against his chest with both hands, fingers gripping only its outer edges, both cards facing the lens squarely and held perfectly still. Both look straight into the lens with their mouths closed. The man on the right is steady: his brows relaxed, his eyes level. The man on the left holds himself stiffly: his jaw tight, his eyes a fraction too wide.
+
+The signs: two torn flaps of brown corrugated cardboard, each about the size of a newspaper, with ragged edges, damp at the corners. Their fronts are plain, bare brown card: an even, flat, matt surface with the faint ridges of the corrugation showing through, facing the camera flat so the whole face of each is in view.
+
+Environment: Directly behind them, filling the middle of the frame, a black BMW X8 stands side on across the painted line between two parking bays, dead: its tyres flat and perished, its paint dulled under dirt and moss, its windows opaque with grime, a guy line from a neighbouring tarpaulin tied to its roof rail. Around and beyond it, a dense camp of tents, tarpaulins, pallets and corrugated sheet spreads across the wet tarmac, and at the far side of the car park stands the supermarket, dark, its glass black and the long panel above its frontage unlit and weather-stained. Deep in the camp, one oil drum burns.
+
+Light: A burning oil drum just out of frame, low and to the front right, is the key light: it lights both men's faces and both signs warm and steeply from one side, and it is the brightest light in the picture. Beyond them, the camp falls away into cool darkness that keeps a trace of detail, with the small fire burning far off in the middle of it. Fine rain shows only where it crosses the firelight.
+
+Details: Real skin texture, rain on their shoulders, puddles on the tarmac catching the firelight, fine natural grain, ordinary and unstyled.
+
+Constraints: Only these two men are in the foreground; any other figures are small and far off in the camp. The faces of both cardboard signs are plain bare card from edge to edge. The panel above the shop, the car's number plates and every sign and surface in the frame carry no readable lettering.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Round 2 (Jack, 2026-09-28): "do not describe Tarquin, or any character, let the @ Flow characters do that … it
+is messing with his image."** The five-years-on prose (thinner, unshaven, matted hair, filthy clothes) is removed.
+With a Character attached, even a *condition change* counts as describing him and fights the Character. Only
+position, action and expression are left.
+
+Nano Banana Pro · 16:9 · x2 · 2K. Cast `@Bob` (slot 1), `@Tarquin-new` (slot 2).
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure in the car park of a closed-down British supermarket that has become a camp of shelters, on a cold wet night. Heavy grain in the shadows, muted colour, unposed and imperfect.
+
+Camera and framing: 35mm lens at f/5.6, held level at chest height about three metres from two men standing side by side, facing them straight on, so that both men and both signs are sharp. They stand shoulder to shoulder at the same distance from the lens, framed from just above their heads to the knees. On the right of the frame stands the man from the first character reference. On the left of the frame stands the man from the second character reference.
+
+Action: Each man holds his own large cardboard sign flat against his chest with both hands, fingers gripping only its outer edges, both cards facing the lens squarely and held perfectly still. Both look straight into the lens with their mouths closed. The man on the right is steady: his brows relaxed, his eyes level. The man on the left holds himself stiffly: his jaw tight, his eyes a fraction too wide.
+
+The signs: two torn flaps of brown corrugated cardboard, each about the size of a newspaper, with ragged edges, damp at the corners. Their fronts are plain, bare brown card: an even, flat, matt surface with the faint ridges of the corrugation showing through, facing the camera flat so the whole face of each is in view.
+
+Environment: Directly behind them, filling the middle of the frame, a black BMW X8 stands side on across the painted line between two parking bays, dead: its tyres flat and perished, its paint dulled under dirt and moss, its windows opaque with grime, a guy line from a neighbouring tarpaulin tied to its roof rail. Around and beyond it, a dense camp of tents, tarpaulins, pallets and corrugated sheet spreads across the wet tarmac, and at the far side of the car park stands the supermarket, dark, its glass black and the long panel above its frontage unlit and weather-stained. Deep in the camp, one oil drum burns.
+
+Light: A burning oil drum just out of frame, low and to the front right, is the key light: it lights both men's faces and both signs warm and steeply from one side, and it is the brightest light in the picture. Beyond them, the camp falls away into cool darkness that keeps a trace of detail, with the small fire burning far off in the middle of it. Fine rain shows only where it crosses the firelight.
+
+Details: Real skin texture, rain on their shoulders, puddles on the tarmac catching the firelight, fine natural grain, ordinary and unstyled.
+
+Constraints: Only these two men are in the foreground; any other figures are small and far off in the camp. The faces of both cardboard signs are plain bare card from edge to edge. The panel above the shop, the car's number plates and every sign and surface in the frame carry no readable lettering.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### s25 — "THE AI DOES THE FAST PART" · locked out by his own studs · still · written 2026-09-28, handed over 2026-09-28 (result not yet logged)
+
+**Spec (shot-craft):**
+- **Job:** the refusal comes back on the man who built it. It's the same ledge and studs as s1 and s14, and the
+  same lobby behind the glass, but now **he's** the one trying to sit on it. It pays off s1, and s14, where he
+  walked past this ledge into the warm.
+- **The held state:** halfway down into a sit, knees bent, with one hand pressed flat behind him on the studs, and
+  his weight not yet on them. It's the moment the studs stop him, shown as a held position rather than a movement
+  (§38).
+- **The sign:** held flat against his chest in the other hand, gripped at the edge, square to the lens. It's the
+  first time he holds the ask, not the refusal.
+- **Face:** his eyes down and to the side, toward the hand on the studs, with a tight mouth. The realisation, not a
+  stare. Muscle description only. `@Tarquin-new` carries everything else, with **no description at all**
+  (Jack, 2026-09-28).
+- **Gate 2, visible cost:** him. Behind the glass, the concierge at the desk has looked up at him and doesn't move.
+  The building still works. Only he has changed sides.
+- **Light:** a cold white street lamp from the left is the key on his face and the card. The warm lobby behind the
+  glass is the bright anchor, the warmth he can't get into.
+- **Camera:** straight on to the building front, seated height, about two and a half metres, on a 50mm at f/4. The
+  ledge runs across the frame. It's s14's axis, brought down and in.
+- ⬜ **Check:** the studs read as studs (squat cones, not spikes or pigeon wire), the hand is on them, and the card is
+  clean and square.
+
+Nano Banana Pro · 16:9 · x2 · 2K. Cast `@Tarquin-new`.
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure on a wet November night in central London. Heavy grain in the shadows, muted colour, unposed and imperfect.
+
+Camera and framing: 50mm lens at f/4, held level at the height of a seated man, about two and a half metres from the front of an apartment block, facing it straight on. A low stone window ledge runs across the frame at sitting height, and behind it rises the tall plate-glass front of the building's lobby. The man from the character reference is a little right of centre, in front of the ledge. The frame is not quite level.
+
+Action: He is halfway down into sitting on the ledge, his knees bent and his weight not yet on it, stopped. His right hand is pressed flat behind him on top of the ledge, on the studs. With his left hand he holds a large cardboard sign flat against his chest, his fingers gripping only its edge, the card facing the lens squarely and held perfectly still. His eyes are turned down and to the side, toward the hand behind him; his mouth is pressed tight and his brows are drawn together.
+
+The studs: a strip of anti-homeless studs fixed along the whole length of the ledge: squat stainless-steel cones about an inch tall with blunt tips, bolted in three staggered rows into the pale stone, dull, brushed and wet.
+
+The sign: a torn flap of brown corrugated cardboard about the size of a newspaper, with ragged edges, damp at the corners. Its front is plain, bare brown card: an even, flat, matt surface with the faint ridges of the corrugation showing through, facing the camera flat so the whole face of it is in view.
+
+Environment: Behind the ledge and the glass, the lobby, slightly out of focus: warm pools of lamplight, a long pale reception desk, and a concierge in a dark jacket behind it who has looked up and is watching the man through the glass, standing still. The pavement is wet and the stone of the building is pale and clean.
+
+Light: A cold white street lamp off to the left of the frame is the key light, lighting his face, his hand and the sign from the side. The warm light of the lobby behind the glass is the brightest part of the picture and edges his shoulders and the tips of the studs. Everything outside those two lights falls into dark blue night that keeps a trace of detail.
+
+Details: Real skin texture, rain beading on the steel studs, wet stone, fine natural grain, ordinary and unstyled.
+
+Constraints: Only the man and the concierge are in the frame. The face of the cardboard sign is plain bare card from edge to edge. No signs, logos, labels, door numbers or window lettering anywhere in the frame carry readable lettering.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### s26 — "WE WERE ON THE SAME SIDE ALL ALONG" · the turn · still · written 2026-09-28, handed over 2026-09-28 (result not yet logged)
+
+**Spec (shot-craft):**
+- **Job:** the turn. The two men stop addressing us and face each other, and their two signs become one sentence.
+- 🔴 **Re-staged from the table, and why:** "their two signs turned to face each other" puts both cards edge-on to
+  the lens. That breaks the blank-sign rule at the top of this file (square to the lens, so post can type on them).
+  **Instead, the two cards meet edge to edge into one sign facing the lens,** "WE WERE ON THE SAME SIDE" on the left
+  card and "ALL ALONG" on the right, **and the men turn to face each other** above them. The turn is in the faces.
+  The sentence is literally made of two halves. *(A split of the line across the two cards is a proposal. Post can
+  split it differently.)*
+- **Two Characters, same sides as s5 and s24:** Bob on the right, Tarquin on the left. **No description of either**
+  (Jack, 2026-09-28): position, action and expression only.
+- **Faces:** in profile to the lens, looking at each other. Neither smiles. Level, a long look.
+- **The fire:** an oil drum burning low in the foreground centre, its flames soft at the bottom edge. It's the key
+  light from below and the bright anchor, and it puts them in the ruined car park from s24.
+- **Gate 2, visible cost:** the camp behind them, dark, and the two sets of hands on the cards.
+- **Camera:** chest height, level, straight on, about two and a half metres, across the drum, on a 35mm at f/4.
+- ⬜ **Check:** the two cards touch edge to edge, flat and square, both clean. The heads are genuinely turned to each
+  other, not to the lens.
+
+Nano Banana Pro · 16:9 · x2 · 2K. Cast `@Bob` (slot 1), `@Tarquin-new` (slot 2).
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure in the car park of a closed-down British supermarket that has become a camp of shelters, on a cold wet night. Heavy grain in the shadows, muted colour, unposed and imperfect.
+
+Camera and framing: 35mm lens at f/4, held level at chest height about two and a half metres from two men standing side by side, facing them straight on across the top of a burning oil drum. The rim of the drum and its flames run along the bottom centre of the frame, close to the lens and soft. On the right of the frame stands the man from the first character reference. On the left of the frame stands the man from the second character reference. The frame is not quite level.
+
+Action: Each man holds his own large cardboard sign against his chest with both hands, fingers gripping only its outer edges, and they stand close enough that the two cards touch edge to edge in the middle of the frame, making one long sign that faces the lens squarely and is held perfectly still. Above the signs, both men have turned their heads to look at each other, seen in profile: neither smiles, their mouths are closed, their brows are level, and they hold each other's gaze.
+
+The signs: two torn flaps of brown corrugated cardboard, each about the size of a newspaper, with ragged outer edges, meeting side by side. Their fronts are plain, bare brown card: an even, flat, matt surface with the faint ridges of the corrugation showing through, facing the camera flat so the whole face of both is in view.
+
+Environment: Behind them, the camp at night: tents, tarpaulins, pallets and corrugated sheet across the wet tarmac, falling away into darkness, with the dark bulk of the dead supermarket far behind.
+
+Light: The fire in the drum in the foreground is the only strong light and the brightest thing in the picture. It lights both men's faces and both signs warm from below and in front. Behind them, the camp falls into cool darkness that keeps a trace of detail. Sparks rise from the drum, and fine rain shows only where it crosses the firelight.
+
+Details: Real skin texture, rain on their shoulders, heat shimmer above the drum, fine natural grain, ordinary and unstyled.
+
+Constraints: Only these two men are in the foreground; any other figures are small and far off in the camp. The faces of both cardboard signs are plain bare card from edge to edge. Every sign and surface in the frame carries no readable lettering.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+**Future Tarquin in s24–s26 (2026-09-28):** these three are five years on, but `@Tarquin-new` alone draws present-day
+Tarquin, and no description is allowed. The offered fix was to attach scene 12a (both men at the fire, five years
+on, in Flow only and not banked) as the reference. **Jack said "next", so the Characters stay as written.** If
+the bridge reads as present-day Tarquin, the 12a reference is the fix.
+
+### s27 — "I CAN'T LIVE LIKE THIS FOREVER" ×5 · the final-hook beat-cut · still · written 2026-09-28, handed over 2026-09-28 (result not yet logged)
+
+**Spec (shot-craft, re-cut thinking first):**
+- **Job:** everyone, the same words. Five faces in a beat-cut, then the Oxfam card.
+- 🔑 **Four of the five already exist. Only one still is new.**
+  - **Kingston man = s10**, re-used, with the hook already on his card.
+  - **Negril vendor = s11**, with the hook typed on his cooler board in post in place of "I DO WANT CHANGE".
+  - **Hong Kong = s12**, the man at the window, re-used, with the hook already on it. *(Or s21, the sign left alone,
+    if Jack wants the absence.)*
+  - **Bob = s13**, re-used, with the hook already on it.
+  - **Tarquin = new.** He is the only one of the five who has never held the hook, so this is his first time saying
+    it. That's the payoff, and it's the only frame worth spending credits on.
+- **The rhyme is built from geometry:** s10 and s13 share a framing (standing, straight on, eye level, about three
+  metres, a little right of centre, a soft vertical at the left edge). Tarquin gets **the same framing**, so the
+  beat-cut lands five people in one position. Pro can't see s10 or s13, so the layout is restated, not referenced.
+- **Where:** the camp at night, as in s24–s26. The soft vertical at the left edge is the corner post of a tarpaulin
+  shelter.
+- **Face:** straight into the lens, mouth closed, steady. The first time he stares at us the way Bob does. **No
+  description** (Jack, 2026-09-28).
+- **Light:** a drum fire off to the right is the key and the bright anchor, and the camp behind falls dark. It
+  rhymes with s13's side key from the right.
+- ⚠️ **Same future-Tarquin caveat as s24–s26.**
+
+Nano Banana Pro · 16:9 · x2 · 2K. Cast `@Tarquin-new`.
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure in the car park of a closed-down British supermarket that has become a camp of shelters, on a cold wet night. Heavy grain in the shadows, muted colour, unposed and imperfect.
+
+Camera and framing: 35mm lens at f/5.6, held at eye level about three metres from the man from the character reference, facing him straight on. He stands a little right of centre, his whole upper body and the sign in frame, cut at the thighs by the bottom edge. Across the left edge of the frame, close to the lens and soft out of focus, rises the timber corner post of a tarpaulin shelter. The frame is level.
+
+Action: He stands alone on the wet tarmac and holds a large cardboard sign flat against his chest with both hands, his fingers gripping only its outer edges, the card facing the lens squarely and held perfectly still. He looks straight into the lens, calm and level: his lips are pressed together, his brows are relaxed, his eyes are steady.
+
+The sign: a torn flap of brown corrugated cardboard about the size of a newspaper, with ragged edges, damp at the corners. Its front is plain, bare brown card: an even, flat, matt surface with the faint ridges of the corrugation showing through, facing the camera flat so the whole face of it is in view.
+
+Environment: Behind him, the camp at night: tents, tarpaulins, pallets and corrugated sheet across the wet tarmac, falling away into darkness, with one small fire burning far off among the shelters.
+
+Light: A burning oil drum just out of frame on the right is the key light: it falls across him and the sign from the right and is the brightest thing in the picture. The rest of the frame is cool night, darker toward the left, where his shoulder and the tarpaulin post fall into shadow that still keeps a trace of detail. Fine rain shows only where it crosses the firelight.
+
+Details: Real skin texture, rain on his shoulders, wet tarmac catching the firelight, fine natural grain, ordinary and unstyled.
+
+Constraints: Only this one man is in the foreground; any other figures are small and far off in the camp. The face of the cardboard sign is plain bare card from edge to edge. Every sign and surface in the frame carries no readable lettering.
+
+Compose for a 16:9 frame.
+
+Thanks.
+```
+
+### s28 — outro · every sign on the fire · still · written 2026-09-28, handed over 2026-09-28 (result not yet logged)
+
+**Spec (shot-craft):**
+- **Job:** the film's own ending. Every sign goes on the fire, and the embers become bad code.
+- 🔑 **Half of it already exists.** "The embers become bad code" **is** the film's accepted 12f
+  (`camera/reference/12f-badcode-coals-ACCEPTED-screenshot.png`, the coals spelling the wordmark). Re-use it as
+  the last frame. **Only the burning is new.**
+- **The rhyme:** the same geometry as the film's 12c (`scene-12c-newspaper-burns-ACCEPTED.png`). Across the rim of
+  the oil drum, at rim height, a bare weathered hand enters from the right. So the video's ending cuts into the
+  film's ending, and 12c → 12f already exists as a pair.
+- **What's burning:** a drum stacked with torn cardboard signs, curling and blackening, all blank. The hand lets go
+  of one last flat card, face up, onto the pile. **No text in post on this one.** Burning, curling card can't carry a
+  flat text layer, and the audience knows what the signs said.
+- **Whose hand:** unidentified, with no Character, as in 12c. It's everyone's sign now. A cast Character would make
+  it one man's.
+- **Light:** the fire is the only light. Rain shows only against it, and the rest is black, as in 12c.
+- **Then:** hard cut or dissolve to 12f (the coals). That's a Premiere job, and a camera-locked Omni clip later.
+
+Nano Banana Pro · 16:9 · x2 · 2K. No Character, no reference.
+
+```prompt
+SCENE:
+
+Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure of a burning oil drum in the rain. Heavy grain in the shadows, rich firelight, unposed and imperfect.
+
+Camera and framing: 50mm lens at f/2.8, held just above the rim of a rusted steel oil drum and looking down into it at a shallow angle, the curved rim running across the lower part of the frame. The fire fills the drum. On the right of the frame, a bare, weathered man's hand in a frayed, wet coat sleeve reaches in over the rim. The frame is not quite level.
+
+The fire: the drum is packed with torn flaps of brown corrugated cardboard, a dozen or more cardboard signs thrown in on top of each other, each one blank. They are burning: their edges curling up and blackening, glowing orange along the char lines, some already collapsed into grey ash, flames licking up between them.
+
+Action: The hand has just let go of one last cardboard sign, a flat torn flap of plain brown card that lands face up on top of the burning pile, its edges beginning to catch and curl, its face still plain bare card.
+
+Environment: Beyond the drum, only darkness. Rain falls through the whole frame.
+
+Light: The fire is the only light and the brightest thing in the picture. It lights the hand, the inside of the drum and the underside of the rain warm orange. Everything beyond the reach of the fire falls into black. The rain shows as fine bright streaks only where it falls across the firelight.
+
+Details: Real skin texture on the hand, rust flaking on the rim, sparks rising, ash drifting, fine natural grain, ordinary and unstyled.
+
+Constraints: The hand is the only part of any person in the frame. Every piece of cardboard is plain bare card, and nothing anywhere in the frame carries readable lettering.
 
 Compose for a 16:9 frame.
 
