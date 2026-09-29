@@ -450,6 +450,8 @@ the Flow notes below). The files are `…\music video\videos\01–26.mp4`. Each 
 **Sequence:** `music video v2`, 1280×720 @ 24, 240 s (built from `01.mp4`'s settings)
 **Built:** 2026-09-28 by session (bridge)
 
+> 🔑 **Song changed (Jack, 2026-09-29):** `song.wav` is now [3a433539](https://suno.com/song/3a433539-0507-4d9e-b714-d134c0e1e509) (r77 jamrock w40, 239.96 s). The timings below were cut to the **old** take 198db8b9, so re-pull the alignment for 3a433539 and re-cut.
+
 **Timing source:** the Suno take's own word alignment (`studio-api …/gen/198db8b9-91a2-4d45-be54-365d028cbca3/aligned_lyrics/v2/`,
 read through the signed-in Suno tab), which is Jack's instruction. Each clip starts on its lyric line, and each
 overwrite trims the previous clip to that cue.

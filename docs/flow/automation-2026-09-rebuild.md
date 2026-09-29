@@ -135,3 +135,37 @@ The MCP server runs the checkout's source but only reloads on restart — run `/
 The runner used (a scratch script, not committed) imported `FlowClient` from `packages/flow-mcp/src/flow-client.ts`
 and called its private primitives: `reloadProject`, `uploadToProject`, `ensureVideoConfigRebuilt`,
 `fillFrameSlotRebuilt`, `setPrompt` and `clickSubmit`. Items 20–21 are the parts to fold back into `flow-client.ts`.
+
+## 2026-09-29: Characters on the rebuilt Flow, done by hand over CDP (world cast, 5 Characters)
+
+The six MCP character tools still throw `FLOW_REBUILD_UNMAPPED`. This is the working path, driven in-page with
+native `el.click()` (law 7), so it can be folded back into `flow-client.ts`.
+
+25. **The map.**
+    - Project sidebar **Characters** → `New character` goes to `/project/<id>/character`.
+    - That page has a "Describe your character…" composer, plus **Upload** and **Add from project**.
+    - Adding one image **creates the Character at once**. The URL becomes `/character/<uuid>`, the image is the
+      **Portrait**, and the name is "Untitled character".
+    - The **Edit name** button (aria-label) reveals `input[aria-label="Character name"]`: fill it and press Enter.
+    - **Create body** swaps the stage to "Generate or add an image of your character", with the same Upload / Add
+      from project. Adding one sets the **Body**, and the toast reads "Image added to character".
+    - **Done** saves and leaves.
+    - Character Info is `textarea[aria-label="Character personality"]`.
+26. 🔴 **Clicking a picker row sometimes commits at once** (the picker closes and the Character is created), and
+    sometimes only previews, when **Add media** is needed. The same as item 10. After clicking a row, check whether
+    `button[role=option]` rows still exist before pressing Add media. Pressing it blind risks adding the wrong
+    image.
+27. 🔴 **Pick rows by filename, via the picker's "Search assets" box.**
+    - The list virtualises, so a row that has scrolled away doesn't exist in the DOM.
+    - Thumbnail `src` briefly carries the media uuid (`flow-content.google/image/<uuid>`) and then switches to an
+      opaque `/asb/` token, so ids are not a reliable key.
+    - Generated images get auto-titles ("Man standing for reference photo…") that collide. **Upload** the plates
+      under distinctive filenames first (the picker's `Upload media` opens a native file chooser;
+      `waitForEvent('filechooser')` worked with the MCP attached), then search by name.
+28. 🔴 **Never launch a browser channel from a sandboxed shell.** The browser's downloads land in the sandbox's
+    private `/tmp` (`/tmp/playwright-artifacts-*`). The MCP server can't see it, so every harvest fails with
+    `download.saveAs: ENOENT … copyfile '/tmp/playwright-artifacts-…'` **after** the generation succeeded. Launch
+    `browser-channel.sh up` unsandboxed, and write `outPath` to a folder that exists: the MCP does not `mkdir`, and
+    a missing folder gives the same ENOENT.
+    - Also: channel 1's profile carries whichever Google account last signed in (Kai's, 2026-09-29). A project on
+      the other account returns `/404?reason=project`, not a login prompt.

@@ -1,0 +1,1837 @@
+{
+ "rc10": {
+  "src": "takes/rc10.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      98,
+      114
+     ],
+     [
+      496,
+      114
+     ],
+     [
+      496,
+      172
+     ],
+     [
+      98,
+      172
+     ]
+    ],
+    "text": "YOU KEEP ON WALKING\nTHROUGH THAT WAIT TROSE DOOR",
+    "style": "frost",
+    "from": 0.2
+   }
+  ]
+ },
+ "rc12": {
+  "src": "takes/rc12.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      633,
+      408
+     ],
+     [
+      783,
+      215
+     ],
+     [
+      827,
+      249
+     ],
+     [
+      677,
+      442
+     ]
+    ],
+    "text": "4 TONNES OF STEEL\n1 MEAL DEAL",
+    "style": "receipt",
+    "from": 0.5
+   }
+  ]
+ },
+ "ch1": {
+  "src": "takes/ch1.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      535,
+      486
+     ],
+     [
+      834,
+      483
+     ],
+     [
+      836,
+      652
+     ],
+     [
+      537,
+      654
+     ]
+    ],
+    "text": "I CAN'T LIVE\nLIKE THIS\nFOREVER",
+    "style": "marker",
+    "from": 1.0
+   }
+  ]
+ },
+ "ch5": {
+  "src": "takes/ch5.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      547,
+      366
+     ],
+     [
+      868,
+      363
+     ],
+     [
+      870,
+      548
+     ],
+     [
+      550,
+      557
+     ]
+    ],
+    "text": "I MIGHT BE INSANE\nBUT I DO\nWANT CHANGE",
+    "style": "marker",
+    "from": 1.0
+   }
+  ]
+ },
+ "rc14": {
+  "src": "takes/rc14.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      815,
+      281
+     ],
+     [
+      1004,
+      277
+     ],
+     [
+      1004,
+      440
+     ],
+     [
+      816,
+      442
+     ]
+    ],
+    "text": "WHAT ABOUT\nIF WE TAXED\nTHE RICH?",
+    "style": "marker",
+    "from": 3.2
+   }
+  ]
+ },
+ "rc17": {
+  "src": "takes/rc17.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      1013,
+      207
+     ],
+     [
+      1157,
+      207
+     ],
+     [
+      1155,
+      294
+     ],
+     [
+      1013,
+      296
+     ]
+    ],
+    "text": "WILL IT\nALLOW",
+    "style": "led",
+    "from": 3.46,
+    "to": 5.1,
+    "static": true
+   },
+   {
+    "quad": [
+     [
+      1013,
+      207
+     ],
+     [
+      1157,
+      207
+     ],
+     [
+      1155,
+      294
+     ],
+     [
+      1013,
+      296
+     ]
+    ],
+    "text": "IN CHARGE\nNOW",
+    "style": "led",
+    "from": 5.1,
+    "static": true
+   }
+  ]
+ },
+ "rc18": {
+  "src": "takes/rc18.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      482,
+      282
+     ],
+     [
+      814,
+      279
+     ],
+     [
+      848,
+      372
+     ],
+     [
+      424,
+      380
+     ]
+    ],
+    "text": "AND SICKER THAN WHEN\nTHE GOVERNMENT\nDEBASED US",
+    "style": "news",
+    "from": 3.8
+   }
+  ]
+ },
+ "rc19": {
+  "src": "takes/rc19.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      482,
+      160
+     ],
+     [
+      836,
+      160
+     ],
+     [
+      836,
+      350
+     ],
+     [
+      482,
+      350
+     ]
+    ],
+    "text": "WELL WE\nDON'T HAVE\nLONG",
+    "style": "fog",
+    "wipe": [
+     1.0,
+     2.6
+    ],
+    "static": true
+   }
+  ]
+ },
+ "old06": {
+  "src": "takes/old06.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      331,
+      240
+     ],
+     [
+      465,
+      238
+     ],
+     [
+      465,
+      370
+     ],
+     [
+      334,
+      370
+     ]
+    ],
+    "text": "PAID FOR\nYOUR WHEELS\nON TICK",
+    "style": "marker",
+    "from": 0.4
+   }
+  ]
+ },
+ "old09": {
+  "src": "takes/old09.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      507,
+      288
+     ],
+     [
+      633,
+      286
+     ],
+     [
+      634,
+      434
+     ],
+     [
+      507,
+      438
+     ]
+    ],
+    "text": "PLEASE SIR\nCAN I FUCKIN'\nHAVE SOME MORE?",
+    "style": "marker",
+    "from": 5.0,
+    "keys": [
+     [
+      4.9,
+      [
+       [
+        507,
+        288
+       ],
+       [
+        633,
+        286
+       ],
+       [
+        634,
+        434
+       ],
+       [
+        507,
+        438
+       ]
+      ]
+     ],
+     [
+      6.2,
+      [
+       [
+        498,
+        282
+       ],
+       [
+        620,
+        280
+       ],
+       [
+        622,
+        430
+       ],
+       [
+        498,
+        434
+       ]
+      ]
+     ],
+     [
+      7.6,
+      [
+       [
+        493,
+        285
+       ],
+       [
+        622,
+        283
+       ],
+       [
+        624,
+        436
+       ],
+       [
+        493,
+        440
+       ]
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "old18slow": {
+  "src": "takes/old18slow.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      738,
+      198
+     ],
+     [
+      1030,
+      198
+     ],
+     [
+      1030,
+      255
+     ],
+     [
+      738,
+      255
+     ]
+    ],
+    "text": "THE ONLY THING I'M CHANGING\nIS THE LANE IN MY M3",
+    "style": "led",
+    "from": 0.2,
+    "to": 3.4,
+    "keys": [
+     [
+      0,
+      [
+       [
+        738,
+        198
+       ],
+       [
+        1030,
+        198
+       ],
+       [
+        1030,
+        255
+       ],
+       [
+        738,
+        255
+       ]
+      ]
+     ],
+     [
+      0.7,
+      [
+       [
+        738,
+        178
+       ],
+       [
+        1060,
+        178
+       ],
+       [
+        1060,
+        242
+       ],
+       [
+        738,
+        242
+       ]
+      ]
+     ],
+     [
+      1.4,
+      [
+       [
+        738,
+        158
+       ],
+       [
+        1090,
+        158
+       ],
+       [
+        1090,
+        225
+       ],
+       [
+        738,
+        225
+       ]
+      ]
+     ],
+     [
+      2.1,
+      [
+       [
+        740,
+        130
+       ],
+       [
+        1128,
+        130
+       ],
+       [
+        1128,
+        206
+       ],
+       [
+        740,
+        206
+       ]
+      ]
+     ],
+     [
+      2.8,
+      [
+       [
+        742,
+        96
+       ],
+       [
+        1174,
+        96
+       ],
+       [
+        1174,
+        181
+       ],
+       [
+        742,
+        181
+       ]
+      ]
+     ],
+     [
+      3.4,
+      [
+       [
+        744,
+        41
+       ],
+       [
+        1239,
+        41
+       ],
+       [
+        1239,
+        149
+       ],
+       [
+        744,
+        149
+       ]
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "old19": {
+  "src": "takes/old19.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      622,
+      372
+     ],
+     [
+      660,
+      372
+     ],
+     [
+      660,
+      430
+     ],
+     [
+      622,
+      430
+     ]
+    ],
+    "text": "WEALTH\nGAP?\nWHAT A\nLOAD OF\nCRAP",
+    "style": "label",
+    "from": 0.2,
+    "to": 6.2
+   }
+  ]
+ },
+ "rc12slow": {
+  "src": "takes/rc12slow.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      633,
+      408
+     ],
+     [
+      783,
+      215
+     ],
+     [
+      827,
+      249
+     ],
+     [
+      677,
+      442
+     ]
+    ],
+    "text": "4 TONNES OF STEEL\n1 MEAL DEAL",
+    "style": "receipt",
+    "from": 0.2
+   }
+  ]
+ },
+ "rc09v": {
+  "src": "takes/rc09.mp4",
+  "out": "rc09v",
+  "signs": [
+   {
+    "quad": [
+     [
+      565,
+      532
+     ],
+     [
+      730,
+      532
+     ],
+     [
+      732,
+      652
+     ],
+     [
+      565,
+      655
+     ]
+    ],
+    "text": "ONCE\nAGAIN",
+    "style": "marker",
+    "from": 0.2,
+    "to": 4.3
+   },
+   {
+    "quad": [
+     [
+      565,
+      532
+     ],
+     [
+      730,
+      532
+     ],
+     [
+      732,
+      652
+     ],
+     [
+      565,
+      655
+     ]
+    ],
+    "text": "IN\nSHAME",
+    "style": "marker",
+    "from": 4.4,
+    "to": 6.9
+   },
+   {
+    "quad": [
+     [
+      565,
+      532
+     ],
+     [
+      730,
+      532
+     ],
+     [
+      732,
+      652
+     ],
+     [
+      565,
+      655
+     ]
+    ],
+    "text": "BUT\nWHY?",
+    "style": "marker",
+    "from": 6.9,
+    "to": 99
+   }
+  ]
+ },
+ "rc09f": {
+  "src": "takes/rc09.mp4",
+  "out": "rc09f",
+  "signs": [
+   {
+    "quad": [
+     [
+      565,
+      532
+     ],
+     [
+      730,
+      532
+     ],
+     [
+      732,
+      652
+     ],
+     [
+      565,
+      655
+     ]
+    ],
+    "text": "I CAN'T LIVE\nLIKE THIS\nFOREVER",
+    "style": "marker",
+    "from": 4.9,
+    "to": 99
+   }
+  ]
+ },
+ "ch2": {
+  "src": "takes/ch2.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      510,
+      400
+     ],
+     [
+      800,
+      398
+     ],
+     [
+      802,
+      580
+     ],
+     [
+      512,
+      582
+     ]
+    ],
+    "text": "I CAN'T LIVE\nLIKE THIS\nFOREVER",
+    "style": "marker",
+    "from": 0.9,
+    "to": 99
+   }
+  ]
+ },
+ "ch3": {
+  "src": "takes/ch3.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      490,
+      398
+     ],
+     [
+      808,
+      398
+     ],
+     [
+      808,
+      628
+     ],
+     [
+      490,
+      628
+     ]
+    ],
+    "text": "I CAN'T LIVE\nLIKE THIS\nFOREVER",
+    "style": "marker",
+    "from": 0.9,
+    "to": 99
+   }
+  ]
+ },
+ "ch4": {
+  "src": "takes/ch4.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      510,
+      372
+     ],
+     [
+      795,
+      370
+     ],
+     [
+      795,
+      555
+     ],
+     [
+      510,
+      558
+     ]
+    ],
+    "text": "I CAN'T LIVE\nLIKE THIS\nFOREVER",
+    "style": "marker",
+    "from": 0.9,
+    "to": 99
+   }
+  ]
+ },
+ "ch4b": {
+  "src": "takes/ch4.mp4",
+  "out": "ch4b",
+  "signs": [
+   {
+    "quad": [
+     [
+      510,
+      372
+     ],
+     [
+      795,
+      370
+     ],
+     [
+      795,
+      555
+     ],
+     [
+      510,
+      558
+     ]
+    ],
+    "text": "I MIGHT BE INSANE\nBUT I DO\nWANT CHANGE",
+    "style": "marker",
+    "from": 3.9,
+    "to": 99
+   }
+  ]
+ },
+ "ch6": {
+  "src": "takes/ch6.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      505,
+      408
+     ],
+     [
+      800,
+      406
+     ],
+     [
+      802,
+      610
+     ],
+     [
+      505,
+      612
+     ]
+    ],
+    "text": "I CAN'T LIVE\nLIKE THIS\nFOREVER",
+    "style": "marker",
+    "from": 0.9,
+    "to": 99
+   }
+  ]
+ },
+ "ch5f": {
+  "src": "takes/ch5.mp4",
+  "out": "ch5f",
+  "signs": [
+   {
+    "quad": [
+     [
+      547,
+      366
+     ],
+     [
+      868,
+      363
+     ],
+     [
+      870,
+      548
+     ],
+     [
+      550,
+      557
+     ]
+    ],
+    "text": "I CAN'T LIVE\nLIKE THIS\nFOREVER",
+    "style": "marker",
+    "from": 2.9,
+    "to": 99
+   }
+  ]
+ },
+ "rc11": {
+  "src": "takes/rc11.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      840,
+      161
+     ],
+     [
+      1068,
+      161
+     ],
+     [
+      1068,
+      175
+     ],
+     [
+      840,
+      175
+     ]
+    ],
+    "text": "YOUR DEALS ARE SLICK",
+    "style": "frost",
+    "from": 1.0,
+    "to": 99,
+    "static": true
+   }
+  ]
+ },
+ "old05": {
+  "src": "takes/old05.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      812,
+      254
+     ],
+     [
+      1200,
+      238
+     ],
+     [
+      1196,
+      578
+     ],
+     [
+      808,
+      540
+     ]
+    ],
+    "text": "SHINY\nTEETH",
+    "style": "marker",
+    "from": 0.3,
+    "to": 3.5
+   },
+   {
+    "quad": [
+     [
+      812,
+      254
+     ],
+     [
+      1200,
+      238
+     ],
+     [
+      1196,
+      578
+     ],
+     [
+      808,
+      540
+     ]
+    ],
+    "text": "FUCKING SENSE\nOF ENTITLEMENT",
+    "style": "marker",
+    "from": 3.5,
+    "to": 99
+   }
+  ]
+ },
+ "old07": {
+  "src": "takes/old07.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      84,
+      330
+     ],
+     [
+      408,
+      330
+     ],
+     [
+      404,
+      588
+     ],
+     [
+      87,
+      600
+     ]
+    ],
+    "text": "CASH FROM\nTHE BANK FOR\nYOUR WANK TANK",
+    "style": "marker",
+    "from": 0.9,
+    "to": 99
+   }
+  ]
+ },
+ "old08": {
+  "src": "takes/old08.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      358,
+      326
+     ],
+     [
+      738,
+      452
+     ],
+     [
+      705,
+      690
+     ],
+     [
+      332,
+      606
+     ]
+    ],
+    "text": "I INSIST\nI HOLD\nTHAT DOOR",
+    "style": "marker",
+    "from": 0.9,
+    "to": 99
+   }
+  ]
+ },
+ "old11": {
+  "src": "takes/old11.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      655,
+      382
+     ],
+     [
+      810,
+      377
+     ],
+     [
+      828,
+      625
+     ],
+     [
+      670,
+      625
+     ]
+    ],
+    "text": "I MIGHT\nBE INSANE\nBUT I DO\nWANT CHANGE",
+    "style": "marker",
+    "from": 0.4,
+    "to": 99
+   }
+  ]
+ },
+ "old21a": {
+  "src": "takes/old21.mp4",
+  "out": "old21a",
+  "signs": [
+   {
+    "quad": [
+     [
+      500,
+      212
+     ],
+     [
+      748,
+      206
+     ],
+     [
+      778,
+      548
+     ],
+     [
+      524,
+      551
+     ]
+    ],
+    "text": "PATHETIC",
+    "style": "marker",
+    "from": 0.9,
+    "to": 3.6
+   },
+   {
+    "quad": [
+     [
+      500,
+      212
+     ],
+     [
+      748,
+      206
+     ],
+     [
+      778,
+      548
+     ],
+     [
+      524,
+      551
+     ]
+    ],
+    "text": "IT SEEMS\nYOU ARE\nJUST A BUM",
+    "style": "marker",
+    "from": 3.6,
+    "to": 99
+   }
+  ]
+ },
+ "old21b": {
+  "src": "takes/old21.mp4",
+  "out": "old21b",
+  "signs": [
+   {
+    "quad": [
+     [
+      500,
+      212
+     ],
+     [
+      748,
+      206
+     ],
+     [
+      778,
+      548
+     ],
+     [
+      524,
+      551
+     ]
+    ],
+    "text": "BACK TO\nTHAT TIME\nWHEN WE\nFIRST MET",
+    "style": "marker",
+    "from": 3.9,
+    "to": 99
+   }
+  ]
+ },
+ "old14": {
+  "src": "takes/old14.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      561,
+      253
+     ],
+     [
+      750,
+      253
+     ],
+     [
+      751,
+      391
+     ],
+     [
+      561,
+      391
+     ]
+    ],
+    "text": "DROWNING\nYOUR SORROW\nUNTIL TOMORROW",
+    "style": "enamel",
+    "from": 0.9,
+    "to": 99
+   }
+  ]
+ },
+ "old15": {
+  "src": "takes/old15.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      222,
+      172
+     ],
+     [
+      588,
+      217
+     ],
+     [
+      587,
+      452
+     ],
+     [
+      232,
+      572
+     ]
+    ],
+    "text": "PROSPECTS\nEXIST",
+    "style": "engraved",
+    "from": 0.9,
+    "to": 4.2
+   },
+   {
+    "quad": [
+     [
+      222,
+      172
+     ],
+     [
+      588,
+      217
+     ],
+     [
+      587,
+      452
+     ],
+     [
+      232,
+      572
+     ]
+    ],
+    "text": "STOP\nTHE GRIFT",
+    "style": "engraved",
+    "from": 4.2,
+    "to": 99
+   }
+  ]
+ },
+ "old16": {
+  "src": "takes/old16.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      782,
+      397
+     ],
+     [
+      983,
+      397
+     ],
+     [
+      983,
+      538
+     ],
+     [
+      782,
+      538
+     ]
+    ],
+    "text": "WHAT THE FUCK\nYOU THINK\nTHIS IS",
+    "style": "gold",
+    "from": 0,
+    "to": 2.7
+   },
+   {
+    "quad": [
+     [
+      782,
+      397
+     ],
+     [
+      983,
+      397
+     ],
+     [
+      983,
+      538
+     ],
+     [
+      782,
+      538
+     ]
+    ],
+    "text": "I WORK HARD\nTO PAY FOR\nMY YARD",
+    "style": "gold",
+    "from": 2.7,
+    "to": 5.6
+   },
+   {
+    "quad": [
+     [
+      782,
+      397
+     ],
+     [
+      983,
+      397
+     ],
+     [
+      983,
+      538
+     ],
+     [
+      782,
+      538
+     ]
+    ],
+    "text": "PAYING MY TAX\nWITH A\nPLATINUM CARD",
+    "style": "gold",
+    "from": 5.6,
+    "to": 99
+   }
+  ]
+ },
+ "old17": {
+  "src": "takes/old17.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      352,
+      122
+     ],
+     [
+      588,
+      122
+     ],
+     [
+      588,
+      275
+     ],
+     [
+      352,
+      275
+     ]
+    ],
+    "text": "YOU WANT CHANGE\nBUT MY POCKETS\nARE EMPTY",
+    "style": "gold",
+    "from": 0.9,
+    "to": 99
+   }
+  ]
+ },
+ "old13": {
+  "src": "takes/old13.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      657,
+      358
+     ],
+     [
+      1001,
+      360
+     ],
+     [
+      996,
+      588
+     ],
+     [
+      657,
+      586
+     ]
+    ],
+    "text": "IF YOU WORKED HARD\nYOU COULD HAVE\nPLENTY",
+    "style": "marker",
+    "from": 0.4,
+    "to": 4.35
+   },
+   {
+    "quad": [
+     [
+      657,
+      358
+     ],
+     [
+      1001,
+      360
+     ],
+     [
+      996,
+      588
+     ],
+     [
+      657,
+      586
+     ]
+    ],
+    "text": "ALL YOU NOW\nSEEM TO DO\nIS RESENT ME",
+    "style": "marker",
+    "from": 4.35,
+    "to": 99
+   }
+  ]
+ },
+ "old12": {
+  "src": "takes/old12.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      518,
+      258
+     ],
+     [
+      798,
+      253
+     ],
+     [
+      793,
+      477
+     ],
+     [
+      520,
+      472
+     ]
+    ],
+    "text": "I CAN'T LIVE\nLIKE THIS\nFOREVER",
+    "style": "marker",
+    "from": 0.4,
+    "to": 99
+   }
+  ]
+ },
+ "old10": {
+  "src": "takes/old10.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      729,
+      290
+     ],
+     [
+      920,
+      288
+     ],
+     [
+      926,
+      538
+     ],
+     [
+      732,
+      538
+     ]
+    ],
+    "text": "I CAN'T LIVE\nLIKE THIS\nFOREVER",
+    "style": "marker",
+    "from": 0.9,
+    "to": 99
+   }
+  ]
+ },
+ "old23": {
+  "src": "takes/old23.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      207,
+      386
+     ],
+     [
+      483,
+      386
+     ],
+     [
+      486,
+      600
+     ],
+     [
+      209,
+      603
+     ]
+    ],
+    "text": "HERE WE\nBOTH ARE",
+    "style": "marker",
+    "from": 0.9,
+    "to": 99
+   },
+   {
+    "quad": [
+     [
+      847,
+      395
+     ],
+     [
+      1138,
+      400
+     ],
+     [
+      1133,
+      592
+     ],
+     [
+      845,
+      588
+     ]
+    ],
+    "text": "LIVING IN\nA CAR PARK",
+    "style": "marker",
+    "from": 2.8,
+    "to": 5.05
+   },
+   {
+    "quad": [
+     [
+      847,
+      395
+     ],
+     [
+      1138,
+      400
+     ],
+     [
+      1133,
+      592
+     ],
+     [
+      845,
+      588
+     ]
+    ],
+    "text": "RAINED ON IN\nTHE FUCKING DARK",
+    "style": "marker",
+    "from": 5.05,
+    "to": 99
+   }
+  ]
+ },
+ "old24": {
+  "src": "takes/old24.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      690,
+      313
+     ],
+     [
+      910,
+      320
+     ],
+     [
+      904,
+      500
+     ],
+     [
+      688,
+      494
+     ]
+    ],
+    "text": "WENT DOWN\nTHE WRONG\nTRACK",
+    "style": "marker",
+    "from": 0,
+    "to": 1.75
+   },
+   {
+    "quad": [
+     [
+      690,
+      313
+     ],
+     [
+      910,
+      320
+     ],
+     [
+      904,
+      500
+     ],
+     [
+      688,
+      494
+     ]
+    ],
+    "text": "THEN I GOT\nTHE SACK",
+    "style": "marker",
+    "from": 1.75,
+    "to": 3.35
+   },
+   {
+    "quad": [
+     [
+      690,
+      313
+     ],
+     [
+      910,
+      320
+     ],
+     [
+      904,
+      500
+     ],
+     [
+      688,
+      494
+     ]
+    ],
+    "text": "THEN I DRANK\nBROKE\nMY BACK",
+    "style": "marker",
+    "from": 3.35,
+    "to": 5.05
+   },
+   {
+    "quad": [
+     [
+      690,
+      313
+     ],
+     [
+      910,
+      320
+     ],
+     [
+      904,
+      500
+     ],
+     [
+      688,
+      494
+     ]
+    ],
+    "text": "NOW I'M IN\nTHE LAST PART",
+    "style": "marker",
+    "from": 5.05,
+    "to": 6.9
+   },
+   {
+    "quad": [
+     [
+      690,
+      313
+     ],
+     [
+      910,
+      320
+     ],
+     [
+      904,
+      500
+     ],
+     [
+      688,
+      494
+     ]
+    ],
+    "text": "THE AI DOES\nTHE FAST PART",
+    "style": "marker",
+    "from": 6.9,
+    "to": 99
+   }
+  ]
+ },
+ "old22": {
+  "src": "takes/old22.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      620,
+      325
+     ],
+     [
+      920,
+      325
+     ],
+     [
+      920,
+      545
+     ],
+     [
+      622,
+      542
+     ]
+    ],
+    "text": "YOU SEE\nAS IT\nTURNS OUT",
+    "style": "marker",
+    "from": 0.9,
+    "to": 2.55
+   },
+   {
+    "quad": [
+     [
+      620,
+      325
+     ],
+     [
+      920,
+      325
+     ],
+     [
+      920,
+      545
+     ],
+     [
+      622,
+      542
+     ]
+    ],
+    "text": "VERY LITTLE\nCLOUT",
+    "style": "marker",
+    "from": 2.55,
+    "to": 4.1
+   },
+   {
+    "quad": [
+     [
+      620,
+      325
+     ],
+     [
+      920,
+      325
+     ],
+     [
+      920,
+      545
+     ],
+     [
+      622,
+      542
+     ]
+    ],
+    "text": "IN HAVING\nTHE MANAGER",
+    "style": "marker",
+    "from": 4.1,
+    "to": 99
+   }
+  ]
+ },
+ "old25": {
+  "src": "takes/old25.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      324,
+      310
+     ],
+     [
+      650,
+      313
+     ],
+     [
+      651,
+      487
+     ],
+     [
+      324,
+      489
+     ]
+    ],
+    "text": "I DO REGRET\nI JUDGED YOU",
+    "style": "marker",
+    "from": 1.6,
+    "to": 4.9
+   },
+   {
+    "quad": [
+     [
+      654,
+      313
+     ],
+     [
+      1001,
+      305
+     ],
+     [
+      1001,
+      486
+     ],
+     [
+      654,
+      487
+     ]
+    ],
+    "text": "I WAS\nWRONG",
+    "style": "marker",
+    "from": 2.9,
+    "to": 4.9
+   },
+   {
+    "quad": [
+     [
+      324,
+      310
+     ],
+     [
+      650,
+      313
+     ],
+     [
+      651,
+      487
+     ],
+     [
+      324,
+      489
+     ]
+    ],
+    "text": "WE WERE ON\nTHE SAME SIDE",
+    "style": "marker",
+    "from": 4.9,
+    "to": 99
+   },
+   {
+    "quad": [
+     [
+      654,
+      313
+     ],
+     [
+      1001,
+      305
+     ],
+     [
+      1001,
+      486
+     ],
+     [
+      654,
+      487
+     ]
+    ],
+    "text": "ALL\nALONG",
+    "style": "marker",
+    "from": 4.9,
+    "to": 99
+   }
+  ]
+ },
+ "old26": {
+  "src": "takes/old26.mp4",
+  "signs": [
+   {
+    "quad": [
+     [
+      685,
+      345
+     ],
+     [
+      1020,
+      347
+     ],
+     [
+      1016,
+      597
+     ],
+     [
+      685,
+      590
+     ]
+    ],
+    "text": "I MIGHT BE\nINSANE",
+    "style": "marker",
+    "from": 0.4,
+    "to": 99
+   }
+  ]
+ }
+}

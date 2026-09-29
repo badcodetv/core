@@ -654,3 +654,13 @@ deliberately brighter; uniform near-black reads as a broken file. The plant room
 *into* the failure. Lifting the whites gave it the bright anchor and lifting the blacks off the
 clip gave the shadows somewhere to live — and it reads *darker*, not lighter, because the shadows
 now have shape.
+
+## Recipe: lay down a whole cut from a plan (2026-09-29)
+
+One `premiere_eval` with a list of `[projectItemId, start, end, inPoint]`. For each entry:
+1. `clip.createSetInOutPointsAction(T(in), T(in + end - start))`
+2. `editor.createOverwriteItemAction(item, T(start), 0, 1)`: V1, with the clip's own audio on A2
+3. `clip.createClearInOutPointsAction()`
+
+Then overwrite the song on A1 at 0, mute A2, and close the one-frame gaps with `createSetEndAction`. The worked
+example is the Camping re-cut ledger, `docs/stories/camping/music-video-v2-recut.md` § Premiere.

@@ -7,6 +7,7 @@ Pro-specific prompting and the engine recommendation live.
 **Researched:** 2026-08-12 · **second pass 2026-08-12** ·
 **third pass 2026-08-14** ([Pro, and the anti-slop toolkit](#third-pass--nano-banana-pro-and-the-anti-slop-toolkit)) ·
 **fifth pass 2026-09-09** ([the model names, and faces](#fifth-pass--the-model-names-and-faces-community-2026-09-09) — ⚠️ **there is no "Nano Banana Pro 2"**) ·
+… · **fourteenth pass 2026-09-29** ([web delta: night street, neon, rain](#fourteenth-pass--2026-09-29-web-delta-night-street-neon-and-rain-vendor-community-press)) ·
 **Confirmed against our Flow session:** never — everything here is
 `[vendor]` or `[community]` until a calibration run says otherwise (see [README](./README.md)).
 
@@ -1940,6 +1941,41 @@ Run for Camping music video v2 `s1` (a close-up of anti-homeless studs on a wet 
 - 🆕 **"Spikes" on a ledge probably comes back as thin pigeon-wire spikes.** This is inferred and untested, the §33 strongest-prior family. The UK cases (Southwark Bridge Road flats, Tesco Regent Street, 2014) were one-inch steel studs set into the ground. So name the object physically: squat steel studs bolted into stone. `[press]` [London SE1](https://www.london-se1.co.uk/news/view/7616)
 - **Two more slop tells:** the bundle "teal-orange-magenta grade, f/1.4, bokeh halation", and "cut-out edges" with "light with no source". `[community]` [aestheticsofphotography](https://aestheticsofphotography.com/the-viral-visual-grammar-of-us-instagram-in-2026-aesthetics-algorithms-and-attention/) · [imagera](https://imagera.ai/blog/make-ai-images-look-real-2026)
 - ⬜ **Chrome over-reflection on metal:** no Nano Banana source was found. Naming a dull finish (brushed, water-spotted) is untested.
+
+## Fourteenth pass — 2026-09-29 web delta: night street, neon and rain `[vendor]` `[community]` `[press]`
+
+Run for a gritty photoreal night-street still (neon, rain). **New or contradicting items only. None tested on our work.** Still no "Nano Banana Pro 2", and no new Google prompting guide or Flow image-model change announced since the thirteenth pass.
+
+**Models and Flow**
+
+- 🆕 **An anonymous Arena model, "spicy-mayo", has been in blind image battles since about 2026-09-09.** Testers believe it is **Nano Banana 2.5**. Google has confirmed nothing, and Arena has not either. The build string in Flow went "Nano Banana 2.5 Flash" (seen 2026-09-24), then "Nano Banana 2.1" (2026-09-27, thirteenth pass). Claims that Vertex partners already have it, with three thinking levels and 4K, carry no documentation. `[community, unverified]` [progressiverobot, 2026-09-24](https://www.progressiverobot.com/2026/09/24/nano-banana-2-5-flash-google-flow-traces/) · [kie.ai](https://kie.ai/blog/what-is-nano-banana-2-5) · [@synthwavedd on X](https://x.com/synthwavedd/status/2097720011229950297)
+  - **Consequence:** if a new picker entry appears, it is a new engine. Every finding in this file drops back to `[untested]` on it. Do not change engine partway through a sequence (the fifth pass's continuity rule).
+- 🆕 **Nano Banana Pro takes up to 5 style references**, according to Google's API table: 6 object, 5 character, 5 style. The eleventh pass had no style figure for Pro. NB2 stays at 10 / 4 / 3. `[vendor]` [ai.google.dev](https://ai.google.dev/gemini-api/docs/image-generation) Our one-reference house rule is unaffected.
+- 🆕 **The API docs list video-to-image input for 3.1 Flash and Lite only, not Pro.** ⬜ It is unverified whether Flow exposes this at all. `[vendor]` (same page)
+- ⚠️ **NB2 `thinking_level` defaults to "minimal".** This matches the seventh pass's "off by default". `[vendor]`
+- 🆕 **The Flow Agent can ground images and videos in Google Maps Street View, for US locations only.** The post date is not confirmed, but the status ID puts it at about mid-2026. It does not help a UK street. `[community]` [TestingCatalog on X](https://x.com/testingcatalog/status/2069901740015579588)
+
+**Pro vs NB2 for gritty photoreal: the web is still split**
+
+- One practitioner source says that on landscapes, where texture, tonal contrast and shadow detail carry the image, **Pro gives the "natural earthy-realistic look" and NB2 "looks over-processed"**. It also says Pro gives deeper shadow gradients and more accurate reflections and complex shadows. `[community]` This came from search snippets attributed to [fofr.ai](https://www.fofr.ai/nano-banana-2-vs-pro), whose page body **would not load**, so it is ⬜ **unverified at source**.
+- **Against that**, a Feb 2026 four-prompt test calls it a tie. It says to use NB2 "for speed, realism, and character consistency", and to keep Pro "for when you want more artistic restraint and a less sharp, more considered output". `[community]` [aitoolssme](https://www.aitoolssme.com/blogs/nano-banana-pro-vs-nano-banana-2)
+- **Net:** both sources agree that **Pro is less sharp and more restrained**, which is the axis a gritty photoreal still needs suppressed. The leaderboard lead is NB2's (the fifth pass). Nothing on the web tested a night street. **The recommendation is unchanged: Pro by continuity and restraint, pending our own A/B.**
+
+**Night street, neon and rain**
+
+- 🆕 **The cyberpunk formula has four named parts:** dense vertical architecture, stacked neon or holographic signage, rain or smog with wet reflections, and a magenta-and-cyan palette. Name all four and the frame reads as cyberpunk rather than as a street. The practitioner alternative is warm streetlamp, headlight and shopfront light stretched across wet asphalt. `[community, weak]` [Morphic](https://morphic.com/resources/images/rainy-night-city-images) This extends the twelfth pass's neon note: **drop at least two of the four**, and never write the palette.
+- 🆕 **Reflections on wet tarmac are vertical streaks, not mirror images.** A rough wet surface stretches each light into a column running from the light toward the viewer. Only standing water gives a mirror image. `[physics]` [Honest Universe](https://honestuniverse.com/2015/06/15/natural-curiosity-stretching-reflections-2/) · [Quora explainer](https://www.quora.com/Why-do-reflections-on-a-rough-surface-stretch-from-the-light-source-towards-you-instead-of-spreading-out-in-all-directions)
+  - ⬜ *Inferred, untested:* write *"each light smeared into a short vertical streak on the wet tarmac, a mirror image only in one puddle"*. That states the physics as an object, per §27. It adds to the "broken up" counter from 2026-08-26.
+- 🆕 **UK period cue: most UK councils have swapped orange sodium street lighting for white LED.** Coventry, for example, replaced 29,701 sodium lamps. So **orange sodium dates a UK street to before about the mid-2010s, and a present-day UK street is lit by flat, cool-white LED.** `[press]` `[research]` [The Car Expert](https://www.thecarexpert.co.uk/street-lights-orange-not-white/) · [ScienceDirect, 2018](https://www.sciencedirect.com/science/article/abs/pii/S0038012118301149) · [Newcastle Univ.](https://www.ncl.ac.uk/press/articles/latest/2021/08/conversationleds) ⬜ Whether the model knows this is untested. State the lamp type, never the era alone (the sixth pass: era is a hedge, not a fix).
+- **A text-accuracy figure for Pro:** "~85% of attempts" (Apr 2026). `[community, no method]` [AVB](https://aivideobootcamp.com/blog/nano-banana-pro-complete-guide-2026/) It is weaker than the twelfth pass's length-banded figures and changes nothing. Same guide says to use *"photorealistic, ultra-realistic, cinematic realism"*: this **contradicts our kill list and is rejected.**
+
+**🚫 Do not cite**
+
+- **"End prompts with `--style raw`"** for Nano Banana Pro. `--style raw` is a Midjourney parameter, and Nano Banana has no flag syntax. (Search snippet, [picassoia](https://blog.picassoia.com/nano-banana-2-vs-nano-banana-pro-speed-vs-quality) family.)
+- **"Reduce CFG / check the VAE" slop fixes** ([zsky](https://zsky.ai/blog/why-ai-images-look-bad), 2026). These are diffusion-only controls, the same as in the sixth pass's list.
+- **"Pro leads on photorealism, NB2 is 3× faster and 75% cheaper"** (plykit and similar resellers). No method is given. These are the same kind of numbers as the fifth pass's "95% of Pro".
+
+**✅ The web still agrees with the repo on:** one named, positioned light; camera body plus focal length plus available light instead of quality words; *photorealistic*, *cinematic*, *8K*, *masterpiece* and adjective stacks as slop triggers; teal-orange, smooth skin and generic bokeh as the named "AI look"; uniform lens blur as a tell; light that is plausible but not physical as the core tell; candid, asymmetric, mid-action framing; film grain and texture; people in the scene rather than an empty street; and short, focused prompts over long, competing ones.
 
 ## Notes for BadCode `[untested]`
 

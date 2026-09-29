@@ -279,7 +279,7 @@ Full method, including what ffmpeg can do that Premiere cannot:
 
 ---
 
-## 4. The twenty-two laws
+## 4. The twenty-three laws
 
 These are why the client looks the way it does. Every one was paid for live. If you are
 changing `@badcode/flow-mcp`, they are the spec; if you are just calling tools, laws 1–5
@@ -388,6 +388,13 @@ explain most of what you will see.
     **Before asking for a reconnect:** kill this session's own old server (trace it to the same
     `claude` pid, as in `premiere-automation` §1d) and `browser-channel.sh release` its channel,
     *then* reconnect. The new process then claims the running, signed-in browser.
+
+23. 🔴 **Never launch a browser channel from a sandboxed shell.** Measured 2026-09-29: Chrome started inside the
+    Bash sandbox writes its downloads to the sandbox's private `/tmp`, and every harvest then dies with
+    `download.saveAs: ENOENT … copyfile '/tmp/playwright-artifacts-…'`, **after** the image was made. Run
+    `browser-channel.sh up/claim` unsandboxed, and make sure `outPath`'s folder exists, because a missing folder
+    gives the same ENOENT. The Characters UI on the rebuilt Flow (still unmapped in the MCP) has its hand-driven
+    recipe in `docs/flow/automation-2026-09-rebuild.md` items 25–28.
 
 ---
 

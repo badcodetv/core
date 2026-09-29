@@ -5,7 +5,9 @@ import cv2, json, math, random, subprocess, sys, numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
 S = __import__('os').environ.get('MV2_WORK', '/tmp/camping-mv2')  # work dir holding takes/, text/, font/ and signs.json
-FONTS = {'marker': S + '/font/PermanentMarker-Regular.ttf', 'serif': S + '/font/Cinzel.ttf', 'led': S + '/font/DotGothic16.ttf'}
+CFG = __import__('os').environ.get('SIGNS', S + '/signs.json')  # re-cut: SIGNS=scripts/camping-mv2/recut-signs.json
+FONTS = {'marker': S + '/font/PermanentMarker-Regular.ttf', 'serif': S + '/font/Cinzel.ttf', 'led': S + '/font/DotGothic16.ttf',
+         'oswald': S + '/font/Oswald.ttf'}
 STYLE = {  # ink colour (RGB), blend, font, per-word tilt (deg), weight for variable fonts
     'marker': dict(ink=(28, 24, 22), blend='multiply', font='marker', tilt=3.0, opacity=0.92),
     'engraved': dict(ink=(70, 48, 18), blend='multiply', font='serif', tilt=0, opacity=0.9, wght=700),
@@ -13,6 +15,11 @@ STYLE = {  # ink colour (RGB), blend, font, per-word tilt (deg), weight for vari
     'gold': dict(ink=(214, 178, 96), blend='normal', font='serif', tilt=0, opacity=0.95, wght=700),
     'label': dict(ink=(40, 20, 22), blend='multiply', font='serif', tilt=0, opacity=0.92, wght=700),
     'led': dict(ink=(255, 170, 40), blend='glow', font='led', tilt=0, opacity=1.0),
+    # 2026-09-29 re-cut surfaces
+    'frost': dict(ink=(38, 42, 50), blend='multiply', font='oswald', tilt=0, opacity=0.85, wght=600),   # vinyl on a frosted door band
+    'receipt': dict(ink=(55, 55, 62), blend='multiply', font='led', tilt=0, opacity=0.9),               # thermal till roll
+    'news': dict(ink=(18, 18, 20), blend='multiply', font='oswald', tilt=0, opacity=0.9, wght=700),     # a broadsheet headline
+    'fog': dict(ink=(120, 128, 136), blend='multiply', font='marker', tilt=2.0, opacity=0.8, blur=1.6),  # a finger through condensation
 }
 SCALE = 3  # text canvas supersampling
 
@@ -114,7 +121,18 @@ def render(nn, cfg, src, dst, static=False):
         Wc, Hc = a.shape[1], a.shape[0]
         src_pts = np.float32([[0, 0], [Wc, 0], [Wc, Hc], [0, Hc]])
         Hsign = cv2.getPerspectiveTransform(src_pts, quad)
-        Hs = [np.eye(3)] * len(frames) if (static or sign.get('static')) else track(frames, sign['quad'])
+        keys = sign.get('keys')  # [[t, quad], ...]: hand-set corners, linearly interpolated (for surfaces the tracker loses)
+        if keys:
+            kt = [k[0] for k in keys]; kq = [np.float32(k[1]) for k in keys]
+            def quad_at(t):
+                if t <= kt[0]: return kq[0]
+                for j in range(len(kt) - 1):
+                    if t <= kt[j + 1]:
+                        u = (t - kt[j]) / (kt[j + 1] - kt[j]); return kq[j] * (1 - u) + kq[j + 1] * u
+                return kq[-1]
+            Hs = [cv2.getPerspectiveTransform(src_pts, quad_at(i / 24.0)) @ np.linalg.inv(Hsign) for i in range(len(frames))]
+        else:
+            Hs = [np.eye(3)] * len(frames) if (static or sign.get('static')) else track(frames, sign['quad'])
         t0, t1 = sign.get('from', 0), sign.get('to', 99)
         for i, f in enumerate(out):
             t = i / 24.0
@@ -137,7 +155,7 @@ def render(nn, cfg, src, dst, static=False):
                         xcut = int(cols[0] + lp * (cols[-1] - cols[0] + 1))
                         aa[starts[li]:ends[li] + 1, :xcut] = a[starts[li]:ends[li] + 1, :xcut]
             al = cv2.warpPerspective(aa, M, (1280, 720), flags=cv2.INTER_AREA)
-            al = cv2.GaussianBlur(al, (0, 0), 0.6) * st['opacity'] * fade
+            al = cv2.GaussianBlur(al, (0, 0), st.get('blur', 0.6)) * st['opacity'] * fade
             al3 = al[..., None]
             ink = np.array(st['ink'][::-1], np.float32)
             if st['blend'] == 'multiply':
@@ -160,8 +178,9 @@ def render(nn, cfg, src, dst, static=False):
 
 
 if __name__ == '__main__':
-    cfgs = json.load(open(S + '/signs.json'))
+    cfgs = json.load(open(CFG))
     for nn in sys.argv[1:]:
         c = cfgs[nn]
-        render(nn, c, c.get('src', f'{S}/takes/{nn}.mp4'), f"{S}/text/{c.get('out', nn)}.mp4")
+        src = c.get('src', f'takes/{nn}.mp4'); src = src if src.startswith('/') else f'{S}/{src}'
+        render(nn, c, src, f"{S}/text/{c.get('out', nn)}.mp4")
         print(nn, 'done', flush=True)

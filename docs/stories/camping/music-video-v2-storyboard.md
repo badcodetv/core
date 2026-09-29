@@ -118,6 +118,8 @@ no lip sync, and no dialogue in Flow video.
 
 ### ▶ Resume here (updated 2026-09-28, evening): the first cut is BUILT
 
+> 🔑 **2026-09-29: re-cut to a new story.** Read [`music-video-v2-recut.md`](./music-video-v2-recut.md) first. It sets the new order, the 11 on-screen lines and the gritty-only rule, and the new song is 3a433539.
+
 - ✅ **The stills are done** (s1–s28, s22 cut). The paste-ready prompts are in
   [`music-video-v2-stills-prompts.md`](./music-video-v2-stills-prompts.md).
 - ✅ **27 videos made** on Omni 1.1 Flash · Frames · 720p · 8s · x1. The prompts, a verdict per clip and the Premiere

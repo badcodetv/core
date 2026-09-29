@@ -1646,3 +1646,22 @@ Verified by frame: `alignment: 0` on the **outgoing** clip's `end` put the whole
 A frame 0.33s into an Opacity 0→100 fade exported with **full-brightness RGB and alpha 87**. On V1 over nothing that plays as a dark frame; a viewer or a stats script that drops alpha shows it at full brightness. **Measure alpha before concluding an opacity keyframe is broken** — same root as the white-eyelid note above.
 
 ⚠️ **Addendum, same day:** one eval running three param-only transactions of 20 clips each (~120 actions apiece) committed the first two, then failed while building the third, with the same misleading *"No clip at v0:57"*. **Nothing in that batch was half-applied.** Re-running the rest as two separate evals of 10 and 9 clips worked. So keep it to **one write transaction per eval** when the batches are large.
+
+## 2026-09-29: learned building the Camping re-cut (62 clips in one eval)
+
+- 🔑 **The fast way to lay down a cut with exact in-points: set the SOURCE in/out on the project item, overwrite,
+  clear.** Use `ClipProjectItem.createSetInOutPointsAction(in, out)`, then
+  `SequenceEditor.createOverwriteItemAction(item, start, vTrack, aTrack)`, then `createClearInOutPointsAction()`.
+  Each goes in its own transaction. The placed clip carries exactly that range, with no insert-trim-move dance.
+  62 clips went down in one `premiere_eval`.
+- **Durations snap to whole frames**, so butted clips leave one-frame (0.0417 s) gaps. Close them afterwards with
+  `trackItem.createSetEndAction(nextStart)`.
+- 🔴 **`Exporter.exportSequenceFrame(seq, time, name, dir, w, h)` appends the extension itself.** Given
+  `x.png` it writes `x.png.png`, and given `x` it throws `File Format is not supported`. It also returns `true`
+  when `dir` does not exist and writes nothing. This is why `premiere_export_frame` timed out with EXPORT_FAILED:
+  it polls for the single-extension path. Create the dir, pass `name.png`, and read `name.png.png`.
+- **Motion keyframe `time` is in media (source) time, not timeline time.** Give the clip's in-point as the
+  first keyframe.
+- **Relink a clip without losing cuts:** `await clipProjectItem.changeMediaFilePath(winPath, false)` returns `true`
+  and takes effect at once. It is **not** an Action: there is no `createChangeMediaFilePathAction`. Wrapping it in
+  a transaction silently does nothing. Check first with `canChangeMediaPath()`.

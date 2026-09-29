@@ -2242,3 +2242,101 @@ hand flex and the foreground coat breathing. It ended with the audio line.
 In Flow, the settings popover now shows **Frames | Ingredients** as a pair of toggles under
 **Image | Video**, plus **360p | 720p**, 4/6/8/10s and x1–x4. The credit line read *24 credits* for
 8s x2 at 720p.
+
+## Web pass — 2026-09-29: Frames vs Ingredients, holding a still world `[vendor]` `[community]` `[inferred]`
+
+Run for the camping music-video v2 recut: accepted photoreal stills per shot, recurring
+characters, 8s clips on Omni 1.1 Flash, camera locked (post moves it, per
+[`hybrid-method.md`](../video-fx/hybrid-method.md)). **New or contradicting items only. All
+untested by us.** Sources are Aug–Sep 2026 unless stated.
+
+### ✅ Still agrees with this file — nothing to change
+
+- **First frame = composition; references = consistency without a fixed opening state.** Every
+  2026 guide restates it (magiccreator, 2026-09-03: *"Upload a clean opening image when the exact
+  subject or arrangement matters… the model animates motion rather than redescribing details"*).
+  Our [tab rule](#-the-tab-rule--amended-2026-08-18-ingredients-holds-identity-frames-holds-staging)
+  stands. `[community]`
+- **One primary action plus one smaller one**, never two equals, never action *and* a camera move.
+  creatide (2026-08-28): *"one primary subject action plus light secondary micro-motion, or one
+  restrained camera move"* — not both. Matches our two-beat 8s default and the locked camera. `[community]`
+- **Omni is strongest on environment and weakest on articulation.** *"Backgrounds, environments,
+  and static or slow-moving elements tend to look convincing, while articulated characters doing
+  complex physical motion (… detailed hand or facial work) are where models still fall apart"*
+  (MindStudio, 2026-08-29). The vendor model card still names complex motion and accurate text as
+  open challenges. `[community]` `[vendor]`
+- **Floaty/slow motion is the reported Omni tell** (*"motion can look floaty compared with stronger
+  cinematic competitors"*). Give the action its real speed, as the eighth and ninth passes say. `[community]`
+- **Name the force and the consequence in the same clause** (prompt-architects, 2026-09-17: a splash
+  that *"appears fully formed with no build-up and no aftermath"*; cloth that *"hangs rigid because
+  the prompt never named a force acting on it"*). Same as the eleventh/fifteenth passes. And its
+  honest caveat: *"Prompting narrows how often you see the failure. It does not remove the
+  underlying gap."* `[community]`
+- **Single continuous shot / no scene cuts** is in the vendor docs, and already in this file. `[vendor]`
+
+### 🆕 New
+
+- **Ingredients is weakened by near-duplicate references and competing faces.** *"Near-duplicate
+  images, incompatible art styles, or several faces competing for one character can weaken the
+  result"* (magiccreator). ⚠️ `[inferred]` That is exactly the Ingredients recipe in our
+  [working practice](#frames-lost-the-face-ingredients-held-both-n1-each-way) — the accepted
+  still **plus** the same person's Character is two near-duplicate faces for one slot. Nobody has
+  measured whether it hurts on Omni; it is the first thing to vary if an Ingredients take drifts.
+- **A master still at peak saturation/contrast leaves the engine no headroom** for light that
+  changes during motion (neon flicker, a passing headlight), and bloom blows out. The counter is a
+  *little* atmosphere (haze) in the plate and a described reflective ground. `[community]`
+  single source (Hailuo, neon-rain guide), not Omni-specific. ⚠️ Relevant to our near-black
+  register only for shots where a light changes.
+- **In a public 19-model liquid-spill test (2026-09-18), Omni Flash was not in the top four**
+  (Veo 3.1, Veo 3.1 Lite, Seedance 2.0, Wan 3.0). No commentary on Omni's result was published,
+  so this says nothing about *how* it failed. `[community]` ⚠️ For a shot whose whole point is
+  water (a sprinkler), [the fluids section](#-fluids-fail-in-two-named-ways--and-the-design-fix-is-to-put-the-hard-half-outside-the-clip-academic--community-2026-09-12)
+  still rules; Veo 3.1 with a start frame is the fallback worth one try if Omni's spray comes
+  back as a viscous mass. `[inferred]`
+- **Omni 1.1 lip-sync degrades after 6–7s** in single-person shots (MindStudio). Irrelevant to us
+  (no dialogue, ever) except as corroboration that **the back half of an 8s clip is where the
+  face goes** — check it hardest, as the 2026-09-15 settings ruling already says. `[community]`
+- **No source found, anywhere,** on: a person holding a flat card/sign still in i2v; fogged
+  windscreen or condensation in video; a steady flat sign surviving 8s on Omni. All ours to
+  observe. What the field has on text is unchanged: text holds best **flat, face-on, still camera**
+  (tenth pass), and *"text rarely survives motion intact"*. `[community]`
+
+### ⚠️ Contradicts us — not adopted
+
+- 🚫 **atlascloud (2026-09-04) says, for first-frame i2v, to add a preservation contract** —
+  *"preserve exact facial structure and skin texture"*, *"maintain static background geometry"*,
+  and to *"lock static regions explicitly"* — plus a 5-part formula with timecoded beats and
+  *"smooth, locked tripod shot"*. This is the fal dissent from the ninth pass again. Our
+  motion-only-on-Frames rule and the 2f-5 *tripod-drew-a-tripod* observation outrank it.
+  **Narrow exception worth keeping:** one sentence naming what is *allowed* to move
+  ("movement only from the rain and his breathing") is the thirteenth pass's lock and is not a
+  preservation list. `[community]` vs `[observed]`
+- 🚫 **creatide recommends negative constraints** (*"no rubbery stretch", "no floaty hover"*). The
+  API documents that negative prompts are not supported, and our [negation rule](#-negatives-do-not-work-and-they-actively-backfire)
+  stands. Write the positive: *"at real speed, feet planted, weight on the heels."*
+- ⚠️ **The Gemini API page says *"be extremely detailed in your descriptions of characters and
+  environments"***, while the same page warns *"overly descriptive prompts can lead to unintended
+  changes"* (eleventh pass). `[vendor]` Read the first as text-to-video advice; on Frames the
+  plate is the description.
+- ⚠️ **Several consumer guides describe Frames as start-*and*-end interpolation and Ingredients as
+  "the" consistency route.** True as far as it goes; they are not testing a single accepted plate
+  where the set must survive, which is our case. Do not re-route on their say-so.
+
+### ⬜ Still unknown (checked, nothing published)
+
+- Whether Flow's Frames tab now accepts a Character alongside a start frame. The Flow help page
+  still documents them separately, and no changelog or guide mentions combining them in the UI
+  (the changelog page needs a login). The API has done both since 2026-09-08.
+
+### Sources for this section (2026-09-29)
+
+- [Gemini API — Omni Flash](https://ai.google.dev/gemini-api/docs/omni) `[vendor]` — single-scene wording; "extremely detailed"; no negative prompts; video refs ≤3×3s
+- [Create videos in Google Flow](https://support.google.com/flow/answer/16353334?hl=en) `[vendor]` — Frames vs Ingredients as separate features; voice refs Ingredients-only; no combine statement
+- [Gemini Omni 1.1 Flash guide — Magic Creator, fact-checked 2026-09-03](https://magiccreator.ai/posts/gemini-omni-1-1-flash-guide) `[community]` — first frame vs references; near-duplicate/competing-face warning; one main action plus one supporting
+- [Omni 1.1 image-to-video — Atlas Cloud, 2026-09-04](https://www.atlascloud.ai/blog/tips/gemini-omni-flash-1.1-image-to-video) `[community]` — the preservation-contract dissent
+- [Omni 1.1 Flash early glitches — MindStudio, 2026-08-29](https://www.mindstudio.ai/blog/gemini-omni-1-1-flash-video-model) `[community]` — environment strong, articulation weak; lip-sync falloff 6–7s
+- [Why AI video motion looks unnatural — Creatide, 2026-08-28](https://creatide.ai/blog/why-ai-video-motion-looks-unnatural-and-how-to-fix-it) `[community]` — five named motion failures; action *or* camera move
+- [Physics failures in AI video — Prompt Architects, 2026-09-17](https://prompt-architects.com/blog/642-physics-failures-in-ai-video-and-how-to-prompt-around-them) `[community]` — force + consequence in one clause; fluids, cloth, footfalls
+- [AI video physics compared: 19 models — Voyager, 2026-09-18](https://voyageragent.ai/resources/models/prompts/physics) `[community]` — Omni Flash tested, not top four
+- [Neon rain colour saturation guide — Hailuo](https://hailuoai.video/pages/knowledge/neon-rain-color-saturation-ai-video-guide) `[community]` — master-still headroom (undated)
+- [Omni 1.1 prompt guide — PromptZone, 2026-09-17](https://www.promptzone.com/sofia_tahir/gemini-omni-11-flash-prompt-guide-12-video-examples-n22) `[community]` — "keep the camera fixed"; nothing new beyond it
