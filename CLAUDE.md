@@ -41,6 +41,7 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
 | Path | What | Start here if… |
 | --- | --- | --- |
 | `docs/` | Vision, voice, story bible, method — sections indexed in [`docs/README.md`](./docs/README.md) | …you need context |
+| `docs/brand/` | 🔴 **THE LOGO** — "The Look" (a ring with an off-centre red dot; the name `badcode` in round lowercase with a solid red o), ruled by Kai 2026-09-29. **Every logo file is in [`docs/brand/logo/`](./docs/brand/logo/)**; the settings, rules and file list are in [`docs/brand/README.md`](./docs/brand/README.md); regenerate with `node scripts/brand/build-logo.mjs`, never hand-edit an SVG. The old curly-brace logo is archived in `docs/brand/archive/` | …you need the logo, a favicon or a profile picture, or you're changing the logo |
 | `docs/stories/` | Committed stories — one canon folder per story (`stories/<story>/`: concept, characters, beats, songs) — source of truth | …we've committed to making it, or you're producing a story's media |
 | `docs/ideas/` | The idea inbox — raw ideas (minimal prose) before they become stories | …you have a new idea to park, or want to develop one |
 | `docs/marketing/` | Marketing & release plans — reaching people, not making the thing | …it's a channel/campaign/launch plan |

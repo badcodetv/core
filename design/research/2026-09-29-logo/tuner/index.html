@@ -1,0 +1,271 @@
+<title>BadCode Logo Bench</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a bench. Controls pinned left like a mixing desk; the mark on a big black plate; proofs below in a contact-sheet grid. Single dark world by choice. */
+:root {
+  --ground: #0d0f11;      /* the bench */
+  --plate: #050607;       /* the brand's near-black */
+  --panel: #15181c;
+  --line: #262b31;
+  --ink: #e9eef1;         /* UI text */
+  --mute: #8a939b;
+  --focus: #f2c14e;
+  --ui: "Archivo Narrow", "Liberation Sans Narrow", "Arial Narrow", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "DejaVu Sans Mono", monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box }
+body { background: var(--ground); color: var(--ink); font-family: var(--ui); font-size: 15px; margin: 0; padding-inline: 16px; padding-block: 16px 48px }
+.wrap { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 20px; align-items: start }
+@media (max-width: 860px) { .wrap { grid-template-columns: minmax(0, 1fr) } }
+header { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: baseline; border-bottom: 1px solid var(--line); padding-bottom: 12px }
+h1 { font-size: 26px; letter-spacing: .04em; text-transform: uppercase; margin: 0; font-weight: 700 }
+header p { margin: 0; color: var(--mute); font-family: var(--mono); font-size: 12px; min-width: 0 }
+
+.desk { position: sticky; top: env(safe-area-inset-top, 0px); background: var(--panel); border: 1px solid var(--line); padding: 16px; display: grid; gap: 14px; max-height: calc(100vh - 32px); overflow-y: auto }
+@media (max-width: 860px) { .desk { position: static; max-height: none } }
+.group { display: grid; gap: 10px }
+.group h2 { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); margin: 0; font-weight: 500 }
+.ctl { display: grid; gap: 4px }
+.ctl .top { display: flex; justify-content: space-between; gap: 8px; font-size: 14px }
+.ctl output { font-family: var(--mono); font-size: 12px; color: var(--mute); font-variant-numeric: tabular-nums }
+input[type=range] { width: 100%; accent-color: var(--ink) }
+.hint { font-size: 12px; color: var(--mute); margin: 0; line-height: 1.35 }
+.swatches { display: flex; flex-wrap: wrap; gap: 8px }
+.sw { width: 34px; height: 34px; border-radius: 50%; border: 2px solid transparent; cursor: pointer; padding: 0 }
+.sw[aria-pressed=true] { border-color: var(--ink) }
+.row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center }
+button, .btn { font: 500 14px var(--ui); letter-spacing: .04em; background: var(--ink); color: var(--plate); border: 0; padding: 9px 14px; cursor: pointer }
+button.ghost { background: transparent; color: var(--ink); border: 1px solid var(--line) }
+button:focus-visible, input:focus-visible, textarea:focus-visible, .sw:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px }
+textarea { width: 100%; background: var(--plate); color: var(--ink); border: 1px solid var(--line); font: 13px var(--mono); padding: 8px; resize: vertical; min-height: 54px }
+.status { font-family: var(--mono); font-size: 12px; color: var(--mute); min-height: 1.2em; margin: 0 }
+.saves { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none }
+.saves li { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; gap: 8px; align-items: center; font-size: 13px; border-top: 1px solid var(--line); padding-top: 6px }
+.saves .n { color: var(--mute); font-family: var(--mono); font-size: 11px; overflow-wrap: anywhere }
+
+main { display: grid; gap: 20px; min-width: 0 }
+.hero { background: var(--plate); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); align-items: center; gap: 20px; padding: 28px; border: 1px solid var(--line) }
+@media (max-width: 700px) { .hero { grid-template-columns: minmax(0, 1fr) } }
+.hero svg { width: 100%; height: auto; display: block }
+.sheet { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px }
+figure { margin: 0; background: var(--panel); border: 1px solid var(--line); display: grid; grid-template-rows: auto auto }
+figure .art { aspect-ratio: 4 / 3; display: grid; place-items: center; overflow: hidden; max-width: 100% }
+figure .art svg { width: 100%; height: 100%; display: block }
+figcaption { padding: 8px 10px; font-size: 13px; display: grid; gap: 2px }
+figcaption b { font-weight: 700; letter-spacing: .06em; text-transform: uppercase; font-size: 12px }
+figcaption span { color: var(--mute); font-size: 12px }
+.sizes { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; padding: 10px }
+.sizes .cell { display: grid; justify-items: center; gap: 4px; font: 10px var(--mono); color: inherit }
+.tab { display: flex; align-items: center; gap: 8px; background: #2a2e33; color: #dfe3e6; font: 13px system-ui, sans-serif; padding: 6px 12px; border-radius: 8px 8px 0 0; width: 220px; max-width: 100% }
+.tab.light { background: #f1f3f4; color: #202124 }
+.play { position: absolute; right: 10px; bottom: 10px }
+.art.rel { position: relative }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>BadCode logo bench</h1>
+    <p>The Look (ring + glancing red dot) · round lowercase, the o is a full red dot · opens on your save (18:14) with the c pulled toward the o · tune it, then press Save</p>
+  </header>
+
+  <aside class="desk" aria-label="Controls">
+    <div class="group">
+      <h2>The ring</h2>
+      <div class="ctl"><div class="top"><label for="ring">Ring thickness</label><output id="ringO"></output></div>
+        <input id="ring" type="range" min="0.015" max="0.26" step="0.005" value="0.04"></div>
+    </div>
+    <div class="group">
+      <h2>The dot</h2>
+      <div class="ctl"><div class="top"><label for="dot">Dot size</label><output id="dotO"></output></div>
+        <input id="dot" type="range" min="0.12" max="0.45" step="0.005" value="0.245"></div>
+      <div class="ctl"><div class="top"><label for="push">How far off centre</label><output id="pushO"></output></div>
+        <input id="push" type="range" min="0.35" max="1" step="0.01" value="0.51"></div>
+      <div class="ctl"><div class="top"><label for="angle">Which way it looks</label><output id="angleO"></output></div>
+        <input id="angle" type="range" min="0" max="359" step="1" value="55"></div>
+      <p class="hint">Never dead centre: a centred dot is a record button. Off-centre, it's glancing at you.</p>
+    </div>
+    <div class="group">
+      <h2>The red</h2>
+      <div class="swatches" id="reds" role="group" aria-label="Red"></div>
+      <p class="hint" id="redNote"></p>
+    </div>
+    <div class="group">
+      <h2>The name</h2>
+      <div class="ctl"><div class="top"><label for="lw">Letter weight</label><output id="lwO"></output></div>
+        <input id="lw" type="range" min="0.2" max="0.6" step="0.01" value="0.30"></div>
+      <div class="ctl"><div class="top"><label for="tr">Letter spacing</label><output id="trO"></output></div>
+        <input id="tr" type="range" min="0.1" max="0.8" step="0.01" value="0.26"></div>
+      <div class="ctl"><div class="top"><label for="ck">Pull the c toward the red o</label><output id="ckO"></output></div>
+        <input id="ck" type="range" min="0" max="0.9" step="0.01" value="0.35"></div>
+      <p class="hint">The c is open on its right side, so it always looks further from the o than it is. This closes that gap only.</p>
+    </div>
+    <div class="group">
+      <h2>Keep this one</h2>
+      <label for="note" class="hint">A note (optional) — what you like about it</label>
+      <textarea id="note" placeholder="e.g. the dot feels like it's sizing me up"></textarea>
+      <div class="row"><button id="save" type="button">Save this version</button><button id="reset" class="ghost" type="button">Back to start</button></div>
+      <p class="status" id="status" role="status"></p>
+      <ul class="saves" id="saves"></ul>
+    </div>
+  </aside>
+
+  <main>
+    <section class="hero" aria-label="The mark, large">
+      <div id="heroIcon"></div>
+      <div id="heroName"></div>
+    </section>
+    <div class="sheet" id="sheet"></div>
+  </main>
+</div>
+
+<script>
+const PLATE = '#050607', INK = '#eef3f6', DARK = '#0a0a0a', WHITE = '#ffffff'
+const REDS = [
+  ['#e6291c', 'Signal red', 'The brief\'s red. 4.5:1 on black; dimmer for red-blind viewers.'],
+  ['#ff4633', 'Brighter', 'Easier for red-blind viewers (4.2:1 instead of 3.1:1).'],
+  ['#d7261b', 'Deeper', 'A touch darker and heavier.'],
+  ['#cc2b37', 'Old logo red', 'The red from the current curly-bracket logo.'],
+]
+// Starts on Kai's save of 2026-09-29 18:14 (ring 0.04, dot 0.245, push 0.51, 55°, old-logo red, lw 0.30, tr 0.26), plus ck: the c pulled toward the o
+const S = { ring: 0.04, dot: 0.245, push: 0.51, angle: 55, red: '#cc2b37', lw: 0.30, tr: 0.26, ck: 0.35 }
+const START = { ...S }
+const $ = id => document.getElementById(id)
+
+// ---------- drawing
+function dotPos(cx, cy, R, w, o) {
+  const pr = o.dot * R, room = Math.max(0, R - w / 2 - pr - R * 0.02), d = o.push * room, a = o.angle * Math.PI / 180
+  return { x: cx + d * Math.sin(a), y: cy - d * Math.cos(a), pr }
+}
+function icon(cx, cy, R, o, ink = INK, minW = 0, minDot = 0) {
+  const w = Math.max(o.ring * R, minW), p = dotPos(cx, cy, R, w, o)
+  return `<circle cx="${cx}" cy="${cy}" r="${R - w / 2}" fill="none" stroke="${ink}" stroke-width="${w}"/>` +
+    `<circle cx="${p.x}" cy="${p.y}" r="${Math.max(p.pr, minDot)}" fill="${o.red}"/>`
+}
+// The name, drawn from circles and stems (no font). r = letter radius.
+function word(x0, base, r, o, ink = INK) {
+  const w = r * o.lw, step = 2 * r + w + r * o.tr, cy = base - r, top = base - 2 * r * 1.55, L = [], k = (o.ck ?? 0) * r
+  const ring = cx => `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${ink}" stroke-width="${w}"/>`
+  const stem = (x, y1, y2) => `<line x1="${x}" y1="${y1}" x2="${x}" y2="${y2}" stroke="${ink}" stroke-width="${w}"/>`
+  const arc = (cx, a1, a2) => { const p = a => [cx + r * Math.cos(a * Math.PI / 180), cy + r * Math.sin(a * Math.PI / 180)]; const [x1, y1] = p(a1), [x2, y2] = p(a2); return `<path d="M${x1} ${y1} A${r} ${r} 0 1 1 ${x2} ${y2}" fill="none" stroke="${ink}" stroke-width="${w}"/>` }
+  'badcode'.split('').forEach((ch, i) => {
+    const cx = x0 + r + w / 2 + i * step - (i >= 4 ? k : 0)
+    if (ch === 'b') L.push(ring(cx), stem(cx - r, top, base + w / 2))
+    if (ch === 'a') L.push(ring(cx), stem(cx + r, cy - r - w / 2, base + w / 2))
+    if (ch === 'd') L.push(ring(cx), stem(cx + r, top, base + w / 2))
+    if (ch === 'c') L.push(arc(cx, 42, -42))
+    if (ch === 'e') L.push(arc(cx, 38, 0), `<line x1="${cx - r}" y1="${cy}" x2="${cx + r + w / 2}" y2="${cy}" stroke="${ink}" stroke-width="${w}"/>`)
+    if (ch === 'o') L.push(`<circle cx="${cx}" cy="${cy}" r="${r + w / 2}" fill="${o.red}"/>`)
+  })
+  return { svg: L.join(''), width: 7 * step - r * o.tr - k, height: base + w / 2 - top, top }
+}
+const wordCentred = (cx, base, r, o, ink) => { const m = word(0, base, r, o, ink); return `<g transform="translate(${cx - m.width / 2} 0)">${m.svg}</g>` }
+const svg = (w, h, body, bg) => `<svg viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg" role="img">${bg ? `<rect width="${w}" height="${h}" fill="${bg}"/>` : ''}${body}</svg>`
+// badge: icon in a circle crop at pixel size z, with the small-size floors (line >= 1.5px, dot >= 14%)
+function badge(z, o, bg, ink) {
+  const R = z * 0.4
+  return `<svg width="${z}" height="${z}" viewBox="0 0 ${z} ${z}"><circle cx="${z / 2}" cy="${z / 2}" r="${z / 2}" fill="${bg}"/>${icon(z / 2, z / 2, R, o, ink, 1.5, z * 0.07)}</svg>`
+}
+
+// ---------- the proofs
+const PROOFS = [
+  ['The name on white', 'Dark letters, same red.', o => svg(400, 300, wordCentred(200, 172, 22, o, DARK), WHITE)],
+  ['Side by side', 'Icon + name, the everyday lock-up.', o => { const r = 15, m = word(0, 0, r, o), R = 30, total = 2 * R + 26 + m.width, x = (400 - total) / 2
+      return svg(400, 300, icon(x + R, 150, R, o) + `<g transform="translate(${x + 2 * R + 26} ${150 + r})">${m.svg}</g>`, PLATE) }],
+  ['Stacked', 'Icon over name: sleeves, posters.', o => svg(400, 300, icon(200, 118, 82, o) + wordCentred(200, 268, 11, o), PLATE)],
+  ['Profile pictures, dark', '128 → 16 px, real pixel sizes.', o => `<div class="sizes" style="background:#0f0f0f;color:#8a939b">${[128, 64, 40, 28, 16].map(z => `<div class="cell">${badge(z, o, '#000', INK)}${z}</div>`).join('')}</div>`],
+  ['Profile pictures, light', 'Same, in a light app.', o => `<div class="sizes" style="background:#fff;color:#5f6368">${[128, 64, 40, 28, 16].map(z => `<div class="cell">${badge(z, o, '#000', INK)}${z}</div>`).join('')}</div>`],
+  ['Browser tab', 'The 16 px favicon, where it lives.', o => `<div style="display:grid;gap:10px;justify-items:center;padding:16px"><div class="tab">${badge(16, o, '#000', INK)}<span>BadCode — Transmissions</span></div><div class="tab light">${badge(16, o, '#000', INK)}<span>BadCode — Transmissions</span></div></div>`],
+  ['The name shrinking', 'The red dot is the last thing to go.', o => svg(400, 300, [16, 10, 6.5, 4, 2.5].map((r, i) => wordCentred(200, 52 + i * 56, r, o)).join(''), PLATE)],
+  ['App icon', 'Phone home screen.', o => svg(400, 300, `<rect x="130" y="80" width="140" height="140" rx="32" fill="#000" stroke="#2a3138"/>` + icon(200, 150, 48, o), '#1b1f24')],
+  ['Sticker', 'White die-cut on a laptop lid.', o => svg(400, 300, `<rect width="400" height="300" fill="#202428"/><circle cx="200" cy="150" r="96" fill="#f4f4f1"/>` + icon(200, 150, 70, o, DARK))],
+  ['Record sleeve', 'Big icon, small name, catalogue number.', o => svg(400, 300, `<rect x="90" y="20" width="260" height="260" fill="#000" stroke="#2a3138"/>` + icon(220, 132, 80, o) + `<g transform="translate(108 262)">${word(0, 0, 5.5, o).svg}</g><text x="334" y="262" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10" fill="#8a939b" letter-spacing="1.5">BC-004</text>`, '#15181b')],
+  ['Drawn badly', 'Marker-pen test: a circle and a blob.', o => { const p = dotPos(200, 150, 100, o.ring * 100, o), pts = []
+      for (let i = 0; i <= 64; i++) { const a = (-80 + 376 * i / 64) * Math.PI / 180, rr = 100 + 5 * Math.sin(a * 3 + 1.7) + 3 * Math.sin(a * 7) + i / 64 * 6; pts.push(`${(200 + rr * Math.cos(a)).toFixed(1)} ${(150 + rr * Math.sin(a)).toFixed(1)}`) }
+      const b = []; for (let i = 0; i < 24; i++) { const a = i / 24 * Math.PI * 2, rr = p.pr * (1 + .12 * Math.sin(a * 3 + 2)); b.push(`${(p.x + rr * Math.cos(a)).toFixed(1)} ${(p.y + rr * Math.sin(a)).toFixed(1)}`) }
+      return svg(400, 300, `<path d="M${pts.join(' L')}" fill="none" stroke="${INK}" stroke-width="${Math.max(o.ring * 100, 6)}" stroke-linecap="round" stroke-linejoin="round"/><path d="M${b.join(' L')}Z" fill="${o.red}"/>`, PLATE) }],
+  ['The ident · 2 seconds', 'Ring draws · dot lights dead centre on the drop · then it looks away. Press play.', o => svg(400, 300, `<g id="identG"></g>`, '#000'), true],
+]
+
+function render() {
+  const o = S
+  $('heroIcon').innerHTML = svg(400, 400, icon(200, 200, 180, o), PLATE)
+  $('heroName').innerHTML = svg(560, 200, wordCentred(280, 130, 30, o), PLATE)
+  const sheet = $('sheet')
+  if (!sheet.children.length) sheet.innerHTML = PROOFS.map(([t, n, , anim], i) =>
+    `<figure><div class="art${anim ? ' rel' : ''}" id="p${i}"></div><figcaption><b>${t}</b><span>${n}</span></figcaption></figure>`).join('')
+  PROOFS.forEach(([, , f, anim], i) => { if (!anim) $('p' + i).innerHTML = f(o) })
+  const ia = $('p' + (PROOFS.length - 1))
+  if (!ia.querySelector('svg')) { ia.innerHTML = PROOFS[PROOFS.length - 1][2](o) + `<button class="play ghost" id="play" type="button">Play</button>`; $('play').onclick = playIdent }
+  if (!identRunning) drawIdent(1)
+  // readouts
+  $('ringO').textContent = Math.round(o.ring * 1000) / 10 + '% of radius' + (Math.abs(o.ring - 0.131) < 0.003 ? ' · thicker 3' : Math.abs(o.ring - 0.04) < 0.003 ? ' · your save' : '')
+  $('dotO').textContent = Math.round(o.dot * 100) + '% of radius'
+  $('pushO').textContent = o.push >= 0.99 ? 'touching the rim' : Math.round(o.push * 100) + '%'
+  $('angleO').textContent = clock(o.angle)
+  $('lwO').textContent = Math.round(o.lw * 100) + '%'
+  $('trO').textContent = Math.round(o.tr * 100) + '%'
+  $('ckO').textContent = o.ck ? '−' + Math.round(o.ck * 100) + '%' : 'none'
+  document.querySelectorAll('.sw').forEach(b => b.setAttribute('aria-pressed', b.dataset.c === o.red))
+  const r = REDS.find(x => x[0] === o.red); $('redNote').textContent = r ? `${r[1]} ${r[0]} — ${r[2]}` : o.red
+}
+const clock = a => { const h = Math.round(a / 30) % 12 || 12; return `${a}° · toward ${h} o'clock` }
+
+// ---------- ident
+let identRunning = false
+function drawIdent(t) {
+  const g = document.getElementById('identG'); if (!g) return
+  const o = S, R = 100, cx = 200, cy = 150, w = o.ring * R, C = 2 * Math.PI * (R - w / 2)
+  const ringP = Math.min(1, t / 0.35), lit = t >= 0.5, look = t <= 0.72 ? 0 : Math.min(1, (t - 0.72) / 0.12)
+  const ease = look < .5 ? 2 * look * look : 1 - Math.pow(-2 * look + 2, 2) / 2
+  const p = dotPos(cx, cy, R, w, o), x = cx + (p.x - cx) * ease, y = cy + (p.y - cy) * ease
+  g.innerHTML = `<circle cx="${cx}" cy="${cy}" r="${R - w / 2}" fill="none" stroke="${INK}" stroke-width="${w}" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - ringP)}" transform="rotate(-90 ${cx} ${cy})"/>` +
+    (lit ? `<circle cx="${x}" cy="${y}" r="${p.pr}" fill="${o.red}"/>` : '')
+}
+function playIdent() {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) { drawIdent(1); return }
+  identRunning = true; const t0 = performance.now()
+  const step = now => { const t = Math.min(1, (now - t0) / 2000); drawIdent(t); if (t < 1) requestAnimationFrame(step); else identRunning = false }
+  requestAnimationFrame(step)
+}
+
+// ---------- controls
+REDS.forEach(([c, n]) => { const b = document.createElement('button'); b.className = 'sw'; b.type = 'button'; b.dataset.c = c; b.style.background = c; b.setAttribute('aria-label', n + ' ' + c); b.onclick = () => { S.red = c; render() }; $('reds').append(b) })
+for (const k of ['ring', 'dot', 'push', 'angle', 'lw', 'tr', 'ck']) $(k).addEventListener('input', e => { S[k] = +e.target.value; render() })
+const syncInputs = () => { for (const k of ['ring', 'dot', 'push', 'angle', 'lw', 'tr', 'ck']) $(k).value = S[k] }
+$('reset').onclick = () => { Object.assign(S, START); syncInputs(); render() }
+render()
+
+// ---------- saves (shared with Claude through the artifact's database)
+let db = null
+const status = t => { $('status').textContent = t }
+$('save').onclick = async () => {
+  if (!db) { status('Saving isn\'t available in this view. Copy the numbers under each slider instead.'); return }
+  $('save').disabled = true; status('Saving…')
+  try {
+    await db.collection('saves').add({ ...S, note: $('note').value.trim(), savedAt: new Date().toISOString() })
+    status('Saved. Claude can read it now.'); $('note').value = ''
+  } catch (e) { status('Didn\'t save: ' + (e && e.message ? e.message : 'unknown error') + '. Try again.') }
+  $('save').disabled = false
+}
+function listSaves(snap) {
+  const ul = $('saves'); ul.innerHTML = ''
+  snap.docs.forEach((d, i) => {
+    const v = d.data(); if (!v) return
+    const li = document.createElement('li')
+    li.innerHTML = `${badge(34, { ...START, ...v }, '#000', INK)}<div><div></div><div class="n"></div></div>`
+    li.querySelector('div > div').textContent = v.note || 'Saved version ' + (snap.size - i)
+    li.querySelector('.n').textContent = `ring ${Math.round(v.ring * 1000) / 10}% · dot ${Math.round(v.dot * 100)}% · ${clock(v.angle)}`
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'ghost'; b.textContent = 'Load'
+    b.onclick = () => { for (const k of Object.keys(START)) S[k] = v[k] !== undefined ? v[k] : (k === 'ck' ? 0 : START[k]); syncInputs(); render(); status('Loaded.') }
+    li.append(b); ul.append(li)
+  })
+}
+;(async () => {
+  try { db = await window.claude?.use?.('db') } catch { db = null }
+  if (!db) { status('Saving isn\'t available in this view.'); return }
+  db.collection('saves').orderBy('savedAt', 'desc').onSnapshot(listSaves, () => status('Saved versions couldn\'t load.'))
+})()
+</script>
