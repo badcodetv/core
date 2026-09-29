@@ -1,53 +1,70 @@
 # docs/brand — the BadCode logo
 
-**Picked by Kai, 2026-09-13**, after four rounds in a design session (tuning fork → the fork turned
-into a C → the curly brace → tuned by hand). Files are in [`logo/`](./logo/).
+**"The Look." Picked by Kai, 2026-09-29**, after a 16-agent research sweep, a Flow concept-sheet
+round and a tuning session on the logo bench. Files are in [`logo/`](./logo/). It replaces the
+curly-brace logo of 2026-09-13, which Kai found "very obvious and very cliché" — kept in
+[`archive/2026-09-13-brace/`](./archive/2026-09-13-brace/README.md).
 
-![BadCode wordmark](./logo/badcode-wordmark.svg)
+![BadCode lock-up](./logo/badcode-lockup-reversed.svg)
 
 ## What it is
 
-A curly brace `{` standing in for the C of Code. Its left point is the fork where history splits;
-its two ends are the two branches. **Red end on top: the timeline that went wrong. Blue end
-underneath: the one being sent back to fix it.** Turned on its side, it is also the tuning fork
-from GitPush Origin Master, with the handle as the brace's point.
+**The icon:** a ring with one red dot inside it, off centre, glancing up and to the right. Kai: *"it
+looks a bit like a Death Star, it looks like an eyeball."* It is BadCode as a character — not
+friendly, not a mascot: something that has already seen how this ends and is sizing you up.
 
-- Anyone sees a C with two coloured tips — one line, two endings.
-- A coder sees the `{` that opens every block of code.
+**The name:** `badcode` in round lowercase, drawn from circles and straight stems (no font), where
+**the o is a solid red dot** — the same red as the icon's.
+
+## The rules
+
+- **The dot is never dead centre.** Centred, it is a record button. Off centre, it is a glance.
+- **The icon and the name stand apart.** Never put the ring-with-dot inside the word as the o —
+  that is almost exactly Badoo's 2006–17 logo (dating app). In the name the o is always a plain
+  solid dot.
+- **Red is only ever the dot.** One small red thing per mark; never a red field.
+- **Below 48px use the favicon files** — they carry a heavier line floor and a bigger dot, or at
+  16px the dot shrinks to a speck.
 
 ## The settings (the source of truth)
 
-These came out of the round-4 tuner. Everything in `logo/` is generated from them by
-[`scripts/brand/build-logo.mjs`](../../scripts/brand/build-logo.mjs) — change these, re-run, never
-hand-edit an SVG.
+Everything in `logo/` is generated from these by
+[`scripts/brand/build-logo.mjs`](../../scripts/brand/build-logo.mjs) (`node scripts/brand/build-logo.mjs`,
+uses the repo's `sharp`). Change them, re-run, never hand-edit an SVG. They are Kai's bench save of
+2026-09-29 18:30; the bench is [`design/research/2026-09-29-logo/tuner/`](../../design/research/2026-09-29-logo/tuner/index.html)
+(live: https://claude.ai/artifact/4Tf8nXY8RmRokTevDQ7cWe).
 
 | Setting | Value | Meaning |
 | --- | --- | --- |
-| depth | `0.59` | how far the brace reaches right, as a fraction of its height |
-| point | `0.54` | where the spine sits across that depth — high is a sharp brace, low is a soft C |
-| dot | `0.50` | end circle radius as a fraction of line width — 0.5 means the tips are *dipped* in colour, not blobs |
-| red | `#cc2b37` | top end |
-| blue | `#2696d4` | bottom end |
-| type | IBM Plex Mono SemiBold | the site's own face, outlined into the wordmark so it needs no font |
+| ring | `0.17` | ring line thickness, as a fraction of the ring's radius |
+| dot | `0.245` | red dot radius, as a fraction of the ring's radius |
+| push | `0.51` | how far off centre: 0 = centre, 1 = touching the rim |
+| angle | `55°` | which way it looks, clockwise from 12 o'clock (about 2 o'clock) |
+| red | `#cc2b37` | the dot, and the o — carried over from the brace logo |
+| lw | `0.30` | letter line weight, as a fraction of letter radius |
+| tr | `0.26` | letter spacing, as a fraction of letter radius |
+| ck | `0.42` | the c pulled toward the red o — the c's open side makes that gap look bigger than it is |
 
-Ink is pure black on light grounds and pure white on dark. The colours never change with the ground.
+Ink is `#0a0a0a` on light grounds and cold off-white `#eef3f6` on dark; the ground is `#050607`.
+The red never changes with the ground.
 
 ## Files
 
 | File | Use |
 | --- | --- |
-| `badcode-wordmark.svg` / `-reversed.svg` | the name, black / white lettering (+ 2400px PNGs) |
-| `badcode-mark.svg` / `-reversed.svg` | the brace alone |
-| `favicon.svg` | heavier line for small sizes; flips black/white with the browser's theme |
-| `favicon-16/32/48/180.png`, `favicon.ico` | PNG/ICO fallbacks — **black ink on transparent**, so they vanish on a dark tab bar; use the SVG where possible |
-| `avatar-1024.png` / `avatar-reversed-1024.png` | profile pictures, safe for a circle crop |
-
-**Below 32px use the favicon, not the mark** — the mark's line is too thin to survive.
+| `badcode-mark.svg` / `-reversed.svg` | the icon alone, dark ring / light ring, transparent |
+| `badcode-wordmark.svg` / `-reversed.svg` (+ `-2400.png`) | the name alone |
+| `badcode-lockup.svg` / `-reversed.svg` | icon + name side by side — the everyday lock-up |
+| `badcode-stacked.svg` / `-reversed.svg` (+ reversed `-2400.png`) | icon over name — sleeves, posters |
+| `favicon.svg`, `favicon-16/32/48/180.png`, `favicon.ico` | the icon on its own near-black disc, so it reads on light and dark tab bars |
+| `avatar.svg` / `avatar-1024.png` | profile picture on a near-black square, safe for a circle crop |
 
 ## Open
 
-- 🔴 **Red and blue are the UK's two main party colours** (Labour red, Conservative blue). A logo with a
-  "bad" red end and a "good" blue end can read as partisan to the reader in
-  [`the-reader.md`](../marketing/the-reader.md). Raised during the session; Kai chose red and blue
-  anyway and has not ruled on the risk. The site's amber/cyan was offered as the fallback.
-- Not yet applied to the website (`apps/web` still has no favicon or logo).
+- **Jack's say** — the pick is Kai's; Jack (lead creative designer) has not seen it yet.
+- **Checks before it goes public:** a UK IPO trade-mark search for ring-with-dot device marks
+  (classes 9, 41, 42); a look at Big Brother UK's 2001–2025 geometric eyes (the one near-miss the
+  research could not see). Research and the clash checks: [`design/research/2026-09-29-logo/`](../../design/research/2026-09-29-logo/README.md).
+- **Not yet on the website** (`apps/web` still has no favicon or logo).
+- **Red for colour-blind viewers:** `#cc2b37` is darker than the brief's `#e6291c`, so red-blind
+  viewers see it closer to the black ground. Logos are exempt from contrast rules; noted, not ruled.
