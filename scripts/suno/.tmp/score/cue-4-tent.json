@@ -1,0 +1,18 @@
+{
+  "style": "Instrumental bleak British social-realist underscore at 60 BPM: one low solo cello and a distant, slightly detuned upright piano, long pauses between phrases, rain-soaked, grey and lonely. Steady, minimal variation, very sparse, no drums.",
+  "exclude": "vocals, singing, choir, humming, drums, synth, orchestral swell, braams, uplifting, sentimental",
+  "lyrics": "",
+  "title": "camping-score-4-tent-A",
+  "workspace": "camping background music",
+  "model": "v6",
+  "variety": "normal",
+  "maxMode": false,
+  "vocalGender": null,
+  "personalize": false,
+  "styleInfluence": 75,
+  "weirdness": [
+    30,
+    60
+  ],
+  "durationSec": 25
+}

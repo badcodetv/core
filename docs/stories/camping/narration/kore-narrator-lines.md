@@ -7,6 +7,32 @@ status: ⬜ extracted and prepared, never rendered
 
 # The narrator's lines — all nine
 
+## 🆕 Scene 9 — the plea setup · written 2026-09-16, unrendered
+
+Over the `9-mug` shot, before Tarquin's plea ([`tarquin-lines.md`](./tarquin-lines.md)). It's from Jack's
+note: *"tarquin thinks hes pleading his innocence in the presence of god, but actually it is his own
+conscience."* *"Surprise, surprise, he did not experience an ego death"* is already rendered and closes
+the scene. The profile is unchanged, including its own Sample Context.
+
+**→ Speech block**
+
+```
+Tarquin thinks he's pleading his innocence before God. It isn't God. I'd know. It's his conscience. First time they've met.
+```
+
+## 🆕 The parking jab · ✅ rendered 2026-09-17 (Jack: *"that worked"*)
+
+Jack: *"Tarquin parking in the only way he knows how"*, sarcastic and condescending. ⬜ **Probably lands on
+`8a`**, where the X8 straddles two bays (inferred, not confirmed). Profile, Scene and Sample Context are
+unchanged, so it stays the same Nell. The condescension comes from one documented `[sarcastic]` tag, not a
+custom emotion tag (those are weak), and from the ellipsis, which gives her a beat of looking at the car.
+
+**→ Speech block**
+
+```
+[sarcastic] Tarquin… parking in the only way he knows how.
+```
+
 **Extracted from Jack's 2026-09-09 script.** Every `NARRATOR {FLAT}` line, in film order, nothing
 else. Bob's and Tarquin's lines are separate renders on their own voices.
 

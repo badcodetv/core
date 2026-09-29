@@ -1,0 +1,18 @@
+{
+  "style": "Instrumental British indie film underscore at 72 BPM: one fingerpicked acoustic guitar and a soft felt piano, warm, fragile, hopeful and intimate, a family road trip on a grey morning. Steady, minimal variation, close and quiet, no drums.",
+  "exclude": "vocals, singing, humming, whistling, drums, synth, orchestral swell, braams, country",
+  "lyrics": "",
+  "title": "camping-score-2-last-good-day-A",
+  "workspace": "camping background music",
+  "model": "v6",
+  "variety": "normal",
+  "maxMode": false,
+  "vocalGender": null,
+  "personalize": false,
+  "styleInfluence": 75,
+  "weirdness": [
+    30,
+    60
+  ],
+  "durationSec": 35
+}

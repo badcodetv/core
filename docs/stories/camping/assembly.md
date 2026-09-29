@@ -219,3 +219,255 @@ A score bed under the wordless stretches is **an open call for Jack**, not a can
 - 🟡 **Grain at 4 is a starting value.** One `premiere_set_param` per clip to change it.
 - ⬜ **Not saved by the session** — every change is its own `BadCode:` undo entry, so review then
   save, or step back through them.
+
+## Premiere — `camping jack` · the 27 → 28 blink (2026-09-14)
+
+**Project:** `…/Camping Video NEW!/camping jack/camping jack.prproj` · **Sequence:** `0 synced` (1920×1080 @ 24)
+**Built by:** a session over the bridge, following the eyelid recipe in
+[`docs/premiere/api-notes.md`](../../premiere/api-notes.md) (two Linear Wipes, upper lid heavier).
+
+| Clip | Timeline | What it is |
+| --- | --- | --- |
+| `v0:50` `27.mp4` | 214.583 → 217.625 | Dome POV from the bed, so the eyes **close** here |
+| `v0:51` `28.mp4` | 217.625 → 222.125 | Tent POV, so the eyes **open** here |
+
+**Chain on both clips:** `2 AE.ADBE Gaussian Blur 2` · `3 AE.ADBE Linear Wipe` (upper lid: angle 180,
+feather 240) · `4 AE.ADBE Linear Wipe` (lower lid: angle 0, feather 190). Keyframes are all bezier and
+**clip-relative**.
+
+- **27, close with a droop and a flutter.** Upper wipe: 1.617→0, 2.117→45, 2.367→32, 2.917→78.
+  Lower wipe: 0, 18, 12, 42 at the same times. Blur: 1.617→0, 2.917→60.
+- **28, open with a half-blink.** Upper wipe: 0.2→78, 0.55→48, 0.75→62, 1.4→0. Lower wipe: 42, 22, 28, 0
+  at the same times. Blur: 0→60, 1.7→0.
+
+**Looked at:** exported frames at 216.9, 217.3 and 218.15 show soft lids and an off-centre slit. The
+wiped area decodes as transparent (alpha 0), so it plays black on V1.
+
+**Needs a human**
+- ⬜ **Scrub 216–219.5 at speed** and judge the timing. Every number above is a first pass.
+- ⬜ **No exposure dip yet.** The recipe's Lumetri ramp to −2 stops, leading the lids, was left out.
+- ⬜ **The lid edge is straight** (a Linear Wipe limit, not solved).
+- ⬜ **Not undone:** a first Crop-based attempt was added and then removed. Undo history holds both, so
+  don't step back further than the `Linear Wipe` entries.
+- ⬜ **Saved** by the session at the end.
+
+## Premiere — `camping jack` · one grade, camera moves, invisible cuts (2026-09-14)
+
+**Project:** `…/Camping Video NEW!/camping jack/camping jack.prproj` · **Sequence:** `0 synced` (1920×1080 @ 24, 254.33s, 59 clips on V1)
+**Built by:** a session over the bridge, for Jack's three picked jobs. **No clip was moved, trimmed, added or removed.**
+
+### 🔙 How to undo it
+
+| Scope | Do |
+| --- | --- |
+| **Everything** | Close the project, then replace `camping jack.prproj` with `backups/camping jack.pre-grade-moves-cuts.2026-09-14.prproj` (the file as it stood before this session touched it) |
+| **One job, this Premiere session** | Edit ▸ Undo. Every write is a `BadCode:` entry: grade = 3 per batch (`Lumetri on…`, `Noise2 on…`, `values on…`) × 5 batches + 2 test entries on `v0:52`; each keyframe and transition is its own entry |
+| **One job, later** | Grade: remove components `Lumetri Color` + `Noise` from each clip. Moves: clear Motion Scale/Position keyframes on the 7 clips below. Cuts: `premiere_remove_transition` at `end` of `v0:24` `v0:44` `v0:47` `v0:57`; clear Opacity keyframes on `v0:24` |
+
+`backups/camping jack.post-grade-moves-cuts.2026-09-14.prproj` is the saved result.
+
+### 1 · One grade for the whole film
+
+**On all 59 clips**, appended last in the chain (after the blink's wipes on `v0:50`/`v0:51`):
+
+| Effect | Params (by index) |
+| --- | --- |
+| `AE.ADBE Lumetri` | **16** Saturation 88 · **20** Contrast −6 · **21** Highlights −12 · **40** Faded Film 10 |
+| `AE.ADBE Noise2` | **0** Amount 3 (%) · **1** false (monochrome) |
+
+**Why these four:** the mismatch between the clips was the *ends* of the histogram, not the middle — AI clips arrive with inconsistent crushed blacks and clipped whites. Faded Film + a touch of negative contrast gives every clip the same soft black floor, Highlights −12 the same roll-off, Saturation 88 pulls the louder generations toward the muted register (`shot-list.md`: *muted, cool, unforgiving*). No temperature shift — it would have flattened the fire's warmth, which is an argument, not decoration.
+
+**Measured** — a mid-clip frame of every clip before and after, 480×270, full table in `camping jack/frames/grade-measure-2026-09-14.txt`:
+
+| Across 59 clips (mean) | Before | After |
+| --- | --- | --- |
+| % of frame below 16 | 14.6 (sd 14.6) | **10.8** (sd 11.9) |
+| % above 235 | 3.4 (sd 5.6) | **2.7** (sd 4.4) |
+| p5 | 15.2 | **20.3** |
+| median | 86.4 | 86.0 — mid-tones untouched |
+
+Worst crush is still the night car interiors and the `11b` torch frame (`v0:30` `v0:31` `v0:38` `v0:52`, 37–45% below 16, were 46–52%) — by design, they are night, and each has its bright anchor. No clip got darker. Read by eye on a contact sheet: night still reads night.
+
+### 2 · Subtle camera moves (Motion, component 1 — keyframes clip-relative, all bezier)
+
+| Clip | Shot | Move | Why |
+| --- | --- | --- | --- |
+| `v0:0` `0.mp4` | `1y` 2008 foreshore | Scale 100 @ 0 → 104 @ 2.625 | the year device |
+| `v0:25` `6.5.mp4` | `4y` 2026 foreshore | **identical** 100 @ 0 → 104 @ 2.625 | canon: *whatever push 1y gets, 4y gets identically* |
+| `v0:27` `7.mp4` | Tarquin at the Shard window | hold to 1.0, 100 → 106 @ 7.958 | the man at the top; attention narrows |
+| `v0:37` `15.3.mp4` | Tarquin in session | hold to 1.0, 100 → 105 @ 5.958 | the realisation beat |
+| `v0:45` `22.mp4` | yurt interior | hold to 1.0, 100 → 105 @ 7.958 | holds through the dissolve in, then drifts |
+| `v0:56` `33.mp4` | `12c` newspaper burning | hold to 0.5, 100 → 107 @ 6.667 | arrives on the headline |
+| `v0:57` `35.mp4` | end: storm, silhouettes, fire | Scale 112 → 100 and Position y 0.45 → 0.50, both 0.417 → 4.0 | **the owed `12d` tilt-up**, from the fire to the sky, landing exactly on `52.mp4`'s framing before the dissolve |
+
+⚠️ **The tilt is a compromise.** `12d` was designed on a 9:16 plate with real vertical travel; the cut now ends on the 16:9 `35.mp4`, which has none, so the move is a 12% overscan tilt that pulls out as it rises. Offset stays inside the overscan margin the whole way (0.05 vs 0.06) — **checked: no uncovered edge on any exported frame.**
+
+**Not moved, on purpose:** the tent POV pair (`v0:34` `14.mp4` / `v0:52` `30.mp4`, the locked 6c→10a rhyme), the blink clips (`v0:50`/`v0:51` — Motion would scale the lids with the picture), and everything short. No handheld drift — `motion-and-cutting.md` §1 (*handheld is not truth*), and seven moves is already the budget.
+
+### 3 · Invisible cuts
+
+All `ADBE Film Dissolve` (gamma-linear, so a dark frame doesn't dip muddy mid-blend):
+
+| Edge | Duration · alignment | Cut | Why |
+| --- | --- | --- | --- |
+| end of `v0:24` `5.5.mp4` | 1.0s · 0 (all after the cut) | crash aftermath → `4y` 2026 foreshore @ 69.92 | **the eighteen-year jump** — the wrecked car ghosts into 2026 |
+| end of `v0:44` `51.mp4` | 1.0s · 0 | walk to the yurt → yurt interior @ 187.58 | outside becomes inside |
+| end of `v0:47` `24.mp4` | 1.0s · 0 | mug POV → the kaleidoscope @ 204.58 | the trip lands |
+| end of `v0:57` `35.mp4` | 1.5s · 0.5 (centred) | storm → BadCode logo @ 249.79 | the logo resolves out of the storm |
+
+Alignment 0 is used where the incoming clip starts at in-point 0 (no head handles) — every outgoing clip has ≥1.6s of tail. **All two-sided; verified by frame.**
+
+**The crash (3a):** the existing 0.75s black gap at 65.125–65.875 stays exactly as it was, **entered on a hard cut** (a crash doesn't dissolve). New: `v0:24` fades **up out of the black** — Opacity (component 0, param 0) 0 @ 0 → 100 @ 0.708, bezier — so the aftermath surfaces rather than snapping on. Measured: alpha 87/255 at 66.2s.
+
+### Looked at
+
+Frames in `camping jack/frames/look-check/` at 65.0, 65.5, 66.2, 67.0 (crash) · 187.4, 188.08, 204.4, 205.08, 249.8 (dissolves) · 245.5, 247.4, 249.2 (tilt) · 78.7/85.5, 238.9/244.9 (pushes) · 1.3/2.6, 70.0/72.5 (1y/4y) · 216.9, 217.3, 218.15 (blink — alpha identical to the pre-grade frames, so the grain didn't break the lids).
+
+### Needs a human
+
+- ⬜ **Watch it at speed.** Every value is a first pass judged on stills. Moves in particular only read in motion.
+- ⬜ **The crash beat is 0.75s of black.** Kept, not lengthened — lengthening means rippling every track, and the narration is synced. If it should be longer, that's a hand edit.
+- ⬜ **Delivery QC still can't run** — no ffmpeg in WSL. `scripts/delivery-qc.sh` before upload.
+- ⬜ **No audio crossfades** at the four dissolves (no API). A1's clip audio butt-cuts under them.
+
+### 1b · Grade pushed stronger — same day, at Jack's request
+
+Jack watched the light pass and didn't notice it. **Same two effects on all 59 clips, stronger values** (read back on every clip):
+
+| Effect | Light pass (above) | **Now** |
+| --- | --- | --- |
+| `AE.ADBE Lumetri` 16 Saturation | 88 | **75** |
+| 20 Contrast | −6 | **−10** |
+| 21 Highlights | −12 | **−22** |
+| 40 Faded Film | 10 | **20** |
+| 110 Vignette Amount | 0 | **−1.2** |
+| `AE.ADBE Noise2` 0 Amount | 3 | **5** |
+
+| Across 59 clips (mean) | Original | Light | **Stronger** |
+| --- | --- | --- | --- |
+| % below 16 | 14.6 | 10.8 | **9.1** |
+| % above 235 | 3.4 | 2.7 | **1.2** |
+| median | 86.4 | 86.0 | **79.1** — the vignette and highlight pull |
+
+**No clip is more crushed than its original.** The blink's alpha is unchanged. Table: `camping jack/frames/grade-measure-stronger-2026-09-14.txt`.
+
+**Undo just this step:** put the "Light pass" column back, or restore `backups/camping jack.post-grade-moves-cuts.2026-09-14.prproj`. The saved result is `backups/camping jack.post-stronger-grade.2026-09-14.prproj`.
+
+### 1c · The grade and grain carried to the new clips — 2026-09-16
+
+**Jack:** *"please do it for the rest of them."* The timeline had grown to **67 video clips** (66 on V1 and 1 on V2),
+and **14 had no grade**. Each got the 1b values exactly: `AE.ADBE Lumetri` 16 → 75 · 20 → −10 · 21 → −22 ·
+40 → 20 · 110 → −1.2, then `AE.ADBE Noise2` 0 → 5 · 1 → false, both appended last.
+
+| Ref | Clip | Starts |
+| --- | --- | --- |
+| `v0:40` `v0:41` `v0:42` `v0:43` | `53` `54` `56` `55` | 151.3 · 159.8 · 167.8 · 169.7 |
+| `v0:48` | `57` | 208.8 |
+| `v0:53`–`v0:59` | `58` `59` `60` `64` `62` `63` `65` | 236.3 → 280.4 |
+| `v0:65` | `66` | 309.2 |
+| `v1:0` (V2) | `56` | 157.3 |
+
+**Verified from the state file:** all 67 clips carry both effects, every Lumetri has identical parameter values
+(one group of 67), and every Noise does too (one group of 67). The first new Lumetri was diffed parameter by
+parameter against a graded clip and matched. It is still the last pair in every chain.
+
+**Undo:**
+- **Everything:** `backups/camping jack.pre-grade-new-clips.2026-09-16.prproj`, saved immediately before.
+- **In session:** Edit ▸ Undo, 28 `BadCode:` entries, 2 per clip.
+
+⚠️ The timeline has changed since 1b (runtime 254 → 317s, transitions 4 → 2), so the ref tables in the
+sections above are stale.
+
+**Needs a human:** watch 151–317s at speed. The V2 clip (`56.mp4` over `53`/`54`) is graded on its own layer.
+If it's a blend or partial overlay rather than a full cover, check it doesn't look double-graded.
+
+## Premiere — `camping jack` · narration and background-music levels (2026-09-17)
+
+**Jack:** *"Please use uxp to fix the volume for the narration and background music."* The score (A4, 9 clips from
+`background music/1–9.wav`) had been placed by hand, all at −20.4 dB. Narration (A3, 30 clips) was at 0 dB, except
+`a2:0` at +3.3.
+
+**Measured first** (Python over the WAVs, each clip's in→out segment, RMS over 100ms blocks above −45 dBFS, unweighted,
+so it only approximates LUFS):
+- **Nell and Tarquin** sit at −15 to −20 RMS.
+- 🔴 **Bob's recordings** (`narration/bob.wav`, `bob 2.wav`) sit at **−23 to −30**, 8–12 dB under everyone else.
+- **The music** sits at −16.5 to −19.8 RMS.
+
+🔑 **The Level scale, corrected:** `Level` is linear, and **0.17783 = 0 dB**, not −15 dB as
+`docs/premiere/api-notes.md` had it. Every untouched clip and every Channel Volume reads exactly 0.17783. So
+**dB = 20·log10(Level / 0.17783)**, and 1.0 = +15 dB, the UI maximum.
+
+### What was set
+
+| Track | Rule | Result |
+| --- | --- | --- |
+| **A3 narration** | each clip to **−17 dBFS RMS**, capped so peaks stay at or under −1 dBFS | −2.2 to +10.1 dB. Bob gets the most: `a2:21` +10.1 (peak-capped), `a2:15` +8.3, `a2:29` +7.0 |
+| **A4 music, cues 1–7** | **16 dB under the voice** (≈ −33 RMS) | −13.2 to −15.7 dB |
+| **A4 music, cues 8–9** | no narration from 260.4s, so ≈ −23 RMS | −6.5 / −6.4 dB |
+| **Lifts between lines** | +8 dB, 0.4s ramps, linear | Cue 3 (`a3:2`): the gaps at 85.4–87.3, 93.6–95.8 and 99.0–100.9 · Cue 7 (`a3:6`): the 5s breath at 209.2–214.2 and its tail from 260.4 |
+
+Keyframes are clip-relative (both clips have in-point 0). A1, the clips' own sound, was not touched.
+
+### 🔙 Undo
+
+- **Everything:** `backups/camping jack.pre-audio-levels.2026-09-17.prproj`, saved immediately before.
+- **In session:** Edit ▸ Undo, 5 `BadCode:` entries (1 static-levels transaction, then a time-varying and a keyframe
+  transaction per lifted clip).
+- **Saved 2026-09-17** at Jack's request ("Can you do it please"). The backup above is still the way back.
+
+### Needs a human
+
+- 🎧 **Listen at speed**, on speakers and on headphones:
+  - Is Bob's boosted room noise acceptable?
+  - Does the music still read in cues 1–7?
+  - Is the ending loud enough?
+- ⬜ **Not measured as a mix:** there's no ffmpeg here, so there's no loudness read of the exported film. Aim for about
+  −14 LUFS integrated for YouTube and check it with `scripts/delivery-qc.sh` once ffmpeg exists.
+
+### Levels v2 — narration flat, music further back (2026-09-17, same day)
+
+**Jack, on v1:** *"The narration at the beginning sounds weird now, maybe just turn it all down. The narration should be
+the main thing you hear, the background music should be in the background."*
+
+**Cause (inferred, not heard):** v1 gave each line its own gain. Nell's opening is one continuous read cut into five
+clips of `1.wav`, and those clips got +0.8, +2.4, −1.0, −2.1 and −0.2, so her level stepped up and down at every cut.
+
+| | v1 | **v2** |
+| --- | --- | --- |
+| Nell and Tarquin | per-line, −2.2 to +2.8 | **0 dB, flat** (the recordings are already −15 to −20 RMS) |
+| Bob, `bob.wav` | per-line, +1.5 to +8.3 | **+1.5 dB flat**, the most its loudest peak allows |
+| Bob, `bob 2.wav` | +10.1 / +6.8 | **+6.8 dB flat** |
+| Music, cues 1–7 | ≈16 dB under the voice (−33 RMS) | **−39 RMS, 14–22 dB under every line** (−19.2 to −21.7 dB) |
+| Lifts between lines | +8 dB | **+6 dB**, same gaps and ramps |
+| Music, cues 8–9 (no narration) | −6.5 dB | **−10.5 dB** (≈ −27 RMS) |
+
+**Saved.** Undo in session: 7 `BadCode:` entries. **Full revert:** `backups/camping jack.pre-audio-levels.2026-09-17.prproj`.
+
+### A1 clip sound — all 66 to −15 dB (2026-09-17, same day)
+
+**Jack:** *"Please make the clips volume like -15 db for all of them."* This is A1, the video clips' own sound.
+
+- **Before:** mixed. 48 clips sat at −25 to −25.6 dB and 18 at full 0 dB (v0 refs 2–5, 7–12, 14, 15, 17, 19, 21, 22, 38, 48, 62, 65).
+- **After:** all 66 read back at exactly −15 dB (Level 0.031623). One transaction, **saved**.
+
+⚠️ The 48 quiet clips went **up** 10 dB. Their sound effects may now compete with the narration.
+**Undo:** Edit ▸ Undo, 1 `BadCode:` entry, or `backups/camping jack.pre-audio-levels.2026-09-17.prproj` for every audio change today.
+
+### ↩️ Reverted — Jack is mixing by hand (2026-09-17, same day)
+
+**Jack:** *"Everything you have done to volume please revert back to normal. I am doing it manually, do not change what I
+have done."* Every clip was read first. **Only clips still holding exactly the value this session wrote were reverted.**
+
+- **Reverted to their pre-session values** (one `BadCode:` transaction, **not saved**):
+  - 29 narration clips: `a2:0` to +3.3 dB, the rest to 0 dB.
+  - Music cues 8 and 9 (`a3:7`, `a3:8`) to −20.4 dB.
+- **Left alone, because Jack had already changed them:**
+  - all of A1 (now −25.5 dB throughout)
+  - narration `a2:6`
+  - music `a3:0`, `a3:1`, `a3:3`, `a3:4`, `a3:5`
+  - 🔴 **`a3:2` (cue 3) and `a3:6` (cue 7):** these still carry the session's lift keyframes, but Jack has added his own
+    (14 and 7 keyframes, against the 12 and 6 written here). They're his to edit.
+- ✅ **Then the session's keyframes came off too** (Jack: *"remove your keyframes on cue 3 and cue 7 too"*):
+  - 12 removed from `a3:2`, 6 from `a3:6`, each matched on exact time and value.
+  - **Jack's own keyframes kept:** `a3:2` at 5.25s and 8.58s, `a3:6` at 1.67s.
+  - Two `BadCode:` undo entries, **not saved**. Nothing from this session's volume work remains on the timeline.

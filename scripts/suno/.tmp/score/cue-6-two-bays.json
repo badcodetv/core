@@ -1,0 +1,18 @@
+{
+  "style": "Instrumental slow-burning standoff score at 70 BPM, hybrid orchestral: a low heartbeat kick, a tremolo string drone climbing slowly, cheap synth strings and distant brass braams, grey and cold like a western showdown in the rain, tension building and never released.",
+  "exclude": "vocals, singing, choir, humming, whistling, western guitar, harmonica, piano, drop, triumphant, heroic",
+  "lyrics": "",
+  "title": "camping-score-6-two-bays-A",
+  "workspace": "camping background music",
+  "model": "v6",
+  "variety": "normal",
+  "maxMode": false,
+  "vocalGender": null,
+  "personalize": false,
+  "styleInfluence": 75,
+  "weirdness": [
+    30,
+    60
+  ],
+  "durationSec": 60
+}

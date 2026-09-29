@@ -52,8 +52,8 @@ v6 retired v5.5 on 2026-09-09 and added form state. **Mapped live and wired into
 What the controls *do* is `suno-prompt`'s side: [`suno-v6.md`](../../../docs/suno-gpt/files/suno-v6.md) §2.
 The proposed first round, **R1 = {v6, v6-wild} × weirdness {30, 60}**, is in §9 and awaits Kai.
 
-⚠️ **Credit cost per v6 Create is unknown** — the "20 credits a pair" below is v5.5-era. Read
-the balance before and after every Create until it's known.
+✅ **A v6 Create costs 10 credits for 2 takes** — proven 2026-09-21 across twelve Creates
+(Camping r54), custom Duration included, so a pair is 20 credits exactly as on v5.5.
 
 ## Preflight
 
@@ -305,8 +305,10 @@ inside **More Options** (collapsed by default; its trigger needs a **real mouse 
 🖐 For an exact value by hand: hit **Custom**, then **double-click the number** — it becomes a
 typeable text box. Automation uses the slider, whose 5s granularity is inside the ±10s tolerance.
 
-⬜ **Not yet proven:** that a set duration actually changes the take's length. One generation
-settles it — say so and it gets run.
+✅ **Proven 2026-09-18 (Camping r48):** a 195 s target produced **12 takes out of 12 at 3:14–3:16**
+— about ±1 s, across three Style boxes and two weirdness settings. 🔑 **On v6, Duration Auto runs
+long:** the same lyrics on Auto the same day came back at 4:38 and 4:55. **Set the number.**
+✅ **Custom duration does not double the credit cost** — 2026-09-21 (Camping r54): twelve v6 Creates at Duration 195 s, **10 credits each**, read before and after every Create.
 
 ### 🔑 Naming
 

@@ -73,3 +73,99 @@ all run live 2026-09-13 on free tiers.
 
 The MCP server runs the checkout's source but only reloads on restart — run `/mcp` and reconnect
 `flow` before the new code is what the tools call.
+
+## 2026-09-14 — two more drifts, found on the first reference edit of the day
+
+11. **A cookie-consent bar (`#glue-cookie-notification-bar-1`: Learn more / Agree / No thanks)
+    covers the compose bar on a freshly signed-in profile** and intercepts every click, so
+    `Settings trigger` times out at 30s while reporting the button "visible, enabled and stable".
+    Dismiss it once per profile; it does not come back.
+12. **The ingredient picker's upload control is now an icon button.** Its visible text is only the
+    `upload` ligature; "Upload media" is in `aria-label`. The old `filter({ hasText: /Upload media/ })`
+    waited the full 90s. `attachReferencesRebuilt` now matches
+    `button[aria-label="Upload media"], button:has-text("Upload media")`. The picker also gained a
+    category filter (`All ▾`) and a Search box.
+13. **A failed reference edit can leave the ingredient picker OPEN**, and the next call's
+    `Add ingredients` click is then intercepted by `flow-add-menu-asset-list` for 30s. Escape ×3
+    clears it. ⬜ Owed: `attachReferencesRebuilt` should press Escape when `aria-expanded="true"`.
+14. **Harvest can fail after a successful generation.** On `flow_edit_image`, the tile's
+    `More options` button stayed hidden because the hover did not register (law 7, WSLg). The
+    images were in the project the whole time. **Recovery that worked:** native `el.click()` on
+    `flow-image-tile button[aria-label="More options"]`, then the menu items `Download` and
+    `1K Original size`. This is the same menu, with `2K Upscaled` and `4K Upscaled` beneath them.
+    ⬜ Owed: replace the hover with an in-page click in the harvest path.
+15. **`ensureVideoConfigRebuilt` races the popover re-render.** On a project in Image mode, clicking
+    `Video` redraws the popover, and the immediate `Frames` lookup counted 0 and threw
+    `VIDEO_OPTION_UNAVAILABLE: Frames on Omni 1.1 Flash`. Nothing was spent. A retry worked, because
+    the project was now already in Video mode. ⬜ Owed: wait for the Frames radio after picking Video.
+16. **Video harvest has the same hover bug as stills, and its Download is different.** A video tile's
+    `Download` opens a size list (`270p Animated GIF · 720p Original size · 1080p Upscaled · 4K
+    Upscaled · 50 credits`) in the same menu. Arm `waitForEvent('download')` **before** clicking
+    `Download`, then click `720p Original size`.
+17. **The stale Omni end-frame guard.** `video-mode.ts` still refuses an `endImage` on the 10s-capable
+    model ("Omni rejects a last frame", true of 1.0). Omni 1.1 has end frames (desktop Flow). ⬜ Owed:
+    remove the guard, and batch it with 13–16 into ONE code change and ONE reconnect (skill law 22).
+
+## 2026-09-28: the Camping mv2 26-clip run (Omni 1.1 Flash, Frames, 720p, 8s, x1)
+
+18. **A projects page now opens with an agent side panel** (`flow-agent-panel`, "Hi Kai, what would you like to
+    create?"). Its prompt box is `flow-creative-agent-prompt-box`, **not** `flow-prompt-box`, so
+    `flow_create_project` timed out at 90 s waiting for the classic box. **Close the panel** (its `Close` button)
+    and `flow-prompt-box` comes back. A "Flow is now on iOS" changelog modal (`Get started`) also opens once.
+19. **The first upload in a profile raises a "Rights to use this image" dialog** (`Cancel` / `I agree`) behind a
+    `cdk-overlay-backdrop`, which intercepts the Settings trigger for 30 s. Click `I agree` once.
+20. 🔴 **`flow_generate_video` can no longer see its own finished clip.** It waits for `flow-video-tile img.thumbnail`.
+    A finished tile now carries `img[src^="https://flow-content.google/image/"]` until it is hovered, then
+    `video[src]` (sometimes `flow-content.google/video/<uuid>`, sometimes an `/asb/` transcode). The call ran until
+    the MCP idle timeout (1816 s) with the clip sitting finished in the grid. ⬜ Owed: fix `videoTileKeys`.
+21. 🔴 **The tile grid virtualises, so tile COUNT is not a completion signal.** Past ~8 tiles on screen, a new clip
+    does not raise `flow-video-tile` count. Detect by **key**: the newest tile is index 0, and its media src (with
+    `?` stripped) is not in the set captured before submit. A "Failed" card is also a new index-0 tile. Its text
+    carries the reason.
+22. **"We noticed some unusual activity" is transient.** Jack's rule: **a real page refresh, then retry after
+    ~10 s**, and no pause between clips. It hit about 1 in 5 submissions. One clip (07) needed 6 tries; the rest
+    cleared in 1–2. **Same rule for `FRAME_SLOT_NOT_FILLED`**, which tended to follow a refresh. Upload each plate
+    once per project and reuse it; re-uploading on every retry piles up duplicates.
+23. **A download that times out is not a failed generation.** Retry only the download (Escape, reload, `More
+    options → Download → 720p Original size`). Never resubmit: the clip is already rendered and billed. That mistake
+    nearly cost a second render of clip 18.
+24. **Killing a runner mid-submit double-bills.** A clip submitted just before a kill still renders (clip 08: two
+    copies, about 12 credits). Swap runners only between a `saved` line and the next `submitted` line.
+
+The runner used (a scratch script, not committed) imported `FlowClient` from `packages/flow-mcp/src/flow-client.ts`
+and called its private primitives: `reloadProject`, `uploadToProject`, `ensureVideoConfigRebuilt`,
+`fillFrameSlotRebuilt`, `setPrompt` and `clickSubmit`. Items 20–21 are the parts to fold back into `flow-client.ts`.
+
+## 2026-09-29: Characters on the rebuilt Flow, done by hand over CDP (world cast, 5 Characters)
+
+The six MCP character tools still throw `FLOW_REBUILD_UNMAPPED`. This is the working path, driven in-page with
+native `el.click()` (law 7), so it can be folded back into `flow-client.ts`.
+
+25. **The map.**
+    - Project sidebar **Characters** → `New character` goes to `/project/<id>/character`.
+    - That page has a "Describe your character…" composer, plus **Upload** and **Add from project**.
+    - Adding one image **creates the Character at once**. The URL becomes `/character/<uuid>`, the image is the
+      **Portrait**, and the name is "Untitled character".
+    - The **Edit name** button (aria-label) reveals `input[aria-label="Character name"]`: fill it and press Enter.
+    - **Create body** swaps the stage to "Generate or add an image of your character", with the same Upload / Add
+      from project. Adding one sets the **Body**, and the toast reads "Image added to character".
+    - **Done** saves and leaves.
+    - Character Info is `textarea[aria-label="Character personality"]`.
+26. 🔴 **Clicking a picker row sometimes commits at once** (the picker closes and the Character is created), and
+    sometimes only previews, when **Add media** is needed. The same as item 10. After clicking a row, check whether
+    `button[role=option]` rows still exist before pressing Add media. Pressing it blind risks adding the wrong
+    image.
+27. 🔴 **Pick rows by filename, via the picker's "Search assets" box.**
+    - The list virtualises, so a row that has scrolled away doesn't exist in the DOM.
+    - Thumbnail `src` briefly carries the media uuid (`flow-content.google/image/<uuid>`) and then switches to an
+      opaque `/asb/` token, so ids are not a reliable key.
+    - Generated images get auto-titles ("Man standing for reference photo…") that collide. **Upload** the plates
+      under distinctive filenames first (the picker's `Upload media` opens a native file chooser;
+      `waitForEvent('filechooser')` worked with the MCP attached), then search by name.
+28. 🔴 **Never launch a browser channel from a sandboxed shell.** The browser's downloads land in the sandbox's
+    private `/tmp` (`/tmp/playwright-artifacts-*`). The MCP server can't see it, so every harvest fails with
+    `download.saveAs: ENOENT … copyfile '/tmp/playwright-artifacts-…'` **after** the generation succeeded. Launch
+    `browser-channel.sh up` unsandboxed, and write `outPath` to a folder that exists: the MCP does not `mkdir`, and
+    a missing folder gives the same ENOENT.
+    - Also: channel 1's profile carries whichever Google account last signed in (Kai's, 2026-09-29). A project on
+      the other account returns `/404?reason=project`, not a login prompt.

@@ -1,0 +1,704 @@
+{
+"02": {
+"signs": [
+{
+"quad": [
+[
+478,
+285
+],
+[
+842,
+280
+],
+[
+830,
+618
+],
+[
+478,
+622
+]
+],
+"text": "ONCE\nAGAIN",
+"style": "marker",
+"wipe": [
+1.5,
+6.5
+]
+}
+]
+},
+"03": {
+"signs": [
+{
+"quad": [
+[
+522,
+310
+],
+[
+784,
+310
+],
+[
+786,
+486
+],
+[
+520,
+488
+]
+],
+"text": "ONCE AGAIN",
+"style": "marker"
+}
+]
+},
+"04": {
+"signs": [
+{
+"quad": [
+[
+392,
+262
+],
+[
+818,
+262
+],
+[
+816,
+522
+],
+[
+388,
+526
+]
+],
+"text": "HOW I'M\nJUST POOR",
+"style": "marker"
+}
+]
+},
+"05": {
+"signs": [
+{
+"quad": [
+[
+812,
+254
+],
+[
+1200,
+238
+],
+[
+1196,
+578
+],
+[
+808,
+540
+]
+],
+"text": "YOU KEEP\nON WALKING",
+"style": "marker"
+}
+]
+},
+"06": {
+"signs": [
+{
+"quad": [
+[
+331,
+240
+],
+[
+465,
+238
+],
+[
+465,
+370
+],
+[
+334,
+370
+]
+],
+"text": "PAID FOR\nYOUR WHEELS\nON TICK",
+"style": "marker"
+}
+]
+},
+"07": {
+"signs": [
+{
+"quad": [
+[
+84,
+330
+],
+[
+408,
+330
+],
+[
+404,
+588
+],
+[
+87,
+600
+]
+],
+"text": "FOUR TONNES\nOF STEEL\nFOR A MEAL DEAL",
+"style": "marker"
+}
+]
+},
+"08": {
+"signs": [
+{
+"quad": [
+[
+358,
+326
+],
+[
+738,
+452
+],
+[
+705,
+690
+],
+[
+332,
+606
+]
+],
+"text": "I DO WANT\nCHANGE",
+"style": "marker"
+}
+]
+},
+"09": {
+"signs": [
+{
+"quad": [
+[
+446,
+252
+],
+[
+663,
+297
+],
+[
+637,
+450
+],
+[
+411,
+398
+]
+],
+"text": "PLEASE SIR\nCAN I FUCKIN'\nHAVE SOME MORE?",
+"style": "marker",
+"from": 4.6
+}
+]
+},
+"10": {
+"signs": [
+{
+"quad": [
+[
+729,
+290
+],
+[
+920,
+288
+],
+[
+926,
+538
+],
+[
+732,
+538
+]
+],
+"text": "I CAN'T LIVE\nLIKE THIS\nFOREVER",
+"style": "marker"
+}
+]
+},
+"11": {
+"signs": [
+{
+"quad": [
+[
+655,
+382
+],
+[
+810,
+377
+],
+[
+828,
+625
+],
+[
+670,
+625
+]
+],
+"text": "I DO\nWANT\nCHANGE",
+"style": "marker"
+}
+]
+},
+"11b": {
+"src": "takes/11.mp4",
+"out": "11b",
+"signs": [
+{
+"quad": [
+[
+655,
+382
+],
+[
+810,
+377
+],
+[
+828,
+625
+],
+[
+670,
+625
+]
+],
+"text": "I CAN'T LIVE\nLIKE THIS\nFOREVER",
+"style": "marker"
+}
+]
+},
+"12": {
+"signs": [
+{
+"quad": [
+[
+518,
+258
+],
+[
+798,
+253
+],
+[
+793,
+477
+],
+[
+520,
+472
+]
+],
+"text": "I CAN'T LIVE\nLIKE THIS\nFOREVER",
+"style": "marker"
+}
+]
+},
+"13": {
+"signs": [
+{
+"quad": [
+[
+657,
+358
+],
+[
+1001,
+360
+],
+[
+996,
+588
+],
+[
+657,
+586
+]
+],
+"text": "I CAN'T LIVE\nLIKE THIS\nFOREVER",
+"style": "marker"
+}
+]
+},
+"14": {
+"signs": [
+{
+"quad": [
+[
+561,
+253
+],
+[
+750,
+253
+],
+[
+751,
+391
+],
+[
+561,
+391
+]
+],
+"text": "YOU ARE INTENT\nON LIVING\nIN A TENT",
+"style": "enamel"
+}
+]
+},
+"15": {
+"signs": [
+{
+"quad": [
+[
+222,
+172
+],
+[
+588,
+217
+],
+[
+587,
+452
+],
+[
+232,
+572
+]
+],
+"text": "PROSPECTS\nEXIST",
+"style": "engraved"
+}
+]
+},
+"16": {
+"signs": [
+{
+"quad": [
+[
+782,
+397
+],
+[
+983,
+397
+],
+[
+983,
+538
+],
+[
+782,
+538
+]
+],
+"text": "I WORK\nHARD",
+"style": "gold"
+}
+]
+},
+"17": {
+"signs": [
+{
+"quad": [
+[
+352,
+122
+],
+[
+588,
+122
+],
+[
+588,
+275
+],
+[
+352,
+275
+]
+],
+"text": "MY POCKETS\nARE EMPTY",
+"style": "gold"
+}
+]
+},
+"18": {
+"signs": [
+{
+"quad": [
+[
+733,
+193
+],
+[
+1037,
+191
+],
+[
+1037,
+262
+],
+[
+733,
+262
+]
+],
+"text": "THE ONLY THING I'M CHANGING\nIS THE LANE",
+"style": "led",
+"to": 1.6
+}
+]
+},
+"19": {
+"signs": [
+{
+"quad": [
+[
+622,
+372
+],
+[
+660,
+372
+],
+[
+660,
+430
+],
+[
+622,
+430
+]
+],
+"text": "WEALTH\nGAP?\nWHAT A\nLOAD OF\nCRAP",
+"style": "label"
+}
+]
+},
+"21": {
+"signs": [
+{
+"quad": [
+[
+500,
+212
+],
+[
+748,
+206
+],
+[
+778,
+548
+],
+[
+524,
+551
+]
+],
+"text": "I CAN'T LIVE\nLIKE THIS\nFOREVER",
+"style": "marker"
+}
+]
+},
+"22": {
+"signs": [
+{
+"quad": [
+[
+620,
+325
+],
+[
+920,
+325
+],
+[
+920,
+545
+],
+[
+622,
+542
+]
+],
+"text": "I MIGHT\nBE INSANE",
+"style": "marker"
+}
+]
+},
+"23": {
+"signs": [
+{
+"quad": [
+[
+207,
+386
+],
+[
+483,
+386
+],
+[
+486,
+600
+],
+[
+209,
+603
+]
+],
+"text": "HERE WE\nBOTH ARE",
+"style": "marker"
+},
+{
+"quad": [
+[
+847,
+395
+],
+[
+1138,
+400
+],
+[
+1133,
+592
+],
+[
+845,
+588
+]
+],
+"text": "LIVING IN\nA CAR PARK",
+"style": "marker"
+}
+]
+},
+"24": {
+"signs": [
+{
+"quad": [
+[
+690,
+313
+],
+[
+910,
+320
+],
+[
+904,
+500
+],
+[
+688,
+494
+]
+],
+"text": "THE AI DOES\nTHE FAST PART",
+"style": "marker"
+}
+]
+},
+"25": {
+"signs": [
+{
+"quad": [
+[
+324,
+310
+],
+[
+650,
+313
+],
+[
+651,
+487
+],
+[
+324,
+489
+]
+],
+"text": "WE WERE ON\nTHE SAME SIDE",
+"style": "marker"
+},
+{
+"quad": [
+[
+654,
+313
+],
+[
+1001,
+305
+],
+[
+1001,
+486
+],
+[
+654,
+487
+]
+],
+"text": "ALL\nALONG",
+"style": "marker"
+}
+]
+},
+"26": {
+"signs": [
+{
+"quad": [
+[
+685,
+345
+],
+[
+1020,
+347
+],
+[
+1016,
+597
+],
+[
+685,
+590
+]
+],
+"text": "I CAN'T LIVE\nLIKE THIS\nFOREVER",
+"style": "marker"
+}
+]
+}
+}

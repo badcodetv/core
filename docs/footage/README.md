@@ -40,6 +40,8 @@ there before adding a row.
 | `Keynes_Martin.jpg` (Commons) | Wikimedia Commons · Harvard | 🟢 | **`{{PD-UK-unknown}}`** — anonymous, 1930s | none | MMT sc.08 — Keynes at Monk's House, 1348×1470. **On disk** | 2026-09-12 |
 | `CO 1069/778` (Commons/Flickr) | Wikimedia Commons · **The National Archives UK** via Flickr Commons | 🟢 | `{{Flickr-no known copyright restrictions}}`; 1945 Crown photograph | none | MMT sc.07 — the Anglo-American loan being signed, Keynes at the table. **On disk.** 🔴 Only 799×676 even at Flickr's original | 2026-09-12 |
 | `IMAGELIBRARY/1383` (Commons/Flickr) | Wikimedia Commons · **LSE Library** via Flickr Commons | 🟢 | `{{Flickr-no known copyright restrictions}}`; anonymous 1944 campaign poster | none | MMT sc.06 — *"Demand the Beveridge Plan"*, 1498×2396. **On disk** | 2026-09-12 |
+| `WorkPays1937` | archive.org · Prelinger | 🟢 | `licenses/publicdomain/` **and** creator is the **U.S. Work Projects Administration** — a federal work, 17 USC §105. Two independent bases | none | **Camping short `R1-1937-2031`** — the work-relief line at **51–62s**. Downloaded, **md5 matched** `0201865c…`, 973s, 352×480 anamorphic, `field_order=tt` (deinterlace) | 2026-09-21 |
+| `Nationat1951` | archive.org · Prelinger | 🟢 | `licenses/publicdomain/`, which is green **by our own Prelinger `licenseurl:*` rule**. 🔴 **But read the caveat:** creator *Audio Productions, Inc.*, **sponsor AT&T / Bell System** — a corporate sponsored film, so the PD basis is *non-renewal*, not federal authorship, and **we did not verify the renewal record.** Worth one human look before it scales | none | **Karen short `R2-switchboard`** — the cord board and the operator floor at **290–301s**. Downloaded, **md5 matched** `3f1f08cb…`, 653s, 352×480 anamorphic, `tt` | 2026-09-21 |
 
 🔴 **Two traps this table already caught.** *"NARA"* in a credit is **not** automatically a US
 federal work — `541917` is a donated *New York Times* photograph in NARA custody, and custody is not
@@ -57,6 +59,16 @@ dramatised inserts — **free to publish is not the same as true**, so a human l
 /mnt/d/badcode-videos/<story>/clips/<scene>/       # WSL
 D:\badcode-videos\<story>\clips\<scene>\           # Windows — what Premiere opens
 ```
+
+**⚠️ 2026-09-21 — `D:` does not exist on this machine.** The two Prelinger films above therefore
+live beside the films they are cut with, on the OneDrive drive the shorts pipeline already uses:
+
+```
+/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/footage/archive.org/<identifier>/raw.mpeg
+```
+
+Each folder also carries its own `source-metadata.json`. ⬜ If a Premiere media root is ever
+established, move them and update these rows — the identifier in the path is the durable link.
 
 `mediaRoot` comes from `premiere_status()` (recorded in `badcode.local.json`). Keep the source
 identifier **verbatim** in the filename: it is the only durable link back to the receipt.

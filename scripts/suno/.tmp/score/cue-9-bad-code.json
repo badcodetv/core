@@ -1,0 +1,18 @@
+{
+  "style": "Instrumental elegiac hybrid film-score finale at 70 BPM: a ticking synth ostinato returns slowed down and broken, warm cheap synth strings rise under a crackling fire, one huge final braam and impact, then a long ring-out into silence. Bittersweet and defiant.",
+  "exclude": "vocals, singing, choir, humming, piano ballad, acoustic guitar, happy ending, triumphant, beat drop",
+  "lyrics": "",
+  "title": "camping-score-9-bad-code-A",
+  "workspace": "camping background music",
+  "model": "v6",
+  "variety": "normal",
+  "maxMode": false,
+  "vocalGender": null,
+  "personalize": false,
+  "styleInfluence": 75,
+  "weirdness": [
+    30,
+    60
+  ],
+  "durationSec": 25
+}

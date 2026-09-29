@@ -214,7 +214,8 @@ your upload by diffing the tile grid, and that diff degrades in a cluttered proj
 | `POLICY_BLOCKED` | Same, detected | Same. In a batch it is *one prompt's* problem — the batch carries on |
 | Card reads **"Audio Generation Failed"** | Veo killed its own output over audio | **Retry unchanged.** Credits refunded. Not a prompt verdict |
 | **"You're requesting generations too quickly"** | Rate limit, tightens with the day's volume | **Wait.** Rewriting changes nothing |
-| **"We noticed some unusual activity"** | Anti-abuse | Wait a couple of minutes; **disable any VPN** |
+| `FRAME_SLOT_NOT_FILLED` (the Start frame didn't take the image) | The frame picker didn't commit | **Refresh the page (a real reload), then retry.** Jack's rule, 2026-09-28: the same refresh as for "unusual activity" below |
+| **"We noticed some unusual activity"** | Anti-abuse, transient | **Refresh the page (a real reload, not just re-navigating) and retry after ~10 s.** No long back-off, and no pause between clips. The card says *"You have not been charged"*. ~~Wait a couple of minutes~~: corrected by Jack 2026-09-28 during the Camping mv2 run, and a 10 s reload-retry was enough there. Disable any VPN if it keeps coming back |
 | A stuck **"Pending"** card | Failed on policy or credits, left a husk | Manually retry or delete it. It will not clear itself |
 | `TIMEOUT` after ~90s on a *control* | A hard wait on something that already vanished, or never arrived | §4 law 13. Look at the window |
 | `TIMEOUT` on a *generation* | Queue, or a block | Veo Quality queues for minutes under load. Two clean failures ⇒ block |
@@ -278,7 +279,7 @@ Full method, including what ffmpeg can do that Premiere cannot:
 
 ---
 
-## 4. The twenty-one laws
+## 4. The twenty-three laws
 
 These are why the client looks the way it does. Every one was paid for live. If you are
 changing `@badcode/flow-mcp`, they are the spec; if you are just calling tools, laws 1–5
@@ -379,6 +380,21 @@ explain most of what you will see.
     a project holding exactly one uploaded still cannot mis-pick. Then verify anyway — md5 every
     take against the ones you already have, and check the clip's **first frame against its plate**.
     File size, a healthy mediaId and a playable mp4 all prove nothing (laws 9–11).
+
+22. 🔴 **An `/mcp` reconnect orphans the old flow server, and it keeps the logged-in channel.**
+    Measured 2026-09-14: after a code fix and a reconnect, the old process still held channel 1's
+    lock (the signed-in browser). The new server resolved to channel 2, an empty profile, and
+    **caches that choice for its whole life**, so killing the orphan afterwards does not help.
+    **Before asking for a reconnect:** kill this session's own old server (trace it to the same
+    `claude` pid, as in `premiere-automation` §1d) and `browser-channel.sh release` its channel,
+    *then* reconnect. The new process then claims the running, signed-in browser.
+
+23. 🔴 **Never launch a browser channel from a sandboxed shell.** Measured 2026-09-29: Chrome started inside the
+    Bash sandbox writes its downloads to the sandbox's private `/tmp`, and every harvest then dies with
+    `download.saveAs: ENOENT … copyfile '/tmp/playwright-artifacts-…'`, **after** the image was made. Run
+    `browser-channel.sh up/claim` unsandboxed, and make sure `outPath`'s folder exists, because a missing folder
+    gives the same ENOENT. The Characters UI on the rebuilt Flow (still unmapped in the MCP) has its hand-driven
+    recipe in `docs/flow/automation-2026-09-rebuild.md` items 25–28.
 
 ---
 
