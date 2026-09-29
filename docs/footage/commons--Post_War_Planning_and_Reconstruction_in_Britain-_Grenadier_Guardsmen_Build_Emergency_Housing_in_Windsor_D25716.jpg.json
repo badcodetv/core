@@ -1,0 +1,101 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "24368236": {
+    "pageid": 24368236,
+    "ns": 6,
+    "title": "File:Post War Planning and Reconstruction in Britain- Grenadier Guardsmen Build Emergency Housing in Windsor D25716.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 110590,
+      "width": 758,
+      "height": 800,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Post_War_Planning_and_Reconstruction_in_Britain-_Grenadier_Guardsmen_Build_Emergency_Housing_in_Windsor_D25716.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Post_War_Planning_and_Reconstruction_in_Britain-_Grenadier_Guardsmen_Build_Emergency_Housing_in_Windsor_D25716.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=24368236",
+      "sha1": "ccb3dc65d12c0d90cd2cba11b6051a8a5f9af146",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2013-01-31 21:37:26",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "Post War Planning and Reconstruction in Britain- Grenadier Guardsmen Build Emergency Housing in Windsor D25716",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "Images uploaded by Fæ|Artworks without Wikidata item|UK Government artistic works|PD-scan (PD-UKGov)|Ministry of Information Second World War Official Collection|Reconstruction in the United Kingdom after World War II",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Artist": {
+        "value": "<div class=\"fn value\">\nMinistry of Information Photo Division Photographer</div>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "<i>Post War Planning and Reconstruction in Britain- Grenadier Guardsmen Build Emergency Housing in Windsor</i><br>\nGuardsmen working to complete the first of the temporary houses.",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "(1945 - 1975)",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external free\" href=\"http://media.iwm.org.uk/iwm/mediaLib//54/media-54352/large.jpg\">http://media.iwm.org.uk/iwm/mediaLib//54/media-54352/large.jpg</a><div style=\"margin:0.5em\"></div>\n<div class=\"center centered\" style=\"width:auto\">\n<table style=\"width:100%; border:1px solid var(--border-color-notice,black); background:var(--background-color-neutral,#E0E0E0); padding:0; text-align:center; color:inherit\">\n<tbody><tr>\n<td align=\"left\"><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:IWMLondonThumbnail.jpg\" class=\"mw-file-description\" title=\"Image of the exterior main entrance to the Imperial War Museum in London.\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/c/c3/IWMLondonThumbnail.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled\" decoding=\"async\" loading=\"lazy\" width=\"80\" height=\"54\" class=\"mw-file-element\" data-file-width=\"80\" data-file-height=\"54\"></a></span>\n</td>\n<td>This photograph <a rel=\"nofollow\" class=\"external text\" href=\"https://www.iwm.org.uk/collections/item/object/205211383\">D 25716</a> comes from the collections of the <a rel=\"nofollow\" class=\"external text\" href=\"https://www.iwm.org.uk\">Imperial War Museums</a>.\n</td>\n<td align=\"right\"><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Flag_of_the_United_Kingdom_(3-5).svg\" class=\"mw-file-description\" title=\"Flag of the United Kingdom.\"><img alt=\"\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/120px-Flag_of_the_United_Kingdom_%283-5%29.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"80\" height=\"48\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/250px-Flag_of_the_United_Kingdom_%283-5%29.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"1000\" data-file-height=\"600\"></a></span>\n</td></tr></tbody></table></div>",
+        "source": "commons-desc-page"
+       },
+       "Permission": {
+        "value": "This photograph was scanned and released by the Imperial War Museum on the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.iwm.org.uk/corporate/privacy-copyright/licence\">IWM Non Commercial Licence</a>. The image was catalogued by the IWM as created for the Ministry of Information, which was dissolved in 1946. Consequently the image and faithful reproductions are considered Crown Copyright, now expired as the photograph was taken prior to 1 June 1957.",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

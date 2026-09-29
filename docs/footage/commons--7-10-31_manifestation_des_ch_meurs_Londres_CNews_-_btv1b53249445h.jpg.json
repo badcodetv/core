@@ -1,0 +1,96 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "161168564": {
+    "pageid": 161168564,
+    "ns": 6,
+    "title": "File:7-10-31, manifestation des chômeurs à Londres (CNews) - btv1b53249445h.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 6243027,
+      "width": 6220,
+      "height": 8704,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/7-10-31%2C_manifestation_des_ch%C3%B4meurs_%C3%A0_Londres_%28CNews%29_-_btv1b53249445h.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:7-10-31,_manifestation_des_ch%C3%B4meurs_%C3%A0_Londres_(CNews)_-_btv1b53249445h.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=161168564",
+      "sha1": "4740c7d3bb4fc75f9490355f32a73dff32bc254e",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2025-03-05 04:06:28",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "<div class=\"fn\">\n7/10/31, manifestation des chômeurs à Londres (CNews) : [photographie de presse] / [Agence Rol] ; [d'après la photographie originale de l'agence photographique] CNews</div>",
+        "source": "commons-desc-page"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "Unemployment in the United Kingdom|Artworks without Wikidata item|PD-1996|Large images|PD France|Files from Gallica|PD-US missing SDC copyright status|Images from Gallica (Bibliothèque nationale de France) uploaded by Gzen92Bot|Photographs by Agence Rol in the Bibliothèque nationale de France|Photographs by Central News (London)|1931 photographs by Agence Rol|1931 black and white photographs from Gallica",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Artist": {
+        "value": "<div class=\"fn value\">\n<p>Central News (Agence photographique). Agence photographique pour le document reproduit (commanditaire)\n</p>\nAgence Rol. Agence photographique (commanditaire)</div>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "Sujet : Manifestations -- Londres (GB)\n<p>Policiers -- Londres (GB)\nChômeurs -- Londres (GB)\nLondres (GB)\nRéférence bibliographique : Rol, 158430\nAppartient à l’ensemble documentaire : Pho20Rol\nImage de presse\nCouverture : 07 octobre 1931\n</p>\nLangue : français",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "1931<div style=\"display: none;\">date QS:P571,+1931-00-00T00:00:00Z/9</div>",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "Bibliothèque nationale de France",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

@@ -576,6 +576,10 @@ curl -s 'https://commons.wikimedia.org/w/api.php?action=query&format=json&genera
 curl -s 'https://www.flickr.com/photos/<stream>/<photoid>/sizes/o/' | grep -oE 'https://live\.staticflickr\.com/[^"]*_o\.jpg'
 ```
 
+⚠️ **2026-09-29:** take these files **from Commons, not from the institution's Flickr page**, until
+someone reads The National Archives' Flickr terms in a browser; a search summary described them as
+non-commercial and the scripted page would not show them either way.
+
 🔴 **Read the tier honestly.** *"No known copyright restrictions"* is an **institution's
 disclaimer, not a licence grant** — it says the library is unaware of a restriction, and it can be
 wrong. It is green **for material old enough that the copyright has genuinely expired**, which is
@@ -1367,6 +1371,57 @@ Departmental video may be OGL, may be Crown copyright with separate terms, may b
 production. **The next step is concrete and small** — pick one gov.uk or departmental video, find
 its stated licence, and write the answer here. Until someone does, this is a lead, not a source.
 
+#### UK Crown films made before 1 June 1957 — archive.org `british_gov_public_films`
+
+🟢 **New 2026-09-29, and it is the first free route to British post-war FILM this page has had.**
+Found by the Magic Money Tree pass 6. ✅ **Ruled by Kai the same day:** *"Expired Crown copyright
+films are usable, 100%."* It extends his 12 September ruling on expired-Crown-copyright *stills* to the
+moving image. **Picture only; the soundtracks are not free.**
+
+**The source.** archive.org collection `british_gov_public_films`, **22 items, 1945 to 1952**,
+Central Office of Information and Crown Film Unit titles supplied by The National Archives and
+uploaded in 2005 by Internet Archive staff (`florian@archive.org`; collection by `tracey@archive.org`).
+Every item: original `<id>.mpg`, **768×576 MPEG-2**, 8 to 18 minutes, about 600 MB, item rights field
+*"UK Crown Copyright"*, no `licenseurl`. All 22 `/metadata/`-checked live on 2026-09-29.
+
+```bash
+curl -s 'https://archive.org/advancedsearch.php?q=collection%3Abritish_gov_public_films&fl[]=identifier&fl[]=title&fl[]=date&fl[]=description&rows=50&sort[]=date+asc&output=json' \
+  | jq -r '.response.docs[] | [(.date//""|.[0:4]), .identifier, .title] | @tsv'
+```
+
+**Why the picture is free, each link fetched 2026-09-29.** Our reasoning, not legal advice.
+
+| Link | Source | Words |
+| --- | --- | --- |
+| A pre-1957 film has no film copyright | CDPA 1988 Sch. 1 para 7(1), `legislation.gov.uk/ukpga/1988/48/schedule/1` | *"No copyright subsists in a film, as such, made before 1st June 1957."* Para 7(3): its frames are treated as photographs. Para 7(2): a fiction film is also a dramatic work |
+| The National Archives says the same | `nationalarchives.gov.uk/terms-and-conditions/copyright/copyright-and-related-rights/` | *"Films made before 1 June 1957 were not protected as films but as sequences of photographs."* *"The standard duration of Crown copyright is for 50 years after the year of publication or for 125 years after creation."* |
+| Crown photographs before 1957 keep their 1956 Act term | CDPA Sch. 1 para 41(2)(d) | *"published photographs and photographs taken before 1st June 1957"* |
+| That term has run | Commons `Template:PD-UKGov` | a Crown photograph *"taken prior to 1 June 1957"*, or a work *"published prior to 1976"*, is public domain; *"HMSO has declared that the expiry of Crown Copyrights applies worldwide"* |
+
+🔴 **What is NOT free: the soundtrack.** Commissioned music and commentary are separate works with
+their authors' terms. Seen so far: Mátyás Seiber's music on the Charley cartoons (to 2030), E. M.
+Forster's commentary and Richard Addinsell's score on *A Diary for Timothy* (Forster to 2040).
+**Picture only, `-an` always.**
+
+🔴 **Two caveats to repeat before a clip ships.** The "Crown copyright" label is The National
+Archives' attribution carried in an archive.org field, not a licence URL. And the cartoons were made
+by a private studio (Halas & Batchelor) on COI commission; the 1956 Act treats work made *"under the
+direction or control"* of a department as Crown, which is how TNA labels them. 🔴 **Take the file from
+archive.org or Commons, never from the BFI or IWM**, whose own terms would attach. Commons holds a
+few of the same films (`Your_Very_Good_Health.ogv`, `New_Town_COI.ogv`) but at **400×300**; the
+archive.org originals are the ones to use.
+
+🔴 **Do not confuse it with `uk_wwii_public_info_films_one`**, a different archive.org item whose
+licence is **CC BY-NC-ND 3.0** and whose own text says the films are "not classed as 'Public
+Domain'… contact the BFI". That one is red.
+
+**Crown Film Unit titles outside the collection** exist on archive.org under personal uploads
+(`DiaryForTimothy`, `ProudCity`, uploader `tom@punchcard.tv`, uploader-asserted PD): same copyright
+reasoning, weaker provenance. Amber twice over.
+
+What each film shows, by contact sheet: the Magic Money Tree ledger,
+[section 11d](../stories/magic-money-tree/footage.md#11d-scenes-07-09-10-10b-12-14-the-british-post-war-film-problem--solved-by-expired-crown-copyright).
+
 ---
 
 ### 🔴 Red — do not use
@@ -1377,13 +1432,13 @@ its stated licence, and write the answer here. Until someone does, this is a lea
 
 | Source | The position | Price |
 | --- | --- | --- |
-| **British Pathé** | 85,000+ newsreels, all on YouTube. Asserts copyright over its **entire collection**, states **none of it is public domain**. YouTube embed is free; extraction or editing needs a paid per-second licence — *"this requirement applies irrespective of whether we supply the material to you ourselves or you have obtained it from another source."* Preview downloads are watermarked. **Downloading from YouTube does not launder the rights.** | Per-second, 60s minimum. A ~$2,500+/minute figure appeared in search snippets — **unconfirmed**, no live vendor page fetched |
+| **British Pathé** | 85,000+ newsreels, all on YouTube. Asserts copyright over its **entire collection**, states **none of it is public domain**. YouTube embed is free; extraction or editing needs a paid per-second licence — *"this requirement applies irrespective of whether we supply the material to you ourselves or you have obtained it from another source."* Preview downloads are watermarked. **Downloading from YouTube does not launder the rights.** | ✅ **Licence dialog read live in a browser, 2026-09-29:** online use, 5 years, worldwide, per whole film: **£275 + VAT** single site / **£565 + VAT** multiple sites for a film of about a minute (*Prefabs* 1948 `78496`; NHS trailer 1948 `91589`; Jarrow 1936 `97696`), rising to **£410 / £745 + VAT** for a 7-minute VE Day film (`93856`). 🔴 **Online licences are limited to *"a NON-COMMERCIAL ENTITY (footage is not to be available to buy, rent, or download to visitors of the site)"***; TV and film production is "CONTACT US"; files arrive SD 720×576 **with the Pathé logo on screen**. *(The earlier "$2,500 a minute" snippet is superseded.)* |
 | **IWM** | The definitive UK WWI/WWII official archive. Two tiers: a **free Non-Commercial Licence** and paid commercial licensing. 🔴 The free tier **expressly excludes** use "intended for or directed toward commercial advantage," commercial-organisation websites, **and "fundraising or campaigning on behalf of organisations."** BadCode fails on both the commercial *and* the campaigning ground. Sensitive-subject footage additionally requires submitting a full script before release | Quote-based; "fee… based on the rights, territories and duration required" |
 | **BFI** | UK National Archive footage sales | **Live rate card, verified:** £840 + £14/sec single-country TV 5yr; £3,300 + £55/sec worldwide TV 10yr; **£8,580 + £143/sec worldwide all-media perpetuity**; £4,320 + £72/sec documentary rate. **No free tier exists anywhere on the card.** 🔴 BFI Player (streaming) is a different product from Archive Footage Sales |
 | **Footage Farm** | ~25,000 reels of genuinely-PD US government material — but charges a **one-time buy-out fee** for research/mastering/delivery. Low licence risk, real cost | Quote-based, no price list. A ~£200/reel trade-press figure is **unconfirmed** |
 | **CriticalPast** | 59,000+ clips 1890s–1990s, largely US government sources. "Royalty-free, worldwide, in perpetuity" — meaning **no further fee after a paid purchase** | ~$125/clip starting, ~$200 for a 2-min HD clip — **unconfirmed secondary source** |
 | **Periscope Film** | Large military/aviation library. Posts previews to archive.org **under CC BY-NC-ND 4.0** — free to download, illegal for us to publish | Per-clip, quote-based |
-| **Huntley Film Archives** | 80,000 titles of British social history 1895–1980s. Per-clip commercial licensing, no free tier | **Unverified** — browse/contact only |
+| **Huntley Film Archives** | 80,000 titles of British social history 1895–1980s. Per-clip commercial licensing, no free tier. ✅ **Terms read live 2026-09-29** (`/includes/licensingterms.html`): the terms *"do not constitute a licence of the Intellectual Property Rights in any Content. These must be obtained from the owner of such rights"*; clause 6.9 permits only colour and aspect-ratio changes; overuse is charged at *"triple the amount of such shortfall"* | Per second, 30-second minimum; price calculator behind a sign-in; "Special Order" technical fee *"starts at £250"* |
 | **Hearst Metrotone News** | 27M+ feet, 1914–1968, at UCLA / Packard Humanities. Rights-managed, **no PD dedication** comparable to Universal Newsreel's | **Unverified** |
 | **March of Time** | Release library acquired by **HBO Archives**, licensed commercially. A narrow subset of outtakes in NARA/USHMM custody may be PD — easy to get wrong | **Unverified** |
 | **NFB Canada** | 50,200+ shots from 13,000+ productions. Operates its archive as a paid stock business | Pricing calculator, **unverified** |
@@ -1392,7 +1447,9 @@ its stated licence, and write the answer here. Until someone does, this is a lea
 | **Artgrid** | Subscription-only cinematic stock, no free tier | ~$19.99–$49.92/mo tiers — **unconfirmed**, the pricing page is a JS shell |
 | **Filmsupply** | Per-clip premium footage | **Live page, verified:** Internal from **$109/clip**, Web/Social from **$219/clip**, Extended Use quote-only |
 | **Musicbed** | Music sync, sister brand (FM LLC) | ~$29.99 personal / ~$99.99 commercial per month — **unconfirmed**, JS shell |
-| **Storyblocks** | 7M+ assets, subscription | **Live page, verified:** Essentials £16/mo, Unlimited £23/mo, Small Business £35/mo, all billed annually. 🔴 **The 7-day free trial page now returns HTTP 410 Gone** — the offer is withdrawn |
+| **Storyblocks** | 7M+ assets, subscription | **Live page, verified:** Essentials £16/mo, Unlimited £23/mo, Small Business £35/mo, all billed annually. 🔴 **The 7-day free trial page now returns HTTP 410 Gone** — the offer is withdrawn. 🔴 **Barred by its own licence, read live 2026-09-29** (`/license/individual-license`): *"exclude media to be used … in connection with political campaigns or other political purposes"* |
+| **Alamy** | Per-image editorial stills, including Mirrorpix and Popperfoto press archives. **The one paid category that fits our budget** | ✅ **Live image pages, 2026-09-29:** Personal £17; Business Editorial Standard **£80**; Editorial Enhanced **£170** (*"use within a documentary or news programme in any broadcast and web media"*); Super-Enhanced £300. Editorial use only; no political bar found in its terms. Example: image `458482108`, nurses in training, 20 Feb 1948, **4979×3924** |
+| **PA Images** | Press Association archive | ✅ **Rate card read live 2026-09-29:** editorial web £375 a year, social £375, TV from £350 |
 
 #### Embed-only news wires
 
@@ -1653,7 +1710,8 @@ with it, but there's the option to pay a licence fee for some footage if we need
 | What £100–200 does **not** buy | Verified figure |
 | --- | --- |
 | **BFI archive footage** | £840 + £14/sec for *single-country TV, 5 years* — the cheapest line on their card, **4× the absolute ceiling before a single second is counted.** Live rate card, fetched 2026-08-22 |
-| **British Pathé, IWM, BBC Motion Gallery, Huntley** | All quote-based, no published floor, and all aimed at broadcast budgets. IWM's *free* tier separately bans campaigning use |
+| **British Pathé** | ✅ Priced live 2026-09-29: **from £275 + VAT** for one short film, online, single site; £565 + VAT for more than one site. Over the ceiling, **and limited to non-commercial entities**, so out twice |
+| **IWM, BBC Motion Gallery, Huntley** | Quote-based or behind a sign-in, all aimed at broadcast budgets. IWM's *free* tier separately bans campaigning use. No price for a BBC news clip could be found anywhere on 2026-09-29 |
 | **Filmsupply** | $109/clip internal, $219/clip web — **one clip is the entire budget** |
 
 🔴 **The honest position: £200 does not reach the UK archive houses, and that was the gap the
@@ -1666,9 +1724,13 @@ per-second charges begin.
    category that reliably lands inside £100, and [step 8](#find-footage-of-a-historical-event--start-here)
    already says a push-in on a still is usually the right answer anyway. **This is the first place
    to spend, not the last.**
-2. **A one-month subscription, used hard and cancelled.** Storyblocks is £16–£35/month (live page,
-   verified). 🔴 Check its EULA for a political-use bar before assuming — that clause, not the
-   price, is what usually kills stock for us.
+   ✅ **Priced 2026-09-29: Alamy, £80 standard editorial or £170 for its documentary tier, per image.**
+   ❌ **And declined the same day.** Kai: *"£170 for one clip is too much."* The budget is for a whole
+   film; one item that eats most of it is not wanted. Price a spend against that, not against the ceiling.
+2. ~~A one-month subscription, used hard and cancelled.~~ 🔴 **Closed 2026-09-29: Storyblocks' licence
+   excludes "political campaigns or other political purposes"**, and Pond5's £29 editorial clips carry a
+   bar on use "in connection with any political policy or viewpoint" whose editorial carve-out is
+   unresolved. The clause, not the price, is what kills stock for us.
 3. **Nothing.** Still the expected outcome for most beats.
 
 **Three rules that come with the budget.**
@@ -1680,6 +1742,9 @@ per-second charges begin.
   costs nothing at source. Paying them is paying for our own laziness.
 - **Every spend is a 🔴 stop gate.** Price it, name the exact item and the exact terms, say what it
   buys that free cannot, and **wait for Kai.** The budget is permission to ask, not permission to buy.
+- ✅ **Reading a paid site in a browser is allowed** (Kai, 2026-09-29: *"Yeah, of course"*). Most stock
+  and archive houses block scripted fetching, so a real browser session is the only way to see a
+  price or a licence clause. Own tab only, no log-in, no trial, no purchase.
 
 **What has not changed: never end an answer at "buy X."** State the free route first. If there
 genuinely isn't one, say so plainly, then price the paid option against the ceiling above and let
@@ -1808,6 +1873,35 @@ KB, which is how a specific 84-second block was found inside a 14-minute film be
 parliamentlive.tv's Downloading & Sharing terms. **parliament.uk returned a Cloudflare JS challenge
 and parliamentlive.tv's `/Guidance`, `/Help` and `/Home/Copyright` all 404'd**, both on 2026-08-22.
 The OPL entry says so in place.
+
+### Re-verified and corrected — 2026-09-29 Magic Money Tree pass 6
+
+🔴 **What moved this time: a claim this page made about the UK ("film is all paid") and a belief
+that a Commons licence label matches its source.** Five Sonnet agents, 15 web searches each, plus
+direct fetches by the lead session. Full detail: the Magic Money Tree ledger,
+[section 11](../stories/magic-money-tree/footage.md#11-pass-6-29-september-2026-five-parallel-search-agents-on-the-unsourced-scenes-and-the-paid-routes-priced).
+
+| Claim as it stood | What the live run returned | What changed |
+| --- | --- | --- |
+| No free British post-war film exists | archive.org `british_gov_public_films`: **22 Crown films, 1945–52**, 768×576, all live | 🟢 **New green source**, [entry above](#uk-crown-films-made-before-1-june-1957--archiveorg-british_gov_public_films). Ruled usable by Kai 2026-09-29, picture only |
+| `111-adc-4267` is dead (2026-09-12: 404) | `/metadata/` returns a full record: FedFlix `usgovfilms`, `skip@avgeeks.com`, 655×480, 614 s, NARA NAID 18069 | **Live again.** Its "V-E Day in Piccadilly" is only the last ≈45 s. Liveness is a per-session fact in both directions |
+| A Commons file sourced from a UK government Flickr account carries that account's licence | **Number 10** (`number10gov`) photos `50462222663`, `50421919238`, `49948534748` and **HM Treasury** photo `49753509866` all show **`by-nc-nd/2.0`** on Flickr today; Commons records them as CC BY 2.0 / OGL 3, with `{{FlickreviewR\|status=passed\|reviewdate=2023-02-20\|reviewlicense=cc-by-2.0}}` on the Number 10 file | 🔴 **New trap: the source account relicensed.** A CC licence is perpetual once granted, and the review-bot line is dated evidence of the grant, so the Commons copy is 🟡 amber, a human call, with that line kept in the receipt. **The Foreign Office account is still live CC BY 2.0** (`6128163568`) |
+| Bank of England material is public-sector, so open | `bankofengland.co.uk/legal`: *"for personal use or internal use within an individual organisation for non-commercial purposes"*; OGL covers only its statistical database and Rulebook; its Flickr is CC BY-NC-ND 4.0 | 🔴 **Red for the Bank's images and diagrams.** Quoting its words, short and acknowledged, is the quotation exception |
+| Court judgments: licence unknown | `caselaw.nationalarchives.gov.uk/open-justice-licence`: Open Justice Licence v2.0 permits copying, publishing and commercial use | 🟢 **New.** Credit string: *"Contains information licensed under the Open Justice - Licence v2.0."* Contracts Finder notices are OGL v3 |
+| gov.uk video might be OGL | gov.uk *pages* carry the OGL footer; Number 10's YouTube briefings carry the standard YouTube licence and no OGL statement | **Still unanswered for video.** gov.uk stills and documents: 🟢 |
+| The National Archives' Flickr stream is a green route | One agent read, **in a search summary only**, that TNA's Flickr terms are *"research, private study or education (non-commercial use) only"*. The lead session fetched `flickr.com/people/nationalarchives/` (HTTP 200) and could not find the terms in the scripted page | ⚠️ **Unverified in both directions.** Before taking a TNA file from Flickr rather than from Commons, read its terms in a browser |
+| DVIDS's notice | Now branded **Department of War**: *"DoW VI may not be used in a manner that could imply endorsement of … any political party or candidate for partisan political office"*, plus a mandatory disclaimer line | Clause unchanged in substance; name changed |
+| British Pathé is "per second, 60 s minimum, maybe $2,500 a minute" | Licence dialog read in a browser: **from £275 + VAT per short film online**, non-commercial entities only, logo burned in | Priced and still red; see the [paid table](#paid-archive-houses-the-obvious-specialists) |
+| Storyblocks might be a one-month answer | Licence excludes *"political campaigns or other political purposes"* | 🔴 Closed |
+| French and German 1920s–30s press photographs: unexplored | BnF Gallica's own OAI records (`gallica.bnf.fr/services/OAIRecord?ark=<ark>`) return `<dc:rights>domaine public</dc:rights>` for Agence Rol and Agence Meurisse photographs of 1923 and 1931, at **6,000 to 8,500 px** on Commons | 🟢 **New stills route** for interwar Europe, including London (unemployed demonstration, 7 Oct 1931). The Bundesarchiv equivalents are CC BY-SA: amber |
+
+🔴 **Hosts that block this machine, 2026-09-29** (HTTP 403 or a Cloudflare / CloudFront / DataDome
+challenge, from both `curl` and the fetch tool): `loc.gov`, `parliament.uk`,
+`hansard.parliament.uk`, `members.parliament.uk`, `collections.si.edu`, `historicengland.org.uk`,
+`britishpathe.com`, `gettyimages.co.uk`, `pond5.com`, `shutterstock.com`, `topfoto.co.uk`; Alamy
+image pages return 202 with no body. **Library of Congress rights lines can be read off the Commons
+mirror's `Permission` field** when the host will not answer. The stock houses can only be read in a
+real browser, which is how the prices above were obtained.
 
 ### Read but not verified — treat with care
 
@@ -1954,6 +2048,12 @@ re-ran every command and licence claim live, and revised again 2026-09-12 by the
 sourcing pass** ([corrections](#re-verified-and-corrected--2026-09-12-magic-money-tree-pass)) — which
 found the flagship green item **withdrawn from archive.org while still in its search index**, added
 the liveness rule and the free-contact-sheet technique, and opened UK stills as a real route.
+**Revised again 2026-09-29 by the Magic Money Tree pass 6**
+([corrections](#re-verified-and-corrected--2026-09-29-magic-money-tree-pass-6)), which found **free
+British post-war film** (Crown films made before 1 June 1957, ruled usable by Kai the same day, picture
+only), priced British
+Pathé, Alamy and PA Images live, closed Storyblocks on its political clause, and found that UK
+government Flickr accounts have relicensed to non-commercial under files Commons still labels open.
 
 **68 sources as of 2026-08-22: 7 green, 27 amber, 34 red.** 🔴 **The green tier went from 12 to 7
 in that revision** — see [Re-verified and corrected](#re-verified-and-corrected--2026-08-22-critic-pass)

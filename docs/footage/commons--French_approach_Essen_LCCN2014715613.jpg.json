@@ -1,0 +1,104 @@
+{
+ "continue": {
+  "iistart": "2018-03-28T07:31:29Z",
+  "continue": "||"
+ },
+ "query": {
+  "pages": {
+   "67768025": {
+    "pageid": 67768025,
+    "ns": 6,
+    "title": "File:French approach Essen LCCN2014715613.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 2313799,
+      "width": 5078,
+      "height": 3640,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/French_approach_Essen_LCCN2014715613.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:French_approach_Essen_LCCN2014715613.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=67768025",
+      "sha1": "7939a94f581ffcef7efcd040a37557aae6922306",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2018-06-01 21:02:42",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "French approach Essen LCCN2014715613",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "January 1923 Germany photographs|Images from the Library of Congress|PD-Bain|George Grantham Bain Collection|Occupation of the Ruhr (1923)|21e régiment de dragons|PD-old-70-expired|Images uploaded by Fæ|CC-PD-Mark|Library of Congress-no known copyright restrictions|January 1923 in Essen|PD-old missing SDC copyright status|French army in Essen 1923-1925|4e division de cavalerie during the Interwar 1919-1935",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "ImageDescription": {
+        "value": "<i>Title:</i> French approach Essen\n<i>Abstract/medium:</i> 1 negative : glass ; 5 x 7 in. or smaller.",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "1900",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<p>Library of Congress\n</p>\n<ul><li><i>Catalog:</i> <a rel=\"nofollow\" class=\"external free\" href=\"https://lccn.loc.gov/2014715613\">https://lccn.loc.gov/2014715613</a></li>\n<li><i>Image download:</i> <a rel=\"nofollow\" class=\"external free\" href=\"https://cdn.loc.gov/service/pnp/ggbain/35400/35462v.jpg\">https://cdn.loc.gov/service/pnp/ggbain/35400/35462v.jpg</a></li>\n<li><i>Original url:</i> <a rel=\"nofollow\" class=\"external free\" href=\"https://www.loc.gov/pictures/item/2014715613/\">https://www.loc.gov/pictures/item/2014715613/</a></li></ul>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "Bain News Service, publisher",
+        "source": "commons-desc-page"
+       },
+       "Permission": {
+        "value": "This image  is available from the United States <a href=\"//commons.wikimedia.org/wiki/Library_of_Congress\" title=\"Library of Congress\">Library of Congress</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"//www.loc.gov/rr/print/\">Prints and Photographs division</a><br> under the digital ID <a rel=\"nofollow\" class=\"external text\" href=\"https://hdl.loc.gov/loc.pnp/ggbain.35462\">ggbain.35462</a>.<br><small>This tag does not indicate the copyright status of the attached work. <span style=\"white-space:nowrap\">A normal <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Copyright_tags\" title=\"Special:MyLanguage/Commons:Copyright tags\">copyright tag</a> is still required.</span> <span style=\"white-space:nowrap\">See <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Licensing\" title=\"Special:MyLanguage/Commons:Licensing\">Commons:Licensing</a>.</span></small>",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

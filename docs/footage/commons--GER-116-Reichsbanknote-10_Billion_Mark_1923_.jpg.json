@@ -1,0 +1,101 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "42571027": {
+    "pageid": 42571027,
+    "ns": 6,
+    "title": "File:GER-116-Reichsbanknote-10 Billion Mark (1923).jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 5160844,
+      "width": 5687,
+      "height": 2996,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/GER-116-Reichsbanknote-10_Billion_Mark_%281923%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:GER-116-Reichsbanknote-10_Billion_Mark_(1923).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=42571027",
+      "sha1": "b05e0005f3b9d15b986fa49d97309b9aa95199ad",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2015-08-23 05:14:10",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "GER-116-Reichsbanknote-10 Billion Mark (1923)",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "With currency|NNC Banknotes of Germany|PD-1996|Self-published work|Featured pictures on Wikipedia, English|PD-Art (PD-anon-70-EU)|Items with VRTS permission confirmed|Featured Pictures (English Wikipedia) by User:Godot13|All Images by User:Godot13|PD-Art (PD-1996)|Files with Assessments template missing SDC Commons no value quality assessment|Files that may be protected by currency protection laws|Banknotes with a face value of 10000000000|10 billion Mark banknotes of the Weimar Republic|NNC Banknotes scanned by User:Godot13|Featured Pictures (English Wikipedia, numismatic) by User:Godot13|NNC banknote Featured Pictures (English Wikipedia)|2015 User:Godot13",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "ImageDescription": {
+        "value": "German <a href=\"https://en.wikipedia.org/wiki/Papiermark\" class=\"extiw\" title=\"w:Papiermark\">Papiermark</a> of the <a href=\"https://en.wikipedia.org/wiki/Weimar_Republic\" class=\"extiw\" title=\"w:Weimar Republic\">Weimar Republic</a>, post <a href=\"https://en.wikipedia.org/wiki/World_War_I\" class=\"extiw\" title=\"w:World War I\">World War I</a> <a href=\"https://en.wikipedia.org/wiki/Hyperinflation_in_the_Weimar_Republic\" class=\"extiw\" title=\"w:Hyperinflation in the Weimar Republic\">hyperinflation</a> era (1921–24).",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "1923",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "Image by <a href=\"//commons.wikimedia.org/wiki/User:Godot13\" title=\"User:Godot13\">Godot13</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "Reichsbankdirektorium Berlin",
+        "source": "commons-desc-page"
+       },
+       "Permission": {
+        "value": "Use of this image should give credit to the <b><a href=\"https://en.wikipedia.org/wiki/National_Numismatic_Collection\" class=\"extiw\" title=\"w:National Numismatic Collection\">National Numismatic Collection</a>, <a href=\"https://en.wikipedia.org/wiki/National_Museum_of_American_History\" class=\"extiw\" title=\"w:National Museum of American History\">National Museum of American History</a></b>.",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "currency",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

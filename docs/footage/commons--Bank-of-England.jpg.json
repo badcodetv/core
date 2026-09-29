@@ -1,0 +1,113 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "121132955": {
+    "pageid": 121132955,
+    "ns": 6,
+    "title": "File:Bank-of-England.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 14398045,
+      "width": 7200,
+      "height": 5630,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Bank-of-England.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bank-of-England.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=121132955",
+      "sha1": "275040f7f9c8fe8bc1a477cf12b5f6400626b6ce",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2022-07-27 06:51:05",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "Bank-of-England",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "Bank of England building, London|Self-published work|Files with coordinates missing SDC location of creation (51° N, 1° W)",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "GPSLatitude": {
+        "value": "51.513481",
+        "source": "commons-desc-page"
+       },
+       "GPSLongitude": {
+        "value": "-0.088281",
+        "source": "commons-desc-page"
+       },
+       "GPSMapDatum": {
+        "value": "WGS-84",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "ImageDescription": {
+        "value": "View of the Bank of England building in July 2022",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "2022-07-23 11:03:19",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/wiki/User:Acediscovery\" title=\"User:Acediscovery\">acediscovery</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Creative Commons Attribution 4.0",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by/4.0",
+        "source": "commons-desc-page"
+       },
+       "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "cc-by-4.0",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

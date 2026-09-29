@@ -1,0 +1,100 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "79888236": {
+    "pageid": 79888236,
+    "ns": 6,
+    "title": "File:Royal Courts of Justice 2019.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 7013145,
+      "width": 4146,
+      "height": 2764,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Royal_Courts_of_Justice_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Royal_Courts_of_Justice_2019.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=79888236",
+      "sha1": "f90ae5a12c3af267de23b477b620b48ecdd4ba07",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2019-06-23 10:15:09",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "Royal Courts of Justice 2019",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "CC-Zero|Self-published work|Images by David Castor-buildings|Royal Courts of Justice, main entrance",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "ImageDescription": {
+        "value": "Royal Courts of Justice main gate.",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "2019-04-20 14:44:27",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<table border=\"3\"><tbody><tr><td>\n<table border=\"0\" cellpadding=\"2\" style=\"background:#dfd3c7;\"><tbody><tr><td>\n<p>This image was produced by me, David Castor (<a href=\"//commons.wikimedia.org/wiki/User:Dcastor\" title=\"User:Dcastor\">user:dcastor</a>). The pictures I submit to the Wikipedia Project are released to the public domain. This gives you the right to use them in any way you like, without any kind of notification. This said, I would still appreciate to be mentioned as the originator whenever you think it complies well with your use of the picture. A <a rel=\"nofollow\" class=\"external text\" href=\"mailto:epost@pastorcastor.se\">message</a> to me  about how it has been used would also be welcome. You are obviously not required to respond to these wishes of mine, just in a friendly manner encouraged to. (All my photos are placed in <a href=\"//commons.wikimedia.org/wiki/Category:Images_by_David_Castor\" title=\"Category:Images by David Castor\">Category:Images by David Castor</a> or a subcategory thereof.)\n</p>\n</td><td>\n<p><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:David_Castor_Wikimedia.jpg\" class=\"mw-file-description\"><img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/David_Castor_Wikimedia.jpg/250px-David_Castor_Wikimedia.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"170\" height=\"128\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/David_Castor_Wikimedia.jpg/500px-David_Castor_Wikimedia.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"3081\" data-file-height=\"2325\"></a></span>\n</p>\n</td></tr></tbody></table>\n</td></tr></tbody></table>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Creative Commons Zero, Public Domain Dedication",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "LicenseUrl": {
+        "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "commons-desc-page"
+       },
+       "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "cc0",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

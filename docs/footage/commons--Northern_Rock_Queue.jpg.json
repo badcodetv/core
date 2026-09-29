@@ -1,0 +1,103 @@
+{
+ "continue": {
+  "iistart": "2007-09-15T22:40:06Z",
+  "continue": "||"
+ },
+ "query": {
+  "pages": {
+   "2759713": {
+    "pageid": 2759713,
+    "ns": 6,
+    "title": "File:Northern Rock Queue.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 682334,
+      "width": 2592,
+      "height": 1944,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Northern_Rock_Queue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Northern_Rock_Queue.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=2759713",
+      "sha1": "4e4fca73c4a75e2bab771edae50efa2a43aca905",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2013-07-06 12:24:35",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "Northern Rock Queue",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "Taken with Fujifilm FinePix A500|2007-09-14|Flickr images reviewed by FlickreviewR|September 2007 in East Sussex|2007 in Brighton|Clothing in 2007|Queues in England|Northern Rock bank run, 2007|Photographs by Dominic Alves",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "ImageDescription": {
+        "value": "Small line of customers (presumably anxious investors and savers) outside a branch of Northern Rock - a Mortgage specialist and a top UK mortgage lender - in North Street, Brighton, East Sussex. The business (a former \"savings and loan\" type Building Society which was demutualised in 1997) has been affected in part by problems in the US \"subprime\" lending market. Picture taken late on Friday afternoon on 14th September 2007.",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "2007-09-14 16:59",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/64097751@N00/1381505612/\">Northern Rock Queue</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/64097751@N00\">Dominic Alves</a> from Brighton, England",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Creative Commons Attribution 2.0",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by/2.0",
+        "source": "commons-desc-page"
+       },
+       "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "cc-by-2.0",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

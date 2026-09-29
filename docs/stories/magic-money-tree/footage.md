@@ -2,8 +2,9 @@
 id: magic-money-tree
 title: "Footage ledger — The Future He Never Saw"
 status: in-progress
-updated: 2026-09-12
-pass: 5 — every scene resolved to a source or an honest gap; 15 assets on disk; one ruling owed
+updated: 2026-09-29
+pass: 6 — five parallel search agents, 2026-09-29: every scene has a free source; British post-war FILM found and RULED usable by Kai (expired Crown copyright, section 11d); paid routes priced, no spend; downloads in section 12
+addendum: 2026-09-28 — five scenes added to the storyboard since this ledger was written; sourced in section 11
 ---
 
 # Footage ledger — *The Magic Money Tree: The Future He Never Saw*
@@ -536,3 +537,404 @@ Passes 1 and 2, both 2026-09-12. Every licence statement above was fetched in th
 confirmed with both `/metadata/` and `/details/`. Corrections owed to
 [`docs/video-fx/footage-sources.md`](../../video-fx/footage-sources.md) are listed in §2c and §3 and
 have been written back there.
+
+---
+
+## 10. 🔴 Scenes added since this ledger was written — nothing sourced, 2026-09-28
+
+Sections 1 to 9 describe the **fourteen-scene** storyboard of 11 September. The storyboard now has
+**nineteen scenes in five movements**. Three scenes were added on 20 September (02a, 10a, 11a) and
+two on 28 September (10b, 15); scene 11a was also rewritten. **No sourcing pass has been run for any
+of them.** Every lead below comes from our own earlier research and is marked ⬜ because nobody
+opened its licence in a session. Nothing here is green.
+
+| Scene | What it needs | Leads we already hold, all ⬜ unverified | Likely route |
+| --- | --- | --- | --- |
+| **02a** Germany, 1923 | Banknotes in bundles; a bank counter; the occupied Ruhr | Library of Congress, Bain collection: *“In a Berlin Bank”* and *“French enter Essen”*; banknote images on Wikimedia Commons; Smithsonian banknote scans. Source: [August research](./research/documentary-research-2026-08-25.md) | Free photographs, slow push-in |
+| **02a**, the famous pictures | Children with banknote bricks; wallpapering with notes | German federal archive, licensed **ShareAlike** | 🔴 Avoid. ShareAlike would pass to the whole film. Kai, 28 September: not worried about exact pictures, so the free ones serve |
+| **10a** The Bank creates money | One transaction, shown plainly | None needed | Our own diagram. Text from the Bank's pages is quoted, not copied as a graphic |
+| **10b** Outgrown | The debt line falling while the country grows | OBR historical data | Our own chart. Nothing to clear |
+| **11** Question Time | The nurses' questions and May's answer | Already red in section 6 | Text cards, **or** a short clip under fair dealing. 🔴 Kai's ruling owed; see the storyboard, section 7 |
+| **11a** The priority lane | The court judgment; the contracts; the peer's own words; a yacht | The judgment at the National Archives' case-law site; government contract notices; the BBC interview of 17 December 2023 | Typeset documents. The interview is BBC-owned: cards, or fair dealing. **No free photograph of the yacht is known** |
+| **15** Coda | Machines, growth, planting | None needed | Original brand imagery, made in Flow |
+
+🔴 **Three traps for whoever runs the pass on scene 11a.**
+
+1. **There are three yachts and the obvious one is wrong.** The Wikipedia article *“Lady M (yacht)”*
+   is a different, larger vessel with a different owner. Ours is the 38.9 m sailing yacht built by
+   Fitzroy in 2006. A picture of the wrong boat is a factual error about a living person. Detail:
+   [the research, section 4](./research/michelle-mone-ppe-medpro.md#4-the-yacht--there-are-three-vessels-get-this-right).
+2. **Her own published photographs are her copyright.** They are not free because they are public.
+3. **Copyright is the smaller risk in this scene.** What the cut implies about a named living person
+   is the larger one, and no licence closes it. The storyboard's legal guardrails at scene 11a are
+   mandatory, and the facts must be re-checked because the litigation is live.
+
+**An illustration of a yacht is allowed** if it is plainly an illustration and is never presented as
+the real vessel. No generated likeness of any living person, ever.
+
+➡️ **Superseded in part by section 11 (29 September):** every scene in this table now has candidates.
+Read section 11 first.
+
+**Scene 05 gained a second job on 28 September.** The 1944 US Army tax sequence in section 2f is now
+also the first of the film's three “who paid” beats. Open item 6b stands: the narrator must not
+repeat the film's figures until they are checked against a primary source.
+
+
+---
+
+## 11. Pass 6, 29 September 2026: five parallel search agents on the unsourced scenes, and the paid routes priced
+
+**What this pass was.** Kai asked for Sonnet web-search agents to find clips for the rebuilt
+storyboard, with a small paid budget no longer ruled out. Five agents ran in parallel, one per gap,
+each capped at 15 web searches (the session's search budget is shared), with unlimited direct
+fetches. They **identified and verified only; nothing was downloaded.** Their raw reports are kept in
+[`research/footage-pass-2026-09-29/`](./research/footage-pass-2026-09-29/README.md); this section is the
+checked version and wins where they differ. Contact sheets of the twelve films this session looked
+inside are on the media drive at `D:\badcode-videos\magic-money-tree\contact-sheets\`.
+
+**Sites that block this machine** (HTTP 403 or a Cloudflare "Just a moment" page, from both `curl`
+and the fetch tool): `loc.gov`, `parliament.uk`, `hansard.parliament.uk`, `britishpathe.com`,
+`gettyimages.co.uk`, `pond5.com`, `collections.si.edu`; Alamy's search returned 202 with an empty
+body. **Sites that answered:** the Wikimedia Commons API, Gallica's OAI records (`gallica.bnf.fr`),
+Flickr photo pages, `bankofengland.co.uk`, `caselaw.nationalarchives.gov.uk`,
+`contractsfinder.service.gov.uk`, `gov.uk`, `dvidshub.net`, `archive.org`. So every Library of
+Congress and Parliament licence below is **as mirrored on Commons**, not as read on the host, and
+every stock-house price is only what a human browser can confirm.
+
+### 11a. Scene 02a, Germany 1923: free, as photographs; no free film exists
+
+**Verdict.** Every picture the narration needs exists as a public-domain press photograph at 5,000
+to 8,500 px, which is a slow push-in each. Moving footage of the 1923 inflation exists only at the
+French broadcast archive INA (in copyright, unpriced) and the German federal film archive (view-only).
+Kai, 28 September: not worried about exact pictures. These serve.
+
+| # | Candidate | Source | Shows (verified how) | Size | Licence as read | Tier | Credit |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | *In a Berlin Bank*, 27 Oct 1923 | Library of Congress, Bain, LCCN 2014716642; Commons `File:In a Berlin Bank LCCN2014716642.jpg` | Bank interior (title and date only, not viewed) | 5085×3647 | Commons permission field: *"No known restrictions on publication"*, citing LoC's Bain rights page. **LoC itself not fetched (403)** | 🟢 | "Library of Congress, Bain Collection" (none required) |
+| 2 | Bain Essen set, Jan 1923 | LCCN 2014715607 to 2014715615: *French enter Essen* (…614), *French approach Essen* (…613), *French at Essen* (…612), *Gov't notice of French Invasion at Essen* (…615), *French at Krupp statue* (…608) | Ruhr occupation (titles only) | ≈5000×3650 each | Same as #1 | 🟢 | Same as #1 |
+| 3 | Agence Rol, dragoon patrol at Essen, 13 Jan 1923 | Gallica `ark:/12148/btv1b530970760`; Commons `File:13-1-23 Essen patrouille de dragons.jpg`. Also machine guns at Essen and cooks at Herne, same date | Occupation (title only) | **8460×6063** | ✅ **BnF's own OAI record, fetched 29 Sept:** `<dc:rights>domaine public</dc:rights>` / `public domain` | 🟢 | "Agence Rol / BnF Gallica" |
+| 4 | Agence Meurisse, Berlin crowd besieging a baker's van, 20 Oct 1923 | Gallica `btv1b9024458p`; Commons `File:Berlin - la foule assiège la voiture d'un boulanger et se dispute le pain à coup de millions de Marks - btv1b9024458p.jpg` | The wage-queue and prices feel (title only) | **7000×5119** | ✅ **BnF OAI record fetched 29 Sept:** `public domain` | 🟢 | "Agence Meurisse / BnF Gallica" |
+| 5 | Reichsbank notes, 500 million, 10 billion, 500 billion marks (1923) | Commons `GER-110-…500 Million Mark (1923).jpg` (5244×3024), `GER-116-…10 Billion Mark (1923).jpg` (5687×2996), `GER-127a-…500 Billion Mark (1923).jpg` (4739×2341) | Note scans, National Numismatic Collection, Smithsonian | see left | Commons "Public domain" via `Licensed-PD-Art-two`, photographer fallback CC-BY-SA 4.0. **Smithsonian's own page not fetched (403)** | 🟢 on the PD-Art reading; 🟡 if the fallback is read strictly | "National Numismatic Collection, National Museum of American History" (requested) |
+| 6 | Reichsbank note, 20 billion marks | Commons `File:Reichsbanknote Zwanzig Milliarden Mark (20 milliards), 2016.12.1.4.jpg` | Note scan | 5097×3320 | Commons `LicenseShortName: CC0` | 🟢 | none |
+| 7 | *Literary Digest*, 8 Dec 1923: *Breadline in Berlin*; children with bundles of marks | Commons, two files | Magazine-page reproductions | 2538×936, 1137×1247 | `PD-US-expired` | 🟢, low resolution | none |
+| 8 | *International News 442* (1921) | archive.org `gov.archives.arc.88967`, live, uploader `carl@media.org` | Item 8: Pershing at Coblenz. 1921, no inflation content | 877 s, 320×240 | `licenseurl` CC0 | 🟢, weak fit | NARA |
+| 9 | *Inflation en Allemagne en 1923* | INA `I14177169`, via Europeana | Only moving-image record found; content unverified | not fetched | Europeana rights: **In Copyright** | 🔴 free; paid candidate, unpriced | |
+| 10 | Hans Richter, *Inflation* (1928) | archive.org `inflation_1928` | Abstract art film | 540×432 | No `licenseurl`; Richter died 1976 | 🔴 | |
+
+**Dead ends, so nobody repeats them.** NARA/FedFlix scoped searches for Germany, Ruhr, inflation,
+Reichsbank return only WWII or later; a 1919–26 date scope returns only #8. Prelinger: nothing.
+`bottrop1925_1/_2`, `kreisfest1925`: CC-BY-NC-ND, red and the wrong year. Commons video categories
+for the Weimar Republic and the Ruhr occupation are empty; the only video hit is a 1923 feature film.
+The Bundesarchiv's famous images (wallpapering with notes, money transport, bread queues) are all
+CC-BY-SA 3.0 de: noted, not used. Not tried: Deutsche Digitale Bibliothek, `filmothek.bundesarchiv.de`.
+
+### 11b. Scenes 10a, 11, 11a, the modern chapter: free, as stills and documents; no free film; no free photograph of Baroness Mone
+
+**Licence findings that outlast this film** (each fetched live by the agent unless marked):
+
+| Source | What it says | Consequence |
+| --- | --- | --- |
+| **Number 10 Downing Street on Flickr** | Live licence field, ✅ re-fetched by this session 29 Sept on three 2020 photos (`50462222663`, `50421919238`, `49948534748`): all **`by-nc-nd/2.0`** today. Commons holds the same photos as CC BY 2.0, and its review bot recorded `{{FlickreviewR|status=passed|reviewdate=2023-02-20|reviewlicense=cc-by-2.0}}` | 🔴 **Non-commercial today.** But a Creative Commons licence is perpetual once granted (CC BY 2.0 §7b), and the bot record is dated evidence that CC BY 2.0 was the licence in force in February 2023. So the Commons copies (for example `Boris Johnson Covid-19 Presser (50462222663).jpg`, 3158×3484, and the Sunak 29 May 2020 briefing) are **🟡 amber: usable on that reasoning after a human says so**, never assumed. Record the review-bot line in the receipt if one is used |
+| **HM Treasury on Flickr** | ✅ Fetched 29 Sept by this session: `flickr.com/photos/hmtreasury/49753509866` shows **`by-nc-nd/2.0`**, while Commons records the same file (`Chancellor Rishi Sunak.jpg`, 6720×4480) as OGL 3 | 🟡 Provenance conflict. Use the gov.uk press-conference still instead, or find the photo on a gov.uk page (OGL footer) before relying on it |
+| **Foreign and Commonwealth Office on Flickr** | ✅ Fetched 29 Sept: `flickr.com/photos/foreignoffice/6128163568` is live **CC BY 2.0** | 🟢 The Osborne 2011 photo is clear either way (Commons says OGL v1.0) |
+| **gov.uk** | Footer on every page fetched (2017 election statement, 23 March 2020 address, June 2010 Budget, Contracts Finder): *"All content is available under the Open Government Licence v3.0, except where otherwise stated"* | 🟢 Stills and documents on gov.uk are OGL. **Videos: unconfirmed.** Number 10's YouTube briefings carry the standard YouTube licence, no CC field, and no OGL statement was found for them |
+| **Bank of England** (`bankofengland.co.uk/legal`) | *"You may … download, display or print the Resources for personal use or internal use within an individual organisation for non-commercial purposes. Requests for further authorisation … should be addressed to: Head of Communications Division"*. OGL covers only the statistical Database and the Rulebook. The Bank's Flickr is CC BY-NC-ND 4.0 | 🔴 for the Bank's images and diagrams. **Quoting its words** (scene 10a: *"This is new money. The Bank says so itself"*) is the UK quotation exception, short and acknowledged: fine. Never lift a Bank graphic. The two pages we quote both load: `…/quarterly-bulletin/2014/q1/money-creation-in-the-modern-economy` (McLeay, Radia, Thomas, 14 March 2014) and `…/monetary-policy/quantitative-easing` |
+| **Open Justice Licence v2.0** (`caselaw.nationalarchives.gov.uk/open-justice-licence`) | Permits copying, publishing and commercial exploitation of judgment text; requires the attribution **"Contains information licensed under the Open Justice - Licence v2.0."**, no misrepresentation, regard for the dignity of the courts | 🟢 The judgment text can sit on screen with that credit line |
+| **Contracts Finder** | Footer OGL v3.0 | 🟢 |
+| **DVIDS** (`dvidshub.net/about/copyright`) | Now branded Department of War: *"DoW VI may not be used in a manner that could imply endorsement of … any political party or candidate for partisan political office"*, plus a mandatory disclaimer line | 🟡 Generic American PPE only, never near a named politician |
+| **UK Parliament official portraits** | CC BY 3.0, **as read in a search summary and as tagged on Commons; parliament.uk itself 403s.** The Members API portrait endpoint returned 404 for Osborne and Sunak and a 2.5 KB placeholder for Baroness Mone | 🟢 for the May portrait on Commons (Roger Harris / UK Parliament, CC BY 3.0), but it is the **2024** Lords portrait, after her premiership |
+
+**Candidates.** Commons files live at `commons.wikimedia.org/wiki/File:<name>`. Sizes and licences
+from the Commons API; ✅ marks a source page this session opened itself on 29 September.
+
+| Scene | Candidate | Shows · living person in frame? | Size | Licence as read | Tier | Credit string |
+| --- | --- | --- | --- | --- | --- | --- |
+| 10a | `Northern Rock Queue.jpg` | Queue outside the Brighton branch, 14 Sept 2007; faces small, unnamed | 2592×1944 | CC BY 2.0; ✅ **Flickr source live, CC BY 2.0** | 🟢 | "Dominic Alves, CC BY 2.0" |
+| 10a | `Lehman Brothers-NYC-20080915.jpg` | The Lehman building on bankruptcy day; no named person | 4368×2912 | CC BY 2.0 | 🟢 | "Robert Scoble, CC BY 2.0" |
+| 10a | `Bank of England Facade.jpg` | Threadneedle Street frontage | 4032×2268 | `PD-self` (uploader's own work, dedicated) | 🟢 | none |
+| 10a | `Bank-of-England.jpg` | Exterior | **7200×5630** | CC BY 4.0 | 🟢 | "acediscovery, CC BY 4.0" |
+| 10a | `Threadneedle Street doors, Bank of England.jpg` | The doors, June 2009 | 1877×2418 | CC BY 2.0 | 🟢 | "Rev Stan, CC BY 2.0" |
+| 11 | `Chancellor of the Exchequer George Osborne (6128163568).jpg` | Osborne speaking, 8 Sept 2011 · **yes** | 2136×1424 | OGL v1.0 on Commons; ✅ **Flickr live CC BY 2.0** | 🟢 | "Foreign and Commonwealth Office, CC BY 2.0" |
+| 11 | `Budget 2014; Chancellor George Osborne delivering his Budget Statement.jpg` | Osborne at the despatch box, 18 March 2014 · **yes** | 960×640 | OGL v3, gov.uk | 🟢, low res | "HM Treasury, OGL v3" |
+| 11 | `Theresa May (2016).jpg` | Official Prime Ministerial portrait, Andrew Parsons, 1 Aug 2016; released under FOI · **yes** | **3705×4504** | OGL 3 (Commons `LicenseUrl` = OGL v3) | 🟢 | "Andrew Parsons / Prime Minister's Office, OGL v3" |
+| 11 | `Theresa May 2017 election speech outside 10 Downing Street.jpg` | May at the lectern, 9 June 2017, the week after *Question Time* · **yes** | 960×640 | OGL v3, gov.uk speech page | 🟢, low res | "HM Government, OGL v3" |
+| 11 | `Official portrait of Baroness May of Maidenhead.jpg` | Lords portrait, **2024** · **yes** | 4482×6720 | CC BY 3.0 | 🟢, wrong era | "Roger Harris / UK Parliament, CC BY 3.0" |
+| 11 | `Donna Wood, Nurse and NHS Ebola volunteer (15652582937).jpg` | An NHS nurse, 2014 · **yes, named** | 5000×3333 | CC BY 2.0 (DFID) | 🟢, but she is a named real person in a scene about pay; **Kai's call** | "DFID, CC BY 2.0" |
+| 11 | *Budget June 2010*, the Red Book | `assets.publishing.service.gov.uk/media/5a7b7f37ed915d1a79023a82/0061.pdf`, 119 pages, 994,610 bytes | document | OGL v3 | 🟢 | "Crown copyright, OGL v3" |
+| 11a | `Chancellor Rishi Sunak.jpg` | Sunak recording the Covid information film, 6 April 2020 · **yes** | 6720×4480 | Commons OGL 3; ✅ **Flickr source live `by-nc-nd/2.0`** | 🟡 conflict, see above | |
+| 11a | `10 Downing Street COVID-19 press conference, 20 March 2020.png` | Sunak, Johnson, Harries at the podiums, "Stay at home" · **yes, three** | 960×640 | OGL 3, gov.uk | 🟢, low res | "10 Downing Street, OGL v3" |
+| 11a | `Liverpool Street Station London UK - empty during COVID lockdown.jpg` | Empty station, 21 May 2020 | 5472×3080 | **CC BY-SA 4.0** | 🟡 ShareAlike | |
+| 11a | `Ambassador Earl Miller joined the inaugural PPE gown shipment…jpg` | Gowns being unloaded, Dhaka; American source, generic | 1024×768 | Public domain (US Embassy) | 🟢 generic, low res | none |
+| 11a | `Maltese Falcon (3420067610).jpg` | A large sailing yacht, **as an illustration only, never the real vessel** | 1280×853 | CC BY 2.0 on Commons; ✅ **Flickr source now 404** | 🟡 Commons copy only; a CC licence is irrevocable but the source is gone | "Derek Hatfield, CC BY 2.0" |
+| 11a | `Royal Courts of Justice 2019.jpg` | The courts' exterior | 4146×2764 | CC0 | 🟢 | none |
+| 11a | The judgment, `caselaw.nationalarchives.gov.uk/ewhc/comm/2025/2486` | *SoS for Health and Social Care v PPE Medpro Ltd* [2025] EWHC 2486 (Comm), Cockerill J, 1 Oct 2025; para 3 *"a few pence less than £122 million"*, para 137 £4.88 a gown | document | Open Justice Licence v2.0 | 🟢 | "Contains information licensed under the Open Justice - Licence v2.0." |
+| 11a | Contracts Finder notice `79397607-466e-4891-b091-3307fd5819d9` | DHSC award to PPE Medpro Limited, published 7 Sept 2020, **£122,000,000** | document | OGL v3 | 🟢 | "Crown copyright, OGL v3" |
+| 11a | Contracts Finder notice `782b70db-4a13-4f67-87a6-8f1a5030cae5` | Second award, published 20 Oct 2020, **£80,850,000** | document | OGL v3 | 🟢 | "Crown copyright, OGL v3" |
+
+**Baroness Mone: no free photograph exists.** Commons has one, `Michelle Mone (Ultimo founder)
+2013.jpg`, 403×489 and CC BY-SA 3.0 (amber, and tiny). Parliament's portrait endpoint is a
+placeholder. Alamy sells editorial press photographs from **£80 per asset** (fetched live; whether a
+self-published film counts as its "editorial website" use is not stated). **Recommendation: do not
+picture her.** The scene is built to read dates and documents, the judgment names her in its own
+text, and a face cut against a yacht is exactly the juxtaposition the legal guardrails warn about.
+The documents carry it, and they are cheaper than £80.
+
+**A high-resolution Covid press-conference photo exists on the same reasoning.** `Boris Johnson Covid-19
+Presser (50462222663).jpg` (3158×3484) and `…(50516975857).jpg` (5415×3318), October 2020, Number 10
+via Commons, CC BY 2.0 with the passed review-bot record: 🟡 amber, as above.
+
+**The yacht.** No free photograph of the real vessel, as expected. Two honest routes: the Commons
+*Maltese Falcon* copy above (amber, source gone), or a plainly labelled illustration made in Flow.
+A Commons sweep for large sailing yachts under CC0 / CC BY with a live source found nothing over
+2,500 px on 29 September; the Dutch Anefo boat-show photos (CC0) are 1970s and read as such.
+
+**Dead ends.** `hansard.parliament.uk` 403, so the 22 June 2010 Budget debate URL is unconfirmed
+(`api.parliament.uk/historic-hansard` stops before 2010). NHS Employers' pay-band pages carry no
+OGL statement. No relevant free video on Commons for lockdown, the Bank, or Downing Street briefings
+(only Welsh Government briefings, CC BY 3.0, the wrong government). Fitzroy Yachts: nothing on
+Commons. Getty 403; Alamy search 202 empty; Shutterstock and PA Images not tried.
+
+### 11c. Scenes 03 and 04, the 1930s slump and the bricks: free, British stills plus British 1945-49 building actuality from section 11d
+
+**Verdict.** No free British moving film of the 1930s slump exists. The British pictures are stills;
+the moving film of idle men put to work is American and must say so. Scene 03 stays the labelled
+illustration the storyboard planned, with real British texture around it. Scene 04 is fully covered.
+
+| Scene | Candidate | Shows · country · verified how | Size | Licence as read | Tier | Credit |
+| --- | --- | --- | --- | --- | --- | --- |
+| 03 | Commons `7-10-31, manifestation des chômeurs à Londres (CNews) - btv1b53249445h.jpg` and its sibling `…(arrestation d'une femme)… btv1b532494442.jpg` | Unemployed demonstration and police, **London, 7 Oct 1931** (BnF catalogue text; not viewed) | **6220×8704** | "Public domain" on Commons; BnF Central News / Agence Rol | 🟢 for a UK publisher; the agent notes the US term on a 1931 publication runs to 1 Jan 2027, so a human should note it | "Agence Rol / BnF Gallica" |
+| 03 | Bundesarchiv `Bild 102-12361` (overturned car, London, Oct 1931), `102-10246` (queue outside a union house, 1930), `102-11463` (men on the street, 1931) | British unemployment 1930–31 | 800 px | CC BY-SA 3.0 de | 🟡 ShareAlike | |
+| 03 | archive.org `National_Hunger_March_1931_The` | Made by the Workers Film and Photo League, an **American** body: almost certainly the US march on Washington. No licence field | ≈11 min | none | 🔴 never under a British line | |
+| 03 / 04 | archive.org `gov.fdr.352.1.4`, *We Work Again* (WPA, 1937) | **US** (Harlem): public-works labour, housing renovation, trade training | 15.6 min | `licenseurl` CC0, FedFlix `carl@media.org` | 🟢, **labelled American** | "National Archives / FDR Library" |
+| 03 / 04 | archive.org `BetterHo1935`, *Better Housing News Flashes No. 7* | **US**, the 1934 National Housing Act | 4:30 | Prelinger, `licenseurl` publicdomain | 🟢 by house rule; a commercial film, so it rests on Prelinger's assertion | "Prelinger Archives" |
+| 04 | archive.org `BrickPavements` / `33-531`, *Brick Pavements* (USDA, 1937) | **US**, how a brick road is built; generic process | 9.5 min | PD mark 1.0 / none; NARA | 🟢, generic | "US Department of Agriculture / National Archives" |
+| 04 | Commons `Technical School- Training at Tottenham Polytechnic, Middlesex, England, UK, 1944 D21395.jpg` | **UK.** Boys learning gauged brickwork (caption) | 800×780 | "Public domain", `PD-UKGov`, Ministry of Information via IWM | 🟢 by the 12 Sept ruling; take from Commons only | "Ministry of Information" |
+| 04 | Commons `Post War Planning and Reconstruction in Britain- Repairing Bomb Damaged Housing D24219.jpg` | **UK.** Bricklayers repairing a bombed terrace | 763×800 | same | 🟢 | same |
+| 04 | Commons `…Grenadier Guardsmen Build Emergency Housing in Windsor D25712.jpg`, `D25714`, `D25716` | **UK.** Guardsmen learning to mix cement and build temporary houses | ≈757×800 | same | 🟢 | same |
+| 04 | Commons `…the Construction of Temporary Housing D24228.jpg` | **UK.** Workmen completing the foundations of a prefab | 800×546 | same | 🟢 | same |
+| 03 / 04 | archive.org `DiaryForTimothy` at ≈17:00 (thumbnail 001020) | **UK, 1945.** A man laying bricks on a scaffolded wall. ✅ Seen on the contact sheet by this session | 768×576 | see 11d | 🟢 ruled 29 Sept, see 11d | |
+| 04 / 10b | archive.org `london_airport_TNA` (1949) | **UK.** Heathrow being built: earth-moving, rubble cleared, workers laying the surface, the opening ceremony, the control tower. ✅ Contact sheet viewed | 768×576, ≈9 min | see 11d | 🟢 ruled 29 Sept, see 11d | |
+| 03 | Commons `Jarrow Marchers en route to London (3084877308).jpg` | **UK**, October 1936 | 1371×1057 | Flickr Commons "no known copyright restrictions" (2008), but the Science Museum Group now licenses its Daily Herald archive CC BY-NC-SA | 🟡 conflicting statements; do not rely on it | |
+
+**Dead ends.** Commons has no Jarrow March or 1932 hunger-march category with files; its "dole
+queue" and "labour exchange" searches return only Geograph (ShareAlike) and modern photos. Commons
+holds almost no British Crown film: `Category:GPO Film Unit films` has one telephone promo,
+`Category:Crown Film Unit films` has three military titles. `uk_wwii_public_info_films_one`
+(which includes *Employment Exchange*) is **CC BY-NC-ND** and its text says to contact the BFI: red.
+Periscope Film's 1930s reel: CC BY-NC-ND, red. `Industrial_Britain` (1933): no licence field,
+amber, content unchecked. The Science Museum Group's Daily Herald 1930s poverty photographs are
+CC BY-NC-SA: red. The National Archives' and LSE Library's Flickr tag feeds returned nothing for
+unemployed, hunger, Jarrow, brick. Huntley Film Archives lists 1930s British hunger-march and
+Rhondda films (`1019835`, `1019811`, `1032656`, `1039037`) but its prices sit behind a sign-in.
+The Rol photographs "Sans travail se dirigeant sur Londres" are dated 1923, not the 1930s. Commons
+answered one 429 (Retry-After 4); the agent slowed to six seconds a request.
+
+### 11d. Scenes 07, 09, 10, 10b, 12, 14, the British post-war film problem: ⭐ solved by expired Crown copyright
+
+**Verdict.** Free British post-war FILM exists. ✅ Kai ruled it usable on 29 September (11f). Twenty-two Central Office of Information and Crown
+Film Unit films of 1945 to 1952 sit on archive.org in the collection `british_gov_public_films`,
+uploaded in 2005 by Internet Archive staff from The National Archives, each a 768×576 MPEG-2 of
+about nine minutes and 600 MB, rights field *"UK Crown Copyright"*. Their pictures are out of
+copyright on the reasoning below. It is cartoons and actuality, not live 1948 wards or building
+sites, and there is still no free moving film of the 1945 election. But it is Britain, in the
+government's own 1948 voice, and three of the films are about our exact subject.
+
+**The legal chain, each link fetched on 29 September 2026.** Stated so it can be checked; it is our
+reasoning, not legal advice.
+
+1. **Copyright, Designs and Patents Act 1988, Schedule 1, paragraph 7** (`legislation.gov.uk/ukpga/1988/48/schedule/1`):
+   *"No copyright subsists in a film, as such, made before 1st June 1957."* Paragraph 7(3): the
+   photographs forming part of such a film are treated as photographs. Paragraph 7(2): a fiction
+   film of that date is also protected as a dramatic work.
+2. **The National Archives** (`nationalarchives.gov.uk/terms-and-conditions/copyright/copyright-and-related-rights/`):
+   *"Films made before 1 June 1957 were not protected as films but as sequences of photographs.
+   Fiction films made before this date are also protected as dramatic works."* And: *"The standard
+   duration of Crown copyright is for 50 years after the year of publication or for 125 years after
+   creation."*
+3. **Schedule 1, paragraph 41(2)(d):** Crown copyright in *"published photographs and photographs
+   taken before 1st June 1957"* runs to the date it would have expired under the 1956 Act.
+   **Commons `Template:PD-UKGov`** states that term as: a photograph taken before 1 June 1957, or a
+   work published before 1976, is public domain, and *"HMSO has declared that the expiry of Crown
+   Copyrights applies worldwide"*.
+4. **So:** a Crown film of 1945 to 1952 is a sequence of Crown photographs taken before 1957, whose
+   copyright expired 50 years after creation, that is by 2002 at the latest; and as a published
+   Crown dramatic work its copyright expired 50 years after publication, the same date. **The
+   picture is free.** This is the same class of reasoning Kai accepted on 12 September for the
+   `PD-UKGov` stills, applied to the moving image.
+5. **What is NOT free:** separately authored elements. The commentary of *A Diary for Timothy* is
+   E. M. Forster's (to 2040); the Charley films' music is Mátyás Seiber's (to 2030); Richard
+   Addinsell scored *Diary*. **Picture only. Strip every soundtrack**, which is the house rule anyway.
+6. **Two residual caveats, said out loud:** the "Crown copyright" label is The National Archives'
+   attribution as carried in archive.org's rights field, not a licence URL; and the cartoons were made
+   by a private studio (Halas & Batchelor) under COI commission, which the 1956 Act treats as Crown
+   when made "under the direction or control" of a government department, as TNA's labelling
+   reflects. Both fit the ruling; both should be repeated before a clip ships. **We take the files from
+   archive.org or Commons, never from the BFI or IWM**, whose own terms would otherwise apply.
+
+**The films, with what this session saw on their thumbnail contact sheets (every ≈30 s).**
+All: archive.org, uploader `florian@archive.org`, collection `british_gov_public_films`, rights
+"UK Crown Copyright", `licenseurl` none, original `<id>.mpg` 768×576. **Tier: 🟢, ruled by Kai 29 September 2026** (*"Expired Crown copyright films are usable, 100%"*). It
+was held at amber until he ruled, because the 12 September ruling covered photographs and film is a
+new class. Picture only. Suggested credit: *"Crown copyright (expired), Central Office of Information, 1948, via
+The National Archives and the Internet Archive"*.
+
+| Scene | Identifier | Year | What it shows (✅ seen) | Length | Bytes |
+| --- | --- | --- | --- | --- | --- |
+| **10b, 05** ⭐ | `pop_goes_the_weasel_TNA` | 1948 | *"A simple explanation of how peacetime taxes were spent paying for the enormous cost of the war."* Live action, b/w: two working men in flat caps on a park bench, one in overalls, talking it through, cut with a gun crew at war, docks, a mother and baby at a clinic window, children at school dinners, **builders on a roof**, a crowded public hall, a child at a doorway. **The film's "who paid" beat, in the state's own 1948 voice** | 581 s | 679,494,460 |
+| **09, 14** ⭐ | `your_very_good_health_TNA` | 1948 | Halas & Batchelor colour cartoon: the NHS explained to Charley. Charley on a bicycle past a chemist's; a map of Britain filling with hospitals; a nurse; a hospital trolley labelled CHARLEY; **Charley falls out of a tree and is treated**. Also on Commons as `Your_Very_Good_Health.ogv`, but only 400×300 there | 517 s | 606,527,404 |
+| **10** ⭐ | `new_town_TNA` | 1948 | Colour cartoon: a slum street, a planner at a desk, a map, then aerial plans of a new estate with houses, greens and roads. *"How to set about replanning a town"* | 495 s | 580,351,604 |
+| 09, 10b | `charley_s_march_of_time_TNA` | 1948 | Technicolor cartoon: the road to the 1948 National Insurance Acts, from a grocer's and a workhouse to a terraced street | 542 s | 634,330,220 |
+| 10b | `charley_junior_s_school_days_TNA` | 1949 | Colour cartoon: schools after the 1944 Act, a new school building, a baby, a doctor, a chemistry class, a "proposed canteen extension" plan | 525 s | 613,250,892 |
+| **10b, 04** | `london_airport_TNA` | 1949 | Live b/w actuality: **Heathrow being built**. Aerial of the site, planes landing, men over plans, rubble cleared, a labourer laying, earth tipped from a truck, a ministerial opening at microphones, the BOAC sign, bombed houses beside the site, the control tower. **A government planting** | ≈9 min | see metadata |
+| 10b | `wonder_jet_TNA` | 1950 | Live b/w: the British jet engine. An engine on a test bed, a Royal Aeronautical Society lecture, a crowd, a design office, a foundry pouring metal, a man in overalls | ≈18 min | see metadata |
+| 10b | `festival_in_london_TNA` | 1951 | Live colour actuality: the Festival of Britain South Bank, crowds, the Dome, the funfair, Big Ben across the river, "Isaac Newton" in the science pavilion, the Big Dipper lit at night | 571 s | see metadata |
+| 07, 10b | `what_a_life_TNA` | 1949 | Crown Film Unit b/w comedy on austerity (Richard Massingham): a man despairing in bed, **a street queue of men in hats and overcoats**, an office piled with forms, a pub, a sandwich board "The end is in sight", a man rowing out to sea with a Union Jack | 669 s | 784,532,356 |
+| 14 | `coughs_and_sneezes_TNA` | 1945 | Massingham sneezing into a handkerchief for 80 seconds; a crowd, a park bench. Marginal | 80 s | see metadata |
+| 09 | `modern_guide_to_health_TNA` | 1947 | Health cartoon (description only; sheet not built) | 526 s | 616,190,836 |
+| context | `brief_city_TNA` (1952), `into_the_blue_TNA` (1950), `journey_by_a_london_bus_TNA` (1950), `men_of_the_world_TNA`, `wing_to_wing_TNA`, `berlin_airlift_TNA`, `pedestrian_crossing_TNA`, `read_any_good_meters_lately_TNA`, `shown_by_request_TNA`, `dont_spread_germs_TNA`, `a_warning_to_travellers_TNA` | 1945–52 | Not sheeted; titles only. *A Warning to Travellers* is about the £5 exchange-control limit, which is on subject for the money story if ever wanted | | |
+
+**Two more Crown Film Unit films, under a personal upload.** Both are 1945 Crown films whose picture
+is free on the chain above, but the archive.org copies were uploaded by `tom@punchcard.tv`
+(added 2008, collection `short_films`) with an uploader-asserted `licenseurl` publicdomain.
+🟢 on copyright since the 29 September ruling, which is about the work and not the uploader; the
+provenance note stays on the record because the host's label is not an institution's.
+
+| Scene | Identifier | What it shows (✅ seen) | Length |
+| --- | --- | --- | --- |
+| **14, 09, 03** ⭐ | `DiaryForTimothy` (*A Diary for Timothy*, Humphrey Jennings, 1945) | A newborn (Timothy); a BBC newsreader; **a hospital ward of beds (≈4:00)**; **a nurse at a bedside (≈8:00)**; **a patient on crutches walked by a nurse (≈15:00)**; a surgical dressing; **a man laying bricks on a scaffolded wall (≈17:00)**; a miner; Gielgud's Hamlet with the skull; a London Underground sign; farmland; a choir. 🔴 Soundtrack: Forster commentary and Addinsell score, both in copyright. Picture only | 2239 s, 1,481,983,410 bytes |
+| 07, 10 | `ProudCity` (*The Proud City*, 1945) | The Abercrombie plan for London: slab flats, new roads, models (agent's sheet) | 1472 s |
+
+**VE Day and 1945, the moving image.**
+
+| Candidate | Source | What and how verified | Licence | Tier |
+| --- | --- | --- | --- | --- |
+| `111-adc-4267`, *Russian-American link-up … V-E Day in Piccadilly, London* | archive.org, FedFlix `usgovfilms`, uploader `skip@avgeeks.com`, NARA NAID 18069, 655×480, 614 s | US Army Signal Corps reel, May 1945. ✅ Sheet viewed: Wittenberg, a congressional tour, von Rundstedt, then **the London segment is only the last ≈45 seconds** (thumbnails at 567 s and 597 s show a flag-decked vehicle and a street crowd with servicemen). A human must confirm it is Piccadilly | none on the item; 17 USC §105 | 🟢 US federal; short |
+| `111-M-1211-restored`, *The True Glory* (1945) | archive.org FedFlix, 1280×720, 4870 s | Joint US Army and British MOI documentary, D-Day to VE Day; London content unchecked | none; US federal in part, British share pre-1957 Crown | 🟢 ruled 29 Sept (the British share rests on the chain above); unindexed |
+| `gov.archives.arc.39216`, *War Pictorial News No. 213*, 4 June 1945 | archive.org FedFlix, `carl@media.org`, 640×480, 597 s | MOI newsreel; part 3 is crowds outside Buckingham Palace (description) | CC0 on the item, FedFlix; **but the film is British-made, so the US-federal label is doubtful and it rests on the Crown chain above** | 🟢 ruled 29 Sept |
+| `1946-06-10_Allied_Victory_Parade` | archive.org `collection:universal_newsreels`, 640×480, 153 s | Churchill, the King and Queen review the London Victory Parade, 8 June 1946 | Universal Newsreel: green by house rule (NARA dedication) though this copy's uploader is personal | 🟢 by collection |
+| Commons `SFP_186_-_Balkonauftritt_der_Royals_mit_Winston_Churchill.ogv` | 640×480 | The Palace balcony, USAAF cameraman, but the copy is a Spiegel TV 2000 re-cut | `PD-USGov-Military-Army` | 🟡 find the NARA original |
+| Stills: Commons VE Day MOI photographs `D24584` (2480×1676), `D24586` (1863×1441), `D24587`; Churchill in Whitehall (1782×1772) | Commons | 8 May 1945, London | Public domain, MOI | 🟢 |
+| Commons `Bestanddeelnr 910-7302`, Macmillan portrait | Nationaal Archief, Anefo | Portrait only | CC0 | 🟢 |
+
+**Dead ends.** No Marshall Plan film collection exists on archive.org (`collection:marshall_plan_films`
+is empty; `usgovfilms` keyword hits are *Mid-Century* (1950, mostly not Britain) and *The Changed
+Face of Europe* (1970s)). *New Faces for Britain* (`gov.archives.arc.38431`) is 1960s street
+conservation. Universal Newsreel has almost no domestic British coverage. The Wellcome API returns
+nothing openly licensed for NHS, ward, Bevan or prefab 1946–66; its COI NHS booklet is "in
+copyright". **The National Archives' own Flickr is non-commercial: red.** Commons Bevan photographs
+are CC BY-SA (amber). *Land of Promise*, *Britain Can Make It* and *Homes for the People*: not on
+archive.org. Historic England's per-image prices (£50 single use, up to £200 for ten years) come from
+a search summary only; the site 403s.
+
+### 11e. The paid routes, priced live on 29 September 2026
+
+**Verdict.** Within £100 to £200, the only things purchasable are one editorial still (Alamy, £80
+or £170) or a few Pond5 clips at £29 that may be resold public-domain material. **No British
+1945–55 film fits**, and now that 11d exists, nothing needs to. 🔴 Note on method: the vendor sites
+block scripted fetching, so the pricing agent read them **in a browser session** (it reports the
+Playwright browser was shared with another session and a Flow tab appeared mid-run; it worked in
+its own tab). Nothing was bought and nothing downloaded.
+
+| Vendor | Item | Price for our use | Clause that matters | Fits? |
+| --- | --- | --- | --- | --- |
+| **British Pathé** (`britishpathe.com/asset/…`, licence dialog) | VE Day London 1945 (`93856`, 7:00) | Online single site **£410**, multiple sites **£745**, + VAT, 5 years | Limited to *"a NON-COMMERCIAL ENTITY (footage is not to be available to buy, rent, or download to visitors of the site)"*; TV/film: "CONTACT US"; delivered SD 720×576 **with the Pathé logo on screen throughout** | ❌ |
+| British Pathé | *Prefabs* 1948 (`78496`, 1:13); NHS "Read the leaflet" trailer 1948 (`91589`, 0:59); Jarrow 1936 (`97696`, 0:35); VE Day Limehouse (`94311`, 4:04) | **£275** single / **£565** multiple + VAT (Limehouse £340 / £605) | as above; the shop sells the whole film, no in/out | ❌ over the £200 push, and the non-commercial limit bites regardless |
+| **Alamy** (`alamy.com/image-license-details/`) | Image `458482108`, Mirrorpix, **nurses in training, 20 Feb 1948, 4979×3924** | Personal £17; Business Editorial Standard **£80**; Editorial Enhanced **£170** (*"use within a documentary or news programme in any broadcast and web media"*); Super-Enhanced £300 | Editorial use only; no political bar found in the terms; endorsement clause covers models and sport | ✅ £80 or £170. **The one thing money buys that free cannot: a 1948 NHS photograph over 4,000 px** |
+| Alamy | Image `463555183`, Paul Popper, 29 Mar 1950, London housing-problem photo, 1750×2467 | £170 Enhanced | as above | ✅ but about the shortage, not a family moving in |
+| **Pond5** (`pond5.com/legal/license`) | VE Day London, Churchill at the Palace, 640×480 (`76516471`) | **£29** per clip, editorial, perpetual | *"…you may not use any Content in any context that would be unflattering or unduly controversial to a reasonable person, including … in connection with any political policy or viewpoint"*, with an editorial carve-out whose fit to a political film is unresolved; the seller calls it "public domain", so it may be free at source | 🟡 buys nothing certain |
+| **PA Images** rate card (`paimages.co.uk/assets/docs/rate_card/editorial_rate_card.xlsx`) | any | Editorial web/blog **£375** a year; social perpetual £375; TV from £350 | | ❌ |
+| **Storyblocks** (`storyblocks.com/license/individual-license`) | any | £16–£35 a month | *"…exclude media to be used in Broadcast, Television, or OTT platforms, or in connection with political campaigns or other political purposes"* | ❌ **barred by its own licence** |
+| **Getty** | VE Day crowd 1945 (`2026-236`, 0:01) | *"Join today to view pricing"* | EULA bars editorial content from *"any commercial, promotional, advertorial, endorsement…"* use | unconfirmed |
+| **Shutterstock Editorial** | Trafalgar Square VE Day 1945 (`13171732a`, 0:31, contributor "GovernmentFootage") | no price shown | political-context bar sits in the model clause; "single use in context" | unconfirmed |
+| **Huntley** (`huntleyarchives.com/includes/licensingterms.html`) | 1930s hunger-march titles | calculator behind sign-in; per second, 30-second minimum; "Special Order" technical fee *"starts at £250"* | Terms grant no IP licence at all (*"These must be obtained from the owner"*); clause 6.9 allows only colour and aspect-ratio changes; overuse charged at *"triple the amount of such shortfall"* | ❌ |
+| Science & Society, Mirrorpix, TopFoto, Mary Evans | Bevan at East Glamorgan Hospital 1948 (`10701295`) and others | no prices shown without an order flow | | unconfirmed |
+| **BBC** clips (Question Time 2 June 2017; Mone interview 17 Dec 2023) | | **No price exists anywhere reachable.** `bbcmotiongallery.com` resets the connection; Getty returned no Question Time clip for the search | | fair dealing or cards, as the storyboard already plans |
+
+### 11f. What this pass changes, and what is owed
+
+**The film can now be pictured end to end without spending a pound.** The 20 September gap
+("everything British after 1945 is documents and photographs, not film") is closed by section 11d.
+
+| Scene | Before this pass | After |
+| --- | --- | --- |
+| 02a Germany 1923 | nothing | six public-domain stills at 5,000 to 8,500 px; no film exists free |
+| 03 slump | Flow illustration only | + two 1931 London demonstration stills (6220×8704), *What A Life!*'s 1949 queue, *Diary for Timothy*'s bricklayer |
+| 04 bricks and training | Flow, Prelinger | + four MOI 1944 stills (800 px), *London Airport* (1949) building actuality |
+| 07 victory | stills only | + *111-adc-4267* (≈45 s of London), *War Pictorial News 213*, *Victory Parade 1946*, *The True Glory* |
+| 09 NHS opens | leaflet only | + *Your Very Good Health* (1948, colour), *Diary for Timothy* ward and nurse |
+| 10 key in the door | four 800 px stills | + *New Town* (1948, colour), *Pop Goes the Weasel*'s builders, *The Proud City* |
+| 10b outgrown | own chart | + *Pop Goes the Weasel* ⭐, *Festival in London* (colour), *Wonder Jet*, *Charley Junior's School Days*, *London Airport* |
+| 10a, 11, 11a modern | nothing | stills and documents, all green or amber; no photo of Baroness Mone, and none recommended |
+| 14 a life to get back to | Flow | + *Diary for Timothy*: a nurse walking a patient on crutches, 1945 |
+
+**Rulings, Kai, 29 September 2026.** All five decisions this pass raised were answered the same day.
+
+| # | Question | Ruling, in his words | What it changes |
+| --- | --- | --- | --- |
+| 1 | Is expired Crown copyright FILM usable, as the stills are? | ✅ *"Expired Crown copyright films are usable, 100%."* | **Every Crown film in 11c and 11d is 🟢, picture only.** The rows marked "🟡 until ruled" are green from this date. The soundtrack rule does not move: strip it |
+| 2 | Spend on the Alamy 1948 nurse photograph? | ❌ *"£170 for one clip is too much."* | **No spend.** It also sets a working sense of scale: the £100 to £200 budget is for the whole film, and a single item near the top of it is not wanted |
+| 3 | Download? | ✅ *"Let's grab as many of the videos as possible, and let's get them ready in the clips folder, ready for Magic Money Tree Premiere Project."* | Done the same day; see section 12 |
+| 4 | Picture Baroness Mone? | ✅ Agreed: no picture. 💡 *"Surely we'll be able to show screenshots of the newspaper stories about it."* | Headlines, not a face. Rules below |
+| 5 | May agents use a browser on paid sites? | ✅ *"Yeah, of course."* | Written into the `find-footage` skill. Reading is not buying: every spend is still a stop gate |
+
+**Newspaper headlines on screen (ruling 4): how it can be done.** Our reasoning, not legal advice.
+
+- **Copyright.** A newspaper page is the newspaper's copyright: the words, the layout, the photograph.
+  Showing a short piece of it is **quotation** under UK fair dealing (Copyright, Designs and Patents Act
+  1988, section 30), which needs four things: the story is already published; we show no more than
+  the point needs; the source is acknowledged on screen by name and date; and the use is fair,
+  meaning it does not stand in for reading the paper. A masthead, a headline, a date and a line of
+  standfirst meet that comfortably.
+- **Crop out the newspaper's photograph.** Photographs are excluded from the news-reporting exception
+  and a whole photograph is the weakest kind of quotation. It also keeps ruling 4: no face.
+- **Defamation is a separate question and the bigger one.** Repeating a newspaper's allegation makes
+  us its publisher too. So the headlines shown are ones that state **what a court found, what the
+  government did, or what she said herself**. A headline that is the paper's own allegation is shown
+  only with the attribution spoken or written beside it (*"the Guardian reported"*), which is the
+  storyboard's existing guardrail 4.
+- **It stays a defence, not a permission**, and the litigation is live, so the scene 11a legal read
+  the storyboard already asks for covers these cards too.
+
+**Not done, stated plainly.** *Modern Guide to Health*, *Brief City* and the
+rest of the collection are unsheeted. The London segment of `111-adc-4267` and every "description
+only" row above still need a human eye. Every Library of Congress, Parliament and Smithsonian licence
+line is as mirrored on Commons because those hosts block this machine. The Alamy "documentary" tier's
+fit to a self-published, possibly later monetised film is not stated on its page.
+
+---
+
+## 12. On disk after pass 6 (29 September 2026)
+
+Kai: *"Let's grab as many of the videos as possible, and let's get them ready in the clips folder,
+ready for Magic Money Tree Premiere Project."* Done as below. **No Premiere project exists yet.**
+
+**Layout** (`D:\badcode-videos\magic-money-tree\` = `/mnt/d/badcode-videos/magic-money-tree/`):
+
+| Folder | Holds | Import it? |
+| --- | --- | --- |
+| `clips/_masters/` | The 39 archive.org originals, **with their soundtracks** | 🔴 **Never.** The picture is free, the sound is not |
+| `clips/<scene>/<id>.picture-only.mov` | ProRes 422 HQ, **no audio**, deinterlaced only where measured (`idet`); the one to import | ✅ |
+| `clips/_library/` | Crown films with no scene yet (Berlin airlift, RAF, road safety…) | when wanted |
+| `clips/<scene>/*.jpg / .tif / .png` | 36 Commons stills, sha1-verified against Commons | ✅ |
+| `clips/s11a-money-was-found/press/` | 18 headline screenshots, each `--full` and `--headline-only` (photo cropped out) | the `--headline-only` ones |
+| `contact-sheets/` | 12 thumbnail contact sheets used to find in-points | reference |
+
+**Verification.** Every video's md5 matched archive.org's declared value (39/39). Every still's sha1
+matched Commons (36/36; a Wikimedia 429 rate limit forced a retry). Every conform is checked against
+its master's duration within 1.5 s; an early run was cut short by an ffmpeg-reads-stdin bug, caught
+by that check, deleted and redone with `-nostdin`.
+
+**Per-item status tables and the exact scripts** are in
+[`research/footage-pass-2026-09-29/scripts/`](./research/footage-pass-2026-09-29/scripts/):
+`dl-status.tsv` (downloads), `conform-status.tsv` (conforms: coded size, frame rate, measured
+interlace share, filter used, durations), `stills-status.tsv` (stills: licence, pixels, sha1).
+Receipts (the source API response, verbatim) are in [`docs/footage/`](../../footage/).
+
+**Conform job, as of this write-up:** 32 of 41 done, still running detached. If it was interrupted,
+re-run `bash conform.sh` from a copy of that scripts folder with the status files beside it: it skips
+anything already OK. Note the Crown films' `field_order=tt` flag is wrong (measured progressive), so
+they are not deinterlaced; the American reels are and are.
+
+**Not downloaded, and owed:** TNA `MH 55/965` (scene 12 pamphlet); screenshots of the judgment page
+and the two Contracts Finder notices (scene 11a); the Guardian headlines (consent wall); the
+*Maltese Falcon* yacht photo and the named nurse photo (both deliberately left out).
