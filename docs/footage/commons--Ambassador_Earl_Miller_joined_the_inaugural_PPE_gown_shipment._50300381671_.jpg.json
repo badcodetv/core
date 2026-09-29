@@ -1,0 +1,96 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "113082428": {
+    "pageid": 113082428,
+    "ns": 6,
+    "title": "File:Ambassador Earl Miller joined the inaugural PPE gown shipment. (50300381671).jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 141544,
+      "width": 944,
+      "height": 708,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Ambassador_Earl_Miller_joined_the_inaugural_PPE_gown_shipment._%2850300381671%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ambassador_Earl_Miller_joined_the_inaugural_PPE_gown_shipment._(50300381671).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=113082428",
+      "sha1": "64839fa969af83a59d032a6733e738609173b0bf",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2021-12-05 14:13:12",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "Ambassador Earl Miller joined the inaugural PPE gown shipment. (50300381671)",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "PD US DOS|Earl R. Miller|Images with annotations|Nazmul Hassan|2020 at Shahjalal International Airport|Flickr images reviewed by FlickreviewR 2|May 2020 in Dhaka|Files from the U.S. Embassy in Dhaka Flickr Stream|Flickr files uploaded by Afifa Afrin|Shahriar Alam in 2020",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "ImageDescription": {
+        "value": "<p>May 25, 2020 Ambassador Miller joined State Minister for Foreign Affairs Shahriar Alam, Beximco CEO and Group Director Syed Naved Husain, Beximco Pharma Managing Director Nazmul Hassan MP, and Janata Bank Chairman Dr. Jamaluddin Ahmed on May 25 for the inaugural PPE gown shipment to U.S. company Hanes. Beximco_Group will manufacture &amp; ship 6.5 million PPE gowns in the coming weeks to help the global fight against the COVID19 pandemic.  \n</p><p><br> \n</p>\nAmbassador Miller congratulated Bangladesh on joining the club of world-class PPE manufacturing nations, saying, “I welcome this first shipment as a symbol of our two nations working together to fight #COVID19 … We hope to see many more shipments from @Beximco_Group and other Bangladeshi companies going to the U.S. in the near future.”  A special thanks to #Janata Bank, @UPS, &amp; @emirates for helping make it happen.  (insert US-BD flag emoijis)  #InThisTogether #PPEfromBeximco #USBDPartnership #SpiritofEid",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "2020-05-25 00:00",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/usembassydhaka/50300381671/\">Ambassador Earl Miller joined the inaugural PPE gown shipment.</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/89616529@N03\">U.S. Embassy Dhaka</a> from Bangladesh",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

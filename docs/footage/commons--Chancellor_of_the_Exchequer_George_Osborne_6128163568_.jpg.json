@@ -1,0 +1,95 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "32139429": {
+    "pageid": 32139429,
+    "ns": 6,
+    "title": "File:Chancellor of the Exchequer George Osborne (6128163568).jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 769210,
+      "width": 2136,
+      "height": 1424,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Chancellor_of_the_Exchequer_George_Osborne_%286128163568%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Chancellor_of_the_Exchequer_George_Osborne_(6128163568).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=32139429",
+      "sha1": "2e9d82212be1850dd9963c3ff63b21bbd223b95d",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2014-04-13 06:46:56",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "Chancellor of the Exchequer George Osborne (6128163568)",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "Taken with Canon EOS 450D|OGL v1.0|George Osborne|Items with VRTS permission confirmed|Files from Foreign, Commonwealth and Development Office Flickr stream",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "ImageDescription": {
+        "value": "Chancellor of the Exchequer George Osborne speaking at the China-Britain Business Council banquet in London, 8 September 2011.",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "2011-09-08 19:52:27",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://flickr.com/photos/foreignoffice/6128163568\">Flickr</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "Foreign and Commonwealth Office",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "OGL v1.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Open Government License version 1.0",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "LicenseUrl": {
+        "value": "http://NationalArchives.gov.uk/doc/open-government-licence/version/1/",
+        "source": "commons-desc-page"
+       },
+       "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

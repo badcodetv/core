@@ -1,0 +1,100 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "4795571": {
+    "pageid": 4795571,
+    "ns": 6,
+    "title": "File:Lehman Brothers-NYC-20080915.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 5140104,
+      "width": 4368,
+      "height": 2912,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Lehman_Brothers-NYC-20080915.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Lehman_Brothers-NYC-20080915.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=4795571",
+      "sha1": "b2d2f533bbce482a0cfdcbb52b3e490870c26897",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2008-09-16 02:56:22",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "Lehman Brothers-NYC-20080915",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "Taken with Canon EOS 5D|Lehman Brothers|Flickr images reviewed by FlickreviewR|Bank buildings in Manhattan, New York City|Photographs by Robert Scoble",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "ImageDescription": {
+        "value": "<a href=\"https://en.wikipedia.org/wiki/Lehman_Brothers\" class=\"extiw\" title=\"w:Lehman Brothers\">w:Lehman Brothers</a> headquarters in <a href=\"//commons.wikimedia.org/wiki/New_York_City\" title=\"New York City\">New York City</a>",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "2008-09-15",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/scobleizer/2861707320/\">Lehman Brothers Headquarters on Bankruptcy Day</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/scobleizer/\">Robert Scoble</a>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Creative Commons Attribution 2.0",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by/2.0",
+        "source": "commons-desc-page"
+       },
+       "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "cc-by-2.0",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "154689311": {
+    "pageid": 154689311,
+    "ns": 6,
+    "title": "File:Berlin - la foule assiège la voiture d'un boulanger et se dispute le pain à coup de millions de Marks - btv1b9024458p.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 4535503,
+      "width": 7000,
+      "height": 5119,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Berlin_-_la_foule_assi%C3%A8ge_la_voiture_d%27un_boulanger_et_se_dispute_le_pain_%C3%A0_coup_de_millions_de_Marks_-_btv1b9024458p.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Berlin_-_la_foule_assi%C3%A8ge_la_voiture_d%27un_boulanger_et_se_dispute_le_pain_%C3%A0_coup_de_millions_de_Marks_-_btv1b9024458p.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=154689311",
+      "sha1": "b604a1038042ecddc242ff127eec0e63e7052b81",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2024-10-31 02:28:56",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "<div class=\"fn\">\nBerlin : la foule assiège la voiture d'un boulanger et se dispute le pain à coup de millions de Marks : [photographie de presse] / Agence Meurisse</div>",
+        "source": "commons-desc-page"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "Hyperinflation in the Weimar Republic|Artworks without Wikidata item|PD-1996|PD France|Files from Gallica|October 1923 in Berlin|Images from Gallica (Bibliothèque nationale de France) uploaded by Gzen92Bot|1923 photographs by Agence Meurisse|Files from Gallica needing categories (images of 1923)|Black and white photographs from Gallica",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Artist": {
+        "value": "<div class=\"fn value\">\nAgence de presse Meurisse. Agence photographique (commanditaire)</div>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "Référence bibliographique : Meurisse, 10497 A\n<p>Appartient à l’ensemble documentaire : Pho20Meu\nImage de presse\nCouverture : 20 octobre 1923\nLangue : français\n</p>\nÉditeur : diff. par l'Agence Meurisse (Paris)",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "1923<div style=\"display: none;\">date QS:P571,+1923-00-00T00:00:00Z/9</div>",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "Bibliothèque nationale de France",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

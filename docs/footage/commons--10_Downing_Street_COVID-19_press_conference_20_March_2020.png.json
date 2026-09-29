@@ -1,0 +1,95 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "99547633": {
+    "pageid": 99547633,
+    "ns": 6,
+    "title": "File:10 Downing Street COVID-19 press conference, 20 March 2020.png",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1093518,
+      "width": 960,
+      "height": 640,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/10_Downing_Street_COVID-19_press_conference%2C_20_March_2020.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:10_Downing_Street_COVID-19_press_conference,_20_March_2020.png",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=99547633",
+      "sha1": "ba767ae82d63d972a0daacd13c6597c6a230b504",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2021-02-03 20:35:52",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "10 Downing Street COVID-19 press conference, 20 March 2020",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "OGL v3.0|Jenny Harries|Images with extracted images|Boris Johnson in 2020|March 2020 in London|United Kingdom photographs taken on 2020-03-20|Rishi Sunak in 2020|Lecterns at 10 Downing Street|Boris Johnson in 10 Downing Street|Rishi Sunak in 10 Downing Street|People associated with the COVID-19 pandemic in London",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "ImageDescription": {
+        "value": "Chancellor of the Exchequor Rishi Sunak, Prime Minister Boris Johnson and Deputy Chief Medical Officer Jenny Harries delivering a press conference on COVID-19 at 10 Downing Street. An in-person press audience is present. The \"Stay at home, protect the NHS, save lives\" slogan is displayed on their podiums.",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "2020-03-20",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "\"Prime Minister's statement on coronavirus (COVID-19): 20 March 2020\" (published 20 March 2020 at <a rel=\"nofollow\" class=\"external free\" href=\"https://www.gov.uk/government/speeches/pm-statement-on-coronavirus-20-march-2020\">https://www.gov.uk/government/speeches/pm-statement-on-coronavirus-20-march-2020</a>)",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "10 Downing Street",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "OGL 3",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Open Government License 3",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "LicenseUrl": {
+        "value": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3",
+        "source": "commons-desc-page"
+       },
+       "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/png"
+     }
+    ]
+   }
+  }
+ }
+}

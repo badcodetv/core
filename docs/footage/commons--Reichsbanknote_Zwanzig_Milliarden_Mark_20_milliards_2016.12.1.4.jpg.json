@@ -1,0 +1,100 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "137121690": {
+    "pageid": 137121690,
+    "ns": 6,
+    "title": "File:Reichsbanknote Zwanzig Milliarden Mark (20 milliards), 2016.12.1.4.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 16787121,
+      "width": 5097,
+      "height": 3320,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Reichsbanknote_Zwanzig_Milliarden_Mark_%2820_milliards%29%2C_2016.12.1.4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Reichsbanknote_Zwanzig_Milliarden_Mark_(20_milliards),_2016.12.1.4.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=137121690",
+      "sha1": "32fae211e7879b121bf3f6bd9974090a8dcf1b47",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2023-09-07 06:22:07",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "Reichsbanknote Zwanzig Milliarden Mark (20 milliards), 2016.12.1.4",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "CC-Zero|Images from Paris Musées|Collections of Musée Jean-Moulin",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "ImageDescription": {
+        "value": "<table class=\"wikitable unsortable\">\n\n<tbody><tr>\n<th>Auteur(s):\n</th>\n<td>Reichsbankdirektorium, autorité émettrice\n</td></tr>\n<tr>\n<th>Date de production:\n</th>\n<td>01–10–1923\n<p>Datation en siècle: \n1ère moitié du 20e siècle\n</p>\n</td></tr>\n<tr>\n<th>Type(s) d'objet(s):\n</th>\n<td>Vie militaire = Militaria\n</td></tr>\n<tr>\n<th>Dénomination(s):\n</th>\n<td>Billet de banque\n</td></tr>\n<tr>\n<th>Matériaux et techniques:\n</th>\n<td>Papier, Encre\n<p>Lieu(x) d'exécution / réalisation: \nBerlin\n</p>\n</td></tr>\n<tr>\n<th>Dimensions - Oeuvre:\n</th>\n<td>\n<pre>   Hauteur : 9 cm\n   Largeur : 13.9 cm\n</pre>\n</td></tr>\n<tr>\n<th>Description:\n</th>\n<td>\n<p>Billet de forme rectangulaire, une seule face, filigrané de cercles.\n</p>\n</td></tr>\n<tr>\n<th>Marques, inscriptions, poinçons:\n</th>\n<td>Impression - \"Reichsbanknote / ZWANZIG / MILLIARDEN MARK / zahlt die Reichsbankhauptkasse in Berlin / gegen diese Banknote dem Einlieferer / SD-43 / 088778 / Reichsbankdirektorium / 20 MILLIARDEN MARK\"\n</td></tr>\n<tr>\n<th>Description iconographique:\n</th>\n<td>\n<p>Aigle aux ailes et serres ouvertes dans un cercle ; fond vert-orangé avec silhouette d'un grand aigle semblable au précédent.\n</p>\n</td></tr>\n<tr>\n<th>Mode d'acquisition:\n</th>\n<td>Don manuel\n<p>Nom du donateur, testateur, vendeur: \nCuche, Bruno, Général\n</p>\n</td></tr>\n<tr>\n<th>Institution:\n</th>\n<td>Musée de la Libération de Paris - musée du Général Leclerc - musée Jean Moulin\n</td></tr>\n<tr>\n<th>Numéro d’inventaire:\n</th>\n<td>2016.12.1.4\n</td></tr>\n<tr>\n<th>IIIF Manifest:\n</th>\n<td><a rel=\"nofollow\" class=\"external free\" href=\"https://apicollections.parismusees.paris.fr/iiif/600006782/manifest\">https://apicollections.parismusees.paris.fr/iiif/600006782/manifest</a>\n</td></tr></tbody></table>",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "01–10–1923",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.parismuseescollections.paris.fr/fr/musee-jean-moulin/oeuvres/reichsbanknote-zwanzig-milliarden-mark-20-milliards#infos-principales\">https://www.parismuseescollections.paris.fr/fr/musee-jean-moulin/oeuvres/reichsbanknote-zwanzig-milliarden-mark-20-milliards#infos-principales</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "Reichsbankdirektorium, autorité émettrice",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Creative Commons Zero, Public Domain Dedication",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "LicenseUrl": {
+        "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "commons-desc-page"
+       },
+       "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "cc0",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

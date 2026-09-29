@@ -1,0 +1,95 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "63166955": {
+    "pageid": 63166955,
+    "ns": 6,
+    "title": "File:Theresa May 2017 election speech outside 10 Downing Street.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 306382,
+      "width": 960,
+      "height": 640,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Theresa_May_2017_election_speech_outside_10_Downing_Street.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Theresa_May_2017_election_speech_outside_10_Downing_Street.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=63166955",
+      "sha1": "8cd749b56d0de75cbfdfc0e00f867e7c452c3a25",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2017-10-05 00:12:00",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "Theresa May 2017 election speech outside 10 Downing Street",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "Philip May|OGL v3.0|2017 United Kingdom general election|Images with extracted images|Public speaking in the United Kingdom|Coats of arms in London|Theresa May in 2017|Lecterns at 10 Downing Street|Royal Achievement of the United Kingdom (British Government)",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "ImageDescription": {
+        "value": "Prime Minister, Theresa May, making a speech outside 10 Downing Street following the 2017 general election.",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "2017-06-09",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.gov.uk/government/speeches/pm-statement-general-election-2017\">https://www.gov.uk/government/speeches/pm-statement-general-election-2017</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "HM Government",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "OGL 3",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Open Government License 3",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "LicenseUrl": {
+        "value": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3",
+        "source": "commons-desc-page"
+       },
+       "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

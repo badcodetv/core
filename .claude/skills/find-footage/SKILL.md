@@ -63,6 +63,7 @@ own terms regardless.
 | `collection:nasa` | Mission footage, NASA TV, 13,733 items |
 | `identifier:gov.dod.dimoc.*` | US military, DIMOC-numbered, CC0. 🔴 **~40% are dead, see below** |
 | `collection:universal_newsreels` | Newsreel 1932–1967 — cleanest licence on the page, only 611 digitised |
+| `collection:british_gov_public_films` | 🇬🇧 **British government films, 1945–52** — 22 Crown films, 768×576. **Picture only** (the music and commentary are still in copyright). New 2026-09-29 |
 | `images-api.nasa.gov` | Every NASA centre. Keyless — and it **rejects `api_key` with HTTP 400** |
 | `svs.gsfc.nasa.gov/api` | Climate/ocean/ice viz. Hands you the literal mp4 URL |
 | Wikimedia Commons — **CC0 / PDM files only** | Everything else. 🔴 The BY-SA majority is amber |
@@ -169,8 +170,25 @@ accepted, and Commons records `AttributionRequired: false`.
    third-party collection first (one London Blitz photo turned out to be a *New York Times* picture
    in NARA custody, and custody is not authorship).
 
-🔴 **What is still unsolved for the UK is *film*, not stills**, and the residual risk on these
-photographs is **identifiable real people**, which no licence clears.
+🔴 **The residual risk on these photographs is identifiable real people**, which no licence clears.
+
+### 🇬🇧 UK Crown FILMS made before 1 June 1957 — cleared, picture only
+
+✅ **Ruled 2026-09-29.** Kai: *"Expired Crown copyright films are usable, 100%."* A film made
+before 1 June 1957 has no film copyright in UK law; it is protected as a run of photographs (CDPA
+1988 Sch. 1 para 7, and The National Archives' own guidance says the same), and Crown copyright in
+photographs of that date lasted 50 years. So the **picture** of a Ministry of Information, Crown
+Film Unit or Central Office of Information film of 1940 to 1956 is free.
+
+- **Where:** archive.org `collection:british_gov_public_films` (22 films, 1945–52, supplied by The
+  National Archives, 768×576 originals). More Crown Film Unit titles sit under personal uploads
+  (`DiaryForTimothy`, `ProudCity`): same copyright answer, weaker provenance, say so in the ledger.
+- 🔴 **Never the soundtrack.** Music and commentary were written by outside authors whose terms still
+  run (Seiber to 2030, Forster to 2040). `-an` is not optional here.
+- 🔴 **Never from the BFI or IWM**, whose own terms would attach. archive.org or Commons only.
+- 🔴 **Not `uk_wwii_public_info_films_one`**: that item is CC BY-NC-ND and says to contact the BFI.
+- **Still unsolved for the UK:** commercial newsreel (Pathé, Movietone), the 1945 election, and live
+  footage of 1948 hospitals and building sites. Crown films are cartoons, explainers and actuality.
 
 ### 💷 There is a budget, and it is smaller than the archive houses' minimums
 
@@ -190,6 +208,14 @@ is free at source.
 
 **Every spend is a stop gate.** Name the exact item, the exact terms, the price, and what it buys
 that free cannot — then **wait for Kai.** The budget is permission to *ask*, not to buy.
+
+✅ **Two rulings, 2026-09-29.** **Agents may read paid or script-blocking sites in a browser**
+(*"Yeah, of course"*): most archive and stock houses return 403 to `curl`, so a real browser is
+the only way to see a price or a clause. Own tab only, never another session's tabs, no log-in, no
+trial, no purchase. **And a single item that eats most of the budget is not wanted**: Kai declined
+an Alamy still at £170 (*"too much"*). Verified the same day: British Pathé's online licence
+starts at **£275 + VAT** and is limited to non-commercial entities; Storyblocks' licence bars
+political purposes outright.
 
 ### 🔴 Strip the audio by default
 

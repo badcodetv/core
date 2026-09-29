@@ -1,0 +1,95 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "121257176": {
+    "pageid": 121257176,
+    "ns": 6,
+    "title": "File:Budget 2014; Chancellor George Osborne delivering his Budget Statement.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 528159,
+      "width": 960,
+      "height": 640,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Budget_2014%3B_Chancellor_George_Osborne_delivering_his_Budget_Statement.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Budget_2014;_Chancellor_George_Osborne_delivering_his_Budget_Statement.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=121257176",
+      "sha1": "8035558ee5ebe85b4cdb48b327826abc894486b4",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2022-07-30 10:39:14",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "Budget 2014; Chancellor George Osborne delivering his Budget Statement",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "OGL v3.0|George Osborne|Budget box of the United Kingdom",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "ImageDescription": {
+        "value": "Budget 2014; Chancellor George Osborne delivering his Budget Statement",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "2014-03-18 18:29:14",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.gov.uk/government/news/budget-2014-key-announcements\">https://www.gov.uk/government/news/budget-2014-key-announcements</a> <a rel=\"nofollow\" class=\"external text\" href=\"https://assets.publishing.service.gov.uk/government/uploads/system/uploads/image_data/file/23770/s960_1_budget2014_news_story.jpg\">image</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "HM Treasury",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "OGL 3",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Open Government License 3",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "LicenseUrl": {
+        "value": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3",
+        "source": "commons-desc-page"
+       },
+       "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

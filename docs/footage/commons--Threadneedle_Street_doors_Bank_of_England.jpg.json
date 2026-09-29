@@ -1,0 +1,100 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "114209024": {
+    "pageid": 114209024,
+    "ns": 6,
+    "title": "File:Threadneedle Street doors, Bank of England.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 1817055,
+      "width": 1877,
+      "height": 2418,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Threadneedle_Street_doors%2C_Bank_of_England.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Threadneedle_Street_doors,_Bank_of_England.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=114209024",
+      "sha1": "e11e5b34a40f6aa1e5a151004d6e553091f5469e",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2022-01-11 18:36:33",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "Threadneedle Street doors, Bank of England",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "Doors in the City of London|Flickr images reviewed by FlickreviewR 2|Sculptures by Charles Wheeler (sculptor)|Architectural sculptures of the Bank of England",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "ImageDescription": {
+        "value": "Threadneedle Street doors, Bank of England",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "2009-06-14 11:23:18",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/revstan/3624828729/\">https://www.flickr.com/photos/revstan/3624828729/</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "Rev Stan",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "CC BY 2.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Creative Commons Attribution 2.0",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by/2.0",
+        "source": "commons-desc-page"
+       },
+       "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "cc-by-2.0",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

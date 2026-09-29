@@ -25,6 +25,10 @@ voices: [rapper, politician]
 > This song is not appended in full by default. Historical documentary references resolve to the
 > [archived treatment](../archive/2026-09-11-superseded/documentary.md). The September research
 > corrections also apply if historical claims from these notes are reused in new work.
+>
+> **28 September 2026:** the film restored **shake, starve, plant** as its own grammar, with a verb
+> card on every dated beat and a closing line built on them. Song and film share the three verbs
+> again. The song is still a separate work and is still not appended to the film by default.
 
 **The canonical song file.** Bouncy jump-up D&B, comedic UK rap, 172 BPM. The
 liquid/spoken-word rework was deleted 2026-08-18 (Kai) — it lives in git history

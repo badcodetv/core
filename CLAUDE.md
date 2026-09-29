@@ -178,7 +178,9 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
   our work is. **Two rulings from Kai, 2026-09-12.** 💷 **There is a budget and it is tiny:
   £100 for a whole film, £200 at an absolute push, never per clip — and it does not reach the UK
   archive houses** (BFI's *cheapest* tier is £840 + £14/sec). So the free tier is still the answer:
-  US federal film, newsreel, NASA, Commons CC0, and Commons' `PD-UKGov` British WWII stills. A spend
+  US federal film, newsreel, NASA, Commons CC0, Commons' `PD-UKGov` British WWII stills, and (ruled
+  2026-09-29) **British Crown films made before 1 June 1957, picture only** — 22 of them sit on
+  archive.org as `british_gov_public_films`. A spend
   is a **stop gate** — price it, say what it buys that free cannot, and wait. Never pay a PD
   reseller for NARA material that is free at source. ✅ **And credits are fine**: *"we very happily
   put credits in"*, in the video — so an attribution-only licence (CC-BY, **OGL**, OPL) is no longer
