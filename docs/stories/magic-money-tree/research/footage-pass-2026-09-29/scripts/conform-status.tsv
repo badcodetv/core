@@ -35,3 +35,8 @@ shown_by_request_TNA	_library	shown_by_request_TNA.mpg	720x576	16:15	25/1	25/1	0
 gov.archives.arc.39018	s06-job-after-uniform	gov.archives.arc.39018.mpeg	720x480	8:9	30000/1001	30000/1001	0.99	yadif=1	569.008767	568.936000	8621103122	OK	s06-job-after-uniform/gov.archives.arc.39018.picture-only.mov
 gov.fdr.25.2	s01-dunkirk	gov.fdr.25.2.mpeg	368x480	40:23	30000/1001	30000/1001	0.99	yadif=1	789.322656	789.189000	6228605282	OK	s01-dunkirk/gov.fdr.25.2.picture-only.mov
 gov.fdr.25.3	s01-dunkirk	gov.fdr.25.3.mpeg	704x480	10:11	30000/1001	30000/1001	1.0	yadif=1	918.656000	918.685000	12733124387	OK	s01-dunkirk/gov.fdr.25.3.picture-only.mov
+gov.archives.arc.65841	s01-dunkirk	gov.archives.arc.65841.mpeg	720x480	8:9	30000/1001	30000/1001	0.99	yadif=1	1286.631511	1286.719000	18687590648	OK	s01-dunkirk/gov.archives.arc.65841.picture-only.mov
+gov.archives.arc.36070	s02-home-to-what	gov.archives.arc.36070.mpeg	720x480	8:9	30000/1001	30000/1001	0.99	yadif=1	3194.304000	3194.325000	45519889305	OK	s02-home-to-what/gov.archives.arc.36070.picture-only.mov
+gov.archives.arc.38936	_library	gov.archives.arc.38936.mpeg	720x480	8:9	30000/1001	30000/1001	0.99	yadif=1	281.180900	281.115000	4194052232	OK	_library/gov.archives.arc.38936.picture-only.mov
+gov.archives.arc.13595	s03-unemployed-builder	gov.archives.arc.13595.mpeg	720x480	8:9	30000/1001	30000/1001	1.0	yadif=1	1523.712000	1523.789000	22601966076	OK	s03-unemployed-builder/gov.archives.arc.13595.picture-only.mov
+gov.archives.arc.88967	s02a-germany-1923	gov.archives.arc.88967.mpeg	720x480	8:9	30000/1001	30000/1001	0.81	yadif=1	877.343122	877.277000	11317641674	OK	s02a-germany-1923/gov.archives.arc.88967.picture-only.mov

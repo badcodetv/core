@@ -1,6 +1,33 @@
 # RESUME HERE — Magic Money Tree documentary ("The Future He Never Saw")
 
-**Paused 2026-09-29 by Kai.** Read this, then the four files it points to. Everything below is in git
+## 🟢 30 September 2026: phase 1 of the rough cut is DONE (branch `mmt-rough-cut`, worktree `.claude/worktrees/mmt-rough-cut`)
+
+Kai ruled a two-phase build: **phase 1 = the full plan and every asset** (done), **phase 2 = execute
+with full autonomy**: Suno generation, recording Suno previews, and the Premiere timeline, all without
+asking per step. Everything is in [`rough-cut/`](./rough-cut/README.md); start there.
+
+| Piece | Where | State |
+| --- | --- | --- |
+| The edit, as data | `rough-cut/cutlist/*.json` | ✅ all 19 scenes, 267 clips, **0 errors, no holes**, 15:13 at planned pace |
+| Every shot in every film | `rough-cut/shotlogs/` + `clips/_shotlogs/` on D: | ✅ 29 films indexed |
+| Facts + exact quotes | `rough-cut/facts.md` | ✅ 7 narration lines reworded for accuracy (logged in `songs/narration.md` §8) |
+| Documents | `rough-cut/documents.md` | ✅ judgment, contract notices, Red Book, White Paper, 1948 leaflet |
+| Cards, chart, diagram | `clips/cards/`, `clips/charts/` on D: | ✅ 61 cards, debt chart (3 animations), QE diagram |
+| Illustrations | `rough-cut/illustrations.md` | ⬜ prompts only; grey placeholders on the timeline. Kai approves plates |
+| Open checks for a human | `rough-cut/checks.md` | 60, by scene and time |
+| Preview (no voice yet) | `D:\badcode-videos\magic-money-tree\previews\rough-cut-preview.mp4` | narration as subtitles |
+| **Phase 2 runbook** | `rough-cut/README.md` § Phase-2 run | ready |
+
+**Resume prompt (phase 2):** *Resume the Magic Money Tree rough cut, phase 2, in worktree
+.claude/worktrees/mmt-rough-cut: read docs/stories/magic-money-tree/rough-cut/README.md and run the
+Phase-2 runbook — Suno round 1 and the rest of the parts, record previews, align, retime, then build
+mmt-rough-cut-v1 in Premiere. Full autonomy granted for Suno, recording and Premiere; P8 waits for the
+legal read; no Flow video credit without my yes.*
+
+---
+
+**Paused 2026-09-29 by Kai** (the state before phase 1, kept for the record):
+Read this, then the four files it points to. Everything below is in git
 except the media, which is on `D:\badcode-videos\magic-money-tree\`.
 
 ## Where we are

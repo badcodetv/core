@@ -11,7 +11,7 @@ that V4 labels are laid over whatever is below. Each slice is rendered to its ow
 file, the slices are joined, then labels and the narration text (as subtitles, from lines.json)
 go on top. Transitions are hard cuts here; Premiere does the dissolves.
 """
-import glob, json, os, subprocess, sys, tempfile, shutil
+import glob, hashlib, json, os, subprocess, sys, tempfile, shutil
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RC = os.path.normpath(os.path.join(HERE, ".."))
@@ -47,8 +47,8 @@ def render_slice(c, a, b, dst):
             f"drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='MISSING {os.path.basename(c['file'])[:40]}':"
             f"x=(w-tw)/2:y=(h-th)/2:fontsize=22:fontcolor=white"] + enc(dst))
         return True
-    if c["kind"] == "film":
-        src = c["src_in"] + (a - c["start"])
+    if c["kind"] == "film" or p.lower().endswith((".mp4", ".mov")):
+        src = (c.get("src_in") or 0.0) + (a - c["start"])
         vf = FIT + (",hue=s=0" if "GRADE-BW" in tr else "")
         ff(["-ss", f"{src:.3f}", "-t", str(d), "-i", p, "-vf", vf] + enc(dst))
         return True
@@ -100,12 +100,16 @@ def main(args):
     t0, t1 = min(c["start"] for c in tl), max(c["end"] for c in tl)
     edges = sorted({round(t, 3) for c in tl for t in (c["start"], c["end"])})
     tmp = tempfile.mkdtemp(prefix="mmt-preview-")
+    cache = os.path.join(tempfile.gettempdir(), "mmt-preview-cache")   # slices survive a crash or a re-run
+    os.makedirs(cache, exist_ok=True)
     parts = []
     for i, (a, b) in enumerate(zip(edges, edges[1:])):
         live = [c for c in tl if c["track"] in ORDER and c["start"] <= a + 1e-3 and c["end"] >= b - 1e-3]
         top = max(live, key=lambda c: ORDER[c["track"]]) if live else {"kind": "black", "start": a, "dur": b - a}
-        dst = os.path.join(tmp, f"{i:05d}.mp4")
-        if render_slice(top, a, b, dst):
+        key = hashlib.md5(json.dumps([top.get("file"), top.get("kind"), top.get("treatment"), top.get("move"),
+                                      top.get("src_in"), top["start"], top.get("dur"), a, b]).encode()).hexdigest()
+        dst = os.path.join(cache, key + ".mp4")
+        if os.path.exists(dst) or render_slice(top, a, b, dst + ".part.mp4") and not os.rename(dst + ".part.mp4", dst):
             parts.append(dst)
         print(f"\r{i + 1}/{len(edges) - 1} slices", end="", flush=True)
     print()
