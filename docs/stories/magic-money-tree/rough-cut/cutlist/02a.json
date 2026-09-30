@@ -1,0 +1,302 @@
+{
+ "scene": "02a",
+ "title": "Germany, 1923",
+ "notes": [
+  "All stills; every one is a large scan, so each push travels into a detail. Moves are in frame fractions of the fitted 1920×1080 picture (as preview.py reads them).",
+  "Banknotes rise in order: 500 million (P2.04), then three hard cuts 10 billion → 20 billion → 500 billion across '…anyway. / More notes. / Fewer goods.' The edit plan listed them 10 bn → 500 bn → 20 bn, which would make the numbers fall on the last cut; re-ordered so they only climb.",
+  "The storyboard/plan give P2.06 'The state pays the workers anyway' no picture of its own; it opens on 'French at Essen' (troops with a machine gun outside the 'Commerz- und Privat-Bank') for 1.8 s, then the first of the three notes lands under 'anyway'.",
+  "P2.09 'The currency collapses' holds on 'Gov't notice of French Invasion at Essen' as the plan says. Its subject is the invasion notice, not the currency; it reads as a crowd reading bad news. Alternative: hold the Berlin Bank stacks again.",
+  "lines.json puts P9.09 ('So.', a Part 9 line) at 124.53–125.0 inside this scene. That is almost certainly a lines.py mis-match on a repeated word; no clip is anchored to it (the bread-crowd clip runs from P2.08 across it). If retime.py maps P9.09 to its real place in scene 12–14, the time map inside this scene will be wrong: fix lines.json first.",
+  "gov.archives.arc.88967 (International News 442, 1921) is not in the conform status, and its only relevant item is Pershing at Coblenz in 1921: not used.",
+  "The verb card sits across 'That is one thing you can do with a money tree. You can shake it.' (5 s)."
+ ],
+ "clips": [
+  {
+   "id": "02a-01",
+   "line": "P2.01",
+   "offset": 0.0,
+   "dur": 3.0,
+   "track": "V3",
+   "kind": "card",
+   "file": "cards/DATE-1923-GERMANY.png",
+   "desc": "card: 1923 · GERMANY",
+   "treatment": null,
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "02a-02",
+   "line": "P2.03",
+   "offset": 0.0,
+   "dur": 6.0,
+   "track": "V1",
+   "kind": "still",
+   "file": "s02a-germany-1923/In a Berlin Bank LCCN2014716642.jpg",
+   "treatment": "PUSH",
+   "move": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.6,
+     0.5,
+     1.35
+    ]
+   },
+   "desc": "In a Berlin Bank, 1923: a clerk reaching up to a wall of banknote bundles; push toward him",
+   "credit": "Library of Congress, Bain Collection",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "02a-03",
+   "line": "P2.04",
+   "offset": 0.0,
+   "dur": 5.0,
+   "track": "V1",
+   "kind": "still",
+   "file": "s02a-germany-1923/GER-110-Reichsbanknote-500 Million Mark (1923).jpg",
+   "treatment": "DRIFT",
+   "move": {
+    "from": [
+     0.4,
+     0.5,
+     1.3
+    ],
+    "to": [
+     0.6,
+     0.5,
+     1.3
+    ]
+   },
+   "desc": "Reichsbanknote, 500 million marks (1923), drifting across the note",
+   "credit": "National Numismatic Collection, National Museum of American History",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "02a-04",
+   "line": "P2.05",
+   "offset": 0.0,
+   "dur": 3.5,
+   "track": "V1",
+   "kind": "still",
+   "file": "s02a-germany-1923/French enter Essen LCCN2014715614.tif",
+   "treatment": "PUSH",
+   "desc": "French cavalry ride into Essen, 1923",
+   "credit": "Library of Congress, Bain Collection",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "02a-05",
+   "line": "P2.05",
+   "offset": 3.5,
+   "dur": 3.5,
+   "track": "V1",
+   "kind": "still",
+   "file": "s02a-germany-1923/13-1-23 Essen patrouille de dragons.jpg",
+   "treatment": "PUSH",
+   "move": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.38,
+     0.55,
+     1.4
+    ]
+   },
+   "desc": "French dragoon patrol in an Essen street, 13 January 1923; push toward the lead riders",
+   "credit": "Agence Rol / BnF Gallica",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "02a-06",
+   "line": "P2.06",
+   "offset": 0.0,
+   "dur": 1.8,
+   "track": "V1",
+   "kind": "still",
+   "file": "s02a-germany-1923/French at Essen LCCN2014715612.jpg",
+   "treatment": "PUSH",
+   "move": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.55,
+     0.3,
+     1.25
+    ]
+   },
+   "desc": "French troops with a machine gun outside the 'Commerz- und Privat-Bank', Essen",
+   "credit": "Library of Congress, Bain Collection",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "02a-07",
+   "line": "P2.06",
+   "offset": 1.8,
+   "dur": 1.8,
+   "track": "V1",
+   "kind": "still",
+   "file": "s02a-germany-1923/GER-116-Reichsbanknote-10 Billion Mark (1923).jpg",
+   "treatment": "PUSH",
+   "move": {
+    "from": [
+     0.5,
+     0.5,
+     1.2
+    ],
+    "to": [
+     0.45,
+     0.33,
+     1.5
+    ]
+   },
+   "desc": "hard cut: 10 billion marks ('Zehn Milliarden')",
+   "credit": "National Numismatic Collection, National Museum of American History",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "02a-08",
+   "line": "P2.07",
+   "offset": 0.0,
+   "dur": 1.2,
+   "track": "V1",
+   "kind": "still",
+   "file": "s02a-germany-1923/Reichsbanknote Zwanzig Milliarden Mark (20 milliards), 2016.12.1.4.jpg",
+   "treatment": "PUSH",
+   "move": {
+    "from": [
+     0.5,
+     0.45,
+     1.2
+    ],
+    "to": [
+     0.5,
+     0.4,
+     1.5
+    ]
+   },
+   "desc": "hard cut on 'More notes': 20 billion marks ('Zwanzig Milliarden')",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "02a-09",
+   "line": "P2.07",
+   "offset": 1.2,
+   "dur": 1.2,
+   "track": "V1",
+   "kind": "still",
+   "file": "s02a-germany-1923/GER-127a-Reichsbanknote-500 Billion Mark (1923).jpg",
+   "treatment": "PUSH",
+   "move": {
+    "from": [
+     0.5,
+     0.45,
+     1.2
+    ],
+    "to": [
+     0.45,
+     0.33,
+     1.5
+    ]
+   },
+   "desc": "hard cut on 'Fewer goods': 500 billion marks ('Fünfhundert Milliarden')",
+   "credit": "National Numismatic Collection, National Museum of American History",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "02a-10",
+   "line": "P2.08",
+   "offset": 0.0,
+   "dur": 8.0,
+   "track": "V1",
+   "kind": "still",
+   "file": "s02a-germany-1923/Berlin - la foule assiège la voiture d'un boulanger et se dispute le pain à coup de millions de Marks - btv1b9024458p.jpg",
+   "treatment": "PUSH",
+   "move": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.46,
+     0.4,
+     1.4
+    ]
+   },
+   "desc": "Berlin, 20 October 1923: a crowd besieging a baker's van, hands up holding notes; push into the hands",
+   "credit": "Agence Meurisse / BnF Gallica",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "02a-11",
+   "line": "P2.09",
+   "offset": 0.0,
+   "dur": 3.0,
+   "track": "V1",
+   "kind": "still",
+   "file": "s02a-germany-1923/Gov't notice of French Invasion at Essen LCCN2014715615.jpg",
+   "treatment": "HOLD",
+   "desc": "men in hats and coats reading a government notice on a wall, Essen 1923",
+   "credit": "Library of Congress, Bain Collection",
+   "check": "the notice is about the French invasion, not the currency: confirm it may stand under 'The currency collapses'",
+   "shot": null
+  },
+  {
+   "id": "02a-12",
+   "line": "P2.10",
+   "offset": 0.0,
+   "dur": 5.0,
+   "track": "V3",
+   "kind": "card",
+   "file": "cards/VERB-1923-SHAKE.png",
+   "desc": "verb card: 1923 · SHAKE, hard cut in",
+   "treatment": null,
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "02a-13",
+   "line": "P2.12",
+   "offset": 0.0,
+   "dur": 7.0,
+   "track": "V1",
+   "kind": "still",
+   "file": "s02a-germany-1923/Berlin - la foule assiège la voiture d'un boulanger et se dispute le pain à coup de millions de Marks - btv1b9024458p.jpg",
+   "treatment": "DRIFT+XD",
+   "move": {
+    "from": [
+     0.44,
+     0.5,
+     1.05
+    ],
+    "to": [
+     0.56,
+     0.5,
+     1.05
+    ]
+   },
+   "desc": "the bread crowd again, wider, drifting; XD out to scene 03",
+   "credit": "Agence Meurisse / BnF Gallica",
+   "shot": null,
+   "check": null
+  }
+ ]
+}

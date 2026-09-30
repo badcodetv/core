@@ -1,0 +1,190 @@
+{
+ "scene": "02",
+ "title": "Home to what?",
+ "notes": [
+  "HU36157 (1300 px) is INSET with a slow DRIFT inside the inset, per the plan; HU36188 (5163 px) pushes toward the bus.",
+  "The NHS picture is Your Very Good Health (1948, colour) shot 18 (288.37–307.81): an animated map of towns and a river, each town gaining white hospital buildings. It is a map of a region rather than an outline of Britain; it reads as 'hospitals everywhere'.",
+  "P1.12 'Both of those things happened in the same country': the plan's split screen (1948 map left, 2017 card right) is cut here as two pictures in sequence (map 2 s, QT-TEASE 2 s), because the preview shows one picture at a time. In Premiere build it as a true split.",
+  "Keynes still (1348×1470) gets the plan's gentle push only (1.00→1.06), toward Keynes (the left figure, hat in hand; Kingsley Martin is right). The PUSH-under-1920 warning is intended. LOWER-KEYNES rides on V4 over it for the whole of 'John Maynard Keynes.'",
+  "Newborn: A Diary for Timothy shot 5 (107.68–117.12), the baby asleep in the cot, close. TITLE comes in at 84.0 for 6 s to the end of the movement (DIP to movement 2 on its out).",
+  "DATA-DEBT-1 wording follows facts.md (about 2½ × a year's income; the storyboard wants '249%, OBR' in the source caption, which is owed in the end credits)."
+ ],
+ "clips": [
+  {
+   "id": "02-01",
+   "line": "P1.08",
+   "offset": 0.0,
+   "dur": 5.0,
+   "track": "V1",
+   "kind": "still",
+   "file": "s02-home-to-what/HU36188-balham-bus-crater.jpg",
+   "treatment": "PUSH",
+   "move": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.53,
+     0.45,
+     1.25
+    ]
+   },
+   "desc": "Balham, October 1940: a double-decker bus nose-down in a bomb crater; push toward the bus",
+   "check": null,
+   "shot": null
+  },
+  {
+   "id": "02-02",
+   "line": "P1.08",
+   "offset": 5.0,
+   "dur": 4.0,
+   "track": "V1",
+   "kind": "still",
+   "file": "s02-home-to-what/HU36157-bomb-damage-london.jpg",
+   "treatment": "INSET+DRIFT",
+   "desc": "London street of rubble, people in coats and hats walking through it (1300 px, inset)",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "02-03",
+   "line": "P1.09",
+   "offset": 0.0,
+   "dur": 6.0,
+   "track": "V3",
+   "kind": "card",
+   "file": "cards/DATA-DEBT-1.png",
+   "desc": "card: 1945 · DEBT ABOUT 2½ × A YEAR'S INCOME / NATIONAL DEBT AGAINST GDP",
+   "treatment": null,
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "02-04",
+   "line": "P1.10",
+   "offset": 0.0,
+   "dur": 5.0,
+   "track": "V1",
+   "kind": "film",
+   "file": "s09-nhs-opens/your_very_good_health_TNA.picture-only.mov",
+   "src_in": 289.0,
+   "src_max": 307.7,
+   "treatment": "FILM-43",
+   "desc": "1948 colour cartoon: a map of towns along a river, each gaining a white hospital",
+   "shot": "your_very_good_health_TNA#18",
+   "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive",
+   "check": null
+  },
+  {
+   "id": "02-05",
+   "line": "P1.11",
+   "offset": 0.0,
+   "dur": 8.0,
+   "track": "V3",
+   "kind": "card",
+   "file": "cards/QUOTE-QT-TEASE.png",
+   "desc": "quote: '…there isn't a magic money tree that we can shake…' THERESA MAY · 2 JUNE 2017",
+   "check": "QT-TEASE wording is marked verify (as QT-2): sources differ after 'shake'; check the BBC clip",
+   "treatment": null,
+   "shot": null
+  },
+  {
+   "id": "02-06",
+   "line": "P1.12",
+   "offset": 0.0,
+   "dur": 2.0,
+   "track": "V1",
+   "kind": "film",
+   "file": "s09-nhs-opens/your_very_good_health_TNA.picture-only.mov",
+   "src_in": 298.0,
+   "src_max": 307.7,
+   "treatment": "FILM-43",
+   "desc": "the 1948 hospital map again (left half of the planned split)",
+   "shot": "your_very_good_health_TNA#18",
+   "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive",
+   "check": null
+  },
+  {
+   "id": "02-07",
+   "line": "P1.12",
+   "offset": 2.0,
+   "dur": 2.0,
+   "track": "V3",
+   "kind": "card",
+   "file": "cards/QUOTE-QT-TEASE.png",
+   "desc": "the 2017 card again (right half of the planned split)",
+   "treatment": null,
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "02-08",
+   "line": "P1.13",
+   "offset": 0.0,
+   "dur": 11.0,
+   "track": "V1",
+   "kind": "still",
+   "file": "s08-keynes-dies/Keynes_Martin-monks-house.jpg",
+   "treatment": "PUSH",
+   "move": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.46,
+     0.42,
+     1.06
+    ]
+   },
+   "desc": "Keynes (left, hat in hand) with Kingsley Martin at Monk's House, 1930s; slow push toward Keynes",
+   "credit": "Harvard University Library (anonymous, public domain)",
+   "check": "credit wording for the Keynes photograph is not fixed in footage.md (source 'Harvard University library', PD-UK-unknown): settle it for the end credits",
+   "shot": null
+  },
+  {
+   "id": "02-09",
+   "line": "P1.15",
+   "offset": 0.0,
+   "dur": 4.0,
+   "track": "V4",
+   "kind": "card",
+   "file": "cards/LOWER-KEYNES.png",
+   "desc": "lower third: JOHN MAYNARD KEYNES · 1883–1946",
+   "treatment": null,
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "02-10",
+   "line": "P1.16",
+   "offset": 0.0,
+   "dur": 6.0,
+   "track": "V1",
+   "kind": "film",
+   "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+   "src_in": 108.2,
+   "src_max": 117.0,
+   "treatment": "FILM-43+GRADE-BW+HOLD",
+   "desc": "1945: the newborn Timothy asleep in his cot, close",
+   "shot": "DiaryForTimothy#5",
+   "check": "no credit string recorded for A Diary for Timothy (Crown Film Unit 1945, tom@punchcard.tv upload): owed for the end credits"
+  },
+  {
+   "id": "02-11",
+   "line": "P1.16",
+   "offset": 6.0,
+   "dur": 6.0,
+   "track": "V3",
+   "kind": "card",
+   "file": "cards/TITLE.png",
+   "treatment": "HOLD+DIP",
+   "desc": "title: THE FUTURE HE NEVER SAW, held; dip to black to end movement 1",
+   "shot": null,
+   "check": null
+  }
+ ]
+}
