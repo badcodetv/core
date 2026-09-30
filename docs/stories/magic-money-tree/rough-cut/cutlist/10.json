@@ -1,0 +1,158 @@
+{
+ "scene": "10",
+ "title": "The key in the door",
+ "notes": [
+  "Storyboard and plan agree on the words. The plan's slum street (New Town ≈01:30) is dropped: the line is about building, so it opens on the plan becoming houses.",
+  "'Councils commissioned homes' is New Town's blueprint turning into a green estate as houses and terraces pop up on the plots; 'Builders built them' is Pop Goes the Weasel's bricklayers on a scaffold (live action, B/W, 1948); 'Families moved in' is New Town's removal van and a chair walking up the path.",
+  "MOW stills are 800 px Commons copies of IWM web derivatives: INSET, never pushed. They carry a visible 'IWM' watermark bottom right.",
+  "No credit string is recorded in footage.md for the MOW stills (Crown copyright expired, via Commons); owed for the end credits.",
+  "The patriotism line (P6.16) lands on MOW-T51849 'Designs for the People's House': a finished living room, fireplace, armchairs. INSET+HOLD, the line lands on stillness."
+ ],
+ "clips": [
+  {
+   "id": "10-01",
+   "line": "P6.10",
+   "offset": 0.0,
+   "dur": 4.1,
+   "track": "V1",
+   "kind": "film",
+   "file": "s10-key-in-the-door/new_town_TNA.picture-only.mov",
+   "src_in": 440.0,
+   "src_max": 448.67,
+   "treatment": "FILM-43",
+   "desc": "New Town: the blueprint has become a green estate; houses, then terraces and flats pop up on the plots",
+   "shot": "new_town_TNA#46",
+   "check": null,
+   "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+  },
+  {
+   "id": "10-02",
+   "line": "P6.10",
+   "offset": 4.1,
+   "dur": 3.4,
+   "track": "V1",
+   "kind": "film",
+   "file": "s10b-outgrown/pop_goes_the_weasel_TNA.picture-only.mov",
+   "src_in": 421.55,
+   "src_max": 424.99,
+   "treatment": "FILM-43+GRADE-BW",
+   "desc": "bricklayers on a scaffold laying a wall, seen from below against the sky",
+   "shot": "pop_goes_the_weasel_TNA#64",
+   "check": null,
+   "credit": "Crown copyright (expired), Crown Film Unit for the Central Office of Information, 1948, via The National Archives and the Internet Archive"
+  },
+  {
+   "id": "10-03",
+   "line": "P6.10",
+   "offset": 7.5,
+   "dur": 3.5,
+   "track": "V1",
+   "kind": "film",
+   "file": "s10-key-in-the-door/new_town_TNA.picture-only.mov",
+   "src_in": 460.3,
+   "src_max": 464.75,
+   "treatment": "FILM-43",
+   "desc": "a new house, a removal van at the kerb, an armchair walking up the path to the door",
+   "shot": "new_town_TNA#49",
+   "check": null,
+   "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+  },
+  {
+   "id": "10-04",
+   "line": "P6.11",
+   "offset": 0.0,
+   "dur": 3.5,
+   "track": "V1",
+   "kind": "still",
+   "file": "s10-key-in-the-door/MOW-T4550-prefabricated-houses.jpg",
+   "treatment": "INSET",
+   "desc": "a prefab bungalow among trees, two women at the door (800 px)",
+   "shot": null,
+   "check": "visible IWM watermark; credit owed"
+  },
+  {
+   "id": "10-05",
+   "line": "P6.11",
+   "offset": 3.5,
+   "dur": 3.5,
+   "track": "V1",
+   "kind": "still",
+   "file": "s10-key-in-the-door/MOW-T59586-newton-aycliffe-new-town.jpg",
+   "treatment": "INSET+XD",
+   "desc": "Newton Aycliffe new town: a row of new houses across a green (800 px)",
+   "shot": null,
+   "check": "visible IWM watermark; credit owed"
+  },
+  {
+   "id": "10-06",
+   "line": "P6.13",
+   "offset": 0.0,
+   "dur": 5.0,
+   "track": "V1",
+   "kind": "still",
+   "file": "s10b-outgrown/Mac Millan (Harold) Minister President Engeland, Bestanddeelnr 910-7302.jpg",
+   "treatment": "PUSH",
+   "desc": "Harold Macmillan speaking at a microphone, hand raised",
+   "shot": null,
+   "check": "the photograph is catalogued as 'Minister President' (Prime Minister, 1957-63), under a line about his housing drive (Housing Minister 1951-54); confirm the year is acceptable",
+   "move": {
+    "from": [
+     0.5,
+     0.4,
+     1.0
+    ],
+    "to": [
+     0.46,
+     0.22,
+     1.25
+    ]
+   },
+   "credit": "Anefo / Nationaal Archief, CC0"
+  },
+  {
+   "id": "10-07",
+   "line": "P6.14",
+   "offset": 0.0,
+   "dur": 2.65,
+   "track": "V1",
+   "kind": "film",
+   "file": "s10-key-in-the-door/new_town_TNA.picture-only.mov",
+   "src_in": 465.1,
+   "src_max": 467.75,
+   "treatment": "FILM-43",
+   "desc": "close aerial of the finished estate: semis in gardens, lorries and cars on the road",
+   "shot": "new_town_TNA#50",
+   "check": null,
+   "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+  },
+  {
+   "id": "10-08",
+   "line": "P6.14",
+   "offset": 2.65,
+   "dur": 3.35,
+   "track": "V1",
+   "kind": "film",
+   "file": "s10-key-in-the-door/new_town_TNA.picture-only.mov",
+   "src_in": 468.1,
+   "src_max": 482.23,
+   "treatment": "FILM-43",
+   "desc": "high aerial of the whole new town: curving roads, terraces and greens",
+   "shot": "new_town_TNA#51",
+   "check": null,
+   "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+  },
+  {
+   "id": "10-09",
+   "line": "P6.16",
+   "offset": 0.0,
+   "dur": 6.0,
+   "track": "V1",
+   "kind": "still",
+   "file": "s10-key-in-the-door/MOW-T51849-designs-for-the-peoples-house.jpg",
+   "treatment": "INSET+HOLD",
+   "desc": "'Designs for the People's House': a finished living room, fireplace, armchairs, a bookshelf (800 px)",
+   "shot": null,
+   "check": "visible IWM watermark; credit owed"
+  }
+ ]
+}

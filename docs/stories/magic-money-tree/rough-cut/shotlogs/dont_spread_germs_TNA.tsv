@@ -1,0 +1,15 @@
+# source dont_spread_germs_TNA.mpg · offset -0.267s · threshold 0.3 · deinterlaced True · times are the picture-only file's clock
+n	in_s	out_s	dur_s	desc
+1	0.00	7.01	7.01	
+2	7.01	8.33	1.32	
+3	8.33	12.57	4.24	
+4	12.57	14.09	1.52	
+5	14.09	15.69	1.60	
+6	15.69	17.29	1.60	
+7	17.29	18.45	1.16	
+8	18.45	24.37	5.92	
+9	24.37	26.81	2.44	
+10	26.81	44.37	17.56	
+11	44.37	46.13	1.76	
+12	46.13	51.09	4.96	
+13	51.09	62.06	10.97	

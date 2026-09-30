@@ -307,9 +307,9 @@
   "clock": 117,
   "match": 1.0,
   "start": 117.0,
-  "end": 124.53,
+  "end": 125.0,
   "plan_start": 117.0,
-  "plan_end": 124.53
+  "plan_end": 125.0
  },
  {
   "id": "P2.09",
@@ -671,9 +671,9 @@
   "clock": 232,
   "match": 1.0,
   "start": 232.0,
-  "end": 233.26,
+  "end": 234.18,
   "plan_start": 232.0,
-  "plan_end": 233.26
+  "plan_end": 234.18
  },
  {
   "id": "P3.10",
@@ -683,10 +683,10 @@
   "scene": "04",
   "clock": 232,
   "match": 1.0,
-  "start": 233.26,
-  "end": 236.63,
-  "plan_start": 233.26,
-  "plan_end": 236.63
+  "start": 234.18,
+  "end": 240.0,
+  "plan_start": 234.18,
+  "plan_end": 240.0
  },
  {
   "id": "P3.11",
@@ -2318,13 +2318,13 @@
   "part": "P9",
   "text": "So.",
   "words": 1,
-  "scene": "02a",
-  "clock": 117,
+  "scene": "13",
+  "clock": 815,
   "match": 1.0,
-  "start": 124.53,
-  "end": 125.0,
-  "plan_start": 124.53,
-  "plan_end": 125.0
+  "start": 815.0,
+  "end": 815.62,
+  "plan_start": 815.0,
+  "plan_end": 815.62
  },
  {
   "id": "P9.10",
@@ -2334,10 +2334,10 @@
   "scene": "13",
   "clock": 815,
   "match": 1.0,
-  "start": 815.0,
-  "end": 817.14,
-  "plan_start": 815.0,
-  "plan_end": 817.14
+  "start": 815.62,
+  "end": 817.5,
+  "plan_start": 815.62,
+  "plan_end": 817.5
  },
  {
   "id": "P9.11",
@@ -2347,9 +2347,9 @@
   "scene": "13",
   "clock": 815,
   "match": 1.0,
-  "start": 817.14,
+  "start": 817.5,
   "end": 820.0,
-  "plan_start": 817.14,
+  "plan_start": 817.5,
   "plan_end": 820.0
  },
  {
@@ -2491,9 +2491,9 @@
   "clock": 848,
   "match": 1.0,
   "start": 848.0,
-  "end": 858.46,
+  "end": 852.31,
   "plan_start": 848.0,
-  "plan_end": 858.46
+  "plan_end": 852.31
  },
  {
   "id": "P9.23",
@@ -2503,23 +2503,23 @@
   "scene": "13",
   "clock": 848,
   "match": 1.0,
-  "start": 858.46,
-  "end": 865.0,
-  "plan_start": 858.46,
-  "plan_end": 865.0
+  "start": 852.31,
+  "end": 855.0,
+  "plan_start": 852.31,
+  "plan_end": 855.0
  },
  {
   "id": "P9.24",
   "part": "P9",
   "text": "\"Anything we can actually do we can afford.\"",
   "words": 8,
-  "scene": "04",
-  "clock": 232,
+  "scene": "13",
+  "clock": 855,
   "match": 1.0,
-  "start": 236.63,
-  "end": 240.0,
-  "plan_start": 236.63,
-  "plan_end": 240.0
+  "start": 855.0,
+  "end": 865.0,
+  "plan_start": 855.0,
+  "plan_end": 865.0
  },
  {
   "id": "P9.25",

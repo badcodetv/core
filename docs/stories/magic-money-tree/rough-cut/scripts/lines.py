@@ -31,7 +31,9 @@ def parts():
         pid, title, body = m.group(1), m.group(2), m.group(3)
         lyr = re.search(r"```lyrics\n(.*?)```", body, re.S)
         lines = [l.strip() for l in lyr.group(1).splitlines() if l.strip() and not l.startswith("[")]
-        out.append((pid, title, lines))
+        sc = re.search(r"scenes? ([0-9a-z, ]+?)(?: \(|$)", title)
+        scenes = [x.strip() for x in sc.group(1).split(",")] if sc else None
+        out.append((pid, title, lines, scenes))
     return out
 
 
@@ -73,7 +75,7 @@ def main():
     for r in rows:
         r["n"] = norm(r["text"])
     out, unmatched = [], []
-    for pid, title, lines in parts():
+    for pid, title, lines, scenes in parts():
         for i, line in enumerate(lines, 1):
             spoken = line
             for k, v in sorted(NUM.items(), key=lambda kv: -len(kv[0])):
@@ -81,6 +83,8 @@ def main():
             n = norm(spoken)
             best, score = None, 0.0
             for r in rows:
+                if scenes and r["scene"] not in scenes:
+                    continue           # a line repeated elsewhere in the film must match its own scene
                 if n and n in r["n"]:
                     s = 1.0
                 else:
@@ -100,7 +104,8 @@ def main():
         if l["clock"] is None:
             prev = next((o["clock"] for o in reversed(out[:i]) if o["clock"] is not None), -1)
             nxt = next((o["clock"] for o in out[i + 1:] if o["clock"] is not None), 10 ** 6)
-            free = [r for r in rows if prev < r["clock"] < nxt and r["clock"] not in used]
+            free = [r for r in rows if prev < r["clock"] < nxt and r["clock"] not in used
+                    and (not l.get("scenes") or r["scene"] in l["scenes"])]
             if free:
                 l.update(scene=free[0]["scene"], clock=free[0]["clock"], match="slot")
                 used.add(free[0]["clock"])

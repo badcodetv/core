@@ -1,0 +1,131 @@
+{
+ "scene": "12",
+ "title": "They knew about the magic",
+ "notes": [
+  "Edit plan and storyboard agree on the words; the plan's picture intent is followed except where noted.",
+  "Opening: Your Very Good Health shot #2 (00:35–01:05, the painted post-war estate, colour). One continuous V1 clip runs 780–793 so the pamphlet (DOC, V2) sits over it dimmed to 35%. The plan asked for XD in from 11a's 5 s of black (11a-26); Premiere should dissolve the black into 12-01.",
+  "Pamphlet: TNA MH 55/965 hero crop (1800 px). DOC push over 10 s from the whole spread to the centre panel 'Remember….. no fairy wand was waved on July 5th…', arriving as the quotation is spoken (P9.03). The move ends at 1.5x of the doc fit (about 1.44x native): at the INSET softness limit, look at it in Premiere. QUOTE-FAIRY-WAND (same words, typeset) is the backup card if the scan reads too soft: swap it in for 12-03 at the same clock.",
+  "Credit: documents.md gives 'The National Archives, MH 55/965. Contains public sector information licensed under the Open Government Licence v3.0.'; the brief asked for 'Crown copyright' in front. Both are joined in the credit field.",
+  "Ward: A Diary for Timothy, the long tracking shot of the ward (shot log #14 is one 77 s record because its dissolves were not detected; the ward track itself runs ≈220.5–253). 224.5 is the pull back to the whole ward of beds. Scene 09 also names 'Diary ≈04:00 (a ward of beds)'; scene 14 uses the later part of this same track (240–245). Match scene 09 when it is written.",
+  "London Airport ≈03:00: #17 (the paving train, men riding it) then #19 (a labourer levelling fresh concrete strip).",
+  "New Town ≈03:00 is the sprawl/green-belt sequence, not a plan; the film's actual planning drawings are at 05:29–06:15, used instead: #40 the blueprint of streets and plots, then #42 where the plots on the grid fill with buildings one by one ('a job list'). Scene 10 names New Town ≈03:00 as 'the estate plan' too: whoever writes 10 may prefer to share one of these."
+ ],
+ "clips": [
+  {
+   "id": "12-01",
+   "line": "P9.01",
+   "offset": 0.0,
+   "dur": 13.0,
+   "track": "V1",
+   "kind": "film",
+   "file": "s09-nhs-opens/your_very_good_health_TNA.picture-only.mov",
+   "treatment": "FILM-43+XD",
+   "desc": "Your Very Good Health (1948, colour cartoon): the new painted estate of semi-detached houses, empty street; carries on dimmed under the pamphlet",
+   "src_in": 36.0,
+   "src_max": 64.87,
+   "shot": "your_very_good_health_TNA#2",
+   "check": null
+  },
+  {
+   "id": "12-02",
+   "line": "P9.02",
+   "offset": 0.0,
+   "dur": 10.0,
+   "track": "V2",
+   "kind": "doc",
+   "file": "s12-knew-about-the-magic/docs/TNA-MH55-965-hero-1800x720-crop.jpg",
+   "treatment": "DOC+PUSH",
+   "desc": "Sept 1948 pamphlet 'The New National Health Service' spread; push to the centre panel: 'Remember….. no fairy wand was waved on July 5th to create new hospitals, new doctors and new nurses overnight'",
+   "move": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.51,
+     0.65,
+     1.5
+    ]
+   },
+   "credit": "Crown copyright, The National Archives, MH 55/965. Contains public sector information licensed under the Open Government Licence v3.0.",
+   "shot": null,
+   "check": "TNA's 'Using this image' terms were not read (documents.md): confirm the licence wording, and that the 1800 px crop holds up at 1.5x"
+  },
+  {
+   "id": "12-03",
+   "line": "P9.04",
+   "offset": 0.0,
+   "dur": 5.0,
+   "track": "V1",
+   "kind": "film",
+   "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+   "treatment": "FILM-43+GRADE-BW",
+   "desc": "1945 hospital ward at night: long rows of beds, lamps on the walls, the camera pulling back down the ward",
+   "src_in": 224.5,
+   "src_max": 252.5,
+   "shot": "DiaryForTimothy#14 (ward track ≈220.5–253 inside it)",
+   "check": "end-credit string for A Diary for Timothy (Crown Film Unit, 1945, Crown copyright expired, picture only) still owed"
+  },
+  {
+   "id": "12-04",
+   "line": "P9.05",
+   "offset": 0.0,
+   "dur": 3.6,
+   "track": "V1",
+   "kind": "film",
+   "file": "s04-the-word-actually/london_airport_TNA.picture-only.mov",
+   "treatment": "FILM-43+GRADE-BW",
+   "desc": "London Airport (1949): a concrete paving train on the runway, men riding and working it",
+   "src_in": 189.8,
+   "src_max": 195.96,
+   "shot": "london_airport_TNA#17",
+   "check": null
+  },
+  {
+   "id": "12-05",
+   "line": "P9.06",
+   "offset": 0.0,
+   "dur": 2.4,
+   "track": "V1",
+   "kind": "film",
+   "file": "s04-the-word-actually/london_airport_TNA.picture-only.mov",
+   "treatment": "FILM-43+GRADE-BW",
+   "desc": "London Airport (1949): a labourer bent over, levelling a fresh strip of concrete by hand",
+   "src_in": 202.9,
+   "src_max": 209.64,
+   "shot": "london_airport_TNA#19",
+   "check": null
+  },
+  {
+   "id": "12-06",
+   "line": "P9.07",
+   "offset": 0.0,
+   "dur": 6.11,
+   "track": "V1",
+   "kind": "film",
+   "file": "s10-key-in-the-door/new_town_TNA.picture-only.mov",
+   "treatment": "FILM-43",
+   "desc": "New Town (1948, colour cartoon): white-line blueprint of a town's streets and plots on dark blue",
+   "src_in": 329.2,
+   "src_max": 339.99,
+   "shot": "new_town_TNA#40",
+   "check": null
+  },
+  {
+   "id": "12-07",
+   "line": "P9.08",
+   "offset": 0.0,
+   "dur": 4.89,
+   "track": "V1",
+   "kind": "film",
+   "file": "s10-key-in-the-door/new_town_TNA.picture-only.mov",
+   "treatment": "FILM-43+XD",
+   "desc": "New Town: the grid of empty plots; buildings pop up on them one after another",
+   "src_in": 359.8,
+   "src_max": 366.0,
+   "shot": "new_town_TNA#42 (dissolves to a blueprint at ≈367)",
+   "check": null
+  }
+ ]
+}

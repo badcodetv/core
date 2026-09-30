@@ -1,0 +1,101 @@
+{
+ "scene": "14",
+ "title": "A life to get back to",
+ "notes": [
+  "All A Diary for Timothy shots are GRADE-BW and allowed to run; Dunkirk is FILM-43 + GRADE-BW.",
+  "14-01 is the later half of the same ward track scene 12 uses (12-03 at 224.5): here the camera travels down the beds to the young patient, 240–245. It answers 'Other people did'.",
+  "Plan's 'Diary ≈15:00, the nurse walking the patient' is the shot scene 11 closes on (11-14, 884.3–897.4). Not repeated here three minutes later; 'every day after that, other people made it work' goes on the nurse serving tea to the patients (≈08:00, shot #51), which is also the plan's 14:25 '→ ≈08:00'. If Kai wants the deliberate echo, swap 14-02 for 11-14's shot at the same clock.",
+  "Dunkirk: scene 01 is not written yet. The plan's '05:08–05:20 troops disembarking' block is ten very short shots; used here: #44 (troops embracing on the quay, 313.2) and #46 (British troops walking off, grinning, thumbs up, past an ambulance, 317.5). Whichever of these scene 01 ends on, 14-03/14-04 should match it.",
+  "Ending: the baby in his cot (Timothy), the film's last shot before its own fade and 'THE END' card (≈2222.5). Our fade to black runs over the last 3 s of 14-05 (885–888), then 2 s of pure black (888–890): the film has ended. The FADE treatment in premiere-plan.py is 12 frames: set it to 3 s (75 frames) by hand on the tail of 14-05.",
+  "Credit for A Diary for Timothy still owed (see 11)."
+ ],
+ "clips": [
+  {
+   "id": "14-01",
+   "line": "P9.25",
+   "offset": 0.0,
+   "dur": 5.0,
+   "track": "V1",
+   "kind": "film",
+   "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+   "treatment": "FILM-43+GRADE-BW",
+   "desc": "1945 ward: the camera tracks along the beds to a young patient lying back, hand behind his head",
+   "src_in": 240.0,
+   "src_max": 252.5,
+   "shot": "DiaryForTimothy#14 (ward track ≈220.5–253)",
+   "check": "end-credit string for A Diary for Timothy (Crown Film Unit, 1945, Crown copyright expired, picture only) still owed"
+  },
+  {
+   "id": "14-02",
+   "line": "P9.27",
+   "offset": 0.0,
+   "dur": 6.0,
+   "track": "V1",
+   "kind": "film",
+   "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+   "treatment": "FILM-43+GRADE-BW",
+   "desc": "a nurse in cap and cape serves from a tray to patients in their beds; one reaches for his cup",
+   "src_in": 470.0,
+   "src_max": 482.02,
+   "shot": "DiaryForTimothy#51",
+   "check": null
+  },
+  {
+   "id": "14-03",
+   "line": "P9.28",
+   "offset": 0.0,
+   "dur": 1.95,
+   "track": "V1",
+   "kind": "film",
+   "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+   "treatment": "FILM-43+GRADE-BW",
+   "desc": "Dunkirk 1940: soldiers back on the quay, embracing",
+   "src_in": 313.2,
+   "src_max": 315.88,
+   "shot": "gov.fdr.25.4#44",
+   "check": "actuality or staged insert (footage.md §2b); several helmets look French: fine for 'people', confirm"
+  },
+  {
+   "id": "14-04",
+   "line": "P9.28",
+   "offset": 1.95,
+   "dur": 2.05,
+   "track": "V1",
+   "kind": "film",
+   "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+   "treatment": "FILM-43+GRADE-BW",
+   "desc": "Dunkirk 1940: British troops walk off the quay grinning, thumbs up, past an ambulance",
+   "src_in": 317.5,
+   "src_max": 319.55,
+   "shot": "gov.fdr.25.4#46",
+   "check": "actuality or staged insert (footage.md §2b); match scene 01's last shot"
+  },
+  {
+   "id": "14-05",
+   "line": "P9.29",
+   "offset": 0.0,
+   "dur": 8.0,
+   "track": "V1",
+   "kind": "film",
+   "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+   "treatment": "FILM-43+GRADE-BW+HOLD+FADE",
+   "desc": "the baby Timothy in his cot, looking up, fist at his mouth; fade to black over the last 3 s",
+   "src_in": 2212.0,
+   "src_max": 2221.5,
+   "shot": "DiaryForTimothy#243 (film fades at ≈2222.5, then THE END)",
+   "check": null
+  },
+  {
+   "id": "14-06",
+   "line": "P9.30",
+   "offset": 3.0,
+   "dur": 2.0,
+   "track": "V1",
+   "kind": "black",
+   "treatment": null,
+   "desc": "2 s of pure black: the film has ended",
+   "shot": null,
+   "check": null
+  }
+ ]
+}

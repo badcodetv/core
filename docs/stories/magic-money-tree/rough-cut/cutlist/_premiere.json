@@ -1,0 +1,1818 @@
+[
+ {
+  "id": "10a:10a-01",
+  "track": 0,
+  "kind": "still",
+  "file": "s10a-new-money/Lehman Brothers-NYC-20080915.jpg",
+  "start": 560.0,
+  "end": 563.5,
+  "dur": 3.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     40.8
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.46,
+      0.5
+     ]
+    ],
+    [
+     3.5,
+     [
+      0.54,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Robert Scoble, CC BY 2.0"
+ },
+ {
+  "id": "10a:10a-02",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-NEW-YORK-2008.png",
+  "start": 560.0,
+  "end": 563.5,
+  "dur": 3.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "10a:10a-03",
+  "track": 0,
+  "kind": "still",
+  "file": "s10a-new-money/Northern Rock Queue.jpg",
+  "start": 563.5,
+  "end": 570.0,
+  "dur": 6.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     55.56
+    ],
+    [
+     6.5,
+     62.22
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ],
+    [
+     6.5,
+     [
+      0.458,
+      0.724
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "2007 photograph (the run) under the 2008 rescue line: confirm it reads as 'the crisis', not as the rescue itself",
+  "credit": "Dominic Alves, CC BY 2.0"
+ },
+ {
+  "id": "10a:10a-04",
+  "track": 0,
+  "kind": "still",
+  "file": "s10a-new-money/Bank-of-England.jpg",
+  "start": 570.0,
+  "end": 574.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     19.18
+    ],
+    [
+     4.0,
+     21.48
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "acediscovery, CC BY 4.0"
+ },
+ {
+  "id": "10a:10a-05",
+  "track": 1,
+  "kind": "chart",
+  "file": "charts/DIAGRAM-10A-1.png",
+  "start": 574.0,
+  "end": 577.0,
+  "dur": 3.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "10a:10a-06",
+  "track": 1,
+  "kind": "chart",
+  "file": "charts/DIAGRAM-10A-2.png",
+  "start": 577.0,
+  "end": 579.0,
+  "dur": 2.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "10a:10a-07",
+  "track": 1,
+  "kind": "chart",
+  "file": "charts/DIAGRAM-10A-3.png",
+  "start": 579.0,
+  "end": 581.0,
+  "dur": 2.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "10a:10a-08",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/QUOTE-BOE-1.png",
+  "start": 581.0,
+  "end": 586.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "10a:10a-09",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/QUOTE-BOE-2.png",
+  "start": 586.0,
+  "end": 590.42,
+  "dur": 4.42,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "10a:10a-10",
+  "track": 0,
+  "kind": "still",
+  "file": "s10a-new-money/Threadneedle Street doors, Bank of England.jpg",
+  "start": 590.42,
+  "end": 593.0,
+  "dur": 2.58,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     44.67
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Rev Stan, CC BY 2.0"
+ },
+ {
+  "id": "10a:10a-11",
+  "track": 0,
+  "kind": "still",
+  "file": "s10a-new-money/Bank of England Facade.jpg",
+  "start": 593.0,
+  "end": 598.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     47.62
+    ],
+    [
+     5.0,
+     53.33
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "10a:10a-12",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/VERB-2009-SHAKE.png",
+  "start": 598.0,
+  "end": 603.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "10a:10a-13",
+  "track": 0,
+  "kind": "still",
+  "file": "s10a-new-money/Northern Rock Queue.jpg",
+  "start": 603.0,
+  "end": 615.0,
+  "dur": 12.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     55.56
+    ],
+    [
+     12.0,
+     80.56
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ],
+    [
+     12.0,
+     [
+      0.3695,
+      0.326
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Dominic Alves, CC BY 2.0"
+ },
+ {
+  "id": "11:11-01",
+  "track": 0,
+  "kind": "still",
+  "file": "s11-another-shift/Chancellor of the Exchequer George Osborne (6128163568).jpg",
+  "start": 615.0,
+  "end": 619.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     75.84
+    ],
+    [
+     4.0,
+     84.94
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "2011 photograph under '2010': fine as the Chancellor of the period; confirm",
+  "credit": "Foreign and Commonwealth Office, CC BY 2.0"
+ },
+ {
+  "id": "11:11-02",
+  "track": 1,
+  "kind": "doc",
+  "file": "s11-another-shift/docs/Budget2010-HC61-pdfpage001.png",
+  "start": 619.0,
+  "end": 623.24,
+  "dur": 4.24,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     27.49
+    ],
+    [
+     4.24,
+     28.86
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "HM Treasury, Budget 2010 (HC 61). Contains public sector information licensed under the Open Government Licence v3.0."
+ },
+ {
+  "id": "11:11-03",
+  "track": 1,
+  "kind": "doc",
+  "file": "s11-another-shift/docs/Budget2010-HC61-pdfpage002.png",
+  "start": 623.24,
+  "end": 627.0,
+  "dur": 3.76,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     27.49
+    ],
+    [
+     3.76,
+     28.86
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "HM Treasury, Budget 2010 (HC 61). Contains public sector information licensed under the Open Government Licence v3.0."
+ },
+ {
+  "id": "11:11-04",
+  "track": 0,
+  "kind": "still",
+  "file": "s11-another-shift/Budget 2014; Chancellor George Osborne delivering his Budget Statement.jpg",
+  "start": 627.0,
+  "end": 632.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     104.62
+    ],
+    [
+     5.0,
+     104.62
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "2014 photograph under the 2010 Coalition line; the plan chose it, confirm",
+  "credit": "HM Treasury, OGL v3"
+ },
+ {
+  "id": "11:11-05",
+  "track": 1,
+  "kind": "doc",
+  "file": "s11-another-shift/docs/Budget2010-HC61-p45-para2.18-crop.png",
+  "start": 632.0,
+  "end": 635.0,
+  "dur": 3.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     79.12
+    ],
+    [
+     3.0,
+     83.08
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "HM Treasury, Budget 2010 (HC 61). Contains public sector information licensed under the Open Government Licence v3.0."
+ },
+ {
+  "id": "11:11-06",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/DATA-PAY.png",
+  "start": 635.0,
+  "end": 638.0,
+  "dur": 3.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "11:11-07",
+  "track": 0,
+  "kind": "still",
+  "file": "s10a-new-money/Bank of England Facade.jpg",
+  "start": 638.0,
+  "end": 641.2,
+  "dur": 3.2,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     50.48
+    ],
+    [
+     3.2,
+     53.33
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ],
+    [
+     3.2,
+     [
+      0.5,
+      0.556
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "11:11-08",
+  "track": 1,
+  "kind": "doc",
+  "file": "s11-another-shift/docs/Budget2010-HC61-pdfpage001.png",
+  "start": 641.2,
+  "end": 645.0,
+  "dur": 3.8,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     27.49
+    ],
+    [
+     3.8,
+     28.86
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "HM Treasury, Budget 2010 (HC 61). Contains public sector information licensed under the Open Government Licence v3.0."
+ },
+ {
+  "id": "11:11-09",
+  "track": 0,
+  "kind": "still",
+  "file": "s11-another-shift/Theresa May (2016).jpg",
+  "start": 645.0,
+  "end": 650.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     23.98
+    ],
+    [
+     5.0,
+     27.58
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.55
+     ]
+    ],
+    [
+     5.0,
+     [
+      0.4894,
+      0.73
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "2016 portrait under the 2017 Question Time line; confirm",
+  "credit": "Andrew Parsons / Prime Minister's Office, OGL v3"
+ },
+ {
+  "id": "11:11-10",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/PAYSLIP.png",
+  "start": 650.0,
+  "end": 656.0,
+  "dur": 6.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "payslip line is secondary-sourced (Victoria Davey, per RCNi/Independent/AP): confirm against the BBC clip before recording",
+  "credit": null
+ },
+ {
+  "id": "11:11-11",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/QUOTE-QT-1.png",
+  "start": 656.0,
+  "end": 662.0,
+  "dur": 6.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "QT-1 wording from secondary transcripts only: check the BBC clip",
+  "credit": null
+ },
+ {
+  "id": "11:11-12",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/QUOTE-QT-2.png",
+  "start": 662.0,
+  "end": 668.0,
+  "dur": 6.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "QT-2 wording: sources differ after 'shake'; check the BBC clip",
+  "credit": null
+ },
+ {
+  "id": "11:11-13",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/VERB-2011-STARVE.png",
+  "start": 668.0,
+  "end": 672.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "11:11-14",
+  "track": 0,
+  "kind": "film",
+  "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+  "start": 672.0,
+  "end": 685.0,
+  "dur": 13.0,
+  "in": 884.3,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "1945 nurse under a 2017 line: confirm it reads as 'the same kind of nurse, seventy years earlier' and not as the nurse from Question Time; consider a 1945 label",
+  "credit": null
+ },
+ {
+  "id": "11a:11a-01",
+  "track": 0,
+  "kind": "still",
+  "file": "s11a-money-was-found/10 Downing Street COVID-19 press conference, 20 March 2020.png",
+  "start": 685.0,
+  "end": 690.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     104.62
+    ],
+    [
+     5.0,
+     104.62
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": "10 Downing Street, OGL v3"
+ },
+ {
+  "id": "11a:11a-02",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/DATA-2020-BORROWED-CREATED.png",
+  "start": 690.0,
+  "end": 696.0,
+  "dur": 6.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": null
+ },
+ {
+  "id": "11a:11a-03",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/VERB-2020-PLANT.png",
+  "start": 696.0,
+  "end": 702.0,
+  "dur": 6.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": null
+ },
+ {
+  "id": "11a:11a-04",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/VERB-2020-SHAKE.png",
+  "start": 702.0,
+  "end": 704.5,
+  "dur": 2.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": null
+ },
+ {
+  "id": "11a:11a-05",
+  "track": 1,
+  "kind": "doc",
+  "file": "s11a-money-was-found/press/2022-01-12--bbc--govt-ppe-vip-lane-unlawful-court-rules--headline-only.png",
+  "start": 704.5,
+  "end": 710.0,
+  "dur": 5.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     173.57
+    ],
+    [
+     5.5,
+     182.25
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": "BBC News, 12 January 2022"
+ },
+ {
+  "id": "11a:11a-06",
+  "track": 1,
+  "kind": "doc",
+  "file": "s11a-money-was-found/docs/cf-masks-782b70db-crop-supplier-value-date.png",
+  "start": 710.0,
+  "end": 714.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     166.15
+    ],
+    [
+     4.0,
+     174.46
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": "Contracts Finder, Department of Health and Social Care. Contains public sector information licensed under the Open Government Licence v3.0."
+ },
+ {
+  "id": "11a:11a-07",
+  "track": 1,
+  "kind": "doc",
+  "file": "s11a-money-was-found/docs/cf-gowns-79397607-crop-supplier-value-date.png",
+  "start": 714.0,
+  "end": 718.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     166.15
+    ],
+    [
+     4.0,
+     174.46
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": "Contracts Finder, Department of Health and Social Care. Contains public sector information licensed under the Open Government Licence v3.0."
+ },
+ {
+  "id": "11a:11a-08",
+  "track": 1,
+  "kind": "doc",
+  "file": "s11a-money-was-found/docs/judgment-ewhc-comm-2025-2486-para330-crop.png",
+  "start": 718.0,
+  "end": 721.0,
+  "dur": 3.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     208.19
+    ],
+    [
+     3.0,
+     218.6
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": "Contains information licensed under the Open Justice - Licence v2.0."
+ },
+ {
+  "id": "11a:11a-09",
+  "track": 1,
+  "kind": "doc",
+  "file": "s11a-money-was-found/docs/judgment-ewhc-comm-2025-2486-header-crop.png",
+  "start": 721.0,
+  "end": 724.0,
+  "dur": 3.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     131.35
+    ],
+    [
+     3.0,
+     137.92
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": "Contains information licensed under the Open Justice - Licence v2.0."
+ },
+ {
+  "id": "11a:11a-10",
+  "track": 1,
+  "kind": "doc",
+  "file": "s11a-money-was-found/press/2025-10-01--bbc--high-court-mone-linked-company-breached-contract--headline-only.png",
+  "start": 724.0,
+  "end": 727.0,
+  "dur": 3.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     186.92
+    ],
+    [
+     3.0,
+     196.27
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": "BBC News, 1 October 2025"
+ },
+ {
+  "id": "11a:11a-11",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/DATE-ADMINISTRATION.png",
+  "start": 727.0,
+  "end": 729.5,
+  "dur": 2.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": null
+ },
+ {
+  "id": "11a:11a-12",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/DATE-JUDGMENT.png",
+  "start": 729.5,
+  "end": 732.0,
+  "dur": 2.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": null
+ },
+ {
+  "id": "11a:11a-13",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/QUOTE-MONE-2020.png",
+  "start": 732.0,
+  "end": 737.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": null
+ },
+ {
+  "id": "11a:11a-14",
+  "track": 1,
+  "kind": "doc",
+  "file": "s11a-money-was-found/press/2023-12-17--bbc--mone-admits-stands-to-benefit-60m--headline-only.png",
+  "start": 737.0,
+  "end": 743.0,
+  "dur": 6.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     205.71
+    ],
+    [
+     6.0,
+     216.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": "BBC News, 17 December 2023"
+ },
+ {
+  "id": "11a:11a-15",
+  "track": 1,
+  "kind": "doc",
+  "file": "s11a-money-was-found/press/2023-12-17--bbc--mone-admits-stands-to-benefit-60m--headline-only.png",
+  "start": 743.0,
+  "end": 746.0,
+  "dur": 3.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     205.71
+    ],
+    [
+     3.0,
+     216.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": "BBC News, 17 December 2023"
+ },
+ {
+  "id": "11a:11a-16",
+  "track": 0,
+  "kind": "illustration",
+  "file": "cards/PH-11A-Y.png",
+  "start": 746.0,
+  "end": 750.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100.0
+    ],
+    [
+     4.0,
+     112.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": null
+ },
+ {
+  "id": "11a:11a-17",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-ILLUSTRATION.png",
+  "start": 746.0,
+  "end": 750.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": null
+ },
+ {
+  "id": "11a:11a-18",
+  "track": 1,
+  "kind": "doc",
+  "file": "s11a-money-was-found/press/2024-07-18--boatinternational--lady-m-yacht-auction--headline-only.png",
+  "start": 750.0,
+  "end": 753.0,
+  "dur": 3.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     139.35
+    ],
+    [
+     3.0,
+     146.32
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": "Boat International, 18 July 2024"
+ },
+ {
+  "id": "11a:11a-19",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/COLUMN-11A-1.png",
+  "start": 753.0,
+  "end": 755.3,
+  "dur": 2.3,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": null
+ },
+ {
+  "id": "11a:11a-20",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/COLUMN-11A-2.png",
+  "start": 755.3,
+  "end": 757.6,
+  "dur": 2.3,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": null
+ },
+ {
+  "id": "11a:11a-21",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/COLUMN-11A-3.png",
+  "start": 757.6,
+  "end": 760.0,
+  "dur": 2.4,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": null
+ },
+ {
+  "id": "11a:11a-22",
+  "track": 0,
+  "kind": "film",
+  "file": "s05-britain-paid/gov.ntis.ava06858vnb1.picture-only.mov",
+  "start": 760.0,
+  "end": 765.0,
+  "dur": 5.0,
+  "in": 2365.3,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "11a legal read",
+  "credit": null
+ },
+ {
+  "id": "11a:11a-23",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-AMERICAN-FILM-1944.png",
+  "start": 760.0,
+  "end": 765.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": null
+ },
+ {
+  "id": "11a:11a-24",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/PAYSLIP.png",
+  "start": 765.0,
+  "end": 769.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": null
+ },
+ {
+  "id": "11a:11a-25",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/VERB-2020-SHAKE.png",
+  "start": 769.0,
+  "end": 775.0,
+  "dur": 6.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": null
+ },
+ {
+  "id": "11a:11a-26",
+  "track": 0,
+  "kind": "black",
+  "file": null,
+  "start": 775.0,
+  "end": 780.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": null,
+  "opacity": [
+   [
+    4.52,
+    100
+   ],
+   [
+    5.0,
+    0
+   ]
+  ],
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read",
+  "credit": null
+ }
+]
