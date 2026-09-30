@@ -19,6 +19,10 @@ STYLE = {  # ink colour (RGB), blend, font, per-word tilt (deg), weight for vari
     'frost': dict(ink=(38, 42, 50), blend='multiply', font='oswald', tilt=0, opacity=0.85, wght=600),   # vinyl on a frosted door band
     'receipt': dict(ink=(55, 55, 62), blend='multiply', font='led', tilt=0, opacity=0.9),               # thermal till roll
     'news': dict(ink=(18, 18, 20), blend='multiply', font='oswald', tilt=0, opacity=0.9, wght=700),     # a broadsheet headline
+    # 2026-09-30 breathing-room surfaces
+    'paint': dict(ink=(226, 222, 212), blend='normal', font='marker', tilt=2.5, opacity=0.82, blur=1.0),  # spray/paint on a shutter, wall or bus side
+    'vinyl': dict(ink=(236, 236, 232), blend='normal', font='oswald', tilt=0, opacity=0.95, wght=600, shade_min=0.85),  # white cut-vinyl on dark glass
+    'screen': dict(ink=(235, 240, 245), blend='glow', font='oswald', tilt=0, opacity=0.95, wght=500),     # a phone screen
     'fog': dict(ink=(120, 128, 136), blend='multiply', font='marker', tilt=2.0, opacity=0.8, blur=1.6),  # a finger through condensation
 }
 SCALE = 3  # text canvas supersampling
@@ -161,7 +165,7 @@ def render(nn, cfg, src, dst, static=False):
             if st['blend'] == 'multiply':
                 f[:] = f * (1 - al3) + (f * ink / 255.0) * al3
             elif st['blend'] == 'normal':
-                shade = (f.mean(2, keepdims=True) / 160.0).clip(0.55, 1.25)  # pick up the surface light
+                shade = (f.mean(2, keepdims=True) / 160.0).clip(st.get('shade_min', 0.55), 1.25)  # pick up the surface light
                 f[:] = f * (1 - al3) + (ink * shade) * al3
             else:  # glow: amber LED dots + soft bloom
                 bloom = cv2.GaussianBlur(al, (0, 0), 3.0)[..., None]

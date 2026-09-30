@@ -1682,3 +1682,23 @@ A frame 0.33s into an Opacity 0→100 fade exported with **full-brightness RGB a
 - **Relink a clip without losing cuts:** `await clipProjectItem.changeMediaFilePath(winPath, false)` returns `true`
   and takes effect at once. It is **not** an Action: there is no `createChangeMediaFilePathAction`. Wrapping it in
   a transaction silently does nothing. Check first with `canChangeMediaPath()`.
+
+## 2026-09-30: learned building `music video breath` (a clone, 39 overwrites)
+
+- ✅ **A sequence can be duplicated from the API:** `sequence.createCloneAction()` inside a transaction makes
+  "`<name> Copy`". Rename it with `(await seq.getProjectItem()).createSetNameAction('new name')`, also in a
+  transaction. This is the safe way to re-cut: the original stays untouched.
+- ✅ **Overwrite-in-place keeps the clips you don't touch exactly where they were.** Overwriting only the slots
+  between the text clips left every lyric on its sung word, with no re-sync needed.
+- ⚠️ **Frame rounding leaves one-frame slivers.** An overwrite ending at `64.79` stopped at the frame boundary
+  `64.75`, so a 1-frame piece of the old clip survived. Find anything under 0.1 s, remove it with
+  `createRemoveItemsAction(selection, false, MediaType.ANY, false)`, then close the gap with
+  `createSetEndAction` on the clip before it. Or give plan times already snapped to 1/24 s.
+- 🔴 **The `.png.png` export trap bit again** (see the 2026-08-30 note above): read `*.png.png` rather than
+  waiting on the tool's `EXPORT_FAILED`. The bridge fix is still owed.
+- 🔴 **Four export calls fired at once all failed**: the one-command-in-flight law, broken by accident. Export
+  frames one at a time.
+- 🔴 **Overwriting a clip drops its effects and keyframes.** `createOverwriteItemAction` puts in a fresh track item,
+  so any Motion push, grade or effect on the clip it replaces is gone. Before a swap pass, `jq` the state for items
+  with `keyframes` or extra components, and re-apply them afterwards (2026-09-30: the receipt and wine-label pushes
+  vanished unnoticed for three passes).

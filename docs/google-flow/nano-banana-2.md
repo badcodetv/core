@@ -1977,6 +1977,63 @@ Run for a gritty photoreal night-street still (neon, rain). **New or contradicti
 
 **✅ The web still agrees with the repo on:** one named, positioned light; camera body plus focal length plus available light instead of quality words; *photorealistic*, *cinematic*, *8K*, *masterpiece* and adjective stacks as slop triggers; teal-orange, smooth skin and generic bokeh as the named "AI look"; uniform lens blur as a tell; light that is plausible but not physical as the core tell; candid, asymmetric, mid-action framing; film grain and texture; people in the scene rather than an empty street; and short, focused prompts over long, competing ones.
 
+## Fifteenth pass — 2026-09-30 web delta: slop tells, night sky, hands `[community]` `[physics]`
+
+Run for the Camping music video "breathing room" stills (`br-*`, `scripts/camping-mv2/breath-stills.json`). **New
+items only. None tested on our work yet.** Still no "Nano Banana Pro 2": Jack asked for it, and it was read as
+**Nano Banana Pro**. No new Google guide; "2.1" and "2.5" are still unannounced.
+
+- 🆕 **A cloudy town night sky is not black.** Low cloud reflects the town's light back down, many times brighter
+  than a clear sky and tinted orange-grey. `[physics]` [LiveScience](https://www.livescience.com/49819-light-pollution-bright-cloudy-nights.html) ·
+  [PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0017307) A pure-black sky over a
+  rainy UK street is therefore a physics tell. **Phrase it as an object:** *"low cloud lit a dull grey-orange from
+  below by the town"* (§27). RunDiffusion's Pro guide names the same three evening failures: *glowing edges,
+  excessive orange light, an unrealistically dark sky* `[practitioner]` [rundiffusion](https://www.rundiffusion.com/nano-banana-pro-prompt-guide).
+- 🆕 **The hand tell is the contact point**, not the finger count: grips that merge into a railing, straps and
+  handles that connect to nothing. `[community]` [lumethic, 2026-09-16](https://www.lumethic.com/en/articles/how-to-tell-if-photo-is-ai-generated)
+  **Write the contact:** "the strap gripped in his fist so the bag hangs heavy against his leg".
+- 🆕 **Texture tiling outside crowds:** brick, foliage and fabric weave "tile subtly". §22 only covered crowds.
+  Check brick walls and paving on every still. (same source)
+- 🆕 **"Behaviour" is a named perceptual tell** in a study of r/RealOrAI: a person doing something implausible
+  gives the image away as surely as a bad hand. `[academic]` [arXiv 2605.24287](https://arxiv.org/abs/2605.24287)
+- 🆕 **A vision model can QC a still for tells**: frontier VLMs now beat young adults at spotting AI portraits, but
+  their verdicts are badly calibrated. **Ask for a list of tells, never a real/fake verdict.** `[academic]`
+  [arXiv 2608.30210](https://arxiv.org/abs/2608.30210)
+- ⚠️ *Inferred, untested:* phone night modes now rebuild low-light texture with diffusion models, so "a phone photo
+  at night" may summon the smoothed night-mode look. Keep naming a film stock or a dedicated camera.
+- ⚠️ **Flow's default model is disputed again** (TestingCatalog says NB2). The picker on 2026-09-30 offered Pro,
+  NB2 and NB2 Lite, and was sitting on NB2. **Check it every session.**
+
+**🔧 Automation note, 2026-09-30:** switching the model from the runner failed twice (`openSettings` timed out
+waiting for the Image radio after clicking the Settings trigger). Setting the picker to Pro by hand first, so the
+runner found it already set and skipped the popover, worked at once. Cause not found.
+
+**Observed on the `br-*` round, 2026-09-30 (Pro, n=1 each):**
+- 🔴 **A camera height phrased as a person summons the person.** "Held at the eye height of a man sitting on the
+  kerb", in a shot with nobody else near the lens, drew that man into the frame (`br-m2` a). Where the shot has no
+  one near the camera, give the height in metres. It held on the reroll.
+- 🔴 **An intention loses to the default pose.** "Holds an umbrella over the empty seat while he stands in the rain"
+  came back with the valet under his own umbrella in both takes. The body geometry fixed it: "arm stretched out
+  straight… so the umbrella keeps the seat dry and none of it covers him". This is §30's family.
+- ⚠️ **A baked-in white border** appeared twice in 28 images with no frame asked for (§31's family).
+- ⚠️ **Small practical lights named inside a busy frame get dropped:** the heated-seat glow in `br-t1` rendered in
+  neither take.
+
+## Sixteenth pass — 2026-09-30 web delta: takeaways at night, dignified devices `[practitioner]` `[vendor]`
+
+Run for the Camping music video gap stills (`gp-*`, `scripts/camping-mv2/gap-stills.json`). **New items only.** Still no "Nano Banana Pro 2"; Flow's 2026-09-23 "Flow Tools" launch changed no image model.
+
+- 🆕 **Name a UK takeaway's real kit as objects:** a backlit fascia lightbox, aluminium A1 snap-frame LED menu panels holding food photos, flat cool-white LED ceiling panels (LED is replacing tubes). `[vendor]` [promosigns](https://promosigns.co.uk/kebab-shop-signs-london/)
+- 🆕 **Four devices for rich and poor in one frame**, to be named as geometry, never as the photographer:
+  - **Steamed glass** between the lens and a warm interior (Nick Turpin, *On the Night Bus*). `[V]` [CNN](https://www.cnn.com/style/article/on-the-night-bus-london-nick-turpin)
+  - **Plate-glass reflection** laying the street over the room, on a long lens (Saul Leiter). `[V]`
+  - **The boundary itself** as the subject: a kerb, a threshold, a carpet edge (Johnny Miller, *Unequal Scenes*). `[V]` [unequalscenes](https://unequalscenes.com/about)
+  - **The camera low, looking up** from the sleeper's eye level. Give the height in metres (fifteenth pass).
+- 🆕 **The act of waiting is the subject** of the best takeaway image found (Nicky Hamilton, *Take Me Away*), not the food. `[V]` [fstoppers](https://fstoppers.com/originals/photographer-spends-two-months-building-replica-local-chinese-takeaway-shoots-328640)
+- 🆕 **A square-on typology repeated across shops** (*Morley's or Less*) is the basis for a match-cut series. `[S]`
+- 🆕 **Kill-list additions:** "lone figure with umbrella", "steam rising from a manhole", "Blade Runner mood", all 2026 template tokens. The white sharpening halo around a lit sign against black is a named tell. `[S]`
+- 🚫 **Do not cite:** LunoStudio's "HDR above 0.8 gives halos". It's their own slider, not a Nano Banana control.
+
 ## Notes for BadCode `[untested]`
 
 Hypotheses for the calibration run, not rules.

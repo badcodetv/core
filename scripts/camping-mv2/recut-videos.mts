@@ -1,12 +1,14 @@
 // Camping mv2 RE-CUT clips (2026-09-29): Omni 1.1 Flash · Frames · 16:9 · 720p · 8s · x1, one per accepted still.
 // Derived from mv2run.mts. Plates: $RECUT_WORK/plates/recut-<id>.jpg (copies of clips/recut-stills/picks/).
 // Usage: npx tsx scripts/camping-mv2/recut-videos.mts [id …]   (existing takes are skipped)
+// Other sets: VIDS=breath reads breath-videos.json, plates/breath-<id>.jpg, and writes videos-breath/.
 // Reuses FlowClient's private primitives; replaces tile detection (tiles now carry <video src>).
 import { FlowClient } from '../../packages/flow-mcp/src/flow-client.ts'
 import { readFileSync, writeFileSync, existsSync, copyFileSync, mkdirSync } from 'node:fs'
 const S = process.env.RECUT_WORK ?? `${process.env.HOME}/.cache/badcode-recut`  // work dir: plates/, takes/
-const OUT = '/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Camping Comic/music video/videos-recut'
-const prompts: { id: string; prompt: string }[] = JSON.parse(readFileSync(new URL('./recut-videos.json', import.meta.url), 'utf8'))
+const SET = process.env.VIDS ?? 'recut'
+const OUT = `/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/Camping Comic/music video/videos-${SET}`
+const prompts: { id: string; prompt: string }[] = JSON.parse(readFileSync(new URL(`./${SET}-videos.json`, import.meta.url), 'utf8'))
 const only = process.argv.slice(2)
 const c: any = await FlowClient.connect()
 const page = c.page
@@ -47,11 +49,11 @@ async function one(p: { id: string; prompt: string }) {
   const take = `${S}/takes/${nn}.mp4`
   if (existsSync(take)) { log(nn, 'exists, skip'); return }
   if (process.env.HARVEST_ONLY) { await download(Number(process.env.HARVEST_INDEX ?? 0), take); copyFileSync(take, `${OUT}/${nn}.mp4`); log(nn, 'harvested'); return }
-  const plate = `${S}/plates/recut-${nn}.jpg`
+  const plate = `${S}/plates/${SET}-${nn}.jpg`
   await c.reloadProject(); await closeAgentPanel(); await c.ensureAgentOff()
   await upload(plate)
   await c.ensureVideoConfigRebuilt({ model: 'Omni 1.1 Flash', aspect: '16:9', duration: 8, count: 1, frames: true })
-  await c.fillFrameSlotRebuilt('Start', `recut-${nn}.jpg`)
+  await c.fillFrameSlotRebuilt('Start', `${SET}-${nn}.jpg`)
   await page.evaluate(() => window.scrollTo(0, 0)).catch(() => {})
   const before = await keys()
   await c.setPrompt(p.prompt)

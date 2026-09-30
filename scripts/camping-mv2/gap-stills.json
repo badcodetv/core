@@ -1,0 +1,164 @@
+[
+ {
+  "id": "gp-n1",
+  "slot": "chorus 1 68.04 · final chorus",
+  "title": "England · the kebab shop",
+  "kind": "image",
+  "refs": [],
+  "spec": "Jack's idea. Match-cut plate 1. The warm-lit food and the cold pavement in one frame. Anchor: the doner grill's orange glow. Cost: the man outside, a foot from the heat.",
+  "prompt": "Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure late at night on a rain-wet high street in a northern English town. Heavy grain in the shadows, muted colour, unposed and imperfect.\n\nCamera and framing: A 35mm lens at f/2.8, held low, about eighty centimetres above the pavement, about four metres back, facing the shop front squarely and level. The lit shop window fills the left two-thirds of the frame; on the right third, against the wall beside it, sits the figure. The wet pavement fills the bottom of the frame. The frame is not quite level.\n\nThe shop: a late-night kebab takeaway seen through its big plate-glass window, the lower half of the glass fogged with steam. Inside, under flat cool-white LED ceiling panels, a stainless-steel counter, a doner spit turning in front of its glowing orange grill, a row of aluminium snap-frame LED menu panels above the counter, lit from behind, showing photographs of food with the lettering soft and out of focus, and one tired worker in a black cap slicing meat. The shop's fascia sign is cut off by the top of the frame.\n\nThe figure: a man in his sixties sitting on flattened cardboard against the shuttered shop next door, a sleeping bag pulled up to his waist, a paper cup by his knee, hands tucked into his armpits for warmth, looking down at the pavement. His face is lit faintly by the shop's glow.\n\nLight: The shop window is the only strong light, cold white from the tubes and warm orange from the grill, spilling out across the wet pavement toward the camera. Each light is smeared into a short vertical streak on the wet pavement, with a mirror image only in one shallow puddle. Outside the pool of light the street falls to near-black with detail; above the rooftops, low cloud lit a dull grey-orange from below by the town.\n\nDetails: Real textures, fine natural grain, ordinary and unstyled.\n\nConstraints: No signs, menus, screens, labels, clothing, vehicles or windows anywhere in the frame carry readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks."
+ },
+ {
+  "id": "gp-n2",
+  "slot": "chorus 1 74.04 · final chorus",
+  "title": "Hong Kong · the noodle bar",
+  "kind": "image",
+  "refs": [],
+  "spec": "Match-cut plate 2, the same grammar as the kebab shop so the cut lands on the same place in frame. Neon without cyberpunk: one old red tube, half dead.",
+  "prompt": "Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure late at night on a narrow rain-wet street in Hong Kong. Heavy grain in the shadows, muted colour, unposed and imperfect.\n\nCamera and framing: A 35mm lens at f/2.8, held low, about eighty centimetres above the pavement, about four metres back, facing the shop front squarely and level. The lit shop window fills the left two-thirds of the frame; on the right third, against the wall beside it, sits the figure. The wet pavement fills the bottom of the frame. The frame is not quite level.\n\nThe shop: a small old noodle bar seen through its glass front. Inside, under greenish fluorescent tubes, big aluminium stock pots throw up clouds of steam, a cook in a white vest ladles noodles into a bowl, and two customers eat at a narrow counter with their backs to the window. Above the window hangs one old red neon tube sign, half its tubes dead, cropped by the top of the frame so no characters are readable. The glass is fogged in patches by the steam.\n\nThe figure: an old man in a thin padded jacket sitting on folded cardboard against the tiled wall beside the shop, knees drawn up, a plastic bag of belongings beside him, his eyes closed.\n\nLight: The steamed window glows green-white and is the key light, with a thin red edge from the neon on his shoulders and on the puddles. Each light is smeared into a short vertical streak on the wet pavement, with a mirror image only in one shallow puddle. The street beyond falls to darkness.\n\nDetails: Real textures, fine natural grain, ordinary and unstyled.\n\nConstraints: No signs, menus, screens, labels, clothing, vehicles or windows anywhere in the frame carry readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks."
+ },
+ {
+  "id": "gp-n3",
+  "slot": "chorus 1 77.04 · final chorus",
+  "title": "Tokyo · the ramen stall",
+  "kind": "image",
+  "refs": [],
+  "spec": "Match-cut plate 3. The Japanese detail that carries dignity: his shoes placed neatly side by side.",
+  "prompt": "Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure late at night on a quiet rain-wet backstreet in Tokyo. Heavy grain in the shadows, muted colour, unposed and imperfect.\n\nCamera and framing: A 35mm lens at f/2.8, held low, about eighty centimetres above the pavement, about four metres back, facing the shop front squarely and level. The lit shop window fills the left two-thirds of the frame; on the right third, against the wall beside it, sits the figure. The wet pavement fills the bottom of the frame. The frame is not quite level.\n\nThe shop: a tiny ramen shop with a sliding wooden door, a dark blue fabric curtain hanging half across its entrance, and a warm-lit counter of eight stools visible inside, two salarymen in suits hunched over bowls, steam rising. A white paper lantern glows beside the door, its surface plain. A ticket vending machine by the entrance glows softly, its buttons too small to read.\n\nThe figure: a man in his sixties asleep sitting upright on flattened cardboard against the wall, wrapped in a grey blanket, his head bowed. A pair of worn shoes stands neatly side by side on the pavement in front of him.\n\nLight: The warm counter light and the lantern are the key, soft and yellow, spilling across the wet asphalt. Each light is smeared into a short vertical streak on the wet pavement, with a mirror image only in one shallow puddle. The rest of the street is dark and still.\n\nDetails: Real textures, fine natural grain, ordinary and unstyled.\n\nConstraints: No signs, menus, screens, labels, clothing, vehicles or windows anywhere in the frame carry readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks."
+ },
+ {
+  "id": "gp-n4",
+  "slot": "final chorus",
+  "title": "Kingston · the patty shop",
+  "kind": "image",
+  "refs": [],
+  "spec": "Match-cut plate 4. The shop's security grille is the visual rhyme: the food is behind bars.",
+  "prompt": "Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure late at night on a warm, rain-wet street in Kingston, Jamaica. Heavy grain in the shadows, muted colour, unposed and imperfect.\n\nCamera and framing: A 35mm lens at f/2.8, held low, about eighty centimetres above the pavement, about four metres back, facing the shop front squarely and level. The lit shop window fills the left two-thirds of the frame; on the right third, against the wall beside it, sits the figure. The wet pavement fills the bottom of the frame. The frame is not quite level.\n\nThe shop: a small patty and jerk shop behind a steel security grille, its interior lit by one white strip light. A glass warming cabinet of golden patties glows on the counter, a drinks fridge hums behind it, and a woman behind the counter serves through the gap in the grille.\n\nThe figure: a woman in her fifties sitting on an upturned plastic crate against the painted wall beside the shop, a headscarf on, a bag of belongings at her feet, looking along the street, tired.\n\nLight: The warming cabinet and the strip light are the key, warm and white, striped by the grille's shadow across the wet ground. Each light is smeared into a short vertical streak on the wet pavement, with a mirror image only in one shallow puddle. The street beyond is dark, a single yellow street lamp far off.\n\nDetails: Real textures, fine natural grain, ordinary and unstyled.\n\nConstraints: No signs, menus, screens, labels, clothing, vehicles or windows anywhere in the frame carry readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks."
+ },
+ {
+  "id": "gp-n5",
+  "slot": "final chorus",
+  "title": "Rio · the lanchonete",
+  "kind": "image",
+  "refs": [],
+  "spec": "Match-cut plate 5. A counter open to the street and a TV glow; the man sleeps under its awning.",
+  "prompt": "Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure late at night on a rain-wet street in Rio de Janeiro. Heavy grain in the shadows, muted colour, unposed and imperfect.\n\nCamera and framing: A 35mm lens at f/2.8, held low, about eighty centimetres above the pavement, about four metres back, facing the shop front squarely and level. The lit shop window fills the left two-thirds of the frame; on the right third, against the wall beside it, sits the figure. The wet pavement fills the bottom of the frame. The frame is not quite level.\n\nThe shop: a small open-fronted snack bar with white tiled walls, a long counter with a glass case of fried snacks, bright blue-white fluorescent tubes, and a small television high on the wall throwing a coloured glow. A waiter in a white shirt wipes the counter; one customer drinks at it.\n\nThe figure: a man lying on flattened cardboard along the wall under the edge of the shop's awning, his forearm over his eyes against the light, bare feet, a folded blanket as a pillow.\n\nLight: The shop's blue-white tubes are the key, flooding the pavement right up to the edge of his cardboard. Each light is smeared into a short vertical streak on the wet pavement, with a mirror image only in one shallow puddle. Above, low cloud lit a dull grey-orange from below by the town.\n\nDetails: Real textures, fine natural grain, ordinary and unstyled.\n\nConstraints: No signs, menus, screens, labels, clothing, vehicles or windows anywhere in the frame carry readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks."
+ },
+ {
+  "id": "gp-n6",
+  "slot": "final chorus",
+  "title": "Brixton · the chicken shop",
+  "kind": "image",
+  "refs": [],
+  "spec": "Match-cut plate 6, back home in London. The brightest, cheapest light in the city.",
+  "prompt": "Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure late at night on a rain-wet high street in Brixton, London. Heavy grain in the shadows, muted colour, unposed and imperfect.\n\nCamera and framing: A 35mm lens at f/2.8, held low, about eighty centimetres above the pavement, about four metres back, facing the shop front squarely and level. The lit shop window fills the left two-thirds of the frame; on the right third, against the wall beside it, sits the figure. The wet pavement fills the bottom of the frame. The frame is not quite level.\n\nThe shop: a fried chicken takeaway blazing with light, red and white interior, a stainless counter, aluminium snap-frame LED menu panels above it, lit from behind, showing photographs of food with the lettering soft and out of focus, and three adult customers waiting in coats. The fascia is cut off by the top of the frame.\n\nThe figure: a woman in her forties in a hooded puffer coat sitting on a folded blanket against the closed shop next door, a rucksack in her lap, looking into the bright window.\n\nLight: The shop's white and red glare is the key, the hardest light in the frame, spilling far across the wet pavement. Each light is smeared into a short vertical streak on the wet pavement, with a mirror image only in one shallow puddle. Above the shops, low cloud lit a dull grey-orange from below by the town.\n\nDetails: Real textures, fine natural grain, ordinary and unstyled.\n\nConstraints: No signs, menus, screens, labels, clothing, vehicles or windows anywhere in the frame carry readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks."
+ },
+ {
+  "id": "gp-w0",
+  "slot": "16.71 'looking to the side in shame, but why'",
+  "title": "Inside the noodle bar · the diner who looks away",
+  "kind": "image",
+  "refs": [],
+  "spec": "Lyric illustrated: from inside, a diner at the window counter turns his face away from the man sitting just outside the glass. The gap is the glass.",
+  "prompt": "Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure late at night inside a small noodle bar in Hong Kong. Fine grain, muted colour, unposed and imperfect.\n\nCamera and framing: A 35mm lens at f/2.8, from inside the shop at the height of a seated diner, behind and to the left of a man eating at the narrow counter that runs along the front window, looking past his shoulder out through the glass. The frame is not quite level.\n\nSubject: The diner in a grey office shirt sits side-on to us with a steaming bowl in front of him and chopsticks in his hand, his head turned deliberately away from the window, toward the kitchen. On the other side of the glass, less than a metre from his bowl, an old man sits on cardboard on the wet pavement outside, looking in, soft behind a patch of steam on the glass.\n\nLight: The warm greenish fluorescent light of the shop lights the diner and his bowl. Outside it is dark blue night, and the old man is lit only by the light spilling out through the window. Steam fogs the lower corner of the glass.\n\nDetails: Real textures, fine natural grain, ordinary and unstyled.\n\nConstraints: No signs, menus, screens, labels, clothing, vehicles or windows anywhere in the frame carry readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks."
+ },
+ {
+  "id": "gp-w1",
+  "slot": "gap 142.42 'wealth gap? what a load of crap / let me drink my chateau'",
+  "title": "The restaurant window · wine poured over a sleeping man",
+  "kind": "image",
+  "refs": [],
+  "spec": "Replaces the deleted wine label. Two layers in one frame: through the glass, a sommelier pours red wine for a diner; on the glass, the reflection of the man asleep on the pavement behind the camera. Anchor: the candle-lit wine glass.",
+  "prompt": "Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure late at night outside an expensive restaurant in the West End of London, after rain. Heavy grain in the shadows, muted colour, unposed and imperfect.\n\nCamera and framing: A 50mm lens at f/2.8, on the pavement close to a large restaurant window, looking in through the glass at a table just inside. The frame is not quite level.\n\nThrough the glass: a waiter in a white jacket pours red wine from a dark bottle into a large glass held out by a well-dressed man in a navy suit, candlelight on the white tablecloth, the room warm and golden behind them.\n\nOn the glass: a faint reflection laid over the scene, of the street behind the camera, where a man lies asleep in a sleeping bag in a dark doorway, lit cold by a street lamp. The reflection is soft and ghostly, clearest where it crosses the dark part of the room.\n\nLight: The restaurant's warm candlelight and wall lamps are the key, inside. The reflection is lit cold and blue-white from the street lamp behind the camera.\n\nDetails: Real textures, fine natural grain, ordinary and unstyled.\n\nConstraints: The wine bottle has no readable label. No signs, menus, screens, labels, clothing, vehicles or windows anywhere in the frame carry readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks."
+ },
+ {
+  "id": "gp-w2",
+  "slot": "gap 161.5 'I might be insane but I do want change'",
+  "title": "The penthouse above the doorway",
+  "kind": "image",
+  "refs": [],
+  "spec": "Vertical gap as a single tilt-up frame: long lens, a lit glass penthouse floor high above, a doorway sleeper at the base. Cost: the sleeper, small. Scale reference: the doorway.",
+  "prompt": "Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure late at night at the foot of a luxury apartment tower in London, after rain. Heavy grain in the shadows, muted colour, unposed and imperfect.\n\nCamera and framing: A 35mm lens at f/5.6, held low on the pavement across the street, tilted steeply up the face of a tall glass residential tower so its sides converge. The frame is not quite level.\n\nSubject: Most of the tower's windows are dark. Only the top floor, a glass penthouse, is lit warm, a single figure standing at the floor-to-ceiling window holding a glass, tiny and far away. At the bottom of the frame, in the tower's recessed service doorway, a person lies asleep on flattened cardboard under a grey blanket, small, lit by one caged bulb.\n\nLight: Two lights only: the warm penthouse at the top and the caged bulb over the doorway at the bottom. Between them the tower is dark glass reflecting low cloud lit a dull grey-orange from below by the town.\n\nDetails: Real textures, fine natural grain, ordinary and unstyled.\n\nConstraints: No signs, menus, screens, labels, clothing, vehicles or windows anywhere in the frame carry readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks."
+ },
+ {
+  "id": "gp-w3",
+  "slot": "gap 165.21 'I can't live like this forever'",
+  "title": "Closing time · the chip shop's leftovers",
+  "kind": "image",
+  "refs": [],
+  "spec": "A small human act, never fun: at closing, a chip-shop worker hands a paper-wrapped portion to the man in the next doorway. Dignity, not charity porn: both faces tired, no smiles.",
+  "prompt": "Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure just after closing time on a rain-wet high street in an English town. Heavy grain in the shadows, muted colour, unposed and imperfect.\n\nCamera and framing: A 35mm lens at f/2.8, held low, about eighty centimetres above the pavement, side-on to a chip shop's doorway. The frame is not quite level.\n\nSubject: A chip-shop worker in a white overall and apron, a tired woman in her forties, leans out of the doorway and hands a warm parcel of chips wrapped in white paper down to a man sitting on cardboard against the wall beside the door, his hands reaching up from a sleeping bag to take it. Neither is smiling. Behind her the shop's lights are half switched off, the fryers dark, chairs up on the tables.\n\nLight: The one strip light still on inside the shop lights them both from the doorway, warm-white; steam rises from the parcel. The street around them is dark and wet.\n\nDetails: Real textures, fine natural grain, ordinary and unstyled.\n\nConstraints: The paper wrapping is plain. No signs, menus, screens, labels, clothing, vehicles or windows anywhere in the frame carry readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks."
+ },
+ {
+  "id": "gp-w4",
+  "slot": "27.29 'presenting yourself with your shiny teeth'",
+  "title": "The bank window · a man checks his smile",
+  "kind": "image",
+  "refs": [],
+  "spec": "Tarquin's world as reflection: a man in a charcoal overcoat checks his teeth in the dark glass of a closed bank; in the same glass, behind him, the sleeper in the bank's doorway. The gap in one frame, no words.",
+  "prompt": "Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure late at night outside a closed bank on a London street, after rain. Heavy grain in the shadows, muted colour, unposed and imperfect.\n\nCamera and framing: A 50mm lens at f/2.8, close to the bank's dark plate-glass window, looking along it at an angle so the glass acts as a mirror. The frame is not quite level.\n\nSubject: In the dark glass, the reflection of a well-groomed man in an expensive charcoal overcoat, seen from the shoulders up, leaning close to his own reflection and baring his teeth to check them. His real shoulder and slicked-back hair are soft in the left foreground. Also reflected in the same glass, further back and smaller, a person asleep in a sleeping bag in the bank's recessed doorway.\n\nLight: A white street lamp behind the camera lights the man's face in the reflection; the doorway is lit only by the faint green glow of a cash machine screen. The bank's interior behind the glass is dark.\n\nDetails: Real textures, fine natural grain, ordinary and unstyled.\n\nConstraints: The cash machine screen shows nothing readable. No signs, menus, screens, labels, clothing, vehicles or windows anywhere in the frame carry readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks."
+ },
+ {
+  "id": "gp-w5",
+  "slot": "41.75 'cash from the bank for your wank tank'",
+  "title": "The cash machine · the glow on two faces",
+  "kind": "image",
+  "refs": [],
+  "spec": "One light source serves two people: the ATM's glow lights a gloved hand taking a thick fold of notes, and the face of the woman sitting in its doorway. Cost in frame.",
+  "prompt": "Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure late at night at a cash machine set into a stone bank wall in England, after rain. Heavy grain in the shadows, muted colour, unposed and imperfect.\n\nCamera and framing: A 35mm lens at f/2.8, held low, about eighty centimetres above the pavement beside the cash machine, looking up at it at an angle. The frame is not quite level.\n\nSubject: A hand in a black leather glove, with the cuff of a charcoal overcoat, draws a thick fold of banknotes out of the cash machine's slot. On the right, sitting on cardboard directly below the machine in the bank's doorway, a woman in her fifties in a woollen hat, a blanket over her knees, her face turned up toward the light, not toward the money.\n\nLight: The cash machine's cold blue-white screen is the only light, lighting the gloved hand, the notes, and the woman's face from above. Everything else is dark wet stone.\n\nDetails: Real textures, fine natural grain, ordinary and unstyled.\n\nConstraints: The banknotes are a plain blur of colour with no readable detail. The screen shows nothing readable. No signs, menus, screens, labels, clothing, vehicles or windows anywhere in the frame carry readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks."
+ },
+ {
+  "id": "gp-w6",
+  "slot": "61.38 'I insist that I hold that door'",
+  "title": "The hotel door · a man paid to hold it",
+  "kind": "image",
+  "refs": [],
+  "spec": "The lyric's irony, shown: a liveried doorman holds the hotel door for a couple in evening wear; on the step at the edge of the frame, a man with a cup, outside the carpet.",
+  "prompt": "Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure late at night at the entrance of a grand London hotel, in light rain. Heavy grain in the shadows, muted colour, unposed and imperfect.\n\nCamera and framing: A 35mm lens at f/2.8, held low, about eighty centimetres above the pavement, at the edge of the hotel's red entrance carpet. The frame is not quite level.\n\nSubject: A doorman in a long dark livery coat and top hat holds the tall brass-framed glass door open, head slightly bowed, as a couple in evening clothes walk in out of the rain, seen from behind. In the near right foreground, soft and close, a man sits on the wet stone step just off the edge of the carpet, a paper cup held out in a fingerless-gloved hand.\n\nLight: The hotel's warm golden lobby light pours out through the open door and lights the doorman and the couple. The man on the step sits just outside it, lit cold by the street.\n\nDetails: Real textures, fine natural grain, ordinary and unstyled.\n\nConstraints: No signs, menus, screens, labels, clothing, vehicles or windows anywhere in the frame carry readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks."
+ },
+ {
+  "id": "gp-w7",
+  "slot": "135.13 'if you worked hard you could have plenty… resent me'",
+  "title": "The office tower at 3am · the cleaners and the sleeper",
+  "kind": "image",
+  "refs": [],
+  "spec": "'If you worked hard' answered by the people working hardest: one cleaner on each lit floor of an empty tower; a sleeper under the entrance canopy at the base. Long lens flattens them together.",
+  "prompt": "Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure at three in the morning in the City of London, after rain. Heavy grain in the shadows, muted colour, unposed and imperfect.\n\nCamera and framing: A long 135mm lens at f/4 from across a wide empty street, level, looking at the lower eight floors of a glass office tower, compressed flat.\n\nSubject: Every office floor is lit and empty: rows of desks and dark monitors. On four of the floors, one small figure each: a night cleaner in a tabard pushing a vacuum or emptying a bin, alone. At the base of the tower, under the steel entrance canopy, a person lies asleep on cardboard against the revolving door, a sleeping bag pulled over their head.\n\nLight: The office floors are lit flat cold white; the canopy casts the sleeper into shadow with one hard edge of light across the sleeping bag. The street in the foreground is dark and wet.\n\nDetails: Real textures, fine natural grain, ordinary and unstyled.\n\nConstraints: No signs, menus, screens, labels, clothing, vehicles or windows anywhere in the frame carry readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks."
+ },
+ {
+  "id": "gp-w8",
+  "slot": "176.04 'went down the wrong track, then I got the sack'",
+  "title": "The sack · a desk in a box, in the rain",
+  "kind": "image",
+  "refs": [],
+  "spec": "An object shot: his working life in a cardboard box on wet pavement outside the tower, a framed photo face-down, the rain filling it. Cost without a face.",
+  "prompt": "Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure at dusk outside a City office tower, in steady rain. Heavy grain in the shadows, muted colour, unposed and imperfect.\n\nCamera and framing: A 35mm lens at f/2.8, low, about half a metre from the pavement, close to a cardboard archive box standing on the wet paving outside a revolving door. The frame is not quite level.\n\nSubject: The box holds a desk's contents: a silver-framed photo lying face-down, a mug, a desk plant, a tangle of cable, a lanyard. Rain has darkened the cardboard, which is starting to sag at one corner, and water is pooling in the upturned frame's back. Behind it, soft, office workers' legs hurry past with umbrellas; no one looks down.\n\nLight: The tower lobby's cold white light behind the box, the rain falling as bright streaks against the dark street beyond.\n\nDetails: Real textures, fine natural grain, ordinary and unstyled.\n\nConstraints: The lanyard and mug are plain. No signs, menus, screens, labels, clothing, vehicles or windows anywhere in the frame carry readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks."
+ },
+ {
+  "id": "gp-w9",
+  "slot": "168.96 'here we both are, living in a car park, rained on in the dark'",
+  "title": "Both men under the multi-storey",
+  "kind": "image",
+  "refs": [],
+  "spec": "The bridge's jump without cards: the two men sit side by side on a kerb under the car-park deck, backs to camera, facing a curtain of rain at the open side. Same height, same side.",
+  "prompt": "Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure late at night on the ground floor of a concrete multi-storey car park in an English town, in heavy rain. Heavy grain in the shadows, muted colour, unposed and imperfect.\n\nCamera and framing: A 35mm lens at f/2.8, a few metres behind two men sitting side by side on a concrete kerb, at their sitting height, looking past them out through the open side of the car park. We see only their backs. The frame is not quite level.\n\nThe men: on the left, a man in his fifties gone to seed: matted grey-brown hair over the collar of a filthy, shapeless charcoal wool overcoat; on the right, a man in his fifties: a knitted brown beanie, long lank grey-brown hair falling from under it, an old dark coat a size too big over a pale stained hoodie. They sit a hand's width apart, shoulders hunched, facing the same way.\n\nBeyond them: the open side of the car park, where heavy rain falls in a bright curtain through the light of one white street lamp outside, and the dark empty car park deck stretches away.\n\nLight: The street lamp outside, beyond the rain, is the only light, backlighting the rain and putting a thin cold edge on both men's hair and shoulders. The concrete around them is near-black with detail.\n\nDetails: Real textures, fine natural grain, ordinary and unstyled.\n\nConstraints: No signs, menus, screens, labels, clothing, vehicles or windows anywhere in the frame carry readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks."
+ },
+ {
+  "id": "gp-w10",
+  "slot": "204.29 'back to that time when we very first met'",
+  "title": "The wing mirror · the tent where they met",
+  "kind": "image",
+  "refs": [],
+  "spec": "Memory in a mirror: the black X8's wing mirror, rain-beaded, holds the small blue-grey tent in the supermarket car park. Plate shows BAD C0DE only if it appears; here it doesn't.",
+  "prompt": "Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure at dusk in a supermarket car park in an English town, in drizzle. Heavy grain in the shadows, muted colour, unposed and imperfect.\n\nCamera and framing: A 50mm lens at f/2.8, close to the driver's side wing mirror of a blacked-out BMW X8, the mirror sharp in the left half of the frame and the car park soft beyond.\n\nSubject: In the rain-beaded wing mirror, small and sharp: a sagging two-person dome tent pitched in a parking bay, dusty slate-blue upper panels and a pale grey-silver lower body, a shopping trolley beside it. The black glossy door of the car and the mirror housing fill the foreground, beaded with water.\n\nLight: The supermarket's white window light far behind lights the tent in the mirror; the car is lit only by a faint blue dusk. Raindrops on the mirror housing each hold a tiny bright point.\n\nDetails: Real textures, fine natural grain, ordinary and unstyled.\n\nConstraints: No signs, menus, screens, labels, clothing, vehicles or windows anywhere in the frame carry readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks."
+ },
+ {
+  "id": "gp-w11",
+  "slot": "208.00 'I do regret that I judged you… same side all along'",
+  "title": "Four hands over the drum fire",
+  "kind": "image",
+  "refs": [],
+  "spec": "The turn, without cards: close on both men's hands held out over a burning oil drum, side by side. One pair in unravelling fingerless gloves; one with a signet ring and a filthy overcoat cuff. Anchor: the fire.",
+  "prompt": "Candid documentary photograph on Kodak Portra 800 pushed one stop, a single handheld night exposure late at night in a supermarket car park, beside a burning oil drum, in drizzle. Heavy grain in the shadows, muted colour, unposed and imperfect.\n\nCamera and framing: A 50mm lens at f/2.8, close and level with the rim of a rusted oil drum, looking across the fire at four hands held out over it.\n\nSubject: On the left, a man's hands in grey wool fingerless gloves unravelling at the cuffs, chapped red knuckles. On the right, a man's hands, pale and newly roughened, a plain heavy signet ring on one finger and a scuffed steel watch, under the frayed cuff of a filthy charcoal wool overcoat. The four hands are held out close together over the flames, almost touching.\n\nLight: The fire is the only light, orange and flickering from below, lighting the hands and the undersides of the sleeves; sparks rise. Beyond the drum the car park is black with a few distant tents.\n\nDetails: Real textures, fine natural grain, ordinary and unstyled.\n\nConstraints: No signs, menus, screens, labels, clothing, vehicles or windows anywhere in the frame carry readable lettering.\n\nCompose for a 16:9 frame.\n\nThanks."
+ }
+]

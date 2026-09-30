@@ -1272,7 +1272,525 @@ over the range it is used.
   - The rc10 band text is small.
   - Wai's grey card had a fold.
 
+## 🫁 Breathing room: a music video with some lyrics (proposal, 2026-09-30)
+
+**Jack, 2026-09-30:** *"a bit too much with the lyrics on screen, there needs to be more filler in between them, so
+it is not just a lyric music video, rather a music video with some lyrics."* This is a proposal from the
+`shot-craft` re-cut pass (`motion-and-cutting.md` §4) and `story-craft` (`forms.md` §5). Nothing here is ruled or
+built yet.
+
+### Diagnosis: two layers, not one
+1. **Too much text.** "Lyrics on every card" (2026-09-29) took the cut from 11 text moments to **39 text renders**
+   (`recut-signs.json`). Estimated from the timeline table above (not measured on the live timeline, because the
+   bridge was down): **about 80% of the film after the intro has words on screen.** A device spent everywhere
+   lands nowhere (story-craft principle 26).
+2. **Too many cards.** Even with blank cards, nearly every shot is a person facing the lens holding a sign. That
+   shot *is* lyric-video grammar, so the eye waits for the next word. Fixing (1) alone won't fix it.
+
+### What the research says (web sweep 2026-09-30; V = source read, S = search summary only)
+- **Every precedent that works treats text as a device or a section, not the wallpaper.** Dylan's cards carry
+  selected words only, with a human world going on behind them (V). INXS "Mediate" gives the cards the second
+  half only, and the last card reads "Sax Solo", handing the instrumental back to picture (S). Prince's
+  "Sign o' the Times" is all text, and it is remembered as an early *lyric video* (S), the thing we're avoiding.
+- **The protest videos we keep citing have no text at all.** Ghost Town is empty streets at dawn (S);
+  Unfinished Sympathy is a walk past an indifferent street (S); Jorja Smith's "Blue Lights" is ordinary men doing
+  ordinary things (S).
+- **Text costs the picture.** In an eye-tracking study, subtitles cut the time spent looking at the image, 92% of
+  viewers felt they lost visual information, and they preferred reading to looking (V,
+  [PMC10723748](https://pmc.ncbi.nlm.nih.gov/articles/PMC10723748/)). So every card is a moment the picture goes
+  largely unseen, and a card should never straddle a cut.
+- **Timing:** BBC subtitle practice is about 0.33 s per word and at least 1.5 s between captions (V, via
+  [Clevercast](https://www.clevercast.com/bbc-subtitling-guidelines/)). A 60/40 main-to-B-roll split is a blog
+  rule of thumb, not a finding (S).
+- **Without poverty porn:** eye level, natural light, the camera reacting, ordinary tasks, and landscapes that
+  *carry* the feeling (Nomadland's DP, V; I, Daniel Blake, V). This matches rulings 4 and 5 already.
+
+### The proposal: four rules
+1. **Back to the eleven.** Return every `*-lyric` render to its raw clip (same in/out, `changeMediaFilePath`).
+   That takes the film to about 12 text moments (line 4's two halves land once each), roughly 35–40 s of 240 s. The call wanted this too ("only on chosen
+   lines, briefly").
+2. **Never two text shots in a row.** At least two picture-only shots (about 5–8 s) between any two lyrics, so
+   each one arrives after a breath and pops. Text holds inside one shot: 0.33 s a word plus about 1 s.
+3. **Cards to lens become the chorus motif, not the verse wallpaper.** Blank-card match cuts stay in the three
+   choruses (three times makes a motif). Verses belong to the world. Wai (line 4) and Bob's own card (line 5)
+   are the exceptions, because the card is the point.
+4. **Whole sections with no words:** the intro, the instrumental (88.9–96.68), chorus 2 and the final chorus.
+   Chorus 1 keeps one text beat for the hook.
+
+### What the filler is: five families, each with a job
+Not "filler": every shot between the lyrics does one of these. All gritty, sitting height, no fun, no kids.
+
+| Family | Job | Examples | Where |
+| --- | --- | --- | --- |
+| **The night passing** | The film becomes one night, dusk to fire, so time moves under the song | rain on tent fabric, a puddle rippling on the kick, sodium lights buzzing on, the last night bus passing, breath in cold air, first grey light | everywhere; sets the clock |
+| **Hands** | Ordinary competent survival: dignity, not pity | the existing sock (cw1), sandwich (cw2), coins (cw3), broom (cw4); new: taping a split shoe, charging a phone at a bus-shelter socket, folding cardboard into a bed, a flask poured into a lid | verse 1, chorus 2 |
+| **Walking past** | The indifference, plants "you keep on walking" before the line | legs and shopping bags at sitting height, footfalls on the kick, a coin that almost drops and doesn't | verse 1, before line 1 |
+| **Tarquin's warm and empty** | The gap and the beneficiary, without a word | heated leather seat, the X8's ambient dash, a wine rack, a lit empty second home; each with a visible cost (the car-wash man, the valet, the cleaner) | verse 2 |
+| **The machine** | "It's in charge now" before it's said | a CCTV dome turning to follow, an ANPR camera reading a plate, self-checkout, the barrier lifting for the X8 and not for Bob | bridge |
+
+### Where it comes from, cheapest first
+1. ✅ **Already made, free:** the raw clips behind the 26 lyric renders; the catalogue plates and cw1–cw5, which
+   are trimmed to 1.5–4 s now and can run longer.
+2. ⬜ **The Camping film's own 34 clips** (`Camping Video NEW!/new clips/`, `assembly.md`): 6b shoppers past the
+   tent, 6c tent POV, 10a the tent at night in rain, 10b the camp from the roof, 8a the X8 across two bays, 5b
+   shuttered shops through the car glass, 12a hands over the drum fire. Same world, same Bob, zero credits.
+   ⚠ They're in the film's muted register and the music video is saturated, so they'd need a grade to sit in.
+   Jack to rule.
+3. ⬜ **Then new texture plates, only for the gaps:** likely 6–8 locked-camera Omni clips, mostly "night passing"
+   and "machine". One at a time, stills first, shot-craft spec before any prompt.
+
+### Section map (text moments, before → after)
+| Section | Time | Text now (approx.) | Proposed | Between the lines |
+| --- | --- | --- | --- | --- |
+| Intro | 0–12.72 | 0 | 0 | the catalogue, unchanged |
+| Verse 1 | 12.72–68.06 | ~11 | 5 (lines 1, 2, 3, 4 on Wai's card, 5) | walking past, hands, the night starting |
+| Chorus 1 | 68.06–88.9 | ~6 | 1 ("I MIGHT BE INSANE BUT I DO WANT CHANGE", one card) | blank-card match cut, intercut with the night |
+| Instrumental | 88.9–96.68 | 0 | 0 | the favela aerial (the "Sax Solo" moment) |
+| Verse 2 | 96.68–148.26 | ~9 | 3 (lines 6, 7, 8) | Tarquin's warm and empty against Bob's cold |
+| Chorus 2 | 148.26–168.94 | ~4 | 0 | hands, later and colder |
+| Bridge | 168.94–217.6 | ~7 | 3 (lines 9, 10, 11) | the machine, the car park |
+| Final chorus | 217.6–238.5 | a few | 0 | blank cards fast, then first light, the fire |
+
+The "text now" column is counted from the table and the renders list, not the live timeline.
+
+### 🎞 Breathing-room stills, round 1 (2026-09-30, Nano Banana Pro · 16:9 · x2)
+
+Jack liked the five families above and asked for stills, generated in Flow, with no AI slop. The shot-craft specs
+are below. The **exact prompts** are in `scripts/camping-mv2/breath-stills.json` and run with
+`STILLS=breath STILLS_MODEL='Nano Banana Pro' npx tsx scripts/camping-mv2/recut-stills.mts [id …]`. Candidates land
+in `…\music video\clips\breath-stills\` (`<id>-a/-b.jpg`).
+
+- **Model:** Jack asked for "Nano Banana Pro 2". No such model exists (`nano-banana-2.md`, fifth pass), so this is
+  **Nano Banana Pro**, which is also the pick for restraint. ⚠ Round 1 of the re-cut was on NB2, so check the two
+  look alike on the timeline.
+- **House shape, kept:** the round-1 prompt template (Portra 800 pushed, a named lens and height, one named light,
+  "not quite level", no readable lettering, "Thanks.").
+- **New from the 2026-09-30 web pass:** any visible sky is low cloud lit grey-orange by the town, never black;
+  every hand is written touching what it holds.
+- **No Characters, no references.** No faces are shown. Bob appears only from behind, described (§18, §25).
+- **The clock:** the shots are written as one night, dusk (`br-n1`) → early (`n2`) → late (`n3`) → small hours
+  (`n4`, `n5`), so the cut can move time forward under the song.
+- **The street is shot from sitting height; Tarquin's world from standing height.** The one exception is `br-m3`,
+  the barrier.
+
+| Shot | What | Spec (job · cost · anchor) |
+| --- | --- | --- |
+| `br-n1` | Dusk · the streetlights come on | Clock: dusk. Job: the night starts. Sitting height beside the supermarket car park; a row of white LED lamps receding, the nearest lit, the far ones still dark (a state, never 'switching on', §38). Cost: flattened cardboard in the foreground. Anchor: the one lit lamp head. |
+| `br-n2` | Night · rain on the tent | Clock: early night. Job: the rain arrives and the tent is the only roof. Ground level, 1 m from the tent's flysheet; rain visible only against the dark car park behind. Anchor: the supermarket's white window light catching the wet flysheet. Cost: the sag, the duct-tape patch. |
+| `br-n3` | Late · the puddle | Clock: late. Job: the pulse (a drop ring on the kick, animated later). Sitting-height close-up of a standing puddle holding the lit supermarket front upside down; Bob's boot at its edge is the cost. Anchor: the reflected white shop light. |
+| `br-n4` | Small hours · the last bus | Clock: small hours. Job: the world leaves; he stays. Sitting height at the kerb, a lit double-decker sliding past, almost empty, one tired night worker inside. Cost: his bag at the kerb, the bus not stopping. Anchor: the lit bus interior. |
+| `br-n5` | Small hours · breath in the cold | Clock: coldest hour. Job: the body is the clock — breath is the only warm thing. Bob from behind at a three-quarter angle (geometry hides the face, §18; unbound, so described, §25), sitting in a doorway; his breath lit from behind by a street lamp against a dark shutter. Anchor: the lit plume. |
+| `br-h1` | Hands · taping a split shoe | Job: competent survival, dignity not pity. His own eye line down onto his lap: the sole peeling off a work boot, grey duct tape being wound round the toe. Hands described (unbound, §25) with s2's sentence. Light: a blank lit bus-shelter panel — the object, never 'no advert' (§27). |
+| `br-h2` | Hands · charging the phone | Job: survival is admin now — the phone is the lifeline to the council, the job centre. Close on hands cupping a cracked old phone plugged by a frayed cable into a USB socket on a bus-shelter post. Screen dark (object, not absence). Same hands sentence. |
+| `br-w1` | Walking past · legs and bags | Job: plant 'you keep on walking' before the line. Sitting height beside the supermarket doors, a stream of legs and full bags crossing left to right, nobody slowing; the paper cup with three coins in the foreground is the cost. Individuated shoes (crowd realism = individuation). |
+| `br-t1` | Warm · the heated seat and the car-wash man | Job: the gap in one frame. Inside the X8 at a hand car wash at night, driver's eye height: amber heated-seat glow and ambient strip, his watch hand on the wheel (unbound, described from tarquin.md); through the foam on the windscreen, a worker in a soaked hoodie wiping the glass. Cost = the worker. |
+| `br-t2` | Warm · the wine wall and the cleaner | Job: warm, clean and empty — and someone paid for it. Standing height in Tarquin's open-plan kitchen at night: a lit glass wine wall, the only person a night cleaner mopping, seen from behind, small in frame. Anchor: the wine wall's glow. No Tarquin. |
+| `br-t3` | Warm · the valet in the rain | Job: service at standing height. Hotel forecourt at night in rain: a valet holds an umbrella over the open driver's door of the X8 and stands in the rain himself; the warm empty seat glows; Tarquin's polished shoes leaving frame right. Cost = the soaked valet. |
+| `br-m1` | Machine · the CCTV dome | Job: 'it's in charge now' before it's said — the system watches the doorway. From the sleeper's eye line in the supermarket doorway corner, looking up at a black CCTV dome under a white floodlight, its lens facing us. Cost: his bedding in the lower frame. |
+| `br-m2` | Machine · the number-plate camera | Job: the car park is run by a machine that reads cars, not people. Low, looking up at an ANPR camera on a pole at the car-park entrance, its infrared ring glowing dull red, rain falling through its light; far below and behind, the tent, small. Scale reference: the tent. |
+| `br-m3` | Machine · the barrier lifts for the car | Job: the refusal, mechanised. The barrier arm raised (a state, §38) for the X8's tail lights passing through; on the pedestrian side a man seen from behind waits with his bag, the machine indifferent. Standing height behind him (the one street shot that stands up, because the machine is looking at him). |
+
+#### ✅ Round 1 results (2026-09-30, Pro · x2, 14 shots + 2 rerolls, 0 failures)
+
+Picks are copied to `breath-stills\picks\`, and `_all-picks.jpg` shows them on one sheet. Every file came back at
+1376×768, which is plenty for the 1280×720 timeline.
+
+| Shot | Pick | Why / watch |
+| --- | --- | --- |
+| br-n1 dusk lamps | a | ⚠ more lamps are lit than asked (only the nearest). The in-progress state lost again (§38) |
+| br-n2 tent in rain | b | rain reads against the dark. ⚠ In both takes the tent's colours are inverted (blue low, grey high; the plate is the other way round) |
+| br-n3 puddle | b | clean upside-down shop in the puddle, two drop rings. The boot is standing, not split |
+| br-n4 last bus | a | the tired cleaner, the holdall in front |
+| br-n5 breath | a | the plume is lit against the shutter. b shows part of his face in profile, so it's out |
+| br-h1 taping the boot | b | a's knuckles look like open wounds (the dignity rule) and it tapes the upper |
+| br-h2 the phone | a | the mended cable, the green sliver. ⚠ Only one hand is gloved. b shows the chin and beard |
+| br-w1 walking past | b | nobody's face in frame. **The cup came back knocked over, coins spilt**, which is stronger than asked |
+| br-t1 car wash | b | the squeegee through the foam. ⚠ **The heated-seat glow didn't render in either take**; the dash strip is barely there |
+| br-t2 wine wall | b | darker, and the glass in the foreground |
+| br-t3 valet (reroll) | a | ✅ reroll 2: arm out, him in the rain. Round 1 (both takes `-r1-`) had him under his own umbrella, so the irony was gone |
+| br-m1 CCTV dome | b | the dome looks at the lens. ⚠ **Crop a thin white strip off the bottom edge** |
+| br-m2 number-plate camera (reroll) | b | rain against a sky glow, tent below. Round 1: a drew an uncast man on the kerb (from "the eye height of a man sitting"), and b had white bars baked in |
+| br-m3 barrier | a | the arm up, the X8 under it, him from behind with the holdall |
+
+**Engine notes** (candidates for `docs/google-flow/`, n=1 each):
+- A camera height written as "the eye height of a man sitting on the kerb" **put the man in the picture** when
+  no man was otherwise in the shot. Write a height in metres when the shot has nobody near the lens.
+- An umbrella held *for* someone else came back held over the holder, until the staging was written as body
+  geometry ("arm stretched out straight… none of it covers him"). This is the §30 family: physical staging beats a
+  stated intention.
+- Pro drew a baked-in white border twice in 28 images (§31's family, without our asking for any frame).
+
+### 🎬 Breathing-room videos, round 1 (2026-09-30): Omni 1.1 Flash · Frames · 16:9 · 720p · 8s · x1
+
+Jack asked for one video per still, from the one pick per scene. **14 clips, one each, no policy blocks.** Two
+transient failures (an "unusual activity" card and a timeout) were retried after a page refresh, and Flow said
+neither was charged.
+
+- **Where they are:** `…\music video\videos-breath\<id>.mp4`. Runner: `VIDS=breath npx tsx
+  scripts/camping-mv2/recut-videos.mts [id …]`. Exact prompts: `scripts/camping-mv2/breath-videos.json`. Plates:
+  `~/.cache/badcode-recut/plates/breath-<id>.jpg` (`br-m1` is cropped to remove its white strip).
+- **Why Frames, not Ingredients:** no shot casts a Character, and every shot depends on the still's staging.
+  Frames continues the actual pixels; Ingredients re-renders them (`omni-flash.md`, the tab rule).
+- **Every prompt follows the house template:** "Continue it from exactly this frame", the camera locked (post moves
+  it, per the hybrid method), one primary movement plus one small one, "at real speed", sound effects only (no
+  voices), "Thanks."
+- **New from the 2026-09-30 web pass:** rain named where it crosses a light; a passing vehicle written as its light;
+  a person who shouldn't move told to stay still; the tape action cut to one pull. `br-n2` ran before the pass,
+  and its prompt in the JSON is the one that ran.
+
+| Clip | Verdict (checked at 1 fps) | Use |
+| --- | --- | --- |
+| br-n1 dusk | ✅ headlights sweep past, the cardboard corner lifts | all |
+| br-n2 tent | ✅ rain and the flysheet move, the tent holds | all |
+| br-n3 puddle | ✅ drop rings build, then one big ring shivers the reflection | all |
+| br-n4 bus | 🔴 from about 4 s a second bus front slides in, carrying garbled readable text | **0–3.5 s** |
+| br-n5 breath | ✅ a real breathing rhythm, face never turns. ⚠ The plume is thick enough to read as smoke | all |
+| br-h1 tape | ✅ one strip pulled and wrapped, the hands stay on the tape | all |
+| br-h2 phone | ✅ steady; rain and car light behind | all |
+| br-w1 walking | ⚠ the camera tilts up after about 1 s, and a bag shows readable text at about 1–3 s. From then on, everyone walks away into the shop past the tipped cup | **3.5–8 s** |
+| br-t1 car wash | ✅ the squeegee works the foam. The worker glances into the car twice, which lands | all |
+| br-t2 wine wall | ✅ slow mopping, the glass still | all |
+| br-t3 valet | ⚠ at about 6 s he swings the umbrella back over himself, and the man in the overcoat drifts back toward the car | **0–4.5 s** |
+| br-m1 CCTV | ✅ almost static: the hold is the menace. The rain in the beam is faint | all |
+| br-m2 number-plate camera | ✅ rain streaks against the sky glow, the tent flaps, a car's lights pass below | all |
+| br-m3 barrier | ✅ the X8 rolls out under the arm, his breath clouds, the arm stays up | all |
+
+**Engine notes** (n=1 each, candidates for `omni-flash.md`):
+- A **moving vehicle whose far end is out of frame gets a second vehicle drawn in** as it travels (br-n4). The same
+  family as the 5a duplicate.
+- An **arm held out against its natural rest pose returns to the rest pose** late in the clip (br-t3: the umbrella
+  swings back over its holder). "Continue a state" held for about 5 s.
+
+## 🎞 Premiere: `music video breath` (2026-09-30)
+
+Jack: *"put them in premiere, in between the important lyrics that should stay, also keep the creative lyrics, like
+the one on the motorway on the sign."* Built by a session over the bridge.
+
+- **Sequence:** `music video breath`, a clone of `music video recut` (`Sequence.createCloneAction()`, renamed with
+  `ProjectItem.createSetNameAction`). **`music video recut` is untouched**, so the two cuts can be compared.
+- **Method:** every non-text slot was overwritten in place (`createSetInOutPointsAction` on the project item, then
+  `createOverwriteItemAction` on V1 with the clip audio on the muted A2, then clear in/out), in batches of about
+  ten. The text clips were never moved, so **each lyric stays exactly where it was synced to the vocal**. Frame
+  rounding left 13 one-frame slivers of old lyric clips; they were removed and each gap closed with
+  `createSetEndAction` on the clip before it.
+- **The 14 breathing-room clips** are in bin `breath clips`.
+
+**What stayed as text (14 moments, 56 s of 242 s; it was about 80% of the film):**
+- Jack's lines: the doors (1), the tick card (2), the receipt (3), Wai's "I CAN'T LIVE LIKE THIS FOREVER" (4),
+  please sir (5), taxed the rich (6), the M3 gantry (7), the wine label (8), the barrier LED (9), the newspaper (10)
+  and the fog (11).
+- "I MIGHT BE INSANE BUT I DO WANT CHANGE" moved from verse 1 to **chorus 1 (81.13 s)**, where the same words are
+  sung, so it no longer sits next to Wai's card. `ch5.mp4` in at 1.0 s puts the words on at 81.13 s.
+- **The creative carriers kept:** the **brass plaque** "PROSPECTS EXIST" (109.96 s) and the **golf-club board**
+  "I WORK HARD TO PAY FOR MY YARD" (121.96 s, the clip's in point moved to 2.71 s so only that line shows).
+- **Back to blank, raw:** every other cardboard lyric (`*-lyric` renders), the enamel sign (106.5 s) and the hotel
+  gate (from 124.85 s), because each sat directly against another text shot.
+- **No two text shots touch.** The tightest gap is 2 s (the plaque, then the cleaner, then "taxed the rich").
+
+**Anti-slop rules applied in the cut (web pass 2026-09-30, and our own measurement):**
+- Omni clips slow down in their last second or so (measured: clip 05 near-frozen after 6.3 s). Every new placement
+  uses source frames before about 6.5 s, except `br-w1` (3.5–7.5 s, checked by eye) and a few kept raw clips.
+- `br-n4` uses only 0–3.5 s (a second bus appears after that) and `br-t3` only 0.5–3.2 s (the umbrella swings back).
+- Shot lengths vary from 1.8 to 7.3 s. The final chorus stays a fast 1.8 s world montage, which is the only
+  deliberately even run.
+
+**Looked at:** frames at 82.5, 111.5, 123.4 and 133 s were exported and read. Each shows the right words on the
+line being sung.
+
+| Time | Clip | In |
+| --- | --- | --- |
+| 0.00–2.25 | `videos/01.mp4` | 0.00 |
+| 2.25–3.75 | `videos-recut/rc02.mp4` | 0.50 |
+| 3.75–5.25 | `videos-recut/rc03.mp4` | 0.50 |
+| 5.25–6.75 | `videos-recut/rc04.mp4` | 0.50 |
+| 6.75–8.25 | `videos-recut/rc05.mp4` | 0.50 |
+| 8.25–9.75 | `videos-recut/rc06.mp4` | 0.29 |
+| 9.75–11.25 | `videos-recut/rc07.mp4` | 0.50 |
+| 11.25–12.71 | `videos-recut/rc08.mp4` | 1.00 |
+| 12.71–16.71 | `videos-breath/br-n1.mp4` | 1.00 |
+| 16.71–20.25 | `videos-recut/rc09.mp4` | 0.17 |
+| 20.25–24.25 | `videos-breath/br-w1.mp4` | 3.50 |
+| 24.25–27.29 | **TEXT** `videos-recut-text/rc10.mp4` | 0.17 |
+| 27.29–30.58 | `videos/05.mp4` | 0.25 |
+| 30.58–34.50 | `videos-breath/br-n2.mp4` | 1.00 |
+| 34.50–38.17 | `videos-recut/rc11.mp4` | 1.00 |
+| 38.17–41.17 | **TEXT** `videos-recut-text/old06.mp4` | 0.00 |
+| 41.17–44.12 | `videos/07.mp4` | 1.00 |
+| 44.12–47.75 | **TEXT** `videos-recut-text/rc12slow.mp4` | 0.00 |
+| 47.75–50.96 | `videos-recut/cw3.mp4` | 1.00 |
+| 50.96–54.17 | **TEXT** `videos-recut-text/ch1.mp4` | 1.00 |
+| 54.17–58.17 | `videos-breath/br-h1.mp4` | 1.00 |
+| 58.17–61.38 | `videos-recut/cw1.mp4` | 1.00 |
+| 61.38–64.79 | `videos/08.mp4` | 1.00 |
+| 64.79–68.04 | **TEXT** `videos-recut-text/old09-v2.mp4` | 4.38 |
+| 68.04–71.04 | `videos-recut/ch2.mp4` | 1.00 |
+| 71.04–74.04 | `videos-breath/br-n3.mp4` | 3.00 |
+| 74.04–77.04 | `videos-recut/ch3.mp4` | 1.00 |
+| 77.04–81.12 | `videos-recut/ch4.mp4` | 1.00 |
+| 81.12–85.04 | **TEXT** `videos-recut-text/ch5.mp4` | 1.00 |
+| 85.04–88.92 | `videos-recut/cw4.mp4` | 2.00 |
+| 88.92–96.67 | `videos-recut/cw5.mp4` | 0.17 |
+| 96.67–101.21 | `videos/20.mp4` | 0.50 |
+| 101.21–106.50 | `videos-breath/br-t1.mp4` | 0.79 |
+| 106.50–109.96 | `videos/14.mp4` | 1.00 |
+| 109.96–113.17 | **TEXT** `videos-recut-text/old15-lyric.mp4` | 1.00 |
+| 113.17–115.17 | `videos-breath/br-t2.mp4` | 1.00 |
+| 115.17–119.25 | **TEXT** `videos-recut-text/rc14.mp4` | 3.17 |
+| 119.25–121.96 | `videos-breath/br-t3.mp4` | 0.50 |
+| 121.96–124.83 | **TEXT** `videos-recut-text/old16-lyric.mp4` | 2.71 |
+| 124.83–131.62 | `videos/17.mp4` | 0.50 |
+| 131.62–135.12 | **TEXT** `videos-recut-text/old18slow-v2.mp4` | 0.00 |
+| 135.12–142.42 | `videos/13.mp4` | 0.50 |
+| 142.42–148.25 | **TEXT** `videos-recut-text/old19-v2.mp4` | 0.17 |
+| 148.25–151.75 | `videos-breath/br-n4.mp4` | 0.00 |
+| 151.75–155.25 | `videos-breath/br-n5.mp4` | 1.00 |
+| 155.25–158.75 | `videos-breath/br-h2.mp4` | 1.00 |
+| 158.75–161.50 | `videos-recut/cw2.mp4` | 3.50 |
+| 161.50–165.21 | `videos/10.mp4` | 1.00 |
+| 165.21–168.96 | `videos-recut/rc08.mp4` | 4.00 |
+| 168.96–176.04 | `videos/23.mp4` | 0.50 |
+| 176.04–180.00 | `videos/24.mp4` | 0.00 |
+| 180.00–184.04 | `videos-breath/br-m3.mp4` | 1.00 |
+| 184.04–190.08 | **TEXT** `videos-recut-text/rc17.mp4` | 0.50 |
+| 190.08–193.50 | `videos-breath/br-m1.mp4` | 1.00 |
+| 193.50–196.79 | `videos-breath/br-m2.mp4` | 1.00 |
+| 196.79–204.12 | **TEXT** `videos-recut-text/rc18.mp4` | 0.29 |
+| 204.12–208.00 | `videos/21.mp4` | 2.00 |
+| 208.00–214.25 | `videos/25.mp4` | 1.00 |
+| 214.25–217.58 | **TEXT** `videos-recut-text/rc19.mp4` | 1.00 |
+| 217.58–219.46 | `videos-recut/ch1.mp4` | 2.50 |
+| 219.46–221.29 | `videos-recut/ch2.mp4` | 3.00 |
+| 221.29–223.12 | `videos-recut/ch3.mp4` | 3.00 |
+| 223.12–224.96 | `videos-recut/ch4.mp4` | 3.00 |
+| 224.96–226.79 | `videos-recut/ch5.mp4` | 3.00 |
+| 226.79–228.67 | `videos-recut/ch6.mp4` | 3.00 |
+| 228.67–230.50 | `videos-recut/rc09.mp4` | 4.00 |
+| 230.50–232.33 | `videos/26.mp4` | 0.50 |
+| 232.33–238.33 | `videos/27.mp4` | 2.00 |
+| 238.33–242.33 | `mv2/badcode-endcard.mp4` | 0.00 |
+
+**Needs a human:**
+- ⬜ **Jack's watch** of `music video breath` against `music video recut`.
+- ⬜ **Grade match:** the breath clips are on Nano Banana Pro plates and the rest on NB2. Use Lumetri Comparison
+  View and Apply Match from one hero shot if any cut jumps.
+- ⬜ **Delivery QC** (`scripts/delivery-qc.sh`) before any upload. The Omni files are untagged for colour.
+
+### ✍ More text: every sign carries its words (Jack, 2026-09-30, same day)
+
+Jack: *"Please add more text, some of the text is in the wrong place, some of the blank cardboard/signs/places are
+left blank."* **This supersedes the breathing-room cut's "no two text shots touch" rule.** The breathing-room clips
+stay between the signs, but every card, plaque and sign on screen now carries the words sung while it is visible.
+
+- **The check:** a contact sheet of every V1 clip (1–2 frames each, taken from the source media at the exact
+  timeline offset), labelled with the words sung at that moment from the faster-whisper transcript. The builder is
+  in the session scratchpad; it is ~30 lines, and the method is written into `docs/premiere/recipes.md`.
+- **What was wrong:**
+  - 21 blank cards and signs.
+  - Four clips whose lyric render no longer matched after the breathing-room re-time:
+    - Wai at 16.71 s: the render said "ONCE AGAIN", but "in shame, but why" is sung there.
+    - The hotel gate at 124.83 s.
+    - Clip 10 at 161.5 s: the render said "I CAN'T LIVE…", but "I might be insane" is sung.
+    - Clip 21 at 204.13 s: the in point had moved.
+  - The two-card "same side" shot's in point had moved to 1.0 s. It is back at 1.67 s.
+- **New renders**, timed to the word timings (`recut-signs.json`, output `*-lyric.mp4` in `videos-recut-text\`, bin
+  `recut lyrics`):
+  - `rc09s`: "IN SHAME" → "BUT WHY?"
+  - `old17b`: "PAYING MY TAX WITH A PLATINUM CARD" → "MY POCKETS ARE EMPTY", on the gate's blue plaque
+  - `old10b`: "I MIGHT BE INSANE" → "BUT I DO WANT CHANGE"
+  - `old21c`: "BACK TO THAT TIME WHEN WE FIRST MET" → "I DO REGRET"
+- **Swapped to existing lyric renders** at the same in points: 05 (SHINY TEETH), 07, 08, the chorus-1 cards
+  ch2/ch3/ch4, the enamel sign (14), 13, 23, 24, 25, and the whole final chorus (ch1–ch6, rc09f, 26).
+- **Left blank on purpose:** the catalogue's bedding, the X8's rear dealer sticker (14 px tall), the Tokyo tarps (no
+  sign in frame) and the cards burning in the fire.
+- **Checked:** the rebuilt contact sheet shows every card on the line being sung. V1 is 69 clips with no gaps; 8
+  one-frame slivers from the swap were removed and closed.
+
+### 🎵 Lyrics timed to the song, and text on the blank places (Jack, 2026-09-30)
+
+Jack: *"add the lyrics in time with the music via text on the blank parts where it should go, listen to the song and
+match the timing correctly."*
+
+- **Timing source: Suno's own word alignment for 3a433539**, the method this repo already used for the first cut
+  (`scripts/camping-mv2/README.md`). Saved as `scripts/camping-mv2/suno-aligned-3a433539.json`, 497 words, and rolled
+  into `lyric-lines-3a433539.txt`.
+  - It was pulled from the signed-in Suno tab with `scripts/suno/.tmp/align.mts`, which calls
+    `studio-api…/gen/<id>/aligned_lyrics/v2/`. ⚠ `window.Clerk` is no longer exposed on suno.com, so the token is read
+    from the `__session` cookie.
+  - **Cross-check:** against the faster-whisper transcript used before, Suno's times run a steady **~0.1 s later**
+    across the whole song (median, every 20 s window). Suno's are the ones the singer is actually on.
+- **Rule:** a line appears **2 frames before its first word** (picture first, the voice confirms it), and holds until
+  the next line's cue. Built by `scripts/camping-mv2/lyric-timing.py`, which finds each cue phrase in the alignment
+  and converts it to the source clip's clock.
+- **New text on blank places (12 renders)**, each on a surface already in the shot:
+
+| Time | Clip | Surface | Words |
+| --- | --- | --- | --- |
+| 20.25 | br-w1s | the shop window, vinyl | LET ME EXPLAIN / HOW I'M JUST POOR |
+| 30.58 | br-n2s | marker on the tent's flysheet | FUCKING SENSE OF ENTITLEMENT → AND SELF BELIEF |
+| 34.50 | rc11s | white vinyl on the X8's rear window | YOUR DEALS ARE SLICK |
+| 47.75 | cw3s | marker on the shutter | YOU GOT CHEESE / BUT I WANT CHEDDAR |
+| 54.17 | br-h1s | the blank bus-shelter lightbox, poster type | I MIGHT BE INSANE BUT I DO WANT CHANGE → LET'S SEE WHAT WE CAN ARRANGE |
+| 58.17 | cw1s | chalky paint on the shutter | LET'S SEE WHAT WE CAN ARRANGE |
+| 85.04 | cw4s | marker on the blue tarp | I CAN'T LIVE LIKE THIS FOREVER |
+| 148.25 | br-n4s | the bus's side panel | I CAN'T LIVE LIKE THIS FOREVER |
+| 155.25 | br-h2s | the phone's screen | I can't live like this forever |
+| 165.21 | rc08s | paint on the doorway wall | I CAN'T LIVE LIKE THIS FOREVER |
+| 190.08 | br-m1s | paint on the brick under the CCTV camera | VERY LITTLE CLOUT |
+| 196.79 | rc18b | the newspaper's first headline | THE ROBOTS REPLACED US → AND SICKER THAN… |
+
+- **Re-timed to the word (11 renders):** ch1b, ch5b, old08b, old14b, old15b, old17c, old13b, old10c, old24b, old25b
+  and old26b. old26b now carries "I CAN'T LIVE…" → "I MIGHT BE INSANE", and its slot runs to 234.0 s so the second
+  card lands on its line. The fire starts at 234.0.
+- **New renderer styles** in `signtext.py`: `paint`, `screen` and `vinyl` (a `shade_min` floor stops white vinyl
+  going grey on dark glass).
+- **Still blank on purpose:** the catalogue, dusk (`br-n1`, where the cardboard on the ground is too foreshortened to
+  read), the puddle, the breath, the CCTV-free rain plates, the favela aerial, and the fire.
+- **Checked:** the contact sheet, now labelled from Suno's alignment, shows every card on the words being sung. V1 is
+  69 clips with no gaps; 6 one-frame slivers were removed and closed.
+
+### ✅ Only the chosen lines, on their surfaces, on the word (Jack, 2026-09-30, final pass of the day)
+
+Jack: *"the text on the receipt is in the wrong place, there is floating text in weird places… look through the repo
+for the only lyrics we actually wanted to show and do only those… also the timing is out of sync."*
+**This supersedes the two passes above ("every sign carries its words" and "text on the blank places").**
+
+- **What shows:** Jack's eleven lines from the table at the top of this file, and nothing else. That is 12 text shots,
+  because line 4's second half is the chorus-1 card. Every other card, sign, wall and window is back to its raw,
+  blank clip, including the plaque, the golf board, the final chorus and every "blank place" text added earlier today.
+- **Timing:** from Suno's word alignment. Each line appears **2 frames before its first sung word** and stays on its
+  surface until the cut. Measured on the timeline:
+
+| # | Line | Surface | Text on | First word sung |
+| --- | --- | --- | --- | --- |
+| 1 | you keep on walking… | frosted door band (`rc10v3`) | 24.10 | 24.18 |
+| 2 | paid for your wheels on tick | Bob's card (`old06v3`) | 39.09 | 39.18 ("paid") |
+| 3 | 4 tonnes of steel / 1 meal deal | the till roll (`rc12v3`) | 44.23 | 44.32 |
+| 4 | I can't live like this forever | Wai's card (`ch1v3`) | 51.46 | 51.54 |
+| 5 | please sir… | Bob's card (`old09v3`, in point moved to 4.71 so the text starts after Tarquin has crossed) | 65.08 | 65.17 |
+| 4b | I might be insane but I do want change | Grace's card (`ch5v3`) | 82.33 | 82.42 |
+| 6 | What about if we taxed the rich? | the card at the windscreen (`rc14v3`) | 115.55 | 115.63 |
+| 7 | the only thing I'm changing… M3 | the motorway gantry (`old18v3`) | 131.87 | 131.94 |
+| 8 | wealth gap? what a load of crap | the wine label (`old19v3`) | 142.53 | 142.61 |
+| 9 | will it allow / in charge now | the barrier LED (`rc17v3`) | 187.08 / 188.60 | 187.16 / 188.68 |
+| 10 | and sicker than when the government debased us | the newspaper (`rc18v3`) | 200.53 | 200.61 |
+| 11 | well we don't have long | finger in the fog (`rc19v3`), written 214.30–215.80 | 214.30 | 214.33 |
+
+- **The receipt fix:** the old text box ran past the curve of the till roll onto the seat. It was re-measured to
+  the straight part of the strip (`quad [[699,379],[795,209],[827,227],[731,397]]`), so both lines sit on the paper.
+- **Slot edges moved** so each shot covers its whole line: rc10 starts at 24.083, and these end later: old06 at 41.75,
+  ch1 at 54.5, ch5 at 85.17, rc17 at 190.21 and rc18 at 204.29.
+- 🔴 **Lesson: overwriting a clip wipes its Motion keyframes.** The receipt's push (Scale 135→160) and the wine
+  label's push (Scale 100→230, Position y 0.5→0.369) had silently gone in the earlier passes today, which made the
+  wine label unreadable. Both were re-applied (`premiere_set_param`, source-time keyframes) and checked by export.
+- **Checked:** V1 is 69 clips with no gaps (15 one-frame slivers closed). Exactly 12 text clips remain. The contact
+  sheet of all 12 shows each line on its surface over its sung words.
+
+## 🎨 Gap stills: artful wealth-gap and homelessness shots (Jack, 2026-09-30)
+
+Jack: *"There are a few scenes i deleted where we need to add more artful ways to show wealth disparity and
+homelessness… some of them are just holding cardboard with no text on them, so lets replace those with more
+videos… maybe the neon lights of a kebab shop in england, that transitions to a noodle bar with neon lights."*
+
+- **What was missing on `music video breath`:** two gaps Jack left, **142.42–148.25** ("wealth gap… let me drink my
+  chateau") and **161.5–168.96** (the end of chorus 2), plus about 20 blank-card shots.
+- **18 stills, Nano Banana Pro · 16:9 · x2**, one pick each. Candidates are in `…\music video\clips\gap-stills\`,
+  the picks in `picks\` with `_all-picks.jpg`. Prompts: `scripts/camping-mv2/gap-stills.json`; run with
+  `STILLS=gap STILLS_MODEL='Nano Banana Pro' npx tsx scripts/camping-mv2/recut-stills.mts [id …]`.
+- **Two families** (shot-craft):
+  1. **The takeaway series (`gp-n1`–`n6`):** Jack's kebab-shop-to-noodle-bar idea, extended to six cities under one
+     fixed grammar, so any two cut together as a match cut: the camera 80 cm off the pavement, 4 m back, square on;
+     the lit window fills the left two-thirds, and the person sits on the right third. The food and the heat are
+     inside, the person is a foot away outside. The *Morley's or Less* typology device, and the answer to "what every
+     human shares".
+  2. **The gap in one frame (`gp-w0`–`w11`):** each replaces a blank card and illustrates its own lyric without words.
+     Devices from the web pass: steamed or plate glass between the worlds (Turpin, Leiter), the boundary line
+     itself (the hotel carpet edge; Miller), and the low camera looking up.
+- **Anti-slop, applied:** real kit named as objects (LED snap-frame menu panels, fascia cropped out of the top of
+  the frame, one half-dead neon tube, never stacked neon); the camera height in metres, never "a person's eye
+  height" (it summons a person); the sky as lit low cloud; hands written touching what they hold; no quality words.
+
+| Still | What | Planned slot | Pick | Why / watch |
+| --- | --- | --- | --- | --- |
+| `gp-n1` | England · the kebab shop | chorus 1 68.04 · final chorus | b | LED menu panels, doner grill glow, steamed glass; window left, man right (the series grammar) |
+| `gp-n2` | Hong Kong · the noodle bar | chorus 1 74.04 · final chorus | b | red neon half-dead, steam, cook and diners; matches the kebab framing (a is closer but breaks the grammar) |
+| `gp-n3` | Tokyo · the ramen stall | chorus 1 77.04 · final chorus | a | the shoes set side by side, lantern, noren curtain |
+| `gp-n4` | Kingston · the patty shop | final chorus | b | the warming cabinet behind the grille; a is too dark |
+| `gp-n5` | Rio · the lanchonete | final chorus | a | man on cardboard under the awning, blue-white tubes |
+| `gp-n6` | Brixton · the chicken shop | final chorus | a | red and white glare, woman against the shutter; b (low, reflective) is prettier but breaks the grammar, a candidate for a one-off |
+| `gp-w0` | Inside the noodle bar · the diner who looks away | 16.71 'looking to the side in shame, but why' | a | the old man just outside the glass, the diner eating a metre away. ⚠ the diner does not turn away as asked; the gap still reads |
+| `gp-w1` | The restaurant window · wine poured over a sleeping man | gap 142.42 'wealth gap? what a load of crap / let me drink my chateau' | b | waiter pours, the sleeper in the doorway through the same window. a has the reflection device but reads as a man lying inside the restaurant |
+| `gp-w2` | The penthouse above the doorway | gap 161.5 'I might be insane but I do want change' | a | the lit penthouse with its tiny figure; the sleeper in the lit doorway at the base; converging tower |
+| `gp-w3` | Closing time · the chip shop's leftovers | gap 165.21 'I can't live like this forever' | a | the parcel of chips handed down; nobody smiling. b has her looking at the lens |
+| `gp-w4` | The bank window · a man checks his smile | 27.29 'presenting yourself with your shiny teeth' | b | the grin in the dark glass, the sleeper in the same reflection, ATM glow |
+| `gp-w5` | The cash machine · the glow on two faces | 41.75 'cash from the bank for your wank tank' | a | the notes drawn, the woman looking up at him from the doorway |
+| `gp-w6` | The hotel door · a man paid to hold it | 61.38 'I insist that I hold that door' | b | the doorman holding the door for the couple; the man with the cup off the carpet |
+| `gp-w7` | The office tower at 3am · the cleaners and the sleeper | 135.13 'if you worked hard you could have plenty… resent me' | a | a cleaner on each lit floor, the sleeper under the canopy |
+| `gp-w8` | The sack · a desk in a box, in the rain | 176.04 'went down the wrong track, then I got the sack' | b | the desk box in the rain, legs hurrying past; a had a plastic bag over it |
+| `gp-w9` | Both men under the multi-storey | 168.96 'here we both are, living in a car park, rained on in the dark' | a | both men from behind, the rain curtain, one lamp |
+| `gp-w10` | The wing mirror · the tent where they met | 204.29 'back to that time when we very first met' | a | the tent in the X8 wing mirror |
+| `gp-w11` | Four hands over the drum fire | 208.00 'I do regret that I judged you… same side all along' | a | four hands over the fire, the gloves and the signet ring |
+
+**Planned use** (not cut yet; the clips come first):
+- **Chorus 1:** kebab (68.04), then the puddle, then the noodle bar (74.04) and the Tokyo ramen stall (77.04). This
+  replaces the three blank chorus cards, and the puddle between the kebab shop and the noodle bar is the transition.
+- **Final chorus:** the six takeaways as a fast world montage, replacing ch1–ch6 and the Wai card.
+- **The gaps:** w1 (wine through the window) at 142.42; w2 (penthouse) and w3 (the chips) at 161.5.
+- **Blank cards replaced:** w0 at 16.71, w4 at 27.29, w5 at 41.75, w6 at 61.38, w7 at 135.13, w9 at 168.96, w8 at
+  176.04, w10 at 204.29 and w11 at 208.0.
+
+### 🎬 Gap clips: made and cut in (2026-09-30)
+
+- **18 Omni 1.1 Flash clips**, Frames · 16:9 · 720p · 8 s · x1, one per pick. They're in `…\music video\videos-gap\`.
+  Prompts: `scripts/camping-mv2/gap-videos.json`; run with `VIDS=gap npx tsx scripts/camping-mv2/recut-videos.mts`.
+  Plates: `~/.cache/badcode-recut/plates/gap-<id>.jpg` (`gp-n2` is cropped to take the readable neon characters off
+  the top).
+- **Prompt rules applied:** the house template, the camera locked, and people who should stay still told to stay where
+  they are. Steam is written as "translucent wispy vapour" (web pass: "steaming" summons thick smoke). The pour is
+  one clause, into a glass already nearly full. Rain is named where it crosses a light.
+- **Verdicts (checked at 1 fps):** all 18 hold. Watch these: `gp-n5`, where a dark shape passes about 5 s in (only
+  the first 4.5 s is used); `gp-w4`, where he turns toward the lens at about 6 s (1–4.3 s used); and `gp-w5`, where the
+  hand leaves at about 4.5 s (0.5–2.9 s used).
+- **On `music video breath`:** 23 placements. The 11 text shots are untouched. Jack's two gaps are filled, and every
+  blank-card slot except the Tarquin-world signs (enamel, plaque, golf board, hotel gate) is replaced.
+
+| Time | Clip | Replaces |
+| --- | --- | --- |
+| 16.71 | gp-w0 the diner and the man outside the glass | Wai's blank card |
+| 27.29 | gp-w4 the grin in the bank window | Bob's blank "shiny teeth" card |
+| 41.75 | gp-w5 the cash machine | Bob's blank "wank tank" card |
+| 61.38 | gp-w6 the doorman | Bob's blank "hold that door" card |
+| 68.04 · 74.04 · 77.04 | gp-n1 kebab → (the puddle) → gp-n2 noodle bar → gp-n3 ramen | the blank chorus-1 cards |
+| 135.13 | gp-w7 the cleaners' tower | Bob's blank "worked hard" card |
+| 142.42 | gp-w1 wine poured beside the doorway sleeper | **gap** (Jack deleted the wine label) |
+| 161.50 · 165.21 | gp-w2 penthouse → gp-w3 the chips at closing | **gap** |
+| 168.96 | gp-w9 both men facing the rain | the blank "here we both are" cards |
+| 176.04 | gp-w8 the desk box in the rain | Tarquin's blank "wrong track" card |
+| 204.29 | gp-w10 the tent in the wing mirror | the blank "when we first met" card |
+| 208.00 | gp-w11 four hands over the fire | the blank "same side" cards |
+| 217.58–234.0 | n4, n5, n6, n1, n2, n3, w2, w11 at ~1.8 s each | the final chorus's blank cards; the hands over the fire hand off to the fire (27) |
+
+- **Checked:** V1 is 69 clips with no gaps (6 one-frame slivers closed). The contact sheet shows every placement.
+
+### ✍ Tarquin's four signs get their words (Jack, 2026-09-30)
+
+Jack: *"there is only a few blank spaces where text should be… like the parts with Tarquin, other than that keep it
+the same."* These four were the only blank signs left, so they were swapped to their word-timed renders at the same
+in and out points. Nothing else changed.
+
+| Time | Surface | Words | Sung |
+| --- | --- | --- | --- |
+| 106.50 | enamel sign on the railings (`old14b`) | DROWNING YOUR SORROW UNTIL TOMORROW | 106.88 |
+| 109.96 | brass plaque (`old15b`) | PROSPECTS EXIST | 110.43 |
+| 121.96 | golf-club board (`old16`) | I WORK HARD TO PAY FOR MY YARD | 122.07 |
+| 124.83 | hotel beach gate plaque (`old17c`) | PAYING MY TAX WITH A PLATINUM CARD → MY POCKETS ARE EMPTY | 125.27 / 128.06 |
+
+Checked: the contact sheet shows each sign's words over its sung line. V1 is 69 clips with no gaps; 2 one-frame
+slivers were closed.
+
 ## Open (not ruled yet)
+- ⬜ **Breathing room** (above): the four rules, and the film footage and its grade.
+- ⬜ **Breathing-room cut:** Jack's watch of `music video breath` (built 2026-09-30).
+- ⬜ **Gap clips:** Jack's watch of the new placements (2026-09-30).
 - ⬜ **The Jamaica beat.** The call wanted it first, and ruling 1 moves it. Kingston or Negril can still sit in the
   verse-1 cutaways or chorus 1.
 - ⬜ **Which defences** make the intro, and how many.

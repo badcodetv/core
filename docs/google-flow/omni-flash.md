@@ -1904,6 +1904,43 @@ recommends. ⚠️ **n=1 and never A/B'd:** the short prompt ran after three lon
 two-sentence form and add one clause only to fix something that actually came back wrong. The long
 form stays for shots whose framing is the point.
 
+## Web pass — 2026-09-30: rain, breath, vehicles, hands `[vendor]` `[community]` `[inferred]`
+
+Run for the Camping music video "breathing room" clips (`br-*`, `scripts/camping-mv2/breath-videos.json`: Omni
+1.1 Flash, Frames, one start frame, camera locked). **New items only. None tested by us yet.**
+
+- 🆕 **Omni 1.1 Flash reached Google Vids on 2026-09-23 with exact duration control and native 1080p** `[vendor]`
+  ([Workspace Updates](https://workspaceupdates.googleblog.com/2026/09/gemini-omni-11-flash-now-in-vids-with-improved-extension-quality-1080p-and-duration-control.html)).
+  ⬜ Check whether Flow's duration dropdown has changed.
+- 🆕 **Chained clips lose detail like a photocopy of a photocopy**, because each one is seeded from a compressed
+  last frame. **Extract chain frames as PNG, not JPEG** (`hybrid-method.md` §4 uses `-q:v 2` JPEG). The first two
+  frames of an extended clip are often smeared, so cut in from frame 3 (measured on Seedance, not Omni).
+  `[community]` [screenweaver](https://www.screenweaver.ai/blog/ai-video-extension-quality-loss) ·
+  [invideo](https://invideo.io/faq/why-do-the-first-frames-of-an-ai-extended-video-clip/)
+- 🆕 **Clip rain is visible only where it crosses light.** A uniform white curtain over dark and bright areas alike
+  is the tell. **Name the light the rain crosses** ("bright streaks where it crosses the white canopy light").
+  `[community]` [reelmind](https://reelmind.ai/blog/ai-generated-video-rain-effects-adding-precipitation-that-interacts-naturally) ·
+  [prompt-architects](https://prompt-architects.com/blog/360-vfx-and-effects-prompting)
+- 🆕 **Breath and steam: say where the vapour is**, and use "faintly" as the amount. No source shows it working.
+  `[community]` [higgsfield](https://higgsfield.ai/blog/ai-video-look-real-2026)
+- 🆕 **A passing vehicle: prompt its light, not its body** ("two soft cones sliding over the wet tarmac"). Every
+  noun about the body is another thing to redraw. `[community + inferred]`
+- 🆕 **Hands: anchor them to the object, one short contact, a sound cue, few occlusions.** For us: one strip of
+  tape, one pull, the rip in the audio line. `[community]` [higgsfield](https://higgsfield.ai/blog/ai-video-hands-faces)
+- **Budget about three generations per usable shot** (one source; for credit planning only). `[community]`
+- 🚫 **Not adopted:** "a camera that's too stable reads as AI" ([higgsfield](https://higgsfield.ai/blog/ai-video-look-real-2026)).
+  This is the handheld advice ruling R7 already rejects, and the hybrid method moves the camera in post anyway.
+
+**Observed on the `br-*` round, 2026-09-30 (Frames, n=1 each):**
+- 🔴 **A vehicle whose far end is out of frame grows a second vehicle as it travels.** On `br-n4` the bus rolled
+  right, and from about 4 s a second bus front slid in from the left carrying garbled readable text. This is 5a's
+  duplicate family. Only the first 3.5 s are usable.
+- ⚠️ **An arm held away from its rest pose returns to rest late in the clip.** The valet's outstretched umbrella
+  (`br-t3`) swung back over his own head at about 6 s. "Continue a state" held for about 5 s, so plan to cut early.
+- ⚠️ **Frames can still tilt the camera** when a crowd walks away from it (`br-w1`, from about 1 s), despite "fixed
+  and level, locked off".
+- ✅ **"Two soft cones" worked** for headlights (`br-n1`), and **one pull of tape** read cleanly (`br-h1`).
+
 ## Notes for BadCode `[untested]`
 
 1. **10s per generation fits `music-video-short`'s 10–20s target as 2+ clips** — consistent with

@@ -10,6 +10,8 @@ This folder holds the machinery.
 | `video-prompts.json` | The 27 Omni Flash motion prompts, keyed by image number (`n`) and storyboard shot (`shot`) |
 | `mv2run.mts` | The Flow runner: upload a plate, Omni 1.1 Flash · Frames · 16:9 · 720p · 8s · x1, detect the new tile by key, download "720p Original size". It refreshes and retries on "unusual activity" and when the frame slot fails, and it retries a failed download **without** regenerating |
 | `suno-aligned-198db8b9.json` | ⚠ OLD take. `song.wav` became [3a433539](https://suno.com/song/3a433539-0507-4d9e-b714-d134c0e1e509) on 2026-09-29. Suno's word alignment for the previous song.wav take (`studio-api…/gen/198db8b9-91a2-4d45-be54-365d028cbca3/aligned_lyrics/v2/`) |
+| `suno-aligned-3a433539.json` | ✅ **Current take.** Suno's word alignment for 3a433539, pulled 2026-09-30 with `scripts/suno/.tmp/align.mts` (token from the `__session` cookie). `lyric-lines-3a433539.txt` is the same, rolled into lines |
+| `lyric-timing.py` | Builds sign-text configs timed to the alignment: each line appears 2 frames before its first word |
 | `lyric-lines.txt` | The same, rolled up into timed lines, which the edit was cut to |
 | `edit-plan.json` | The V1 layout, as `[clip, start, end, inPoint, cue]` |
 | `signs.json` | Every sign's four corners (on frame 0 at 1280×720), lyric and style |
