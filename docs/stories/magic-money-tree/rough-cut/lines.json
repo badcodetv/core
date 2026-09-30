@@ -1,0 +1,1856 @@
+[
+ {
+  "id": "P1.01",
+  "part": "P1",
+  "text": "Dunkirk... nineteen forty.",
+  "words": 3,
+  "scene": "01",
+  "clock": 3,
+  "match": 1.0
+ },
+ {
+  "id": "P1.02",
+  "part": "P1",
+  "text": "More than three hundred and thirty-eight thousand British and Allied troops evacuated from the beaches and harbour.",
+  "words": 17,
+  "scene": "01",
+  "clock": 6,
+  "match": 0.78
+ },
+ {
+  "id": "P1.03",
+  "part": "P1",
+  "text": "Naval ships. Merchant crews. Little boats.",
+  "words": 6,
+  "scene": "01",
+  "clock": 12,
+  "match": 1.0
+ },
+ {
+  "id": "P1.04",
+  "part": "P1",
+  "text": "People helping people get out alive.",
+  "words": 6,
+  "scene": "01",
+  "clock": 17,
+  "match": 1.0
+ },
+ {
+  "id": "P1.05",
+  "part": "P1",
+  "text": "A defeat... and an extraordinary rescue.",
+  "words": 6,
+  "scene": "01",
+  "clock": 21,
+  "match": 1.0
+ },
+ {
+  "id": "P1.06",
+  "part": "P1",
+  "text": "Britain remembers the getting-home part.",
+  "words": 5,
+  "scene": "01",
+  "clock": 25,
+  "match": 1.0
+ },
+ {
+  "id": "P1.07",
+  "part": "P1",
+  "text": "This is about what came after.",
+  "words": 6,
+  "scene": "01",
+  "clock": 30,
+  "match": 1.0
+ },
+ {
+  "id": "P1.08",
+  "part": "P1",
+  "text": "When the war ends, there will still be homes to rebuild, work to find, people getting ill.",
+  "words": 17,
+  "scene": "02",
+  "clock": 35,
+  "match": 0.77
+ },
+ {
+  "id": "P1.09",
+  "part": "P1",
+  "text": "Britain will owe about two and a half times what it earns in a year.",
+  "words": 15,
+  "scene": "02",
+  "clock": 44,
+  "match": 1.0
+ },
+ {
+  "id": "P1.10",
+  "part": "P1",
+  "text": "In nineteen forty-eight it will open the NHS anyway.",
+  "words": 9,
+  "scene": "02",
+  "clock": 50,
+  "match": 1.0
+ },
+ {
+  "id": "P1.11",
+  "part": "P1",
+  "text": "Almost seventy years later, a nurse will ask about her pay... and hear that there is no magic money tree.",
+  "words": 20,
+  "scene": "02",
+  "clock": 55,
+  "match": 1.0
+ },
+ {
+  "id": "P1.12",
+  "part": "P1",
+  "text": "Both of those things happened in the same country.",
+  "words": 9,
+  "scene": "02",
+  "clock": 63,
+  "match": 1.0
+ },
+ {
+  "id": "P1.13",
+  "part": "P1",
+  "text": "One economist helped explain the first.",
+  "words": 6,
+  "scene": "02",
+  "clock": 67,
+  "match": 1.0
+ },
+ {
+  "id": "P1.14",
+  "part": "P1",
+  "text": "He did not live to see it.",
+  "words": 7,
+  "scene": "02",
+  "clock": 67,
+  "match": 1.0
+ },
+ {
+  "id": "P1.15",
+  "part": "P1",
+  "text": "John Maynard Keynes.",
+  "words": 3,
+  "scene": "02",
+  "clock": 74,
+  "match": 1.0
+ },
+ {
+  "id": "P1.16",
+  "part": "P1",
+  "text": "This is the future he never saw.",
+  "words": 7,
+  "scene": "02",
+  "clock": 78,
+  "match": 1.0
+ },
+ {
+  "id": "P2.01",
+  "part": "P2",
+  "text": "Germany... nineteen twenty-three.",
+  "words": 3,
+  "scene": "02a",
+  "clock": 90,
+  "match": 1.0
+ },
+ {
+  "id": "P2.02",
+  "part": "P2",
+  "text": "Seventeen years before Dunkirk.",
+  "words": 4,
+  "scene": "02a",
+  "clock": 90,
+  "match": 1.0
+ },
+ {
+  "id": "P2.03",
+  "part": "P2",
+  "text": "War debts, reparations and a political crisis have strained the state.",
+  "words": 11,
+  "scene": "02a",
+  "clock": 93,
+  "match": 1.0
+ },
+ {
+  "id": "P2.04",
+  "part": "P2",
+  "text": "It borrows from its central bank, which creates the money.",
+  "words": 10,
+  "scene": "02a",
+  "clock": 99,
+  "match": 1.0
+ },
+ {
+  "id": "P2.05",
+  "part": "P2",
+  "text": "Then the Ruhr is occupied, and production stalls.",
+  "words": 8,
+  "scene": "02a",
+  "clock": 104,
+  "match": 1.0
+ },
+ {
+  "id": "P2.06",
+  "part": "P2",
+  "text": "The state pays the workers anyway.",
+  "words": 6,
+  "scene": "02a",
+  "clock": 111,
+  "match": 1.0
+ },
+ {
+  "id": "P2.07",
+  "part": "P2",
+  "text": "More notes. Fewer goods.",
+  "words": 4,
+  "scene": "02a",
+  "clock": 111,
+  "match": 1.0
+ },
+ {
+  "id": "P2.08",
+  "part": "P2",
+  "text": "In some places people are paid daily, and hurry to spend it before the prices change.",
+  "words": 16,
+  "scene": "02a",
+  "clock": 117,
+  "match": 1.0
+ },
+ {
+  "id": "P2.09",
+  "part": "P2",
+  "text": "The currency collapses.",
+  "words": 3,
+  "scene": "02a",
+  "clock": 125,
+  "match": 1.0
+ },
+ {
+  "id": "P2.10",
+  "part": "P2",
+  "text": "That is one thing you can do with a money tree.",
+  "words": 11,
+  "scene": "02a",
+  "clock": 128,
+  "match": 1.0
+ },
+ {
+  "id": "P2.11",
+  "part": "P2",
+  "text": "You can shake it.",
+  "words": 4,
+  "scene": "02a",
+  "clock": 128,
+  "match": 1.0
+ },
+ {
+  "id": "P2.12",
+  "part": "P2",
+  "text": "The money falls.",
+  "words": 3,
+  "scene": "02a",
+  "clock": 133,
+  "match": 1.0
+ },
+ {
+  "id": "P2.13",
+  "part": "P2",
+  "text": "There is nothing underneath it to buy.",
+  "words": 7,
+  "scene": "02a",
+  "clock": 133,
+  "match": 1.0
+ },
+ {
+  "id": "P2.14",
+  "part": "P2",
+  "text": "The early nineteen thirties bring the opposite disaster.",
+  "words": 8,
+  "scene": "03",
+  "clock": 140,
+  "match": 1.0
+ },
+ {
+  "id": "P2.15",
+  "part": "P2",
+  "text": "Falling prices. Closed works. Queues for a job.",
+  "words": 8,
+  "scene": "03",
+  "clock": 140,
+  "match": 1.0
+ },
+ {
+  "id": "P2.16",
+  "part": "P2",
+  "text": "Picture it small.",
+  "words": 3,
+  "scene": "03",
+  "clock": 153,
+  "match": 1.0
+ },
+ {
+  "id": "P2.17",
+  "part": "P2",
+  "text": "An unemployed builder. A family needing a house.",
+  "words": 8,
+  "scene": "03",
+  "clock": 157,
+  "match": 0.69
+ },
+ {
+  "id": "P2.18",
+  "part": "P2",
+  "text": "The materials, for this example, in the yard.",
+  "words": 8,
+  "scene": "03",
+  "clock": 160,
+  "match": 1.0
+ },
+ {
+  "id": "P2.19",
+  "part": "P2",
+  "text": "The builder can build. The family needs a home.",
+  "words": 9,
+  "scene": "03",
+  "clock": 164,
+  "match": 1.0
+ },
+ {
+  "id": "P2.20",
+  "part": "P2",
+  "text": "Nothing happens.",
+  "words": 2,
+  "scene": "03",
+  "clock": 164,
+  "match": 1.0
+ },
+ {
+  "id": "P2.21",
+  "part": "P2",
+  "text": "Need isn't a paying order.",
+  "words": 5,
+  "scene": "03",
+  "clock": 170,
+  "match": 1.0
+ },
+ {
+  "id": "P2.22",
+  "part": "P2",
+  "text": "That is the second thing you can do.",
+  "words": 8,
+  "scene": "03",
+  "clock": 173,
+  "match": 1.0
+ },
+ {
+  "id": "P2.23",
+  "part": "P2",
+  "text": "You can starve it.",
+  "words": 4,
+  "scene": "03",
+  "clock": 173,
+  "match": 1.0
+ },
+ {
+  "id": "P2.24",
+  "part": "P2",
+  "text": "Keynes challenged the idea that an economy would reliably put everyone to work by itself.",
+  "words": 15,
+  "scene": "03",
+  "clock": 177,
+  "match": 1.0
+ },
+ {
+  "id": "P2.25",
+  "part": "P2",
+  "text": "When private spending falls short, government can commission useful work.",
+  "words": 10,
+  "scene": "03",
+  "clock": 185,
+  "match": 1.0
+ },
+ {
+  "id": "P2.26",
+  "part": "P2",
+  "text": "The builder hasn't suddenly acquired moral character.",
+  "words": 7,
+  "scene": "03",
+  "clock": 190,
+  "match": 1.0
+ },
+ {
+  "id": "P2.27",
+  "part": "P2",
+  "text": "He's acquired a customer.",
+  "words": 4,
+  "scene": "03",
+  "clock": 190,
+  "match": 1.0
+ },
+ {
+  "id": "P3.01",
+  "part": "P3",
+  "text": "That doesn't mean ordering a million houses makes them appear.",
+  "words": 10,
+  "scene": "04",
+  "clock": 195,
+  "match": 1.0
+ },
+ {
+  "id": "P3.02",
+  "part": "P3",
+  "text": "If the bricks are missing, make bricks.",
+  "words": 7,
+  "scene": "04",
+  "clock": 200,
+  "match": 1.0
+ },
+ {
+  "id": "P3.03",
+  "part": "P3",
+  "text": "If the skills are missing, train people.",
+  "words": 7,
+  "scene": "04",
+  "clock": 204,
+  "match": 1.0
+ },
+ {
+  "id": "P3.04",
+  "part": "P3",
+  "text": "Those take time too.",
+  "words": 4,
+  "scene": "04",
+  "clock": 207,
+  "match": 1.0
+ },
+ {
+  "id": "P3.05",
+  "part": "P3",
+  "text": "And if everyone is already busy, more money doesn't build more homes.",
+  "words": 12,
+  "scene": "04",
+  "clock": 211,
+  "match": 1.0
+ },
+ {
+  "id": "P3.06",
+  "part": "P3",
+  "text": "It bids up the price of the ones there are.",
+  "words": 10,
+  "scene": "04",
+  "clock": 211,
+  "match": 1.0
+ },
+ {
+  "id": "P3.07",
+  "part": "P3",
+  "text": "Keynes named that limit himself.",
+  "words": 5,
+  "scene": "04",
+  "clock": 220,
+  "match": 1.0
+ },
+ {
+  "id": "P3.08",
+  "part": "P3",
+  "text": "Demand beyond what the country can physically supply is, he said, \"the proper meaning of inflation\".",
+  "words": 16,
+  "scene": "04",
+  "clock": 223,
+  "match": 0.99
+ },
+ {
+  "id": "P3.09",
+  "part": "P3",
+  "text": "Inside that limit...",
+  "words": 3,
+  "scene": "04",
+  "clock": 232,
+  "match": 1.0
+ },
+ {
+  "id": "P3.10",
+  "part": "P3",
+  "text": "\"Anything we can actually do we can afford.\"",
+  "words": 8,
+  "scene": "04",
+  "clock": 232,
+  "match": 1.0
+ },
+ {
+  "id": "P3.11",
+  "part": "P3",
+  "text": "\"Actually\" is carrying quite a lot of the sentence.",
+  "words": 9,
+  "scene": "04",
+  "clock": 240,
+  "match": 0.98
+ },
+ {
+  "id": "P3.12",
+  "part": "P3",
+  "text": "That is the third thing you can do.",
+  "words": 8,
+  "scene": "04",
+  "clock": 245,
+  "match": 1.0
+ },
+ {
+  "id": "P3.13",
+  "part": "P3",
+  "text": "You can plant it.",
+  "words": 4,
+  "scene": "04",
+  "clock": 245,
+  "match": 1.0
+ },
+ {
+  "id": "P3.14",
+  "part": "P3",
+  "text": "In work that can actually be done.",
+  "words": 7,
+  "scene": "04",
+  "clock": 250,
+  "match": 1.0
+ },
+ {
+  "id": "P4.01",
+  "part": "P4",
+  "text": "Britain didn't fight the war by discovering a cupboard of free money.",
+  "words": 12,
+  "scene": "05",
+  "clock": 260,
+  "match": 1.0
+ },
+ {
+  "id": "P4.02",
+  "part": "P4",
+  "text": "It taxed. Borrowed. Directed production. Rationed goods.",
+  "words": 7,
+  "scene": "05",
+  "clock": 265,
+  "match": 1.0
+ },
+ {
+  "id": "P4.03",
+  "part": "P4",
+  "text": "Relied on overseas supplies and support.",
+  "words": 6,
+  "scene": "05",
+  "clock": 271,
+  "match": 1.0
+ },
+ {
+  "id": "P4.04",
+  "part": "P4",
+  "text": "People paid in work, in foregone comforts, and in losses no budget can measure.",
+  "words": 14,
+  "scene": "05",
+  "clock": 274,
+  "match": 1.0
+ },
+ {
+  "id": "P4.05",
+  "part": "P4",
+  "text": "Keynes worked on the finances.",
+  "words": 5,
+  "scene": "05",
+  "clock": 283,
+  "match": 1.0
+ },
+ {
+  "id": "P4.06",
+  "part": "P4",
+  "text": "He proposed taxes and deferred pay to hold spending down while production went to war.",
+  "words": 15,
+  "scene": "05",
+  "clock": 283,
+  "match": 1.0
+ },
+ {
+  "id": "P4.07",
+  "part": "P4",
+  "text": "Inflation was the thing he was trying to prevent.",
+  "words": 9,
+  "scene": "05",
+  "clock": 292,
+  "match": 1.0
+ },
+ {
+  "id": "P4.08",
+  "part": "P4",
+  "text": "An American army film of the time put Britain's tax rates on the screen.",
+  "words": 14,
+  "scene": "05",
+  "clock": 296,
+  "match": 1.0
+ },
+ {
+  "id": "P4.09",
+  "part": "P4",
+  "text": "The highest went to the people with the most.",
+  "words": 9,
+  "scene": "05",
+  "clock": 296,
+  "match": 1.0
+ },
+ {
+  "id": "P4.10",
+  "part": "P4",
+  "text": "Winning would leave another job...",
+  "words": 5,
+  "scene": "05",
+  "clock": 308,
+  "match": 1.0
+ },
+ {
+  "id": "P4.11",
+  "part": "P4",
+  "text": "organising the peace.",
+  "words": 3,
+  "scene": "05",
+  "clock": 308,
+  "match": 1.0
+ },
+ {
+  "id": "P4.12",
+  "part": "P4",
+  "text": "Before victory, Churchill's coalition accepted responsibility for maintaining \"a high and stable level of employment\" after the war.",
+  "words": 18,
+  "scene": "06",
+  "clock": 315,
+  "match": 0.99
+ },
+ {
+  "id": "P4.13",
+  "part": "P4",
+  "text": "Not just finding people something to do in uniform.",
+  "words": 9,
+  "scene": "06",
+  "clock": 324,
+  "match": 1.0
+ },
+ {
+  "id": "P4.14",
+  "part": "P4",
+  "text": "Making civilian work a public responsibility.",
+  "words": 6,
+  "scene": "06",
+  "clock": 324,
+  "match": 1.0
+ },
+ {
+  "id": "P4.15",
+  "part": "P4",
+  "text": "Beveridge's proposals, and plans for a national health service, were part of the argument about the peace too.",
+  "words": 18,
+  "scene": "06",
+  "clock": 331,
+  "match": 1.0
+ },
+ {
+  "id": "P4.16",
+  "part": "P4",
+  "text": "Keynes wasn't building this future alone.",
+  "words": 6,
+  "scene": "06",
+  "clock": 339,
+  "match": 1.0
+ },
+ {
+  "id": "P4.17",
+  "part": "P4",
+  "text": "And a promise on paper still needed a government to carry it out.",
+  "words": 13,
+  "scene": "06",
+  "clock": 344,
+  "match": 1.0
+ },
+ {
+  "id": "P5.01",
+  "part": "P5",
+  "text": "In nineteen forty-five, Britain wins.",
+  "words": 5,
+  "scene": "07",
+  "clock": 355,
+  "match": 1.0
+ },
+ {
+  "id": "P5.02",
+  "part": "P5",
+  "text": "Voters elect Attlee's Labour government.",
+  "words": 5,
+  "scene": "07",
+  "clock": 360,
+  "match": 1.0
+ },
+ {
+  "id": "P5.03",
+  "part": "P5",
+  "text": "The celebration does not come with a roof.",
+  "words": 8,
+  "scene": "07",
+  "clock": 364,
+  "match": 1.0
+ },
+ {
+  "id": "P5.04",
+  "part": "P5",
+  "text": "Debt is enormous. Supplies are short. Rationing continues.",
+  "words": 8,
+  "scene": "07",
+  "clock": 368,
+  "match": 1.0
+ },
+ {
+  "id": "P5.05",
+  "part": "P5",
+  "text": "But the war's end releases people and production for civilian work.",
+  "words": 11,
+  "scene": "07",
+  "clock": 375,
+  "match": 1.0
+ },
+ {
+  "id": "P5.06",
+  "part": "P5",
+  "text": "Taxes and borrowing remain part of the answer...",
+  "words": 8,
+  "scene": "07",
+  "clock": 379,
+  "match": 1.0
+ },
+ {
+  "id": "P5.07",
+  "part": "P5",
+  "text": "so do external finance, and the difficult business of paying for imports.",
+  "words": 12,
+  "scene": "07",
+  "clock": 379,
+  "match": 1.0
+ },
+ {
+  "id": "P5.08",
+  "part": "P5",
+  "text": "Keynes negotiates an American loan, then defends it in Parliament.",
+  "words": 10,
+  "scene": "07",
+  "clock": 386,
+  "match": 1.0
+ },
+ {
+  "id": "P5.09",
+  "part": "P5",
+  "text": "Still finding time to tell a fellow peer: \"I have never heard statistics so funny.\"",
+  "words": 15,
+  "scene": "07",
+  "clock": 391,
+  "match": 0.98
+ },
+ {
+  "id": "P5.10",
+  "part": "P5",
+  "text": "The country doesn't wait to clear its entire debt before rebuilding.",
+  "words": 11,
+  "scene": "07",
+  "clock": 396,
+  "match": 1.0
+ },
+ {
+  "id": "P5.11",
+  "part": "P5",
+  "text": "Debt is a burden.",
+  "words": 4,
+  "scene": "07",
+  "clock": 396,
+  "match": 1.0
+ },
+ {
+  "id": "P5.12",
+  "part": "P5",
+  "text": "It isn't a veto.",
+  "words": 4,
+  "scene": "07",
+  "clock": 396,
+  "match": 1.0
+ },
+ {
+  "id": "P5.13",
+  "part": "P5",
+  "text": "Keynes died on the twenty-first of April, nineteen forty-six.",
+  "words": 9,
+  "scene": "08",
+  "clock": 405,
+  "match": 0.71
+ },
+ {
+  "id": "P5.14",
+  "part": "P5",
+  "text": "The NHS would open more than two years later.",
+  "words": 9,
+  "scene": "08",
+  "clock": 410,
+  "match": 1.0
+ },
+ {
+  "id": "P5.15",
+  "part": "P5",
+  "text": "He had seen victory.",
+  "words": 4,
+  "scene": "08",
+  "clock": 410,
+  "match": 1.0
+ },
+ {
+  "id": "P5.16",
+  "part": "P5",
+  "text": "He would not see this.",
+  "words": 5,
+  "scene": "08",
+  "clock": 410,
+  "match": 1.0
+ },
+ {
+  "id": "P5.17",
+  "part": "P5",
+  "text": "We don't know what he would have made of everything that followed.",
+  "words": 12,
+  "scene": "08",
+  "clock": 418,
+  "match": 1.0
+ },
+ {
+  "id": "P5.18",
+  "part": "P5",
+  "text": "Other people had the work to do.",
+  "words": 7,
+  "scene": "08",
+  "clock": 418,
+  "match": 1.0
+ },
+ {
+  "id": "P6.01",
+  "part": "P6",
+  "text": "Attlee's government, with Aneurin Bevan as Health Minister, established the NHS.",
+  "words": 11,
+  "scene": "09",
+  "clock": 430,
+  "match": 1.0
+ },
+ {
+  "id": "P6.02",
+  "part": "P6",
+  "text": "It took legislation, negotiation, and people turning up to work.",
+  "words": 10,
+  "scene": "09",
+  "clock": 436,
+  "match": 1.0
+ },
+ {
+  "id": "P6.03",
+  "part": "P6",
+  "text": "On the fifth of July, nineteen forty-eight, existing hospitals and services became part of a new settlement...",
+  "words": 17,
+  "scene": "09",
+  "clock": 441,
+  "match": 0.92
+ },
+ {
+  "id": "P6.04",
+  "part": "P6",
+  "text": "care available to everyone, free at the point of use.",
+  "words": 10,
+  "scene": "09",
+  "clock": 446,
+  "match": 1.0
+ },
+ {
+  "id": "P6.05",
+  "part": "P6",
+  "text": "Not free to provide.",
+  "words": 4,
+  "scene": "09",
+  "clock": 454,
+  "match": 1.0
+ },
+ {
+  "id": "P6.06",
+  "part": "P6",
+  "text": "The staff and suppliers still had to be paid.",
+  "words": 9,
+  "scene": "09",
+  "clock": 454,
+  "match": 1.0
+ },
+ {
+  "id": "P6.07",
+  "part": "P6",
+  "text": "Public funding changed who faced the bill.",
+  "words": 7,
+  "scene": "09",
+  "clock": 460,
+  "match": 1.0
+ },
+ {
+  "id": "P6.08",
+  "part": "P6",
+  "text": "A nurse could get on with the work.",
+  "words": 8,
+  "scene": "09",
+  "clock": 466,
+  "match": 1.0
+ },
+ {
+  "id": "P6.09",
+  "part": "P6",
+  "text": "A patient could get on with getting better.",
+  "words": 8,
+  "scene": "09",
+  "clock": 471,
+  "match": 1.0
+ },
+ {
+  "id": "P6.10",
+  "part": "P6",
+  "text": "Councils commissioned homes. Builders built them. Families moved in.",
+  "words": 9,
+  "scene": "10",
+  "clock": 480,
+  "match": 0.59
+ },
+ {
+  "id": "P6.11",
+  "part": "P6",
+  "text": "Not everyone got a home. Not overnight.",
+  "words": 7,
+  "scene": "10",
+  "clock": 491,
+  "match": 1.0
+ },
+ {
+  "id": "P6.12",
+  "part": "P6",
+  "text": "But the building continued.",
+  "words": 4,
+  "scene": "10",
+  "clock": 491,
+  "match": 1.0
+ },
+ {
+  "id": "P6.13",
+  "part": "P6",
+  "text": "Under the Conservatives, Harold Macmillan made housing a major priority too.",
+  "words": 11,
+  "scene": "10",
+  "clock": 498,
+  "match": 1.0
+ },
+ {
+  "id": "P6.14",
+  "part": "P6",
+  "text": "They disagreed about plenty.",
+  "words": 4,
+  "scene": "10",
+  "clock": 503,
+  "match": 1.0
+ },
+ {
+  "id": "P6.15",
+  "part": "P6",
+  "text": "Large-scale council building wasn't confined to one party.",
+  "words": 8,
+  "scene": "10",
+  "clock": 503,
+  "match": 1.0
+ },
+ {
+  "id": "P6.16",
+  "part": "P6",
+  "text": "A key in a front door is a fairly practical sort of patriotism.",
+  "words": 13,
+  "scene": "10",
+  "clock": 509,
+  "match": 1.0
+ },
+ {
+  "id": "P6.17",
+  "part": "P6",
+  "text": "And the debt?",
+  "words": 3,
+  "scene": "10b",
+  "clock": 515,
+  "match": 1.0
+ },
+ {
+  "id": "P6.18",
+  "part": "P6",
+  "text": "It was never cleared.",
+  "words": 4,
+  "scene": "10b",
+  "clock": 515,
+  "match": 1.0
+ },
+ {
+  "id": "P6.19",
+  "part": "P6",
+  "text": "In pounds, it kept rising.",
+  "words": 5,
+  "scene": "10b",
+  "clock": 518,
+  "match": 1.0
+ },
+ {
+  "id": "P6.20",
+  "part": "P6",
+  "text": "The economy rose faster.",
+  "words": 4,
+  "scene": "10b",
+  "clock": 521,
+  "match": 1.0
+ },
+ {
+  "id": "P6.21",
+  "part": "P6",
+  "text": "People were housed, treated, and in work.",
+  "words": 7,
+  "scene": "10b",
+  "clock": 524,
+  "match": 1.0
+ },
+ {
+  "id": "P6.22",
+  "part": "P6",
+  "text": "For twenty years, unemployment averaged under two in a hundred.",
+  "words": 10,
+  "scene": "10b",
+  "clock": 530,
+  "match": 1.0
+ },
+ {
+  "id": "P6.23",
+  "part": "P6",
+  "text": "For twenty-seven years running, the debt shrank against the size of the country.",
+  "words": 13,
+  "scene": "10b",
+  "clock": 535,
+  "match": 1.0
+ },
+ {
+  "id": "P6.24",
+  "part": "P6",
+  "text": "Not by magic.",
+  "words": 3,
+  "scene": "10b",
+  "clock": 541,
+  "match": 1.0
+ },
+ {
+  "id": "P6.25",
+  "part": "P6",
+  "text": "Budgets were tight.",
+  "words": 3,
+  "scene": "10b",
+  "clock": 541,
+  "match": 1.0
+ },
+ {
+  "id": "P6.26",
+  "part": "P6",
+  "text": "Interest was held below inflation, so lenders and savers carried part of the bill.",
+  "words": 14,
+  "scene": "10b",
+  "clock": 545,
+  "match": 1.0
+ },
+ {
+  "id": "P6.27",
+  "part": "P6",
+  "text": "Quietly.",
+  "words": 1,
+  "scene": "10b",
+  "clock": 545,
+  "match": 1.0
+ },
+ {
+  "id": "P6.28",
+  "part": "P6",
+  "text": "Britain did not shrink to fit its debt.",
+  "words": 8,
+  "scene": "10b",
+  "clock": 552,
+  "match": 1.0
+ },
+ {
+  "id": "P6.29",
+  "part": "P6",
+  "text": "It outgrew it.",
+  "words": 3,
+  "scene": "10b",
+  "clock": 552,
+  "match": 1.0
+ },
+ {
+  "id": "P7.01",
+  "part": "P7",
+  "text": "Two thousand and eight.",
+  "words": 4,
+  "scene": "10a",
+  "clock": 560,
+  "match": 1.0
+ },
+ {
+  "id": "P7.02",
+  "part": "P7",
+  "text": "The banking system is failing.",
+  "words": 5,
+  "scene": "10a",
+  "clock": 560,
+  "match": 1.0
+ },
+ {
+  "id": "P7.03",
+  "part": "P7",
+  "text": "Government buys bank shares, makes loans, and gives guarantees to keep it standing.",
+  "words": 13,
+  "scene": "10a",
+  "clock": 564,
+  "match": 1.0
+ },
+ {
+  "id": "P7.04",
+  "part": "P7",
+  "text": "In March two thousand and nine, the Bank of England does something else.",
+  "words": 13,
+  "scene": "10a",
+  "clock": 570,
+  "match": 0.8
+ },
+ {
+  "id": "P7.05",
+  "part": "P7",
+  "text": "It creates new money, electronically, and uses it to buy bonds.",
+  "words": 11,
+  "scene": "10a",
+  "clock": 574,
+  "match": 1.0
+ },
+ {
+  "id": "P7.06",
+  "part": "P7",
+  "text": "This is new money. The Bank says so itself.",
+  "words": 9,
+  "scene": "10a",
+  "clock": 581,
+  "match": 1.0
+ },
+ {
+  "id": "P7.07",
+  "part": "P7",
+  "text": "Most money, in fact, is made by ordinary banks when they lend.",
+  "words": 12,
+  "scene": "10a",
+  "clock": 586,
+  "match": 1.0
+ },
+ {
+  "id": "P7.08",
+  "part": "P7",
+  "text": "There was never a fixed national pot.",
+  "words": 7,
+  "scene": "10a",
+  "clock": 586,
+  "match": 1.0
+ },
+ {
+  "id": "P7.09",
+  "part": "P7",
+  "text": "The Bank's new money probably prevented a worse slump.",
+  "words": 9,
+  "scene": "10a",
+  "clock": 593,
+  "match": 1.0
+ },
+ {
+  "id": "P7.10",
+  "part": "P7",
+  "text": "It also lifted the price of things people already owned.",
+  "words": 10,
+  "scene": "10a",
+  "clock": 598,
+  "match": 1.0
+ },
+ {
+  "id": "P7.11",
+  "part": "P7",
+  "text": "Good news... if you owned some.",
+  "words": 6,
+  "scene": "10a",
+  "clock": 605,
+  "match": 1.0
+ },
+ {
+  "id": "P7.12",
+  "part": "P7",
+  "text": "Twenty ten.",
+  "words": 2,
+  "scene": "11",
+  "clock": 615,
+  "match": 1.0
+ },
+ {
+  "id": "P7.13",
+  "part": "P7",
+  "text": "Borrowing is very high.",
+  "words": 4,
+  "scene": "11",
+  "clock": 615,
+  "match": 1.0
+ },
+ {
+  "id": "P7.14",
+  "part": "P7",
+  "text": "The case for cutting is one every household understands...",
+  "words": 9,
+  "scene": "11",
+  "clock": 619,
+  "match": 1.0
+ },
+ {
+  "id": "P7.15",
+  "part": "P7",
+  "text": "you can't keep spending money you haven't got.",
+  "words": 8,
+  "scene": "11",
+  "clock": 619,
+  "match": 1.0
+ },
+ {
+  "id": "P7.16",
+  "part": "P7",
+  "text": "The Coalition chooses tax rises and spending restraint.",
+  "words": 8,
+  "scene": "11",
+  "clock": 627,
+  "match": 1.0
+ },
+ {
+  "id": "P7.17",
+  "part": "P7",
+  "text": "Mostly restraint.",
+  "words": 2,
+  "scene": "11",
+  "clock": 627,
+  "match": 1.0
+ },
+ {
+  "id": "P7.18",
+  "part": "P7",
+  "text": "Public-sector pay is frozen for two years, then held to about one per cent.",
+  "words": 14,
+  "scene": "11",
+  "clock": 632,
+  "match": 1.0
+ },
+ {
+  "id": "P7.19",
+  "part": "P7",
+  "text": "So the Bank is creating money while the Treasury is holding it back.",
+  "words": 13,
+  "scene": "11",
+  "clock": 638,
+  "match": 1.0
+ },
+ {
+  "id": "P7.20",
+  "part": "P7",
+  "text": "Same country. Same years.",
+  "words": 4,
+  "scene": "11",
+  "clock": 638,
+  "match": 1.0
+ },
+ {
+  "id": "P7.21",
+  "part": "P7",
+  "text": "Twenty seventeen. Question Time.",
+  "words": 4,
+  "scene": "11",
+  "clock": 645,
+  "match": 1.0
+ },
+ {
+  "id": "P7.22",
+  "part": "P7",
+  "text": "Nurses ask the Prime Minister about pay.",
+  "words": 7,
+  "scene": "11",
+  "clock": 645,
+  "match": 1.0
+ },
+ {
+  "id": "P7.23",
+  "part": "P7",
+  "text": "One says her payslip matches the one she had in two thousand and nine.",
+  "words": 14,
+  "scene": "11",
+  "clock": 650,
+  "match": 0.79
+ },
+ {
+  "id": "P7.24",
+  "part": "P7",
+  "text": "Theresa May says she recognises the job they do.",
+  "words": 9,
+  "scene": "11",
+  "clock": 656,
+  "match": 1.0
+ },
+ {
+  "id": "P7.25",
+  "part": "P7",
+  "text": "Then she says there isn't a magic money tree that we can shake.",
+  "words": 13,
+  "scene": "11",
+  "clock": 662,
+  "match": 1.0
+ },
+ {
+  "id": "P7.26",
+  "part": "P7",
+  "text": "You can print the money.",
+  "words": 5,
+  "scene": "11",
+  "clock": 668,
+  "match": 1.0
+ },
+ {
+  "id": "P7.27",
+  "part": "P7",
+  "text": "You can't print the nurse.",
+  "words": 5,
+  "scene": "11",
+  "clock": 672,
+  "match": 1.0
+ },
+ {
+  "id": "P7.28",
+  "part": "P7",
+  "text": "She was already there.",
+  "words": 4,
+  "scene": "11",
+  "clock": 672,
+  "match": 1.0
+ },
+ {
+  "id": "P8.01",
+  "part": "P8",
+  "text": "Twenty twenty. Covid.",
+  "words": 3,
+  "scene": "11a",
+  "clock": 685,
+  "match": 1.0
+ },
+ {
+  "id": "P8.02",
+  "part": "P8",
+  "text": "Money is found. In days.",
+  "words": 5,
+  "scene": "11a",
+  "clock": 685,
+  "match": 1.0
+ },
+ {
+  "id": "P8.03",
+  "part": "P8",
+  "text": "The Treasury borrows hundreds of billions.",
+  "words": 6,
+  "scene": "11a",
+  "clock": 690,
+  "match": 1.0
+ },
+ {
+  "id": "P8.04",
+  "part": "P8",
+  "text": "The Bank creates hundreds of billions more.",
+  "words": 7,
+  "scene": "11a",
+  "clock": 690,
+  "match": 1.0
+ },
+ {
+  "id": "P8.05",
+  "part": "P8",
+  "text": "Some of what government spends keeps wages paid.",
+  "words": 8,
+  "scene": "11a",
+  "clock": 696,
+  "match": 1.0
+ },
+ {
+  "id": "P8.06",
+  "part": "P8",
+  "text": "That part is planted.",
+  "words": 4,
+  "scene": "11a",
+  "clock": 696,
+  "match": 1.0
+ },
+ {
+  "id": "P8.07",
+  "part": "P8",
+  "text": "Some goes down a priority lane, for suppliers recommended by ministers, MPs and peers.",
+  "words": 14,
+  "scene": "11a",
+  "clock": 702,
+  "match": 1.0
+ },
+ {
+  "id": "P8.08",
+  "part": "P8",
+  "text": "One company is a few weeks old.",
+  "words": 7,
+  "scene": "11a",
+  "clock": 710,
+  "match": 1.0
+ },
+ {
+  "id": "P8.09",
+  "part": "P8",
+  "text": "It wins contracts worth two hundred and three million pounds.",
+  "words": 10,
+  "scene": "11a",
+  "clock": 710,
+  "match": 1.0
+ },
+ {
+  "id": "P8.10",
+  "part": "P8",
+  "text": "The gowns can't be used.",
+  "words": 5,
+  "scene": "11a",
+  "clock": 718,
+  "match": 1.0
+ },
+ {
+  "id": "P8.11",
+  "part": "P8",
+  "text": "A court orders a hundred and twenty-two million repaid.",
+  "words": 9,
+  "scene": "11a",
+  "clock": 721,
+  "match": 1.0
+ },
+ {
+  "id": "P8.12",
+  "part": "P8",
+  "text": "The company goes into administration the day before the judgment.",
+  "words": 10,
+  "scene": "11a",
+  "clock": 727,
+  "match": 1.0
+ },
+ {
+  "id": "P8.13",
+  "part": "P8",
+  "text": "Baroness Mone had told the government she would not benefit.",
+  "words": 10,
+  "scene": "11a",
+  "clock": 732,
+  "match": 1.0
+ },
+ {
+  "id": "P8.14",
+  "part": "P8",
+  "text": "She later said on television that she stood to benefit from about sixty million.",
+  "words": 14,
+  "scene": "11a",
+  "clock": 737,
+  "match": 1.0
+ },
+ {
+  "id": "P8.15",
+  "part": "P8",
+  "text": "She denies any wrongdoing.",
+  "words": 4,
+  "scene": "11a",
+  "clock": 743,
+  "match": 1.0
+ },
+ {
+  "id": "P8.16",
+  "part": "P8",
+  "text": "The following spring, a company run by the supplier's owner of record bought a yacht.",
+  "words": 15,
+  "scene": "11a",
+  "clock": 746,
+  "match": 1.0
+ },
+ {
+  "id": "P8.17",
+  "part": "P8",
+  "text": "No court has connected those facts.",
+  "words": 6,
+  "scene": "11a",
+  "clock": 753,
+  "match": 1.0
+ },
+ {
+  "id": "P8.18",
+  "part": "P8",
+  "text": "We are only reading the dates.",
+  "words": 6,
+  "scene": "11a",
+  "clock": 753,
+  "match": 1.0
+ },
+ {
+  "id": "P8.19",
+  "part": "P8",
+  "text": "In the nineteen forties, the people with the most paid the most.",
+  "words": 12,
+  "scene": "11a",
+  "clock": 760,
+  "match": 0.83
+ },
+ {
+  "id": "P8.20",
+  "part": "P8",
+  "text": "In the twenty-tens, the nurse paid.",
+  "words": 6,
+  "scene": "11a",
+  "clock": 765,
+  "match": 0.77
+ },
+ {
+  "id": "P8.21",
+  "part": "P8",
+  "text": "In twenty twenty, some of the people with the most got paid.",
+  "words": 12,
+  "scene": "11a",
+  "clock": 769,
+  "match": 1.0
+ },
+ {
+  "id": "P9.01",
+  "part": "P9",
+  "text": "Go back to nineteen forty-eight.",
+  "words": 5,
+  "scene": "12",
+  "clock": 780,
+  "match": 1.0
+ },
+ {
+  "id": "P9.02",
+  "part": "P9",
+  "text": "Two months after the NHS opened, its own pamphlet told the public...",
+  "words": 12,
+  "scene": "12",
+  "clock": 783,
+  "match": 1.0
+ },
+ {
+  "id": "P9.03",
+  "part": "P9",
+  "text": "\"no fairy wand was waved on July the fifth\".",
+  "words": 9,
+  "scene": "12",
+  "clock": 783,
+  "match": 1.0
+ },
+ {
+  "id": "P9.04",
+  "part": "P9",
+  "text": "New hospitals, doctors and nurses had not appeared overnight.",
+  "words": 9,
+  "scene": "12",
+  "clock": 793,
+  "match": 1.0
+ },
+ {
+  "id": "P9.05",
+  "part": "P9",
+  "text": "They knew there was no magic.",
+  "words": 6,
+  "scene": "12",
+  "clock": 798,
+  "match": 1.0
+ },
+ {
+  "id": "P9.06",
+  "part": "P9",
+  "text": "They built it anyway.",
+  "words": 4,
+  "scene": "12",
+  "clock": 798,
+  "match": 1.0
+ },
+ {
+  "id": "P9.07",
+  "part": "P9",
+  "text": "The absence of magic wasn't the end of the discussion.",
+  "words": 10,
+  "scene": "12",
+  "clock": 804,
+  "match": 1.0
+ },
+ {
+  "id": "P9.08",
+  "part": "P9",
+  "text": "It was the beginning of a job list.",
+  "words": 8,
+  "scene": "12",
+  "clock": 804,
+  "match": 1.0
+ },
+ {
+  "id": "P9.09",
+  "part": "P9",
+  "text": "So.",
+  "words": 1,
+  "scene": "02a",
+  "clock": 117,
+  "match": 1.0
+ },
+ {
+  "id": "P9.10",
+  "part": "P9",
+  "text": "She was right.",
+  "words": 3,
+  "scene": "13",
+  "clock": 815,
+  "match": 1.0
+ },
+ {
+  "id": "P9.11",
+  "part": "P9",
+  "text": "You can't shake it.",
+  "words": 4,
+  "scene": "13",
+  "clock": 815,
+  "match": 1.0
+ },
+ {
+  "id": "P9.12",
+  "part": "P9",
+  "text": "People have tried.",
+  "words": 3,
+  "scene": "13",
+  "clock": 820,
+  "match": 1.0
+ },
+ {
+  "id": "P9.13",
+  "part": "P9",
+  "text": "You can't starve it either.",
+  "words": 5,
+  "scene": "13",
+  "clock": 823,
+  "match": 1.0
+ },
+ {
+  "id": "P9.14",
+  "part": "P9",
+  "text": "That has been tried too.",
+  "words": 5,
+  "scene": "13",
+  "clock": 823,
+  "match": 1.0
+ },
+ {
+  "id": "P9.15",
+  "part": "P9",
+  "text": "A household can't create money, or raise a tax.",
+  "words": 9,
+  "scene": "13",
+  "clock": 828,
+  "match": 1.0
+ },
+ {
+  "id": "P9.16",
+  "part": "P9",
+  "text": "A country can.",
+  "words": 3,
+  "scene": "13",
+  "clock": 828,
+  "match": 1.0
+ },
+ {
+  "id": "P9.17",
+  "part": "P9",
+  "text": "So a country can do the third thing.",
+  "words": 8,
+  "scene": "13",
+  "clock": 834,
+  "match": 1.0
+ },
+ {
+  "id": "P9.18",
+  "part": "P9",
+  "text": "You plant it.",
+  "words": 3,
+  "scene": "13",
+  "clock": 834,
+  "match": 1.0
+ },
+ {
+  "id": "P9.19",
+  "part": "P9",
+  "text": "There is a magic money tree.",
+  "words": 6,
+  "scene": "13",
+  "clock": 838,
+  "match": 1.0
+ },
+ {
+  "id": "P9.20",
+  "part": "P9",
+  "text": "Keynes knew how to use it.",
+  "words": 6,
+  "scene": "13",
+  "clock": 840,
+  "match": 1.0
+ },
+ {
+  "id": "P9.21",
+  "part": "P9",
+  "text": "You plant it in work.",
+  "words": 5,
+  "scene": "13",
+  "clock": 843,
+  "match": 1.0
+ },
+ {
+  "id": "P9.22",
+  "part": "P9",
+  "text": "Britain did, owing more than it ever had.",
+  "words": 8,
+  "scene": "13",
+  "clock": 848,
+  "match": 1.0
+ },
+ {
+  "id": "P9.23",
+  "part": "P9",
+  "text": "Then it outgrew the debt.",
+  "words": 5,
+  "scene": "13",
+  "clock": 848,
+  "match": 1.0
+ },
+ {
+  "id": "P9.24",
+  "part": "P9",
+  "text": "\"Anything we can actually do we can afford.\"",
+  "words": 8,
+  "scene": "04",
+  "clock": 232,
+  "match": 1.0
+ },
+ {
+  "id": "P9.25",
+  "part": "P9",
+  "text": "Keynes never saw the NHS open.",
+  "words": 6,
+  "scene": "14",
+  "clock": 865,
+  "match": 1.0
+ },
+ {
+  "id": "P9.26",
+  "part": "P9",
+  "text": "Other people did.",
+  "words": 3,
+  "scene": "14",
+  "clock": 865,
+  "match": 1.0
+ },
+ {
+  "id": "P9.27",
+  "part": "P9",
+  "text": "And every day after that, other people made it work.",
+  "words": 10,
+  "scene": "14",
+  "clock": 870,
+  "match": 1.0
+ },
+ {
+  "id": "P9.28",
+  "part": "P9",
+  "text": "We began with getting people home.",
+  "words": 6,
+  "scene": "14",
+  "clock": 876,
+  "match": 1.0
+ },
+ {
+  "id": "P9.29",
+  "part": "P9",
+  "text": "A country worth coming home to still needs building.",
+  "words": 9,
+  "scene": "14",
+  "clock": 880,
+  "match": 1.0
+ },
+ {
+  "id": "P9.30",
+  "part": "P9",
+  "text": "There should be a life to get back to.",
+  "words": 9,
+  "scene": "14",
+  "clock": 885,
+  "match": 1.0
+ },
+ {
+  "id": "P10.01",
+  "part": "P10",
+  "text": "One more thing.",
+  "words": 3,
+  "scene": "15",
+  "clock": 890,
+  "match": 1.0
+ },
+ {
+  "id": "P10.02",
+  "part": "P10",
+  "text": "The limit was what we can actually do.",
+  "words": 8,
+  "scene": "15",
+  "clock": 893,
+  "match": 1.0
+ },
+ {
+  "id": "P10.03",
+  "part": "P10",
+  "text": "Machines are about to move it.",
+  "words": 6,
+  "scene": "15",
+  "clock": 897,
+  "match": 1.0
+ },
+ {
+  "id": "P10.04",
+  "part": "P10",
+  "text": "Borrowing to build was a good bet in nineteen forty-five.",
+  "words": 10,
+  "scene": "15",
+  "clock": 901,
+  "match": 1.0
+ },
+ {
+  "id": "P10.05",
+  "part": "P10",
+  "text": "It is a better one now.",
+  "words": 6,
+  "scene": "15",
+  "clock": 901,
+  "match": 1.0
+ },
+ {
+  "id": "P10.06",
+  "part": "P10",
+  "text": "Not shaken. Not starved. Planted.",
+  "words": 5,
+  "scene": "15",
+  "clock": 906,
+  "match": 1.0
+ }
+]

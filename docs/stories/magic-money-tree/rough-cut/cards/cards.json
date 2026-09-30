@@ -1,0 +1,68 @@
+{
+  "_note": "Every on-screen card. Rendered by scripts/cards.py into clips/cards/ on D:. `verify` = the words are provisional until rough-cut/facts.md confirms them; nothing marked verify ships. Verb cards follow the storyboard where it differs from the edit plan.",
+  "cards": [
+    {"name": "TITLE", "kind": "title", "text": "THE FUTURE HE NEVER SAW"},
+
+    {"name": "VERB-1923-SHAKE", "kind": "verb", "text": "1923 · SHAKE"},
+    {"name": "VERB-1930S-STARVE", "kind": "verb", "text": "1930s · STARVE"},
+    {"name": "VERB-1942-RULE-PLANT", "kind": "verb", "text": "1942 · THE RULE · PLANT"},
+    {"name": "VERB-1940-PLANT", "kind": "verb", "text": "1940 · PLANT"},
+    {"name": "VERB-1948-PLANT", "kind": "verb", "text": "1948 · PLANT"},
+    {"name": "VERB-1946-1973-PLANT", "kind": "verb", "text": "1946–1973 · PLANT"},
+    {"name": "VERB-2009-SHAKE", "kind": "verb", "text": "2009 · SHAKE"},
+    {"name": "VERB-2011-STARVE", "kind": "verb", "text": "2011 · STARVE"},
+    {"name": "VERB-2020-PLANT", "kind": "verb", "text": "2020 · PLANT"},
+    {"name": "VERB-2020-SHAKE", "kind": "verb", "text": "2020 · SHAKE"},
+
+    {"name": "WORD-PLANT", "kind": "word", "text": "PLANT"},
+    {"name": "WORD-SHAKEN", "kind": "word", "text": "SHAKEN"},
+    {"name": "WORD-STARVED", "kind": "word", "text": "STARVED"},
+    {"name": "WORD-PLANTED", "kind": "word", "text": "PLANTED"},
+
+    {"name": "DATE-1923-GERMANY", "kind": "verb", "text": "1923 · GERMANY"},
+    {"name": "DATE-21-APRIL-1946", "kind": "date", "text": "21 APRIL 1946"},
+    {"name": "DATE-5-JULY-1948", "kind": "date", "text": "5 JULY 1948"},
+    {"name": "DATE-ADMINISTRATION", "kind": "verb", "text": "30 SEPT 2025 · ADMINISTRATION", "verify": true},
+    {"name": "DATE-JUDGMENT", "kind": "verb", "text": "1 OCT 2025 · JUDGMENT", "verify": true},
+    {"name": "COLUMN-11A", "kind": "column", "lines": ["MAY 2020 · CONTRACT", "MAY 2021 · YACHT", "OCT 2025 · JUDGMENT"], "verify": true},
+
+    {"name": "DATA-DEBT-1", "kind": "data", "text": "1945 · DEBT ABOUT 2½ × A YEAR'S INCOME", "sub": "NATIONAL DEBT AGAINST GDP", "verify": true},
+    {"name": "DATA-UNEMPLOYMENT", "kind": "data", "text": "1950–1969 · UNEMPLOYMENT UNDER 2 IN 100", "verify": true},
+    {"name": "DATA-PAY", "kind": "data", "text": "2010–2017 · PAY FROZEN, THEN 1%", "sub": "PUBLIC-SECTOR PAY", "verify": true},
+    {"name": "DATA-2020-BORROWED-CREATED", "kind": "data", "text": "2020 · BORROWED + CREATED", "verify": true},
+
+    {"name": "QUOTE-KEYNES-1", "kind": "quote", "text": "…a demand in excess of the physical possibilities of supply, which is the proper meaning of inflation.", "by": "JOHN MAYNARD KEYNES · 1942", "verify": true},
+    {"name": "QUOTE-KEYNES-2", "kind": "quote", "text": "Anything we can actually do we can afford.", "by": "JOHN MAYNARD KEYNES · 1942", "size": 84, "lit": "actually", "verify": true},
+    {"name": "QUOTE-KEYNES-3", "kind": "quote", "text": "I have never heard statistics so funny.", "by": "JOHN MAYNARD KEYNES · HOUSE OF LORDS · 1945", "verify": true},
+    {"name": "QUOTE-WHITE-PAPER", "kind": "quote", "text": "The Government accept as one of their primary aims and responsibilities the maintenance of a high and stable level of employment after the war.", "by": "EMPLOYMENT POLICY · WHITE PAPER · 1944", "verify": true},
+    {"name": "QUOTE-BOE-1", "kind": "quote", "text": "PENDING facts.md", "by": "BANK OF ENGLAND · 2014", "verify": true},
+    {"name": "QUOTE-QT-TEASE", "kind": "quote", "text": "…there isn't a magic money tree that we can shake…", "by": "THERESA MAY · 2017", "verify": true},
+    {"name": "QUOTE-QT-1", "kind": "quote", "text": "PENDING facts.md", "by": "THERESA MAY · BBC QUESTION TIME · 2 JUNE 2017", "verify": true},
+    {"name": "QUOTE-QT-2", "kind": "quote", "text": "…there isn't a magic money tree that we can shake that suddenly provides for everything that people want.", "by": "THERESA MAY · BBC QUESTION TIME · 2 JUNE 2017", "verify": true},
+    {"name": "QUOTE-MONE-2020", "kind": "quote", "text": "PENDING facts.md", "by": "PENDING", "verify": true},
+    {"name": "QUOTE-FAIRY-WAND", "kind": "quote", "text": "…no fairy wand was waved on July 5th…", "by": "MINISTRY OF HEALTH · SEPTEMBER 1948", "verify": true},
+
+    {"name": "PAYSLIP", "kind": "payslip", "years": ["2009", "2017"], "rows": [["BASIC PAY", "SAME"], ["BAND", "SAME"], ["HOURS", "SAME"]]},
+
+    {"name": "LABEL-ILLUSTRATION", "kind": "label", "text": "ILLUSTRATION"},
+    {"name": "LABEL-AMERICAN-FOOTAGE-1937", "kind": "label", "text": "AMERICAN FOOTAGE · 1937"},
+    {"name": "LABEL-AMERICAN-FILM-1944", "kind": "label", "text": "AMERICAN FILM · 1944"},
+    {"name": "LABEL-AMERICAN-PHOTOGRAPH", "kind": "label", "text": "AMERICAN PHOTOGRAPH"},
+    {"name": "LABEL-LONDON-1931", "kind": "label", "text": "LONDON · 1931"},
+    {"name": "LABEL-NEW-YORK-2008", "kind": "label", "text": "NEW YORK · 2008"},
+    {"name": "LABEL-1949-COMEDY", "kind": "label", "text": "FROM A 1949 COMEDY"},
+    {"name": "LOWER-KEYNES", "kind": "lower", "text": "JOHN MAYNARD KEYNES", "sub": "1883–1946"},
+
+    {"name": "PH-03-A", "kind": "placeholder", "text": "An unemployed builder, idle, in a builder's yard, 1930s.", "name_": "03-A"},
+    {"name": "PH-03-B", "kind": "placeholder", "text": "A family at the window of one crowded rented room."},
+    {"name": "PH-03-C", "kind": "placeholder", "text": "Bricks stacked in the yard, unused."},
+    {"name": "PH-03-D", "kind": "placeholder", "text": "The same builder at work on the plot: walls rising."},
+    {"name": "PH-03-E", "kind": "placeholder", "text": "An empty plot of land between houses."},
+    {"name": "PH-11A-Y", "kind": "placeholder", "text": "A large sailing yacht, plainly drawn, not the real vessel."},
+    {"name": "PH-15-A", "kind": "placeholder", "text": "A single seed in dark soil, one thin light (BadCode register)."},
+    {"name": "PH-15-B", "kind": "placeholder", "text": "Machine arms building, calm, not menacing (BadCode register)."},
+    {"name": "PH-15-C", "kind": "placeholder", "text": "A sapling where the seed was (BadCode register)."},
+    {"name": "PH-CHART-10B", "kind": "placeholder", "text": "Chart: UK debt in pounds rising, the economy rising faster, debt as a share falling, 1946–1973."},
+    {"name": "PH-DIAGRAM-10A", "kind": "placeholder", "text": "Diagram: the Bank creates new money and buys a government bond from a pension fund."}
+  ]
+}
