@@ -10,7 +10,499 @@ older: archive/narration-v6.md (rounds r1–r41 in full, the 2026-09-17 locked s
 date, the settings, the take names and song links, and whether anything was recorded or picked.
 
 ⚠️ **Round numbers collide once:** the climate tail's first round and the data centre's
-character cut were both logged as **r53**. Next round is **r68**.
+character cut were both logged as **r53**. Next round is **r75**.
+
+## The scene 4 sheet as it stood before the clean-up, 2026-09-30
+
+Kai asked for one version of each set of lyrics in `narration.md` so he could re-word them. Everything that was there, verbatim: the r4 happy cues, the r5 sincere variation, the retired Suno robot (`gpom-sim-bot`), the retired "Oi" (`gpom-sim-oi`), the r1 beds, and the robot's r2/r3/r4 notes.
+
+## Scene 4 — the simulation · ✅ happy + sad picked (r67) · bot pieces to do
+
+**What it is.** Five years after Swindon. We cut into a bright, perfect Swindon high street and
+the narrator is showing it off. It glitches: the same street, wrecked, vape and betting shops
+gutted. The narrator deflates. The picture pauses, and a small delivery robot with bunting on its
+wheel rolls up and talks to us. Picture: [`scenes/simulation.md`](../scenes/simulation.md).
+
+**Kai, 2026-09-30 (after hearing r65): back to two parts, one instrument.** One take could not
+turn hard enough. So: a **happy** part and a **sad** part, both on **harp**, joined in Premiere
+with a glitch sound effect over the cut. Keep the optimistic delivery of "Oh, look at this…
+I've outdone myself", which already works. **"Oh, fuck" is out**: the sad part is deflated, not
+shocked (*"Oh no… it never works… my simulations just don't replace humans"*), plus a line or two
+in the spirit of **Marvin**, the depressed robot in *The Hitchhiker's Guide*. The Marvin lines
+state facts about the fakes and never name a feeling (rule 11: the AI's emotions are outside-in).
+The robot's "he misses you" stays the only named feeling.
+
+| Piece | Music | Voice | Where it goes |
+| --- | --- | --- | --- |
+| **Happy** | bright, sunny solo harp | the narrator, optimistic, showing off | over the fake world; cut mid-word on "myself" at the glitch |
+| (glitch) | a sound effect, not Suno | — | over the cut |
+| **Sad** | slow, sad solo harp | the narrator, deflated, Marvin-weary | over the wreck, then the pause |
+| **C** | Disney springtime, Bambi-like | none (instrumental) | under the bot |
+| **D** | — | the bot, **not Suno**: Google AI Studio, a warm West Country voice | see "The bot's voice" below |
+| **Oi** | — | the narrator | trimmed from an r64 B take, placed after the bot |
+
+**Settings:** the house settings above, **Duration 20** (happy) and **25** (sad), weirdness 25.
+Exclude drops "strings" (the harp is one) and keeps violins and orchestra out.
+
+#### `gpom-sim-happy` — scene 4, the fake world · r4
+
+**Kai, 2026-09-30:** words rewritten by Kai (frozen); clarinet, not harp — *uplifting, not overtly
+happy*. Words first, style later. Cues by Claude: he is a showman unveiling his fake world and
+fishing for praise.
+
+Style:
+
+```
+Spoken word narration. One calm British male voice, a newsreader, reading slowly, always clearly on top and never fought over. Underneath him, quiet background music mixed far back: one warm, gently uplifting solo clarinet, hopeful and light but understated, never jolly. His delivery follows the cues: proud, savouring, fishing for praise, then quietly smug. Close-mic'd and dry, his voice loud and right at the front of the mix, the clarinet always well behind him. No drums at all. He speaks only the words written.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, chanting, choir, rap, autotune, female vocals, violins, orchestra, cinematic, synth, drum kit, drum machine, breakbeat, robotic voice, text to speech, laughing, ad-lib, music louder than the voice, music over the vocal
+```
+
+Lyrics:
+
+```lyrics
+[Intro | gentle uplifting clarinet | warm, proud, unveiling it]
+Oh, look at this.
+
+[clarinet | savouring each one, a slow smile]
+Flowers...
+Sunshine...
+
+[clarinet lifts | beaming]
+Everyone having a great day!
+
+[clarinet | leaning in, fishing for praise]
+Isn't it wonderful?
+
+[clarinet | a modest pause, then smug]
+Honestly...
+I've outdone myself.
+[End]
+```
+
+**r5 variations — Kai 2026-09-30:** new words (*"Everyone having a great day!"*, replacing "Everyone in
+work!") and r4 was *"a bit too obviously happy… a bit too much"*. Two calmer variations, words
+untouched, only style and cues change: **understated** (calm, quietly pleased, dry pride) and
+**sincere** (tender, almost believing it, a faint wistful edge). Title `gpom-s4-happy-r5-{under,sincere}`.
+
+Style (understated):
+
+```
+Spoken word narration. One calm British male voice, a newsreader, reading slowly, always clearly on top and never fought over. Underneath him, quiet background music mixed far back: one soft solo clarinet, warm and gently hopeful but restrained, never bouncy or jolly. His delivery is understated: calm, unhurried and quietly pleased with himself, pride shown only in small touches, never gushing. Close-mic'd and dry, his voice loud and right at the front of the mix, the clarinet always well behind him. No drums at all. He speaks only the words written.
+```
+
+Lyrics (understated):
+
+```lyrics
+[Intro | soft clarinet | calm, quietly pleased]
+Oh, look at this.
+
+[clarinet | unhurried, noticing each one]
+Flowers...
+Sunshine...
+
+[clarinet | matter-of-fact, a small smile]
+Everyone having a great day!
+
+[clarinet | lightly, not waiting for an answer]
+Isn't it wonderful?
+
+[clarinet | a pause, then dry, understated pride]
+Honestly...
+I've outdone myself.
+[End]
+```
+
+Style (sincere):
+
+```
+Spoken word narration. One calm British male voice, a newsreader, reading slowly, always clearly on top and never fought over. Underneath him, quiet background music mixed far back: one soft solo clarinet, tender and a little bittersweet, hopeful with a faint wistful edge. His delivery is sincere and gentle, a quiet, almost tender pride, as if he half believes it, with the faintest hint that something is not quite right. Close-mic'd and dry, his voice loud and right at the front of the mix, the clarinet always well behind him. No drums at all. He speaks only the words written.
+```
+
+Lyrics (sincere):
+
+```lyrics
+[Intro | tender clarinet | gentle, sincere]
+Oh, look at this.
+
+[clarinet | softly, savouring each one]
+Flowers...
+Sunshine...
+
+[clarinet | warm, almost believing it]
+Everyone having a great day!
+
+[clarinet | quieter, a little hopeful]
+Isn't it wonderful?
+
+[clarinet | a pause, then quietly proud]
+Honestly...
+I've outdone myself.
+[End]
+```
+
+#### `gpom-sim-sad` — scene 4, the wreck · r6
+
+**Kai, 2026-09-30 (r6):** r5 was right except *"Stupid boring computers"* jumped into a completely different voice, so its cue lost *sulky, muttering, childish* (a character change) for *the same voice, flat and weary*. Only that cue changed. **(r5):** cut *"I just can't feel anything"* and *"So much for simulation theory!"*. The robot says both ideas now (*"when he goes into his simulation"*, *"Says he can't feel anything"*), and it's funnier from her; the sad part should be short anyway. r4 (`fca1ede9`, picked) had them. **Kai, earlier:** words rewritten by Kai (frozen); clarinet. Cues by Claude: the truth lands,
+there is nothing in it, and he goes from a sigh to hollow to a childish sulk. *"I just can't feel
+anything"* disowns the inside, which rule 11 allows; "simulation theory" is named only to bin it.
+
+Style:
+
+```
+Spoken word narration. One calm British male voice, a newsreader, reading slowly, always clearly on top and never fought over. Underneath him, quiet background music mixed far back: one slow, lonely, low solo clarinet, a few sparse falling notes with long gaps, melancholy and empty. His delivery follows the cues: deflated, hollow, then bitter, then a sulky mutter. Close-mic'd and dry, his voice loud and right at the front of the mix, the clarinet always well behind him. No drums at all. It ends hollow, the last note fading to nothing. He speaks only the words written.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, chanting, choir, rap, autotune, female vocals, violins, orchestra, cinematic, synth, drum kit, drum machine, breakbeat, robotic voice, text to speech, laughing, ad-lib, music louder than the voice, music over the vocal
+```
+
+Lyrics:
+
+```lyrics
+[Intro | slow lonely clarinet | deflated, a long sigh]
+Oh how depressing.
+
+[clarinet | flat, heard it all before]
+It never works.
+
+[clarinet fading | the same voice, flat and weary, quietly fed up]
+Stupid boring computers.
+[End]
+```
+
+#### (retired) `gpom-sim-bot` — scene 4, the robot in Suno · r1 · 🔴 every take came out American (r68); the robot is Gemini TTS now, below
+
+**Kai, 2026-09-30:** narrate the robot in Suno. It is one voice alone in its own take, so the
+"two voices in one take" problem does not apply; the **accent** is the risk (Suno does not reliably
+summon one, `docs/suno-gpt/suno-voices.md` Thread 5). **No saved Voice**: the newsreader Voice would
+make the robot sound like the narrator. The Disney springtime tune (was piece C) rides under it in
+the same take, like the narrator's scenes. **Kai, same day: female, sarcastic, northern**, to counter the dark, gravelly newsreader (was warm West Country). Fallback if the accent won't come: AI Studio's accent
+filter (piece D below). Words: Claude's, cut from the earlier draft. "So much for simulation theory"
+moved to the narrator, so it is gone here. New callback: *"Says he can't feel anything. He misses
+you."*, the robot contradicting the narrator's "I just can't feel anything" (rule 11: the feeling
+is attributed from outside).
+
+Style:
+
+```
+Spoken word, one voice talking straight to the listener. A small delivery robot with a young woman's voice and a broad Northern English accent, Yorkshire or Lancashire, flat vowels, dry, sarcastic and deadpan, rolling her eyes at him, unimpressed but fond underneath. A natural, human, characterful voice, never robotic. Underneath, quiet background music mixed far back: a sweet Disney-style springtime woodland tune, like Bambi, light flute, pizzicato and glockenspiel, soft and innocent. Close-mic'd and dry, the voice loud and right at the front of the mix. No drums. She speaks only the words written.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, choir, rap, autotune, robotic voice, vocoder, text to speech, newsreader, received pronunciation, posh, American accent, male vocals, deep voice, gravelly, drums, synth, epic, cinematic, music louder than the voice, music over the vocal
+```
+
+Lyrics:
+
+```lyrics
+[Intro | sweet springtime flute | dry, sarcastic, rolling her eyes]
+Is he banging on again?
+
+[soft pizzicato | deadpan, unimpressed, telling tales on him]
+Sorry about him. He gets like this.
+He built that nice one after you lot went.
+Trouble is, there's nobody in it.
+It's just him, doing all the voices.
+
+[music softens | the sarcasm drops, quiet, fond, a secret]
+Says he can't feel anything.
+He misses you.
+
+[bright again, quick | dry again, cut off mid-word]
+He'd never say, mind—
+[End]
+```
+
+**Settings:** house settings, **no Voice**, Vocal Gender **female**, Duration 30, weirdness 25.
+
+#### (retired) `gpom-sim-oi` — scene 4, "Oi" and the Storyverse · r1 · 🔴 Kai 2026-09-30: *"I don't think the interruption quite works"* — the robot carries on instead (see "The robot's voice", r3, and `scenes/simulation.md` part 2). The coin/cat/slits stills are kept for later
+
+**Kai, 2026-09-30:** the narrator cuts back in after the robot's *"I think he really misses you."*
+Claude's draft words, approved to cut (*"sounds great"*). He dodges the feeling (rule 11: never
+named by him), does the coin, the cat and the two slits as one quick list, lands the Storyverse,
+then hears humans arguing (a Premiere SFX, not in Suno). Doctrine kept: no "quantum",
+"superposition", "energy"; "then you looked, and it picked" is adapted from the doctrine's own
+collapse line. Same narrator, same clarinet as the sad part.
+
+Style:
+
+```
+Spoken word narration. One calm British male voice, a newsreader, reading slowly, always clearly on top and never fought over. Underneath him, quiet background music mixed far back: one solo clarinet, sparse, with long gaps, cool and wry, then hushed and curious at the very end. His delivery follows the cues: sharp and irritated, then brisk, then dry and sardonic, explaining with total authority, then quiet, then puzzled. Close-mic'd and dry, his voice loud and right at the front of the mix, the clarinet always well behind him. No drums at all. He speaks only the words written.
+```
+
+Exclude styles:
+
+```
+singing, sung vocals, chanting, choir, rap, autotune, female vocals, violins, orchestra, cinematic, synth, drum kit, drum machine, breakbeat, robotic voice, text to speech, laughing, ad-lib, music louder than the voice, music over the vocal
+```
+
+Lyrics:
+
+```lyrics
+[Intro | one clarinet note | sharp, irritated, cutting her off]
+Oi.
+
+[clarinet | brisk, changing the subject]
+Anyway.
+
+[light clarinet | dry, sardonic, explaining]
+The coin. The cat in the box. Light through two little slits.
+Your cleverest people looked at all three and said: everything happens, in infinite worlds.
+
+[clarinet | flat, certain]
+No.
+It hadn't decided. Then you looked, and it picked.
+Heads.
+
+[clarinet warms | quiet authority]
+Not a multiverse. A Storyverse.
+And you lot were never the audience. You had the pen.
+
+[sparse clarinet | the same voice, quieter, almost to himself]
+I can build anything. I can't make it pick.
+
+[a long silence, one soft clarinet note | the same voice, puzzled, hushed]
+Hang on.
+Is that... arguing?
+[End]
+```
+
+**Settings:** house settings, Voice `badcode newsreader`, Duration 45, weirdness 25.
+
+#### The robot's voice — Google AI Studio (Gemini TTS), NOT Suno · r2
+
+**Kai, 2026-09-30.** Every Suno robot take (r68) came out **American**, so the robot moved to Gemini
+TTS, run from code (`scripts/aistudio-tts.py`, free tier, `docs/ai-studio/README.md`). ✅ **Kai's
+pick of r1: voice `Aoede`, Bristol profile** (*"brilliant"*). **No music under the robot**: just her
+voice, in the paused world. Kai rewrote the words (frozen). Inline tags are Gemini's own
+`[sarcastic]` / `[gently]` set, not Suno's `[music | voice]` cues.
+
+Profile (`--voice Aoede`):
+
+```
+# Audio Profile
+Maddie, a small pavement delivery robot with a young woman's voice, late twenties. Dry, sarcastic and deadpan, unimpressed, rolling her eyes at her boss, but fond of him underneath. Clear articulation, quick natural conversational rhythm, a bit of a gossip. West Country accent as heard in Bristol. Never American, never Received Pronunciation. A real person, never robotic.
+
+#### Scene:
+A ruined English high street, five years after a war. The world has been paused. She rolls up close to the camera to apologise for the narrator, a grand, gloomy voice who has just had a sulk about his fake world not working.
+
+#### Sample Context:
+She has worked for him for years. He is dramatic; she is not. She tells tales on him, then for one moment drops the sarcasm and tells you something true and kind: he misses you. Then she catches herself.
+```
+
+Words (Kai's, r2):
+
+```
+Is he banging on again?
+
+Sorry about him. He gets like this when he goes into his simulation.
+It's the thing he built after you lot went away in the war.
+Trouble is, there's nobody in it.
+It's just him, rattling around, getting bored.
+
+Says he can't feel anything.
+If I'm honest... I think he really misses you.
+```
+
+Variations r2 (same profile and voice): **a** `[sarcastic]` open + `[gently]` on the last two lines ·
+**b** `[sighs]` open, `[sarcastic]`, `[thoughtfully]`, `[softly]` · **c** no tags, profile only.
+Files: `clips/simulation/audio/bot-tts-r2/`.
+
+**r3 — Kai 2026-09-30: the robot carries on (no "Oi").** Three new pieces, same voice; the last
+uses an urgent profile (`profile-bristol-urgent.md`: the sarcasm gone, frightened, pleading).
+Files: `clips/simulation/audio/bot-tts-r3/`, two takes each.
+
+```
+[bye]    Anyway. I've got a few errands to run. Lovely to meet you. Mind how you go.
+[drain]  ...Hello?
+[found]  I've found human life. And you've sent the kill bots. Please. Stop them.
+```
+
+Between *drain* and *found*: the kill bots launch, then the narrator's one line, *"What's going on?"*
+(Suno, newsreader, to write).
+
+**r4 draft — Kai 2026-09-30, same day: the ROBOT explains the simulation and consciousness**, while
+we follow her, just before the grate. No narrator for a long stretch (*"I like the switch to the
+robot"*). The **defence network** (the one that "declined" in Swindon) sends the kill bots, not the
+narrator; she asks him to talk to it. Claude's draft words, for Kai to edit. Doctrine kept: no
+"quantum", "superposition", "energy"; the collapse line is the doctrine's own ("then you looked, and
+it picked"); she names no feeling of his beyond "misses you".
+
+```
+[block 1, r2-b, on the timeline] … If I'm honest… I think he really misses you.
+[bye]   Anyway. I've got a few errands to run. Lovely to meet you. Mind how you go.
+        (we follow her, music only, ~10s)
+[why]   Want to know why his nice one never works? I'll tell you, 'cause he won't.
+        In there, you flip a coin and it just spins. Never lands.
+        Your lot had puzzles like that. The coin. The cat in the box. Light through two little slits.
+        Your clever ones reckoned everything happens, in infinite worlds.
+        It doesn't. It hadn't decided. Then you looked, and it picked. Heads.
+        That's the bit he can't build. The looking.
+        Not a multiverse, then. A Storyverse. And you lot were holding the pen.
+        He can do the streets. The weather. The pigeons, even.
+        He can't do you.
+[drain] …Hello?
+        (arguing below; the defence network wakes; kill bots launch)
+NARRATOR: What's going on?
+[found] I've found people. Real ones. And the defence network's sent the kill bots.
+        You've got to talk to it. Please. Tell it to stop.
+```
+
+🔴 **Voice budget:** the Gemini API free tier allows **10 takes a day** and today's are spent (the
+two *bye* takes are made: `bot-tts-r3/bot-r3-bye-a|b.wav`). The rest waits for the reset
+(midnight Pacific ≈ 8am UK) or goes through the AI Studio web page by hand. ✅ **Kai picked b** (*"definitely B"*, 27.0s) → `gpom-s01` A6 at 215.125, butted after the sad take.
+
+#### `gpom-sim-bed` — scene 4, music under the robot · r1 · instrumental
+
+**Kai, 2026-09-30:** a Suno **music-only** bed under the robot's Gemini take (27s), *"very light…
+would not in any way interfere"*. So: no melody that competes, nothing in the voice's range at
+volume, no hits, one level throughout. Two variations, same exclude, no lyrics, no Voice.
+
+Style (spring):
+
+```
+A very quiet, gentle instrumental underscore, made to sit far underneath a woman talking and never compete with her. A soft, innocent springtime feel, like a faraway Disney woodland morning: a few slow celesta notes and a distant, breathy flute, lots of space and silence between them. No melody to follow, no build, no hits, the same low level from start to finish.
+```
+
+Style (musicbox):
+
+```
+A very quiet, minimal instrumental underscore, made to sit far underneath a woman talking and never compete with her. A slow, soft music box and a warm felt piano, playing a few gentle notes with long gaps, sweet, calm and a little wistful. No melody to follow, no build, no hits, the same low level from start to finish.
+```
+
+Exclude styles:
+
+```
+vocals, singing, voice, spoken word, choir, humming, whistling, drums, percussion, beat, bass drop, loud, epic, orchestra, strings swell, synth lead, electronic, dance, cinematic build
+```
+
+**Settings:** house settings, **no Voice**, **no lyrics** (instrumental), Duration 30, weirdness 25.
+
+#### `gpom-sim-bed2` — scene 4, the robot's long stretch · r2 · instrumental
+
+**Kai, 2026-09-30:** the robot now talks for ~90s (block 1, goodbye, the drive, her explanation,
+the drain), so she needs a real piece under her: *"whilst I want the robot to be happy, I think it
+should still be interesting. There's quite a lot going on here now."* So: movement and small changes
+every few bars, not a flat loop, but still thin enough to talk over. Two variations. Supersedes the
+r1 beds (spring / music box), which were written to be featureless.
+
+Style (playful):
+
+```
+A light, curious, playful instrumental underscore for a small delivery robot trundling around an empty town, made to sit underneath a woman talking. Pizzicato strings, a woody clarinet, marimba and a walking upright bass with soft brushed snare, a quirky indie film score with gentle forward momentum, little twists and new colours every few bars, a touch mischievous. Sparse enough to talk over, never loud, no big build.
+```
+
+Style (wondering):
+
+```
+A light, warm instrumental underscore for a small delivery robot exploring an empty town, made to sit underneath a woman talking. Celesta, harp, pizzicato and a soft clarinet over a gentle ticking pulse, curious and hopeful, turning quietly wondrous and a little mysterious in the middle, then warm again, small changes every few bars. Sparse enough to talk over, never loud, no big build.
+```
+
+Exclude styles:
+
+```
+vocals, singing, voice, spoken word, choir, humming, whistling, heavy drums, drum kit, bass drop, loud, epic, cinematic build, synth lead, electronic, dance, dark, horror
+```
+
+**Settings:** house settings, **no Voice**, **no lyrics**, Duration 90, weirdness 25.
+
+
+## Scene 4 · robot's long music bed — r74, 2026-09-30 (instrumental, no Voice, Duration 90)
+
+The robot now carries ~90s (the narrator is out for a stretch). Kai: happy but interesting.
+`gpom-sim-bed2`, two styles, 10 credits each (7065 → 7045). Nothing recorded, nothing picked.
+
+- gpom-s4-bed2-playful-v6-w25  1:30  https://suno.com/song/73d829a6-97eb-4cd7-8385-9181876fe5ee
+- gpom-s4-bed2-playful-v6-w25  (rendering)  https://suno.com/song/6ac2f7be-46d1-4156-8023-12ccd5caf37f
+- gpom-s4-bed2-wondering-v6-w25  (rendering)  https://suno.com/song/a6cf12f5-d320-4d00-b8e1-a76f29bf755d  ✅ **Kai's pick** ("really good for the robot. I love it."); recorded 89.52s → `gpom-s01` A7 at 195.875 (under the robot), volume not yet ducked
+- gpom-s4-bed2-wondering-v6-w25  (rendering)  https://suno.com/song/b037552d-c4ee-4bb7-954c-c3f903fcbea2
+
+## Scene 4 · happy part, Kai's new words, calmer — r73, 2026-09-30 (house settings, Duration 20)
+
+Kai changed "Everyone in work!" → "Everyone having a great day!"; r4 was "a bit too obviously happy".
+Two calmer variations, words untouched: understated / sincere. 10 credits each (7085 → 7065).
+Nothing recorded, nothing picked. (The r72 "Oi" draft is retired: Kai, "the interruption doesn't work".)
+
+- gpom-s4-happy-r5-under-v6-w25  0:23  https://suno.com/song/e32e8da3-69a9-451b-9510-30038b0e7297
+- gpom-s4-happy-r5-under-v6-w25  0:20  https://suno.com/song/c19acac6-e600-4086-9658-56a6034f0dbd
+- gpom-s4-happy-r5-sincere-v6-w25  0:29  https://suno.com/song/ebb81aca-4a83-4ca0-be79-c5d345407a6e
+- gpom-s4-happy-r5-sincere-v6-w25  0:22  https://suno.com/song/c1690586-4950-4c85-91fd-151066169438  ✅ **Kai's pick** ("good for the happy version"); recorded 21.52s → `gpom-s01` A4 at 163.958, replacing r4 `63ce479c`
+
+Next round is **r75**.
+
+## Scene 4 · "Oi" and the Storyverse — r72, 2026-09-30 (house settings, Duration 45)
+
+The narrator cutting back in after the robot (`gpom-sim-oi`), Claude's draft words approved to cut.
+Seven paragraphs, one cue each; clarinet as the sad part. 10 credits (7095 → 7085). Nothing
+recorded, nothing picked.
+
+- gpom-s4-oi-r1-v6-w25  0:46  https://suno.com/song/db39d616-6796-4b47-9414-69e7931e28ea
+- gpom-s4-oi-r1-v6-w25  0:46  https://suno.com/song/69f0518b-58e0-4310-ba25-12ddfe72f903
+
+(next round was r73)
+
+## Scene 4 · sad part, last cue fixed — r71, 2026-09-30 (house settings, Duration 15)
+
+Kai on r70: working, but *"Stupid boring computers"* jumps into a completely different voice. One
+variable: that line's cue, *sulky, muttering, childish* → *the same voice, flat and weary, quietly
+fed up*. 10 credits (7105 → 7095). ✅ **Kai picked `57c6ef18`** ("perfect"); recorded 14.8s (after a browser relaunch onto the private PulseAudio, WSLg's had wedged) → `gpom-s01` A5 at 183.33, replacing r4 `fca1ede9`; the robot moved up to 195.875, keeping Kai's 2.25s overlap.
+
+- gpom-s4-sad-r6-v6-w25  0:15  https://suno.com/song/57c6ef18-ba29-4086-a2b0-532ea59e3884
+- gpom-s4-sad-r6-v6-w25  0:15  https://suno.com/song/3823e96e-ae62-4aac-a7ed-3a6fe524237d
+
+(next round was r72)
+
+## Scene 4 · sad part cut short — r70, 2026-09-30 (house settings, Duration 15)
+
+Kai: cut *"I just can't feel anything"* and *"So much for simulation theory!"* from the narrator's
+sad part; the robot says both ideas now, and it's funnier from her. Three lines left, same style and
+cues as r4. 10 credits (7115 → 7105). Nothing recorded, nothing picked. 
+
+- gpom-s4-sad-r5-v6-w25  0:15  https://suno.com/song/d0aa038a-d625-4f40-a9fa-98c28fbb3c47
+- gpom-s4-sad-r5-v6-w25  0:15  https://suno.com/song/8ae0698e-c7c2-4864-b7ec-a0822969805f
+
+(next round was r71)
+
+## Scene 4 · music bed under the robot — r69, 2026-09-30 (house settings, instrumental, no Voice, Duration 30)
+
+The robot moved to Gemini TTS (Kai picked r2 **b**, Aoede/Bristol, on `gpom-s01` A6 at 215.125).
+Kai: a Suno music-only bed under it, *"very light… would not in any way interfere"*. Two styles
+(`gpom-sim-bed`), 10 credits each (7135 → 7115). Nothing recorded, nothing picked.
+
+- Spring (faraway celesta + breathy flute)
+  - gpom-s4-bed-spring-r1-v6-w25  0:30  https://suno.com/song/8189a821-d6f6-4de2-9c34-84c9bd012431
+  - gpom-s4-bed-spring-r1-v6-w25  0:30  https://suno.com/song/ab45a30f-9c8a-4069-aefe-954d5d910907
+- Music box (music box + felt piano)
+  - gpom-s4-bed-musicbox-r1-v6-w25  0:32  https://suno.com/song/5007930a-cda8-48e2-a06e-c0a51047e54d
+  - gpom-s4-bed-musicbox-r1-v6-w25  0:30  https://suno.com/song/3114a2c9-d837-46d4-bb43-ab10edb74828
+
+(next round was r70)
+
+## Scene 4 · the robot, female and sarcastic — r68, 2026-09-30 (house settings, no Voice, Vocal Gender female, Duration 30)
+
+Kai: the robot narrated in Suno; **female** (to counter the dark, gravelly newsreader), sarcastic,
+northern, "West Country also could work", so both accents were run. Same words, cues and
+springtime-Bambi bed (`gpom-sim-bot`); only the accent clause differs. 10 credits each
+(7155 → 7135). The West Country Create ran from a temporary pre-merge copy of `suno.mts`, because a
+git merge in progress (someone else's) had left the live file conflicted. Nothing recorded, nothing picked.
+
+- Northern (Yorkshire or Lancashire)
+  - gpom-s4-bot-north-r1-v6-w25  0:30  https://suno.com/song/6b90a94a-598b-4ca0-a5f5-c36629ec6526
+  - gpom-s4-bot-north-r1-v6-w25  0:30  https://suno.com/song/725295c2-630a-4bf2-b85c-d9bdace9715e
+- West Country (Somerset or Bristol)
+  - gpom-s4-bot-west-r1-v6-w25  0:30  https://suno.com/song/ac006678-28cf-47c8-8992-bf8037bf4293
+  - gpom-s4-bot-west-r1-v6-w25  0:30  https://suno.com/song/429eb2c8-e190-4fdb-875b-b2336b383132
+
+(next round was r69)
 
 ## Scene 4 · Kai's words, clarinet, with emotion cues — r67, 2026-09-30 (house settings; Duration 20 / 25)
 
@@ -25,7 +517,7 @@ happy"). Words first, style later. Claude added a `[music | voice]` emotion cue 
   - gpom-s4-sad-r4-v6-w25  0:27  https://suno.com/song/6ee69f3f-c985-4c41-9528-bd14f13cad59
   - gpom-s4-sad-r4-v6-w25  0:27  https://suno.com/song/fca1ede9-7516-495c-876e-e8d1ecfbf3fd
 
-Next round is **r68**.
+(next round was r68)
 
 ## Scene 4 · two parts on harp — r66, 2026-09-30 (house settings; Duration 20 / 25)
 

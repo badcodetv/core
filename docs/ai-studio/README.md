@@ -101,6 +101,12 @@ will not admit it.
 | Suno | Music generator asked to talk | 🔴 Closed — **Suno cannot make silence.** Fourteen rounds bought a voice, not a narration engine |
 | Local clone (Chatterbox / Qwen3-TTS) | Clone the approved Suno take on the 4070 | 🟡 Still viable, still needs a clean reference clip, still rejected by ear once |
 
+## 💳 UPDATE 2026-09-30 — we now use a PAID key (Kai's call)
+
+- Kai: *"it's excellent"* — so `GEMINI_API_KEY` in `.env` is now a key from the **WebKit Servers** Google Cloud project (billing attached; AI Studio → Create API key → *Import project*). The old free key is kept as `GEMINI_API_KEY_FREE`.
+- The 10-a-day free cap no longer applies. The "never set up billing" rows below describe the free-tier era.
+- 🔴 **Long takes truncate.** GPOM robot, 192 words: 1 of 6 single takes complete (81.8s), the rest 21–46s. Pieces of ~55–100 words did better. The likely cause is already documented below: `scripts/aistudio-tts.py` streams (`generate_content_stream`), which Google has confirmed truncates past ~60–70s. **Switching to non-streaming `generate_content` is owed.**
+
 ## Access and money — nobody is being charged
 
 | Question | Answer |
@@ -153,7 +159,7 @@ in three months.**
 
 **URL:** `aistudio.google.com/generate-speech` · **Model:** `gemini-3.1-flash-tts-preview`
 
-💻 **There is an API route, and it is in the repo:** [`scripts/aistudio-tts.py`](../../scripts/aistudio-tts.py) — AI Studio's own **Get code** export, cleaned up. ✅ **The export proves the config**: `temperature 1`, `response_modalities: ["audio"]`, `PrebuiltVoiceConfig(voice_name=…)`, and audio returns as **`audio/L16;rate=24000`, mono**. 🔴 **The export has four faults** — one file per streamed chunk, the Transcript field holding the profile, mono output (the Premiere trap), and a literal `ENTER_FILE_NAME_0`. All four are fixed in the script; ⬜ its API path is **unrun**.
+💻 **There is an API route, and it is in the repo:** [`scripts/aistudio-tts.py`](../../scripts/aistudio-tts.py) — AI Studio's own **Get code** export, cleaned up. ✅ **The export proves the config**: `temperature 1`, `response_modalities: ["audio"]`, `PrebuiltVoiceConfig(voice_name=…)`, and audio returns as **`audio/L16;rate=24000`, mono**. 🔴 **The export has four faults** — one file per streamed chunk, the Transcript field holding the profile, mono output (the Premiere trap), and a literal `ENTER_FILE_NAME_0`. All four are fixed in the script. ✅ **API path PROVEN 2026-09-30** (GPOM scene 4 robot, 5 takes): run it as `set -a; . ./.env; set +a; uv run -q --with google-genai python3 scripts/aistudio-tts.py <transcript> <out.wav> --profile <p.md> --voice <Name>`. 🔴 **Free-tier limits: 3 requests per minute AND 10 requests per DAY per model** (both 429 `RESOURCE_EXHAUSTED`; the daily one names `GenerateRequestsPerDayPerProjectPerModel-FreeTier`, quota 10 — hit 2026-09-30 after 12 calls incl. failures). Budget a day's takes; failed and truncated calls count. Past the cap: the AI Studio web UI by hand (Ultra raises the **web** quota, not the API's), or wait for the reset (midnight Pacific). ⚠️ One take in five came back truncated (6s of a ~17s script): check every take's length and re-run a short one.
 (Run settings → the model card). Left sidebar → Playground.
 
 ⚠️ **Blog write-ups describe a different, older screen.** Trust this map, or a screenshot, over

@@ -645,7 +645,7 @@ The same applies to the Gemini listen (`listen_describe`) — explicit request o
 `63ce479c` (22.4s) then `fca1ede9` (a 27s take) straight after gave the second file 22.4s, still
 loud at the cut: the player reported the first take's stale `duration`. A solo re-record came out
 26.76s. Until `record` waits for the duration to change, **check every recording's length against
-the take's listed length**, and re-record a mismatch on its own.
+the take's listed length**, and re-record a mismatch on its own. 🔴 **2026-09-30 again, and worse:** it also hits the FIRST record of a batch (it inherits whatever the player last loaded: `c1690586` came out 14.8s = the previous sad take, `a6cf12f5` 21.52s). A second record of the same take came out right both times. Loop: record → compare with `takes --links` → re-record until within ~1.5s.
 
 Why this exists: the listening loop (`design/2026-09-11-understand-song-loop.md`) records a take by
 playing it in the create page and capturing Chrome's sound from the channel's own virtual speaker
