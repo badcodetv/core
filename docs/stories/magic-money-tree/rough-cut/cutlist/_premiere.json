@@ -1,5 +1,5814 @@
 [
  {
+  "id": "01:01-01",
+  "track": 0,
+  "kind": "black",
+  "file": null,
+  "start": 0.0,
+  "end": 1.0,
+  "dur": 1.0,
+  "in": 0.0,
+  "motion": null,
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "01:01-02",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 1.0,
+  "end": 6.0,
+  "dur": 5.0,
+  "in": 218.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": [
+   [
+    0,
+    0
+   ],
+   [
+    0.48,
+    100
+   ],
+   [
+    4.52,
+    100
+   ],
+   [
+    5.0,
+    0
+   ]
+  ],
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "animation, so not an actuality question; confirm the general at the map bottom left (Gamelin/Weygand?) reads fine unlabelled",
+  "credit": null
+ },
+ {
+  "id": "01:01-03",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 6.0,
+  "end": 8.5,
+  "dur": 2.5,
+  "in": 279.9,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "Capra compilation (1943) mixes actuality with staged inserts: confirm this shot is Dunkirk actuality before it ships",
+  "credit": null
+ },
+ {
+  "id": "01:01-04",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 8.5,
+  "end": 10.6,
+  "dur": 2.1,
+  "in": 284.03,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "Capra compilation (1943) mixes actuality with staged inserts: confirm this shot is Dunkirk actuality before it ships",
+  "credit": null
+ },
+ {
+  "id": "01:01-05",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 10.6,
+  "end": 12.0,
+  "dur": 1.4,
+  "in": 300.58,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "Capra compilation (1943) mixes actuality with staged inserts: confirm this shot is Dunkirk actuality before it ships",
+  "credit": null
+ },
+ {
+  "id": "01:01-06",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 12.0,
+  "end": 13.1,
+  "dur": 1.1,
+  "in": 246.61,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "Capra compilation (1943) mixes actuality with staged inserts: confirm this shot is Dunkirk actuality before it ships",
+  "credit": null
+ },
+ {
+  "id": "01:01-07",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 13.1,
+  "end": 15.0,
+  "dur": 1.9,
+  "in": 252.34,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "Capra compilation (1943) mixes actuality with staged inserts: confirm this shot is Dunkirk actuality before it ships; also these wear naval caps, so they are not literally merchant crew",
+  "credit": null
+ },
+ {
+  "id": "01:01-08",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 15.0,
+  "end": 17.0,
+  "dur": 2.0,
+  "in": 293.8,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "Capra compilation (1943) mixes actuality with staged inserts: confirm this shot is Dunkirk actuality before it ships",
+  "credit": null
+ },
+ {
+  "id": "01:01-09",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 17.0,
+  "end": 18.0,
+  "dur": 1.0,
+  "in": 299.08,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "Capra compilation (1943) mixes actuality with staged inserts: confirm this shot is Dunkirk actuality before it ships",
+  "credit": null
+ },
+ {
+  "id": "01:01-10",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 18.0,
+  "end": 21.0,
+  "dur": 3.0,
+  "in": 302.3,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "Capra compilation (1943) mixes actuality with staged inserts: confirm this shot is Dunkirk actuality before it ships",
+  "credit": null
+ },
+ {
+  "id": "01:01-11",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 21.0,
+  "end": 22.0,
+  "dur": 1.0,
+  "in": 307.72,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "Capra compilation (1943) mixes actuality with staged inserts: confirm this shot is Dunkirk actuality before it ships",
+  "credit": null
+ },
+ {
+  "id": "01:01-12",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 22.0,
+  "end": 23.0,
+  "dur": 1.0,
+  "in": 309.09,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "Capra compilation (1943) mixes actuality with staged inserts: confirm this shot is Dunkirk actuality before it ships",
+  "credit": null
+ },
+ {
+  "id": "01:01-13",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 23.0,
+  "end": 25.0,
+  "dur": 2.0,
+  "in": 286.49,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "Capra compilation (1943) mixes actuality with staged inserts: confirm this shot is Dunkirk actuality before it ships",
+  "credit": null
+ },
+ {
+  "id": "01:01-14",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 25.0,
+  "end": 26.0,
+  "dur": 1.0,
+  "in": 311.81,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "Capra compilation (1943) mixes actuality with staged inserts: confirm this shot is Dunkirk actuality before it ships",
+  "credit": null
+ },
+ {
+  "id": "01:01-15",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 26.0,
+  "end": 28.6,
+  "dur": 2.6,
+  "in": 313.23,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "Capra compilation (1943) mixes actuality with staged inserts: confirm this shot is Dunkirk actuality before it ships",
+  "credit": null
+ },
+ {
+  "id": "01:01-16",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 28.6,
+  "end": 30.66,
+  "dur": 2.06,
+  "in": 317.49,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "Capra compilation (1943) mixes actuality with staged inserts: confirm this shot is Dunkirk actuality before it ships",
+  "credit": null
+ },
+ {
+  "id": "01:01-17",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 30.66,
+  "end": 33.86,
+  "dur": 3.2,
+  "in": 241.1,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "Capra compilation (1943) mixes actuality with staged inserts: confirm this shot is Dunkirk actuality before it ships",
+  "credit": null
+ },
+ {
+  "id": "01:01-18",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 33.86,
+  "end": 35.0,
+  "dur": 1.14,
+  "in": 244.61,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": true,
+  "grade_bw": true,
+  "check": "Capra compilation (1943) mixes actuality with staged inserts: confirm this shot is Dunkirk actuality before it ships",
+  "credit": null
+ },
+ {
+  "id": "02:02-01",
+  "track": 0,
+  "kind": "still",
+  "file": "s02-home-to-what/HU36188-balham-bus-crater.jpg",
+  "start": 35.0,
+  "end": 40.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     26.53
+    ],
+    [
+     5.0,
+     33.16
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ],
+    [
+     5.0,
+     [
+      0.4732,
+      0.5625
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "02:02-02",
+  "track": 0,
+  "kind": "still",
+  "file": "s02-home-to-what/HU36157-bomb-damage-london.jpg",
+  "start": 40.0,
+  "end": 44.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     70.48
+    ],
+    [
+     4.0,
+     70.48
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "02:02-03",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/DATA-DEBT-1.png",
+  "start": 44.0,
+  "end": 50.0,
+  "dur": 6.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "02:02-04",
+  "track": 0,
+  "kind": "film",
+  "file": "s09-nhs-opens/your_very_good_health_TNA.picture-only.mov",
+  "start": 50.0,
+  "end": 55.0,
+  "dur": 5.0,
+  "in": 289.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "02:02-05",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/QUOTE-QT-TEASE.png",
+  "start": 55.0,
+  "end": 63.0,
+  "dur": 8.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "QT-TEASE wording is marked verify (as QT-2): sources differ after 'shake'; check the BBC clip",
+  "credit": null
+ },
+ {
+  "id": "02:02-06",
+  "track": 0,
+  "kind": "film",
+  "file": "s09-nhs-opens/your_very_good_health_TNA.picture-only.mov",
+  "start": 63.0,
+  "end": 65.0,
+  "dur": 2.0,
+  "in": 298.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "02:02-07",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/QUOTE-QT-TEASE.png",
+  "start": 65.0,
+  "end": 67.0,
+  "dur": 2.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "02:02-08",
+  "track": 0,
+  "kind": "still",
+  "file": "s08-keynes-dies/Keynes_Martin-monks-house.jpg",
+  "start": 67.0,
+  "end": 78.0,
+  "dur": 11.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     73.47
+    ],
+    [
+     11.0,
+     77.88
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ],
+    [
+     11.0,
+     [
+      0.5219,
+      0.5848
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "credit wording for the Keynes photograph is not fixed in footage.md (source 'Harvard University library', PD-UK-unknown): settle it for the end credits",
+  "credit": "Harvard University Library (anonymous, public domain)"
+ },
+ {
+  "id": "02:02-09",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LOWER-KEYNES.png",
+  "start": 74.0,
+  "end": 78.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "02:02-10",
+  "track": 0,
+  "kind": "film",
+  "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+  "start": 78.0,
+  "end": 84.0,
+  "dur": 6.0,
+  "in": 108.2,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "no credit string recorded for A Diary for Timothy (Crown Film Unit 1945, tom@punchcard.tv upload): owed for the end credits",
+  "credit": null
+ },
+ {
+  "id": "02:02-11",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/TITLE.png",
+  "start": 84.0,
+  "end": 90.0,
+  "dur": 6.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": [
+   [
+    5.52,
+    100
+   ],
+   [
+    6.0,
+    0
+   ]
+  ],
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "02a:02a-01",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/DATE-1923-GERMANY.png",
+  "start": 90.0,
+  "end": 93.0,
+  "dur": 3.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "02a:02a-02",
+  "track": 0,
+  "kind": "still",
+  "file": "s02a-germany-1923/In a Berlin Bank LCCN2014716642.jpg",
+  "start": 93.0,
+  "end": 99.0,
+  "dur": 6.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     29.61
+    ],
+    [
+     6.0,
+     39.98
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ],
+    [
+     6.0,
+     [
+      0.3941,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Library of Congress, Bain Collection"
+ },
+ {
+  "id": "02a:02a-03",
+  "track": 0,
+  "kind": "still",
+  "file": "s02a-germany-1923/GER-110-Reichsbanknote-500 Million Mark (1923).jpg",
+  "start": 99.0,
+  "end": 104.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     46.43
+    ],
+    [
+     5.0,
+     46.43
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.6268,
+      0.5
+     ]
+    ],
+    [
+     5.0,
+     [
+      0.3732,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "National Numismatic Collection, National Museum of American History"
+ },
+ {
+  "id": "02a:02a-04",
+  "track": 0,
+  "kind": "still",
+  "file": "s02a-germany-1923/French enter Essen LCCN2014715614.tif",
+  "start": 104.0,
+  "end": 107.5,
+  "dur": 3.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     29.36
+    ],
+    [
+     3.5,
+     32.89
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Library of Congress, Bain Collection"
+ },
+ {
+  "id": "02a:02a-05",
+  "track": 0,
+  "kind": "still",
+  "file": "s02a-germany-1923/13-1-23 Essen patrouille de dragons.jpg",
+  "start": 107.5,
+  "end": 111.0,
+  "dur": 3.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     17.81
+    ],
+    [
+     3.5,
+     24.94
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ],
+    [
+     3.5,
+     [
+      0.6319,
+      0.43
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Agence Rol / BnF Gallica"
+ },
+ {
+  "id": "02a:02a-06",
+  "track": 0,
+  "kind": "still",
+  "file": "s02a-germany-1923/French at Essen LCCN2014715612.jpg",
+  "start": 111.0,
+  "end": 112.8,
+  "dur": 1.8,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     29.56
+    ],
+    [
+     1.8,
+     36.96
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ],
+    [
+     1.8,
+     [
+      0.4517,
+      0.75
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Library of Congress, Bain Collection"
+ },
+ {
+  "id": "02a:02a-07",
+  "track": 0,
+  "kind": "still",
+  "file": "s02a-germany-1923/GER-116-Reichsbanknote-10 Billion Mark (1923).jpg",
+  "start": 112.8,
+  "end": 114.6,
+  "dur": 1.8,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     40.51
+    ],
+    [
+     1.8,
+     50.64
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ],
+    [
+     1.8,
+     [
+      0.575,
+      0.7388
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "National Numismatic Collection, National Museum of American History"
+ },
+ {
+  "id": "02a:02a-08",
+  "track": 0,
+  "kind": "still",
+  "file": "s02a-germany-1923/Reichsbanknote Zwanzig Milliarden Mark (20 milliards), 2016.12.1.4.jpg",
+  "start": 114.6,
+  "end": 115.8,
+  "dur": 1.2,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     39.04
+    ],
+    [
+     1.2,
+     48.8
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.56
+     ]
+    ],
+    [
+     1.2,
+     [
+      0.5,
+      0.65
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "02a:02a-09",
+  "track": 0,
+  "kind": "still",
+  "file": "s02a-germany-1923/GER-127a-Reichsbanknote-500 Billion Mark (1923).jpg",
+  "start": 115.8,
+  "end": 117.0,
+  "dur": 1.2,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     48.62
+    ],
+    [
+     1.2,
+     60.77
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5527
+     ]
+    ],
+    [
+     1.2,
+     [
+      0.575,
+      0.7239
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "National Numismatic Collection, National Museum of American History"
+ },
+ {
+  "id": "02a:02a-10",
+  "track": 0,
+  "kind": "still",
+  "file": "s02a-germany-1923/Berlin - la foule assiège la voiture d'un boulanger et se dispute le pain à coup de millions de Marks - btv1b9024458p.jpg",
+  "start": 117.0,
+  "end": 125.0,
+  "dur": 8.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     21.1
+    ],
+    [
+     8.0,
+     29.54
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ],
+    [
+     8.0,
+     [
+      0.5431,
+      0.64
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Agence Meurisse / BnF Gallica"
+ },
+ {
+  "id": "02a:02a-11",
+  "track": 0,
+  "kind": "still",
+  "file": "s02a-germany-1923/Gov't notice of French Invasion at Essen LCCN2014715615.jpg",
+  "start": 125.0,
+  "end": 128.0,
+  "dur": 3.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     29.67
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "the notice is about the French invasion, not the currency: confirm it may stand under 'The currency collapses'",
+  "credit": "Library of Congress, Bain Collection"
+ },
+ {
+  "id": "02a:02a-12",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/VERB-1923-SHAKE.png",
+  "start": 128.0,
+  "end": 133.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "02a:02a-13",
+  "track": 0,
+  "kind": "still",
+  "file": "s02a-germany-1923/Berlin - la foule assiège la voiture d'un boulanger et se dispute le pain à coup de millions de Marks - btv1b9024458p.jpg",
+  "start": 133.0,
+  "end": 140.0,
+  "dur": 7.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     22.15
+    ],
+    [
+     7.0,
+     22.15
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5485,
+      0.5
+     ]
+    ],
+    [
+     7.0,
+     [
+      0.4515,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": true,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Agence Meurisse / BnF Gallica"
+ },
+ {
+  "id": "03:03-01",
+  "track": 0,
+  "kind": "still",
+  "file": "s03-unemployed-builder/7-10-31, manifestation des chômeurs à Londres (CNews) - btv1b53249445h.jpg",
+  "start": 140.0,
+  "end": 146.5,
+  "dur": 6.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     12.41
+    ],
+    [
+     6.5,
+     19.85
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ],
+    [
+     6.5,
+     [
+      0.5257,
+      0.788
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "these two 1931 photographs are ARRESTS at the demonstration, not a crowd or a queue: confirm they may carry 'Closed works. Queues for a job'; and the man and woman are private individuals (1931)",
+  "credit": "Agence Rol / BnF Gallica"
+ },
+ {
+  "id": "03:03-02",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-LONDON-1931.png",
+  "start": 140.0,
+  "end": 146.5,
+  "dur": 6.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-03",
+  "track": 0,
+  "kind": "still",
+  "file": "s03-unemployed-builder/7-10-31, manifestation des chômeurs à Londres (arrestation d'une femme) (CNews) - btv1b532494442.jpg",
+  "start": 146.5,
+  "end": 153.0,
+  "dur": 6.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     12.41
+    ],
+    [
+     6.5,
+     19.85
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ],
+    [
+     6.5,
+     [
+      0.5515,
+      0.916
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Agence Rol / BnF Gallica"
+ },
+ {
+  "id": "03:03-04",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-LONDON-1931.png",
+  "start": 146.5,
+  "end": 153.0,
+  "dur": 6.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-05",
+  "track": 0,
+  "kind": "illustration",
+  "file": "cards/PH-03-A.png",
+  "start": 153.0,
+  "end": 158.4,
+  "dur": 5.4,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100.0
+    ],
+    [
+     5.4,
+     112.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-06",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-ILLUSTRATION.png",
+  "start": 153.0,
+  "end": 158.4,
+  "dur": 5.4,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-07",
+  "track": 0,
+  "kind": "illustration",
+  "file": "cards/PH-03-B.png",
+  "start": 158.4,
+  "end": 160.0,
+  "dur": 1.6,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-08",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-ILLUSTRATION.png",
+  "start": 158.4,
+  "end": 160.0,
+  "dur": 1.6,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-09",
+  "track": 0,
+  "kind": "illustration",
+  "file": "cards/PH-03-C.png",
+  "start": 160.0,
+  "end": 164.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100.0
+    ],
+    [
+     4.0,
+     112.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-10",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-ILLUSTRATION.png",
+  "start": 160.0,
+  "end": 164.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-11",
+  "track": 0,
+  "kind": "illustration",
+  "file": "cards/PH-03-A.png",
+  "start": 164.0,
+  "end": 165.6,
+  "dur": 1.6,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-12",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-ILLUSTRATION.png",
+  "start": 164.0,
+  "end": 165.6,
+  "dur": 1.6,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-13",
+  "track": 0,
+  "kind": "illustration",
+  "file": "cards/PH-03-B.png",
+  "start": 165.6,
+  "end": 167.3,
+  "dur": 1.7,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-14",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-ILLUSTRATION.png",
+  "start": 165.6,
+  "end": 167.3,
+  "dur": 1.7,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-15",
+  "track": 0,
+  "kind": "illustration",
+  "file": "cards/PH-03-C.png",
+  "start": 167.3,
+  "end": 168.91,
+  "dur": 1.61,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-16",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-ILLUSTRATION.png",
+  "start": 167.3,
+  "end": 168.91,
+  "dur": 1.61,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-17",
+  "track": 0,
+  "kind": "illustration",
+  "file": "cards/PH-03-E.png",
+  "start": 168.91,
+  "end": 173.0,
+  "dur": 4.09,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-18",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-ILLUSTRATION.png",
+  "start": 168.91,
+  "end": 173.0,
+  "dur": 4.09,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-19",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/VERB-1930S-STARVE.png",
+  "start": 173.0,
+  "end": 177.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-20",
+  "track": 0,
+  "kind": "film",
+  "file": "s07-victory/what_a_life_TNA.picture-only.mov",
+  "start": 177.0,
+  "end": 185.0,
+  "dur": 8.0,
+  "in": 179.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "1949 comedy used as texture under Keynes's idea only (labelled): confirm it does not read as 1930s actuality",
+  "credit": "Crown copyright (expired), Crown Film Unit, 1949, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "03:03-21",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-1949-COMEDY.png",
+  "start": 177.0,
+  "end": 185.0,
+  "dur": 8.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-22",
+  "track": 0,
+  "kind": "film",
+  "file": "s03-unemployed-builder/gov.fdr.352.1.4.picture-only.mov",
+  "start": 185.0,
+  "end": 187.4,
+  "dur": 2.4,
+  "in": 104.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "National Archives / FDR Library"
+ },
+ {
+  "id": "03:03-24",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-AMERICAN-FOOTAGE-1937.png",
+  "start": 185.0,
+  "end": 190.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-23",
+  "track": 0,
+  "kind": "film",
+  "file": "s03-unemployed-builder/gov.fdr.352.1.4.picture-only.mov",
+  "start": 187.4,
+  "end": 190.0,
+  "dur": 2.6,
+  "in": 189.2,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "National Archives / FDR Library"
+ },
+ {
+  "id": "03:03-25",
+  "track": 0,
+  "kind": "illustration",
+  "file": "cards/PH-03-A.png",
+  "start": 190.0,
+  "end": 193.18,
+  "dur": 3.18,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-26",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-ILLUSTRATION.png",
+  "start": 190.0,
+  "end": 193.18,
+  "dur": 3.18,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-27",
+  "track": 0,
+  "kind": "illustration",
+  "file": "cards/PH-03-D.png",
+  "start": 193.18,
+  "end": 195.0,
+  "dur": 1.82,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "03:03-28",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-ILLUSTRATION.png",
+  "start": 193.18,
+  "end": 195.0,
+  "dur": 1.82,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "04:04-01",
+  "track": 0,
+  "kind": "illustration",
+  "file": "cards/PH-03-D.png",
+  "start": 195.0,
+  "end": 200.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100.0
+    ],
+    [
+     5.0,
+     112.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "needs its own plate (a thousand plots multiplying) or a plain card: not yet specified in illustrations.md",
+  "credit": null
+ },
+ {
+  "id": "04:04-02",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-ILLUSTRATION.png",
+  "start": 195.0,
+  "end": 200.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "04:04-03",
+  "track": 0,
+  "kind": "film",
+  "file": "s04-the-word-actually/BrickPavements.picture-only.mov",
+  "start": 200.0,
+  "end": 204.0,
+  "dur": 4.0,
+  "in": 330.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "brick-laying, not brick-making, under 'make bricks': confirm; and crop the white film edge on the right",
+  "credit": "US Department of Agriculture / National Archives"
+ },
+ {
+  "id": "04:04-04",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-AMERICAN-FOOTAGE-1937.png",
+  "start": 200.0,
+  "end": 204.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "04:04-05",
+  "track": 0,
+  "kind": "still",
+  "file": "s04-the-word-actually/Technical School- Training at Tottenham Polytechnic, Middlesex, England, UK, 1944 D21395.jpg",
+  "start": 204.0,
+  "end": 207.0,
+  "dur": 3.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     85.85
+    ],
+    [
+     3.0,
+     85.85
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Ministry of Information"
+ },
+ {
+  "id": "04:04-06",
+  "track": 0,
+  "kind": "still",
+  "file": "s04-the-word-actually/Post War Planning and Reconstruction in Britain- Grenadier Guardsmen Build Emergency Housing in Windsor D25712.jpg",
+  "start": 207.0,
+  "end": 209.0,
+  "dur": 2.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     83.7
+    ],
+    [
+     2.0,
+     83.7
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": true,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Ministry of Information"
+ },
+ {
+  "id": "04:04-07",
+  "track": 0,
+  "kind": "still",
+  "file": "s04-the-word-actually/Post War Planning and Reconstruction in Britain- Grenadier Guardsmen Build Emergency Housing in Windsor D25714.jpg",
+  "start": 209.0,
+  "end": 211.0,
+  "dur": 2.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     83.7
+    ],
+    [
+     2.0,
+     83.7
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Ministry of Information"
+ },
+ {
+  "id": "04:04-08",
+  "track": 0,
+  "kind": "film",
+  "file": "s04-the-word-actually/london_airport_TNA.picture-only.mov",
+  "start": 211.0,
+  "end": 214.2,
+  "dur": 3.2,
+  "in": 267.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "Crown copyright (expired), Central Office of Information, 1949, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "04:04-09",
+  "track": 0,
+  "kind": "film",
+  "file": "s04-the-word-actually/london_airport_TNA.picture-only.mov",
+  "start": 214.2,
+  "end": 215.91,
+  "dur": 1.71,
+  "in": 236.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "Crown copyright (expired), Central Office of Information, 1949, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "04:04-10",
+  "track": 0,
+  "kind": "film",
+  "file": "s04-the-word-actually/london_airport_TNA.picture-only.mov",
+  "start": 215.91,
+  "end": 220.0,
+  "dur": 4.09,
+  "in": 276.1,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "Crown copyright (expired), Central Office of Information, 1949, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "04:04-11",
+  "track": 0,
+  "kind": "still",
+  "file": "s08-keynes-dies/Keynes_Martin-monks-house.jpg",
+  "start": 220.0,
+  "end": 223.0,
+  "dur": 3.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     95.51
+    ],
+    [
+     3.0,
+     95.51
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5469,
+      0.643
+     ]
+    ],
+    [
+     3.0,
+     [
+      0.5469,
+      0.643
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Harvard University Library (anonymous, public domain)"
+ },
+ {
+  "id": "04:04-12",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/QUOTE-KEYNES-1.png",
+  "start": 223.0,
+  "end": 232.0,
+  "dur": 9.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "collate against the printed page (Collected Writings XXVII, pp. 264–71) before lock",
+  "credit": null
+ },
+ {
+  "id": "04:04-13",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/QUOTE-KEYNES-2.png",
+  "start": 232.0,
+  "end": 240.0,
+  "dur": 8.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "collate against the printed page before recording the quotation",
+  "credit": null
+ },
+ {
+  "id": "04:04-14",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/QUOTE-KEYNES-2-LIT.png",
+  "start": 240.0,
+  "end": 245.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "04:04-15",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/VERB-1942-RULE-PLANT.png",
+  "start": 245.0,
+  "end": 250.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "04:04-16",
+  "track": 0,
+  "kind": "still",
+  "file": "s04-the-word-actually/Post War Planning and Reconstruction in Britain- Repairing Bomb Damaged Housing D24219.jpg",
+  "start": 250.0,
+  "end": 255.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     83.7
+    ],
+    [
+     5.0,
+     83.7
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Ministry of Information"
+ },
+ {
+  "id": "04:04-17",
+  "track": 0,
+  "kind": "still",
+  "file": "s04-the-word-actually/Post War Planning and Reconstruction in Britain- the Construction of Temporary Housing D24228.jpg",
+  "start": 255.0,
+  "end": 260.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     122.64
+    ],
+    [
+     5.0,
+     122.64
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": [
+   [
+    4.52,
+    100
+   ],
+   [
+    5.0,
+    0
+   ]
+  ],
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Ministry of Information"
+ },
+ {
+  "id": "05:05-01",
+  "track": 0,
+  "kind": "film",
+  "file": "s05-britain-paid/gov.ntis.ava06858vnb1.picture-only.mov",
+  "start": 260.0,
+  "end": 265.0,
+  "dur": 5.0,
+  "in": 1937.8,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "Know Your Ally mixes actuality with staged inserts: confirm this is a British factory (footage.md §2b)",
+  "credit": null
+ },
+ {
+  "id": "05:05-02",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-AMERICAN-FILM-1944.png",
+  "start": 260.0,
+  "end": 265.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "05:05-03",
+  "track": 0,
+  "kind": "film",
+  "file": "s05-britain-paid/gov.ntis.ava06858vnb1.picture-only.mov",
+  "start": 265.0,
+  "end": 266.3,
+  "dur": 1.3,
+  "in": 2338.3,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "05:05-04",
+  "track": 0,
+  "kind": "film",
+  "file": "s05-britain-paid/gov.ntis.ava06858vnb1.picture-only.mov",
+  "start": 266.3,
+  "end": 267.7,
+  "dur": 1.4,
+  "in": 2342.2,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "headline is about war spending, not borrowing, and shows a figure the narrator does not speak: confirm it may sit under 'Borrowed.'",
+  "credit": null
+ },
+ {
+  "id": "05:05-05",
+  "track": 0,
+  "kind": "film",
+  "file": "s05-britain-paid/gov.ntis.ava06858vnb1.picture-only.mov",
+  "start": 267.7,
+  "end": 269.3,
+  "dur": 1.6,
+  "in": 2183.5,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "05:05-06",
+  "track": 0,
+  "kind": "film",
+  "file": "s10b-outgrown/pop_goes_the_weasel_TNA.picture-only.mov",
+  "start": 269.3,
+  "end": 271.0,
+  "dur": 1.7,
+  "in": 494.35,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "1948 ration book under a wartime verb: rationing did continue, but confirm (or swap for a wartime shot)",
+  "credit": "Crown copyright (expired), Crown Film Unit for the Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "05:05-07",
+  "track": 0,
+  "kind": "film",
+  "file": "s05-britain-paid/gov.ntis.ava06858vnb1.picture-only.mov",
+  "start": 271.0,
+  "end": 274.0,
+  "dur": 3.0,
+  "in": 1883.5,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "05:05-08",
+  "track": 0,
+  "kind": "film",
+  "file": "s10b-outgrown/pop_goes_the_weasel_TNA.picture-only.mov",
+  "start": 274.0,
+  "end": 276.4,
+  "dur": 2.4,
+  "in": 176.93,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "Crown copyright (expired), Crown Film Unit for the Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "05:05-09",
+  "track": 0,
+  "kind": "film",
+  "file": "s05-britain-paid/gov.ntis.ava06858vnb1.picture-only.mov",
+  "start": 276.4,
+  "end": 278.6,
+  "dur": 2.2,
+  "in": 2284.33,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "does the car on blocks read as 'no petrol' without the film's commentary? if not, hold 05-10 longer",
+  "credit": null
+ },
+ {
+  "id": "05:05-10",
+  "track": 0,
+  "kind": "film",
+  "file": "s10b-outgrown/pop_goes_the_weasel_TNA.picture-only.mov",
+  "start": 278.6,
+  "end": 283.0,
+  "dur": 4.4,
+  "in": 225.85,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "Crown copyright (expired), Crown Film Unit for the Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "05:05-11",
+  "track": 0,
+  "kind": "still",
+  "file": "s08-keynes-dies/Keynes_Martin-monks-house.jpg",
+  "start": 283.0,
+  "end": 286.65,
+  "dur": 3.65,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     95.51
+    ],
+    [
+     3.65,
+     95.51
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5469,
+      0.643
+     ]
+    ],
+    [
+     3.65,
+     [
+      0.5469,
+      0.643
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Harvard University Library (anonymous, public domain)"
+ },
+ {
+  "id": "05:05-12",
+  "track": 0,
+  "kind": "film",
+  "file": "s10b-outgrown/pop_goes_the_weasel_TNA.picture-only.mov",
+  "start": 286.6,
+  "end": 291.95,
+  "dur": 5.35,
+  "in": 220.15,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "a 1948 Treasury film's device under a 1940 line (Keynes's How to Pay for the War): confirm it reads as illustration, not as a 1940 document",
+  "credit": "Crown copyright (expired), Crown Film Unit for the Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "05:05-13",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/VERB-1940-PLANT.png",
+  "start": 292.0,
+  "end": 296.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "05:05-14",
+  "track": 0,
+  "kind": "film",
+  "file": "s05-britain-paid/gov.ntis.ava06858vnb1.picture-only.mov",
+  "start": 296.0,
+  "end": 301.0,
+  "dur": 5.0,
+  "in": 2348.6,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "🔴 the rates are the film's 1944 claim (footage.md open item 6b): the narrator must not repeat them until checked",
+  "credit": null
+ },
+ {
+  "id": "05:05-15",
+  "track": 0,
+  "kind": "film",
+  "file": "s05-britain-paid/gov.ntis.ava06858vnb1.picture-only.mov",
+  "start": 301.0,
+  "end": 303.3,
+  "dur": 2.3,
+  "in": 2360.6,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "05:05-16",
+  "track": 0,
+  "kind": "film",
+  "file": "s05-britain-paid/gov.ntis.ava06858vnb1.picture-only.mov",
+  "start": 303.3,
+  "end": 308.0,
+  "dur": 4.7,
+  "in": 2365.2,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "same caption as 11a-22 (2365.3-2370.3) and 13-11: callback or duplicate? Kai's call",
+  "credit": null
+ },
+ {
+  "id": "05:05-17",
+  "track": 0,
+  "kind": "still",
+  "file": "s07-victory/HU41808-ve-day-celebrations.jpg",
+  "start": 308.0,
+  "end": 312.38,
+  "dur": 4.38,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     61.09
+    ],
+    [
+     4.38,
+     68.42
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ],
+    [
+     4.38,
+     [
+      0.5177,
+      0.5896
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": true,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Imperial War Museum collections via Wikimedia Commons (Crown copyright expired)"
+ },
+ {
+  "id": "05:05-18",
+  "track": 0,
+  "kind": "film",
+  "file": "s10b-outgrown/pop_goes_the_weasel_TNA.picture-only.mov",
+  "start": 312.38,
+  "end": 315.0,
+  "dur": 2.62,
+  "in": 287.21,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "Crown copyright (expired), Crown Film Unit for the Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "06:06-01",
+  "track": 1,
+  "kind": "doc",
+  "file": "s06-job-after-uniform/docs/Cmd6527-1944-title-page-pdfpage06.png",
+  "start": 315.0,
+  "end": 318.0,
+  "dur": 3.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     18.7
+    ],
+    [
+     3.0,
+     19.63
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Employment Policy, Cmd. 6527, HMSO, May 1944. Scan: Digital Library of India via the Internet Archive."
+ },
+ {
+  "id": "06:06-02",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/QUOTE-WHITE-PAPER.png",
+  "start": 318.0,
+  "end": 324.0,
+  "dur": 6.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Employment Policy, Cmd. 6527, HMSO, May 1944. Scan: Digital Library of India via the Internet Archive."
+ },
+ {
+  "id": "06:06-03",
+  "track": 0,
+  "kind": "film",
+  "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+  "start": 324.0,
+  "end": 328.2,
+  "dur": 4.2,
+  "in": 1006.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "06:06-04",
+  "track": 0,
+  "kind": "film",
+  "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+  "start": 328.2,
+  "end": 331.0,
+  "dur": 2.8,
+  "in": 705.32,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "06:06-05",
+  "track": 0,
+  "kind": "still",
+  "file": "s06-job-after-uniform/LSE-1383-demand-the-beveridge-plan-1944.jpg",
+  "start": 331.0,
+  "end": 339.0,
+  "dur": 8.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     67.61
+    ],
+    [
+     8.0,
+     90.15
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.83
+     ]
+    ],
+    [
+     8.0,
+     [
+      0.5,
+      0.58
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "poster year comes from the file name only (1944): confirm against the LSE catalogue before any on-screen date",
+  "credit": "LSE Library"
+ },
+ {
+  "id": "06:06-06",
+  "track": 0,
+  "kind": "film",
+  "file": "s09-nhs-opens/charley_s_march_of_time_TNA.picture-only.mov",
+  "start": 339.0,
+  "end": 344.0,
+  "dur": 5.0,
+  "in": 233.2,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "06:06-07",
+  "track": 1,
+  "kind": "doc",
+  "file": "s06-job-after-uniform/docs/Cmd6527-1944-foreword-para1-crop.png",
+  "start": 344.0,
+  "end": 349.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     58.58
+    ],
+    [
+     5.0,
+     61.51
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": true,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Employment Policy, Cmd. 6527, HMSO, May 1944. Scan: Digital Library of India via the Internet Archive."
+ },
+ {
+  "id": "06:06-08",
+  "track": 1,
+  "kind": "doc",
+  "file": "s06-job-after-uniform/docs/Cmd6527-1944-foreword-pdfpage08.png",
+  "start": 349.0,
+  "end": 355.0,
+  "dur": 6.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     18.7
+    ],
+    [
+     6.0,
+     19.63
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Employment Policy, Cmd. 6527, HMSO, May 1944. Scan: Digital Library of India via the Internet Archive."
+ },
+ {
+  "id": "07:07-01",
+  "track": 0,
+  "kind": "film",
+  "file": "s07-victory/gov.archives.arc.39216.picture-only.mov",
+  "start": 355.0,
+  "end": 360.0,
+  "dur": 5.0,
+  "in": 417.2,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "confirm the location (Trafalgar Square / Whitehall area per the sheet) and that this is 8 May 1945",
+  "credit": null
+ },
+ {
+  "id": "07:07-02",
+  "track": 0,
+  "kind": "still",
+  "file": "s07-victory/TR2876-crowd-ministry-of-health.jpg",
+  "start": 360.0,
+  "end": 364.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     54.96
+    ],
+    [
+     4.0,
+     62.66
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ],
+    [
+     4.0,
+     [
+      0.4514,
+      0.614
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "a VE Day photograph (8 May) under the July 1945 election line; no free election film exists (plan). Confirm it reads as 'the country in 1945', not as election night",
+  "credit": "Imperial War Museum collections via Wikimedia Commons (Crown copyright expired)"
+ },
+ {
+  "id": "07:07-03",
+  "track": 0,
+  "kind": "still",
+  "file": "s07-victory/HU49414-battersea-girls-rubble.jpg",
+  "start": 364.0,
+  "end": 368.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     27.4
+    ],
+    [
+     4.0,
+     32.89
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.55
+     ]
+    ],
+    [
+     4.0,
+     [
+      0.5274,
+      0.356
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "Commons notes it was 'snapped by an anonymous American photographer': if so, house rule 2 wants LABEL-AMERICAN-PHOTOGRAPH on V4. Kai's call",
+  "credit": "Imperial War Museum collections via Wikimedia Commons (Crown copyright expired)"
+ },
+ {
+  "id": "07:07-04",
+  "track": 0,
+  "kind": "film",
+  "file": "s07-victory/what_a_life_TNA.picture-only.mov",
+  "start": 368.0,
+  "end": 370.5,
+  "dur": 2.5,
+  "in": 289.3,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "Crown copyright (expired), Crown Film Unit, 1949, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "07:07-06",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-1949-COMEDY.png",
+  "start": 368.0,
+  "end": 372.5,
+  "dur": 4.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "07:07-05",
+  "track": 0,
+  "kind": "film",
+  "file": "s07-victory/what_a_life_TNA.picture-only.mov",
+  "start": 370.5,
+  "end": 372.5,
+  "dur": 2.0,
+  "in": 174.57,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "scene 03 uses the next shot of this queue (#12): confirm the repeat is acceptable 3 minutes later",
+  "credit": "Crown copyright (expired), Crown Film Unit, 1949, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "07:07-07",
+  "track": 0,
+  "kind": "film",
+  "file": "s10b-outgrown/pop_goes_the_weasel_TNA.picture-only.mov",
+  "start": 372.5,
+  "end": 375.0,
+  "dur": 2.5,
+  "in": 485.8,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "Crown copyright (expired), Crown Film Unit for the Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "07:07-08",
+  "track": 0,
+  "kind": "film",
+  "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+  "start": 375.0,
+  "end": 379.0,
+  "dur": 4.0,
+  "in": 1919.3,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "07:07-09",
+  "track": 0,
+  "kind": "film",
+  "file": "s10b-outgrown/pop_goes_the_weasel_TNA.picture-only.mov",
+  "start": 379.0,
+  "end": 381.8,
+  "dur": 2.8,
+  "in": 130.8,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "Crown copyright (expired), Crown Film Unit for the Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "07:07-10",
+  "track": 0,
+  "kind": "film",
+  "file": "s05-britain-paid/gov.ntis.ava06858vnb1.picture-only.mov",
+  "start": 381.8,
+  "end": 383.55,
+  "dur": 1.75,
+  "in": 2301.63,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "07:07-13",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-AMERICAN-FILM-1944.png",
+  "start": 381.8,
+  "end": 386.0,
+  "dur": 4.2,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "07:07-11",
+  "track": 0,
+  "kind": "film",
+  "file": "s05-britain-paid/gov.ntis.ava06858vnb1.picture-only.mov",
+  "start": 383.55,
+  "end": 385.15,
+  "dur": 1.6,
+  "in": 2303.72,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "07:07-12",
+  "track": 0,
+  "kind": "film",
+  "file": "s05-britain-paid/gov.ntis.ava06858vnb1.picture-only.mov",
+  "start": 385.15,
+  "end": 386.0,
+  "dur": 0.85,
+  "in": 2321.3,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "wartime (1941-43) US imports under a 1945 line, labelled AMERICAN FILM · 1944: confirm",
+  "credit": null
+ },
+ {
+  "id": "07:07-14",
+  "track": 0,
+  "kind": "still",
+  "file": "s07-victory/TNA-CO1069-778-3-loan-signing-1945-orig.jpg",
+  "start": 386.0,
+  "end": 391.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     99.05
+    ],
+    [
+     5.0,
+     99.05
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "The National Archives UK, CO 1069/778"
+ },
+ {
+  "id": "07:07-15",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/QUOTE-KEYNES-3.png",
+  "start": 391.0,
+  "end": 396.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "07:07-16",
+  "track": 0,
+  "kind": "film",
+  "file": "s07-victory/1946-06-10_Allied_Victory_Parade.picture-only.mov",
+  "start": 396.0,
+  "end": 401.21,
+  "dur": 5.21,
+  "in": 42.3,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "Universal Newsreel is American: house rule 2 wants a label (none fits: no AMERICAN NEWSREEL · 1946 card) or a British parade shot",
+  "credit": null
+ },
+ {
+  "id": "07:07-16L",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-AMERICAN-NEWSREEL-1946.png",
+  "start": 396.0,
+  "end": 401.21,
+  "dur": 5.21,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "07:07-17",
+  "track": 0,
+  "kind": "film",
+  "file": "s10b-outgrown/pop_goes_the_weasel_TNA.picture-only.mov",
+  "start": 401.21,
+  "end": 403.11,
+  "dur": 1.9,
+  "in": 416.85,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "Crown copyright (expired), Crown Film Unit for the Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "07:07-18",
+  "track": 0,
+  "kind": "film",
+  "file": "s10b-outgrown/pop_goes_the_weasel_TNA.picture-only.mov",
+  "start": 403.11,
+  "end": 405.0,
+  "dur": 1.89,
+  "in": 419.09,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "Crown copyright (expired), Crown Film Unit for the Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "08:08-01",
+  "track": 0,
+  "kind": "still",
+  "file": "s08-keynes-dies/Keynes_Martin-monks-house.jpg",
+  "start": 405.0,
+  "end": 430.0,
+  "dur": 25.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     95.51
+    ],
+    [
+     25.0,
+     95.51
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5469,
+      0.643
+     ]
+    ],
+    [
+     25.0,
+     [
+      0.5469,
+      0.643
+     ]
+    ]
+   ]
+  },
+  "opacity": [
+   [
+    23.0,
+    100
+   ],
+   [
+    25.0,
+    0
+   ]
+  ],
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Harvard University Library (anonymous, public domain)"
+ },
+ {
+  "id": "08:08-02",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/DATE-21-APRIL-1946.png",
+  "start": 405.8,
+  "end": 410.2,
+  "dur": 4.4,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": [
+   [
+    0,
+    0
+   ],
+   [
+    0.48,
+    100
+   ],
+   [
+    3.9200000000000004,
+    100
+   ],
+   [
+    4.4,
+    0
+   ]
+  ],
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "09:09-01",
+  "track": 0,
+  "kind": "film",
+  "file": "s09-nhs-opens/your_very_good_health_TNA.picture-only.mov",
+  "start": 430.0,
+  "end": 433.0,
+  "dur": 3.0,
+  "in": 15.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "09:09-02",
+  "track": 0,
+  "kind": "film",
+  "file": "s09-nhs-opens/your_very_good_health_TNA.picture-only.mov",
+  "start": 433.0,
+  "end": 436.0,
+  "dur": 3.0,
+  "in": 66.4,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "09:09-03",
+  "track": 0,
+  "kind": "film",
+  "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+  "start": 436.0,
+  "end": 441.0,
+  "dur": 5.0,
+  "in": 226.5,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "1945 ward (before the NHS) under 'people turning up to work': reads as the hospitals that already existed; confirm",
+  "credit": null
+ },
+ {
+  "id": "09:09-04",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/VERB-1948-PLANT.png",
+  "start": 441.0,
+  "end": 446.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "09:09-05",
+  "track": 1,
+  "kind": "doc",
+  "file": "s09-nhs-opens/INF-2-66-02-NHS-diagram-leaflet.jpg",
+  "start": 446.0,
+  "end": 454.0,
+  "dur": 8.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     42.22
+    ],
+    [
+     8.0,
+     44.34
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "Scottish printing: the plan's line 'all medical, dental and nursing care' is not on it; pushed to 'Anyone can use it… no fees to pay' instead. OGL credit on screen",
+  "credit": "The National Archives, INF 2/66. Contains public sector information licensed under the Open Government Licence v3.0."
+ },
+ {
+  "id": "09:09-06",
+  "track": 0,
+  "kind": "film",
+  "file": "s09-nhs-opens/your_very_good_health_TNA.picture-only.mov",
+  "start": 454.0,
+  "end": 455.85,
+  "dur": 1.85,
+  "in": 385.9,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "09:09-07",
+  "track": 1,
+  "kind": "doc",
+  "file": "s09-nhs-opens/INF-2-66-02-NHS-diagram-leaflet.jpg",
+  "start": 455.85,
+  "end": 460.0,
+  "dur": 4.15,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     42.22
+    ],
+    [
+     4.15,
+     44.34
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "The National Archives, INF 2/66. Contains public sector information licensed under the Open Government Licence v3.0."
+ },
+ {
+  "id": "09:09-08",
+  "track": 0,
+  "kind": "film",
+  "file": "s10b-outgrown/pop_goes_the_weasel_TNA.picture-only.mov",
+  "start": 460.0,
+  "end": 464.0,
+  "dur": 4.0,
+  "in": 468.9,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "a family-allowance counter, not a clinic (the plan said clinic window); confirm it serves 'public funding changed who faced the bill'",
+  "credit": "Crown copyright (expired), Crown Film Unit for the Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "09:09-09",
+  "track": 0,
+  "kind": "film",
+  "file": "s10b-outgrown/pop_goes_the_weasel_TNA.picture-only.mov",
+  "start": 464.0,
+  "end": 466.0,
+  "dur": 2.0,
+  "in": 475.3,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "Crown copyright (expired), Crown Film Unit for the Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "09:09-10",
+  "track": 0,
+  "kind": "film",
+  "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+  "start": 466.0,
+  "end": 471.0,
+  "dur": 5.0,
+  "in": 469.5,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "1945 nurse under a 1948 line; confirm",
+  "credit": null
+ },
+ {
+  "id": "09:09-11",
+  "track": 0,
+  "kind": "film",
+  "file": "s09-nhs-opens/your_very_good_health_TNA.picture-only.mov",
+  "start": 471.0,
+  "end": 475.6,
+  "dur": 4.6,
+  "in": 440.25,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "the faller is Charley's neighbour, not Charley (the brief and plan say Charley); the narration says 'a patient', so it holds",
+  "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "09:09-12",
+  "track": 0,
+  "kind": "film",
+  "file": "s09-nhs-opens/your_very_good_health_TNA.picture-only.mov",
+  "start": 475.6,
+  "end": 478.0,
+  "dur": 2.4,
+  "in": 445.1,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "09:09-13",
+  "track": 0,
+  "kind": "film",
+  "file": "s09-nhs-opens/your_very_good_health_TNA.picture-only.mov",
+  "start": 478.0,
+  "end": 480.0,
+  "dur": 2.0,
+  "in": 460.2,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": true,
+  "grade_bw": false,
+  "check": "source cuts to calendar pages then flying banknotes about 3 s later: keep the out point before them (rule 3)",
+  "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "10:10-01",
+  "track": 0,
+  "kind": "film",
+  "file": "s10-key-in-the-door/new_town_TNA.picture-only.mov",
+  "start": 480.0,
+  "end": 484.1,
+  "dur": 4.1,
+  "in": 440.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "10:10-02",
+  "track": 0,
+  "kind": "film",
+  "file": "s10b-outgrown/pop_goes_the_weasel_TNA.picture-only.mov",
+  "start": 484.1,
+  "end": 487.5,
+  "dur": 3.4,
+  "in": 421.55,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "Crown copyright (expired), Crown Film Unit for the Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "10:10-03",
+  "track": 0,
+  "kind": "film",
+  "file": "s10-key-in-the-door/new_town_TNA.picture-only.mov",
+  "start": 487.5,
+  "end": 491.0,
+  "dur": 3.5,
+  "in": 460.3,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "10:10-04",
+  "track": 0,
+  "kind": "still",
+  "file": "s10-key-in-the-door/MOW-T4550-prefabricated-houses.jpg",
+  "start": 491.0,
+  "end": 494.5,
+  "dur": 3.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     117.89
+    ],
+    [
+     3.5,
+     117.89
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "visible IWM watermark; credit owed",
+  "credit": null
+ },
+ {
+  "id": "10:10-05",
+  "track": 0,
+  "kind": "still",
+  "file": "s10-key-in-the-door/MOW-T59586-newton-aycliffe-new-town.jpg",
+  "start": 494.5,
+  "end": 498.0,
+  "dur": 3.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     114.66
+    ],
+    [
+     3.5,
+     114.66
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": true,
+  "grade_bw": false,
+  "check": "visible IWM watermark; credit owed",
+  "credit": null
+ },
+ {
+  "id": "10:10-06",
+  "track": 0,
+  "kind": "still",
+  "file": "s10b-outgrown/Mac Millan (Harold) Minister President Engeland, Bestanddeelnr 910-7302.jpg",
+  "start": 498.0,
+  "end": 503.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     38.54
+    ],
+    [
+     5.0,
+     48.18
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.6
+     ]
+    ],
+    [
+     5.0,
+     [
+      0.5214,
+      0.85
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "the photograph is catalogued as 'Minister President' (Prime Minister, 1957-63), under a line about his housing drive (Housing Minister 1951-54); confirm the year is acceptable",
+  "credit": "Anefo / Nationaal Archief, CC0"
+ },
+ {
+  "id": "10:10-07",
+  "track": 0,
+  "kind": "film",
+  "file": "s10-key-in-the-door/new_town_TNA.picture-only.mov",
+  "start": 503.0,
+  "end": 505.65,
+  "dur": 2.65,
+  "in": 465.1,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "10:10-08",
+  "track": 0,
+  "kind": "film",
+  "file": "s10-key-in-the-door/new_town_TNA.picture-only.mov",
+  "start": 505.65,
+  "end": 509.0,
+  "dur": 3.35,
+  "in": 468.1,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "10:10-09",
+  "track": 0,
+  "kind": "still",
+  "file": "s10-key-in-the-door/MOW-T51849-designs-for-the-peoples-house.jpg",
+  "start": 509.0,
+  "end": 515.0,
+  "dur": 6.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     109.06
+    ],
+    [
+     6.0,
+     109.06
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "visible IWM watermark; credit owed",
+  "credit": null
+ },
+ {
+  "id": "10b:10b-01",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/DATA-DEBT-1.png",
+  "start": 515.0,
+  "end": 516.8,
+  "dur": 1.8,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "10b:10b-02",
+  "track": 1,
+  "kind": "chart",
+  "file": "charts/CHART-10B-A.mp4",
+  "start": 516.8,
+  "end": 521.0,
+  "dur": 4.2,
+  "in": 0.8,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "chart footer credits the Bank of England's 'A millennium of macroeconomic data'; the storyboard cites the OBR; confirm the source line",
+  "credit": null
+ },
+ {
+  "id": "10b:10b-03",
+  "track": 1,
+  "kind": "chart",
+  "file": "charts/CHART-10B-B.mp4",
+  "start": 521.0,
+  "end": 524.0,
+  "dur": 3.0,
+  "in": 2.5,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "10b:10b-04",
+  "track": 0,
+  "kind": "film",
+  "file": "s09-nhs-opens/your_very_good_health_TNA.picture-only.mov",
+  "start": 524.0,
+  "end": 526.0,
+  "dur": 2.0,
+  "in": 264.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "10b:10b-05",
+  "track": 0,
+  "kind": "film",
+  "file": "s10b-outgrown/charley_junior_s_school_days_TNA.picture-only.mov",
+  "start": 526.0,
+  "end": 528.0,
+  "dur": 2.0,
+  "in": 157.8,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": "Crown copyright (expired), Central Office of Information, 1949, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "10b:10b-06",
+  "track": 0,
+  "kind": "film",
+  "file": "s10b-outgrown/wonder_jet_TNA.picture-only.mov",
+  "start": 528.0,
+  "end": 530.0,
+  "dur": 2.0,
+  "in": 1072.9,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "Crown copyright (expired), Central Office of Information, 1950, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "10b:10b-07",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/DATA-UNEMPLOYMENT.png",
+  "start": 530.0,
+  "end": 535.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "the average is held from a secondary source: verify at source before recording (plan 🔴)",
+  "credit": null
+ },
+ {
+  "id": "10b:10b-08",
+  "track": 1,
+  "kind": "chart",
+  "file": "charts/CHART-10B-C.mp4",
+  "start": 535.0,
+  "end": 541.0,
+  "dur": 6.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "10b:10b-09",
+  "track": 0,
+  "kind": "film",
+  "file": "s10b-outgrown/pop_goes_the_weasel_TNA.picture-only.mov",
+  "start": 541.0,
+  "end": 545.0,
+  "dur": 4.0,
+  "in": 36.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "Crown copyright (expired), Crown Film Unit for the Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "10b:10b-10",
+  "track": 0,
+  "kind": "film",
+  "file": "s10b-outgrown/pop_goes_the_weasel_TNA.picture-only.mov",
+  "start": 545.0,
+  "end": 549.0,
+  "dur": 4.0,
+  "in": 23.3,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "Crown copyright (expired), Crown Film Unit for the Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "10b:10b-11",
+  "track": 0,
+  "kind": "film",
+  "file": "s10b-outgrown/pop_goes_the_weasel_TNA.picture-only.mov",
+  "start": 549.0,
+  "end": 552.0,
+  "dur": 3.0,
+  "in": 52.6,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "Crown copyright (expired), Crown Film Unit for the Central Office of Information, 1948, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "10b:10b-12",
+  "track": 0,
+  "kind": "film",
+  "file": "s04-the-word-actually/london_airport_TNA.picture-only.mov",
+  "start": 552.0,
+  "end": 554.46,
+  "dur": 2.46,
+  "in": 534.9,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": "Crown copyright (expired), Central Office of Information, 1949, via The National Archives and the Internet Archive"
+ },
+ {
+  "id": "10b:10b-13",
+  "track": 1,
+  "kind": "chart",
+  "file": "charts/CHART-10B-C.png",
+  "start": 554.46,
+  "end": 557.82,
+  "dur": 3.36,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "10b:10b-14",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/VERB-1946-1973-PLANT.png",
+  "start": 557.82,
+  "end": 560.0,
+  "dur": 2.18,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": [
+   [
+    0,
+    0
+   ],
+   [
+    0.48,
+    100
+   ],
+   [
+    1.7000000000000002,
+    100
+   ],
+   [
+    2.18,
+    0
+   ]
+  ],
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
   "id": "10a:10a-01",
   "track": 0,
   "kind": "still",
@@ -1813,6 +7622,1453 @@
   "xd_out": false,
   "grade_bw": false,
   "check": "11a legal read",
+  "credit": null
+ },
+ {
+  "id": "12:12-01",
+  "track": 0,
+  "kind": "film",
+  "file": "s09-nhs-opens/your_very_good_health_TNA.picture-only.mov",
+  "start": 780.0,
+  "end": 793.0,
+  "dur": 13.0,
+  "in": 36.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": true,
+  "grade_bw": false,
+  "check": null,
+  "credit": null,
+  "dim_under_doc": [
+   [
+    3.0,
+    13.0
+   ]
+  ]
+ },
+ {
+  "id": "12:12-02",
+  "track": 1,
+  "kind": "doc",
+  "file": "s12-knew-about-the-magic/docs/TNA-MH55-965-hero-1800x720-crop.jpg",
+  "start": 783.0,
+  "end": 793.0,
+  "dur": 10.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     96.0
+    ],
+    [
+     10.0,
+     100.8
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "TNA's 'Using this image' terms were not read (documents.md): confirm the licence wording, and that the 1800 px crop holds up at 1.5x",
+  "credit": "Crown copyright, The National Archives, MH 55/965. Contains public sector information licensed under the Open Government Licence v3.0."
+ },
+ {
+  "id": "12:12-03",
+  "track": 0,
+  "kind": "film",
+  "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+  "start": 793.0,
+  "end": 798.0,
+  "dur": 5.0,
+  "in": 224.5,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "end-credit string for A Diary for Timothy (Crown Film Unit, 1945, Crown copyright expired, picture only) still owed",
+  "credit": null
+ },
+ {
+  "id": "12:12-04",
+  "track": 0,
+  "kind": "film",
+  "file": "s04-the-word-actually/london_airport_TNA.picture-only.mov",
+  "start": 798.0,
+  "end": 801.6,
+  "dur": 3.6,
+  "in": 189.8,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "12:12-05",
+  "track": 0,
+  "kind": "film",
+  "file": "s04-the-word-actually/london_airport_TNA.picture-only.mov",
+  "start": 801.6,
+  "end": 804.0,
+  "dur": 2.4,
+  "in": 202.9,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "12:12-06",
+  "track": 0,
+  "kind": "film",
+  "file": "s10-key-in-the-door/new_town_TNA.picture-only.mov",
+  "start": 804.0,
+  "end": 810.11,
+  "dur": 6.11,
+  "in": 329.2,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "12:12-07",
+  "track": 0,
+  "kind": "film",
+  "file": "s10-key-in-the-door/new_town_TNA.picture-only.mov",
+  "start": 810.11,
+  "end": 815.0,
+  "dur": 4.89,
+  "in": 359.8,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": true,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "13:13-01",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/QUOTE-QT-2.png",
+  "start": 815.0,
+  "end": 817.5,
+  "dur": 2.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "QT-2 wording: sources differ after 'shake'; check the BBC clip (same check as 11-12)",
+  "credit": null
+ },
+ {
+  "id": "13:13-02",
+  "track": 0,
+  "kind": "still",
+  "file": "s02a-germany-1923/Berlin - la foule assiège la voiture d'un boulanger et se dispute le pain à coup de millions de Marks - btv1b9024458p.jpg",
+  "start": 817.5,
+  "end": 819.0,
+  "dur": 1.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     23.21
+    ],
+    [
+     1.5,
+     25.32
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ],
+    [
+     1.5,
+     [
+      0.5,
+      0.44
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "13:13-03",
+  "track": 0,
+  "kind": "still",
+  "file": "s02a-germany-1923/GER-127a-Reichsbanknote-500 Billion Mark (1923).jpg",
+  "start": 819.0,
+  "end": 820.36,
+  "dur": 1.36,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     40.51
+    ],
+    [
+     1.36,
+     45.38
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "13:13-04",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/VERB-2020-SHAKE.png",
+  "start": 820.0,
+  "end": 821.2,
+  "dur": 1.2,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "13:13-05",
+  "track": 0,
+  "kind": "illustration",
+  "file": "cards/PH-11A-Y.png",
+  "start": 821.2,
+  "end": 823.0,
+  "dur": 1.8,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100.0
+    ],
+    [
+     1.8,
+     112.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "11a legal read: may the yacht stand under 'People have tried'? Placeholder until Kai approves the plate",
+  "credit": null
+ },
+ {
+  "id": "13:13-06",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-ILLUSTRATION.png",
+  "start": 821.2,
+  "end": 823.0,
+  "dur": 1.8,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "13:13-07",
+  "track": 0,
+  "kind": "illustration",
+  "file": "cards/PH-03-A.png",
+  "start": 823.0,
+  "end": 825.5,
+  "dur": 2.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100.0
+    ],
+    [
+     2.5,
+     112.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "placeholder until Kai approves the 03-A plate",
+  "credit": null
+ },
+ {
+  "id": "13:13-08",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-ILLUSTRATION.png",
+  "start": 823.0,
+  "end": 825.5,
+  "dur": 2.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "13:13-09",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/PAYSLIP.png",
+  "start": 825.5,
+  "end": 828.0,
+  "dur": 2.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "13:13-10",
+  "track": 0,
+  "kind": "still",
+  "file": "s10a-new-money/Bank-of-England.jpg",
+  "start": 828.0,
+  "end": 831.0,
+  "dur": 3.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     19.18
+    ],
+    [
+     3.0,
+     21.48
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "13:13-11",
+  "track": 0,
+  "kind": "film",
+  "file": "s05-britain-paid/gov.ntis.ava06858vnb1.picture-only.mov",
+  "start": 831.0,
+  "end": 834.5,
+  "dur": 3.5,
+  "in": 2366.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "the caption is the American film's, not an official UK rate (facts.md §7); keep the label",
+  "credit": null
+ },
+ {
+  "id": "13:13-12",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-AMERICAN-FILM-1944.png",
+  "start": 831.0,
+  "end": 834.5,
+  "dur": 3.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "13:13-13",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/WORD-PLANT.png",
+  "start": 834.5,
+  "end": 838.0,
+  "dur": 3.5,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "13:13-14",
+  "track": 0,
+  "kind": "black",
+  "file": null,
+  "start": 838.0,
+  "end": 840.0,
+  "dur": 2.0,
+  "in": 0.0,
+  "motion": null,
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "13:13-15",
+  "track": 0,
+  "kind": "still",
+  "file": "s08-keynes-dies/Keynes_Martin-monks-house.jpg",
+  "start": 840.0,
+  "end": 843.0,
+  "dur": 3.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     73.47
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "13:13-16",
+  "track": 0,
+  "kind": "film",
+  "file": "s09-nhs-opens/your_very_good_health_TNA.picture-only.mov",
+  "start": 843.0,
+  "end": 844.7,
+  "dur": 1.7,
+  "in": 296.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "13:13-17",
+  "track": 0,
+  "kind": "film",
+  "file": "s10-key-in-the-door/new_town_TNA.picture-only.mov",
+  "start": 844.7,
+  "end": 846.3,
+  "dur": 1.6,
+  "in": 385.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "match to the shot scene 10 uses under 'Families moved in' when 10 is written (the plan says ≈06:30, a house with a figure at the door)",
+  "credit": null
+ },
+ {
+  "id": "13:13-18",
+  "track": 0,
+  "kind": "still",
+  "file": "s10-key-in-the-door/MOW-T51849-designs-for-the-peoples-house.jpg",
+  "start": 846.3,
+  "end": 848.0,
+  "dur": 1.7,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     109.06
+    ],
+    [
+     1.7,
+     109.06
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "13:13-19",
+  "track": 1,
+  "kind": "chart",
+  "file": "charts/CHART-10B-C.png",
+  "start": 848.0,
+  "end": 855.0,
+  "dur": 7.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "hold is long (12 s) only because of the lines.json padding: see notes",
+  "credit": null
+ },
+ {
+  "id": "13:13-20",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/QUOTE-KEYNES-2.png",
+  "start": 855.0,
+  "end": 865.0,
+  "dur": 10.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "re-anchor to the scene-13 quotation line once lines.py gives it one; hold 10 s (the plan's 14:15–14:25)",
+  "credit": null
+ },
+ {
+  "id": "14:14-01",
+  "track": 0,
+  "kind": "film",
+  "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+  "start": 865.0,
+  "end": 870.0,
+  "dur": 5.0,
+  "in": 240.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "end-credit string for A Diary for Timothy (Crown Film Unit, 1945, Crown copyright expired, picture only) still owed",
+  "credit": null
+ },
+ {
+  "id": "14:14-02",
+  "track": 0,
+  "kind": "film",
+  "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+  "start": 870.0,
+  "end": 876.0,
+  "dur": 6.0,
+  "in": 470.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "14:14-03",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 876.0,
+  "end": 877.95,
+  "dur": 1.95,
+  "in": 313.2,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "actuality or staged insert (footage.md §2b); several helmets look French: fine for 'people', confirm",
+  "credit": null
+ },
+ {
+  "id": "14:14-04",
+  "track": 0,
+  "kind": "film",
+  "file": "s01-dunkirk/gov.fdr.25.4.picture-only.mov",
+  "start": 877.95,
+  "end": 880.0,
+  "dur": 2.05,
+  "in": 317.5,
+  "motion": {
+   "scale": [
+    [
+     0,
+     225.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": true,
+  "check": "actuality or staged insert (footage.md §2b); match scene 01's last shot",
+  "credit": null
+ },
+ {
+  "id": "14:14-05",
+  "track": 0,
+  "kind": "film",
+  "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+  "start": 880.0,
+  "end": 888.0,
+  "dur": 8.0,
+  "in": 2212.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     187.5
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": [
+   [
+    0,
+    0
+   ],
+   [
+    0.48,
+    100
+   ],
+   [
+    7.52,
+    100
+   ],
+   [
+    8.0,
+    0
+   ]
+  ],
+  "xd_out": false,
+  "grade_bw": true,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "14:14-06",
+  "track": 0,
+  "kind": "black",
+  "file": null,
+  "start": 888.0,
+  "end": 890.0,
+  "dur": 2.0,
+  "in": 0.0,
+  "motion": null,
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "15:15-01",
+  "track": 0,
+  "kind": "illustration",
+  "file": "cards/PH-15-A.png",
+  "start": 890.0,
+  "end": 893.0,
+  "dur": 3.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100.0
+    ],
+    [
+     3.0,
+     112.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": [
+   [
+    0,
+    0
+   ],
+   [
+    0.48,
+    100
+   ],
+   [
+    2.52,
+    100
+   ],
+   [
+    3.0,
+    0
+   ]
+  ],
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "placeholder until Kai approves the plate",
+  "credit": null
+ },
+ {
+  "id": "15:15-02",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-ILLUSTRATION.png",
+  "start": 890.0,
+  "end": 893.0,
+  "dur": 3.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "label on brand imagery: Kai's call",
+  "credit": null
+ },
+ {
+  "id": "15:15-03",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/QUOTE-KEYNES-2-LIT.png",
+  "start": 893.0,
+  "end": 897.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "15:15-04",
+  "track": 0,
+  "kind": "illustration",
+  "file": "cards/PH-15-B.png",
+  "start": 897.0,
+  "end": 901.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100.0
+    ],
+    [
+     4.0,
+     112.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "placeholder until Kai approves the plate",
+  "credit": null
+ },
+ {
+  "id": "15:15-05",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-ILLUSTRATION.png",
+  "start": 897.0,
+  "end": 901.0,
+  "dur": 4.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "15:15-06",
+  "track": 0,
+  "kind": "illustration",
+  "file": "cards/PH-15-C.png",
+  "start": 901.0,
+  "end": 906.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100.0
+    ],
+    [
+     5.0,
+     112.0
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": "placeholder until Kai approves the plate",
+  "credit": null
+ },
+ {
+  "id": "15:15-07",
+  "track": 3,
+  "kind": "card",
+  "file": "cards/LABEL-ILLUSTRATION.png",
+  "start": 901.0,
+  "end": 906.0,
+  "dur": 5.0,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "15:15-08",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/WORD-SHAKEN.png",
+  "start": 906.0,
+  "end": 907.2,
+  "dur": 1.2,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "15:15-09",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/WORD-STARVED.png",
+  "start": 907.2,
+  "end": 908.4,
+  "dur": 1.2,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "15:15-10",
+  "track": 2,
+  "kind": "card",
+  "file": "cards/WORD-PLANTED.png",
+  "start": 908.4,
+  "end": 911.0,
+  "dur": 2.6,
+  "in": 0.0,
+  "motion": {
+   "scale": [
+    [
+     0,
+     100
+    ]
+   ],
+   "pos": [
+    [
+     0,
+     [
+      0.5,
+      0.5
+     ]
+    ]
+   ]
+  },
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
+  "credit": null
+ },
+ {
+  "id": "15:15-11",
+  "track": 0,
+  "kind": "black",
+  "file": null,
+  "start": 911.0,
+  "end": 913.0,
+  "dur": 2.0,
+  "in": 0.0,
+  "motion": null,
+  "opacity": null,
+  "xd_out": false,
+  "grade_bw": false,
+  "check": null,
   "credit": null
  }
 ]

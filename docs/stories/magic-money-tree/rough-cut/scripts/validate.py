@@ -18,7 +18,7 @@ RC = os.path.normpath(os.path.join(HERE, ".."))
 CLIPS = "/mnt/d/badcode-videos/magic-money-tree/clips"
 TRACKS = {"V1", "V2", "V3", "V4"}
 KINDS = {"film", "still", "card", "doc", "chart", "illustration", "black"}
-TREAT = {"FILM-43", "PUSH", "DRIFT", "INSET", "DOC", "HOLD", "XD", "DIP", "GRADE-BW", "FADE", "PULL", "LIT"}
+TREAT = {"FILM-43", "PUSH", "DRIFT", "INSET", "DOC", "HOLD", "XD", "DIP", "GRADE-BW", "FADE", "FADEOUT", "PULL", "LIT"}
 
 
 @lru_cache(None)

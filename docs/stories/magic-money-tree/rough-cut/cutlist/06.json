@@ -1,0 +1,153 @@
+{
+ "scene": "06",
+ "title": "A job after the uniform",
+ "notes": [
+  "Storyboard and plan agree. The White Paper is shown twice: its title page then the typeset quotation card on P4.12, and on P4.17 ('a promise on paper') the real printed foreword paragraph, then a pull back to the whole page, so the promise ends as one paragraph on a sheet of paper.",
+  "The plan's 'Diary for Timothy ≈17:00, a man laying bricks' is not at 17:00 in the picture-only file (that is the mine clearance, #109-110). Used instead: #109, a soldier in beret clearing a beach mine (16:45) for 'in uniform', and #76, a roofer re-slating a bomb-damaged roof (11:45) for 'civilian work'. No bricklaying shot was found in Diary for Timothy on the sheets viewed.",
+  "Beveridge poster (LSE, 1498×2396, portrait): the push runs down the poster from the headline DEMAND THE 'BEVERIDGE' PLAN to the benefit rows (Comprehensive Medical Service… FOR EVERYONE). Zoom stays at or under 2.0× fit, which is still under the file's native size, so the validator's under-1920 PUSH warning is intended.",
+  "Charley's March of Time: the castle rising on the hill and the swarm of little builders on its ladders (shot 18, ≈3:53-3:59) for 'Keynes wasn't building this future alone', rather than the road itself.",
+  "Diary for Timothy has no credit string in footage.md (as scene 11 notes); left null."
+ ],
+ "clips": [
+  {
+   "id": "06-01",
+   "line": "P4.12",
+   "offset": 0.0,
+   "dur": 3.0,
+   "track": "V2",
+   "kind": "doc",
+   "file": "s06-job-after-uniform/docs/Cmd6527-1944-title-page-pdfpage06.png",
+   "treatment": "DOC+PUSH",
+   "desc": "White Paper title page: EMPLOYMENT POLICY, presented by the Minister of Reconstruction, May 1944, Cmd. 6527",
+   "credit": "Employment Policy, Cmd. 6527, HMSO, May 1944. Scan: Digital Library of India via the Internet Archive.",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "06-02",
+   "line": "P4.12",
+   "offset": 3.0,
+   "dur": 6.0,
+   "track": "V3",
+   "kind": "card",
+   "file": "cards/QUOTE-WHITE-PAPER.png",
+   "treatment": null,
+   "desc": "quote: 'The Government accept as one of their primary aims and responsibilities the maintenance of a high and stable level of employment after the war.' EMPLOYMENT POLICY · WHITE PAPER · MAY 1944",
+   "shot": null,
+   "check": null,
+   "credit": "Employment Policy, Cmd. 6527, HMSO, May 1944. Scan: Digital Library of India via the Internet Archive."
+  },
+  {
+   "id": "06-03",
+   "line": "P4.13",
+   "offset": 0.0,
+   "dur": 4.2,
+   "track": "V1",
+   "kind": "film",
+   "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+   "src_in": 1006.0,
+   "src_max": 1013.02,
+   "treatment": "FILM-43+GRADE-BW",
+   "desc": "'in uniform': a soldier in a beret on his knees in the sand, clearing a beach mine among the wire",
+   "shot": "DiaryForTimothy#109",
+   "check": null
+  },
+  {
+   "id": "06-04",
+   "line": "P4.14",
+   "offset": 0.0,
+   "dur": 2.8,
+   "track": "V1",
+   "kind": "film",
+   "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+   "src_in": 705.32,
+   "src_max": 711.1,
+   "treatment": "FILM-43+GRADE-BW",
+   "desc": "'civilian work': a roofer in a cap re-slating a bomb-damaged roof",
+   "shot": "DiaryForTimothy#76",
+   "check": null
+  },
+  {
+   "id": "06-05",
+   "line": "P4.15",
+   "offset": 0.0,
+   "dur": 8.0,
+   "track": "V1",
+   "kind": "still",
+   "file": "s06-job-after-uniform/LSE-1383-demand-the-beveridge-plan-1944.jpg",
+   "treatment": "PUSH",
+   "desc": "poster: DEMAND THE 'BEVERIDGE' PLAN, Social Security League; push down to the benefit rows",
+   "move": {
+    "from": [
+     0.5,
+     0.28,
+     1.5
+    ],
+    "to": [
+     0.5,
+     0.46,
+     2.0
+    ]
+   },
+   "credit": "LSE Library",
+   "shot": null,
+   "check": "poster year comes from the file name only (1944): confirm against the LSE catalogue before any on-screen date"
+  },
+  {
+   "id": "06-06",
+   "line": "P4.16",
+   "offset": 0.0,
+   "dur": 5.0,
+   "track": "V1",
+   "kind": "film",
+   "file": "s09-nhs-opens/charley_s_march_of_time_TNA.picture-only.mov",
+   "src_in": 233.2,
+   "src_max": 239.1,
+   "treatment": "FILM-43",
+   "desc": "colour cartoon: towers rise on a hill, then a castle swarming with little builders on ladders",
+   "shot": "charley_s_march_of_time_TNA#18",
+   "check": null,
+   "credit": "Crown copyright (expired), Central Office of Information, 1948, via The National Archives and the Internet Archive"
+  },
+  {
+   "id": "06-07",
+   "line": "P4.17",
+   "offset": 0.0,
+   "dur": 5.0,
+   "track": "V2",
+   "kind": "doc",
+   "file": "s06-job-after-uniform/docs/Cmd6527-1944-foreword-para1-crop.png",
+   "treatment": "DOC+XD",
+   "desc": "the printed foreword: 'The Government accept as one of their primary aims and responsibilities the maintenance of a high and stable level of employment after the war.'",
+   "credit": "Employment Policy, Cmd. 6527, HMSO, May 1944. Scan: Digital Library of India via the Internet Archive.",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "06-08",
+   "line": "P4.17",
+   "offset": 5.0,
+   "dur": 6.0,
+   "track": "V2",
+   "kind": "doc",
+   "file": "s06-job-after-uniform/docs/Cmd6527-1944-foreword-pdfpage08.png",
+   "treatment": "DOC+PULL",
+   "desc": "pull back from that paragraph to the whole foreword page: the promise is one paragraph on paper",
+   "move": {
+    "from": [
+     0.5,
+     0.24,
+     1.8
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.0
+    ]
+   },
+   "credit": "Employment Policy, Cmd. 6527, HMSO, May 1944. Scan: Digital Library of India via the Internet Archive.",
+   "shot": null,
+   "check": null
+  }
+ ]
+}

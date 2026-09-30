@@ -246,6 +246,16 @@
    "text": "AMERICAN FILM · 1944"
   },
   {
+   "name": "LABEL-AMERICAN-FOOTAGE-1945",
+   "kind": "label",
+   "text": "AMERICAN FOOTAGE · 1945"
+  },
+  {
+   "name": "LABEL-AMERICAN-NEWSREEL-1946",
+   "kind": "label",
+   "text": "AMERICAN NEWSREEL · 1946"
+  },
+  {
    "name": "LABEL-AMERICAN-PHOTOGRAPH",
    "kind": "label",
    "text": "AMERICAN PHOTOGRAPH"

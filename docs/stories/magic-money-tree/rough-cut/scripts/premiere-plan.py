@@ -16,7 +16,9 @@ Treatments (edit-plan §0.3), in Premiere terms:
   INSET     fit x 0.62, capped at 135% of native, push at most x 1.05
   DOC       fit x 0.9 on V2, and V1 underneath dimmed to 35% opacity for the same span
   card      100% (they are rendered at 1920x1080)
-  FADE/DIP  opacity keys 0->100 at the head / 100->0 at the tail over 12 frames
+  FADE      up and away: 0->100 at the head and 100->0 at the tail, 12 frames each
+  DIP       the same, for a movement seam
+  FADEOUT   a two-second fade to black at the tail (scene 08, the end of 14)
 """
 import json, os, subprocess, sys
 from functools import lru_cache
@@ -83,10 +85,12 @@ def motion(c):
 def opacity(c):
     tr = (c.get("treatment") or "").split("+")
     k = []
-    if "FADE" in tr or "DIP" in tr and c.get("offset", 0) == 0:
-        k += [[0, 0], [12 * FR, 100]]
-    if "DIP" in tr:
-        k += [[max(0, c["dur"] - 12 * FR), 100], [c["dur"], 0]]
+    if "FADE" in tr or ("DIP" in tr and c.get("offset", 0) == 0):
+        k += [[0, 0], [12 * FR, 100]]                        # up
+    if "FADE" in tr or "DIP" in tr:
+        k += [[max(0, c["dur"] - 12 * FR), 100], [c["dur"], 0]]   # and away
+    if "FADEOUT" in tr:
+        k += [[max(0, c["dur"] - 2.0), 100], [c["dur"], 0]]     # a two-second fade to black
     return k or None
 
 

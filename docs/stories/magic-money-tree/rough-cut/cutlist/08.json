@@ -1,0 +1,53 @@
+{
+ "scene": "08",
+ "title": "21 April 1946",
+ "notes": [
+  "The one silent picture in the film: the Keynes still held, no move, for all 25 s (music drops out). Same static crop as scenes 04 and 13 (Keynes alone; Kingsley Martin, beside him in the photograph, is out of frame).",
+  "DATE-21-APRIL-1946 is an overlay on V3, not a cut: it fades up just after 'Keynes died on' and away before 'The NHS would open'. premiere-plan.py's FADE gives it a 12-frame fade-in only; add the matching 12-frame fade-out by hand (or extend FADE to the tail).",
+  "Fade to black over the last 2 s: carried as \"fade_out\": 2.0 on 08-01. premiere-plan.py does not read that key (its DIP is 12 frames and would also fade the head in): set Opacity 100 → 0 over 423.0-425.0 s of the clip by hand, or on the movement DIP into scene 09.",
+  "The storyboard's restraint holds: no deathbed, no family, no claim he died of overwork.",
+  "orchestrator: 08-01 HOLD+FADEOUT = the last 2 s fade to black; 08-02 FADE = up and away (in and out)."
+ ],
+ "clips": [
+  {
+   "id": "08-01",
+   "line": "P5.13",
+   "offset": 0.0,
+   "dur": 25.0,
+   "track": "V1",
+   "kind": "still",
+   "file": "s08-keynes-dies/Keynes_Martin-monks-house.jpg",
+   "treatment": "HOLD+FADEOUT",
+   "desc": "Keynes at Monk's House, cropped to Keynes; HOLD, no move, the whole scene; fade to black over the last 2 s",
+   "move": {
+    "from": [
+     0.43,
+     0.39,
+     1.3
+    ],
+    "to": [
+     0.43,
+     0.39,
+     1.3
+    ]
+   },
+   "credit": "Harvard University Library (anonymous, public domain)",
+   "shot": null,
+   "check": null,
+   "fade_out": 2.0
+  },
+  {
+   "id": "08-02",
+   "line": "P5.13",
+   "offset": 0.8,
+   "dur": 4.4,
+   "track": "V3",
+   "kind": "card",
+   "file": "cards/DATE-21-APRIL-1946.png",
+   "treatment": "FADE",
+   "desc": "date card 21 APRIL 1946, fading up and away over the still",
+   "shot": null,
+   "check": null
+  }
+ ]
+}
