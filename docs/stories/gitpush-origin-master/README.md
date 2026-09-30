@@ -113,8 +113,10 @@ The fastest way to hold all of it: the arc is **three movements**, and they *are
 >   table edit here, not a rename.
 > - [**`scenes/`**](./scenes/) — the as-built plates with their exact prompts
 >   (`s00-awakening.md`, `s01-the-push.md`, `plant-room.md`) plus the build/grade scripts.
-> - [**`songs/narration.md`**](./songs/narration.md) — the **recorded narration**, the real per-cut
->   durations, and §6's bank of written-but-unused lines.
+> - [**`songs/narration.md`**](./songs/narration.md) — the **live narration**: every scene's words, boxes and
+>   picked take ([history](./songs/narration-history.md)). The v5.5-era sheet,
+>   [`songs/archive/narration-v5.5.md`](./songs/archive/narration-v5.5.md), keeps the per-cut
+>   durations and §6's bank of written-but-unused lines.
 >
 > Where these disagree with the canon, **say so** — do not assume `story.md` is current. *(Added
 > 2026-08-23: two cold reviewers both had to `ls -R` this folder to find the film. See
@@ -380,8 +382,10 @@ Everything in `docs/stories/gitpush-origin-master/` is this story:
   order and on what is deferred, parked or unfired.
 - [`scenes/`](./scenes/) — the **as-built plates** and their exact prompts, plus the build/grade
   scripts that made them.
-- [`songs/narration.md`](./songs/narration.md) — the **recorded narration**: per-cut tables, real
-  durations, and the bank of written-but-unused lines (§6).
+- [`songs/narration.md`](./songs/narration.md) — the **live narration**: house settings, house style,
+  and each scene's words, boxes and picked take. Rounds are in
+  [`songs/narration-history.md`](./songs/narration-history.md); the v5.5-era sheet
+  ([`songs/archive/narration-v5.5.md`](./songs/archive/narration-v5.5.md)) keeps the per-cut tables and the bank (§6).
 - **[`../storyverse/`](../storyverse/README.md) — the Storyverse, now its own story
   folder** (hoisted 2026-08-07). The physics and metaphysics the AI works out, plus
   a seven-brief research base. Its [`confession.md`](../storyverse/confession.md)

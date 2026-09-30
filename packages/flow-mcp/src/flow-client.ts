@@ -101,6 +101,35 @@ const POLL_MS = 1_000
 // a touch slower to stay polite to Flow's media endpoint over the minutes-long generation wait.
 const VIDEO_POLL_MS = 3_000
 
+/**
+ * 🔴 2026-09-19. The floor under "a new tile appeared, so my clip is done".
+ *
+ * The gaze run harvested the SAME pre-existing clip twice, byte for byte, returning in
+ * seconds both times. Cause: the project gallery lazy-loads its thumbnails, and
+ * `generateVideoRebuilt` snapshots `before` immediately after `reloadProject()`. In a
+ * project with enough media the snapshot races the gallery's own render, so it captures a
+ * partial set — and every tile that loads in afterwards reads as NEW. The first one found
+ * is then downloaded as "the clip we just made", which is how two different prompts came
+ * back as one file.
+ *
+ * Two guards, because either alone is a coin flip: `settleVideoTiles` makes the snapshot
+ * complete before submitting, and this floor makes a false positive impossible to act on —
+ * no Veo generation has ever come back in under a minute (Fast measured ~60-110s), so a
+ * tile appearing inside this window is the gallery catching up, never our clip.
+ */
+const VIDEO_MIN_RENDER_MS = 25_000
+
+/** How long `submitVideo` will wait for proof Flow took the job. See `confirmSubmitted`. */
+const SUBMIT_CONFIRM_MS = 20_000
+/**
+ * How long to watch for an upload-refused toast before calling the upload good.
+ *
+ * Flow emits no success signal, only a failure one, and measured 2026-09-21 the toast appeared
+ * between 2 and 8 seconds after the file was handed over. Ten seconds clears that with room and
+ * is paid once per still — cheap against a refusal surfacing as a 90s picker timeout instead.
+ */
+const UPLOAD_VERDICT_MS = 10_000
+
 export interface ImageResult { path: string; mediaId: string; width: number; height: number }
 export interface EditResult { candidates: ImageResult[]; partial?: boolean }
 export interface MediaResult { path: string; mediaId: string }
@@ -617,16 +646,62 @@ export class FlowClient {
     return this.page.locator('.cdk-overlay-container button[role="radio"]').filter({ hasText: text }).first()
   }
 
+  /**
+   * 🔴 2026-09-17: closing this popover (Escape) and immediately reopening it — exactly what
+   * `ensureImageModeRebuilt` → `ensureModel` do back to back — measured as a real, repeatable
+   * race: the click registers (no error) but the popover does not reappear within 10s, even
+   * though the identical click from a fully idle page opens it in under a second every time.
+   * Root cause not isolated (plausibly the overlay's own close transition still owning focus).
+   * Retrying the click on a short per-attempt timeout is proven to recover it reliably.
+   */
   private async openSettings(): Promise<void> {
     if (await this.settingsRadio(/^imageImage$/).isVisible().catch(() => false)) return
-    await this.settingsTrigger().click()
-    await this.settingsRadio(/^imageImage$/).waitFor({ state: 'visible', timeout: 10_000 })
+    const radio = this.settingsRadio(/^imageImage$/)
+    for (let attempt = 0; attempt < 4; attempt++) {
+      await this.settingsTrigger().click()
+      const opened = await radio
+        .waitFor({ state: 'visible', timeout: 2_500 })
+        .then(() => true)
+        .catch(() => false)
+      if (opened) return
+    }
+    // Final attempt with the original, generous timeout, so a genuinely slow (not stuck) open
+    // still gets a fair chance and the error message keeps its original shape.
+    await radio.waitFor({ state: 'visible', timeout: 10_000 })
   }
 
+  /**
+   * Close whatever CDK dialog is open, and make sure its backdrop actually went with it.
+   *
+   * Angular Material's backdrop is a full-screen transparent div. If a dialog is abandoned
+   * mid-flow it stays, and every subsequent click silently lands on IT instead of the button
+   * the caller asked for — which is why one refused upload took the next three submissions down
+   * with it on 2026-09-21. Nothing here throws: this runs on the failure path.
+   */
+  private async dismissOverlay(): Promise<void> {
+    const backdrop = this.page.locator('.cdk-overlay-container .cdk-overlay-backdrop-showing')
+    for (let i = 0; i < 4; i++) {
+      if (!(await backdrop.count().catch(() => 0))) return
+      await this.page.keyboard.press('Escape').catch(() => {})
+      await this.page.waitForTimeout(500)
+    }
+  }
+
+  /**
+   * 🔴 2026-09-22: ONE Escape is not enough. After `ensureModel` picks a model family, that
+   * Escape closes the nested "Select model family" menu and leaves the Settings popover itself
+   * open — and the popover's own credit-cost label sits over the prompt box, so the next
+   * submit dies on "…credit-cost-label… intercepts pointer events" rather than on anything
+   * that names settings. Measured live on the downfall still run: the config had landed
+   * correctly (Nano Banana Pro, 16:9, x1) and every prompt still failed. So press until the
+   * popover is actually gone.
+   */
   private async closeSettings(): Promise<void> {
-    if (await this.settingsRadio(/^imageImage$/).isVisible().catch(() => false)) {
+    const radio = this.settingsRadio(/^imageImage$/)
+    for (let i = 0; i < 4; i++) {
+      if (!(await radio.isVisible().catch(() => false))) return
       await this.page.keyboard.press('Escape')
-      await this.settingsRadio(/^imageImage$/).waitFor({ state: 'hidden', timeout: 5_000 }).catch(() => {})
+      await radio.waitFor({ state: 'hidden', timeout: 2_000 }).catch(() => {})
     }
   }
 
@@ -2294,7 +2369,8 @@ export class FlowClient {
     if (startImage) await this.fillFrameSlotRebuilt('Start', basename(startImage))
     if (endImage) await this.fillFrameSlotRebuilt('End', basename(endImage))
     await this.markTurnStart()
-    const before = await this.videoTileKeys()
+    // Settle, not snapshot: see VIDEO_MIN_RENDER_MS for the run this cost.
+    const before = await this.settleVideoTiles()
     await this.setPrompt(motion)
     await this.clickSubmit()
     const tiles = await this.waitForNewVideoTiles(before, count, VIDEO_TIMEOUT_MS)
@@ -2309,14 +2385,158 @@ export class FlowClient {
     return { ...first, ...(count > 1 ? { candidates } : {}), ...(tiles.length < count ? { partial: true } : {}) }
   }
 
+  /**
+   * Submit a video generation and RETURN IMMEDIATELY — no waiting, no download.
+   *
+   * 🔴 The paired half of `harvestVideoTile`, and the reason both exist: `generateVideo` is
+   * submit-wait-download in one call, so 46 clips cost 46 renders END TO END even though Flow
+   * renders server-side and queues happily. Splitting the phases lets a caller push the whole
+   * list in and collect the results afterwards, which is the difference between an hour and
+   * about fifteen minutes on a scene this size.
+   *
+   * ⚠️ `startImage`'s BASENAME is what Flow's frame picker matches, not its path. Stills stored
+   * as `<shot-folder>/00-b.jpg` therefore collide with every other folder's `00-b.jpg`, and the
+   * picker silently takes whichever it finds first — measured 2026-09-20 on the gaze run, where
+   * 46 stills shared just 10 filenames and a clip came back animated from the wrong photograph
+   * with the right prompt. Callers MUST pass uniquely-named files.
+   *
+   * Reloads first, because frame slots persist for the page's life and a reload is the only
+   * certain clear; the reload does not disturb generations already running.
+   */
+  async submitVideo(req: VideoRequest): Promise<void> {
+    const { motion, startImage, endImage } = req
+    const videoModel = canonicalVideoModel(req.model ?? DEFAULT_VIDEO_MODEL)
+    const duration = req.durationSeconds ?? DEFAULT_VIDEO_DURATION
+    const problem = videoRequestError({ startImage, endImage, model: videoModel, durationSeconds: duration })
+    if (problem) throw new Error(problem)
+    await this.ensureProject()
+    // Staying on the page is the whole point — see clearFrameSlots. Reload only if it cannot.
+    if (!(await this.clearFrameSlots())) await this.reloadProject()
+    await this.ensureAgentOff()
+    for (const path of [startImage, endImage]) if (path) await this.uploadToProject(path)
+    await this.ensureVideoConfigRebuilt({
+      model: videoModel,
+      aspect: req.aspect ?? DEFAULT_VIDEO_ASPECT,
+      duration,
+      count: req.count ?? 1,
+      frames: Boolean(startImage || endImage),
+    })
+    if (startImage) await this.fillFrameSlotRebuilt('Start', basename(startImage))
+    if (endImage) await this.fillFrameSlotRebuilt('End', basename(endImage))
+    await this.markTurnStart()
+    const tilesBefore = await this.page.locator('flow-video-tile').count()
+    await this.setPrompt(motion)
+    await this.clickSubmit()
+    await this.confirmSubmitted(tilesBefore)
+  }
+
+  /**
+   * Block until Flow has actually TAKEN the generation, not merely looked like it.
+   *
+   * 🔴 2026-09-20, and this one cost a whole run. `clickSubmit` returns once the prompt box
+   * has cleared, which Flow does OPTIMISTICALLY — the box empties client-side while the POST
+   * is still in flight. That is a perfectly good signal for `generateVideo`, which waits for
+   * the clip next and so never races it. It is a trap for `submitVideo`, whose whole job is to
+   * return early: the caller's next submit begins with `reloadProject()`, and a reload kills an
+   * un-acknowledged request. Forty prompts went in that way and about sixteen rendered,
+   * scattered at random through the run, with no error card anywhere — because the dropped ones
+   * were never sent at all.
+   *
+   * An in-progress generation mounts its own `flow-video-tile` (thumbnail-less, which is why
+   * `videoTileKeys` cannot see it), so a rise in the raw tile count is proof the server has the
+   * job. The fallback wait exists because the gallery is virtualised and a tile mounted
+   * off-screen may not register — in that case waiting out the window is still far better than
+   * reloading over a live request.
+   */
+  private async confirmSubmitted(tilesBefore: number): Promise<void> {
+    const deadline = Date.now() + SUBMIT_CONFIRM_MS
+    while (Date.now() < deadline) {
+      if ((await this.page.locator('flow-video-tile').count()) > tilesBefore) return
+      await this.page.waitForTimeout(500)
+    }
+  }
+
+  /**
+   * Empty the Start/End frame slots WITHOUT reloading, returning false if it could not.
+   *
+   * 🔴 This exists to kill a reload, and the reload was destroying generations. `submitVideo`
+   * used to call `reloadProject()` purely to clear the slots — the only certain clear we had —
+   * and a reload moments after submitting appears to abort the render: clips submitted that way
+   * came back at 30-50%, while the same prompts on the serial path (which stays on the page and
+   * waits) came back at ~100%, including three that had "failed" five times running and were
+   * briefly, wrongly, suspected of being policy-blocked. Kai called this one before the code
+   * did: Flow shows a placeholder, then the front end fills it in, so walking off the page
+   * mid-job loses the job.
+   *
+   * Returns false rather than throwing when the chip has no reachable remove control, so the
+   * caller can fall back to the reload it was doing before — slow and lossy beats stuck.
+   */
+  private async clearFrameSlots(): Promise<boolean> {
+    const triggers = this.page.locator('flow-prompt-box .frame-trigger')
+    const n = await triggers.count()
+    for (let i = 0; i < n; i++) {
+      const t = triggers.nth(i)
+      if (await t.locator('button.empty-chip').count()) continue
+      await t.hover().catch(() => {})
+      const remove = t
+        .locator('button[aria-label*="emove" i], button[aria-label*="lear" i], button[aria-label*="lose" i]')
+        .or(t.locator('button').filter({ hasText: /^\s*(close|cancel|remove)\s*$/i }))
+        .first()
+      if (await remove.count()) await remove.click({ timeout: 3_000 }).catch(() => {})
+      await this.page.waitForTimeout(400)
+      if (!(await t.locator('button.empty-chip').count())) return false
+    }
+    return true
+  }
+
+  /** Thumbnail keys of every finished video tile — the handle `harvestVideoTile` takes. */
+  async videoTiles(): Promise<string[]> {
+    return [...(await this.videoTileKeys())]
+  }
+
+  /**
+   * Download one finished clip by its thumbnail key, as returned by `videoTiles()`.
+   *
+   * Read the keys and download in one pass: they are signed thumbnail URLs and rotate, so a
+   * key held across a page reload no longer resolves to its tile.
+   */
+  async harvestVideoTile(key: string, outPath: string): Promise<string> {
+    const tile = this.page.locator('flow-video-tile').filter({ has: this.page.locator(`img[src="${key}"]`) }).first()
+    return await this.downloadFromTile(tile, outPath)
+  }
+
   /** Upload a local file into the project through the top bar's Add media → Upload. */
   private async uploadToProject(path: string): Promise<void> {
+    const name = basename(path)
     await this.page.getByRole('button', { name: 'Add media menu' }).click()
     const item = this.page.locator('.cdk-overlay-container [role="menuitem"]').filter({ hasText: /^\s*upload\s*Upload\s*$/ }).first()
     await item.waitFor({ state: 'visible', timeout: 10_000 })
     const chooser = this.page.waitForEvent('filechooser', { timeout: 15_000 })
     await item.click()
     await (await chooser).setFiles(path)
+    await this.assertUploadAccepted(name)
+  }
+
+  /**
+   * Fail loudly if Flow rejected the file, instead of letting the next step guess.
+   *
+   * 🔴 Flow can REFUSE an upload, and it says so only in a toast that clears itself after a few
+   * seconds. Measured 2026-09-21: two stills of schoolchildren were refused every single time
+   * ("Failed to upload gaze-38-17-f1-b.jpg"), and because nothing watched for it the failure
+   * surfaced downstream as FRAME_SOURCE_NOT_FOUND — which reads as a picker bug and sent a whole
+   * debugging session after the wrong thing, twice. An upload that was refused is a decision
+   * about the PICTURE and no amount of retrying changes it, so it must be named as such.
+   *
+   * Absence of a toast is the pass: waiting for a success signal Flow does not emit would just
+   * add a timeout to every good upload.
+   */
+  private async assertUploadAccepted(name: string): Promise<void> {
+    const deadline = Date.now() + UPLOAD_VERDICT_MS
+    const toast = this.page.getByText(`Failed to upload ${name}`, { exact: false })
+    while (Date.now() < deadline) {
+      if (await toast.count()) throw new Error(`UPLOAD_REFUSED: Flow would not accept ${name}`)
+      await this.page.waitForTimeout(500)
+    }
   }
 
   /** Set every video control in the Settings popover and verify the trigger label. */
@@ -2369,13 +2589,35 @@ export class FlowClient {
    * Put an already-uploaded file into a Start/End slot via "Select a frame image". The newest
    * option with that exact filename wins (the list is Recent-first); an option still reading
    * "Uploading…" is not a match, so this waits the upload out rather than picking a neighbour.
+   *
+   * 🔴 SEARCH FIRST, always. The picker opens on RECENT, and recent is only about fifteen
+   * assets — measured 2026-09-21, when two shots failed `FRAME_SOURCE_NOT_FOUND` over and over
+   * on a project holding forty-six stills. Their files were uploaded, valid and present; they
+   * had simply been pushed off the end of the recent list by the day's other uploads, so the
+   * wait for their option could never come true and burned a full turn timeout each attempt.
+   * The list is not scrollable to them either — the overlay's "Search assets" box is the only
+   * route, so typing the filename is the normal path and not a fallback for a missing option.
    */
   private async fillFrameSlotRebuilt(slot: 'Start' | 'End', fileName: string): Promise<void> {
     const trigger = this.page.locator('flow-prompt-box .frame-trigger').nth(slot === 'Start' ? 0 : 1)
     await trigger.locator('button.empty-chip').click()
     const overlay = this.page.locator('.cdk-overlay-container')
+    // Narrow the list to this one file before looking for it. Filtering is what makes the wait
+    // below meaningful: unfiltered, "not visible" means "not recent", not "not there".
+    const search = overlay.locator('input[placeholder*="Search" i]').first()
+    if (await search.isVisible({ timeout: 5_000 }).catch(() => false)) {
+      await search.fill(fileName).catch(() => {})
+      // The filter is debounced; without this the first poll reads the unfiltered list.
+      await this.page.waitForTimeout(1_200)
+    }
     const option = overlay.locator('[role="option"]').filter({ hasText: new RegExp(`^\\s*${escapeRegExp(fileName)}\\s*$`) }).first()
-    await option.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS }).catch(() => { throw new Error(`FRAME_SOURCE_NOT_FOUND: ${fileName}`) })
+    await option.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS }).catch(async () => {
+      // 🔴 Leave and the dialog's backdrop stays up, invisible, swallowing every later click.
+      // Measured 2026-09-21: one refused upload failed here and the NEXT THREE submissions died
+      // on "Add media menu" timeouts that had nothing wrong with them. Always close the door.
+      await this.dismissOverlay()
+      throw new Error(`FRAME_SOURCE_NOT_FOUND: ${fileName}`)
+    })
     await option.click()
     // Two behaviours, both measured 2026-09-13: sometimes the click only PREVIEWS and "Add to
     // prompt" commits it; sometimes the click commits at once and the dialog (and its button)
@@ -2391,6 +2633,26 @@ export class FlowClient {
   }
 
   /** Thumbnail srcs of the video tiles on screen — the only per-clip handle the rebuilt grid exposes. */
+  /**
+   * Wait until the gallery has finished lazy-loading, so a `before` snapshot is COMPLETE.
+   *
+   * Returns as soon as the key set stops growing for two consecutive polls, and gives up
+   * after a short ceiling rather than hanging — a snapshot that is merely probably complete
+   * is still far better than one taken mid-render, and `VIDEO_MIN_RENDER_MS` covers the rest.
+   */
+  private async settleVideoTiles(): Promise<Set<string>> {
+    let keys = await this.videoTileKeys()
+    let stable = 0
+    const deadline = Date.now() + 20_000
+    while (Date.now() < deadline && stable < 2) {
+      await this.page.waitForTimeout(1_000)
+      const next = await this.videoTileKeys()
+      stable = next.size === keys.size ? stable + 1 : 0
+      keys = next
+    }
+    return keys
+  }
+
   private async videoTileKeys(): Promise<Set<string>> {
     const keys = await this.page.locator('flow-video-tile img.thumbnail').evaluateAll((els) => els.map((e) => (e as HTMLImageElement).src).filter(Boolean))
     return new Set(keys)
@@ -2402,13 +2664,22 @@ export class FlowClient {
    * seconds, not after eight minutes.
    */
   private async waitForNewVideoTiles(before: Set<string>, expected: number, timeoutMs: number): Promise<string[]> {
-    const deadline = Date.now() + timeoutMs
+    const started = Date.now()
+    const deadline = started + timeoutMs
+    const floor = started + VIDEO_MIN_RENDER_MS
     let grace = Number.POSITIVE_INFINITY
     let found: string[] = []
     while (Date.now() < Math.min(deadline, grace)) {
       const card = await this.detectFailureCard()
       if (card === 'blocked' && !found.length) throw new Error('POLICY_BLOCKED')
+      if (card === 'refused') throw new Error('GENERATION_REFUSED: Flow gave up on this generation and says it was not charged — safe to retry')
       found = [...(await this.videoTileKeys())].filter((k) => !before.has(k))
+      // Anything this early is the gallery finishing its own load, not our render.
+      if (Date.now() < floor) {
+        found = []
+        await this.page.waitForTimeout(VIDEO_POLL_MS)
+        continue
+      }
       if (found.length >= expected) return found.slice(0, expected)
       if (found.length && grace === Number.POSITIVE_INFINITY) grace = Date.now() + VIDEO_SIBLING_GRACE_MS
       await this.page.waitForTimeout(VIDEO_POLL_MS)
@@ -2989,6 +3260,7 @@ export class FlowClient {
     while (Date.now() < deadline && Date.now() < graceDeadline) {
       const card = await this.detectFailureCard()
       if (card === 'blocked') throw new Error('POLICY_BLOCKED')
+      if (card === 'refused') throw new Error('GENERATION_REFUSED: Flow gave up on this generation and says it was not charged — safe to retry')
       if (card === 'error') await this.approveCreditGateIfPresent(5_000)
       if (card === 'queued') deadline = Math.min(Date.now() + timeoutMs, deadline + timeoutMs)
       for (const n of await this.scrapeMediaNames()) {
@@ -3012,6 +3284,7 @@ export class FlowClient {
     while (Date.now() < deadline) {
       const card = await this.detectFailureCard()
       if (card === 'blocked') throw new Error('POLICY_BLOCKED')
+      if (card === 'refused') throw new Error('GENERATION_REFUSED: Flow gave up on this generation and says it was not charged — safe to retry')
       if (card === 'error') await this.approveCreditGateIfPresent(5_000)
       // Keep waiting while Flow says it is queued, up to a hard ceiling so a stuck queue
       // cannot hang forever.
@@ -3177,6 +3450,7 @@ export class FlowClient {
     while (Date.now() < deadline) {
       const card = await this.detectFailureCard()
       if (card === 'blocked') throw new Error('POLICY_BLOCKED')
+      if (card === 'refused') throw new Error('GENERATION_REFUSED: Flow gave up on this generation and says it was not charged — safe to retry')
       const now = await this.readSceneDuration()
       if (now !== null && (before === null || now > before + 0.5)) {
         const at = parseAnySceneUrl(this.page.url())

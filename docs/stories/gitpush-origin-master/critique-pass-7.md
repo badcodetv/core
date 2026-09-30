@@ -49,7 +49,7 @@ empty street that opens the cut. *But/therefore* instead of *and then*: the worl
 | cut 6 | *"Nothing was scarce. So nothing was worth anything."* | over the pub (M5) — optional |
 | cut 6 | the piano playing to nobody | kept — it is the hinge: a perfect performance with nobody inside |
 | cut 9 | *"It worked. Nobody was there to see it."* | over the delivery robot (M3) |
-| cut 9 | *"I built forty million of them"* / the unscheduled thought | **dropped from the short cut**; bank in `songs/narration.md` §6 |
+| cut 9 | *"I built forty million of them"* / the unscheduled thought | **dropped from the short cut**; bank in `songs/archive/narration-v5.5.md` §6 |
 
 ## The merged cut — `ghosts`, as a beat list
 
@@ -99,7 +99,7 @@ cut-17 callback, the refuser, R11 (the ninety-nine are spent), the coin totem lo
 - 🔴 **The timeline.** Build the merged `ghosts` cut in `gpom-story.prproj` from the beat list above.
   Blocked 2026-09-13: another session held the Premiere bridge. See `scenes/ghosts.md` §Premiere.
 - 🟡 Home for *handed over, not seized*.
-- 🟡 `songs/narration.md` GEN E (cut 5, ~72s) and the cut-6 draft lines re-timed to ~48s total with
+- 🟡 `songs/archive/narration-v5.5.md` GEN E (cut 5, ~72s) and the cut-6 draft lines re-timed to ~48s total with
   the ghosts' lines.
 - 🟡 Mute test on the combined sheets for new cuts 6–9 before firing stills.
 - 🟡 Ruling on whether old 15 + 16 stay merged.

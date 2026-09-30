@@ -22,6 +22,7 @@
  */
 import { chromium, type Browser, type Page } from 'playwright'
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs'
+import { execFileSync } from 'node:child_process'
 // take-row.mts is the pure half and imports nothing from here (a two-way import is an init cycle).
 import {
   classifyCoverState,
@@ -49,7 +50,7 @@ import {
  * browser, so it must resolve the same channel rather than assuming 9222.
  *
  * Precedence: SUNO_CDP_ENDPOINT → FLOW_CDP_PORT → the channel this session's flow MCP server
- * has locked → 9222. Get a channel with `./scripts/browser-channel.sh claim`; never pick a port.
+ * has locked → 9222. connect() launches that channel's browser if it is down — never `claim`.
  */
 function resolveEndpoint(): string {
   if (process.env.SUNO_CDP_ENDPOINT) return process.env.SUNO_CDP_ENDPOINT
@@ -163,6 +164,8 @@ export interface GridAxes {
   variety?: VarietyStep[]
   maxMode?: boolean[]
   weirdness?: number[]
+  /** Only meaningful with a Voice (or audio) attached; cells are titled `-ai<N>` when >1. */
+  audioInfluence?: number[]
 }
 
 /** The model as it appears in a title (v6 → `v6`, v6-wild → `wild`). Lives in take-row.mts. */
@@ -229,10 +232,25 @@ async function isOurs(p: Page): Promise<boolean> {
   }
 }
 
+/**
+ * 🔴 2026-09-28: start THIS session's browser rather than asking for one. Telling the agent to run
+ * `browser-channel.sh claim` opened a second Chrome whenever the flow MCP already held a channel
+ * whose browser was down (claim skips held channels). The endpoint above already names the
+ * session's channel, so bring that one up. An explicit SUNO_CDP_ENDPOINT is never launched over.
+ */
+async function ensureBrowser(): Promise<void> {
+  const up = await fetch(`${ENDPOINT}/json/version`, { signal: AbortSignal.timeout(1500) }).then((r) => r.ok, () => false)
+  if (up || process.env.SUNO_CDP_ENDPOINT) return
+  const port = Number(new URL(ENDPOINT).port)
+  const script = new URL('../browser-channel.sh', import.meta.url).pathname
+  execFileSync(script, ['up', String(port - 9221)], { stdio: ['ignore', 2, 2], timeout: 60_000 })
+}
+
 export async function connect(): Promise<{ browser: Browser; page: Page }> {
+  await ensureBrowser()
   const browser = await chromium.connectOverCDP(ENDPOINT)
   const ctx = browser.contexts()[0]
-  if (!ctx) throw new Error('NO_CONTEXT — is a browser channel up? ./scripts/browser-channel.sh claim')
+  if (!ctx) throw new Error('NO_CONTEXT — the browser on ' + ENDPOINT + ' has no window. `./scripts/browser-channel.sh list`, then `up <n>` for this session\'s channel — never `claim`, which opens a second browser')
   const suno = ctx.pages().filter((p) => p.url().includes('suno.com'))
 
   for (const p of suno) if (await isOurs(p)) return { browser, page: p }
@@ -266,7 +284,7 @@ export function requireCreate(page: Page): void {
 export async function listTabs(): Promise<string> {
   const browser = await chromium.connectOverCDP(ENDPOINT)
   const ctx = browser.contexts()[0]
-  if (!ctx) throw new Error('NO_CONTEXT — is a browser channel up? ./scripts/browser-channel.sh claim')
+  if (!ctx) throw new Error('NO_CONTEXT — the browser on ' + ENDPOINT + ' has no window. `./scripts/browser-channel.sh list`, then `up <n>` for this session\'s channel — never `claim`, which opens a second browser')
   const out: string[] = []
   for (const [i, p] of ctx.pages().entries()) {
     let t = ''
@@ -285,7 +303,7 @@ export async function listTabs(): Promise<string> {
 export async function openTab(): Promise<void> {
   const browser = await chromium.connectOverCDP(ENDPOINT)
   const ctx = browser.contexts()[0]
-  if (!ctx) throw new Error('NO_CONTEXT — is a browser channel up? ./scripts/browser-channel.sh claim')
+  if (!ctx) throw new Error('NO_CONTEXT — the browser on ' + ENDPOINT + ' has no window. `./scripts/browser-channel.sh list`, then `up <n>` for this session\'s channel — never `claim`, which opens a second browser')
   for (const p of ctx.pages()) {
     // Drop a stale mark first, so exactly one tab ever answers to it.
     if (p.url().includes('suno.com') && (await isOurs(p))) {
@@ -510,7 +528,22 @@ async function checkV6(page: Page, spec: Partial<SunoSpec>, v: Record<string, un
  */
 export async function setLyrics(page: Page, text: string): Promise<number> {
   const lyr = page.locator('[aria-label="Lyrics editor"]')
-  await lyr.click()
+  // 🔴 A mouse click here fails on a narrow/fresh window: the Styles textarea and the panel header
+  //    sit over the editor, so Playwright retries for 30s and times out (2026-09-18). Focusing the
+  //    contenteditable directly is what Lexical actually needs; the click is only the fallback.
+  await lyr.scrollIntoViewIfNeeded().catch(() => {})
+  const focused = await page.evaluate(`(() => {
+    const el = document.querySelector('[aria-label="Lyrics editor"]');
+    if (!el) return false;
+    el.focus();
+    const sel = window.getSelection();
+    const r = document.createRange();
+    r.selectNodeContents(el);
+    sel.removeAllRanges();
+    sel.addRange(r);
+    return document.activeElement === el;
+  })()`)
+  if (!focused) await lyr.click({ timeout: 10000 })
   await page.keyboard.press('ControlOrMeta+a')
   await page.keyboard.press('Delete')
   const lines = text.split('\n')
@@ -549,32 +582,46 @@ export async function setWorkspace(page: Page, name: string): Promise<string> {
      const btn = label.querySelector('button') ||
                  (label.parentElement && label.parentElement.querySelector('button'));
      if (!btn) return 'no-picker';
-     btn.scrollIntoView({ block: 'center' }); btn.click(); return 'opened';`,
+     btn.scrollIntoView({ block: 'center' }); btn.setAttribute('data-bc-ws', '1'); return 'marked';`,
   )
-  if (opened !== 'opened') return `workspace:${opened}`
-  await page.waitForTimeout(1200)
+  if (opened !== 'marked') return `workspace:${opened}`
+  // 🔴 2026-09-20: a DOM el.click() on this trigger does NOT open the dialog — aria-expanded stays
+  //    false and the search box never mounts, which surfaced one step later as `no-exact-row`
+  //    (a stale/closed dialog). Radix wants a REAL mouse click here, exactly like More Options.
+  const trigger = page.locator('button[data-bc-ws="1"]')
   const search = page.locator('input[placeholder="Search or create..."]')
+  for (let i = 0; i < 3 && !(await search.count()); i++) {
+    await trigger.first().click({ timeout: 5000 }).catch(() => {})
+    await page.waitForTimeout(1200)
+  }
   if (!(await search.count())) return 'workspace:no-search'
   await search.first().fill(name)
   await page.waitForTimeout(900)
-  const picked = await ev(
-    page,
-    `const pop = [...document.querySelectorAll('[role="dialog"],[role="menu"],[role="listbox"]')].filter(live).pop();
-     if (!pop) return 'no-popover';
-     const row = [...pop.querySelectorAll('*')].filter(e => live(e)
-       && c(e.textContent).toLowerCase().startsWith(String(a[0]).toLowerCase())
-       && c(e.textContent).length < 60).pop();
-     if (!row) return 'no-row';
-     let n = row;
-     for (let i = 0; i < 6 && n; i++, n = n.parentElement) {
-       if (n.tagName === 'BUTTON' || /cursor-pointer/.test(String(n.className))) { n.click(); return 'picked'; }
-     }
-     row.click(); return 'picked-leaf';`,
-    name,
-  )
+  // 🔴 2026-09-16: a DOM el.click() on a prefix-matched row filed a round into "gpom-story-recut"
+  // when "gpom-story" was asked for. Rows read "<name> (<N> clips)". Use a REAL click on the row
+  // whose name matches EXACTLY, then read the Save-to label back and refuse on a mismatch.
+  const esc = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  // 🔴 2026-09-18: `button` alone also matches the PICKER TRIGGER, whose label is the current
+  //    workspace name — so once the form already reads `gpom-story` the click hit the open trigger
+  //    and timed out. Rows carry no aria-haspopup; the trigger does.
+  const row = page.locator('button:not([aria-haspopup])', { hasText: new RegExp(`^\\s*${esc}\\s*(\\(\\d[\\d,]*\\s+clips?\\))?\\s*$`, 'i') })
+  if (!(await row.count())) {
+    await page.keyboard.press('Escape')
+    return `workspace:no-exact-row for "${name}"`
+  }
+  await row.first().click()
   await page.waitForTimeout(900)
   await page.keyboard.press('Escape')
-  return `workspace:${picked}`
+  await page.waitForTimeout(500)
+  const now = await ev(
+    page,
+    `const l = [...document.querySelectorAll('div,section')].filter(e => live(e)
+       && /^Save to\\.\\.\\./.test(c(e.textContent)) && c(e.textContent).length < 60).pop();
+     return l ? c(l.textContent).replace(/^Save to\\.\\.\\./, '') : null;`,
+  )
+  return String(now).toLowerCase() === name.toLowerCase()
+    ? `workspace:picked ${now} ✅`
+    : `workspace:WRONG — reads ${JSON.stringify(now)}, wanted ${name}`
 }
 
 /**
@@ -585,6 +632,22 @@ export async function setWorkspace(page: Page, name: string): Promise<string> {
  * cut's 174 BPM terrace chant — and the box looks populated afterwards, so it is silent.
  * Kai's ruling, 2026-08-24: ALWAYS Keep Current.
  */
+/**
+ * Detach whatever Voice is currently attached, via `aria-label="Remove selected Voice"`.
+ * 🔴 Added 2026-09-16: a bed/instrumental spec with no `voice` used to just throw
+ * (VOICE_STILL_ATTACHED) and hand the fix to a human. `load` now calls this itself.
+ */
+async function detachVoice(page: Page): Promise<string> {
+  const r = await ev(
+    page,
+    `const b = [...panel().querySelectorAll('button[aria-label="Remove selected Voice"]')].filter(live);
+     if (!b.length) return 'no-button';
+     b[0].scrollIntoView({ block: 'center' }); b[0].click(); return 'clicked';`,
+  )
+  await page.waitForTimeout(800)
+  return `voice:detach:${r}`
+}
+
 async function attachVoice(page: Page, name: string): Promise<string> {
   const opened = await ev(
     page,
@@ -793,11 +856,13 @@ async function load(page: Page, spec: SunoSpec, weirdness?: number) {
     console.log(await attachVoice(page, spec.voice))
     console.log(await setSlider(page, 'Audio Influence', spec.audioInfluence ?? 50))
   } else if (await voiceOn()) {
-    throw new Error(
-      'a saved Voice is still ATTACHED (the Audio Influence slider is present) but this spec asks ' +
-        'for none — an instrumental generation would carry a vocal persona. Detach it by hand ' +
-        '(the Voice chip in the Advanced panel) and re-run, or set `voice` in the spec.',
-    )
+    console.log(await detachVoice(page))
+    if (await voiceOn()) {
+      throw new Error(
+        'a saved Voice is still ATTACHED after detachVoice() — the selector may have changed. ' +
+          'Detach it by hand (the Voice chip in the Advanced panel) and re-run.',
+      )
+    }
   } else {
     console.log('voice: none attached ✅')
   }
@@ -805,11 +870,14 @@ async function load(page: Page, spec: SunoSpec, weirdness?: number) {
     spec.durationSec ? await setDuration(page, spec.durationSec) : await setDurationAuto(page),
   )
   if (spec.title) console.log('title:', await setTitle(page, spec.title))
-  if (spec.workspace) console.log(await setWorkspace(page, spec.workspace))
+  const ws = spec.workspace ? await setWorkspace(page, spec.workspace) : null
+  if (ws) console.log(ws)
 
   // Assertions that actually catch things. Character count passes on a broken lyrics load.
   const v = (await verify(page)) as Record<string, unknown>
   const problems: string[] = []
+  // A wrong workspace is a BLOCKER: takes filed elsewhere are moved back by hand.
+  if (ws && !ws.includes('✅')) problems.push(ws)
   if (v.styleLen !== spec.style.length)
     problems.push(`style ${v.styleLen}/${spec.style.length} — TRUNCATED at the ${v.styleCap} cap?`)
   if (v.excludeLen !== spec.exclude.length)
@@ -899,6 +967,13 @@ export async function setDuration(page: Page, seconds: number): Promise<string> 
     Math.round(seconds),
   )
   await page.waitForTimeout(700)
+  // 🔴 v6 (2026-09-16): clicking Custom MOUNTS a Duration slider (default 180) that is the control
+  // Suno actually obeys — the number input read back 80 while the takes came out at 2:59. When the
+  // slider exists, drive it and trust only it.
+  if (((await page.locator('[role="slider"][aria-label="Duration"]').count()) as number) > 0) {
+    const r = await setSlider(page, 'Duration', Math.round(seconds))
+    return r === `Duration=${Math.round(seconds)}` ? `duration:${Math.round(seconds)}s ✅ (slider)` : `duration:UNCONFIRMED (${res}, slider ${r})`
+  }
   const back = await ev(
     page,
     `const i = document.querySelector('input[placeholder="Auto"][type=number]') ||
@@ -1292,6 +1367,7 @@ export interface RunCell {
   maxMode: boolean
   weirdness: number
   styleInfluence: number
+  audioInfluence?: number
   title: string
 }
 
@@ -1305,7 +1381,15 @@ export function gridCells(spec: SunoSpec) {
   const models = g.model ?? [spec.model as string]
   const varieties = g.variety ?? [spec.variety ?? 'normal']
   const maxes = g.maxMode ?? [spec.maxMode ?? false]
-  const ws = g.weirdness ?? spec.weirdness ?? [30, 60]
+  // `weirdness` is an array on a grid axis but a plain number everywhere else in a spec, and
+  // `load`/`pair` strip `grid` before calling here — so a perfectly ordinary spec arrived with a
+  // scalar and died on `for…of` (2026-09-21, gpom-c3b-climate). Accept both shapes.
+  const wsRaw = g.weirdness ?? spec.weirdness ?? [30, 60]
+  const ws = Array.isArray(wsRaw) ? wsRaw : [wsRaw]
+  // Audio Influence IS a grid axis (Kai, 2026-09-19: "a couple of variations of weirdness and audio
+  // influence"). It only does anything when a Voice or audio is attached — with neither, every cell
+  // is the same take at twice the price.
+  const ais = g.audioInfluence ?? [spec.audioInfluence ?? 50]
   // Style Influence is not a grid axis: every grid/pair cell carries the spec's one value.
   const styleInfluence = spec.styleInfluence ?? 75
   const cells: RunCell[] = []
@@ -1313,18 +1397,21 @@ export function gridCells(spec: SunoSpec) {
     for (const variety of varieties)
       for (const maxMode of maxes)
         for (const weirdness of ws)
+        for (const audioInfluence of ais)
           cells.push({
             model,
             variety,
             maxMode,
             weirdness,
             styleInfluence,
+            audioInfluence,
             title: [
               spec.title,
               modelTag(model),
               varieties.length > 1 ? `var-${variety}` : '',
               maxes.length > 1 ? (maxMode ? 'max' : 'nomax') : '',
               `w${weirdness}`,
+              ais.length > 1 ? `ai${audioInfluence}` : '',
             ].filter(Boolean).join('-'),
           })
   return cells
@@ -1681,7 +1768,17 @@ if (cmd === 'extract') {
   await browser.close()
 } else if (cmd === 'takes') {
   const { browser, page } = await connect()
-  console.log(JSON.stringify(await listTakes(page, rest[0] ?? ''), null, 2))
+  const filter = (rest.find((a) => !a.startsWith('--')) ?? '')
+  const takes = (await listTakes(page, filter)) as Take[]
+  // 🔑 `--links` prints what a human actually wants pasted back: NAME · length · the song URL.
+  //    Kai, 2026-09-19: a bare /song/<uuid> says nothing about which take it is.
+  if (rest.includes('--links')) {
+    for (const t of takes) {
+      console.log(`${t.title ?? '(untitled)'}  ${t.dur ?? '—'}  https://suno.com/song/${t.songId}`)
+    }
+  } else {
+    console.log(JSON.stringify(takes, null, 2))
+  }
   await browser.close()
 } else if (cmd === 'narrow') {
   // `narrow <spec.json> <songId|id8|title> --round <N> [--yes]` — decision 7. Dry run by default.
@@ -1830,7 +1927,7 @@ if (cmd === 'extract') {
   const takeFilter = cmd === 'explore' ? `${spec.title}-r${round}-` : spec.title
   if (cmd === 'grid-plan') {
     console.log(`${cells.length} Creates → ${cells.length * 2} takes, into workspace ${spec.workspace ?? '(unset!)'}`)
-    for (const c of cells) console.log(`  ${c.title}   model=${c.model} variety=${c.variety} max=${c.maxMode} w=${c.weirdness}`)
+    for (const c of cells) console.log(`  ${c.title}   model=${c.model} variety=${c.variety} max=${c.maxMode} w=${c.weirdness} audio=${c.audioInfluence}`)
     process.exit(0)
   }
   if (cmd === 'explore' && !rest.includes('--yes')) {
@@ -1868,6 +1965,7 @@ if (cmd === 'extract') {
         console.log(await setModel(page, cell.model))
         console.log(await setV6Controls(page, cellSpec))
         console.log(await setSlider(page, 'Style Influence', cell.styleInfluence))
+        console.log(await setSlider(page, 'Audio Influence', cell.audioInfluence ?? spec.audioInfluence ?? 50))
         console.log(await setSlider(page, 'Weirdness', cell.weirdness))
         console.log('title:', await setTitle(page, cell.title))
         const v = (await verify(page)) as Record<string, unknown>
@@ -1908,7 +2006,9 @@ Personalize is ALWAYS OFF and My Taste is not used (Kai, 2026-09-10).
                                   the listening loop's spread: v6 w30 style 75 + v6-wild w60
                                   style 60, Variety off, Max Mode off. Without --yes: print the
                                   two cells and the cost, spend nothing. --round is required.
-  takes [titleFilter]             list clip rows with durations and song IDs
+  takes [titleFilter] [--links]   list clip rows with durations and song IDs
+                                  --links prints: title, length, song URL — one take per line,
+                                  that is the form a round gets REPORTED in (Kai, 2026-09-19)
   narrow <spec.json> <songId|id8|title> --round <N> [--yes]
                                   cover the pick with the spec's (refined) boxes: two Creates at
                                   Audio Influence 75 and 40, weirdness 30, style 75, Variety off,

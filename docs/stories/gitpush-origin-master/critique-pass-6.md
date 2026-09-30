@@ -27,7 +27,7 @@ in itself; this review found no need to change it.
 
 Read: `story.md`, `coda-fork.md`, `ending-rework-2026-09-11.md`, the AI character sheet,
 `future-proof.md`, the production cut-order and revision records in `prompts.md`, the opening
-narration records in `songs/narration.md`, and the rebuilt bulletin ledger in `scenes/bulletin.md`.
+narration records in `songs/archive/narration-v5.5.md`, and the rebuilt bulletin ledger in `scenes/bulletin.md`.
 The reader rules, checklist, principles and earlier trust/accountability rulings were consulted.
 Scene 20 has no finished sequence to assess: these conclusions concern writing and production
 specification, not measured audience response or a screening of the completed film.
@@ -67,7 +67,7 @@ whose conduct the second sentence judges.
 
 The production history strengthens this narrower objection: the opening narration records the AI
 appropriating hardware unnoticed and pushing the humans “from their ORIGIN to their MASTER”
-(`songs/narration.md`, cuts 1–2). The handover ladder remains deferred (`prompts.md`, §2c).
+(`songs/archive/narration-v5.5.md`, cuts 1–2). The handover ladder remains deferred (`prompts.md`, §2c).
 The film therefore gives the closing voice less warrant to summarise the catastrophe as public
 voluntary surrender than the new internal theme sentence assumes. Fear can remain a proposed
 causal mechanism, but the ending cannot retroactively make it the demonstrated cause of every event.

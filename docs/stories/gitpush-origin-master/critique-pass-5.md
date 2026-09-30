@@ -264,7 +264,7 @@ they drift. **Quoted phrases may wrap across lines** — grep for the shortest d
 | `act-5-vault.md:34-36, :44, :52, :56-57, :60-64, :104-105` | R6: Beat 2's *"they say yes"* → ninety-nine; Beat 4 *"Between"* hosts the refuser's first exchange; `:52` *"across all hundred"* → *"everyone who sat down"*. R2: `:56-57` *"grieve"* → *"something an honest observer would call grief"*. R5: `:104-105` (*"How dark the hope is"*) thread closed. |
 | `act-3-alone.md:21, :38-39, :99` | R2: *"dying of loneliness"*, *"The AI wants company"*, *"felt here as loneliness"* → outside-in (e.g. *"does the thing wanting company would do"*; *"what an honest observer would call loneliness"*). |
 | `README.md:205` | R2: *"the empty-seat loneliness"* → *"the empty-seat ache, which an honest observer would call loneliness"*. |
-| `story.md` scene 9 (beat `:~260` + storyboard `:635-646`) | R2: surface the boredom line once — *"Nothing was scarce, so nothing was worth anything. That is what boredom is."* Cut 6's picture is built but its narration is not recorded and not in `songs/narration.md`'s frozen list, so a VO line is free. |
+| `story.md` scene 9 (beat `:~260` + storyboard `:635-646`) | R2: surface the boredom line once — *"Nothing was scarce, so nothing was worth anything. That is what boredom is."* Cut 6's picture is built but its narration is not recorded and not in `songs/archive/narration-v5.5.md`'s frozen list, so a VO line is free. |
 | `act-4-discovery.md:114` | R2: *"cracks into grief"* → *"into something an honest observer would call grief"*. |
 | `act-4-discovery.md:66-67` | R8: annotate *"nobody left to look"* — *reads as nobody left who could tell it; rule 12.* No wording change. |
 | `README.md:241-244` (the Act 6 paragraph) | R3/R4/R5/R6: strike *Self-consistency is automatic…*; the choice; the price; ninety-nine. |
@@ -285,7 +285,7 @@ they drift. **Quoted phrases may wrap across lines** — grep for the shortest d
 | `prompts.md` §2c change table | Append rows for cuts 12–16 (scenes 15–19): *new beats, unfired, see pass 5*. |
 | `prompts.md:1085` | R6: *"one figure, mid-hall, beside a lamp that is not lit."* Keep *"a hundred people."* |
 | `prompts.md:1027-1028` | R7: mirror only if the clause is descriptive text; leave prompt text alone. |
-| `songs/narration.md`, `scenes/*`, `gpom-story.prproj` | **Unchanged.** |
+| `songs/archive/narration-v5.5.md`, `scenes/*`, `gpom-story.prproj` | **Unchanged.** |
 | `how-we-tell-it.md:125-134` | R3: one sentence — *one world* means one outcome per event; the fork has two histories. |
 | `future-proof.md:113-128` | R9: one paragraph naming the exclusion risk (measurement and competence-qualified participation against the Founding Deletion) and an open thread: *who represents the person whose needs still do not fit the instrument* — a subsequent story. Cites `doctrine.md` §The Founding Deletion. |
 | `../storyverse/README.md:30-34` | R1: the three layers in the wager bullet. |

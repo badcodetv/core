@@ -271,5 +271,5 @@ the self-interest seed in §3c, and the narrowed git surface in §4 and §5.
 - The `s01-the-push.md` "unbuilt" vs `prompts.md` §2c "parked" discrepancy on the terminal
   register — carried from pass 3, still unresolved.
 - Whether cut 3's VO re-cut is worth doing now or batched with other cut-3 changes.
-- `songs/narration.md` §2's cut-3 table still needs the seed line and a re-time — **not touched
+- `songs/archive/narration-v5.5.md` §2's cut-3 table still needs the seed line and a re-time — **not touched
   here, because another session was editing that file.**

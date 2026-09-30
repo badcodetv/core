@@ -1,7 +1,7 @@
 # Thread 08 — GPOM: the narration track, on Suno v6, dry and separate
 
 You are in `~/projects/badcode/badcode`. Read `CLAUDE.md`, then
-`docs/stories/gitpush-origin-master/songs/narration.md` (the v5.5 sheet, archived 2026-09-10: the
+`docs/stories/gitpush-origin-master/songs/archive/narration-v5.5.md` (the v5.5 sheet, archived 2026-09-10: the
 `badcode newsreader` Voice, weirdness 30 good / 60 broken for speech, words FROZEN, dry-and-separate
 structure), `docs/suno-gpt/files/suno-v6.md` (all new work is v6; §3 is the one-word fix ladder),
 `docs/suno-gpt/archive/v5.5-era.md` §5 (how a v5.5 sheet starts again on v6), `docs/suno-gpt/session-method.md`,
@@ -18,7 +18,7 @@ frozen — you may not change a syllable without Kai.
 
 ## What done looks like
 
-1. `songs/narration-v6.md`: the new sheet, opening with the "What this song taught" table carried over
+1. `songs/archive/narration-v6.md`: the new sheet, opening with the "What this song taught" table carried over
    (w60 breaks speech; the faint bed under the voice was the open problem; the newsreader Voice is spoken
    register only and its live display name is `badcode newsreader` — never type the internal label
    `BC-NEWSREADER` into Suno). State the v6 model, controls and Voice attachment per generation.

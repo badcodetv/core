@@ -653,3 +653,101 @@ duplicated frames and the judder that comes with them. Every constituent is nati
 
 It was also **1280×720 being scaled 150% by Premiere**. The rebuilt beats are lanczos-upscaled
 once at build time instead — same number of resamples, but `Scale` is now free for camera moves.
+
+## Premiere — narration on the main cut (2026-09-17)
+
+**Project:** `/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj`
+**Sequence:** `gpom-s01` — 1920×1080 @ 24, 225.3s. Scene 1 marker runs 0 → 55.6s.
+
+| Track | What |
+| --- | --- |
+| A3 (`a2:0`) | `gpom-c1-tolive-swell-v6-w35-5cd52d68.wav` 0 → 71.6s, bin `narration` |
+
+- **The take:** Kai's pick from `songs/archive/narration-v6.md` §20 (round r17), Suno song `5cd52d68`.
+  Recorded from the player, not downloaded. File: `clips/s00/narration/`.
+- **Why A3:** A1 and A2 are muted tracks (A2 holds an older clip at 64.4–69.8s); A3 was empty and live.
+- Nothing else was touched: V1 still 22 clips. Volume left at default.
+
+**Needs a human**
+- 🔴 **The narration (71.6s) runs 16s past scene 1's picture (55.6s)** into the Hong Kong push. The
+  last lines ("Within a week…", "…down to Earth") play over scene 2. Either extend scene 1's picture
+  or re-time the read in the edit.
+- 🔴 **No drum hit at the end** — the take fades out. Add a one-shot hit after "down to Earth" (1:05).
+- 🟡 True peak 0.0 dBTP: pull A3 down a few dB before mixing anything with it.
+- 🟡 The recording is the ~125 kbps playback stream. Swap in a real Suno download for the final mix.
+
+---
+
+# The bridging pull-back — close hull → wide satellite (2026-09-17)
+
+**Why.** Kai, watching `gpom-s01` with the locked narration on A3: the picture reaches Earth ~10s
+before he says *"down to Earth"* (1:00–1:05), and the hard cut at **40.0s** (`EARTH-b5-reveal`'s close
+hull → `EARTH-b6-orbit1`'s wide satellite) *"kind of leaps"*. Fix: one ~10s shot between them.
+
+## Shot spec
+
+| | |
+| --- | --- |
+| **Job** | Reveal that the thing that woke up in a box is a whole machine in orbit. Plays under *"The results were encouraging"* into `[Build]` — small line, big reveal |
+| **Start** | close on the top of the hull, riveted panels filling frame, echoing the 40s cut-away |
+| **Move** | one slow, steady pull-back, satellite centred, **landing frame-exact on `EARTH-b6-orbit1`'s first frame** so it runs into the orbit with no cut |
+| **Light** | the existing single hard sun, unchanged |
+| **Background** | black, only the few faint stars already on the plate |
+| **Length** | ~10s: one 8s Veo clip, retimed in Premiere |
+
+## How it is made — push-in from the destination, reversed
+
+Kai ruled one clip, not a chain. Start image = **`EARTH-b6-orbit1.mp4` frame 0** (extracted, not
+`s00v3-sat-wide-a.jpg`, so the join matches the clip on the timeline exactly). No `endImage`.
+Veo 3.1 - Fast, 8s, 16:9, 2 takes, fresh Flow project. Then `ffmpeg -vf reverse -an`.
+
+```prompt
+The camera travels slowly straight forward toward the satellite in one smooth continuous dolly, weightless and unhurried, easing gently to a stop as it arrives close above the top of the main body. As it approaches, the body grows steadily to fill the frame and the long solar panels on either side slide outward past the edges of frame with real parallax, until only the riveted hull panels, seams and fittings fill the screen. Every intermediate distance is visible as the camera passes through it. The satellite itself is completely still: nothing on it moves, turns, unfolds or changes. The few faint stars stay fixed in place. One single continuous take; the camera moves like a smooth dolly on a track, not a teleport. The satellite keeps consistent weight, scale and geometry — the same hull, the same panels, the same antennas; shadows stay attached; the light direction never changes; no stretching, warping or morphing. No dust, no particles, no debris, no lens flares. Maintain the photographic style, grain, lighting and palette of the image. No text, no subtitles, no captions.
+```
+
+**Craft notes.** Motion only — the plate carries subject and look. *"Easing gently to a stop"* on
+the push-in becomes an ease *out of* the hull once reversed. *"Nothing on it moves"* and the
+no-particles line are what make reversal safe. The orbit-rate lesson above (Veo redesigns a rigid
+subject past ~35–40° per 8s) does not apply: this is a straight dolly, no new side of the craft.
+
+## Result — 2026-09-17
+
+Flow project `8e364d26-3c58-4962-8c58-9c9d562b20fd` (channel 2), Veo 3.1 Fast, 8s, 2 takes,
+**20 credits**. Both new (md5 distinct). 1280×720 → reversed, audio stripped, lanczos to 1920×1080,
+24fps, CRF 18.
+
+| Take | Push-in | Reversed | Lands on `EARTH-b6-orbit1` frame 0 | Opens on |
+| --- | --- | --- | --- | --- |
+| a | `clips/s00/bridge/s00-bridge-pushin-a.mp4` | `s00-bridge-pullback-a.mp4` | ✅ 2.79/255 mean diff | the dish and antennas above the hull |
+| b | `s00-bridge-pushin-b.mp4` | `s00-bridge-pullback-b.mp4` | ✅ 2.88/255 mean diff | the riveted hull filling frame, dish cropped at top |
+
+- **Both land on the orbit shot's first frame** — 2.8/255 is codec-level, so the join into
+  `EARTH-b6-orbit1` should be invisible.
+- **Neither matches `EARTH-b5-reveal`'s last frame**, so 40s is still a cut, but hull-close to
+  hull-close instead of hull-close to whole-satellite. **b's opening echoes b5's octagonal hull
+  better.** Side-by-side: `clips/s00/bridge/cut-compare.jpg`.
+- ⚠️ **Small hull details change in the first ~3s** of both (a dark mark resolves into a hatch as
+  the camera pulls away). Visible on the 4fps contact sheets; likely unnoticed at speed. Judge on
+  playback.
+- 8s long; the plan was ~10s, so retime to ~80% in Premiere if needed.
+
+## Premiere — bridge inserted on `gpom-s01` (2026-09-17)
+
+**Kai picked take b, kept at 8s.** Imported into bin `01-s00-orbital`, inserted at **40.0s** on V1.
+
+| Time | V1 |
+| --- | --- |
+| 32–40 | `EARTH-b5-reveal` |
+| **40–48** | **`s00-bridge-pullback-b`** |
+| 48–56 | `EARTH-b6-orbit1` |
+| 56–63.42 | `EARTH-b7-orbit2` |
+| 63.42 → | scene 2 (`s01-o2-window` …), everything after 40s moved +8s |
+
+- Scene 2 and 3 markers and the A2 strings clip (`Part A (Strings).wav`, now 169.46s) moved +8s with the picture.
+- 🔴 **Insert mode rippled A3 too** — it cut the narration at 40s and moved the tail +8s. Fixed by
+  removing the tail and re-extending `a2:0` to 0 → 71.58s, one unbroken clip. **Lesson for next
+  time: an insert on V1 ripples every audio track; check the narration after.**
+- Checked by eye: exported frames at 47.9s and 48.05s are the same picture — the join into the
+  orbit is invisible. Frames: `frames/bridge-joins.jpg`.
+- Scene 1's marker still ends at 55.6s; the scene now runs to 63.42s.
+- Earth now swings in over ~56–63s. The line *"…down to Earth"* is at 1:00–1:05, so the two now overlap.

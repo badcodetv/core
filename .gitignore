@@ -61,3 +61,7 @@ badcode.local.json
 
 # Suno: the account-wide My Taste box, saved before a scouting run overwrites it
 scripts/suno/.my-taste-backup.txt
+
+# Python bytecode and throwaway scratch files
+__pycache__/
+.scratch/

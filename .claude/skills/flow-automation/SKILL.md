@@ -104,18 +104,13 @@ flow_status
 | Result | Do |
 | --- | --- |
 | `{ loggedIn: true }` | Go. |
-| `{ error: true, code: "NOT_RUNNING" }` | **Bring it up yourself. Do not bounce this to the user.** ↓ |
+| `{ error: true, code: "NOT_RUNNING" }` | The server **already tried to launch its own browser** and that failed. `flow_channels` → `./scripts/browser-channel.sh up <mine>`, read `/tmp/flow-chrome-<port>.log` |
 | `{ loggedIn: false }` | *Now* ask the user to sign in, in the window that just opened. Nothing else will work. |
 
-```bash
-# ONE command. It picks a free channel, launches a browser if none is running, and prints
-# which one you got. Never choose a port yourself.
-./scripts/browser-channel.sh claim
-# -> CHANNEL=2 PORT=9223 LOGGED_IN=yes
-```
-
-Then `flow_status` again. It reports `channel` and `port`, so you can always say which browser
-you are on.
+🔴 **2026-09-28: the server launches its own browser. Never run `browser-channel.sh claim`.** The
+first `flow_status` of a session starts the channel it holds, so there is one browser per session.
+`claim` skips a channel the server has locked, so running it opens a **second** Chrome — which is
+exactly what Kai saw at the start of every cold session until this was fixed.
 
 ### 🔑 Channels — you ask for one, you never pick a port (2026-08-26)
 
@@ -130,12 +125,12 @@ process, so a crashed session never wedges a channel.
 
 | Want | Do |
 | --- | --- |
-| A browser to work in | `./scripts/browser-channel.sh claim` |
+| A browser to work in | `flow_status` — it launches this session's channel itself |
 | Which browser am I on? | `flow_channels` — or the `channel`/`port` on `flow_status` |
 | What is running right now? | `./scripts/browser-channel.sh list` |
 | A specific one | `./scripts/browser-channel.sh up 2` |
 
-🔴 **If `claim` reports `LOGGED_IN=no`, STOP and ask the user to sign in** in that window. Say
+🔴 **If `flow_status` reports `loggedIn: false`, STOP and ask the user to sign in** in that window. Say
 which channel it is. Do not retry, and do not launch another browser — a fresh profile is always
 logged out, so relaunching just makes a second logged-out browser.
 🔴 **Never hard-code 9222** in a command you write. Use `browser-channel.sh port <n>`, or
@@ -278,7 +273,7 @@ Full method, including what ffmpeg can do that Premiere cannot:
 
 ---
 
-## 4. The twenty-one laws
+## 4. The twenty-two laws
 
 These are why the client looks the way it does. Every one was paid for live. If you are
 changing `@badcode/flow-mcp`, they are the spec; if you are just calling tools, laws 1–5
@@ -379,6 +374,15 @@ explain most of what you will see.
     a project holding exactly one uploaded still cannot mis-pick. Then verify anyway — md5 every
     take against the ones you already have, and check the clip's **first frame against its plate**.
     File size, a healthy mediaId and a playable mp4 all prove nothing (laws 9–11).
+22. 🔴 **`resume: true` does not skip anything when `numOutputs > 1`.** Measured 2026-09-29
+    (n=1): a two-prompt batch at `numOutputs: 2` lost prompt 2 to a harvest timeout
+    (`waitForEvent "download"`). The re-run with the same list and `resume: true` **regenerated
+    prompt 1** (new mediaIds, files overwritten) instead of skipping it, because the outputs are
+    `00-a.jpg`/`00-b.jpg` and resume looks for `00.jpg`. Images are cheap, so the cost was time.
+    Until the client is fixed: **re-run only the failed prompts**, or rename the finished
+    candidates out of the folder first.
+    Separately, a lone `waitForEvent "download"` timeout on one prompt is a harvest hiccup, not a
+    block: the identical prompt passed first time on the re-run.
 
 ---
 

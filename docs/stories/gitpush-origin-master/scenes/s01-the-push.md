@@ -869,3 +869,82 @@ Hyper-realistic documentary photograph from the very top edge of a supertall off
 ```prompt
 Faint reflections of distant city lights slide very slowly across the dark unlit glass above and below the lit floor. The dim greenish light of the lit floor stays at exactly the same dim level for the whole shot, with only a very faint, slightly uneven flicker, like old fluorescent tubes. Behind the glass the interior stays dark and unreadable: nothing inside moves, no people, no shapes appear. The mullions, floor bands and the corner of the building stay perfectly rigid and unchanged. Nothing else in the frame changes. The camera does not move at all — no pan, no tilt, no zoom, no roll, no drift; it is locked off rigidly for the entire shot, as if bolted down.
 ```
+
+## The cut ladder — Kai, 2026-09-16
+
+**Kai, 2026-09-16:** drop the continuous zoom. **Cut** down in steps, each shot held at normal
+pace: Earth → 30,000ft held ~4s → the skyline at a few hundred feet → two or three towers → the
+one tower → the office. Existing takes picked: `s01-r1-aerial-b` (framing *"the right kind of
+thing"*), `HK-b1-descent` (*"great"*), `s01-r3-tower-a`, `s01-r4-band-a`. The 30,000ft hold needs
+*"slightly more to happen"*: red lights blinking, a plane crossing below the camera.
+
+### Rung 1, alive · `s01-r1-aerial-plane-{a,b}.mp4` off `s01-aerial-30k-hk-a.jpg`
+
+Veo 3.1 - Fast, 16:9, 8s, 2 takes, start image only, fresh Flow project. Camera locked.
+
+```prompt
+Far below the camera, a small passenger aeroplane flies slowly and steadily across the frame from left to right, well beneath the camera and above the city, tiny against it, its red and green navigation lights and a white strobe blinking as it goes. Across the city, small red aircraft warning lights on the tops of the tallest towers blink slowly on and off, out of step with each other. The countless small city lights twinkle faintly. A few tiny boat lights crawl slowly across the black harbour. The thin wisps of cloud drift very slowly. The camera does not move at all — no pan, no tilt, no zoom, no roll, no drift; it is locked off rigidly for the entire shot, as if bolted down.
+```
+
+**Result.** Flow project `c5937bfd-…`. First call failed before submit with
+`VIDEO_MODEL_NOT_APPLIED` (picker stayed on Omni 1.1 Flash on the fresh project); identical retry
+worked. Veo 3.1 - Fast is 10 credits/clip on the rebuilt Flow, so 20 credits. Both takes new (md5
+checked), first frame = plate, camera holds.
+
+| Take | Plane | Red tower lights |
+| --- | --- | --- |
+| `-a` | enters left edge ~2s, crosses to right-centre by 8s | not visible on a 1fps sheet |
+| `-b` | enters ~1s, same path, reads slightly smaller by the end | not visible on a 1fps sheet |
+
+🔴 **Scale is wrong on both:** the plane is a large dark silhouette ~10% of frame width with bright
+nav lights — reads as a model plane near the lens, not an airliner seen from above at altitude.
+*"Tiny"* in the prompt was ignored (same exaggeration the draft warned of). Awaiting Kai's view.
+Imported with `s01-r1-descent-a` into bin `02-s01-ladder`.
+
+## The opener, from scratch on Omni — Kai, 2026-09-16
+
+**Kai, 2026-09-16:** the plane came out too big. *"Not feel locked into the existing shot… recraft
+a prompt of Hong Kong style city at night… a more interesting angle… try a few different attempts
+at a video… worth spending the credits."* And: *"can we please start to use Omni?"*, with a
+higher tier tried once as an experiment.
+
+Deliberately **text→video** (no plate): this is a search for the angle, so the look re-deciding
+each roll is the point. The plate gate comes back once an angle wins. Omni 1.1 Flash, 16:9, 8s,
+1 take each, 12 credits each. Omni ignores negatives (`docs/google-flow/README.md`), so every
+prompt says only what is wanted. Shared tail on every prompt:
+
+> *Shot like a real 35mm documentary film at night: very late, deep clean blacks, most office
+> windows dark, cool neutral tones with warm sodium street light, every vehicle a single small
+> sharp point of light moving at real-time speed. Everything is orderly, clean and fully working.*
+
+### O1 · straight down, low · `s01-o1-rooftops.mp4`
+```prompt
+Aerial view looking straight down from about a thousand metres over the densest cluster of skyscrapers in Hong Kong at night. The rooftops of dozens of tall towers pack the frame edge to edge, deep dark canyons of streets between them. Small red aircraft warning lights on the tower tops blink slowly on and off, each on its own rhythm. Far below in the canyons, tiny vehicle lights crawl along the streets. The camera holds perfectly steady, looking straight down, for the whole shot. Shot like a real 35mm documentary film at night: very late, deep clean blacks, most office windows dark, cool neutral tones with warm sodium street light, every vehicle a single small sharp point of light moving at real-time speed. Everything is orderly, clean and fully working.
+```
+
+### O2 · the airliner window · `s01-o2-window.mp4`
+```prompt
+View through the window of a passenger airliner at night as it banks gently over Hong Kong. The dark edge of the wing cuts across the top of the frame, a small red light at its tip blinking steadily. Far below, the whole lit city spreads out: the black harbour, the dense clusters of towers on both shores, the lattice of streets glowing, tiny boat lights on the water. The city turns slowly beneath the wing as the aircraft banks. Shot like a real 35mm documentary film at night: very late, deep clean blacks, most office windows dark, cool neutral tones with warm sodium street light, every vehicle a single small sharp point of light moving at real-time speed. Everything is orderly, clean and fully working.
+```
+
+### O3 · high oblique to the horizon · `s01-o3-horizon.mp4`
+```prompt
+Very high aerial view at night looking down at a steep angle across the whole of Hong Kong toward the horizon. The dense lit city fills the lower two thirds of the frame, wrapping around the black curve of the harbour, the dark mountains beyond it, and a faint glow along the distant horizon under a black sky. Far below, a few aircraft on approach cross the city as single slow blinking points of light. The camera holds steady at this great height for the whole shot. Shot like a real 35mm documentary film at night: very late, deep clean blacks, most office windows dark, cool neutral tones with warm sodium street light, every vehicle a single small sharp point of light moving at real-time speed. Everything is orderly, clean and fully working.
+```
+
+### O4 · over the harbour, between the shores · `s01-o4-harbour.mp4`
+```prompt
+Aerial view looking straight down over the middle of Victoria Harbour in Hong Kong at night, from high above. Black still water fills the centre of the frame. Along the top and bottom edges of the frame the two dense lit shorelines face each other, packed with towers. Two small ferries cross the dark water slowly between them, each leaving a thin pale wake, their deck lights glowing. The camera holds perfectly steady, looking straight down, for the whole shot. Shot like a real 35mm documentary film at night: very late, deep clean blacks, most office windows dark, cool neutral tones with warm sodium street light, every vehicle a single small sharp point of light moving at real-time speed. Everything is orderly, clean and fully working.
+```
+
+**Kai, mid-run:** *"can we not use Omni, actually I think it should be VO… my mistake."* O1 had
+already rendered on Omni, so it exists both ways; O2–O4 are Veo 3.1 - Fast only. Spend: O1 Omni
+12 + four Veo 40 = **52 credits**. All five in Premiere bin **`02-s01-openers`**.
+
+| Clip | What came back | Verdict |
+| --- | --- | --- |
+| `s01-o1-rooftops-veo` | Steep oblique (not straight down) over a dense tower forest, red rooftop lights, lit spire top-centre, camera rock steady | 🟢 most "real"; brighter than the brief |
+| `s01-o1-rooftops-omni` | True straight-down, darkest of the set, red lights, a rooftop pool; **soft, low detail** | darkness right, sharpness wrong |
+| `s01-o2-window` | Through an airliner window: wing and blinking red tip light top, harbour + skyline below, slow bank | 🟢 most distinctive; warm brown sky, city bright |
+| `s01-o3-horizon` | Vast high oblique to the mountains and harbour — **but a big airliner crosses the sky top-right**, and dark wedges in the lower corners | the plane problem again |
+| `s01-o4-harbour` | Close aerial down a narrow channel, one shore, two ferries with wakes | lovely motion; reads river, not Hong Kong at altitude |

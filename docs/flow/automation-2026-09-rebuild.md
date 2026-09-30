@@ -73,3 +73,32 @@ all run live 2026-09-13 on free tiers.
 
 The MCP server runs the checkout's source but only reloads on restart — run `/mcp` and reconnect
 `flow` before the new code is what the tools call.
+
+## 2026-09-16 — two video-path regressions, both with a workaround
+
+- **`VIDEO_MODEL_NOT_APPLIED` on the first call after a model change.** Seen three times in one
+  session (fresh project → Veo Fast; Veo → Omni; Omni → Veo). Fails **before** submit, no credits.
+  An identical immediate retry applied the model every time.
+- 🔴 **`download.saveAs: ENOENT … /tmp/playwright-artifacts-*/<uuid>` — the clip IS rendered and
+  billed, and Chrome saved it to `~/Downloads` under Flow's own title** (e.g.
+  `Aerial_view_of_Hong_Kong_20260916132257.mp4`). Five in a row, any `outPath` (WSL scratch or
+  `/mnt/d`). The same session's first video call (13:09) harvested normally. Workaround: after the
+  error, take the newest matching file from `~/Downloads` by timestamp. **Do not re-run** — that
+  bills again. Client fix owed in `flow-client.ts` (fall back to the downloads folder).
+
+## 2026-09-29 — three findings from the GPOM downfall video pass (11 Veo 3.1 Fast clips)
+
+- **`VIDEO_OPTION_UNAVAILABLE: Frames|Ingredients on Veo 3.1 - Fast` on the first video call in a
+  fresh project.** Seen twice (once in Frames mode with a start image, once text-only in
+  Ingredients mode). Fails before submit, no credits. **An identical immediate retry worked both
+  times.** Same family as `VIDEO_MODEL_NOT_APPLIED` above; the popover is not ready on first open.
+  Client fix owed: retry `ensureVideoConfigRebuilt` once before throwing.
+- 🔴 **`UPLOAD_REFUSED` on a close-up photoreal face.** A still of one woman's face filling a third
+  of the frame (GPOM `businesses-B1`) was refused as an upload twice (re-encoded and renamed the
+  second time). `flow_edit_image` with the same still as the reference then **timed out** waiting
+  for the picker option, because it is the same upload. Crowd shots with smaller faces uploaded
+  fine in the same session. Cause not proven (the plate also had a child's drawing in it).
+  **Workaround that worked:** text-to-video with the still's own prompt plus the motion. You lose
+  the exact plate (a different woman), but the shot survives.
+- `flow_generate_batch` `resume: true` does not skip finished prompts when `numOutputs > 1`: see
+  law 22 in the flow-automation skill.

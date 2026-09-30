@@ -31,7 +31,7 @@ as-built cuts and are recorded below as the checklist's own false positives.
 | **About** | Abdication — we handed our choices to an optimiser and nobody was left to press the switch. |
 | **Really about** | A mind that can compute everything and create nothing, discovering it needs us. |
 | **Held fixed** | The 20-scene arc and count; the backbone; the arrival ending ("We are BadCode" / "Don't make me come back twice"); binding rules 1–9; the unpersonified pre-revert AI; the Storyverse discipline; critique-pass-1/2 rulings; the as-built cut order and Kai's 2026-08-21 rulings (Hong Kong modern, the plant room, no decay pre-loading the dystopia). |
-| **Reviewed** | `story.md` (beats + storyboard), the orchestral song, `songs/narration.md` (cuts 1–3 as recorded), `scenes/s00-awakening.md`, `s01-the-push.md`, `plant-room.md`, `prompts.md` §2c, `characters/`, the eight act sheets, both prior passes. |
+| **Reviewed** | `story.md` (beats + storyboard), the orchestral song, `songs/archive/narration-v5.5.md` (cuts 1–3 as recorded), `scenes/s00-awakening.md`, `s01-the-push.md`, `plant-room.md`, `prompts.md` §2c, `characters/`, the eight act sheets, both prior passes. |
 
 ### Gates
 

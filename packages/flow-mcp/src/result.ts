@@ -7,10 +7,11 @@ export interface ToolResult {
 }
 
 export const NOT_RUNNING_HINT =
-  'No browser on this session\'s channel. Run `./scripts/browser-channel.sh claim` — it picks a free ' +
-  'channel (a CDP port + its own Chrome profile), launches it if needed, and prints which one you got. ' +
-  'Do NOT pick a port by hand. If it comes up logged out, ask the user to sign in to Google/Flow in ' +
-  'that window; the login persists in that channel\'s profile. `flow_channels` shows what is running.'
+  'This server launches its own browser on the channel it holds, and that launch failed or the browser ' +
+  'died. Run `flow_channels` to see which channel is yours ("mine"), then `./scripts/browser-channel.sh up <n>` ' +
+  'for THAT channel and read /tmp/flow-chrome-<port>.log if it will not start. 🔴 Do NOT run `claim` — it ' +
+  'skips the channel this server holds and opens a second browser. If the browser comes up logged out, ask ' +
+  'the user to sign in to Google/Flow in that window; the login persists in that channel\'s profile.'
 
 /**
  * Success: encode data as JSON text, and additionally as structuredContent when — and only

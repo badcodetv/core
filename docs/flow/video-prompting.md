@@ -184,6 +184,15 @@ frame should look like, and it drifts toward regenerating rather than animating.
   grading of the input image"* — so explicit style-lock language is mainly needed on complex
   scenes. (practitioner, [replicate.com](https://replicate.com/blog/veo-3-image))
 
+- 🔴 **Don't describe a change as "a wave of light" unless you want a light effect** (measured
+  2026-09-29, GPOM downfall v01, n=1). *"A wave of phone screens lights up across the office,
+  starting at the back and rushing forward desk by desk"* came back as a glowing magic wave
+  sweeping through the room. The same beat written as objects (*"people's phones buzz on the
+  desks one after another; they pick them up, read, and look up"*) plus *"ordinary phones, no
+  glow effects"* played correctly. The sequential screen-change prompt on the trading floor
+  (*"monitors switch to plain white one row at a time"*) did work: it names the screens changing
+  state, not a travelling light.
+
 > **Minimal and valid:** "Make him run!"
 
 ### 🔴 "Static" is not a lever — every clip drifts (measured 2026-08-21)

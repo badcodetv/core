@@ -38,7 +38,7 @@ Aligned by phase, not by step number. `→` = followed a link; `?` = guessed a p
 | **The story (canon)** | 9–11. `story.md` in three passes (1–260, 260–470, 470–795) | 4–5, 10–11. `story.md` in four passes (1–200, 200–420, 420–600, 600–795) |
 | **Prior art** | 12. `critique-pass-3.md` → README ×2 | 8. `critique-pass-3.md` → README ×2 |
 | **As-built hunt** | 13–14. `ls -R` of the story folder, then `scenes/ songs/ storyboard/` ls | 9–10. `ls -R`, then `scenes/ songs/ storyboard/` ls |
-| | 15–16. `songs/narration.md` (§2 cut tables, §6 the bank) | 14–15. `songs/narration.md` (§2, real durations) |
+| | 15–16. `songs/archive/narration-v5.5.md` (§2 cut tables, §6 the bank) | 14–15. `songs/archive/narration-v5.5.md` (§2, real durations) |
 | | 17. `prompts.md` §2c + §3c # | 12–13. `prompts.md` outline, then §2c lines 139–180 # |
 | **Craft depth** | 18. `narrator.md` → README + cited in pass 3 | 16–17. `narrator.md` §1/§1b, then §3/§4/§5/§7 → symptoms rows |
 | | 19. `forms.md` §2 # | 18. `forms.md` §2 # |
@@ -54,7 +54,7 @@ Aligned by phase, not by step number. `→` = followed a link; `?` = guessed a p
 **Convergence.** Two agents, different briefs, no contact — and the first five moves are the
 same five files in nearly the same order. Both then independently decided the canon was not
 enough and went hunting for the as-built cut, landing on the same two files (`prompts.md` §2c,
-`songs/narration.md`). Both treated `critique-pass-3.md` as a *stop list* rather than an answer
+`songs/archive/narration-v5.5.md`). Both treated `critique-pass-3.md` as a *stop list* rather than an answer
 key, and neither re-filed F1/F2/F3 as new findings.
 
 ---
@@ -224,7 +224,7 @@ us?"* — is fix 🔴1 below, arrived at independently.
    to compose the frame himself.
 2. **Make the story folder route to what was actually built.** `gitpush-origin-master/README.md`
    needs a line naming `prompts.md` §2c as the cut-order authority, `scenes/` as the as-built
-   plates and `songs/narration.md` as the recorded narration. `checklist.md` tells a reviewer to
+   plates and `songs/archive/narration-v5.5.md` as the recorded narration. `checklist.md` tells a reviewer to
    read what was made; the story folder does not tell them where it is, so both agents burned
    steps on `ls -R`. Same fix likely applies to every story folder.
 

@@ -6,7 +6,7 @@ The three prompt boxes are never retyped: they come from
 (model, the v6 controls, the Voice, the duration, the workspace, the title) is
 the per-atom settings table below, which mirrors §3 of
 
-    docs/stories/gitpush-origin-master/songs/narration-v6.md
+    docs/stories/gitpush-origin-master/songs/archive/narration-v6.md
 
 Usage:
     python3 scripts/suno/gpom-narration-spec.py cut1-voice > /tmp/c1voice.json
@@ -21,7 +21,7 @@ import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
-SHEET = REPO / "docs/stories/gitpush-origin-master/songs/narration-v6.md"
+SHEET = REPO / "docs/stories/gitpush-origin-master/songs/archive/narration-v6.md"
 VOICE = "badcode newsreader"  # 🔴 the LIVE display name. Never the internal label, never just "badcode".
 WORKSPACE = "gpom-story"
 
@@ -29,6 +29,7 @@ WORKSPACE = "gpom-story"
 # voice: beds get NO Voice — a vocal persona is exactly what a bed is written to repel.
 ATOMS = {
     "cut1-voice": {"title": "gpom-c1voice-v6A", "durationSec": 70, "voice": VOICE},
+    "cut1-score": {"title": "gpom-c1score-v6A", "durationSec": 80, "voice": VOICE},
     "cut1-bed": {"title": "gpom-c1bed-v6A", "durationSec": None, "voice": None},
     "cut2-voice": {"title": "gpom-c2voice-v6A", "durationSec": 30, "voice": VOICE},
     "cut2-bed": {"title": "gpom-c2bed-v6A", "durationSec": None, "voice": None},

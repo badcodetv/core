@@ -1,0 +1,245 @@
+<title>The Gaze Running Order</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Archivo:wght@400;500;700;800&display=swap">
+<style>
+  /* Deliberately single-theme, like the other two gaze boards: photographs read true on a dark ground. */
+  :root {
+    --ground: #0f1210;
+    --table: #171b18;
+    --edge: #2a302b;
+    --ink: #dde2d8;
+    --dim: #8b948a;
+    --phosphor: #86e07f;
+    --sodium: #e2a85a;
+    --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    --sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --gutter: clamp(16px, 3vw, 40px);
+    color-scheme: dark;
+  }
+  html { background: var(--ground); }
+  body { background: var(--ground); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.5; margin: 0; padding-inline: var(--gutter); padding-block: 0 96px; }
+
+  header.top { padding-block: 36px 16px; display: grid; gap: 10px; max-width: 70ch; }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--phosphor); }
+  h1 { font-size: clamp(30px, 5vw, 50px); font-weight: 800; letter-spacing: -.02em; line-height: 1; margin: 0; text-wrap: balance; }
+  .lede { color: var(--dim); margin: 0; }
+  .lede b { color: var(--ink); font-weight: 600; }
+  .status { font-family: var(--mono); font-size: 12px; color: var(--dim); }
+
+  nav.jump { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+    background: color-mix(in srgb, var(--ground) 93%, transparent); backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--edge);
+    margin-inline: calc(-1 * var(--gutter)); padding-inline: var(--gutter); padding-block: 10px;
+    display: flex; gap: 6px; overflow-x: auto; scrollbar-width: thin; align-items: center; }
+  nav.jump a { font-family: var(--mono); font-size: 12px; white-space: nowrap; text-decoration: none; padding: 5px 9px; border: 1px solid var(--edge); border-radius: 3px; color: var(--dim); }
+  nav.jump a:hover, nav.jump a:focus-visible { color: var(--ink); border-color: var(--dim); outline: none; }
+  nav.jump a b { color: var(--phosphor); font-weight: 600; }
+
+  section.beat { padding-block: 40px 8px; border-bottom: 1px solid var(--edge); scroll-margin-top: 66px; }
+  .beat-head { display: grid; gap: 5px; margin-bottom: 18px; max-width: 80ch; }
+  .beat-head .tag { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--dim); }
+  .beat-head .tag b { color: var(--phosphor); font-weight: 600; }
+  .beat-head h2 { margin: 0; font-size: clamp(21px, 2.7vw, 30px); font-weight: 700; letter-spacing: -.01em; text-wrap: balance; }
+  .beat-head p { margin: 0; color: var(--dim); }
+
+  .strip { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+  @media (max-width: 640px) { .strip { grid-template-columns: minmax(0, 1fr); } }
+
+  figure.f { margin: 0; background: var(--table); border: 1px solid var(--edge); border-radius: 3px; overflow: hidden; display: grid; grid-template-rows: auto 1fr; }
+  figure.f[data-v="keep"] { border-color: var(--phosphor); }
+  figure.f[data-v="no"] img { opacity: .25; filter: grayscale(1); }
+  .frame { aspect-ratio: 1376 / 768; background: #0a0c0b; position: relative; }
+  .frame img { width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in; }
+  .no-badge { position: absolute; top: 7px; left: 7px; font: 600 12px var(--mono); color: var(--ground); background: var(--phosphor); padding: 2px 7px; border-radius: 2px; }
+  figcaption { padding: 9px 11px 11px; display: grid; gap: 5px; align-content: start; }
+  .cap { font-size: 13.5px; }
+  .id { font-family: var(--mono); font-size: 11.5px; color: var(--dim); }
+  .votes { display: flex; gap: 5px; padding-top: 3px; }
+  .votes button { font: 600 12px var(--mono); background: transparent; border: 1px solid var(--edge); color: var(--dim); padding: 4px 10px; border-radius: 3px; cursor: pointer; }
+  .votes button:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+  .votes button[data-v="keep"][aria-pressed="true"] { background: var(--phosphor); border-color: var(--phosphor); color: var(--ground); }
+  .votes button[data-v="no"][aria-pressed="true"] { background: #d6604f; border-color: #d6604f; color: var(--ground); }
+  .votes button:disabled { opacity: .4; cursor: default; }
+
+  .beat-note { display: grid; gap: 7px; padding-block: 18px 4px; max-width: 80ch; }
+  .beat-note label { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--dim); }
+  .beat-note textarea { width: 100%; box-sizing: border-box; min-height: 74px; resize: vertical; background: var(--table); color: var(--ink); border: 1px solid var(--edge); border-radius: 3px; padding: 9px 10px; font: 14px/1.5 var(--sans); }
+  .beat-note textarea:focus-visible { outline: 2px solid var(--phosphor); outline-offset: 0; border-color: var(--phosphor); }
+  .beat-note textarea:disabled { opacity: .5; }
+  .saved { font-family: var(--mono); font-size: 11px; color: var(--phosphor); opacity: 0; }
+  .saved[data-on="1"] { opacity: 1; }
+  @media (prefers-reduced-motion: no-preference) { .saved { transition: opacity .25s; } figure.f { transition: border-color .15s; } }
+
+  footer.ends { padding-block: 34px; color: var(--dim); max-width: 80ch; display: grid; gap: 8px; }
+  footer.ends h3 { margin: 0; font-size: 16px; color: var(--ink); }
+  footer.ends ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+
+  dialog.lb { padding: 0; border: 0; background: transparent; max-width: 96vw; max-height: 96vh; }
+  dialog.lb::backdrop { background: rgba(4, 6, 5, .93); }
+  dialog.lb img { max-width: 96vw; max-height: 86vh; display: block; }
+  dialog.lb p { font-family: var(--mono); font-size: 12px; color: var(--dim); margin: 8px 0 0; text-align: center; }
+</style>
+
+<header class="top">
+  <div class="eyebrow">GPOM &middot; the gaze &middot; running order</div>
+  <h1>The scene, in order</h1>
+  <p class="lede">Your stills in the order you re-cut them, decoded from the beat notes on version 1. Read it top to bottom &mdash; that is the scene. <b>46 frames, 4 beats.</b> Check the order, then it animates. One note box per beat.</p>
+  <div class="status" id="status">Connecting&hellip;</div>
+</header>
+
+<nav class="jump" id="jump" aria-label="Beats"></nav>
+<main id="main"></main>
+
+<footer class="ends">
+  <h3>What happens next</h3>
+  <ul>
+    <li>Each frame becomes one Veo clip from that exact still, camera locked, roughly 2&ndash;3 seconds.</li>
+    <li>The existing control room (plant-room B4) can sit inside beat 2; the same room flooded red (B6) closes the scene.</li>
+    <li>The bulletins are parked for a later cut.</li>
+    <li>At ~2.5s a frame this runs a little under two minutes, so the narration gets rewritten to fit.</li>
+  </ul>
+</footer>
+
+<dialog class="lb" id="lb">
+  <form method="dialog"><button type="submit" style="position:absolute;left:-9999px">Close</button></form>
+  <img id="lb-img" alt="">
+  <p id="lb-cap"></p>
+</dialog>
+
+<script>
+const DATA = /*DATA*/null;
+const $ = s => document.querySelector(s);
+const picks = {};      // key -> "keep" | "no"
+const notes = {};      // beat n -> text
+const vote = {};       // key -> {fig, btns}
+const areas = {};      // beat n -> {ta, saved}
+let db = null;
+
+function el(tag, attrs, kids) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (k === "text") n.textContent = v;
+    else if (v !== null && v !== undefined) n.setAttribute(k, v);
+  }
+  for (const c of kids || []) n.append(c);
+  return n;
+}
+
+function frame(it, pickable) {
+  const fig = el("figure", { class: "f", "data-v": "" });
+  const fr = el("div", { class: "frame" });
+  const img = el("img", { src: it.src, alt: it.cap, loading: "lazy" });
+  img.addEventListener("click", () => {
+    $("#lb-img").src = it.src;
+    $("#lb-cap").textContent = it.no + " · " + it.key + " · " + it.cap;
+    $("#lb").showModal();
+  });
+  fr.append(img, el("span", { class: "no-badge", text: it.no }));
+  fig.append(fr);
+
+  const cap = el("figcaption", {}, [
+    el("div", { class: "cap", text: it.cap }),
+    el("div", { class: "id", text: it.key + (it.shot ? " · " + it.shot : "") })
+  ]);
+  if (pickable) {
+    const votes = el("div", { class: "votes" });
+    for (const v of ["keep", "no"]) {
+      const b = el("button", { type: "button", id: "v-" + it.key + "-" + v, "data-v": v, "aria-pressed": "false", text: v });
+      b.addEventListener("click", () => setPick(it.key, picks[it.key] === v ? null : v));
+      votes.append(b);
+    }
+    cap.append(votes);
+    vote[it.key] = { fig, votes };
+  }
+  fig.append(cap);
+  return fig;
+}
+
+function paintPick(key) {
+  const v = vote[key]; if (!v) return;
+  const cur = picks[key] || "";
+  v.fig.dataset.v = cur;
+  for (const b of v.votes.children) b.setAttribute("aria-pressed", String(b.dataset.v === cur));
+}
+
+async function setPick(key, v) {
+  if (v) picks[key] = v; else delete picks[key];
+  paintPick(key);
+  if (!db) return;
+  try {
+    if (v) await db.doc("gridpick/" + key).set({ v, at: new Date().toISOString() });
+    else await db.doc("gridpick/" + key).delete();
+  } catch (e) {
+    $("#status").textContent = "Couldn't save that pick (" + (e && e.code ? e.code : "error") + "). A view-only link can't write.";
+  }
+}
+
+async function saveNote(n, text) {
+  if (!db) return;
+  try {
+    if (text.trim()) await db.doc("beatnotes/" + n).set({ text: text.slice(0, 4000), at: new Date().toISOString() });
+    else await db.doc("beatnotes/" + n).delete();
+    const a = areas[n];
+    if (a) { a.saved.dataset.on = "1"; setTimeout(() => { a.saved.dataset.on = "0"; }, 1400); }
+  } catch (e) {
+    $("#status").textContent = "Couldn't save that note (" + (e && e.code ? e.code : "error") + ").";
+  }
+}
+
+function render() {
+  const main = $("#main"), jump = $("#jump");
+  for (const b of DATA.beats) {
+    jump.append(el("a", { href: "#beat-" + b.n }, [
+      el("b", { text: b.n }), document.createTextNode(" " + b.name + " (" + b.items.length + ")")
+    ]));
+    const sec = el("section", { class: "beat", id: "beat-" + b.n });
+    sec.append(el("div", { class: "beat-head" }, [
+      el("div", { class: "tag" }, [el("b", { text: "Beat " + b.n }), document.createTextNode(" · " + b.items.length + " frames" + (b.pick ? " · needs picking" : ""))]),
+      el("h2", { text: b.name }),
+      el("p", { text: b.line })
+    ]));
+    const strip = el("div", { class: "strip" });
+    for (const it of b.items) strip.append(frame(it, b.pick));
+    sec.append(strip);
+
+    const ta = el("textarea", { id: "bn-" + b.n, placeholder: "Anything to change about this beat — order, what's missing, what it should feel like." });
+    const saved = el("span", { class: "saved", text: "saved" });
+    let t = null;
+    ta.addEventListener("input", () => { clearTimeout(t); t = setTimeout(() => saveNote(b.n, ta.value), 700); });
+    ta.addEventListener("blur", () => { clearTimeout(t); saveNote(b.n, ta.value); });
+    areas[b.n] = { ta, saved };
+    sec.append(el("div", { class: "beat-note" }, [
+      el("label", { for: "bn-" + b.n, text: "Notes on beat " + b.n }), ta,
+      el("div", {}, [saved])
+    ]));
+    main.append(sec);
+  }
+}
+
+render();
+
+(async () => {
+  const c = window.claude;
+  db = c && c.use ? await c.use("db") : null;
+  if (!db) {
+    $("#status").textContent = "Picks and notes can't be saved in this view — open the page on claude.ai to write.";
+    for (const n of Object.keys(areas)) areas[n].ta.disabled = true;
+    for (const k of Object.keys(vote)) for (const b of vote[k].votes.children) b.disabled = true;
+    return;
+  }
+  $("#status").textContent = "Picks and notes save as you go.";
+  db.collection("gridpick").onSnapshot(snap => {
+    for (const k of Object.keys(picks)) delete picks[k];
+    for (const d of snap.docs) { const x = d.data() || {}; if (x.v) picks[d.id] = x.v; }
+    for (const k of Object.keys(vote)) paintPick(k);
+  }, () => {});
+  db.collection("beatnotes").onSnapshot(snap => {
+    for (const d of snap.docs) {
+      const x = d.data() || {}; notes[d.id] = x.text || "";
+      const a = areas[d.id];
+      if (a && document.activeElement !== a.ta && a.ta.value !== notes[d.id]) a.ta.value = notes[d.id];
+    }
+  }, () => {});
+})();
+</script>

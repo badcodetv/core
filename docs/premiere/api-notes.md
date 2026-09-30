@@ -1624,3 +1624,12 @@ symptom, not a mechanism.**
 a transparent region that resolves to white is not a subtle artefact — it is a full-frame flash.
 **Export a frame and look whenever you introduce transparency**, rather than trusting that "nothing
 beneath the bottom track" means black.
+
+## `premiere_insert_clip` mode "insert" ripples EVERY track, not just the target (2026-09-17)
+
+Expected: inserting a video-only clip at 40s on V1 pushes V1 later. Actual: it also **razored an
+audio clip spanning 40s on A3** and pushed the tail +8s, and moved A2 and the sequence markers too.
+Harmless for markers and picture-locked audio; destructive for a continuous narration bed. Do
+instead: after an insert, check any audio clip that crossed the insert point, then
+`premiere_remove_clip` the moved tail and `premiere_trim_clip` the head's `outPoint` back to full
+length. (Or lock the narration track in the UI first.)

@@ -4,18 +4,24 @@ import { z } from 'zod'
 import { NAME, VERSION } from './version'
 import { FlowClient } from './flow-client'
 import { ok, fail, NOT_RUNNING_HINT, type ToolResult } from './result'
-import { resolveChannel, releaseLock, surveyChannels, profileFor, type Resolution } from './channel'
+import { resolveChannel, releaseLock, surveyChannels, profileFor, probe, type Resolution } from './channel'
+import { execFile } from 'node:child_process'
+import { promisify } from 'node:util'
 import { fileURLToPath } from 'node:url'
 import { dirname, resolve as resolvePath } from 'node:path'
 
 /**
- * Cache the CDP attachment across tool calls: the stdio server process is long-lived, and
- * keeping the same Page preserves image-mode state and Flow's in-session context between
- * edit-loop rounds (as well as saving the attach + page discovery per call). A dead handle
- * (user restarted Chrome) is detected via isAlive() and retried once with a fresh connect;
- * close() on a connectOverCDP browser only detaches — it never kills the user's Chrome.
+ * 🔴 2026-09-17: a Playwright CDP attachment held across many tool calls (the previous
+ * behaviour here) was measured to silently misfire — `locator.click()` on the settings
+ * trigger returned successfully but the popover it opens never appeared, every time, on a
+ * long-lived cached attachment; the IDENTICAL click, run moments later as a brand-new
+ * `connectOverCDP` against the same tab, worked in under a second, repeatedly. A fresh
+ * attachment per tool call reproduced that reliability, so this no longer caches across
+ * calls — it connects, runs one tool, and detaches every time. `close()` on a connectOverCDP
+ * browser only detaches; it never kills the user's Chrome, so nothing here disturbs Flow's
+ * own in-page state (image mode, the open project, …), which lives in the DOM, not in this
+ * process's Playwright objects.
  */
-let cached: FlowClient | null = null
 const DISCONNECTED_RE = /Target closed|browser has been closed|Target page, context or browser has been closed|ECONNRESET/i
 
 /**
@@ -33,7 +39,27 @@ let channel: Resolution | null = null
 
 async function currentChannel(): Promise<Resolution> {
   channel ??= await resolveChannel(REPO_ROOT, 'flow')
+  await ensureBrowser(channel)
   return channel
+}
+
+/**
+ * 🔴 2026-09-28: this server LAUNCHES ITS OWN BROWSER. Before this, a fresh session locked a
+ * channel with `needs-launch` and waited for the agent to start Chrome — and the agent's tool for
+ * that, `browser-channel.sh claim`, skips locked channels, so it launched a SECOND browser on the
+ * next channel while this server kept waiting on the first. Kai saw two Chrome windows open on
+ * every session that started with no browser up. Now the channel we hold is the one we start,
+ * so there is exactly one browser per session and `claim` is never needed for Flow.
+ * A pinned FLOW_CDP_PORT is the user's own browser — we never launch over a pin.
+ */
+async function ensureBrowser(ch: Resolution): Promise<void> {
+  if (await probe(ch.port)) {
+    ch.needsLaunch = false
+    return
+  }
+  if (ch.how === 'pinned') return
+  await promisify(execFile)(resolvePath(REPO_ROOT, 'scripts', 'browser-channel.sh'), ['up', String(ch.channel)], { timeout: 60_000 })
+  ch.needsLaunch = !(await probe(ch.port))
 }
 
 // Give the channel back when this session ends, so the next one can reuse the browser.
@@ -47,21 +73,15 @@ for (const sig of ['exit', 'SIGINT', 'SIGTERM'] as const) {
 async function withClient<T>(fn: (c: FlowClient) => Promise<T>): Promise<T> {
   const ch = await currentChannel()
   for (let attempt = 0; attempt < 2; attempt++) {
-    if (cached && !cached.isAlive()) {
-      await cached.close().catch(() => {})
-      cached = null
-    }
-    cached ??= await FlowClient.connect(ch.endpoint)
+    const client = await FlowClient.connect(ch.endpoint)
     try {
-      return await fn(cached)
+      return await fn(client)
     } catch (err) {
       const msg = err instanceof Error ? err.message : String(err)
-      if (attempt === 0 && DISCONNECTED_RE.test(msg)) {
-        await cached.close().catch(() => {})
-        cached = null
-        continue
-      }
+      if (attempt === 0 && DISCONNECTED_RE.test(msg)) continue
       throw err
+    } finally {
+      await client.close().catch(() => {})
     }
   }
   throw new Error('unreachable')
@@ -163,7 +183,8 @@ server.registerTool(
   },
   async () => {
     try {
-      const mine = await currentChannel().catch(() => null)
+      // Read-only: report the channel without launching a browser just to list them.
+      const mine = (channel ??= await resolveChannel(REPO_ROOT, 'flow').catch(() => null))
       const rows = await surveyChannels(REPO_ROOT)
       return ok({
         mine: mine ? { channel: mine.channel, port: mine.port, resolvedBy: mine.how, needsLaunch: mine.needsLaunch } : null,

@@ -22,7 +22,7 @@
  * queue message surviving in the DOM even after the clip has finished — so by the time we poll,
  * more than one of these strings can legitimately be present at once:
  *
- *   blocked > error > queued > null
+ *   blocked > refused > error > queued > null
  *
  * - `blocked` wins over everything: it is the one verdict that changes caller behaviour (stop,
  *   rewrite, never retry), so any ambiguity must resolve in its favour rather than risk masking
@@ -37,7 +37,7 @@
  *   `warning Failed`-looking icon is on screen.
  */
 
-export type CardState = 'blocked' | 'queued' | 'error' | null
+export type CardState = 'blocked' | 'queued' | 'error' | 'refused' | null
 
 // Both observed policy-block strings share this phrase; matching the phrase rather than the
 // full sentence also survives Flow varying the wording around it. Case-insensitive to catch
@@ -48,12 +48,37 @@ const QUEUED_RE = /scheduled and is waiting in the queue/i
 
 const ERROR_RE = /oops,?\s*something went wrong/i
 
+/**
+ * `refused` — the generation was attempted and Flow gave up on it, explicitly stating
+ * "You have not been charged for this generation." Observed live 2026-09-19 on the gaze run
+ * (Veo 3.1 Fast, a locked-off aerial of ranked aircraft):
+ *
+ *   "Failed / Audio generation failed. Please try a different prompt or send feedback.
+ *    You have not been charged for this generation."
+ *
+ * Veo 3.1 generates a soundtrack alongside the picture, and that half can fail on its own.
+ * Nothing lands in the gallery when it does, so before this was mapped the call sat out the
+ * full 480s video timeout and reported a bare TIMEOUT — eight dead minutes per occurrence,
+ * which on a 46-clip run is the difference between an afternoon and an evening. Unlike
+ * `blocked` an immediate retry is legitimate (no credit was spent and the prompt is not
+ * necessarily at fault), so the caller gets a named error rather than a silent re-run:
+ * retrying is the caller's decision, not this layer's.
+ */
+const REFUSED_RE = /audio generation failed|you have not been charged for this generation/i
+
 /** Single source of truth for "is this text worth reading at all" — used to scope the DOM probe. */
-export const ANY_CARD_RE = new RegExp(`${BLOCKED_RE.source}|${QUEUED_RE.source}|${ERROR_RE.source}`, 'i')
+export const ANY_CARD_RE = new RegExp(
+  `${BLOCKED_RE.source}|${QUEUED_RE.source}|${ERROR_RE.source}|${REFUSED_RE.source}`,
+  'i',
+)
 
 export function classifyCard(text: string | null): CardState {
   if (!text) return null
   if (BLOCKED_RE.test(text)) return 'blocked'
+  // Above `error`: Flow leaves a stale "Oops" card in the transcript, and a refusal card is
+  // only ever posted for a real, current event — the same reasoning that puts `error` above
+  // `queued`. Below `blocked`, which still wins everything.
+  if (REFUSED_RE.test(text)) return 'refused'
   if (ERROR_RE.test(text)) return 'error'
   if (QUEUED_RE.test(text)) return 'queued'
   return null

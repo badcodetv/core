@@ -60,8 +60,7 @@ the balance before and after every Create until it's known.
 Suno runs in **this session's channel — the same browser as Flow**, one login per profile.
 
 ```bash
-./scripts/browser-channel.sh claim suno       # picks + launches a channel, prints which
-npx tsx scripts/suno/suno.mts status          # reads the create form back
+npx tsx scripts/suno/suno.mts status          # starts this session's browser if it is down, reads the form back
 ```
 
 ### 🔑 Channels — ask for one, never pick a port (2026-08-26)
@@ -71,7 +70,10 @@ resolves it as: `SUNO_CDP_ENDPOINT` → `FLOW_CDP_PORT` → **the channel this s
 server has locked** → 9222. So Suno and Flow in one session share a browser (correct), and two
 sessions never collide.
 
-Nothing to configure: run `claim`, read the channel it prints, get on with it.
+Nothing to configure, and **nothing to launch**: `suno.mts` starts the session's own browser if it
+is down (2026-09-28). 🔴 **Never run `browser-channel.sh claim`** — it skips the channel the flow MCP
+already holds and opens a **second** Chrome (Kai saw two windows every session). If a launch fails,
+`browser-channel.sh list` then `up <n>` for *this* session's channel.
 
 🔴 **`LOGGED_IN=no` means STOP and ask the user to sign in to Suno** in that window, naming the
 channel. A fresh profile is always logged out — relaunching only makes a second logged-out
@@ -109,7 +111,7 @@ create page isn't open — the script will navigate there itself on the next com
 ```bash
 # 1 ── pull the three boxes straight out of the sheet (no transcription risk)
 npx tsx scripts/suno/suno.mts extract \
-  docs/stories/gitpush-origin-master/songs/narration.md "GEN A · CUT 1" > /tmp/spec.json
+  docs/stories/gitpush-origin-master/songs/narration.md '`gpom-datacentre` — ' > /tmp/spec.json
 
 # 2 ── add how to file and grade it
 #      { ...boxes, model, title, workspace, voice, styleInfluence, audioInfluence, weirdness,
@@ -262,9 +264,39 @@ Downloading and stem-splitting stay deliberate human acts because the allowance 
 
 There is no download tool and there must not be one.
 
-✅ **Recording the player's output is not a download** and is explicitly allowed: it spends no
-allowance and is equivalent to pressing Play (Kai, 2026-09-12). That is how the listening loop
-gets a file — `suno.mts record`, and `docs/suno-gpt/automation.md` §10.
+✅ **Recording the player's output is not a download** and is allowed: it spends no allowance and is
+equivalent to pressing Play (Kai, 2026-09-12). `suno.mts record`, and `docs/suno-gpt/automation.md` §10.
+
+### 🔑 HOW TO REPORT A ROUND (Kai, 2026-09-19)
+
+A round is reported as **one line per take: its NAME, its length, and its suno.com link.** A bare
+`/song/<uuid>` says nothing about which take it is — the title carries the revision and the weirdness.
+
+```bash
+npx tsx scripts/suno/suno.mts takes <titleFilter> --links
+# gpom-c12-cues3-v6-w10  1:40  https://suno.com/song/2ef65422-9967-4ddb-a6f3-1f5a56c96b71
+```
+
+Paste those lines into the reply and into the song sheet's round log. Then stop — the human listens
+and picks. (Without `--links`, `takes` still prints the JSON rows for a script to read.)
+
+### 🔴 RECORD ONLY WHEN THE USER SAYS "RECORD" (Kai, 2026-09-18)
+
+**Generating a take does NOT mean recording it.** `record` is its own explicit step, asked for in
+words — *"record it"*, *"get me that file"*, *"put it in Premiere"*. Never chain it onto a Create,
+never record "so it's ready", and never record every take of a round on spec.
+
+Kai: *"I want to make sure that recording is a very explicit step… I don't want, when we generate a
+track, to automatically record it. When I say record, is the only time we should ever run that skill."*
+
+**Why it matters even though it is free:** it takes real minutes per take (each one plays in full),
+it fills the media folder with takes nobody picked, and it quietly assumes the judging is done.
+
+**So a round ends at:** the takes exist, their titles and song IDs are reported with links, and the
+round is logged. Then stop and let the human listen and pick. Record the pick, and only the pick.
+
+🔴 The same rule governs **listening** (`mcp__listen__listen_describe`): only on an explicit request
+(Kai, 2026-09-17). Generating is automatic; hearing and keeping are human-triggered.
 
 ### 🔴 Credits are Kai's to spend
 
