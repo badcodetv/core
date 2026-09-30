@@ -77,6 +77,7 @@ later). Change the story here first, then the media.
 | Song — prompt history | [`songs/archive/camping-prompt-history.md`](./songs/archive/camping-prompt-history.md) | archive: what failed in each of the 17 rounds and why, plus the previous cue sets as revert targets |
 | Video | Jack, from the storyboard section of `story.md` | next up |
 | Music video (Premiere cut) | [`music-video.md`](./music-video.md) · `/mnt/d/badcode-videos/camping-music/` | **in progress** — Kai cutting; picture to 43.56s of 236.4s, flicker runs built by hand |
+| Music video v2 (no lip sync) | [`music-video-v2-storyboard.md`](./music-video-v2-storyboard.md) · background: [`music-video-v2.md`](./music-video-v2.md) | **ideas** — Jack, 2026-09-27: **"Signs" storyboard** (28 shots: cardboard lyric signs + spikes + stat cards, world legs), photoreal, ruled 2026-09-27; **signs generated blank, lyric text typed on in Premiere**; first still s3 written |
 | Comic | `apps/web/src/comics/camping/` | **tells the old spine** (v1 recut, 24 pages) — rebuild from this canon when the video has proven the telling |
 | Social posts | — | not started |
 

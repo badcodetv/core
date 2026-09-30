@@ -379,3 +379,15 @@ post can do.
 
 **Provenance.** Every recipe run on GPOM scene-0 footage 2026-08-21, ffmpeg 4.4.2. The resolution
 table is computed from measured Flow output, not from Google's published specs.
+
+## 2026-09-29: text on a surface the tracker loses (`signtext.py` `keys`)
+
+ORB+RANSAC tracking follows a sign that stays roughly the same size, like a held card or a label. It **fails when
+the surface grows and climbs** (a motorway gantry as the car drives under it), and it **paints over anything
+that passes in front** (a passer-by crossing a card).
+- **Fix for a surface it loses:** give the sign `keys: [[t, quad], …]`, the corners read off a gridded frame every
+  ~0.7 s, and the renderer interpolates. It's worked on Camping mv2 re-cut `old18slow`.
+- **Fix for occlusion:** start the text (`from`) after the occluder has passed. Put it on the part of the surface
+  nothing crosses.
+- **Always check a text clip at 6+ frames across its used range**, never one frame. Both failures above passed a
+  single-frame check.

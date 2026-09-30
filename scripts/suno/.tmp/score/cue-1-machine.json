@@ -1,0 +1,18 @@
+{
+  "style": "Instrumental hybrid film score at 120 BPM: a relentless ticking synth ostinato, pulsing low staccato strings and cheap synth strings driving like a trading floor, deep braams underneath, arrogant, cold and unstoppable. Sparse in the midrange, a steady bed under narration.",
+  "exclude": "vocals, singing, choir, humming, vocal chops, piano ballad, acoustic guitar, happy, comedic",
+  "lyrics": "",
+  "title": "camping-score-1-machine-A",
+  "workspace": "camping background music",
+  "model": "v6",
+  "variety": "normal",
+  "maxMode": false,
+  "vocalGender": null,
+  "personalize": false,
+  "styleInfluence": 75,
+  "weirdness": [
+    30,
+    60
+  ],
+  "durationSec": 45
+}

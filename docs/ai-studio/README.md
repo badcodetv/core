@@ -1072,6 +1072,22 @@ it.** That is the finding, and it is worth more than another round.
 **register**. A specific comic performance is not a describable set of traits — it is a
 performance, and the only reliable way to get one is to record one.
 
+## ✅ FOUND 2026-09-16 — Sample Context controls how hard the emotion plays
+
+**Camping, Bob (`Algenib`), scene-8 trigger line** ([`bob-lines.md`](../stories/camping/narration/bob-lines.md)):
+
+- **The first Sample Context over-acted.** It was written as struggle: *"a bad fright"*,
+  *"fighting to get his body back under control"*, *"every second of it costs him something"*.
+  Jack: too emotional, and it stopped sounding like Bob.
+- **Toning it down meant changing that one field.** Bob's original casting sentence went back in,
+  and the emotion was framed as a habit: *"the way he has done a hundred times before"*. It worked
+  with no tags at all.
+- 🔑 **The rule:** to turn emotion down without removing it, describe the feeling as something the
+  character has practised, not something happening to him right now. Keep the character's
+  baseline casting words in the box; they hold him on-voice.
+- ✅ **Profanity renders on this engine.** `bob.wav` rendered *"Fucking wank tanks"* and
+  *"Couldn't give a fuck"* in full, and the B4 v2 take did too.
+
 ## Audio tags — 200+, and ours are safe
 
 - **Syntax:** `[tag] text [tag] text`. Square brackets, **separated by text or punctuation** —
@@ -1126,7 +1142,7 @@ word clearly voiced*. Keep `[sighs]` / `[tired]` away from it — they add the b
 | ⚠️ **Wrapper text gets spoken** | `SCRIPT TO READ:`, wrapping quotes, and a trailing **`Thanks.`** are all read aloud | The transcript box holds **words only**. 🔑 The *"end every prompt with Thanks"* rule is a **Flow** rule and does not apply here |
 | ⚠️ **Quality drift** | Google: quality *"may drift"* past a few minutes | Chunk small anyway — see the truncation row |
 | 🔴 **Silent truncation and skipped lines** (✅ seen 2026-09-11) | A take stops mid-word at 29–43s, or leaves out a whole line, with no error | **≤ ~40 words per take**, check the last word of every take, re-roll short ones. Known preview-model bug, acknowledged by Google, unfixed |
-| ⬜ **Profanity** | Chunk 3 is *"Fuck me."* Untested on this engine | If it refuses: **swap the word, never asterisk it** |
+| ✅ **Profanity** | Renders in full. Seen on `bob.wav` and Bob's B4 v2 take (2026-09-16) | If a take ever comes back empty, suspect a safety block and re-roll. If it truly refuses: **swap the word, never asterisk it** |
 | 🔴 **"Failed to generate voice: Precondition check failed."** (Voice Design, 2026-09-04) | `FAILED_PRECONDITION` means *"the request format may be fine, but you are not allowed to use that path from your current region or billing state."* 🔴 **Answered 2026-09-04: it is an ALLOWLIST, not billing.** A two-word description failed identically, so the feature is gated, not the text — and Google's custom-voice products are *"restricted to allow-listed users… contact a member of the sales team"*, with consent verification and an ethics review on top | 🔴 **Do not attach billing hoping to unlock it** — money is not the gate. Use the **Accent filter** instead: same copy route, free, no precondition |
 | ⬜ **Text instead of audio** | Reported failure: the model occasionally returns text tokens and errors | Re-run |
 

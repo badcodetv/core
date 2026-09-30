@@ -654,3 +654,24 @@ deliberately brighter; uniform near-black reads as a broken file. The plant room
 *into* the failure. Lifting the whites gave it the bright anchor and lifting the blacks off the
 clip gave the shadows somewhere to live — and it reads *darker*, not lighter, because the shadows
 now have shape.
+
+## Recipe: lay down a whole cut from a plan (2026-09-29)
+
+One `premiere_eval` with a list of `[projectItemId, start, end, inPoint]`. For each entry:
+1. `clip.createSetInOutPointsAction(T(in), T(in + end - start))`
+2. `editor.createOverwriteItemAction(item, T(start), 0, 1)`: V1, with the clip's own audio on A2
+3. `clip.createClearInOutPointsAction()`
+
+Then overwrite the song on A1 at 0, mute A2, and close the one-frame gaps with `createSetEndAction`. The worked
+example is the Camping re-cut ledger, `docs/stories/camping/music-video-v2-recut.md` § Premiere.
+
+## Recipe: check every sign against the song, without Premiere (2026-09-30)
+
+When a cut carries lyric text on signs, don't trust the timeline numbers: look.
+1. `premiere_get_sequence` writes the full state. For each V1 item, take `start`, `end`, `inPoint` and `mediaPath`.
+2. For one or two times inside each clip, pull the frame straight from the source with
+   `ffmpeg -ss <inPoint + (t - start)> -i <mediaPath> -frames:v 1`. It is exact and instant, and it avoids
+   `premiere_export_frame`'s `.png.png` trap and the one-export-at-a-time law.
+3. Label each tile with the words sung at `t ± 1.2 s`, from a word-timed transcript (faster-whisper `words`).
+4. Read the sheet. A blank card under a sung line, or a card whose words don't match, is a fix. Worked example:
+   the Camping `music video breath` pass (`docs/stories/camping/music-video-v2-recut.md`).

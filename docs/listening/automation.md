@@ -16,6 +16,30 @@ Format mirrors [`docs/suno-gpt/automation.md`](../suno-gpt/automation.md).
 > binary), then a human signs that window in. The reply's formatting and the running/done signal
 > stay ⬜ until one run succeeds, which is why `waitForReply` trusts no single indicator.
 
+## 0. Per-machine setup — Jack's box was missing the whole toolchain (2026-09-18)
+
+The listening loop was built and proven on **Kai's** machine. On **Jack's** none of it was
+installed, and every failure looked like something else:
+
+| Symptom | Real cause | Fix, run once |
+|---|---|---|
+| `Cannot find package '@badcode/listen-mcp'` from `suno.mts record` | the workspace symlink was never created | `npm install` at the repo root |
+| `PULSE_FAILED: pactl … spawn pactl EACCES` | `pulseaudio-utils` not installed | `sudo apt-get install -y pulseaudio-utils` |
+| `record` writes nothing / ffmpeg missing | **`ffmpeg` was not installed at all** — note this on a repo with an ffmpeg *lane* | `sudo apt-get install -y ffmpeg` |
+| `scripts/audio-measure.py` → `No module named 'numpy'` | no numpy/librosa, and **no `pip` either** | `sudo apt-get install -y python3-pip` then `python3 -m pip install --break-system-packages numpy librosa soundfile` |
+| `audio-server.sh` → "pulseaudio is not installed" | only the *client* tools were installed | `sudo apt-get install -y pulseaudio` |
+| `EACCES: permission denied, mkdir '/mnt/c/Users/kai/Desktop/suno-recordings'` | 🔴 `LISTEN_MEDIA_ROOT` defaults to **Kai's** desktop | export `LISTEN_MEDIA_ROOT=/mnt/c/Users/jackt/OneDrive/Desktop/suno-recordings` (Jack's Desktop is OneDrive-redirected; `/mnt/c/Users/jackt/Desktop` does not exist) |
+| `listen_describe` refuses / `apiKeySet: false` | 🔴 **no `GEMINI_API_KEY` and no `.env` on this machine** | unresolved — a key in `.env` at the repo root is the whole fix |
+
+🔴 **WSLg's PulseAudio was wedged on this machine** (`pactl info` hung, `Connection failure:
+Timeout`) exactly as §`audio-server.sh` predicts. `./scripts/audio-server.sh` started the private
+server and `browser-channel.sh down 1 && up 1` put Chrome onto it. **The channel must be relaunched
+after the sink exists** — creating the sink under a running Chrome is not enough, because Chrome
+reads `PULSE_SINK` at launch. `record` then worked first time.
+
+⬜ **Still blocked on this machine: the listen itself.** Recording, measuring and the structural
+band map all work; `listen_describe` does not, for want of a key.
+
 ## 1. Connecting
 
 - **Channel 2** (`./scripts/browser-channel.sh up 2`, port 9223, profile `.flow-profile-9223`),

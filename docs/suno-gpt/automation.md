@@ -402,6 +402,7 @@ Honesty about this is the point of the table — several recon assumptions faile
 | Claim | Status |
 | --- | --- |
 | CDP attach to the Flow Chrome reaches Suno | ✅ proven |
+| **Model menu mounts slower than 800ms (2026-09-16)** | ✅ **FIXED in `suno.mts` `openModelMenu`**. Since the menu gained a *Create Custom Model* entry, it can take >800ms to mount. The fixed wait read `model:NO-MENU`, aborted the run before Create (no credits lost), and left the menu open over the Lyrics editor, so the next fill timed out. It now waits up to 5s for `[role="menuitemradio"]`. Proven live: the retry loaded and created |
 | Style box fills to exactly 903 chars, counter agrees | ✅ proven |
 | Exclude styles fills | 🟡 **proven but flaky** — see the truncation row |
 | **Exclude box truncates on a multi-id run** | ✅ **FIXED in `suno.mts` 2026-08-27** — `fillChecked` (clear → blur → refill → blur → read back, ×4) was ported over from `style-ab.mts`, where it had been fixed and then never brought back, which is how 2026-08-27 hit the same bug a **fifth** time at **117/499**. `load` now also **asserts `excludeLen`** and refuses to continue into `pair`. Previously: 🔴 **proven, four times** — 2026-08-25/26, EVERY time on the *second* variation of a run: 117/831, 169/871, 180/695. The kept prefix length varies, which rules out a `maxlength` and reads like stale React state winning a race against `.fill()`. Fix: clear → blur → refill → blur → read back, retry ×4 (`fillChecked` in `style-ab.mts`). A length assertion before Create is what makes a bad fill free |
@@ -419,7 +420,8 @@ Honesty about this is the point of the table — several recon assumptions faile
 | Voice attaches; Overwrite dialog appears; Keep Current works | ✅ proven |
 | Title sets via the native value setter + `input` event | ✅ proven |
 | Workspace picker selects an existing workspace | ✅ proven (`gpom-story`) |
-| Workspace picker **creates** a new workspace | ⬜ **not tested** — input says "Search or create…" |
+| Workspace picker **creates** a new workspace | ✅ **proven live 2026-09-17** (`camping background music`). Typing a new name shows *"No workspaces"* and **no row**, so `setWorkspace` returns `workspace:no-row`. The create control is the small **+** button right of the input, `button[aria-label="Create new workspace"]`. A native click works, a *"New workspace created"* toast appears, and the next `load` picks the new row normally. ⬜ `setWorkspace` does not click it yet |
+| 🔴 **Duration: the number box and the slider disagree** | ✅ **proven live 2026-09-17.** `setDuration` wrote 45 to `input[placeholder="Auto"]` and read it back, while `[role=slider][aria-label=Duration]` still read **180**, left by an earlier song. `setDuration` now drives the slider too, whenever it exists (5s steps). **Then the camping score (18 Creates, targets 25–70s) came back within ~10s of target on every take, most within 1s. So a set duration DOES change the take's length on v6** |
 | Form is wiped by navigation | ✅ proven (accidentally) |
 | Whole Gen A set loads in one command | ✅ proven end-to-end |
 | **Create click** | ✅ proven — 10 credits per click, 2 takes per click |
@@ -431,6 +433,7 @@ Honesty about this is the point of the table — several recon assumptions faile
 | The Simple number input is a different, unlinked control | ✅ proven |
 | An attached Voice hides the duration control | ❌ **disproved** — it does not |
 | **That a set duration actually changes the take's length** | ✅ **on v6, yes — 2026-09-16:** a Duration slider left at 180 gave four takes of 2:59–3:00. 🔴 On v6, clicking Custom MOUNTS `[role=slider][aria-label="Duration"]` (default 180) and that is the control Suno obeys; the number input beside it is not — `setDuration` now drives the slider when it exists. 🔴 Same day: the workspace picker's prefix match filed a round into `gpom-story-recut` instead of `gpom-story` (rows read `name (N clips)`); now an exact-row real click, read back, blocking. Earlier, v5.5: 🟡 **partly** — 2026-08-25, a 200s target moved takes from 4:30–4:46 to 4:07–4:24. It shortens, it does not obey: treat it as a ceiling to aim under, never a floor |
+| **That a set duration actually changes the take's length** | ✅ **yes, and on v6 it is tight** — 2026-09-18 (Camping r48), a 195 s target produced **12 takes out of 12 at 3:14–3:16**, across three Style boxes and two weirdness settings: about ±1 s, obeyed not merely bounded. 🔑 And the same lyrics on **Auto** that day (r47) ran **4:38 and 4:55** — on v6, Auto runs long, so set the number. *(Superseded reading, v5.5-era 2026-08-25: a 200 s target moved takes from 4:30–4:46 only to 4:07–4:24 — shortening without obeying. Either v6 changed, or the earlier target was simply below what those lyrics could fit.)* ✅ **And it does NOT cost double** — proven live 2026-09-21 (Camping r54): **twelve v6 Creates at Duration 195 s cost exactly 10 credits each**, counter read before and after every Create (10,540 → 10,420). So a v6 Create is 10 credits for 2 takes, custom duration included |
 | Take/clip harvesting from the workspace list | ⬜ not attempted |
 | **Model picker sets and reads back** (v6 → v6-wild → v6) | ✅ **proven 2026-09-10** via `controls` |
 | **Variety, Max Mode set and read back** (Normal → High → Normal, Off → On → Off) | ✅ **proven 2026-09-10** via `controls` |
@@ -445,8 +448,7 @@ Honesty about this is the point of the table — several recon assumptions faile
 Create, then **nudge the slider and retitle**, Create again. No reload between halves. This is what
 makes `suno_pair` a single call rather than two full loads.
 
-Two things still unproven: **creating a new workspace** through the picker (only selecting an
-existing one has been exercised), and **harvesting** beyond reading titles and durations off the
+One thing still unproven: **harvesting** beyond reading titles and durations off the
 clip rows.
 
 ---
@@ -611,6 +613,26 @@ model as `v6` / `wild` / the custom model's short name — e.g. `gpom-cut1-A-wil
 when a prompt box moves.
 
 ---
+
+## 9b. `setLyrics` — the actionable click is intercepted on some layouts (2026-09-18)
+
+✅ **Proven live, and fixed in `suno.mts`.** On Jack's machine (window 1908x822, branded-Chrome
+channel 1) `page.locator('[aria-label="Lyrics editor"]').click()` never cleared its retry loop:
+Playwright reported first the panel's `useResizer-resizable-container` and then the **Style
+textarea itself** as intercepting pointer events, and the command died with a `TimeoutError` after
+the Style box, the excludes and every control had already been written.
+
+🔴 **The failure is silent in the worst way.** `load` had already set style (903), excludes (466),
+model, Variety, Vocal Gender, Personalize and the workspace; only `lyricParas` stayed at **1**. A
+`status` read afterwards looks almost entirely healthy — which is the same lesson as §"a
+green-looking form is not a safe form".
+
+**The fix is the documented native-click recipe:** try the actionable click with an 8 s timeout,
+and on failure `scrollIntoView` + `el.click()` + `el.focus()` in-page, asserting that the editor (or
+a descendant) really took focus before typing. Focus is all the keyboard insertion needs; the
+Lexical line-by-line insert below is unchanged, and `lyricParas` still verifies it.
+
+⬜ **Not known:** which window sizes trigger it. It did not fire on Kai's machine in any prior round.
 
 ## 10. Playback, recording and the listening loop
 
@@ -822,3 +844,34 @@ Used for GPOM scene 2 (narration-v6.md r20) so a new scene continues an earlier 
 4. The boxes, Voice, sliders, title and workspace are the normal form. Create cost **10 credits for 2 takes**.
 5. 🔑 **Each take is only the NEW section** (the kept part is not repeated), and the **Duration slider sets the new section's length**:
    15 gave 0:16 and 0:17.
+
+## 🔑 `create:timeout` is not necessarily a spent Create (2026-09-23, Camping r70)
+
+One cell (`camping-r70-piano-v6-w60`) returned `create:timeout — clicked, but takes did not appear in
+time` **twice in a row**, then succeeded on the third identical attempt. Both failures:
+
+- cost **0 credits** (balance read before and after each), and
+- produced **no takes** (verified with `takes <prefix>` before retrying).
+
+**So the protocol on a timeout is: read the take list AND the credit balance before re-running.**
+If takes exist or the balance dropped, the Create landed and a retry double-spends; if neither
+moved, retry is free and — on this evidence — may simply work. ⬜ Cause unknown: the form read back
+correct (`styleLen` and `title` both right) on every attempt, so this looks like a queue-side
+failure rather than a DOM one. One occurrence in 40+ Creates across r66–r70.
+
+## 🔴 `takes` only sees the rows the clip list has RENDERED (2026-09-23)
+
+The right-hand clip list is **virtualised**: `listTakes` reads the DOM, so takes that have scrolled
+out are simply absent — and the command returns a short list with no error. Camping r71's twelve
+takes returned as **two** immediately after r72 was generated, although every Create had reported
+`create:ok` and the credit balance had dropped for each.
+
+🔑 **A short `takes` result is not evidence that takes are missing.** Cross-check the credit
+balance first. To collect them all, scroll the list and union the results —
+[`scripts/suno/scan-takes.mts`](../../scripts/suno/scan-takes.mts) does exactly that (connect,
+`listTakes`, scroll every tall scroll container, repeat, dedupe by song id) and recovered 40/40
+takes across r70–r72.
+
+**Practical rule: capture the song ids from the `pair` output as it runs.** `pair` prints the take
+list at the end of each Create, and that is the only moment the ids are guaranteed visible.
+

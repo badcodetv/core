@@ -107,6 +107,7 @@ feeling should not appear in the prompt at all.
 | sad | soft eyes, slight frown, down-turned lips |
 | angry | tight jaw, lowered brows, intense eyes |
 | hungover, exhausted | half-lidded eyes slow to track, mouth flat and slightly open, slack jaw, a pillow crease across one cheek |
+| frightened, terrified | inner brows raised and pulled together, flat rather than arched (arched reads as surprise); upper lids lifted so white shows above the iris; lower lids tight; lips slightly parted and stretched sideways; the body frozen, breath held. Added 2026-09-17 (Ekman-style fear pattern, [PsychMechanics](https://www.psychmechanics.com/facial-expressions-fear/), [PSU open textbook](https://psu.pb.unizin.org/psych425/chapter/facial-expressions-of-feabasic-or-social-constructivist/)) `[community]` |
 | unimpressed, annoyed | brows relaxed and level, eyes aimed at nothing, the face doing almost nothing |
 
 **The vocabulary, by feature** `[community]` — eyes: *engaged, soft, intense, wide,
