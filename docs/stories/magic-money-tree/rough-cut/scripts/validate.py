@@ -49,15 +49,40 @@ def load(scenes):
     return lines, [(f, json.load(open(f))) for f in files]
 
 
+def timemap(lines):
+    """Planned time -> real time. Before the narration exists this is the identity. After
+    retime.py, each line's plan_start maps to its real start, and times in between are stretched
+    linearly, so every clip keeps its place against the words without editing the scene files."""
+    pts = sorted({(l.get("plan_start", l["start"]), l["start"]) for l in lines.values() if l.get("start") is not None})
+    if pts and pts[0][0] > 0:
+        pts.insert(0, (0.0, 0.0))          # the film starts at 0 either way
+    last = max(lines.values(), key=lambda l: l.get("plan_end", l["end"]))
+    pts.append((last.get("plan_end", last["end"]), last["end"]))
+    xs = [p for p, _ in pts]
+
+    def f(t):
+        import bisect
+        i = bisect.bisect_right(xs, t) - 1
+        if i < 0:
+            return pts[0][1] + (t - pts[0][0])
+        if i >= len(pts) - 1:
+            return pts[-1][1] + (t - pts[-1][0])
+        (p0, r0), (p1, r1) = pts[i], pts[i + 1]
+        return r0 + (t - p0) * ((r1 - r0) / (p1 - p0) if p1 > p0 else 1)
+    return f
+
+
 def timeline(lines, scenes):
+    f = timemap(lines)
     out = []
-    for f, sc in scenes:
+    for fname, sc in scenes:
         for c in sc["clips"]:
             l = lines.get(c.get("line"))
             if not l:
                 continue
-            s = l["start"] + c.get("offset", 0)
-            out.append(dict(c, scene=sc["scene"], start=round(s, 3), end=round(s + c["dur"], 3)))
+            p0 = l.get("plan_start", l["start"]) + c.get("offset", 0)
+            s, e = f(p0), f(p0 + c["dur"])
+            out.append(dict(c, scene=sc["scene"], start=round(s, 3), end=round(e, 3), dur=round(e - s, 3)))
     return sorted(out, key=lambda c: (c["start"], c["track"]))
 
 
@@ -105,6 +130,11 @@ def main(args):
             if c.get("check"):
                 warns.append(f"{cid} CHECK: {c['check']}")
     tl = timeline(lines, scenes)
+    for c in tl:
+        if c["kind"] == "film" and c.get("src_in") is not None and c.get("src_max") is not None \
+                and c["src_in"] + c["dur"] > c["src_max"] + 0.05:
+            errs.append(f"{c['scene']}:{c['id']} after retiming needs {c['dur']:.2f}s but the shot has "
+                        f"{c['src_max'] - c['src_in']:.2f}s (move src_in earlier, or split the clip)")
     for tr in TRACKS:
         cl = [c for c in tl if c["track"] == tr]
         for a, b in zip(cl, cl[1:]):

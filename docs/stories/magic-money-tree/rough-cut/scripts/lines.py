@@ -64,6 +64,7 @@ def plan_times(out):
         for l in grp:
             span = (nxt - c) * l["words"] / total
             l["start"], l["end"] = round(t, 2), round(t + span, 2)
+            l["plan_start"], l["plan_end"] = l["start"], l["end"]
             t += span
 
 

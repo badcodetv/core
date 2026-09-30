@@ -1,0 +1,214 @@
+{
+ "scene": "10a",
+ "title": "New money, a particular purpose",
+ "notes": [
+  "Storyboard vs plan: none on the words; the verb card is 2009 · SHAKE in both.",
+  "Order changed from the plan: Lehman (New York) opens under 'The banking system is failing', labelled NEW YORK · 2008 and kept to 3.5 s, so the British rescue line (P7.03) sits on a British picture, the Northern Rock queue (Northern Rock was nationalised in February 2008). The plan put Lehman under the rescue line itself, which its own note said was the wrong match.",
+  "Northern Rock Queue.jpg is the September 2007 run, used under 2008 lines: it is 'the crisis in Britain', not a dated 2008 event.",
+  "QUOTE-BOE-2 ('The majority of money … commercial banks making loans') goes under P7.07, where the narration says the same thing; the Threadneedle doors (HOLD) take P7.08 only. The plan had the doors under both lines.",
+  "QUOTE-BOE-1 is the Bank's QE page (attributed 'BANK OF ENGLAND', no year), not the 2014 bulletin as the plan's attribution said; the card is right as rendered (facts.md §13).",
+  "DIAGRAM-10A is three PNG steps on V2: step 1 on 'It creates new money, electronically', step 2 on 'and uses it to buy bonds', step 3 (the swap) holds to the end of the line.",
+  "The Northern Rock reprise (10a-11) holds 12 s, longer than the 2-6 s norm, on purpose: it lands on the faces at 'Good news… if you owned some' and carries the pause into scene 11. Trim to the real voice.",
+  "Nothing we have shows asset prices rising (P7.10); the verb card carries that line. A house-price or share-index picture would be a later addition."
+ ],
+ "clips": [
+  {
+   "id": "10a-01",
+   "line": "P7.01",
+   "offset": 0.0,
+   "dur": 3.5,
+   "track": "V1",
+   "kind": "still",
+   "file": "s10a-new-money/Lehman Brothers-NYC-20080915.jpg",
+   "treatment": "DRIFT",
+   "desc": "New York street at night outside the Lehman building on bankruptcy day, TV crews and passers-by",
+   "credit": "Robert Scoble, CC BY 2.0",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "10a-02",
+   "line": "P7.01",
+   "offset": 0.0,
+   "dur": 3.5,
+   "track": "V4",
+   "kind": "card",
+   "file": "cards/LABEL-NEW-YORK-2008.png",
+   "treatment": null,
+   "desc": "label NEW YORK · 2008 over the Lehman still",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "10a-03",
+   "line": "P7.02",
+   "offset": 1.72,
+   "dur": 6.5,
+   "track": "V1",
+   "kind": "still",
+   "file": "s10a-new-money/Northern Rock Queue.jpg",
+   "treatment": "PUSH",
+   "desc": "the queue outside Northern Rock, Brighton; push toward the 'northern rock' sign",
+   "move": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.55,
+     0.3,
+     1.12
+    ]
+   },
+   "credit": "Dominic Alves, CC BY 2.0",
+   "check": "2007 photograph (the run) under the 2008 rescue line: confirm it reads as 'the crisis', not as the rescue itself",
+   "shot": null
+  },
+  {
+   "id": "10a-04",
+   "line": "P7.04",
+   "offset": 0.0,
+   "dur": 4.0,
+   "track": "V1",
+   "kind": "still",
+   "file": "s10a-new-money/Bank-of-England.jpg",
+   "treatment": "PUSH",
+   "desc": "Bank of England exterior, Union flag, blue sky",
+   "credit": "acediscovery, CC BY 4.0",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "10a-05",
+   "line": "P7.05",
+   "offset": 0.0,
+   "dur": 3.0,
+   "track": "V2",
+   "kind": "chart",
+   "file": "charts/DIAGRAM-10A-1.png",
+   "treatment": "HOLD",
+   "desc": "diagram step 1: THE BANK CREATES NEW MONEY, ELECTRONICALLY (£ box, bond box)",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "10a-06",
+   "line": "P7.05",
+   "offset": 3.0,
+   "dur": 2.0,
+   "track": "V2",
+   "kind": "chart",
+   "file": "charts/DIAGRAM-10A-2.png",
+   "treatment": "HOLD",
+   "desc": "diagram step 2: new money arrow to the pension fund's bond",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "10a-07",
+   "line": "P7.05",
+   "offset": 5.0,
+   "dur": 2.0,
+   "track": "V2",
+   "kind": "chart",
+   "file": "charts/DIAGRAM-10A-3.png",
+   "treatment": "HOLD",
+   "desc": "diagram step 3: the fund now holds new money instead of a bond",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "10a-08",
+   "line": "P7.06",
+   "offset": 0.0,
+   "dur": 5.0,
+   "track": "V3",
+   "kind": "card",
+   "file": "cards/QUOTE-BOE-1.png",
+   "treatment": null,
+   "desc": "quote: '…we can create money digitally in the form of central bank reserves.' BANK OF ENGLAND",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "10a-09",
+   "line": "P7.07",
+   "offset": 0.0,
+   "dur": 4.42,
+   "track": "V3",
+   "kind": "card",
+   "file": "cards/QUOTE-BOE-2.png",
+   "treatment": null,
+   "desc": "quote: 'The majority of money in the modern economy is created by commercial banks making loans.' BoE Quarterly Bulletin 2014",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "10a-10",
+   "line": "P7.08",
+   "offset": 0.0,
+   "dur": 2.58,
+   "track": "V1",
+   "kind": "still",
+   "file": "s10a-new-money/Threadneedle Street doors, Bank of England.jpg",
+   "treatment": "HOLD",
+   "desc": "the Bank's great doors on Threadneedle Street, June 2009 (1877 px, no push)",
+   "credit": "Rev Stan, CC BY 2.0",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "10a-11",
+   "line": "P7.09",
+   "offset": 0.0,
+   "dur": 5.0,
+   "track": "V1",
+   "kind": "still",
+   "file": "s10a-new-money/Bank of England Facade.jpg",
+   "treatment": "PUSH",
+   "desc": "Bank of England Threadneedle Street frontage, low angle",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "10a-12",
+   "line": "P7.10",
+   "offset": 0.0,
+   "dur": 5.0,
+   "track": "V3",
+   "kind": "card",
+   "file": "cards/VERB-2009-SHAKE.png",
+   "treatment": null,
+   "desc": "verb card 2009 · SHAKE",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "10a-13",
+   "line": "P7.10",
+   "offset": 5.0,
+   "dur": 12.0,
+   "track": "V1",
+   "kind": "still",
+   "file": "s10a-new-money/Northern Rock Queue.jpg",
+   "treatment": "PUSH",
+   "desc": "reprise: the Northern Rock queue, slow move from the whole frame onto the ordinary faces in the line",
+   "move": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.62,
+     0.62,
+     1.45
+    ]
+   },
+   "credit": "Dominic Alves, CC BY 2.0",
+   "shot": null,
+   "check": null
+  }
+ ]
+}

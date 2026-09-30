@@ -31,3 +31,7 @@ a_warning_to_travellers_TNA	_library	a_warning_to_travellers_TNA.mpg	720x576	16:
 read_any_good_meters_lately_TNA	_library	read_any_good_meters_lately_TNA.mpg	720x576	16:15	25/1	25/1	1.0	yadif=1	62.064000	62.040000	925075978	OK	_library/read_any_good_meters_lately_TNA.picture-only.mov
 pedestrian_crossing_TNA	_library	pedestrian_crossing_TNA.mpg	720x576	16:15	25/1	25/1	1.0	yadif=1	124.104000	124.080000	1866254755	OK	_library/pedestrian_crossing_TNA.picture-only.mov
 shown_by_request_TNA	_library	shown_by_request_TNA.mpg	720x576	16:15	25/1	25/1	0.0	setfield=prog	1095.024000	1095.000000	8021165504	OK	_library/shown_by_request_TNA.picture-only.mov
+111-M-1211-restored	s07-victory	111-M-1211-restored.mp4	1280x720	1:1	24/1	24/1	0.0	setfield=prog	4870.593333	4870.584000	37711802936	OK	s07-victory/111-M-1211-restored.picture-only.mov
+gov.archives.arc.39018	s06-job-after-uniform	gov.archives.arc.39018.mpeg	720x480	8:9	30000/1001	30000/1001	0.99	yadif=1	569.008767	568.936000	8621103122	OK	s06-job-after-uniform/gov.archives.arc.39018.picture-only.mov
+gov.fdr.25.2	s01-dunkirk	gov.fdr.25.2.mpeg	368x480	40:23	30000/1001	30000/1001	0.99	yadif=1	789.322656	789.189000	6228605282	OK	s01-dunkirk/gov.fdr.25.2.picture-only.mov
+gov.fdr.25.3	s01-dunkirk	gov.fdr.25.3.mpeg	704x480	10:11	30000/1001	30000/1001	1.0	yadif=1	918.656000	918.685000	12733124387	OK	s01-dunkirk/gov.fdr.25.3.picture-only.mov

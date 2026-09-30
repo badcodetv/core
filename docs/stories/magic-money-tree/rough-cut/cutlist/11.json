@@ -1,0 +1,242 @@
+{
+ "scene": "11",
+ "title": "The promise requires another shift",
+ "notes": [
+  "Verb card is VERB-2011-STARVE (storyboard); the edit plan said 2017 · STARVE. Storyboard wins.",
+  "Question Time is CARDS, not a clip: Kai's ruling on clip or card is still owed. If he picks the clip it replaces 11-09 to 11-11 (PAYSLIP, QT-1, QT-2) one for one at the same clock.",
+  "PAY card is DATA-PAY (2011–2017, per facts.md §15); it follows the Red Book's own paragraph 2.18 ('A two year pay freeze will be introduced from 2011-12…').",
+  "The plan's split screen (Bank left, Red Book right) under P7.19 is cut as two pictures in sequence here (Bank, then the Red Book cover), because the preview shows one picture at a time. In Premiere it may be built as a true split: Bank of England Facade left half on V1, the cover right half on V2.",
+  "Red Book title page (pdfpage002) stands in for 'one page' under the household line; the pay paragraph is saved for the pay line where it says exactly that.",
+  "Closing nurse: A Diary for Timothy (1945), the one shot that tilts up from a patient's bandaged foot and crutches to the full figures of an orderly, the patient on crutches and a nurse in cap and cape (shot bracketed by eye with grab strips: in ≈867.0, out ≈897.5; no shot log yet). src_in 884.3 starts mid-tilt so the nurse's full figure arrives about 6 s in, just before 'She was already there'. Hold 13 s to the end of the scene.",
+  "No credit string for A Diary for Timothy is given in footage.md (Crown copyright expired, picture only, tom@punchcard.tv upload); the end-credit string is owed."
+ ],
+ "clips": [
+  {
+   "id": "11-01",
+   "line": "P7.12",
+   "offset": 0.0,
+   "dur": 4.0,
+   "track": "V1",
+   "kind": "still",
+   "file": "s11-another-shift/Chancellor of the Exchequer George Osborne (6128163568).jpg",
+   "treatment": "PUSH",
+   "desc": "George Osborne speaking at a lectern (2011)",
+   "credit": "Foreign and Commonwealth Office, CC BY 2.0",
+   "check": "2011 photograph under '2010': fine as the Chancellor of the period; confirm",
+   "shot": null
+  },
+  {
+   "id": "11-02",
+   "line": "P7.14",
+   "offset": 0.0,
+   "dur": 4.24,
+   "track": "V2",
+   "kind": "doc",
+   "file": "s11-another-shift/docs/Budget2010-HC61-pdfpage001.png",
+   "treatment": "DOC+PUSH",
+   "desc": "the Red Book cover: HM TREASURY · BUDGET 2010 · June 2010 · HC 61",
+   "credit": "HM Treasury, Budget 2010 (HC 61). Contains public sector information licensed under the Open Government Licence v3.0.",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "11-03",
+   "line": "P7.15",
+   "offset": 0.0,
+   "dur": 3.76,
+   "track": "V2",
+   "kind": "doc",
+   "file": "s11-another-shift/docs/Budget2010-HC61-pdfpage002.png",
+   "treatment": "DOC+PUSH",
+   "desc": "Red Book title page: 'BUDGET 2010 … laid before the House of Commons … 22 June 2010'",
+   "move": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.7,
+     0.3,
+     1.08
+    ]
+   },
+   "credit": "HM Treasury, Budget 2010 (HC 61). Contains public sector information licensed under the Open Government Licence v3.0.",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "11-04",
+   "line": "P7.16",
+   "offset": 0.0,
+   "dur": 5.0,
+   "track": "V1",
+   "kind": "still",
+   "file": "s11-another-shift/Budget 2014; Chancellor George Osborne delivering his Budget Statement.jpg",
+   "treatment": "INSET",
+   "desc": "Osborne holding up the red Budget box (960 px)",
+   "credit": "HM Treasury, OGL v3",
+   "check": "2014 photograph under the 2010 Coalition line; the plan chose it, confirm",
+   "shot": null
+  },
+  {
+   "id": "11-05",
+   "line": "P7.18",
+   "offset": 0.0,
+   "dur": 3.0,
+   "track": "V2",
+   "kind": "doc",
+   "file": "s11-another-shift/docs/Budget2010-HC61-p45-para2.18-crop.png",
+   "treatment": "DOC+PUSH",
+   "desc": "Red Book para 2.18: 'A two year pay freeze will be introduced from 2011-12 for public sector workforces…'",
+   "credit": "HM Treasury, Budget 2010 (HC 61). Contains public sector information licensed under the Open Government Licence v3.0.",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "11-06",
+   "line": "P7.18",
+   "offset": 3.0,
+   "dur": 3.0,
+   "track": "V3",
+   "kind": "card",
+   "file": "cards/DATA-PAY.png",
+   "treatment": null,
+   "desc": "card: 2011–2017 · PAY FROZEN, THEN ABOUT 1% · PUBLIC-SECTOR PAY",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "11-07",
+   "line": "P7.19",
+   "offset": 0.0,
+   "dur": 3.2,
+   "track": "V1",
+   "kind": "still",
+   "file": "s10a-new-money/Bank of England Facade.jpg",
+   "treatment": "PUSH",
+   "desc": "Bank of England frontage again: the Bank creating money",
+   "move": {
+    "from": [
+     0.5,
+     0.5,
+     1.06
+    ],
+    "to": [
+     0.5,
+     0.45,
+     1.12
+    ]
+   },
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "11-08",
+   "line": "P7.19",
+   "offset": 3.2,
+   "dur": 3.8,
+   "track": "V2",
+   "kind": "doc",
+   "file": "s11-another-shift/docs/Budget2010-HC61-pdfpage001.png",
+   "treatment": "DOC",
+   "desc": "the Red Book cover again: the Treasury holding it back. 'Same country. Same years.'",
+   "credit": "HM Treasury, Budget 2010 (HC 61). Contains public sector information licensed under the Open Government Licence v3.0.",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "11-09",
+   "line": "P7.21",
+   "offset": 0.0,
+   "dur": 5.0,
+   "track": "V1",
+   "kind": "still",
+   "file": "s11-another-shift/Theresa May (2016).jpg",
+   "treatment": "PUSH",
+   "desc": "Theresa May, official Prime Ministerial portrait, seated at a desk",
+   "move": {
+    "from": [
+     0.5,
+     0.45,
+     1.0
+    ],
+    "to": [
+     0.52,
+     0.3,
+     1.15
+    ]
+   },
+   "credit": "Andrew Parsons / Prime Minister's Office, OGL v3",
+   "check": "2016 portrait under the 2017 Question Time line; confirm",
+   "shot": null
+  },
+  {
+   "id": "11-10",
+   "line": "P7.23",
+   "offset": 0.0,
+   "dur": 6.0,
+   "track": "V3",
+   "kind": "card",
+   "file": "cards/PAYSLIP.png",
+   "treatment": null,
+   "desc": "typeset payslips 2009 = 2017, identical rows (our own graphic)",
+   "check": "payslip line is secondary-sourced (Victoria Davey, per RCNi/Independent/AP): confirm against the BBC clip before recording",
+   "shot": null
+  },
+  {
+   "id": "11-11",
+   "line": "P7.24",
+   "offset": 0.0,
+   "dur": 6.0,
+   "track": "V3",
+   "kind": "card",
+   "file": "cards/QUOTE-QT-1.png",
+   "treatment": null,
+   "desc": "quote: 'I recognise the job that you do, but we've had to take some hard choices…' THERESA MAY · BBC QUESTION TIME · 2 JUNE 2017",
+   "check": "QT-1 wording from secondary transcripts only: check the BBC clip",
+   "shot": null
+  },
+  {
+   "id": "11-12",
+   "line": "P7.25",
+   "offset": 0.0,
+   "dur": 6.0,
+   "track": "V3",
+   "kind": "card",
+   "file": "cards/QUOTE-QT-2.png",
+   "treatment": null,
+   "desc": "quote: '…there isn't a magic money tree that we can shake…' hold; let 'shake' sit",
+   "check": "QT-2 wording: sources differ after 'shake'; check the BBC clip",
+   "shot": null
+  },
+  {
+   "id": "11-13",
+   "line": "P7.26",
+   "offset": 0.0,
+   "dur": 4.0,
+   "track": "V3",
+   "kind": "card",
+   "file": "cards/VERB-2011-STARVE.png",
+   "treatment": null,
+   "desc": "verb card 2011 · STARVE (on 'You can print the money')",
+   "shot": null,
+   "check": null
+  },
+  {
+   "id": "11-14",
+   "line": "P7.27",
+   "offset": 0.0,
+   "dur": 13.0,
+   "track": "V1",
+   "kind": "film",
+   "file": "s14-a-life-to-get-back-to/DiaryForTimothy.picture-only.mov",
+   "treatment": "FILM-43+GRADE-BW+HOLD",
+   "desc": "1945 hospital: camera tilts up from the patient's crutches to an orderly, the young patient on crutches and a nurse in cap and cape, who smile at each other",
+   "src_in": 884.3,
+   "src_max": 897.4,
+   "shot": "DiaryForTimothy (no shot log yet; shot ≈867.0–897.5 by grab strip)",
+   "check": "1945 nurse under a 2017 line: confirm it reads as 'the same kind of nurse, seventy years earlier' and not as the nurse from Question Time; consider a 1945 label"
+  }
+ ]
+}
