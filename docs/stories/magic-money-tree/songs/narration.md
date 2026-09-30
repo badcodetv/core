@@ -302,10 +302,10 @@ A key in a front door is a fairly practical sort of patriotism.
 
 And the debt?
 It was never cleared.
-In pounds, it kept rising.
+In pounds, it never went away. It ended bigger.
 The economy rose faster.
 People were housed, treated, and in work.
-For twenty years, unemployment averaged under two in a hundred.
+For twenty years, registered unemployment averaged under two in a hundred.
 For twenty-seven years running, the debt shrank against the size of the country.
 Not by magic.
 Budgets were tight.
@@ -372,13 +372,13 @@ That part is planted.
 Some goes down a priority lane, for suppliers recommended by ministers, MPs and peers.
 One company is a few weeks old.
 It wins contracts worth two hundred and three million pounds.
-The gowns can't be used.
-A court orders a hundred and twenty-two million repaid.
+The gowns are rejected... not sterile, as the contract required.
+A court orders the company to repay a hundred and twenty-two million.
 The company goes into administration the day before the judgment.
-Baroness Mone had told the government she would not benefit.
-She later said on television that she stood to benefit from about sixty million.
+In May twenty twenty, according to emails reported by the Guardian, Baroness Mone told the government she would not benefit.
+She later said on television that she is a beneficiary of family trusts holding about sixty million.
 She denies any wrongdoing.
-The following spring, a company run by the supplier's owner of record bought a yacht.
+The following spring, press reports say, a company run by the supplier's director bought a yacht.
 No court has connected those facts.
 We are only reading the dates.
 In the nineteen forties, the people with the most paid the most.
@@ -464,6 +464,22 @@ approximate; at the film's pace about 100 words is a minute.
 Taking all of them saves about **160 words, roughly a minute and a half**, and leaves every argument
 and every verb beat standing. A deeper cut means losing a scene: the storyboard's own advice is
 **02a and 10a first**, because the verbs survive on the cards.
+
+## 8. Fact-check changes, 30 September 2026 (applied; revert any line you prefer)
+
+From [`rough-cut/facts.md`](../rough-cut/facts.md). Mirrored into `storyboard.md`.
+
+| Part | Was | Now | Why |
+| --- | --- | --- | --- |
+| P6 | In pounds, it kept rising. | In pounds, it never went away. It ended bigger. | Nominal debt fell slightly in 1948, 1951 and 1969 |
+| P6 | For twenty years, unemployment averaged… | For twenty years, **registered** unemployment averaged… | 1.7% on the official count; 2.4% on the Bank's adjusted series |
+| P8 | The gowns can't be used. | The gowns are rejected... not sterile, as the contract required. | The judgment's finding, no stronger |
+| P8 | A court orders a hundred and twenty-two million repaid. | A court orders the company to repay… | The order is against PPE Medpro Ltd, not a person |
+| P8 | Baroness Mone had told the government she would not benefit. | In May twenty twenty, according to emails reported by the Guardian, Baroness Mone told… | Source is leaked-email reporting, not the court |
+| P8 | …she stood to benefit from about sixty million. | …she is a beneficiary of family trusts holding about sixty million. | Her own, conditional, phrasing |
+| P8 | …a company run by the supplier's owner of record bought a yacht. | …press reports say, a company run by the supplier's director bought a yacht. | Purchase date and link rest on press reporting; drop the line if the legal read says so |
+
+P8 stays 🔴: not generated before the legal read.
 
 ## 7. Round log
 

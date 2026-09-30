@@ -49,6 +49,24 @@ def plan_rows():
     return rows
 
 
+SCENE_END = 910  # 15:10, the end of scene 15 in the edit plan
+
+
+def plan_times(out):
+    """Give every line a planned start and end. Lines that share an edit-plan row share its time,
+    split by word count; a row runs until the next row's clock."""
+    clocks = sorted({l["clock"] for l in out if l["clock"] is not None})
+    for i, c in enumerate(clocks):
+        nxt = clocks[i + 1] if i + 1 < len(clocks) else SCENE_END
+        grp = [l for l in out if l["clock"] == c]
+        total = sum(l["words"] for l in grp) or 1
+        t = float(c)
+        for l in grp:
+            span = (nxt - c) * l["words"] / total
+            l["start"], l["end"] = round(t, 2), round(t + span, 2)
+            t += span
+
+
 def main():
     rows = plan_rows()
     for r in rows:
@@ -75,6 +93,22 @@ def main():
                 rec.update(scene=None, clock=None, match=round(score, 2))
                 unmatched.append(rec)
             out.append(rec)
+    # a reworded line keeps its slot: the plan row, between its neighbours, that no line took
+    used = {l["clock"] for l in out if l["clock"] is not None}
+    for i, l in enumerate(out):
+        if l["clock"] is None:
+            prev = next((o["clock"] for o in reversed(out[:i]) if o["clock"] is not None), -1)
+            nxt = next((o["clock"] for o in out[i + 1:] if o["clock"] is not None), 10 ** 6)
+            free = [r for r in rows if prev < r["clock"] < nxt and r["clock"] not in used]
+            if free:
+                l.update(scene=free[0]["scene"], clock=free[0]["clock"], match="slot")
+                used.add(free[0]["clock"])
+                unmatched.remove(l)
+            elif prev >= 0:
+                src = next(o for o in reversed(out[:i]) if o["clock"] is not None)
+                l.update(scene=src["scene"], clock=src["clock"], match="prev")
+                unmatched.remove(l)
+    plan_times(out)
     json.dump(out, open(os.path.join(MMT, "rough-cut", "lines.json"), "w"), indent=1, ensure_ascii=False)
     print(f"{len(out)} lines, {len(unmatched)} unmatched")
     for u in unmatched:

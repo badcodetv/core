@@ -737,11 +737,11 @@ outgrown, at a cost that is named.
 
 > And the debt?
 >
-> It was never cleared. In pounds, it kept rising.
+> It was never cleared. In pounds, it never went away. It ended bigger.
 >
 > The economy rose faster.
 >
-> People were housed, treated and in work. For twenty years, unemployment averaged under two in a hundred.
+> People were housed, treated and in work. For twenty years, registered unemployment averaged under two in a hundred.
 >
 > For twenty-seven years running, the debt shrank against the size of the country.
 >
@@ -929,11 +929,11 @@ closest to the tree.
 >
 > One company is a few weeks old. It wins contracts worth two hundred and three million pounds.
 >
-> The gowns can't be used. A court orders a hundred and twenty-two million repaid. The company goes into administration the day before the judgment.
+> The gowns are rejected: not sterile, as the contract required. A court orders the company to repay a hundred and twenty-two million. The company goes into administration the day before the judgment.
 >
-> Baroness Mone had told the government she would not benefit. She later said on television that she stood to benefit from about sixty million. She denies any wrongdoing.
+> In May 2020, according to emails reported by the Guardian, Baroness Mone told the government she would not benefit. She later said on television that she is a beneficiary of family trusts holding about sixty million. She denies any wrongdoing.
 >
-> The following spring, a company run by the supplier's owner of record bought a yacht.
+> The following spring, press reports say, a company run by the supplier's director bought a yacht.
 >
 > No court has connected those facts. We are only reading the dates.
 >

@@ -27,17 +27,30 @@ def duration(p):
         ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p]).strip())
 
 
-def cuts(p):
-    r = subprocess.run(
-        ["ffmpeg", "-nostdin", "-hide_banner", "-i", p, "-an", "-vf",
-         f"scale=160:-2,select='gt(scene,{THRESH})',showinfo", "-f", "null", "-"],
-        capture_output=True, text=True)
-    return [float(m) for m in re.findall(r"pts_time:([0-9.]+)", r.stderr)]
+def cuts(p, d):
+    """Scene-change times. Scores every frame over 0.04 once, then picks the threshold: 0.30 by
+    default, lowered (0.18, then 0.10) when that leaves shots averaging over 20 s, which is what
+    soft, dim or dissolve-heavy prints do."""
+    fd, tmp = tempfile.mkstemp(suffix=".txt")
+    os.close(fd)
+    subprocess.run(
+        ["ffmpeg", "-nostdin", "-hide_banner", "-v", "error", "-i", p, "-an", "-vf",
+         f"scale=160:-2,select='gt(scene,0.04)',metadata=print:key=lavfi.scene_score:file={tmp}",
+         "-f", "null", "-"], check=True)
+    txt = open(tmp).read()
+    os.remove(tmp)
+    scored = [(float(t), float(v)) for t, v in
+              re.findall(r"pts_time:([0-9.]+)\s*\n?lavfi.scene_score=([0-9.]+)", txt)]
+    for th in (THRESH, 0.18, 0.10):
+        c = [t for t, v in scored if v > th]
+        if d / (len(c) + 1) <= 20:
+            break
+    return c
 
 
 def shots(p):
     d = duration(p)
-    edges = [0.0] + [c for c in cuts(p) if 0 < c < d] + [d]
+    edges = [0.0] + [c for c in cuts(p, d) if 0 < c < d] + [d]
     out = []
     for a, b in zip(edges, edges[1:]):
         if out and (b - a) < MIN_SHOT:
