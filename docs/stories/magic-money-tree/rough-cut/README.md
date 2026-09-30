@@ -85,8 +85,55 @@ One JSON file per scene, `cutlist/<scene>.json`:
 the real narration says it does, and every clip keeps its `offset` from its line; durations
 stretch or shrink within `src_max`. The voice sets the cut.
 
-## Phase-2 run (Premiere)
+## Phase-2 run: narration, then Premiere
 
-Written out in full at the end of phase 1. In outline: generate and record the narration, re-time
-`lines.json` from it, `validate.py`, then per scene import, place, trim, treat, label, and
-`premiere_export_frame` to look.
+Granted by Kai on 30 September 2026: Suno generation, recording Suno previews, and placing
+everything on the Premiere timeline, all without asking per step. Still true: **no Suno download
+by script** (a human spends that allowance), **P8 (scene 11a) is not generated before its legal
+read**, and **no Flow video credit without Kai's yes on the plate**.
+
+### A. Narration (Suno)
+
+1. **Preflight:** `npx tsx scripts/suno/suno.mts status`. One Suno tab, Custom mode, no Cover
+   source attached, Personalize off. **Never let a Playwright MCP navigate that tab** (it drives
+   the same Chrome; it cost a Suno form on 30 September).
+2. **Round 1:** `python3 scripts/narration-spec.py --round1` writes six P1 specs (palettes A, B,
+   C × with and without `badcode newsreader`) to `/tmp/mmt-specs/`. Run each with
+   `npx tsx scripts/suno/suno.mts pair <spec>` (one Create, two takes, 10 credits each; 60 in all).
+3. **Record** each take from preview (null-sink capture, `docs/suno-gpt/` playback-recording
+   method) into `narration/takes/`. **Pick** by listening (Gemini listen tool) for: every line
+   said, no singing, Keynes said right, the voice on top of the score. Write the pick and why into
+   `../songs/narration.md` §7 and tell Kai; he can overrule by ear.
+4. **P2–P7, P9, P10** with the winning palette and voice: `narration-spec.py P<n> <palette>
+   <voice|novoice>`, then `pair`. A take 20 s or more shorter than its twin has skipped lines.
+5. **Align:** for each chosen take, `npx tsx scripts/suno/.tmp/align.mts <clip-id>
+   narration/P<n>.aligned.json` (Suno's per-word times).
+6. **Re-time:** write `narration/parts.json` (film order; P8 as `{"part": "P8", "seconds": 80}`
+   until it exists), then `python3 scripts/retime.py narration/parts.json`. Every clip now follows
+   the real voice through the time map; the scene files are not edited.
+7. `python3 scripts/validate.py` (0 errors), `python3 scripts/preview.py --audio <mix.wav>` to
+   watch it once, and `python3 scripts/premiere-plan.py` to write `cutlist/_premiere.json`.
+
+### B. Premiere
+
+1. `premiere_status`; nobody else driving Premiere. Create `D:\badcode-videos\magic-money-tree\magic-money-tree.prproj`.
+2. Sequence **`mmt-rough-cut-v1`** from the `HD 1080p 25 fps` preset (never the project default,
+   which is 23.976). `premiere_set_active` it and read `sequence.name` on every response.
+3. Import per bin (`1 Pride` … `5 Statement`, `cards`, `charts`, `docs`, `narration`), one path per
+   file, never `_masters/`.
+4. **Lay the picture** with the recipe *lay down a whole cut from a plan* (`docs/premiere/recipes.md`):
+   one `premiere_eval` per batch of about ten entries from `_premiere.json`, in time order, per
+   track: set the item's in/out to `[in, in + dur]`, `createOverwriteItemAction` at `start` on
+   `videoTrack = track`, clear in/out. Stills and cards: check once that an in/out range sets a
+   still's length; if not, trim the end after placing.
+5. **Motion and opacity:** for each placed clip, `premiere_set_param` component 1 (param 1 Scale,
+   param 0 Position) and component 0 (Opacity) from its `motion`/`opacity` keys. Check on the
+   first clip whether a keyframe `time` is clip-relative or sequence time, with `export_frame`.
+   `dim_under_doc` spans set V1 opacity to 35 %.
+6. **Narration:** each part's audio at its `_placement.json` `timeline_start` on its track (A1/A2).
+7. **Transitions:** `xd_out` → `AE.ADBE Cross Dissolve New`, 0.4 s, at the clip's end (only where
+   both sides have handles); movement seams → `AE.ADBE Dip To Black`, 0.5 s.
+8. **Markers:** one per line at its start, named with its first four words; plus one per `check`,
+   with the check in the comment, so Kai can find every open question on the timeline.
+9. **Look:** `premiere_export_frame` at three points per scene; read each. Save. Export a
+   low-resolution review render. Nothing goes through `delivery-qc.sh` until the grade and mix are real.
