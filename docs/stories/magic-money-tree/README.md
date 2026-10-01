@@ -1,5 +1,15 @@
 # The Magic Money Tree
 
+> 🔴 **Recut agreed on 1 October 2026 — read [`direction-2026-10-01.md`](./direction-2026-10-01.md)
+> first.** Shake, starve, plant stays. The film gets very short (Kai: three minutes, not fifteen)
+> and is told by **a sarcastic narrator interviewing a WW2 soldier at each age of his life** — 1923,
+> the war, the NHS, 2008, austerity, Covid. Taken from the 12:18 meeting transcript. Jack's
+> **[very loose eleven-scene storyboard](./storyboard-loose-2026-10-01.md)** is the working file, to
+> be gone through scene by scene; Kai is drafting his own version. The Emperor's New Clothes idea
+> from the morning meeting is [on the shelf](./emperors-new-clothes-loose-2026-10-01.md).
+> The storyboard below is still the home of the facts, sources and footage, but **its fifteen-minute
+> structure and statement ending are being recut.**
+
 **The documentary: [The Future He Never Saw — canonical storyboard](./storyboard.md).**
 
 Britain rescues an army at Dunkirk, then builds a country worth coming home to while owing more

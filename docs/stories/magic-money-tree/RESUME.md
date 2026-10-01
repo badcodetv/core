@@ -3,6 +3,13 @@
 **Paused 2026-09-29 by Kai.** Read this, then the four files it points to. Everything below is in git
 except the media, which is on `D:\badcode-videos\magic-money-tree\`.
 
+> 🔴 **1 October 2026: a recut was agreed.** Read [`direction-2026-10-01.md`](./direction-2026-10-01.md)
+> before anything below. Shake, starve, plant stays; the film becomes very short and is told through
+> a narrator interviewing a WW2 soldier at each age of his life. **Resume at
+> [`storyboard-loose-2026-10-01.md`](./storyboard-loose-2026-10-01.md), scene 2 (who is the
+> soldier).** The "Next moves" list below belongs to the fifteen-minute plan — the ten-part Suno
+> narration and the paper edit will not survive the recut as written, so do not start them.
+
 ## Where we are
 
 | Piece | File | State |
