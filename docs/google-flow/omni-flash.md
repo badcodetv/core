@@ -2377,3 +2377,20 @@ untested by us.** Sources are Aug–Sep 2026 unless stated.
 - [AI video physics compared: 19 models — Voyager, 2026-09-18](https://voyageragent.ai/resources/models/prompts/physics) `[community]` — Omni Flash tested, not top four
 - [Neon rain colour saturation guide — Hailuo](https://hailuoai.video/pages/knowledge/neon-rain-color-saturation-ai-video-guide) `[community]` — master-still headroom (undated)
 - [Omni 1.1 prompt guide — PromptZone, 2026-09-17](https://www.promptzone.com/sofia_tahir/gemini-omni-11-flash-prompt-guide-12-video-examples-n22) `[community]` — "keep the camera fixed"; nothing new beyond it
+
+## 2026-10-01: a shouting figure seen from behind turns to the lens `[observed, n=2]`
+
+Camping mv2 `tq-shout-back` (Omni 1.1 Flash, Frames, 8 s, two takes of one prompt, `scripts/camping-mv2/tarquin-videos.json`).
+The plate is an over-the-shoulder with a sliver of cheek showing. The prompt said *"the back of his head stays toward the
+camera throughout"* and *"bellowing… for the whole eight seconds"*.
+
+- 🔴 **Both takes turned him into profile with an open, shouting mouth** for 0.5–2 s. A stated orientation loses to the
+  action's prior, the video twin of nano-banana-2.md §18. **Hide the mouth in the plate** (head square-on from behind, or
+  out of frame) before animating.
+- ✅ Leading with the action and its duration gave real-speed motion with no slow-down in the back half; the seated man held
+  still and blinked; the pointing hand did not morph.
+- 🔧 First submit failed with `VIDEO_OPTION_UNAVAILABLE: Frames on Omni 1.1 Flash`; the runner's reload-and-retry cleared it.
+- Web pass, same day: Google's Omni docs give "No dialogue" and "No scene cuts" as their own negatives and allow timecoded
+  beats `[vendor]` [ai.google.dev](https://ai.google.dev/gemini-api/docs/omni); Flow Help says a frames prompt should
+  "describe the action or transition" `[vendor]` [Flow Help](https://support.google.com/flow/answer/16353334). Nothing found
+  on keeping a figure back-to-camera.

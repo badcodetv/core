@@ -2034,6 +2034,33 @@ Run for the Camping music video gap stills (`gp-*`, `scripts/camping-mv2/gap-sti
 - 🆕 **Kill-list additions:** "lone figure with umbrella", "steam rising from a manhole", "Blade Runner mood", all 2026 template tokens. The white sharpening halo around a lit sign against black is a named tell. `[S]`
 - 🚫 **Do not cite:** LunoStudio's "HDR above 0.8 gives halos". It's their own slider, not a Nano Banana control.
 
+## Seventeenth pass — 2026-10-01: close-ups, hands, a face behind wet glass `[vendor]` `[community]` `[observed]`
+
+Run for the Camping music video's angry-Tarquin stills (`tq-*`, `scripts/camping-mv2/tarquin-stills.json`). **New items only.**
+Still no "Nano Banana Pro 2": Flow's picker lists Pro, NB2 and NB2 Lite ([Flow help](https://support.google.com/flow/answer/16352836?hl=en)).
+
+- ✅ **Google's guide again says positive framing** ("empty street", not "no cars") and narrative over keywords `[vendor]`
+  [cloud.google.com](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana). No change to our shape.
+- 🆕 **Skin:** write "visible pores", "unretouched"; never "flawless" or "smooth" `[community]`
+  [lunostudio](https://www.lunostudio.ai/academy/nano-banana-photorealism). The same page says to generate at 4K for pores (untested here).
+- 🆕 **Reflections:** name what is reflected and say it is stretched, not mirror-sharp `[community, not NB-specific]`
+  [prompt-architects](https://prompt-architects.com/blog/643-reflections-glass-and-metal-in-ai-images).
+- **Observed, Pro, n=1 each:**
+  - 🔴 **A frame edge stated as a crop ("the top edge runs through the bridge of his nose") held in 1 of 2.** The other drew the whole upper face.
+  - ✅ **A stalled wiper as a mouth occluder worked in 1 of 2** (§18: geometry, not a sentence). The miss put the wiper under the mouth.
+  - 🔴 **"Driver on the right-hand side of the car" came back left-hand drive** from outside the windscreen, both takes. Mirror in post.
+  - ⚠ **"Signet ring on the little finger" came back on the ring finger**, both takes. "Knuckles white" under a red key light did not read.
+  - ⚠ **Eyes "aimed out of the left edge" came back at the lens** behind glass, both takes.
+- 🔧 **Automation:** the runner could not open the settings popover while the picker sat on NB2 (same failure as 2026-09-30). A real
+  Playwright `click()` on the compose trigger, then the `arrow_drop_down` button, then the `Nano Banana Pro` menu item, set it; the runner
+  then ran. A timeout-then-retry harvested the uploaded reference as an extra candidate: check candidate counts.
+
+**Same day, the `tq-shout-*` round (Pro, n=1 each):**
+- ✅ **A cast shadow as the subject works when its cause is in the prompt:** two low headlamps out of frame, the man between them and the wall, the shadow's size and where its fingertip ends. 1 of 2 drew it; the miss drew the man himself instead. Generated shadows are a known geometry weak spot `[academic]` [arXiv 2311.17138](https://arxiv.org/abs/2311.17138), so check every take.
+- 🔴 **"Cut off at the knee" came back cut at the waist**, and the head-above-the-frame crop held 2 of 2 only when the camera was stated level and one metre away.
+- 🔴 **Naming a lamp's position "behind the camera" drew light stands in shot** (1 of 2). Say what the light does, and keep its fixture out of the description.
+- 🔴 **A supermarket front in the background returned a readable brand sign and a number plate** despite the lettering constraint (1 of 2).
+
 ## Notes for BadCode `[untested]`
 
 Hypotheses for the calibration run, not rules.
