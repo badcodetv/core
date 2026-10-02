@@ -198,3 +198,55 @@ native `el.click()` (law 7), so it can be folded back into `flow-client.ts`.
     a missing folder gives the same ENOENT.
     - Also: channel 1's profile carries whichever Google account last signed in (Kai's, 2026-09-29). A project on
       the other account returns `/404?reason=project`, not a login prompt.
+
+## 2026-10-01 — 21:9 is not offered for images, and it fails before submit
+
+`flow_generate_batch` with `aspect: "21:9"` on **Nano Banana Pro** returned
+`FLOW_ERROR: ASPECT_UNAVAILABLE: 21:9` at once, with nothing generated (n=1, Jack's account,
+project `cb27208c`). `16:9` and `4:3` worked in the same session on the same model; 4:3 came back
+at 1200×896. The tool's own description already says only 16:9 and 4:3 are selector-confirmed.
+Not tested: whether 21:9 exists on Nano Banana 2, or which of the other listed ratios do.
+
+## 2026-10-02 — casting a Character into a still, by hand (n=1, Jack's account, project `cb27208c`)
+
+`flow_generate_image({ character })` does **not** throw `FLOW_REBUILD_UNMAPPED`. It types `@`,
+which opens the asset picker, and then times out after 30s on the prompt box because the picker's
+`cdk-overlay-backdrop` intercepts the click. Failed twice the same way. It leaves the picker open.
+
+What worked, in-page over CDP (scratch scripts in `scripts/flow/.tmp/`, not committed as tools):
+
+29. **A just-created Character is missing from the picker until the project page is reloaded.**
+    Before a reload the picker's Characters tab read "No assets found"; after one, "The Host /
+    Character" was a row under **All**.
+30. **Click the Character row (`[role=option]`), then "Add to prompt".** Here the row click only
+    previewed, so Add to prompt was needed (item 26 still applies: check first). The bar then shows
+    the thumbnail and a name tag.
+31. **Type the prompt after the tag with `keyboard.insertText`, and submit with Enter.** A
+    synthetic pointer/mouse sequence on the `arrow_forward` button did nothing; Enter in the
+    prompt box submitted. Newlines were flattened to spaces first, untested whether a newline
+    would submit early.
+32. **Creating the Character:** `/project/<id>/character` → the **Upload** control fires a native
+    file chooser (`waitForEvent('filechooser')` worked) → the URL becomes `/character/<uuid>` →
+    **Edit name** → Enter → wait for the portrait's percentage to clear → **Done**. Done is found
+    by `innerText === 'Done'`; a Playwright `hasText` locator on it timed out.
+33. **A reference image and a Character can both be attached to one prompt.** Type `@`, add the
+    image row, type `@` again, add the Character row, then the text. Six of six stills came back
+    with the reference's room and people and the Character's face (Nano Banana 2, 4:3). The
+    reference was uploaded once through the picker's **Upload media** (native file chooser) under
+    a distinctive filename, and then appears as the top row under **All**, matched by filename.
+34. **The hand route does not set model, aspect or count.** They stay at whatever the last
+    ordinary tool call asserted, so make one `flow_generate_image` call with the wanted `aspect`
+    first. A retry that ran after such a switch came out at the wrong shape.
+35. **`@` sometimes fails to open the picker** (`[role=option]` never appears, four prompts in a
+    row, cause not found). The same script worked on the next run, straight after an ordinary
+    tool call had reset the prompt bar. Leftover `@` characters in the box are the suspect, untested.
+36. **The whole run so far: 22 hand-cast stills, 22 with the Character recognisable.** Scratch
+    scripts: `scripts/flow/.tmp/cast-batch.mjs` (Character only) and `cast-ref-batch.mjs`
+    (reference plus Character). They save the newest gallery tile by fetching its `src`, which
+    returned the full 1200×896 image as WebP.
+
+## 21:9 workaround (belongs to the 2026-10-01 entry above)
+
+**Workaround used:** generate at 16:9 and ask in the prompt for "a very wide 2.39:1 film frame,
+with black bars above and below it, inside a 16:9 image". Whether the bars come back reliably is
+not yet checked.
