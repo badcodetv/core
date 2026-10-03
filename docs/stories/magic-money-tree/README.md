@@ -84,3 +84,9 @@ The old comic remains live at `/comics/magic-money-tree`; this documentation con
 replace or republish it. Its retained records keep the existing panel-edit tooling functional.
 
 Voice and craft: [BadCode voice](../../voice.md) · [storytelling method](../../storytelling.md).
+
+## Money For Something (Jack, October 2026)
+
+The game-show telling of this story: an idea of Jack's, not ruled. Start at
+[`money-for-something-RESUME.md`](./money-for-something-RESUME.md); the full record is
+[`money-for-something.md`](./money-for-something.md).

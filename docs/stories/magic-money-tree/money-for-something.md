@@ -106,6 +106,9 @@ ever the butt of the joke ([`the-reader.md`](../../marketing/the-reader.md), rul
 
 ## Loose storyboard — the pilot (2 October 2026, written to be argued with)
 
+> **Superseded 3 October 2026** by "Storyboard v2 — the roundtable, and the narrator/host split" further down.
+> This section is the first sketch and is left as written.
+
 About three minutes, ten scenes. Nothing is locked and no line is a script line. The made scenes
 (studio, host, panel) are generated; everything else is real footage.
 
@@ -764,6 +767,306 @@ bills, readable in a and e. Neither was asked for.
 **What this suggests (six images, not tested further):** attaching the picked frame is what holds
 the room and the guests. It also means a fault in the reference is copied into every shot, so a
 clean reference frame (no poster words, British notes on the tree) would be worth making first.
+
+## Round 9 — the roundtable with a clear stage (3 October 2026)
+
+Jack, on round 8's last still (8f, after the show): "the set is cool, remove the table at the bottom of the image, there should be nothing blocking the stage, no audience... a few different versions that vary, that have a Tough Crowd vibe."
+
+**What changed from round 8:** no audience table, candle, chair or person in front of the stage. The floor runs clear to the bottom of the frame. The prompts also ask for blank posters and British notes on the tree, the two faults round 8 copied from the reference.
+**Attached to every prompt:** the reference frame `mfsroundtableref.jpg` and the Character "The Host", as in round 8.
+**Model:** Nano Banana 2, 4:3, one candidate each.
+
+| # | Shot | What varies |
+| --- | --- | --- |
+| a | After the show, clear | Round 8f again with the stage unblocked |
+| b | The argument, wide | All four talking over each other, square on |
+| c | The laugh, from the side | The host standing, seen along the arc of chairs |
+| d | The whole set, high and wide | A raised camera, the people small |
+
+### 9a. After the show, clear
+
+```
+Using the attached reference image for the room, the furniture, the light and the four people, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs in an arc round a low wooden table, two tall windows on a city at night and a bare tree in a metal bucket with a few banknotes on its twigs. Subject: the room after the recording. The politician and the German soldier have gone. The British soldier is alone in his armchair, asleep, with his cap tipped over his eyes and his muddy boots on the low table among the mugs and newspapers. The host stands at one of the tall windows with his back to us, looking out at the city, an almost empty wine glass hanging from his hand. Camera: a wide shot from the studio floor at standing eye height, square on to the brick wall, taking in the whole arc of armchairs; the sleeping soldier sits left of centre. Lighting: the same single warm spotlight from high on the left, with the far side of every face falling dark. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: the view of the stage is completely clear. The foreground is bare dark wooden floorboards running all the way to the bottom edge of the frame. There is no audience and nothing between the camera and the stage: no audience table, no candle, no upturned chair and no person in the foreground. The posters on the brick are torn scraps of plain blank paper with no words. The banknotes on the tree are old British pound notes, too small to read. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+### 9b. The argument, wide
+
+```
+Using the attached reference image for the room, the furniture, the light and the four people, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs in an arc round a low wooden table, two tall windows on a city at night and a bare tree in a metal bucket with a few banknotes on its twigs. Subject: the recording in full flow. All four sit in the armchairs round the low table, arguing over each other. The host sits at the left end, leaning forward with his wine glass raised, in the middle of a sentence. The British soldier and the German soldier sit in the middle, one with his arms folded and one rubbing his eyes. The politician sits at the right end, pointing across the table and talking over everyone. Dried mud lies on the floorboards under the soldiers' boots. Camera: a wide shot from the studio floor at seated eye height, square on, the whole arc of four armchairs and both windows in frame. Lighting: the same single warm spotlight from high on the left, with the far side of every face falling dark. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: the view of the stage is completely clear. The foreground is bare dark wooden floorboards running all the way to the bottom edge of the frame. There is no audience and nothing between the camera and the stage: no audience table, no candle, no upturned chair and no person in the foreground. The posters on the brick are torn scraps of plain blank paper with no words. The banknotes on the tree are old British pound notes, too small to read. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+### 9c. The laugh, from the side
+
+```
+Using the attached reference image for the room, the furniture, the light and the four people, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs in an arc round a low wooden table, two tall windows on a city at night and a bare tree in a metal bucket with a few banknotes on its twigs. Subject: the host is on his feet in front of his armchair at the left, wine glass in one hand, the other arm thrown wide at the end of a joke. The two soldiers are laughing in spite of themselves, one slapping the arm of his chair. The politician sits stiff at the right end, not laughing, his arms crossed. Camera: a three-quarter view from the left side of the studio floor at chest height, looking along the arc of armchairs so the host is nearest and largest and the politician is furthest, with the tree behind the host and one night window behind the guests. Lighting: the same single warm spotlight from high on the left, with the far side of every face falling dark. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: the view of the stage is completely clear. The foreground is bare dark wooden floorboards running all the way to the bottom edge of the frame. There is no audience and nothing between the camera and the stage: no audience table, no candle, no upturned chair and no person in the foreground. The posters on the brick are torn scraps of plain blank paper with no words. The banknotes on the tree are old British pound notes, too small to read. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+### 9d. The whole set, high and wide
+
+```
+Using the attached reference image for the room, the furniture, the light and the four people, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs in an arc round a low wooden table, two tall windows on a city at night and a bare tree in a metal bucket with a few banknotes on its twigs. Subject: the four sit in the armchairs round the low table in a lull between rounds. The host is slumped back, topping up his wine glass from a bottle. The two soldiers share a mug. The politician reads a newspaper held wide open. Camera: a high wide shot from a studio camera raised above head height, looking down slightly on the whole set, so the full floor, the arc of armchairs, the brick wall, both windows and the tree are all in frame and the people are small. The edges of the frame fall off into the dark of the studio. Lighting: the same single warm spotlight from high on the left, with the far side of every face falling dark. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: the view of the stage is completely clear. The foreground is bare dark wooden floorboards running all the way to the bottom edge of the frame. There is no audience and nothing between the camera and the stage: no audience table, no candle, no upturned chair and no person in the foreground. The posters on the brick are torn scraps of plain blank paper with no words. The banknotes on the tree are old British pound notes, too small to read. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+### Results
+
+All four generated first time with the reference frame and the Character attached (n=1 each).
+**The stage is clear in all four:** no audience, no table or chair in front, bare floorboards to
+the bottom of the frame. The room, the light and the four people held.
+
+| # | Verdict | What came back |
+| --- | --- | --- |
+| a after the show | **Strong** | Round 8f with the stage open: the soldier asleep with his boots on the table, the host at the window with his back to us. The "WANTED" poster and a yellow printed poster are still on the wall |
+| b the argument | **Strong** | All four in the arc, the host mid-sentence with his wine, one soldier rubbing his eyes, the politician pointing. Posters blank except one yellow printed one |
+| c the laugh | **Strong**, wrong angle | The host on his feet with his arm thrown wide, both soldiers laughing, the politician stiff with arms crossed. Every poster is blank. The camera stayed square on; the side view asked for did not happen |
+| d high and wide | Good, one fault | The whole set from above, people small, the frame edges falling dark. The host drinks from the bottle instead of pouring. Every poster is blank. **A lit candle sits at the bottom left edge**, which the prompt ruled out |
+
+**Not checked:** whether the notes on the tree are now British. They are too small to read at
+review size.
+**What this suggests (four images, not tested further):** asking for blank posters works when the
+people are the subject (c, d) and less when the frame is close to the reference (a). 9c is the
+cleanest candidate for a new reference frame.
+
+## The room reference and the voice plan (3 October 2026)
+
+**Jack picked 9c** ("this one is great"). It is now the reference for the room and the four people:
+[`characters/roundtable-clear-stage-reference.jpg`](./characters/roundtable-clear-stage-reference.jpg),
+uploaded to Flow project `cb27208c` as `mfsclearstageref.jpg`. It replaces `mfsroundtableref.jpg`,
+which carried the audience table, the poster words and the dollar bills into every shot.
+
+**The voice question.** This show has people talking on camera, which nothing else of ours has.
+The standing rule "never dialogue in a Flow video" exists because narration is recorded afterwards;
+it does not fit a panel show and needs Jack's ruling before any talking clip is made.
+
+**Proposed, not ruled and not tested:**
+
+| Who speaks | Route | Why |
+| --- | --- | --- |
+| The host over real clips (most of the pilot) | Google AI Studio voice, laid in Premiere | No mouth on screen. The one engine Jack has called human on take one |
+| A panellist or the host on camera, one short line | Flow, Omni Flash, the Character carrying a saved Voice | Speech and mouth made together. Free inside the subscription |
+| The four-armchair wide | Silent reactions only: laughing, pointing, folded arms | The wrong mouth moving in a group shot is a reported failure |
+
+**What the web pass found (3 October 2026, read not tested):**
+
+- `[vendor]` A Flow Character can carry a Voice: a preset plus a written "Voice Performance". Voice
+  references work only on Omni Flash Ingredients generations; anything else errors
+  ([Flow help](https://support.google.com/flow/answer/16353334)).
+- `[vendor]` Omni cannot lip-sync to an uploaded audio file
+  ([Gemini API Omni docs](https://ai.google.dev/gemini-api/docs/omni)). So an AI Studio take cannot
+  be fed into Flow.
+- `[community]` Lines get rushed or clipped when long: about 15 to 20 words per 8-second clip.
+  Lip-sync is reported to drift after 6 to 7 seconds.
+- **Not found:** any independent test of whether a Character's Voice stays the same across clips.
+  That is the test to run first: three clips per Character, same Voice, compared by ear.
+- **Fallback if the voices drift or sound synthetic:** AI Studio audio plus a single-face lip-sync
+  tool on close-ups. Free tiers reported for Hedra and Dreamina; MuseTalk and InfiniteTalk run
+  locally. Prices and multi-face claims came from comparison sites and are not checked.
+
+**Needed before the test:** the three guests exist only inside the reference frame. Each needs a
+Flow Character of his own (a crop of 9c as the portrait) before he can carry a Voice.
+
+## The cast and their voices in Flow (3 October 2026)
+
+**Jack ruled: split the roles.** The voice over the real clips is the BadCode narrator (Google AI
+Studio). The host and the three guests only ever speak on camera, with voices made in Flow.
+His brief for the voices: "make them all sound how they look."
+
+All four are Flow Characters in project `cb27208c`, each with a custom Voice (a preset plus a
+written performance). **Nobody has heard them yet: I cannot listen to Flow's preview.** Each
+Character page has a play button beside the voice.
+
+| Character | Flow id | Portrait | Preset | Voice name | Performance text |
+| --- | --- | --- | --- | --- | --- |
+| The Host | `65e090db-11a1-4dce-bc6c-c182f4213f4a` | [`host-dishevelled-comic.jpg`](./characters/host-dishevelled-comic.jpg) | Sadachbia (male, lively, low) | The Host voice | A man in his forties with a soft Irish accent. Dry, rumpled and a little wine-loosened. He talks fast when he is exasperated, then trails off as if the thought is not worth finishing. He is talking to people in a room, not performing. |
+| The British Soldier | `5895147c-5392-4ac0-ace9-34742b8ec24e` | [`british-soldier-portrait.jpg`](./characters/british-soldier-portrait.jpg) | Algenib (male, gravelly, low) | The British Soldier voice | A working man from the north of England in his forties. Flat, tired and understated. He says terrible things as plain facts, with no self-pity. He is just talking, not performing. |
+| The German Soldier | `5e09ee82-7f79-4c2e-9aee-b5ebcca1d2d0` | [`german-soldier-portrait.jpg`](./characters/german-soldier-portrait.jpg) | Alnilam (male, firm, mid-low) | The German Soldier voice | A German man in his forties speaking good English with a light German accent. Quiet, exact and weary. Deadpan. He is just talking, not performing. |
+| The Politician | `6baccdfb-7353-4559-829d-8fe253eb7b1f` | [`politician-portrait.jpg`](./characters/politician-portrait.jpg) | Umbriel (male, smooth, lower) | The Politician voice | An upper-class Englishman in his fifties. Rich, plummy and unhurried, very pleased with himself, the voice of a man who has never been interrupted. He is talking across a table, not giving a speech. |
+
+**The guest portraits** were generated from the 9c reference frame (Nano Banana 2, 4:3, one each,
+first time): each man alone, chest up, mouth closed, plain grey backdrop. The prompt, with only the
+"which man" clause changing:
+
+```
+Using the attached reference image, make a character reference portrait of one man from it: the man in the khaki British army uniform, sitting second from the left. Show him alone from the chest up, facing the camera, with a neutral expression and his mouth closed, against a plain mid-grey studio backdrop in soft even light. Keep his face, hair, age, build and clothes exactly as they are in the reference image. Nobody else and no furniture in the frame. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+**Two things the portraits made plain, for Jack to rule on:**
+
+- **The politician wears a clergyman's collar.** It was in the reference frame all along. He reads
+  as a priest, not a politician.
+- **The British soldier is dressed as an officer** (collar and tie, cross-belt), and his voice is
+  written as a working man, to fit the coal-miner line. The look and the voice disagree.
+
+**Correction to this morning's note:** Flow's 30 preset voices carry the same names as AI Studio's
+(Algenib, Charon, Kore and so on). Whether the same name sounds the same in both is not tested.
+
+**Not tested:** any of these voices in a video clip, and whether a voice holds from clip to clip.
+The standing rule against dialogue in Flow video has been lifted for this show by the ruling above.
+
+## Character sheets, second pass (3 October 2026)
+
+Jack: "I like the voices, please do a better job of making the characters, do a better portrait and
+full body image for all of them and add them to their characters."
+
+**Done for all four:** a new Portrait replaced the old one and a Body image was added, on the same
+Flow Characters (same ids, voices kept). Nano Banana 2, 3:4, one candidate each, all eight first
+time, each made with its own Character attached.
+
+| Character | Portrait | Body |
+| --- | --- | --- |
+| The Host | [`host-portrait-v2.jpg`](./characters/host-portrait-v2.jpg) | [`host-body.jpg`](./characters/host-body.jpg) |
+| The British Soldier | [`british-soldier-portrait-v2.jpg`](./characters/british-soldier-portrait-v2.jpg) | [`british-soldier-body.jpg`](./characters/british-soldier-body.jpg) |
+| The German Soldier | [`german-soldier-portrait-v2.jpg`](./characters/german-soldier-portrait-v2.jpg) | [`german-soldier-body.jpg`](./characters/german-soldier-body.jpg) |
+| The Politician | [`politician-portrait-v2.jpg`](./characters/politician-portrait-v2.jpg) | [`politician-body.jpg`](./characters/politician-body.jpg) |
+
+**Two costume calls I made without a ruling, both easy to reverse:**
+
+- **The Politician is now a 1916 government minister**: frock coat, waistcoat and watch chain, wing
+  collar and tie, striped trousers. The clergyman's collar is gone.
+- **The British Soldier is now a private**: plain tunic buttoned to the neck, webbing belt, puttees
+  and boots, no tie or cross-belt. That fits the coal-miner line and his voice.
+
+The first-pass portraits (`british-soldier-portrait.jpg`, `german-soldier-portrait.jpg`,
+`politician-portrait.jpg`, `host-dishevelled-comic.jpg`) are superseded but kept.
+**Not tested:** casting the updated Characters into a new still or a clip. The room reference
+`mfsclearstageref.jpg` still shows the old collar and the officer's tunic.
+
+### The Host: portrait
+
+```
+A character reference portrait of this man, head and shoulders, his body turned slightly to one side and his eyes on the camera, with a tired, wry half-smile, one eyebrow slightly raised. He wears his crumpled black suit jacket and open-necked white shirt, and his hands are empty. Background: a plain dark grey studio backdrop, empty. Lighting: one large soft light from high on the left and a little fill from the right, so his whole face is clearly seen with a gentle shadow on the far cheek. Capture: a real photograph on an 85mm portrait lens, sharp focus on the eyes, natural skin texture with pores and lines, true colours. Constraints: he is alone, no props, no lens flare or light streaks, no text, logos, captions or watermarks. Compose for a 3:4 portrait frame. Thanks.
+```
+
+### The Host: full body
+
+```
+A full-length character reference photograph of this man standing, seen from head to toe with his whole body and both feet inside the frame and a little space above his head and below his feet. He faces the camera with his weight on one leg, relaxed. He wears his crumpled black suit, open-necked white shirt and scuffed black leather shoes. His hands are empty, one in a trouser pocket. Background: a plain mid-grey studio backdrop and floor, empty. Lighting: large soft even light from the front left, with a soft shadow on the floor behind him. Capture: a real photograph on a 50mm lens at chest height, sharp from head to boots, natural fabric texture, true colours. Constraints: he is alone, no furniture, no lens flare or light streaks, no text, logos, captions or watermarks. Compose for a 9:16 vertical frame. Thanks.
+```
+
+### The British Soldier: portrait
+
+```
+A character reference portrait of this man, head and shoulders, his body turned slightly to one side and his eyes on the camera, with a flat, worn-out, patient look, mouth closed. He wears the uniform of a British private soldier of 1916, not an officer: a plain rough khaki wool tunic buttoned up to a closed collar, no shirt collar, no tie and no leather cross-belt, with dried mud on the shoulders. He is bare-headed. Background: a plain dark grey studio backdrop, empty. Lighting: one large soft light from high on the left and a little fill from the right, so his whole face is clearly seen with a gentle shadow on the far cheek. Capture: a real photograph on an 85mm portrait lens, sharp focus on the eyes, natural skin texture with pores and lines, true colours. Constraints: he is alone, no props, no lens flare or light streaks, no text, logos, captions or watermarks. Compose for a 3:4 portrait frame. Thanks.
+```
+
+### The British Soldier: full body
+
+```
+A full-length character reference photograph of this man standing, seen from head to toe with his whole body and both feet inside the frame and a little space above his head and below his feet. He faces the camera with his weight on one leg, relaxed. He wears the uniform of a British private soldier of 1916, not an officer: a plain rough khaki wool tunic buttoned up to a closed collar, no tie and no leather cross-belt, a canvas webbing belt, khaki trousers, cloth puttees wound from ankle to knee and heavy black hobnailed boots, with dried mud to the knees. He is bare-headed and holds his stiff peaked service cap in one hand. Background: a plain mid-grey studio backdrop and floor, empty. Lighting: large soft even light from the front left, with a soft shadow on the floor behind him. Capture: a real photograph on a 50mm lens at chest height, sharp from head to boots, natural fabric texture, true colours. Constraints: he is alone, no furniture, no lens flare or light streaks, no text, logos, captions or watermarks. Compose for a 9:16 vertical frame. Thanks.
+```
+
+### The German Soldier: portrait
+
+```
+A character reference portrait of this man, head and shoulders, his body turned slightly to one side and his eyes on the camera, with a quiet, level, weary look, mouth closed. He wears his field-grey German army tunic of 1916 with the leather braces, with dried mud on the shoulders. He is bare-headed. Background: a plain dark grey studio backdrop, empty. Lighting: one large soft light from high on the left and a little fill from the right, so his whole face is clearly seen with a gentle shadow on the far cheek. Capture: a real photograph on an 85mm portrait lens, sharp focus on the eyes, natural skin texture with pores and lines, true colours. Constraints: he is alone, no props, no lens flare or light streaks, no text, logos, captions or watermarks. Compose for a 3:4 portrait frame. Thanks.
+```
+
+### The German Soldier: full body
+
+```
+A full-length character reference photograph of this man standing, seen from head to toe with his whole body and both feet inside the frame and a little space above his head and below his feet. He faces the camera with his weight on one leg, relaxed. He wears his field-grey German army tunic of 1916 with the leather braces and belt, field-grey trousers and tall black leather marching boots, with dried mud to the knees. He is bare-headed and holds a soft round field cap in one hand. Background: a plain mid-grey studio backdrop and floor, empty. Lighting: large soft even light from the front left, with a soft shadow on the floor behind him. Capture: a real photograph on a 50mm lens at chest height, sharp from head to boots, natural fabric texture, true colours. Constraints: he is alone, no furniture, no lens flare or light streaks, no text, logos, captions or watermarks. Compose for a 9:16 vertical frame. Thanks.
+```
+
+### The Politician: portrait
+
+```
+A character reference portrait of this man, head and shoulders, his body turned slightly to one side and his eyes on the camera, with a smooth, satisfied, faintly amused look, chin up, mouth closed. He is a British government minister of 1916, not a clergyman: a black frock coat, a black waistcoat with a gold watch chain, a stiff white wing collar and a dark grey silk tie. Background: a plain dark grey studio backdrop, empty. Lighting: one large soft light from high on the left and a little fill from the right, so his whole face is clearly seen with a gentle shadow on the far cheek. Capture: a real photograph on an 85mm portrait lens, sharp focus on the eyes, natural skin texture with pores and lines, true colours. Constraints: he is alone, no props, no lens flare or light streaks, no text, logos, captions or watermarks. Compose for a 3:4 portrait frame. Thanks.
+```
+
+### The Politician: full body
+
+```
+A full-length character reference photograph of this man standing, seen from head to toe with his whole body and both feet inside the frame and a little space above his head and below his feet. He faces the camera with his weight on one leg, relaxed. He is a British government minister of 1916, not a clergyman: a black frock coat, a black waistcoat with a gold watch chain, a stiff white wing collar, a dark grey silk tie, grey striped trousers and polished black shoes. His thumbs are hooked in his waistcoat pockets. Background: a plain mid-grey studio backdrop and floor, empty. Lighting: large soft even light from the front left, with a soft shadow on the floor behind him. Capture: a real photograph on a 50mm lens at chest height, sharp from head to boots, natural fabric texture, true colours. Constraints: he is alone, no furniture, no lens flare or light streaks, no text, logos, captions or watermarks. Compose for a 9:16 vertical frame. Thanks.
+```
+
+## Storyboard v2 — the roundtable, and the narrator/host split (3 October 2026)
+
+Jack asked for the pilot storyboard rewritten for the roundtable set and the split roles. About
+three minutes, ten scenes. **Nothing is locked and no line is a script line**; every line below is
+a placeholder of mine unless marked as Jack's or Kai's.
+
+**The two rules this version is built on**
+
+- **The narrator speaks over real footage and nowhere else.** He is the BadCode voice from the
+  future (Google AI Studio). He is never seen.
+- **The host and the three guests speak only on camera, in the room** (Flow voices). One speaker per
+  shot, one short line. The four-chair wide shot is silent: laughing, pointing, folded arms.
+
+**What replaced the buzzer and the scoreboard: the tree.** The roundtable has no podiums, so the
+game is played on the money tree in the bucket. The politician shakes it and notes fall when he
+wants something. He holds it out of reach when anyone else does. The score at the end is where the
+notes are.
+
+**The spine, for arguing with**
+
+| | |
+| --- | --- |
+| The sentence | When the people holding the purse decide a thing matters, the money is found. So "we can't afford it" is a decision somebody made |
+| The opposite view, which the film has to beat | The country is a household and the cupboard is bare |
+| The object that carries it | The tree in the bucket, and whose hands the notes end up in |
+| The hero | The two soldiers: the same man in two uniforms, and the only people in the room who paid |
+| Who chose, and who gained | The Politician, in the room, in every round |
+| The line for the pub | "They found the money for the war in an afternoon." (the timing is not checked; see below) |
+| The last image | The room after the show: empty chairs, the tree, one note left on it |
+
+### The ten scenes
+
+Voices: **N** narrator · **H** host · **BS** British soldier · **GS** German soldier · **P** politician.
+
+| # | Time | Scene | Real footage (narrator over it) | In the room (on camera) | The turn |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 0:00 | Cold open | Theresa May, 2 June 2017: "There isn't a magic money tree." **N:** "Oh, sweet summer child. Let's ask someone who was there." (Kai's lines, 1 October) | None | The clip is a joke at the top, not the argument |
+| 2 | 0:10 | Titles | None | The roundtable from the clear-stage wide: brick, armchairs, the tree in its bucket. A cheap sting runs out of puff. **H**, close, wine in hand: "Money For Something. The quiz where the rules depend on who's asking." | We are told the game is rigged before it starts |
+| 3 | 0:22 | Meet the panel | None | Three singles. **BS:** "I was a miner. Then I was this." **GS:** "Also a miner. Different hat." **P:** "I served in an advisory capacity." | The two soldiers have the same job and the same mud. The third man has clean shoes |
+| 4 | 0:42 | Round 1: How did it start? | Recruiting posters, men marching off, then the trenches. **N:** "1914. Everyone was promised it would be over by Christmas. Nobody said which one." | **BS:** "We were told you started it." **GS:** "We were told you did." Both turn to the politician. **P:** "It's complicated." | Neither man who fought knows why. The man who knows will not say |
+| 5 | 1:05 | Round 2: Can we afford it? | Shells, ships, the 1914 War Loan poster. **N** says how it was paid for: borrowed and printed, on a scale nobody had seen | **H:** "A war. Can we afford it?" **P** leans over and shakes the tree. Notes fall on the table. "Yes." | He is never asked how. The tree works when he shakes it |
+| 6 | 1:28 | Round 3: What happened next? | Men coming home. The promise on a poster. Then a queue. **N** reads the promise straight | **H:** "And the homes?" **P** lifts the bucket onto his lap, out of reach. "Ah. No money." The notes are still hanging on it | The same tree, in the same hands, is now empty. A note is stuck to the soldier's boot |
+| 7 | 1:50 | Quick-fire: Shake, Starve or Plant | Wheelbarrows of banknotes (1923). Dole queues (1930s). Flashes of the next war. **N** calls each one in a word: "Shake." "Starve." | **H**, on his feet, opens the round. **GS**, flat: "Oh god. Wheelbarrows again." (Kai's line) **BS** says nothing | Two ways to get it wrong, and both end in the same place |
+| 8 | 2:12 | The star prize: Plant | 1948: council houses going up, the NHS opening. **N**, played straight: more debt than the country had ever carried, and they built it anyway | The wide, silent. The host puts his glass down. **BS** picks a note off the floor and presses it into the soil in the bucket | No laugh. The only sincere scene. It was won once |
+| 9 | 2:32 | Sound Off | Muted clips at slapstick speed: 2008, austerity, Covid. No narrator | **H** on camera, dubbing the clips aloud for the room; his voice carries on over each clip. "Shake." "Starve." "Shake again." Then: "Won't you lot make your minds up." (Kai's line) **BS** has his head in his hands | Each clip is shorter than the last. The modern half says very little, on purpose |
+| 10 | 2:52 | Final scores | Back to May. **N:** "What happened next?" Caption: £1bn for the DUP, 24 days later | **P**'s pockets are stuffed with notes. The soldiers' hands are empty. **H:** "Join us next time." Then the room after the show: empty chairs, the tree, one note | He does not say whether there is a next time. Nothing is spelled out |
+
+### How scene 9 survives the split
+
+The host dubbing politicians is the host's voice over real clips, which the split rules out if it
+is made in a second engine. **My call, not ruled:** he says each dub line on camera in the room
+(Flow), and the cut goes to the muted clip while his sound carries on. One engine, one voice, and
+the dub not matching the politician's mouth is the joke.
+
+### What already exists, and what has to be made
+
+| Scene | Stills in Flow that fit | Still to make |
+| --- | --- | --- |
+| 2 | 9d (the whole set, high and wide), 8a (the host close) | A clean host close-up from the new reference |
+| 3 | 8b (the two soldiers), 8c (the politician) | Three singles from the updated Characters |
+| 4 | 9b (the argument, wide) | The two soldiers turning to the politician |
+| 5 | None | The politician shaking the tree, notes falling |
+| 6 | None | The bucket on his lap; the note on the boot |
+| 7 | 9c (the host on his feet, Jack's pick) | The German soldier's single |
+| 8 | None | The note pressed into the soil |
+| 9 | 8e (the reverse, towards the audience) has an audience, so it no longer fits | The host dubbing; the soldier with his head in his hands |
+| 10 | 9a (after the show) | The politician's stuffed pockets; the empty room |
+
+Every older still shows the politician in a clergyman's collar and the British soldier as an
+officer. The Characters were changed on 3 October, so anything kept from rounds 8 and 9 needs
+remaking with them.
+
+### Not checked, and not ruled
+
+- **Facts:** how the 1914 war was paid for and how fast; the wording and date of the homes promise
+  in scene 6; the 1948 debt figure in scene 8. All from memory. The DUP £1bn and the 24 days are
+  carried over from the first storyboard and were not rechecked here.
+- **Jack's seed line** ("One minute I was mining coal, the next my arm flew off. Morphine is hard to
+  kick, I tell you.") is not in this draft: the British Soldier has both arms in every image. It
+  goes back in if he loses one, or if the line moves to a man we do not see.
+- **The guardrail on scene 7:** no automatic leap from the 1923 currency collapse to Hitler.
+- **Footage:** scenes 1, 9 and 10 lean on BBC and news clips. Still not ruled. No footage from
+  inside Parliament.
+- **Where the 1 October soldier-through-the-ages sits.** Scene 8 is where a Second World War
+  soldier would speak. This draft keeps the two First World War soldiers in the room instead.
+- **Story-craft rows run on this draft:** the gates (hero, chooser in the room, the pub line), the
+  but/therefore spine, the sincere scene rationed to one, the closing image answering the opening.
+  **Not run:** the full review pass, the narrator rows on real lines, and a shot design for any
+  new still.
 
 ## What the research found (2 October 2026)
 

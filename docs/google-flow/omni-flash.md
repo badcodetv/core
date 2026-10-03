@@ -2394,3 +2394,21 @@ camera throughout"* and *"bellowing… for the whole eight seconds"*.
   beats `[vendor]` [ai.google.dev](https://ai.google.dev/gemini-api/docs/omni); Flow Help says a frames prompt should
   "describe the action or transition" `[vendor]` [Flow Help](https://support.google.com/flow/answer/16353334). Nothing found
   on keeping a figure back-to-camera.
+
+## 2026-10-03 — on-camera speech: what the docs say, before any test of ours
+
+Read for Money For Something (a panel show, so mouths are on screen). **Nothing here is tested by us.**
+
+- `[vendor]` Voice references (a preset, or a custom Voice made of a preset plus a "Voice Performance" text, attachable
+  to a Character) work **only on Omni Flash Ingredients generations**; other modes error.
+  [Flow help](https://support.google.com/flow/answer/16353334)
+- `[vendor]` **No audio-driven lip-sync:** "Uploading audio references is unsupported", voice editing is unsupported.
+  [Gemini API Omni docs](https://ai.google.dev/gemini-api/docs/omni)
+- `[community]` About 15 to 20 words per 8s clip before lines rush or clip; in a multi-person shot the wrong mouth can
+  move. No guidance found on overlapping speech.
+- **Open:** whether a Character's Voice holds across separate clips. No independent test found. Plan and fallback:
+  `docs/stories/magic-money-tree/money-for-something.md`, "The room reference and the voice plan".
+- **Seen in the UI, 2026-10-03:** Flow's Character voice chooser lists 30 presets with the same names as Gemini TTS
+  (Achernar … Zubenelgenubi), each with a gender, a trait and a pitch. A written performance makes a named custom
+  voice. Mechanics: `docs/flow/automation-2026-09-rebuild.md` items 37 to 41. Whether a name sounds the same in Flow
+  and in AI Studio is not tested.

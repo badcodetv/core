@@ -250,3 +250,43 @@ What worked, in-page over CDP (scratch scripts in `scripts/flow/.tmp/`, not comm
 **Workaround used:** generate at 16:9 and ask in the prompt for "a very wide 2.39:1 film frame,
 with black bars above and below it, inside a 16:9 image". Whether the bars come back reliably is
 not yet checked.
+
+## 2026-10-03 — giving a Character a Voice, by hand (n=4, Jack's account, project `cb27208c`)
+
+37. **The control is on the Character page** (`/project/<id>/character/<uuid>`): a `Select a voice` button opens a
+    dialog with a `Search assets` box, 30 preset rows (`button[role=option]`, the same names as AI Studio's voices), a
+    Preview button, a 120-character **Sample dialogue** box, a **Customise performance** textarea and `Add to character`.
+38. 🔴 **Any click on a preset row commits the bare preset at once** and closes the dialog, before the performance text
+    can be typed. A synthetic pointer sequence and a native `click()` both did it. **Do not click the row.** Type the
+    preset's name into `Search assets`: the list narrows to one row and that row is the selected one
+    (`aria-selected="true"`).
+39. **Typing a performance turns the preset into a custom voice.** A **Voice name** input appears (default
+    "`<Preset>` custom") and `Add to character` becomes `Save new voice`. Saving takes a few seconds (an hourglass on
+    Preview), then the dialog resets to the bare preset. The saved voice is a new row: search for its name, it is the
+    single selected row, then `Add to character`.
+40. **The page then shows the voice name, its performance text, a play button and `Remove`.** `Done` saves and leaves.
+    Playwright `hasText` locators on these buttons miss (as item 32); find them by `innerText`.
+41. Scratch scripts: `scripts/flow/.tmp/voice-full.mjs` (items 38 to 40 in one run), `ref-batch.mjs` (a reference
+    image with no Character). Four of four voices attached. **Not tested:** the voice in a video, and whether the
+    dropdown beside the search box (it read "mmt jack") scopes saved voices to the project.
+
+## 2026-10-03 — a Character's Portrait and Body, and three traps (n=4, Jack's account, project `cb27208c`)
+
+42. **Adding a Body:** on the Character page, `Create body` → the stage reads "Generate or add an image of your
+    character" → **Upload** (native file chooser). The tab then reads `Body`.
+43. **Replacing a Portrait:** `Portrait` tab → `button[aria-label="Delete image"]` → a dialog "Delete this image? This
+    will remove the image from the character." → Delete → toast "Character image deleted", the tab reads
+    `Create portrait` and the same Upload stage appears. The voice and the Character id survive. Do the Body first, so
+    the Character is never without an image.
+44. 🔴 **`button[aria-label="Delete"]` in the top bar deletes the whole Character.** A click matched on the bare text
+    "Delete" hit it and opened "This character will be permanently deleted." It was cancelled; nothing was lost. Never
+    match Delete by text: use the `Delete image` aria-label, and confirm only inside the dialog whose text names the
+    thing being deleted. Scratch: `scripts/flow/.tmp/dialog.mjs`, `char-sheet.mjs`.
+45. 🔴 **The scratch scripts' "newest tile" test (`img` wider than 200px) fails on 3:4 and 9:16 tiles**, which are
+    under 200px wide in the grid. It saved an older landscape tile three times while the real images generated fine.
+    `grab-row.mjs` saves the first N tiles in reading order with a 120px floor.
+46. **The picker's `All` list stopped showing Characters once there were four** (and item 29 again: new ones need a
+    reload). `cast-search-batch.mjs` types the Character's name into the picker's `Search assets` box.
+47. **Frame shape by hand:** the settings trigger opens tabs `16:9 · 4:3 · 1:1 · 3:4 · 9:16`
+    (`scripts/flow/.tmp/aspect.mjs`). 3:4 gave 896×1200. The 9:16 click was never made (the picker was open over it),
+    so 9:16 is untested.
