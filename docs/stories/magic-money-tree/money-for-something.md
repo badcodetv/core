@@ -864,6 +864,29 @@ it does not fit a panel show and needs Jack's ruling before any talking clip is 
 **Needed before the test:** the three guests exist only inside the reference frame. Each needs a
 Flow Character of his own (a crop of 9c as the portrait) before he can carry a Voice.
 
+### Room reference v2 — the updated cast (3 October 2026, a candidate, not picked)
+
+9c remade with the costume changes from "Character sheets, second pass". **One still, in Flow
+only; Jack has not ruled on it**, so `mfsclearstageref.jpg` is still the reference.
+
+**Attached:** the room reference `mfsclearstageref.jpg` and all four Characters (The Host, The
+British Soldier, The German Soldier, The Politician). **Model:** Nano Banana 2, 4:3, one candidate.
+**Changed from 9c on purpose:** the people come from their Characters, not from the reference; the
+camera is asked for square on (which is what 9c gave); the politician's hands are on his knees, not
+crossed, so his waistcoat shows; everyone is asked for head to boots.
+
+```
+Using the attached reference image for the room, the furniture and the light only, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs in an arc round a low wooden table, two tall windows on a city at night and a bare tree in a metal bucket with a few banknotes on its twigs. The four people are the four attached Characters. Each has the face and the clothes of his own Character, not the clothes of the men in the reference image. Subject: The Host is on his feet in front of his armchair at the left, wine glass in one hand, the other arm thrown wide at the end of a joke. The British Soldier and The German Soldier sit in the two middle armchairs, laughing in spite of themselves, one slapping the arm of his chair. The Politician sits stiff in the armchair at the right end, not laughing, his hands flat on his knees. All four are seen whole, from head to boots. Camera: a wide shot from the studio floor at chest height, square on to the brick wall, taking in the whole arc of four armchairs, the tree and both windows. Lighting: the same single warm spotlight from high on the left, with the far side of every face falling dark. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: the view of the stage is completely clear. The foreground is bare dark wooden floorboards running all the way to the bottom edge of the frame. There is no audience and nothing between the camera and the stage: no audience table, no candle, no upturned chair and no person in the foreground. Exactly four people. The posters on the brick are torn scraps of plain blank paper with no words. The banknotes on the tree are old British pound notes, too small to read. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+**What came back (n=1, first time):** all four recognisable as their Characters. The politician
+wears a tie, waistcoat and watch chain, with no clergyman's collar. The British soldier wears a
+tunic closed at the neck with no tie or cross-belt. The host is on his feet with his arm wide, both
+soldiers laugh, the politician sits stiff with his hands on his knees. Every poster is blank, the
+stage is clear, exactly four people. **Not checked:** whether the notes on the tree are British
+(too small to read). **Small faults:** the soldiers' boots are half hidden behind the table, and
+the bottom left corner falls to black.
+
 ## The cast and their voices in Flow (3 October 2026)
 
 **Jack ruled: split the roles.** The voice over the real clips is the BadCode narrator (Google AI
@@ -1067,6 +1090,107 @@ remaking with them.
   but/therefore spine, the sincere scene rationed to one, the closing image answering the opening.
   **Not run:** the full review pass, the narrator rows on real lines, and a shot design for any
   new still.
+
+## The narrator's lines — draft 2, Jack's edits (3 October 2026)
+
+Draft 1 was written in session and never saved. Jack edited scenes 1, 4, 5 and 6 and kept 7, 8
+and 10 as drafted. Spelling tidied, wording his. **Nothing is rendered yet.**
+
+| Scene | Over | The narrator says |
+| --- | --- | --- |
+| 1. Cold open | Theresa May, 2 June 2017 | "Nice try. How about we ask someone who was actually there." |
+| 4. How did it start? | Posters, marching, trenches | "Nineteen fourteen. Everyone was promised it would be over by Christmas, an insane time metric to use, given the context." |
+| 5. Can we afford it? | Shells, ships, the War Loan poster | "Nobody asked where it came from. Funny, that. Nobody ever does, when it's a war." |
+| 6. What happened next? | Men coming home, the promise, the queue | "Despite all the debt, they built some of the houses, then a committee of businessmen said the country couldn't afford the rest." |
+| 7. Shake, Starve or Plant | 1923 wheelbarrows | "Shake." |
+| | 1930s dole queues | "Starve." |
+| | Flashes of the next war | "And shake again, obviously." |
+| 8. Plant | 1948, houses going up, the NHS opening | "Nineteen forty-eight. The country owed more than it ever had, more than twice everything it made in a year." |
+| | | "And that was the year they built the houses and opened the hospitals, free, for everyone." |
+| | | "It was done once. I watched them do it." |
+| 10. Final scores | Back to May | "What happened next?" (Kai's line, 1 October). Then the caption only: £1bn for the DUP, 24 days later. He says nothing over it. |
+
+- **Scene 1 replaces Kai's 1 October line** ("Oh, sweet summer child. Let's ask someone who was
+  there."). Kai has not seen the change. The voice reference take still reads the old line.
+- **Scene 5 lost its two fact lines** (the War Loan falling short, the Bank of England covering
+  it), so that claim no longer needs checking for the narrator.
+- **Scene 6 lost "a country fit for heroes"** from the narrator; the promise is now carried by
+  the poster on screen.
+- **Not checked, all from memory:** the 1922 business committee cutting the housing (scene 6),
+  the 1948 debt at over twice the size of the economy (scene 8), the DUP £1bn and the 24 days
+  (scene 10).
+
+### First takes — rendered 3 October 2026
+
+Eleven takes, one per line, one generation each, no re-rolls. Zubenelgenubi + British (Brixton),
+every other box empty, driven with `scripts/ai-studio/.tmp/render.mjs` (it sets the voice, fills
+the speech block, clicks Preview and reads the audio out of the response). Saved as stereo WAVs,
+`line-s01-…` to `line-s10-…`, in Jack's narrator folder.
+
+- **Every take is complete:** each was transcribed (faster-whisper `medium.en`) and ends on its
+  last word. Lengths run 1.4s to 8.6s.
+- **Three to check by ear,** where the transcriber heard something else: `s07b` "Starve." came back
+  as "Stop!"; `s07c` "And shake again" came back as "A shake again"; `s05` "Nobody asked" came
+  back as "Nobody asks". A one-word take gives the transcriber little to go on, so this may be the
+  transcriber and not the voice.
+- **Re-rolled the same day, at Jack's request:** `s07b-take2` and `s07c-take2` now transcribe
+  word for word. `s05-take2` still came back as "Nobody asks"; `s05-take3` is correct. The first
+  takes were kept beside them. **Jack then ruled: `s05-take3` "worked"**, and deleted the other
+  scene 5 takes.
+- **Not judged:** whether the voice holds from line to line against the reference. Nobody has
+  listened yet.
+- **Trap found:** the page had reset the voice to Achird while the Accent menu still read
+  British (Brixton). Check the voice before every session.
+
+### The fact check — 3 October 2026 (web search, read not tested)
+
+| Claim | Verdict | What the sources say |
+| --- | --- | --- |
+| Scene 10: £1bn for the DUP, 24 days after "no magic money tree" | ✅ Holds | May said it on BBC Question Time on 2 June 2017, to a nurse asking about the 1% pay cap. The DUP deal, with £1bn extra for Northern Ireland, was signed on 26 June 2017. That is 24 days ([HuffPost](https://www.huffingtonpost.co.uk/entry/theresa-may-magic-money-tree-over-1-billion-dup-deal_uk_5951066be4b02734df2bb737), [Word Histories](https://wordhistories.net/2019/12/24/magic-money-tree/)) |
+| Scene 8: in 1948 the country owed "more than twice everything it made in a year" | ✅ Holds | About 224% of GDP in 1948 ([UK Public Spending](https://www.ukpublicspending.co.uk/spending_chart_1945_2017UKp_17c1li011mbn_G0t_UK_National_Debt_As_Pct_GDP)). The NHS opened in July 1948 |
+| Scene 8: "owed more than it ever had" | 🟡 A year or two out | As a share of the economy the peak was about 252% in 1946/47 ([History & Policy](https://historyandpolicy.org/policy-papers/papers/covid-19-and-the-uk-national-debt-in-historical-context/), [OBR](https://articles.obr.uk/300-years-of-uk-public-finance-data/index.html)); by 1948 it was falling. Not checked: the figure in pounds, which may still have been at its highest |
+| Scene 6: "a committee of businessmen said the country couldn't afford the rest" | 🟡 Right people, loose order | The Geddes Committee was real and was five businessmen (Geddes, Inchcape, Faringdon, Maclay, Granet); it reported in February 1922 and its cuts ended the housing plans ([Geddes Axe](https://en.wikipedia.org/wiki/Geddes_Axe), [Inside Housing](https://www.insidehousing.co.uk/comment/addisons-framework-was-scrapped-but-its-legacy-is-more-important-than-ever--62374)). But the Cabinet had already capped the programme in July 1921, at about 176,000 houses, before the committee sat ([History & Policy](https://historyandpolicy.org/policy-papers/papers/the-housing-crisis-as-the-long-term-casualty-of-austerity-politics-1918-201/)). About 213,000 were built against a promise of 500,000 |
+| Scene 8: "built the houses" in 1948 | ⬜ Not checked | No figure looked up for houses built that year |
+
+**Two lines Jack may want to change, both already rendered:**
+
+- Scene 8, first line. A version with nothing to argue about: "Nineteen forty-eight. The country
+  owed more than twice everything it made in a year."
+- Scene 6. To be exact about who chose: "…then the government said the country couldn't afford the
+  rest." The current line is what most popular accounts say, and names a chooser.
+
+## The narrator's voice — chosen 3 October 2026
+
+**Jack picked audition 04** ("i like this one please save it") from five takes of Kai's opening
+line, made in Google AI Studio's speech page.
+
+| Setting | Value |
+| --- | --- |
+| Model | `gemini-3.1-flash-tts-preview`, Composer |
+| Voice | **Zubenelgenubi** (Casual, lower middle pitch) |
+| Accent menu | **British (Brixton)** |
+| Audio Profile, Scene, Sample Context, Style, Pace | All empty |
+| Line read | "Oh, sweet summer child. Let's ask someone who was there." |
+
+The exact prompt the page sent, so the script can repeat it:
+
+```
+Read the following transcript based on the director's note.
+
+# Director's note
+Accent: British (Brixton).
+
+## Transcript:
+<the words>
+```
+
+- The reference take is `NARRATOR-VOICE-reference-zubenelgenubi-brixton.wav` in Jack's narrator
+  folder (`Desktop\Youtube Vids\animation\money for something\narrator`), beside the five auditions.
+- The other four: Enceladus RP, Enceladus Brixton, Zubenelgenubi RP, Puck RP. Not chosen.
+- **Not tested:** whether the voice holds on a second line or a longer one. One take in ten is
+  reported to drift, so every new line is checked against the reference by ear.
+- How the page was driven, and what changed on it: [`docs/ai-studio/README.md`](../../ai-studio/README.md),
+  the 3 October update.
 
 ## What the research found (2 October 2026)
 

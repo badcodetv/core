@@ -101,6 +101,42 @@ will not admit it.
 | Suno | Music generator asked to talk | 🔴 Closed — **Suno cannot make silence.** Fourteen rounds bought a voice, not a narration engine |
 | Local clone (Chatterbox / Qwen3-TTS) | Clone the approved Suno take on the 4070 | 🟡 Still viable, still needs a clean reference clip, still rejected by ear once |
 
+## 🆕 UPDATE 2026-10-03 — the page changed, and the speech page CAN be driven from code
+
+Observed live on Jack's Ultra login, driving the logged-in Chrome over CDP (Money For Something
+narrator audition). Everything here is ✅ seen unless marked.
+
+- **The default model is now `gemini-3.8-flash-tts`** (released 23 Sep 2026). Its voice library says
+  **2,000+ voices** with new names (Fola, Bodi, Lumi…). Filters: Language, Gender, Pitch, Style,
+  Use case. 🔴 **No Accent filter, the only English is "English (US)", and searching `British`
+  finds nothing.** The "5,000 voices with an Accent filter" described below is gone.
+- **Voice Design on 3.8 is paid-tier:** *"Voice Design runs on the paid tier. Link a paid API key
+  to continue"*, ending at **Set up billing**. Not clicked. A stop gate, Kai's call.
+- **`gemini-3.1-flash-tts-preview` is still in the model picker** (Audio tab) and still has the
+  Composer. Its voice list is the **30 prebuilt voices only**.
+- **The Accent dropdown has eight options:** Neutral, American (Gen), American (Valley),
+  American (South), **British (RP)**, **British (Brixton)**, Transatlantic, Australian.
+- 🔑 **The dropdown is prose, not a parameter.** The request sent with only the Accent set is:
+  `Read the following transcript based on the director's note.\n\n# Director's note\nAccent: British (Brixton).\n\n## Transcript:\n<words>`.
+  So `scripts/aistudio-tts.py` can reproduce it exactly with that string as the profile.
+- 🔑 **Generation works from the CDP-attached browser on this page.** The 403 recorded for the chat
+  page in [`../listening/automation.md`](../listening/automation.md) Trap 4b did not fire here:
+  every `GenerateContent` returned 200.
+- **How to drive it:** after the first Run, the **Run button stays `aria-disabled`** (cause
+  unknown). The per-block **Preview this block** button keeps generating. It only appears on
+  hover, so hover the textarea and click with `force`; while audio plays it is relabelled
+  **Stop preview**, so wait for it to revert.
+- **Getting the audio:** the Download button worked once, then Chrome saved nothing (no download
+  event). Instead read the `GenerateContent` response body: it carries
+  `"audio/l16; rate=24000; channels=1","<base64>"` chunks; concatenate, decode, wrap as WAV.
+- 🔴 **The voice resets on its own.** Later the same day the page showed **Achird** while the
+  Accent menu still read British (Brixton). Open Speaker settings and check the voice marked
+  **Current** before every session; `scripts/ai-studio/.tmp/render.mjs` does this and then
+  renders a list of lines (11 of 11 returned complete audio on the first go, 1.4s to 8.6s).
+- ✅ **Judged by Jack, 3 October:** of five takes (Enceladus RP, Enceladus Brixton, Zubenelgenubi
+  RP, Zubenelgenubi Brixton, Puck RP) he picked **Zubenelgenubi + British (Brixton)**, with every
+  other box empty. One line only; not yet tested on a second line.
+
 ## 💳 UPDATE 2026-09-30 — we now use a PAID key (Kai's call)
 
 - Kai: *"it's excellent"* — so `GEMINI_API_KEY` in `.env` is now a key from the **WebKit Servers** Google Cloud project (billing attached; AI Studio → Create API key → *Import project*). The old free key is kept as `GEMINI_API_KEY_FREE`.

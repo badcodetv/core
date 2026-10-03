@@ -290,3 +290,9 @@ not yet checked.
 47. **Frame shape by hand:** the settings trigger opens tabs `16:9 · 4:3 · 1:1 · 3:4 · 9:16`
     (`scripts/flow/.tmp/aspect.mjs`). 3:4 gave 896×1200. The 9:16 click was never made (the picker was open over it),
     so 9:16 is untested.
+48. **A reference image and four Characters in one prompt works (n=1, 3 October 2026).** Five `@` chips: the room
+    reference, then each Character found through `Search assets`. Nano Banana 2, 4:3, first time: all four faces and
+    the Characters' own clothes came through, over the room from the reference, even though the reference showed two
+    of the men in different clothes. The prompt said the people come from their Characters and the reference is for
+    the room, furniture and light only. Scratch: `scripts/flow/.tmp/cast-many.mjs`. Four is the model's stated limit
+    for character resemblance; five is untested.
