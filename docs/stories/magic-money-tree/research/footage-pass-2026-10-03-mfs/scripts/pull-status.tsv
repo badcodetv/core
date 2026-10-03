@@ -1,0 +1,4 @@
+id	scene	md5_ok	master_bytes	filter	master_s	conform_s	conform_bytes	result	conform_file
+new_town_TNA	s08-plant	yes	580351604	setfield=prog	495.024000	495.000000	1804559245	OK	s08-plant/new_town_TNA.picture-only.mov
+your_very_good_health_TNA	s08-plant	yes	606527404	setfield=prog	517.104000	517.080000	1898815112	OK	s08-plant/your_very_good_health_TNA.picture-only.mov
+pop_goes_the_weasel_TNA	s08-plant	yes	679494460	setfield=prog	581.064000	581.040000	2074917947	OK	s08-plant/pop_goes_the_weasel_TNA.picture-only.mov
