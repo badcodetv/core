@@ -1711,3 +1711,34 @@ A frame 0.33s into an Opacity 0→100 fade exported with **full-brightness RGB a
   so any Motion push, grade or effect on the clip it replaces is gone. Before a swap pass, `jq` the state for items
   with `keyframes` or extra components, and re-apply them afterwards (2026-09-30: the receipt and wine-label pushes
   vanished unnoticed for three passes).
+
+## 2026-10-04: learned building the Money For Something first cut (73 placements, three evals)
+
+- 🔴 **`createOverwriteItemAction` from eval throws `Invalid parameter` when handed the CAST item.** Passing
+  `ppro.ClipProjectItem.cast(pi)` failed; passing the uncast item from `helpers.resolveProjectItem(project, name)`
+  worked, with times from `helpers.secondsToTick`. The cast item is still what `createSetInOutPointsAction` and
+  `createClearInOutPointsAction` hang off. This is very likely the cause of the 2026-09-11 note above ("cause not
+  isolated"). The first failing call also awaited `SequenceEditor.getEditor` and used
+  `ppro.TickTime.createWithSeconds`; those two were changed in the same retry, so they are not ruled out.
+- ✅ **35 placements in one eval, three transactions each, ran clean twice** (`timeoutMs: 180000`).
+- ✅ **An audio-only item goes on A2 with `createOverwriteItemAction(item, t, 0, 1)`**, and a video item with no
+  audio stream on V2 with `(item, t, 1, 0)`.
+- ✅ **Plan times snapped to 1/24 s left no gaps** on a 24 fps sequence: `blackdetect` on the render found none.
+- ✅ **Render stills to clips first.** Each still became a 1280×720 / 24 fps mp4 with its push-in baked in
+  (ffmpeg `zoompan`), so nothing on the timeline needed scaling and the "default still duration" unknown never
+  came up.
+- 🔴 **A 38-placement eval froze Premiere and it restarted** (same session, 2026-10-04, building cut 3). The call
+  timed out at 180 s, `tasklist` showed "Not Responding", and a few minutes later a new Premiere process had the
+  project open again with the sequence saved as far as the freeze (the bridge reconnected by itself). Twelve
+  placements had landed. The remaining 28 went in as three evals of nine or ten and ran clean. A 40-placement
+  eval had run clean an hour earlier, so this is load, not a count. **Keep it to about ten placements an eval.**
+- 🔴 **Round plan times to the frame, then add 2 ms before `secondsToTick`.** Times printed to four decimals
+  (`1.2083` for 29 frames) floor to 28 frames and leave a one-frame black gap: fifteen of them in one cut.
+  `secondsToTick(Math.round(s * 24) / 24 + 0.002)` left none.
+- 🔴 **Premiere honours a clip's pixel aspect ratio.** ffmpeg clips cut from masters with non-square pixels
+  (SAR 16:15 and 167:96) played stretched in a 1280×720 sequence, pushing a burned-in caption off the left edge.
+  A contact sheet made with ffmpeg did not show it; a frame from the Premiere render did. Put
+  `scale=iw*sar:ih,setsar=1` first in the filter chain.
+- `helpers.resolveProjectItem` threw `Cannot read properties of null (reading 'name')` once, mid-batch, on an
+  item that resolved normally on the next call. Not explained. Wrap the resolve in the try and collect failures.
+

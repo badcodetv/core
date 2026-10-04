@@ -864,10 +864,19 @@ it does not fit a panel show and needs Jack's ruling before any talking clip is 
 **Needed before the test:** the three guests exist only inside the reference frame. Each needs a
 Flow Character of his own (a crop of 9c as the portrait) before he can carry a Voice.
 
-### Room reference v2 — the updated cast (3 October 2026, a candidate, not picked)
+### Room reference v2 — the updated cast (3 October 2026; picked by Jack 4 October)
 
-9c remade with the costume changes from "Character sheets, second pass". **One still, in Flow
-only; Jack has not ruled on it**, so `mfsclearstageref.jpg` is still the reference.
+9c remade with the costume changes from "Character sheets, second pass".
+
+> ✅ **Picked 4 October 2026.** Jack: "i like the room reference it works." Saved as
+> [`characters/roundtable-clear-stage-reference-v2.jpg`](./characters/roundtable-clear-stage-reference-v2.jpg)
+> (1200x896) and uploaded to Flow project `cb27208c` as **`mfsroomrefv2.jpg`**. It replaces
+> `mfsclearstageref.jpg`, which shows the old collar and the officer's tunic. In it the British
+> Soldier is the khaki one (second from left) and the German Soldier is the grey-green one with
+> braces (third from left).
+
+As first written on 3 October: one still, in Flow only, not ruled, so `mfsclearstageref.jpg` was
+still the reference.
 
 **Attached:** the room reference `mfsclearstageref.jpg` and all four Characters (The Host, The
 British Soldier, The German Soldier, The Politician). **Model:** Nano Banana 2, 4:3, one candidate.
@@ -886,6 +895,613 @@ soldiers laugh, the politician sits stiff with his hands on his knees. Every pos
 stage is clear, exactly four people. **Not checked:** whether the notes on the tree are British
 (too small to read). **Small faults:** the soldiers' boots are half hidden behind the table, and
 the bottom left corner falls to black.
+
+## Round 10 — the storyboard stills (4 October 2026)
+
+Jack: "start on the stills for the videos for the storyboard. Please avoid elements of AI slop
+(research the internet on how to do that). Please optimise this prompt for Nano Banana Pro 2 on
+Google Flow and research the internet on how to do that. Also use the cinematography file and
+skills in the repo."
+
+**Model:** Nano Banana 2 (there is no "Nano Banana Pro 2"; Nano Banana 2 is the free one and the
+standing choice). 4:3, one candidate, one still at a time. Each still is the first frame of a clip.
+**Attached to every prompt:** the Characters in the shot first, then the room reference
+`mfsroomrefv2.jpg` last. No Character's looks are described; only where he is, what he does and
+his face muscles.
+
+**What the research changed in the prompts** (web pass and `docs/google-flow/nano-banana-2.md`):
+
+- The face is written as muscles and eyes, and never as an emotion word.
+- Every still is mid-action, off centre and very slightly off level, with something blurred in the
+  foreground and one small mess on the table.
+- One named light, and where it falls off. Nothing else is lit.
+- The capture is named (a 2003 standard-definition broadcast camera), which is what stops the
+  smooth, glossy look. No "photorealistic", no "cinematic", no "masterpiece".
+- Negatives sit only in the closing Constraints block.
+
+### S2b. Scene 2, the host close
+
+The plate for "Money For Something. The quiz where the rules depend on who's asking."
+
+| | |
+| --- | --- |
+| The job | The first face after the wide. He looks at us, and we are told the game is rigged |
+| Depth | Front: a soldier's blurred sleeve, the table edge. Middle: the host. Back: soft brick, three twigs and one note |
+| The eye rests on | His eyes, which have the spotlight and the focus |
+| The light | The one warm spotlight, high left. The right of his face and the right of the frame fall dark |
+| Camera | His seated eye height, long lens, slightly off level, him left of centre |
+| Withheld | The three guests |
+| What will move | Only his mouth and the glass |
+
+**Attach:** The Host, then `mfsroomrefv2.jpg`.
+
+```
+Using the attached reference image for the room, the furniture and the light only, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs, a low wooden table and a bare tree in a metal bucket with a few banknotes on its twigs. The man is the attached Character, The Host, with the face and the clothes of his Character. Subject: a close shot of The Host from the chest up, sitting forward on the edge of his armchair, caught the moment before he speaks to the television audience. He looks straight into the lens. One eyebrow is lifted higher than the other, his eyes are narrowed with the spotlight caught in them, and his lips are just parted at one corner. One hand holds a wine glass low by his knee, tilted, the wine near the rim. Camera: at his seated eye height from across the table, a long lens, the frame very slightly off level. He sits left of centre. The right third of the frame is soft brick wall and three thin twigs of the tree carrying one banknote. The blurred khaki sleeve of a soldier crosses the bottom right corner in the foreground. On the table edge along the bottom of the frame, out of focus, are a wet ring left by a glass and a few crumbs. Lighting: the same single warm spotlight from high on the left. The right side of his face falls dark, and the brick behind him fades to near black towards the right edge. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: only one face in the frame. The paper on the brick is torn blank scraps with no words. The banknote is too small to read. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+**What came back (n=1, first time, in Flow only):** the host is recognisable as his Character and
+looks into the lens with his lips just parted. The soldier's blurred sleeve, the wet ring, the
+crumbs, the twigs and one note are all there, and it reads as 2003 broadcast video. **Not as
+asked:** the shot is wider than chest-up (it reaches his knees), the wine glass is held up at his
+chest, the right side of his face is only a little darker, and the brick does not fade to near
+black on the right. The eyebrow lift is slight. **Jack has not ruled on it.**
+
+**S2b taken as the plate, 4 October.** Jack: "Do what you think is best." My call: keep it. A knee-up frame gives room to push in later, and the look is right.
+
+### S3A. Scene 3, the host reads a card
+
+**The job:** The game-show ritual: he reads each contestant's card. The plate for all three card lines.
+
+**Attach:** The Host, then `mfsroomrefv2.jpg`.
+
+```
+Using the attached reference image for the room, the furniture and the light only, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs, a low wooden table, two tall windows on a city at night and a bare tree in a metal bucket with a few banknotes on its twigs. The man is the attached Character, The Host, with the face and the clothes of his Character. Subject: a medium close shot of The Host from the waist up, sitting back in his armchair and reading aloud from a small cream index card held up in one hand, with the blank back of the card towards the camera. His eyes are lowered to the card, both eyebrows are raised, and his lips are just parted. His other hand rests a wine glass on the arm of the chair. Camera: seated eye height from across the table, a long lens, the frame very slightly off level. He sits left of centre with his body turned towards the right of the frame. The blurred rim of a white mug crosses the bottom right corner in the foreground, and the brick wall behind him is soft. Lighting: the same single warm spotlight from high on the left; the far side of his face falls dark. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: only one face in the frame. The card is blank on the side we see. The expression stays small. The paper on the brick is torn blank scraps with no words. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+### S3B. Scene 3, the British soldier, silent
+
+**The job:** His face while the host says he was killed at nineteen. He does not react, and that is the reaction.
+
+**Attach:** The British Soldier, then `mfsroomrefv2.jpg`.
+
+```
+Using the attached reference image for the room, the furniture and the light only, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs, a low wooden table, two tall windows on a city at night and a bare tree in a metal bucket with a few banknotes on its twigs. The man is the attached Character, The British Soldier, with the face and the clothes of his Character. Subject: a close shot of The British Soldier from the chest up, sitting upright in his armchair, listening to something said about him from out of frame to the left. His head is turned a little to the left. His eyes are fixed on a point just past the speaker and do not blink, his eyelids are low, his jaw is set and his mouth is closed and level. Both hands hold a white mug of tea in his lap, untouched. Camera: seated eye height from across the table, a long lens, the frame very slightly off level. He sits right of centre, with empty soft brick on the left third of the frame. The blurred grey-green shoulder of the soldier beside him cuts into the right edge in the foreground. A smear of dried mud is on the arm of his chair. Lighting: the same single warm spotlight from high on the left; the far side of his face falls dark. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: only one face in the frame. The expression stays small. The paper on the brick is torn blank scraps with no words. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+### S3C. Scene 3, the German soldier, silent
+
+**The job:** His face on "killed two hundred yards away". He looks sideways at the other soldier: the first sign they are on the same side.
+
+**Attach:** The German Soldier, then `mfsroomrefv2.jpg`.
+
+```
+Using the attached reference image for the room, the furniture and the light only, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs, a low wooden table, two tall windows on a city at night and a bare tree in a metal bucket with a few banknotes on its twigs. The man is the attached Character, The German Soldier, with the face and the clothes of his Character. Subject: a close shot of The German Soldier from the chest up, sitting back in his armchair with his arms folded. His head faces the camera but his eyes have slid sideways to the left of the frame, towards the man sitting beside him. One eyebrow is drawn very slightly down, and his mouth is closed with the lips pressed thin. Camera: seated eye height from across the table, a long lens, the frame very slightly off level. He sits left of centre. The blurred khaki shoulder of the soldier beside him cuts into the left edge in the foreground, and the right third of the frame is one tall dark window with small city lights. Crumbs and an empty glass sit on the table edge along the bottom of the frame, out of focus. Lighting: the same single warm spotlight from high on the left; the far side of his face falls dark. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: only one face in the frame. The expression stays small. The paper on the brick is torn blank scraps with no words. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+### S3D. Scene 3, the politician, silent
+
+**The job:** His face on "still with us". The only man in the room who is pleased to be here.
+
+**Attach:** The Politician, then `mfsroomrefv2.jpg`.
+
+```
+Using the attached reference image for the room, the furniture and the light only, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs, a low wooden table, two tall windows on a city at night and a bare tree in a metal bucket with a few banknotes on its twigs. The man is the attached Character, The Politician, with the face and the clothes of his Character. Subject: a close shot of The Politician from the chest up, sitting very upright in his armchair with his chin lifted, acknowledging an introduction. The corners of his mouth are pulled up a little with the lips closed, while his eyes stay flat and do not narrow. Two fingers of one hand rest on the watch chain across his waistcoat. Camera: from a little below his eye height, at the height of the table top, a long lens, the frame very slightly off level. He sits right of centre. A full glass of wine stands on the table edge in the bottom left foreground, out of focus, and behind him the brick is soft with the edge of one dark window. Lighting: the same single warm spotlight from high on the left; the far side of his face falls dark. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: only one face in the frame. The expression stays small. The paper on the brick is torn blank scraps with no words. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+**What came back, scene 3 (n=1 each, first time, in Flow only; Jack has not ruled):**
+
+| Still | Verdict | Notes |
+| --- | --- | --- |
+| S3a host with card | Works | Eyes down on a blank ruled card, wine on the chair arm, tree and window behind. The foreground mug is large |
+| S3b British soldier | Works | Flat fixed stare, mug held in his lap, mud on the chair arm. **Fault:** the foreground figure on the right shows part of a second man's face in profile |
+| S3c German soldier | Works | Arms folded, eyes slid left towards the khaki shoulder, crumbs and an empty glass on the table |
+| S3d politician | Works, one continuity fault | Chin up, closed smile, flat eyes, fingers on the watch chain, a full glass in front. **Fault:** the money tree is behind him, but in the room reference it stands at the other end, by the host |
+
+### S3b and S3d, second versions (4 October 2026)
+
+Jack: "fix these please". Whole new prompts, not edits.
+
+**S3b v2, what changed:** the foreground man is now only a sleeve and elbow from the bottom right
+corner, no higher than the soldier's chest, and the closing constraint says one head in frame.
+**Attach:** The British Soldier, then `mfsroomrefv2.jpg`.
+
+```
+Using the attached reference image for the room, the furniture and the light only, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs, a low wooden table, two tall windows on a city at night and a bare tree in a metal bucket with a few banknotes on its twigs. The man is the attached Character, The British Soldier, with the face and the clothes of his Character. Subject: a close shot of The British Soldier from the chest up, sitting upright in his armchair, listening to something said about him from out of frame to the left. His head is turned a little to the left. His eyes are fixed on a point just past the speaker and do not blink, his eyelids are low, his jaw is set and his mouth is closed and level. Both hands hold a white mug of tea in his lap, untouched. Camera: seated eye height from across the table, a long lens, the frame very slightly off level. He sits right of centre, with soft brick and the thin trunk of the tree on the left third of the frame. In the foreground, a blurred grey-green woollen sleeve and elbow come in from the bottom right corner and reach no higher than his chest; the rest of that man is outside the frame. A smear of dried mud is on the arm of his chair. Lighting: the same single warm spotlight from high on the left; the far side of his face falls dark. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: he is the only person whose head is in the frame. The expression stays small. The paper on the brick is torn blank scraps with no words. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+**S3d v2, what changed:** the tree is taken out of the room description, the background behind him
+is spelled out (brick, a window, a radiator), he is placed at the far right end of the set, and the
+soldier's sleeve now comes in from the left, where the soldier sits.
+**Attach:** The Politician, then `mfsroomrefv2.jpg`.
+
+```
+Using the attached reference image for the room, the furniture and the light only, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs, a low wooden table and tall windows on a city at night. The man is the attached Character, The Politician, with the face and the clothes of his Character. He sits in the armchair at the far right end of the set, as in the reference image. Subject: a close shot of The Politician from the chest up, sitting very upright in his armchair with his chin lifted, acknowledging an introduction. The corners of his mouth are pulled up a little with the lips closed, while his eyes stay flat and do not narrow. Two fingers of one hand rest on the watch chain across his waistcoat. Camera: from a little below his eye height, at the height of the table top, a long lens, the frame very slightly off level. He sits right of centre. Behind him are soft red brick with one torn blank scrap of paper, one tall dark window with small city lights, and a cast-iron radiator under the window. In the foreground, a blurred grey-green woollen sleeve comes in from the bottom left corner, and a full glass of red wine stands on the table edge at the bottom of the frame, out of focus. Lighting: the same single warm spotlight from high on the left; the far side of his face falls dark. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: he is the only person whose head is in the frame. The tree in the bucket stands at the other end of the set and is outside this frame. The expression stays small. The paper on the brick is blank with no words. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+**What came back, S3b v2 and S3d v2 (n=1 each):** both fixed. S3b v2 has no second face; the foreground is a grey-green sleeve and a raised hand, which is larger than asked. S3d v2 has no tree; brick, a window and a radiator are behind him.
+
+### Scenes 4 to 10: the eight remaining plates (4 October 2026)
+
+Jack, after seeing scene 3: "fix these please" (S3b and S3d, done above), then: "When the stills are all done, please make the videos in flow for them."
+
+**A studio show has fixed cameras, so plates are reused.** The host close (S2b), the card shot (S3a) and the three singles (S3b v2, S3c, S3d v2) carry every spoken line. Only the shots where something happens need a new plate, and those are the eight below. The politician looking at his watch chain (scene 4) is an action on S3d v2, and him catching the notes (scene 9) is a second action on S5a.
+
+### S4A. Scene 4, the stare
+
+**The job:** The answer to "other than with your lives": two dead men looking through the host. The film's first silence.
+
+**Attach:** The British Soldier, The German Soldier, then `mfsroomrefv2.jpg`.
+
+```
+Using the attached reference image for the room, the furniture and the light only, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs, a low wooden table, two tall windows on a city at night and a bare tree in a metal bucket with a few banknotes on its twigs. The two men are the attached Characters, The British Soldier and The German Soldier, each with the face and the clothes of his own Character. The British Soldier sits on the left of the frame and The German Soldier sits on the right of the frame, side by side in their armchairs. Subject: a two-shot of both men from the chest up. Both look straight at a point just to the left of the lens and neither moves. Their eyes are open a little too wide and focused far behind what they are looking at, their eyelids are still, their brows are flat and their mouths are closed and slack. The white mug in The British Soldier's hand has tipped, and a thin line of tea has run onto his knee without his noticing. Camera: seated eye height from the host's armchair, a long lens, the frame very slightly off level. The two men fill the centre and right of the frame. The blurred rim of a wine glass crosses the bottom left corner in the foreground, and behind them are soft brick and one dark window. Lighting: the same single warm spotlight from high on the left; the far side of every face falls dark. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: exactly two people. The expressions stay small: a stranger looking at this frame would take a second to notice anything was wrong with them. The paper on the brick is torn blank scraps with no words. The banknotes are old British pound notes, too small to read. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+### S5A. Scenes 5 and 9, the politician at the tree
+
+**The job:** The plate for the shake. His hand is on the trunk and the notes are still on the twigs, so the clip can make them fall.
+
+**Attach:** The Politician, then `mfsroomrefv2.jpg`.
+
+```
+Using the attached reference image for the room, the furniture and the light only, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs, a low wooden table, two tall windows on a city at night and a bare tree in a metal bucket with a few banknotes on its twigs. The man is the attached Character, The Politician, with the face and the clothes of his Character. Subject: a medium shot of The Politician from the knees up, standing beside the bare tree in its metal bucket at the left end of the set. He is bent a little at the waist with one hand gripped round the thin trunk, about to shake it, and he looks back over his shoulder towards the table on the right of the frame with his chin up and the corners of his closed mouth pulled up. Seven old banknotes hang from the twigs above his hand. His other hand holds the front of his jacket open like a pouch. Camera: from the height of the table top, looking slightly up at him, a long lens, the frame very slightly off level. He and the tree stand left of centre. The blurred khaki shoulder of a seated soldier crosses the bottom right corner in the foreground. Lighting: the same single warm spotlight from high on the left; the far side of every face falls dark. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: he is the only person whose head is in the frame. The expression stays small. The paper on the brick is torn blank scraps with no words. The banknotes are old British pound notes, too small to read. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+### S6A. Scene 6, the bucket on his lap
+
+**The job:** "Ah. No money." The same tree, now out of everyone's reach, with the notes still hanging on it.
+
+**Attach:** The Politician, then `mfsroomrefv2.jpg`.
+
+```
+Using the attached reference image for the room, the furniture and the light only, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs, a low wooden table and tall windows on a city at night. The man is the attached Character, The Politician, with the face and the clothes of his Character. He sits in the armchair at the far right end of the set, as in the reference image. Subject: a medium close shot of The Politician from the waist up, sitting back in his armchair with a metal bucket on his lap and both arms wrapped round it. A bare thin tree stands in the bucket, and its twigs, hung with six old banknotes, rise beside and above his head. His chin is lifted, his eyebrows are raised in the middle, and his closed lips are pressed into a small flat line as he looks at someone out of frame to the left. Camera: seated eye height from across the table, a long lens, the frame very slightly off level. He sits right of centre. Behind him are soft red brick, one tall dark window with small city lights and a cast-iron radiator. In the foreground a blurred grey-green woollen sleeve comes in from the bottom left corner. Lighting: the same single warm spotlight from high on the left; the far side of every face falls dark. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: he is the only person whose head is in the frame. There is only one tree, and it is in the bucket on his lap. The expression stays small. The paper on the brick is torn blank scraps with no words. The banknotes are old British pound notes, too small to read. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+### S7A. Scene 7, the host on his feet
+
+**The job:** The quick-fire round opens. The only time the host stands, so the frame changes gear.
+
+**Attach:** The Host, then `mfsroomrefv2.jpg`.
+
+```
+Using the attached reference image for the room, the furniture and the light only, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs, a low wooden table, two tall windows on a city at night and a bare tree in a metal bucket with a few banknotes on its twigs. The man is the attached Character, The Host, with the face and the clothes of his Character. Subject: a medium shot of The Host from the thighs up, on his feet in front of his armchair at the left end of the set, leaning towards the camera. One arm is thrown out to the side with the hand open, the other hand holds a wine glass at his hip, and the wine has slopped up one side of the glass. He looks straight into the lens with both eyebrows up and his mouth just opening to speak. Camera: from the height of the table top, looking up at him, a long lens, the frame not quite level. He stands left of centre, with the bare tree and its banknotes behind his shoulder on the right. A blurred white mug and a scatter of crumbs sit on the table edge along the bottom of the frame. Lighting: the same single warm spotlight from high on the left; the far side of every face falls dark. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: he is the only person in the frame. The paper on the brick is torn blank scraps with no words. The banknotes are old British pound notes, too small to read. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+### S8A. Scene 8, the note pressed into the soil
+
+**The job:** "Plant." The only sincere image in the film: a dead man's hand planting a banknote.
+
+**Attach:** `mfsroomrefv2.jpg`.
+
+```
+Using the attached reference image for the room, the furniture and the light only, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs, a low wooden table, two tall windows on a city at night and a bare tree in a metal bucket with a few banknotes on its twigs. Subject: a close shot of one man's hand pressing a folded old banknote upright into the dark soil of the metal bucket at the foot of the bare tree. The hand is a working man's hand, about forty, with weathered skin, scarred knuckles and dirt under the nails, and it comes out of a rough khaki wool cuff with one brass button. Half of the banknote is already under the soil. Camera: almost at floor level, a long lens, the frame very slightly off level. The bucket fills the left half of the frame and the thin trunk rises out of the top edge. Behind it, out of focus, are dark floorboards with flakes of dried mud, the leg of a leather armchair and a muddy army boot. Lighting: the same single warm spotlight from high on the left rakes across the dented galvanised metal and the back of the hand; the floor behind falls dark. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: no face is in the frame. One hand only. The paper on the brick is torn blank scraps with no words. The banknotes are old British pound notes, too small to read. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+### S9B. Scenes 9 and 10, the stuffed pockets
+
+**The job:** Who gained. The notes end in his pockets, in front of the two men who paid.
+
+**Attach:** The Politician, then `mfsroomrefv2.jpg`.
+
+```
+Using the attached reference image for the room, the furniture and the light only, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs, a low wooden table and tall windows on a city at night. The man is the attached Character, The Politician, with the face and the clothes of his Character. He sits in the armchair at the far right end of the set, as in the reference image. Subject: a medium close shot of The Politician from the waist up, sitting back in his armchair with his hands folded over his stomach. Crumpled old banknotes are stuffed into both jacket pockets, his breast pocket and his waistcoat pockets, with their corners sticking out, and one note lies on his shoulder. He looks down his nose towards the lens with his eyelids half lowered, his eyebrows level and the corners of his closed mouth pulled up a little. Camera: from a little below his eye height, a long lens, the frame very slightly off level. He sits right of centre. Behind him are soft red brick, one tall dark window with small city lights and a cast-iron radiator. In the foreground a blurred grey-green woollen sleeve comes in from the bottom left corner. Lighting: the same single warm spotlight from high on the left; the far side of every face falls dark. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: he is the only person whose head is in the frame. The expression stays small. The paper on the brick is torn blank scraps with no words. The banknotes are old British pound notes, too small to read. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+### S10A. Scene 10, the empty hands
+
+**The job:** The final score. Set against the stuffed pockets, without a word.
+
+**Attach:** The British Soldier, The German Soldier, then `mfsroomrefv2.jpg`.
+
+```
+Using the attached reference image for the room, the furniture and the light only, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs, a low wooden table, two tall windows on a city at night and a bare tree in a metal bucket with a few banknotes on its twigs. The two men are the attached Characters, The British Soldier and The German Soldier, each with the face and the clothes of his own Character. The British Soldier sits on the left of the frame and The German Soldier sits on the right of the frame, side by side in their armchairs. Subject: a two-shot of both men from the knees up. Each sits forward with his forearms on his thighs and his hands hanging open and empty between his knees, palms up. Both have turned their heads to look at someone out of frame to the right. Their eyelids are low, their brows are level and their mouths are closed. Dried mud lies on the floor under their boots. Camera: seated eye height from across the table, a long lens, the frame very slightly off level. The two men sit left of centre. An empty white mug and a wet ring stand on the table edge along the bottom of the frame, out of focus, and behind them are soft brick and one dark window. Lighting: the same single warm spotlight from high on the left; the far side of every face falls dark. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: exactly two people. The expressions stay small. The paper on the brick is torn blank scraps with no words. The banknotes are old British pound notes, too small to read. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+### S10B. Scene 10, the room after the show
+
+**The job:** The last image, answering the first: the tree, and one note left on it.
+
+**Attach:** `mfsroomrefv2.jpg`.
+
+```
+Using the attached reference image for the room, the furniture and the light only, generate a new frame from the same American cable television comedy show recorded in New York in 2003: a set like the back room of a basement comedy club, with red brick, worn leather armchairs, a low wooden table, two tall windows on a city at night and a bare tree in a metal bucket with a few banknotes on its twigs. Subject: the same set after the recording has finished and everyone has left. The four leather armchairs stand empty in their arc round the low table. Used wine glasses, white mugs, crumbs and a crumpled napkin are left on the table, and one armchair cushion is still dented. The bare tree stands in its bucket with a single old banknote hanging from one twig. Camera: a wide shot from the studio floor at chest height, square on to the brick wall, taking in all four armchairs, the tree and both windows, the frame very slightly off level. Bare dark floorboards run to the bottom edge of the frame. Lighting: the room lights are down; the same single warm spotlight from high on the left now falls only on the tree and the nearest armchair, and the right half of the room falls away to near black, with small city lights in the windows. Capture: the same early-2000s standard-definition broadcast video camera: soft detail, warm reds slightly smeared, a little video noise in the dark areas. Constraints: the room is empty of people. The paper on the brick is torn blank scraps with no words. The banknotes are old British pound notes, too small to read. No text, logos, captions or watermarks anywhere. Compose for a 4:3 frame. Thanks.
+```
+
+**What came back, the eight plates (n=1 each, first time, in Flow only; Jack has not ruled):**
+
+| Plate | Verdict | Notes |
+| --- | --- | --- |
+| S4a the stare | Works | Both men stare flat at the lens; tea runs from the tipped mug. Knee-up, not chest-up. The two faces are very alike |
+| S5a politician at the tree | Works | Full figure, one hand on the trunk, looking back at the table, notes still on the twigs |
+| S6a bucket on his lap | Works | Both arms round the bucket, the twigs and notes beside his head, one tree only |
+| S7a host on his feet | Works | Arm thrown out, glass at his hip, looking into the lens |
+| S8a the note into the soil | Works | A weathered hand and khaki cuff pressing a folded note into the soil; a muddy boot behind |
+| S9b stuffed pockets | Works, loosely | The notes look pinned to his jacket more than stuffed in pockets |
+| S10a empty hands | 🟡 Weak | Their hands rest on their knees and the chair arms. "Empty hands" does not read |
+| S10b the empty room | Works | Four empty chairs, a used table, one note on the tree |
+
+## Round 11 — the clips (4 October 2026)
+
+Jack: "When the stills are all done, please make the videos in flow for them. Please avoid elements
+of AI slop (research the internet on how to do that). Please optimise this prompt for Google Flow
+Omni Flash frames/ingredients and research the internet on how to do that. Also use the
+cinematography file and skills in the repo."
+
+**Settings:** Omni 1.1 Flash, **Frames**, the plate in the Start slot, the speaker's Character
+attached as a chip in the prompt box (it carries his Voice), 720p, 8 seconds, one take.
+**Runner:** [`scripts/money-for-something/mfs-clip.mts`](../../../scripts/money-for-something/mfs-clip.mts);
+the prompt files are beside it in `video-prompts/`. Clips land in Jack's `...\money for something\videos`.
+
+**How the prompts are built** (`docs/google-flow/omni-flash.md`, the cinematography notes and a web pass):
+
+- **Motion only.** The plate already carries the room, the man and the light.
+- **The camera is locked.** A studio camera on a pedestal does not drift, and drift is the first
+  thing that reads as generated.
+- **He breathes and blinks**, written in, because a seated man with nothing else moving looks dead.
+- **One action after the line**, small.
+- **The line follows a colon and has no quotation marks.** A colon makes Omni speak it; quotation
+  marks burn it into the picture as a subtitle.
+- **The Character is not described.** His voice comes from the Character.
+- **Audio is named:** his voice and the room tone. No music.
+
+### The first three clips: the voice test
+
+| Clip | Plate | The line |
+| --- | --- | --- |
+| `s02-host-title-t1.mp4` | S2b | Money For Something. The quiz where the rules depend on who's asking. |
+| `s03-host-card-british-t1.mp4` | S3a | From Barnsley, a coal miner, killed at the Somme aged nineteen. |
+| `s04-host-who-paid-t1.mp4` | S2b | Lovely. And who paid for it? |
+
+**`s02-host-title`. Attach:** The Host. **Start frame:** the plate named in the table.
+
+```
+A locked-off shot from the same early-2000s television studio recording. The man breathes, blinks, tips his wine glass towards the lens and speaks straight to the lens. He says: Money For Something. The quiz where the rules depend on who's asking. He raises one eyebrow and takes a small sip. The sleeve in the foreground shifts slightly. Audio: his voice, close and dry, with the quiet room tone of a small television studio. No music.
+```
+
+**`s03-host-card-british`. Attach:** The Host. **Start frame:** the plate named in the table.
+
+```
+A locked-off shot from the same early-2000s television studio recording. The man breathes, blinks and reads aloud from the card in his hand. He says: From Barnsley, a coal miner, killed at the Somme aged nineteen. He lifts his eyes from the card to someone on the right of the frame and holds the look. Audio: his voice, close and dry, with the quiet room tone of a small television studio. No music.
+```
+
+**`s04-host-who-paid`. Attach:** The Host. **Start frame:** the plate named in the table.
+
+```
+A locked-off shot from the same early-2000s television studio recording. The man breathes, blinks and speaks to someone just to the right of the lens. He says: Lovely. And who paid for it? He waits with his eyebrows up, then slowly lowers his wine glass. The sleeve in the foreground stays still. Audio: his voice, close and dry, with the quiet room tone of a small television studio. No music.
+```
+
+**What came back (n=3, first time each, about 50 seconds a clip):**
+
+- **The words are right in all three** (transcribed by Gemini 3 Flash through the listen tool, not by a person).
+- **The voice held across the three clips**, by the same listener: same speaker, same timbre, pace
+  changing with the line. One machine listener, not Jack's ear.
+- 🔴 **The accent came back as southern English, not the soft Irish written into The Host's Voice**,
+  by that same listener. **Not checked:** whether the clip voice matches the Voice preview Jack
+  liked on the Character page. Jack has to hear it.
+- **A 4:3 plate becomes a 16:9 clip by cropping the top and bottom.** Nothing is stretched and no
+  bars are added. The frames still work, but headroom and the table edge are lost.
+- **Picture:** he speaks, blinks, sips and looks up on cue; the camera holds; the face holds.
+- 🔴 **Fault in `s04-host-who-paid`:** the small banknote on the twig turned into a large, readable
+  US dollar bill. The plate left the note vague and Omni finished it. Needs a re-roll with the note
+  pinned down, or a crop.
+- The voice is quiet (about -28 LUFS) with no room sound, so it will need levelling and a little
+  room tone in the edit.
+
+### Jack's rulings on the test clips, and the full run (4 October 2026)
+
+Jack: "okay so the money on the tree are dollars, please make them english pound sterling. Also
+remove any studio audiance laughter. the voice is fine."
+
+- ✅ **The voice is fine.** The accent question is closed by Jack's ear.
+- **Pounds:** every clip whose plate shows notes now carries "The banknotes on the tree are old
+  British pound notes and they hang still" (or, where the notes move, "The banknotes are old British
+  pound notes"). The plates themselves show vague pale notes; the dollars were Omni's finish.
+- **No audience:** the sound line is now "only his voice, close and dry, and the faint hum of an
+  empty studio. No music." Silent clips end "No music and no voices."
+- **Checked on the remade title clip (n=1):** no laughter, applause or music (machine listener), and
+  the notes read as pale British-style notes, not dollars. Omni added two notes to the tree.
+- **Frame shape:** Jack did not answer, so the 16:9 crop stands.
+
+**The run:** 35 clips, listed in [`scripts/money-for-something/clips.tsv`](../../../scripts/money-for-something/clips.tsv),
+one prompt file each in `video-prompts/`, written by `build-prompts.py` and run by `run-clips.sh`
+(skips what is on disk, four tries a clip). The three `-t1` test clips are kept in the same folder.
+Not made: a quiet wide for scene 8 (the host putting his glass down); there is no plate for it.
+
+**What came back, the full run (35 clips, n=1 each, about 50 seconds a clip, no retries needed):**
+
+- **Words:** every line is right (one machine listener, Gemini 3 Flash, on the joined audio). Two
+  small things: "Still with us" came out as a question, and the re-rolled "Ah. No money." was heard
+  as "No money."
+- **Notes:** checked at full size on six clips. They read as British notes with a portrait. No
+  dollars. **Fault:** the number of notes on the tree behind the host changes from clip to clip
+  (one to four), because Omni adds notes to the same plate.
+- **Laughter:** five clips of 35 still came back with laughter or applause, by the same listener:
+  the wide, the politician's silent nod, "Ah. No money", "Join us next time" and the empty room.
+  The three silent ones were muted with ffmpeg (`-c:v copy -an`). The two spoken ones were re-rolled
+  with "Nobody else is in the studio and nobody reacts" in front of the sound line, and both came
+  back clean. The sound line in `build-prompts.py` now carries that sentence for every spoken clip.
+  The five rejected takes are in `videos\rejected`.
+- **Picture:** faces and costumes hold in every clip and the camera stays put. In
+  `s09-06-host-minds-up` he leans back and the frame reads wider by the end. In the two standing
+  clips he has a wine glass in each hand for the first second.
+- **Not judged by a person:** any of it. Jack has heard only the first three test clips.
+
+## Premiere — the first cut (4 October 2026)
+
+Jack: "build the cut".
+
+**Project:** `C:\Users\jackt\OneDrive\Desktop\Youtube Vids\animation\money for something\money for something.prproj`
+**Sequence:** `MFS first cut`, 1280×720 @ 24, **204.83 s (3 min 25 s)**
+**Built:** 4 October 2026 by a session, through the bridge
+**Render:** `renders\MFS first cut-20261004-1318.mp4` (188 MB). Checked: no black frames; every line present and in order with none clipped (one machine listener on the render's audio); a 60-frame contact sheet read by eye.
+
+| Track | What |
+| --- | --- |
+| V1 | 60 clips: the room clips (bin `room-clips`) and the narrator-section pictures (bin `cut-footage`) |
+| V2 | 3 stills over the host's dubbing clip in scene 9 (160.79 to 166.17 s) |
+| A1 | The room clips' own sound, 33 clips |
+| A2 | 10 narrator lines (bin `narrator`), each placed whole |
+| Markers | 11, one per scene, naming what is missing |
+
+**How it was built (rebuild kit in `scripts/money-for-something/`):**
+
+1. `build-footage.py` renders each narrator-section picture as its own 1280×720 / 24 fps silent clip into
+   `clips\_cut\`: stills with a slow push-in, film excerpts cut and cropped to fill. Stills as clips means one
+   frame size on the timeline and no per-clip scaling.
+2. `build-edl.py` writes `edl.json`: every placement with its timeline start, source in-point and length, snapped
+   to 1/24 s. In and out points for the room clips came from `silencedetect` on each clip, then by hand.
+3. One `premiere_eval` per batch (3, 35, 35 placements): set the source in/out on the project item, overwrite on
+   the track, clear the in/out. Then one transaction for the markers.
+
+**Placeholders and gaps, all marked on the timeline:**
+
+- **Scene 1:** the May clip is two stills. The real BBC clip is not ruled.
+- **Scene 6 pictures are placeholders:** men resting after the Somme, a 1949 street and a 1931 unemployed march
+  stand in for men coming home, the homes poster and a 1920s dole queue. None found yet.
+- **Scene 7, the next war:** picture only (paratroops, from the US film `gov.fdr.25.2`). The narrator's new line
+  "Then another war. And the money was found. Obviously." is not rendered.
+- **Scene 8:** the narrator takes are the old three. The shortened first line and the two new lines are not
+  rendered, so the scene says "owed more than it ever had" and has no "bricks and nurses" or "debt shrank".
+- **Scene 9:** the three stills are placeholders for muted news clips, and two show real politicians. Kai's call.
+- **Scene 10:** the caption card is text over a darkened still, made in ffmpeg.
+
+**Needs a human:**
+
+- **Levels.** The narrator is several LU louder than the room voices (the room clips measure about -28 LUFS each;
+  the whole render is -16.5 LUFS integrated). Lift A1 or pull A2 down, and add room tone under the room clips.
+- **"Ah. No money."** plays as "No money."
+- The archive films sit pillarboxed inside their clips, because the conformed masters carry the bars.
+
+| Start (s) | Track | Clip | Source in (s) | Length (s) |
+| --- | --- | --- | --- | --- |
+| 0.00 | V1+A1 | `f01a-may-2017.mp4` | 0.00 | 3.00 |
+| 3.00 | V1+A1 | `f01b-may-2016.mp4` | 0.00 | 4.71 |
+| 3.21 | A2 | `line-s01-nice-try.wav` | 0.00 | 4.44 |
+| 7.71 | V1+A1 | `s02-00-wide.mp4` | 0.00 | 3.00 |
+| 10.71 | V1+A1 | `s02-01-host-title.mp4` | 0.58 | 5.42 |
+| 16.12 | V1+A1 | `s03-01-host-card-british.mp4` | 0.58 | 6.00 |
+| 22.12 | V1+A1 | `s03-02-british-silent.mp4` | 0.50 | 2.50 |
+| 24.62 | V1+A1 | `s03-03-host-card-german.mp4` | 0.00 | 5.42 |
+| 30.04 | V1+A1 | `s03-04-german-silent.mp4` | 0.29 | 2.71 |
+| 32.75 | V1+A1 | `s03-05-host-card-politician.mp4` | 0.00 | 4.00 |
+| 36.75 | V1+A1 | `s03-06-politician-silent.mp4` | 1.00 | 2.50 |
+| 39.25 | V1+A1 | `f04a-kitchener.mp4` | 0.00 | 2.21 |
+| 41.46 | V1+A1 | `f04b-britain-needs-you.mp4` | 0.00 | 1.58 |
+| 43.04 | V1+A1 | `f04c-somme-men-walking.mp4` | 0.00 | 2.58 |
+| 45.62 | V1+A1 | `f04d-trench.mp4` | 0.00 | 2.58 |
+| 39.46 | A2 | `line-s04-nineteen-fourteen.wav` | 0.00 | 8.64 |
+| 48.21 | V1+A1 | `s04-01-host-round-one.mp4` | 0.50 | 3.92 |
+| 52.12 | V1+A1 | `s04-02-british-duke.mp4` | 1.00 | 3.42 |
+| 55.54 | V1+A1 | `s04-03-german-bosnia.mp4` | 0.50 | 5.00 |
+| 60.54 | V1+A1 | `s04-04-british-france.mp4` | 0.58 | 2.42 |
+| 62.96 | V1+A1 | `s04-05-host-who-paid.mp4` | 0.00 | 2.79 |
+| 65.75 | V1+A1 | `s04-06-host-lives.mp4` | 0.79 | 3.50 |
+| 69.25 | V1+A1 | `s04-07-stare.mp4` | 0.50 | 5.00 |
+| 74.25 | V1+A1 | `s04-08-politician-watch.mp4` | 1.00 | 3.50 |
+| 77.75 | V1+A1 | `f05a-war-loan-poster.mp4` | 0.00 | 2.21 |
+| 79.96 | V1+A1 | `f05b-shells.mp4` | 0.00 | 2.21 |
+| 82.17 | V1+A1 | `f05c-shell-warehouse.mp4` | 0.00 | 2.29 |
+| 77.96 | A2 | `line-s05-nobody-asked-take3.wav` | 0.00 | 6.36 |
+| 84.46 | V1+A1 | `s05-01-host-afford.mp4` | 0.58 | 3.29 |
+| 87.75 | V1+A1 | `s05-02-politician-shake.mp4` | 0.00 | 5.00 |
+| 92.75 | V1+A1 | `f06a-PLACEHOLDER-somme-men-resting.mp4` | 0.00 | 3.00 |
+| 95.75 | V1+A1 | `f06b-PLACEHOLDER-1949-queue.mp4` | 0.00 | 2.71 |
+| 98.46 | V1+A1 | `f06c-PLACEHOLDER-1931-unemployed.mp4` | 0.00 | 2.92 |
+| 92.96 | A2 | `line-s06-despite-the-debt.wav` | 0.00 | 8.28 |
+| 101.38 | V1+A1 | `s06-01-host-homes.mp4` | 0.00 | 3.92 |
+| 105.29 | V1+A1 | `s06-02-politician-no-money.mp4` | 0.00 | 2.58 |
+| 107.88 | V1+A1 | `s06-03-british-some-on-it.mp4` | 1.58 | 1.92 |
+| 109.79 | V1+A1 | `s06-04-politician-spoken-for.mp4` | 2.58 | 2.42 |
+| 112.21 | V1+A1 | `s07-01-host-quickfire.mp4` | 0.50 | 4.29 |
+| 116.50 | V1+A1 | `s07-02-host-rules.mp4` | 0.00 | 7.29 |
+| 123.79 | V1+A1 | `f07a-berlin-bread-van-1923.mp4` | 0.00 | 2.00 |
+| 124.08 | A2 | `line-s07a-shake.wav` | 0.00 | 1.36 |
+| 125.79 | V1+A1 | `s07-03-german-wheelbarrows.mp4` | 1.21 | 4.21 |
+| 130.00 | V1+A1 | `f07b-london-unemployed-1931.mp4` | 0.00 | 2.00 |
+| 130.29 | A2 | `line-s07b-starve-take2.wav` | 0.00 | 1.52 |
+| 132.00 | V1+A1 | `f07c-next-war-paratroops.mp4` | 0.00 | 2.79 |
+| 134.79 | V1+A1 | `f08a-new-town-houses.mp4` | 0.00 | 3.00 |
+| 137.79 | V1+A1 | `f08b-guardsmen-building.mp4` | 0.00 | 2.58 |
+| 140.38 | V1+A1 | `f08c-houses-cartoon.mp4` | 0.00 | 3.00 |
+| 143.38 | V1+A1 | `f08d-new-town-roads.mp4` | 0.00 | 3.00 |
+| 146.38 | V1+A1 | `f08e-hospital-cartoon.mp4` | 0.00 | 3.00 |
+| 149.38 | V1+A1 | `f08f-repairing-housing.mp4` | 0.00 | 2.21 |
+| 151.58 | V1+A1 | `f08g-training.mp4` | 0.00 | 2.42 |
+| 135.00 | A2 | `line-s08a-nineteen-forty-eight.wav` | 0.00 | 7.84 |
+| 143.17 | A2 | `line-s08b-built-the-houses.wav` | 0.00 | 6.80 |
+| 150.33 | A2 | `line-s08c-done-once.wav` | 0.00 | 3.40 |
+| 154.00 | V1+A1 | `s08-01-plant.mp4` | 0.00 | 6.50 |
+| 160.50 | V1+A1 | `s09-01-host-dubs.mp4` | 0.42 | 5.92 |
+| 160.79 | V2 | `f09a-lehman-2008.mp4` | 0.00 | 2.42 |
+| 163.21 | V2 | `f09b-budget-2014.mp4` | 0.00 | 1.71 |
+| 164.92 | V2 | `f09c-press-conference-2020.mp4` | 0.00 | 1.25 |
+| 166.42 | V1+A1 | `s09-02-politician-catches.mp4` | 1.50 | 5.50 |
+| 171.92 | V1+A1 | `s09-03-british-what-build.mp4` | 0.00 | 4.21 |
+| 176.12 | V1+A1 | `s09-04-host-house-prices.mp4` | 1.29 | 2.29 |
+| 178.42 | V1+A1 | `s09-05-politician-pockets.mp4` | 2.50 | 3.00 |
+| 181.42 | V1+A1 | `s09-06-host-minds-up.mp4` | 0.92 | 2.92 |
+| 184.33 | V1+A1 | `f10a-may-2017.mp4` | 0.00 | 2.21 |
+| 184.58 | A2 | `line-s10-what-happened-next.wav` | 0.00 | 1.68 |
+| 186.54 | V1+A1 | `f10b-caption-dup.mp4` | 0.00 | 4.00 |
+| 190.54 | V1+A1 | `s09-05-politician-pockets.mp4` | 5.50 | 2.00 |
+| 192.54 | V1+A1 | `s10-01-soldiers-hands.mp4` | 2.00 | 4.00 |
+| 196.54 | V1+A1 | `s10-02-host-next-time.mp4` | 1.00 | 2.29 |
+| 198.83 | V1+A1 | `s10-03-empty-room.mp4` | 0.00 | 6.00 |
+
+## The re-cut — what was wrong with the first cut, and cut 3 (4 October 2026)
+
+Jack, after watching the first cut: "it needs the beginning for theresa may to say there is no magic money
+tree or the whole thing makes no sense, there is a lot of dead air where people are doing nothing, so trim the
+clips, it feels really disorganised and crazy, we need to fix a lot of it".
+
+**How it was looked at:** the render's contact sheet; a word-timed transcript of the render (faster-whisper,
+`medium.en`) with the gap before every line; word times for each of the 35 room clips; the re-cut method in
+`docs/cinematography/motion-and-cutting.md` §4; `docs/cinematography/on-screen-time.md`; and a web pass on
+dialogue pacing and on orientation in narrated films.
+
+**What was wrong, and what cut 3 does about it:**
+
+| Problem in the first cut | Cause | Fix in cut 3 |
+| --- | --- | --- |
+| The premise was missing | The film opened on a silent still of Theresa May. Her line was never heard or shown | A quote card opens the film: "There isn't a magic money tree." with who said it, to whom and when. **The real clip is still not in:** it is BBC footage and nobody has ruled on it. No voice was made to imitate her |
+| Dead air | Every room clip ran from before the first sound to well after the last; silent reaction shots ran 2.5 s, the stare 5 s, the plant 6.5 s | Every spoken clip now starts 0.15 s before its first sound and ends 0.25 s after its last word. Reactions run about 1.1 to 1.3 s, the stare 2.3 s, the plant 3.1 s. **204.8 s became 170.75 s with no line removed** |
+| A line was cut short | "Quick-fire. Shake, Starve or Plant" lost "or Plant": the trim was taken from a noisy silence reading | Out-points now come from the last word's end time |
+| No way to tell where you are | Rounds ran into each other; archive pictures had no date; the narrator spoke over the record before the host had asked anything | **Every round has one shape: a title card, the host asks, the record answers (archive and narrator), the room answers.** Seven cards: Round 1, 2, 3, Quick-fire, The star prize, Sound Off, Final scores. Every archive shot carries its year in one fixed slot, bottom left |
+| The pictures did not match each other | Posters sat on black, films sat inside black bars, seven shots ran in nineteen seconds of scene 8 | Every archive shot fills the frame. Scene 8 is four shots, real building work first |
+| Scene 9 flashed | Three stills cut in and out over one take of the host with dead air between his words | The take is cut into its three words. Each word plays over its own dated still: 2008, 2010, 2020 |
+| The voices jumped | The narrator was about 10 dB louder than the room, and the room had digital silence between lines | Each room clip's sound is lifted so its peak sits at -3 dB (`videos\leveled\L-*.mp4`); a looped room-tone bed lies under the whole film on A3 |
+| A silent hole in scene 7 | The narrator's new "next war" line is not recorded | The shot carries the line as its caption: "1939. AND THE MONEY WAS FOUND." |
+
+**From the research:** trim the pause, keep the breath (cutting every pause makes people sound like machines);
+a reaction earns its time only while it changes; on-screen text is for names, quotations and dates, and a date
+belongs in one place every time; a rough cut is judged on order and structure before polish.
+
+**Not fixed, and why:**
+
+- **The narrator's four missing or changed lines** (scene 7's third line, scene 8's first line and its two new
+  lines). The AI Studio speech page has changed since 3 October (it now opens on a new landing page with Gemini
+  3.8 Flash TTS), so the render script no longer drives it. Re-doing the voice on a different model could
+  change how he sounds, so this was left for a session with Jack listening.
+- **Scene 6's pictures** are still stand-ins, dated 1919 and 1921 so the round reads; the pictures themselves are
+  from 1916 and 1931.
+- **Scenes 1 and 9** still use stills of real politicians. Kai's call.
+- **"Ah. No money."** still plays as "No money."
+
+### Premiere — cut 3 (4 October 2026)
+
+**Sequence:** `MFS cut 3`, 1280×720 @ 24, **170.75 s (2 min 51 s)**. `MFS first cut` and `MFS cut 2` are left in the
+project; cut 2 is missing one clip ("make your minds up") and is superseded.
+**Render:** `renders\MFS cut 3-20261004-1349.mp4`. Checked: the only black frames are the seven title cards; every
+line is present, in order and whole (faster-whisper on the render's audio); a 70-frame contact sheet and six
+single frames read by eye; integrated loudness -15.7 LUFS.
+
+| Track | What |
+| --- | --- |
+| V1 | 67 clips: levelled room clips (bin `room-clips-leveled`), captioned archive and cards (bin `cut2-footage`) |
+| V2 | The three dated stills over the host's three words in scene 9 |
+| A1 | Room sound, levelled |
+| A2 | 10 narrator lines, placed whole |
+| A3 | `roomtone.wav`, the studio hum under the whole film |
+| Markers | 11, one per scene, naming what is missing |
+
+**Rebuild:** `scripts/money-for-something/build-cut2-media.py` (media), `build-edl3.py` (writes `edl3.json`), then
+the eval in `docs/premiere/api-notes.md` (2026-10-04), **ten placements at a time**.
+
+**Three things that went wrong while building it:**
+
+- A 38-placement eval froze Premiere ("Not Responding") and it restarted. The same work in batches of nine or ten
+  ran clean. The first 40-placement eval of the same session had run clean, so the limit is not a fixed number.
+- Durations written to four decimals (`1.2083`) landed one frame short and left fifteen one-frame black gaps in
+  cut 2. Cut 3 rounds to the frame and adds 2 ms before converting to ticks: no gaps.
+- Four archive film shots came out stretched and lost the start of their year caption. Their masters have
+  non-square pixels, the clips inherited it and Premiere honoured it. Re-rendered with square pixels (the `-b`
+  files).
+
+**Needs a human:**
+
+- Listen to it. The levels were set by peak, not by ear.
+- The four narrator lines (see "Not fixed" above).
+- A decision on the real Theresa May clip, and on the stills of real politicians in scene 9.
+
+| Start (s) | Track | Clip | Source in (s) | Length (s) |
+| --- | --- | --- | --- | --- |
+| 0.00 | V1+A1 | `g01-may-quote.mp4` | 0.00 | 3.58 |
+| 3.58 | V1+A1 | `g01-may-2016.mp4` | 0.00 | 4.71 |
+| 3.75 | A2 | `line-s01-nice-try.wav` | 0.00 | 4.46 |
+| 8.29 | V1+A1 | `L-s02-00-wide.mp4` | 0.21 | 1.58 |
+| 9.88 | V1+A1 | `L-s02-01-host-title.mp4` | 0.92 | 4.79 |
+| 14.67 | V1+A1 | `L-s03-01-host-card-british.mp4` | 0.83 | 5.42 |
+| 20.08 | V1+A1 | `L-s03-02-british-silent.mp4` | 0.58 | 1.08 |
+| 21.17 | V1+A1 | `L-s03-03-host-card-german.mp4` | 0.00 | 5.04 |
+| 26.21 | V1+A1 | `L-s03-04-german-silent.mp4` | 0.42 | 1.08 |
+| 27.29 | V1+A1 | `L-s03-05-host-card-politician.mp4` | 0.00 | 3.75 |
+| 31.04 | V1+A1 | `L-s03-06-politician-silent.mp4` | 1.21 | 1.29 |
+| 32.33 | V1+A1 | `c-r1.mp4` | 0.00 | 1.00 |
+| 33.33 | V1+A1 | `L-s04-01-host-round-one.mp4` | 0.79 | 3.33 |
+| 36.67 | V1+A1 | `g04a-kitchener.mp4` | 0.00 | 3.00 |
+| 39.67 | V1+A1 | `g04b-somme-men-walking.mp4` | 0.00 | 3.00 |
+| 42.67 | V1+A1 | `g04c-trench.mp4` | 0.00 | 3.00 |
+| 36.83 | A2 | `line-s04-nineteen-fourteen.wav` | 0.00 | 8.62 |
+| 45.67 | V1+A1 | `L-s04-02-british-duke.mp4` | 1.29 | 2.96 |
+| 48.62 | V1+A1 | `L-s04-03-german-bosnia.mp4` | 0.83 | 4.38 |
+| 53.00 | V1+A1 | `L-s04-04-british-france.mp4` | 0.96 | 1.79 |
+| 54.79 | V1+A1 | `L-s04-05-host-who-paid.mp4` | 0.00 | 2.92 |
+| 57.71 | V1+A1 | `L-s04-06-host-lives.mp4` | 1.92 | 1.71 |
+| 59.42 | V1+A1 | `L-s04-07-stare.mp4` | 0.50 | 2.29 |
+| 61.71 | V1+A1 | `L-s04-08-politician-watch.mp4` | 1.58 | 1.42 |
+| 63.12 | V1+A1 | `c-r2.mp4` | 0.00 | 1.00 |
+| 64.12 | V1+A1 | `L-s05-01-host-afford.mp4` | 0.88 | 2.96 |
+| 67.08 | V1+A1 | `g05a-war-loan-poster.mp4` | 0.00 | 2.21 |
+| 69.29 | V1+A1 | `g05b-shells.mp4` | 0.00 | 2.29 |
+| 71.58 | V1+A1 | `g05c-shell-warehouse.mp4` | 0.00 | 2.21 |
+| 67.25 | A2 | `line-s05-nobody-asked-take3.wav` | 0.00 | 6.38 |
+| 73.79 | V1+A1 | `L-s05-02-politician-shake.mp4` | 1.00 | 3.71 |
+| 77.50 | V1+A1 | `c-r3.mp4` | 0.00 | 1.00 |
+| 78.50 | V1+A1 | `L-s06-01-host-homes.mp4` | 0.25 | 3.29 |
+| 81.79 | V1+A1 | `g06a-PLACEHOLDER-men-resting.mp4` | 0.00 | 4.29 |
+| 86.08 | V1+A1 | `g06b-PLACEHOLDER-1931-unemployed.mp4` | 0.00 | 4.29 |
+| 81.96 | A2 | `line-s06-despite-the-debt.wav` | 0.00 | 8.29 |
+| 90.38 | V1+A1 | `L-s06-02-politician-no-money.mp4` | 0.00 | 2.21 |
+| 92.58 | V1+A1 | `L-s06-03-british-some-on-it.mp4` | 2.00 | 1.46 |
+| 94.04 | V1+A1 | `L-s06-04-politician-spoken-for.mp4` | 3.17 | 1.71 |
+| 95.75 | V1+A1 | `c-qf.mp4` | 0.00 | 1.00 |
+| 96.75 | V1+A1 | `L-s07-01-host-quickfire.mp4` | 0.79 | 5.21 |
+| 101.96 | V1+A1 | `L-s07-02-host-rules.mp4` | 0.00 | 6.96 |
+| 108.92 | V1+A1 | `g07a-berlin-1923.mp4` | 0.00 | 1.92 |
+| 109.17 | A2 | `line-s07a-shake.wav` | 0.00 | 1.38 |
+| 110.83 | V1+A1 | `L-s07-03-german-wheelbarrows.mp4` | 2.04 | 2.96 |
+| 113.79 | V1+A1 | `g07b-london-1931.mp4` | 0.00 | 2.00 |
+| 114.04 | A2 | `line-s07b-starve-take2.wav` | 0.00 | 1.50 |
+| 115.79 | V1+A1 | `g07c-1939-b.mp4` | 0.00 | 2.29 |
+| 118.08 | V1+A1 | `c-sp.mp4` | 0.00 | 1.00 |
+| 119.08 | V1+A1 | `g08a-guardsmen-building.mp4` | 0.00 | 4.58 |
+| 123.67 | V1+A1 | `g08b-new-town-houses-b.mp4` | 0.00 | 5.00 |
+| 128.67 | V1+A1 | `g08c-hospital-b.mp4` | 0.00 | 5.00 |
+| 133.67 | V1+A1 | `g08d-houses-b.mp4` | 0.00 | 4.58 |
+| 119.25 | A2 | `line-s08a-nineteen-forty-eight.wav` | 0.00 | 7.83 |
+| 127.42 | A2 | `line-s08b-built-the-houses.wav` | 0.00 | 6.79 |
+| 134.58 | A2 | `line-s08c-done-once.wav` | 0.00 | 3.42 |
+| 138.25 | V1+A1 | `L-s08-01-plant.mp4` | 0.50 | 3.08 |
+| 141.33 | V1+A1 | `c-so.mp4` | 0.00 | 1.00 |
+| 142.33 | V1+A1 | `L-s09-01-host-dubs.mp4` | 0.54 | 1.21 |
+| 142.33 | V2 | `g09a-2008.mp4` | 0.00 | 1.21 |
+| 143.54 | V1+A1 | `L-s09-01-host-dubs.mp4` | 3.08 | 1.21 |
+| 143.54 | V2 | `g09b-2010.mp4` | 0.00 | 1.21 |
+| 144.75 | V1+A1 | `L-s09-01-host-dubs.mp4` | 4.75 | 1.25 |
+| 144.75 | V2 | `g09c-2020.mp4` | 0.00 | 1.25 |
+| 146.00 | V1+A1 | `L-s09-02-politician-catches.mp4` | 2.58 | 2.79 |
+| 148.79 | V1+A1 | `L-s09-03-british-what-build.mp4` | 0.92 | 2.00 |
+| 150.79 | V1+A1 | `L-s09-04-host-house-prices.mp4` | 1.67 | 1.46 |
+| 152.25 | V1+A1 | `L-s09-05-politician-pockets.mp4` | 2.79 | 2.21 |
+| 154.46 | V1+A1 | `L-s09-06-host-minds-up.mp4` | 1.25 | 2.42 |
+| 156.88 | V1+A1 | `c-fs.mp4` | 0.00 | 1.00 |
+| 157.88 | V1+A1 | `g10a-may-2017.mp4` | 0.00 | 2.00 |
+| 158.04 | A2 | `line-s10-what-happened-next.wav` | 0.00 | 1.67 |
+| 159.88 | V1+A1 | `g10b-caption-dup.mp4` | 0.00 | 3.00 |
+| 162.88 | V1+A1 | `L-s09-05-politician-pockets.mp4` | 5.50 | 1.21 |
+| 164.08 | V1+A1 | `L-s10-01-soldiers-hands.mp4` | 2.50 | 2.00 |
+| 166.08 | V1+A1 | `L-s10-02-host-next-time.mp4` | 1.29 | 1.67 |
+| 167.75 | V1+A1 | `L-s10-03-empty-room.mp4` | 0.00 | 3.00 |
+| 0.00 | A3 | `roomtone.wav` | 0.00 | 170.75 |
 
 ## The cast and their voices in Flow (3 October 2026)
 
@@ -1039,14 +1655,94 @@ Voices: **N** narrator · **H** host · **BS** British soldier · **GS** German 
 | --- | --- | --- | --- | --- | --- |
 | 1 | 0:00 | Cold open | Theresa May, 2 June 2017: "There isn't a magic money tree." **N:** "Oh, sweet summer child. Let's ask someone who was there." (Kai's lines, 1 October) | None | The clip is a joke at the top, not the argument |
 | 2 | 0:10 | Titles | None | The roundtable from the clear-stage wide: brick, armchairs, the tree in its bucket. A cheap sting runs out of puff. **H**, close, wine in hand: "Money For Something. The quiz where the rules depend on who's asking." | We are told the game is rigged before it starts |
-| 3 | 0:22 | Meet the panel | None | Three singles. **BS:** "I was a miner. Then I was this." **GS:** "Also a miner. Different hat." **P:** "I served in an advisory capacity." | The two soldiers have the same job and the same mud. The third man has clean shoes |
-| 4 | 0:42 | Round 1: How did it start? | Recruiting posters, men marching off, then the trenches. **N:** "1914. Everyone was promised it would be over by Christmas. Nobody said which one." | **BS:** "We were told you started it." **GS:** "We were told you did." Both turn to the politician. **P:** "It's complicated." | Neither man who fought knows why. The man who knows will not say |
+| 3 | 0:22 | Meet the panel | None | **The host reads their cards** (Jack picked this 4 October: "this is way better"). **H**, on camera, introduces each like a contestant; cut to that man's silent face. **H:** "From Barnsley, a coal miner, killed at the Somme aged nineteen." **H:** "From Essen, a coal miner, killed two hundred yards away." **H:** "And from Westminster... still with us." The guests do not speak | The two cards match and nobody says so. The third man is the only one who did not go |
+| 4 | 0:42 | Round 1: How did it start? | Recruiting posters, men marching off, then the trenches. **N:** "Nineteen fourteen. Everyone was promised it would be over by Christmas, an insane time metric to use, given the context." (Jack's line, rendered) | **Rewritten 4 October to Jack's brief; see "Scene 4, changed" below.** **H:** "Round one. How did it start?" **BS:** "A duke got shot. I think." **GS:** "In Bosnia. By a Serb. So we invaded Belgium." **BS:** "And that's why I was in France." **H:** "Lovely. And who paid for it?" A beat. **H:** "Other than with your lives." (Jack's line) The two soldiers stare back at him, blank, the thousand-yard stare. The politician looks at his watch chain | Nobody who fought can say why. The money question lands on the two men who paid the other way, and it goes unanswered into round 2 |
 | 5 | 1:05 | Round 2: Can we afford it? | Shells, ships, the 1914 War Loan poster. **N** says how it was paid for: borrowed and printed, on a scale nobody had seen | **H:** "A war. Can we afford it?" **P** leans over and shakes the tree. Notes fall on the table. "Yes." | He is never asked how. The tree works when he shakes it |
-| 6 | 1:28 | Round 3: What happened next? | Men coming home. The promise on a poster. Then a queue. **N** reads the promise straight | **H:** "And the homes?" **P** lifts the bucket onto his lap, out of reach. "Ah. No money." The notes are still hanging on it | The same tree, in the same hands, is now empty. A note is stuck to the soldier's boot |
-| 7 | 1:50 | Quick-fire: Shake, Starve or Plant | Wheelbarrows of banknotes (1923). Dole queues (1930s). Flashes of the next war. **N** calls each one in a word: "Shake." "Starve." | **H**, on his feet, opens the round. **GS**, flat: "Oh god. Wheelbarrows again." (Kai's line) **BS** says nothing | Two ways to get it wrong, and both end in the same place |
-| 8 | 2:12 | The star prize: Plant | 1948: council houses going up, the NHS opening. **N**, played straight: more debt than the country had ever carried, and they built it anyway | The wide, silent. The host puts his glass down. **BS** picks a note off the floor and presses it into the soil in the bucket | No laugh. The only sincere scene. It was won once |
-| 9 | 2:32 | Sound Off | Muted clips at slapstick speed: 2008, austerity, Covid. No narrator | **H** on camera, dubbing the clips aloud for the room; his voice carries on over each clip. "Shake." "Starve." "Shake again." Then: "Won't you lot make your minds up." (Kai's line) **BS** has his head in his hands | Each clip is shorter than the last. The modern half says very little, on purpose |
+| 6 | 1:28 | Round 3: What happened next? | Men coming home. The promise on a poster. Then a queue. **N:** "Despite all the debt, they built some of the houses, then a committee of businessmen said the country couldn't afford the rest." | **H:** "And the ones who came back. The homes?" **P** lifts the bucket onto his lap, out of reach. "Ah. No money." **BS**, looking at the notes still on the tree: "There's some on it." **P:** "Those are spoken for." | The same tree, in the same hands, is now empty. The two dead men watch him refuse the men who outlived them |
+| 7 | 1:50 | Quick-fire: Shake, Starve or Plant | Wheelbarrows of banknotes (1923). Dole queues (1930s). The next war. **N:** "Shake." **N:** "Starve." **N:** "Then another war. And the money was found. Obviously." | **H**, on his feet: "Quick-fire. Shake, Starve or Plant." **H:** "Shake: print it and build nothing. Starve: spend nothing. Plant: build something." **GS**, flat, after the wheelbarrows: "Oh god. Wheelbarrows again." (Kai's line) **BS** says nothing | The three words get one meaning each. A war is none of them: for a war the money is simply found |
+| 8 | 2:12 | The star prize: Plant | 1948: council houses going up, the NHS opening. **N:** "Nineteen forty-eight. The country owed more than twice everything it made in a year." **N:** "And that was the year they built the houses and opened the hospitals, free, for everyone." **N:** "The money went into bricks and nurses. So when the bill came, the houses were still standing, with people in them." **N:** "The debt shrank for thirty years. Nobody paid it off. The country just grew bigger than what it owed." **N:** "It was done once. I watched them do it." | The wide, silent. The host puts his glass down. **BS** picks a note off the floor and presses it into the soil in the bucket | No laugh. The only sincere scene. The money went into things, and the things were still there |
+| 9 | 2:32 | Sound Off | Muted clips at slapstick speed: the 2008 bank rescue, austerity, 2020. No narrator | **H** on camera, dubbing each clip; his voice carries over the cut. "Shake." **P** shakes the tree and catches every note himself. **H:** "Starve." **H:** "Shake again." **BS:** "What did they build this time?" **H:** "House prices." The soldiers look at the politician. His pockets are full. **H:** "Won't you lot make your minds up." (Kai's line) | Same printing as 1948, but it bought prices and no houses. The notes end in his pockets |
 | 10 | 2:52 | Final scores | Back to May. **N:** "What happened next?" Caption: £1bn for the DUP, 24 days later | **P**'s pockets are stuffed with notes. The soldiers' hands are empty. **H:** "Join us next time." Then the room after the show: empty chairs, the tree, one note | He does not say whether there is a next time. Nothing is spelled out |
+
+### Scene 3, changed 4 October 2026
+
+The first draft had each guest introduce himself (**BS:** "I was a miner. Then I was this." **GS:**
+"Also a miner. Different hat." **P:** "I served in an advisory capacity."). Jack: "we need to change
+this part". The lines stated the point instead of letting it be seen. He picked the host reading
+contestant cards.
+
+**Not ruled:**
+
+- The towns (Barnsley, Essen), the age and "two hundred yards" are my inventions.
+- **"Killed" against scene 6.** If both soldiers died at the Somme, the men coming home in scene 6
+  are not them, and the note stuck to the soldier's boot needs another reading. Either the panel
+  are dead men (the show is from the future, so it can book them) or the cards say "sent to".
+- How the host's lines sit over the silent faces: on camera then cut, or his sound carrying over
+  the cut as in scene 9.
+
+### Scene 4, changed 4 October 2026
+
+The first draft: each soldier was told the other started it, and the politician said "It's
+complicated." Jack asked what the scene was for, then gave the brief: "i wanna include the money,
+how confusing ww1 is and how it started, when we say who paid for it, the host says other than with
+your lives, they blankly stare back at them with ptsd eyes."
+
+- ✅ **Jack accepted the scene as written, 4 October: "this is great".** That covers the lines
+  below marked as mine.
+- **Jack's:** the three ingredients, the host's "other than with your lives", and the stare.
+- **Mine, placeholders:** the soldiers' three lines and the host's two set-up lines. The politician
+  looking at his watch chain is mine too; he has no line, so "It's complicated" is gone.
+- **The facts in the soldiers' lines, from memory, not checked:** Archduke Franz Ferdinand of
+  Austria was shot in Sarajevo, in Bosnia, by Gavrilo Princip, a Bosnian Serb, on 28 June 1914;
+  Germany invaded Belgium; Britain declared war on Germany on 4 August 1914.
+- **"Other than with your lives" reads as both soldiers being dead men**, which matches scene 3's
+  "killed at the Somme". My inference, not a ruling. Scene 6 (men coming home, the note on the
+  soldier's boot) still assumes a survivor and needs changing if so.
+- **The narrator's line is unchanged**, so nothing needs re-rendering.
+- **One speaker per shot** makes this seven short talking shots plus the silent stare, against
+  three in the first draft. The scene will run longer than its 23 seconds.
+
+### Scene 5, 4 October 2026
+
+Shown to Jack with three possible changes (the shake as the answer to scene 4's question; keep it
+as a separate round; add a soldier picking up a note). Jack: "Thats fine". **Read as: scene 5 stays
+as written.** My reading, not a stated pick of any of the three.
+
+### Scenes 6 to 9, redrafted 4 October 2026
+
+Jack asked what scene 6 was for and gave his reading of the film: massive war debt, the NHS and the
+homes built anyway, and it worked "because if you print money for something that has value it works,
+unlike stocks and private equitys that just ruin everything and fuck the economy and boost asset
+prices." That is the Second World War (scene 8) and the years since 2008 (scene 9). Scene 6 stays as
+the refusal after the First World War, so that scene 8's "yes" has a "no" to stand against. Jack
+picked "keep scene 6, beef up 8 and 9", then "fix Shake", then said to save.
+
+- **All lines in scenes 6 to 9 are mine** unless marked Jack's or Kai's. Jack has read them in
+  session and said to save; he has not marked them up line by line.
+- **The soldiers are dead men** from scene 3 on, so scene 6 is now about "the ones who came back".
+  The note stuck to the soldier's boot is gone.
+- **"Shake" has one meaning now:** money printed with nothing built (1923, 2008, 2020). A war is
+  not a "Shake"; for a war the money is found, which is what the politician shaking the tree in
+  scene 5 shows. So the narrator's "And shake again, obviously" over the next war is replaced.
+- **Not ruled:** calling 2020 a "Shake". A lot of that money paid wages (furlough), which is not
+  "nothing built".
+- **To render for the narrator:** scene 7's third line (new), scene 8's first line (shortened),
+  and scene 8's two new lines.
+
+### The fact check, second pass — 4 October 2026 (web search, read not tested)
+
+| Claim | Verdict | What the sources say |
+| --- | --- | --- |
+| Scene 8: "The debt shrank for thirty years" | ✅ Holds | About 252% of GDP at the 1946 peak, below 50% by the 1970s ([Economics Help](https://www.economicshelp.org/blog/163755/economics/historical-uk-national-debt/)) |
+| Scene 8: "Nobody paid it off" | ✅ Holds | The debt in pounds rose over those years; the ratio fell because the economy grew faster ([Economics Help](https://www.economicshelp.org/blog/11697/debt/post-war-boom/)). The pound figures on that page look a factor of ten out, so quote no figure in pounds |
+| Scene 8: "The country just grew bigger than what it owed" | 🟡 Half the story | Growth, and also inflation and interest rates held low on purpose, which cost savers ([History of the British national debt](https://en.wikipedia.org/wiki/History_of_the_British_national_debt)) |
+| Scene 8: "built the houses" | ✅ Holds, figure rough | About 225,000 in the year to September 1948 ([Hansard, 14 July 1948](https://api.parliament.uk/historic-hansard/commons/1948/jul/14/housing), read through a search summary whose sums did not add up); over a million by 1951, about 800,000 of them council houses ([Red Brick](https://redbrickblog.co.uk/2020/11/building-the-new-jerusalem-how-attlees-government-built-1-million-new-homes/)) |
+| "Printed money built the NHS" (Jack's phrase, not in a line) | 🔴 Not supported | Paid for by wartime taxes kept high, borrowing at deliberately low rates, a $3.75bn American loan, a Canadian loan and Marshall Aid ([Anglo-American loan](https://en.wikipedia.org/wiki/Anglo-American_loan), [Hugh Dalton](https://en.wikipedia.org/wiki/Hugh_Dalton)). Say "found" or "spent", never "printed" |
+| Scene 9: "House prices" | ✅ Holds, read second-hand | The Bank of England's own analysis: house and share prices roughly a fifth to a quarter higher by 2014 than without its easing (quoted in [evidence to Parliament](https://committees.parliament.uk/writtenevidence/37938/pdf/); the figure was not read in [Staff Working Paper 720](https://www.bankofengland.co.uk/working-paper/2018/the-distributional-impact-of-monetary-policy-easing-in-the-uk-between-2008-and-2014) itself). The house-price effect came mainly through low interest rates; the asset purchases lifted shares and pensions more |
+| Scene 9: who gained | ✅ Holds | The Bank's 2012 paper concedes the rise in asset prices boosted wealth for those who already held assets ([Bank of England](https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2012/the-distributional-effects-of-asset-purchases.pdf)) |
+| Scene 7: 1923 as "Shake" | ✅ Holds | Germany printed money to pay striking workers during the Ruhr occupation ([Alpha History](https://alphahistory.com/weimarrepublic/1923-hyperinflation/)) |
+| Scene 7: the 1930s as "Starve" | ✅ Holds | In 1931 unemployment benefit was cut by 10% and the means test brought in ([May Report](https://en.wikipedia.org/wiki/May_Report)) |
+| Scene 7: the Second World War | 🟡 "Found", not "printed" | Paid for mostly by borrowing, tax and American aid |
 
 ### How scene 9 survives the split
 

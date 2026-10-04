@@ -25,7 +25,7 @@ for (const name of names) {
   await page.keyboard.type('@');
   await page.waitForSelector('[role=option]', { timeout: 15000 });
   await page.locator('input[aria-label="Search assets"]').fill(name);
-  await page.waitForTimeout(2500);
+  await page.waitForTimeout(6000);
   const ok = await page.evaluate(([name, fire]) => {
     const el = [...document.querySelectorAll('[role=option]')].find((r) => r.innerText.trim().startsWith(name));
     if (el) eval(fire)(el);
@@ -56,7 +56,7 @@ for (let i = 0; i < 60; i++) {
 }
 if (!changed) { console.log('NO NEW TILE (blocked or slow)'); await page.screenshot({ path: out + '-fail.png' }); }
 else {
-  await page.waitForTimeout(2500);
+  await page.waitForTimeout(6000);
   const b64 = await page.evaluate(async (src) => {
     const buf = new Uint8Array(await (await (await fetch(src)).blob()).arrayBuffer());
     let s = ''; for (const b of buf) s += String.fromCharCode(b);

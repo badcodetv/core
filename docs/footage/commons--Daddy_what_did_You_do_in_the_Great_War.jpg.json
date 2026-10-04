@@ -1,0 +1,99 @@
+{
+ "continue": {
+  "iistart": "2024-10-05T21:53:14Z",
+  "continue": "||"
+ },
+ "query": {
+  "pages": {
+   "153581605": {
+    "pageid": 153581605,
+    "ns": 6,
+    "title": "File:Daddy, what did You do in the Great War?.jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 20625663,
+      "width": 2958,
+      "height": 4483,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Daddy%2C_what_did_You_do_in_the_Great_War%3F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Daddy,_what_did_You_do_in_the_Great_War%3F.jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=153581605",
+      "sha1": "e33532b204d4a58a9fffab2c649d06cdd3de9636",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2024-10-05 22:01:26",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "Daddy, what did You do in the Great War?",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "Guilt (emotion)|Featured pictures on Wikipedia, English|UK Government artistic works|Information field template with formatting|Fathers and children in art|Parliamentary Recruiting Committee|Johnson, Riddle & Co Ltd|Adam Cuerden's restorations|Featured pictures of children|1915 posters of the United Kingdom|Featured pictures of World War I posters|World War I recruitment posters from the United Kingdom|Children in propaganda|Questions in art|Scanned with Epson GT-15000",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "featured",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "ImageDescription": {
+        "value": "First World War recruiting poster, playing on the guilt of those who did not volunteer.  By the <a href=\"https://en.wikipedia.org/wiki/Parliamentary_Recruiting_Committee\" class=\"extiw\" title=\"en:Parliamentary Recruiting Committee\">en:Parliamentary Recruiting Committee</a>. Height: 750 mm (29.5 in); width: 495 mm (19.4 in)",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "1915",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://aptlyrandom.files.wordpress.com/2013/11/posters-5.jpeg\">https://aptlyrandom.files.wordpress.com/2013/11/posters-5.jpeg</a>",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Savile_Lumley\" class=\"extiw\" title=\"w:en:Savile Lumley\"><span title=\"English illustrator and poster designer (1876-1960)\">Savile Lumley</span></a></bdi> / <bdi><a href=\"https://www.wikidata.org/wiki/Q123478983\" class=\"extiw\" title=\"d:Q123478983\"><span title=\"graphic artists and printers active in South London\">Johnson, Riddle &amp; Co. Ltd.</span></a></bdi> / <bdi><a href=\"https://en.wikipedia.org/wiki/User:Adam_Cuerden\" class=\"extiw\" title=\"en:User:Adam Cuerden\">Adam Cuerden</a></bdi>",
+        "source": "commons-desc-page"
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

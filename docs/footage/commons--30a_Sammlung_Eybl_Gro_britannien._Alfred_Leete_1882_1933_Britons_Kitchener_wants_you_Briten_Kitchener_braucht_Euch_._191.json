@@ -1,0 +1,109 @@
+{
+ "continue": {
+  "iistart": "2016-01-04T12:41:01Z",
+  "continue": "||"
+ },
+ "query": {
+  "pages": {
+   "43336500": {
+    "pageid": 43336500,
+    "ns": 6,
+    "title": "File:30a Sammlung Eybl Großbritannien. Alfred Leete (1882–1933) Britons (Kitchener) wants you (Briten Kitchener braucht Euch). 1914 (Nachdruck), 74 x 50 cm. (Slg.Nr. 552).jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 7918141,
+      "width": 5981,
+      "height": 8934,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/30a_Sammlung_Eybl_Gro%C3%9Fbritannien._Alfred_Leete_%281882%E2%80%931933%29_Britons_%28Kitchener%29_wants_you_%28Briten_Kitchener_braucht_Euch%29._1914_%28Nachdruck%29%2C_74_x_50_cm._%28Slg.Nr._552%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:30a_Sammlung_Eybl_Gro%C3%9Fbritannien._Alfred_Leete_(1882%E2%80%931933)_Britons_(Kitchener)_wants_you_(Briten_Kitchener_braucht_Euch)._1914_(Nachdruck),_74_x_50_cm._(Slg.Nr._552).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=43336500",
+      "sha1": "771c1564db8ab2ae5ab4a696aa8366b70c167dcb",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2024-02-11 08:49:40",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "30a Sammlung Eybl Großbritannien. Alfred Leete (1882–1933) Britons (Kitchener) wants you (Briten Kitchener braucht Euch). 1914 (Nachdruck), 74 x 50 cm. (Slg.Nr. 552)",
+        "source": "mediawiki-metadata"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "Alfred Leete|Lord Kitchener Wants You|PD-Art (PD-old-auto-expired)|UK Government artistic works|Information field template with formatting|PD-old-80-expired|Featured pictures on Wikipedia, Vietnamese|Featured images by Hubertl|CC-PD-Mark|Featured pictures of people of the United Kingdom|1914 posters of the United Kingdom|Featured pictures in the public domain|Featured pictures of World War I posters|Plakatmuseum Wien, Eybl Collection",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "quality|featured",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "ImageDescription": {
+        "value": "UK. Alfred Leete (1882-1933). Britons (Kitchener) wants you (British / Kitchener / needs you). 1914 (reprint), 74 x 50 cm. (Slg.Nr. 552). The title page of the \"London Opinion\" in 1914 for the first time printed images showing popular by its command posts in colonial wars War Minister Lord Kitchener. The advertising psychologically pioneering subject of fixing the viewer with the look in perspective enlarged outstretched forefinger was copied in several countries - the most successful in the United States and the Soviet Union.\n<div class=\"description ar\" dir=\"rtl\" lang=\"ar\"><span class=\"language ar\" title=\"Arabic\"><b>العربية: </b></span> مُلصق التجنيد الشهير خلال الحرب العالمية الأولى \"أيها البريطانيون: اللورد كيتشنر يطلبكم\"</div>",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "2009-08-03 07:10:04",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "Sammlung Eybl, Plakatmuseum Wien",
+        "source": "commons-desc-page"
+       },
+       "Artist": {
+        "value": "<p>A. Erhardt\n</p>",
+        "source": "commons-desc-page"
+       },
+       "Attribution": {
+        "value": "Eybl, Plakatmuseum Wien/Wikimedia Commons",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Permission": {
+        "value": "Sammlung Eybl, Plakatmuseum Wien",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

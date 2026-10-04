@@ -2156,3 +2156,28 @@ or describe the character. Hand it the accepted photograph and change only the m
 
 Output is **768×1376** at "Original size". A 1080×1920 short needs the 2K upscale or a ~1.4× post
 scale.
+
+## Sixth web pass — anti-slop and Nano Banana 2, 2026-10-04 `[vendor]` `[community]`
+
+Run for Money For Something's storyboard stills. **Nothing here overturns this file; it is a
+second, independent arrival at the same habits.**
+
+- `[vendor]` Google's guide: write the scene in full sentences, name subject, setting, light and
+  camera angle, **frame things positively** ("empty street", not "no cars"), and use photographic
+  terms for the camera. Nano Banana 2 is said to hold four to five characters and up to fourteen
+  reference objects, "name them all". `[untested]` past the four Characters we have held in a still.
+- `[community]` The slop guides name the same tells as the toolkit above: poreless skin, centred
+  and balanced framing, glossy orange-and-teal light, and "masterpiece / perfect lighting" words,
+  which ask for the idealised average. Their counters are ours: name the capture, give the light a
+  direction, ask for imperfection, put the subject off centre.
+- 🔴 **Still rejected:** "rule of thirds" as a prompt word (see the fifth web pass).
+- `[observed 2026-10-04, n=1]` The Money For Something look prompt (a named 2003 standard-definition
+  broadcast camera, one spotlight, a blurred foreground sleeve, a wet ring and crumbs on the table)
+  came back first time reading as broadcast video, with no skin or lighting counters in the prompt
+  at all. **The named capture did the anti-slop work.** Two asks were under-delivered in the same
+  still: "from the chest up" came back knee-up, and "fades to near black towards the right edge"
+  came back evenly lit, which fits the rule above that a strong reference hedges its own change-list.
+
+Sources: [Ultimate prompting guide for Nano Banana — Google Cloud](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana) `[vendor]` ·
+[How to make AI images look less like AI — Pixova](https://www.pixova.io/blog/how-to-make-ai-images-look-less-like-ai) `[community]` ·
+[Fix plastic skin in AI portraits — Oakgen](https://oakgen.ai/blog/fix-plastic-skin-ai-portraits) `[community]`

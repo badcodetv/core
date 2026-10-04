@@ -2,3 +2,7 @@ id	scene	md5_ok	master_bytes	filter	master_s	conform_s	conform_bytes	result	conf
 new_town_TNA	s08-plant	yes	580351604	setfield=prog	495.024000	495.000000	1804559245	OK	s08-plant/new_town_TNA.picture-only.mov
 your_very_good_health_TNA	s08-plant	yes	606527404	setfield=prog	517.104000	517.080000	1898815112	OK	s08-plant/your_very_good_health_TNA.picture-only.mov
 pop_goes_the_weasel_TNA	s08-plant	yes	679494460	setfield=prog	581.064000	581.040000	2074917947	OK	s08-plant/pop_goes_the_weasel_TNA.picture-only.mov
+DiaryForTimothy	s08-plant	yes	1481983410	setfield=prog	2239.039667	2239.080000	7594240499	OK	s08-plant/DiaryForTimothy.picture-only.mov
+what_a_life_TNA	s07-quick-fire	yes	784532356	setfield=prog	669.024000	669.000000	2400962689	OK	s07-quick-fire/what_a_life_TNA.picture-only.mov
+gov.fdr.25.2	s07-quick-fire	yes	360530997	yadif=1	789.322656	789.371917	2941469872	OK	s07-quick-fire/gov.fdr.25.2.picture-only.mov
+111-m-59-r3	s04-how-did-it-start	yes	198943585	setfield=prog	674.644292	674.540583	5278186667	OK	s04-how-did-it-start/111-m-59-r3.picture-only.mov

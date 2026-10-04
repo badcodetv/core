@@ -1,0 +1,104 @@
+{
+ "continue": {
+  "iistart": "2016-01-06T03:12:41Z",
+  "continue": "||"
+ },
+ "query": {
+  "pages": {
+   "46078073": {
+    "pageid": 46078073,
+    "ns": 6,
+    "title": "File:Women of Britain Say - \"Go\" - World War I British poster by the Parliamentary Recruiting Committee, art by E J Kealey (Restoration).jpg",
+    "imagerepository": "local",
+    "imageinfo": [
+     {
+      "size": 20117792,
+      "width": 4576,
+      "height": 6844,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Women_of_Britain_Say_-_%22Go%22_-_World_War_I_British_poster_by_the_Parliamentary_Recruiting_Committee%2C_art_by_E_J_Kealey_%28Restoration%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Women_of_Britain_Say_-_%22Go%22_-_World_War_I_British_poster_by_the_Parliamentary_Recruiting_Committee,_art_by_E_J_Kealey_(Restoration).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=46078073",
+      "sha1": "9c3b0d91cc01810f4b407b9fafb30fcae02e8608",
+      "extmetadata": {
+       "DateTime": {
+        "value": "2016-01-06 03:43:58",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+       },
+       "ObjectName": {
+        "value": "<div class=\"fn\">\n<div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i>Women of Britain Say 'Go!' <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"https://www.wikidata.org/wiki/Q116701536#P1476\" title=\"Edit this at Wikidata\"><img alt=\"Edit this at Wikidata\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span></i></div></div><div style=\"display: none;\">title QS:P1476,en:\"Women of Britain Say 'Go!' <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"https://www.wikidata.org/wiki/Q116701536#P1476\" title=\"Edit this at Wikidata\"><img alt=\"Edit this at Wikidata\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>\"</div><div style=\"display: none;\">label QS:Len,\"Women of Britain Say 'Go!' <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"https://www.wikidata.org/wiki/Q116701536#P1476\" title=\"Edit this at Wikidata\"><img alt=\"Edit this at Wikidata\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>\"</div><div style=\"display: none;\">label QS:Les,\"Women of Britain Say 'Go!'\"</div></div>",
+        "source": "commons-desc-page"
+       },
+       "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+       },
+       "Categories": {
+        "value": "Propaganda posters|Featured pictures on Wikipedia, English|Artworks with Wikidata item|Artworks with known accession number|UK Government artistic works|Parliamentary Recruiting Committee|Hill, Siffken & Co|Artworks with accession number from Wikidata|Artworks with Wikidata item missing author|Artworks with Wikidata item missing genre|1915 posters of the United Kingdom|Files with Assessments template missing SDC Commons no value quality assessment|World War I recruitment posters from the United Kingdom",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+       },
+       "Artist": {
+        "value": "<bdi><a href=\"https://www.wikidata.org/wiki/Q123479682\" class=\"extiw\" title=\"d:Q123479682\"><span title=\"artist\">Edgar James Kealey</span></a></bdi> / <bdi><a href=\"https://www.wikidata.org/wiki/Q123479706\" class=\"extiw\" title=\"d:Q123479706\">Hill, Siffken &amp; Co.</a></bdi>",
+        "source": "commons-desc-page"
+       },
+       "ImageDescription": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"http://collections.tepapa.govt.nz/Object/958810\">Poster, ’Women of Britain say - \"Go!\" ’, May 1915</a>, United Kingdom, poster No. 75 by Parliamentary Recruiting Committee, Hill, Siffken &amp; Co. (L.P.A. Ltd.), E J Kealey. Gift of Department of Defence, 1919. Te Papa (GH016292)\n<p>\nRestored by <a href=\"//commons.wikimedia.org/wiki/User:Adam_Cuerden\" title=\"User:Adam Cuerden\">Adam Cuerden</a>. Notes: Cleanup of scratches, stains, and a few minor printing blobs; fixed minor distortion from true rectangle (~10 px or so) likely from paper not being flat; levels adjusted, paper border selectively lightened slightly.</p>",
+        "source": "commons-desc-page"
+       },
+       "DateTimeOriginal": {
+        "value": "May 1915<div style=\"display: none;\">date QS:P571,+1915-05-00T00:00:00Z/10</div>",
+        "source": "commons-desc-page"
+       },
+       "Credit": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"http://collections.tepapa.govt.nz/Object/958810\">Te Papa Tongarewa (The Museum of New Zealand)</a>",
+        "source": "commons-desc-page"
+       },
+       "Permission": {
+        "value": "See below. Note <a rel=\"nofollow\" class=\"external text\" href=\"http://collections.tepapa.govt.nz/Object/958810/download\">the Museum explicitly does not claim copyright.</a>",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "LicenseShortName": {
+        "value": "Public domain",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "UsageTerms": {
+        "value": "Public domain",
+        "source": "commons-desc-page"
+       },
+       "AttributionRequired": {
+        "value": "false",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Copyrighted": {
+        "value": "False",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+       },
+       "License": {
+        "value": "pd",
+        "source": "commons-templates",
+        "hidden": ""
+       }
+      },
+      "mime": "image/jpeg"
+     }
+    ]
+   }
+  }
+ }
+}

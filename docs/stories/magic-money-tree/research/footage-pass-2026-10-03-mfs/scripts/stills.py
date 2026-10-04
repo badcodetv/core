@@ -58,6 +58,7 @@ def resolve(spec):
     for h in hits:
         if tail in h.lower(): return h
     return hits[0] if hits and len(hits)==1 else None
+time.sleep(int(os.environ.get('START_DELAY','0')))
 rows=[('scene','file','result','pixels','bytes','licence','artist','sha1_ok','commons_title')]
 for scene,spec in ITEMS:
     title=resolve(spec); time.sleep(2)
@@ -76,6 +77,7 @@ for scene,spec in ITEMS:
     os.makedirs(f'{CLIPS}/{scene}',exist_ok=True); dest=f'{CLIPS}/{scene}/{name}'
     ok='no'
     if os.path.exists(dest) and hashlib.sha1(open(dest,'rb').read()).hexdigest()==i.get('sha1'): ok='yes'
+    had=ok=='yes'
     for attempt in range(0 if ok=='yes' else 4):
         try:
             with urllib.request.urlopen(urllib.request.Request(i['url'],headers=UA),timeout=120) as r: data=r.read()
@@ -83,8 +85,12 @@ for scene,spec in ITEMS:
                 open(dest,'wb').write(data); ok='yes'; break
         except Exception as ex:
             print('retry',name,repr(ex)[:120],flush=True)
+            # upload.wikimedia.org answers 429 with Retry-After: 600. Retrying sooner only extends the block.
+            if getattr(ex,'code',None)==429:
+                time.sleep(int(ex.headers.get('Retry-After') or 600)+30); continue
         time.sleep(10*(attempt+1))
+    fetched=ok=='yes' and not had
     rows.append((scene,name,'OK' if ok=='yes' else 'FAILED',f"{i['width']}x{i['height']}",str(i.get('size','')),lic,artist,ok,title))
-    time.sleep(3)
+    time.sleep(20 if fetched else 1)
 open(f'{HERE}/'+(os.path.basename(sys.argv[1])+'.status.tsv' if len(sys.argv)>1 else 'stills-status.tsv'),'w').write('\n'.join('\t'.join(r) for r in rows)+'\n')
 print('\n'.join('\t'.join(r[:8]) for r in rows))

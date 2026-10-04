@@ -2412,3 +2412,49 @@ Read for Money For Something (a panel show, so mouths are on screen). **Nothing 
   (Achernar … Zubenelgenubi), each with a gender, a trait and a pitch. A written performance makes a named custom
   voice. Mechanics: `docs/flow/automation-2026-09-rebuild.md` items 37 to 41. Whether a name sounds the same in Flow
   and in AI Studio is not tested.
+
+## Web pass and first dialogue clips — 2026-10-04 `[vendor]` `[community]` `[observed]`
+
+Run for Money For Something, the first show of ours with people talking on camera.
+
+- `[community]` The 2026 slop lists for video name the same tells as this file: floaty camera drift
+  when no camera is stated, faces morphing past a few seconds, blinking that is absent or too
+  regular, and stacked actions. Counters: state what the camera is locked on, one or two motion
+  ideas at most, short clips, gentle motion.
+- `[vendor via community]` Omni's prompt shape is subject, action, setting, camera, light, style,
+  **then audio**; an undescribed soundtrack is left to chance. References are addressed by role
+  ("keep the character from the image").
+- 🔑 `[observed 2026-10-04, n=3]` **A Flow Character attaches as a chip in Frames mode**, alongside a
+  Start frame. Flow accepted it and the three clips rendered in about 50 seconds each
+  (Omni 1.1 Flash, 720p, 8s, x1).
+- 🔑 `[observed, n=3]` **`He says:` followed by the line with no quotation marks gave the exact words,
+  lip-synced, with no subtitle**, three times out of three. This is the speech-punctuation rule above
+  used on purpose.
+- 🔑 `[observed, n=3, one machine listener]` **The voice was the same speaker across three clips.**
+  Judged by Gemini 3 Flash on the joined audio, not by a person.
+- 🔴 `[observed, n=3, same listener]` **The accent did not match the Character's custom Voice.** The
+  Voice is written as a soft Irish accent; all three clips were heard as southern English. Either a
+  Character's Voice is not applied in Frames mode, or the performance text does not carry an accent,
+  or the listener is wrong. **Not resolved.** The test that would settle it: the same line on
+  Ingredients with the same Character, and a person's ear on both.
+- 🔴 `[observed, n=1]` **A vague small banknote in the plate became a large readable US dollar bill**
+  in one clip of three from the same plate. This is the plate-sealing rule: what the plate leaves
+  unresolved, the engine finishes.
+- `[observed, n=3]` **A 4:3 Start frame is centre-cropped to 16:9**, top and bottom. No bars, no
+  stretch, no outpainting.
+
+Sources: [Mastering Gemini Omni Flash — Pillitteri](https://pasqualepillitteri.it/en/news/3513/mastering-gemini-omni-flash-video-prompting-guide) `[community]` ·
+[Gemini Omni Flash guide — invideo](https://invideo.io/blog/gemini-omni-flash-guide/) `[community]` ·
+[AI slop: 12 tells — OpusClip](https://www.opus.pro/blog/ai-slop-aesthetic-12-tells) `[community]`
+- 🔑 `[observed 2026-10-04, n=35]` **A studio-show plate summons a studio audience.** With the sound
+  written as "only his voice ... and the faint hum of an empty studio. No music", 5 clips of 35 still
+  came back with laughter or applause (machine listener): a wide of the whole panel, a pleased nod,
+  a punchline, a sign-off ("Join us next time") and an empty set. **Putting "Nobody else is in the
+  studio and nobody reacts" before the sound line cleared both spoken clips on the re-roll (n=2).**
+  A silent clip is cheaper to fix by dropping its audio track.
+- `[observed, n=35]` **Naming the currency in the clip prompt held:** "The banknotes on the tree are
+  old British pound notes and they hang still" gave British-looking notes on every clip checked (6
+  at full size). It did not hold their **number**: the same plate came back with one to four notes.
+- `[observed, n=35]` **35 Frames clips with a Character chip ran back to back with no "unusual
+  activity" card and no retry**, about 50 seconds each.
+

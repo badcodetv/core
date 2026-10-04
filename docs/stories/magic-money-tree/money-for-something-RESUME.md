@@ -1,6 +1,6 @@
 # RESUME HERE — Money For Something (the game-show telling of Magic Money Tree)
 
-**Last worked 3 October 2026 (evening), by Jack.** Everything is in
+**Last worked 4 October 2026, by Jack.** Everything is in
 [`money-for-something.md`](./money-for-something.md); this page says where it stands and what is next.
 **Kai has not seen any of it, and it is not ruled as the film.** It sits beside the 1 October
 direction ([`direction-2026-10-01.md`](./direction-2026-10-01.md)), not over it.
@@ -15,14 +15,15 @@ direction ([`direction-2026-10-01.md`](./direction-2026-10-01.md)), not over it.
 | The cast | ✅ Four Flow Characters, each with a Portrait, a Body and a custom Voice | "The cast and their voices in Flow", "Character sheets, second pass" |
 | The voices | ✅ Jack: "I like the voices" | Same |
 | Who speaks where | ✅ Jack ruled "split the roles": the narrator (Google AI Studio) over real clips, the host and guests on camera only (Flow) | Same |
-| The storyboard | 🟡 v2 written: ten scenes, about three minutes, the tree as the game. Not marked up by Jack | "Storyboard v2" |
+| The storyboard | 🟡 v2 reworked with Jack on 4 October: scenes 3 and 4 accepted, scene 5 kept, scenes 6 to 9 redrafted and saved on his say. Scenes 1, 2 and 10 not discussed | "Storyboard v2", and the "changed 4 October" notes under it |
 | The narrator's voice | ✅ Jack picked Zubenelgenubi with the British (Brixton) accent setting, AI Studio, nothing else in the boxes | "The narrator's voice" |
-| The room reference v2 | 🟡 One candidate with the four updated Characters, in Flow only. Jack has not ruled | "Room reference v2" |
+| The room reference v2 | ✅ Jack picked it 4 October: [`characters/roundtable-clear-stage-reference-v2.jpg`](./characters/roundtable-clear-stage-reference-v2.jpg), in Flow as `mfsroomrefv2.jpg`. Use this one, not `mfsclearstageref.jpg` | "Room reference v2" |
 | The narrator's lines | 🟡 Draft 2 with Jack's edits; all eleven lines rendered and in the narrator folder. Jack accepted scene 5 take 3; the rest are not ruled | "The narrator's lines", "First takes" |
 | The narrator's facts | 🟡 Checked: scene 10 holds; scene 8 and scene 6 each have one loose phrase | "The fact check" |
-| The Premiere project | 🟡 Open, no sequence yet. Three bins: `narrator` (13 line takes), `s07-quick-fire` (12 stills), `s08-plant` (3 films) | "Premiere and the real footage" below |
-| The real footage | 🟡 Scenes 7 and 8 part pulled; scenes 4 and 5 found, not yet on disk; scene 6 not found; scenes 1, 9, 10 stills queued | Same |
-| Script for the room, video clips | ⬜ Not started | |
+| The Premiere project | 🟡 4 October: **`MFS cut 3`** is the current cut (2 min 51 s), rendered to `renders\\MFS cut 3-20261004-1349.mp4`. Built after Jack called the first cut disorganised with dead air and no May line. Jack has not watched cut 3. Open: four narrator lines to render, scene 6 pictures, the real May clip | "The re-cut" and "Premiere — cut 3" in `money-for-something.md` |
+| The real footage | 🟡 4 October: all seven films and all 42 Commons stills are on disk and in Premiere, in bins named for their scene (`s01`, `s04`, `s05`, `s07`, `s08`, `s09`). Still to do: scene 6 and the scene 5 ships (not found), and the rows in `footage.md` | Same |
+| The storyboard stills | ✅ Round 10, 4 October: all 13 plates made (S2b, S3a, S3b v2, S3c, S3d v2, S4a, S5a, S6a, S7a, S8a, S9b, S10a, S10b), in Flow only. Jack has seen scene 2 and 3; not ruled on the rest. S10a (empty hands) is weak | "Round 10" |
+| Video clips | ✅ Round 11, 4 October: all 35 room clips made (Omni 1.1 Flash, Frames, 720p, 8s) in Jack's `videos` folder and in Premiere bin `room-clips`. Jack ruled: voice fine, notes must be pounds, no audience laughter; all three applied. He has not watched the full set. Kit: `scripts/money-for-something/` (`build-prompts.py`, `run-clips.sh`, `mfs-clip.mts`) | "Round 11" |
 
 **Flow:** project `cb27208c-4b16-426d-9144-c394f2735c15` ("mmt jack"), Jack's account.
 Stills on Nano Banana 2, 4:3 for the room, 3:4 for character sheets.
@@ -82,19 +83,21 @@ Both scripts skip what is already done, so re-running them is the way to resume.
   search result only; the per-file receipts land in `docs/footage/` when they are fetched.
 - Real, identifiable people in scenes 1, 9 and 10 (May, Osborne) are Kai's call whatever the licence.
 
-**Next on this, in order:** check `pull-status.tsv` and the two stills status files; re-run both
-scripts if anything is missing; import the rest into bins named for their scene; find scene 6 and
-the ships; then write the footage rows into `footage.md`.
+**Done 4 October:** both scripts re-run to the end and everything imported. `stills.py` now waits out
+Wikimedia's `Retry-After: 600` and leaves 20 seconds between downloads; retrying sooner is what kept
+the block alive. **Next on this:** find scene 6 and the ships; then write the footage rows into
+`footage.md`. Not looked at: a few damaged-frame warnings in `pull.log` from one of the MPEG masters.
 
 ## Waiting on Jack
 
 1. **Mark up storyboard v2:** which scenes, lines and gags stay.
+   Scene 3 is done (4 October): the host reads their cards. Open on it: are the soldiers dead men
+   ("killed at the Somme") or survivors, which scene 6 assumes.
 2. **Two costume calls made without a ruling:** the Politician is now a 1916 minister (the
    clergyman's collar is gone), and the British Soldier is now a private (he was dressed as an
    officer).
 3. **Scene 9 (Sound Off):** the host dubs the clips on camera and his sound carries over the cut.
-4. **The new room picture:** is room reference v2 the reference now? It is the newest 4:3 still in
-   the Flow project.
+4. ~~The new room picture~~ **Ruled 4 October: v2 is the room reference.**
 5. **Two narrator lines the fact check loosened:** scene 8 "owed more than it ever had" (the peak
    was 1946/47) and scene 6 "a committee of businessmen" (the Cabinet capped the houses first, in
    July 1921). Keep them, or change the words and re-render.
@@ -103,9 +106,8 @@ the ships; then write the footage rows into `footage.md`.
 
 ## Next moves, in order
 
-1. **Room reference v2 is made and waits on Jack.** If he takes it, save it to `characters/`,
-   upload it to Flow under a new name and use it from then on. Every still from rounds 8 and 9
-   shows the old collar and the officer's tunic.
+1. ~~Room reference v2~~ **Done 4 October:** picked, saved to `characters/` and in Flow as
+   `mfsroomrefv2.jpg`. Every still from rounds 8 and 9 shows the old collar and the officer's tunic.
 2. **The first talking test clip (start here):** the host, one short line, Omni Flash, his Character and Voice
    attached. Then two more with the same voice, to hear whether it holds from clip to clip. Nobody
    has tested that, here or in anything found online.
