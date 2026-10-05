@@ -2181,3 +2181,24 @@ second, independent arrival at the same habits.**
 Sources: [Ultimate prompting guide for Nano Banana — Google Cloud](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana) `[vendor]` ·
 [How to make AI images look less like AI — Pixova](https://www.pixova.io/blog/how-to-make-ai-images-look-less-like-ai) `[community]` ·
 [Fix plastic skin in AI portraits — Oakgen](https://oakgen.ai/blog/fix-plastic-skin-ai-portraits) `[community]`
+
+## Three observations from Money For Something round 12 — 2026-10-05 `[observed]`
+
+Thirteen stills, Nano Banana 2, 4:3, one candidate each, Jack's project `cb27208c`. Prompts and
+results: `docs/stories/magic-money-tree/money-for-something-storyboard-v3.md`, round 12.
+
+- `[observed, n=1 each way]` **Two Characters plus a room reference that shows the same cast: one
+  Character took the reference's clothes.** The German Soldier came back in the British soldier's
+  khaki. The next prompt added "Each has the face and the clothes of his own Character, not the
+  clothes of the men in the reference image" and he came back in his own uniform. That sentence had
+  also been in the four-Character room prompt of 3 October. One pair, so not established.
+- `[observed, n=2]` **"The frame is very slightly off level" on a wide shot with no reference image
+  returned a rotated picture inside black wedges** (strong on a marina shot, a thin edge on a
+  warehouse shot). The same words on eleven close shots made with a room reference gave no borders.
+  Dropping the words and adding "the picture is level and fills the whole frame to all four edges"
+  gave a clean frame, n=1.
+- `[observed, n=1 each way]` **A size in metres was ignored; a size by comparison was not.** "About
+  forty metres long" gave a small yacht. "As long as a row of eight parked cars" gave a large one.
+- `[untested]` "Nothing is retouched or smoothed" was added to every capture line. No prompt was
+  run without it, so it has no measured effect.
+

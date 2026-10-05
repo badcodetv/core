@@ -5,6 +5,32 @@
 **Kai has not seen any of it, and it is not ruled as the film.** It sits beside the 1 October
 direction ([`direction-2026-10-01.md`](./direction-2026-10-01.md)), not over it.
 
+> **📝 Jack's notes for the next pass (4 October):**
+> [`money-for-something-notes-2026-10-04.md`](./money-for-something-notes-2026-10-04.md) —
+> sparse found footage, more game-show graphics and games, more jokes and arguments, a title
+> screen, meme adverts. Saved word for word; **not yet worked into anything.** Read them first.
+
+> **🧪 Storyboard v3, "on steroids" (5 October): a side branch.**
+> [`money-for-something-storyboard-v3.md`](./money-for-something-storyboard-v3.md) works those
+> notes into the show. **Storyboard v2, the 35 clips and `MFS cut 3` are untouched.**
+> Jack ruled 5 October: keep Round 1 (Russia, the daydream), The Price Is War, the two arguments,
+> Quote, Unquote, advert two and Sound Off; drop the titles, the monologue and advert one.
+> "Crypto billionaires", "fascists" stays over Farage alone, the yacht stays.
+> **Made 5 October:** 11 stills (3 remade on Jack's say), 32 clips in `videos\v3`, 18 graphics in
+> `clips\_v3`, and the Premiere sequence **`MFS v3 assembly`** (3 min 29 s, the seven kept scenes only),
+> rendered to `renders\MFS v3 assembly-20261005-1212.mp4`. Kits: `build-prompts-v3.py`,
+> `run-clips-v3.sh`, `build-v3-graphics.py`, `build-edl-v3.py` in `scripts/money-for-something/`.
+> Kai has seen none of it. His calls: naming Michelle Mone, and Farage's official portrait (CC BY,
+> credit owed) under the "fascists" joke.
+> **Jack watched it and said people talk and move too fast.** So there is a second sequence,
+> **`MFS v3 assembly slow`** (3 min 40 s): 14 v3 clips slowed to 80–93% with the pitch kept, rendered to
+> `renders\MFS v3 assembly slow-20261005-1318.mp4`. The first assembly is kept beside it.
+> **Then Jack said the May quote must open it and the clips were in the wrong order.** The current cut is
+> **`MFS v3 full`** (5 min): cut 3's whole film with the v3 scenes inside it, opening on the May quote card,
+> rendered to `renders\MFS v3 full-20261005-1335.mp4`. What was wrong and what moved is in the v3 file under
+> "`MFS v3 full`". **Next:** Jack watches it. Open: the real May clip (BBC, not ruled), and remaking the four
+> longest lines as two clips each.
+
 ## Where it stands
 
 | Piece | State | Where |

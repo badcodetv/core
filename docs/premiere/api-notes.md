@@ -1742,3 +1742,29 @@ A frame 0.33s into an Opacity 0→100 fade exported with **full-brightness RGB a
 - `helpers.resolveProjectItem` threw `Cannot read properties of null (reading 'name')` once, mid-batch, on an
   item that resolved normally on the next call. Not explained. Wrap the resolve in the try and collect failures.
 
+
+## 2026-10-05: the Money For Something v3 assembly (89 placements, nine evals)
+
+- ✅ **Nine evals of nine or ten placements, three transactions each, ran clean with no failures**, on a new
+  sequence made with `premiere_create_sequence({ fromItems: [first card] })`. That call lays the item down
+  whole; the first overwrite then trims it (`changed.modified` showed 1.208 s become 1.0 s).
+- ✅ **Each eval checked `seq.name` before writing** and would have returned without editing had a human
+  clicked another timeline tab. Worth keeping in any multi-eval build (law 8).
+- **The first typed tool call after a run of evals returns everything the evals changed** in `changed`:
+  one `premiere_add_marker` came back with forty clips listed. It is correct, and large. Later calls
+  returned an empty `changed`.
+- ✅ `premiere_export_sequence` rendered 209 s of 1280×720 in one call with no timeout.
+- 🔴 **Same day, third build (`MFS v3 full`): Premiere crashed and recovered after four evals of FOURTEEN
+  placements.** The fifth eval timed out at 180 s; the panel reported "disconnected mid-command"; a minute
+  later Premiere was running again with the project open, a different sequence active, and the new
+  sequence cut back to where the recovery file had it (about twenty placements lost, though their evals
+  had returned `done: 14`). Memory read 7.2 GB just after. Three sequences of 90 to 120 clips had been
+  built in the same sitting. **What then ran clean: ten to twelve placements an eval, with
+  `await project.save()` as the last line of each.** `project.save()` works from eval and returns true.
+  Check the clip counts with `premiere_get_sequence` before rendering; an eval's own `done` count is not
+  proof the work survived.
+- `ppro.Markers.getMarkers(seq)` then `markers.createAddMarkerAction(name, 'Comment', startTick, durationTick, '')`
+  in a transaction adds a marker from eval (19 added this way), which avoids the large `changed` reply.
+- The panel cannot read a plan from disk or over HTTP: `require('fs').readFileSync` on a Windows path gave
+  "Route not found", and `fetch('http://localhost:…')` gave "Permission denied … Manifest entry not found".
+  The plan has to be passed inline.

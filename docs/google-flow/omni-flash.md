@@ -2458,3 +2458,36 @@ Sources: [Mastering Gemini Omni Flash — Pillitteri](https://pasqualepillitteri
 - `[observed, n=35]` **35 Frames clips with a Character chip ran back to back with no "unusual
   activity" card and no retry**, about 50 seconds each.
 
+
+## Money For Something v3 clips — 2026-10-05 `[observed]`
+
+32 clips, 44 generations, Omni 1.1 Flash, Frames, 720p, 8 s, x1, Jack's project `cb27208c`. Prompts and
+results: `docs/stories/magic-money-tree/money-for-something-storyboard-v3.md`, round 13. Sound judged
+by one machine listener (Gemini 3 Flash); no person has listened.
+
+- 🔴 `[observed, n=4 then n=1]` **A man in a period suit speaking a line about an ally, and a whispered
+  "Communist", were refused: "Unable to generate videos that might cause reputational risk or misrepresent
+  current events."** Four tries each, same message. Neither line names a living person. Putting the fiction
+  in the first sentence passed first time, with the line unchanged: "A locked-off shot from a scripted
+  television … set in the year 1916: an actor in period costume plays a made-up government minister of
+  that time." Twenty politician generations then ran with no refusal, including lines about the Middle
+  East, house prices and "crypto billionaires … fascists".
+- 🔴 `[observed, n=11 against n=10]` **The words "comedy sketch" in that sentence brought a laugh track.**
+  7 of 11 clips opened with "scripted television comedy sketch" came back with audience laughter, with
+  "Nobody else is in the studio and nobody reacts" in the same prompt. Re-rolled as "scripted television
+  period drama … filmed on a closed set with no audience", 0 of 10 had laughter. The genre word outweighed
+  the sound line.
+- `[observed, n=4 of 32]` **A soft synth pad arrives after the last word** in some spoken clips, with "No
+  music" in the prompt. It starts about a second after the line ends, so a cut to the words removes it.
+  One silent clip of a yacht came back with a piano tune.
+- `[observed, n=1]` A rank stripe grew on a plain sleeve during a clip whose plate showed none. A re-roll
+  with "The sleeves of his tunic are plain khaki cloth" came back plain. One pair.
+- `[observed, n=3]` Lines came back doubled or stuttered three times in 44 generations ("It was a war. It
+  was a war.", "print, print more money", "responsibly, responsibly"). Each re-roll was clean.
+- 🔴 `[observed 2026-10-05, Jack's eye and ear]` **A long line in an 8-second clip is spoken fast, and the
+  body moves fast with it.** Jack on the first assembly: "it is sped up for some reason"; asked, he meant
+  the people inside the new clips. Measured roughly as words over the trimmed length: the lines he had
+  accepted in round 11 run near 2.3 words a second, and the v3 lines of 12 to 23 words run near 3.2.
+  **Budget a line at about 2.5 words a second with a second each side for the action: twelve words is
+  about the most one 8-second clip carries at a natural pace.** Longer lines want two clips. The fix
+  used on the day was a slowed copy (ffmpeg `setpts` and `atempo`, 80 to 93%), not a regeneration.

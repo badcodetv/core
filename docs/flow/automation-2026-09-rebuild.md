@@ -296,3 +296,24 @@ not yet checked.
     of the men in different clothes. The prompt said the people come from their Characters and the reference is for
     the room, furniture and light only. Scratch: `scripts/flow/.tmp/cast-many.mjs`. Four is the model's stated limit
     for character resemblance; five is untested.
+
+## 2026-10-05 — three picker findings from the Money For Something v3 run (Jack's account, project `cb27208c`)
+
+49. **Character rows dropped out of the "@" picker after a run of generations.** After thirteen hand-cast
+    stills in a row, searching "The Host" returned only a generated image titled "The host sitting in
+    armch…", and the picker's own Characters list read "No assets found". **A page reload brought the
+    Character rows back.** `scripts/flow/.tmp/cast-many-v3.mjs` now reloads before every still and prefers
+    the row that reads `<name> Character`. Same cure as item 29; n=1 here.
+50. **The Start-frame picker could not find day-old uploads by name.** `fillFrameSlotRebuilt` threw
+    `FRAME_SOURCE_NOT_FOUND` for `mfs-plate-s03b2.jpg` and four others uploaded the day before, eight times
+    in a row, while the "@" picker's search still listed all of them. Plates uploaded in the same session
+    were found, except one (`mfs-plate-v306.jpg`) that failed three times and then worked. Cause not found.
+    **Workaround used:** upload the plate again under a new filename.
+51. **Nothing larger than a 512 px thumbnail came back out of the picker.** The row's `img` is 512×382 for a
+    1200×896 upload, and clicking the row commits it to the prompt and closes the picker, so there is no
+    preview to read. The plates were rebuilt from frame 0 of clips made from them. **Keep the plates on
+    disk**; the round 10 ones had lived only in a scratch folder.
+52. **The compose bar was in Video mode at the start of the day** (left there by the last clip run), and
+    the hand-cast route does not change it (item 34). `scripts/flow/.tmp/v3-mode.mjs` opens the settings
+    popover and clicks a control by its text: `'^image Image$'`, then `'crop_landscape 4:3$'`. The label
+    then read "Nano Banana 2 crop_landscape x1".
