@@ -1768,3 +1768,32 @@ A frame 0.33s into an Opacity 0→100 fade exported with **full-brightness RGB a
 - The panel cannot read a plan from disk or over HTTP: `require('fs').readFileSync` on a Windows path gave
   "Route not found", and `fetch('http://localhost:…')` gave "Permission denied … Manifest entry not found".
   The plan has to be passed inline.
+
+## 2026-10-05: "send crash report" on opening Money For Something (memory, not the panel)
+
+- 🔴 **Opening the project committed 33 GB on a 16 GB machine.** Measured: `PeakPagedMemorySize64` 33.2 GB for
+  the Premiere process, against a Windows commit limit of 38.8 GB; Premiere's own breadcrumbs
+  (`%LOCALAPPDATA%\Temp\Adobe\Premiere Pro\25.0\SentryIO-db\*.run\__sentry-breadcrumb1`, read with `strings`)
+  logged 2.2 GB → 31.4 GB → 5.2 GB inside a minute of the open. The panel was idle (no bridge listening) and
+  has no polling loop.
+- **Unverified cause:** the bin held 42 source stills of 10 to 54 megapixels and 7 ProRes masters (24 GB), none
+  on any timeline, because the stills had been rendered to mp4 clips first. No crash dump survived to name the
+  fault (crashpad uploads and deletes), so this is an inference from the spike.
+- **What was done:** Jack ran Edit ▸ Remove Unused and saved (7 sequences, 582 video and 410 audio items
+  unchanged), and was given the steps for a fixed 48 GB pagefile. Whether the spike is gone is not yet measured.
+- **Rule:** import the rendered clip, never the multi-megapixel source still or the ProRes master. Check with
+  `Get-Process 'Adobe Premiere Pro' | select PeakPagedMemorySize64` after an open.
+- A bin removal from eval (`FolderItem.createRemoveItemAction(item)` in a transaction) exists on the API but was
+  never run: Claude Code's auto-mode classifier refuses it as destructive. Hand it to the human.
+
+## 2026-10-05: `MFS v4` (122 placements in thirteen evals, ten strap stills, no failures)
+
+- ✅ **A long still on V3 from eval:** `ed.createOverwriteItemAction(item, tick, 2, 0)` lays a PNG down at its 5 s default;
+  then `(await seq.getVideoTrack(2)).getTrackItems(ppro.Constants.TrackItemType.CLIP, false)`, match each item by
+  `(await it.getStartTime()).seconds`, and `it.createSetEndAction(tick)` in its own transaction stretches it (one ran to
+  79 s). Nine pieces placed and ten ends set in one eval. A PNG's alpha is honoured with nothing set.
+- ✅ `premiere_insert_clip` with `audioTrack: 3` on a three-track sequence made A4, as its description says.
+- ✅ Thirteen evals of nine or ten placements, each ending `await project.save()`, on a 16 GB machine that had crashed
+  twice that day: no failure, no timeout. `premiere_export_sequence` then rendered 331 s in one call.
+- **ffmpeg, not Premiere:** `alimiter` raises its output to 0 dB unless `level=disabled` is set. A clip made louder with
+  `volume=8dB,alimiter=limit=0.7` came out peaking at 0 dB, not -3.

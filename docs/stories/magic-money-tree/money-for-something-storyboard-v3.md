@@ -919,6 +919,69 @@ in the music. Whole film -16.8 LUFS, peak -1.2 dB. **Nobody has watched or heard
 - The title is plain text over the shot. The storyboard's first idea (the name stencilled on the brick wall,
   the tree's shadow across it) is not made.
 
+### `MFS v4` — the review pass (5 October 2026)
+
+Jack, after the review of `MFS v3 full titled`: build the scoreboard, fill the silences, fix the delivery fault, fix the
+poster, the Round 3 picture, the Lloyd George card and the Sound Off stills, and add the eight things in the list below.
+"Aged 19" was left alone on his say.
+
+**Sequence:** `MFS v4`, **331.08 s (5 min 31 s)**, a new sequence built from a plan; **`MFS v3 full titled` and the six
+older sequences are untouched.** 122 placements on V1, V2 and A1 to A3, ten score pieces on V3, one stem on A4, 14 markers.
+**Renders:** `renders\MFS v4-20261005-1658.mp4` (as Premiere wrote it) and `renders\MFS v4-20261005-1658-upload.mp4`
+(the one to upload: colour tagged BT.709 limited range, levels clamped to 16 to 235, sound at -15.1 LUFS, peak -1.2 dB).
+**Rebuild:** `build-v4-media.py` (graphics and sounds into `clips\_v4`), `build-edl-v4.py` (reads the saved state of
+`MFS v3 full titled`, applies the changes, writes `edl-v4.json` and mixes the stem), then `v4-batch.py a b` prints each
+placement eval, ten at a time. The strap went on with one eval (overwrite on V3, then `createSetEndAction`).
+
+| Asked | What was done |
+| --- | --- |
+| Scoreboard | A strap top right from Meet the panel on (`strap-0..7.png` on V3): 1 when the minister shakes the tree, 2 at Iraq, 3 at 1939, 4, 5, 6 on the Sound Off stills, 7 at Farage. Hidden for the cold open, titles, the star prize and the advert. `c-fs2`: FINAL SCORES, THE MINISTER counts to 7, EVERYONE ELSE 0 |
+| The two silences | The advert has a muzak bed ("Local Forecast - Elevator", Kevin MacLeod, CC BY 4.0, **credit owed**, receipt in `docs/footage/`). The Iraq tag has a ding; the Keynes card has a ticking clock |
+| Delivery | See "The delivery fault" below |
+| The poster | `t-debt2`: the poster cropped inside the scan, on the right, the debt tag on the left |
+| "They built some of the houses" | `t-homes`, one card for the narrator's whole line: HOMES PROMISED: 500,000, then HOMES BUILT: 213,000. It replaces both placeholders. The second one was a 1931 photograph stamped 1921 |
+| Lloyd George card | Dropped. The soldier reading is captioned with the name, place and date (`reads-cap`) |
+| Sound Off stills | 2.0, 1.6 and 2.0 s (were 1.2 each), each with a tag: THE BANKS, RESCUED £133 BILLION IN CASH; PUBLIC SPENDING, CUT £81 BILLION; NEW MONEY, PRINTED £450 BILLION |
+| Rigged sounds | A buzzer after each soldier's "No." and after "There's some on it."; a ding every time the minister scores. Synthesised with ffmpeg, so no licence |
+| Round sting | The theme's own final hit on the seven round cards and FINAL SCORES |
+| Reaction cutaways | The soldiers' stare (1.5 s) after "all that oil"; the host drinking (1.5 s) after "I shook it responsibly" |
+| Advert small print | The four advert shots as one clip with a fast crawl. Every clause is from the Mone guardrails (§7); no person and no company is named |
+| Daydream | `drift-push`: a push-in on his eyes, 1.00 to 1.22, eased (baked in ffmpeg on a 2x plate). A faint whistle under the trench |
+| Tease | `tease`: COMING UP, a second each of falling notes, the yacht and the £72 million tag, after the host's first line |
+| End | A 12.5 s roll over the empty room with the theme's last bars; the room comes back up for the final chord |
+| The host's line | "Nobody goes home empty-handed. Except you two." One Omni clip (`videos\v4\v4-end-01-host-empty-handed.mp4`, plate `s02bf`, The Host attached, second try after an "unusual activity" refusal). Cut in two round the minister's pockets and the soldiers' hands |
+
+**Facts added on screen, each read on the web on 5 October, not checked at source:** £133 billion cash outlay to the banks
+(National Audit Office, [FAQ](https://www.nao.org.uk/taxpayer-support-for-uk-banks-faqs/)); £81 billion of cuts in the 2010
+Spending Review ([Wikipedia](https://en.wikipedia.org/wiki/Spending_Review)); the Bank of England's holdings up £450 billion
+in 2020 ([House of Lords committee](https://publications.parliament.uk/pa/ld5802/ldselect/ldeconaf/42/4206.htm)); 500,000
+homes promised and 213,000 built under the 1919 Act
+([Wikipedia](https://en.wikipedia.org/wiki/Housing,_Town_Planning,_&c._Act_1919)). All four came from search summaries.
+
+**The credits roll** carries what is owed: both MacLeod tracks; Farage (Laurie Noble / UK Parliament, CC BY 3.0); Northern
+Rock (Dominic Alves, CC BY 2.0); Lehman Brothers (Robert Scoble, CC BY 2.0); the four OGL stills and the OGL sentence; the
+1948 Crown films. Licences as recorded in `docs/footage/`. Two joke lines in it are mine: "THE MINISTER, still with us" and
+"THE SOLDIERS, still waiting".
+
+**The delivery fault, corrected.** The review said the file was full range. It is not: a black card measures 16, which is
+limited range and correct. The fault was the missing colour tag. `scripts/delivery-qc.sh` still prints FAIL on the upload
+file, because it judges by the single darkest and brightest pixel in the film and compressed white lettering overshoots.
+A clamp applied before the check reads 16 to 235; after encoding, 1,193 frames have a pixel under 10. **The check wants a
+percentile, not an extreme.** Not changed here.
+
+**Checked on the render:** 14 contact sheets at one frame a second, read by eye; the only black frames are five text cards;
+one machine listener on the whole soundtrack heard every added sound, called the levels balanced, both "No"s audible, the
+new line a match for the host, and the end music finishing on its chord. **No person has watched or heard it.**
+
+**Needs a human:**
+
+- **Jack's ear on the new line.** A second machine pass on the clip alone called the accent North American.
+- The German "No." was raised 8 dB and now peaks at 0 dB in the timeline. The upload file is limited to -1.2 dB.
+- A real photograph of 1919 to 1921 council houses is still wanted; four Commons searches found none that was free.
+- The strap sits over the top of the 2008 still and over the round cards.
+- **Kai has seen none of it.** New for him: the advert's small print, the four figures above, the credits.
+- The video description still owes the house AI line (`docs/using-ai.md` §0). It is not in the roll.
+
 ## Story-craft rows run, and not run
 
 - **Run on this draft:** the gates (hero, the chooser in the room, the pub line); every ironic

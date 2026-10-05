@@ -35,6 +35,12 @@ direction ([`direction-2026-10-01.md`](./direction-2026-10-01.md)), not over it.
 > "Hot Swing" by Kevin MacLeod under it (CC BY 4.0, **credit owed in the film**), rendered to
 > `renders\MFS v3 full titled-20261005-1506.mp4`. Kit: `build-title.py`. Detail in the v3 file under
 > "`MFS v3 full titled`". **Next:** Jack watches it.
+> **Then Jack asked for a review, and for most of it to be built.** The current cut is now **`MFS v4`** (5 min 31 s):
+> a running score and a FINAL SCORES board, stings, buzzers and dings, a jingle and small print on the advert, a tease
+> after the titles, the daydream push-in, two reaction cutaways, new Round 3 and Sound Off graphics, a new host line
+> ("Nobody goes home empty-handed. Except you two.") and a credits roll. Upload file:
+> `renders\MFS v4-20261005-1658-upload.mp4`. Kits: `build-v4-media.py`, `build-edl-v4.py`, `v4-batch.py`. Detail in the
+> v3 file under "`MFS v4`". **Next:** Jack watches it; his ear on the new line.
 
 ## Where it stands
 
