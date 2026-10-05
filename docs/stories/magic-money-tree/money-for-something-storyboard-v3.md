@@ -873,6 +873,52 @@ cannot see (Marx after the quote card, and so on) as not following; with the pic
 - **Premiere crashed and recovered during this build**, after four evals of fourteen placements.
   About a batch and a half was lost and placed again. Nothing in the three older sequences changed.
 
+### `MFS v3 full titled` — the title screen and its music (5 October 2026)
+
+Jack: "We need to make an intro screen for the show, like money for something in text over the opening
+shot of the studio, also find royalty free jazzy opening talk show music and put it in that title screen."
+
+**Sequence:** `MFS v3 full titled`, **308.0 s (5 min 8 s)**: a clone of `MFS v3 full` with the title in it.
+`MFS v3 full` and the four older sequences are untouched.
+**Render:** `renders\MFS v3 full titled-20261005-1506.mp4`.
+
+| When | What |
+| --- | --- |
+| 0 to 8.29 s | The cold open, unchanged: the May quote card, the still, "Nice try…" |
+| 8.29 s | Cut to the studio wide. A drum roll (0.83 s) |
+| 9.13 s | The band comes in. The picture dims a little and **MONEY** lands, then **FOR**, then **SOMETHING**, one word a beat. Yellow Impact, black edge. The host is standing with his arms out and sits down under the words |
+| 17.42 s | The final hit, on the cut to the host's close-up. He waits half a second |
+| 18.07 s | "Money For Something. The quiz where the rules depend on who's asking." As before |
+
+**The music:** "Hot Swing" by Kevin MacLeod (incompetech.com), a 50-second big band tune, **CC BY 4.0**:
+free to use, credit owed, no clause on political use. The receipt is `docs/footage/incompetech--hot-swing.json`.
+**The credit must go in the film:** "Hot Swing" Kevin MacLeod (incompetech.com). Licensed under Creative
+Commons: By Attribution 4.0 License. http://creativecommons.org/licenses/by/4.0/
+The licence was read on the site, not checked any other way. Six other tracks from the same catalogue were
+pulled and passed over; two were described by the machine listener ("Sweeter Vermouth", a muted trumpet
+and a small combo, too quiet for an opening).
+
+**How it was made** (`scripts/money-for-something/build-title.py`, three files into `clips\_v3`):
+
+- `title-mfs.mp4`: the whole wide clip slowed to 88% (192 frames to 219), the words drawn by ffmpeg, then
+  12 frames of the host's close-up from before he speaks. It replaces the 1.58 s of wide that cut 3 used.
+- `title-music-hot-swing.wav`: the drum roll, then the tune's own last 8.3 s, uncut. A first edit joined two
+  bars of the opening to the last two bars and the machine listener heard the join, so that was dropped.
+- In Premiere: the sequence cloned and renamed, `pad-193f.mp4` inserted at 8.29 s (an insert moves every
+  track, so the whole film moved 8.04 s later), then the title overwritten on V1 and the music on a new A4.
+
+**Checked on the render:** ten labelled frames around the title read by eye (the words, the cut to the host,
+the next scene); one machine listener on seconds 3 to 25 heard every line, no music over a word and no jump
+in the music. Whole film -16.8 LUFS, peak -1.2 dB. **Nobody has watched or heard it.**
+
+**Known and left:**
+
+- The room tone on A3 has an 8 s gap under the title (the insert split it). The music covers it.
+- The "1 Titles" marker moved with the insert and sits at 16.33 s; the title starts at 8.29 s.
+- The music is 3 dB under its own master. If it is too loud or too quiet, it is one clip on A4.
+- The title is plain text over the shot. The storyboard's first idea (the name stencilled on the brick wall,
+  the tree's shadow across it) is not made.
+
 ## Story-craft rows run, and not run
 
 - **Run on this draft:** the gates (hero, the chooser in the room, the pub line); every ironic

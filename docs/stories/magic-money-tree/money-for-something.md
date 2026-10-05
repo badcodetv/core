@@ -1911,3 +1911,24 @@ Accent: British (Brixton).
   someone made (rule 5). "You were fucked" must mean the country, never the viewer.
 - **The BBC clips.** Kai's "ask forgiveness, not permission" is still not confirmed as a ruling.
 - **Is this the film, or a series of eight?** "Finished" was defined as eight videos on YouTube.
+
+## The title screen and its music (5 October 2026)
+
+Jack: "We need to make an intro screen for the show, like money for something in text over the opening
+shot of the studio, also find royalty free jazzy opening talk show music and put it in that title screen."
+
+- **The cut:** Premiere sequence **`MFS v3 full titled`** (5 min 8 s), a clone of `MFS v3 full` with the title in
+  it. Render: `renders\MFS v3 full titled-20261005-1506.mp4`. The title runs from 0:08 to 0:18.
+- **The picture:** MONEY / FOR / SOMETHING in yellow block capitals over the studio wide, one word a beat,
+  while the host stands with his arms out and sits down. The wide clip is slowed to 88% to fit the music.
+- **The music:** "Hot Swing" by Kevin MacLeod (incompetech.com), big band, **CC BY 4.0**. Cut to 12.5 s: the
+  drum roll, then the tune's own last 8.3 s. The final hit lands on the cut to the host.
+- **Credit owed in the film:** "Hot Swing" Kevin MacLeod (incompetech.com). Licensed under Creative Commons:
+  By Attribution 4.0 License. http://creativecommons.org/licenses/by/4.0/
+  Receipt: `docs/footage/incompetech--hot-swing.json`. The licence was read on the site only.
+- **Kit:** `scripts/money-for-something/build-title.py`.
+- **Not done:** nobody has watched or heard it. The storyboard's earlier idea (the name stencilled on the
+  brick wall) is not made.
+
+The timings, how it was built in Premiere, what was checked and what was left are in
+[`money-for-something-storyboard-v3.md`](./money-for-something-storyboard-v3.md) under "`MFS v3 full titled`".

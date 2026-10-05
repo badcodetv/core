@@ -28,8 +28,13 @@ direction ([`direction-2026-10-01.md`](./direction-2026-10-01.md)), not over it.
 > **Then Jack said the May quote must open it and the clips were in the wrong order.** The current cut is
 > **`MFS v3 full`** (5 min): cut 3's whole film with the v3 scenes inside it, opening on the May quote card,
 > rendered to `renders\MFS v3 full-20261005-1335.mp4`. What was wrong and what moved is in the v3 file under
-> "`MFS v3 full`". **Next:** Jack watches it. Open: the real May clip (BBC, not ruled), and remaking the four
+> "`MFS v3 full`". Open: the real May clip (BBC, not ruled), and remaking the four
 > longest lines as two clips each.
+> **Then Jack asked for a title screen with jazzy talk show music.** The current cut is now
+> **`MFS v3 full titled`** (5 min 8 s): `MFS v3 full` with MONEY FOR SOMETHING over the studio wide and
+> "Hot Swing" by Kevin MacLeod under it (CC BY 4.0, **credit owed in the film**), rendered to
+> `renders\MFS v3 full titled-20261005-1506.mp4`. Kit: `build-title.py`. Detail in the v3 file under
+> "`MFS v3 full titled`". **Next:** Jack watches it.
 
 ## Where it stands
 

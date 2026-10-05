@@ -1,0 +1,16 @@
+{
+ "title": "Hot Swing",
+ "artist": "Kevin MacLeod",
+ "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Hot%20Swing.mp3",
+ "catalogue": "https://incompetech.com/music/royalty-free/pieces.json",
+ "isrc": "USUAN1100202",
+ "length": "00:00:50",
+ "licence": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+ "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+ "licence_evidence": "incompetech.com FAQ, read 2026-10-05: 'Licensed under Creative Commons: By Attribution 4.0'. Read from the site, not tested against a claim.",
+ "credit": "\"Hot Swing\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License. http://creativecommons.org/licenses/by/4.0/",
+ "used_in": "Money For Something, title screen (MFS v3 full titled)",
+ "fetched": "2026-10-05",
+ "md5": "df9213c73fb04945d7c633bc6a34d301",
+ "changes": "Cut to 12.5 s: the drum roll joined to the last 8.3 s. CC BY asks that changes are indicated."
+}
