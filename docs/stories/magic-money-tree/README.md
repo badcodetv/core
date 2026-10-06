@@ -90,3 +90,9 @@ Voice and craft: [BadCode voice](../../voice.md) · [storytelling method](../../
 The game-show telling of this story: an idea of Jack's, not ruled. Start at
 [`money-for-something-RESUME.md`](./money-for-something-RESUME.md); the full record is
 [`money-for-something.md`](./money-for-something.md).
+
+## Magic Money Tree, the game show (6 October 2026)
+
+A second game-show idea built on Money For Something: a topical comedy quiz about the week's or
+the year's news, where each contestant answers as starve, shake or plant. Captured, not ruled:
+[`magic-money-tree-gameshow.md`](./magic-money-tree-gameshow.md).
