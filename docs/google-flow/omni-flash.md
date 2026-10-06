@@ -2491,3 +2491,25 @@ by one machine listener (Gemini 3 Flash); no person has listened.
   **Budget a line at about 2.5 words a second with a second each side for the action: twelve words is
   about the most one 8-second clip carries at a natural pace.** Longer lines want two clips. The fix
   used on the day was a slowed copy (ffmpeg `setpts` and `atempo`, 80 to 93%), not a regeneration.
+
+## Three observations from The Bank Robbery clips — 2026-10-06 `[observed]`
+
+Fifteen clips, Omni 1.1 Flash, Frames, 720p, 8 s, x1. Prompts and results:
+`docs/stories/bank-robbery/clips.md`. Judged from three frames a clip, not from watching.
+
+- `[observed, n=1 still, 2 prompts]` **A start frame showing pistols pointed near a woman was
+  refused twice** with no weapon word in either prompt. The same scene remade with empty hands
+  passed first time. A close-up with a pistol in each of a man's hands (scene 12a) **did** pass,
+  once "pistols" and "alarm" were out of the text.
+- `[observed, n=2]` **A refused prompt passed when cut to three short sentences.** Which words
+  were the cause is not known (scene 13's lost sentence was about four men looking down and keys
+  in a bag).
+- `[observed, n=1]` **"Both men stop shouting at the same instant, close their mouths and slowly
+  draw their faces apart" worked on a start frame of two open-mouthed faces**: closed mouths by
+  mid-clip, faces held. A way to animate a shouting still without asking for speech.
+- `[observed, n=3 pairs]` **Three first takes that drifted were fixed by asking the body to stay
+  put.** "Comes slowly down two more steps" returned a man who jumped away and back; "stands
+  still on the step, staying the same size in the frame" held. "Looks away down the street"
+  changed a woman's face and clothes; "stays where she is... eyes down on the lock" held. "Lowers
+  her arm" grew lettering on an apron; "holds still... her apron is plain dark blue cloth and
+  stays plain" did not. Same start frames, one take each, judged from five frames a clip.

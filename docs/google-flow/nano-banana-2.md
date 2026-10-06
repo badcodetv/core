@@ -2202,3 +2202,60 @@ results: `docs/stories/magic-money-tree/money-for-something-storyboard-v3.md`, r
 - `[untested]` "Nothing is retouched or smoothed" was added to every capture line. No prompt was
   run without it, so it has no measured effect.
 
+
+## Seventh web pass and one comparison — The Bank Robbery look tests, 2026-10-06 `[community]` `[observed]`
+
+Prompts and results: `docs/stories/bank-robbery/look-tests.md` (rounds 1 and 2, eight stills each,
+Nano Banana 2, 16:9, no reference, Jack's Flow project `64a6c82d`).
+
+- `[community]` A Nano Banana 2 guide adds three habits this file did not state in these words:
+  **subject in the first fifteen words, one camera phrase per prompt (two camera bodies confuse
+  it), and say what the picture is for.** It also recommends "anamorphic lens flare", which we do
+  not take. [Fliki, 2026-09-29](https://fliki.ai/blog/nano-banana-2-prompting-guide)
+- `[observed, n=4 looks, 2 candidates each, one scene]` **Round 1** put the scene first and the
+  look last, with the camera in the middle of the road. All eight came back mirrored, with the men
+  in a row facing the lens on a clean street. **Round 2** opened with the subject in one sentence,
+  then "a frame from a <kind of film>, shot on <one camera, one lens> from <a place a person could
+  stand>", gave the men things to do (eating, a phone, leaning into a handle), and named dirt
+  (patched tarmac, a drain, a cup). All eight came back off centre, mid-action and dirty. Several
+  things changed at once, so which one did the work is not known.
+- `[observed, n=2]` **"The picture is black, white and one red" returned a black-and-white
+  photograph with red on the named object.** Round 1, which said "the only saturated colour",
+  stayed in colour.
+- `[observed, n=8]` **Dropping "middle-aged" made every man about thirty.** Round 1 had the words
+  and the men were fifty.
+- `[observed, n=1]` `aspect: "21:9"` is refused on Nano Banana 2 before submit
+  (`ASPECT_UNAVAILABLE`), the same as on Pro.
+
+## Four observations from The Bank Robbery round 3 — 2026-10-06 `[observed]`
+
+Eight stills, Nano Banana 2, 16:9, no reference. Prompts: `docs/stories/bank-robbery/look-tests.md`, round 3.
+
+- `[observed, n=4 prompts]` **Street disorder was not blocked.** Burning wheelie bins, hand flares,
+  masked people in hoodies, a scuffle across a police line: all four generated first time.
+- `[observed, n=2]` **A ten-word hand-painted banner came back spelt correctly at 1K** ("WE CAN'T
+  AFFORD TO LIVE HERE", about a third of the frame width tall), against the small-text warning in
+  `docs/flow/image-prompting.md` §5. Large lettering only; the small shop signs behind it were garbled.
+- `[observed, n=1]` **A prompt noun leaked onto a sign.** "bedsheet banners" in a crowd description
+  returned a banner reading "BEDSHEET BENNER". When a crowd carries blank cloth, say what is on it.
+- `[observed, n=3 of 8]` **"football scarves" returns real-looking club scarves with crests**, and
+  "puffer jackets" returned a real brand's logo twice. Ask for plain ones.
+
+## Four observations from The Bank Robbery cast stills — 2026-10-06 `[observed]`
+
+Fourteen stills with Flow Characters attached by hand, Nano Banana 2, 16:9, one candidate each.
+Prompts: `docs/stories/bank-robbery/stills.md`, second pass.
+
+- `[observed, n=13 stills, 11 Characters]` **Characters held their faces at extreme angles**: from
+  the floor looking up, from a ceiling corner, in macro profile, from inside a model with the faces
+  as giants. Each Character had a Portrait and a Body. Up to four per still, never more.
+- `[observed, n=14]` **A camera position named as a physical place was obeyed every time**: "resting
+  on a café table top", "lying on the marble floor", "from deep inside a dark bank vault, looking
+  out through its round doorway", "from the position of a small television mounted high on a wall",
+  "inside a cardboard scale model, at the height of the model's street". Each came with something
+  named as large and out of focus against the lens.
+- `[observed, n=14]` **"One light source only, no fill: <the source>" plus where the shadow falls
+  gave real darkness** with one bright place in it, in every still. No grey mush.
+- `[observed, n=1 each]` Two asks were not delivered: **"a cheap standard-definition camcorder"
+  came back sharp** with only the on-camera light obeyed, and **"laid over her face as a reflection
+  in the same glass" came back as a view through the glass**.

@@ -317,3 +317,44 @@ not yet checked.
     the hand-cast route does not change it (item 34). `scripts/flow/.tmp/v3-mode.mjs` opens the settings
     popover and clicks a control by its text: `'^image Image$'`, then `'crop_landscape 4:3$'`. The label
     then read "Nano Banana 2 crop_landscape x1".
+
+## 2026-10-06 — 21:9 is refused on Nano Banana 2 as well (n=1, project `64a6c82d`)
+
+`flow_generate_image` with `model: "Nano Banana 2"`, `aspect: "21:9"` returned
+`ASPECT_UNAVAILABLE: 21:9` before submit, nothing generated. The same call at `16:9` worked at
+once (1376×768). This answers the "not tested" line in the 2026-10-01 entry. `flow_create_project`
+also returned the timestamp name ("Oct 06 - 13:31") for a project asked to be called "bank robbery".
+
+## 2026-10-06 — still harvest returned OLD media in a full project (n=2, project `64a6c82d`)
+
+With about ninety images in the project, the sixth prompt of a `flow_generate_batch`
+(`numOutputs: 2`, 3:4) returned **three** candidates at 1376×768 whose media ids were scene stills
+made half an hour earlier. A single `flow_generate_image` retry of the same prompt then returned
+two 896×1200 files whose ids were the previous prompt's portraits. No error either time. The same
+prompt in a new empty project harvested correctly first time. This is skill law 19 (written for
+video) showing on stills. **Tell: the returned `mediaId` or the pixel size matches something you
+already have.** Compare ids before trusting a file, and start a new project well before ninety.
+
+## 2026-10-06 — twelve Characters with bodies and voices in one run (project `63d22c4b`)
+
+53. **Twelve of twelve Characters were created by script** (portrait upload, name, `Create body`,
+    body upload, `Done`), and **twelve of twelve custom voices attached**, with no retries.
+    Scripts: `scripts/flow/.tmp/br-make-chars.mjs` and `br-voices.mjs`, built from items 25, 32, 37
+    to 40 and 42. The project was new and held only the portraits and bodies.
+54. **`flow_edit_image` at `aspect: "9:16"` works** (768×1376, 12 of 12). Item 47 had it untested.
+55. 🔴 **A generated photoreal portrait can be refused as an upload.** One of thirteen portraits
+    never appeared in the ingredient picker (two tries, then a third after closing the picker),
+    while the rest uploaded first time. It was the one face that looked like a real actor. The tool
+    reports it as a 90 s wait on the picker option, and **leaves the picker open**, so the next
+    call fails on `Add ingredients` (item 13). Clear it with Escape, then change the face.
+
+56. 🔴 **2026-10-06: the by-hand cast route made a clip when a still was wanted.** After a video
+    run the compose bar was in Video mode. `v3-mode.mjs` printed `=> null` for both clicks (its
+    regexes no longer match) and the bar still read `Video · 720p · 8s crop_16_9 x1`.
+    `cast-many-v3.mjs` then submitted, and Flow made an 8 s clip from the Characters and the text
+    (about 12 credits). **Tells:** `null` from the mode script, and a saved "still" that is
+    1280×720. **What worked:** one ordinary `flow_generate_image` call first, which asserts image
+    mode (item 34 said this for aspect; it is the same cure for mode).
+57. `scripts/bank-robbery/br-videos.mts` (a copy of the Camping re-cut runner) made 15 of 15 clips.
+    `VIDEO_OPTION_UNAVAILABLE: Frames on Omni 1.1 Flash` came on the first call of each process
+    and cleared on the built-in retry, as in the 2026-09-29 entry.

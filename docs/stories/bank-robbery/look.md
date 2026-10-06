@@ -3,8 +3,15 @@
 **Asked for by Jack, 6 October 2026:** "suggest cinematic realistic artistic styles for the
 images/video we make out of this… I'm thinking maybe like Heat or something."
 
-**Suggestions only. Nothing is chosen, no prompt is written and no image exists.** When a look is
-picked, each shot still goes through `shot-craft` and then `flow-prompt`, one at a time.
+> ✅ **A look was chosen by Jack on 6 October 2026, and it is none of the four below.** It is the
+> still "The bank in the haze" (round 3, frame 4, candidate b, Flow media `5a6fed78`): a news
+> photograph at dusk, cold ambient light, one warm source, a dark shape in the foreground, red and
+> blue carried by smoke and flags. Prompt: [`look-tests.md`](./look-tests.md). Style lock and the
+> scene stills: [`stills.md`](./stills.md). Kai has not seen it. **The rest of this file is the
+> suggestion board from before the choice and is left as written.**
+
+**Suggestions only.** When a look is picked, each shot still goes through `shot-craft` and then
+`flow-prompt`, one at a time.
 
 ## Two things to know first
 

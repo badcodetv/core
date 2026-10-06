@@ -23,6 +23,9 @@ night before, the chaos, the woman who works in the bank).
 | [`characters/denise.md`](./characters/denise.md) | The hero: waitress in the morning, bank cleaner at night |
 | [`distraction.md`](./distraction.md) | Nine ideas for showing the distraction, and the research behind them. Ideas 1 and 2 are in the storyboard |
 | [`look.md`](./look.md) | Four candidate looks (Heat among them), a recommendation, and the research. Nothing chosen |
+| [`stills.md`](./stills.md) | One still per scene in the chosen look: the style lock, the shot specs, the exact prompts and what came back |
+| [`clips.md`](./clips.md) | One clip per still: settings, how the motion prompts are built, the exact prompts and what came back |
+| [`look-tests.md`](./look-tests.md) | The four looks tried on scene 9 in Flow, 6 October 2026: the shot spec, the exact prompts and what came back |
 | [`research.md`](./research.md) | The receipts: the three films, and the Bank of England's own numbers, each marked with how far it was checked |
 
 ## Production tracker
@@ -31,12 +34,14 @@ night before, the chaos, the woman who works in the bank).
 | --- | --- | --- |
 | Story spine | [`story.md`](./story.md) | First pass, 6 October 2026. Not ruled |
 | Storyboard | [`storyboard.md`](./storyboard.md) | First pass, 14 scenes (the march added 6 October). Every line a placeholder |
-| Characters | [`characters/`](./characters/the-crew.md) | Types only. No images, no Flow Characters |
+| Characters | [`characters/cast-portraits.md`](./characters/cast-portraits.md) | Twelve Flow Characters with portrait, body and custom voice, 6 October 2026, in Flow project `63d22c4b`. Picks are a first pass; voices not yet heard in a clip |
 | Research | [`research.md`](./research.md) | Two web passes (the money, and since Covid). Several figures are search-summary grade and marked |
-| The look | [`look.md`](./look.md) | Four options and a recommendation. Not chosen, not tested |
+| The look | [`look.md`](./look.md) | Chosen by Jack, 6 October 2026: "The bank in the haze". Kai has not seen it |
 | Script | none | Not started |
-| Images and clips | none | Not started. No prompt has been written |
-| Voices | none | Needs a ruling: this is a talking film (open call 6) |
+| Look tests | [`look-tests.md`](./look-tests.md) | Three rounds, 6 October 2026. Jack chose "The bank in the haze" |
+| Scene stills | [`stills.md`](./stills.md) | Two passes, 6 October 2026. The second has the Flow Characters cast in, and a different camera position and a single light in every scene. Not reviewed |
+| Clips | [`clips.md`](./clips.md) | First pass, 6 October 2026: one silent 8 s Omni clip per second-pass still. Not reviewed |
+| Voices | [`characters/cast-portraits.md`](./characters/cast-portraits.md) | One custom Flow voice per Character. Open call 6 (a talking film) is still unruled |
 | Song | none | Not started |
 | Comic | none | Not started |
 
