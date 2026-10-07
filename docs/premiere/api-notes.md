@@ -1797,3 +1797,25 @@ A frame 0.33s into an Opacity 0→100 fade exported with **full-brightness RGB a
   twice that day: no failure, no timeout. `premiere_export_sequence` then rendered 331 s in one call.
 - **ffmpeg, not Premiere:** `alimiter` raises its output to 0 dB unless `level=disabled` is set. A clip made louder with
   `volume=8dB,alimiter=limit=0.7` came out peaking at 0 dB, not -3.
+
+## 2026-10-07: learned building The Bank Robbery `cut 1` (118 placements, nine evals)
+
+- ✅ **Twelve placements an eval ran clean nine times** (the last eval placed 22 audio-only items with one
+  transaction each). 86 picture clips and 32 narrator WAVs, no gaps, checked from the state file and with
+  `blackdetect` on the render.
+- ✅ **A narrator WAV needs no in and out set:** `createOverwriteItemAction(item, t, 0, 1)` alone lays the whole
+  file on A2.
+- ✅ **Import many files from eval** by building Windows paths in the snippet:
+  `project.importFiles(paths, true, ppro.ProjectItem.cast(bin))`, with the bin found by name in
+  `root.getItems()`. 108 files in one call. (`premiere_import` first, with one file, to create each bin.)
+- ✅ **Audio Volume is component 0 on an audio clip (`Internal Volume Stereo`), param 1 `Level`, and 0 dB reads
+  0.1778.** So the value is `10 ** ((dB - 15) / 20)`: −9 dB is 0.0631. Thirty-two clips were set in one
+  transaction; the render measured 9 LU quieter.
+- 🔴 **`helpers.require('fs').readFileSync` answered `Route not found`** for a Windows path, a `file:` path and
+  a `file:/` path. A plan cannot be read off disk from eval; pass it in the snippet.
+- 🔴 **Premiere locks imported WAVs that are on the timeline.** Rewriting the narrator files in place from WSL
+  gave `Permission denied` on 18 of 32 and silently replaced the other 14. Never level audio by rewriting a file
+  Premiere has imported; set the clip's Volume.
+- 🔴 **The bridge port was held by this conversation's own earlier server** after the session was restarted in
+  the background: the holder and the new session traced to the same `claude` pid. Killing it and calling
+  `premiere_status` reconnected at once.

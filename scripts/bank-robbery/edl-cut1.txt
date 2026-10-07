@@ -1,0 +1,86 @@
+   0.00   9.96  ext-s01-breakfast.mp4                under narrator, last frame held
+   9.96   7.88  hold-s01-table.mp4                   still held
+  17.83   7.17  hold-s01-denise.mp4                  still held
+  25.00   5.50  s01b-remote.mp4                      silent
+  30.50   3.17  s01c-blue.mp4                        talk
+  33.67   5.54  s01d-red-1.mp4                       talk
+  39.21   7.33  s01d-red-2.mp4                       talk
+  46.54   4.75  s01e-denise.mp4                      talk
+  51.29   5.00  s02-spoiler.mp4                      silent
+  56.29   5.50  s02b-shut-shops.mp4                  silent
+  61.79   7.00  text-title.mp4                       lettering added
+  68.79   2.58  card-three-weeks.mp4                 title card
+  71.38   4.58  hold-s03-hearing.mp4                 still held
+  75.96   2.71  s03a-hearing-1.mp4                   talk
+  78.67   4.54  s03a-hearing-2.mp4                   talk
+  83.21   2.96  hold-s03-hearing-b.mp4               still held
+  86.17   8.33  ext-s03-getting-out.mp4              under narrator, last frame held
+  94.50  16.21  hold-s03-steps.mp4                   still held
+ 110.71   2.58  card-01-ex.mp4                       name card
+ 113.29   2.58  card-02-fixer.mp4                    name card
+ 115.88   2.58  card-03-donor.mp4                    name card
+ 118.46   2.58  card-04-governor.mp4                 name card
+ 121.04   2.58  card-05-proprietor.mp4               name card
+ 123.62   2.58  card-06-presenter.mp4                name card
+ 126.21   2.58  card-07-platform.mp4                 name card
+ 128.79   2.58  card-08-accountant.mp4               name card
+ 131.38   3.00  s04-recruiting.mp4                   silent
+ 134.38   2.58  card-09-drivers.mp4                  name card
+ 136.96   2.58  card-10-turquoise.mp4                name card
+ 139.54   7.42  s05-plan-a.mp4                       talk
+ 146.96   6.46  s05-plan-b.mp4                       talk
+ 153.42   6.00  text-headline-blue.mp4               lettering added
+ 159.42   4.79  hold-s05-headline-red.mp4            still held
+ 164.21   4.96  s05c-red-side-1.mp4                  talk
+ 169.17   6.54  s05c-red-side-2.mp4                  talk
+ 175.71   6.58  s05d-twist-1.mp4                     talk
+ 182.29   4.92  hold-s05-accountant.mp4              still held
+ 187.21   5.71  s05-plan-c.mp4                       talk
+ 192.92   2.79  s05d-twist-2.mp4                     talk
+ 195.71   4.50  s05-plan.mp4                         silent
+ 200.21   7.50  s06a-list-1.mp4                      talk
+ 207.71   7.25  s06a-list-2.mp4                      talk
+ 214.96   6.83  s06a-list-3.mp4                      talk
+ 221.79   3.79  s06a-list-4.mp4                      talk
+ 225.58   6.21  hold-s06-list.mp4                    still held
+ 231.79   5.00  s06-colours-talk.mp4                 talk
+ 236.79   9.96  ext-s06-colours.mp4                  under narrator, last frame held
+ 246.75   8.58  ext-s07-night-before.mp4             under narrator, last frame held
+ 255.33   8.42  hold-s07-party.mp4                   still held
+ 263.75   4.96  s07b-off-record.mp4                  talk
+ 268.71   4.50  hold-s07-presenter.mp4               still held
+ 273.21   5.08  s07c-denise-hall.mp4                 talk
+ 278.29   5.50  hold-s07-hall.mp4                    still held
+ 283.79   2.58  card-bank-holiday.mp4                title card
+ 286.38  12.62  ext-s08b-remote-window.mp4           under narrator, last frame held
+ 299.00   6.21  s08a-placards.mp4                    under narrator
+ 305.21   7.96  s08c-megaphones.mp4                  talk
+ 313.17   6.79  hold-s08-megaphones.mp4              still held
+ 319.96   4.46  s08d-presenter.mp4                   talk
+ 324.42   6.29  hold-s08-presenter.mp4               still held
+ 330.71   6.12  s08-march.mp4                        under narrator
+ 336.83   6.96  s09a-officer.mp4                     talk
+ 343.79   7.50  s09-walk.mp4                         under narrator
+ 351.29  10.71  hold-s09-walk.mp4                    still held
+ 362.00   7.58  s09c-pallet.mp4                      under narrator
+ 369.58   3.50  s09d-door.mp4                        talk
+ 373.08   7.79  hold-s09-door.mp4                    still held
+ 380.88   7.42  s09e-turquoise.mp4                   under narrator
+ 388.29   5.50  s10a-enter.mp4                       silent
+ 393.79   3.83  s10-hoover-talk.mp4                  talk
+ 397.62   6.67  s10c-that-much-1.mp4                 talk
+ 404.29   2.75  s10c-that-much-2.mp4                 talk
+ 407.04   7.50  s10d-counting.mp4                    talk
+ 414.54   4.54  hold-s10-counting.mp4                still held
+ 419.08   6.79  s11-vault-talk.mp4                   talk
+ 425.88   8.62  ext-s11-vault.mp4                    under narrator, last frame held
+ 434.50   6.71  s11b-in.mp4                          talk
+ 441.21  10.29  hold-s11-in.mp4                      still held
+ 451.50  11.58  ext-s11c-keys.mp4                    under narrator, last frame held
+ 463.08   7.17  s11d-pricetags.mp4                   under narrator
+ 470.25   5.96  s12a-standoff-talk.mp4               talk
+ 476.21   4.88  s12a-standoff.mp4                    under narrator
+ 481.08   7.04  s12d-lowering.mp4                    talk
+ 488.12   7.79  s12b-count.mp4                       silent
+ 495.92   7.00  s12e-sold.mp4                        silent
+ 502.92   7.79  s12f-kebab.mp4                       silent

@@ -2259,3 +2259,23 @@ Prompts: `docs/stories/bank-robbery/stills.md`, second pass.
 - `[observed, n=1 each]` Two asks were not delivered: **"a cheap standard-definition camcorder"
   came back sharp** with only the on-camera light obeyed, and **"laid over her face as a reflection
   in the same glass" came back as a view through the glass**.
+
+## Seventh note — a short word in neon, and a "flicker" `[observed, n=1]` 2026-10-07
+
+From The Bank Robbery's third pass of stills ([`stills-v3.md`](../stories/bank-robbery/stills-v3.md)),
+Nano Banana 2 in Flow, one candidate each.
+
+- **Asking for one letter of a sign to look "dimmer than the rest as if flickering" produced an
+  extra letter.** The prompt asked for a neon sign reading "badcode" with a red o. It came back as
+  "badcoode": a dim ring next to the red one. A change over time cannot be drawn in a still, so the
+  model drew both states side by side. Put the flicker in the clip.
+- **Spelling the word out fixed it first time:** "exactly seven round lowercase letters spelling
+  "badcode"", each letter listed, the odd one given its position ("the fifth of the seven"), and
+  "There is only one o".
+- **Price tags default to dollars.** A model town with "paper price tags" came back with "$250,000"
+  and "$300k". Saying "handwritten in British pounds" gave pound signs.
+- **An unbranded carrier bag has to be asked for.** "A heavy supermarket carrier bag" came back
+  with garbled shop lettering; "a plain white carrier bag with nothing printed on it" did not.
+- **39 of 39 passed first time,** including two men holding small pistols pointed at the floor,
+  pallets of "shrink-wrapped blocks of paper", two crowds with plain red and blue flags, and a
+  police officer in hi-vis. That is one run on one account, not a statement about the filter.

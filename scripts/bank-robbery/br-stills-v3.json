@@ -1,0 +1,295 @@
+{
+  "pre": "The named people are the attached Characters, with their own faces and clothes. ",
+  "end": " Muted colour: stone grey, black and navy, with small touches of red and blue the only strong colour. Unretouched, natural skin texture, visible 35mm film grain. Nobody looks at the camera. 16:9. Thanks.",
+  "endLens": " Muted colour: stone grey, black and navy, with small touches of red and blue the only strong colour. Unretouched, natural skin texture, visible 35mm film grain. 16:9. Thanks.",
+  "shots": [
+    {
+      "id": "s01b-remote",
+      "cast": [
+        "The Proprietor",
+        "Mr Blue",
+        "Mr Red"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with an 18mm lens lying on a café table top beside a plate, looking along the table, not quite level. The Proprietor sits at the right side of the table, eating with a fork in one hand, his eyes down on his plate. Without looking up he has stretched his other arm out toward the lens, and in that hand he holds a television remote control pointed up and out of the frame to the right; the remote and his hand are huge in the near foreground and out of focus, and the arm clearly runs back to his own shoulder. Beyond him Mr Blue and Mr Red, side by side, have both stopped chewing and lifted their heads at the same moment toward the same point high off the right edge of the frame, forks in mid-air. Egg yolk on a plate, a ring of spilt tea, toast crumbs. Behind them is one steamed-up window and nothing else. One light source only, no fill: grey morning daylight through that window. The near side of every face falls into deep shadow."
+    },
+    {
+      "id": "s01c-blue",
+      "cast": [
+        "Mr Blue",
+        "Denise"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with a 50mm lens at plate height on a café table, close, looking up. Mr Blue fills the left two thirds of the frame, hunched over a full English breakfast with his mouth full, in the middle of saying something, a fork loaded with sausage jabbing toward the lens and out of focus. He looks down at his plate. A red sauce bottle towers at the right edge, out of focus. Behind his shoulder, soft, Denise stands waiting with a stack of dirty plates up one arm, watching the back of his head with a flat face. Behind her is a tiled café wall and nothing else. One light source only, no fill: grey morning daylight through a steamed-up window on the left. The right side of his face falls into deep shadow."
+    },
+    {
+      "id": "s01d-red",
+      "cast": [
+        "Mr Red",
+        "Denise"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with a 50mm lens at plate height on a café table, close, looking up. Mr Red fills the right two thirds of the frame, one hand pressed flat on his chest over his tie, the other raised with one finger up, mouth open in the middle of a sentence, eyes lifted to the ceiling. A brown sauce bottle towers at the left edge, out of focus, beside a plate of toast crusts. Behind his shoulder, soft, Denise stands with a stack of dirty plates up one arm, looking at the side of his head with a flat face. Behind her is a tiled café wall and nothing else. One light source only, no fill: grey morning daylight through a steamed-up window on the left. The right side of his face falls into deep shadow."
+    },
+    {
+      "id": "s01e-denise",
+      "cast": [
+        "Denise"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with a 24mm lens resting on a café table top, looking steeply up. Denise stands over the table, seen from below, a tall stack of dirty plates balanced up one forearm, looking down past the lens with one eyebrow slightly raised and her mouth shut in a thin line. The rim of a plate smeared with bean sauce and a crumpled paper napkin cut into the bottom of the frame, out of focus. The dark shoulders of two men in black suits cut in at the left and right edges, out of focus, turned away from her. Above her is a stained ceiling tile and a strip light that is switched off. One light source only, no fill: grey morning daylight through a steamed-up window on the left. The right side of her face falls into deep shadow."
+    },
+    {
+      "id": "s02b-shut-shops",
+      "cast": [
+        "Denise"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with a 35mm lens set down on the pavement of a British high street at dusk, looking along it at ankle height. A torn bin bag and a flattened drink can lie in the near foreground, out of focus. In the middle distance Denise walks away from the lens, small, in a coat over her apron, a carrier bag in one hand, mid-stride. Beside her runs a row of shops with their steel shutters down and whitewashed windows; nothing is open. At the far end of the street stands the dark stone front of a bank with tall columns. It has just rained and the pavement is wet. One light source only, no fill: one orange sodium street lamp above her, making a pool of light on the wet pavement. Everything beyond it falls away to blue-black."
+    },
+    {
+      "id": "s02c-bank-door",
+      "cast": [
+        "Denise"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with a 24mm lens on the ground at the foot of a huge stone bank at night, looking steeply up its columns. The fluted base of one column fills the left third of the frame, out of focus. At the bottom right, tiny against the building, Denise lets herself in at a small side door with a key, an upright vacuum cleaner standing beside her. The upper two thirds of the frame is dark stone and dark sky with nothing in it. One light source only, no fill: a single caged lamp over the side door. The rest of the building falls away to black."
+    },
+    {
+      "id": "s03a-hearing",
+      "cast": [
+        "The Ex"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with a 50mm lens resting on a long committee table, looking across it. A water jug and a desk microphone on a bent stalk stand in the near foreground, out of focus, and the dark shoulders of two seated people cut in at the left and right edges, seen from behind. Facing them, alone on a single wooden chair in the middle of a bare floor, The Ex sits with his hands folded in his lap and a small patient smile, looking at the people across the table. A clear plastic bag of belongings stands on the floor by his shoe. Behind him is a wood-panelled wall with one closed door and nothing else. One light source only, no fill: one lamp directly above his chair. The people at the table are black shapes."
+    },
+    {
+      "id": "s04b-fixer",
+      "cast": [
+        "The Fixer"
+      ],
+      "lens": true,
+      "body": "A frame from a feature film, shot on 35mm with a 28mm lens resting on a white restaurant tablecloth, looking up from between the plates. An oyster shell and a smeared wine glass stand in the near foreground, out of focus. The Fixer, a napkin tucked into his collar, has just looked up from his plate straight into the lens with his mouth full and a loaded fork halfway to it, caught in the act, off-centre to the right. Behind him is a dark dining room of empty chairs and nothing else. One light source only, no fill: one small shaded lamp on the table, lighting him from below. The room falls away to black."
+    },
+    {
+      "id": "s04c-donor",
+      "cast": [
+        "The Donor"
+      ],
+      "lens": true,
+      "body": "A frame from a feature film, shot on 35mm with a 35mm lens floating at the surface of a swimming pool, looking up at the pool's edge. The water line crosses the bottom of the frame, out of focus. The Donor sits on a sun lounger at the edge in a white towelling robe, off-centre to the left, lowering his sunglasses with one finger to look straight down into the lens, unimpressed. A glass with a paper straw and a folded newspaper lie on the paving by his foot. Behind him is one blank white house wall and nothing else. One light source only, no fill: low hard evening sun from the right, throwing his long shadow up the wall."
+    },
+    {
+      "id": "s04d-governor",
+      "cast": [
+        "The Governor"
+      ],
+      "lens": true,
+      "body": "A frame from a feature film, shot on 35mm with a 28mm lens resting on a huge leather-topped desk, looking up. A brass desk lamp with a green glass shade and the back of a brass nameplate stand in the near foreground, out of focus. The Governor sits in a high-backed leather chair that he has just swung round to face the lens, fingertips together, looking straight into it over his glasses, off-centre to the right. A stack of files and a cold cup of tea are on the desk. Behind him is dark wood panelling and nothing else. One light source only, no fill: the green-shaded desk lamp. The room falls away to black."
+    },
+    {
+      "id": "s04e-proprietor",
+      "cast": [
+        "The Proprietor"
+      ],
+      "lens": true,
+      "body": "A frame from a feature film, shot on 35mm with a 20mm lens on the oily floor of a newspaper print hall, looking steeply up. A blurred band of newsprint rushes across the top of the frame on steel rollers, out of focus. The Proprietor stands over the lens leaning on a black walking stick, and holds a rolled-up newspaper upright in his other fist like a stick of dynamite, looking straight down into the lens with contempt. Ink stains and a rag on the floor at the bottom edge. Behind him is the dark iron side of a printing press and nothing else. One light source only, no fill: one caged work lamp on the press behind him, rimming his head and shoulder. His face is mostly in shadow."
+    },
+    {
+      "id": "s04f-presenter",
+      "cast": [
+        "The Presenter"
+      ],
+      "lens": true,
+      "body": "A frame from a feature film, shot on 35mm with a 50mm lens placed where a dressing-room mirror would be, looking at the person in the make-up chair. Out-of-focus bare mirror bulbs run down the left and right edges of the frame. The Presenter sits in the chair with a paper tissue bib tucked round his collar, smiling a perfect professional smile straight into the lens, while a hand comes in from the left edge pressing a powder brush to his cheek. A can of hairspray and a half-eaten sandwich are on the counter at the bottom edge. Behind him is a dark dressing room and nothing else. One light source only, no fill: the mirror bulbs, flat on his face. Everything behind him is black."
+    },
+    {
+      "id": "s04g-platform",
+      "cast": [
+        "The Platform"
+      ],
+      "lens": true,
+      "body": "A frame from a feature film, shot on 35mm with a 50mm lens at chest height in a dim corridor. An assistant in a grey suit, whose head is cut off by the top of the frame, holds an open laptop up in both hands toward the lens. The laptop screen fills the middle of the frame, a little off-centre and tilted, and shows a video call with The Platform, his face too close to his webcam, looking straight out, expressionless. The assistant's lanyard and a coffee stain on his shirt are visible. Behind is a dark empty corridor and nothing else. One light source only, no fill: the glow of the laptop screen, lighting the assistant's hands and shirt. The corridor falls away to black."
+    },
+    {
+      "id": "s04h-accountant",
+      "cast": [
+        "The Accountant"
+      ],
+      "lens": true,
+      "body": "A frame from a feature film, shot on 35mm with a 20mm lens on the floor of a records room, looking up at a tall grey steel filing cabinet. The open bottom drawer, stuffed with brown files, juts into the near foreground, out of focus. The Accountant is climbing out of the open middle drawer, folded up small, one leg and both arms out, his glasses crooked, looking straight into the lens with a small pleased smile. Loose paper has spilled on the floor. Behind him are shelves of dusty box files and nothing else. One light source only, no fill: one fluorescent tube overhead with one end gone dark. The corners of the room are black."
+    },
+    {
+      "id": "s04i-drivers-freeze",
+      "cast": [
+        "Mr Blue",
+        "Mr Red"
+      ],
+      "lens": true,
+      "body": "A frame from a feature film, shot on 35mm with a 24mm lens resting on a television studio desk, looking up. Two water glasses and a desk microphone stand in the near foreground, out of focus. Behind the desk Mr Blue and Mr Red stand close together with an arm round each other's shoulders like old friends, ties loosened, both grinning straight into the lens, Mr Blue slightly nearer and larger. Crumpled script pages lie on the desk. Behind them is a dark studio with one television camera whose tally light is off, and nothing else. One light source only, no fill: one hard studio lamp high on the right. The left side of both faces falls into deep shadow."
+    },
+    {
+      "id": "s04j-turquoise",
+      "cast": [
+        "Mr Turquoise"
+      ],
+      "lens": true,
+      "body": "A frame from a feature film that imitates a phone's front camera held at arm's length: wide, slightly distorted, not level. Mr Turquoise fills the left two thirds of the frame, one arm stretching out of the bottom corner toward the lens as if holding it, grinning straight into it with his eyebrows up, mid-word. Over his shoulder on the right, soft, a white van stands with its side door open and men in black suits sit inside it ignoring him. A grey car park in drizzle and nothing else. One light source only, no fill: flat grey overcast daylight from above. His eye sockets are in shadow."
+    },
+    {
+      "id": "s05b-blue-side",
+      "cast": [
+        "The Proprietor"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with an 18mm lens standing in the street of a cardboard model town, at the height of a toy figure. Small cardboard terraced houses run away on both sides, each with a paper price tag on a cocktail stick, glue strings and pencil marks showing. The windows of the houses on the left side glow blue from inside; the houses on the right are dark. Above the rooftops, enormous, The Proprietor leans in and holds a small photograph of a small boat on a grey sea between finger and thumb, looking at the photograph, pleased. Behind him is darkness and nothing else. The only light is the blue glow of the model houses, lighting the underside of his face. Everything else is black."
+    },
+    {
+      "id": "s05c-red-side",
+      "cast": [
+        "The Platform",
+        "Mr Red"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with an 18mm lens standing in the empty street of a cardboard model town, at the height of a toy figure. Small cardboard terraced houses run away on both sides, each with a paper price tag on a cocktail stick; the prices are handwritten in British pounds and are too small and soft to read. The windows of every house on the left glow strong blue from inside and the windows of every house on the right glow strong red. The cardboard street between them is empty. Above the rooftops on the right, enormous, a pair of hands holds an open laptop showing The Platform on a video call, and beside it Mr Red leans in, frowning down at the model, puzzled, one finger half raised to ask a question. Behind them is darkness and nothing else. The only light is the glow of the model houses, blue from the left and red from the right. Everything else is black."
+    },
+    {
+      "id": "s05d-twist",
+      "cast": [
+        "The Ex",
+        "The Donor",
+        "The Accountant"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with an 85mm lens at the edge of a trestle table in a lock-up garage, close. The Ex is in sharp profile on the left, close to the lens, looking down with a small calm smile. Past him, further back and the only face in full light, The Accountant has begun a slow delighted smile, eyes shining behind his glasses. On the right edge, dark and out of focus, The Donor's shoulder and jaw are turned toward The Ex. A cardboard rooftop and a paper price tag on a cocktail stick cut into the bottom of the frame, out of focus. Behind them is a bare breeze-block wall and nothing else. One light source only, no fill: one bare bulb hanging above the table. The far sides of the faces fall into deep shadow."
+    },
+    {
+      "id": "s06a-list",
+      "cast": [
+        "The Ex",
+        "Mr Turquoise",
+        "Mr Blue"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with a 20mm lens on the concrete floor of a lock-up garage, looking up. An oil stain and a crushed polystyrene cup lie in the near foreground, out of focus. The Ex stands reading from a clipboard, eyes down, pencil in hand. Facing him, Mr Turquoise has both palms turned up in protest, mouth open, offended. Behind them Mr Blue jerks a thumb over his shoulder at a white van seen through a half-open roller door. Behind them is the garage's corrugated wall and nothing else. One light source only, no fill: one bare bulb hanging above them, throwing their long shadows toward the lens. The corners of the garage are black."
+    },
+    {
+      "id": "s07b-off-record",
+      "cast": [
+        "The Presenter",
+        "The Proprietor"
+      ],
+      "body": "A frame from a cheap hand-held camcorder with its own small light switched on, too close and tilted. The Presenter bends down to speak into the ear of The Proprietor, one hand shielding his mouth, a champagne flute in the other, smiling. The Proprietor sits in a folding chair with his walking stick between his knees, staring straight ahead, not smiling. A chocolate fountain cuts into the near left foreground, out of focus, with a dropped strawberry on the tablecloth. Behind them is the pale lining of a marquee and nothing else. The only light is the camcorder's own lamp, flat and harsh on the two faces. Everything behind them falls off to black."
+    },
+    {
+      "id": "s07c-denise-hall",
+      "cast": [
+        "Denise"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with a 24mm lens fixed high in the corner of a marble banking hall at night, like a security camera, looking down. The curved brass arm of a ceiling lamp cuts across the near foreground, out of focus. Below, alone on a wide chequered marble floor, Denise pushes an old upright vacuum cleaner with her head down, its flex trailing a long way behind her across the tiles to a wall socket. Rows of empty counters with green-shaded desk lamps stand along one side, all switched off except one. One light source only, no fill: that one green desk lamp, throwing her long shadow across the floor. The rest of the hall falls away to black."
+    },
+    {
+      "id": "s08a-placards",
+      "cast": [],
+      "body": "A frame from a feature film, shot on 35mm with an 85mm lens at chest height inside a crowd, looking across a steel crowd barrier. Two hand-painted cardboard placards on wooden sticks are held up by gloved hands, one on each side of the barrier: the left placard has a red painted border, the right placard has a blue painted border. Each placard reads, in the same uneven black hand-painted capitals, \"WE CAN'T AFFORD TO LIVE HERE\". The bottom of each placard is hidden behind the backs of woolly hats and hoods in the foreground, out of focus. The cardboard is rain-spotted and one corner is bent. Behind are the dark stone columns of a bank and nothing else. One light source only, no fill: flat grey overcast daylight from above. The faces under the hoods are in shadow."
+    },
+    {
+      "id": "s08b-remote-window",
+      "cast": [],
+      "body": "A frame from a feature film, shot on 35mm with a 35mm lens inside a dark upstairs room, close behind a man's hand. The hand, in a black suit sleeve with a white shirt cuff, is large and sharp in the right foreground and holds a television remote control pointed out through a dusty sash window. Through the glass, far below and soft, two crowds fill a street, one under plain red cloth flags and one under plain blue cloth flags, with an empty strip of road between them. An open laptop sits on the window sill at the left edge beside a dead fly. One light source only, no fill: grey daylight through the window. The room is black."
+    },
+    {
+      "id": "s08c-megaphones",
+      "cast": [
+        "Mr Blue",
+        "Mr Red"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with a 20mm lens on the wet tarmac of a British high street, in an empty strip of road between two lines of steel crowd barriers, looking up, not quite level. A dense crowd in winter coats is packed behind each barrier, faces turned up. On the left, rising above his crowd, Mr Blue stands on an upturned crate shouting into a megaphone and pointing across the frame to the right; he is nearer and larger. On the right, further off, Mr Red stands on his own crate above his crowd, shouting into his own megaphone and pointing back to the left. Their pointing arms cross against a grey sky. Plain blue cloth flags rise from the crowd on the left and plain red cloth flags from the crowd on the right. Shuttered shop fronts line both sides and the stone columns of a bank close the far end of the street. A spent flare and a trampled paper cup lie in the near foreground, out of focus. One light source only, no fill: flat grey overcast daylight from above. Their eye sockets are dark."
+    },
+    {
+      "id": "s08d-presenter",
+      "cast": [
+        "The Presenter"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with a 35mm lens at waist height at dusk, standing just beside a television news camera. The blurred edge of the news camera and a furry microphone cover cut into the left foreground. The Presenter stands holding a hand microphone with one finger pressed to his earpiece, speaking with a professionally concerned frown toward the news camera off the left edge. Directly behind him, huge and soft, rise the stone columns and brass doors of a bank. At the far left and right edges, small, are crowds under plain red and plain blue cloth flags. A coil of cable lies on the cobbles at his feet. One light source only, no fill: one small battery lamp on the news camera, flat on his face. Everything behind him is dim dusk."
+    },
+    {
+      "id": "s09a-officer",
+      "cast": [
+        "The Ex",
+        "The Fixer"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with a 24mm lens on wet cobbles at boot height, looking up. A police officer in plain yellow police hi-vis with two silver reflective bands, cut off at the shoulders by the top of the frame, swings one end of a steel crowd barrier aside with gloved hands; the barrier's foot is large in the near foreground, out of focus. In the gap he has opened The Ex stands waiting with his hands in his coat pockets, giving a small nod of thanks. Behind The Ex, The Fixer leans on the handle of a pallet truck stacked with shrink-wrapped blocks of paper, chewing. Behind them drifts red smoke and nothing else. One light source only, no fill: a red flare burning on the ground at the left edge. The far sides of the faces are black."
+    },
+    {
+      "id": "s09c-pallet",
+      "cast": [
+        "Mr Blue",
+        "Mr Red"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with an 18mm lens on the tarmac, looking up at a load being carried over it. A wooden pallet stacked with shrink-wrapped blocks of paper crosses the middle of the frame at knee height. Mr Blue carries the left end, walking backwards, and Mr Red carries the right end; both are red in the face with their mouths open, shouting at each other over the top of the load. A steel crowd barrier and the turned backs of a crowd run along the bottom edge behind them, out of focus. Above them is a grey sky with drifting blue smoke and nothing else. One light source only, no fill: flat grey overcast daylight from above. The undersides of their faces are in shadow."
+    },
+    {
+      "id": "s09d-door",
+      "cast": [
+        "The Governor"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with a 24mm lens on the doormat just inside the entrance of a bank, looking up and out. A security guard in a grey uniform, seen from behind and out of focus at the left edge, holds a tall brass door open. Coming in through the doorway, The Governor adjusts his cuff and gives the guard a small nod; a cheap cardboard carnival mask of a cartoon face is pushed up on top of his head. On the steps behind him, small, men in black suits are pulling on the same kind of cardboard masks. A wet leaf is stuck to the mat. One light source only, no fill: daylight coming in through the open doorway. The inside of the bank is black."
+    },
+    {
+      "id": "s09e-turquoise",
+      "cast": [
+        "Mr Turquoise"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with a 20mm lens on the marble floor of a bank lobby, looking up. A toppled wooden pallet and spilled shrink-wrapped blocks of paper lie across the near foreground, out of focus. Mr Turquoise stands off-centre with one arm straight up above his head and a little plaster dust falling on his shoulders, while he looks down at the phone in his other hand, checking it, hopeful. Behind him, small, a heavy man in a black suit sits on a pallet eating a sandwich. Behind them is a dark marble wall and nothing else. One light source only, no fill: one green-shaded desk lamp on a counter at the right. The rest of the lobby falls away to black."
+    },
+    {
+      "id": "s10a-enter",
+      "cast": [
+        "Denise"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with a 50mm lens at shoulder height, from behind a group of men. The dark backs and shoulders of three men in black suits fill the left and right foreground, out of focus, frozen. In the gap between them, small and sharp at the far end of a marble banking hall, Denise stands in an open staff doorway in a cleaner's tabard, one hand on an upright vacuum cleaner, looking at the men with no expression at all. A yellow wet-floor sign stands beside her. One light source only, no fill: the lit doorway behind her, throwing her long shadow across the floor toward the lens. The hall around her is black."
+    },
+    {
+      "id": "s10c-that-much",
+      "cast": [
+        "Denise"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with an 85mm lens, very close. Denise's raised hand is in the near foreground, sharp, with her finger and thumb held about an inch apart. Just behind it her face, slightly soft, looks past the hand at someone off the left edge of the frame, tired and matter-of-fact, mouth open in the middle of a word. She wears a cleaner's tabard, and the handle of a vacuum cleaner crosses the bottom corner. The dark shoulder of a man in a black suit cuts in at the left edge, out of focus. Behind her is dark marble and nothing else. One light source only, no fill: one green-shaded desk lamp on the right. The left side of her face falls into deep shadow."
+    },
+    {
+      "id": "s10d-counting",
+      "cast": [
+        "Denise"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with a 35mm lens low behind a woman's shoulder. The back of Denise's head and one shoulder in a cleaner's tabard fill the right foreground, dark and out of focus. Past her, down a long marble corridor, two men in black suits wheel pallet trucks stacked with shrink-wrapped blocks of paper away from the lens, toward an enormous round steel vault door standing open at the far end. A trail of dirty wheel marks runs down the floor. One light source only, no fill: cold strip light spilling out of the open vault at the end of the corridor. The corridor walls fall away to black."
+    },
+    {
+      "id": "s11b-in",
+      "cast": [
+        "The Ex"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with a 24mm lens on the floor inside a bank vault, looking out toward its round doorway. Stacked shrink-wrapped blocks of paper fill the left foreground, out of focus, and the steel forks of a pallet truck slide in at the bottom edge. Just inside the doorway The Ex stands with one hand lifted, palm down, reassuring, speaking over his shoulder. Outside the doorway, small, a security guard in a grey uniform stands with his cap in his hand and his mouth open, baffled. Scuffed concrete and a torn strip of plastic wrap on the floor. One light source only, no fill: one strip light in the vault ceiling. The room beyond the doorway is black."
+    },
+    {
+      "id": "s11c-keys",
+      "cast": [
+        "The Donor"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with a 20mm lens placed inside an open steel safe-deposit box, looking out. The dark steel walls of the box frame the picture on all four sides. The Donor's face looks in from outside, bored, as his hand reaches in toward the lens for a single brass house key on a paper tag that lies in the near foreground, out of focus. A heavy plain white carrier bag with nothing printed on it hangs from his other wrist, bulging with keys. Behind him, soft, is a wall of small numbered steel doors, several hanging open, and nothing else. One light source only, no fill: one strip light overhead behind him. The inside of the box is nearly black."
+    },
+    {
+      "id": "s11d-pricetags",
+      "cast": [],
+      "body": "A frame from a feature film, shot on 35mm with a 60mm macro lens standing in the street of a cardboard model town, at the height of a toy figure. In the middle distance, sharp, stands a tiny cardboard café with a tiny flat above it, hand-cut windows and pencil marks showing. In front of it a paper price tag on a cocktail stick is caught mid-turn, flipping over, slightly blurred by its movement. The price tags on the houses nearer the lens and further away are out of focus, and the handwriting on them is too small and soft to read. A blob of dried glue and a dropped matchstick lie in the cardboard road. Behind the houses is a dark empty garage and nothing else. One light source only, no fill: one bare bulb hanging high above the model. The far end of the street falls away to black."
+    },
+    {
+      "id": "s12d-lowering",
+      "cast": [
+        "Mr Blue",
+        "Mr Red",
+        "The Governor"
+      ],
+      "body": "A frame from a feature film, shot on 35mm with a 24mm lens on the marble floor of a bank corridor, looking up. Mr Blue on the left and Mr Red on the right stand with their arms hanging loose at their sides and their hands empty and open, shoulders slumped. Both look up toward the ceiling with their mouths slightly open, confused. Between them and further back, The Governor calmly polishes his glasses on his tie. A round alarm bell on the wall behind them is silent and its lamp is switched off. A dropped cardboard carnival mask lies on the floor at the bottom edge, out of focus. Behind them is a plain painted wall and nothing else. One light source only, no fill: one cold strip light on the ceiling behind them. Their faces are half in shadow."
+    },
+    {
+      "id": "s12e-sold",
+      "cast": [],
+      "body": "A frame from a feature film, shot on 35mm with a 50mm lens inside a dark staff room at night, looking out through a rain-streaked sash window. The window frame and a chipped mug on the sill cut into the near foreground, out of focus. Across a narrow street, sharp, stands a small café with its shutter down and a flat above it. A man on a ladder is fixing an estate agent's board to the wall beside the flat's dark window. The board reads \"SOLD\" in bold white capital letters on red. A wet pavement and a parked bicycle below. One light source only, no fill: one orange street lamp beside the café. The flat's window is dark and the room we are in is black."
+    },
+    {
+      "id": "s12f-kebab",
+      "cast": [],
+      "body": "A frame from a feature film, shot on 35mm with a 35mm lens low on the wet pavement of a narrow British street at night, looking up and across the road, not quite level. The kerb and a puddle fill the near foreground, out of focus. Across the road a small kebab shop is the only lit shop in a row of shuttered ones. Its shop front has no lettering on it. Instead, a box sign sticks out from the wall above the shop on a steel bracket, at a right angle to the building, hanging over the pavement like an old seaside takeaway sign: a deep dark-blue metal box with a glass front, a row of bare clear light bulbs along its top edge and another along its bottom edge, and a black cable running up the wall. Inside the box, in looping hand-bent neon tubes like handwriting, is one word of exactly seven lowercase letters: \"badcode\". Six of the letters, b, a, d, c, d and e, are white neon, and the single letter o, the fifth of the seven, is one solid red glowing disc. There is only one o. On the narrow side face of the box, red neon capitals read \"OPEN\" from top to bottom. Through the steamed-up window, soft, a doner spit turns and one man stands behind the counter. Bin bags by the door. The only light is the neon box sign and the shop window under it, reflected in the wet road. Everything else is black."
+    }
+  ]
+}

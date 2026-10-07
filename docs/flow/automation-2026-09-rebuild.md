@@ -358,3 +358,25 @@ already have.** Compare ids before trusting a file, and start a new project well
 57. `scripts/bank-robbery/br-videos.mts` (a copy of the Camping re-cut runner) made 15 of 15 clips.
     `VIDEO_OPTION_UNAVAILABLE: Frames on Omni 1.1 Flash` came on the first call of each process
     and cleared on the built-in retry, as in the 2026-09-29 entry.
+
+## 2026-10-07 — 39 cast stills in one run (project `63d22c4b`)
+
+58. 🔴 **The by-hand cast script chose the wrong tab.** `cast-many-v3.mjs` takes the first page
+    whose URL contains `flow.google.com`. With a second Flow tab open on the home page it took
+    that one and timed out after two minutes waiting for the prompt box. `cast-many-v4.mjs` takes
+    the page whose URL contains `flow.google.com/project/`. Check the tab before blaming the box.
+59. **Item 56's fix held:** one ordinary `flow_generate_image` call (Nano Banana 2, 16:9, one
+    output) was made first to put the bar back in image mode, and every by-hand cast after it made
+    a still.
+60. **39 of 39 stills, about 75 seconds each,** through `scripts/bank-robbery/br-stills-v3.mjs`,
+    which calls the cast script once per shot, skips files already on disk and logs each result.
+    Shots with no Character went through the same script with no names and worked.
+61. 🔴 **Item 56 happened again (2026-10-07), with a worse symptom.** After a run of clips, a by-hand
+    cast for a still ran with the bar in video mode. It made a clip, and the script then saved the newest
+    tile's poster as the "still": a 1280×720 video frame with none of the cast in it. **Check a redone
+    still's size: 1376×768 is a still, 1280×720 is a video frame.** The fix is the same: one ordinary
+    still call first.
+62. 🔴 **After the session restarted, the flow MCP server was on a different channel** (channel 3, port
+    9224, on the "about" page) while the working, signed-in browser was still channel 1 on 9222. Every
+    MCP call timed out. Scripts pinned with `FLOW_CDP_PORT=9222` kept working. `flow_status` shows the
+    channel; read it before retrying.

@@ -2513,3 +2513,31 @@ Fifteen clips, Omni 1.1 Flash, Frames, 720p, 8 s, x1. Prompts and results:
   changed a woman's face and clothes; "stays where she is... eyes down on the lock" held. "Lowers
   her arm" grew lettering on an apron; "holds still... her apron is plain dark blue cloth and
   stays plain" did not. Same start frames, one take each, judged from five frames a clip.
+
+## The Bank Robbery dialogue clips — 2026-10-07 `[observed]`
+
+58 generations, Omni 1.1 Flash, Frames, 720p, 8 s, x1, a Character chip per speaker, project `63d22c4b`.
+Prompts and results: `docs/stories/bank-robbery/clips-v3.md`. Sound judged by one machine listener
+(Gemini 3.5 Flash); pictures from four frames a clip. **No person has watched or listened.**
+
+- `[observed, n=32]` **`He says:` with no quotation marks gave the exact words in every talking clip,**
+  at a pace the listener called natural. Lines were kept to about twelve words. No laughter, no audience.
+  The opening sentence was "A locked-off shot from a scripted feature film, a slow dark drama with made-up
+  characters played by actors on a closed set. One continuous shot with no cuts."
+- 🔴 `[observed, n=10, one machine listener]` **With two Character chips attached, most two-speaker clips
+  were heard as one voice saying both lines** (6 of 10). The words were still right and in order.
+- `[observed, n=1 pair]` **Two men told to "carry on" arguing after their lines invented more lines.**
+  "Those are the only three words spoken. After that they glare at each other in silence" gave just the
+  two shouts on the re-roll.
+- `[observed, n=1]` Asking two men to shout the same words "at the same moment" gave the line twice in
+  what sounded like one voice.
+- 🔴 `[observed, n=1 then n=1]` **A figure at a committee table asking a question into a microphone was
+  refused ("reputational risk or misrepresent current events")** with the fiction sentence already first.
+  The same question as "A woman's voice from off screen says:", with no microphone and four short
+  sentences, passed. Which change mattered is not known.
+- 🔴 `[observed, n=6 against n=1]` **One generated still was refused as an upload six times** (two
+  versions of it, with and without pistols), and **a copy scaled to 1280×720 with light grain added was
+  accepted first time.** Cause unknown. It joins item 55 in `docs/flow/automation-2026-09-rebuild.md`
+  (a generated portrait refused as an upload); the same Character's face is in both.
+- `[observed, n=1]` A low synth drone came back under one spoken clip with "No music" in the prompt, as
+  seen on Money For Something.

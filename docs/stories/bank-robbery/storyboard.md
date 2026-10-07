@@ -1,5 +1,12 @@
 # The Bank Robbery — storyboard, first pass (6 October 2026)
 
+> 🔴 **Superseded in part, 7 October 2026.** The script was gone through scene by scene with Jack
+> and is now the record of what the film is: [`script.md`](./script.md). It differs from this file
+> in ways that matter: the narrator no longer gives away the ending in scene 2; scene 4 is an 80s
+> name-card montage; scenes 13 (the fountain) and 14 (one bill) are cut; and **the film ends on
+> Denise's SOLD sign, then a kebab shop's `badcode` neon sign.** This file is left as written.
+
+
 **Written to be argued with. Nothing is ruled, and neither Jack nor Kai has gone through it.**
 
 - **Fourteen scenes, about five and a half minutes.** Length is a guess; nothing has been timed.

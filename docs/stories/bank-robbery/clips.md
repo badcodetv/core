@@ -241,3 +241,25 @@ The camera is locked off and does not move. The woman keeps her arm raised with 
 
 **Credits:** three more clips at about 12 each, so about 225 for the day by the price list. The
 balance was not read.
+
+## Premiere
+
+**Project:** `/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/bank robbery/bank robbery.prproj`
+**Sequence:** `bank robbery - scenes in order` — 1280×720 @ 24, 120 s (settings taken from the clips)
+**Built:** 2026-10-07 by session (bridge), asked for by Jack. The project was empty before.
+
+**Bin:** `01-scenes` — the fifteen clips from `vids\` (the redone takes of 2, 3 and 14; nothing
+from `vids\replaced\`).
+
+| Track | What |
+| --- | --- |
+| V1 | `s01-breakfast` 0→8 · `s02-spoiler` 8→16 · `s03-getting-out` 16→24 · `s04-recruiting` 24→32 · `s05-plan` 32→40 · `s06-colours` 40→48 · `s07-night-before` 48→56 · `s08-march` 56→64 · `s09-walk` 64→72 · `s10-hoover` 72→80 · `s11-vault` 80→88 · `s12a-standoff` 88→96 · `s12b-count` 96→104 · `s13-fountain` 104→112 · `s14-one-bill` 112→120 |
+| A1 | Each clip's own Flow sound, same times |
+
+**Applied:** nothing. Straight cuts, whole clips, storyboard order. No trims, effects, grade or
+transitions.
+
+**Checked:** the order and times, read back from the bridge's state file; and one frame by eye
+(76 s, scene 10, the hoover: fills the frame, no black edges). Frame:
+`frames\bank robbery - scenes in order-76s.png.png`. Not watched end to end, and the sound is
+still unchecked. Project saved.

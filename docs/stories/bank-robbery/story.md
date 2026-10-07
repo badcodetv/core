@@ -9,6 +9,13 @@ media: [video, comic]
 
 # The Bank Robbery
 
+> 🔴 **Superseded in part, 7 October 2026.** The script was gone through scene by scene with Jack
+> and is now the record of what the film is: [`script.md`](./script.md). It differs from this file
+> in ways that matter: the narrator no longer gives away the ending in scene 2; scene 4 is an 80s
+> name-card montage; scenes 13 (the fountain) and 14 (one bill) are cut; and **the film ends on
+> Denise's SOLD sign, then a kebab shop's `badcode` neon sign.** This file is left as written.
+
+
 > **Source of truth** for the story. First pass, 6 October 2026, built from the inbox seed
 > [`docs/ideas/bank-robbery.md`](../../ideas/bank-robbery.md) and the changes told that day.
 > **Nothing here is ruled.** Method: [`storytelling.md`](../../storytelling.md) · tone:
