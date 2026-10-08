@@ -523,3 +523,63 @@ read aloud.
   every night: an owner, a donor, a governor, each with a job title. "Shadowy elite" is also the
   shape that old conspiracy theories about bankers come in, and this is a film about a bank.
 - **Make either crowd the joke.** Scene 8 stays as written: both crowds are right to be angry.
+
+---
+
+## Jack's notes on cut 4 (8 October 2026, late): what they change in the script
+
+> "them moving the model stuff around, just remove all of those scenes… remove any model town stuff or anything
+> similar it just does not work." · "there needs to be a panning shot of the cafe being open at the beginning, so
+> that it comes full circle of it being closed at the end." · "show the full English breakfast, things
+> right-wingers will like, as in pride in being English… then the narrator talking about being proud to be
+> British. It should have a compilation of ww2 footage, pints, football and other English stuff… quick but
+> eye-grabbing." · "When Denise sees people robbing the bank, she should look at them, barely acknowledge them,
+> then keep hoovering, ask someone to move, and she cleans whatever is behind them, like a desk or something,
+> with bleach and a rag." · "We need to take the piss more out of the left and the right wing, more conversations
+> about it, then the powerful people, as the politicians laugh at them for falling for it."
+
+### Scene 0 — Proud (new, before breakfast)
+
+The café open on a wet morning (the same corner that is shuttered and SOLD at the end), then a fast run of things
+to be proud of: the full English, the tea, the fry-up, a pint, park football, bunting, fish and chips, and real
+footage from the war.
+
+| # | Who | Line | Whose |
+| --- | --- | --- | --- |
+| 1 | Narrator | Proud to be British. Full English. Proper pint. The football. Two world wars and one world cup. Best country on God's earth. Shame about the bastards who own it. | 🔴 **Mine, a placeholder. Jack writes the jokes.** Recorded as `n00-s00-proud` (13 s) so the cut can be watched |
+
+**What the line has to do, whatever the words:** the pride is meant and is never the joke; the turn at the end
+points at the owners, which is where scene 1's "silver spoon twats" picks up.
+
+### Scene 5 — The plan, without the model
+
+The model town is gone from the film. Beats 1 to 3 are re-shot at a bare table (`s05h-table`). Beat 15 (the Ex
+pushing the two crowds together) is cut. 🔴 **Beats 12 and 13 are cut with it** ("And her?" / "She keeps every
+penny"), because the Fixer was pointing at a tiny figure on the model. With the savings book also gone from the
+ending, nobody now says that Denise keeps her money and loses anyway. If the line matters, it needs a new picture
+to hang on.
+
+### Scene 8 — more on left and right, and the men laughing
+
+Two pictures are in cut 5 with no new lines:
+
+- **Two protesters, a red scarf and a blue scarf, the same tired face, filming each other nose to nose** while
+  the money is wheeled past in the gap between them. Under the narrator's "Nobody films it. Every phone in the
+  street is pointed at a neighbour", which was cut from cut 2 for want of a picture and is now back.
+- **Mr Blue and Mr Red upstairs in the dark room, megaphones dumped on the table, crying with laughter at the
+  street.** No line.
+
+**"More conversations about it" is not written.** These are briefs, with the lines left for Jack:
+
+| # | Where | What it has to convey | What there is to joke about | Line |
+| --- | --- | --- | --- | --- |
+| A | Red scarf and blue scarf at the barrier | They are angry about the same rent, and each has been handed someone else to blame | Each one's complaint is word for word the other's until the last three words | *(Jack)* |
+| B | The same two, later, sharing a light or a flask | Off the barrier they get on | They agree about everything except who to shout at tomorrow | *(Jack)* |
+| C | Mr Blue and Mr Red at the window | They wrote both speeches, and know it | Whose crowd is angrier; marks out of ten; one of them wants to swap sides for a change | *(Jack)* |
+| D | The Proprietor and the Platform | The row is a product and it sold well today | Circulation figures against "engagement" | *(Jack)* |
+
+🔴 **One thing to rule before A to D are written (Jack and Kai).** `docs/marketing/the-reader.md` says the reader
+is a working-class person drifting right, and that the piece must never tell them they have been duped; scene 8
+was signed off with "no joke in this scene is on the crowds". "Laughing at them for falling for it" sits right on
+that line. In cut 5 the laughing makes Mr Blue and Mr Red the bastards and the two protesters are filmed with the
+same face on purpose. How much further the piss-take goes into the crowd itself is a ruling, not a prompt.

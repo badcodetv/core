@@ -1,0 +1,113 @@
+   0.00   5.50  c5-s00a-cafe-pan.mp4                 the cafe, open: a pan
+   5.50   1.12  c5-s00b-full-english.mp4             proud: c5-s00b-full-english.mp4
+   6.62   1.12  c5-s00d-fry.mp4                      proud: c5-s00d-fry.mp4
+   7.75   1.12  c5-s00c-tea.mp4                      proud: c5-s00c-tea.mp4
+   8.88   1.12  c5-s00e-pint.mp4                     proud: c5-s00e-pint.mp4
+  10.00   1.12  c5-s00f-football.mp4                 proud: c5-s00f-football.mp4
+  11.12   1.12  ww2-01-spitfires-formation.mp4       proud: ww2-01-spitfires-formation.mp4
+  12.25   1.12  ww2-02-pilots-scramble.mp4           proud: ww2-02-pilots-scramble.mp4
+  13.38   1.12  c5-s00g-flags.mp4                    proud: c5-s00g-flags.mp4
+  14.50   1.12  ww2-03-home-guard-marching.mp4       proud: ww2-03-home-guard-marching.mp4
+  15.62   1.12  ww2-05-ve-day-crowd-union-jacks.mp4  proud: ww2-05-ve-day-crowd-union-jacks.mp4
+  16.75   1.12  ww2-06-st-pauls-floodlit-ve-night.mp4 proud: ww2-06-st-pauls-floodlit-ve-night.mp4
+  17.88   1.12  c5-s00h-chippy.mp4                   proud: c5-s00h-chippy.mp4
+  19.00   4.42  s01-breakfast.mp4                    
+  23.42   5.12  hold-s01-table.mp4                   
+  28.54   3.54  s01c-blue.mp4                        
+  32.08   3.88  s01-breakfast.mp4                    
+  35.96   3.21  hold-s01-denise.mp4                  
+  39.17   4.79  s01b-remote.mp4                      
+  43.96   2.25  c2-t-s01c-blue.mp4                   
+  46.21   3.25  c2-t-s01d-red-1.mp4                  
+  49.46   3.71  c2-t-s01d-red-2.mp4                  
+  53.17   3.46  c2-t-s01e-denise-p.mp4               
+  56.62   2.42  s02-spoiler.mp4                      
+  59.04   2.21  s02b-shut-shops.mp4                  
+  61.25   3.58  c2b-text-title.mp4                   
+  64.83   1.50  c2b-card-three-weeks.mp4             
+  66.33   4.17  hold-s03-hearing.mp4                 
+  70.50   5.58  c2-t-s03a-hearing-1.mp4              
+  76.08   3.75  c2-t-s03a-hearing-2.mp4              
+  79.83   2.04  s03a-hearing-2.mp4                   
+  81.88   7.92  s03-getting-out.mp4                  
+  89.79   1.00  hold-s03-steps.mp4                   
+  90.79   2.08  c5-card-01-ex.mp4                    name over the moving shot
+  92.88   2.08  c5-card-03-donor.mp4                 name over the moving shot
+  94.96   0.92  s13-fountain.mp4                     no lettering: the fountain
+  95.88   2.08  c5-card-05-proprietor.mp4            name over the moving shot
+  97.96   2.08  c5-card-10-turquoise.mp4             name over the moving shot
+ 100.04   1.21  s04-recruiting.mp4                   no lettering: the row
+ 101.25   2.08  c5-card-09-drivers.mp4               name over the moving shot
+ 103.33   5.71  c5-t-s05h-table-a.mp4                talk
+ 109.04   5.83  c5-t-s05h-table-b.mp4                talk
+ 114.88   5.00  c4-paper-blue.mp4                    
+ 119.88   4.21  c4-paper-red.mp4                     
+ 124.08   2.79  c4-t-s05e-papers-1.mp4               
+ 126.88   6.92  c4-t-s05e-papers-2.mp4               
+ 133.79   4.33  c5-t-s05d-twist-1.mp4                cropped and shaded: no model in frame
+ 138.12   1.79  c5-s05d-twist-1.mp4                  cropped and shaded: no model in frame
+ 139.92   2.67  c5-hold-s05-accountant.mp4           cropped and shaded: no model in frame
+ 142.58   1.96  c5-t-s05d-twist-2.mp4                cropped and shaded: no model in frame
+ 144.54   6.25  c2-t-s06a-list-1.mp4                 
+ 150.79   1.71  c2-t-s06a-list-2.mp4                 
+ 152.50   3.92  c5-t-s06-colours-talk.mp4            cropped and shaded: no model in frame
+ 156.42   1.71  c5-s06-colours-talk.mp4              cropped and shaded: no model in frame
+ 158.12   7.79  c5-s06-colours.mp4                   cropped and shaded: no model in frame
+ 165.92   1.79  c3-s07-night-before.mp4              
+ 167.71   2.50  c4-s07d-pints.mp4                    
+ 170.21   2.58  c4-s07e-darts.mp4                    
+ 172.79   2.50  c4-s07f-pool.mp4                     
+ 175.29   2.58  c4-s07g-bucket.mp4                   
+ 177.88   4.00  c2-t-s07b-off-record.mp4             
+ 181.88   4.04  hold-s07-presenter.mp4               
+ 185.92   4.46  c2-t-s07c-denise-hall.mp4            
+ 190.38   5.04  hold-s07-hall.mp4                    
+ 195.42   1.50  c2b-card-bank-holiday.mp4            
+ 196.92   7.00  c4-s08a-placards.mp4                 
+ 203.92   7.92  c4-s08b-remote-window.mp4            
+ 211.83   4.00  c4-t-s08c-megaphones.mp4             
+ 215.83   6.33  c4-s08e-bank.mp4                     
+ 222.17   4.00  c5-s08g-laugh.mp4                    the two of them laughing at the street (the clip cuts itself closer at 3 s; this is the close half)
+ 226.17   3.71  c2-t-s08d-presenter.mp4              
+ 229.88   5.67  s08-march.mp4                        
+ 235.54   5.42  c2-t-s09a-officer-p.mp4              
+ 240.96   7.04  s09-walk.mp4                         the old walk: eating as he pushes
+ 248.00   4.58  c4-s09-walk.mp4                      the walk, riot look
+ 252.58   5.67  c5-s08f-argue.mp4                    red scarf and blue scarf, filming each other (a push on the still; Flow refused the clip)
+ 258.25   7.17  c3-s09c-pallet.mp4                   
+ 265.42   1.54  c2-t-s09d-door.mp4                   
+ 266.96   4.92  s09d-door.mp4                        
+ 271.88   2.46  hold-s09-door.mp4                    
+ 274.33   6.96  s09e-turquoise.mp4                   
+ 281.29   3.29  s10a-enter.mp4                       
+ 284.58   3.54  c2-t-s10-hoover-talk.mp4             
+ 288.12   4.58  c5-t-s10e-bleach.mp4                 talk: Shift. Then the bleach
+ 292.71   5.58  c2-t-s10c-that-much-1.mp4            
+ 298.29   1.96  c2-t-s10c-that-much-2.mp4            
+ 300.25   1.71  c2-t-s10d-counting-p.mp4             
+ 301.96   4.12  s10d-counting.mp4                    
+ 306.08   3.79  c2-t-s11-vault-talk.mp4              
+ 309.88   7.96  s11-vault.mp4                        
+ 317.83   4.71  c2-t-s11b-in.mp4                     
+ 322.54   1.08  s11b-in.mp4                          
+ 323.62   6.29  s10-hoover.mp4                       
+ 329.92   2.42  s10a-enter.mp4                       
+ 332.33   7.96  s11c-keys.mp4                        
+ 340.29   9.71  c4-s11e-cafe-for-sale.mp4            
+ 350.00   4.79  c4-t-s12g-standoff.mp4               
+ 354.79   4.42  c4-s12g-standoff-balance.mp4         
+ 359.21   5.58  c2-t-s12d-lowering.mp4               
+ 364.79   4.50  c4-s12h-denise-rain.mp4              
+ 369.29   7.50  c4-s12i-denise-face.mp4              
+ 376.79   5.50  s12f-kebab.mp4                       
+
+   0.00  66.79  m01e-covert-affair.wav
+  65.92  23.88  m02e-cool-vibes.wav
+  89.58  13.75  m03e-neon-laser-horizon.wav
+ 103.33  63.00  m04e-marty-gots-a-plan.wav
+ 177.46  18.54  m05e-covert-affair.wav
+ 195.21  40.75  m06e-volatile-reaction.wav
+ 235.25  46.54  m07e-hitman.wav
+ 281.00  84.21  m08e-covert-affair.wav
+ 364.58  12.29  m09e-heartbreaking.wav
+ 376.79   5.50  m10e-neon-laser-horizon.wav

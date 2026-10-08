@@ -2541,3 +2541,28 @@ Prompts and results: `docs/stories/bank-robbery/clips-v3.md`. Sound judged by on
   (a generated portrait refused as an upload); the same Character's face is in both.
 - `[observed, n=1]` A low synth drone came back under one spoken clip with "No music" in the prompt, as
   seen on Money For Something.
+
+## 2026-10-08: a start frame with pistols pointed at people, refused four times (The Bank Robbery, `s12g-standoff`)
+
+- `[observed, n=1 still, 4 prompts]` A wide start frame of three men in suits, each holding a small pistol at
+  arm's length **pointed at another man**, was refused on Omni 1.1 Flash four times: twice with "pistol" and
+  "aim" in the motion text ("This generation might violate our policies"), twice with no weapon word at all.
+  Nano Banana 2 made the still first time. This is the second sighting of the same thing (see the note above on
+  pistols pointed near a woman), so treat it as: **the frame is what is judged, and a pistol pointed at a person
+  is the trigger; rewording does not help.** Not tested: the same men with the pistols lowered.
+- `[observed, n=7]` `UPLOAD_REFUSED` on a start frame passed on the very next try with nothing changed, seven
+  times in one sixteen-clip run. It is not a verdict on the image.
+
+## 2026-10-08 (late): two more from The Bank Robbery sixth pass
+
+- `[observed, n=1 still, 3 prompts]` **A realistic start frame of two men shouting in each other's faces at a
+  protest barrier, phones raised, was refused three ways:** "this video failed to generate", "Audio generation
+  failed", then, with the shouting removed from the sound line, **"Unable to generate videos that might cause
+  reputational risk or misrepresent…"**. Other riot frames from the same look reference (crowds from below,
+  placards, megaphones at a distance) animated without trouble the same day. Unverified reading: close,
+  news-like faces in a confrontation are what trips it, not the riot. "Audio generation failed" was not a sound
+  problem here; it was the same refusal under another name.
+- `[observed, n=1]` **A clip can cut itself despite "One continuous shot with no cuts."** `s08g-laugh` (two small
+  figures at a far window, locked off) jumped at 3 s to a closer framing of the same two men and stayed there.
+  The asked-for action was small and far away; the model went to where it could be seen. Design the start
+  frame at the size the action needs.

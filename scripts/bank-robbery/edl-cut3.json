@@ -1,0 +1,165 @@
+{
+ "from": "edl-cut2.json",
+ "total": 351.0,
+ "swaps": [
+  [
+   "c3-s07-night-before.mp4",
+   158.91666666666666,
+   0.0,
+   7.958333333333333,
+   0,
+   2,
+   -26.2
+  ],
+  [
+   "c3-s09c-pallet.mp4",
+   235.04166666666666,
+   0.0,
+   7.166666666666667,
+   0,
+   2,
+   -14.3
+  ],
+  [
+   "c3-s12b-count.mp4",
+   337.0,
+   2.2916666666666665,
+   4.5,
+   0,
+   2,
+   4.0
+  ],
+  [
+   "c3-s12e-sold.mp4",
+   341.5,
+   1.0,
+   4.0,
+   0,
+   2,
+   4.0
+  ],
+  [
+   "c3-card-09-drivers.mp4",
+   87.16666666666667,
+   0.0,
+   1.9166666666666667,
+   0,
+   2,
+   -6.0
+  ]
+ ],
+ "music": [
+  [
+   "m01b-covert-affair.wav",
+   0.0,
+   0.0,
+   47.791666666666664,
+   3,
+   "Covert Affair",
+   -15.2,
+   -20,
+   "breakfast, the spoiler and the title: cool walking bass and a muted horn"
+  ],
+  [
+   "m02b-cool-vibes.wav",
+   46.916666666666664,
+   0.0,
+   23.875,
+   4,
+   "Cool Vibes",
+   -28.3,
+   -22,
+   "the hearing and getting out: plucked strings, polite"
+  ],
+  [
+   "m03b-neon-laser-horizon.wav",
+   70.58333333333333,
+   0.0,
+   20.208333333333332,
+   3,
+   "Neon Laser Horizon",
+   -11.7,
+   -17,
+   "the name cards: the 80s montage, cut dead on the meeting room"
+  ],
+  [
+   "m04b-marty-gots-a-plan.wav",
+   90.79166666666667,
+   0.0,
+   68.5,
+   4,
+   "Marty Gots a Plan",
+   -23.6,
+   -22,
+   "the plan and the colours: sneaky woodwinds"
+  ],
+  [
+   "m05b-covert-affair.wav",
+   166.5,
+   0.0,
+   18.5,
+   3,
+   "Covert Affair",
+   -14.4,
+   -22,
+   "off the record, and Denise in the hall"
+  ],
+  [
+   "m06b-volatile-reaction.wav",
+   184.20833333333334,
+   0.0,
+   38.791666666666664,
+   4,
+   "Volatile Reaction",
+   -9.1,
+   -24,
+   "the march: drums and tension"
+  ],
+  [
+   "m07b-hitman.wav",
+   222.29166666666666,
+   0.0,
+   36.291666666666664,
+   3,
+   "Hitman",
+   -14.2,
+   -24,
+   "the walk: the beat lands as the pallet comes in (235 s)"
+  ],
+  [
+   "m08b-covert-affair.wav",
+   257.7916666666667,
+   0.0,
+   79.625,
+   4,
+   "Covert Affair",
+   -15.4,
+   -22,
+   "inside the bank, the vault and the standoff: back to the cool"
+  ],
+  [
+   "m09b-heartbreaking.wav",
+   336.7916666666667,
+   0.0,
+   8.791666666666666,
+   3,
+   "Heartbreaking",
+   -28.3,
+   -21,
+   "Denise counts; the SOLD board: one guitar"
+  ],
+  [
+   "m10b-neon-laser-horizon.wav",
+   345.5,
+   0.0,
+   5.5,
+   4,
+   "Neon Laser Horizon",
+   -12.9,
+   -18,
+   "the kebab shop: the last bars of the montage tune, to its final chord"
+  ]
+ ],
+ "under_lufs": -33.0,
+ "credit": "Music: \"Covert Affair\", \"Cool Vibes\", \"Neon Laser Horizon\", \"Marty Gots a Plan\", \"Volatile Reaction\", \"Hitman\" and \"Heartbreaking\" by Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0. http://creativecommons.org/licenses/by/4.0/"
+}

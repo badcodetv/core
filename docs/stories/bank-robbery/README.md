@@ -2,8 +2,8 @@
 
 > **Source of truth** for the Bank Robbery story. Started 6 October 2026 with the `new-story`
 > and `story-craft` skills, graduating the inbox seed
-> [`docs/ideas/bank-robbery.md`](../../ideas/bank-robbery.md). **First pass. Nothing is ruled,
-> and neither Jack nor Kai has gone through it.**
+> [`docs/ideas/bank-robbery.md`](../../ideas/bank-robbery.md). **As of 8 October 2026 the film is at cut 5;
+> see [`assembly.md`](./assembly.md). Kai has not gone through it.**
 
 Eleven politicians and media people rob a bank by carrying money into it. Left and right argue
 about immigration the whole way through, holding one end of the same pallet each. The only person
@@ -27,6 +27,13 @@ night before, the chaos, the woman who works in the bank).
 | [`clips.md`](./clips.md) | One clip per still: settings, how the motion prompts are built, the exact prompts and what came back |
 | [`look-tests.md`](./look-tests.md) | The four looks tried on scene 9 in Flow, 6 October 2026: the shot spec, the exact prompts and what came back |
 | [`research.md`](./research.md) | The receipts: the three films, and the Bank of England's own numbers, each marked with how far it was checked |
+| [`script.md`](./script.md) | The working script, scene by scene, with whose line each one is, and Jack's notes on cuts 3 and 4 |
+| [`assembly.md`](./assembly.md) | **The film as it stands.** One ledger per cut (1 to 5): the Premiere sequence, what changed and why, what was checked, what a human still has to do. Start at the last section |
+| [`review-cut1.md`](./review-cut1.md) | The honest review of cut 1 that led to the tightening pass |
+| [`stills-v3.md`](./stills-v3.md), [`clips-v3.md`](./clips-v3.md) | Third pass: the stills and dialogue clips the first cut was built from |
+| [`stills-v4.md`](./stills-v4.md), [`stills-v5.md`](./stills-v5.md), [`stills-v6.md`](./stills-v6.md) | Fourth to sixth passes: the re-made shots, each with what it is for, its design, and what came back |
+| [`footage-ww2.md`](./footage-ww2.md) | The five real Second World War shots in the opening: source, timecode, licence basis, hashes |
+| [`songs/score.md`](./songs/score.md) | Suno score takes, parked. The cuts use royalty-free music for now |
 
 ## Production tracker
 
@@ -37,11 +44,13 @@ night before, the chaos, the woman who works in the bank).
 | Characters | [`characters/cast-portraits.md`](./characters/cast-portraits.md) | Twelve Flow Characters with portrait, body and custom voice, 6 October 2026, in Flow project `63d22c4b`. Picks are a first pass; voices not yet heard in a clip |
 | Research | [`research.md`](./research.md) | Two web passes (the money, and since Covid). Several figures are search-summary grade and marked |
 | The look | [`look.md`](./look.md) | Chosen by Jack, 6 October 2026: "The bank in the haze". Kai has not seen it |
-| Script | none | Not started |
+| Script | [`script.md`](./script.md) | Gone through with Jack scene by scene, 7 October 2026. Owed since 8 October: his opening narrator line and four left-and-right conversations, and a ruling with Kai on how far the piss-take goes into the crowd |
 | Look tests | [`look-tests.md`](./look-tests.md) | Three rounds, 6 October 2026. Jack chose "The bank in the haze" |
 | Scene stills | [`stills.md`](./stills.md) | Two passes, 6 October 2026. The second has the Flow Characters cast in, and a different camera position and a single light in every scene. Not reviewed |
 | Clips | [`clips.md`](./clips.md) | First pass, 6 October 2026: one silent 8 s Omni clip per second-pass still. Not reviewed |
 | Voices | [`characters/cast-portraits.md`](./characters/cast-portraits.md) | One custom Flow voice per Character. Open call 6 (a talking film) is still unruled |
+| Film | [`assembly.md`](./assembly.md) | **Cut 5, 8 October 2026, 6 min 22 s,** Premiere sequence `bank robbery - cut 5`. Not watched by Jack. Not upload-ready: no music credit on screen, delivery check fails |
+| Music | [`assembly.md`](./assembly.md) | Seven Kevin MacLeod tunes (CC BY 4.0, credit owed on screen), one per scene mood. Suno takes parked in [`songs/score.md`](./songs/score.md) |
 | Song | none | Not started |
 | Comic | none | Not started |
 

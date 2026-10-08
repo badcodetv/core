@@ -1,0 +1,96 @@
+   0.00   4.42  s01-breakfast.mp4                    
+   4.42   5.12  hold-s01-table.mp4                   
+   9.54   3.54  s01c-blue.mp4                        
+  13.08   3.88  s01-breakfast.mp4                    
+  16.96   3.21  hold-s01-denise.mp4                  
+  20.17   4.79  s01b-remote.mp4                      
+  24.96   2.25  c2-t-s01c-blue.mp4                   
+  27.21   3.25  c2-t-s01d-red-1.mp4                  
+  30.46   3.71  c2-t-s01d-red-2.mp4                  
+  34.17   3.46  c2-t-s01e-denise-p.mp4               
+  37.62   2.42  s02-spoiler.mp4                      
+  40.04   2.21  s02b-shut-shops.mp4                  
+  42.25   3.58  c2b-text-title.mp4                   
+  45.83   1.50  c2b-card-three-weeks.mp4             
+  47.33   4.17  hold-s03-hearing.mp4                 
+  51.50   5.58  c2-t-s03a-hearing-1.mp4              
+  57.08   3.75  c2-t-s03a-hearing-2.mp4              
+  60.83   2.04  s03a-hearing-2.mp4                   
+  62.88   7.92  s03-getting-out.mp4                  
+  70.79   1.00  hold-s03-steps.mp4                   
+  71.79   2.71  c4b-card-01-ex.mp4                   name card, 2.7 s
+  74.50   2.71  c4b-card-03-donor.mp4                name card, 2.7 s
+  77.21   2.71  c4b-card-05-proprietor.mp4           name card, 2.7 s
+  79.92   1.71  s04-recruiting.mp4                   
+  81.62   2.71  c4b-card-09-drivers.mp4              name card, 2.7 s
+  84.33   5.33  c2-t-s05-plan-a.mp4                  
+  89.67   7.04  c2-t-s05-plan-b.mp4                  
+  96.71   5.00  c4-paper-blue.mp4                    spinning front page
+ 101.71   4.21  c4-paper-red.mp4                     spinning front page
+ 105.92   2.79  c4-t-s05e-papers-1.mp4               talk: which one is true
+ 108.71   6.92  c4-t-s05e-papers-2.mp4               talk: I need them to reply
+ 115.62   4.33  c2-t-s05d-twist-1.mp4                
+ 119.96   1.79  s05d-twist-1.mp4                     
+ 121.75   2.67  hold-s05-accountant.mp4              
+ 124.42   3.50  c2-t-s05-plan-c.mp4                  
+ 127.92   1.96  c2-t-s05d-twist-2.mp4                
+ 129.88   2.21  s05-plan.mp4                         
+ 132.08   6.25  c2-t-s06a-list-1.mp4                 
+ 138.33   1.71  c2-t-s06a-list-2.mp4                 
+ 140.04   3.92  c2-t-s06-colours-talk.mp4            
+ 143.96   1.71  s06-colours-talk.mp4                 
+ 145.67   7.79  s06-colours.mp4                      
+ 153.46   1.79  c3-s07-night-before.mp4              night: laughing
+ 155.25   2.50  c4-s07d-pints.mp4                    night: pints
+ 157.75   2.58  c4-s07e-darts.mp4                    night: darts
+ 160.33   2.50  c4-s07f-pool.mp4                     night: pool
+ 162.83   2.58  c4-s07g-bucket.mp4                   night: the bucket, no narrator
+ 165.42   4.00  c2-t-s07b-off-record.mp4             
+ 169.42   4.04  hold-s07-presenter.mp4               
+ 173.46   4.46  c2-t-s07c-denise-hall.mp4            
+ 177.92   5.04  hold-s07-hall.mp4                    
+ 182.96   1.50  c2b-card-bank-holiday.mp4            
+ 184.46   7.00  c4-s08a-placards.mp4                 riot: placards
+ 191.46   7.92  c4-s08b-remote-window.mp4            the window
+ 199.38   4.00  c4-t-s08c-megaphones.mp4             talk: megaphones
+ 203.38   6.33  c4-s08e-bank.mp4                     riot: the bank
+ 209.71   3.71  c2-t-s08d-presenter.mp4              
+ 213.42   5.67  s08-march.mp4                        
+ 219.08   5.42  c2-t-s09a-officer-p.mp4              
+ 224.50   7.04  c4-s09-walk.mp4                      riot: the walk
+ 231.54   7.17  c3-s09c-pallet.mp4                   
+ 238.71   1.54  c2-t-s09d-door.mp4                   
+ 240.25   4.92  s09d-door.mp4                        
+ 245.17   2.46  hold-s09-door.mp4                    
+ 247.62   6.96  s09e-turquoise.mp4                   
+ 254.58   3.29  s10a-enter.mp4                       
+ 257.88   3.54  c2-t-s10-hoover-talk.mp4             
+ 261.42   5.58  c2-t-s10c-that-much-1.mp4            
+ 267.00   1.96  c2-t-s10c-that-much-2.mp4            
+ 268.96   1.71  c2-t-s10d-counting-p.mp4             
+ 270.67   4.12  s10d-counting.mp4                    
+ 274.79   3.79  c2-t-s11-vault-talk.mp4              
+ 278.58   7.96  s11-vault.mp4                        
+ 286.54   4.71  c2-t-s11b-in.mp4                     
+ 291.25   1.08  s11b-in.mp4                          
+ 292.33   6.29  s10-hoover.mp4                       
+ 298.62   2.42  s10a-enter.mp4                       
+ 301.04   7.96  s11c-keys.mp4                        
+ 309.00   9.71  c4-s11e-cafe-for-sale.mp4            the cafe, for sale
+ 318.71   4.79  c4-t-s12g-standoff.mp4               talk: who talked (new plate moved in ffmpeg, old sound)
+ 323.50   4.42  c4-s12g-standoff-balance.mp4         for balance: the same plate, punched in on the Presenter
+ 327.92   5.58  c2-t-s12d-lowering.mp4               
+ 333.50   4.50  c4-s12h-denise-rain.mp4              Denise and the SOLD board
+ 338.00   7.50  c4-s12i-denise-face.mp4              she looks up; the camera tilts to the sky
+ 345.50   5.50  s12f-kebab.mp4                       
+
+   0.00  47.79  m01d-covert-affair.wav
+  46.92  23.88  m02d-cool-vibes.wav
+  70.58  13.75  m03d-neon-laser-horizon.wav
+  84.33  69.54  m04d-marty-gots-a-plan.wav
+ 165.00  18.54  m05d-covert-affair.wav
+ 182.75  36.75  m06d-volatile-reaction.wav
+ 218.79  36.29  m07d-hitman.wav
+ 254.29  79.62  m08d-covert-affair.wav
+ 333.29  12.29  m09d-heartbreaking.wav
+ 345.50   5.50  m10d-neon-laser-horizon.wav

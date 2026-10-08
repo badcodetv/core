@@ -2279,3 +2279,11 @@ Nano Banana 2 in Flow, one candidate each.
 - **39 of 39 passed first time,** including two men holding small pistols pointed at the floor,
   pallets of "shrink-wrapped blocks of paper", two crowds with plain red and blue flags, and a
   police officer in hi-vis. That is one run on one account, not a statement about the filter.
+
+## 2026-10-08: "tabloid newspaper" in a scene can come back with a real masthead (The Bank Robbery, `s05e-papers`)
+
+- `[observed, n=1]` A man "holding up two folded tabloid newspapers… no print on them can be read" came back with
+  a real British paper's red-top logo on one of them, facing the camera. Saying what must not be there, at
+  length ("no masthead, no title, no logo, no headline and no photograph"), with the papers seen from behind and
+  out of focus, gave none on the second try. A front page made **as its own flat image with the paper's name
+  quoted** ("THE DAILY TRUMPET") spelt every word right first time, twice.

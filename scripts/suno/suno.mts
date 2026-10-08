@@ -610,6 +610,20 @@ export async function setWorkspace(page: Page, name: string): Promise<string> {
   //    workspace name — so once the form already reads `gpom-story` the click hit the open trigger
   //    and timed out. Rows carry no aria-haspopup; the trigger does.
   const row = page.locator('button:not([aria-haspopup])', { hasText: new RegExp(`^\\s*${esc}\\s*(\\(\\d[\\d,]*\\s+clips?\\))?\\s*$`, 'i') })
+  // 2026-10-08: no row means the workspace does not exist yet. The + button right of the search box
+  // creates it under the typed name (automation.md §8, proven by hand 2026-09-17); the row then appears.
+  if (!(await row.count())) {
+    const plus = page.locator('button[aria-label="Create new workspace"]')
+    if (await plus.count()) {
+      await plus.first().click({ timeout: 5000 }).catch(() => {})
+      await page.waitForTimeout(2000)
+      if (!(await search.count())) await trigger.first().click({ timeout: 5000 }).catch(() => {})
+      await page.waitForTimeout(800)
+      if (await search.count()) await search.first().fill(name)
+      await page.waitForTimeout(900)
+      console.log(`workspace: created "${name}"`)
+    }
+  }
   if (!(await row.count())) {
     await page.keyboard.press('Escape')
     return `workspace:no-exact-row for "${name}"`

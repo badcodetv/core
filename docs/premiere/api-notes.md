@@ -1819,3 +1819,44 @@ A frame 0.33s into an Opacity 0→100 fade exported with **full-brightness RGB a
 - 🔴 **The bridge port was held by this conversation's own earlier server** after the session was restarted in
   the background: the holder and the new session traced to the same `claude` pid. Killing it and calling
   `premiere_status` reconnected at once.
+
+## 2026-10-08: The Bank Robbery `cut 2` (114 placements, nine evals, no failures)
+
+- ✅ **An empty sequence with the right settings:** `premiere_create_sequence({ fromItems: [one clip] })`, then
+  `premiere_remove_clip({ clips: ['v0:0', 'a0:0'] })`. The sequence keeps 1280×720 @ 24 and three tracks each.
+- ✅ **Picture on V1 with its sound on A3** is `createOverwriteItemAction(item, t, 0, 2)`. Talking clips went to
+  A1 and bed clips to A3 from the same V1, so the bed has a track of its own.
+- ✅ **Per-clip Volume by start time, 68 values in one transaction:** read `getStartTime()` for every item on the
+  track first, match within 0.03 s, collect `[param, value]`, then one `withTransaction`.
+- 🔴 **A rendered piece one frame shorter than its place on the timeline shows as one black frame.** The plan
+  rounded each duration to the nearest frame, which rounds up half the time. Four of thirty pieces did it.
+  Render every piece with spare last frames (`tpad=stop_mode=clone:stop_duration=0.2`, `apad`).
+- 🔴 `blackdetect=d=0.08` misses a single black frame at 24 fps. Use `d=0.03`.
+
+## 2026-10-08: replacing clips in place on `cut 2` (16 swaps, one eval)
+
+- ✅ **A clip is replaced by overwriting at its own start with the same in and length.** No remove first, no gap
+  left, clip counts unchanged on every track.
+- 🔴 **The overwrite resets the audio clip's Volume to 0 dB.** Set the levels again afterwards, by start time.
+- ✅ A render straight after showed no black frames, including at the two title cards (`blackdetect=d=0.03`).
+
+## 2026-10-08: The Bank Robbery `cut 3` (a clone, 5 swaps, 10 music stems)
+
+- ✅ **Music as pre-ducked stems.** With no audio crossfade API and no auto-duck, each cue was rendered to its
+  own WAV with the fades and the under-speech level already in it (`scripts/bank-robbery/build-cut3.py`: the
+  speech spans come from the plan, not from the audio), then placed whole. Neighbours alternate between A4 and
+  A5 so they can overlap. Volume stays at 0 dB and each scene's tune is still one clip a human can swap.
+- ✅ `createOverwriteItemAction(audioOnlyItem, t, 0, 4)` on a four-audio-track sequence **made A5**, the same
+  way index 3 made A4.
+- ✅ **Replacing an audio-only clip:** overwrite the new file at the old start with the same length. One clip in,
+  one out, clip count unchanged. A re-made stem needs a new file name (Premiere holds the old one).
+
+## 2026-10-08: The Bank Robbery `cut 4` (a rebuilt timeline: 85 + 36 placements in three evals)
+
+- ✅ **29 placements in one eval** (set in/out, overwrite, clear, each its own transaction) ran clean three times
+  with `timeoutMs: 300000`. The "about ten at a time" habit is not a limit.
+- ✅ **Levels for a whole track in one transaction by walking refs:** `helpers.resolveClip(seq, 'a2:' + n)` until
+  it throws, `getStartTime().seconds` to match the plan within 0.03 s, collect `[param, keyframe]`, then one
+  `withTransaction`. 63 values, read back by count.
+- ✅ **A ripple is cheaper as a rebuild.** When lengths change, work out every start again in the plan and lay a
+  new sequence (`scripts/bank-robbery/build-cut4.py`); there is no ripple-by-plan call worth writing.
