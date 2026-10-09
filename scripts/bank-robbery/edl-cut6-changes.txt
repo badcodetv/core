@@ -1,0 +1,16 @@
+Cut 6 = cut 5 with these timeline edits (start times in the cut, seconds). Total length unchanged, 382.29 s.
+Picture only; A1 narrator, A3 clip sound and A4/A5 music stay where they are.
+
+    6.625  c5-s00d-fry.mp4            in 4.583 -> 6.4
+    8.875  c5-s00e-pint.mp4           in 2.583 -> 0.2
+   32.083  s01-breakfast.mp4          in 4.083 -> 6.25, dur 3.875 -> 1.708
+   33.792  hold-s01-denise.mp4        start 35.958 -> 33.792, dur 3.208 -> 5.375 (in 0)
+   39.167  s01b-remote.mp4            in 0.583 -> 3.2
+  133.792  c5-t-s05d-twist-1.mp4      re-made: crop=iw*0.71:ih*0.71:iw*0.145:0 from the uncropped clip, no shading
+  138.125  c5-s05d-twist-1.mp4        same
+  139.917  c5-hold-s05-accountant.mp4 same
+  142.583  c5-t-s05d-twist-2.mp4      same
+  240.958  s09-walk.mp4               dur 7.042 -> 7.542
+  248.500  c4-s09-walk.mp4            start 248.0 -> 248.5, dur 4.583 -> 2.75
+  251.250  c5-s08f-argue.mp4          start 252.583 -> 251.25, in 0.292 -> 0, dur 5.667 -> 7.0
+  340.292  c4-s11e-cafe-for-sale.mp4  in 0 -> 3.9, 6.2 s of source slowed to 9.708 s (64 %, frame blend)

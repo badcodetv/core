@@ -505,3 +505,39 @@ the proud montage. No music was added for the montage; it wants something of its
   scaled, `noise=alls=5`.
 - `c5-s08f-argue`: the still, `zoompan` from 1.0 to 1.38 on the centre over 7 s with a small drift, a flicker
   (`eq` brightness), `noise=alls=8`, the sound of `vids\v5\s08a-placards.mp4`.
+
+---
+
+# Cut 6 (9 October 2026): the morphing shots, from Jack's notes on cut 5
+
+**His words:** "i like the last cut… sometimes objects morph and change, sometimes they randomley have an
+american accent, sometimes they say the same thing at the same time, there are elements of ai slop… i like the
+intro that was great. Please fix."
+
+Review, fault list and what was and was not fixed: [`review-cut5.md`](./review-cut5.md).
+
+- **Render:** `renders\bank robbery - cut 6-20261009-patch.mp4`, 382.3 s, the same length as cut 5.
+- **What changed:** seven picture faults (an egg, a pint, a mug, a remote, a black band, a man walking through
+  another man, a keyring), each swapped for a clean stretch of the same clip or a re-crop. **Sound is cut 5's,
+  untouched.**
+- ✅ **Premiere sequence `bank robbery - cut 6`** (built 9 October, about 10:30, after Jack connected the panel): a
+  clone of cut 5 (`createCloneAction`, renamed) with six silent picture pieces on **V2**, over the old shots:
+  `c6-fry` 6.625, `c6-pint` 8.875, `c6-g1` 32.083 (breakfast, Denise, remote), `c6-g2` 133.792 (the four twist
+  shots), `c6-g3` 240.958 (both walks and the argument), `c6-keys` 340.292. Files in `clips\cut6\v2\`, bin
+  `cut6`. **V1 and every audio track are exactly cut 5's;** to undo a fix, delete its V2 piece. Cut 5 is untouched.
+- **Premiere render:** `renders\bank robbery - cut 6-20261009-1036.mp4` (355 MB). The earlier
+  `…-20261009-patch.mp4` is the same picture made in ffmpeg before the panel was up and can go.
+- 🟡 The V1 shots under the pieces were not re-trimmed, so `edl-cut6-changes.txt` is still the list to follow if
+  cut 7 is built from the edit list and not from this sequence.
+- **Not fixed here:** the voices (one voice for two men; accent). See the review for the cause and the test.
+- **Not watched or heard at speed by anyone.**
+
+**After Jack played cut 6 in Premiere (9 October, about 10:45):** "the audio is weird and it was strangley sped
+up", all the way through, on timeline playback. Measured: the cut 6 render's sound matches cut 5's render in
+every five-second window, and both files have the same length, frame count and sample rate. So the edit was not
+the cause. A few minutes later he reported "it is fixed now for some reason". **Cause not found.** If it comes
+back, look at Premiere's own playback first (audio hardware sample rate, dropped frames), not at the sequence.
+
+**Made, not placed:** `clips\cut6\v2\c6-keys-b.mp4`, the keys shot at normal speed (6.2 s forward, then 3.5 s of
+the same frames backward) as an alternative to the slowed `c6-keys.mp4` now on V2 at 340.292. Swap it in if the
+slowed one looks odd.
