@@ -176,3 +176,12 @@ moustache, round face), which uploaded at once. The refused pair is in `supersed
 - `br-make-chars.mjs`: portrait upload, name, body upload, Done, for a list of Characters.
 - `br-voices.mjs`: preset, performance text, save as a named voice, attach, Done, for a list.
 - `br-esc.mjs`: screenshot and Escape, to clear a picker left open by a failed upload.
+
+## 9 October 2026: The Platform is English
+
+**Ruled by Jack, 9 October 2026:** "Please change the platform to english." His Character's custom voice was
+replaced in Flow: the same preset (Iapetus), saved as **`The Platform BR English voice`**, performance text: "An
+English technology founder in his early forties from the south of England, with a plain southern English accent.
+A flat quiet monotone, slightly bored, as if on a video call. Speaking to people in the room, not performing."
+The old American voice (`The Platform BR voice`) is still saved in Flow, unattached. The table above still shows
+the old text. Heard only by the listening model (as British), in `vids\v7\s05e-platform.mp4`.

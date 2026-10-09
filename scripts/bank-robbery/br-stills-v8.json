@@ -1,0 +1,186 @@
+{
+ "pre": "The named people are the attached Characters. ",
+ "hallEnd": " Rich saturated colour on 35mm film, slightly grainy: bottle green, oxblood red, brass and cream, with deep black shadow. Unretouched. Nobody looks at the camera. 16:9. Thanks.",
+ "riotEnd": " Dusk on 35mm colour film, slightly grainy, rich saturated colour: deep blue sky, hot pink-red flare light, amber street lamps, red and blue scarves. Wet cobbles. Unretouched. 16:9. Thanks.",
+ "strongEnd": " Rich saturated colour on 35mm film, slightly grainy: bottle green, oxblood red, cream and brass, warm tungsten light, deep black shadow. Scuffs and chipped paint. Unretouched. Nobody looks at the camera. 16:9. Thanks.",
+ "garEnd": " Rich saturated colour on 35mm film, slightly grainy: warm tungsten yellow against deep blue dusk, a red tie and a royal blue tie. Unretouched. Nobody looks at the camera. 16:9. Thanks.",
+ "shots": [
+  {
+   "id": "s10-00-hall",
+   "cast": [],
+   "refs": [],
+   "endKey": "hallEnd",
+   "body": "A frame from a 1980s British feature film. A wide low view down an old city banking hall at night, lens at knee height, the frame not quite level. A black and cream chequerboard marble floor, dark mahogany counters down the left with a row of lit green glass banker's lamps, oxblood red marble columns, brass rails, a cream coffered plaster ceiling. Tall front doors at the far end stand open on a street full of pink flare smoke. There are no people. Light: the green lamps, and the pink glow from the doors."
+  },
+  {
+   "id": "s11-00-strongroom",
+   "cast": [],
+   "refs": [],
+   "endKey": "strongEnd",
+   "body": "A frame from a 1980s British feature film. The basement of an old city bank at night, seen from the foot of the stairs, lens at knee height, the frame not quite level. A short corridor of cream gloss-painted brick with a low arched ceiling and an oxblood red painted floor. In the end wall is a heavy bottle-green iron strongroom door, shut, with a brass handle and a brass keyhole plate, the paint chipped. A red fire bucket of sand hangs on the left wall. A mop stands in a steel bucket on the right. There are no people. Light: one caged tungsten lamp above the door, and a faint green glow from the stairs behind the camera."
+  },
+  {
+   "id": "s09d-door3",
+   "cast": [],
+   "refs": [
+    "br8-hall"
+   ],
+   "endKey": "hallEnd",
+   "body": "Same room as the reference image. Seen from the floor just inside the front doors, looking up and out, the frame tilted. Four men in black suits stand side by side in the open doorway, dark shapes against pink flare smoke and a deep blue dusk sky, each already wearing a cheap rubber mask of a grinning old man's face. They stand still, like men posing for a film poster. A white-gloved hand holds the brass door handle at the near right edge, out of focus. Light: the pink smoke behind them, and one green lamp glinting on the floor."
+  },
+  {
+   "id": "s09e-turquoise2",
+   "cast": [
+    "Mr Turquoise"
+   ],
+   "refs": [
+    "br8-hall"
+   ],
+   "endKey": "hallEnd",
+   "body": "Same room as the reference image. The camera lies on the marble floor looking steeply up at Mr Turquoise. One arm is straight up, holding a small black pistol pointed at the ceiling. His other hand holds a phone at his chest and he is grinning down at its screen. White plaster dust and flakes fall past him from a fresh hole in the cream ceiling. A brass chandelier hangs above. Light: the phone screen on his face from below, and green lamp light on the falling dust."
+  },
+  {
+   "id": "s10a-enter2",
+   "cast": [],
+   "refs": [
+    "br8-hall"
+   ],
+   "endKey": "hallEnd",
+   "body": "Same room as the reference image. Seen from behind a cleaner, at hip height. Her back in a navy tabard fills the left of the frame, her grey-blonde hair up in a plastic claw clip, one yellow rubber glove on the handle of a red upright hoover. Far down the hall four men in black suits and rubber masks stand frozen around a pallet of shrink-wrapped white paper, all turned to look at her. A yellow wet-floor sign stands halfway between. Light: the green lamps, and the pink glow from the doors behind the men."
+  },
+  {
+   "id": "s10-hoover2",
+   "cast": [],
+   "refs": [
+    "br8-hall"
+   ],
+   "endKey": "hallEnd",
+   "body": "Same room as the reference image. The lens rests on the chequerboard marble floor. Three pairs of polished black shoes and black trouser legs stand planted across the middle of the frame, cut off at the knee. A battered red upright hoover fills the near left foreground, pushed by a hand in a yellow rubber glove, its head pointing at the gap between two pairs of shoes. Behind it, the legs of a woman in dark trousers and the hem of a navy tabard. Light: green lamp light skimming the floor, and a pink glow far behind."
+  },
+  {
+   "id": "s10e-bleach2",
+   "cast": [
+    "Denise",
+    "The Fixer"
+   ],
+   "refs": [
+    "br8-hall"
+   ],
+   "endKey": "hallEnd",
+   "body": "Same room as the reference image. The lens rests on the mahogany counter. A yellow bottle of bleach stands in the near left foreground, out of focus, beside the brass base of a green lamp. Denise leans in at the middle of the frame, seen from the chest up, one yellow rubber glove flat on a grey cloth on the counter, looking sideways without interest at The Fixer. The Fixer sits on the counter at the right, holding a sandwich, mid-chew, a rubber mask pushed up on his forehead. Light: the green lamp from the left, warm on her face."
+  },
+  {
+   "id": "s10d-looking2",
+   "cast": [
+    "Denise"
+   ],
+   "refs": [
+    "br8-hall"
+   ],
+   "endKey": "hallEnd",
+   "body": "Same room as the reference image. A close view of Denise from just below her eye line, the frame tilted. She stands still with both hands on the handle of a red upright hoover, looking past the camera at something down the hall, her lips together, working something out. Behind her, out of focus, two men in black suits face each other, arguing, and a green lamp glows. Light: a green lamp from one side, and the pink glow from the doors on her other cheek."
+  },
+  {
+   "id": "s08j-phones",
+   "cast": [],
+   "refs": [
+    "br5-riot-look"
+   ],
+   "endKey": "riotEnd",
+   "body": "Same street and light as the reference image. The camera is inside a crowd at shoulder height, behind three raised arms. Each hand holds up a phone, sharp and close, and each screen shows only pink smoke and the blurred crowd on the far side of the street. Beyond the phones, out of focus, a man in a black suit wheels a pallet of shrink-wrapped white paper along the empty strip between two rows of steel barriers. No phone points at the pallet. Light: a flare burning on the cobbles, and amber street lamps."
+  },
+  {
+   "id": "s06-nose",
+   "cast": [
+    "Mr Blue",
+    "Mr Red"
+   ],
+   "refs": [],
+   "endKey": "garEnd",
+   "body": "A frame from a 1980s British feature film. Inside a lock-up garage at dusk, the camera at chest height, very close, the frame tilted. Mr Blue on the left and Mr Red on the right stand nose to nose in profile, filling the frame, each jabbing a finger at the other's chest, both furious. Behind them the roller door is open on a deep blue evening, and the backs of other men in black suits are walking out, out of focus. Light: one bare bulb above them, and the blue dusk behind."
+  },
+  {
+   "id": "s11a-drill2",
+   "cast": [
+    "The Accountant",
+    "The Governor"
+   ],
+   "refs": [
+    "br8-strongroom"
+   ],
+   "endKey": "strongEnd",
+   "body": "Same place as the reference image. The camera is pressed against the green iron door, looking along its chipped paint. The Accountant's face fills the right half of the frame, very close, clear safety goggles on, sweating, teeth clenched, leaning on a power drill whose bit is already against the door at the bottom edge of the frame. Behind him, small and out of focus, The Governor stands waiting with his hands behind his back. Light: the tungsten lamp above the door, hard from the top, shining on the sweat."
+  },
+  {
+   "id": "s11c-why2",
+   "cast": [
+    "The Accountant"
+   ],
+   "refs": [
+    "br8-strongroom"
+   ],
+   "endKey": "strongEnd",
+   "body": "Same place as the reference image. The Accountant stands in the middle of the corridor, seen from the knees up from low down, the frame tilted, safety goggles pushed up on his forehead, a power drill hanging from one hand, looking baffled at someone out of frame to the left. The green iron door is behind him, with one small bright scratch beside its keyhole. Light: the tungsten lamp above the door behind him, and the faint green glow from the stairs on his face."
+  },
+  {
+   "id": "s11d-better2",
+   "cast": [
+    "The Governor"
+   ],
+   "refs": [
+    "br8-strongroom"
+   ],
+   "endKey": "strongEnd",
+   "body": "Same place as the reference image. A close view of The Governor from waist height, looking up, the frame tilted. He holds one large old iron key on a brass tag up beside his face between finger and thumb, and looks down past it with no expression. The cream brick arch is behind him. Light: the tungsten lamp from above and behind, a rim on his head and on the key."
+  },
+  {
+   "id": "s11b-key2",
+   "cast": [],
+   "refs": [
+    "br8-strongroom"
+   ],
+   "endKey": "strongEnd",
+   "body": "Same place as the reference image. An extreme close view of the brass keyhole plate on the green iron door. A man's hand in a white cuff and a black sleeve holds a large old iron key already pushed into the keyhole. Beside the keyhole is one small bright scratch in the green paint, with a curl of metal swarf below it. Light: the tungsten lamp from above, glinting on the brass."
+  },
+  {
+   "id": "s11h-open",
+   "cast": [
+    "The Accountant"
+   ],
+   "refs": [
+    "br8-strongroom"
+   ],
+   "endKey": "strongEnd",
+   "body": "Same place as the reference image. Seen from inside the dark strongroom, looking out through its open doorway. The green iron door stands swung open at the right edge. The Accountant stands alone in the doorway, seen from the knees up, a power drill hanging from one hand, looking down at it. The dark edges of steel shelves frame the left and top of the picture. Light: the tungsten lamp above the doorway behind him, throwing his long shadow in across the oxblood floor toward the camera."
+  },
+  {
+   "id": "s11e-in2",
+   "cast": [],
+   "refs": [
+    "br8-strongroom"
+   ],
+   "endKey": "strongEnd",
+   "body": "Same place as the reference image. The camera is just behind the shoulder of a bank guard in a peaked cap and dark uniform, his back to us, out of focus, a steaming mug of tea in his hand at the near right edge. Past him, through the open green iron door, two men in black suits stand inside the strongroom beside steel shelves half full of shrink-wrapped white paper bricks, each holding one brick. A pallet truck stands in the corridor. Light: the tungsten lamp above the door, and one bare bulb inside the strongroom."
+  },
+  {
+   "id": "s11f-count2",
+   "cast": [
+    "The Ex"
+   ],
+   "refs": [
+    "br8-strongroom"
+   ],
+   "endKey": "strongEnd",
+   "body": "Same place as the reference image. The camera is on a steel shelf inside the strongroom, looking out between two stacks of shrink-wrapped white paper bricks, out of focus at both edges. The Ex stands in the gap, seen from the chest up, one hand flat on top of a stack, looking back over his shoulder toward the door with a small smile. Light: one bare warm bulb above him, with the green door and cream brick dim behind."
+  },
+  {
+   "id": "s11g-full",
+   "cast": [],
+   "refs": [
+    "br8-strongroom"
+   ],
+   "endKey": "strongEnd",
+   "body": "Same place as the reference image. Seen from the floor inside the strongroom, looking out through the open doorway, the frame tilted. Steel shelves on both sides are stacked from floor to ceiling with shrink-wrapped white paper bricks. In the doorway stands the dark shape of a tall man in a suit, his back to us, one hand on the edge of the green iron door. One bare warm bulb hangs on a flex above. Light: the bare bulb, and the tungsten lamp in the corridor behind the man."
+  }
+ ]
+}

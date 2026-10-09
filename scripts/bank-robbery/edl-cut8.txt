@@ -1,0 +1,31 @@
+Cut 8 = cut 7 with three stretches removed (cut 7 times: 177.88 to 190.38, 258.25 to 265.42, 292.71 to 301.96) and these pieces laid over it (V2 picture, A1 sound, silence on A3). CUT 8 start, length, file, what.
+
+  70.500   4.750  c8-01692-c2-t-s03a-hearing-1-q.mp4           the panel's question, spoken in AI Studio speech, over the old picture
+  75.250   4.583  c8-01806-s03a-ex.mp4                         talk: the Ex answers, his own voice
+ 144.542   5.042  c8-03469-s06-names.mp4                       talk: s06-names
+ 149.583   1.833  c8-03590-s06-why.mp4                         talk: s06-why
+ 151.417   1.083  c8-03634-s06-taken.mp4                       talk: s06-taken
+ 152.500   1.458  c8-03660-s06-thirteen.mp4                    talk: s06-thirteen
+ 153.958   2.458  c8-03695-s06-fourteen.mp4                    talk: s06-fourteen
+ 177.875   5.042  c8-04569-s07c-hoovering.mp4                  new: she hoovers
+ 238.750   7.000  c8-06030-s08j-phones.mp4                     new: every phone points across the street, the pallet goes by behind them
+ 245.750   8.917  c8-06370-s09d-door3.mp4                      new: four men already in masks, standing in the doorway
+ 254.667   6.958  c8-06584-s09e-turquoise2.mp4                 new: the pistol is in his hand
+ 261.625   3.292  c8-06751-s10a-enter2.mp4                     new: from behind her
+ 264.917   3.542  c8-06830-s10-hoover2.mp4                     new: the hoover goes round planted shoes
+ 268.458   4.583  c8-06915-s10e-bleach2.mp4                    talk: "Shift." The cloth is already under her hand
+ 273.042   4.125  c8-07247-s10d-looking2.mp4                   new: she looks at the money, in the hall
+ 277.167   0.708  c8-07346-s11a-drill2.mp4                     new: he is drilling
+ 277.875   1.292  c8-07363-s11c-why2.mp4                       talk: s11c-why2
+ 279.167   1.792  c8-07394-s11d-better2.mp4                    talk: s11d-better2
+ 280.958   1.750  c8-07437-s11a-drill2-b.mp4                   still drilling, under "It's his bank"
+ 282.708   2.167  c8-07479-s11b-key2.mp4                       the key, under "He's had the key the whole time"
+ 284.875   4.042  c8-07531-s11h-open.mp4                       he looks at the drill, under "The drill's for you"
+ 288.917   1.667  c8-07628-s11e-in2-q.mp4                      the guard's question, spoken in AI Studio speech (his back is to us)
+ 290.583   3.042  c8-07668-s11f-count2.mp4                     talk: s11f-count2
+ 293.625   4.500  c8-07741-s11e-in2-b.mp4                      the bricks going onto the shelves, under "And it was"
+ 298.125   5.292  c8-07849-s11g-full.mp4                       the strongroom full, the door closing
+ 321.083   1.292  c8-08400-s12j-mess.mp4                       talk: s12j-mess
+ 322.375   1.292  c8-08431-s12k-inherit.mp4                    talk: s12k-inherit
+ 323.667   1.333  c8-08462-s12j-mess.mp4                       talk: s12j-mess
+ 325.000   0.875  c8-08494-s12k-inherit.mp4                    talk: s12k-inherit

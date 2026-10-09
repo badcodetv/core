@@ -64,6 +64,15 @@ Three reasons this is absolute rather than a preference:
 If a story's canon is *about* a real person, that person's identity lives in the story
 document. The prompt gets the description only.
 
+## 🔴 Video is Omni Flash now: read `docs/google-flow/` first
+
+`docs/flow/` below was written for Veo. Since 2026-09 the house video model is Omni 1.1 Flash, and what it does
+is recorded in [`docs/google-flow/`](../../../docs/google-flow/README.md) (`omni-flash.md`, `nano-banana-2.md`,
+the dated sweeps). **Open that README before writing any video prompt:** its first section is the list of moves
+the model cannot do and the four rules for the words (short, saturated colour named per place, never describe an
+attached Character, check at four frames a second). Where the two folders disagree about Omni, `docs/google-flow/`
+wins. Added 2026-10-09 after a film's worth of prompts ignored research that this skill never pointed at.
+
 ## The five rules that carry most of the value
 
 If you read nothing else:

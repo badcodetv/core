@@ -541,3 +541,143 @@ back, look at Premiere's own playback first (audio hardware sample rate, dropped
 **Made, not placed:** `clips\cut6\v2\c6-keys-b.mp4`, the keys shot at normal speed (6.2 s forward, then 3.5 s of
 the same frames backward) as an alternative to the slowed `c6-keys.mp4` now on V2 at 340.292. Swap it in if the
 slowed one looks odd.
+
+---
+
+# Cut 7 (9 October 2026): the vault and the riot re-made, every flagged line in the speaker's own voice
+
+**Asked for by Jack, 9 October 2026,** after cut 6. His words, the review and the diagnosis:
+[`review-cut6.md`](./review-cut6.md). Shots and results: [`stills-v7.md`](./stills-v7.md). **Cut 6 is untouched.**
+
+## Premiere
+
+**Sequence:** `bank robbery - cut 7`, 1280×720 @ 24, 382.3 s (**6 min 22 s, the same as cut 6**).
+**Built:** a clone of `bank robbery - cut 6` (`createCloneAction`), then thirty pieces overwritten **in place**:
+new picture on **V2**, its sound on **A1**, and a silent WAV on **A3** under every replaced stretch so the old clip
+sound there is gone. Every piece is rendered to the exact length of the slot it fills, so **the narrator (A2) and
+the music (A4, A5) did not move.** V1 is still cut 5's; to undo a change, delete its V2 piece and its A1 clip and
+the A3 silence over it.
+**Bin:** `cut7`. **Pieces:** `clips\cut7\c7-*.mp4`. **Rebuild:** `python3 scripts/bank-robbery/build-cut7.py` →
+`edl-cut7.json`, `edl-cut7.txt` (speech marks in `speech-cut7.json`, several set by hand).
+
+## What changed
+
+| Where | Was | Now |
+| --- | --- | --- |
+| 0:44 to 0:53 | Mr Blue and Mr Red's two lines (heard as American) | Re-made with their own Characters' voices, same framing |
+| 1:43 to 1:55 | The plan table, two clips | Three clips, one speaker each: the Ex, the Governor, the Ex |
+| 2:04 to 2:18 | "Which one's true?", **The Platform**, "How much do we take?" / "Nothing. We put it in." | All re-made. **The Platform is English** (his Character's saved voice was replaced too). The Donor's question is now a wide of the three men |
+| 2:22 | "You bastard." | Re-made, the same wide |
+| 2:58 | The Presenter, "off the record" | Re-made, same framing |
+| 3:17 to 3:32 | Placards (two in one hand), then the man at the window | **New order:** the street from a first-floor window (the geography, once), the man at the window, then two placards made by two people, landing under "They agree on the first line" |
+| 3:46 | The Presenter in grey daylight | **New:** at dusk in the riot's light, from the cobbles |
+| 4:11 to 4:18 | Two protesters, a frozen still with a push | **New, moving:** from a window above, each leaning over his barrier with a phone on the other, the pallet wheeled between the two phones |
+| 4:25 to 4:34 | The bank door in white daylight, three shots | **New, one shot:** from the lobby floor, four silhouettes pull their masks on against the flare smoke and walk in; the doorman's "Morning, Governor" moved ahead of the narrator |
+| 5:06 to 5:32 | The vault: three different-looking rooms, the hoover shot and the men's backs played a second time | **New, one room, one lamp:** drilling → "Why am I drilling?" → "It looks better." → still drilling → the key → he stands there with the drill → "You're putting it in?" → "Count it in the morning." → the vault filling, from the ceiling → the pallets still going in |
+| 5:50 to 5:55 | "Who talked? / He talked. / Your lot always talk." in one wide (heard as a New York caricature) | Three close-ups in the alarm light, one speaker each. The wide with the pistols (Jack's "the guns still works") follows as before |
+
+**Kept on Jack's word:** the opening, the old eating walk, the guns still, the kebab shop.
+
+## Outputs
+
+- **Render to watch:** `renders\bank robbery - cut 7-20261009-1501.mp4` (356 MB), 382.3 s, integrated −17.3 LUFS.
+  `…-1457.mp4` is the same cut before two sound fixes and can go.
+- **Checked by eye:** every changed stretch of the render at one frame every two thirds of a second. No black
+  frame was added (`blackdetect=d=0.03` finds only the two title cards and the two newspaper spins, as in cut 5).
+- **Checked by the listening model:** 1:40 to 2:30, 3:15 to 4:35 and 5:00 to 6:00 of the first render. Every
+  re-made line heard complete and British. It flagged the doorman's line landing on the narrator and an alarm bell
+  far louder than the voices; both were fixed in the second render, which was **not** listened to again.
+- **Not watched or heard at speed by anyone.**
+
+## Needs a human
+
+- **Watch and listen.** 🔴 Above all: do the re-made lines sound English to Jack, and does each man now sound
+  like himself from shot to shot? The machine says yes; the machine has been wrong.
+- 🔴 **Scene 6 ("Mr Blue. Mr Red. Mr Turquoise. Why am I Mr Turquoise?") was heard as American in this pass.** It
+  was not on the list this morning and was **not re-made**. Also not re-made: the megaphone line, the officer,
+  Denise's lines, the hearing, "So nobody's coming? / It's policy."
+- 🟡 **Two shots next to the new vault still show the old one:** Denise looking down the corridor (5:02) and the
+  Donor taking keys through a hatch (5:32). They are the old fluorescent look.
+- 🟡 **`s11e-in`** ("You're putting it in?") has a bright corridor behind the guard.
+- 🟡 **The doorman's mouth moves late in the door shot** with no words on it, because his line was moved to the top.
+- 🟡 Most new talking clips have their own room tone (rain, a buzz, a tick) that stops at the cut. Crossfades are
+  still a job by hand.
+- **Unchanged from cut 5:** Jack's opening line and the four left/right conversations, the ruling with Kai on
+  how far the piss-take goes, music credit on screen, the delivery check, Mr Red's glasses.
+
+---
+
+# Cut 8 (9 October 2026): Jack's fourteen notes on cut 7
+
+**Asked for by Jack, 9 October 2026.** His notes frame by frame, the diagnosis and the new prompt rules:
+[`review-cut7.md`](./review-cut7.md). Shots and results: [`stills-v8.md`](./stills-v8.md). **Cut 7 is untouched.**
+
+## Premiere
+
+**Sequence:** `bank robbery - cut 8`, 1280×720 @ 24, 353.4 s (**5 min 53 s**; cut 7 was 6:22).
+**Built:** a clone of `bank robbery - cut 7` (`createCloneAction`), then, in this order:
+
+1. The ten music clips lifted off A4 and A5.
+2. **Three stretches removed and closed up** (cut 7 times): 177.875 to 190.375 (the whisper at the party, its
+   narrator line 15, and Denise counting in the hall), 258.25 to 265.417 (two men and one pallet, with narrator
+   line 24), 292.708 to 301.958 ("It's about that much" and "What's all that, then?"). Each was one
+   `createRemoveItemsAction(selection, true, MediaType.ANY, false)` with every clip inside the stretch, on every
+   track, in the selection. Checked against cut 7's state: all 276 remaining clips moved by exactly the same
+   amount.
+3. **Twenty-nine new pieces overwritten in place** (V2 picture, A1 sound, silence on A3), as in cut 7. Pieces:
+   `clips\cut8\c8-*.mp4`. Bin `cut8`.
+4. Narrator line 29 replaced by `n29c-s11-crime-number.wav` (Jack's wording), level set to match the others (−3 dB).
+5. Music laid again. Three stems cross a removed stretch and were re-rendered with it cut out and a 0.3 s
+   crossfade: `m05f`, `m07f`, `m08f` in `clips\cut8\`.
+6. **Colour:** Lumetri Color, **param 16 Saturation 128**, on the 105 older clips. Not on the new `c8-` pieces
+   (already saturated), the archive film, the newspaper spins or the black cards. Six evals of eighteen clips.
+
+**Rebuild:** `python3 scripts/bank-robbery/build-cut8.py` → `edl-cut8.json`, `edl-cut8.txt` (times in the .txt are
+cut 8's). Speech marks: `speech-cut8.json`, several set by hand.
+**To undo the colour:** remove the `Lumetri Color` component from the clips, or set its param 16 back to 100.
+
+## What changed (cut 8 times)
+
+| Where | Now |
+| --- | --- |
+| 1:10 to 1:20, the hearing | Her question is `narrator\v8-panel-q.wav` (AI Studio speech, voice Gacrux, an RP note) over the old picture. His answer is a new Ingredients clip in The Ex's own voice |
+| 2:24 to 2:36, the garage | Five one-speaker Ingredients clips: the Ex, Mr Turquoise, the Ex, Mr Blue, Mr Red |
+| 2:58, the party | The whisper is gone; the night-before compilation now cuts straight to Denise |
+| 2:58 to 3:03, the hall | Denise hoovering (a new clip from the old still), under "the only person so far with real jobs" |
+| 3:59 to 4:06 | "Nobody films it": from inside the crowd, three phones pointed across the street, the pallet going by behind them |
+| 4:06 to 4:15, the door | Four men already in rubber masks, standing in the doorway in the smoke. The doorman's "Morning, Governor" is cut 7's sound, mixed in at the top |
+| 4:15 to 4:22 | Mr Turquoise with the pistol in his raised hand, plaster falling |
+| 4:22 to 4:33 | Denise comes in (from behind her); the hoover goes round three pairs of planted shoes; "Shift." with the cloth already under her glove and the bleach bottle untouched |
+| 4:33 to 4:37 | Denise looking at the money, in the hall (was the old vault corridor) |
+| 4:37 to 5:03, the strongroom | New place: cream brick basement, green iron door. Drilling → "Why am I drilling?" → "It looks better." → drilling → the key → he looks at the drill → the guard's question (`v8-guard-q.wav`, his back to us) → "Count it in the morning." → bricks onto shelves → the full strongroom, the door closing |
+| 5:21 to 5:26, the standoff | "This is your mess! / We inherited it! / Thirteen years! / Fourteen!" (lines mine) |
+
+**Cut on Jack's word:** narrator lines 15 and 24; Denise's "Lift your feet", "It's about that much" and "What's
+all that, then?". The last one was not named by Jack; it sat between two removed shots in the old look.
+
+## Outputs
+
+- **Render to watch:** `renders\bank robbery - cut 8-20261009-1837.mp4` (329 MB), 353.4 s, integrated −17.0 LUFS.
+- **Checked by eye:** 1:04 to 3:10 at one frame every 1.5 s and 3:56 to 5:31 at one frame a second. Every new
+  piece is where the plan says, with no black frame between them.
+- **New clips checked** at two frames a second before they went in. None shows a prop changing or a face breaking.
+- **Checked by the listening model** (the twelve new talking clips and the two spoken lines, before assembly):
+  every line complete, one voice each, none heard as American. It called all twelve "Northern English", which is
+  not what was asked for and shows how coarse it is. Log: `docs/listening/log/2026-10-09-172911-talk-v8.md`.
+- 🔴 **Nobody has heard cut 8 with human ears, and the render's sound was not listened to by anything.**
+
+## Needs a human
+
+- 🔴 **Watch and listen.** Above all the accents (the hearing, the garage, the strongroom, the standoff) and
+  whether the levels of the two spoken-in lines sit right.
+- 🟡 **Old-look shots still next to new ones:** the Donor's keys through the hatch (5:03) and both standoff wides
+  (5:26 to 5:36) are the grey look. The garage wide after "Fourteen!" (2:36) is the first-pass picture.
+- 🟡 **The hearing answer is a wider frame than the shots round it** (Ingredients re-staged it). It cuts as a
+  wide, but the Ex is small in it.
+- 🟡 **`s06-names` and `s06-thirteen` were re-rolled once** because the first takes moved to a different room;
+  first takes are in `vids\v8\replaced\`.
+- 🟡 **Saturation 128 was not judged on a frame in Premiere** (`premiere_export_frame` failed); it was judged on
+  the render's contact sheets.
+- **Jack's to rule:** the standoff lines; whether "What's all that, then?" comes back.
+- **Unchanged from before:** his opening line and the four left/right conversations, the ruling with Kai on the
+  piss-take of the crowd, a music credit on screen, the delivery check, crossfades by hand on A3.

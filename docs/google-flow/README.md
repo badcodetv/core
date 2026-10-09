@@ -25,6 +25,38 @@ engine-specific stayed here. That split is the same one the table above describe
 test to apply next time: **would this still be true on a different model?** If yes, it belongs in
 the skill.
 
+## 🔴 Read before designing any shot: what the video model cannot do (2026-10-09)
+
+Written after The Bank Robbery cut 7, where every clip Jack called "AI slop" asked for one of these, and every
+one was already recorded lower down in this folder. Full account:
+[`docs/stories/bank-robbery/review-cut7.md`](../stories/bank-robbery/review-cut7.md). Grade: our own clips, one
+film, Omni 1.1 Flash; items marked (inferred) were not tested on their own.
+
+| Omni cannot reliably do | Design it this way |
+| --- | --- |
+| Put on or take off anything over a face | Start with it already on |
+| Use a hand prop on a surface (spray then wipe, lift, flip) | One prop, already in contact in the first frame; a second prop stands untouched |
+| A balance or one-leg pose | Feet planted; move the object round the people |
+| A small far-off face that then moves | Chest-up or closer, or turned away from the camera |
+| Four or more people moving; walkers in Frames mode | People stand, one thing moves |
+| Two people moving one load (inferred) | One person, or cut it |
+| A gun pointed at a person | Refused by Flow. Pointed at a ceiling is untested as a clip until 2026-10-09 (see `omni-flash.md`) |
+| Two speakers in one clip; any speech in Frames mode | One speaker a clip, Ingredients, the speaker's Character attached |
+| A line from someone who is not a Flow Character | Show them from behind and make the line in AI Studio speech |
+| Reach a state (open, arrive, finish) | Continue a state that the first frame already shows |
+| Small readable text | Add it afterwards in ffmpeg |
+
+**And four rules for the words,** from the same review:
+
+1. **Short.** A still near 115 words, a silent clip near 60, the action first. The cut 7 prompts were twice that.
+2. **Name saturated colours for each place, and two lights of different colours.** "Muted", "cold", "grey",
+   "the only strong colour" and "no fill" were in most Bank Robbery stills, and the film came out grey.
+   Google's own guide offers "muted teal tones" as its moody look, so the model leans that way unasked.
+3. **Do not describe an attached Character, and do not argue with a reference.** One line: "Same room as the
+   reference image."
+4. **Check a clip at four frames a second or more** (`scripts/video-contact-sheet.sh`). One frame every two
+   seconds passed a clip of four men pulling masks on.
+
 ## 🖐 Standing rule: engine research lands here
 
 **Any research about how a Flow engine behaves goes in this folder — always, and at the time it

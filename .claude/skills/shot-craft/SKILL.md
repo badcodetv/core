@@ -52,6 +52,14 @@ toolkit lowered several of its grades. Never quote a brief over the toolkit.
 
 ---
 
+## Before the spec is final: can the generator do it?
+
+This skill is tool-agnostic, but a spec the tool cannot shoot is not a spec. Before handing over, check the action
+against the list at the top of [`docs/google-flow/README.md`](../../../docs/google-flow/README.md) (masks going on,
+props used on surfaces, balance poses, small moving faces, four or more movers). If the action is on it, redesign
+the shot so the hard part has already happened or is out of frame. Also vary the recipe: a low lens with a blurred
+foreground and one lamp, used on every shot, is one angle. Added 2026-10-09.
+
 ## The three gates
 
 Before designing anything. A shot failing one is not designed further.

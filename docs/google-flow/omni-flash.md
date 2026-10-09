@@ -2566,3 +2566,57 @@ Prompts and results: `docs/stories/bank-robbery/clips-v3.md`. Sound judged by on
   figures at a far window, locked off) jumped at 3 s to a closer framing of the same two men and stayed there.
   The asked-for action was small and far away; the model went to where it could be seen. Design the start
   frame at the size the action needs.
+
+## 2026-10-09: Ingredients for dialogue, on The Bank Robbery cut 7 `[observed]`
+
+One film, one afternoon, Omni 1.1 Flash, 720p, 8 s, one take each. Prompts:
+`scripts/bank-robbery/br-clips-v7.json`. Ledger: `docs/stories/bank-robbery/stills-v7.md`.
+
+- **`[observed, n=19 clips]` Ingredients with the still as the scene and the speaker's Character attached kept
+  the still's framing closely in 15 and re-staged it in 4.** Wording used: "Use the image as the scene: keep its
+  framing, its place, its people and its light exactly as they are." The re-staged ones were all multi-person
+  table shots.
+- **`[observed, n=19, one machine listener]` Every one of the nineteen was heard as British,** where the Frames
+  takes of eight of the same lines had been heard as American that morning by the same listener. Each prompt
+  named the accent inside the speech clause, said "English actors on a closed set in England", and attached the
+  Character whose saved voice text names an English accent. Which of the three did the work is **not known**;
+  nothing was varied alone. 🔴 Not heard by a person. A machine cannot settle accent (see the 2026-10-09 sweep §4).
+- **`[observed, n=1]` A person in the scene image who has no Character attached can come back as somebody else.**
+  `s05d-bastard` attached only the speaker; the other two men in the picture were replaced by strangers. With
+  all three Characters attached (`s05d-bastard2`) all three were themselves.
+- **`[observed, n=2 of 2]` Three men aiming pistols at each other was refused in both modes** ("This generation
+  might violate our policies"), where the same plate had animated on 8 October. Close-ups of the same men
+  shouting in the same alarm light, no pistol in frame, passed three of three.
+- **`[observed, n=1]` A presenter with a microphone in front of a protest was refused** as "reputational risk or
+  misrepresent current events" with "television newsreader's accent" in the prompt, and passed twice with that
+  phrase out and "an actor playing a made-up character… set in a made-up town" in. One change of several, so the
+  cause is a guess.
+- **`[observed, n=1]` `UPLOAD_REFUSED` on a still that Flow itself had just made** (a crowd from above), three
+  times; the same picture re-saved at 1280 wide under another file name uploaded at once. Cause not found.
+- **`[observed, n=2 of 19]` A repeated word** ("Hang on. Hang on,", "high here, high here"). One re-roll of the
+  second came back clean.
+- **`[observed]` The first Ingredients call after an image-mode session fails once** with
+  `VIDEO_OPTION_UNAVAILABLE: Ingredients on Omni 1.1 Flash` and passes on the retry (2 of 2 switches).
+- **`[observed]` The image model picker reads "Nano Banana 2.1"** when the runner asks for "Nano Banana 2"
+  (project `63d22c4b`, an Ultra account). Whether plain 2 is still offered, and what 2.1 costs, were not read.
+
+## 2026-10-09 (evening): The Bank Robbery eighth pass, 24 clips with short prompts
+
+Source: `docs/stories/bank-robbery/stills-v8.md`, prompts in `scripts/bank-robbery/br-clips-v8.json`. Omni 1.1
+Flash, 720p, 8 s. Grade: our own run, one film, one take each, read at two frames a second; nobody has watched
+them at speed yet.
+
+- 🟢 **Designing round the hard move worked 12 times out of 12** (silent Frames clips). Mask already on, cloth
+  already under the hand, pistol already raised, shoes planted with the hoover moving round them, key already in
+  the lock: none morphed. The cut 7 versions of five of these shots, which asked for the move itself, all did.
+- 🟢 **Short prompts did no harm.** Clips averaged 59 words against 120 the same morning, with the action as the
+  first sentence and one "Everything else stays where it is" in place of four or five "does not move" lines.
+  Not a controlled test: the shots changed too.
+- 🟢 **A pistol pointed at the ceiling passed**, as a Nano Banana 2 still and as a Frames clip, first time. Pistols
+  pointed at people were refused four times on 2026-10-08.
+- 🟡 **Ingredients re-staged 4 of 12 talking clips** (wider, or a different room), the same rate as the morning
+  (4 of 16). A re-roll fixed the two that had changed room. It re-stages most when the speaker is small in the
+  still.
+- 🟡 **A reference with a film-frame border passes the border on** to every still made from it.
+- **Speech for people who are not Characters** was made in AI Studio speech and laid over a shot of their back.
+  Unheard by a human so far.

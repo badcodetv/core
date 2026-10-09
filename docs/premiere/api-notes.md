@@ -1860,3 +1860,18 @@ A frame 0.33s into an Opacity 0→100 fade exported with **full-brightness RGB a
   `withTransaction`. 63 values, read back by count.
 - ✅ **A ripple is cheaper as a rebuild.** When lengths change, work out every start again in the plan and lay a
   new sequence (`scripts/bank-robbery/build-cut4.py`); there is no ripple-by-plan call worth writing.
+
+## 2026-10-09: The Bank Robbery `cut 8` (a ripple across every track, and a film-wide saturation lift)
+
+- ✅ **A time range can be ripple-deleted across the whole sequence in one action.** Put every clip that lies
+  inside the range, on every track, into the sequence's own selection and run
+  `createRemoveItemsAction(selection, true, MediaType.ANY, false)`. All tracks close up together. Checked on 276
+  clips against the state before: every one moved by exactly the removed length. This corrects the 2026-10-08 note
+  "a ripple is cheaper as a rebuild".
+- 🔴 **It needs the range to be clean on every track.** A clip that straddles the range is not cut. Lift long
+  clips (music) off first and lay them again afterwards, re-rendered with the range cut out.
+- ✅ **Lumetri on 105 clips in six evals:** per eval, one transaction appending the effect to eighteen clips, a
+  re-fetch of project and sequence, then one transaction setting param 16 on all eighteen. Selecting "clips that
+  have no Lumetri yet" makes the eval safe to run again until it reports none left.
+- ⚠️ `premiere_export_frame` failed once with EXPORT_FAILED ("nothing appeared within 120s") straight after a run
+  of effect transactions. Not retried; the render was read in its place.
