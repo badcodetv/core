@@ -5,6 +5,19 @@
 **Kai has not seen any of it, and it is not ruled as the film.** It sits beside the 1 October
 direction ([`direction-2026-10-01.md`](./direction-2026-10-01.md)), not over it.
 
+> **📰 The topical version (10 October): Jack's new direction.**
+> [`topical-show-2026-10.md`](./topical-show-2026-10.md) — same set, host only, this week's news
+> instead of history. The news board, ten games, a first episode as beat briefs, guardrails.
+> **Jack ruled the same day:** name it Magic Money Tree for now, host monologue only, no games yet,
+> script before stills. Script skeleton (twelve beats, lines blank for Jack):
+> [`magic-money-tree-monologue-2026-10.md`](./magic-money-tree-monologue-2026-10.md). ~~Next: Jack writes the lines.~~
+> **Later on 10 October:** all twelve beats have Jack's lines, and the name is **Money For Something** again.
+> Production (the plate with a television beside the host, test clips, what Flow refused):
+> [`money-for-something-topical-production.md`](./money-for-something-topical-production.md).
+> Jack's voice: [`money-for-something-voice.md`](./money-for-something-voice.md). Joke bank:
+> [`money-for-something-joke-bank.md`](./money-for-something-joke-bank.md). New output goes in
+> `animation\money for something`; everything older moved to its `test` subfolder. **Cut 2 is built** (plate B, 3 min 39 s, full lines, new animated stat cards) and is in Premiere project `october.prproj` as the sequence `MFS topical cut 2`. Cut 1 lost the end of seven lines; the cause, the fix and the step-by-step for the next episode are at the bottom of the production file ("Next time"). **Next: Jack watches cut 2.**
+
 > **📝 Jack's notes for the next pass (4 October):**
 > [`money-for-something-notes-2026-10-04.md`](./money-for-something-notes-2026-10-04.md) —
 > sparse found footage, more game-show graphics and games, more jokes and arguments, a title

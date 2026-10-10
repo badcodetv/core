@@ -52,7 +52,7 @@ async function download(i: number, to: string) {
 try {
   await c.reloadProject(); await c.ensureAgentOff()
   if (!process.env.MFS_SKIP_UPLOAD) { await c.uploadToProject(plate); for (let i = 0; i < 8; i++) { await page.waitForTimeout(500); if (await clickText('I agree')) break } }
-  await c.ensureVideoConfigRebuilt({ model: 'Omni 1.1 Flash', aspect: '16:9', duration: 8, count: 1, frames: mode === 'frames' })
+  await c.ensureVideoConfigRebuilt({ model: 'Omni 1.1 Flash', aspect: '16:9', duration: Number(process.env.MFS_DURATION ?? 8), count: 1, frames: mode === 'frames' })
   if (mode === 'frames') await c.fillFrameSlotRebuilt('Start', basename(plate))
   await page.evaluate(() => window.scrollTo(0, 0)).catch(() => {})
   const before = await keys()
