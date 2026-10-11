@@ -1875,3 +1875,16 @@ A frame 0.33s into an Opacity 0→100 fade exported with **full-brightness RGB a
   have no Lumetri yet" makes the eval safe to run again until it reports none left.
 - ⚠️ `premiere_export_frame` failed once with EXPORT_FAILED ("nothing appeared within 120s") straight after a run
   of effect transactions. Not retried; the render was read in its place.
+
+## A clip that decodes fine can import silent (2026-10-11)
+
+**Expected:** 29 ffmpeg-made `.mp4` clips (H.264 + AAC-LC stereo 48 kHz, all encoded by the same command) play with sound.
+**Happened:** two of the 29 (`c3-t-01b`, `c3-t-06b`, project `october.prproj`) were silent on the timeline **and** in
+`premiere_export_sequence`, for their whole length. ffmpeg reads both at about -19.7 dB mean, stereo and summed to mono,
+and `ffprobe` shows nothing that sets them apart from the 27 that played. One clip of the previous day's cut did the same.
+**What worked:** the same picture with PCM sound in a `.mov` (`-c:v copy -c:a pcm_s16le`), imported and laid over the
+old clip with `premiere_insert_clip` overwrite. The next export had sound there.
+**Not known:** the cause, and whether PCM matters or any fresh import would have done it. Nothing was isolated.
+**Do instead:** after building a timeline of talking clips, `premiere_export_sequence` and run
+`silencedetect=noise=-45dB:d=1.0` over the export; a silence as long as a clip is this fault. The Money For Something
+builder now writes its per-clip files as `.mov` with PCM sound.

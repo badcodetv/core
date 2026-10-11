@@ -56,6 +56,7 @@ each fact: the table in [`magic-money-tree-monologue-2026-10.md`](./magic-money-
 | Bezos, virgin | 1c, 8a, 8c | **J.** Any rich man can carry an insult from one beat to a later one |
 | The exit word | Every beat | Moving on / In other news / Next / Onwards / What's next / Anyway |
 | The tree nobody watered | 12d | The picture gag. It can get worse each episode |
+| "Nurses: £0", a tally card | Not used | **C**, offered 11 October. A small card that returns unchanged after every big number. The picture form of Jack's "still fucked" callback |
 
 ## Unused, by subject
 

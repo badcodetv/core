@@ -193,6 +193,106 @@ Cut 1 and its bins are left in place. **Nobody has watched cut 2.**
 - The 12a card shows a previous Chancellor with the Budget box (no free picture of Healey with it).
 - The television's maker's name is not blurred. No real news clips (needs a ruling). `delivery-qc.sh` not run.
 
+## Cut 3 (11 October): Jack's notes on cut 2
+
+**Jack on cut 2:** "There is too much dead air, the jokes need to be quick for them to land, only have pauses for
+comedic effect, but the sentences have to flow and be natural, i like the footage and images used, the font for
+the graphics look old and boring please make a sleeker more modern design for that."
+
+**Dead air** (`build-topical-cut.py`, `keeps()`): a clip is now a list of kept ranges, not one window.
+
+- Word times: `topical-words-json.py` (faster-whisper `medium.en`, every word, prompted with the script line).
+  `small.en` had stopped early on nine clips, which is why cut 2 kept those whole. 5a's second sentence
+  ("Shell made...") was still missed and was added by hand from a second pass (5.33 to 7.62 s).
+- Silence is measured (`silencedetect`, -34 dB, 0.2 s). Head: 0.07 s before the first sound. Tail: 0.14 s after the
+  line's last sound, 0.32 s at the end of a beat. This also removes the noise Flow added after 3a, 4b and 6b.
+- Pauses inside a line are shortened, never removed, and cut from their middle: 0.30 s after a full stop,
+  0.17 s anywhere else.
+- Eleven pauses are kept longer on purpose (the `PAUSE` table), 0.40 to 0.70 s: before "Moving on", "In other news",
+  "Or something", "A war with an advert break", "And ironically", "Andrew", "Actually, I shudder",
+  "What's next", "Onwards", "Just fucking with you", and after "flourishing".
+- Each full-screen cutaway is re-anchored to the same words it sat on in cut 2.
+- The silent ending (12d) starts 1.6 s in.
+- Result: 3 min 02 s against 3 min 39 s. **Each shortened pause is a jump cut in the picture** (57 of them, locked
+  camera, so he pops slightly). Not judged by a person yet.
+
+**Cards, third style** (`build-topical-cards3.py`, in `screen\cards3`; run with the whisper venv's Python, it needs Pillow):
+same photos, numbers and wording as `cards2`. Inter Tight, left aligned, sentence case; a small tracked label with a
+coloured dot; one big number in the accent colour with its unit smaller in white; a short rule; the source in small
+grey type on a hairline. The photo is darkened by a gradient from the left, so there are no drop shadows. Lines slide
+up and fade in; the number counts up and eases into the figure. Drawn frame by frame in Pillow because `drawtext`
+cannot track letters, mix weights on one line or ease. Credits card is now Inter. Fonts: `fonts/InterTight.ttf`,
+`fonts/Inter.ttf` (SIL Open Font Licence).
+
+**Checked:** `topical-verify.py "MFS topical cut 3"`: 26 of 27 lines word-perfect, no timestamp faults; the one
+flag (4a "election's") is the listener's spelling, the word is there on a second local transcription. Contact sheet
+looked at: every card and television picture is in place. **Not checked: how it sounds.** Nobody has listened to cut 3.
+
+## Premiere
+
+**Project:** `...\animation\money for something\october.prproj`
+**Sequence:** `MFS topical cut 3`, 1280x720 @ 24, 179.96 s (the render is 181.8 s: Premiere drops each clip's part frame)
+**Built:** 2026-10-11 by session (bridge), `premiere_create_sequence` from the 29 items in order
+
+| Track | What |
+| --- | --- |
+| V1 / A1 | `c3-t-01a` ... `c3-t-12d`, `c3-t-99-credits`: 29 clips, cuts only, no effects |
+
+Bin: `00 CUT 3 (tight, modern cards)`. Media: `clips\MFS-topical-cut-3\`. Render: `renders\MFS topical cut 3.mp4`
+(its `.tsv` lists every kept range). Cuts 1 and 2 and their bins are untouched.
+
+**Jack on cut 3 (11 October):** "the clip at 5 secs and at 1 min 16 secs is mute, the rest is great".
+Both were silent in Premiere only (the files and the ffmpeg render have sound): `c3-t-01b` and `c3-t-06b`. Fixed in
+place: `c3-t-01b-pcm.mov` and `c3-t-06b-pcm.mov` (same picture, PCM sound) laid over them at 4.458 s and 74.25 s; a
+Premiere export then had no silence before the ending. See `docs/premiere/api-notes.md`. The builder now writes `.mov`
+with PCM for every clip (not yet run). Correction to the note above: 49 pauses were shortened, not 57; measured, the
+host moves very little across them.
+
+**Found on the listening pass, not fixed in cut 3:** 5a and 5b each open on about a second of faint hiss before the
+first word (the builder now trims it: `HISS`); 12a is about 2 dB quieter than the rest; the ending is 14.5 s of
+complete silence (12d plus the credits). Heard by Gemini only, not by a person: 6b sing-song, 7b acted not flat,
+12b rushed.
+
+**Needs a human:** watch it. To give one pause more or less air, change its number in `PAUSE` (or `SENT` / `COMMA`
+for all of them) and rebuild; the pauses are baked into the clips, so they cannot be opened back up in Premiere.
+Still open from cut 2: 4a's accent, animated reads, no room tone, the 7a and 12a pictures, the television's
+maker's name, real news clips (Kai's ruling), `delivery-qc.sh` not run.
+
+## Review of cut 3 (11 October): what to fix, what the script missed, ideas
+
+Jack, after watching cut 3: "the rest is great... watch and listen to it, tell me any improvements, or anything we
+have missed out on in the script, or any gold you can think of overall." This is what he was told. **None of it is
+ruled; he has not answered yet.** The three options put to him: cut 4 with fixes only; add beats (briefs from me,
+lines from him); cut the first three vertical shorts from cut 3 as it stands.
+
+**Fixes for cut 4 (no script change)**
+
+| What | How sure | Fix |
+| --- | --- | --- |
+| 5a (0:56) and 5b (1:04) open on about a second of faint hiss | Measured | Already in the builder (`HISS`); appears on the next build |
+| The ending is 14.5 s of complete silence (12d plus credits) | Measured | Room hum or a sting under it; shorter credits |
+| 12a (the Budget line, 2:28) is about 2 dB quieter | Measured | Level it |
+| 6b sing-song, 7b acted not flat, 12b rushed and crowded | Gemini heard it; no person has | Listen; reroll if he agrees |
+| Second lines of the cards are tiny inside the television | Seen on the contact sheet | Bigger sub-lines, or number and label only in the television |
+
+**Missed in the script**
+
+- **The money tree itself.** The Bank of England stopped selling its bonds in September (board story 7). It is the
+  show's title and Kai named it in the 6 October meeting. Not in the monologue.
+- **Who paid Andrew's bill.** The King, from private income, reported as a loan. The script says he owed it and stops.
+  🔴 Private money: never "the taxpayer paid".
+- **Jack's own callback, cut for length:** "Nurses are still fucked, by the way. Just saying."
+- **The energy bill's +£60** is on a card (5b) and never said aloud.
+- **The future.** Jack asked for more of it; it is in 1a, 4c and 12c only.
+
+**Ideas (mine, not approved)**
+
+- **The nurses tally.** A small card, "Nurses: £0", that comes back unchanged after each big number (Musk, banks,
+  defence, Andrew). His callback line as a picture.
+- **Shorts.** Each beat stands alone at 15 to 25 seconds. Musk then nurses is the strongest pair.
+- **A sign-off**, from the unused pile: "See you next week. I've already seen it. It's worse."
+- **Publish soon.** The Budget beat is dead after 28 October; the news board is dated 10 October.
+
 ## Next time: how to make the next episode, and what to try
 
 **The run, in order** (everything in `scripts/money-for-something/`):
@@ -202,11 +302,13 @@ Cut 1 and its bins are left in place. **Nobody has watched cut 2.**
 2. `python3 build-prompts-topical.py` writes one prompt per clip and `clips-topical.tsv`.
 3. Flow project `cb27208c` open, then `bash run-clips-topical.sh`. Plate: `~/.cache/badcode-mfs-topical/mfst-plate-B.jpg`
    (copy of `stills\plate-B.jpg`; already uploaded to the project).
-4. `python3 topical-hear.py` (crowd noise, accent) and `~/.cache/badcode-whisper/venv/bin/python topical-words.py`
+4. `python3 topical-hear.py` (crowd noise, accent) and `~/.cache/badcode-whisper/venv/bin/python topical-words-json.py`
    (word timings, and which clips do not match their line). Move bad takes to `videos\rejected` and rerun step 3.
-5. Pictures: a sourcing pass into `screen\bNN`, licences into the sources file. Cards: edit and run `build-topical-cards.py`.
+5. Pictures: a sourcing pass into `screen\bNN`, licences into the sources file. Cards: edit and run `build-topical-cards3.py` (venv Python).
 6. Edit `PLAN` in `build-topical-cut.py`, then `python3 build-topical-cut.py "MFS topical cut N"`.
 7. `python3 topical-verify.py "MFS topical cut N"`. Then look at a contact sheet. Then import to Premiere.
+8. After importing: `premiere_export_sequence`, then `silencedetect=noise=-45dB:d=1.0` over the export. A silence as
+   long as a clip means Premiere imported that clip mute (it did, twice, in cut 3). Delete the check export after.
 
 **Worth trying, in rough order of value**
 
