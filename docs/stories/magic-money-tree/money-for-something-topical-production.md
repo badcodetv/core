@@ -293,6 +293,48 @@ lines from him); cut the first three vertical shorts from cut 3 as it stands.
 - **A sign-off**, from the unused pile: "See you next week. I've already seen it. It's worse."
 - **Publish soon.** The Budget beat is dead after 28 October; the news board is dated 10 October.
 
+## Shorts from cut 3 (12 October)
+
+Jack: "chop it up into shorts"; he emptied `Desktop\Youtube Vids\animation\shorts` first because the last batch was
+"plain awful and ai slop". **Nothing is posted before he has spoken to Kai.** No new footage and no new words:
+cut 3's clips and pacing, rebuilt upright by `scripts/money-for-something/build-topical-shorts.py`.
+
+**Jack, 12 October, after watching: "shorts are cool. keep those".**
+
+**The frame (1080 x 1920):** the picture or card from his television on top, at full size; one thin line with the
+photo credit; the host below, cropped in from the wide shot; every word on screen two or three at a time, numbers
+in the cards' yellow. Sound levelled per clip.
+
+| File (in `shorts\money-for-something`) | Length | Clips |
+| --- | --- | --- |
+| `01-nurses-and-missiles.mp4` | 25.6 s | 2a, 3a, 3b, 3c |
+| `02-the-banks.mp4` | 12.4 s | 5a, 5b |
+| `03-palantir.mp4` | 8.8 s | 9a |
+| `04-expat.mp4` | 14.8 s | 10a, 10b |
+| `05-fartgate.mp4` | 7.4 s | 11a |
+| `06-the-budget-and-the-tree.mp4` | 25.8 s | 12a to 12d |
+| `07-no-money-run.mp4` | 46.8 s | nurses, missiles, banks, Palantir |
+| `08-the-episode-clean.mp4` | 1 min 49 s | the whole episode without beats 4, 6, 7 and 8 |
+
+Also `pictures\` (ten stat cards as stills, with `credits.txt`) and `sheets\` (a contact sheet of each short).
+
+**Left out of every short:** beat 4 (the sniper line), beat 6 (the Epstein line), beat 7 ("rich nonces", "someone
+guillotine him") and beat 8 (the Bezos insults). All four wait on Kai. Shorts 04, 06 and 08 still name living
+people (Farage, Trump, Burnham by office), so they wait on the same ruling.
+
+**Changed from cut 3 on purpose:** in 10b the "Immigrant / Expat" card now arrives three seconds in, so "Expat" lands
+on the word and not before it (in cut 3 it sat small in the television from the start).
+
+**Measured:** all eight are 1080 x 1920, 24 frames a second, tagged limited range BT.709; loudness -14.6 to -15.5
+LUFS (aimed at -14; about one decibel quiet), peak -1.2 to -1.5. I looked at contact sheets of 01, 02, 04 and 06.
+Short 08 holds every clip used in any short; transcribed on this machine (faster-whisper) it has every script
+line whole. `topical-verify.py` gives a false result on it: it matches lines in order and stops at the missing beat 4.
+**Not done:** no person has listened to them; `delivery-qc.sh` not run.
+
+**Known weak spots:** short 06 ends on 8.4 seconds with no sound at all (the walk-off; same as cut 3). 03 and 05
+are under ten seconds. The host is cropped from a 720p frame, so he is a little soft at full size. The show has
+no sting and the shorts have no end card.
+
 ## Next time: how to make the next episode, and what to try
 
 **The run, in order** (everything in `scripts/money-for-something/`):
