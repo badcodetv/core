@@ -1,0 +1,60 @@
+{
+ "pre": "",
+ "riotEnd": " Dusk on 35mm colour film, slightly grainy, rich saturated colour: deep blue sky, hot pink-red flare light, amber street lamps, red and blue scarves. Wet cobbles. Unretouched. 16:9. Thanks.",
+ "shots": [
+  {
+   "id": "s08k-noses",
+   "cast": [],
+   "refs": [
+    "br5-riot-look"
+   ],
+   "endKey": "riotEnd",
+   "body": "Same street and light as the reference image. The camera sits on the top rail of a steel crowd barrier, the rail a blurred bar across the bottom of the frame, the frame tilted. Two people in their fifties lean in from either side, nose to nose in profile, filling the frame, both shouting at once: on the left a heavy woman in a red scarf, on the right a man in a royal blue scarf and a flat cap, jabbing a finger at her. Ordinary English people from one town, in wet anoraks and work coats, wind-reddened skin, uneven teeth. Behind them, out of focus, pink smoke and the crowd. Light: a flare burning on the cobbles below, lighting their chins hot pink, and one amber street lamp behind."
+  },
+  {
+   "id": "s08l-red",
+   "cast": [],
+   "refs": [
+    "br5-riot-look"
+   ],
+   "endKey": "riotEnd",
+   "body": "Same street and light as the reference image. The camera is inside the crowd, looking past the back of a royal blue bobble hat and a blue-scarfed shoulder, dark and out of focus, filling the left third of the frame. Facing us across a steel barrier, chest-up, a grey-haired woman of sixty in a red scarf and a quilted coat is shouting, mouth wide, pointing a finger past the lens. Ordinary English people from one town, in wet anoraks and work coats, wind-reddened skin, uneven teeth. Behind her, soft, more red scarves and a red flag. Light: a flare on the cobbles between them, hot pink from below, and amber street lamps."
+  },
+  {
+   "id": "s08n-blue",
+   "cast": [],
+   "refs": [
+    "br5-riot-look"
+   ],
+   "endKey": "riotEnd",
+   "body": "Same street and light as the reference image. The camera is inside the crowd, looking past the back of a red woolly hat and a red-scarfed shoulder, dark and out of focus, filling the right third of the frame. Facing us across a steel barrier, chest-up, a broad man of forty in a royal blue scarf and a hi-vis work jacket is shouting, mouth wide, one hand gripping the rail, the other holding a phone up at arm's length, pointed at her. Ordinary English people from one town, in wet anoraks and work coats, wind-reddened skin, uneven teeth. Behind him, soft, more blue scarves and a blue flag. Light: a flare on the cobbles between them, hot pink from below, and amber street lamps."
+  },
+  {
+   "id": "s08m-low",
+   "cast": [],
+   "refs": [
+    "br5-riot-look"
+   ],
+   "endKey": "riotEnd",
+   "body": "Same street and light as the reference image. The camera lies on the wet cobbles in the gap between two rows of steel barriers, looking steeply up, the frame tilted. High above the lens two men lean over the barriers from either side, one in a red scarf, one in a royal blue scarf, shouting down at each other across the gap, mouths wide, arms thrown out, faces lit from below. A burning flare lies on the cobbles at the near edge of the frame, sharp, pouring pink smoke up between them. Ordinary English people from one town, in wet anoraks and work coats, wind-reddened skin, uneven teeth. Light: the flare, and a deep blue sky above."
+  },
+  {
+   "id": "s08o-row-red",
+   "cast": [],
+   "refs": [
+    "br5-riot-look"
+   ],
+   "endKey": "riotEnd",
+   "body": "Same street and light as the reference image. A long lens looks along a steel crowd barrier from one end. Three people in red scarves lean over the rail in a row, all shouting towards the right of the frame, arms pointing: nearest and sharp, a wiry man of sixty in a flat cap; behind him, softer, a young woman with a ponytail and a big man with a shaved head. Ordinary English people from one town, in wet anoraks and work coats, wind-reddened skin, uneven teeth. Pink smoke drifts across them. Light: a flare on the cobbles out of frame to the right, hot pink on their faces, and amber street lamps behind."
+  },
+  {
+   "id": "s08p-row-blue",
+   "cast": [],
+   "refs": [
+    "br5-riot-look"
+   ],
+   "endKey": "riotEnd",
+   "body": "Same street and light as the reference image. A long lens looks along a steel crowd barrier from one end. Three people in royal blue scarves lean over the rail in a row, all shouting towards the left of the frame, arms pointing: nearest and sharp, a stout woman of fifty in a rain hood; behind her, softer, a tall young man in a work fleece and an old man in glasses. Ordinary English people from one town, in wet anoraks and work coats, wind-reddened skin, uneven teeth. Pink smoke drifts across them. Light: a flare on the cobbles out of frame to the left, hot pink on their faces, and amber street lamps behind."
+  }
+ ]
+}

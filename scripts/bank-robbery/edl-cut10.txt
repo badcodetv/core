@@ -1,0 +1,118 @@
+Cut 10. start, length, file, what (picture pieces are ranges of the cut 8 stem; the number in the name is the cut 8 frame).
+
+   0.000   2.917  c10-000-00062.mov          the cafe, open
+   2.917  13.500  c10-001-00132.mov          proud to be British: kept whole
+  16.417   3.792  c10-002-00456.mov          n01-greasy-spoon
+  20.208   4.375  c10-003-00562.mov          n01-greasy-spoon
+  24.583   6.625  c10-004-00685.mov          n02-they-own
+  31.208   2.167  c10-005-00863.mov          n03-lottery-ticket
+  33.375   3.250  c10-006-00940.mov          n03-lottery-ticket
+  36.625   2.250  c10-007-01055.mov          She should bloody well earn it
+  38.875   6.958  c10-008-01110.mov          feminist rights / hate crime
+  45.833   2.417  c10-009-01281.mov          Thanks for the advice
+  48.250   1.917  c10-010-01478.mov          title
+  50.167   1.208  c10-011-01560.mov          three weeks earlier
+  51.375   3.125  c10-012-01592.mov          n04-long-stint
+  54.500   4.333  c10-013-01695.mov          the panel asks
+  58.833   4.542  c10-014-01807.mov          food bank ... or consultancy (the pause is the joke)
+  63.375   1.542  c10-015-01916.mov          n05-inside-government
+  64.917   6.667  c10-016-01965.mov          n08-bin-bag
+  71.583   1.500  c10-017-02191.mov          card: the Ex
+  73.083   1.500  c10-018-02242.mov          card: the Donor
+  74.583   1.500  c10-019-02314.mov          card: the Proprietor
+  76.083   1.500  c10-020-02364.mov          card: Mr Turquoise
+  77.583   1.542  c10-021-02442.mov          card: Mr Blue and Mr Red
+  79.125   4.625  c10-022-02484.mov          the biggest vault
+  83.750   3.750  c10-023-02619.mov          I am the security
+  87.500   1.292  c10-024-02718.mov          the problem is eyes
+  88.792   4.000  c10-paper-blue.mov         two front pages, one photograph
+  92.792   4.000  c10-paper-red.mov          two front pages, one photograph
+  96.792   2.000  c10-027-02980.mov          which one is true
+  98.792   4.000  c10-028-03048.mov          I need them to reply
+ 102.792   1.375  c10-029-03211.mov          how much do we take
+ 104.167   2.625  c10-030-03252.mov          Nothing ... we put it in (pause kept)
+ 106.792   4.292  c10-031-03315.mov          n10-accountant
+ 111.083   1.250  c10-032-03427.mov          You bastard
+ 112.333   4.792  c10-033-03474.mov          Mr Blue, Mr Red, Mr Turquoise
+ 117.125   1.792  c10-034-03591.mov          why am I Mr Turquoise
+ 118.917   1.083  c10-035-03634.mov          Blue was taken
+ 120.000   1.458  c10-036-03660.mov          Thirteen years
+ 121.458   1.125  c10-037-03695.mov          Fourteen
+ 122.583   8.208  c10-038-03754.mov          n12-fake-fight
+ 130.792   1.458  c10-039-03982.mov          the drunk compilation
+ 132.250   2.000  c10-040-04025.mov          the drunk compilation
+ 134.250   2.000  c10-041-04085.mov          the drunk compilation
+ 136.250   1.833  c10-042-04147.mov          the drunk compilation
+ 138.083   2.458  c10-043-04207.mov          the bucket
+ 140.542   4.250  c10-044-04269.mov          Denise hoovering
+ 144.792   0.875  c10-045-04391.mov          card, the crowd from above, the placards, the man at the window
+ 145.667   2.667  c10-046-04426.mov          card, the crowd from above, the placards, the man at the window
+ 148.333   2.000  c10-047-04680.mov          card, the crowd from above, the placards, the man at the window
+ 150.333   2.333  c10-048-04546.mov          card, the crowd from above, the placards, the man at the window
+ 152.667   3.917  c10-049-04784.mov          whose fault it is
+ 156.583   5.792  c10-050-04880.mov          n19-bank-written-on-it
+ 162.375   1.708  c10-051-05042.mov          the two of them laughing at the window
+ 164.083   3.583  c10-052-05127.mov          both sides
+ 167.667   4.875  c10-053-05217.mov          n21-corridor
+ 172.542   3.083  c10-054-05404.mov          mind how you go, sir
+ 175.625   6.000  c10-055-05483.mov          the walk
+ 181.625   2.833  c10-056-05652.mov          the walk, then the two sides shouting
+ 184.458   1.000  c10-shout-1.mov            the walk, then the two sides shouting
+ 185.458   1.000  c10-shout-2.mov            the walk, then the two sides shouting
+ 186.458   1.000  c10-shout-3.mov            the walk, then the two sides shouting
+ 187.458   1.000  c10-shout-4.mov            the walk, then the two sides shouting
+ 188.458   1.000  c10-shout-5.mov            the walk, then the two sides shouting
+ 189.458   1.125  c10-shout-6.mov            the walk, then the two sides shouting
+ 190.583   7.333  c10-063-05900.mov          the door; Morning, Governor first
+ 197.917   6.333  c10-064-06112.mov          n26-turquoise-gun
+ 204.250   2.458  c10-065-06279.mov          Denise comes in
+ 206.708   3.083  c10-066-06362.mov          the hoover round the shoes
+ 209.792   2.917  c10-067-06442.mov          Shift.
+ 212.708   3.958  c10-068-06553.mov          n27-only-person
+ 216.667   3.792  c10-069-06652.mov          why am I drilling / it looks better
+ 220.458   1.458  c10-070-06743.mov          n28-his-bank
+ 221.917   1.792  c10-071-06785.mov          n28-his-bank
+ 223.708   3.375  c10-072-06837.mov          n28-his-bank
+ 227.083   4.417  c10-073-06934.mov          you are putting it in / count it in the morning
+ 231.500   4.125  c10-074-07047.mov          n29-crime-number
+ 235.625   4.875  c10-075-07155.mov          n29-crime-number
+ 240.500   7.500  c10-076-07282.mov          the keys, then the flat above the cafe
+ 248.000   3.583  c10-077-07473.mov          the keys, then the flat above the cafe
+ 251.583   5.875  c10-078-07565.mov          for sale
+ 257.458   3.500  c10-079-08086.mov          Denise in the rain, SOLD
+ 260.958   7.500  c10-080-08169.mov          she looks up; the camera goes to the sky
+ 268.458   5.417  c10-081-08349.mov          the badcode kebab shop
+
+Narrator:
+   3.087  12.485  n00-proud.wav
+  16.567   7.722  n01-greasy-spoon.wav
+  24.733   6.188  n02-they-own.wav
+  31.358   4.976  n03-lottery-ticket.wav
+  51.525   2.663  n04-long-stint.wav
+  63.495   1.141  n05-inside-government.wav
+  65.037   6.227  n08-bin-bag.wav
+  88.912   3.137  n09-distraction.wav
+ 107.192   3.600  n10-accountant.wav
+ 122.703   7.796  n12-fake-fight.wav
+ 130.912   6.837  n14-they-agree.wav
+ 140.692   3.812  n16-real-jobs.wav
+ 144.912   7.479  n17-bank-holiday.wav
+ 156.703   5.371  n19-bank-written-on-it.wav
+ 167.787   4.443  n21-corridor.wav
+ 175.745   5.577  n22-lasers.wav
+ 181.745   8.496  n23-nobody-films-it.wav
+ 191.733   5.899  n25-hobby.wav
+ 198.037   5.900  n26-turquoise-gun.wav
+ 212.828   3.526  n27-only-person.wav
+ 220.558   6.238  n28-his-bank.wav
+ 231.900   8.294  n29-crime-number.wav
+ 240.620  10.690  n30-just-early.wav
+ 251.833   5.546  n31-above-a-cafe.wav
+
+Music:
+   0.000  49.050  m10-01-cafe.wav  A3
+  47.650  83.942  m10-02-plan.wav  A4
+ 130.192  15.400  m10-03-night.wav  A3
+ 144.192  32.233  m10-04-march.wav  A4
+ 175.025  83.233  m10-05-bank.wav  A3
+ 256.858  17.017  m10-06-ending.wav  A4

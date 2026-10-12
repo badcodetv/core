@@ -681,3 +681,86 @@ all that, then?". The last one was not named by Jack; it sat between two removed
 - **Jack's to rule:** the standoff lines; whether "What's all that, then?" comes back.
 - **Unchanged from before:** his opening line and the four left/right conversations, the ruling with Kai on the
   piss-take of the crowd, a music credit on screen, the delivery check, crossfades by hand on A3.
+
+---
+
+# Cut 9 (12 October 2026): fast, a new narrator, lofi music, the dinghy front pages
+
+**Asked for by Jack, 12 October 2026.** His words, what was cut and why, the narrator, the music and the photograph:
+[`review-cut8.md`](./review-cut8.md). **Cut 8 is untouched.**
+
+## Premiere
+
+**Sequence:** `bank robbery - cut 9`, 1280×720 @ 24, 270.8 s (**4 min 31 s**; cut 8 was 5:53).
+**Built:** a new sequence (`premiere_create_sequence` from the first piece), not a clone.
+
+| Track | What |
+| --- | --- |
+| V1 + A1 | 77 pieces, end to end. 75 are time ranges of **one file**: cut 8 exported with A2, A4 and A5 muted (`clips\cut9\cut8-stem-no-narrator-no-music.mp4`), so the picture, the saturation lift and the production sound are cut 8's. Two are the new front pages (`c9-paper-blue.mov`, `c9-paper-red.mov`). Files `clips\cut9\c9-NNN-FFFFF.mov` (H.264 + PCM; FFFFF is the cut 8 frame it starts on), +4.5 dB with a limiter |
+| A2 | 24 narrator lines, `narrator\v9\*.wav`, placed whole |
+| A3, A4 | Six music cues, `clips\cut9\m9-*.wav`, already ducked and faded, alternating tracks so they overlap |
+
+Each picture piece was placed with in 0 and out at its length (`createSetInOutPointsAction`, `createOverwriteItemAction(item, t, 0, 0)`,
+`createClearInOutPointsAction`); the files carry 0.25 s of spare frames so no slot is short.
+
+**Rebuild:** `python3 scripts/bank-robbery/build-cut9.py --preview` → the pieces, the music stems, `edl-cut9.json`,
+`edl-cut9.txt` (every piece with its cut 9 time and what it is) and `clips\cut9\preview-cut9.mp4`.
+Narrator: `scripts/bank-robbery/br-narration-v9.py`. Bin `cut9`.
+
+**To put a cut scene back:** add its line to `BLOCKS` in `build-cut9.py` in cut 8 times and run it again; every
+later start is worked out afresh. The pieces come from a flattened export, so a single shot cannot be re-trimmed
+past its ends inside Premiere; go back to cut 8 for handles.
+
+## Outputs
+
+- **Render to watch:** `renders\bank robbery - cut 9-20261012-1203.mp4` (252 MB), 270.8 s, integrated −15.8 LUFS.
+- **Checked against the script:** the render was transcribed (faster-whisper) and compared word for word with the
+  preview and the plan. All 24 narrator lines and every kept dialogue line are there, whole, including "Shift." and
+  "Morning, Governor". The differences are the speech model mishearing a dropped H.
+- **Dead air:** no silence longer than 1 s at −45 dB anywhere. The longest stretches without words are the five name
+  cards (7.5 s), Denise coming in, hoovering and "Shift." (8.5 s), and the ending from the rain to the kebab shop (16 s).
+- **Black frames:** only the two lettered cards and the first frames of each newspaper spin.
+- **Checked by eye:** the whole preview at one frame every 1.5 s; the newspapers and the ending again from the render.
+- **Checked by the listening model** (the preview's sound): one narrator voice throughout, heard as a deadpan
+  London voice, no line clipped, no cue change that jars. It agrees with most things it is asked; treat it as a
+  check for faults, not as taste.
+- 🔴 **Delivery check fails as before** (`scripts/delivery-qc.sh`): colour range untagged with full-range content,
+  and the true peak touches 0 dBFS. Fix at the delivery encode, not in the cut.
+
+## Needs a human
+
+- 🔴 **Watch and listen.** Only machines have heard the new narrator and the music.
+- 🔴 **Credit owed on screen** for the dinghy photograph (string in `review-cut8.md`). No credits card exists yet.
+- **Jack's to rule:** the standoff being cut; narrator line 18 and the tail of line 17 being cut; the voice
+  (seven other auditions in `narrator\v9-auditions\`); each tune.
+- **Unchanged from before:** his opening line and the four left/right conversations, the ruling with Kai on the
+  piss-take of the crowd, the delivery check (untagged colour range), the old-look shots named under cut 8.
+
+## Cut 10 (12 October 2026)
+
+**Jack on cut 9:** "make the newspapers be on the screen a bit longer so that they can be read… when it says nobody
+films it at 3 mins 1 second… it should be people shouting at each other in the crowd, but make it quick… keep the
+music it is great. narrator is cool keep that. keep most of it just change what is needed."
+
+**Sequence `bank robbery - cut 10`**, a new timeline built the same way as cut 9 (cut 9 untouched). 4:33.9, was 4:30.8.
+Render: `renders\bank robbery - cut 10-20261012-1334.mp4`. Rebuild: `scripts/bank-robbery/make-shout-cut10.sh`, then
+`build-cut10.py` (→ `edl-cut10.json`, `edl-cut10.txt`, pieces in `clips\cut10\`).
+
+| Change | Was | Now |
+| --- | --- | --- |
+| The two front pages | 2.5 s each | **4.0 s each** (spin 0.5 s, then held). The narrator line is 3.1 s, so the last 5 s is music only |
+| Under "Nobody films it" | 6.1 s of three raised phones | **Six shots of the two sides shouting,** 1 s each (the last 1.1 s), from 3:04.5 to 3:10.6. Shots and order: [`stills-v10.md`](./stills-v10.md) |
+| Everything after the papers | | 3.0 s later; the bank scene on is 3.04 s later |
+
+- **Sound under the shouting shots** is the crowd bed that was under the phones (the cut 8 stem from 238.33 s), so the
+  join is unbroken. The clips' own sound is not used.
+- **Narrator and music:** the same 24 files and the same six tunes from the same points; the music stems were made
+  again (`m10-*.wav`) only because the scene lengths moved.
+- **Tracks:** V1 + A1 82 pieces, A2 24 narrator lines, A3/A4 six cues.
+
+**Checked.** The render transcribed and compared word for word with the cut 9 render: nothing lost (the differences
+are the speech model hearing the same audio differently). No silence over 1 s. −15.8 LUFS, true peak 0.0 dBFS, as
+cut 9. Frames of the shouting run and the papers read from the render.
+
+**Jack, same day:** "That is great." **Needs a human.** Still owed
+from cut 9: the photo credit on screen, the delivery check, his ruling on the standoff and the two narrator trims.

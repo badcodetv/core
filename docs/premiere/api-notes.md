@@ -1888,3 +1888,18 @@ old clip with `premiere_insert_clip` overwrite. The next export had sound there.
 **Do instead:** after building a timeline of talking clips, `premiere_export_sequence` and run
 `silencedetect=noise=-45dB:d=1.0` over the export; a silence as long as a clip is this fault. The Money For Something
 builder now writes its per-clip files as `.mov` with PCM sound.
+
+## 2026-10-12: The Bank Robbery `cut 9` (a stem export, 77 + 30 placements)
+
+- ✅ **A picture-and-dialogue stem straight from a finished cut:** `(await seq.getAudioTrack(i)).setMute(true)` on the
+  narrator and music tracks, `premiere_export_sequence` with an `outPath`, then `setMute(false)`. The export leaves
+  muted tracks out. `setMute` is a plain call, not an Action. A re-cut can then be planned as time ranges of that one
+  file (`scripts/bank-robbery/build-cut9.py`), which keeps every grade and level of the old cut.
+- 🔴 **77 placements in one eval ran past the 600 s limit** (about 8 s a clip; the project holds several hundred
+  items and `helpers.resolveProjectItem` is called once per clip). The tool reported TIMEOUT, but **the panel kept
+  going**: a `premiere_get_sequence` sent afterwards waited behind it and then showed 73 of 77 placed. Keep to about
+  30 placements an eval in a project this size, and after a TIMEOUT read the timeline before placing anything again.
+- 🔴 **`resolveProjectItem` failed twice in ~110 calls** with `Cannot read properties of null (reading 'name')`, on
+  items that resolved on the next try. Wrap each placement in a short retry and compare the timeline with the plan.
+- ✅ `project.importFiles(paths, true, bin)` from an eval took 83 files in one call (the paths were built in the
+  snippet from a list of short names, which keeps the call small).
