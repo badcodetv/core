@@ -46,6 +46,62 @@ each fact: the table in [`magic-money-tree-monologue-2026-10.md`](./magic-money-
 
 **Before it is published, Kai sees:** 4b, 6b, 6c, 7a, 7b, and the rule on naming living people.
 
+## Episode 2 — the year in news (2026), script locked 14 October 2026
+
+Every line is Jack's (**J**), grammar and facts only from me. Written here as spoken in the clips; the script with its
+facts and sources is [`money-for-something-2026-script.md`](./money-for-something-2026-script.md). Checked against
+episode 1 on 14 October: no joke is used twice.
+
+| Clip | Line |
+| --- | --- |
+| y-00 | I'm from the future. Weird year, this one. Don't ask me how it ends, it doesn't matter. Moving on. |
+| y-01 | On the thirtieth of January, three million pages of Epstein files came out. Four weeks later, America bombed Iran. Unrelated... |
+| y-02 | Trump bombed Iran, got nominated for the Nobel Peace Prize, then bombed them again. Fingers crossed. Hope you placed your bets on Polymarket. |
+| y-03 | The only reason your petrol isn't a fiver is Xi Jinping. Who would have thought. |
+| y-04 | America has been bringing peace to Iran since nineteen fifty-three. They simply can't get enough of it. Oil, I mean. |
+| y-05 | Trump said: A whole civilisation will die tonight. I don't want that to happen, but it probably will. |
+| y-06 | His anti-war campaign is looking better on Polymarket. For some. |
+| y-07 | The Pentagon asked for two hundred billion more. Lockheed got fifty-eight billion for missiles. Somewhere, Dick Cheney got rigor mortis in his pants. |
+| y-08 | Brown University added up America's wars since nine eleven. Only about eight trillion dollars. Only about nine hundred thousand people killed. |
+| y-09 | That money would have ended world hunger for thirty years. |
+| y-10 | At least Lockheed's shareholders didn't go hungry, and the Taliban are gone. |
+| y-11 | The world spends three thousand seven hundred and sixty-eight dollars a second on nuclear bombs. Maybe they should budget better. Cancel the Netflix. |
+| y-12 | Pull themselves up by their blood-soaked bootstraps. |
+| y-13 | Where I'm from, the energy's free. We got it the year we stopped paying for these. I'm not telling you which year. |
+| y-14 | Same thing in Venezuela. Oil, blah, blah, blah. Same shit, different toilet. I'm not doing this twice. Next topic. |
+| y-15 | Oh yeah. Farage beat a bin. Whatever. The clown show goes on. |
+| y-16 | In September the village of Piddington voted to leave the UK. The government wants to put twelve hundred and fifty male asylum seekers next door. |
+| y-17a | They're from Afghanistan and Iran, among others. You'll remember those from earlier. |
+| y-17b | Planes, Trains and Automobiles, except it's a dinghy and nobody gets home for Thanksgiving. |
+| y-18 | Anyway. People are angry. The only ones who got home rich were three companies. Three hundred and eighty million. |
+| y-19 | Quick question: how many meal deals can that buy? Asking for a friend. |
+| y-20 | The P P E they wasted would have bought two and a half billion. Next. |
+| y-21a | Some people got through the pandemic on furlough. One baroness got through it on sixty million and a yacht. |
+| y-21b | It doesn't have heated flooring, though. Moving on. |
+| y-22 | A British minister is reported to have told Jeffrey Epstein a five-hundred-billion-euro bailout would be announced that night. Nothing silly. |
+| y-23 | H S 2. A one hundred and two billion pound train that does not exist. It may arrive in the near future: twenty thirty-nine is the latest estimate. |
+| y-24 | How do they get away with wasting a hundred and two billion pounds? Local man is concerned about how this links to migrants. |
+| y-25 | The government wrote off 6.6 billion pounds in one year. How did we not know? |
+| y-26 | It came out the Friday before a bank holiday, in a heatwave, on England squad day. You were at a barbecue. They were counting on it. |
+| y-27 | Thirty-eight degrees. The government banned barbecues. We drank half a billion pints. The oil companies made forty-seven billion dollars. Cheers. |
+| y-29 | So that year was full of nonsensical shit, huh? What to do about it? Well, I'll tell you. You just have to listen... |
+| y-28 | *(silent: he downs a pint)* |
+| y-30 | *(silent: he downs a pint and walks off)* |
+
+**Running gags new in this episode**
+
+| Gag | Used | Notes |
+| --- | --- | --- |
+| Meal deals as a unit of money | 19, 20 | **J.** Any wasted sum can be priced in them. A tally card is possible (mine, not approved) |
+| Polymarket | 02, 06 | **J.** Twice in one section; a third use was turned down by me as a repeat |
+| The pint | 27, 28, 29, 30 | **J.** "Cheers", then he drinks; the ending answers "what to do about it" with another one |
+| A fact, then a two-word shrug | "Unrelated...", "Oil, I mean.", "For some.", "Nothing silly." | **J.** His structure this episode: facts in a row, then a one-word or two-word turn |
+| "I'm not telling you which year" | 13 | The future aside; he refuses the detail |
+
+**Cut for this episode (Jack):** Greenland ("im sick of trump, lets not do a trump show"). **Parked with briefs kept in the
+script file:** the oligarchs' yachts, the police boss's theatre tour, the politician who read out his prompt, the Moon,
+Epstein and Brexit, and the lists of fun stories.
+
 ## Running gags
 
 | Gag | First used | Notes |

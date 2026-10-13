@@ -5,6 +5,18 @@
 **Kai has not seen any of it, and it is not ruled as the film.** It sits beside the 1 October
 direction ([`direction-2026-10-01.md`](./direction-2026-10-01.md)), not over it.
 
+> **🗓 The year-in-news version (2026): where Jack is working now. Script locked and cut 3 built, 14 October.**
+> **Start at [`money-for-something-2026-production.md`](./money-for-something-2026-production.md)** (cuts 1 to 3, what
+> was checked, what is still wrong). The latest cut is `MFS 2026 cut 3` in `money for something\2026\2026.prproj`
+> (3 min 32 s, real pictures on the television). **Jack has not watched any cut yet; Kai has seen none of it.**
+> Script and every brief: [`money-for-something-2026-script.md`](./money-for-something-2026-script.md) (the shooting
+> script is at the bottom). Pictures and credits:
+> [`money-for-something-2026-screen-sources.md`](./money-for-something-2026-screen-sources.md). Pick-list:
+> [`money-for-something-2026.md`](./money-for-something-2026.md). How we write it:
+> [`money-for-something-process.md`](./money-for-something-process.md). Kit: `scripts/money-for-something/y2026/`.
+> **Next:** Jack watches cut 3 and sends notes; Kai's rulings (living people, real pictures, the Mone and Epstein lines);
+> the delivery check's range warning before any upload.
+
 > **📰 The topical version (10 October): Jack's new direction.**
 > [`topical-show-2026-10.md`](./topical-show-2026-10.md) — same set, host only, this week's news
 > instead of history. The news board, ten games, a first episode as beat briefs, guardrails.
