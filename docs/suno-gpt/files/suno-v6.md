@@ -20,10 +20,18 @@ the satire trap, the narration recipe).
 > (someone did it on camera), *reported* (one person says so), *untested* (our inference).
 > **Anything we verify gets written back here with a date.**
 
-**Contents.** 1 the models · 2 the create form · **3 fixing one word, one bar, one phrase** ·
-4 Studio with v6 · 5 new things worth suggesting · 6 stems, quality, downloads · 7 voices and
-custom models · 8 prompt craft deltas · 9 vocals and D&B · 10 our v5.5 back catalogue ·
-11 known bugs · 12 the test queue
+> 🆕 **Refreshed 2026-10-14** from ChillPanic's *"Suno V6 Changed EVERYTHING. Here's What Works
+> Now."* (2026-10-09, a 13-year producer, tested on camera) plus a web sweep of everything Suno
+> shipped since launch. The headline changes: **a Speech model exists** (§1b — voice and score in
+> one take, which is exactly what our GPOM narration does by hand), **the credit cost is now
+> answered by Suno** (§6), **the one-word edit worked on a multi-word, different-syllable swap**
+> (§3 rung 1), and **Audio Influence 100 and Weirdness 100 are reported usable on v6** (§8c).
+> Ledger: [`docs/misc/2026-10-14-suno-v6-refresh.md`](../../misc/2026-10-14-suno-v6-refresh.md).
+
+**Contents.** 1 the models · **1b Speech (beta)** · 2 the create form · **3 fixing one word, one
+bar, one phrase** · 4 Studio with v6 · 5 new things worth suggesting · 6 stems, quality,
+downloads · 7 voices and custom models · 8 prompt craft deltas · **8c the anti-slop moves** ·
+9 vocals and D&B · 10 our v5.5 back catalogue · 11 known bugs · 12 the test queue
 
 ---
 
@@ -56,6 +64,106 @@ presenters read as part of the name. **Custom models sit in the same dropdown**,
 - Wild is "like the old weirdness slider, except the choice now lives in the model." So in a grid,
   **model and weirdness are two different axes that overlap** — don't read a Wild win as proof
   that high weirdness would have done the same.
+- **Give Wild three or four takes before judging it** (Moe Lueker's 150-song comparison,
+  2026-09-19: v6 needed 1–2 takes per keeper, Wild "several"; weirdness 30–50 on v6, 60–75 on
+  Wild). Mini was "closer to v6 than to Wild, but flatter". Subjective, one listener, no blind test.
+
+### Why v6 sounds more generic (2026-10-14)
+
+**Vendor:** v6 is the first model trained on licensed catalogue — Suno names WMG, BMG and Believe
+as partners. **Reported (ChillPanic, and "many users"):** v6 output is noticeably *more generic*
+than v5.5, and the speculation is the smaller, major-label training pool — "when you shrink the
+input, you shrink the output." Speculation, not fact — but it predicts exactly what we have seen
+on niche sub-genres. The practical answer is §8c. **Custom models were auto-upgraded to v6**
+(vendor, v6 FAQ) — a v5.5-era custom model now runs on v6.
+
+---
+
+## 1b. 🆕 Speech (beta) — a voice and its score in one take (shipped 2026-10-01)
+
+> 🔑 **Why this matters to us:** our GPOM narration is *already* voice + score in one Suno v6 take,
+> forced through the song model with a house template (`docs/stories/gitpush-origin-master/songs/narration.md`).
+> Suno now ships a model built for exactly that job. **Nobody here has tried it yet** — §12 test 0.
+
+**Vendor (release note, 2026-10-01):** *"the first model to create a speech and its soundtrack
+together, in one take"* — examples: bedtime stories over soft piano, hype speeches over stadium
+drums. On **web and mobile**, under **Create**, open to **all plans** as a beta. Suno's release note
+gave **no** credit price, language list or API; its tutorial video gives the length (~8 min,
+below). Presenters say Speech spends ordinary credits — log the first one.
+
+### The form — from Suno's own tutorial (vendor, 2026-10-01) + three testers (sweep 2026-10-14)
+
+**Create → `Songs | Speech (beta) | Sounds`** (Speech is the middle tab) → **Simple / Advanced**.
+Simple = one prompt, Suno writes the script. **Advanced** = what we use:
+
+| Field | What goes in | Tier |
+|---|---|---|
+| **Script** | the exact words, as **plain paragraphs — "You don't need lyric formatting or bracketed section tags"** (Suno) | vendor |
+| **Style / Tone box** (one box, under the script) | the voice **and** the score **together** — there is **no separate music field**. Tone, pacing, mood, setting, and how the score moves | vendor + 3 testers |
+| **Vocal Gender** | Male / Female | vendor |
+| **Background music** | **on by default**; off = voice only (but see "no dry voice" below) | vendor |
+| **Variety** | the same five steps as the song form; **Exact style** is the closest thing to one consistent narrator | 2 testers |
+| Duration | **none** — "There's no duration control here"; ask in words ("about 30 seconds") | tested |
+
+- 🔑 **Length: "up to around 8 minutes"** (Suno, on camera); one tester got 4 minutes in one take.
+  A whole GPOM scene's narration fits in one generation.
+- **The style box carries a performance arc**, and the same script with a new style box is a new
+  performance. Suno's own examples: *"calm and professional train station announcer, slow, measured
+  pacing, completely serious delivery"* → *"Increasingly frantic announcer trying to remain
+  professional, starts controlled, gets faster and more exasperated with every sentence"*; with
+  music on, *"restrained at first with a score that gradually becomes more hopeful underneath."*
+- **Every take shows a descriptor Suno wrote** — a casting brief such as *"Warm, clear female
+  narrator, conversational and gently uplifting, measured pace."* Copy the descriptor of a take
+  you like into the next style box (reported — offered as a template, not proven to lock identity).
+- **One-word fix works on Speech takes**: open the take → Editor → highlight the word → type the
+  replacement → preview → **Commit** (nothing saves until Commit). Shown on camera (Mara→Jane); the
+  selection grew past the word and a neighbour picked up a small seam glitch. One presenter read
+  **4 credits** off the editor (sponsored, reported). This puts Speech inside the §3 ladder.
+- **A Speech take has the whole song menu** — Cover, Reuse, Mashup, Sample, Remaster, Fade,
+  Reverse, stems, Open in Studio, and **"Remix as a voice"** (seen in the menu, not run: may turn a
+  narrator found in Speech into a saved Voice for the song model). Downloads count against the same
+  cap and **default to M4A — switch to WAV**.
+- **A series voice, as close as the beta gets:** keep the style box text verbatim in the sheet,
+  Variety **Exact style**, same Vocal Gender, every scene.
+
+**Known failures — Suno's own warnings:**
+- 🔴 **Accent drift** — Suno's own example is **a British accent wandering towards Australian
+  and back.** Our narrator is UK. This is the first thing to listen for.
+- 🔴 **Dramatic pauses run long.**
+- Pronunciation not guaranteed; words can be changed or dropped — **diff every take against the
+  script**, the same mechanical check we run on lyrics.
+- Can drift towards singing; music can mask consonants.
+- **No saved Voice inside Speech** in the beta (confirmed: "not yet for speech") — so it cannot
+  yet hold the narrator's identity across scenes the way a Voice does on the song model.
+- 🔴 **Two on-camera British-accent requests both failed** — "not definitively British… an
+  exaggerated European English accent"; another heard an American imitating British. Accent words
+  inside **[brackets]** in the style box confused it — write plain sentences. No tester was a
+  native UK listener, so **our own ears are the test**.
+- **There is no dry voice even with Background music off** — takes carry hall/room reverb that
+  varies take to take, sometimes audible breathing. Plan for de-reverb or a vocal stem.
+- **Adjectives don't speed it up** — "clear and energetic with a brisk pace" still paused inside
+  sentences. The style text is also taken literally ("fast enough pace" became rushed).
+- **Also seen:** skipped words and lines, mangled proper nouns, **endings cut mid-word** (listen to
+  the last two seconds), the score defaulting to piano (name the instruments).
+- **Pauses follow punctuation**: ellipses lengthen pauses, and one tester rates them above
+  bracketed pause tags. Removing ellipses and dashes to *shorten* pauses is inference, untested.
+
+**Prompting (practitioner advice, untested):** start at **100–150 words**; short sentences;
+punctuation for breath; paragraph breaks between thoughts; **strip end rhymes and refrains** or
+it sings; describe the target ("calm documentary narration, slow, sparse piano underneath")
+rather than stacking "do not sing"; ask for a **sparse bed**, not no music; generate several
+takes rather than piling on corrections. Variety **Exact style** (fully left) is now backed by
+three testers (above). Reported once: music appeared even with background music switched off.
+
+**Making the SONG model speak instead:** the sweep found **no v6-era test** of it. The only v6
+wording anyone offers is untested — Style *"spoken-word narration, voice-forward, minimal
+documentary underscore, restrained dynamics, no sung chorus"*, lyric label `[Spoken narration]`
+(Jack Righteous). Our own `narration.md` house template remains the best evidence anywhere.
+
+Best fit per reviewers: short expressive
+pieces. Worst fit: anything needing exact timing — which for us means **the words and the
+cut stay ours**: Speech is a candidate for the take, never for the timing (Premiere still owns
+that).
 
 ---
 
@@ -76,6 +184,19 @@ These labels are **proven** — they supersede the video readings in the table a
 | Weirdness | 0–100, caption "Expected results" at 50 | 50 |
 | Style Influence | 0–100, caption "Moderate" at 50 | 50 |
 | Personalize | a single button labelled **My Taste** (plus an info icon) | not selected — 🔑 **and it stays that way: always off** |
+
+🆕 **Variety's default differs by model** (tested, 2026-09-14): **v6 → Normal, v6 Wild → Off.**
+So a hand-run v6-vs-Wild comparison on defaults is partly a Variety test. Set Variety Off on both.
+(The loader already forces it.)
+
+🆕 **Max Mode, in Suno's own words** (launch video, 2026-09-09): "more compute before it creates the
+song", aimed at **reducing drift from an audio reference (a Cover) or a Voice, especially past
+two minutes**. FAQ: "For quick ideas and shorter songs, standard mode is all you need." Reported
+cost: **2× credits** (ChillPanic said it twice, plus one newsletter). ⚠ Disputed in use — see §8c.
+
+🆕 **Suno confirms My Taste reaches a take through Variety** (two Suno videos): "if you use my taste,
+those variations will lean more towards your personal taste profile." With Personalize **off** and
+Variety **Off** — our ruling — it has no route in.
 
 🔴 **Suno switches the model on its own.** Our form showed a toast: *"Model changed — Model was
 automatically changed to support your selected conditions."* So a model you set is not a model
@@ -106,6 +227,15 @@ Most of it is the form we know. What is **new or changed**:
 | Limits | — | Simple 3,000 · Style 1,000 · Studio prompt 1,000 · max **8 minutes** per generation on all three models | — | Lyrics cap not re-checked | tested / vendor |
 | Create | bottom | — | — | still **two takes per Create** — Suno's v6 FAQ: "Each time you generate, you make two songs with a total cost of 10 credits." ([help.suno.com/en/articles/13924481](https://help.suno.com/en/articles/13924481), read 2026-09-11). Generation is **much faster** — a queue of six finished "almost instantly" | vendor (two takes) / tested (speed) |
 
+🆕 **Simple mode is now an editor, not a beginner's box** (vendor, v6 FAQ, re-read 2026-10-14):
+*"In Simple mode, you don't need to choose a tool like Cover, Remix, or Extend"* — **the model
+picks the workflow** from what you attach and what you type. Attach songs, playlists, audio,
+images or video; several at once is allowed. ChillPanic's click: **drag a song from the library
+onto the "Drop here to remix" area** of the Simple tab, then type a plain sentence. Conversational
+wording worked ("Hey bro, shorten the intro…"). This is why §3 rung 1 and most of §5 live in
+Simple, not Advanced. 🔴 **Speech** (§1b) may now sit beside Simple / Advanced / Sounds — not
+yet seen on our live form; re-map before the loader touches it.
+
 **Stale strings to ignore:** the Voice area still says "V5.5 powers…", and the Voices help page
 still says "Confirm that model v5.5 is selected". Both predate v6 — Voice and custom models are
 tested working on v6.
@@ -129,8 +259,9 @@ Four different problems — the ladder differs for each:
 
 | | What's wrong | Best route | Confidence |
 |---|---|---|---|
-| **A** | the **wrong word** is sung (text change) | **rung 1** — attach + instruction | tested twice, by ear |
-| **B** | the right word is sung **badly** (same text, re-sing it) | rung 1 with unchanged text, then rung 2 / 2b | 🔴 untested anywhere |
+| **A** | the **wrong word** is sung (text change) | **rung 1** — attach + instruction (a line or two); **rung 1b** self-Cover for a verse | tested ×4, by ear |
+| **A′** | a **Speech** take says one word wrong | the Song Editor's word Replace on the Speech take (§1b) | tested once |
+| **B** | the right word is sung **badly** (same text, re-sing it) | 🆕 **Subtle Remaster** (vendor: "clearer pronunciation"), then rung 2's prompt-only Replace, then 2b | 🔴 untested anywhere |
 | **C** | the **backing** must go for one bar | **rung 3** — stems + a mute in Premiere | deterministic |
 | **D** | the **cadence** of one bar must change | rung 4 — guide vocal in Studio (a new take) | reported once |
 
@@ -155,9 +286,41 @@ occurrences; Arcade, sponsored: never→always throughout, native Suno track).
 - 🔴 **Half a compound instruction is ignored** — "swap the Voice, the custom model and the
   genre" did not apply the Voice. **One change per edit.**
 
-**Our working boundary (untested inference):** one word, **same syllable count**, on a **native
-Suno take** — works. Multi-word, different syllables, uploaded audio — breaks. Everything between
-is unknown.
+🆕 **Third success, and a wider one (ChillPanic, 2026-10-09, native Suno take):** two whole
+chorus lines swapped for **different words with a different syllable count** — *"Change the
+chorus lines 'I've been angry all my life, I just never had a name for it' to 'I've been happy
+at my wife, I just never found the William Shaker'"* (wording as the auto-captions heard it).
+Result: **"the delivery is pretty much
+exactly the same"**; the melody bent only where the syllables forced it. Instruction shape:
+quote the old line, quote the new line, name the section.
+
+🔴 **But a whole verse is too much** (Tim Makes Media, 2026-09-13, native take, on camera):
+*"change the verse one lyrics to say and sing the below lyrics"* + a new verse — the stored lyrics
+changed, but "the flow was a little different… sort of messed up." For a verse, use **rung 1b**.
+
+**Section-scoped grammar (Suno's own launch video):** name what changes **and what is
+protected** — *"Make the chorus more energetic. Add bigger layered vocals and heavier drums, but
+keep the verses the same."* For a word: *"change the word love to light throughout the song."*
+
+**Our working boundary (revised 2026-10-14, still by ear):** on a **native Suno take**, a word
+*or a line or two* — works, even across a syllable change. **A whole verse** — flow breaks (1
+test). **Uploaded external audio** with several multi-word swaps — breaks (3/3). Nobody has yet
+targeted **one occurrence** of a repeated word, or re-sung a word with the text unchanged.
+
+### Rung 1b — 🆕 the self-Cover lyric fix (bigger changes, same song)
+
+When the change is a **whole verse** or more. Tested once on camera (Tim Makes Media,
+2026-09-13): "basically the same song" with the new words, no glitch at the verse→chorus seam.
+
+1. On the song: **⋯ → Remix → Cover** (the song loads as the audio reference).
+2. Edit the **Lyrics** box — replace only the lines that change.
+3. More Options: **Variety Off · Audio Influence 100 · Style Influence 0 · Weirdness 0** — every
+   slider pushed to "keep".
+4. Create.
+
+Note the difference from §8c's polish Cover (Style Influence **100**, Max Mode on): this one is
+for *changing words*, that one for *improving sound*. Style Influence 0 because the audio, not
+the style text, is what must hold.
 
 **Unknowns that decide whether this is a real fix:** whether it can target **one occurrence**
 ("in the third line of the second verse only"); whether it fixes a **mispronunciation with the
@@ -179,6 +342,15 @@ Section is now "powered by v6". It re-sings a **whole window**, not a word.
   highlight a region → orange **Quick Replace** (or **Replace** / **Edit Lyrics**) → edit the
   **Replace Lyrics** box → **Replace Section** → pick from the **Edits Library**, **Generate
   More** for alternatives, drag the boundary line to move the seam.
+- 🆕 **Current labels (help.suno.com/en/articles/3271873, re-read 2026-10-14):** highlight the
+  region → the original lyrics copy into the Lyrics box → edit → **Recreate Section** (where Create
+  sits) → **Confirm** → two versions → pick one → Suno renders a **new full song**; results are
+  tagged **Section** and **Full Song**. Pro/Premier. No length, cost or model stated.
+- 🆕 **The Song Editor now also** (help article 6141505): **delete any region, not just the ends**
+  (highlight → Remove / Delete key), **drag a section by its name** to rearrange, **add a section**
+  between two, and **Replace with a prompt and no lyric change** (*"Make this section sound
+  dreamier"*) → preview two → **Generate More** → drag the boundary → **Commit**. The prompt-only
+  Replace is the most natural candidate yet for **problem B** (untested).
 - Window: **10–30 s** per the 2024 note; the current help page states no limit. Pad the
   selection with clean audio both sides — **15–20 s** was the practitioner advice.
 - For **problem B**, leave the lyrics **unchanged** and regenerate the smallest window around
@@ -228,11 +400,20 @@ For **problem D**, and for B when rungs 1–2 fail. A **fresh performance**, not
 - **Remove Effects** (right-click a Studio clip) for baked reverb — did not rescue a v6 guitar
   with baked-in processing.
 - **Cover the whole song on v6** — an *upgrade* path, "pretty similar", not a fix (§10).
-- **Remaster** (⋯ → Create → Remaster) claims to keep "structure, lyrics, melody and vocal
-  performance" — vendor snippet only, v6 target unconfirmed. Three levels (vendor,
-  [help.suno.com/en/articles/8105281](https://help.suno.com/en/articles/8105281), read
-  2026-09-11): **Subtle** "very close to the original", **Normal** "slight variations", **High**
-  "possible changes to musical elements and vocals". Untested by us.
+- **Remaster** (⋯ → Remaster) claims to keep "structure, lyrics, melody and vocal
+  performance". 🆕 The help page (re-read 2026-10-14) now shows a **Model selector** (pick v6) and
+  three strengths: **Subtle** — "very close to the original; only small acoustic and production
+  details are changed", recommended for **"clearer pronunciation"** and a cleaner mix; **Normal**
+  (default) — "keeps duration and style the same while adding slight variations"; **High** —
+  "possible changes to musical elements and vocals". 🔑 **Subtle Remaster is a vendor-named
+  candidate for problem B** (a word sung unclearly, text unchanged) — untested by anyone. Not for
+  changing lyrics. Suno's line: Remaster improves the take you have; Cover reinterprets it.
+- **Comp-and-heal** (Jeremiah The Stranger, 2026-09-13, reported): splice the best sections of
+  2–4 takes in a DAW, upload the splice, **Cover on v6 with Max Mode on, Audio Influence high but
+  deliberately below 100, Style Influence lowered, a little Weirdness** — the Cover heals the
+  seams. Numbers were on screen only. Uploads can be refused by the originality check (§11).
+- **Studio word changes** work far better on the **multi-track** (stems) view than on a single
+  stereo track, but still sometimes "invented a language" (reported).
 - **An external voice-cloning tool** over a good performance in the wrong voice.
 - **Regenerate the song** — the old baseline.
 
@@ -268,6 +449,12 @@ What's new or re-confirmed. The Studio 2.0 surface itself is [`suno-studio.md`](
 | Strip an effect | right-click a clip → **Remove Effects** (weak on baked processing) | tested |
 | Export stems | **Export** → **multi-track** → zip | tested |
 | Change tempo by chat; move a plugin | BPM-aware chat and plugin drag-and-drop between tracks (2026-09-02 update) | vendor |
+| Bring in outside MIDI; make audio from a MIDI clip | upload a `.mid` from anywhere; ask the **chat** for new stems from a MIDI clip; MIDI→audio is "more faithful" (2026-09-17 update) | vendor |
+| Rename clips | right-click → **Rename**, or in bulk via chat (2026-09-17) | vendor |
+| Stretch a clip to the project tempo | **Shift-click-drag** the clip edge — timestretch, for samples and found sounds (2026-10-08) | vendor |
+| Curve a fade | drag the **node on the fade icon** — exponential or logarithmic, no longer linear only (2026-10-08) | vendor |
+| Get a cappella vocals on the grid | improved **beat-1 detection** on new clips and takes — less manual alignment for non-rhythmic clips (2026-10-08) | vendor |
+| Use two monitors | synth, musical-typing keyboard and expanded plug-in views **pop out** into floating windows (2026-10-08) | vendor |
 
 **Observations:** Studio-generated parts sound *less hollow* than the same instrument pulled
 out of a full-song generation — so for a part we care about, **generate it as its own track**
@@ -297,6 +484,18 @@ click-path** — don't wait to be asked.
 | "the old v5.5 take but better" | **Cover on v6** (§10), or Remaster | tested once |
 | "we need an extra guitar under this" | Studio chat, add a track (§4) | tested |
 | "we want to generate loads and choose" | the permutation grid — [`../automation.md`](../automation.md) §9 | ours |
+| "the intro's too long" 🆕 | **plain-language trim** — Simple, attach the song, *"Shorten the intro so the song starts at the 0:20 mark"* — "did exactly what we asked". For a cut with no regeneration at all, **Crop** in the Song Editor is the deterministic route | tested once (ChillPanic) |
+| "put strings / a solo here — it goes like *this*" 🆕 | **hum it in as an instrument** — Simple → Add → Audio → **Record**, hum the line; attach the song too; *"Use the melody from the recording as a violin, added to the very beginning of <song>. Start the violin at 0:00."* It turned the hummed melody into a violin — but **the take stopped abruptly**, so expect a Cover or a few retries | tested once (ChillPanic) |
+| "sample just that bit" 🆕 | song **⋯ → Remix → Sample this song** → drag to the region (4 s worked) → add a Style prompt (e.g. trap) → Create. Feeds a weird take (kids' music, a high-weirdness throwaway) into a new genre | tested (ChillPanic) |
+| "these two songs, but as one" 🆕 | Simple, drag both in, *"Combine these songs"* — even southern gospel × Brazilian funk produced a coherent track. Also the strongest anti-generic move (§8c) | tested (ChillPanic) |
+| "a spoken piece with music under it" 🆕 | **Speech (beta)** — §1b | vendor |
+| "two singers, one song" 🆕 | **duet from two songs** in Simple — §7 | tested once |
+| "I just want the drums" 🆕 | **v6 Wild + "… drums only"**, no genre word — §9 | tested (not on D&B) |
+| "build it up from parts" 🆕 | **Sounds tab** loops with BPM + Key locked → combine in Simple — §9 | tested once |
+| "it's slurring that word" 🆕 | **Subtle Remaster** on v6 — §3 problem B | vendor (untested) |
+| "rewrite the whole verse" 🆕 | **rung 1b** self-Cover, not a Simple edit — §3 | tested once |
+| "get the old singer back" 🆕 | old song → Wild "recreate vocals verbatim" → Remix → Voice — §7 | reported |
+| "it's half speed again" 🆕 | strip `slow` / `half-time` from Style — §9 | tested (not on D&B) |
 
 A short sound (~5 s or less) as the seed **errors repeatedly** — give it a longer clip.
 Uploaded audio passes an originality/rights check before it can be used.
@@ -319,9 +518,20 @@ Uploaded audio passes an originality/rights check before it can be used.
   within the allowance; removing Suno's inaudible watermark is prohibited. **Studio exports may
   be exempt** — three sources lean that way (Premier "unlimited exports inside Suno Studio"), none
   is conclusive. Watch the counter the first time a human does one.
-- **Credit cost per v6 generation: unknown.** Pro now gets 2,500/month and Premier 10,000/month,
-  so the old "10 credits per Create" may not hold. **Log the balance before and after every
-  Create** until it is known.
+- ✅ **Credit cost answered by Suno (v6 FAQ, re-read 2026-10-14):** *"Do v6 generations cost
+  more credits than v5.5? No."* **10 credits per Create, for two songs**, on v6. Prompts carrying
+  **many images or videos cost more**. Pro gets 2,500/month, Premier 10,000/month.
+- **Max Mode costs more — reported as double** (~20 per Create; one newsletter, "from hands-on
+  documentation"; Suno says only "costs more credits"). Speech and plain-language edits: no price
+  published. **Log the balance before and after** the first Max Mode Create and the first Speech
+  take — that settles both.
+- **Extra downloads** beyond the allowance: **$2.99 each**, no bulk discount (reported).
+- ✅ **Studio exports are unmetered — now vendor wording.** Suno's download-changes FAQ
+  ([help.suno.com/en/articles/13614785](https://help.suno.com/en/articles/13614785)): "users will
+  still be able to download their work from Studio **without limitation**." Premier. 🔑 So **rung 3
+  (stems + a mute) costs no download** if the stems come out through **Studio → Export →
+  multi-track**, not song ⋯ → Download. Still watch the counter the first time.
+- **Speech word Replace: 4 credits** (one sponsored presenter, reported).
 
 ---
 
@@ -338,6 +548,26 @@ Uploaded audio passes an originality/rights check before it can be used.
   indie rock. Carry a Voice on **v6** unless the point is the texture.
 - **Judge a voice in the quiet sections.** Sparse verses reveal identity; dense choruses hide it.
 - A saved Voice still has **no section scope** — wrong for a duet. Nothing in v6 changes that.
+- 🆕 **A duet without a saved Voice** (Adam Vincent, 2026-09-11, tested): Simple → drag in **both**
+  songs (A = the track to keep, B = the second singer's source) → *"Recreate [Song A] by taking the
+  voice from [Song B] as the second lead vocal who follows the female singer. This should be a duet
+  where each voice is highlighted throughout and on the chorus they sing together."* Suno wrote its
+  own Female lead / Male lead tags. Take 1 rewrote the melody, take 2 kept it — **judge the pair**.
+  Stricter add-ons he suggests: *"make sure that the male voice uses the exact voice from the song
+  that I'm uploading."* Relevant to Camping, our duet.
+- 🆕 **Bring back an old (v4.5–v5.5) singer** (The Mix University, 2026-09-25, reported — only the
+  Wild run shown): drag the old song onto "drop here to remix" → paste its lyrics → Style *"recreate
+  vocals verbatim"* → model **v6 Wild** → on the take that holds the voice: **⋯ → Remix → Voice**,
+  rename, Public **off**, save. He says plain v6 changes the voice; Wild kept it. A route for our
+  v5.5-era narrator and Karen voices.
+- 🆕 **How much a Voice leads varies roll to roll** — "sometimes your voice leads, sometimes it sits
+  in the background like percussion" (reported). Judge over several rolls. Source audio: record
+  15 s–4 min clean a cappella (the product page and help centre disagree; take the longer).
+- 🆕 **A thin or raspy v6 vocal fixed by prompt, not settings** (Fondrey, 2026-10-04, one
+  controlled series): replace a short tag list with (a) a detailed description of the singer and
+  how they perform, (b) section-by-section guidance written from the lyrics, (c) a sentence about
+  the backing vocals. Settings held at Max Mode on · Weirdness 22 · Style Influence 73 · Variety Off.
+- **UK accent on the song model: still no evidence anywhere** — the sweep found none.
 - **Lyricist and Inspo: no v6 information at all.**
 
 ---
@@ -397,6 +627,65 @@ which no guide mentions as a pacing lever at all, is the one we can prove is obe
 
 ---
 
+## 8c. 🆕 The anti-slop moves — ChillPanic, 2026-10-09 (tested on camera, by ear)
+
+Source: [ChillPanic, *Suno V6 Changed EVERYTHING. Here's What Works Now.*](https://www.youtube.com/watch?v=EUW5hReKw6w)
+— a producer of 13 years, whose launch-day video is already in our 2026-09-10 sweep. One
+person's ears, no measurement, but every move was shown working on camera. His three rules:
+
+**Rule 1 — Simple is not simple.** It's the editor now (§2, §3 rung 1, §5).
+
+**Rule 2 — "Stop, slop and drop it": v6 defaults to generic, so the creativity has to come from
+you.** Five ways out, best first for us:
+
+1. **Name the production techniques, not the genre.** For a niche genre the name alone gives a
+   passable average. What landed was the *mechanics* — e.g. *"hardstyle kick, pitched down one
+   octave on drop impact; breakbeat chops; supersaw chord burst, hard cut; FM bass growl, sub
+   drop"*. ✅ **This is already our D&B rule** (§9: name the drum mechanics, not the sub-genre) —
+   now with a second, independent v6 data point.
+2. **Combine songs.** Make two unrelated songs, drag both into Simple, *"Combine these songs."*
+3. **Wild first, then Cover into v6.** Wild is worse on fidelity and mix but more creative; once
+   a Wild take has the idea, **Advanced → Cover on v6 at Weirdness 0, Audio Influence 80** — "the
+   same melody and the same idea, just made it sound better." ✅ Matches our §1 ruling-in-waiting;
+   now with numbers.
+4. **High weirdness as a quarry.** Generate at very high weirdness, then **Sample** or **Cover**
+   the bit you like (§5 "sample just that bit").
+5. **Sample something absurd** (he used kids' music) as the seed for a different genre.
+
+**Rule 3 — "Increase the soup": the quality levers.**
+
+- **Draft with Max Mode off, polish with a Max Mode Cover.** Max Mode is audibly better and costs
+  more (§6). Once a take is right: **Cover it with Max Mode on, Style box emptied, Weirdness 0,
+  Style Influence 100, Audio Influence 100.** 🔑 This is the cheapest test of Max Mode we own —
+  Camping's accepted take is the obvious candidate (§12 test 8).
+- **Variety Off.** "Sometimes when I have variety on, it just doesn't listen to my prompt at all,
+  even with balanced variety… worse generations every time." ✅ **Agrees with our proven finding**
+  (§8: Variety rewrites the Style box) — an independent ear arriving at the same rule.
+- 🔴 **Audio Influence and Weirdness changed intensity on v6 — this overturns old advice.**
+  - **Audio Influence 100 is now usable with a Voice.** On v5.5 his deliberately over-the-top
+    emo Voice at AI 100 was unlistenable; on v6 at AI 100 "it still maintains that character, but
+    it sounds much better." The community "100 glitches, use 80–96" rule is **v5.5 advice**.
+  - **Weirdness 100 no longer glitches** — "doesn't sound like glitches to me." Moe Lueker
+    (2026-09-19) still says >90 risks artifacts, so: **reported both ways; test before relying.**
+  - For us: our narrator Voice may now hold at a much higher Audio Influence than our house
+    settings assume — a one-variable test, not a re-template (§12 test 6).
+
+**🆕 Counter-evidence from the 2026-10-14 sweep — hold §8c's quality claims loosely:**
+- 🔴 **Max Mode heard as static.** The Mix University (2026-10-02) heard crackle on **every** Max
+  Mode take with a Voice, across v6, Wild and Mini — "it's just distorting." Not controlled (his
+  A/B was abandoned, and he heard static on the non-Max take too), but it directly contradicts
+  "audibly better". Listen on headphones for static on sustained vowels.
+- 🔴 **A v5.5→v6 Cover can come back duller.** Lanewood (2026-09-18): Max Mode on, Variety off —
+  "dull and muddy" by ear, and the v6 mix **drifted between first and last chorus** (bass up,
+  highs down) even with Max Mode on. Compare first and last chorus before accepting a Cover.
+- **v6 Cover reproduces its source less faithfully than v5.5 did** (tested, 2026-09-14) — raise
+  Audio Influence when the source must survive.
+
+**What we do NOT take from it:** his "slider settings don't matter, I burn my credits" stance (we
+log every credit), and the training-set explanation (speculation — §1).
+
+---
+
 ## 9. Vocals and drum & bass
 
 - **Duets:** explicit `Male vocal` / `Female vocal` under section tags gave a real alternating
@@ -405,14 +694,58 @@ which no guide mentions as a pacing lever at all, is the one we can prove is obe
 - **Accents:** rock still defaults to a country/southern vocal (3/3, even with Max Mode); the fix
   was custom model + Voice. **No UK-accent evidence of any kind** — our narrator needs our own
   test. Our rule that nationality rides on the genre tag stays in force until tested.
-- **Speech / narration:** no v6 evidence anywhere. Our dry-and-separate method and "Getting a man
-  to TALK" recipe stand. New lever to test: a **Studio vocal track** from typed lyrics.
+- **Speech / narration:** 🆕 **Suno shipped a dedicated Speech model on 2026-10-01 — see §1b.**
+  It does natively what our GPOM narration template forces the song model to do, but warns of
+  British→Australian accent drift and has no saved Voice. Until tested, the house template in
+  `docs/stories/gitpush-origin-master/songs/narration.md` stands. Other lever still untested: a
+  **Studio vocal track** from typed lyrics.
 - **D&B:** a lazy `liquid DnB` prompt came back as **two-step drums** ("that does not sound like
   D&B"); an **engineered** breakcore/jungle prompt worked on both models — *"aggressive breakcore
   instrumental, rapid chop, jungle breaks, hyperdetail percussion, dark synth bassline, euphoric
   melodic chops"*. **Name the drum mechanics, not the sub-genre** — the same lesson as our
   riddim/neurofunk notes, now with a v6 data point. Half-time is **not known to be fixed**.
-- No dedicated BPM or key field on the create form — still typed into Style.
+- No dedicated BPM or key field on the Songs form — still typed into Style. 🆕 **The Sounds tab
+  has both** (below).
+
+### 🆕 Tempo on v6 — the likely cause of our half-time drift (SunoAI攻略ちゃんねる, 2026-10-06)
+
+Tested on camera with a metronome, on rock, J-pop, trance, R&B — **not on D&B**, so every row
+needs our own run at 170–175.
+
+- 🔑 **"slow" or "half-time" next to a BPM halves the effective tempo; "fast" doubles it.**
+  `120bpm, fast, rock` played at an effective 240; `80bpm, slow, rock` at 40. And **v6 sometimes
+  halves a high BPM on its own.** For full-tempo D&B, keep `slow`, `half-time`, `laid-back` and
+  similar out of the Style box entirely (they may be leaking in from mood words). For a deliberate
+  half-time track, `<N>bpm, slow` may be the lever.
+- **Round BPMs hold harder** (reported): `120bpm` ≈ 120, `153bpm` drifts 151–156. So `170bpm` may
+  hold better than our `174bpm` — a one-variable test.
+- **Variety above Off and Simple mode pull extreme BPMs back to the genre's typical tempo**
+  (reported). Advanced + Variety Off when a BPM must hold.
+- **Per-section tempo tags do nothing** — `[verse][120bpm] [chorus][150bpm]` gives one or the other;
+  a range `120bpm-140bpm` picks one end. One tempo per song.
+- Keep the BPM inside 50–200; any format works (`170bpm`, or even a bare number).
+
+### 🆕 Drums and D&B on v6 Wild and Sounds
+
+- **Wild + "<instrument> only" returns just that instrument**; v6 adds a band (tested, 2026-09-14).
+  For us: v6-wild, Variety Off, `170bpm, chopped breakbeat drums only`. **No genre word** — "J-POP
+  bass only" still gave a full J-pop track.
+- **Wild keeps uploaded drum rhythms that v6 normalises** (tested): an odd-meter home-made break
+  Extended on Wild kept its pattern; v6 lost the time signature. Then **Cover** the Wild result to
+  fix its sound. Route: make or upload the break → Extend/Mashup on Wild → Cover.
+- **Neurofunk** (Russian bass-music producer, 2026-09-17, reported): a short prompt on v6 came back
+  "some pop"; the same on Wild was convincing neurofunk. Wild still didn't separate **jump up**
+  (came back mainstream) and didn't know **raw breakbeat / electro-breaks** — describe the mechanics.
+- **The Sounds tab — build element by element** (2026-09-28, tested): Create → **Sounds** → set
+  **BPM** and **Key** (lock the same values on every element) → Type **Loop** for beds ("a seamless
+  repeating clip"; vendor) → prompt each part with exclusions in the text: *"fast breakbeat drums
+  only, amen break, drums only, no melody, no bass, no guitar, no synth"*, then the bass, then a pad
+  → **Simple → drag all the clips in → "combine this all together into one song"** (+ a Style with
+  genre and BPM). Length goes in the prompt ("30 second long…"). Loops "may include full musical
+  arrangements" — check. Also a candidate for **dry-and-separate narration beds**.
+- **Wild at weirdness 0?** One Reddit thread (second-hand) says Wild was "random garbage" unless
+  weirdness was 0; Moe Lueker used 60–75. If our Wild cell (w60) comes back as noise, try w0
+  before writing Wild off.
 
 ---
 
@@ -420,6 +753,9 @@ which no guide mentions as a pacing lever at all, is the one we can prove is obe
 
 - **No accepted v5.5 sheet can be re-run on v5.5** — the Camping duet (accepted round 17), the
   GPOM narration, Karen. A re-run on v6 is a **new song**.
+- **Vendor-confirmed (v6 FAQ, 2026-10-14):** old songs stay in the library unchanged and can still
+  be **listened to, shared, remastered and covered** — but *"any new iterations are made with
+  v6."* Suno's FAQ links a tutorial for recreating past-model results.
 - To carry a v5.5 take forward, **Cover it on v6** — tested once as "pretty similar", fixing
   harshness, "rounder, wider"; best of several attempts, so budget a few. Remaster is the
   untested lighter touch.
@@ -442,6 +778,15 @@ which no guide mentions as a pacing lever at all, is the one we can prove is obe
 | Stems | exports quieter than in-app; one time-shifted; Remove Effects weak on baked processing |
 | Studio | bleed onto the wrong track; fiddly loop marker |
 | Seeds | clips ≲5 s error out |
+| Hummed-instrument add | the take **stopped abruptly** after the added violin (ChillPanic, 2026-10-09) |
+| Speech (beta) | British accent drifts to Australian; pauses run long; words can change or drop; can drift into singing (Suno's own warnings) |
+| Generic output | v6 defaults towards the average, worst on niche genres — §8c |
+| Copyright filter | a Studio vocal record/regenerate refused **"This audio contains copyrighted lyrics"** on the creator's own line ("don't know what I would say") — a common phrase can block a one-line fix; reword it |
+| Originality check | uploading **your own** finished mix was refused: **"audio matches an existing recording"** → re-use the native Suno take from the library instead of a re-upload |
+| Studio export drift | cut/moved clips shifted out of place on export, and reopening re-pulled fresh stems with the misalignment baked in — check alignment before leaving the session |
+| Speech | no dry voice even with music off (variable reverb); endings cut mid-word; British requests failed twice |
+| Mashup | element assignment ignored once ("vocal chop from song B" came from A) — budget re-rolls |
+| Tempo words | `slow` / `half-time` halve, `fast` doubles the BPM (§9) |
 | Variety | no audible effect in one test |
 | Docs lag | the sliders help page doesn't list Variety; Voices help still says v5.5 only |
 
@@ -452,6 +797,19 @@ which no guide mentions as a pacing lever at all, is the one we can prove is obe
 In priority order. Every one goes through one Suno tab, `status` first, the credit balance
 logged before and after.
 
+0. 🆕🔑 **Speech (beta) on one GPOM narration scene** (added 2026-10-14). Speech → Advanced.
+   Script = the scene atom's words as **plain paragraphs, no tags**. **One** style box = the
+   narrator clause **plus** the house score clause, plain sentences, no brackets. Vocal Gender
+   Male, Variety **Exact style**. Listen for, in order: **UK accent holding** (Suno warns it
+   drifts to Australian; two testers' British requests failed), words matching the script (diff
+   it), pause length, the last two seconds, singing drift. If a single word is wrong, try the
+   Editor's word Replace before re-rolling. Compare against the accepted song-model take. Log
+   credits. *Listening stays Kai's: no Gemini listen unless asked.*
+0b. 🆕 **D&B tempo words** — the same D&B sheet with every `slow` / `half-time` / `laid-back` /
+   mood word that implies slowness removed, and `170bpm` vs `174bpm`. Does the half-time drift go?
+0c. 🆕 **Subtle Remaster on a mis-sung word** (problem B) — a native take with one unclear word →
+   Remaster, model v6, **Subtle**. Did the word clear up while the take stayed?
+0d. 🆕 **Rung 1b self-Cover** on a verse rewrite — Variety Off, AI 100, SI 0, W 0.
 1. 🔑 **Null-test the one-word edit (rung 1).** Finished v6 take → Simple → attach → *"Change the
    word X to Y in the second verse only. Keep everything else exactly the same."* Phase-invert
    the edit against the original in ffmpeg, time-aligned. Does anything outside the word survive
@@ -464,12 +822,18 @@ logged before and after.
    Taste ("only kazoos and yodelling"), generate one plain pair with Personalize **off**. No kazoos
    = the profile is kept out, and the box's contents stop mattering entirely.
 5. **Our D&B on v6 vs Wild** — grid round R1 (`automation.md` §9).
-6. **The narrator Voice on v6 and Wild** — quiet-section timbre, UK accent, sibilance.
-7. **Variety** — does it change how far apart the two takes are?
-8. **Max Mode** — consistency against the credit delta.
-9. **Credit cost** of v6, Wild, Max Mode and an edit.
+6. **The narrator Voice on v6 and Wild** — quiet-section timbre, UK accent, sibilance. 🆕 Add
+   one cell at **Audio Influence 100** (§8c says v6 now holds character there).
+7. **Variety** — does it change how far apart the two takes are? *(ChillPanic, by ear: on = it
+   ignores the prompt. Our Off ruling stands either way.)*
+8. **Max Mode** — 🆕 run it as ChillPanic's **polish Cover**: Camping's accepted take → Cover,
+   Max Mode on, Style empty, Weirdness 0, Style Influence 100, Audio Influence 100. Better than
+   the source? Log the credit delta (reported 2×).
+9. **Credit cost** — ✅ base v6 answered by Suno (10 per Create, §6). Still open: Wild, Max Mode,
+   an edit, Speech.
 10. **Backing out of one bar via stems + a Premiere mute** — Kai approves the download.
-11. **Does a Studio multi-track export draw on the download allowance?** (human)
+11. **Does a Studio multi-track export draw on the download allowance?** (human) — Suno now says
+    "without limitation" (§6); one human export confirms it.
 12. **Cover and Remaster a v5.5 take on v6** — does it keep the performance?
 13. Can Cover pick Wild? Can Extend or Remix use v6 on a v5.5 song?
 14. **Cadence in one bar** — guide vocal vs a "triplet cadence" instruction. Expect failure; record it.
@@ -492,3 +856,16 @@ logged before and after.
   three Remaster levels ([help.suno.com/en/articles/8105281](https://help.suno.com/en/articles/8105281)).
   §2 Variety and Create rows, §3 "Further down" and §8 updated. Max Mode's source unchanged.
   Plan: `design/2026-09-11-understand-song-loop.md`.
+- 2026-10-14 — refresh on Kai's request: ChillPanic's 2026-10-09 video (transcript via
+  auto-captions) + Suno's release notes since launch (Studio 2026-09-17 and 2026-10-08, **Speech
+  2026-10-01**, Albums 2026-10-05) + the v6 FAQ re-read + ~10 searches of secondary guides.
+  Added §1b, §8c; updated §1, §2, §3 rung 1, §4, §5, §6, §9, §10, §11, §12. Ledger:
+  [`docs/misc/2026-10-14-suno-v6-refresh.md`](../../misc/2026-10-14-suno-v6-refresh.md).
+  Nothing in this pass was measured by us.
+- 2026-10-14 (later) — **sweep 2**, Kai's request, run as a workflow: five themed researchers
+  (Speech, one-word fixes, voices, D&B, platform), YouTube-transcript-first, each followed by an
+  adversarial verifier that re-fetched every transcript. ~70 findings in, ~10 killed, ~20
+  downgraded. Rewrote §1b's form; added rung 1b, Subtle Remaster for problem B, the Song Editor's
+  new moves, Variety-default-by-model, Max Mode in Suno's words, the duet / old-singer / thin-vocal
+  routes (§7), tempo words + Wild drums + Sounds tab (§9), the counter-evidence on Max Mode and
+  Covers (§8c), five new bugs, tests 0b–0d. Ledger §"Sweep 2".
