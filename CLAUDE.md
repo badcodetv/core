@@ -231,6 +231,14 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
   row to the inbox index — then offers to develop it with `new-story`. The inbox
   is the stage *before* canon: optional, zero-commitment, medium-agnostic (a
   comic, a short, a song, or nothing yet). Develop when ready; don't develop here.
+- **Run the marketing (the chief of staff):** run the **`chief-of-staff`** skill
+  (`.claude/skills/chief-of-staff/`) — "brief me", "plan the week", "review the week", "I've
+  finished a cut, what now". It holds the 90-day plan, keeps
+  [`docs/marketing/chief-of-staff/board.md`](./docs/marketing/chief-of-staff/board.md) (three
+  decisions at a time, ranked by deadline), delegates to the `marketing-*` subagents in
+  `.claude/agents/`, and its first rule is **shipping beats planning**: nothing new is researched
+  while finished work is waiting. Written to move into Agent Bob later; see its
+  [`README.md`](./docs/marketing/chief-of-staff/README.md).
 - **Record a marketing idea:** run the **`new-marketing-idea`** skill
   (`.claude/skills/new-marketing-idea/`). Captures a way to *reach people* —
   channels, campaigns, and especially promotion automations (ship a release,
