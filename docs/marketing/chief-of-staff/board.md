@@ -1,6 +1,10 @@
 # The board
 
 **Updated: 14 October 2026 by the chief of staff. The one place to look.**
+
+🔗 **The live board (shared page): https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9** — Kai and Jack tick
+tasks, answer decisions and mark published weeks there. It is the live record of state; this file
+is the written copy the chief of staff keeps in step with it on every run.
 Rules: at most three decisions open at a time, ranked by deadline. Everything else waits below the line.
 
 ## 🔴 Decisions — answer these three

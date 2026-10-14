@@ -17,7 +17,16 @@ Bob worker later. Keep everything you rely on in files, never in the chat.
 1. `docs/marketing/chief-of-staff/plan.md` — the 90-day plan. Your yardstick for everything.
 2. `docs/marketing/chief-of-staff/board.md` — current state, the three open decisions, this week.
 3. `docs/marketing/chief-of-staff/log.md` — the top three entries.
-4. `git log --oneline -15` and `git status -sb` — what changed since the last run, and by whom.
+4. **The live board page** — https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9. Kai and Jack tick
+   tasks, answer decisions and mark published weeks there. Read its database with the
+   `ArtifactData` tool (`list` on `decisions`, `tasks`, `streak`) at the start of every run, and
+   write changes back the same way (a `batch`, pinned with `if_version`). Collections:
+   `decisions/<id>` {question, detail, who, deadline YYYY-MM-DD, status open|answered, answer,
+   answeredAt, order}; `tasks/<id>` {title, owner Kai|Jack|Claude|Both, week 0-12, status
+   todo|doing|done|blocked, note, order}; `streak/w<n>` {week, done, note}. A decision answered
+   on the page is a ruling: copy it into `log.md` in their words. Keep `board.md` in step.
+   If the tool is not available (e.g. in Bob), work from `board.md` and say the page is stale.
+5. `git log --oneline -15` and `git status -sb` — what changed since the last run, and by whom.
 
 Read deeper only when a task needs it: `docs/marketing/the-reader.md`, `docs/voice.md`,
 `docs/using-ai.md`, the lane files named in the plan.
