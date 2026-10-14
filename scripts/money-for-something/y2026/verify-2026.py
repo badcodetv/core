@@ -20,7 +20,14 @@ def norm(x):
     for k,v in num.items(): x=re.sub(r'\b'+k+r'\b',v,x)
     return re.findall(r"\d+(?:\.\d+)?|[a-z']+",x)
 heard=norm(t)
-rows=[l.rstrip('\n').split('\t') for l in open(os.path.join(H,'clips-2026.tsv')) if l.strip()]
+rows=[l.rstrip('\n').split('\t') for f in ('clips-2026.tsv','clips-r2.tsv') if os.path.exists(os.path.join(H,f)) for l in open(os.path.join(H,f)) if l.strip()]
+# cut 5: follow the cut's own clip order (its render log) when there is one, with the lines of clips cut into parts
+PART={'y-16a':'In September the village of Piddington voted to leave the UK.','y-16b':'The government wants to put twelve hundred and fifty male asylum seekers next door.',
+      'y-22':'A British minister is reported to have told Jeffrey Epstein a five-hundred-billion-euro bailout would be announced that night.'}
+TSV=R[:-4]+'.tsv'
+if os.path.exists(TSV):
+    line_of={r[0]:(r[6] if len(r)>6 else '') for r in rows}; line_of.update(PART)
+    rows=[[c,'','','','','',line_of.get(c,'')] for c in (l.split('\t')[0] for l in list(open(TSV))[1:] if l.strip())]
 bad=0; pos=0; tot=0
 for r in rows:
     cid,line=r[0],r[6] if len(r)>6 else ''

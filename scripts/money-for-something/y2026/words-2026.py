@@ -9,7 +9,7 @@ import numpy as np
 from faster_whisper import WhisperModel
 H=os.path.dirname(os.path.abspath(__file__))
 V='/mnt/c/Users/jackt/OneDrive/Desktop/Youtube Vids/animation/money for something/2026/videos'
-script={l.split('\t')[0]:l.rstrip('\n').split('\t')[6] for l in open(H+'/clips-2026.tsv') if l.strip()}
+script={l.split('\t')[0]:l.rstrip('\n').split('\t')[6] for f in ('/clips-2026.tsv','/clips-r2.tsv') if os.path.exists(H+f) for l in open(H+f) if l.strip()}   # round 2: the podcast and the reporter too
 norm=lambda s:re.findall(r"[a-z0-9']+",s.lower().replace('£','').replace('$','').replace('-',' '))
 OUT=os.path.join(H,'words-2026.json')
 have=json.load(open(OUT)) if os.path.exists(OUT) else {}

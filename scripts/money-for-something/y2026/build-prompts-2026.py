@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Money For Something 2026 (the year in news), 14 Oct 2026: one Omni prompt per clip and clips-2026.tsv for run-clips-2026.sh.
+"""Round 2 (14 Oct, Jack's joke pass): clips 05b, 16x, 16y, 20b, 20c, 22b to 22h and p9 added (money-for-something-2026-joke-pass.md).
+Money For Something 2026 (the year in news), 14 Oct 2026: one Omni prompt per clip and clips-2026.tsv for run-clips-2026.sh.
 Lines are the FINAL lines of docs/stories/magic-money-tree/money-for-something-2026-script.md ("THE SHOOTING SCRIPT"), written
 here as they are SPOKEN (numbers in words) so the voice does not guess. SCREEN is what the television shows (used by the cut builder).
 HEAD and TAIL are the October wording that passed Flow and kept crowd noise out (see build-prompts-topical.py); one addition from
@@ -29,9 +30,9 @@ L=[
 ('16',"In September the village of Piddington voted to leave the UK. The government wants to put twelve hundred and fifty male asylum seekers next door.",'piddington'),
 ('17a',"They're from Afghanistan and Iran, among others. You'll remember those from earlier.",''),
 ('17b',"Planes, Trains and Automobiles, except it's a dinghy and nobody gets home for Thanksgiving.",''),
-('18',"Anyway. People are angry. The only ones who got home rich were three companies. Three hundred and eighty million.",'380m'),
+('18',"Anyway. People are angry. The only ones who got home rich were three companies. They made three hundred and eighty million.",'380m'),
 ('19',"Quick question: how many meal deals can that buy? Asking for a friend.",'380m'),
-('20',"The P P E they wasted would have bought two and a half billion. Next.",'ppe'),
+('20',"In the pandemic, the government wasted nearly ten billion pounds on P P E. That's two and a half billion meal deals. Next.",'ppe'),
 ('21a',"Some people got through the pandemic on furlough. One baroness got through it on sixty million and a yacht.",''),
 ('21b',"It doesn't have heated flooring, though. Moving on.",''),
 ('22',"A British minister is reported to have told Jeffrey Epstein a five-hundred-billion-euro bailout would be announced that night. Nothing silly.",'bailout'),
@@ -41,6 +42,19 @@ L=[
 ('26',"It came out the Friday before a bank holiday, in a heatwave, on England squad day. You were at a barbecue. They were counting on it.",'6.6bn'),
 ('27',"Thirty-eight degrees. The government banned barbecues. We drank half a billion pints. The oil companies made forty-seven billion dollars. Cheers.",''),
 ('29',"So that year was full of nonsensical shit, huh? What to do about it? Well, I'll tell you. You just have to listen...",''),
+('05b',"Mutually assured inaction is holding the peace together, like a duct-taped Temu vibrator.",''),
+('16x',"No, Russia was not involved. Ninety-two percent turnout. A landslide. This is where democracy fails.",''),
+('16y',"I've got a feeling Piddington doesn't have Scotland's budget for endless referendums. I'm not even sure it's on Google Maps. It just says: some... field...",''),
+('20b',"A court told one P P E firm to pay back a hundred and twenty-two million. The government says it'll chase them with everything it's got.",''),
+('20c',"Which explains why it's got nothing. They're too busy arguing about H S 2.",''),
+('22b',"They let Greece sweat for months. When Spain and Portugal started wobbling, they threw the fucking kitchen sink at it.",''),
+('22c',"When you've got nonce intelligence assets for Israel in the loop, it's time for a new solution, lads.",''),
+('22d',"Netanyahu's solution is final: invading Lebanon and the West Bank at the same time.",''),
+('22e',"Makes you wonder why we talk about fake currency and made-up conflicts over rare earth minerals,",''),
+('22f',"all the while A I is planning our downfall. Hugging Face is just the beginning.",''),
+('22g',"What's next? We smoke D M T in a virtual-reality doomscroll simulator, to dissociate from base reality,",''),
+('22h',"which is clearly fucked, and we should start again... Anyway.",''),
+('p9',"Inspiring.",''),
 ]
 SILENT={
 '28':("P2",8,"A locked-off shot from a scripted television drama, filmed on a closed set. The man says nothing. He tips the pint glass up and drinks the whole pint of lager in one long go, swallowing steadily, until the glass is empty. He lowers the empty glass to the table, breathes out through his nose and looks at the lens. The television screen stays plain flat blue. Audio: only swallowing, the glass set down on wood, and the faint hum of the empty room. No music and no voices."),
