@@ -2620,3 +2620,13 @@ them at speed yet.
 - 🟡 **A reference with a film-frame border passes the border on** to every still made from it.
 - **Speech for people who are not Characters** was made in AI Studio speech and laid over a shot of their back.
   Unheard by a human so far.
+
+## 2026-10-14: a still that looks like real news is refused as video (Money For Something cut 5, n=1)
+
+`[observed]` A Nano Banana 2 still of a made-up reporter on an "HS2" platform came back with a news-style lower third
+("LIVE", "HS2 DELAYS / REPORT: UNFINISHED STATIONS") that the prompt never asked for. Animated in Ingredients with a
+Character attached, Omni 1.1 Flash refused it twice: "Unable to generate videos that might cause reputational risk or
+misrepresent current events." The third try passed, and the clip that came back had no strap. Reading (unverified): a
+start image that looks like a real broadcast about a real event trips the current-events filter. For a fake news
+shot, ask for no on-screen graphics in the still and add the strap afterwards in ffmpeg.
+Also seen the same day: "VIDEO_OPTION_UNAVAILABLE: Frames/Ingredients on Omni 1.1 Flash" once each; both passed on the retry.

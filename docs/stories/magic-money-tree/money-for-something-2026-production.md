@@ -158,3 +158,83 @@ looked at; Premiere export has no mute clip. **Not re-listened:** the sound is c
 
 - Jack has not approved the plates. Kai's rulings are all still open (living people, real photos, the Mone line, the Epstein lines).
 - The fact checks listed in the script ("Checks owed") have not been re-run for the cards.
+
+## Cut 4 (14 October): Jack's notes on cut 3
+
+Jack: at 1:40 the host says "1250 50"; at 1:57 "380 million" comes out of nowhere ("they made 380 million"); at 2:03
+"the PPE they wasted" needs a set-up; "i like the pacing"; more footage and meme-like pictures on the television; the
+stat graphics "get a bit boring, please make that more exciting and sleeker"; apply October's lessons; tell him what I
+would change.
+
+`MFS 2026 cut 4`: 3 min 36 s. Render: `2026\renders\MFS 2026 cut 4.mp4`. In Premiere: bin `00 CUT 4 (fixed lines, new
+cards, more pictures)`, sequence `MFS 2026 cut 4` (34 clips on V1/A1, room tone on A2). Cuts 1 to 3 are untouched.
+Builder: `y2026/build-cut4-2026.py`; cards: `y2026/build-cards4-2026.py` (`screen\cards4`). Same pacing as cut 3.
+
+| Fix | What was done | Checked |
+| --- | --- | --- |
+| y-16 said "twelve hundred and fifty fifty" | Remade, same prompt | Local speech model: every word |
+| y-18 "Three hundred and eighty million" with no verb | Line now "...three companies. They made three hundred and eighty million." | Every word |
+| y-20 PPE with no set-up | Line now "In the pandemic, the government wasted nearly ten billion pounds on PPE. That's two and a half billion meal deals. Next." | Every word (heard with `NOPROMPT=1 VAD=1`; with the script as a hint the model invented "We'll see you next") |
+| Cards boring | Fourth style: one loud colour per card (yellow fact, red loss, green who did well), photo cards as a two-tone print, Archivo Expanded Black numbers that slam in with a shake, Space Mono label tags, a marker bar under the sub-line, a two-frame "transmission" glitch on entry. No count-up, so no wrong numbers on screen | Contact sheets |
+| More pictures | The television can now change picture on a word. 21 new Commons files (sources file) and two Flow stills (Piddington checkpoint, meal-deal mountain; Nano Banana 2, prompts in `y2026/prompts/tv-*.txt`, no credit owed) | Contact sheet |
+| Deadpan tags | Punch-in (1.3x, face on the left third) on "Unrelated", "For some", the bootstraps line, "heated flooring", "Local man", "Cheers" | Contact sheet |
+
+**Pictures added:** tanker boarding (Jan 2026, thermal) → pumpjack → toilet on "shit" → a different toilet on "different";
+a clown on "the clown show"; the THAAD launch on "stopped paying for these"; Helmand then the destroyer on "you'll
+remember those from earlier"; hotel corridor on "three companies"; mask in mud → PPE warehouse; superyachts; low
+reservoir → barbecue → pint → tanker under the heat line. New card c19 (98.7 million meal deals) made, not used.
+
+**Learned:** `mfs-still.mts` saved candidates under the wrong prompt's name (`g-tv-piddington-b.jpg` is a meal-deal pile,
+`g-tv-mealdeals-b.jpg` is a Piddington shot). Look at every saved still before using it. ImageDraw on an RGBA frame
+writes alpha straight through, so every fade showed at full strength on the first card render; draw on a separate
+layer and composite.
+
+**Checked:** `verify-2026.py` (only number spellings flagged, as before); the 1:35 to 2:25 stretch transcribed and
+Gemini-listened: no stutter, laughter or second voice, -15.1 LUFS; Premiere export has no mute clip.
+`delivery-qc.sh`: the same range FAIL as cuts 2 and 3 (darkest and brightest single pixels from encoder ringing). Not
+watched by a person.
+
+**Facts:** Tesco meal deal £3.85 with Clubcard, £4.25 without (a store listing, undated); 9.9bn ÷ 3.85 = 2.57bn, ÷ 4.25 = 2.33bn,
+so "two and a half billion" holds at the Clubcard price.
+
+**Later on 14 October (Jack on the cut 4 list):** "Sting/title: add this"; Piddington fact line "keep the one we have it
+works"; toilets "fine"; delivery range "dont worry about that". Added a title sting after the cold open (after "Moving
+on."): card `title` in `build-cards4-2026.py` (yellow, "A transmission from the future", "Money for / something", "2026",
+glitches in and out, 2.6 s) with a synthesized hit (`screen\cards4\title-sting.wav`: two sub hits on the slams, static on
+each glitch, a data chirp), -15.0 LUFS, level with the voice. Cut 4 is now 3 min 38 s; in Premiere the title is inserted
+at 5.625 s and the room tone replaced by a 218 s bed. Premiere export: no mute clip.
+
+## Cut 5 (14 October): round 2, the joke pass, the podcast and the reporter
+
+Jack: "do all of it ... avoid AI slop ... use the cinematography file and skills ... nothing gets uploaded until we both
+say so." Lines: [`money-for-something-2026-joke-pass.md`](./money-for-something-2026-joke-pass.md) and the shooting script.
+Shots, prompts and characters: [`money-for-something-2026-round2-shots.md`](./money-for-something-2026-round2-shots.md).
+
+`MFS 2026 cut 5`: **5 min 47 s** (cut 4 was 3 min 38 s). Render: `2026\renders\MFS 2026 cut 5.mp4`. In Premiere: bin
+`00 CUT 5 (round 2: jokes, podcast, reporter)`, sequence `MFS 2026 cut 5` (60 clips on V1/A1, room tone on A2). Cuts 1
+to 4 untouched. Builder: `y2026/build-cut5-2026.py` (new: SRC/WIN cut a recorded clip into parts by word; a card part).
+
+| What | Done |
+| --- | --- |
+| 13 new host lines (05b, 16x, 16y, 20b, 20c, 22b to 22h, p9) | Frames on plate P1, The Host attached, 13 of 13 first time (one transient "Frames unavailable"); every word heard |
+| Clip 16 split around 16x and 16y; "Nothing silly." cut from 22 | `WIN` in the builder |
+| Podcast stills | S1-b (host), S2-b (water boss), S2b-a (watch raised), Nano Banana 2, two candidates each, picks mine |
+| HS2 reporter still | S3-b (Flow added a "LIVE / HS2 DELAYS" strap by itself; generic, no broadcaster) |
+| Three Flow Characters with custom voices | Podcast Host (Fenrir) `8b194ea9`, Water Boss (Schedar) `c74386ce`, HS2 Reporter (Zubenelgenubi) `da033493`, project cb27208c; made by the hand route (`scripts/flow/.tmp/br-make-chars.mjs`, `br-voices.mjs`) because the MCP character tools are still unmapped |
+| 10 podcast and reporter clips | Ingredients, still + speaker's Character; 10 of 10, every word heard ("Thank you" said twice: trimmed to one) |
+| Podcast title card | "Now streaming / The biggest podcast of 2026", 2.6 s, with the show's sting (it had been 2 s of dead air) |
+| New TV pictures | a plain map pin "some… field…" (drawn, no real app), TV static under the doomscroll riff, the Epstein still under 22c |
+
+**Checked:** `verify-2026.py` now follows the cut's own order: every line present; the only flags are numbers and
+acronyms spelt differently ("Yep" for "Yeah" on the reporter). Gemini listen on 2:40 to 5:00: all four voices British,
+no laughter or music, -14.9 LUFS. Premiere export: no mute clip. Contact sheets looked at.
+
+**Known:** the reporter sounds thin (Flow gave it a phone-line quality; reads as a live cutaway). The reporter clip was
+refused twice ("might ... misrepresent current events") and passed on the third try; the take that passed has no news
+strap. The cut is long: 5 min 47 s. Kai has seen none of it; nothing is uploaded.
+
+**Jack on cut 5 (14 October): "at ten seconds the date stays on the screen too long. other than that its great."**
+Fixed: the dates card (c01) now leaves on "Four weeks later" instead of "Unrelated" (about 4 s on screen instead of 7);
+the host is back for "Four weeks later, America bombed Iran. Unrelated...". Render rebuilt; in Premiere `c5-y-01-fix.mov`
+is laid over the old clip at 8.25 s; project saved. Lesson for every card: a full-screen card leaves when its facts have
+been said, not at the punchline's word.

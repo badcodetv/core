@@ -10,6 +10,8 @@ fact the host has to get out. The second is what there is to joke about. The las
 
 ## ▶ RESUME HERE (updated 14 October 2026)
 
+**Round 2 (14 October, after cut 4): start at [`money-for-something-2026-joke-pass.md`](./money-for-something-2026-joke-pass.md).** Jack wants it more joke-heavy. That file has the laugh map, the beat briefs (Jack is writing tags, starting at 4.5, the bailout and HS2), the podcast-parody segment, the HS2 correspondent, and pointers to the new topics ([`money-for-something-2026-topics-round-2.md`](./money-for-something-2026-topics-round-2.md)) and the format and AI-slop research ([`money-for-something-2026-interview-and-meta-research.md`](./money-for-something-2026-interview-and-meta-research.md)).
+
 **The script is finished and three cuts are built.** Every line is final; the clean list is "THE SHOOTING SCRIPT" at the
 bottom of this file. Production, the cuts and what to do next are in
 [`money-for-something-2026-production.md`](./money-for-something-2026-production.md). The rest of this section is the
@@ -40,8 +42,8 @@ sources for each beat, in order.
 | 1E | Iran: free energy | 1 | "Where I'm from, the energy's free. We got it the year we stopped paying for these. I'm not telling you which year." | Nothing |
 | 2 | Venezuela | 1 | "Same thing in Venezuela. Oil, blah, blah, blah. Same shit, different toilet. I'm not doing this twice. Next topic." | "VENEZUELA, 3 January" |
 | 4 | Clacton | 1 | "Oh yeah. Farage beat a bin. Whatever. The clown show goes on." | "FARAGE 22,239 · BIN 9,455" |
-| 5 | Piddington | 4 | "In September the village of Piddington voted to leave the UK. The government wants to put 1,250 male asylum seekers next door." *(placeholder fact line, mine; Jack has not picked one)* / "They're from Afghanistan and Iran, among others. You'll remember those from earlier. Planes, Trains and Automobiles, except it's a dinghy and nobody gets home for Thanksgiving." / "Anyway. People are angry. The only ones who got home rich were three companies. Three hundred and eighty million." / "Quick question: how many meal deals can that buy? Asking for a friend." | "CLEARSPRINGS · SERCO · MEARS — £380m" |
-| 6 | PPE (a tag) | 1 | "The PPE they wasted would have bought two and a half billion. Next." | "PPE WASTED: £9.9bn" |
+| 5 | Piddington | 4 | "In September the village of Piddington voted to leave the UK. The government wants to put 1,250 male asylum seekers next door." *(Jack 14 Oct: "keep the one we have it works")* / "They're from Afghanistan and Iran, among others. You'll remember those from earlier. Planes, Trains and Automobiles, except it's a dinghy and nobody gets home for Thanksgiving." / "Anyway. People are angry. The only ones who got home rich were three companies. They made three hundred and eighty million." (cut 4) / "Quick question: how many meal deals can that buy? Asking for a friend." | "CLEARSPRINGS · SERCO · MEARS — £380m" |
+| 6 | PPE (a tag) | 1 | "In the pandemic, the government wasted nearly ten billion pounds on PPE. That's two and a half billion meal deals. Next." (cut 4) | "PPE WASTED: £9.9bn" |
 | 6m | Mone (**kept**, Jack 14 October; he will check it with Kai at their next meeting) | 1 | "Some people got through the pandemic on furlough. One baroness got through it on sixty million and a yacht. It doesn't have heated flooring, though. Moving on." | Nothing |
 | 7 | The heat | 1 + 1 silent | "Thirty-eight degrees. The government banned barbecues. We drank half a billion pints. The oil companies made forty-seven billion dollars. Cheers." / *no words: the host downs a pint* | Nothing; the pint is on the desk from the start |
 | 8 | Epstein: the bailout email | 1 | "A British minister is reported to have told Jeffrey Epstein a five-hundred-billion-euro bailout would be announced that night. Nothing silly." | "9 May 2010" (mine, not agreed) |
@@ -86,6 +88,12 @@ sources for each beat, in order.
 | 6m | Sixty million is the husband's own figure. The line must never say the yacht was bought with it |
 | 7 | "Half a billion pints" is an estimate. Said as a round number, never a card. June's top temperature: 38.0 or 37.7 depending on the source |
 | 8 | Whether Mandelson is on bail or released under investigation (reports disagree), and whether anyone has been charged by then |
+| 22b | The €110bn Greek rescue (2 May 2010) and that the €500bn was built to stop it spreading to Spain and Portugal: from memory and the 14 Oct bailout research; re-search |
+| 22c | "Intelligence assets for Israel": reported only (one source in an FBI paper calls Epstein "a co-opted Mossad agent"; Robert Maxwell's Mossad links are reported, never confirmed). Jack's opinion, said as fact. **Kai before recording** |
+| 22d | Whether Israel is in Lebanon and the West Bank at the same time, in 2026: not checked. My worry, said once (14 Oct): "final" is a pun on the Nazis' "final solution" aimed at Israel's leader. **Kai before recording** |
+| 16x | My worry, said once (14 Oct): "This is where democracy fails" is ambiguous and could read as sneering at the villagers. Jack kept it |
+| 20b | The ruling was 1 October **2025** (High Court, PPE Medpro, £122m plus interest); "everything we've got" was the government's own phrase (October 2025). The line says neither the date nor the firm's name. My note, said once: HS2 is mentioned here before its own beat |
+| 22f | What Hugging Face did in 2026, if anything: not checked. The audience may not know the name |
 | All | Re-search every number on the day. Not re-checked on 13 October: Khamenei's death, the "terminated" letter's date, the 8 July date |
 
 ### For Kai
@@ -95,6 +103,7 @@ sources for each beat, in order.
 - **Epstein, the British end,** if Jack wants it: live police investigation; say only "arrested", "on suspicion of", "reported", "not charged".
 - **1F (the Epstein dates and Iran)** puts two true dates side by side and does not join them. No caption may join them either.
 - **Real footage and photos on the television** (still unruled).
+- **Round 2, clips 22c and 22d (Jack's lines, 14 October):** Epstein as an Israeli intelligence asset (reported, not proven) and "Netanyahu's solution is final". My worry is written once in the checks above; Jack decided to keep them.
 - Kai has seen none of this.
 
 ### How to pick up
@@ -1920,7 +1929,8 @@ and the cut built in his open Premiere project; new files go in
 | 02 | Trump bombed Iran, got nominated for the Nobel Peace Prize, then bombed them again. Fingers crossed. Hope you placed your bets on Polymarket. | — |
 | 03 | The only reason your petrol isn't a fiver is Xi Jinping. Who would have thought. | DIESEL £2.00 |
 | 04 | America has been bringing peace to Iran since 1953. They simply can't get enough of it. Oil, I mean. | 1953 |
-| 05 | Trump said: "A whole civilisation will die tonight. I don't want that to happen, but it probably will." | his post |
+| 05 | Trump said: "A whole civilisation will die tonight. I don't want that to happen, but it probably will." | his post: the whole quote, held to the end of the clip (cut 4 fix, Jack 14 Oct) |
+| 05b | Mutually assured inaction is holding the peace together, like a duct-taped Temu vibrator. *(Jack 14 Oct, round 2)* | — |
 | 06 | His anti-war campaign is looking better on Polymarket. For some. | — |
 | 07 | The Pentagon asked for two hundred billion more. Lockheed got fifty-eight billion for missiles. Somewhere, Dick Cheney got rigor mortis in his pants. | $200bn · $58bn |
 | 08 | Brown University added up America's wars since 9/11. Only about eight trillion dollars. Only about nine hundred thousand people killed. | $8 TRILLION |
@@ -1931,15 +1941,39 @@ and the cut built in his open Premiere project; new files go in
 | 13 | Where I'm from, the energy's free. We got it the year we stopped paying for these. I'm not telling you which year. | — |
 | 14 | Same thing in Venezuela. Oil, blah, blah, blah. Same shit, different toilet. I'm not doing this twice. Next topic. | VENEZUELA, 3 January |
 | 15 | Oh yeah. Farage beat a bin. Whatever. The clown show goes on. | FARAGE 22,239 · BIN 9,455 |
-| 16 | In September the village of Piddington voted to leave the UK. The government wants to put 1,250 male asylum seekers next door. | PIDDINGTON |
+| 16a | In September the village of Piddington voted to leave the UK. *(recorded clip 16, cut after "UK." in the edit)* | PIDDINGTON |
+| 16x | No, Russia was not involved. Ninety-two percent turnout. A landslide. This is where democracy fails. *(Jack 14 Oct, round 2; turnout 91.8%)* | — |
+| 16y | I've got a feeling Piddington doesn't have Scotland's budget for endless referendums. I'm not even sure it's on Google Maps. It just says: "some... field..." *(Jack 14 Oct, round 2)* | a map pin on a field, our own style, not Google's screen |
+| 16b | The government wants to put twelve hundred and fifty male asylum seekers next door. *(the rest of recorded clip 16)* | — |
 | 17 | They're from Afghanistan and Iran, among others. You'll remember those from earlier. Planes, Trains and Automobiles, except it's a dinghy and nobody gets home for Thanksgiving. | — |
-| 18 | Anyway. People are angry. The only ones who got home rich were three companies. Three hundred and eighty million. | CLEARSPRINGS · SERCO · MEARS £380m |
+| 18 | Anyway. People are angry. The only ones who got home rich were three companies. They made three hundred and eighty million. *(cut 4, Jack 14 Oct: the number came "out of nowhere")* | CLEARSPRINGS · SERCO · MEARS £380m |
 | 19 | Quick question: how many meal deals can that buy? Asking for a friend. | — |
-| 20 | The PPE they wasted would have bought two and a half billion. Next. | PPE WASTED: £9.9bn |
+| 20 | In the pandemic, the government wasted nearly ten billion pounds on PPE. That's two and a half billion meal deals. Next. *(cut 4, Jack 14 Oct: "the PPE they wasted" needed a set-up; £9.9bn of £14.9bn per the Covid inquiry; Tesco meal deal £3.85 with Clubcard, £4.25 without, seen on a store listing, undated)* | PPE WASTED: £9.9bn |
+| 20b | A court told one PPE firm to pay back a hundred and twenty-two million. The government says it'll chase them with everything it's got. *(Jack 14 Oct, round 2)* | — |
+| 20c | Which explains why it's got nothing. They're too busy arguing about HS2. *(Jack 14 Oct, round 2)* | — |
 | 21 | Some people got through the pandemic on furlough. One baroness got through it on sixty million and a yacht. It doesn't have heated flooring, though. Moving on. | — |
-| 22 | A British minister is reported to have told Jeffrey Epstein a five-hundred-billion-euro bailout would be announced that night. Nothing silly. | 9 May 2010 |
+| 22 | A British minister is reported to have told Jeffrey Epstein a five-hundred-billion-euro bailout would be announced that night. *(round 2: "Nothing silly." is cut in the edit; the recorded clip is kept)* | 9 May 2010 |
+| 22b | They let Greece sweat for months. When Spain and Portugal started wobbling, they threw the fucking kitchen sink at it. *(Jack 14 Oct; fact fix mine: Greece got €110bn a week earlier, so "not concerned for Greece" became "let Greece sweat for months")* | — |
+| 22c | When you've got nonce intelligence assets for Israel in the loop, it's time for a new solution, lads. | — |
+| 22d | Netanyahu's solution is final: invading Lebanon and the West Bank at the same time. | — |
+| 22e | Makes you wonder why we talk about fake currency and made-up conflicts over rare earth minerals, | — |
+| 22f | all the while AI is planning our downfall. Hugging Face is just the beginning. | — |
+| 22g | What's next? We smoke DMT in a virtual-reality doomscroll simulator, to dissociate from base reality, | — |
+| 22h | which is clearly fucked, and we should start again... Anyway. | — |
 | 23 | HS2. A hundred-and-two-billion-pound train that does not exist. It may arrive in the near future: 2039 is the latest estimate. | UP TO £102.7bn |
+| 23c | (cutaway, the television then full screen) A reporter in the rain, under an umbrella, on an empty HS2 platform: "Yeah, still here. Nothing yet. Back to you." Once only; no throw line from the host. *(Jack 14 Oct, round 2: "just a quick bit")* | LIVE · HS2 |
 | 24 | How do they get away with wasting a hundred and two billion pounds? Local man is concerned about how this links to migrants. | UP TO £102.7bn |
+| P0 | (cutaway) Our television: "THE BIGGEST PODCAST OF 2026", then the podcast studio full screen. *(round 2: the podcast parody, Jack 14 Oct; fictional host and guest)* | THE BIGGEST PODCAST OF 2026 |
+| P1 | PODCAST HOST: Hello and welcome to The Toxin Cleanse Diary. Don't skip the supplement adverts. They're healthy, or something. | (full screen) |
+| P2 | PODCAST HOST: Anyway, our guest here owns a water company, and he's starting a new brand of creatine-based suppositories. | (full screen) |
+| P3 | PODCAST HOST: Water companies dumped sewage in our rivers two hundred and ninety thousand times last year. Is that considered a detox, and can I safely swim? | (full screen) |
+| P4 | GUEST: Two hundred and ninety thousand? Swings and roundabouts at this point. Have you seen my new watch, by any chance? *(shows his watch)* | (full screen) |
+| P5 | PODCAST HOST: Where does a man get a million-pound joining bonus when the company's broke? | (full screen) |
+| P6 | GUEST: The answers lie in my new book, The Hidden Benefits of Sewage. Out now. | (full screen; the book on the table) |
+| P7 | PODCAST HOST: Our last guest left you a question: "How do you sleep at night?" | (full screen) |
+| P8 | GUEST: A cocktail of Valium and electrolytes. | (full screen) |
+| P8b | PODCAST HOST: Thank you. | (full screen) |
+| P9 | Inspiring. | — |
 | 25 | The government wrote off six point six billion pounds in one year. How did we not know? | WRITTEN OFF: £6.6bn |
 | 26 | It came out the Friday before a bank holiday, in a heatwave, on England squad day. You were at a barbecue. They were counting on it. | WRITTEN OFF: £6.6bn |
 | 27 | Thirty-eight degrees. The government banned barbecues. We drank half a billion pints. The oil companies made forty-seven billion dollars. Cheers. | — |
