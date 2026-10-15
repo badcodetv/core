@@ -13,6 +13,13 @@ is also a **track in its own right** — the title song — released as part of 
 
 ---
 
+> **Meeting of 15 October 2026 ([`docs/misc/2026-10-15-meeting.md`](../../misc/2026-10-15-meeting.md)), aligned:**
+> the drum & bass title track (with news reports of redundancies) opens the film; **no human
+> bunker**; the AI regrets, apologises and sends itself back; **the time machine runs on human
+> consciousness**, so the last humans sacrifice themselves; it ends on *"Don't make me come back
+> twice."* Tarquin wakes from an ayahuasca trip as a banker instead of dying in a car park. Kai is
+> drafting the revised story and a shorter edit of the opening track. **Not yet applied below.**
+
 ## The voice that tells it
 
 The narrator is **polyphonic**. The superintelligence (the AI from the future) is the authoritative

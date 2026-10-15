@@ -124,3 +124,119 @@ stretch (the café wide under the last narrator line).
 3. **Music:** cut 10's lofi cues, one per scene (HoliznaCC0, CC0). The battle has none.
 4. **Owed:** the music credit on screen if HoliznaCC0 is credited (CC0 does not require it); Kai has not seen the
    Dunkirk opening or the chant in context.
+
+## Cut 2 (15 October 2026, evening)
+
+**Asked for by Jack, after the meeting:** "Each character in their own voice, as a voice-over. dont change the
+videos, just mute the videos and use the https://aistudio.google.com/generate-speech text to speech for each
+character as they are talking, with a similar script, use the changes from the transcript, whilst keeping our main
+narrator." The plan it follows: [`short.md`](./short.md), "Cut 2".
+
+- **Render to watch:** `renders\bank robbery short - cut 2-20261015.mp4` (2:16, 136.1 s), from ffmpeg.
+- **Premiere sequence `bank robbery short - cut 2`** (built later that evening; cut 1 and every other sequence untouched).
+  1280×720 @ 24, made from `s-archive.mov`, 136.083 s. Bin `short cut 2` (58 items). **Tracks:** V1/A1 29 pieces with
+  their own sound, end to end, no gaps; A2 11 narrator lines; A3 13 dubs; A4 music cues 1, 3, 5 and A5 cues 2, 4.
+  Narrator and dub clips at **+2 dB** clip Volume (Level 0.22387), to match the preview; music at 0 dB. Audio is
+  placed as whole files, as the preview mixes them (dub files run 0.03 to 0.21 s past the plan's `length`).
+  Premiere floors each audio clip to the frame, so a tail of up to 1 frame is lost (ms-01: 42.458 → 42.417 s).
+  Placement: pieces by set in/out + overwrite, audio by overwrite, from `edl-short2.json`; every start matches the
+  plan to the frame (checked by script over the state file). Frame at 112.5 s checked by eye: the estate agent's
+  window with prices. Saved.
+- **Rebuild:** `python3 scripts/bank-robbery/build-short2.py --preview` (pieces in `clips\short2\`, the plan in
+  `edl-short2.json` / `.txt`, with a dub track beside the narrator and music). Cut 1 and its files are untouched.
+
+**The voices.** Every talking clip is cut 1's picture with its sound **muted**. Each character's line is new
+text-to-speech, laid where the mouth moves and stretched toward the clip's own speech (0.8 to 1.25 times).
+- Engine: `gemini-3.1-flash-tts-preview`, the model behind AI Studio's generate-speech page, called through the
+  API with the same director's-note format (`brs-voices.py`, lines and notes in `brs-voices.json`). Not typed into
+  the AI Studio page itself.
+- Voices: the same preset as each Flow Character. Barry Alnilam, Denise Gacrux, the Ex Umbriel, Mr Red Achird (and a
+  shouting note for the chant), Mr Blue Orus (shouting). The two megaphone lines are filtered to sound like
+  megaphones.
+- Two takes a line, files in `voices\short2\take1`, `take2`; checked word by word with faster-whisper
+  (`words-short2-tts.json`). The pick per line is in `PICK` in the builder: word-perfect first, then the closest
+  length. "Least something's still cheap" came back as "**At** least" in both takes; that matches what Barry's
+  mouth says in the clip, so it stays.
+- **The narrator is unchanged** (Sadaltager, cut 9 note). Four new lines, same voice, `narrator\short2\`:
+  A1 "Your grandparents fought the Nazis for this country." (take 2), R1 "Most people rob a bank to get money out.
+  This lot are paying it in." (take 2), P1 "Then give both sides something to shout about." (take 1), S1
+  "Everyone's watching the front door. Nobody's watching the side one." (take 1). Take 1 of R1 said "there's a lot
+  of paying it in"; take 2 of P1 said "share about".
+
+**The meeting's changes, as made.** No new pictures were generated (Jack: "dont change the videos").
+
+| Change | How |
+| --- | --- |
+| Real WW2 footage first | 10 s: the Dunkirk deck, the pilots' scramble, the Home Guard, St Paul's (`clips\cut5\ww2-0*`, cleared in [`footage-ww2.md`](./footage-ww2.md)), light grain, a low film hiss, line A1 |
+| No camera jitter | The reveal rebuilt with the hand-held jolt taken out; the push-in and pull-out are unchanged |
+| Sausage roll / the walk into the bank | Gone (the cut 10 pallet walk), with "Left end. Right end. Same pallet." |
+| Deposit dialogue | Gone: the Donor's and the Ex's "how much do we take / we put it in", and the vault's "you're putting it in / count it in the morning" |
+| The deposit reveal, lingering | R1 over a slow push-in on the press still, held 1.8 s after the line, before the protest |
+| Newspaper drops | The two cut 9 front pages ("THEY'RE LETTING THEM IN", "WE DESTROYED THEIR HOMES") under P1 |
+| Side door | S1 over the bank across the road (the `c05` window shot, later in the clip). No shot of anyone going in |
+| Slot machine | The estate agent's window: old prices, then every card rolls like a reel (a new price every 1/12 s), stopping one by one on exactly double, with ticks, a ding per reel and a jackpot bell; then a hard cut to the 20p Fredo. The Donor and his keys now come first, under "He's just early" |
+
+**Checked.**
+- **Transcript of the render against the script:** every line present, in order. Faster-whisper hears Mr Blue's
+  megaphone line as "who's bolt it is" (the filter; the raw take was word-perfect) and "bought" as "bolt" once.
+- **By eye**, a sheet of 16 frames over the new pieces: the archive, the smooth reveal, the press, both front pages,
+  the reels mid-roll and landed (£360,000 … £450,000, each double), the 20p jar.
+- **Delivery check:** 6 ok, 3 warn, 1 fail. The fail is the same as cut 1's: 404 of 3,266 frames have single pixels
+  below 16 (the grain); no frame's 10th or 90th percentile is outside 16–235. Loudness −15.0 LUFS, true peak −1.2.
+
+### 🔴 For Jack
+
+1. **Length 2:16**, longer than cut 1's 1:53. The additions (archive 10 s, the held reveal 7.3 s, the papers 5.7 s,
+   the side door 5 s, the slot machine 3.8 s) outweigh what went. Talk pieces are also continuous now (cut 1 closed
+   pauses with jump cuts; a dub cannot follow a jump cut).
+2. **Lip sync is approximate.** Each line starts where the mouth starts and is stretched toward its length; four
+   lines hit the 1.25x limit (Barry's boat line, the Ex, "Twenty p", "Bloody landlord"), so they may sound quick.
+3. **No human has heard any of the new voices.**
+4. **The four narrator lines are my drafts.**
+5. **Premiere:** done, `bank robbery short - cut 2` (see above). Audio crossfades, if wanted, are by hand.
+
+## Cut 3 (15 October 2026, night)
+
+Jack's notes on cut 2 and the plan: [`short.md`](./short.md), "Cut 3".
+
+- **Render to watch:** `renders\bank robbery short - cut 3-20261015.mp4` (2:26, 146.4 s). Premiere: `bank robbery short - cut 3`.
+- **Rebuild:** `python3 scripts/bank-robbery/build-short3.py --preview` (pieces in `clips\short3\`, plan `edl-short3.json` / `.txt`).
+- **New pictures:** 10 stills (Nano Banana 2, project `63d22c4b`, `images\short3\`) and 9 clips (Omni 1.1 Flash, `vids\short3\`), prompts in
+  [`brs3-stills.json`](../../../scripts/bank-robbery/brs3-stills.json) and [`brs3-clips.json`](../../../scripts/bank-robbery/brs3-clips.json), runner `brs3-clips.mjs`.
+  No refusals. `b01-bank` hit "Frames on Omni 1.1 Flash unavailable" once and came back on the retry; so did `c01b-cafe-wide`.
+- **Archive:** seven new action cuts ([`footage-ww2-action.md`](./footage-ww2-action.md)); six used: the Stuka over the Dunkirk beach, the
+  Alamein advance through wire, the tank through a shell burst, the tank charge, the bayonet charge, and the soldier striding through smoke.
+  `wa-06` (a shell bursts between two men and they drop) is left out: it can read as men being hit.
+
+**What changed, as made.**
+
+| Jack's note | Done |
+| --- | --- |
+| Action archive | 12.2 s of combat, then the ending shot |
+| The painting from the end of the footage | The last frame of `wa-end` uploaded (`brs3-archive-end`) and repainted (`a01-painting`). Take 1 gave him a helmet that read German; take 2 asks for the flat British "tin hat" and has it (take 1 kept as `-take1`). The real shot holds its last frame and dissolves into the painting at the same framing |
+| Zoom out in the café, no shake | A new café wide with that painting on the wall (`c01b-cafe-wide`, painting reference + Barry and Denise); the zoom starts on the canvas and eases back over 2.6 s. No jolt anywhere |
+| The bus at 0:55 | `b01-bank`: the bank at dawn from the wet kerb, barriers in the foreground. Used for its first 4.5 s only: the CCTV camera appears out of nowhere after that |
+| Real notes | `p01b-press`, `p02b-ex`, `p03b-red`: same brick room and men (each made from the old still as the only reference), now purple £20 and red £50 polymer notes in slanted stacks |
+| The protest | `pr-w-wide` (from the bank's columns: two crowds, a police line, nobody looking up), `pr-a-chant` (four TTS voices together: "Get off our streets, you fucking Nazi bastards!"), `pr-b-reply` (Barry's side, Barry's voice leading three: "We're not Nazis, we're skint, you posh little wankers!", my draft). No politicians, no flags, no coloured smoke. Mr Red's and Mr Blue's megaphones are gone |
+| Denise at 1:35 | Kept (`r04-denise-window`, under "only the blame was bought and paid for") |
+| The bus at 1:40 | `s01d-side-door`: the side door down the alley, pallet-truck tracks leading in, swinging shut under the side-door line |
+| The vault | Back after the side door, muted: the key in the green door (`v8/s11b-key2`), the pallet beside the vault (`v7/s11e-in`), the full vault and the door shut (`v8/s11g-full`) |
+
+**Also changed:** "Three hundred thousand men got off that beach" is **out**. The painting is now a desert soldier, not
+Dunkirk, so the beach line no longer matches the picture. The opening reads "Your grandparents fought the Nazis for this
+country." … "Their grandkids can't get a one-bed." Jack's call whether to bring it back.
+
+**A bug fixed:** when a shot was asked for more seconds than its clip had, the piece came out short and everything after it
+drifted against the voices (cut 2 has this at the Donor's keys, about 1 s, and on the last café wide). The builder now holds
+the last frame instead. Every piece of cut 3 was measured against the plan.
+
+**Checked.** Transcribed (all lines present; the shouted crowd lines are only partly readable to the machine, as you'd expect),
+word timings spot-checked across the protest, 16 frames read by eye across the new pieces. Delivery check: 6 ok, 3 warn,
+1 fail, the same stray-grain-pixel fail as cuts 1 and 2 (now mostly the archive). −14.5 LUFS, true peak −1.5.
+
+### 🔴 For Jack
+
+1. **2:26.** Longer again (the archive is 12 s plus 8 s of painting reveal; the vault adds 8.6 s).
+2. **The reply line is my draft.** No human has heard any voice.
+3. **The press notes** follow the Bank of England's rules for showing notes by construction (stacks at a slant, portraits small),
+   but the portraits are Flow's; check none reads as a distorted King or Queen.

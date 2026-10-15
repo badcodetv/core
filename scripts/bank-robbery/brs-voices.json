@@ -1,0 +1,167 @@
+{
+ "voices": {
+  "Barry": {
+   "voice": "Alnilam",
+   "note": "Accent: British, a plain working-class accent from a town in the south-east of England; not posh, not stagey.\nStyle: a builder of about fifty in a hi-vis jacket. Blunt, gruff and fed up, short flat sentences, a dry laugh at his own bad luck. Talking to the woman behind the counter, not performing.\nPace: natural, unhurried."
+  },
+  "Denise": {
+   "voice": "Gacrux",
+   "note": "Accent: British, a working woman from a northern English town; plain and local, not posh.\nStyle: in her late fifties, owns the café. Dry, tired and quick. Low and level, never raised. She says devastating things as plain sums. Talking to a regular across the counter, not performing.\nPace: natural, quick."
+  },
+  "The Ex": {
+   "voice": "Umbriel",
+   "note": "Accent: British, privately educated English, a former cabinet minister.\nStyle: about sixty. Warm, unhurried and reassuring, as if every sentence is a small favour. Never raises his voice. Talking to people round a table, not performing.\nPace: unhurried."
+  },
+  "Mr Red": {
+   "voice": "Achird",
+   "note": "Accent: British, north London, educated.\nStyle: an English politician of the left in his mid fifties. Earnest and lecturing, pleased with himself. Talking to people round a table, not performing.\nPace: natural."
+  },
+  "Mr Red megaphone": {
+   "voice": "Achird",
+   "note": "Accent: British, north London, educated.\nStyle: an English politician of the left in his mid fifties, SHOUTING into a megaphone at a protest, furious, self-righteous, full voice, every word hit hard.\nPace: fast and punchy."
+  },
+  "Mr Blue megaphone": {
+   "voice": "Orus",
+   "note": "Accent: British, a Midlands businessman.\nStyle: an English politician of the right in his mid fifties, SHOUTING into a megaphone at a protest, loud, blunt and indignant, jabbing each word, building up to point at someone.\nPace: fast and punchy."
+  },
+  "Crowd A1": {
+   "voice": "Kore",
+   "note": "Accent: British, a young woman from London.\nStyle: one voice in an angry protest crowd at dusk, SCREAMING across a police barrier at the other side, full lungs, raw and furious, every word hit hard. Not performing; really shouting.\nPace: fast and punchy."
+  },
+  "Crowd A2": {
+   "voice": "Fenrir",
+   "note": "Accent: British, a young man from Manchester.\nStyle: one voice in an angry protest crowd at dusk, SCREAMING across a police barrier at the other side, full lungs, raw and furious, every word hit hard. Not performing; really shouting.\nPace: fast and punchy."
+  },
+  "Crowd A3": {
+   "voice": "Leda",
+   "note": "Accent: British, a woman in her forties from Bristol.\nStyle: one voice in an angry protest crowd at dusk, SCREAMING across a police barrier at the other side, full lungs, raw and furious, every word hit hard. Not performing; really shouting.\nPace: fast and punchy."
+  },
+  "Crowd A4": {
+   "voice": "Puck",
+   "note": "Accent: British, a student from the south of England.\nStyle: one voice in an angry protest crowd at dusk, SCREAMING across a police barrier at the other side, full lungs, raw and furious, every word hit hard. Not performing; really shouting.\nPace: fast and punchy."
+  },
+  "Crowd B1": {
+   "voice": "Alnilam",
+   "note": "Accent: British, a working man of about fifty from the south-east of England, a builder.\nStyle: one voice in an angry protest crowd at dusk, SCREAMING across a police barrier at the other side, full lungs, raw and furious, every word hit hard. Not performing; really shouting.\nPace: fast and punchy."
+  },
+  "Crowd B2": {
+   "voice": "Algenib",
+   "note": "Accent: British, a gravelly older working man from Essex.\nStyle: one voice in an angry protest crowd at dusk, SCREAMING across a police barrier at the other side, full lungs, raw and furious, every word hit hard. Not performing; really shouting.\nPace: fast and punchy."
+  },
+  "Crowd B3": {
+   "voice": "Gacrux",
+   "note": "Accent: British, a working woman in her late fifties from the north of England.\nStyle: one voice in an angry protest crowd at dusk, SCREAMING across a police barrier at the other side, full lungs, raw and furious, every word hit hard. Not performing; really shouting.\nPace: fast and punchy."
+  },
+  "Crowd B4": {
+   "voice": "Orus",
+   "note": "Accent: British, a working man from the Midlands.\nStyle: one voice in an angry protest crowd at dusk, SCREAMING across a police barrier at the other side, full lungs, raw and furious, every word hit hard. Not performing; really shouting.\nPace: fast and punchy."
+  }
+ },
+ "lines": [
+  [
+   "v04-barry",
+   "Barry",
+   "Nine hundred quid. For a box room."
+  ],
+  [
+   "v05-denise",
+   "Denise",
+   "Mine's gone up again. The café and the flat."
+  ],
+  [
+   "v06-barry",
+   "Barry",
+   "Another boat last night. Where are they all going to live? 'Cause it ain't round here. I can't afford round here."
+  ],
+  [
+   "v07-denise",
+   "Denise",
+   "It's not the boats, Barry, it's the landlord. Put mine up twice this year. And the council's put my rates up for the privilege."
+  ],
+  [
+   "v08-barry",
+   "Barry",
+   "You sound like my daughter."
+  ],
+  [
+   "v09-denise",
+   "Denise",
+   "Your daughter's right. She still lives with you."
+  ],
+  [
+   "v10-barry",
+   "Barry",
+   "Least something's still cheap."
+  ],
+  [
+   "v13-ex",
+   "The Ex",
+   "Problem is eyes. Two thousand people outside that bank tomorrow."
+  ],
+  [
+   "v14-red",
+   "Mr Red",
+   "Leave the people to us."
+  ],
+  [
+   "v17-red-chant",
+   "Mr Red megaphone",
+   "Get off our streets, you fucking Nazi bastards!"
+  ],
+  [
+   "v18-blue",
+   "Mr Blue megaphone",
+   "And I'll tell you whose fault it is!"
+  ],
+  [
+   "v24-barry",
+   "Barry",
+   "Twenty p? Bloody boats."
+  ],
+  [
+   "v25-denise",
+   "Denise",
+   "Bloody landlord."
+  ],
+  [
+   "v17c-a1",
+   "Crowd A1",
+   "Get off our streets, you fucking Nazi bastards!"
+  ],
+  [
+   "v17c-a2",
+   "Crowd A2",
+   "Get off our streets, you fucking Nazi bastards!"
+  ],
+  [
+   "v17c-a3",
+   "Crowd A3",
+   "Get off our streets, you fucking Nazi bastards!"
+  ],
+  [
+   "v17c-a4",
+   "Crowd A4",
+   "Get off our streets, you fucking Nazi bastards!"
+  ],
+  [
+   "v17r-b1",
+   "Crowd B1",
+   "We're not Nazis, we're skint, you posh little wankers!"
+  ],
+  [
+   "v17r-b2",
+   "Crowd B2",
+   "We're not Nazis, we're skint, you posh little wankers!"
+  ],
+  [
+   "v17r-b3",
+   "Crowd B3",
+   "We're not Nazis, we're skint, you posh little wankers!"
+  ],
+  [
+   "v17r-b4",
+   "Crowd B4",
+   "We're not Nazis, we're skint, you posh little wankers!"
+  ]
+ ]
+}

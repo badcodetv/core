@@ -1,0 +1,72 @@
+{
+ "clips": [
+  {
+   "id": "c01b-cafe-wide",
+   "plate": "c01b-cafe-wide",
+   "mode": "frames",
+   "chars": [],
+   "full": "Barry cuts a sausage and shakes his head; Denise folds the cloth over her hand and glances at the window. The painting stays still on the wall. Fixed camera, one continuous shot, sharp in every frame, no motion blur, normal speed. Sound: café clatter, a kettle, rain on the window, a murmur with no words. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "b01-bank",
+   "plate": "b01-bank",
+   "mode": "frames",
+   "chars": [],
+   "full": "The street stays empty. Water drips from the barriers into the puddle and the reflections ripple; the CCTV camera on the corner turns slowly towards the lens and stops. Nothing else moves. Fixed camera, one continuous shot, sharp in every frame, no motion blur, normal speed. Sound: dripping water, a pigeon, a crowd gathering far away. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "s01d-side-door",
+   "plate": "s01d-side-door",
+   "mode": "frames",
+   "chars": [],
+   "full": "The heavy green side door swings slowly shut and closes; the spill of warm light narrows to a line and goes out. At the far end of the alley the crowd's backs sway. Fixed camera, one continuous shot, sharp in every frame, no motion blur, normal speed. Sound: a crowd roaring round the corner, muffled; the door's heavy clunk; rain dripping. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "pr-w-wide",
+   "plate": "pr-w-wide",
+   "mode": "frames",
+   "chars": [],
+   "full": "Both crowds surge at the barriers and shout at each other across the gap, arms pointing; the police line braces. Fixed camera, one continuous shot, sharp in every frame, no motion blur, normal speed. Sound: two crowds roaring, whistles, no words we can make out. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "pr-a-chant",
+   "plate": "pr-a-chant",
+   "mode": "frames",
+   "chars": [],
+   "full": "The woman and the people around her chant the same short sentence across the barrier together, twice, fists punching the air on every word. Fixed camera, one continuous shot, sharp in every frame, no motion blur, normal speed. Sound: an angry crowd chanting, rain. No music. Thanks."
+  },
+  {
+   "id": "pr-b-reply",
+   "plate": "pr-b-reply",
+   "mode": "frames",
+   "chars": [],
+   "full": "Barry and the people around him shout back across the barrier, one short sentence, Barry shaking the sign on the last word, the man beside him jabbing his finger. Fixed camera, one continuous shot, sharp in every frame, no motion blur, normal speed. Sound: an angry crowd shouting back, rain. No music. Thanks."
+  },
+  {
+   "id": "p01b-press",
+   "plate": "p01b-press",
+   "mode": "frames",
+   "chars": [],
+   "full": "The printing press runs steadily, the paper ribbon feeding through and new purple and red banknotes dropping one by one onto the stack. The men stay where they are; one lifts his glass and drinks. The bulb sways slightly. Fixed camera, one continuous shot, sharp in every frame, no motion blur, normal speed. Sound: the clank and hiss of the press, glasses clinking, low laughter with no words. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "p02b-ex",
+   "plate": "p02b-ex",
+   "mode": "ingredients",
+   "chars": [
+    "The Ex"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. The Ex, tapping the table, says, in a warm, unhurried, privately educated southern English accent: Problem is eyes. Two thousand people outside that bank tomorrow. Then he sits back. Fixed camera, one continuous shot. Sound: his voice, and the steady clank of a printing press in a brick room. No music. Thanks."
+  },
+  {
+   "id": "p03b-red",
+   "plate": "p03b-red",
+   "mode": "ingredients",
+   "chars": [
+    "Mr Red",
+    "Mr Blue"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Mr Red, raising his glass to Mr Blue, says, in an earnest north London English accent: Leave the people to us. Then they clink glasses. Fixed camera, one continuous shot. Sound: his voice, glasses clinking, a printing press clanking. No music. Thanks."
+  }
+ ]
+}

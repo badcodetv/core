@@ -7,6 +7,14 @@ curly-brace logo of 2026-09-13, which Kai found "very obvious and very cliché" 
 
 ![BadCode lock-up](./logo/badcode-lockup-reversed.svg)
 
+> **Open, 15 October 2026:** Kai wants the red circle swapped for a **red triangle** ("more
+> threatening"); the action is Jack's. The notes don't make clear whether that is this mark or the
+> balaclava presenter's eye. **Nothing here has changed yet.** See
+> [`docs/misc/2026-10-15-meeting.md`](../misc/2026-10-15-meeting.md).
+> **Potential triangle designs (Jack, 2026-10-15):** twelve concepts in six versions, none picked,
+> in [`design/research/2026-09-29-logo/triangle-round.md`](../../design/research/2026-09-29-logo/triangle-round.md)
+> (images in its `sketches/triangle/`).
+
 ## What it is
 
 **The icon:** a ring with one red dot inside it, off centre, glancing up and to the right. Kai: *"it

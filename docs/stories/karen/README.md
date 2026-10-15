@@ -36,6 +36,13 @@ complaining — and her "I want to speak to your manager" escalates from a Midto
 phone box to the President live on air, at the exact moment the AI fires him too.
 A hundred years later, there's a statue.
 
+> **Meeting of 15 October 2026 ([`docs/misc/2026-10-15-meeting.md`](../../misc/2026-10-15-meeting.md)):**
+> the fix goes in the **narration, not a re-edit**. The narrator (the AI from the future) speaks
+> straight to the viewer, aggressively: Karen lost her job to AI and complained, her friend stayed
+> in bed. **No stated moral.** It ends on a cliffhanger, "to be continued": the sacked President
+> rings Karen back, setting up Karen, the President and Tarquin together. Jack owns the new
+> narrator script. **Not yet applied to the canon below.**
+
 ## Canon
 
 - **[`story.md`](./story.md)** — the spine (key concept, background, devices, twist,
