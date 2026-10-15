@@ -24,15 +24,18 @@ and is sizing you up — with an edge to it. It is also **the red-triangle eyepa
 balaclava host of Money For Something (Kai, 2026-10-15), so the logo and BadCode-in-person are one sign.
 
 **The name:** `badcode` in round lowercase, drawn from circles and straight stems (no font), where
-**the o is a solid red dot** — the same red as the triangle.
+**the o is the icon itself**: a ring at the letters' line weight with the red triangle inside it. Kai,
+2026-10-15: a bare triangle as the o "reads as an A" (*badcade*), so "we just use the circle with the
+triangle inside it". It replaced the solid red dot o the same day.
 
 ## The rules
 
 - **The triangle is never dead centre.** Off centre, it is a glance.
-- **The icon and the name stand apart.** The name's o stays a plain solid red dot. (The bench can
-  draw the o as a ring-with-triangle; that is not the logo. The ring-in-the-word idea is close to
-  Badoo's 2006–17 logo, which is why the dot logo banned it.)
-- **Red is only ever the triangle and the o.** One small red thing per mark; never a red field.
+- **The o is always the ring with the triangle**, never a bare triangle (it reads as an a) and no
+  longer a solid dot. Noted, not ruled: the dot logo banned a ring-in-the-word o because
+  ring-with-a-*dot* is close to Badoo's 2006–17 logo; a triangle is a different mark, but it's worth
+  a look in the trade-mark search below.
+- **Red is only ever the triangle**, in the icon and in the o. One small red thing per mark; never a red field.
 - **Below 48px use the favicon files** — they carry a heavier line floor and a bigger triangle, or at
   16px it shrinks to a speck.
 
@@ -55,10 +58,11 @@ saves still load as the dot).
 | tAngle | `55°` | which way it sits, clockwise from 12 o'clock (about 2 o'clock) |
 | tRot | `55°` | which way it points, clockwise from 12 o'clock |
 | tRound | `0.55` | corner rounding, as a share of the most possible |
-| red | `#cc2b37` | the triangle, and the o |
+| red | `#cc2b37` | the triangle, in the icon and in the o |
 | lw | `0.30` | letter line weight, as a fraction of letter radius |
 | tr | `0.26` | letter spacing, as a fraction of letter radius |
-| ck | `0.35` | the c pulled toward the red o (was 0.42 on the dot logo) |
+| ck | `0.35` | the c pulled toward the o (was 0.42 on the dot logo) |
+| the o | ring + triangle | the icon at the letters' line weight; the bench's "Ring + red triangle" o style |
 
 Ink is `#0a0a0a` on light grounds and cold off-white `#eef3f6` on dark; the ground is `#050607`.
 The red never changes with the ground.
