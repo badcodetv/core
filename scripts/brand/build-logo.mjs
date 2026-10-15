@@ -11,6 +11,8 @@ const OUT = join(root, 'docs/brand/logo')
 mkdirSync(OUT, { recursive: true })
 
 // Bench save b0dhojp15efdyw7rboj6, 2026-10-15 14:06 — Kai: "record this as the canonical logo".
+// The name's o is the icon (ring + triangle), the bench's "Ring + red triangle" o — Kai, 2026-10-15: a bare
+// triangle "reads as an A" (badcade), a solid dot is superseded.
 // The ring-with-dot it replaced is in docs/brand/archive/2026-09-29-dot/ (generator: archive/build-logo-dot.mjs).
 const SET = {
   ring: 0.08,    // ring line thickness, as a fraction of the ring's radius
@@ -38,8 +40,8 @@ function triPath(x, y, r, rc, rot) {
   return d + 'Z'
 }
 // minSize: the small-size floor — the triangle's corner reach never drops below 2 x minSize.
-function icon(cx, cy, R, ink, minW = 0, minSize = 0) {
-  const w = Math.max(SET.ring * R, minW), r = SET.tSize * R, rc = SET.tRound * r / 2
+function icon(cx, cy, R, ink, minW = 0, minSize = 0, ring = SET.ring) {
+  const w = Math.max(ring * R, minW), r = SET.tSize * R, rc = SET.tRound * r / 2
   const room = Math.max(0, R - w / 2 - (r - rc) - R * 0.02), d = SET.tPush * room, a = SET.tAngle * Math.PI / 180
   const rr = Math.max(r, minSize * 2), k = rr / r
   return `<circle cx="${f(cx)}" cy="${f(cy)}" r="${f(R - w / 2)}" fill="none" stroke="${ink}" stroke-width="${f(w)}"/>` +
@@ -59,7 +61,8 @@ function word(x0, base, r, ink) {
     if (ch === 'd') L.push(ring(cx), stem(cx + r, top, base + w / 2))
     if (ch === 'c') L.push(arc(cx, 42, -42))
     if (ch === 'e') L.push(arc(cx, 38, 0), `<line x1="${f(cx - r)}" y1="${f(cy)}" x2="${f(cx + r + w / 2)}" y2="${f(cy)}"/>`)
-    if (ch === 'o') o = `<circle cx="${f(cx)}" cy="${f(cy)}" r="${f(r + w / 2)}" fill="${SET.red}"/>`
+    // the o is the icon itself: the ring drawn at the letters' line weight, the red triangle inside (Kai, 2026-10-15)
+    if (ch === 'o') { const Ro = r + w / 2; o = icon(cx, cy, Ro, ink, 0, 0, w / Ro) }
   })
   const svg = `<g fill="none" stroke="${ink}" stroke-width="${f(w)}">${L.join('')}</g>${o}`
   return { svg, box: [x0, top, x0 + 7 * step - r * SET.tr - k, base + w / 2] }
