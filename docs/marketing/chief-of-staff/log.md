@@ -3,6 +3,17 @@
 Every ruling and every weekly review, newest first. One entry per event, a few lines each.
 Format: `## YYYY-MM-DD — what` then who said what, in their words where possible.
 
+## 2026-10-15 — Kai: Money For Something is a scratch pad; balaclava host; triangle logo to try
+
+Kai (with Jack): voice models "are not good", so as much as possible "rely on text to speech models
+outside of video models", using the narration approach. Money For Something leans into the logo: "a
+guy in a white balaclava with the red triangle eyepatch, so the point is you don't see his mouth move",
+narrated "as the voice of bad code". "Please treat money for something just as a scratch pad, like a
+conceptual idea right now ... we would come up with content as we go." The line-by-line rulings
+(living people, real footage, the three lines) wait until there is an episode. Also: try the logo
+mark as a red triangle inside the white circle (logo bench reworked; not ruled). New decision opened:
+what goes out in weeks 1 to 3.
+
 ## 2026-10-15 — Kai: marketing is a human job; Bob shared memory parked
 
 Kai: Bob was meant to run marketing "automatically in the background", but "it's going to require

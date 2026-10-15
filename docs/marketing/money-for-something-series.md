@@ -3,6 +3,12 @@
 **Status: plan, 12 October 2026, for Jack. Not ruled. Kai has not seen it. Nothing is posted until he has.**
 Jack, 12 October: "Make it a series: we should do this and make a plan"; "Join it to the music: great ideas".
 
+> 🔑 **15 October 2026, Kai (with Jack): this whole file is a scratch pad, a concept, until there's a
+> pipeline.** The host is BadCode personified: **a man in a white balaclava with the red-triangle
+> eyepatch** (the logo's mark). You never see his mouth move, so the audio is **text-to-speech
+> narration, made outside the video model**, as the voice of BadCode. Content comes as we go. See
+> [`chief-of-staff/log.md`](chief-of-staff/log.md).
+
 Marks: **(primary)** the page itself was read · **(read)** secondary reporting · **(unverified)** weak or my own reading.
 Companion files: [growth list](money-for-something-growth.md) · [reach plan](money-for-something-reach.md) ·
 [profit](profit.md) · production: [`money-for-something-topical-production.md`](../stories/magic-money-tree/money-for-something-topical-production.md).

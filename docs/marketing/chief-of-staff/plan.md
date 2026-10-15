@@ -66,7 +66,7 @@ Two lanes to start, and two more that **earn** their way in. Kai asked for more 
 
 | Lane | What | How often | Source |
 | --- | --- | --- | --- |
-| **A. Money For Something** | the weekly topical monologue: the man who has already seen it, three minutes or under, out within a day of the news; plus 2 to 3 shorts cut from it | weekly, midweek | [`../money-for-something-series.md`](../money-for-something-series.md) |
+| **A. Money For Something** | ⚠ **a scratch pad as of 15 Oct** (Kai): the pipeline comes first — a man in a white balaclava with the red-triangle eyepatch, mouth never seen, narrated by text-to-speech as the voice of BadCode. Then: the weekly topical monologue: the man who has already seen it, three minutes or under, out within a day of the news; plus 2 to 3 shorts cut from it | weekly, midweek | [`../money-for-something-series.md`](../money-for-something-series.md) |
 | **B. The back catalogue** | the finished films sliced into short serials with a series name, hook text and an end card: Camping first, then Karen once its beneficiary problem is fixed | 2 a week | [`../shorts-karen-camping.md`](../shorts-karen-camping.md), [`../shorts-factory.md`](../shorts-factory.md) |
 
 Lane A builds the habit and rides the news. Lane B costs almost nothing (the work is made) and

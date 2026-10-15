@@ -9,16 +9,13 @@ Rules: at most three decisions open at a time, ranked by deadline. Everything el
 
 ## 🔴 Decisions — answer these three
 
-1. **Jack: do you accept the 90-day plan?** (Kai said yes on 14 October.) ([`plan.md`](./plan.md)) — one goal (publish weekly for 12
-   weeks and start a mailing list), two lanes, four channels. Jack: say yes, or name the part to change.
-   *Deadline: this week, because week 1 starts 19 October.*
-2. **Kai: the Money For Something rulings.** Naming living people; using real footage; and the three
-   lines (beat 6 clip 2, "rich nonces", "someone guillotine him"). Until then nothing in lane A can go
-   out. *Deadline: 16 October, so the October episode can go out in week 1 and the Budget special on
-   28 October is possible. The Budget beat is dead after the 28th.*
-3. **Who opens the accounts, and which handle.** Proposal: Jack opens YouTube, a Facebook Page,
-   TikTok, Instagram and a Kit or Substack list, all as `badcode` or one shared fallback.
-   *Deadline: 18 October.*
+1. **Kai: Money For Something isn't ready. What goes out in weeks 1 to 3?** Recommendation:
+   the Camping serial, two parts a week (finished, with sound), so the streak starts on 19 October.
+   Build the balaclava pipeline alongside, with a first episode in week 4 (9 Nov). Cost: the Budget
+   special (28 Oct) is dropped. *Deadline: 18 October.*
+2. **Jack: do you accept the 90-day plan?** (Kai said yes on 14 October.) ([`plan.md`](./plan.md))
+   *Deadline: 17 October.*
+3. **Who opens the accounts, and which handle.** Proposal: Jack, all as `badcode`. *Deadline: 18 October.*
 
 ## Waiting below the line (not asked yet)
 
@@ -38,11 +35,11 @@ Rules: at most three decisions open at a time, ranked by deadline. Everything el
 
 | Thing | Owner | State |
 | --- | --- | --- |
-| Rulings on Money For Something | Kai | ⬜ owed |
+| Money For Something pipeline (balaclava host, text-to-speech) | Both | ⬜ scratch pad |
 | Accounts opened | Jack (proposed) | ⬜ not started |
 | Camping serial parts 1 to 4 cut, checked with `scripts/delivery-qc.sh` | chief of staff + Jack | ⬜ not started |
 | Captions and first email drafted, gated | chief of staff | ⬜ not started |
-| Budget special skeleton | Kai + chief of staff | ⬜ not started |
+| Budget special skeleton | Kai + chief of staff | 🔴 blocked: likely dropped (decision 1) |
 
 ## The streak
 
