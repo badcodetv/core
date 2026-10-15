@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>BadCode Logo Bench</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -62,13 +63,18 @@ figcaption span { color: var(--mute); font-size: 12px }
 .tab.light { background: #f1f3f4; color: #202124 }
 .play { position: absolute; right: 10px; bottom: 10px }
 .art.rel { position: relative }
+.seg { display: flex; flex-wrap: wrap; border: 1px solid var(--line); width: fit-content; max-width: 100% }
+.seg button { background: transparent; color: var(--mute); padding: 7px 12px }
+.seg button[aria-pressed=true] { background: var(--ink); color: var(--plate) }
+#heroIcon { touch-action: none; cursor: grab }
+#heroIcon.dragging { cursor: grabbing }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important } }
 </style>
 
 <div class="wrap">
   <header>
     <h1>BadCode logo bench</h1>
-    <p>The Look (ring + glancing red dot) · round lowercase, the o is a full red dot · opens on your save (18:14) with the c pulled toward the o · tune it, then press Save</p>
+    <p>Trying a red triangle in the ring · the dot (The Look, ruled 2026-09-29) is one click away and every old save still loads as a dot · drag the big mark, tune it, then press Save</p>
   </header>
 
   <aside class="desk" aria-label="Controls">
@@ -78,6 +84,27 @@ figcaption span { color: var(--mute); font-size: 12px }
         <input id="ring" type="range" min="0.015" max="0.26" step="0.005" value="0.04"></div>
     </div>
     <div class="group">
+      <h2>The mark</h2>
+      <div class="seg" role="group" aria-label="Mark shape">
+        <button type="button" id="shapeTri" data-shape="triangle">Triangle</button><button type="button" id="shapeDot" data-shape="dot">Dot</button>
+      </div>
+      <p class="hint">Drag the big mark to move it. With the triangle, hold Shift while dragging to turn it.</p>
+    </div>
+    <div class="group" id="triGroup">
+      <h2>The triangle</h2>
+      <div class="ctl"><div class="top"><label for="tSize">Triangle size</label><output id="tSizeO"></output></div>
+        <input id="tSize" type="range" min="0.15" max="0.75" step="0.005" value="0.42"></div>
+      <div class="ctl"><div class="top"><label for="tPush">How far off centre</label><output id="tPushO"></output></div>
+        <input id="tPush" type="range" min="0" max="1" step="0.01" value="0.3"></div>
+      <div class="ctl"><div class="top"><label for="tAngle">Which way it sits</label><output id="tAngleO"></output></div>
+        <input id="tAngle" type="range" min="0" max="359" step="1" value="55"></div>
+      <div class="ctl"><div class="top"><label for="tRot">Where it points</label><output id="tRotO"></output></div>
+        <input id="tRot" type="range" min="0" max="359" step="1" value="55"></div>
+      <div class="ctl"><div class="top"><label for="tRound">Corner rounding</label><output id="tRoundO"></output></div>
+        <input id="tRound" type="range" min="0" max="0.9" step="0.01" value="0.12"></div>
+      <p class="hint">Size is the distance from the triangle's centre to a corner. Pointing it the same way it sits makes it glance; pointing it away makes it a play button.</p>
+    </div>
+    <div class="group" id="dotGroup">
       <h2>The dot</h2>
       <div class="ctl"><div class="top"><label for="dot">Dot size</label><output id="dotO"></output></div>
         <input id="dot" type="range" min="0.12" max="0.45" step="0.005" value="0.245"></div>
@@ -94,6 +121,9 @@ figcaption span { color: var(--mute); font-size: 12px }
     </div>
     <div class="group">
       <h2>The name</h2>
+      <div class="seg" role="group" aria-label="The red o">
+        <button type="button" data-ostyle="solid">Solid red o</button><button type="button" data-ostyle="ring">Ring + red triangle</button>
+      </div>
       <div class="ctl"><div class="top"><label for="lw">Letter weight</label><output id="lwO"></output></div>
         <input id="lw" type="range" min="0.2" max="0.6" step="0.01" value="0.30"></div>
       <div class="ctl"><div class="top"><label for="tr">Letter spacing</label><output id="trO"></output></div>
@@ -130,19 +160,47 @@ const REDS = [
   ['#cc2b37', 'Old logo red', 'The red from the current curly-bracket logo.'],
 ]
 // Starts on Kai's save of 2026-09-29 18:14 (ring 0.04, dot 0.245, push 0.51, 55°, old-logo red, lw 0.30, tr 0.26), plus ck: the c pulled toward the o
-const S = { ring: 0.04, dot: 0.245, push: 0.51, angle: 55, red: '#cc2b37', lw: 0.30, tr: 0.26, ck: 0.35 }
+// 2026-10-15: adds the triangle (shape, tSize, tPush, tAngle, tRot, tRound) and the o style (oStyle). New work opens on the triangle.
+const S = { shape: 'triangle', ring: 0.04, dot: 0.245, push: 0.51, angle: 55, tSize: 0.42, tPush: 0.3, tAngle: 55, tRot: 55, tRound: 0.12, red: '#cc2b37', lw: 0.30, tr: 0.26, ck: 0.35, oStyle: 'solid' }
 const START = { ...S }
+const NUM = ['ring', 'dot', 'push', 'angle', 'tSize', 'tPush', 'tAngle', 'tRot', 'tRound', 'lw', 'tr', 'ck']
+// A save written before a field existed gets the value that field had then: no shape = the dot, no o style = the solid o, no ck = 0.
+const LEGACY = { shape: 'dot', oStyle: 'solid', ck: 0 }
+const fromSave = v => { const o = {}; for (const k of Object.keys(START)) o[k] = v[k] !== undefined ? v[k] : (k in LEGACY ? LEGACY[k] : START[k]); return o }
 const $ = id => document.getElementById(id)
 
 // ---------- drawing
+const f2 = n => Math.round(n * 100) / 100
+// Triangle: r = centre-to-corner, rc = corner radius (tRound is a share of the largest possible, which is the inradius r/2)
+const triGeom = (R, o) => { const r = o.tSize * R; return { r, rc: o.tRound * r / 2 } }
+function triPath(x, y, r, rc, rot) {
+  const V = [0, 1, 2].map(k => { const a = (rot + k * 120) * Math.PI / 180; return [x + r * Math.sin(a), y - r * Math.cos(a)] })
+  if (rc <= 1e-6) return `M${V.map(p => p.map(f2).join(' ')).join('L')}Z`
+  const f = rc / r // corner cut along each edge = rc*sqrt(3), edge = r*sqrt(3)
+  const lerp = (A, B) => [A[0] + (B[0] - A[0]) * f, A[1] + (B[1] - A[1]) * f].map(f2).join(' ')
+  let d = ''
+  for (let k = 0; k < 3; k++) { const Vk = V[k], P = V[(k + 2) % 3], N = V[(k + 1) % 3]; d += `${k ? 'L' : 'M'}${lerp(Vk, P)}A${f2(rc)} ${f2(rc)} 0 0 1 ${lerp(Vk, N)}` }
+  return d + 'Z'
+}
+// Where the mark sits. Dot: unchanged from the ruled logo. Triangle: same rule, its reach is corner distance minus rounding.
+function markPos(cx, cy, R, w, o) {
+  if (o.shape === 'triangle') {
+    const { r, rc } = triGeom(R, o), room = Math.max(0, R - w / 2 - (r - rc) - R * 0.02), d = o.tPush * room, a = o.tAngle * Math.PI / 180
+    return { x: cx + d * Math.sin(a), y: cy - d * Math.cos(a), room }
+  }
+  const p = dotPos(cx, cy, R, w, o); return { x: p.x, y: p.y, room: Math.max(0, R - w / 2 - p.pr - R * 0.02) }
+}
+function markAt(x, y, R, o, minSize = 0) {
+  if (o.shape === 'triangle') { const { r, rc } = triGeom(R, o), rr = Math.max(r, minSize * 2), k = rr / r; return `<path d="${triPath(x, y, rr, rc * k, o.tRot)}" fill="${o.red}"/>` }
+  return `<circle cx="${x}" cy="${y}" r="${Math.max(o.dot * R, minSize)}" fill="${o.red}"/>`
+}
 function dotPos(cx, cy, R, w, o) {
   const pr = o.dot * R, room = Math.max(0, R - w / 2 - pr - R * 0.02), d = o.push * room, a = o.angle * Math.PI / 180
   return { x: cx + d * Math.sin(a), y: cy - d * Math.cos(a), pr }
 }
 function icon(cx, cy, R, o, ink = INK, minW = 0, minDot = 0) {
-  const w = Math.max(o.ring * R, minW), p = dotPos(cx, cy, R, w, o)
-  return `<circle cx="${cx}" cy="${cy}" r="${R - w / 2}" fill="none" stroke="${ink}" stroke-width="${w}"/>` +
-    `<circle cx="${p.x}" cy="${p.y}" r="${Math.max(p.pr, minDot)}" fill="${o.red}"/>`
+  const w = Math.max(o.ring * R, minW), p = markPos(cx, cy, R, w, o)
+  return `<circle cx="${cx}" cy="${cy}" r="${R - w / 2}" fill="none" stroke="${ink}" stroke-width="${w}"/>` + markAt(p.x, p.y, R, o, minDot)
 }
 // The name, drawn from circles and stems (no font). r = letter radius.
 function word(x0, base, r, o, ink = INK) {
@@ -157,7 +215,11 @@ function word(x0, base, r, o, ink = INK) {
     if (ch === 'd') L.push(ring(cx), stem(cx + r, top, base + w / 2))
     if (ch === 'c') L.push(arc(cx, 42, -42))
     if (ch === 'e') L.push(arc(cx, 38, 0), `<line x1="${cx - r}" y1="${cy}" x2="${cx + r + w / 2}" y2="${cy}" stroke="${ink}" stroke-width="${w}"/>`)
-    if (ch === 'o') L.push(`<circle cx="${cx}" cy="${cy}" r="${r + w / 2}" fill="${o.red}"/>`)
+    if (ch === 'o') {
+      const Ro = r + w / 2
+      L.push(o.oStyle === 'ring' ? icon(cx, cy, Ro, { ...o, shape: 'triangle', ring: w / Ro }, ink)
+        : `<circle cx="${cx}" cy="${cy}" r="${Ro}" fill="${o.red}"/>`)
+    }
   })
   return { svg: L.join(''), width: 7 * step - r * o.tr - k, height: base + w / 2 - top, top }
 }
@@ -182,11 +244,13 @@ const PROOFS = [
   ['App icon', 'Phone home screen.', o => svg(400, 300, `<rect x="130" y="80" width="140" height="140" rx="32" fill="#000" stroke="#2a3138"/>` + icon(200, 150, 48, o), '#1b1f24')],
   ['Sticker', 'White die-cut on a laptop lid.', o => svg(400, 300, `<rect width="400" height="300" fill="#202428"/><circle cx="200" cy="150" r="96" fill="#f4f4f1"/>` + icon(200, 150, 70, o, DARK))],
   ['Record sleeve', 'Big icon, small name, catalogue number.', o => svg(400, 300, `<rect x="90" y="20" width="260" height="260" fill="#000" stroke="#2a3138"/>` + icon(220, 132, 80, o) + `<g transform="translate(108 262)">${word(0, 0, 5.5, o).svg}</g><text x="334" y="262" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10" fill="#8a939b" letter-spacing="1.5">BC-004</text>`, '#15181b')],
-  ['Drawn badly', 'Marker-pen test: a circle and a blob.', o => { const p = dotPos(200, 150, 100, o.ring * 100, o), pts = []
+  ['Drawn badly', 'Marker-pen test: a circle and a blob.', o => { const p = dotPos(200, 150, 100, o.ring * 100, o), q = markPos(200, 150, 100, o.ring * 100, o), pts = []
       for (let i = 0; i <= 64; i++) { const a = (-80 + 376 * i / 64) * Math.PI / 180, rr = 100 + 5 * Math.sin(a * 3 + 1.7) + 3 * Math.sin(a * 7) + i / 64 * 6; pts.push(`${(200 + rr * Math.cos(a)).toFixed(1)} ${(150 + rr * Math.sin(a)).toFixed(1)}`) }
       const b = []; for (let i = 0; i < 24; i++) { const a = i / 24 * Math.PI * 2, rr = p.pr * (1 + .12 * Math.sin(a * 3 + 2)); b.push(`${(p.x + rr * Math.cos(a)).toFixed(1)} ${(p.y + rr * Math.sin(a)).toFixed(1)}`) }
-      return svg(400, 300, `<path d="M${pts.join(' L')}" fill="none" stroke="${INK}" stroke-width="${Math.max(o.ring * 100, 6)}" stroke-linecap="round" stroke-linejoin="round"/><path d="M${b.join(' L')}Z" fill="${o.red}"/>`, PLATE) }],
-  ['The ident · 2 seconds', 'Ring draws · dot lights dead centre on the drop · then it looks away. Press play.', o => svg(400, 300, `<g id="identG"></g>`, '#000'), true],
+      return svg(400, 300, `<path d="M${pts.join(' L')}" fill="none" stroke="${INK}" stroke-width="${Math.max(o.ring * 100, 6)}" stroke-linecap="round" stroke-linejoin="round"/>` + (o.shape === 'triangle'
+        ? `<path d="${triPath(q.x, q.y, triGeom(100, o).r, Math.max(triGeom(100, o).rc, 4), o.tRot + 4)}" fill="${o.red}" stroke="${o.red}" stroke-width="4" stroke-linejoin="round"/>`
+        : `<path d="M${b.join(' L')}Z" fill="${o.red}"/>`), PLATE) }],
+  ['The ident · 2 seconds', 'Ring draws · the mark lights dead centre on the drop · then it looks away. Press play.', o => svg(400, 300, `<g id="identG"></g>`, '#000'), true],
 ]
 
 function render() {
@@ -205,6 +269,14 @@ function render() {
   $('dotO').textContent = Math.round(o.dot * 100) + '% of radius'
   $('pushO').textContent = o.push >= 0.99 ? 'touching the rim' : Math.round(o.push * 100) + '%'
   $('angleO').textContent = clock(o.angle)
+  $('tSizeO').textContent = Math.round(o.tSize * 100) + '% of radius'
+  $('tPushO').textContent = o.tPush <= 0.005 ? 'dead centre' : o.tPush >= 0.99 ? 'touching the rim' : Math.round(o.tPush * 100) + '%'
+  $('tAngleO').textContent = clock(o.tAngle)
+  $('tRotO').textContent = clock(o.tRot)
+  $('tRoundO').textContent = o.tRound <= 0.005 ? 'sharp' : Math.round(o.tRound * 100) + '%'
+  $('triGroup').hidden = o.shape !== 'triangle'; $('dotGroup').hidden = o.shape !== 'dot'
+  document.querySelectorAll('[data-shape]').forEach(b => b.setAttribute('aria-pressed', b.dataset.shape === o.shape))
+  document.querySelectorAll('[data-ostyle]').forEach(b => b.setAttribute('aria-pressed', b.dataset.ostyle === o.oStyle))
   $('lwO').textContent = Math.round(o.lw * 100) + '%'
   $('trO').textContent = Math.round(o.tr * 100) + '%'
   $('ckO').textContent = o.ck ? '−' + Math.round(o.ck * 100) + '%' : 'none'
@@ -220,9 +292,9 @@ function drawIdent(t) {
   const o = S, R = 100, cx = 200, cy = 150, w = o.ring * R, C = 2 * Math.PI * (R - w / 2)
   const ringP = Math.min(1, t / 0.35), lit = t >= 0.5, look = t <= 0.72 ? 0 : Math.min(1, (t - 0.72) / 0.12)
   const ease = look < .5 ? 2 * look * look : 1 - Math.pow(-2 * look + 2, 2) / 2
-  const p = dotPos(cx, cy, R, w, o), x = cx + (p.x - cx) * ease, y = cy + (p.y - cy) * ease
+  const p = markPos(cx, cy, R, w, o), x = cx + (p.x - cx) * ease, y = cy + (p.y - cy) * ease
   g.innerHTML = `<circle cx="${cx}" cy="${cy}" r="${R - w / 2}" fill="none" stroke="${INK}" stroke-width="${w}" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - ringP)}" transform="rotate(-90 ${cx} ${cy})"/>` +
-    (lit ? `<circle cx="${x}" cy="${y}" r="${p.pr}" fill="${o.red}"/>` : '')
+    (lit ? markAt(x, y, R, o) : '')
 }
 function playIdent() {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) { drawIdent(1); return }
@@ -233,8 +305,32 @@ function playIdent() {
 
 // ---------- controls
 REDS.forEach(([c, n]) => { const b = document.createElement('button'); b.className = 'sw'; b.type = 'button'; b.dataset.c = c; b.style.background = c; b.setAttribute('aria-label', n + ' ' + c); b.onclick = () => { S.red = c; render() }; $('reds').append(b) })
-for (const k of ['ring', 'dot', 'push', 'angle', 'lw', 'tr', 'ck']) $(k).addEventListener('input', e => { S[k] = +e.target.value; render() })
-const syncInputs = () => { for (const k of ['ring', 'dot', 'push', 'angle', 'lw', 'tr', 'ck']) $(k).value = S[k] }
+for (const k of NUM) $(k).addEventListener('input', e => { S[k] = +e.target.value; render() })
+const syncInputs = () => { for (const k of NUM) $(k).value = S[k] }
+document.querySelectorAll('[data-shape]').forEach(b => b.onclick = () => { S.shape = b.dataset.shape; render() })
+document.querySelectorAll('[data-ostyle]').forEach(b => b.onclick = () => { S.oStyle = b.dataset.ostyle; render() })
+
+// ---------- drag the big mark (hero is drawn at viewBox 400, centre 200, R 180)
+;(() => {
+  const el = $('heroIcon'); let drag = false
+  const at = e => { const b = el.getBoundingClientRect(); return [(e.clientX - b.left) / b.width * 400, (e.clientY - b.top) / b.height * 400] }
+  const deg = (dx, dy) => (Math.round(Math.atan2(dx, -dy) * 180 / Math.PI) + 360) % 360
+  const move = e => {
+    const [x, y] = at(e), R = 180, w = S.ring * R
+    if (S.shape === 'triangle' && e.shiftKey) { const p = markPos(200, 200, R, w, S); S.tRot = deg(x - p.x, y - p.y) }
+    else {
+      const dx = x - 200, dy = y - 200, dist = Math.hypot(dx, dy), room = markPos(200, 200, R, w, S).room || 1
+      const pushKey = S.shape === 'triangle' ? 'tPush' : 'push', min = +$(pushKey).min
+      S[pushKey] = Math.round(Math.min(1, Math.max(min, dist / room)) * 100) / 100
+      if (dist > 2) S[S.shape === 'triangle' ? 'tAngle' : 'angle'] = deg(dx, dy)
+    }
+    syncInputs(); render()
+  }
+  el.addEventListener('pointerdown', e => { drag = true; el.classList.add('dragging'); el.setPointerCapture(e.pointerId); move(e) })
+  el.addEventListener('pointermove', e => { if (drag) move(e) })
+  const end = () => { drag = false; el.classList.remove('dragging') }
+  el.addEventListener('pointerup', end); el.addEventListener('pointercancel', end)
+})()
 $('reset').onclick = () => { Object.assign(S, START); syncInputs(); render() }
 render()
 
@@ -255,11 +351,14 @@ function listSaves(snap) {
   snap.docs.forEach((d, i) => {
     const v = d.data(); if (!v) return
     const li = document.createElement('li')
-    li.innerHTML = `${badge(34, { ...START, ...v }, '#000', INK)}<div><div></div><div class="n"></div></div>`
+    const o = fromSave(v)
+    li.innerHTML = `${badge(34, o, '#000', INK)}<div><div></div><div class="n"></div></div>`
     li.querySelector('div > div').textContent = v.note || 'Saved version ' + (snap.size - i)
-    li.querySelector('.n').textContent = `ring ${Math.round(v.ring * 1000) / 10}% · dot ${Math.round(v.dot * 100)}% · ${clock(v.angle)}`
+    li.querySelector('.n').textContent = o.shape === 'triangle'
+      ? `triangle · ring ${Math.round(o.ring * 1000) / 10}% · size ${Math.round(o.tSize * 100)}% · ${clock(o.tAngle)} · round ${Math.round(o.tRound * 100)}%`
+      : `ring ${Math.round(o.ring * 1000) / 10}% · dot ${Math.round(o.dot * 100)}% · ${clock(o.angle)}`
     const b = document.createElement('button'); b.type = 'button'; b.className = 'ghost'; b.textContent = 'Load'
-    b.onclick = () => { for (const k of Object.keys(START)) S[k] = v[k] !== undefined ? v[k] : (k === 'ck' ? 0 : START[k]); syncInputs(); render(); status('Loaded.') }
+    b.onclick = () => { Object.assign(S, fromSave(v)); syncInputs(); render(); status('Loaded.') }
     li.append(b); ul.append(li)
   })
 }
@@ -269,3 +368,5 @@ function listSaves(snap) {
   db.collection('saves').orderBy('savedAt', 'desc').onSnapshot(listSaves, () => status('Saved versions couldn\'t load.'))
 })()
 </script>
+
+</body></html>
