@@ -2630,3 +2630,19 @@ misrepresent current events." The third try passed, and the clip that came back 
 start image that looks like a real broadcast about a real event trips the current-events filter. For a fake news
 shot, ask for no on-screen graphics in the still and add the strap afterwards in ffmpeg.
 Also seen the same day: "VIDEO_OPTION_UNAVAILABLE: Frames/Ingredients on Omni 1.1 Flash" once each; both passed on the retry.
+
+## 2026-10-15: The Bank Robbery short, 24 clips `[observed]`
+
+- **About a minute each, 23 of 24 first time.** One talking clip (Denise, "It's not the boats, Barry. It's the
+  landlord…") failed as "Generation timed out" and then **succeeded on a plain retry** with the same prompt, so that
+  one was not a policy block.
+- **Omni added a line from a neighbouring clip.** Denise's "Bloody landlord." was made from the same still as her
+  "Your daughter's right. She still lives with you.", and it came back as "Bloody landlord. … She still lives with
+  you." Cut at the word in the edit. Same still, same Character, different prompts: watch for it whenever one
+  still carries several lines.
+- **Whisper puts a talk clip's first word at 0.0 s and stretches it** (e.g. "900" 0.00–2.12 s). Cutting to the
+  word times then leaves dead air before the line, or, if you trust a short guess, clips the first syllable
+  ("Twenty p" became "…ee p"). What worked: when a first word is longer than 0.8 s, take it as starting 0.8 s
+  before its end (`scripts/bank-robbery/build-short.py`, `talk()`).
+- **"Get off our streets, you fucking Nazi bastards!" through a megaphone was made first time,** in Ingredients
+  with the speaker's Character. No refusal for the swearing.

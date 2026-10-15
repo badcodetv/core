@@ -1,0 +1,171 @@
+{
+ "pre": "",
+ "shots": [
+  {
+   "id": "d01-dunkirk",
+   "cast": [],
+   "refs": [],
+   "full": "A 1940 war photograph at Dunkirk, taken from the waterline. The camera sits half a metre above grey-green surf, water droplets on the lens. Foreground, sharp: a young British soldier in soaked khaki battledress and a dented steel helmet drags an exhausted mate by the webbing towards us through waist-deep water, face screwed up with effort, mouth open, shouting. Midground: lines of soldiers wading out to a small wooden fishing boat with a rust-red sail. Background: a long beach under black oil smoke, a burning ship, a dive bomber dropping out of a white sky. Look: bleach-bypass colour, drained except the khaki, the rust sail and an orange fire glow; hard film grain, every droplet and grain of sand sharp. Nobody is wounded. 16:9. Thanks."
+  },
+  {
+   "id": "d02-painting",
+   "cast": [],
+   "refs": [
+    "brs-d01-dunkirk"
+   ],
+   "full": "The scene in the reference image repainted as an old oil painting: the same composition, the same soldier, boat, smoke and sky, in thick visible brushstrokes, canvas weave showing through, cracked yellowed varnish, a little amateurish, the kind of painting bought at a car boot sale. Colours: khaki, rust red, the orange glow and a smoky grey-blue sky, all warmed by old varnish. The painted canvas fills the whole frame edge to edge, seen flat on, no frame, no wall. 16:9. Thanks."
+  },
+  {
+   "id": "c01-cafe-wide",
+   "cast": [
+    "Barry",
+    "Denise"
+   ],
+   "refs": [
+    "brs-d02-painting",
+    "brs-barry-portrait"
+   ],
+   "full": "Inside a small English greasy-spoon caf\u00e9 on a wet morning. Barry sits at a red formica table with a full English breakfast, looking up mid-sentence; Denise stands beside his table holding a dishcloth, mid-reply. On the wall directly above them hangs the painting from the reference image in a cheap chipped gilt frame, large and clearly visible. Camera low on the next table top, a red plastic sauce bottle out of focus in the left foreground. Mint-green wall tiles below the painting, a steamed-up window on the right. Light: cold blue daylight through the window, a warm yellow strip light overhead. No flags, no bunting, no text. Unretouched 35mm film still, rich saturated colour, fine grain. Barry is dressed exactly as in his portrait reference. 16:9. Thanks."
+  },
+  {
+   "id": "c02-barry",
+   "cast": [
+    "Barry"
+   ],
+   "refs": [
+    "brs-barry-portrait"
+   ],
+   "full": "Close shot. Barry sits at a red formica caf\u00e9 table, chest-up, holding a phone low in one hand, looking up from it across the table, brows raised, mouth slightly open as if about to speak. A plate of fried breakfast and a mug of tea in front of him. Behind him, soft, the bottom edge of a gilt picture frame and mint-green tiles. Camera at table height across the table, the rim of a tea mug out of focus in the near foreground. Light: cold blue daylight from a window on the left, a warm yellow strip light overhead. No text. Unretouched 35mm film still, rich saturated colour, fine grain. Barry is dressed exactly as in his portrait reference. 16:9. Thanks."
+  },
+  {
+   "id": "c03-denise",
+   "cast": [
+    "Denise"
+   ],
+   "refs": [],
+   "full": "Denise stands behind the counter of a small English greasy-spoon caf\u00e9, chest-up, a cloth already pressed flat on the counter under her hand, looking across at someone off to the right, flat unimpressed face. Foreground: a chrome tea urn out of focus on the left, its tap catching the light. Behind her: shelves of mugs, mint-green tiles, a menu board too far and soft to read, a strip of steamed window. Camera low, at counter height. Light: warm yellow strip light overhead, cold blue window light from the right. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "c04-fredo10",
+   "cast": [
+    "Barry"
+   ],
+   "refs": [
+    "brs-barry-portrait"
+   ],
+   "full": "Close on the end of a caf\u00e9 counter beside an old till: a glass jar full of small purple-wrapped chocolate bars, a handwritten card taped to the jar reading \"FREDOS 10p\" in thick black marker, large and clear. Barry leans in on the right, his hand already in the jar, eyes on the card, half a smile. Camera at counter height, close to the jar. Light: warm yellow strip light overhead, cold blue window light behind. Unretouched 35mm film still, rich saturated colour, fine grain. Barry is dressed exactly as in his portrait reference. 16:9. Thanks."
+  },
+  {
+   "id": "c05-window-bank",
+   "cast": [],
+   "refs": [],
+   "full": "From inside a small greasy-spoon caf\u00e9, looking out through its big steamed-up front window, rain running down the glass. Across a wet road: the columned stone front of a grand old bank, lit up, with two police officers setting out steel crowd barriers on the pavement. Foreground: the backs of two chairs and the edge of a red formica table, out of focus. Light: cold blue morning outside, a warm yellow strip light inside reflected in the glass. No readable text. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "p01-press",
+   "cast": [
+    "The Ex",
+    "The Governor",
+    "The Donor",
+    "Mr Blue",
+    "Mr Red"
+   ],
+   "refs": [],
+   "full": "A back room with bare brick walls. An old cast-iron printing press runs in the middle, a ribbon of paper already feeding through it, sheets of new banknotes stacking up in its tray. Around a bare table beside it the five men from the character references, no masks, relaxed: one pours whisky, two clink glasses, one leans on the press. Camera low on the floor in the corner, the press's iron wheel huge and out of focus in the right foreground. Light: one warm bare bulb overhead, and a green glow from a fire-exit sign. Colours: oxblood brick, brass, green, pink and blue banknotes, no readable note faces. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "p02-ex",
+   "cast": [
+    "The Ex"
+   ],
+   "refs": [],
+   "full": "Close shot. The Ex sits at a bare table in a brick back room, chest-up, tapping the table with one finger, looking left at someone off frame, a calm small smile. Behind him, soft: an old printing press running, sheets of new banknotes stacking in its tray. Foreground: a whisky glass out of focus. Camera at table height. Light: one warm bare bulb overhead, a green fire-exit glow on the brick behind. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "p03-red",
+   "cast": [
+    "Mr Red",
+    "Mr Blue"
+   ],
+   "refs": [],
+   "full": "Mr Red on the left and Mr Blue on the right sit side by side at a bare table in a brick back room, chest-up, lifting whisky glasses towards each other in a toast, both grinning like old friends; Mr Red talks to someone across the table. Behind them, soft: an old printing press and stacks of new banknotes. Camera at table height across the table, a bottle out of focus in the foreground. Light: one warm bare bulb overhead, a green fire-exit glow behind. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "p04-donor",
+   "cast": [
+    "The Donor"
+   ],
+   "refs": [],
+   "full": "Close shot. The Donor sits back in a chair at a bare table in a brick back room, chest-up, a cigar between his fingers, one eyebrow raised, asking a question of someone off frame. Behind him, soft: an old printing press running, sheets of new banknotes stacking. Camera low, at table height, the neck of a whisky bottle out of focus in the foreground. Light: one warm bare bulb overhead, a green fire-exit glow on the brick behind. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "r01-barry-sign",
+   "cast": [
+    "Barry"
+   ],
+   "refs": [
+    "br5-riot-look",
+    "brs-barry-portrait"
+   ],
+   "full": "Same street and light as the reference image. Barry stands in the crowd behind a steel barrier, chest-up, holding up a cardboard sign in both hands that reads WE CAN'T AFFORD TO LIVE HERE in thick black marker, shouting. Around him, soft, ordinary people in wet coats and blue scarves. Camera low in the gap between the barriers, looking up, the frame tilted. A flare burns on the cobbles at the near edge, pouring pink smoke. Dusk on 35mm colour film, slightly grainy, rich saturated colour: deep blue sky, hot pink flare light, amber street lamps. Wet cobbles. Unretouched. Barry is dressed exactly as in his portrait reference. 16:9. Thanks."
+  },
+  {
+   "id": "r01b-woman-sign",
+   "cast": [],
+   "refs": [
+    "br5-riot-look"
+   ],
+   "full": "Same street and light as the reference image. Across a steel barrier, chest-up, a tired woman of fifty in a red scarf and a quilted coat holds up a cardboard sign in both hands that reads WE CAN'T AFFORD TO LIVE HERE in thick black marker, shouting. Ordinary English people from one town around her in wet coats and red scarves, soft. Camera low in the gap between the barriers, looking up, the frame tilted the other way. A flare on the cobbles pours pink smoke. Dusk on 35mm colour film, slightly grainy, rich saturated colour: deep blue sky, hot pink flare light, amber street lamps. Wet cobbles. Unretouched. 16:9. Thanks."
+  },
+  {
+   "id": "r02-red-megaphone",
+   "cast": [
+    "Mr Red"
+   ],
+   "refs": [
+    "br5-riot-look"
+   ],
+   "full": "Same street and light as the reference image. Mr Red stands on an upturned blue crate above the crowd, seen from low, chest-up, shouting into a white megaphone held to his mouth, his other arm thrust out, finger pointing down past the lens, face twisted with fury. Behind him a red flag and pink smoke against the deep blue sky. Camera low in the crowd looking up, the out-of-focus shoulder of an orange hi-vis jacket in the lower right foreground. Dusk on 35mm colour film, slightly grainy, rich saturated colour: deep blue sky, hot pink flare light, amber street lamps. Wet cobbles. Unretouched. 16:9. Thanks."
+  },
+  {
+   "id": "r04-denise-window",
+   "cast": [
+    "Denise"
+   ],
+   "refs": [],
+   "full": "Looking in from the wet street through the rain-streaked front window of a small greasy-spoon caf\u00e9 at dusk. Inside, Denise stands at the window, chest-up, drying a mug with a tea towel, looking out past the camera at something across the road, face still and tired. Reflected on the glass over her: pink flare smoke, red and blue flags, the glow of a crowd. Light: warm yellow strip light inside behind her, hot pink and deep blue reflections on the glass. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "e01-estate",
+   "cast": [],
+   "refs": [],
+   "full": "An estate agent's shop window on a wet English high street at night, seen straight on from the pavement, filling the frame. Six property cards in two rows of three, each a colour photo of an ordinary red-brick terraced house with a blank white strip beneath it where the price goes, large and empty. Rain on the glass, a red and white awning edge at the top. Light: cold white light inside the window, an amber street lamp reflected in the glass. No readable text. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "e02-donor-keys",
+   "cast": [
+    "The Donor"
+   ],
+   "refs": [],
+   "full": "The Donor stands outside an estate agent's on a wet high street at night, chest-up, holding a huge bunch of brass house keys on a ring up at face height, a smug closed-mouth smile at the camera. Behind him, soft, the lit window full of property cards. Camera low on the kerb looking up. Light: cold white shop-window light on one side of his face, an amber street lamp on the other. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "f02-fredo20",
+   "cast": [
+    "Barry"
+   ],
+   "refs": [
+    "brs-barry-portrait"
+   ],
+   "full": "Close on the end of a caf\u00e9 counter beside an old till: a glass jar of small purple-wrapped chocolate bars, a new handwritten card taped to the jar reading \"FREDOS 20p\" in thick black marker, large and clear. Barry leans in on the right holding one bar up, staring at the card, brows up, mouth open in disbelief. Camera at counter height, close to the jar. Light: warm yellow strip light overhead, cold blue window light behind. Unretouched 35mm film still, rich saturated colour, fine grain. Barry is dressed exactly as in his portrait reference. 16:9. Thanks."
+  },
+  {
+   "id": "s01-sink",
+   "cast": [
+    "Denise"
+   ],
+   "refs": [],
+   "full": "Night, the back of a small caf\u00e9 kitchen. Camera close behind Denise's shoulder, her head soft and dark in the left of the frame, looking past her at a letter propped against the white tiles above a steel sink full of soapy plates. The letter fills the right half of the frame, large and sharp: a printed heading NOTICE OF RENT INCREASE and below it, circled in red biro, \u00a32,400 a month. Her hands are already in the water. Steam. Light: one warm bulb above the sink, cold blue street light through a small window. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  }
+ ]
+}

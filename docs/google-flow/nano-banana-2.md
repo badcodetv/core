@@ -2287,3 +2287,21 @@ Nano Banana 2 in Flow, one candidate each.
   length ("no masthead, no title, no logo, no headline and no photograph"), with the papers seen from behind and
   out of focus, gave none on the second try. A front page made **as its own flat image with the paper's name
   quoted** ("THE DAILY TRUMPET") spelt every word right first time, twice.
+
+## 2026-10-15: a Character binds the face, not the costume; and short text holds (The Bank Robbery short) `[observed, n=2 and n=4]`
+
+- **The costume did not come with the Character.** Barry (`491aad1f`, Portrait and Body both in an orange hi-vis
+  jacket) was cast by "@" into a café still with no word about clothes, per the never-describe rule. **Two takes,
+  both in a dark jacket**, face right. Third take: the same prompt plus his **uploaded portrait attached as a
+  reference image** and the line "Barry is dressed exactly as in his portrait reference" (no garment named):
+  hi-vis. Every later still with Barry used both and kept the hi-vis (five of five). Not tested: whether the
+  Character's info note would do it, because the MCP cannot write that note on the rebuilt Flow.
+- **Short quoted text came back readable four times in four**, at large size: "FREDOS 10p", "FREDO'S 20p" (an
+  apostrophe crept in), WE CAN'T AFFORD TO LIVE HERE on two cardboard signs, and NOTICE OF RENT INCREASE with
+  "£2,400 a month" circled. The letter's small print is gibberish, as expected. "Blank white strips where the
+  price goes" was **not** obeyed (the cards came back with plain white margins), so the prices went on in ffmpeg.
+- **Restyle to a painting holds the composition exactly** when the accepted still is the only reference ("the
+  scene in the reference image repainted as an old oil painting … fills the frame edge to edge, flat on, no frame,
+  no wall"). And that painting, attached to the next still as "the painting from the reference image in a cheap
+  chipped gilt frame", came back on the café wall recognisably the same picture, cropped a little.
+Record: `docs/stories/bank-robbery/short-shots.md`.

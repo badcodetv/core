@@ -17,6 +17,8 @@ night before, the chaos, the woman who works in the bank).
 
 | File | What |
 | --- | --- |
+| [`short.md`](./short.md) | **The short (15 October 2026).** The agreed script, from the 14 October meeting: Dunkirk to a painting on the café wall, Barry and Denise on rent, money in, the Fredo, Denise at the sink |
+| [`short-shots.md`](./short-shots.md) | **The short as made:** Barry's Character, the 19 stills, 24 clips, narrator, and the cut 1 ledger (1:53, Premiere `bank robbery short - cut 1`) |
 | [`story.md`](./story.md) | The spine: what was asked for, the one idea, the twist, the beats, the rules, what we may and may not say, and nine open calls |
 | [`storyboard.md`](./storyboard.md) | Fourteen scenes, each with what we see, what we hear, the laugh, and what is still to decide |
 | [`characters/the-crew.md`](./characters/the-crew.md) | The eleven, their heist jobs, and the table that keeps left and right mocked equally |

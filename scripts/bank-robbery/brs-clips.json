@@ -1,0 +1,201 @@
+{
+ "clips": [
+  {
+   "id": "d01-dunkirk",
+   "plate": "d01-dunkirk",
+   "mode": "frames",
+   "chars": [],
+   "full": "The soldier hauls his mate forward through the surf towards the camera, both stumbling as a wave breaks round their legs. Behind them the line of soldiers keeps wading to the boat, black smoke rolls, and the dive bomber banks away. Fixed camera, one continuous shot, sharp in every frame, no motion blur, normal speed. Sound: surf, distant gunfire, a dive bomber's scream, men shouting with no words that can be made out. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "c01-cafe-wide",
+   "plate": "c01-cafe-wide",
+   "mode": "frames",
+   "chars": [],
+   "full": "Barry cuts a sausage and shakes his head; Denise folds the cloth over her hand and glances at the window. The painting stays still on the wall. Fixed camera, one continuous shot, sharp in every frame, no motion blur, normal speed. Sound: caf\u00e9 clatter, a kettle, rain on the window, a murmur with no words. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "c02a-barry",
+   "plate": "c02-barry",
+   "mode": "ingredients",
+   "chars": [
+    "Barry"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Barry, looking up from his phone, says, in a gruff, flat, working-class south-east English accent: Nine hundred quid. For a box room. Then he puts the phone face down on the table. Fixed camera, one continuous shot. Sound: his voice, cutlery and a radio murmuring in a small caf\u00e9. No music. Thanks."
+  },
+  {
+   "id": "c02b-barry",
+   "plate": "c02-barry",
+   "mode": "ingredients",
+   "chars": [
+    "Barry"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Barry, nodding at something on a television above the camera, says, in a gruff, flat, working-class south-east English accent: Another boat last night. Where are they all going to live? 'Cause it ain't round here. I can't afford round here. Then he takes a swig of tea. Fixed camera, one continuous shot. Sound: his voice, cutlery and a radio murmuring in a small caf\u00e9. No music. Thanks."
+  },
+  {
+   "id": "c02c-barry",
+   "plate": "c02-barry",
+   "mode": "ingredients",
+   "chars": [
+    "Barry"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Barry, with a sour look, says, in a gruff, flat, working-class south-east English accent: You sound like my daughter. Then he goes back to his breakfast. Fixed camera, one continuous shot. Sound: his voice, cutlery and a radio murmuring in a small caf\u00e9. No music. Thanks."
+  },
+  {
+   "id": "c03a-denise",
+   "plate": "c03-denise",
+   "mode": "ingredients",
+   "chars": [
+    "Denise"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Denise, wiping the counter, says, in a dry, flat northern English accent: Mine's gone up again. The caf\u00e9 and the flat. Then she keeps wiping in small circles. Fixed camera, one continuous shot. Sound: her voice, cutlery and a radio murmuring in a small caf\u00e9. No music. Thanks."
+  },
+  {
+   "id": "c03b-denise",
+   "plate": "c03-denise",
+   "mode": "ingredients",
+   "chars": [
+    "Denise"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Denise, without stopping wiping, says, in a dry, flat northern English accent: It's not the boats, Barry. It's the landlord. Put mine up twice this year. And the council's put my rates up for the privilege. Then she looks up. Fixed camera, one continuous shot. Sound: her voice, cutlery and a radio murmuring in a small caf\u00e9. No music. Thanks."
+  },
+  {
+   "id": "c03c-denise",
+   "plate": "c03-denise",
+   "mode": "ingredients",
+   "chars": [
+    "Denise"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Denise, deadpan, says, in a dry, flat northern English accent: Your daughter's right. She still lives with you. Then she holds still with a flat look. Fixed camera, one continuous shot. Sound: her voice, cutlery and a radio murmuring in a small caf\u00e9. No music. Thanks."
+  },
+  {
+   "id": "c03d-denise",
+   "plate": "c03-denise",
+   "mode": "ingredients",
+   "chars": [
+    "Denise"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Denise, not looking up, flatly, says, in a dry, flat northern English accent: Bloody landlord. Then she keeps wiping. Fixed camera, one continuous shot. Sound: her voice, cutlery and a radio murmuring in a small caf\u00e9. No music. Thanks."
+  },
+  {
+   "id": "c04-fredo10",
+   "plate": "c04-fredo10",
+   "mode": "ingredients",
+   "chars": [
+    "Barry"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Barry, taking one bar out of the jar, says, in a gruff, flat, working-class south-east English accent: Least something's still cheap. Then he drops a coin in a saucer by the till. Fixed camera, one continuous shot. Sound: his voice, a coin on a saucer, caf\u00e9 clatter. No music. Thanks."
+  },
+  {
+   "id": "c05-window-bank",
+   "plate": "c05-window-bank",
+   "mode": "frames",
+   "chars": [],
+   "full": "Rain runs down the caf\u00e9 window. Across the road the two police officers drag another steel barrier into line on the pavement. Then a bus passes between, blurring the view for a moment. Fixed camera, one continuous shot, sharp in every frame, no motion blur, normal speed. Sound: rain on glass, traffic hiss, caf\u00e9 clatter. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "p01-press",
+   "plate": "p01-press",
+   "mode": "frames",
+   "chars": [],
+   "full": "The printing press runs steadily, the paper ribbon feeding through and new banknotes dropping one by one onto the stack. The men stay where they are; one lifts his glass and drinks. The bulb sways slightly. Fixed camera, one continuous shot, sharp in every frame, no motion blur, normal speed. Sound: the clank and hiss of the press, glasses clinking, low laughter with no words. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "p02a-ex",
+   "plate": "p02-ex",
+   "mode": "ingredients",
+   "chars": [
+    "The Ex"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. The Ex, tapping the table, says, in a warm, unhurried, privately educated southern English accent: Problem is eyes. Two thousand people outside that bank tomorrow. Then he sits back. Fixed camera, one continuous shot. Sound: his voice, and the steady clank of a printing press in a brick room. No music. Thanks."
+  },
+  {
+   "id": "p02b-ex",
+   "plate": "p02-ex",
+   "mode": "ingredients",
+   "chars": [
+    "The Ex"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. The Ex, with a small smile, says, in a warm, unhurried, privately educated southern English accent: Nothing. We put it in. Then he holds still. Fixed camera, one continuous shot. Sound: his voice, and the steady clank of a printing press in a brick room. No music. Thanks."
+  },
+  {
+   "id": "p03-red",
+   "plate": "p03-red",
+   "mode": "ingredients",
+   "chars": [
+    "Mr Red",
+    "Mr Blue"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Mr Red, the man on the left, glass raised, says, in an earnest north London English accent: Leave the people to us. Then the two men clink glasses and drink. Mr Blue keeps his lips closed. Fixed camera, one continuous shot. Sound: his voice, and the steady clank of a printing press in a brick room. No music. Thanks."
+  },
+  {
+   "id": "p04-donor",
+   "plate": "p04-donor",
+   "mode": "ingredients",
+   "chars": [
+    "The Donor"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. The Donor, lazily, says, in a slow, flat Essex accent worn smooth by money: And how much do we take? Then he puts the cigar to his mouth. Fixed camera, one continuous shot. Sound: his voice, and the steady clank of a printing press in a brick room. No music. Thanks."
+  },
+  {
+   "id": "r01-barry-sign",
+   "plate": "r01-barry-sign",
+   "mode": "frames",
+   "chars": [],
+   "full": "Barry shouts and shakes the sign up and down twice above the barrier. Pink flare smoke drifts across. The people round him jostle. Fixed camera, one continuous shot, sharp in every frame, no motion blur, normal speed. Sound: a crowd roaring with no words that can be made out, a flare hissing. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "r01b-woman-sign",
+   "plate": "r01b-woman-sign",
+   "mode": "frames",
+   "chars": [],
+   "full": "The woman shouts and shakes her sign up and down twice above the barrier. Pink flare smoke drifts across. The people round her jostle. Fixed camera, one continuous shot, sharp in every frame, no motion blur, normal speed. Sound: a crowd roaring with no words that can be made out, a flare hissing. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "r02-red-megaphone",
+   "plate": "r02-red-megaphone",
+   "mode": "ingredients",
+   "chars": [
+    "Mr Red"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Mr Red, pointing down into the crowd, shouts through the megaphone, says, in an earnest north London English accent, furious: Get off our streets, you fucking Nazi bastards! Then he keeps pointing. Fixed camera, one continuous shot. Sound: his voice distorted through a megaphone, a roaring crowd, a flare hissing. No music. Thanks."
+  },
+  {
+   "id": "r04-denise-window",
+   "plate": "r04-denise-window",
+   "mode": "frames",
+   "chars": [],
+   "full": "Denise slowly dries the mug, turning it in the towel, and keeps watching across the road. Pink and blue light flickers on the glass. Fixed camera, one continuous shot, sharp in every frame, no motion blur, normal speed. Sound: muffled crowd noise and chanting through glass, rain. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "e01-estate",
+   "plate": "e01-estate",
+   "mode": "frames",
+   "chars": [],
+   "full": "Rain runs down the estate agent's window. The amber reflection of the street lamp shivers on the wet glass. Nothing else moves. Fixed camera, one continuous shot, sharp in every frame, no motion blur, normal speed. Sound: rain, a distant siren. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "e02-donor-keys",
+   "plate": "e02-donor-keys",
+   "mode": "frames",
+   "chars": [],
+   "full": "The Donor jingles the bunch of keys twice at the camera, then closes his fist round them and smiles. Fixed camera, one continuous shot, sharp in every frame, no motion blur, normal speed. Sound: jangling keys, rain, a quiet street. No dialogue. No music. Thanks."
+  },
+  {
+   "id": "f02-fredo20",
+   "plate": "f02-fredo20",
+   "mode": "ingredients",
+   "chars": [
+    "Barry"
+   ],
+   "full": "Use the image as the scene. A British comedy film with English actors. Barry, holding up the bar, outraged, says, in a gruff, flat, working-class south-east English accent: Twenty p? Bloody boats. Then he puts the bar back. Fixed camera, one continuous shot. Sound: his voice, caf\u00e9 clatter. No music. Thanks."
+  },
+  {
+   "id": "s01-sink",
+   "plate": "s01-sink",
+   "mode": "frames",
+   "chars": [],
+   "full": "Denise slowly washes the plate in the soapy water, then her hands stop and she just stares at the letter. Steam drifts. Fixed camera, one continuous shot, sharp in every frame, no motion blur, normal speed. Sound: a dripping tap, water sloshing, the hum of a fridge. No dialogue. No music. Thanks."
+  }
+ ]
+}
