@@ -3,6 +3,14 @@
 Every ruling and every weekly review, newest first. One entry per event, a few lines each.
 Format: `## YYYY-MM-DD — what` then who said what, in their words where possible.
 
+## 2026-10-15 — Kai: the repo is the board; the page is read-only
+
+Kai: "we shouldn't interact with this page at all ... me and Jack both look at it, me and Jack chat to
+Claude CLI, and it then updates the artifact ... manage this in this repository and just as a final step,
+publish it to the artifact simply as a way of me and Jack sharing it with each other." Done: the page is
+generated from `board.md` by `scripts/marketing/build-board.mjs`; its database is switched off; it leads
+with what to do next, in Claude's opinion.
+
 ## 2026-10-15 — Kai: take time out of the plan
 
 Kai: "remove entirely the idea of time from it ... this feels now like it's a boss nobody wants,

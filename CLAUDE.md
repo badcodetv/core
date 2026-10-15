@@ -8,10 +8,10 @@ Read this first. It tells you what BadCode is, how it sounds, and where everythi
 
 > **Doing anything marketing — posting, releasing, "what's next", "where are we"? The marketing is
 > run by the [`chief-of-staff` skill](./.claude/skills/chief-of-staff/SKILL.md) against the plan
-> ([`docs/marketing/chief-of-staff/plan.md`](./docs/marketing/chief-of-staff/plan.md)).** The live tracking
-> board Kai and Jack update is **https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9** (decisions, tasks,
-> what has gone out); read it with the `ArtifactData` tool before saying what state anything
-> is in. Rule one: finished work goes out before anything new is researched.
+> ([`docs/marketing/chief-of-staff/plan.md`](./docs/marketing/chief-of-staff/plan.md)).** The state lives in the
+> repo ([`board.md`](./docs/marketing/chief-of-staff/board.md)); the shared page
+> **https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9** is a read-only window onto it, rebuilt and
+> republished at the end of every chief-of-staff run. Kai and Jack never type into it; they tell Claude. Rule one: finished work goes out before anything new is researched.
 
 ## What BadCode is
 
@@ -245,7 +245,7 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
   decisions at a time, ranked by what they unblock), delegates to the `marketing-*` subagents in
   `.claude/agents/`, and its first rule is **shipping beats planning**: nothing new is researched
   while finished work is waiting. **The live board is https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9** —
-  the skill reads and writes it every run. Written to move into Agent Bob later; see its
+  the skill rebuilds it from `board.md` (`node scripts/marketing/build-board.mjs`) and republishes it at the end of every run. Written to move into Agent Bob later; see its
   [`README.md`](./docs/marketing/chief-of-staff/README.md).
 - **Record a marketing idea:** run the **`new-marketing-idea`** skill
   (`.claude/skills/new-marketing-idea/`). Captures a way to *reach people* —

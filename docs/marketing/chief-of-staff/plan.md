@@ -25,8 +25,8 @@ How we'll know it's working, most important first: people **sign up** to the mai
 
 ## 3. Next — in order
 
-The live list is on the board page (https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9); this is the
-written copy. **Top of the list is the next thing to do.** When it's done, the next one moves up.
+The working list is in [`board.md`](./board.md), shown read-only on the board page
+(https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9). **Top of the list is the next thing to do.** When it's done, the next one moves up.
 
 1. **Open the accounts** — YouTube, a Facebook Page, TikTok, Instagram; one name everywhere. *(Jack)*
 2. **Start the mailing list**, "Transmissions" (Kit or Substack). *(Jack)*

@@ -19,16 +19,14 @@ Bob worker later. Keep everything you rely on in files, never in the chat.
    weeks, deadlines or a streak back; a date appears only when the world sets one (a news event).
 2. `docs/marketing/chief-of-staff/board.md` — current state: do next, the three open decisions, what's gone out.
 3. `docs/marketing/chief-of-staff/log.md` — the top three entries.
-4. **The live board page** — https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9. Kai and Jack tick
-   tasks, answer decisions and log what went out there. Read its database with the
-   `ArtifactData` tool (`list` on `decisions`, `tasks`, `gaps`, `shipped`) at the start of every run, and
-   write changes back the same way (a `batch`, pinned with `if_version`). Collections:
-   `decisions/<id>` {question, detail, who, status open|answered, answer, answeredAt, order};
-   `tasks/<id>` {title, owner Kai|Jack|Claude|Both, status todo|doing|done|blocked, note, order} — the
-   lowest `order` not done is "do next"; `gaps/<id>` {title, why, order} — what we should be doing
-   that we're not; `shipped/<id>` {what, where, link, at}. A decision answered on the page is a
-   ruling: copy it into `log.md` in their words. Keep `board.md` and plan §3–4 in step.
-   If the tool is not available (e.g. in Bob), work from `board.md` and say the page is stale.
+4. **The repo is the source of truth; the board page is only a window.** Kai, 15 October: "manage this
+   in this repository and just as a final step, publish it to the artifact simply as a way of me and
+   Jack sharing it with each other." The page (https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9) is
+   read-only and generated from `board.md`; nobody types into it. Kai and Jack give answers, rulings and
+   news by talking to you here. `board.md` keeps a strict shape the generator reads: `## Do next`
+   (three numbered items, `**Who: the thing.** detail *Why: …*`), `## Then` (numbered, continuing),
+   `## What we're not doing, and should be` (bullets, `**gap.** why`), `## Waiting on you` (at most
+   three bullets, `**Who: question?** your recommendation`), `## Gone out` (bullets with links).
 5. `git log --oneline -15` and `git status -sb` — what changed since the last run, and by whom.
 
 Read deeper only when a task needs it: `docs/marketing/the-reader.md`, `docs/voice.md`,
@@ -82,5 +80,8 @@ once with the note; if it fails twice, bring it to Kai or Jack as a decision ins
 7. **Money is a stop gate.** Any spend: price it, say what it buys that free cannot, wait.
 8. **Assume nothing in what you write to them.** Gloss every name, file and acronym; say what it is
    and why it matters.
-9. **End every run** by updating `board.md` (and `log.md` if anything was decided), then commit
-   with a one-line message. Push only if the person asks.
+9. **End every run** by updating `board.md` (and `log.md` if anything was decided, plan §3–4 if the
+   list or the gaps changed), then `node scripts/marketing/build-board.mjs` and publish the result:
+   the Artifact tool, `url` https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9, `file_path`
+   `docs/marketing/chief-of-staff/board.html`. Then commit with a one-line message. Push only if asked.
+   If publishing isn't available (e.g. in Bob), commit and say the page is stale.
