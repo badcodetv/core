@@ -3,6 +3,14 @@
 Every ruling and every weekly review, newest first. One entry per event, a few lines each.
 Format: `## YYYY-MM-DD — what` then who said what, in their words where possible.
 
+## 2026-10-15 — Kai: take time out of the plan
+
+Kai: "remove entirely the idea of time from it ... this feels now like it's a boss nobody wants,
+whereas what we really want is like what do we need to do next? And what should we be doing that
+we're not doing? ... when I say plan, I don't think I mean carefully orchestrated timing." Done:
+`plan.md` rewritten as the goal + an ordered next list + the gaps; no weeks, deadlines, streak or
+calendar. The board page and the skill follow. The dated version stays in git history.
+
 ## 2026-10-15 — Kai: Money For Something is a scratch pad; balaclava host; triangle logo to try
 
 Kai (with Jack): voice models "are not good", so as much as possible "rely on text to speech models

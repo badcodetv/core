@@ -1,48 +1,42 @@
 # The board
 
-**Updated: 15 October 2026 by the chief of staff** (plan grown: weeks 5–12, lanes C and D, the human part, the calendar; tasks for weeks 3–12 added to the live page). The one place to look.**
+**Updated: 15 October 2026 by the chief of staff. No dates; just what's next.**
 
-🔗 **The live board (shared page): https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9** — Kai and Jack tick
-tasks, answer decisions and mark published weeks there. It is the live record of state; this file
-is the written copy the chief of staff keeps in step with it on every run.
-Rules: at most three decisions open at a time, ranked by deadline. Everything else waits below the line.
+🔗 **The live board (shared page): https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9**. Kai and Jack tick
+tasks, answer decisions and log what went out there. It's the live record; this file is the written
+copy the chief of staff keeps in step on every run.
 
-## 🔴 Decisions — answer these three
+## ▶ Do next
 
-1. **Kai: Money For Something isn't ready. What goes out in weeks 1 to 3?** Recommendation:
-   the Camping serial, two parts a week (finished, with sound), so the streak starts on 19 October.
-   Build the balaclava pipeline alongside, with a first episode in week 4 (9 Nov). Cost: the Budget
-   special (28 Oct) is dropped. *Deadline: 18 October.*
-2. **Jack: do you accept the 90-day plan?** (Kai said yes on 14 October.) ([`plan.md`](./plan.md))
-   *Deadline: 17 October.*
-3. **Who opens the accounts, and which handle.** Proposal: Jack, all as `badcode`. *Deadline: 18 October.*
+1. **Open the accounts** (Jack). Waits on decision 2 for the name.
+2. **Start the mailing list, "Transmissions"** (Jack)
+3. **Cut Camping serial parts 1–7 + delivery check** (Claude; Jack signs off)
 
-## Waiting below the line (not asked yet)
+Then: the words for Camping → post part 1 → the Money For Something pipeline → sound under the
+comic shorts → Karen's fix. Full order in [`plan.md`](./plan.md) §3.
 
-- **Karen's beneficiary problem** — which of the three fixes in
-  [`../shorts-karen-camping.md`](../shorts-karen-camping.md) §9. Needed before Karen enters lane B
-  (about week 5).
-- **Audio for the 30 silent shorts** — parked with the comics lane for 90 days.
-- **The three open questions in [`../the-reader.md`](../the-reader.md)** — Facebook as a priority
-  channel is answered by the plan if decision 1 is yes.
-- **Sound for the Archive shorts (lane C)** — the 30 comic shorts are silent. Proposal: our own
-  tracks under them. Jack, before week 5 (16 Nov).
-- **Who answers comments where** — e.g. Kai takes YouTube and email, Jack takes TikTok, Instagram
-  and Facebook. Before week 1 (19 Oct) ideally; promote once a slot frees up.
-- **Move to Agent Bob?** — not before four weeks of publishing (see [`README.md`](./README.md)).
+## 🔴 Decisions (three at most, ranked by what they unblock)
 
-## This week (week 0, to 18 October)
+1. **Kai: Money For Something isn't ready, so what goes out first?** Recommendation: the Camping
+   serial (finished, with sound), one part at a time, while the balaclava pipeline is built. The
+   Budget special (28 October) is dropped unless the pipeline is ready by then.
+2. **Who opens the accounts, and under which name?** Proposal: Jack, all as `badcode`.
+3. **Jack: is this plan right?** One goal, the next list, the gaps. Say yes, or name the part to change.
 
-| Thing | Owner | State |
+## Waiting below the line
+
+- **Karen's beneficiary fix**: which of the three in [`../shorts-karen-camping.md`](../shorts-karen-camping.md) §9.
+- **Sound for the comic shorts**: proposal, our own tracks.
+- **Who answers comments where**: e.g. Kai takes YouTube and email, Jack takes TikTok, Instagram and Facebook.
+- **Lock the board page to named people?** Right now anyone signed in with the link can edit it.
+
+## What we should be doing that we're not
+
+See [`plan.md`](./plan.md) §4. The short version: publishing anything, owning an audience, a
+recurring face and voice, and showing the fix as well as the fault.
+
+## What's gone out
+
+| What | Where | When |
 | --- | --- | --- |
-| Money For Something pipeline (balaclava host, text-to-speech) | Both | ⬜ scratch pad |
-| Accounts opened | Jack (proposed) | ⬜ not started |
-| Camping serial parts 1 to 4 cut, checked with `scripts/delivery-qc.sh` | chief of staff + Jack | ⬜ not started |
-| Captions and first email drafted, gated | chief of staff | ⬜ not started |
-| Budget special skeleton | Kai + chief of staff | 🔴 blocked: likely dropped (decision 1) |
-
-## The streak
-
-| Week | Published | Notes |
-| --- | --- | --- |
-| 1 (19 Oct) | — | |
+| — | | |

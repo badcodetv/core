@@ -7,10 +7,10 @@ Read this first. It tells you what BadCode is, how it sounds, and where everythi
 > transitions, speech bubbles, and how to add your own. Do not author comic code without it.
 
 > **Doing anything marketing — posting, releasing, "what's next", "where are we"? The marketing is
-> run by the [`chief-of-staff` skill](./.claude/skills/chief-of-staff/SKILL.md) against the 90-day plan
+> run by the [`chief-of-staff` skill](./.claude/skills/chief-of-staff/SKILL.md) against the plan
 > ([`docs/marketing/chief-of-staff/plan.md`](./docs/marketing/chief-of-staff/plan.md)).** The live tracking
 > board Kai and Jack update is **https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9** (decisions, tasks,
-> the weekly publishing streak); read it with the `ArtifactData` tool before saying what state anything
+> what has gone out); read it with the `ArtifactData` tool before saying what state anything
 > is in. Rule one: finished work goes out before anything new is researched.
 
 ## What BadCode is
@@ -51,7 +51,7 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
 | `docs/brand/` | 🔴 **THE LOGO** — a thin ring with an off-centre **red triangle** (toward 2 o'clock, rounded corners); the name `badcode` in round lowercase with a solid red o — ruled canonical by Kai 2026-10-15 ("for a minute", so it may still move). **Every logo file is in [`docs/brand/logo/`](./docs/brand/logo/)**; the settings, rules and file list are in [`docs/brand/README.md`](./docs/brand/README.md); regenerate with `node scripts/brand/build-logo.mjs`, never hand-edit an SVG. **The logo was designed on the logo bench artifact — https://claude.ai/artifact/4Tf8nXY8RmRokTevDQ7cWe** (sliders + live proofs; Kai's saves sit in its db collection `saves`, read with ArtifactData; save `b0dhojp15efdyw7rboj6` is the official logo; the bench has a Triangle / Dot switch). To change the logo: tune and save on the bench, copy that save's numbers into `SET` in the build script, re-run. The previous logos — the ring-with-dot (2026-09-29) and the curly brace — are archived in `docs/brand/archive/` | …you need the logo, a favicon or a profile picture, or you're changing the logo |
 | `docs/stories/` | Committed stories — one canon folder per story (`stories/<story>/`: concept, characters, beats, songs) — source of truth | …we've committed to making it, or you're producing a story's media |
 | `docs/ideas/` | The idea inbox — raw ideas (minimal prose) before they become stories | …you have a new idea to park, or want to develop one |
-| `docs/marketing/` | Marketing & release plans — reaching people, not making the thing. 🔑 **Start at [`chief-of-staff/`](./docs/marketing/chief-of-staff/README.md)** (the 90-day plan + the board); live board: https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9 | …it's a channel/campaign/launch plan, or you need to know what ships next |
+| `docs/marketing/` | Marketing & release plans — reaching people, not making the thing. 🔑 **Start at [`chief-of-staff/`](./docs/marketing/chief-of-staff/README.md)** (the plan — what's next and what we're not doing, no dates — + the board); live board: https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9 | …it's a channel/campaign/launch plan, or you need to know what ships next |
 | `docs/misc/` | Catch-all for what fits nowhere else | …in doubt |
 | `docs/suno-gpt/` | Suno toolkit — **🔑 All new Suno work is v6, in the new UI (v5.5 retired 2026-09-09, archived in `docs/suno-gpt/archive/v5.5-era.md`): [`files/suno-v6.md`](./docs/suno-gpt/files/suno-v6.md) wins on any model/control question, and its §3 is the ladder for fixing one word / one bar without regenerating** — prompting (operating procedure + reference files) **and** [`automation.md`](./docs/suno-gpt/automation.md), the create-page DOM map + the five silent traps + the pair/naming/workspace/no-download protocol | …you're turning a song idea into a Suno prompt, or driving Suno from code |
 | `docs/ai-studio/` | Google AI Studio **voice** toolkit — [`README.md`](./docs/ai-studio/README.md): the Composer UI map (Scene / Sample Context / Voice Direction), Google's four-part prompt structure, the **5,000-voice library with an Accent filter** (the docs say 30 — the UI is the truth), the 200+ audio tags, limits and traps. 🔑 **First engine that sounded human on take one** | …you're generating spoken narration, or a voice sounds like AI |
@@ -239,10 +239,10 @@ Full guide: [`docs/voice.md`](./docs/voice.md). When writing lyrics or story cop
   is the stage *before* canon: optional, zero-commitment, medium-agnostic (a
   comic, a short, a song, or nothing yet). Develop when ready; don't develop here.
 - **Run the marketing (the chief of staff):** run the **`chief-of-staff`** skill
-  (`.claude/skills/chief-of-staff/`) — "brief me", "plan the week", "review the week", "I've
-  finished a cut, what now". It holds the 90-day plan, keeps
+  (`.claude/skills/chief-of-staff/`) — "brief me", "what's next", "what should we be doing that we're not", "I've
+  finished a cut, what now". It holds the plan (no dates, by Kai's ruling), keeps
   [`docs/marketing/chief-of-staff/board.md`](./docs/marketing/chief-of-staff/board.md) (three
-  decisions at a time, ranked by deadline), delegates to the `marketing-*` subagents in
+  decisions at a time, ranked by what they unblock), delegates to the `marketing-*` subagents in
   `.claude/agents/`, and its first rule is **shipping beats planning**: nothing new is researched
   while finished work is waiting. **The live board is https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9** —
   the skill reads and writes it every run. Written to move into Agent Bob later; see its
