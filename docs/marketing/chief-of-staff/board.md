@@ -1,6 +1,6 @@
 # The board
 
-**Updated: 14 October 2026 by the chief of staff. The one place to look.**
+**Updated: 15 October 2026 by the chief of staff** (plan grown: weeks 5–12, lanes C and D, the human part, the calendar; tasks for weeks 3–12 added to the live page). The one place to look.**
 
 🔗 **The live board (shared page): https://claude.ai/artifact/3uuL8QzYF47wPCVyJVLNZ9** — Kai and Jack tick
 tasks, answer decisions and mark published weeks there. It is the live record of state; this file
@@ -28,6 +28,10 @@ Rules: at most three decisions open at a time, ranked by deadline. Everything el
 - **Audio for the 30 silent shorts** — parked with the comics lane for 90 days.
 - **The three open questions in [`../the-reader.md`](../the-reader.md)** — Facebook as a priority
   channel is answered by the plan if decision 1 is yes.
+- **Sound for the Archive shorts (lane C)** — the 30 comic shorts are silent. Proposal: our own
+  tracks under them. Jack, before week 5 (16 Nov).
+- **Who answers comments where** — e.g. Kai takes YouTube and email, Jack takes TikTok, Instagram
+  and Facebook. Before week 1 (19 Oct) ideally; promote once a slot frees up.
 - **Move to Agent Bob?** — not before four weeks of publishing (see [`README.md`](./README.md)).
 
 ## This week (week 0, to 18 October)
