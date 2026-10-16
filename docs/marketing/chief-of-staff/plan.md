@@ -71,6 +71,9 @@ No schedule. A lane is a kind of thing we post; what goes out next is whatever's
 🔴 **Lane D costs Suno downloads:** a song can only earn money if a person downloaded it on the paid
 plan (20 a month). Downloads are always done by a person.
 
+**Length:** short wins. About two minutes, built to hold people, beats a long film (Kai and Jack, 15 Oct
+2026 call; see [`log.md`](./log.md)). And don't get bogged down in unpolished music.
+
 **Opening a lane:** add one once the lanes already open are going out steadily. If posting stalls,
 the newest lane pauses first. Steady output matters more than the number of lanes.
 

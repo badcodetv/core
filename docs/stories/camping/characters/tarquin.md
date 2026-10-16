@@ -16,6 +16,19 @@ flow_sheet_source:
 > 🎙️ **Speaking voice built 2026-09-08** — Google AI Studio, prebuilt voice `Zubenelgenubi`. The verbatim profile is in [`../narration/ai-studio-cast.md`](../narration/ai-studio-cast.md).
 
 
+> 🔴 **New ending, ruled on the 15 Oct 2026 call (Kai proposed, Jack agreed).** Instead of ending in the
+> car park, **he wakes from the ayahuasca trip back in the normal world, still a banker, with a changed
+> mission.** The notes place the new ending "at the Shard". He then joins Karen and the President in the
+> [BadCode universe](../../../ideas/badcode-universe.md) (see [Karen](../../karen/story.md)).
+> Source: [`docs/misc/2026-10-15-jack-kai-call-notes.md`](../../../misc/2026-10-15-jack-kai-call-notes.md).
+>
+> - **Which film:** the notes don't say. Camping is the only film he is in, and its story video is not
+>   finished (scenes 10 to 12 not yet shot), so it most likely applies there. Not confirmed.
+> - **Doesn't match the canon as written:** the notes say he used to "die in a car park". In
+>   [`../story.md`](../story.md) he doesn't die: he wakes five years on in Bob's tent in the Waitrose car
+>   park, ruined, and the film ends with the two of them by the fire (scenes 10 to 12). What happens to
+>   that future (is it now part of the trip?) and to the newspaper and embers ending is not said.
+
 **2008:** up-and-coming star of the trading desk in the old NatWest Tower.
 🔴 **AMENDED 2026-09-09 by Jack: he SHORTED it.** He saw the crash coming, bet against the market,
 and **came out of the collapse without a scratch while everyone else went under.**

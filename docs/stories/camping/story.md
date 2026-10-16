@@ -22,6 +22,12 @@ canon_source: ./master-notes-2026-08-04.md (Kai <-> Jack, 2026-08-04)
 > [`../../voice.md`](../../voice.md). The scene-by-scene production guide for
 > the video is the [Storyboard section below](#storyboard--scene-by-scene-video-guide).
 
+> 🔴 **15 Oct 2026 call: Tarquin's ending is changing.** Kai and Jack agreed he wakes from the ayahuasca
+> trip back in the normal world, still a banker (the notes say "at the Shard"), with a changed mission,
+> instead of ending in the car park. The notes don't say which film this is for or what becomes of beats 10
+> to 12 below; they are left as written until that is ruled. Detail:
+> [`characters/tarquin.md`](./characters/tarquin.md).
+
 ## Key concept
 
 Automation does not stop at the bottom. The same logic that replaces the

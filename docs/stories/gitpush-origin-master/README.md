@@ -103,6 +103,8 @@ The fastest way to hold all of it: the arc is **three movements**, and they *are
 
 ## Production tracker
 
+> 🔴 **Restructured 15 October 2026 — read [`restructure-2026-10-15.md`](./restructure-2026-10-15.md) first.** The drum & bass track is now the downfall and opens the film; then a robot apologises, finds humans arguing about a toilet seat, and the AI asks them to power a time machine that runs on consciousness. The coin and the bunker experiments are cut to the Storyverse. Where `story.md` and §2c disagree with it, the restructure wins.
+
 > **The canonical story now exists:** [`story.md`](./story.md) — the single
 > walkable 20-scene timeline distilled from the beat sheets (2026-08-06, Kai
 > feedback pass folded in: Storyverse lore compressed to name-only, the

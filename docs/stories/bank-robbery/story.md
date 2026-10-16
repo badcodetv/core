@@ -193,6 +193,10 @@ the banks paid interest on the proceeds. The story should keep those two apart.
 6. **How they talk.** This is a talking film. The house rule is no dialogue in Flow videos,
    with Money For Something as the one exception. This needs the same exception, or recorded
    voices.
+   ✅ **Ruled on the 15 Oct 2026 call:** full narration with several narrator voices, no
+   characters speaking on screen and no lip-sync, because viewers dislike AI voices. Revisit
+   when natural talking video models arrive (Kai: 3 to 6 months). The call's other notes are in
+   [`assembly.md`](./assembly.md), last section.
 7. **The title.** "The Bank Robbery" is the working name. Floated: "Bank Holiday", "Count It",
    "One Bill". None checked.
 8. **Medium and length.** Storyboarded as a film of about five minutes. It would also cut as a

@@ -1,5 +1,10 @@
 # Narration & score — Karen Will Lead the Revolution
 
+> 🔴 **15 Oct 2026 call:** the narration script is being rewritten. The narrator is now the AI from
+> the future, direct and aggressive, talking to the viewer, and the ending is a "to be continued"
+> cliffhanger with no moral. Jack owns it. `script.md` below is the old script. Detail: the top of
+> [`../story.md`](../story.md).
+
 Everything needed to voice and underscore the story video. Three files, in the
 order you use them:
 

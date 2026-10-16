@@ -764,3 +764,57 @@ cut 9. Frames of the shouting run and the papers read from the render.
 
 **Jack, same day:** "That is great." **Needs a human.** Still owed
 from cut 9: the photo credit on screen, the delivery check, his ruling on the standoff and the two narrator trims.
+
+---
+
+# The 15 October 2026 call: Kai's notes on Jack's cut, and what the next cut owes
+
+**Ruled on the 15 Oct 2026 call** (Jack and Kai, on a video call). Source: Gemini's auto-notes,
+[`docs/misc/2026-10-15-jack-kai-call-notes.md`](../../misc/2026-10-15-jack-kai-call-notes.md). They are machine
+notes and mishear things; where a point below is unclear it says so. The notes don't say which cut was on screen.
+The last cut recorded here is cut 10 (12 October); Jack is now cutting the film himself.
+
+## What was ruled
+
+| Part of the film | Ruling |
+| --- | --- |
+| **Opening (WW2)** | Needs more gravitas; it felt rushed. More real black-and-white Second World War footage under the narrator's line about our grandparents fighting the Nazis, and more weight before the film moves to the present. Sources for the shots already used: [`footage-ww2.md`](./footage-ww2.md) |
+| **The bridge** | Join the war generation's sacrifice straight to now: their grandchildren can't afford to live |
+| **The painted transition** | The transition from real footage into the painted look is praised ("brilliant"). The camera jitter in it must be fixed |
+| **The café scene** (rent, landlords, boats) | Praised for balancing left and right without losing either. Keep it |
+| **How people talk** | **Full narration, with several narrator voices** (a distinct voice for each character), instead of characters speaking on screen. No lip-sync. Reason: viewers dislike AI voices. Jack's data point: on viral AI videos the comments love the pictures and hate the voices. Kai expects natural talking video models in 3 to 6 months; lip-sync can be revisited then. This rules open call 6 in [`story.md`](./story.md) |
+| **The sausage roll scene** | Cut. The notes don't say which shot this is (sausage rolls appear in scene 1 and on the walk) |
+| **The robbery** | Remove the dialogue where they talk about depositing the money. Instead linger on the reveal that they deposit the money and steal nothing (the notes say £200bn), **then** cut to the protest |
+| **The protest** | The 2,000-person protest outside the bank is a **coordinated distraction**, not a problem the crew runs into. The crew goes in by a **side door**; the shot of them walking in is cut. The newspaper drops come back, to show how the distraction was set up |
+| **The estate agent's window** | The house prices double, animated like a slot machine. The notes then say "before cutting to the Fredo price"; what that means is unclear |
+| **The kebab shop** | Kept. Jack and Kai both like it as the everyday, middle-ground grounding that stops the film being a hit piece |
+| **Guy Ritchie-style intros** | **Not adopted.** Kai suggested labelled character intros ("the muscle", "the magician"); Jack argued against: the focus stays on the working-class people from the opening, not the crew |
+| **The script** | Word choices to be finalised by Jack and Kai together |
+
+## Things that don't match the canon, for Jack and Kai to check
+
+- **£200bn** isn't anywhere in [`research.md`](./research.md). The Bank's figure there is £895bn. Check the number
+  before it goes on screen.
+- **The protest and the side door replace the walk down the gap** (scene 9 in [`script.md`](./script.md): two
+  marches meet, the police leave an empty strip, the crew pushes the pallets down it). If the walk-in shot is the
+  whole walk, scene 9's lines go with it.
+- **Narration only** means the lines the cast speaks in cut 10 ("Shift.", "Morning, Governor" and the rest, in
+  their Flow voices, [`characters/cast-portraits.md`](./characters/cast-portraits.md)) become narration in other
+  voices. How many narrator voices, and which, is not decided. Sadaltager (cut 9 on) is the current narrator.
+- **Guy Ritchie intros vs the name cards.** Scene 4 already has an 80s name-card montage. The call didn't say
+  whether that stays as it is.
+
+## Owed
+
+**Jack:**
+
+- [ ] Fix the camera jitter in the painted transition.
+- [ ] Put more real WW2 footage at the start, under the grandparents line, and slow the opening down.
+- [ ] Move the film to full narration (several narrator voices), no character lip-sync.
+- [ ] Cut the sausage roll scene.
+- [ ] The robbery: remove the depositing dialogue, hold longer on the deposit reveal, then cut to the protest.
+- [ ] Cut the walk-in shot; make the protest read as the distraction (side door, the newspaper drops back in).
+- [ ] The estate agent's window: prices double, slot-machine animation.
+- [ ] Tidy the edit and finish this version.
+
+**Jack and Kai:** finalise the script's word choices.

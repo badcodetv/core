@@ -8,6 +8,11 @@
 
 ## ⚠️ Next session — start here
 
+🔴 **Ruled on the 15 Oct 2026 call:** **5.1b (the moral) comes out**, and the film ends on a cliffhanger, the
+sacked President calling Karen back, "to be continued". The fixes go in through a new narrator (the AI from the
+future, direct, talking to the viewer), not a re-edit. Jack owns both. Detail: the box at the top of
+[`story.md`](./story.md).
+
 Four things owed, agreed 2026-08-20:
 
 - [x] ~~**1.4e / 1.4f**~~ — **merged and shot 2026-08-20.** Kai's call: she just turns the laptop

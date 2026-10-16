@@ -10,6 +10,8 @@ canon_source: the eight beat sheets (prologue-repo.md … coda-fork.md) + README
 
 # GitPush Origin Master
 
+> 🔴 **Restructured 15 October 2026 — [`restructure-2026-10-15.md`](./restructure-2026-10-15.md) wins over this file** for the video: the D&B track is the downfall, the coin and bunker experiments are cut, the prunes argument becomes a toilet-seat argument, and the time machine runs on the last humans' consciousness. Movement II below is pending a rewrite.
+
 > **This is the canonical story** — the single walkable timeline of the whole
 > arc, distilled from the beat-complete research in this folder and then
 > **re-shaped by Kai's 2026-08-06 feedback pass**: the Storyverse lore is

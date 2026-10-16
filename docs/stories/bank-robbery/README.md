@@ -2,8 +2,9 @@
 
 > **Source of truth** for the Bank Robbery story. Started 6 October 2026 with the `new-story`
 > and `story-craft` skills, graduating the inbox seed
-> [`docs/ideas/bank-robbery.md`](../../ideas/bank-robbery.md). **As of 8 October 2026 the film is at cut 5;
-> see [`assembly.md`](./assembly.md). Kai has not gone through it.**
+> [`docs/ideas/bank-robbery.md`](../../ideas/bank-robbery.md). **As of 12 October 2026 the film is at cut 10,
+> and Jack is now cutting it himself. Kai went through it with Jack on the 15 Oct 2026 call: the rulings and
+> Jack's to-do list are the last section of [`assembly.md`](./assembly.md).**
 
 Eleven politicians and media people rob a bank by carrying money into it. Left and right argue
 about immigration the whole way through, holding one end of the same pallet each. The only person
@@ -50,9 +51,9 @@ night before, the chaos, the woman who works in the bank).
 | Look tests | [`look-tests.md`](./look-tests.md) | Three rounds, 6 October 2026. Jack chose "The bank in the haze" |
 | Scene stills | [`stills.md`](./stills.md) | Two passes, 6 October 2026. The second has the Flow Characters cast in, and a different camera position and a single light in every scene. Not reviewed |
 | Clips | [`clips.md`](./clips.md) | First pass, 6 October 2026: one silent 8 s Omni clip per second-pass still. Not reviewed |
-| Voices | [`characters/cast-portraits.md`](./characters/cast-portraits.md) | One custom Flow voice per Character. Open call 6 (a talking film) is still unruled |
-| Film | [`assembly.md`](./assembly.md) | **Cut 5, 8 October 2026, 6 min 22 s,** Premiere sequence `bank robbery - cut 5`. Not watched by Jack. Not upload-ready: no music credit on screen, delivery check fails |
-| Music | [`assembly.md`](./assembly.md) | Seven Kevin MacLeod tunes (CC BY 4.0, credit owed on screen), one per scene mood. Suno takes parked in [`songs/score.md`](./songs/score.md) |
+| Voices | [`characters/cast-portraits.md`](./characters/cast-portraits.md) | One custom Flow voice per Character. **Open call 6 ruled on the 15 Oct 2026 call: full narration with several narrator voices, no lip-sync.** The cast's spoken lines move into narration |
+| Film | [`assembly.md`](./assembly.md) | **Cut 10, 12 October 2026, 4 min 34 s,** Premiere sequence `bank robbery - cut 10`; Jack: "That is great." Now Jack's to cut. **Notes from the 15 Oct 2026 call owed** (WW2 opening, jitter, narration, sausage roll, robbery, protest, estate agent): [`assembly.md`](./assembly.md), last section. Not upload-ready: photo credit on screen, delivery check fails |
+| Music | [`assembly.md`](./assembly.md) | Since cut 9: six HoliznaCC0 lofi tunes (CC0, no credit needed), [`music-lofi.md`](./music-lofi.md). Suno takes parked in [`songs/score.md`](./songs/score.md) |
 | Song | none | Not started |
 | Comic | none | Not started |
 

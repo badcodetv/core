@@ -159,6 +159,10 @@ thing the audience sees. Numbering by canon position was always going to rot, so
 **Asset ids are minted from what a scene IS, and never renumbered.** Position lives in exactly
 one place — this table. Reordering the film is a table edit, not a rename.
 
+### 🔴 Restructured 2026-10-15 — [`restructure-2026-10-15.md`](./restructure-2026-10-15.md)
+
+The drum & bass music video is now the downfall (replacing cut 4's narration). Cuts 6 `coin`, 7 `vault` and 8 `coin-lands` are cut as written (the coin and experiments go to the Storyverse); cut 9 `ledger` and 10 `now` are to be re-planned. **The new back-half table is owed** after the 16 October interview. The table below stands for cuts 1–3 until then.
+
 ### 🔴 The short cut — ruled 2026-09-13, [`critique-pass-7.md`](./critique-pass-7.md) — **current order**
 
 Seventeen cuts become ten. Cuts 5, 6 and the unbuilt robots cut were one idea shot three times
