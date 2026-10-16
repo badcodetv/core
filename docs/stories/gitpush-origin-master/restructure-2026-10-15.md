@@ -3,7 +3,7 @@ story: gitpush-origin-master
 kind: ruling — structure
 date: 2026-10-15
 ruled_by: Kai, with Jack on the 15 October 2026 call
-source: Kai's session of 15 October 2026 + the call notes, docs/misc/2026-10-15-jack-kai-call-notes.md
+source: Kai's session of 15 October 2026 + the call notes, docs/misc/2026-10-15-meeting.md
 supersedes: the downfall narration of cut 4 `bulletin`, scenes/downfall-to-return-plan.md's timings, and the back half of prompts.md §2c (cuts 6–9)
 ---
 

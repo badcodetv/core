@@ -17,7 +17,7 @@ media: [video, song, comic]
 > **the storyboard wins**.
 
 > 🔴 **Changed on the 15 Oct 2026 call (Kai and Jack).** These override the storyboard below where they
-> disagree. Source: [`docs/misc/2026-10-15-jack-kai-call-notes.md`](../../misc/2026-10-15-jack-kai-call-notes.md).
+> disagree. Source: [`docs/misc/2026-10-15-meeting.md`](../../misc/2026-10-15-meeting.md).
 >
 > - **The ending is a cliffhanger.** The President, sacked by Sean AI, calls Karen back. "To be continued."
 > - **The explicit moral goes** (the professor's *"persistence is key…"* line, §5.1 and shot 5.1b). The notes

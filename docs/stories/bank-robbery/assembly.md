@@ -770,7 +770,7 @@ from cut 9: the photo credit on screen, the delivery check, his ruling on the st
 # The 15 October 2026 call: Kai's notes on Jack's cut, and what the next cut owes
 
 **Ruled on the 15 Oct 2026 call** (Jack and Kai, on a video call). Source: Gemini's auto-notes,
-[`docs/misc/2026-10-15-jack-kai-call-notes.md`](../../misc/2026-10-15-jack-kai-call-notes.md). They are machine
+[`docs/misc/2026-10-15-meeting.md`](../../misc/2026-10-15-meeting.md). They are machine
 notes and mishear things; where a point below is unclear it says so. The notes don't say which cut was on screen.
 The last cut recorded here is cut 10 (12 October); Jack is now cutting the film himself.
 

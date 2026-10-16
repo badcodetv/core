@@ -43,7 +43,7 @@ line, and "inevitable" is the story the people who own it want told). In public,
 not the inevitability: *"Someone is going to own this either way. That part is a choice, and it's
 being made without you."*
 
-Source: [`docs/misc/2026-10-15-jack-kai-call-notes.md`](../misc/2026-10-15-jack-kai-call-notes.md).
+Source: [`docs/misc/2026-10-15-meeting.md`](../misc/2026-10-15-meeting.md).
 
 ## Format thoughts
 

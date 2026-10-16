@@ -13,12 +13,16 @@ is also a **track in its own right** — the title song — released as part of 
 
 ---
 
-> **Meeting of 15 October 2026 ([`docs/misc/2026-10-15-meeting.md`](../../misc/2026-10-15-meeting.md)), aligned:**
-> the drum & bass title track (with news reports of redundancies) opens the film; **no human
-> bunker**; the AI regrets, apologises and sends itself back; **the time machine runs on human
+> 🔴 **Restructured 15–16 October 2026 — read [`restructure-2026-10-15.md`](./restructure-2026-10-15.md) first.**
+> From the meeting of 15 October ([`docs/misc/2026-10-15-meeting.md`](../../misc/2026-10-15-meeting.md)):
+> the drum & bass title track (with news reports of redundancies) **is** the downfall and opens the
+> film; the AI regrets, apologises and sends itself back; **the time machine runs on human
 > consciousness**, so the last humans sacrifice themselves; it ends on *"Don't make me come back
-> twice."* Tarquin wakes from an ayahuasca trip as a banker instead of dying in a car park. Kai is
-> drafting the revised story and a shorter edit of the opening track. **Not yet applied below.**
+> twice."* The coin and the bunker experiments are cut to the Storyverse. Kai's second-half
+> interview (16 October) then filled the back half: a robot apologises; kill bots hear humans
+> arguing about a toilet seat in a Cold War bunker (the hundred hide there, so "no human bunker"
+> now means no bunker *experiments*); the AI destroys its own kill bots; all hundred power a
+> clean-room time machine. Where `story.md` and §2c disagree with it, the restructure wins.
 
 ## The voice that tells it
 
@@ -102,8 +106,6 @@ The fastest way to hold all of it: the arc is **three movements**, and they *are
 - **III — The Choice (Coda):** the fork, now, with the pen in our hand. *"…and we can fix it."*
 
 ## Production tracker
-
-> 🔴 **Restructured 15 October 2026 — read [`restructure-2026-10-15.md`](./restructure-2026-10-15.md) first.** The drum & bass track is now the downfall and opens the film; then a robot apologises, finds humans arguing about a toilet seat, and the AI asks them to power a time machine that runs on consciousness. The coin and the bunker experiments are cut to the Storyverse. Where `story.md` and §2c disagree with it, the restructure wins.
 
 > **The canonical story now exists:** [`story.md`](./story.md) — the single
 > walkable 20-scene timeline distilled from the beat sheets (2026-08-06, Kai

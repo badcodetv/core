@@ -9,7 +9,7 @@ On the 15 Oct 2026 call, comparing a two-minute film with Camping and GitPush Or
 Jack agreed that short, high-retention films (about two minutes) hold people and long ones lose them. Kai also warned against getting bogged down in unpolished music (a Magic Money Tree
 lyric was in the mix). The same call ruled full narration with no lip-sync, because viewers dislike AI
 voices, and changed Karen's ending (a "to be continued" cliffhanger, no moral). That doesn't fix Karen's
-beneficiary problem (next list, item 8). Source: `docs/misc/2026-10-15-jack-kai-call-notes.md`.
+beneficiary problem (next list, item 8). Source: `docs/misc/2026-10-15-meeting.md`.
 
 ## 2026-10-15 — Kai: the repo is the board; the page is read-only
 

@@ -20,7 +20,7 @@ flow_sheet_source:
 > car park, **he wakes from the ayahuasca trip back in the normal world, still a banker, with a changed
 > mission.** The notes place the new ending "at the Shard". He then joins Karen and the President in the
 > [BadCode universe](../../../ideas/badcode-universe.md) (see [Karen](../../karen/story.md)).
-> Source: [`docs/misc/2026-10-15-jack-kai-call-notes.md`](../../../misc/2026-10-15-jack-kai-call-notes.md).
+> Source: [`docs/misc/2026-10-15-meeting.md`](../../../misc/2026-10-15-meeting.md).
 >
 > - **Which film:** the notes don't say. Camping is the only film he is in, and its story video is not
 >   finished (scenes 10 to 12 not yet shot), so it most likely applies there. Not confirmed.
