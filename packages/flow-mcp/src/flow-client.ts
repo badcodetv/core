@@ -1,6 +1,6 @@
 import { basename, dirname, join } from 'node:path'
 import { tmpdir } from 'node:os'
-import { mkdir, writeFile } from 'node:fs/promises'
+import { copyFile, mkdir, mkdtemp, writeFile } from 'node:fs/promises'
 import { chromium, type Browser, type Locator, type Page } from 'playwright'
 import { collectNewCanvases, pickActiveCanvas, type CanvasImg } from './canvas'
 import { toCanvasImgs, SCRAPE_IMGS, type RawImg } from './dom'
@@ -97,6 +97,8 @@ const VIDEO_SIBLING_GRACE_MS = 90_000
 const VIDEO_QUEUED_TIMEOUT_MS = 25 * 60_000
 // Image/grid polls are cheap in-page DOM scrapes, so poll fast (~1s of discovery latency).
 const POLL_MS = 1_000
+/** Short side below which a Character upload is refused up front (see uploadOnCharacterStage). */
+const MIN_CHARACTER_IMAGE_SIDE = 400
 // The video poll additionally makes a content-type HTTP request per candidate media, so keep it
 // a touch slower to stay polite to Flow's media endpoint over the minutes-long generation wait.
 const VIDEO_POLL_MS = 3_000
@@ -828,6 +830,358 @@ export class FlowClient {
       .catch(() => {})
   }
 
+  // ---------------------------------------------------------------------------------------
+  // Characters on the REBUILT Flow (flow.google.com, 2026-09-13 Angular rebuild). Mapped
+  // 2026-10-17 from the hand-driven recipes in docs/flow/automation-2026-09-rebuild.md items
+  // 25–53 (proven at volume: 12 of 12 Characters made, 39 of 39 cast stills). Everything is
+  // driven in-page with native `el.click()` and matched on `innerText` (items 32, 40: Playwright
+  // `hasText` locators on these buttons miss), and nothing is ever matched on a bare "Delete"
+  // (item 44: the top-bar Delete removes the whole Character).
+  // ---------------------------------------------------------------------------------------
+
+  /** Click the first VISIBLE button whose collapsed innerText matches. Returns whether one was found. */
+  private async clickButtonByText(rx: RegExp): Promise<boolean> {
+    return this.page.evaluate(([src, flags]) => {
+      const re = new RegExp(src, flags)
+      const b = [...document.querySelectorAll('button')].find(
+        (x) => x.getBoundingClientRect().width > 0 && re.test((x as HTMLElement).innerText.trim().replace(/\s+/g, ' ')),
+      ) as HTMLElement | undefined
+      b?.click()
+      return Boolean(b)
+    }, [rx.source, rx.flags] as const)
+  }
+
+  /**
+   * Law 20: uploads from `/mnt/*` intermittently never land. Copy such a file into the WSL
+   * filesystem first (keeping its basename, which the pickers match on).
+   */
+  private async localUploadPath(path: string): Promise<string> {
+    if (!path.startsWith('/mnt/')) return path
+    const dir = await mkdtemp(join(tmpdir(), 'flow-upload-'))
+    const local = join(dir, basename(path))
+    await copyFile(path, local)
+    return local
+  }
+
+  /** Upload one file through the visible "upload Upload" control of a character stage (native chooser, item 32). */
+  private async uploadOnCharacterStage(path: string): Promise<void> {
+    // Measured 2026-10-17 (n=1): a 175×538 body image was silently ignored (no error, the Body
+    // never appeared), while the same crop upscaled to 525×1614 landed at once. Fail fast with a
+    // name for it rather than burning a two-minute reload loop.
+    try {
+      const size = jpegSize(readFileSync(path))
+      if (size && Math.min(size.width, size.height) < MIN_CHARACTER_IMAGE_SIDE) {
+        throw new Error(`CHARACTER_IMAGE_TOO_SMALL: ${basename(path)} is ${size.width}×${size.height}; Flow silently ignores small uploads — upscale it so the short side is at least ${MIN_CHARACTER_IMAGE_SIDE}px`)
+      }
+    } catch (err) {
+      if (err instanceof Error && err.message.startsWith('CHARACTER_IMAGE_TOO_SMALL')) throw err
+    }
+    const local = await this.localUploadPath(path)
+    // 🔴 Measured 2026-10-17: Flow can REFUSE an upload server-side (rebuild doc item 55: a
+    // photoreal face). The page shows nothing at all; the only trace is the `maseQ` RPC answering
+    // with a null payload and an error code, e.g. `["wrb.fr","maseQ",null,null,null,[3],…]`.
+    let refused = false
+    const onResponse = async (r: import('playwright').Response): Promise<void> => {
+      if (!r.url().includes('rpcids=maseQ')) return
+      const body = await r.text().catch(() => '')
+      if (/"maseQ",null,null,null,\[\d+\]/.test(body)) refused = true
+    }
+    this.page.on('response', onResponse)
+    try {
+      const chooser = this.page.waitForEvent('filechooser', { timeout: 20_000 })
+      if (!(await this.clickButtonByText(/^upload Upload$/))) {
+        chooser.catch(() => {})
+        throw new Error('CHARACTER_UPLOAD_CONTROL_MISSING')
+      }
+      await (await chooser).setFiles(local)
+      await this.page.waitForTimeout(2_500)
+      // A rights confirmation sometimes appears for an uploaded likeness.
+      await this.clickButtonByText(/^I agree$/)
+      await this.page.waitForTimeout(6_000)
+    } finally {
+      this.page.off('response', onResponse)
+    }
+    if (refused) {
+      throw new Error(`CHARACTER_UPLOAD_REFUSED: Flow refused ${basename(path)} (a content check, e.g. a face that reads as a real person). Use a different image.`)
+    }
+  }
+
+  /** The Character page's tab strip, e.g. "Portrait | accessibility_new Create body" or "Portrait | Body". */
+  private async characterTabs(): Promise<string[]> {
+    return this.page.evaluate(() =>
+      [...document.querySelectorAll('button')]
+        .filter((b) => b.getBoundingClientRect().width > 0)
+        .map((b) => (b as HTMLElement).innerText.trim().replace(/\s+/g, ' '))
+        .filter((t) => /^(Portrait|Body|accessibility_new Create body|portrait Create portrait)$/.test(t)),
+    )
+  }
+
+  /**
+   * Put the project on its Characters view and return the names on its tiles, in order.
+   * Measured 2026-10-17: a populated view renders `<flow-character-tile>` cards whose name is
+   * `span.character-tile-name` — with NO link and no id anywhere in the DOM (the old
+   * `a[href*="/character/"]` scrape finds nothing). An EMPTY project skips the view and opens
+   * the New character composer instead (law 14), which reads as an empty list.
+   */
+  private async openCharactersView(): Promise<string[]> {
+    const projectId = this.currentProjectId()
+    if (!/\/project\/[0-9a-f-]+$/.test(this.page.url())) {
+      await this.page.goto(`${FLOW_URL}/project/${projectId}`, { waitUntil: 'domcontentloaded' })
+    }
+    await this.promptBox().waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS }).catch(() => {})
+    const deadline = Date.now() + 20_000
+    while (Date.now() < deadline) {
+      if (await this.clickButtonByText(/^accessibility_new Characters$/)) break
+      await this.page.waitForTimeout(POLL_MS)
+    }
+    const settle = Date.now() + 15_000
+    while (Date.now() < settle) {
+      const names = await this.page.evaluate(() =>
+        [...document.querySelectorAll('flow-character-tile .character-tile-name')].map((e) => (e.textContent ?? '').trim()),
+      )
+      if (names.length) return names
+      if (/\/character$/.test(this.page.url())) return []
+      await this.page.waitForTimeout(POLL_MS)
+    }
+    return []
+  }
+
+  /** Click the index-th Character tile and return the `/character/<uuid>` it opens. */
+  private async openCharacterTile(index: number): Promise<string> {
+    await this.page.evaluate((i) => {
+      const tile = document.querySelectorAll('flow-character-tile')[i] as HTMLElement | undefined
+      tile?.click()
+    }, index)
+    await this.page.waitForURL(/\/character\/[0-9a-f-]{36}/, { timeout: 20_000 })
+    return this.page.url().split('/').pop()!
+  }
+
+  /** Read every Character in the open project as `{ name, id }` (ids by opening each tile). */
+  private async listCharactersRebuilt(): Promise<CharacterListItem[]> {
+    const projectId = this.currentProjectId()
+    const names = await this.openCharactersView()
+    const out: CharacterListItem[] = []
+    for (const [i, name] of names.entries()) {
+      if (i > 0) {
+        await this.page.goto(`${FLOW_URL}/project/${projectId}`, { waitUntil: 'domcontentloaded' })
+        await this.openCharactersView()
+      }
+      out.push({ name, id: await this.openCharacterTile(i) })
+    }
+    if (names.length) await this.page.goto(`${FLOW_URL}/project/${projectId}`, { waitUntil: 'domcontentloaded' })
+    return out
+  }
+
+  /** Open a Character's own page by exact (case-sensitive) name, via its tile. Returns its id. */
+  private async openCharacterPageRebuilt(name: string): Promise<string> {
+    const projectId = this.currentProjectId()
+    await this.page.goto(`${FLOW_URL}/project/${projectId}`, { waitUntil: 'domcontentloaded' })
+    const names = await this.openCharactersView()
+    const index = names.indexOf(name)
+    if (index < 0) throw new Error(`CHARACTER_NOT_FOUND: "${name}" (project has: ${names.map((n) => `"${n}"`).join(', ') || 'none'})`)
+    const id = await this.openCharacterTile(index)
+    await this.page.locator('button[aria-label="Edit name"]').first().waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    // The tab strip hydrates after the name: wait for a Portrait/Body tab, not a fixed delay.
+    for (let i = 0; i < 20; i++) {
+      const tabs = await this.characterTabs()
+      if (tabs.includes('Portrait') || tabs.includes('Body')) break
+      await this.page.waitForTimeout(POLL_MS)
+    }
+    return id
+  }
+
+  /** The rebuilt Character page's info note (item 25). */
+  private characterInfoFieldRebuilt(): Locator {
+    return this.page.locator('textarea[aria-label="Character personality"]').first()
+  }
+
+  /** Press the Character page's Done (by innerText, item 32) and land back on the project. */
+  private async finishCharacterRebuilt(): Promise<void> {
+    await this.clickButtonByText(/^Done$/)
+    await this.page
+      .waitForURL((u) => /\/project\/[0-9a-f-]+$/.test(u.toString()), { timeout: 20_000 })
+      .catch(() => {})
+  }
+
+  /**
+   * Create a Character: portrait upload → name → optional info → optional body upload → Done.
+   * Item 32/53's recipe. `bodyImage` is an IMAGE PATH (the proven route); a text `body`
+   * description is generated on the Create-body stage's own composer.
+   */
+  private async createCharacterRebuilt(
+    name: string,
+    portrait: string,
+    opts?: { info?: string; bodyImage?: string; body?: string; bodyOutPath?: string },
+  ): Promise<CharacterRef & { id: string; tabs: string[]; bodyPath?: string }> {
+    const projectId = this.currentProjectId()
+    await this.page.goto(`${FLOW_URL}/project/${projectId}/character`, { waitUntil: 'domcontentloaded' })
+    await this.page.getByText('Describe your character…').first().waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    await this.uploadOnCharacterStage(portrait)
+    await this.page.waitForURL(/\/character\/[0-9a-f-]{36}/, { timeout: TURN_TIMEOUT_MS })
+    const id = this.page.url().split('/').pop()!
+    // 🔴 Measured 2026-10-17: the upload lands server-side but the stage does NOT redraw — it
+    // keeps showing "Create portrait" and ignores further uploads (no request leaves the page).
+    // A reload shows the Portrait. So reload, then verify, rather than trusting the stage.
+    await this.reloadCharacterPageUntil('Portrait')
+    await this.page.locator('button[aria-label="Edit name"]').first().evaluate((el) => (el as HTMLElement).click())
+    const input = this.page.locator('input[aria-label="Character name"]')
+    await input.waitFor({ state: 'visible', timeout: 10_000 })
+    await input.fill(name)
+    await input.press('Enter')
+    await this.page.waitForTimeout(1_500)
+    if (opts?.info) {
+      const info = this.characterInfoFieldRebuilt()
+      if (await info.count()) await info.fill(opts.info)
+    }
+    // Name and info persist only on Done (measured 2026-10-17: a reload before Done lost both).
+    await this.finishCharacterRebuilt()
+    // The Body goes through the same route as flow_character_body: open the Character by its
+    // tile, not by URL. Measured 2026-10-17: after a direct goto to /character/<id> the body
+    // upload was silently ignored (twice), while the tile route landed it first time.
+    let bodyPath: string | undefined
+    if (opts?.bodyImage || opts?.body) {
+      const res = await this.addCharacterBodyRebuilt(name, opts.body ?? '', opts.bodyImage, opts.bodyOutPath)
+      if (res.path) bodyPath = res.path
+    }
+    const names = await this.openCharactersView()
+    if (!names.includes(name)) throw new Error(`CHARACTER_NAME_NOT_SAVED: ${id} (project has: ${names.join(', ')})`)
+    await this.openCharacterPageRebuilt(name)
+    let tabs = await this.characterTabs()
+    for (let i = 0; i < 20 && !tabs.includes('Portrait'); i++) {
+      await this.page.waitForTimeout(POLL_MS)
+      tabs = await this.characterTabs()
+    }
+    await this.finishCharacterRebuilt()
+    return { name, id, tabs, ...(bodyPath ? { bodyPath } : {}) }
+  }
+
+  /** Open a Character by its tile, add its Body (upload or generate), verify, save, Done. */
+  private async addCharacterBodyRebuilt(name: string, description: string, bodyImage?: string, outPath?: string): Promise<MediaResult> {
+    await this.openCharacterPageRebuilt(name)
+    await this.openCreateBodyStage()
+    if (bodyImage) await this.uploadOnCharacterStage(bodyImage)
+    else {
+      await this.setPrompt(description)
+      await this.clickSubmit()
+    }
+    await this.reloadCharacterPageUntil('Body')
+    const saved = outPath ? await this.saveCharacterView('body', outPath) : false
+    await this.finishCharacterRebuilt()
+    return { path: saved ? outPath! : '', mediaId: '' }
+  }
+
+  /**
+   * Open the Create-body stage. A click straight after navigation is swallowed while the page
+   * hydrates (measured 2026-10-17), so click, wait for the stage's Upload control, and retry.
+   */
+  private async openCreateBodyStage(): Promise<void> {
+    for (let attempt = 0; attempt < 5; attempt++) {
+      if (!(await this.clickButtonByText(/^accessibility_new Create body$/))) {
+        if ((await this.characterTabs()).includes('Body')) throw new Error('BODY_EXISTS')
+      }
+      const deadline = Date.now() + 6_000
+      while (Date.now() < deadline) {
+        const ready = await this.page.evaluate(() =>
+          /Generate or add an image/.test(document.body.innerText) &&
+          [...document.querySelectorAll('button')].some(
+            (x) => x.getBoundingClientRect().width > 0 && (x as HTMLElement).innerText.trim().replace(/\s+/g, ' ') === 'upload Upload',
+          ),
+        )
+        if (ready) return
+        await this.page.waitForTimeout(500)
+      }
+    }
+    throw new Error('CREATE_BODY_STAGE_DID_NOT_OPEN')
+  }
+
+  /**
+   * Reload the Character page until its tab strip shows `tab` (Portrait/Body), up to ~2 minutes:
+   * uploads and generations land server-side without the stage redrawing (2026-10-17).
+   */
+  private async reloadCharacterPageUntil(tab: 'Portrait' | 'Body'): Promise<void> {
+    const deadline = Date.now() + 120_000
+    for (;;) {
+      await this.page.waitForTimeout(4_000)
+      await this.page.reload({ waitUntil: 'domcontentloaded' })
+      await this.page.locator('button[aria-label="Edit name"]').first().waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+      await this.page.waitForTimeout(2_500)
+      if ((await this.characterTabs()).includes(tab)) return
+      if (Date.now() > deadline) throw new Error(tab === 'Body' ? 'CHARACTER_BODY_NOT_ADDED' : 'CHARACTER_PORTRAIT_NOT_ADDED')
+    }
+  }
+
+  /**
+   * Save the Portrait or Body image currently on the Character page by fetching its `src`
+   * in-page (the cast scripts' proven harvest, item 36). Returns false when no view image shows.
+   */
+  private async saveCharacterView(view: 'portrait' | 'body', outPath: string): Promise<boolean> {
+    await this.clickButtonByText(view === 'body' ? /^Body$/ : /^Portrait$/)
+    await this.page.waitForTimeout(1_500)
+    // No named inner functions in page.evaluate: tsx's keepNames wraps them in `__name`,
+    // which does not exist in the page (ReferenceError, measured 2026-10-17).
+    const b64 = await this.page.evaluate(async () => {
+      const img = [...document.querySelectorAll('img')]
+        .filter((i) => i.getBoundingClientRect().width > 150)
+        .sort((a, b) => b.getBoundingClientRect().width * b.getBoundingClientRect().height - a.getBoundingClientRect().width * a.getBoundingClientRect().height)[0]
+      if (!img) return ''
+      const buf = new Uint8Array(await (await (await fetch(img.src)).blob()).arrayBuffer())
+      let s = ''
+      for (const x of buf) s += String.fromCharCode(x)
+      return btoa(s)
+    })
+    if (!b64) return false
+    await mkdir(dirname(outPath), { recursive: true })
+    await writeFile(outPath, Buffer.from(b64, 'base64'))
+    return true
+  }
+
+  /**
+   * Cast a Character into the compose bar on the rebuilt Flow: open the ingredient picker, type
+   * the name into "Search assets" (item 46: the All list drops Characters past four), click the
+   * row reading `<name> Character`, press "Add to prompt" only if the picker is still open
+   * (item 26), and VERIFY a new chip appeared. Callers reload the project first (items 29, 49:
+   * Character rows drop out of the picker until a reload).
+   */
+  private async addCharacterToPromptRebuilt(name: string): Promise<void> {
+    const overlay = this.page.locator('.cdk-overlay-container')
+    const base = await this.ingredientChips().count()
+    await this.ingredientsButton().click()
+    const search = overlay.locator('input[aria-label="Search assets"]').first()
+    await search.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+    await search.fill(name)
+    const row = async (): Promise<boolean> =>
+      this.page.evaluate((name) =>
+        [...document.querySelectorAll('.cdk-overlay-container [role=option]')].some(
+          (r) => (r as HTMLElement).innerText.trim().replace(/\s+/g, ' ') === `${name} Character`,
+        ), name)
+    const deadline = Date.now() + 20_000
+    while (!(await row()) && Date.now() < deadline) await this.page.waitForTimeout(POLL_MS)
+    const clicked = await this.page.evaluate((name) => {
+      const el = [...document.querySelectorAll('.cdk-overlay-container [role=option]')].find(
+        (r) => (r as HTMLElement).innerText.trim().replace(/\s+/g, ' ') === `${name} Character`,
+      )
+      if (!el) return false
+      for (const type of ['pointerdown', 'mousedown', 'pointerup', 'mouseup', 'click'])
+        el.dispatchEvent(new (type.startsWith('pointer') ? PointerEvent : MouseEvent)(type, { bubbles: true, cancelable: true, view: window }))
+      return true
+    }, name)
+    if (!clicked) {
+      await this.page.keyboard.press('Escape')
+      throw new Error(`CHARACTER_NOT_FOUND: no "${name} Character" row in the picker`)
+    }
+    await this.page.waitForTimeout(1_500)
+    if (await overlay.locator('[role=option]').count()) {
+      await this.clickButtonByText(/^Add to prompt$/)
+      await this.page.waitForTimeout(1_500)
+    }
+    if (await overlay.locator('[role=option]').count()) await this.page.keyboard.press('Escape')
+    try {
+      await this.ingredientChips().nth(base).waitFor({ state: 'visible', timeout: 10_000 })
+    } catch {
+      throw new Error(`CHARACTER_ATTACH_FAILED: ${name} did not attach to the prompt`)
+    }
+  }
+
   /** Leave the character editor (Done persists the edits and returns to the project root). */
   private async finishCharacter(): Promise<void> {
     const done = this.page.getByRole('button', { name: /^Done$/ }).first()
@@ -846,7 +1200,11 @@ export class FlowClient {
    * generalised to every character card rather than one named lookup.
    */
   async listCharacters(): Promise<CharacterListItem[]> {
-    this.assertMappedOnRebuild('listCharacters')
+    if (this.isRebuilt()) {
+      const rows = await this.listCharactersRebuilt()
+      await this.reloadProject()
+      return rows
+    }
     await this.ensureCharactersSection()
     // The project root's grid hydrates AFTER navigation, so a single immediate read returns []
     // on a project that plainly has characters — the same silent race listMedia and
@@ -920,7 +1278,16 @@ export class FlowClient {
     portraitMediaId?: string
     bodyMediaId?: string
   }> {
-    this.assertMappedOnRebuild('getCharacter')
+    if (this.isRebuilt()) {
+      await this.openCharacterPageRebuilt(name)
+      const info = await this.characterInfoFieldRebuilt().inputValue().catch(() => '')
+      const hasBody = (await this.characterTabs()).includes('Body')
+      if (opts?.portraitOutPath) await this.saveCharacterView('portrait', opts.portraitOutPath)
+      if (hasBody && opts?.bodyOutPath) await this.saveCharacterView('body', opts.bodyOutPath)
+      await this.finishCharacterRebuilt()
+      await this.reloadProject()
+      return { name, info, hasBody }
+    }
     await this.openCharacterPage(name)
     const info = await this.characterInfoField().inputValue().catch(() => '')
     const hasBody = (await this.page.getByRole('button', { name: /^Body$/ }).first().count()) > 0
@@ -1314,6 +1681,9 @@ export class FlowClient {
   ): Promise<ImageResult & { candidates?: ImageResult[]; partial?: boolean }> {
     const numOutputs = opts?.numOutputs ?? 1
     await this.ensureProjectRoot()
+    // Rebuilt Flow: Character rows drop out of the picker until a reload (rebuild doc items 29,
+    // 49) — and a reload resets the model (law 15), so it must come BEFORE ensureImageMode.
+    if (opts?.character && this.isRebuilt()) await this.reloadProject()
     await this.ensureImageMode(numOutputs, opts?.model, opts?.aspect)
     const before = await this.snapshotMediaNames()
     if (opts?.character) await this.submitWithCharacter(opts.character, prompt)
@@ -1338,13 +1708,14 @@ export class FlowClient {
   ): Promise<EditResult> {
     const numOutputs = opts?.numOutputs ?? 2
     await this.ensureProjectRoot()
+    if (opts?.character && this.isRebuilt()) await this.reloadProject() // see generateImage
     await this.ensureImageMode(numOutputs, opts?.model, opts?.aspect)
     await this.attachReferences(referenceImages)
     if (opts?.character) await this.addCharacterToPrompt(opts.character)
     // Snapshot AFTER attaching: the uploads themselves land in the media grid as new UUIDs.
     const before = await this.snapshotMediaNames()
     const box = this.promptBox()
-    if (opts?.character) {
+    if (opts?.character && !this.isRebuilt()) {
       // An inline character chip is now in the box — append, never fill().
       await box.evaluate((el) => (el as HTMLElement).focus())
       await this.page.keyboard.press('End')
@@ -1629,6 +2000,7 @@ export class FlowClient {
    * is INLINE in the contenteditable, so callers must APPEND prompt text afterwards.
    */
   private async addCharacterToPrompt(name: string): Promise<void> {
+    if (await this.ingredientsButton().count()) return this.addCharacterToPromptRebuilt(name)
     const dialog = await this.openAssetPicker()
     const charactersTab = dialog.getByRole('tab', { name: /Characters/i })
     await charactersTab.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
@@ -1679,6 +2051,13 @@ export class FlowClient {
   /** Character cast + scene text + submit (append after the inline chip — fill() wipes it). */
   private async submitWithCharacter(name: string, prompt: string): Promise<void> {
     await this.addCharacterToPrompt(name)
+    if (this.isRebuilt()) {
+      // Rebuilt chips sit in a strip ABOVE the editor, so setting the text cannot remove them —
+      // and it clears any stray `@` or old prompt left in the box (rebuild doc item 35).
+      await this.setPrompt(prompt)
+      await this.clickSubmit()
+      return
+    }
     const box = this.promptBox()
     await box.evaluate((el) => (el as HTMLElement).focus())
     await this.page.keyboard.press('End')
@@ -1731,6 +2110,12 @@ export class FlowClient {
       }
       let outcome: BatchOutcome
       try {
+        if (opts?.character && this.isRebuilt()) {
+          // Per prompt: Character rows drop out of the picker after a run of generations
+          // (rebuild doc item 49), and the reload resets the model, so re-assert it.
+          await this.reloadProject()
+          await this.ensureImageMode(numOutputs, opts?.model, opts?.aspect)
+        }
         const before = await this.snapshotMediaNames()
         if (opts?.character) await this.submitWithCharacter(opts.character, prompt)
         else await this.submitPrompt(prompt)
@@ -1829,9 +2214,17 @@ export class FlowClient {
   async createCharacter(
     name: string,
     refImages: string[],
-    opts?: { info?: string; body?: string; model?: string; bodyOutPath?: string },
-  ): Promise<CharacterRef & { bodyMediaId?: string; bodyPath?: string }> {
-    this.assertMappedOnRebuild('createCharacter')
+    opts?: { info?: string; body?: string; bodyImage?: string; model?: string; bodyOutPath?: string },
+  ): Promise<CharacterRef & { bodyMediaId?: string; bodyPath?: string; id?: string; tabs?: string[] }> {
+    if (this.isRebuilt()) {
+      if (!refImages.length) throw new Error('NO_REFERENCE_IMAGES')
+      // A second reference image becomes the Body when no body is given (the rebuilt Character
+      // holds exactly one Portrait and one Body image; there is no multi-image reference).
+      const bodyImage = opts?.bodyImage ?? (opts?.body ? undefined : refImages[1])
+      const made = await this.createCharacterRebuilt(name, refImages[0]!, { ...opts, bodyImage })
+      await this.reloadProject()
+      return made
+    }
     await this.ensureProjectRoot()
     await this.forceClick(this.page.getByRole('button', { name: /accessibility_new\s*Characters/i }).first())
     await this.page.waitForURL(/\/characters\b/, { timeout: TURN_TIMEOUT_MS })
@@ -1960,8 +2353,13 @@ export class FlowClient {
   async createCharacterBody(
     name: string,
     description: string,
-    opts?: { model?: string; outPath?: string },
+    opts?: { model?: string; outPath?: string; bodyImage?: string },
   ): Promise<MediaResult> {
+    if (this.isRebuilt()) {
+      const res = await this.addCharacterBodyRebuilt(name, description, opts?.bodyImage, opts?.outPath)
+      await this.reloadProject()
+      return res
+    }
     await this.openCharacterPage(name)
     const res = await this.runCreateBody(description, opts?.model, opts?.outPath)
     await this.finishCharacter()
@@ -1970,7 +2368,16 @@ export class FlowClient {
 
   /** Set (or replace) the character's free-text personality/appearance note. */
   async setCharacterInfo(name: string, info: string): Promise<CharacterRef> {
-    this.assertMappedOnRebuild('setCharacterInfo')
+    if (this.isRebuilt()) {
+      await this.openCharacterPageRebuilt(name)
+      const field = this.characterInfoFieldRebuilt()
+      await field.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
+      await field.fill(info)
+      await this.page.waitForTimeout(1_000)
+      await this.finishCharacterRebuilt()
+      await this.reloadProject()
+      return { name }
+    }
     await this.openCharacterPage(name)
     const field = this.characterInfoField()
     await field.waitFor({ state: 'visible', timeout: TURN_TIMEOUT_MS })
@@ -2360,7 +2767,6 @@ export class FlowClient {
    */
   private async generateVideoRebuilt(req: VideoRequest, videoModel: string, duration: number): Promise<VideoResult> {
     const { motion, outPath, startImage, endImage } = req
-    if (req.character) throw new Error('FLOW_REBUILD_UNMAPPED: casting a character into a video')
     const count = req.count ?? 1
     const aspect = req.aspect ?? DEFAULT_VIDEO_ASPECT
     await this.ensureProject()
@@ -2370,6 +2776,11 @@ export class FlowClient {
     await this.ensureVideoConfigRebuilt({ model: videoModel, aspect, duration, count, frames: Boolean(startImage || endImage) })
     if (startImage) await this.fillFrameSlotRebuilt('Start', basename(startImage))
     if (endImage) await this.fillFrameSlotRebuilt('End', basename(endImage))
+    if (req.character) {
+      // The reload above already refreshed the picker's Character rows (rebuild doc item 29).
+      if (!(await this.ingredientsButton().count())) throw new Error('CHARACTER_CAST_UNAVAILABLE: no ingredient picker in this video mode')
+      await this.addCharacterToPromptRebuilt(req.character)
+    }
     await this.markTurnStart()
     // Settle, not snapshot: see VIDEO_MIN_RENDER_MS for the run this cost.
     const before = await this.settleVideoTiles()

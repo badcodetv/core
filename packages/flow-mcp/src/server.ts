@@ -567,22 +567,24 @@ server.registerTool(
   {
     title: 'Create character',
     description:
-      'Create a reusable Flow Character from one or more reference image paths (absolute), for cross-slide consistency, and optionally complete it in the SAME call: pass body to add the full-figure Body view (Flow\'s native "Create Body" pass — describe build, posture and outfit) and info to fill the free-text note Flow\'s scene agent reads. A character with both a Portrait and a Body binds identity far better than a portrait alone. Cast it later with the character parameter, or "@" in a prompt. Returns { name, bodyMediaId?, bodyPath? }.',
+      'Create a reusable Flow Character for cross-shot consistency, and optionally complete it in the SAME call. On the rebuilt Flow (flow.google.com): refImages[0] is uploaded as the Portrait; the Body is bodyImage (an image path — the proven route), else refImages[1], else generated from the text `body`; info fills the Character\'s personality note. A Character with both a Portrait and a Body binds identity far better than a portrait alone. Cast it later with the `character` parameter of the image/edit/batch/video tools (the rebuild reloads the project before each cast, because Character rows drop out of the picker until a reload). Returns { name, id, tabs, bodyPath? }.',
     inputSchema: {
       name: z.string().min(1),
       refImages: z.array(z.string().min(1)).min(1),
       body: z.string().min(1).optional(),
+      bodyImage: z.string().min(1).optional(),
       info: z.string().min(1).optional(),
       bodyOutPath: z.string().min(1).optional(),
       model: z.string().min(1).optional(),
     },
   },
-  async ({ name, refImages, body, info, bodyOutPath, model }) => {
+  async ({ name, refImages, body, bodyImage, info, bodyOutPath, model }) => {
     try {
       return await withClient(async (c) =>
         ok(
           await c.createCharacter(name, refImages, {
             ...(body ? { body } : {}),
+            ...(bodyImage ? { bodyImage } : {}),
             ...(info ? { info } : {}),
             ...(bodyOutPath ? { bodyOutPath } : {}),
             ...(model ? { model } : {}),
@@ -633,19 +635,21 @@ server.registerTool(
   {
     title: 'Add character body view',
     description:
-      'Add the full-figure Body view to an existing Character that only has a Portrait, via Flow\'s native "Create Body" pass. description should cover build, posture, outfit and setting. Errors BODY_EXISTS if it already has one — use flow_edit_character to change that. Returns { path, mediaId }.',
+      'Add the full-figure Body view to an existing Character that only has a Portrait, via Flow\'s native "Create Body" pass. Pass bodyImage (an image path) to upload the Body — the proven route on the rebuilt Flow — or description alone to generate it. description should cover build, posture, outfit and setting. Errors BODY_EXISTS if it already has one — use flow_edit_character to change that. Returns { path, mediaId }.',
     inputSchema: {
       name: z.string().min(1),
       description: z.string().min(1),
+      bodyImage: z.string().min(1).optional(),
       outPath: z.string().min(1).optional(),
       model: z.string().min(1).optional(),
     },
   },
-  async ({ name, description, outPath, model }) => {
+  async ({ name, description, bodyImage, outPath, model }) => {
     try {
       return await withClient(async (c) =>
         ok(
           await c.createCharacterBody(name, description, {
+            ...(bodyImage ? { bodyImage } : {}),
             ...(outPath ? { outPath } : {}),
             ...(model ? { model } : {}),
           }),

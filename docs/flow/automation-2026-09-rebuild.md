@@ -20,8 +20,10 @@ all run live 2026-09-13 on free tiers.
 | `flow_generate_video` — start frame; start + end frame | ✅ proven (Veo 3.1 Lite [Lower Priority], 4s) |
 | `flow_generate_batch` | 🟡 same primitives as generate_image, not run live |
 | `flow_generate_video` — text only (no frames), `count` > 1 | 🟡 coded, not run live |
-| characters (all six tools), `flow_list_media`, `flow_refine_video`, Scene Builder (`flow_scene_*`) | 🔴 not re-mapped — they throw `FLOW_REBUILD_UNMAPPED` at once instead of timing out |
-| casting a character into an image or video | 🔴 not re-mapped |
+| `flow_create_character`, `flow_character_body`, `flow_list_characters`, `flow_get_character`, `flow_character_info` | ✅ **re-mapped 2026-10-17** (items 63–72): 3 Characters made, read back, listed |
+| casting a Character into a still (`flow_generate_image`, `flow_edit_image` with references, `flow_generate_batch`) | ✅ **re-mapped 2026-10-17**: image and image+reference casts proven; batch uses the same path, not run live |
+| casting a Character into a video | 🟡 coded 2026-10-17 (ingredient picker after the frame slots), not run live |
+| ~~characters (all six tools)~~, `flow_create_character_from_media`, `flow_edit_character`, `flow_list_media`, `flow_refine_video`, Scene Builder (`flow_scene_*`) | 🔴 not re-mapped — they throw `FLOW_REBUILD_UNMAPPED` at once instead of timing out |
 
 ## The facts that cost time
 
@@ -380,3 +382,42 @@ already have.** Compare ids before trusting a file, and start a new project well
     9224, on the "about" page) while the working, signed-in browser was still channel 1 on 9222. Every
     MCP call timed out. Scripts pinned with `FLOW_CDP_PORT=9222` kept working. `flow_status` shows the
     channel; read it before retrying.
+
+## 2026-10-17 — Characters re-mapped into the MCP (project `0558b1d5`, GPOM)
+
+The by-hand recipes above (items 25–53) are now in `flow-client.ts`: `createCharacterRebuilt`,
+`addCharacterBodyRebuilt`, `listCharactersRebuilt`, `openCharacterPageRebuilt`, `saveCharacterView` and
+`addCharacterToPromptRebuilt`. Proof: `packages/flow-mcp/src/smoke-characters-rebuilt.ts`. Made: **West
+Country Bot** (portrait + body + info), **Kill Bot** (in one `create` call, end to end), **Cream Jumper
+Woman** (portrait + body), **Green Jumper Man** (portrait only; see item 70). Cast: the bot into a still
+from its Character alone, and into the L3 chair room with L3 as a reference (both on model, bunting and
+beacon intact). Credits: uploads cost nothing; two Nano Banana 2 stills.
+
+63. 🔴 **A Character page does not redraw after an upload.** The portrait lands server-side, but the stage
+    still reads "Create portrait", and further uploads on that stale page send **no request at all**. A
+    reload shows the Portrait. The code reloads until the tab appears (`reloadCharacterPageUntil`).
+64. 🔴 **The name and the info note save only on `Done`.** A reload before Done lost both.
+65. **A click straight after navigation is swallowed** while the page hydrates (here, `Create body`). The
+    code clicks, waits for the stage's `upload Upload` control, and retries (`openCreateBodyStage`).
+66. **The populated Characters view has no links.** Cards are `<flow-character-tile>` with
+    `span.character-tile-name`, and no id anywhere in the DOM (the old `a[href*="/character/"]` scrape
+    finds nothing). The id appears only in the URL after a tile is clicked, so listing clicks each tile.
+    The view also shows a `New character` tile and a `Create my avatar` tile; neither is a
+    `flow-character-tile`. `/project/<id>/characters` is a 404; the Characters view has no route of its own.
+67. **An empty project still skips the view** and opens the New character composer at `/project/<id>/character`
+    (law 14). Listing treats that as "no Characters".
+68. **Uploads from the Bash sandbox's `/tmp` never land** (item 28 again, for uploads): Chrome cannot see
+    the file. The MCP server is not sandboxed, so this only bites smoke scripts. Stage test files under the repo.
+69. **A small image is silently ignored** (n=1): a 175×538 body crop never appeared; the same crop upscaled
+    to 525×1614 landed. The code refuses images whose short side is under 400 px, with a clear error.
+70. 🔴 **Flow can refuse an upload server-side, and the page shows nothing.** The only trace is the `maseQ`
+    RPC answering `["wrb.fr","maseQ",null,null,null,[3],…]`. It happened on a photoreal man's body crop,
+    twice (item 55 again). The code watches for that response and throws `CHARACTER_UPLOAD_REFUSED`.
+71. **Casting uses the ingredient picker's `Search assets` box** and the row reading `<name> Character`, after
+    a project reload (items 29, 46, 49). Because a reload resets the model (law 15), the reload comes before
+    `ensureImageMode`; in a batch it happens before every prompt. Rebuilt chips sit above the editor, so the
+    prompt is set with `setPrompt`, not appended.
+72. **`tsx` breaks named helper functions inside `page.evaluate`** (`ReferenceError: __name is not
+    defined`). Write the expressions inline.
+73. The default image model on the Character page now reads **"Nano Banana 2.1"** (seen 2026-10-17;
+    not yet checked on the main compose bar).
