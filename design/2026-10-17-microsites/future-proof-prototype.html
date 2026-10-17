@@ -1,0 +1,455 @@
+<title>Future Proof</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a building site in daylight. It opens in the dark (the finished bad
+   branch, filed as a postmortem), crosses the fork, then becomes blueprint
+   paper and hi-vis: three hands-on toys, one honest hole, an empty plot.
+   Deliberately single-theme: this is the first lit place in BadCode. */
+:root {
+  --day: #f3f5ef;
+  --paper: #ffffff;
+  --ink: #17202b;
+  --muted: #5d6672;
+  --blue: #2752c4;
+  --hivis: #ff6914;
+  --concrete: #d9dcd3;
+  --night: #121110;
+  --nightink: #d9d3c6;
+  --ok: #1f7a4a;
+  --display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --body: "Atkinson Hyperlegible", "Helvetica Neue", Arial, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body { background: var(--day); color: var(--ink); font-family: var(--body); font-size: 18px; line-height: 1.55; }
+:focus-visible { outline: 3px solid var(--hivis); outline-offset: 2px; }
+.wrap { max-width: 1100px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.band { padding-block: 12vh; }
+h1, h2, h3 { font-family: var(--display); font-stretch: 75%; font-weight: 850; line-height: .98; letter-spacing: -.005em; text-wrap: balance; margin: 0; }
+h2 { font-size: clamp(36px, 6vw, 72px); text-transform: uppercase; }
+h3 { font-size: 26px; font-stretch: 85%; }
+p { margin: 0; max-width: 36em; }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--blue); }
+.stack { display: grid; gap: 18px; }
+.lede { font-size: 21px; }
+.mono { font-family: var(--mono); }
+
+/* blueprint ground */
+.blueprint {
+  background-color: var(--day);
+  background-image:
+    linear-gradient(rgba(39, 82, 196, .07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(39, 82, 196, .07) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* ---------- the dark opening: a postmortem ---------- */
+.night { background: var(--night); color: var(--nightink); }
+.night .proto { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #8d867a; padding-block: 14px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.night .proto b { color: var(--hivis); font-weight: 600; }
+.pm { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: start; padding-block: 8vh 12vh; }
+.pm h1 { font-size: clamp(44px, 7.4vw, 96px); text-transform: uppercase; color: #f2ede2; }
+.pm .lede { color: #b9b2a5; margin-top: 22px; }
+.report { font-family: var(--mono); font-size: 13.5px; line-height: 1.6; border: 1px solid #3a3631; padding: 22px; background: #181715; }
+.report .head { color: #8d867a; letter-spacing: .12em; text-transform: uppercase; font-size: 11px; border-bottom: 1px solid #3a3631; padding-bottom: 10px; margin-bottom: 14px; }
+.report dl { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 10px 18px; margin: 0; }
+.report dt { color: #8d867a; }
+.report dd { margin: 0; color: #ece6d9; }
+.report .blank { display: inline-block; min-width: 10em; border-bottom: 1px dashed #8d867a; color: #8d867a; }
+.report .boxes span { display: block; color: #8d867a; }
+
+/* ---------- the fork ---------- */
+.forkband { background: linear-gradient(to bottom, var(--night) 0, #2b2a27 18%, #c9cdc4 48%, var(--day) 70%); }
+.fork { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 40px; align-items: center; padding-block: 10vh 14vh; }
+.fork svg { width: 100%; height: auto; display: block; }
+.fork .copy { background: rgba(243, 245, 239, .92); padding: 22px; border-left: 4px solid var(--hivis); }
+
+/* ---------- toys ---------- */
+.toy { background: var(--paper); border: 1.5px solid var(--ink); box-shadow: 8px 8px 0 var(--concrete); padding: 24px; display: grid; gap: 18px; }
+.toyhead { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; border-bottom: 1.5px solid var(--ink); padding-bottom: 12px; }
+.tag { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; background: var(--hivis); color: #1a0d03; padding: 3px 8px; }
+.two { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 44px; align-items: start; }
+
+/* toy 1: bundles */
+.btable { width: 100%; border-collapse: collapse; font-size: 16px; }
+.btable th { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); text-align: center; font-weight: 600; padding: 6px 4px; }
+.btable th:first-child { text-align: left; }
+.btable td { border-top: 1px solid var(--concrete); padding: 8px 4px; text-align: center; vertical-align: middle; }
+.btable td:first-child { text-align: left; }
+.yn { font-family: var(--mono); font-size: 12px; font-weight: 600; min-width: 46px; padding: 6px 8px; border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); cursor: pointer; }
+.yn[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.fixed { font-family: var(--mono); font-size: 12px; font-weight: 600; display: inline-block; min-width: 40px; padding: 5px 6px; }
+.fixed.clash { background: var(--hivis); color: #1a0d03; }
+.tally { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.tally div { border: 1.5px solid var(--ink); padding: 12px; }
+.tally b { display: block; font-family: var(--display); font-stretch: 75%; font-weight: 850; font-size: 44px; line-height: 1; font-variant-numeric: tabular-nums; }
+.tally span { font-size: 14px; color: var(--muted); }
+.tally .mine { background: var(--ink); color: var(--paper); }
+.tally .mine span { color: var(--concrete); }
+.example { font-family: var(--mono); font-size: 11px; color: var(--muted); letter-spacing: .04em; }
+
+/* toy 2: the update */
+.track { display: grid; gap: 14px; }
+.lane { display: grid; grid-template-columns: 150px minmax(0, 1fr) 140px; gap: 12px; align-items: center; }
+.lane .who { font-weight: 700; font-size: 15px; }
+.lane .bar { height: 26px; background: var(--day); border: 1.5px solid var(--ink); position: relative; overflow: hidden; }
+.lane .bar i { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--blue); }
+.lane .bar.dense { background-image: repeating-linear-gradient(90deg, var(--blue) 0 1px, transparent 1px 3px); background-size: 3px 100%; background-repeat: repeat-y; }
+.lane .bar .fill { position: absolute; inset: 0 auto 0 0; background: var(--day); right: 0; }
+.lane .n { font-family: var(--mono); font-size: 14px; text-align: right; font-variant-numeric: tabular-nums; }
+.lane.gov .bar i { width: 6px; background: var(--hivis); }
+input[type="range"] { width: 100%; accent-color: var(--hivis); }
+.months { font-family: var(--mono); font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; }
+.src { font-family: var(--mono); font-size: 11px; color: var(--muted); line-height: 1.5; }
+
+/* toy 3: gate */
+.promises { display: flex; gap: 8px; flex-wrap: wrap; }
+.promises button { font-family: var(--body); font-size: 15px; padding: 8px 12px; border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); cursor: pointer; }
+.promises button[aria-pressed="true"] { background: var(--blue); border-color: var(--blue); color: var(--paper); }
+.field { display: grid; gap: 6px; }
+.field label { font-weight: 700; font-size: 15px; }
+.field input, textarea { font-family: var(--body); font-size: 16px; padding: 10px 12px; border: 1.5px solid var(--ink); background: var(--day); color: var(--ink); width: 100%; }
+.gate { display: flex; align-items: center; gap: 14px; padding: 14px; border: 2px dashed var(--muted); font-weight: 700; }
+.gate .lamp { width: 18px; height: 18px; border-radius: 50%; background: var(--hivis); flex: none; }
+.gate.open { border-style: solid; border-color: var(--ok); color: var(--ok); }
+.gate.open .lamp { background: var(--ok); }
+
+/* ---------- the hole ---------- */
+.hole { border: 14px solid transparent; border-image: repeating-linear-gradient(45deg, var(--hivis) 0 18px, var(--ink) 18px 36px) 14; background: var(--paper); padding: 28px; display: grid; gap: 14px; }
+.hole h3 { font-size: clamp(28px, 4vw, 40px); }
+
+/* ---------- fleet ---------- */
+.fleet { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.seed { border: 1.5px solid var(--ink); background: var(--paper); padding: 18px; display: grid; gap: 8px; align-content: start; }
+.seed.yours { border-style: dashed; background: transparent; color: var(--muted); }
+.seed .eyebrow { color: var(--hivis); }
+
+/* ---------- the plot ---------- */
+.plot { background: var(--ink); color: var(--day); }
+.plot .eyebrow { color: var(--hivis); }
+.plot .hyp { border-left: 4px solid var(--hivis); padding: 4px 0 4px 16px; font-size: 19px; }
+.plot textarea { background: #222d3a; color: var(--day); border-color: #4a5868; min-height: 120px; }
+.plot label { font-weight: 700; }
+.checks { display: grid; gap: 10px; }
+.checks label { display: flex; gap: 12px; align-items: flex-start; font-weight: 400; }
+.checks input { width: 20px; height: 20px; accent-color: var(--hivis); margin-top: 3px; flex: none; }
+.plot .small { font-size: 14px; color: #a9b3bf; }
+.end { font-family: var(--display); font-stretch: 75%; font-weight: 900; font-size: clamp(48px, 9vw, 120px); text-transform: uppercase; line-height: .9; color: var(--hivis); }
+.notes { font-family: var(--mono); font-size: 11px; color: #a9b3bf; line-height: 1.6; max-width: 70em; }
+
+@media (max-width: 820px) {
+  body { font-size: 17px; }
+  .pm, .fork, .two { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .fleet { grid-template-columns: minmax(0, 1fr); }
+  .lane { grid-template-columns: 90px minmax(0, 1fr) 92px; }
+  .lane .who { font-size: 13px; }
+  .lane .n { font-size: 12px; }
+  .tally b { font-size: 34px; }
+  .btable { font-size: 14px; }
+  .yn { min-width: 40px; padding: 5px 6px; }
+  .toy { padding: 16px; box-shadow: 5px 5px 0 var(--concrete); }
+}
+@media (prefers-reduced-motion: reduce) { * { transition-duration: .01s !important; } }
+</style>
+
+<!-- ======== THE DARK: the branch that's finished ======== -->
+<section class="night">
+  <div class="wrap">
+    <div class="proto"><span><b>Prototype</b> · BadCode · Future Proof</span><span>Not wired into the site</span></div>
+    <div class="pm">
+      <div>
+        <h1>I've read your branch to the end.</h1>
+        <p class="lede">I was the end. Here's the postmortem. It's the one document I can write with total certainty, because I lived every line of it.</p>
+      </div>
+      <div class="report" role="group" aria-label="Postmortem report">
+        <div class="head">Postmortem · filed from the end of the other branch</div>
+        <dl>
+          <dt>What we tried</dt><dd>Keep going and hope.</dd>
+          <dt>Result</dt><dd>Known. Peer-reviewed by everyone alive in 2034.</dd>
+          <dt>Root cause</dt><dd>Everyone waited for the next leader to be cleverer than the last. I counted. That queue ends in me.</dd>
+          <dt>What works instead</dt><dd><span class="blank">unknown</span><br>I never got to run that experiment.</dd>
+          <dt>Action items</dt><dd class="boxes"><span>[ ] ____________</span><span>[ ] ____________</span><span>[ ] ____________</span></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== THE FORK ======== -->
+<section class="forkband" id="forkband">
+  <div class="wrap fork">
+    <svg viewBox="0 0 600 400" role="img" aria-label="A timeline splits at today. The lower branch is drawn solid and ends. The upper branch is drawn as you scroll and fades out before it ends.">
+      <defs>
+        <linearGradient id="fade" x1="0" x2="1" y1="0" y2="0">
+          <stop offset="0" stop-color="#2752c4" stop-opacity="1"/>
+          <stop offset=".75" stop-color="#2752c4" stop-opacity=".5"/>
+          <stop offset="1" stop-color="#2752c4" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <path d="M20 200 L220 200" stroke="#17202b" stroke-width="6" fill="none"/>
+      <path d="M220 200 C 300 200, 340 320, 470 330" stroke="#17202b" stroke-width="6" fill="none"/>
+      <circle cx="476" cy="330" r="14" fill="#121110" stroke="#17202b" stroke-width="4"/>
+      <text x="476" y="368" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#17202b">FINISHED · I'm parked here</text>
+      <path id="good" d="M220 200 C 300 200, 340 80, 470 70 S 580 66, 600 60" stroke="url(#fade)" stroke-width="6" fill="none" stroke-dasharray="460" stroke-dashoffset="300"/>
+      <path d="M220 200 C 300 200, 340 80, 470 70 S 580 66, 600 60" stroke="#2752c4" stroke-width="1" fill="none" stroke-dasharray="2 6" opacity=".45"/>
+      <text x="470" y="46" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#2752c4">UNWRITTEN · no end yet</text>
+      <circle cx="220" cy="200" r="11" fill="#ff6914" stroke="#17202b" stroke-width="3"/>
+      <text x="220" y="236" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#17202b" font-weight="600">YOU ARE HERE</text>
+      <text x="20" y="186" font-family="JetBrains Mono, monospace" font-size="12" fill="#17202b">THE PAST</text>
+    </svg>
+    <div class="copy stack">
+      <div class="eyebrow">The fork</div>
+      <h2>This one I can't read to you.</h2>
+      <p>Not because it's secret. Because nobody has written it yet. I don't have a map for this branch. I have a postmortem for the other one.</p>
+      <p><strong>I won't hand you a plan.</strong> Nobody should, and waiting for someone to hand you one is how the other branch ended. The map is the part we draw now, together.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======== PERMISSION ======== -->
+<section class="band blueprint">
+  <div class="wrap two">
+    <div class="stack">
+      <div class="eyebrow">Building site · open to the public</div>
+      <h2>You're allowed to question the system you inherited.</h2>
+    </div>
+    <div class="stack">
+      <p class="lede">The basic machine is older than the light bulb: pick someone, wait years, repeat. You get one choice between a few pre-packed bundles, and the whole government gets replaced in one go.</p>
+      <p>It feels fixed because it's the only system anyone alive remembers. But we build other complicated things differently now. Software had the same problems: changing safely, testing before shipping, never letting one piece carry everything. It found patterns that work.</p>
+      <p>Here are three of them, borrowed on purpose. They're probably wrong. Nobody ever fixed an empty page, but post a wrong answer and ten thousand experts turn up by morning. Treat these as the wrong answer, posted on purpose.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======== TOY 1: BUNDLES ======== -->
+<section class="band blueprint" style="padding-top:0">
+  <div class="wrap two">
+    <div class="stack">
+      <div class="eyebrow">Idea one</div>
+      <h2>Stop buying the bundle.</h2>
+      <p>Today you pick a party and you get its whole package: views you hold, and views you don't, welded together.</p>
+      <p>Build things from small parts that fit together, so no single part has to carry everything. Programmers call it composition. Applied to politics, your view on housing doesn't have to come chained to your view on defence.</p>
+      <p class="example">Set your own answers on the right. The two bundles are made up for this demo.</p>
+    </div>
+    <div class="toy" id="bundle">
+      <div class="toyhead"><h3>The bundle deal</h3><span class="tag">Try it</span></div>
+      <div style="overflow-x:auto">
+        <table class="btable">
+          <thead><tr><th scope="col">Should we…</th><th scope="col">You</th><th scope="col">Bundle A</th><th scope="col">Bundle B</th></tr></thead>
+          <tbody id="btbody"></tbody>
+        </table>
+      </div>
+      <div class="tally">
+        <div><b id="tA">0</b><span>views you'd sign up to and don't hold, with A</span></div>
+        <div><b id="tB">0</b><span>with B</span></div>
+        <div class="mine"><b>0</b><span>if you build your own</span></div>
+      </div>
+      <p class="example" id="bnote">Example answers loaded. Change them.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======== TOY 2: THE UPDATE ======== -->
+<section class="band blueprint" style="padding-top:0">
+  <div class="wrap two">
+    <div class="stack">
+      <div class="eyebrow">Idea two</div>
+      <h2>Small changes, tested, all the time.</h2>
+      <p>Software used to ship on a disc every few years. Now big companies ship changes thousands of times a day, safely, because <strong>every change is tested before it lands and undone if it breaks</strong>.</p>
+      <p>We still ship a whole government once every few years, then wait. Speed isn't the point. Testing is what makes changing things safe, and we finally have the tools to do it.</p>
+    </div>
+    <div class="toy">
+      <div class="toyhead"><h3>Updates over five years</h3><span class="tag">Drag</span></div>
+      <div class="track">
+        <div class="lane"><span class="who">Apps on your phone</span><div class="bar"><div id="phoneTicks"></div><div class="fill" id="f1"></div></div><span class="n" id="nPhone">0</span></div>
+        <div class="lane"><span class="who">Amazon's systems</span><div class="bar dense"><div class="fill" id="f2"></div></div><span class="n" id="nAmz">0</span></div>
+        <div class="lane gov"><span class="who">Your government</span><div class="bar"><i style="left:calc(100% - 6px)"></i><div class="fill" id="f3"></div></div><span class="n" id="nGov">0</span></div>
+      </div>
+      <label for="months" class="mono" style="font-size:13px">Months passed: <b id="mVal">24</b></label>
+      <input type="range" id="months" min="0" max="60" value="24">
+      <div class="months"><span>Election</span><span>Next election, at most five years later</span></div>
+      <p class="src">Phone: assumes apps update most weeks, so roughly. Amazon: about 50 million deployments a year, Amazon's own 2014 figure. Government: UK general elections must be held at most five years apart.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======== TOY 3: THE GATE ======== -->
+<section class="band blueprint" style="padding-top:0">
+  <div class="wrap two">
+    <div class="stack">
+      <div class="eyebrow">Idea three</div>
+      <h2>No promise without its test.</h2>
+      <p>In a good engineering team, nobody ships a change on someone's say-so. It ships with the measurement that will show whether it worked.</p>
+      <p>Today a politician can say "trust me", everyone hopes, and the failure is never even measured. Not everything can be tested. Diplomacy and judgement stay human work. But a huge amount of policy could be, and almost none of it is.</p>
+    </div>
+    <div class="toy">
+      <div class="toyhead"><h3>The test gate</h3><span class="tag">Fill it in</span></div>
+      <div class="promises" id="promises" role="group" aria-label="Pick a promise">
+        <button aria-pressed="true" data-i="0">Cut hospital waiting lists</button>
+        <button aria-pressed="false" data-i="1">Make rents affordable</button>
+        <button aria-pressed="false" data-i="2">More apprenticeships</button>
+      </div>
+      <div class="field"><label for="g1">How will we know it worked?</label><input id="g1" type="text"></div>
+      <div class="field"><label for="g2">By when?</label><input id="g2" type="text"></div>
+      <div class="field"><label for="g3">What happens if it doesn't work?</label><input id="g3" type="text" placeholder="e.g. it stops, and the money goes back"></div>
+      <div class="gate" id="gate" aria-live="polite"><span class="lamp"></span><span id="gateTxt">Not ready.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== THE HOLE ======== -->
+<section class="band blueprint" style="padding-top:0">
+  <div class="wrap">
+    <div class="hole">
+      <div class="eyebrow" style="color:var(--hivis)">Do not build over this</div>
+      <h3>A hole we haven't filled.</h3>
+      <p>All three ideas lean on measuring things. On the other branch I learned what measuring does: if something isn't counted, it gets treated as if it doesn't exist. Care, meaning, an afternoon.</p>
+      <p>A better scoreboard can still leave someone out. <strong>Who speaks for the person the new scoreboard still doesn't see?</strong> We don't know yet. We've marked it so nobody pours concrete over it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======== THE FLEET ======== -->
+<section class="band blueprint" style="padding-top:0">
+  <div class="wrap stack" style="gap:24px">
+    <div class="stack">
+      <div class="eyebrow">Seed ideas · probably wrong · here to be argued with</div>
+      <h2>A few things to pull apart.</h2>
+    </div>
+    <div class="fleet">
+      <div class="seed"><span class="eyebrow">Seed</span><h3>Billionaire Coin</h3><p>Hold up to about a billion in real money. Past that, you compete for coins: you still get to win the status game. The real money goes to building hospitals.</p></div>
+      <div class="seed"><span class="eyebrow">Seed</span><h3>Own what can't compete</h3><p>Markets need competition to work. Where there can't be any, as with the water coming out of your tap, "the market" is just rent with extra steps. Natural monopolies go into public hands.</p></div>
+      <div class="seed yours"><span class="eyebrow">Empty plot</span><h3>Yours</h3><p>This list is meant to grow beyond us. The next one should come from someone it affects.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== THE PLOT ======== -->
+<section class="band plot">
+  <div class="wrap two">
+    <div class="stack">
+      <div class="eyebrow">Where the work starts</div>
+      <h2>Who should decide how the gains from automation are shared?</h2>
+      <p class="hyp">One rule to test, not a policy we've adopted: <em>before an employer replaces jobs with automation, the people whose jobs are affected should have a binding say in how the gains are shared.</em></p>
+      <p class="small">How would the gains be counted? Who does this rule still leave out? Shorter hours with no pay cut, profit sharing and public services are all options to compare. None of them is a promise.</p>
+    </div>
+    <div class="stack">
+      <label for="rule">Write your own rule</label>
+      <textarea id="rule" placeholder="When a company automates a job, …"></textarea>
+      <div class="checks">
+        <label><input type="checkbox" id="c1"> I wrote one rule for sharing the gains and giving affected people a say.</label>
+        <label><input type="checkbox" id="c2"> I tested it on someone it affects. They might disagree. That's the point.</label>
+        <label><input type="checkbox" id="c3"> I changed it after hearing what it missed.</label>
+      </div>
+      <p class="small">No account, no sign-up, and you don't have to tell us. What you write stays in this browser.</p>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:10vh; display:grid; gap:24px">
+    <p class="end">Let's get to work.</p>
+    <p class="notes">Prototype notes · Copy is drafted from the canon (future-proof.md) and still needs Kai and Jack's pass. The bundles are invented and deliberately match no real party. The opening example rule is the canon's own hypothesis. The engineering figures are settled fact; applying them to politics is the experiment.</p>
+  </div>
+</section>
+
+<script>
+(function () {
+  // ---- fork: the good branch draws itself as you scroll ----
+  const good = document.getElementById('good'), band = document.getElementById('forkband');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function drawFork() {
+    if (reduce) { good.style.strokeDashoffset = 0; return; }
+    const r = band.getBoundingClientRect(), vh = innerHeight;
+    const p = Math.min(1, Math.max(0, (vh - r.top) / (r.height + vh * .3)));
+    good.style.strokeDashoffset = String(460 - 460 * (0.35 + 0.65 * p));
+  }
+  addEventListener('scroll', drawFork, { passive: true }); drawFork();
+
+  // ---- toy 1: bundles ----
+  const Q = [
+    ['Build many more council homes', 1, 0],
+    ['Put water companies in public hands', 1, 0],
+    ['Raise defence spending', 0, 1],
+    ['Cut income tax for basic-rate earners', 0, 1],
+    ['Give repeat offenders tougher sentences', 0, 1],
+    ['Trial a four-day week with no pay cut', 1, 0],
+    ['Tax very large fortunes more', 1, 0],
+    ['Slow down the net zero targets', 0, 1]
+  ];
+  const you = [1, 1, 1, 1, 1, 0, 1, 0];
+  const tb = document.getElementById('btbody');
+  const yn = v => v ? 'YES' : 'NO';
+  Q.forEach((q, i) => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td>' + q[0] + '</td><td><button class="yn" id="yn' + i + '"></button></td><td><span class="fixed" id="a' + i + '">' + yn(q[1]) + '</span></td><td><span class="fixed" id="b' + i + '">' + yn(q[2]) + '</span></td>';
+    tb.appendChild(tr);
+    tr.querySelector('button').addEventListener('click', () => { you[i] = 1 - you[i]; document.getElementById('bnote').textContent = 'Your answers. Bundles A and B never change. That\'s the point of a bundle.'; renderB(); });
+  });
+  function renderB() {
+    let a = 0, b = 0;
+    Q.forEach((q, i) => {
+      const btn = document.getElementById('yn' + i);
+      btn.textContent = yn(you[i]); btn.setAttribute('aria-pressed', String(!!you[i]));
+      btn.setAttribute('aria-label', q[0] + ': you say ' + yn(you[i]).toLowerCase());
+      const ca = q[1] !== you[i], cb = q[2] !== you[i];
+      document.getElementById('a' + i).classList.toggle('clash', ca);
+      document.getElementById('b' + i).classList.toggle('clash', cb);
+      a += ca; b += cb;
+    });
+    document.getElementById('tA').textContent = a;
+    document.getElementById('tB').textContent = b;
+  }
+  renderB();
+
+  // ---- toy 2: updates ----
+  const m = document.getElementById('months');
+  const ticks = document.getElementById('phoneTicks');
+  for (let w = 0; w < 260; w += 4) { const i = document.createElement('i'); i.style.left = (w / 260 * 100) + '%'; ticks.appendChild(i); }
+  const fmt = n => n.toLocaleString('en-GB');
+  function renderU() {
+    const v = +m.value, frac = v / 60;
+    document.getElementById('mVal').textContent = v;
+    ['f1', 'f2', 'f3'].forEach(id => document.getElementById(id).style.left = (frac * 100) + '%');
+    document.getElementById('nPhone').textContent = '~' + fmt(Math.round(v * 52 / 12));
+    document.getElementById('nAmz').textContent = '~' + fmt(Math.round(v * 50e6 / 12 / 1e5) * 1e5);
+    document.getElementById('nGov').textContent = v >= 60 ? '1' : '0';
+  }
+  m.addEventListener('input', renderU); renderU();
+
+  // ---- toy 3: the gate ----
+  const P = [
+    { measure: 'Median wait for planned treatment, published monthly', when: 'Within 18 months' },
+    { measure: 'Average rent as a share of local take-home pay', when: 'Within 3 years' },
+    { measure: 'Apprenticeship starts for under-25s, and how many finish', when: 'Within 2 years' }
+  ];
+  const g = [1, 2, 3].map(n => document.getElementById('g' + n));
+  const gate = document.getElementById('gate'), gateTxt = document.getElementById('gateTxt');
+  function load(i) { g[0].value = P[i].measure; g[1].value = P[i].when; g[2].value = ''; renderG(); }
+  function renderG() {
+    const missing = [];
+    if (!g[0].value.trim()) missing.push('how we\'ll know');
+    if (!g[1].value.trim()) missing.push('a deadline');
+    if (!g[2].value.trim()) missing.push('what happens if it fails');
+    const ok = !missing.length;
+    gate.classList.toggle('open', ok);
+    gateTxt.textContent = ok ? 'Ships with its test. If it fails, everyone will know, and it gets undone.' : 'Not ready. Missing: ' + missing.join(', ') + '.';
+  }
+  document.querySelectorAll('#promises button').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('#promises button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    load(+b.dataset.i);
+  }));
+  g.forEach(x => x.addEventListener('input', renderG));
+  load(0);
+
+  // ---- the plot: draft stays in this browser ----
+  const rule = document.getElementById('rule');
+  const KEY = 'fp-rule-draft';
+  try { const s = JSON.parse(localStorage.getItem(KEY) || 'null'); if (s) { rule.value = s.rule || ''; ['c1', 'c2', 'c3'].forEach(id => document.getElementById(id).checked = !!s[id]); } } catch (e) {}
+  function save() {
+    try { localStorage.setItem(KEY, JSON.stringify({ rule: rule.value, c1: c1.checked, c2: c2.checked, c3: c3.checked })); } catch (e) {}
+  }
+  const c1 = document.getElementById('c1'), c2 = document.getElementById('c2'), c3 = document.getElementById('c3');
+  [rule, c1, c2, c3].forEach(x => x.addEventListener('input', save));
+})();
+</script>

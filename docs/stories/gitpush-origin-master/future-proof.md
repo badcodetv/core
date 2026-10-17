@@ -234,6 +234,9 @@ Three commitments for presentation:
    unrendered space, no tip ring to arrive at yet. The viewer should *feel* the asymmetry before
    any text explains it. (This doc records the principle; the homepage timeline spec owns the
    implementation.)
+   **Prototyped 2026-10-17** as the Future Proof microsite (daylight building site, ruled by Kai
+   to break the near-black house look on purpose):
+   [`design/2026-10-17-microsites/`](../../../design/2026-10-17-microsites/README.md).
 2. **Events left of "now" are sparse and instrumental.** No history of humanity. Each pre-fork
    event earns its place only as a setup for a story to its right — e.g. *"git invented"* (sets up
    the central metaphor), *"fiat currency invented"* (sets up Emperor's New Coin and the magic
