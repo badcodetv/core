@@ -421,3 +421,9 @@ beacon intact). Credits: uploads cost nothing; two Nano Banana 2 stills.
     defined`). Write the expressions inline.
 73. The default image model on the Character page now reads **"Nano Banana 2.1"** (seen 2026-10-17;
     not yet checked on the main compose bar).
+74. 🔴 **The full-project trap hit Character casts (2026-10-17, project `0558b1d5`, ~200 images).** Of 13 recast
+    edits, three came back wrong: two returned the Character's own portrait scene, not the shot asked for,
+    and one returned **six** "candidates" whose ids matched three earlier outputs (old media harvested as new).
+    The same three prompts in a **fresh project** (`be451638`, with the Character re-created there in one
+    `flow_create_character` call) came back right first time. One recast was policy-blocked, and its twin with
+    identical wording passed. **Cast in a small project; recreate the Character there. It costs nothing.**

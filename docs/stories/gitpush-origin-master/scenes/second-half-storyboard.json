@@ -1,5 +1,5 @@
 {
- "_about": "GPOM second-half storyboard, 17 Oct 2026. Running order from scenes/second-half-storyboard-plan.md. stills[0] is the pick when one exists; new frames list their generated options (moodboard dir or storyboard dir, by id). Animation options are merged in from the cinematography pass at build time. Build: python3 scripts/gpom/build-storyboard.py 17 Oct v2: two beats added (doors open, Hello) after the row carries on; the emerge shot moved after the trust beat; frames renumbered — `anim` holds the key into the animation-options file (old number, or door/hello).",
+ "_about": "GPOM second-half storyboard, 17 Oct 2026. Running order from scenes/second-half-storyboard-plan.md. stills[0] is the pick when one exists; new frames list their generated options (moodboard dir or storyboard dir, by id). Animation options are merged in from the cinematography pass at build time. Build: python3 scripts/gpom/build-storyboard.py 17 Oct v2: two beats added (doors open, Hello) after the row carries on; the emerge shot moved after the trust beat; frames renumbered — `anim` holds the key into the animation-options file (old number, or door/hello). 17 Oct v3: every bot frame recast with the West Country Bot Flow Character (earlier versions kept as *-v2.jpg).",
  "acts": [
   {
    "id": "hunt",
@@ -148,7 +148,7 @@
     "SB09a"
    ],
    "anim": 9,
-   "note": "Bot swapped for the canonical bot (simulation still s3-bot-00b-a), 17 Oct."
+   "note": "Bot swapped for the canonical bot (simulation still s3-bot-00b-a), 17 Oct. Bot recast from the West Country Bot Flow Character, 17 Oct."
   },
   {
    "n": 10,
@@ -175,7 +175,8 @@
     "SB11b",
     "SB11c"
    ],
-   "anim": 11
+   "anim": 11,
+   "note": "Bot recast from the West Country Bot Flow Character, 17 Oct."
   },
   {
    "n": 12,
@@ -229,7 +230,8 @@
     "SBHELLOa",
     "SBHELLOb"
    ],
-   "anim": "hello"
+   "anim": "hello",
+   "note": "Bot recast from the West Country Bot Flow Character, 17 Oct."
   },
   {
    "n": 16,
@@ -244,7 +246,7 @@
    ],
    "anim": 15,
    "new": true,
-   "note": "M2 with the canonical bot swapped in."
+   "note": "M2 with the canonical bot swapped in. Bot recast from the West Country Bot Flow Character, 17 Oct."
   },
   {
    "n": 17,
@@ -282,7 +284,7 @@
    ],
    "anim": 14,
    "new": true,
-   "note": "Moved after the trust beat: this is the walk to the time machine. Bot swapped for the canonical bot."
+   "note": "Moved after the trust beat: this is the walk to the time machine. Bot swapped for the canonical bot. Bot recast from the West Country Bot Flow Character, 17 Oct."
   },
   {
    "n": 20,
@@ -292,9 +294,11 @@
    "look": "clean",
    "line": "",
    "stills": [
+    "SB20a",
     "L6-arrival-blockbuster"
    ],
-   "anim": 18
+   "anim": 18,
+   "note": "SB20a = L6 with the West Country Bot Character cast in."
   },
   {
    "n": 21,
@@ -385,7 +389,7 @@
     "SB25c"
    ],
    "anim": 25,
-   "note": "Chairs locked to L3 (frame 22): dark recliners in pools of light, square grid in a thin ring, cables to a round hub."
+   "note": "Chairs locked to L3 (frame 22): dark recliners in pools of light, square grid in a thin ring, cables to a round hub. Bot recast from the West Country Bot Flow Character, 17 Oct."
   },
   {
    "n": 28,
