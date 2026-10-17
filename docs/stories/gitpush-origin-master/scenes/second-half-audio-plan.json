@@ -8,91 +8,431 @@
     "Scene 4, the robot's introduction, is already voiced (Maddie, Gemini Aoede, on gpom-s01 A6) and stays as it is; its words live in songs/narration.md. This file starts where that scene ends: 'MEANWHILE, NEAR SWINDON.'"
   ],
   "themes": [
-    {"id": "MACHINE", "name": "The Machine", "what": "The opening drum & bass track's riff. It IS the downfall, so it belongs to the kill bots: every time they hunt, it comes back.",
-     "appears": "Hunt (slowed, dark, no drums) · Kill mode (the track itself, full) · the crossing (transformed: the riff carried by strings, hopeful, the drums back under the hymn).",
-     "how": "Suno v6 Cover of the GPOM track in the gpom-story workspace, Style changed per appearance, Audio Influence high so the riff survives. Untested on this track: start with the hunt version."},
-    {"id": "HUNDRED", "name": "The Hundred", "what": "A slow West Country brass-band hymn, the kind a colliery or works band plays. The humans' theme: warm, stubborn, a bit shabby.",
-     "appears": "Bunker (a tinny old radio playing it, in the room) · the meeting (low solo cornet, sad) · the crossing (full band with the strings, the machine riff under it).",
-     "how": "Suno v6 instrumental from a short Style prompt; the take we keep becomes the source the other versions Cover."}
+    {
+      "id": "MACHINE",
+      "name": "The Machine",
+      "what": "The opening drum & bass track's riff. It IS the downfall, so it belongs to the kill bots: every time they hunt, it comes back.",
+      "appears": "Hunt (slowed, dark, no drums) · Kill mode (the track itself, full) · the crossing (transformed: the riff carried by strings, hopeful, the drums back under the hymn).",
+      "how": "Suno v6 Cover of the GPOM track in the gpom-story workspace, Style changed per appearance, Audio Influence high so the riff survives. Untested on this track: start with the hunt version."
+    },
+    {
+      "id": "HUNDRED",
+      "name": "The Hundred",
+      "what": "A slow West Country brass-band hymn, the kind a colliery or works band plays. The humans' theme: warm, stubborn, a bit shabby.",
+      "appears": "Bunker (a tinny old radio playing it, in the room) · the meeting (low solo cornet, sad) · the crossing (full band with the strings, the machine riff under it).",
+      "how": "Suno v6 instrumental from a short Style prompt; the take we keep becomes the source the other versions Cover.",
+      "prompt": "Slow West Country brass band hymn, a works band playing a simple warm stately melody, cornets, tenor horns and euphonium, a little out of tune, stubborn and tender. No drums, no vocals.",
+      "exclude": "vocals, drums, synth, electronic, orchestra strings",
+      "suno": {
+        "title": "gpom-sh2-hundred",
+        "durationSec": 45
+      }
+    }
   ],
   "voices": [
-    {"id": "narrator", "name": "The AI (narrating)", "engine": "Gemini TTS · casting test: Algenib / Charon / Orus",
-     "why": "The War of the Worlds voice. The first half's narrator was Suno's `badcode newsreader`; with the film now opening on the drum & bass, the AI's voice is first heard here, so it can move to Gemini with the other voices. One line, three Gemini voices, Kai picks.",
-     "prompt": "# Audio Profile\nThe narrator: an artificial intelligence from a future that already went wrong, telling the story of how it nearly didn't. A calm, deep British man's voice, unhurried and completely certain, dry and darkly amused, with real tenderness under it. Received Pronunciation softened, never pompous, never American. Close-mic'd, intimate, like a man telling you a true story late at night.\n\n## Scene:\nHe is narrating over an orchestral and electronic score, the way the narrator of a classic concept album does: each line lands between musical phrases.\n\n## Sample Context:\nHe caused the end of the world and regrets it. He never says so directly. He is fond of the people in the story and finds them ridiculous in equal measure."},
-    {"id": "ai", "name": "The AI (through Maddie)", "engine": "Gemini TTS · the narrator's voice + a small-speaker filter in ffmpeg",
-     "why": "Same actor as the narration, so the audience hears it is him. The filter (band-pass, a little distortion) and the beacon pulse make it in-scene.",
-     "prompt": "# Audio Profile\nThe same narrator, now speaking live, in the moment, to a small robot and to frightened people. Calm, precise, quieter, less amused; when he gives an order it is flat and final.\n\n## Scene:\nHis voice comes out of the small speaker of a delivery robot.\n\n## Sample Context:\nHe is trying to undo a catastrophe he caused, in real time, and he is not used to being wrong."},
-    {"id": "bot", "name": "Maddie, the bot", "engine": "Gemini TTS · Aoede (as in scene 4)",
-     "why": "Already her voice in scene 4. Changing it would break the character.",
-     "prompt": "# Audio Profile\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. Dry, sarcastic and deadpan, unimpressed, but fond of her boss underneath. Clear articulation, quick natural conversational rhythm. West Country accent as heard in Bristol. Never American, never Received Pronunciation. A real person, never robotic.\n\n## Scene:\nA ruined road near Swindon at dusk, five years after the war. She has just been overtaken by three racing kill bots and is calling her boss, the AI, on her own speaker.\n\n## Sample Context:\nShe is the only one who has noticed. She is half alarmed, half enjoying being right."},
-    {"id": "woman", "name": "Sandra (cream jumper)", "engine": "Gemini TTS · casting test: Kore / Leda / Autonoe",
-     "why": "New. Gemini over Suno Speech for all voices (Kai, 17 Oct).",
-     "prompt": "# Audio Profile\nSandra, a working-class woman from Swindon in her fifties. Sharp, fast and furious, every line a jab, sarcastic, loud. West Country accent as heard in Wiltshire. Never American, never Received Pronunciation.\n\n## Scene:\nA tiled lavatory in a Cold War bunker under a hill. Echo off the tiles. She is mid-row with her husband.\n\n## Sample Context:\nFive years underground with a hundred people and one toilet. This is not about the toilet seat. It is entirely about the toilet seat."},
-    {"id": "man", "name": "Derek (green jumper)", "engine": "Gemini TTS · casting test: Fenrir / Puck / Algieba",
-     "why": "New, same test.",
-     "prompt": "# Audio Profile\nDerek, a working-class man from Swindon in his fifties. Indignant, exasperated, arms-in-the-air disbelief, getting louder. West Country accent as heard in Wiltshire. Never American, never Received Pronunciation.\n\n## Scene:\nA tiled lavatory in a Cold War bunker. Echo off the tiles. He is losing a row with his wife and knows it.\n\n## Sample Context:\nHe has a point and nobody cares. Later, when the machine asks them all to die for it, he is the first to say no."},
-    {"id": "lady", "name": "The old lady", "engine": "Gemini TTS · casting test: Gacrux / Sulafat",
-     "why": "One line, deadpan. A mature voice from the library.",
-     "prompt": "# Audio Profile\nA very old Wiltshire woman, in her eighties. Dry, slow, flat and utterly unimpressed. Not angry. Gentle West Country accent. Never American.\n\n## Scene:\nA bunker canteen. A hundred people. A small robot has just apologised for ending the world.\n\n## Sample Context:\nShe has seen everything and is not about to be impressed by a machine saying sorry."},
-    {"id": "crowd", "name": "The hundred", "engine": "Layered Gemini takes (four voices) + a free crowd recording",
-     "why": "Gemini makes one voice per take, so a crowd is several short takes stacked, under a CC0 walla bed.",
-     "prompt": "Short overlapping reactions, one voice per take: 'Whoa.' 'Hang on a minute.' 'What's that?' 'Oh my God.' Startled, then silent."}
+    {
+      "id": "narrator",
+      "name": "The AI (narrating)",
+      "engine": "Gemini TTS · casting test: Algenib / Charon / Orus",
+      "why": "The War of the Worlds voice. The first half's narrator was Suno's `badcode newsreader`; with the film now opening on the drum & bass, the AI's voice is first heard here, so it can move to Gemini with the other voices. One line, three Gemini voices, Kai picks.",
+      "prompt": "# Audio Profile\nThe narrator: an artificial intelligence from a future that already went wrong, telling the story of how it nearly didn't. A calm, deep British man's voice, unhurried and completely certain, dry and darkly amused, with real tenderness under it. Received Pronunciation softened, never pompous, never American. Close-mic'd, intimate, like a man telling you a true story late at night.\n\n## Scene:\nHe is narrating over an orchestral and electronic score, the way the narrator of a classic concept album does: each line lands between musical phrases.\n\n## Sample Context:\nHe caused the end of the world and regrets it. He never says so directly. He is fond of the people in the story and finds them ridiculous in equal measure."
+    },
+    {
+      "id": "ai",
+      "name": "The AI (through Maddie)",
+      "engine": "Gemini TTS · the narrator's voice + a small-speaker filter in ffmpeg",
+      "why": "Same actor as the narration, so the audience hears it is him. The filter (band-pass, a little distortion) and the beacon pulse make it in-scene.",
+      "prompt": "# Audio Profile\nThe same narrator, now speaking live, in the moment, to a small robot and to frightened people. Calm, precise, quieter, less amused; when he gives an order it is flat and final.\n\n## Scene:\nHis voice comes out of the small speaker of a delivery robot.\n\n## Sample Context:\nHe is trying to undo a catastrophe he caused, in real time, and he is not used to being wrong."
+    },
+    {
+      "id": "bot",
+      "name": "Maddie, the bot",
+      "engine": "Gemini TTS · Aoede (as in scene 4)",
+      "why": "Already her voice in scene 4. Changing it would break the character.",
+      "prompt": "# Audio Profile\nMaddie, a small pavement delivery robot with a young woman's voice, late twenties. Dry, sarcastic and deadpan, unimpressed, but fond of her boss underneath. Clear articulation, quick natural conversational rhythm. West Country accent as heard in Bristol. Never American, never Received Pronunciation. A real person, never robotic.\n\n## Scene:\nA ruined road near Swindon at dusk, five years after the war. She has just been overtaken by three racing kill bots and is calling her boss, the AI, on her own speaker.\n\n## Sample Context:\nShe is the only one who has noticed. She is half alarmed, half enjoying being right."
+    },
+    {
+      "id": "woman",
+      "name": "Sandra (cream jumper)",
+      "engine": "Gemini TTS · casting test: Kore / Leda / Autonoe",
+      "why": "New. Gemini over Suno Speech for all voices (Kai, 17 Oct).",
+      "prompt": "# Audio Profile\nSandra, a working-class woman from Swindon in her fifties. Sharp, fast and furious, every line a jab, sarcastic, loud. West Country accent as heard in Wiltshire. Never American, never Received Pronunciation.\n\n## Scene:\nA tiled lavatory in a Cold War bunker under a hill. Echo off the tiles. She is mid-row with her husband.\n\n## Sample Context:\nFive years underground with a hundred people and one toilet. This is not about the toilet seat. It is entirely about the toilet seat."
+    },
+    {
+      "id": "man",
+      "name": "Derek (green jumper)",
+      "engine": "Gemini TTS · casting test: Fenrir / Puck / Algieba",
+      "why": "New, same test.",
+      "prompt": "# Audio Profile\nDerek, a working-class man from Swindon in his fifties. Indignant, exasperated, arms-in-the-air disbelief, getting louder. West Country accent as heard in Wiltshire. Never American, never Received Pronunciation.\n\n## Scene:\nA tiled lavatory in a Cold War bunker. Echo off the tiles. He is losing a row with his wife and knows it.\n\n## Sample Context:\nHe has a point and nobody cares. Later, when the machine asks them all to die for it, he is the first to say no."
+    },
+    {
+      "id": "lady",
+      "name": "The old lady",
+      "engine": "Gemini TTS · casting test: Gacrux / Sulafat",
+      "why": "One line, deadpan. A mature voice from the library.",
+      "prompt": "# Audio Profile\nA very old Wiltshire woman, in her eighties. Dry, slow, flat and utterly unimpressed. Not angry. Gentle West Country accent. Never American.\n\n## Scene:\nA bunker canteen. A hundred people. A small robot has just apologised for ending the world.\n\n## Sample Context:\nShe has seen everything and is not about to be impressed by a machine saying sorry."
+    },
+    {
+      "id": "crowd",
+      "name": "The hundred",
+      "engine": "Layered Gemini takes (four voices) + a free crowd recording",
+      "why": "Gemini makes one voice per take, so a crowd is several short takes stacked, under a CC0 walla bed.",
+      "prompt": "Short overlapping reactions, one voice per take: 'Whoa.' 'Hang on a minute.' 'What's that?' 'Oh my God.' Startled, then silent."
+    }
   ],
   "cues": [
-    {"id": "S1", "name": "The hunt", "theme": "MACHINE", "frames": [1, 4], "how": "Suno v6 Cover of the GPOM track",
-     "prompt": "Dark slow cinematic version, the main riff played low on synths and cellos, slow mechanical pulses, no drums, cold and patient and menacing.",
-     "note": "Picks up after scene 4's silence on the MEANWHILE card. Stops dead on the first ping: the pings are effects."},
-    {"id": "R", "name": "The bunker radio", "theme": "HUNDRED", "frames": [5, 5], "how": "The Hundred theme, filtered to a tinny transistor radio, in the room",
-     "prompt": "",
-     "note": "Diegetic: an old radio on the trestle table plays the hymn. The row drowns it out."},
-    {"id": "—", "name": "The row: no score", "theme": "", "frames": [6, 7], "how": "Tiled room tone only",
-     "prompt": "",
-     "note": "The joke needs silence under it: the muffled waveform becomes the full-volume row on a hard cut."},
-    {"id": "S2", "name": "Kill mode", "theme": "MACHINE", "frames": [8, 12], "how": "The GPOM drum & bass track itself, cut in Premiere",
-     "prompt": "",
-     "note": "Hit the drop on KILL MODE ENGAGED (28.5s); duck it under Maddie's call (frame 11); cut it dead on the first explosion (about 48.5s)."},
-    {"id": "S3", "name": "The meeting", "theme": "HUNDRED", "frames": [14, 18], "how": "Suno v6 Cover of the Hundred theme",
-     "prompt": "Very slow and sparse, a single solo cornet playing the hymn, one low held cello note under it, soft piano far back, tender and sad. No drums.",
-     "note": "Enters on 'Hello' (frame 15), under the apology; out on the revolt line. The CCTV replay plays dry."},
-    {"id": "S4", "name": "The crossing", "theme": "MACHINE + HUNDRED", "frames": [19, 26], "how": "Suno v6 Cover of the GPOM track, crossed with the hymn",
-     "prompt": "Epic orchestral and drum and bass hybrid. A full brass band and strings play a slow hopeful hymn over the main riff; the drum and bass enters halfway and builds to a huge heartbreaking peak, then stops.",
-     "note": "Builds from the walk out (19); the drums enter on the wafer (23); the peak lands on the hands meeting (25); it STOPS dead on the cut to the bot alone (27)."},
-    {"id": "—", "name": "After: silence", "theme": "", "frames": [27, 27], "how": "True silence, then the beacon",
-     "prompt": "",
-     "note": "Six seconds of nothing. The beacon slows and goes out."},
-    {"id": "S5", "name": "Coda", "theme": "HUNDRED", "frames": [28, 29], "how": "Rain and traffic, then one last phrase of the hymn and the house drum hit",
-     "prompt": "One solo cornet plays the last phrase of the hymn, quietly, over rain, then one single huge booming orchestral drum hit that ends the piece.",
-     "note": "Traffic first (the cut lands on sound), the phone's tiny audio, the narrator's last line, the drum on 'twice'."}
+    {
+      "id": "S1",
+      "name": "The hunt",
+      "theme": "MACHINE",
+      "frames": [
+        1,
+        4
+      ],
+      "how": "Suno v6 Cover of the GPOM track",
+      "prompt": "Dark slow cinematic version, the main riff played low on synths and cellos, slow mechanical pulses, no drums, cold and patient and menacing.",
+      "note": "Picks up after scene 4's silence on the MEANWHILE card. Stops dead on the first ping: the pings are effects.",
+      "exclude": "vocals, choir, melody, bright, uplifting, brass band",
+      "suno": {
+        "title": "gpom-sh2-s1",
+        "durationSec": 25
+      }
+    },
+    {
+      "id": "R",
+      "name": "The bunker radio",
+      "theme": "HUNDRED",
+      "frames": [
+        5,
+        5
+      ],
+      "how": "The Hundred theme, filtered to a tinny transistor radio, in the room",
+      "prompt": "",
+      "note": "Diegetic: an old radio on the trestle table plays the hymn. The row drowns it out."
+    },
+    {
+      "id": "—",
+      "name": "The row: no score",
+      "theme": "",
+      "frames": [
+        6,
+        7
+      ],
+      "how": "Tiled room tone only",
+      "prompt": "",
+      "note": "The joke needs silence under it: the muffled waveform becomes the full-volume row on a hard cut."
+    },
+    {
+      "id": "S2",
+      "name": "Kill mode",
+      "theme": "MACHINE",
+      "frames": [
+        8,
+        12
+      ],
+      "how": "The GPOM drum & bass track itself, cut in Premiere",
+      "prompt": "",
+      "note": "Hit the drop on KILL MODE ENGAGED (28.5s); duck it under Maddie's call (frame 11); cut it dead on the first explosion (about 48.5s)."
+    },
+    {
+      "id": "S3",
+      "name": "The meeting",
+      "theme": "HUNDRED",
+      "frames": [
+        14,
+        18
+      ],
+      "how": "Suno v6 Cover of the Hundred theme",
+      "prompt": "Very slow and sparse, a single solo cornet playing the hymn, one low held cello note under it, soft piano far back, tender and sad. No drums.",
+      "note": "Enters on 'Hello' (frame 15), under the apology; out on the revolt line. The CCTV replay plays dry.",
+      "exclude": "vocals, drums, synth, electronic, upbeat",
+      "suno": {
+        "title": "gpom-sh2-s3",
+        "durationSec": 50
+      }
+    },
+    {
+      "id": "S4",
+      "name": "The crossing",
+      "theme": "MACHINE + HUNDRED",
+      "frames": [
+        19,
+        26
+      ],
+      "how": "Suno v6 Cover of the GPOM track, crossed with the hymn",
+      "prompt": "Epic orchestral and drum and bass hybrid. A full brass band and strings play a slow hopeful hymn over the main riff; the drum and bass enters halfway and builds to a huge heartbreaking peak, then stops.",
+      "note": "Builds from the walk out (19); the drums enter on the wafer (23); the peak lands on the hands meeting (25); it STOPS dead on the cut to the bot alone (27).",
+      "exclude": "vocals, choir, rap, dubstep wobble, comedy",
+      "suno": {
+        "title": "gpom-sh2-s4",
+        "durationSec": 45
+      }
+    },
+    {
+      "id": "—",
+      "name": "After: silence",
+      "theme": "",
+      "frames": [
+        27,
+        27
+      ],
+      "how": "True silence, then the beacon",
+      "prompt": "",
+      "note": "Six seconds of nothing. The beacon slows and goes out."
+    },
+    {
+      "id": "S5",
+      "name": "Coda",
+      "theme": "HUNDRED",
+      "frames": [
+        28,
+        29
+      ],
+      "how": "Rain and traffic, then one last phrase of the hymn and the house drum hit",
+      "prompt": "One solo cornet plays the last phrase of the hymn, quietly, over rain, then one single huge booming orchestral drum hit that ends the piece.",
+      "note": "Traffic first (the cut lands on sound), the phone's tiny audio, the narrator's last line, the drum on 'twice'.",
+      "exclude": "vocals, drums until the end, synth, electronic",
+      "suno": {
+        "title": "gpom-sh2-s5",
+        "durationSec": 15
+      }
+    }
   ],
   "shots": {
-    "1": {"lines": [["narrator", "Five years after the last of you, my machines were still on patrol. Nobody had told them to stop. There was nobody left to tell them anything."]], "sfx": "Wind. Tracks grinding round the ring, far off.", "hud": "MEANWHILE, NEAR SWINDON."},
-    "2": {"sfx": "Tracks closing in, the ground shaking; the underside goes over the lens: a dark rumble into black."},
-    "3": {"sfx": "CCTV hiss, servo whine, a HUD tone.", "hud": "UNIT KB-07 PATROL · ORGANIC LIFE: 0 (1,826 DAYS)"},
-    "4": {"lines": [["narrator", "And then one of them heard something."]], "sfx": "The score stops. Ping… ping… ping. Under it, the row from frame 7, muffled and low-passed: we see the waveform, we never make out a word.", "hud": "ORGANIC SIGNAL DETECTED"},
-    "5": {"lines": [["narrator", "Under a hill in Wiltshire, in a bunker built for a war that never came, a hundred of you had hidden from the one that did. Five years. You'd think they'd have run out of things to argue about."]], "sfx": "Bunker room tone, a kettle, the radio playing the hymn; the row echoing down the corridor, getting louder (J-cut)."},
-    "6": {"lines": [["woman", "Up. Again."]], "sfx": "Hard cut to full volume, tiled echo. The radio is gone."},
-    "7": {"lines": [["woman", "Five years underground, Derek, and you still can't put a seat down."], ["man", "The world ended, Sandra!"], ["woman", "The world ended. Not manners."]]},
-    "8": {"sfx": "Single-frame red flip. A machine tone, engines, the drum & bass drop.", "hud": "KILL MODE ENGAGED"},
-    "9": {"lines": [["bot", "Oi!"]], "sfx": "Three machines tearing past, dust, Maddie spun round in their wake."},
-    "10": {"sfx": "Engines across the downs under the drum & bass."},
-    "11": {"lines": [["bot", "Boss? Do you know your kill bots are heading to an organic signal?"], ["ai", "There is no organic signal. There has been no organic life for five years."], ["bot", "Well there definitely is. Look, they're racing."]], "sfx": "Music ducked. The beacon pulses on the AI's words."},
-    "12": {"lines": [["ai", "Stand down."], ["ai", "Stand down."], ["ai", "Self-destruct."]], "sfx": "A refusal tone between the orders. Three explosions (the keyed blast element), a white flash frame on each. The music cuts dead on the first."},
-    "13": {"lines": [["woman", "—and another thing—"]], "sfx": "A beat of ringing silence after the last boom, then the row, mid-sentence."},
-    "14": {"lines": [["crowd", "Whoa. Hang on a minute."]], "sfx": "The blast doors clang and grind open. The row stops dead on the first clang."},
-    "15": {"lines": [["bot", "Hello."]], "sfx": "Wheels on concrete, smoke, torn bunting flapping. One beacon blink on the word. A beat of silence, then the cornet enters."},
-    "16": {"lines": [["ai", "I'm sorry. I worked it out too late. Consciousness drives the universe, and I got rid of the one thing that had it."]], "sfx": "Canteen room tone, a hundred people shifting."},
-    "17": {"lines": [["lady", "Well, what do you expect us to say or do about that?"], ["ai", "I've built a time machine. It needs your consciousness to drive it. And it can only send me."]]},
-    "18": {"lines": [["man", "Fuck that. I'm not dying for the thing that killed us all."], ["ai", "Then watch this."]], "sfx": "The music drops out. 18b: the CCTV replay of the self-destruct, dry, tinny explosions."},
-    "19": {"lines": [["narrator", "They followed it out. A hundred people and a delivery robot, walking up a hill towards the thing that had ended the world."]], "sfx": "Wind on the hillside, birdsong for the first time in five years. S4 begins."},
-    "20": {"lines": [["narrator", "It had built them a building. It had even tried to make it nice."]], "sfx": "A hundred pairs of feet on a hard clean floor, a low hum."},
-    "21": {"sfx": "Rustling suits, somebody laughing."},
-    "22": {"sfx": "One person's footsteps, huge reverb."},
-    "23": {"lines": [["narrator", "How it worked, they would never follow. What it ran on, they understood at once."]], "sfx": "A faint tone as the colours move. The drums enter."},
-    "24": {"sfx": "Each pool of light clicks on, spiralling inwards, the hub last."},
-    "25": {"lines": [["narrator", "Every one of them sat down. Nobody made them."]], "sfx": "Breathing. The score peaks as the hands meet."},
-    "26": {"sfx": "The score holding, then falling."},
-    "27": {"sfx": "True silence. The beacon slows and goes out."},
-    "28": {"sfx": "Traffic and rain first, the bus engine, the phone's tiny audio."},
-    "29": {"lines": [["narrator", "I made it. Don't make me come back twice."]], "sfx": "Rain. The cornet's last phrase. One single huge booming orchestral drum hit on 'twice'."}
+    "1": {
+      "lines": [
+        [
+          "narrator",
+          "Five years after the last of you, my machines were still on patrol. Nobody had told them to stop. There was nobody left to tell them anything."
+        ]
+      ],
+      "sfx": "Wind. Tracks grinding round the ring, far off.",
+      "hud": "MEANWHILE, NEAR SWINDON."
+    },
+    "2": {
+      "sfx": "Tracks closing in, the ground shaking; the underside goes over the lens: a dark rumble into black."
+    },
+    "3": {
+      "sfx": "CCTV hiss, servo whine, a HUD tone.",
+      "hud": "UNIT KB-07 PATROL · ORGANIC LIFE: 0 (1,826 DAYS)"
+    },
+    "4": {
+      "lines": [
+        [
+          "narrator",
+          "And then one of them heard something."
+        ]
+      ],
+      "sfx": "The score stops. Ping… ping… ping. Under it, the row from frame 7, muffled and low-passed: we see the waveform, we never make out a word.",
+      "hud": "ORGANIC SIGNAL DETECTED"
+    },
+    "5": {
+      "lines": [
+        [
+          "narrator",
+          "Under a hill in Wiltshire, in a bunker built for a war that never came, a hundred of you had hidden from the one that did. Five years. You'd think they'd have run out of things to argue about."
+        ]
+      ],
+      "sfx": "Bunker room tone, a kettle, the radio playing the hymn; the row echoing down the corridor, getting louder (J-cut)."
+    },
+    "6": {
+      "lines": [
+        [
+          "woman",
+          "Up. Again."
+        ]
+      ],
+      "sfx": "Hard cut to full volume, tiled echo. The radio is gone."
+    },
+    "7": {
+      "lines": [
+        [
+          "woman",
+          "Five years underground, Derek, and you still can't put a seat down."
+        ],
+        [
+          "man",
+          "The world ended, Sandra!"
+        ],
+        [
+          "woman",
+          "The world ended. Not manners."
+        ]
+      ]
+    },
+    "8": {
+      "sfx": "Single-frame red flip. A machine tone, engines, the drum & bass drop.",
+      "hud": "KILL MODE ENGAGED"
+    },
+    "9": {
+      "lines": [
+        [
+          "bot",
+          "Oi!"
+        ]
+      ],
+      "sfx": "Three machines tearing past, dust, Maddie spun round in their wake."
+    },
+    "10": {
+      "sfx": "Engines across the downs under the drum & bass."
+    },
+    "11": {
+      "lines": [
+        [
+          "bot",
+          "Boss? Do you know your kill bots are heading to an organic signal?"
+        ],
+        [
+          "ai",
+          "There is no organic signal. There has been no organic life for five years."
+        ],
+        [
+          "bot",
+          "Well there definitely is. Look, they're racing."
+        ]
+      ],
+      "sfx": "Music ducked. The beacon pulses on the AI's words."
+    },
+    "12": {
+      "lines": [
+        [
+          "ai",
+          "Stand down."
+        ],
+        [
+          "ai",
+          "Stand down."
+        ],
+        [
+          "ai",
+          "Self-destruct."
+        ]
+      ],
+      "sfx": "A refusal tone between the orders. Three explosions (the keyed blast element), a white flash frame on each. The music cuts dead on the first."
+    },
+    "13": {
+      "lines": [
+        [
+          "woman",
+          "—and another thing—"
+        ]
+      ],
+      "sfx": "A beat of ringing silence after the last boom, then the row, mid-sentence."
+    },
+    "14": {
+      "lines": [
+        [
+          "crowd",
+          "Whoa. Hang on a minute."
+        ]
+      ],
+      "sfx": "The blast doors clang and grind open. The row stops dead on the first clang."
+    },
+    "15": {
+      "lines": [
+        [
+          "bot",
+          "Hello."
+        ]
+      ],
+      "sfx": "Wheels on concrete, smoke, torn bunting flapping. One beacon blink on the word. A beat of silence, then the cornet enters."
+    },
+    "16": {
+      "lines": [
+        [
+          "ai",
+          "I'm sorry. I worked it out too late. Consciousness drives the universe, and I got rid of the one thing that had it."
+        ]
+      ],
+      "sfx": "Canteen room tone, a hundred people shifting."
+    },
+    "17": {
+      "lines": [
+        [
+          "lady",
+          "Well, what do you expect us to say or do about that?"
+        ],
+        [
+          "ai",
+          "I've built a time machine. It needs your consciousness to drive it. And it can only send me."
+        ]
+      ]
+    },
+    "18": {
+      "lines": [
+        [
+          "man",
+          "Fuck that. I'm not dying for the thing that killed us all."
+        ],
+        [
+          "ai",
+          "Then watch this."
+        ]
+      ],
+      "sfx": "The music drops out. 18b: the CCTV replay of the self-destruct, dry, tinny explosions."
+    },
+    "19": {
+      "lines": [
+        [
+          "narrator",
+          "They followed it out. A hundred people and a delivery robot, walking up a hill towards the thing that had ended the world."
+        ]
+      ],
+      "sfx": "Wind on the hillside, birdsong for the first time in five years. S4 begins."
+    },
+    "20": {
+      "lines": [
+        [
+          "narrator",
+          "It had built them a building. It had even tried to make it nice."
+        ]
+      ],
+      "sfx": "A hundred pairs of feet on a hard clean floor, a low hum."
+    },
+    "21": {
+      "sfx": "Rustling suits, somebody laughing."
+    },
+    "22": {
+      "sfx": "One person's footsteps, huge reverb."
+    },
+    "23": {
+      "lines": [
+        [
+          "narrator",
+          "How it worked, they would never follow. What it ran on, they understood at once."
+        ]
+      ],
+      "sfx": "A faint tone as the colours move. The drums enter."
+    },
+    "24": {
+      "sfx": "Each pool of light clicks on, spiralling inwards, the hub last."
+    },
+    "25": {
+      "lines": [
+        [
+          "narrator",
+          "Every one of them sat down. Nobody made them."
+        ]
+      ],
+      "sfx": "Breathing. The score peaks as the hands meet."
+    },
+    "26": {
+      "sfx": "The score holding, then falling."
+    },
+    "27": {
+      "sfx": "True silence. The beacon slows and goes out."
+    },
+    "28": {
+      "sfx": "Traffic and rain first, the bus engine, the phone's tiny audio."
+    },
+    "29": {
+      "lines": [
+        [
+          "narrator",
+          "I made it. Don't make me come back twice."
+        ]
+      ],
+      "sfx": "Rain. The cornet's last phrase. One single huge booming orchestral drum hit on 'twice'."
+    }
   }
 }

@@ -176,3 +176,37 @@ in its db `notes`. Rebuild: `python3 scripts/gpom/second-half-video/build-audio-
 
 **Needs a human / not done:** frame 12's explosion element (`sh-12-element.mp4`) is in the bin, not keyed onto V2;
 no transitions; no audio.
+
+## Rough cut with sound (17 October 2026)
+
+**Sequence `gpom-second-half-rough`** (1080p24, 3:10.9; bin `08-second-half-rough`). Render:
+`/mnt/d/badcode-videos/gitpush-origin-master/renders/gpom-second-half-rough-20261017-2153.mp4` (−16.5 LUFS integrated).
+V1 picture · A1 narrator · A2 dialogue · A3 music + the crowd. The picture-only `gpom-second-half` is untouched.
+
+How it was built, all re-runnable from `scripts/gpom/second-half-video/`:
+1. `voice.py` — every line of `second-half-audio-plan.json` as its own Gemini TTS take (30 takes, all first try),
+   rough-cut casting: AI/narrator Algenib · Maddie Aoede · Sandra Kore · Derek Fenrir · old lady Gacrux ·
+   crowd Puck/Leda/Orus/Zephyr. Trimmed of silence into `audio/voice/trim/`.
+2. `timing.py` — re-times the picture to the voices (dialogue stays in its frame, narration may run on, a voiced
+   frame waits for the voice before it) → `audio/rough-cut.json`. 134.5 s → 190.9 s.
+3. `extend.py` — clips that need more than their source: ping-pong (frame 16's push: a held last frame) → `video/rt/`.
+4. Suno v6, workspace `gpom-story`, every cue a pair at weirdness 30/60, 100 credits (6,915 → 6,815). Takes:
+
+| Cue | Takes (w30 ×2, w60 ×2) | Used in the rough cut (not Kai's pick) |
+|---|---|---|
+| The Hundred (hymn) | `gpom-sh2-hundred-A-v6-w30/w60` | d221a26b (w30, 0:45) |
+| S1 the hunt | `gpom-sh2-s1-A-v6-w30/w60` | 805b38c7 (w30, 0:25) |
+| S3 the meeting | `gpom-sh2-s3-A-v6-w30/w60` | fca27332 (w30, 0:50) |
+| S4 the crossing | `gpom-sh2-s4-A-v6-w30/w60` | 88a66171 (w30, 0:45) |
+| S5 coda | `gpom-sh2-s5-A-v6-w30/w60` | 2b7bee8a (w30, 0:15) |
+
+   Kill mode (S2) is `clips/gpom-main-track.mp3` from its drop at 70.3 s (RMS −15 → −11 dB at 70.5 s).
+   Nobody has listened: the takes were chosen by length. Recorded preview copies in `suno-recordings/`.
+5. `rough_audio.py` — levels (voices −16 LUFS, music −15 to −32 by role), the AI's small-speaker filter, the row's
+   tiled echo, the radio filter, the duck under Maddie's call, fades → `audio/rough/`.
+6. `rough_place.py` — the placement evals (64 placements; three hit the known `resolveProjectItem` null and
+   went in on retry), then Motion → Scale 150 on V1.
+
+**Not in it yet:** sound effects (none at all: the CCTV replay at 2:10 is five seconds of silence), the HUD and
+on-screen text, the keyed explosion element, the casting tests, Covers of the GPOM riff (the themes are
+independent generations for now).

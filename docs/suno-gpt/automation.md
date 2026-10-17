@@ -875,3 +875,11 @@ takes across r70–r72.
 **Practical rule: capture the song ids from the `pair` output as it runs.** `pair` prints the take
 list at the end of each Create, and that is the only moment the ids are guaranteed visible.
 
+## 2026-10-17 — the model picker is now a DIALOG (proven live)
+
+The model button now carries `aria-haspopup="dialog"` (it was `"menu"`), and the picker is a grid: one
+`[role="row"]` per model (`v6` · `v6-wild` · `v6-mini`, under a "Create Custom Model" row), the chosen one
+`aria-selected="true"`. The old `[role="menuitemradio"]` items are gone, so `load` read the model as `null` and
+aborted before spending (correctly). `suno.mts` now accepts either shape in `openModelMenu`, `getModel`, `setModel`
+and `status`; `controls` then read `v6` back and five pairs ran clean.
+

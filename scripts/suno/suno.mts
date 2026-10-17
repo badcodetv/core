@@ -418,7 +418,7 @@ export async function setSegment(page: Page, label: string, option: string | nul
 async function openModelMenu(page: Page): Promise<boolean> {
   const at = await ev(
     page,
-    `const btns = [...document.querySelectorAll('button[aria-haspopup="menu"]')].filter(live);
+    `const btns = [...document.querySelectorAll('button[aria-haspopup="menu"], button[aria-haspopup="dialog"]')].filter(live);
      let b = btns.find(x => /^v\\d/i.test(c(x.innerText)));
      if (!b) {
        // A custom model's name need not start with v — take the menu button on the tab row.
@@ -438,8 +438,10 @@ async function openModelMenu(page: Page): Promise<boolean> {
   await page.mouse.click(x, y)
   // Wait for the items rather than a fixed 800ms: since the "Create Custom Model" entry arrived
   // (2026-09-16) the menu can take >800ms to mount, which read as NO-MENU and left it open.
+  // 2026-10-17: the picker became a DIALOG — a grid with one [role=row] per model, the chosen one
+  // aria-selected="true" — where it used to be a menu of menuitemradio. Either counts.
   return page
-    .locator('[role="menuitemradio"]')
+    .locator('[role="menuitemradio"], [role="dialog"] [role="row"][aria-selected]')
     .first()
     .waitFor({ state: 'attached', timeout: 5000 })
     .then(() => true, () => false)
@@ -447,13 +449,14 @@ async function openModelMenu(page: Page): Promise<boolean> {
 
 const RADIOS = `
   const leaf = (r) => { const s = [...r.querySelectorAll('span')].find(s => !s.children.length); return c((s || r).textContent); };
-  const radios = [...document.querySelectorAll('[role="menuitemradio"]')];
+  const radios = [...document.querySelectorAll('[role="menuitemradio"], [role="dialog"] [role="row"][aria-selected]')];
+  const on = (r) => (r.getAttribute('aria-checked') ?? r.getAttribute('aria-selected')) === 'true';
 `
 
 /** The selected model, read from the menu (authoritative — the button text may abbreviate). */
 export async function getModel(page: Page): Promise<string | null> {
   if (!(await openModelMenu(page))) return null
-  const name = await ev(page, `${RADIOS} const r = radios.find(r => r.getAttribute('aria-checked') === 'true'); return r ? leaf(r) : null;`)
+  const name = await ev(page, `${RADIOS} const r = radios.find(on); return r ? leaf(r) : null;`)
   await page.keyboard.press('Escape')
   await page.waitForTimeout(400)
   return (name as string | null) ?? null
@@ -466,7 +469,7 @@ export async function setModel(page: Page, name: string): Promise<string> {
     `${RADIOS}
      const hit = radios.find(r => leaf(r).toLowerCase() === String(a[0]).toLowerCase());
      if (!hit) return 'NOT-OFFERED (menu has: ' + radios.map(leaf).join(', ') + ')';
-     if (hit.getAttribute('aria-checked') === 'true') return 'already';
+     if (on(hit)) return 'already';
      const r = hit.getBoundingClientRect();
      return JSON.stringify({ x: r.x + r.width / 2, y: r.y + r.height / 2 });`,
     name,
@@ -715,7 +718,7 @@ export async function verify(page: Page) {
      const cr = document.querySelector('[aria-label^="Credits remaining"]');
      ${SEG}
      const vs = document.querySelector('[role="slider"][aria-label="Variety"]');
-     const mb = [...document.querySelectorAll('button[aria-haspopup="menu"]')].filter(live).find(x => /^v\\d/i.test(c(x.innerText)));
+     const mb = [...document.querySelectorAll('button[aria-haspopup="menu"], button[aria-haspopup="dialog"]')].filter(live).find(x => /^v\\d/i.test(c(x.innerText)));
      const ws = [...document.querySelectorAll('*')].filter(x => live(x)
        && /^Save to\\.\\.\\./.test(c(x.textContent)) && c(x.textContent).length < 60);
      return {
