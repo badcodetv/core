@@ -126,3 +126,53 @@ grain."*
   moves after the trust beat: it is now the walk out to the building.
 - The frames are renumbered to 29. `anim` in the storyboard JSON keys into the animation-options
   file, and the `#N` references in that file were remapped to the new numbers.
+
+## The clip run (17 October 2026)
+
+Kai's picks (db `picks`, read 17 Oct): animation option **a** everywhere except frames 2 and 3 (**c**);
+still **SB27a** for frame 29; no notes. Prompts, picks and deviations are in
+[`scripts/gpom/second-half-video/shots.py`](../../../../scripts/gpom/second-half-video/shots.py); the runner is
+`run.mts` beside it (waves of 5, submit then harvest, first-frame matching). Omni 1.1 Flash, Frames, 16:9, 720p,
+8s, x1, camera locked, motion-only prompts, in Flow project `be451638`. Media:
+`/mnt/d/badcode-videos/gitpush-origin-master/clips/second-half/video/` (each clip with a `-sheet.jpg`).
+
+- **Made: 20 frames, 26 clips**, every one first-frame matched to its plate. Post-only frames (no Flow clip):
+  4, 11, 13, 16, 18, 21, 23, 24, 27.
+- **Extras:** a second speaker for frame 7 (SB07c), the explosion element on black for 12, cast takes of 9 and
+  20, and a re-roll of 15.
+- **Bot cast** with the West Country Bot Character by `@` mention on 9-c, 15, 15-r2, 19, 20-c. The MCP's
+  ingredient-picker cast does not work in Frames mode (`docs/flow/automation-2026-09-rebuild.md` items 75–77).
+- **Frame 19:** Flow refused SBEMERa at upload, so SBEMERb stands in.
+- **Frame 15 is not solved.** All three takes shrink the bot back toward the doors in the first second.
+- **Cutting-room board:** https://claude.ai/artifact/LyD3odnVmN5rrdo9m1TpZp. Verdicts go in its db `picks`
+  (`verdict` keep|redo, `note`). Rebuild: `python3 scripts/gpom/second-half-video/build-board.py <out-dir>`.
+
+## Post-only frames (17 October 2026)
+
+`scripts/gpom/second-half-video/post.py` renders the nine frames that need no Flow clip as `sh-<key>-post.mp4`
+(1280×720, 24 fps, limited range, no audio): 04 the ping hold · 11 the bot held · 13 the tail of 07-2 · 16 a slow
+push over 10 s · 18a the crowd + 18b frame 12 replayed as grey CCTV · 21 bunny suits held · 23 the wafer pull-back
+250→100% · 24 the chair lights coming on in a spiral · 27 the beacon slowing to dark. Not yet: on-screen text
+(HUD, waveform, timestamps) and any beacon pulse that must hit a word; both wait for the audio.
+
+## Premiere
+
+**Project:** `/mnt/d/badcode-videos/gitpush-origin-master/gpom-story.prproj`
+**Sequence:** `gpom-second-half`: 1920×1080 @ 24, 134.5 s. Built 17 Oct 2026 over the bridge.
+**Bin:** `07-second-half` (36 clips + `slug-1080p24.mp4`).
+
+| Track | What |
+| --- | --- |
+| V1 | 31 shots in story order, first-pass lengths, from `scripts/gpom/second-half-video/edl.py` (placed with its `eval` bodies, 4 evals, no failures) |
+| A1–A3 | empty: audio is planned, not made |
+
+**Applied:** every V1 clip Motion → Scale 150 (1280×720 sources in a 1080p sequence). Checked by eye at 2 s, 63 s, 108 s.
+**How the sequence got 24 fps:** Premiere ships no 1080p 24 preset, so it was created `fromItems` a 1-s black
+1920×1080 24 fps slug, which the first placement overwrote.
+
+**Sound script:** https://claude.ai/artifact/FH9mz25HGZWCfQzMaDqubx (War of the Worlds shape: the AI narrates, two themes, Gemini for every voice), from
+[`second-half-audio-plan.json`](./second-half-audio-plan.json) (the single source for the second half's words, effects and music; every line a draft for Kai). Kai's notes
+in its db `notes`. Rebuild: `python3 scripts/gpom/second-half-video/build-audio-plan.py <out-dir>`.
+
+**Needs a human / not done:** frame 12's explosion element (`sh-12-element.mp4`) is in the bin, not keyed onto V2;
+no transitions; no audio.

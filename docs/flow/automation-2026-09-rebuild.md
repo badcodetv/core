@@ -22,7 +22,7 @@ all run live 2026-09-13 on free tiers.
 | `flow_generate_video` — text only (no frames), `count` > 1 | 🟡 coded, not run live |
 | `flow_create_character`, `flow_character_body`, `flow_list_characters`, `flow_get_character`, `flow_character_info` | ✅ **re-mapped 2026-10-17** (items 63–72): 3 Characters made, read back, listed |
 | casting a Character into a still (`flow_generate_image`, `flow_edit_image` with references, `flow_generate_batch`) | ✅ **re-mapped 2026-10-17**: image and image+reference casts proven; batch uses the same path, not run live |
-| casting a Character into a video | 🟡 coded 2026-10-17 (ingredient picker after the frame slots), not run live |
+| casting a Character into a video | 🔴 **the MCP path is broken in Frames mode** (item 75): no ingredient button. ✅ The `@` route works (item 76), in `scripts/gpom/second-half-video/run.mts`, not yet in the MCP |
 | ~~characters (all six tools)~~, `flow_create_character_from_media`, `flow_edit_character`, `flow_list_media`, `flow_refine_video`, Scene Builder (`flow_scene_*`) | 🔴 not re-mapped — they throw `FLOW_REBUILD_UNMAPPED` at once instead of timing out |
 
 ## The facts that cost time
@@ -427,3 +427,22 @@ beacon intact). Credits: uploads cost nothing; two Nano Banana 2 stills.
     The same three prompts in a **fresh project** (`be451638`, with the Character re-created there in one
     `flow_create_character` call) came back right first time. One recast was policy-blocked, and its twin with
     identical wording passed. **Cast in a small project; recreate the Character there. It costs nothing.**
+
+## 2026-10-17 — casting a Character into a Frames-mode video (project `be451638`, GPOM second half)
+
+75. 🔴 **`flow_generate_video({ startImage, character })` cannot cast in Frames mode.** With a Start frame
+    filled, the compose bar's buttons are `Image ingredient · Swap first and last frames · End · Clear prompt ·
+    Agent · Settings trigger · Start generation`. There is no `Add ingredients to the prompt box`, so
+    `addCharacterToPromptRebuilt` times out on its click (30 s) and nothing is cast. Seen in a probe that
+    spent nothing (`scripts/gpom/second-half-video/probe-cast.mts`) and in one live submit, which went on uncast.
+76. ✅ **The `@` route casts with the Start frame locked (n=1 probe, then a live run).** Click the prompt box, type
+    `@`, click the row reading `<name> Character` (synthetic pointer sequence), then `Add to prompt`. The tag
+    lands **inline in the prompt box** (its text reads `West Country Bot `), not as a chip, so the motion text is
+    typed **after** it with `keyboard.insertText`. `setPrompt` select-all-deletes the tag. The Start frame stayed in
+    its slot. ⬜ Owed: move this into `generateVideoRebuilt` and `submitVideo` in place of the ingredient picker.
+77. **A cast does not stop Omni re-staging a subject the prompt contradicts (n=2).** Frame 15's plate has the bot
+    already inside the bunker; the prompt said it "rolls forward out of the smoke through the open blast doors".
+    Uncast and cast takes did the same thing: within half a second the bot was back at the doors, smaller, and
+    then crept forward. The two takes are near-identical, so the cast changed nothing visible. The fix is the
+    prompt: describe a move that starts from where the plate has the subject.
+

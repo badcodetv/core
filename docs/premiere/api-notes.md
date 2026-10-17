@@ -1906,6 +1906,13 @@ builder now writes its per-clip files as `.mov` with PCM sound.
 - ✅ `project.importFiles(paths, true, bin)` from an eval took 83 files in one call (the paths were built in the
   snippet from a list of short names, which keeps the call small).
 
+## 2026-10-17: a 1080p 24 fps sequence without a preset
+
+Premiere 2026 ships `HD 1080p` presets at 23.976, 25, 29.97, 50 and 59.94 fps, **not 24**. To match a 24 fps
+project (`gpom-s01` is 1920×1080 @ 24): render a 1-s black slug with ffmpeg
+(`-f lavfi -i color=c=black:s=1920x1080:r=24:d=1`), import it, `premiere_create_sequence({ fromItems: [slug] })`,
+then let the first placement overwrite it. The result read back as 1920×1080, `frameRate: 24`.
+
 ## 2026-10-18: The Bank Robbery `cut 6` (77 placements, 25 levels, two evals)
 
 - ✅ **A new sequence from one imported item:** `premiere_create_sequence` with `fromItems: [<the item's id>]`.
