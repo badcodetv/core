@@ -2077,3 +2077,30 @@ skill.** Come here for the reference; use `premiere-automation` for the edit and
 anything that has to be invented instead.
 
 Lane choice between Flow, ffmpeg, Premiere and sourcing: [`README.md`](./README.md).
+
+## 2026-10-18: Pexels' terms now bar any political viewpoint; British street plates
+
+- 🔴 **Pexels Terms of Use, read 2026-10-18,** bar use "in a political context (such as the promotion, advertisement or
+  endorsement of any party, candidate, or elected official **or in connection with any political party or viewpoint**)".
+  The "viewpoint" wording is broader than this page recorded before. Treat Pexels as 🔴 for anything we publish.
+- Pexels lists some clips at 1080p and serves 720p from every download link (5293701 "Storefronts in Ealing": ffprobe 1280×720).
+- A crawl of Commons' "Videos from England / Scotland / Wales / Northern Ireland" trees (211 categories, 1,722 files) found
+  **no green, locked-off British street or shop-front plate with an empty patch**. The nearest are CC BY-SA (amber) and
+  handheld. For compositing plates, film our own.
+- Used privately for the composite test only: Pexels 5293701 and 5293895 (George Morina), in
+  `bank robbery\clips\short4\composite-test\` (`docs/stories/bank-robbery/short-shots.md`, "Cut 5").
+
+### 2026-10-18 — greasy-spoon interiors: what is actually out there (Bank Robbery real-plate test)
+
+- 🟢 **Stills only:** Wikimedia Commons has CC0 interiors of real Brighton greasy spoons by User:Onthewings,
+  for example `File:Interior of Kitchen Cafe 2025-01-29.jpg` and `File:Interior of Café Belchers 2023-07-24.jpg`.
+  They are good as Flow reference images.
+- 🟡 **The one real video:** *The Night Shift* (Beth's Cafe, Seattle), YouTube `C9daETgW6xI`, CC BY 3.0 on the
+  filmmaker's own channel. It is handheld and staff and customers are in every shot, so the real-people risk above
+  applies. Credit: *"The Night Shift" by Shannon Snider and Stefanie Malone, CC BY 3.0*.
+- 🔴 **Ruled out:**
+  - Mixkit: every true diner clip checked was "Restricted License" (23546, 23543, 35812, 26632, 29050, 24163, 29059).
+  - Coverr: its diner clips carry `isAiGenerated: true` in the page data.
+  - YouTube "free stock" CC channels: they re-upload Pexels clips under CC BY, which is licence laundering.
+- **Tooling:** YouTube CC downloads work with yt-dlp 2026.08.19 (`~/.cache/badcode-ytdlp/venv`). An older install
+  got HTTP 403 on every player client. Read the `license` field in `--write-info-json` as the receipt.

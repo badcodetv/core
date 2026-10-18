@@ -1,0 +1,35 @@
+{
+ "pre": "",
+ "shots": [
+  {
+   "id": "m1-glass-press",
+   "cast": [],
+   "refs": [],
+   "full": "Night, a bare brick back room. Close and low, at the level of the steel feed board of a big old printing press: a heavy cut-glass tumbler of amber whisky stands on the scuffed steel, a smear of purple ink beside it, rings trembling on the whisky's surface. Behind, out of focus, the dark bulk of the press and a blur of pale paper sheets. One hard white work lamp in a wire cage lights it from the right; everything else falls to near black. Fingerprints and dust on the glass. Unretouched 35mm film still, rich saturated colour, fine grain, a little underexposed. 16:9. Thanks."
+  },
+  {
+   "id": "m2-band-brick",
+   "cast": [],
+   "refs": [],
+   "full": "Close on a scarred wooden table at night: two hands in dark suit cuffs, a gold signet ring on one finger, pulling a brown paper band tight round a thick brick of new purple twenty-pound notes, the notes seen side-on as a block of edges. Another banded brick sits out of focus in the near foreground, a whisky glass soft behind. One hard white work lamp in a wire cage lights it from the right; deep shadow on the left. A purple ink smudge on one knuckle. Unretouched 35mm film still, rich saturated colour, fine grain, a little underexposed. 16:9. Thanks."
+  },
+  {
+   "id": "m3-ex-lamp",
+   "cast": ["The Ex"],
+   "refs": ["brs4-p01b-room"],
+   "full": "Same bare brick room as the reference image, at night. Close shot from low at table height: The Ex leans forward on his elbows on the wooden table, on the right of the frame, looking left at someone across the table. A tumbler of whisky out of focus in the near foreground on the left. One hard white work lamp in a wire cage, off to the right of frame, lights only the right side of his face; the left side and the brick wall behind him fall into deep shadow. Unretouched 35mm film still, rich saturated colour, fine grain, a little underexposed. 16:9. Thanks."
+  },
+  {
+   "id": "m4-red-blue-toast",
+   "cast": ["Mr Red", "Mr Blue"],
+   "refs": ["brs4-p01b-room"],
+   "full": "Same bare brick room as the reference image, at night. Seen from high above the table, looking down at a steep angle: Mr Red and Mr Blue sit on opposite sides of the scarred wooden table, leaning in, their whisky tumblers touching in the middle over a scatter of banded bricks of purple twenty-pound notes. Mr Red is looking up at Mr Blue with a grin. One hard white work lamp in a wire cage lights the table from the right; the floor and the room fall away into darkness. Unretouched 35mm film still, rich saturated colour, fine grain, a little underexposed. 16:9. Thanks."
+  },
+  {
+   "id": "m5-enter-key",
+   "cast": [],
+   "refs": [],
+   "full": "Close and low across an old, yellowed computer keyboard on a scarred wooden table at night: a man's finger in a dark suit cuff, a gold signet ring on the next finger, rests on the big Enter key, a little purple ink on the fingertip. Beside the keyboard the corner of a banded brick of purple twenty-pound notes and a whisky glass, soft. Light: the cold green glow of a monitor above the frame, and one hard white work lamp from the right; the rest is dark. Dust and crumbs between the keys. Unretouched 35mm film still, rich saturated colour, fine grain, a little underexposed. 16:9. Thanks."
+  }
+ ]
+}

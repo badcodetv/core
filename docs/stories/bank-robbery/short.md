@@ -212,7 +212,7 @@ Changed beats in **bold**. *VO* = voice-over, nobody's mouth moves.
 | 12 | 2 | The back room, the press printing | N | This lot don't wear masks. // Nobody's ever looked at them. |
 | 13 | 3 | The Ex at the table | The Ex *VO* | Problem is eyes. / Two thousand people outside that bank tomorrow. |
 | 14 | 2 | Mr Blue and Mr Red, glasses up | Mr Red *VO* | Leave the people to us. |
-| **R1** | **5** | **The reveal, held: a shrink-wrapped pallet of new notes, and on top a bank paying-in slip, amount £200,000,000,000. Hold on it** | **N** | ***Draft:* Most people rob a bank to get money out. // This lot are paying it in.** |
+| **R1** | **5** | **The money printed in volume (real ECB press film, a table buried in bricks); a finger presses a key, the press stops dead, and a bank terminal rolls up to £200,000,000,000 PAID IN** *(cut 6, 2026-10-18)* | **N** | **Most people rob a bank to get money out. // This lot print the money... then pay it in.** *(Jack, 2026-10-18; the click lands in the pause)* |
 | **P1** | **4** | **The newspaper drops: the two front pages from cut 9 spin in, one for each side** | **N** | ***Draft:* Then give both sides something to shout about.** |
 | 17 | 4 | The protest, both signs; Mr Red on the megaphone at Barry | Mr Red *VO, megaphone* | Get off our streets, you fucking Nazi bastards! |
 | 18 | 2 | Mr Blue's megaphone | Mr Blue *VO, megaphone* | And I'll tell you whose fault it is— |

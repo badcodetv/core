@@ -1903,3 +1903,21 @@ builder now writes its per-clip files as `.mov` with PCM sound.
   items that resolved on the next try. Wrap each placement in a short retry and compare the timeline with the plan.
 - ✅ `project.importFiles(paths, true, bin)` from an eval took 83 files in one call (the paths were built in the
   snippet from a list of short names, which keeps the call small).
+
+## 2026-10-18: The Bank Robbery `cut 6` (77 placements, 25 levels, two evals)
+
+- ✅ **A new sequence from one imported item:** `premiere_create_sequence` with `fromItems: [<the item's id>]`.
+  Pass the **id**, because the same file name sits in several bins.
+- ✅ **A6 made on demand:** after A4/A5 appeared from the music placements, overwriting at audio index 5 made A6. Used
+  for a bed that overlaps the dubs on A3.
+- ✅ **Levels in one transaction:**
+  - Find each clip with `track.getTrackItems(ppro.Constants.TrackItemType.CLIP, false)` and
+    `helpers.tickToSeconds(await it.getStartTime())` within 0.06 s.
+  - Then `comp = await (await it.getComponentChain()).getComponentAtIndex(0)`, `p = await comp.getParam(1)`.
+  - Set it with `ca.addAction(p.createSetValueAction(p.createKeyframe(0.17783 * 10 ** (dB / 20)), true))`.
+  - It read back exactly.
+- 🔴 **Deleting or overwriting a piece file that a bin still references raises "Link Media" in Premiere**, even when no
+  timeline uses it. Cut 6 was rebuilt in place (`rm` of x-/t- pieces) and 19 stale bin items went offline. The fix was
+  to check nothing used them, then remove the stale bin with `FolderItem.cast(root).createRemoveItemAction(bin)`.
+  This worked with the Link Media dialog still open. **Rule: rebuild into a fresh folder, never `rm` inside a folder
+  Premiere has imported.**

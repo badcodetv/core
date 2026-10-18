@@ -2646,3 +2646,17 @@ Also seen the same day: "VIDEO_OPTION_UNAVAILABLE: Frames/Ingredients on Omni 1.
   before its end (`scripts/bank-robbery/build-short.py`, `talk()`).
 - **"Get off our streets, you fucking Nazi bastards!" through a megaphone was made first time,** in Ingredients
   with the speaker's Character. No refusal for the swearing.
+
+## 2026-10-18: Ingredients drifts off the room; Frames holds it (The Bank Robbery short, cut 4)
+
+Grade: our own clips, Omni 1.1 Flash, one batch of nine café talking clips. Ledger: `docs/stories/bank-robbery/short-shots.md`, "Cut 4".
+
+- 🔴 **Ingredients reinterprets the still.** Seven of nine came back in the plate's room; two did not. One prompt said
+  Barry was "nodding at something on a television above the camera", and the clip built a different café with a TV on
+  the wall and no painting; the other (a jar on a counter) re-framed wider into another room. Words in the prompt that
+  name an object not in the still are an invitation to rebuild the set.
+- ✅ **Frames mode for a clip that will be muted and dubbed.** The same two plates in Frames, with "talks" and no line,
+  kept the composition exactly and the mouth moved. Speech was kept out of Frames because the accent wanders; once the
+  clip's own sound is thrown away for a TTS dub, that no longer matters.
+- 🔴 **`FRAME_SOURCE_NOT_FOUND` after an Ingredients run of the same plate:** the runner's "already uploaded" marker
+  skipped the upload, and Frames could not find the image by name. Deleting the marker (re-uploading) fixed it at once.

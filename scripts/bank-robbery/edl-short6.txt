@@ -1,0 +1,79 @@
+The Bank Robbery short, cut 6. start, length, file, what.
+
+   0.000   5.917  s-archive.mov                      A1: the action archive (Dunkirk Stuka, Alamein advance, tanks, bayonets)
+   5.917   6.583  s-reveal4.mov                      the last archive shot, its last frame repainted, the painting on the cafe wall, pull back (no shake)
+  12.500   3.958  s-002-c02a-barry4.mov              Barry (dub v04-barry)
+  16.458   4.875  s-003-c03a-denise4.mov             Denise (dub v05-denise)
+  21.333   6.833  s-004-c02b-barry4f.mov             Barry (dub v06-barry)
+  28.167   7.000  s-005-c03b-denise4.mov             Denise (dub v07-denise)
+  35.167   2.250  s-006-c02c-barry4.mov              Barry (dub v08-barry)
+  37.417   3.042  s-007-c03c-denise4.mov             Denise (dub v09-denise)
+  40.458   3.542  s-008-c04n-freddo10.mov            Barry, a real Freddo at 10p (dub v10-barry)
+  44.000   4.375  s-009-b01n-bank.mov                ns11: the bank across the road, through the cafe window
+  48.375   1.000  s-010-ecb.mov                      real: purple ink into the press duct (ECB)
+  49.375   0.792  s-011-ecb.mov                      real: the numbering heads turning (ECB)
+  50.167   0.917  s-012-m1-glass-press.mov           still: whisky on the press feed board, ink, the work lamp
+  51.083   0.708  s-013-ecb.mov                      real: printed sheets flying into the delivery (ECB)
+  51.792   1.333  s-014-m2-band-brick.mov            still: a paper band pulled round a brick of new twenties
+  53.125   6.000  s-015-m3-ex-lamp.mov               The Ex, lit by the press lamp (dub v13-ex)
+  59.125   2.083  s-016-m4-red-blue-toast.mov        Mr Red and Mr Blue from above, the toast (dub v14-red)
+  61.208   0.792  s-017-ecb.mov                      real: printed sheets streaming through (ECB), shifted to the twenty's purple
+  62.000   0.917  s-018-ecb.mov                      real: a pallet of printed sheets pushed off the press (ECB)
+  62.917   1.000  s-019-m7-table-bricks.mov          still: a table buried in banded bricks of twenties
+  63.917   0.917  s-020-ecb.mov                      real: a trolley tower of printed stacks (ECB)
+  64.833   1.208  s-021-ecb.mov                      real: bundles shrink-wrapped (ECB)
+  66.042   0.708  s-022-m5-enter-key.mov             the key pressed in the pause: the press stops dead
+  66.750   3.000  s-screen6.mov                      R1: the terminal, the credit rolls to £200,000,000,000, PAID IN on "then pay it in"
+  69.750   2.833  s-024-c9-paper-blue.mov            P1: the newspaper drops (cut 9 front pages)
+  72.583   2.833  s-025-c9-paper-red.mov             P1: the newspaper drops (cut 9 front pages)
+  75.417   2.583  s-026-pr-w-wide.mov                the protest from the bank: two crowds, nobody looking up
+  78.000   4.417  s-027-pr-a-chant.mov               the chant (four voices)
+  82.417   4.583  s-028-pr-b-reply.mov               the reply, Barry leading (four voices)
+  87.000   5.458  s-029-r04-denise-window.mov        ns19-first-line
+  92.458   5.167  s-030-s01n-side-door.mov           S1: the side door ajar, light in the gap (re-made)
+  97.625   3.000  s-031-v1-deposit-wide.mov          the vault: a brick of new notes slid onto the shelf, ticked off
+ 100.625   2.208  s-032-v2-deposit-close.mov         the vault: the last brick pressed home
+ 102.833   3.417  s-033-s11g-full.mov                the vault full, the door shut (v8)
+ 106.250   8.667  s-034-e02-donor-keys.mov           the Donor and the keys
+ 114.917   3.792  s-slot4.mov                        the window as a fruit machine, prices double
+ 118.708   2.958  s-036-f02n-freddo20f.mov           Barry, the Freddo at 20p (dub v24-barry)
+ 121.667   1.833  s-037-c03d-denise4.mov             Denise (dub v25-denise)
+ 123.500   9.000  s-038-c01b-cafe-wide.mov           ns26-no-law
+ 132.500   3.500  s-039-s01-sink.mov                 Denise at the sink, the letter
+ 136.000   4.000  s-040-c10-081-08349.mov            the badcode kebab shop (cut 10)
+
+Narrator:
+   0.600   3.880  na1-grandparents.wav
+   8.917   2.840  ns03-one-bed.wav
+  44.150   3.920  ns11-both-right.wav
+  48.525   4.120  ns12-masks.wav
+  61.408   6.760  nr6-print-pay.wav
+  69.900   3.080  np1-shout.wav
+  87.150   5.000  ns19-first-line.wav
+  92.608   4.400  ns1-side-door.wav
+ 106.400   8.200  ns23-just-early.wav
+ 123.700   8.280  ns26-no-law.wav
+
+Character voices (dub):
+  12.650   3.488  dub-v04-barry.wav  x1.116
+  16.608   3.834  dub-v05-denise.wav  x0.8
+  21.333   6.520  dub-v06-barry.wav  x1.25
+  28.317   6.556  dub-v07-denise.wav  x1.147
+  35.317   1.778  dub-v08-barry.wav  x1.25
+  37.567   2.615  dub-v09-denise.wav  x1.046
+  40.538   2.979  dub-v10-barry.wav  x0.8
+  53.275   5.542  dub-v13-ex.wav  x1.09
+  59.125   1.801  dub-v14-red.wav  x1.03
+  48.375  18.917  press-bed.wav  x1.0
+  78.300   6.820  crowd-027.wav  x1.0
+  82.717   7.100  crowd-028.wav  x1.0
+  86.950   3.600  crowd-tail.wav  x1.0
+ 118.858   2.513  dub-v24-barry.wav  x1.25
+ 121.817   1.388  dub-v25-denise.wav  x1.126
+
+Music:
+   8.100  41.775  ms-01-cafe.wav  A3
+  47.375  23.875  ms-02-plan.wav  A4
+  68.750  30.375  ms-03-march.wav  A3
+  96.625  37.375  ms-04-bank.wav  A4
+ 131.500   8.500  ms-05-ending.wav  A3

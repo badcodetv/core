@@ -1,0 +1,59 @@
+{
+ "pre": "",
+ "shots": [
+  {
+   "id": "c02n-barry",
+   "cast": ["Barry"],
+   "refs": ["brs4-cafe-room", "brs-barry-portrait"],
+   "full": "Same café as the first reference image, the same painting on the same wall. Close shot from across his table: Barry sits chest-up at the red formica table, a phone held low in one hand, looking up from it across the table, brows raised, mouth slightly open. Over his shoulder, soft, the lower half of the gilt-framed painting and the mint-green tiles under it. A mug of tea out of focus in the near foreground, a half-eaten fried breakfast in front of him. Camera at table height. Light: cold blue daylight from the steamed window on his left, a warm yellow strip light above. Barry is dressed exactly as in his portrait reference. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "c03n-denise",
+   "cast": ["Denise"],
+   "refs": ["brs4-cafe-room"],
+   "full": "Same café as the reference image, the same mint-green tiles and the same gilt-framed painting, which hangs on the wall behind her, soft and partly in frame on the left. Denise stands behind a worn counter, chest-up, a dishcloth already pressed flat on the counter under her hand, looking across at someone off to the right with a flat, unimpressed face. Foreground: a chrome tea urn out of focus on the right edge. Behind her: a shelf of odd mugs and a strip of steamed window. Camera low, at counter height. Light: a warm yellow strip light above, cold blue window light from the left. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "c04n-freddo10",
+   "cast": ["Barry"],
+   "refs": ["brs4-cafe-room", "brs-barry-portrait"],
+   "full": "Same café as the reference image, at the end of the worn counter beside an old cream till. A glass sweet jar full of Cadbury Freddo bars: small chocolate frogs in purple wrappers printed with a cartoon frog, each bar no longer than a thumb. A handwritten cardboard card taped to the jar reads \"FREDDOS 10p\" in thick black marker, large and clear. Barry leans in on the right holding one small Freddo between finger and thumb, eyes on the card, half a smile. Mint-green tiles behind. Camera at counter height, close to the jar. Light: warm yellow strip light above, cold blue window light behind. Barry is dressed exactly as in his portrait reference. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "f02n-freddo20",
+   "cast": ["Barry"],
+   "refs": ["brs4-cafe-room", "brs-barry-portrait"],
+   "full": "Same café as the reference image, at the end of the worn counter beside an old cream till. A glass sweet jar full of Cadbury Freddo bars: small chocolate frogs in purple wrappers printed with a cartoon frog, each bar no longer than a thumb. A new handwritten cardboard card taped to the jar reads \"FREDDOS 20p\" in thick black marker, large and clear, the old price crossed out above it. Barry leans in on the right holding one small Freddo up between finger and thumb, staring at the card, brows up, mouth open in disbelief. Camera at counter height, close to the jar. Light: warm yellow strip light above, cold blue window light behind. Barry is dressed exactly as in his portrait reference. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "b01n-bank",
+   "cast": [],
+   "refs": ["brs4-cafe-room"],
+   "full": "From inside the café in the reference image, looking out through its big front window at dawn. Across the wet road stands the columned stone front of an old high-street bank, its tall windows lit warm gold, its doors shut. The road is empty and shining. Foreground: the inside of the window glass beaded with condensation, one clear streak wiped through it at eye level, a red sauce bottle and a steel sugar shaker on the sill in soft focus. Camera at the height of a seated customer. Light: cold blue dawn outside against the gold bank windows, the café's warm strip light faintly reflected in the glass. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "s01n-side-door",
+   "cast": [],
+   "refs": [],
+   "full": "A narrow service alley down the side of an old stone bank at night, seen from low at the alley mouth. Halfway down on the right, a plain grey steel fire door stands a hand's width ajar, a thin blade of warm yellow light falling from the gap across wet black tarmac. An empty yellow pallet truck is parked against the wall beside it. Two wheelie bins, a cast-iron drainpipe, puddles. Far end of the alley: one orange sodium street lamp. Light: the warm gap of the door and the orange lamp against cold blue night. Steady rain visible in the lamp light. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "v1-deposit-wide",
+   "cast": ["Mr Blue", "Mr Red"],
+   "refs": ["brs4-vault-room"],
+   "full": "Same vault as the reference image: green steel shelving packed with paper-wrapped bricks of banknotes, the green vault door standing open, the low brick arch. Mr Blue stands at the shelves on the right, sliding one brick of purple twenty-pound notes into the last gap on a shelf at chest height, both hands on it. Mr Red stands in the middle beside a wooden pallet stacked waist-high with more bricks, a clipboard in his hand, watching him. Camera low by the corner of the pallet, a brick of notes out of focus in the near foreground. Light: one bare bulb in the arch, warm, against cold green light from the corridor beyond the door. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "v2-deposit-close",
+   "cast": [],
+   "refs": ["brs4-vault-room"],
+   "full": "Same vault as the reference image. Close on a green steel shelf at chest height, packed end to end with bricks of banknotes in paper bands. Two hands in dark suit cuffs, a gold signet ring on one finger, press one brick of red fifty-pound polymer notes into the last gap in the row, the notes seen at a slant, a clear see-through window and a silver foil strip catching the light, the small portrait soft. Behind, out of focus, more packed shelves receding into the dark. Camera at shelf height, close. Light: a warm bare bulb above and behind, a cold green edge from the corridor. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  },
+  {
+   "id": "e01n-estate",
+   "cast": [],
+   "refs": [],
+   "full": "Night on a wet English high street. Close on an estate agent's lit shop window, seen from low on the pavement at a sharp angle. Behind the glass, three property cards hang in a row on clear acrylic, each a photograph of the same red-brick terraced house above a large blank white panel. The glass carries reflections of amber street lamps and rain beads on its outside. Foreground: the wet window sill and a smear of rain, soft. Light: cold white shop light from inside the window, amber street lamps reflected in the glass. Unretouched 35mm film still, rich saturated colour, fine grain. 16:9. Thanks."
+  }
+ ]
+}

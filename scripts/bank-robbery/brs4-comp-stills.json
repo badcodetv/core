@@ -1,0 +1,17 @@
+{
+ "pre": "",
+ "shots": [
+  {
+   "id": "k01-barry-street",
+   "cast": ["Barry"],
+   "refs": ["brs4-plate-street", "brs-barry-portrait"],
+   "full": "Keep the first reference photograph exactly as it is: the same street at dusk, the same camera position, framing, lens and light. Add Barry standing on the pavement in the left foreground, close to the camera, seen from the waist up, turned three-quarters toward the camera, hands in his jacket pockets, looking off along the street with a flat, tired face. Light on him: the cold blue dusk sky from above and the warm glow of the shop fronts behind him catching the edge of his shoulder. Barry is dressed exactly as in his portrait reference. An unretouched photograph with the same grain and colour as the reference. 16:9. Thanks."
+  },
+  {
+   "id": "k02-denise-shop",
+   "cast": ["Denise"],
+   "refs": ["brs4-plate-shop"],
+   "full": "Keep the reference photograph exactly as it is: the same shop fronts, pavement, chairs, camera position, framing and light. Add Denise standing on the pavement in the right foreground in front of the café chairs, close to the camera, seen from the waist up, arms folded, looking straight at the camera with a flat, unimpressed face. Light on her: soft grey daylight from the open sky, the warm light from the shop window on one side of her face. An unretouched photograph with the same grain and colour as the reference. 16:9. Thanks."
+  }
+ ]
+}
